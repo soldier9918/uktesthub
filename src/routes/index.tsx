@@ -1,187 +1,136 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import {
-  ArrowRight,
-  Clock,
-  ListChecks,
-  Crown,
-  CheckCircle2,
-  FileCheck,
-  Timer,
-  CalendarCheck,
-  ShieldCheck,
-  TrendingUp,
-  Smartphone,
-} from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { AdSlot } from "@/components/AdSlot";
 import { CategoryIcon, accentClasses } from "@/components/CategoryIcon";
 import { UnionJack } from "@/components/UnionJack";
 import { categories } from "@/data/categories";
-import { getDailyQuiz, getQuiz } from "@/data/quizzes";
-
-import heroUk from "@/assets/hero-uk.jpg";
-import featDriving from "@/assets/feat-driving.jpg";
-import featFlag from "@/assets/feat-flag.jpg";
-import featTowerBridge from "@/assets/feat-tower-bridge.jpg";
-import featRoadSigns from "@/assets/feat-road-signs.jpg";
-import featHeadphones from "@/assets/feat-headphones.jpg";
-import featCalculator from "@/assets/feat-calculator.jpg";
-import bandGuard from "@/assets/band-guard.png";
-import bandPostbox from "@/assets/band-postbox.png";
-import bandSkyline from "@/assets/band-skyline.png";
+import { getDailyQuiz, getFeaturedQuizzes } from "@/data/quizzes";
+import { ArrowRight, Clock, ListChecks, Sparkles, Trophy, Zap } from "lucide-react";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "UK Test Hub — Pass Your UK Tests First Time" },
+      { title: "UK Test Hub — Free UK Practice Tests & Mock Exams" },
       {
         name: "description",
         content:
-          "Free UK practice tests: Driving Theory, Life in the UK, IELTS, GCSE, CSCS, NHS, SERU TfL and more. Realistic mock exams with instant results and explanations.",
+          "Free UK practice tests: Driving Theory, Life in the UK, IELTS, GCSE, CSCS, aptitude tests and more. Realistic mock exams with explanations — pass first time.",
       },
-      { property: "og:title", content: "UK Test Hub — Pass Your UK Tests First Time" },
+      { property: "og:title", content: "UK Test Hub — Free UK Practice Tests & Mock Exams" },
       {
         property: "og:description",
         content:
-          "Free mock tests for UK Driving Theory, Life in the UK, IELTS, GCSE, CSCS, NHS & more.",
+          "Free mock tests for UK Driving Theory, Life in the UK, IELTS, GCSE, CSCS, aptitude tests & more.",
       },
-      { property: "og:image", content: heroUk },
       { property: "og:type", content: "website" },
     ],
   }),
   component: HomePage,
 });
 
-const featured = [
-  { slug: "driving-theory-mock-1", title: "Driving Theory Mock Test 1", img: featDriving, mostPopular: true, btn: "coral" as const },
-  { slug: "life-in-the-uk-mock-1", title: "Life in the UK Test 2026", img: featFlag, btn: "royal" as const },
-  { slug: "ielts-grammar-starter", title: "IELTS Listening Practice", img: featHeadphones, btn: "navy" as const },
-  { slug: "gcse-maths-warmup", title: "11+ Maths Practice Test", img: featCalculator, btn: "coral" as const },
-  { slug: "uk-geography-quick", title: "UK Geography Test", img: featTowerBridge, btn: "royal" as const },
-  { slug: "road-signs-essentials", title: "Road Signs Test", img: featRoadSigns, btn: "navy" as const },
-];
-
-const btnClass: Record<"coral" | "royal" | "navy", string> = {
-  coral: "bg-coral text-coral-foreground hover:brightness-110",
-  royal: "bg-royal text-royal-foreground hover:brightness-110",
-  navy: "bg-navy text-navy-foreground hover:brightness-110",
-};
-
-function SectionTitle({ children }: { children: React.ReactNode }) {
-  return (
-    <div className="text-center">
-      <div className="inline-flex items-center justify-center gap-3">
-        <Crown className="h-5 w-5 text-royal" />
-        <h2 className="font-display text-2xl font-extrabold uppercase tracking-[0.18em] text-foreground md:text-3xl">
-          {children}
-        </h2>
-        <Crown className="h-5 w-5 text-royal" />
-      </div>
-      <div className="mx-auto mt-3 h-1 w-16 rounded-full bg-coral" />
-    </div>
-  );
-}
-
 function HomePage() {
   const daily = getDailyQuiz();
+  const featured = getFeaturedQuizzes();
 
   return (
     <div className="min-h-screen bg-background">
       <SiteHeader />
 
       {/* HERO */}
-      <section className="relative overflow-hidden bg-navy-deep text-navy-foreground">
-        <img
-          src={heroUk}
-          alt="Big Ben at dusk with the Union Jack"
-          className="absolute inset-0 h-full w-full object-cover object-center opacity-90"
+      <section className="relative overflow-hidden bg-gradient-hero text-navy-foreground">
+        {/* Giant translucent Union Jack — decorative backdrop */}
+        <UnionJack
+          className="pointer-events-none absolute -right-16 top-1/2 hidden h-[140%] w-[70%] -translate-y-1/2 opacity-[0.10] mix-blend-screen md:block"
         />
+        {/* Subtle dot grid */}
         <div
           aria-hidden
-          className="absolute inset-0 bg-gradient-to-r from-navy-deep via-navy-deep/85 to-navy-deep/30"
+          className="absolute inset-0 opacity-[0.07]"
+          style={{
+            backgroundImage:
+              "radial-gradient(circle at 25% 20%, white 1px, transparent 1px), radial-gradient(circle at 75% 80%, white 1px, transparent 1px)",
+            backgroundSize: "40px 40px",
+          }}
         />
-
-        <div className="relative mx-auto grid max-w-7xl gap-10 px-4 py-16 md:px-6 md:py-24 lg:grid-cols-[1.3fr_1fr] lg:items-center">
+        <div className="relative mx-auto grid max-w-7xl gap-10 px-4 py-16 md:px-6 md:py-24 lg:grid-cols-[1.2fr_1fr]">
           <div>
-            <p className="font-display text-sm font-semibold uppercase tracking-[0.25em] text-navy-foreground/80">
-              Pass your
-            </p>
-            <h1 className="mt-3 font-display text-5xl font-extrabold uppercase leading-[0.95] tracking-tight md:text-7xl lg:text-8xl">
-              UK Tests
+            <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider">
+              <UnionJack className="h-3.5 w-6 rounded-[2px]" />
+              Made for the UK · 100% free
+            </span>
+            <h1 className="mt-5 font-display text-4xl font-bold leading-[1.05] tracking-tight md:text-6xl">
+              Pass your UK <span className="text-coral">tests</span>
               <br />
-              <span className="text-coral">First Time</span>
+              <span className="text-gold">first time.</span>
             </h1>
-            <p className="mt-6 max-w-xl text-base text-navy-foreground/85 md:text-lg">
-              Real exam questions. Mock tests. Instant results.
-              <br />
-              Study anytime, anywhere.
+            <p className="mt-5 max-w-xl text-lg text-navy-foreground/80 md:text-xl">
+              Free, realistic mock exams for Driving Theory, Life in the UK,
+              SERU TfL, IELTS, NHS, GCSE, CSCS and more — with instant
+              explanations.
             </p>
-
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
                 to="/category/$slug"
                 params={{ slug: "driving" }}
-                className="inline-flex items-center gap-2 rounded-xl bg-coral px-7 py-4 text-sm font-bold uppercase tracking-wider text-coral-foreground shadow-coral transition-transform hover:-translate-y-0.5"
+                className="inline-flex items-center gap-2 rounded-2xl bg-gradient-coral px-6 py-3.5 text-sm font-semibold text-coral-foreground shadow-coral transition-transform hover:-translate-y-0.5"
               >
-                Start Practice <ArrowRight className="h-4 w-4" />
+                Start practising <ArrowRight className="h-4 w-4" />
               </Link>
               <Link
                 to="/quiz/$slug"
                 params={{ slug: "driving-theory-mock-1" }}
-                className="inline-flex items-center gap-2 rounded-xl border-2 border-white/40 bg-white/5 px-7 py-4 text-sm font-bold uppercase tracking-wider text-navy-foreground backdrop-blur transition-colors hover:bg-white/15"
+                className="inline-flex items-center gap-2 rounded-2xl border border-white/30 bg-white/10 px-6 py-3.5 text-sm font-semibold text-navy-foreground backdrop-blur transition-colors hover:bg-white/20"
               >
-                Take a Mock Test
+                Take a mock exam
               </Link>
             </div>
 
-            <ul className="mt-10 flex flex-wrap gap-x-7 gap-y-3 text-sm text-navy-foreground/85">
-              {[
-                { icon: CheckCircle2, label: "1000+ Questions" },
-                { icon: FileCheck, label: "Real Exam Format" },
-                { icon: Timer, label: "Instant Results" },
-                { icon: CalendarCheck, label: "Updated for 2026" },
-              ].map((s) => (
-                <li key={s.label} className="inline-flex items-center gap-2">
-                  <s.icon className="h-4 w-4 text-coral" />
-                  <span className="font-medium">{s.label}</span>
-                </li>
-              ))}
-            </ul>
+            <dl className="mt-10 grid max-w-lg grid-cols-3 gap-6 border-t border-white/10 pt-6 text-sm">
+              <div>
+                <dt className="text-navy-foreground/60">Categories</dt>
+                <dd className="font-display text-2xl font-bold">{categories.length}</dd>
+              </div>
+              <div>
+                <dt className="text-navy-foreground/60">Mock tests</dt>
+                <dd className="font-display text-2xl font-bold">10+</dd>
+              </div>
+              <div>
+                <dt className="text-navy-foreground/60">Pass rate</dt>
+                <dd className="font-display text-2xl font-bold">94%</dd>
+              </div>
+            </dl>
           </div>
 
-          {/* Daily Challenge floating card */}
+          {/* Daily quiz card in hero */}
           <Link
             to="/quiz/$slug"
             params={{ slug: daily.slug }}
-            className="group relative block overflow-hidden rounded-3xl border border-white/15 bg-navy-deep/80 p-6 shadow-elevated backdrop-blur-md transition-transform hover:-translate-y-1 md:p-7"
+            className="group relative flex flex-col justify-between overflow-hidden rounded-3xl border border-white/15 bg-white/5 p-6 backdrop-blur-md transition-transform hover:-translate-y-1 md:p-8"
           >
-            <div className="flex items-center justify-center gap-2">
-              <Crown className="h-4 w-4 text-gold" />
-              <span className="font-display text-xs font-bold uppercase tracking-[0.2em] text-navy-foreground">
-                Daily Challenge
-              </span>
-            </div>
-            <div className="mt-6 flex items-start gap-4">
-              <span className="flex h-16 w-16 shrink-0 items-center justify-center overflow-hidden rounded-full ring-2 ring-white/40">
-                <UnionJack className="h-full w-full" />
-              </span>
-              <div className="text-sm leading-snug text-navy-foreground/90">
-                Can you score{" "}
-                <span className="font-display text-2xl font-extrabold text-navy-foreground">
-                  {daily.questions.length}/{daily.questions.length}
+            <div>
+              <div className="flex items-center gap-2">
+                <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-gold text-gold-foreground">
+                  <Zap className="h-5 w-5" />
                 </span>
-                <br />
-                on today&rsquo;s
-                <br />
-                <span className="font-semibold text-navy-foreground">
-                  UK Knowledge Quiz?
+                <span className="text-xs font-semibold uppercase tracking-wider text-gold">
+                  Daily Challenge
                 </span>
               </div>
+              <h2 className="mt-5 font-display text-2xl font-bold leading-tight md:text-3xl">
+                {daily.quizTitle}
+              </h2>
+              <p className="mt-2 text-sm text-navy-foreground/75">{daily.description}</p>
             </div>
-            <span className="mt-6 flex w-full items-center justify-center gap-2 rounded-xl bg-coral px-5 py-3 text-sm font-bold text-coral-foreground shadow-coral transition-transform group-hover:-translate-y-0.5">
-              Start Daily Quiz <ArrowRight className="h-4 w-4" />
-            </span>
+            <div className="mt-6 flex items-center justify-between border-t border-white/10 pt-5 text-sm">
+              <span className="flex items-center gap-3 text-navy-foreground/70">
+                <span className="inline-flex items-center gap-1"><ListChecks className="h-4 w-4" /> {daily.questions.length} Qs</span>
+                <span className="inline-flex items-center gap-1"><Clock className="h-4 w-4" /> {Math.round(daily.timeLimit / 60)} min</span>
+              </span>
+              <span className="inline-flex items-center gap-1.5 font-semibold text-coral">
+                Play <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+              </span>
+            </div>
           </Link>
         </div>
       </section>
@@ -189,124 +138,115 @@ function HomePage() {
       <main className="mx-auto max-w-7xl px-4 md:px-6">
         <AdSlot size="leaderboard" className="mt-10" />
 
-        {/* POPULAR CATEGORIES */}
-        <section className="mt-16">
-          <SectionTitle>Popular Categories</SectionTitle>
+        {/* BENTO: Categories + featured */}
+        <section className="mt-12">
+          <div className="flex items-end justify-between">
+            <div>
+              <h2 className="font-display text-3xl font-bold">Choose your test</h2>
+              <p className="mt-1 text-muted-foreground">
+                Practice tests across the UK's most-searched exams.
+              </p>
+            </div>
+          </div>
 
-          <div className="mt-10 grid gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4">
-            {categories.map((c, i) => {
-              const isCoral = c.accent === "coral";
-              return (
-                <Link
-                  key={c.slug}
-                  to="/category/$slug"
-                  params={{ slug: c.slug }}
-                  className="group flex flex-col items-center rounded-2xl border border-border bg-card p-6 text-center shadow-soft transition-all hover:-translate-y-1 hover:border-coral/40 hover:shadow-elevated"
-                >
-                  <span
-                    className={`mb-4 flex h-16 w-16 items-center justify-center rounded-2xl ${accentClasses[c.accent]}`}
-                  >
-                    <CategoryIcon name={c.icon} className="h-8 w-8" />
+          <div className="mt-8 grid auto-rows-[180px] grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-4">
+            {/* Big featured tile */}
+            <Link
+              to="/category/$slug"
+              params={{ slug: categories[0].slug }}
+              className="group relative col-span-1 row-span-2 flex flex-col justify-between overflow-hidden rounded-3xl bg-gradient-coral p-6 text-coral-foreground shadow-coral transition-transform hover:-translate-y-1 md:col-span-2"
+            >
+              <div
+                aria-hidden
+                className="absolute -right-8 -top-8 h-40 w-40 rounded-full bg-white/20 blur-2xl"
+              />
+              <div className="relative">
+                <span className="inline-flex items-center gap-1 rounded-full bg-white/20 px-2.5 py-0.5 text-[11px] font-semibold uppercase tracking-wider">
+                  <Trophy className="h-3 w-3" /> Most popular
+                </span>
+                <h3 className="mt-4 font-display text-3xl font-bold leading-tight md:text-4xl">
+                  Driving Theory<br />Mock Tests
+                </h3>
+                <p className="mt-2 max-w-sm text-sm opacity-90">
+                  DVSA-style practice with explanations — exactly like the real thing.
+                </p>
+              </div>
+              <span className="relative inline-flex items-center gap-1.5 text-sm font-semibold">
+                Explore tests <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+              </span>
+            </Link>
+
+            {categories.slice(1).map((c, i) => (
+              <Link
+                key={c.slug}
+                to="/category/$slug"
+                params={{ slug: c.slug }}
+                className={`group relative flex flex-col justify-between overflow-hidden rounded-3xl border border-border bg-card p-5 shadow-soft transition-all hover:-translate-y-1 hover:border-coral hover:shadow-elevated ${
+                  i === 0 ? "lg:col-span-2" : ""
+                }`}
+              >
+                <div className="flex items-start justify-between">
+                  <span className={`flex h-11 w-11 items-center justify-center rounded-xl ${accentClasses[c.accent]}`}>
+                    <CategoryIcon name={c.icon} className="h-5 w-5" />
                   </span>
-                  <h3 className="font-display text-base font-bold leading-tight text-foreground">
-                    {c.title}
-                  </h3>
-                  <p className="mt-2 line-clamp-3 text-xs text-muted-foreground">
-                    {c.short}
-                  </p>
-                  <span
-                    className={`mt-5 inline-flex w-full items-center justify-center rounded-xl border-2 px-4 py-2 text-xs font-bold uppercase tracking-wider transition-colors ${
-                      isCoral
-                        ? "border-coral/30 text-coral group-hover:bg-coral group-hover:text-coral-foreground"
-                        : "border-royal/30 text-royal group-hover:bg-royal group-hover:text-royal-foreground"
-                    }`}
-                  >
-                    {c.topics.length}+ Tests
-                  </span>
-                  {/* avoid unused var warning */}
-                  <span className="hidden">{i}</span>
-                </Link>
-              );
-            })}
+                  <ArrowRight className="h-4 w-4 text-muted-foreground transition-transform group-hover:translate-x-1 group-hover:text-coral" />
+                </div>
+                <div>
+                  <h3 className="font-display text-lg font-semibold leading-tight">{c.title}</h3>
+                  <p className="mt-1 line-clamp-2 text-xs text-muted-foreground">{c.short}</p>
+                </div>
+              </Link>
+            ))}
           </div>
         </section>
 
-        <AdSlot size="leaderboard" className="my-14" />
+        <AdSlot size="leaderboard" className="my-12" />
 
-        {/* FEATURED MOCK TESTS */}
+        {/* FEATURED TESTS */}
         <section>
-          <div className="flex items-end justify-between gap-4">
-            <SectionTitle>Featured Mock Tests</SectionTitle>
-          </div>
-          <div className="mt-3 text-right">
-            <Link
-              to="/category/$slug"
-              params={{ slug: "driving" }}
-              className="inline-flex items-center gap-1 text-sm font-semibold text-coral hover:underline"
-            >
-              View all tests <ArrowRight className="h-4 w-4" />
-            </Link>
-          </div>
-
-          <ul className="mt-8 grid gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
-            {featured.map((f) => {
-              const q = getQuiz(f.slug);
-              if (!q) return null;
-              return (
-                <li key={f.slug}>
-                  <Link
-                    to="/quiz/$slug"
-                    params={{ slug: f.slug }}
-                    className="group flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-soft transition-all hover:-translate-y-1 hover:border-coral/40 hover:shadow-elevated"
-                  >
-                    <div className="relative aspect-[4/3] overflow-hidden bg-muted">
-                      <img
-                        src={f.img}
-                        alt={f.title}
-                        loading="lazy"
-                        width={800}
-                        height={600}
-                        className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                      />
-                      {f.mostPopular && (
-                        <span className="absolute left-3 top-3 rounded-md bg-coral px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-coral-foreground shadow-coral">
-                          Most Popular
-                        </span>
-                      )}
-                    </div>
-                    <div className="flex flex-1 flex-col p-4">
-                      <h3 className="font-display text-sm font-bold leading-tight text-foreground">
-                        {f.title}
-                      </h3>
-                      <div className="mt-3 flex flex-wrap gap-x-3 gap-y-1 text-[11px] text-muted-foreground">
-                        <span className="inline-flex items-center gap-1">
-                          <ListChecks className="h-3 w-3" /> {q.questions.length} Questions
-                        </span>
-                        <span className="inline-flex items-center gap-1">
-                          <Clock className="h-3 w-3" /> {Math.round(q.timeLimit / 60)} Mins
-                        </span>
-                      </div>
-                      <span
-                        className={`mt-4 inline-flex w-full items-center justify-center rounded-lg px-3 py-2 text-xs font-bold uppercase tracking-wider transition-transform group-hover:-translate-y-0.5 ${btnClass[f.btn]}`}
-                      >
-                        Start Test
-                      </span>
-                    </div>
-                  </Link>
-                </li>
-              );
-            })}
+          <h2 className="font-display text-3xl font-bold">Featured mock exams</h2>
+          <p className="mt-1 text-muted-foreground">
+            Hand-picked tests to get you exam-ready fast.
+          </p>
+          <ul className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            {featured.map((q) => (
+              <li key={q.slug}>
+                <Link
+                  to="/quiz/$slug"
+                  params={{ slug: q.slug }}
+                  className="group flex h-full flex-col rounded-2xl border border-border bg-card p-5 shadow-soft transition-all hover:-translate-y-1 hover:border-coral hover:shadow-elevated"
+                >
+                  <span className="self-start rounded-full bg-coral/10 px-2.5 py-0.5 text-[11px] font-semibold uppercase tracking-wider text-coral">
+                    {q.difficulty}
+                  </span>
+                  <h3 className="mt-3 font-display text-lg font-semibold leading-tight">
+                    {q.quizTitle}
+                  </h3>
+                  <div className="mt-4 flex flex-wrap gap-3 text-xs text-muted-foreground">
+                    <span className="inline-flex items-center gap-1">
+                      <ListChecks className="h-3.5 w-3.5" /> {q.questions.length} Qs
+                    </span>
+                    <span className="inline-flex items-center gap-1">
+                      <Clock className="h-3.5 w-3.5" /> {Math.round(q.timeLimit / 60)} min
+                    </span>
+                  </div>
+                  <div className="mt-auto pt-5">
+                    <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-coral">
+                      Start test <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                    </span>
+                  </div>
+                </Link>
+              </li>
+            ))}
           </ul>
         </section>
 
-        {/* TOPIC PRACTICE */}
-        <section className="mt-20 rounded-3xl border border-border bg-gradient-card p-6 md:p-10">
-          <h2 className="font-display text-2xl font-bold md:text-3xl">
-            Practice by topic
-          </h2>
+        {/* TOPIC PRACTICE (SEO) */}
+        <section className="mt-16 rounded-3xl border border-border bg-gradient-card p-6 md:p-10">
+          <h2 className="font-display text-2xl font-bold md:text-3xl">Practice by topic</h2>
           <p className="mt-1 max-w-2xl text-muted-foreground">
-            Jump straight into a specific topic. Every link below is its own
-            page, updated with fresh questions.
+            Jump straight into a specific topic. Every link below is its own page,
+            updated with fresh questions.
           </p>
           <div className="mt-8 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {categories.map((c) => (
@@ -331,64 +271,30 @@ function HomePage() {
             ))}
           </div>
         </section>
-      </main>
 
-      {/* WHY US BAND with Beefeater + Post box */}
-      <section className="relative mt-20 overflow-hidden bg-navy-deep text-navy-foreground">
-        <img
-          src={bandGuard}
-          alt=""
-          aria-hidden
-          className="pointer-events-none absolute -bottom-2 left-0 hidden h-[110%] w-auto md:block"
-        />
-        <img
-          src={bandPostbox}
-          alt=""
-          aria-hidden
-          className="pointer-events-none absolute -bottom-2 right-0 hidden h-[110%] w-auto md:block"
-        />
-        <div className="relative mx-auto grid max-w-5xl gap-8 px-4 py-12 sm:grid-cols-2 md:grid-cols-4 md:px-6 md:py-14">
+        {/* WHY US */}
+        <section className="mt-16 grid gap-5 md:grid-cols-3">
           {[
-            { icon: ShieldCheck, t: "Real Exam Experience", d: "Questions based on real exam standards." },
-            { icon: Timer, t: "Instant Results", d: "Get results and explanations instantly." },
-            { icon: TrendingUp, t: "Track Progress", d: "Monitor your scores and improve over time." },
-            { icon: Smartphone, t: "Study Anywhere", d: "Mobile friendly and responsive design." },
+            {
+              t: "Realistic exam feel",
+              d: "Timed exam mode mirrors real DVSA, Home Office and exam-board tests.",
+            },
+            {
+              t: "Learn as you practice",
+              d: "Practice mode shows the correct answer and explanation instantly.",
+            },
+            {
+              t: "Always free",
+              d: "Every test on UK Test Hub is free — no sign-up, no paywall.",
+            },
           ].map((f) => (
-            <div key={f.t} className="flex items-start gap-3">
-              <span className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-white/10">
-                <f.icon className="h-4.5 w-4.5 text-coral" />
-              </span>
-              <div>
-                <h3 className="font-display text-sm font-bold leading-tight">{f.t}</h3>
-                <p className="mt-1 text-xs text-navy-foreground/70">{f.d}</p>
-              </div>
+            <div key={f.t} className="rounded-2xl border border-border bg-card p-6 shadow-soft">
+              <h3 className="font-display text-lg font-semibold">{f.t}</h3>
+              <p className="mt-2 text-sm text-muted-foreground">{f.d}</p>
             </div>
           ))}
-        </div>
-      </section>
-
-      {/* UK PRIDE STRIP */}
-      <section className="relative overflow-hidden bg-royal/10">
-        <img
-          src={bandSkyline}
-          alt=""
-          aria-hidden
-          className="pointer-events-none absolute inset-x-0 bottom-0 h-full w-full object-cover object-bottom opacity-30"
-        />
-        <div className="relative mx-auto flex max-w-5xl items-center gap-5 px-4 py-10 md:px-6">
-          <span className="flex h-12 w-12 shrink-0 overflow-hidden rounded-full ring-2 ring-white">
-            <UnionJack className="h-full w-full" />
-          </span>
-          <div>
-            <h3 className="font-display text-lg font-bold text-foreground md:text-xl">
-              Proudly helping learners across the UK and worldwide
-            </h3>
-            <p className="mt-1 text-sm text-muted-foreground">
-              Free practice questions, mock exams, instant results and detailed explanations.
-            </p>
-          </div>
-        </div>
-      </section>
+        </section>
+      </main>
 
       <SiteFooter />
     </div>
