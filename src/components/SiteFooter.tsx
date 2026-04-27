@@ -4,17 +4,18 @@ import { Logo } from "./Logo";
 
 type StaticLink = { label: string; to: string };
 type CategoryLink = { label: string; to: "/category/$slug"; params: { slug: string } };
-type FooterLink = StaticLink | CategoryLink;
+type TopicLink = { label: string; to: "/topic/$slug"; params: { slug: string } };
+type FooterLink = StaticLink | CategoryLink | TopicLink;
 
 const popularTests: FooterLink[] = [
-  { label: "Driving Theory Test", to: "/category/$slug", params: { slug: "driving" } },
-  { label: "Life in the UK Test", to: "/category/$slug", params: { slug: "citizenship" } },
-  { label: "SERU TfL Test", to: "/seru-tfl" },
-  { label: "IELTS Practice", to: "/category/$slug", params: { slug: "english" } },
-  { label: "ESOL Practice", to: "/category/$slug", params: { slug: "english" } },
-  { label: "11+ Practice", to: "/category/$slug", params: { slug: "education" } },
-  { label: "CSCS Card Test", to: "/category/$slug", params: { slug: "professional" } },
-  { label: "SIA Security Test", to: "/category/$slug", params: { slug: "professional" } },
+  { label: "Driving Theory Test", to: "/topic/$slug", params: { slug: "driving-theory" } },
+  { label: "Life in the UK Test", to: "/topic/$slug", params: { slug: "life-in-the-uk" } },
+  { label: "SERU TfL Test", to: "/topic/$slug", params: { slug: "seru" } },
+  { label: "IELTS Practice", to: "/topic/$slug", params: { slug: "ielts" } },
+  { label: "ESOL Practice", to: "/topic/$slug", params: { slug: "esol" } },
+  { label: "11+ Practice", to: "/topic/$slug", params: { slug: "eleven-plus" } },
+  { label: "CSCS Card Test", to: "/topic/$slug", params: { slug: "cscs" } },
+  { label: "SIA Security Test", to: "/topic/$slug", params: { slug: "sia" } },
 ];
 
 const company: StaticLink[] = [
