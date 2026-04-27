@@ -44,10 +44,20 @@ export const Route = createFileRoute("/")({
       {
         property: "og:description",
         content:
+          "Free mock tests for UK Driving Theory, Life in the UK, IELTS, GCSE, CSCS, NHS & more. Realistic exams with instant results.",
+      },
+      { property: "og:image", content: "/og-uk-test-hub.jpg" },
+      { property: "og:image:width", content: "1536" },
+      { property: "og:image:height", content: "800" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "UK Test Hub — Pass Your UK Tests First Time" },
+      {
+        name: "twitter:description",
+        content:
           "Free mock tests for UK Driving Theory, Life in the UK, IELTS, GCSE, CSCS, NHS & more.",
       },
-      { property: "og:image", content: heroUk },
-      { property: "og:type", content: "website" },
+      { name: "twitter:image", content: "/og-uk-test-hub.jpg" },
     ],
   }),
   component: HomePage,
