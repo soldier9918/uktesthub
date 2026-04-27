@@ -30,6 +30,7 @@ import featCalculator from "@/assets/feat-calculator.jpg";
 import bandGuard from "@/assets/band-guard.png";
 import bandPostbox from "@/assets/band-postbox.png";
 import bandSkyline from "@/assets/band-skyline.png";
+import unionJackOverlay from "@/assets/union-jack-overlay.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -100,6 +101,12 @@ function HomePage() {
         <div
           aria-hidden
           className="absolute inset-0 bg-gradient-to-r from-navy-deep via-navy-deep/85 to-navy-deep/30"
+        />
+        <img
+          src={unionJackOverlay}
+          alt=""
+          aria-hidden
+          className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-15 mix-blend-overlay"
         />
 
         <div className="relative mx-auto grid max-w-7xl gap-10 px-4 py-16 md:px-6 md:py-24 lg:grid-cols-[1.3fr_1fr] lg:items-center">
