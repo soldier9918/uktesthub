@@ -109,7 +109,7 @@ function HomePage() {
           className="absolute inset-0 bg-gradient-to-r from-navy-deep/70 via-navy-deep/55 to-navy-deep/20"
         />
 
-        <div className="relative mx-auto grid max-w-7xl gap-10 px-4 py-16 md:px-6 md:py-24 lg:grid-cols-[1.3fr_1fr] lg:items-center">
+        <div className="relative mx-auto max-w-7xl px-4 py-16 md:px-6 md:py-24">
           <div>
             <p className="font-display font-semibold uppercase tracking-[0.25em] text-navy-foreground/80 text-5xl">
               Pass your
@@ -156,40 +156,6 @@ function HomePage() {
               ))}
             </ul>
           </div>
-
-          {/* Daily Challenge floating card */}
-          <Link
-            to="/quiz/$slug"
-            params={{ slug: daily.slug }}
-            className="group relative block overflow-hidden rounded-3xl border border-white/15 bg-navy-deep/80 p-6 shadow-elevated backdrop-blur-md transition-transform hover:-translate-y-1 md:p-7"
-          >
-            <div className="flex items-center justify-center gap-2">
-              <Crown className="h-4 w-4 text-gold" />
-              <span className="font-display text-xs font-bold uppercase tracking-[0.2em] text-navy-foreground">
-                Daily Challenge
-              </span>
-            </div>
-            <div className="mt-6 flex items-start gap-4">
-              <span className="flex h-16 w-16 shrink-0 items-center justify-center overflow-hidden rounded-full ring-2 ring-white/40">
-                <UnionJack className="h-full w-full" />
-              </span>
-              <div className="text-sm leading-snug text-navy-foreground/90">
-                Can you score{" "}
-                <span className="font-display text-2xl font-extrabold text-navy-foreground">
-                  {daily.questions.length}/{daily.questions.length}
-                </span>
-                <br />
-                on today&rsquo;s
-                <br />
-                <span className="font-semibold text-navy-foreground">
-                  UK Knowledge Quiz?
-                </span>
-              </div>
-            </div>
-            <span className="mt-6 flex w-full items-center justify-center gap-2 rounded-xl bg-coral px-5 py-3 text-sm font-bold text-coral-foreground shadow-coral transition-transform group-hover:-translate-y-0.5">
-              Start Daily Quiz <ArrowRight className="h-4 w-4" />
-            </span>
-          </Link>
         </div>
       </section>
 
@@ -306,34 +272,73 @@ function HomePage() {
 
         {/* TOPIC PRACTICE */}
         <section className="mt-20 rounded-3xl border border-border bg-gradient-card p-6 md:p-10">
-          <h2 className="font-display text-2xl font-bold md:text-3xl">
-            Practice by topic
-          </h2>
-          <p className="mt-1 max-w-2xl text-muted-foreground">
-            Jump straight into a specific topic. Every link below is its own
-            page, updated with fresh questions.
-          </p>
-          <div className="mt-8 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {categories.map((c) => (
-              <div key={c.slug}>
-                <h3 className="font-display text-sm font-semibold uppercase tracking-wider text-coral">
-                  {c.title}
-                </h3>
-                <ul className="mt-3 space-y-2 text-sm">
-                  {c.topics.map((t) => (
-                    <li key={t.slug}>
-                      <Link
-                        to="/category/$slug"
-                        params={{ slug: c.slug }}
-                        className="text-muted-foreground hover:text-foreground"
-                      >
-                        {t.title}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
+          <div className="grid gap-10 lg:grid-cols-[1fr_320px] lg:items-start">
+            <div>
+              <h2 className="font-display text-2xl font-bold md:text-3xl">
+                Practice by topic
+              </h2>
+              <p className="mt-1 max-w-2xl text-muted-foreground">
+                Jump straight into a specific topic. Every link below is its own
+                page, updated with fresh questions.
+              </p>
+              <div className="mt-8 grid gap-8 sm:grid-cols-2">
+                {categories.map((c) => (
+                  <div key={c.slug}>
+                    <h3 className="font-display text-sm font-semibold uppercase tracking-wider text-coral">
+                      {c.title}
+                    </h3>
+                    <ul className="mt-3 space-y-2 text-sm">
+                      {c.topics.map((t) => (
+                        <li key={t.slug}>
+                          <Link
+                            to="/category/$slug"
+                            params={{ slug: c.slug }}
+                            className="text-muted-foreground hover:text-foreground"
+                          >
+                            {t.title}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
               </div>
-            ))}
+            </div>
+
+            <aside className="lg:sticky lg:top-24">
+              <Link
+                to="/quiz/$slug"
+                params={{ slug: daily.slug }}
+                className="group relative block overflow-hidden rounded-3xl border border-white/15 bg-navy-deep p-6 shadow-elevated transition-transform hover:-translate-y-1 md:p-7"
+              >
+                <div className="flex items-center justify-center gap-2">
+                  <Crown className="h-4 w-4 text-gold" />
+                  <span className="font-display text-xs font-bold uppercase tracking-[0.2em] text-navy-foreground">
+                    Daily Challenge
+                  </span>
+                </div>
+                <div className="mt-6 flex items-start gap-4">
+                  <span className="flex h-16 w-16 shrink-0 items-center justify-center overflow-hidden rounded-full ring-2 ring-white/40">
+                    <UnionJack className="h-full w-full" />
+                  </span>
+                  <div className="text-sm leading-snug text-navy-foreground/90">
+                    Can you score{" "}
+                    <span className="font-display text-2xl font-extrabold text-navy-foreground">
+                      {daily.questions.length}/{daily.questions.length}
+                    </span>
+                    <br />
+                    on today&rsquo;s
+                    <br />
+                    <span className="font-semibold text-navy-foreground">
+                      UK Knowledge Quiz?
+                    </span>
+                  </div>
+                </div>
+                <span className="mt-6 flex w-full items-center justify-center gap-2 rounded-xl bg-coral px-5 py-3 text-sm font-bold text-coral-foreground shadow-coral transition-transform group-hover:-translate-y-0.5">
+                  Start Daily Quiz <ArrowRight className="h-4 w-4" />
+                </span>
+              </Link>
+            </aside>
           </div>
         </section>
       </main>
