@@ -1,3 +1,4 @@
+import React from "react";
 // SVG renderings of common UK road signs.
 // Pure SVG so no asset pipeline / image hosting is needed and they scale crisply.
 
