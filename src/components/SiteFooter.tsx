@@ -51,8 +51,8 @@ function FooterColumn({ title, items }: { title: string; items: FooterLink[] }) 
           <li key={item.label}>
             {"params" in item ? (
               <Link
-                to={item.to}
-                params={item.params}
+                to={item.to as "/category/$slug"}
+                params={item.params as { slug: string }}
                 className="transition-colors hover:text-coral"
               >
                 {item.label}
