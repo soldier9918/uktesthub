@@ -258,6 +258,93 @@ export const quizzes: Quiz[] = [
         explanation:
           "A car with skid marks in a red triangle warns of a slippery road surface.",
       },
+      {
+        id: 11,
+        question: "What does this sign mean?",
+        signType: "nationalSpeedLimit",
+        options: [
+          "End of speed limit / national speed limit applies",
+          "No speed limit at all",
+          "30 mph zone",
+          "Derestricted footpath",
+        ],
+        correctAnswer: 0,
+        explanation:
+          "A white circle with a single black diagonal stripe means the national speed limit applies.",
+      },
+      {
+        id: 12,
+        question: "What does this sign mean?",
+        signType: "noUTurn",
+        options: ["No right turn", "No U-turns", "No through road", "Roundabout"],
+        correctAnswer: 1,
+        explanation:
+          "A U-shaped arrow with a red diagonal bar means no U-turns.",
+      },
+      {
+        id: 13,
+        question: "What does this sign instruct you to do?",
+        signType: "aheadOnly",
+        options: ["Turn left ahead", "Ahead only", "One-way street", "End of dual carriageway"],
+        correctAnswer: 1,
+        explanation:
+          "A blue circle with a single up arrow means you must go straight ahead only.",
+      },
+      {
+        id: 14,
+        question: "What does this warning sign mean?",
+        signType: "pedestrianCrossing",
+        options: ["School crossing", "Pedestrians in road ahead", "Bus stop", "Tram stop"],
+        correctAnswer: 1,
+        explanation:
+          "A pedestrian on zebra stripes warns of a pedestrian crossing or pedestrians in the road ahead.",
+      },
+      {
+        id: 15,
+        question: "What does this sign mean?",
+        signType: "twoWayTraffic",
+        options: ["Two-way traffic ahead", "Overtaking lane", "Lane closed", "Dual carriageway ends"],
+        correctAnswer: 0,
+        explanation:
+          "Two opposing vertical arrows in a triangle warn of two-way traffic on the road ahead.",
+      },
+      {
+        id: 16,
+        question: "What does this warning sign mean?",
+        signType: "roadWorks",
+        options: ["Pedestrians", "Road works ahead", "School", "Hospital"],
+        correctAnswer: 1,
+        explanation:
+          "A figure with a shovel inside a red triangle warns of road works ahead.",
+      },
+      {
+        id: 17,
+        question: "What does this sign mean?",
+        signType: "levelCrossingNoGate",
+        options: [
+          "No entry",
+          "Level crossing without barrier or gate ahead",
+          "Crossroads",
+          "Junction closed",
+        ],
+        correctAnswer: 1,
+        explanation:
+          "A red triangle with a Saint Andrew's cross warns of a level crossing without a barrier or gate.",
+      },
+      {
+        id: 18,
+        question: "What does this sign mean?",
+        signType: "endOfRestrictions",
+        options: [
+          "End of all restrictions previously signed",
+          "Closed road",
+          "End of motorway",
+          "No vehicles allowed",
+        ],
+        correctAnswer: 0,
+        explanation:
+          "A white circle with diagonal black lines indicates the end of all previously signed restrictions.",
+      },
     ],
   },
 
