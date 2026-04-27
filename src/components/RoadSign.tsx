@@ -157,12 +157,11 @@ const SIGNS: Record<string, React.ReactElement> = {
     </BlueCircle>
   ),
   keepLeft: (
-    // Down-left diagonal arrow on solid blue
+    // "Keep left" — bold left-pointing horizontal arrow
     <BlueCircle>
       <path
-        d="M30 30 L62 62 L62 46 L72 46 L72 72 L46 72 L46 62 Z"
+        d="M58 30 L58 42 L78 42 L78 58 L58 58 L58 70 L22 50 Z"
         fill="white"
-        transform="rotate(180 50 50)"
       />
     </BlueCircle>
   ),
