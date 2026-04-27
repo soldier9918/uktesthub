@@ -87,7 +87,14 @@ function HomePage() {
   const daily = getDailyQuiz();
 
   return (
-    <div className="min-h-screen bg-[oklch(0.97_0.01_250)]">
+    <div
+      className="min-h-screen bg-[#f7f5f0]"
+      style={{
+        backgroundImage:
+          "radial-gradient(ellipse 60% 50% at 0% 0%, rgba(1,33,105,0.07), transparent 60%), radial-gradient(ellipse 55% 45% at 100% 100%, rgba(200,16,46,0.07), transparent 60%), radial-gradient(ellipse 40% 30% at 100% 0%, rgba(200,16,46,0.04), transparent 60%), radial-gradient(ellipse 40% 30% at 0% 100%, rgba(1,33,105,0.05), transparent 60%)",
+        backgroundAttachment: "fixed",
+      }}
+    >
       <SiteHeader />
 
       {/* HERO */}
