@@ -232,9 +232,11 @@ function ModeSelect({ quiz, onSelect }: { quiz: Quiz; onSelect: (m: Mode) => voi
           <span className="rounded-full bg-muted px-3 py-1 font-medium">
             {Math.round(quiz.timeLimit / 60)} min
           </span>
-          <span className="rounded-full bg-muted px-3 py-1 font-medium">
-            {quiz.difficulty}
-          </span>
+          {!quiz.slug.includes("-mock-") && (
+            <span className="rounded-full bg-muted px-3 py-1 font-medium">
+              {quiz.difficulty}
+            </span>
+          )}
           <span className="rounded-full bg-gold/20 px-3 py-1 font-medium text-foreground">
             Pass: {quiz.passMark}%
           </span>
