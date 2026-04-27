@@ -1,9 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap");
 @import "tailwindcss" source(none);
 @source "../src";
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
+
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap");
 
 /*
  * UK Test Hub design system — "Union Coral"
@@ -45,8 +46,11 @@
   --color-warning-foreground: var(--warning-foreground);
   --color-navy: var(--navy);
   --color-navy-foreground: var(--navy-foreground);
+  --color-navy-deep: var(--navy-deep);
   --color-coral: var(--coral);
   --color-coral-foreground: var(--coral-foreground);
+  --color-royal: var(--royal);
+  --color-royal-foreground: var(--royal-foreground);
   --color-gold: var(--gold);
   --color-gold-foreground: var(--gold-foreground);
   --color-border: var(--border);
@@ -81,12 +85,17 @@
   --popover-foreground: oklch(0.18 0.04 260);
 
   /* Navy — primary brand */
-  --navy: oklch(0.24 0.06 260);
+  --navy: oklch(0.22 0.07 265);
   --navy-foreground: oklch(0.98 0.005 250);
+  --navy-deep: oklch(0.16 0.07 265);
 
-  /* Coral — CTA */
-  --coral: oklch(0.7 0.18 22);
+  /* Coral / British red — CTA */
+  --coral: oklch(0.62 0.23 27);
   --coral-foreground: oklch(0.99 0.005 250);
+
+  /* Royal blue — secondary brand */
+  --royal: oklch(0.45 0.2 260);
+  --royal-foreground: oklch(0.99 0.005 250);
 
   /* Gold — highlight */
   --gold: oklch(0.84 0.14 85);

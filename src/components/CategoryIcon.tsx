@@ -27,8 +27,8 @@ export function CategoryIcon({ name, className }: { name: string; className?: st
 }
 
 export const accentClasses: Record<string, string> = {
-  coral: "bg-gradient-coral text-coral-foreground shadow-coral",
-  gold: "bg-gradient-gold text-gold-foreground",
-  navy: "bg-navy text-navy-foreground",
-  success: "bg-success text-success-foreground",
+  coral: "bg-coral/10 text-coral",
+  gold: "bg-gold/15 text-[oklch(0.55_0.13_75)]",
+  navy: "bg-royal/10 text-royal",
+  success: "bg-success/10 text-success",
 };
