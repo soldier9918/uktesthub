@@ -1,0 +1,119 @@
+export type Category = {
+  slug: string;
+  title: string;
+  short: string;
+  description: string;
+  icon: string; // lucide icon name
+  accent: "coral" | "gold" | "navy" | "success";
+  topics: { slug: string; title: string }[];
+};
+
+export const categories: Category[] = [
+  {
+    slug: "driving",
+    title: "Driving & Transport",
+    short: "Driving theory, hazard perception & road signs",
+    description:
+      "Free practice for the UK Driving Theory Test, Hazard Perception, Road Signs and Motorcycle Theory. DVSA-style questions with explanations.",
+    icon: "Car",
+    accent: "coral",
+    topics: [
+      { slug: "driving-theory", title: "Driving Theory Test" },
+      { slug: "hazard-perception", title: "Hazard Perception Test" },
+      { slug: "road-signs", title: "Road Signs Test" },
+      { slug: "motorcycle-theory", title: "Motorcycle Theory Test" },
+    ],
+  },
+  {
+    slug: "citizenship",
+    title: "UK Citizenship & Life",
+    short: "Life in the UK, British citizenship & laws",
+    description:
+      "Pass the Life in the UK Test first time. Practice questions on history, traditions, government and the law.",
+    icon: "Crown",
+    accent: "gold",
+    topics: [
+      { slug: "life-in-the-uk", title: "Life in the UK Test" },
+      { slug: "british-citizenship", title: "British Citizenship Practice" },
+      { slug: "uk-laws-rights", title: "UK Laws & Rights Quiz" },
+      { slug: "uk-geography", title: "UK Geography Test" },
+    ],
+  },
+  {
+    slug: "english",
+    title: "English Language Tests",
+    short: "IELTS, TOEFL, ESOL, grammar & vocabulary",
+    description:
+      "Improve your English with IELTS Listening, Reading and Writing, TOEFL practice, ESOL exercises and grammar drills.",
+    icon: "Languages",
+    accent: "navy",
+    topics: [
+      { slug: "ielts", title: "IELTS Practice" },
+      { slug: "esol", title: "ESOL Practice" },
+      { slug: "toefl", title: "TOEFL Practice" },
+      { slug: "grammar", title: "Grammar & Vocabulary" },
+    ],
+  },
+  {
+    slug: "education",
+    title: "Education & School",
+    short: "11+, GCSE, SATs KS1 & KS2",
+    description:
+      "Free practice tests for the 11+ Exam, GCSE Maths, GCSE English and Key Stage SATs.",
+    icon: "GraduationCap",
+    accent: "success",
+    topics: [
+      { slug: "eleven-plus", title: "11+ Exam Practice" },
+      { slug: "gcse-maths", title: "GCSE Maths" },
+      { slug: "gcse-english", title: "GCSE English" },
+      { slug: "sats", title: "SATs KS1 / KS2" },
+    ],
+  },
+  {
+    slug: "career",
+    title: "Job & Career Tests",
+    short: "Aptitude, psychometric & SJT",
+    description:
+      "Prepare for job assessments: numerical, verbal and logical aptitude tests, psychometric and Situational Judgement Tests.",
+    icon: "Briefcase",
+    accent: "navy",
+    topics: [
+      { slug: "numerical", title: "Numerical Reasoning" },
+      { slug: "verbal", title: "Verbal Reasoning" },
+      { slug: "logical", title: "Logical Reasoning" },
+      { slug: "sjt", title: "Situational Judgement" },
+    ],
+  },
+  {
+    slug: "professional",
+    title: "Professional Certification",
+    short: "CSCS, SIA, Food Hygiene, First Aid",
+    description:
+      "Pass the CSCS Card Test, SIA Security Test, Food Hygiene Level 2 and First Aid Theory exams.",
+    icon: "ShieldCheck",
+    accent: "coral",
+    topics: [
+      { slug: "cscs", title: "CSCS Card Test" },
+      { slug: "sia", title: "SIA Security Test" },
+      { slug: "food-hygiene", title: "Food Hygiene Level 2" },
+      { slug: "first-aid", title: "First Aid Theory" },
+    ],
+  },
+  {
+    slug: "fun",
+    title: "Fun & Viral Quizzes",
+    short: "How British are you? UK slang & daily quiz",
+    description:
+      "Light-hearted quizzes: How British Are You, UK Slang and a fresh General Knowledge Daily Quiz.",
+    icon: "Sparkles",
+    accent: "gold",
+    topics: [
+      { slug: "how-british", title: "How British Are You?" },
+      { slug: "uk-slang", title: "UK Slang Quiz" },
+      { slug: "daily", title: "General Knowledge Daily" },
+    ],
+  },
+];
+
+export const getCategory = (slug: string) =>
+  categories.find((c) => c.slug === slug);
