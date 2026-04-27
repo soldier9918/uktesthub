@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageLayout } from "@/components/PageLayout";
 
 export const Route = createFileRoute("/feedback")({
@@ -24,7 +24,7 @@ function FeedbackPage() {
   return (
     <PageLayout
       title="Feedback"
-      intro="We build UK Test Hub for our learners. Tell us what's working, what's not, and what you'd like to see next."
+      intro="We build UK Test Hub for our learners. Tell us what's working, what's not, and what you'd like to see next — every message is read by a real person on the team."
     >
       <h2>Send us your thoughts</h2>
       <p>
@@ -33,10 +33,11 @@ function FeedbackPage() {
         . Useful things to include:
       </p>
       <ul>
-        <li>Which test or feature you're using</li>
-        <li>What you liked or found difficult</li>
-        <li>Ideas for new quizzes or categories</li>
-        <li>Bugs or visual issues (with screenshots if possible)</li>
+        <li>Which test or feature you're using.</li>
+        <li>What you liked or found difficult.</li>
+        <li>Ideas for new quizzes or categories.</li>
+        <li>Bugs or visual issues (with screenshots if possible).</li>
+        <li>The device and browser you're using.</li>
       </ul>
 
       <h2>Feature requests</h2>
@@ -45,10 +46,33 @@ function FeedbackPage() {
         revision sheets? Let us know — popular requests get prioritised.
       </p>
 
+      <h2>What we don't handle here</h2>
+      <ul>
+        <li>
+          Errors in specific questions — please use{" "}
+          <Link to="/report">Report a Question</Link> instead.
+        </li>
+        <li>
+          Accessibility barriers — please email
+          accessibility@uktesthub.co.uk so we can prioritise a fix.
+        </li>
+        <li>
+          Press or partnership enquiries —{" "}
+          <Link to="/contact">contact us</Link> directly.
+        </li>
+      </ul>
+
+      <h2>Response times</h2>
+      <p>
+        We aim to acknowledge feedback within 5 working days. We can't
+        always reply individually to every suggestion, but everything is
+        read and logged.
+      </p>
+
       <h2>Thanks for helping us improve</h2>
       <p>
-        Every message is read by a real person on the team. We genuinely
-        appreciate the time you take to help us make UK Test Hub better.
+        We genuinely appreciate the time you take to help us make UK Test
+        Hub better — keep it coming.
       </p>
     </PageLayout>
   );

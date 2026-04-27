@@ -28,8 +28,8 @@ function SeruPage() {
       intro="Prepare for the Transport for London SERU (Safety, Equality and Regulatory Understanding) assessment for private hire drivers."
     >
       <p>
-        <Link to="/quiz/$slug" params={{ slug: "seru-tfl-mock-1" }}>
-          ▶ Start the SERU TfL Mock Test 1
+        <Link to="/topic/$slug" params={{ slug: "seru" }}>
+          ▶ Choose from 45 free SERU TfL mock tests
         </Link>
       </p>
 
