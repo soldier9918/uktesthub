@@ -87,7 +87,7 @@ function HomePage() {
   const daily = getDailyQuiz();
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-[oklch(0.97_0.01_250)]">
       <SiteHeader />
 
       {/* HERO */}
@@ -193,8 +193,8 @@ function HomePage() {
         <section className="mt-16">
           <SectionTitle>Popular Categories</SectionTitle>
 
-          <div className="mt-10 grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7">
-            {categories.slice(0, 7).map((c) => {
+          <div className="mt-10 grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+            {categories.map((c) => {
               const isCoral = c.accent === "coral";
               return (
                 <Link
