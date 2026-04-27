@@ -97,9 +97,16 @@ function HomePage() {
           alt="Big Ben at dusk with the Union Jack"
           className="absolute inset-0 h-full w-full object-cover object-center opacity-90"
         />
+        {/* Subtle Union Jack overlay for British flair */}
         <div
           aria-hidden
-          className="absolute inset-0 bg-gradient-to-r from-navy-deep via-navy-deep/85 to-navy-deep/30"
+          className="pointer-events-none absolute inset-0 opacity-25 mix-blend-screen"
+        >
+          <UnionJack className="h-full w-full" />
+        </div>
+        <div
+          aria-hidden
+          className="absolute inset-0 bg-gradient-to-r from-navy-deep via-navy-deep/80 to-navy-deep/20"
         />
 
         <div className="relative mx-auto grid max-w-7xl gap-10 px-4 py-16 md:px-6 md:py-24 lg:grid-cols-[1.3fr_1fr] lg:items-center">
