@@ -5,6 +5,7 @@ export type Question = {
   correctAnswer: number;
   explanation: string;
   image?: string;
+  signType?: string; // key into RoadSign component
 };
 
 export type Quiz = {

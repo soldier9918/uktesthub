@@ -42,7 +42,7 @@ const RedTriangle = ({ children }: { children?: React.ReactNode }) => (
   </svg>
 );
 
-const SIGNS: Record<string, JSX.Element> = {
+const SIGNS: Record<string, React.ReactElement> = {
   stop: (
     <svg viewBox="0 0 100 100" className="h-full w-full">
       <polygon
