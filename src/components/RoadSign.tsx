@@ -289,21 +289,22 @@ const SIGNS: Record<string, React.ReactElement> = {
     </RedTriangle>
   ),
   steepHillDownward: (
-    // Triangle showing a downward gradient with percentage
+    // Triangle showing a downward gradient — slope on right, "10%" on left
     <RedTriangle>
-      <line x1="22" y1="40" x2="78" y2="76" stroke="#111" strokeWidth="5" strokeLinecap="round" />
-      <line x1="22" y1="76" x2="78" y2="76" stroke="#111" strokeWidth="3" />
-      <text x="50" y="62" textAnchor="middle" fontSize="13" fontWeight="700" fill="#111">10%</text>
+      <line x1="20" y1="42" x2="80" y2="78" stroke="#111" strokeWidth="5" strokeLinecap="round" />
+      <text x="34" y="74" textAnchor="middle" fontSize="13" fontWeight="700" fill="#111">10%</text>
     </RedTriangle>
   ),
   endOfRestrictions: (
-    // White circle with diagonal black bars across (end of all restrictions)
+    // White circle with several diagonal black bars (end of all restrictions)
     <svg viewBox="0 0 100 100" className="h-full w-full">
       <circle cx="50" cy="50" r="46" fill="white" stroke="#111" strokeWidth="3" />
-      <g stroke="#111" strokeWidth="4" strokeLinecap="round">
-        <line x1="22" y1="78" x2="78" y2="22" />
-        <line x1="28" y1="80" x2="80" y2="28" />
-        <line x1="20" y1="72" x2="72" y2="20" />
+      <g stroke="#111" strokeWidth="3" strokeLinecap="round">
+        <line x1="18" y1="82" x2="82" y2="18" />
+        <line x1="26" y1="82" x2="82" y2="26" />
+        <line x1="34" y1="82" x2="82" y2="34" />
+        <line x1="18" y1="74" x2="74" y2="18" />
+        <line x1="18" y1="66" x2="66" y2="18" />
       </g>
     </svg>
   ),
