@@ -45,9 +45,11 @@ export function CategoryIcon({
 
 // Soft tinted background plates used behind the icon on each card. Designed to
 // echo the dominant colour of the illustrated icon for a cohesive premium feel.
+// Icons are now flat coloured silhouettes — no background plate needed.
+// Kept for backwards-compat with other places that still reference these keys.
 export const accentClasses: Record<string, string> = {
-  coral: "bg-gradient-to-br from-coral/15 to-coral/5 ring-1 ring-coral/15",
-  gold: "bg-gradient-to-br from-gold/25 to-gold/5 ring-1 ring-gold/20",
-  navy: "bg-gradient-to-br from-royal/15 to-royal/5 ring-1 ring-royal/15",
-  success: "bg-gradient-to-br from-success/15 to-success/5 ring-1 ring-success/15",
+  coral: "",
+  gold: "",
+  navy: "",
+  success: "",
 };
