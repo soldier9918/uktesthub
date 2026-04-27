@@ -5,6 +5,7 @@ export type Question = {
   correctAnswer: number;
   explanation: string;
   image?: string;
+  signType?: string; // key into RoadSign component
 };
 
 export type Quiz = {
@@ -150,46 +151,112 @@ export const quizzes: Quiz[] = [
     slug: "road-signs-essentials",
     category: "driving",
     topic: "road-signs",
-    quizTitle: "Road Signs — Essentials",
-    description: "Recognise the most common UK road signs and their meanings.",
+    quizTitle: "UK Road Signs — Identify the Sign",
+    description:
+      "Look at each UK road sign and choose what it means. Covers warning, order and information signs.",
     timeLimit: 480,
     difficulty: "Easy",
     passMark: 80,
     questions: [
       {
         id: 1,
-        question: "A circular sign with a red border generally means:",
-        options: ["Warning", "Prohibition / order", "Information", "Direction"],
+        question: "What does this sign mean?",
+        signType: "stop",
+        options: ["Give way", "Stop", "No entry for vehicles", "End of restriction"],
         correctAnswer: 1,
-        explanation: "Circular signs give orders. A red border means a prohibition.",
+        explanation:
+          "The octagonal red STOP sign is unique — you must come to a complete stop at the line.",
       },
       {
         id: 2,
-        question: "A blue circular sign means:",
-        options: ["Prohibition", "Warning", "A positive instruction", "Tourist information"],
-        correctAnswer: 2,
-        explanation: "Blue circles give a positive instruction (e.g. 'turn left').",
+        question: "What does this sign mean?",
+        signType: "giveWay",
+        options: ["Stop", "Give way to traffic on the major road", "No through road", "Roundabout ahead"],
+        correctAnswer: 1,
+        explanation:
+          "An inverted red triangle means 'Give way' — slow down and yield to traffic on the main road.",
       },
       {
         id: 3,
-        question: "An octagonal red sign means:",
-        options: ["Give way", "Stop", "No entry", "School ahead"],
-        correctAnswer: 1,
-        explanation: "STOP is the only octagonal sign — its shape is unique so it's recognisable.",
+        question: "What does this sign mean?",
+        signType: "noEntry",
+        options: ["No entry for vehicular traffic", "One-way street", "No stopping", "Road closed"],
+        correctAnswer: 0,
+        explanation:
+          "A red circle with a white horizontal bar means no entry for vehicular traffic.",
       },
       {
         id: 4,
-        question: "A triangle pointing downward means:",
-        options: ["Stop", "No entry", "Give way", "Roundabout"],
-        correctAnswer: 2,
-        explanation: "An inverted triangle means 'Give way'.",
+        question: "What is the maximum speed allowed?",
+        signType: "speed30",
+        options: ["20 mph", "30 mph", "40 mph", "National speed limit"],
+        correctAnswer: 1,
+        explanation:
+          "A red ring around a number sets the maximum speed limit in mph — here, 30 mph.",
       },
       {
         id: 5,
-        question: "Green rectangular signs are used on:",
-        options: ["Motorways", "Primary routes", "Local roads", "Tourist routes"],
+        question: "What does this sign mean?",
+        signType: "noOvertaking",
+        options: [
+          "Two-way traffic",
+          "No overtaking",
+          "Lane closure ahead",
+          "End of dual carriageway",
+        ],
         correctAnswer: 1,
-        explanation: "Green signs indicate primary routes (non-motorway A-roads).",
+        explanation:
+          "Two cars in a red ring (one red, one black) means no overtaking.",
+      },
+      {
+        id: 6,
+        question: "What does this sign instruct you to do?",
+        signType: "turnLeft",
+        options: ["Turn left ahead", "Keep left", "No left turn", "One-way left"],
+        correctAnswer: 0,
+        explanation:
+          "Blue circular signs give a positive instruction — this one means turn left ahead.",
+      },
+      {
+        id: 7,
+        question: "What does this sign mean?",
+        signType: "miniRoundabout",
+        options: [
+          "Roundabout — give way to traffic from the right",
+          "Sharp bend",
+          "T-junction",
+          "Cycle route",
+        ],
+        correctAnswer: 0,
+        explanation:
+          "Blue circular roundabout sign — give way to traffic coming from your right.",
+      },
+      {
+        id: 8,
+        question: "What does this warning sign mean?",
+        signType: "schoolWarning",
+        options: ["Pedestrians in road", "School children crossing", "Playground", "Bus stop"],
+        correctAnswer: 1,
+        explanation:
+          "Red triangle warning of school children likely to cross — slow down and watch for kids.",
+      },
+      {
+        id: 9,
+        question: "What does this warning sign mean?",
+        signType: "crossroadsWarning",
+        options: ["Crossroads ahead", "T-junction", "Staggered junction", "Level crossing"],
+        correctAnswer: 0,
+        explanation:
+          "A red triangle with a plus shape warns of a crossroads ahead.",
+      },
+      {
+        id: 10,
+        question: "What hazard does this sign warn you about?",
+        signType: "slipperyRoad",
+        options: ["Loose chippings", "Slippery road", "Road narrows", "Steep hill"],
+        correctAnswer: 1,
+        explanation:
+          "A car with skid marks in a red triangle warns of a slippery road surface.",
       },
     ],
   },

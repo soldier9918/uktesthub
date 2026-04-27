@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 import type { Quiz } from "@/data/quizzes";
 import { AdSlot } from "./AdSlot";
+import { RoadSign } from "./RoadSign";
 
 type Mode = "practice" | "exam";
 
@@ -127,6 +128,11 @@ export function QuizRunner({ quiz }: { quiz: Quiz }) {
 
       {/* Question card */}
       <div className="rounded-3xl border border-border bg-card p-6 shadow-soft md:p-8">
+        {q.signType && (
+          <div className="mb-6">
+            <RoadSign type={q.signType} title="Road sign" />
+          </div>
+        )}
         <h2 className="font-display text-xl font-semibold leading-snug md:text-2xl">
           {q.question}
         </h2>
