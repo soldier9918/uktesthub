@@ -1,6 +1,10 @@
 import { Link } from "@tanstack/react-router";
 
-const popularTests: { label: string; to: string; params?: Record<string, string> }[] = [
+type StaticLink = { label: string; to: string };
+type CategoryLink = { label: string; to: "/category/$slug"; params: { slug: string } };
+type FooterLink = StaticLink | CategoryLink;
+
+const popularTests: FooterLink[] = [
   { label: "Driving Theory Test", to: "/category/$slug", params: { slug: "driving" } },
   { label: "Life in the UK Test", to: "/category/$slug", params: { slug: "citizenship" } },
   { label: "SERU TfL Test", to: "/seru-tfl" },
@@ -11,14 +15,14 @@ const popularTests: { label: string; to: string; params?: Record<string, string>
   { label: "SIA Security Test", to: "/category/$slug", params: { slug: "professional" } },
 ];
 
-const company = [
+const company: StaticLink[] = [
   { label: "About Us", to: "/about" },
   { label: "Contact Us", to: "/contact" },
   { label: "FAQ", to: "/faq" },
   { label: "Sitemap", to: "/sitemap" },
 ];
 
-const legal = [
+const legal: StaticLink[] = [
   { label: "Privacy Policy", to: "/privacy" },
   { label: "Cookie Policy", to: "/cookies" },
   { label: "Terms and Conditions", to: "/terms" },
@@ -26,20 +30,14 @@ const legal = [
   { label: "Accessibility Statement", to: "/accessibility" },
 ];
 
-const support = [
+const support: StaticLink[] = [
   { label: "Help Centre", to: "/help" },
   { label: "Report a Question", to: "/report" },
   { label: "Feedback", to: "/feedback" },
   { label: "Exam Updates", to: "/exam-updates" },
 ];
 
-function FooterColumn({
-  title,
-  items,
-}: {
-  title: string;
-  items: { label: string; to: string; params?: Record<string, string> }[];
-}) {
+function FooterColumn({ title, items }: { title: string; items: FooterLink[] }) {
   return (
     <div>
       <h4 className="font-display text-sm font-semibold uppercase tracking-wider text-gold">
@@ -48,15 +46,22 @@ function FooterColumn({
       <ul className="mt-4 space-y-2.5 text-sm text-navy-foreground/75">
         {items.map((item) => (
           <li key={item.label}>
-            <Link
-              // @ts-expect-error – mixed static + dynamic links use the same component
-              to={item.to}
-              // @ts-expect-error – params only present on dynamic routes
-              params={item.params}
-              className="transition-colors hover:text-coral"
-            >
-              {item.label}
-            </Link>
+            {"params" in item ? (
+              <Link
+                to={item.to}
+                params={item.params}
+                className="transition-colors hover:text-coral"
+              >
+                {item.label}
+              </Link>
+            ) : (
+              <Link
+                to={item.to as "/about"}
+                className="transition-colors hover:text-coral"
+              >
+                {item.label}
+              </Link>
+            )}
           </li>
         ))}
       </ul>
