@@ -1102,9 +1102,18 @@ import { getMockBySlug, mockToQuiz } from "@/data/mocks";
 import { findTopic } from "@/data/categories";
 
 export const getQuiz = (slug: string): Quiz | undefined => {
+  // Mock-test slugs (e.g. "driving-theory-mock-7") MUST resolve to the
+  // AI-generated 24-question JSON, not any legacy 10-question stub that
+  // may share the same slug in this file.
+  if (/-mock-\d+$/.test(slug)) {
+    const mock = getMockBySlug(slug);
+    if (mock) {
+      const found = findTopic(mock.topic);
+      if (found) return mockToQuiz(found.category.slug, mock);
+    }
+  }
   const direct = quizzes.find((q) => q.slug === slug);
   if (direct) return direct;
-  // Fallback: dynamically generated mock test (e.g. "life-in-the-uk-mock-7")
   const mock = getMockBySlug(slug);
   if (!mock) return undefined;
   const found = findTopic(mock.topic);
