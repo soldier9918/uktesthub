@@ -36,8 +36,12 @@ export function QuizRunner({ quiz }: { quiz: Quiz }) {
     return () => clearTimeout(t);
   }, [mode, timeLeft, finished]);
 
-  const score = useMemo(
-    () => answers.reduce((acc, a, i) => (a === quiz.questions[i].correctAnswer ? acc + 1 : acc), 0),
+  const score = useMemo<number>(
+    () =>
+      answers.reduce<number>(
+        (acc, a, i) => (a === quiz.questions[i].correctAnswer ? acc + 1 : acc),
+        0,
+      ),
     [answers, quiz.questions],
   );
   const percent = Math.round((score / quiz.questions.length) * 100);
