@@ -104,7 +104,7 @@ function HomePage() {
 
         <div className="relative mx-auto grid max-w-7xl gap-10 px-4 py-16 md:px-6 md:py-24 lg:grid-cols-[1.3fr_1fr] lg:items-center">
           <div>
-            <p className="font-display text-sm font-semibold uppercase tracking-[0.25em] text-navy-foreground/80">
+            <p className="font-display font-semibold uppercase tracking-[0.25em] text-navy-foreground/80 text-5xl">
               Pass your
             </p>
             <h1 className="mt-3 font-display text-5xl font-extrabold uppercase leading-[0.95] tracking-tight md:text-7xl lg:text-8xl">
