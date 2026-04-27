@@ -29,7 +29,7 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "UK Test Hub — Pass Your UK Tests First Time" },
+      { title: "UK Test Hub" },
       {
         name: "description",
         content:
@@ -38,6 +38,13 @@ export const Route = createRootRoute({
       { name: "author", content: "UK Test Hub" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:title", content: "UK Test Hub" },
+      { name: "twitter:title", content: "UK Test Hub" },
+      { name: "description", content: "UK Test Hub Pro is a premium web application for UK and international English exam preparation." },
+      { property: "og:description", content: "UK Test Hub Pro is a premium web application for UK and international English exam preparation." },
+      { name: "twitter:description", content: "UK Test Hub Pro is a premium web application for UK and international English exam preparation." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/60rsF7o22RT0wrreDJWyLhTs1UL2/social-images/social-1777326990566-76124a84-9ddf-45ab-8599-9bc2e87067d0.webp" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/60rsF7o22RT0wrreDJWyLhTs1UL2/social-images/social-1777326990566-76124a84-9ddf-45ab-8599-9bc2e87067d0.webp" },
     ],
     links: [
       {
