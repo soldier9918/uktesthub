@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageLayout } from "@/components/PageLayout";
 
 export const Route = createFileRoute("/report")({
@@ -24,8 +24,16 @@ function ReportPage() {
   return (
     <PageLayout
       title="Report a Question"
-      intro="Help us keep UK Test Hub accurate. If you think a question or answer is wrong, please tell us."
+      intro="Help us keep UK Test Hub accurate. If you spot a question that looks wrong, unclear or out of date, please tell us — reader reports are one of the most valuable ways we improve."
     >
+      <h2>When to report a question</h2>
+      <ul>
+        <li>The "correct" answer doesn't match official guidance.</li>
+        <li>The question wording is ambiguous or misleading.</li>
+        <li>A typo, formatting error or broken image.</li>
+        <li>The content is out of date after a rule or syllabus change.</li>
+      </ul>
+
       <h2>How to report</h2>
       <p>
         Email{" "}
@@ -33,10 +41,11 @@ function ReportPage() {
         with the following details:
       </p>
       <ul>
-        <li>The quiz title (and category)</li>
-        <li>The question number or full question text</li>
-        <li>What you believe is wrong</li>
-        <li>A reliable source backing up the correction (where possible)</li>
+        <li>The quiz title and category (or the URL).</li>
+        <li>The question number or full question text.</li>
+        <li>What you believe is wrong.</li>
+        <li>A reliable source backing up the correction (where possible).</li>
+        <li>A screenshot if it helps explain the issue.</li>
       </ul>
 
       <h2>What happens next</h2>
@@ -53,10 +62,17 @@ function ReportPage() {
         </li>
       </ol>
 
+      <h2>Tracking changes</h2>
+      <p>
+        Notable updates are summarised in our{" "}
+        <Link to="/exam-updates">Exam Updates</Link> log so the wider
+        community can see what's changed.
+      </p>
+
       <h2>Thank you</h2>
       <p>
-        Reader reports are one of the most valuable ways we keep UK Test Hub
-        reliable. Thank you for taking the time.
+        Reader reports are one of the most valuable ways we keep UK Test
+        Hub reliable. Thank you for taking the time.
       </p>
     </PageLayout>
   );
