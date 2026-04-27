@@ -1098,7 +1098,19 @@ export const quizzes: Quiz[] = [
   },
 ];
 
-export const getQuiz = (slug: string) => quizzes.find((q) => q.slug === slug);
+import { getMockBySlug, mockToQuiz } from "@/data/mocks";
+import { findTopic } from "@/data/categories";
+
+export const getQuiz = (slug: string): Quiz | undefined => {
+  const direct = quizzes.find((q) => q.slug === slug);
+  if (direct) return direct;
+  // Fallback: dynamically generated mock test (e.g. "life-in-the-uk-mock-7")
+  const mock = getMockBySlug(slug);
+  if (!mock) return undefined;
+  const found = findTopic(mock.topic);
+  return found ? mockToQuiz(found.category.slug, mock) : undefined;
+};
+
 export const getQuizzesByCategory = (cat: string) =>
   quizzes.filter((q) => q.category === cat);
 export const getDailyQuiz = () =>

@@ -48,6 +48,18 @@ export function QuizRunner({ quiz }: { quiz: Quiz }) {
   const percent = Math.round((score / quiz.questions.length) * 100);
   const passed = percent >= quiz.passMark;
 
+  // Persist best score per quiz slug so category page progress bars fill.
+  useEffect(() => {
+    if (!finished) return;
+    try {
+      const key = `uk-test-hub:best:${quiz.slug}`;
+      const prev = parseInt(localStorage.getItem(key) ?? "0", 10) || 0;
+      if (score > prev) localStorage.setItem(key, String(score));
+    } catch {
+      // ignore
+    }
+  }, [finished, score, quiz.slug]);
+
   if (!mode) {
     return <ModeSelect quiz={quiz} onSelect={setMode} />;
   }
