@@ -3,6 +3,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { AdSlot } from "@/components/AdSlot";
 import { CategoryIcon, accentClasses } from "@/components/CategoryIcon";
+import { UnionJack } from "@/components/UnionJack";
 import { categories } from "@/data/categories";
 import { getDailyQuiz, getFeaturedQuizzes } from "@/data/quizzes";
 import { ArrowRight, Clock, ListChecks, Sparkles, Trophy, Zap } from "lucide-react";
@@ -38,6 +39,11 @@ function HomePage() {
 
       {/* HERO */}
       <section className="relative overflow-hidden bg-gradient-hero text-navy-foreground">
+        {/* Giant translucent Union Jack — decorative backdrop */}
+        <UnionJack
+          className="pointer-events-none absolute -right-16 top-1/2 hidden h-[140%] w-[70%] -translate-y-1/2 opacity-[0.10] mix-blend-screen md:block"
+        />
+        {/* Subtle dot grid */}
         <div
           aria-hidden
           className="absolute inset-0 opacity-[0.07]"
@@ -50,7 +56,8 @@ function HomePage() {
         <div className="relative mx-auto grid max-w-7xl gap-10 px-4 py-16 md:px-6 md:py-24 lg:grid-cols-[1.2fr_1fr]">
           <div>
             <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider">
-              <Sparkles className="h-3.5 w-3.5 text-gold" /> 100% free · No sign-up
+              <UnionJack className="h-3.5 w-6 rounded-[2px]" />
+              Made for the UK · 100% free
             </span>
             <h1 className="mt-5 font-display text-4xl font-bold leading-[1.05] tracking-tight md:text-6xl">
               Pass your UK <span className="text-coral">tests</span>
@@ -58,8 +65,9 @@ function HomePage() {
               <span className="text-gold">first time.</span>
             </h1>
             <p className="mt-5 max-w-xl text-lg text-navy-foreground/80 md:text-xl">
-              Free, realistic mock exams for Driving Theory, Life in the UK, IELTS,
-              GCSE, CSCS and more — with instant explanations.
+              Free, realistic mock exams for Driving Theory, Life in the UK,
+              SERU TfL, IELTS, NHS, GCSE, CSCS and more — with instant
+              explanations.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link

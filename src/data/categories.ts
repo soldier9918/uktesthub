@@ -87,16 +87,32 @@ export const categories: Category[] = [
   {
     slug: "professional",
     title: "Professional Certification",
-    short: "CSCS, SIA, Food Hygiene, First Aid",
+    short: "CSCS, SIA, SERU TfL, Food Hygiene, First Aid",
     description:
-      "Pass the CSCS Card Test, SIA Security Test, Food Hygiene Level 2 and First Aid Theory exams.",
+      "Pass the CSCS Card Test, SIA Security Test, SERU TfL Assessment, Food Hygiene Level 2 and First Aid Theory exams.",
     icon: "ShieldCheck",
     accent: "coral",
     topics: [
       { slug: "cscs", title: "CSCS Card Test" },
       { slug: "sia", title: "SIA Security Test" },
+      { slug: "seru", title: "SERU TfL Assessment" },
       { slug: "food-hygiene", title: "Food Hygiene Level 2" },
       { slug: "first-aid", title: "First Aid Theory" },
+    ],
+  },
+  {
+    slug: "nhs",
+    title: "NHS & Healthcare Tests",
+    short: "NHS numeracy, literacy, CBT & values-based recruitment",
+    description:
+      "Practice for NHS recruitment and healthcare assessments — numeracy, literacy, situational judgement, values-based interviews and the NMC CBT for nurses.",
+    icon: "HeartPulse",
+    accent: "success",
+    topics: [
+      { slug: "nhs-numeracy", title: "NHS Numeracy Test" },
+      { slug: "nhs-literacy", title: "NHS Literacy Test" },
+      { slug: "nhs-values", title: "NHS Values-Based Recruitment" },
+      { slug: "nmc-cbt", title: "NMC CBT (Nurses)" },
     ],
   },
   {

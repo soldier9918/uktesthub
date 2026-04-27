@@ -782,6 +782,320 @@ export const quizzes: Quiz[] = [
       },
     ],
   },
+
+  // -------------------- SERU TfL --------------------
+  {
+    slug: "seru-tfl-mock-1",
+    category: "professional",
+    topic: "seru",
+    quizTitle: "SERU TfL Assessment — Mock Test 1",
+    description:
+      "Practice for the Transport for London Safety, Equality and Regulatory Understanding (SERU) assessment for private hire drivers.",
+    timeLimit: 900,
+    difficulty: "Medium",
+    passMark: 80,
+    questions: [
+      {
+        id: 1,
+        question: "What does the term 'safeguarding' mean for a private hire driver?",
+        options: [
+          "Protecting children and vulnerable adults from harm or abuse",
+          "Locking the vehicle when parked",
+          "Carrying a first aid kit",
+          "Reporting traffic offences",
+        ],
+        correctAnswer: 0,
+        explanation:
+          "Safeguarding is about protecting children and vulnerable adults from abuse, neglect or exploitation.",
+      },
+      {
+        id: 2,
+        question: "A passenger with a guide dog wants to travel. You should:",
+        options: [
+          "Refuse — dogs aren't allowed in your car",
+          "Charge an extra cleaning fee",
+          "Carry them at no extra charge unless you have a medical exemption",
+          "Ask them to put the dog in the boot",
+        ],
+        correctAnswer: 2,
+          explanation:
+          "Under the Equality Act 2010 you must carry assistance dogs at no extra cost unless you hold a valid medical exemption certificate from a licensing authority.",
+      },
+      {
+        id: 3,
+        question: "A passenger appears very drunk and is unsteady. The safest action is to:",
+        options: [
+          "Refuse the journey if you believe they pose a safety risk",
+          "Drive faster to drop them off quickly",
+          "Take them anywhere they ask without question",
+          "Charge them double",
+        ],
+        correctAnswer: 0,
+        explanation:
+          "You may refuse a fare if a passenger is a clear risk to themselves, you, the vehicle or other road users.",
+      },
+      {
+        id: 4,
+        question: "You suspect a child passenger is being trafficked. You should:",
+        options: [
+          "Continue the journey and forget about it",
+          "Confront the adult passenger",
+          "Complete the journey if safe and report concerns to the police on 101 (or 999 if urgent)",
+          "Drop them at the nearest petrol station",
+        ],
+        correctAnswer: 2,
+        explanation:
+          "Don't intervene directly. Note details and report safeguarding concerns to the police — 999 if there's immediate danger.",
+      },
+      {
+        id: 5,
+        question: "Which of these is a TfL licensing requirement for private hire drivers?",
+        options: [
+          "Display a 'Taxi' rooflight",
+          "Only accept pre-booked journeys via a licensed operator",
+          "Pick up passengers who hail you in the street",
+          "Wear a uniform at all times",
+        ],
+        correctAnswer: 1,
+        explanation:
+          "Private hire vehicles must be pre-booked through a TfL-licensed operator — they cannot be hailed or ply for hire.",
+      },
+      {
+        id: 6,
+        question: "A passenger in a wheelchair asks for a ride. You should:",
+        options: [
+          "Refuse if your car isn't wheelchair-adapted",
+          "Help them where reasonable and not charge extra for the disability",
+          "Charge a higher fare for the additional time",
+          "Ask them to fold the wheelchair themselves",
+        ],
+        correctAnswer: 1,
+        explanation:
+          "It's unlawful to charge a disabled passenger more or refuse them because of their disability.",
+      },
+      {
+        id: 7,
+        question: "What must you do if you're involved in a road traffic collision?",
+        options: [
+          "Drive away if no one is hurt",
+          "Stop, exchange details and report to police within 24 hours if needed",
+          "Only stop if the other driver flags you down",
+          "Call your operator and continue working",
+        ],
+        correctAnswer: 1,
+        explanation:
+          "You must stop, give details, and report to the police within 24 hours if anyone is injured or if details weren't exchanged.",
+      },
+      {
+        id: 8,
+        question: "A passenger leaves property in your vehicle. You should:",
+        options: [
+          "Keep it",
+          "Throw it away after the shift",
+          "Hand it to your operator or to a police station as soon as possible",
+          "Sell it online",
+        ],
+        correctAnswer: 2,
+        explanation:
+          "Lost property must be handed to your operator or the police promptly — keeping it is theft.",
+      },
+      {
+        id: 9,
+        question: "What is 'plying for hire'?",
+        options: [
+          "Refuelling the vehicle",
+          "Looking for passengers without a pre-booking — illegal for private hire drivers",
+          "Driving an empty vehicle to the depot",
+          "Working overtime",
+        ],
+        correctAnswer: 1,
+        explanation:
+          "Soliciting passengers without a pre-booking is plying for hire — only licensed taxis (black cabs) may do this in London.",
+      },
+      {
+        id: 10,
+        question: "How often must a TfL private hire driver complete the SERU assessment?",
+        options: [
+          "Every journey",
+          "Once, as part of the licensing process",
+          "Every year",
+          "Every 10 years",
+        ],
+        correctAnswer: 1,
+        explanation:
+          "SERU is taken once as part of obtaining your TfL private hire driver licence (with re-takes if you fail).",
+      },
+    ],
+  },
+
+  // -------------------- NHS / HEALTHCARE --------------------
+  {
+    slug: "nhs-numeracy-starter",
+    category: "nhs",
+    topic: "nhs-numeracy",
+    quizTitle: "NHS Numeracy Test — Starter",
+    description:
+      "Drug calculations, dosages and basic arithmetic typical of NHS numeracy assessments for clinical staff.",
+    timeLimit: 600,
+    difficulty: "Medium",
+    passMark: 80,
+    questions: [
+      {
+        id: 1,
+        question: "A patient needs 250 mg of a drug. Tablets come in 125 mg. How many tablets?",
+        options: ["1", "2", "3", "4"],
+        correctAnswer: 1,
+        explanation: "250 ÷ 125 = 2 tablets.",
+      },
+      {
+        id: 2,
+        question:
+          "Prescribed dose: 60 mg. Stock: 20 mg/5 ml suspension. How many ml do you give?",
+        options: ["10 ml", "12 ml", "15 ml", "20 ml"],
+        correctAnswer: 2,
+        explanation: "60 ÷ 20 = 3, then 3 × 5 ml = 15 ml.",
+      },
+      {
+        id: 3,
+        question: "Convert 0.5 g to mg.",
+        options: ["5 mg", "50 mg", "500 mg", "5000 mg"],
+        correctAnswer: 2,
+        explanation: "1 g = 1000 mg, so 0.5 g = 500 mg.",
+      },
+      {
+        id: 4,
+        question:
+          "An IV infusion of 1000 ml runs over 8 hours. What's the rate in ml/hour?",
+        options: ["100 ml/h", "115 ml/h", "125 ml/h", "150 ml/h"],
+        correctAnswer: 2,
+        explanation: "1000 ÷ 8 = 125 ml/h.",
+      },
+      {
+        id: 5,
+        question: "A patient weighs 70 kg. Dose is 5 mg/kg. Total dose?",
+        options: ["250 mg", "300 mg", "350 mg", "400 mg"],
+        correctAnswer: 2,
+        explanation: "70 × 5 = 350 mg.",
+      },
+      {
+        id: 6,
+        question: "A 2-litre bag of saline runs at 250 ml/h. How long until empty?",
+        options: ["6 h", "7 h", "8 h", "10 h"],
+        correctAnswer: 2,
+        explanation: "2000 ÷ 250 = 8 hours.",
+      },
+      {
+        id: 7,
+        question: "Convert 1.25 mg to micrograms.",
+        options: ["125 µg", "1250 µg", "12.5 µg", "12 500 µg"],
+        correctAnswer: 1,
+        explanation: "1 mg = 1000 µg, so 1.25 mg = 1250 µg.",
+      },
+      {
+        id: 8,
+        question: "10% of 250 ml is:",
+        options: ["10 ml", "20 ml", "25 ml", "50 ml"],
+        correctAnswer: 2,
+        explanation: "10% of 250 = 25 ml.",
+      },
+    ],
+  },
+  {
+    slug: "nhs-values-starter",
+    category: "nhs",
+    topic: "nhs-values",
+    quizTitle: "NHS Values-Based Recruitment — Starter",
+    description:
+      "Situational judgement questions based on the six NHS Constitution values: respect, compassion, quality, working together, improvement and dignity.",
+    timeLimit: 600,
+    difficulty: "Medium",
+    passMark: 70,
+    questions: [
+      {
+        id: 1,
+        question:
+          "A patient is upset because they've waited a long time. The best first response is:",
+        options: [
+          "Tell them everyone has to wait",
+          "Acknowledge their frustration, apologise for the delay and explain what you can",
+          "Ignore them and continue working",
+          "Tell them to complain to the manager",
+        ],
+        correctAnswer: 1,
+        explanation:
+          "NHS values of respect and compassion expect you to acknowledge feelings, apologise sincerely and communicate openly.",
+      },
+      {
+        id: 2,
+        question:
+          "You see a colleague not washing their hands between patients. You should:",
+        options: [
+          "Say nothing — it's not your business",
+          "Politely remind them and report repeated incidents to a senior",
+          "Post about it on social media",
+          "Refuse to work with them",
+        ],
+        correctAnswer: 1,
+        explanation:
+          "Patient safety comes first. Raise concerns directly and respectfully, and escalate if needed.",
+      },
+      {
+        id: 3,
+        question: "A patient confides something personal. You should:",
+        options: [
+          "Share it with other patients to make them feel less alone",
+          "Discuss it loudly at the nurses' station",
+          "Keep it confidential and only share with the clinical team if relevant to care",
+          "Post it anonymously online",
+        ],
+        correctAnswer: 2,
+        explanation:
+          "Confidentiality is a core NHS value, governed by the NHS Confidentiality Code of Practice and UK GDPR.",
+      },
+      {
+        id: 4,
+        question:
+          "You don't know how to operate a new piece of equipment. The safest action is:",
+        options: [
+          "Try anyway — you'll figure it out",
+          "Ask a trained colleague to help or supervise you before using it",
+          "Skip the task",
+          "Use it on the easiest patient first",
+        ],
+        correctAnswer: 1,
+        explanation:
+          "Working together and patient safety mean asking for help and proper training before using unfamiliar equipment.",
+      },
+      {
+        id: 5,
+        question:
+          "A patient with limited English struggles to understand their treatment plan. You should:",
+        options: [
+          "Speak loudly and slowly",
+          "Skip the explanation and hope they understand",
+          "Arrange a professional interpreter and use accessible written materials",
+          "Use the patient's child to translate",
+        ],
+        correctAnswer: 2,
+        explanation:
+          "Family members (especially children) shouldn't interpret clinical information. Use NHS-approved interpreters to ensure informed consent.",
+      },
+      {
+        id: 6,
+        question:
+          "You make a small medication error that didn't harm the patient. You should:",
+        options: [
+          "Say nothing — no harm done",
+          "Report it via the incident reporting system and inform the patient and team",
+          "Tell only your closest friend at work",
+          "Remove the entry from the chart",
+        ],
+        correctAnswer: 1,
+        explanation:
+          "The NHS duty of candour requires open reporting of all errors and near-misses so the system can learn and improve.",
+      },
+    ],
+  },
 ];
 
 export const getQuiz = (slug: string) => quizzes.find((q) => q.slug === slug);
