@@ -64,6 +64,10 @@ function QuizPage() {
                 {category.title}
               </Link>
               <ChevronRight className="h-4 w-4" />
+              <Link to="/topic/$slug" params={{ slug: quiz.topic }} className="hover:text-foreground">
+                {category.topics.find((t) => t.slug === quiz.topic)?.title ?? quiz.topic}
+              </Link>
+              <ChevronRight className="h-4 w-4" />
             </>
           )}
           <span className="line-clamp-1 text-foreground">{quiz.quizTitle}</span>

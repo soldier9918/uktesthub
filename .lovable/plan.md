@@ -1,74 +1,50 @@
-## Overview
+## Goals
 
-Two changes:
-1. **Mock tests** — every topic across all 8 categories gets **45 mock tests × 24 questions**, generated via Lovable AI. Category pages get redesigned to look like the screenshot (clean grid of "Test 1, Test 2, …" cards with progress bar — no Easy/Medium/Hard).
-2. **Category hero images** — each category page gets a unique themed photo behind the navy hero band.
+1. Every mock test must show its real **24 questions** (not 10).
+2. Each category page (Driving, UK Life, English, Education, Jobs, Professional, NHS, Fun) should first show its **topic cards** (e.g. Driving Theory Test, Hazard Perception Test, Road Signs Test, Motorcycle Theory Test). Only after picking a topic do the **45 mock test cards** appear.
 
----
+## What's actually wrong with #1
 
-## 1. Mock test generation
+There are two `driving-theory-mock-1` definitions:
+- A legacy hand-written one in `src/data/quizzes.ts` with **10** questions.
+- The new AI-generated one in `src/data/mocks/driving-theory.json` with **24** questions.
 
-### Scope
-~30 topics × 45 mocks × 24 questions = **~32,400 questions total**.
+`getQuiz()` checks the static array first, so the 10-question version always wins. Card titles also render as "Driving Theory Test **Test** 1" because the topic title already contains "Test".
 
-### Approach
-Run a **one-off generation script** (not at runtime) using the AI Gateway skill, then commit the output as static JSON. Runtime stays fast and free; nothing depends on Lovable AI in production.
+## Changes
 
-- For each topic, call `google/gemini-3-flash-preview` with a structured-output schema and a topic-specific system prompt (e.g. "You are an examiner writing UK Driving Theory questions in DVSA style…").
-- Generate 45 mock tests per topic in batched calls (one mock per request → ~1,350 total requests, throttled with `--delay`).
-- Write results to `src/data/mocks/<topic-slug>.json` (30 files, one per topic).
-- Each mock = `{ slug, topic, mockNumber, title, questions: [{question, options[4], correctAnswer, explanation}] × 24 }`.
+### 1. Fix mock resolution (24 questions everywhere)
+- `src/data/quizzes.ts`: remove the legacy mock entries whose slugs collide with the `<topic>-mock-N` pattern (`driving-theory-mock-1`, `life-in-the-uk-mock-1`, and any similar). Keep non-mock quizzes (road-signs identification, daily quiz, warm-ups, etc.) untouched.
+- Result: `getQuiz("driving-theory-mock-1")` now resolves through `getMockBySlug` → 24 questions.
 
-### Code changes
-- **`src/data/quizzes.ts`**: remove the `difficulty` field from `Quiz` (or keep optional for backward compat). Add a loader that imports all 30 JSON files and exposes `getMocksByTopic(topicSlug)` returning the 45 mocks.
-- **`src/routes/category.$slug.tsx`**: replace current quiz card grid with a **per-topic section** showing the 45 mocks in the screenshot's style:
-  - 3-column grid of cards
-  - Each card: title (e.g. "Driving Theory Test 1"), thin progress bar, "0 / 24" counter
-  - No difficulty badges, no time/pass-mark chips
-  - Persist completion state in `localStorage` keyed by mock slug so the progress bar reflects the user's best score
-- **`src/routes/quiz.$slug.tsx`**: ensure it can load any of the new mock slugs (pattern: `<topic>-mock-<n>`, e.g. `life-in-the-uk-mock-7`).
+### 2. Add a topic-selection step per category
 
-### Cost / time note
-~1,350 AI requests will take ~20–30 min and consume Lovable AI credits. If credits run low, generation will pause; we resume from where it stopped (script writes incrementally per topic).
+New route: `src/routes/topic.$slug.tsx` → `/topic/<topic-slug>`
+- Loader looks up the topic via `findTopic(topicSlug)` from `src/data/categories.ts`.
+- Renders the same hero style as the category page (uses the parent category's hero image + topic title).
+- Shows the **45 mock test grid** (current `TopicMockSection` content), with breadcrumb: Home › {Category} › {Topic}.
 
----
+Refactor `src/routes/category.$slug.tsx`:
+- Remove the per-topic mock sections.
+- Replace with a clean grid of **topic cards** (one card per `category.topics` item). Each card links to `/topic/$slug`.
+- Card shows topic title, short description, and "45 mock tests" hint. Cards use the existing card/shadow styling and `accentClasses` for accent color.
 
-## 2. Category hero background images
+### 3. Card labelling fix
+- Mock cards display as `"Test {n}"` (not `"{Topic Title} Test {n}"`) — matches the example screenshot and avoids "Driving Theory Test Test 1".
+- Section heading on the topic page already reads the topic title, so no context is lost.
 
-Generate one cinematic, on-brand photo per category using `google/gemini-3-pro-image-preview`, save to `src/assets/`, and use as the hero background on `category.$slug.tsx` (same treatment as the homepage hero: cover image + navy gradient overlay for text legibility).
+### 4. Routing & navigation
+- Add `/topic/$slug` to the file-based routes — TanStack Router auto-regenerates `routeTree.gen.ts`.
+- Update breadcrumbs and any "More in {Category}" sidebar links on `quiz.$slug.tsx` to also offer a link back to the topic page.
 
-| Category | Image concept |
-|---|---|
-| Driving | UK motorway at dusk, road signs, steering wheel POV |
-| Citizenship | Union Jack draped over Westminster, warm light |
-| English | Open dictionary + Big Ben in soft focus |
-| Education | British schoolchildren in uniform / classroom with chalkboard |
-| Career | Modern London office workers, glass skyline |
-| Professional | Construction worker with hi-vis + hard hat on a London site |
-| NHS | NHS nurse in scrubs, hospital corridor, soft blue tones |
-| Fun | Colourful UK pop-culture collage, tea + biscuits, red phone box |
+## Files touched
 
-**Code change** — `category.$slug.tsx` hero section: swap the flat `bg-gradient-hero` for `<img src={categoryHero} className="absolute inset-0 ..."/>` + dark navy gradient overlay (mirror of `index.tsx` hero pattern). Add a `heroImage` field to each category in `src/data/categories.ts` mapping to the imported asset.
+- `src/data/quizzes.ts` — remove colliding legacy mock entries.
+- `src/routes/category.$slug.tsx` — replace mock grid with topic-card grid.
+- `src/routes/topic.$slug.tsx` — **new** — topic hero + 45-mock grid (extracted from current category page).
+- `src/routes/quiz.$slug.tsx` — minor breadcrumb update to include topic link.
 
----
+## Out of scope
 
-## File summary
-
-**Created**
-- `scripts/generate-mocks.ts` — one-off generator (run via `bun`)
-- `src/data/mocks/<topic>.json` × 30
-- `src/assets/cat-hero-driving.jpg` … `cat-hero-fun.jpg` × 8
-
-**Edited**
-- `src/data/quizzes.ts` — load JSON mocks, drop difficulty from card UI
-- `src/data/categories.ts` — add `heroImage` per category
-- `src/routes/category.$slug.tsx` — new mock-grid layout + photo hero
-- `src/routes/quiz.$slug.tsx` — verify dynamic slug loading works
-
----
-
-## Execution order
-1. Generate the 8 hero images (fast, ~2 min).
-2. Update `categories.ts` + `category.$slug.tsx` hero + new mock-grid layout (using mock-data fallback so UI is testable immediately).
-3. Run the mock generation script in the background; topics light up as their JSON file lands.
-4. Final pass: confirm all 1,350 mocks load and the quiz runner handles them.
+- No changes to mock generation; the existing JSON files already contain 24 questions each.
+- No changes to QuizRunner.

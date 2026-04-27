@@ -1,12 +1,11 @@
-import { useEffect, useState } from "react";
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { AdSlot } from "@/components/AdSlot";
 import { CategoryIcon, accentClasses } from "@/components/CategoryIcon";
 import { getCategory, categories } from "@/data/categories";
-import { listMockSlots, QUESTIONS_PER_MOCK } from "@/data/mocks";
-import { Home, ChevronRight } from "lucide-react";
+import { TOTAL_MOCKS_PER_TOPIC, QUESTIONS_PER_MOCK, listMockSlots } from "@/data/mocks";
+import { Home, ChevronRight, ArrowRight } from "lucide-react";
 
 export const Route = createFileRoute("/category/$slug")({
   loader: ({ params }) => {
@@ -31,109 +30,6 @@ export const Route = createFileRoute("/category/$slug")({
   component: CategoryPage,
 });
 
-function useMockProgress(slugs: string[]) {
-  const [scores, setScores] = useState<Record<string, number>>({});
-  useEffect(() => {
-    const out: Record<string, number> = {};
-    for (const s of slugs) {
-      try {
-        const v = localStorage.getItem(`uk-test-hub:best:${s}`);
-        if (v != null) out[s] = Math.max(0, Math.min(QUESTIONS_PER_MOCK, parseInt(v, 10) || 0));
-      } catch {
-        // ignore
-      }
-    }
-    setScores(out);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [slugs.join("|")]);
-  return scores;
-}
-
-function MockCard({
-  slug,
-  title,
-  available,
-  best,
-}: {
-  slug: string;
-  title: string;
-  available: boolean;
-  best: number;
-}) {
-  const pct = Math.round((best / QUESTIONS_PER_MOCK) * 100);
-  const inner = (
-    <div className="flex h-full flex-col rounded-2xl border border-border bg-card px-5 py-4 shadow-soft transition-all duration-200 group-hover:-translate-y-0.5 group-hover:border-coral/40 group-hover:shadow-elevated">
-      <div className="flex items-start justify-between gap-3">
-        <h3 className="font-display text-base font-bold leading-tight text-foreground">
-          {title}
-        </h3>
-        {!available && (
-          <span className="shrink-0 rounded-full bg-muted px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">
-            Soon
-          </span>
-        )}
-      </div>
-      <div className="mt-4 flex items-center gap-3">
-        <div className="h-1.5 flex-1 overflow-hidden rounded-full bg-muted">
-          <div
-            className="h-full rounded-full bg-coral transition-all"
-            style={{ width: `${pct}%` }}
-          />
-        </div>
-        <span className="shrink-0 text-xs font-semibold tabular-nums text-muted-foreground">
-          {best} / {QUESTIONS_PER_MOCK}
-        </span>
-      </div>
-    </div>
-  );
-
-  if (!available) {
-    return <div className="group cursor-not-allowed opacity-70">{inner}</div>;
-  }
-  return (
-    <Link to="/quiz/$slug" params={{ slug }} className="group block">
-      {inner}
-    </Link>
-  );
-}
-
-function TopicMockSection({
-  topicSlug,
-  topicTitle,
-}: {
-  topicSlug: string;
-  topicTitle: string;
-}) {
-  const slots = listMockSlots(topicSlug);
-  const slugs = slots.map((s) => s.slug);
-  const scores = useMockProgress(slugs);
-  const availableCount = slots.filter((s) => s.available).length;
-
-  return (
-    <section className="mt-14 first:mt-0">
-      <div className="flex items-end justify-between gap-4 border-b border-border pb-3">
-        <h2 className="font-display text-2xl font-extrabold tracking-tight md:text-3xl">
-          {topicTitle}
-        </h2>
-        <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-          {availableCount} of {slots.length} available
-        </span>
-      </div>
-      <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {slots.map((s) => (
-          <MockCard
-            key={s.slug}
-            slug={s.slug}
-            title={`${topicTitle} Test ${s.mockNumber}`}
-            available={s.available}
-            best={scores[s.slug] ?? 0}
-          />
-        ))}
-      </div>
-    </section>
-  );
-}
-
 function CategoryPage() {
   const { category } = Route.useLoaderData();
 
@@ -153,7 +49,6 @@ function CategoryPage() {
           className="absolute inset-0 bg-gradient-to-r from-navy-deep/85 via-navy-deep/65 to-navy-deep/30"
         />
         <div className="relative mx-auto max-w-7xl px-4 py-14 md:px-6 md:py-20">
-          {/* Breadcrumb */}
           <nav className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-navy-foreground/80">
             <Link to="/" className="inline-flex items-center gap-1 hover:text-coral">
               <Home className="h-3.5 w-3.5" /> Home
@@ -187,13 +82,57 @@ function CategoryPage() {
 
         <div className="grid gap-10 lg:grid-cols-[1fr_280px]">
           <div>
-            {category.topics.map((t) => (
-              <TopicMockSection
-                key={t.slug}
-                topicSlug={t.slug}
-                topicTitle={t.title}
-              />
-            ))}
+            <div className="border-b border-border pb-3">
+              <h2 className="font-display text-2xl font-extrabold tracking-tight md:text-3xl">
+                Choose a test
+              </h2>
+              <p className="mt-1 text-sm text-muted-foreground">
+                Each test below has {TOTAL_MOCKS_PER_TOPIC} mock papers, with{" "}
+                {QUESTIONS_PER_MOCK} questions and full explanations.
+              </p>
+            </div>
+
+            <div className="mt-6 grid gap-5 sm:grid-cols-2">
+              {category.topics.map((t) => {
+                const slots = listMockSlots(t.slug);
+                const available = slots.filter((s) => s.available).length;
+                return (
+                  <Link
+                    key={t.slug}
+                    to="/topic/$slug"
+                    params={{ slug: t.slug }}
+                    className="group relative flex h-full flex-col justify-between overflow-hidden rounded-2xl border border-border bg-card p-6 shadow-soft transition-all duration-200 hover:-translate-y-0.5 hover:border-coral/40 hover:shadow-elevated"
+                  >
+                    <div>
+                      <div className="flex items-start gap-4">
+                        <span
+                          className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-xl ${accentClasses[category.accent]}`}
+                        >
+                          <CategoryIcon name={category.icon} className="h-6 w-6" />
+                        </span>
+                        <div className="min-w-0">
+                          <h3 className="font-display text-lg font-bold leading-tight text-foreground">
+                            {t.title}
+                          </h3>
+                          <p className="mt-1 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+                            {TOTAL_MOCKS_PER_TOPIC} mock tests · {QUESTIONS_PER_MOCK} questions each
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="mt-6 flex items-center justify-between border-t border-border pt-4">
+                      <span className="text-xs font-semibold tabular-nums text-muted-foreground">
+                        {available} of {TOTAL_MOCKS_PER_TOPIC} ready
+                      </span>
+                      <span className="inline-flex items-center gap-1 text-sm font-semibold text-coral group-hover:gap-2 transition-all">
+                        Start practising
+                        <ArrowRight className="h-4 w-4" />
+                      </span>
+                    </div>
+                  </Link>
+                );
+              })}
+            </div>
           </div>
 
           <aside className="space-y-6">
