@@ -6,6 +6,7 @@ import {
   Briefcase,
   ShieldCheck,
   Sparkles,
+  HeartPulse,
   type LucideIcon,
 } from "lucide-react";
 
@@ -17,6 +18,7 @@ const map: Record<string, LucideIcon> = {
   Briefcase,
   ShieldCheck,
   Sparkles,
+  HeartPulse,
 };
 
 export function CategoryIcon({ name, className }: { name: string; className?: string }) {
