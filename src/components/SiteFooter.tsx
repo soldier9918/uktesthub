@@ -13,6 +13,7 @@ const popularTests: FooterLink[] = [
   { label: "11+ Practice", to: "/category/$slug", params: { slug: "education" } },
   { label: "CSCS Card Test", to: "/category/$slug", params: { slug: "professional" } },
   { label: "SIA Security Test", to: "/category/$slug", params: { slug: "professional" } },
+  { label: "NHS Tests", to: "/category/$slug", params: { slug: "nhs" } },
 ];
 
 const company: StaticLink[] = [
