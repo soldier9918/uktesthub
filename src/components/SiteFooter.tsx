@@ -1,4 +1,6 @@
 import { Link } from "@tanstack/react-router";
+import { Facebook, Twitter, Youtube, Instagram } from "lucide-react";
+import { Logo } from "./Logo";
 
 type StaticLink = { label: string; to: string };
 type CategoryLink = { label: string; to: "/category/$slug"; params: { slug: string } };
@@ -13,7 +15,6 @@ const popularTests: FooterLink[] = [
   { label: "11+ Practice", to: "/category/$slug", params: { slug: "education" } },
   { label: "CSCS Card Test", to: "/category/$slug", params: { slug: "professional" } },
   { label: "SIA Security Test", to: "/category/$slug", params: { slug: "professional" } },
-  { label: "NHS Tests", to: "/category/$slug", params: { slug: "nhs" } },
 ];
 
 const company: StaticLink[] = [
@@ -21,6 +22,13 @@ const company: StaticLink[] = [
   { label: "Contact Us", to: "/contact" },
   { label: "FAQ", to: "/faq" },
   { label: "Sitemap", to: "/sitemap" },
+];
+
+const support: StaticLink[] = [
+  { label: "Help Centre", to: "/help" },
+  { label: "Report a Question", to: "/report" },
+  { label: "Feedback", to: "/feedback" },
+  { label: "Exam Updates", to: "/exam-updates" },
 ];
 
 const legal: StaticLink[] = [
@@ -31,20 +39,13 @@ const legal: StaticLink[] = [
   { label: "Accessibility Statement", to: "/accessibility" },
 ];
 
-const support: StaticLink[] = [
-  { label: "Help Centre", to: "/help" },
-  { label: "Report a Question", to: "/report" },
-  { label: "Feedback", to: "/feedback" },
-  { label: "Exam Updates", to: "/exam-updates" },
-];
-
 function FooterColumn({ title, items }: { title: string; items: FooterLink[] }) {
   return (
     <div>
-      <h4 className="font-display text-sm font-semibold uppercase tracking-wider text-gold">
+      <h4 className="font-display text-sm font-bold uppercase tracking-[0.14em] text-navy-foreground">
         {title}
       </h4>
-      <ul className="mt-4 space-y-2.5 text-sm text-navy-foreground/75">
+      <ul className="mt-5 space-y-3 text-sm text-navy-foreground/70">
         {items.map((item) => (
           <li key={item.label}>
             {"params" in item ? (
@@ -72,53 +73,68 @@ function FooterColumn({ title, items }: { title: string; items: FooterLink[] }) 
 
 export function SiteFooter() {
   return (
-    <footer className="mt-24 border-t border-border bg-navy text-navy-foreground">
-      {/* Brand + blurb */}
-      <div className="mx-auto max-w-7xl px-4 pt-14 md:px-6">
-        <div className="grid gap-10 md:grid-cols-12">
-          <div className="md:col-span-4">
-            <Link to="/" className="inline-flex items-center gap-2">
-              <span className="font-display text-2xl font-bold">
-                UK Test <span className="text-gold">Hub</span>
-              </span>
-            </Link>
-            <p className="mt-4 text-sm leading-relaxed text-navy-foreground/75">
-              UK Test Hub helps learners practise for UK mock tests including
-              Driving Theory, Life in the UK, SERU TfL, IELTS, ESOL, CSCS, SIA
-              and more. Free practice questions, mock exams, instant results
-              and explanations.
-            </p>
-          </div>
-
-          <div className="md:col-span-8">
+    <footer className="mt-24 bg-navy-deep text-navy-foreground">
+      <div className="mx-auto max-w-7xl px-4 pt-16 md:px-6">
+        <div className="grid gap-12 lg:grid-cols-12">
+          <div className="lg:col-span-7">
             <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
               <FooterColumn title="Popular Tests" items={popularTests} />
               <FooterColumn title="Company" items={company} />
-              <FooterColumn title="Legal" items={legal} />
               <FooterColumn title="Support" items={support} />
+              <FooterColumn title="Legal" items={legal} />
+            </div>
+          </div>
+
+          <div className="lg:col-span-5">
+            <Logo variant="light" />
+            <p className="mt-5 text-sm text-navy-foreground/70">
+              Subscribe for exam updates and tips
+            </p>
+            <form
+              className="mt-3 flex max-w-md gap-2"
+              onSubmit={(e) => e.preventDefault()}
+            >
+              <input
+                type="email"
+                placeholder="Enter your email"
+                className="flex-1 rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-navy-foreground placeholder:text-navy-foreground/40 focus:border-coral focus:outline-none"
+              />
+              <button
+                type="submit"
+                className="rounded-xl bg-coral px-5 py-3 text-sm font-semibold text-coral-foreground shadow-coral transition-transform hover:-translate-y-0.5"
+              >
+                Subscribe
+              </button>
+            </form>
+            <div className="mt-6 flex gap-2">
+              {[Facebook, Twitter, Youtube, Instagram].map((Icon, i) => (
+                <a
+                  key={i}
+                  href="#"
+                  aria-label="Social link"
+                  className="flex h-10 w-10 items-center justify-center rounded-full bg-white/5 text-navy-foreground/80 transition-colors hover:bg-coral hover:text-coral-foreground"
+                >
+                  <Icon className="h-4 w-4" />
+                </a>
+              ))}
             </div>
           </div>
         </div>
-      </div>
 
-      {/* Disclaimer */}
-      <div className="mx-auto mt-12 max-w-7xl px-4 md:px-6">
-        <div className="rounded-2xl border border-white/10 bg-white/5 p-5 text-xs leading-relaxed text-navy-foreground/70">
+        <div className="mt-14 rounded-2xl border border-white/10 bg-white/5 p-5 text-xs leading-relaxed text-navy-foreground/65">
           <strong className="font-semibold text-navy-foreground">Disclaimer:</strong>{" "}
           UK Test Hub is an independent practice platform. We are{" "}
           <strong className="font-semibold text-navy-foreground">not affiliated with</strong>{" "}
-          the DVSA, TfL, the UK Government, IELTS, ESOL, CSCS, SIA, the NHS or
-          any examination board unless explicitly stated. All trademarks and
-          brand names belong to their respective owners and are used for
-          reference only.
+          DVSA, TfL, the UK Government, IELTS, ESOL, CSCS, SIA, the NHS or any
+          examination board unless explicitly stated. All trademarks and brand
+          names belong to their respective owners and are used for reference only.
         </div>
       </div>
 
-      {/* Bottom bar */}
       <div className="mt-10 border-t border-white/10">
         <div className="mx-auto flex max-w-7xl flex-col items-start justify-between gap-3 px-4 py-6 text-xs text-navy-foreground/60 md:flex-row md:items-center md:px-6">
           <div>© 2026 UK Test Hub. All rights reserved.</div>
-          <div className="flex flex-wrap gap-x-5 gap-y-2">
+          <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
             <Link to="/privacy" className="hover:text-coral">Privacy</Link>
             <Link to="/cookies" className="hover:text-coral">Cookies</Link>
             <Link to="/terms" className="hover:text-coral">Terms</Link>
