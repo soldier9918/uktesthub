@@ -193,20 +193,28 @@ function HomePage() {
         <section className="mt-16">
           <SectionTitle>Popular Categories</SectionTitle>
 
-          <div className="mt-10 grid gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4">
-            {categories.map((c, i) => {
+          <div className="mt-10 grid gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+            {categories.map((c) => {
               const isCoral = c.accent === "coral";
               return (
                 <Link
                   key={c.slug}
                   to="/category/$slug"
                   params={{ slug: c.slug }}
-                  className="group flex flex-col items-center rounded-2xl border border-border bg-card p-6 text-center shadow-soft transition-all hover:-translate-y-1 hover:border-coral/40 hover:shadow-elevated"
+                  className="group relative flex flex-col items-center overflow-hidden rounded-3xl border border-border/70 bg-gradient-to-b from-card to-card/60 p-7 text-center shadow-soft ring-1 ring-black/[0.02] transition-all duration-300 hover:-translate-y-1.5 hover:border-coral/40 hover:shadow-elevated"
                 >
                   <span
-                    className={`mb-4 flex h-16 w-16 items-center justify-center rounded-2xl ${accentClasses[c.accent]}`}
+                    aria-hidden
+                    className="pointer-events-none absolute inset-x-6 top-0 h-px bg-gradient-to-r from-transparent via-foreground/10 to-transparent"
+                  />
+                  <span
+                    className={`mb-5 flex h-24 w-24 items-center justify-center rounded-3xl p-2 shadow-inner transition-transform duration-300 group-hover:scale-105 ${accentClasses[c.accent]}`}
                   >
-                    <CategoryIcon name={c.icon} className="h-8 w-8" />
+                    <CategoryIcon
+                      name={c.icon}
+                      alt={c.title}
+                      className="h-full w-full object-contain drop-shadow-sm"
+                    />
                   </span>
                   <h3 className="font-display text-base font-bold leading-tight text-foreground">
                     {c.title}
@@ -223,8 +231,6 @@ function HomePage() {
                   >
                     {c.topics.length}+ Tests
                   </span>
-                  {/* avoid unused var warning */}
-                  <span className="hidden">{i}</span>
                 </Link>
               );
             })}
