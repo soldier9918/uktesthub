@@ -156,40 +156,6 @@ function HomePage() {
               ))}
             </ul>
           </div>
-
-          {/* Daily Challenge floating card */}
-          <Link
-            to="/quiz/$slug"
-            params={{ slug: daily.slug }}
-            className="group relative block overflow-hidden rounded-3xl border border-white/15 bg-navy-deep/80 p-6 shadow-elevated backdrop-blur-md transition-transform hover:-translate-y-1 md:p-7"
-          >
-            <div className="flex items-center justify-center gap-2">
-              <Crown className="h-4 w-4 text-gold" />
-              <span className="font-display text-xs font-bold uppercase tracking-[0.2em] text-navy-foreground">
-                Daily Challenge
-              </span>
-            </div>
-            <div className="mt-6 flex items-start gap-4">
-              <span className="flex h-16 w-16 shrink-0 items-center justify-center overflow-hidden rounded-full ring-2 ring-white/40">
-                <UnionJack className="h-full w-full" />
-              </span>
-              <div className="text-sm leading-snug text-navy-foreground/90">
-                Can you score{" "}
-                <span className="font-display text-2xl font-extrabold text-navy-foreground">
-                  {daily.questions.length}/{daily.questions.length}
-                </span>
-                <br />
-                on today&rsquo;s
-                <br />
-                <span className="font-semibold text-navy-foreground">
-                  UK Knowledge Quiz?
-                </span>
-              </div>
-            </div>
-            <span className="mt-6 flex w-full items-center justify-center gap-2 rounded-xl bg-coral px-5 py-3 text-sm font-bold text-coral-foreground shadow-coral transition-transform group-hover:-translate-y-0.5">
-              Start Daily Quiz <ArrowRight className="h-4 w-4" />
-            </span>
-          </Link>
         </div>
       </section>
 
