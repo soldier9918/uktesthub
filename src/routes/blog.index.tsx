@@ -6,7 +6,7 @@ import { getAllPosts } from "@/data/blog";
 import { pageMeta } from "@/lib/seo";
 import { Home, ChevronRight, ArrowRight, Clock } from "lucide-react";
 
-export const Route = createFileRoute("/blog")({
+export const Route = createFileRoute("/blog/")({
   head: () =>
     pageMeta({
       title: "Blog — UK Test Hub | Free UK Exam Guides & Study Tips",
