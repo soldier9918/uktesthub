@@ -141,15 +141,15 @@ export function QuizRunner({ quiz }: { quiz: Quiz }) {
   const answered = isAnswered(q, selected);
 
   return (
-    <div className="mx-auto max-w-5xl">
+    <div className="mx-auto max-w-7xl">
       {/* Top bar */}
-      <div className="mb-4 flex items-center justify-between gap-4">
+      <div className="mb-2 flex items-center justify-between gap-4">
         <div className="text-sm text-muted-foreground">
           Question <span className="font-semibold text-foreground">{current + 1}</span> of{" "}
           {quiz.questions.length}
         </div>
         {mode === "exam" && (
-          <div className="flex items-center gap-2 rounded-full bg-navy px-3 py-1.5 text-sm font-semibold text-navy-foreground">
+          <div className="flex items-center gap-2 rounded-full bg-navy px-3 py-1 text-sm font-semibold text-navy-foreground">
             <Clock className="h-4 w-4" />
             {formatTime(timeLeft)}
           </div>
@@ -161,18 +161,10 @@ export function QuizRunner({ quiz }: { quiz: Quiz }) {
         )}
       </div>
 
-      {/* Progress */}
-      <div className="mb-4 h-2 w-full overflow-hidden rounded-full bg-muted">
-        <div
-          className="h-full bg-gradient-coral transition-all duration-500"
-          style={{ width: `${progress}%` }}
-        />
-      </div>
-
-      {showAdBreak && <AdSlot size="in-feed" className="mb-4" />}
+      {showAdBreak && <AdSlot size="in-feed" className="mb-3" />}
 
       {/* Question card */}
-      <div className="rounded-3xl border border-border bg-card p-5 shadow-soft md:p-7">
+      <div className="rounded-2xl border border-border bg-card p-4 shadow-soft md:p-5">
         {isFillBlanks(q) ? (
           <FillBlanksQuestionView
             q={q}
@@ -193,13 +185,13 @@ export function QuizRunner({ quiz }: { quiz: Quiz }) {
         )}
 
         {isRevealed && (
-          <div className="mt-5 rounded-2xl border border-border bg-muted/50 p-4 text-sm">
+          <div className="mt-3 rounded-xl border border-border bg-muted/50 p-3 text-sm">
             <span className="font-semibold text-foreground">Explanation: </span>
             <span className="text-muted-foreground">{q.explanation}</span>
           </div>
         )}
 
-        <div className="mt-6 flex items-center justify-between">
+        <div className="mt-4 flex items-center justify-between">
           <button
             type="button"
             onClick={() => setFinished(true)}
@@ -245,14 +237,14 @@ function McqQuestionView({
   return (
     <>
       {q.signType && (
-        <div className="mb-6">
+        <div className="mb-3">
           <RoadSign type={q.signType} title="Road sign" />
         </div>
       )}
-      <h2 className="font-display text-xl font-semibold leading-snug md:text-2xl">
+      <h2 className="font-display text-base font-semibold leading-snug md:text-lg">
         {q.question}
       </h2>
-      <div className="mt-6 grid gap-3">
+      <div className="mt-3 grid gap-2">
         {q.options.map((opt, i) => {
           const isSelected = selected === i;
           const isCorrectOpt = q.correctAnswer === i;
@@ -271,12 +263,12 @@ function McqQuestionView({
               key={i}
               onClick={() => !revealed && onSelect(i)}
               disabled={revealed}
-              className={`flex items-start gap-3 rounded-2xl border-2 px-4 py-3.5 text-left transition-all ${stateClass}`}
+              className={`flex items-start gap-3 rounded-xl border-2 px-3 py-2.5 text-left transition-all ${stateClass}`}
             >
-              <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-muted text-xs font-bold">
+              <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-muted text-[11px] font-bold">
                 {String.fromCharCode(65 + i)}
               </span>
-              <span className="flex-1 text-sm md:text-base">{opt}</span>
+              <span className="flex-1 text-sm">{opt}</span>
               {revealed && isCorrectOpt && (
                 <CheckCircle2 className="h-5 w-5 text-success" />
               )}
