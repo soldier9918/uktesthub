@@ -236,15 +236,6 @@
   line-height: 1.7;
   color: var(--color-foreground);
 }
-.blog-article > p:first-of-type::first-letter {
-  font-family: var(--font-display);
-  font-weight: 800;
-  font-size: 3.75rem;
-  line-height: 0.9;
-  float: left;
-  color: var(--color-coral);
-  margin: 0.35rem 0.65rem 0 0;
-}
 .blog-article h2 {
   font-family: var(--font-display);
   font-weight: 800;
