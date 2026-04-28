@@ -141,15 +141,15 @@ export function QuizRunner({ quiz }: { quiz: Quiz }) {
   const answered = isAnswered(q, selected);
 
   return (
-    <div className="mx-auto max-w-5xl">
+    <div className="mx-auto max-w-7xl">
       {/* Top bar */}
-      <div className="mb-4 flex items-center justify-between gap-4">
+      <div className="mb-2 flex items-center justify-between gap-4">
         <div className="text-sm text-muted-foreground">
           Question <span className="font-semibold text-foreground">{current + 1}</span> of{" "}
           {quiz.questions.length}
         </div>
         {mode === "exam" && (
-          <div className="flex items-center gap-2 rounded-full bg-navy px-3 py-1.5 text-sm font-semibold text-navy-foreground">
+          <div className="flex items-center gap-2 rounded-full bg-navy px-3 py-1 text-sm font-semibold text-navy-foreground">
             <Clock className="h-4 w-4" />
             {formatTime(timeLeft)}
           </div>
