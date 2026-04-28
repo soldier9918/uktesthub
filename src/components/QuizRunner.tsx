@@ -237,14 +237,14 @@ function McqQuestionView({
   return (
     <>
       {q.signType && (
-        <div className="mb-6">
+        <div className="mb-3">
           <RoadSign type={q.signType} title="Road sign" />
         </div>
       )}
-      <h2 className="font-display text-xl font-semibold leading-snug md:text-2xl">
+      <h2 className="font-display text-base font-semibold leading-snug md:text-lg">
         {q.question}
       </h2>
-      <div className="mt-6 grid gap-3">
+      <div className="mt-3 grid gap-2">
         {q.options.map((opt, i) => {
           const isSelected = selected === i;
           const isCorrectOpt = q.correctAnswer === i;
@@ -263,9 +263,9 @@ function McqQuestionView({
               key={i}
               onClick={() => !revealed && onSelect(i)}
               disabled={revealed}
-              className={`flex items-start gap-3 rounded-2xl border-2 px-4 py-3.5 text-left transition-all ${stateClass}`}
+              className={`flex items-start gap-3 rounded-xl border-2 px-3 py-2.5 text-left transition-all ${stateClass}`}
             >
-              <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-muted text-xs font-bold">
+              <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-muted text-[11px] font-bold">
                 {String.fromCharCode(65 + i)}
               </span>
               <span className="flex-1 text-sm md:text-base">{opt}</span>
