@@ -4,8 +4,10 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { AdSlot } from "@/components/AdSlot";
 import { CategoryIcon, accentClasses } from "@/components/CategoryIcon";
 import { getCategory, categories } from "@/data/categories";
+import { categorySeo } from "@/data/category-seo";
 import { TOTAL_MOCKS_PER_TOPIC, QUESTIONS_PER_MOCK, listMockSlots } from "@/data/mocks";
 import { Home, ChevronRight, ArrowRight } from "lucide-react";
+import { pageMeta, faqSchema, breadcrumbSchema } from "@/lib/seo";
 
 export const Route = createFileRoute("/category/$slug")({
   loader: ({ params }) => {
@@ -13,31 +15,40 @@ export const Route = createFileRoute("/category/$slug")({
     if (!category) throw notFound();
     return { category };
   },
-  head: ({ loaderData }) => {
+  head: ({ loaderData, params }) => {
     const c = loaderData?.category;
+    const slug = params?.slug ?? "";
     if (!c) return { meta: [{ title: "Category — UK Test Hub" }] };
-    const title = `${c.title} Practice Tests — UK Test Hub`;
-    return {
-      meta: [
-        { title },
-        { name: "description", content: c.description },
-        { property: "og:title", content: title },
-        { property: "og:description", content: c.description },
-        { property: "og:image", content: c.heroImage },
-      ],
-    };
+    const seo = categorySeo[c.slug];
+    const title = seo?.title ?? `${c.title} Practice Tests — UK Test Hub`;
+    const description = seo?.description ?? c.description;
+    const base = pageMeta({
+      title,
+      description,
+      path: `/category/${slug}`,
+      image: c.heroImage,
+    });
+    const scripts = [
+      breadcrumbSchema([
+        { name: "Home", url: "/" },
+        { name: c.title, url: `/category/${slug}` },
+      ]),
+    ];
+    if (seo?.faqs?.length) scripts.push(faqSchema(seo.faqs));
+    return { ...base, scripts };
   },
   component: CategoryPage,
 });
 
 function CategoryPage() {
   const { category } = Route.useLoaderData();
+  const seo = categorySeo[category.slug];
 
   return (
     <div className="min-h-screen bg-[#f7f5f0]">
       <SiteHeader />
 
-      {/* HERO with category-themed background photo */}
+      {/* HERO */}
       <section className="relative overflow-hidden bg-navy-deep text-navy-foreground">
         <img
           src={category.heroImage}
@@ -101,6 +112,7 @@ function CategoryPage() {
                     key={t.slug}
                     to="/topic/$slug"
                     params={{ slug: t.slug }}
+                    aria-label={`Open ${t.title} — ${TOTAL_MOCKS_PER_TOPIC} free mock tests`}
                     className="group relative flex h-full flex-col justify-between overflow-hidden rounded-2xl border border-border bg-card p-6 shadow-soft transition-all duration-200 hover:-translate-y-0.5 hover:border-coral/40 hover:shadow-elevated"
                   >
                     <div>
@@ -125,7 +137,7 @@ function CategoryPage() {
                         {available} of {TOTAL_MOCKS_PER_TOPIC} ready
                       </span>
                       <span className="inline-flex items-center gap-1 text-sm font-semibold text-coral group-hover:gap-2 transition-all">
-                        Start practising
+                        Start {t.title}
                         <ArrowRight className="h-4 w-4" />
                       </span>
                     </div>
@@ -159,6 +171,73 @@ function CategoryPage() {
             </div>
           </aside>
         </div>
+
+        {/* SEO long-form content */}
+        {seo && (
+          <section className="mt-16 grid gap-10 lg:grid-cols-[1fr_280px]">
+            <article className="prose prose-slate max-w-none prose-headings:font-display prose-headings:font-semibold prose-h2:mt-10 prose-h2:text-2xl prose-h3:mt-6 prose-h3:text-lg prose-a:text-coral prose-a:no-underline hover:prose-a:underline prose-strong:text-foreground">
+              <h2>About the {category.title} tests</h2>
+              {seo.intro.map((p, i) => (
+                <p key={i}>{p}</p>
+              ))}
+
+              {seo.sections.map((s, i) => (
+                <div key={i}>
+                  <h3>{s.heading}</h3>
+                  {s.body.map((b, j) => (
+                    <p key={j}>{b}</p>
+                  ))}
+                </div>
+              ))}
+
+              <p>
+                Ready to start?{" "}
+                {category.topics.slice(0, 3).map((t, i) => (
+                  <span key={t.slug}>
+                    <Link
+                      to="/topic/$slug"
+                      params={{ slug: t.slug }}
+                      className="font-semibold text-coral hover:underline"
+                    >
+                      Take the {t.title}
+                    </Link>
+                    {i < Math.min(2, category.topics.length - 1) ? ", " : "."}
+                  </span>
+                ))}
+              </p>
+            </article>
+            <aside className="hidden lg:block">
+              <AdSlot size="skyscraper" />
+            </aside>
+          </section>
+        )}
+
+        <AdSlot size="in-feed" className="my-12" />
+
+        {/* FAQ */}
+        {seo?.faqs?.length ? (
+          <section className="mt-4">
+            <h2 className="font-display text-2xl font-extrabold tracking-tight md:text-3xl">
+              Frequently asked questions
+            </h2>
+            <p className="mt-1 text-sm text-muted-foreground">
+              Quick answers about the {category.title} exam in 2026.
+            </p>
+            <div className="mt-6 divide-y divide-border rounded-2xl border border-border bg-card">
+              {seo.faqs.map((f) => (
+                <details key={f.q} className="group p-5">
+                  <summary className="flex cursor-pointer items-center justify-between gap-4 text-left font-display text-base font-semibold text-foreground marker:hidden [&::-webkit-details-marker]:hidden">
+                    <span>{f.q}</span>
+                    <ChevronRight className="h-4 w-4 shrink-0 text-coral transition-transform group-open:rotate-90" />
+                  </summary>
+                  <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                    {f.a}
+                  </p>
+                </details>
+              ))}
+            </div>
+          </section>
+        ) : null}
       </main>
 
       <SiteFooter />
