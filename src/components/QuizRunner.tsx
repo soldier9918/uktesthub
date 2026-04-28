@@ -185,13 +185,13 @@ export function QuizRunner({ quiz }: { quiz: Quiz }) {
         )}
 
         {isRevealed && (
-          <div className="mt-5 rounded-2xl border border-border bg-muted/50 p-4 text-sm">
+          <div className="mt-3 rounded-xl border border-border bg-muted/50 p-3 text-sm">
             <span className="font-semibold text-foreground">Explanation: </span>
             <span className="text-muted-foreground">{q.explanation}</span>
           </div>
         )}
 
-        <div className="mt-6 flex items-center justify-between">
+        <div className="mt-4 flex items-center justify-between">
           <button
             type="button"
             onClick={() => setFinished(true)}
