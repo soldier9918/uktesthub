@@ -161,18 +161,10 @@ export function QuizRunner({ quiz }: { quiz: Quiz }) {
         )}
       </div>
 
-      {/* Progress */}
-      <div className="mb-4 h-2 w-full overflow-hidden rounded-full bg-muted">
-        <div
-          className="h-full bg-gradient-coral transition-all duration-500"
-          style={{ width: `${progress}%` }}
-        />
-      </div>
-
-      {showAdBreak && <AdSlot size="in-feed" className="mb-4" />}
+      {showAdBreak && <AdSlot size="in-feed" className="mb-3" />}
 
       {/* Question card */}
-      <div className="rounded-3xl border border-border bg-card p-5 shadow-soft md:p-7">
+      <div className="rounded-2xl border border-border bg-card p-4 shadow-soft md:p-5">
         {isFillBlanks(q) ? (
           <FillBlanksQuestionView
             q={q}
