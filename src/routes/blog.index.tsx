@@ -31,7 +31,7 @@ function BlogIndex() {
             <ChevronRight className="h-3.5 w-3.5" />
             <span className="text-navy-foreground">Blog</span>
           </nav>
-          <h1 className="mt-5 font-display text-4xl font-extrabold uppercase leading-tight tracking-tight md:text-6xl">
+          <h1 className="mt-5 text-4xl font-bold leading-tight tracking-tight md:text-5xl">
             UK Test Hub Blog
           </h1>
           <div className="mt-3 h-1 w-16 rounded-full bg-coral" />

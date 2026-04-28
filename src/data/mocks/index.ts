@@ -1,13 +1,23 @@
 // Aggregates all per-topic mock JSON files. New topic JSON files added under
 // src/data/mocks/<topic-slug>.json are picked up automatically via Vite glob.
-import type { Quiz } from "@/data/quizzes";
+import type { Quiz, Question } from "@/data/quizzes";
 
-type RawQuestion = {
+type RawMcq = {
+  type?: "mcq";
   question: string;
   options: string[];
   correctAnswer: number;
   explanation: string;
 };
+type RawFillBlanks = {
+  type: "fill-blanks";
+  template: string;
+  prompt?: string;
+  blanks: { options: string[]; correctIndex: number }[];
+  explanation: string;
+};
+type RawQuestion = RawMcq | RawFillBlanks;
+
 type MockTest = {
   slug: string; // e.g. "life-in-the-uk-mock-1"
   topic: string; // topic slug
@@ -44,10 +54,6 @@ export function getMockBySlug(slug: string): MockTest | undefined {
   return bySlug.get(slug);
 }
 
-/**
- * Returns the mock if available, otherwise an empty placeholder so the UI
- * can still render the slot ("0 / 24" with a "Coming soon" hint).
- */
 export function listMockSlots(topicSlug: string) {
   const real = getMocksByTopic(topicSlug);
   const realByNum = new Map(real.map((m) => [m.mockNumber, m]));
@@ -71,15 +77,28 @@ export function mockToQuiz(category: string, mock: MockTest): Quiz {
     topic: mock.topic,
     quizTitle: mock.title,
     description: `Mock test ${mock.mockNumber} — ${mock.questions.length} questions.`,
-    timeLimit: mock.questions.length * 60, // 1 min/question
+    timeLimit: mock.questions.length * 60,
     difficulty: "Medium",
     passMark: 75,
-    questions: mock.questions.map((q, idx) => ({
-      id: idx + 1,
-      question: q.question,
-      options: q.options,
-      correctAnswer: q.correctAnswer,
-      explanation: q.explanation,
-    })),
+    questions: mock.questions.map((raw, idx): Question => {
+      if (raw.type === "fill-blanks") {
+        return {
+          type: "fill-blanks",
+          id: idx + 1,
+          template: raw.template,
+          prompt: raw.prompt,
+          blanks: raw.blanks,
+          explanation: raw.explanation,
+        };
+      }
+      return {
+        type: "mcq",
+        id: idx + 1,
+        question: raw.question,
+        options: raw.options,
+        correctAnswer: raw.correctAnswer,
+        explanation: raw.explanation,
+      };
+    }),
   };
 }

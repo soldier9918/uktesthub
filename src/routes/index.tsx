@@ -185,6 +185,13 @@ function HomePage() {
           <div className="mt-10 grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
             {categories.map((c) => {
               const isCoral = c.accent === "coral";
+              // Short labels for the chip row (keeps tiles visually distinct).
+              const chips = c.topics.map((t) =>
+                t.title
+                  .replace(/ Test$| Practice$| Quiz$| Exam$| Assessment$/i, "")
+                  .replace(/^GCSE /, "GCSE ")
+                  .trim(),
+              );
               return (
                 <Link
                   key={c.slug}
@@ -200,17 +207,27 @@ function HomePage() {
                   <h3 className="font-display text-sm font-bold leading-tight text-foreground">
                     {c.title}
                   </h3>
-                  <p className="mt-2 line-clamp-4 text-[11px] leading-snug text-muted-foreground">
+                  <p className="mt-2 line-clamp-3 text-[11px] leading-snug text-muted-foreground">
                     {c.short}
                   </p>
+                  <ul className="mt-4 flex flex-wrap justify-center gap-1.5">
+                    {chips.map((label) => (
+                      <li
+                        key={label}
+                        className="rounded-full border border-border bg-muted/60 px-2 py-0.5 text-[10px] font-semibold text-foreground/80"
+                      >
+                        {label}
+                      </li>
+                    ))}
+                  </ul>
                   <span
-                    className={`mt-5 inline-flex items-center justify-center rounded-md border px-4 py-1.5 text-[11px] font-bold transition-colors ${
+                    className={`mt-5 inline-flex items-center justify-center gap-1 rounded-md border px-4 py-1.5 text-[11px] font-bold transition-colors ${
                       isCoral
                         ? "border-coral/40 text-coral group-hover:bg-coral group-hover:text-coral-foreground"
                         : "border-royal/40 text-royal group-hover:bg-royal group-hover:text-royal-foreground"
                     }`}
                   >
-                    {c.topics.length} Tests
+                    Explore <ArrowRight className="h-3 w-3" />
                   </span>
                 </Link>
               );

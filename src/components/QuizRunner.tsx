@@ -8,16 +8,39 @@ import {
   RotateCcw,
   ArrowRight,
 } from "lucide-react";
-import type { Quiz } from "@/data/quizzes";
+import type { Quiz, Question, FillBlanksQuestion } from "@/data/quizzes";
 import { AdSlot } from "./AdSlot";
 import { RoadSign } from "./RoadSign";
 
 type Mode = "practice" | "exam";
+// MCQ answer: number index. Fill-blanks answer: array of dropdown indices (-1 = unset).
+type Answer = number | number[] | null;
+
+function isFillBlanks(q: Question): q is FillBlanksQuestion {
+  return q.type === "fill-blanks";
+}
+
+function isAnswered(q: Question, a: Answer): boolean {
+  if (a === null) return false;
+  if (isFillBlanks(q)) {
+    return Array.isArray(a) && a.length === q.blanks.length && a.every((v) => v >= 0);
+  }
+  return typeof a === "number";
+}
+
+function isCorrect(q: Question, a: Answer): boolean {
+  if (a === null) return false;
+  if (isFillBlanks(q)) {
+    if (!Array.isArray(a)) return false;
+    return q.blanks.every((b, i) => a[i] === b.correctIndex);
+  }
+  return typeof a === "number" && a === q.correctAnswer;
+}
 
 export function QuizRunner({ quiz }: { quiz: Quiz }) {
   const [mode, setMode] = useState<Mode | null>(null);
   const [current, setCurrent] = useState(0);
-  const [answers, setAnswers] = useState<(number | null)[]>(
+  const [answers, setAnswers] = useState<Answer[]>(
     Array(quiz.questions.length).fill(null),
   );
   const [revealed, setRevealed] = useState<boolean[]>(
@@ -37,10 +60,17 @@ export function QuizRunner({ quiz }: { quiz: Quiz }) {
     return () => clearTimeout(t);
   }, [mode, timeLeft, finished]);
 
+  // Scroll to top whenever the question changes or we enter results.
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  }, [current, finished, mode]);
+
   const score = useMemo<number>(
     () =>
       answers.reduce<number>(
-        (acc, a, i) => (a === quiz.questions[i].correctAnswer ? acc + 1 : acc),
+        (acc, a, i) => (isCorrect(quiz.questions[i], a) ? acc + 1 : acc),
         0,
       ),
     [answers, quiz.questions],
@@ -89,15 +119,17 @@ export function QuizRunner({ quiz }: { quiz: Quiz }) {
   const isRevealed = mode === "practice" && revealed[current];
   const progress = ((current + 1) / quiz.questions.length) * 100;
 
-  const choose = (i: number) => {
+  const setAnswer = (a: Answer) => {
     const next = [...answers];
-    next[current] = i;
+    next[current] = a;
     setAnswers(next);
-    if (mode === "practice") {
-      const r = [...revealed];
-      r[current] = true;
-      setRevealed(r);
-    }
+  };
+
+  const reveal = () => {
+    if (mode !== "practice") return;
+    const r = [...revealed];
+    r[current] = true;
+    setRevealed(r);
   };
 
   const goNext = () => {
@@ -106,9 +138,10 @@ export function QuizRunner({ quiz }: { quiz: Quiz }) {
   };
 
   const showAdBreak = mode === "exam" && current > 0 && current % 4 === 0;
+  const answered = isAnswered(q, selected);
 
   return (
-    <div className="mx-auto max-w-3xl">
+    <div className="mx-auto max-w-5xl">
       {/* Top bar */}
       <div className="mb-4 flex items-center justify-between gap-4">
         <div className="text-sm text-muted-foreground">
@@ -139,51 +172,25 @@ export function QuizRunner({ quiz }: { quiz: Quiz }) {
       {showAdBreak && <AdSlot size="in-feed" className="mb-6" />}
 
       {/* Question card */}
-      <div className="rounded-3xl border border-border bg-card p-6 shadow-soft md:p-8">
-        {q.signType && (
-          <div className="mb-6">
-            <RoadSign type={q.signType} title="Road sign" />
-          </div>
+      <div className="rounded-3xl border border-border bg-card p-6 shadow-soft md:p-10">
+        {isFillBlanks(q) ? (
+          <FillBlanksQuestionView
+            q={q}
+            selected={Array.isArray(selected) ? selected : null}
+            revealed={isRevealed}
+            onChange={(arr) => setAnswer(arr)}
+          />
+        ) : (
+          <McqQuestionView
+            q={q}
+            selected={typeof selected === "number" ? selected : null}
+            revealed={isRevealed}
+            onSelect={(i) => {
+              setAnswer(i);
+              reveal();
+            }}
+          />
         )}
-        <h2 className="font-display text-xl font-semibold leading-snug md:text-2xl">
-          {q.question}
-        </h2>
-
-        <div className="mt-6 grid gap-3">
-          {q.options.map((opt, i) => {
-            const isSelected = selected === i;
-            const isCorrect = q.correctAnswer === i;
-            let stateClass =
-              "border-border bg-background hover:border-coral hover:bg-accent/40";
-            if (isRevealed) {
-              if (isCorrect) stateClass = "border-success bg-success/10 text-foreground";
-              else if (isSelected && !isCorrect)
-                stateClass = "border-destructive bg-destructive/10 text-foreground";
-              else stateClass = "border-border bg-background opacity-70";
-            } else if (isSelected) {
-              stateClass = "border-coral bg-accent/60";
-            }
-            return (
-              <button
-                key={i}
-                onClick={() => !isRevealed && choose(i)}
-                disabled={isRevealed}
-                className={`flex items-start gap-3 rounded-2xl border-2 px-4 py-3.5 text-left transition-all ${stateClass}`}
-              >
-                <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-muted text-xs font-bold">
-                  {String.fromCharCode(65 + i)}
-                </span>
-                <span className="flex-1 text-sm md:text-base">{opt}</span>
-                {isRevealed && isCorrect && (
-                  <CheckCircle2 className="h-5 w-5 text-success" />
-                )}
-                {isRevealed && isSelected && !isCorrect && (
-                  <XCircle className="h-5 w-5 text-destructive" />
-                )}
-              </button>
-            );
-          })}
-        </div>
 
         {isRevealed && (
           <div className="mt-5 rounded-2xl border border-border bg-muted/50 p-4 text-sm">
@@ -193,28 +200,203 @@ export function QuizRunner({ quiz }: { quiz: Quiz }) {
         )}
 
         <div className="mt-6 flex items-center justify-between">
-          <Link
-            to="/quiz/$slug"
-            params={{ slug: quiz.slug }}
-            onClick={(e) => {
-              e.preventDefault();
-              setFinished(true);
-            }}
+          <button
+            type="button"
+            onClick={() => setFinished(true)}
             className="text-sm font-medium text-muted-foreground hover:text-foreground"
           >
             Finish early
-          </Link>
-          <button
-            onClick={goNext}
-            disabled={selected === null}
-            className="inline-flex items-center gap-2 rounded-xl bg-gradient-coral px-5 py-2.5 text-sm font-semibold text-coral-foreground shadow-coral transition-transform hover:-translate-y-0.5 disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:translate-y-0"
-          >
-            {current === quiz.questions.length - 1 ? "Finish" : "Next"}
-            <ChevronRight className="h-4 w-4" />
           </button>
+          <div className="flex gap-2">
+            {isFillBlanks(q) && mode === "practice" && answered && !isRevealed && (
+              <button
+                onClick={reveal}
+                className="inline-flex items-center gap-2 rounded-xl border border-border bg-background px-4 py-2.5 text-sm font-semibold hover:bg-muted"
+              >
+                Check answer
+              </button>
+            )}
+            <button
+              onClick={goNext}
+              disabled={!answered}
+              className="inline-flex items-center gap-2 rounded-xl bg-gradient-coral px-5 py-2.5 text-sm font-semibold text-coral-foreground shadow-coral transition-transform hover:-translate-y-0.5 disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:translate-y-0"
+            >
+              {current === quiz.questions.length - 1 ? "Finish" : "Next"}
+              <ChevronRight className="h-4 w-4" />
+            </button>
+          </div>
         </div>
       </div>
     </div>
+  );
+}
+
+function McqQuestionView({
+  q,
+  selected,
+  revealed,
+  onSelect,
+}: {
+  q: Extract<Question, { type?: "mcq" }>;
+  selected: number | null;
+  revealed: boolean;
+  onSelect: (i: number) => void;
+}) {
+  return (
+    <>
+      {q.signType && (
+        <div className="mb-6">
+          <RoadSign type={q.signType} title="Road sign" />
+        </div>
+      )}
+      <h2 className="font-display text-xl font-semibold leading-snug md:text-2xl">
+        {q.question}
+      </h2>
+      <div className="mt-6 grid gap-3">
+        {q.options.map((opt, i) => {
+          const isSelected = selected === i;
+          const isCorrectOpt = q.correctAnswer === i;
+          let stateClass =
+            "border-border bg-background hover:border-coral hover:bg-accent/40";
+          if (revealed) {
+            if (isCorrectOpt) stateClass = "border-success bg-success/10 text-foreground";
+            else if (isSelected && !isCorrectOpt)
+              stateClass = "border-destructive bg-destructive/10 text-foreground";
+            else stateClass = "border-border bg-background opacity-70";
+          } else if (isSelected) {
+            stateClass = "border-coral bg-accent/60";
+          }
+          return (
+            <button
+              key={i}
+              onClick={() => !revealed && onSelect(i)}
+              disabled={revealed}
+              className={`flex items-start gap-3 rounded-2xl border-2 px-4 py-3.5 text-left transition-all ${stateClass}`}
+            >
+              <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-muted text-xs font-bold">
+                {String.fromCharCode(65 + i)}
+              </span>
+              <span className="flex-1 text-sm md:text-base">{opt}</span>
+              {revealed && isCorrectOpt && (
+                <CheckCircle2 className="h-5 w-5 text-success" />
+              )}
+              {revealed && isSelected && !isCorrectOpt && (
+                <XCircle className="h-5 w-5 text-destructive" />
+              )}
+            </button>
+          );
+        })}
+      </div>
+    </>
+  );
+}
+
+function FillBlanksQuestionView({
+  q,
+  selected,
+  revealed,
+  onChange,
+}: {
+  q: FillBlanksQuestion;
+  selected: number[] | null;
+  revealed: boolean;
+  onChange: (next: number[]) => void;
+}) {
+  // Init array of -1 for each blank.
+  const values: number[] =
+    selected && selected.length === q.blanks.length
+      ? selected
+      : Array(q.blanks.length).fill(-1);
+
+  // Split template "Foo {{0}} bar {{1}} end" into alternating text/blank parts.
+  const parts = useMemo(() => {
+    const out: Array<{ kind: "text"; text: string } | { kind: "blank"; index: number }> = [];
+    const re = /\{\{(\d+)\}\}/g;
+    let last = 0;
+    let m: RegExpExecArray | null;
+    while ((m = re.exec(q.template)) !== null) {
+      if (m.index > last) out.push({ kind: "text", text: q.template.slice(last, m.index) });
+      out.push({ kind: "blank", index: parseInt(m[1], 10) });
+      last = m.index + m[0].length;
+    }
+    if (last < q.template.length) out.push({ kind: "text", text: q.template.slice(last) });
+    return out;
+  }, [q.template]);
+
+  const setValue = (i: number, v: number) => {
+    const next = [...values];
+    next[i] = v;
+    onChange(next);
+  };
+
+  return (
+    <>
+      <h2 className="font-display text-lg font-semibold leading-snug md:text-xl">
+        {q.prompt ?? "Select the words from the dropdowns to complete the sentence."}
+      </h2>
+      <p className="mt-6 text-base leading-[2.4] md:text-lg md:leading-[2.6]">
+        {parts.map((p, idx) => {
+          if (p.kind === "text") return <span key={idx}>{p.text}</span>;
+          const blank = q.blanks[p.index];
+          if (!blank) return null;
+          const value = values[p.index];
+          const correctIdx = blank.correctIndex;
+          let borderClass = "border-border focus:border-coral focus:ring-coral";
+          if (revealed) {
+            if (value === correctIdx) borderClass = "border-success bg-success/10";
+            else borderClass = "border-destructive bg-destructive/10";
+          } else if (value >= 0) {
+            borderClass = "border-coral";
+          }
+          return (
+            <select
+              key={idx}
+              value={value}
+              disabled={revealed}
+              onChange={(e) => setValue(p.index, parseInt(e.target.value, 10))}
+              className={`mx-1 inline-block rounded-md border-2 bg-background px-2 py-1 text-sm font-medium align-baseline focus:outline-none focus:ring-2 focus:ring-offset-1 disabled:cursor-not-allowed ${borderClass}`}
+            >
+              <option value={-1}>—</option>
+              {blank.options.map((opt, i) => (
+                <option key={i} value={i}>
+                  {opt}
+                </option>
+              ))}
+            </select>
+          );
+        })}
+      </p>
+      {revealed && (
+        <ul className="mt-5 space-y-1.5 text-sm">
+          {q.blanks.map((b, i) => {
+            const ok = values[i] === b.correctIndex;
+            return (
+              <li key={i} className="flex items-start gap-2">
+                {ok ? (
+                  <CheckCircle2 className="mt-0.5 h-4 w-4 text-success" />
+                ) : (
+                  <XCircle className="mt-0.5 h-4 w-4 text-destructive" />
+                )}
+                <span className="text-muted-foreground">
+                  Blank {i + 1}:{" "}
+                  <span className="font-semibold text-foreground">
+                    {b.options[b.correctIndex]}
+                  </span>
+                  {!ok && values[i] >= 0 && (
+                    <>
+                      {" "}
+                      <span className="text-destructive">
+                        (you chose: {b.options[values[i]]})
+                      </span>
+                    </>
+                  )}
+                </span>
+              </li>
+            );
+          })}
+        </ul>
+      )}
+    </>
   );
 }
 
@@ -273,6 +455,33 @@ function ModeSelect({ quiz, onSelect }: { quiz: Quiz; onSelect: (m: Mode) => voi
   );
 }
 
+function describeQuestion(q: Question): string {
+  if (isFillBlanks(q)) {
+    // Render template with chosen-correct words inline.
+    return q.template.replace(/\{\{(\d+)\}\}/g, (_, n) => {
+      const b = q.blanks[parseInt(n, 10)];
+      return b ? `[${b.options[b.correctIndex]}]` : "___";
+    });
+  }
+  return q.question;
+}
+
+function answerSummary(q: Question, a: Answer): { correct: string; chosen?: string } {
+  if (isFillBlanks(q)) {
+    const correct = q.blanks.map((b) => b.options[b.correctIndex]).join(" / ");
+    if (Array.isArray(a)) {
+      const chosen = q.blanks
+        .map((b, i) => (a[i] >= 0 ? b.options[a[i]] : "—"))
+        .join(" / ");
+      return { correct, chosen };
+    }
+    return { correct };
+  }
+  const correct = q.options[q.correctAnswer];
+  if (typeof a === "number") return { correct, chosen: q.options[a] };
+  return { correct };
+}
+
 function Results({
   quiz,
   answers,
@@ -282,14 +491,14 @@ function Results({
   onRetry,
 }: {
   quiz: Quiz;
-  answers: (number | null)[];
+  answers: Answer[];
   score: number;
   percent: number;
   passed: boolean;
   onRetry: () => void;
 }) {
   return (
-    <div className="mx-auto max-w-3xl space-y-6">
+    <div className="mx-auto max-w-5xl space-y-6">
       <div
         className={`overflow-hidden rounded-3xl border p-8 text-center shadow-elevated ${
           passed
@@ -332,14 +541,13 @@ function Results({
         </div>
       </div>
 
-      <AdSlot size="rectangle" />
-
       <div className="rounded-3xl border border-border bg-card p-6 shadow-soft md:p-8">
         <h3 className="font-display text-xl font-semibold">Review your answers</h3>
         <ol className="mt-5 space-y-4">
           {quiz.questions.map((q, i) => {
             const a = answers[i];
-            const correct = a === q.correctAnswer;
+            const correct = isCorrect(q, a);
+            const summary = answerSummary(q, a);
             return (
               <li key={q.id} className="rounded-2xl border border-border p-4">
                 <div className="flex items-start gap-3">
@@ -349,14 +557,14 @@ function Results({
                     <XCircle className="mt-0.5 h-5 w-5 shrink-0 text-destructive" />
                   )}
                   <div className="flex-1">
-                    <p className="font-medium">{i + 1}. {q.question}</p>
+                    <p className="font-medium">{i + 1}. {describeQuestion(q)}</p>
                     <p className="mt-1 text-sm text-muted-foreground">
                       <span className="font-semibold text-foreground">Correct: </span>
-                      {q.options[q.correctAnswer]}
-                      {!correct && a !== null && (
+                      {summary.correct}
+                      {!correct && summary.chosen && (
                         <>
                           {" · "}
-                          <span className="text-destructive">Your answer: {q.options[a]}</span>
+                          <span className="text-destructive">Your answer: {summary.chosen}</span>
                         </>
                       )}
                     </p>
