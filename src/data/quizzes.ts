@@ -1,12 +1,25 @@
-export type Question = {
+export type MCQQuestion = {
+  type?: "mcq";
   id: number;
   question: string;
   options: string[];
   correctAnswer: number;
   explanation: string;
   image?: string;
-  signType?: string; // key into RoadSign component
+  signType?: string;
 };
+
+export type FillBlanksQuestion = {
+  type: "fill-blanks";
+  id: number;
+  // Sentence with placeholders like {{0}}, {{1}}.
+  template: string;
+  prompt?: string;
+  blanks: { options: string[]; correctIndex: number }[];
+  explanation: string;
+};
+
+export type Question = MCQQuestion | FillBlanksQuestion;
 
 export type Quiz = {
   slug: string;
