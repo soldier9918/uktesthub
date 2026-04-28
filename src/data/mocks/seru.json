@@ -1,0 +1,665 @@
+{
+  "topic": "seru",
+  "tests": [
+    {
+      "slug": "seru-mock-1",
+      "topic": "seru",
+      "mockNumber": 1,
+      "title": "SERU TfL Mock Test 1",
+      "questions": [
+        {
+          "type": "fill-blanks",
+          "template": "Ridesharing is {{0}} people who do not {{1}} each other pay separate fares and travel together in the same {{2}}.",
+          "prompt": "Select the words from the dropdowns to complete the sentence.",
+          "blanks": [
+            {
+              "options": [
+                "where",
+                "when",
+                "if"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "options": [
+                "know",
+                "like",
+                "trust"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "options": [
+                "vehicle",
+                "queue",
+                "office"
+              ],
+              "correctIndex": 0
+            }
+          ],
+          "explanation": "TfL defines ridesharing as separate fares paid by people who do not know each other travelling together in the same vehicle."
+        },
+        {
+          "type": "fill-blanks",
+          "template": "As a private hire driver, you must {{0}} your PHV licence and {{1}} disc on the vehicle whenever you are working.",
+          "prompt": "Select the correct words to complete the sentence.",
+          "blanks": [
+            {
+              "options": [
+                "display",
+                "hide",
+                "destroy"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "options": [
+                "identification",
+                "tax",
+                "MOT"
+              ],
+              "correctIndex": 0
+            }
+          ],
+          "explanation": "Drivers must display their TfL PHV identification disc on the vehicle and carry their driver licence at all times when working."
+        },
+        {
+          "type": "fill-blanks",
+          "template": "If a passenger has an assistance dog, you {{0}} refuse the booking and you {{1}} charge an extra fee for the dog.",
+          "prompt": "Select the correct words to complete the sentence.",
+          "blanks": [
+            {
+              "options": [
+                "must not",
+                "may",
+                "should"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "options": [
+                "must not",
+                "may",
+                "should"
+              ],
+              "correctIndex": 0
+            }
+          ],
+          "explanation": "Under the Equality Act 2010, refusing an assistance dog or charging extra is unlawful discrimination."
+        },
+        {
+          "type": "fill-blanks",
+          "template": "As a driver, you may have to {{0}} children or adults who are at risk. You may come into {{1}} with passengers that are being trafficked, exploited or abused.",
+          "prompt": "Select the correct words to complete the sentence.",
+          "blanks": [
+            {
+              "options": [
+                "transport",
+                "ignore",
+                "report"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "options": [
+                "contact",
+                "conflict",
+                "agreement"
+              ],
+              "correctIndex": 0
+            }
+          ],
+          "explanation": "Drivers may transport vulnerable passengers and come into contact with people at risk; safeguarding awareness is essential."
+        },
+        {
+          "type": "fill-blanks",
+          "template": "You must report any incident, accident or {{0}} to TfL within {{1}} hours.",
+          "prompt": "Select the correct words to complete the sentence.",
+          "blanks": [
+            {
+              "options": [
+                "complaint",
+                "compliment",
+                "fare"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "options": [
+                "72",
+                "24",
+                "48"
+              ],
+              "correctIndex": 0
+            }
+          ],
+          "explanation": "TfL requires private hire operators and drivers to report incidents and complaints within 72 hours."
+        },
+        {
+          "type": "mcq",
+          "question": "What is the maximum number of passengers a private hire vehicle (PHV) can carry?",
+          "options": [
+            "As stated on the vehicle licence",
+            "Always 4",
+            "Always 6",
+            "As the driver decides"
+          ],
+          "correctAnswer": 0,
+          "explanation": "The maximum number of passengers is set on the vehicle licence and must never be exceeded."
+        },
+        {
+          "type": "mcq",
+          "question": "A passenger leaves an item in your vehicle. What should you do?",
+          "options": [
+            "Keep it for yourself",
+            "Hand it to your operator or the police as soon as possible",
+            "Throw it away",
+            "Wait for the passenger to call"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Lost property must be handed to the operator or to a police station as soon as reasonably possible."
+        },
+        {
+          "type": "mcq",
+          "question": "Which of the following is a protected characteristic under the Equality Act 2010?",
+          "options": [
+            "Hair colour",
+            "Disability",
+            "Postcode",
+            "Job title"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Disability is one of nine protected characteristics under the Equality Act 2010."
+        },
+        {
+          "type": "mcq",
+          "question": "If a passenger asks you to break the speed limit, you should:",
+          "options": [
+            "Speed up briefly",
+            "Politely refuse \u2014 you are responsible for safe driving",
+            "Charge extra and speed",
+            "Only speed on motorways"
+          ],
+          "correctAnswer": 1,
+          "explanation": "You are legally responsible for the safe operation of the vehicle and must obey speed limits at all times."
+        },
+        {
+          "type": "mcq",
+          "question": "What should you do if your TfL PHV identification disc is lost or stolen?",
+          "options": [
+            "Print a copy yourself",
+            "Continue working without it",
+            "Report it to TfL and apply for a replacement",
+            "Borrow another driver's disc"
+          ],
+          "correctAnswer": 2,
+          "explanation": "A lost or stolen disc must be reported to TfL and a replacement obtained before continuing to work."
+        },
+        {
+          "type": "mcq",
+          "question": "A wheelchair user books a vehicle. You should:",
+          "options": [
+            "Cancel the booking",
+            "Charge a higher fare",
+            "Provide reasonable assistance with boarding and securing the wheelchair",
+            "Ask the passenger to fold the wheelchair themselves"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Drivers must provide reasonable assistance to disabled passengers without charging extra."
+        },
+        {
+          "type": "mcq",
+          "question": "What is the legal blood-alcohol limit for driving in England?",
+          "options": [
+            "80 mg/100 ml",
+            "50 mg/100 ml",
+            "20 mg/100 ml",
+            "0 mg/100 ml"
+          ],
+          "correctAnswer": 0,
+          "explanation": "In England the limit is 80 mg of alcohol per 100 ml of blood, but professional drivers should not drink before working."
+        }
+      ]
+    },
+    {
+      "slug": "seru-mock-2",
+      "topic": "seru",
+      "mockNumber": 2,
+      "title": "SERU TfL Mock Test 2",
+      "questions": [
+        {
+          "type": "fill-blanks",
+          "template": "Ridesharing is {{0}} people who do not {{1}} each other pay separate fares and travel together in the same {{2}}.",
+          "prompt": "Select the words from the dropdowns to complete the sentence.",
+          "blanks": [
+            {
+              "options": [
+                "where",
+                "when",
+                "if"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "options": [
+                "know",
+                "like",
+                "trust"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "options": [
+                "vehicle",
+                "queue",
+                "office"
+              ],
+              "correctIndex": 0
+            }
+          ],
+          "explanation": "TfL defines ridesharing as separate fares paid by people who do not know each other travelling together in the same vehicle."
+        },
+        {
+          "type": "fill-blanks",
+          "template": "As a private hire driver, you must {{0}} your PHV licence and {{1}} disc on the vehicle whenever you are working.",
+          "prompt": "Select the correct words to complete the sentence.",
+          "blanks": [
+            {
+              "options": [
+                "display",
+                "hide",
+                "destroy"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "options": [
+                "identification",
+                "tax",
+                "MOT"
+              ],
+              "correctIndex": 0
+            }
+          ],
+          "explanation": "Drivers must display their TfL PHV identification disc on the vehicle and carry their driver licence at all times when working."
+        },
+        {
+          "type": "fill-blanks",
+          "template": "If a passenger has an assistance dog, you {{0}} refuse the booking and you {{1}} charge an extra fee for the dog.",
+          "prompt": "Select the correct words to complete the sentence.",
+          "blanks": [
+            {
+              "options": [
+                "must not",
+                "may",
+                "should"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "options": [
+                "must not",
+                "may",
+                "should"
+              ],
+              "correctIndex": 0
+            }
+          ],
+          "explanation": "Under the Equality Act 2010, refusing an assistance dog or charging extra is unlawful discrimination."
+        },
+        {
+          "type": "fill-blanks",
+          "template": "As a driver, you may have to {{0}} children or adults who are at risk. You may come into {{1}} with passengers that are being trafficked, exploited or abused.",
+          "prompt": "Select the correct words to complete the sentence.",
+          "blanks": [
+            {
+              "options": [
+                "transport",
+                "ignore",
+                "report"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "options": [
+                "contact",
+                "conflict",
+                "agreement"
+              ],
+              "correctIndex": 0
+            }
+          ],
+          "explanation": "Drivers may transport vulnerable passengers and come into contact with people at risk; safeguarding awareness is essential."
+        },
+        {
+          "type": "fill-blanks",
+          "template": "You must report any incident, accident or {{0}} to TfL within {{1}} hours.",
+          "prompt": "Select the correct words to complete the sentence.",
+          "blanks": [
+            {
+              "options": [
+                "complaint",
+                "compliment",
+                "fare"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "options": [
+                "72",
+                "24",
+                "48"
+              ],
+              "correctIndex": 0
+            }
+          ],
+          "explanation": "TfL requires private hire operators and drivers to report incidents and complaints within 72 hours."
+        },
+        {
+          "type": "mcq",
+          "question": "A passenger leaves an item in your vehicle. What should you do?",
+          "options": [
+            "Keep it for yourself",
+            "Hand it to your operator or the police as soon as possible",
+            "Throw it away",
+            "Wait for the passenger to call"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Lost property must be handed to the operator or to a police station as soon as reasonably possible."
+        },
+        {
+          "type": "mcq",
+          "question": "Which of the following is a protected characteristic under the Equality Act 2010?",
+          "options": [
+            "Hair colour",
+            "Disability",
+            "Postcode",
+            "Job title"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Disability is one of nine protected characteristics under the Equality Act 2010."
+        },
+        {
+          "type": "mcq",
+          "question": "If a passenger asks you to break the speed limit, you should:",
+          "options": [
+            "Speed up briefly",
+            "Politely refuse \u2014 you are responsible for safe driving",
+            "Charge extra and speed",
+            "Only speed on motorways"
+          ],
+          "correctAnswer": 1,
+          "explanation": "You are legally responsible for the safe operation of the vehicle and must obey speed limits at all times."
+        },
+        {
+          "type": "mcq",
+          "question": "What should you do if your TfL PHV identification disc is lost or stolen?",
+          "options": [
+            "Print a copy yourself",
+            "Continue working without it",
+            "Report it to TfL and apply for a replacement",
+            "Borrow another driver's disc"
+          ],
+          "correctAnswer": 2,
+          "explanation": "A lost or stolen disc must be reported to TfL and a replacement obtained before continuing to work."
+        },
+        {
+          "type": "mcq",
+          "question": "A wheelchair user books a vehicle. You should:",
+          "options": [
+            "Cancel the booking",
+            "Charge a higher fare",
+            "Provide reasonable assistance with boarding and securing the wheelchair",
+            "Ask the passenger to fold the wheelchair themselves"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Drivers must provide reasonable assistance to disabled passengers without charging extra."
+        },
+        {
+          "type": "mcq",
+          "question": "What is the legal blood-alcohol limit for driving in England?",
+          "options": [
+            "80 mg/100 ml",
+            "50 mg/100 ml",
+            "20 mg/100 ml",
+            "0 mg/100 ml"
+          ],
+          "correctAnswer": 0,
+          "explanation": "In England the limit is 80 mg of alcohol per 100 ml of blood, but professional drivers should not drink before working."
+        },
+        {
+          "type": "mcq",
+          "question": "Who is responsible for ensuring a private hire vehicle is roadworthy?",
+          "options": [
+            "TfL",
+            "The operator",
+            "The driver",
+            "The passenger"
+          ],
+          "correctAnswer": 2,
+          "explanation": "The driver is responsible for checking the vehicle is roadworthy before each shift."
+        }
+      ]
+    },
+    {
+      "slug": "seru-mock-3",
+      "topic": "seru",
+      "mockNumber": 3,
+      "title": "SERU TfL Mock Test 3",
+      "questions": [
+        {
+          "type": "fill-blanks",
+          "template": "Ridesharing is {{0}} people who do not {{1}} each other pay separate fares and travel together in the same {{2}}.",
+          "prompt": "Select the words from the dropdowns to complete the sentence.",
+          "blanks": [
+            {
+              "options": [
+                "where",
+                "when",
+                "if"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "options": [
+                "know",
+                "like",
+                "trust"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "options": [
+                "vehicle",
+                "queue",
+                "office"
+              ],
+              "correctIndex": 0
+            }
+          ],
+          "explanation": "TfL defines ridesharing as separate fares paid by people who do not know each other travelling together in the same vehicle."
+        },
+        {
+          "type": "fill-blanks",
+          "template": "As a private hire driver, you must {{0}} your PHV licence and {{1}} disc on the vehicle whenever you are working.",
+          "prompt": "Select the correct words to complete the sentence.",
+          "blanks": [
+            {
+              "options": [
+                "display",
+                "hide",
+                "destroy"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "options": [
+                "identification",
+                "tax",
+                "MOT"
+              ],
+              "correctIndex": 0
+            }
+          ],
+          "explanation": "Drivers must display their TfL PHV identification disc on the vehicle and carry their driver licence at all times when working."
+        },
+        {
+          "type": "fill-blanks",
+          "template": "If a passenger has an assistance dog, you {{0}} refuse the booking and you {{1}} charge an extra fee for the dog.",
+          "prompt": "Select the correct words to complete the sentence.",
+          "blanks": [
+            {
+              "options": [
+                "must not",
+                "may",
+                "should"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "options": [
+                "must not",
+                "may",
+                "should"
+              ],
+              "correctIndex": 0
+            }
+          ],
+          "explanation": "Under the Equality Act 2010, refusing an assistance dog or charging extra is unlawful discrimination."
+        },
+        {
+          "type": "fill-blanks",
+          "template": "As a driver, you may have to {{0}} children or adults who are at risk. You may come into {{1}} with passengers that are being trafficked, exploited or abused.",
+          "prompt": "Select the correct words to complete the sentence.",
+          "blanks": [
+            {
+              "options": [
+                "transport",
+                "ignore",
+                "report"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "options": [
+                "contact",
+                "conflict",
+                "agreement"
+              ],
+              "correctIndex": 0
+            }
+          ],
+          "explanation": "Drivers may transport vulnerable passengers and come into contact with people at risk; safeguarding awareness is essential."
+        },
+        {
+          "type": "fill-blanks",
+          "template": "You must report any incident, accident or {{0}} to TfL within {{1}} hours.",
+          "prompt": "Select the correct words to complete the sentence.",
+          "blanks": [
+            {
+              "options": [
+                "complaint",
+                "compliment",
+                "fare"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "options": [
+                "72",
+                "24",
+                "48"
+              ],
+              "correctIndex": 0
+            }
+          ],
+          "explanation": "TfL requires private hire operators and drivers to report incidents and complaints within 72 hours."
+        },
+        {
+          "type": "mcq",
+          "question": "Which of the following is a protected characteristic under the Equality Act 2010?",
+          "options": [
+            "Hair colour",
+            "Disability",
+            "Postcode",
+            "Job title"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Disability is one of nine protected characteristics under the Equality Act 2010."
+        },
+        {
+          "type": "mcq",
+          "question": "If a passenger asks you to break the speed limit, you should:",
+          "options": [
+            "Speed up briefly",
+            "Politely refuse \u2014 you are responsible for safe driving",
+            "Charge extra and speed",
+            "Only speed on motorways"
+          ],
+          "correctAnswer": 1,
+          "explanation": "You are legally responsible for the safe operation of the vehicle and must obey speed limits at all times."
+        },
+        {
+          "type": "mcq",
+          "question": "What should you do if your TfL PHV identification disc is lost or stolen?",
+          "options": [
+            "Print a copy yourself",
+            "Continue working without it",
+            "Report it to TfL and apply for a replacement",
+            "Borrow another driver's disc"
+          ],
+          "correctAnswer": 2,
+          "explanation": "A lost or stolen disc must be reported to TfL and a replacement obtained before continuing to work."
+        },
+        {
+          "type": "mcq",
+          "question": "A wheelchair user books a vehicle. You should:",
+          "options": [
+            "Cancel the booking",
+            "Charge a higher fare",
+            "Provide reasonable assistance with boarding and securing the wheelchair",
+            "Ask the passenger to fold the wheelchair themselves"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Drivers must provide reasonable assistance to disabled passengers without charging extra."
+        },
+        {
+          "type": "mcq",
+          "question": "What is the legal blood-alcohol limit for driving in England?",
+          "options": [
+            "80 mg/100 ml",
+            "50 mg/100 ml",
+            "20 mg/100 ml",
+            "0 mg/100 ml"
+          ],
+          "correctAnswer": 0,
+          "explanation": "In England the limit is 80 mg of alcohol per 100 ml of blood, but professional drivers should not drink before working."
+        },
+        {
+          "type": "mcq",
+          "question": "Who is responsible for ensuring a private hire vehicle is roadworthy?",
+          "options": [
+            "TfL",
+            "The operator",
+            "The driver",
+            "The passenger"
+          ],
+          "correctAnswer": 2,
+          "explanation": "The driver is responsible for checking the vehicle is roadworthy before each shift."
+        },
+        {
+          "type": "mcq",
+          "question": "If you witness a hate crime, you should:",
+          "options": [
+            "Ignore it \u2014 it is not your problem",
+            "Report it to the police",
+            "Confront the offender physically",
+            "Tell the passenger to leave"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Hate crimes should always be reported to the police on 101 or 999 in an emergency."
+        }
+      ]
+    }
+  ]
+}
