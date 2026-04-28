@@ -5,7 +5,7 @@ import { AdSlot } from "@/components/AdSlot";
 import { QuizRunner } from "@/components/QuizRunner";
 import { getQuiz, getQuizzesByCategory } from "@/data/quizzes";
 import { getCategory } from "@/data/categories";
-import { ChevronRight } from "lucide-react";
+
 
 export const Route = createFileRoute("/quiz/$slug")({
   loader: ({ params }) => {
