@@ -268,7 +268,7 @@ function McqQuestionView({
               <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-muted text-[11px] font-bold">
                 {String.fromCharCode(65 + i)}
               </span>
-              <span className="flex-1 text-sm md:text-base">{opt}</span>
+              <span className="flex-1 text-sm">{opt}</span>
               {revealed && isCorrectOpt && (
                 <CheckCircle2 className="h-5 w-5 text-success" />
               )}
