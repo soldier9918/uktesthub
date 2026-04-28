@@ -39,8 +39,9 @@ export const Route = createFileRoute("/blog/$slug")({
 });
 
 function BlogPostPage() {
-  const { slug } = Route.useLoaderData();
-  const post = getPostBySlug(slug)!;
+  const { slug } = Route.useParams();
+  const post = getPostBySlug(slug);
+  if (!post) return null;
   const related = getRelatedPosts(post.slug);
   return (
     <div className="min-h-screen bg-[#f7f5f0]">
