@@ -20,6 +20,7 @@ const popularTests: FooterLink[] = [
 
 const company: StaticLink[] = [
   { label: "About Us", to: "/about" },
+  { label: "Blog", to: "/blog" },
   { label: "Contact Us", to: "/contact" },
   { label: "FAQ", to: "/faq" },
   { label: "Sitemap", to: "/sitemap" },

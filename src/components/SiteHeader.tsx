@@ -11,6 +11,7 @@ const nav: { label: string; to: string; slug?: string }[] = [
   { label: "Jobs", to: "/category/$slug", slug: "career" },
   { label: "Professional", to: "/category/$slug", slug: "professional" },
   { label: "NHS", to: "/category/$slug", slug: "nhs" },
+  { label: "Blog", to: "/blog" },
 ];
 
 export function SiteHeader() {

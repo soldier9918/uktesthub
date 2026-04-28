@@ -1,6 +1,7 @@
 import { Outlet, Link, createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
 
 import appCss from "../styles.css?url";
+import { organizationSchema, websiteSchema, SITE_URL } from "@/lib/seo";
 
 function NotFoundComponent() {
   return (
@@ -37,12 +38,11 @@ export const Route = createRootRoute({
       },
       { name: "author", content: "UK Test Hub" },
       { property: "og:type", content: "website" },
+      { property: "og:site_name", content: "UK Test Hub" },
+      { property: "og:url", content: SITE_URL + "/" },
       { name: "twitter:card", content: "summary_large_image" },
       { property: "og:title", content: "UK Test Hub" },
       { name: "twitter:title", content: "UK Test Hub" },
-      { name: "description", content: "UK Test Hub Pro is a premium web application for UK and international English exam preparation." },
-      { property: "og:description", content: "UK Test Hub Pro is a premium web application for UK and international English exam preparation." },
-      { name: "twitter:description", content: "UK Test Hub Pro is a premium web application for UK and international English exam preparation." },
       { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/60rsF7o22RT0wrreDJWyLhTs1UL2/social-images/social-1777326990566-76124a84-9ddf-45ab-8599-9bc2e87067d0.webp" },
       { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/60rsF7o22RT0wrreDJWyLhTs1UL2/social-images/social-1777326990566-76124a84-9ddf-45ab-8599-9bc2e87067d0.webp" },
     ],
@@ -51,6 +51,7 @@ export const Route = createRootRoute({
         rel: "stylesheet",
         href: appCss,
       },
+      { rel: "canonical", href: SITE_URL + "/" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
@@ -60,6 +61,7 @@ export const Route = createRootRoute({
       { rel: "icon", type: "image/png", href: "/favicon.png" },
       { rel: "apple-touch-icon", href: "/favicon.png" },
     ],
+    scripts: [organizationSchema(), websiteSchema()],
   }),
   shellComponent: RootShell,
   component: RootComponent,
