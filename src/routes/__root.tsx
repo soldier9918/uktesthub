@@ -2,6 +2,7 @@ import { Outlet, Link, createRootRoute, HeadContent, Scripts } from "@tanstack/r
 
 import appCss from "../styles.css?url";
 import { organizationSchema, websiteSchema, SITE_URL } from "@/lib/seo";
+import { StickyAdSlot } from "@/components/AdSlot";
 
 function NotFoundComponent() {
   return (
@@ -83,5 +84,10 @@ function RootShell({ children }: { children: React.ReactNode }) {
 }
 
 function RootComponent() {
-  return <Outlet />;
+  return (
+    <>
+      <Outlet />
+      <StickyAdSlot />
+    </>
+  );
 }
