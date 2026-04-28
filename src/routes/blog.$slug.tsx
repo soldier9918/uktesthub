@@ -10,11 +10,11 @@ export const Route = createFileRoute("/blog/$slug")({
   loader: ({ params }) => {
     const post = getPostBySlug(params.slug);
     if (!post) throw notFound();
-    return { post };
+    return { slug: params.slug };
   },
-  head: ({ loaderData, params }) => {
-    const post = loaderData?.post;
+  head: ({ params }) => {
     const slug = params?.slug ?? "";
+    const post = getPostBySlug(slug);
     if (!post) return { meta: [{ title: "Article — UK Test Hub" }] };
     const base = pageMeta({
       title: `${post.title} — UK Test Hub`,
@@ -39,7 +39,8 @@ export const Route = createFileRoute("/blog/$slug")({
 });
 
 function BlogPostPage() {
-  const { post } = Route.useLoaderData();
+  const { slug } = Route.useLoaderData();
+  const post = getPostBySlug(slug)!;
   const related = getRelatedPosts(post.slug);
   return (
     <div className="min-h-screen bg-[#f7f5f0]">
