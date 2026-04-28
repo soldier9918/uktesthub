@@ -59,10 +59,10 @@ function QuizPage() {
     <div className="min-h-screen bg-background">
       <SiteHeader />
 
-      <main className="mx-auto max-w-6xl px-4 py-4 md:px-6 md:py-6">
+      <main className="mx-auto max-w-7xl px-3 py-2 md:px-6 md:py-3">
         <QuizRunner quiz={quiz} />
 
-        <AdSlot size="leaderboard" className="mt-12" />
+        <AdSlot size="leaderboard" className="mt-8" />
 
         {related.length > 0 && (
           <section className="mt-12">
