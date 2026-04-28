@@ -84,7 +84,25 @@ function BlogPostPage() {
       </section>
 
       <main className="mx-auto max-w-4xl px-4 py-12 md:px-6">
-        <article className="prose prose-slate max-w-none prose-headings:font-display prose-headings:font-semibold prose-h2:mt-10 prose-h2:text-2xl prose-h3:mt-6 prose-h3:text-lg prose-a:text-coral prose-a:no-underline hover:prose-a:underline prose-strong:text-foreground">
+        <article
+          className="
+            prose prose-lg prose-slate max-w-none
+            prose-headings:font-display prose-headings:tracking-tight prose-headings:text-navy-deep
+            prose-h2:mt-14 prose-h2:mb-5 prose-h2:text-3xl prose-h2:font-extrabold prose-h2:uppercase prose-h2:leading-tight
+            prose-h2:relative prose-h2:pl-4 prose-h2:border-l-4 prose-h2:border-coral
+            prose-h3:mt-10 prose-h3:mb-3 prose-h3:text-xl prose-h3:font-bold
+            prose-p:my-5 prose-p:leading-[1.85] prose-p:text-foreground/85 prose-p:text-[1.0625rem]
+            prose-a:text-coral prose-a:font-semibold prose-a:no-underline hover:prose-a:underline
+            prose-strong:text-navy-deep prose-strong:font-semibold
+            prose-ul:my-6 prose-ul:space-y-2 prose-ol:my-6 prose-ol:space-y-2
+            prose-li:leading-relaxed prose-li:text-foreground/85 prose-li:marker:text-coral
+            prose-blockquote:border-l-4 prose-blockquote:border-coral prose-blockquote:bg-accent/40
+            prose-blockquote:rounded-r-lg prose-blockquote:py-2 prose-blockquote:px-5 prose-blockquote:not-italic
+            prose-blockquote:font-medium prose-blockquote:text-foreground
+            first-letter:font-display first-letter:text-5xl first-letter:font-extrabold
+            first-letter:text-coral first-letter:mr-2 first-letter:float-left first-letter:leading-none first-letter:mt-1
+          "
+        >
           {post.body()}
         </article>
 
