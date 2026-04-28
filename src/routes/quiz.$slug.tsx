@@ -59,25 +59,7 @@ function QuizPage() {
     <div className="min-h-screen bg-background">
       <SiteHeader />
 
-      <main className="mx-auto max-w-6xl px-4 py-8 md:px-6 md:py-12">
-        <nav className="mb-6 flex items-center gap-1 text-sm text-muted-foreground">
-          <Link to="/" className="hover:text-foreground">Home</Link>
-          <ChevronRight className="h-4 w-4" />
-          {category && (
-            <>
-              <Link to="/category/$slug" params={{ slug: category.slug }} className="hover:text-foreground">
-                {category.title}
-              </Link>
-              <ChevronRight className="h-4 w-4" />
-              <Link to="/topic/$slug" params={{ slug: quiz.topic }} className="hover:text-foreground">
-                {category.topics.find((t) => t.slug === quiz.topic)?.title ?? quiz.topic}
-              </Link>
-              <ChevronRight className="h-4 w-4" />
-            </>
-          )}
-          <span className="line-clamp-1 text-foreground">{quiz.quizTitle}</span>
-        </nav>
-
+      <main className="mx-auto max-w-6xl px-4 py-4 md:px-6 md:py-6">
         <QuizRunner quiz={quiz} />
 
         <AdSlot size="leaderboard" className="mt-12" />
