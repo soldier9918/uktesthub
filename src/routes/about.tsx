@@ -17,6 +17,7 @@ export const Route = createFileRoute("/about")({
           "Learn about UK Test Hub — our mission to help learners pass UK exams with free, high-quality mock tests.",
       },
     ],
+  links: [{ rel: "canonical", href: "https://www.uktesthub.com/about" }],
   }),
   component: AboutPage,
 });

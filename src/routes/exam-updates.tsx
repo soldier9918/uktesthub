@@ -16,6 +16,7 @@ export const Route = createFileRoute("/exam-updates")({
         content: "Stay informed about the latest changes to UK exams.",
       },
     ],
+  links: [{ rel: "canonical", href: "https://www.uktesthub.com/exam-updates" }],
   }),
   component: ExamUpdatesPage,
 });

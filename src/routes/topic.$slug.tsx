@@ -14,9 +14,10 @@ export const Route = createFileRoute("/topic/$slug")({
     if (!found) throw notFound();
     return { category: found.category, topic: found.topic };
   },
-  head: ({ loaderData }) => {
+  head: ({ loaderData, params }) => {
     if (!loaderData) return { meta: [{ title: "Topic — UK Test Hub" }] };
     const { category, topic } = loaderData;
+    const slug = params?.slug ?? topic.slug;
     const title = `${topic.title} — 45 Free Mock Tests — UK Test Hub`;
     const description = `Practice the ${topic.title} with 45 free mock tests, each containing ${QUESTIONS_PER_MOCK} questions with explanations.`;
     return {
@@ -26,7 +27,10 @@ export const Route = createFileRoute("/topic/$slug")({
         { property: "og:title", content: title },
         { property: "og:description", content: description },
         { property: "og:image", content: category.heroImage },
+        { property: "og:url", content: `https://www.uktesthub.com/topic/${slug}` },
+        { name: "twitter:card", content: "summary_large_image" },
       ],
+      links: [{ rel: "canonical", href: `https://www.uktesthub.com/topic/${slug}` }],
     };
   },
   component: TopicPage,

@@ -13,18 +13,23 @@ export const Route = createFileRoute("/quiz/$slug")({
     if (!quiz) throw notFound();
     return { quiz };
   },
-  head: ({ loaderData }) => {
+  head: ({ loaderData, params }) => {
     const q = loaderData?.quiz;
+    const slug = params?.slug ?? "";
     if (!q) return { meta: [{ title: "Quiz — UK Test Hub" }] };
     const title = `${q.quizTitle} — Free Practice — UK Test Hub`;
     const description = q.description;
+    const url = `https://www.uktesthub.com/quiz/${slug}`;
     return {
       meta: [
         { title },
         { name: "description", content: description },
         { property: "og:title", content: title },
         { property: "og:description", content: description },
+        { property: "og:url", content: url },
+        { name: "twitter:card", content: "summary_large_image" },
       ],
+      links: [{ rel: "canonical", href: url }],
       scripts: [
         {
           type: "application/ld+json",

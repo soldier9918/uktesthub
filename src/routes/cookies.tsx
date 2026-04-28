@@ -16,6 +16,7 @@ export const Route = createFileRoute("/cookies")({
         content: "Details on the cookies we use and how to control them.",
       },
     ],
+  links: [{ rel: "canonical", href: "https://www.uktesthub.com/cookies" }],
   }),
   component: CookiePage,
 });

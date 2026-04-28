@@ -19,6 +19,11 @@ import { CategoryIcon, accentClasses } from "@/components/CategoryIcon";
 import { UnionJack } from "@/components/UnionJack";
 import { categories } from "@/data/categories";
 import { getDailyQuiz, getQuiz } from "@/data/quizzes";
+import { blogPosts } from "@/data/blog";
+
+const latestPosts = [...blogPosts]
+  .sort((a, b) => (a.datePublished < b.datePublished ? 1 : -1))
+  .slice(0, 3);
 
 import heroUk from "@/assets/hero-uk.jpg";
 import featDriving from "@/assets/feat-driving.jpg";
@@ -59,6 +64,7 @@ export const Route = createFileRoute("/")({
       },
       { name: "twitter:image", content: "/og-uk-test-hub.jpg" },
     ],
+    links: [{ rel: "canonical", href: "https://www.uktesthub.com/" }],
   }),
   component: HomePage,
 });
@@ -350,6 +356,172 @@ function HomePage() {
               </Link>
             </aside>
           </div>
+        </section>
+
+        {/* WHAT IS UK TEST HUB */}
+        <section className="mt-20 grid gap-10 lg:grid-cols-[1.4fr_1fr] lg:items-start">
+          <div className="prose prose-slate max-w-none prose-headings:font-display prose-h2:text-2xl md:prose-h2:text-3xl prose-a:text-coral prose-a:no-underline hover:prose-a:underline">
+            <h2>What is UK Test Hub?</h2>
+            <p>
+              UK Test Hub is a free practice platform built to help learners
+              across Britain pass official UK exams first time. From the{" "}
+              <Link to="/category/$slug" params={{ slug: "driving" }}>
+                DVSA Driving Theory Test
+              </Link>{" "}
+              and the{" "}
+              <Link to="/category/$slug" params={{ slug: "citizenship" }}>
+                Life in the UK Test
+              </Link>{" "}
+              to{" "}
+              <Link to="/category/$slug" params={{ slug: "english" }}>
+                IELTS, ESOL and English language exams
+              </Link>
+              , our mock tests follow the real exam format and difficulty so
+              you walk into the exam centre knowing exactly what to expect.
+            </p>
+            <p>
+              Every test on the site is free, mobile-friendly and refreshed
+              regularly to reflect the latest syllabus updates. There are no
+              accounts to create, no paywalls and no surprise upsells — just
+              practice questions written and reviewed by our team, with
+              instant marking and clear explanations after every answer.
+            </p>
+            <p>
+              Whether you're revising for{" "}
+              <Link to="/category/$slug" params={{ slug: "education" }}>
+                GCSE and 11+
+              </Link>
+              , preparing for a{" "}
+              <Link to="/category/$slug" params={{ slug: "career" }}>
+                CSCS or SIA card
+              </Link>
+              , training for{" "}
+              <Link to="/category/$slug" params={{ slug: "nhs" }}>
+                NHS numeracy and literacy
+              </Link>{" "}
+              tests, or sitting a{" "}
+              <Link to="/category/$slug" params={{ slug: "professional" }}>
+                professional licensing exam
+              </Link>
+              , UK Test Hub gives you a calm, modern place to practise and
+              improve.
+            </p>
+          </div>
+          <aside className="rounded-3xl border border-border bg-card p-6 shadow-soft md:p-8">
+            <h3 className="font-display text-lg font-bold text-foreground">
+              Why Practice Tests Work
+            </h3>
+            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+              Decades of cognitive-science research show that{" "}
+              <strong className="text-foreground">retrieval practice</strong>{" "}
+              — actively recalling answers under exam-like conditions — is one
+              of the most effective ways to learn. Reading notes feels
+              productive but rarely transfers to exam day.
+            </p>
+            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+              Mock tests also expose gaps in your knowledge before they cost
+              you marks, build familiarity with the question style, and
+              reduce exam anxiety through repeated low-stakes exposure.
+              That's why every UK Test Hub mock mirrors the real test format
+              and gives you instant feedback you can act on.
+            </p>
+            <Link
+              to="/blog"
+              className="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-coral hover:underline"
+            >
+              Read revision tips on the blog <ArrowRight className="h-4 w-4" />
+            </Link>
+          </aside>
+        </section>
+
+        <AdSlot size="leaderboard" className="mt-14" />
+
+        {/* HOW TO PASS UK TESTS FIRST TIME */}
+        <section className="mt-16">
+          <SectionTitle>How to Pass UK Tests First Time</SectionTitle>
+          <ul className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            {[
+              {
+                t: "1. Start with a diagnostic mock",
+                d: "Take a full mock test before revising. Your score map shows exactly which topics need the most work.",
+              },
+              {
+                t: "2. Drill weak topics",
+                d: "Use topic-specific practice tests to attack low-scoring areas in short, focused sessions of 15–20 minutes.",
+              },
+              {
+                t: "3. Sit timed mocks weekly",
+                d: "Recreate exam conditions with full-length timed mocks. Aim to consistently exceed the pass mark before booking.",
+              },
+              {
+                t: "4. Review every wrong answer",
+                d: "Read every explanation, not just the score. Understanding why an answer is wrong is what makes the next one right.",
+              },
+            ].map((c) => (
+              <li
+                key={c.t}
+                className="rounded-2xl border border-border bg-card p-5 shadow-soft"
+              >
+                <h3 className="font-display text-sm font-bold text-foreground">
+                  {c.t}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                  {c.d}
+                </p>
+              </li>
+            ))}
+          </ul>
+        </section>
+
+        {/* LATEST FROM THE BLOG */}
+        <section className="mt-20">
+          <div className="flex items-end justify-between gap-4">
+            <SectionTitle>Latest from the Blog</SectionTitle>
+          </div>
+          <div className="mt-3 text-right">
+            <Link
+              to="/blog"
+              className="inline-flex items-center gap-1 text-sm font-semibold text-coral hover:underline"
+            >
+              View all articles <ArrowRight className="h-4 w-4" />
+            </Link>
+          </div>
+          <ul className="mt-8 grid gap-5 md:grid-cols-3">
+            {latestPosts.map((p) => (
+              <li key={p.slug}>
+                <Link
+                  to="/blog/$slug"
+                  params={{ slug: p.slug }}
+                  className="group flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-soft transition-all hover:-translate-y-1 hover:border-coral/40 hover:shadow-elevated"
+                >
+                  <div className="relative aspect-[16/9] overflow-hidden bg-muted">
+                    <img
+                      src={p.hero}
+                      alt={p.title}
+                      loading="lazy"
+                      width={800}
+                      height={450}
+                      className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                  </div>
+                  <div className="flex flex-1 flex-col p-5">
+                    <span className="text-[11px] font-semibold uppercase tracking-wider text-coral">
+                      {p.category}
+                    </span>
+                    <h3 className="mt-2 font-display text-base font-bold leading-snug text-foreground">
+                      {p.title}
+                    </h3>
+                    <p className="mt-2 line-clamp-3 text-sm text-muted-foreground">
+                      {p.excerpt}
+                    </p>
+                    <span className="mt-4 inline-flex items-center gap-1 text-xs font-semibold text-coral">
+                      Read article <ArrowRight className="h-3.5 w-3.5" />
+                    </span>
+                  </div>
+                </Link>
+              </li>
+            ))}
+          </ul>
         </section>
       </main>
 
