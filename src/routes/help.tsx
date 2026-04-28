@@ -16,6 +16,7 @@ export const Route = createFileRoute("/help")({
         content: "Guides and support for using UK Test Hub.",
       },
     ],
+  links: [{ rel: "canonical", href: "https://www.uktesthub.com/help" }],
   }),
   component: HelpPage,
 });

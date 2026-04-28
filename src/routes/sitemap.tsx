@@ -17,6 +17,7 @@ export const Route = createFileRoute("/sitemap")({
         content: "All pages and test categories on UK Test Hub.",
       },
     ],
+  links: [{ rel: "canonical", href: "https://www.uktesthub.com/sitemap" }],
   }),
   component: SitemapPage,
 });

@@ -16,6 +16,7 @@ export const Route = createFileRoute("/report")({
         content: "Help us keep UK Test Hub accurate by reporting issues.",
       },
     ],
+  links: [{ rel: "canonical", href: "https://www.uktesthub.com/report" }],
   }),
   component: ReportPage,
 });

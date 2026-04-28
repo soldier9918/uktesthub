@@ -16,6 +16,7 @@ export const Route = createFileRoute("/privacy")({
         content: "Our commitment to your privacy under UK GDPR.",
       },
     ],
+  links: [{ rel: "canonical", href: "https://www.uktesthub.com/privacy" }],
   }),
   component: PrivacyPage,
 });

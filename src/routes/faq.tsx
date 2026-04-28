@@ -16,6 +16,7 @@ export const Route = createFileRoute("/faq")({
         content: "Common questions about using UK Test Hub for exam practice.",
       },
     ],
+  links: [{ rel: "canonical", href: "https://www.uktesthub.com/faq" }],
   }),
   component: FaqPage,
 });

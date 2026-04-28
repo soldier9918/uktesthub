@@ -16,6 +16,7 @@ export const Route = createFileRoute("/terms")({
         content: "Terms governing your use of UK Test Hub.",
       },
     ],
+  links: [{ rel: "canonical", href: "https://www.uktesthub.com/terms" }],
   }),
   component: TermsPage,
 });

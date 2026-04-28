@@ -16,6 +16,7 @@ export const Route = createFileRoute("/feedback")({
         content: "Tell us what's working and what we can improve.",
       },
     ],
+  links: [{ rel: "canonical", href: "https://www.uktesthub.com/feedback" }],
   }),
   component: FeedbackPage,
 });

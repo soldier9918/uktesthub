@@ -16,6 +16,7 @@ export const Route = createFileRoute("/accessibility")({
         content: "Our commitment to building an accessible exam practice platform.",
       },
     ],
+  links: [{ rel: "canonical", href: "https://www.uktesthub.com/accessibility" }],
   }),
   component: AccessibilityPage,
 });
