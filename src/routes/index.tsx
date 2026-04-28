@@ -64,6 +64,7 @@ export const Route = createFileRoute("/")({
       },
       { name: "twitter:image", content: "/og-uk-test-hub.jpg" },
     ],
+    links: [{ rel: "canonical", href: "https://www.uktesthub.com/" }],
   }),
   component: HomePage,
 });
