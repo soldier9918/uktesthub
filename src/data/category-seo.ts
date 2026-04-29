@@ -611,4 +611,725 @@ export const categorySeo: Record<string, CategorySeo> = {
       { q: "Are these tests the official TfL exam?", a: "No. We are an independent platform. Our tests are realistic practice papers; they are not affiliated with TfL." },
     ],
   },
+
+  security: {
+    title: "SIA Licence Practice Tests 2026 | Door Supervisor, CCTV & Close Protection",
+    description:
+      "Free SIA mock tests for 2026 — Door Supervisor, CCTV Operator, Close Protection and the Door Supervisor Top-Up. Realistic UK questions with explanations.",
+    intro: [
+      "The Security Industry Authority (SIA) licence is a legal requirement for anyone working in the UK private security industry. To get one, you must complete an approved training course and pass a series of multiple-choice exams set by an Ofqual-recognised awarding body such as Highfield, Pearson, Industry Qualifications or BIIAB. The pass mark is 70% on most papers and the exams are unforgiving — one missed regulatory point can be the difference between a job offer and another £200 on a re-sit.",
+      "Our free SIA practice tests cover the four most common licence routes: Door Supervisor, CCTV Operator, Close Protection and the Door Supervisor Top-Up that existing licence holders need before renewal. Every question follows the current SIA specification, including the 2021 syllabus updates around terror awareness (ACT), emergency first aid and physical intervention, so you train on what's actually being tested today.",
+    ],
+    sections: [
+      {
+        heading: "What the tests actually involve",
+        body: [
+          "SIA exams are typically delivered on paper or on a tablet at the end of your training course. Door Supervisor sits four short multiple-choice papers — Working in the Private Security Industry, Working as a Door Supervisor, Conflict Management, and Physical Intervention Skills (theory). CCTV Operator sits two papers; Close Protection sits four. Each paper is 30–40 questions with a 30–45 minute time limit and a 70% pass mark.",
+          "After passing, you apply to the SIA for the licence itself via gov.uk. The licence fee in 2026 is £190 and the licence lasts three years. You must also pass a Disclosure and Barring Service (DBS) check and confirm your right to work in the UK.",
+          "The Top-Up qualification is a one-day course and short exam introduced in 2021 to update existing Door Supervisors on terror threat awareness, emergency first aid and the latest physical intervention guidance. You cannot renew your Door Supervisor licence without it.",
+        ],
+      },
+      {
+        heading: "What's covered in the syllabus",
+        body: [
+          "Door Supervisor covers the Private Security Industry Act 2001, the SIA's role, behavioural standards, search procedures, the Licensing Act 2003, drug awareness, crime scene preservation, queue and crowd management, conflict management (the LEAPS model), de-escalation, and the legal framework for using physical intervention as a last resort.",
+          "CCTV Operator covers the Data Protection Act 2018 and UK GDPR, the Surveillance Camera Code of Practice, control room operation, target acquisition and tracking, evidence preservation and the powers and limitations of the operator.",
+          "Close Protection covers threat and risk assessment, route reconnaissance, embus/debus drills, venue security, the law on the use of reasonable force, and the operational tactics used to keep a principal safe in public.",
+        ],
+      },
+      {
+        heading: "How to study and pass first time",
+        body: [
+          "Trust the official handbook your training provider gives you — the questions are written directly from it. Re-reading each chapter once and then drilling mock papers is faster than highlighting the book to death.",
+          "Memorise the LEAPS conflict model (Listen, Empathise, Ask, Paraphrase, Summarise), the four conditions for using force (lawful, reasonable, proportionate, necessary), and the Door Supervisor's five legal powers of search.",
+          "For CCTV, learn the seven UK GDPR principles and the difference between a 'data controller' and a 'data processor' — these come up in nearly every paper.",
+          "Sit at least three full mocks under timed conditions before your real exam. Most candidates fail on pace, not on knowledge.",
+        ],
+      },
+      {
+        heading: "Common mistakes to avoid",
+        body: [
+          "Confusing 'reasonable force' with 'minimum force'. The legal test is whether the force was reasonable in the circumstances — proportionate, necessary and used as a last resort.",
+          "Getting the Licensing Act 2003 age limits wrong: 16 for beer/wine/cider with a table meal accompanied by an adult, 18 for everything else off the premises.",
+          "On CCTV, candidates often forget that any covert surveillance triggers RIPA / IPA considerations and needs documented authorisation, not just a verbal nod from a supervisor.",
+        ],
+      },
+      {
+        heading: "Why active practice testing works",
+        body: [
+          "SIA exams are short, dense and procedural. The questions reward exact recall of legal definitions and named models — exactly the kind of content that retrieval practice locks in faster than re-reading.",
+          "Each re-sit costs £30–£60 depending on the awarding body, plus the inconvenience of returning to your training centre. Twenty minutes a day of free mocks for a week is one of the highest-return revision activities in UK vocational training.",
+          "Mocks also normalise the dry, formal phrasing used in SIA papers. Once you've seen 'Which of the following best describes the role of the SIA?' five times, you stop second-guessing the question stem and answer it on instinct.",
+        ],
+      },
+      {
+        heading: "Applying for your SIA licence",
+        body: [
+          "Once you've passed your training exams, you apply for the licence on gov.uk. You'll need your training certificate reference number, a DBS check, proof of right to work, and a passport-style photo. The fee is £190 and applications are usually processed within six weeks.",
+          "Your licence arrives as a credit-card-sized card that must be displayed on the outside of your clothing whenever you're working in a licensable role. Working without a valid SIA licence is a criminal offence carrying a fine of up to £5,000 or six months in prison.",
+          "Renew at least four months before expiry. Late renewals mean you cannot legally work in the meantime, even if your application is sitting in the SIA's queue.",
+        ],
+      },
+    ],
+    faqs: [
+      { q: "What is the pass mark for SIA exams?", a: "Most SIA exams require 70% to pass — that's typically 21 out of 30 or 28 out of 40 depending on the paper." },
+      { q: "How much does an SIA Door Supervisor licence cost in 2026?", a: "The SIA application fee is £190. The training course itself usually costs £200–£350 on top of that." },
+      { q: "How long does an SIA licence last?", a: "Three years from the date of issue. You must complete the Top-Up qualification before renewal." },
+      { q: "Do I need a DBS check for an SIA licence?", a: "Yes — the SIA carries out an enhanced criminality check as part of every application. Recent unspent convictions can result in refusal." },
+      { q: "Can I work while my SIA application is being processed?", a: "Only if you appear on the SIA's online register. Working without an in-date licence on display is a criminal offence." },
+      { q: "What is the SIA Top-Up qualification?", a: "A one-day course covering terror awareness (ACT), emergency first aid and updated physical intervention guidance. It's mandatory for Door Supervisor renewals." },
+      { q: "Are these SIA mocks free?", a: "Yes. Every Door Supervisor, CCTV, Close Protection and Top-Up mock on UK Test Hub is free to use." },
+    ],
+  },
+
+  hospitality: {
+    title: "Hospitality Test Practice 2026 | APLH, Allergens, HACCP & Customer Service",
+    description:
+      "Free practice tests for hospitality professionals — Personal Licence (APLH), Allergen Awareness, HACCP Level 2 and customer service. Realistic UK questions with explanations.",
+    intro: [
+      "Hospitality in the UK runs on certificates: a Personal Licence (APLH) to authorise alcohol sales, a Level 2 Award in Allergen Awareness to comply with Natasha's Law and the Food Information Regulations, HACCP Level 2 for any kitchen producing food at scale, and customer service training that increasingly forms part of pre-employment screening for hotels and chains. None of these exams are difficult, but each one stops you starting work until you've passed it.",
+      "Our free hospitality mocks mirror the exact format used by the major awarding bodies — Highfield, BIIAB, RSPH and CIEH — so you can train against real exam wording, not generic study notes. UK English, current legislation, current pass marks and the same multiple-choice patterns you'll see on the day.",
+    ],
+    sections: [
+      {
+        heading: "What the tests actually involve",
+        body: [
+          "The Award for Personal Licence Holders (APLH) is a 40-question multiple-choice exam with a 70% pass mark, sat at the end of an accredited one-day course. You must pass APLH before you can apply to your local council for the Personal Licence itself.",
+          "Allergen Awareness Level 2 and HACCP Level 2 are typically 20–30 question multiple-choice exams sat online or on paper at the end of training. Pass marks sit at 75% for most awarding bodies. Customer Service practice tests are used in chain pre-employment screening (hotels, contract caterers) and follow situational-judgement formats with no formal pass mark — recruiters rank candidates by overall score.",
+        ],
+      },
+      {
+        heading: "What's covered in the syllabus",
+        body: [
+          "APLH covers the Licensing Act 2003 in detail: the four licensing objectives, the role of the Designated Premises Supervisor, conditions on the premises licence, age verification (Challenge 25), drunkenness offences, and the legal duties of a Personal Licence Holder. Expect questions on the difference between an on-licence and an off-licence and on Temporary Event Notices.",
+          "Allergen Awareness covers the 14 named allergens under FSA / EU 1169 rules, Natasha's Law (PPDS labelling), cross-contamination, customer information at point of sale and the legal consequences of getting it wrong.",
+          "HACCP Level 2 covers the seven principles of HACCP, the temperature danger zone (8°C to 63°C), the four Cs (Cleaning, Cooking, Chilling, Cross-contamination), critical control points, monitoring and corrective actions.",
+        ],
+      },
+      {
+        heading: "How to study and pass first time",
+        body: [
+          "Memorise the four licensing objectives (prevention of crime and disorder, public safety, prevention of public nuisance, protection of children from harm). They appear in almost every APLH paper.",
+          "Learn the 14 named allergens by heart for Allergen Awareness — celery, cereals containing gluten, crustaceans, eggs, fish, lupin, milk, molluscs, mustard, peanuts, sesame, soya, sulphur dioxide and sulphites, and tree nuts.",
+          "For HACCP, learn the seven principles in order: hazard analysis, identify CCPs, set critical limits, monitor CCPs, corrective action, verification, documentation. The order matters — questions test it.",
+        ],
+      },
+      {
+        heading: "Common mistakes to avoid",
+        body: [
+          "On APLH, candidates confuse Challenge 21 (industry initiative) with Challenge 25 (the standard most councils now require). Always go with the higher number unless the question says otherwise.",
+          "On Allergens, the most-missed point is that Natasha's Law applies specifically to PPDS food (prepacked for direct sale) — not to food made to order at the counter, which has separate rules.",
+          "On HACCP, candidates confuse the temperature danger zone (8°C to 63°C) with the cooking core temperature (75°C for 30 seconds or equivalent). Both come up and they test different things.",
+        ],
+      },
+      {
+        heading: "Why practice tests work",
+        body: [
+          "Hospitality exams are pass/fail and a re-sit fee of £30–£80 plus another half-day of training quickly adds up. Mocks remove the surprise element so you focus on content, not format.",
+          "These exams are also dense with named legislation and numbers — Licensing Act 2003, Food Safety Act 1990, Natasha's Law, the 14 allergens, the four Cs, the seven HACCP principles. Active recall in mock format is far more efficient than re-reading the handbook for the third time.",
+        ],
+      },
+    ],
+    faqs: [
+      { q: "What is the pass mark for the APLH exam?", a: "70%, which is 28 out of 40 questions correct in the standard one-hour multiple-choice paper." },
+      { q: "How much does a Personal Licence cost in the UK?", a: "The training and APLH exam typically cost £100–£180. The licence itself, paid to your local council, costs £37 in most areas." },
+      { q: "How long is an APLH certificate valid?", a: "The qualification has no expiry, but the Personal Licence used to require renewal — that requirement was removed in 2015, so a current Personal Licence is now indefinite." },
+      { q: "How many named food allergens must businesses declare?", a: "14 — including celery, gluten-containing cereals, crustaceans, eggs, fish, lupin, milk, molluscs, mustard, peanuts, sesame, soya, sulphites and tree nuts." },
+      { q: "What is Natasha's Law?", a: "A 2021 UK law requiring full ingredient and allergen labelling on food prepacked for direct sale (PPDS) — sandwiches, salads and similar items made on site for the same-day shelf." },
+      { q: "How long does HACCP Level 2 certification last?", a: "Three years is the industry-standard refresh cycle, although there is no statutory expiry on the qualification itself." },
+      { q: "Are these hospitality mocks free?", a: "Yes. APLH, Allergen Awareness, HACCP and customer service mocks on UK Test Hub are all free to use." },
+    ],
+  },
+
+  construction: {
+    title: "CSCS & CITB Practice Tests 2026 | Operative, Gold, HSE & Working at Height",
+    description:
+      "Free CSCS and CITB practice tests — CSCS Operative, CSCS Gold (Supervisor), CITB Health, Safety & Environment and IPAF / PASMA Working at Height mocks for UK sites.",
+    intro: [
+      "Almost every UK construction site requires a valid CSCS card before you set foot on it, and the CITB Health, Safety & Environment (HS&E) test is the gateway to getting one. The test is set by the Construction Industry Training Board, sat at a Pearson VUE centre, and uses the same format whether you're going for a green Labourer card, a blue Skilled Worker card or a gold Supervisor card. There are 50 multiple-choice questions, a 45-minute time limit and a 47-out-of-50 pass mark — strict by exam standards, and the reason a third of candidates fail at first attempt.",
+      "Our free CSCS and CITB mocks mirror the official HS&E test format exactly, with the same five core sections, behavioural-case-study questions and a separate Working at Height bank for IPAF / PASMA tickets. Every question is written to current CITB syllabus and reflects the post-2024 revision adding mental health and respiratory awareness.",
+    ],
+    sections: [
+      {
+        heading: "What the test actually involves",
+        body: [
+          "The CITB HS&E test is a 50-question computer-based exam taken at a Pearson VUE test centre. You get 45 minutes, the pass mark is 47 out of 50, and 12 of the questions are behavioural case studies that test how you'd respond on site, not just what the rule book says.",
+          "The Operative test is for green-card and lower-tier blue-card applicants. The Specialist test is for occupations like demolition, scaffolding or working at height. The Managers and Professionals (MAP) test is for gold and black cards and is harder, with deeper coverage of the Construction (Design and Management) Regulations 2015.",
+          "Once you pass, you apply for the CSCS card itself — the fee in 2026 is £36 and the card lasts five years. You also need an in-date Level 1 Award in Health & Safety in a Construction Environment for green-card applicants who don't have an NVQ.",
+        ],
+      },
+      {
+        heading: "What's covered in the syllabus",
+        body: [
+          "The five core sections are: General responsibilities (your duties under the Health and Safety at Work etc. Act 1974); Accident reporting and emergency procedures (RIDDOR, first aid, fire); Health and welfare (noise, hand-arm vibration, dust, manual handling, mental health); Personal protective equipment; and Specialist activities (scaffolding, working at height, electrical safety, confined spaces).",
+          "Behavioural case studies present a short site scenario and ask you to choose the response that best matches the CITB's safety-first culture. The 'right' answer is almost always the one that protects life and reports the issue, even if it slows the job down.",
+          "IPAF and PASMA tests cover working at height legislation (Work at Height Regulations 2005), MEWP categories (1a, 1b, 3a, 3b), tower scaffold assembly (3T and AGR methods) and rescue planning.",
+        ],
+      },
+      {
+        heading: "How to study and pass first time",
+        body: [
+          "Buy or download the current CITB revision app — questions on the test are drawn from the same official bank, so practising the bank gives you the highest possible coverage.",
+          "Drill the behavioural case studies separately. The format is unfamiliar to most candidates and they account for 12 of the 50 questions. Always answer in line with 'safety first, report up, never assume'.",
+          "Memorise the noise action values (80 dB(A) lower / 85 dB(A) upper), HAV exposure action value (2.5 m/s² A(8)) and the trigger times for vibrating tool restrictions — these come up in nearly every paper.",
+        ],
+      },
+      {
+        heading: "Common mistakes to avoid",
+        body: [
+          "Treating behavioural questions like knowledge questions and second-guessing the obvious safe answer. The CITB wants you to choose the protective response — even if you wouldn't in real life.",
+          "Confusing RIDDOR reporting timescales: 'over-7-day' incapacitation must be reported within 15 days, dangerous occurrences and fatalities without delay.",
+          "Getting the order of the hierarchy of control wrong. It's: Eliminate, Substitute, Engineering controls, Administrative controls, PPE — in that order. PPE is always the last line of defence.",
+        ],
+      },
+      {
+        heading: "Why active practice testing works",
+        body: [
+          "The CITB test is famously dense and the 47/50 pass mark leaves no margin for error. Mocks let you see exactly which of the five sections is dragging your average down before you sit at Pearson VUE.",
+          "Each re-sit costs £22.50 and adds at least a week of waiting — and many sites won't let you start until your card is in your hand. Free practice for a week is the cheapest insurance against another month of delay.",
+        ],
+      },
+      {
+        heading: "Booking, fees and what to expect on the day",
+        body: [
+          "Book the HS&E test through the official CITB website — the fee is £22.50 in 2026 and slots are available at Pearson VUE centres across the UK, usually within a week.",
+          "On the day, arrive 15 minutes early with photo ID matching the name on your booking. Phones go in a locker. The test runs on a touch-screen workstation and you get your provisional result immediately on screen, with a printed confirmation handed over before you leave.",
+          "Once you've passed, apply for your CSCS card via the CSCS Smart Check app or the CSCS website. Cards are usually issued within 10 working days.",
+        ],
+      },
+    ],
+    faqs: [
+      { q: "What is the CITB HS&E test pass mark?", a: "47 out of 50 — one of the strictest pass marks in UK vocational testing." },
+      { q: "How much does the CITB HS&E test cost in 2026?", a: "£22.50, booked through the official CITB website. Avoid third-party booking sites that add a markup." },
+      { q: "How long does a CSCS card last?", a: "Five years from the date of issue. You'll need to retake the relevant CITB test before renewal." },
+      { q: "What's the difference between the Operative and MAP tests?", a: "Operative is for green and lower-tier blue cards; MAP (Managers and Professionals) is for gold and black cards and tests deeper knowledge of CDM 2015 and supervisory responsibilities." },
+      { q: "Do I need IPAF or PASMA as well as CSCS?", a: "If your job involves MEWPs (IPAF) or mobile tower scaffolds (PASMA), most main contractors require the relevant ticket on top of CSCS." },
+      { q: "Can I take the CITB test in another language?", a: "Yes — the test is available with a voiceover in a range of languages and in British Sign Language, but you must request this when booking." },
+      { q: "Are these CSCS / CITB mocks free?", a: "Yes. Every CSCS Operative, CSCS Gold, CITB HS&E and IPAF / PASMA mock on UK Test Hub is free to use." },
+    ],
+  },
+
+  finance: {
+    title: "Finance & Accounting Practice Tests 2026 | AAT, ACCA, CFA & Awareness",
+    description:
+      "Free practice tests for AAT Level 2 Bookkeeping, ACCA Foundations (FIA), CFA-style aptitude and general financial awareness. Realistic UK exam-style questions with explanations.",
+    intro: [
+      "If you're starting a career in UK accounting or finance, the early exams open every door that follows. AAT Level 2 Bookkeeping is the most common first step, ACCA Foundations (FIA) is the alternative for those aiming straight at chartered status, and CFA-style aptitude tests dominate graduate scheme screening at investment banks and asset managers. A solid pass on any one of these can lift your starting salary by several thousand pounds.",
+      "Our free finance mocks mirror the official AAT and ACCA computer-based assessment format and the timed numerical / verbal aptitude format used by the major City employers. UK English, UK accounting standards (FRS 102, FRS 105) and HMRC tax conventions throughout — not US GAAP.",
+    ],
+    sections: [
+      {
+        heading: "What the tests actually involve",
+        body: [
+          "AAT Level 2 Bookkeeping is delivered as a computer-based assessment (CBA) under exam conditions at an approved AAT venue. The two main units — Bookkeeping Transactions and Bookkeeping Controls — are each two hours long with a 70% pass mark.",
+          "ACCA Foundations (FIA) papers are also computer-based, sat on demand at Pearson VUE centres. Each paper runs two hours and uses a 50% pass mark.",
+          "CFA-style aptitude tests are typically 25–30 minute timed online assessments combining numerical reasoning (data tables, percentages, ratios), verbal reasoning and basic financial concepts. There's no formal pass mark — recruiters compare candidates against percentile benchmarks for the role.",
+        ],
+      },
+      {
+        heading: "What's covered",
+        body: [
+          "AAT Bookkeeping Transactions covers double-entry, books of prime entry, the trial balance, VAT on sales and purchases, and the principles of ethics. AAT Bookkeeping Controls covers control accounts, journals, the bank reconciliation, payroll postings and correction of errors.",
+          "ACCA Foundations papers cover Recording Financial Transactions (FA1), Maintaining Financial Records (MA1) and Management Information (MA2) — the equivalents of AAT Levels 2 and 3 but with an IFRS-leaning syllabus.",
+          "CFA-style aptitude papers focus on speed and accuracy with percentages, ratios, growth rates and chart interpretation. Expect 60–90 seconds per question.",
+        ],
+      },
+      {
+        heading: "How to study and pass first time",
+        body: [
+          "For AAT, drill the double-entry rules until they're automatic: debits increase assets and expenses; credits increase liabilities, equity and income. Memorise the standard VAT rate (20%), the reduced rate (5%) and the registration threshold (£90,000 from April 2024).",
+          "For ACCA Foundations, work the official BPP or Kaplan question banks — exam questions are drawn from the same style and weighting.",
+          "For aptitude tests, practise mental maths under a timer. The right answer with one second to spare is worth far more than the perfect calculation that takes too long.",
+        ],
+      },
+      {
+        heading: "Common mistakes to avoid",
+        body: [
+          "Confusing the gross / net / VAT relationship. If a sale is £120 inclusive of 20% VAT, the VAT element is £20 (gross ÷ 6), not £24 (£120 × 20%).",
+          "Forgetting that a discount allowed is an expense to the seller and a discount received is an income to the buyer.",
+          "On aptitude tests, spending too long on the first few questions and running out of clock for the easier ones at the end. Always scan the whole paper first if the format allows.",
+        ],
+      },
+      {
+        heading: "Why active practice testing works",
+        body: [
+          "Finance exams are pattern-matching exercises. Once you've drilled fifty mock VAT or double-entry questions, the unfamiliar wording in the real exam stops being unfamiliar — you recognise the pattern and answer in seconds.",
+          "Each AAT and ACCA re-sit costs £70–£120 and adds at least a month before you can re-book, so practice is the highest-return revision activity in early-career finance.",
+        ],
+      },
+      {
+        heading: "Booking and what to expect",
+        body: [
+          "Book AAT exams through your training provider or directly via the AAT website once you're a registered student. ACCA Foundations exams book through Pearson VUE on demand, with slots usually available within two weeks.",
+          "Aptitude tests are sent by recruiters as an emailed link — the deadline is typically five working days. You're free to use scrap paper and a calculator unless the test instructions say otherwise.",
+        ],
+      },
+    ],
+    faqs: [
+      { q: "What is the pass mark for AAT Level 2 Bookkeeping?", a: "70%, applied across the two main computer-based assessments." },
+      { q: "How much does an AAT Level 2 Bookkeeping exam cost?", a: "Around £70–£90 per assessment, plus the AAT student membership fee of around £172 a year (2026)." },
+      { q: "What's the difference between AAT and ACCA Foundations?", a: "AAT is the UK industry-standard route for bookkeepers and accounting technicians. ACCA Foundations is a feeder qualification for full chartered ACCA status and uses an IFRS-leaning syllabus." },
+      { q: "Do I need a degree for the CFA?", a: "Yes, or four years of relevant professional work experience, or a combination of education and experience totalling four years before you can register for Level 1." },
+      { q: "How fast do I need to be on graduate aptitude tests?", a: "Plan for around 60–90 seconds per question. Speed matters as much as accuracy on numerical reasoning." },
+      { q: "Are these finance mocks free?", a: "Yes. Every AAT, ACCA Foundations, CFA aptitude and financial awareness mock on UK Test Hub is free to use." },
+    ],
+  },
+
+  "it-tech": {
+    title: "IT & Tech Certification Practice 2026 | CompTIA A+, ITIL 4 & Microsoft",
+    description:
+      "Free practice tests for CompTIA A+, ITIL 4 Foundation, Microsoft Fundamentals (MS-900 / AZ-900) and Cyber Security Awareness. Realistic exam-style questions with explanations.",
+    intro: [
+      "Entry-level IT certifications are the cheapest career insurance you can buy. CompTIA A+ proves you can support hardware, networking and operating systems; ITIL 4 Foundation proves you understand modern service management; Microsoft Fundamentals (MS-900 for Microsoft 365, AZ-900 for Azure) opens the door to cloud roles; and Cyber Security Awareness is the baseline that almost every UK employer now requires before granting a network login.",
+      "Our free IT and tech mocks mirror the official Pearson VUE and PSI exam formats — multiple-choice, drag-and-drop and short performance-based items — using current UK and global syllabuses. Question banks are refreshed when the official objectives change, so the wording and topic mix match what you'll actually face.",
+    ],
+    sections: [
+      {
+        heading: "What the tests actually involve",
+        body: [
+          "CompTIA A+ is delivered as two exams (Core 1 — 220-1101 and Core 2 — 220-1102). Each runs 90 minutes with up to 90 questions, including performance-based items, and a scaled pass mark of 675–700 out of 900.",
+          "ITIL 4 Foundation is a 60-minute, 40-question multiple-choice exam with a 65% pass mark (26 of 40). It can be taken online with proctoring or at a Pearson VUE centre.",
+          "Microsoft MS-900 and AZ-900 are 45–60 minute exams with around 40–60 multiple-choice and case-study questions and a scaled pass mark of 700 out of 1000.",
+          "Cyber Security Awareness mocks follow the format used by major UK employers' annual training tools — short multi-choice items with immediate feedback.",
+        ],
+      },
+      {
+        heading: "What's covered",
+        body: [
+          "CompTIA A+ Core 1 covers mobile devices, networking, hardware, virtualisation and cloud, and hardware/network troubleshooting. Core 2 covers operating systems, security, software troubleshooting and operational procedures.",
+          "ITIL 4 Foundation covers the service value system, the four dimensions of service management, the seven guiding principles and the 34 ITIL practices (with seven of them tested in detail).",
+          "MS-900 covers Microsoft 365 services, security, compliance and pricing. AZ-900 covers Azure cloud concepts, core services, governance, privacy and pricing.",
+          "Cyber Security Awareness covers phishing, password hygiene, MFA, social engineering, the basics of GDPR and what to do when you click on something you shouldn't have.",
+        ],
+      },
+      {
+        heading: "How to study and pass first time",
+        body: [
+          "For CompTIA A+, treat the official objectives PDF as your checklist. Anything not on the list is unlikely to be tested; anything on the list almost certainly will be.",
+          "For ITIL 4, memorise the seven guiding principles in order and the four dimensions — these dominate the exam.",
+          "For MS-900 and AZ-900, focus on understanding the service categories rather than memorising prices; pricing tiers change but the structural map of Microsoft 365 / Azure is stable.",
+          "Sit at least one full mock the night before your real exam under timed conditions — the pacing test is more important than the marginal study you'd do otherwise.",
+        ],
+      },
+      {
+        heading: "Common mistakes to avoid",
+        body: [
+          "Skipping performance-based items on CompTIA A+ to save time. They carry more marks per minute than multiple-choice and are easy to miss in the back-half of the paper.",
+          "Confusing ITIL 4's 'four dimensions' (organisations & people, information & technology, partners & suppliers, value streams & processes) with the 'seven guiding principles'.",
+          "On MS-900 and AZ-900, conflating Microsoft 365 services with the underlying Azure services — they overlap but the certifications test them separately.",
+        ],
+      },
+      {
+        heading: "Why active practice testing works",
+        body: [
+          "IT certifications are dense, factual and time-pressured. Mocks build the pace and pattern recognition that re-reading study guides cannot.",
+          "Each re-sit costs $246 for CompTIA A+, around £170 for ITIL 4 Foundation and around £69 for MS-900 / AZ-900. A week of free practice protects a meaningful exam fee.",
+        ],
+      },
+      {
+        heading: "Booking and what to expect",
+        body: [
+          "Book all four exam families through Pearson VUE — either at a physical test centre or, increasingly, online with OnVUE proctoring from home. ITIL 4 can also be booked through PeopleCert.",
+          "For online proctored exams, you'll need a quiet room, a webcam, a clear desk and a tidy ID document. Any phone in the room or anyone walking in mid-exam can void the session with no refund.",
+        ],
+      },
+    ],
+    faqs: [
+      { q: "What is the pass mark for CompTIA A+?", a: "Scaled, 675 out of 900 for Core 1 (220-1101) and 700 out of 900 for Core 2 (220-1102)." },
+      { q: "How much does ITIL 4 Foundation cost in 2026?", a: "Around £170–£250 depending on whether you book directly through PeopleCert or via an accredited training provider." },
+      { q: "Is MS-900 worth it for non-technical staff?", a: "Yes — it's widely used by procurement, HR and operations staff who work with Microsoft 365 day to day and want a recognised credential." },
+      { q: "How long are these certifications valid?", a: "CompTIA A+ is valid for three years and can be renewed via continuing education credits. ITIL 4 Foundation does not expire. Microsoft fundamentals certifications do not expire." },
+      { q: "Can I take these exams online?", a: "Yes — all of them can be sat with online proctoring, subject to webcam, ID and quiet-room requirements." },
+      { q: "Are these IT mocks free?", a: "Yes. CompTIA A+, ITIL 4, MS-900 / AZ-900 and Cyber Awareness mocks on UK Test Hub are all free to use." },
+    ],
+  },
+
+  "healthcare-entry": {
+    title: "UCAT, BMAT, OET & PLAB 1 Practice 2026 | Free Healthcare Entry Mocks",
+    description:
+      "Free UCAT, BMAT, OET and PLAB 1 practice tests for medical school applicants and overseas-trained doctors. UK exam-style questions with full explanations.",
+    intro: [
+      "The UK route into medicine is gated by a small number of high-stakes admissions and registration tests. UCAT decides who gets a Russell Group medical interview; BMAT (now retired but still required by some courses transitioning), OET and PLAB 1 do the equivalent for international applicants and overseas-trained doctors. A single percentile band on UCAT can be the difference between Cambridge and a Foundation Year offer at a less competitive medical school.",
+      "Our free healthcare entry mocks mirror the official UCAT subtests, OET medicine sub-tests and PLAB 1 single-best-answer format — UK English, NICE-aligned scenarios and current syllabuses. Practice is the only proven lever for these tests; raw IQ matters far less than exam familiarity.",
+    ],
+    sections: [
+      {
+        heading: "What the tests actually involve",
+        body: [
+          "UCAT runs two hours and contains five subtests: Verbal Reasoning, Decision Making, Quantitative Reasoning, Abstract Reasoning and Situational Judgement. The first four return scaled scores (300–900 each); SJT is reported as a band (1 to 4).",
+          "OET (Healthcare English) is a four-skill test (Listening, Reading, Writing, Speaking) lasting around three hours. The Writing and Speaking sub-tests are profession-specific — doctors write referral letters, nurses write discharge summaries.",
+          "PLAB 1 is a 180-question single-best-answer paper sat over three hours at British Council centres worldwide and at Pearson VUE in the UK. The pass mark is set per sitting using a modified Angoff method, typically around 60–65%.",
+        ],
+      },
+      {
+        heading: "What's covered",
+        body: [
+          "UCAT Verbal Reasoning tests reading speed and inference; Quantitative Reasoning tests data interpretation under time pressure; Abstract Reasoning tests pattern recognition; Decision Making tests logical and probabilistic thinking; Situational Judgement tests professional dilemmas mapped to GMC Good Medical Practice.",
+          "OET Medicine covers clinical conversations, patient information leaflets, medical case notes and clinician-to-clinician referrals.",
+          "PLAB 1 covers the full UK medical curriculum: cardiology, respiratory, gastroenterology, endocrinology, neurology, paediatrics, obstetrics & gynaecology, psychiatry, ethics and prescribing, all aligned to NICE / BNF guidance.",
+        ],
+      },
+      {
+        heading: "How to study and pass first time",
+        body: [
+          "For UCAT, drill timing first and content second. Most candidates can answer Verbal Reasoning correctly given enough time — the test is whether you can do it in 22 seconds per question.",
+          "For OET, practise writing referral letters under a 45-minute timer. Candidates fail Writing more often than Listening, Reading or Speaking, almost always due to running out of time.",
+          "For PLAB 1, work through the official GMC sample questions and a full bank like Plabable or Pastest. Anchor every answer in NICE guidance and the BNF — the GMC tests UK practice, not your home country's protocols.",
+        ],
+      },
+      {
+        heading: "Common mistakes to avoid",
+        body: [
+          "On UCAT, treating SJT like a personality test. The 'right' answer is the one that protects the patient first and the team second; pick the textbook professional response, not the diplomatic one.",
+          "On OET Writing, exceeding the 180–200 word target on referral letters. Examiners penalise wordy letters even when the clinical content is correct.",
+          "On PLAB 1, applying non-UK first-line treatments. If NICE says paracetamol first, choose paracetamol — even if your training elsewhere taught otherwise.",
+        ],
+      },
+      {
+        heading: "Why active practice testing works",
+        body: [
+          "These exams are speed tests as much as knowledge tests. Mocks build the timing reflexes that no amount of textbook reading can.",
+          "PLAB 1 re-sits cost £255 in 2026 plus travel; OET re-sits cost around £587; UCAT cannot be retaken in the same admissions cycle. The cost of failure is high enough that thirty hours of free mock practice is one of the most cost-effective study investments in UK medicine.",
+        ],
+      },
+      {
+        heading: "Booking and what to expect",
+        body: [
+          "UCAT books through the official Pearson VUE UCAT site between June and September each year. OET books through occupationalenglishtest.org with monthly sittings. PLAB 1 books through the GMC online services portal.",
+          "On the day, bring photo ID matching the booking, arrive 30 minutes early and expect a strict no-phones policy. UCAT and PLAB 1 are computer-based; OET Speaking is delivered face-to-face or by video call.",
+        ],
+      },
+    ],
+    faqs: [
+      { q: "What is a good UCAT score in 2026?", a: "Scores above 2700 (across the four cognitive subtests, with Band 1 or 2 on SJT) are competitive at most UK medical schools." },
+      { q: "How much does PLAB 1 cost in 2026?", a: "£255 per sitting, paid to the GMC. PLAB 2 in the UK is around £935." },
+      { q: "Is BMAT still required in 2026?", a: "BMAT was discontinued by Cambridge Assessment Admissions Testing in 2024. A small number of programmes have transitioned to other admissions tests — check directly with the medical school." },
+      { q: "What OET grade do I need to register with the GMC?", a: "Grade B in all four sub-tests is the GMC's English language requirement, equivalent to IELTS 7.5." },
+      { q: "Can UCAT be retaken?", a: "Only once per admissions cycle (and only if you didn't sit it earlier in the same year)." },
+      { q: "Are these healthcare entry mocks free?", a: "Yes. UCAT, BMAT, OET and PLAB 1 mocks on UK Test Hub are all free to use." },
+    ],
+  },
+
+  teaching: {
+    title: "Teaching Practice Tests 2026 | QTS Numeracy, Literacy & Safeguarding",
+    description:
+      "Free practice for the QTS Numeracy and Literacy Skills tests, Professional Skills for Teachers and Safeguarding in Schools. Realistic UK exam-style questions with explanations.",
+    intro: [
+      "Although the formal QTS Skills Tests in numeracy and literacy were retired in 2020, providers, SCITTs and recruiting MATs increasingly run their own equivalents at interview. Add to that the school-side safeguarding awareness exams that every staff member sits annually, and the modern teacher's career still runs on a steady stream of short, high-stakes assessments.",
+      "Our free teaching mocks recreate the QTS-style numeracy and literacy formats most ITT providers and trust schools still use, plus the standard safeguarding awareness format used by Educare, NSPCC Learning and most Local Authority safeguarding hubs.",
+    ],
+    sections: [
+      {
+        heading: "What the tests actually involve",
+        body: [
+          "QTS-style Numeracy tests run around 50 minutes and split into a mental arithmetic section (audio questions, no calculator, around 18 seconds per item) and a written section (data interpretation and calculator-allowed problems).",
+          "QTS-style Literacy tests cover spelling, punctuation, grammar and comprehension across a 45-minute paper.",
+          "Professional Skills mocks cover scenarios drawn from the Teachers' Standards (Standards 1–8 plus Personal and Professional Conduct).",
+          "Safeguarding in Schools is typically a 20-question annual refresher with an 80% pass mark, mapped to the latest Keeping Children Safe in Education (KCSiE) guidance.",
+        ],
+      },
+      {
+        heading: "What's covered",
+        body: [
+          "Numeracy: percentages, fractions, ratios, conversions between units, time and timetable problems, basic statistics (mean, median, mode, range), and reading two- and three-axis charts.",
+          "Literacy: spelling of common teaching vocabulary, comma and apostrophe usage, subject-verb agreement, and reading comprehension based on short education-themed passages.",
+          "Professional Skills: planning and assessment, behaviour management, the SEND Code of Practice, working with parents, and statutory duties under the Equality Act 2010.",
+          "Safeguarding: KCSiE Part 1, the four categories of abuse (physical, emotional, sexual, neglect), the role of the Designated Safeguarding Lead, FGM mandatory reporting duty, Prevent duty and online safety.",
+        ],
+      },
+      {
+        heading: "How to study and pass first time",
+        body: [
+          "For Numeracy, drill mental arithmetic against a metronome — the test gives you about 18 seconds per audio question and there is no replay.",
+          "For Literacy, learn the comma rules cold (Oxford comma, comma splice, comma before coordinating conjunction) and the apostrophe rules for plurals vs possessives.",
+          "For Safeguarding, read the latest KCSiE Part 1 in full each September. The test is updated annually to match.",
+          "For Professional Skills, anchor every scenario answer in the Teachers' Standards and the principle 'always escalate to the DSL on safeguarding'.",
+        ],
+      },
+      {
+        heading: "Common mistakes to avoid",
+        body: [
+          "On Numeracy, mistaking a percentage of a number for a percentage point change. A score rising from 40% to 50% is a 25% increase, not a 10% increase.",
+          "On Safeguarding, confusing the categories: a dirty uniform is more likely neglect than physical abuse; emotional abuse rarely leaves marks but is just as serious.",
+          "On Professional Skills, picking the answer that pleases parents over the answer that protects children. Safeguarding always wins.",
+        ],
+      },
+      {
+        heading: "Why active practice testing works",
+        body: [
+          "Teaching assessments reward speed and pattern recognition far more than depth of knowledge. Mocks build the time discipline that the QTS-style formats demand.",
+          "Safeguarding refreshers are annual and pass/fail in most trusts — failing them can put your right-to-work-with-children status at risk. Twenty minutes of mock practice is the lowest-risk way to keep that compliant.",
+        ],
+      },
+    ],
+    faqs: [
+      { q: "Are the official QTS Skills Tests still required?", a: "No — the DfE retired the central tests in 2020. Many ITT providers and recruiting trusts still run their own equivalents at interview." },
+      { q: "What is the pass mark for safeguarding refreshers?", a: "Most providers use 80%, with unlimited re-sits in the same session." },
+      { q: "What is KCSiE?", a: "Keeping Children Safe in Education — the statutory safeguarding guidance issued by the Department for Education and updated every September." },
+      { q: "Do I need to pass safeguarding tests every year?", a: "Yes — annual refresher training is a statutory expectation for all staff in regulated education settings." },
+      { q: "What are the Teachers' Standards?", a: "Eight professional standards plus a section on Personal and Professional Conduct, set by the DfE and used to assess all qualified teachers in England." },
+      { q: "Are these teaching mocks free?", a: "Yes. QTS Numeracy, QTS Literacy, Professional Skills and Safeguarding mocks on UK Test Hub are all free to use." },
+    ],
+  },
+
+  legal: {
+    title: "SQE & LNAT Practice Tests 2026 | Free FLK1, FLK2, LNAT & UK Legal Mocks",
+    description:
+      "Free practice for SQE1 FLK1 and FLK2, the LNAT multiple-choice section and a UK Legal System knowledge quiz. Realistic single-best-answer questions with explanations.",
+    intro: [
+      "Becoming a solicitor in England and Wales now runs through the Solicitors Qualifying Examination (SQE), the standardised assessment that replaced the GDL/LPC route in 2021. SQE1 is two long single-best-answer papers (FLK1 and FLK2) testing functioning legal knowledge across the full curriculum. LNAT remains the front door for several leading law schools, and a working knowledge of the UK legal system is now expected at interview by any decent City or regional firm.",
+      "Our free legal mocks mirror the official SRA format for SQE1, the National Admissions Test for Law (LNAT) multiple-choice format, and the kind of UK Legal System quizzes used by chambers and law firms at first-stage screening. UK English, current procedural rules and the Civil Procedure Rules 1998 throughout.",
+    ],
+    sections: [
+      {
+        heading: "What the tests actually involve",
+        body: [
+          "SQE1 is sat over two days. FLK1 and FLK2 each contain 180 single-best-answer questions over five hours (with a break in the middle). The pass mark is set per sitting using a modified Angoff method, typically around 55–60%.",
+          "LNAT is in two parts: a 95-minute multiple-choice section with 42 questions across 12 passages, and a 40-minute essay. Universities use the multiple-choice score plus the essay quality to decide interview offers.",
+          "UK Legal System quizzes used at firm screening are usually 20–30 short questions covering courts, sources of law, key statutes and basic procedural concepts.",
+        ],
+      },
+      {
+        heading: "What's covered",
+        body: [
+          "FLK1: business law and practice, dispute resolution, contract, tort, the legal system, constitutional law and the legal services regulatory framework.",
+          "FLK2: property practice, wills and the administration of estates, solicitors accounts, land law, trusts, and criminal law and practice.",
+          "LNAT: argument analysis, inference, assumptions and reasoning across passages from law, philosophy, ethics, science and current affairs.",
+          "UK Legal System: the structure of the courts, civil and criminal jurisdiction, the doctrine of precedent, primary and secondary legislation, the role of the Supreme Court since 2009 and the Civil Procedure Rules 1998.",
+        ],
+      },
+      {
+        heading: "How to study and pass first time",
+        body: [
+          "For SQE1, practice under timed conditions is non-negotiable — 1 minute 40 seconds per question for 180 questions in one sitting tests stamina as much as knowledge.",
+          "For LNAT, the multiple-choice section rewards careful reading. Always answer based strictly on what the passage says, never on what you happen to know to be true.",
+          "For UK Legal System knowledge, learn the court hierarchy first — Magistrates and County (first instance), Crown and High Court (intermediate), Court of Appeal, Supreme Court (since October 2009).",
+        ],
+      },
+      {
+        heading: "Common mistakes to avoid",
+        body: [
+          "Confusing the burden of proof in civil cases (balance of probabilities) with the criminal standard (beyond reasonable doubt).",
+          "On SQE1, getting tripped up by single-best-answer phrasing. Often more than one option is technically correct — pick the one that is most precisely correct.",
+          "Forgetting that the Supreme Court replaced the Appellate Committee of the House of Lords in October 2009 — older textbooks still refer to 'the Lords' as the apex court.",
+        ],
+      },
+      {
+        heading: "Why active practice testing works",
+        body: [
+          "SQE1 single-best-answer is a format most candidates have never sat before. Mocks build pattern recognition for the question style, not just the content.",
+          "Each SQE1 sitting costs £2,108 in 2026, with a re-sit costing the full fee again. Free practice is one of the highest-return revision activities in UK legal training.",
+          "For LNAT, raw IQ helps but practice helps more — most candidates who hit the top band have done at least three full mocks under timed conditions.",
+        ],
+      },
+      {
+        heading: "Booking and what to expect",
+        body: [
+          "SQE1 books through the SRA's online portal once or twice a year, typically January and July sittings, at Pearson VUE centres worldwide.",
+          "LNAT books through the official LNAT site between August and June for the following admissions cycle. The fee is £75 in the UK / EU and £120 elsewhere.",
+          "For SQE1, expect a long day with a strict break schedule. Phones, watches and any personal items go in lockers; only ID, water and Pearson VUE-issued scratch paper are allowed at the workstation.",
+        ],
+      },
+    ],
+    faqs: [
+      { q: "What is the pass mark for SQE1?", a: "Set per sitting using a modified Angoff method — usually around 55–60% across all 180 single-best-answer questions per paper." },
+      { q: "How much does SQE1 cost in 2026?", a: "£2,108 per sitting, paid to the SRA. SQE2 is around £2,956." },
+      { q: "Do I still need a law degree to qualify as a solicitor?", a: "No — under the SQE route you need any UK degree (or equivalent), two years of qualifying work experience, and to pass SQE1 and SQE2." },
+      { q: "Is the LNAT essay marked?", a: "Universities receive your essay alongside the multiple-choice score and use both to decide interview and offer outcomes. There is no formal essay grade." },
+      { q: "How long are SQE results valid?", a: "There is no formal expiry, but firms typically expect SQE2 to be sat within a few years of SQE1." },
+      { q: "Are these legal mocks free?", a: "Yes. SQE1 FLK1, FLK2, LNAT and UK Legal System mocks on UK Test Hub are all free to use." },
+    ],
+  },
+
+  "military-emergency": {
+    title: "Army, Police & Firefighter Test Practice 2026 | BARB, PIRT, SEARCH, NFSAT",
+    description:
+      "Free practice for the Army BARB, Police PIRT (Initial Recruitment), Police SEARCH Assessment and Firefighter NFSAT. Realistic UK uniformed-service questions with explanations.",
+    intro: [
+      "The UK uniformed services run some of the toughest entry assessments in any sector. The British Army's BARB test, the Police PIRT and SEARCH assessments, and the Firefighter NFSAT all use bespoke formats designed to flush out candidates who can't handle pressure, poor pacing or unfamiliar question types. A good score doesn't just get you in — it widens the trade or rank options open to you.",
+      "Our free military and emergency-services mocks mirror each official format. UK English, current syllabuses, and content reviewed against the latest recruitment guidance from the Army's AFCO, College of Policing and National Fire Chiefs Council.",
+    ],
+    sections: [
+      {
+        heading: "What the tests actually involve",
+        body: [
+          "BARB (British Army Recruit Battery) is a 30-minute computer-adaptive test taken at an Army Careers Centre. It has five sections: reasoning, letter checking, number distance, odd-one-out and symbol rotation. Your score determines the trades you're eligible for.",
+          "Police PIRT covers verbal logical reasoning, numerical reasoning and a short situational judgement section. Forces use it as the first online sift before SEARCH.",
+          "Police SEARCH (Structured Entrance Assessment for Recruiting Constables Holistically) is a half-day assessment centre with interactive role-plays, a written exercise and a competency-based interview.",
+          "Firefighter NFSAT covers situational awareness, working with numbers and understanding information across three timed online assessments.",
+        ],
+      },
+      {
+        heading: "What's covered",
+        body: [
+          "BARB: pure aptitude — speed and accuracy on letter, number and shape problems. There's no syllabus to revise; the only useful preparation is timed practice.",
+          "PIRT: verbal reasoning passages followed by true/false/cannot-say questions; numerical questions on percentages and tables; SJT scenarios mapped to the Code of Ethics for Policing.",
+          "SEARCH: communication, public service, problem-solving, team-working and respect for diversity, all assessed against the Competency and Values Framework.",
+          "NFSAT: scenario-based situational awareness questions, basic arithmetic and the ability to interpret simple operational documents.",
+        ],
+      },
+      {
+        heading: "How to study and pass first time",
+        body: [
+          "For BARB, drill speed under a clock — the adaptive engine pushes harder questions if you're getting them right, so steady accuracy beats fast guessing.",
+          "For PIRT, treat verbal reasoning answers as 'true / false / cannot say from the passage alone' — your real-world knowledge is irrelevant.",
+          "For SEARCH, learn the Competency and Values Framework off by heart and structure every interview answer using STAR (Situation, Task, Action, Result).",
+          "For NFSAT, practise visualising spatial scenarios — 'who can see what from where' is a recurring question type.",
+        ],
+      },
+      {
+        heading: "Common mistakes to avoid",
+        body: [
+          "Treating BARB like a knowledge test. It isn't — there's no content to revise, only the format to get used to.",
+          "On PIRT verbal reasoning, answering 'true' when the passage doesn't actually say it. The answer is 'cannot say' more often than candidates expect.",
+          "On SEARCH role-plays, defaulting to confrontation. The College of Policing wants de-escalation, empathy and procedural fairness first; enforcement only when nothing else works.",
+        ],
+      },
+      {
+        heading: "Why active practice testing works",
+        body: [
+          "Uniformed-service tests are heavily formatted and lightly content-based. Candidates who've drilled the format consistently outscore brighter candidates who haven't.",
+          "The recruitment cycle is long — a failed assessment can mean six to twelve months before re-applying. Free practice is the cheapest insurance against that delay.",
+        ],
+      },
+    ],
+    faqs: [
+      { q: "What is a good BARB score?", a: "A score of 60+ opens most Army trades; 80+ unlocks the technical and intelligence roles. The maximum is around 90." },
+      { q: "Can I retake BARB if I fail?", a: "Yes, but typically only after a 28-day waiting period." },
+      { q: "What is the pass mark for Police PIRT?", a: "Forces set their own thresholds, but candidates scoring above the 60th percentile against the national benchmark are usually invited to SEARCH." },
+      { q: "What does the SEARCH assessment include?", a: "Interactive role-plays, a written exercise and a competency-based interview, all assessed against the Competency and Values Framework." },
+      { q: "Is the Firefighter NFSAT the same in every UK service?", a: "Most English fire and rescue services use NFSAT. Scotland and Wales use related but slightly different assessments." },
+      { q: "Are these uniformed-service mocks free?", a: "Yes. BARB, PIRT, SEARCH and NFSAT mocks on UK Test Hub are all free to use." },
+    ],
+  },
+
+  "maritime-aviation": {
+    title: "PPL, ATPL & RYA Practice Tests 2026 | Free Aviation & Maritime Theory",
+    description:
+      "Free practice for PPL Air Law, PPL Meteorology, ATPL basics and the RYA Day Skipper theory. Realistic UK / EASA aviation and RYA maritime questions with explanations.",
+    intro: [
+      "Whether you're chasing a Private Pilot Licence, building hours toward an Airline Transport Pilot Licence, or sitting your RYA Day Skipper before chartering a yacht in the Solent, you'll need to pass a series of theory exams set by the CAA, EASA or RYA. The papers are short but technical — a single misread weather chart or misapplied rule of the road can be the difference between a pass and another exam fee.",
+      "Our free aviation and maritime mocks mirror the official UK CAA / EASA syllabuses for PPL and ATPL theory and the standard RYA Day Skipper exam format. UK English, UK weather, UK airspace and UK COLREGS interpretations throughout.",
+    ],
+    sections: [
+      {
+        heading: "What the tests actually involve",
+        body: [
+          "PPL Air Law is a 16-question, 35-minute multiple-choice paper with a 75% pass mark. PPL Meteorology is a 20-question, 50-minute paper at the same pass mark. Both are computer-based and sat at an approved training organisation.",
+          "ATPL theory comprises 14 papers ranging from 25 to 80 questions each, all at a 75% pass mark, sat at a CAA-approved centre.",
+          "RYA Day Skipper Theory ends with a multi-part shore-based exam: chartwork, tidal calculations, COLREGS, buoyage, weather and passage planning, marked by the principal of the recognised RYA training centre.",
+        ],
+      },
+      {
+        heading: "What's covered",
+        body: [
+          "PPL Air Law: airspace classifications (A through G), VFR minima, the Rules of the Air Regulations 2015, ICAO Annex 2, licence privileges and limitations, and the duties of the pilot in command.",
+          "PPL Meteorology: METARs, TAFs, surface analysis charts, cloud types, fog formation, icing, thunderstorms and the standard atmosphere.",
+          "ATPL covers the same territory in much greater depth, plus advanced navigation, flight planning, mass and balance, performance and human factors.",
+          "RYA Day Skipper covers chartwork (course to steer, EP, fix, ground track), tidal heights and streams, COLREGS (rules 5 to 19 in detail), the IALA-A buoyage system used in UK waters, basic weather forecasting and passage planning.",
+        ],
+      },
+      {
+        heading: "How to study and pass first time",
+        body: [
+          "For PPL Air Law, memorise the cloud-base and visibility VFR minima for each airspace class — these are the single most-tested topic.",
+          "For PPL Meteorology, learn METAR and TAF abbreviations cold (BKN, OVC, CAVOK, BECMG, TEMPO, PROB30/40).",
+          "For RYA Day Skipper, drill chartwork plotting under a timer. Most candidates' theoretical knowledge is solid; their plotting is too slow.",
+          "Always work in true / magnetic / compass conversions in the same direction (TVMDC — True, Variation, Magnetic, Deviation, Compass) and add Easterly variation when going from True to Magnetic, subtract Westerly.",
+        ],
+      },
+      {
+        heading: "Common mistakes to avoid",
+        body: [
+          "On Air Law, confusing Class D and Class E airspace VFR minima. Class D requires clearance to enter; Class E does not for VFR.",
+          "On Meteorology, misreading a METAR temperature/dewpoint spread and missing fog risk. A spread of 2°C or less should set off alarm bells.",
+          "On RYA Day Skipper COLREGS, defaulting to 'starboard tack has right of way' for power-driven vessels. The rule is 'vessel on the other's starboard side gives way' — not the same thing.",
+        ],
+      },
+      {
+        heading: "Why active practice testing works",
+        body: [
+          "Aviation and maritime exams are heavily procedural. The questions reward exact recall of named rules, abbreviations and numerical thresholds — exactly the content that retrieval practice locks in faster than re-reading textbooks.",
+          "PPL re-sit fees are around £35 per paper, ATPL re-sits run to £80 each, and missing an RYA Day Skipper sitting can mean an extra week's tuition fee. Free practice protects all of those.",
+        ],
+      },
+    ],
+    faqs: [
+      { q: "What is the pass mark for UK PPL theory exams?", a: "75% on each of the nine PPL theory papers." },
+      { q: "How much does the PPL theory cost in 2026?", a: "Each paper costs around £35–£45, plus the cost of training (typically £200–£500 for ground school)." },
+      { q: "How long are PPL theory passes valid?", a: "Two years from the date of your first pass. You must complete the PPL skill test within that window." },
+      { q: "Do I need to take ATPL theory in one sitting?", a: "No, but all 14 papers must be completed within an 18-month window from your first sitting, with a maximum of six attempts in total." },
+      { q: "Is the RYA Day Skipper theory exam timed?", a: "Yes — the typical paper allows around three hours and is sat at the end of the shore-based course." },
+      { q: "Are these aviation and maritime mocks free?", a: "Yes. PPL, ATPL and RYA Day Skipper mocks on UK Test Hub are all free to use." },
+    ],
+  },
+
+  government: {
+    title: "Civil Service & Border Force Test Practice 2026 | CSJT, CS Reasoning",
+    description:
+      "Free practice for the Civil Service Judgement Test (CSJT), Civil Service Verbal and Numerical Reasoning, and the Border Force Recruitment Test. UK exam-style questions with explanations.",
+    intro: [
+      "Civil Service recruitment is run almost entirely through Civil Service Jobs (gov.uk) and a small set of standardised online tests — the Civil Service Judgement Test (CSJT), Verbal Reasoning, Numerical Reasoning and the Border Force Recruitment Test for Border Force entry. They sit before any interview and are typically pass / fail with no second chance in the same campaign.",
+      "Our free government recruitment mocks mirror the format used by the Cabinet Office Recruitment team and the Home Office's Border Force assessment, including the Success Profiles framework that underpins every Civil Service grade. UK English, gov.uk wording and current Success Profiles behaviours throughout.",
+    ],
+    sections: [
+      {
+        heading: "What the tests actually involve",
+        body: [
+          "CSJT is an untimed online situational judgement test of around 12 scenarios. For each scenario you're asked to choose the most and least effective response from four options. There's no 'correct' answer in the academic sense — your responses are scored against the Success Profiles behaviours expected at the grade.",
+          "Civil Service Verbal Reasoning is a 20-minute, 25-question online test asking true / false / cannot say judgements based strictly on a short passage.",
+          "Civil Service Numerical Reasoning is 25 minutes, around 18 questions, on data-table interpretation and basic percentages.",
+          "Border Force Recruitment Test is a multi-stage online and assessment-day process covering judgement scenarios, written communication and a structured interview.",
+        ],
+      },
+      {
+        heading: "What's covered",
+        body: [
+          "CSJT scenarios are drawn from typical Civil Service workplace situations — managing competing deadlines, handling a difficult stakeholder, raising a concern about a colleague, supporting an inclusive team.",
+          "Verbal Reasoning passages are short, gov.uk-style policy summaries followed by statements you must judge against the passage.",
+          "Numerical Reasoning uses tables of public-sector data (population, expenditure, performance metrics) with short percentage and ratio calculations.",
+          "Border Force assesses awareness of customs and immigration legislation, the Civil Service Code, and the Border Force Operating Mandate.",
+        ],
+      },
+      {
+        heading: "How to study and pass first time",
+        body: [
+          "For CSJT, read the Success Profiles behaviours for the grade you're applying to and anchor every 'most effective' answer in those behaviours. The 'least effective' is almost always the response that ignores process or excludes a colleague.",
+          "For Verbal Reasoning, answer strictly from the passage. If the passage doesn't say it, the answer is 'cannot say' — even if you happen to know it's true.",
+          "For Numerical Reasoning, drill mental percentage and ratio calculations against a 60-second clock.",
+          "For Border Force, read the Civil Service Code and the Border Force Operating Mandate cover to cover before the assessment.",
+        ],
+      },
+      {
+        heading: "Common mistakes to avoid",
+        body: [
+          "On CSJT, picking the answer that 'just gets it done' over the answer that follows process. The Civil Service rewards process adherence and inclusivity, not lone heroics.",
+          "On Verbal Reasoning, applying outside knowledge to override the passage. The test is reading comprehension, not general knowledge.",
+          "On Border Force, confusing the Civil Service Code (impartiality, integrity, honesty, objectivity) with the Nolan Principles. The Code is the Civil Service's; the Nolan Principles are the wider Seven Principles of Public Life.",
+        ],
+      },
+      {
+        heading: "Why active practice testing works",
+        body: [
+          "Government recruitment tests are pass / fail and the Civil Service Recruitment Process is high-volume — campaigns can attract thousands of applicants for a handful of posts. Mocks lift you out of the bottom percentile faster than any other study activity.",
+          "The CSJT and reasoning tests have an unfamiliar format for most applicants. A few free mocks the night before is the cheapest way to remove first-time-on-test anxiety.",
+        ],
+      },
+      {
+        heading: "Booking and what to expect",
+        body: [
+          "Every Civil Service campaign on Civil Service Jobs (gov.uk) sets out exactly which tests you'll need to take and in what order. Tests are sent by email link with deadlines typically five to ten working days from the application sift.",
+          "Tests are sat at home on your own computer. Bring a calculator (allowed for Numerical Reasoning unless the test instructions say otherwise) and ensure a quiet, uninterrupted environment for the duration.",
+        ],
+      },
+    ],
+    faqs: [
+      { q: "What is the pass mark for the CSJT?", a: "There's no headline pass mark — your answers are scored against the Success Profiles behaviours for the grade and ranked relative to other applicants." },
+      { q: "How long do I have to complete Civil Service online tests?", a: "Typically five to ten working days from the link being sent, with each individual test taking 20–25 minutes." },
+      { q: "Can I retake a Civil Service online test if I fail?", a: "Not within the same campaign. You can re-apply when the next vacancy at the relevant grade is advertised." },
+      { q: "What are Success Profiles?", a: "The Civil Service recruitment framework, replacing the older competency framework. It assesses behaviours, strengths, ability, experience and technical skills." },
+      { q: "Is Border Force part of the Civil Service?", a: "Yes — Border Force is part of the Home Office and is a Civil Service department." },
+      { q: "Are these government recruitment mocks free?", a: "Yes. CSJT, CS Verbal, CS Numerical and Border Force mocks on UK Test Hub are all free to use." },
+    ],
+  },
 };
