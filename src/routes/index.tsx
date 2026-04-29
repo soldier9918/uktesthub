@@ -264,7 +264,7 @@ function HomePage() {
                   />
                   <div className="flex items-start gap-3">
                     <span
-                      className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-lg ${
+                      className={`flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-lg ${
                         isCoral ? "bg-coral/10" : "bg-royal/10"
                       }`}
                     >
