@@ -1,0 +1,101 @@
+{
+  "topic": "ph-dbs-licensing",
+  "tests": [
+    {
+      "slug": "ph-dbs-licensing-mock-1",
+      "topic": "ph-dbs-licensing",
+      "mockNumber": 1,
+      "title": "DBS & Licensing Rules \u2014 Mock Test 1",
+      "questions": [
+        {
+          "question": "All TfL PHV driver applicants must hold a current:",
+          "options": [
+            "Basic DBS",
+            "Standard DBS",
+            "Enhanced DBS check",
+            "No DBS"
+          ],
+          "correctAnswer": 2,
+          "explanation": "An Enhanced DBS check is required for taxi and PHV drivers."
+        },
+        {
+          "question": "DBS stands for:",
+          "options": [
+            "Driver Booking Service",
+            "Disclosure and Barring Service",
+            "Department for Background Standards",
+            "Driver and Vehicle Service"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Disclosure and Barring Service."
+        },
+        {
+          "question": "If a serious offence appears during your licence period, TfL may:",
+          "options": [
+            "Ignore it",
+            "Suspend or revoke your licence",
+            "Increase your fee",
+            "Send a warning only"
+          ],
+          "correctAnswer": 1,
+          "explanation": "TfL acts to protect public safety, including suspension or revocation."
+        },
+        {
+          "question": "Subscribing to the DBS Update Service helps drivers by:",
+          "options": [
+            "Avoiding all checks",
+            "Keeping the certificate continuously up to date",
+            "Replacing the licence",
+            "Skipping medicals"
+          ],
+          "correctAnswer": 1,
+          "explanation": "The Update Service allows certificates to be re-checked online."
+        },
+        {
+          "question": "PHV drivers must also pass a:",
+          "options": [
+            "Medical assessment to DVLA Group 2 standard",
+            "Eye colour check",
+            "Height check",
+            "Hair test"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Drivers must meet the Group 2 medical standard."
+        },
+        {
+          "question": "If your enhanced DBS lapses, you must:",
+          "options": [
+            "Continue working",
+            "Stop working until renewed and notify TfL",
+            "Drive shorter trips",
+            "Switch to taxi work"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Driving without a valid licence and checks is unlawful."
+        },
+        {
+          "question": "Convictions that may bar a licence include:",
+          "options": [
+            "Sexual offences and serious violence",
+            "Speeding only",
+            "Parking tickets",
+            "All convictions equally"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Serious offences are weighed under TfL's policy and statutory guidance."
+        },
+        {
+          "question": "Spent convictions in licensing decisions are:",
+          "options": [
+            "Always ignored",
+            "Disclosable on enhanced checks where relevant",
+            "Public on social media",
+            "Erased forever"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Some spent convictions can still be disclosed for taxi/PHV roles."
+        }
+      ]
+    }
+  ]
+}

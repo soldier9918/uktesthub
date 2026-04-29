@@ -1,0 +1,101 @@
+{
+  "topic": "ph-london-regulations",
+  "tests": [
+    {
+      "slug": "ph-london-regulations-mock-1",
+      "topic": "ph-london-regulations",
+      "mockNumber": 1,
+      "title": "London Private Hire Regulations \u2014 Mock Test 1",
+      "questions": [
+        {
+          "question": "London PHVs may only accept bookings through:",
+          "options": [
+            "Any street hail",
+            "A TfL-licensed private hire operator",
+            "Any local app",
+            "Word of mouth at a rank"
+          ],
+          "correctAnswer": 1,
+          "explanation": "All bookings must go through a licensed operator."
+        },
+        {
+          "question": "Pulling up to take a street hail in a PHV is:",
+          "options": [
+            "Allowed",
+            "Plying for hire \u2014 illegal",
+            "Allowed at night",
+            "Allowed off-duty"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Only licensed taxis may ply for hire."
+        },
+        {
+          "question": "Vehicles licensed as PHVs in London must display:",
+          "options": [
+            "TfL roundels and discs",
+            "Just a sticker",
+            "Nothing",
+            "A taxi sign"
+          ],
+          "correctAnswer": 0,
+          "explanation": "PHVs must show TfL-issued discs as required."
+        },
+        {
+          "question": "Operators are responsible for:",
+          "options": [
+            "Driver tax returns",
+            "Recording bookings and assigning licensed drivers",
+            "Council tax",
+            "DBS appeals"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Operators must keep records of bookings, drivers and vehicles."
+        },
+        {
+          "question": "If you are 'app-on' but parked legally and waiting, you are:",
+          "options": [
+            "Plying for hire",
+            "Available for pre-booked work via the operator",
+            "Off-duty",
+            "Operating illegally"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Pre-bookings via the licensed operator are lawful."
+        },
+        {
+          "question": "Damage or accidents involving the vehicle must be reported to:",
+          "options": [
+            "No-one",
+            "Your operator and TfL where required",
+            "Only friends",
+            "HMRC"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Notification rules apply to keep the licence valid."
+        },
+        {
+          "question": "You may not pick up a passenger who has not been:",
+          "options": [
+            "Seen at the rank",
+            "Pre-booked through the licensed operator",
+            "Waved at the kerb",
+            "Met at a station"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Pre-booking via the operator is mandatory."
+        },
+        {
+          "question": "Operating in London without a licence carries penalties of:",
+          "options": [
+            "A warning",
+            "A fine and possible criminal record",
+            "A free re-test",
+            "No consequence"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Unlicensed operation is a criminal offence."
+        }
+      ]
+    }
+  ]
+}

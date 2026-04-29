@@ -1,0 +1,101 @@
+{
+  "topic": "ph-hmrc-tax-check",
+  "tests": [
+    {
+      "slug": "ph-hmrc-tax-check-mock-1",
+      "topic": "ph-hmrc-tax-check",
+      "mockNumber": 1,
+      "title": "HMRC Tax Check Awareness \u2014 Mock Test 1",
+      "questions": [
+        {
+          "question": "Since April 2022, before renewing your TfL PHV licence you must complete a:",
+          "options": [
+            "DVLA medical",
+            "HMRC tax check",
+            "Council tax form",
+            "DBS update only"
+          ],
+          "correctAnswer": 1,
+          "explanation": "An HMRC tax check is part of the licence renewal process."
+        },
+        {
+          "question": "The HMRC tax check confirms you are:",
+          "options": [
+            "Earning over \u00a350,000",
+            "Registered for tax on your licensed activity",
+            "Married",
+            "A homeowner"
+          ],
+          "correctAnswer": 1,
+          "explanation": "HMRC verifies that you are appropriately registered for tax."
+        },
+        {
+          "question": "After completing the tax check you receive a:",
+          "options": [
+            "Bank statement",
+            "9-character tax check code",
+            "Passport stamp",
+            "Refund"
+          ],
+          "correctAnswer": 1,
+          "explanation": "The 9-character code is given to TfL with your renewal."
+        },
+        {
+          "question": "How long is a tax check code valid for?",
+          "options": [
+            "7 days",
+            "30 days",
+            "120 days",
+            "2 years"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Tax check codes are valid for 120 days."
+        },
+        {
+          "question": "If you fail to complete the tax check, TfL may:",
+          "options": [
+            "Renew anyway",
+            "Refuse to renew your licence",
+            "Lower your fee",
+            "Issue a warning only"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Without the code, TfL cannot legally renew."
+        },
+        {
+          "question": "PHV drivers' earnings are normally taxed as:",
+          "options": [
+            "Employment income only",
+            "Self-employment income unless an employee",
+            "Dividends",
+            "Capital gains"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Most PHV drivers are self-employed and submit Self Assessment."
+        },
+        {
+          "question": "Records of trips and earnings should be kept for at least:",
+          "options": [
+            "6 months",
+            "2 years",
+            "5 years (HMRC self-employed rule)",
+            "20 years"
+          ],
+          "correctAnswer": 2,
+          "explanation": "HMRC requires self-employed records to be retained for at least 5 years after the submission deadline."
+        },
+        {
+          "question": "You can complete the HMRC tax check via:",
+          "options": [
+            "A paper form to TfL",
+            "Your online HMRC account or by phone",
+            "WhatsApp",
+            "Email to HMRC"
+          ],
+          "correctAnswer": 1,
+          "explanation": "It is done through your HMRC online account or via the helpline."
+        }
+      ]
+    }
+  ]
+}
