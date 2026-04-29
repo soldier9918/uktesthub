@@ -7,6 +7,9 @@ import heroProfessional from "@/assets/cat-hero-professional.jpg";
 import heroNhs from "@/assets/cat-hero-nhs.jpg";
 import heroFun from "@/assets/cat-hero-fun.jpg";
 import heroTaxi from "@/assets/cat-hero-taxi-private-hire.jpg";
+import heroSecurity from "@/assets/cat-hero-security.jpg";
+import heroHospitality from "@/assets/cat-hero-hospitality.jpg";
+import heroConstruction from "@/assets/cat-hero-construction.jpg";
 
 export type Category = {
   slug: string;
@@ -172,6 +175,54 @@ export const categories: Category[] = [
       { slug: "how-british", title: "How British Are You?" },
       { slug: "uk-slang", title: "UK Slang Quiz" },
       { slug: "daily", title: "General Knowledge Daily" },
+    ],
+  },
+  {
+    slug: "security",
+    title: "Security & Door Supervision",
+    short: "SIA Door Supervisor, CCTV, Close Protection & Top-Up",
+    description:
+      "Practice for the SIA licence-linked qualifications: Door Supervisor, CCTV Operator, Close Protection and the Door Supervisor Top-Up. Real exam-style questions with explanations.",
+    icon: "Shield",
+    accent: "navy",
+    heroImage: heroSecurity,
+    topics: [
+      { slug: "sia-door-supervisor", title: "SIA Door Supervisor Test" },
+      { slug: "sia-cctv", title: "SIA CCTV Operator Test" },
+      { slug: "sia-close-protection", title: "SIA Close Protection Test" },
+      { slug: "sia-top-up", title: "SIA Door Supervisor Top-Up Test" },
+    ],
+  },
+  {
+    slug: "hospitality",
+    title: "Hospitality & Catering",
+    short: "Personal Licence (APLH), Allergens, HACCP & Service",
+    description:
+      "Free practice for hospitality qualifications — Award for Personal Licence Holders (APLH), Allergen Awareness, HACCP Level 2 and customer service essentials.",
+    icon: "ChefHat",
+    accent: "gold",
+    heroImage: heroHospitality,
+    topics: [
+      { slug: "aplh-personal-licence", title: "Personal Licence (APLH) Test" },
+      { slug: "allergen-awareness", title: "Allergen Awareness Test" },
+      { slug: "haccp-level-2", title: "HACCP Level 2 Test" },
+      { slug: "customer-service", title: "Customer Service Practice" },
+    ],
+  },
+  {
+    slug: "construction",
+    title: "Construction & Trade",
+    short: "CSCS Operative & Gold, CITB HSE, IPAF / PASMA",
+    description:
+      "Prepare for life on a UK building site — CSCS Operative and Supervisor (Gold), the CITB Health, Safety and Environment Test, plus IPAF and PASMA working-at-height practice.",
+    icon: "HardHat",
+    accent: "coral",
+    heroImage: heroConstruction,
+    topics: [
+      { slug: "cscs-operative", title: "CSCS Operative Test" },
+      { slug: "cscs-gold", title: "CSCS Gold (Supervisor) Test" },
+      { slug: "citb-hse", title: "CITB Health, Safety & Environment Test" },
+      { slug: "ipaf-pasma", title: "IPAF / PASMA Working at Height Test" },
     ],
   },
 ];
