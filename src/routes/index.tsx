@@ -236,29 +236,31 @@ function HomePage() {
                   key={c.slug}
                   to="/category/$slug"
                   params={{ slug: c.slug }}
-                  className="group flex flex-col items-center rounded-2xl border border-border bg-card px-4 py-6 text-center shadow-soft transition-all duration-300 hover:-translate-y-1 hover:border-coral/40 hover:shadow-elevated"
+                  className="group flex h-full flex-col items-center rounded-2xl border border-border bg-card px-4 py-6 text-center shadow-soft transition-all duration-300 hover:-translate-y-1 hover:border-coral/40 hover:shadow-elevated"
                 >
                   <CategoryIcon
                     name={c.icon}
                     alt={c.title}
                     className="mb-4 h-16 w-16 object-contain"
                   />
-                  <h3 className="font-display text-sm font-bold leading-tight text-foreground">
-                    {c.title}
-                  </h3>
-                  <p className="mt-2 line-clamp-3 text-[11px] leading-snug text-muted-foreground">
-                    {c.short}
-                  </p>
-                  <ul className="mt-4 flex flex-wrap justify-center gap-1.5">
-                    {chips.map((label) => (
-                      <li
-                        key={label}
-                        className="rounded-full border border-border bg-muted/60 px-2 py-0.5 text-[10px] font-semibold text-foreground/80"
-                      >
-                        {label}
-                      </li>
-                    ))}
-                  </ul>
+                  <div className="flex w-full flex-1 flex-col items-center">
+                    <h3 className="font-display text-sm font-bold leading-tight text-foreground">
+                      {c.title}
+                    </h3>
+                    <p className="mt-2 line-clamp-3 min-h-[3.4em] text-[11px] leading-snug text-muted-foreground">
+                      {c.short}
+                    </p>
+                    <ul className="mt-4 flex flex-wrap justify-center gap-1.5">
+                      {chips.map((label) => (
+                        <li
+                          key={label}
+                          className="rounded-full border border-border bg-muted/60 px-2 py-0.5 text-[10px] font-semibold text-foreground/80"
+                        >
+                          {label}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                   <span
                     className={`mt-5 inline-flex items-center justify-center gap-1 rounded-md border px-4 py-1.5 text-[11px] font-bold transition-colors ${
                       isCoral
@@ -432,42 +434,221 @@ function HomePage() {
 
               <div className="mt-8 space-y-5 text-base leading-relaxed text-muted-foreground">
                 <p>
-                  From the{" "}
+                  We bring together every major test a person living, working
+                  or studying in the UK is likely to sit, and rebuild each one
+                  as a series of free, browser-based mock papers that mirror
+                  the real exam format. Whether you're seventeen and revising
+                  for the{" "}
                   <Link
                     to="/category/$slug"
                     params={{ slug: "driving" }}
                     className="font-medium text-coral hover:underline"
                   >
                     DVSA Driving Theory Test
+                  </Link>
+                  , a parent helping a child through the 11+, or an adult
+                  applying for British citizenship, you can practise here for
+                  free, on any device, without ever creating an account.
+                </p>
+              </div>
+
+              <h3 className="mt-10 font-display text-lg font-bold text-foreground md:text-xl">
+                What we cover
+              </h3>
+              <div className="mt-4 space-y-5 text-base leading-relaxed text-muted-foreground">
+                <p>
+                  Our{" "}
+                  <Link
+                    to="/category/$slug"
+                    params={{ slug: "driving" }}
+                    className="font-medium text-coral hover:underline"
+                  >
+                    Driving section
                   </Link>{" "}
-                  and the{" "}
+                  covers the DVSA car theory test, motorcycle theory, hazard
+                  perception clips and the practical show-me / tell-me
+                  questions, plus dedicated banks for LGV and PCV candidates.
+                  Every question is mapped to the official DVSA learning
+                  outcomes and uses the same multiple-choice and case-study
+                  formats you'll see at the test centre.
+                </p>
+                <p>
+                  The{" "}
                   <Link
                     to="/category/$slug"
                     params={{ slug: "citizenship" }}
                     className="font-medium text-coral hover:underline"
                   >
-                    Life in the UK Test
+                    Life in the UK
                   </Link>{" "}
-                  to{" "}
+                  bank takes you through the full handbook — British history,
+                  values and principles, government, law and everyday life — in
+                  the same 24-question, 45-minute format used by the Home
+                  Office. It's the test most people sit to settle (ILR) or
+                  naturalise as a British citizen, and we keep it aligned with
+                  the current edition of the official handbook.
+                </p>
+                <p>
+                  For{" "}
                   <Link
                     to="/category/$slug"
                     params={{ slug: "english" }}
                     className="font-medium text-coral hover:underline"
                   >
-                    IELTS, ESOL and English language exams
+                    IELTS, ESOL and other English language exams
                   </Link>
-                  , our mocks follow the real exam format and difficulty so you
-                  walk into the test centre knowing exactly what to expect.
-                </p>
-                <p>
-                  Every test is mobile-friendly and refreshed regularly to
-                  reflect the latest syllabus updates. Questions are written
-                  and reviewed by our team, with instant marking and clear
-                  explanations after every answer.
+                  , we have practice for reading, listening, grammar and
+                  vocabulary across A1 through C1 levels, suitable for
+                  international students, healthcare professionals and visa
+                  applicants. Our{" "}
+                  <Link
+                    to="/category/$slug"
+                    params={{ slug: "education" }}
+                    className="font-medium text-coral hover:underline"
+                  >
+                    Education
+                  </Link>{" "}
+                  section runs from 11+ verbal and non-verbal reasoning all
+                  the way through to GCSE Maths, English and the sciences,
+                  while our{" "}
+                  <Link
+                    to="/category/$slug"
+                    params={{ slug: "career" }}
+                    className="font-medium text-coral hover:underline"
+                  >
+                    Career
+                  </Link>{" "}
+                  and{" "}
+                  <Link
+                    to="/category/$slug"
+                    params={{ slug: "professional" }}
+                    className="font-medium text-coral hover:underline"
+                  >
+                    Professional
+                  </Link>{" "}
+                  banks cover everything from the CSCS Health, Safety and
+                  Environment test and the SIA door-supervisor licence to
+                  food hygiene, first aid and trade-specific assessments.
+                  We also publish{" "}
+                  <Link
+                    to="/category/$slug"
+                    params={{ slug: "nhs" }}
+                    className="font-medium text-coral hover:underline"
+                  >
+                    NHS numeracy and literacy
+                  </Link>{" "}
+                  papers for healthcare candidates, and a{" "}
+                  <Link
+                    to="/category/$slug"
+                    params={{ slug: "fun" }}
+                    className="font-medium text-coral hover:underline"
+                  >
+                    Fun
+                  </Link>{" "}
+                  category of British general-knowledge quizzes for anyone
+                  who just enjoys a good test.
                 </p>
               </div>
 
-              <ul className="mt-8 grid gap-3 sm:grid-cols-2">
+              <h3 className="mt-10 font-display text-lg font-bold text-foreground md:text-xl">
+                How our mock tests work
+              </h3>
+              <div className="mt-4 space-y-5 text-base leading-relaxed text-muted-foreground">
+                <p>
+                  Every mock on the site is built to match the real exam as
+                  closely as possible — the same number of questions, the same
+                  style of wording, the same difficulty curve and, where
+                  relevant, the same time limit. You can sit a full paper end
+                  to end, or dip into shorter topic-specific sets when you
+                  want to drill a single weak area in fifteen or twenty
+                  minutes.
+                </p>
+                <p>
+                  Tests are marked instantly the moment you finish. You see
+                  your score, your pass / fail status against the official
+                  pass mark, and a question-by-question breakdown with a
+                  written explanation for every answer — including the wrong
+                  ones, so you understand why a distractor is wrong as well
+                  as why the correct option is right. Your best score on
+                  each mock is saved locally on your device, so you can
+                  watch yourself improve without ever needing to register.
+                </p>
+                <p>
+                  Everything works on a phone, a tablet, a school Chromebook
+                  or a desktop. There's no app to install, no email to
+                  hand over, no trial that quietly turns into a subscription.
+                  You open the page, you take the test, you learn from it,
+                  and you come back when you're ready for the next one.
+                </p>
+              </div>
+
+              <h3 className="mt-10 font-display text-lg font-bold text-foreground md:text-xl">
+                Built for British learners
+              </h3>
+              <div className="mt-4 space-y-5 text-base leading-relaxed text-muted-foreground">
+                <p>
+                  UK Test Hub is written in British English, uses British
+                  spellings and references British institutions — the DVSA,
+                  the Home Office, Ofqual, the NHS, the awarding bodies
+                  behind GCSE and A-level. Our questions use UK road signs,
+                  UK currency, UK measurements and UK examples, because
+                  practising on American or generic content is one of the
+                  fastest ways to pick up bad habits before a UK exam.
+                </p>
+                <p>
+                  Content is reviewed against the most recent published
+                  specifications from each examining body, and we refresh
+                  papers whenever a syllabus, handbook or code of practice
+                  is updated. When the Highway Code changes, our hazard
+                  perception and theory questions change with it. When the
+                  Life in the UK handbook gets a new edition, we re-check
+                  every question against the new chapters.
+                </p>
+                <p>
+                  Accessibility matters too. The site is keyboard-navigable,
+                  has strong colour contrast, scales properly on small
+                  screens, and avoids the cluttered pop-ups and forced
+                  sign-ups that make so many revision sites painful to use.
+                  And it's free — genuinely free, forever, supported by
+                  unobtrusive advertising rather than locked-down premium
+                  tiers.
+                </p>
+              </div>
+
+              <h3 className="mt-10 font-display text-lg font-bold text-foreground md:text-xl">
+                Who uses UK Test Hub
+              </h3>
+              <div className="mt-4 space-y-5 text-base leading-relaxed text-muted-foreground">
+                <p>
+                  Learner drivers make up the largest group — teenagers
+                  preparing for their first theory test, adults returning
+                  to driving after years off the road, and trainee LGV and
+                  PCV drivers building toward a professional licence.
+                  Alongside them, thousands of people each year use our
+                  Life in the UK papers as part of their journey to
+                  Indefinite Leave to Remain or British citizenship.
+                </p>
+                <p>
+                  We're used by international students preparing for IELTS
+                  and Cambridge English exams, by NHS candidates sitting
+                  numeracy and literacy assessments before training, and
+                  by GCSE and 11+ students who want extra timed practice
+                  beyond what their school provides. Construction workers
+                  use the CSCS bank before booking their card test, security
+                  staff revise for the SIA, and care workers brush up on
+                  safeguarding and food hygiene.
+                </p>
+                <p>
+                  Teachers, tutors and parents use UK Test Hub as a free
+                  homework resource, setting topic mocks for students and
+                  reviewing the explanations together. And quite a few
+                  people simply enjoy testing themselves on British history,
+                  geography and trivia — which is exactly what our Fun
+                  category is there for.
+                </p>
+              </div>
+
+              <ul className="mt-10 grid gap-3 sm:grid-cols-2">
                 {[
                   { label: "GCSE & 11+", slug: "education" as const },
                   { label: "CSCS & SIA cards", slug: "career" as const },
@@ -507,6 +688,24 @@ function HomePage() {
                 Mock tests expose gaps in your knowledge before they cost you
                 marks, build familiarity with the question style, and reduce
                 exam anxiety through repeated low-stakes exposure.
+              </p>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                <strong className="text-foreground">Spaced repetition</strong>{" "}
+                — returning to the same weak topics across several short
+                sessions — beats one long cram the night before. Twenty
+                focused minutes a day for two weeks will almost always
+                outperform a single five-hour Sunday session, because the
+                act of forgetting and re-learning is what locks the answer
+                into long-term memory.
+              </p>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                Sitting timed mocks under realistic conditions also matters.
+                Most people who fail a UK exam don't fail because they
+                didn't know the material — they fail because they ran out
+                of time, misread a question under pressure, or panicked at
+                the first hard item. Practising the full paper end to end,
+                with the clock running, makes test day feel familiar
+                instead of frightening.
               </p>
               <Link
                 to="/blog"

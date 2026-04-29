@@ -1,64 +1,54 @@
-## Goal
+## 1. Align "Explore" buttons across Popular Categories tiles
 
-Two things on every category page (e.g. `/category/driving`, `/category/citizenship`, `/category/professional`, `/category/nhs`, `/category/english`, `/category/education`, `/category/career`, `/category/fun`):
+**Problem:** Tiles have varying content lengths (title wraps, `short` description wraps differently, chip lists differ in row count), so the `Explore` button sits at a different vertical position on each card.
 
-1. **Expand the long-form SEO content to ~1200 words per category** (currently 600–900). The "About the …" section is too thin.
-2. **Improve visual presentation** of those paragraphs — clearer headings, real spacing between sections, better hierarchy, and pull-out elements so it doesn't read as one slab of text.
+**Fix in `src/routes/index.tsx` (lines 234–272):**
+- Make the tile a flex column with `h-full` (already on parent grid, just need each `Link` to stretch).
+- Add `flex flex-col h-full` to the tile `Link` (already has `flex flex-col` — add `h-full`).
+- Wrap title + description + chips in a content block with `flex-1` so the spacer pushes the Explore button down.
+- Add `mt-auto` to the `Explore` span so it always anchors to the bottom of the card.
+- Lock the description to a consistent height with `min-h-[3.4em]` (covers up to 3 lines) so short descriptions don't make some tiles drastically shorter.
 
-## Scope
+Result: all "Explore" buttons render at the same baseline regardless of how much text or how many chips appear above them. No visual restyle, just alignment.
 
-Edit only:
-- `src/data/category-seo.ts` — rewrite/expand the `intro` and `sections` for all 8 categories to land at **~1200 words each** (±50). FAQs are already strong; I'll leave them alone.
-- `src/routes/category.$slug.tsx` — improve the `<article>` block that renders `seo.intro` and `seo.sections` so the typography reads as a proper editorial article, not a wall of text.
+## 2. Expand "What is UK Test Hub?" to ~1200 words
 
-No other files, no new routes, no new dependencies.
+**Current:** ~150 words in the left column + ~120 words in the right "Why Practice Tests Work" aside (lines 417–520). Total ~270 words.
 
-## Content expansion (per category, target ~1200 words)
+**Target:** ~1200 words for the whole section, kept in the same two-column layout so we don't break visual balance.
 
-I'll keep the existing voice and facts and add depth, not filler. For each of the 8 categories I'll grow `intro` to 2 short paragraphs (~180 words) and expand `sections` from 3 to **5 sections**, each with 2–3 paragraphs:
+**Approach in `src/routes/index.tsx` (lines 417–520):**
 
-1. **What the test actually involves** — exam structure, format, timing, marking
-2. **What's covered (syllabus / topics)** — full breakdown
-3. **How to study and pass first time** — actionable tips, study plan
-4. **Common mistakes and pitfalls** — what trips most candidates up
-5. **Why active practice testing works** — the "method" section, evidence-based
+Keep the existing structure (eyebrow + H2 + lead paragraph, body paragraphs with inline category links, 4-link grid, right-hand aside) and expand the body so it reads as a proper editorial "About" section, not filler.
 
-Word budget per category, roughly:
+**Left column (~900 words)** — replace the current 2-paragraph body with a richer flow, broken into clearly spaced paragraphs and a couple of small sub-headings so 900 words doesn't read as a wall of text:
+
+- **Lead** (kept, lightly tightened): one-sentence positioning of UK Test Hub.
+- **What we cover** (~250 words): expand the existing inline-link paragraph to walk through every major category — Driving Theory & Hazard Perception, Life in the UK, IELTS / ESOL / English language, GCSE & 11+, CSCS / SIA / professional licensing, NHS numeracy & literacy, plus the "fun" general knowledge tests. Each category gets one or two sentences explaining what it's for and who takes it. Keep the existing inline `<Link to="/category/$slug">` links and add the same pattern for the other categories.
+- **Sub-heading: "How our mock tests work"** (~220 words): exam-format fidelity, question-count parity with the real exam, instant marking, per-question explanations, best-score tracking via localStorage, mobile-first design, no account required, no paywall.
+- **Sub-heading: "Built for British learners"** (~220 words): UK English throughout, content reviewed against current DVSA/Home Office/Ofqual/awarding-body specifications, regularly refreshed when syllabuses change, accessible design, free forever.
+- **Sub-heading: "Who uses UK Test Hub"** (~210 words): learner drivers, ILR/citizenship applicants, international students preparing for English certification, GCSE and 11+ students, jobseekers needing CSCS/SIA cards, NHS candidates, and casual quizzers — one short paragraph per audience.
+- Keep the existing 4-link "GCSE & 11+ / CSCS & SIA / NHS / Professional licensing" grid below the prose (already there, no change).
+
+**Right aside (~300 words)** — expand the current "Why Practice Tests Work" card from ~120 to ~300 words, still inside the same `<aside>` so the layout stays:
+- Keep the eyebrow, H3, and existing two paragraphs about retrieval practice.
+- Add two more short paragraphs: one on **spaced repetition** (drilling weak topics across multiple short sessions beats one long cram), and one on **exam-condition simulation** (timed mocks reduce test-day anxiety and surface pacing issues). Keep the existing "Read revision tips on the blog" CTA at the bottom.
+
+**Word target check:**
 ```text
-Intro            ~180 words
-5 sections × 2-3 paras = ~1000 words
-Total            ~1200 words ✓
+Lead                       ~40
+What we cover             ~250
+How our mock tests work   ~220
+Built for British learners ~220
+Who uses UK Test Hub      ~210
+Right aside               ~300
+Total                    ~1240 ✓
 ```
 
-All UK English. All facts already in the file are preserved; I only add depth (e.g. for Driving I'll expand on Highway Code chapters, hazard perception scoring mechanics, and re-test rules; for Life in the UK I'll add more on the handbook chapters, exempt categories, and what to do if you fail).
-
-## Visual presentation changes (`src/routes/category.$slug.tsx`)
-
-Current rendering is one `<article class="prose">` block with `<h2>`, `<h3>`, `<p>` flowing top to bottom. Problems: section breaks aren't strong enough, intro doesn't stand apart, and at 1200 words it'll feel heavy.
-
-Changes inside the existing SEO `<section>`:
-
-- **Lead intro block**: render `seo.intro` as a styled lead paragraph — larger font (`text-lg md:text-xl`), looser line height, muted-foreground colour, sitting under an "About this exam" eyebrow chip (matches the home-page treatment we used previously).
-- **Sectioned cards**: render each `seo.sections` entry as its own block with:
-  - A small numbered badge (01, 02, …)
-  - The heading as `font-display text-xl md:text-2xl` with extra top margin (`mt-12`)
-  - A thin coral underline accent (matches existing brand)
-  - Body paragraphs at `text-base md:text-[17px] leading-relaxed` with `mt-4` between paragraphs (so the "nice paragraphs and spacing" the user asked for is real, not just `prose` defaults).
-- **Reading metadata**: a tiny "8 min read · Updated April 2026" line under the H2 so the section feels like an article, not boilerplate.
-- **Keep** the existing "Ready to start?" CTA paragraph and the FAQ block underneath — both already work.
-
-Layout stays the same `lg:grid-cols-[1fr_280px]` (article + skyscraper ad), so nothing reflows on the page.
-
-### Technical notes
-
-- I'll drop the `prose` class on this block in favour of explicit Tailwind utilities, because `prose` caps line length and makes the numbered-section visual hard to control. The blog post page (`/blog/$slug`) keeps `prose` — only the category page changes.
-- No new imports beyond what's already in the file.
-- The `seo` shape (`intro: string[]`, `sections: { heading, body: string[] }[]`) doesn't change, so types and the FAQ JSON-LD continue to work.
+**Visual treatment:** keep `text-base leading-relaxed text-muted-foreground` for body paragraphs, `mt-8` between blocks, and add small `font-display text-lg font-bold text-foreground` sub-headings (matching the existing aside H3 style) before each new sub-section so 900 words on the left reads as scannable, not slab-text. No new components, no new imports.
 
 ## Out of scope
 
-- FAQ copy and schema (already good)
-- Topic pages, blog pages, home page
-- New images or icons (using existing brand tokens only)
-
-After approval I'll do the rewrite + the route refactor in one pass.
+- Category SEO pages (separate plan in `.lovable/plan.md`)
+- Hero, Featured Mock Tests, How to Pass, Blog sections
+- Any restyle of the tiles beyond the alignment fix
