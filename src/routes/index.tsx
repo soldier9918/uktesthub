@@ -332,7 +332,7 @@ function HomePage() {
                         </span>
                       </div>
                       <span
-                        className={`mt-4 inline-flex w-full items-center justify-center rounded-lg px-3 py-2 text-xs font-bold uppercase tracking-wider transition-transform group-hover:-translate-y-0.5 ${btnClass[f.btn]}`}
+                        className={`mt-auto inline-flex w-full items-center justify-center rounded-lg px-3 py-2 text-xs font-bold uppercase tracking-wider transition-transform group-hover:-translate-y-0.5 ${btnClass[f.btn]}`}
                       >
                         Start Test
                       </span>
