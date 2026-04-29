@@ -98,7 +98,7 @@ export const topicSeo: Record<string, TopicSeo> = {
     tagline: "Everything you need to pass the DVSA Driving Theory Test first time.",
     intro: [
       "The DVSA Driving Theory Test is the gateway to your provisional pass certificate and, ultimately, your full UK driving licence. It's split into 50 multiple-choice questions and 14 hazard perception clips, and you must pass both parts at the same sitting. Roughly half of all candidates fail on their first attempt, almost always because they under-prepared on hazard perception or skim-read the multiple-choice paper.",
-      "This guide walks you through exactly what the DVSA tests, how to study efficiently in three to four weeks, and the small habits that separate first-time passes from repeat bookings. When you're ready, take a free mock test below — every question has a written explanation linked to the Highway Code.",
+      "This guide walks you through exactly what the DVSA tests, how to study efficiently in three to four weeks, and the small habits that separate first-time passes from repeat bookings. You can also browse [our full Road Signs guide](/guide/road-signs) to see every sign that appears in the theory test. When you're ready, take a free mock test below — every question has a written explanation linked to the Highway Code.",
     ],
     sections: [
       {
