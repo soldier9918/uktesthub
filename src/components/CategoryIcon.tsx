@@ -9,6 +9,13 @@ import iconFun from "@/assets/icon-fun.png";
 import iconSecurity from "@/assets/icon-security.png";
 import iconHospitality from "@/assets/icon-hospitality.png";
 import iconConstruction from "@/assets/icon-construction.png";
+import iconFinance from "@/assets/icon-finance.png";
+import iconItTech from "@/assets/icon-it-tech.png";
+import iconHealthcareEntry from "@/assets/icon-healthcare-entry.png";
+import iconTeaching from "@/assets/icon-teaching.png";
+import iconLegal from "@/assets/icon-legal.png";
+import iconMilitary from "@/assets/icon-military.png";
+import iconMaritimeAviation from "@/assets/icon-maritime-aviation.png";
 
 // `name` is the lucide icon key kept in src/data/categories.ts so we don't have
 // to migrate the data layer — we just map it to a premium illustrated PNG.
@@ -24,6 +31,13 @@ const iconMap: Record<string, string> = {
   Shield: iconSecurity,
   ChefHat: iconHospitality,
   HardHat: iconConstruction,
+  Calculator: iconFinance,
+  Cpu: iconItTech,
+  Stethoscope: iconHealthcareEntry,
+  BookOpen: iconTeaching,
+  Scale: iconLegal,
+  Siren: iconMilitary,
+  Plane: iconMaritimeAviation,
 };
 
 export function CategoryIcon({
