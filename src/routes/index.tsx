@@ -20,8 +20,6 @@ import { UnionJack } from "@/components/UnionJack";
 import { categories } from "@/data/categories";
 import { getDailyQuiz, getQuiz } from "@/data/quizzes";
 import { blogPosts } from "@/data/blog";
-import { TestBadge, type BadgeKey } from "@/components/TestBadge";
-import { badgeForSlug } from "@/data/test-logos";
 
 const latestPosts = [...blogPosts]
   .sort((a, b) => (a.datePublished < b.datePublished ? 1 : -1))
@@ -77,14 +75,13 @@ const featured: Array<{
   img: string;
   mostPopular?: boolean;
   btn: "coral" | "royal" | "navy";
-  badge: BadgeKey;
 }> = [
-  { slug: "driving-theory-mock-1", title: "Driving Theory Mock Test 1", img: featDriving, mostPopular: true, btn: "coral", badge: "dvsa" },
-  { slug: "life-in-the-uk-mock-1", title: "Life in the UK Test 2026", img: featFlag, btn: "royal", badge: "home-office" },
-  { slug: "ielts-grammar-starter", title: "IELTS Listening Practice", img: featHeadphones, btn: "navy", badge: "ielts" },
-  { slug: "gcse-maths-warmup", title: "11+ Maths Practice Test", img: featCalculator, btn: "coral", badge: "generic" },
-  { slug: "uk-geography-quick", title: "UK Geography Test", img: featTowerBridge, btn: "royal", badge: "home-office" },
-  { slug: "road-signs-essentials", title: "Road Signs Test", img: featRoadSigns, btn: "navy", badge: "dvsa" },
+  { slug: "driving-theory-mock-1", title: "Driving Theory Mock Test 1", img: featDriving, mostPopular: true, btn: "coral" },
+  { slug: "life-in-the-uk-mock-1", title: "Life in the UK Test 2026", img: featFlag, btn: "royal" },
+  { slug: "ielts-grammar-starter", title: "IELTS Listening Practice", img: featHeadphones, btn: "navy" },
+  { slug: "gcse-maths-warmup", title: "11+ Maths Practice Test", img: featCalculator, btn: "coral" },
+  { slug: "uk-geography-quick", title: "UK Geography Test", img: featTowerBridge, btn: "royal" },
+  { slug: "road-signs-essentials", title: "Road Signs Test", img: featRoadSigns, btn: "navy" },
 ];
 
 const btnClass: Record<"coral" | "royal" | "navy", string> = {
@@ -212,7 +209,6 @@ function HomePage() {
                       params={{ slug: t.slug }}
                       className="group flex items-center gap-3 rounded-lg px-3 py-2 text-base font-medium text-navy-foreground/90 transition-colors hover:bg-white/10 hover:text-coral"
                     >
-                      <TestBadge badge={badgeForSlug(t.slug)} size="sm" />
                       <span className="flex-1 truncate">{t.label}</span>
                       <ArrowRight className="h-4 w-4 shrink-0 text-coral opacity-0 transition-opacity group-hover:opacity-100" />
                     </Link>
@@ -228,11 +224,6 @@ function HomePage() {
                   <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
                 </Link>
               </div>
-              <p className="mt-2 text-center text-[10px] leading-snug text-navy-foreground/50">
-                Logos shown are stylised badges. All names and trademarks belong
-                to their respective owners. UK Test Hub is independent and not
-                affiliated with any listed body.
-              </p>
             </div>
           </aside>
         </div>
@@ -255,17 +246,6 @@ function HomePage() {
                   .replace(/^GCSE /, "GCSE ")
                   .trim(),
               );
-              // Up to 3 unique brand badges representing the bodies in this category.
-              const seen = new Set<BadgeKey>();
-              const badges: BadgeKey[] = [];
-              for (const t of c.topics) {
-                const b = badgeForSlug(t.slug);
-                if (!seen.has(b)) {
-                  seen.add(b);
-                  badges.push(b);
-                  if (badges.length === 3) break;
-                }
-              }
               return (
                 <Link
                   key={c.slug}
@@ -282,13 +262,6 @@ function HomePage() {
                     <h3 className="font-display text-sm font-bold leading-tight text-foreground">
                       {c.title}
                     </h3>
-                    {badges.length > 0 && (
-                      <div className="mt-2 flex items-center justify-center gap-1.5">
-                        {badges.map((b) => (
-                          <TestBadge key={b} badge={b} size="sm" />
-                        ))}
-                      </div>
-                    )}
                     <p className="mt-2 line-clamp-3 min-h-[3.4em] text-[11px] leading-snug text-muted-foreground">
                       {c.short}
                     </p>
@@ -360,9 +333,6 @@ function HomePage() {
                           Most Popular
                         </span>
                       )}
-                      <span className="absolute right-3 top-3">
-                        <TestBadge badge={f.badge} size="md" />
-                      </span>
                     </div>
                     <div className="flex flex-1 flex-col p-4">
                       <h3 className="font-display text-sm font-bold leading-tight text-foreground">
