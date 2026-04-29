@@ -139,20 +139,8 @@ export function AdSlot({
     };
   }, [visible, slotId]);
 
-  // Production, no AdSense configured → render nothing (collapse cleanly)
-  if (!ADSENSE_ENABLED) {
-    if (!IS_DEV) return null;
-    // Dev preview: subtle dashed outline so layout can be verified
-    return (
-      <div
-        aria-hidden
-        className={`flex w-full items-center justify-center rounded-xl border border-dashed border-border/60 bg-muted/20 py-3 text-[10px] uppercase tracking-widest text-muted-foreground/60 ${sizeStyles[size]} ${className}`}
-      >
-        ad slot · {size}
-        {slotId ? ` · ${slotId}` : ""}
-      </div>
-    );
-  }
+  // No AdSense configured → render nothing (fully invisible, no placeholder)
+  if (!ADSENSE_ENABLED) return null;
 
   // Missing slotId in production → render nothing
   if (!slotId) return null;
