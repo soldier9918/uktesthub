@@ -4,6 +4,7 @@ import {
   CheckCircle2,
   XCircle,
   Clock,
+  ChevronLeft,
   ChevronRight,
   RotateCcw,
   ArrowRight,
@@ -194,10 +195,12 @@ export function QuizRunner({ quiz }: { quiz: Quiz }) {
         <div className="mt-4 flex items-center justify-between">
           <button
             type="button"
-            onClick={() => setFinished(true)}
-            className="text-sm font-medium text-muted-foreground hover:text-foreground"
+            onClick={() => setCurrent((c) => Math.max(0, c - 1))}
+            disabled={current === 0}
+            className="inline-flex items-center gap-2 rounded-xl border border-border bg-background px-4 py-2.5 text-sm font-semibold hover:bg-muted disabled:cursor-not-allowed disabled:opacity-40"
           >
-            Finish early
+            <ChevronLeft className="h-4 w-4" />
+            Back
           </button>
           <div className="flex gap-2">
             {isFillBlanks(q) && mode === "practice" && answered && !isRevealed && (
