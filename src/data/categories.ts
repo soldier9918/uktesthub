@@ -10,6 +10,13 @@ import heroTaxi from "@/assets/cat-hero-taxi-private-hire.jpg";
 import heroSecurity from "@/assets/cat-hero-security.jpg";
 import heroHospitality from "@/assets/cat-hero-hospitality.jpg";
 import heroConstruction from "@/assets/cat-hero-construction.jpg";
+import heroFinance from "@/assets/cat-hero-finance.jpg";
+import heroItTech from "@/assets/cat-hero-it-tech.jpg";
+import heroHealthcareEntry from "@/assets/cat-hero-healthcare-entry.jpg";
+import heroTeaching from "@/assets/cat-hero-teaching.jpg";
+import heroLegal from "@/assets/cat-hero-legal.jpg";
+import heroMilitary from "@/assets/cat-hero-military.jpg";
+import heroMaritimeAviation from "@/assets/cat-hero-maritime-aviation.jpg";
 
 export type Category = {
   slug: string;
@@ -223,6 +230,118 @@ export const categories: Category[] = [
       { slug: "cscs-gold", title: "CSCS Gold (Supervisor) Test" },
       { slug: "citb-hse", title: "CITB Health, Safety & Environment Test" },
       { slug: "ipaf-pasma", title: "IPAF / PASMA Working at Height Test" },
+    ],
+  },
+  {
+    slug: "finance",
+    title: "Finance & Accounting",
+    short: "AAT, ACCA, CFA-style aptitude & financial awareness",
+    description:
+      "Free practice for finance and accounting qualifications — AAT Level 2 Bookkeeping, ACCA Foundations (FIA), CFA-style numerical aptitude and a general financial awareness quiz.",
+    icon: "Calculator",
+    accent: "navy",
+    heroImage: heroFinance,
+    topics: [
+      { slug: "aat-bookkeeping", title: "AAT Level 2 Bookkeeping" },
+      { slug: "acca-foundations", title: "ACCA Foundations (FIA) Practice" },
+      { slug: "cfa-aptitude", title: "CFA-Style Aptitude Test" },
+      { slug: "financial-awareness", title: "Financial Awareness Quiz" },
+    ],
+  },
+  {
+    slug: "it-tech",
+    title: "IT & Tech Certifications",
+    short: "CompTIA A+, ITIL 4, Microsoft Fundamentals & Cyber",
+    description:
+      "Prepare for entry-level IT certifications — CompTIA A+, ITIL 4 Foundation, Microsoft MS-900 / AZ-900 Fundamentals and a cyber security awareness primer.",
+    icon: "Cpu",
+    accent: "success",
+    heroImage: heroItTech,
+    topics: [
+      { slug: "comptia-a-plus", title: "CompTIA A+ Practice" },
+      { slug: "itil-4", title: "ITIL 4 Foundation Practice" },
+      { slug: "microsoft-fundamentals", title: "Microsoft Fundamentals (MS-900 / AZ-900)" },
+      { slug: "cyber-awareness", title: "Cyber Security Awareness" },
+    ],
+  },
+  {
+    slug: "healthcare-entry",
+    title: "Healthcare Entry Exams",
+    short: "UCAT, BMAT, OET & PLAB sample questions",
+    description:
+      "Practice for medical and healthcare admissions — UCAT, BMAT, the OET (Occupational English Test) for healthcare professionals and PLAB 1 sample questions.",
+    icon: "Stethoscope",
+    accent: "coral",
+    heroImage: heroHealthcareEntry,
+    topics: [
+      { slug: "ucat", title: "UCAT Practice" },
+      { slug: "bmat", title: "BMAT Practice" },
+      { slug: "oet", title: "OET (Healthcare English)" },
+      { slug: "plab-1", title: "PLAB 1 Sample Questions" },
+    ],
+  },
+  {
+    slug: "teaching",
+    title: "Teaching & QTS",
+    short: "QTS Numeracy, Literacy, Professional Skills & Safeguarding",
+    description:
+      "Prepare for teacher training and QTS — QTS Numeracy and Literacy Skills Tests, Professional Skills for Teachers and Safeguarding in Schools practice.",
+    icon: "BookOpen",
+    accent: "gold",
+    heroImage: heroTeaching,
+    topics: [
+      { slug: "qts-numeracy", title: "QTS Numeracy Skills Test" },
+      { slug: "qts-literacy", title: "QTS Literacy Skills Test" },
+      { slug: "professional-skills-teachers", title: "Professional Skills for Teachers" },
+      { slug: "safeguarding-schools", title: "Safeguarding in Schools" },
+    ],
+  },
+  {
+    slug: "legal",
+    title: "Legal & Law",
+    short: "SQE1 FLK1 & FLK2, LNAT & UK legal system",
+    description:
+      "Free practice for aspiring solicitors and law students — SQE1 FLK1 and FLK2 multiple choice, LNAT practice and a UK legal system quiz.",
+    icon: "Scale",
+    accent: "navy",
+    heroImage: heroLegal,
+    topics: [
+      { slug: "sqe1-flk1", title: "SQE1 FLK1 Practice" },
+      { slug: "sqe1-flk2", title: "SQE1 FLK2 Practice" },
+      { slug: "lnat", title: "LNAT Multiple Choice" },
+      { slug: "uk-legal-system", title: "UK Legal System Quiz" },
+    ],
+  },
+  {
+    slug: "military-emergency",
+    title: "Military & Emergency Services",
+    short: "Army BARB, Police PIRT & SEARCH, Firefighter NFSAT",
+    description:
+      "Practice for the British Army, Police and Fire & Rescue selection — Army BARB Test, Police PIRT (Initial Recruitment), Police SEARCH Assessment and Firefighter NFSAT.",
+    icon: "Siren",
+    accent: "coral",
+    heroImage: heroMilitary,
+    topics: [
+      { slug: "army-barb", title: "Army BARB Test" },
+      { slug: "police-pirt", title: "Police PIRT (Initial Recruitment)" },
+      { slug: "police-search", title: "Police SEARCH Assessment" },
+      { slug: "firefighter-nfsat", title: "Firefighter NFSAT" },
+    ],
+  },
+  {
+    slug: "maritime-aviation",
+    title: "Maritime & Aviation",
+    short: "PPL Air Law & Met, RYA Day Skipper, ATPL basics",
+    description:
+      "Practice for pilots and skippers — PPL Air Law, PPL Meteorology, RYA Day Skipper Theory and ATPL Basics for those starting their commercial pilot path.",
+    icon: "Plane",
+    accent: "success",
+    heroImage: heroMaritimeAviation,
+    topics: [
+      { slug: "ppl-air-law", title: "PPL Air Law" },
+      { slug: "ppl-meteorology", title: "PPL Meteorology" },
+      { slug: "rya-day-skipper", title: "RYA Day Skipper Theory" },
+      { slug: "atpl-basics", title: "ATPL Basics Practice" },
     ],
   },
 ];
