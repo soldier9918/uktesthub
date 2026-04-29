@@ -20,6 +20,8 @@ import { UnionJack } from "@/components/UnionJack";
 import { categories } from "@/data/categories";
 import { getDailyQuiz, getQuiz } from "@/data/quizzes";
 import { blogPosts } from "@/data/blog";
+import { TestBadge, type BadgeKey } from "@/components/TestBadge";
+import { badgeForSlug } from "@/data/test-logos";
 
 const latestPosts = [...blogPosts]
   .sort((a, b) => (a.datePublished < b.datePublished ? 1 : -1))
@@ -69,13 +71,20 @@ export const Route = createFileRoute("/")({
   component: HomePage,
 });
 
-const featured = [
-  { slug: "driving-theory-mock-1", title: "Driving Theory Mock Test 1", img: featDriving, mostPopular: true, btn: "coral" as const },
-  { slug: "life-in-the-uk-mock-1", title: "Life in the UK Test 2026", img: featFlag, btn: "royal" as const },
-  { slug: "ielts-grammar-starter", title: "IELTS Listening Practice", img: featHeadphones, btn: "navy" as const },
-  { slug: "gcse-maths-warmup", title: "11+ Maths Practice Test", img: featCalculator, btn: "coral" as const },
-  { slug: "uk-geography-quick", title: "UK Geography Test", img: featTowerBridge, btn: "royal" as const },
-  { slug: "road-signs-essentials", title: "Road Signs Test", img: featRoadSigns, btn: "navy" as const },
+const featured: Array<{
+  slug: string;
+  title: string;
+  img: string;
+  mostPopular?: boolean;
+  btn: "coral" | "royal" | "navy";
+  badge: BadgeKey;
+}> = [
+  { slug: "driving-theory-mock-1", title: "Driving Theory Mock Test 1", img: featDriving, mostPopular: true, btn: "coral", badge: "dvsa" },
+  { slug: "life-in-the-uk-mock-1", title: "Life in the UK Test 2026", img: featFlag, btn: "royal", badge: "home-office" },
+  { slug: "ielts-grammar-starter", title: "IELTS Listening Practice", img: featHeadphones, btn: "navy", badge: "ielts" },
+  { slug: "gcse-maths-warmup", title: "11+ Maths Practice Test", img: featCalculator, btn: "coral", badge: "generic" },
+  { slug: "uk-geography-quick", title: "UK Geography Test", img: featTowerBridge, btn: "royal", badge: "home-office" },
+  { slug: "road-signs-essentials", title: "Road Signs Test", img: featRoadSigns, btn: "navy", badge: "dvsa" },
 ];
 
 const btnClass: Record<"coral" | "royal" | "navy", string> = {
