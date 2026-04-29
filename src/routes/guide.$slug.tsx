@@ -8,6 +8,8 @@ import { getTopicSeo } from "@/data/topic-seo";
 import { listMockSlots, TOTAL_MOCKS_PER_TOPIC, QUESTIONS_PER_MOCK } from "@/data/mocks";
 import { Home, ChevronRight, ArrowRight, BookOpen } from "lucide-react";
 import { pageMeta, faqSchema, breadcrumbSchema } from "@/lib/seo";
+import { RoadSign } from "@/components/RoadSign";
+import { ROAD_SIGN_GROUPS } from "@/data/road-sign-gallery";
 
 export const Route = createFileRoute("/guide/$slug")({
   loader: ({ params }) => {
