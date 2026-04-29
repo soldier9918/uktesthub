@@ -103,9 +103,9 @@ export const categories: Category[] = [
   {
     slug: "professional",
     title: "Professional Certification",
-    short: "CSCS, SIA, SERU TfL, Food Hygiene, First Aid",
+    short: "CSCS, SIA, Food Hygiene & First Aid",
     description:
-      "Pass the CSCS Card Test, SIA Security Test, SERU TfL Assessment, Food Hygiene Level 2 and First Aid Theory exams.",
+      "Pass the CSCS Card Test, SIA Security Test, Food Hygiene Level 2 and First Aid Theory exams.",
     icon: "ShieldCheck",
     accent: "coral",
     heroImage: heroProfessional,
