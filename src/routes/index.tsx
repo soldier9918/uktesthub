@@ -620,10 +620,9 @@ function HomePage() {
               </h3>
               <div className="mt-4 space-y-5 text-base leading-relaxed text-muted-foreground">
                 <p>
-                  Learner drivers make up the largest group — teenagers
-                  preparing for their first theory test, adults returning
-                  to driving after years off the road, and trainee LGV and
-                  PCV drivers building toward a professional licence.
+                  Learner drivers and cab/taxi drivers make up the largest group — teenagers
+                  preparing for their first theory test, chauffeurs and PHV drivers,
+                  trainee LGV and PCV drivers building toward a professional licence.
                   Alongside them, thousands of people each year use our
                   Life in the UK papers as part of their journey to
                   Indefinite Leave to Remain or British citizenship.
