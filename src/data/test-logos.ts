@@ -56,8 +56,13 @@ export const TEST_BADGES: Record<string, BadgeKey> = {
   "sia-door": "sia",
   "sia-cctv": "sia",
 
+  // Health & safety
+  "food-hygiene": "food-hygiene",
+  "first-aid": "first-aid",
+
   // Other
   numerical: "generic",
+  "logical-reasoning": "generic",
 };
 
 /** Lookup with safe fallback. */

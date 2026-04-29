@@ -57,6 +57,8 @@ export const BODY_NAMES: Record<BadgeKey, string> = {
   sia: "Security Industry Authority",
   nhs: "NHS",
   esol: "ESOL",
+  "food-hygiene": "Food Hygiene",
+  "first-aid": "First Aid",
   generic: "UK Test",
 };
 
