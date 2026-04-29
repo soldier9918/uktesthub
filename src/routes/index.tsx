@@ -241,12 +241,16 @@ function HomePage() {
             {categories.map((c) => {
               const isCoral = c.accent === "coral";
               // Short labels for the chip row (keeps tiles visually distinct).
-              const chips = c.topics.map((t) =>
-                t.title
-                  .replace(/ Test$| Practice$| Quiz$| Exam$| Assessment$/i, "")
-                  .replace(/^GCSE /, "GCSE ")
-                  .trim(),
-              );
+              const CHIP_LIMIT = 4;
+              const chips = c.topics
+                .slice(0, CHIP_LIMIT)
+                .map((t) =>
+                  t.title
+                    .replace(/ Test$| Practice$| Quiz$| Exam$| Assessment$/i, "")
+                    .replace(/^GCSE /, "GCSE ")
+                    .trim(),
+                );
+              const extraChips = Math.max(0, c.topics.length - CHIP_LIMIT);
               return (
                 <Link
                   key={c.slug}
@@ -275,6 +279,11 @@ function HomePage() {
                           {label}
                         </li>
                       ))}
+                      {extraChips > 0 && (
+                        <li className="rounded-full border border-coral/40 bg-coral/10 px-2 py-0.5 text-[10px] font-semibold text-coral">
+                          +{extraChips} more
+                        </li>
+                      )}
                     </ul>
                   </div>
                   <span
