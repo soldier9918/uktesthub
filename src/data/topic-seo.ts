@@ -199,6 +199,27 @@ export const topicSeo: Record<string, TopicSeo> = {
           "Less common but high-scoring: animals in the road, slow-moving farm vehicles cresting a hill, pedestrians walking in the road where there's no pavement.",
         ],
       },
+      {
+        heading: "Reading the road like an examiner",
+        body: [
+          "Hazard perception is really 'commentary driving' in disguise. Trained driving instructors talk through the developing scene out loud as they drive: 'parked van on the left… could a child run out… cyclist ahead, leaving room… brake lights on the car at the junction'. Practise that habit on real journeys (as a passenger, not a driver) and you'll spot hazards 1–2 seconds earlier on the test, which is the difference between 3 marks and 5.",
+          "Watch for early cues: a head turning at a junction, a wheel turning slightly, brake lights flickering, a pedestrian's body weight shifting toward the kerb. The DVSA programmer marked the hazard 'developing' the moment that cue appears — not when it becomes obvious.",
+        ],
+      },
+      {
+        heading: "What to do if you fail hazard perception",
+        body: [
+          "Failing only the hazard perception part still means failing the whole theory test — you'll need to rebook the £23 fee and resit both parts (after a minimum three working days).",
+          "Diagnose the cause before resitting. If you scored under 30/75 you probably clicked too late or missed the developing cues; do twenty more practice clips with the commentary technique. If you scored 35–43, you're spotting hazards but mistiming clicks; one or two well-paced clicks per hazard, in the second the cue appears, will lift you over the line.",
+        ],
+      },
+      {
+        heading: "Equipment and test-room conditions",
+        body: [
+          "At the test centre you'll wear over-ear headphones supplied by Pearson VUE. Volume is set during the brief practice clip — set it loud enough to hear engine and tyre cues without it being uncomfortable. The mouse on the desk is a standard wired optical mouse; you can use either button to click.",
+          "Don't grip the mouse the entire time — your hand cramps and reaction time slips. Rest fingers loosely on the buttons and breathe normally between clips. There's a short forced gap between each clip; use it to relax your hand and reset focus.",
+        ],
+      },
     ],
     faqs: [
       { q: "What is the hazard perception pass mark?", a: "44 out of 75. You also need to pass the multiple-choice section (43/50) at the same sitting." },
@@ -253,6 +274,27 @@ export const topicSeo: Record<string, TopicSeo> = {
           "Use free flashcard apps for the 30 most-tested signs in the final week. Then take three full mocks under timed conditions to lock everything in.",
         ],
       },
+      {
+        heading: "Warning signs to know cold",
+        body: [
+          "Triangular warning signs cover most of the marks. The most-tested examples: 'school crossing patrol' (children walking, sometimes with the lollipop-stick variant), 'T-junction', 'staggered junction', 'roundabout ahead', 'level crossing with barrier', 'level crossing without barrier or gate', 'crossroads', 'two-way traffic', 'risk of grounding' (humpback bridge or steep ramp), and 'falling rocks'.",
+          "Memorise these as a set: every triangular sign points up; the only triangle that points down is the give-way sign, which is in a class of its own. If you see a triangle, slow down, scan and prepare to react.",
+        ],
+      },
+      {
+        heading: "Order signs and prohibitions",
+        body: [
+          "Circular signs with red borders prohibit. Common examples: 'no entry' (red circle, white horizontal bar), 'no overtaking' (two cars, red one on the right), 'no motor vehicles', 'no vehicles over X tonnes', 'no waiting', 'no stopping' (clearway — solid red disc with blue cross).",
+          "Blue circles compel. 'Turn left ahead', 'mini roundabout', 'pedestrian zone', 'cycle route only', 'tram route'. The Highway Code wording 'must' indicates a legal order, while 'should' is advisory — only signs in red and blue circles carry legal force.",
+        ],
+      },
+      {
+        heading: "Information, motorway and temporary signs",
+        body: [
+          "Rectangular signs inform. White with black border: regulations on parking. Green: primary route information. Blue: motorway information including service distances and lane closures. Brown: tourist destinations.",
+          "Temporary signs at roadworks use yellow backgrounds with black borders — they override permanent signs while the works are in place. Variable matrix signs above motorway lanes show real-time speed limits and lane closures (red X = lane closed; do not enter).",
+        ],
+      },
     ],
     faqs: [
       { q: "How many road signs are tested in the DVSA exam?", a: "Around 7–10 of the 50 multiple-choice questions involve signs or road markings." },
@@ -296,6 +338,27 @@ export const topicSeo: Record<string, TopicSeo> = {
         heading: "Study plan",
         body: [
           "Week 1: read the Highway Code with focus on chapters covering motorcyclists, junctions, roundabouts and overtaking. Week 2: one mock per day, reviewing every wrong answer. Week 3: drill weak areas (most riders struggle with motorway rules and other-vehicle questions). Week 4: timed full mocks under exam conditions.",
+        ],
+      },
+      {
+        heading: "Module 1 and Module 2 — what theory unlocks",
+        body: [
+          "Theory pass opens the door to Module 1, the off-road manoeuvres test at a Multi-Purpose Test Centre (MPTC). It includes the slalom, figure-of-eight, slow ride, U-turn, controlled stop, hazard avoidance (the 'swerve test') and an emergency stop. The hazard avoidance is taken at 50 km/h (31 mph) for an A2 or full A licence — fail this and you can't progress.",
+          "Module 2 is the on-road ride: 30–40 minutes including independent riding using sat nav or signs, plus questions on safety and pillion passengers. Both modules use a radio earpiece so the examiner can give directions while you're moving.",
+        ],
+      },
+      {
+        heading: "Licence categories and age restrictions",
+        body: [
+          "AM (16+): mopeds up to 50cc and 28 mph. A1 (17+): light motorcycles up to 125cc and 11kW. A2 (19+): bikes up to 35kW (47 bhp), restricted from a higher-powered bike. A (24+ direct, or 21+ via two years on A2): full unrestricted licence.",
+          "The route most riders take: CBT at 17, ride a 125 with L plates while studying for theory, then take A2 at 19 or A at 24. Direct Access (DAS) at 24+ skips the A2 step but requires a 'big bike' Module 1 and 2 on a 595cc+ machine.",
+        ],
+      },
+      {
+        heading: "Gear, weather and visibility",
+        body: [
+          "Theory questions often test PPE. Helmets must meet UNECE 22.06 (or 22.05 for older stock). Gloves and jacket should carry CE EN 13594 and EN 17092 ratings. Hi-vis isn't legally required in the UK but examiners and the IAM strongly recommend it for visibility — most SMIDSY collisions happen in good daylight, not at night.",
+          "In wet weather, double your stopping distance. White lines, manhole covers, painted markings and diesel spills become slippery — brake on the un-painted tarmac wherever possible. In cold weather watch for shaded patches that may still be icy after sunny stretches have thawed.",
         ],
       },
     ],
@@ -351,6 +414,30 @@ export const topicSeo: Record<string, TopicSeo> = {
         body: [
           "Book at gov.uk and pay £50. You need a valid passport (or BRP) as ID. Take it with you on the day along with proof of address dated within the last three months (utility bill, bank statement, council tax).",
           "Arrive 15 minutes early. No phones, no notes, no bags in the test room. Result is on screen straight away and you'll get a confirmation letter to use with your ILR or citizenship application.",
+        ],
+      },
+      {
+        heading: "Chapter-by-chapter focus",
+        body: [
+          "Chapter 1 (Values and Principles): democracy, rule of law, individual liberty, tolerance of those with different faiths and beliefs. Short — read once and remember the four core values.",
+          "Chapter 2 (What is the UK): the four nations, capital cities, currencies, languages (English, Welsh, Gaelic, Scots, Irish). A handful of geography questions per test.",
+          "Chapter 3 (A long and illustrious history): the longest chapter and around 50% of test questions. Cover Stone Age to Iron Age, the Romans, the Anglo-Saxons, the Norman Conquest 1066, Magna Carta 1215, the Black Death, the Wars of the Roses, the Reformation, the Civil War, the Glorious Revolution, the Industrial Revolution, the Empire, both World Wars, post-war Britain, devolution.",
+          "Chapter 4 (A modern, thriving society): sport, music, art, literature, festivals, religion, food, places to visit. Memorise specific names: Bobby Moore, Andy Murray, Vivienne Westwood, Henry Moore, Dylan Thomas.",
+          "Chapter 5 (Government, law and your role): Parliament, the monarch, the PM, devolved governments, elections, the courts, civic duties. Learn how a Bill becomes an Act and the difference between criminal and civil law.",
+        ],
+      },
+      {
+        heading: "Date and name memorisation",
+        body: [
+          "The handbook lists dozens of specific dates. The DVSA — sorry, Home Office — favours these in questions: 1066 Norman Conquest, 1215 Magna Carta, 1314 Bannockburn, 1455–87 Wars of the Roses, 1534 Church of England formed, 1588 Spanish Armada defeated, 1605 Gunpowder Plot, 1707 Act of Union with Scotland, 1801 Act of Union with Ireland, 1832 Reform Act, 1914–18 First World War, 1918 women over 30 get the vote, 1928 equal voting age, 1939–45 Second World War, 1948 NHS founded, 1973 UK joins EEC, 1999 devolution, 2016 EU referendum.",
+          "Names to learn for the sport, art and culture sections: Roger Bannister (4-min mile), Sir Steve Redgrave (5 Olympic golds), Bradley Wiggins, Jessica Ennis-Hill, Damon Hill (F1 champion son of Graham Hill), Dame Kelly Holmes. For arts: William Hogarth, Joseph Turner, John Constable, Henry Moore, Lucian Freud, David Hockney.",
+        ],
+      },
+      {
+        heading: "Pitfalls and timing strategy",
+        body: [
+          "45 minutes for 24 questions is generous — that's nearly two minutes per question. Don't rush. Read every question twice; many include the words 'NOT' or 'except' that flip the meaning.",
+          "Most candidates who fail did so because they relied on free PDF question dumps online instead of the official handbook. The Home Office regularly retires and replaces questions, and the bank changes when a new edition is published. Always read the current handbook — the 3rd edition (2013) is still current as of 2026.",
         ],
       },
     ],
@@ -645,6 +732,29 @@ export const topicSeo: Record<string, TopicSeo> = {
         body: [
           "Book through the British Council, IDP, or Cambridge English. Computer-delivered IELTS gives results in 3–5 days; paper IELTS in 13. The fee is £210–£250 depending on test centre and version.",
           "Bring your passport (the same one you used to book). Arrive 30 minutes early. Speaking may be on the same day or up to seven days later — check your booking confirmation.",
+        ],
+      },
+      {
+        heading: "Writing — Task 1 and Task 2 in detail",
+        body: [
+          "Academic Task 1 (20 minutes, 150 words): describe a chart, table, graph, map or process diagram. Use a four-paragraph structure: introduction (paraphrase the title), overview (the 2–3 most striking trends, no numbers), body 1 (detail with figures), body 2 (detail with figures). The overview is the single biggest scoring factor.",
+          "General Task 1 (20 minutes, 150 words): a letter — formal, semi-formal or informal. Always include the three bullet-point requirements from the prompt.",
+          "Task 2 (40 minutes, 250 words, both versions): an essay. Common types: opinion ('to what extent do you agree?'), discussion ('discuss both views'), problem-solution, two-part question. Plan five minutes, write thirty, proofread five. Aim for four paragraphs: introduction with a clear thesis, two body paragraphs with topic sentence + reason + example, conclusion that restates the thesis.",
+        ],
+      },
+      {
+        heading: "Speaking — what examiners reward",
+        body: [
+          "IELTS Speaking is judged on four equal criteria: Fluency & Coherence, Lexical Resource, Grammatical Range & Accuracy, and Pronunciation. The single biggest fluency killer is unnatural pauses while you search for a 'big' word — examiners would rather hear simple, fluent English than fancy stumbling.",
+          "Part 2 (long turn): you get one minute to plan, then talk for 1–2 minutes on a card prompt like 'describe a memorable journey'. Use the planning time to scribble a four-bullet outline (when, where, who, why memorable). The examiner will not interrupt during the long turn — keep going until they stop you.",
+          "Part 3: thematic discussion related to Part 2. The examiner pushes for opinions, comparisons and predictions. Practise extending each answer with 'because… for example… on the other hand…'.",
+        ],
+      },
+      {
+        heading: "One Skill Retake and result strategy",
+        body: [
+          "Since 2023 IELTS One Skill Retake lets candidates who took computer-delivered IELTS resit a single skill (Listening, Reading, Writing or Speaking) within 60 days, for around £170. This is a game-changer for candidates who hit their target overall but missed a single sub-score (e.g. NMC nursing requires Writing 6.5 — many band-7 candidates hit that with a retake).",
+          "Plan strategically: aim for your overall target on the first sitting and treat One Skill Retake as the safety net for the section that historically holds you back. Many UK universities now accept One Skill Retake; always confirm with the admissions office before relying on it.",
         ],
       },
     ],
