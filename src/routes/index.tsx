@@ -423,10 +423,10 @@ function HomePage() {
               <span className="inline-flex items-center gap-2 rounded-full bg-coral/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.14em] text-coral">
                 About the platform
               </span>
-              <h2 className="mt-4 font-display text-3xl font-bold leading-tight text-foreground md:text-4xl">
+              <h2 className="mt-4 border-l-4 border-coral pl-4 font-display text-3xl font-bold leading-tight text-foreground md:text-4xl">
                 What is UK Test Hub?
               </h2>
-              <p className="mt-5 text-lg leading-relaxed text-muted-foreground md:text-xl">
+              <p className="mt-5 text-base leading-relaxed text-muted-foreground md:text-lg">
                 UK Test Hub is a free practice platform built to help learners
                 across Britain pass official UK exams first time — no accounts,
                 no paywalls, no surprises.
