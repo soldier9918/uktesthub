@@ -6,6 +6,7 @@ import heroCareer from "@/assets/cat-hero-career.jpg";
 import heroProfessional from "@/assets/cat-hero-professional.jpg";
 import heroNhs from "@/assets/cat-hero-nhs.jpg";
 import heroFun from "@/assets/cat-hero-fun.jpg";
+import heroTaxi from "@/assets/cat-hero-taxi-private-hire.jpg";
 
 export type Category = {
   slug: string;
@@ -102,16 +103,15 @@ export const categories: Category[] = [
   {
     slug: "professional",
     title: "Professional Certification",
-    short: "CSCS, SIA, SERU TfL, Food Hygiene, First Aid",
+    short: "CSCS, SIA, Food Hygiene & First Aid",
     description:
-      "Pass the CSCS Card Test, SIA Security Test, SERU TfL Assessment, Food Hygiene Level 2 and First Aid Theory exams.",
+      "Pass the CSCS Card Test, SIA Security Test, Food Hygiene Level 2 and First Aid Theory exams.",
     icon: "ShieldCheck",
     accent: "coral",
     heroImage: heroProfessional,
     topics: [
       { slug: "cscs", title: "CSCS Card Test" },
       { slug: "sia", title: "SIA Security Test" },
-      { slug: "seru", title: "SERU TfL Assessment" },
       { slug: "food-hygiene", title: "Food Hygiene Level 2" },
       { slug: "first-aid", title: "First Aid Theory" },
     ],
@@ -130,6 +130,33 @@ export const categories: Category[] = [
       { slug: "nhs-literacy", title: "NHS Literacy Test" },
       { slug: "nhs-values", title: "NHS Values-Based Recruitment" },
       { slug: "nmc-cbt", title: "NMC CBT (Nurses)" },
+    ],
+  },
+  {
+    slug: "taxi-private-hire",
+    title: "Taxi & Private Hire",
+    short: "TfL SERU, Topographical, PHV licence, ULEZ & Congestion Charge",
+    description:
+      "Free practice tests for London private hire and taxi drivers — TfL SERU, Topographical Assessment, PHV licence knowledge, ULEZ, Congestion Charge, safeguarding and accessibility duties.",
+    icon: "Car",
+    accent: "coral",
+    heroImage: heroTaxi,
+    topics: [
+      { slug: "seru", title: "SERU TfL Mock Test" },
+      { slug: "topographical", title: "Topographical Assessment Practice" },
+      { slug: "phv-licence", title: "Private Hire Driver Licence Knowledge Test" },
+      { slug: "ph-safety-equality", title: "Safety, Equality & Regulatory Awareness Test" },
+      { slug: "ph-safeguarding", title: "Safeguarding Awareness Practice Test" },
+      { slug: "ph-english", title: "English Language Requirement Practice" },
+      { slug: "ph-speaking-listening", title: "Speaking & Listening Practice" },
+      { slug: "congestion-charge", title: "Congestion Charge Quiz" },
+      { slug: "ulez", title: "Ultra Low Emission Zone Quiz" },
+      { slug: "ph-dbs-licensing", title: "DBS & Licensing Rules Quiz" },
+      { slug: "ph-badge-rules", title: "Private Hire Driver Badge Rules Quiz" },
+      { slug: "ph-assistance-dogs", title: "Assistance Dogs & Accessibility Duties Quiz" },
+      { slug: "ph-passenger-safety", title: "Passenger Safety & Driver Conduct Quiz" },
+      { slug: "ph-hmrc-tax-check", title: "HMRC Tax Check Awareness Quiz" },
+      { slug: "ph-london-regulations", title: "London Private Hire Regulations Quiz" },
     ],
   },
   {

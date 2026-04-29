@@ -1,0 +1,101 @@
+{
+  "topic": "ulez",
+  "tests": [
+    {
+      "slug": "ulez-mock-1",
+      "topic": "ulez",
+      "mockNumber": 1,
+      "title": "Ultra Low Emission Zone \u2014 Mock Test 1",
+      "questions": [
+        {
+          "question": "ULEZ stands for:",
+          "options": [
+            "Urban Light Emission Zone",
+            "Ultra Low Emission Zone",
+            "Universal London Emission Zone",
+            "Ultra Local Emission Zone"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Ultra Low Emission Zone."
+        },
+        {
+          "question": "ULEZ in London operates:",
+          "options": [
+            "Weekends only",
+            "24 hours a day, every day except Christmas Day",
+            "Only at night",
+            "Only weekdays"
+          ],
+          "correctAnswer": 1,
+          "explanation": "ULEZ runs 24/7 except Christmas Day."
+        },
+        {
+          "question": "Most petrol cars meeting which Euro standard are ULEZ-compliant?",
+          "options": [
+            "Euro 2",
+            "Euro 4",
+            "Euro 5",
+            "Euro 6"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Petrol cars are usually compliant if Euro 4 or newer."
+        },
+        {
+          "question": "Most diesel cars meeting which Euro standard are ULEZ-compliant?",
+          "options": [
+            "Euro 3",
+            "Euro 4",
+            "Euro 5",
+            "Euro 6"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Diesel cars must usually meet Euro 6 to be compliant."
+        },
+        {
+          "question": "If your vehicle does not meet ULEZ standards, you must:",
+          "options": [
+            "Pay the daily ULEZ charge to drive in the zone",
+            "Avoid all roads",
+            "Sell it",
+            "Apply for a permit"
+          ],
+          "correctAnswer": 0,
+          "explanation": "A daily charge applies to non-compliant vehicles."
+        },
+        {
+          "question": "ULEZ now covers:",
+          "options": [
+            "Only central London",
+            "All London boroughs (expanded zone)",
+            "Only the City",
+            "Only motorways"
+          ],
+          "correctAnswer": 1,
+          "explanation": "ULEZ was expanded across all London boroughs in August 2023."
+        },
+        {
+          "question": "ULEZ aims to improve:",
+          "options": [
+            "Traffic flow",
+            "Air quality",
+            "Tax revenue",
+            "Tourist numbers"
+          ],
+          "correctAnswer": 1,
+          "explanation": "It is primarily an air-quality measure."
+        },
+        {
+          "question": "You can check if your vehicle meets ULEZ standards using:",
+          "options": [
+            "TfL's online vehicle checker",
+            "DVSA",
+            "DVLA only",
+            "HMRC"
+          ],
+          "correctAnswer": 0,
+          "explanation": "TfL provides a free online vehicle compliance checker."
+        }
+      ]
+    }
+  ]
+}

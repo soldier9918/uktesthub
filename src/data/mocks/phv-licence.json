@@ -1,0 +1,101 @@
+{
+  "topic": "phv-licence",
+  "tests": [
+    {
+      "slug": "phv-licence-mock-1",
+      "topic": "phv-licence",
+      "mockNumber": 1,
+      "title": "Private Hire Driver Licence Knowledge \u2014 Mock Test 1",
+      "questions": [
+        {
+          "question": "How long is a standard TfL private hire driver's licence usually valid for?",
+          "options": [
+            "1 year",
+            "3 years",
+            "5 years",
+            "10 years"
+          ],
+          "correctAnswer": 1,
+          "explanation": "TfL grants standard PHV driver licences for a three-year period subject to checks."
+        },
+        {
+          "question": "Before working as a London PHV driver, you must be licensed by:",
+          "options": [
+            "Your local council",
+            "TfL",
+            "DVSA",
+            "The Met Police"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Transport for London is the licensing authority for taxi and private hire in the capital."
+        },
+        {
+          "question": "Private hire bookings in London must always be:",
+          "options": [
+            "Pre-booked through a licensed operator",
+            "Hailed in the street",
+            "Picked up at a rank",
+            "Arranged by phone only"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Only licensed black cabs may be hailed or use ranks; PHVs must be pre-booked via a licensed operator."
+        },
+        {
+          "question": "Which document must be displayed inside a licensed private hire vehicle?",
+          "options": [
+            "Driver's CV",
+            "TfL driver and vehicle ID disc",
+            "V5C",
+            "MOT certificate"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Both the driver and vehicle identifiers issued by TfL must be displayed."
+        },
+        {
+          "question": "The minimum age to apply for a TfL PHV driver's licence is:",
+          "options": [
+            "18",
+            "21",
+            "25",
+            "30"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Applicants must usually be at least 21 and have held a full DVLA licence for three years."
+        },
+        {
+          "question": "If your driving licence is endorsed during your PHV licence period, you must:",
+          "options": [
+            "Ignore it",
+            "Notify TfL within the required period",
+            "Tell only your operator",
+            "Wait until renewal"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Drivers must notify TfL of relevant changes including endorsements."
+        },
+        {
+          "question": "Operating as a PHV driver without a valid licence is:",
+          "options": [
+            "A civil matter",
+            "A criminal offence",
+            "A minor warning",
+            "Allowed once"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Driving an unlicensed PHV is a criminal offence under the Private Hire Vehicles (London) Act 1998."
+        },
+        {
+          "question": "PHV drivers must hold what type of insurance?",
+          "options": [
+            "Social, domestic and pleasure",
+            "Hire and reward",
+            "Third-party only",
+            "None"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Hire and reward cover is required for any vehicle carrying paying passengers."
+        }
+      ]
+    }
+  ]
+}

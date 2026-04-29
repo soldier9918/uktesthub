@@ -8,14 +8,14 @@ type TopicLink = { label: string; to: "/topic/$slug"; params: { slug: string } }
 type FooterLink = StaticLink | CategoryLink | TopicLink;
 
 const popularTests: FooterLink[] = [
+  { label: "SERU TfL Test", to: "/topic/$slug", params: { slug: "seru" } },
+  { label: "Topographical Test", to: "/topic/$slug", params: { slug: "topographical" } },
+  { label: "PHV Licence Test", to: "/topic/$slug", params: { slug: "phv-licence" } },
+  { label: "Congestion Charge", to: "/topic/$slug", params: { slug: "congestion-charge" } },
+  { label: "ULEZ Quiz", to: "/topic/$slug", params: { slug: "ulez" } },
   { label: "Driving Theory Test", to: "/topic/$slug", params: { slug: "driving-theory" } },
   { label: "Life in the UK Test", to: "/topic/$slug", params: { slug: "life-in-the-uk" } },
-  { label: "SERU TfL Test", to: "/topic/$slug", params: { slug: "seru" } },
   { label: "IELTS Practice", to: "/topic/$slug", params: { slug: "ielts" } },
-  { label: "ESOL Practice", to: "/topic/$slug", params: { slug: "esol" } },
-  { label: "11+ Practice", to: "/topic/$slug", params: { slug: "eleven-plus" } },
-  { label: "CSCS Card Test", to: "/topic/$slug", params: { slug: "cscs" } },
-  { label: "SIA Security Test", to: "/topic/$slug", params: { slug: "sia" } },
 ];
 
 const company: StaticLink[] = [

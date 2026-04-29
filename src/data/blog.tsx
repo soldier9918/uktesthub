@@ -8,6 +8,7 @@ import heroCareer from "@/assets/cat-hero-career.jpg";
 import heroProfessional from "@/assets/cat-hero-professional.jpg";
 import heroNhs from "@/assets/cat-hero-nhs.jpg";
 import heroFun from "@/assets/cat-hero-fun.jpg";
+import heroTaxi from "@/assets/cat-hero-taxi-private-hire.jpg";
 
 export type BlogPost = {
   slug: string;
@@ -3367,6 +3368,689 @@ export const blogPosts: BlogPost[] = [
         </p>
         <p>
           Related reading: <B slug="ielts-tips-for-beginners">IELTS Tips for Beginners</B>.
+        </p>
+      </>
+    ),
+  },
+
+  // ==================== TAXI & PRIVATE HIRE PILLAR ====================
+
+  {
+    slug: "tfl-private-hire-driver-licence-guide",
+    title: "TfL Private Hire Driver Licence: The 2026 Step-by-Step Guide",
+    description:
+      "How to get a TfL private hire driver licence in 2026 — DBS, medical, English, SERU, Topographical, HMRC tax check, fees and timelines explained in plain UK English.",
+    excerpt:
+      "Everything a London PHV applicant needs to know in 2026, from your DBS check to your first booking.",
+    datePublished: "2026-04-25",
+    author: "UK Test Hub Team",
+    readingMinutes: 12,
+    category: "Taxi & Private Hire",
+    tags: ["TfL", "private hire", "PHV licence"],
+    hero: heroTaxi,
+    body: () => (
+      <>
+        <p>
+          Becoming a licensed private hire driver in London is one of the most heavily regulated routes into self-employment in the UK. Transport for London (TfL) is the licensing authority, and every applicant has to clear several independent checks before they can take their first booking. This guide walks through the full process for 2026, in plain UK English, with realistic timings and links to the practice papers you'll need along the way. UK Test Hub is independent and is not affiliated with TfL.
+        </p>
+
+        <h2>Who can apply for a TfL PHV driver licence?</h2>
+        <p>
+          You must usually be at least 21, hold a full DVLA, EU/EEA or qualifying overseas driving licence that has been valid for at least three years, and have the right to work and live in the UK. TfL also expects you to be a 'fit and proper person' — judged through your DBS, medical and licensing history.
+        </p>
+
+        <h2>The eight steps to your licence</h2>
+        <ol>
+          <li><strong>Apply online</strong> through the TfL Taxi and Private Hire portal and pay the application fee.</li>
+          <li><strong>Right to work check</strong> — provide a share code or original documents.</li>
+          <li><strong>Enhanced DBS</strong> via TfL's nominated provider. This is more thorough than a standard check.</li>
+          <li><strong>DVLA Group 2 medical</strong> with your GP or an approved provider.</li>
+          <li><strong>English language</strong> evidence at CEFR B1 — usually a Secure English Language Test (SELT) or qualifying UK qualification.</li>
+          <li><strong>Topographical Skills Assessment</strong> at a TfL-approved test centre.</li>
+          <li><strong>SERU assessment</strong> — Safety, Equality and Regulatory Understanding.</li>
+          <li><strong>Receive your badge</strong> and begin work through a licensed operator.</li>
+        </ol>
+
+        <h2>Realistic timeline</h2>
+        <p>
+          From application to badge, most candidates take 12–20 weeks. The DBS and medical can usually be completed in parallel within a month. The SELT, Topographical and SERU each have their own waiting lists, and resits push the timeline out further. Build in buffer time and don't book your operator induction until your badge is in hand.
+        </p>
+
+        <h2>Costs to budget for</h2>
+        <ul>
+          <li>TfL application fee (paid in two parts — application and grant).</li>
+          <li>Enhanced DBS fee.</li>
+          <li>Medical assessment (varies by GP).</li>
+          <li>SELT B1 fee — typically £150–£200.</li>
+          <li>Topographical Skills Assessment fee.</li>
+          <li>SERU fee per attempt — practise hard to avoid resits.</li>
+        </ul>
+        <p>
+          Many candidates underestimate the SERU. Use our <T slug="seru">SERU practice mocks</T> until you're scoring 90% or better before booking the official assessment.
+        </p>
+
+        <h2>HMRC tax check — required at every renewal</h2>
+        <p>
+          Since April 2022 you must complete an HMRC tax check before TfL will renew your licence. You'll receive a 9-character code valid for 120 days. Read more in our <B slug="how-to-become-a-private-hire-driver-london">how to become a private hire driver guide</B> or jump straight to <T slug="ph-hmrc-tax-check">HMRC tax check practice questions</T>.
+        </p>
+
+        <h2>What happens after you're licensed</h2>
+        <p>
+          Your standard PHV driver licence usually lasts three years. You must work through a TfL-licensed operator — every booking has to be recorded and assigned by them. Your TfL badge must be visibly worn or displayed in the vehicle while working. Notify TfL of any change of address, endorsement on your DVLA licence, criminal matter, or change in your right to work status.
+        </p>
+
+        <h2>Common reasons applications are refused or delayed</h2>
+        <p>
+          Late or incomplete documentation tops the list. Other frequent issues: failing the medical because of uncontrolled blood pressure or diabetes, an English certificate that isn't on TfL's accepted list, and serious endorsements on your DVLA driving licence. Address each issue before re-applying — TfL will not waive its standards.
+        </p>
+
+        <h2>Where to practise</h2>
+        <p>
+          Visit the <C slug="taxi-private-hire">Taxi & Private Hire practice hub</C> for free mocks on every part of the licensing journey, from <T slug="seru">SERU</T> and <T slug="topographical">Topographical</T> to <T slug="ph-safeguarding">safeguarding</T> and <T slug="ulez">ULEZ</T>. Related reading: <B slug="seru-assessment-guide">our full SERU assessment guide</B>.
+        </p>
+
+        <p className="text-xs italic text-muted-foreground">
+          Disclaimer: UK Test Hub is independent and not affiliated with Transport for London. Always confirm fees, formats and rules on tfl.gov.uk.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    slug: "seru-assessment-guide",
+    title: "TfL SERU Assessment: Complete 2026 Guide & Free Practice",
+    description:
+      "Pass the TfL SERU assessment first time. Format, topics, scoring, common traps and free SERU practice mocks for London PHV applicants in 2026.",
+    excerpt:
+      "The SERU is where most PHV applicants lose time and money. Here's exactly how to prepare in 2026.",
+    datePublished: "2026-04-25",
+    author: "UK Test Hub Team",
+    readingMinutes: 11,
+    category: "Taxi & Private Hire",
+    tags: ["SERU", "TfL", "private hire"],
+    hero: heroTaxi,
+    body: () => (
+      <>
+        <p>
+          The Safety, Equality and Regulatory Understanding (SERU) assessment is the part of the London private hire licensing process where the most candidates stumble. It is not a memory test — it is a judgement test, and TfL deliberately uses fill-the-gap and short scenario questions to make sure you actually understand the rules rather than just recognising them.
+        </p>
+
+        <h2>What is SERU?</h2>
+        <p>
+          SERU is a computer-based assessment sat at a TfL service centre. It is mandatory for new applicants for a London private hire driver's licence. The assessment lasts around 90 minutes and contains roughly 70 questions across safety, equality, and regulatory understanding.
+        </p>
+
+        <h2>Question formats</h2>
+        <ul>
+          <li><strong>Fill-the-gap</strong> — choose the correct word from a dropdown to complete a sentence drawn from TfL's source material.</li>
+          <li><strong>Multiple-choice</strong> — pick the best answer from four options.</li>
+          <li><strong>Short scenarios</strong> — judge how a professional driver should react in a given situation.</li>
+        </ul>
+
+        <h2>The three pillars in detail</h2>
+        <p>
+          <strong>Safety</strong> covers child safeguarding, vulnerable adults, county lines, spiking, lost property, road traffic incidents, fatigue and personal safety.
+        </p>
+        <p>
+          <strong>Equality</strong> covers the Equality Act 2010, protected characteristics, reasonable adjustments, assistance dogs, wheelchair-accessible duties and discrimination by association.
+        </p>
+        <p>
+          <strong>Regulatory Understanding</strong> covers the Private Hire Vehicles (London) Act 1998, the difference between PHVs and taxis, plying for hire, operator responsibilities, badge display, insurance and TfL standards.
+        </p>
+
+        <h2>Why so many candidates fail</h2>
+        <p>
+          Three reasons stand out. First, the wording. SERU questions reuse exact phrases from TfL's own materials — close paraphrasing is not enough. Second, the temptation to overthink scenarios; the right answer is almost always 'do the safe, lawful and respectful thing and report to the right body'. Third, language. The B1 English requirement is the floor, not the ceiling — candidates with weak English often misread fill-the-gaps.
+        </p>
+
+        <h2>How to prepare</h2>
+        <ol>
+          <li>Read TfL's published guidance for SERU candidates twice, slowly.</li>
+          <li>Take a cold mock to expose your gaps. Use our <T slug="seru">free SERU mocks</T>.</li>
+          <li>Revise the topics where you scored worst — usually equality and the regulatory framework.</li>
+          <li>Take a fresh mock every other day until you hit 90% twice in a row.</li>
+          <li>Book the official SERU only when you can sustain that score under timed conditions.</li>
+        </ol>
+
+        <h2>On the day</h2>
+        <p>
+          Bring your TfL appointment confirmation and photo ID. Arrive 20 minutes early. Read every question twice — especially the fill-the-gaps, where one wrong word changes the meaning. Flag and review anything you're not sure about; you have time.
+        </p>
+
+        <h2>Pass mark and what happens next</h2>
+        <p>
+          You receive your result the same day. Pass and TfL will continue your licence application. Fail and you may resit after the cooling-off period — but each attempt costs another fee. Treat the practice papers as the cheapest insurance you can buy.
+        </p>
+
+        <h2>Free SERU practice</h2>
+        <p>
+          Take our <T slug="seru">SERU mock tests</T> as often as you need. Then strengthen the related areas with <T slug="ph-safeguarding">safeguarding awareness</T>, <T slug="ph-safety-equality">safety, equality & regulatory awareness</T> and <T slug="ph-london-regulations">London PH regulations</T>. Related reading: <B slug="tfl-private-hire-driver-licence-guide">the full TfL PHV licence guide</B>.
+        </p>
+
+        <p className="text-xs italic text-muted-foreground">
+          Disclaimer: UK Test Hub is independent and not affiliated with Transport for London. Always confirm the official format on tfl.gov.uk before booking.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    slug: "topographical-assessment-guide",
+    title: "London Topographical Assessment: 2026 Guide & Practice",
+    description:
+      "Pass the London Topographical Skills Assessment for private hire drivers in 2026. Format, map skills, postcodes and free topographical practice tests.",
+    excerpt:
+      "The Topographical Assessment is more practical than the Knowledge of London — but it still trips up candidates who don't practise.",
+    datePublished: "2026-04-25",
+    author: "UK Test Hub Team",
+    readingMinutes: 9,
+    category: "Taxi & Private Hire",
+    tags: ["topographical", "TfL", "private hire"],
+    hero: heroTaxi,
+    body: () => (
+      <>
+        <p>
+          The Topographical Skills Assessment is part of the licensing process for new London private hire drivers. It tests practical orientation around the capital — map reading, route planning, postcodes, landmarks and crossings — without expecting the encyclopaedic depth of the Knowledge of London required of black-cab drivers.
+        </p>
+
+        <h2>What's tested</h2>
+        <ul>
+          <li>Reading an A–Z style street atlas.</li>
+          <li>Identifying postcode districts (SW1, EC3, E1, etc.).</li>
+          <li>Planning sensible routes between two points avoiding restricted roads.</li>
+          <li>Recognising major landmarks, stations, airports and bridges.</li>
+          <li>Compass direction and using a key/legend correctly.</li>
+        </ul>
+
+        <h2>Format on the day</h2>
+        <p>
+          The assessment is paper-based at a TfL-approved test centre. You'll be given an A–Z style map booklet and an answer sheet. Sections typically include map referencing, postcodes, point-to-point routing and landmark identification.
+        </p>
+
+        <h2>How to prepare</h2>
+        <ol>
+          <li>Buy or borrow a current London A–Z. Spend an hour a week tracing routes between major points.</li>
+          <li>Drill postcodes by zone — North West, West, Central, City, South West, South East, East, North.</li>
+          <li>Memorise the order of Thames bridges from west to east and which postcodes they connect.</li>
+          <li>Practise routes from each major rail terminus to popular destinations.</li>
+          <li>Take our <T slug="topographical">Topographical practice mocks</T> until you score 90%+.</li>
+        </ol>
+
+        <h2>Map skills you'll need</h2>
+        <p>
+          Map reading is a transferable skill. Practise reading scale, finding grid references, using the index to locate a road and choosing the most direct legal route. Watch out for one-way streets, bus-only roads and pedestrianised zones — picking an illegal route is an automatic loss of marks.
+        </p>
+
+        <h2>Common mistakes</h2>
+        <p>
+          Trusting only sat-nav memory is the biggest. Candidates who only ever drive following turn-by-turn directions struggle the moment a paper map is in front of them. Build the underlying mental map by zooming in and out on a digital map and tracing the same route in a paper book.
+        </p>
+
+        <h2>Why it matters beyond the test</h2>
+        <p>
+          Strong topographical knowledge keeps you safer and more efficient on the road. You'll spot when sat-nav is sending you down a road closure, you'll choose smarter routes during diversions, and you'll communicate clearly with passengers about ETA and price.
+        </p>
+
+        <h2>Practise now</h2>
+        <p>
+          Visit the <C slug="taxi-private-hire">Taxi & Private Hire hub</C> and start with the <T slug="topographical">Topographical practice tests</T>. Combine with <T slug="ph-london-regulations">London PH regulations</T> and <T slug="congestion-charge">Congestion Charge</T> mocks for full coverage. Related reading: <B slug="how-to-become-a-private-hire-driver-london">how to become a private hire driver in London</B>.
+        </p>
+
+        <p className="text-xs italic text-muted-foreground">
+          Disclaimer: UK Test Hub is independent and not affiliated with Transport for London.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    slug: "private-hire-english-language-requirement",
+    title: "TfL Private Hire English Language Requirement: 2026 Guide",
+    description:
+      "Meet the TfL English language requirement for PHV drivers in 2026 — CEFR B1, accepted SELTs, alternatives, exemptions and how to practise speaking and listening.",
+    excerpt:
+      "What 'B1 English' actually means for London PHV applicants — and the cheapest, fastest way to evidence it.",
+    datePublished: "2026-04-25",
+    author: "UK Test Hub Team",
+    readingMinutes: 8,
+    category: "Taxi & Private Hire",
+    tags: ["English", "B1", "TfL"],
+    hero: heroTaxi,
+    body: () => (
+      <>
+        <p>
+          Transport for London requires every private hire driver applicant to demonstrate English language ability at CEFR B1 or higher. The standard exists for safety reasons: drivers must read road signs, communicate clearly with passengers and operators, and understand instructions in an emergency.
+        </p>
+
+        <h2>What is CEFR B1?</h2>
+        <p>
+          The Common European Framework of Reference (CEFR) describes language ability on a scale from A1 (beginner) to C2 (mastery). B1 is 'lower intermediate' — you can handle most everyday situations, follow conversations on familiar topics and express yourself reasonably fluently on familiar subjects.
+        </p>
+
+        <h2>How to evidence B1</h2>
+        <ul>
+          <li>A Secure English Language Test (SELT) at B1 or above from a TfL-approved provider.</li>
+          <li>A qualifying UK GCSE in English Language at the correct grade.</li>
+          <li>A degree taught and assessed in English from the UK or a majority English-speaking country.</li>
+          <li>Other qualifications listed by TfL — always check the current list before booking.</li>
+        </ul>
+
+        <h2>Choosing a SELT</h2>
+        <p>
+          Approved SELT providers offer speaking-and-listening tests at B1 specifically for UK immigration and licensing purposes. Fees typically range £150–£200. Book at least four weeks ahead in London because slots fill quickly.
+        </p>
+
+        <h2>How to prepare</h2>
+        <ol>
+          <li>Listen to BBC Radio 4 or LBC every day for at least 30 minutes.</li>
+          <li>Practise speaking aloud — describe your day, narrate a route, summarise a news article.</li>
+          <li>Use our <T slug="ph-english">English requirement practice questions</T> and <T slug="ph-speaking-listening">speaking & listening practice</T>.</li>
+          <li>Take a mock SELT with a tutor or study partner before the real test.</li>
+        </ol>
+
+        <h2>Exemptions and shortcuts</h2>
+        <p>
+          If you already hold an accepted UK qualification, you may not need a fresh SELT. Always check TfL's current accepted-evidence list — it changes — and submit clear copies, not photographs taken at an angle.
+        </p>
+
+        <h2>What if you fail?</h2>
+        <p>
+          Resit after focused preparation. Most failures are about pace and confidence in speaking, not vocabulary. Two weeks of daily practice with a study partner usually closes the gap.
+        </p>
+
+        <h2>Practise now</h2>
+        <p>
+          Build your English alongside your licensing prep at the <C slug="taxi-private-hire">Taxi & Private Hire hub</C>. Strong English helps the <T slug="seru">SERU</T> too — many SERU questions are fill-the-gaps that punish weak language skills. Related reading: <B slug="seru-assessment-guide">SERU assessment guide</B>.
+        </p>
+
+        <p className="text-xs italic text-muted-foreground">
+          Disclaimer: UK Test Hub is independent and not affiliated with TfL or any SELT provider.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    slug: "congestion-charge-private-hire-drivers",
+    title: "Congestion Charge for Private Hire Drivers: 2026 Guide",
+    description:
+      "How the London Congestion Charge affects private hire drivers in 2026 — hours, fees, exemptions, Auto Pay, PCNs and tips to avoid penalty notices.",
+    excerpt:
+      "Most PHV drivers are not exempt from the Congestion Charge. Here's how to manage it without losing money.",
+    datePublished: "2026-04-25",
+    author: "UK Test Hub Team",
+    readingMinutes: 7,
+    category: "Taxi & Private Hire",
+    tags: ["Congestion Charge", "London", "private hire"],
+    hero: heroTaxi,
+    body: () => (
+      <>
+        <p>
+          The London Congestion Charge is a daily fee for driving most vehicles inside the central London zone during charging hours. Licensed London taxis are exempt; most private hire vehicles are not. If you drive PHV in London, this is one cost you cannot ignore.
+        </p>
+
+        <h2>Hours and fee</h2>
+        <p>
+          The charge currently applies Monday to Friday from 7am to 6pm and at weekends and bank holidays from 12pm to 6pm, except certain Christmas dates. Charging hours and the fee are reviewed by TfL — always check the latest figures before driving.
+        </p>
+
+        <h2>Who is exempt?</h2>
+        <ul>
+          <li>Licensed London hackney carriages (black cabs).</li>
+          <li>Vehicles on TfL's specific exemption lists.</li>
+          <li>Some accessible PHVs registered with TfL — check eligibility carefully.</li>
+        </ul>
+        <p>
+          Most standard PHV cars must pay daily. Don't assume your operator handles it — confirm in writing.
+        </p>
+
+        <h2>How to pay</h2>
+        <p>
+          Use TfL's website, the official TfL Pay to Drive in London app, or set up Auto Pay. Auto Pay records every entry and bills monthly, so you never miss a payment if you set it up correctly.
+        </p>
+
+        <h2>Penalty Charge Notices</h2>
+        <p>
+          Miss a payment and you'll get a Penalty Charge Notice (PCN). Pay within the discount window to halve it. Don't ignore PCNs — they escalate quickly and can affect your TfL licence renewal.
+        </p>
+
+        <h2>Common mistakes</h2>
+        <ul>
+          <li>Assuming weekend mornings are free — they aren't after 12pm.</li>
+          <li>Forgetting bank holidays.</li>
+          <li>Driving a partner's car into the zone without paying because you 'usually' use a compliant vehicle.</li>
+          <li>Missing a PCN because the V5C address is out of date.</li>
+        </ul>
+
+        <h2>Practise the rules</h2>
+        <p>
+          Take our <T slug="congestion-charge">Congestion Charge practice quiz</T> and combine with <T slug="ulez">ULEZ practice</T> for the full London compliance picture. Related reading: <B slug="ulez-private-hire-drivers">ULEZ for private hire drivers</B>.
+        </p>
+
+        <p className="text-xs italic text-muted-foreground">
+          Disclaimer: UK Test Hub is independent and not affiliated with TfL. Confirm fees and rules on tfl.gov.uk.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    slug: "ulez-private-hire-drivers",
+    title: "ULEZ for Private Hire Drivers: 2026 Compliance Guide",
+    description:
+      "ULEZ explained for London PHV drivers in 2026 — vehicle standards (Euro 4 petrol, Euro 6 diesel), daily charges, the expanded zone and how to check compliance.",
+    excerpt:
+      "ULEZ now covers all London boroughs. Here's how to make sure your vehicle and your business stay compliant.",
+    datePublished: "2026-04-25",
+    author: "UK Test Hub Team",
+    readingMinutes: 7,
+    category: "Taxi & Private Hire",
+    tags: ["ULEZ", "London", "private hire"],
+    hero: heroTaxi,
+    body: () => (
+      <>
+        <p>
+          The Ultra Low Emission Zone (ULEZ) is the most important single environmental rule affecting London private hire drivers. Since the August 2023 expansion, ULEZ covers all London boroughs and operates 24 hours a day, every day except Christmas Day.
+        </p>
+
+        <h2>Vehicle standards</h2>
+        <ul>
+          <li><strong>Petrol cars and small vans:</strong> generally compliant if Euro 4 or newer.</li>
+          <li><strong>Diesel cars and small vans:</strong> generally compliant if Euro 6 or newer.</li>
+          <li><strong>Motorcycles and similar:</strong> generally compliant if Euro 3 or newer.</li>
+        </ul>
+        <p>
+          Use TfL's free vehicle checker to confirm your specific vehicle. Compliance is decided by the vehicle's emissions standard, not its registration year alone.
+        </p>
+
+        <h2>Daily charge for non-compliant vehicles</h2>
+        <p>
+          If your vehicle does not meet ULEZ standards, you must pay the daily ULEZ charge to drive anywhere in the zone. Miss the payment and you'll face a Penalty Charge Notice. Auto Pay handles ULEZ as well as the Congestion Charge.
+        </p>
+
+        <h2>Why it matters for PHV operators</h2>
+        <p>
+          Non-compliance erodes your earnings fast. A non-compliant car driven five days a week racks up serious daily fees. Most full-time PHV drivers either own a compliant vehicle, lease one through their operator, or transition to electric.
+        </p>
+
+        <h2>Going electric</h2>
+        <p>
+          Battery electric vehicles are zero-emission and currently outside the ULEZ daily charge. Charging access varies by borough — check public charging coverage on your usual routes before committing.
+        </p>
+
+        <h2>Practise the rules</h2>
+        <p>
+          Take the <T slug="ulez">ULEZ practice quiz</T> and pair with <T slug="congestion-charge">Congestion Charge practice</T>. Related reading: <B slug="congestion-charge-private-hire-drivers">Congestion Charge for private hire drivers</B>.
+        </p>
+
+        <p className="text-xs italic text-muted-foreground">
+          Disclaimer: UK Test Hub is independent and not affiliated with TfL. Always confirm vehicle compliance on tfl.gov.uk.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    slug: "dbs-check-private-hire-driver",
+    title: "Enhanced DBS for Private Hire Drivers: 2026 Guide",
+    description:
+      "Enhanced DBS checks for TfL private hire drivers in 2026 — what's disclosed, the Update Service, processing times, costs and how to handle past convictions.",
+    excerpt:
+      "Why TfL requires an Enhanced DBS — and what to do if your check is delayed or returns a flag.",
+    datePublished: "2026-04-25",
+    author: "UK Test Hub Team",
+    readingMinutes: 8,
+    category: "Taxi & Private Hire",
+    tags: ["DBS", "TfL", "private hire"],
+    hero: heroTaxi,
+    body: () => (
+      <>
+        <p>
+          Every TfL private hire driver applicant must hold a current Enhanced DBS check. The Disclosure and Barring Service (DBS) check is the most thorough criminal record check available and reflects how seriously the licensing system takes passenger safety.
+        </p>
+
+        <h2>What an Enhanced DBS shows</h2>
+        <ul>
+          <li>Spent and unspent convictions.</li>
+          <li>Cautions, reprimands and warnings.</li>
+          <li>Information held by local police that they consider relevant.</li>
+          <li>Whether you are barred from working with children or vulnerable adults.</li>
+        </ul>
+
+        <h2>Processing times</h2>
+        <p>
+          Most checks complete within 4–8 weeks but can take longer if the applicant has lived at multiple addresses or in multiple police force areas. Apply early in your licensing journey to avoid bottlenecks.
+        </p>
+
+        <h2>The Update Service</h2>
+        <p>
+          For a small annual fee you can subscribe to the DBS Update Service. This lets TfL re-check your status online instantly, instead of starting a new full check every time. Most professional drivers find it worth the cost.
+        </p>
+
+        <h2>Past convictions</h2>
+        <p>
+          A conviction does not automatically bar you. TfL applies a published policy that weighs the offence, how long ago it was, and the role you'll perform. Serious offences — sexual offences, serious violence, fraud, certain drug offences — usually result in refusal. Be honest in your application; concealment is grounds for revocation later.
+        </p>
+
+        <h2>What to do if your check returns a flag</h2>
+        <p>
+          You'll receive your certificate first. Check it carefully and dispute any errors with the DBS within the published window. Submit your certificate plus a written context statement to TfL — explaining the circumstances, what you have learned and what you have done since.
+        </p>
+
+        <h2>Keeping clean while licensed</h2>
+        <p>
+          Notify TfL of any new caution, charge, conviction or arrest within the required period. Failure to disclose is taken as seriously as the underlying offence and is a frequent reason licences are revoked.
+        </p>
+
+        <h2>Practise the rules</h2>
+        <p>
+          Take the <T slug="ph-dbs-licensing">DBS & licensing rules quiz</T> and pair with <T slug="ph-safeguarding">safeguarding awareness</T>. Related reading: <B slug="safeguarding-awareness-private-hire">safeguarding awareness for private hire drivers</B>.
+        </p>
+
+        <p className="text-xs italic text-muted-foreground">
+          Disclaimer: UK Test Hub is independent and not affiliated with TfL or the DBS.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    slug: "safeguarding-awareness-private-hire",
+    title: "Safeguarding Awareness for Private Hire Drivers (2026)",
+    description:
+      "How London PHV drivers should recognise and report safeguarding concerns in 2026 — children, vulnerable adults, trafficking, county lines and spiking.",
+    excerpt:
+      "Drivers see what no-one else sees. This guide explains the safeguarding signs and the right way to act on them.",
+    datePublished: "2026-04-25",
+    author: "UK Test Hub Team",
+    readingMinutes: 9,
+    category: "Taxi & Private Hire",
+    tags: ["safeguarding", "TfL", "private hire"],
+    hero: heroTaxi,
+    body: () => (
+      <>
+        <p>
+          Private hire drivers are uniquely placed to spot safeguarding concerns. You travel through every part of the city, day and night, picking up children, lone passengers, vulnerable adults and groups behaving in ways that nobody else witnesses. TfL's SERU assessment includes safeguarding for exactly this reason.
+        </p>
+
+        <h2>Who safeguarding protects</h2>
+        <ul>
+          <li>Children under 18.</li>
+          <li>Vulnerable adults — those who may be unable to protect themselves from abuse, neglect or exploitation.</li>
+          <li>Anyone in immediate danger of harm.</li>
+        </ul>
+
+        <h2>Warning signs to watch for</h2>
+        <p>
+          <strong>Child sexual exploitation:</strong> a child travelling with much older adults who control the conversation, sudden destination changes, presents or alcohol the child can't account for.
+        </p>
+        <p>
+          <strong>County lines:</strong> a young person travelling long distances alone with cash, multiple phones, or unusual reluctance to share their destination.
+        </p>
+        <p>
+          <strong>Trafficking:</strong> passengers with no luggage, no documents, who appear controlled by another person and don't speak English confidently.
+        </p>
+        <p>
+          <strong>Spiking:</strong> a passenger who deteriorated rapidly during a night out, struggling to stay conscious or to give an address.
+        </p>
+
+        <h2>How to act</h2>
+        <ol>
+          <li>If anyone is in immediate danger, call 999.</li>
+          <li>For non-urgent concerns, call 101 or report via your operator's safeguarding channel.</li>
+          <li>Note the date, time, route, vehicle and as much detail about the people involved as you can recall — but never confront an adult about a child.</li>
+          <li>Keep information confidential, sharing only with police and your operator.</li>
+        </ol>
+
+        <h2>Drivers as part of the wider system</h2>
+        <p>
+          TfL works with the Met Police, local authorities and operators on safeguarding referrals. Your report could be the missing piece in an ongoing investigation — even if you never hear what happened next.
+        </p>
+
+        <h2>What not to do</h2>
+        <p>
+          Don't post anything on social media. Don't try to investigate yourself. Don't pressure a vulnerable passenger to share more than they want to. Your role is to notice, ensure immediate safety, and refer.
+        </p>
+
+        <h2>Practise the scenarios</h2>
+        <p>
+          Take the <T slug="ph-safeguarding">safeguarding awareness practice test</T>. Pair with <T slug="ph-passenger-safety">passenger safety & driver conduct</T> and <T slug="seru">SERU</T>. Related reading: <B slug="seru-assessment-guide">SERU assessment guide</B>.
+        </p>
+
+        <p className="text-xs italic text-muted-foreground">
+          Disclaimer: UK Test Hub is independent and not affiliated with TfL or any safeguarding agency. In an emergency call 999.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    slug: "private-hire-driver-badge-rules",
+    title: "TfL Private Hire Driver Badge Rules (2026)",
+    description:
+      "TfL PHV badge rules in 2026 — display, replacement, conduct, penalties for misuse and how to keep your badge in good standing.",
+    excerpt:
+      "Your TfL badge is the most visible sign of your professional status. Treat it accordingly.",
+    datePublished: "2026-04-25",
+    author: "UK Test Hub Team",
+    readingMinutes: 7,
+    category: "Taxi & Private Hire",
+    tags: ["badge", "TfL", "private hire"],
+    hero: heroTaxi,
+    body: () => (
+      <>
+        <p>
+          When TfL grants you a private hire driver licence, you receive an official ID badge. The badge proves you are licensed and links you to the vehicle and operator on every booking. Misusing it is a serious matter.
+        </p>
+
+        <h2>Display rules</h2>
+        <p>
+          You must wear or visibly display your badge while working. Most drivers clip it to the dashboard or wear it on a lanyard. The badge must be clearly readable to passengers.
+        </p>
+
+        <h2>Lost, stolen or damaged badges</h2>
+        <p>
+          Apply to TfL for a replacement immediately. Do not work with a damaged or unreadable badge. Photocopies are not acceptable.
+        </p>
+
+        <h2>Misuse</h2>
+        <ul>
+          <li>Lending your badge to anyone is unlawful.</li>
+          <li>Letting someone else drive while displaying your badge is unlawful.</li>
+          <li>Altering the badge is unlawful.</li>
+          <li>Working with an expired badge is unlawful.</li>
+        </ul>
+        <p>
+          Each of these can lead to revocation of your licence and criminal prosecution.
+        </p>
+
+        <h2>Renewals</h2>
+        <p>
+          Your standard PHV driver licence usually lasts three years. Start renewal at least three months before expiry to allow for the HMRC tax check, fresh DBS where required and any TfL queries.
+        </p>
+
+        <h2>Practise the rules</h2>
+        <p>
+          Take the <T slug="ph-badge-rules">badge rules quiz</T>. Pair with <T slug="ph-london-regulations">London PH regulations</T>. Related reading: <B slug="tfl-private-hire-driver-licence-guide">TfL PHV licence guide</B>.
+        </p>
+
+        <p className="text-xs italic text-muted-foreground">
+          Disclaimer: UK Test Hub is independent and not affiliated with TfL.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    slug: "how-to-become-a-private-hire-driver-london",
+    title: "How to Become a Private Hire Driver in London (2026)",
+    description:
+      "Step-by-step guide to becoming a London private hire driver in 2026 — eligibility, costs, timeline, training, SERU, Topographical and choosing an operator.",
+    excerpt:
+      "From first application to first booking — what becoming a London PHV driver actually involves.",
+    datePublished: "2026-04-25",
+    author: "UK Test Hub Team",
+    readingMinutes: 12,
+    category: "Taxi & Private Hire",
+    tags: ["TfL", "private hire", "career"],
+    hero: heroTaxi,
+    body: () => (
+      <>
+        <p>
+          London's private hire trade is one of the most accessible routes into self-employment for new arrivals, career-changers and people leaving regulated industries. It is also one of the most heavily licensed. This 2026 guide walks through the realistic path from first application to first booking.
+        </p>
+
+        <h2>Step 1 — Decide if it's right for you</h2>
+        <p>
+          PHV driving suits people who enjoy autonomy, are comfortable with shift patterns including evenings and weekends, and who can deal calmly with a wide range of passengers. It does not suit people who want predictable hours, generous holiday pay or fixed earnings.
+        </p>
+
+        <h2>Step 2 — Check eligibility</h2>
+        <ul>
+          <li>Aged 21 or over.</li>
+          <li>Right to live and work in the UK.</li>
+          <li>Valid driving licence held for at least three years.</li>
+          <li>Medically fit to DVLA Group 2 standard.</li>
+          <li>Able to evidence English at CEFR B1 or higher.</li>
+        </ul>
+
+        <h2>Step 3 — Apply to TfL</h2>
+        <p>
+          Submit your application online through the TfL Taxi and Private Hire portal. Pay the application fee. Upload your supporting documents and book your DBS, medical, English test, Topographical and SERU.
+        </p>
+
+        <h2>Step 4 — Pass the assessments</h2>
+        <p>
+          Use our <C slug="taxi-private-hire">Taxi & Private Hire hub</C> to revise. Aim for 90%+ on every mock before you book the live exam. Read the dedicated guides: <B slug="seru-assessment-guide">SERU</B>, <B slug="topographical-assessment-guide">Topographical</B>, <B slug="private-hire-english-language-requirement">English requirement</B>, <B slug="dbs-check-private-hire-driver">DBS check</B>.
+        </p>
+
+        <h2>Step 5 — Choose an operator</h2>
+        <p>
+          You can only accept bookings through a TfL-licensed operator. Compare commission rates, vehicle requirements (some require ULEZ-compliant cars or specific colours), insurance arrangements and complaint handling. Ask current drivers for honest feedback.
+        </p>
+
+        <h2>Step 6 — Vehicle and insurance</h2>
+        <p>
+          Your vehicle must be licensed as a PHV with TfL or rented from a licensed PHV operator. You'll need hire-and-reward insurance. Read our <B slug="ulez-private-hire-drivers">ULEZ guide</B> before you choose a car.
+        </p>
+
+        <h2>Step 7 — Tax and accounts</h2>
+        <p>
+          Most PHV drivers are self-employed. Register with HMRC, set aside roughly 25–30% of gross earnings for tax and National Insurance, and keep accurate trip and expenses records. The HMRC tax check at every TfL renewal is mandatory — see <T slug="ph-hmrc-tax-check">HMRC tax check practice</T>.
+        </p>
+
+        <h2>Step 8 — First few weeks on the road</h2>
+        <p>
+          Start with shorter shifts to build stamina and learn your operator's app. Track earnings versus hours, fuel and time of day to identify which shifts work best. Keep all records — you'll need them for tax and licence renewal.
+        </p>
+
+        <h2>Long-term success</h2>
+        <p>
+          The drivers who last in this trade share three habits: they keep all paperwork tidy and current; they treat every passenger professionally regardless of mood or fare; and they keep practising the rules even years into the job, because TfL standards evolve. Bookmark our <C slug="taxi-private-hire">Taxi & Private Hire hub</C> and dip back in whenever you renew.
+        </p>
+
+        <p className="text-xs italic text-muted-foreground">
+          Disclaimer: UK Test Hub is independent and not affiliated with Transport for London. Always confirm fees, formats and rules on tfl.gov.uk.
         </p>
       </>
     ),

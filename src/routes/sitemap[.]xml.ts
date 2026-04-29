@@ -11,6 +11,7 @@ const staticUrls = [
   ["/category/professional", "weekly", "0.9"],
   ["/category/nhs", "weekly", "0.9"],
   ["/category/fun", "weekly", "0.9"],
+  ["/category/taxi-private-hire", "weekly", "1.0"],
   ["/blog", "weekly", "0.8"],
   ["/about", "monthly", "0.6"],
   ["/contact", "monthly", "0.6"],

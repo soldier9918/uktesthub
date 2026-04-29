@@ -555,4 +555,71 @@ export const categorySeo: Record<string, CategorySeo> = {
       { q: "Do I need an account to play?", a: "No. Your best scores are stored locally on your device." },
     ],
   },
+
+  "taxi-private-hire": {
+    title: "TfL Taxi & Private Hire Practice 2026 | SERU, Topographical, ULEZ",
+    description:
+      "Free practice tests for London PHV and taxi drivers — TfL SERU, Topographical Assessment, PHV licence, ULEZ, Congestion Charge, safeguarding, English and accessibility.",
+    intro: [
+      "Driving a London private hire vehicle (PHV) or licensed taxi is one of the most regulated jobs on the road. Before you turn the wheel for fares, Transport for London expects you to demonstrate the right knowledge, judgement and language skills — and to keep proving them at every renewal. Our Taxi & Private Hire hub brings every assessment a London driver is likely to face into one free, browser-based practice library so you can revise the SERU, the Topographical Assessment, the PHV licence knowledge, ULEZ and Congestion Charge rules, safeguarding awareness and accessibility duties without juggling ten different sources.",
+      "Everything below is written in plain UK English by a small team that has worked alongside London PHV applicants for years. UK Test Hub is fully independent and is not affiliated with TfL or the Mayor of London — we simply turn the official requirements into structured practice you can fit around shifts, family and study.",
+    ],
+    sections: [
+      {
+        heading: "What London PHV and taxi assessments cover",
+        body: [
+          "The licensing journey begins with proving you are a 'fit and proper person' to hold a TfL licence. That means an Enhanced DBS check, a DVLA Group 2 medical, evidence of your right to work in the UK and an HMRC tax check at every renewal. On top of that, applicants must show English language ability at CEFR B1 or above and pass the Safety, Equality and Regulatory Understanding (SERU) assessment.",
+          "Most new private hire drivers also sit a Topographical Assessment to show they can read maps, plan sensible routes around London and identify major landmarks, postcodes and crossings. Black-cab drivers go much further with the Knowledge of London, but PHV applicants need solid practical orientation, which is exactly what our topographical practice tests rehearse.",
+          "Once licensed, drivers must keep up to date with everyday rules: the Congestion Charge, Ultra Low Emission Zone (ULEZ), safeguarding obligations toward children and vulnerable adults, accessibility duties for wheelchair users and assistance dog owners, badge display requirements and how to handle conduct, complaints and incidents.",
+        ],
+      },
+      {
+        heading: "Why we built a dedicated SERU practice bank",
+        body: [
+          "The SERU assessment is the single biggest hurdle most London PHV applicants face. It is sat at a TfL service centre, includes around 70 questions in fill-the-gap and multiple-choice formats, and tests how well you understand safety, equality and the regulatory framework — not just whether you can recite facts.",
+          "Our SERU mock tests follow the same wording style as the real paper: short scenarios, exact terminology and traps for candidates who guess. Every answer comes with an explanation that links the right behaviour back to the underlying law, such as the Equality Act 2010, the Private Hire Vehicles (London) Act 1998 or TfL's standards for drivers and operators.",
+          "We strongly recommend taking each SERU mock at least twice — once cold to expose gaps, and once after revising — before you book the official assessment. TfL charges a fee for each attempt, and waiting times for resits can easily push your start date back by weeks.",
+        ],
+      },
+      {
+        heading: "Topographical, ULEZ and Congestion Charge practice",
+        body: [
+          "Topographical questions are practical: 'Which is the most direct route from A to B?', 'Which postcode covers Pimlico?', 'Which crossing connects Wapping to Rotherhithe?' Strong candidates use a paper A–Z and a digital map together when they revise. Our quick mocks repeat the most commonly tested junctions, bridges and London airports so the answers become automatic.",
+          "ULEZ and Congestion Charge questions appear in SERU, in TfL's compliance materials and in any operator induction. Our dedicated quizzes cover the operating hours, exemptions, vehicle compliance standards (Euro 4 petrol / Euro 6 diesel for most cars) and what happens if you receive a Penalty Charge Notice. These are the questions passengers ask in the cab too — knowing them confidently is part of the job.",
+        ],
+      },
+      {
+        heading: "Safeguarding, accessibility and conduct",
+        body: [
+          "Modern PHV drivers are expected to recognise safeguarding red flags — child sexual exploitation, county lines, trafficking, vulnerable adults at risk — and to know how and when to report them. Our safeguarding awareness practice rehearses real scenarios you might face on a school run or late-night airport job.",
+          "Accessibility duties are equally serious. Refusing an assistance dog without a medical exemption, or charging extra to a wheelchair user, is a criminal offence under the Equality Act 2010. Our assistance dogs and wheelchair-assistance quizzes cover the legal duties, the practical etiquette and the exemption process.",
+          "Conduct, complaints and incident handling round out the picture. Every quiz emphasises de-escalation, professionalism and the legal responsibility to report road traffic collisions, suspected spiking and any safeguarding concern through the proper channels.",
+        ],
+      },
+      {
+        heading: "How to use this hub",
+        body: [
+          "Start with the SERU and Topographical mocks if you are pre-licence. Book the official assessments only when you are scoring 90%+ on the practice papers two attempts in a row.",
+          "Already licensed? Use the rule-of-the-road quizzes — Congestion Charge, ULEZ, badge rules, HMRC tax check, London PH regulations — as a quick monthly refresher. Things change: the ULEZ expansion in August 2023, the introduction of HMRC tax checks in April 2022 and updates to the Equality Act guidance are recent examples.",
+          "All our practice content is free, mobile-friendly and saves your best scores locally. There is no sign-up, no email required, and no paywall.",
+        ],
+      },
+      {
+        heading: "Independent and unaffiliated",
+        body: [
+          "UK Test Hub is an independent practice platform. We are not affiliated with Transport for London, the Mayor of London, the DVSA, the DVLA or HMRC. Official rules, fees, exam formats and policies are set by those bodies and may change — always confirm key details on tfl.gov.uk and gov.uk before booking. Where we summarise rules, we do so in our own words to avoid copying TfL text directly, and we update content as the rules evolve.",
+        ],
+      },
+    ],
+    faqs: [
+      { q: "Do I need to pass SERU to drive a PHV in London?", a: "Yes. All new PHV applicants must pass the SERU assessment as part of the TfL licensing process." },
+      { q: "Is there a Topographical Assessment for PHV drivers?", a: "Yes. Most new applicants must pass a Topographical Skills Assessment to show they can read maps and plan routes around London." },
+      { q: "What English level do TfL require?", a: "TfL require evidence of English at CEFR B1 or higher, usually through a SELT or a qualifying UK qualification." },
+      { q: "Are PHVs exempt from the Congestion Charge?", a: "Most PHVs are not exempt and must pay; only specific exemptions apply. Licensed London taxis are exempt." },
+      { q: "Does ULEZ cover the whole of London?", a: "Yes. Since August 2023 the Ultra Low Emission Zone applies across all London boroughs." },
+      { q: "Can I refuse an assistance dog if I'm allergic?", a: "Only with a TfL-approved medical exemption certificate displayed in the vehicle. Refusing without one is a criminal offence." },
+      { q: "What is the HMRC tax check?", a: "Since April 2022, you must complete an HMRC tax check before TfL will renew your PHV licence. You receive a 9-character code valid for 120 days." },
+      { q: "Are these tests the official TfL exam?", a: "No. We are an independent platform. Our tests are realistic practice papers; they are not affiliated with TfL." },
+    ],
+  },
 };
