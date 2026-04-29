@@ -591,40 +591,57 @@ function GuidePage() {
                             ],
                             images: [],
                           },
-                        ].map((sub) => (
-                          <div key={sub.heading}>
-                            <h4 className="font-display text-xl font-bold tracking-tight text-foreground md:text-2xl">
-                              {sub.heading}
-                            </h4>
-                            <div className="mt-3 space-y-3">
-                              {sub.paras.map((p, k) => (
-                                <p
-                                  key={k}
-                                  className="text-base leading-[1.75] text-foreground/85 md:text-[17px]"
-                                >
-                                  {p}
-                                </p>
-                              ))}
-                            </div>
-                            {sub.images && sub.images.length > 0 ? (
-                              <div className="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-2">
-                                {sub.images.map((img) => (
-                                  <figure
-                                    key={img.src}
-                                    className="overflow-hidden rounded-xl border border-border bg-white p-2"
-                                  >
-                                    <img
-                                      src={img.src}
-                                      alt={img.alt}
-                                      loading="lazy"
-                                      className="mx-auto block h-auto w-full"
-                                    />
-                                  </figure>
+                        ].map((sub) => {
+                          const blocks =
+                            "blocks" in sub && sub.blocks
+                              ? sub.blocks
+                              : (sub.paras ?? []).map((t, idx) => ({
+                                  text: t,
+                                  images:
+                                    idx === 0 && "images" in sub && sub.images
+                                      ? sub.images
+                                      : [],
+                                }));
+                          return (
+                            <div key={sub.heading}>
+                              <h4 className="font-display text-xl font-bold tracking-tight text-foreground md:text-2xl">
+                                {sub.heading}
+                              </h4>
+                              <div className="mt-3 space-y-6">
+                                {blocks.map((b, k) => (
+                                  <div key={k} className="space-y-4">
+                                    <p className="text-base leading-[1.75] text-foreground/85 md:text-[17px]">
+                                      {b.text}
+                                    </p>
+                                    {b.images && b.images.length > 0 ? (
+                                      <div
+                                        className={
+                                          b.images.length > 1
+                                            ? "grid grid-cols-1 gap-4 sm:grid-cols-2"
+                                            : "grid grid-cols-1 gap-4"
+                                        }
+                                      >
+                                        {b.images.map((img) => (
+                                          <figure
+                                            key={img.src}
+                                            className="overflow-hidden rounded-xl border border-border bg-white p-2"
+                                          >
+                                            <img
+                                              src={img.src}
+                                              alt={img.alt}
+                                              loading="lazy"
+                                              className="mx-auto block h-auto w-full"
+                                            />
+                                          </figure>
+                                        ))}
+                                      </div>
+                                    ) : null}
+                                  </div>
                                 ))}
                               </div>
-                            ) : null}
-                          </div>
-                        ))}
+                            </div>
+                          );
+                        })}
                       </div>
                     ) : null}
 
