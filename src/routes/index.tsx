@@ -130,7 +130,7 @@ function HomePage() {
             <p className="font-display font-semibold uppercase tracking-[0.25em] text-navy-foreground/80 text-5xl">
               Pass your
             </p>
-            <h1 className="mt-3 font-display text-5xl font-extrabold uppercase leading-[0.95] tracking-tight md:text-7xl lg:text-8xl">
+            <h1 className="mt-3 font-display font-extrabold uppercase leading-[0.95] tracking-tight md:text-7xl lg:text-8xl text-9xl font-sans">
               UK Tests
               <br />
               <span className="text-coral">First Time</span>
