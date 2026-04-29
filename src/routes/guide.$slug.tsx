@@ -193,7 +193,9 @@ function GuidePage() {
                         src={p.src}
                         alt={p.alt}
                         loading="lazy"
-                        className="mx-auto block h-auto w-full max-w-3xl"
+                        width={1103}
+                        height={2067}
+                        className="mx-auto block h-auto w-full max-w-4xl"
                       />
                     </figure>
                   </div>
