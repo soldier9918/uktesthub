@@ -1,53 +1,22 @@
-# Replace "And many many more" with "Browse all tests" button → new `/all-tests` page
+# Remove brand badges and badge disclaimer
 
-## What changes on the homepage
+Remove every stylised brand badge (TfL, DVSA, Home Office, IELTS, CSCS, NMC, SIA, ESOL, Food Hygiene, First Aid, etc.) and the accompanying "Logos shown are stylised badges…" disclaimer.
 
-In the **Popular Mock Tests** panel, the current italic "AND MANY MANY MORE" caption is replaced by a coral CTA button:
+## Edits
 
-```text
-┌──────────────────────────────────┐
-│ POPULAR MOCK TESTS               │
-│  …13 tests with badges…          │
-├──────────────────────────────────┤
-│      [ Browse all tests → ]      │
-└──────────────────────────────────┘
-```
+1. **`src/routes/index.tsx`**
+   - Popular Mock Tests panel: remove the `<TestBadge>` from each row and the disclaimer paragraph below the "Browse all tests" button.
+   - Featured Mock Tests cards: remove the `<TestBadge>` overlay in the top-right of the image.
+   - Popular Categories tiles: remove the small badge row and its surrounding logic.
+   - Drop the now-unused imports: `TestBadge`, `BadgeKey`, `badgeForSlug`, and the `badge` field from the `featured` array.
 
-The button links to a new route `/all-tests`.
+2. **`src/routes/all-tests.tsx`**
+   - Replace each `<TestBadge>` in the test cards with the existing `<ListChecks>` arrow-style layout (no logo, just title + meta + "View test").
+   - Remove the disclaimer paragraph at the bottom.
+   - Drop unused imports.
 
-## New page: `/all-tests`
+3. **Delete files** (no longer referenced):
+   - `src/components/TestBadge.tsx`
+   - `src/data/test-logos.ts`
 
-A full directory of every mock test on the site, grouped by category and clearly searchable.
-
-**Layout**
-- Standard `SiteHeader` + `SiteFooter`.
-- Hero strip: title "All UK Mock Tests", short intro, total test count.
-- Sticky search box + category filter chips (All, Driving, Citizenship, English, Taxi & Private Hire, NHS, Construction, Security, …).
-- For each category: a section header with the category name and short description, then a responsive grid of test cards. Each card shows:
-  - Stylised brand badge (`TestBadge` — same component already in use)
-  - Test title
-  - Question count + time limit (when the quiz exists in `getQuiz`)
-  - Subtle "View test →" affordance
-- Cards link to `/topic/$slug` (the existing topic page) so deep-linking already works.
-
-**Data source**
-- Iterate `categories` from `src/data/categories.ts` and flatten each category's `topics` array. This is the existing single source of truth, so the page automatically stays in sync as new tests are added (e.g. SERU, Topographical, ULEZ, CSCS, NMC, etc.).
-- Use `badgeForSlug` from `src/data/test-logos.ts` for each badge.
-- Use `getQuiz(slug)` from `src/data/quizzes.ts` to display question count + duration when available.
-
-**Search**
-- Client-side filter on `title` + category name, no extra deps. Empty state: "No tests match '…'".
-
-**SEO (`head()`)**
-- Title: "All UK Mock Tests — Free Practice for DVSA, TfL, IELTS, CSCS, NMC & more | UK Test Hub"
-- Description: lists the main bodies covered.
-- Own og:title / og:description (no copying from index).
-
-## Files
-
-- new: `src/routes/all-tests.tsx` — the directory page
-- edit: `src/routes/index.tsx` — replace the "And many many more" `<p>` in the Popular Mock Tests aside with a `<Link to="/all-tests">` styled as a coral button
-- edit: `src/components/SiteFooter.tsx` — add "All Tests" to the footer links (small win for discoverability)
-- edit: `public/sitemap.xml` and `src/routes/sitemap[.]xml.ts` — add `/all-tests`
-
-No data files change. No new dependencies.
+No other pages or copy change.
