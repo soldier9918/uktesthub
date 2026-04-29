@@ -200,7 +200,7 @@ function HomePage() {
                   { slug: "sia", label: "SIA Tests" },
                   { slug: "esol", label: "ESOL Tests" },
                   
-                  { slug: "logical-reasoning", label: "Logical Reasoning Tests" },
+                  
                   { slug: "food-hygiene", label: "Food Hygiene Tests" },
                   { slug: "first-aid", label: "First Aid Tests" },
                 ].map((t) => (
