@@ -138,10 +138,9 @@ function GuidePage() {
             {/* THE SIGNING SYSTEM (only on road-signs guide) */}
             {topic.slug === "road-signs" ? (
               <section className="mt-12 rounded-3xl border border-border bg-white p-6 md:p-10">
-                <h2 className="font-sans text-4xl font-black tracking-tight md:text-5xl" style={{ color: "#1f78d1" }}>
+                <h2 className="font-sans text-4xl font-black tracking-tight md:text-5xl" style={{ color: "#1f78d1", fontFamily: '"Segoe UI", "Helvetica Neue", Arial, sans-serif' }}>
                   The signing system
                 </h2>
-                <div className="mt-3 h-1 w-16 rounded-full bg-coral" />
                 <p className="mt-4 max-w-3xl font-sans text-base font-bold leading-snug md:text-lg" style={{ color: "#0c2340" }}>
                   There are three basic types of traffic sign: signs that give
                   orders, signs that warn, and signs that give information. Each
