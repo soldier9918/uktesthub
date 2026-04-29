@@ -124,6 +124,12 @@ function HomePage() {
           aria-hidden
           className="absolute inset-0 bg-gradient-to-r from-navy-deep/70 via-navy-deep/55 to-navy-deep/20"
         />
+        <div
+          aria-hidden
+          className="pointer-events-none absolute -top-10 -right-10 hidden h-72 w-[28rem] rotate-[8deg] opacity-25 mix-blend-screen md:block lg:opacity-30"
+        >
+          <UnionJack className="h-full w-full" />
+        </div>
 
         <div className="relative mx-auto grid max-w-7xl gap-10 px-4 pb-16 pt-6 md:px-6 md:pb-24 md:pt-8 lg:grid-cols-[1fr_360px] lg:items-center">
           <div>
