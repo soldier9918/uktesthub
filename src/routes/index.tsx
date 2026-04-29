@@ -183,16 +183,16 @@ function HomePage() {
               </div>
               <ul className="mt-3 space-y-0.5">
                 {[
+                  { slug: "seru", label: "SERU Tests" },
+                  { slug: "topographical", label: "Topographical Tests" },
+                  { slug: "phv-licence", label: "Private Hire Licence Tests" },
+                  { slug: "congestion-charge", label: "Congestion Charge Tests" },
+                  { slug: "ulez", label: "ULEZ Tests" },
                   { slug: "driving-theory", label: "Driving Theory Tests" },
                   { slug: "life-in-the-uk", label: "Life in the UK Tests" },
                   { slug: "ielts", label: "IELTS Tests" },
                   { slug: "cscs", label: "CSCS Tests" },
-                  { slug: "seru", label: "SERU Tests" },
                   { slug: "nmc-cbt", label: "NMC CBT Tests" },
-                  { slug: "sia", label: "SIA Tests" },
-                  { slug: "esol", label: "ESOL Tests" },
-                  { slug: "motorcycle-theory", label: "Motorcycle Tests" },
-                  { slug: "numerical", label: "Numerical Tests" },
                 ].map((t) => (
                   <li key={t.label}>
                     <Link
