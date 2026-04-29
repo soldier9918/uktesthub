@@ -17,6 +17,7 @@ import heroTeaching from "@/assets/cat-hero-teaching.jpg";
 import heroLegal from "@/assets/cat-hero-legal.jpg";
 import heroMilitary from "@/assets/cat-hero-military.jpg";
 import heroMaritimeAviation from "@/assets/cat-hero-maritime-aviation.jpg";
+import heroGovernment from "@/assets/cat-hero-government.jpg";
 
 export type Category = {
   slug: string;
@@ -342,6 +343,22 @@ export const categories: Category[] = [
       { slug: "ppl-meteorology", title: "PPL Meteorology" },
       { slug: "rya-day-skipper", title: "RYA Day Skipper Theory" },
       { slug: "atpl-basics", title: "ATPL Basics Practice" },
+    ],
+  },
+  {
+    slug: "government",
+    title: "Government & Civil Service",
+    short: "CSJT, Civil Service Verbal & Numerical, Border Force",
+    description:
+      "Free practice for UK Civil Service and government recruitment — Civil Service Judgement Test (CSJT), Verbal and Numerical Reasoning and the Border Force entry test.",
+    icon: "Landmark",
+    accent: "gold",
+    heroImage: heroGovernment,
+    topics: [
+      { slug: "csjt", title: "Civil Service Judgement Test (CSJT)" },
+      { slug: "cs-verbal", title: "Civil Service Verbal Reasoning" },
+      { slug: "cs-numerical", title: "Civil Service Numerical Reasoning" },
+      { slug: "border-force", title: "Border Force Recruitment Test" },
     ],
   },
 ];
