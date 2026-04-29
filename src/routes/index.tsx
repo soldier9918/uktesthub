@@ -20,6 +20,7 @@ import { UnionJack } from "@/components/UnionJack";
 import { categories } from "@/data/categories";
 import { getDailyQuiz, getQuiz } from "@/data/quizzes";
 import { blogPosts } from "@/data/blog";
+// (TestBadge removed)
 
 const latestPosts = [...blogPosts]
   .sort((a, b) => (a.datePublished < b.datePublished ? 1 : -1))
