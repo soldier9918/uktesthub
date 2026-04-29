@@ -176,15 +176,12 @@ function HomePage() {
           {/* Popular tests panel */}
           <aside className="relative hidden lg:block">
             <div className="rounded-2xl border border-white/15 bg-navy-deep/70 p-5 shadow-elevated backdrop-blur-md">
-              <div className="flex items-center justify-between border-b border-white/10 pb-3">
+              <div className="border-b border-white/10 pb-3">
                 <span className="font-display text-xs font-bold uppercase tracking-[0.2em] text-coral">
                   Popular Mock Tests
                 </span>
-                <span className="rounded-full bg-coral/20 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-coral">
-                  18+
-                </span>
               </div>
-              <ul className="mt-3 max-h-[460px] space-y-0.5 overflow-y-auto pr-1">
+              <ul className="mt-3 space-y-0.5">
                 {[
                   { slug: "driving-theory", label: "Driving Theory Tests" },
                   { slug: "life-in-the-uk", label: "Life in the UK Tests" },
@@ -199,17 +196,12 @@ function HomePage() {
                   { slug: "logical", label: "Logical Reasoning Tests" },
                   { slug: "food-hygiene", label: "Food Hygiene Tests" },
                   { slug: "first-aid", label: "First Aid Tests" },
-                  { slug: "grammar", label: "Grammar Tests" },
-                  { slug: "grammar", label: "Vocabulary Tests" },
-                  { slug: "gcse-maths", label: "GCSE Maths Tests" },
-                  { slug: "gcse-english", label: "GCSE English Tests" },
-                  { slug: "sats", label: "SATs KS1 / KS2 Tests" },
                 ].map((t) => (
                   <li key={t.label}>
                     <Link
                       to="/topic/$slug"
                       params={{ slug: t.slug }}
-                      className="group flex items-center justify-between gap-3 rounded-lg px-3 py-2 text-sm font-medium text-navy-foreground/90 transition-colors hover:bg-white/10 hover:text-coral"
+                      className="group flex items-center justify-between gap-3 rounded-lg px-3 py-1.5 text-sm font-medium text-navy-foreground/90 transition-colors hover:bg-white/10 hover:text-coral"
                     >
                       <span className="truncate">{t.label}</span>
                       <ArrowRight className="h-3.5 w-3.5 shrink-0 text-coral opacity-0 transition-opacity group-hover:opacity-100" />
