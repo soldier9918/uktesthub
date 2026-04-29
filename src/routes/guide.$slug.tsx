@@ -131,7 +131,7 @@ function GuidePage() {
                   key={i}
                   className="text-lg leading-relaxed text-muted-foreground md:text-xl"
                 >
-                  {p}
+                  {renderInlineLinks(p)}
                 </p>
               ))}
             </div>
