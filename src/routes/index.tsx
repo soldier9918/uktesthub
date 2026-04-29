@@ -333,6 +333,9 @@ function HomePage() {
                           Most Popular
                         </span>
                       )}
+                      <span className="absolute right-3 top-3">
+                        <TestBadge badge={f.badge} size="md" />
+                      </span>
                     </div>
                     <div className="flex flex-1 flex-col p-4">
                       <h3 className="font-display text-sm font-bold leading-tight text-foreground">
