@@ -364,9 +364,172 @@ export const topicSeo: Record<string, TopicSeo> = {
       { q: "Is the test accepted for both ILR and citizenship?", a: "Yes, the same pass certificate is valid for both." },
     ],
   },
-  "british-citizenship": generic("British Citizenship Practice", "the UK Home Office", "an extra layer of practice questions on top of the Life in the UK Test, focused on the rights, responsibilities and ceremony of becoming a British citizen"),
-  "uk-laws-rights": generic("UK Laws & Rights Quiz", "the Ministry of Justice", "a knowledge check on the everyday laws and rights every UK resident is expected to know — equality, employment, consumer protection, criminal and civil law"),
-  "uk-geography": generic("UK Geography Test", "Ordnance Survey and the Office for National Statistics", "a focused quiz on UK nations, regions, capital cities, mountains, rivers and key landmarks — useful preparation alongside the Life in the UK Test"),
+  "british-citizenship": {
+    title: "British Citizenship Test Guide 2026 — Naturalisation, Ceremony & Oath",
+    description:
+      "Free British Citizenship guide for 2026. Naturalisation rules, residency requirements, the Life in the UK Test, the citizenship ceremony and oath — with practice questions.",
+    tagline: "From ILR to British passport — the naturalisation route explained.",
+    intro: [
+      "British citizenship by naturalisation is the final step for most adult migrants who already hold Indefinite Leave to Remain (ILR). Once granted, you can hold a British passport, vote in all UK elections, stand for public office and pass citizenship to your children born outside the UK. The Home Office charges £1,630 in 2026 (adult application) and decisions usually take three to six months.",
+      "This guide covers exactly what the Home Office checks, the residency maths most applicants get wrong, and what happens at the citizenship ceremony. Use the practice questions below to lock in the facts you'll need both for the Life in the UK Test and for any interview the Home Office may request.",
+    ],
+    sections: [
+      {
+        heading: "Who qualifies for naturalisation",
+        body: [
+          "You must be 18 or over, of sound mind and 'good character' (no recent unspent convictions, no immigration breaches, paid taxes). You'll normally need ILR or settled status held for at least 12 months — unless you're married to a British citizen, in which case there's no 12-month wait.",
+          "Residency: at least five years lawfully in the UK before the application date (three if married to a British citizen), with no more than 450 days outside the UK in those five years (270 if the three-year route) and no more than 90 days outside in the final 12 months.",
+        ],
+      },
+      {
+        heading: "Knowledge of life and language",
+        body: [
+          "You must pass the Life in the UK Test (24 questions, 18 to pass, £50). You also need to prove English at CEFR B1 or above — usually with a Secure English Language Test (SELT) certificate or a degree taught in English. People over 65 are exempt from both.",
+          "Both certificates are kept by you and uploaded with the AN form. They have no expiry for citizenship purposes once issued.",
+        ],
+      },
+      {
+        heading: "The application — Form AN",
+        body: [
+          "Apply online at gov.uk using Form AN. You'll need two referees (one professional, one British citizen who has known you 3+ years), your passport, BRP, Life in the UK certificate, English evidence and a complete travel history for the qualifying period — to the day.",
+          "The biggest cause of refusal is missing or wrong absence dates. Get them from your passport stamps, airline emails and the new ETA / EES record before you start. A single overlooked trip can fail the residency requirement.",
+        ],
+      },
+      {
+        heading: "The citizenship ceremony and oath",
+        body: [
+          "If approved, you have 90 days to attend a ceremony at your local council. You take an Oath of Allegiance to the King (or a non-religious Affirmation) and a Pledge to the UK, then receive your naturalisation certificate. Only after the ceremony can you apply for a British passport.",
+          "Ceremonies are usually small group events; you can bring two guests. Smart dress is expected. The council fee (£80) is included in the £1,630 application charge.",
+        ],
+      },
+      {
+        heading: "Common reasons for refusal",
+        body: [
+          "Failing the good-character test (recent driving offences, unpaid council tax, undeclared cash work). Exceeding absence limits. Incorrect referee details. Forgetting to update HMRC after a name or address change. The Home Office cross-checks DWP, HMRC and police records — declare everything.",
+          "If refused you can request a reconsideration (£372) within 28 days. Most successful reconsiderations turn on new evidence rather than legal argument.",
+        ],
+      },
+    ],
+    faqs: [
+      { q: "How long does British citizenship take?", a: "Three to six months from a complete application. Complex cases (criminal record, long absences) can take 12 months." },
+      { q: "How much does it cost in 2026?", a: "£1,630 for an adult application, including the £80 ceremony fee. Children pay £1,214." },
+      { q: "Do I need to give up my old citizenship?", a: "The UK allows dual nationality, but check your home country's rules — some (India, China, Singapore) automatically revoke citizenship if you naturalise elsewhere." },
+      { q: "What's the absence limit?", a: "No more than 450 days outside the UK in the five years before applying, and no more than 90 days in the final 12 months." },
+      { q: "Can I apply before I get ILR?", a: "Only if married to a British citizen and already settled. Everyone else needs ILR plus 12 months." },
+      { q: "What happens at the ceremony?", a: "You take the Oath (or Affirmation) and Pledge in front of a council registrar, then receive your naturalisation certificate. Two guests welcome." },
+    ],
+  },
+  "uk-laws-rights": {
+    title: "UK Laws & Rights Quiz Guide — Everyday Law for Residents",
+    description:
+      "Free guide to UK everyday laws and rights. Equality Act, employment rights, consumer protection, criminal vs civil law, police powers — with practice questions.",
+    tagline: "The laws every UK resident is expected to know — explained simply.",
+    intro: [
+      "Everyone living in the UK — citizen, settled migrant or visa holder — is expected to follow British law and know their basic rights. Many of these rules also appear on the Life in the UK Test, the SIA security exams and most professional licensing tests.",
+      "This guide summarises the laws and rights you encounter day to day: at work, when shopping, when stopped by police, and when something goes wrong. Use the practice quiz to check what you've learned.",
+    ],
+    sections: [
+      {
+        heading: "Equality and human rights",
+        body: [
+          "The Equality Act 2010 makes it illegal to discriminate against anyone because of nine 'protected characteristics': age, disability, gender reassignment, marriage and civil partnership, pregnancy and maternity, race, religion or belief, sex, and sexual orientation.",
+          "The Human Rights Act 1998 brings the European Convention on Human Rights into UK law. Key rights include the right to life, to a fair trial, to private and family life, and freedom of expression. These apply to everyone in the UK regardless of immigration status.",
+        ],
+      },
+      {
+        heading: "Employment rights",
+        body: [
+          "From day one of work you have the right to a written statement of terms, the National Minimum Wage (£11.44+ for 21 and over in 2024/25, rising annually), protection from unlawful discrimination, and itemised payslips. Statutory sick pay starts after four days off sick.",
+          "After two years' continuous service you gain protection from unfair dismissal and the right to statutory redundancy pay. Holiday entitlement is 5.6 weeks per year (28 days for a five-day week, including bank holidays).",
+        ],
+      },
+      {
+        heading: "Consumer protection",
+        body: [
+          "The Consumer Rights Act 2015 says goods must be of satisfactory quality, fit for purpose and as described. You can reject faulty goods for a full refund within 30 days. After that, the seller gets one chance to repair or replace.",
+          "Online and distance purchases give you 14 days to change your mind under the Consumer Contracts Regulations — no reason needed. Doorstep sales have the same 14-day cooling-off period.",
+        ],
+      },
+      {
+        heading: "Criminal vs civil law",
+        body: [
+          "Criminal law deals with offences against the state — theft, assault, fraud, driving offences. Cases are brought by the Crown Prosecution Service in the Magistrates' Court (less serious) or Crown Court (jury trial). The standard of proof is 'beyond reasonable doubt'.",
+          "Civil law deals with disputes between individuals or organisations — contract breaches, debt, family matters, negligence. Cases are heard in the County Court or High Court and the standard is 'balance of probabilities'.",
+        ],
+      },
+      {
+        heading: "Police powers and your rights",
+        body: [
+          "Police can stop and search you under PACE 1984 if they have reasonable grounds to suspect you're carrying stolen or prohibited items. They must tell you their name, station, and the reason for the search, and give you a written record on request.",
+          "If arrested you have the right to free legal advice, to have someone informed of your arrest, and to see the codes of practice. You can normally be held for up to 24 hours without charge (96 with magistrates' approval).",
+        ],
+      },
+    ],
+    faqs: [
+      { q: "What are the nine protected characteristics?", a: "Age, disability, gender reassignment, marriage/civil partnership, pregnancy/maternity, race, religion or belief, sex, and sexual orientation." },
+      { q: "What's the UK minimum wage in 2026?", a: "Updated each April. From April 2025 the National Living Wage applies to all workers aged 21 and over. Check gov.uk/national-minimum-wage-rates for the current figure." },
+      { q: "How long can I be held without charge?", a: "Normally 24 hours, extendable to 36 by a senior officer and to 96 by a magistrate. Terrorism cases can be longer." },
+      { q: "What's the difference between civil and criminal court?", a: "Criminal courts decide if someone broke the law and punish them. Civil courts decide private disputes and order remedies like compensation." },
+      { q: "Can I get a refund on a faulty item?", a: "Yes — full refund within 30 days under the Consumer Rights Act 2015. After that the seller can offer repair or replacement first." },
+      { q: "Do these rights apply to non-citizens?", a: "Most do. The Equality Act, Human Rights Act, employment rights and consumer rights apply to everyone lawfully in the UK." },
+    ],
+  },
+  "uk-geography": {
+    title: "UK Geography Test Guide — Nations, Capitals, Rivers & Landmarks",
+    description:
+      "Free UK Geography quiz guide. Four nations, capital cities, mountains, rivers, regions and landmarks — perfect alongside the Life in the UK Test.",
+    tagline: "The places, regions and landmarks every UK resident should recognise.",
+    intro: [
+      "UK geography appears throughout the Life in the UK Test, school SATs, GCSE Geography and many quiz nights. Beyond exams, knowing the nations, capitals and major regions helps you navigate news, weather forecasts and everyday conversation in Britain.",
+      "This guide covers the four nations, the major cities, mountains, rivers and the cultural landmarks that define each part of the UK. Use the practice quiz to test recall.",
+    ],
+    sections: [
+      {
+        heading: "The four nations",
+        body: [
+          "The United Kingdom is made up of four countries: England (capital London), Scotland (Edinburgh), Wales (Cardiff) and Northern Ireland (Belfast). Together they form 'the UK' — but 'Great Britain' refers only to England, Scotland and Wales (the largest island).",
+          "The British Isles is a wider geographical term that also includes the Republic of Ireland, the Isle of Man and the Channel Islands. The Republic of Ireland is an independent country, not part of the UK.",
+        ],
+      },
+      {
+        heading: "Capital cities and population centres",
+        body: [
+          "London is the UK capital and by far the largest city (around 9 million). Other major English cities: Birmingham, Manchester, Liverpool, Leeds, Sheffield, Bristol, Newcastle. Scotland's largest city is Glasgow (capital is Edinburgh). Wales: Cardiff and Swansea. Northern Ireland: Belfast and Derry/Londonderry.",
+          "England has nine official regions, including London, the South East, North West and Yorkshire & the Humber. Scotland is divided into 32 council areas; Wales into 22 principal areas; Northern Ireland into 11 districts.",
+        ],
+      },
+      {
+        heading: "Mountains, rivers and coast",
+        body: [
+          "Highest peaks: Ben Nevis in Scotland (1,345 m — highest in the UK), Snowdon / Yr Wyddfa in Wales (1,085 m), Scafell Pike in England (978 m), Slieve Donard in Northern Ireland (850 m).",
+          "Longest rivers: Severn (354 km — flows from Wales through England), Thames (346 km — through London), Trent, Great Ouse, Wye. The Lake District (England) and Loch Lomond (Scotland) are the most famous lakes; Loch Ness is the deepest.",
+        ],
+      },
+      {
+        heading: "Famous landmarks",
+        body: [
+          "Stonehenge (Wiltshire), Hadrian's Wall (Northumberland), the Tower of London, Buckingham Palace, Big Ben (the Elizabeth Tower), Edinburgh Castle, Snowdonia / Eryri National Park, the Giant's Causeway (Northern Ireland), the White Cliffs of Dover, the Angel of the North (Gateshead).",
+          "Many appear in Life in the UK Test questions — learn at least one famous landmark per nation and the era it dates from.",
+        ],
+      },
+      {
+        heading: "Patron saints and national symbols",
+        body: [
+          "Each nation has a patron saint and a feast day: St George (England, 23 April), St Andrew (Scotland, 30 November), St David (Wales, 1 March), St Patrick (Northern Ireland, 17 March).",
+          "National flowers: rose (England), thistle (Scotland), daffodil/leek (Wales), shamrock (Northern Ireland). The Union Jack combines the crosses of St George, St Andrew and St Patrick — Wales is not represented because it was already part of the Kingdom of England when the flag was designed.",
+        ],
+      },
+    ],
+    faqs: [
+      { q: "What's the difference between the UK and Great Britain?", a: "Great Britain = England, Scotland, Wales (the main island). The UK = Great Britain plus Northern Ireland." },
+      { q: "What is the highest mountain in the UK?", a: "Ben Nevis in Scotland, at 1,345 metres." },
+      { q: "What is the longest river in the UK?", a: "The River Severn at 354 km, rising in Wales and flowing through England to the Bristol Channel." },
+      { q: "When are the patron saints' days?", a: "St David 1 March (Wales), St Patrick 17 March (NI), St George 23 April (England), St Andrew 30 November (Scotland)." },
+      { q: "Why isn't Wales on the Union Jack?", a: "Wales was already united with England when the flag was created, so it wasn't shown as a separate kingdom." },
+    ],
+  },
+
+  // -------- ENGLISH ---------------------------------------------------
 
   // -------- ENGLISH ---------------------------------------------------
   ielts: {
