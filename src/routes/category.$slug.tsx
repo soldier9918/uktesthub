@@ -78,7 +78,7 @@ function CategoryPage() {
               Practice Hub
             </span>
           </div>
-          <h1 className="mt-5 font-display font-extrabold uppercase leading-tight tracking-tight md:text-6xl font-sans text-7xl">
+          <h1 className="mt-5 font-sans font-black uppercase leading-[0.95] tracking-tight text-6xl md:text-7xl lg:text-8xl">
             {category.title}
           </h1>
           <div className="mt-3 h-1 w-16 rounded-full bg-coral" />
