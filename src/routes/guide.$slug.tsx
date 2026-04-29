@@ -305,6 +305,104 @@ function GuidePage() {
               </section>
             ) : null}
 
+            {/* SIGN SHAPES EXPLAINED */}
+            {topic.slug === "road-signs" ? (
+              <section className="mt-12 space-y-10">
+                {/* Circular */}
+                <div>
+                  <h3 className="font-display text-2xl font-extrabold tracking-tight text-foreground md:text-3xl">
+                    Circular road signs
+                  </h3>
+                  <div className="mt-4 space-y-4 text-base leading-relaxed text-muted-foreground md:text-lg">
+                    <p>
+                      Circular road signs give orders that you must follow by
+                      law, which is why they're often called{" "}
+                      <strong className="text-foreground">regulatory signs</strong>.
+                    </p>
+                    <p>
+                      Circles with a red border tell you what you{" "}
+                      <strong className="text-foreground">must not</strong> do,
+                      while blue circles usually give a positive instruction —
+                      something you{" "}
+                      <strong className="text-foreground">must</strong> do.
+                    </p>
+                    <p>
+                      Every circular sign is mandatory and has to be obeyed.
+                      Some carry a diagonal red line through the symbol to make
+                      the prohibition clearer.
+                    </p>
+                    <p>
+                      Common red circles include <em>no U-turns</em> and{" "}
+                      <em>no entry</em>. Common blue circles include{" "}
+                      <em>turn left ahead</em> and <em>proceed right only</em>.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Triangular */}
+                <div className="border-t border-border pt-10">
+                  <h3 className="font-display text-2xl font-extrabold tracking-tight text-foreground md:text-3xl">
+                    Triangular road signs
+                  </h3>
+                  <div className="mt-4 space-y-4 text-base leading-relaxed text-muted-foreground md:text-lg">
+                    <p>
+                      Triangular signs are warning signs. They alert you to
+                      something ahead — a change in the road layout, a
+                      junction, or a hazard you need to prepare for.
+                    </p>
+                    <p>
+                      They always have a red border to flag the risk and tell
+                      you to slow down and look.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Rectangular */}
+                <div className="border-t border-border pt-10">
+                  <h3 className="font-display text-2xl font-extrabold tracking-tight text-foreground md:text-3xl">
+                    Rectangular road signs
+                  </h3>
+                  <div className="mt-4 space-y-4 text-base leading-relaxed text-muted-foreground md:text-lg">
+                    <p>
+                      Rectangular signs inform you, and most direction signs
+                      use this shape. The colour tells you what kind of road
+                      you're on.
+                    </p>
+                    <p>
+                      <strong className="text-foreground">Blue rectangles</strong>{" "}
+                      give information on motorways and can also describe the
+                      nature of other roads.
+                    </p>
+                    <p>
+                      <strong className="text-foreground">Green rectangles</strong>{" "}
+                      direct you along primary routes, such as A-roads.
+                    </p>
+                    <p>
+                      <strong className="text-foreground">White rectangles</strong>{" "}
+                      direct you on minor roads or point you toward parking.
+                      Smaller white plates often sit beneath a triangular or
+                      circular sign — for example, to apply a specific speed
+                      limit. White rectangles are also used as the base for
+                      larger information signs that mix text with smaller
+                      triangular or circular symbols.
+                    </p>
+                    <p>
+                      Rectangular signs also mark bus lanes and congestion
+                      charge zones.
+                    </p>
+                    <p>
+                      <strong className="text-foreground">Brown rectangles</strong>{" "}
+                      direct drivers to tourist attractions and facilities.
+                    </p>
+                    <p>
+                      <strong className="text-foreground">Yellow rectangles</strong>{" "}
+                      generally relate to traffic routing through roadworks.
+                    </p>
+                  </div>
+                </div>
+              </section>
+            ) : null}
+
             {/* OFFICIAL ROAD SIGNS REFERENCE */}
             {topic.slug === "road-signs" ? (
               <section className="mt-12">
