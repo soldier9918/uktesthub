@@ -6,7 +6,7 @@ import { CategoryIcon, accentClasses } from "@/components/CategoryIcon";
 import { getCategory, categories } from "@/data/categories";
 import { categorySeo } from "@/data/category-seo";
 import { TOTAL_MOCKS_PER_TOPIC, QUESTIONS_PER_MOCK, listMockSlots } from "@/data/mocks";
-import { Home, ChevronRight, ArrowRight } from "lucide-react";
+import { Home, ChevronRight, ArrowRight, BookOpen } from "lucide-react";
 import { pageMeta, faqSchema, breadcrumbSchema } from "@/lib/seo";
 
 export const Route = createFileRoute("/category/$slug")({
@@ -95,21 +95,63 @@ function CategoryPage() {
           <div>
             <div className="border-b border-border pb-3">
               <h2 className="font-display text-2xl font-extrabold tracking-tight md:text-3xl">
-                Choose a test
+                Choose a guide or jump into a test
               </h2>
               <p className="mt-1 text-sm text-muted-foreground">
-                Each test below has {TOTAL_MOCKS_PER_TOPIC} mock papers, with{" "}
-                {QUESTIONS_PER_MOCK} questions and full explanations.
+                Read the guide on the left for tips and exam info, or start
+                practising on the right. Each test has{" "}
+                {TOTAL_MOCKS_PER_TOPIC} mock papers, with {QUESTIONS_PER_MOCK}{" "}
+                questions and full explanations.
               </p>
             </div>
 
-            <div className="mt-6 grid gap-5 sm:grid-cols-2">
-              {category.topics.map((t) => {
+            <div className="mt-6 grid grid-cols-1 gap-5 md:grid-cols-2">
+              {category.topics.flatMap((t) => {
                 const slots = listMockSlots(t.slug);
                 const available = slots.filter((s) => s.available).length;
-                return (
+                return [
+                  // GUIDE CARD (left column)
                   <Link
-                    key={t.slug}
+                    key={`${t.slug}-guide`}
+                    to="/guide/$slug"
+                    params={{ slug: t.slug }}
+                    aria-label={`Read the ${t.title} guide`}
+                    className="group relative flex h-full flex-col justify-between overflow-hidden rounded-2xl border border-border bg-card p-6 shadow-soft transition-all duration-200 hover:-translate-y-0.5 hover:border-coral/40 hover:shadow-elevated"
+                  >
+                    <div>
+                      <div className="flex items-start gap-4">
+                        <span
+                          className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-xl ${accentClasses[category.accent]}`}
+                        >
+                          <BookOpen className="h-6 w-6" />
+                        </span>
+                        <div className="min-w-0">
+                          <p className="text-[11px] font-semibold uppercase tracking-wider text-coral">
+                            Test Guide
+                          </p>
+                          <h3 className="mt-0.5 font-display text-lg font-bold leading-tight text-foreground">
+                            {t.title} Guide
+                          </h3>
+                          <p className="mt-1 text-xs text-muted-foreground">
+                            Format, tips and how to pass first time
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="mt-6 flex items-center justify-between border-t border-border pt-4">
+                      <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+                        ~7 min read
+                      </span>
+                      <span className="inline-flex items-center gap-1 text-sm font-semibold text-coral group-hover:gap-2 transition-all">
+                        Read the guide
+                        <ArrowRight className="h-4 w-4" />
+                      </span>
+                    </div>
+                  </Link>,
+
+                  // TEST CARD (right column)
+                  <Link
+                    key={`${t.slug}-test`}
                     to="/topic/$slug"
                     params={{ slug: t.slug }}
                     aria-label={`Open ${t.title} — ${TOTAL_MOCKS_PER_TOPIC} free mock tests`}
@@ -123,10 +165,13 @@ function CategoryPage() {
                           <CategoryIcon name={category.icon} className="h-6 w-6" />
                         </span>
                         <div className="min-w-0">
-                          <h3 className="font-display text-lg font-bold leading-tight text-foreground">
+                          <p className="text-[11px] font-semibold uppercase tracking-wider text-muted-foreground">
+                            Practice Test
+                          </p>
+                          <h3 className="mt-0.5 font-display text-lg font-bold leading-tight text-foreground">
                             {t.title}
                           </h3>
-                          <p className="mt-1 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+                          <p className="mt-1 text-xs text-muted-foreground">
                             {TOTAL_MOCKS_PER_TOPIC} mock tests · {QUESTIONS_PER_MOCK} questions each
                           </p>
                         </div>
@@ -141,8 +186,8 @@ function CategoryPage() {
                         <ArrowRight className="h-4 w-4" />
                       </span>
                     </div>
-                  </Link>
-                );
+                  </Link>,
+                ];
               })}
             </div>
           </div>

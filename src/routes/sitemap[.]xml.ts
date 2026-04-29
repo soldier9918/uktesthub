@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { blogPosts } from "@/data/blog";
+import { categories } from "@/data/categories";
 
 const staticUrls = [
   ["/", "daily", "1.0"],
@@ -40,11 +41,19 @@ const staticUrls = [
   ["/exam-updates", "weekly", "0.6"],
 ] as const;
 
+const topicUrls = categories.flatMap((c) =>
+  c.topics.flatMap((t) => [
+    `  <url><loc>https://www.uktesthub.com/topic/${t.slug}</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>`,
+    `  <url><loc>https://www.uktesthub.com/guide/${t.slug}</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>`,
+  ]),
+);
+
 const urls = [
   ...staticUrls.map(
     ([p, cf, pr]) =>
       `  <url><loc>https://www.uktesthub.com${p}</loc><changefreq>${cf}</changefreq><priority>${pr}</priority></url>`,
   ),
+  ...topicUrls,
   ...blogPosts.map(
     (post) =>
       `  <url><loc>https://www.uktesthub.com/blog/${post.slug}</loc><lastmod>${post.dateModified ?? post.datePublished}</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>`,
