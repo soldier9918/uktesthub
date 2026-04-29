@@ -136,45 +136,6 @@ function GuidePage() {
               ))}
             </div>
 
-            {/* ROAD MARKINGS REFERENCE (only on road-signs guide) */}
-            {topic.slug === "road-signs" ? (
-              <section className="mt-12">
-                <span className="inline-flex items-center rounded-full bg-coral/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-coral">
-                  Official reference
-                </span>
-                <h2 className="mt-4 font-sans text-4xl font-black tracking-tight md:text-5xl" style={{ color: "#1f78d1", fontFamily: '"Segoe UI", "Helvetica Neue", Arial, sans-serif' }}>
-                  Road markings
-                </h2>
-                <div className="mt-3 h-1 w-16 rounded-full bg-coral" />
-                <p className="mt-4 max-w-3xl text-base text-muted-foreground md:text-lg">
-                  Road markings carry instructions and warnings just like upright
-                  signs. The official Highway Code groups them by where they
-                  appear — across the carriageway, along the carriageway, along
-                  the edge, and on the kerb.
-                </p>
-
-                {ROAD_MARKING_PAGES.map((p) => (
-                  <div key={p.src} className="mt-12 border-t border-border pt-8">
-                    <h3 className="font-display text-2xl font-bold tracking-tight text-foreground">
-                      {p.title}
-                    </h3>
-                    <p className="mt-2 max-w-3xl text-sm leading-relaxed text-muted-foreground md:text-base">
-                      {p.intro}
-                    </p>
-                    <figure className="mt-6 overflow-hidden rounded-2xl border border-border bg-white p-3 md:p-6">
-                      <img
-                        src={p.src}
-                        alt={p.alt}
-                        loading="lazy"
-                        width={882}
-                        height={1654}
-                        className="mx-auto block h-auto w-full max-w-3xl"
-                      />
-                    </figure>
-                  </div>
-                ))}
-              </section>
-            ) : null}
 
             {/* THE SIGNING SYSTEM (only on road-signs guide) */}
             {topic.slug === "road-signs" ? (
@@ -521,6 +482,32 @@ function GuidePage() {
                         </p>
                       ))}
                     </div>
+
+                    {/* Road markings official reference — appears right after "Road markings as signs" */}
+                    {topic.slug === "road-signs" && s.heading === "Road markings as signs" ? (
+                      <div className="mt-10 space-y-10">
+                        {ROAD_MARKING_PAGES.map((p) => (
+                          <div key={p.src}>
+                            <h4 className="font-display text-xl font-bold tracking-tight text-foreground md:text-2xl">
+                              {p.title}
+                            </h4>
+                            <p className="mt-2 max-w-3xl text-sm leading-relaxed text-muted-foreground md:text-base">
+                              {p.intro}
+                            </p>
+                            <figure className="mt-4 overflow-hidden rounded-2xl border border-border bg-white p-3 md:p-6">
+                              <img
+                                src={p.src}
+                                alt={p.alt}
+                                loading="lazy"
+                                width={882}
+                                height={1654}
+                                className="mx-auto block h-auto w-full max-w-3xl"
+                              />
+                            </figure>
+                          </div>
+                        ))}
+                      </div>
+                    ) : null}
                   </div>
                 ))}
               </div>
