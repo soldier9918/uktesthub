@@ -362,72 +362,61 @@ export const categorySeo: Record<string, CategorySeo> = {
   },
 
   professional: {
-    title: "CSCS, SIA, SERU & Food Hygiene Test Practice 2026 | Free Mocks",
+    title: "Workplace Compliance & Safety Test Practice 2026 | Free Mocks",
     description:
-      "Free practice tests for CSCS Card, SIA Door Supervisor, SERU TfL, Food Hygiene Level 2 and First Aid. Realistic UK-format questions with explanations.",
+      "Free practice for the workplace compliance certifications UK employers expect — Food Hygiene, First Aid, Fire Safety, Manual Handling, Health & Safety Awareness and GDPR / Data Protection.",
     intro: [
-      "Whether you're starting on a UK construction site, working in security, driving for TfL, or going into hospitality, you'll need a professional certification test pass before you can legally work. Our free CSCS, SIA, SERU TfL, Food Hygiene Level 2 and First Aid Theory mocks mirror the real exam format and give you instant explanations so you walk into your assessment ready.",
-      "These exams have unusually high pass marks — most sit between 80% and 94% — because they cover life-safety knowledge. There is no margin for guesswork, and unlike academic exams, you can't 'pick up the easy marks' to scrape through. Every question has to be answered with confidence.",
+      "Almost every UK job comes with a short stack of compliance certificates: food hygiene if you handle food, first aid if you're the named first-aider, fire safety wherever there are colleagues to evacuate, manual handling if you lift anything heavier than a laptop, plus general health & safety awareness and GDPR / data protection refreshers. Our free mocks mirror the standard awarding-body formats so you walk in knowing exactly what to expect.",
+      "These exams sit at the everyday end of UK compliance — not the high-stakes licence tests like CSCS, SIA or SERU (each of which now has its own dedicated category on UK Test Hub) — but they're still pass/fail with re-sit fees, and a fail can delay your start date or your shift rota.",
     ],
     sections: [
       {
         heading: "What each test actually involves",
         body: [
-          "The CSCS Health, Safety and Environment Test runs for 45 minutes with 50 multiple-choice questions, of which 12 are behavioural case studies. The pass mark is 47 out of 50.",
-          "The SIA Door Supervisor course is six days of training plus three exams; once passed, you apply to the SIA for your licence. The SERU TfL assessment is 36 multiple-choice questions in 90 minutes covering safety, equality and regulatory understanding for private hire drivers in London — the pass mark is 30 of 36.",
-          "Food Hygiene Level 2 is typically a 30-question online exam with a 75% pass mark. Emergency First Aid at Work theory is short but unforgiving — most providers test on the DRSABC sequence and the recovery position in detail.",
+          "Food Hygiene Level 2 is typically a 30-question online exam with a 75% pass mark, set against the CIEH/RSPH syllabus.",
+          "Emergency First Aid at Work theory is short but unforgiving — most providers test on the DRSABC sequence, the recovery position and CPR ratios in detail.",
+          "Fire Safety Awareness, Manual Handling and Health & Safety Awareness are usually 15–25 multiple-choice questions following HSE guidance, with pass marks around 75–80%. GDPR / Data Protection Awareness mocks cover the UK GDPR principles, lawful bases for processing and personal-data breach handling.",
         ],
       },
       {
         heading: "What's covered",
         body: [
-          "CSCS practice covers the operatives and specialist test syllabus including high-risk activities, working at height, plant and equipment, asbestos, fire prevention, manual handling and emergency procedures.",
-          "SIA mocks cover the Door Supervisor and Security Guard licence-linked exams: behavioural awareness, conflict management, physical intervention theory and the law on use of force. SERU TfL practice prepares you for the full Safety, Equality and Regulatory Understanding assessment, with a heavy focus on safeguarding and disability awareness.",
-          "Food Hygiene Level 2 follows the standard CIEH/RSPH syllabus: personal hygiene, allergens, the four Cs, temperature control, pests, cleaning and the Food Safety Act 1990. First Aid mocks cover Emergency First Aid at Work theory.",
+          "Food Hygiene Level 2 follows the standard syllabus: personal hygiene, allergens, the four Cs (Cleaning, Cooking, Chilling, Cross-contamination), temperature control, pests and the Food Safety Act 1990.",
+          "First Aid covers DRSABC, the recovery position, adult and child CPR ratios, choking, bleeding and shock. Fire Safety covers fire triangle theory, extinguisher classes, evacuation procedures and the Regulatory Reform (Fire Safety) Order 2005.",
+          "Manual Handling covers TILE/TILEO assessment, safe lifting technique and the Manual Handling Operations Regulations 1992. GDPR mocks cover the seven principles, data subject rights, lawful bases and the 72-hour breach notification rule to the ICO.",
         ],
       },
       {
         heading: "How to study and pass first time",
         body: [
-          "Don't underestimate them. The CSCS and SERU pass marks are high (94% and 83%) and rushed candidates fail more often than uninformed ones. Allocate at least two weeks of evening study before booking.",
-          "For SERU TfL, learn TfL terminology exactly — 'private hire' versus 'taxi', 'driver' versus 'operator', 'pre-booked' versus 'plying for hire'. Wording matters and the exam will test it.",
-          "For Food Hygiene, memorise the temperature danger zone (8°C to 63°C), core cooking temperature (75°C for 30 seconds or equivalent) and the four Cs: Cleaning, Cooking, Chilling, Cross-contamination.",
-          "For First Aid, the order DRSABC (Danger, Response, Shout, Airway, Breathing, Circulation) is tested almost every time, alongside CPR ratios (30 compressions to 2 breaths for adults).",
+          "For Food Hygiene, memorise the temperature danger zone (8°C to 63°C), core cooking temperature (75°C for 30 seconds or equivalent) and the four Cs.",
+          "For First Aid, the order DRSABC is tested almost every time, alongside CPR ratios (30 compressions to 2 breaths for adults).",
+          "For Fire Safety, learn the extinguisher colour codes (red = water, cream = foam, blue = dry powder, black = CO₂, yellow = wet chemical) and which class of fire each one is for.",
+          "For GDPR, the seven principles (lawfulness, fairness, transparency, purpose limitation, data minimisation, accuracy, storage limitation, integrity & confidentiality, accountability) come up in almost every paper.",
         ],
       },
       {
         heading: "Common mistakes to avoid",
         body: [
-          "On CSCS, the behavioural case studies trip up candidates who memorised the technical content. Read the scenario carefully, identify the most senior person responsible, and pick the response that escalates safely rather than the one that solves the problem fastest.",
-          "On SERU, candidates routinely fail the safeguarding section by choosing 'call the police immediately' for every scenario. The correct answer often involves contacting TfL or social services first.",
           "On Food Hygiene, the most missed question is the difference between use-by and best-before dates: use-by is a safety date, best-before is a quality date.",
+          "On Fire Safety, candidates wrongly use water on electrical or oil fires — water is for Class A (paper, wood, fabric) only.",
+          "On GDPR, candidates conflate 'consent' with the only lawful basis for processing — there are six lawful bases, and consent is often the weakest one to rely on.",
         ],
       },
       {
         heading: "Why practice tests work",
         body: [
-          "Professional tests are pass/fail with no second chance the same day, and most charge a re-sit fee of £30–£50. Practising the real format eliminates the surprise element and lets you focus on the content rather than the interface.",
-          "Candidates who complete 3–5 full mocks before a real CSCS or SERU sitting pass at roughly twice the rate of unprepared candidates. That's a small time investment for a meaningful improvement in the odds — and for SERU drivers, a meaningful protection of your livelihood.",
-          "Mocks also build the procedural memory you need under pressure. By the third or fourth full paper, the sequence of safety steps, temperature thresholds or first-aid responses comes back in the right order automatically — leaving your conscious thinking free for the trickier scenario questions.",
-        ],
-      },
-      {
-        heading: "Booking, fees and what to expect on the day",
-        body: [
-          "Book CSCS through cscs.uk.com — the fee is £22.50 in 2026 and slots are usually available within a week. Book SERU TfL through TfL's licensing service; the fee is £36 and you'll need an active TfL private hire driver licence application on file. SIA training and exams are booked through approved training providers, not the SIA directly.",
-          "On exam day, bring photo ID (passport, driving licence or biometric residence permit) and arrive 20 minutes early. Phones, smartwatches and bags must be left in lockers. The test is on a tablet or PC and the on-screen interface is intentionally simple — practise on a similar layout so the buttons feel familiar.",
-          "Results are typically on screen within minutes and a printable certificate is emailed the same day. Keep the certificate — many sites and employers will ask to see it before you can start work.",
+          "Compliance certificates are pass/fail and most charge a re-sit fee of £15–£40. Practising the real format eliminates the surprise element so you can focus on the content.",
+          "Mocks build the procedural memory you need under pressure. By the third or fourth full paper, the temperature thresholds, extinguisher colours, lifting steps and lawful bases come back automatically.",
         ],
       },
     ],
     faqs: [
-      { q: "What is the CSCS test pass mark?", a: "47 out of 50 (94%) on the latest operatives test. The standards are deliberately high because the test covers life-safety knowledge." },
-      { q: "How long is a CSCS card valid?", a: "Up to 5 years, depending on the card type. Renewal requires a fresh CSCS test pass." },
-      { q: "What is the SERU TfL test pass mark?", a: "30 out of 36 (about 83%). You must pass to be licensed as a TfL private hire driver in London." },
-      { q: "How long is the SIA Door Supervisor course?", a: "Six days (around 36 hours) of training plus three exams. Once passed, you apply to the SIA for your licence." },
       { q: "What does Food Hygiene Level 2 cover?", a: "Personal hygiene, allergens, the four Cs, temperature control, pests, cleaning and the law (the Food Safety Act 1990 and the Food Standards Agency)." },
       { q: "How long is a First Aid at Work certificate valid?", a: "Three years. You should also do an annual refresher to stay competent and meet HSE recommendations." },
-      { q: "Are these professional mocks free?", a: "Yes — CSCS, SIA, SERU, Food Hygiene and First Aid mocks are all free on UK Test Hub." },
+      { q: "Where can I find CSCS, SIA or SERU practice now?", a: "CSCS lives in our Construction & Trade category, SIA in Security & Door Supervision, and SERU in Taxi & Private Hire — each has its own dedicated mocks." },
+      { q: "Is GDPR awareness training a legal requirement?", a: "The UK GDPR requires staff handling personal data to be appropriately trained. Most employers refresh awareness annually." },
+      { q: "Are these workplace compliance mocks free?", a: "Yes — Food Hygiene, First Aid, Fire Safety, Manual Handling, H&S Awareness and GDPR mocks are all free on UK Test Hub." },
     ],
   },
 

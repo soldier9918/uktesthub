@@ -631,11 +631,11 @@ export const quizzes: Quiz[] = [
     ],
   },
 
-  // -------------------- PROFESSIONAL --------------------
+  // -------------------- CONSTRUCTION (CSCS) --------------------
   {
     slug: "cscs-card-starter",
-    category: "professional",
-    topic: "cscs",
+    category: "construction",
+    topic: "cscs-operative",
     quizTitle: "CSCS Card — Starter Test",
     description: "Health, safety and environment basics for the CSCS Operative card.",
     timeLimit: 600,
@@ -796,10 +796,10 @@ export const quizzes: Quiz[] = [
     ],
   },
 
-  // -------------------- SERU TfL --------------------
+  // -------------------- SERU TfL (Taxi & Private Hire) --------------------
   {
     slug: "seru-tfl-mock-1",
-    category: "professional",
+    category: "taxi-private-hire",
     topic: "seru",
     quizTitle: "SERU TfL Assessment — Mock Test 1",
     description:
