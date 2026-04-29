@@ -8,6 +8,7 @@ import heroCareer from "@/assets/cat-hero-career.jpg";
 import heroProfessional from "@/assets/cat-hero-professional.jpg";
 import heroNhs from "@/assets/cat-hero-nhs.jpg";
 import heroFun from "@/assets/cat-hero-fun.jpg";
+import heroTaxi from "@/assets/cat-hero-taxi-private-hire.jpg";
 
 export type BlogPost = {
   slug: string;
