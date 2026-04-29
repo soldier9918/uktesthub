@@ -175,36 +175,79 @@ function CategoryPage() {
         {/* SEO long-form content */}
         {seo && (
           <section className="mt-16 grid gap-10 lg:grid-cols-[1fr_280px]">
-            <article className="prose prose-slate max-w-none prose-headings:font-display prose-headings:font-semibold prose-h2:mt-10 prose-h2:text-2xl prose-h3:mt-6 prose-h3:text-lg prose-a:text-coral prose-a:no-underline hover:prose-a:underline prose-strong:text-foreground">
-              <h2>About the {category.title} tests</h2>
-              {seo.intro.map((p, i) => (
-                <p key={i}>{p}</p>
-              ))}
+            <article className="max-w-none">
+              {/* Eyebrow */}
+              <span className="inline-flex items-center rounded-full bg-coral/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-coral">
+                About this exam
+              </span>
 
-              {seo.sections.map((s, i) => (
-                <div key={i}>
-                  <h3>{s.heading}</h3>
-                  {s.body.map((b, j) => (
-                    <p key={j}>{b}</p>
-                  ))}
-                </div>
-              ))}
-
-              <p>
-                Ready to start?{" "}
-                {category.topics.slice(0, 3).map((t, i) => (
-                  <span key={t.slug}>
-                    <Link
-                      to="/topic/$slug"
-                      params={{ slug: t.slug }}
-                      className="font-semibold text-coral hover:underline"
-                    >
-                      Take the {t.title}
-                    </Link>
-                    {i < Math.min(2, category.topics.length - 1) ? ", " : "."}
-                  </span>
-                ))}
+              {/* H2 */}
+              <h2 className="mt-4 font-display text-3xl font-extrabold tracking-tight text-foreground md:text-4xl">
+                About the {category.title} tests
+              </h2>
+              <div className="mt-3 h-1 w-16 rounded-full bg-coral" />
+              <p className="mt-3 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+                ~8 min read · Updated April 2026
               </p>
+
+              {/* Lead intro */}
+              <div className="mt-6 space-y-5">
+                {seo.intro.map((p, i) => (
+                  <p
+                    key={i}
+                    className="text-lg leading-relaxed text-muted-foreground md:text-xl"
+                  >
+                    {p}
+                  </p>
+                ))}
+              </div>
+
+              {/* Numbered sections */}
+              <div className="mt-12 space-y-12">
+                {seo.sections.map((s, i) => (
+                  <div key={i} className="border-t border-border pt-8">
+                    <div className="flex items-baseline gap-3">
+                      <span className="font-display text-sm font-bold tabular-nums text-coral">
+                        {String(i + 1).padStart(2, "0")}
+                      </span>
+                      <h3 className="font-display text-2xl font-bold leading-tight tracking-tight text-foreground md:text-[1.75rem]">
+                        {s.heading}
+                      </h3>
+                    </div>
+                    <div className="mt-5 space-y-4">
+                      {s.body.map((b, j) => (
+                        <p
+                          key={j}
+                          className="text-base leading-[1.75] text-foreground/85 md:text-[17px]"
+                        >
+                          {b}
+                        </p>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              {/* CTA */}
+              <div className="mt-12 rounded-2xl border border-border bg-card p-6 md:p-8">
+                <p className="font-display text-base font-semibold text-foreground md:text-lg">
+                  Ready to start?
+                </p>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground md:text-base">
+                  {category.topics.slice(0, 3).map((t, i) => (
+                    <span key={t.slug}>
+                      <Link
+                        to="/topic/$slug"
+                        params={{ slug: t.slug }}
+                        className="font-semibold text-coral hover:underline"
+                      >
+                        Take the {t.title}
+                      </Link>
+                      {i < Math.min(2, category.topics.length - 1) ? ", " : "."}
+                    </span>
+                  ))}
+                </p>
+              </div>
             </article>
             <aside className="hidden lg:block">
               <AdSlot size="skyscraper" />
