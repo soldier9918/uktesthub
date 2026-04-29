@@ -1,0 +1,235 @@
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { useMemo, useState } from "react";
+import { ArrowRight, Clock, ListChecks, Search } from "lucide-react";
+import { SiteHeader } from "@/components/SiteHeader";
+import { SiteFooter } from "@/components/SiteFooter";
+import { TestBadge } from "@/components/TestBadge";
+import { categories } from "@/data/categories";
+import { getQuiz } from "@/data/quizzes";
+import { badgeForSlug } from "@/data/test-logos";
+
+export const Route = createFileRoute("/all-tests")({
+  head: () => ({
+    meta: [
+      {
+        title:
+          "All UK Mock Tests — Free Practice for DVSA, TfL, IELTS, CSCS, NMC & more | UK Test Hub",
+      },
+      {
+        name: "description",
+        content:
+          "Browse every free UK mock test on UK Test Hub: Driving Theory, Life in the UK, IELTS, CSCS, SERU TfL, NMC CBT, SIA, ESOL, Numerical, Food Hygiene, First Aid and many more.",
+      },
+      {
+        property: "og:title",
+        content: "All UK Mock Tests — UK Test Hub",
+      },
+      {
+        property: "og:description",
+        content:
+          "The full directory of UK practice tests in one place — DVSA, TfL, Home Office, IELTS, CSCS, NMC, SIA and more.",
+      },
+    ],
+  }),
+  component: AllTestsPage,
+});
+
+function AllTestsPage() {
+  const [query, setQuery] = useState("");
+  const [activeCat, setActiveCat] = useState<string>("all");
+
+  const totalTests = useMemo(
+    () => categories.reduce((n, c) => n + c.topics.length, 0),
+    [],
+  );
+
+  const filteredCategories = useMemo(() => {
+    const q = query.trim().toLowerCase();
+    return categories
+      .filter((c) => activeCat === "all" || c.slug === activeCat)
+      .map((c) => ({
+        ...c,
+        topics: c.topics.filter(
+          (t) =>
+            !q ||
+            t.title.toLowerCase().includes(q) ||
+            c.title.toLowerCase().includes(q),
+        ),
+      }))
+      .filter((c) => c.topics.length > 0);
+  }, [query, activeCat]);
+
+  const matchedCount = filteredCategories.reduce(
+    (n, c) => n + c.topics.length,
+    0,
+  );
+
+  return (
+    <div className="min-h-screen bg-[#f7f5f0]">
+      <SiteHeader />
+
+      {/* HERO */}
+      <section className="bg-navy-deep text-navy-foreground">
+        <div className="mx-auto max-w-7xl px-4 py-12 md:px-6 md:py-16">
+          <p className="font-display text-xs font-bold uppercase tracking-[0.25em] text-coral">
+            Test Directory
+          </p>
+          <h1 className="mt-3 font-display text-3xl font-extrabold leading-tight md:text-5xl">
+            All UK Mock Tests
+          </h1>
+          <p className="mt-4 max-w-3xl text-base text-navy-foreground/80 md:text-lg">
+            Every free practice test on UK Test Hub in one place — {totalTests}{" "}
+            mock tests across Driving, Citizenship, English, Taxi &amp; Private
+            Hire, NHS, Construction, Security and more. Pick a test to start
+            instantly.
+          </p>
+        </div>
+      </section>
+
+      {/* SEARCH + FILTERS */}
+      <section className="sticky top-0 z-20 border-b border-border bg-[#f7f5f0]/95 backdrop-blur">
+        <div className="mx-auto max-w-7xl px-4 py-4 md:px-6">
+          <div className="flex flex-col gap-3 md:flex-row md:items-center">
+            <label className="relative flex-1">
+              <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
+              <input
+                type="search"
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
+                placeholder="Search tests (e.g. SERU, IELTS, CSCS, Life in the UK)"
+                className="w-full rounded-lg border border-border bg-card py-2.5 pl-10 pr-3 text-sm text-foreground shadow-soft outline-none focus:border-coral"
+              />
+            </label>
+            <div className="text-xs font-semibold text-muted-foreground md:whitespace-nowrap">
+              {matchedCount} of {totalTests} tests
+            </div>
+          </div>
+
+          <div className="mt-3 flex flex-wrap gap-2">
+            <FilterChip
+              label="All"
+              active={activeCat === "all"}
+              onClick={() => setActiveCat("all")}
+            />
+            {categories.map((c) => (
+              <FilterChip
+                key={c.slug}
+                label={c.title}
+                active={activeCat === c.slug}
+                onClick={() => setActiveCat(c.slug)}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* LISTING */}
+      <main className="mx-auto max-w-7xl px-4 py-12 md:px-6">
+        {filteredCategories.length === 0 ? (
+          <div className="rounded-2xl border border-border bg-card p-10 text-center shadow-soft">
+            <p className="font-display text-lg font-bold text-foreground">
+              No tests match &ldquo;{query}&rdquo;
+            </p>
+            <p className="mt-2 text-sm text-muted-foreground">
+              Try a different keyword or clear the filter.
+            </p>
+          </div>
+        ) : (
+          <div className="space-y-14">
+            {filteredCategories.map((c) => (
+              <section key={c.slug}>
+                <div className="flex flex-wrap items-end justify-between gap-3">
+                  <div>
+                    <h2 className="font-display text-xl font-extrabold uppercase tracking-wide text-foreground md:text-2xl">
+                      <span className="mr-3 inline-block h-1.5 w-8 rounded-full bg-coral align-middle" />
+                      {c.title}
+                    </h2>
+                    <p className="mt-1 max-w-3xl text-sm text-muted-foreground">
+                      {c.short}
+                    </p>
+                  </div>
+                  <Link
+                    to="/category/$slug"
+                    params={{ slug: c.slug }}
+                    className="inline-flex items-center gap-1 text-sm font-semibold text-coral hover:underline"
+                  >
+                    View category <ArrowRight className="h-4 w-4" />
+                  </Link>
+                </div>
+
+                <ul className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                  {c.topics.map((t) => {
+                    const quiz = getQuiz(t.slug);
+                    return (
+                      <li key={t.slug}>
+                        <Link
+                          to="/topic/$slug"
+                          params={{ slug: t.slug }}
+                          className="group flex h-full items-start gap-3 rounded-xl border border-border bg-card p-4 shadow-soft transition-all hover:-translate-y-0.5 hover:border-coral/40 hover:shadow-elevated"
+                        >
+                          <TestBadge badge={badgeForSlug(t.slug)} size="lg" />
+                          <div className="min-w-0 flex-1">
+                            <h3 className="font-display text-sm font-bold leading-tight text-foreground">
+                              {t.title}
+                            </h3>
+                            {quiz && (
+                              <div className="mt-2 flex flex-wrap gap-x-3 gap-y-1 text-[11px] text-muted-foreground">
+                                <span className="inline-flex items-center gap-1">
+                                  <ListChecks className="h-3 w-3" />{" "}
+                                  {quiz.questions.length} Qs
+                                </span>
+                                <span className="inline-flex items-center gap-1">
+                                  <Clock className="h-3 w-3" />{" "}
+                                  {Math.round(quiz.timeLimit / 60)} min
+                                </span>
+                              </div>
+                            )}
+                            <span className="mt-3 inline-flex items-center gap-1 text-xs font-bold text-coral opacity-0 transition-opacity group-hover:opacity-100">
+                              View test <ArrowRight className="h-3 w-3" />
+                            </span>
+                          </div>
+                        </Link>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </section>
+            ))}
+          </div>
+        )}
+
+        <p className="mt-14 text-center text-xs text-muted-foreground">
+          Logos shown are stylised badges. All names and trademarks belong to
+          their respective owners. UK Test Hub is independent and not affiliated
+          with any listed body.
+        </p>
+      </main>
+
+      <SiteFooter />
+    </div>
+  );
+}
+
+function FilterChip({
+  label,
+  active,
+  onClick,
+}: {
+  label: string;
+  active: boolean;
+  onClick: () => void;
+}) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      className={`rounded-full border px-3 py-1 text-xs font-semibold transition-colors ${
+        active
+          ? "border-coral bg-coral text-coral-foreground"
+          : "border-border bg-card text-foreground/70 hover:border-coral/40 hover:text-coral"
+      }`}
+    >
+      {label}
+    </button>
+  );
+}
