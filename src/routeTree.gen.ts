@@ -31,6 +31,7 @@ import { Route as IndexRouteImport } from './routes/index'
 import { Route as BlogIndexRouteImport } from './routes/blog.index'
 import { Route as TopicSlugRouteImport } from './routes/topic.$slug'
 import { Route as QuizSlugRouteImport } from './routes/quiz.$slug'
+import { Route as GuideSlugRouteImport } from './routes/guide.$slug'
 import { Route as CategorySlugRouteImport } from './routes/category.$slug'
 import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
 
@@ -144,6 +145,11 @@ const QuizSlugRoute = QuizSlugRouteImport.update({
   path: '/quiz/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
+const GuideSlugRoute = GuideSlugRouteImport.update({
+  id: '/guide/$slug',
+  path: '/guide/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const CategorySlugRoute = CategorySlugRouteImport.update({
   id: '/category/$slug',
   path: '/category/$slug',
@@ -177,6 +183,7 @@ export interface FileRoutesByFullPath {
   '/terms': typeof TermsRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/category/$slug': typeof CategorySlugRoute
+  '/guide/$slug': typeof GuideSlugRoute
   '/quiz/$slug': typeof QuizSlugRoute
   '/topic/$slug': typeof TopicSlugRoute
   '/blog/': typeof BlogIndexRoute
@@ -202,6 +209,7 @@ export interface FileRoutesByTo {
   '/terms': typeof TermsRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/category/$slug': typeof CategorySlugRoute
+  '/guide/$slug': typeof GuideSlugRoute
   '/quiz/$slug': typeof QuizSlugRoute
   '/topic/$slug': typeof TopicSlugRoute
   '/blog': typeof BlogIndexRoute
@@ -229,6 +237,7 @@ export interface FileRoutesById {
   '/terms': typeof TermsRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/category/$slug': typeof CategorySlugRoute
+  '/guide/$slug': typeof GuideSlugRoute
   '/quiz/$slug': typeof QuizSlugRoute
   '/topic/$slug': typeof TopicSlugRoute
   '/blog/': typeof BlogIndexRoute
@@ -257,6 +266,7 @@ export interface FileRouteTypes {
     | '/terms'
     | '/blog/$slug'
     | '/category/$slug'
+    | '/guide/$slug'
     | '/quiz/$slug'
     | '/topic/$slug'
     | '/blog/'
@@ -282,6 +292,7 @@ export interface FileRouteTypes {
     | '/terms'
     | '/blog/$slug'
     | '/category/$slug'
+    | '/guide/$slug'
     | '/quiz/$slug'
     | '/topic/$slug'
     | '/blog'
@@ -308,6 +319,7 @@ export interface FileRouteTypes {
     | '/terms'
     | '/blog/$slug'
     | '/category/$slug'
+    | '/guide/$slug'
     | '/quiz/$slug'
     | '/topic/$slug'
     | '/blog/'
@@ -334,6 +346,7 @@ export interface RootRouteChildren {
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   TermsRoute: typeof TermsRoute
   CategorySlugRoute: typeof CategorySlugRoute
+  GuideSlugRoute: typeof GuideSlugRoute
   QuizSlugRoute: typeof QuizSlugRoute
   TopicSlugRoute: typeof TopicSlugRoute
 }
@@ -494,6 +507,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof QuizSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/guide/$slug': {
+      id: '/guide/$slug'
+      path: '/guide/$slug'
+      fullPath: '/guide/$slug'
+      preLoaderRoute: typeof GuideSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/category/$slug': {
       id: '/category/$slug'
       path: '/category/$slug'
@@ -544,6 +564,7 @@ const rootRouteChildren: RootRouteChildren = {
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   TermsRoute: TermsRoute,
   CategorySlugRoute: CategorySlugRoute,
+  GuideSlugRoute: GuideSlugRoute,
   QuizSlugRoute: QuizSlugRoute,
   TopicSlugRoute: TopicSlugRoute,
 }
