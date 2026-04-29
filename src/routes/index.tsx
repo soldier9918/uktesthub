@@ -199,7 +199,7 @@ function HomePage() {
                   { slug: "nmc-cbt", label: "CBT Tests" },
                   { slug: "sia", label: "SIA Tests" },
                   { slug: "esol", label: "ESOL Tests" },
-                  { slug: "numerical", label: "Numerical Tests" },
+                  
                   { slug: "logical-reasoning", label: "Logical Reasoning Tests" },
                   { slug: "food-hygiene", label: "Food Hygiene Tests" },
                   { slug: "first-aid", label: "First Aid Tests" },
