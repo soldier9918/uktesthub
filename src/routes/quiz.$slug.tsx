@@ -5,6 +5,7 @@ import { AdSlot } from "@/components/AdSlot";
 import { QuizRunner } from "@/components/QuizRunner";
 import { getQuiz, getQuizzesByCategory } from "@/data/quizzes";
 import { getCategory } from "@/data/categories";
+import { listMockSlots } from "@/data/mocks";
 
 
 export const Route = createFileRoute("/quiz/$slug")({
@@ -51,9 +52,33 @@ export const Route = createFileRoute("/quiz/$slug")({
 function QuizPage() {
   const { quiz } = Route.useLoaderData();
   const category = getCategory(quiz.category);
-  const related = getQuizzesByCategory(quiz.category)
-    .filter((q) => q.slug !== quiz.slug)
-    .slice(0, 4);
+  const isMock = quiz.slug.includes("-mock-");
+
+  type RelatedItem = { slug: string; title: string; subtitle: string };
+
+  let related: RelatedItem[] = [];
+  let sectionTitle = `More in ${category?.title ?? ""}`;
+
+  if (isMock) {
+    sectionTitle = "More mock tests";
+    related = listMockSlots(quiz.topic)
+      .filter((m) => m.available && m.slug !== quiz.slug)
+      .slice(0, 8)
+      .map((m) => ({
+        slug: m.slug,
+        title: `Mock Test ${m.mockNumber}`,
+        subtitle: `${m.questionsCount} Qs`,
+      }));
+  } else {
+    related = getQuizzesByCategory(quiz.category)
+      .filter((q) => q.slug !== quiz.slug)
+      .slice(0, 8)
+      .map((q) => ({
+        slug: q.slug,
+        title: q.quizTitle,
+        subtitle: `${q.questions.length} Qs · ${Math.round(q.timeLimit / 60)} min`,
+      }));
+  }
 
   return (
     <div className="min-h-screen bg-background">
@@ -66,18 +91,20 @@ function QuizPage() {
 
         {related.length > 0 && (
           <section className="mt-12">
-            <h2 className="font-display text-xl font-bold">More in {category?.title}</h2>
-            <ul className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+            <h2 className="font-display text-xl font-bold">{sectionTitle}</h2>
+            <ul className="mt-4 grid auto-rows-fr gap-3 sm:grid-cols-2 lg:grid-cols-4">
               {related.map((r) => (
-                <li key={r.slug}>
+                <li key={r.slug} className="h-full">
                   <Link
                     to="/quiz/$slug"
                     params={{ slug: r.slug }}
-                    className="block rounded-2xl border border-border bg-card p-4 hover:border-coral/40 hover:shadow-soft"
+                    className="flex h-full flex-col justify-between rounded-2xl border border-border bg-card p-4 hover:border-coral/40 hover:shadow-soft"
                   >
-                    <div className="font-medium leading-tight">{r.quizTitle}</div>
-                    <div className="mt-1 text-xs text-muted-foreground">
-                      {r.questions.length} Qs · {Math.round(r.timeLimit / 60)} min
+                    <div className="line-clamp-2 font-medium leading-tight">
+                      {r.title}
+                    </div>
+                    <div className="mt-2 text-xs text-muted-foreground">
+                      {r.subtitle}
                     </div>
                   </Link>
                 </li>
