@@ -275,7 +275,7 @@ function HomePage() {
                       />
                     </span>
                     <div className="min-w-0 flex-1">
-                      <h3 className="font-display text-[13px] font-bold leading-tight text-foreground">
+                      <h3 className="font-display text-base font-extrabold leading-tight text-foreground md:text-lg">
                         {c.title}
                       </h3>
                       <p className="mt-1 line-clamp-2 text-[11px] leading-snug text-muted-foreground">
