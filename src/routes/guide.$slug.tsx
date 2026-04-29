@@ -135,6 +135,60 @@ function GuidePage() {
               ))}
             </div>
 
+            {/* OFFICIAL ROAD SIGNS REFERENCE (only on road-signs guide) — placed directly after the intro */}
+            {topic.slug === "road-signs" ? (
+              <section className="mt-12">
+                <span className="inline-flex items-center rounded-full bg-coral/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-coral">
+                  Official reference
+                </span>
+                <h2 className="mt-4 font-display text-3xl font-extrabold tracking-tight text-foreground md:text-4xl">
+                  Every UK road sign — Highway Code reference
+                </h2>
+                <div className="mt-3 h-1 w-16 rounded-full bg-coral" />
+                <p className="mt-3 max-w-3xl text-base text-muted-foreground md:text-lg">
+                  These are the official traffic sign plates from the
+                  Department for Transport's <em>Highway Code: Traffic signs</em>
+                  {" "}publication — the same artwork the DVSA uses in your theory
+                  test. Study them in groups, not as isolated images.
+                </p>
+
+                {ROAD_SIGN_PAGES.map((p) => (
+                  <div key={p.src} className="mt-12 border-t border-border pt-8">
+                    <h3 className="font-display text-2xl font-bold tracking-tight text-foreground">
+                      {p.title}
+                    </h3>
+                    <p className="mt-2 max-w-3xl text-sm leading-relaxed text-muted-foreground md:text-base">
+                      {p.intro}
+                    </p>
+                    <figure className="mt-6 overflow-hidden rounded-2xl border border-border bg-white p-3 md:p-6">
+                      <img
+                        src={p.src}
+                        alt={p.alt}
+                        loading="lazy"
+                        width={1103}
+                        height={2067}
+                        className="mx-auto block h-auto w-full max-w-4xl"
+                      />
+                    </figure>
+                  </div>
+                ))}
+
+                <p className="mt-8 text-xs text-muted-foreground">
+                  Source: Department for Transport, <em>The Highway Code — Traffic signs</em>{" "}
+                  (
+                  <a
+                    href="https://assets.publishing.service.gov.uk/media/68f8d5c5ec6267c615ed8f99/the-highway-code-traffic-signs.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline hover:text-coral"
+                  >
+                    download the official PDF
+                  </a>
+                  ). Reproduced for educational purposes under Open Government Licence v3.0.
+                </p>
+              </section>
+            ) : null}
+
             {/* Numbered sections */}
             {seo?.sections?.length ? (
               <div className="mt-12 space-y-12">
