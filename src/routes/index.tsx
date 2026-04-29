@@ -125,7 +125,7 @@ function HomePage() {
           className="absolute inset-0 bg-gradient-to-r from-navy-deep/70 via-navy-deep/55 to-navy-deep/20"
         />
 
-        <div className="relative mx-auto grid max-w-7xl gap-10 px-4 pb-16 pt-6 md:px-6 md:pb-24 md:pt-8 lg:grid-cols-[1fr_360px] lg:items-center">
+        <div className="relative mx-auto grid max-w-7xl gap-10 px-4 pb-16 pt-6 md:px-6 md:pb-24 md:pt-8 lg:grid-cols-[1fr_280px] lg:items-center">
           <div>
             <p className="font-display font-semibold uppercase tracking-[0.25em] text-navy-foreground/80 text-5xl">
               Pass your
