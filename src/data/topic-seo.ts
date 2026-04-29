@@ -378,13 +378,28 @@ export const topicSeo: Record<string, TopicSeo> = {
         ],
       },
       {
-        heading: "Booking and theory-test logistics for riders",
+        heading: "Highway Code Rules 83–88: general guidance for motorcyclists",
         body: [
-          "Book your motorcycle theory test through gov.uk — never a third-party reseller. Fee is £23. Slots are usually available within 2–4 weeks. Book early because you'll also need to plan around DAS course dates and Module 1/2 availability, which can be 6–12 weeks ahead at busy centres.",
-          "Bring your provisional licence as photo ID. No bag, no helmet, no jacket inside the test room — most centres have a coat rack and lockers in the lobby. Arrive 15 minutes early. Result is on screen immediately.",
-          "If you fail, the minimum wait before resitting is three working days. Most candidates who fail do so on hazard perception rather than the multiple-choice — book extra clip practice rather than re-reading the Highway Code if that's where you slipped.",
+          "Rule 83 — Helmets. On every journey the rider and any pillion passenger on a motorcycle, scooter or moped MUST wear a protective helmet that complies with the Regulations and is fastened securely. The only exemption is a follower of the Sikh religion wearing a turban. Riders and passengers of motor tricycles and quadricycles (quadbikes) should also wear a helmet. Check your visor is clean and in good condition before every ride. (Laws RTA 1988 sects 16 & 17 & MC(PH)R reg 4.)",
+          "Rule 84 — Eye and other protection. It is also advisable to wear eye protectors that comply with the Regulations. Scratched or poorly fitting eye protectors limit your view, especially in bright sunshine and at night. Consider ear protection, and wear strong boots, gloves and suitable clothing to help protect you in a collision. (Laws RTA sect 18 & MC(EP)R reg 4.)",
+          "Rule 85 — Pillion passengers. You MUST NOT carry more than one pillion passenger, who MUST sit astride the machine on a proper seat with both feet on the footrests, facing forward. You MUST NOT carry a pillion passenger unless your motorcycle is designed to do so. Provisional licence holders MUST NOT carry a pillion passenger at all. (Laws RTA 1988 sect 23, MV(DL)R 1999 reg 16(6) & CUR 1986 reg 102.)",
+          "Rule 86 — Daylight riding. Make yourself as visible as possible from the side as well as the front and rear. Wear a light or brightly coloured helmet and fluorescent clothing or strips. Dipped headlights, even in good daylight, can also make you more conspicuous — but remember that other drivers may still not have seen you, or may have misjudged your speed and distance, especially at junctions.",
+          "Rule 87 — Riding in the dark. Wear reflective clothing or strips so headlamps from other vehicles pick you up from a longer distance. See Highway Code rules 113–116 for lighting requirements.",
+          "Rule 88 — Manoeuvring. Be aware of what is behind and to the sides before manoeuvring: look behind you and use mirrors if fitted. In traffic queues watch for pedestrians crossing between vehicles and for vehicles emerging from junctions or changing lanes. Position yourself so that drivers in front can see you in their mirrors, and keep your speed low when filtering in slow-moving traffic. Remember: Observation – Signal – Manoeuvre.",
         ],
       },
+      {
+        heading: "Motorcycle and moped licence requirements (Highway Code, pages 50–53)",
+        body: [
+          "Provisional licence and CBT. With a provisional motorcycle licence you MUST satisfactorily complete a Compulsory Basic Training (CBT) course. You can then ride a motorcycle up to 125 cc with a power output not exceeding 11 kW on the public road, with L plates (D plates, L plates, or both in Wales), for up to two years. Under direct access you can practise on a larger machine provided you meet the minimum age, are accompanied at all times by a qualified approved trainer on another motorcycle and in radio contact, wear fluorescent or reflective safety clothing, and display red L plates (D plates in Wales). To obtain a full licence you MUST pass a motorcycle theory test and then a practical test. (Law MV(DL)R regs 16 & 68.)",
+          "A1 licence (17+). Tested on a motorcycle without sidecar of 120–125 cc. Pass and you may ride a motorcycle up to 125 cc with power output up to 11 kW, or a motor tricycle with power not exceeding 15 kW.",
+          "A2 licence (19+). Tested on a motorcycle without sidecar of at least 395 cc with a power output of at least 25 kW but not exceeding 35 kW. Pass and you may ride any motorcycle not exceeding 35 kW and with a power-to-weight ratio not exceeding 0.2 kW/kg.",
+          "Full A licence. Test taken on a motorcycle without sidecar of at least 595 cc and at least 40 kW. This gives full access to all motorcycles and motor tricycles. You can take it via progressive access from age 21 (if you have held an A2 licence for at least two years — no further theory or CBT needed) or via direct access from age 24 (CBT, theory test and practical test all required). Passing the practical on a bike of at least 40 kW (53.6 bhp) gives immediate access to all sizes of motorcycle.",
+          "Trailers and pillions on a provisional. You MUST NOT carry a pillion passenger or pull a trailer until you have passed your test. See Highway Code rule 253 for vehicles prohibited from motorways. (Law MV(DL)R reg 16.)",
+          "Moped licence. A moped MUST have an engine capacity not exceeding 50 cc, weigh no more than 250 kg and be designed for a maximum speed not exceeding 28 mph (45 km/h). To learn on a moped you MUST be 16 or over, hold a provisional moped licence and complete CBT. You MUST then pass the motorcycle theory test followed by the moped practical test for a full moped licence. If you passed your car driving test before 1 February 2001 you can ride a moped without L plates (D plates in Wales), although CBT is recommended. If you passed your car test on or after that date you MUST complete CBT before riding a moped on the road. (Laws RTA 1988 sects 97(e) & 101 & MV(DL)R regs 38(4) & 43.)",
+        ],
+      },
+
     ],
     faqs: [
       { q: "Is the Motorcycle Theory Test different from the car theory?", a: "Same format and fee, but a different question bank weighted toward bike-specific hazards and rules." },
