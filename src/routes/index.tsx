@@ -423,10 +423,10 @@ function HomePage() {
               <span className="inline-flex items-center gap-2 rounded-full bg-coral/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.14em] text-coral">
                 About the platform
               </span>
-              <h2 className="mt-4 font-display text-3xl font-bold leading-tight text-foreground md:text-4xl">
+              <h2 className="mt-4 border-l-4 border-coral pl-4 font-display text-3xl font-bold leading-tight text-foreground md:text-4xl">
                 What is UK Test Hub?
               </h2>
-              <p className="mt-5 text-lg leading-relaxed text-muted-foreground md:text-xl">
+              <p className="mt-5 text-base leading-relaxed text-muted-foreground md:text-lg">
                 UK Test Hub is a free practice platform built to help learners
                 across Britain pass official UK exams first time — no accounts,
                 no paywalls, no surprises.
@@ -452,7 +452,7 @@ function HomePage() {
                 </p>
               </div>
 
-              <h3 className="mt-10 font-display text-lg font-bold text-foreground md:text-xl">
+              <h3 className="mt-10 border-l-4 border-coral pl-4 font-display text-xl font-bold text-foreground md:text-2xl">
                 What we cover
               </h3>
               <div className="mt-4 space-y-5 text-base leading-relaxed text-muted-foreground">
@@ -550,7 +550,7 @@ function HomePage() {
                 </p>
               </div>
 
-              <h3 className="mt-10 font-display text-lg font-bold text-foreground md:text-xl">
+              <h3 className="mt-10 border-l-4 border-coral pl-4 font-display text-xl font-bold text-foreground md:text-2xl">
                 How our mock tests work
               </h3>
               <div className="mt-4 space-y-5 text-base leading-relaxed text-muted-foreground">
@@ -582,7 +582,7 @@ function HomePage() {
                 </p>
               </div>
 
-              <h3 className="mt-10 font-display text-lg font-bold text-foreground md:text-xl">
+              <h3 className="mt-10 border-l-4 border-coral pl-4 font-display text-xl font-bold text-foreground md:text-2xl">
                 Built for British learners
               </h3>
               <div className="mt-4 space-y-5 text-base leading-relaxed text-muted-foreground">
@@ -615,7 +615,7 @@ function HomePage() {
                 </p>
               </div>
 
-              <h3 className="mt-10 font-display text-lg font-bold text-foreground md:text-xl">
+              <h3 className="mt-10 border-l-4 border-coral pl-4 font-display text-xl font-bold text-foreground md:text-2xl">
                 Who uses UK Test Hub
               </h3>
               <div className="mt-4 space-y-5 text-base leading-relaxed text-muted-foreground">
@@ -674,22 +674,22 @@ function HomePage() {
               <span className="inline-flex items-center gap-2 rounded-full bg-success/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.14em] text-success">
                 Why it works
               </span>
-              <h3 className="mt-3 font-display text-xl font-bold text-foreground md:text-2xl">
+              <h3 className="mt-3 border-l-4 border-coral pl-4 font-display text-xl font-bold text-foreground md:text-2xl">
                 Why Practice Tests Work
               </h3>
-              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+              <p className="mt-4 text-base leading-relaxed text-muted-foreground">
                 Decades of cognitive-science research show that{" "}
                 <strong className="text-foreground">retrieval practice</strong>{" "}
                 — actively recalling answers under exam-like conditions — is
                 one of the most effective ways to learn. Reading notes feels
                 productive but rarely transfers to exam day.
               </p>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+              <p className="mt-3 text-base leading-relaxed text-muted-foreground">
                 Mock tests expose gaps in your knowledge before they cost you
                 marks, build familiarity with the question style, and reduce
                 exam anxiety through repeated low-stakes exposure.
               </p>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+              <p className="mt-3 text-base leading-relaxed text-muted-foreground">
                 <strong className="text-foreground">Spaced repetition</strong>{" "}
                 — returning to the same weak topics across several short
                 sessions — beats one long cram the night before. Twenty
@@ -698,7 +698,7 @@ function HomePage() {
                 act of forgetting and re-learning is what locks the answer
                 into long-term memory.
               </p>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+              <p className="mt-3 text-base leading-relaxed text-muted-foreground">
                 Sitting timed mocks under realistic conditions also matters.
                 Most people who fail a UK exam don't fail because they
                 didn't know the material — they fail because they ran out

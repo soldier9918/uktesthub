@@ -1,54 +1,47 @@
-## 1. Align "Explore" buttons across Popular Categories tiles
+## Goal
 
-**Problem:** Tiles have varying content lengths (title wraps, `short` description wraps differently, chip lists differ in row count), so the `Explore` button sits at a different vertical position on each card.
+Tidy the "What is UK Test Hub?" homepage section so:
+1. All body text uses the same font and consistent sizes.
+2. Each heading (H2 + the four H3s on the left, plus the H3 on the right aside) gets a vertical red bar to its left, matching the "Answers & Explanations" reference style.
 
-**Fix in `src/routes/index.tsx` (lines 234–272):**
-- Make the tile a flex column with `h-full` (already on parent grid, just need each `Link` to stretch).
-- Add `flex flex-col h-full` to the tile `Link` (already has `flex flex-col` — add `h-full`).
-- Wrap title + description + chips in a content block with `flex-1` so the spacer pushes the Explore button down.
-- Add `mt-auto` to the `Explore` span so it always anchors to the bottom of the card.
-- Lock the description to a consistent height with `min-h-[3.4em]` (covers up to 3 lines) so short descriptions don't make some tiles drastically shorter.
+No content changes, no layout changes — purely typographic + a small visual accent.
 
-Result: all "Explore" buttons render at the same baseline regardless of how much text or how many chips appear above them. No visual restyle, just alignment.
+## Changes (all in `src/routes/index.tsx`, lines 419–719)
 
-## 2. Expand "What is UK Test Hub?" to ~1200 words
+### 1. Unify body font and size
 
-**Current:** ~150 words in the left column + ~120 words in the right "Why Practice Tests Work" aside (lines 417–520). Total ~270 words.
+The section currently mixes `font-display` (headings) and the default body font (paragraphs), and has three different paragraph sizes (`text-lg`/`md:text-xl` for the lead, `text-base` for the body, `text-sm` for the aside).
 
-**Target:** ~1200 words for the whole section, kept in the same two-column layout so we don't break visual balance.
+Standardise to a single body family and two sizes:
 
-**Approach in `src/routes/index.tsx` (lines 417–520):**
+- **Lead paragraph** (line 429): change `text-lg leading-relaxed text-muted-foreground md:text-xl` → `text-base leading-relaxed text-muted-foreground md:text-lg` (slightly smaller so it doesn't tower over the body).
+- **All left-column body paragraphs** (lines 435, 458, 556, 588, 621): keep `text-base leading-relaxed text-muted-foreground` (already consistent — no change).
+- **Right aside paragraphs** (lines 680, 687, 692, 701): change `text-sm leading-relaxed` → `text-base leading-relaxed` so the aside matches the left column.
+- **Headings**: keep `font-display` on H2 + H3s (that's the brand display font and matches the rest of the homepage like "Featured Mock Tests"). Normalise the four left-column H3s and the aside H3 to the same size: `font-display text-xl font-bold text-foreground md:text-2xl` (the four left H3s currently use `text-lg md:text-xl`, the aside H3 uses `text-xl md:text-2xl` — pick the larger pair so all H3s match).
+- **H2** (line 426): keep `font-display text-3xl font-bold leading-tight md:text-4xl` — unchanged, it's the section title.
 
-Keep the existing structure (eyebrow + H2 + lead paragraph, body paragraphs with inline category links, 4-link grid, right-hand aside) and expand the body so it reads as a proper editorial "About" section, not filler.
+Result: one display font for headings, one body font for all prose, two body sizes (lead `text-base md:text-lg`, body `text-base`), and all H3s identical.
 
-**Left column (~900 words)** — replace the current 2-paragraph body with a richer flow, broken into clearly spaced paragraphs and a couple of small sub-headings so 900 words doesn't read as a wall of text:
+### 2. Red vertical bar before each heading
 
-- **Lead** (kept, lightly tightened): one-sentence positioning of UK Test Hub.
-- **What we cover** (~250 words): expand the existing inline-link paragraph to walk through every major category — Driving Theory & Hazard Perception, Life in the UK, IELTS / ESOL / English language, GCSE & 11+, CSCS / SIA / professional licensing, NHS numeracy & literacy, plus the "fun" general knowledge tests. Each category gets one or two sentences explaining what it's for and who takes it. Keep the existing inline `<Link to="/category/$slug">` links and add the same pattern for the other categories.
-- **Sub-heading: "How our mock tests work"** (~220 words): exam-format fidelity, question-count parity with the real exam, instant marking, per-question explanations, best-score tracking via localStorage, mobile-first design, no account required, no paywall.
-- **Sub-heading: "Built for British learners"** (~220 words): UK English throughout, content reviewed against current DVSA/Home Office/Ofqual/awarding-body specifications, regularly refreshed when syllabuses change, accessible design, free forever.
-- **Sub-heading: "Who uses UK Test Hub"** (~210 words): learner drivers, ILR/citizenship applicants, international students preparing for English certification, GCSE and 11+ students, jobseekers needing CSCS/SIA cards, NHS candidates, and casual quizzers — one short paragraph per audience.
-- Keep the existing 4-link "GCSE & 11+ / CSCS & SIA / NHS / Professional licensing" grid below the prose (already there, no change).
+Reference image shows a thick vertical red line flush-left of the heading text with a small gap. Implement as a left border + left padding on each heading element so there's no extra markup:
 
-**Right aside (~300 words)** — expand the current "Why Practice Tests Work" card from ~120 to ~300 words, still inside the same `<aside>` so the layout stays:
-- Keep the eyebrow, H3, and existing two paragraphs about retrieval practice.
-- Add two more short paragraphs: one on **spaced repetition** (drilling weak topics across multiple short sessions beats one long cram), and one on **exam-condition simulation** (timed mocks reduce test-day anxiety and surface pacing issues). Keep the existing "Read revision tips on the blog" CTA at the bottom.
-
-**Word target check:**
-```text
-Lead                       ~40
-What we cover             ~250
-How our mock tests work   ~220
-Built for British learners ~220
-Who uses UK Test Hub      ~210
-Right aside               ~300
-Total                    ~1240 ✓
+```tsx
+className="... border-l-4 border-coral pl-4"
 ```
 
-**Visual treatment:** keep `text-base leading-relaxed text-muted-foreground` for body paragraphs, `mt-8` between blocks, and add small `font-display text-lg font-bold text-foreground` sub-headings (matching the existing aside H3 style) before each new sub-section so 900 words on the left reads as scannable, not slab-text. No new components, no new imports.
+Apply to:
+- H2 "What is UK Test Hub?" (line 426)
+- H3 "What we cover" (line 455)
+- H3 "How our mock tests work" (line 553)
+- H3 "Built for British learners" (line 585)
+- H3 "Who uses UK Test Hub" (line 618)
+- H3 "Why Practice Tests Work" in the right aside (line 677)
 
-## Out of scope
+`border-coral` already exists in the theme (used throughout the homepage for coral accents — same colour as the existing `bg-coral` underline beneath the hero). The bar will be 4px wide with a `pl-4` (1rem) gap before the text, matching the proportions in the uploaded reference.
 
-- Category SEO pages (separate plan in `.lovable/plan.md`)
-- Hero, Featured Mock Tests, How to Pass, Blog sections
-- Any restyle of the tiles beyond the alignment fix
+### Notes
+
+- The existing eyebrow chips ("About the platform", "Why it works") above the H2 and aside H3 stay as-is.
+- The decorative `mt-3 h-1 w-16 rounded-full bg-coral` underlines used elsewhere on the page are not added here — the new vertical bar replaces that visual cue for this section so we don't double up.
+- No new imports, no new components, no layout shift.
