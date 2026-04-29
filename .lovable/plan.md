@@ -1,47 +1,60 @@
-## Goal
+# Add Real Test/Body Logos to Popular Mock Tests
 
-Tidy the "What is UK Test Hub?" homepage section so:
-1. All body text uses the same font and consistent sizes.
-2. Each heading (H2 + the four H3s on the left, plus the H3 on the right aside) gets a vertical red bar to its left, matching the "Answers & Explanations" reference style.
+## What you'll see
 
-No content changes, no layout changes — purely typographic + a small visual accent.
+Each row in the **Popular Mock Tests** panel (right side of the homepage hero) will get a small square logo to the left of the test name — e.g. DVSA next to Driving Theory, Home Office crown next to Life in the UK, IELTS, CSCS, TfL next to SERU/Topographical/PHV/Congestion Charge/ULEZ, NMC, SIA, NHS, etc.
 
-## Changes (all in `src/routes/index.tsx`, lines 419–719)
-
-### 1. Unify body font and size
-
-The section currently mixes `font-display` (headings) and the default body font (paragraphs), and has three different paragraph sizes (`text-lg`/`md:text-xl` for the lead, `text-base` for the body, `text-sm` for the aside).
-
-Standardise to a single body family and two sizes:
-
-- **Lead paragraph** (line 429): change `text-lg leading-relaxed text-muted-foreground md:text-xl` → `text-base leading-relaxed text-muted-foreground md:text-lg` (slightly smaller so it doesn't tower over the body).
-- **All left-column body paragraphs** (lines 435, 458, 556, 588, 621): keep `text-base leading-relaxed text-muted-foreground` (already consistent — no change).
-- **Right aside paragraphs** (lines 680, 687, 692, 701): change `text-sm leading-relaxed` → `text-base leading-relaxed` so the aside matches the left column.
-- **Headings**: keep `font-display` on H2 + H3s (that's the brand display font and matches the rest of the homepage like "Featured Mock Tests"). Normalise the four left-column H3s and the aside H3 to the same size: `font-display text-xl font-bold text-foreground md:text-2xl` (the four left H3s currently use `text-lg md:text-xl`, the aside H3 uses `text-xl md:text-2xl` — pick the larger pair so all H3s match).
-- **H2** (line 426): keep `font-display text-3xl font-bold leading-tight md:text-4xl` — unchanged, it's the section title.
-
-Result: one display font for headings, one body font for all prose, two body sizes (lead `text-base md:text-lg`, body `text-base`), and all H3s identical.
-
-### 2. Red vertical bar before each heading
-
-Reference image shows a thick vertical red line flush-left of the heading text with a small gap. Implement as a left border + left padding on each heading element so there's no extra markup:
-
-```tsx
-className="... border-l-4 border-coral pl-4"
+```text
+┌──────────────────────────────────┐
+│ POPULAR MOCK TESTS               │
+├──────────────────────────────────┤
+│ [TfL]   SERU Tests             › │
+│ [TfL]   Topographical Tests    › │
+│ [TfL]   Private Hire Licence   › │
+│ [TfL]   Congestion Charge      › │
+│ [TfL]   ULEZ Tests             › │
+│ [DVSA]  Driving Theory Tests   › │
+│ [HO]    Life in the UK Tests   › │
+│ [IELTS] IELTS Tests            › │
+│ [CSCS]  CSCS Tests             › │
+│ [NMC]   NMC CBT Tests          › │
+└──────────────────────────────────┘
+       AND MANY MANY MORE
 ```
 
-Apply to:
-- H2 "What is UK Test Hub?" (line 426)
-- H3 "What we cover" (line 455)
-- H3 "How our mock tests work" (line 553)
-- H3 "Built for British learners" (line 585)
-- H3 "Who uses UK Test Hub" (line 618)
-- H3 "Why Practice Tests Work" in the right aside (line 677)
+The same logos will also be reused on the **Featured Mock Tests** cards and the **Popular Categories** tiles where the matching test appears, so branding is consistent across the page.
 
-`border-coral` already exists in the theme (used throughout the homepage for coral accents — same colour as the existing `bg-coral` underline beneath the hero). The bar will be 4px wide with a `pl-4` (1rem) gap before the text, matching the proportions in the uploaded reference.
+## Important — trademark / legal note (please read)
 
-### Notes
+DVSA, DVLA, TfL, NHS, Home Office, IELTS, CSCS, NMC, SIA, etc. are registered trade marks of those organisations. UK Test Hub is **independent** and not affiliated with any of them. Embedding the actual official logos can:
 
-- The existing eyebrow chips ("About the platform", "Why it works") above the H2 and aside H3 stay as-is.
-- The decorative `mt-3 h-1 w-16 rounded-full bg-coral` underlines used elsewhere on the page are not added here — the new vertical bar replaces that visual cue for this section so we don't double up.
-- No new imports, no new components, no layout shift.
+- breach each body's brand/trademark guidelines (TfL roundel, NHS identity, Home Office crown, IELTS, CSCS and SIA brands all explicitly forbid third-party use without a licence), and
+- imply endorsement, which is the exact thing your existing independence disclaimer is there to prevent.
+
+To keep the visual benefit without the legal risk, I recommend **stylised brand badges** instead of pixel-perfect official logos: a coloured square/rounded tile with the body's initials in its recognisable colour (e.g. red square "DVSA", blue "TfL", red cross "NHS", navy "IELTS", yellow/black "CSCS"). They read instantly as "the DVSA test", "the TfL test", etc., without copying the protected marks.
+
+I'll need you to pick one of these before I build:
+
+- **A. Stylised badges (recommended, safe):** I generate clean coloured initial-tiles for each body and use them site-wide. No trademark risk.
+- **B. Real official logos:** I source the official SVG/PNG of each logo and embed them. Faster visual recognition, but you accept the trademark risk and the possibility of takedown requests. I'll add a stronger "not affiliated / all trademarks property of their respective owners" line under the panel and in the footer.
+
+If you don't tell me otherwise, I'll proceed with **A**.
+
+## Implementation
+
+1. **Logo asset set** — create `src/assets/logos/` containing one small square asset per body: `dvsa`, `dvla`, `tfl`, `home-office`, `ielts`, `cscs`, `nmc`, `sia`, `nhs`, `esol`, `motorcycle` (DVSA), plus a generic fallback. Under option A these are generated coloured SVGs; under option B these are the official files.
+2. **Mapping** — add a small `src/data/test-logos.ts` that maps each test slug (`seru`, `topographical`, `phv-licence`, `congestion-charge`, `ulez`, `driving-theory`, `life-in-the-uk`, `ielts`, `cscs`, `nmc-cbt`, `sia`, `esol`, `motorcycle`, `numerical`, …) to its logo + alt text + the issuing body's name. Single source of truth.
+3. **Popular Mock Tests panel** (`src/routes/index.tsx` lines ~184–207) — render the mapped logo as a 28×28 rounded tile to the left of each label, with `alt` text like "TfL — Transport for London". Keep the existing hover and arrow.
+4. **Featured Mock Tests cards** (~line 284) — add the same logo as a small badge in the card header so the brand is reinforced.
+5. **Popular Categories tiles** (~line 222) — show up to 3 logo chips per tile representing the bodies inside that category.
+6. **Disclaimer** — add a one-line note under the Popular Mock Tests panel and in the footer: *"All third-party names and logos are trademarks of their respective owners. UK Test Hub is independent and not affiliated with DVSA, TfL, the Home Office, NHS, IELTS, CSCS, NMC, SIA or any other listed body."*
+7. **Accessibility** — every logo gets descriptive `alt`; decorative duplicates use `alt=""`.
+
+## Files touched
+
+- new: `src/assets/logos/*` (one asset per body)
+- new: `src/data/test-logos.ts`
+- edit: `src/routes/index.tsx` (Popular Mock Tests, Featured Mock Tests, Popular Categories)
+- edit: `src/components/SiteFooter.tsx` (trademark disclaimer line)
+
+Reply **A** (stylised badges) or **B** (real official logos) and I'll implement.
