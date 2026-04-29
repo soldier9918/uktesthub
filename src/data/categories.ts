@@ -172,21 +172,7 @@ export const categories: Category[] = [
       { slug: "ph-london-regulations", title: "London Private Hire Regulations Quiz" },
     ],
   },
-  {
-    slug: "fun",
-    title: "Fun & Viral Quizzes",
-    short: "How British are you? UK slang & daily quiz",
-    description:
-      "Light-hearted quizzes: How British Are You, UK Slang and a fresh General Knowledge Daily Quiz.",
-    icon: "Sparkles",
-    accent: "gold",
-    heroImage: heroFun,
-    topics: [
-      { slug: "how-british", title: "How British Are You?" },
-      { slug: "uk-slang", title: "UK Slang Quiz" },
-      { slug: "daily", title: "General Knowledge Daily" },
-    ],
-  },
+  
   {
     slug: "security",
     title: "Security & Door Supervision",
