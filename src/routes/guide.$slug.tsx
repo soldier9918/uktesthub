@@ -507,6 +507,14 @@ function GuidePage() {
                               "Red flashing light signals and a red 'X' on a sign identify a closed lane in which people, stopped vehicles or other hazards are present. You MUST follow the signs in advance to move safely to an open lane and MUST NOT drive in a closed lane until a sign shows a speed limit or 'END'. Where the left lane is closed at an exit slip road, the exit cannot be used.",
                               "Where red flashing light signals close all lanes shown on a sign, the road is closed. You MUST NOT go beyond the sign in any lane, or use the hard shoulder to pass the closure, unless directed by a police or traffic officer. These closures are enforced by the police.",
                             ],
+                            images: [
+                              { src: "/motorway-rules/01-amber-obstruction.png", alt: "Overhead motorway gantry sign showing amber arrows directing traffic to the right with a red 50 mph limit and the word 'Obstruction'" },
+                              { src: "/motorway-rules/02-amber-60-roadworks.png", alt: "Motorway gantry showing four amber 60 mph roundels above lanes with a blue overhead direction sign for The North, Birmingham and Solihull on the M42" },
+                              { src: "/motorway-rules/03-queue-caution.png", alt: "Amber matrix sign over the motorway showing the message 'QUEUE CAUTION'" },
+                              { src: "/motorway-rules/04-stranded-vehicle.png", alt: "Motorway gantry sign showing a red X over the left lane, amber arrows over the other lanes, a red 40 mph limit and the words 'Stranded vehicle'" },
+                              { src: "/motorway-rules/05-lane-closed-incident.png", alt: "Overhead motorway gantry showing the message 'LANE CLOSED FOR INCIDENT ACCESS' with a red X above the left lane and red 40 mph limits above the other lanes" },
+                              { src: "/motorway-rules/06-road-closed-stop.png", alt: "Two motorway closure signs: one with four red Xs and the words 'STOP Road closed', the other a black sign with white lane symbols and red flashing lights" },
+                            ],
                           },
                           {
                             heading: "3. Joining the motorway (Rule 259)",
@@ -514,6 +522,7 @@ function GuidePage() {
                               "You normally join from a slip road on the left or from an adjoining motorway. Give priority to traffic already on the motorway, check the traffic and match your speed to fit safely into the left-hand lane.",
                               "Do not cross solid white lines that separate lanes, and do not use the hard shoulder. If the slip road continues as an extra lane, stay in it. Remain in the left-hand lane long enough to adjust to the speed of traffic before considering overtaking.",
                             ],
+                            images: [],
                           },
                           {
                             heading: "4. On the motorway (Rules 260–263)",
@@ -524,6 +533,7 @@ function GuidePage() {
                               "Unless directed by a police or traffic officer, you MUST NOT reverse along any part of a motorway (including slip roads, hard shoulders and emergency areas), cross the central reservation, or drive against the traffic flow. If you have missed your exit, carry on to the next one.",
                               "Keep in the left lane unless overtaking, and return to the left when it is safe. Be aware of emergency services, traffic officers, recovery workers and others stopped on the hard shoulder or in an emergency area — if it is safe, move into the adjacent lane to give them more room.",
                             ],
+                            images: [],
                           },
                           {
                             heading: "5. Lane discipline (Rules 265–266)",
@@ -531,13 +541,20 @@ function GuidePage() {
                               "On a motorway with three or more lanes, the right-hand lane MUST NOT be used (except in prescribed circumstances) if you are driving any vehicle drawing a trailer; a goods vehicle over 3.5 tonnes; a goods vehicle over 7.5 tonnes; or a passenger vehicle constructed or adapted to carry more than eight seated passengers in addition to the driver where a speed limiter is fitted.",
                               "Approaching a junction, look well ahead for signals or signs — direction signs may be placed over the road. If you need to change lanes, do so in good time. At some junctions a lane may lead directly off the motorway; only get in that lane if you wish to go in the direction shown overhead.",
                             ],
+                            images: [],
                           },
                           {
-                            heading: "6. Overtaking (Rules 267–268)",
+                            heading: "6. Overtaking and the hard shoulder (Rules 267–269)",
                             paras: [
                               "Overtake only on the right, and only when it is safe and legal. Check your mirrors, judge speeds carefully, make sure the lane you'll join is clear ahead and behind, and take a quick sideways glance into the blind spot. Watch for fast traffic coming up behind, especially motorcyclists. Signal in good time, move out, and don't cut in on the vehicle you've overtaken.",
                               "Do not overtake on the left, or move to a lane on your left to overtake. In congested conditions where adjacent lanes are moving at similar speeds, you may keep up with traffic in your lane even if it means passing traffic in the lane to your right — but do not weave in and out of lanes.",
                               "Hard shoulder. Where present, you MUST NOT use the hard shoulder except in an emergency or if directed to do so by the police, traffic officers or a traffic sign. On some motorways the hard shoulder is opened as an extra lane during congestion: a red 'X' or blank sign above means you MUST NOT use it, while a speed limit shown above means it is open as a running lane.",
+                            ],
+                            images: [
+                              { src: "/motorway-rules/07-hard-shoulder-must-not-use.png", alt: "Diagram of a motorway with the hard shoulder marked with a red X and the words 'MUST NOT use'" },
+                              { src: "/motorway-rules/08-hard-shoulder-blank-signs.png", alt: "Diagram of a motorway gantry with blank black signs above each lane, indicating the hard shoulder must not be used" },
+                              { src: "/motorway-rules/09-hard-shoulder-red-x-50.png", alt: "Diagram showing a red X above the hard shoulder and 50 mph limits above the running lanes — hard shoulder must not be used" },
+                              { src: "/motorway-rules/10-hard-shoulder-running-lane-60.png", alt: "Diagram showing 60 mph limits above all four lanes including the hard shoulder, with a green tick marked 'CAN use' — hard shoulder open as a running lane" },
                             ],
                           },
                           {
@@ -547,6 +564,10 @@ function GuidePage() {
                               "You MUST NOT stop on any carriageway, emergency area, hard shoulder, slip road, central reservation or verge except in an emergency, when told to do so by the police or traffic officers, or when directed by an emergency sign or red flashing light signals. Do not stop on any part of a motorway to make or receive mobile phone calls, except in an emergency.",
                               "You MUST NOT pick up or set down anyone, or walk on a motorway, except in an emergency.",
                             ],
+                            images: [
+                              { src: "/motorway-rules/11-emergency-area.png", alt: "Photograph of a motorway emergency area marked with orange surfacing on the left, with a car parked safely off the running lanes" },
+                              { src: "/motorway-rules/12-sos-300yds.png", alt: "Blue motorway sign with an orange SOS telephone symbol and the text '300 yds' indicating the distance to the next emergency area" },
+                            ],
                           },
                           {
                             heading: "8. Leaving the motorway (Rules 273–274)",
@@ -554,6 +575,7 @@ function GuidePage() {
                               "Unless signs show that a lane leads directly off the motorway, you will normally leave by a slip road on your left. Watch for the signs that tell you you're getting near your exit, move into the left-hand lane well before you reach it, signal left in good time and reduce your speed on the slip road as needed.",
                               "On leaving the motorway or using a link road between motorways, your speed may be higher than you realise — 50 mph can feel like 30 mph. Check your speedometer and adjust accordingly. Some slip roads and link roads have sharp bends, so slow down.",
                             ],
+                            images: [],
                           },
                         ].map((sub) => (
                           <div key={sub.heading}>
@@ -570,6 +592,23 @@ function GuidePage() {
                                 </p>
                               ))}
                             </div>
+                            {sub.images && sub.images.length > 0 ? (
+                              <div className="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-2">
+                                {sub.images.map((img) => (
+                                  <figure
+                                    key={img.src}
+                                    className="overflow-hidden rounded-xl border border-border bg-white p-2"
+                                  >
+                                    <img
+                                      src={img.src}
+                                      alt={img.alt}
+                                      loading="lazy"
+                                      className="mx-auto block h-auto w-full"
+                                    />
+                                  </figure>
+                                ))}
+                              </div>
+                            ) : null}
                           </div>
                         ))}
                       </div>
