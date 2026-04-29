@@ -17,6 +17,8 @@ type BadgeKey =
   | "sia"
   | "nhs"
   | "esol"
+  | "food-hygiene"
+  | "first-aid"
   | "generic";
 
 type BadgeStyle = {
@@ -39,6 +41,8 @@ const STYLES: Record<BadgeKey, BadgeStyle> = {
   sia: { label: "SIA", bg: "#1B1F3A", fg: "#FFFFFF" },
   nhs: { label: "NHS", bg: "#005EB8", fg: "#FFFFFF" },
   esol: { label: "ESOL", bg: "#5B2A86", fg: "#FFFFFF", fontSize: "0.55rem" },
+  "food-hygiene": { label: "FH", bg: "#157A3B", fg: "#FFFFFF" },
+  "first-aid": { label: "+", bg: "#C8102E", fg: "#FFFFFF", fontSize: "1rem" },
   generic: { label: "UK", bg: "#6B7280", fg: "#FFFFFF" },
 };
 
@@ -53,6 +57,8 @@ export const BODY_NAMES: Record<BadgeKey, string> = {
   sia: "Security Industry Authority",
   nhs: "NHS",
   esol: "ESOL",
+  "food-hygiene": "Food Hygiene",
+  "first-aid": "First Aid",
   generic: "UK Test",
 };
 
