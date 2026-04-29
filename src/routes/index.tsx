@@ -209,6 +209,9 @@ function HomePage() {
                   </li>
                 ))}
               </ul>
+              <p className="mt-3 border-t border-white/10 pt-3 text-center font-display text-xs font-bold uppercase tracking-[0.18em] text-coral">
+                And many many more
+              </p>
             </div>
           </aside>
         </div>
