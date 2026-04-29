@@ -376,79 +376,108 @@ function HomePage() {
         </section>
 
         {/* WHAT IS UK TEST HUB */}
-        <section className="mt-20 grid gap-10 lg:grid-cols-[1.4fr_1fr] lg:items-start">
-          <div className="prose prose-slate max-w-none prose-headings:font-display prose-h2:text-2xl md:prose-h2:text-3xl prose-a:text-coral prose-a:no-underline hover:prose-a:underline">
-            <h2>What is UK Test Hub?</h2>
-            <p>
-              UK Test Hub is a free practice platform built to help learners
-              across Britain pass official UK exams first time. From the{" "}
-              <Link to="/category/$slug" params={{ slug: "driving" }}>
-                DVSA Driving Theory Test
-              </Link>{" "}
-              and the{" "}
-              <Link to="/category/$slug" params={{ slug: "citizenship" }}>
-                Life in the UK Test
-              </Link>{" "}
-              to{" "}
-              <Link to="/category/$slug" params={{ slug: "english" }}>
-                IELTS, ESOL and English language exams
+        <section className="mt-20">
+          <div className="grid gap-10 lg:grid-cols-[1.4fr_1fr] lg:items-start">
+            <div>
+              <span className="inline-flex items-center gap-2 rounded-full bg-coral/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.14em] text-coral">
+                About the platform
+              </span>
+              <h2 className="mt-4 font-display text-3xl font-bold leading-tight text-foreground md:text-4xl">
+                What is UK Test Hub?
+              </h2>
+              <p className="mt-5 text-lg leading-relaxed text-muted-foreground md:text-xl">
+                UK Test Hub is a free practice platform built to help learners
+                across Britain pass official UK exams first time — no accounts,
+                no paywalls, no surprises.
+              </p>
+
+              <div className="mt-8 space-y-5 text-base leading-relaxed text-muted-foreground">
+                <p>
+                  From the{" "}
+                  <Link
+                    to="/category/$slug"
+                    params={{ slug: "driving" }}
+                    className="font-medium text-coral hover:underline"
+                  >
+                    DVSA Driving Theory Test
+                  </Link>{" "}
+                  and the{" "}
+                  <Link
+                    to="/category/$slug"
+                    params={{ slug: "citizenship" }}
+                    className="font-medium text-coral hover:underline"
+                  >
+                    Life in the UK Test
+                  </Link>{" "}
+                  to{" "}
+                  <Link
+                    to="/category/$slug"
+                    params={{ slug: "english" }}
+                    className="font-medium text-coral hover:underline"
+                  >
+                    IELTS, ESOL and English language exams
+                  </Link>
+                  , our mocks follow the real exam format and difficulty so you
+                  walk into the test centre knowing exactly what to expect.
+                </p>
+                <p>
+                  Every test is mobile-friendly and refreshed regularly to
+                  reflect the latest syllabus updates. Questions are written
+                  and reviewed by our team, with instant marking and clear
+                  explanations after every answer.
+                </p>
+              </div>
+
+              <ul className="mt-8 grid gap-3 sm:grid-cols-2">
+                {[
+                  { label: "GCSE & 11+", slug: "education" as const },
+                  { label: "CSCS & SIA cards", slug: "career" as const },
+                  { label: "NHS numeracy & literacy", slug: "nhs" as const },
+                  { label: "Professional licensing", slug: "professional" as const },
+                ].map((item) => (
+                  <li key={item.slug}>
+                    <Link
+                      to="/category/$slug"
+                      params={{ slug: item.slug }}
+                      className="flex items-center gap-3 rounded-xl border border-border bg-card px-4 py-3 text-sm font-medium text-foreground transition-colors hover:border-coral/40 hover:bg-accent/40"
+                    >
+                      <CheckCircle2 className="h-4 w-4 shrink-0 text-coral" />
+                      <span className="flex-1">{item.label}</span>
+                      <ArrowRight className="h-4 w-4 text-muted-foreground" />
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <aside className="rounded-3xl border border-border bg-card p-6 shadow-soft md:p-8">
+              <span className="inline-flex items-center gap-2 rounded-full bg-success/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.14em] text-success">
+                Why it works
+              </span>
+              <h3 className="mt-3 font-display text-xl font-bold text-foreground md:text-2xl">
+                Why Practice Tests Work
+              </h3>
+              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                Decades of cognitive-science research show that{" "}
+                <strong className="text-foreground">retrieval practice</strong>{" "}
+                — actively recalling answers under exam-like conditions — is
+                one of the most effective ways to learn. Reading notes feels
+                productive but rarely transfers to exam day.
+              </p>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                Mock tests expose gaps in your knowledge before they cost you
+                marks, build familiarity with the question style, and reduce
+                exam anxiety through repeated low-stakes exposure.
+              </p>
+              <Link
+                to="/blog"
+                className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-coral hover:underline"
+              >
+                Read revision tips on the blog
+                <ArrowRight className="h-4 w-4" />
               </Link>
-              , our mock tests follow the real exam format and difficulty so
-              you walk into the exam centre knowing exactly what to expect.
-            </p>
-            <p>
-              Every test on the site is free, mobile-friendly and refreshed
-              regularly to reflect the latest syllabus updates. There are no
-              accounts to create, no paywalls and no surprise upsells — just
-              practice questions written and reviewed by our team, with
-              instant marking and clear explanations after every answer.
-            </p>
-            <p>
-              Whether you're revising for{" "}
-              <Link to="/category/$slug" params={{ slug: "education" }}>
-                GCSE and 11+
-              </Link>
-              , preparing for a{" "}
-              <Link to="/category/$slug" params={{ slug: "career" }}>
-                CSCS or SIA card
-              </Link>
-              , training for{" "}
-              <Link to="/category/$slug" params={{ slug: "nhs" }}>
-                NHS numeracy and literacy
-              </Link>{" "}
-              tests, or sitting a{" "}
-              <Link to="/category/$slug" params={{ slug: "professional" }}>
-                professional licensing exam
-              </Link>
-              , UK Test Hub gives you a calm, modern place to practise and
-              improve.
-            </p>
+            </aside>
           </div>
-          <aside className="rounded-3xl border border-border bg-card p-6 shadow-soft md:p-8">
-            <h3 className="font-display text-lg font-bold text-foreground">
-              Why Practice Tests Work
-            </h3>
-            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-              Decades of cognitive-science research show that{" "}
-              <strong className="text-foreground">retrieval practice</strong>{" "}
-              — actively recalling answers under exam-like conditions — is one
-              of the most effective ways to learn. Reading notes feels
-              productive but rarely transfers to exam day.
-            </p>
-            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-              Mock tests also expose gaps in your knowledge before they cost
-              you marks, build familiarity with the question style, and
-              reduce exam anxiety through repeated low-stakes exposure.
-              That's why every UK Test Hub mock mirrors the real test format
-              and gives you instant feedback you can act on.
-            </p>
-            <Link
-              to="/blog"
-              className="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-coral hover:underline"
-            >
-              Read revision tips on the blog <ArrowRight className="h-4 w-4" />
-            </Link>
-          </aside>
         </section>
 
         <AdSlot size="leaderboard" className="mt-14" />
