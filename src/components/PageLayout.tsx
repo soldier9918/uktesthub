@@ -17,7 +17,7 @@ export function PageLayout({
       <main className="flex-1">
         <section className="border-b border-border bg-navy-deep text-navy-foreground">
           <div className="mx-auto max-w-4xl px-4 py-14 md:px-6 md:py-20">
-            <h1 className="text-3xl font-bold leading-tight tracking-tight md:text-4xl lg:text-5xl">
+            <h1 className="font-display font-extrabold uppercase leading-tight tracking-tight text-5xl md:text-6xl lg:text-7xl">
               {title}
             </h1>
             <div className="mt-3 h-1 w-16 rounded-full bg-coral" />
