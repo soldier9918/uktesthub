@@ -162,51 +162,54 @@ function GuidePage() {
               </div>
             ) : null}
 
-            {/* ROAD SIGNS GALLERY (only on road-signs guide) */}
+            {/* OFFICIAL ROAD SIGNS REFERENCE (only on road-signs guide) */}
             {topic.slug === "road-signs" ? (
               <section className="mt-16">
                 <span className="inline-flex items-center rounded-full bg-coral/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-coral">
-                  Visual reference
+                  Official reference
                 </span>
                 <h2 className="mt-4 font-display text-3xl font-extrabold tracking-tight text-foreground md:text-4xl">
-                  UK road signs gallery
+                  Every UK road sign — Highway Code reference
                 </h2>
                 <div className="mt-3 h-1 w-16 rounded-full bg-coral" />
-                <p className="mt-3 max-w-2xl text-base text-muted-foreground md:text-lg">
-                  Every sign you'll meet on the DVSA theory test, drawn to Highway Code
-                  conventions and grouped by category. Learn the shape and colour first,
-                  then drill the specific signs that don't follow the rule.
+                <p className="mt-3 max-w-3xl text-base text-muted-foreground md:text-lg">
+                  These are the official traffic sign plates from the
+                  Department for Transport's <em>Highway Code: Traffic signs</em>
+                  {" "}publication — the same artwork the DVSA uses in your theory
+                  test. Study them in groups, not as isolated images.
                 </p>
 
-                <div className="mt-10 space-y-12">
-                  {ROAD_SIGN_GROUPS.map((group) => (
-                    <div key={group.title} className="border-t border-border pt-8">
-                      <h3 className="font-display text-2xl font-bold tracking-tight text-foreground">
-                        {group.title}
-                      </h3>
-                      <p className="mt-2 max-w-3xl text-sm leading-relaxed text-muted-foreground md:text-base">
-                        {group.intro}
-                      </p>
-                      <div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
-                        {group.signs.map((s) => (
-                          <figure
-                            key={s.type}
-                            className="flex flex-col items-center rounded-2xl border border-border bg-card p-4"
-                          >
-                            <RoadSign type={s.type} title={s.label} className="!w-28 md:!w-32" />
-                            <figcaption className="mt-3 text-center text-xs font-semibold leading-snug text-foreground/85 md:text-[13px]">
-                              {s.label}
-                            </figcaption>
-                          </figure>
-                        ))}
-                      </div>
-                    </div>
-                  ))}
-                </div>
+                {ROAD_SIGN_PAGES.map((p) => (
+                  <div key={p.src} className="mt-12 border-t border-border pt-8">
+                    <h3 className="font-display text-2xl font-bold tracking-tight text-foreground">
+                      {p.title}
+                    </h3>
+                    <p className="mt-2 max-w-3xl text-sm leading-relaxed text-muted-foreground md:text-base">
+                      {p.intro}
+                    </p>
+                    <figure className="mt-6 overflow-hidden rounded-2xl border border-border bg-white p-3 md:p-6">
+                      <img
+                        src={p.src}
+                        alt={p.alt}
+                        loading="lazy"
+                        className="mx-auto block h-auto w-full max-w-3xl"
+                      />
+                    </figure>
+                  </div>
+                ))}
 
                 <p className="mt-8 text-xs text-muted-foreground">
-                  Sources: gov.uk Highway Code traffic signs, DVSA learning materials.
-                  Signs drawn to UK Highway Code shape and colour conventions.
+                  Source: Department for Transport, <em>The Highway Code — Traffic signs</em>{" "}
+                  (
+                  <a
+                    href="https://assets.publishing.service.gov.uk/media/68f8d5c5ec6267c615ed8f99/the-highway-code-traffic-signs.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline hover:text-coral"
+                  >
+                    download the official PDF
+                  </a>
+                  ). Reproduced for educational purposes under Open Government Licence v3.0.
                 </p>
               </section>
             ) : null}
