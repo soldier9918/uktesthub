@@ -8,7 +8,7 @@ const nav: { label: string; to: string; slug?: string }[] = [
   { label: "UK Life", to: "/category/$slug", slug: "citizenship" },
   { label: "English", to: "/category/$slug", slug: "english" },
   { label: "Education", to: "/category/$slug", slug: "education" },
-  { label: "Jobs", to: "/category/$slug", slug: "career" },
+  { label: "Taxi & Private Hire", to: "/category/$slug", slug: "taxi-private-hire" },
   { label: "Professional", to: "/category/$slug", slug: "professional" },
   { label: "NHS", to: "/category/$slug", slug: "nhs" },
   { label: "Blog", to: "/blog" },
