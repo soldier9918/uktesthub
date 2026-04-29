@@ -207,9 +207,10 @@ function HomePage() {
                     <Link
                       to="/topic/$slug"
                       params={{ slug: t.slug }}
-                      className="group flex items-center justify-between gap-3 rounded-lg px-3 py-2 text-base font-medium text-navy-foreground/90 transition-colors hover:bg-white/10 hover:text-coral"
+                      className="group flex items-center gap-3 rounded-lg px-3 py-2 text-base font-medium text-navy-foreground/90 transition-colors hover:bg-white/10 hover:text-coral"
                     >
-                      <span className="truncate">{t.label}</span>
+                      <TestBadge badge={badgeForSlug(t.slug)} size="sm" />
+                      <span className="flex-1 truncate">{t.label}</span>
                       <ArrowRight className="h-4 w-4 shrink-0 text-coral opacity-0 transition-opacity group-hover:opacity-100" />
                     </Link>
                   </li>
@@ -217,6 +218,11 @@ function HomePage() {
               </ul>
               <p className="mt-3 border-t border-white/10 pt-3 text-center font-display text-sm font-bold uppercase tracking-[0.18em] text-coral">
                 And many many more
+              </p>
+              <p className="mt-2 text-center text-[10px] leading-snug text-navy-foreground/50">
+                Logos shown are stylised badges. All names and trademarks belong
+                to their respective owners. UK Test Hub is independent and not
+                affiliated with any listed body.
               </p>
             </div>
           </aside>
