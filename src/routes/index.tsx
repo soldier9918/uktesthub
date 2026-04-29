@@ -219,9 +219,15 @@ function HomePage() {
                   </li>
                 ))}
               </ul>
-              <p className="mt-3 border-t border-white/10 pt-3 text-center font-display text-sm font-bold uppercase tracking-[0.18em] text-coral">
-                And many many more
-              </p>
+              <div className="mt-3 border-t border-white/10 pt-3">
+                <Link
+                  to="/all-tests"
+                  className="group flex items-center justify-center gap-2 rounded-lg bg-coral px-4 py-2.5 text-center font-display text-sm font-bold uppercase tracking-[0.15em] text-coral-foreground shadow-coral transition-transform hover:-translate-y-0.5"
+                >
+                  Browse all tests
+                  <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+                </Link>
+              </div>
               <p className="mt-2 text-center text-[10px] leading-snug text-navy-foreground/50">
                 Logos shown are stylised badges. All names and trademarks belong
                 to their respective owners. UK Test Hub is independent and not
