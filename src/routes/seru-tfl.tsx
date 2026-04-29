@@ -59,10 +59,10 @@ function SeruPage() {
 
       <p>
         Browse all{" "}
-        <Link to="/category/$slug" params={{ slug: "professional" }}>
-          professional certification tests
+        <Link to="/category/$slug" params={{ slug: "taxi-private-hire" }}>
+          taxi & private hire tests
         </Link>{" "}
-        — including CSCS, SIA and First Aid.
+        — including SERU, Topographical, PHV Licence, ULEZ and Congestion Charge.
       </p>
 
       <p className="text-sm text-muted-foreground">
