@@ -194,10 +194,10 @@ function HomePage() {
                   { slug: "driving-theory", label: "Driving Theory Tests" },
                   { slug: "life-in-the-uk", label: "Life in the UK Tests" },
                   { slug: "ielts", label: "IELTS Tests" },
-                  { slug: "cscs", label: "CSCS Tests" },
+                  { slug: "cscs-operative", label: "CSCS Tests" },
                   { slug: "nmc", label: "NMC" },
                   { slug: "nmc-cbt", label: "CBT Tests" },
-                  { slug: "sia", label: "SIA Tests" },
+                  { slug: "sia-door-supervisor", label: "SIA Tests" },
                   { slug: "esol", label: "ESOL Tests" },
                   
                   
@@ -567,11 +567,11 @@ function HomePage() {
                     params={{ slug: "professional" }}
                     className="font-medium text-coral hover:underline"
                   >
-                    Professional
+                    Workplace Compliance
                   </Link>{" "}
-                  banks cover everything from the CSCS Health, Safety and
-                  Environment test and the SIA door-supervisor licence to
-                  food hygiene, first aid and trade-specific assessments.
+                  banks cover the everyday certifications British employers
+                  ask for — Food Hygiene, First Aid, Fire Safety, Manual
+                  Handling, Health & Safety Awareness and GDPR.
                   We also publish{" "}
                   <Link
                     to="/category/$slug"
@@ -686,9 +686,10 @@ function HomePage() {
                   numeracy and literacy assessments before training, and
                   by GCSE and 11+ students who want extra timed practice
                   beyond what their school provides. Construction workers
-                  use the CSCS bank before booking their card test, security
-                  staff revise for the SIA, and care workers brush up on
-                  safeguarding and food hygiene.
+                  use our Construction & Trade bank before booking their CSCS
+                  card test, security staff revise for the SIA in our
+                  Security & Door Supervision section, and care workers
+                  brush up on safeguarding and food hygiene.
                 </p>
                 <p>
                   Teachers, tutors and parents use UK Test Hub as a free
@@ -703,9 +704,9 @@ function HomePage() {
               <ul className="mt-10 grid gap-3 sm:grid-cols-2">
                 {[
                   { label: "GCSE & 11+", slug: "education" as const },
-                  { label: "CSCS & SIA cards", slug: "career" as const },
+                  { label: "CSCS & site safety", slug: "construction" as const },
                   { label: "NHS numeracy & literacy", slug: "nhs" as const },
-                  { label: "Professional licensing", slug: "professional" as const },
+                  { label: "Workplace compliance", slug: "professional" as const },
                 ].map((item) => (
                   <li key={item.slug}>
                     <Link
