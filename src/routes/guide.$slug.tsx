@@ -501,19 +501,33 @@ function GuidePage() {
                           },
                           {
                             heading: "2. Motorway signals (Rules 255–258)",
-                            paras: [
-                              "Signs and signals warn you of hazards ahead — incidents, fog, spillages or road workers on the carriageway you may not yet see. A single sign or signal can display advice, restrictions and warnings for all lanes, while lane-specific signs apply to individual lanes.",
-                              "Amber flashing lights warn of a hazard ahead. Reduce your speed, be prepared for the hazard, and only increase speed when you pass a signal that is no longer flashing, or a sign showing the national speed limit or the word 'END', and you are sure it is safe to do so.",
-                              "Red flashing light signals and a red 'X' on a sign identify a closed lane in which people, stopped vehicles or other hazards are present. You MUST follow the signs in advance to move safely to an open lane and MUST NOT drive in a closed lane until a sign shows a speed limit or 'END'. Where the left lane is closed at an exit slip road, the exit cannot be used.",
-                              "Where red flashing light signals close all lanes shown on a sign, the road is closed. You MUST NOT go beyond the sign in any lane, or use the hard shoulder to pass the closure, unless directed by a police or traffic officer. These closures are enforced by the police.",
-                            ],
-                            images: [
-                              { src: "/motorway-rules/01-amber-obstruction.png", alt: "Overhead motorway gantry sign showing amber arrows directing traffic to the right with a red 50 mph limit and the word 'Obstruction'" },
-                              { src: "/motorway-rules/02-amber-60-roadworks.png", alt: "Motorway gantry showing four amber 60 mph roundels above lanes with a blue overhead direction sign for The North, Birmingham and Solihull on the M42" },
-                              { src: "/motorway-rules/03-queue-caution.png", alt: "Amber matrix sign over the motorway showing the message 'QUEUE CAUTION'" },
-                              { src: "/motorway-rules/04-stranded-vehicle.png", alt: "Motorway gantry sign showing a red X over the left lane, amber arrows over the other lanes, a red 40 mph limit and the words 'Stranded vehicle'" },
-                              { src: "/motorway-rules/05-lane-closed-incident.png", alt: "Overhead motorway gantry showing the message 'LANE CLOSED FOR INCIDENT ACCESS' with a red X above the left lane and red 40 mph limits above the other lanes" },
-                              { src: "/motorway-rules/06-road-closed-stop.png", alt: "Two motorway closure signs: one with four red Xs and the words 'STOP Road closed', the other a black sign with white lane symbols and red flashing lights" },
+                            blocks: [
+                              {
+                                text: "Signs and signals warn you of hazards ahead — incidents, fog, spillages or road workers on the carriageway you may not yet see. A single sign or signal can display advice, restrictions and warnings for all lanes, while lane-specific signs apply to individual lanes.",
+                                images: [
+                                  { src: "/motorway-rules/01-amber-obstruction.png", alt: "Overhead motorway gantry sign showing amber arrows directing traffic to the right with a red 50 mph limit and the word 'Obstruction'" },
+                                  { src: "/motorway-rules/02-amber-60-roadworks.png", alt: "Motorway gantry showing four amber 60 mph roundels above lanes with a blue overhead direction sign for The North, Birmingham and Solihull on the M42" },
+                                ],
+                              },
+                              {
+                                text: "Amber flashing lights warn of a hazard ahead. Reduce your speed, be prepared for the hazard, and only increase speed when you pass a signal that is no longer flashing, or a sign showing the national speed limit or the word 'END', and you are sure it is safe to do so.",
+                                images: [
+                                  { src: "/motorway-rules/03-queue-caution.png", alt: "Amber matrix sign over the motorway showing the message 'QUEUE CAUTION'" },
+                                ],
+                              },
+                              {
+                                text: "Red flashing light signals and a red 'X' on a sign identify a closed lane in which people, stopped vehicles or other hazards are present. You MUST follow the signs in advance to move safely to an open lane and MUST NOT drive in a closed lane until a sign shows a speed limit or 'END'. Where the left lane is closed at an exit slip road, the exit cannot be used.",
+                                images: [
+                                  { src: "/motorway-rules/04-stranded-vehicle.png", alt: "Motorway gantry sign showing a red X over the left lane, amber arrows over the other lanes, a red 40 mph limit and the words 'Stranded vehicle'" },
+                                  { src: "/motorway-rules/05-lane-closed-incident.png", alt: "Overhead motorway gantry showing the message 'LANE CLOSED FOR INCIDENT ACCESS' with a red X above the left lane and red 40 mph limits above the other lanes" },
+                                ],
+                              },
+                              {
+                                text: "Where red flashing light signals close all lanes shown on a sign, the road is closed. You MUST NOT go beyond the sign in any lane, or use the hard shoulder to pass the closure, unless directed by a police or traffic officer. These closures are enforced by the police.",
+                                images: [
+                                  { src: "/motorway-rules/06-road-closed-stop.png", alt: "Motorway road-closure signs: red Xs with 'STOP Road closed', and a black sign with white lane symbols and red flashing lights" },
+                                ],
+                              },
                             ],
                           },
                           {
@@ -577,40 +591,57 @@ function GuidePage() {
                             ],
                             images: [],
                           },
-                        ].map((sub) => (
-                          <div key={sub.heading}>
-                            <h4 className="font-display text-xl font-bold tracking-tight text-foreground md:text-2xl">
-                              {sub.heading}
-                            </h4>
-                            <div className="mt-3 space-y-3">
-                              {sub.paras.map((p, k) => (
-                                <p
-                                  key={k}
-                                  className="text-base leading-[1.75] text-foreground/85 md:text-[17px]"
-                                >
-                                  {p}
-                                </p>
-                              ))}
-                            </div>
-                            {sub.images && sub.images.length > 0 ? (
-                              <div className="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-2">
-                                {sub.images.map((img) => (
-                                  <figure
-                                    key={img.src}
-                                    className="overflow-hidden rounded-xl border border-border bg-white p-2"
-                                  >
-                                    <img
-                                      src={img.src}
-                                      alt={img.alt}
-                                      loading="lazy"
-                                      className="mx-auto block h-auto w-full"
-                                    />
-                                  </figure>
+                        ].map((sub) => {
+                          const blocks =
+                            "blocks" in sub && sub.blocks
+                              ? sub.blocks
+                              : (sub.paras ?? []).map((t, idx) => ({
+                                  text: t,
+                                  images:
+                                    idx === 0 && "images" in sub && sub.images
+                                      ? sub.images
+                                      : [],
+                                }));
+                          return (
+                            <div key={sub.heading}>
+                              <h4 className="font-display text-xl font-bold tracking-tight text-foreground md:text-2xl">
+                                {sub.heading}
+                              </h4>
+                              <div className="mt-3 space-y-6">
+                                {blocks.map((b, k) => (
+                                  <div key={k} className="space-y-4">
+                                    <p className="text-base leading-[1.75] text-foreground/85 md:text-[17px]">
+                                      {b.text}
+                                    </p>
+                                    {b.images && b.images.length > 0 ? (
+                                      <div
+                                        className={
+                                          b.images.length > 1
+                                            ? "grid grid-cols-1 gap-4 sm:grid-cols-2"
+                                            : "grid grid-cols-1 gap-4"
+                                        }
+                                      >
+                                        {b.images.map((img) => (
+                                          <figure
+                                            key={img.src}
+                                            className="overflow-hidden rounded-xl border border-border bg-white p-2"
+                                          >
+                                            <img
+                                              src={img.src}
+                                              alt={img.alt}
+                                              loading="lazy"
+                                              className="mx-auto block h-auto w-full"
+                                            />
+                                          </figure>
+                                        ))}
+                                      </div>
+                                    ) : null}
+                                  </div>
                                 ))}
                               </div>
-                            ) : null}
-                          </div>
-                        ))}
+                            </div>
+                          );
+                        })}
                       </div>
                     ) : null}
 
