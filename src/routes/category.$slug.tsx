@@ -168,6 +168,7 @@ function CategoryPage() {
                   ))}
               </ul>
             </div>
+            <AdSlot size="rectangle" />
           </aside>
         </div>
 
