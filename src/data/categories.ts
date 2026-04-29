@@ -112,7 +112,6 @@ export const categories: Category[] = [
     topics: [
       { slug: "cscs", title: "CSCS Card Test" },
       { slug: "sia", title: "SIA Security Test" },
-      { slug: "seru", title: "SERU TfL Assessment" },
       { slug: "food-hygiene", title: "Food Hygiene Level 2" },
       { slug: "first-aid", title: "First Aid Theory" },
     ],
