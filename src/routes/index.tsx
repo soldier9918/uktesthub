@@ -582,7 +582,7 @@ function HomePage() {
                 </p>
               </div>
 
-              <h3 className="mt-10 font-display text-lg font-bold text-foreground md:text-xl">
+              <h3 className="mt-10 border-l-4 border-coral pl-4 font-display text-xl font-bold text-foreground md:text-2xl">
                 Built for British learners
               </h3>
               <div className="mt-4 space-y-5 text-base leading-relaxed text-muted-foreground">
