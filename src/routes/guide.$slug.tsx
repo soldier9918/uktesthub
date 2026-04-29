@@ -135,37 +135,9 @@ function GuidePage() {
               ))}
             </div>
 
-            {/* Numbered sections */}
-            {seo?.sections?.length ? (
-              <div className="mt-12 space-y-12">
-                {seo.sections.map((s, i) => (
-                  <div key={i} className="border-t border-border pt-8">
-                    <div className="flex items-baseline gap-3">
-                      <span className="font-display text-sm font-bold tabular-nums text-coral">
-                        {String(i + 1).padStart(2, "0")}
-                      </span>
-                      <h3 className="font-display text-2xl font-bold leading-tight tracking-tight text-foreground md:text-[1.75rem]">
-                        {s.heading}
-                      </h3>
-                    </div>
-                    <div className="mt-5 space-y-4">
-                      {s.body.map((b, j) => (
-                        <p
-                          key={j}
-                          className="text-base leading-[1.75] text-foreground/85 md:text-[17px]"
-                        >
-                          {b}
-                        </p>
-                      ))}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            ) : null}
-
-            {/* OFFICIAL ROAD SIGNS REFERENCE (only on road-signs guide) */}
+            {/* OFFICIAL ROAD SIGNS REFERENCE (only on road-signs guide) — placed directly after the intro */}
             {topic.slug === "road-signs" ? (
-              <section className="mt-16">
+              <section className="mt-12">
                 <span className="inline-flex items-center rounded-full bg-coral/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-coral">
                   Official reference
                 </span>
@@ -216,6 +188,36 @@ function GuidePage() {
                 </p>
               </section>
             ) : null}
+
+            {/* Numbered sections */}
+            {seo?.sections?.length ? (
+              <div className="mt-12 space-y-12">
+                {seo.sections.map((s, i) => (
+                  <div key={i} className="border-t border-border pt-8">
+                    <div className="flex items-baseline gap-3">
+                      <span className="font-display text-sm font-bold tabular-nums text-coral">
+                        {String(i + 1).padStart(2, "0")}
+                      </span>
+                      <h3 className="font-display text-2xl font-bold leading-tight tracking-tight text-foreground md:text-[1.75rem]">
+                        {s.heading}
+                      </h3>
+                    </div>
+                    <div className="mt-5 space-y-4">
+                      {s.body.map((b, j) => (
+                        <p
+                          key={j}
+                          className="text-base leading-[1.75] text-foreground/85 md:text-[17px]"
+                        >
+                          {b}
+                        </p>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            ) : null}
+
+            {/* Road signs gallery moved above — see directly after the intro */}
 
             {/* CTA */}
             <div className="mt-12 rounded-2xl border border-border bg-card p-6 md:p-8">
