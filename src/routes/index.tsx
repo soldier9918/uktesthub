@@ -236,29 +236,31 @@ function HomePage() {
                   key={c.slug}
                   to="/category/$slug"
                   params={{ slug: c.slug }}
-                  className="group flex flex-col items-center rounded-2xl border border-border bg-card px-4 py-6 text-center shadow-soft transition-all duration-300 hover:-translate-y-1 hover:border-coral/40 hover:shadow-elevated"
+                  className="group flex h-full flex-col items-center rounded-2xl border border-border bg-card px-4 py-6 text-center shadow-soft transition-all duration-300 hover:-translate-y-1 hover:border-coral/40 hover:shadow-elevated"
                 >
                   <CategoryIcon
                     name={c.icon}
                     alt={c.title}
                     className="mb-4 h-16 w-16 object-contain"
                   />
-                  <h3 className="font-display text-sm font-bold leading-tight text-foreground">
-                    {c.title}
-                  </h3>
-                  <p className="mt-2 line-clamp-3 text-[11px] leading-snug text-muted-foreground">
-                    {c.short}
-                  </p>
-                  <ul className="mt-4 flex flex-wrap justify-center gap-1.5">
-                    {chips.map((label) => (
-                      <li
-                        key={label}
-                        className="rounded-full border border-border bg-muted/60 px-2 py-0.5 text-[10px] font-semibold text-foreground/80"
-                      >
-                        {label}
-                      </li>
-                    ))}
-                  </ul>
+                  <div className="flex w-full flex-1 flex-col items-center">
+                    <h3 className="font-display text-sm font-bold leading-tight text-foreground">
+                      {c.title}
+                    </h3>
+                    <p className="mt-2 line-clamp-3 min-h-[3.4em] text-[11px] leading-snug text-muted-foreground">
+                      {c.short}
+                    </p>
+                    <ul className="mt-4 flex flex-wrap justify-center gap-1.5">
+                      {chips.map((label) => (
+                        <li
+                          key={label}
+                          className="rounded-full border border-border bg-muted/60 px-2 py-0.5 text-[10px] font-semibold text-foreground/80"
+                        >
+                          {label}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                   <span
                     className={`mt-5 inline-flex items-center justify-center gap-1 rounded-md border px-4 py-1.5 text-[11px] font-bold transition-colors ${
                       isCoral
