@@ -147,8 +147,7 @@ function CategoryPage() {
             </div>
           </div>
 
-          <aside className="space-y-6">
-            <AdSlot size="rectangle" />
+          <aside className="space-y-6 lg:self-start">
             <div className="rounded-2xl border border-border bg-card p-5">
               <h3 className="font-display text-base font-semibold">
                 Other categories
