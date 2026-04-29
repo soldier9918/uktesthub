@@ -674,22 +674,22 @@ function HomePage() {
               <span className="inline-flex items-center gap-2 rounded-full bg-success/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.14em] text-success">
                 Why it works
               </span>
-              <h3 className="mt-3 font-display text-xl font-bold text-foreground md:text-2xl">
+              <h3 className="mt-3 border-l-4 border-coral pl-4 font-display text-xl font-bold text-foreground md:text-2xl">
                 Why Practice Tests Work
               </h3>
-              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+              <p className="mt-4 text-base leading-relaxed text-muted-foreground">
                 Decades of cognitive-science research show that{" "}
                 <strong className="text-foreground">retrieval practice</strong>{" "}
                 — actively recalling answers under exam-like conditions — is
                 one of the most effective ways to learn. Reading notes feels
                 productive but rarely transfers to exam day.
               </p>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+              <p className="mt-3 text-base leading-relaxed text-muted-foreground">
                 Mock tests expose gaps in your knowledge before they cost you
                 marks, build familiarity with the question style, and reduce
                 exam anxiety through repeated low-stakes exposure.
               </p>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+              <p className="mt-3 text-base leading-relaxed text-muted-foreground">
                 <strong className="text-foreground">Spaced repetition</strong>{" "}
                 — returning to the same weak topics across several short
                 sessions — beats one long cram the night before. Twenty
@@ -698,7 +698,7 @@ function HomePage() {
                 act of forgetting and re-learning is what locks the answer
                 into long-term memory.
               </p>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+              <p className="mt-3 text-base leading-relaxed text-muted-foreground">
                 Sitting timed mocks under realistic conditions also matters.
                 Most people who fail a UK exam don't fail because they
                 didn't know the material — they fail because they ran out
