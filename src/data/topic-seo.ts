@@ -364,9 +364,172 @@ export const topicSeo: Record<string, TopicSeo> = {
       { q: "Is the test accepted for both ILR and citizenship?", a: "Yes, the same pass certificate is valid for both." },
     ],
   },
-  "british-citizenship": generic("British Citizenship Practice", "the UK Home Office", "an extra layer of practice questions on top of the Life in the UK Test, focused on the rights, responsibilities and ceremony of becoming a British citizen"),
-  "uk-laws-rights": generic("UK Laws & Rights Quiz", "the Ministry of Justice", "a knowledge check on the everyday laws and rights every UK resident is expected to know — equality, employment, consumer protection, criminal and civil law"),
-  "uk-geography": generic("UK Geography Test", "Ordnance Survey and the Office for National Statistics", "a focused quiz on UK nations, regions, capital cities, mountains, rivers and key landmarks — useful preparation alongside the Life in the UK Test"),
+  "british-citizenship": {
+    title: "British Citizenship Test Guide 2026 — Naturalisation, Ceremony & Oath",
+    description:
+      "Free British Citizenship guide for 2026. Naturalisation rules, residency requirements, the Life in the UK Test, the citizenship ceremony and oath — with practice questions.",
+    tagline: "From ILR to British passport — the naturalisation route explained.",
+    intro: [
+      "British citizenship by naturalisation is the final step for most adult migrants who already hold Indefinite Leave to Remain (ILR). Once granted, you can hold a British passport, vote in all UK elections, stand for public office and pass citizenship to your children born outside the UK. The Home Office charges £1,630 in 2026 (adult application) and decisions usually take three to six months.",
+      "This guide covers exactly what the Home Office checks, the residency maths most applicants get wrong, and what happens at the citizenship ceremony. Use the practice questions below to lock in the facts you'll need both for the Life in the UK Test and for any interview the Home Office may request.",
+    ],
+    sections: [
+      {
+        heading: "Who qualifies for naturalisation",
+        body: [
+          "You must be 18 or over, of sound mind and 'good character' (no recent unspent convictions, no immigration breaches, paid taxes). You'll normally need ILR or settled status held for at least 12 months — unless you're married to a British citizen, in which case there's no 12-month wait.",
+          "Residency: at least five years lawfully in the UK before the application date (three if married to a British citizen), with no more than 450 days outside the UK in those five years (270 if the three-year route) and no more than 90 days outside in the final 12 months.",
+        ],
+      },
+      {
+        heading: "Knowledge of life and language",
+        body: [
+          "You must pass the Life in the UK Test (24 questions, 18 to pass, £50). You also need to prove English at CEFR B1 or above — usually with a Secure English Language Test (SELT) certificate or a degree taught in English. People over 65 are exempt from both.",
+          "Both certificates are kept by you and uploaded with the AN form. They have no expiry for citizenship purposes once issued.",
+        ],
+      },
+      {
+        heading: "The application — Form AN",
+        body: [
+          "Apply online at gov.uk using Form AN. You'll need two referees (one professional, one British citizen who has known you 3+ years), your passport, BRP, Life in the UK certificate, English evidence and a complete travel history for the qualifying period — to the day.",
+          "The biggest cause of refusal is missing or wrong absence dates. Get them from your passport stamps, airline emails and the new ETA / EES record before you start. A single overlooked trip can fail the residency requirement.",
+        ],
+      },
+      {
+        heading: "The citizenship ceremony and oath",
+        body: [
+          "If approved, you have 90 days to attend a ceremony at your local council. You take an Oath of Allegiance to the King (or a non-religious Affirmation) and a Pledge to the UK, then receive your naturalisation certificate. Only after the ceremony can you apply for a British passport.",
+          "Ceremonies are usually small group events; you can bring two guests. Smart dress is expected. The council fee (£80) is included in the £1,630 application charge.",
+        ],
+      },
+      {
+        heading: "Common reasons for refusal",
+        body: [
+          "Failing the good-character test (recent driving offences, unpaid council tax, undeclared cash work). Exceeding absence limits. Incorrect referee details. Forgetting to update HMRC after a name or address change. The Home Office cross-checks DWP, HMRC and police records — declare everything.",
+          "If refused you can request a reconsideration (£372) within 28 days. Most successful reconsiderations turn on new evidence rather than legal argument.",
+        ],
+      },
+    ],
+    faqs: [
+      { q: "How long does British citizenship take?", a: "Three to six months from a complete application. Complex cases (criminal record, long absences) can take 12 months." },
+      { q: "How much does it cost in 2026?", a: "£1,630 for an adult application, including the £80 ceremony fee. Children pay £1,214." },
+      { q: "Do I need to give up my old citizenship?", a: "The UK allows dual nationality, but check your home country's rules — some (India, China, Singapore) automatically revoke citizenship if you naturalise elsewhere." },
+      { q: "What's the absence limit?", a: "No more than 450 days outside the UK in the five years before applying, and no more than 90 days in the final 12 months." },
+      { q: "Can I apply before I get ILR?", a: "Only if married to a British citizen and already settled. Everyone else needs ILR plus 12 months." },
+      { q: "What happens at the ceremony?", a: "You take the Oath (or Affirmation) and Pledge in front of a council registrar, then receive your naturalisation certificate. Two guests welcome." },
+    ],
+  },
+  "uk-laws-rights": {
+    title: "UK Laws & Rights Quiz Guide — Everyday Law for Residents",
+    description:
+      "Free guide to UK everyday laws and rights. Equality Act, employment rights, consumer protection, criminal vs civil law, police powers — with practice questions.",
+    tagline: "The laws every UK resident is expected to know — explained simply.",
+    intro: [
+      "Everyone living in the UK — citizen, settled migrant or visa holder — is expected to follow British law and know their basic rights. Many of these rules also appear on the Life in the UK Test, the SIA security exams and most professional licensing tests.",
+      "This guide summarises the laws and rights you encounter day to day: at work, when shopping, when stopped by police, and when something goes wrong. Use the practice quiz to check what you've learned.",
+    ],
+    sections: [
+      {
+        heading: "Equality and human rights",
+        body: [
+          "The Equality Act 2010 makes it illegal to discriminate against anyone because of nine 'protected characteristics': age, disability, gender reassignment, marriage and civil partnership, pregnancy and maternity, race, religion or belief, sex, and sexual orientation.",
+          "The Human Rights Act 1998 brings the European Convention on Human Rights into UK law. Key rights include the right to life, to a fair trial, to private and family life, and freedom of expression. These apply to everyone in the UK regardless of immigration status.",
+        ],
+      },
+      {
+        heading: "Employment rights",
+        body: [
+          "From day one of work you have the right to a written statement of terms, the National Minimum Wage (£11.44+ for 21 and over in 2024/25, rising annually), protection from unlawful discrimination, and itemised payslips. Statutory sick pay starts after four days off sick.",
+          "After two years' continuous service you gain protection from unfair dismissal and the right to statutory redundancy pay. Holiday entitlement is 5.6 weeks per year (28 days for a five-day week, including bank holidays).",
+        ],
+      },
+      {
+        heading: "Consumer protection",
+        body: [
+          "The Consumer Rights Act 2015 says goods must be of satisfactory quality, fit for purpose and as described. You can reject faulty goods for a full refund within 30 days. After that, the seller gets one chance to repair or replace.",
+          "Online and distance purchases give you 14 days to change your mind under the Consumer Contracts Regulations — no reason needed. Doorstep sales have the same 14-day cooling-off period.",
+        ],
+      },
+      {
+        heading: "Criminal vs civil law",
+        body: [
+          "Criminal law deals with offences against the state — theft, assault, fraud, driving offences. Cases are brought by the Crown Prosecution Service in the Magistrates' Court (less serious) or Crown Court (jury trial). The standard of proof is 'beyond reasonable doubt'.",
+          "Civil law deals with disputes between individuals or organisations — contract breaches, debt, family matters, negligence. Cases are heard in the County Court or High Court and the standard is 'balance of probabilities'.",
+        ],
+      },
+      {
+        heading: "Police powers and your rights",
+        body: [
+          "Police can stop and search you under PACE 1984 if they have reasonable grounds to suspect you're carrying stolen or prohibited items. They must tell you their name, station, and the reason for the search, and give you a written record on request.",
+          "If arrested you have the right to free legal advice, to have someone informed of your arrest, and to see the codes of practice. You can normally be held for up to 24 hours without charge (96 with magistrates' approval).",
+        ],
+      },
+    ],
+    faqs: [
+      { q: "What are the nine protected characteristics?", a: "Age, disability, gender reassignment, marriage/civil partnership, pregnancy/maternity, race, religion or belief, sex, and sexual orientation." },
+      { q: "What's the UK minimum wage in 2026?", a: "Updated each April. From April 2025 the National Living Wage applies to all workers aged 21 and over. Check gov.uk/national-minimum-wage-rates for the current figure." },
+      { q: "How long can I be held without charge?", a: "Normally 24 hours, extendable to 36 by a senior officer and to 96 by a magistrate. Terrorism cases can be longer." },
+      { q: "What's the difference between civil and criminal court?", a: "Criminal courts decide if someone broke the law and punish them. Civil courts decide private disputes and order remedies like compensation." },
+      { q: "Can I get a refund on a faulty item?", a: "Yes — full refund within 30 days under the Consumer Rights Act 2015. After that the seller can offer repair or replacement first." },
+      { q: "Do these rights apply to non-citizens?", a: "Most do. The Equality Act, Human Rights Act, employment rights and consumer rights apply to everyone lawfully in the UK." },
+    ],
+  },
+  "uk-geography": {
+    title: "UK Geography Test Guide — Nations, Capitals, Rivers & Landmarks",
+    description:
+      "Free UK Geography quiz guide. Four nations, capital cities, mountains, rivers, regions and landmarks — perfect alongside the Life in the UK Test.",
+    tagline: "The places, regions and landmarks every UK resident should recognise.",
+    intro: [
+      "UK geography appears throughout the Life in the UK Test, school SATs, GCSE Geography and many quiz nights. Beyond exams, knowing the nations, capitals and major regions helps you navigate news, weather forecasts and everyday conversation in Britain.",
+      "This guide covers the four nations, the major cities, mountains, rivers and the cultural landmarks that define each part of the UK. Use the practice quiz to test recall.",
+    ],
+    sections: [
+      {
+        heading: "The four nations",
+        body: [
+          "The United Kingdom is made up of four countries: England (capital London), Scotland (Edinburgh), Wales (Cardiff) and Northern Ireland (Belfast). Together they form 'the UK' — but 'Great Britain' refers only to England, Scotland and Wales (the largest island).",
+          "The British Isles is a wider geographical term that also includes the Republic of Ireland, the Isle of Man and the Channel Islands. The Republic of Ireland is an independent country, not part of the UK.",
+        ],
+      },
+      {
+        heading: "Capital cities and population centres",
+        body: [
+          "London is the UK capital and by far the largest city (around 9 million). Other major English cities: Birmingham, Manchester, Liverpool, Leeds, Sheffield, Bristol, Newcastle. Scotland's largest city is Glasgow (capital is Edinburgh). Wales: Cardiff and Swansea. Northern Ireland: Belfast and Derry/Londonderry.",
+          "England has nine official regions, including London, the South East, North West and Yorkshire & the Humber. Scotland is divided into 32 council areas; Wales into 22 principal areas; Northern Ireland into 11 districts.",
+        ],
+      },
+      {
+        heading: "Mountains, rivers and coast",
+        body: [
+          "Highest peaks: Ben Nevis in Scotland (1,345 m — highest in the UK), Snowdon / Yr Wyddfa in Wales (1,085 m), Scafell Pike in England (978 m), Slieve Donard in Northern Ireland (850 m).",
+          "Longest rivers: Severn (354 km — flows from Wales through England), Thames (346 km — through London), Trent, Great Ouse, Wye. The Lake District (England) and Loch Lomond (Scotland) are the most famous lakes; Loch Ness is the deepest.",
+        ],
+      },
+      {
+        heading: "Famous landmarks",
+        body: [
+          "Stonehenge (Wiltshire), Hadrian's Wall (Northumberland), the Tower of London, Buckingham Palace, Big Ben (the Elizabeth Tower), Edinburgh Castle, Snowdonia / Eryri National Park, the Giant's Causeway (Northern Ireland), the White Cliffs of Dover, the Angel of the North (Gateshead).",
+          "Many appear in Life in the UK Test questions — learn at least one famous landmark per nation and the era it dates from.",
+        ],
+      },
+      {
+        heading: "Patron saints and national symbols",
+        body: [
+          "Each nation has a patron saint and a feast day: St George (England, 23 April), St Andrew (Scotland, 30 November), St David (Wales, 1 March), St Patrick (Northern Ireland, 17 March).",
+          "National flowers: rose (England), thistle (Scotland), daffodil/leek (Wales), shamrock (Northern Ireland). The Union Jack combines the crosses of St George, St Andrew and St Patrick — Wales is not represented because it was already part of the Kingdom of England when the flag was designed.",
+        ],
+      },
+    ],
+    faqs: [
+      { q: "What's the difference between the UK and Great Britain?", a: "Great Britain = England, Scotland, Wales (the main island). The UK = Great Britain plus Northern Ireland." },
+      { q: "What is the highest mountain in the UK?", a: "Ben Nevis in Scotland, at 1,345 metres." },
+      { q: "What is the longest river in the UK?", a: "The River Severn at 354 km, rising in Wales and flowing through England to the Bristol Channel." },
+      { q: "When are the patron saints' days?", a: "St David 1 March (Wales), St Patrick 17 March (NI), St George 23 April (England), St Andrew 30 November (Scotland)." },
+      { q: "Why isn't Wales on the Union Jack?", a: "Wales was already united with England when the flag was created, so it wasn't shown as a separate kingdom." },
+    ],
+  },
+
+  // -------- ENGLISH ---------------------------------------------------
 
   // -------- ENGLISH ---------------------------------------------------
   ielts: {
@@ -425,15 +588,385 @@ export const topicSeo: Record<string, TopicSeo> = {
       { q: "Can I retake just one section?", a: "Yes — IELTS One Skill Retake lets you retake Listening, Reading, Writing or Speaking once within 60 days, for a fee, if you took computer-delivered IELTS." },
     ],
   },
-  esol: generic("ESOL Practice", "an Ofqual-regulated awarding body (Trinity, City & Guilds, Pearson)", "a regulated English for Speakers of Other Languages qualification used for UK visas, settlement and citizenship at A1, A2, B1, B2, C1 or C2 level"),
-  toefl: generic("TOEFL Practice", "ETS (Educational Testing Service)", "an internet-based English test (TOEFL iBT) used worldwide for university admission, scored 0–120 across reading, listening, speaking and writing"),
-  grammar: generic("Grammar & Vocabulary", "no single awarding body — used for general English improvement", "a focused practice set on tenses, prepositions, articles, collocations and academic vocabulary, useful as warm-up before IELTS, TOEFL or ESOL"),
+  esol: {
+    title: "ESOL Practice Guide — A1, A2, B1, B2, C1 & C2 Levels Explained",
+    description:
+      "Free ESOL guide. Trinity, City & Guilds and LanguageCert tests for UK visas, settlement and citizenship. Levels, format and study tips with practice questions.",
+    tagline: "The regulated English test route for visas, ILR and citizenship.",
+    intro: [
+      "ESOL — English for Speakers of Other Languages — is the umbrella term for Ofqual-regulated English qualifications used for UK immigration and everyday study. Trinity College London, City & Guilds, LanguageCert and Pearson all run Home Office-approved ESOL Skills for Life (SfL) and SELT exams. The right level depends on what you're applying for.",
+      "This guide breaks down each CEFR level (A1 to C2), the test formats, and which qualification matches each visa or settlement route.",
+    ],
+    sections: [
+      {
+        heading: "CEFR levels explained",
+        body: [
+          "A1 = beginner (introduce yourself, basic phrases). Required for spouse/partner visa entry and 2.5-year extension. A2 = elementary (simple everyday topics). Required for the 2.5-year spouse/partner extension after entry.",
+          "B1 = intermediate (handle most travel and work situations). Required for ILR and British citizenship. B2 = upper-intermediate. C1 = advanced. C2 = proficiency. Most universities accept B2 or C1.",
+        ],
+      },
+      {
+        heading: "Which test for which purpose",
+        body: [
+          "For UK visas, settlement and citizenship you need a SELT (Secure English Language Test) from a Home Office-approved provider: Trinity GESE, IELTS for UKVI, LanguageCert IESOL or Pearson PTE Home. The list of approved tests changes — always check gov.uk before booking.",
+          "For college and adult education funding, ESOL Skills for Life is the standard qualification — it covers Speaking & Listening, Reading and Writing as separate units.",
+        ],
+      },
+      {
+        heading: "Test format",
+        body: [
+          "Trinity GESE is a face-to-face Speaking & Listening interview only — no reading or writing. Around 6–10 minutes for entry levels, 18 minutes for higher grades. Topics are chosen by you in advance for B1 and above.",
+          "LanguageCert and Pearson are computer-based with all four skills. IELTS for UKVI uses the same format as standard IELTS but at a Home Office centre.",
+        ],
+      },
+      {
+        heading: "Study plan",
+        body: [
+          "Most adults at A2 reach B1 in 8–12 weeks of structured study (3–5 hours per week plus daily practice). Speaking is usually the limiting factor — find a conversation partner or tutor early.",
+          "Practise the exam format, not just the language. The B1 SELT speaking test has a strict structure (introductory conversation, topic discussion, listening tasks). Knowing the format halves your test-day nerves.",
+        ],
+      },
+      {
+        heading: "Booking and on the day",
+        body: [
+          "Book directly with the provider (Trinity, LanguageCert, Pearson). Fees are usually £150–£200 for SELT levels A1–B1. Take your in-date passport — the same one you'll use for your visa or citizenship application.",
+          "Results come within 7 days. The certificate has no expiry for citizenship purposes, but UKVI usually wants it dated within two years of the visa application.",
+        ],
+      },
+    ],
+    faqs: [
+      { q: "What ESOL level do I need for British citizenship?", a: "B1 (CEFR), proven by a SELT from a Home Office-approved provider, or a degree taught in English." },
+      { q: "What's the cheapest UK visa English test?", a: "Trinity GESE Grade 5 (B1) is one of the lowest-cost SELTs at around £150 and tests Speaking & Listening only." },
+      { q: "Is IELTS the same as ESOL?", a: "IELTS is one form of ESOL test. For UK visas you must book the 'IELTS for UKVI' version, not standard IELTS." },
+      { q: "Can I use my college ESOL certificate for a visa?", a: "Only if it was a SELT taken at a Home Office-approved centre. Standard ESOL Skills for Life from college does not qualify for visas." },
+      { q: "How long is the certificate valid?", a: "No expiry for citizenship and ILR. UKVI normally requires it dated within two years for visa applications." },
+    ],
+  },
+  toefl: {
+    title: "TOEFL iBT Guide — Format, Scoring & Study Plan",
+    description:
+      "Free TOEFL iBT guide. Reading, Listening, Speaking and Writing format, 0–120 scoring, university requirements and study tips with practice questions.",
+    tagline: "The internet-based English test for university admission worldwide.",
+    intro: [
+      "TOEFL iBT (Test of English as a Foreign Language, internet-based) is run by ETS and accepted by 12,000+ universities in 160 countries. In the UK it's most commonly used for postgraduate admission alongside IELTS. The test is delivered fully online at a test centre or, in many countries, at home with proctoring.",
+      "The full test is around two hours of testing across four sections, scored 0–30 each for a total of 0–120.",
+    ],
+    sections: [
+      {
+        heading: "The four sections",
+        body: [
+          "Reading: 20 questions on two academic passages, 35 minutes. Listening: 28 questions on lectures and conversations, 36 minutes. Speaking: 4 tasks, 16 minutes (you record answers into a microphone). Writing: 2 tasks, 29 minutes.",
+          "The 2023 'Enhanced TOEFL' format dropped the unscored experimental section and reduced overall test time to about two hours.",
+        ],
+      },
+      {
+        heading: "How scoring works",
+        body: [
+          "Each section is scored 0–30; the total is 0–120. Most UK universities want 80–100 overall with at least 20 in each section. Top postgraduate programmes (Oxford, Cambridge, LSE) often want 100+ with 25+ per section.",
+          "Speaking and Writing are scored by a combination of AI and human raters. Reading and Listening are auto-marked.",
+        ],
+      },
+      {
+        heading: "TOEFL vs IELTS",
+        body: [
+          "TOEFL is fully computer-based and uses American English. IELTS has a face-to-face Speaking interview and uses British English (Academic version is most common for UK universities). Both are accepted by virtually all UK universities — pick the format that suits you.",
+          "TOEFL is generally cheaper outside the UK and faster to book. IELTS is more accessible inside the UK and is the only one of the two accepted for UK visas.",
+        ],
+      },
+      {
+        heading: "Study plan",
+        body: [
+          "Allow 6–8 weeks if you're already at IELTS 6.0 / B2 level. Use the official ETS practice tests — third-party material varies in quality. Drill Speaking by recording yourself and timing exactly to the on-screen prompts.",
+          "Writing tasks are template-friendly — learn one solid 5-paragraph structure for the Independent Writing task and you'll save time on test day.",
+        ],
+      },
+      {
+        heading: "Booking and on the day",
+        body: [
+          "Book at ets.org/toefl. Fee is around £200–£250 in the UK. Choose Test Center or TOEFL iBT Home Edition (proctored online — needs a clean room, webcam and quiet environment).",
+          "Bring your passport. Results arrive in 4–8 days. Scores are valid for two years.",
+        ],
+      },
+    ],
+    faqs: [
+      { q: "What TOEFL score do UK universities want?", a: "Most undergraduate programmes ask for 80–100 with section minimums of 20. Top postgraduate programmes ask for 100+." },
+      { q: "Can I use TOEFL for a UK visa?", a: "No — only Home Office-approved SELTs (IELTS for UKVI, Trinity GESE, LanguageCert, Pearson PTE Home) are accepted for visas." },
+      { q: "How long is TOEFL valid?", a: "Two years from the test date." },
+      { q: "Can I take TOEFL at home?", a: "Yes — TOEFL iBT Home Edition is available in most countries with online proctoring." },
+      { q: "How much does TOEFL cost?", a: "£200–£250 in the UK, depending on test centre. Home Edition is the same price." },
+    ],
+  },
+  grammar: {
+    title: "English Grammar & Vocabulary Guide — Tenses, Articles & Prepositions",
+    description:
+      "Free English grammar and vocabulary practice guide. Tenses, articles, prepositions, collocations and academic vocab — perfect warm-up for IELTS, TOEFL and ESOL.",
+    tagline: "Tighten the grammar gaps that cost easy marks on every English test.",
+    intro: [
+      "Most English test failures aren't caused by complex grammar — they're caused by tiny errors in tenses, articles and prepositions that learners stop noticing. Examiners do notice, and one or two slips per paragraph can drag a Writing score from band 7 down to band 6.",
+      "This guide focuses on the high-frequency rules and word choices that show up most often on IELTS, TOEFL, ESOL and Cambridge English exams. Drill them with the practice questions and your accuracy will rise without learning a single new tense.",
+    ],
+    sections: [
+      {
+        heading: "Tenses that examiners watch for",
+        body: [
+          "Present perfect vs past simple is the single biggest tense problem. Use present perfect for unfinished time ('I have lived in London for three years' — still living there). Use past simple for finished time ('I lived in London for three years' — not any more).",
+          "Present perfect continuous emphasises duration and is often used with 'for' and 'since'. Past perfect ('I had eaten') sets one past event before another — only use it when the order matters.",
+        ],
+      },
+      {
+        heading: "Articles: a, an, the and zero",
+        body: [
+          "Use 'the' when both speaker and listener know which one ('the kitchen', 'the moon'). Use 'a/an' for one of many ('a teacher'). Use no article for plural and uncountable nouns in general statements ('teachers are underpaid', 'water is essential').",
+          "Speakers of Slavic, Russian, Chinese and Japanese languages often skip articles entirely. If you're one of them, slow down and check every noun in your essay before submitting.",
+        ],
+      },
+      {
+        heading: "Prepositions you'll meet on every paper",
+        body: [
+          "Time: in (months, years, parts of day) — 'in July', 'in 2026', 'in the morning'. On (days, dates) — 'on Monday', 'on 5 June'. At (clock times, festivals) — 'at 7pm', 'at Christmas'.",
+          "Place: in (enclosed) — 'in London', 'in the box'. On (surface) — 'on the table', 'on the wall'. At (specific point) — 'at the bus stop', 'at the door'.",
+        ],
+      },
+      {
+        heading: "Collocations and word choice",
+        body: [
+          "Native English uses fixed pairings that learners often miss. 'Make a decision' (not 'do a decision'). 'Take a photo' (not 'make a photo'). 'Strong tea / heavy rain / fast food / quick lunch'. Use a learner's dictionary (Oxford, Cambridge, Longman) and note the example sentences, not just the meaning.",
+          "Academic Writing also rewards specific verbs: 'demonstrate' instead of 'show', 'examine' instead of 'look at', 'highlight' instead of 'point out'.",
+        ],
+      },
+      {
+        heading: "Practice strategy",
+        body: [
+          "Don't study grammar in isolation — apply it the same day. After a 20-minute lesson on present perfect, write five true sentences about your own life using the structure. The next day, write five more.",
+          "For vocabulary, learn words in chunks of 4–8 in a single topic (e.g. environment, technology, education) so they reinforce each other. Re-test yourself after one day, three days and one week.",
+        ],
+      },
+    ],
+    faqs: [
+      { q: "Is grammar enough to pass IELTS?", a: "No — but poor grammar is the most common reason for a band 6.0 ceiling in Writing and Speaking. Strong grammar lifts every other skill with you." },
+      { q: "Which tenses are most important?", a: "Present simple, past simple, present perfect, future with 'will' and 'going to'. These cover 80% of everyday and academic English." },
+      { q: "Do I need to learn all phrasal verbs?", a: "No — focus on the 100 most common (look up, find out, give up, carry on). Phrasal verbs are tested heavily in Cambridge B2/C1 but less so in IELTS." },
+      { q: "How long should I study grammar?", a: "20–30 minutes a day for 6–8 weeks alongside Reading and Listening practice. Sudden grammar marathons don't stick." },
+    ],
+  },
 
   // -------- EDUCATION -------------------------------------------------
-  "eleven-plus": generic("11+ Exam Practice", "GL Assessment, CEM and individual grammar schools", "the entrance exam for UK grammar schools and many independent secondaries, sat in Year 6, covering verbal reasoning, non-verbal reasoning, English and maths"),
-  "gcse-maths": generic("GCSE Maths", "AQA, Edexcel, OCR and WJEC", "the Foundation or Higher tier GCSE Maths exam, sat at the end of Year 11 and graded 1–9 (with 4 a standard pass and 5 a strong pass)"),
-  "gcse-english": generic("GCSE English", "AQA, Edexcel, OCR and WJEC", "the GCSE English Language and Literature exams, graded 1–9, with English Language a hard requirement for most UK colleges, apprenticeships and jobs"),
-  sats: generic("SATs KS1 / KS2", "the Standards & Testing Agency", "the national curriculum tests sat at the end of Year 2 (KS1) and Year 6 (KS2), covering reading, grammar, punctuation, spelling and maths"),
+  "eleven-plus": {
+    title: "11+ Exam Guide — Verbal, Non-Verbal, Maths & English",
+    description:
+      "Free 11+ exam guide for UK grammar schools. GL Assessment vs CEM, the four sections, study plan and tips for parents — with practice questions.",
+    tagline: "The grammar school entrance exam — what to study and when to start.",
+    intro: [
+      "The 11+ is the entrance exam for UK state grammar schools and many independent secondary schools. Children sit it in September of Year 6 (age 10–11), with results used for September Year 7 entry. There's no national 11+ — each region uses either GL Assessment, CEM, or a school-specific paper, and content varies.",
+      "This guide explains the formats, what's tested in each section, and a realistic 6–12 month preparation plan for parents. Use the practice questions to gauge where your child currently stands.",
+    ],
+    sections: [
+      {
+        heading: "GL Assessment vs CEM vs ISEB",
+        body: [
+          "GL Assessment is used in Kent, Lincolnshire, Buckinghamshire and many partial-selective areas. It tests four separate papers: Verbal Reasoning, Non-Verbal Reasoning, Maths and English.",
+          "CEM (Centre for Evaluation and Monitoring) was used in Birmingham, Wirral and a few others, but most CEM regions have switched to GL since 2023. ISEB Common Pre-Test is used by independent schools, taken in Year 6 or 7, computer-adaptive.",
+        ],
+      },
+      {
+        heading: "What each section tests",
+        body: [
+          "Verbal Reasoning: word puzzles, codes, analogies, finding the odd one out. Heavy on vocabulary — the strongest predictor of a high VR score is wide reading from age 7+.",
+          "Non-Verbal Reasoning: shape sequences, mirror images, matrices. Less coachable but improves with practice. Maths: KS2 curriculum plus quick mental arithmetic. English: comprehension, grammar, punctuation, sometimes a short writing task.",
+        ],
+      },
+      {
+        heading: "When to start preparing",
+        body: [
+          "Most families start formal 11+ prep 12 months before the test (start of Year 5). Earlier 'enrichment' through reading and puzzles is fine, but heavy tutoring before Year 5 is rarely cost-effective.",
+          "Aim for 30–45 minutes of focused practice, four or five days a week, building to one full timed paper each weekend in the final two months.",
+        ],
+      },
+      {
+        heading: "Tips for parents",
+        body: [
+          "Read aloud to and with your child every day — it builds vocabulary faster than any tutor. Encourage at least 30 minutes of independent reading from age 7, gradually moving toward classic and challenging texts.",
+          "Don't over-tutor. Children who arrive at the exam exhausted or anxious underperform. Build in proper rest days and stop all 11+ talk the day before the test.",
+        ],
+      },
+      {
+        heading: "On the day",
+        body: [
+          "The exam is held at a local grammar school or test centre on a Saturday morning in September. It's usually two papers in the morning with a short break.",
+          "Results are released in mid-October. Most areas use the score for school allocation in March via the standard secondary school application (CAF) — your child's catchment school remains as a backup.",
+        ],
+      },
+    ],
+    faqs: [
+      { q: "What's the 11+ pass mark?", a: "Most areas use a 'standardised score' rather than a fixed pass mark — typically 121+ out of 141 to qualify for grammar school admission. Selective areas like Kent set their own thresholds." },
+      { q: "Is the 11+ the same everywhere?", a: "No — content and format vary by region. Always check whether your local school uses GL, CEM or ISEB and prepare with matching past papers." },
+      { q: "Can I get tutoring through the council?", a: "No — 11+ tutoring is private. Families with low income can apply for bursaries at some independent schools after passing the entrance exam." },
+      { q: "Do private schools accept the same 11+?", a: "Many use ISEB Common Pre-Test instead. A few accept the GL paper. Check each school's admission policy." },
+      { q: "Can my child resit the 11+?", a: "Generally no — it's a one-shot exam in Year 6. Some schools have a Year 7 'late entry' test but spaces are very limited." },
+    ],
+  },
+  "gcse-maths": {
+    title: "GCSE Maths Guide — Foundation vs Higher, Grades 1–9",
+    description:
+      "Free GCSE Maths guide. AQA, Edexcel and OCR format, Foundation vs Higher tier, the new 1–9 grading and study tips — with practice questions.",
+    tagline: "Pass GCSE Maths first time — the tier choice that decides your grade ceiling.",
+    intro: [
+      "GCSE Mathematics is sat at the end of Year 11 (age 15–16) and is a hard requirement for sixth form, college, apprenticeships and most jobs. A grade 4 is a 'standard pass' (the old C); grade 5 is a 'strong pass'. Without a grade 4, students must keep retaking until age 18.",
+      "This guide covers the tier choice (Foundation vs Higher), the three exam papers, the topic split and a realistic 6-month study plan for students aiming to pass or push for grade 7+.",
+    ],
+    sections: [
+      {
+        heading: "Foundation vs Higher tier",
+        body: [
+          "Foundation tier is graded 1–5. Higher tier is graded 4–9 (with a safety net grade 3). Choose Foundation if you're working at grade 4 or below in mock exams — you'll have more time per question and better chance of a strong pass.",
+          "Choose Higher if you're consistently scoring grade 5+ in mocks and aiming for sixth-form A-level Maths (most schools require grade 6 or 7). Higher includes topics that don't appear at Foundation: trigonometry beyond the basics, vectors, advanced algebra, circle theorems.",
+        ],
+      },
+      {
+        heading: "The three papers",
+        body: [
+          "All boards use three 90-minute papers (80 marks each). Paper 1 is non-calculator; Papers 2 and 3 are calculator. Total 240 marks across the three papers.",
+          "Don't leave the calculator papers to chance — they have specific topics (statistics, probability, complex algebra) that benefit from calculator work. Practise with the exact calculator you'll use on the day (Casio fx-83 or fx-85 are the standards).",
+        ],
+      },
+      {
+        heading: "Topic weightings",
+        body: [
+          "Foundation: Number 25%, Algebra 20%, Ratio & Proportion 25%, Geometry 15%, Statistics & Probability 15%. Higher: Number 15%, Algebra 30%, Ratio & Proportion 20%, Geometry 20%, Statistics & Probability 15%.",
+          "At Higher, algebra is the single biggest area and the topic that separates grade 6 from grade 8. Master quadratics, simultaneous equations, functions and graph transformations.",
+        ],
+      },
+      {
+        heading: "Study plan",
+        body: [
+          "Six-month plan: Months 1–2 work through a topic-by-topic revision guide (CGP, Collins) doing every example. Months 3–4 drill past papers by topic. Months 5–6 full timed past papers — at least one a week, marked against the official mark scheme.",
+          "Past papers are the single most important resource. Each board publishes 5+ years of past papers free on their website. Aim to complete 12+ full papers before the real exam.",
+        ],
+      },
+      {
+        heading: "Common pitfalls",
+        body: [
+          "Showing no working on calculator papers — even right answers can lose method marks. Misreading the question (especially negatives, units and rounding instructions). Spending too long on one question instead of moving on.",
+          "Calculator slips: forgetting BIDMAS / order of operations, mis-typing fractions, leaving the calculator in degrees mode for radian questions (or vice versa).",
+        ],
+      },
+    ],
+    faqs: [
+      { q: "What's a pass in GCSE Maths?", a: "Grade 4 is a 'standard pass'; grade 5 is a 'strong pass'. Most colleges and sixth forms accept grade 4." },
+      { q: "Can I switch tier after starting?", a: "Yes — schools choose the entry, and tier can change up until a few weeks before the exam. Discuss it with your maths teacher in mock season." },
+      { q: "Do I need a calculator?", a: "Yes for Papers 2 and 3. A Casio fx-83 or fx-85 scientific calculator is the standard and is allowed by all boards." },
+      { q: "What if I don't get a grade 4?", a: "Students under 18 must keep resitting GCSE Maths (in November and the next June) as a condition of college funding. Functional Skills Level 2 Maths is sometimes accepted as an alternative." },
+      { q: "How many past papers should I do?", a: "Aim for at least 12 full papers from your specific exam board, mixed across topics and years. Mark every paper carefully — the review is where the learning happens." },
+    ],
+  },
+  "gcse-english": {
+    title: "GCSE English Guide — Language, Literature & the 1–9 Grades",
+    description:
+      "Free GCSE English guide. AQA, Edexcel and OCR format, English Language vs Literature, set texts and study plan — with practice questions.",
+    tagline: "Pass GCSE English Language and unlock sixth form, apprenticeships and most UK jobs.",
+    intro: [
+      "GCSE English is split into two separate qualifications: English Language and English Literature. Both are sat at the end of Year 11 and graded 1–9. English Language is the one that matters most for college, apprenticeships and employment — without a grade 4 you'll need to resit until age 18.",
+      "This guide explains the two qualifications, the exam papers, the set texts you'll likely study, and how to revise efficiently in the final six months.",
+    ],
+    sections: [
+      {
+        heading: "English Language vs Literature",
+        body: [
+          "English Language tests reading and writing skills using unseen texts — typically a 19th-century non-fiction extract paired with a 20th- or 21st-century one. There's also a Spoken Language endorsement (a presentation, marked separately as Pass/Merit/Distinction).",
+          "English Literature tests your study of set texts: usually a Shakespeare play, a 19th-century novel, a modern play or novel, and a poetry anthology. AQA Power & Conflict and Love & Relationships are the most common poetry clusters.",
+        ],
+      },
+      {
+        heading: "The exam papers",
+        body: [
+          "Language: two 1h45 papers. Paper 1 is fiction (a 20th- or 21st-century extract); Paper 2 is non-fiction (two contrasting texts).",
+          "Literature: two papers, both closed-book (no texts allowed in the exam). Paper 1 covers Shakespeare and the 19th-century novel; Paper 2 covers modern texts and poetry.",
+        ],
+      },
+      {
+        heading: "Set texts you'll likely meet",
+        body: [
+          "Shakespeare: Macbeth, Romeo and Juliet, The Merchant of Venice. 19th-century novel: A Christmas Carol, Jekyll and Hyde, Great Expectations.",
+          "Modern: An Inspector Calls (J.B. Priestley) — by far the most common; Blood Brothers, Animal Farm, Lord of the Flies. Poetry: AQA Power & Conflict (Ozymandias, Bayonet Charge), Love & Relationships (Sonnet 29, Mother Any Distance).",
+        ],
+      },
+      {
+        heading: "Study plan",
+        body: [
+          "Six-month plan: Months 1–3 deep-read every set text twice, building a quote bank of 10–15 quotes per text with one-line analysis. Months 4–5 essay practice — one essay a week marked against the mark scheme. Month 6 timed full papers and quote memorisation.",
+          "For Language papers, drill the question types: 'list four things' (Q1), 'how does the writer use language' (Q2), 'structure' (Q3), 'evaluate' (Q4) and the writing question. Each has a specific mark scheme.",
+        ],
+      },
+      {
+        heading: "Quote memorisation that actually works",
+        body: [
+          "Don't memorise long quotes. Aim for 8–10 short quotes per text (3–6 words each) covering the main themes and characters. Use spaced repetition (Anki, Quizlet) and self-test daily.",
+          "Examiners reward accurate short quotes far more than paraphrasing or long mis-remembered passages.",
+        ],
+      },
+    ],
+    faqs: [
+      { q: "Which GCSE English do I need to pass?", a: "English Language. Literature is required for some sixth forms and degrees but not for college funding or most jobs." },
+      { q: "What's a grade 4 worth?", a: "A 'standard pass' — equivalent to the old grade C. Grade 5 is a 'strong pass'." },
+      { q: "Can I take a calculator into the exam?", a: "No — there's no maths in English. You can take pens, pencils, and a clear water bottle." },
+      { q: "Are the texts the same for every school?", a: "Each school chooses its set texts from the exam board's prescribed list. Always check what your school is teaching before buying revision guides." },
+      { q: "Do I need to resit if I get a grade 3?", a: "Yes — students under 18 must keep resitting English Language as a condition of college funding until they reach grade 4 or turn 18." },
+    ],
+  },
+  sats: {
+    title: "SATs Guide — KS1 and KS2 National Curriculum Tests",
+    description:
+      "Free SATs guide for parents. KS1 (Year 2) and KS2 (Year 6) format, what's tested, study tips and practice questions for reading, grammar and maths.",
+    tagline: "What KS1 and KS2 SATs really test — and how parents can help.",
+    intro: [
+      "SATs (Standard Assessment Tests) are the national curriculum tests sat at the end of Key Stage 1 (Year 2, age 6–7) and Key Stage 2 (Year 6, age 10–11) in state primary schools in England. Wales, Scotland and Northern Ireland do not sit SATs.",
+      "KS1 SATs were made optional from 2023 onwards. KS2 SATs remain compulsory and the results are used for school accountability, transition to secondary and as a baseline for KS3.",
+    ],
+    sections: [
+      {
+        heading: "What KS2 SATs cover",
+        body: [
+          "Three subjects across six papers: English Reading (1 paper, 60 minutes), English Grammar Punctuation & Spelling (2 papers — GPS and a spelling test), Maths (3 papers — arithmetic plus two reasoning).",
+          "Science is sampled — only some schools sit it each year. Writing is teacher-assessed, not externally tested.",
+        ],
+      },
+      {
+        heading: "How scoring works",
+        body: [
+          "Raw scores are converted to a 'scaled score' between 80 and 120. A scaled score of 100 is the 'expected standard'. 110+ is the 'higher standard'.",
+          "Roughly 60% of pupils meet the expected standard in all three subjects. Schools (not individual children) are judged on how many reach 100+ in reading, writing and maths combined.",
+        ],
+      },
+      {
+        heading: "Reading paper tips",
+        body: [
+          "The reading paper has three texts of increasing difficulty. Children often run out of time on the third text — practise pacing so the easier texts don't eat the clock.",
+          "Underline key words in each question, then scan the text for evidence. 'Find and copy' questions need an exact word or phrase from the text — paraphrasing loses the mark.",
+        ],
+      },
+      {
+        heading: "Maths paper tips",
+        body: [
+          "Paper 1 (arithmetic) is 30 minutes of pure calculation — speed matters. Practise mental arithmetic and column methods until they're automatic.",
+          "Papers 2 and 3 (reasoning) include word problems where the maths is hidden inside a story. Teach children to underline the question and the numbers, then plan before calculating.",
+        ],
+      },
+      {
+        heading: "How parents can help",
+        body: [
+          "Read with your child every day, even in Year 6. Ten minutes of shared reading does more for SATs than an hour of worksheets. Discuss the text — what happened, what might happen next, what does this word mean.",
+          "For maths, focus on times tables (up to 12×12 by Year 4) and confident column methods. Free resources from BBC Bitesize, White Rose Maths and the official gov.uk past papers cover everything you need.",
+        ],
+      },
+    ],
+    faqs: [
+      { q: "When are SATs taken?", a: "KS2 SATs are sat in mid-May of Year 6. KS1 SATs (now optional) are taken in May of Year 2." },
+      { q: "Are SATs compulsory?", a: "KS2 SATs are compulsory in England's state schools. KS1 SATs are optional from 2023. Independent schools and schools in Wales, Scotland and Northern Ireland don't sit SATs." },
+      { q: "What's the SATs pass mark?", a: "There's no formal pass — children are assessed against the 'expected standard' (scaled score 100) and 'higher standard' (110+)." },
+      { q: "Do SATs affect secondary school placement?", a: "No — secondary places are allocated through the Common Application Form before SATs results are released. SATs are mainly for school accountability." },
+      { q: "Should I tutor my child for SATs?", a: "Most children don't need tutoring. Daily reading, times tables, and the free past papers from gov.uk are usually enough." },
+    ],
+  },
 
   // -------- CAREER ----------------------------------------------------
   numerical: generic("Numerical Reasoning", "SHL, Cubiks, Talent Q, Kenexa and Saville", "a timed test of your ability to interpret tables, charts and percentages — used by graduate schemes, finance, consulting and the Civil Service"),
