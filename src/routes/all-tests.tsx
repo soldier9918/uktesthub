@@ -3,10 +3,8 @@ import { useMemo, useState } from "react";
 import { ArrowRight, Clock, ListChecks, Search } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
-import { TestBadge } from "@/components/TestBadge";
 import { categories } from "@/data/categories";
 import { getQuiz } from "@/data/quizzes";
-import { badgeForSlug } from "@/data/test-logos";
 
 export const Route = createFileRoute("/all-tests")({
   head: () => ({
@@ -165,9 +163,8 @@ function AllTestsPage() {
                         <Link
                           to="/topic/$slug"
                           params={{ slug: t.slug }}
-                          className="group flex h-full items-start gap-3 rounded-xl border border-border bg-card p-4 shadow-soft transition-all hover:-translate-y-0.5 hover:border-coral/40 hover:shadow-elevated"
+                          className="group flex h-full flex-col rounded-xl border border-border bg-card p-4 shadow-soft transition-all hover:-translate-y-0.5 hover:border-coral/40 hover:shadow-elevated"
                         >
-                          <TestBadge badge={badgeForSlug(t.slug)} size="lg" />
                           <div className="min-w-0 flex-1">
                             <h3 className="font-display text-sm font-bold leading-tight text-foreground">
                               {t.title}
@@ -198,11 +195,6 @@ function AllTestsPage() {
           </div>
         )}
 
-        <p className="mt-14 text-center text-xs text-muted-foreground">
-          Logos shown are stylised badges. All names and trademarks belong to
-          their respective owners. UK Test Hub is independent and not affiliated
-          with any listed body.
-        </p>
       </main>
 
       <SiteFooter />
