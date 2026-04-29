@@ -174,10 +174,10 @@ function HomePage() {
           </div>
 
           {/* Popular tests panel */}
-          <aside className="relative hidden lg:block">
-            <div className="rounded-2xl border border-white/15 bg-navy-deep/70 p-5 shadow-elevated backdrop-blur-md">
+          <aside className="relative hidden lg:block lg:self-start lg:-mt-6">
+            <div className="rounded-2xl border border-white/15 bg-navy-deep/40 p-5 shadow-elevated backdrop-blur-md">
               <div className="border-b border-white/10 pb-3">
-                <span className="font-display text-xs font-bold uppercase tracking-[0.2em] text-coral">
+                <span className="font-display text-sm font-bold uppercase tracking-[0.2em] text-coral">
                   Popular Mock Tests
                 </span>
               </div>
@@ -193,23 +193,20 @@ function HomePage() {
                   { slug: "esol", label: "ESOL Tests" },
                   { slug: "motorcycle-theory", label: "Motorcycle Tests" },
                   { slug: "numerical", label: "Numerical Tests" },
-                  { slug: "logical", label: "Logical Reasoning Tests" },
-                  { slug: "food-hygiene", label: "Food Hygiene Tests" },
-                  { slug: "first-aid", label: "First Aid Tests" },
                 ].map((t) => (
                   <li key={t.label}>
                     <Link
                       to="/topic/$slug"
                       params={{ slug: t.slug }}
-                      className="group flex items-center justify-between gap-3 rounded-lg px-3 py-1.5 text-sm font-medium text-navy-foreground/90 transition-colors hover:bg-white/10 hover:text-coral"
+                      className="group flex items-center justify-between gap-3 rounded-lg px-3 py-2 text-base font-medium text-navy-foreground/90 transition-colors hover:bg-white/10 hover:text-coral"
                     >
                       <span className="truncate">{t.label}</span>
-                      <ArrowRight className="h-3.5 w-3.5 shrink-0 text-coral opacity-0 transition-opacity group-hover:opacity-100" />
+                      <ArrowRight className="h-4 w-4 shrink-0 text-coral opacity-0 transition-opacity group-hover:opacity-100" />
                     </Link>
                   </li>
                 ))}
               </ul>
-              <p className="mt-3 border-t border-white/10 pt-3 text-center font-display text-xs font-bold uppercase tracking-[0.18em] text-coral">
+              <p className="mt-3 border-t border-white/10 pt-3 text-center font-display text-sm font-bold uppercase tracking-[0.18em] text-coral">
                 And many many more
               </p>
             </div>
