@@ -113,18 +113,20 @@ export const categories: Category[] = [
   },
   {
     slug: "professional",
-    title: "Professional Certification",
-    short: "CSCS, SIA, Food Hygiene & First Aid",
+    title: "Workplace Compliance & Safety",
+    short: "Food Hygiene, First Aid, Fire Safety, Manual Handling, H&S, GDPR",
     description:
-      "Pass the CSCS Card Test, SIA Security Test, Food Hygiene Level 2 and First Aid Theory exams.",
+      "Free practice for the workplace compliance certifications most UK employers require — Food Hygiene Level 2, First Aid Theory, Fire Safety Awareness, Manual Handling, Health & Safety Awareness and GDPR / Data Protection Awareness.",
     icon: "ShieldCheck",
     accent: "coral",
     heroImage: heroProfessional,
     topics: [
-      { slug: "cscs", title: "CSCS Card Test" },
-      { slug: "sia", title: "SIA Security Test" },
       { slug: "food-hygiene", title: "Food Hygiene Level 2" },
       { slug: "first-aid", title: "First Aid Theory" },
+      { slug: "fire-safety", title: "Fire Safety Awareness" },
+      { slug: "manual-handling", title: "Manual Handling Awareness" },
+      { slug: "health-safety-awareness", title: "Health & Safety Awareness" },
+      { slug: "gdpr-awareness", title: "GDPR / Data Protection Awareness" },
     ],
   },
   {
