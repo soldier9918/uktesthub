@@ -143,6 +143,14 @@ export const topicSeo: Record<string, TopicSeo> = {
           "Bring your provisional licence as photo ID. No phone, no watch, no bag, no notes inside the test room — there are lockers in the waiting area. Arrive 15 minutes early; latecomers forfeit the fee.",
         ],
       },
+      {
+        heading: "What happens after you pass",
+        body: [
+          "You'll get a printed pass certificate at the test centre. The certificate number is needed when you book your practical driving test through gov.uk. Keep both the printout and a photo of it on your phone — the DVSA loses certificates surprisingly often and a photo speeds up replacement.",
+          "Your theory pass is valid for two years. You must take and pass the practical driving test within that window or you'll have to retake the theory. The waiting list for practical tests in 2026 is 8–24 weeks depending on test centre, so book your practical the same day you pass theory.",
+          "Between theory and practical, keep practising hazard perception clips and re-read the Highway Code chapters on motorways and rural roads — examiners on the practical often ask 'show me, tell me' questions that mirror the theory syllabus.",
+        ],
+      },
     ],
     faqs: [
       { q: "What is the UK driving theory pass mark?", a: "43 out of 50 on multiple choice and 44 out of 75 on hazard perception. You must pass both at the same sitting." },
@@ -295,6 +303,14 @@ export const topicSeo: Record<string, TopicSeo> = {
           "Temporary signs at roadworks use yellow backgrounds with black borders — they override permanent signs while the works are in place. Variable matrix signs above motorway lanes show real-time speed limits and lane closures (red X = lane closed; do not enter).",
         ],
       },
+      {
+        heading: "Road markings to learn alongside the signs",
+        body: [
+          "Road markings are tested with the same weight as signs. Across the carriageway: a single broken white line = give way (slow down and prepare to stop); double broken white lines = give way at a junction; a solid white STOP line = legal stop required.",
+          "Along the carriageway: short broken centre line = hazard ahead; long broken = warning of hazard; double white line with a solid line on your side = no overtaking unless safe and the broken line is on your side.",
+          "Yellow lines at the kerb: single = restricted parking (check the times on the nearby plate); double = no waiting at any time; double red = no stopping at any time on a Red Route. Zigzag yellow lines outside a school zone forbid stopping or parking even briefly.",
+        ],
+      },
     ],
     faqs: [
       { q: "How many road signs are tested in the DVSA exam?", a: "Around 7–10 of the 50 multiple-choice questions involve signs or road markings." },
@@ -359,6 +375,14 @@ export const topicSeo: Record<string, TopicSeo> = {
         body: [
           "Theory questions often test PPE. Helmets must meet UNECE 22.06 (or 22.05 for older stock). Gloves and jacket should carry CE EN 13594 and EN 17092 ratings. Hi-vis isn't legally required in the UK but examiners and the IAM strongly recommend it for visibility — most SMIDSY collisions happen in good daylight, not at night.",
           "In wet weather, double your stopping distance. White lines, manhole covers, painted markings and diesel spills become slippery — brake on the un-painted tarmac wherever possible. In cold weather watch for shaded patches that may still be icy after sunny stretches have thawed.",
+        ],
+      },
+      {
+        heading: "Booking and theory-test logistics for riders",
+        body: [
+          "Book your motorcycle theory test through gov.uk — never a third-party reseller. Fee is £23. Slots are usually available within 2–4 weeks. Book early because you'll also need to plan around DAS course dates and Module 1/2 availability, which can be 6–12 weeks ahead at busy centres.",
+          "Bring your provisional licence as photo ID. No bag, no helmet, no jacket inside the test room — most centres have a coat rack and lockers in the lobby. Arrive 15 minutes early. Result is on screen immediately.",
+          "If you fail, the minimum wait before resitting is three working days. Most candidates who fail do so on hazard perception rather than the multiple-choice — book extra clip practice rather than re-reading the Highway Code if that's where you slipped.",
         ],
       },
     ],
@@ -757,6 +781,15 @@ export const topicSeo: Record<string, TopicSeo> = {
           "Plan strategically: aim for your overall target on the first sitting and treat One Skill Retake as the safety net for the section that historically holds you back. Many UK universities now accept One Skill Retake; always confirm with the admissions office before relying on it.",
         ],
       },
+      {
+        heading: "Choosing the right SELT provider",
+        body: [
+          "Trinity GESE is the cheapest SELT for A1, A2 and B1 levels (around £150) and tests Speaking & Listening only — ideal if Reading and Writing aren't your strongest skills and you're applying for a visa that doesn't need them. Test centres are in most major UK cities.",
+          "LanguageCert IESOL covers all four skills, costs slightly more (£200–£260) and is accepted across the same visa categories. Pearson PTE Home is fully computer-based with results in 2–3 days — the fastest option for time-pressured applications.",
+          "IELTS for UKVI (Life Skills A1, A2, B1) is the option chosen by most candidates who already have IELTS prep materials at home. The Life Skills version costs around £170 and tests only Speaking & Listening, like Trinity.",
+          "Whichever you pick, book at a Home Office-approved centre — only the UKVI versions count. A standard IELTS or LanguageCert taken outside the SELT network will be rejected by the visa caseworker no matter how high your score.",
+        ],
+      },
     ],
     faqs: [
       { q: "What is the IELTS pass mark?", a: "There's no fixed pass mark — institutions set their own minimum band. Most UK universities require 6.5 overall." },
@@ -830,6 +863,14 @@ export const topicSeo: Record<string, TopicSeo> = {
         body: [
           "For the partner / spouse visa initial entry you need A1 English. To extend after 2.5 years you need A2. To switch to ILR after five years you need B1. Each step uses a SELT certificate, so plan your test bookings around your visa renewal dates.",
           "The English requirement is waived if you're aged 65+, have a long-term physical or mental condition that prevents you taking the test, or if you're a national of a majority-English-speaking country. Always check the current Home Office exemption list before paying for a test.",
+        ],
+      },
+      {
+        heading: "Free and low-cost study resources",
+        body: [
+          "ETS publishes free TOEFL practice materials, including a full sample test, on its website. Khan Academy partners with ETS for guided lessons across all four sections — completely free. The Magoosh and Kaplan blogs publish hundreds of model essays and Speaking responses you can use as benchmarks.",
+          "For Listening practice, watch academic lectures on YouTube channels like CrashCourse, MIT OpenCourseware or TED-Ed — they mirror the academic register and pacing of TOEFL recordings. For Reading, read Scientific American or The Atlantic articles and time yourself: 700 words in 7 minutes is the TOEFL benchmark.",
+          "Two paid resources are worth the spend if your university requires 100+: the Official TOEFL iBT Tests Volume 1 and 2 from ETS (real retired tests) and the TPO (TOEFL Practice Online) packs. Avoid generic 'TOEFL prep' apps that use rewritten or scraped questions — the wording differs and you'll over-prepare for the wrong style.",
         ],
       },
     ],
@@ -908,6 +949,15 @@ export const topicSeo: Record<string, TopicSeo> = {
           "Speaking too quietly or unclearly into the microphone — the scorer cannot ask you to repeat. Always do a mic check and aim slightly louder than feels natural.",
           "Running long on Speaking integrated tasks. The recording stops at the time limit mid-sentence and the unfinished idea scores nothing. Practise hitting the conclusion with five seconds to spare.",
           "Memorising essay templates word-for-word — TOEFL's AI rater detects template use and downgrades the score. Use a flexible structure, not pre-written paragraphs.",
+        ],
+      },
+      {
+        heading: "Common errors that block band 7",
+        body: [
+          "Subject–verb agreement with collective nouns: 'the government has decided' (singular in British English) but 'the team are arguing' is also accepted. Pick one register and stay consistent throughout an essay.",
+          "Countable vs uncountable nouns: 'information', 'advice', 'research', 'equipment', 'furniture', 'news' are all uncountable. Never say 'an information' or 'three researches'. Use 'a piece of information', 'some advice', 'three research projects' instead.",
+          "Word order in indirect questions: direct 'Where is the station?' becomes indirect 'Could you tell me where the station is?' — note the verb moves back. Examiners hear the wrong order constantly: 'Could you tell me where is the station?'",
+          "Linking words misused: 'although' starts a clause, not a sentence. 'However' starts a sentence and takes a comma. 'Despite' takes a noun ('despite the rain'); 'although' takes a clause ('although it rained'). Drilling these five rules alone lifts most students from band 6 to 6.5.",
         ],
       },
     ],
@@ -1217,6 +1267,14 @@ export const topicSeo: Record<string, TopicSeo> = {
         body: [
           "Wide reading is the single biggest predictor of a high English Language grade. Mix fiction (modern novels, classic short stories) with non-fiction (long-form journalism in the Guardian, BBC News, the Atlantic). Twenty pages a day is enough.",
           "The Spoken Language endorsement (Pass / Merit / Distinction) is a 5–10 minute presentation to your class on a topic of your choice, followed by Q&A. It doesn't affect the 1–9 grade but appears on your certificate and matters for sixth-form English applications. Pick a topic you genuinely care about and rehearse out loud, not in your head.",
+        ],
+      },
+      {
+        heading: "Context — the marks examiners give for free",
+        body: [
+          "Literature mark schemes reward 'context' (Assessment Objective 3): the social, historical or literary background of the text. For An Inspector Calls, that means 1912 vs 1945 (Priestley wrote it post-war but set it pre-war to critique Edwardian capitalism). For A Christmas Carol, the Poor Laws and the Victorian workhouse system. For Macbeth, the Jacobean fear of regicide and witchcraft under James I.",
+          "Learn three or four key context points per text and weave one into each paragraph. Don't write a separate 'context paragraph' — that's how candidates lose AO3 marks. Embed the context inside your analysis: 'Dickens, writing in the wake of Edwin Chadwick's 1842 sanitary report, presents Scrooge's transformation as proof…'.",
+          "Examiner reports consistently note that strong AO3 distinguishes grade 7+ scripts from grade 5 scripts that otherwise have similar quote work.",
         ],
       },
     ],
