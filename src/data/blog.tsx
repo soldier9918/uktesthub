@@ -1025,6 +1025,2353 @@ export const blogPosts: BlogPost[] = [
       </>
     ),
   },
+  {
+    slug: "uk-driving-theory-questions-2026",
+    title: "UK Driving Theory Questions 2026 (Free Practice Test)",
+    description:
+      "Free 2026 UK Driving Theory practice questions with answers and explanations. Real DVSA-style multiple choice — pass first time with confident revision.",
+    excerpt:
+      "Real DVSA-style driving theory questions for 2026 — with worked answers and a free full mock test at the end.",
+    datePublished: "2026-04-20",
+    author: "UK Test Hub Team",
+    readingMinutes: 8,
+    category: "Driving",
+    tags: ["driving theory", "DVSA", "2026", "practice test"],
+    hero: heroDriving,
+    body: () => (
+      <>
+        <p>The UK Driving Theory Test changed very little for 2026, but the bar to pass remains the same: 43 out of 50 multiple-choice questions and 44 out of 75 on hazard perception. Below are 12 fresh practice questions written in the exact DVSA style for 2026, covering road signs, stopping distances, vulnerable road users, motorway rules and the Highway Code updates you need to know. Read each question carefully, decide your answer before scrolling, then check the worked explanation. When you're done, take a full free mock test to see where you stand.</p>
+
+        <h2>Practice Questions</h2>
+        <ol>
+          <li><strong>Q1.</strong> What is the national speed limit for a car on a single carriageway?</li>
+          <li><strong>Q2.</strong> You see a triangular sign with a red border showing two children. What does it mean?</li>
+          <li><strong>Q3.</strong> What is the typical overall stopping distance at 50 mph in good conditions?</li>
+          <li><strong>Q4.</strong> When may you use the hard shoulder of a motorway?</li>
+          <li><strong>Q5.</strong> You're approaching a zebra crossing and a pedestrian is waiting. What should you do?</li>
+          <li><strong>Q6.</strong> What does a single broken yellow line at the kerb mean?</li>
+          <li><strong>Q7.</strong> When MUST you use dipped headlights during the day?</li>
+          <li><strong>Q8.</strong> What's the minimum tyre tread depth for a car in the UK?</li>
+          <li><strong>Q9.</strong> Who has priority at a mini-roundabout?</li>
+          <li><strong>Q10.</strong> You see a flashing amber light at a pelican crossing. What should you do?</li>
+          <li><strong>Q11.</strong> What's the maximum penalty points for using a handheld mobile while driving (first offence)?</li>
+          <li><strong>Q12.</strong> A blue circular sign with a white arrow pointing left means…</li>
+        </ol>
+
+        <h2>Answers &amp; Explanations</h2>
+        <ol>
+          <li><strong>A1.</strong> 60 mph. The national limit on a single carriageway is 60 mph for cars and motorcycles unless signs say otherwise.</li>
+          <li><strong>A2.</strong> Children crossing or a school nearby. Red triangles always warn — this one tells you to slow down and look out for children.</li>
+          <li><strong>A3.</strong> 53 metres (about 175 ft) — 15 m thinking + 38 m braking. Memorise: stopping distance roughly doubles every 10 mph above 20.</li>
+          <li><strong>A4.</strong> Only in an emergency or breakdown, unless signs above the lane indicate it is open as a running lane (smart motorway).</li>
+          <li><strong>A5.</strong> Slow down, be ready to stop and give way. You must give way to anyone waiting to cross at a zebra crossing.</li>
+          <li><strong>A6.</strong> Loading/unloading restrictions apply. Times will be shown on a nearby plate — never assume you can stop here.</li>
+          <li><strong>A7.</strong> When visibility is seriously reduced — generally less than 100 m. Heavy rain, fog and falling snow all qualify.</li>
+          <li><strong>A8.</strong> 1.6 mm across the central three-quarters of the tread, around the entire circumference. Anything less is illegal.</li>
+          <li><strong>A9.</strong> Vehicles already on the roundabout, but treat all approaches with caution — there's no marked priority on the circle itself.</li>
+          <li><strong>A10.</strong> Give way to pedestrians on the crossing, but you may proceed if it is clear.</li>
+          <li><strong>A11.</strong> 6 points and a £200 fine. New drivers (within 2 years of passing) lose their licence at 6 points.</li>
+          <li><strong>A12.</strong> Turn left ahead. Blue circles give a positive instruction; red circles prohibit.</li>
+        </ol>
+
+        <h2>Tips to Pass</h2>
+        <ul>
+          <li>Read every question twice — the DVSA loves "must" vs "should".</li>
+          <li>Use the flag-and-review feature; never leave a blank.</li>
+          <li>Practice with a timer so 57 minutes feels comfortable, not tight.</li>
+          <li>Learn signs by family (red triangle = warn, red circle = prohibit, blue circle = positive instruction).</li>
+          <li>Take at least 10 full mocks before booking your test.</li>
+          <li>Don't cram the night before — hazard perception relies on calm focus.</li>
+        </ul>
+
+        <h2>Take the full mock test</h2>
+        <p>
+          👉 
+          <Link
+            to="/quiz/$slug"
+            params={{ slug: "driving-theory-mock-1" }}
+            className="font-semibold text-coral hover:underline"
+          >
+            Take full mock test here
+          </Link>
+        </p>
+
+        <p>
+          Explore more in <C slug="driving">Driving & Transport</C> or browse 
+          <T slug="driving-theory">all driving theory tests</T>.
+        </p>
+        <p>
+          Related reading: <B slug="how-to-pass-driving-theory-test">How to Pass the UK Driving Theory Test First Time</B>.
+        </p>
+      </>
+    ),
+  },
+  {
+    slug: "50-uk-road-signs-you-must-know",
+    title: "50 UK Road Signs You Must Know (With Meanings)",
+    description:
+      "The 50 most-tested UK road signs explained with meanings, shapes and colours. Free reference plus a road signs practice test for the 2026 DVSA exam.",
+    excerpt:
+      "Master the 50 road signs that come up most often in the UK Driving Theory Test — and never confuse a warning sign with a regulatory one again.",
+    datePublished: "2026-04-21",
+    author: "UK Test Hub Team",
+    readingMinutes: 9,
+    category: "Driving",
+    tags: ["road signs", "highway code", "driving theory"],
+    hero: heroDriving,
+    body: () => (
+      <>
+        <p>UK road signs are organised by shape and colour: red triangles warn, red circles prohibit, blue circles instruct, blue rectangles inform on motorways, green rectangles inform on primary routes, and brown rectangles point to tourist attractions. Memorise the families and you can decode 90% of signs you've never seen before. Below are the 12 most-tested signs in the 2026 DVSA bank — practise these and you'll handle every road-sign question on your theory exam.</p>
+
+        <h2>Practice Questions</h2>
+        <ol>
+          <li><strong>Q1.</strong> What does an inverted red triangle mean?</li>
+          <li><strong>Q2.</strong> What shape and colour is the only octagonal sign in the UK?</li>
+          <li><strong>Q3.</strong> A red circle with the number 30 inside means…</li>
+          <li><strong>Q4.</strong> A blue circle with a white arrow turning right means…</li>
+          <li><strong>Q5.</strong> What does a red circle with a single diagonal red line mean?</li>
+          <li><strong>Q6.</strong> A red triangle showing a deer means…</li>
+          <li><strong>Q7.</strong> What does a blue rectangular sign with white text indicate?</li>
+          <li><strong>Q8.</strong> What does a green rectangular sign indicate?</li>
+          <li><strong>Q9.</strong> A brown sign with a castle symbol points to…</li>
+          <li><strong>Q10.</strong> What does a circular sign with red border and a black motorbike mean?</li>
+          <li><strong>Q11.</strong> Two arrows on a triangular sign pointing in opposite directions means…</li>
+          <li><strong>Q12.</strong> What does a yellow box junction tell drivers?</li>
+        </ol>
+
+        <h2>Answers &amp; Explanations</h2>
+        <ol>
+          <li><strong>A1.</strong> Give Way — you must slow down and give priority to traffic on the major road.</li>
+          <li><strong>A2.</strong> Red octagon — STOP. The only octagonal sign; you must stop completely at the line.</li>
+          <li><strong>A3.</strong> Maximum speed limit 30 mph. Red circles are always restrictions.</li>
+          <li><strong>A4.</strong> Turn right ahead — a positive instruction (blue circle = you must).</li>
+          <li><strong>A5.</strong> No overtaking. Diagonal red bars on a circle mean prohibition of the depicted activity.</li>
+          <li><strong>A6.</strong> Wild animals likely in the road. A warning, not a prohibition.</li>
+          <li><strong>A7.</strong> Information on a motorway, e.g. junction numbers and destinations.</li>
+          <li><strong>A8.</strong> Information on a primary route (A-road).</li>
+          <li><strong>A9.</strong> A historic site or castle — tourist attraction.</li>
+          <li><strong>A10.</strong> No motorcycles allowed.</li>
+          <li><strong>A11.</strong> Two-way traffic crosses a one-way road — be ready for vehicles from both directions.</li>
+          <li><strong>A12.</strong> Don't enter unless your exit is clear — you must not block the box.</li>
+        </ol>
+
+        <h2>Tips to Pass</h2>
+        <ul>
+          <li>Group signs by shape first, colour second.</li>
+          <li>Walk or drive familiar streets and name every sign aloud.</li>
+          <li>Use flashcards for warning signs (there are about 60 to know).</li>
+          <li>Pay extra attention to motorway signs — they appear on most theory tests.</li>
+          <li>Don't forget road markings — yellow zig-zags, red routes and double white lines all get tested.</li>
+        </ul>
+
+        <h2>Take the full mock test</h2>
+        <p>
+          👉 
+          <Link
+            to="/quiz/$slug"
+            params={{ slug: "driving-theory-mock-1" }}
+            className="font-semibold text-coral hover:underline"
+          >
+            Take full mock test here
+          </Link>
+        </p>
+
+        <p>
+          Explore more in <C slug="driving">Driving & Transport</C> or browse 
+          <T slug="road-signs">all road signs tests</T>.
+        </p>
+        <p>
+          Related reading: <B slug="top-uk-road-signs-explained">Top UK Road Signs Explained</B>.
+        </p>
+      </>
+    ),
+  },
+  {
+    slug: "driving-theory-test-uk-complete-guide",
+    title: "Driving Theory Test UK: Complete Guide to Pass First Time",
+    description:
+      "Complete 2026 guide to the UK Driving Theory Test. Format, pass mark, booking, revision plan and free practice questions to help you pass first time.",
+    excerpt:
+      "Booking, format, pass mark and a 30-day revision plan — everything you need to walk into the DVSA test centre confident and ready.",
+    datePublished: "2026-04-22",
+    author: "UK Test Hub Team",
+    readingMinutes: 9,
+    category: "Driving",
+    tags: ["driving theory", "guide", "DVSA"],
+    hero: heroDriving,
+    body: () => (
+      <>
+        <p>Around half of UK learners fail the Driving Theory Test on their first attempt — almost always by one or two marks, and almost always because they under-prepared rather than because they didn't know the material. This complete guide walks you through the test format, the pass marks, how to book, what to bring on the day, a 30-day revision plan that actually works, and 10 practice questions to benchmark where you are right now.</p>
+
+        <h2>Practice Questions</h2>
+        <ol>
+          <li><strong>Q1.</strong> How many multiple-choice questions are on the test?</li>
+          <li><strong>Q2.</strong> What is the pass mark for multiple choice?</li>
+          <li><strong>Q3.</strong> How many hazard perception clips are there?</li>
+          <li><strong>Q4.</strong> How many developing hazards across those clips?</li>
+          <li><strong>Q5.</strong> What's the maximum score per hazard perception clip?</li>
+          <li><strong>Q6.</strong> Which document MUST you bring on the day?</li>
+          <li><strong>Q7.</strong> How long is your theory pass certificate valid?</li>
+          <li><strong>Q8.</strong> If you fail, how soon can you re-sit?</li>
+          <li><strong>Q9.</strong> Roughly how long does the whole appointment take?</li>
+          <li><strong>Q10.</strong> Where do you book the official test?</li>
+        </ol>
+
+        <h2>Answers &amp; Explanations</h2>
+        <ol>
+          <li><strong>A1.</strong> 50 questions in 57 minutes.</li>
+          <li><strong>A2.</strong> 43 out of 50 (86%).</li>
+          <li><strong>A3.</strong> 14 video clips.</li>
+          <li><strong>A4.</strong> 15 — one clip contains two developing hazards.</li>
+          <li><strong>A5.</strong> 5 marks (so 75 max). Pass mark is 44.</li>
+          <li><strong>A6.</strong> Your photocard provisional driving licence.</li>
+          <li><strong>A7.</strong> 2 years from the date you pass.</li>
+          <li><strong>A8.</strong> After 3 working days.</li>
+          <li><strong>A9.</strong> Around 90 minutes including check-in and the post-test break.</li>
+          <li><strong>A10.</strong> Only on gov.uk — never use third-party booking sites.</li>
+        </ol>
+
+        <h2>Tips to Pass</h2>
+        <ul>
+          <li>Days 1–7: Read the Highway Code cover to cover.</li>
+          <li>Days 8–14: One mock test per day, mark every question.</li>
+          <li>Days 15–21: Daily hazard perception practice (10 clips minimum).</li>
+          <li>Days 22–28: Mixed mocks — both sections back to back.</li>
+          <li>Days 29–30: Light revision only, sleep well, hydrate.</li>
+        </ul>
+
+        <h2>Take the full mock test</h2>
+        <p>
+          👉 
+          <Link
+            to="/quiz/$slug"
+            params={{ slug: "driving-theory-mock-1" }}
+            className="font-semibold text-coral hover:underline"
+          >
+            Take full mock test here
+          </Link>
+        </p>
+
+        <p>
+          Explore more in <C slug="driving">Driving & Transport</C> or browse 
+          <T slug="driving-theory">all driving theory tests</T>.
+        </p>
+        <p>
+          Related reading: <B slug="how-to-pass-driving-theory-test">How to Pass the UK Driving Theory Test First Time</B>.
+        </p>
+      </>
+    ),
+  },
+  {
+    slug: "hardest-uk-driving-theory-questions",
+    title: "Hardest UK Driving Theory Questions (With Answers)",
+    description:
+      "The hardest UK Driving Theory questions for 2026 — the ones learners get wrong most often. Worked answers, explanations and a free hard-mode mock test.",
+    excerpt:
+      "These are the questions that catch learners out most often. If you can answer all 12, you're ready for test day.",
+    datePublished: "2026-04-23",
+    author: "UK Test Hub Team",
+    readingMinutes: 8,
+    category: "Driving",
+    tags: ["hardest", "driving theory", "tricky questions"],
+    hero: heroDriving,
+    body: () => (
+      <>
+        <p>DVSA data shows certain question types trip up learners again and again — stopping distances, dual-carriageway rules, environment, and edge-case Highway Code rules around vulnerable road users. Below are 12 of the toughest questions in the 2026 bank, each followed by the explanation that turns a guess into a confident answer.</p>
+
+        <h2>Practice Questions</h2>
+        <ol>
+          <li><strong>Q1.</strong> What is the overall stopping distance at 70 mph in dry conditions?</li>
+          <li><strong>Q2.</strong> On a wet road your stopping distance is at least…</li>
+          <li><strong>Q3.</strong> On icy roads stopping distance can be up to…</li>
+          <li><strong>Q4.</strong> Maximum speed limit for a car towing a trailer on a motorway?</li>
+          <li><strong>Q5.</strong> Minimum gap behind a vehicle in good dry conditions (rule of thumb)?</li>
+          <li><strong>Q6.</strong> When can you overtake on the left?</li>
+          <li><strong>Q7.</strong> What's the alcohol limit in mg of alcohol per 100 ml of breath in England?</li>
+          <li><strong>Q8.</strong> A flashing amber arrow at traffic lights means…</li>
+          <li><strong>Q9.</strong> Mini-roundabout: when should you signal?</li>
+          <li><strong>Q10.</strong> Cyclist filtering on your inside in slow traffic — what should you do?</li>
+          <li><strong>Q11.</strong> Approaching horses being ridden, you should…</li>
+          <li><strong>Q12.</strong> When MUST you not use the right-hand lane of a 3-lane motorway?</li>
+        </ol>
+
+        <h2>Answers &amp; Explanations</h2>
+        <ol>
+          <li><strong>A1.</strong> 96 m (about 24 car lengths). Thinking 21 m + braking 75 m.</li>
+          <li><strong>A2.</strong> Twice the dry-condition distance. Wet roads = double everything.</li>
+          <li><strong>A3.</strong> Ten times the dry distance. Black ice is the worst-case scenario.</li>
+          <li><strong>A4.</strong> 60 mph (and you cannot use the right-hand lane of a 3-lane motorway).</li>
+          <li><strong>A5.</strong> The 2-second rule (4 seconds in wet, 20 seconds on ice).</li>
+          <li><strong>A6.</strong> When the vehicle ahead is signalling right, in slow-moving lanes of traffic, or on a one-way street.</li>
+          <li><strong>A7.</strong> 35 µg per 100 ml. (Or 80 mg per 100 ml of blood.) Scotland is lower at 22 µg / 50 mg.</li>
+          <li><strong>A8.</strong> You may filter past in the direction of the arrow if the road is clear.</li>
+          <li><strong>A9.</strong> Signal right on approach if turning right; signal left only just before exiting.</li>
+          <li><strong>A10.</strong> Check your mirrors and leave space — never squeeze them against the kerb or change direction.</li>
+          <li><strong>A11.</strong> Slow down to walking pace, give them at least 2 metres and don't rev the engine.</li>
+          <li><strong>A12.</strong> If you are towing a trailer, driving a goods vehicle over 7.5 t, or a coach over 12 m.</li>
+        </ol>
+
+        <h2>Tips to Pass</h2>
+        <ul>
+          <li>Memorise stopping distances as a sequence: 12, 23, 36, 53, 73, 96 metres.</li>
+          <li>Drill the questions you get wrong twice daily until perfect.</li>
+          <li>Photograph your incorrect answers and review on your phone.</li>
+          <li>Use the official DVSA app for the most authoritative wording.</li>
+          <li>Take "hard mode" mocks where you only revisit your weakest topics.</li>
+        </ul>
+
+        <h2>Take the full mock test</h2>
+        <p>
+          👉 
+          <Link
+            to="/quiz/$slug"
+            params={{ slug: "driving-theory-mock-1" }}
+            className="font-semibold text-coral hover:underline"
+          >
+            Take full mock test here
+          </Link>
+        </p>
+
+        <p>
+          Explore more in <C slug="driving">Driving & Transport</C> or browse 
+          <T slug="driving-theory">all driving theory tests</T>.
+        </p>
+        <p>
+          Related reading: <B slug="most-common-driving-theory-mistakes">Most Common Driving Theory Mistakes</B>.
+        </p>
+      </>
+    ),
+  },
+  {
+    slug: "uk-hazard-perception-test-tips",
+    title: "UK Hazard Perception Test Tips to Pass Easily",
+    description:
+      "How to pass the UK Hazard Perception Test in 2026: scoring explained, common mistakes, click-timing tips, and free clips to practise on.",
+    excerpt:
+      "Hazard perception fails more learners than the multiple choice. These tips fix that — and the click-timing rule that maxes your score.",
+    datePublished: "2026-04-24",
+    author: "UK Test Hub Team",
+    readingMinutes: 7,
+    category: "Driving",
+    tags: ["hazard perception", "driving theory", "DVSA"],
+    hero: heroDriving,
+    body: () => (
+      <>
+        <p>The hazard perception section uses 14 video clips containing 15 developing hazards (one clip has two). Each hazard scores 0–5 based on how early you click — the earlier you spot a true developing hazard, the higher your score. Click too early and you score nothing for that hazard; click in a rapid pattern and the system zeroes the entire clip. Below are 10 practice scenarios and the smart way to handle each, followed by the tips that take learners from 38/75 to 60/75.</p>
+
+        <h2>Practice Questions</h2>
+        <ol>
+          <li><strong>Q1.</strong> When does a hazard become "developing"?</li>
+          <li><strong>Q2.</strong> Should you click as soon as you see a parked car?</li>
+          <li><strong>Q3.</strong> How many times can you click per clip?</li>
+          <li><strong>Q4.</strong> What happens if you click in a rapid pattern?</li>
+          <li><strong>Q5.</strong> If you double-click on a hazard, what's the best timing?</li>
+          <li><strong>Q6.</strong> Pedestrian on the pavement looking down at a phone — click?</li>
+          <li><strong>Q7.</strong> Brake lights on the car ahead light up — click?</li>
+          <li><strong>Q8.</strong> A child's ball rolls into the road — click?</li>
+          <li><strong>Q9.</strong> A cyclist is wobbling in front of you — click?</li>
+          <li><strong>Q10.</strong> You see a cat run across 200 m ahead — click?</li>
+        </ol>
+
+        <h2>Answers &amp; Explanations</h2>
+        <ol>
+          <li><strong>A1.</strong> When something forces you to change speed or direction. Until then it's a potential hazard, not a developing one.</li>
+          <li><strong>A2.</strong> No — parked cars are static. Click when one starts to pull out, opens a door, or a pedestrian emerges from behind it.</li>
+          <li><strong>A3.</strong> As many as you like, but rapid patterns cause a zero-score warning.</li>
+          <li><strong>A4.</strong> The clip is voided — you score 0 for that hazard. Always click deliberately.</li>
+          <li><strong>A5.</strong> First click as the hazard begins to develop, second click as it becomes more serious.</li>
+          <li><strong>A6.</strong> Click on the second look — they may step into the road. Don't click on the initial sighting.</li>
+          <li><strong>A7.</strong> Yes, immediately — brake lights are a confirmed developing hazard.</li>
+          <li><strong>A8.</strong> Yes, immediately. Children often follow balls.</li>
+          <li><strong>A9.</strong> Yes — wobble = unpredictable = developing.</li>
+          <li><strong>A10.</strong> No — too far ahead to require any action from you. Wait until something closer develops.</li>
+        </ol>
+
+        <h2>Tips to Pass</h2>
+        <ul>
+          <li>Sit forward, focus on the central third of the screen.</li>
+          <li>One thoughtful click per hazard, then a confirming second click.</li>
+          <li>Never click in rhythm — the system flags it.</li>
+          <li>Practise with at least 30 official-style clips before test day.</li>
+          <li>Treat the first 3 seconds of each clip as orientation — most hazards develop after that.</li>
+          <li>If you score below 44 on practice clips, slow down and spot earlier.</li>
+        </ul>
+
+        <h2>Take the full mock test</h2>
+        <p>
+          👉 
+          <Link
+            to="/quiz/$slug"
+            params={{ slug: "driving-theory-mock-1" }}
+            className="font-semibold text-coral hover:underline"
+          >
+            Take full mock test here
+          </Link>
+        </p>
+
+        <p>
+          Explore more in <C slug="driving">Driving & Transport</C> or browse 
+          <T slug="hazard-perception">all hazard perception tests</T>.
+        </p>
+        <p>
+          Related reading: <B slug="how-to-pass-driving-theory-test">How to Pass the UK Driving Theory Test First Time</B>.
+        </p>
+      </>
+    ),
+  },
+  {
+    slug: "driving-theory-mock-test-uk",
+    title: "Driving Theory Mock Test UK (Real Exam Questions)",
+    description:
+      "Free UK Driving Theory mock test with real exam-style questions for 2026. Instant marking, full explanations and unlimited retries.",
+    excerpt:
+      "Real DVSA-style mock — 12 sample questions here, plus a full free mock test linked at the end.",
+    datePublished: "2026-04-25",
+    author: "UK Test Hub Team",
+    readingMinutes: 7,
+    category: "Driving",
+    tags: ["mock test", "driving theory", "DVSA"],
+    hero: heroDriving,
+    body: () => (
+      <>
+        <p>There's no substitute for sitting full mocks under exam conditions. Below is a 12-question warm-up drawn from the same topic distribution as the real DVSA test: alertness, attitude, safety, safety margins, hazard awareness, vulnerable road users, other types of vehicle, vehicle handling, motorway rules, rules of the road, road and traffic signs, documents, accidents, and vehicle loading.</p>
+
+        <h2>Practice Questions</h2>
+        <ol>
+          <li><strong>Q1.</strong> The vehicle ahead is being driven by a learner. You should…</li>
+          <li><strong>Q2.</strong> When approaching a roundabout you see a cyclist signalling right. You should…</li>
+          <li><strong>Q3.</strong> What does the term "tailgating" mean?</li>
+          <li><strong>Q4.</strong> You're driving on a motorway in heavy rain. Spray makes it hard to see. You should…</li>
+          <li><strong>Q5.</strong> A bus is signalling to pull out from a stop. You should…</li>
+          <li><strong>Q6.</strong> You're parking on a hill facing uphill. You should…</li>
+          <li><strong>Q7.</strong> When can you sound your horn in a built-up area at night?</li>
+          <li><strong>Q8.</strong> Why are amber studs used between lanes on a motorway?</li>
+          <li><strong>Q9.</strong> Your insurance has an "excess of £100". What does this mean?</li>
+          <li><strong>Q10.</strong> The MSM routine stands for…</li>
+          <li><strong>Q11.</strong> After overtaking on a dual carriageway you should…</li>
+          <li><strong>Q12.</strong> What's the minimum age to supervise a learner driver?</li>
+        </ol>
+
+        <h2>Answers &amp; Explanations</h2>
+        <ol>
+          <li><strong>A1.</strong> Be patient — show no irritation and allow extra space.</li>
+          <li><strong>A2.</strong> Allow plenty of room — the cyclist may stay in the left-hand lane to circle right.</li>
+          <li><strong>A3.</strong> Driving too closely behind another vehicle.</li>
+          <li><strong>A4.</strong> Use dipped headlights and increase your following distance.</li>
+          <li><strong>A5.</strong> Give way if it's safe to do so.</li>
+          <li><strong>A6.</strong> Leave it in first gear with the handbrake firmly on, wheels turned away from the kerb.</li>
+          <li><strong>A7.</strong> Only in an emergency.</li>
+          <li><strong>A8.</strong> They mark the right-hand edge of the carriageway (between lanes 1 & 2 and the right side).</li>
+          <li><strong>A9.</strong> You pay the first £100 of any claim.</li>
+          <li><strong>A10.</strong> Mirrors – Signal – Manoeuvre.</li>
+          <li><strong>A11.</strong> Move back to the left-hand lane when safe and signal left.</li>
+          <li><strong>A12.</strong> 21 years old, full UK licence held for at least 3 years.</li>
+        </ol>
+
+        <h2>Tips to Pass</h2>
+        <ul>
+          <li>Time yourself — 57 minutes for 50 questions = roughly 70 seconds each.</li>
+          <li>Mark every wrong answer with a star and revise it tomorrow.</li>
+          <li>After 5 mocks, your weak topics become obvious.</li>
+          <li>Switch to a fresh question bank weekly to avoid memorising answers.</li>
+          <li>Score 47/50 three mocks in a row before booking your real test.</li>
+        </ul>
+
+        <h2>Take the full mock test</h2>
+        <p>
+          👉 
+          <Link
+            to="/quiz/$slug"
+            params={{ slug: "driving-theory-mock-1" }}
+            className="font-semibold text-coral hover:underline"
+          >
+            Take full mock test here
+          </Link>
+        </p>
+
+        <p>
+          Explore more in <C slug="driving">Driving & Transport</C> or browse 
+          <T slug="driving-theory">all driving theory tests</T>.
+        </p>
+        <p>
+          Related reading: <B slug="free-driving-theory-practice-test-uk">Free Driving Theory Practice Test UK (2026)</B>.
+        </p>
+      </>
+    ),
+  },
+  {
+    slug: "uk-road-signs-quiz-100-percent",
+    title: "UK Road Signs Quiz: Can You Get 100%?",
+    description:
+      "Try our free UK road signs quiz — 12 questions covering warning, regulatory, motorway and information signs. Can you score 100%?",
+    excerpt:
+      "Most learners score 8/12 first time. Can you get a perfect 12? Try the quiz, check the answers, then take the full mock.",
+    datePublished: "2026-04-26",
+    author: "UK Test Hub Team",
+    readingMinutes: 6,
+    category: "Driving",
+    tags: ["road signs", "quiz", "highway code"],
+    hero: heroDriving,
+    body: () => (
+      <>
+        <p>Road signs make up roughly 10–15% of the multiple-choice section of the Driving Theory Test. They're also one of the easiest sections to ace — once you know the shape and colour rules. Below is a 12-question road signs quiz drawn from across all four sign families. Be honest, don't peek at the answers, and aim for a perfect 12/12.</p>
+
+        <h2>Practice Questions</h2>
+        <ol>
+          <li><strong>Q1.</strong> What does a circular sign with a red border and "30" inside mean?</li>
+          <li><strong>Q2.</strong> What does a triangular sign with a person digging mean?</li>
+          <li><strong>Q3.</strong> What does an inverted triangular sign with no symbol mean?</li>
+          <li><strong>Q4.</strong> What does a blue circular sign with a white "P" mean?</li>
+          <li><strong>Q5.</strong> What does a red circle with a horn symbol crossed out mean?</li>
+          <li><strong>Q6.</strong> What colour are direction signs on motorways?</li>
+          <li><strong>Q7.</strong> What colour are direction signs on primary routes?</li>
+          <li><strong>Q8.</strong> What does a triangular sign with a falling rocks symbol mean?</li>
+          <li><strong>Q9.</strong> What does a blue rectangular sign with a white "H" mean?</li>
+          <li><strong>Q10.</strong> What does a green rectangular sign with white text indicate?</li>
+          <li><strong>Q11.</strong> What does a yellow flashing beacon at a crossing mean?</li>
+          <li><strong>Q12.</strong> What does a brown rectangular sign with a footprint mean?</li>
+        </ol>
+
+        <h2>Answers &amp; Explanations</h2>
+        <ol>
+          <li><strong>A1.</strong> Maximum speed limit 30 mph.</li>
+          <li><strong>A2.</strong> Roadworks ahead — slow down and look out for workers.</li>
+          <li><strong>A3.</strong> Give way to traffic on the major road.</li>
+          <li><strong>A4.</strong> Parking permitted (often with extra info beneath).</li>
+          <li><strong>A5.</strong> Use of horn prohibited.</li>
+          <li><strong>A6.</strong> Blue background, white text.</li>
+          <li><strong>A7.</strong> Green background, white text.</li>
+          <li><strong>A8.</strong> Falling or fallen rocks — possible debris in the road.</li>
+          <li><strong>A9.</strong> Hospital ahead.</li>
+          <li><strong>A10.</strong> Direction on a primary route.</li>
+          <li><strong>A11.</strong> Belisha beacon — pedestrian zebra crossing ahead.</li>
+          <li><strong>A12.</strong> Walking trail or tourist footpath.</li>
+        </ol>
+
+        <h2>Tips to Pass</h2>
+        <ul>
+          <li>Don't memorise individual signs — learn the system.</li>
+          <li>Spend 5 minutes a day on flashcards for warning signs.</li>
+          <li>Quiz yourself in real life: name signs as you walk to work.</li>
+          <li>Test yourself weekly until you score 12/12 three times in a row.</li>
+        </ul>
+
+        <h2>Take the full mock test</h2>
+        <p>
+          👉 
+          <Link
+            to="/quiz/$slug"
+            params={{ slug: "driving-theory-mock-1" }}
+            className="font-semibold text-coral hover:underline"
+          >
+            Take full mock test here
+          </Link>
+        </p>
+
+        <p>
+          Explore more in <C slug="driving">Driving & Transport</C> or browse 
+          <T slug="road-signs">all road signs tests</T>.
+        </p>
+        <p>
+          Related reading: <B slug="50-uk-road-signs-you-must-know">50 UK Road Signs You Must Know</B>.
+        </p>
+      </>
+    ),
+  },
+  {
+    slug: "most-common-driving-theory-mistakes",
+    title: "Most Common Driving Theory Mistakes (UK Learners)",
+    description:
+      "The most common mistakes UK learners make on the Driving Theory Test — and exactly how to avoid them. Free practice questions and pass tips inside.",
+    excerpt:
+      "Most fails happen for the same handful of reasons. Fix these and your pass rate jumps dramatically.",
+    datePublished: "2026-04-27",
+    author: "UK Test Hub Team",
+    readingMinutes: 7,
+    category: "Driving",
+    tags: ["driving theory", "mistakes", "tips"],
+    hero: heroDriving,
+    body: () => (
+      <>
+        <p>DVSA pass-rate data shows a clear pattern: the learners who fail the Driving Theory Test almost always fail for the same reasons — rushing, ignoring hazard perception, weak knowledge of stopping distances, and confusing "must" with "should". Here are 10 questions built around those exact pitfalls, with answers that double as a mini-revision sheet.</p>
+
+        <h2>Practice Questions</h2>
+        <ol>
+          <li><strong>Q1.</strong> Why do most learners fail the multiple choice by 1–2 marks?</li>
+          <li><strong>Q2.</strong> What's the difference between "MUST" and "SHOULD" in DVSA wording?</li>
+          <li><strong>Q3.</strong> Why do learners often score badly on hazard perception?</li>
+          <li><strong>Q4.</strong> Common myth: you can revise everything from the official app alone — true?</li>
+          <li><strong>Q5.</strong> Stopping distance at 30 mph in dry conditions?</li>
+          <li><strong>Q6.</strong> Stopping distance at 60 mph in dry conditions?</li>
+          <li><strong>Q7.</strong> Speed limit on a single carriageway with a trailer?</li>
+          <li><strong>Q8.</strong> Speed limit on a dual carriageway with a trailer?</li>
+          <li><strong>Q9.</strong> Many learners think a green light means "go" — what's the correct rule?</li>
+          <li><strong>Q10.</strong> When can you cross a solid white centre line?</li>
+        </ol>
+
+        <h2>Answers &amp; Explanations</h2>
+        <ol>
+          <li><strong>A1.</strong> They rush, finish in 30 minutes, and misread 2–3 questions.</li>
+          <li><strong>A2.</strong> MUST = legal requirement (Highway Code rule with legal backing). SHOULD = best practice.</li>
+          <li><strong>A3.</strong> It's the only test of its kind they'll ever take, so they have no reference point.</li>
+          <li><strong>A4.</strong> The app helps, but reading the Highway Code cover to cover is essential — it's where every question originates.</li>
+          <li><strong>A5.</strong> 23 m (12 thinking + 11 braking).</li>
+          <li><strong>A6.</strong> 73 m (18 thinking + 55 braking).</li>
+          <li><strong>A7.</strong> 50 mph (single carriageway when towing).</li>
+          <li><strong>A8.</strong> 60 mph (dual carriageway when towing).</li>
+          <li><strong>A9.</strong> Proceed only if it's safe and the way is clear.</li>
+          <li><strong>A10.</strong> To pass a parked vehicle, a pedal cycle or horse moving below 10 mph, to enter a side road, or in an emergency.</li>
+        </ol>
+
+        <h2>Tips to Pass</h2>
+        <ul>
+          <li>Use ALL 57 minutes — flag, review, then submit.</li>
+          <li>Practise hazard perception every day for the final week.</li>
+          <li>Memorise the stopping distance ladder: 12, 23, 36, 53, 73, 96 m.</li>
+          <li>Sleep 8 hours the night before — fatigue kills hazard reaction time.</li>
+          <li>Eat a light breakfast and arrive 20 minutes early.</li>
+        </ul>
+
+        <h2>Take the full mock test</h2>
+        <p>
+          👉 
+          <Link
+            to="/quiz/$slug"
+            params={{ slug: "driving-theory-mock-1" }}
+            className="font-semibold text-coral hover:underline"
+          >
+            Take full mock test here
+          </Link>
+        </p>
+
+        <p>
+          Explore more in <C slug="driving">Driving & Transport</C> or browse 
+          <T slug="driving-theory">all driving theory tests</T>.
+        </p>
+        <p>
+          Related reading: <B slug="hardest-uk-driving-theory-questions">Hardest UK Driving Theory Questions</B>.
+        </p>
+      </>
+    ),
+  },
+  {
+    slug: "uk-driving-theory-pass-mark-explained",
+    title: "UK Driving Theory Pass Mark Explained (2026 Update)",
+    description:
+      "UK Driving Theory pass mark explained for 2026: 43/50 multiple choice and 44/75 hazard perception. What it means, how to hit it, plus free practice.",
+    excerpt:
+      "Pass marks aren't optional — you need both. Here's exactly what 43/50 and 44/75 mean and how to hit them.",
+    datePublished: "2026-04-28",
+    author: "UK Test Hub Team",
+    readingMinutes: 6,
+    category: "Driving",
+    tags: ["pass mark", "driving theory", "DVSA"],
+    hero: heroDriving,
+    body: () => (
+      <>
+        <p>Two pass marks, one test. To pass the UK Driving Theory Test you need 43 out of 50 (86%) on the multiple choice AND 44 out of 75 (about 59%) on hazard perception, both at the same sitting. Fail either one and you re-sit both. The 2026 update brought no change to the pass marks but did refresh question wording and add a handful of new road signs. Below: 10 questions on the exact format and pass-mark logic, followed by tips for hitting both marks comfortably.</p>
+
+        <h2>Practice Questions</h2>
+        <ol>
+          <li><strong>Q1.</strong> What's the multiple-choice pass mark?</li>
+          <li><strong>Q2.</strong> What's the hazard perception pass mark?</li>
+          <li><strong>Q3.</strong> How long is the multiple-choice section?</li>
+          <li><strong>Q4.</strong> Can you skip questions and come back?</li>
+          <li><strong>Q5.</strong> How many topic areas are tested in multiple choice?</li>
+          <li><strong>Q6.</strong> Can you take a break between sections?</li>
+          <li><strong>Q7.</strong> If you ace MCQ but fail hazard, what happens?</li>
+          <li><strong>Q8.</strong> How soon can you re-sit after a fail?</li>
+          <li><strong>Q9.</strong> What does each clip score out of?</li>
+          <li><strong>Q10.</strong> How does the 2026 update affect study material?</li>
+        </ol>
+
+        <h2>Answers &amp; Explanations</h2>
+        <ol>
+          <li><strong>A1.</strong> 43 out of 50.</li>
+          <li><strong>A2.</strong> 44 out of 75.</li>
+          <li><strong>A3.</strong> 57 minutes.</li>
+          <li><strong>A4.</strong> Yes — flag and review.</li>
+          <li><strong>A5.</strong> 14.</li>
+          <li><strong>A6.</strong> Up to 3 minutes between the multiple choice and hazard perception.</li>
+          <li><strong>A7.</strong> You re-sit both sections, not just hazard.</li>
+          <li><strong>A8.</strong> After 3 working days.</li>
+          <li><strong>A9.</strong> 0–5 marks.</li>
+          <li><strong>A10.</strong> Wording on some MCQs has changed and 7 new road sign questions have been added — make sure your study material is dated 2026.</li>
+        </ol>
+
+        <h2>Tips to Pass</h2>
+        <ul>
+          <li>Aim for 47/50 in practice — it gives you a 4-mark buffer on test day.</li>
+          <li>Aim for 55/75 in hazard perception practice for the same reason.</li>
+          <li>Don't book the real test until you hit your target on 5 mocks in a row.</li>
+          <li>Use only 2026-dated study materials.</li>
+          <li>If you fail by 1–2 marks, focus revision on flagged questions only.</li>
+        </ul>
+
+        <h2>Take the full mock test</h2>
+        <p>
+          👉 
+          <Link
+            to="/quiz/$slug"
+            params={{ slug: "driving-theory-mock-1" }}
+            className="font-semibold text-coral hover:underline"
+          >
+            Take full mock test here
+          </Link>
+        </p>
+
+        <p>
+          Explore more in <C slug="driving">Driving & Transport</C> or browse 
+          <T slug="driving-theory">all driving theory tests</T>.
+        </p>
+        <p>
+          Related reading: <B slug="driving-theory-test-uk-complete-guide">Driving Theory Test UK: Complete Guide</B>.
+        </p>
+      </>
+    ),
+  },
+  {
+    slug: "free-driving-theory-practice-test-uk",
+    title: "Free Driving Theory Practice Test UK (Updated 2026)",
+    description:
+      "Free UK Driving Theory practice tests updated for 2026. Real DVSA-style multiple choice, instant marking, no sign-up. Start your mock now.",
+    excerpt:
+      "No sign-up, no paywall — free DVSA-style practice updated for 2026. Start your mock test in 30 seconds.",
+    datePublished: "2026-04-29",
+    author: "UK Test Hub Team",
+    readingMinutes: 6,
+    category: "Driving",
+    tags: ["free", "practice test", "driving theory"],
+    hero: heroDriving,
+    body: () => (
+      <>
+        <p>If you're booking the UK Driving Theory Test in 2026, the cheapest and most effective preparation is also the most boring: hammer free practice tests until 47/50 feels routine. UK Test Hub has unlimited free mocks with no account required, instant marking and full DVSA-style explanations. Below are 10 starter questions to warm up — then click through to a full free mock to keep going.</p>
+
+        <h2>Practice Questions</h2>
+        <ol>
+          <li><strong>Q1.</strong> How long is your provisional licence valid?</li>
+          <li><strong>Q2.</strong> Cost of a UK Driving Theory Test in 2026?</li>
+          <li><strong>Q3.</strong> What documents do you need to book?</li>
+          <li><strong>Q4.</strong> Can you wear a smartwatch into the test?</li>
+          <li><strong>Q5.</strong> What if you're late to your appointment?</li>
+          <li><strong>Q6.</strong> Do you get scrap paper at the test centre?</li>
+          <li><strong>Q7.</strong> How is your result delivered?</li>
+          <li><strong>Q8.</strong> Can you appeal your result?</li>
+          <li><strong>Q9.</strong> If you cancel, how much notice do you need for a refund?</li>
+          <li><strong>Q10.</strong> How do you book a re-sit after a fail?</li>
+        </ol>
+
+        <h2>Answers &amp; Explanations</h2>
+        <ol>
+          <li><strong>A1.</strong> Until your 70th birthday or you upgrade to a full licence.</li>
+          <li><strong>A2.</strong> £23 (subject to government review).</li>
+          <li><strong>A3.</strong> Provisional driving licence number, debit/credit card and email address.</li>
+          <li><strong>A4.</strong> No — all electronics must be left in the locker.</li>
+          <li><strong>A5.</strong> You'll likely lose your fee — arrive 20 minutes early.</li>
+          <li><strong>A6.</strong> No, but the screen has a built-in highlight/flag tool.</li>
+          <li><strong>A7.</strong> On screen and via printed letter at the centre.</li>
+          <li><strong>A8.</strong> Only if there was a fault with the test itself, not based on score.</li>
+          <li><strong>A9.</strong> At least 3 clear working days for a full refund.</li>
+          <li><strong>A10.</strong> Online via gov.uk after the 3-working-day cooling-off period.</li>
+        </ol>
+
+        <h2>Tips to Pass</h2>
+        <ul>
+          <li>Use only 2026 question banks.</li>
+          <li>Take 1 mock per day for 14 days before your test.</li>
+          <li>Mark and revise — never just "play" mocks for fun.</li>
+          <li>Track scores in a notebook to see your progress.</li>
+          <li>Sit a final mock on the morning of your test for warm-up.</li>
+        </ul>
+
+        <h2>Take the full mock test</h2>
+        <p>
+          👉 
+          <Link
+            to="/quiz/$slug"
+            params={{ slug: "driving-theory-mock-1" }}
+            className="font-semibold text-coral hover:underline"
+          >
+            Start a full free mock now
+          </Link>
+        </p>
+
+        <p>
+          Explore more in <C slug="driving">Driving & Transport</C> or browse 
+          <T slug="driving-theory">all driving theory tests</T>.
+        </p>
+        <p>
+          Related reading: <B slug="driving-theory-mock-test-uk">Driving Theory Mock Test UK</B>.
+        </p>
+      </>
+    ),
+  },
+  {
+    slug: "life-in-the-uk-test-questions-and-answers-2026",
+    title: "Life in the UK Test Questions and Answers 2026",
+    description:
+      "2026 Life in the UK Test questions and answers. Real exam-style multiple choice, full explanations, and a free Life in the UK mock test inside.",
+    excerpt:
+      "Real exam-style Life in the UK questions for 2026 — covering history, government, traditions and values, with worked answers.",
+    datePublished: "2026-04-20",
+    author: "UK Test Hub Team",
+    readingMinutes: 8,
+    category: "Citizenship",
+    tags: ["life in the uk", "2026", "citizenship"],
+    hero: heroCitizenship,
+    body: () => (
+      <>
+        <p>The Life in the UK Test asks 24 questions in 45 minutes, all drawn directly from the official handbook "Life in the United Kingdom: A Guide for New Residents". The pass mark is 75% — at least 18 correct. Below are 12 fresh practice questions in the exact format used at official test centres, with full explanations after each answer so you understand WHY each is correct.</p>
+
+        <h2>Practice Questions</h2>
+        <ol>
+          <li><strong>Q1.</strong> Which of these is a value of British society?</li>
+          <li><strong>Q2.</strong> How many countries make up the United Kingdom?</li>
+          <li><strong>Q3.</strong> Which of the following is a Crown dependency?</li>
+          <li><strong>Q4.</strong> Who is the head of the Church of England?</li>
+          <li><strong>Q5.</strong> When was the Magna Carta signed?</li>
+          <li><strong>Q6.</strong> What is the capital of Wales?</li>
+          <li><strong>Q7.</strong> How often are general elections held by law (maximum)?</li>
+          <li><strong>Q8.</strong> Who appoints the Prime Minister?</li>
+          <li><strong>Q9.</strong> Which two houses make up Parliament?</li>
+          <li><strong>Q10.</strong> What is the name of the UK national anthem?</li>
+          <li><strong>Q11.</strong> When was the NHS founded?</li>
+          <li><strong>Q12.</strong> Which two of these are British inventors? (Choose two)</li>
+        </ol>
+
+        <h2>Answers &amp; Explanations</h2>
+        <ol>
+          <li><strong>A1.</strong> The rule of law. Other British values include democracy, individual liberty, tolerance and respect.</li>
+          <li><strong>A2.</strong> Four — England, Scotland, Wales and Northern Ireland.</li>
+          <li><strong>A3.</strong> The Isle of Man (also Jersey and Guernsey). Crown dependencies are not part of the UK but are linked to the Crown.</li>
+          <li><strong>A4.</strong> The Monarch — currently King Charles III.</li>
+          <li><strong>A5.</strong> 1215 at Runnymede.</li>
+          <li><strong>A6.</strong> Cardiff.</li>
+          <li><strong>A7.</strong> Every 5 years.</li>
+          <li><strong>A8.</strong> The Monarch — but by convention always the leader of the party with the most MPs.</li>
+          <li><strong>A9.</strong> The House of Commons and the House of Lords.</li>
+          <li><strong>A10.</strong> "God Save the King" (King when the Monarch is male, Queen when female).</li>
+          <li><strong>A11.</strong> 1948.</li>
+          <li><strong>A12.</strong> Sir Isaac Newton and Sir Tim Berners-Lee (the World Wide Web).</li>
+        </ol>
+
+        <h2>Tips to Pass</h2>
+        <ul>
+          <li>Read the official handbook end-to-end at least twice.</li>
+          <li>Make a one-page timeline of UK monarchs and key dates.</li>
+          <li>Take a mock after every chapter to lock it in.</li>
+          <li>Don't memorise trivia outside the handbook — it won't be tested.</li>
+          <li>Aim for 22/24 in practice before booking your real test.</li>
+        </ul>
+
+        <h2>Take the full mock test</h2>
+        <p>
+          👉 
+          <Link
+            to="/quiz/$slug"
+            params={{ slug: "life-in-the-uk-mock-1" }}
+            className="font-semibold text-coral hover:underline"
+          >
+            Take full mock test here
+          </Link>
+        </p>
+
+        <p>
+          Explore more in <C slug="citizenship">UK Citizenship & Life</C> or browse 
+          <T slug="life-in-the-uk">all Life in the UK tests</T>.
+        </p>
+        <p>
+          Related reading: <B slug="life-in-the-uk-test-guide">The Life in the UK Test: Complete Guide</B>.
+        </p>
+      </>
+    ),
+  },
+  {
+    slug: "50-life-in-the-uk-questions-you-must-know",
+    title: "50 Life in the UK Questions You Must Know",
+    description:
+      "The 50 most important Life in the UK Test questions for 2026. Worked answers, key dates, and a free mock test to confirm you're ready.",
+    excerpt:
+      "If you can answer these you'll pass. Sample 12 here, get the full mock at the end.",
+    datePublished: "2026-04-21",
+    author: "UK Test Hub Team",
+    readingMinutes: 9,
+    category: "Citizenship",
+    tags: ["life in the uk", "must know", "citizenship"],
+    hero: heroCitizenship,
+    body: () => (
+      <>
+        <p>Some Life in the UK Test questions appear so often that knowing them is the difference between passing and failing. Below are 12 of the must-know questions — covering the chapters and dates that come up almost every sitting. Practise these until they're automatic, then attack a full mock.</p>
+
+        <h2>Practice Questions</h2>
+        <ol>
+          <li><strong>Q1.</strong> What event in 1066 is considered a turning point in British history?</li>
+          <li><strong>Q2.</strong> Who was the first Prime Minister of Great Britain?</li>
+          <li><strong>Q3.</strong> Which century was the Industrial Revolution in?</li>
+          <li><strong>Q4.</strong> What is the patron saint of Scotland and what date is celebrated?</li>
+          <li><strong>Q5.</strong> What is the name of Wales' patron saint?</li>
+          <li><strong>Q6.</strong> What flower is associated with England?</li>
+          <li><strong>Q7.</strong> What is the longest-running soap opera in the UK?</li>
+          <li><strong>Q8.</strong> When did women in the UK get equal voting rights to men?</li>
+          <li><strong>Q9.</strong> What is the minimum age to serve on a jury in England?</li>
+          <li><strong>Q10.</strong> Where is the seat of the Scottish Parliament?</li>
+          <li><strong>Q11.</strong> What is the official residence of the Prime Minister?</li>
+          <li><strong>Q12.</strong> What does "the rule of law" mean?</li>
+        </ol>
+
+        <h2>Answers &amp; Explanations</h2>
+        <ol>
+          <li><strong>A1.</strong> The Battle of Hastings — Norman conquest under William the Conqueror.</li>
+          <li><strong>A2.</strong> Sir Robert Walpole.</li>
+          <li><strong>A3.</strong> The 18th and 19th centuries (it began around 1750).</li>
+          <li><strong>A4.</strong> St Andrew, celebrated on 30 November.</li>
+          <li><strong>A5.</strong> St David, celebrated on 1 March.</li>
+          <li><strong>A6.</strong> The rose.</li>
+          <li><strong>A7.</strong> Coronation Street (since 1960).</li>
+          <li><strong>A8.</strong> 1928 — equal voting rights at age 21+.</li>
+          <li><strong>A9.</strong> 18 (and a maximum of 75).</li>
+          <li><strong>A10.</strong> Holyrood, Edinburgh.</li>
+          <li><strong>A11.</strong> 10 Downing Street, London.</li>
+          <li><strong>A12.</strong> All people, including those in government, are subject to the law.</li>
+        </ol>
+
+        <h2>Tips to Pass</h2>
+        <ul>
+          <li>Build flashcards for every date in the handbook.</li>
+          <li>Group questions by chapter — know your weakest chapter.</li>
+          <li>Practise saying answers aloud — it embeds them faster.</li>
+          <li>Take 5 mocks before booking — score 22+ consistently.</li>
+          <li>Re-read the values & principles chapter the night before.</li>
+        </ul>
+
+        <h2>Take the full mock test</h2>
+        <p>
+          👉 
+          <Link
+            to="/quiz/$slug"
+            params={{ slug: "life-in-the-uk-mock-1" }}
+            className="font-semibold text-coral hover:underline"
+          >
+            Take full mock test here
+          </Link>
+        </p>
+
+        <p>
+          Explore more in <C slug="citizenship">UK Citizenship & Life</C> or browse 
+          <T slug="life-in-the-uk">all Life in the UK tests</T>.
+        </p>
+        <p>
+          Related reading: <B slug="life-in-the-uk-test-questions-and-answers-2026">Life in the UK Questions and Answers 2026</B>.
+        </p>
+      </>
+    ),
+  },
+  {
+    slug: "hardest-life-in-the-uk-test-questions",
+    title: "Hardest Life in the UK Test Questions (With Answers)",
+    description:
+      "The hardest Life in the UK Test questions for 2026 — the ones candidates fail most often. Worked answers, explanations and a free hard-mode mock.",
+    excerpt:
+      "These questions catch out almost every candidate. Master them and you'll walk into your test with confidence.",
+    datePublished: "2026-04-22",
+    author: "UK Test Hub Team",
+    readingMinutes: 8,
+    category: "Citizenship",
+    tags: ["hardest", "life in the uk", "tricky"],
+    hero: heroCitizenship,
+    body: () => (
+      <>
+        <p>Pass-rate analysis shows certain Life in the UK questions trip up candidates far more often than others — usually obscure dates, lesser-known monarchs, and details about devolved administrations. Below are 12 of the hardest questions in the 2026 bank with explanations to lock them in.</p>
+
+        <h2>Practice Questions</h2>
+        <ol>
+          <li><strong>Q1.</strong> When did the Acts of Union join England, Wales and Scotland?</li>
+          <li><strong>Q2.</strong> Who wrote the play "Hamlet"?</li>
+          <li><strong>Q3.</strong> When did the Falklands War take place?</li>
+          <li><strong>Q4.</strong> What is the Privy Council?</li>
+          <li><strong>Q5.</strong> When was the Bill of Rights passed?</li>
+          <li><strong>Q6.</strong> Who was the first British female Prime Minister?</li>
+          <li><strong>Q7.</strong> Which English king was beheaded in 1649?</li>
+          <li><strong>Q8.</strong> When did the UK formally leave the EU?</li>
+          <li><strong>Q9.</strong> How many constituencies are there in the UK House of Commons?</li>
+          <li><strong>Q10.</strong> Who was Florence Nightingale?</li>
+          <li><strong>Q11.</strong> What does the abbreviation "OBE" stand for?</li>
+          <li><strong>Q12.</strong> When was the State Pension first introduced?</li>
+        </ol>
+
+        <h2>Answers &amp; Explanations</h2>
+        <ol>
+          <li><strong>A1.</strong> 1707 — the Acts of Union created the Kingdom of Great Britain.</li>
+          <li><strong>A2.</strong> William Shakespeare.</li>
+          <li><strong>A3.</strong> 1982 — between the UK and Argentina.</li>
+          <li><strong>A4.</strong> A formal body of advisers to the Sovereign.</li>
+          <li><strong>A5.</strong> 1689 — it limited the powers of the monarch.</li>
+          <li><strong>A6.</strong> Margaret Thatcher (1979–1990).</li>
+          <li><strong>A7.</strong> Charles I.</li>
+          <li><strong>A8.</strong> 31 January 2020.</li>
+          <li><strong>A9.</strong> 650 — each constituency elects one Member of Parliament.</li>
+          <li><strong>A10.</strong> A nurse who founded modern nursing during the Crimean War.</li>
+          <li><strong>A11.</strong> Officer of the Order of the British Empire.</li>
+          <li><strong>A12.</strong> 1908.</li>
+        </ol>
+
+        <h2>Tips to Pass</h2>
+        <ul>
+          <li>Write key dates on Post-its and stick them around the house.</li>
+          <li>Group monarchs by century when revising.</li>
+          <li>Use the official handbook glossary for tricky vocabulary.</li>
+          <li>Drill weak chapters with three mocks per topic.</li>
+          <li>Don't waste time on facts not in the handbook.</li>
+        </ul>
+
+        <h2>Take the full mock test</h2>
+        <p>
+          👉 
+          <Link
+            to="/quiz/$slug"
+            params={{ slug: "life-in-the-uk-mock-1" }}
+            className="font-semibold text-coral hover:underline"
+          >
+            Take full mock test here
+          </Link>
+        </p>
+
+        <p>
+          Explore more in <C slug="citizenship">UK Citizenship & Life</C> or browse 
+          <T slug="life-in-the-uk">all Life in the UK tests</T>.
+        </p>
+        <p>
+          Related reading: <B slug="common-life-in-the-uk-test-mistakes-to-avoid">Common Life in the UK Test Mistakes</B>.
+        </p>
+      </>
+    ),
+  },
+  {
+    slug: "life-in-the-uk-test-practice-free",
+    title: "Life in the UK Test Practice Free (Real Exam Style)",
+    description:
+      "Free Life in the UK Test practice in real exam style. 24-question mock, instant marking, full explanations — no account needed.",
+    excerpt:
+      "Real exam format — same 24 questions, 45 minutes, 75% pass mark. Free, no account needed.",
+    datePublished: "2026-04-23",
+    author: "UK Test Hub Team",
+    readingMinutes: 7,
+    category: "Citizenship",
+    tags: ["free", "practice", "life in the uk"],
+    hero: heroCitizenship,
+    body: () => (
+      <>
+        <p>The official Life in the UK Test costs £50 every time you take it — so practising for free until you're confident is essential. Below is a 12-question warm-up in the same multiple-choice format used at the test centre. The full mock matches the real exam exactly: 24 questions in 45 minutes, with the same 18/24 pass mark.</p>
+
+        <h2>Practice Questions</h2>
+        <ol>
+          <li><strong>Q1.</strong> What is the second-largest party in Parliament called?</li>
+          <li><strong>Q2.</strong> Who has the right to vote in UK general elections?</li>
+          <li><strong>Q3.</strong> What is the role of the Speaker?</li>
+          <li><strong>Q4.</strong> Who can stand as an MP?</li>
+          <li><strong>Q5.</strong> How often does Prime Minister's Questions take place?</li>
+          <li><strong>Q6.</strong> What does "devolution" mean?</li>
+          <li><strong>Q7.</strong> Where does the UK Supreme Court sit?</li>
+          <li><strong>Q8.</strong> What is the minimum age to vote in the UK?</li>
+          <li><strong>Q9.</strong> When are local council elections held?</li>
+          <li><strong>Q10.</strong> What does the Cabinet do?</li>
+          <li><strong>Q11.</strong> What's the role of the Civil Service?</li>
+          <li><strong>Q12.</strong> How is the Northern Ireland Assembly elected?</li>
+        </ol>
+
+        <h2>Answers &amp; Explanations</h2>
+        <ol>
+          <li><strong>A1.</strong> The Official Opposition.</li>
+          <li><strong>A2.</strong> Adults aged 18+ on the electoral register, with limited exceptions.</li>
+          <li><strong>A3.</strong> To chair debates in the Commons impartially.</li>
+          <li><strong>A4.</strong> British, Commonwealth or Irish citizens aged 18+ (with some exceptions).</li>
+          <li><strong>A5.</strong> Weekly when Parliament is sitting (usually Wednesdays).</li>
+          <li><strong>A6.</strong> Transferring power from central government to devolved administrations.</li>
+          <li><strong>A7.</strong> London — Parliament Square.</li>
+          <li><strong>A8.</strong> 18 (16 in Scotland and Wales for devolved elections).</li>
+          <li><strong>A9.</strong> Usually in May.</li>
+          <li><strong>A10.</strong> Senior ministers run government departments and decide policy.</li>
+          <li><strong>A11.</strong> To deliver government policy, politically neutral.</li>
+          <li><strong>A12.</strong> By Single Transferable Vote (STV).</li>
+        </ol>
+
+        <h2>Tips to Pass</h2>
+        <ul>
+          <li>Sit at least 5 free mocks before booking the real test.</li>
+          <li>Time yourself strictly — 45 minutes for 24 questions.</li>
+          <li>Review every wrong answer before moving on.</li>
+          <li>Don't skip the chapter on Government — it dominates the exam.</li>
+          <li>Use 2026 materials only — older versions are out of date.</li>
+        </ul>
+
+        <h2>Take the full mock test</h2>
+        <p>
+          👉 
+          <Link
+            to="/quiz/$slug"
+            params={{ slug: "life-in-the-uk-mock-1" }}
+            className="font-semibold text-coral hover:underline"
+          >
+            Take full mock test here
+          </Link>
+        </p>
+
+        <p>
+          Explore more in <C slug="citizenship">UK Citizenship & Life</C> or browse 
+          <T slug="life-in-the-uk">all Life in the UK tests</T>.
+        </p>
+        <p>
+          Related reading: <B slug="life-in-the-uk-test-guide">The Life in the UK Test: Complete Guide</B>.
+        </p>
+      </>
+    ),
+  },
+  {
+    slug: "uk-citizenship-test-guide-pass-first-time",
+    title: "UK Citizenship Test Guide: Pass First Time",
+    description:
+      "Complete UK citizenship test guide for 2026. Eligibility, the Life in the UK Test, English requirements, application steps and free practice.",
+    excerpt:
+      "Citizenship has more steps than most people realise. Here's the order they need to happen — and how to ace each one.",
+    datePublished: "2026-04-24",
+    author: "UK Test Hub Team",
+    readingMinutes: 9,
+    category: "Citizenship",
+    tags: ["citizenship", "guide", "ILR"],
+    hero: heroCitizenship,
+    body: () => (
+      <>
+        <p>Becoming a British citizen typically requires: ILR for at least 12 months, the Life in the UK Test, an English language qualification at CEFR B1+ (or higher), the AN application form, biometrics and a citizenship ceremony. Below are 10 questions on the process itself plus tips on hitting each milestone in the right order.</p>
+
+        <h2>Practice Questions</h2>
+        <ol>
+          <li><strong>Q1.</strong> What's the minimum residency period for naturalisation?</li>
+          <li><strong>Q2.</strong> Do you need ILR before applying?</li>
+          <li><strong>Q3.</strong> What English level is required?</li>
+          <li><strong>Q4.</strong> What's the cost of the AN application (2026)?</li>
+          <li><strong>Q5.</strong> How long does the Life in the UK Test certificate last?</li>
+          <li><strong>Q6.</strong> What's the maximum time you can spend outside the UK in the 5 years before applying?</li>
+          <li><strong>Q7.</strong> Do you need to attend a ceremony?</li>
+          <li><strong>Q8.</strong> Can you hold dual nationality?</li>
+          <li><strong>Q9.</strong> What's a referee for the application?</li>
+          <li><strong>Q10.</strong> How long does the application typically take?</li>
+        </ol>
+
+        <h2>Answers &amp; Explanations</h2>
+        <ol>
+          <li><strong>A1.</strong> 5 years (3 years if married to a British citizen).</li>
+          <li><strong>A2.</strong> Yes — for at least 12 months (waived if married to a British citizen).</li>
+          <li><strong>A3.</strong> CEFR B1 or above, in speaking and listening.</li>
+          <li><strong>A4.</strong> Approximately £1,630 (subject to Home Office updates) plus ceremony fee.</li>
+          <li><strong>A5.</strong> Indefinitely — once passed it never expires.</li>
+          <li><strong>A6.</strong> 450 days (90 days in the final year).</li>
+          <li><strong>A7.</strong> Yes — within 90 days of approval.</li>
+          <li><strong>A8.</strong> The UK allows dual nationality, but check your country of origin's rules.</li>
+          <li><strong>A9.</strong> Two professional referees who can vouch for your identity.</li>
+          <li><strong>A10.</strong> Around 6 months on average.</li>
+        </ol>
+
+        <h2>Tips to Pass</h2>
+        <ul>
+          <li>Pass Life in the UK first, then book your English test.</li>
+          <li>Track your absence days using a spreadsheet — exceeding 450 is the most common refusal reason.</li>
+          <li>Get referees lined up before submitting.</li>
+          <li>Apply at least 3 months before any planned travel.</li>
+          <li>Use 2026-updated materials only.</li>
+        </ul>
+
+        <h2>Take the full mock test</h2>
+        <p>
+          👉 
+          <Link
+            to="/quiz/$slug"
+            params={{ slug: "life-in-the-uk-mock-1" }}
+            className="font-semibold text-coral hover:underline"
+          >
+            Take full mock test here
+          </Link>
+        </p>
+
+        <p>
+          Explore more in <C slug="citizenship">UK Citizenship & Life</C> or browse 
+          <T slug="british-citizenship">all British Citizenship practice</T>.
+        </p>
+        <p>
+          Related reading: <B slug="life-in-the-uk-test-guide">The Life in the UK Test: Complete Guide</B>.
+        </p>
+      </>
+    ),
+  },
+  {
+    slug: "life-in-the-uk-test-pass-mark-explained",
+    title: "Life in the UK Test Pass Mark Explained",
+    description:
+      "Life in the UK Test pass mark explained: 18 out of 24 (75%). What it means, how to hit it consistently and free practice questions inside.",
+    excerpt:
+      "75% pass mark = 18 out of 24. Here's how to hit it on the first try — every time.",
+    datePublished: "2026-04-25",
+    author: "UK Test Hub Team",
+    readingMinutes: 6,
+    category: "Citizenship",
+    tags: ["pass mark", "life in the uk", "citizenship"],
+    hero: heroCitizenship,
+    body: () => (
+      <>
+        <p>The Life in the UK Test pass mark is 75% — at least 18 correct out of 24 questions. You have 45 minutes, which means almost 2 minutes per question. Most candidates finish in 20 minutes; resist the urge to leave early. Below are 10 questions on the test format and pass-mark logic, then tips for hitting 22+ consistently in practice.</p>
+
+        <h2>Practice Questions</h2>
+        <ol>
+          <li><strong>Q1.</strong> How many questions on the test?</li>
+          <li><strong>Q2.</strong> What's the pass mark?</li>
+          <li><strong>Q3.</strong> How many minutes do you have?</li>
+          <li><strong>Q4.</strong> How are answers entered?</li>
+          <li><strong>Q5.</strong> What types of questions appear?</li>
+          <li><strong>Q6.</strong> Can you go back to previous questions?</li>
+          <li><strong>Q7.</strong> What ID do you need?</li>
+          <li><strong>Q8.</strong> Cost of the test in 2026?</li>
+          <li><strong>Q9.</strong> When do you find out your result?</li>
+          <li><strong>Q10.</strong> If you fail, when can you re-sit?</li>
+        </ol>
+
+        <h2>Answers &amp; Explanations</h2>
+        <ol>
+          <li><strong>A1.</strong> 24.</li>
+          <li><strong>A2.</strong> 18 out of 24 (75%).</li>
+          <li><strong>A3.</strong> 45 minutes.</li>
+          <li><strong>A4.</strong> On a touchscreen at the test centre.</li>
+          <li><strong>A5.</strong> Multiple choice (4 options) and true/false.</li>
+          <li><strong>A6.</strong> Yes — flag and review.</li>
+          <li><strong>A7.</strong> Photo ID and proof of address (less than 3 months old).</li>
+          <li><strong>A8.</strong> £50.</li>
+          <li><strong>A9.</strong> On the day, immediately after the test.</li>
+          <li><strong>A10.</strong> After at least 7 days.</li>
+        </ol>
+
+        <h2>Tips to Pass</h2>
+        <ul>
+          <li>Practise until you score 22+ on three mocks in a row.</li>
+          <li>Read the handbook twice — once fast, once slowly.</li>
+          <li>Focus the second read on chapters where you scored lowest.</li>
+          <li>Don't book the test until you're consistently above pass mark.</li>
+          <li>Bring two forms of ID just in case.</li>
+        </ul>
+
+        <h2>Take the full mock test</h2>
+        <p>
+          👉 
+          <Link
+            to="/quiz/$slug"
+            params={{ slug: "life-in-the-uk-mock-1" }}
+            className="font-semibold text-coral hover:underline"
+          >
+            Take full mock test here
+          </Link>
+        </p>
+
+        <p>
+          Explore more in <C slug="citizenship">UK Citizenship & Life</C> or browse 
+          <T slug="life-in-the-uk">all Life in the UK tests</T>.
+        </p>
+        <p>
+          Related reading: <B slug="life-in-the-uk-test-questions-and-answers-2026">Life in the UK Questions and Answers 2026</B>.
+        </p>
+      </>
+    ),
+  },
+  {
+    slug: "british-citizenship-test-questions-2026",
+    title: "British Citizenship Test Questions 2026 (Free)",
+    description:
+      "Free 2026 British citizenship test questions and answers. Real exam-style, with explanations — and a full Life in the UK mock test inside.",
+    excerpt:
+      "Free 2026 sample questions covering history, government and values — exactly as they appear at official test centres.",
+    datePublished: "2026-04-26",
+    author: "UK Test Hub Team",
+    readingMinutes: 7,
+    category: "Citizenship",
+    tags: ["british citizenship", "2026", "free"],
+    hero: heroCitizenship,
+    body: () => (
+      <>
+        <p>The British citizenship test is officially called the Life in the UK Test. It's the same exam whether you're applying for ILR or naturalisation — 24 questions, 45 minutes, 75% pass. Below are 12 fresh 2026-aligned questions with full explanations.</p>
+
+        <h2>Practice Questions</h2>
+        <ol>
+          <li><strong>Q1.</strong> What is the patron saint of England?</li>
+          <li><strong>Q2.</strong> What date is St George's Day?</li>
+          <li><strong>Q3.</strong> Who is the current Monarch?</li>
+          <li><strong>Q4.</strong> What is Bonfire Night and when is it celebrated?</li>
+          <li><strong>Q5.</strong> Where is the official residence of the Monarch in London?</li>
+          <li><strong>Q6.</strong> What is the Commonwealth?</li>
+          <li><strong>Q7.</strong> How many member states does the Commonwealth have?</li>
+          <li><strong>Q8.</strong> What is the name of the UK Parliament's lower house?</li>
+          <li><strong>Q9.</strong> What is a constituency?</li>
+          <li><strong>Q10.</strong> What does "first past the post" mean?</li>
+          <li><strong>Q11.</strong> Who is the head of the Cabinet?</li>
+          <li><strong>Q12.</strong> When was the United Kingdom of Great Britain and Ireland formed?</li>
+        </ol>
+
+        <h2>Answers &amp; Explanations</h2>
+        <ol>
+          <li><strong>A1.</strong> St George.</li>
+          <li><strong>A2.</strong> 23 April.</li>
+          <li><strong>A3.</strong> King Charles III.</li>
+          <li><strong>A4.</strong> Commemorates the failed Gunpowder Plot of 1605, celebrated 5 November.</li>
+          <li><strong>A5.</strong> Buckingham Palace.</li>
+          <li><strong>A6.</strong> An association of 56 countries, mostly former British territories.</li>
+          <li><strong>A7.</strong> 56 (as of 2026).</li>
+          <li><strong>A8.</strong> The House of Commons.</li>
+          <li><strong>A9.</strong> An area represented by one MP.</li>
+          <li><strong>A10.</strong> The candidate with the most votes in a constituency wins.</li>
+          <li><strong>A11.</strong> The Prime Minister.</li>
+          <li><strong>A12.</strong> 1801.</li>
+        </ol>
+
+        <h2>Tips to Pass</h2>
+        <ul>
+          <li>Pair every monarch with a key event.</li>
+          <li>Memorise patron saint days as a set of 4.</li>
+          <li>Quiz a friend or family member to test recall.</li>
+          <li>Cover the answer with your hand and recite — don't skim.</li>
+          <li>Take a fresh mock every other day in the final fortnight.</li>
+        </ul>
+
+        <h2>Take the full mock test</h2>
+        <p>
+          👉 
+          <Link
+            to="/quiz/$slug"
+            params={{ slug: "life-in-the-uk-mock-1" }}
+            className="font-semibold text-coral hover:underline"
+          >
+            Take full mock test here
+          </Link>
+        </p>
+
+        <p>
+          Explore more in <C slug="citizenship">UK Citizenship & Life</C> or browse 
+          <T slug="british-citizenship">all British Citizenship practice</T>.
+        </p>
+        <p>
+          Related reading: <B slug="uk-citizenship-test-guide-pass-first-time">UK Citizenship Test Guide</B>.
+        </p>
+      </>
+    ),
+  },
+  {
+    slug: "how-to-pass-life-in-the-uk-test-quickly",
+    title: "How to Pass Life in the UK Test Quickly",
+    description:
+      "Pass the Life in the UK Test quickly with this 2-week study plan. Free practice questions, key dates and the chapters that matter most.",
+    excerpt:
+      "Two weeks is enough — if you study smart. Here's the exact 14-day plan, plus a warm-up mock.",
+    datePublished: "2026-04-27",
+    author: "UK Test Hub Team",
+    readingMinutes: 7,
+    category: "Citizenship",
+    tags: ["fast", "life in the uk", "study plan"],
+    hero: heroCitizenship,
+    body: () => (
+      <>
+        <p>Most candidates over-study the Life in the UK Test. The handbook is around 180 pages and the test only draws from a defined question bank — so two focused weeks is enough for most people. Below is the 14-day plan, plus a 10-question warm-up to gauge where you are right now.</p>
+
+        <h2>Practice Questions</h2>
+        <ol>
+          <li><strong>Q1.</strong> How many monarchs were in the House of Tudor?</li>
+          <li><strong>Q2.</strong> When did the Roman Empire leave Britain?</li>
+          <li><strong>Q3.</strong> What was the Domesday Book?</li>
+          <li><strong>Q4.</strong> Who designed St Paul's Cathedral?</li>
+          <li><strong>Q5.</strong> What year did World War II end?</li>
+          <li><strong>Q6.</strong> Who was Winston Churchill?</li>
+          <li><strong>Q7.</strong> What was the Black Death?</li>
+          <li><strong>Q8.</strong> What was the result of the 1707 Acts of Union?</li>
+          <li><strong>Q9.</strong> Who wrote "Pride and Prejudice"?</li>
+          <li><strong>Q10.</strong> What is the Hadrian's Wall?</li>
+        </ol>
+
+        <h2>Answers &amp; Explanations</h2>
+        <ol>
+          <li><strong>A1.</strong> Five.</li>
+          <li><strong>A2.</strong> Around 410 AD.</li>
+          <li><strong>A3.</strong> A survey of England commissioned by William the Conqueror in 1086.</li>
+          <li><strong>A4.</strong> Sir Christopher Wren.</li>
+          <li><strong>A5.</strong> 1945.</li>
+          <li><strong>A6.</strong> Prime Minister during much of WWII.</li>
+          <li><strong>A7.</strong> A devastating plague that killed roughly a third of Britain's population in the 14th century.</li>
+          <li><strong>A8.</strong> Created the Kingdom of Great Britain.</li>
+          <li><strong>A9.</strong> Jane Austen.</li>
+          <li><strong>A10.</strong> A Roman fortification across northern England, built around 122 AD.</li>
+        </ol>
+
+        <h2>Tips to Pass</h2>
+        <ul>
+          <li>Days 1–4: read the handbook end-to-end.</li>
+          <li>Days 5–8: one mock per day, mark all errors.</li>
+          <li>Days 9–11: re-read your two weakest chapters.</li>
+          <li>Day 12: take 3 mocks back-to-back.</li>
+          <li>Day 13: light revision and rest.</li>
+          <li>Day 14: test day — arrive 30 minutes early.</li>
+        </ul>
+
+        <h2>Take the full mock test</h2>
+        <p>
+          👉 
+          <Link
+            to="/quiz/$slug"
+            params={{ slug: "life-in-the-uk-mock-1" }}
+            className="font-semibold text-coral hover:underline"
+          >
+            Take full mock test here
+          </Link>
+        </p>
+
+        <p>
+          Explore more in <C slug="citizenship">UK Citizenship & Life</C> or browse 
+          <T slug="life-in-the-uk">all Life in the UK tests</T>.
+        </p>
+        <p>
+          Related reading: <B slug="life-in-the-uk-test-guide">The Life in the UK Test: Complete Guide</B>.
+        </p>
+      </>
+    ),
+  },
+  {
+    slug: "life-in-the-uk-mock-test-2026-edition",
+    title: "Life in the UK Mock Test (2026 Edition)",
+    description:
+      "Life in the UK Mock Test for 2026. Real exam format, instant marking, full explanations and unlimited free retries — start now.",
+    excerpt:
+      "2026 edition of the Life in the UK mock — same format, fresh questions, free.",
+    datePublished: "2026-04-28",
+    author: "UK Test Hub Team",
+    readingMinutes: 7,
+    category: "Citizenship",
+    tags: ["mock test", "2026", "life in the uk"],
+    hero: heroCitizenship,
+    body: () => (
+      <>
+        <p>Mock tests are the single best predictor of your real Life in the UK Test result. Here's a 12-question 2026-edition mock to warm up. Time yourself — aim for under 4 minutes — then jump straight to the full 24-question mock.</p>
+
+        <h2>Practice Questions</h2>
+        <ol>
+          <li><strong>Q1.</strong> What is Remembrance Day and when is it held?</li>
+          <li><strong>Q2.</strong> What is the most popular sport in the UK?</li>
+          <li><strong>Q3.</strong> Who composed "The Planets" suite?</li>
+          <li><strong>Q4.</strong> Where is the National Eisteddfod held?</li>
+          <li><strong>Q5.</strong> What's the symbol of Northern Ireland?</li>
+          <li><strong>Q6.</strong> Who is the patron saint of Northern Ireland?</li>
+          <li><strong>Q7.</strong> What is St Patrick's Day and when is it?</li>
+          <li><strong>Q8.</strong> What's the highest mountain in Scotland?</li>
+          <li><strong>Q9.</strong> Where is the Houses of Parliament located?</li>
+          <li><strong>Q10.</strong> Who built Stonehenge?</li>
+          <li><strong>Q11.</strong> What's the name of the UK's national flag?</li>
+          <li><strong>Q12.</strong> What language is Welsh derived from?</li>
+        </ol>
+
+        <h2>Answers &amp; Explanations</h2>
+        <ol>
+          <li><strong>A1.</strong> Honours those who died in war, 11 November.</li>
+          <li><strong>A2.</strong> Football.</li>
+          <li><strong>A3.</strong> Gustav Holst.</li>
+          <li><strong>A4.</strong> Wales (rotates between locations).</li>
+          <li><strong>A5.</strong> The shamrock.</li>
+          <li><strong>A6.</strong> St Patrick.</li>
+          <li><strong>A7.</strong> Celebrates Northern Ireland's patron saint, 17 March.</li>
+          <li><strong>A8.</strong> Ben Nevis.</li>
+          <li><strong>A9.</strong> Westminster, London.</li>
+          <li><strong>A10.</strong> Built around 3000–2000 BC; the builders are unknown.</li>
+          <li><strong>A11.</strong> The Union Jack (or Union Flag).</li>
+          <li><strong>A12.</strong> Celtic.</li>
+        </ol>
+
+        <h2>Tips to Pass</h2>
+        <ul>
+          <li>Time yourself strictly — under 4 minutes for 12 questions.</li>
+          <li>Don't second-guess — first instinct is usually right.</li>
+          <li>Always finish with a final review pass.</li>
+          <li>Track scores in a notebook.</li>
+          <li>Re-take any mock where you scored under 18/24.</li>
+        </ul>
+
+        <h2>Take the full mock test</h2>
+        <p>
+          👉 
+          <Link
+            to="/quiz/$slug"
+            params={{ slug: "life-in-the-uk-mock-1" }}
+            className="font-semibold text-coral hover:underline"
+          >
+            Take full mock test here
+          </Link>
+        </p>
+
+        <p>
+          Explore more in <C slug="citizenship">UK Citizenship & Life</C> or browse 
+          <T slug="life-in-the-uk">all Life in the UK tests</T>.
+        </p>
+        <p>
+          Related reading: <B slug="life-in-the-uk-test-practice-free">Life in the UK Test Practice Free</B>.
+        </p>
+      </>
+    ),
+  },
+  {
+    slug: "common-life-in-the-uk-test-mistakes-to-avoid",
+    title: "Common Life in the UK Test Mistakes to Avoid",
+    description:
+      "The most common Life in the UK Test mistakes that cause failures. How to avoid them, plus free 2026 practice questions and a full mock.",
+    excerpt:
+      "If you understand WHY most candidates fail, you almost guarantee yourself a pass.",
+    datePublished: "2026-04-29",
+    author: "UK Test Hub Team",
+    readingMinutes: 7,
+    category: "Citizenship",
+    tags: ["mistakes", "life in the uk", "tips"],
+    hero: heroCitizenship,
+    body: () => (
+      <>
+        <p>After thousands of test results, certain mistakes appear over and over. Below are the 10 traps to avoid, framed as practice questions so you can recognise the patterns at a glance.</p>
+
+        <h2>Practice Questions</h2>
+        <ol>
+          <li><strong>Q1.</strong> Why is using outdated study material a problem?</li>
+          <li><strong>Q2.</strong> What's the danger of memorising answers without understanding?</li>
+          <li><strong>Q3.</strong> Why is rushing the test a top failure cause?</li>
+          <li><strong>Q4.</strong> Why is the History chapter a common weak point?</li>
+          <li><strong>Q5.</strong> Why should you never skip the Values & Principles chapter?</li>
+          <li><strong>Q6.</strong> What ID error trips up many candidates?</li>
+          <li><strong>Q7.</strong> What's the typical mistake when interpreting "first past the post"?</li>
+          <li><strong>Q8.</strong> Why do candidates confuse devolved governments?</li>
+          <li><strong>Q9.</strong> Common mistake about the Monarch's role?</li>
+          <li><strong>Q10.</strong> Why ignoring the official handbook is risky?</li>
+        </ol>
+
+        <h2>Answers &amp; Explanations</h2>
+        <ol>
+          <li><strong>A1.</strong> The handbook and questions update; old material misses recent changes.</li>
+          <li><strong>A2.</strong> Wording differs across mocks; understanding beats memorisation.</li>
+          <li><strong>A3.</strong> Most failures come from misreading questions, not lack of knowledge.</li>
+          <li><strong>A4.</strong> There are many dates to learn; without a system they blur together.</li>
+          <li><strong>A5.</strong> Several questions every test come from this chapter.</li>
+          <li><strong>A6.</strong> Bringing only one ID — you need photo ID AND proof of address.</li>
+          <li><strong>A7.</strong> It's a constituency-level system, not national. The party with most MPs governs.</li>
+          <li><strong>A8.</strong> Each devolved nation has different powers; learn them separately.</li>
+          <li><strong>A9.</strong> Believing the Monarch makes laws — they sign them, but Parliament makes them.</li>
+          <li><strong>A10.</strong> Every question comes from it — no other source is reliable.</li>
+        </ol>
+
+        <h2>Tips to Pass</h2>
+        <ul>
+          <li>Use only 2026-dated materials.</li>
+          <li>Always understand the WHY, not just the answer.</li>
+          <li>Use ALL 45 minutes — flag, review, then submit.</li>
+          <li>Bring two forms of ID, one with photo, one with current address.</li>
+          <li>Sleep well the night before.</li>
+        </ul>
+
+        <h2>Take the full mock test</h2>
+        <p>
+          👉 
+          <Link
+            to="/quiz/$slug"
+            params={{ slug: "life-in-the-uk-mock-1" }}
+            className="font-semibold text-coral hover:underline"
+          >
+            Take full mock test here
+          </Link>
+        </p>
+
+        <p>
+          Explore more in <C slug="citizenship">UK Citizenship & Life</C> or browse 
+          <T slug="life-in-the-uk">all Life in the UK tests</T>.
+        </p>
+        <p>
+          Related reading: <B slug="hardest-life-in-the-uk-test-questions">Hardest Life in the UK Test Questions</B>.
+        </p>
+      </>
+    ),
+  },
+  {
+    slug: "cscs-test-questions-and-answers-2026",
+    title: "CSCS Test Questions and Answers 2026 (Free Practice)",
+    description:
+      "Free 2026 CSCS test questions and answers. Real exam-style health, safety & environment questions with explanations and a full mock inside.",
+    excerpt:
+      "Real CSCS-style questions for 2026 covering Health, Safety & Environment — with worked answers and a free mock at the end.",
+    datePublished: "2026-04-20",
+    author: "UK Test Hub Team",
+    readingMinutes: 8,
+    category: "Professional",
+    tags: ["CSCS", "2026", "construction"],
+    hero: heroProfessional,
+    body: () => (
+      <>
+        <p>The CSCS Health, Safety & Environment Test is required for nearly every construction site in the UK. It's 50 questions in 45 minutes, with 12 case study questions and 38 knowledge questions. Pass mark is 47/50. Below are 12 practice questions written in the exact CITB style for 2026.</p>
+
+        <h2>Practice Questions</h2>
+        <ol>
+          <li><strong>Q1.</strong> What does PPE stand for?</li>
+          <li><strong>Q2.</strong> What is the minimum width for a single-person scaffold platform?</li>
+          <li><strong>Q3.</strong> When should you carry out a daily check on your harness?</li>
+          <li><strong>Q4.</strong> What's the safe lifting weight a fit adult can lift unaided?</li>
+          <li><strong>Q5.</strong> Who has overall responsibility for site safety?</li>
+          <li><strong>Q6.</strong> What does a yellow safety sign indicate?</li>
+          <li><strong>Q7.</strong> When MUST you wear a hi-vis vest?</li>
+          <li><strong>Q8.</strong> What's the recommended action if you discover damaged scaffolding?</li>
+          <li><strong>Q9.</strong> What is COSHH?</li>
+          <li><strong>Q10.</strong> What should you do before using a power tool?</li>
+          <li><strong>Q11.</strong> What's the legal noise exposure limit (daily)?</li>
+          <li><strong>Q12.</strong> What does a blue safety sign indicate?</li>
+        </ol>
+
+        <h2>Answers &amp; Explanations</h2>
+        <ol>
+          <li><strong>A1.</strong> Personal Protective Equipment.</li>
+          <li><strong>A2.</strong> 600 mm.</li>
+          <li><strong>A3.</strong> Before every use.</li>
+          <li><strong>A4.</strong> Around 25 kg, but always assess the load and use mechanical aids when possible.</li>
+          <li><strong>A5.</strong> The Principal Contractor under CDM 2015.</li>
+          <li><strong>A6.</strong> Caution / warning of risk.</li>
+          <li><strong>A7.</strong> Whenever working on or near moving plant or vehicles.</li>
+          <li><strong>A8.</strong> Stop work, isolate the area and report it immediately.</li>
+          <li><strong>A9.</strong> Control of Substances Hazardous to Health.</li>
+          <li><strong>A10.</strong> Carry out a pre-use check and ensure PAT testing is in date.</li>
+          <li><strong>A11.</strong> 85 dB(A) — above this, hearing protection is mandatory.</li>
+          <li><strong>A12.</strong> A mandatory action (e.g. wear gloves).</li>
+        </ol>
+
+        <h2>Tips to Pass</h2>
+        <ul>
+          <li>Use only CITB 2026-aligned mocks.</li>
+          <li>Practise the case studies separately — they're 25% of the test.</li>
+          <li>Drill PPE colour codes until automatic.</li>
+          <li>Aim for 49/50 in practice — gives a buffer on the day.</li>
+          <li>Get familiar with the on-screen format.</li>
+        </ul>
+
+        <h2>Take the full mock test</h2>
+        <p>
+          👉 
+          <Link
+            to="/quiz/$slug"
+            params={{ slug: "cscs-mock-1" }}
+            className="font-semibold text-coral hover:underline"
+          >
+            Take full mock test here
+          </Link>
+        </p>
+
+        <p>
+          Explore more in <C slug="professional">Professional Certification</C> or browse 
+          <T slug="cscs">all CSCS practice tests</T>.
+        </p>
+        <p>
+          Related reading: <B slug="cscs-test-practice-guide">CSCS Test Practice Guide</B>.
+        </p>
+      </>
+    ),
+  },
+  {
+    slug: "cscs-mock-test-free-uk",
+    title: "CSCS Mock Test Free UK (Real Exam Questions)",
+    description:
+      "Free CSCS mock test for the UK Health, Safety & Environment exam. Real exam-style questions, instant marking, no sign-up.",
+    excerpt:
+      "Free CSCS mock — real exam style, instant marking, no account needed.",
+    datePublished: "2026-04-21",
+    author: "UK Test Hub Team",
+    readingMinutes: 7,
+    category: "Professional",
+    tags: ["CSCS", "mock test", "free"],
+    hero: heroProfessional,
+    body: () => (
+      <>
+        <p>If you're booking your CSCS Health, Safety & Environment Test soon, run multiple mocks first. The pass mark is high (47/50) and the questions span topics most candidates haven't touched since induction. Below are 10 sample questions to warm up — then click for the full mock.</p>
+
+        <h2>Practice Questions</h2>
+        <ol>
+          <li><strong>Q1.</strong> What's the first action if a colleague suffers an electric shock?</li>
+          <li><strong>Q2.</strong> What's the minimum age to operate construction plant?</li>
+          <li><strong>Q3.</strong> When working at height, the priority should be to…</li>
+          <li><strong>Q4.</strong> Where should fire extinguishers be located on site?</li>
+          <li><strong>Q5.</strong> What does RIDDOR cover?</li>
+          <li><strong>Q6.</strong> What's a permit-to-work?</li>
+          <li><strong>Q7.</strong> What action when finding asbestos suspected material?</li>
+          <li><strong>Q8.</strong> How often should fire alarms be tested on site?</li>
+          <li><strong>Q9.</strong> Who carries out a site induction?</li>
+          <li><strong>Q10.</strong> What does a green safety sign indicate?</li>
+        </ol>
+
+        <h2>Answers &amp; Explanations</h2>
+        <ol>
+          <li><strong>A1.</strong> Switch off the power if safe to do so, then call for medical help.</li>
+          <li><strong>A2.</strong> 18 (16 with formal training in some cases).</li>
+          <li><strong>A3.</strong> Avoid working at height where possible — use elimination first.</li>
+          <li><strong>A4.</strong> On every escape route and at fire points.</li>
+          <li><strong>A5.</strong> Reporting of Injuries, Diseases and Dangerous Occurrences Regulations.</li>
+          <li><strong>A6.</strong> A formal authorisation to undertake high-risk work.</li>
+          <li><strong>A7.</strong> Stop work, do not disturb, report to your supervisor.</li>
+          <li><strong>A8.</strong> Weekly.</li>
+          <li><strong>A9.</strong> The site supervisor or health & safety officer.</li>
+          <li><strong>A10.</strong> Safe condition (e.g. emergency exit).</li>
+        </ol>
+
+        <h2>Tips to Pass</h2>
+        <ul>
+          <li>Do at least 3 full mocks before the real test.</li>
+          <li>Review every wrong answer carefully.</li>
+          <li>Drill case-study questions — they're tricky.</li>
+          <li>Don't rush — 45 minutes for 50 questions is plenty.</li>
+          <li>Wear easy-to-remove items at the test centre for security checks.</li>
+        </ul>
+
+        <h2>Take the full mock test</h2>
+        <p>
+          👉 
+          <Link
+            to="/quiz/$slug"
+            params={{ slug: "cscs-mock-1" }}
+            className="font-semibold text-coral hover:underline"
+          >
+            Take full mock test here
+          </Link>
+        </p>
+
+        <p>
+          Explore more in <C slug="professional">Professional Certification</C> or browse 
+          <T slug="cscs">all CSCS practice tests</T>.
+        </p>
+        <p>
+          Related reading: <B slug="cscs-test-questions-and-answers-2026">CSCS Test Questions and Answers 2026</B>.
+        </p>
+      </>
+    ),
+  },
+  {
+    slug: "how-to-pass-cscs-test-first-time",
+    title: "How to Pass CSCS Test First Time (Full Guide)",
+    description:
+      "How to pass the CSCS test first time — full 2026 guide. Format, pass mark, booking, study plan and free practice questions inside.",
+    excerpt:
+      "First-time pass rate is around 70%. Here's how to be in that group — without overspending on study materials.",
+    datePublished: "2026-04-22",
+    author: "UK Test Hub Team",
+    readingMinutes: 8,
+    category: "Professional",
+    tags: ["CSCS", "guide", "first time"],
+    hero: heroProfessional,
+    body: () => (
+      <>
+        <p>The CSCS card is the gateway to working on a UK construction site, and the Health, Safety & Environment Test is the gateway to the card. Here's the complete plan: format, pass mark, booking, what to bring, the topics that come up most, and 10 warm-up questions.</p>
+
+        <h2>Practice Questions</h2>
+        <ol>
+          <li><strong>Q1.</strong> How is the test structured?</li>
+          <li><strong>Q2.</strong> What's the pass mark?</li>
+          <li><strong>Q3.</strong> Cost of the test in 2026?</li>
+          <li><strong>Q4.</strong> Where do you book?</li>
+          <li><strong>Q5.</strong> What ID do you need?</li>
+          <li><strong>Q6.</strong> How long does the test take?</li>
+          <li><strong>Q7.</strong> Can you re-take if you fail?</li>
+          <li><strong>Q8.</strong> What's the most common failure cause?</li>
+          <li><strong>Q9.</strong> How long does your card last?</li>
+          <li><strong>Q10.</strong> Difference between Operative and Specialist tests?</li>
+        </ol>
+
+        <h2>Answers &amp; Explanations</h2>
+        <ol>
+          <li><strong>A1.</strong> 50 questions in 45 minutes — 12 case study + 38 knowledge.</li>
+          <li><strong>A2.</strong> 47 out of 50.</li>
+          <li><strong>A3.</strong> £22.50.</li>
+          <li><strong>A4.</strong> Pearson VUE test centres.</li>
+          <li><strong>A5.</strong> Photo ID and a second proof of identity.</li>
+          <li><strong>A6.</strong> About an hour including check-in.</li>
+          <li><strong>A7.</strong> Yes — minimum 24-hour wait.</li>
+          <li><strong>A8.</strong> Underestimating it; treat it like a real exam.</li>
+          <li><strong>A9.</strong> Most cards are valid for 5 years.</li>
+          <li><strong>A10.</strong> Operative covers core trades; Specialist covers specific roles (e.g. plumbing, demolition).</li>
+        </ol>
+
+        <h2>Tips to Pass</h2>
+        <ul>
+          <li>Spend 2 weeks revising — 1 hour a day.</li>
+          <li>Watch CITB's official prep videos free on YouTube.</li>
+          <li>Take 5 mocks in the final week.</li>
+          <li>Print PPE colour codes on a single sheet — memorise.</li>
+          <li>Sleep well, breakfast lightly, arrive 20 min early.</li>
+        </ul>
+
+        <h2>Take the full mock test</h2>
+        <p>
+          👉 
+          <Link
+            to="/quiz/$slug"
+            params={{ slug: "cscs-mock-1" }}
+            className="font-semibold text-coral hover:underline"
+          >
+            Take full mock test here
+          </Link>
+        </p>
+
+        <p>
+          Explore more in <C slug="professional">Professional Certification</C> or browse 
+          <T slug="cscs">all CSCS practice tests</T>.
+        </p>
+        <p>
+          Related reading: <B slug="cscs-test-practice-guide">CSCS Test Practice Guide</B>.
+        </p>
+      </>
+    ),
+  },
+  {
+    slug: "most-common-cscs-test-questions-explained",
+    title: "Most Common CSCS Test Questions Explained",
+    description:
+      "The most common CSCS test questions explained for 2026. Worked answers, real exam topics, and a free mock test linked at the end.",
+    excerpt:
+      "These questions appear on almost every CSCS exam. Lock them in and you've already won 25% of the test.",
+    datePublished: "2026-04-23",
+    author: "UK Test Hub Team",
+    readingMinutes: 7,
+    category: "Professional",
+    tags: ["CSCS", "common questions", "explained"],
+    hero: heroProfessional,
+    body: () => (
+      <>
+        <p>Some CSCS questions appear on virtually every sitting because they cover the most important on-site safety principles. Below are 12 of the most-repeated questions with full worked answers.</p>
+
+        <h2>Practice Questions</h2>
+        <ol>
+          <li><strong>Q1.</strong> What's the safe minimum distance from overhead power lines for plant?</li>
+          <li><strong>Q2.</strong> What does the term "competent person" mean?</li>
+          <li><strong>Q3.</strong> When is a method statement required?</li>
+          <li><strong>Q4.</strong> What's the maximum length of working day under WTR?</li>
+          <li><strong>Q5.</strong> What's the legal action for a slip hazard you discover?</li>
+          <li><strong>Q6.</strong> What's the role of a banksman?</li>
+          <li><strong>Q7.</strong> How often should a HAVS assessment be done?</li>
+          <li><strong>Q8.</strong> What's the safe distance to position a fire extinguisher from a fuel store?</li>
+          <li><strong>Q9.</strong> What's the rule about lone working in confined spaces?</li>
+          <li><strong>Q10.</strong> What does a red safety sign indicate?</li>
+          <li><strong>Q11.</strong> What is an emergency stop button used for?</li>
+          <li><strong>Q12.</strong> What's the guideline for taking breaks under HSE?</li>
+        </ol>
+
+        <h2>Answers &amp; Explanations</h2>
+        <ol>
+          <li><strong>A1.</strong> Defined by the cable's voltage; check the permit.</li>
+          <li><strong>A2.</strong> Someone with the training, knowledge and experience to do a task safely.</li>
+          <li><strong>A3.</strong> Whenever a task carries significant risk.</li>
+          <li><strong>A4.</strong> 48 hours/week average over 17 weeks (workers can opt out).</li>
+          <li><strong>A5.</strong> Cordon, sign and report immediately.</li>
+          <li><strong>A6.</strong> Guides plant operators safely around personnel and structures.</li>
+          <li><strong>A7.</strong> Annually as a minimum, more often if symptoms appear.</li>
+          <li><strong>A8.</strong> At least 6 metres.</li>
+          <li><strong>A9.</strong> Generally not allowed; if essential, with continuous communication and a permit.</li>
+          <li><strong>A10.</strong> Prohibition (do not).</li>
+          <li><strong>A11.</strong> Stop machinery in an emergency only.</li>
+          <li><strong>A12.</strong> 20-min rest after 6 hours' work.</li>
+        </ol>
+
+        <h2>Tips to Pass</h2>
+        <ul>
+          <li>Drill safety sign colours weekly.</li>
+          <li>Watch CITB's revision videos.</li>
+          <li>Make a one-page "cheat sheet" of distances and limits.</li>
+          <li>Re-take mocks until you score 49/50 three times in a row.</li>
+          <li>Don't cram — spread learning over 14 days.</li>
+        </ul>
+
+        <h2>Take the full mock test</h2>
+        <p>
+          👉 
+          <Link
+            to="/quiz/$slug"
+            params={{ slug: "cscs-mock-1" }}
+            className="font-semibold text-coral hover:underline"
+          >
+            Take full mock test here
+          </Link>
+        </p>
+
+        <p>
+          Explore more in <C slug="professional">Professional Certification</C> or browse 
+          <T slug="cscs">all CSCS practice tests</T>.
+        </p>
+        <p>
+          Related reading: <B slug="how-to-pass-cscs-test-first-time">How to Pass CSCS Test First Time</B>.
+        </p>
+      </>
+    ),
+  },
+  {
+    slug: "cscs-card-test-practice-questions-uk",
+    title: "CSCS Card Test Practice Questions (UK)",
+    description:
+      "Free UK CSCS card test practice questions for 2026. Real exam-style health, safety and environment questions with answers and explanations.",
+    excerpt:
+      "Sample 12 CSCS practice questions, then take the full mock — free, no sign-up.",
+    datePublished: "2026-04-24",
+    author: "UK Test Hub Team",
+    readingMinutes: 7,
+    category: "Professional",
+    tags: ["CSCS card", "practice", "construction"],
+    hero: heroProfessional,
+    body: () => (
+      <>
+        <p>Whether you're applying for a Green Labourer card or upgrading to Gold Skilled, you'll need to pass a CSCS Health, Safety & Environment Test. Below are 12 practice questions in real exam format, covering high-risk activities, environmental responsibilities and behavioural safety.</p>
+
+        <h2>Practice Questions</h2>
+        <ol>
+          <li><strong>Q1.</strong> What is HAVS?</li>
+          <li><strong>Q2.</strong> What is the recommended max single-person lift?</li>
+          <li><strong>Q3.</strong> When working in a confined space, what is the priority?</li>
+          <li><strong>Q4.</strong> Who must report a near miss?</li>
+          <li><strong>Q5.</strong> What does a hard hat protect against?</li>
+          <li><strong>Q6.</strong> When should ear defenders be worn?</li>
+          <li><strong>Q7.</strong> What is a toolbox talk?</li>
+          <li><strong>Q8.</strong> What's the safe approach to manual handling of awkward loads?</li>
+          <li><strong>Q9.</strong> How should waste be segregated on site?</li>
+          <li><strong>Q10.</strong> What's the action for an unmarked exposed cable?</li>
+          <li><strong>Q11.</strong> When should a risk assessment be reviewed?</li>
+          <li><strong>Q12.</strong> What's the minimum age to use abrasive wheels?</li>
+        </ol>
+
+        <h2>Answers &amp; Explanations</h2>
+        <ol>
+          <li><strong>A1.</strong> Hand-Arm Vibration Syndrome — caused by prolonged use of vibrating tools.</li>
+          <li><strong>A2.</strong> Around 25 kg (with assessment).</li>
+          <li><strong>A3.</strong> Eliminate the need to enter; if entry essential, use a permit-to-work and rescue plan.</li>
+          <li><strong>A4.</strong> Anyone — "see something, say something".</li>
+          <li><strong>A5.</strong> Falling objects and impact injuries.</li>
+          <li><strong>A6.</strong> When noise reaches 85 dB(A) or above.</li>
+          <li><strong>A7.</strong> A short safety briefing before starting work.</li>
+          <li><strong>A8.</strong> Use mechanical aids and team lifts; never lift alone if the load is awkward.</li>
+          <li><strong>A9.</strong> By type — wood, metal, hazardous, general — using clearly labelled bins.</li>
+          <li><strong>A10.</strong> Stop work, isolate area, call electrician/supervisor.</li>
+          <li><strong>A11.</strong> Whenever conditions or methods change.</li>
+          <li><strong>A12.</strong> 18, with formal training.</li>
+        </ol>
+
+        <h2>Tips to Pass</h2>
+        <ul>
+          <li>Practise daily for 7–10 days before booking.</li>
+          <li>Use 2026 CITB-aligned questions only.</li>
+          <li>Drill the case studies repeatedly — they trip people up.</li>
+          <li>Get to bed early the night before.</li>
+          <li>Bring two forms of ID.</li>
+        </ul>
+
+        <h2>Take the full mock test</h2>
+        <p>
+          👉 
+          <Link
+            to="/quiz/$slug"
+            params={{ slug: "cscs-mock-1" }}
+            className="font-semibold text-coral hover:underline"
+          >
+            Take full mock test here
+          </Link>
+        </p>
+
+        <p>
+          Explore more in <C slug="professional">Professional Certification</C> or browse 
+          <T slug="cscs">all CSCS practice tests</T>.
+        </p>
+        <p>
+          Related reading: <B slug="cscs-mock-test-free-uk">CSCS Mock Test Free UK</B>.
+        </p>
+      </>
+    ),
+  },
+  {
+    slug: "nhs-numeracy-test-questions-and-answers",
+    title: "NHS Numeracy Test Questions and Answers (Free Practice)",
+    description:
+      "Free NHS numeracy test questions and answers. Drug calculations, percentages, ratios and unit conversions for 2026 NHS recruitment and nursing.",
+    excerpt:
+      "Drug calcs, conversions and percentages — the maths NHS recruitment loves. Practise here, then take the full mock.",
+    datePublished: "2026-04-20",
+    author: "UK Test Hub Team",
+    readingMinutes: 7,
+    category: "NHS",
+    tags: ["NHS", "numeracy", "drug calculations"],
+    hero: heroNhs,
+    body: () => (
+      <>
+        <p>NHS numeracy tests appear in nursing recruitment, healthcare apprenticeships and many band 2–6 NHS roles. They focus on practical maths: drug calculations, fluid balance, percentages, ratios and conversions. Below are 10 worked examples in real NHS format.</p>
+
+        <h2>Practice Questions</h2>
+        <ol>
+          <li><strong>Q1.</strong> Convert 1.5 litres into millilitres.</li>
+          <li><strong>Q2.</strong> A patient needs 250 mg of a drug. Tablets are 125 mg. How many do you give?</li>
+          <li><strong>Q3.</strong> An infusion runs at 50 ml/hr. How much in 4 hours?</li>
+          <li><strong>Q4.</strong> Convert 0.25 mg to micrograms.</li>
+          <li><strong>Q5.</strong> What's 30% of 240?</li>
+          <li><strong>Q6.</strong> A 500 ml bag is to run over 8 hours. What's the rate per hour?</li>
+          <li><strong>Q7.</strong> Express 3:5 as a percentage.</li>
+          <li><strong>Q8.</strong> How many millilitres in 0.05 litres?</li>
+          <li><strong>Q9.</strong> If a syringe contains 10 mg in 5 ml, what volume gives 4 mg?</li>
+          <li><strong>Q10.</strong> Convert 750 mg into grams.</li>
+        </ol>
+
+        <h2>Answers &amp; Explanations</h2>
+        <ol>
+          <li><strong>A1.</strong> 1500 ml.</li>
+          <li><strong>A2.</strong> 2 tablets.</li>
+          <li><strong>A3.</strong> 200 ml.</li>
+          <li><strong>A4.</strong> 250 micrograms.</li>
+          <li><strong>A5.</strong> 72.</li>
+          <li><strong>A6.</strong> 62.5 ml/hr.</li>
+          <li><strong>A7.</strong> 37.5%.</li>
+          <li><strong>A8.</strong> 50 ml.</li>
+          <li><strong>A9.</strong> 2 ml.</li>
+          <li><strong>A10.</strong> 0.75 g.</li>
+        </ol>
+
+        <h2>Tips to Pass</h2>
+        <ul>
+          <li>Re-learn unit conversions cold (g → mg → mcg, L → ml).</li>
+          <li>Always double-check decimal places.</li>
+          <li>Use the formula: (Dose required ÷ Stock) × Volume.</li>
+          <li>Practise without a calculator for the first round.</li>
+          <li>Time yourself — most NHS tests are tight.</li>
+        </ul>
+
+        <h2>Take the full mock test</h2>
+        <p>
+          👉 
+          <Link
+            to="/quiz/$slug"
+            params={{ slug: "nhs-numeracy-mock-1" }}
+            className="font-semibold text-coral hover:underline"
+          >
+            Take full mock test here
+          </Link>
+        </p>
+
+        <p>
+          Explore more in <C slug="nhs">NHS & Healthcare Tests</C> or browse 
+          <T slug="nhs-numeracy">all NHS numeracy tests</T>.
+        </p>
+        <p>
+          Related reading: <B slug="nhs-numeracy-test-tips">NHS Numeracy Test Tips</B>.
+        </p>
+      </>
+    ),
+  },
+  {
+    slug: "nhs-interview-questions-and-answers-uk-guide",
+    title: "NHS Interview Questions and Answers (UK Guide)",
+    description:
+      "NHS interview questions and answers for 2026. Values-based interview tips, sample answers using STAR, and free NHS practice tests.",
+    excerpt:
+      "Values-based interviews catch out brilliant candidates. Here's how to use STAR — and the answers that actually land.",
+    datePublished: "2026-04-21",
+    author: "UK Test Hub Team",
+    readingMinutes: 8,
+    category: "NHS",
+    tags: ["NHS", "interview", "STAR"],
+    hero: heroNhs,
+    body: () => (
+      <>
+        <p>NHS interviews are usually values-based, mapped to the NHS Constitution: respect, dignity, commitment to quality, compassion, working together and improving lives. The best answers use the STAR framework (Situation, Task, Action, Result). Below are 10 of the most common NHS interview questions with strong-answer pointers.</p>
+
+        <h2>Practice Questions</h2>
+        <ol>
+          <li><strong>Q1.</strong> Why do you want to work for the NHS?</li>
+          <li><strong>Q2.</strong> Tell me about a time you handled a difficult patient or customer.</li>
+          <li><strong>Q3.</strong> How do you cope with stress?</li>
+          <li><strong>Q4.</strong> Give an example of teamwork in a healthcare setting.</li>
+          <li><strong>Q5.</strong> How would you handle a colleague who isn't pulling their weight?</li>
+          <li><strong>Q6.</strong> Describe a time you went above and beyond for someone.</li>
+          <li><strong>Q7.</strong> How do you stay updated in your field?</li>
+          <li><strong>Q8.</strong> Tell me about a time you made a mistake.</li>
+          <li><strong>Q9.</strong> How would you respond to a complaint?</li>
+          <li><strong>Q10.</strong> Why this trust specifically?</li>
+        </ol>
+
+        <h2>Answers &amp; Explanations</h2>
+        <ol>
+          <li><strong>A1.</strong> Tie to NHS values, name a personal driver, mention a specific service area.</li>
+          <li><strong>A2.</strong> Use STAR — focus on the calm, respectful Action and a positive Result.</li>
+          <li><strong>A3.</strong> Show insight: brief, specific coping strategies + when to ask for help.</li>
+          <li><strong>A4.</strong> Pick a real example showing communication, role clarity and outcome.</li>
+          <li><strong>A5.</strong> Show emotional intelligence — talk first, escalate only if needed.</li>
+          <li><strong>A6.</strong> Make it patient-focused, not heroic.</li>
+          <li><strong>A7.</strong> Mention CPD, nice.org.uk, journals or professional networks.</li>
+          <li><strong>A8.</strong> Be honest, focus on what you learned and changed.</li>
+          <li><strong>A9.</strong> Use the Trust's complaint policy framework: listen, apologise, act, learn.</li>
+          <li><strong>A10.</strong> Reference its values, services, recent CQC report, or strategic priorities.</li>
+        </ol>
+
+        <h2>Tips to Pass</h2>
+        <ul>
+          <li>Memorise NHS values — quote at least one in answers.</li>
+          <li>Prepare 5 STAR stories that flex across multiple questions.</li>
+          <li>Research the trust's CQC rating and recent news.</li>
+          <li>Wear smart-casual, NHS lanyard if you have one.</li>
+          <li>Bring 2 thoughtful questions for the panel.</li>
+        </ul>
+
+        <h2>Take the full mock test</h2>
+        <p>
+          👉 
+          <Link
+            to="/quiz/$slug"
+            params={{ slug: "nhs-numeracy-mock-1" }}
+            className="font-semibold text-coral hover:underline"
+          >
+            Practice your NHS numeracy mock here
+          </Link>
+        </p>
+
+        <p>
+          Explore more in <C slug="nhs">NHS & Healthcare Tests</C> or browse 
+          <T slug="nhs-values">all NHS values-based recruitment</T>.
+        </p>
+        <p>
+          Related reading: <B slug="nhs-numeracy-test-tips">NHS Numeracy Test Tips</B>.
+        </p>
+      </>
+    ),
+  },
+  {
+    slug: "nhs-literacy-test-practice-with-answers",
+    title: "NHS Literacy Test Practice (With Answers)",
+    description:
+      "Free NHS literacy test practice with worked answers. Reading comprehension, grammar and vocabulary — exam style for NHS recruitment 2026.",
+    excerpt:
+      "Comprehension, spelling and grammar — the NHS literacy test in 12 worked questions.",
+    datePublished: "2026-04-22",
+    author: "UK Test Hub Team",
+    readingMinutes: 6,
+    category: "NHS",
+    tags: ["NHS", "literacy", "comprehension"],
+    hero: heroNhs,
+    body: () => (
+      <>
+        <p>NHS literacy tests assess your ability to read, understand and respond to written information — vital for accurate notes, handovers and patient safety. Below are 12 practice items spanning comprehension, spelling and grammar.</p>
+
+        <h2>Practice Questions</h2>
+        <ol>
+          <li><strong>Q1.</strong> Choose the correctly spelled word: a) recieve b) receive c) recive</li>
+          <li><strong>Q2.</strong> Which is the correct sentence? a) The patient have arrived. b) The patient has arrived.</li>
+          <li><strong>Q3.</strong> Pick the correct synonym for "frequent": a) rare b) often c) sudden</li>
+          <li><strong>Q4.</strong> Choose the correct word: "The medication had no … on the patient." a) affect b) effect</li>
+          <li><strong>Q5.</strong> Which word is misspelled? "medecine, history, examine"</li>
+          <li><strong>Q6.</strong> Which is plural? a) datum b) data c) dattas</li>
+          <li><strong>Q7.</strong> Identify the verb: "The nurse documented the observations."</li>
+          <li><strong>Q8.</strong> Choose the correct: a) less patients b) fewer patients</li>
+          <li><strong>Q9.</strong> Which sentence is grammatically correct? a) Me and Sarah completed it. b) Sarah and I completed it.</li>
+          <li><strong>Q10.</strong> Choose the antonym of "acute": a) chronic b) intense c) urgent</li>
+          <li><strong>Q11.</strong> Pick the correct apostrophe use: a) the patients records b) the patient's records</li>
+          <li><strong>Q12.</strong> Choose the correctly punctuated: a) Stop! He's allergic. b) Stop, he's allergic.</li>
+        </ol>
+
+        <h2>Answers &amp; Explanations</h2>
+        <ol>
+          <li><strong>A1.</strong> b) receive.</li>
+          <li><strong>A2.</strong> b) The patient has arrived.</li>
+          <li><strong>A3.</strong> b) often.</li>
+          <li><strong>A4.</strong> b) effect (a noun here).</li>
+          <li><strong>A5.</strong> "medecine" — should be "medicine".</li>
+          <li><strong>A6.</strong> b) data.</li>
+          <li><strong>A7.</strong> documented.</li>
+          <li><strong>A8.</strong> b) fewer patients (countable nouns use "fewer").</li>
+          <li><strong>A9.</strong> b) Sarah and I completed it.</li>
+          <li><strong>A10.</strong> a) chronic.</li>
+          <li><strong>A11.</strong> b) the patient's records.</li>
+          <li><strong>A12.</strong> a) Stop! He's allergic.</li>
+        </ol>
+
+        <h2>Tips to Pass</h2>
+        <ul>
+          <li>Read NHS-style guidance daily for vocabulary exposure.</li>
+          <li>Master common NHS abbreviations and Latin medical roots.</li>
+          <li>Practise comprehension under time pressure.</li>
+          <li>Use spell-check at home but don't rely on it.</li>
+          <li>Always proofread written tasks before submission.</li>
+        </ul>
+
+        <h2>Take the full mock test</h2>
+        <p>
+          👉 
+          <Link
+            to="/quiz/$slug"
+            params={{ slug: "nhs-numeracy-mock-1" }}
+            className="font-semibold text-coral hover:underline"
+          >
+            Try the full NHS numeracy mock here
+          </Link>
+        </p>
+
+        <p>
+          Explore more in <C slug="nhs">NHS & Healthcare Tests</C> or browse 
+          <T slug="nhs-literacy">all NHS literacy tests</T>.
+        </p>
+        <p>
+          Related reading: <B slug="nhs-numeracy-test-tips">NHS Numeracy Test Tips</B>.
+        </p>
+      </>
+    ),
+  },
+  {
+    slug: "ielts-listening-practice-test-free",
+    title: "IELTS Listening Practice Test (Free With Answers)",
+    description:
+      "Free IELTS Listening practice test with answers and explanations. Section-by-section breakdown, common traps and a full mock test inside.",
+    excerpt:
+      "IELTS Listening can swing your overall band. Free practice with answers, plus the traps to avoid.",
+    datePublished: "2026-04-20",
+    author: "UK Test Hub Team",
+    readingMinutes: 8,
+    category: "English",
+    tags: ["IELTS", "listening", "free"],
+    hero: heroEnglish,
+    body: () => (
+      <>
+        <p>The IELTS Listening test is 30 minutes (plus 10 minutes transfer time on paper IELTS) with 40 questions across 4 sections that get progressively harder. Below are 10 sample-style questions modelled on each section, with answer pointers and the most common traps.</p>
+
+        <h2>Practice Questions</h2>
+        <ol>
+          <li><strong>Q1.</strong> Section 1 typically involves a conversation about: a) academic life b) everyday transactions c) lectures</li>
+          <li><strong>Q2.</strong> Section 4 typically involves: a) phone enquiry b) academic monologue c) social chat</li>
+          <li><strong>Q3.</strong> If asked for "no more than two words and/or a number", what's the limit?</li>
+          <li><strong>Q4.</strong> If the speaker says "twelve fifteen" — what time is it?</li>
+          <li><strong>Q5.</strong> Tip: should you fill answers as you hear them or wait?</li>
+          <li><strong>Q6.</strong> What's a common spelling pitfall?</li>
+          <li><strong>Q7.</strong> If you miss a question, what should you do?</li>
+          <li><strong>Q8.</strong> How is your final score reported?</li>
+          <li><strong>Q9.</strong> Can you go back to previous sections?</li>
+          <li><strong>Q10.</strong> How long do you get for transfer (paper IELTS)?</li>
+        </ol>
+
+        <h2>Answers &amp; Explanations</h2>
+        <ol>
+          <li><strong>A1.</strong> b) everyday transactions.</li>
+          <li><strong>A2.</strong> b) academic monologue.</li>
+          <li><strong>A3.</strong> Two words and a number maximum.</li>
+          <li><strong>A4.</strong> 12:15 (quarter past twelve).</li>
+          <li><strong>A5.</strong> Fill as you hear them — answers don't repeat.</li>
+          <li><strong>A6.</strong> British vs American spelling — IELTS accepts both, but be consistent.</li>
+          <li><strong>A7.</strong> Skip and move on; never let one question break your focus.</li>
+          <li><strong>A8.</strong> On a 0–9 band scale, in 0.5 increments.</li>
+          <li><strong>A9.</strong> No — once a section ends, it's gone.</li>
+          <li><strong>A10.</strong> 10 minutes.</li>
+        </ol>
+
+        <h2>Tips to Pass</h2>
+        <ul>
+          <li>Listen to BBC Radio 4 daily for British accents.</li>
+          <li>Practice predicting the next word using grammar.</li>
+          <li>Always read questions before the audio starts.</li>
+          <li>Watch out for distractors ("actually", "in fact", "however").</li>
+          <li>Take 5 full mocks before the real exam.</li>
+        </ul>
+
+        <h2>Take the full mock test</h2>
+        <p>
+          👉 
+          <Link
+            to="/quiz/$slug"
+            params={{ slug: "ielts-listening-mock-1" }}
+            className="font-semibold text-coral hover:underline"
+          >
+            Take full mock test here
+          </Link>
+        </p>
+
+        <p>
+          Explore more in <C slug="english">English Language Tests</C> or browse 
+          <T slug="ielts">all IELTS practice tests</T>.
+        </p>
+        <p>
+          Related reading: <B slug="ielts-tips-for-beginners">IELTS Tips for Beginners</B>.
+        </p>
+      </>
+    ),
+  },
+  {
+    slug: "ielts-grammar-test-questions-beginner-to-advanced",
+    title: "IELTS Grammar Test Questions (Beginner to Advanced)",
+    description:
+      "Free IELTS grammar practice questions from beginner to advanced. Tenses, conditionals, articles, prepositions — with worked answers.",
+    excerpt:
+      "Grammar gaps quietly drop your IELTS band. Fix them with these worked questions, beginner to advanced.",
+    datePublished: "2026-04-21",
+    author: "UK Test Hub Team",
+    readingMinutes: 7,
+    category: "English",
+    tags: ["IELTS", "grammar", "english"],
+    hero: heroEnglish,
+    body: () => (
+      <>
+        <p>Strong grammar lifts your IELTS Writing and Speaking band scores. Below are 12 questions spanning beginner to advanced — focus on getting the harder ones right and your overall band will improve quickly.</p>
+
+        <h2>Practice Questions</h2>
+        <ol>
+          <li><strong>Q1.</strong> Choose: She … to London every summer. (go / goes)</li>
+          <li><strong>Q2.</strong> Pick the past simple of "buy".</li>
+          <li><strong>Q3.</strong> Choose: If I … you, I would apply. (am / were)</li>
+          <li><strong>Q4.</strong> Identify the article: "… apple a day keeps the doctor away."</li>
+          <li><strong>Q5.</strong> Choose: He has lived here … 2010. (since / for)</li>
+          <li><strong>Q6.</strong> Pick the present perfect: "I … just finished." (have / am)</li>
+          <li><strong>Q7.</strong> Choose: Neither of the answers … correct. (is / are)</li>
+          <li><strong>Q8.</strong> Choose the passive: "The book … by millions." (read / is read)</li>
+          <li><strong>Q9.</strong> Identify the conditional type: "If she had studied, she would have passed."</li>
+          <li><strong>Q10.</strong> Choose: Despite … tired, he carried on. (be / being)</li>
+          <li><strong>Q11.</strong> Choose: He's the man … helped me. (which / who)</li>
+          <li><strong>Q12.</strong> Pick the correct tag: "You're coming, …?"</li>
+        </ol>
+
+        <h2>Answers &amp; Explanations</h2>
+        <ol>
+          <li><strong>A1.</strong> goes.</li>
+          <li><strong>A2.</strong> bought.</li>
+          <li><strong>A3.</strong> were (subjunctive).</li>
+          <li><strong>A4.</strong> An — vowel sound.</li>
+          <li><strong>A5.</strong> since (a point in time).</li>
+          <li><strong>A6.</strong> have.</li>
+          <li><strong>A7.</strong> is (singular subject).</li>
+          <li><strong>A8.</strong> is read.</li>
+          <li><strong>A9.</strong> Third conditional (past unreal).</li>
+          <li><strong>A10.</strong> being.</li>
+          <li><strong>A11.</strong> who (people).</li>
+          <li><strong>A12.</strong> aren't you?</li>
+        </ol>
+
+        <h2>Tips to Pass</h2>
+        <ul>
+          <li>Master tenses first — present perfect trips up most learners.</li>
+          <li>Drill conditionals; they appear in writing tasks constantly.</li>
+          <li>Read English news daily for natural usage.</li>
+          <li>Track recurring errors in a notebook.</li>
+          <li>Speak English aloud — fluency reinforces grammar.</li>
+        </ul>
+
+        <h2>Take the full mock test</h2>
+        <p>
+          👉 
+          <Link
+            to="/quiz/$slug"
+            params={{ slug: "ielts-listening-mock-1" }}
+            className="font-semibold text-coral hover:underline"
+          >
+            Practice IELTS Listening mock here
+          </Link>
+        </p>
+
+        <p>
+          Explore more in <C slug="english">English Language Tests</C> or browse 
+          <T slug="grammar">all grammar tests</T>.
+        </p>
+        <p>
+          Related reading: <B slug="ielts-tips-for-beginners">IELTS Tips for Beginners</B>.
+        </p>
+      </>
+    ),
+  },
+
 ];
 
 export const getPostBySlug = (slug: string) => blogPosts.find((p) => p.slug === slug);
