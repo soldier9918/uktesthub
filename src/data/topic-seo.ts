@@ -143,6 +143,14 @@ export const topicSeo: Record<string, TopicSeo> = {
           "Bring your provisional licence as photo ID. No phone, no watch, no bag, no notes inside the test room — there are lockers in the waiting area. Arrive 15 minutes early; latecomers forfeit the fee.",
         ],
       },
+      {
+        heading: "What happens after you pass",
+        body: [
+          "You'll get a printed pass certificate at the test centre. The certificate number is needed when you book your practical driving test through gov.uk. Keep both the printout and a photo of it on your phone — the DVSA loses certificates surprisingly often and a photo speeds up replacement.",
+          "Your theory pass is valid for two years. You must take and pass the practical driving test within that window or you'll have to retake the theory. The waiting list for practical tests in 2026 is 8–24 weeks depending on test centre, so book your practical the same day you pass theory.",
+          "Between theory and practical, keep practising hazard perception clips and re-read the Highway Code chapters on motorways and rural roads — examiners on the practical often ask 'show me, tell me' questions that mirror the theory syllabus.",
+        ],
+      },
     ],
     faqs: [
       { q: "What is the UK driving theory pass mark?", a: "43 out of 50 on multiple choice and 44 out of 75 on hazard perception. You must pass both at the same sitting." },
@@ -199,6 +207,27 @@ export const topicSeo: Record<string, TopicSeo> = {
           "Less common but high-scoring: animals in the road, slow-moving farm vehicles cresting a hill, pedestrians walking in the road where there's no pavement.",
         ],
       },
+      {
+        heading: "Reading the road like an examiner",
+        body: [
+          "Hazard perception is really 'commentary driving' in disguise. Trained driving instructors talk through the developing scene out loud as they drive: 'parked van on the left… could a child run out… cyclist ahead, leaving room… brake lights on the car at the junction'. Practise that habit on real journeys (as a passenger, not a driver) and you'll spot hazards 1–2 seconds earlier on the test, which is the difference between 3 marks and 5.",
+          "Watch for early cues: a head turning at a junction, a wheel turning slightly, brake lights flickering, a pedestrian's body weight shifting toward the kerb. The DVSA programmer marked the hazard 'developing' the moment that cue appears — not when it becomes obvious.",
+        ],
+      },
+      {
+        heading: "What to do if you fail hazard perception",
+        body: [
+          "Failing only the hazard perception part still means failing the whole theory test — you'll need to rebook the £23 fee and resit both parts (after a minimum three working days).",
+          "Diagnose the cause before resitting. If you scored under 30/75 you probably clicked too late or missed the developing cues; do twenty more practice clips with the commentary technique. If you scored 35–43, you're spotting hazards but mistiming clicks; one or two well-paced clicks per hazard, in the second the cue appears, will lift you over the line.",
+        ],
+      },
+      {
+        heading: "Equipment and test-room conditions",
+        body: [
+          "At the test centre you'll wear over-ear headphones supplied by Pearson VUE. Volume is set during the brief practice clip — set it loud enough to hear engine and tyre cues without it being uncomfortable. The mouse on the desk is a standard wired optical mouse; you can use either button to click.",
+          "Don't grip the mouse the entire time — your hand cramps and reaction time slips. Rest fingers loosely on the buttons and breathe normally between clips. There's a short forced gap between each clip; use it to relax your hand and reset focus.",
+        ],
+      },
     ],
     faqs: [
       { q: "What is the hazard perception pass mark?", a: "44 out of 75. You also need to pass the multiple-choice section (43/50) at the same sitting." },
@@ -253,6 +282,35 @@ export const topicSeo: Record<string, TopicSeo> = {
           "Use free flashcard apps for the 30 most-tested signs in the final week. Then take three full mocks under timed conditions to lock everything in.",
         ],
       },
+      {
+        heading: "Warning signs to know cold",
+        body: [
+          "Triangular warning signs cover most of the marks. The most-tested examples: 'school crossing patrol' (children walking, sometimes with the lollipop-stick variant), 'T-junction', 'staggered junction', 'roundabout ahead', 'level crossing with barrier', 'level crossing without barrier or gate', 'crossroads', 'two-way traffic', 'risk of grounding' (humpback bridge or steep ramp), and 'falling rocks'.",
+          "Memorise these as a set: every triangular sign points up; the only triangle that points down is the give-way sign, which is in a class of its own. If you see a triangle, slow down, scan and prepare to react.",
+        ],
+      },
+      {
+        heading: "Order signs and prohibitions",
+        body: [
+          "Circular signs with red borders prohibit. Common examples: 'no entry' (red circle, white horizontal bar), 'no overtaking' (two cars, red one on the right), 'no motor vehicles', 'no vehicles over X tonnes', 'no waiting', 'no stopping' (clearway — solid red disc with blue cross).",
+          "Blue circles compel. 'Turn left ahead', 'mini roundabout', 'pedestrian zone', 'cycle route only', 'tram route'. The Highway Code wording 'must' indicates a legal order, while 'should' is advisory — only signs in red and blue circles carry legal force.",
+        ],
+      },
+      {
+        heading: "Information, motorway and temporary signs",
+        body: [
+          "Rectangular signs inform. White with black border: regulations on parking. Green: primary route information. Blue: motorway information including service distances and lane closures. Brown: tourist destinations.",
+          "Temporary signs at roadworks use yellow backgrounds with black borders — they override permanent signs while the works are in place. Variable matrix signs above motorway lanes show real-time speed limits and lane closures (red X = lane closed; do not enter).",
+        ],
+      },
+      {
+        heading: "Road markings to learn alongside the signs",
+        body: [
+          "Road markings are tested with the same weight as signs. Across the carriageway: a single broken white line = give way (slow down and prepare to stop); double broken white lines = give way at a junction; a solid white STOP line = legal stop required.",
+          "Along the carriageway: short broken centre line = hazard ahead; long broken = warning of hazard; double white line with a solid line on your side = no overtaking unless safe and the broken line is on your side.",
+          "Yellow lines at the kerb: single = restricted parking (check the times on the nearby plate); double = no waiting at any time; double red = no stopping at any time on a Red Route. Zigzag yellow lines outside a school zone forbid stopping or parking even briefly.",
+        ],
+      },
     ],
     faqs: [
       { q: "How many road signs are tested in the DVSA exam?", a: "Around 7–10 of the 50 multiple-choice questions involve signs or road markings." },
@@ -296,6 +354,35 @@ export const topicSeo: Record<string, TopicSeo> = {
         heading: "Study plan",
         body: [
           "Week 1: read the Highway Code with focus on chapters covering motorcyclists, junctions, roundabouts and overtaking. Week 2: one mock per day, reviewing every wrong answer. Week 3: drill weak areas (most riders struggle with motorway rules and other-vehicle questions). Week 4: timed full mocks under exam conditions.",
+        ],
+      },
+      {
+        heading: "Module 1 and Module 2 — what theory unlocks",
+        body: [
+          "Theory pass opens the door to Module 1, the off-road manoeuvres test at a Multi-Purpose Test Centre (MPTC). It includes the slalom, figure-of-eight, slow ride, U-turn, controlled stop, hazard avoidance (the 'swerve test') and an emergency stop. The hazard avoidance is taken at 50 km/h (31 mph) for an A2 or full A licence — fail this and you can't progress.",
+          "Module 2 is the on-road ride: 30–40 minutes including independent riding using sat nav or signs, plus questions on safety and pillion passengers. Both modules use a radio earpiece so the examiner can give directions while you're moving.",
+        ],
+      },
+      {
+        heading: "Licence categories and age restrictions",
+        body: [
+          "AM (16+): mopeds up to 50cc and 28 mph. A1 (17+): light motorcycles up to 125cc and 11kW. A2 (19+): bikes up to 35kW (47 bhp), restricted from a higher-powered bike. A (24+ direct, or 21+ via two years on A2): full unrestricted licence.",
+          "The route most riders take: CBT at 17, ride a 125 with L plates while studying for theory, then take A2 at 19 or A at 24. Direct Access (DAS) at 24+ skips the A2 step but requires a 'big bike' Module 1 and 2 on a 595cc+ machine.",
+        ],
+      },
+      {
+        heading: "Gear, weather and visibility",
+        body: [
+          "Theory questions often test PPE. Helmets must meet UNECE 22.06 (or 22.05 for older stock). Gloves and jacket should carry CE EN 13594 and EN 17092 ratings. Hi-vis isn't legally required in the UK but examiners and the IAM strongly recommend it for visibility — most SMIDSY collisions happen in good daylight, not at night.",
+          "In wet weather, double your stopping distance. White lines, manhole covers, painted markings and diesel spills become slippery — brake on the un-painted tarmac wherever possible. In cold weather watch for shaded patches that may still be icy after sunny stretches have thawed.",
+        ],
+      },
+      {
+        heading: "Booking and theory-test logistics for riders",
+        body: [
+          "Book your motorcycle theory test through gov.uk — never a third-party reseller. Fee is £23. Slots are usually available within 2–4 weeks. Book early because you'll also need to plan around DAS course dates and Module 1/2 availability, which can be 6–12 weeks ahead at busy centres.",
+          "Bring your provisional licence as photo ID. No bag, no helmet, no jacket inside the test room — most centres have a coat rack and lockers in the lobby. Arrive 15 minutes early. Result is on screen immediately.",
+          "If you fail, the minimum wait before resitting is three working days. Most candidates who fail do so on hazard perception rather than the multiple-choice — book extra clip practice rather than re-reading the Highway Code if that's where you slipped.",
         ],
       },
     ],
@@ -351,6 +438,30 @@ export const topicSeo: Record<string, TopicSeo> = {
         body: [
           "Book at gov.uk and pay £50. You need a valid passport (or BRP) as ID. Take it with you on the day along with proof of address dated within the last three months (utility bill, bank statement, council tax).",
           "Arrive 15 minutes early. No phones, no notes, no bags in the test room. Result is on screen straight away and you'll get a confirmation letter to use with your ILR or citizenship application.",
+        ],
+      },
+      {
+        heading: "Chapter-by-chapter focus",
+        body: [
+          "Chapter 1 (Values and Principles): democracy, rule of law, individual liberty, tolerance of those with different faiths and beliefs. Short — read once and remember the four core values.",
+          "Chapter 2 (What is the UK): the four nations, capital cities, currencies, languages (English, Welsh, Gaelic, Scots, Irish). A handful of geography questions per test.",
+          "Chapter 3 (A long and illustrious history): the longest chapter and around 50% of test questions. Cover Stone Age to Iron Age, the Romans, the Anglo-Saxons, the Norman Conquest 1066, Magna Carta 1215, the Black Death, the Wars of the Roses, the Reformation, the Civil War, the Glorious Revolution, the Industrial Revolution, the Empire, both World Wars, post-war Britain, devolution.",
+          "Chapter 4 (A modern, thriving society): sport, music, art, literature, festivals, religion, food, places to visit. Memorise specific names: Bobby Moore, Andy Murray, Vivienne Westwood, Henry Moore, Dylan Thomas.",
+          "Chapter 5 (Government, law and your role): Parliament, the monarch, the PM, devolved governments, elections, the courts, civic duties. Learn how a Bill becomes an Act and the difference between criminal and civil law.",
+        ],
+      },
+      {
+        heading: "Date and name memorisation",
+        body: [
+          "The handbook lists dozens of specific dates. The DVSA — sorry, Home Office — favours these in questions: 1066 Norman Conquest, 1215 Magna Carta, 1314 Bannockburn, 1455–87 Wars of the Roses, 1534 Church of England formed, 1588 Spanish Armada defeated, 1605 Gunpowder Plot, 1707 Act of Union with Scotland, 1801 Act of Union with Ireland, 1832 Reform Act, 1914–18 First World War, 1918 women over 30 get the vote, 1928 equal voting age, 1939–45 Second World War, 1948 NHS founded, 1973 UK joins EEC, 1999 devolution, 2016 EU referendum.",
+          "Names to learn for the sport, art and culture sections: Roger Bannister (4-min mile), Sir Steve Redgrave (5 Olympic golds), Bradley Wiggins, Jessica Ennis-Hill, Damon Hill (F1 champion son of Graham Hill), Dame Kelly Holmes. For arts: William Hogarth, Joseph Turner, John Constable, Henry Moore, Lucian Freud, David Hockney.",
+        ],
+      },
+      {
+        heading: "Pitfalls and timing strategy",
+        body: [
+          "45 minutes for 24 questions is generous — that's nearly two minutes per question. Don't rush. Read every question twice; many include the words 'NOT' or 'except' that flip the meaning.",
+          "Most candidates who fail did so because they relied on free PDF question dumps online instead of the official handbook. The Home Office regularly retires and replaces questions, and the bank changes when a new edition is published. Always read the current handbook — the 3rd edition (2013) is still current as of 2026.",
         ],
       },
     ],
@@ -409,6 +520,29 @@ export const topicSeo: Record<string, TopicSeo> = {
           "If refused you can request a reconsideration (£372) within 28 days. Most successful reconsiderations turn on new evidence rather than legal argument.",
         ],
       },
+      {
+        heading: "Documents and evidence checklist",
+        body: [
+          "Before you start the AN form, gather: a current passport (and every previous passport covering the qualifying period), your BRP or eVisa share code, the original Life in the UK pass letter, your B1 English certificate or a degree certificate with transcript, three months of council tax or utility bills as proof of address, and a payslip or HMRC tax summary covering the qualifying years.",
+          "If you've changed name (marriage, deed poll), include the legal change document plus any old passports in the previous name. Missing documents are the second-biggest cause of refusal after absence miscalculations — caseworkers will not chase you, they simply refuse.",
+          "Spend an evening cross-checking your travel history against passport stamps, e-gate records, airline emails and bank card transactions abroad. The Home Office runs the same cross-check; even a forgotten three-day weekend in Dublin counts toward the 450-day absence limit.",
+        ],
+      },
+      {
+        heading: "Costs, timelines and what happens next",
+        body: [
+          "Total realistic spend: £1,630 application + £50 Life in the UK Test + £150–£200 SELT English test + £25–£35 biometrics enrolment at a UKVCAS service point. Budget around £1,900 end to end. Children added under 18 cost £1,214 each.",
+          "After submission you book a biometrics appointment within 45 days. Most decisions land in three to six months by email. If approved, the Home Office sends an invitation to the citizenship ceremony at your local council; you must attend within 90 days. Your naturalisation certificate is issued at the ceremony — keep it safe, it's the only document HM Passport Office accepts to issue your first British passport (£94.50 in 2026).",
+          "You become a British citizen the moment you take the Oath, not the moment the Home Office approves the application. Until the ceremony you're still on ILR.",
+        ],
+      },
+      {
+        heading: "Practising for the citizenship interview",
+        body: [
+          "Most adult naturalisation applications are decided on paper. A small number — usually where the caseworker has questions about character, identity or residency — are called for an interview at a regional Home Office centre. Questions are conversational and cover your application content: dates of trips abroad, employment history, family details, and basic Life in the UK material.",
+          "Use our practice questions to refresh the Life in the UK content in the months between passing the test and submitting the AN form. Caseworkers occasionally drop in informal questions like 'who is the current monarch?' or 'when is St George's Day?' to confirm the test was your own work, so don't let that knowledge fade.",
+        ],
+      },
     ],
     faqs: [
       { q: "How long does British citizenship take?", a: "Three to six months from a complete application. Complex cases (criminal record, long absences) can take 12 months." },
@@ -464,6 +598,30 @@ export const topicSeo: Record<string, TopicSeo> = {
           "If arrested you have the right to free legal advice, to have someone informed of your arrest, and to see the codes of practice. You can normally be held for up to 24 hours without charge (96 with magistrates' approval).",
         ],
       },
+      {
+        heading: "Driving, road and motoring law",
+        body: [
+          "You must hold a valid licence, valid insurance, MOT (for vehicles over three years old) and pay vehicle tax to drive on UK roads. Driving without insurance is a strict-liability offence: six penalty points, an unlimited fine and possible disqualification.",
+          "The drink-drive limit in England, Wales and Northern Ireland is 80mg of alcohol per 100ml of blood. Scotland is lower at 50mg. Drug-driving uses zero-tolerance limits for illegal drugs. Using a hand-held phone while driving is six points and a £200 fine even when stopped at lights.",
+          "New drivers (within two years of passing) lose their licence at six points, not 12. Speed-awareness courses can be offered for low-level speeding instead of points, but only once every three years.",
+        ],
+      },
+      {
+        heading: "Housing, tenancies and council tax",
+        body: [
+          "Most private tenants in England hold an Assured Shorthold Tenancy (AST). Landlords must protect your deposit in a government-approved scheme within 30 days, give you a 'How to Rent' guide, and provide a gas safety certificate, EPC and electrical safety report.",
+          "From the Renters' Rights Act 2024–25, Section 21 'no-fault' evictions are being phased out — landlords must now give a specific legal reason to end a tenancy. Tenants must give one month's notice on a periodic tenancy.",
+          "Council tax is paid by the occupier (tenant), not the landlord, on most lets. Single occupants get a 25% discount; full-time students are exempt. Non-payment can lead to bailiffs and, ultimately, prison — though prison is rare and reserved for wilful refusal to pay.",
+        ],
+      },
+      {
+        heading: "Family law and children",
+        body: [
+          "Marriage in England and Wales is legal at 18 (raised from 16 in 2023). Civil partnerships are open to same-sex and opposite-sex couples. Divorce since 2022 is no-fault: one party simply states the marriage has irretrievably broken down, with a 20-week reflection period before the conditional order.",
+          "Both parents named on a UK birth certificate (registered after December 2003) automatically have parental responsibility. Child maintenance is calculated by the Child Maintenance Service using a formula based on the paying parent's gross income.",
+          "It's illegal to smack a child in Scotland and Wales. In England and Northern Ireland, 'reasonable chastisement' remains a defence to common assault — but anything leaving a mark is criminal.",
+        ],
+      },
     ],
     faqs: [
       { q: "What are the nine protected characteristics?", a: "Age, disability, gender reassignment, marriage/civil partnership, pregnancy/maternity, race, religion or belief, sex, and sexual orientation." },
@@ -517,6 +675,27 @@ export const topicSeo: Record<string, TopicSeo> = {
         body: [
           "Each nation has a patron saint and a feast day: St George (England, 23 April), St Andrew (Scotland, 30 November), St David (Wales, 1 March), St Patrick (Northern Ireland, 17 March).",
           "National flowers: rose (England), thistle (Scotland), daffodil/leek (Wales), shamrock (Northern Ireland). The Union Jack combines the crosses of St George, St Andrew and St Patrick — Wales is not represented because it was already part of the Kingdom of England when the flag was designed.",
+        ],
+      },
+      {
+        heading: "Climate, weather and time",
+        body: [
+          "The UK has a temperate maritime climate: mild winters, cool summers, rain spread throughout the year. The west (Cornwall, Wales, west Scotland) is wetter; the east (East Anglia, Lincolnshire) is the driest. The Lake District and west Highlands get over 3,000mm of rain a year — enough to support temperate rainforest.",
+          "Standard time is Greenwich Mean Time (GMT, UTC+0). The clocks go forward one hour on the last Sunday of March (British Summer Time, BST, UTC+1) and back on the last Sunday of October. The Meridian line runs through Greenwich in south-east London — the basis of world time zones.",
+        ],
+      },
+      {
+        heading: "Crown Dependencies and Overseas Territories",
+        body: [
+          "The Isle of Man, Jersey and Guernsey are Crown Dependencies — self-governing possessions of the Crown, not part of the UK or EU. They have their own parliaments, currencies (pegged to sterling) and tax systems. British citizens have the right to live and work there but need permission for permanent residency.",
+          "Fourteen British Overseas Territories include Gibraltar, the Falkland Islands, Bermuda, the Cayman Islands and the British Virgin Islands. They are not part of the UK but residents can apply for British Overseas Territories citizenship and, in most cases, full British citizenship.",
+        ],
+      },
+      {
+        heading: "Devolution and how the nations are governed",
+        body: [
+          "Since 1999, Scotland, Wales and Northern Ireland have devolved governments with powers over health, education, transport and (in Scotland) some taxes. England has no separate parliament — its laws are made at Westminster. The Senedd (Welsh Parliament) sits in Cardiff Bay; the Scottish Parliament at Holyrood, Edinburgh; the Northern Ireland Assembly at Stormont, Belfast.",
+          "Reserved matters — defence, foreign affairs, immigration, monetary policy — remain at Westminster for all four nations. The UK Parliament can in theory legislate on any matter, but by convention does not legislate on devolved areas without consent.",
         ],
       },
     ],
@@ -579,6 +758,38 @@ export const topicSeo: Record<string, TopicSeo> = {
           "Bring your passport (the same one you used to book). Arrive 30 minutes early. Speaking may be on the same day or up to seven days later — check your booking confirmation.",
         ],
       },
+      {
+        heading: "Writing — Task 1 and Task 2 in detail",
+        body: [
+          "Academic Task 1 (20 minutes, 150 words): describe a chart, table, graph, map or process diagram. Use a four-paragraph structure: introduction (paraphrase the title), overview (the 2–3 most striking trends, no numbers), body 1 (detail with figures), body 2 (detail with figures). The overview is the single biggest scoring factor.",
+          "General Task 1 (20 minutes, 150 words): a letter — formal, semi-formal or informal. Always include the three bullet-point requirements from the prompt.",
+          "Task 2 (40 minutes, 250 words, both versions): an essay. Common types: opinion ('to what extent do you agree?'), discussion ('discuss both views'), problem-solution, two-part question. Plan five minutes, write thirty, proofread five. Aim for four paragraphs: introduction with a clear thesis, two body paragraphs with topic sentence + reason + example, conclusion that restates the thesis.",
+        ],
+      },
+      {
+        heading: "Speaking — what examiners reward",
+        body: [
+          "IELTS Speaking is judged on four equal criteria: Fluency & Coherence, Lexical Resource, Grammatical Range & Accuracy, and Pronunciation. The single biggest fluency killer is unnatural pauses while you search for a 'big' word — examiners would rather hear simple, fluent English than fancy stumbling.",
+          "Part 2 (long turn): you get one minute to plan, then talk for 1–2 minutes on a card prompt like 'describe a memorable journey'. Use the planning time to scribble a four-bullet outline (when, where, who, why memorable). The examiner will not interrupt during the long turn — keep going until they stop you.",
+          "Part 3: thematic discussion related to Part 2. The examiner pushes for opinions, comparisons and predictions. Practise extending each answer with 'because… for example… on the other hand…'.",
+        ],
+      },
+      {
+        heading: "One Skill Retake and result strategy",
+        body: [
+          "Since 2023 IELTS One Skill Retake lets candidates who took computer-delivered IELTS resit a single skill (Listening, Reading, Writing or Speaking) within 60 days, for around £170. This is a game-changer for candidates who hit their target overall but missed a single sub-score (e.g. NMC nursing requires Writing 6.5 — many band-7 candidates hit that with a retake).",
+          "Plan strategically: aim for your overall target on the first sitting and treat One Skill Retake as the safety net for the section that historically holds you back. Many UK universities now accept One Skill Retake; always confirm with the admissions office before relying on it.",
+        ],
+      },
+      {
+        heading: "Choosing the right SELT provider",
+        body: [
+          "Trinity GESE is the cheapest SELT for A1, A2 and B1 levels (around £150) and tests Speaking & Listening only — ideal if Reading and Writing aren't your strongest skills and you're applying for a visa that doesn't need them. Test centres are in most major UK cities.",
+          "LanguageCert IESOL covers all four skills, costs slightly more (£200–£260) and is accepted across the same visa categories. Pearson PTE Home is fully computer-based with results in 2–3 days — the fastest option for time-pressured applications.",
+          "IELTS for UKVI (Life Skills A1, A2, B1) is the option chosen by most candidates who already have IELTS prep materials at home. The Life Skills version costs around £170 and tests only Speaking & Listening, like Trinity.",
+          "Whichever you pick, book at a Home Office-approved centre — only the UKVI versions count. A standard IELTS or LanguageCert taken outside the SELT network will be rejected by the visa caseworker no matter how high your score.",
+        ],
+      },
     ],
     faqs: [
       { q: "What is the IELTS pass mark?", a: "There's no fixed pass mark — institutions set their own minimum band. Most UK universities require 6.5 overall." },
@@ -631,6 +842,35 @@ export const topicSeo: Record<string, TopicSeo> = {
         body: [
           "Book directly with the provider (Trinity, LanguageCert, Pearson). Fees are usually £150–£200 for SELT levels A1–B1. Take your in-date passport — the same one you'll use for your visa or citizenship application.",
           "Results come within 7 days. The certificate has no expiry for citizenship purposes, but UKVI usually wants it dated within two years of the visa application.",
+        ],
+      },
+      {
+        heading: "How the speaking test really works",
+        body: [
+          "For Trinity GESE B1 you'll have an 8–10 minute one-to-one conversation with a Trinity examiner. Part 1: short conversational questions about you, your family, your work or studies. Part 2: a topic chosen by you in advance — bring a one-page topic form with five points you want to talk about. Part 3: listening tasks where you respond to spoken prompts and then ask the examiner two questions of your own.",
+          "Examiners listen for fluency, accurate grammar, range of vocabulary, and appropriate interaction — including asking clear questions back. Most candidates who fail at B1 fail because they answer in single sentences instead of extending their answers with reasons, examples and feelings.",
+        ],
+      },
+      {
+        heading: "Reading and writing for higher SELT levels",
+        body: [
+          "B2, C1 and C2 SELTs add Reading and Writing papers. Reading typically tests skim and scan skills (matching headings, gap-fill, multiple choice) on three short passages of increasing difficulty. Writing tasks include a formal letter or email and a longer opinion essay of around 200–300 words.",
+          "For Writing, examiners reward clear paragraph structure, accurate linking phrases (however, therefore, on the other hand) and a range of tenses. Don't try to use rare vocabulary you're not sure of — accurate B1 English scores higher than ambitious-but-broken C1.",
+        ],
+      },
+      {
+        heading: "Spouse and partner visa English requirements",
+        body: [
+          "For the partner / spouse visa initial entry you need A1 English. To extend after 2.5 years you need A2. To switch to ILR after five years you need B1. Each step uses a SELT certificate, so plan your test bookings around your visa renewal dates.",
+          "The English requirement is waived if you're aged 65+, have a long-term physical or mental condition that prevents you taking the test, or if you're a national of a majority-English-speaking country. Always check the current Home Office exemption list before paying for a test.",
+        ],
+      },
+      {
+        heading: "Free and low-cost study resources",
+        body: [
+          "ETS publishes free TOEFL practice materials, including a full sample test, on its website. Khan Academy partners with ETS for guided lessons across all four sections — completely free. The Magoosh and Kaplan blogs publish hundreds of model essays and Speaking responses you can use as benchmarks.",
+          "For Listening practice, watch academic lectures on YouTube channels like CrashCourse, MIT OpenCourseware or TED-Ed — they mirror the academic register and pacing of TOEFL recordings. For Reading, read Scientific American or The Atlantic articles and time yourself: 700 words in 7 minutes is the TOEFL benchmark.",
+          "Two paid resources are worth the spend if your university requires 100+: the Official TOEFL iBT Tests Volume 1 and 2 from ETS (real retired tests) and the TPO (TOEFL Practice Online) packs. Avoid generic 'TOEFL prep' apps that use rewritten or scraped questions — the wording differs and you'll over-prepare for the wrong style.",
         ],
       },
     ],
@@ -687,6 +927,39 @@ export const topicSeo: Record<string, TopicSeo> = {
           "Bring your passport. Results arrive in 4–8 days. Scores are valid for two years.",
         ],
       },
+      {
+        heading: "Section-by-section strategy",
+        body: [
+          "Reading: skim the passage in 90 seconds before reading any questions. Note paragraph topics in the margin. Most question types map to a single paragraph — find the right paragraph first, then read it carefully. Insert-text and prose-summary questions test whole-passage understanding and are worth more marks each.",
+          "Listening: take structured notes using a T-chart (main idea on the left, examples on the right). Headphones supplied at the test centre — adjust volume during the equipment check, not mid-question. Each lecture is played once only.",
+          "Speaking: stick to a clear template. Independent task: state your opinion in one sentence, give two reasons with one example each, brief conclusion. Integrated tasks: paraphrase the reading first, then summarise how the lecture relates. Speak for the full time allowed — short answers cap your score.",
+          "Writing: Integrated task asks you to compare a reading passage with a lecture; aim for 150–225 words, four short paragraphs. Independent / Academic Discussion task is a forum-style response in 100+ words — give a clear opinion and one developed reason.",
+        ],
+      },
+      {
+        heading: "Computer adaptive scoring and TOEFL MyBest",
+        body: [
+          "Reading and Listening are not classical adaptive (you can review and change answers within a section), but the test draws from a graded item bank — getting questions right gives access to higher-difficulty items that are worth more marks.",
+          "TOEFL MyBest Scores combine your highest section scores from any TOEFL tests in the last two years. Most US universities and many UK ones accept MyBest, which means a weak Speaking on one sitting can be replaced by a strong Speaking on a later one. Always check the institution's policy.",
+        ],
+      },
+      {
+        heading: "Common pitfalls",
+        body: [
+          "Speaking too quietly or unclearly into the microphone — the scorer cannot ask you to repeat. Always do a mic check and aim slightly louder than feels natural.",
+          "Running long on Speaking integrated tasks. The recording stops at the time limit mid-sentence and the unfinished idea scores nothing. Practise hitting the conclusion with five seconds to spare.",
+          "Memorising essay templates word-for-word — TOEFL's AI rater detects template use and downgrades the score. Use a flexible structure, not pre-written paragraphs.",
+        ],
+      },
+      {
+        heading: "Common errors that block band 7",
+        body: [
+          "Subject–verb agreement with collective nouns: 'the government has decided' (singular in British English) but 'the team are arguing' is also accepted. Pick one register and stay consistent throughout an essay.",
+          "Countable vs uncountable nouns: 'information', 'advice', 'research', 'equipment', 'furniture', 'news' are all uncountable. Never say 'an information' or 'three researches'. Use 'a piece of information', 'some advice', 'three research projects' instead.",
+          "Word order in indirect questions: direct 'Where is the station?' becomes indirect 'Could you tell me where the station is?' — note the verb moves back. Examiners hear the wrong order constantly: 'Could you tell me where is the station?'",
+          "Linking words misused: 'although' starts a clause, not a sentence. 'However' starts a sentence and takes a comma. 'Despite' takes a noun ('despite the rain'); 'although' takes a clause ('although it rained'). Drilling these five rules alone lifts most students from band 6 to 6.5.",
+        ],
+      },
     ],
     faqs: [
       { q: "What TOEFL score do UK universities want?", a: "Most undergraduate programmes ask for 80–100 with section minimums of 20. Top postgraduate programmes ask for 100+." },
@@ -739,6 +1012,27 @@ export const topicSeo: Record<string, TopicSeo> = {
         body: [
           "Don't study grammar in isolation — apply it the same day. After a 20-minute lesson on present perfect, write five true sentences about your own life using the structure. The next day, write five more.",
           "For vocabulary, learn words in chunks of 4–8 in a single topic (e.g. environment, technology, education) so they reinforce each other. Re-test yourself after one day, three days and one week.",
+        ],
+      },
+      {
+        heading: "Punctuation that lifts a Writing score",
+        body: [
+          "Commas: separate items in a list (apples, pears and bananas), set off non-essential clauses (London, the capital of England, is...), and after fronted adverbials (However, the data shows...). Don't use a comma to join two complete sentences — that's the comma splice, the single most-marked error in IELTS Writing.",
+          "Semicolons join two closely related complete sentences ('It was raining; the picnic was cancelled'). Colons introduce a list, an explanation or a quotation. Apostrophes show possession (the student's book) or contraction (don't, it's). 'Its' (possessive) has no apostrophe; 'it's' always means 'it is' or 'it has'.",
+        ],
+      },
+      {
+        heading: "Sentence structures examiners reward",
+        body: [
+          "Three structures lift a band 6 piece to band 7. Conditionals: 'If house prices fell, more first-time buyers could enter the market.' Relative clauses: 'Students who live with their parents save thousands.' Cleft sentences: 'What concerns most parents is screen time, not homework.'",
+          "Use them sparingly — one or two of each per essay is enough. Sprinkling complex structures over weak grammar fundamentals (article, agreement, tense) doesn't fool examiners.",
+        ],
+      },
+      {
+        heading: "Building academic vocabulary",
+        body: [
+          "Learn the Academic Word List (AWL) — 570 word families that appear across academic subjects in English. Key examples: analyse, approach, area, assess, available, benefit, concept, consist, context, contract, create, data, define, derive, distribute, economy, environment, establish, estimate, evaluate, evidence, factor, function, identify, income, indicate, individual, interpret, involve, issue, labour, legal, legislate, major, method, occur, percent, period, policy, principle, process, require, research, respond, role, section, sector, significant, similar, source, specific, structure, theory, vary.",
+          "Look up each word in a learner's dictionary, note one example sentence, and use the word in two written sentences of your own. Recycle each word at least three times in the next two weeks for it to stick.",
         ],
       },
     ],
@@ -796,6 +1090,29 @@ export const topicSeo: Record<string, TopicSeo> = {
           "Results are released in mid-October. Most areas use the score for school allocation in March via the standard secondary school application (CAF) — your child's catchment school remains as a backup.",
         ],
       },
+      {
+        heading: "Question types in detail",
+        body: [
+          "Verbal Reasoning: 21 question types in the GL bank. The most common are word codes (substitute letters using a key), letter sequences, hidden words inside sentences, antonyms, synonyms, and 'cloze' (fill-in-the-blank) passages. Vocabulary depth matters — children should know words like 'placid', 'meander', 'reluctant' and 'feasible' by Year 5.",
+          "Non-Verbal Reasoning: shape rotation, mirror images, find-the-odd-one-out, complete-the-matrix and code-the-shape. The trick is methodical elimination, not pattern guessing. Encourage your child to explain their reasoning out loud — it dramatically reduces careless errors.",
+          "Maths: focus areas are fractions, decimals, percentages, ratio, area, perimeter, time and pure word problems. Answer is sometimes multiple-choice, sometimes a free-text number — practise both formats.",
+        ],
+      },
+      {
+        heading: "How school allocation actually works",
+        body: [
+          "Pass the 11+ and your child qualifies for grammar school admission — but does not automatically get a place. Allocation depends on each grammar school's oversubscription rules: catchment area, sibling priority, distance to school, sometimes Pupil Premium priority.",
+          "You apply through your local authority's Common Application Form (CAF), naming up to six schools in preference order, by the 31 October deadline. Always include a non-selective backup — most LAs will not allocate any place if all your preferences are full and you haven't named a fallback.",
+          "Appeals: if your child narrowly misses the qualifying score or doesn't get an offer at a school they qualified for, you can appeal in writing. Successful appeals usually rely on evidence of illness on the test day, an obvious anomaly in the score, or breach of the admission policy.",
+        ],
+      },
+      {
+        heading: "Wellbeing during 11+ year",
+        body: [
+          "11+ pressure on a 10-year-old is real. Watch for signs of stress: poor sleep, appetite changes, withdrawal from friends, frequent stomach aches before practice sessions. If they appear, scale back not up.",
+          "Build in genuine downtime — at least one whole evening a week with no 11+ work, plus weekend family time. Sport, music, drama and free play protect concentration during the actual test more than another worksheet does. Whatever the result, your child should know that the family will love them and back the school they end up at, grammar or comprehensive.",
+        ],
+      },
     ],
     faqs: [
       { q: "What's the 11+ pass mark?", a: "Most areas use a 'standardised score' rather than a fixed pass mark — typically 121+ out of 141 to qualify for grammar school admission. Selective areas like Kent set their own thresholds." },
@@ -848,6 +1165,30 @@ export const topicSeo: Record<string, TopicSeo> = {
         body: [
           "Showing no working on calculator papers — even right answers can lose method marks. Misreading the question (especially negatives, units and rounding instructions). Spending too long on one question instead of moving on.",
           "Calculator slips: forgetting BIDMAS / order of operations, mis-typing fractions, leaving the calculator in degrees mode for radian questions (or vice versa).",
+        ],
+      },
+      {
+        heading: "Topics most students lose marks on",
+        body: [
+          "Surds and indices: simplifying √48, rationalising 1/√2, fractional and negative powers. These appear on every Higher paper and are worth easy marks if you've drilled the rules.",
+          "Compound and reverse percentages: '£2,400 after a 20% increase — what was the original?' Most candidates divide by 1.2; many forget. Practise until the method is automatic.",
+          "Vectors and circle theorems: typically the hardest Higher questions, worth 4–6 marks each. Learn the eight named circle theorems (angle at centre, angle in semicircle, alternate segment, etc.) and the column-vector arithmetic for parallel and collinear questions.",
+          "On Foundation, the killer topics are area/perimeter of compound shapes, ratio sharing, and time-table reading. None are conceptually hard — they need slow, careful reading.",
+        ],
+      },
+      {
+        heading: "Formulas given vs formulas you must learn",
+        body: [
+          "Each board provides a small formula sheet at the front of the exam (since 2022). It includes the quadratic formula, sine and cosine rules, area of a trapezium, volume of cone/sphere, and the kinematics SUVAT equations.",
+          "You still must memorise: area and circumference of a circle, area of a triangle (½ × base × height), Pythagoras, the standard trigonometric ratios (SOH-CAH-TOA), exact trig values (sin/cos/tan of 0°, 30°, 45°, 60°, 90°), and the equation y = mx + c. Make a one-page formula card and review it daily for the last two weeks.",
+        ],
+      },
+      {
+        heading: "Resit options and life after GCSE",
+        body: [
+          "If you don't get a grade 4 in summer, you can resit in November (Edexcel and AQA both offer a November series for English Language and Maths only). Otherwise the next sitting is the following June.",
+          "Functional Skills Level 2 in Maths is accepted by most apprenticeship providers, employers and many colleges as an equivalent to GCSE grade 4. It's a different style of exam — entirely applied, no algebra — and many resit students find it a faster route to a pass than a GCSE retake.",
+          "Universities and competitive sixth forms usually still want GCSE Maths grade 4 (sometimes 5 or 6 for STEM A-levels). If university is in the picture, prioritise the GCSE retake over Functional Skills.",
         ],
       },
     ],
@@ -904,6 +1245,38 @@ export const topicSeo: Record<string, TopicSeo> = {
           "Examiners reward accurate short quotes far more than paraphrasing or long mis-remembered passages.",
         ],
       },
+      {
+        heading: "Language Paper question-by-question",
+        body: [
+          "Paper 1 Q1 'list four things': straight retrieval from a specified part of the text. Don't analyse, don't add — just lift four facts. Worth 4 marks; should take 4 minutes.",
+          "Q2 'how does the writer use language': pick two or three quotations, identify the technique (metaphor, simile, sensory imagery, sentence structure) and explain the effect on the reader. Worth 8 marks; spend 10 minutes.",
+          "Q3 'structure': how the writer has organised the text — opening focus, shifts in perspective, contrasts, ending. Most-overlooked question on the paper. Worth 8 marks; 10 minutes.",
+          "Q4 'evaluate' a statement about the text: agree, partly agree or disagree, with quotations and analysis. Worth 20 marks; 25 minutes.",
+          "Q5 writing: descriptive or narrative (Paper 1) or transactional/persuasive (Paper 2). Worth 40 marks (24 for content, 16 for technical accuracy). Spend the full 45 minutes — five planning, 35 writing, five proofreading.",
+        ],
+      },
+      {
+        heading: "How to plan an essay in five minutes",
+        body: [
+          "For Literature essays, use a simple structure: introduction with a thesis sentence, three main paragraphs (theme, character, context), conclusion that returns to the question. Each main paragraph = point, evidence (short quote), analysis (zoom in on a word), link to context (Jacobean society, Victorian poverty, post-war disillusionment).",
+          "Plan in bullets only — full sentences in the plan waste minutes. Aim for four short bullets per paragraph and you'll have 35 minutes left to write each 1.5–2 page response.",
+        ],
+      },
+      {
+        heading: "Reading widely and the Spoken Language endorsement",
+        body: [
+          "Wide reading is the single biggest predictor of a high English Language grade. Mix fiction (modern novels, classic short stories) with non-fiction (long-form journalism in the Guardian, BBC News, the Atlantic). Twenty pages a day is enough.",
+          "The Spoken Language endorsement (Pass / Merit / Distinction) is a 5–10 minute presentation to your class on a topic of your choice, followed by Q&A. It doesn't affect the 1–9 grade but appears on your certificate and matters for sixth-form English applications. Pick a topic you genuinely care about and rehearse out loud, not in your head.",
+        ],
+      },
+      {
+        heading: "Context — the marks examiners give for free",
+        body: [
+          "Literature mark schemes reward 'context' (Assessment Objective 3): the social, historical or literary background of the text. For An Inspector Calls, that means 1912 vs 1945 (Priestley wrote it post-war but set it pre-war to critique Edwardian capitalism). For A Christmas Carol, the Poor Laws and the Victorian workhouse system. For Macbeth, the Jacobean fear of regicide and witchcraft under James I.",
+          "Learn three or four key context points per text and weave one into each paragraph. Don't write a separate 'context paragraph' — that's how candidates lose AO3 marks. Embed the context inside your analysis: 'Dickens, writing in the wake of Edwin Chadwick's 1842 sanitary report, presents Scrooge's transformation as proof…'.",
+          "Examiner reports consistently note that strong AO3 distinguishes grade 7+ scripts from grade 5 scripts that otherwise have similar quote work.",
+        ],
+      },
     ],
     faqs: [
       { q: "Which GCSE English do I need to pass?", a: "English Language. Literature is required for some sixth forms and degrees but not for college funding or most jobs." },
@@ -956,6 +1329,27 @@ export const topicSeo: Record<string, TopicSeo> = {
         body: [
           "Read with your child every day, even in Year 6. Ten minutes of shared reading does more for SATs than an hour of worksheets. Discuss the text — what happened, what might happen next, what does this word mean.",
           "For maths, focus on times tables (up to 12×12 by Year 4) and confident column methods. Free resources from BBC Bitesize, White Rose Maths and the official gov.uk past papers cover everything you need.",
+        ],
+      },
+      {
+        heading: "GPS paper — what's actually tested",
+        body: [
+          "The Grammar, Punctuation and Spelling paper has 50 short questions in 45 minutes. Topics include word classes (noun, verb, adjective, adverb, preposition, conjunction, determiner, pronoun), subordinate clauses, modal verbs, the subjunctive ('if I were'), expanded noun phrases, fronted adverbials, parenthesis (using brackets, dashes or commas), apostrophes for possession and contraction, and direct vs reported speech.",
+          "The 20-question spelling test is read aloud by the teacher — children fill the missing word into a sentence on the answer sheet. Common spelling rules tested: 'i before e except after c', double-consonant before -ing, silent letters, and prefix/suffix changes (happy → happiness).",
+        ],
+      },
+      {
+        heading: "Year 4 Multiplication Check and the Phonics Screening",
+        body: [
+          "Beyond SATs, two other statutory checks happen in primary school. The Phonics Screening Check is in Year 1 (June): 40 words including 20 'pseudo-words' (alien words like 'voo' or 'glimp') to test pure phonic decoding. The pass mark is usually 32/40.",
+          "The Multiplication Tables Check is in Year 4 (June): 25 questions on times tables up to 12×12, six seconds per question, on a laptop or tablet. There's no formal pass mark but the school's average score is reported. Daily Times Tables Rock Stars practice from Year 3 makes a big difference.",
+        ],
+      },
+      {
+        heading: "Wellbeing and the school's role",
+        body: [
+          "SATs week can feel pressured even when your child is well-prepared. Schools usually provide a breakfast club, calm classrooms and limited 'normal' lessons that week. At home, keep evenings normal: regular bedtime, no late-night cramming, the same TV and screen-time rules. Anxious children sleep poorly and underperform.",
+          "Remember: SATs are mainly about school accountability. They don't appear on any future CV, university application or job. Your child's report card and teacher assessments matter far more for secondary school than any SATs scaled score.",
         ],
       },
     ],
