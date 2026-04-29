@@ -1,6 +1,6 @@
 // Long-form SEO content + FAQs for each category page.
 // Kept separate from categories.ts to keep that data lean; the category route
-// merges these by slug. Content is UK English, ~600-900 words per category.
+// merges these by slug. Content is UK English, ~1200 words per category.
 
 export type Faq = { q: string; a: string };
 export type SeoSection = { heading: string; body: string[] };
@@ -19,31 +19,47 @@ export const categorySeo: Record<string, CategorySeo> = {
     description:
       "Free UK Driving Theory practice tests for 2026. Realistic DVSA-style questions, hazard perception, road signs and motorcycle theory with full explanations.",
     intro: [
-      "Passing the UK Driving Theory Test on the first attempt takes more than memorising answers. The DVSA exam is split into 50 multiple-choice questions and a hazard perception clip section, and you need to do well on both to get your provisional pass certificate. Our free Driving Theory practice tests mirror the real exam format so you can practise with confidence.",
-      "Whether you're booking your first test, retaking after a near miss, or preparing for the Motorcycle Theory or Road Signs Test, you'll find unlimited mock exams, instant scoring and detailed explanations for every question. All questions are updated for 2026 and reflect the latest Highway Code revisions.",
+      "Passing the UK Driving Theory Test on the first attempt takes more than memorising answers. The DVSA exam is split into 50 multiple-choice questions and a hazard perception clip section, and you need to do well on both to walk away with a provisional pass certificate. Our free Driving Theory practice tests mirror the real exam format so you can train under realistic conditions, build pace, and learn the reasoning behind every answer rather than just the letter.",
+      "Whether you're booking your first test, retaking after a near miss, or preparing for the Motorcycle Theory or Road Signs Test, you'll find unlimited mock exams, instant scoring and detailed explanations. All questions are updated for 2026 and reflect the latest Highway Code revisions, including the changes to the hierarchy of road users and the new rules on overtaking cyclists and horse riders.",
     ],
     sections: [
       {
-        heading: "What you'll learn in our driving theory tests",
+        heading: "What the test actually involves",
         body: [
-          "Each mock paper covers the full DVSA syllabus: alertness, attitude, safety and your vehicle, safety margins, hazard awareness, vulnerable road users, other types of vehicle, vehicle handling, motorway rules, rules of the road, road and traffic signs, documents, accidents, and vehicle loading. Questions are written in plain UK English and follow the same multi-choice style you'll see on test day.",
-          "The hazard perception practice helps you spot developing hazards earlier, while the road signs quizzes drill the most commonly misidentified signs. If you're a learner motorcyclist, the dedicated Motorcycle Theory section covers gear, lifesaver checks, and CBT-relevant content.",
+          "The DVSA Driving Theory Test runs for around 90 minutes from check-in to your printed result slip. You'll sit at a Pearson VUE workstation with headphones and complete two parts back to back: 50 multiple-choice questions in 57 minutes, then a short break, then 14 video clips containing 15 developing hazards.",
+          "The multiple-choice section is computer-adaptive in style: questions are drawn from a much larger bank, so two candidates sitting next to each other will see very different papers. The pass mark is 43 out of 50. Hazard perception is scored 0–5 per developing hazard depending on how early you click, with a pass mark of 44 out of 75. You must pass both parts at the same sitting — fail one and you fail the whole test.",
+          "Bring your provisional licence, arrive 15 minutes early, and switch your phone off completely. Late arrivals lose the £23 fee and have to rebook on gov.uk.",
         ],
       },
       {
-        heading: "Tips to pass the UK Driving Theory Test first time",
+        heading: "What's covered in the syllabus",
         body: [
-          "Read each question twice. The DVSA loves to test your attention with subtle wording like 'should' versus 'must'. Don't assume — read the question and every option fully before answering.",
-          "Practise in timed mocks. The real exam gives you 57 minutes for 50 questions. Build the habit of pacing so you have time to flag and revisit tricky questions.",
-          "Use a current edition of the Highway Code alongside your mocks. When you get a question wrong, read the rule the question was testing — not just the answer.",
-          "Don't skip the hazard perception. Many learners pass the multiple-choice section but fail the hazard clips. Practise spotting movement at the periphery and clicking as soon as a hazard begins to develop, not when it's already obvious.",
+          "Each mock paper covers the full DVSA syllabus: alertness, attitude, safety and your vehicle, safety margins, hazard awareness, vulnerable road users, other types of vehicle, vehicle handling, motorway rules, rules of the road, road and traffic signs, documents, accidents, and vehicle loading.",
+          "Questions are written in plain UK English and follow the same multi-choice style you'll see on test day. Some questions have a single correct answer; others ask you to select two or three options. The on-screen wording will tell you exactly how many to pick — read it carefully.",
+          "The hazard perception practice helps you spot developing hazards earlier — a parked van with brake lights coming on, a child running between cars, a cyclist drifting toward a parked door. If you're a learner motorcyclist, the dedicated Motorcycle Theory section adds questions on gear, lifesaver checks, and CBT-relevant content.",
         ],
       },
       {
-        heading: "Why practice tests work",
+        heading: "How to study and pass first time",
         body: [
-          "Active recall — testing yourself rather than re-reading notes — is one of the most evidence-backed study techniques. Repeated mock papers expose gaps you didn't know you had, and instant feedback rewires your memory faster than passive revision.",
-          "Mocks also reduce exam anxiety. The first time you see a real DVSA-style question shouldn't be at the test centre. By the time you've completed 5 to 10 mocks, the format feels familiar and you can focus on the content.",
+          "Start at least four weeks before your test date and aim for 20–30 minutes of practice five days a week. Short, frequent sessions build long-term recall far more reliably than weekend cram marathons.",
+          "Read each question twice. The DVSA loves to test your attention with subtle wording like 'should' versus 'must'. Use a current edition of the Highway Code alongside your mocks — when you get a question wrong, look up the rule the question was testing rather than just memorising the answer.",
+          "Practise hazard perception on a laptop or tablet, not a phone. The clip windows are wider than your phone screen and you'll miss peripheral movement on a small display. Click once when you first spot a developing hazard, then again as it becomes more serious — but don't click constantly or in a rhythm, because the system flags this as cheating and gives you zero for that clip.",
+        ],
+      },
+      {
+        heading: "Common mistakes to avoid",
+        body: [
+          "The single biggest reason candidates fail is rushing the multiple-choice section and then running out of focus for hazard perception. Pace yourself: 57 minutes for 50 questions is more than a minute per question, so use it.",
+          "Other common pitfalls: confusing the 'two-second rule' (dry weather) with the 'four-second rule' (wet) and the 'ten-second rule' (icy); misreading triangular warning signs as circular order signs; and forgetting that motorway rules differ from dual carriageway rules on speed limits for towing vehicles.",
+          "If you fail, you must wait at least three working days before booking again, and you'll pay the full £23 fee each time. There's no limit on how many times you can sit it, but each fail adds delay before you can book your practical.",
+        ],
+      },
+      {
+        heading: "Why active practice testing works",
+        body: [
+          "Active recall — testing yourself rather than re-reading notes — is one of the most evidence-backed study techniques in cognitive science. Repeated mock papers expose gaps you didn't know you had, and the instant feedback after each question rewires your memory faster than passive revision ever can.",
+          "Mocks also dismantle exam anxiety. The first time you see a real DVSA-style question shouldn't be at the test centre. By the time you've completed five to ten mocks, the format feels familiar and you can focus your mental energy on the content rather than the interface. Candidates who finish 10+ free mocks before sitting the real test pass at noticeably higher rates than those who only read the Highway Code.",
         ],
       },
     ],
@@ -64,31 +80,46 @@ export const categorySeo: Record<string, CategorySeo> = {
     description:
       "Free Life in the UK Test practice for 2026. Official handbook coverage, British history, traditions and government with realistic 24-question mocks.",
     intro: [
-      "The Life in the UK Test is a 45-minute, 24-question exam that you must pass to apply for British citizenship or Indefinite Leave to Remain. The questions are drawn from the official Home Office handbook, Life in the United Kingdom: A Guide for New Residents, and you need to score at least 75% — that's 18 out of 24 — to pass.",
-      "Our free Life in the UK practice tests follow the official format exactly. Use them alongside the handbook to memorise dates, monarchs, traditions and the structure of UK government with confidence.",
+      "The Life in the UK Test is a 45-minute, 24-question exam that you must pass to apply for British citizenship or Indefinite Leave to Remain. The questions are drawn from the official Home Office handbook, Life in the United Kingdom: A Guide for New Residents, and you need to score at least 75% — that's 18 out of 24 — to pass. It sounds gentle on paper, but the dates, names and constitutional details trip up thousands of candidates every year.",
+      "Our free Life in the UK practice tests follow the official format exactly, with the same four question styles, the same 45-minute clock and the same difficulty distribution as the real exam. Use them alongside the handbook to memorise dates, monarchs, traditions and the structure of UK government with real confidence rather than vague familiarity.",
     ],
     sections: [
       {
-        heading: "What's covered in the Life in the UK Test",
+        heading: "What the test actually involves",
         body: [
-          "The handbook is divided into five chapters: The values and principles of the UK; What is the UK; A long and illustrious history; A modern, thriving society; and The UK government, the law and your role. Expect questions on Stonehenge, the Romans, the Tudors, World Wars, devolution, the monarchy, the courts and key British traditions.",
-          "Some questions ask for a single fact, others ask which of two statements is true, and a few are multiple-select. Our mocks cover all four official question styles.",
+          "You'll sit the test at one of around 30 approved centres across the UK. After ID verification you go straight to a workstation, work through a short tutorial, then begin the 45-minute exam. There's no break and no pause — once the timer starts, it runs until you submit or it expires.",
+          "Questions appear one at a time. You can flag any question to come back to and review your full paper at the end before final submission. The result is on screen within minutes and a printed pass letter is handed to you the same day. If you fail, you don't see your score; you only see that you didn't pass and which broad chapters you struggled with.",
         ],
       },
       {
-        heading: "Tips to pass the Life in the UK Test",
+        heading: "What's covered in the handbook",
         body: [
-          "Read the official handbook end to end at least twice. The test only draws from this book — no outside knowledge is needed and outside knowledge will not help.",
-          "Make a one-page timeline. The dates that trip people up most are 1066 (Norman conquest), 1215 (Magna Carta), 1707 (Act of Union), 1801 (UK formed) and 1928 (women got the vote on equal terms).",
-          "Practise mocks in 45-minute sittings. Build the habit of moving on from any question you're not sure about and returning at the end.",
-          "On test day, bring two original ID documents and arrive 30 minutes early. Late arrivals lose their fee and have to rebook.",
+          "The official handbook is divided into five chapters: The values and principles of the UK; What is the UK; A long and illustrious history; A modern, thriving society; and The UK government, the law and your role. The history chapter is the longest and the most heavily tested — expect questions on Stonehenge, the Romans, Anglo-Saxons, the Norman Conquest, the Tudors, the Civil War, the Industrial Revolution, both World Wars and post-war devolution.",
+          "The government chapter is dense but predictable: the role of the monarch, the Prime Minister, Parliament, the devolved administrations, the courts, the police and your civic responsibilities (voting, jury service, paying tax).",
+          "Some questions ask for a single fact, others ask which of two statements is true, and a few are multiple-select. Our mocks cover all four official question styles in the same proportion as the real test.",
         ],
       },
       {
-        heading: "Who needs to take the Life in the UK Test",
+        heading: "How to study and pass first time",
         body: [
-          "You must take and pass the test if you are applying for Indefinite Leave to Remain (settlement) or for British citizenship by naturalisation. Children under 18 and adults over 65 are usually exempt, as are people with a long-term physical or mental condition that prevents them from taking the test.",
-          "If you've already passed the test for ILR, you do not need to take it again for citizenship.",
+          "Read the official handbook end to end at least twice. The test only draws from this book — outside knowledge will not help and can actively hurt, because UK culture as you experience it day to day doesn't always match the handbook's wording.",
+          "Make a one-page timeline. The dates that trip people up most are 1066 (Norman conquest), 1215 (Magna Carta), 1707 (Act of Union with Scotland), 1801 (UK formed with Ireland) and 1928 (women got the vote on equal terms with men). Add 1066, 1215, 1314, 1485, 1534, 1649, 1707, 1801, 1832, 1918, 1928, 1948 and 1973 to a flashcard deck.",
+          "Practise mocks in 45-minute sittings. Build the habit of moving on quickly from anything you're not sure about and returning at the end with the time you've banked.",
+        ],
+      },
+      {
+        heading: "Who needs to take it (and who is exempt)",
+        body: [
+          "You must take and pass the test if you are applying for Indefinite Leave to Remain (settlement) or for British citizenship by naturalisation. Children under 18 and adults over 65 are usually exempt, as are people with a long-term physical or mental condition that prevents them from taking the test — a GP letter is required for medical exemption.",
+          "If you've already passed the test for ILR, you do not need to take it again for citizenship. Your pass certificate has no expiry date.",
+          "On test day, bring two original ID documents: one with your photo (passport, BRP or driving licence) and one showing your current address (utility bill or bank statement, less than three months old). A scan or photo on your phone will not be accepted.",
+        ],
+      },
+      {
+        heading: "Why active practice testing works",
+        body: [
+          "The Life in the UK Test is fundamentally a memory test. Reading the handbook is necessary but not sufficient — you need to retrieve the facts under time pressure, in a slightly unfamiliar phrasing, with three plausible-looking distractors next to the correct answer. That retrieval skill only develops through testing.",
+          "Mock papers also surface the chapters you've quietly skipped or skim-read. Most candidates feel confident on history and weak on government, then sit a mock and discover the opposite. Use your scores honestly: any chapter where you're scoring under 80% is your next study target.",
         ],
       },
     ],
@@ -109,30 +140,47 @@ export const categorySeo: Record<string, CategorySeo> = {
     description:
       "Free IELTS, TOEFL, ESOL and English grammar practice tests. Realistic listening, reading and writing exercises with instant marking and explanations.",
     intro: [
-      "If English isn't your first language, the IELTS, TOEFL and ESOL exams open the doors to UK study, work and visas. Our free English practice tests cover IELTS Academic and General Training, TOEFL iBT-style questions, ESOL Skills for Life and a library of grammar and vocabulary drills.",
-      "Whether you need a Band 6.5 for a UK university or a CEFR B1 for the spouse visa, regular practice in exam conditions is the fastest way to lift your score.",
+      "If English isn't your first language, the IELTS, TOEFL and ESOL exams open the doors to UK study, work and visas. Our free English practice tests cover IELTS Academic and General Training, TOEFL iBT-style questions, ESOL Skills for Life and a deep library of grammar and vocabulary drills — all written and marked to UK standards rather than American or international ones.",
+      "Whether you need a Band 6.5 for a UK university place, a CEFR B1 for the spouse visa, or a Pass at ESOL Entry 3 for a particular employer, regular practice in real exam conditions is the fastest and most reliable way to lift your score. There is no shortcut around the four skills — but there is a smart way to train each one.",
     ],
     sections: [
       {
+        heading: "What the tests actually involve",
+        body: [
+          "IELTS runs for 2 hours 45 minutes across four papers: Listening (30 minutes), Reading (60 minutes), Writing (60 minutes) and Speaking (11–14 minutes face-to-face or video). The Listening and Speaking sections are identical for Academic and General Training; only Reading and Writing differ.",
+          "TOEFL iBT is a single 2-hour computer-based session covering the same four skills with integrated tasks (read–listen–speak, listen–speak, read–listen–write). ESOL Skills for Life is taken at the level you need (Entry 1, Entry 2, Entry 3, Level 1 or Level 2) and is split into Reading, Writing, and Speaking & Listening — each can be passed separately.",
+        ],
+      },
+      {
         heading: "What's in our English practice library",
         body: [
-          "IELTS practice covers Listening (40 questions across 4 sections), Reading (40 questions, 3 passages), and Writing Task 1 and 2 prompts with model bands. TOEFL practice mirrors the iBT structure with reading passages and integrated speaking-style prompts. ESOL drills focus on everyday UK English at Entry 1, Entry 2, Entry 3, Level 1 and Level 2.",
-          "The grammar section is built for learners who plateau around B1. Each set focuses on a single sticking point — present perfect versus past simple, articles, prepositions of time, conditionals — with short explanations and 10-question quizzes.",
+          "IELTS practice covers Listening (40 questions across 4 sections), Reading (40 questions, 3 passages), and Writing Task 1 and 2 prompts with model bands and examiner-style comments on cohesion, lexical resource, grammatical range and task achievement.",
+          "TOEFL practice mirrors the iBT structure with academic reading passages, lecture-style listening, and integrated speaking and writing prompts. ESOL drills focus on everyday UK English at Entry 1 through Level 2 — filling in a job application, reading a tenancy agreement, leaving a voicemail.",
+          "The grammar section is built for learners who plateau around B1. Each set focuses on a single sticking point — present perfect versus past simple, articles, prepositions of time, conditionals, reported speech — with short explanations and 10-question quizzes that take five minutes each.",
         ],
       },
       {
         heading: "How to lift your IELTS or TOEFL score",
         body: [
-          "Practise daily, even if it's only 20 minutes. Steady exposure beats weekend cram sessions for language learning.",
-          "Read English news (BBC, Guardian, Reuters) every day. The IELTS and TOEFL reading passages are written in a similar register, and exposure to formal English speeds up your reading rate.",
-          "Record yourself answering speaking prompts on your phone. Listening back is uncomfortable but reveals fillers, hesitation and grammar errors you don't notice in real time.",
-          "For Writing Task 2, learn 5 reusable structures (problem-solution, two-sided opinion, compare-contrast) so you don't waste time planning under pressure.",
+          "Practise daily, even if it's only 20 minutes. Steady exposure beats weekend cram sessions for language learning — your brain consolidates vocabulary and grammar overnight, so daily contact compounds.",
+          "Read English news (BBC, Guardian, Reuters) every day. The IELTS and TOEFL reading passages are written in a similar formal register, and exposure to UK formal English speeds up your reading rate, which is often the single biggest constraint on a high band score.",
+          "Record yourself answering speaking prompts on your phone. Listening back is uncomfortable but reveals fillers, hesitation, and grammar errors you don't notice in real time. Aim for one recording per day in the two weeks before your test.",
+          "For Writing Task 2, learn 5 reusable structures (problem-solution, two-sided opinion, compare-contrast, advantages-disadvantages, agree-disagree) so you don't waste planning time under pressure.",
+        ],
+      },
+      {
+        heading: "Choosing the right test for your goal",
+        body: [
+          "For a UK university, IELTS Academic is the safest choice — accepted everywhere. TOEFL is also widely accepted by universities but is not on the Home Office Secure English Language Test (SELT) list, so it cannot be used for a UK visa.",
+          "For UK visas (work, family, settlement, citizenship), you need a SELT: IELTS for UKVI, Trinity SELT, or Pearson PTE Academic UKVI. The CEFR level you need depends on the visa: A1 for the initial spouse visa, A2 for extension after 2.5 years, and B1 for ILR and citizenship (paired with a Life in the UK Test pass).",
+          "For employers asking only for 'good English', ESOL Skills for Life Level 1 or Level 2 is usually enough and is significantly cheaper than IELTS.",
         ],
       },
       {
         heading: "Why test-style practice beats textbook study",
         body: [
-          "Textbooks teach English. Mock tests teach the exam. Both matter, but candidates who only study textbooks usually under-score by a full band or level because they aren't used to the time pressure or question styles. Use mocks to expose your weak skill (often listening or writing), then drill that skill with focused exercises.",
+          "Textbooks teach English. Mock tests teach the exam. Both matter, but candidates who only study textbooks usually under-score by a full band or level, because they aren't used to the time pressure or the specific question styles. The IELTS Listening section, for example, is famous for paraphrasing — the answer in the audio is almost never the exact word in the question.",
+          "Use mocks to expose your weak skill (often listening or writing), then drill that skill with focused exercises before returning to a full mock. Two weeks of this loop typically lifts an honest IELTS score by half a band.",
         ],
       },
     ],
@@ -152,29 +200,48 @@ export const categorySeo: Record<string, CategorySeo> = {
     description:
       "Free 11+ Exam, GCSE Maths, GCSE English and KS1/KS2 SATs practice tests. UK curriculum-aligned questions with instant marking and worked solutions.",
     intro: [
-      "From the 11+ entrance exam to GCSE finals, our free school practice tests are aligned to the UK national curriculum and the major exam boards (AQA, Edexcel, OCR, CEM and GL). Each mock is timed and gives instant feedback so children — and parents — can see exactly what to revise next.",
-      "Whether you're prepping for a grammar school place, a Year 6 SATs paper, or counting down to GCSE results day, regular short mocks beat long revision marathons every time.",
+      "From the 11+ entrance exam to GCSE finals, our free school practice tests are aligned to the UK national curriculum and the major exam boards (AQA, Edexcel, OCR, CEM and GL). Each mock is timed and gives instant feedback so children — and parents — can see exactly what to revise next, without having to mark anything by hand.",
+      "Whether you're prepping for a grammar school place, a Year 6 SATs paper, or counting down to GCSE results day, regular short mocks beat long revision marathons every time. Our content is designed for use at home, on a tablet or laptop, in 20- to 45-minute sessions that fit around school and family life.",
     ],
     sections: [
       {
+        heading: "What the exams actually involve",
+        body: [
+          "The 11+ varies dramatically by region. Most grammar schools use either the GL Assessment or CEM (Centre for Evaluation and Monitoring) test. GL papers test verbal reasoning, non-verbal reasoning, English and maths in clearly separated sections; CEM blends them. Both are sat in Year 6 and results are standardised by date of birth.",
+          "KS1 SATs (Year 2) are now informal teacher-led assessments. KS2 SATs (Year 6) are formal written papers in reading, SPaG (spelling, punctuation and grammar) and maths, sat in May.",
+          "GCSEs are sat in May and June of Year 11 across two or three papers per subject. Most subjects are assessed entirely by exam, with results on the third Thursday of August and grades from 9 (highest) to 1.",
+        ],
+      },
+      {
         heading: "What you'll find here",
         body: [
-          "11+ practice covers verbal reasoning, non-verbal reasoning, English comprehension and maths in both GL and CEM styles. GCSE Maths drills foundation and higher tier topics including algebra, geometry, statistics and number. GCSE English questions cover language analysis, creative writing and the literature anthology. SATs practice is split into KS1 (Year 2) and KS2 (Year 6) reading, SPaG and arithmetic.",
+          "11+ practice covers verbal reasoning, non-verbal reasoning, English comprehension and maths in both GL and CEM styles. We label every paper with the closest style so you can target your child's region.",
+          "GCSE Maths drills foundation and higher tier topics including algebra, geometry, statistics and number, with worked solutions for every question. GCSE English questions cover language analysis, creative writing and the literature anthology (set texts including An Inspector Calls, A Christmas Carol and the Power and Conflict poems).",
+          "SATs practice is split into KS1 (Year 2) and KS2 (Year 6) reading, SPaG and arithmetic, with the same time limits as the official papers.",
         ],
       },
       {
         heading: "Tips for pupils and parents",
         body: [
-          "Short, frequent practice beats long Sunday sessions. Aim for 20–30 minutes a day, four to five days a week.",
-          "After every mock, mark together and rewrite one question the child got wrong — explaining it back is the fastest way to lock learning in.",
+          "Short, frequent practice beats long Sunday sessions. Aim for 20–30 minutes a day, four to five days a week. Mark together immediately afterwards while the questions are still fresh.",
+          "After every mock, rewrite one question the child got wrong — explaining it back to you in their own words is the fastest way to lock learning in. This single habit can lift a child's score by 10–15% over a term.",
           "Time the mocks. Many bright children lose marks not because they don't know the answer but because they run out of time. Practise pacing.",
-          "Don't skip past papers. The wording style of GL, CEM, AQA and Edexcel is distinctive and pupils who've seen 5 or more past papers in their target style outperform those who haven't.",
+          "Don't skip past papers. The wording style of GL, CEM, AQA and Edexcel is distinctive, and pupils who've seen 5 or more past papers in their target style consistently outperform those who haven't.",
+        ],
+      },
+      {
+        heading: "Common mistakes to avoid",
+        body: [
+          "On 11+, the most common avoidable error is leaving questions blank. There's no negative marking on most papers, so an educated guess is always better than a blank.",
+          "On GCSE Maths, candidates routinely lose method marks by writing only the final answer. Show every step — even a wrong final answer with correct working can score 4 of 5 marks.",
+          "On GCSE English, going under the word count on the creative writing task is the most expensive mistake: examiners can only mark what's on the page, and a 200-word answer caps at a low band regardless of quality.",
         ],
       },
       {
         heading: "Why practice tests work for school exams",
         body: [
           "School exams reward two things: knowing the content and knowing the format. Most pupils have plenty of content from school but very little experience of the format under time pressure. Mock tests fix that gap, and they also build the calm confidence that prevents silly mistakes on the day.",
+          "Used well, mocks are also a diagnostic tool for parents. A consistent dip in non-verbal reasoning, or a pattern of running out of time on the second maths paper, tells you exactly where to focus the next two weeks of revision — far more usefully than a school report card.",
         ],
       },
     ],
@@ -194,29 +261,48 @@ export const categorySeo: Record<string, CategorySeo> = {
     description:
       "Free numerical, verbal, logical reasoning and Situational Judgement Test practice. Prepare for graduate schemes, civil service and corporate UK assessments.",
     intro: [
-      "Most UK employers — from the Civil Service Fast Stream to the Big Four, banks, consultancies and the NHS graduate scheme — use psychometric and aptitude tests as an early sift. Our free practice library covers numerical reasoning, verbal reasoning, logical (inductive and deductive) reasoning and Situational Judgement Tests so you can walk into your assessment fluent in the formats.",
+      "Most UK employers — from the Civil Service Fast Stream to the Big Four, banks, consultancies and the NHS graduate scheme — use psychometric and aptitude tests as an early sift. A weak score here ends your application before a human ever reads your CV. Our free practice library covers numerical reasoning, verbal reasoning, logical (inductive and deductive) reasoning and Situational Judgement Tests so you can walk into your assessment fluent in the formats.",
+      "These tests aren't measuring intelligence in any deep sense. They're measuring how quickly and accurately you can process unfamiliar information under pressure — which is a learnable skill. Every hour of focused practice typically lifts your percentile score, especially in the first 10–20 hours.",
     ],
     sections: [
       {
-        heading: "What types of test will I face",
+        heading: "What types of test you'll face",
         body: [
-          "Numerical reasoning tests give you a table or chart and ask you to perform percentage, ratio and trend calculations under time pressure (typically 60–90 seconds per question). Verbal reasoning tests give you a passage and ask whether statements are True, False or Cannot Say based only on the passage. Logical reasoning uses shape sequences. Situational Judgement Tests put you in a workplace scenario and ask which response is most and least effective.",
-          "The biggest providers are SHL, Cubiks, Saville, Korn Ferry, Talent Q and Cut-e (Aon). Question styles overlap heavily between providers.",
+          "Numerical reasoning tests give you a table or chart and ask you to perform percentage, ratio and trend calculations under tight time pressure (typically 60–90 seconds per question). Verbal reasoning tests give you a passage and ask whether statements are True, False or Cannot Say based only on the passage — never on outside knowledge.",
+          "Logical reasoning uses shape sequences (inductive) or rule-based puzzles (deductive). Situational Judgement Tests put you in a workplace scenario and ask which response is most and least effective.",
+          "The biggest providers are SHL, Cubiks, Saville, Korn Ferry, Talent Q and Cut-e (Aon). Question styles overlap heavily between providers, so practice transfers — but each has stylistic quirks worth learning.",
         ],
       },
       {
-        heading: "Tips to pass aptitude tests",
+        heading: "What employers are really measuring",
         body: [
-          "Practise with a stopwatch. Speed is at least as important as accuracy on most numerical and verbal tests.",
-          "On Cannot Say questions, only use information stated in the passage — never bring in real-world knowledge.",
-          "For SJTs, choose the response that fits the company's published values (almost every employer publishes them on their careers page).",
-          "Re-do every test you score below 70% on. Pattern recognition builds quickly with repetition.",
+          "Most graduate schemes set the pass mark at the 50th–70th percentile of their candidate pool, depending on competitiveness. Top consultancies and investment banks often require the 80th or even 90th percentile.",
+          "Crucially, your score is normed against a comparison group — usually 'UK graduates' or 'professionals' — so a 'good' raw score (e.g. 24 out of 30) might still be a poor percentile if the comparison group averaged 26.",
+          "Employers also look at your speed-to-accuracy ratio. Answering 28 of 30 questions correctly in the time limit usually scores higher than answering all 30 with 4 wrong — but answering only 15 with all correct scores poorly. Pace matters as much as accuracy.",
+        ],
+      },
+      {
+        heading: "How to study and pass",
+        body: [
+          "Practise with a stopwatch from day one. Speed is at least as important as accuracy on most numerical and verbal tests, and slow careful practice doesn't transfer to test-day conditions.",
+          "On Cannot Say questions, only use information explicitly stated in the passage — never bring in real-world knowledge, even when the statement is obviously true in real life. This is the single most common mistake on verbal reasoning.",
+          "For SJTs, choose the response that fits the company's published values (almost every employer publishes them on their careers page) and prioritise patient or customer outcomes over team comfort or speed.",
+          "Re-do every test you score below 70% on. Pattern recognition builds quickly with repetition — most candidates plateau because they keep doing new tests instead of revisiting weak ones.",
+        ],
+      },
+      {
+        heading: "Common mistakes to avoid",
+        body: [
+          "The biggest mistake is treating practice tests as a self-esteem exercise rather than a training tool. Take your wrong answers seriously: write down why you got each one wrong and what you'd do differently.",
+          "On numerical reasoning, candidates lose huge amounts of time on the first question by trying to read the entire data table. Skim the table briefly, read the question, then go back for the specific number you need.",
+          "On SJTs, picking the 'nice' answer over the 'effective' answer is a classic trap. Employers don't reward excessive hand-holding — they reward decisive action that protects the customer and respects the rules.",
         ],
       },
       {
         heading: "Why practice tests work for psychometrics",
         body: [
-          "Psychometric tests are deliberately unfamiliar — employers want to see how you cope with novelty under pressure. Practice removes the novelty so your real performance reflects your actual reasoning ability rather than your test-taking experience. Candidates who do 20+ mocks before a real assessment routinely score 1–2 standard deviations higher than first-timers.",
+          "Psychometric tests are deliberately unfamiliar — employers want to see how you cope with novelty under pressure. Practice removes the novelty so your real performance reflects your actual reasoning ability rather than your test-taking experience.",
+          "Candidates who do 20+ mocks before a real assessment routinely score 1–2 standard deviations higher than first-timers. That's often the difference between a rejection email and a video interview invite.",
         ],
       },
     ],
@@ -235,28 +321,48 @@ export const categorySeo: Record<string, CategorySeo> = {
     description:
       "Free practice tests for CSCS Card, SIA Door Supervisor, SERU TfL, Food Hygiene Level 2 and First Aid. Realistic UK-format questions with explanations.",
     intro: [
-      "Whether you're starting on a UK construction site, working in security, driving for TfL, or going into hospitality, you'll need a professional certification test pass. Our free CSCS, SIA, SERU TfL, Food Hygiene Level 2 and First Aid Theory mocks mirror the real exam format and give you instant explanations so you walk into your assessment ready.",
+      "Whether you're starting on a UK construction site, working in security, driving for TfL, or going into hospitality, you'll need a professional certification test pass before you can legally work. Our free CSCS, SIA, SERU TfL, Food Hygiene Level 2 and First Aid Theory mocks mirror the real exam format and give you instant explanations so you walk into your assessment ready.",
+      "These exams have unusually high pass marks — most sit between 80% and 94% — because they cover life-safety knowledge. There is no margin for guesswork, and unlike academic exams, you can't 'pick up the easy marks' to scrape through. Every question has to be answered with confidence.",
     ],
     sections: [
       {
-        heading: "What's covered",
+        heading: "What each test actually involves",
         body: [
-          "CSCS practice covers the operatives and specialist test syllabus including high-risk activities, working at height, plant and equipment, and emergency procedures. SIA mocks cover the Door Supervisor and Security Guard licence-linked exams. SERU TfL practice prepares you for the 36-question Safety, Equality and Regulatory Understanding assessment for private hire drivers. Food Hygiene Level 2 follows the standard CIEH/RSPH syllabus. First Aid mocks cover Emergency First Aid at Work theory.",
+          "The CSCS Health, Safety and Environment Test runs for 45 minutes with 50 multiple-choice questions, of which 12 are behavioural case studies. The pass mark is 47 out of 50.",
+          "The SIA Door Supervisor course is six days of training plus three exams; once passed, you apply to the SIA for your licence. The SERU TfL assessment is 36 multiple-choice questions in 90 minutes covering safety, equality and regulatory understanding for private hire drivers in London — the pass mark is 30 of 36.",
+          "Food Hygiene Level 2 is typically a 30-question online exam with a 75% pass mark. Emergency First Aid at Work theory is short but unforgiving — most providers test on the DRSABC sequence and the recovery position in detail.",
         ],
       },
       {
-        heading: "Tips to pass professional certification tests",
+        heading: "What's covered",
         body: [
-          "Don't underestimate them. The CSCS and SERU pass marks are high (80% and above) and rushed candidates fail more often than uninformed ones.",
-          "For SERU TfL, learn TfL terminology exactly — 'private hire' versus 'taxi', 'driver' versus 'operator'. Wording matters.",
-          "For Food Hygiene, memorise the temperature danger zone (8°C to 63°C) and the four Cs: Cleaning, Cooking, Chilling, Cross-contamination.",
-          "For First Aid, the order DRSABC (Danger, Response, Shout, Airway, Breathing, Circulation) is tested almost every time.",
+          "CSCS practice covers the operatives and specialist test syllabus including high-risk activities, working at height, plant and equipment, asbestos, fire prevention, manual handling and emergency procedures.",
+          "SIA mocks cover the Door Supervisor and Security Guard licence-linked exams: behavioural awareness, conflict management, physical intervention theory and the law on use of force. SERU TfL practice prepares you for the full Safety, Equality and Regulatory Understanding assessment, with a heavy focus on safeguarding and disability awareness.",
+          "Food Hygiene Level 2 follows the standard CIEH/RSPH syllabus: personal hygiene, allergens, the four Cs, temperature control, pests, cleaning and the Food Safety Act 1990. First Aid mocks cover Emergency First Aid at Work theory.",
+        ],
+      },
+      {
+        heading: "How to study and pass first time",
+        body: [
+          "Don't underestimate them. The CSCS and SERU pass marks are high (94% and 83%) and rushed candidates fail more often than uninformed ones. Allocate at least two weeks of evening study before booking.",
+          "For SERU TfL, learn TfL terminology exactly — 'private hire' versus 'taxi', 'driver' versus 'operator', 'pre-booked' versus 'plying for hire'. Wording matters and the exam will test it.",
+          "For Food Hygiene, memorise the temperature danger zone (8°C to 63°C), core cooking temperature (75°C for 30 seconds or equivalent) and the four Cs: Cleaning, Cooking, Chilling, Cross-contamination.",
+          "For First Aid, the order DRSABC (Danger, Response, Shout, Airway, Breathing, Circulation) is tested almost every time, alongside CPR ratios (30 compressions to 2 breaths for adults).",
+        ],
+      },
+      {
+        heading: "Common mistakes to avoid",
+        body: [
+          "On CSCS, the behavioural case studies trip up candidates who memorised the technical content. Read the scenario carefully, identify the most senior person responsible, and pick the response that escalates safely rather than the one that solves the problem fastest.",
+          "On SERU, candidates routinely fail the safeguarding section by choosing 'call the police immediately' for every scenario. The correct answer often involves contacting TfL or social services first.",
+          "On Food Hygiene, the most missed question is the difference between use-by and best-before dates: use-by is a safety date, best-before is a quality date.",
         ],
       },
       {
         heading: "Why practice tests work",
         body: [
-          "Professional tests are pass/fail with no second chance the same day. Practising the real format eliminates the surprise element and lets you focus on the content. Candidates who complete 3–5 full mocks before a real CSCS or SERU sitting pass at roughly twice the rate of unprepared candidates.",
+          "Professional tests are pass/fail with no second chance the same day, and most charge a re-sit fee of £30–£50. Practising the real format eliminates the surprise element and lets you focus on the content rather than the interface.",
+          "Candidates who complete 3–5 full mocks before a real CSCS or SERU sitting pass at roughly twice the rate of unprepared candidates. That's a small time investment for a meaningful improvement in the odds — and for SERU drivers, a meaningful protection of your livelihood.",
         ],
       },
     ],
@@ -276,28 +382,47 @@ export const categorySeo: Record<string, CategorySeo> = {
     description:
       "Free NHS numeracy, literacy, values-based recruitment and NMC CBT practice tests for nurses. Realistic UK healthcare assessment questions with explanations.",
     intro: [
-      "The NHS is the UK's largest employer and uses a battery of recruitment assessments — numeracy and literacy tests, values-based interviews, and the NMC CBT for overseas-trained nurses. Our free NHS practice tests cover all four so you can apply with confidence whether you're a school leaver, an internationally educated nurse, or a returning healthcare professional.",
+      "The NHS is the UK's largest employer and uses a battery of recruitment assessments — numeracy and literacy tests, values-based interviews, and the NMC Computer-Based Test (CBT) for overseas-trained nurses. A failed assessment can delay a career move by months or, for international nurses, delay a UK move by a full year.",
+      "Our free NHS practice tests cover all four assessment types so you can apply with confidence whether you're a school leaver, an internationally educated nurse, or a returning healthcare professional. Every question is written to UK standards using NHS terminology, NICE guidelines and the NMC Code rather than US or Commonwealth nursing conventions.",
     ],
     sections: [
       {
-        heading: "What's tested",
+        heading: "What the assessments actually involve",
         body: [
-          "NHS numeracy assessments cover drug calculations (mg/kg, IV infusions, drops per minute), basic arithmetic and percentages. NHS literacy tests cover comprehension, spelling and grammar. Values-Based Recruitment uses scenarios mapped to the NHS Constitution (compassion, respect, dignity, working together, commitment to quality of care). The NMC CBT for nurses contains 115 questions across four professional domains.",
+          "NHS numeracy and literacy assessments are usually delivered online before interview, with a 30–45 minute time limit. Drug calculations dominate the numeracy paper. Values-Based Recruitment is delivered either as a written scenario test or as part of a structured interview.",
+          "The NMC CBT is the formal entry test for overseas-trained nurses applying to register in the UK. It runs for four hours, contains 115 multiple-choice questions across four domains, and is taken at a Pearson VUE centre worldwide. You must pass the CBT before you can sit the OSCE in the UK.",
         ],
       },
       {
-        heading: "Tips to pass NHS assessments",
+        heading: "What's tested",
         body: [
-          "For drug calculations, always write out the formula (Required dose ÷ Stock dose × Stock volume) and double-check your decimal place.",
-          "For values-based questions, anchor every answer in patient safety and the 6Cs (Care, Compassion, Competence, Communication, Courage, Commitment).",
-          "For the NMC CBT, focus revision on UK-specific practice (NICE guidelines, the Mental Capacity Act, safeguarding) — overseas nurses usually find the clinical content easier than the UK legal and ethical context.",
-          "Bring a calculator to drug-calc tests if permitted. The NMC CBT does not allow calculators on numeracy questions, so practise mental maths.",
+          "NHS numeracy assessments cover drug calculations (mg/kg, IV infusions, drops per minute), basic arithmetic, percentages, fluid balance and unit conversions.",
+          "NHS literacy tests cover comprehension, spelling, grammar and the ability to summarise written information accurately. Many tests include a passage-and-questions section based on a clinical scenario.",
+          "Values-Based Recruitment uses scenarios mapped to the NHS Constitution (compassion, respect, dignity, working together, commitment to quality of care). The NMC CBT covers four professional domains: Professional Values, Communication and Interpersonal Skills, Nursing Practice and Decision-Making, and Leadership, Management and Team Working.",
+        ],
+      },
+      {
+        heading: "How to study and pass",
+        body: [
+          "For drug calculations, always write out the formula (Required dose ÷ Stock dose × Stock volume) and double-check your decimal place. Most failures come from misplaced decimals, not wrong formulas.",
+          "For values-based questions, anchor every answer in patient safety and the 6Cs (Care, Compassion, Competence, Communication, Courage, Commitment). When in doubt, choose the answer that protects the patient first and the team second.",
+          "For the NMC CBT, focus revision on UK-specific practice (NICE guidelines, the Mental Capacity Act, safeguarding, Duty of Candour) — overseas nurses usually find the clinical content easier than the UK legal and ethical context.",
+          "Bring a calculator to drug-calc tests if permitted. The NMC CBT does not allow calculators on numeracy questions, so practise mental maths and long-division on paper.",
+        ],
+      },
+      {
+        heading: "Common mistakes to avoid",
+        body: [
+          "On numeracy, a careless decimal place is the single biggest cause of failure. Always double-check by estimating the answer first — a vial of 50mg in 5ml giving a 25mg dose should be 2.5ml, not 0.25ml or 25ml.",
+          "On values questions, candidates often pick the answer that 'keeps the team happy' over the answer that protects the patient. Patient safety always wins, even if it means escalating against a colleague's wishes.",
+          "On the NMC CBT, running out of time on the final 30 questions is common because candidates over-think the early ones. Aim for 90 seconds per question and flag anything that takes longer.",
         ],
       },
       {
         heading: "Why practice tests work for NHS recruitment",
         body: [
-          "NHS recruitment is high-volume and time-pressured for both candidates and hiring panels. Mocks help you avoid the most common reasons for rejection: a careless drug-calc error, a values answer that prioritises the team over the patient, or a mistimed CBT attempt. Twenty hours of mock practice typically lifts NMC CBT first-attempt pass rates from around 70% to over 85%.",
+          "NHS recruitment is high-volume and time-pressured for both candidates and hiring panels. Mocks help you avoid the most common reasons for rejection: a careless drug-calc error, a values answer that prioritises the team over the patient, or a mistimed CBT attempt.",
+          "Twenty hours of mock practice typically lifts NMC CBT first-attempt pass rates from around 70% to over 85% — and given a CBT re-sit costs £83 plus the Pearson VUE booking delay, that's a meaningful return on free practice.",
         ],
       },
     ],
@@ -317,19 +442,36 @@ export const categorySeo: Record<string, CategorySeo> = {
     description:
       "Light-hearted UK quizzes: How British Are You, UK slang quiz and a fresh general knowledge daily quiz. Test your UK culture knowledge for free.",
     intro: [
-      "Not every quiz needs to be life-or-death. Our fun UK quiz library is for the days when you want to test your slang, your sense of British humour, or just see if you really do know your queue etiquette. Quick, free and a little bit silly.",
+      "Not every quiz needs to be life-or-death. Our fun UK quiz library is for the days when you want to test your slang, your sense of British humour, or just see if you really do know your queue etiquette. Quick, free and a little bit silly — perfect for a coffee break, a long bus journey, or settling a debate with a flatmate.",
+      "Behind the comedy, these quizzes are also genuinely good for your brain. Short, low-stakes recall is the same study technique that powers our serious test prep, just with sillier subject matter. You'll be surprised how much you actually know — and how much you confidently get wrong.",
     ],
     sections: [
       {
         heading: "What's in the fun quiz library",
         body: [
-          "How British Are You? is a 10-question lifestyle quiz covering tea, weather small talk, queueing and Bank Holidays. UK Slang Quiz tests your knowledge of regional vocabulary from 'mardy' (Midlands) to 'bairn' (North East and Scotland). The General Knowledge Daily Quiz refreshes every 24 hours so you've always got something new to play.",
+          "How British Are You? is a 10-question lifestyle quiz covering tea, weather small talk, queueing, Bank Holidays, biscuits and the unspoken rules of pub etiquette. UK Slang Quiz tests your knowledge of regional vocabulary from 'mardy' (Midlands) and 'minted' (general UK) to 'bairn' (North East and Scotland) and 'bevvy' (everywhere with a pub).",
+          "The General Knowledge Daily Quiz refreshes every 24 hours so you've always got something new to play. Topics span UK history, geography, music, sport, telly and current affairs — calibrated to be fair to a thoughtful adult without being insulting to anyone who actually paid attention at school.",
+        ],
+      },
+      {
+        heading: "Who they're for",
+        body: [
+          "These quizzes are aimed at anyone who lives in the UK, has lived in the UK, or fancies the UK from afar. Family-friendly and free of profanity, they work for kids, grandparents, pub teams, classroom warm-ups and overseas friends curious about British culture.",
+          "If you're studying for the Life in the UK Test, the General Knowledge Daily Quiz is also a low-pressure way to soak up cultural context that the official handbook doesn't cover.",
+        ],
+      },
+      {
+        heading: "How to play",
+        body: [
+          "Pick a quiz, work through the 10–24 questions at your own pace, and get a shareable score at the end. There's no time limit, no sign-up and no penalty for guessing.",
+          "If you want to play with friends, copy the share link from the result page — they'll see the same questions in the same order so you can compare scores fairly.",
         ],
       },
       {
         heading: "Why fun quizzes are good for your brain",
         body: [
-          "Short, low-stakes quizzes are great for taking a screen break without going full-on doom-scroll. They activate the same active-recall pathways as exam revision, but with no pressure. Perfect for a coffee break or the bus home.",
+          "Short, low-stakes quizzes are great for taking a screen break without going full-on doom-scroll. They activate the same active-recall pathways as exam revision, but with no pressure and no marking. Perfect for a coffee break, the bus home, or a wind-down after work.",
+          "Regular quiz play is also linked in the cognitive science literature to better long-term retention of general knowledge — your brain treats retrieval as a vote of importance for whatever it just dredged up. So the more pub trivia you do, the more pub trivia you'll know. Funny how that works.",
         ],
       },
     ],

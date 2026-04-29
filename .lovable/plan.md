@@ -1,112 +1,64 @@
 ## Goal
 
-Add the 30 SEO article titles from your brief as fully-written blog posts in `src/data/blog.tsx`, each following the structure you specified:
+Two things on every category page (e.g. `/category/driving`, `/category/citizenship`, `/category/professional`, `/category/nhs`, `/category/english`, `/category/education`, `/category/career`, `/category/fun`):
 
-1. Intro (100–150 words)
-2. Practice Questions (10–20)
-3. Answers + explanations
-4. Tips to pass
-5. CTA: "👉 Take full mock test here" linking to a `/quiz/...` slug
-6. Internal links to the relevant `/category/...` and `/topic/...` pages
+1. **Expand the long-form SEO content to ~1200 words per category** (currently 600–900). The "About the …" section is too thin.
+2. **Improve visual presentation** of those paragraphs — clearer headings, real spacing between sections, better hierarchy, and pull-out elements so it doesn't read as one slab of text.
 
-These will appear automatically on `/blog` (the index already maps `getAllPosts()`) and at `/blog/$slug`. No route, layout, or component changes needed.
+## Scope
 
-## What gets added
+Edit only:
+- `src/data/category-seo.ts` — rewrite/expand the `intro` and `sections` for all 8 categories to land at **~1200 words each** (±50). FAQs are already strong; I'll leave them alone.
+- `src/routes/category.$slug.tsx` — improve the `<article>` block that renders `seo.intro` and `seo.sections` so the typography reads as a proper editorial article, not a wall of text.
 
-All 30 articles, written in full (intro + practice Qs + answers + tips + CTA), grouped by section:
+No other files, no new routes, no new dependencies.
 
-**Driving Theory (10)** — hero: `cat-hero-driving.jpg`, category `"Driving"`
-1. `uk-driving-theory-questions-2026` — UK Driving Theory Questions 2026 (Free Practice Test)
-2. `50-uk-road-signs-you-must-know` — 50 UK Road Signs You Must Know (With Meanings)
-3. `driving-theory-test-uk-complete-guide` — Driving Theory Test UK: Complete Guide to Pass First Time
-4. `hardest-uk-driving-theory-questions` — Hardest UK Driving Theory Questions (With Answers)
-5. `uk-hazard-perception-test-tips` — UK Hazard Perception Test Tips to Pass Easily
-6. `driving-theory-mock-test-uk` — Driving Theory Mock Test UK (Real Exam Questions)
-7. `uk-road-signs-quiz-100-percent` — UK Road Signs Quiz: Can You Get 100%?
-8. `most-common-driving-theory-mistakes` — Most Common Driving Theory Mistakes (UK Learners)
-9. `uk-driving-theory-pass-mark-explained` — UK Driving Theory Pass Mark Explained (2026 Update)
-10. `free-driving-theory-practice-test-uk` — Free Driving Theory Practice Test UK (Updated 2026)
+## Content expansion (per category, target ~1200 words)
 
-**Life in the UK (10)** — hero: `cat-hero-citizenship.jpg`, category `"Citizenship"`
-11. `life-in-the-uk-test-questions-and-answers-2026`
-12. `50-life-in-the-uk-questions-you-must-know`
-13. `hardest-life-in-the-uk-test-questions`
-14. `life-in-the-uk-test-practice-free`
-15. `uk-citizenship-test-guide-pass-first-time`
-16. `life-in-the-uk-test-pass-mark-explained`
-17. `british-citizenship-test-questions-2026`
-18. `how-to-pass-life-in-the-uk-test-quickly`
-19. `life-in-the-uk-mock-test-2026-edition`
-20. `common-life-in-the-uk-test-mistakes-to-avoid`
+I'll keep the existing voice and facts and add depth, not filler. For each of the 8 categories I'll grow `intro` to 2 short paragraphs (~180 words) and expand `sections` from 3 to **5 sections**, each with 2–3 paragraphs:
 
-**CSCS / Job Tests (5)** — hero: `cat-hero-career.jpg`, category `"Careers"`
-21. `cscs-test-questions-and-answers-2026`
-22. `cscs-mock-test-free-uk`
-23. `how-to-pass-cscs-test-first-time`
-24. `most-common-cscs-test-questions-explained`
-25. `cscs-card-test-practice-questions-uk`
+1. **What the test actually involves** — exam structure, format, timing, marking
+2. **What's covered (syllabus / topics)** — full breakdown
+3. **How to study and pass first time** — actionable tips, study plan
+4. **Common mistakes and pitfalls** — what trips most candidates up
+5. **Why active practice testing works** — the "method" section, evidence-based
 
-**NHS / Careers (3)** — hero: `cat-hero-nhs.jpg`, category `"NHS"`
-26. `nhs-numeracy-test-questions-and-answers`
-27. `nhs-interview-questions-and-answers-uk-guide`
-28. `nhs-literacy-test-practice-with-answers`
-
-**IELTS / English (2)** — hero: `cat-hero-english.jpg`, category `"English"`
-29. `ielts-listening-practice-test-free`
-30. `ielts-grammar-test-questions-beginner-to-advanced`
-
-## Article structure (applied to every post)
-
-Each post body uses this exact skeleton so the SEO recipe from your brief is consistent:
-
+Word budget per category, roughly:
 ```text
-<intro 100–150 words, with primary keyword in first sentence>
-
-<h2>Practice Questions</h2>
-<ol> 10–15 numbered MCQs with 3–4 options each </ol>
-
-<h2>Answers & Explanations</h2>
-<ol> matching numbered answers, each with a 1–3 sentence explanation </ol>
-
-<h2>Tips to Pass</h2>
-<ul> 5–7 actionable tips </ul>
-
-<h2>Take the full mock test</h2>
-👉 <Link to /quiz/...-mock-1> Take full mock test here </Link>
-
-<p>See more in <C slug="driving">Driving & Transport</C> · <T slug="driving-theory">all driving theory tests</T></p>
+Intro            ~180 words
+5 sections × 2-3 paras = ~1000 words
+Total            ~1200 words ✓
 ```
 
-## Internal linking (per your strategy)
+All UK English. All facts already in the file are preserved; I only add depth (e.g. for Driving I'll expand on Highway Code chapters, hazard perception scoring mechanics, and re-test rules; for Life in the UK I'll add more on the handbook chapters, exempt categories, and what to do if you fail).
 
-Every article links to:
-- the relevant **category** page via `<C slug="...">` (driving, citizenship, english, careers, nhs, education)
-- the relevant **topic** page via `<T slug="...">` (driving-theory, road-signs, hazard-perception, life-in-the-uk, ielts, etc.)
-- a real **mock quiz** via `<Link to="/quiz/$slug" params={{ slug: "driving-theory-mock-1" }}>` for the CTA
-- 1–2 sibling **blog** posts via `<B slug="...">` for topical clusters (e.g. the 10 driving articles cross-link)
+## Visual presentation changes (`src/routes/category.$slug.tsx`)
 
-I'll only link to quiz slugs that exist in `src/data/mocks/` (currently `seru.json`; for driving/life-in-uk/cscs/etc. I'll point to the canonical `*-mock-1` slug shape that `listMockSlots` already generates — these resolve through the existing quiz route once the JSON is added; until then, the link still renders, just like other topic links).
+Current rendering is one `<article class="prose">` block with `<h2>`, `<h3>`, `<p>` flowing top to bottom. Problems: section breaks aren't strong enough, intro doesn't stand apart, and at 1200 words it'll feel heavy.
 
-## Metadata for each post
+Changes inside the existing SEO `<section>`:
 
-Every post gets:
-- `description` — 150–160 chars, keyword-rich (used for `<meta>` and OG)
-- `excerpt` — short hook for blog index cards
-- `datePublished` — staggered across late April / early May 2026
-- `readingMinutes` — calculated from body length (typically 6–10)
-- `tags` — 2–4 relevant tags
-- `category` — one of the existing strings already used in `blog.tsx`
-- `hero` — reused category hero image (no new assets needed)
+- **Lead intro block**: render `seo.intro` as a styled lead paragraph — larger font (`text-lg md:text-xl`), looser line height, muted-foreground colour, sitting under an "About this exam" eyebrow chip (matches the home-page treatment we used previously).
+- **Sectioned cards**: render each `seo.sections` entry as its own block with:
+  - A small numbered badge (01, 02, …)
+  - The heading as `font-display text-xl md:text-2xl` with extra top margin (`mt-12`)
+  - A thin coral underline accent (matches existing brand)
+  - Body paragraphs at `text-base md:text-[17px] leading-relaxed` with `mt-4` between paragraphs (so the "nice paragraphs and spacing" the user asked for is real, not just `prose` defaults).
+- **Reading metadata**: a tiny "8 min read · Updated April 2026" line under the H2 so the section feels like an article, not boilerplate.
+- **Keep** the existing "Ready to start?" CTA paragraph and the FAQ block underneath — both already work.
 
-The existing `pageMeta` + `articleSchema` JSON-LD on `/blog/$slug` will pick all of this up automatically.
+Layout stays the same `lg:grid-cols-[1fr_280px]` (article + skyscraper ad), so nothing reflows on the page.
 
-## Files changed
+### Technical notes
 
-- `src/data/blog.tsx` — append 30 new entries to the `blogPosts` array. No other files touched. No new assets, no new routes, no new dependencies.
+- I'll drop the `prose` class on this block in favour of explicit Tailwind utilities, because `prose` caps line length and makes the numbered-section visual hard to control. The blog post page (`/blog/$slug`) keeps `prose` — only the category page changes.
+- No new imports beyond what's already in the file.
+- The `seo` shape (`intro: string[]`, `sections: { heading, body: string[] }[]`) doesn't change, so types and the FAQ JSON-LD continue to work.
 
-## Out of scope (call out explicitly)
+## Out of scope
 
-- I will **not** generate the 30 underlying mock JSON files for driving/life-in-uk/cscs/etc. — those are large data sets and a separate task. The articles will link to the canonical `-mock-1` slug for each topic so the CTA pattern is in place for when each mock dataset lands.
-- I will **not** redesign the blog index or post layout — only content is added.
+- FAQ copy and schema (already good)
+- Topic pages, blog pages, home page
+- New images or icons (using existing brand tokens only)
 
-After approval I'll write all 30 articles in one pass.
+After approval I'll do the rewrite + the route refactor in one pass.
