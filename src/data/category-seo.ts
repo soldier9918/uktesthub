@@ -60,6 +60,15 @@ export const categorySeo: Record<string, CategorySeo> = {
         body: [
           "Active recall — testing yourself rather than re-reading notes — is one of the most evidence-backed study techniques in cognitive science. Repeated mock papers expose gaps you didn't know you had, and the instant feedback after each question rewires your memory faster than passive revision ever can.",
           "Mocks also dismantle exam anxiety. The first time you see a real DVSA-style question shouldn't be at the test centre. By the time you've completed five to ten mocks, the format feels familiar and you can focus your mental energy on the content rather than the interface. Candidates who finish 10+ free mocks before sitting the real test pass at noticeably higher rates than those who only read the Highway Code.",
+          "There's also a simple cost argument. The DVSA fee is £23 per attempt, plus the time off work and the stress of rebooking. If 10 hours of free practice raises your first-time pass probability from 50% to 75%, the expected saving is real money and several weeks of waiting list. Treat practice as a financial decision, not just an academic one.",
+        ],
+      },
+      {
+        heading: "Booking, fees and what to expect on the day",
+        body: [
+          "You can only book the official Driving Theory Test through gov.uk. The fee is £23 in 2026 and you can usually find a slot within two to four weeks at most centres, with same-week slots in larger cities. Avoid third-party 'fast booking' sites that charge a £20–£40 markup for the same slot.",
+          "On the day, bring your provisional licence as photo ID. You're not allowed to take a phone, watch, bag or notes into the test room — there are lockers in the waiting area. Arrive at least 15 minutes before your slot; latecomers are turned away and the fee is forfeited.",
+          "After the test, you'll get a printed result slip immediately. If you've passed, the slip is your theory pass certificate — keep it safe, because you'll need the number when you book your practical test on gov.uk.",
         ],
       },
     ],
@@ -120,6 +129,15 @@ export const categorySeo: Record<string, CategorySeo> = {
         body: [
           "The Life in the UK Test is fundamentally a memory test. Reading the handbook is necessary but not sufficient — you need to retrieve the facts under time pressure, in a slightly unfamiliar phrasing, with three plausible-looking distractors next to the correct answer. That retrieval skill only develops through testing.",
           "Mock papers also surface the chapters you've quietly skipped or skim-read. Most candidates feel confident on history and weak on government, then sit a mock and discover the opposite. Use your scores honestly: any chapter where you're scoring under 80% is your next study target.",
+          "There is also a financial reason to take practice seriously. At £50 per attempt, two failed sittings costs as much as a year's worth of streaming subscriptions, and each fail also delays your ILR or citizenship application by at least a week. A few free mocks the night before is one of the cheapest insurance policies available in UK immigration.",
+        ],
+      },
+      {
+        heading: "Booking, fees and what to expect on the day",
+        body: [
+          "You can only book the Life in the UK Test through the official gov.uk service. The fee is £50 in 2026 and slots typically appear two to six weeks ahead, depending on your local test centre. The system will not let you book a slot less than three days away, so plan accordingly.",
+          "On the day, arrive at least 30 minutes early — late arrivals lose the £50 fee with no refund. Bring two original ID documents: one with your photo (passport, BRP or driving licence) and one showing your current address (utility bill or bank statement, less than three months old). Photocopies and phone scans are not accepted.",
+          "After the test, you'll be told whether you passed within minutes and a printed pass notification letter is handed to you the same day. Keep it safe — you'll need to send the original with your ILR or citizenship application.",
         ],
       },
     ],
@@ -181,6 +199,15 @@ export const categorySeo: Record<string, CategorySeo> = {
         body: [
           "Textbooks teach English. Mock tests teach the exam. Both matter, but candidates who only study textbooks usually under-score by a full band or level, because they aren't used to the time pressure or the specific question styles. The IELTS Listening section, for example, is famous for paraphrasing — the answer in the audio is almost never the exact word in the question.",
           "Use mocks to expose your weak skill (often listening or writing), then drill that skill with focused exercises before returning to a full mock. Two weeks of this loop typically lifts an honest IELTS score by half a band.",
+          "There's a financial dimension too. IELTS UKVI in the UK costs around £200 per sitting, and a re-sit isn't just inconvenient — it can delay a visa or university start by months. Treat free practice as the cheapest possible insurance against an avoidable re-sit.",
+        ],
+      },
+      {
+        heading: "Booking, fees and what to expect on test day",
+        body: [
+          "Book IELTS through the British Council, IDP or PSI websites. UK Academic and General sittings are widely available; UKVI sittings are restricted to a smaller list of approved centres because they're recorded for the Home Office. TOEFL is booked through ets.org and ESOL Skills for Life through approved centres listed on gov.uk.",
+          "On IELTS test day, you'll sit Listening, Reading and Writing in one continuous session of around three hours. The Speaking interview may be on the same day or within a week, depending on your centre. Bring the same passport you used to book — any other ID will get you turned away.",
+          "Results are released 3–5 days later for the computer-delivered version and 13 days later for paper-based IELTS. ESOL results vary by awarding body but are typically issued within four weeks of the speaking and listening session.",
         ],
       },
     ],
@@ -242,6 +269,15 @@ export const categorySeo: Record<string, CategorySeo> = {
         body: [
           "School exams reward two things: knowing the content and knowing the format. Most pupils have plenty of content from school but very little experience of the format under time pressure. Mock tests fix that gap, and they also build the calm confidence that prevents silly mistakes on the day.",
           "Used well, mocks are also a diagnostic tool for parents. A consistent dip in non-verbal reasoning, or a pattern of running out of time on the second maths paper, tells you exactly where to focus the next two weeks of revision — far more usefully than a school report card.",
+          "Cognitive scientists call this the 'testing effect': retrieving information strengthens the memory more than re-reading does. For pupils preparing for high-stakes exams, that means one practice paper can be worth three or four hours of passive revision — provided the wrong answers are reviewed honestly afterwards.",
+        ],
+      },
+      {
+        heading: "Booking and exam-day logistics for parents",
+        body: [
+          "11+ exams are booked directly with each grammar school or local authority, usually in the spring of Year 5 with a hard deadline in June or July. Miss the deadline and your child cannot sit the test that year. Most areas now use a single registration portal, but a few still require separate forms per school — always check your council website.",
+          "SATs are administered by the school and require no booking from parents. GCSEs are entered through the school by the head of department; parents only need to confirm the entry and pay any private-candidate fees if applicable.",
+          "On exam day, send your child in with two black ballpoint pens, a pencil, eraser, ruler and a clear pencil case. For maths, a calculator that has been used in practice (not a brand-new one) reduces fumbling. A bottle of water and a slow-release breakfast — porridge or eggs — outperform a sugary cereal for sustained concentration.",
         ],
       },
     ],
@@ -303,6 +339,15 @@ export const categorySeo: Record<string, CategorySeo> = {
         body: [
           "Psychometric tests are deliberately unfamiliar — employers want to see how you cope with novelty under pressure. Practice removes the novelty so your real performance reflects your actual reasoning ability rather than your test-taking experience.",
           "Candidates who do 20+ mocks before a real assessment routinely score 1–2 standard deviations higher than first-timers. That's often the difference between a rejection email and a video interview invite.",
+          "There's nothing dishonest about practising. Employers know candidates prepare and many provide official sample tests on their careers pages. What they're trying to identify is your ceiling under pressure, not your raw IQ — and that ceiling is genuinely raised by repetition.",
+        ],
+      },
+      {
+        heading: "Booking and what to expect on assessment day",
+        body: [
+          "Most aptitude tests are sent as an emailed link with a deadline of 5–10 days. You complete them remotely on a laptop, often unsupervised, with a single attempt recorded. Some employers — especially banks and consultancies — will then re-test you in a supervised assessment centre to confirm your remote score is genuine.",
+          "Set yourself up properly: a quiet room, a charged laptop on the mains, a stable wired or strong Wi-Fi connection, a glass of water, and a printed scrap-paper pad with two pens. Disable notifications and close every other browser tab. Most providers lock you out if you switch tabs during the test.",
+          "Read the instructions screen carefully — it tells you the number of questions, the time limit, the comparison group your score will be normed against, and whether you can flag and revisit questions. Once you click 'Start', the clock runs and there is no pause.",
         ],
       },
     ],
@@ -363,6 +408,15 @@ export const categorySeo: Record<string, CategorySeo> = {
         body: [
           "Professional tests are pass/fail with no second chance the same day, and most charge a re-sit fee of £30–£50. Practising the real format eliminates the surprise element and lets you focus on the content rather than the interface.",
           "Candidates who complete 3–5 full mocks before a real CSCS or SERU sitting pass at roughly twice the rate of unprepared candidates. That's a small time investment for a meaningful improvement in the odds — and for SERU drivers, a meaningful protection of your livelihood.",
+          "Mocks also build the procedural memory you need under pressure. By the third or fourth full paper, the sequence of safety steps, temperature thresholds or first-aid responses comes back in the right order automatically — leaving your conscious thinking free for the trickier scenario questions.",
+        ],
+      },
+      {
+        heading: "Booking, fees and what to expect on the day",
+        body: [
+          "Book CSCS through cscs.uk.com — the fee is £22.50 in 2026 and slots are usually available within a week. Book SERU TfL through TfL's licensing service; the fee is £36 and you'll need an active TfL private hire driver licence application on file. SIA training and exams are booked through approved training providers, not the SIA directly.",
+          "On exam day, bring photo ID (passport, driving licence or biometric residence permit) and arrive 20 minutes early. Phones, smartwatches and bags must be left in lockers. The test is on a tablet or PC and the on-screen interface is intentionally simple — practise on a similar layout so the buttons feel familiar.",
+          "Results are typically on screen within minutes and a printable certificate is emailed the same day. Keep the certificate — many sites and employers will ask to see it before you can start work.",
         ],
       },
     ],
@@ -423,6 +477,15 @@ export const categorySeo: Record<string, CategorySeo> = {
         body: [
           "NHS recruitment is high-volume and time-pressured for both candidates and hiring panels. Mocks help you avoid the most common reasons for rejection: a careless drug-calc error, a values answer that prioritises the team over the patient, or a mistimed CBT attempt.",
           "Twenty hours of mock practice typically lifts NMC CBT first-attempt pass rates from around 70% to over 85% — and given a CBT re-sit costs £83 plus the Pearson VUE booking delay, that's a meaningful return on free practice.",
+          "For internationally educated nurses, the gap between clinical competence and CBT pass rate is almost entirely down to UK-specific context: NICE, NMC Code, Mental Capacity Act, safeguarding, Duty of Candour. Practice tests built around UK terminology close that gap faster than re-reading nursing textbooks from your home country.",
+        ],
+      },
+      {
+        heading: "Booking and what to expect on the day",
+        body: [
+          "Book the NMC CBT through Pearson VUE once your NMC application has reached the right stage. The fee is £83 in 2026 and slots are available worldwide, usually within two weeks. NHS pre-employment numeracy and literacy tests are sent by the trust as an emailed link with a deadline of around five working days.",
+          "On the day, arrive 30 minutes early with one piece of valid photo ID matching the name on your booking. Phones, watches and bags go into lockers. The CBT is taken on a Pearson VUE workstation; you can request earplugs and noise-cancelling headphones at check-in.",
+          "Results for the CBT are emailed within 48 hours. NHS internal numeracy and literacy results are usually returned to the recruiting trust within three days; you'll typically hear back from the recruiter within a week.",
         ],
       },
     ],
@@ -472,6 +535,15 @@ export const categorySeo: Record<string, CategorySeo> = {
         body: [
           "Short, low-stakes quizzes are great for taking a screen break without going full-on doom-scroll. They activate the same active-recall pathways as exam revision, but with no pressure and no marking. Perfect for a coffee break, the bus home, or a wind-down after work.",
           "Regular quiz play is also linked in the cognitive science literature to better long-term retention of general knowledge — your brain treats retrieval as a vote of importance for whatever it just dredged up. So the more pub trivia you do, the more pub trivia you'll know. Funny how that works.",
+          "There's also the social side. Quizzes are one of the few digital activities that get better with people in the room rather than worse. Run one over Sunday lunch, on a long car journey, or in the staff kitchen on a slow Friday afternoon — they're cheap, quick and reliably get a laugh.",
+        ],
+      },
+      {
+        heading: "Ideas for using these quizzes",
+        body: [
+          "Use the daily General Knowledge quiz as a five-minute morning warm-up — many users tell us it wakes them up faster than the second cup of coffee. The How British Are You quiz is a great icebreaker for new arrivals, exchange students or international colleagues curious about UK culture.",
+          "Teachers, ESOL tutors and community group leaders are welcome to use these quizzes in the classroom or at events. Everything is free, mobile-friendly and works without sign-up, so you can pull a quiz up on a projector or share the link in a group chat without anyone having to register.",
+          "If you spot a question that's out of date, unfair or just wrong, send us a note via the contact page — we update the question bank regularly and reader reports are triaged within two working days.",
         ],
       },
     ],
