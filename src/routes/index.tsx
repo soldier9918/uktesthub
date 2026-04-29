@@ -271,7 +271,7 @@ function HomePage() {
                       <CategoryIcon
                         name={c.icon}
                         alt={c.title}
-                        className="h-6 w-6 object-contain"
+                        className="h-full w-full object-cover"
                       />
                     </span>
                     <div className="min-w-0 flex-1">
