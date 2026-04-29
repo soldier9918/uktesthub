@@ -5,7 +5,7 @@ import heroEducation from "@/assets/cat-hero-education.jpg";
 import heroCareer from "@/assets/cat-hero-career.jpg";
 import heroProfessional from "@/assets/cat-hero-professional.jpg";
 import heroNhs from "@/assets/cat-hero-nhs.jpg";
-import heroFun from "@/assets/cat-hero-fun.jpg";
+
 import heroTaxi from "@/assets/cat-hero-taxi-private-hire.jpg";
 import heroSecurity from "@/assets/cat-hero-security.jpg";
 import heroHospitality from "@/assets/cat-hero-hospitality.jpg";
@@ -172,21 +172,7 @@ export const categories: Category[] = [
       { slug: "ph-london-regulations", title: "London Private Hire Regulations Quiz" },
     ],
   },
-  {
-    slug: "fun",
-    title: "Fun & Viral Quizzes",
-    short: "How British are you? UK slang & daily quiz",
-    description:
-      "Light-hearted quizzes: How British Are You, UK Slang and a fresh General Knowledge Daily Quiz.",
-    icon: "Sparkles",
-    accent: "gold",
-    heroImage: heroFun,
-    topics: [
-      { slug: "how-british", title: "How British Are You?" },
-      { slug: "uk-slang", title: "UK Slang Quiz" },
-      { slug: "daily", title: "General Knowledge Daily" },
-    ],
-  },
+  
   {
     slug: "security",
     title: "Security & Door Supervision",

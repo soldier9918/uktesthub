@@ -181,7 +181,7 @@ function HomePage() {
           </div>
 
           {/* Popular tests panel */}
-          <aside className="relative hidden lg:block lg:self-start lg:-mt-6">
+          <aside className="relative lg:self-start lg:-mt-6">
             <div className="rounded-2xl border border-white/15 bg-navy-deep/40 p-5 shadow-elevated backdrop-blur-md">
               <div className="border-b border-white/10 pb-3">
                 <span className="font-display text-sm font-bold uppercase tracking-[0.2em] text-coral">
