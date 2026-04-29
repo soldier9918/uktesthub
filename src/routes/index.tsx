@@ -237,11 +237,10 @@ function HomePage() {
         <section className="mt-16">
           <SectionTitle>Popular Categories</SectionTitle>
 
-          <div className="mt-10 grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+          <div className="mt-10 grid gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
             {categories.map((c) => {
               const isCoral = c.accent === "coral";
-              // Short labels for the chip row (keeps tiles visually distinct).
-              const CHIP_LIMIT = 4;
+              const CHIP_LIMIT = 3;
               const chips = c.topics
                 .slice(0, CHIP_LIMIT)
                 .map((t) =>
@@ -256,41 +255,60 @@ function HomePage() {
                   key={c.slug}
                   to="/category/$slug"
                   params={{ slug: c.slug }}
-                  className="group flex h-full flex-col items-center rounded-2xl border border-border bg-card px-4 py-6 text-center shadow-soft transition-all duration-300 hover:-translate-y-1 hover:border-coral/40 hover:shadow-elevated"
+                  className="group relative flex h-full flex-col rounded-xl border border-border/70 bg-card p-4 shadow-soft transition-all duration-300 hover:-translate-y-0.5 hover:border-coral/50 hover:shadow-elevated"
                 >
-                  <CategoryIcon
-                    name={c.icon}
-                    alt={c.title}
-                    className="mb-4 h-16 w-16 object-contain"
-                  />
-                  <div className="flex w-full flex-1 flex-col items-center">
-                    <h3 className="font-display text-sm font-bold leading-tight text-foreground">
-                      {c.title}
-                    </h3>
-                    <p className="mt-2 line-clamp-3 min-h-[3.4em] text-[11px] leading-snug text-muted-foreground">
-                      {c.short}
-                    </p>
-                    <ul className="mt-4 flex flex-wrap justify-center gap-1.5">
-                      {chips.map((label) => (
-                        <li
-                          key={label}
-                          className="rounded-full border border-border bg-muted/60 px-2 py-0.5 text-[10px] font-semibold text-foreground/80"
-                        >
-                          {label}
-                        </li>
-                      ))}
-                      {extraChips > 0 && (
-                        <li className="rounded-full border border-coral/40 bg-coral/10 px-2 py-0.5 text-[10px] font-semibold text-coral">
-                          +{extraChips} more
-                        </li>
-                      )}
-                    </ul>
-                  </div>
+                  {/* top accent bar */}
                   <span
-                    className={`mt-5 inline-flex items-center justify-center gap-1 rounded-md border px-4 py-1.5 text-[11px] font-bold transition-colors ${
-                      isCoral
-                        ? "border-coral/40 text-coral group-hover:bg-coral group-hover:text-coral-foreground"
-                        : "border-royal/40 text-royal group-hover:bg-royal group-hover:text-royal-foreground"
+                    aria-hidden
+                    className={`absolute inset-x-4 top-0 h-px ${isCoral ? "bg-gradient-to-r from-transparent via-coral/60 to-transparent" : "bg-gradient-to-r from-transparent via-royal/60 to-transparent"}`}
+                  />
+                  <div className="flex items-start gap-3">
+                    <span
+                      className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-lg ${
+                        isCoral ? "bg-coral/10" : "bg-royal/10"
+                      }`}
+                    >
+                      <CategoryIcon
+                        name={c.icon}
+                        alt={c.title}
+                        className="h-6 w-6 object-contain"
+                      />
+                    </span>
+                    <div className="min-w-0 flex-1">
+                      <h3 className="font-display text-[13px] font-bold leading-tight text-foreground">
+                        {c.title}
+                      </h3>
+                      <p className="mt-1 line-clamp-2 text-[11px] leading-snug text-muted-foreground">
+                        {c.short}
+                      </p>
+                    </div>
+                  </div>
+
+                  <ul className="mt-3 flex flex-wrap gap-1">
+                    {chips.map((label) => (
+                      <li
+                        key={label}
+                        className="rounded-md border border-border/70 bg-muted/40 px-1.5 py-0.5 text-[10px] font-semibold text-foreground/75"
+                      >
+                        {label}
+                      </li>
+                    ))}
+                    {extraChips > 0 && (
+                      <li
+                        className={`rounded-md px-1.5 py-0.5 text-[10px] font-semibold ${
+                          isCoral
+                            ? "bg-coral/10 text-coral"
+                            : "bg-royal/10 text-royal"
+                        }`}
+                      >
+                        +{extraChips}
+                      </li>
+                    )}
+                  </ul>
+
+                  <span
+                    className={`mt-3 inline-flex items-center gap-1 self-start text-[11px] font-bold uppercase tracking-wider transition-transform group-hover:translate-x-0.5 ${
+                      isCoral ? "text-coral" : "text-royal"
                     }`}
                   >
                     Explore <ArrowRight className="h-3 w-3" />
