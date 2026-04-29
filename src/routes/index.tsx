@@ -246,6 +246,17 @@ function HomePage() {
                   .replace(/^GCSE /, "GCSE ")
                   .trim(),
               );
+              // Up to 3 unique brand badges representing the bodies in this category.
+              const seen = new Set<BadgeKey>();
+              const badges: BadgeKey[] = [];
+              for (const t of c.topics) {
+                const b = badgeForSlug(t.slug);
+                if (!seen.has(b)) {
+                  seen.add(b);
+                  badges.push(b);
+                  if (badges.length === 3) break;
+                }
+              }
               return (
                 <Link
                   key={c.slug}
@@ -262,6 +273,13 @@ function HomePage() {
                     <h3 className="font-display text-sm font-bold leading-tight text-foreground">
                       {c.title}
                     </h3>
+                    {badges.length > 0 && (
+                      <div className="mt-2 flex items-center justify-center gap-1.5">
+                        {badges.map((b) => (
+                          <TestBadge key={b} badge={b} size="sm" />
+                        ))}
+                      </div>
+                    )}
                     <p className="mt-2 line-clamp-3 min-h-[3.4em] text-[11px] leading-snug text-muted-foreground">
                       {c.short}
                     </p>
