@@ -11,6 +11,29 @@ import { pageMeta, faqSchema, breadcrumbSchema } from "@/lib/seo";
 import { ROAD_SIGN_PAGES } from "@/data/road-sign-gallery";
 import { ROAD_MARKING_PAGES } from "@/data/road-markings-gallery";
 
+// Render simple inline markdown-style links: [text](/url)
+function renderInlineLinks(text: string) {
+  const parts: (string | { label: string; href: string })[] = [];
+  const re = /\[([^\]]+)\]\(([^)]+)\)/g;
+  let lastIndex = 0;
+  let m: RegExpExecArray | null;
+  while ((m = re.exec(text)) !== null) {
+    if (m.index > lastIndex) parts.push(text.slice(lastIndex, m.index));
+    parts.push({ label: m[1], href: m[2] });
+    lastIndex = m.index + m[0].length;
+  }
+  if (lastIndex < text.length) parts.push(text.slice(lastIndex));
+  return parts.map((p, i) =>
+    typeof p === "string" ? (
+      <span key={i}>{p}</span>
+    ) : (
+      <Link key={i} to={p.href} className="font-semibold text-coral underline underline-offset-4 hover:text-coral/80">
+        {p.label}
+      </Link>
+    ),
+  );
+}
+
 export const Route = createFileRoute("/guide/$slug")({
   loader: ({ params }) => {
     const found = findTopic(params.slug);
@@ -131,7 +154,7 @@ function GuidePage() {
                   key={i}
                   className="text-lg leading-relaxed text-muted-foreground md:text-xl"
                 >
-                  {p}
+                  {renderInlineLinks(p)}
                 </p>
               ))}
             </div>
