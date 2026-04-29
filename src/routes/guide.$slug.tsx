@@ -135,7 +135,180 @@ function GuidePage() {
               ))}
             </div>
 
-            {/* OFFICIAL ROAD SIGNS REFERENCE (only on road-signs guide) — placed directly after the intro */}
+            {/* THE SIGNING SYSTEM (only on road-signs guide) */}
+            {topic.slug === "road-signs" ? (
+              <section className="mt-12 rounded-3xl border border-border bg-white p-6 md:p-10">
+                <h2 className="font-display text-3xl font-black uppercase tracking-tight text-navy-deep md:text-4xl">
+                  The signing system
+                </h2>
+                <div className="mt-3 h-1 w-16 rounded-full bg-coral" />
+                <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground md:text-lg">
+                  There are three basic types of traffic sign: signs that{" "}
+                  <strong className="text-foreground">give orders</strong>, signs that{" "}
+                  <strong className="text-foreground">warn</strong>, and signs that{" "}
+                  <strong className="text-foreground">give information</strong>. Each
+                  type has a different shape. A further guide to the function of a
+                  sign is its colour. All triangular signs are red.
+                </p>
+
+                {/* Shape primer */}
+                <div className="mt-8 grid gap-6 sm:grid-cols-3">
+                  {/* Circle */}
+                  <div className="flex flex-col items-center text-center">
+                    <svg viewBox="0 0 100 100" className="h-24 w-24" aria-hidden>
+                      <circle cx="50" cy="50" r="40" fill="none" stroke="#0c2340" strokeWidth="7" />
+                    </svg>
+                    <p className="mt-3 font-display text-lg font-bold text-navy-deep">Circles</p>
+                    <p className="text-sm text-muted-foreground">give orders</p>
+                  </div>
+                  {/* Triangle */}
+                  <div className="flex flex-col items-center text-center">
+                    <svg viewBox="0 0 100 100" className="h-24 w-24" aria-hidden>
+                      <polygon
+                        points="50,12 92,86 8,86"
+                        fill="none"
+                        stroke="#0c2340"
+                        strokeWidth="7"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                    <p className="mt-3 font-display text-lg font-bold text-navy-deep">Triangles</p>
+                    <p className="text-sm text-muted-foreground">warn</p>
+                  </div>
+                  {/* Rectangle */}
+                  <div className="flex flex-col items-center text-center">
+                    <svg viewBox="0 0 100 100" className="h-24 w-24" aria-hidden>
+                      <rect x="10" y="22" width="80" height="56" rx="8" fill="none" stroke="#0c2340" strokeWidth="7" />
+                    </svg>
+                    <p className="mt-3 font-display text-lg font-bold text-navy-deep">Rectangles</p>
+                    <p className="text-sm text-muted-foreground">inform</p>
+                  </div>
+                </div>
+
+                {/* Colour rules */}
+                <div className="mt-10 grid gap-6 md:grid-cols-2">
+                  <div className="flex items-start gap-4">
+                    <svg viewBox="0 0 100 100" className="h-16 w-16 shrink-0" aria-hidden>
+                      <circle cx="50" cy="50" r="40" fill="#1f78d1" stroke="#0c2340" strokeWidth="6" />
+                    </svg>
+                    <p className="text-sm leading-relaxed text-muted-foreground">
+                      <strong className="text-foreground">Blue circles</strong> generally
+                      give a mandatory instruction such as "turn left", or indicate a
+                      route available only to particular classes of traffic, e.g. buses
+                      and cycles only.
+                    </p>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <svg viewBox="0 0 100 100" className="h-16 w-16 shrink-0" aria-hidden>
+                      <circle cx="50" cy="50" r="40" fill="none" stroke="#d62828" strokeWidth="10" />
+                    </svg>
+                    <p className="text-sm leading-relaxed text-muted-foreground">
+                      <strong className="text-foreground">Red rings or circles</strong>{" "}
+                      tell you what you must not do, e.g. must not exceed 30mph, no
+                      vehicles over the height shown may proceed.
+                    </p>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <svg viewBox="0 0 100 100" className="h-16 w-20 shrink-0" aria-hidden>
+                      <rect x="8" y="22" width="84" height="56" rx="8" fill="#1f78d1" stroke="#0c2340" strokeWidth="5" />
+                    </svg>
+                    <p className="text-sm leading-relaxed text-muted-foreground">
+                      <strong className="text-foreground">Blue rectangles</strong> are
+                      used for information signs except on motorways, where blue is
+                      used for direction signs.
+                    </p>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <svg viewBox="0 0 100 100" className="h-16 w-20 shrink-0" aria-hidden>
+                      <rect x="8" y="22" width="84" height="56" rx="8" fill="#0a6b3b" stroke="#0c2340" strokeWidth="5" />
+                    </svg>
+                    <p className="text-sm leading-relaxed text-muted-foreground">
+                      <strong className="text-foreground">Green rectangles</strong> are
+                      used for direction signs on primary routes.
+                    </p>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <svg viewBox="0 0 100 100" className="h-16 w-20 shrink-0" aria-hidden>
+                      <rect x="8" y="22" width="84" height="56" rx="8" fill="#ffffff" stroke="#0c2340" strokeWidth="5" />
+                    </svg>
+                    <p className="text-sm leading-relaxed text-muted-foreground">
+                      <strong className="text-foreground">White rectangles</strong> are
+                      used for direction signs on non-primary routes, or for plates
+                      used in combination with warning and regulatory signs.
+                    </p>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <div className="flex shrink-0 items-center gap-2">
+                      {/* STOP octagon */}
+                      <svg viewBox="0 0 100 100" className="h-16 w-16" aria-hidden>
+                        <polygon
+                          points="30,8 70,8 92,30 92,70 70,92 30,92 8,70 8,30"
+                          fill="#d62828"
+                          stroke="#ffffff"
+                          strokeWidth="4"
+                        />
+                        <text
+                          x="50"
+                          y="58"
+                          textAnchor="middle"
+                          fontSize="22"
+                          fontWeight="900"
+                          fontFamily="system-ui, sans-serif"
+                          fill="#ffffff"
+                        >
+                          STOP
+                        </text>
+                      </svg>
+                      {/* GIVE WAY inverted triangle */}
+                      <svg viewBox="0 0 100 100" className="h-16 w-16" aria-hidden>
+                        <polygon
+                          points="8,14 92,14 50,92"
+                          fill="#ffffff"
+                          stroke="#d62828"
+                          strokeWidth="8"
+                          strokeLinejoin="round"
+                        />
+                        <text
+                          x="50"
+                          y="38"
+                          textAnchor="middle"
+                          fontSize="13"
+                          fontWeight="900"
+                          fontFamily="system-ui, sans-serif"
+                          fill="#0c2340"
+                        >
+                          GIVE
+                        </text>
+                        <text
+                          x="50"
+                          y="54"
+                          textAnchor="middle"
+                          fontSize="13"
+                          fontWeight="900"
+                          fontFamily="system-ui, sans-serif"
+                          fill="#0c2340"
+                        >
+                          WAY
+                        </text>
+                      </svg>
+                    </div>
+                    <p className="text-sm leading-relaxed text-muted-foreground">
+                      There are a few exceptions to the shape and colour rules, to
+                      give certain signs greater prominence. Examples are the{" "}
+                      <strong className="text-foreground">"STOP"</strong> and{" "}
+                      <strong className="text-foreground">"GIVE WAY"</strong> signs.
+                    </p>
+                  </div>
+                </div>
+
+                <p className="mt-8 text-sm italic text-muted-foreground">
+                  The words "must" or "must not", when used in the descriptions that
+                  follow, refer to legal requirements that have to be obeyed.
+                </p>
+              </section>
+            ) : null}
+
+            {/* OFFICIAL ROAD SIGNS REFERENCE */}
             {topic.slug === "road-signs" ? (
               <section className="mt-12">
                 <span className="inline-flex items-center rounded-full bg-coral/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-coral">
