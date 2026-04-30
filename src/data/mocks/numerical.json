@@ -10880,6 +10880,1366 @@
           "correctAnswer": 1
         }
       ]
+    },
+    {
+      "slug": "numerical-mock-41",
+      "topic": "numerical",
+      "mockNumber": 41,
+      "title": "Numerical Reasoning Test 41",
+      "questions": [
+        {
+          "question": "A company generates £120m profit in the UK, £80m in Europe, and £40m in Asia. What percentage of the total profit comes from the UK?",
+          "options": [
+            "40%",
+            "45%",
+            "50%",
+            "60%"
+          ],
+          "explanation": "Total profit is £120m + £80m + £40m = £240m. The UK share is (£120m / £240m) * 100 = 50%.",
+          "correctAnswer": 2
+        },
+        {
+          "correctAnswer": 1,
+          "explanation": "Revenue per employee is £14,400,000 / 120 = £120,000.",
+          "options": [
+            "£110,000",
+            "£120,000",
+            "£130,000",
+            "£140,000"
+          ],
+          "question": "A firm with 120 employees generates an annual revenue of £14.4 million. What is the average revenue generated per employee?"
+        },
+        {
+          "explanation": "Current price is £11.50. 15% of £11.50 is £1.725. New price = £11.50 + £1.725 = £13.225, rounded to £13.23.",
+          "options": [
+            "£13.23",
+            "£13.15",
+            "£12.95",
+            "£13.50"
+          ],
+          "question": "If the price of a rail ticket rises by 15% from its current price of £11.50, what is the new price?",
+          "correctAnswer": 0
+        },
+        {
+          "correctAnswer": 3,
+          "explanation": "The total ratio parts are 5 + 3 + 2 = 10. One part is £50,000 / 10 = £5,000. Marketing (2 parts) is 2 * £5,000 = £10,000.",
+          "options": [
+            "£5,000",
+            "£15,000",
+            "£25,000",
+            "£10,000"
+          ],
+          "question": "A budget of £50,000 is split between Operations, Sales, and Marketing in the ratio 5:3:2. How much is allocated to Marketing?"
+        },
+        {
+          "correctAnswer": 2,
+          "options": [
+            "€450",
+            "€500",
+            "€540",
+            "€600"
+          ],
+          "question": "The exchange rate is £1 to €1.20. If the pound weakens by 10% against the Euro, how many Euros will £500 be worth?",
+          "explanation": "Current: £1.20/€. Proposed: 1.20 * 0.9 = £1.08/€. £500 * 1.08 = €540. (Calculation: 500 / 1.08 = €462.96 using division for GBP to EUR). Correct logic: £500 / 1.08 = €462.96. Wait, if £1 = €1.20, then £500 = €600. If rate drops 10%, £1 = €1.08. £500 * 1.08 = €540."
+        },
+        {
+          "correctAnswer": 1,
+          "explanation": "3,500 units * £12 = £42,000. Total costs = £15,000 + (3,500 * £5) = £32,500. Profit = £42,000 - £32,500 = £9,500.",
+          "options": [
+            "£8,500",
+            "£9,500",
+            "£10,500",
+            "£7,000"
+          ],
+          "question": "A manufacturer has fixed costs of £15,000 and variable costs of £5 per unit. If they sell 3,500 units at £12 each, what is the profit?"
+        },
+        {
+          "correctAnswer": 3,
+          "options": [
+            "5:7",
+            "1:1.4",
+            "14:100",
+            "7:5"
+          ],
+          "question": "A department has 14 full-time staff and 10 part-time staff. What is the simplified ratio of full-time to part-time staff?",
+          "explanation": "The ratio is 14:10, which simplifies to 7:5."
+        },
+        {
+          "correctAnswer": 0,
+          "explanation": "Total students = 80 + 120 + 50 = 250. History percentage = (50 / 250) * 100 = 20%.",
+          "options": [
+            "20%",
+            "25%",
+            "30%",
+            "15%"
+          ],
+          "question": "In a college, 80 students study Maths, 120 study English, and 50 study History. What percentage of these students study History?"
+        },
+        {
+          "correctAnswer": 2,
+          "explanation": "Increase = 18,400 - 16,000 = 2,400. Percentage increase = (2,400 / 16,000) * 100 = 15%.",
+          "question": "An investment grows from £16,000 to £18,400 in one year. What is the percentage increase?",
+          "options": [
+            "12.5%",
+            "14%",
+            "15%",
+            "16.5%"
+          ]
+        },
+        {
+          "question": "A coat is sold for £48 after a 20% discount. What was the original price?",
+          "options": [
+            "£58",
+            "£60",
+            "£62.50",
+            "£70.20"
+          ],
+          "explanation": "Original price = £48 / (1 - 0.20) = £48 / 0.8 = £60.",
+          "correctAnswer": 1
+        },
+        {
+          "explanation": "Productivity = 400 / 8 = 50 calls/hour. After increase: 50 * 1.12 = 56 calls/hour. 8 hours * 56 = 448 calls.",
+          "options": [
+            "412",
+            "436",
+            "440",
+            "448"
+          ],
+          "question": "A call centre agent handles 400 calls in an 8-hour shift. If their productivity increases by 12%, how many calls will they handle in the same shift?",
+          "correctAnswer": 3
+        },
+        {
+          "question": "In a pie chart representing sales: Region A (£250k), Region B (£300k), Region C (£450k). What is the angle for Region C?",
+          "options": [
+            "144°",
+            "162°",
+            "180°",
+            "156°"
+          ],
+          "explanation": "Total: 250 + 300 + 450 = 1,000. Share = 450 / 1,000 = 45%. Angle = 0.45 * 360 = 162 degrees.",
+          "correctAnswer": 1
+        },
+        {
+          "options": [
+            "£100,000",
+            "£115,000",
+            "£125,000",
+            "£150,000"
+          ],
+          "question": "A legacy is divided between three charities in the ratio 2:3:5. If the smallest share is £25,000, what is the total legacy?",
+          "explanation": "Share A = £25,000. Share B = £25,000 / 2 * 3 = £37,500. Share C = £25,000 / 2 * 5 = £62,500. Total = 25,000 + 37,500 + 62,500 = £125,000.",
+          "correctAnswer": 2
+        },
+        {
+          "correctAnswer": 0,
+          "options": [
+            "£3,208.33",
+            "£3,000.00",
+            "£2,850.50",
+            "£3,750.00"
+          ],
+          "question": "An employee earns £45,000 per year. They pay 20% tax on everything earned above the personal allowance of £12,500. What is their monthly take-home pay?",
+          "explanation": "Taxable income = £45,000 - £12,500 = £32,500. Tax = 32,500 * 0.20 = £6,500. Net income = 45,000 - 6,500 = £38,500. Monthly = 38,500 / 12 = £3,208.33."
+        },
+        {
+          "correctAnswer": 3,
+          "explanation": "Share Price P = £2.50. Share Price Q = £2.50 * 1.20 = £3.00. 500 shares of Q = 500 * £3.00 = £1,500.",
+          "options": [
+            "£1,250",
+            "£1,350",
+            "£1,400",
+            "£1,500"
+          ],
+          "question": "Share Price P is £2.50. Share Price Q is 20% higher than Share Price P. What is the total cost of 500 shares in Company Q?"
+        },
+        {
+          "correctAnswer": 1,
+          "explanation": "2019 to 2020: (132 - 120)/120 = 10%. 2020 to 2021: (151.8 - 132)/132 = 15%. Sum = 110% * 115% = 1.265. Total increase = 26.5%.",
+          "options": [
+            "25%",
+            "26.5%",
+            "27%",
+            "22.5%"
+          ],
+          "question": "A house price is £120,000. It rises by 10% in 2020 and then by a further 15% in 2021. What is the total percentage increase over the two years?"
+        },
+        {
+          "correctAnswer": 2,
+          "explanation": "Fuel cost = (600 miles / 50 mpg) * £1.50 = 12 gallons * £1.50. Wait, 1 gallon is approx 4.54 litres. (£1.50 * 4.54) per gallon. 12 * 6.81 = £81.72. Correct: (600/50) = 12 gallons. 12 * 4.546 = 54.55 litres. 54.55 * £1.50 = £81.83.",
+          "options": [
+            "£72.00",
+            "£78.50",
+            "£81.83",
+            "£90.12"
+          ],
+          "question": "A car travels 600 miles at an average of 50 miles per gallon (mpg). If fuel costs £1.50 per litre, and 1 gallon = 4.546 litres, what is the total fuel cost?"
+        },
+        {
+          "correctAnswer": 0,
+          "question": "The average age of 5 employees is 24. When a new employee joins, the average age becomes 23. How old is the new employee?",
+          "options": [
+            "18",
+            "20",
+            "29",
+            "31"
+          ],
+          "explanation": "Total before: 5 * 24 = 120. Total after: 6 * 23 = 138. The new employee's age is 138 - 120 = 18."
+        },
+        {
+          "correctAnswer": 1,
+          "options": [
+            "£25.00",
+            "£26.32",
+            "£28.45",
+            "£30.10"
+          ],
+          "question": "The exchange rate is £1 = $1.30. A product costs $650. If the pound devalues by 5% against the dollar, how much more (in GBP) will the product cost?",
+          "explanation": "Current conversion: £500 = $650. New rate $1.30 * 0.95 = $1.235. $650 / 1.235 = £526.32. Increase = £26.32."
+        },
+        {
+          "question": "An item costs £150 excluding 20% VAT. A customer has a 10% discount voucher that applies to the total price including VAT. How much does the customer pay?",
+          "options": [
+            "£165.00",
+            "£135.00",
+            "£148.50",
+            "£162.00"
+          ],
+          "explanation": "VAT = £150 * 0.20 = £30. Total = £180. Discounted total = £180 * 0.90 = £162.",
+          "correctAnswer": 3
+        },
+        {
+          "correctAnswer": 0,
+          "question": "Machine A takes 4 hours to complete a task. Machine B takes 5 hours. If both machines work together, how long will it take to complete the task? (Round to nearest minute)",
+          "options": [
+            "2 hours 13 minutes",
+            "2 hours 30 minutes",
+            "2 hours 45 minutes",
+            "3 hours 10 minutes"
+          ],
+          "explanation": "Machine A: 1/4 per hour. Machine B: 1/5 per hour. Together: 1/4 + 1/5 = 9/20 per hour. Time = 20 / 9 = 2.22 hours. 0.22 * 60 = 13.3 mins. Total 2 hours 13 minutes."
+        },
+        {
+          "correctAnswer": 3,
+          "question": "A retailer buys a phone for £30 and sells it for £50. They want to increase their absolute profit margin per unit by 25%. What should the new selling price be?",
+          "options": [
+            "£52.50",
+            "£60.00",
+            "£62.50",
+            "£55.00"
+          ],
+          "explanation": "Current margin: £50 - £30 = £20. 25% of £20 = £5. New margin target = £25. New price = £30 + £25 = £55. Extension: New price = original + 5 = 55. Or (55-30)/55 = 45% vs (20/50)=40%. To increase margin by 25% (from £20 to £25), price becomes £55."
+        },
+        {
+          "correctAnswer": 1,
+          "explanation": "Target = 1,200. Week 1: 250. Week 2: 250 * 1.2 = 300. Week 3: 300 * 1.2 = 360. Remaining = 1,200 - (250+300+360) = 290.",
+          "options": [
+            "250 units",
+            "290 units",
+            "310 units",
+            "340 units"
+          ],
+          "question": "A production target is 1,200 units for the month. Week 1: 250 units produced. Week 2: Production increased by 20% from Week 1. Week 3: Production increased by 20% from Week 2. How many units must be produced in Week 4 to hit the target?"
+        },
+        {
+          "correctAnswer": 2,
+          "explanation": "Total units = 100 + 150 = 250. Total cost = (100 * £2.00) + (150 * £2.50) = £200 + £375 = £575. Average cost = £575 / 250 = £2.30.",
+          "options": [
+            "£2.25",
+            "£2.40",
+            "£2.30",
+            "£2.35"
+          ],
+          "question": "An investor buys 100 shares at £2.00 each and later buys 150 shares at £2.50 each. What is the weighted average price paid per share?"
+        }
+      ]
+    },
+    {
+      "slug": "numerical-mock-42",
+      "topic": "numerical",
+      "mockNumber": 42,
+      "title": "Numerical Reasoning Test 42",
+      "questions": [
+        {
+          "options": [
+            "10%",
+            "15%",
+            "20%",
+            "25%"
+          ],
+          "correctAnswer": 2,
+          "question": "A legal firm charges a client £1,000 for a service. If staffing costs are £480 and overheads are £320, what is the profit margin?",
+          "explanation": "Calculate total costs (£480 + £320 = £800). Profit margin is (£1,000 - £800) / £1,000 = 20%."
+        },
+        {
+          "explanation": "Total is 3 + 5 + 2 = 10 parts. One part is £5,000 / 10 = £500. Marketing gets 5 parts: 5 * £500 = £2,500.",
+          "question": "A budget of £5,000 is split between Research, Marketing, and Admin in the ratio 3:5:2. How much does Marketing receive?",
+          "options": [
+            "£1,500",
+            "£2,500",
+            "£3,000",
+            "£1,000"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "explanation": "New price = £12.50 * 1.08 = £13.50. New cost = £4.80 * 1.10 = £5.28. New profit = £13.50 - £5.28 = £8.22.",
+          "question": "A product sells for £12.50 with a cost of £4.80. If the price increases by 8% and costs increase by 10%, what is the new profit per unit?",
+          "options": [
+            "£7.98",
+            "£8.12",
+            "£8.25",
+            "£8.22"
+          ],
+          "correctAnswer": 3
+        },
+        {
+          "question": "A typist earns £18.50 per hour and types 400 words every 15 minutes. How much will they earn for a 12,000-word document?",
+          "explanation": "Total time = 12,000 / 400 = 30 hours. Total cost = 30 * £18.50 = £555.",
+          "correctAnswer": 0,
+          "options": [
+            "£555.00",
+            "£575.50",
+            "£540.00",
+            "£600.00"
+          ]
+        },
+        {
+          "correctAnswer": 2,
+          "options": [
+            "£11.25",
+            "£13.50",
+            "£15.00",
+            "£20.00"
+          ],
+          "explanation": "Original price was £45.00 / 0.75 = £60.00. The discount amount was £60 - £45 = £15.00.",
+          "question": "A coat is sold for £45.00 after a 25% discount. What was the original price reduction in pounds?"
+        },
+        {
+          "question": "In a department of 100 people, 40% are men. How many more men must be hired to make the gender ratio 1:1?",
+          "explanation": "Current ratio is 40:60 (2:3). To get 1:1, men must equal women (60). 60 - 40 = 20 more men.",
+          "correctAnswer": 1,
+          "options": [
+            "10",
+            "20",
+            "15",
+            "25"
+          ]
+        },
+        {
+          "correctAnswer": 3,
+          "options": [
+            "£200.00",
+            "£210.00",
+            "£202.50",
+            "£205.00"
+          ],
+          "question": "A savings account offers 5% compound interest per annum. If £2,000 is invested, how much interest is earned after 2 years?",
+          "explanation": "Year 1: £2,000 * 1.05 = £2,100. Year 2: £2,100 * 1.05 = £2,205. Total interest = £205."
+        },
+        {
+          "explanation": "Total revenue = (500 * £12) + (300 * £8) = £6,000 + £2,400 = £8,400. Total attendees = 800. Mean = £8,400 / 800 = £10.50.",
+          "question": "A cinema sells 500 adult tickets at £12 and 300 child tickets at £8. What is the mean ticket price?",
+          "correctAnswer": 2,
+          "options": [
+            "£10.00",
+            "£11.00",
+            "£10.50",
+            "£9.50"
+          ]
+        },
+        {
+          "options": [
+            "£22.61 cheaper in EU",
+            "£22.61 cheaper in UK",
+            "£10.00 cheaper in EU",
+            "Prices are equal"
+          ],
+          "correctAnswer": 0,
+          "question": "A tablet costs £240 in the UK and €250 in the EU. If £1 = €1.15, what is the price difference in GBP?",
+          "explanation": "Convert €250 to GBP: 250 / 1.15 = £217.39. Difference = £240 - £217.39 = £22.61."
+        },
+        {
+          "options": [
+            "4.2 units",
+            "4.5 units",
+            "5.0 units",
+            "4.8 units"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Total hours = 6 * 4 = 24. Average = 108 / 24 = 4.5 units per hour.",
+          "question": "A team of 6 employees produces 108 units in a 4-hour shift. What is the average production rate per employee per hour?"
+        },
+        {
+          "correctAnswer": 3,
+          "options": [
+            "20",
+            "22",
+            "26",
+            "24"
+          ],
+          "question": "Train A has 120 passengers (10% delayed) and Train B has 80 passengers (15% delayed). How many passengers are delayed in total?",
+          "explanation": "Total passengers = 120 + 80 = 200. Percentage delay = (120/200) * 0.10 + (80/200) * 0.15 = 0.06 + 0.06 = 12%. 12% of 200 = 24."
+        },
+        {
+          "explanation": "Total pay = (35 * £12) + (5 * £12 * 1.5) = £420 + £90 = £510.",
+          "question": "An employee earns £12/hour for 35 hours and \"time-and-a-half\" for overtime. If they work 40 hours, what is their total pay?",
+          "options": [
+            "£480.00",
+            "£495.00",
+            "£510.00",
+            "£525.00"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "question": "A cafe sells 400 coffees for £1.50 each, making a 20% profit on the total cost. What was the cost price per coffee?",
+          "explanation": "Total revenue = 400 * £1.50 = £600. Total cost = £600 / 1.20 = £500. Cost per coffee = £500 / 400 = £1.25.",
+          "options": [
+            "£1.25",
+            "£1.30",
+            "£1.15",
+            "£1.20"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "question": "A smartphone is sold for £150 including 20% VAT. How much of the purchase price is VAT?",
+          "explanation": "VAT is 20%. £150 / 1.20 = £125. VAT amount = £150 - £125 = £25.",
+          "options": [
+            "£30.00",
+            "£25.00",
+            "£20.00",
+            "£22.50"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "options": [
+            "150 units",
+            "500 units",
+            "125 units",
+            "250 units"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Current stock = 500. New stock needed = 750 (50% increase). Orders to place = 750 - 500 = 250 units.",
+          "question": "A warehouse has 500 units. It needs to increase stock by 50%. How many additional units must be ordered?"
+        },
+        {
+          "explanation": "Total distance = 40 * 2.5 = 100 miles. New time = 100 / 50 = 2 hours. Savings = 2.5 - 2 = 0.5 hours (30 mins).",
+          "question": "A delivery driver travels at 40mph for 2.5 hours. If they increased their speed to 50mph, how much time would they save?",
+          "options": [
+            "20 minutes",
+            "15 minutes",
+            "30 minutes",
+            "45 minutes"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "correctAnswer": 1,
+          "options": [
+            "7.5kg",
+            "8.0kg",
+            "8.5kg",
+            "9.0kg"
+          ],
+          "question": "Product A weighs 5kg and Product B weighs 10kg. If they are mixed in a 2:3 ratio by quantity, what is the average weight per item?",
+          "explanation": "Total ratio parts = 2 + 3 = 5. Total weight = (5 * 2) + (10 * 3) = 10 + 30 = 40kg. Average = 40 / 5 = 8kg."
+        },
+        {
+          "question": "An estate agent earns a basic salary of £1,500 plus 2% commission on sales. If they sell a house for £250,000, what is their total monthly pay?",
+          "explanation": "Commission = 0.02 * £250,000 = £5,000. Total = £5,000 + £1,500 = £6,500.",
+          "correctAnswer": 3,
+          "options": [
+            "£5,000",
+            "£5,500",
+            "£6,000",
+            "£6,500"
+          ]
+        },
+        {
+          "explanation": "Area = 4m * 5m = 20 sq m. Cost = 20 * £15 = £300. Fitting = £300 * 0.10 = £30. Total = £330.",
+          "question": "Carpet costs £15 per square metre. Fitting costs 10% of the carpet price. How much to carpet a 4m x 5m room?",
+          "options": [
+            "£330.00",
+            "£315.00",
+            "£345.00",
+            "£360.00"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "options": [
+            "20% increase",
+            "25% increase",
+            "30% increase",
+            "22% increase"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Price change: £2,000 to £2,500 is a £500 increase. (500 / 2,000) * 100 = 25% increase.",
+          "question": "Share price of Company X was £2,000 in Jan and £2,500 in Dec. What was the percentage increase?"
+        },
+        {
+          "explanation": "Petrol needed = 300 / 40 = 7.5 gallons. Cost = 7.5 * £6 = £45.00.",
+          "question": "A car travels 40 miles per gallon. If petrol costs £6 per gallon, how much does a 300-mile journey cost?",
+          "correctAnswer": 2,
+          "options": [
+            "£40.00",
+            "£42.50",
+            "£45.00",
+            "£50.00"
+          ]
+        },
+        {
+          "options": [
+            "£80,000",
+            "£60,000",
+            "£100,000",
+            "£40,000"
+          ],
+          "correctAnswer": 0,
+          "question": "A firm allocates its £160,000 budget to Admin, Sales, and Ops in ratio 1:2:5. What is the difference between Ops and Admin?",
+          "explanation": "Total ratio parts = 1 + 2 + 5 = 8. Admin = (1/8) * £160,000 = £20,000. Ops is 5 times that: £100,000. Difference = £80,000."
+        },
+        {
+          "question": "Machine A produces 10 widgets/hr for 40 hours. Machine B produces 15 widgets/hr for 60 hours. Average widgets per hour across all 100 hours?",
+          "explanation": "Total hours = 100. Total widgets = (40 * 10) + (60 * 15) = 400 + 900 = 1,300. Average = 1,300 / 100 = 13.",
+          "options": [
+            "12.0",
+            "12.5",
+            "13.0",
+            "13.5"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "correctAnswer": 1,
+          "options": [
+            "£40.00",
+            "£48.80",
+            "£51.20",
+            "£60.00"
+          ],
+          "question": "A piece of equipment costing £100 depreciates by 20% each year. What is its total value loss after 3 years?",
+          "explanation": "Year 1: £80.00. Year 2: £64.00 (80 * 0.8). Year 3: £51.20 (64 * 0.8). Total loss = £100 - £51.20 = £48.80."
+        }
+      ]
+    },
+    {
+      "slug": "numerical-mock-43",
+      "topic": "numerical",
+      "mockNumber": 43,
+      "title": "Numerical Reasoning Test 43",
+      "questions": [
+        {
+          "options": [
+            "£2,400",
+            "£3,200",
+            "£3,600",
+            "£4,100"
+          ],
+          "explanation": "Total revenue is £24,000. Profit = Total Revenue / (1 + Margin), or Revenue - Expenses. £24,000 * 0.15 = £3,600.",
+          "correctAnswer": 2,
+          "question": "A boutique clock shop translates a 15% net profit margin on its annual turnover of £24,000. What is the total net profit?"
+        },
+        {
+          "question": "A small firm allocates its £480 weekly overhead budget between Admin and Marketing in a 3:5 ratio. How much is allocated to Marketing?",
+          "explanation": "The total ratio parts are 3+5=8. One part is £480 / 8 = £60. The marketing share is 5 parts: 5 * £60 = £300.",
+          "options": [
+            "£180",
+            "£300",
+            "£240",
+            "£320"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "question": "A tablet is sold for £85 after a 20% discount. What was the original price before the discount was applied?",
+          "options": [
+            "£21.25",
+            "£17.00",
+            "£25.50",
+            "£19.85"
+          ],
+          "explanation": "Original price = £85 / 0.80 = £106.25. Savings = £106.25 - £85 = £21.25.",
+          "correctAnswer": 0
+        },
+        {
+          "correctAnswer": 3,
+          "explanation": "140,000 * 1.05 * 1.05 = 154,350. Rounding to the nearest thousand gives 154,000.",
+          "options": [
+            "147,000",
+            "150,000",
+            "152,500",
+            "154,000"
+          ],
+          "question": "A town’s population of 140,000 grows by 5% each year. What will the population be after 2 years (to the nearest thousand)?"
+        },
+        {
+          "explanation": "Current: £40 + (£40 * 0.05) = £42. Proposed: £45. Difference: £45 - £42 = £3.",
+          "options": [
+            "£2.00",
+            "£2.50",
+            "£3.00",
+            "£5.00"
+          ],
+          "correctAnswer": 2,
+          "question": "A gym membership costs £40 and will increase by 5% next month. A rival gym offers a flat rate of £45. How much more expensive is the rival gym than the new price of the first gym?"
+        },
+        {
+          "question": "A car travels 150 km and consumes fuel at a rate of 12.5 km per litre. If fuel costs £1.45 per litre, what is the total cost of the journey?",
+          "correctAnswer": 1,
+          "options": [
+            "£15.20",
+            "£17.40",
+            "£18.60",
+            "£21.75"
+          ],
+          "explanation": "150 km / 12.5 km/l = 12 litres. 12 litres * £1.45/l = £17.40."
+        },
+        {
+          "explanation": "Year 1: £2,000 * 1.04 = £2,080. Year 2: £2,080 * 1.04 = £2,163.20. Interest = £163.20.",
+          "options": [
+            "£163.20",
+            "£160.00",
+            "£184.40",
+            "£158.00"
+          ],
+          "correctAnswer": 0,
+          "question": "An investment of £2,000 earns 4% compound interest per annum. How much total interest is earned after 2 years?"
+        },
+        {
+          "correctAnswer": 2,
+          "options": [
+            "120 units",
+            "125 units",
+            "130 units",
+            "135 units"
+          ],
+          "explanation": "Total output = 120 + 150 + 110 + 130 + 140 = 650. Average = 650 / 5 = 130.",
+          "question": "A factory produces 120, 150, 110, 130, and 140 units over five days. What is the average daily production?"
+        },
+        {
+          "correctAnswer": 1,
+          "options": [
+            "£100",
+            "£80",
+            "£60",
+            "£120"
+          ],
+          "explanation": "400 / 1.25 = £320. Profit = £400 - £320 = £80.",
+          "question": "A retailer sells a coat for £400, including a 25% markup on the cost price. What was the cost price to the retailer?"
+        },
+        {
+          "question": "A UK investor buys €20,000. If £1 = €1.25 when buying, and the investor later sells when £1 = €1.10, how much in GBP (£) do they receive?",
+          "correctAnswer": 3,
+          "explanation": "20,000 / 1.25 = €16,000. 16,000 * 1.10 = £17,600.",
+          "options": [
+            "£25,000",
+            "£22,000",
+            "£18,400",
+            "£17,600"
+          ]
+        },
+        {
+          "correctAnswer": 1,
+          "explanation": "75 miles / 60 mph = 1.25 hours (1 hr 15 mins). Arrival: 08:30 + 1:15 = 09:45.",
+          "options": [
+            "09:30",
+            "09:45",
+            "10:00",
+            "10:15"
+          ],
+          "question": "A train leaves London at 08:30 and travels 75 miles at an average speed of 60 mph. What time does it arrive at its destination?"
+        },
+        {
+          "question": "A paint mixture uses Red, Blue, and White in a ratio of 1:3:2. If there are 120 litres of paint in total, how many litres are Blue?",
+          "options": [
+            "60 litres",
+            "40 litres",
+            "20 litres",
+            "80 litres"
+          ],
+          "explanation": "The ratio 1:3:2 has 1+3+2=6 parts. One part is 120 / 6 = 20. Blue is 3 parts: 3 * 20 = 60.",
+          "correctAnswer": 0
+        },
+        {
+          "question": "A salesperson earns a base salary of £18,000 plus a 10% commission on all sales. If they sell £50,000 worth of goods, what is their total annual income?",
+          "explanation": "Sales = £50,000. Commission = 10% of £50k = £5,000. Total = £18,000 + £5,000 = £23,000.",
+          "options": [
+            "£21,000",
+            "£22,500",
+            "£23,000",
+            "£24,500"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "correctAnswer": 1,
+          "options": [
+            "45 degrees",
+            "54 degrees",
+            "60 degrees",
+            "72 degrees"
+          ],
+          "explanation": "Staff as % = (150 / (150+650+200)) * 100 = (150 / 1000) * 100 = 15%. Angle = 0.15 * 360 = 54 degrees.",
+          "question": "A company consists of 150 Staff, 650 Workers, and 200 Managers. In a pie chart representing this, what central angle represents the Staff?"
+        },
+        {
+          "correctAnswer": 3,
+          "options": [
+            "£0.10 savings",
+            "£0.15 savings",
+            "£0.18 savings",
+            "£0.20 savings per 3 items"
+          ],
+          "explanation": "5 items for £12 means £2.40 each. 3 items for £7 means £2.33 each. 3 * £2.40 = £7.20. Comparison: £7.20 vs £7.00. Saving = £0.20.",
+          "question": "Supermarket A sells 5 apples for £12.00. Supermarket B sells 3 apples for £7.00. How much is saved per 3 apples by buying from Supermarket B?"
+        },
+        {
+          "question": "The price of a laptop increases by 10% and then decreases by 10%. What is the net percentage change from the original price?",
+          "correctAnswer": 0,
+          "explanation": "New price = £1,200 * 1.10 * 0.90 = £1,320 * 0.90 = £1,188. Percentage change = (1188 - 1200)/1200 = -1%.",
+          "options": [
+            "1% decrease",
+            "No change",
+            "1% increase",
+            "2% decrease"
+          ]
+        },
+        {
+          "correctAnswer": 2,
+          "options": [
+            "20%",
+            "30%",
+            "25%",
+            "15%"
+          ],
+          "explanation": "Total = 40 + 50 + 60 + 50 = 200. Probability = 50 / 200 = 1/4 = 0.25 (25%).",
+          "question": "In a box of 200 pens, 40 are Red, 50 are Blue, 60 are Black, and the rest are Green. What is the probability of selecting a Blue pen at random?"
+        },
+        {
+          "question": "A worker's hourly rate increases from £9.20 to £11.50. What is the percentage increase in their pay?",
+          "explanation": "(New - Old) / Old = (11.50 - 9.20) / 9.20 = 2.30 / 9.20 = 0.25 or 25%.",
+          "options": [
+            "20%",
+            "25%",
+            "30%",
+            "22.5%"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "explanation": "VAT = 20%. Price including VAT = 64 * 1.2 = £76.80. Delivery = £5. Total = £81.80.",
+          "options": [
+            "£69.00",
+            "£75.80",
+            "£79.00",
+            "£81.80"
+          ],
+          "correctAnswer": 3,
+          "question": "A customer buys a printer for £64 plus 20% VAT. There is also a delivery charge of £5.00. What is the total cost?"
+        },
+        {
+          "options": [
+            "£90",
+            "£120",
+            "£135",
+            "£180"
+          ],
+          "explanation": "Volume = 2m * 3m * 0.5m = 3 cubic metres. Total cost = 3 * £45 = £135.",
+          "correctAnswer": 2,
+          "question": "A rectangular pit measuring 2m by 3m and 0.5m deep is to be filled with sand. If sand costs £45 per cubic metre, what is the total cost?"
+        },
+        {
+          "correctAnswer": 0,
+          "explanation": "Convert to decimals: 3/8 = 0.375, 40% = 0.40, 0.38, 7/20 = 0.35. Smallest is 7/20.",
+          "options": [
+            "7/20",
+            "3/8",
+            "0.38",
+            "40%"
+          ],
+          "question": "Which of the following values is the smallest: 3/8, 40%, 0.38, or 7/20?"
+        },
+        {
+          "question": "A bonus of £2,500 is shared among three employees in the ratio 2:3:5. What is the difference between the largest and smallest shares?",
+          "explanation": "Total ratio parts = 2 + 3 + 5 = 10. One part = £2,500 / 10 = £250. Smallest share (2 parts) = 2 * £250 = £500. Largest (5 parts) = 5 * £250 = £1,250. Difference = £750.",
+          "options": [
+            "£500",
+            "£750",
+            "£1,000",
+            "£250"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "correctAnswer": 3,
+          "explanation": "Current = £12. 20% of 12 = £2.40. New price = £14.40. Weekly cost = 14.40 * 5 = £72.00.",
+          "options": [
+            "£60.00",
+            "£65.50",
+            "£70.20",
+            "£72.00"
+          ],
+          "question": "A daily commute costs £12. If the price increases by 20%, what will be the total cost for a 5-day working week?"
+        },
+        {
+          "question": "A short-term loan of £60,000 has an annual simple interest rate of 4%. If the loan is repaid in full after 6 months, how much is the total repayment?",
+          "correctAnswer": 2,
+          "explanation": "60,000 * 0.04 = 2,400 per year. For 6 months: 2,400 / 2 = 1,200. Total = 60,000 + 1,200 = 61,200.",
+          "options": [
+            "£60,600",
+            "£60,800",
+            "£61,200",
+            "£62,400"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "numerical-mock-44",
+      "topic": "numerical",
+      "mockNumber": 44,
+      "title": "Numerical Reasoning Test 44",
+      "questions": [
+        {
+          "question": "A train ticket from London to Edinburgh costs £350. If the price increases by 15% this year and another 10% next year, what is the final price?",
+          "explanation": "A 15% increase is 350 * 1.15 = 402.50. A further 10% increase is 402.50 * 1.10 = £442.75.",
+          "correctAnswer": 2,
+          "options": [
+            "£437.50",
+            "£440.00",
+            "£442.75",
+            "£451.25"
+          ]
+        },
+        {
+          "correctAnswer": 1,
+          "options": [
+            "£270,000",
+            "£180,000",
+            "£150,000",
+            "£225,000"
+          ],
+          "explanation": "Ratio is 3:2, total parts = 5. Value of one part = 450,000 / 5 = 90,000. Sarah's share is 2 * 90,000 = £180,000.",
+          "question": "James and Sarah share the profits of their business in the ratio 3:2. If the total profit is £450,000, how much does Sarah receive?"
+        },
+        {
+          "options": [
+            "42.86%",
+            "30.00%",
+            "70.00%",
+            "45.25%"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Target is £1.2m. Current is £840,000. Difference = £360,000. Percentage = (360,000 / 840,000) * 100 = 42.86%.",
+          "question": "A firm has a current revenue of £840,000. They aim to reach £1.2 million by next year. What is the required percentage increase to reach this target?"
+        },
+        {
+          "question": "A consultant earns £3,000 per month. Rent is £1,400, bills are £350, transport is £200, and food is £450. What percentage of the income is saved?",
+          "explanation": "Total expenditure = 1,400 + 350 + 200 + 450 = £2,400. Income = £3,000. Savings = 3,000 - 2,400 = £600. Percentage = (600 / 3,000) * 100 = 20%.",
+          "options": [
+            "15%",
+            "25%",
+            "10%",
+            "20%"
+          ],
+          "correctAnswer": 3
+        },
+        {
+          "question": "Convert 5,000 Euros to US Dollars given the exchange rates: 1 GBP = 1.15 EUR and 1 GBP = 1.25 USD.",
+          "explanation": "5,000 EUR / 1.15 = 4,347.83 GBP. 4,347.83 * 1.25 = 5,434.78 USD. 5.43k is approximately $5,435.",
+          "options": [
+            "$5,750",
+            "$5,435",
+            "$4,348",
+            "$6,250"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "question": "An employee starts on a salary of £1,200 per month. If they receive a 5% raise every year, what is their monthly salary after 3 years?",
+          "explanation": "Year 1: 1,200 * 1.05 = 1,260. Year 2: 1,260 * 1.05 = 1,323. Year 3: 1,323 * 1.05 = 1,389.15.",
+          "options": [
+            "£1,380.00",
+            "£1,401.25",
+            "£1,389.15",
+            "£1,410.00"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "correctAnswer": 0,
+          "options": [
+            "£60",
+            "£65",
+            "£75",
+            "£55"
+          ],
+          "explanation": "The 20% discount is £15, so 0.20 * Original = 15. Original = 15 / 0.2 = £75. Sale price = 75 - 15 = £60.",
+          "question": "A jacket is sold at a 20% discount. If the discount amount was £15, what is the sale price of the jacket?"
+        },
+        {
+          "question": "An engineer earns £12/hour for a 40-hour week. Overtime is paid at 1.5x. If they work 45 hours and pay 20% tax, what is their take-home pay?",
+          "explanation": "Total hours = 40 (standard) + 5 (1.5x) = 47.5 effective hours. Total pay = 47.5 * 12 = £570. Profit = 570 - (570 * 0.2) = £456.",
+          "correctAnswer": 3,
+          "options": [
+            "£480",
+            "£540",
+            "£520",
+            "£456"
+          ]
+        },
+        {
+          "explanation": "Total parts = 5+3+2 = 10. Admin = 2/10 = 20%. 20% of 250 = 50 staff.",
+          "options": [
+            "75 staff",
+            "50 staff",
+            "125 staff",
+            "20 staff"
+          ],
+          "correctAnswer": 1,
+          "question": "A company has 250 employees. The ratio of Sales to IT to Admin is 5:3:2. How many employees are in the Admin department?"
+        },
+        {
+          "question": "A delivery driver covers a route in 4.5 hours at an average speed of 48 mph. To complete the same route in 4 hours, by how much must the speed increase?",
+          "explanation": "Distance = Speed * Time. 4.5 hours * 48 mph = 216 miles. New speed = 216 / 4 = 54 mph. Increase = 54 - 48 = 6 mph.",
+          "options": [
+            "4 mph",
+            "8 mph",
+            "6 mph",
+            "12 mph"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "correctAnswer": 0,
+          "options": [
+            "£491.67",
+            "£700.00",
+            "£525.00",
+            "£350.00"
+          ],
+          "explanation": "Net income = 42,000 - 12,500 = 29,500. 20% of 29,500 = 5,900. Monthly tax = 5,900 / 12 = £491.67.",
+          "question": "Annual salary is £42,000. Personal allowance (tax-free) is £12,500. The remaining is taxed at 20%. What is the monthly tax deduction?"
+        },
+        {
+          "options": [
+            "£2.60",
+            "£2.40",
+            "£2.80",
+            "£2.20"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Cost per unit = 1,200 / 400 = £3. New units: 400 * 1.15 = 460. New cost = 1,200 * 0.92 = £1,104. New cost per unit = 1,104 / 460 = £2.40.",
+          "question": "A factory produces 400 units at a total cost of £1,200. If production increases by 15% and total costs decrease by 8%, what is the new cost per unit?"
+        },
+        {
+          "question": "Stock B is 25% more valuable than Stock A. Stock C is 20% less valuable than Stock B. What percentage of Stock A's value is Stock C?",
+          "explanation": "A = 100. B = 1.25 * 100 = 125. C = 0.80 * 125 = 100. C is the same as A, so the percentage of A is 100%.",
+          "correctAnswer": 3,
+          "options": [
+            "80%",
+            "120%",
+            "105%",
+            "100%"
+          ]
+        },
+        {
+          "options": [
+            "77.50 kg",
+            "78.20 kg",
+            "77.71 kg",
+            "76.95 kg"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Total weight = 50 * 78 = 3,900 kg. If two 85kg people leave: 3,900 - 170 = 3,730. New mean = 3,730 / 48 = 77.71 kg.",
+          "question": "The mean weight of 50 people is 78 kg. If two people weighing 85 kg each leave the group, what is the new mean weight (to 2 decimal places)?"
+        },
+        {
+          "explanation": "Price excluding VAT = 1,500 / 1.20 = £1,250. 5% discount on 1,250 = 1,250 * 0.95 = £1,187.50.",
+          "correctAnswer": 0,
+          "options": [
+            "£1,187.50",
+            "£1,200.00",
+            "£1,125.00",
+            "£1,235.00"
+          ],
+          "question": "A laptop costs £1,500 including 20% VAT. A business can reclaim the VAT and then receives a 5% discount on the net price. How much do they pay?"
+        },
+        {
+          "question": "Energy output: Coal 120MW, Gas 80MW, Renewables 100MW. If total output remains 300MW, what % increase in Renewables is needed to reach 50% of total?",
+          "correctAnswer": 1,
+          "options": [
+            "40%",
+            "50%",
+            "20%",
+            "60%"
+          ],
+          "explanation": "Total current = 120 + 80 + 100 = 300. Renewables = 100 / 300 = 33.33%. To reach 50% of 300 (150), Renewables must increase by 50 units. (50/100) * 100 = 50%."
+        },
+        {
+          "explanation": "Price = 12.00 / 1.25 = £9.60. (Price * Mark-up = Profit). cost + 0.25cost = 12.00 => 1.25c = 12.00, c = 9.60. Margin = 2.40 / 12.00 = 20%.",
+          "options": [
+            "15%",
+            "25%",
+            "18%",
+            "20%"
+          ],
+          "correctAnswer": 3,
+          "question": "A retailer buys a product and adds a 25% mark-up on the cost price to sell it for £12.00. What is the profit margin (profit as % of selling price)?"
+        },
+        {
+          "options": [
+            "38.8%",
+            "28.0%",
+            "22.5%",
+            "31.2%"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Difference = 2,500 - 1,800 = 700. Percentage decrease = (700 / 2,500) * 100 = 28%.",
+          "question": "Last month a shop had 2,500 visitors. This month it had 1,800 visitors. What is the percentage decrease in visitors?"
+        },
+        {
+          "question": "A bakery uses 1,500kg of flour for £2,500. Next month flour usage increases by 4% and total cost becomes £2,800. What is the % change in cost per kg?",
+          "correctAnswer": 0,
+          "options": [
+            "7.69% increase",
+            "6.67% increase",
+            "12.00% increase",
+            "4.50% increase"
+          ],
+          "explanation": "Current: 1,500. Expected: 1,500 * 1.04 = 1,560. Current Price: 2,500 / 1,500 = £1.666. New Price: 2,800 / 1,560 = £1.794. % Change = (1.794 - 1.666)/1.666 = 7.69%."
+        },
+        {
+          "options": [
+            "5.50%",
+            "12.10%",
+            "7.84%",
+            "9.25%"
+          ],
+          "correctAnswer": 2,
+          "explanation": "London = 8.5 * 1.20 = £10.20/kg. Manchester = 55 / 5 = £11.00/kg. Difference = 11.00 - 10.20 = £0.80. % Higher = (0.80 / 10.20) * 100 = 7.84%.",
+          "question": "London coffee is £8.50/kg plus 20% tax. Manchester coffee is £55 for 5kg (tax included). How much more expensive is Manchester coffee per kg in %?"
+        },
+        {
+          "question": "A shipment contains 2,500 boxes of 120 eggs each. If 2% of all eggs are broken and each egg costs £0.15, what is the total financial loss?",
+          "correctAnswer": 3,
+          "options": [
+            "£4,500",
+            "£6,000",
+            "£7,500",
+            "£9,000"
+          ],
+          "explanation": "Total = 2,500 * 120 = 300,000. Broken = 300,000 * 0.02 = 6,000. Value loss = 6,000 * 1.50 = £9,000. Profit loss = 9,000 / 300,000 = 3% of revenue. 300k-9k = 291k. 9,000 is the loss."
+        },
+        {
+          "explanation": "150 GBP * 1.18 = 177 EUR. Original 200 - 177 = 23 EUR left. 23 / 1.18 = £19.49.",
+          "options": [
+            "£19.49",
+            "£22.15",
+            "£17.50",
+            "£20.00"
+          ],
+          "correctAnswer": 0,
+          "question": "A traveller exchanges £150 for Euros at a rate of 1 GBP = 1.18 EUR. They spend 177 EUR. How much GBP do they have left from the original exchange?"
+        },
+        {
+          "options": [
+            "16.00%",
+            "17.25%",
+            "16.64%",
+            "18.00%"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Growth is 1.08 * 1.08 = 1.1664. 500,000 * 1.1664 = 583,200. Increase = 83,200. 83,200 / 500,000 = 16.64%.",
+          "question": "A town's population of 500,000 grows by 8% per year. What is the total percentage increase in population after 2 years?"
+        },
+        {
+          "explanation": "Interest = 12,000 * 0.04 * (9/12) = £360. Total = 12,000 + 360 = £12,360. monthly = 12,360 / 9 = £1,373.33.",
+          "options": [
+            "£1,333.33",
+            "£1,373.33",
+            "£1,400.00",
+            "£1,385.50"
+          ],
+          "correctAnswer": 1,
+          "question": "A loan of £12,000 is taken at 4% simple interest per annum. If it is repaid in equal monthly instalments over 9 months, how much is each instalment?"
+        }
+      ]
+    },
+    {
+      "slug": "numerical-mock-45",
+      "topic": "numerical",
+      "mockNumber": 45,
+      "title": "Numerical Reasoning Test 45",
+      "questions": [
+        {
+          "correctAnswer": 2,
+          "explanation": "The total is 120 + 80 + 50 = 250. The percentage for Department B is (80 / 250) * 100 = 32%.",
+          "options": [
+            "24%",
+            "30%",
+            "32%",
+            "35%"
+          ],
+          "question": "A company has 250 employees. Department A has 120, Department B has 80, and Department C has 50. What percentage of the total workforce is in Department B?"
+        },
+        {
+          "options": [
+            "£15,000",
+            "£18,000",
+            "£27,000",
+            "£22,500"
+          ],
+          "explanation": "The ratio 3:2 means 5 total parts. One part is £45,000 / 5 = £9,000. Sarah's share (2 parts) is 2 * £9,000 = £18,000.",
+          "correctAnswer": 1,
+          "question": "A profit of £45,000 is shared between James and Sarah in the ratio of 3:2. How much does Sarah receive?"
+        },
+        {
+          "options": [
+            "£1.20",
+            "£1.10",
+            "£1.25",
+            "£1.15"
+          ],
+          "explanation": "Divide the total cost by the number of units: £14.40 / 12 = £1.20 per unit.",
+          "correctAnswer": 0,
+          "question": "If a pack of 12 items costs £14.40, what is the unit price of a single item?"
+        },
+        {
+          "question": "A tablet costs £120. A 15% discount is applied, followed by a 10% sales tax on the discounted price. What is the final price?",
+          "explanation": "Apply the 15% discount: £120 * 0.85 = £102. Then apply the 10% tax: £102 * 1.10 = £112.20.",
+          "options": [
+            "£108.00",
+            "£110.00",
+            "£115.50",
+            "£112.20"
+          ],
+          "correctAnswer": 3
+        },
+        {
+          "options": [
+            "3 hours 10 minutes",
+            "3 hours 20 minutes",
+            "3 hours 30 minutes",
+            "3 hours 45 minutes"
+          ],
+          "explanation": "Divide the distance by the speed: 210 miles / 60 mph = 3.5 hours, which is 3 hours and 30 minutes.",
+          "correctAnswer": 2,
+          "question": "How long does it take to travel 210 miles at a constant speed of 60 mph?"
+        },
+        {
+          "correctAnswer": 1,
+          "explanation": "Divide the UK amount by the exchange rate: £400 / 0.80 = €500.",
+          "options": [
+            "€480",
+            "€500",
+            "€520",
+            "€450"
+          ],
+          "question": "If the exchange rate is £1 = €1.25 (or €1 = £0.80), how many Euros will you get for £400?"
+        },
+        {
+          "correctAnswer": 0,
+          "options": [
+            "20%",
+            "25%",
+            "15%",
+            "10%"
+          ],
+          "explanation": "The increase is £6,000 - £5,000 = £1,000. Percentage increase = (1,000 / 5,000) * 100 = 20%.",
+          "question": "A laptop's price increased from £5,000 to £6,000. What is the percentage increase?"
+        },
+        {
+          "question": "A student scored 70% on a 40-question test. If the final exam has 10 more questions, how many of those 10 must they get right to average 80% overall?",
+          "explanation": "70% of 40 is 28. To achieve 80% out of 50 total questions (40), the student needs 40 correct answers. 40 - 28 = 12.",
+          "options": [
+            "8",
+            "9",
+            "10",
+            "12"
+          ],
+          "correctAnswer": 3
+        },
+        {
+          "correctAnswer": 1,
+          "options": [
+            "£75",
+            "£80",
+            "£85",
+            "£90"
+          ],
+          "explanation": "160% of £200 is £320. To find the cost per week: £320 / 4 = £80.",
+          "question": "If a monthly budget of £200 is increased by 60%, and then divided equally over 4 weeks, how much is allocated per week?"
+        },
+        {
+          "correctAnswer": 2,
+          "options": [
+            "25.5",
+            "25.8",
+            "26.0",
+            "26.5"
+          ],
+          "explanation": "Sum of ages = 25 * 5 = 125. New sum after a 31-year-old joins = 125 + 31 = 156. New average = 156 / 6 = 26.",
+          "question": "The average age of 5 employees is 25. If a new employee aged 31 joins, what is the new average age?"
+        },
+        {
+          "explanation": "10% of £800 is £80. £800 - £80 = £720. 5% of £720 is £36. £720 - £36 = £684.",
+          "options": [
+            "£684",
+            "£680",
+            "£700",
+            "£692"
+          ],
+          "correctAnswer": 0,
+          "question": "A item is priced at £800. It is discounted by 10%, and then an additional 5% discount is taken off the new price. What is the final price?"
+        },
+        {
+          "explanation": "Current: £12/hr. Increase (10%): £1.20. New wage: £13.20. Over 35 hours: £13.20 * 35 = £462.",
+          "options": [
+            "£420.00",
+            "£450.50",
+            "£460.00",
+            "£462.00"
+          ],
+          "correctAnswer": 3,
+          "question": "An employee earns £12 per hour. They receive a 10% pay rise. How much will they earn for a 35-hour week at the new rate?"
+        },
+        {
+          "correctAnswer": 1,
+          "options": [
+            "£450",
+            "£500",
+            "£550",
+            "£600"
+          ],
+          "explanation": "£2,500 / 125 = £20 per share. 150 shares * £20 = £3,000. Profit = £3,000 - £2,500 = £500.",
+          "question": "An investor buys 125 shares for £2,500. Following a rights issue, they now own 150 shares worth the same price per share. What is the total value of their holding? (Note: Calculate profit over initial investment)."
+        },
+        {
+          "question": "Marketing costs £500, R&D costs £300, and HR costs £200. If total budget is £5,000 and spent in the same ratio, how much is spent on R&D?",
+          "explanation": "The ratio of total cost is 500:300:200, which simplifies to 5:3:2. Sum of parts = 10. (3 / 10) * £5,000 = £1,500.",
+          "options": [
+            "£1,000",
+            "£1,250",
+            "£1,500",
+            "£2,000"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "explanation": "1.2 km = 1,200 metres. Time = 1,200m / 4 m/s = 300 seconds. 300 / 60 = 5 minutes.",
+          "options": [
+            "5 minutes",
+            "6 minutes",
+            "4 minutes",
+            "7.5 minutes"
+          ],
+          "correctAnswer": 0,
+          "question": "A person runs at a speed of 4 metres per second. How many minutes will it take them to run 1.2 kilometres?"
+        },
+        {
+          "correctAnswer": 1,
+          "options": [
+            "£435",
+            "£500",
+            "£375",
+            "£525"
+          ],
+          "explanation": "1,500 / 0.75 = 2,000. 25% of 2,000 = 500. Check: 2,000 - 500 = 1,500.",
+          "question": "After a 25% price reduction, a coat costs £1,500. What was the original price reduction in pounds?"
+        },
+        {
+          "question": "A shop has 150 umbrellas. It sells 20% on Monday and 25% of the remainder on Tuesday. How many umbrellas are left?",
+          "explanation": "20% of 150 = 30. Remaining = 120. 25% of 120 = 30. Total sold = 60. Remaining in stock = 150 - 60 = 90.",
+          "options": [
+            "100",
+            "110",
+            "85",
+            "90"
+          ],
+          "correctAnswer": 3
+        },
+        {
+          "question": "Machine A produces 100 units per hour. Machine B is 20% faster. How many minutes does it take Machine B to produce 100 units?",
+          "correctAnswer": 2,
+          "options": [
+            "45 minutes",
+            "48 minutes",
+            "50 minutes",
+            "54 minutes"
+          ],
+          "explanation": "The ratio of output is 120:100, which is 1.2. Time is inversely proportional to output: 60 minutes / 1.2 = 50 minutes."
+        },
+        {
+          "explanation": "Interest = £5,000 * 0.04 = £200. Total after Year 1 = £5,200. Year 2 interest = £5,200 * 0.04 = £208. Total = £5,408.",
+          "options": [
+            "£408",
+            "£400",
+            "£420.50",
+            "£416"
+          ],
+          "correctAnswer": 0,
+          "question": "What is the total compound interest earned on £5,000 over 2 years at an annual interest rate of 4%?"
+        },
+        {
+          "question": "An investor holds 2,000 shares in a company priced at £2.50 each. If the share price falls by 15%, what is the total loss in the value of the holding?",
+          "correctAnswer": 1,
+          "options": [
+            "£500",
+            "£750",
+            "£850",
+            "£1,000"
+          ],
+          "explanation": "Total current value = £2.50 * 2,000 = £5,000. After a 15% drop, value = £5,000 * 0.85 = £4,250. Loss = £750."
+        },
+        {
+          "options": [
+            "£1,000",
+            "£2,000",
+            "£2,500",
+            "£3,000"
+          ],
+          "explanation": "Target = 1.15 * 60,000 = 67,000. Actual = 60,000 + 4,000 = 64,000. Shortfall = 67,000 - 64,000 = 3,000.",
+          "correctAnswer": 3,
+          "question": "A store's monthly sales were £60,000. They aimed for a 15% increase next month but only achieved an increase of £4,000. What was the shortfall from their target?"
+        },
+        {
+          "correctAnswer": 2,
+          "options": [
+            "£60,000",
+            "£80,000",
+            "£90,000",
+            "£120,000"
+          ],
+          "explanation": "Total ratio parts = 1 + 3 + 4 = 8. One part = £240,000 / 8 = £30,000. Most expensive (4 parts) = 4 * £30,000 = £120,000. Least expensive (1 part) = £30,000. Difference = £90,000.",
+          "question": "Three cars are sold for a total of £240,000. Their prices are in the ratio 1:3:4. What is the difference in price between the most and least expensive car?"
+        },
+        {
+          "explanation": "Fuel needed = 450 miles / 45 mpg = 10 gallons. Cost = 10 * £6 = £60.",
+          "options": [
+            "£60",
+            "£75.50",
+            "£54",
+            "£66.20"
+          ],
+          "correctAnswer": 0,
+          "question": "A car travels 450 miles and averages 45 miles per gallon. If fuel costs £6.00 per gallon, what is the total fuel cost for the trip?"
+        },
+        {
+          "correctAnswer": 1,
+          "options": [
+            "£45.50",
+            "£46.00",
+            "£44.00",
+            "£47.20"
+          ],
+          "explanation": "Current price includes 20% VAT. Original price = £48 / 1.20 = £40. New price with 15% VAT = £40 * 1.15 = £46.",
+          "question": "A product costs £48 including 20% VAT. If the VAT rate is reduced to 15%, what would the new total price be?"
+        }
+      ]
     }
   ]
 }
