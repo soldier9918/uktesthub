@@ -6528,6 +6528,1638 @@
           "correctAnswer": 2
         }
       ]
+    },
+    {
+      "slug": "logical-mock-25",
+      "topic": "logical",
+      "mockNumber": 25,
+      "title": "Logical Reasoning Test 25",
+      "questions": [
+        {
+          "options": [
+            "-11",
+            "-8",
+            "-6",
+            "-4"
+          ],
+          "question": "Find the next number in the sequence: 2, 6, 1, 3, -2, ...",
+          "correctAnswer": 2,
+          "explanation": "The sequence alternates between multiplying by 3 and subtracting 5 (2x3=6, 6-5=1, 1x3=3, 3-5=-2, -2x3=-6)."
+        },
+        {
+          "options": [
+            "All writers are dreamers",
+            "Some dreamers are not thinkers",
+            "No thinkers are writers",
+            "All dreamers are writers"
+          ],
+          "explanation": "All writers are thinkers, and all thinkers are dreamers, logically implying that the first group is a subset of the last.",
+          "correctAnswer": 0,
+          "question": "If all writers are thinkers and all thinkers are dreamers, which of the following must be true?"
+        },
+        {
+          "correctAnswer": 1,
+          "question": "Pen is to Write as Needle is to:",
+          "explanation": "The relationship is 'tool to its specific action'; a needle is used to sew.",
+          "options": [
+            "Draw",
+            "Sew",
+            "ThimbleBase",
+            "Cloth"
+          ]
+        },
+        {
+          "explanation": "Following the rules: G must be next to H, and H cannot be next to J, so J must be at the other end. K's position leaves index 3.",
+          "correctAnswer": 3,
+          "question": "Four people (G, H, J, K) sit in a row. G is next to H. H is not next to J. If K is at the far left (Position 1), where is J?",
+          "options": [
+            "Position 1",
+            "Position 2",
+            "Position 3",
+            "Position 4"
+          ]
+        },
+        {
+          "options": [
+            "F15",
+            "G17",
+            "H17",
+            "G19"
+          ],
+          "explanation": "The first letters increase by 2 (A, C, E, G); the numbers increase by 4 (5, 9, 13, 17).",
+          "question": "What comes next in the series: A5, C9, E13, ...?",
+          "correctAnswer": 1
+        },
+        {
+          "options": [
+            "Uncertain",
+            "False",
+            "True",
+            "Statistically likely"
+          ],
+          "question": "Consider: All mammals breathe air. Jane is a mammal. Therefore, Jane breathes air. Is this conclusion logically sound?",
+          "correctAnswer": 2,
+          "explanation": "The first statement establishes a rule for all, and the second places Jane in that category, making the conclusion certain."
+        },
+        {
+          "options": [
+            "FQI",
+            "EPH",
+            "FRI",
+            "GRI"
+          ],
+          "explanation": "The code shifts each letter forward by 2 positions in the alphabet (C->E, A->C, T->V). D+2=F, O+2=Q, G+2=I.",
+          "correctAnswer": 0,
+          "question": "In a certain code, CAT is written as ECV. How is DOG written?"
+        },
+        {
+          "options": [
+            "North",
+            "East",
+            "West",
+            "South"
+          ],
+          "explanation": "Turning right three times from North leads West (North -> East -> South -> West).",
+          "question": "A man walks North, turns right, walks, turns right again, walks, and turns right a third time. Which direction is he facing?",
+          "correctAnswer": 2
+        },
+        {
+          "question": "Identify the next number in the sequence: 2, 3, 5, 7, 11, ...",
+          "correctAnswer": 3,
+          "explanation": "The sequence follows prime numbers: 2, 3, 5, 7, 11... the next prime is 13.",
+          "options": [
+            "9",
+            "10",
+            "12",
+            "13"
+          ]
+        },
+        {
+          "options": [
+            "All A are C",
+            "Some A are C",
+            "No A are C personally",
+            "All C are B"
+          ],
+          "correctAnswer": 1,
+          "question": "If 'Some cats are grey' and 'All grey animals are quiet', which conclusion is certain?",
+          "explanation": "If some A are B, and all B are C, then those specific A that are B must also be C."
+        },
+        {
+          "explanation": "Add the digits of each number: 12 (3), 24 (6), 36 (9). The next sum should be 12. 48 (4+8=12).",
+          "question": "Find the missing number: 12, 24, 36, ?",
+          "correctAnswer": 0,
+          "options": [
+            "48",
+            "40",
+            "52",
+            "60"
+          ]
+        },
+        {
+          "options": [
+            "Liam is shorter than Mark",
+            "Mark is taller than Sarah",
+            "Sarah is the tallest",
+            "Liam is taller than Mark"
+          ],
+          "explanation": "If Liam is taller than Sarah and Sarah is taller than Mark, Liam is the tallest and Mark is the shortest.",
+          "question": "Liam is taller than Sarah. Sarah is taller than Mark. Which must be true?",
+          "correctAnswer": 3
+        },
+        {
+          "explanation": "A marathon is a specific, long-form type of race. A novel is a specific, long-form type of book.",
+          "correctAnswer": 2,
+          "question": "Marathon is to Race as Novel is to:",
+          "options": [
+            "Paper",
+            "Author",
+            "Book",
+            "Chapter"
+          ]
+        },
+        {
+          "options": [
+            "WD",
+            "VE",
+            "WE",
+            "XC"
+          ],
+          "explanation": "The first letter moves back 1 (Z, Y, X, W). The second letter moves forward 1 (A, B, C, D).",
+          "correctAnswer": 0,
+          "question": "Complete the pattern: ZA, YB, XC, ..."
+        },
+        {
+          "options": [
+            "Tom is the youngest",
+            "Tom is younger than Sarah",
+            "Sarah is younger than Paul",
+            "Sarah is the youngest"
+          ],
+          "question": "In a group of five friends, only Paul is younger than Tom. Sarah is older than Tom. Who is likely the oldest among these three?",
+          "correctAnswer": 1,
+          "explanation": "If Paul is the only one younger than Tom, then Tom is second-youngest and everyone else is older."
+        },
+        {
+          "options": [
+            "DAER 2024",
+            "RAED 2024",
+            "AERD 2024",
+            "DEAR 2024"
+          ],
+          "question": "If STOP is coded as POTS, then READ is coded as:",
+          "correctAnswer": 0,
+          "explanation": "The word is reversed: S-T-O-P becomes P-O-T-S. R-E-A-D becomes D-A-E-R."
+        },
+        {
+          "options": [
+            "Carrot",
+            "Potato",
+            "Radish",
+            "Broccoli"
+          ],
+          "explanation": "Carrot, Potato, and Radish are root vegetables; Broccoli grows above ground.",
+          "question": "Which of the following is the 'odd one out'?",
+          "correctAnswer": 3
+        },
+        {
+          "explanation": "The sum of the numbers in each pair is 20 (1+19, 3+17, 5+15). The next odd number is 7; 20 - 7 = 13.",
+          "question": "Find the next pair: (1, 19), (3, 17), (5, 15), ...",
+          "correctAnswer": 2,
+          "options": [
+            "6, 14",
+            "7, 12",
+            "7, 13",
+            "8, 12"
+          ]
+        },
+        {
+          "options": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "question": "A drawer contains 10 black socks and 10 white socks. What is the minimum number of socks you must pull out to guarantee a matching pair?",
+          "correctAnswer": 1,
+          "explanation": "To be sure of getting a pair of the same colour when there are two colours, you need to pull 3 socks (worst case: one of each, then a match)."
+        },
+        {
+          "options": [
+            "It did not rain",
+            "It is about to rain",
+            "The grass is fake",
+            "The sun is out"
+          ],
+          "question": "If it rains, the grass gets wet. The grass is not wet. Therefore:",
+          "correctAnswer": 0,
+          "explanation": "If P implies Q, then the absence of Q implies the absence of P (Modus Tollens). Finding no wet grass means it didn't rain."
+        },
+        {
+          "correctAnswer": 3,
+          "question": "Find the next number: 2, 3, 7, 16, 32, ...",
+          "explanation": "The sequence adds square numbers: 2+1, 3+4, 7+9, 16+16. Next is 32 + 25 = 57.",
+          "options": [
+            "40",
+            "48",
+            "52",
+            "57"
+          ]
+        },
+        {
+          "explanation": "A thermometer is the instrument used to measure temperature; a clock is the instrument used to measure time.",
+          "correctAnswer": 2,
+          "question": "Thermometer is to Temperature as Clock is to:",
+          "options": [
+            "Watch",
+            "Hour",
+            "Time",
+            "Seconds"
+          ]
+        },
+        {
+          "options": [
+            "100",
+            "125",
+            "150",
+            "216"
+          ],
+          "question": "What is the next number: 1, 8, 27, 64, ...?",
+          "correctAnswer": 1,
+          "explanation": "The numbers are cubes: 1, 8 (2^3), 27 (3^3), 64 (4^3). The next is 5^3 = 125."
+        },
+        {
+          "explanation": "The sequence shifts by +3 then +2 (3, 6, 8, 11, 13, 16). The next shift is +2.",
+          "question": "Complete the sequence: 3, 6, 8, 11, 13, 16, ...",
+          "correctAnswer": 0,
+          "options": [
+            "18",
+            "19",
+            "17",
+            "20"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "logical-mock-26",
+      "topic": "logical",
+      "mockNumber": 26,
+      "title": "Logical Reasoning Test 26",
+      "questions": [
+        {
+          "correctAnswer": 2,
+          "explanation": "The pattern follows a sequence of prime numbers: 2, 3, 5, 7, 11. The next prime number after 11 is 13.",
+          "options": [
+            "12",
+            "15",
+            "13",
+            "17"
+          ],
+          "question": "Complete the sequence: 2, 3, 5, 7, 11, ?"
+        },
+        {
+          "explanation": "All bakers wear hats and Dave is a baker, therefore Dave must wear a hat. The other options are not necessarily true based on the premises.",
+          "correctAnswer": 0,
+          "options": [
+            "Dave wears a hat.",
+            "All people who wear hats are bakers.",
+            "Dave does not wear a hat.",
+            "Some bakers are not Dave."
+          ],
+          "question": "All bakers wear hats. Dave is a baker. Which of the following must be true?"
+        },
+        {
+          "question": "If LATE is coded as MBUF, how is COLD coded?",
+          "options": [
+            "DPNF",
+            "DPME",
+            "DQNF Ganz",
+            "CPME"
+          ],
+          "explanation": "The word 'LATE' is shifted forward by 1 letter in the alphabet: L->M, A->B, T->U, E->F. Following this, COLD becomes D (C+1), P (O+1), M (L+1), E (D+1).",
+          "correctAnswer": 1
+        },
+        {
+          "options": [
+            "65",
+            "70",
+            "80",
+            "75"
+          ],
+          "explanation": "The sequence increases by 5, then 10, then 15, then 20. 50 + 25 = 75.",
+          "correctAnswer": 3,
+          "question": "What comes next in the series: 0, 5, 15, 30, 50, ?"
+        },
+        {
+          "question": "Marathon is to Race as Hibernation is to:",
+          "options": [
+            "Dreaming",
+            "Sleep",
+            "Winter",
+            "Bear"
+          ],
+          "explanation": "A marathon is a long race, just as hibernation is a long sleep.",
+          "correctAnswer": 1
+        },
+        {
+          "correctAnswer": 2,
+          "explanation": "The rule is (First number x 2) + 1. (5x2)+1=11; (11x2)+1=23; (23x2)+1=47; (47x2)+1=95.",
+          "options": [
+            "91",
+            "93",
+            "95",
+            "97"
+          ],
+          "question": "Find the missing number: 5, 11, 23, 47, ?"
+        },
+        {
+          "explanation": "The total must be greater than 8 and less than 15. The only prime numbers in this range are 11 and 13. Only 11 is provided as an option.",
+          "correctAnswer": 0,
+          "options": [
+            "11",
+            "14",
+            "9",
+            "15"
+          ],
+          "question": "A box contains between 8 and 15 apples. If the number of apples is a prime number, how many could be in the box?"
+        },
+        {
+          "question": "All A are B. No B are C. Therefore:",
+          "options": [
+            "Some A are C.",
+            "All C are A.",
+            "Some B are not A.",
+            "No A are C."
+          ],
+          "correctAnswer": 3,
+          "explanation": "If no B are C, and all A are B, then it is impossible for any A to be C."
+        },
+        {
+          "options": [
+            "10",
+            "18",
+            "16",
+            "14"
+          ],
+          "correctAnswer": 2,
+          "explanation": "The pattern is -2, +4, -2, +4. 12-2=10; 10+4=14; 14-2=12; 12+4=16.",
+          "question": "What is the next number in the sequence: 12, 10, 14, 12, ?"
+        },
+        {
+          "explanation": "Wheat is a specific type of cereal, and a Ford is a specific brand/make of car.",
+          "correctAnswer": 1,
+          "options": [
+            "Engine",
+            "Car engine",
+            "Toyota/Brand",
+            "Road"
+          ],
+          "question": "Wheat is to Cereal as Ford is to:"
+        },
+        {
+          "options": [
+            "True",
+            "False",
+            "Uncertain",
+            "None of the above"
+          ],
+          "explanation": "If Susan is older than Leo and Leo is older than Sarah, Susan must be older than Sarah. The conclusion is true.",
+          "correctAnswer": 0,
+          "question": "Statement 1: Susan is older than Leo. Statement 2: Leo is older than Sarah. Conclusion: Susan is older than Sarah. Is the conclusion:"
+        },
+        {
+          "question": "Find the pattern: A2, C4, E6, ?",
+          "explanation": "Looking at the first letter: A, C, E (+2). Looking at the numbers: 2, 4, 6 (+2). The next should be G (E+2) and 8 (6+2).",
+          "correctAnswer": 3,
+          "options": [
+            "F7",
+            "G7 acoustics",
+            "H8",
+            "G8"
+          ]
+        },
+        {
+          "question": "If a train departs at 11:45 and the journey takes 2 hours and 15 minutes, what time does it arrive?",
+          "options": [
+            "1:55 PM",
+            "2:15 PM",
+            "2:00 PM",
+            "1:45 PM"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Adding 2 hours and 15 minutes to 11:45 reaches 14:00 (2:00 PM)."
+        },
+        {
+          "question": "Rich is to Wealthy as Abundant is to:",
+          "correctAnswer": 1,
+          "explanation": "The words are synonyms. 'Innocent' is the opposite of 'Guilty', while 'Abundant' and 'Plentiful' mean the same thing.",
+          "options": [
+            "Sparse",
+            "Plentiful",
+            "Scarce",
+            "Few"
+          ]
+        },
+        {
+          "explanation": "The sequence follows a pattern of dividing by 2: 80/2=40, 40/2=20, 20/2=10, 10/2=5.",
+          "correctAnswer": 3,
+          "options": [
+            "0",
+            "2.5",
+            "7.5",
+            "5"
+          ],
+          "question": "Complete the series: 80, 40, 20, 10, ?"
+        },
+        {
+          "question": "Some musicians play the piano. All piano players are guitarists. Which must be true?",
+          "explanation": "A person can play both instruments, so some guitarists are indeed pianists based on the premises provided.",
+          "correctAnswer": 0,
+          "options": [
+            "Some guitarists are pianists.",
+            "All guitarists are pianists.",
+            "No guitarists are pianists.",
+            "All musicians play the piano."
+          ]
+        },
+        {
+          "question": "What is the next number: 25, 20, 30, 25, ?",
+          "options": [
+            "30",
+            "35",
+            "40",
+            "25"
+          ],
+          "correctAnswer": 1,
+          "explanation": "The sequence alternates between subtracting 5 and adding 10. 25-5=20, 20+10=30, 30-5=25, 25+10=35."
+        },
+        {
+          "question": "Pedal is to Bicycle as Oar is to:",
+          "explanation": "A pedal is used to propel a bicycle, and an oar is used to propel a canoe.",
+          "correctAnswer": 2,
+          "options": [
+            "Water landscapes",
+            "Boat race",
+            "Canoe",
+            "Sailboat"
+          ]
+        },
+        {
+          "options": [
+            "East",
+            "West",
+            "North",
+            "South"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Moving North then turning right leads East. Turning right again leads South. Turning left from South leads back to East.",
+          "question": "A man walks North, turns right, walks, turns right again, then turns left. Which direction is he now facing?"
+        },
+        {
+          "question": "Find the next letter in the sequence: B, E, H, K, ?",
+          "options": [
+            "M",
+            "N",
+            "O",
+            "P"
+          ],
+          "explanation": "Each term moves 3 letters forward in the alphabet: B(+3)E, E(+3)H, H(+3)K, K(+3)N.",
+          "correctAnswer": 1
+        },
+        {
+          "question": "What comes next: 144, 169, 196, ?",
+          "explanation": "12 squared is 144. 13 squared is 169. 14 squared is 196. 15 squared is 225.",
+          "correctAnswer": 3,
+          "options": [
+            "215",
+            "200",
+            "220",
+            "225"
+          ]
+        },
+        {
+          "options": [
+            "K",
+            "M",
+            "J",
+            "L"
+          ],
+          "explanation": "The letters are the first letters of the months: January, February, March, April, May... the next is June.",
+          "correctAnswer": 2,
+          "question": "Which letter continues the sequence: J, F, M, A, M, ?"
+        },
+        {
+          "question": "If 3 people can paint a fence in 10 hours, how long would it take 6 people to paint the same fence?",
+          "explanation": "Three people take 10 hours. Doubling the workforce to six people would halve the time required to 5 hours.",
+          "correctAnswer": 0,
+          "options": [
+            "5 hours",
+            "20 hours",
+            "10 hours inhaler",
+            "7.5 hours"
+          ]
+        },
+        {
+          "correctAnswer": 1,
+          "explanation": "1, 8, 27 are the cubes of 1, 2, and 3. The next is 4 cubed (4x4x4) which is 64.",
+          "options": [
+            "36",
+            "64",
+            "81",
+            "48"
+          ],
+          "question": "What is the next number: 1, 8, 27, ?"
+        }
+      ]
+    },
+    {
+      "slug": "logical-mock-27",
+      "topic": "logical",
+      "mockNumber": 27,
+      "title": "Logical Reasoning Test 27",
+      "questions": [
+        {
+          "options": [
+            "5",
+            "15",
+            "25",
+            "35"
+          ],
+          "explanation": "The pattern alternates: subtract 5, add 10. 15-5=10, 10+10=20, 20-5=15, 15+10=25.",
+          "question": "Find the next number in the sequence: 15, 10, 20, 15, ...",
+          "correctAnswer": 2
+        },
+        {
+          "options": [
+            "Dr. Smith is not a doctor.",
+            "Some golfers are not doctors.",
+            "Dr. Smith is a golfer.",
+            "Only doctors play golf."
+          ],
+          "correctAnswer": 3,
+          "explanation": "The first statement establishes that any doctor is a golfer, and the second confirms Dr. Smith is a doctor. Therefore, Dr. Smith must be a golfer.",
+          "question": "All doctors are golfers. Dr. Smith is a doctor. Which of the following must be true?"
+        },
+        {
+          "correctAnswer": 1,
+          "explanation": "Moving through the alphabet: A(+2)=C, C(+2)=E, E(+2)=G. For the numbers: 2(x2)=4, 4(x2)=8, 8(x2)=16.",
+          "question": "Complete the series: A2, C4, E8, ...",
+          "options": [
+            "F12",
+            "G16",
+            "H16",
+            "G14"
+          ]
+        },
+        {
+          "correctAnswer": 0,
+          "explanation": "If no squares are circles, it is impossible for a circle to be a square.",
+          "question": "If 'No squares are circles' is true, which of the following is definitely true?",
+          "options": [
+            "No circles are squares.",
+            "Some circles are squares.",
+            "All circles are squares.",
+            "Squares are sometimes circles."
+          ]
+        },
+        {
+          "question": "What is the missing number in the sequence: 17, 13, ?, 7, 5, 3?",
+          "explanation": "The numbers are prime numbers in descending order: 13, 11, 7, 5, 3. 2 is the next prime number down.",
+          "correctAnswer": 2,
+          "options": [
+            "10",
+            "12",
+            "11",
+            "13"
+          ]
+        },
+        {
+          "options": [
+            "Stage: Actor",
+            "Actor: Theatre",
+            "Movie: Script",
+            "Playhouse: Director"
+          ],
+          "question": "Waiter is to Restaurant as ... is to ...?",
+          "explanation": "Waiters work in a restaurant; similarly, actors work in a theatre.",
+          "correctAnswer": 1
+        },
+        {
+          "options": [
+            "No birds can fly.",
+            "All birds can fly.",
+            "Some birds can fly.",
+            "Flightless birds are rare."
+          ],
+          "question": "If 'Some birds cannot fly' is true, which of the following statements must be false?",
+          "explanation": "If some birds cannot fly, then at least one bird exists that cannot fly, making 'All birds can fly' false.",
+          "correctAnswer": 1
+        },
+        {
+          "options": [
+            "A",
+            "B",
+            "C",
+            "Z"
+          ],
+          "correctAnswer": 0,
+          "explanation": "The sequence jumps backwards by 3 letters: M(L,K)J, J(I,H)G, G(F,E)D, D(C,B)A.",
+          "question": "Identify the next letter in the sequence: M, J, G, D, ..."
+        },
+        {
+          "options": [
+            "14",
+            "15",
+            "16",
+            "17"
+          ],
+          "correctAnswer": 1,
+          "question": "Find the missing number: 5, 6, 8, 11, ?, 20.",
+          "explanation": "The sequence involves adding 1, 2, 3, 4, 5. 11+4=15; 15+5=20."
+        },
+        {
+          "explanation": "The alphabet shifts forward by 3: C+3=F, A+3=D, T+3=W. Apply this to DOG: D+3=G, O+3=R, G+3=J.",
+          "question": "If CAT is coded as FDW, how is DOG coded?",
+          "correctAnswer": 2,
+          "options": [
+            "GRK",
+            "FPH",
+            "GRJ",
+            "HQK"
+          ]
+        },
+        {
+          "options": [
+            "All sweet things are apples.",
+            "All apples are sweet.",
+            "No non-fruit is sweet.",
+            "None of the above."
+          ],
+          "question": "All fruit is sweet. All apples are fruit. Which conclusion is NOT necessarily true?",
+          "explanation": "The statements only tell us about the relationship between fruit/sweet and apples/fruit. We cannot assume objects that are not fruit are not sweet.",
+          "correctAnswer": 3
+        },
+        {
+          "options": [
+            "Q",
+            "O",
+            "P",
+            "N"
+          ],
+          "question": "What comes next in the series: X, V, T, R, ...?",
+          "explanation": "Each letter is two steps back: X(-2)=V, V(-2)=T, T(-2)=R, R(-2)=P.",
+          "correctAnswer": 2
+        },
+        {
+          "correctAnswer": 0,
+          "explanation": "If you are always late when it rains, and it is raining, the deduction is that you will be late.",
+          "question": "If it rains, I am late. It is raining. What can you conclude?",
+          "options": [
+            "I will be late.",
+            "I might be late.",
+            "I will be on time.",
+            "The rain will stop."
+          ]
+        },
+        {
+          "options": [
+            "20",
+            "25",
+            "30",
+            "36"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Each number is the square of the position: 1^2=1, 2^2=4, 3^2=9, 4^2=16. The next is 5^2=25.",
+          "question": "Find the next number: 1, 4, 9, 16, ..."
+        },
+        {
+          "explanation": "A hammer is a specific type of tool, and a poodle is a specific breed/type of dog.",
+          "question": "Hammer is to Tool as ... is to ...?",
+          "correctAnswer": 3,
+          "options": [
+            "Cat: Kitten",
+            "Animal: Mammal",
+            "Carpenter: Bench",
+            "Poodle: Dog"
+          ]
+        },
+        {
+          "correctAnswer": 2,
+          "question": "Oven is to Bake as ... is to ...?",
+          "explanation": "Oven is to bake; similarly, a saw is a tool specifically used to cut.",
+          "options": [
+            "Nail: Wood",
+            "Hammer: Build",
+            "Saw: Cut",
+            "Chef: Cook"
+          ]
+        },
+        {
+          "options": [
+            "F14",
+            "G15",
+            "F13",
+            "E14"
+          ],
+          "correctAnswer": 0,
+          "question": "Complete the sequence: B2, C5, D8, E11, ...",
+          "explanation": "The letters move +1, while the numbers increase by 3. E+1=F, 11+3=14."
+        },
+        {
+          "correctAnswer": 2,
+          "explanation": "Since all squares are shapes and all shapes have edges, logically all squares must have edges.",
+          "question": "All squares are shapes. All shapes have edges. Therefore:",
+          "options": [
+            "No squares have edges.",
+            "Some squares have edges.",
+            "All squares have edges.",
+            "Edges only exist on squares."
+          ]
+        },
+        {
+          "correctAnswer": 3,
+          "explanation": "The sequence adds the previous two numbers (Fibonacci style): 2+3=5, 3+5=8, 5+8=13, 8+13=21.",
+          "question": "Find the next number: 2, 3, 5, 8, 13, ...",
+          "options": [
+            "18",
+            "19",
+            "20",
+            "21"
+          ]
+        },
+        {
+          "options": [
+            "Sun",
+            "Mercury",
+            "Mars",
+            "Jupiter"
+          ],
+          "explanation": "Mercury, Mars, and Jupiter are planets; the Sun is a star.",
+          "question": "Which of the following is the odd one out?",
+          "correctAnswer": 0
+        },
+        {
+          "correctAnswer": 1,
+          "question": "If 12 is coded as AB, what does 312 represent?",
+          "explanation": "If 1=A and 2=B, then 3=C, 1=A, 2=B. 312 spells CAB.",
+          "options": [
+            "ABC",
+            "CAB",
+            "BAC规律",
+            "CBA"
+          ]
+        },
+        {
+          "correctAnswer": 3,
+          "question": "To vote, you must be at least 18 years old. John is voting. Therefore:",
+          "explanation": "If you must be at least 18 to vote, and you are voting, it follows that you must be at least 18.",
+          "options": [
+            "You are exactly 18.",
+            "You are under 18.",
+            "You are a citizen.",
+            "You are 18 or older."
+          ]
+        },
+        {
+          "options": [
+            "10",
+            "12",
+            "14",
+            "16"
+          ],
+          "explanation": "The sequence alternates adding 4 then subtracting 2: 4+4=8, 8-2=6, 6+4=10, 10-2=8, 8+4=12.",
+          "question": "Identify the next number: 4, 8, 6, 10, 8, ...",
+          "correctAnswer": 1
+        },
+        {
+          "options": [
+            "WOLF",
+            "FLOW",
+            "WOLF (reversed)",
+            "OLFW"
+          ],
+          "explanation": "The word is reversed. STAR becomes RATS. FLOW becomes WOLF.",
+          "question": "If STAR is RATS, what is FLOW?",
+          "correctAnswer": 2
+        }
+      ]
+    },
+    {
+      "slug": "logical-mock-28",
+      "topic": "logical",
+      "mockNumber": 28,
+      "title": "Logical Reasoning Test 28",
+      "questions": [
+        {
+          "options": [
+            "32",
+            "33",
+            "34",
+            "35"
+          ],
+          "question": "What is the next number in the sequence: 6, 8, 11, 16, 23, ...?",
+          "correctAnswer": 2,
+          "explanation": "The sequence follows a pattern of adding prime numbers: +2, +3, +5, +7, +11. 23 + 11 = 34."
+        },
+        {
+          "options": [
+            "B10",
+            "B12",
+            "A12",
+            "C12"
+          ],
+          "explanation": "The first letter moves back 1 place (D, C, B, A); the number doubles (3, 6, 12, 24).",
+          "question": "Complete the series: D3, C6, ?, A24.",
+          "correctAnswer": 1
+        },
+        {
+          "options": [
+            "Smith is creative.",
+            "Smith is rich.",
+            "All rich people are artists.",
+            "Smith is not rich."
+          ],
+          "correctAnswer": 0,
+          "question": "All artists are creative. Some creative people are rich. Smith is an artist. Which must be true?",
+          "explanation": "If all artists are creative and some creative people are rich, it doesn't guarantee artists are rich. Since Smith is an artist, he must be creative."
+        },
+        {
+          "options": [
+            "Maddy is taller than Peter.",
+            "Tasha is the tallest.",
+            "Peter is taller than Maddy.",
+            "Maddy is taller than Tasha."
+          ],
+          "question": "Peter is taller than Tasha. Tasha is taller than Maddy. Who is the shortest? No, wait—which of these must be true?",
+          "correctAnswer": 2,
+          "explanation": "If Peter is taller than Tasha and Tasha is taller than Maddy, then Peter must be the tallest."
+        },
+        {
+          "options": [
+            "RSTE",
+            "ERTS",
+            "STRE",
+            "ETSR"
+          ],
+          "question": "If REST becomes TRE S, and STEP becomes PSTE, what does SETR become?",
+          "correctAnswer": 3,
+          "explanation": "In each step, the position of the letters shifts one place to the right, with the last letter moving to the front."
+        },
+        {
+          "correctAnswer": 1,
+          "question": "A hiker travels North, turns right, walks 1km, turns right again, walks 1km, then turns left. Which direction are they facing?",
+          "explanation": "Turning right from North leads East. Turning right again leads South. Turning left from South leads back to East.",
+          "options": [
+            "North",
+            "East",
+            "South",
+            "West"
+          ]
+        },
+        {
+          "correctAnswer": 3,
+          "question": "Marathon is to Race as Symphony is to:",
+          "explanation": "A marathon is a long-distance race; a symphony is a long-form musical composition consisting of movements.",
+          "options": [
+            "Note",
+            "Instrument",
+            "Conductor",
+            "Movement artist (Movement)"
+          ]
+        },
+        {
+          "options": [
+            "5726",
+            "5735",
+            "5826",
+            "4726"
+          ],
+          "question": "Find the next number: 1226, 2126, 3026, 3926, ...?",
+          "correctAnswer": 0,
+          "explanation": "The first digit increases by 1, the second digit decreases by 1. 48 becomes 57."
+        },
+        {
+          "options": [
+            "610",
+            "140",
+            "800",
+            "202"
+          ],
+          "explanation": "The rule is (First number / 2) + Second number. (8/2)+6=10; (12/2)+4=10; (20/2)+2=12.",
+          "question": "If 8 & 6 = 10, and 12 & 4 = 10, what is 20 & 2?",
+          "correctAnswer": 3
+        },
+        {
+          "options": [
+            "ZRUN",
+            "ARVO",
+            "YRUN village",
+            "YQUM"
+          ],
+          "explanation": "The code shifts each letter forward by 3 places in the alphabet (L->O, O->R, N->Q, D->G).",
+          "correctAnswer": 2,
+          "question": "In a certain code, LONDON is written as ORQGRQ. How is YORK written?"
+        },
+        {
+          "question": "In a basket, half the fruits are apples. One third of the remaining fruits are oranges, and the rest are 8 bananas. How many oranges are there?",
+          "correctAnswer": 2,
+          "explanation": "The total number of fruits is 24. Since half are apples (12), and 1/3 of the remaining 12 are oranges (4), there are 8 bananas.",
+          "options": [
+            "4",
+            "6",
+            "8",
+            "12"
+          ]
+        },
+        {
+          "question": "Poet is to Pen as ? is to Needle.",
+          "correctAnswer": 1,
+          "explanation": "Pen is the tool used by a poet; Needle is the tool used by a tailor to create their work.",
+          "options": [
+            "Thread",
+            "Tailor",
+            "Cloth spinning",
+            "Sewing machine"
+          ]
+        },
+        {
+          "question": "Which pair follows the same logic? Emerald : Gemstone",
+          "correctAnswer": 0,
+          "explanation": "This represents a 'Many-to-One' relationship where specific items are part of a larger general category.",
+          "options": [
+            "Cereal : Food",
+            "Leg : Foot",
+            "Water : Thirst",
+            "Sun : Heat"
+          ]
+        },
+        {
+          "options": [
+            "Monday",
+            "Tuesday",
+            "Saturday",
+            "Wednesday"
+          ],
+          "explanation": "If Monday is the 1st, then the 8th, 15th, and 22nd are also Mondays. Thus, the 24th is a Wednesday.",
+          "question": "If the first day of a 31-day month is Monday, what day of the week is the 24th?",
+          "correctAnswer": 3
+        },
+        {
+          "options": [
+            "Hockey",
+            "Chess",
+            "Cricket",
+            "Rounders"
+          ],
+          "explanation": "The bridge requires the player to hit a ball with a stick/bat, similar to Hockey and Cricket. Chess is a board game.",
+          "question": "Which word does NOT belong in the group: Hockey, Cricket, Chess, Rounders?",
+          "correctAnswer": 1
+        },
+        {
+          "options": [
+            "All athletes are students.",
+            "All musicians are students.",
+            "Some athletes are musicians.",
+            "No students are athletes."
+          ],
+          "explanation": "The first condition allows for some students to be both athletes and musicians, but does not require it. However, all athletes must be students.",
+          "correctAnswer": 0,
+          "question": "Statement 1: All athletes are students. Statement 2: Some students are musicians. Which conclusion is logically certain?"
+        },
+        {
+          "options": [
+            "6.5",
+            "7.0",
+            "7.5",
+            "8.0"
+          ],
+          "explanation": "The sequence adds 1.5 each time: 1.5, 3, 4.5, 6, 7.5.",
+          "question": "Find the missing number: 1.5, 3, 4.5, 6, ?",
+          "correctAnswer": 2
+        },
+        {
+          "correctAnswer": 2,
+          "question": "Clock : Time :: Thermometer : ?",
+          "explanation": "A clock measures time; a thermometer measures temperature. The relationship is Object : Measurement.",
+          "options": [
+            "Heat",
+            "Weather",
+            "Temperature",
+            "Mercury"
+          ]
+        },
+        {
+          "explanation": "The pattern is: Multiply by 2, then subtract 1. (5x2-1=9; 9x2-1=17; 17x2-1=33; 33x2-1=65).",
+          "correctAnswer": 3,
+          "question": "What is the next number in the pattern: 5, 9, 17, 33, ...?",
+          "options": [
+            "55",
+            "60",
+            "64",
+            "65"
+          ]
+        },
+        {
+          "options": [
+            "If you practice, you will win.",
+            "If you won, you must have practiced.",
+            "People who don't win don't practice.",
+            "Practice is not necessary."
+          ],
+          "explanation": "The statement implies that regular practice is a requirement for winning, but it doesn't say it's the only requirement. Therefore, winners must have practiced.",
+          "question": "Statement: 'Only those who practice regularly win the trophy.' If this is true, which of the following is true?",
+          "correctAnswer": 1
+        },
+        {
+          "options": [
+            "VCMF",
+            "VBNF village",
+            "UCMF village",
+            "WCNG village"
+          ],
+          "explanation": "Each letter is replaced by the letter immediately following it in the alphabet. T->U, A->B, B->C, L->M, E->F.",
+          "question": "If TABLE is coded as UBMF, how is TABLET coded? (Wait, correction: how is UBLE coded?) No, if TABLE is UBMF, what is UCMF the code for?",
+          "correctAnswer": 0
+        },
+        {
+          "options": [
+            "Mother",
+            "Cousin",
+            "Niece village",
+            "Aunt village"
+          ],
+          "explanation": "Brother and Sister are siblings (opposite gender, same generation); Nephew and Niece share the same relationship.",
+          "correctAnswer": 2,
+          "question": "Brother is to Sister as Nephew is to:"
+        },
+        {
+          "options": [
+            "18",
+            "20",
+            "22",
+            "24"
+          ],
+          "explanation": "The sequence is decreasing by a reducing amount: -10, -8, -6. 26 - 6 = 20.",
+          "correctAnswer": 1,
+          "question": "Complete the sequence: 50, 40, 32, 26, ...?"
+        },
+        {
+          "options": [
+            "18",
+            "20 village",
+            "21 village",
+            "19 village"
+          ],
+          "explanation": "The rule is (A x B) + 1. (3x4)+1=13; (5x2)+1=11; (6x3)+1=19.",
+          "question": "If 3 # 4 = 13 and 5 # 2 = 11, what is 6 # 3?",
+          "correctAnswer": 3
+        }
+      ]
+    },
+    {
+      "slug": "logical-mock-29",
+      "topic": "logical",
+      "mockNumber": 29,
+      "title": "Logical Reasoning Test 29",
+      "questions": [
+        {
+          "explanation": "The first letters advance by 2 (A, C, E, G, I), and the numbers double each time (3, 6, 12, 24, 48).",
+          "options": [
+            "H36",
+            "G48",
+            "I48",
+            "I36"
+          ],
+          "question": "What is the next term in the sequence: A3, C6, E12, G24, ...?",
+          "correctAnswer": 2
+        },
+        {
+          "explanation": "All birds lay eggs, and since all robins are birds, every robin must logically lay eggs.",
+          "options": [
+            "Robins lay eggs.",
+            "Only robins lay eggs.",
+            "Some robins do not lay eggs.",
+            "All egg-layers are robins."
+          ],
+          "question": "All birds lay eggs. All robins are birds. Which of the following must be true?",
+          "correctAnswer": 0
+        },
+        {
+          "correctAnswer": 1,
+          "question": "A compass needle points North. After three 90-degree clockwise turns, which direction is it pointing?",
+          "options": [
+            "South-East",
+            "West",
+            "North-West",
+            "East"
+          ],
+          "explanation": "The sequence rotates 90 degrees clockwise each time: North, East, South, West."
+        },
+        {
+          "question": "Complete the analogy: Library is to Book as Museum is to:",
+          "correctAnswer": 3,
+          "explanation": "A library houses books; similarly, a museum houses and displays artefacts.",
+          "options": [
+            "Gallery",
+            "History",
+            "Sculpture",
+            "Artefact"
+          ]
+        },
+        {
+          "explanation": "Summing the two known statements shows that some musicians (who are poets) must be singers.",
+          "options": [
+            "Some musicians are singers.",
+            "All singers are musicians.",
+            "No poets are singers.",
+            "All musicians are poets."
+          ],
+          "question": "Some poets are singers. All poets are musicians. Therefore:",
+          "correctAnswer": 0
+        },
+        {
+          "options": [
+            "14",
+            "15",
+            "12",
+            "10"
+          ],
+          "explanation": "The pattern subtracts 4 then adds 2: 20(-4)=16, 16(+2)=18, 18(-4)=14, 14(+2)=16. 16-4 = 12.",
+          "correctAnswer": 2,
+          "question": "Find the missing number in the sequence: 20, 16, 18, 14, 16, ?"
+        },
+        {
+          "correctAnswer": 1,
+          "question": "In a race, Simon finished ahead of George. Harriet finished behind George. What position did Harriet finish?",
+          "options": [
+            "First",
+            "Third",
+            "Fourth",
+            "Second"
+          ],
+          "explanation": "If Harriet is behind George, George is in 2nd place. Simon is 1st. Harriet must be 3rd."
+        },
+        {
+          "correctAnswer": 2,
+          "question": "A box contains 4 squares and 4 rectangles. What is the minimum number of shapes in the box?",
+          "options": [
+            "8",
+            "6",
+            "4",
+            "2"
+          ],
+          "explanation": "The question asks for the minimum. Since all squares are rectangles, only 4 shapes are guaranteed to be distinct if the 4 squares are the rectangles."
+        },
+        {
+          "options": [
+            "IPME",
+            "HMFE",
+            "FNKC",
+            "HOPE"
+          ],
+          "explanation": "The code shifts each letter forward by one (A->B, P->Q, L->M, E->F). G->H, O->P, L->M, D->E.",
+          "correctAnswer": 3,
+          "question": "If APPLE is coded as BQQMF, how is GOLD coded?"
+        },
+        {
+          "explanation": "Subtracting the given weights: Apple + Orange = 250. 250 + Banana = 400. Therefore Banana = 150g.",
+          "options": [
+            "100g",
+            "150g",
+            "200g",
+            "250g"
+          ],
+          "question": "An apple and an orange weigh 250g. An apple, an orange, and a banana weigh 400g. How much does the banana weigh?",
+          "correctAnswer": 1
+        },
+        {
+          "explanation": "The outer shape of the first pair becomes the inner shape of the second, but the logic here is a simple inverse pairing. Smaller circles go inside squares.",
+          "options": [
+            "Circle inside a Square",
+            "Square inside a Circle",
+            "Large Triangle",
+            "Small Square"
+          ],
+          "question": "Triangle is to Square as Circle is to: [Based on increasing number of sides]",
+          "correctAnswer": 0
+        },
+        {
+          "question": "Which word comes first alphabetically? BLUNT, BLAST, BLOCK, BLIND.",
+          "correctAnswer": 1,
+          "explanation": "The words follow alphabetical order based on the third letter: BL_A_ST, BL_I_ND, BL_O_CK, BL_U_NT.",
+          "options": [
+            "BLUNT",
+            "BLAST",
+            "BLOCK",
+            "BLIND"
+          ]
+        },
+        {
+          "correctAnswer": 3,
+          "question": "What is the next number in the prime sequence: 2, 3, 5, 7, 11, ?",
+          "options": [
+            "12",
+            "15",
+            "14",
+            "13"
+          ],
+          "explanation": "The numbers are prime: 2, 3, 5, 7, 11. The next prime is 13."
+        },
+        {
+          "explanation": "If Tuesday was the 5th, the 12th and 19th were also Tuesdays. Therefore the 21st is a Thursday.",
+          "options": [
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "question": "If the 5th of the month was a Tuesday, what day was the 21st of the same month?",
+          "correctAnswer": 2
+        },
+        {
+          "explanation": "All others are verbs associated with movement; 'Stationary' is an adjective describing lack of movement.",
+          "options": [
+            "Stationary",
+            "Gallop",
+            "Sprinting",
+            "Amble"
+          ],
+          "question": "Identify the odd one out: Stationary, Gallop, Sprinting, Amble.",
+          "correctAnswer": 0
+        },
+        {
+          "explanation": "A car is a specific type of vehicle. A hammer is a specific type of tool.",
+          "options": [
+            "Nail",
+            "Tool",
+            "Wood",
+            "Work"
+          ],
+          "question": "Vehicle is to Car as Tool is to:",
+          "correctAnswer": 1
+        },
+        {
+          "options": [
+            "RUT",
+            "RIT",
+            "ROT",
+            "RET"
+          ],
+          "explanation": "The middle letters are vowels in order (A, E, I, O, U). The consonants reflect R and T.",
+          "correctAnswer": 2,
+          "question": "Complete the pattern: RAT, RET, RIT, ?, RUT."
+        },
+        {
+          "options": [
+            "52",
+            "60",
+            "48",
+            "51"
+          ],
+          "explanation": "The sum of the digits of each number is 6 (1+5, 2+4, 3+3, 4+2). 5+1 equals 6.",
+          "correctAnswer": 3,
+          "question": "Which number follows the pattern: 15, 24, 33, 42, ?"
+        },
+        {
+          "correctAnswer": 0,
+          "question": "All doctors wear white coats. Some bakers wear white coats. Which is possible?",
+          "options": [
+            "Some people in white coats are bakers.",
+            "All bakers are doctors.",
+            "No bakers wear white coats.",
+            "Doctors are the only ones who wear white coats."
+          ],
+          "explanation": "The first statement only claims that doctors wear white coats, not that ONLY doctors wear them. Therefore, some white-coat wearers could be bakers."
+        },
+        {
+          "options": [
+            "68",
+            "72",
+            "75",
+            "81"
+          ],
+          "explanation": "Subtracting 2 from 11 gives 9. Multiplying 9 by 3 gives 27. 27 minus 2 is 25. 25 times 3 is 75.",
+          "correctAnswer": 2,
+          "question": "Find the next number: 11, 9, 27, 25, ?"
+        },
+        {
+          "correctAnswer": 1,
+          "question": "If you have 5 people, and every person must stand next to at least one other person, what is the maximum number of people in a line?",
+          "options": [
+            "4",
+            "5",
+            "6",
+            "7"
+          ],
+          "explanation": "To maximize, the 5 people must be in a single straight line. 3 shared edges between 4 of them. 3 to 1 to 1 implies 5."
+        },
+        {
+          "explanation": "This is a classic syllogistic fallacy. Knowing B are C and A are C does not mean A are B. Only 'Cannot be determined' is safe.",
+          "options": [
+            "All roses are lilies.",
+            "Some roses are lilies.",
+            "No roses are lilies.",
+            "None of the above."
+          ],
+          "question": "All roses are flowers. All lilies are flowers. Therefore:",
+          "correctAnswer": 3
+        },
+        {
+          "explanation": "Each row/set contains one of each: circle, square, triangle. If row 3 has triangle and circle, the missing is square.",
+          "options": [
+            "Square",
+            "Circle",
+            "Triangle",
+            "Hexagon"
+          ],
+          "question": "In a 3x3 grid, each row must contain a unique shape: Square, Circle, Triangle. If Row 3 has a Triangle and a Circle, what is the third shape?",
+          "correctAnswer": 0
+        },
+        {
+          "explanation": "Mirroring 'LEMON' results in 'NOMEL'.",
+          "options": [
+            "ELMON",
+            "NOMLE",
+            "NOMEL",
+            "MELON"
+          ],
+          "question": "If a word is mirrored perfectly, LEMON becomes:",
+          "correctAnswer": 2
+        }
+      ]
+    },
+    {
+      "slug": "logical-mock-30",
+      "topic": "logical",
+      "mockNumber": 30,
+      "title": "Logical Reasoning Test 30",
+      "questions": [
+        {
+          "question": "Find the next number in the sequence: 7, 11, 10, 14, 13, ...",
+          "options": [
+            "12",
+            "15",
+            "17",
+            "19"
+          ],
+          "explanation": "The pattern alternates between adding 4 and subtracting 1 (7+4=11, 11-1=10, 10+4=14, 14-1=13). Therefore, 13+4=17.",
+          "correctAnswer": 2
+        },
+        {
+          "explanation": "Logical deduction: Since all trains are late and the 10:15 is a train, it must also be late. No information is given about the weather.",
+          "question": "All trains are delayed today. The 10:15 to London Paddington is a train. What can be logically concluded?",
+          "options": [
+            "The 10:15 is on time.",
+            "It is raining outside.",
+            "The 10:15 will arrive late.",
+            "Only the 10:15 is late."
+          ],
+          "correctAnswer": 3
+        },
+        {
+          "explanation": "Each number is the cube of its position in the sequence (1³, 2³, 3³, 4³). 5³ is 125.",
+          "question": "Identify the next number in the square/cube sequence: 1, 8, 27, 64, ...",
+          "options": [
+            "100",
+            "125",
+            "136",
+            "150"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "explanation": "The words follow an alphabetical sequence of their first letters: A(pple), B(erry), C(herry), D(ate).",
+          "question": "Which word completes the series: Apple, Berry, Cherry, ...?",
+          "options": [
+            "Date",
+            "Elderberry",
+            "Fig",
+            "Grape"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "options": [
+            "Wood",
+            "Furniture",
+            "Saw",
+            "Metal"
+          ],
+          "question": "Cobbler is to Shoe as Carpenter is to:",
+          "explanation": "A cobbler works with shoes, just as a carpenter works with wood. This is a functional relationship.",
+          "correctAnswer": 0
+        },
+        {
+          "correctAnswer": 2,
+          "explanation": "If no mathematicians are musicians and some musicians are teachers, it is logically possible that some teachers are not mathematicians.",
+          "question": "No mathematicians are musicians. Some musicians are teachers. Which conclusion is most likely valid?",
+          "options": [
+            "All teachers are mathematicians.",
+            "No teachers are mathematicians.",
+            "Some teachers are not mathematicians.",
+            "All mathematicians are teachers."
+          ]
+        },
+        {
+          "correctAnswer": 1,
+          "question": "Complete the pattern: AZ, BY, CX, ...",
+          "options": [
+            "DV",
+            "DW",
+            "EV",
+            "EW"
+          ],
+          "explanation": "The first letter moves forward by 1 (A, B, C, D), and the second letter moves backward by 1 (Z, Y, X, W)."
+        },
+        {
+          "explanation": "If J > K and K > L, then J must be larger than L. L cannot be the heaviest.",
+          "question": "John is heavier than Kevin. Kevin is heavier than Leo. Who is the heaviest, or what is the certain relationship?",
+          "options": [
+            "L is heavier than J.",
+            "K is the heaviest.",
+            "J and L are the same weight.",
+            "J is heavier than L."
+          ],
+          "correctAnswer": 3
+        },
+        {
+          "correctAnswer": 2,
+          "explanation": "The sequence involves doubling the number and then adding 1 (3x2+1=7, 7x2+1=15, 15x2+1=31). 31x2+1=63.",
+          "options": [
+            "45",
+            "58",
+            "63",
+            "65"
+          ],
+          "question": "Find the next number in the sequence: 3, 7, 15, 31, ..."
+        },
+        {
+          "options": [
+            "Fish",
+            "Human",
+            "Snake",
+            "Lizard"
+          ],
+          "question": "Aves is to Bird as Mammal is to:",
+          "explanation": "A 'Bird' is a member of the class 'Aves', just as a 'Human' is a member of the class 'Mammal'.",
+          "correctAnswer": 1
+        },
+        {
+          "explanation": "The first letter advances three places (A+3=D, D+3=G, G+3=J). The second letter advances one place (M, N, O, P).",
+          "options": [
+            "IP",
+            "JP",
+            "IQ",
+            "JP"
+          ],
+          "question": "Complete the series: AM, DN, GO, ...",
+          "correctAnswer": 3
+        },
+        {
+          "correctAnswer": 0,
+          "explanation": "The sequence follows the pattern: -2, +4, -2, +4. 14+4 = 18.",
+          "options": [
+            "18",
+            "12",
+            "16",
+            "20"
+          ],
+          "question": "What comes next: 14, 12, 16, 14, ...?"
+        },
+        {
+          "question": "No athletes are smokers. Some runners are smokers. Which must be true?",
+          "options": [
+            "All runners are athletes.",
+            "Some runners are athletes.",
+            "Some runners are not athletes.",
+            "All athletes are runners."
+          ],
+          "explanation": "The rule 'No athletes are smokers' prevents any athlete from being in the smoker group, even if some smokers happen to be runners.",
+          "correctAnswer": 2
+        },
+        {
+          "explanation": "A 'Gavel' is the tool used by a 'Judge', just as a 'Scalpel' is a primary tool used by a 'Surgeon'.",
+          "options": [
+            "Stethoscope",
+            "Surgeon",
+            "Hospital",
+            "Patient"
+          ],
+          "question": "Gavel is to Judge as Scalpel is to:",
+          "correctAnswer": 1
+        },
+        {
+          "correctAnswer": 3,
+          "question": "Identify the next letter: p, q, r, p, q, r, ...",
+          "options": [
+            "q",
+            "s",
+            "r",
+            "p"
+          ],
+          "explanation": "The pattern is p, q, r, p, q, r... Following 'r', the sequence restarts at 'p'."
+        },
+        {
+          "options": [
+            "162",
+            "108",
+            "150",
+            "212"
+          ],
+          "question": "Find the missing number: 2, 6, 18, 54, (...)",
+          "explanation": "Each number is multiplied by 3 to get the next (2x3=6, 6x3=18, 18x3=54). 54x3=162.",
+          "correctAnswer": 0
+        },
+        {
+          "correctAnswer": 2,
+          "options": [
+            "No squares have four sides.",
+            "Some squares do not have four sides.",
+            "All squares have four sides.",
+            "Rectangles are squares."
+          ],
+          "question": "All squares are rectangles. All rectangles have four sides. Therefore:",
+          "explanation": "If all squares are rectangles, and all rectangles have four sides, then squares must have four sides by transitive logic."
+        },
+        {
+          "question": "What is the next number in the prime sequence: 2, 3, 5, 7, ...?",
+          "options": [
+            "9",
+            "11",
+            "13",
+            "15"
+          ],
+          "explanation": "The first number is a prime number sequence: 2, 3, 5, 7. The next prime is 11.",
+          "correctAnswer": 1
+        },
+        {
+          "explanation": "A thermometer measures temperature, while a barometer measures atmospheric pressure.",
+          "question": "Temperature is to Thermometer as Pressure is to:",
+          "options": [
+            "Barometer",
+            "Anemometer",
+            "Hygrometer",
+            "Altimeter"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "correctAnswer": 3,
+          "question": "Complete the sequence: 1, 3, 7, 13, ...",
+          "options": [
+            "18",
+            "19",
+            "20",
+            "21"
+          ],
+          "explanation": "The sequence adds increasing even numbers: +2, +4, +6. 13+8 = 21."
+        },
+        {
+          "correctAnswer": 1,
+          "question": "If CAT is coded as DBU, how is DOG coded?",
+          "options": [
+            "EPI",
+            "EPH",
+            "FPH",
+            "DQH"
+          ],
+          "explanation": "This is a simple substitution cipher where each letter is replaced by the next one in the alphabet (C->D, A->B, T->U). D+1=E, O+1=P, G+1=H."
+        },
+        {
+          "question": "Some A are B. All B are C. Which of the following is definitely true?",
+          "options": [
+            "All A are C.",
+            "No A are C.",
+            "Some A are C.",
+            "Some C are not B."
+          ],
+          "explanation": "If some A are B, and all B are C, then those A that are B must necessarily be C.",
+          "correctAnswer": 2
+        },
+        {
+          "options": [
+            "D",
+            "4",
+            "E",
+            "5"
+          ],
+          "question": "Find the next in the series: A, 1, B, 2, C, 3, ...",
+          "explanation": "The sequence alternates between the letter and its alphabetical position (A=1, B=2, C=3). The next letter is D.",
+          "correctAnswer": 0
+        },
+        {
+          "explanation": "London, Paris, and Berlin are all capital cities. Rome is the capital of Italy, whereas the others are not capitals of major European nations in this context.",
+          "options": [
+            "Lyon",
+            "Munich",
+            "Milan",
+            "Rome"
+          ],
+          "question": "Which city belongs in this group: London, Paris, Berlin, ...?",
+          "correctAnswer": 3
+        }
+      ]
     }
   ]
 }
