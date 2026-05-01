@@ -7503,6 +7503,692 @@
       "type": "image_question",
       "imageAlt": "Yellow triangle with a black border showing a person being hit on the head by falling bricks.",
       "id": "co-im-0162"
+    },
+    {
+      "question": "If a task requires safety goggles, your employer is allowed to ask you to pay for them or provide your own.",
+      "explanation": "Employers are legally responsible for providing all necessary PPE to employees free of charge for tasks that require it.",
+      "correctAnswer": false,
+      "type": "true_false",
+      "id": "co-tf-0001"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": true,
+      "explanation": "A water extinguisher (red label) should never be used on electrical fires as water conducts electricity and could cause a fatal shock.",
+      "question": "You should never use a standard Water fire extinguisher on a fire involving live electrical equipment.",
+      "id": "co-tf-0002"
+    },
+    {
+      "question": "Minor injuries, such as a small cut that only needs a plaster, do not need to be recorded in the site accident book.",
+      "explanation": "All accidents, no matter how small, must be recorded in the site accident book to help identify trends and prevent future incidents.",
+      "correctAnswer": false,
+      "type": "true_false",
+      "id": "co-tf-0003"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": true,
+      "explanation": "In many cases, the symptoms of occupational asthma may improve or disappear when away from the irritants on site, such as during weekends or holidays.",
+      "question": "One sign of occupational asthma is that symptoms often improve when you are away from work for a few days.",
+      "id": "co-tf-0004"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": false,
+      "explanation": "Even 'low voltage' tools (110v) can cause serious injury or death; they are safer than 230v but not risk-free.",
+      "question": "You do not need to check 110v power tools for damage because the voltage is too low to cause a fatal electric shock.",
+      "id": "co-tf-0005"
+    },
+    {
+      "correctAnswer": true,
+      "type": "true_false",
+      "question": "When lifting a heavy load from the ground, you should keep your back straight and use your legs to lift.",
+      "explanation": "Lifting with a straight back and bent knees uses the strong leg muscles and protects the spine from injury.",
+      "id": "co-tf-0006"
+    },
+    {
+      "question": "It is acceptable to put hazardous waste into a general waste skip as long as it is at the bottom.",
+      "explanation": "Hazardous waste, such as oily rags or chemicals, must be disposed of in specific containers and never mixed with general site rubbish.",
+      "correctAnswer": false,
+      "type": "true_false",
+      "id": "co-tf-0007"
+    },
+    {
+      "explanation": "The legal limit for driving is much higher than what is safe for a construction site; most sites have a zero-tolerance policy.",
+      "question": "You can be over the site's limit for alcohol even if you are under the legal limit for driving a car on the road.",
+      "type": "true_false",
+      "correctAnswer": true,
+      "id": "co-tf-0008"
+    },
+    {
+      "question": "Weil's Disease (Leptospirosis) is a serious infection that is most commonly caught by breathing in dust from old buildings.",
+      "explanation": "Leptospirosis is usually contracted through contact with water or soil contaminated by the urine of infected animals, particularly rats.",
+      "correctAnswer": false,
+      "type": "true_false",
+      "id": "co-tf-0009"
+    },
+    {
+      "explanation": "Under the 'Duty of Care', every individual on site is responsible for their own safety and the safety of those affected by their actions.",
+      "question": "Every worker on a construction site has a legal duty to look after their own health and safety.",
+      "type": "true_false",
+      "correctAnswer": true,
+      "id": "co-tf-0010"
+    },
+    {
+      "question": "A safety sign that is a red circle with a diagonal line through it means that an action is mandatory and must be carried out.",
+      "explanation": "While blue circles usually mean 'Mandatory' (must do), a red circle with a diagonal line is a 'Prohibition' sign (must NOT do).",
+      "correctAnswer": false,
+      "type": "true_false",
+      "id": "co-tf-0011"
+    },
+    {
+      "question": "The damage caused by using vibrating power tools over a long period, known as Hand-Arm Vibration Syndrome, is permanent.",
+      "explanation": "Vibration White Finger is a permanent condition; once the nerves and blood vessels are damaged, they cannot be fully repaired.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "id": "co-tf-0012"
+    },
+    {
+      "question": "If your safety helmet is damaged, you should continue working until the end of the shift before reporting it.",
+      "explanation": "If your PPE is damaged or lost, you must inform your supervisor immediately and obtain a replacement before continuing with hazardous work.",
+      "type": "true_false",
+      "correctAnswer": false,
+      "id": "co-tf-0013"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": true,
+      "question": "Carbon Monoxide gas has no smell, taste, or colour, making it very difficult to detect without an alarm.",
+      "explanation": "Carbon Monoxide is a toxic, colourless, and odourless gas produced by incomplete combustion in engines or heaters.",
+      "id": "co-tf-0014"
+    },
+    {
+      "explanation": "COSHH assessments are required for any substance that could be hazardous to health, including common items like cement, wood dust, and paints.",
+      "question": "COSHH assessments are only required for chemicals that have a 'toxic' skull and crossbones symbol on the packaging.",
+      "correctAnswer": false,
+      "type": "true_false",
+      "id": "co-tf-0015"
+    },
+    {
+      "correctAnswer": true,
+      "type": "true_false",
+      "question": "Falls from height are the most common cause of fatal accidents in the construction industry.",
+      "explanation": "HSE statistics show that falls from height remain the single biggest cause of workplace fatalities in the UK construction industry.",
+      "id": "co-tf-0016"
+    },
+    {
+      "explanation": "Even if you are not using the tools, you must wear hearing protection if you are working near others who are creating high noise levels to prevent long-term damage.",
+      "question": "You should wear hearing protection if you are working near someone else who is using a noisy piece of equipment.",
+      "type": "true_false",
+      "correctAnswer": true,
+      "id": "co-tf-0017"
+    },
+    {
+      "correctAnswer": false,
+      "type": "true_false",
+      "question": "If you discover a fire on site, your first priority should be to try and put it out before telling anyone else.",
+      "explanation": "The person who discovers the fire should immediately raise the alarm, and then everyone should follow the site's evacuation procedure.",
+      "id": "co-tf-0018"
+    },
+    {
+      "explanation": "Solvent-based paints and thinners are highly flammable and must be stored in a locked, fire-rated metal cabinet or a dedicated flame-proof store.",
+      "question": "It is safe to store flammable liquids like thinners in an open plastic bucket as long as they are kept in the shade.",
+      "type": "true_false",
+      "correctAnswer": false,
+      "id": "co-tf-0019"
+    },
+    {
+      "explanation": "Tiredness can lead to poor decision-making and slower reaction times, significantly increasing the risk of accidents.",
+      "question": "Being excessively tired can increase the risk of accidents on site.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "id": "co-tf-0020"
+    },
+    {
+      "correctAnswer": true,
+      "type": "true_false",
+      "explanation": "Blue circular signs indicate that a specific action is required, such as 'Wear Eye Protection' or 'Keep Clear'.",
+      "question": "A blue circular sign with a white symbol is a mandatory sign, meaning you must follow the instruction shown.",
+      "id": "co-tf-0021"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": false,
+      "question": "Health and safety laws only apply to full-time employees and do not cover sub-contractors or agency workers.",
+      "explanation": "The Health and Safety at Work Act (1974) and subsequent regulations cover sub-contractors, agency workers, and permanent employees equally.",
+      "id": "co-tf-0022"
+    },
+    {
+      "question": "You must always carry out a task given by your supervisor, even if you believe it is unsafe.",
+      "explanation": "If you feel a task is genuinely unsafe, you have the right to stop work and report your concerns to a supervisor without being punished.",
+      "correctAnswer": false,
+      "type": "true_false",
+      "id": "co-tf-0023"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": true,
+      "explanation": "Skin contact with wet concrete can cause 'cement burns' or dermatitis due to its high alkalinity. Wash skin immediately if contact occurs.",
+      "question": "Allowing wet concrete to stay in contact with your skin can cause serious burns.",
+      "id": "co-tf-0024"
+    },
+    {
+      "explanation": "Old electrical equipment and high-wattage appliances generate heat that can ignite wood, dust, or flammable materials found on sites.",
+      "question": "Leaving electrical equipment switched on and unattended overnight is a common cause of fires on construction sites.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "id": "co-tf-0025"
+    },
+    {
+      "correctAnswer": false,
+      "type": "true_false",
+      "explanation": "Asbestos is only dangerous when its fibres are disturbed and become airborne; if in good condition and undisturbed, it is often safer to leave it.",
+      "question": "All materials containing asbestos must be removed from a building immediately, even if they are in good condition and unlikely to be disturbed.",
+      "id": "co-tf-0026"
+    },
+    {
+      "question": "You have a legal responsibility to cooperate with your employer on matters of health and safety.",
+      "explanation": "The Health and Safety at Work Act requires employees to cooperate with their employer to ensure everyone stays safe.",
+      "type": "true_false",
+      "correctAnswer": true,
+      "id": "co-tf-0027"
+    },
+    {
+      "explanation": "Near misses are vital warning signs that a serious accident could happen; reporting them allows the site to fix the problem before someone gets hurt.",
+      "question": "You do not need to report a 'near miss' (an accident that almost happened) if no one was actually injured.",
+      "correctAnswer": false,
+      "type": "true_false",
+      "id": "co-tf-0028"
+    },
+    {
+      "correctAnswer": true,
+      "type": "true_false",
+      "explanation": "Dust from stone, brick, and concrete contains silica, which causes permanent scarring of the lungs (silicosis) if inhaled over time.",
+      "question": "Inhaling dust from cutting stone or concrete can cause long-term, incurable lung disease.",
+      "id": "co-tf-0029"
+    },
+    {
+      "correctAnswer": false,
+      "type": "true_false",
+      "question": "It is safe to stand on the very top two steps of a pair of stepladders to gain extra reach.",
+      "explanation": "Rungs must be used for climbing; the top few steps are unstable and intended for balance or holding, not for standing.",
+      "id": "co-tf-0030"
+    },
+    {
+      "question": "Lifting equipment used for lifting people or accessories like slings must be thoroughly examined at least every six months.",
+      "explanation": "Lifting accessories like slings and shackles must be inspected every 6 months to ensure they have not become worn or dangerous.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "id": "co-tf-0031"
+    },
+    {
+      "question": "Standard safety goggles provide enough protection for your eyes when performing electric arc welding.",
+      "explanation": "Protective goggles protect against impacts and splashes, but they do not filter out the intense UV radiation produced by welding.",
+      "type": "true_false",
+      "correctAnswer": false,
+      "id": "co-tf-0032"
+    },
+    {
+      "question": "Providing Personal Protective Equipment (PPE) is the most effective way to control a hazard on a construction site.",
+      "explanation": "PPE is a last resort; hazards should first be removed or controlled at the source through engineering or design.",
+      "type": "true_false",
+      "correctAnswer": false,
+      "id": "co-tf-0033"
+    },
+    {
+      "explanation": "Underground cables can look like pipes or be unmarked; always assume they are live and dangerous until proven otherwise.",
+      "question": "Before digging, you should always assume that any underground cables you find are live.",
+      "type": "true_false",
+      "correctAnswer": true,
+      "id": "co-tf-0034"
+    },
+    {
+      "explanation": "A 'Permit to Work' is a formal safety document for high-risk tasks like hot work or confined spaces; it must be strictly followed.",
+      "question": "A 'Permit to Work' is just a suggestion and can be ignored if you are experienced in the task.",
+      "correctAnswer": false,
+      "type": "true_false",
+      "id": "co-tf-0035"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": true,
+      "explanation": "Skin contact with certain oils and chemicals can cause dermatitis, a painful condition that makes the skin itchy, red, or cracked.",
+      "question": "Frequent contact with mineral oils and solvents can lead to a skin condition known as dermatitis.",
+      "id": "co-tf-0036"
+    },
+    {
+      "question": "High-visibility clothing must be kept done up and clean to ensure it works effectively.",
+      "explanation": "High-visibility clothing must be kept clean and fastened to ensure the wearer is easily seen by plant operators and drivers.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "id": "co-tf-0037"
+    },
+    {
+      "question": "You can catch a serious disease called Weil's disease if you come into contact with rat urine or contaminated water on site.",
+      "explanation": "Leptospirosis (Weil's disease) is a serious infection carried by rats that can enter the body through cuts or the mouth.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "id": "co-tf-0038"
+    },
+    {
+      "explanation": "The person in charge of the site (Host/Employer) is responsible for providing sufficient and clean toilets for all workers.",
+      "question": "Construction workers are responsible for finding their own toilet facilities off-site if the project lasts less than a week.",
+      "correctAnswer": false,
+      "type": "true_false",
+      "id": "co-tf-0039"
+    },
+    {
+      "question": "A Risk Assessment and a Method Statement are exactly the same thing.",
+      "explanation": "A Risk Assessment identifies hazards and measures to control them, while a Method Statement describes the step-by-step safe way to do a job.",
+      "correctAnswer": false,
+      "type": "true_false",
+      "id": "co-tf-0040"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": true,
+      "question": "Most portable electric power tools used on construction sites should operate at 110 volts, not 230 volts.",
+      "explanation": "Power tools should be 110-volt or battery-operated on UK sites to reduce the risk of a fatal electric shock if a cable is damaged.",
+      "id": "co-tf-0041"
+    },
+    {
+      "explanation": "Lifting with your back bent puts extreme pressure on your spine; you should keep your back straight and use your legs to lift.",
+      "question": "When lifting a heavy load from the floor, you should bend your back and keep your legs straight to protect your spine.",
+      "type": "true_false",
+      "correctAnswer": false,
+      "id": "co-tf-0042"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": true,
+      "explanation": "Even small amounts of alcohol can slow your reaction times and impair your judgement, making you a danger to yourself and others.",
+      "question": "Consuming a small amount of alcohol at lunchtime can impair your coordination and increase the risk of an accident.",
+      "id": "co-tf-0043"
+    },
+    {
+      "question": "A water-based fire extinguisher can be safely used to put out a fire involving live electrical equipment.",
+      "explanation": "Fire extinguishers have different contents for different types of fires; using a water extinguisher on an electrical fire is extremely dangerous.",
+      "correctAnswer": false,
+      "type": "true_false",
+      "id": "co-tf-0044"
+    },
+    {
+      "explanation": "HAVS is caused by the regular use of vibrating tools and causes permanent damage to nerves, blood vessels, and joints in the hand.",
+      "question": "Hand-arm vibration syndrome (HAVS) is a permanent condition that cannot be cured once the damage is done.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "id": "co-tf-0045"
+    },
+    {
+      "explanation": "If you feel unsafe or have not been trained for a task, you have a right to stop work and speak to your supervisor.",
+      "question": "If you are asked to do a job for which you have not been trained, you should refuse and ask for instruction.",
+      "type": "true_false",
+      "correctAnswer": true,
+      "id": "co-tf-0046"
+    },
+    {
+      "explanation": "COSHH symbols are usually on a white background with a red diamond border. A yellow triangle with a black border is a general warning sign.",
+      "question": "A hazard warning sign for a toxic substance is always a yellow triangle with a black border.",
+      "correctAnswer": false,
+      "type": "true_false",
+      "id": "co-tf-0047"
+    },
+    {
+      "explanation": "The employer is responsible for providing all necessary PPE at no cost to the employee.",
+      "type": "true_false",
+      "question": "An employer is allowed to charge a worker for the basic PPE they need to do their job safely.",
+      "correctAnswer": false,
+      "id": "co-tf-0048"
+    },
+    {
+      "question": "Every accident on site that results in an injury, even a minor cut, must be recorded in the site accident book.",
+      "correctAnswer": true,
+      "explanation": "All injuries, no matter how small, must be recorded in the accident book to track safety trends and handle future claims.",
+      "type": "true_false",
+      "id": "co-tf-0049"
+    },
+    {
+      "correctAnswer": false,
+      "question": "A blue and white circular sign means that the action shown is optional and only recommended.",
+      "type": "true_false",
+      "explanation": "The blue circular sign indicates a 'mandatory' action, meaning you MUST carry out the instruction shown.",
+      "id": "co-tf-0050"
+    },
+    {
+      "correctAnswer": true,
+      "question": "Using ear protection can prevent permanent hearing loss caused by high noise levels on site.",
+      "explanation": "Excessive noise can lead to permanent hearing loss or tinnitus; ear defenders or plugs help prevent this damage.",
+      "type": "true_false",
+      "id": "co-tf-0051"
+    },
+    {
+      "correctAnswer": false,
+      "question": "It is safe to use a Carbon Dioxide (CO2) fire extinguisher in a very small, confined space with no ventilation.",
+      "explanation": "A CO2 extinguisher should never be used in a small, unventilated space as it can quickly displace oxygen and cause asphyxiation.",
+      "type": "true_false",
+      "id": "co-tf-0052"
+    },
+    {
+      "type": "true_false",
+      "explanation": "Manual handling is the very last resort; you should always look for mechanical aids like trolleys or hoists first.",
+      "question": "If a heavy load needs moving, the first thing you should do is try to lift it yourself to see if you can manage it.",
+      "correctAnswer": false,
+      "id": "co-tf-0053"
+    },
+    {
+      "correctAnswer": true,
+      "question": "The modern hazard symbols found on chemical labels are shaped like a red diamond with a white background.",
+      "type": "true_false",
+      "explanation": "COSHH symbols have been updated to red diamonds with white backgrounds and black symbols to meet international standards.",
+      "id": "co-tf-0054"
+    },
+    {
+      "type": "true_false",
+      "explanation": "Even if you feel fine, you must report it so the equipment can be inspected; a small shock often indicates a serious underlying fault.",
+      "correctAnswer": false,
+      "question": "If you receive a small electric shock from a power tool, you only need to report it if you feel unwell afterwards.",
+      "id": "co-tf-0055"
+    },
+    {
+      "explanation": "The Health and Safety at Work Act requires all employees to look after their own safety and that of others who may be affected by their work.",
+      "type": "true_false",
+      "question": "Under the law, you have a legal duty to take reasonable care of your own health and safety while at work.",
+      "correctAnswer": true,
+      "id": "co-tf-0056"
+    },
+    {
+      "explanation": "Red signs with a diagonal line (prohibition signs) mean you must NOT do the action shown.",
+      "type": "true_false",
+      "correctAnswer": false,
+      "question": "A circular sign with a red border and a cross-bar through it means that an action is permitted.",
+      "id": "co-tf-0057"
+    },
+    {
+      "question": "You have an obligation to report any dangerous situation you see on site to your supervisor.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "explanation": "If you see something dangerous, you must tell a supervisor immediately so they can make the area safe for everyone.",
+      "id": "co-tf-0058"
+    },
+    {
+      "question": "If you have worked on many sites before, you do not need to attend a site induction for a new project.",
+      "correctAnswer": false,
+      "explanation": "A site induction is mandatory for everyone to understand the specific risks, emergency procedures, and rules of that particular site.",
+      "type": "true_false",
+      "id": "co-tf-0059"
+    },
+    {
+      "explanation": "Washing your hands before eating or smoking prevents you from ingesting harmful substances or bacteria like Weil's disease.",
+      "question": "You must always wash your hands before eating or smoking, even if you have been wearing gloves.",
+      "type": "true_false",
+      "correctAnswer": true,
+      "id": "co-tf-0060"
+    },
+    {
+      "explanation": "If a tool is damaged, it must be taken out of use, labeled as faulty, and reported to your supervisor immediately.",
+      "correctAnswer": false,
+      "question": "If you find a slightly damaged power cable on a drill, it is okay to use it as long as you wrap it in electrical tape.",
+      "type": "true_false",
+      "id": "co-tf-0061"
+    },
+    {
+      "explanation": "Asbestos is only dangerous when it is disturbed and the fibres become airborne and can be inhaled.",
+      "correctAnswer": false,
+      "type": "true_false",
+      "question": "Asbestos-containing materials are dangerous only if they are damaged, disturbed, or in poor condition.",
+      "id": "co-tf-0062"
+    },
+    {
+      "correctAnswer": true,
+      "question": "Not all dust masks provide the same level of protection; you must ensure the mask is the correct type for the specific hazard.",
+      "type": "true_false",
+      "explanation": "Dust masks have different grades (FFP1, FFP2, FFP3); FFP3 is required for high-risk dusts like silica or wood dust.",
+      "id": "co-tf-0063"
+    },
+    {
+      "question": "A standard red water fire extinguisher is the correct choice for putting out a fire involving a large puddle of spilled petrol.",
+      "type": "true_false",
+      "correctAnswer": false,
+      "explanation": "A Class B fire involves flammable liquids like petrol or oil; a water extinguisher would spread the fire rather than put it out.",
+      "id": "co-tf-0064"
+    },
+    {
+      "explanation": "Under the Health and Safety at Work Act, you must cooperate with your employer to enable them to meet their legal duties.",
+      "question": "Employees have a legal responsibility to cooperate with their employer on health and safety matters.",
+      "type": "true_false",
+      "correctAnswer": true,
+      "id": "co-tf-0065"
+    },
+    {
+      "correctAnswer": false,
+      "type": "true_false",
+      "question": "Exposure to hazardous substances is currently the leading cause of fatal accidents on UK construction sites.",
+      "explanation": "Falls from height remain the single biggest cause of workplace fatalities in the UK construction industry.",
+      "id": "co-tf-0066"
+    },
+    {
+      "explanation": "If you have a persistent cough or skin rash, it could be related to substances you work with on site and should be checked.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "question": "Occupational health checks are intended to identify early signs of ill health caused by your work activities.",
+      "id": "co-tf-0067"
+    },
+    {
+      "explanation": "Safety helmets must be replaced if they receive a heavy blow, show signs of damage, or have reached their manufacturer's expiry date.",
+      "question": "A safety helmet should only be replaced if it shows visible cracks after being dropped from a high height.",
+      "type": "true_false",
+      "correctAnswer": false,
+      "id": "co-tf-0068"
+    },
+    {
+      "explanation": "Near misses are 'free warnings' that allow the site manager to fix a problem before a real injury occurs.",
+      "correctAnswer": true,
+      "question": "Reporting a 'near miss' (an accident that almost happened) can help prevent a serious injury from occurring in the future.",
+      "type": "true_false",
+      "id": "co-tf-0069"
+    },
+    {
+      "question": "It is safe to enter a deep trench to remove the shoring supports by hand before the excavation is backfilled.",
+      "type": "true_false",
+      "correctAnswer": false,
+      "explanation": "Trench supports can only be removed by competent persons following a safe system of work, usually from the bottom up while staying protected.",
+      "id": "co-tf-0070"
+    },
+    {
+      "explanation": "The Health and Safety Executive (HSE) has the power to stop work immediately if they believe there is a risk of serious personal injury.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "question": "A Health and Safety Executive (HSE) inspector has the legal power to stop work on a site immediately.",
+      "id": "co-tf-0071"
+    },
+    {
+      "question": "If you see a safety hazard on site that you cannot fix yourself, you must report it to your supervisor immediately.",
+      "type": "true_false",
+      "correctAnswer": true,
+      "explanation": "If you spot a hazard, you should stop work and report it. It is your legal responsibility to protect yourself and others from site dangers.",
+      "id": "co-tf-0072"
+    },
+    {
+      "explanation": "Hand-arm vibration syndrome (HAVS) is a serious, long-term condition caused by vibrating tools. It is often permanent and cannot be easily cured.",
+      "correctAnswer": false,
+      "question": "The damage caused by Hand-arm vibration syndrome (HAVS) is always temporary and will heal quickly with rest.",
+      "type": "true_false",
+      "id": "co-tf-0073"
+    },
+    {
+      "explanation": "Skin contact with wet cement can cause severe chemical burns and dermatitis. You should always use the correct PPE, such as waterproof gloves.",
+      "correctAnswer": false,
+      "type": "true_false",
+      "question": "Wet cement is harmless to the skin and can be handled without gloves as long as you wash it off later.",
+      "id": "co-tf-0074"
+    },
+    {
+      "correctAnswer": true,
+      "explanation": "Alcohol and drugs can impair your judgement and coordination, making you a danger to yourself and others on a construction site.",
+      "question": "Being under the influence of alcohol or illegal drugs while working on site is a serious breach of health and safety rules.",
+      "type": "true_false",
+      "id": "co-tf-0075"
+    },
+    {
+      "correctAnswer": false,
+      "explanation": "Earplugs or muffs must be worn before you enter a high-noise area; waiting until it is noisy may already have caused damage to your hearing.",
+      "question": "You should only put on your ear protectors once the loud machinery or task has already started.",
+      "type": "true_false",
+      "id": "co-tf-0076"
+    },
+    {
+      "question": "Your employer has a legal duty to provide clean drinking water and a place to eat meals on site.",
+      "type": "true_false",
+      "correctAnswer": true,
+      "explanation": "Failing to provide a clean and safe environment for eating can lead to the spread of diseases and infections.",
+      "id": "co-tf-0077"
+    },
+    {
+      "explanation": "Safety boots must have steel or composite toe caps and often pierce-resistant midsoles to protect against falling objects and sharp rubbish.",
+      "correctAnswer": false,
+      "question": "It is acceptable to wear trainers on a construction site as long as you are careful where you walk.",
+      "type": "true_false",
+      "id": "co-tf-0078"
+    },
+    {
+      "type": "true_false",
+      "question": "A Method Statement describes how a specific task should be carried out safely.",
+      "correctAnswer": true,
+      "explanation": "The Risk Assessment identifies hazards, while the Method Statement explains the safe step-by-step way to complete the job.",
+      "id": "co-tf-0079"
+    },
+    {
+      "explanation": "Underground services like power cables or gas pipes can be very shallow; you should always use a cable avoidance tool (CAT) before digging.",
+      "correctAnswer": false,
+      "type": "true_false",
+      "question": "You do not need to check for underground cables if you are only digging a shallow hole with a hand shovel.",
+      "id": "co-tf-0080"
+    },
+    {
+      "type": "true_false",
+      "question": "Tinnitus is a condition that causes a permanent ringing or buzzing in the ears and can be caused by site noise.",
+      "explanation": "Excessive noise can lead to permanent hearing loss or tinnitus (ringing in the ears), which can affect your quality of life.",
+      "correctAnswer": true,
+      "id": "co-tf-0081"
+    },
+    {
+      "question": "It is safe to join several extension leads together to reach a work area far away from a power source.",
+      "type": "true_false",
+      "explanation": "The legal limit for 110V tools is usually 5 metres; excessively long cables cause a voltage drop and create a significant trip hazard.",
+      "correctAnswer": false,
+      "id": "co-tf-0082"
+    },
+    {
+      "type": "true_false",
+      "question": "The use of 110V power tools on site instead of 230V tools is intended to reduce the risk of a fatal electric shock.",
+      "correctAnswer": true,
+      "explanation": "In the UK, yellow 110V equipment is used on sites because it is much safer than the standard 230V domestic supply if a cable is cut.",
+      "id": "co-tf-0083"
+    },
+    {
+      "question": "While at work, you have a legal duty to take care of your own health and safety and that of others who may be affected by your work.",
+      "type": "true_false",
+      "correctAnswer": true,
+      "explanation": "The Health and Safety at Work Act requires you to take reasonable care of yourself and others who may be affected by your actions.",
+      "id": "co-tf-0084"
+    },
+    {
+      "explanation": "Asbestos is only dangerous when its fibres are disturbed and become airborne; if in good condition and left alone, it is generally safe.",
+      "correctAnswer": false,
+      "type": "true_false",
+      "question": "Asbestos always poses an immediate health risk, even if it is in good condition and is not disturbed.",
+      "id": "co-tf-0085"
+    },
+    {
+      "question": "If you think a manual lifting task is too heavy for you to perform safely, you should refuse to lift it and inform your supervisor.",
+      "type": "true_false",
+      "correctAnswer": true,
+      "explanation": "If the load is too heavy, awkward, or beyond your capability, you must stop and seek help or use mechanical lifting aids.",
+      "id": "co-tf-0086"
+    },
+    {
+      "explanation": "Holes or voids must be securely covered and clearly marked with 'HOLE' or 'DANGER' to prevent people from falling through them.",
+      "question": "It is acceptable to cover a hole in a floor with a loose piece of plywood without securing it or adding a warning sign.",
+      "type": "true_false",
+      "correctAnswer": false,
+      "id": "co-tf-0087"
+    },
+    {
+      "question": "A COSHH assessment tells you what the hazards are and what precautions you must take when using a hazardous substance.",
+      "type": "true_false",
+      "correctAnswer": true,
+      "explanation": "COSHH (Control of Substances Hazardous to Health) assessments provide essential information on how to handle chemicals safely.",
+      "id": "co-tf-0088"
+    },
+    {
+      "explanation": "Ladders should primarily be used for short-duration light work (usually less than 30 minutes) where three points of contact can be maintained.",
+      "type": "true_false",
+      "question": "Ladders are the preferred piece of equipment for carrying out heavy work at height for long periods.",
+      "correctAnswer": false,
+      "id": "co-tf-0089"
+    },
+    {
+      "type": "true_false",
+      "question": "You must wear eye protection whenever there is a risk of flying particles entering your eyes, even for a very quick task.",
+      "correctAnswer": true,
+      "explanation": "Eye protection must be worn whenever there is a risk of flying debris, dust, or chemical splashes reaching the eyes.",
+      "id": "co-tf-0090"
+    },
+    {
+      "question": "A blue safety sign with a white symbol is a 'Prohibition' sign, telling you that you must not do something.",
+      "type": "true_false",
+      "correctAnswer": false,
+      "explanation": "Blue signs with white symbols are 'Mandatory' signs, meaning you MUST carry out the action shown (e.g., 'Wear Eye Protection').",
+      "id": "co-tf-0091"
+    },
+    {
+      "explanation": "Excessive dust inhalation can lead to serious, incurable lung diseases like silicosis or COPD.",
+      "type": "true_false",
+      "question": "Breathing in wood dust or silica dust over a long period can cause permanent and serious lung damage.",
+      "correctAnswer": true,
+      "id": "co-tf-0092"
+    },
+    {
+      "explanation": "If a tool is damaged, you must take it out of service, label it as faulty, and report it; you should never attempt a 'quick fix' yourself.",
+      "type": "true_false",
+      "question": "If you find a frayed cable on a power tool, it is safe to wrap it in electrical tape and continue working until the end of the shift.",
+      "correctAnswer": false,
+      "id": "co-tf-0093"
+    },
+    {
+      "explanation": "All accidents, no matter how small, must be recorded in the accident book to track trends and prevent more serious future incidents.",
+      "correctAnswer": false,
+      "question": "Minor injuries that only require a small bandage do not need to be recorded in the site accident book.",
+      "type": "true_false",
+      "id": "co-tf-0094"
+    },
+    {
+      "explanation": "Leptospirosis (Weil's disease) is a serious infection spread by contact with water or soil contaminated by rat urine.",
+      "correctAnswer": true,
+      "question": "Weil's disease is a serious illness that you can catch from coming into contact with water or mud contaminated by rat urine.",
+      "type": "true_false",
+      "id": "co-tf-0095"
+    },
+    {
+      "explanation": "Dry sweeping creates clouds of fine dust (silica) which is dangerous to breathe; using a vacuum or wet methods prevents the dust from becoming airborne.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "question": "You should avoid dry sweeping indoors and use a vacuum or wet-mopping instead to control dust.",
+      "id": "co-tf-0096"
+    },
+    {
+      "explanation": "Safety signs with a red circle and a diagonal line across a black symbol are prohibition signs, meaning you must not do something.",
+      "correctAnswer": false,
+      "type": "true_false",
+      "question": "A safety sign featuring a red circle with a diagonal line through it indicates a mandatory action that you must follow.",
+      "id": "co-tf-0097"
+    },
+    {
+      "explanation": "Safety helmets are designed to withstand specific impacts, and the chemicals in stickers or markers can weaken the plastic shell, making it unsafe.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "question": "Applying stickers or writing on a safety helmet with a marker pen can damage the material and reduce the protection it provides.",
+      "id": "co-tf-0098"
     }
   ],
   "mocks": []
