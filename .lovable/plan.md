@@ -1,23 +1,18 @@
-## Goal
+## Plan: Generate Fire Safety mocks
 
-Generate full 45-mock sets for four categories:
+Run the existing resumable generator for the `fire-safety` topic to produce 45 mocks (24 questions each).
 
-| Category | Topics | Existing | To generate (≈) |
-|---|---|---|---|
-| career | numerical, verbal, logical, sjt | 0 | 180 |
-| professional | food-hygiene, first-aid, fire-safety, manual-handling, health-safety-awareness, gdpr-awareness | 0 | 270 |
-| nhs | nhs-numeracy, nhs-literacy, nhs-values, nmc-cbt | 0 | 180 |
-| taxi-private-hire | 15 topics, mostly 1/45 each | ~17 | ~658 |
+### Command
 
-Total ≈ 1,288 mocks (~31,000 questions).
-
-## Approach
-
-Reuse `scripts/generate_mocks.py` — resumable, writes incrementally per mock. Run topic-by-topic in foreground calls; if a 600s timeout hits, re-run the same command and it skips finished mocks.
-
-Order: career → professional → nhs → taxi-private-hire (in the order listed in `src/data/categories.ts`).
-
-Command pattern:
 ```
-python scripts/generate_mocks.py --topics <topic> --start 1 --end 45 --delay 1.5
+python scripts/generate_mocks.py --topics fire-safety --start 1 --end 45 --delay 1.5
 ```
+
+### Notes
+
+- Writes incrementally to `src/data/mocks/fire-safety.json`; safe to re-run if the 600s exec timeout hits partway through.
+- Uses Gemini 3 Flash via Lovable AI Gateway. Estimated cost ~$0.40 for the full 45 mocks.
+- Topic is already registered in `scripts/generate_mocks.py` under the `professional` category, so the mocks will be picked up automatically by `src/data/mocks/index.ts` and surfaced on the professional category page.
+- If a 402 (out of credits) is returned, the script exits and I'll stop and tell you.
+
+After completion I'll report how many mocks landed and flag any that failed so we can re-run to fill gaps.
