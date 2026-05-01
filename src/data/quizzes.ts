@@ -6,20 +6,98 @@ export type MCQQuestion = {
   correctAnswer: number;
   explanation: string;
   image?: string;
+  imageAlt?: string;
   signType?: string;
 };
 
 export type FillBlanksQuestion = {
   type: "fill-blanks";
   id: number;
-  // Sentence with placeholders like {{0}}, {{1}}.
+  // Sentence with placeholders like {{0}}, {{1}}. Used for dropdown_blanks.
   template: string;
   prompt?: string;
   blanks: { options: string[]; correctIndex: number }[];
   explanation: string;
 };
 
-export type Question = MCQQuestion | FillBlanksQuestion;
+// True/False — a specialised MCQ with exactly two options.
+export type TrueFalseQuestion = {
+  type: "true-false";
+  id: number;
+  question: string;
+  correctAnswer: boolean;
+  explanation: string;
+  image?: string;
+  imageAlt?: string;
+};
+
+// Multiple response — pick N correct from a list.
+export type MultipleResponseQuestion = {
+  type: "multiple-response";
+  id: number;
+  question: string;
+  options: string[];
+  correctAnswers: number[]; // indices, order-independent
+  explanation: string;
+  image?: string;
+  imageAlt?: string;
+};
+
+// Numeric entry — type a number; tolerance optional.
+export type NumericEntryQuestion = {
+  type: "numeric-entry";
+  id: number;
+  question: string;
+  correctAnswer: number;
+  tolerance?: number; // absolute +/- tolerance, default 0
+  unit?: string; // displayed suffix, e.g. "mph"
+  explanation: string;
+};
+
+// Image question — an MCQ tied to an image asset (not a road sign).
+export type ImageQuestion = {
+  type: "image-question";
+  id: number;
+  question: string;
+  image: string; // URL or /images/<topic>/<file>
+  imageAlt: string;
+  options: string[];
+  correctAnswer: number;
+  explanation: string;
+};
+
+// Hot spot — click the correct region on an image.
+export type HotSpotQuestion = {
+  type: "hot-spot";
+  id: number;
+  question: string;
+  image: string;
+  imageAlt: string;
+  // Hotspots in normalised 0..1 coords. User must click inside the correct one.
+  spots: { id: string; label: string; x: number; y: number; w: number; h: number }[];
+  correctSpotId: string;
+  explanation: string;
+};
+
+// Drag & drop blanks — same shape as FillBlanks but rendered as draggable chips.
+export type DragDropBlanksQuestion = {
+  type: "drag-drop-blanks";
+  id: number;
+  template: string;
+  prompt?: string;
+  blanks: { options: string[]; correctIndex: number }[];
+  explanation: string;
+};
+
+export type Question =
+  | MCQQuestion
+  | FillBlanksQuestion
+  | TrueFalseQuestion
+  | MultipleResponseQuestion
+  | NumericEntryQuestion
+  | ImageQuestion
+  | HotSpotQuestion
+  | DragDropBlanksQuestion;
 
 export type Quiz = {
   slug: string;
