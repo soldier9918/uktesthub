@@ -1,0 +1,1067 @@
+{
+  "driving-theory": {
+    "category": "driving",
+    "categoryLabel": "Driving",
+    "weights": {
+      "multiple_choice": 0.65,
+      "image_question": 0.2,
+      "true_false": 0.15
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "hazard-perception": {
+    "category": "driving",
+    "categoryLabel": "Driving",
+    "weights": {
+      "image_question": 0.65,
+      "multiple_choice": 0.25,
+      "true_false": 0.1
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "road-signs": {
+    "category": "driving",
+    "categoryLabel": "Driving",
+    "weights": {
+      "image_question": 0.7,
+      "multiple_choice": 0.2,
+      "true_false": 0.1
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "motorcycle-theory": {
+    "category": "driving",
+    "categoryLabel": "Driving",
+    "weights": {
+      "multiple_choice": 0.65,
+      "image_question": 0.2,
+      "true_false": 0.15
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "life-in-the-uk": {
+    "category": "citizenship",
+    "categoryLabel": "Citizenship",
+    "weights": {
+      "multiple_choice": 0.8,
+      "true_false": 0.2
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "british-citizenship": {
+    "category": "citizenship",
+    "categoryLabel": "Citizenship",
+    "weights": {
+      "multiple_choice": 0.8,
+      "true_false": 0.2
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "uk-laws-rights": {
+    "category": "citizenship",
+    "categoryLabel": "Citizenship",
+    "weights": {
+      "multiple_choice": 0.65,
+      "true_false": 0.25,
+      "dropdown_blanks": 0.1
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "uk-geography": {
+    "category": "citizenship",
+    "categoryLabel": "Citizenship",
+    "weights": {
+      "multiple_choice": 0.6,
+      "image_question": 0.25,
+      "drag_drop_blanks": 0.15
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "ielts": {
+    "category": "english",
+    "categoryLabel": "English",
+    "weights": {
+      "multiple_choice": 0.45,
+      "dropdown_blanks": 0.25,
+      "drag_drop_blanks": 0.2,
+      "true_false": 0.1
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "esol": {
+    "category": "english",
+    "categoryLabel": "English",
+    "weights": {
+      "multiple_choice": 0.45,
+      "dropdown_blanks": 0.3,
+      "drag_drop_blanks": 0.15,
+      "true_false": 0.1
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "toefl": {
+    "category": "english",
+    "categoryLabel": "English",
+    "weights": {
+      "multiple_choice": 0.5,
+      "dropdown_blanks": 0.25,
+      "drag_drop_blanks": 0.15,
+      "true_false": 0.1
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "grammar": {
+    "category": "english",
+    "categoryLabel": "English",
+    "weights": {
+      "dropdown_blanks": 0.4,
+      "drag_drop_blanks": 0.25,
+      "multiple_choice": 0.25,
+      "true_false": 0.1
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "eleven-plus": {
+    "category": "education",
+    "categoryLabel": "Education",
+    "weights": {
+      "multiple_choice": 0.55,
+      "dropdown_blanks": 0.15,
+      "drag_drop_blanks": 0.15,
+      "numeric_entry": 0.15
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "gcse-maths": {
+    "category": "education",
+    "categoryLabel": "Education",
+    "weights": {
+      "multiple_choice": 0.5,
+      "numeric_entry": 0.4,
+      "drag_drop_blanks": 0.1
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "gcse-english": {
+    "category": "education",
+    "categoryLabel": "Education",
+    "weights": {
+      "multiple_choice": 0.45,
+      "dropdown_blanks": 0.25,
+      "drag_drop_blanks": 0.2,
+      "true_false": 0.1
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "sats": {
+    "category": "education",
+    "categoryLabel": "Education",
+    "weights": {
+      "multiple_choice": 0.55,
+      "numeric_entry": 0.3,
+      "dropdown_blanks": 0.15
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "numerical": {
+    "category": "career",
+    "categoryLabel": "Career",
+    "weights": {
+      "multiple_choice": 0.5,
+      "numeric_entry": 0.5
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "verbal": {
+    "category": "career",
+    "categoryLabel": "Career",
+    "weights": {
+      "multiple_choice": 0.6,
+      "dropdown_blanks": 0.25,
+      "true_false": 0.15
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "logical": {
+    "category": "career",
+    "categoryLabel": "Career",
+    "weights": {
+      "multiple_choice": 0.6,
+      "drag_drop_blanks": 0.25,
+      "hot_spot": 0.15
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "sjt": {
+    "category": "career",
+    "categoryLabel": "Career",
+    "weights": {
+      "multiple_choice": 0.6,
+      "multiple_response": 0.25,
+      "true_false": 0.15
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "food-hygiene": {
+    "category": "professional",
+    "categoryLabel": "Professional",
+    "weights": {
+      "multiple_choice": 0.65,
+      "true_false": 0.2,
+      "image_question": 0.15
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "first-aid": {
+    "category": "professional",
+    "categoryLabel": "Professional",
+    "weights": {
+      "multiple_choice": 0.6,
+      "image_question": 0.25,
+      "true_false": 0.15
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "fire-safety": {
+    "category": "professional",
+    "categoryLabel": "Professional",
+    "weights": {
+      "multiple_choice": 0.6,
+      "image_question": 0.25,
+      "true_false": 0.15
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "manual-handling": {
+    "category": "professional",
+    "categoryLabel": "Professional",
+    "weights": {
+      "multiple_choice": 0.65,
+      "image_question": 0.2,
+      "true_false": 0.15
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "health-safety-awareness": {
+    "category": "professional",
+    "categoryLabel": "Professional",
+    "weights": {
+      "multiple_choice": 0.65,
+      "image_question": 0.2,
+      "true_false": 0.15
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "gdpr-awareness": {
+    "category": "professional",
+    "categoryLabel": "Professional",
+    "weights": {
+      "multiple_choice": 0.7,
+      "true_false": 0.2,
+      "dropdown_blanks": 0.1
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "nhs-numeracy": {
+    "category": "nhs",
+    "categoryLabel": "NHS",
+    "weights": {
+      "multiple_choice": 0.5,
+      "numeric_entry": 0.5
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "nhs-literacy": {
+    "category": "nhs",
+    "categoryLabel": "NHS",
+    "weights": {
+      "multiple_choice": 0.55,
+      "dropdown_blanks": 0.3,
+      "true_false": 0.15
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "nhs-values": {
+    "category": "nhs",
+    "categoryLabel": "NHS",
+    "weights": {
+      "multiple_choice": 0.55,
+      "multiple_response": 0.3,
+      "true_false": 0.15
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "nmc-cbt": {
+    "category": "nhs",
+    "categoryLabel": "NHS",
+    "weights": {
+      "multiple_choice": 0.6,
+      "multiple_response": 0.25,
+      "true_false": 0.15
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "seru": {
+    "category": "taxi-private-hire",
+    "categoryLabel": "Taxi & Private Hire",
+    "weights": {
+      "multiple_choice": 0.5,
+      "dropdown_blanks": 0.25,
+      "drag_drop_blanks": 0.15,
+      "true_false": 0.1
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "topographical": {
+    "category": "taxi-private-hire",
+    "categoryLabel": "Taxi & Private Hire",
+    "weights": {
+      "image_question": 0.5,
+      "hot_spot": 0.3,
+      "multiple_choice": 0.2
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "phv-licence": {
+    "category": "taxi-private-hire",
+    "categoryLabel": "Taxi & Private Hire",
+    "weights": {
+      "multiple_choice": 0.65,
+      "true_false": 0.2,
+      "multiple_response": 0.15
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "ph-safety-equality": {
+    "category": "taxi-private-hire",
+    "categoryLabel": "Taxi & Private Hire",
+    "weights": {
+      "multiple_choice": 0.55,
+      "multiple_response": 0.3,
+      "true_false": 0.15
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "ph-safeguarding": {
+    "category": "taxi-private-hire",
+    "categoryLabel": "Taxi & Private Hire",
+    "weights": {
+      "multiple_choice": 0.55,
+      "multiple_response": 0.3,
+      "true_false": 0.15
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "ph-english": {
+    "category": "taxi-private-hire",
+    "categoryLabel": "Taxi & Private Hire",
+    "weights": {
+      "dropdown_blanks": 0.35,
+      "drag_drop_blanks": 0.25,
+      "multiple_choice": 0.3,
+      "true_false": 0.1
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "ph-speaking-listening": {
+    "category": "taxi-private-hire",
+    "categoryLabel": "Taxi & Private Hire",
+    "weights": {
+      "multiple_choice": 0.55,
+      "dropdown_blanks": 0.3,
+      "true_false": 0.15
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "congestion-charge": {
+    "category": "taxi-private-hire",
+    "categoryLabel": "Taxi & Private Hire",
+    "weights": {
+      "multiple_choice": 0.7,
+      "true_false": 0.2,
+      "numeric_entry": 0.1
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "ulez": {
+    "category": "taxi-private-hire",
+    "categoryLabel": "Taxi & Private Hire",
+    "weights": {
+      "multiple_choice": 0.7,
+      "true_false": 0.2,
+      "numeric_entry": 0.1
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "ph-dbs-licensing": {
+    "category": "taxi-private-hire",
+    "categoryLabel": "Taxi & Private Hire",
+    "weights": {
+      "multiple_choice": 0.8,
+      "true_false": 0.2
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "ph-badge-rules": {
+    "category": "taxi-private-hire",
+    "categoryLabel": "Taxi & Private Hire",
+    "weights": {
+      "multiple_choice": 0.65,
+      "true_false": 0.2,
+      "image_question": 0.15
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "ph-assistance-dogs": {
+    "category": "taxi-private-hire",
+    "categoryLabel": "Taxi & Private Hire",
+    "weights": {
+      "multiple_choice": 0.55,
+      "multiple_response": 0.3,
+      "true_false": 0.15
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "ph-passenger-safety": {
+    "category": "taxi-private-hire",
+    "categoryLabel": "Taxi & Private Hire",
+    "weights": {
+      "multiple_choice": 0.55,
+      "multiple_response": 0.3,
+      "true_false": 0.15
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "ph-hmrc-tax-check": {
+    "category": "taxi-private-hire",
+    "categoryLabel": "Taxi & Private Hire",
+    "weights": {
+      "multiple_choice": 0.8,
+      "true_false": 0.2
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "ph-london-regulations": {
+    "category": "taxi-private-hire",
+    "categoryLabel": "Taxi & Private Hire",
+    "weights": {
+      "multiple_choice": 0.6,
+      "true_false": 0.2,
+      "multiple_response": 0.2
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "sia-door-supervisor": {
+    "category": "security",
+    "categoryLabel": "Security",
+    "weights": {
+      "multiple_choice": 0.6,
+      "multiple_response": 0.25,
+      "true_false": 0.15
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "sia-cctv": {
+    "category": "security",
+    "categoryLabel": "Security",
+    "weights": {
+      "multiple_choice": 0.6,
+      "image_question": 0.25,
+      "true_false": 0.15
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "sia-close-protection": {
+    "category": "security",
+    "categoryLabel": "Security",
+    "weights": {
+      "multiple_choice": 0.6,
+      "multiple_response": 0.25,
+      "true_false": 0.15
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "sia-top-up": {
+    "category": "security",
+    "categoryLabel": "Security",
+    "weights": {
+      "multiple_choice": 0.6,
+      "multiple_response": 0.25,
+      "true_false": 0.15
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "aplh-personal-licence": {
+    "category": "hospitality",
+    "categoryLabel": "Hospitality",
+    "weights": {
+      "multiple_choice": 0.7,
+      "true_false": 0.2,
+      "numeric_entry": 0.1
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "allergen-awareness": {
+    "category": "hospitality",
+    "categoryLabel": "Hospitality",
+    "weights": {
+      "multiple_choice": 0.65,
+      "true_false": 0.2,
+      "image_question": 0.15
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "haccp-level-2": {
+    "category": "hospitality",
+    "categoryLabel": "Hospitality",
+    "weights": {
+      "multiple_choice": 0.65,
+      "true_false": 0.2,
+      "drag_drop_blanks": 0.15
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "customer-service": {
+    "category": "hospitality",
+    "categoryLabel": "Hospitality",
+    "weights": {
+      "multiple_choice": 0.55,
+      "multiple_response": 0.3,
+      "true_false": 0.15
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "cscs-operative": {
+    "category": "construction",
+    "categoryLabel": "Construction",
+    "weights": {
+      "multiple_choice": 0.6,
+      "image_question": 0.25,
+      "true_false": 0.15
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "cscs-gold": {
+    "category": "construction",
+    "categoryLabel": "Construction",
+    "weights": {
+      "multiple_choice": 0.6,
+      "multiple_response": 0.25,
+      "true_false": 0.15
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "citb-hse": {
+    "category": "construction",
+    "categoryLabel": "Construction",
+    "weights": {
+      "multiple_choice": 0.6,
+      "image_question": 0.25,
+      "true_false": 0.15
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "ipaf-pasma": {
+    "category": "construction",
+    "categoryLabel": "Construction",
+    "weights": {
+      "multiple_choice": 0.6,
+      "image_question": 0.25,
+      "true_false": 0.15
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "aat-bookkeeping": {
+    "category": "finance",
+    "categoryLabel": "Finance",
+    "weights": {
+      "multiple_choice": 0.5,
+      "numeric_entry": 0.5
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "acca-foundations": {
+    "category": "finance",
+    "categoryLabel": "Finance",
+    "weights": {
+      "multiple_choice": 0.5,
+      "numeric_entry": 0.5
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "cfa-aptitude": {
+    "category": "finance",
+    "categoryLabel": "Finance",
+    "weights": {
+      "multiple_choice": 0.5,
+      "numeric_entry": 0.5
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "financial-awareness": {
+    "category": "finance",
+    "categoryLabel": "Finance",
+    "weights": {
+      "multiple_choice": 0.6,
+      "true_false": 0.2,
+      "numeric_entry": 0.2
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "comptia-a-plus": {
+    "category": "it-tech",
+    "categoryLabel": "IT & Tech",
+    "weights": {
+      "multiple_choice": 0.6,
+      "image_question": 0.25,
+      "true_false": 0.15
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "itil-4": {
+    "category": "it-tech",
+    "categoryLabel": "IT & Tech",
+    "weights": {
+      "multiple_choice": 0.8,
+      "true_false": 0.2
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "microsoft-fundamentals": {
+    "category": "it-tech",
+    "categoryLabel": "IT & Tech",
+    "weights": {
+      "multiple_choice": 0.6,
+      "image_question": 0.25,
+      "true_false": 0.15
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "cyber-awareness": {
+    "category": "it-tech",
+    "categoryLabel": "IT & Tech",
+    "weights": {
+      "multiple_choice": 0.65,
+      "true_false": 0.2,
+      "image_question": 0.15
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "ucat": {
+    "category": "healthcare-entry",
+    "categoryLabel": "Healthcare Entry",
+    "weights": {
+      "multiple_choice": 0.5,
+      "numeric_entry": 0.35,
+      "drag_drop_blanks": 0.15
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "bmat": {
+    "category": "healthcare-entry",
+    "categoryLabel": "Healthcare Entry",
+    "weights": {
+      "multiple_choice": 0.5,
+      "numeric_entry": 0.35,
+      "image_question": 0.15
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "oet": {
+    "category": "healthcare-entry",
+    "categoryLabel": "Healthcare Entry",
+    "weights": {
+      "multiple_choice": 0.45,
+      "dropdown_blanks": 0.3,
+      "drag_drop_blanks": 0.15,
+      "true_false": 0.1
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "plab-1": {
+    "category": "healthcare-entry",
+    "categoryLabel": "Healthcare Entry",
+    "weights": {
+      "multiple_choice": 0.6,
+      "multiple_response": 0.25,
+      "true_false": 0.15
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "qts-numeracy": {
+    "category": "teaching",
+    "categoryLabel": "Teaching",
+    "weights": {
+      "multiple_choice": 0.5,
+      "numeric_entry": 0.5
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "qts-literacy": {
+    "category": "teaching",
+    "categoryLabel": "Teaching",
+    "weights": {
+      "multiple_choice": 0.55,
+      "dropdown_blanks": 0.3,
+      "true_false": 0.15
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "professional-skills-teachers": {
+    "category": "teaching",
+    "categoryLabel": "Teaching",
+    "weights": {
+      "multiple_choice": 0.55,
+      "multiple_response": 0.3,
+      "true_false": 0.15
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "safeguarding-schools": {
+    "category": "teaching",
+    "categoryLabel": "Teaching",
+    "weights": {
+      "multiple_choice": 0.55,
+      "multiple_response": 0.3,
+      "true_false": 0.15
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "sqe1-flk1": {
+    "category": "legal",
+    "categoryLabel": "Legal",
+    "weights": {
+      "multiple_choice": 0.6,
+      "multiple_response": 0.25,
+      "true_false": 0.15
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "sqe1-flk2": {
+    "category": "legal",
+    "categoryLabel": "Legal",
+    "weights": {
+      "multiple_choice": 0.6,
+      "multiple_response": 0.25,
+      "true_false": 0.15
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "lnat": {
+    "category": "legal",
+    "categoryLabel": "Legal",
+    "weights": {
+      "multiple_choice": 0.8,
+      "true_false": 0.2
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "uk-legal-system": {
+    "category": "legal",
+    "categoryLabel": "Legal",
+    "weights": {
+      "multiple_choice": 0.65,
+      "true_false": 0.25,
+      "dropdown_blanks": 0.1
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "army-barb": {
+    "category": "military-emergency",
+    "categoryLabel": "Military & Emergency",
+    "weights": {
+      "multiple_choice": 0.5,
+      "numeric_entry": 0.35,
+      "drag_drop_blanks": 0.15
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "police-pirt": {
+    "category": "military-emergency",
+    "categoryLabel": "Military & Emergency",
+    "weights": {
+      "multiple_choice": 0.55,
+      "numeric_entry": 0.3,
+      "true_false": 0.15
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "police-search": {
+    "category": "military-emergency",
+    "categoryLabel": "Military & Emergency",
+    "weights": {
+      "multiple_choice": 0.45,
+      "image_question": 0.35,
+      "hot_spot": 0.2
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "firefighter-nfsat": {
+    "category": "military-emergency",
+    "categoryLabel": "Military & Emergency",
+    "weights": {
+      "multiple_choice": 0.5,
+      "numeric_entry": 0.3,
+      "image_question": 0.2
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "ppl-air-law": {
+    "category": "maritime-aviation",
+    "categoryLabel": "Maritime & Aviation",
+    "weights": {
+      "multiple_choice": 0.65,
+      "true_false": 0.2,
+      "image_question": 0.15
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "ppl-meteorology": {
+    "category": "maritime-aviation",
+    "categoryLabel": "Maritime & Aviation",
+    "weights": {
+      "multiple_choice": 0.55,
+      "image_question": 0.3,
+      "true_false": 0.15
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "rya-day-skipper": {
+    "category": "maritime-aviation",
+    "categoryLabel": "Maritime & Aviation",
+    "weights": {
+      "multiple_choice": 0.45,
+      "image_question": 0.35,
+      "hot_spot": 0.2
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "atpl-basics": {
+    "category": "maritime-aviation",
+    "categoryLabel": "Maritime & Aviation",
+    "weights": {
+      "multiple_choice": 0.55,
+      "numeric_entry": 0.3,
+      "image_question": 0.15
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "csjt": {
+    "category": "government",
+    "categoryLabel": "Government",
+    "weights": {
+      "multiple_choice": 0.55,
+      "multiple_response": 0.3,
+      "true_false": 0.15
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "cs-verbal": {
+    "category": "government",
+    "categoryLabel": "Government",
+    "weights": {
+      "multiple_choice": 0.55,
+      "dropdown_blanks": 0.3,
+      "true_false": 0.15
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "cs-numerical": {
+    "category": "government",
+    "categoryLabel": "Government",
+    "weights": {
+      "multiple_choice": 0.5,
+      "numeric_entry": 0.5
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  },
+  "border-force": {
+    "category": "government",
+    "categoryLabel": "Government",
+    "weights": {
+      "multiple_choice": 0.5,
+      "multiple_response": 0.25,
+      "true_false": 0.15,
+      "image_question": 0.1
+    },
+    "totalMocks": 45,
+    "questionsPerMock": 24,
+    "poolSize": 650
+  }
+}
