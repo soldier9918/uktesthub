@@ -1,101 +1,113 @@
 {
+  "version": 2,
   "topic": "ph-badge-rules",
-  "tests": [
+  "title": "Private Hire Driver Badge Rules Quiz",
+  "category": "taxi-private-hire",
+  "bank": [
     {
-      "slug": "ph-badge-rules-mock-1",
-      "topic": "ph-badge-rules",
-      "mockNumber": 1,
-      "title": "Private Hire Driver Badge Rules \u2014 Mock Test 1",
-      "questions": [
-        {
-          "question": "Your PHV driver badge must be:",
-          "options": [
-            "Hidden in the boot",
-            "Worn or visibly displayed while working",
-            "Carried in your wallet only",
-            "Photocopied for the operator"
-          ],
-          "correctAnswer": 1,
-          "explanation": "Drivers must display the TfL-issued ID while working."
-        },
-        {
-          "question": "If you lose your badge, you must:",
-          "options": [
-            "Make your own",
-            "Apply to TfL for a replacement",
-            "Borrow a colleague's",
-            "Print one"
-          ],
-          "correctAnswer": 1,
-          "explanation": "Only TfL may issue or replace official ID."
-        },
-        {
-          "question": "Allowing another person to use your badge is:",
-          "options": [
-            "A minor matter",
-            "A criminal offence and grounds for revocation",
-            "Allowed in family",
-            "Allowed once"
-          ],
-          "correctAnswer": 1,
-          "explanation": "Misuse of the badge is treated very seriously."
-        },
-        {
-          "question": "When your badge expires you must:",
-          "options": [
-            "Keep working",
-            "Stop work until renewed",
-            "Use a photocopy",
-            "Drive only at night"
-          ],
-          "correctAnswer": 1,
-          "explanation": "An expired badge means you cannot legally work as a PHV driver."
-        },
-        {
-          "question": "Wearing the badge clearly helps:",
-          "options": [
-            "No-one",
-            "Passenger trust and safety",
-            "Faster speed",
-            "Tax savings"
-          ],
-          "correctAnswer": 1,
-          "explanation": "Visible ID supports passenger confidence."
-        },
-        {
-          "question": "If TfL request to inspect your badge, you must:",
-          "options": [
-            "Refuse",
-            "Produce it without delay",
-            "Charge a fee",
-            "Hide it"
-          ],
-          "correctAnswer": 1,
-          "explanation": "Compliance with licensing inspections is mandatory."
-        },
-        {
-          "question": "Damaged or unreadable badges should be:",
-          "options": [
-            "Repaired by you",
-            "Replaced via TfL",
-            "Laminated",
-            "Ignored"
-          ],
-          "correctAnswer": 1,
-          "explanation": "TfL must replace damaged ID."
-        },
-        {
-          "question": "The badge contains:",
-          "options": [
-            "Your bank details",
-            "Your photograph and licence number",
-            "Your home address",
-            "Your tax code"
-          ],
-          "correctAnswer": 1,
-          "explanation": "It shows the driver's photo and unique licence number."
-        }
-      ]
+      "question": "Your PHV driver badge must be:",
+      "options": [
+        "Hidden in the boot",
+        "Worn or visibly displayed while working",
+        "Carried in your wallet only",
+        "Photocopied for the operator"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Drivers must display the TfL-issued ID while working.",
+      "type": "multiple_choice",
+      "id": "pbr-mc-0001"
+    },
+    {
+      "question": "If you lose your badge, you must:",
+      "options": [
+        "Make your own",
+        "Apply to TfL for a replacement",
+        "Borrow a colleague's",
+        "Print one"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Only TfL may issue or replace official ID.",
+      "type": "multiple_choice",
+      "id": "pbr-mc-0002"
+    },
+    {
+      "question": "Allowing another person to use your badge is:",
+      "options": [
+        "A minor matter",
+        "A criminal offence and grounds for revocation",
+        "Allowed in family",
+        "Allowed once"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Misuse of the badge is treated very seriously.",
+      "type": "multiple_choice",
+      "id": "pbr-mc-0003"
+    },
+    {
+      "question": "When your badge expires you must:",
+      "options": [
+        "Keep working",
+        "Stop work until renewed",
+        "Use a photocopy",
+        "Drive only at night"
+      ],
+      "correctAnswer": 1,
+      "explanation": "An expired badge means you cannot legally work as a PHV driver.",
+      "type": "multiple_choice",
+      "id": "pbr-mc-0004"
+    },
+    {
+      "question": "Wearing the badge clearly helps:",
+      "options": [
+        "No-one",
+        "Passenger trust and safety",
+        "Faster speed",
+        "Tax savings"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Visible ID supports passenger confidence.",
+      "type": "multiple_choice",
+      "id": "pbr-mc-0005"
+    },
+    {
+      "question": "If TfL request to inspect your badge, you must:",
+      "options": [
+        "Refuse",
+        "Produce it without delay",
+        "Charge a fee",
+        "Hide it"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Compliance with licensing inspections is mandatory.",
+      "type": "multiple_choice",
+      "id": "pbr-mc-0006"
+    },
+    {
+      "question": "Damaged or unreadable badges should be:",
+      "options": [
+        "Repaired by you",
+        "Replaced via TfL",
+        "Laminated",
+        "Ignored"
+      ],
+      "correctAnswer": 1,
+      "explanation": "TfL must replace damaged ID.",
+      "type": "multiple_choice",
+      "id": "pbr-mc-0007"
+    },
+    {
+      "question": "The badge contains:",
+      "options": [
+        "Your bank details",
+        "Your photograph and licence number",
+        "Your home address",
+        "Your tax code"
+      ],
+      "correctAnswer": 1,
+      "explanation": "It shows the driver's photo and unique licence number.",
+      "type": "multiple_choice",
+      "id": "pbr-mc-0008"
     }
-  ]
+  ],
+  "mocks": []
 }

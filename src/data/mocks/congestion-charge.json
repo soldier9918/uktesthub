@@ -1,101 +1,113 @@
 {
+  "version": 2,
   "topic": "congestion-charge",
-  "tests": [
+  "title": "Congestion Charge Quiz",
+  "category": "taxi-private-hire",
+  "bank": [
     {
-      "slug": "congestion-charge-mock-1",
-      "topic": "congestion-charge",
-      "mockNumber": 1,
-      "title": "Congestion Charge \u2014 Mock Test 1",
-      "questions": [
-        {
-          "question": "The London Congestion Charge applies on:",
-          "options": [
-            "Weekends only",
-            "Mondays to Fridays 7am\u20136pm and weekends 12\u20136pm",
-            "Sundays only",
-            "Bank Holidays only"
-          ],
-          "correctAnswer": 1,
-          "explanation": "The Congestion Charge currently runs Mon\u2013Fri 7:00\u201318:00 and weekends 12:00\u201318:00, except certain Christmas dates."
-        },
-        {
-          "question": "Failing to pay the Congestion Charge results in:",
-          "options": [
-            "A warning",
-            "A Penalty Charge Notice",
-            "Loss of licence",
-            "No action"
-          ],
-          "correctAnswer": 1,
-          "explanation": "Non-payment leads to a Penalty Charge Notice (PCN)."
-        },
-        {
-          "question": "Licensed London taxis are:",
-          "options": [
-            "Always charged",
-            "Exempt from the Congestion Charge",
-            "Charged double",
-            "Charged half"
-          ],
-          "correctAnswer": 1,
-          "explanation": "Hackney carriages licensed by TfL are exempt."
-        },
-        {
-          "question": "Most private hire vehicles in London are:",
-          "options": [
-            "Exempt",
-            "Liable to pay the Congestion Charge unless they meet a specific exemption",
-            "Always free",
-            "Charged once a week"
-          ],
-          "correctAnswer": 1,
-          "explanation": "Most PHVs must pay; only specific exemptions apply."
-        },
-        {
-          "question": "The Congestion Charge zone is broadly:",
-          "options": [
-            "Greater London",
-            "Central London",
-            "Outer London",
-            "London airports"
-          ],
-          "correctAnswer": 1,
-          "explanation": "The zone covers central London."
-        },
-        {
-          "question": "Payment for the Congestion Charge can be made via:",
-          "options": [
-            "Cash to a driver",
-            "TfL website, app or auto-pay",
-            "At the petrol station",
-            "By post only"
-          ],
-          "correctAnswer": 1,
-          "explanation": "TfL provides Auto Pay, online and app payment options."
-        },
-        {
-          "question": "Auto Pay charges your vehicle:",
-          "options": [
-            "Only if you remember",
-            "Automatically on days you drive in the zone",
-            "Once a year",
-            "Only at midnight"
-          ],
-          "correctAnswer": 1,
-          "explanation": "Auto Pay records entries and bills monthly."
-        },
-        {
-          "question": "Driving in the zone with false plates to avoid the charge is:",
-          "options": [
-            "A minor matter",
-            "A criminal offence",
-            "Allowed once",
-            "A civil fee"
-          ],
-          "correctAnswer": 1,
-          "explanation": "Plate cloning is a serious criminal offence."
-        }
-      ]
+      "question": "The London Congestion Charge applies on:",
+      "options": [
+        "Weekends only",
+        "Mondays to Fridays 7am–6pm and weekends 12–6pm",
+        "Sundays only",
+        "Bank Holidays only"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The Congestion Charge currently runs Mon–Fri 7:00–18:00 and weekends 12:00–18:00, except certain Christmas dates.",
+      "type": "multiple_choice",
+      "id": "cc-mc-0001"
+    },
+    {
+      "question": "Failing to pay the Congestion Charge results in:",
+      "options": [
+        "A warning",
+        "A Penalty Charge Notice",
+        "Loss of licence",
+        "No action"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Non-payment leads to a Penalty Charge Notice (PCN).",
+      "type": "multiple_choice",
+      "id": "cc-mc-0002"
+    },
+    {
+      "question": "Licensed London taxis are:",
+      "options": [
+        "Always charged",
+        "Exempt from the Congestion Charge",
+        "Charged double",
+        "Charged half"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Hackney carriages licensed by TfL are exempt.",
+      "type": "multiple_choice",
+      "id": "cc-mc-0003"
+    },
+    {
+      "question": "Most private hire vehicles in London are:",
+      "options": [
+        "Exempt",
+        "Liable to pay the Congestion Charge unless they meet a specific exemption",
+        "Always free",
+        "Charged once a week"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Most PHVs must pay; only specific exemptions apply.",
+      "type": "multiple_choice",
+      "id": "cc-mc-0004"
+    },
+    {
+      "question": "The Congestion Charge zone is broadly:",
+      "options": [
+        "Greater London",
+        "Central London",
+        "Outer London",
+        "London airports"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The zone covers central London.",
+      "type": "multiple_choice",
+      "id": "cc-mc-0005"
+    },
+    {
+      "question": "Payment for the Congestion Charge can be made via:",
+      "options": [
+        "Cash to a driver",
+        "TfL website, app or auto-pay",
+        "At the petrol station",
+        "By post only"
+      ],
+      "correctAnswer": 1,
+      "explanation": "TfL provides Auto Pay, online and app payment options.",
+      "type": "multiple_choice",
+      "id": "cc-mc-0006"
+    },
+    {
+      "question": "Auto Pay charges your vehicle:",
+      "options": [
+        "Only if you remember",
+        "Automatically on days you drive in the zone",
+        "Once a year",
+        "Only at midnight"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Auto Pay records entries and bills monthly.",
+      "type": "multiple_choice",
+      "id": "cc-mc-0007"
+    },
+    {
+      "question": "Driving in the zone with false plates to avoid the charge is:",
+      "options": [
+        "A minor matter",
+        "A criminal offence",
+        "Allowed once",
+        "A civil fee"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Plate cloning is a serious criminal offence.",
+      "type": "multiple_choice",
+      "id": "cc-mc-0008"
     }
-  ]
+  ],
+  "mocks": []
 }
