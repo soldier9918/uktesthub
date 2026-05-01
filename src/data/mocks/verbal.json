@@ -14043,6 +14043,1274 @@
       ],
       "type": "multiple_choice",
       "id": "v-mc-1080"
+    },
+    {
+      "template": "Despite the sudden blizzard, the mountaineers maintained their {{0}} and successfully reached the summit.",
+      "explanation": "The sentence describes a lack of panic, suggesting the climbers were self-assured and certain of their success.",
+      "blanks": [
+        {
+          "options": [
+            "patience",
+            "confidence",
+            "haste"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "type": "dropdown_blanks",
+      "prompt": "Choose the word that best completes the sentence.",
+      "id": "v-db-0001"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "discreet",
+            "discrete",
+            "description"
+          ]
+        }
+      ],
+      "template": "The private investigator was hired because he was known for being {{0}} when conducting sensitive enquiries.",
+      "explanation": "'Discreet' means being careful and cautious in one's speech or actions, especially to keep something confidential.",
+      "prompt": "Select the correct word to complete the sentence.",
+      "type": "dropdown_blanks",
+      "id": "v-db-0002"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "receded",
+            "reduced",
+            "relented"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "explanation": "'Relented' means to abandon or mitigate a harsh intention or cruel treatment; the storm stopped being severe.",
+      "template": "The rain continued for hours until the winds finally {{0}} and the clouds began to clear.",
+      "prompt": "Select the word that makes the most sense in context.",
+      "type": "dropdown_blanks",
+      "id": "v-db-0003"
+    },
+    {
+      "type": "dropdown_blanks",
+      "prompt": "Choose the pair of words that best fits the sentence.",
+      "template": "The artisan spent hours {{0}} the antique tapestry, carefully {{1}} the frayed edges back together.",
+      "explanation": "The first blank refers to repairing (mending) and the second refers to the specific method (weaving) used for carpets or cloth.",
+      "blanks": [
+        {
+          "options": [
+            "mending",
+            "tearing",
+            "cleaning"
+          ],
+          "correctIndex": 0
+        },
+        {
+          "options": [
+            "stitching",
+            "weaving",
+            "knitting"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "id": "v-db-0004"
+    },
+    {
+      "explanation": "The word 'bumper' in this context refers to an unusually large crop, making 'abundance' the correct synonym.",
+      "template": "Following a particularly sunny summer, the farmers celebrated a bumper crop and an {{0}} of fresh produce.",
+      "blanks": [
+        {
+          "options": [
+            "scarcity",
+            "abundance",
+            "variety"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "type": "dropdown_blanks",
+      "prompt": "Complete the sentence based on the context.",
+      "id": "v-db-0005"
+    },
+    {
+      "explanation": "'Tangible' refers to something that is literal or real enough to be touched, highlighting the intensity of the atmosphere.",
+      "template": "The tension in the courtroom was almost {{0}} as the jury prepared to deliver their final verdict.",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "audible",
+            "visible",
+            "tangible"
+          ]
+        }
+      ],
+      "type": "dropdown_blanks",
+      "prompt": "Which word fits the description of the atmosphere?",
+      "id": "v-db-0006"
+    },
+    {
+      "prompt": "Choose the word that describes outdated technology.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "options": [
+            "obsolete",
+            "innovative",
+            "efficient"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "explanation": "'Obsolete' means no longer produced or used; out of date. This matches the context of being replaced by new technology.",
+      "template": "Once the new software was introduced, the old filing systems became entirely {{0}} within a few months.",
+      "id": "v-db-0007"
+    },
+    {
+      "type": "dropdown_blanks",
+      "prompt": "Identify the emotion described in the sentence.",
+      "template": "The students felt {{0}} about the upcoming physics exam, as they found the subject matter very challenging.",
+      "explanation": "'Apprehensive' means anxious or fearful that something bad or unpleasant will happen, which fits the context of a difficult exam.",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "enthusiastic",
+            "indifferent",
+            "apprehensive"
+          ]
+        }
+      ],
+      "id": "v-db-0008"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "prolonged",
+            "curtailed",
+            "celebrated"
+          ]
+        }
+      ],
+      "explanation": "'Curtailed' means to reduce in extent or quantity; to impose a restriction on something like a scheduled event.",
+      "template": "The afternoon meeting was {{0}} so that the staff could leave early before the train strike began.",
+      "prompt": "Which word indicates the meeting was shortened?",
+      "type": "dropdown_blanks",
+      "id": "v-db-0009"
+    },
+    {
+      "template": "Eleanor proved to be a {{0}} leader, bouncing back quickly after the initial failure of the project.",
+      "explanation": "'Resilient' describes someone who can recover quickly from difficulties or tough conditions.",
+      "blanks": [
+        {
+          "options": [
+            "resilient",
+            "fragile",
+            "volatile"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "type": "dropdown_blanks",
+      "prompt": "Choose the word that describes a person's ability to recover.",
+      "id": "v-db-0010"
+    },
+    {
+      "template": "The committee reached a {{0}} decision to appoint Sarah as the new chairperson of the board.",
+      "explanation": "A 'unanimous' decision is one where every person involved is in total agreement.",
+      "blanks": [
+        {
+          "options": [
+            "contradictory",
+            "unanimous",
+            "ambiguous"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "type": "dropdown_blanks",
+      "prompt": "Which word means everyone agreed?",
+      "id": "v-db-0011"
+    },
+    {
+      "prompt": "Identify the cause of the team's failure.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "perseverance",
+            "hesitation",
+            "complacency"
+          ]
+        }
+      ],
+      "explanation": "'Complacency' is a feeling of smug or uncritical satisfaction with oneself, which led the team to underestimate their rival.",
+      "template": "The team’s {{0}} led to their defeat, as they wrongly assumed their opponents would be easy to beat.",
+      "id": "v-db-0012"
+    },
+    {
+      "explanation": "'Prolific' means producing a large amount of something, which explains why the author has written over fifty books.",
+      "prompt": "Choose the word that best completes the sentence about a successful author.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "sparse",
+            "prolific",
+            "meagre"
+          ]
+        }
+      ],
+      "template": "As a {{0}} writer, she published over fifty novels during her thirty-year career.",
+      "id": "v-db-0013"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "precarious",
+            "stable",
+            "fortified"
+          ]
+        }
+      ],
+      "template": "The hiker found himself in a {{0}} position, balanced on a narrow ledge high above the valley.",
+      "explanation": "'Precarious' describes something that is not securely held in position and is likely to fall or collapse.",
+      "prompt": "Complete the sentence describing a dangerous situation.",
+      "type": "dropdown_blanks",
+      "id": "v-db-0014"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "agitated",
+            "indifferent",
+            "meticulous"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "template": "The scientist was known for her {{0}} approach, ensuring every measurement was recorded with absolute precision.",
+      "prompt": "Select the word that fits the description of a careful researcher.",
+      "explanation": "Someone who is 'meticulous' shows great attention to detail and handles tasks very carefully.",
+      "type": "dropdown_blanks",
+      "id": "v-db-0015"
+    },
+    {
+      "type": "dropdown_blanks",
+      "explanation": "'Brevity' refers to the use of few words in writing or speech, which contrasts with a 'lengthy' lecture.",
+      "prompt": "Choose the correct word to contrast with a long speech.",
+      "template": "The audience appreciated the {{0}} of the guest speaker’s remarks, especially after such a lengthy morning session.",
+      "blanks": [
+        {
+          "options": [
+            "brevity",
+            "complexity",
+            "repetition"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "id": "v-db-0016"
+    },
+    {
+      "template": "The construction of the new bypass significantly {{0}} the traffic congestion in the historic town centre.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "exacerbated",
+            "alleviated",
+            "prolonged"
+          ]
+        }
+      ],
+      "type": "dropdown_blanks",
+      "prompt": "Complete the sentence about solving a traffic problem.",
+      "explanation": "To 'alleviate' means to make a problem or pain less severe.",
+      "id": "v-db-0017"
+    },
+    {
+      "template": "Because the instructions were so {{0}}, the students were unsure which part of the project to complete first.",
+      "blanks": [
+        {
+          "options": [
+            "lucid",
+            "vague",
+            "ambiguous"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "type": "dropdown_blanks",
+      "explanation": "Something 'ambiguous' is open to more than one interpretation and lacks a clear meaning.",
+      "prompt": "Select the word that describes unclear instructions.",
+      "id": "v-db-0018"
+    },
+    {
+      "type": "dropdown_blanks",
+      "explanation": "'Diligent' describes someone who shows care and conscientiousness in their work or duties.",
+      "prompt": "Choose the word that describes a hard-working student.",
+      "template": "A {{0}} student, Arthur spent every evening in the library reviewing his notes before the finals.",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "diligent",
+            "negligent",
+            "lethargic"
+          ]
+        }
+      ],
+      "id": "v-db-0019"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "obsolete",
+            "ephemeral",
+            "permanent"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "template": "The beauty of the morning frost was {{0}}, vanishing as soon as the first rays of sunlight hit the fields.",
+      "prompt": "Complete the sentence describing something short-lived.",
+      "explanation": "'Ephemeral' means lasting for a very short time, which fits the context of morning dew disappearing in the sun.",
+      "type": "dropdown_blanks",
+      "id": "v-db-0020"
+    },
+    {
+      "template": "The auditors {{0}} every financial record to ensure that no errors had been made in the accounts.",
+      "blanks": [
+        {
+          "options": [
+            "distorted",
+            "scrutinised",
+            "ignored"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "type": "dropdown_blanks",
+      "prompt": "Choose the word that fits a detailed investigation.",
+      "explanation": "To 'scrutinise' means to examine or inspect something closely and thoroughly.",
+      "id": "v-db-0021"
+    },
+    {
+      "template": "Despite facing great {{0}} during his early training, the athlete went on to win a gold medal.",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "adversity",
+            "prosperity",
+            "tranquillity"
+          ]
+        }
+      ],
+      "type": "dropdown_blanks",
+      "explanation": "'Adversity' refers to difficulties or misfortune, which the athlete had to overcome.",
+      "prompt": "Select the word that represents a challenge or hardship.",
+      "id": "v-db-0022"
+    },
+    {
+      "prompt": "Complete the sentence about a group making a joint decision.",
+      "explanation": "A 'unanimous' vote is one where everyone involved is in complete agreement.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "hostile",
+            "identical",
+            "unanimous"
+          ]
+        }
+      ],
+      "template": "The council reached a {{0}} agreement to invest in the new community sports centre.",
+      "id": "v-db-0023"
+    },
+    {
+      "type": "dropdown_blanks",
+      "prompt": "Choose the word that means unchangeable.",
+      "explanation": "'Immutable' describes something that is unchanging over time or unable to be changed.",
+      "template": "The laws of physics are often considered {{0}}, providing a constant framework for understanding the universe.",
+      "blanks": [
+        {
+          "options": [
+            "sporadic",
+            "immutable",
+            "volatile"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "id": "v-db-0024"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "diminished",
+            "exacerbated",
+            "mitigated",
+            "ignored"
+          ]
+        }
+      ],
+      "explanation": "'Exacerbated' means to make a problem or bad situation worse, which fits the context of heavy rainfall increasing the flood risk.",
+      "prompt": "Choose the word that best completes the sentence.",
+      "type": "dropdown_blanks",
+      "template": "The heavy rainfall only {{0}} the existing flood risk in the low-lying coastal villages.",
+      "id": "v-db-0025"
+    },
+    {
+      "prompt": "Choose the word that best completes the sentence.",
+      "blanks": [
+        {
+          "options": [
+            "intermittent",
+            "frequent",
+            "sporadic",
+            "perpetual"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "explanation": "'Sporadic' means occurring at irregular intervals or only in a few places; it fits the context of occasional sightings.",
+      "template": "Although the species was thought to be extinct, there have been {{0}} sightings in the remote highlands over the last decade.",
+      "type": "dropdown_blanks",
+      "id": "v-db-0026"
+    },
+    {
+      "template": "The new neighbour was quite {{0}}, rarely speaking to anyone and keeping his curtains drawn all day.",
+      "type": "dropdown_blanks",
+      "prompt": "Choose the word that best completes the sentence.",
+      "explanation": "'Enigmatic' describes someone who is mysterious or difficult to understand, matching the description of the quiet and private neighbour.",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "enigmatic",
+            "gregarious",
+            "loquacious",
+            "transparent"
+          ]
+        }
+      ],
+      "id": "v-db-0027"
+    },
+    {
+      "template": "The lawyer’s {{0}} preparation of the case ensured that every potential loophole was addressed.",
+      "type": "dropdown_blanks",
+      "explanation": "'Meticulous' means showing great attention to detail and being very thorough, which is necessary for complex legal documents.",
+      "blanks": [
+        {
+          "options": [
+            "detrimental",
+            "expedited",
+            "trivial",
+            "meticulous"
+          ],
+          "correctIndex": 3
+        }
+      ],
+      "prompt": "Choose the word that best completes the sentence.",
+      "id": "v-db-0028"
+    },
+    {
+      "template": "Due to public outcry, the local council {{0}} the decision to close the historic library.",
+      "type": "dropdown_blanks",
+      "explanation": "'Rescinded' means to revoke, cancel, or repeal a law, order, or agreement.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "recalled",
+            "rescinded",
+            "ratified",
+            "rejected"
+          ]
+        }
+      ],
+      "prompt": "Choose the word that best completes the sentence.",
+      "id": "v-db-0029"
+    },
+    {
+      "type": "dropdown_blanks",
+      "template": "The region experienced an {{0}} heatwave, with temperatures reaching heights never recorded in history.",
+      "prompt": "Choose the word that best completes the sentence.",
+      "explanation": "'Unprecedented' means never done or known before, fitting a record-breaking heatwave.",
+      "blanks": [
+        {
+          "options": [
+            "unprecedented",
+            "outdated",
+            "modest",
+            "predictable"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "id": "v-db-0030"
+    },
+    {
+      "type": "dropdown_blanks",
+      "template": "The editor suggested removing the {{0}} adjectives to make the prose clearer and more impactful.",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "redundant",
+            "mandatory",
+            "superfluous",
+            "essential"
+          ]
+        }
+      ],
+      "explanation": "'Superfluous' means unnecessary or more than enough, which fits the context of removing extra words to make a report more concise.",
+      "prompt": "Choose the word that best completes the sentence.",
+      "id": "v-db-0031"
+    },
+    {
+      "prompt": "Choose the word that best completes the sentence.",
+      "explanation": "'Pragmatic' means dealing with things sensibly and realistically, which matches the CEO's focus on practical results over theories.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "benevolent",
+            "pragmatic",
+            "idealistic",
+            "cautious"
+          ]
+        }
+      ],
+      "template": "Known for her {{0}} approach to business, the CEO prioritised practical solutions over abstract theories.",
+      "type": "dropdown_blanks",
+      "id": "v-db-0032"
+    },
+    {
+      "type": "dropdown_blanks",
+      "template": "The extreme {{0}} of the stock market has made many first-time investors hesitant to commit their funds.",
+      "explanation": "'Volatility' refers to a tendency to change rapidly and unpredictably, which explains why investors are nervous.",
+      "blanks": [
+        {
+          "options": [
+            "volatility",
+            "stability",
+            "prosperity",
+            "certainty"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "prompt": "Choose the word that best completes the sentence.",
+      "id": "v-db-0033"
+    },
+    {
+      "template": "The secret laboratory was housed in an {{0}} grey building that looked like any other warehouse on the estate.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 3,
+          "options": [
+            "conspicuous",
+            "notorious",
+            "austere",
+            "inconspicuous"
+          ]
+        }
+      ],
+      "explanation": "'Inconspicuous' means not clearly visible or attracting attention, which fits a plain building that blends into its surroundings.",
+      "prompt": "Choose the word that best completes the sentence.",
+      "id": "v-db-0034"
+    },
+    {
+      "template": "The school introduced a new digital portal to {{0}} better communication between teachers and parents.",
+      "type": "dropdown_blanks",
+      "prompt": "Choose the word that best completes the sentence.",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "impede",
+            "accelerate",
+            "facilitate",
+            "postpone"
+          ]
+        }
+      ],
+      "explanation": "'Facilitate' means to make an action or process easy or easier, which describes the effect of the new digital system.",
+      "id": "v-db-0035"
+    },
+    {
+      "prompt": "Choose the word that best completes the sentence.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "eloquent",
+            "ambivalent",
+            "resolute",
+            "indifferent"
+          ]
+        }
+      ],
+      "explanation": "'Ambivalent' means having mixed feelings or contradictory ideas about something, which fits the description of being \"torn.\"",
+      "type": "dropdown_blanks",
+      "template": "Oliver felt {{0}} about the job offer; while the salary was excellent, the commute would be exhausting.",
+      "id": "v-db-0036"
+    },
+    {
+      "template": "The sudden heavy snowfall served only to {{0}} the existing delays on the rail network.",
+      "prompt": "Choose the word that best completes the sentence.",
+      "blanks": [
+        {
+          "options": [
+            "mitigate",
+            "exacerbate",
+            "circumvent"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "explanation": "To 'exacerbate' means to make a problem or bad situation worse, which fits the context of heavy snow and travel delays.",
+      "type": "dropdown_blanks",
+      "id": "v-db-0037"
+    },
+    {
+      "type": "dropdown_blanks",
+      "explanation": "'Meticulous' means showing great attention to detail or being very careful and precise.",
+      "blanks": [
+        {
+          "options": [
+            "meticulous",
+            "haphazard",
+            "cursory"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "prompt": "Choose the word that best completes the sentence.",
+      "template": "Known for her {{0}} research, the historian spent years verifying every date in her manuscript.",
+      "id": "v-db-0038"
+    },
+    {
+      "prompt": "Choose the word that best completes the sentence.",
+      "template": "The beauty of the sunset was {{0}}, fading into a deep purple within just a few minutes.",
+      "type": "dropdown_blanks",
+      "explanation": "'Ephemeral' describes something that lasts for a very short time, like a sunset.",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "frugal",
+            "ostentatious",
+            "ephemeral"
+          ]
+        }
+      ],
+      "id": "v-db-0039"
+    },
+    {
+      "type": "dropdown_blanks",
+      "explanation": "A 'unanimous' decision is one where everyone involved is in full agreement.",
+      "blanks": [
+        {
+          "options": [
+            "unanimous",
+            "contentious",
+            "ambiguous"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "prompt": "Choose the word that best completes the sentence.",
+      "template": "After hours of debate, the committee finally reached a {{0}} decision to approve the funding.",
+      "id": "v-db-0040"
+    },
+    {
+      "explanation": "'Reticent' means not revealing one's thoughts or feelings readily, which explains why the colleague is hard to get to know.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "options": [
+            "gregarious",
+            "reticent",
+            "benevolent"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "template": "James is quite {{0}} about his private life, rarely mentioning his family or hobbies to his colleagues.",
+      "prompt": "Choose the word that best completes the sentence.",
+      "id": "v-db-0041"
+    },
+    {
+      "explanation": "To 'facilitate' means to make an action or process easy or easier.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "venerate",
+            "scrutinise",
+            "facilitate"
+          ]
+        }
+      ],
+      "prompt": "Choose the word that best completes the sentence.",
+      "template": "The new software is designed to {{0}} more efficient data sharing between departments.",
+      "id": "v-db-0042"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "adversity",
+            "prosperity",
+            "frivolity"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "explanation": "'Adversity' refers to difficulties or misfortune, which the entrepreneur had to overcome to succeed.",
+      "type": "dropdown_blanks",
+      "template": "Having overcome significant {{0}} in his youth, the entrepreneur was determined to help others succeed.",
+      "prompt": "Choose the word that best completes the sentence.",
+      "id": "v-db-0043"
+    },
+    {
+      "type": "dropdown_blanks",
+      "explanation": "'Indispensable' means absolutely necessary, making it the opposite of 'luxury' in this context.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "superfluous",
+            "indispensable",
+            "obsolete"
+          ]
+        }
+      ],
+      "prompt": "Choose the word that best completes the sentence.",
+      "template": "In the modern workplace, a reliable internet connection is no longer a luxury but an {{0}} tool.",
+      "id": "v-db-0044"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "indifferent",
+            "enthusiastic",
+            "ambivalent"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "type": "dropdown_blanks",
+      "explanation": "'Ambivalent' means having mixed feelings or contradictory ideas about something or someone.",
+      "prompt": "Choose the word that best completes the sentence.",
+      "template": "Sarah was {{0}} about the promotion; she looked forward to the challenge but dreaded the longer hours.",
+      "id": "v-db-0045"
+    },
+    {
+      "explanation": "To 'scrutinise' means to examine or inspect closely and thoroughly, which is what an accountant would do with receipts.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "options": [
+            "scrutinised",
+            "glanced",
+            "disregarded"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "template": "The accountant {{0}} every receipt to ensure the company's expenses were accurately reported.",
+      "prompt": "Choose the word that best completes the sentence.",
+      "id": "v-db-0046"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "sporadic",
+            "unprecedented",
+            "monotonous"
+          ]
+        }
+      ],
+      "explanation": "'Unprecedented' means never done or known before, fitting the description of a record-breaking rainfall.",
+      "type": "dropdown_blanks",
+      "prompt": "Choose the word that best completes the sentence.",
+      "template": "The village experienced {{0}} levels of rainfall, far exceeding any records from the last century.",
+      "id": "v-db-0047"
+    },
+    {
+      "type": "dropdown_blanks",
+      "explanation": "'Inconspicuous' means not clearly visible or attracting attention, which fits a plain car used for surveillance.",
+      "blanks": [
+        {
+          "options": [
+            "opaque",
+            "conspicuous",
+            "inconspicuous"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "prompt": "Choose the word that best completes the sentence.",
+      "template": "The detectives parked in an {{0}} van at the end of the street to avoid drawing attention.",
+      "id": "v-db-0048"
+    },
+    {
+      "explanation": "'Rescinded' is the correct term for officially cancelling or revoking a law, order, or agreement.",
+      "blanks": [
+        {
+          "options": [
+            "retracted",
+            "rescinded",
+            "refuted",
+            "rebound"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "type": "dropdown_blanks",
+      "template": "After months of protests, the government finally {{0}} the controversial new legislation.",
+      "prompt": "Choose the word that describes cancelling a law.",
+      "id": "v-db-0049"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "meticulous",
+            "shoddy",
+            "sporadic",
+            "casual"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "explanation": "'Meticulous' means showing great attention to detail or being very careful and precise.",
+      "template": "The artisan's {{0}} attention to detail ensured that every piece of furniture was a masterpiece.",
+      "type": "dropdown_blanks",
+      "prompt": "Choose the word that describes careful work.",
+      "id": "v-db-0050"
+    },
+    {
+      "prompt": "Choose the word that means increased rapidly.",
+      "type": "dropdown_blanks",
+      "template": "Since the introduction of high-speed internet, the number of remote workers has {{0}} across the country.",
+      "explanation": "'Proliferated' means to increase rapidly in numbers or multiply.",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "stagnated",
+            "diminished",
+            "proliferated",
+            "subsided"
+          ]
+        }
+      ],
+      "id": "v-db-0051"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "optimistic",
+            "indifferent",
+            "cautious",
+            "sceptical"
+          ],
+          "correctIndex": 3
+        }
+      ],
+      "explanation": "If someone doubts the truth of something or is not easily convinced, they are 'sceptical'.",
+      "type": "dropdown_blanks",
+      "template": "Many scientists remain {{0}} about the findings until the results can be replicated in a peer-reviewed study.",
+      "prompt": "Choose the word that describes a doubtful attitude.",
+      "id": "v-db-0052"
+    },
+    {
+      "prompt": "Choose the word that means to make a situation worse.",
+      "type": "dropdown_blanks",
+      "template": "Cutting the budget for road maintenance will only {{0}} the problem of potholes in the city centre.",
+      "explanation": "'Exacerbate' means to make a problem, bad situation, or negative feeling worse.",
+      "blanks": [
+        {
+          "options": [
+            "mitigate",
+            "exacerbate",
+            "alleviate",
+            "pacify"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "id": "v-db-0053"
+    },
+    {
+      "prompt": "Choose the word for something that is short-lived.",
+      "template": "The joy of winning the trophy was {{0}}, as the team had to immediately prepare for next season.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "options": [
+            "transient",
+            "permanent",
+            "perpetual",
+            "eternal"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "explanation": "'Transient' describes something that lasts only for a short time or is impermanent.",
+      "id": "v-db-0054"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "ambiguous",
+            "redundant",
+            "succinct",
+            "verbose"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "explanation": "'Succinct' means briefly and clearly expressed, which fits the goal of a summary.",
+      "prompt": "Choose the word that means brief and clear.",
+      "template": "The executive asked for a {{0}} report that summarised the key points in less than two pages.",
+      "type": "dropdown_blanks",
+      "id": "v-db-0055"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "superfluous",
+            "indispensable_key",
+            "incidental",
+            "trivial"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "explanation": "'Indispensable' describes something that is absolutely necessary and cannot be replaced.",
+      "template": "A compass is an {{0}} tool for hikers venturing into the remote highlands where phone signals are weak.",
+      "type": "dropdown_blanks",
+      "prompt": "Choose the word that means absolutely necessary.",
+      "id": "v-db-0056"
+    },
+    {
+      "template": "Known for his {{0}} approach to gardening, he chose hardy plants that required very little maintenance.",
+      "type": "dropdown_blanks",
+      "prompt": "Choose the word for a practical approach.",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "pragmatic",
+            "idealistic",
+            "fanciful",
+            "speculative"
+          ]
+        }
+      ],
+      "explanation": "A 'pragmatic' person deals with things sensibly and realistically based on practical considerations.",
+      "id": "v-db-0057"
+    },
+    {
+      "prompt": "Choose the word that describes damaging performance.",
+      "template": "The athlete's performance was {{0}} a recurring knee injury that prevented her from training at full capacity.",
+      "type": "dropdown_blanks",
+      "explanation": "'Undermined' means to lessen the effectiveness, power, or ability of something.",
+      "blanks": [
+        {
+          "correctIndex": 3,
+          "options": [
+            "oblivious_to",
+            "composed_of_by",
+            "hindered_by_on",
+            "undermined_by"
+          ]
+        }
+      ],
+      "id": "v-db-0058"
+    },
+    {
+      "type": "dropdown_blanks",
+      "template": "The new recruit proved to be a {{0}} asset to the marketing team, being skilled in both graphic design and copywriting.",
+      "prompt": "Choose the word that describes being multi-talented.",
+      "blanks": [
+        {
+          "options": [
+            "monotonous",
+            "versatile_multi",
+            "stagnant",
+            "rigid"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "explanation": "'Versatile' means able to adapt or be adapted to many different functions or activities.",
+      "id": "v-db-0059"
+    },
+    {
+      "explanation": "To 'scrutinise' something is to examine or inspect it closely and thoroughly.",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "commence",
+            "cease",
+            "scrutinise_examine",
+            "overlook"
+          ]
+        }
+      ],
+      "type": "dropdown_blanks",
+      "template": "The bank will {{0}} your financial records before deciding whether to grant the mortgage.",
+      "prompt": "Choose the word that means to examine closely.",
+      "id": "v-db-0060"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "noted",
+            "optimistic",
+            "ambivalent",
+            "indifferent"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "type": "dropdown_blanks",
+      "explanation": "Optimistic means hopeful and confident about the future, which fits the context of high sales and positive growth.",
+      "template": "Despite the recent economic downturn, the CEO remained {{0}} about the company's growth for the next quarter.",
+      "prompt": "Choose the word that best fits the context of the sentence.",
+      "id": "v-db-0061"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "unprecedented",
+            "unreliable",
+            "unremarkable",
+            "unavoidable"
+          ]
+        }
+      ],
+      "explanation": "Unprecedented means never done or known before, accurately describing a level of success that has no previous comparison.",
+      "type": "dropdown_blanks",
+      "prompt": "Select the most appropriate adjective to complete the sentence.",
+      "template": "The charity auction was a success of {{0}} proportions, raising over five million pounds in a single evening.",
+      "id": "v-db-0062"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 3,
+          "options": [
+            "diminish",
+            "prohibit",
+            "reconcile",
+            "alleviate"
+          ]
+        }
+      ],
+      "explanation": "Alleviate means to make a problem less severe, which is the intended consequence of the council's plan to ease congestion.",
+      "type": "dropdown_blanks",
+      "prompt": "Identify the verb that correctly indicates a reduction in traffic issues.",
+      "template": "The local council hope that the new bypass will {{0}} the traffic congestion currently affecting the town centre.",
+      "id": "v-db-0063"
+    },
+    {
+      "type": "dropdown_blanks",
+      "explanation": "Evasive describes someone who avoids giving direct answers, which fits the context of someone who is reluctant to discuss a topic.",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "candid",
+            "erratic",
+            "evasive",
+            "transparent"
+          ]
+        }
+      ],
+      "template": "When asked about the missing documents, the manager's responses became increasingly {{0}} and vague.",
+      "prompt": "Choose the word that describes a person's reluctance to share information.",
+      "id": "v-db-0064"
+    },
+    {
+      "explanation": "Meticulous means showing great attention to detail, which is necessary for a restorer working on delicate antique paintings.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "options": [
+            "meticulous",
+            "superficial",
+            "haphazard",
+            "casual"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "template": "The restorer worked with {{0}} care, ensuring that every brushstroke on the antique painting was preserved.",
+      "prompt": "Select the word that best describes a high degree of care and precision.",
+      "id": "v-db-0065"
+    },
+    {
+      "explanation": "Compulsory means required by law or a rule, fitting the context of mandatory safety training for new employees.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "options": [
+            "sporadic",
+            "frequent",
+            "customary",
+            "compulsory"
+          ],
+          "correctIndex": 3
+        }
+      ],
+      "prompt": "Choose the term that indicates an obligatory requirement.",
+      "template": "Attendance at the health and safety seminar is {{0}} for all staff members who have joined in the last six months.",
+      "id": "v-db-0066"
+    },
+    {
+      "prompt": "Identify the word that means to worsen a negative situation.",
+      "template": "Attempting to clean the delicate fabric with harsh chemicals will only {{0}} the damage already caused.",
+      "explanation": "Exacerbate means to make a problem or bad situation worse, which is the result of using the wrong cleaning chemicals.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "mitigate",
+            "exacerbate",
+            "rectify",
+            "obscure"
+          ]
+        }
+      ],
+      "id": "v-db-0067"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "surprising",
+            "consistent",
+            "erratic",
+            "standard"
+          ]
+        }
+      ],
+      "type": "dropdown_blanks",
+      "explanation": "Erratic means unpredictable or not even in movement, which explains why the mechanic struggled to diagnose a non-constant fault.",
+      "prompt": "Select the word describing unpredictable behaviour.",
+      "template": "Because the engine failure was {{0}} rather than constant, the mechanic found it difficult to pinpoint the exact fault.",
+      "id": "v-db-0068"
+    },
+    {
+      "prompt": "Choose the verb that means to cut back or reduce.",
+      "template": "In response to the financial crisis, the firm had to {{0}} its spending on international travel and staff bonuses.",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "curtail",
+            "prolong",
+            "endorse",
+            "stimulate"
+          ]
+        }
+      ],
+      "type": "dropdown_blanks",
+      "explanation": "Curtail means to reduce or restrict, which is a common action taken by companies during a financial crisis.",
+      "id": "v-db-0069"
+    },
+    {
+      "prompt": "Identify the adjective describing persistence and determination.",
+      "template": "The lawyer's {{0}} pursuit of the truth finally led to the discovery of the hidden bank accounts.",
+      "blanks": [
+        {
+          "options": [
+            "fragile",
+            "temporary",
+            "flexible",
+            "tenacious"
+          ],
+          "correctIndex": 3
+        }
+      ],
+      "explanation": "Tenacious means persisting in existence or not easily giving up, describing the lawyer's determined pursuit of evidence.",
+      "type": "dropdown_blanks",
+      "id": "v-db-0070"
+    },
+    {
+      "prompt": "Select the word that means to confirm or support with evidence.",
+      "template": "The witness was able to {{0}} the defendant's account of events, providing much-needed support for the case.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "dispute",
+            "corroborate",
+            "invalidate",
+            "fabricate"
+          ]
+        }
+      ],
+      "type": "dropdown_blanks",
+      "explanation": "Corroborate means to support or confirm a statement or theory, which is what the witness's statement did for the defendant's story.",
+      "id": "v-db-0071"
+    },
+    {
+      "type": "dropdown_blanks",
+      "explanation": "Conducive means making a certain situation or outcome likely or possible, which fits the description of a quiet, helpful study environment.",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "hostile",
+            "monotonous",
+            "conducive",
+            "detrimental"
+          ]
+        }
+      ],
+      "prompt": "Choose the word that describes an environment that helps produce a specific result.",
+      "template": "The library provides a quiet and orderly environment that is highly {{0}} to deep concentration and study.",
+      "id": "v-db-0072"
     }
   ],
   "mocks": []
