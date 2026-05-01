@@ -6873,6 +6873,972 @@
       "question": "What device is shown, used specifically to record footage from multiple analogue cameras?",
       "explanation": "A Digital Video Recorder (DVR) is used to convert and store footage from older analogue cameras onto a digital hard drive.",
       "id": "sc-im-0120"
+    },
+    {
+      "question": "Under the Health and Safety at Work Act, what does this specific sign indicate in a secure area?",
+      "type": "image_question",
+      "imageDescription": "A standard UK health and safety prohibition sign showing a camera with a red circle and a diagonal line across it.",
+      "options": [
+        "Mandatory action",
+        "Safety warning",
+        "Prohibited action",
+        "Safe condition"
+      ],
+      "explanation": "Red circular signs with a diagonal cross or line indicate prohibited actions under UK Health and Safety regulations.",
+      "imageAlt": "A red circular sign with a white background and a red diagonal line through a camera icon.",
+      "correctAnswer": 2,
+      "id": "sc-im-0121"
+    },
+    {
+      "options": [
+        "Security Industry Authority (SIA)",
+        "Home Office Surveillance Commission",
+        "Police Licensing Department (PLD)",
+        "Information Commissioner’s Office (ICO)"
+      ],
+      "question": "Which regulatory body issues the licence shown in this image for CCTV operators in the UK?",
+      "type": "image_question",
+      "imageDescription": "A mock-up of an SIA front-line CCTV licence showing the Security Industry Authority logo, hologram, and license holder details.",
+      "explanation": "The SIA logo on a licence indicates that the individual has been vetted and is authorised to work in the private security industry.",
+      "imageAlt": "A standard SIA CCTV Operator licence card including a hologram.",
+      "correctAnswer": 0,
+      "id": "sc-im-0122"
+    },
+    {
+      "explanation": "A 'Bullet' camera is named for its cylindrical shape and is commonly used for fixed-view observation in outdoor environments.",
+      "imageAlt": "A white cylindrical camera mounted on a wall bracket.",
+      "correctAnswer": 1,
+      "options": [
+        "Dome camera",
+        "Bullet camera",
+        "PTZ camera",
+        "360-degree camera"
+      ],
+      "question": "What is the industry term for the specific style of camera housing shown in this image?",
+      "type": "image_question",
+      "imageDescription": "A professional-grade white cylindrical 'bullet' style security camera fixed to a grey background wall.",
+      "id": "sc-im-0123"
+    },
+    {
+      "explanation": "Green rectangular signs indicate safe conditions, such as the location of first aid equipment or emergency exits.",
+      "imageAlt": "A green rectangular sign with a white cross.",
+      "correctAnswer": 3,
+      "options": [
+        "Warning of danger",
+        "Prohibited area",
+        "Fire equipment location striping",
+        "Safe condition / First aid point"
+      ],
+      "question": "In a control room environment, what is the meaning of this category of safety sign?",
+      "type": "image_question",
+      "imageDescription": "A standard green and white 'First Aid' sign used in UK workplaces.",
+      "id": "sc-im-0124"
+    },
+    {
+      "imageAlt": "A blue network cable with a plastic RJ45 connector.",
+      "correctAnswer": 1,
+      "explanation": "An Ethernet (RJ45) cable is used to transmit digital data and power between an IP camera and a network switch.",
+      "question": "Which type of cable, commonly used for modern IP CCTV systems, is shown in this image?",
+      "type": "image_question",
+      "imageDescription": "A close-up of a blue Ethernet Cat5e/6 cable with a standard RJ45 connector, used for IP CCTV networking.",
+      "options": [
+        "Coaxial cable (BNC)",
+        "Network cable (RJ45)",
+        "HDMI video cable",
+        "Fibre optic connector"
+      ],
+      "id": "sc-im-0125"
+    },
+    {
+      "explanation": "Standard workstation ergonomics require the top of the monitor to be at or slightly below eye level to prevent neck strain.",
+      "imageAlt": "A diagram showing an operator sitting at a desk with a monitor.",
+      "correctAnswer": 2,
+      "question": "According to Display Screen Equipment (DSE) regulations, what is the correct height for the monitor shown in this diagram?",
+      "type": "image_question",
+      "imageDescription": "An ergonomic diagram side view of a person sitting at a computer desk, showing the recommended height for the screen relative to their eyes.",
+      "options": [
+        "Above the head level",
+        "Resting on the desk surface",
+        "At or slightly below eye level",
+        "Tilted upwards at 45 degrees"
+      ],
+      "id": "sc-im-0126"
+    },
+    {
+      "options": [
+        "To reduce neck strain and eye fatigue",
+        "To make the room look more professional",
+        "To allow more people to stand behind the operator",
+        "To increase the heat generated by the screens"
+      ],
+      "imageDescription": "An image of a CCTV control room console with six monitors arranged in a curved configuration.",
+      "question": "Why are monitors in a CCTV control room often arranged in the 'arc' configuration shown here?",
+      "type": "image_question",
+      "imageAlt": "A row of several monitors arranged in a semi-circle.",
+      "correctAnswer": 0,
+      "explanation": "Monitors in a control room should be arranged in a 'monitor wall' or arc to allow the operator to see all screens without excessive head movement.",
+      "id": "sc-im-0127"
+    },
+    {
+      "explanation": "The ICO logo represents the body responsible for enforcing the Data Protection Act and UK GDPR regarding CCTV usage.",
+      "imageAlt": "The logo of the Information Commissioner's Office.",
+      "correctAnswer": 2,
+      "question": "Which organization, represented by this logo, identifies the standards for handling personal data?",
+      "type": "image_question",
+      "imageDescription": "The official logo for the Information Commissioner's Office (ICO), which includes the text 'ico.' in a specific blue font.",
+      "options": [
+        "The SIA National Helpline",
+        "The Health and Safety Executive (HSE) England",
+        "The Information Commissioner’s Office (ICO)",
+        "The British Standards Institution (BSI)"
+      ],
+      "id": "sc-im-0128"
+    },
+    {
+      "imageAlt": "A clear plastic bag with a red 'VOID' seal tape at the top.",
+      "correctAnswer": 1,
+      "explanation": "TAMPER evident bags are used to maintain the chain of evidence by showing if any unauthorised person has tried to open the bag.",
+      "question": "What is the primary purpose of the specialized storage item shown in this image?",
+      "type": "image_question",
+      "imageDescription": "A transparent evidence bag used by security personnel, showing a secure tamper-evident seal that displays 'VOID' if opened.",
+      "options": [
+        "General waste disposal bag",
+        "Tamper-evident evidence bag",
+        "Personal property storage pouch",
+        "Recycling bag for old disks"
+      ],
+      "id": "sc-im-0129"
+    },
+    {
+      "imageAlt": "A black box with several UK power outlets and a power button.",
+      "correctAnswer": 0,
+      "explanation": "A UPS provides emergency power to the CCTV system during a mains failure to ensure continuous recording.",
+      "imageDescription": "A black Uninterruptible Power Supply (UPS) unit showing status lights and power sockets on the rear.",
+      "question": "What is the name of this device used to keep a CCTV system running during a power cut?",
+      "type": "image_question",
+      "options": [
+        "Uninterruptible Power Supply (UPS)",
+        "Digital Video Recorder (DVR)",
+        "Network Router",
+        "Voltage Transformer"
+      ],
+      "id": "sc-im-0130"
+    },
+    {
+      "explanation": "COSHH signs warn of hazardous substances. CCTV operators may see these on cleaning chemicals or server room fire suppressants.",
+      "imageAlt": "A diamond-shaped sign with a red border showing a black flame symbol.",
+      "correctAnswer": 3,
+      "question": "What does this symbol, often found on cleaning supplies or in maintenance areas, represent?",
+      "type": "image_question",
+      "imageDescription": "A red-bordered white diamond sign featuring a black flame icon, used for flammable substances under COSHH.",
+      "options": [
+        "General danger warning",
+        "Mandatory fire drill area",
+        "Safe to use near electricity",
+        "Presence of flammable substances (COSHH)"
+      ],
+      "id": "sc-im-0131"
+    },
+    {
+      "question": "An operator sees this reflection on their screen. What is the most likely cause of this ergonomic issue?",
+      "type": "image_question",
+      "imageDescription": "A CCTV monitor displaying a camera feed, but with a significant white glare reflecting off the glass from an unseen window.",
+      "options": [
+        "A faulty camera sensor",
+        "Dust on the camera lens",
+        "Poor monitor positioning causing glare",
+        "Low light levels in the area being viewed"
+      ],
+      "explanation": "Monitors should be positioned to avoid glare from windows or overhead lighting to prevent eye strain and maintain clarity of the footage.",
+      "imageAlt": "A monitor screen with a bright white reflection obscuring the image.",
+      "correctAnswer": 2,
+      "id": "sc-im-0132"
+    },
+    {
+      "options": [
+        "Motion sensors",
+        "Microphones",
+        "Infrared (IR) LEDs",
+        "Status indicator lights"
+      ],
+      "imageAlt": "A close-up of a CCTV camera lens surrounded by small circular bulbs.",
+      "question": "What is the purpose of the ring of small bulbs surrounding the lens on this camera?",
+      "imageDescription": "A close-up photograph of a fixed security camera lens. Surrounding the glass lens is a ring of small, circular LEDs that glow faintly red or are clear.",
+      "explanation": "Infrared (IR) LEDs provide invisible light that allows the camera to capture clear monochrome footage in total darkness.",
+      "type": "image_question",
+      "correctAnswer": 2,
+      "id": "sc-im-0133"
+    },
+    {
+      "options": [
+        "Data Protection Act 2018",
+        "Private Security Industry Act 2001",
+        "Human Rights Act 1998s",
+        "Health and Safety at Work Act 1974"
+      ],
+      "imageAlt": "A yellow sign with a black camera icon and text.",
+      "imageDescription": "A standard UK yellow CCTV warning sign. It features a black icon of a camera and space below for the name of the scheme operator and a contact number.",
+      "question": "The presence of this sign is a legal requirement under which piece of legislation?",
+      "explanation": "The Data Protection Act 2018 (incorporating GDPR) requires clear signage to inform the public that CCTV is in operation.",
+      "type": "image_question",
+      "correctAnswer": 0,
+      "id": "sc-im-0134"
+    },
+    {
+      "options": [
+        "Fixed lens",
+        "Varifocal lenss",
+        "Pinhole lens",
+        "Wide-angle lens"
+      ],
+      "imageAlt": "A camera lens with two protruding adjustment pins labeled 'Tele/Wide' and 'Near/Far'.",
+      "question": "What type of CCTV lens is shown in this image, which allows for manual adjustment of the zoom and focus?",
+      "imageDescription": "A side profile of a CCTV camera lens removed from the body. It has two small metal pins used for manual adjustment, labeled with 'T/W' for Zoom and 'N/F' for Focus.",
+      "explanation": "Varifocal lenses allow the operator or installer to manually adjust the field of view and focus to suit the specific area being monitored.",
+      "type": "image_question",
+      "correctAnswer": 1,
+      "id": "sc-im-0135"
+    },
+    {
+      "explanation": "The BNC (Bayonet Neill-Concelman) connector is the standard physical interface used for connecting analogue coaxial cables to cameras and recorders.",
+      "question": "What is the name of this specific connector, commonly used to connect analogue cameras to a DVR?",
+      "imageDescription": "A high-resolution photo of a BNC connector at the end of a RG59 coaxial cable. The connector has a rotating locking ring.",
+      "imageAlt": "A silver metal connector at the end of a thick black cable.",
+      "options": [
+        "RJ45 connector",
+        "HDMI connector",
+        "USB connector",
+        "BNC connector"
+      ],
+      "correctAnswer": 3,
+      "type": "image_question",
+      "id": "sc-im-0136"
+    },
+    {
+      "question": "According to DSE regulations, what is the recommended height for the monitor relative to the operator's eyes?",
+      "imageDescription": "A technical drawing of a CCTV operator sitting in an ergonomic chair. A dashed line shows the horizontal line of sight from the operator's eyes to the top of the screen.",
+      "explanation": "To prevent neck strain and musculoskeletal issues, the top of the monitor should be at or slightly below the operator's eye level.",
+      "options": [
+        "Above eye level",
+        "At chest height",
+        "At or slightly below eye level",
+        "As high as possible to allow for standing"
+      ],
+      "imageAlt": "A side view diagram of a person sitting at a desk with a monitor.",
+      "correctAnswer": 2,
+      "type": "image_question",
+      "id": "sc-im-0137"
+    },
+    {
+      "correctAnswer": 0,
+      "type": "image_question",
+      "explanation": "The 'Pan, Tilt, and Zoom' (PTZ) camera is designed to be moved remotely by an operator to track subjects or investigate incidents.",
+      "imageDescription": "A large white speed-dome camera mounted on an external wall bracket. It has a glass lower half and is capable of rotating 360 degrees.",
+      "question": "What type of camera is shown, designed to be actively controlled by an operator in a control room?",
+      "imageAlt": "A white dome-shaped camera hanging from a wall bracket.",
+      "options": [
+        "PTZ (Pan, Tilt, Zoom) camera",
+        "Fixed bullet camera",
+        "Covert pinhole cameras",
+        "Thermal imaging camera"
+      ],
+      "id": "sc-im-0138"
+    },
+    {
+      "imageDescription": "A document template used in a CCTV control room. The header reads 'Subject Access Request Form' and includes sections for the date, time, and location of the recorded event.",
+      "question": "What is the name of the process an individual follows when submitting this form to view footage of themselves?",
+      "explanation": "A Subject Access Request (SAR) allows an individual to request a copy of personal data (including CCTV footage) held about them.",
+      "options": [
+        "Freedom of Information Request",
+        "Subject Access Request",
+        "Police Disclosure Form",
+        "Incident Report Log"
+      ],
+      "imageAlt": "A paper form titled 'Application for Access to Personal Data'.",
+      "correctAnswer": 1,
+      "type": "image_question",
+      "id": "sc-im-0139"
+    },
+    {
+      "explanation": "A Video Matrix allows multiple camera inputs to be routed to various different monitors within a large control room.",
+      "imageDescription": "The rear view of a professional rack-mounted video matrix switcher. It has dozens of BNC ports arranged in rows and columns for input and output routing.",
+      "question": "In a large-scale control room, what is the primary function of the rack-mounted equipment shown here?",
+      "imageAlt": "A rack-mounted electronic device with many BNC inputs on the back.",
+      "options": [
+        "Uninterruptible Power Supply",
+        "Digital Video Recorder",
+        "Video Matrix Switcher",
+        "Network Switch"
+      ],
+      "correctAnswer": 2,
+      "type": "image_question",
+      "id": "sc-im-0140"
+    },
+    {
+      "explanation": "The Incident Log is a vital document used to record all significant events, observations, and actions taken by the operator during their shift.",
+      "imageDescription": "A close-up of a page in a CCTV operator's daily logbook. The columns are clearly marked for recording chronological events throughout a shift.",
+      "question": "What is the name of the document shown, used by operators to record evidence and daily activities?",
+      "imageAlt": "A logbook with columns for 'Time', 'Camera No.', and 'Details of Incident'.",
+      "options": [
+        "Visitor Register",
+        "Data Protection Audit",
+        "Maintenance Schedule",
+        "Incident Log"
+      ],
+      "correctAnswer": 3,
+      "type": "image_question",
+      "id": "sc-im-0141"
+    },
+    {
+      "explanation": "Fire exit signs must be green and rectangular (safe condition) to comply with health and safety regulations for emergency routes.",
+      "imageDescription": "A standard UK 'Running Man' fire exit sign. It is green with a white pictogram and an arrow pointing towards a doorway.",
+      "question": "In a control room environment, what category of safety sign is shown in this image?",
+      "imageAlt": "A green rectangular sign with a white figure running through a door.",
+      "options": [
+        "Warning sign",
+        "Safe condition sign",
+        "Mandatory sign",
+        "Prohibition sign"
+      ],
+      "correctAnswer": 1,
+      "type": "image_question",
+      "id": "sc-im-0142"
+    },
+    {
+      "options": [
+        "Private Security Industry Act 2001",
+        "Police and Criminal Evidence Act 1984",
+        "Criminal Justice Act 1994",
+        "Local Government Act 1972"
+      ],
+      "imageAlt": "A blue and white card with a photo and a 'Public Space Surveillance' title.",
+      "question": "The licence shown is issued under the authority of which legislation?",
+      "imageDescription": "The front of an SIA Public Space Surveillance (CCTV) licence. It features the SIA logo, the operator's photo, an expiry date, and a holographic security feature.",
+      "explanation": "Under the PSIA 2001, it is a criminal offence to work as a CCTV operator without a valid SIA licence clearly displayed.",
+      "type": "image_question",
+      "correctAnswer": 0,
+      "id": "sc-im-0143"
+    },
+    {
+      "correctAnswer": 3,
+      "type": "image_question",
+      "explanation": "IP (Internet Protocol) cameras use RJ45 connectors and Ethernet cables (Cat5e/Cat6) to transmit digital video data over a network.",
+      "imageDescription": "A close-up of an RJ45 modular plug at the end of a blue Ethernet cable, often used for connecting IP cameras to a network switch.",
+      "question": "What type of connector is shown, which is required for installing and connecting modern IP cameras?",
+      "imageAlt": "A clear plastic connector with eight small copper pins.",
+      "options": [
+        "Coaxial connector",
+        "F-Type connector",
+        "Fiber optic connector",
+        "RJ45 connector"
+      ],
+      "id": "sc-im-0144"
+    },
+    {
+      "type": "image_question",
+      "imageDescription": "The official logo of the Information Commissioner's Office (ICO), which includes the letters 'ico.' and the text 'Information Commissioner's Office'.",
+      "correctAnswer": 1,
+      "options": [
+        "SIA",
+        "ICO",
+        "Home Office",
+        "Police Scotland"
+      ],
+      "question": "An operator must follow the guidelines set by which organization, represented by this logo, regarding data protection?",
+      "imageAlt": "The logo of the Information Commissioner's Office.",
+      "explanation": "The Information Commissioner's Office (ICO) is the UK's independent body set up to uphold information rights.",
+      "id": "sc-im-0145"
+    },
+    {
+      "type": "image_question",
+      "correctAnswer": 0,
+      "imageDescription": "A screenshot of a CCTV monitor showing a public street. A solid black rectangular box has been digitally placed over a residential bedroom window to obscure it.",
+      "explanation": "A privacy mask is a feature used to block out specific areas (like private windows) from being viewed or recorded.",
+      "imageAlt": "A CCTV screen showing a street with a black box covering a house window.",
+      "question": "What feature is being used in this image to protect the privacy of local residents?",
+      "options": [
+        "Privacy masking",
+        "Digital zoom",
+        "Motion detection failure",
+        "Infrared interference"
+      ],
+      "id": "sc-im-0146"
+    },
+    {
+      "type": "image_question",
+      "imageDescription": "A classic cylinder-shaped 'bullet' CCTV camera with a small sunshield on top, mounted to an external brick wall with a bracket.",
+      "correctAnswer": 2,
+      "options": [
+        "PTZ camera",
+        "Dome camera",
+        "Fixed camera",
+        "Covert camera"
+      ],
+      "question": "What type of camera is shown in the image, typically used for fixed-angle perimeter monitoring?",
+      "imageAlt": "A bullet-style CCTV camera mounted on a wall.",
+      "explanation": "A fixed 'bullet' camera is designed to point in one permanent direction and is highly visible to act as a deterrent.",
+      "id": "sc-im-0147"
+    },
+    {
+      "imageDescription": "A standard blue informational sign featuring a white lowercase letter 'i' in the centre.",
+      "correctAnswer": 0,
+      "type": "image_question",
+      "imageAlt": "A blue square sign with a white lowercase letter i.",
+      "explanation": "The 'i' symbol indicates a source of information, such as a help desk or an information point in a public space.",
+      "options": [
+        "Information Point",
+        "Intercom location",
+        "Incident reported",
+        "Internal corridor"
+      ],
+      "question": "What does this standard signage symbol represent when seen on a site map by a CCTV operator?",
+      "id": "sc-im-0148"
+    },
+    {
+      "explanation": "Control room consoles should have adjustable height to accommodate different operators and reduce ergonomic strain.",
+      "imageAlt": "An adjustable height desk with monitors.",
+      "question": "What ergonomic feature does this specific type of control room desk provide for the operator?",
+      "options": [
+        "Soundproofing",
+        "Security locking",
+        "Heat ventilation",
+        "Height adjustability"
+      ],
+      "type": "image_question",
+      "correctAnswer": 3,
+      "imageDescription": "A professional CCTV workstation desk with a motorized leg system allowed for 'sit-stand' height adjustment.",
+      "id": "sc-im-0149"
+    },
+    {
+      "imageDescription": "A heavy-duty metal locker with individual keyed compartments, used for the secure storage of removable media like USBs or DVDs.",
+      "correctAnswer": 1,
+      "type": "image_question",
+      "imageAlt": "A metal locker for storing evidence media.",
+      "explanation": "Video clips exported as evidence must be kept in a locked, secure cabinet or safe to maintain the chain of evidence.",
+      "options": [
+        "In an unlocked desk drawer",
+        "In a secure, locked evidence cabinet \t",
+        "On a shelf in the public reception area",
+        "In the operator's personal locker"
+      ],
+      "question": "Where should the physical media shown in this storage unit be kept to comply with the PACE Act?",
+      "id": "sc-im-0150"
+    },
+    {
+      "options": [
+        "Switching the monitor off",
+        "Recording audio clips",
+        "Controlling PTZ cameras",
+        "Printing still images"
+      ],
+      "question": "What is the primary function of this piece of equipment found in a CCTV control room?",
+      "imageAlt": "A CCTV joystick controller unit.",
+      "explanation": "A joystick controller is the standard peripheral used for manually panning, tilting, and zooming a PTZ camera.",
+      "imageDescription": "A CCTV control keyboard featuring a multi-axis joystick, a numerical keypad, and several function buttons for camera selection.",
+      "correctAnswer": 2,
+      "type": "image_question",
+      "id": "sc-im-0151"
+    },
+    {
+      "explanation": "The 'flammable' symbol warns that the contents of a container can easily catch fire.",
+      "imageAlt": "A red diamond sign with a flame symbol.",
+      "question": "If an operator sees this symbol on a barrel during a site patrol, what hazard does it represent?",
+      "options": [
+        "Flammable material",
+        "Toxic substance",
+        "Oxidizing agent激",
+        "Corrosive liquid"
+      ],
+      "type": "image_question",
+      "correctAnswer": 0,
+      "imageDescription": "A COSHH hazard warning sign showing a black flame on a red background, indicating a flammable substance.",
+      "id": "sc-im-0152"
+    },
+    {
+      "imageDescription": "The back panel of a digital recording device showing multiple RJ45 Ethernet ports, a VGA port, and an HDMI port.",
+      "correctAnswer": 2,
+      "type": "image_question",
+      "imageAlt": "The rear of a Network Video Recorder showing Ethernet ports.",
+      "explanation": "A NVR (Network Video Recorder) is used to record footage from IP cameras connected via a local area network.",
+      "options": [
+        "Analogue VCR",
+        "Hard drive shredder",
+        "Network Video Recorder (NVR)",
+        "Video multiplexer"
+      ],
+      "question": "What type of recording device is shown in this image, characterized by its network ports?",
+      "id": "sc-im-0153"
+    },
+    {
+      "imageDescription": "A standard circular 'No Entry' road/safety sign with a red background and a white horizontal rectangle in the middle.",
+      "correctAnswer": 1,
+      "type": "image_question",
+      "imageAlt": "A red circle with a white horizontal bar.",
+      "explanation": "The 'no entry' sign is a prohibitory sign, indicated by its red circular shape.",
+      "options": [
+        "Mandatory sign",
+        "Prohibitory sign",
+        "Warning sign",
+        "Safe condition sign"
+      ],
+      "question": "In terms of safety signage categories, what type of sign is shown here?",
+      "id": "sc-im-0154"
+    },
+    {
+      "type": "image_question",
+      "imageDescription": "A ceiling-mounted dome camera housed in a heavy-duty metal casing with visible security screws to prevent removal.",
+      "correctAnswer": 3,
+      "options": [
+        "Low-light capability",
+        "Wireless connectivity",
+        "Thermal imaging",
+        "Vandal resistance \t"
+      ],
+      "question": "What is the main design advantage of the camera housing shown in this image?",
+      "imageAlt": "A dome camera with a metal reinforced casing.",
+      "explanation": "Vandal-resistant dome cameras are designed with high-impact housings to prevent damage from tampering or physical attack.",
+      "id": "sc-im-0155"
+    },
+    {
+      "type": "image_question",
+      "imageDescription": "A paper form with the heading 'Subject Access Request Form' and fields for 'Name', 'Date of Birth', and 'Description of Incident'.",
+      "correctAnswer": 0,
+      "options": [
+        "Subject Access Request (SAR)",
+        "Freedom of Information (FOI) request",
+        "Police witness statement",
+        "SIA licence application"
+      ],
+      "question": "What is the name of the request being made when a member of the public submits this form?",
+      "imageAlt": "A document titled Subject Access Request Form.",
+      "explanation": "A 'Subject Access Request' is the formal process under the UK GDPR for an individual to ask for their personal data.",
+      "id": "sc-im-0156"
+    },
+    {
+      "options": [
+        "Motion detection zone",
+        "Privacy masking",
+        "Digital zoom window",
+        "Ghosting effect"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Under the Data Protection Act 2018, CCTV operators must use privacy masking to obscure certain areas, such as private windows, to ensure monitoring is proportionate.",
+      "imageDescription": "A digital screenshot of a CCTV management system showing a residential street. A solid black digital box is placed over a specific window of a house to prevent viewing inside.",
+      "type": "image_question",
+      "question": "Which technical feature is being applied to this camera view to ensure compliance with the Data Protection Act?",
+      "imageAlt": "A CCTV monitor view of a street where a black square covers a bedroom window of a nearby house.",
+      "id": "sc-im-0157"
+    },
+    {
+      "options": [
+        "Prohibition sign",
+        "Mandatory sign triangle",
+        "Warning sign",
+        "Safe condition sign"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The yellow triangle indicates a 'Warning' sign, alerting staff to potential hazards like electricity or slippery floors in the control room or equipment area.",
+      "imageDescription": "A standard UK health and safety warning sign: a yellow equilateral triangle with a black border containing a black lightning bolt symbol, mounted on a grey wall.",
+      "type": "image_question",
+      "question": "What category of safety sign is shown in this image, often found near CCTV server racks?",
+      "imageAlt": "A yellow triangular sign with a black border and a lightning bolt symbol.",
+      "id": "sc-im-0158"
+    },
+    {
+      "explanation": "A PTZ (Pan, Tilt, Zoom) controller with a joystick allows operators to follow targets and change the camera's field of view in real-time.",
+      "options": [
+        "To manually control PTZ cameras",
+        "To edit recorded footage for the police",
+        "To program fire alarm sensors",
+        "To increase the monitor resolution"
+      ],
+      "correctAnswer": 0,
+      "imageAlt": "A CCTV control desk peripheral with a joystick and several numbered buttons.",
+      "question": "What is the primary purpose of the specific piece of equipment shown in this image?",
+      "type": "image_question",
+      "imageDescription": "A professional CCTV joystick controller unit sitting on a desk. It has a 3-axis joystick, a numeric keypad, and small LCD screen for selecting camera inputs.",
+      "id": "sc-im-0159"
+    },
+    {
+      "correctAnswer": 3,
+      "options": [
+        "Video loss error",
+        "Manual snapshot mode",
+        "Privacy blurring",
+        "Video Analytics (Object Tracking)"
+      ],
+      "explanation": "A Green circle around a person in a VMS (Video Management System) typically indicates an 'Analytics' trigger, such as a tripwire or loitering alert.",
+      "type": "image_question",
+      "imageDescription": "A modern CCTV interface showing a person walking through a secured gate. The software has automatically drawn a green bounding box around the person to track their movement.",
+      "imageAlt": "A CCTV screen showing a person walking through a car park with a green digital box around them.",
+      "question": "What is the CCTV software performing in this image as the person enters the restricted area?",
+      "id": "sc-im-0160"
+    },
+    {
+      "imageDescription": "A clear plastic evidence bag used by security professionals. It has a serial number printed on the side and a red tamper-evident adhesive seal at the top.",
+      "type": "image_question",
+      "question": "What is the legislative purpose for using the item shown in this image when handling recorded media?",
+      "imageAlt": "A clear plastic bag with a red 'VOID' seal tape at the top, used for holding a hard drive.",
+      "options": [
+        "General waste disposal",
+        "Static protection storage",
+        "Maintaining the 'Chain of Evidence'",
+        "DSE equipment cleaning"
+      ],
+      "correctAnswer": 2,
+      "explanation": "When hard drives or media are removed from a system for evidence, they must be placed in a tamper-evident bag to maintain the 'Chain of Evidence' for court.",
+      "id": "sc-im-0161"
+    },
+    {
+      "question": "According to Health and Safety DSE guidelines, why is the keyboard positioned with a gap at the front of the desk as shown?",
+      "imageAlt": "A top-down view of a CCTV workstation showing the keyboard, mouse, and a space between the keyboard and the edge of the desk.",
+      "imageDescription": "An ergonomic CCTV workstation setup showing a keyboard and mouse. There is a clear 10cm gap between the front of the keyboard and the edge of the desk.",
+      "type": "image_question",
+      "explanation": "According to DSE (Display Screen Equipment) guidelines, the keyboard should be positioned with enough space in front to allow the operator to rest their wrists.",
+      "correctAnswer": 0,
+      "options": [
+        "To provide space for resting wrists and forearms",
+        "To prevent the keyboard from overheating",
+        "To allow space for a notepad or logbook",
+        "To comply with fire exit clearance codes"
+      ],
+      "id": "sc-im-0162"
+    },
+    {
+      "question": "When handling recorded media, a robust 'chain of custody' or audit trail must be maintained at all times.",
+      "explanation": "Operators must provide a clear record of who accessed a recording and why to maintain the integrity of evidence.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "id": "sc-tf-0001"
+    },
+    {
+      "explanation": "The Data Protection Act and GDPR apply to both public and private entities that process personal data via CCTV.",
+      "correctAnswer": false,
+      "question": "The Data Protection Act (DPA) only applies to CCTV systems operated by the police or local councils.",
+      "type": "true_false",
+      "id": "sc-tf-0002"
+    },
+    {
+      "type": "true_false",
+      "explanation": "Under the Freedom of Information Act and DPA, individuals can request copies of their own personal data held on video.",
+      "correctAnswer": true,
+      "question": "Individuals have the right to request access to footage of themselves through a Subject Access Request (SAR).",
+      "id": "sc-tf-0003"
+    },
+    {
+      "explanation": "The joystick or mouse should be moved gently; excessive force can damage the sensitive motors in the camera.",
+      "correctAnswer": false,
+      "question": "When operating a PTZ camera, you should apply maximum pressure to the joystick to ensure the camera moves quickly.",
+      "type": "true_false",
+      "id": "sc-tf-0004"
+    },
+    {
+      "explanation": "The 1998 Human Rights Act protects an individual's right to privacy, which operators must respect.",
+      "correctAnswer": true,
+      "question": "Article 8 of the Human Rights Act protects an individual's right to respect for their private and family life.",
+      "type": "true_false",
+      "id": "sc-tf-0005"
+    },
+    {
+      "type": "true_false",
+      "explanation": "The 'purpose' of the system (e.g., crime prevention) must be clearly stated in the signage and strictly followed.",
+      "correctAnswer": false,
+      "question": "A CCTV operator can use a system installed for 'crime prevention' to spy on employees for entertainment purposes.",
+      "id": "sc-tf-0006"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": true,
+      "explanation": "Signs must be visible so people know they are entering a monitored zone and who is responsible for the system.",
+      "question": "Legally, CCTV signs should be clearly displayed and include the contact details of the data controller.",
+      "id": "sc-tf-0007"
+    },
+    {
+      "type": "true_false",
+      "explanation": "Fixed cameras have a set field of vision; Pan, Tilt, and Zoom (PTZ) cameras are the ones that can be moved remotely.",
+      "correctAnswer": false,
+      "question": "A 'fixed' camera can be remotely rotated 360 degrees by the operator in the control room.",
+      "id": "sc-tf-0008"
+    },
+    {
+      "question": "The daily logbook or incident report is considered a vital part of the evidence trail in legal proceedings.",
+      "explanation": "The Incident Log is a legal document that can be used in court to support the evidence found in the footage.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "id": "sc-tf-0009"
+    },
+    {
+      "question": "A 'Spot Monitor' is a screen that displays all camera feeds in a small grid format at all times.",
+      "correctAnswer": false,
+      "explanation": "A 'Spot Monitor' is usually a separate screen used to focus on a specific, high-priority live event.",
+      "type": "true_false",
+      "id": "sc-tf-0010"
+    },
+    {
+      "type": "true_false",
+      "explanation": "Privacy zones are used to block out bedroom windows or private gardens to comply with privacy laws.",
+      "correctAnswer": true,
+      "question": "Digital masking or 'privacy zones' are used to prevent the camera from viewing private residential areas.",
+      "id": "sc-tf-0011"
+    },
+    {
+      "question": "The Protection of Freedoms Act 2012 allows operators to target individuals for surveillance based on their ethnic origin.",
+      "explanation": "Under the PFA 2012, CCTV operators should not monitor people solely based on protected characteristics like race.",
+      "correctAnswer": false,
+      "type": "true_false",
+      "id": "sc-tf-0012"
+    },
+    {
+      "explanation": "Under the DPA 2018, data controllers must respond to a Subject Access Request (SAR) within one month of receipt.",
+      "type": "true_false",
+      "correctAnswer": true,
+      "question": "Under current UK data protection laws, a data controller generally has one month to respond to a Subject Access Request.",
+      "id": "sc-tf-0013"
+    },
+    {
+      "type": "true_false",
+      "explanation": "Personal bias or profiling based on characteristics like fashion or appearance is unethical and violates the Surveillance Camera Code of Practice.",
+      "question": "It is acceptable for a CCTV operator to target an individual for surveillance solely based on the fact they are wearing a 'hoodie'.",
+      "correctAnswer": false,
+      "id": "sc-tf-0014"
+    },
+    {
+      "question": "When writing an incident report, an operator should avoid using subjective language or personal opinions.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "explanation": "Incident reports must be objective and stick to factual observations; adding personal opinions can undermine the evidence in court.",
+      "id": "sc-tf-0015"
+    },
+    {
+      "correctAnswer": false,
+      "question": "To 'Identify' an individual beyond reasonable doubt, the person should occupy at least 10% of the screen height.",
+      "type": "true_false",
+      "explanation": "The 1:12 scale (or 120% of screen height) is the standard for identification. 10% is usually sufficient only for general 'detection'.",
+      "id": "sc-tf-0016"
+    },
+    {
+      "correctAnswer": true,
+      "question": "The 'Data Controller' is the person or organisation that determines the purposes for which personal data is processed.",
+      "type": "true_false",
+      "explanation": "While the operator manages the equipment, the 'Data Controller' (usually the employer) is legally responsible for how data is processed.",
+      "id": "sc-tf-0017"
+    },
+    {
+      "correctAnswer": false,
+      "question": "An unlicensed person can legally work as a CCTV operator in a shopping centre as long as a manager is in the building.",
+      "explanation": "Public space CCTV operators in the UK must hold a valid SIA Public Space Surveillance (CCTV) licence to legally perform their role.",
+      "type": "true_false",
+      "id": "sc-tf-0018"
+    },
+    {
+      "type": "true_false",
+      "explanation": "A 'Preset' is a pre-programmed position that allows an operator to quickly move a PTZ camera to a specific field of view.",
+      "question": "A 'Preset' is a programmed camera position that allows an operator to instantly return to a specific area of interest.",
+      "correctAnswer": true,
+      "id": "sc-tf-0019"
+    },
+    {
+      "question": "The primary purpose of a Public Space Surveillance system is to generate revenue through fines for the local council.",
+      "correctAnswer": false,
+      "type": "true_false",
+      "explanation": "The primary purpose is public safety and crime prevention, not the generation of profit for the local authority.",
+      "id": "sc-tf-0020"
+    },
+    {
+      "type": "true_false",
+      "explanation": "Operators must never leave the control room insecure; it must be locked to prevent unauthorised access to sensitive data.",
+      "correctAnswer": false,
+      "question": "A CCTV operator can leave the control room door propped open if they are only stepping away for a few minutes.",
+      "id": "sc-tf-0021"
+    },
+    {
+      "question": "A 'Functional Test' is used to check that all the mechanical parts of the CCTV system, such as PTZ motors, are working correctly.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "explanation": "The 'Functional' test ensures the equipment is mechanically working, whereas the 'Operational' test ensures it meets the user's needs.",
+      "id": "sc-tf-0022"
+    },
+    {
+      "explanation": "This is a serious breach of privacy and the DPA. Footage must only be used for the specified legal purpose.",
+      "type": "true_false",
+      "correctAnswer": false,
+      "question": "It is legal for an operator to take a photo of a CCTV screen on their personal mobile phone to share on social media.",
+      "id": "sc-tf-0023"
+    },
+    {
+      "correctAnswer": true,
+      "question": "The Freedom of Information Act (FOIA) allows citizens to request information from public authorities about how their CCTV systems are managed.",
+      "type": "true_false",
+      "explanation": "The Freedom of Information Act allows the public to request information from public authorities, including local council CCTV policies.",
+      "id": "sc-tf-0024"
+    },
+    {
+      "explanation": "The SIA can inspect security premises and individual licenses at any time to ensure compliance with the Private Security Industry Act 2001.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "question": "SIA investigators have the right to enter a licensed premises to ensure that all operators are working legally.",
+      "id": "sc-tf-0025"
+    },
+    {
+      "correctAnswer": false,
+      "explanation": "Under the 'integrity' principle, operators must never use the system for personal curiosity or to track people for non-work-related reasons.",
+      "type": "true_false",
+      "question": "It is permissible for a CCTV operator to track an ex-partner on camera if they happen to see them in the shopping centre.",
+      "id": "sc-tf-0026"
+    },
+    {
+      "correctAnswer": false,
+      "explanation": "To 'Recognise' an individual (being sure they are the same person seen before), the person should occupy at least 50% of the screen height according to UK standards.",
+      "type": "true_false",
+      "question": "According to the Rotakin/VSS standards, a person must occupy 100% of the screen height for the purpose of 'Recognition'.",
+      "id": "sc-tf-0027"
+    },
+    {
+      "correctAnswer": false,
+      "explanation": "The 'Data Processor' follows instructions; the 'Data Controller' is the one who determines why and how data is handled.",
+      "question": "The 'Data Processor' is the person who fundamentally decides why personal data is being collected by the CCTV system.",
+      "type": "true_false",
+      "id": "sc-tf-0028"
+    },
+    {
+      "correctAnswer": true,
+      "explanation": "A 'Covert' system is hidden from view, while 'Overt' systems (common in public) use visible cameras and signage.",
+      "type": "true_false",
+      "question": "A CCTV system that is clearly visible to the public and supported by warning signs is known as 'Overt' surveillance.",
+      "id": "sc-tf-0029"
+    },
+    {
+      "explanation": "Physical security includes barriers, electronic locks, and keypad entry to prevent unauthorised people from entering the room.",
+      "correctAnswer": false,
+      "type": "true_false",
+      "question": "The term 'Physical Security' in a control room refers only to the health and safety of the staff working there.",
+      "id": "sc-tf-0030"
+    },
+    {
+      "question": "An operator should monitor 'non-verbal communication' (body language) to help identify potential criminal activity.",
+      "type": "true_false",
+      "explanation": "Body language, such as looking around nervously or 'tailgating' others through secure doors, can be an indicator of suspicious intent.",
+      "correctAnswer": true,
+      "id": "sc-tf-0031"
+    },
+    {
+      "correctAnswer": true,
+      "explanation": "This refers to the continuity of evidence; any gap or unauthorised access could make the footage inadmissible in a court of law.",
+      "question": "The 'Chain of Evidence' refers to the chronological documentation showing the seizure, control, and analysis of video footage.",
+      "type": "true_false",
+      "id": "sc-tf-0032"
+    },
+    {
+      "explanation": "Evidence should be stored in a secure, fireproof, and temperature-controlled environment to prevent degradation or theft.",
+      "correctAnswer": false,
+      "type": "true_false",
+      "question": "Recorded media containing evidence should be kept on an open shelf in the control room so police can find it easily.",
+      "id": "sc-tf-0033"
+    },
+    {
+      "explanation": "A PTZ (Pan, Tilt, Zoom) camera allows the operator to move the lens horizontally, vertically, and change the focal length.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "question": "A camera that can be moved up and down and side to side by an operator is referred to as a PTZ camera.",
+      "id": "sc-tf-0034"
+    },
+    {
+      "type": "true_false",
+      "question": "The 'Need to Know' principle means that an operator can share CCTV footage with any employee who asks to see it.",
+      "correctAnswer": false,
+      "explanation": "The 'Need to Know' principle dictates that information should only be shared with those who require it for their professional duties.",
+      "id": "sc-tf-0035"
+    },
+    {
+      "correctAnswer": true,
+      "explanation": "This is a requirement of the Data Protection Act to ensure that data is not kept longer than is strictly necessary for its purpose.",
+      "type": "true_false",
+      "question": "A 'Retention Period' is the set amount of time a CCTV system keeps recorded footage before it is deleted or overwritten.",
+      "id": "sc-tf-0036"
+    },
+    {
+      "type": "true_false",
+      "question": "According to current VSS (CCTV) standards, 'Identification' requires the subject to occupy a larger percentage of the screen height than 'Recognition'.",
+      "correctAnswer": true,
+      "explanation": "The 'Identification' standard (often 120% screen height) is the highest level of detail required to provide evidence that can prove someone's identity in court beyond doubt.",
+      "id": "sc-tf-0037"
+    },
+    {
+      "explanation": "Under the Data Protection Act, signs must be displayed to inform the public that they are in an area where CCTV is in operation and to identify the data controller.",
+      "question": "Signs are not legally required for a CCTV system as long as the cameras are positioned in plain sight.",
+      "correctAnswer": false,
+      "type": "true_false",
+      "id": "sc-tf-0038"
+    },
+    {
+      "correctAnswer": true,
+      "question": "A member of the public has the right to request a copy of CCTV footage in which they clearly appear.",
+      "explanation": "Private individuals have the right to request a copy of the personal data held about them under the Data Protection Act via a Subject Access Request.",
+      "type": "true_false",
+      "id": "sc-tf-0039"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": false,
+      "question": "The term 'Targeting' refers to the natural loss of concentration an operator experiences after watching a monitor for more than 20 minutes.",
+      "explanation": "CCTV operators must be aware of 'tunnel vision' or 'observer fatigue', which is the decrease in attention and detection ability over a long period of monitoring.",
+      "id": "sc-tf-0040"
+    },
+    {
+      "explanation": "Exporting footage from a local hard drive to a removable device (like a USB or DVD) is a standard procedure for providing evidence to the police.",
+      "question": "An 'Export' is the process of transferring recorded video data from the CCTV system to an external medium for evidence purposes.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "id": "sc-tf-0041"
+    },
+    {
+      "type": "true_false",
+      "explanation": "The Human Rights Act 1998 protects an individual's right to a private and family life, which operators must respect when positioning or zooming cameras.",
+      "correctAnswer": false,
+      "question": "The Human Rights Act 1998 is irrelevant to CCTV operators because the Data Protection Act covers all legal requirements.",
+      "id": "sc-tf-0042"
+    },
+    {
+      "explanation": "A 'Patrol' or 'Tour' is a sequence of preset camera positions that the system cycles through automatically to monitor a wide area without manual input.",
+      "correctAnswer": true,
+      "question": "In CCTV terminology, a 'Tour' is a pre-programmed sequence where a PTZ camera automatically moves between several different presets.",
+      "type": "true_false",
+      "id": "sc-tf-0043"
+    },
+    {
+      "type": "true_false",
+      "question": "If an operator sees a police officer or paramedic on screen, they must immediately turn the camera away to protect the official's privacy.",
+      "correctAnswer": false,
+      "explanation": "If an emergency worker (like a paramedic) is performing their duties, an operator should continue to monitor the area to ensure the worker's safety and document the incident.",
+      "id": "sc-tf-0044"
+    },
+    {
+      "explanation": "An Incident Log or Occurrence Book must be maintained to provide a clear, chronological record of events and actions taken by the operator for legal accountability.",
+      "question": "An 'Incident Log' should be updated as soon as possible after an event to ensure the details recorded are accurate and contemporaneous.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "id": "sc-tf-0045"
+    },
+    {
+      "explanation": "Varifocal lenses allow the focal length to be adjusted manually during installation, whereas a 'Zoom' lens can be adjusted remotely by the operator during use.",
+      "correctAnswer": false,
+      "question": "A 'Varifocal' lens is exactly the same as a 'Zoom' lens and can always be controlled remotely by the operator in the control room.",
+      "type": "true_false",
+      "id": "sc-tf-0046"
+    },
+    {
+      "type": "true_false",
+      "explanation": "In the UK, it is a criminal offence to work as a CCTV operator in a public space surveillance role without a valid SIA license.",
+      "question": "Working as a CCTV operator without a valid SIA license (where one is required) can result in a fine or a prison sentence.",
+      "correctAnswer": true,
+      "id": "sc-tf-0047"
+    },
+    {
+      "question": "A 'Digital Signature' or 'Watermark' on CCTV footage is used solely to display the name of the company that owns the cameras.",
+      "correctAnswer": false,
+      "explanation": "The 'Digital Signature' is a hidden code added to the video file to prove it has not been edited or tampered with, ensuring it is admissible in court.",
+      "type": "true_false",
+      "id": "sc-tf-0048"
     }
   ],
   "mocks": []
