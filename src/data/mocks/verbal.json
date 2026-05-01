@@ -15311,6 +15311,222 @@
       "prompt": "Choose the word that describes an environment that helps produce a specific result.",
       "template": "The library provides a quiet and orderly environment that is highly {{0}} to deep concentration and study.",
       "id": "v-db-0072"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "diminish",
+            "scrutinise",
+            "ignore",
+            "extol"
+          ]
+        }
+      ],
+      "explanation": "To scrutinise means to examine or inspect something closely and thoroughly, which is the standard procedure for an auditor.",
+      "template": "The independent auditor was called in to {{0}} the company's accounts for any signs of mismanagement.",
+      "type": "dropdown_blanks",
+      "prompt": "Select the word that best fits the context of a financial audit.",
+      "id": "v-db-0073"
+    },
+    {
+      "prompt": "Select the word that describes an essential component.",
+      "type": "dropdown_blanks",
+      "explanation": "Integral means necessary or essential to make a whole complete; in contrast, something peripheral is of secondary importance.",
+      "template": "Evidence showed that the witness's testimony was {{0}} to the prosecution's case, rather than just a minor detail.",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "detrimental",
+            "peripheral",
+            "integral",
+            "optional"
+          ]
+        }
+      ],
+      "id": "v-db-0074"
+    },
+    {
+      "prompt": "Select the word that describes resolving a conflict between ideas.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "reconcile",
+            "exacerbate",
+            "fabricate",
+            "postpone"
+          ]
+        }
+      ],
+      "template": "It is often difficult for the government to {{0}} the need for lower taxes with the demand for better public services.",
+      "explanation": "To reconcile means to find a way in which two opposing ideas or situations can agree or exist together.",
+      "id": "v-db-0075"
+    },
+    {
+      "prompt": "Select the word that describes outdated technology.",
+      "type": "dropdown_blanks",
+      "explanation": "Obsolete means no longer produced or used, which fits the context of old technology being replaced by modern equivalents.",
+      "template": "As digital streaming became the norm, many people found that their extensive collections of physical DVDs had become {{0}}.",
+      "blanks": [
+        {
+          "options": [
+            "redundant",
+            "stagnant",
+            "volatile",
+            "obsolete"
+          ],
+          "correctIndex": 3
+        }
+      ],
+      "id": "v-db-0076"
+    },
+    {
+      "prompt": "Select the word describing unclear instructions.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "options": [
+            "conclusive",
+            "ambiguous",
+            "explicit",
+            "persuasive"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "template": "Because the project brief was so {{0}}, the design team felt uncertain about how to proceed with the initial sketches.",
+      "explanation": "Ambiguous means open to more than one interpretation or not having one obvious meaning, which explains why the team was confused.",
+      "id": "v-db-0077"
+    },
+    {
+      "prompt": "Select the word that describes a powerful opponent.",
+      "type": "dropdown_blanks",
+      "explanation": "Formidable describes something that inspires fear or respect through being impressively large, powerful, or intense.",
+      "template": "Entering the final round, the champion knew that his young opponent would be a {{0}} challenge to his title.",
+      "blanks": [
+        {
+          "options": [
+            "meagre",
+            "trivial",
+            "formidable",
+            "negligible"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "id": "v-db-0078"
+    },
+    {
+      "prompt": "Select the word that means a lucky coincidence.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "fortuitous",
+            "diligent",
+            "adversarial",
+            "calculated"
+          ]
+        }
+      ],
+      "explanation": "Fortuitous means happening by a lucky chance rather than intention or design.",
+      "template": "It was entirely {{0}} that the two researchers met at the conference, as they were both working on the same rare virus.",
+      "id": "v-db-0079"
+    },
+    {
+      "explanation": "To mitigate means to make something bad less severe, serious, or painful, such as reducing the impact of carbon emissions.",
+      "template": "The environmental agency suggested that the impact of the new factory could be {{0}} by planting thousands of trees nearby.",
+      "blanks": [
+        {
+          "options": [
+            "aggravated",
+            "mitigated",
+            "overlooked",
+            "sustained"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "prompt": "Select the word that means to lessen the impact of something.",
+      "type": "dropdown_blanks",
+      "id": "v-db-0080"
+    },
+    {
+      "type": "dropdown_blanks",
+      "prompt": "Select the word that describes careful and precise work.",
+      "blanks": [
+        {
+          "correctIndex": 3,
+          "options": [
+            "elusive",
+            "repetitive",
+            "erroneous",
+            "meticulous"
+          ]
+        }
+      ],
+      "template": "The scientist's {{0}} record-keeping ensured that every variable in the ten-year study was accurately documented.",
+      "explanation": "Meticulous means showing great attention to detail; very careful and precise.",
+      "id": "v-db-0081"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "extinguished",
+            "accelerated",
+            "hampered",
+            "instigated"
+          ]
+        }
+      ],
+      "explanation": "Hampered means to hinder or impede the movement or progress of something, such as fog slowing down a rescue mission.",
+      "template": "The search for the missing hikers was heavily {{0}} by the thick fog that settled over the valley during the night.",
+      "prompt": "Select the word that means to hinder progress.",
+      "type": "dropdown_blanks",
+      "id": "v-db-0082"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "pragmatic",
+            "idealistic",
+            "unorthodox",
+            "extravagant"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "explanation": "A pragmatic approach is one that deals with things sensibly and realistically based on practical rather than theoretical considerations.",
+      "template": "Instead of chasing impossible deadlines, the manager took a {{0}} view of the project's timeline and extended the delivery date.",
+      "prompt": "Select the word that means practical and realistic.",
+      "type": "dropdown_blanks",
+      "id": "v-db-0083"
+    },
+    {
+      "prompt": "Select the word that means total agreement.",
+      "type": "dropdown_blanks",
+      "explanation": "Unanimous means that two or more people are fully in agreement.",
+      "template": "The committee reached a {{0}} decision to appoint Sarah as the new chairperson, with every member voting in her favour.",
+      "blanks": [
+        {
+          "options": [
+            "sporadic",
+            "unanimous",
+            "tentative",
+            "contentious"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "id": "v-db-0084"
     }
   ],
   "mocks": []

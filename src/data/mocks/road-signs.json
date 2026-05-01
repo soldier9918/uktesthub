@@ -14570,6 +14570,186 @@
       ],
       "question": "What does this sign mean for a driver?",
       "id": "rs-im-0036"
+    },
+    {
+      "imageAlt": "Red triangle warning sign with an airplane silhouette in the centre.",
+      "explanation": "This sign warns drivers that there is a risk of low-flying aircraft or sudden aircraft noise ahead.",
+      "correctAnswer": 2,
+      "type": "image_question",
+      "question": "What does this warning sign alert you to?",
+      "imageDescription": "A standard UK triangle warning sign with a red border and white background, featuring a black silhouette of an airplane pointing to the right.",
+      "options": [
+        "Road closed ahead for construction",
+        "Airport terminal entrance ahead",
+        "Low-flying aircraft or sudden aircraft noise ahead",
+        "Do not enter this restricted airspace"
+      ],
+      "id": "rs-im-0037"
+    },
+    {
+      "options": [
+        "No entry for vehicular traffic",
+        "End of a one-way street",
+        "Wait here for oncoming traffic",
+        "Road works ahead, diversion required"
+      ],
+      "imageDescription": "A circular red sign with a solid white horizontal bar running through the centre, known as the 'No Entry' sign.",
+      "question": "What does this regulatory sign mean?",
+      "imageAlt": "Red circle with a horizontal white bar across the middle.",
+      "explanation": "The 'no entry' sign is one of most important prohibitory signs and indicates that vehicles are forbidden from entering.",
+      "correctAnswer": 0,
+      "type": "image_question",
+      "id": "rs-im-0038"
+    },
+    {
+      "options": [
+        "Minimum speed limit of 30 mph",
+        "Maximum speed limit of 30 mph",
+        "Suggested speed limit of 30 mph",
+        "End of the 30 mph zone"
+      ],
+      "explanation": "This sign indicates a maximum speed limit of 30 mph; it is a mandatory limit and not just a suggestion.",
+      "correctAnswer": 1,
+      "type": "image_question",
+      "imageAlt": "Red circle with the number 30 in the middle in black text.",
+      "imageDescription": "A regulatory circular sign with a thick red outer border and the number '30' printed clearly in black in the centre.",
+      "question": "What is the meaning of this speed limit sign?",
+      "id": "rs-im-0039"
+    },
+    {
+      "options": [
+        "Keep left of the central reservation",
+        "One-way street only to the left",
+        "Service station on the left side",
+        "Sharp deviation of the route to the left"
+      ],
+      "correctAnswer": 3,
+      "explanation": "The chevron signs with a white background and black arrows indicate a sharp deviation of the route to the left.",
+      "type": "image_question",
+      "imageAlt": "Rectangular sign with a white background and three black chevrons pointing to the left.",
+      "question": "What does this sign tell you about the road ahead?",
+      "imageDescription": "A horizontal rectangular sign with a white background featuring multiple black chevrons or arrowheads pointing towards the left.",
+      "id": "rs-im-0040"
+    },
+    {
+      "options": [
+        "End of motorway regulations",
+        "No motor vehicles allowed on this road",
+        "Breakdown area ahead on the motorway",
+        "Motorway under construction ahead"
+      ],
+      "imageAlt": "Blue rectangular sign with a motorway symbol and a red diagonal line through it.",
+      "type": "image_question",
+      "correctAnswer": 0,
+      "explanation": "This sign marks the end of a motorway, meaning motorway regulations no longer apply.",
+      "imageDescription": "A rectangular blue sign showing the white motorway symbol (two vertical lines and a bridge), crossed through with a thick red diagonal line.",
+      "question": "What does this motorway sign indicate?",
+      "id": "rs-im-0041"
+    },
+    {
+      "imageDescription": "A triangular warning sign with a red border showing a black silhouette of a car descending a slope, with '10%' written next to the slope.",
+      "question": "What hazard is this sign warning you about?",
+      "imageAlt": "Red triangle warning sign showing a car on a slope going down with '10%' written on it.",
+      "type": "image_question",
+      "correctAnswer": 2,
+      "explanation": "This sign informs drivers that there is a steep hill leading downwards, with the percentage indicating the gradient.",
+      "options": [
+        "The road is 10 miles long",
+        "Steep hill upwards, 10% gradient",
+        "Steep hill downwards, 10% gradient",
+        "Uneven road surface for the next 10 miles"
+      ],
+      "id": "rs-im-0042"
+    },
+    {
+      "options": [
+        "Turn left at the next junction",
+        "Keep to the left of the sign",
+        "Left-hand lane for buses only",
+        "No right turn allowed at this point"
+      ],
+      "question": "What instruction must you follow when you see this sign?",
+      "imageDescription": "A mandatory blue circular sign featuring a thick white arrow that points towards the bottom-left corner.",
+      "type": "image_question",
+      "explanation": "A blue circle with a white arrow pointing diagonally down to the left means you must keep to the left of the sign.",
+      "correctAnswer": 1,
+      "imageAlt": "Blue circular sign with a white arrow pointing diagonally down to the left.",
+      "id": "rs-im-0043"
+    },
+    {
+      "options": [
+        "No parking on either side of the road",
+        "Give way to oncoming vehicles",
+        "Two-way traffic ahead",
+        "No overtaking permitted"
+      ],
+      "imageAlt": "Red circle showing two cars side-by-side, one red and one black.",
+      "type": "image_question",
+      "explanation": "This regulatory sign means that overtaking is not permitted for any motor vehicle.",
+      "correctAnswer": 3,
+      "question": "What does this prohibitory sign indicate?",
+      "imageDescription": "A circular sign with a red border. Inside, there is a black car on the left and a red car on the right, side-by-side.",
+      "id": "rs-im-0044"
+    },
+    {
+      "type": "image_question",
+      "correctAnswer": 0,
+      "explanation": "This sign warns that the single carriageway is coming to an end and the road becomes a dual carriageway.",
+      "imageAlt": "Red triangle warning sign with two vertical lines that diverge at the bottom.",
+      "question": "What road change is indicated by this sign?",
+      "imageDescription": "A red-bordered triangle sign featuring two black vertical lines that are joined at the top but split/diverge towards the bottom.",
+      "options": [
+        "Dual carriageway ends ahead",
+        "Road narrows on both sides",
+        "Start of a two-way traffic road",
+        "Lane split ahead for different directions"
+      ],
+      "id": "rs-im-0045"
+    },
+    {
+      "options": [
+        "No cars allowed, motorcycles only",
+        "No motorcycles allowed, cars only",
+        "No motor vehicles allowed",
+        "Only motor vehicles permitted beyond this point"
+      ],
+      "imageAlt": "Red circle with a motorcycle symbol above a car symbol.",
+      "type": "image_question",
+      "explanation": "A red circle with a motorcycle over a car means that no motor vehicles are allowed in that area.",
+      "correctAnswer": 2,
+      "imageDescription": "A circular sign with a red border containing black silhouettes of a motorcycle and a car, one above the other.",
+      "question": "What is the meaning of this restrictive sign?",
+      "id": "rs-im-0046"
+    },
+    {
+      "options": [
+        "Horse-drawn carriages only beyond this point",
+        "Accompanied horses or ponies ahead",
+        "Wild animals likely to cross the road",
+        "Horse racing track entrance ahead"
+      ],
+      "question": "What should you look out for when you see this sign?",
+      "imageDescription": "A triangular warning sign with a red border featuring a black silhouette of a person riding a horse in the centre.",
+      "imageAlt": "Red triangle warning sign with a silhouette of a person riding a horse.",
+      "type": "image_question",
+      "explanation": "This sign warns drivers to look out for horses and riders who may be using or crossing the road.",
+      "correctAnswer": 1,
+      "id": "rs-im-0047"
+    },
+    {
+      "options": [
+        "Watch out for cyclists on the road",
+        "No cycling allowed in this area",
+        "Parking for bicycles only",
+        "Route to be used by pedal cycles only"
+      ],
+      "imageAlt": "Blue circular sign with a white bicycle symbol.",
+      "explanation": "A blue circular sign with a white bicycle symbol indicates a route that is for use by pedal cycles only.",
+      "correctAnswer": 3,
+      "type": "image_question",
+      "imageDescription": "A mandatory circular blue sign with a white silhouette of a bicycle in the centre.",
+      "question": "What does this mandatory sign indicate?",
+      "id": "rs-im-0048"
     }
   ],
   "mocks": []
