@@ -1,0 +1,1101 @@
+{
+  "version": 2,
+  "topic": "nhs-numeracy",
+  "title": "NHS Numeracy Test",
+  "category": "nhs",
+  "bank": [
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "explanation": "Multiply 12 patients by 3 tablets per day to get 36 tablets. Multiplying 36 by 7 days gives 252.",
+      "options": [
+        "84",
+        "126",
+        "252",
+        "288"
+      ],
+      "question": "A ward has 12 patients who each require 3 tablets of a specific medication every day. How many tablets are needed in total for one week?",
+      "id": "nn-mc-0001"
+    },
+    {
+      "options": [
+        "750ml",
+        "800ml",
+        "850ml",
+        "900ml"
+      ],
+      "question": "A patient drinks 150ml of water at breakfast, 200ml of juice at lunch, and 450ml of water with dinner. What is the total fluid intake?",
+      "explanation": "Add the three volumes together: 150ml + 200ml + 450ml = 800ml.",
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "id": "nn-mc-0002"
+    },
+    {
+      "question": "Out of 60 staff members in a clinic, 25% are trained in first aid. How many staff members are trained?",
+      "options": [
+        "10",
+        "12",
+        "20",
+        "15"
+      ],
+      "explanation": "25% is one quarter. One quarter of 60 is 15 (60 divided by 4).",
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "id": "nn-mc-0003"
+    },
+    {
+      "explanation": "There are 1,000 milligrams (mg) in 1 gram (g). Therefore, 0.5g is half of 1,000mg, which is 500mg.",
+      "options": [
+        "500mg",
+        "50mg",
+        "5,000mg",
+        "0.005mg"
+      ],
+      "question": "A doctor prescribes 0.5g of a medication. How many milligrams (mg) is this?",
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "id": "nn-mc-0004"
+    },
+    {
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "question": "A patient weighing 85kg is on a weight loss plan and loses 0.5kg every week. What will their weight be after 6 weeks?",
+      "options": [
+        "84.5kg",
+        "83kg",
+        "82kg",
+        "79kg"
+      ],
+      "explanation": "The patient loses 0.5kg/week. Over 6 weeks, total loss is 3kg (0.5 x 6). 85kg - 3kg = 82kg.",
+      "id": "nn-mc-0005"
+    },
+    {
+      "explanation": "Divide the total volume (500ml) by the time (4 hours) to get 125ml per hour.",
+      "options": [
+        "100ml/hr",
+        "125ml/hr",
+        "150ml/hr",
+        "200ml/hr"
+      ],
+      "question": "A patient is prescribed 500ml of saline to be administered over 4 hours. What is the infusion rate in millilitres per hour (ml/hr)?",
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "id": "nn-mc-0006"
+    },
+    {
+      "options": [
+        "50ml",
+        "25ml",
+        "80ml",
+        "40ml"
+      ],
+      "question": "A liquid medication must be diluted in a ratio of 1 part medicine to 4 parts water. If the total volume of the mixture is 200ml, how much medicine is in it?",
+      "explanation": "The ratio is 1:4. Total parts = 5. Divide 200ml by 5 to find one part (40ml). 40ml is the medication.",
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "id": "nn-mc-0007"
+    },
+    {
+      "explanation": "The difference is 39.2 - 37.0 = 2.2 degrees Celsius.",
+      "options": [
+        "2.2°C",
+        "1.8°C",
+        "2.8°C",
+        "3.2°C"
+      ],
+      "question": "A patient's temperature rose from 37.0°C to 39.2°C. What was the total increase in temperature?",
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "id": "nn-mc-0008"
+    },
+    {
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "options": [
+        "2 tablets",
+        "2.5 tablets",
+        "3 tablets",
+        "4 tablets"
+      ],
+      "question": "A patient is prescribed a dose of 1,200mg of Ibuprofen. The tablets available are 400mg each. How many tablets should be given?",
+      "explanation": "Divide 1,200mg by 400mg to find the number of tablets. 1,200 / 400 = 3 tablets.",
+      "id": "nn-mc-0009"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "explanation": "The duration is 4 hours and 45 minutes. 4 hours is 240 minutes, plus 45 minutes equals 285 minutes.",
+      "options": [
+        "275 minutes",
+        "285 minutes",
+        "305 minutes",
+        "245 minutes"
+      ],
+      "question": "A surgery starts at 09:15 and finishes at 14:00. How many total minutes did the surgery last?",
+      "id": "nn-mc-0010"
+    },
+    {
+      "explanation": "If 5 doses are 10ml, then 1 dose is 2ml (10 divided by 5). Therefore, 12 doses are 24ml (12 multiplied by 2).",
+      "options": [
+        "20ml",
+        "30ml",
+        "15ml",
+        "24ml"
+      ],
+      "question": "If 5 doses of a liquid medicine equal 10ml, how many millilitres are required for 12 doses?",
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "id": "nn-mc-0011"
+    },
+    {
+      "options": [
+        "£34.00",
+        "£35.00",
+        "£36.00",
+        "£38.50"
+      ],
+      "question": "A uniform costs £40 but is currently on sale with a 15% discount. What is the discounted price?",
+      "explanation": "15% of £40 is £6 (0.15 x 40). The new price is £40 - £6 = £34.",
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "id": "nn-mc-0012"
+    },
+    {
+      "options": [
+        "20 staff",
+        "24 staff",
+        "30 staff",
+        "12 staff"
+      ],
+      "correctAnswer": 1,
+      "question": "A department has 120 staff members. If 20% of the staff are on the night shift, how many staff members are working at night?",
+      "type": "multiple_choice",
+      "explanation": "To find 20%, divide the total by 5 or multiply by 0.2. 120 / 5 = 24.",
+      "id": "nn-mc-0013"
+    },
+    {
+      "explanation": "Add the three volumes together: 1.5 + 2.0 + 0.75 = 4.25 litres.",
+      "type": "multiple_choice",
+      "question": "A nurse records a patient's fluid intake over three shifts as 1.5 litres, 2.0 litres, and 0.75 litres. What is the total fluid intake?",
+      "correctAnswer": 3,
+      "options": [
+        "3.5 litres",
+        "4.0 litres",
+        "4.15 litres",
+        "4.25 litres"
+      ],
+      "id": "nn-mc-0014"
+    },
+    {
+      "explanation": "To convert grams to milligrams, multiply by 1,000. 0.25 x 1,000 = 250mg.",
+      "question": "A patient is prescribed 0.25g of a medication. How many milligrams (mg) is this?",
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "options": [
+        "250mg",
+        "25mg",
+        "2,500mg",
+        "0.025mg"
+      ],
+      "id": "nn-mc-0015"
+    },
+    {
+      "explanation": "Calculate the total hours (3.5) and multiply by the rate: 3.5 x 120 = 420ml.",
+      "question": "An infusion pump is set to deliver 120ml per hour. How many millilitres will the patient receive over 3 hours and 30 minutes?",
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "options": [
+        "360ml",
+        "400ml",
+        "420ml",
+        "480ml"
+      ],
+      "id": "nn-mc-0016"
+    },
+    {
+      "explanation": "Subtract the weight lost from the original weight: 72.4 - 3.8 = 68.6kg.",
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "question": "A patient weighed 72.4kg on admission. One week later, they have lost 3.8kg. What is their current weight?",
+      "options": [
+        "69.2kg",
+        "68.6kg",
+        "68.4kg",
+        "69.6kg"
+      ],
+      "id": "nn-mc-0017"
+    },
+    {
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "question": "A patient needs a 75mg dose of a drug. The tablets available are 25mg each. How many tablets should be administered?",
+      "options": [
+        "3 tablets",
+        "2 tablets",
+        "4 tablets",
+        "0.5 tablets"
+      ],
+      "explanation": "Divide the total dose required by the strength of each tablet: 75 / 25 = 3 tablets.",
+      "id": "nn-mc-0018"
+    },
+    {
+      "question": "A cleaning solution is mixed in a ratio of 1 part concentrate to 3 parts water. If the total volume of the mixture is 200ml, how much concentrate is used?",
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "options": [
+        "40ml",
+        "66ml",
+        "150ml",
+        "50ml"
+      ],
+      "explanation": "A ratio of 1:3 means there are 4 parts in total (1+3=4). 200ml divided by 4 parts = 50ml per part. 1 part medicine = 50ml.",
+      "id": "nn-mc-0019"
+    },
+    {
+      "explanation": "From 10:45 to 13:45 is 3 hours (180 mins). From 13:45 to 14:10 is an extra 25 mins. 180 + 25 = 205 minutes.",
+      "options": [
+        "185 minutes",
+        "195 minutes",
+        "205 minutes",
+        "215 minutes"
+      ],
+      "type": "multiple_choice",
+      "question": "A clinic appointment starts at 10:45 and ends at 14:10. How many minutes did the appointment last?",
+      "correctAnswer": 2,
+      "id": "nn-mc-0020"
+    },
+    {
+      "explanation": "The total number of patients is 15 + 25 + 10 = 50. The percentage of children is (10 / 50) x 100 = 20%.",
+      "options": [
+        "20%",
+        "10%",
+        "25%",
+        "50%"
+      ],
+      "question": "A GP surgery sees 15 elderly patients, 25 adults, and 10 children in one morning. What percentage of the patients seen were children?",
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "id": "nn-mc-0021"
+    },
+    {
+      "explanation": "To find the price before VAT, divide the total by 1.20: £30 / 1.2 = £25.",
+      "options": [
+        "£24.00",
+        "£25.00",
+        "£26.50",
+        "£23.00"
+      ],
+      "type": "multiple_choice",
+      "question": "The total cost of a piece of medical equipment including 20% VAT is £30. What was the price before VAT was added?",
+      "correctAnswer": 1,
+      "id": "nn-mc-0022"
+    },
+    {
+      "explanation": "Divide the total volume by the time: 1,000ml / 8 hours = 125ml per hour.",
+      "options": [
+        "100ml/hr",
+        "115ml/hr",
+        "125ml/hr",
+        "150ml/hr"
+      ],
+      "question": "A patient is prescribed 1 litre of fluid to be given via IV over 8 hours. What should the infusion rate be in ml/hr?",
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "id": "nn-mc-0023"
+    },
+    {
+      "explanation": "Calculate the number of boxes: 42 patients x 2 tablets = 84 tablets total. Each box has 28, so 84 / 28 = 3 boxes.",
+      "options": [
+        "1 box",
+        "2 boxes",
+        "4 boxes",
+        "3 boxes"
+      ],
+      "correctAnswer": 3,
+      "question": "A ward manager needs to order tablets for 42 patients. Each patient needs 2 tablets. If each box contains 28 tablets, how many boxes are needed?",
+      "type": "multiple_choice",
+      "id": "nn-mc-0024"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "explanation": "To find the rate per hour, divide the total volume by the number of hours (120ml ÷ 6 hours = 20ml/hr).",
+      "question": "A patient is prescribed 120ml of a liquid medication to be administered over 6 hours. What is the infusion rate in millilitres per hour (ml/hr)?",
+      "options": [
+        "15ml/hr",
+        "20ml/hr",
+        "25ml/hr",
+        "30ml/hr"
+      ],
+      "id": "nn-mc-0025"
+    },
+    {
+      "explanation": "Subtract the weight at the end of the week from the starting weight (82.1kg - 79.4kg = 2.7kg).",
+      "options": [
+        "2.3kg",
+        "3.1kg",
+        "2.7kg",
+        "3.7kg"
+      ],
+      "question": "A patient weighed 82.1kg on Monday. By the following Sunday, their weight was recorded as 79.4kg. How much weight did the patient lose?",
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "id": "nn-mc-0026"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "explanation": "The total ratio is 1 + 5 = 6 parts. Divide the total volume by the total parts (300ml ÷ 6 = 50ml).",
+      "question": "A medication is diluted in a ratio of 1 part medicine to 5 parts water. If the total volume of the mixture is 300ml, how much of the mixture is the medicine?",
+      "options": [
+        "50ml",
+        "60ml",
+        "75ml",
+        "100ml"
+      ],
+      "id": "nn-mc-0027"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "explanation": "Convert grams to milligrams by multiplying by 1,000 (0.05g × 1,000 = 50mg).",
+      "question": "A patient is prescribed 0.05g of a medication. How many milligrams (mg) is this?",
+      "options": [
+        "5mg",
+        "0.5mg",
+        "500mg",
+        "50mg"
+      ],
+      "id": "nn-mc-0028"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "explanation": "10% of £250 is £25. 5% is half of that (£12.50). Total 15% is £25 + £12.50 = £37.50. Subtract this from the original price: £250 - £37.50 = £212.50.",
+      "options": [
+        "£225.00",
+        "£212.50",
+        "£210.00",
+        "£215.50"
+      ],
+      "question": "A medical device costs £250. It is offered with a 15% discount for NHS staff. What is the discounted price?",
+      "id": "nn-mc-0029"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "explanation": "From 08:50 to 11:50 is 3 hours (180 minutes). Add the remaining 25 minutes to reach 12:15 (180 + 25 = 205 minutes).",
+      "options": [
+        "185 minutes",
+        "215 minutes",
+        "205 minutes",
+        "195 minutes"
+      ],
+      "question": "A minor surgery session starts at 08:50 and concludes at 12:15. What was the total duration of the session in minutes?",
+      "id": "nn-mc-0030"
+    },
+    {
+      "options": [
+        "2.5 litres",
+        "2.4 litres",
+        "3.1 litres",
+        "2.8 litres"
+      ],
+      "question": "A nurse records a patient's fluid output over three shifts as 450ml, 1.2 litres, and 850ml. What is the total output in litres?",
+      "explanation": "Add the three volumes together: 450ml + 1200ml + 850ml = 2500ml. Then divide by 1000 to convert to litres (2500ml ÷ 1000 = 2.5 litres).",
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "id": "nn-mc-0031"
+    },
+    {
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "options": [
+        "10ml",
+        "12ml",
+        "20ml",
+        "15ml"
+      ],
+      "question": "A patient needs a 45mg dose of a liquid medicine. The stock concentration is 15mg per 5ml. How many millilitres should be administered?",
+      "explanation": "Use the formula: (Desired / Have) x Volume. (45mg / 15mg) x 5ml = 3 x 5ml = 15ml.",
+      "id": "nn-mc-0032"
+    },
+    {
+      "explanation": "The total number of patients is 12 + 18 + 10 = 40. The percentage of children is (10 children / 40 total) x 100 = 25%.",
+      "options": [
+        "20%",
+        "25%",
+        "30%",
+        "10%"
+      ],
+      "question": "A clinic sees 12 men, 18 women, and 10 children in one day. What percentage of the patients seen were children?",
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "id": "nn-mc-0033"
+    },
+    {
+      "options": [
+        "7 tablets",
+        "28 tablets",
+        "14 tablets",
+        "21 tablets"
+      ],
+      "question": "A patient is prescribed half a tablet (0.5) to be taken four times a day for one week. How many tablets are needed in total for the 7-day course?",
+      "explanation": "The patient needs 4 doses of 0.5 tablets per day, which is 2 tablets daily. Over 7 days, they need 2 x 7 = 14 tablets.",
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "id": "nn-mc-0034"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "explanation": "To find 40% of 150, multiply 150 by 0.40 (150 x 0.4 = 60).",
+      "question": "A hospital ward has 150 beds in total. If 40% of the beds are currently occupied, how many beds are in use?",
+      "options": [
+        "60 beds",
+        "50 beds",
+        "40 beds",
+        "75 beds"
+      ],
+      "id": "nn-mc-0035"
+    },
+    {
+      "explanation": "Multiply the loss per day by 5 days (0.35kg x 5 = 1.75kg). Subtract this from the starting weight (92.5kg - 1.75kg = 90.75kg).",
+      "options": [
+        "91.25kg",
+        "90.40kg",
+        "90.75kg",
+        "89.50kg"
+      ],
+      "question": "A patient weighing 92.5kg is on a diet and loses 350g (0.35kg) every day. What will their weight be after 5 days?",
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "id": "nn-mc-0036"
+    },
+    {
+      "question": "A patient is advised to drink 2 litres of water throughout the day. If their water bottle holds 250ml, how many full bottles must they drink?",
+      "explanation": "Divide the total volume (2 litres = 2000ml) by the volume of one bottle (250ml). 2000 / 250 = 8.",
+      "options": [
+        "4 bottles",
+        "8 bottles",
+        "10 bottles",
+        "6 bottles"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "id": "nn-mc-0037"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "question": "A patient is prescribed 1 tablet to be taken 3 times a day for 4 weeks. How many tablets are required in total?",
+      "options": [
+        "42 tablets",
+        "60 tablets",
+        "12 tablets",
+        "84 tablets"
+      ],
+      "explanation": "Multiply the daily dose (3 tablets) by the number of days in 4 weeks (28 days). 3 x 28 = 84.",
+      "id": "nn-mc-0038"
+    },
+    {
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "options": [
+        "76.2kg",
+        "75.4kg",
+        "77.2kg",
+        "76.8kg"
+      ],
+      "explanation": "Subtract the weight of the trolley from the total weight. 88.6kg - 12.4kg = 76.2kg.",
+      "question": "A patient is weighed on a chair scale. The total weight shown is 88.6kg. If the chair scale (trolley) itself weighs 12.4kg, what is the weight of the patient?",
+      "id": "nn-mc-0039"
+    },
+    {
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "options": [
+        "45 minutes",
+        "54 minutes",
+        "51 minutes",
+        "48 minutes"
+      ],
+      "explanation": "Find 15% of 60 by calculating (60 / 100) x 15, which is 9. Subtract 9 from 60 to get 51.",
+      "question": "A staff meeting is scheduled for 60 minutes, but it finishes 15% earlier than planned. How many minutes did the meeting last?",
+      "id": "nn-mc-0040"
+    },
+    {
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "options": [
+        "1.85 litres sleep",
+        "2.05 litres",
+        "2.4 litres",
+        "1.95 litres"
+      ],
+      "explanation": "Add the fluid volumes, ensuring the units are the same (1.4L = 1400ml). 1400ml + 250ml + 400ml = 2050ml.",
+      "question": "A nurse records a patient's fluid intake as 1.4 litres of water, 250ml of juice, and 400ml of tea. What is the total intake in millilitres (ml)?",
+      "id": "nn-mc-0041"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "question": "A doctor prescribes 150mg of a medication. The available tablets are 75mg each. How many tablets should the patient be given?",
+      "explanation": "Divide the total dose required by the strength of one tablet. 150mg / 75mg = 2.",
+      "options": [
+        "2 tablets",
+        "1.5 tablets",
+        "3 tablets",
+        "2.5 tablets"
+      ],
+      "id": "nn-mc-0042"
+    },
+    {
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "explanation": "Divide the total volume (500ml) by the flow rate (125ml/hr). 500 / 125 = 4 hours.",
+      "options": [
+        "6 hours",
+        "5 hours ops",
+        "3 hours",
+        "4 hours"
+      ],
+      "question": "An IV bag contains 500ml of saline to be infused at a rate of 125ml per hour. How many hours will the infusion take?",
+      "id": "nn-mc-0043"
+    },
+    {
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "explanation": "Use the formula (What you want / What you have) x Volume. (20mg / 10mg) x 5ml = 10ml.",
+      "options": [
+        "5ml",
+        "15ml",
+        "10ml",
+        "20ml"
+      ],
+      "question": "A patient needs a 20mg dose of liquid medicine. The stock concentration is 10mg per 5ml. How many millilitres (ml) are required?",
+      "id": "nn-mc-0044"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "question": "A hospital department has 120 staff members. If 25% are on the night shift, how many staff members are NOT on the night shift?",
+      "options": [
+        "100 staff",
+        "90 staff",
+        "85 staff",
+        "95 staff"
+      ],
+      "explanation": "Calculate 25% of 120 by dividing 120 by 4, which is 30. 120 - 30 = 90.",
+      "id": "nn-mc-0045"
+    },
+    {
+      "question": "A patient is prescribed 0.25mg of a drug. How many micrograms (mcg) is this?",
+      "explanation": "There are 1000 micrograms (mcg) in 1 milligram (mg). 0.25 x 1000 = 250mcg.",
+      "options": [
+        "250mcg",
+        "25mcg",
+        "2500mcg",
+        "0.00025mcg"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "id": "nn-mc-0046"
+    },
+    {
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "explanation": "Multiply the hourly rate by the number of hours. 60ml x 12 hours = 720ml.",
+      "options": [
+        "600ml",
+        "500ml",
+        "820ml",
+        "720ml"
+      ],
+      "question": "A patient is receiving an infusion at a rate of 60ml per hour. How many millilitres will they have received after 12 hours?",
+      "id": "nn-mc-0047"
+    },
+    {
+      "question": "A surgery session begins at 09:20 and ends at 11:35. What is the total duration of the session in minutes?",
+      "explanation": "Calculate the time from 09:20 to 11:20 (2 hours or 120 mins) plus the remaining 15 minutes. 120 + 15 = 135 minutes.",
+      "options": [
+        "125 minutes",
+        "145 minutes",
+        "135 minutes",
+        "115 minutes"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "id": "nn-mc-0048"
+    },
+    {
+      "options": [
+        "6 tablets",
+        "7 tablets",
+        "7.5 tablets",
+        "8 tablets"
+      ],
+      "explanation": "Divide 180 by 24. 180 / 24 = 7.5. Therefore, 7.5 tablets are needed.",
+      "question": "A patient is prescribed 180mg of a drug. The stock tablets are 24mg each. How many tablets should be administered?",
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "id": "nn-mc-0049"
+    },
+    {
+      "explanation": "Convert all to millilitres: 200ml + 500ml + 1200ml = 1900ml. Then convert back to litres: 1.9L.",
+      "options": [
+        "1.9 litres",
+        "2.1 litres",
+        "1.7 litres",
+        "2.2 litres"
+      ],
+      "question": "A nurse measures three urine outputs: 200ml, 0.5 litres, and 1.2 litres. What is the total volume in litres?",
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "id": "nn-mc-0050"
+    },
+    {
+      "question": "A procedure usually takes 210 minutes, but a new technique reduces the time by 20%. How long does the procedure take now?",
+      "options": [
+        "158 minutes",
+        "168 minutes",
+        "172 minutes",
+        "180 minutes"
+      ],
+      "explanation": "First, find 20%: 210 / 5 = 42. Subtract this from the total: 210 - 42 = 168.",
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "id": "nn-mc-0051"
+    },
+    {
+      "options": [
+        "12 nurses",
+        "6 nurses",
+        "8 nurses",
+        "10 nurses"
+      ],
+      "explanation": "The ratio is 18:6, which simplifies to 3:1. Total parts = 4. 40 / 4 = 10. 10 x 1 (nurses) = 10 nurses.",
+      "question": "The ratio of doctors to nurses in a department is 18:6. If there are 40 staff members in total, how many are nurses?",
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "id": "nn-mc-0052"
+    },
+    {
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "question": "A patient is prescribed 0.075mg of a medication. What is this dose in micrograms (mcg)?",
+      "explanation": "To convert mg to mcg, multiply by 1,000. 0.075 x 1000 = 75mcg.",
+      "options": [
+        "7.5mcg",
+        "75mcg",
+        "750mcg",
+        "0.75mcg"
+      ],
+      "id": "nn-mc-0053"
+    },
+    {
+      "explanation": "From 14:45 to 19:45 is 5 hours. From 19:45 to 20:10 is a further 25 minutes. Total is 325 minutes.",
+      "options": [
+        "315 minutes",
+        "340 minutes",
+        "325 minutes",
+        "335 minutes"
+      ],
+      "question": "An observation starts at 14:45 and finishes at 20:10. What is the total duration in minutes?",
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "id": "nn-mc-0054"
+    },
+    {
+      "explanation": "Using the formula (Want / Got) x Volume: (60 / 25) x 5. 2.4 x 5 = 12ml.",
+      "options": [
+        "12ml",
+        "10ml",
+        "15ml",
+        "14.5ml"
+      ],
+      "question": "A patient requires 60mg of a liquid medication. The stock available is 25mg per 5ml. How many ml should be given?",
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "id": "nn-mc-0055"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "question": "A patient weighs 85kg. After a health programme, they lose 15% of their body weight. What is their new weight?",
+      "options": [
+        "73.5kg",
+        "71.25kg",
+        "74.15kg",
+        "72.25kg"
+      ],
+      "explanation": "10% of 85kg is 8.5kg. 5% is 4.25kg. Total loss is 8.5 + 4.25 = 12.75kg. 85 - 12.75 = 72.25kg.",
+      "id": "nn-mc-0056"
+    },
+    {
+      "question": "An IV infusion of 450ml is set to run at 150ml per hour. If it starts at 10:30, what time will it finish?",
+      "options": [
+        "12:30",
+        "13:00",
+        "13:30",
+        "14:00"
+      ],
+      "explanation": "Total dose needed is 450ml. 450 / 150 = 3 hours. 3 hours after 10:30 is 13:30.",
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "id": "nn-mc-0057"
+    },
+    {
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "question": "A clinic sees 40 patients: 8 are aged 0-18, 14 are 19-64, 10 are 65-80, and 8 are 80+. What percentage are aged 65 or over?",
+      "options": [
+        "40%",
+        "45%",
+        "50%",
+        "38%"
+      ],
+      "explanation": "Total patients = 8 + 14 + 10 + 8 = 40. The number of patients over 65 is 10 + 8 = 18. (18 / 40) x 100 = 45%.",
+      "id": "nn-mc-0058"
+    },
+    {
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "question": "A patient is prescribed 300ml of a nutritional supplement every 4 hours. How many litres will they consume in 24 hours?",
+      "options": [
+        "1.8 litres",
+        "1.5 litres",
+        "2.1 litres",
+        "1.2 litres"
+      ],
+      "explanation": "300ml every 4 hours means 6 doses in 24 hours (24/4=6). 300ml x 6 = 1800ml or 1.8L.",
+      "id": "nn-mc-0059"
+    },
+    {
+      "question": "A patient takes 2 tablets, 3 times a day, for one week. The tablets come in packs of 10. How many full packs must be dispensed?",
+      "options": [
+        "4 packs",
+        "5 packs",
+        "6 packs",
+        "3 packs"
+      ],
+      "explanation": "2 tablets x 3 times/day = 6 tablets/day. 6 tablets x 7 days = 42 tablets. 42 / 10 = 4.2, so 5 full packs are needed.",
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "id": "nn-mc-0060"
+    },
+    {
+      "explanation": "To find the total, convert all units to millilitres: 250 + 130 + 1200 + 450 = 2,030ml.",
+      "options": [
+        "1,870ml",
+        "1,930ml",
+        "2,030ml",
+        "2,250ml"
+      ],
+      "question": "A patient drinks the following volumes: 250ml water, 130ml juice, 1.2 litres of squash, and 450ml tea. What is the total volume in millilitres?",
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "id": "nn-mc-0061"
+    },
+    {
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "question": "A patient is prescribed 1.2mg of an injectable drug. The ampoule contains 0.4mg per 1ml. How many millilitres should be administered?",
+      "options": [
+        "3ml",
+        "0.33ml",
+        "4.8ml",
+        "2.5ml"
+      ],
+      "explanation": "Using the formula (Want / Got) x Volume: (1.2mg / 0.4mg) x 1ml = 3 x 1ml = 3ml.",
+      "id": "nn-mc-0062"
+    },
+    {
+      "explanation": "One person receives 40% (0.40 * 120 = 48) and the other receives 35% (0.35 * 120 = 42). 48 + 42 = 90 patients.",
+      "options": [
+        "75 patients",
+        "88 patients",
+        "85 patients",
+        "90 patients"
+      ],
+      "question": "A GP surgery has 120 appointments. 40% are for the lead doctor and 35% are for the nurse practitioner. How many appointments is this in total?",
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "id": "nn-mc-0063"
+    },
+    {
+      "question": "A shift starts at 07:15 and ends at 12:40. How many minutes long is the shift?",
+      "options": [
+        "315 minutes",
+        "325 minutes",
+        "335 minutes",
+        "345 minutes"
+      ],
+      "explanation": "Total time is 5 hours and 25 minutes. (5 x 60) + 25 = 300 + 25 = 325 minutes.",
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "id": "nn-mc-0064"
+    },
+    {
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "explanation": "To convert grams to milligrams, multiply by 1,000. 0.045g x 1,000 = 45mg.",
+      "options": [
+        "4.5mg",
+        "45mg",
+        "450mg",
+        "0.45mg"
+      ],
+      "question": "A medication order is for 0.045g. How many milligrams (mg) is this?",
+      "id": "nn-mc-0065"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "question": "A patient is prescribed 60mg of a drug to be taken three times a day for one week. The tablets are 15mg each. How many tablets are needed for the full week?",
+      "options": [
+        "28 tablets",
+        "42 tablets",
+        "84 tablets",
+        "120 tablets"
+      ],
+      "explanation": "60mg / 15mg = 4 tablets per dose. 4 tablets x 3 doses per day = 12 tablets per day. 12 x 7 days = 84 tablets.",
+      "id": "nn-mc-0066"
+    },
+    {
+      "options": [
+        "20 hours",
+        "18 hours",
+        "22 hours",
+        "24 hours"
+      ],
+      "explanation": "Volume / Rate = Time. 800ml / 40ml/hr = 20 hours.",
+      "question": "An IV bag of 800ml is running at a constant rate of 40ml per hour. How many hours will the total infusion take?",
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "id": "nn-mc-0067"
+    },
+    {
+      "question": "A ward has 60 staff members. The ratio of doctors to nurses is 2:3. How many doctors and nurses are there?",
+      "options": [
+        "20 doctors and 40 nurses",
+        "30 doctors and 30 nurses",
+        "24 doctors and 36 nurses",
+        "40 doctors and 20 nurses"
+      ],
+      "explanation": "Total parts = 2 + 3 = 5. One part = 60 / 5 = 12. Doctors = 2 parts = 24. Nurses = 3 parts = 36.",
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "id": "nn-mc-0068"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "question": "A patient's blood glucose level is 140mg/dL. After treatment, it drops by 15%. What is the new glucose level?",
+      "explanation": "To find 15%, divide by 100 and multiply by 15: (140 / 100) * 15 = 1.4 * 15 = 21. 140 - 21 = 119mg/dL.",
+      "options": [
+        "121mg/dL",
+        "119mg/dL",
+        "125mg/dL",
+        "114mg/dL"
+      ],
+      "id": "nn-mc-0069"
+    },
+    {
+      "question": "A child is prescribed 1.25ml of a syrup to be taken 6 hourly for 14 days. What is the total volume required for the course?",
+      "explanation": "6 hourly means 4 times in 24 hours. 1.25ml x 4 = 5ml per day. 5ml x 14 days = 70ml.",
+      "options": [
+        "35ml",
+        "50ml",
+        "17.5ml",
+        "70ml"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "id": "nn-mc-0070"
+    },
+    {
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "explanation": "Weight is 70kg. Dose = 70kg x 3mg/kg = 210mg. 210mg / 10mg per tablet = 21 tablets.",
+      "options": [
+        "21 tablets",
+        "15 tablets",
+        "7 tablets",
+        "10 tablets"
+      ],
+      "question": "A patient weighing 70kg is prescribed a drug at a dose of 3mg per kg. If the tablets are 10mg each, how many tablets are required for one dose?",
+      "id": "nn-mc-0071"
+    },
+    {
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "explanation": "8% of 1500 = 120. 1500 + 120 = 1622. Wait, 1500 x 0.08 = 120. Total = 1500 + 120 = 1620ml.",
+      "options": [
+        "1,580ml",
+        "1,508ml",
+        "1,620ml",
+        "1,750ml"
+      ],
+      "question": "A patient’s fluid target is 1,500ml per day. The doctor increases this by 8%. What is the new daily target?",
+      "id": "nn-mc-0072"
+    },
+    {
+      "question": "A patient is prescribed 0.025kg of an ointment. What is this weight in grams (g)?",
+      "explanation": "To convert kilograms to grams, multiply by 1,000. 0.025kg x 1,000 = 25g.",
+      "correctAnswer": 2,
+      "options": [
+        "0.25g",
+        "2.5g",
+        "25g",
+        "250g"
+      ],
+      "type": "multiple_choice",
+      "id": "nn-mc-0073"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "1 tablet",
+        "1.5 tablets",
+        "2 tablets",
+        "3 tablets"
+      ],
+      "correctAnswer": 3,
+      "question": "A patient is prescribed 750mg of a medication. The tablets available are 250mg. How many tablets should be administered?",
+      "explanation": "Divide the total dose (750mg) by the strength per tablet (250mg) to get the number of tablets. 750 / 250 = 3 tablets.",
+      "id": "nn-mc-0074"
+    },
+    {
+      "question": "A physiotherapist spends 15 minutes a day with a patient for 6 days, and 30 minutes on the 7th day. What is the total time spent with the patient that week?",
+      "explanation": "Calculate 15 minutes for 6 days (15 x 6 = 90 mins). Add 30 minutes for the final day (90 + 30 = 120 mins). 120 minutes equals 2 hours.",
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "options": [
+        "1 hour 30 mins",
+        "2 hours",
+        "2 hours 15 mins",
+        "3 hours"
+      ],
+      "id": "nn-mc-0075"
+    },
+    {
+      "explanation": "Calculate 10% of 150 (15) and subtract it from the total. 150 - 15 = 135.",
+      "question": "An IV bag contains 150ml of fluid. If 10% of the fluid is removed, how many millilitres remain?",
+      "type": "multiple_choice",
+      "options": [
+        "135ml",
+        "140ml",
+        "145ml",
+        "120ml"
+      ],
+      "correctAnswer": 0,
+      "id": "nn-mc-0076"
+    },
+    {
+      "options": [
+        "12mg",
+        "240mg",
+        "300mg",
+        "360mg"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "explanation": "Multiply the dose per kg by the patient's weight: 5mg x 60kg = 300mg total.",
+      "question": "A patient weighing 60kg is prescribed a drug at a dose of 5mg per kilogram. What is the total dose required?",
+      "id": "nn-mc-0077"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "285 minutes",
+        "305 minutes",
+        "265 minutes",
+        "245 minutes"
+      ],
+      "correctAnswer": 0,
+      "explanation": "12 noon to 4 pm is 4 hours. 10 minutes to 55 minutes is 45 minutes. Total = 4 hours 45 minutes, which is (4 x 60) + 45 = 285 minutes.",
+      "question": "A recovery room observation started at 12:10 and ended at 16:55. How many minutes did the observation last?",
+      "id": "nn-mc-0078"
+    },
+    {
+      "correctAnswer": 1,
+      "options": [
+        "20ml",
+        "30ml",
+        "40ml",
+        "50ml"
+      ],
+      "type": "multiple_choice",
+      "explanation": "Use the formula (Want / Got) x Volume. (15 / 5) x 10ml = 3 x 10ml = 30ml.",
+      "question": "A liquid medication is available as 5mg in 10ml. How many millilitres are needed for a 15mg dose?",
+      "id": "nn-mc-0079"
+    },
+    {
+      "explanation": "The total number of parts is 1 + 4 = 5. One part is 30 / 5 = 6. There are 6 male nurses and 4 x 6 = 24 female nurses.",
+      "question": "A ward has 30 nurses. The ratio of male nurses to female nurses is 1:4. How many male and female nurses are there respectively?",
+      "correctAnswer": 3,
+      "options": [
+        "5 male, 25 female",
+        "10 male, 20 female",
+        "8 male, 22 female",
+        "6 male, 24 female"
+      ],
+      "type": "multiple_choice",
+      "id": "nn-mc-0080"
+    },
+    {
+      "correctAnswer": 2,
+      "options": [
+        "100ml",
+        "125ml",
+        "150ml",
+        "200ml"
+      ],
+      "type": "multiple_choice",
+      "question": "A patient drinks 200ml at breakfast, 150ml at lunch, and 250ml at dinner. They record a urine output of 450ml. What is their fluid balance (intake minus output)?",
+      "explanation": "Total intake: 200 + 150 + 250 = 600ml. Total output: 450ml. Balance: 600 - 450 = 150ml.",
+      "id": "nn-mc-0081"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "1,440mg",
+        "1,320mg",
+        "1,220mg",
+        "1,500mg"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Calculate 20% of 1,200 (240). Add this to the original amount: 1,200 + 240 = 1,440.",
+      "question": "A patient’s daily sodium intake is 1,200mg. The dietitian recommends increasing this by 20%. What is the new recommended intake?",
+      "id": "nn-mc-0082"
+    },
+    {
+      "correctAnswer": 1,
+      "options": [
+        "12 hours",
+        "15 hours",
+        "18 hours",
+        "20 hours"
+      ],
+      "type": "multiple_choice",
+      "question": "An IV infusion of 750ml is running at a rate of 50ml per hour. How many hours will it take to complete?",
+      "explanation": "750ml / 50ml per hour = 15 hours.",
+      "id": "nn-mc-0083"
+    },
+    {
+      "explanation": "The patient takes 4 tablets a day (2 morning + 2 evening). For 14 days, they need 4 x 14 = 56 tablets. 56 / 28 = exactly 2 packs.",
+      "question": "A patient is prescribed 2 tablets twice a day for 14 days. If the tablets come in packs of 28, how many full packs are needed?",
+      "type": "multiple_choice",
+      "options": [
+        "1 pack",
+        "1.5 packs",
+        "2 packs",
+        "3 packs"
+      ],
+      "correctAnswer": 2,
+      "id": "nn-mc-0084"
+    }
+  ],
+  "mocks": []
+}
