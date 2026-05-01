@@ -9,33 +9,93 @@ import {
   RotateCcw,
   ArrowRight,
 } from "lucide-react";
-import type { Quiz, Question, FillBlanksQuestion } from "@/data/quizzes";
+import type {
+  Quiz,
+  Question,
+  MCQQuestion,
+  FillBlanksQuestion,
+  TrueFalseQuestion,
+  MultipleResponseQuestion,
+  NumericEntryQuestion,
+  ImageQuestion,
+  HotSpotQuestion,
+  DragDropBlanksQuestion,
+} from "@/data/quizzes";
 import { AdSlot } from "./AdSlot";
 import { RoadSign } from "./RoadSign";
 
 type Mode = "practice" | "exam";
-// MCQ answer: number index. Fill-blanks answer: array of dropdown indices (-1 = unset).
-type Answer = number | number[] | null;
+// Answer shapes per question type:
+// - MCQ / image / true-false: number index (true=1, false=0 for true-false)
+// - fill-blanks / drag-drop-blanks: number[]  (-1 = unset)
+// - multiple-response: number[]  (selected indices)
+// - numeric-entry: string (raw input; parsed at check time)
+// - hot-spot: string (clicked spot id)
+type Answer = number | number[] | string | null;
 
+// ---------- type guards ----------
+function isMcq(q: Question): q is MCQQuestion {
+  return !q.type || q.type === "mcq";
+}
 function isFillBlanks(q: Question): q is FillBlanksQuestion {
   return q.type === "fill-blanks";
+}
+function isDragDrop(q: Question): q is DragDropBlanksQuestion {
+  return q.type === "drag-drop-blanks";
+}
+function isTrueFalse(q: Question): q is TrueFalseQuestion {
+  return q.type === "true-false";
+}
+function isMultiResponse(q: Question): q is MultipleResponseQuestion {
+  return q.type === "multiple-response";
+}
+function isNumeric(q: Question): q is NumericEntryQuestion {
+  return q.type === "numeric-entry";
+}
+function isImage(q: Question): q is ImageQuestion {
+  return q.type === "image-question";
+}
+function isHotSpot(q: Question): q is HotSpotQuestion {
+  return q.type === "hot-spot";
 }
 
 function isAnswered(q: Question, a: Answer): boolean {
   if (a === null) return false;
-  if (isFillBlanks(q)) {
+  if (isFillBlanks(q) || isDragDrop(q)) {
     return Array.isArray(a) && a.length === q.blanks.length && a.every((v) => v >= 0);
   }
+  if (isMultiResponse(q)) return Array.isArray(a) && a.length > 0;
+  if (isNumeric(q)) return typeof a === "string" && a.trim() !== "";
+  if (isHotSpot(q)) return typeof a === "string" && a.length > 0;
   return typeof a === "number";
 }
 
 function isCorrect(q: Question, a: Answer): boolean {
   if (a === null) return false;
-  if (isFillBlanks(q)) {
+  if (isFillBlanks(q) || isDragDrop(q)) {
     if (!Array.isArray(a)) return false;
     return q.blanks.every((b, i) => a[i] === b.correctIndex);
   }
-  return typeof a === "number" && a === q.correctAnswer;
+  if (isMultiResponse(q)) {
+    if (!Array.isArray(a)) return false;
+    const sel = [...a].sort();
+    const want = [...q.correctAnswers].sort();
+    return sel.length === want.length && sel.every((v, i) => v === want[i]);
+  }
+  if (isTrueFalse(q)) {
+    return typeof a === "number" && (a === 1) === q.correctAnswer;
+  }
+  if (isNumeric(q)) {
+    if (typeof a !== "string") return false;
+    const n = parseFloat(a);
+    if (Number.isNaN(n)) return false;
+    const tol = q.tolerance ?? 0;
+    return Math.abs(n - q.correctAnswer) <= tol;
+  }
+  if (isHotSpot(q)) return a === q.correctSpotId;
+  if (isImage(q)) return typeof a === "number" && a === q.correctAnswer;
+  if (isMcq(q)) return typeof a === "number" && a === q.correctAnswer;
+  return false;
 }
 
 export function QuizRunner({ quiz }: { quiz: Quiz }) {
@@ -50,7 +110,6 @@ export function QuizRunner({ quiz }: { quiz: Quiz }) {
   const [timeLeft, setTimeLeft] = useState(quiz.timeLimit);
   const [finished, setFinished] = useState(false);
 
-  // Timer (exam mode only)
   useEffect(() => {
     if (mode !== "exam" || finished) return;
     if (timeLeft <= 0) {
@@ -61,7 +120,6 @@ export function QuizRunner({ quiz }: { quiz: Quiz }) {
     return () => clearTimeout(t);
   }, [mode, timeLeft, finished]);
 
-  // Scroll to top whenever the question changes or we enter results.
   useEffect(() => {
     if (typeof window !== "undefined") {
       window.scrollTo({ top: 0, behavior: "smooth" });
@@ -79,7 +137,6 @@ export function QuizRunner({ quiz }: { quiz: Quiz }) {
   const percent = Math.round((score / quiz.questions.length) * 100);
   const passed = percent >= quiz.passMark;
 
-  // Persist best score per quiz slug so category page progress bars fill.
   useEffect(() => {
     if (!finished) return;
     try {
@@ -91,9 +148,7 @@ export function QuizRunner({ quiz }: { quiz: Quiz }) {
     }
   }, [finished, score, quiz.slug]);
 
-  if (!mode) {
-    return <ModeSelect quiz={quiz} onSelect={setMode} />;
-  }
+  if (!mode) return <ModeSelect quiz={quiz} onSelect={setMode} />;
 
   if (finished) {
     return (
@@ -118,7 +173,7 @@ export function QuizRunner({ quiz }: { quiz: Quiz }) {
   const q = quiz.questions[current];
   const selected = answers[current];
   const isRevealed = mode === "practice" && revealed[current];
-  const progress = ((current + 1) / quiz.questions.length) * 100;
+  const answered = isAnswered(q, selected);
 
   const setAnswer = (a: Answer) => {
     const next = [...answers];
@@ -139,11 +194,16 @@ export function QuizRunner({ quiz }: { quiz: Quiz }) {
   };
 
   const showAdBreak = mode === "exam" && current > 0 && current % 4 === 0;
-  const answered = isAnswered(q, selected);
+
+  // For multi-step types we show an explicit "Check answer" button in practice.
+  const needsExplicitCheck =
+    isFillBlanks(q) ||
+    isDragDrop(q) ||
+    isMultiResponse(q) ||
+    isNumeric(q);
 
   return (
     <div className="mx-auto max-w-7xl">
-      {/* Top bar */}
       <div className="mb-2 flex items-center justify-between gap-4">
         <div className="text-sm text-muted-foreground">
           Question <span className="font-semibold text-foreground">{current + 1}</span> of{" "}
@@ -164,22 +224,79 @@ export function QuizRunner({ quiz }: { quiz: Quiz }) {
 
       {showAdBreak && <AdSlot size="in-feed" className="mb-3" />}
 
-      {/* Question card */}
       <div className="rounded-2xl border border-border bg-card p-4 shadow-soft md:p-5">
-        {isFillBlanks(q) ? (
-          <FillBlanksQuestionView
-            q={q}
-            selected={Array.isArray(selected) ? selected : null}
-            revealed={isRevealed}
-            onChange={(arr) => setAnswer(arr)}
-          />
-        ) : (
+        {isMcq(q) && (
           <McqQuestionView
             q={q}
             selected={typeof selected === "number" ? selected : null}
             revealed={isRevealed}
             onSelect={(i) => {
               setAnswer(i);
+              reveal();
+            }}
+          />
+        )}
+        {isImage(q) && (
+          <ImageQuestionView
+            q={q}
+            selected={typeof selected === "number" ? selected : null}
+            revealed={isRevealed}
+            onSelect={(i) => {
+              setAnswer(i);
+              reveal();
+            }}
+          />
+        )}
+        {isTrueFalse(q) && (
+          <TrueFalseView
+            q={q}
+            selected={typeof selected === "number" ? selected : null}
+            revealed={isRevealed}
+            onSelect={(i) => {
+              setAnswer(i);
+              reveal();
+            }}
+          />
+        )}
+        {isFillBlanks(q) && (
+          <FillBlanksQuestionView
+            q={q}
+            selected={Array.isArray(selected) ? (selected as number[]) : null}
+            revealed={isRevealed}
+            onChange={(arr) => setAnswer(arr)}
+          />
+        )}
+        {isDragDrop(q) && (
+          <DragDropBlanksView
+            q={q}
+            selected={Array.isArray(selected) ? (selected as number[]) : null}
+            revealed={isRevealed}
+            onChange={(arr) => setAnswer(arr)}
+          />
+        )}
+        {isMultiResponse(q) && (
+          <MultipleResponseView
+            q={q}
+            selected={Array.isArray(selected) ? (selected as number[]) : null}
+            revealed={isRevealed}
+            onChange={(arr) => setAnswer(arr)}
+          />
+        )}
+        {isNumeric(q) && (
+          <NumericEntryView
+            q={q}
+            selected={typeof selected === "string" ? selected : null}
+            revealed={isRevealed}
+            onChange={(v) => setAnswer(v)}
+          />
+        )}
+        {isHotSpot(q) && (
+          <HotSpotView
+            q={q}
+            selected={typeof selected === "string" ? selected : null}
+            revealed={isRevealed}
+            onSelect={(id) => {
+              setAnswer(id);
               reveal();
             }}
           />
@@ -203,7 +320,7 @@ export function QuizRunner({ quiz }: { quiz: Quiz }) {
             Back
           </button>
           <div className="flex gap-2">
-            {isFillBlanks(q) && mode === "practice" && answered && !isRevealed && (
+            {needsExplicitCheck && mode === "practice" && answered && !isRevealed && (
               <button
                 onClick={reveal}
                 className="inline-flex items-center gap-2 rounded-xl border border-border bg-background px-4 py-2.5 text-sm font-semibold hover:bg-muted"
@@ -226,13 +343,15 @@ export function QuizRunner({ quiz }: { quiz: Quiz }) {
   );
 }
 
+// ============== Renderers ==============
+
 function McqQuestionView({
   q,
   selected,
   revealed,
   onSelect,
 }: {
-  q: Extract<Question, { type?: "mcq" }>;
+  q: MCQQuestion;
   selected: number | null;
   revealed: boolean;
   onSelect: (i: number) => void;
@@ -244,43 +363,317 @@ function McqQuestionView({
           <RoadSign type={q.signType} title="Road sign" />
         </div>
       )}
+      {q.image && (
+        <img
+          src={q.image}
+          alt={q.imageAlt ?? ""}
+          loading="lazy"
+          className="mb-3 max-h-64 rounded-xl border border-border object-contain"
+        />
+      )}
       <h2 className="font-display text-base font-semibold leading-snug md:text-lg">
         {q.question}
       </h2>
+      <OptionList
+        options={q.options}
+        selected={selected}
+        correct={q.correctAnswer}
+        revealed={revealed}
+        onSelect={onSelect}
+      />
+    </>
+  );
+}
+
+function ImageQuestionView({
+  q,
+  selected,
+  revealed,
+  onSelect,
+}: {
+  q: ImageQuestion;
+  selected: number | null;
+  revealed: boolean;
+  onSelect: (i: number) => void;
+}) {
+  return (
+    <>
+      <img
+        src={q.image}
+        alt={q.imageAlt}
+        loading="lazy"
+        className="mb-3 max-h-72 rounded-xl border border-border object-contain"
+      />
+      <h2 className="font-display text-base font-semibold leading-snug md:text-lg">
+        {q.question}
+      </h2>
+      <OptionList
+        options={q.options}
+        selected={selected}
+        correct={q.correctAnswer}
+        revealed={revealed}
+        onSelect={onSelect}
+      />
+    </>
+  );
+}
+
+function TrueFalseView({
+  q,
+  selected,
+  revealed,
+  onSelect,
+}: {
+  q: TrueFalseQuestion;
+  selected: number | null;
+  revealed: boolean;
+  onSelect: (i: number) => void;
+}) {
+  const correctIdx = q.correctAnswer ? 1 : 0;
+  return (
+    <>
+      {q.image && (
+        <img
+          src={q.image}
+          alt={q.imageAlt ?? ""}
+          loading="lazy"
+          className="mb-3 max-h-64 rounded-xl border border-border object-contain"
+        />
+      )}
+      <h2 className="font-display text-base font-semibold leading-snug md:text-lg">
+        {q.question}
+      </h2>
+      <OptionList
+        options={["False", "True"]}
+        selected={selected}
+        correct={correctIdx}
+        revealed={revealed}
+        onSelect={onSelect}
+      />
+    </>
+  );
+}
+
+function OptionList({
+  options,
+  selected,
+  correct,
+  revealed,
+  onSelect,
+}: {
+  options: string[];
+  selected: number | null;
+  correct: number;
+  revealed: boolean;
+  onSelect: (i: number) => void;
+}) {
+  return (
+    <div className="mt-3 grid gap-2">
+      {options.map((opt, i) => {
+        const isSelected = selected === i;
+        const isCorrectOpt = correct === i;
+        let stateClass =
+          "border-border bg-background hover:border-coral hover:bg-accent/40";
+        if (revealed) {
+          if (isCorrectOpt) stateClass = "border-success bg-success/10 text-foreground";
+          else if (isSelected && !isCorrectOpt)
+            stateClass = "border-destructive bg-destructive/10 text-foreground";
+          else stateClass = "border-border bg-background opacity-70";
+        } else if (isSelected) {
+          stateClass = "border-coral bg-accent/60";
+        }
+        return (
+          <button
+            key={i}
+            onClick={() => !revealed && onSelect(i)}
+            disabled={revealed}
+            className={`flex items-start gap-3 rounded-xl border-2 px-3 py-2.5 text-left transition-all ${stateClass}`}
+          >
+            <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-muted text-[11px] font-bold">
+              {String.fromCharCode(65 + i)}
+            </span>
+            <span className="flex-1 text-sm">{opt}</span>
+            {revealed && isCorrectOpt && (
+              <CheckCircle2 className="h-5 w-5 text-success" />
+            )}
+            {revealed && isSelected && !isCorrectOpt && (
+              <XCircle className="h-5 w-5 text-destructive" />
+            )}
+          </button>
+        );
+      })}
+    </div>
+  );
+}
+
+function MultipleResponseView({
+  q,
+  selected,
+  revealed,
+  onChange,
+}: {
+  q: MultipleResponseQuestion;
+  selected: number[] | null;
+  revealed: boolean;
+  onChange: (next: number[]) => void;
+}) {
+  const sel = selected ?? [];
+  const toggle = (i: number) => {
+    if (revealed) return;
+    onChange(sel.includes(i) ? sel.filter((v) => v !== i) : [...sel, i]);
+  };
+  return (
+    <>
+      <h2 className="font-display text-base font-semibold leading-snug md:text-lg">
+        {q.question}
+      </h2>
+      <p className="mt-1 text-xs text-muted-foreground">Select all that apply.</p>
       <div className="mt-3 grid gap-2">
         {q.options.map((opt, i) => {
-          const isSelected = selected === i;
-          const isCorrectOpt = q.correctAnswer === i;
+          const isSelected = sel.includes(i);
+          const isCorrectOpt = q.correctAnswers.includes(i);
           let stateClass =
             "border-border bg-background hover:border-coral hover:bg-accent/40";
           if (revealed) {
-            if (isCorrectOpt) stateClass = "border-success bg-success/10 text-foreground";
-            else if (isSelected && !isCorrectOpt)
-              stateClass = "border-destructive bg-destructive/10 text-foreground";
-            else stateClass = "border-border bg-background opacity-70";
+            if (isCorrectOpt) stateClass = "border-success bg-success/10";
+            else if (isSelected) stateClass = "border-destructive bg-destructive/10";
+            else stateClass = "border-border opacity-70";
           } else if (isSelected) {
             stateClass = "border-coral bg-accent/60";
           }
           return (
             <button
               key={i}
-              onClick={() => !revealed && onSelect(i)}
+              onClick={() => toggle(i)}
               disabled={revealed}
               className={`flex items-start gap-3 rounded-xl border-2 px-3 py-2.5 text-left transition-all ${stateClass}`}
             >
-              <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-muted text-[11px] font-bold">
-                {String.fromCharCode(65 + i)}
+              <span
+                className={`mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded border-2 ${
+                  isSelected ? "border-coral bg-coral text-coral-foreground" : "border-border bg-background"
+                }`}
+              >
+                {isSelected && <CheckCircle2 className="h-3.5 w-3.5" />}
               </span>
               <span className="flex-1 text-sm">{opt}</span>
-              {revealed && isCorrectOpt && (
-                <CheckCircle2 className="h-5 w-5 text-success" />
-              )}
-              {revealed && isSelected && !isCorrectOpt && (
-                <XCircle className="h-5 w-5 text-destructive" />
-              )}
             </button>
           );
         })}
+      </div>
+    </>
+  );
+}
+
+function NumericEntryView({
+  q,
+  selected,
+  revealed,
+  onChange,
+}: {
+  q: NumericEntryQuestion;
+  selected: string | null;
+  revealed: boolean;
+  onChange: (v: string) => void;
+}) {
+  const value = selected ?? "";
+  const correct =
+    value !== "" &&
+    !Number.isNaN(parseFloat(value)) &&
+    Math.abs(parseFloat(value) - q.correctAnswer) <= (q.tolerance ?? 0);
+  const borderClass = revealed
+    ? correct
+      ? "border-success bg-success/10"
+      : "border-destructive bg-destructive/10"
+    : "border-border focus:border-coral";
+  return (
+    <>
+      <h2 className="font-display text-base font-semibold leading-snug md:text-lg">
+        {q.question}
+      </h2>
+      <div className="mt-4 flex items-center gap-2">
+        <input
+          type="number"
+          inputMode="decimal"
+          step="any"
+          value={value}
+          disabled={revealed}
+          onChange={(e) => onChange(e.target.value)}
+          className={`w-40 rounded-xl border-2 bg-background px-3 py-2 text-base font-semibold focus:outline-none focus:ring-2 focus:ring-coral/40 ${borderClass}`}
+          placeholder="Enter a number"
+        />
+        {q.unit && <span className="text-sm font-medium text-muted-foreground">{q.unit}</span>}
+      </div>
+      {revealed && !correct && (
+        <p className="mt-2 text-sm">
+          Correct answer:{" "}
+          <span className="font-semibold text-success">
+            {q.correctAnswer}
+            {q.unit ? ` ${q.unit}` : ""}
+          </span>
+        </p>
+      )}
+    </>
+  );
+}
+
+function HotSpotView({
+  q,
+  selected,
+  revealed,
+  onSelect,
+}: {
+  q: HotSpotQuestion;
+  selected: string | null;
+  revealed: boolean;
+  onSelect: (id: string) => void;
+}) {
+  const handleClick = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (revealed) return;
+    const rect = e.currentTarget.getBoundingClientRect();
+    const x = (e.clientX - rect.left) / rect.width;
+    const y = (e.clientY - rect.top) / rect.height;
+    const hit = q.spots.find(
+      (s) => x >= s.x && x <= s.x + s.w && y >= s.y && y <= s.y + s.h,
+    );
+    onSelect(hit ? hit.id : "__miss__");
+  };
+  return (
+    <>
+      <h2 className="font-display text-base font-semibold leading-snug md:text-lg">
+        {q.question}
+      </h2>
+      <p className="mt-1 text-xs text-muted-foreground">Click the correct area on the image.</p>
+      <div
+        className="relative mt-3 inline-block cursor-crosshair overflow-hidden rounded-xl border border-border"
+        onClick={handleClick}
+      >
+        <img
+          src={q.image}
+          alt={q.imageAlt}
+          loading="lazy"
+          className="block max-h-80 w-auto select-none"
+          draggable={false}
+        />
+        {revealed &&
+          q.spots.map((s) => {
+            const isCorrect = s.id === q.correctSpotId;
+            const isClicked = s.id === selected;
+            return (
+              <div
+                key={s.id}
+                className={`absolute border-2 ${
+                  isCorrect ? "border-success bg-success/20" : isClicked ? "border-destructive bg-destructive/20" : "border-transparent"
+                }`}
+                style={{
+                  left: `${s.x * 100}%`,
+                  top: `${s.y * 100}%`,
+                  width: `${s.w * 100}%`,
+                  height: `${s.h * 100}%`,
+                }}
+                title={s.label}
+              />
+            );
+          })}
       </div>
     </>
   );
@@ -297,13 +690,11 @@ function FillBlanksQuestionView({
   revealed: boolean;
   onChange: (next: number[]) => void;
 }) {
-  // Init array of -1 for each blank.
   const values: number[] =
     selected && selected.length === q.blanks.length
       ? selected
       : Array(q.blanks.length).fill(-1);
 
-  // Split template "Foo {{0}} bar {{1}} end" into alternating text/blank parts.
   const parts = useMemo(() => {
     const out: Array<{ kind: "text"; text: string } | { kind: "blank"; index: number }> = [];
     const re = /\{\{(\d+)\}\}/g;
@@ -361,37 +752,70 @@ function FillBlanksQuestionView({
           );
         })}
       </p>
-      {revealed && (
-        <ul className="mt-5 space-y-1.5 text-sm">
-          {q.blanks.map((b, i) => {
-            const ok = values[i] === b.correctIndex;
-            return (
-              <li key={i} className="flex items-start gap-2">
-                {ok ? (
-                  <CheckCircle2 className="mt-0.5 h-4 w-4 text-success" />
-                ) : (
-                  <XCircle className="mt-0.5 h-4 w-4 text-destructive" />
-                )}
-                <span className="text-muted-foreground">
-                  Blank {i + 1}:{" "}
-                  <span className="font-semibold text-foreground">
-                    {b.options[b.correctIndex]}
-                  </span>
-                  {!ok && values[i] >= 0 && (
-                    <>
-                      {" "}
-                      <span className="text-destructive">
-                        (you chose: {b.options[values[i]]})
-                      </span>
-                    </>
-                  )}
-                </span>
-              </li>
-            );
-          })}
-        </ul>
-      )}
+      {revealed && <BlankResults q={q} values={values} />}
     </>
+  );
+}
+
+function DragDropBlanksView({
+  q,
+  selected,
+  revealed,
+  onChange,
+}: {
+  q: DragDropBlanksQuestion;
+  selected: number[] | null;
+  revealed: boolean;
+  onChange: (next: number[]) => void;
+}) {
+  // For now, render the same dropdown UI as fill-blanks (drag-drop on touch is
+  // tricky); the data model is identical so swapping in true DnD later is safe.
+  return (
+    <FillBlanksQuestionView
+      q={{ ...q, type: "fill-blanks" } as FillBlanksQuestion}
+      selected={selected}
+      revealed={revealed}
+      onChange={onChange}
+    />
+  );
+}
+
+function BlankResults({
+  q,
+  values,
+}: {
+  q: { blanks: { options: string[]; correctIndex: number }[] };
+  values: number[];
+}) {
+  return (
+    <ul className="mt-5 space-y-1.5 text-sm">
+      {q.blanks.map((b, i) => {
+        const ok = values[i] === b.correctIndex;
+        return (
+          <li key={i} className="flex items-start gap-2">
+            {ok ? (
+              <CheckCircle2 className="mt-0.5 h-4 w-4 text-success" />
+            ) : (
+              <XCircle className="mt-0.5 h-4 w-4 text-destructive" />
+            )}
+            <span className="text-muted-foreground">
+              Blank {i + 1}:{" "}
+              <span className="font-semibold text-foreground">
+                {b.options[b.correctIndex]}
+              </span>
+              {!ok && values[i] >= 0 && (
+                <>
+                  {" "}
+                  <span className="text-destructive">
+                    (you chose: {b.options[values[i]]})
+                  </span>
+                </>
+              )}
+            </span>
+          </li>
+        );
+      })}
+    </ul>
   );
 }
 
@@ -451,30 +875,62 @@ function ModeSelect({ quiz, onSelect }: { quiz: Quiz; onSelect: (m: Mode) => voi
 }
 
 function describeQuestion(q: Question): string {
-  if (isFillBlanks(q)) {
-    // Render template with chosen-correct words inline.
+  if (isFillBlanks(q) || isDragDrop(q)) {
     return q.template.replace(/\{\{(\d+)\}\}/g, (_, n) => {
       const b = q.blanks[parseInt(n, 10)];
       return b ? `[${b.options[b.correctIndex]}]` : "___";
     });
   }
-  return q.question;
+  if (isHotSpot(q) || isImage(q) || isTrueFalse(q) || isMultiResponse(q) || isNumeric(q) || isMcq(q)) {
+    return q.question;
+  }
+  return "";
 }
 
 function answerSummary(q: Question, a: Answer): { correct: string; chosen?: string } {
-  if (isFillBlanks(q)) {
+  if (isFillBlanks(q) || isDragDrop(q)) {
     const correct = q.blanks.map((b) => b.options[b.correctIndex]).join(" / ");
     if (Array.isArray(a)) {
       const chosen = q.blanks
-        .map((b, i) => (a[i] >= 0 ? b.options[a[i]] : "—"))
+        .map((b, i) => ((a as number[])[i] >= 0 ? b.options[(a as number[])[i]] : "—"))
         .join(" / ");
       return { correct, chosen };
     }
     return { correct };
   }
-  const correct = q.options[q.correctAnswer];
-  if (typeof a === "number") return { correct, chosen: q.options[a] };
-  return { correct };
+  if (isMultiResponse(q)) {
+    const correct = q.correctAnswers.map((i) => q.options[i]).join(", ");
+    if (Array.isArray(a)) {
+      const chosen = (a as number[]).map((i) => q.options[i]).join(", ") || "—";
+      return { correct, chosen };
+    }
+    return { correct };
+  }
+  if (isTrueFalse(q)) {
+    const correct = q.correctAnswer ? "True" : "False";
+    if (typeof a === "number") return { correct, chosen: a === 1 ? "True" : "False" };
+    return { correct };
+  }
+  if (isNumeric(q)) {
+    const correct = `${q.correctAnswer}${q.unit ? ` ${q.unit}` : ""}`;
+    if (typeof a === "string" && a !== "") return { correct, chosen: a };
+    return { correct };
+  }
+  if (isHotSpot(q)) {
+    const c = q.spots.find((s) => s.id === q.correctSpotId);
+    const correct = c?.label ?? q.correctSpotId;
+    if (typeof a === "string") {
+      const chosen = q.spots.find((s) => s.id === a)?.label ?? (a === "__miss__" ? "Outside any region" : a);
+      return { correct, chosen };
+    }
+    return { correct };
+  }
+  if (isImage(q) || isMcq(q)) {
+    const correct = q.options[q.correctAnswer];
+    if (typeof a === "number") return { correct, chosen: q.options[a] };
+    return { correct };
+  }
+  return { correct: "" };
 }
 
 function Results({
@@ -511,9 +967,7 @@ function Results({
         <h2 className="mt-4 font-display text-3xl font-bold md:text-4xl">
           {passed ? "You passed!" : "Not quite there"}
         </h2>
-        <p className="mt-1 text-muted-foreground">
-          {quiz.quizTitle}
-        </p>
+        <p className="mt-1 text-muted-foreground">{quiz.quizTitle}</p>
         <div className="mt-6 grid gap-3 sm:grid-cols-3">
           <Stat label="Score" value={`${score} / ${quiz.questions.length}`} />
           <Stat label="Percentage" value={`${percent}%`} />
