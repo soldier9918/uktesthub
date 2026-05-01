@@ -7839,6 +7839,90 @@
       "explanation": "The 'Digital Signature' is a hidden code added to the video file to prove it has not been edited or tampered with, ensuring it is admissible in court.",
       "type": "true_false",
       "id": "sc-tf-0048"
+    },
+    {
+      "type": "true_false",
+      "question": "The Data Protection Act (DPA) only applies to CCTV systems that monitor public spaces and does not cover private property.",
+      "explanation": "The DPA applies to all CCTV systems that process personal data, regardless of whether they have a view of public or private land.",
+      "correctAnswer": false,
+      "id": "sc-tf-0049"
+    },
+    {
+      "explanation": "The Regulation of Investigatory Powers Act (RIPA) governs how public authorities use covert surveillance to ensure it is lawful and proportionate.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "question": "The RIPA 2000 act regulates the use of covert surveillance by public authorities.",
+      "id": "sc-tf-0050"
+    },
+    {
+      "question": "Thermal imaging cameras can detect people and objects in total darkness without the need for additional lighting.",
+      "type": "true_false",
+      "correctAnswer": true,
+      "explanation": "Thermal cameras detect heat signatures rather than light, allowing them to produce images in total darkness or through smoke.",
+      "id": "sc-tf-0051"
+    },
+    {
+      "type": "true_false",
+      "question": "Under the GDPR, a CCTV operator must always charge a standard fee of £50 to any individual making a Subject Access Request.",
+      "correctAnswer": false,
+      "explanation": "Subject Access Requests are usually free, though a 'reasonable fee' may be charged only if the request is manifestly unfounded or excessive.",
+      "id": "sc-tf-0052"
+    },
+    {
+      "explanation": "SIA licensed operators have a duty of care to cooperate with emergency services to protect life and property while maintaining professional standards.",
+      "correctAnswer": true,
+      "question": "A CCTV operator has a duty of care to assist the police and other emergency services during an active incident.",
+      "type": "true_false",
+      "id": "sc-tf-0053"
+    },
+    {
+      "question": "Technological 'profiling' based on an individual's ethnicity is a legally acceptable method for selecting targets to monitor.",
+      "type": "true_false",
+      "correctAnswer": false,
+      "explanation": "Using CCTV to follow individuals based on protected characteristics like race or gender is a breach of the Equality Act 2010.",
+      "id": "sc-tf-0054"
+    },
+    {
+      "question": "It is a standard operational procedure to carry out a 'functional check' of all equipment at the start of a shift.",
+      "type": "true_false",
+      "explanation": "Functional checks ensure that all cameras, recording equipment, and monitors are working correctly at the start of every shift.",
+      "correctAnswer": true,
+      "id": "sc-tf-0055"
+    },
+    {
+      "correctAnswer": false,
+      "explanation": "A Privacy Impact Assessment (PIA) helps identify and reduce privacy risks before a system is installed or significantly changed.",
+      "type": "true_false",
+      "question": "A 'Privacy Impact Assessment' is only required after a member of the public complains about a camera's location.",
+      "id": "sc-tf-0056"
+    },
+    {
+      "correctAnswer": true,
+      "explanation": "Digital zoom enlarges pixels from the existing image, which reduces the resolution and clarity compared to optical zoom.",
+      "type": "true_false",
+      "question": "Using 'Digital Zoom' on a recorded image often results in a loss of image quality and pixelation.",
+      "id": "sc-tf-0057"
+    },
+    {
+      "question": "Operators are encouraged to use their personal mobile phones to take photos of incidents as a backup to the main CCTV system.",
+      "type": "true_false",
+      "correctAnswer": false,
+      "explanation": "Security staff should not use personal mobile phones in the control room as it creates a distraction and poses a significant data security risk.",
+      "id": "sc-tf-0058"
+    },
+    {
+      "correctAnswer": true,
+      "explanation": "Control rooms must be secure environments with restricted access to prevent unauthorised people from viewing sensitive footage.",
+      "question": "Unauthorised personnel, including most employees of the same company, should generally be restricted from entering the CCTV control room.",
+      "type": "true_false",
+      "id": "sc-tf-0059"
+    },
+    {
+      "explanation": "The 20-minute rule is a guideline because an operator's ability to remain alert and spot 100% of activity decreases significantly after this time.",
+      "correctAnswer": false,
+      "question": "The '20-minute rule' suggests that an operator's concentration remains at peak levels for up to four hours of continuous monitoring.",
+      "type": "true_false",
+      "id": "sc-tf-0060"
     }
   ],
   "mocks": []
