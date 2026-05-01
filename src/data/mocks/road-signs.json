@@ -18530,6 +18530,186 @@
       "imageAlt": "A junction with a large yellow hatched box painted on the road surface.",
       "correctAnswer": 1,
       "id": "rs-im-0300"
+    },
+    {
+      "options": [
+        "No motor vehicles",
+        "No cars allowed",
+        "No motorcycles allowed",
+        "Route for motor vehicles only"
+      ],
+      "type": "image_question",
+      "imageDescription": "A standard UK regulatory sign (Prohibitory) – a red circle with a white background containing a black silhouette of a car above a motorcycle.",
+      "correctAnswer": 0,
+      "question": "What does this prohibitory sign indicate?",
+      "explanation": "The red ring indicates a prohibition, and the car over the motorcycle means it is closed to all motor vehicles except solo motorcycles.",
+      "imageAlt": "A circular sign with a red border and a white background, featuring a car above a motorcycle.",
+      "id": "rs-im-0301"
+    },
+    {
+      "imageDescription": "A standard UK information sign – a blue rectangle containing a white T-shape with a red horizontal bar at the top, indicating a no-through road.",
+      "type": "image_question",
+      "options": [
+        "No entry for heavy vehicles",
+        "Warning of a T-junction ahead",
+        "No through road",
+        "Give way to oncoming traffic"
+      ],
+      "imageAlt": "A blue rectangular sign with a white T-shape, where the top bar of the T is red.",
+      "explanation": "The T-shape with a red top indicates that the road is a dead end and does not lead through to another road.",
+      "question": "What is the meaning of this information sign?",
+      "correctAnswer": 2,
+      "id": "rs-im-0302"
+    },
+    {
+      "imageDescription": "A UK warning sign – a red-bordered triangle with a black symbol showing two vertical lines that pinch inwards at the top.",
+      "type": "image_question",
+      "options": [
+        "Dual carriageway ends",
+        "Road narrows on both sides",
+        "Single file traffic only",
+        "Narrow bridge ahead"
+      ],
+      "imageAlt": "A triangular sign with a red border containing a black symbol of two lines narrowing at the top.",
+      "explanation": "This warning sign alerts drivers that the road ahead narrows on both sides, requiring caution and a possible reduction in speed.",
+      "question": "What does this warning sign alert you to?",
+      "correctAnswer": 1,
+      "id": "rs-im-0303"
+    },
+    {
+      "options": [
+        "Keep left",
+        "Turn left ahead",
+        "One-way street to the left",
+        "No right turn"
+      ],
+      "type": "image_question",
+      "imageDescription": "A UK mandatory sign – a blue circle with a thick white arrow pointing towards the bottom-left corner.",
+      "correctAnswer": 0,
+      "question": "What action must you take when you see this mandatory sign?",
+      "explanation": "The white arrow pointing to the bottom left on a blue circle means you must pass to the left of the obstacle or island.",
+      "imageAlt": "A blue circular sign with a white arrow pointing diagonally down to the left.",
+      "id": "rs-im-0304"
+    },
+    {
+      "imageDescription": "A UK clearway sign – a blue circle with a red border and a red cross (X) superimposed over it.",
+      "type": "image_question",
+      "options": [
+        "No parking",
+        "No entry",
+        "National speed limit applies快速",
+        "No stopping (Clearway)"
+      ],
+      "imageAlt": "A circular blue sign with a red border and a red cross (diagonal 'X') across it.",
+      "explanation": "A red cross (X) on a clearway sign means you must not stop at any time, even to pick up or set down passengers.",
+      "question": "What does this sign mean regarding stopping?",
+      "correctAnswer": 3,
+      "id": "rs-im-0305"
+    },
+    {
+      "imageAlt": "A blue circular sign split vertically by a white line, with a bicycle symbol on one side and two pedestrians on the other.",
+      "explanation": "This sign indicates that the lane or road is reserved for pedal cycles and pedestrians, which are segregated into their own halves.",
+      "question": "What does this blue mandatory sign signify?",
+      "correctAnswer": 2,
+      "imageDescription": "A UK mandatory sign – a blue circle divided by a vertical white line with a white bicycle symbol on the left and white figures of a parent and child on the right.",
+      "type": "image_question",
+      "options": [
+        "Pedestrians only",
+        "No cycling allowed",
+        "Segregated cycle and pedestrian route",
+        "Shared path for cyclists and pedestrians"
+      ],
+      "id": "rs-im-0306"
+    },
+    {
+      "correctAnswer": 1,
+      "question": "What does this warning sign tell you about the road ahead?",
+      "explanation": "This sign warns of a steep hill going down; the percentage represents the gradient of the slope.",
+      "imageAlt": "A triangular sign with a red border showing a black wedge shape sloping downwards from left to right with '10%' written on it.",
+      "options": [
+        "Steep hill upwards ahead",
+        "Steep hill downwards ahead",
+        "Slow down for 10 miles",
+        "Uneven road surface ahead"
+      ],
+      "type": "image_question",
+      "imageDescription": "A UK warning sign – a red triangle containing a black silhouette of a car on a 10% downward slope (wedge shape).",
+      "id": "rs-im-0307"
+    },
+    {
+      "question": "What is the significance of these road markings?",
+      "correctAnswer": 3,
+      "imageAlt": "White zig-zag lines painted on the road surface near a zebra crossing.",
+      "explanation": "Zig-zag markings at a pedestrian crossing mean you must not park or overtake in this area to keep the crossing clear and visible.",
+      "type": "image_question",
+      "options": [
+        "Overtaking allowed with caution快速",
+        "Parking permitted for loading only",
+        "Slow down for a speed hump",
+        "No parking or overtaking at any time"
+      ],
+      "imageDescription": "A top-down view of a UK road with white zig-zag markings approaching a zebra crossing.",
+      "id": "rs-im-0308"
+    },
+    {
+      "correctAnswer": 0,
+      "question": "What type of road are you on if the directional signs have this background colour?",
+      "explanation": "The green background on a directional sign identifies that you are travelling on a primary route.",
+      "imageAlt": "A large green rectangular sign with white text and a yellow route number.",
+      "options": [
+        "Primary route",
+        "Motorway route",
+        "Non-primary route",
+        "Local destination only快速"
+      ],
+      "type": "image_question",
+      "imageDescription": "A UK directional sign with a green background, white lettering, and yellow route numbers (e.g., A4).",
+      "id": "rs-im-0309"
+    },
+    {
+      "imageDescription": "A UK speed limit sign – a white circle with a single thick black diagonal stripe.",
+      "options": [
+        "End of restricted parking zone",
+        "National speed limit applies",
+        "End of 20 mph zone快速",
+        "No entry for motor vehicles"
+      ],
+      "type": "image_question",
+      "explanation": "A white circle with a black diagonal stripe indicates that the national speed limit applies for the type of vehicle you are driving.",
+      "imageAlt": "A circular white sign with a thick black diagonal stripe from the top right to bottom left.",
+      "correctAnswer": 1,
+      "question": "What does this sign indicate about the speed limit?",
+      "id": "rs-im-0310"
+    },
+    {
+      "explanation": "A sign with a red border and a bicycle symbol indicates that cycling is prohibited in this area.",
+      "imageAlt": "A circular sign with a red border and a white background, featuring a black silhouette of a bicycle in the centre.",
+      "correctAnswer": 2,
+      "question": "What restriction does this sign place on cyclists?",
+      "imageDescription": "A UK prohibitory sign – a red circle with a white background and a black bicycle symbol.",
+      "options": [
+        "Cyclists only",
+        "Cycle route ahead",
+        "No cycling allowed",
+        "Watch out for cyclists"
+      ],
+      "type": "image_question",
+      "id": "rs-im-0311"
+    },
+    {
+      "type": "image_question",
+      "options": [
+        "Risk of ice",
+        "Caution: Low temperatures",
+        "Gritting lorries ahead",
+        "Slippery road when wet快速"
+      ],
+      "imageDescription": "A UK warning sign – a red triangle featuring a black six-pointed snowflake symbol in the centre.",
+      "question": "What hazard does this warning sign represent?",
+      "correctAnswer": 0,
+      "imageAlt": "A triangular sign with a red border containing a black snowflake-like symbol.",
+      "explanation": "This symbol warns drivers that there is a risk of ice or packed snow on the road surface ahead during cold weather.",
+      "id": "rs-im-0312"
     }
   ],
   "mocks": []

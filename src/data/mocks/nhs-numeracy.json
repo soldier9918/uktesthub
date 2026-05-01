@@ -4876,6 +4876,114 @@
       "explanation": "Calculate 4% of 300: (4 / 100) x 300 = 12.",
       "question": "Out of 300 patients screened, 4% required a follow-up appointment. How many patients required a follow-up?",
       "id": "nn-ne-0072"
+    },
+    {
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "explanation": "Divide the total volume (250ml) by the time in hours (20) to find the rate per hour.",
+      "unit": "ml/hr",
+      "correctAnswer": 12.5,
+      "question": "A patient is to receive 250ml of a nutritional supplement via a feeding pump over 20 hours. What is the rate in ml per hour?",
+      "id": "nn-ne-0073"
+    },
+    {
+      "explanation": "There are 1,000 micrograms in 1 milligram. Divide 450 by 1,000 to convert to mg.",
+      "unit": "mg",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "question": "A patient is prescribed 450 micrograms of a medication. What is this dose in milligrams (mg)?",
+      "correctAnswer": 0.45,
+      "id": "nn-ne-0074"
+    },
+    {
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "unit": "mg",
+      "explanation": "Multiply the weight (10.8kg) by the dosage (3mg/kg) to get the total dose.",
+      "correctAnswer": 32.4,
+      "question": "A child weighing 10.8kg is prescribed a medication with a dosage of 3mg per kg. What is the total dose required in mg?",
+      "id": "nn-ne-0075"
+    },
+    {
+      "correctAnswer": 13.2,
+      "question": "A box of antiseptic wipes costs £16.50. If the hospital gets a 20% discount, what is the new price of the box?",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "unit": "£",
+      "explanation": "Calculate 20% of £16.50 (£3.30) and subtract it from the original price.",
+      "id": "nn-ne-0076"
+    },
+    {
+      "correctAnswer": 11.15,
+      "question": "A minor procedure begins at 08:35 and lasts for 2 hours and 40 minutes. Using the 24-hour clock, what time does the procedure finish?",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "explanation": "Adding 2 hours and 40 minutes to 08:35 results in 11:15 using the 24-hour clock.",
+      "unit": "HH:MM",
+      "id": "nn-ne-0077"
+    },
+    {
+      "question": "A patient's intake chart shows they drank 350ml of water, 220ml of tea, and 0.75 litres of juice. What is the total intake in litres?",
+      "correctAnswer": 1.32,
+      "unit": "litres",
+      "explanation": "Convert all volumes to litres (0.35 + 0.22 + 0.75) to find the total intake.",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "id": "nn-ne-0078"
+    },
+    {
+      "correctAnswer": 8.5,
+      "question": "A patient is prescribed 170mg of a liquid medication. The strength available is 20mg per 1ml. How many ml should be administered?",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "unit": "ml",
+      "explanation": "Divide the required dose (170mg) by the concentration (20mg/ml) to find the volume.",
+      "id": "nn-ne-0079"
+    },
+    {
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "unit": "patients",
+      "explanation": "Calculate 7% of 300 (0.07 x 300) to find the number of patients.",
+      "correctAnswer": 21,
+      "question": "In a local clinic, 7% of 300 patients missed their appointments last month. How many patients missed their appointments?",
+      "id": "nn-ne-0080"
+    },
+    {
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "explanation": "Subtract the weight of the bag (350g = 0.35kg) from the total weight (52.85kg).",
+      "unit": "kg",
+      "correctAnswer": 52.5,
+      "question": "A laundry bag containing used linens weighs 52.85kg. If the empty bag weighs 350g, what is the weight of the linens alone in kilograms?",
+      "id": "nn-ne-0081"
+    },
+    {
+      "correctAnswer": 126,
+      "question": "A patient is prescribed 2 tablets three times a day for 21 days. How many tablets are needed in total for the full course?",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "unit": "tablets",
+      "explanation": "Multiply the daily dose (2 tablets x 3 times = 6) by the number of days (21).",
+      "id": "nn-ne-0082"
+    },
+    {
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "unit": "staff",
+      "explanation": "The ratio 2:3 has 5 parts. 35 divided by 5 is 7. Two parts of 7 equals 14.",
+      "correctAnswer": 14,
+      "question": "A ward has a total of 35 staff. The ratio of male to female staff is 2:3. How many male staff members work on the ward?",
+      "id": "nn-ne-0083"
+    },
+    {
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "explanation": "Divide the total volume (1,350ml) by the rate (75ml/hr) to find the duration in hours.",
+      "unit": "hours",
+      "correctAnswer": 18,
+      "question": "A 1,350ml bag of IV fluid is infusing at a rate of 75ml per hour. How many hours will the infusion take to complete?",
+      "id": "nn-ne-0084"
     }
   ],
   "mocks": []
