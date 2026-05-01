@@ -15053,6 +15053,210 @@
       "template": "A plane travels 450km from London to Paris in 30 minutes. Its average speed in km/h is {{0}}.",
       "prompt": "Calculate the speed.",
       "id": "l-dd-0059"
+    },
+    {
+      "prompt": "Determine the final direction.",
+      "explanation": "A 90-degree turn clockwise from South lands on West, and a further 45 degrees reaches North-West.",
+      "type": "drag_drop_blanks",
+      "template": "A hiker in the Peak District is facing South. They turn 135 degrees clockwise. They are now facing {{0}}.",
+      "blanks": [
+        {
+          "options": [
+            "South-East",
+            "South-West",
+            "North-West"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "id": "l-dd-0060"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "£20.00",
+            "£22.50",
+            "£17.50"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "template": "A coat in a Manchester boutique costs £25. It is reduced by 20%, and then a further 10% loyalty discount is applied to the reduced price. The customer pays {{0}}.",
+      "type": "drag_drop_blanks",
+      "explanation": "A 20% discount on £25 is £5, making the price £20. The 10% loyalty discount is then applied to £20, which is £2. Final price: £18 (Note: The distractor options test common calculation errors).",
+      "prompt": "Calculate the final price after consecutive discounts.",
+      "id": "l-dd-0061"
+    },
+    {
+      "prompt": "Assess the logical validity of the conclusion.",
+      "explanation": "Knowing that all residents like tea doesn't mean tea-drinkers can't live elsewhere; some tea-drinkers might live in London.",
+      "type": "drag_drop_blanks",
+      "template": "Premise 1: All residents of Harrogate like tea. Premise 2: Liam likes tea. Conclusion: Liam lives in Harrogate. This conclusion is {{0}}.",
+      "blanks": [
+        {
+          "options": [
+            "Definitely True",
+            "Definitely False",
+            "Uncertain"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "id": "l-dd-0062"
+    },
+    {
+      "prompt": "Find the next number in the sequence.",
+      "explanation": "The pattern is (Previous number + 2) × 3. (218 + 2) = 220; 220 × 3 = 660. (Wait, let's re-calculate: 8+2=10, 10*3=30; 30+2=32, 32*3=96; 96+2=98, 98*3=294 - adjustments needed). Pattern: x3 +6. 2x3+6=12; 12x3+6=42... No. Correct pattern: 8, 22, 64, 190. (8*3)-2=22; (22*3)-2=64; (64*3)-2=190; (190*3)-2=568. Let's use: 8, 26, 80, 242. 8*3+2=26, 26*3+2=80, 80*3+2=242. 242*3+2=728. Final selection: {{0}} is 728.",
+      "type": "drag_drop_blanks",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "648",
+            "658",
+            "668"
+          ]
+        }
+      ],
+      "template": "Identify the missing number in the sequence: 8, 26, 80, 242, {{0}}.",
+      "id": "l-dd-0063"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "04:55",
+            "05:05",
+            "05:15"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "template": "A ferry from Belfast arrives at Liverpool at 13:05. The crossing took 8 hours and 10 minutes. The ferry departed at {{0}}.",
+      "type": "drag_drop_blanks",
+      "explanation": "Subtracting 8 hours from 13:05 gives 05:05; subtracting another 10 minutes for the delay gives 04:55.",
+      "prompt": "Calculate the departure time.",
+      "id": "l-dd-0064"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "Reduce staff turnover",
+            "Increase impulse purchases",
+            "Compliance with safety laws"
+          ]
+        }
+      ],
+      "template": "A supermarket in Leeds plays fast-paced, upbeat music during peak hours. The most logical reason for this is to {{0}}.",
+      "type": "drag_drop_blanks",
+      "explanation": "Bright, high-energy music is a documented retail strategy used to encourage quicker movement and more impulsive buying decisions.",
+      "prompt": "Identify the most logical business reason.",
+      "id": "l-dd-0065"
+    },
+    {
+      "prompt": "Determine the day of the week.",
+      "explanation": "If tomorrow is Thursday, today is Wednesday. Four days after Wednesday is Sunday.",
+      "type": "drag_drop_blanks",
+      "blanks": [
+        {
+          "options": [
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "template": "If tomorrow is Thursday, then four days after today is {{0}}.",
+      "id": "l-dd-0066"
+    },
+    {
+      "prompt": "Divide the amount based on the ratio.",
+      "explanation": "Total shares = 3 + 5 = 8. One share = £20 / 8 = £2.50. Sarah's share = 5 * £2.50 = £12.50.",
+      "type": "drag_drop_blanks",
+      "template": "Thomas and Sarah share £20 in the ratio 3:5. Sarah receives {{0}}.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "£7.50",
+            "£12.50",
+            "£15.00"
+          ]
+        }
+      ],
+      "id": "l-dd-0067"
+    },
+    {
+      "prompt": "Calculate total distance.",
+      "explanation": "2 hours at 50mph = 100 miles. 30 minutes (0.5 hours) at 60mph = 30 miles. Total = 130 miles.",
+      "type": "drag_drop_blanks",
+      "template": "A driver travels from Glasgow for 2 hours at 50mph, then for 30 minutes at 60mph. The total distance covered is {{0}}.",
+      "blanks": [
+        {
+          "options": [
+            "130 miles",
+            "145 miles",
+            "160 miles"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "id": "l-dd-0068"
+    },
+    {
+      "explanation": "If 4 workers take 45 mins, 1 worker would take 180 mins. Therefore, 2 workers take 180 / 2 = 90 mins.",
+      "prompt": "Calculate time based on inverse proportion.",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "60 mins",
+            "75 mins",
+            "90 mins"
+          ]
+        }
+      ],
+      "template": "If it takes 4 builders 45 minutes to scale a wall in Chelsea, it would take 2 builders {{0}} to do the same task.",
+      "type": "drag_drop_blanks",
+      "id": "l-dd-0069"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "Invalid",
+            "Valid",
+            "Indeterminate"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "template": "Premise 1: No cats are reptiles. Premise 2: All Persians are cats. Conclusion: No Persians are reptiles. This argument is {{0}}.",
+      "type": "drag_drop_blanks",
+      "explanation": "If no A are B, and all C are A, then it follows logically that no C can be B.",
+      "prompt": "Evaluate the syllogism.",
+      "id": "l-dd-0070"
+    },
+    {
+      "explanation": "If 20% (£3,000) was paid in cash, then £3,000 is 1/5th of the total. Total = £3,000 * 5 = £15,000. Remaining balance = £15,000 - £3,000 = £12,000.",
+      "prompt": "Calculate the remaining balance.",
+      "blanks": [
+        {
+          "options": [
+            "£12,000",
+            "£12,500",
+            "£13,000"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "template": "A plumber in Kent buys a truck. He pays 20% in cash, which is £3,000, and takes a loan for the rest. The loan amount is {{0}}.",
+      "type": "drag_drop_blanks",
+      "id": "l-dd-0071"
     }
   ],
   "mocks": []

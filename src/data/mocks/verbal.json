@@ -15527,6 +15527,210 @@
         }
       ],
       "id": "v-db-0084"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "obsolete",
+            "essential",
+            "popular",
+            "identical"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "template": "With the rise of high-definition streaming, many found their collections of old video cassettes had become {{0}}.",
+      "type": "dropdown_blanks",
+      "explanation": "The context of modern technology and high-definition streaming suggests that older, lower-quality formats are no longer useful or used.",
+      "id": "v-db-0085"
+    },
+    {
+      "explanation": "'Exacerbate' means to make a problem or bad situation worse, which fits the context of adding more errors to a report.",
+      "template": "Adding further unverified statistics to the report will only {{0}} the existing confusion among the board members.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "exaggerate",
+            "rectify",
+            "exacerbate",
+            "ignore"
+          ]
+        }
+      ],
+      "id": "v-db-0086"
+    },
+    {
+      "explanation": "The word 'must' indicates that the training is a requirement, making it mandatory for all employees.",
+      "type": "dropdown_blanks",
+      "template": "The human resources department announced that the new diversity training is {{0}} for all staff, and everyone must complete it by Friday.",
+      "blanks": [
+        {
+          "options": [
+            "mandatory",
+            "optional",
+            "forbidden",
+            "sporadic"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "id": "v-db-0087"
+    },
+    {
+      "type": "dropdown_blanks",
+      "template": "The satellite signal was {{0}}, appearing for only a few seconds at a time before disappearing for hours.",
+      "explanation": "'Sporadic' means occurring at irregular intervals or only in a few places, which explains why the signal is hard to track.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "meticulous",
+            "sporadic",
+            "negligent",
+            "rapid"
+          ]
+        }
+      ],
+      "id": "v-db-0088"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 3,
+          "options": [
+            "disregarded",
+            "celebrated",
+            "replaced",
+            "curtailed"
+          ]
+        }
+      ],
+      "type": "dropdown_blanks",
+      "template": "To address the budget deficit, the local council decided to {{0}} funding for non-essential community projects.",
+      "explanation": "'Curtailed' means to reduce in extent or quantity, fitting the context of cutting costs during a budget deficit.",
+      "id": "v-db-0089"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "corroborate",
+            "contradict",
+            "undermine",
+            "question"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "template": "The forensic evidence helped to {{0}} the suspect’s claim that he was not at the scene of the crime.",
+      "type": "dropdown_blanks",
+      "explanation": "'Corroborate' means to confirm or give support to a statement, which matches the idea of providing evidence that agrees with a claim.",
+      "id": "v-db-0090"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "hostile",
+            "detrimental",
+            "conducive",
+            "irrelevant"
+          ]
+        }
+      ],
+      "type": "dropdown_blanks",
+      "template": "The new office layout was designed to be {{0}} to collaborative work and creative thinking.",
+      "explanation": "'Conducive' means making a certain situation or outcome likely or possible, which fits a well-lit room helping with productivity.",
+      "id": "v-db-0091"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "reconcile",
+            "scrutinise",
+            "neglect",
+            "discard"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "template": "The safety inspector arrived early to {{0}} the equipment for any signs of wear and tear that might cause an accident.",
+      "type": "dropdown_blanks",
+      "explanation": "'Scrutinise' means to examine or inspect closely and thoroughly, which is the role of a safety inspector.",
+      "id": "v-db-0092"
+    },
+    {
+      "explanation": "'Integral' means necessary to make a whole complete; if the project would fail without his input, the input is essential.",
+      "template": "The lead engineer’s contribution was {{0}} to the project’s success; without his expertise, the bridge would never have been finished.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "integral",
+            "peripheral",
+            "redundant",
+            "optional"
+          ]
+        }
+      ],
+      "id": "v-db-0093"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 3,
+          "options": [
+            "exaggerate",
+            "separate",
+            "disturb",
+            "reconcile"
+          ]
+        }
+      ],
+      "explanation": "'Reconcile' means to find a way in which two opposing ideas or situations can agree or co-exist.",
+      "type": "dropdown_blanks",
+      "template": "It can be difficult for young professionals to {{0}} their desire for career progression with the need for a healthy work-life balance.",
+      "id": "v-db-0094"
+    },
+    {
+      "template": "The reigning chess champion proved to be a {{0}} opponent, defeating the challenger in record time.",
+      "type": "dropdown_blanks",
+      "explanation": "'Formidable' describes something that inspires fear or respect through being impressively large, powerful, or intense.",
+      "blanks": [
+        {
+          "options": [
+            "vague",
+            "lengthy",
+            "formidable",
+            "tedious"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "id": "v-db-0095"
+    },
+    {
+      "explanation": "'Fortuitous' means happening by a lucky chance, which fits the context of an unplanned but positive meeting.",
+      "template": "It was entirely {{0}} that the two long-lost friends ended up sitting next to each other on the flight to London.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "intentional",
+            "fortuitous",
+            "disastrous",
+            "unlikely"
+          ]
+        }
+      ],
+      "id": "v-db-0096"
     }
   ],
   "mocks": []
