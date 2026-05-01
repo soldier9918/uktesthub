@@ -103,6 +103,7 @@ def main() -> None:
         df.columns[6]: "poolSize",
     })
 
+    known_titles = load_known_titles()
     out: dict[str, dict] = {}
     for _, row in df.iterrows():
         cat = row.get("category")
@@ -122,6 +123,7 @@ def main() -> None:
         out[topic_slug] = {
             "category": CATEGORY_SLUGS.get(cat.strip(), cat.strip().lower().replace(" ", "-")),
             "categoryLabel": cat.strip(),
+            "title": known_titles.get(topic_slug) or humanise_slug(topic_slug),
             "weights": weights,
             "totalMocks": int(row.get("totalMocks", 45) or 45),
             "questionsPerMock": int((row.get("totalQs", 1080) or 1080) // (row.get("totalMocks", 45) or 45)),
