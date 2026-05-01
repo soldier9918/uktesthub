@@ -6873,7 +6873,2674 @@
       "question": "What device is shown, used specifically to record footage from multiple analogue cameras?",
       "explanation": "A Digital Video Recorder (DVR) is used to convert and store footage from older analogue cameras onto a digital hard drive.",
       "id": "sc-im-0120"
+    },
+    {
+      "question": "Under the Health and Safety at Work Act, what does this specific sign indicate in a secure area?",
+      "type": "image_question",
+      "imageDescription": "A standard UK health and safety prohibition sign showing a camera with a red circle and a diagonal line across it.",
+      "options": [
+        "Mandatory action",
+        "Safety warning",
+        "Prohibited action",
+        "Safe condition"
+      ],
+      "explanation": "Red circular signs with a diagonal cross or line indicate prohibited actions under UK Health and Safety regulations.",
+      "imageAlt": "A red circular sign with a white background and a red diagonal line through a camera icon.",
+      "correctAnswer": 2,
+      "id": "sc-im-0121"
+    },
+    {
+      "options": [
+        "Security Industry Authority (SIA)",
+        "Home Office Surveillance Commission",
+        "Police Licensing Department (PLD)",
+        "Information Commissioner’s Office (ICO)"
+      ],
+      "question": "Which regulatory body issues the licence shown in this image for CCTV operators in the UK?",
+      "type": "image_question",
+      "imageDescription": "A mock-up of an SIA front-line CCTV licence showing the Security Industry Authority logo, hologram, and license holder details.",
+      "explanation": "The SIA logo on a licence indicates that the individual has been vetted and is authorised to work in the private security industry.",
+      "imageAlt": "A standard SIA CCTV Operator licence card including a hologram.",
+      "correctAnswer": 0,
+      "id": "sc-im-0122"
+    },
+    {
+      "explanation": "A 'Bullet' camera is named for its cylindrical shape and is commonly used for fixed-view observation in outdoor environments.",
+      "imageAlt": "A white cylindrical camera mounted on a wall bracket.",
+      "correctAnswer": 1,
+      "options": [
+        "Dome camera",
+        "Bullet camera",
+        "PTZ camera",
+        "360-degree camera"
+      ],
+      "question": "What is the industry term for the specific style of camera housing shown in this image?",
+      "type": "image_question",
+      "imageDescription": "A professional-grade white cylindrical 'bullet' style security camera fixed to a grey background wall.",
+      "id": "sc-im-0123"
+    },
+    {
+      "explanation": "Green rectangular signs indicate safe conditions, such as the location of first aid equipment or emergency exits.",
+      "imageAlt": "A green rectangular sign with a white cross.",
+      "correctAnswer": 3,
+      "options": [
+        "Warning of danger",
+        "Prohibited area",
+        "Fire equipment location striping",
+        "Safe condition / First aid point"
+      ],
+      "question": "In a control room environment, what is the meaning of this category of safety sign?",
+      "type": "image_question",
+      "imageDescription": "A standard green and white 'First Aid' sign used in UK workplaces.",
+      "id": "sc-im-0124"
+    },
+    {
+      "imageAlt": "A blue network cable with a plastic RJ45 connector.",
+      "correctAnswer": 1,
+      "explanation": "An Ethernet (RJ45) cable is used to transmit digital data and power between an IP camera and a network switch.",
+      "question": "Which type of cable, commonly used for modern IP CCTV systems, is shown in this image?",
+      "type": "image_question",
+      "imageDescription": "A close-up of a blue Ethernet Cat5e/6 cable with a standard RJ45 connector, used for IP CCTV networking.",
+      "options": [
+        "Coaxial cable (BNC)",
+        "Network cable (RJ45)",
+        "HDMI video cable",
+        "Fibre optic connector"
+      ],
+      "id": "sc-im-0125"
+    },
+    {
+      "explanation": "Standard workstation ergonomics require the top of the monitor to be at or slightly below eye level to prevent neck strain.",
+      "imageAlt": "A diagram showing an operator sitting at a desk with a monitor.",
+      "correctAnswer": 2,
+      "question": "According to Display Screen Equipment (DSE) regulations, what is the correct height for the monitor shown in this diagram?",
+      "type": "image_question",
+      "imageDescription": "An ergonomic diagram side view of a person sitting at a computer desk, showing the recommended height for the screen relative to their eyes.",
+      "options": [
+        "Above the head level",
+        "Resting on the desk surface",
+        "At or slightly below eye level",
+        "Tilted upwards at 45 degrees"
+      ],
+      "id": "sc-im-0126"
+    },
+    {
+      "options": [
+        "To reduce neck strain and eye fatigue",
+        "To make the room look more professional",
+        "To allow more people to stand behind the operator",
+        "To increase the heat generated by the screens"
+      ],
+      "imageDescription": "An image of a CCTV control room console with six monitors arranged in a curved configuration.",
+      "question": "Why are monitors in a CCTV control room often arranged in the 'arc' configuration shown here?",
+      "type": "image_question",
+      "imageAlt": "A row of several monitors arranged in a semi-circle.",
+      "correctAnswer": 0,
+      "explanation": "Monitors in a control room should be arranged in a 'monitor wall' or arc to allow the operator to see all screens without excessive head movement.",
+      "id": "sc-im-0127"
+    },
+    {
+      "explanation": "The ICO logo represents the body responsible for enforcing the Data Protection Act and UK GDPR regarding CCTV usage.",
+      "imageAlt": "The logo of the Information Commissioner's Office.",
+      "correctAnswer": 2,
+      "question": "Which organization, represented by this logo, identifies the standards for handling personal data?",
+      "type": "image_question",
+      "imageDescription": "The official logo for the Information Commissioner's Office (ICO), which includes the text 'ico.' in a specific blue font.",
+      "options": [
+        "The SIA National Helpline",
+        "The Health and Safety Executive (HSE) England",
+        "The Information Commissioner’s Office (ICO)",
+        "The British Standards Institution (BSI)"
+      ],
+      "id": "sc-im-0128"
+    },
+    {
+      "imageAlt": "A clear plastic bag with a red 'VOID' seal tape at the top.",
+      "correctAnswer": 1,
+      "explanation": "TAMPER evident bags are used to maintain the chain of evidence by showing if any unauthorised person has tried to open the bag.",
+      "question": "What is the primary purpose of the specialized storage item shown in this image?",
+      "type": "image_question",
+      "imageDescription": "A transparent evidence bag used by security personnel, showing a secure tamper-evident seal that displays 'VOID' if opened.",
+      "options": [
+        "General waste disposal bag",
+        "Tamper-evident evidence bag",
+        "Personal property storage pouch",
+        "Recycling bag for old disks"
+      ],
+      "id": "sc-im-0129"
+    },
+    {
+      "imageAlt": "A black box with several UK power outlets and a power button.",
+      "correctAnswer": 0,
+      "explanation": "A UPS provides emergency power to the CCTV system during a mains failure to ensure continuous recording.",
+      "imageDescription": "A black Uninterruptible Power Supply (UPS) unit showing status lights and power sockets on the rear.",
+      "question": "What is the name of this device used to keep a CCTV system running during a power cut?",
+      "type": "image_question",
+      "options": [
+        "Uninterruptible Power Supply (UPS)",
+        "Digital Video Recorder (DVR)",
+        "Network Router",
+        "Voltage Transformer"
+      ],
+      "id": "sc-im-0130"
+    },
+    {
+      "explanation": "COSHH signs warn of hazardous substances. CCTV operators may see these on cleaning chemicals or server room fire suppressants.",
+      "imageAlt": "A diamond-shaped sign with a red border showing a black flame symbol.",
+      "correctAnswer": 3,
+      "question": "What does this symbol, often found on cleaning supplies or in maintenance areas, represent?",
+      "type": "image_question",
+      "imageDescription": "A red-bordered white diamond sign featuring a black flame icon, used for flammable substances under COSHH.",
+      "options": [
+        "General danger warning",
+        "Mandatory fire drill area",
+        "Safe to use near electricity",
+        "Presence of flammable substances (COSHH)"
+      ],
+      "id": "sc-im-0131"
+    },
+    {
+      "question": "An operator sees this reflection on their screen. What is the most likely cause of this ergonomic issue?",
+      "type": "image_question",
+      "imageDescription": "A CCTV monitor displaying a camera feed, but with a significant white glare reflecting off the glass from an unseen window.",
+      "options": [
+        "A faulty camera sensor",
+        "Dust on the camera lens",
+        "Poor monitor positioning causing glare",
+        "Low light levels in the area being viewed"
+      ],
+      "explanation": "Monitors should be positioned to avoid glare from windows or overhead lighting to prevent eye strain and maintain clarity of the footage.",
+      "imageAlt": "A monitor screen with a bright white reflection obscuring the image.",
+      "correctAnswer": 2,
+      "id": "sc-im-0132"
+    },
+    {
+      "options": [
+        "Motion sensors",
+        "Microphones",
+        "Infrared (IR) LEDs",
+        "Status indicator lights"
+      ],
+      "imageAlt": "A close-up of a CCTV camera lens surrounded by small circular bulbs.",
+      "question": "What is the purpose of the ring of small bulbs surrounding the lens on this camera?",
+      "imageDescription": "A close-up photograph of a fixed security camera lens. Surrounding the glass lens is a ring of small, circular LEDs that glow faintly red or are clear.",
+      "explanation": "Infrared (IR) LEDs provide invisible light that allows the camera to capture clear monochrome footage in total darkness.",
+      "type": "image_question",
+      "correctAnswer": 2,
+      "id": "sc-im-0133"
+    },
+    {
+      "options": [
+        "Data Protection Act 2018",
+        "Private Security Industry Act 2001",
+        "Human Rights Act 1998s",
+        "Health and Safety at Work Act 1974"
+      ],
+      "imageAlt": "A yellow sign with a black camera icon and text.",
+      "imageDescription": "A standard UK yellow CCTV warning sign. It features a black icon of a camera and space below for the name of the scheme operator and a contact number.",
+      "question": "The presence of this sign is a legal requirement under which piece of legislation?",
+      "explanation": "The Data Protection Act 2018 (incorporating GDPR) requires clear signage to inform the public that CCTV is in operation.",
+      "type": "image_question",
+      "correctAnswer": 0,
+      "id": "sc-im-0134"
+    },
+    {
+      "options": [
+        "Fixed lens",
+        "Varifocal lenss",
+        "Pinhole lens",
+        "Wide-angle lens"
+      ],
+      "imageAlt": "A camera lens with two protruding adjustment pins labeled 'Tele/Wide' and 'Near/Far'.",
+      "question": "What type of CCTV lens is shown in this image, which allows for manual adjustment of the zoom and focus?",
+      "imageDescription": "A side profile of a CCTV camera lens removed from the body. It has two small metal pins used for manual adjustment, labeled with 'T/W' for Zoom and 'N/F' for Focus.",
+      "explanation": "Varifocal lenses allow the operator or installer to manually adjust the field of view and focus to suit the specific area being monitored.",
+      "type": "image_question",
+      "correctAnswer": 1,
+      "id": "sc-im-0135"
+    },
+    {
+      "explanation": "The BNC (Bayonet Neill-Concelman) connector is the standard physical interface used for connecting analogue coaxial cables to cameras and recorders.",
+      "question": "What is the name of this specific connector, commonly used to connect analogue cameras to a DVR?",
+      "imageDescription": "A high-resolution photo of a BNC connector at the end of a RG59 coaxial cable. The connector has a rotating locking ring.",
+      "imageAlt": "A silver metal connector at the end of a thick black cable.",
+      "options": [
+        "RJ45 connector",
+        "HDMI connector",
+        "USB connector",
+        "BNC connector"
+      ],
+      "correctAnswer": 3,
+      "type": "image_question",
+      "id": "sc-im-0136"
+    },
+    {
+      "question": "According to DSE regulations, what is the recommended height for the monitor relative to the operator's eyes?",
+      "imageDescription": "A technical drawing of a CCTV operator sitting in an ergonomic chair. A dashed line shows the horizontal line of sight from the operator's eyes to the top of the screen.",
+      "explanation": "To prevent neck strain and musculoskeletal issues, the top of the monitor should be at or slightly below the operator's eye level.",
+      "options": [
+        "Above eye level",
+        "At chest height",
+        "At or slightly below eye level",
+        "As high as possible to allow for standing"
+      ],
+      "imageAlt": "A side view diagram of a person sitting at a desk with a monitor.",
+      "correctAnswer": 2,
+      "type": "image_question",
+      "id": "sc-im-0137"
+    },
+    {
+      "correctAnswer": 0,
+      "type": "image_question",
+      "explanation": "The 'Pan, Tilt, and Zoom' (PTZ) camera is designed to be moved remotely by an operator to track subjects or investigate incidents.",
+      "imageDescription": "A large white speed-dome camera mounted on an external wall bracket. It has a glass lower half and is capable of rotating 360 degrees.",
+      "question": "What type of camera is shown, designed to be actively controlled by an operator in a control room?",
+      "imageAlt": "A white dome-shaped camera hanging from a wall bracket.",
+      "options": [
+        "PTZ (Pan, Tilt, Zoom) camera",
+        "Fixed bullet camera",
+        "Covert pinhole cameras",
+        "Thermal imaging camera"
+      ],
+      "id": "sc-im-0138"
+    },
+    {
+      "imageDescription": "A document template used in a CCTV control room. The header reads 'Subject Access Request Form' and includes sections for the date, time, and location of the recorded event.",
+      "question": "What is the name of the process an individual follows when submitting this form to view footage of themselves?",
+      "explanation": "A Subject Access Request (SAR) allows an individual to request a copy of personal data (including CCTV footage) held about them.",
+      "options": [
+        "Freedom of Information Request",
+        "Subject Access Request",
+        "Police Disclosure Form",
+        "Incident Report Log"
+      ],
+      "imageAlt": "A paper form titled 'Application for Access to Personal Data'.",
+      "correctAnswer": 1,
+      "type": "image_question",
+      "id": "sc-im-0139"
+    },
+    {
+      "explanation": "A Video Matrix allows multiple camera inputs to be routed to various different monitors within a large control room.",
+      "imageDescription": "The rear view of a professional rack-mounted video matrix switcher. It has dozens of BNC ports arranged in rows and columns for input and output routing.",
+      "question": "In a large-scale control room, what is the primary function of the rack-mounted equipment shown here?",
+      "imageAlt": "A rack-mounted electronic device with many BNC inputs on the back.",
+      "options": [
+        "Uninterruptible Power Supply",
+        "Digital Video Recorder",
+        "Video Matrix Switcher",
+        "Network Switch"
+      ],
+      "correctAnswer": 2,
+      "type": "image_question",
+      "id": "sc-im-0140"
+    },
+    {
+      "explanation": "The Incident Log is a vital document used to record all significant events, observations, and actions taken by the operator during their shift.",
+      "imageDescription": "A close-up of a page in a CCTV operator's daily logbook. The columns are clearly marked for recording chronological events throughout a shift.",
+      "question": "What is the name of the document shown, used by operators to record evidence and daily activities?",
+      "imageAlt": "A logbook with columns for 'Time', 'Camera No.', and 'Details of Incident'.",
+      "options": [
+        "Visitor Register",
+        "Data Protection Audit",
+        "Maintenance Schedule",
+        "Incident Log"
+      ],
+      "correctAnswer": 3,
+      "type": "image_question",
+      "id": "sc-im-0141"
+    },
+    {
+      "explanation": "Fire exit signs must be green and rectangular (safe condition) to comply with health and safety regulations for emergency routes.",
+      "imageDescription": "A standard UK 'Running Man' fire exit sign. It is green with a white pictogram and an arrow pointing towards a doorway.",
+      "question": "In a control room environment, what category of safety sign is shown in this image?",
+      "imageAlt": "A green rectangular sign with a white figure running through a door.",
+      "options": [
+        "Warning sign",
+        "Safe condition sign",
+        "Mandatory sign",
+        "Prohibition sign"
+      ],
+      "correctAnswer": 1,
+      "type": "image_question",
+      "id": "sc-im-0142"
+    },
+    {
+      "options": [
+        "Private Security Industry Act 2001",
+        "Police and Criminal Evidence Act 1984",
+        "Criminal Justice Act 1994",
+        "Local Government Act 1972"
+      ],
+      "imageAlt": "A blue and white card with a photo and a 'Public Space Surveillance' title.",
+      "question": "The licence shown is issued under the authority of which legislation?",
+      "imageDescription": "The front of an SIA Public Space Surveillance (CCTV) licence. It features the SIA logo, the operator's photo, an expiry date, and a holographic security feature.",
+      "explanation": "Under the PSIA 2001, it is a criminal offence to work as a CCTV operator without a valid SIA licence clearly displayed.",
+      "type": "image_question",
+      "correctAnswer": 0,
+      "id": "sc-im-0143"
+    },
+    {
+      "correctAnswer": 3,
+      "type": "image_question",
+      "explanation": "IP (Internet Protocol) cameras use RJ45 connectors and Ethernet cables (Cat5e/Cat6) to transmit digital video data over a network.",
+      "imageDescription": "A close-up of an RJ45 modular plug at the end of a blue Ethernet cable, often used for connecting IP cameras to a network switch.",
+      "question": "What type of connector is shown, which is required for installing and connecting modern IP cameras?",
+      "imageAlt": "A clear plastic connector with eight small copper pins.",
+      "options": [
+        "Coaxial connector",
+        "F-Type connector",
+        "Fiber optic connector",
+        "RJ45 connector"
+      ],
+      "id": "sc-im-0144"
+    },
+    {
+      "type": "image_question",
+      "imageDescription": "The official logo of the Information Commissioner's Office (ICO), which includes the letters 'ico.' and the text 'Information Commissioner's Office'.",
+      "correctAnswer": 1,
+      "options": [
+        "SIA",
+        "ICO",
+        "Home Office",
+        "Police Scotland"
+      ],
+      "question": "An operator must follow the guidelines set by which organization, represented by this logo, regarding data protection?",
+      "imageAlt": "The logo of the Information Commissioner's Office.",
+      "explanation": "The Information Commissioner's Office (ICO) is the UK's independent body set up to uphold information rights.",
+      "id": "sc-im-0145"
+    },
+    {
+      "type": "image_question",
+      "correctAnswer": 0,
+      "imageDescription": "A screenshot of a CCTV monitor showing a public street. A solid black rectangular box has been digitally placed over a residential bedroom window to obscure it.",
+      "explanation": "A privacy mask is a feature used to block out specific areas (like private windows) from being viewed or recorded.",
+      "imageAlt": "A CCTV screen showing a street with a black box covering a house window.",
+      "question": "What feature is being used in this image to protect the privacy of local residents?",
+      "options": [
+        "Privacy masking",
+        "Digital zoom",
+        "Motion detection failure",
+        "Infrared interference"
+      ],
+      "id": "sc-im-0146"
+    },
+    {
+      "type": "image_question",
+      "imageDescription": "A classic cylinder-shaped 'bullet' CCTV camera with a small sunshield on top, mounted to an external brick wall with a bracket.",
+      "correctAnswer": 2,
+      "options": [
+        "PTZ camera",
+        "Dome camera",
+        "Fixed camera",
+        "Covert camera"
+      ],
+      "question": "What type of camera is shown in the image, typically used for fixed-angle perimeter monitoring?",
+      "imageAlt": "A bullet-style CCTV camera mounted on a wall.",
+      "explanation": "A fixed 'bullet' camera is designed to point in one permanent direction and is highly visible to act as a deterrent.",
+      "id": "sc-im-0147"
+    },
+    {
+      "imageDescription": "A standard blue informational sign featuring a white lowercase letter 'i' in the centre.",
+      "correctAnswer": 0,
+      "type": "image_question",
+      "imageAlt": "A blue square sign with a white lowercase letter i.",
+      "explanation": "The 'i' symbol indicates a source of information, such as a help desk or an information point in a public space.",
+      "options": [
+        "Information Point",
+        "Intercom location",
+        "Incident reported",
+        "Internal corridor"
+      ],
+      "question": "What does this standard signage symbol represent when seen on a site map by a CCTV operator?",
+      "id": "sc-im-0148"
+    },
+    {
+      "explanation": "Control room consoles should have adjustable height to accommodate different operators and reduce ergonomic strain.",
+      "imageAlt": "An adjustable height desk with monitors.",
+      "question": "What ergonomic feature does this specific type of control room desk provide for the operator?",
+      "options": [
+        "Soundproofing",
+        "Security locking",
+        "Heat ventilation",
+        "Height adjustability"
+      ],
+      "type": "image_question",
+      "correctAnswer": 3,
+      "imageDescription": "A professional CCTV workstation desk with a motorized leg system allowed for 'sit-stand' height adjustment.",
+      "id": "sc-im-0149"
+    },
+    {
+      "imageDescription": "A heavy-duty metal locker with individual keyed compartments, used for the secure storage of removable media like USBs or DVDs.",
+      "correctAnswer": 1,
+      "type": "image_question",
+      "imageAlt": "A metal locker for storing evidence media.",
+      "explanation": "Video clips exported as evidence must be kept in a locked, secure cabinet or safe to maintain the chain of evidence.",
+      "options": [
+        "In an unlocked desk drawer",
+        "In a secure, locked evidence cabinet \t",
+        "On a shelf in the public reception area",
+        "In the operator's personal locker"
+      ],
+      "question": "Where should the physical media shown in this storage unit be kept to comply with the PACE Act?",
+      "id": "sc-im-0150"
+    },
+    {
+      "options": [
+        "Switching the monitor off",
+        "Recording audio clips",
+        "Controlling PTZ cameras",
+        "Printing still images"
+      ],
+      "question": "What is the primary function of this piece of equipment found in a CCTV control room?",
+      "imageAlt": "A CCTV joystick controller unit.",
+      "explanation": "A joystick controller is the standard peripheral used for manually panning, tilting, and zooming a PTZ camera.",
+      "imageDescription": "A CCTV control keyboard featuring a multi-axis joystick, a numerical keypad, and several function buttons for camera selection.",
+      "correctAnswer": 2,
+      "type": "image_question",
+      "id": "sc-im-0151"
+    },
+    {
+      "explanation": "The 'flammable' symbol warns that the contents of a container can easily catch fire.",
+      "imageAlt": "A red diamond sign with a flame symbol.",
+      "question": "If an operator sees this symbol on a barrel during a site patrol, what hazard does it represent?",
+      "options": [
+        "Flammable material",
+        "Toxic substance",
+        "Oxidizing agent激",
+        "Corrosive liquid"
+      ],
+      "type": "image_question",
+      "correctAnswer": 0,
+      "imageDescription": "A COSHH hazard warning sign showing a black flame on a red background, indicating a flammable substance.",
+      "id": "sc-im-0152"
+    },
+    {
+      "imageDescription": "The back panel of a digital recording device showing multiple RJ45 Ethernet ports, a VGA port, and an HDMI port.",
+      "correctAnswer": 2,
+      "type": "image_question",
+      "imageAlt": "The rear of a Network Video Recorder showing Ethernet ports.",
+      "explanation": "A NVR (Network Video Recorder) is used to record footage from IP cameras connected via a local area network.",
+      "options": [
+        "Analogue VCR",
+        "Hard drive shredder",
+        "Network Video Recorder (NVR)",
+        "Video multiplexer"
+      ],
+      "question": "What type of recording device is shown in this image, characterized by its network ports?",
+      "id": "sc-im-0153"
+    },
+    {
+      "imageDescription": "A standard circular 'No Entry' road/safety sign with a red background and a white horizontal rectangle in the middle.",
+      "correctAnswer": 1,
+      "type": "image_question",
+      "imageAlt": "A red circle with a white horizontal bar.",
+      "explanation": "The 'no entry' sign is a prohibitory sign, indicated by its red circular shape.",
+      "options": [
+        "Mandatory sign",
+        "Prohibitory sign",
+        "Warning sign",
+        "Safe condition sign"
+      ],
+      "question": "In terms of safety signage categories, what type of sign is shown here?",
+      "id": "sc-im-0154"
+    },
+    {
+      "type": "image_question",
+      "imageDescription": "A ceiling-mounted dome camera housed in a heavy-duty metal casing with visible security screws to prevent removal.",
+      "correctAnswer": 3,
+      "options": [
+        "Low-light capability",
+        "Wireless connectivity",
+        "Thermal imaging",
+        "Vandal resistance \t"
+      ],
+      "question": "What is the main design advantage of the camera housing shown in this image?",
+      "imageAlt": "A dome camera with a metal reinforced casing.",
+      "explanation": "Vandal-resistant dome cameras are designed with high-impact housings to prevent damage from tampering or physical attack.",
+      "id": "sc-im-0155"
+    },
+    {
+      "type": "image_question",
+      "imageDescription": "A paper form with the heading 'Subject Access Request Form' and fields for 'Name', 'Date of Birth', and 'Description of Incident'.",
+      "correctAnswer": 0,
+      "options": [
+        "Subject Access Request (SAR)",
+        "Freedom of Information (FOI) request",
+        "Police witness statement",
+        "SIA licence application"
+      ],
+      "question": "What is the name of the request being made when a member of the public submits this form?",
+      "imageAlt": "A document titled Subject Access Request Form.",
+      "explanation": "A 'Subject Access Request' is the formal process under the UK GDPR for an individual to ask for their personal data.",
+      "id": "sc-im-0156"
+    },
+    {
+      "options": [
+        "Motion detection zone",
+        "Privacy masking",
+        "Digital zoom window",
+        "Ghosting effect"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Under the Data Protection Act 2018, CCTV operators must use privacy masking to obscure certain areas, such as private windows, to ensure monitoring is proportionate.",
+      "imageDescription": "A digital screenshot of a CCTV management system showing a residential street. A solid black digital box is placed over a specific window of a house to prevent viewing inside.",
+      "type": "image_question",
+      "question": "Which technical feature is being applied to this camera view to ensure compliance with the Data Protection Act?",
+      "imageAlt": "A CCTV monitor view of a street where a black square covers a bedroom window of a nearby house.",
+      "id": "sc-im-0157"
+    },
+    {
+      "options": [
+        "Prohibition sign",
+        "Mandatory sign triangle",
+        "Warning sign",
+        "Safe condition sign"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The yellow triangle indicates a 'Warning' sign, alerting staff to potential hazards like electricity or slippery floors in the control room or equipment area.",
+      "imageDescription": "A standard UK health and safety warning sign: a yellow equilateral triangle with a black border containing a black lightning bolt symbol, mounted on a grey wall.",
+      "type": "image_question",
+      "question": "What category of safety sign is shown in this image, often found near CCTV server racks?",
+      "imageAlt": "A yellow triangular sign with a black border and a lightning bolt symbol.",
+      "id": "sc-im-0158"
+    },
+    {
+      "explanation": "A PTZ (Pan, Tilt, Zoom) controller with a joystick allows operators to follow targets and change the camera's field of view in real-time.",
+      "options": [
+        "To manually control PTZ cameras",
+        "To edit recorded footage for the police",
+        "To program fire alarm sensors",
+        "To increase the monitor resolution"
+      ],
+      "correctAnswer": 0,
+      "imageAlt": "A CCTV control desk peripheral with a joystick and several numbered buttons.",
+      "question": "What is the primary purpose of the specific piece of equipment shown in this image?",
+      "type": "image_question",
+      "imageDescription": "A professional CCTV joystick controller unit sitting on a desk. It has a 3-axis joystick, a numeric keypad, and small LCD screen for selecting camera inputs.",
+      "id": "sc-im-0159"
+    },
+    {
+      "correctAnswer": 3,
+      "options": [
+        "Video loss error",
+        "Manual snapshot mode",
+        "Privacy blurring",
+        "Video Analytics (Object Tracking)"
+      ],
+      "explanation": "A Green circle around a person in a VMS (Video Management System) typically indicates an 'Analytics' trigger, such as a tripwire or loitering alert.",
+      "type": "image_question",
+      "imageDescription": "A modern CCTV interface showing a person walking through a secured gate. The software has automatically drawn a green bounding box around the person to track their movement.",
+      "imageAlt": "A CCTV screen showing a person walking through a car park with a green digital box around them.",
+      "question": "What is the CCTV software performing in this image as the person enters the restricted area?",
+      "id": "sc-im-0160"
+    },
+    {
+      "imageDescription": "A clear plastic evidence bag used by security professionals. It has a serial number printed on the side and a red tamper-evident adhesive seal at the top.",
+      "type": "image_question",
+      "question": "What is the legislative purpose for using the item shown in this image when handling recorded media?",
+      "imageAlt": "A clear plastic bag with a red 'VOID' seal tape at the top, used for holding a hard drive.",
+      "options": [
+        "General waste disposal",
+        "Static protection storage",
+        "Maintaining the 'Chain of Evidence'",
+        "DSE equipment cleaning"
+      ],
+      "correctAnswer": 2,
+      "explanation": "When hard drives or media are removed from a system for evidence, they must be placed in a tamper-evident bag to maintain the 'Chain of Evidence' for court.",
+      "id": "sc-im-0161"
+    },
+    {
+      "question": "According to Health and Safety DSE guidelines, why is the keyboard positioned with a gap at the front of the desk as shown?",
+      "imageAlt": "A top-down view of a CCTV workstation showing the keyboard, mouse, and a space between the keyboard and the edge of the desk.",
+      "imageDescription": "An ergonomic CCTV workstation setup showing a keyboard and mouse. There is a clear 10cm gap between the front of the keyboard and the edge of the desk.",
+      "type": "image_question",
+      "explanation": "According to DSE (Display Screen Equipment) guidelines, the keyboard should be positioned with enough space in front to allow the operator to rest their wrists.",
+      "correctAnswer": 0,
+      "options": [
+        "To provide space for resting wrists and forearms",
+        "To prevent the keyboard from overheating",
+        "To allow space for a notepad or logbook",
+        "To comply with fire exit clearance codes"
+      ],
+      "id": "sc-im-0162"
+    },
+    {
+      "question": "When handling recorded media, a robust 'chain of custody' or audit trail must be maintained at all times.",
+      "explanation": "Operators must provide a clear record of who accessed a recording and why to maintain the integrity of evidence.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "id": "sc-tf-0001"
+    },
+    {
+      "explanation": "The Data Protection Act and GDPR apply to both public and private entities that process personal data via CCTV.",
+      "correctAnswer": false,
+      "question": "The Data Protection Act (DPA) only applies to CCTV systems operated by the police or local councils.",
+      "type": "true_false",
+      "id": "sc-tf-0002"
+    },
+    {
+      "type": "true_false",
+      "explanation": "Under the Freedom of Information Act and DPA, individuals can request copies of their own personal data held on video.",
+      "correctAnswer": true,
+      "question": "Individuals have the right to request access to footage of themselves through a Subject Access Request (SAR).",
+      "id": "sc-tf-0003"
+    },
+    {
+      "explanation": "The joystick or mouse should be moved gently; excessive force can damage the sensitive motors in the camera.",
+      "correctAnswer": false,
+      "question": "When operating a PTZ camera, you should apply maximum pressure to the joystick to ensure the camera moves quickly.",
+      "type": "true_false",
+      "id": "sc-tf-0004"
+    },
+    {
+      "explanation": "The 1998 Human Rights Act protects an individual's right to privacy, which operators must respect.",
+      "correctAnswer": true,
+      "question": "Article 8 of the Human Rights Act protects an individual's right to respect for their private and family life.",
+      "type": "true_false",
+      "id": "sc-tf-0005"
+    },
+    {
+      "type": "true_false",
+      "explanation": "The 'purpose' of the system (e.g., crime prevention) must be clearly stated in the signage and strictly followed.",
+      "correctAnswer": false,
+      "question": "A CCTV operator can use a system installed for 'crime prevention' to spy on employees for entertainment purposes.",
+      "id": "sc-tf-0006"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": true,
+      "explanation": "Signs must be visible so people know they are entering a monitored zone and who is responsible for the system.",
+      "question": "Legally, CCTV signs should be clearly displayed and include the contact details of the data controller.",
+      "id": "sc-tf-0007"
+    },
+    {
+      "type": "true_false",
+      "explanation": "Fixed cameras have a set field of vision; Pan, Tilt, and Zoom (PTZ) cameras are the ones that can be moved remotely.",
+      "correctAnswer": false,
+      "question": "A 'fixed' camera can be remotely rotated 360 degrees by the operator in the control room.",
+      "id": "sc-tf-0008"
+    },
+    {
+      "question": "The daily logbook or incident report is considered a vital part of the evidence trail in legal proceedings.",
+      "explanation": "The Incident Log is a legal document that can be used in court to support the evidence found in the footage.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "id": "sc-tf-0009"
+    },
+    {
+      "question": "A 'Spot Monitor' is a screen that displays all camera feeds in a small grid format at all times.",
+      "correctAnswer": false,
+      "explanation": "A 'Spot Monitor' is usually a separate screen used to focus on a specific, high-priority live event.",
+      "type": "true_false",
+      "id": "sc-tf-0010"
+    },
+    {
+      "type": "true_false",
+      "explanation": "Privacy zones are used to block out bedroom windows or private gardens to comply with privacy laws.",
+      "correctAnswer": true,
+      "question": "Digital masking or 'privacy zones' are used to prevent the camera from viewing private residential areas.",
+      "id": "sc-tf-0011"
+    },
+    {
+      "question": "The Protection of Freedoms Act 2012 allows operators to target individuals for surveillance based on their ethnic origin.",
+      "explanation": "Under the PFA 2012, CCTV operators should not monitor people solely based on protected characteristics like race.",
+      "correctAnswer": false,
+      "type": "true_false",
+      "id": "sc-tf-0012"
+    },
+    {
+      "explanation": "Under the DPA 2018, data controllers must respond to a Subject Access Request (SAR) within one month of receipt.",
+      "type": "true_false",
+      "correctAnswer": true,
+      "question": "Under current UK data protection laws, a data controller generally has one month to respond to a Subject Access Request.",
+      "id": "sc-tf-0013"
+    },
+    {
+      "type": "true_false",
+      "explanation": "Personal bias or profiling based on characteristics like fashion or appearance is unethical and violates the Surveillance Camera Code of Practice.",
+      "question": "It is acceptable for a CCTV operator to target an individual for surveillance solely based on the fact they are wearing a 'hoodie'.",
+      "correctAnswer": false,
+      "id": "sc-tf-0014"
+    },
+    {
+      "question": "When writing an incident report, an operator should avoid using subjective language or personal opinions.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "explanation": "Incident reports must be objective and stick to factual observations; adding personal opinions can undermine the evidence in court.",
+      "id": "sc-tf-0015"
+    },
+    {
+      "correctAnswer": false,
+      "question": "To 'Identify' an individual beyond reasonable doubt, the person should occupy at least 10% of the screen height.",
+      "type": "true_false",
+      "explanation": "The 1:12 scale (or 120% of screen height) is the standard for identification. 10% is usually sufficient only for general 'detection'.",
+      "id": "sc-tf-0016"
+    },
+    {
+      "correctAnswer": true,
+      "question": "The 'Data Controller' is the person or organisation that determines the purposes for which personal data is processed.",
+      "type": "true_false",
+      "explanation": "While the operator manages the equipment, the 'Data Controller' (usually the employer) is legally responsible for how data is processed.",
+      "id": "sc-tf-0017"
+    },
+    {
+      "correctAnswer": false,
+      "question": "An unlicensed person can legally work as a CCTV operator in a shopping centre as long as a manager is in the building.",
+      "explanation": "Public space CCTV operators in the UK must hold a valid SIA Public Space Surveillance (CCTV) licence to legally perform their role.",
+      "type": "true_false",
+      "id": "sc-tf-0018"
+    },
+    {
+      "type": "true_false",
+      "explanation": "A 'Preset' is a pre-programmed position that allows an operator to quickly move a PTZ camera to a specific field of view.",
+      "question": "A 'Preset' is a programmed camera position that allows an operator to instantly return to a specific area of interest.",
+      "correctAnswer": true,
+      "id": "sc-tf-0019"
+    },
+    {
+      "question": "The primary purpose of a Public Space Surveillance system is to generate revenue through fines for the local council.",
+      "correctAnswer": false,
+      "type": "true_false",
+      "explanation": "The primary purpose is public safety and crime prevention, not the generation of profit for the local authority.",
+      "id": "sc-tf-0020"
+    },
+    {
+      "type": "true_false",
+      "explanation": "Operators must never leave the control room insecure; it must be locked to prevent unauthorised access to sensitive data.",
+      "correctAnswer": false,
+      "question": "A CCTV operator can leave the control room door propped open if they are only stepping away for a few minutes.",
+      "id": "sc-tf-0021"
+    },
+    {
+      "question": "A 'Functional Test' is used to check that all the mechanical parts of the CCTV system, such as PTZ motors, are working correctly.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "explanation": "The 'Functional' test ensures the equipment is mechanically working, whereas the 'Operational' test ensures it meets the user's needs.",
+      "id": "sc-tf-0022"
+    },
+    {
+      "explanation": "This is a serious breach of privacy and the DPA. Footage must only be used for the specified legal purpose.",
+      "type": "true_false",
+      "correctAnswer": false,
+      "question": "It is legal for an operator to take a photo of a CCTV screen on their personal mobile phone to share on social media.",
+      "id": "sc-tf-0023"
+    },
+    {
+      "correctAnswer": true,
+      "question": "The Freedom of Information Act (FOIA) allows citizens to request information from public authorities about how their CCTV systems are managed.",
+      "type": "true_false",
+      "explanation": "The Freedom of Information Act allows the public to request information from public authorities, including local council CCTV policies.",
+      "id": "sc-tf-0024"
+    },
+    {
+      "explanation": "The SIA can inspect security premises and individual licenses at any time to ensure compliance with the Private Security Industry Act 2001.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "question": "SIA investigators have the right to enter a licensed premises to ensure that all operators are working legally.",
+      "id": "sc-tf-0025"
+    },
+    {
+      "correctAnswer": false,
+      "explanation": "Under the 'integrity' principle, operators must never use the system for personal curiosity or to track people for non-work-related reasons.",
+      "type": "true_false",
+      "question": "It is permissible for a CCTV operator to track an ex-partner on camera if they happen to see them in the shopping centre.",
+      "id": "sc-tf-0026"
+    },
+    {
+      "correctAnswer": false,
+      "explanation": "To 'Recognise' an individual (being sure they are the same person seen before), the person should occupy at least 50% of the screen height according to UK standards.",
+      "type": "true_false",
+      "question": "According to the Rotakin/VSS standards, a person must occupy 100% of the screen height for the purpose of 'Recognition'.",
+      "id": "sc-tf-0027"
+    },
+    {
+      "correctAnswer": false,
+      "explanation": "The 'Data Processor' follows instructions; the 'Data Controller' is the one who determines why and how data is handled.",
+      "question": "The 'Data Processor' is the person who fundamentally decides why personal data is being collected by the CCTV system.",
+      "type": "true_false",
+      "id": "sc-tf-0028"
+    },
+    {
+      "correctAnswer": true,
+      "explanation": "A 'Covert' system is hidden from view, while 'Overt' systems (common in public) use visible cameras and signage.",
+      "type": "true_false",
+      "question": "A CCTV system that is clearly visible to the public and supported by warning signs is known as 'Overt' surveillance.",
+      "id": "sc-tf-0029"
+    },
+    {
+      "explanation": "Physical security includes barriers, electronic locks, and keypad entry to prevent unauthorised people from entering the room.",
+      "correctAnswer": false,
+      "type": "true_false",
+      "question": "The term 'Physical Security' in a control room refers only to the health and safety of the staff working there.",
+      "id": "sc-tf-0030"
+    },
+    {
+      "question": "An operator should monitor 'non-verbal communication' (body language) to help identify potential criminal activity.",
+      "type": "true_false",
+      "explanation": "Body language, such as looking around nervously or 'tailgating' others through secure doors, can be an indicator of suspicious intent.",
+      "correctAnswer": true,
+      "id": "sc-tf-0031"
+    },
+    {
+      "correctAnswer": true,
+      "explanation": "This refers to the continuity of evidence; any gap or unauthorised access could make the footage inadmissible in a court of law.",
+      "question": "The 'Chain of Evidence' refers to the chronological documentation showing the seizure, control, and analysis of video footage.",
+      "type": "true_false",
+      "id": "sc-tf-0032"
+    },
+    {
+      "explanation": "Evidence should be stored in a secure, fireproof, and temperature-controlled environment to prevent degradation or theft.",
+      "correctAnswer": false,
+      "type": "true_false",
+      "question": "Recorded media containing evidence should be kept on an open shelf in the control room so police can find it easily.",
+      "id": "sc-tf-0033"
+    },
+    {
+      "explanation": "A PTZ (Pan, Tilt, Zoom) camera allows the operator to move the lens horizontally, vertically, and change the focal length.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "question": "A camera that can be moved up and down and side to side by an operator is referred to as a PTZ camera.",
+      "id": "sc-tf-0034"
+    },
+    {
+      "type": "true_false",
+      "question": "The 'Need to Know' principle means that an operator can share CCTV footage with any employee who asks to see it.",
+      "correctAnswer": false,
+      "explanation": "The 'Need to Know' principle dictates that information should only be shared with those who require it for their professional duties.",
+      "id": "sc-tf-0035"
+    },
+    {
+      "correctAnswer": true,
+      "explanation": "This is a requirement of the Data Protection Act to ensure that data is not kept longer than is strictly necessary for its purpose.",
+      "type": "true_false",
+      "question": "A 'Retention Period' is the set amount of time a CCTV system keeps recorded footage before it is deleted or overwritten.",
+      "id": "sc-tf-0036"
+    },
+    {
+      "type": "true_false",
+      "question": "According to current VSS (CCTV) standards, 'Identification' requires the subject to occupy a larger percentage of the screen height than 'Recognition'.",
+      "correctAnswer": true,
+      "explanation": "The 'Identification' standard (often 120% screen height) is the highest level of detail required to provide evidence that can prove someone's identity in court beyond doubt.",
+      "id": "sc-tf-0037"
+    },
+    {
+      "explanation": "Under the Data Protection Act, signs must be displayed to inform the public that they are in an area where CCTV is in operation and to identify the data controller.",
+      "question": "Signs are not legally required for a CCTV system as long as the cameras are positioned in plain sight.",
+      "correctAnswer": false,
+      "type": "true_false",
+      "id": "sc-tf-0038"
+    },
+    {
+      "correctAnswer": true,
+      "question": "A member of the public has the right to request a copy of CCTV footage in which they clearly appear.",
+      "explanation": "Private individuals have the right to request a copy of the personal data held about them under the Data Protection Act via a Subject Access Request.",
+      "type": "true_false",
+      "id": "sc-tf-0039"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": false,
+      "question": "The term 'Targeting' refers to the natural loss of concentration an operator experiences after watching a monitor for more than 20 minutes.",
+      "explanation": "CCTV operators must be aware of 'tunnel vision' or 'observer fatigue', which is the decrease in attention and detection ability over a long period of monitoring.",
+      "id": "sc-tf-0040"
+    },
+    {
+      "explanation": "Exporting footage from a local hard drive to a removable device (like a USB or DVD) is a standard procedure for providing evidence to the police.",
+      "question": "An 'Export' is the process of transferring recorded video data from the CCTV system to an external medium for evidence purposes.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "id": "sc-tf-0041"
+    },
+    {
+      "type": "true_false",
+      "explanation": "The Human Rights Act 1998 protects an individual's right to a private and family life, which operators must respect when positioning or zooming cameras.",
+      "correctAnswer": false,
+      "question": "The Human Rights Act 1998 is irrelevant to CCTV operators because the Data Protection Act covers all legal requirements.",
+      "id": "sc-tf-0042"
+    },
+    {
+      "explanation": "A 'Patrol' or 'Tour' is a sequence of preset camera positions that the system cycles through automatically to monitor a wide area without manual input.",
+      "correctAnswer": true,
+      "question": "In CCTV terminology, a 'Tour' is a pre-programmed sequence where a PTZ camera automatically moves between several different presets.",
+      "type": "true_false",
+      "id": "sc-tf-0043"
+    },
+    {
+      "type": "true_false",
+      "question": "If an operator sees a police officer or paramedic on screen, they must immediately turn the camera away to protect the official's privacy.",
+      "correctAnswer": false,
+      "explanation": "If an emergency worker (like a paramedic) is performing their duties, an operator should continue to monitor the area to ensure the worker's safety and document the incident.",
+      "id": "sc-tf-0044"
+    },
+    {
+      "explanation": "An Incident Log or Occurrence Book must be maintained to provide a clear, chronological record of events and actions taken by the operator for legal accountability.",
+      "question": "An 'Incident Log' should be updated as soon as possible after an event to ensure the details recorded are accurate and contemporaneous.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "id": "sc-tf-0045"
+    },
+    {
+      "explanation": "Varifocal lenses allow the focal length to be adjusted manually during installation, whereas a 'Zoom' lens can be adjusted remotely by the operator during use.",
+      "correctAnswer": false,
+      "question": "A 'Varifocal' lens is exactly the same as a 'Zoom' lens and can always be controlled remotely by the operator in the control room.",
+      "type": "true_false",
+      "id": "sc-tf-0046"
+    },
+    {
+      "type": "true_false",
+      "explanation": "In the UK, it is a criminal offence to work as a CCTV operator in a public space surveillance role without a valid SIA license.",
+      "question": "Working as a CCTV operator without a valid SIA license (where one is required) can result in a fine or a prison sentence.",
+      "correctAnswer": true,
+      "id": "sc-tf-0047"
+    },
+    {
+      "question": "A 'Digital Signature' or 'Watermark' on CCTV footage is used solely to display the name of the company that owns the cameras.",
+      "correctAnswer": false,
+      "explanation": "The 'Digital Signature' is a hidden code added to the video file to prove it has not been edited or tampered with, ensuring it is admissible in court.",
+      "type": "true_false",
+      "id": "sc-tf-0048"
+    },
+    {
+      "type": "true_false",
+      "question": "The Data Protection Act (DPA) only applies to CCTV systems that monitor public spaces and does not cover private property.",
+      "explanation": "The DPA applies to all CCTV systems that process personal data, regardless of whether they have a view of public or private land.",
+      "correctAnswer": false,
+      "id": "sc-tf-0049"
+    },
+    {
+      "explanation": "The Regulation of Investigatory Powers Act (RIPA) governs how public authorities use covert surveillance to ensure it is lawful and proportionate.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "question": "The RIPA 2000 act regulates the use of covert surveillance by public authorities.",
+      "id": "sc-tf-0050"
+    },
+    {
+      "question": "Thermal imaging cameras can detect people and objects in total darkness without the need for additional lighting.",
+      "type": "true_false",
+      "correctAnswer": true,
+      "explanation": "Thermal cameras detect heat signatures rather than light, allowing them to produce images in total darkness or through smoke.",
+      "id": "sc-tf-0051"
+    },
+    {
+      "type": "true_false",
+      "question": "Under the GDPR, a CCTV operator must always charge a standard fee of £50 to any individual making a Subject Access Request.",
+      "correctAnswer": false,
+      "explanation": "Subject Access Requests are usually free, though a 'reasonable fee' may be charged only if the request is manifestly unfounded or excessive.",
+      "id": "sc-tf-0052"
+    },
+    {
+      "explanation": "SIA licensed operators have a duty of care to cooperate with emergency services to protect life and property while maintaining professional standards.",
+      "correctAnswer": true,
+      "question": "A CCTV operator has a duty of care to assist the police and other emergency services during an active incident.",
+      "type": "true_false",
+      "id": "sc-tf-0053"
+    },
+    {
+      "question": "Technological 'profiling' based on an individual's ethnicity is a legally acceptable method for selecting targets to monitor.",
+      "type": "true_false",
+      "correctAnswer": false,
+      "explanation": "Using CCTV to follow individuals based on protected characteristics like race or gender is a breach of the Equality Act 2010.",
+      "id": "sc-tf-0054"
+    },
+    {
+      "question": "It is a standard operational procedure to carry out a 'functional check' of all equipment at the start of a shift.",
+      "type": "true_false",
+      "explanation": "Functional checks ensure that all cameras, recording equipment, and monitors are working correctly at the start of every shift.",
+      "correctAnswer": true,
+      "id": "sc-tf-0055"
+    },
+    {
+      "correctAnswer": false,
+      "explanation": "A Privacy Impact Assessment (PIA) helps identify and reduce privacy risks before a system is installed or significantly changed.",
+      "type": "true_false",
+      "question": "A 'Privacy Impact Assessment' is only required after a member of the public complains about a camera's location.",
+      "id": "sc-tf-0056"
+    },
+    {
+      "correctAnswer": true,
+      "explanation": "Digital zoom enlarges pixels from the existing image, which reduces the resolution and clarity compared to optical zoom.",
+      "type": "true_false",
+      "question": "Using 'Digital Zoom' on a recorded image often results in a loss of image quality and pixelation.",
+      "id": "sc-tf-0057"
+    },
+    {
+      "question": "Operators are encouraged to use their personal mobile phones to take photos of incidents as a backup to the main CCTV system.",
+      "type": "true_false",
+      "correctAnswer": false,
+      "explanation": "Security staff should not use personal mobile phones in the control room as it creates a distraction and poses a significant data security risk.",
+      "id": "sc-tf-0058"
+    },
+    {
+      "correctAnswer": true,
+      "explanation": "Control rooms must be secure environments with restricted access to prevent unauthorised people from viewing sensitive footage.",
+      "question": "Unauthorised personnel, including most employees of the same company, should generally be restricted from entering the CCTV control room.",
+      "type": "true_false",
+      "id": "sc-tf-0059"
+    },
+    {
+      "explanation": "The 20-minute rule is a guideline because an operator's ability to remain alert and spot 100% of activity decreases significantly after this time.",
+      "correctAnswer": false,
+      "question": "The '20-minute rule' suggests that an operator's concentration remains at peak levels for up to four hours of continuous monitoring.",
+      "type": "true_false",
+      "id": "sc-tf-0060"
+    },
+    {
+      "explanation": "The Freedom of Information Act allows individuals to request information held by public authorities, including certain CCTV footage, provided it does not breach data protection rights.",
+      "question": "Public authorities using CCTV must comply with the Freedom of Information Act 2000 as well as data protection laws.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "id": "sc-tf-0061"
+    },
+    {
+      "question": "An IP camera uses an analogue signal to transmit video data directly to a monitor without using a network.",
+      "explanation": "IP (Internet Protocol) cameras convert video signals into data packets that are transmitted over a network, whereas analogue cameras send an electrical signal via coaxial cable.",
+      "correctAnswer": false,
+      "type": "true_false",
+      "id": "sc-tf-0062"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": false,
+      "explanation": "The Data Protection Act requires companies to have a valid, lawful reason (such as safety or crime prevention) to monitor staff; 'just in case' is not a sufficient legal basis.",
+      "question": "It is legally acceptable for an employer to hide cameras in a staff breakroom to monitor employees 'just in case' they are lazy.",
+      "id": "sc-tf-0063"
+    },
+    {
+      "correctAnswer": true,
+      "type": "true_false",
+      "explanation": "When an operator uses a PTZ camera to follow a specific person, this is considered 'directed surveillance' and is subject to strict legal guidelines.",
+      "question": "Using a PTZ camera to follow a specific individual for a period of time is known as 'active' or 'proactive' monitoring.",
+      "id": "sc-tf-0064"
+    },
+    {
+      "correctAnswer": false,
+      "type": "true_false",
+      "explanation": "A Subject Access Request (SAR) allows an individual to request footage of themselves, but the operator must redact or blur other people's faces to protect their privacy.",
+      "question": "If a person makes a Subject Access Request, the CCTV operator must provide the full, unedited footage even if other members of the public are visible.",
+      "id": "sc-tf-0065"
+    },
+    {
+      "correctAnswer": true,
+      "type": "true_false",
+      "explanation": "The 'Data Controller' is the person or organization that determines the purposes for which, and the manner in which, personal data is processed.",
+      "question": "In the context of the Data Protection Act, the organization that owns the CCTV system is usually defined as the 'Data Controller'.",
+      "id": "sc-tf-0066"
+    },
+    {
+      "explanation": "The 'frame rate' refers to how many images are captured per second, while the 'resolution' refers to the level of detail or number of pixels in each image.",
+      "question": "In CCTV terminology, 'resolution' refers to the amount of frames per second that a camera records.",
+      "type": "true_false",
+      "correctAnswer": false,
+      "id": "sc-tf-0067"
+    },
+    {
+      "correctAnswer": true,
+      "type": "true_false",
+      "explanation": "The SIA requires that operators wait at least 20 minutes between periods of intensive screen monitoring to prevent 'monitor fatigue' and loss of concentration.",
+      "question": "Ideally, a CCTV operator should have a break from screen monitoring duties every 60 to 90 minutes to maintain alertness.",
+      "id": "sc-tf-0068"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": true,
+      "explanation": "The Equality Act 2010 prohibits discrimination; operators must never target individuals based on 'protected characteristics' like race, disability, or gender.",
+      "question": "A CCTV operator must ensure that their monitoring activities do not discriminate against individuals based on 'protected characteristics' under the Equality Act 2010.",
+      "id": "sc-tf-0069"
+    },
+    {
+      "correctAnswer": false,
+      "type": "true_false",
+      "explanation": "Standard CCTV systems are designed for security and safety; using them to record private conversations (audio) is a major breach of privacy laws and rarely permitted.",
+      "question": "Most public space CCTV systems are legally required to record high-quality audio of all conversations as well as video.",
+      "id": "sc-tf-0070"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": true,
+      "explanation": "An NVR is designed specifically for IP (network) cameras, while a DVR is typically used for analogue systems.",
+      "question": "A Network Video Recorder (NVR) is used to record and manage footage from digital IP cameras.",
+      "id": "sc-tf-0071"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": false,
+      "question": "Under the Data Protection Act, all CCTV footage must be kept for a minimum of 12 months before it can be deleted.",
+      "explanation": "The DPA/GDPR requires that personal data (including CCTV footage) should not be kept for longer than is necessary for its original purpose, usually around 30 days.",
+      "id": "sc-tf-0072"
+    },
+    {
+      "explanation": "The SIA CCTV Public Space Surveillance (PSS) licence is a legal requirement for anyone monitoring members of the public in public spaces for a fee or as part of a contract.",
+      "question": "An individual must hold a valid SIA Public Space Surveillance (PSS) licence if they are monitoring members of the public in a shopping centre.",
+      "type": "true_false",
+      "correctAnswer": true,
+      "id": "sc-tf-0073"
+    },
+    {
+      "question": "The Surveillance Camera Code of Practice only applies to police-run cameras and not to those operated by private security companies.",
+      "explanation": "The CCTV Code of Practice, overseen by the Biometrics and Surveillance Camera Commissioner, applies to all operators and owners of surveillance systems in public places.",
+      "correctAnswer": false,
+      "type": "true_false",
+      "id": "sc-tf-0074"
+    },
+    {
+      "correctAnswer": true,
+      "type": "true_false",
+      "question": "A primary purpose of a CCTV 'Incident Log' is to provide a detailed audit trail for evidence and internal review.",
+      "explanation": "An 'Incident Log' provides a chronological record of events and is vital for providing an audit trail for police investigations or court proceedings.",
+      "id": "sc-tf-0075"
+    },
+    {
+      "explanation": "Remote monitoring centres (ARCs) are frequently used to provide security for sites during out-of-hours periods when no on-site staff are present.",
+      "question": "A 'Remote Monitoring Station' can provide security for multi-site locations from a single, off-site central hub.",
+      "type": "true_false",
+      "correctAnswer": true,
+      "id": "sc-tf-0076"
+    },
+    {
+      "correctAnswer": false,
+      "type": "true_false",
+      "question": "It is not necessary to display signage informing the public of CCTV if the cameras are clearly visible and not hidden.",
+      "explanation": "Signs must be visible and legible to inform the public that they are being recorded and to provide contact details for the Data Controller.",
+      "id": "sc-tf-0077"
+    },
+    {
+      "question": "The term 'PTZ' stands for Pan, Tilt, and Zoom, referring to the movement capabilities of a specific type of camera.",
+      "explanation": "PTZ allows the operator to actively track a subject or move the camera to view different areas based on real-time incidents.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "id": "sc-tf-0078"
+    },
+    {
+      "explanation": "Under the Data Protection Act (and GDPR), data should only be kept for as long as necessary for its specific purpose, which is often 31 days.",
+      "question": "The Data Protection Act mandates that all CCTV systems must store footage for 90 days regardless of the location's risk level.",
+      "correctAnswer": false,
+      "type": "true_false",
+      "id": "sc-tf-0079"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": true,
+      "question": "Section 8 of the Human Rights Act 1998 concerns an individual's right to privacy, which CCTV operators must respect during their duties.",
+      "explanation": "The Human Rights Act 1998, specifically Article 8, protects an individual's right to respect for their private and family life, which applies to surveillance.",
+      "id": "sc-tf-0080"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": false,
+      "explanation": "A 'Monitor Wall' usually shows live feeds or multiple views simultaneously, while the 'Spot Monitor' is used to focus on a single, high-importance image.",
+      "question": "In a control room, a 'Spot Monitor' is a large screen used to display every camera feed in the system at the same time.",
+      "id": "sc-tf-0081"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": true,
+      "explanation": "The 'Operational Requirement' (OR) document outlines what the system is intended to achieve and is the first step in designing a CCTV system.",
+      "question": "The 'Operational Requirement' (OR) is a document used to define the needs of the CCTV system and what it is expected to achieve.",
+      "id": "sc-tf-0082"
+    },
+    {
+      "correctAnswer": false,
+      "type": "true_false",
+      "explanation": "Varifocal lenses allow the focal length to be adjusted manually during installation, whereas fixed lenses have a set field of view that cannot be changed.",
+      "question": "A 'Fixed Lens' camera allows the operator to remotely change the focal length and depth of field at any time.",
+      "id": "sc-tf-0083"
+    },
+    {
+      "explanation": "Privacy masking is a software feature used to block out sensitive areas, such as the windows of private residences, from the camera's view.",
+      "question": "'Privacy Masking' is a digital feature used to obscure private areas, such as residential windows, from being viewed or recorded.",
+      "type": "true_false",
+      "correctAnswer": true,
+      "id": "sc-tf-0084"
+    },
+    {
+      "explanation": "This document outlines the purpose of the system and ensures that the technology selected is fit for the specific security goals of the site.",
+      "question": "The 'Statement of Requirement' is used to identify the specific problems the CCTV system is intended to solve.",
+      "type": "true_false",
+      "correctAnswer": true,
+      "id": "sc-tf-0085"
+    },
+    {
+      "question": "It is legally permissible for an SIA CCTV operator to share interesting footage on their personal social media account as long as no names are mentioned.",
+      "type": "true_false",
+      "explanation": "CCTV operators are generally prohibited from sharing footage on social media; this is a breach of data protection and professional standards.",
+      "correctAnswer": false,
+      "id": "sc-tf-0086"
+    },
+    {
+      "type": "true_false",
+      "question": "Using 'Digital Zoom' on a camera provides a clearer and more detailed image than using 'Optical Zoom'.",
+      "explanation": "Digital zoom merely enlarges existing pixels, which reduces image quality and clarity compared to optical zoom.",
+      "correctAnswer": false,
+      "id": "sc-tf-0087"
+    },
+    {
+      "correctAnswer": true,
+      "explanation": "The PACE codes of practice provide clear guidelines for the police and others on how to handle and process evidence correctly.",
+      "type": "true_false",
+      "question": "The Police and Criminal Evidence Act (PACE) 1984 sets out instructions for the handling and labeling of evidence such as CCTV discs.",
+      "id": "sc-tf-0088"
+    },
+    {
+      "type": "true_false",
+      "question": "When fulfilling a Subject Access Request, the operator may need to redact the faces of other people appearing in the footage.",
+      "explanation": "Redaction (blurring or masking) is necessary to protect the privacy rights of third parties in the footage during a Subject Access Request.",
+      "correctAnswer": true,
+      "id": "sc-tf-0089"
+    },
+    {
+      "explanation": "Security systems should be designed with the least possible intrusion into the private lives of the public.",
+      "type": "true_false",
+      "question": "The 'Principle of Minimum Intrusion' means that CCTV surveillance should only be used when it is necessary and proportionate.",
+      "correctAnswer": true,
+      "id": "sc-tf-0090"
+    },
+    {
+      "type": "true_false",
+      "question": "A 'Varifocal' lens allows the operator to change the zoom level electronically from the control room desk at any time.",
+      "explanation": "A Varifocal lens must be manually adjusted at the camera itself to change the focal length, unlike a motorized PTZ lens.",
+      "correctAnswer": false,
+      "id": "sc-tf-0091"
+    },
+    {
+      "explanation": "The ICO (Information Commissioner's Office) is the body responsible for enforcing data protection laws in the UK.",
+      "type": "true_false",
+      "question": "The 'Health and Safety Executive' (HSE) is the primary body responsible for enforcing the Data Protection Act in the UK.",
+      "correctAnswer": false,
+      "id": "sc-tf-0092"
+    },
+    {
+      "question": "The term 'Target Tracking' refers to the process of following a specific subject through various camera views.",
+      "type": "true_false",
+      "explanation": "Identifying a person and following them across multiple cameras is a core skill for operators monitoring public spaces.",
+      "correctAnswer": true,
+      "id": "sc-tf-0093"
+    },
+    {
+      "correctAnswer": true,
+      "explanation": "While the SIA handles licensing, the local authority usually manages the licensing of specific premises like bars or clubs.",
+      "question": "A local authority may set specific conditions for CCTV coverage as part of a premises' liquor licence.",
+      "type": "true_false",
+      "id": "sc-tf-0094"
+    },
+    {
+      "question": "In CCTV terminology, 'Frame Rate' is the exact same thing as 'Bit Rate'.",
+      "type": "true_false",
+      "explanation": "Frame rate refers to the number of images per second (FPS), while bit rate refers to the amount of data processed over time.",
+      "correctAnswer": false,
+      "id": "sc-tf-0095"
+    },
+    {
+      "question": "The 'Master Copy' of an evidential recording should be sealed and stored securely, while a 'Working Copy' is used for viewing.",
+      "type": "true_false",
+      "explanation": "A 'Golden Image' or 'Master Copy' is the original, untouched recording used for court to ensure the evidence's integrity has not been compromised.",
+      "correctAnswer": true,
+      "id": "sc-tf-0096"
+    },
+    {
+      "type": "true_false",
+      "question": "The Information Commissioner's Office (ICO) is the independent body in the UK responsible for upholding information rights and data privacy.",
+      "correctAnswer": true,
+      "explanation": "The Information Commissioner's Office (ICO) enforces data protection laws in the UK, ensuring CCTV systems comply with the Data Protection Act.",
+      "id": "sc-tf-0097"
+    },
+    {
+      "explanation": "Under the Data Protection Act, operators must have a specific, justifiable reason to track a subject; browsing for entertainment or without cause is a breach of privacy.",
+      "correctAnswer": false,
+      "question": "Under UK data protection laws, it is legally acceptable for a CCTV operator to track any individual just to pass the time during a quiet shift.",
+      "type": "true_false",
+      "id": "sc-tf-0098"
     }
   ],
-  "mocks": []
+  "mocks": [
+    {
+      "mockNumber": 1,
+      "title": "SIA CCTV Operator Test Test 1",
+      "questionIds": [
+        "sc-mc-0357",
+        "sc-im-0002",
+        "sc-mc-0341",
+        "sc-tf-0027",
+        "sc-im-0150",
+        "sc-im-0091",
+        "sc-tf-0042",
+        "sc-mc-0076",
+        "sc-mc-0246",
+        "sc-im-0078",
+        "sc-mc-0189",
+        "sc-mc-0098",
+        "sc-tf-0073",
+        "sc-mc-0382",
+        "sc-mc-0086",
+        "sc-mc-0345",
+        "sc-im-0016",
+        "sc-tf-0046",
+        "sc-mc-0241",
+        "sc-mc-0152",
+        "sc-im-0055",
+        "sc-mc-0073",
+        "sc-mc-0255",
+        "sc-mc-0307"
+      ]
+    },
+    {
+      "mockNumber": 2,
+      "title": "SIA CCTV Operator Test Test 2",
+      "questionIds": [
+        "sc-mc-0128",
+        "sc-mc-0056",
+        "sc-im-0041",
+        "sc-tf-0068",
+        "sc-im-0074",
+        "sc-mc-0054",
+        "sc-im-0089",
+        "sc-mc-0287",
+        "sc-mc-0218",
+        "sc-mc-0222",
+        "sc-tf-0022",
+        "sc-im-0161",
+        "sc-tf-0067",
+        "sc-mc-0035",
+        "sc-tf-0041",
+        "sc-mc-0069",
+        "sc-mc-0311",
+        "sc-mc-0121",
+        "sc-mc-0124",
+        "sc-mc-0239",
+        "sc-mc-0329",
+        "sc-im-0129",
+        "sc-im-0098",
+        "sc-mc-0092"
+      ]
+    },
+    {
+      "mockNumber": 3,
+      "title": "SIA CCTV Operator Test Test 3",
+      "questionIds": [
+        "sc-tf-0075",
+        "sc-mc-0224",
+        "sc-mc-0367",
+        "sc-im-0085",
+        "sc-mc-0300",
+        "sc-tf-0093",
+        "sc-im-0151",
+        "sc-im-0048",
+        "sc-tf-0051",
+        "sc-mc-0290",
+        "sc-mc-0330",
+        "sc-mc-0265",
+        "sc-mc-0289",
+        "sc-im-0050",
+        "sc-mc-0242",
+        "sc-im-0084",
+        "sc-mc-0231",
+        "sc-mc-0282",
+        "sc-mc-0030",
+        "sc-mc-0238",
+        "sc-tf-0007",
+        "sc-im-0070",
+        "sc-mc-0343",
+        "sc-mc-0044"
+      ]
+    },
+    {
+      "mockNumber": 4,
+      "title": "SIA CCTV Operator Test Test 4",
+      "questionIds": [
+        "sc-mc-0003",
+        "sc-mc-0178",
+        "sc-mc-0155",
+        "sc-mc-0260",
+        "sc-mc-0095",
+        "sc-im-0058",
+        "sc-im-0145",
+        "sc-tf-0069",
+        "sc-mc-0199",
+        "sc-im-0019",
+        "sc-mc-0027",
+        "sc-mc-0320",
+        "sc-tf-0090",
+        "sc-im-0062",
+        "sc-mc-0094",
+        "sc-tf-0058",
+        "sc-mc-0191",
+        "sc-im-0006",
+        "sc-mc-0157",
+        "sc-tf-0002",
+        "sc-im-0113",
+        "sc-mc-0348",
+        "sc-mc-0244",
+        "sc-mc-0315"
+      ]
+    },
+    {
+      "mockNumber": 5,
+      "title": "SIA CCTV Operator Test Test 5",
+      "questionIds": [
+        "sc-mc-0159",
+        "sc-tf-0005",
+        "sc-im-0121",
+        "sc-mc-0101",
+        "sc-mc-0140",
+        "sc-mc-0221",
+        "sc-tf-0020",
+        "sc-tf-0094",
+        "sc-mc-0089",
+        "sc-im-0007",
+        "sc-tf-0013",
+        "sc-im-0063",
+        "sc-mc-0039",
+        "sc-mc-0067",
+        "sc-mc-0181",
+        "sc-mc-0011",
+        "sc-mc-0107",
+        "sc-mc-0163",
+        "sc-im-0137",
+        "sc-im-0162",
+        "sc-im-0018",
+        "sc-mc-0066",
+        "sc-mc-0297",
+        "sc-mc-0284"
+      ]
+    },
+    {
+      "mockNumber": 6,
+      "title": "SIA CCTV Operator Test Test 6",
+      "questionIds": [
+        "sc-im-0135",
+        "sc-mc-0078",
+        "sc-im-0057",
+        "sc-mc-0075",
+        "sc-mc-0270",
+        "sc-tf-0049",
+        "sc-im-0119",
+        "sc-mc-0324",
+        "sc-mc-0065",
+        "sc-mc-0211",
+        "sc-mc-0281",
+        "sc-tf-0024",
+        "sc-mc-0100",
+        "sc-im-0076",
+        "sc-mc-0267",
+        "sc-mc-0366",
+        "sc-mc-0114",
+        "sc-im-0127",
+        "sc-mc-0251",
+        "sc-tf-0096",
+        "sc-tf-0047",
+        "sc-mc-0192",
+        "sc-mc-0123",
+        "sc-im-0077"
+      ]
+    },
+    {
+      "mockNumber": 7,
+      "title": "SIA CCTV Operator Test Test 7",
+      "questionIds": [
+        "sc-im-0153",
+        "sc-mc-0165",
+        "sc-im-0060",
+        "sc-mc-0158",
+        "sc-tf-0076",
+        "sc-im-0064",
+        "sc-mc-0090",
+        "sc-tf-0038",
+        "sc-mc-0312",
+        "sc-mc-0038",
+        "sc-mc-0232",
+        "sc-tf-0072",
+        "sc-mc-0250",
+        "sc-tf-0078",
+        "sc-mc-0227",
+        "sc-im-0093",
+        "sc-mc-0145",
+        "sc-im-0022",
+        "sc-im-0075",
+        "sc-mc-0226",
+        "sc-mc-0325",
+        "sc-mc-0131",
+        "sc-mc-0160",
+        "sc-mc-0020"
+      ]
+    },
+    {
+      "mockNumber": 8,
+      "title": "SIA CCTV Operator Test Test 8",
+      "questionIds": [
+        "sc-im-0102",
+        "sc-mc-0349",
+        "sc-mc-0362",
+        "sc-mc-0229",
+        "sc-im-0149",
+        "sc-mc-0314",
+        "sc-mc-0070",
+        "sc-mc-0097",
+        "sc-tf-0015",
+        "sc-mc-0150",
+        "sc-im-0044",
+        "sc-mc-0008",
+        "sc-tf-0063",
+        "sc-im-0067",
+        "sc-mc-0134",
+        "sc-im-0097",
+        "sc-mc-0316",
+        "sc-mc-0012",
+        "sc-tf-0035",
+        "sc-mc-0212",
+        "sc-tf-0003",
+        "sc-mc-0202",
+        "sc-mc-0180",
+        "sc-im-0120"
+      ]
+    },
+    {
+      "mockNumber": 9,
+      "title": "SIA CCTV Operator Test Test 9",
+      "questionIds": [
+        "sc-mc-0007",
+        "sc-mc-0248",
+        "sc-mc-0110",
+        "sc-mc-0308",
+        "sc-mc-0363",
+        "sc-mc-0388",
+        "sc-mc-0277",
+        "sc-mc-0119",
+        "sc-tf-0070",
+        "sc-mc-0372",
+        "sc-im-0156",
+        "sc-im-0122",
+        "sc-mc-0032",
+        "sc-im-0013",
+        "sc-tf-0056",
+        "sc-mc-0060",
+        "sc-mc-0010",
+        "sc-tf-0018",
+        "sc-im-0037",
+        "sc-tf-0017",
+        "sc-mc-0144",
+        "sc-im-0017",
+        "sc-im-0141",
+        "sc-mc-0170"
+      ]
+    },
+    {
+      "mockNumber": 10,
+      "title": "SIA CCTV Operator Test Test 10",
+      "questionIds": [
+        "sc-tf-0089",
+        "sc-im-0082",
+        "sc-mc-0166",
+        "sc-im-0115",
+        "sc-im-0138",
+        "sc-tf-0092",
+        "sc-mc-0384",
+        "sc-im-0028",
+        "sc-mc-0104",
+        "sc-mc-0327",
+        "sc-mc-0243",
+        "sc-tf-0044",
+        "sc-mc-0390",
+        "sc-mc-0179",
+        "sc-mc-0368",
+        "sc-mc-0346",
+        "sc-mc-0153",
+        "sc-tf-0097",
+        "sc-mc-0323",
+        "sc-mc-0026",
+        "sc-im-0008",
+        "sc-im-0133",
+        "sc-mc-0350",
+        "sc-mc-0176"
+      ]
+    },
+    {
+      "mockNumber": 11,
+      "title": "SIA CCTV Operator Test Test 11",
+      "questionIds": [
+        "sc-mc-0063",
+        "sc-im-0056",
+        "sc-tf-0033",
+        "sc-mc-0351",
+        "sc-mc-0219",
+        "sc-mc-0105",
+        "sc-mc-0171",
+        "sc-mc-0201",
+        "sc-im-0157",
+        "sc-mc-0214",
+        "sc-mc-0147",
+        "sc-mc-0273",
+        "sc-mc-0091",
+        "sc-tf-0088",
+        "sc-mc-0295",
+        "sc-mc-0106",
+        "sc-tf-0028",
+        "sc-mc-0148",
+        "sc-tf-0048",
+        "sc-im-0047",
+        "sc-im-0146",
+        "sc-im-0051",
+        "sc-mc-0049",
+        "sc-im-0128"
+      ]
+    },
+    {
+      "mockNumber": 12,
+      "title": "SIA CCTV Operator Test Test 12",
+      "questionIds": [
+        "sc-im-0083",
+        "sc-mc-0337",
+        "sc-mc-0210",
+        "sc-mc-0009",
+        "sc-mc-0019",
+        "sc-tf-0057",
+        "sc-tf-0021",
+        "sc-im-0147",
+        "sc-mc-0193",
+        "sc-mc-0279",
+        "sc-mc-0285",
+        "sc-mc-0168",
+        "sc-mc-0374",
+        "sc-tf-0065",
+        "sc-mc-0132",
+        "sc-tf-0039",
+        "sc-mc-0085",
+        "sc-mc-0292",
+        "sc-im-0116",
+        "sc-im-0105",
+        "sc-mc-0208",
+        "sc-im-0015",
+        "sc-im-0073",
+        "sc-mc-0061"
+      ]
+    },
+    {
+      "mockNumber": 13,
+      "title": "SIA CCTV Operator Test Test 13",
+      "questionIds": [
+        "sc-tf-0091",
+        "sc-mc-0272",
+        "sc-mc-0133",
+        "sc-mc-0002",
+        "sc-mc-0262",
+        "sc-im-0131",
+        "sc-im-0066",
+        "sc-mc-0116",
+        "sc-im-0087",
+        "sc-tf-0053",
+        "sc-mc-0299",
+        "sc-mc-0087",
+        "sc-mc-0338",
+        "sc-im-0081",
+        "sc-im-0069",
+        "sc-mc-0031",
+        "sc-im-0009",
+        "sc-tf-0060",
+        "sc-mc-0258",
+        "sc-tf-0009",
+        "sc-mc-0370",
+        "sc-mc-0142",
+        "sc-mc-0263",
+        "sc-mc-0174"
+      ]
+    },
+    {
+      "mockNumber": 14,
+      "title": "SIA CCTV Operator Test Test 14",
+      "questionIds": [
+        "sc-mc-0364",
+        "sc-mc-0344",
+        "sc-mc-0359",
+        "sc-tf-0008",
+        "sc-mc-0055",
+        "sc-mc-0293",
+        "sc-mc-0183",
+        "sc-tf-0095",
+        "sc-mc-0172",
+        "sc-mc-0103",
+        "sc-im-0099",
+        "sc-im-0036",
+        "sc-im-0106",
+        "sc-mc-0352",
+        "sc-mc-0319",
+        "sc-mc-0365",
+        "sc-mc-0340",
+        "sc-tf-0016",
+        "sc-mc-0318",
+        "sc-im-0052",
+        "sc-tf-0077",
+        "sc-im-0143",
+        "sc-mc-0278",
+        "sc-im-0025"
+      ]
+    },
+    {
+      "mockNumber": 15,
+      "title": "SIA CCTV Operator Test Test 15",
+      "questionIds": [
+        "sc-im-0030",
+        "sc-tf-0034",
+        "sc-mc-0335",
+        "sc-tf-0083",
+        "sc-mc-0209",
+        "sc-tf-0030",
+        "sc-mc-0386",
+        "sc-mc-0169",
+        "sc-mc-0197",
+        "sc-mc-0043",
+        "sc-tf-0036",
+        "sc-mc-0125",
+        "sc-im-0059",
+        "sc-mc-0204",
+        "sc-mc-0122",
+        "sc-im-0040",
+        "sc-mc-0306",
+        "sc-im-0045",
+        "sc-mc-0268",
+        "sc-mc-0228",
+        "sc-im-0140",
+        "sc-im-0026",
+        "sc-mc-0018",
+        "sc-mc-0249"
+      ]
+    },
+    {
+      "mockNumber": 16,
+      "title": "SIA CCTV Operator Test Test 16",
+      "questionIds": [
+        "sc-mc-0021",
+        "sc-mc-0146",
+        "sc-tf-0023",
+        "sc-im-0049",
+        "sc-mc-0188",
+        "sc-mc-0093",
+        "sc-mc-0207",
+        "sc-mc-0301",
+        "sc-im-0123",
+        "sc-mc-0213",
+        "sc-mc-0271",
+        "sc-mc-0369",
+        "sc-im-0005",
+        "sc-mc-0269",
+        "sc-mc-0015",
+        "sc-mc-0005",
+        "sc-im-0061",
+        "sc-im-0118",
+        "sc-mc-0022",
+        "sc-tf-0062",
+        "sc-tf-0045",
+        "sc-tf-0071",
+        "sc-mc-0062",
+        "sc-im-0090"
+      ]
+    },
+    {
+      "mockNumber": 17,
+      "title": "SIA CCTV Operator Test Test 17",
+      "questionIds": [
+        "sc-mc-0304",
+        "sc-im-0125",
+        "sc-mc-0156",
+        "sc-mc-0154",
+        "sc-mc-0051",
+        "sc-im-0124",
+        "sc-mc-0305",
+        "sc-tf-0014",
+        "sc-im-0107",
+        "sc-mc-0096",
+        "sc-mc-0339",
+        "sc-mc-0042",
+        "sc-tf-0001",
+        "sc-mc-0164",
+        "sc-tf-0055",
+        "sc-im-0152",
+        "sc-im-0101",
+        "sc-mc-0040",
+        "sc-mc-0200",
+        "sc-mc-0083",
+        "sc-im-0035",
+        "sc-tf-0086",
+        "sc-mc-0254",
+        "sc-mc-0247"
+      ]
+    },
+    {
+      "mockNumber": 18,
+      "title": "SIA CCTV Operator Test Test 18",
+      "questionIds": [
+        "sc-mc-0234",
+        "sc-tf-0084",
+        "sc-im-0023",
+        "sc-mc-0257",
+        "sc-tf-0081",
+        "sc-mc-0252",
+        "sc-mc-0185",
+        "sc-mc-0130",
+        "sc-tf-0052",
+        "sc-mc-0161",
+        "sc-im-0004",
+        "sc-mc-0077",
+        "sc-mc-0225",
+        "sc-mc-0216",
+        "sc-im-0108",
+        "sc-mc-0068",
+        "sc-im-0043",
+        "sc-im-0136",
+        "sc-mc-0046",
+        "sc-mc-0266",
+        "sc-mc-0028",
+        "sc-im-0117",
+        "sc-tf-0064",
+        "sc-mc-0264"
+      ]
+    },
+    {
+      "mockNumber": 19,
+      "title": "SIA CCTV Operator Test Test 19",
+      "questionIds": [
+        "sc-mc-0240",
+        "sc-mc-0081",
+        "sc-mc-0313",
+        "sc-mc-0129",
+        "sc-mc-0223",
+        "sc-im-0021",
+        "sc-tf-0025",
+        "sc-im-0031",
+        "sc-mc-0326",
+        "sc-mc-0196",
+        "sc-mc-0354",
+        "sc-tf-0050",
+        "sc-mc-0001",
+        "sc-im-0104",
+        "sc-tf-0074",
+        "sc-tf-0054",
+        "sc-mc-0245",
+        "sc-im-0139",
+        "sc-mc-0059",
+        "sc-mc-0006",
+        "sc-mc-0389",
+        "sc-im-0134",
+        "sc-mc-0334",
+        "sc-im-0103"
+      ]
+    },
+    {
+      "mockNumber": 20,
+      "title": "SIA CCTV Operator Test Test 20",
+      "questionIds": [
+        "sc-tf-0061",
+        "sc-im-0080",
+        "sc-mc-0025",
+        "sc-im-0112",
+        "sc-mc-0253",
+        "sc-mc-0331",
+        "sc-mc-0356",
+        "sc-tf-0059",
+        "sc-mc-0205",
+        "sc-mc-0033",
+        "sc-im-0072",
+        "sc-mc-0071",
+        "sc-mc-0079",
+        "sc-mc-0198",
+        "sc-tf-0010",
+        "sc-im-0159",
+        "sc-tf-0079",
+        "sc-mc-0377",
+        "sc-mc-0261",
+        "sc-im-0096",
+        "sc-mc-0047",
+        "sc-mc-0355",
+        "sc-mc-0057",
+        "sc-im-0144"
+      ]
+    },
+    {
+      "mockNumber": 21,
+      "title": "SIA CCTV Operator Test Test 21",
+      "questionIds": [
+        "sc-tf-0006",
+        "sc-tf-0032",
+        "sc-mc-0235",
+        "sc-mc-0074",
+        "sc-im-0160",
+        "sc-mc-0298",
+        "sc-mc-0342",
+        "sc-mc-0109",
+        "sc-mc-0220",
+        "sc-im-0148",
+        "sc-tf-0004",
+        "sc-mc-0135",
+        "sc-mc-0383",
+        "sc-mc-0127",
+        "sc-mc-0294",
+        "sc-im-0154",
+        "sc-im-0032",
+        "sc-mc-0291",
+        "sc-mc-0276",
+        "sc-im-0046",
+        "sc-mc-0203",
+        "sc-mc-0256",
+        "sc-tf-0019",
+        "sc-im-0100"
+      ]
+    },
+    {
+      "mockNumber": 22,
+      "title": "SIA CCTV Operator Test Test 22",
+      "questionIds": [
+        "sc-mc-0286",
+        "sc-mc-0167",
+        "sc-mc-0118",
+        "sc-mc-0375",
+        "sc-im-0079",
+        "sc-tf-0087",
+        "sc-im-0027",
+        "sc-im-0132",
+        "sc-mc-0138",
+        "sc-mc-0206",
+        "sc-mc-0332",
+        "sc-tf-0040",
+        "sc-mc-0139",
+        "sc-tf-0029",
+        "sc-mc-0321",
+        "sc-mc-0361",
+        "sc-mc-0029",
+        "sc-mc-0034",
+        "sc-im-0094",
+        "sc-mc-0237",
+        "sc-im-0011",
+        "sc-tf-0026",
+        "sc-mc-0162",
+        "sc-im-0092"
+      ]
+    },
+    {
+      "mockNumber": 23,
+      "title": "SIA CCTV Operator Test Test 23",
+      "questionIds": [
+        "sc-mc-0353",
+        "sc-mc-0137",
+        "sc-tf-0080",
+        "sc-mc-0385",
+        "sc-mc-0387",
+        "sc-tf-0012",
+        "sc-mc-0088",
+        "sc-im-0039",
+        "sc-im-0111",
+        "sc-mc-0274",
+        "sc-mc-0037",
+        "sc-mc-0182",
+        "sc-mc-0233",
+        "sc-mc-0108",
+        "sc-mc-0084",
+        "sc-im-0095",
+        "sc-tf-0031",
+        "sc-im-0010",
+        "sc-im-0033",
+        "sc-mc-0190",
+        "sc-im-0038",
+        "sc-tf-0043",
+        "sc-mc-0187",
+        "sc-mc-0052"
+      ]
+    },
+    {
+      "mockNumber": 24,
+      "title": "SIA CCTV Operator Test Test 24",
+      "questionIds": [
+        "sc-mc-0322",
+        "sc-mc-0024",
+        "sc-mc-0283",
+        "sc-mc-0371",
+        "sc-im-0003",
+        "sc-tf-0098",
+        "sc-im-0142",
+        "sc-mc-0099",
+        "sc-mc-0151",
+        "sc-mc-0036",
+        "sc-mc-0336",
+        "sc-im-0114",
+        "sc-im-0110",
+        "sc-tf-0082",
+        "sc-tf-0037",
+        "sc-im-0029",
+        "sc-mc-0117",
+        "sc-mc-0186",
+        "sc-tf-0066",
+        "sc-im-0020",
+        "sc-mc-0296",
+        "sc-mc-0041",
+        "sc-mc-0317",
+        "sc-mc-0149"
+      ]
+    },
+    {
+      "mockNumber": 25,
+      "title": "SIA CCTV Operator Test Test 25",
+      "questionIds": [
+        "sc-im-0034",
+        "sc-mc-0136",
+        "sc-mc-0050",
+        "sc-mc-0177",
+        "sc-mc-0310",
+        "sc-im-0086",
+        "sc-mc-0064",
+        "sc-mc-0373",
+        "sc-mc-0023",
+        "sc-tf-0027",
+        "sc-mc-0381",
+        "sc-mc-0194",
+        "sc-mc-0195",
+        "sc-tf-0046",
+        "sc-tf-0011",
+        "sc-im-0001",
+        "sc-im-0158",
+        "sc-im-0012",
+        "sc-mc-0184",
+        "sc-tf-0085",
+        "sc-im-0042",
+        "sc-mc-0173",
+        "sc-mc-0236",
+        "sc-mc-0275"
+      ]
+    },
+    {
+      "mockNumber": 26,
+      "title": "SIA CCTV Operator Test Test 26",
+      "questionIds": [
+        "sc-tf-0073",
+        "sc-mc-0080",
+        "sc-mc-0379",
+        "sc-mc-0004",
+        "sc-mc-0111",
+        "sc-mc-0230",
+        "sc-tf-0041",
+        "sc-mc-0358",
+        "sc-tf-0042",
+        "sc-mc-0302",
+        "sc-im-0014",
+        "sc-mc-0082",
+        "sc-mc-0113",
+        "sc-mc-0215",
+        "sc-mc-0376",
+        "sc-im-0109",
+        "sc-mc-0360",
+        "sc-mc-0143",
+        "sc-im-0065",
+        "sc-im-0126",
+        "sc-mc-0175",
+        "sc-im-0024",
+        "sc-im-0071",
+        "sc-tf-0068"
+      ]
+    },
+    {
+      "mockNumber": 27,
+      "title": "SIA CCTV Operator Test Test 27",
+      "questionIds": [
+        "sc-mc-0309",
+        "sc-im-0155",
+        "sc-im-0068",
+        "sc-mc-0333",
+        "sc-mc-0303",
+        "sc-tf-0093",
+        "sc-tf-0075",
+        "sc-im-0054",
+        "sc-im-0088",
+        "sc-tf-0067",
+        "sc-mc-0048",
+        "sc-mc-0112",
+        "sc-mc-0016",
+        "sc-mc-0120",
+        "sc-im-0053",
+        "sc-im-0130",
+        "sc-mc-0045",
+        "sc-mc-0017",
+        "sc-mc-0217",
+        "sc-mc-0288",
+        "sc-mc-0259",
+        "sc-mc-0014",
+        "sc-mc-0102",
+        "sc-tf-0022"
+      ]
+    },
+    {
+      "mockNumber": 28,
+      "title": "SIA CCTV Operator Test Test 28",
+      "questionIds": [
+        "sc-mc-0380",
+        "sc-mc-0141",
+        "sc-mc-0280",
+        "sc-im-0091",
+        "sc-mc-0307",
+        "sc-mc-0053",
+        "sc-tf-0002",
+        "sc-mc-0115",
+        "sc-mc-0347",
+        "sc-tf-0051",
+        "sc-im-0078",
+        "sc-mc-0345",
+        "sc-im-0016",
+        "sc-im-0002",
+        "sc-mc-0328",
+        "sc-mc-0126",
+        "sc-im-0150",
+        "sc-tf-0058",
+        "sc-mc-0058",
+        "sc-mc-0072",
+        "sc-tf-0007",
+        "sc-im-0055",
+        "sc-mc-0013",
+        "sc-mc-0378"
+      ]
+    },
+    {
+      "mockNumber": 29,
+      "title": "SIA CCTV Operator Test Test 29",
+      "questionIds": [
+        "sc-im-0041",
+        "sc-mc-0246",
+        "sc-mc-0255",
+        "sc-im-0161",
+        "sc-mc-0241",
+        "sc-tf-0094",
+        "sc-im-0129",
+        "sc-mc-0341",
+        "sc-mc-0069",
+        "sc-mc-0035",
+        "sc-im-0074",
+        "sc-mc-0152",
+        "sc-tf-0090",
+        "sc-tf-0013",
+        "sc-mc-0098",
+        "sc-mc-0073",
+        "sc-tf-0069",
+        "sc-mc-0086",
+        "sc-mc-0382",
+        "sc-mc-0076",
+        "sc-mc-0357",
+        "sc-im-0089",
+        "sc-im-0098",
+        "sc-mc-0189"
+      ]
+    },
+    {
+      "mockNumber": 30,
+      "title": "SIA CCTV Operator Test Test 30",
+      "questionIds": [
+        "sc-mc-0289",
+        "sc-mc-0329",
+        "sc-im-0050",
+        "sc-tf-0005",
+        "sc-mc-0231",
+        "sc-mc-0056",
+        "sc-tf-0096",
+        "sc-im-0085",
+        "sc-mc-0311",
+        "sc-im-0151",
+        "sc-mc-0222",
+        "sc-im-0070",
+        "sc-tf-0049",
+        "sc-mc-0218",
+        "sc-mc-0239",
+        "sc-mc-0124",
+        "sc-mc-0054",
+        "sc-mc-0128",
+        "sc-tf-0020",
+        "sc-im-0048",
+        "sc-mc-0092",
+        "sc-mc-0121",
+        "sc-im-0084",
+        "sc-mc-0287"
+      ]
+    },
+    {
+      "mockNumber": 31,
+      "title": "SIA CCTV Operator Test Test 31",
+      "questionIds": [
+        "sc-mc-0300",
+        "sc-mc-0348",
+        "sc-mc-0343",
+        "sc-im-0058",
+        "sc-tf-0047",
+        "sc-mc-0330",
+        "sc-tf-0024",
+        "sc-mc-0238",
+        "sc-mc-0224",
+        "sc-im-0145",
+        "sc-tf-0038",
+        "sc-mc-0094",
+        "sc-tf-0076",
+        "sc-mc-0044",
+        "sc-mc-0030",
+        "sc-mc-0265",
+        "sc-mc-0290",
+        "sc-im-0019",
+        "sc-mc-0242",
+        "sc-im-0113",
+        "sc-im-0062",
+        "sc-im-0006",
+        "sc-mc-0367",
+        "sc-mc-0282"
+      ]
+    },
+    {
+      "mockNumber": 32,
+      "title": "SIA CCTV Operator Test Test 32",
+      "questionIds": [
+        "sc-im-0162",
+        "sc-tf-0015",
+        "sc-im-0018",
+        "sc-mc-0315",
+        "sc-im-0137",
+        "sc-tf-0003",
+        "sc-tf-0078",
+        "sc-mc-0191",
+        "sc-im-0007",
+        "sc-mc-0095",
+        "sc-mc-0027",
+        "sc-mc-0089",
+        "sc-mc-0039",
+        "sc-mc-0199",
+        "sc-mc-0155",
+        "sc-mc-0003",
+        "sc-mc-0178",
+        "sc-mc-0157",
+        "sc-mc-0260",
+        "sc-tf-0072",
+        "sc-mc-0244",
+        "sc-mc-0320",
+        "sc-im-0121",
+        "sc-im-0063"
+      ]
+    },
+    {
+      "mockNumber": 33,
+      "title": "SIA CCTV Operator Test Test 33",
+      "questionIds": [
+        "sc-mc-0107",
+        "sc-mc-0297",
+        "sc-tf-0035",
+        "sc-mc-0140",
+        "sc-im-0077",
+        "sc-mc-0163",
+        "sc-mc-0284",
+        "sc-mc-0078",
+        "sc-mc-0067",
+        "sc-mc-0011",
+        "sc-mc-0181",
+        "sc-im-0119",
+        "sc-mc-0101",
+        "sc-tf-0070",
+        "sc-tf-0063",
+        "sc-mc-0159",
+        "sc-mc-0066",
+        "sc-im-0135",
+        "sc-im-0127",
+        "sc-mc-0221",
+        "sc-tf-0018",
+        "sc-mc-0281",
+        "sc-im-0057",
+        "sc-im-0076"
+      ]
+    },
+    {
+      "mockNumber": 34,
+      "title": "SIA CCTV Operator Test Test 34",
+      "questionIds": [
+        "sc-mc-0123",
+        "sc-tf-0056",
+        "sc-mc-0100",
+        "sc-mc-0267",
+        "sc-tf-0089",
+        "sc-mc-0192",
+        "sc-im-0060",
+        "sc-tf-0044",
+        "sc-mc-0211",
+        "sc-im-0093",
+        "sc-mc-0270",
+        "sc-im-0075",
+        "sc-im-0022",
+        "sc-tf-0017",
+        "sc-mc-0114",
+        "sc-im-0153",
+        "sc-mc-0251",
+        "sc-mc-0145",
+        "sc-mc-0065",
+        "sc-mc-0075",
+        "sc-mc-0324",
+        "sc-mc-0038",
+        "sc-im-0064",
+        "sc-mc-0366"
+      ]
+    },
+    {
+      "mockNumber": 35,
+      "title": "SIA CCTV Operator Test Test 35",
+      "questionIds": [
+        "sc-im-0044",
+        "sc-mc-0232",
+        "sc-im-0102",
+        "sc-mc-0131",
+        "sc-mc-0325",
+        "sc-im-0067",
+        "sc-im-0149",
+        "sc-im-0097",
+        "sc-mc-0090",
+        "sc-mc-0020",
+        "sc-mc-0008",
+        "sc-mc-0229",
+        "sc-tf-0048",
+        "sc-tf-0028",
+        "sc-mc-0250",
+        "sc-tf-0097",
+        "sc-im-0120",
+        "sc-mc-0160",
+        "sc-mc-0158",
+        "sc-tf-0092",
+        "sc-mc-0165",
+        "sc-mc-0312",
+        "sc-mc-0227",
+        "sc-mc-0226"
+      ]
+    },
+    {
+      "mockNumber": 36,
+      "title": "SIA CCTV Operator Test Test 36",
+      "questionIds": [
+        "sc-im-0013",
+        "sc-tf-0088",
+        "sc-im-0017",
+        "sc-mc-0212",
+        "sc-im-0037",
+        "sc-mc-0314",
+        "sc-im-0141",
+        "sc-mc-0362",
+        "sc-tf-0065",
+        "sc-mc-0316",
+        "sc-tf-0033",
+        "sc-im-0122",
+        "sc-mc-0097",
+        "sc-mc-0070",
+        "sc-im-0156",
+        "sc-tf-0021",
+        "sc-mc-0308",
+        "sc-mc-0349",
+        "sc-mc-0134",
+        "sc-mc-0007",
+        "sc-mc-0012",
+        "sc-mc-0202",
+        "sc-mc-0150",
+        "sc-mc-0180"
+      ]
+    },
+    {
+      "mockNumber": 37,
+      "title": "SIA CCTV Operator Test Test 37",
+      "questionIds": [
+        "sc-mc-0372",
+        "sc-mc-0350",
+        "sc-mc-0060",
+        "sc-mc-0327",
+        "sc-mc-0032",
+        "sc-mc-0010",
+        "sc-tf-0057",
+        "sc-mc-0110",
+        "sc-im-0133",
+        "sc-im-0138",
+        "sc-tf-0060",
+        "sc-mc-0144",
+        "sc-mc-0388",
+        "sc-tf-0039",
+        "sc-mc-0277",
+        "sc-tf-0091",
+        "sc-im-0008",
+        "sc-im-0028",
+        "sc-mc-0119",
+        "sc-mc-0170",
+        "sc-im-0115",
+        "sc-mc-0248",
+        "sc-im-0082",
+        "sc-mc-0363"
+      ]
+    },
+    {
+      "mockNumber": 38,
+      "title": "SIA CCTV Operator Test Test 38",
+      "questionIds": [
+        "sc-mc-0153",
+        "sc-mc-0243",
+        "sc-mc-0368",
+        "sc-tf-0053",
+        "sc-mc-0179",
+        "sc-mc-0104",
+        "sc-mc-0384",
+        "sc-im-0047",
+        "sc-im-0051",
+        "sc-mc-0026",
+        "sc-mc-0346",
+        "sc-mc-0176",
+        "sc-im-0146",
+        "sc-tf-0008",
+        "sc-mc-0390",
+        "sc-im-0157",
+        "sc-tf-0077",
+        "sc-tf-0009",
+        "sc-im-0128",
+        "sc-mc-0323",
+        "sc-mc-0219",
+        "sc-im-0056",
+        "sc-mc-0106",
+        "sc-mc-0166"
+      ]
+    },
+    {
+      "mockNumber": 39,
+      "title": "SIA CCTV Operator Test Test 39",
+      "questionIds": [
+        "sc-mc-0337",
+        "sc-mc-0201",
+        "sc-mc-0273",
+        "sc-im-0083",
+        "sc-mc-0171",
+        "sc-tf-0036",
+        "sc-mc-0351",
+        "sc-mc-0295",
+        "sc-mc-0049",
+        "sc-im-0116",
+        "sc-tf-0083",
+        "sc-mc-0148",
+        "sc-tf-0016",
+        "sc-mc-0063",
+        "sc-mc-0214",
+        "sc-mc-0105",
+        "sc-mc-0091",
+        "sc-im-0105",
+        "sc-mc-0193",
+        "sc-tf-0095",
+        "sc-im-0015",
+        "sc-mc-0147",
+        "sc-im-0073",
+        "sc-im-0147"
+      ]
+    },
+    {
+      "mockNumber": 40,
+      "title": "SIA CCTV Operator Test Test 40",
+      "questionIds": [
+        "sc-mc-0002",
+        "sc-tf-0034",
+        "sc-mc-0019",
+        "sc-mc-0272",
+        "sc-im-0069",
+        "sc-mc-0292",
+        "sc-mc-0210",
+        "sc-mc-0061",
+        "sc-im-0087",
+        "sc-tf-0062",
+        "sc-mc-0132",
+        "sc-tf-0045",
+        "sc-tf-0030",
+        "sc-mc-0208",
+        "sc-mc-0009",
+        "sc-mc-0285",
+        "sc-im-0131",
+        "sc-mc-0279",
+        "sc-im-0009",
+        "sc-mc-0085",
+        "sc-mc-0374",
+        "sc-im-0066",
+        "sc-im-0081",
+        "sc-mc-0168"
+      ]
+    },
+    {
+      "mockNumber": 41,
+      "title": "SIA CCTV Operator Test Test 41",
+      "questionIds": [
+        "sc-mc-0031",
+        "sc-mc-0133",
+        "sc-mc-0116",
+        "sc-mc-0338",
+        "sc-mc-0258",
+        "sc-im-0099",
+        "sc-mc-0370",
+        "sc-mc-0319",
+        "sc-mc-0087",
+        "sc-tf-0086",
+        "sc-tf-0055",
+        "sc-mc-0174",
+        "sc-im-0025",
+        "sc-tf-0071",
+        "sc-tf-0023",
+        "sc-im-0052",
+        "sc-mc-0299",
+        "sc-im-0106",
+        "sc-mc-0262",
+        "sc-mc-0278",
+        "sc-mc-0263",
+        "sc-mc-0142",
+        "sc-im-0036",
+        "sc-im-0143"
+      ]
+    },
+    {
+      "mockNumber": 42,
+      "title": "SIA CCTV Operator Test Test 42",
+      "questionIds": [
+        "sc-tf-0001",
+        "sc-im-0140",
+        "sc-im-0026",
+        "sc-mc-0228",
+        "sc-im-0059",
+        "sc-mc-0352",
+        "sc-tf-0014",
+        "sc-mc-0183",
+        "sc-mc-0103",
+        "sc-tf-0084",
+        "sc-mc-0365",
+        "sc-mc-0340",
+        "sc-mc-0364",
+        "sc-mc-0249",
+        "sc-mc-0318",
+        "sc-im-0030",
+        "sc-mc-0344",
+        "sc-mc-0293",
+        "sc-im-0045",
+        "sc-mc-0359",
+        "sc-im-0040",
+        "sc-mc-0172",
+        "sc-mc-0055",
+        "sc-tf-0081"
+      ]
+    },
+    {
+      "mockNumber": 43,
+      "title": "SIA CCTV Operator Test Test 43",
+      "questionIds": [
+        "sc-mc-0386",
+        "sc-mc-0268",
+        "sc-mc-0122",
+        "sc-im-0005",
+        "sc-mc-0043",
+        "sc-im-0049",
+        "sc-mc-0204",
+        "sc-im-0123",
+        "sc-mc-0022",
+        "sc-mc-0188",
+        "sc-mc-0306",
+        "sc-im-0090",
+        "sc-tf-0064",
+        "sc-tf-0052",
+        "sc-mc-0018",
+        "sc-mc-0125",
+        "sc-im-0061",
+        "sc-mc-0335",
+        "sc-tf-0025",
+        "sc-mc-0209",
+        "sc-mc-0169",
+        "sc-im-0118",
+        "sc-tf-0050",
+        "sc-mc-0197"
+      ]
+    },
+    {
+      "mockNumber": 44,
+      "title": "SIA CCTV Operator Test Test 44",
+      "questionIds": [
+        "sc-mc-0062",
+        "sc-mc-0271",
+        "sc-tf-0059",
+        "sc-tf-0054",
+        "sc-im-0107",
+        "sc-im-0101",
+        "sc-mc-0369",
+        "sc-im-0125",
+        "sc-tf-0074",
+        "sc-mc-0213",
+        "sc-mc-0207",
+        "sc-mc-0146",
+        "sc-mc-0093",
+        "sc-mc-0154",
+        "sc-im-0035",
+        "sc-mc-0015",
+        "sc-mc-0083",
+        "sc-mc-0301",
+        "sc-im-0152",
+        "sc-mc-0269",
+        "sc-tf-0010",
+        "sc-mc-0005",
+        "sc-im-0124",
+        "sc-mc-0021"
+      ]
+    },
+    {
+      "mockNumber": 45,
+      "title": "SIA CCTV Operator Test Test 45",
+      "questionIds": [
+        "sc-mc-0164",
+        "sc-im-0136",
+        "sc-mc-0216",
+        "sc-mc-0200",
+        "sc-im-0023",
+        "sc-mc-0077",
+        "sc-im-0108",
+        "sc-mc-0156",
+        "sc-mc-0040",
+        "sc-mc-0304",
+        "sc-tf-0032",
+        "sc-tf-0006",
+        "sc-mc-0254",
+        "sc-mc-0247",
+        "sc-im-0043",
+        "sc-tf-0079",
+        "sc-im-0117",
+        "sc-tf-0061",
+        "sc-mc-0339",
+        "sc-mc-0051",
+        "sc-mc-0305",
+        "sc-im-0004",
+        "sc-mc-0096",
+        "sc-mc-0042"
+      ]
+    }
+  ]
 }
