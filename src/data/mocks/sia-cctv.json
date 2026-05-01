@@ -6693,6 +6693,186 @@
       "imageAlt": "A plastic evidence bag with a red security seal that says 'VOID' if peeled.",
       "explanation": "Tamper-evident seals are used to ensure that evidence has not been interfered with during the chain of custody.",
       "id": "sc-im-0108"
+    },
+    {
+      "explanation": "Blue circular signs indicate mandatory actions that must be followed according to health and safety regulations.",
+      "question": "Under health and safety sign regulations, what does this blue circular sign represent?",
+      "imageAlt": "A blue circular sign with a white symbol of ear defenders.",
+      "options": [
+        "Warning of a hazard",
+        "Mandatory requirement",
+        "Prohibited action",
+        "Safe condition information"
+      ],
+      "type": "image_question",
+      "correctAnswer": 1,
+      "imageDescription": "A standard UK mandatory health and safety sign: a solid blue circle with a white pictogram of person wearing ear protection.",
+      "id": "sc-im-0109"
+    },
+    {
+      "imageDescription": "The front cover of a UK Parliament Act titled 'Private Security Industry Act 2001' with the Royal Coat of Arms at the top.",
+      "correctAnswer": 0,
+      "type": "image_question",
+      "options": [
+        "Private Security Industry Act 2001",
+        "Data Protection Act 2018",
+        "Human Rights Act 1998",
+        "Freedom of Information Act 2000"
+      ],
+      "imageAlt": "A document header titled 'Private Security Industry Act 2001'.",
+      "question": "Which piece of legislation established the SIA and the requirement for CCTV operators to be licensed?",
+      "explanation": "The PSIA 2001 is the primary legislation that established the SIA and the licensing framework for the private security industry.",
+      "id": "sc-im-0110"
+    },
+    {
+      "imageDescription": "A high-speed dome CCTV camera mounted on a wall bracket with overlaid arrows indicating rotation and up/down movement.",
+      "correctAnswer": 2,
+      "type": "image_question",
+      "options": [
+        "Fixed lens camera",
+        "Static bullet camera",
+        "PTZ (Pan-Tilt-Zoom) camera",
+        "Thermal imaging camera"
+      ],
+      "imageAlt": "A dome camera with 'Pan-Tilt-Zoom' functional arrows around it.",
+      "question": "What type of camera is shown in the image that allows an operator to remotely move its field of vision?",
+      "explanation": "A PTZ (Pan-Tilt-Zoom) camera allows the operator to move the lens horizontally, vertically, and adjust the focal length.",
+      "id": "sc-im-0111"
+    },
+    {
+      "explanation": "Correct posture involves feet flat on the floor or a footrest to prevent musculoskeletal strain during long shifts.",
+      "imageAlt": "An illustration of a person sitting at a desk with feet flat on the floor.",
+      "options": [
+        "Tiptoes touching the floor",
+        "Feet flat on the floor or a footrest",
+        "Legs crossed at the knees",
+        "Feet tucked under the chair"
+      ],
+      "question": "According to DSE guidance for control room operators, what is the correct position for the feet?",
+      "type": "image_question",
+      "imageDescription": "An ergonomic diagram of a person sitting at a computer workstation, highlighting the lower body with feet positioned flat on the floor.",
+      "correctAnswer": 1,
+      "id": "sc-im-0112"
+    },
+    {
+      "type": "image_question",
+      "correctAnswer": 3,
+      "imageDescription": "A standard UK warning sign: a yellow triangle with a black border containing a black lightning bolt symbol.",
+      "explanation": "The yellow triangle indicates a warning, and the lightning bolt specifically warns of the risk of electric shock.",
+      "question": "An operator notices this sign on a piece of equipment in the server room. What does it warn against?",
+      "imageAlt": "A yellow triangular sign with a black lightning bolt.",
+      "options": [
+        "Toxic chemicals",
+        "Tripping hazard",
+        "High temperatures spotted",
+        "Risk of electric shock spotted"
+      ],
+      "id": "sc-im-0113"
+    },
+    {
+      "explanation": "A RAID (Redundant Array of Independent Disks) setup uses multiple hard drives to ensure footage is not lost if one drive fails.",
+      "question": "What system is used in the hardware shown to ensure video data is preserved if a single hard drive fails?",
+      "imageAlt": "A server rack showing multiple removable hard drive bays.",
+      "options": [
+        "RAID (Redundant Array of Independent Disks)",
+        "Single SD card storage",
+        "Cloud-only buffer memory",
+        "Analogue tape deck"
+      ],
+      "type": "image_question",
+      "imageDescription": "Close-up of a rack-mounted storage server with several hard drive caddies slotted in, commonly used for data redundancy.",
+      "correctAnswer": 0,
+      "id": "sc-im-0114"
+    },
+    {
+      "type": "image_question",
+      "imageDescription": "A standard yellow CCTV advisory sign with a black camera icon and space for the operator's contact details.",
+      "correctAnswer": 1,
+      "explanation": "The Data Protection Act 2018 requires symbols or signs to inform the public they are in an area covered by CCTV.",
+      "question": "The use of this sign is a requirement under which legislation to ensure transparency with the public?",
+      "imageAlt": "A yellow sign with a camera symbol and text about CCTV usage.",
+      "options": [
+        "Health and Safety at Work Act",
+        "Data Protection Act 2018 (GDPR)",
+        "The Theft Act 1968",
+        "The Equality Act 2010"
+      ],
+      "id": "sc-im-0115"
+    },
+    {
+      "imageDescription": "A professional CCTV telemetry controller featuring a 3-axis joystick, a numeric keypad, and an LCD display.",
+      "correctAnswer": 3,
+      "type": "image_question",
+      "question": "What device is shown in the image that allows an operator to control the movement of a PTZ camera?",
+      "imageAlt": "A CCTV control keyboard with a three-axis joystick.",
+      "options": [
+        "Computer mouse only",
+        "Touchscreen panel",
+        "QWERTY keyboard",
+        "Telemetry joystick controller"
+      ],
+      "explanation": "A joystick is the standard tool used by CCTV operators to smoothly control the movement and zoom of PTZ cameras.",
+      "id": "sc-im-0116"
+    },
+    {
+      "imageDescription": "A formal document template with the heading 'Subject Access Request' and fields for name, date, and description of incident.",
+      "correctAnswer": 2,
+      "type": "image_question",
+      "question": "What is the name of the request being made when a member of the public asks for this form to view footage of themselves?",
+      "options": [
+        "Freedom of Information form",
+        "Criminal record check request",
+        "Subject Access Request (SAR)",
+        "CCTV maintenance logform"
+      ],
+      "imageAlt": "A form titled 'Subject Access Request'.",
+      "explanation": "A Subject Access Request (SAR) allows individuals to see information or footage held about them by an organisation.",
+      "id": "sc-im-0117"
+    },
+    {
+      "question": "What type of lens is shown, allowing for the manual adjustment of the focal length/zoom?",
+      "options": [
+        "Varifocal lens",
+        "Fixed 3.6mm lens",
+        "Pinhole lens",
+        "Fisheye lens"
+      ],
+      "imageAlt": "A camera lens with adjustable rings for 'Zoom' and 'Focus'.",
+      "explanation": "A varifocal lens allows the installer or operator to manually or remotely adjust the focal length to change the field of view.",
+      "imageDescription": "A close-up of a CCTV camera lens showing two adjustment rings labelled 'T/W' (Tele/Wide) and 'N/F' (Near/Far).",
+      "correctAnswer": 0,
+      "type": "image_question",
+      "id": "sc-im-0118"
+    },
+    {
+      "options": [
+        "The protection of company profits",
+        "The arrest of all trespassers",
+        "The protection of life and public safety",
+        "The maintenance of technical equipment"
+      ],
+      "imageAlt": "A graphic showing people, a building, and money.",
+      "question": "According to the core principles of the SIA, what is the primary objective represented by the 'person' icon in this hierarchy?",
+      "explanation": "The first priority of any security operative, including CCTV operators, is the protection of life and the safety of the public.",
+      "correctAnswer": 2,
+      "imageDescription": "An instructional graphic showing three icons: a person (Life), a building (Property), and a pound sign (Assets).",
+      "type": "image_question",
+      "id": "sc-im-0119"
+    },
+    {
+      "correctAnswer": 1,
+      "imageDescription": "The rear view of a 16-channel Digital Video Recorder (DVR) showing numerous BNC video inputs for analogue cameras.",
+      "type": "image_question",
+      "imageAlt": "A device with multiple BNC ports on the back panels.",
+      "options": [
+        "Network Video Recorder (NVR)",
+        "Digital Video Recorder (DVR)",
+        "Video Matrix Switcher",
+        "PoE Network Switch"
+      ],
+      "question": "What device is shown, used specifically to record footage from multiple analogue cameras?",
+      "explanation": "A Digital Video Recorder (DVR) is used to convert and store footage from older analogue cameras onto a digital hard drive.",
+      "id": "sc-im-0120"
     }
   ],
   "mocks": []
