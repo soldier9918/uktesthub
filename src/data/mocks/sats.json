@@ -13588,6 +13588,3182 @@
       "correctAnswer": 0,
       "type": "multiple_choice",
       "id": "s-mc-1045"
+    },
+    {
+      "type": "numeric_entry",
+      "explanation": "To find the difference, subtract the smaller number from the larger number: 42 - 25 = 17.",
+      "correctAnswer": 17,
+      "tolerance": 0,
+      "question": "What is the difference between 42 and 25?",
+      "id": "s-ne-0001"
+    },
+    {
+      "question": "Write 3/4 as a decimal.",
+      "tolerance": 0,
+      "correctAnswer": 0.75,
+      "explanation": "To convert the fraction 3/4 to a decimal, divide 3 by 4.",
+      "type": "numeric_entry",
+      "id": "s-ne-0002"
+    },
+    {
+      "correctAnswer": 240,
+      "tolerance": 0,
+      "question": "A shop sells juice in 30ml bottles. How many millilitres are in 8 bottles?",
+      "unit": "ml",
+      "type": "numeric_entry",
+      "explanation": "Multiply the number of bottles by the capacity of each bottle: 8 x 30 = 240.",
+      "id": "s-ne-0003"
+    },
+    {
+      "explanation": "A hexagon has 6 sides. To find the perimeter, multiply the length of one side by 6: 9 x 6 = 54.",
+      "type": "numeric_entry",
+      "question": "What is the perimeter of a regular hexagon with sides of 9cm each?",
+      "unit": "cm",
+      "correctAnswer": 54,
+      "tolerance": 0,
+      "id": "s-ne-0004"
+    },
+    {
+      "correctAnswer": 480,
+      "tolerance": 0,
+      "question": "How many minutes are there in 8 hours?",
+      "unit": "minutes",
+      "type": "numeric_entry",
+      "explanation": "There are 60 minutes in one hour. Multiply 8 hours by 60 minutes to get 480.",
+      "id": "s-ne-0005"
+    },
+    {
+      "unit": "£",
+      "question": "Liam buys a book for £6.50 and a pen for £4.85. How much does he spend in total?",
+      "tolerance": 0,
+      "correctAnswer": 11.35,
+      "explanation": "Add the two amounts together: £6.50 + £4.85 = £11.35.",
+      "type": "numeric_entry",
+      "id": "s-ne-0006"
+    },
+    {
+      "explanation": "To find 1/5, divide the total by 5: 175 ÷ 5 = 35.",
+      "type": "numeric_entry",
+      "question": "Calculate 1/5 of 175.",
+      "tolerance": 0,
+      "correctAnswer": 35,
+      "id": "s-ne-0007"
+    },
+    {
+      "type": "numeric_entry",
+      "explanation": "Follow BODMAS: Multiply first (3 x 4 = 12), then add (2 + 12 = 14).",
+      "correctAnswer": 14,
+      "tolerance": 0,
+      "question": "What is the value of 2 + 3 x 4?",
+      "id": "s-ne-0008"
+    },
+    {
+      "type": "numeric_entry",
+      "explanation": "In the number 3,482, the 8 is in the tens column, so its value is 80.",
+      "tolerance": 0,
+      "correctAnswer": 80,
+      "question": "What is the value of the digit 8 in the number 3,482?",
+      "id": "s-ne-0009"
+    },
+    {
+      "explanation": "There are 1000 grams in a kilogram. Divide 2400 by 1000 to get 2.4.",
+      "type": "numeric_entry",
+      "unit": "kg",
+      "question": "A bag of flour weighs 2,400g. What is this weight in kilograms?",
+      "correctAnswer": 2.4,
+      "tolerance": 0,
+      "id": "s-ne-0010"
+    },
+    {
+      "correctAnswer": 45,
+      "tolerance": 0,
+      "question": "An angle on a straight line is 135 degrees. What is the size of the other angle?",
+      "unit": "degrees",
+      "type": "numeric_entry",
+      "explanation": "The sum of angles on a straight line is 180 degrees. 180 - 135 = 45.",
+      "id": "s-ne-0011"
+    },
+    {
+      "type": "numeric_entry",
+      "explanation": "Divide the total number of eggs by the number in each box: 72 ÷ 6 = 12.",
+      "correctAnswer": 12,
+      "tolerance": 0,
+      "question": "A farmer has 72 eggs. He puts them into boxes of 6. How many boxes does he fill?",
+      "id": "s-ne-0012"
+    },
+    {
+      "type": "numeric_entry",
+      "correctAnswer": 117,
+      "explanation": "To find the sum of two numbers, add them together: 84 + 33 = 117.",
+      "question": "What is the sum of 84 and 33?",
+      "id": "s-ne-0013"
+    },
+    {
+      "explanation": "There are 1,000 metres in 1 kilometre, so multiply 3 by 1,000.",
+      "type": "numeric_entry",
+      "unit": "m",
+      "question": "How many metres are in 3 kilometres?",
+      "correctAnswer": 3000,
+      "id": "s-ne-0014"
+    },
+    {
+      "correctAnswer": 0.4,
+      "type": "numeric_entry",
+      "explanation": "Divide 2 by 5 to find the decimal equivalent. 2 ÷ 5 = 0.4.",
+      "question": "Write 2/5 as a decimal number.",
+      "id": "s-ne-0015"
+    },
+    {
+      "correctAnswer": 120,
+      "unit": "cm",
+      "question": "What is the perimeter of a square with a side length of 30cm?",
+      "type": "numeric_entry",
+      "explanation": "A square has four equal sides. Multiply 30 by 4 to find the perimeter.",
+      "id": "s-ne-0016"
+    },
+    {
+      "explanation": "First find 1/10 by dividing by 10 (90/10 = 9), then multiply by 3 (9 x 3 = 27).",
+      "question": "What is 30% of 90?",
+      "type": "numeric_entry",
+      "correctAnswer": 27,
+      "id": "s-ne-0017"
+    },
+    {
+      "question": "Work out the difference between 1,248 and 745.",
+      "explanation": "Subtract the smaller number from the larger number: 1,248 - 745 = 503.",
+      "type": "numeric_entry",
+      "correctAnswer": 503,
+      "id": "s-ne-0018"
+    },
+    {
+      "question": "Calculate 84 divided by 4.",
+      "explanation": "Divide 84 by 4 using short division to find the answer.",
+      "type": "numeric_entry",
+      "correctAnswer": 21,
+      "id": "s-ne-0019"
+    },
+    {
+      "explanation": "Subtract the cost of the magazine from the total amount: £10.00 - £5.75 = £4.25.",
+      "type": "numeric_entry",
+      "question": "Maya has £10. She spends £5.75 on a magazine. How much change does she get?",
+      "unit": "£",
+      "correctAnswer": 4.25,
+      "id": "s-ne-0020"
+    },
+    {
+      "type": "numeric_entry",
+      "explanation": "There are 60 seconds in a minute. 8 minutes multiplied by 60 equals 480.",
+      "correctAnswer": 480,
+      "question": "How many seconds are in 8 minutes?",
+      "unit": "seconds",
+      "id": "s-ne-0021"
+    },
+    {
+      "explanation": "A right angle is 90 degrees. Subtract the known angle from 90: 90 - 45 = 45.",
+      "type": "numeric_entry",
+      "unit": "degrees",
+      "question": "Two angles make a right angle. One angle is 45 degrees. What is the size of the other angle?",
+      "correctAnswer": 45,
+      "id": "s-ne-0022"
+    },
+    {
+      "correctAnswer": 350,
+      "type": "numeric_entry",
+      "question": "What is 1/4 of 1,400?",
+      "explanation": "Half of 1,000 is 500, and half of 500 is 250. 250 + 100 = 350. Alternatively, 1,400 divided by 4.",
+      "id": "s-ne-0023"
+    },
+    {
+      "question": "A cuboid has a length of 6cm, a width of 3cm and a height of 3cm. What is its volume?",
+      "unit": "cm³",
+      "correctAnswer": 54,
+      "explanation": "The rule for the volume of a cuboid is length x width x height. 3 x 3 x 6 = 54.",
+      "type": "numeric_entry",
+      "id": "s-ne-0024"
+    },
+    {
+      "question": "What is the sum of 72 and 45?",
+      "correctAnswer": 117,
+      "tolerance": 0,
+      "explanation": "To find the total, add the two numbers: 72 + 45 = 117.",
+      "type": "numeric_entry",
+      "id": "s-ne-0025"
+    },
+    {
+      "question": "A bag of potatoes weighs 3kg. What is this weight in grams?",
+      "unit": "g",
+      "tolerance": 0,
+      "correctAnswer": 3000,
+      "explanation": "To convert kilograms to grams, multiply by 1,000 (3 x 1,000 = 3,000).",
+      "type": "numeric_entry",
+      "id": "s-ne-0026"
+    },
+    {
+      "tolerance": 0,
+      "correctAnswer": 270,
+      "question": "What is 3/10 of 900?",
+      "type": "numeric_entry",
+      "explanation": "Divide the number by the denominator: 900 divided by 10 is 90. Then multiply by the numerator: 90 x 3 = 270.",
+      "id": "s-ne-0027"
+    },
+    {
+      "question": "What is the value of 20 + 12 ÷ 3?",
+      "tolerance": 0,
+      "correctAnswer": 24,
+      "explanation": "According to BODMAS rules, perform the division (12 ÷ 3 = 4) then the addition (20 + 4 = 24).",
+      "type": "numeric_entry",
+      "id": "s-ne-0028"
+    },
+    {
+      "type": "numeric_entry",
+      "explanation": "To divide by 100, move the decimal point two places to the left.",
+      "tolerance": 0,
+      "correctAnswer": 6.8,
+      "question": "Calculate 680 ÷ 100.",
+      "id": "s-ne-0029"
+    },
+    {
+      "type": "numeric_entry",
+      "explanation": "The fraction 3/4 is equivalent to 75/100, which is written as 0.75 in decimal form.",
+      "correctAnswer": 0.75,
+      "tolerance": 0,
+      "question": "Write the fraction 3/4 as a decimal.",
+      "id": "s-ne-0030"
+    },
+    {
+      "tolerance": 0,
+      "correctAnswer": 26,
+      "unit": "m",
+      "question": "A rectangular garden has a length of 8m and a width of 5m. What is its perimeter?",
+      "type": "numeric_entry",
+      "explanation": "The perimeter is the total distance around the edge: (8 + 5) x 2 = 26.",
+      "id": "s-ne-0031"
+    },
+    {
+      "explanation": "10% of 350 is 35 (350 ÷ 10).",
+      "type": "numeric_entry",
+      "question": "What is 10% of 350?",
+      "tolerance": 0,
+      "correctAnswer": 35,
+      "id": "s-ne-0032"
+    },
+    {
+      "correctAnswer": 15,
+      "tolerance": 0,
+      "question": "A right angle is split into two angles. One angle is 75 degrees. What is the size of the other angle?",
+      "unit": "degrees",
+      "type": "numeric_entry",
+      "explanation": "Subtract the known angle from the total for a right angle: 90 - 75 = 15.",
+      "id": "s-ne-0033"
+    },
+    {
+      "question": "How many faces and edges does a cube have in total?",
+      "tolerance": 0,
+      "correctAnswer": 18,
+      "explanation": "The number of faces (6), edges (12) and vertices (8) of a cube are constants. 6 + 12 = 18.",
+      "type": "numeric_entry",
+      "id": "s-ne-0034"
+    },
+    {
+      "correctAnswer": 1.25,
+      "tolerance": 0,
+      "question": "Sam buys a sandwich for £3.75. He pays with a £5 note. How much change does he get?",
+      "unit": "£",
+      "type": "numeric_entry",
+      "explanation": "Subtract the cost from the total money: £5.00 - £3.75 = £1.25.",
+      "id": "s-ne-0035"
+    },
+    {
+      "explanation": "There are 60 minutes in one hour. 60 x 2 = 120.",
+      "type": "numeric_entry",
+      "question": "How many minutes are there in 2 hours?",
+      "correctAnswer": 120,
+      "tolerance": 0,
+      "id": "s-ne-0036"
+    },
+    {
+      "question": "Calculate 85 + 27.",
+      "explanation": "To find the sum, add the hundreds, tens and units: 80 + 32 = 112.",
+      "type": "numeric_entry",
+      "correctAnswer": 112,
+      "id": "s-ne-0037"
+    },
+    {
+      "explanation": "There are 1,000 millilitres in 1 litre, so 3 litres is 3 multiplied by 1,000.",
+      "type": "numeric_entry",
+      "unit": "ml",
+      "question": "A bottle contains 3 litres of water. How many millilitres is this?",
+      "correctAnswer": 3000,
+      "id": "s-ne-0038"
+    },
+    {
+      "explanation": "To convert a fraction to a decimal, divide the numerator by the denominator (4 ÷ 5 = 0.8).",
+      "question": "Write 4/5 as a decimal.",
+      "type": "numeric_entry",
+      "correctAnswer": 0.8,
+      "id": "s-ne-0039"
+    },
+    {
+      "type": "numeric_entry",
+      "explanation": "The area of a rectangle is found by multiplying the length by the width (8 x 6 = 48).",
+      "correctAnswer": 48,
+      "tolerance": 0,
+      "question": "A rectangle has a length of 8cm and a width of 6cm. What is its area?",
+      "unit": "cm²",
+      "id": "s-ne-0040"
+    },
+    {
+      "type": "numeric_entry",
+      "explanation": "Angles on a straight line always add up to 180 degrees. 180 - 45 = 135.",
+      "tolerance": 0,
+      "correctAnswer": 135,
+      "question": "A straight line is divided into two angles. One angle is 45 degrees. What is the size of the other angle?",
+      "unit": "degrees",
+      "id": "s-ne-0041"
+    },
+    {
+      "question": "What is 45 divided by 100?",
+      "explanation": "To divide by 100, move the decimal point two places to the left.",
+      "correctAnswer": 0.45,
+      "type": "numeric_entry",
+      "id": "s-ne-0042"
+    },
+    {
+      "type": "numeric_entry",
+      "explanation": "100 pennies make £1, so 800p is £8, leaving 5p which is written as £0.05.",
+      "correctAnswer": 8.05,
+      "unit": "£",
+      "question": "Convert 805p into pounds (£).",
+      "id": "s-ne-0043"
+    },
+    {
+      "correctAnswer": 42,
+      "type": "numeric_entry",
+      "explanation": "First find 1/7 of 49 by dividing by 7 (7), then multiply by 6 (7 x 6 = 42).",
+      "question": "What is 6/7 of 49?",
+      "id": "s-ne-0044"
+    },
+    {
+      "explanation": "Following BODMAS, perform the multiplication first (4 x 3 = 12) then add the remaining number (4 + 12 = 16).",
+      "question": "What is the value of 4 + 4 × 3?",
+      "type": "numeric_entry",
+      "correctAnswer": 16,
+      "id": "s-ne-0045"
+    },
+    {
+      "correctAnswer": 450,
+      "type": "numeric_entry",
+      "question": "What is 90% of 500?",
+      "explanation": "10% of 500 is 50. Subtract 50 from 500 to find 90%, which is 450.",
+      "id": "s-ne-0046"
+    },
+    {
+      "correctAnswer": 1.5,
+      "question": "How many hours are there in 90 minutes?",
+      "unit": "hours",
+      "type": "numeric_entry",
+      "explanation": "There are 60 minutes in an hour. 90 minutes is one full hour and 30 minutes (half an hour), which is 1.5 hours.",
+      "id": "s-ne-0047"
+    },
+    {
+      "type": "numeric_entry",
+      "explanation": "A square has 4 equal sides. To find the length of one side, divide the total perimeter by 4 (48 ÷ 4 = 12).",
+      "correctAnswer": 12,
+      "question": "The perimeter of a square is 48cm. What is the length of one side?",
+      "unit": "cm",
+      "id": "s-ne-0048"
+    },
+    {
+      "question": "What is 139 - 27?",
+      "type": "numeric_entry",
+      "correctAnswer": 112,
+      "explanation": "To subtract 27 from 139, first subtract 20 to get 119, then subtract 7 to get 112.",
+      "id": "s-ne-0049"
+    },
+    {
+      "type": "numeric_entry",
+      "question": "Write the fraction 1/4 as a decimal.",
+      "correctAnswer": 0.25,
+      "explanation": "The fraction 1/4 means 1 divided by 4, which is 0.25.",
+      "id": "s-ne-0050"
+    },
+    {
+      "unit": "g",
+      "question": "How many grams are there in 3 kilograms?",
+      "explanation": "There are 1,000 grams in 1 kilogram, so 3 x 1,000 = 3,000 grams.",
+      "type": "numeric_entry",
+      "correctAnswer": 3000,
+      "id": "s-ne-0051"
+    },
+    {
+      "correctAnswer": 55,
+      "type": "numeric_entry",
+      "explanation": "Angles on a straight line add up to 180 degrees. 180 - 125 = 55.",
+      "unit": "degrees",
+      "question": "A straight line is divided into two angles. One angle is 125 degrees. What is the size of the other angle?",
+      "id": "s-ne-0052"
+    },
+    {
+      "question": "What is 6 divided by 10?",
+      "type": "numeric_entry",
+      "explanation": "Dividing a number by 10 moves the decimal point one place to the left.",
+      "correctAnswer": 0.6,
+      "id": "s-ne-0053"
+    },
+    {
+      "type": "numeric_entry",
+      "question": "What is the value of 7 + 3 × 2?",
+      "correctAnswer": 13,
+      "explanation": "Using BODMAS, multiply first: 3 x 2 = 6. Then add: 7 + 6 = 13.",
+      "id": "s-ne-0054"
+    },
+    {
+      "correctAnswer": 35,
+      "explanation": "10% of 140 is 14. 20% is 28, and 5% is 7. 28 + 7 = 35.",
+      "question": "What is 25% of 140?",
+      "type": "numeric_entry",
+      "id": "s-ne-0055"
+    },
+    {
+      "correctAnswer": 1.25,
+      "explanation": "There are 100 pence in £1. Divide 125 by 100 to get £1.25.",
+      "question": "Convert 125p into pounds (£).",
+      "type": "numeric_entry",
+      "id": "s-ne-0056"
+    },
+    {
+      "correctAnswer": 16,
+      "explanation": "First, find 1/4 of 20 (20 ÷ 4 = 5). Then multiply by 3 to find 3/4 (5 x 3 = 15). Finally, 15 + 1 = 16.",
+      "question": "What is 3/4 of 20, plus 1?",
+      "type": "numeric_entry",
+      "id": "s-ne-0057"
+    },
+    {
+      "explanation": "There are 60 minutes in an hour. 3 x 60 = 180, and 180 + 30 = 210 minutes.",
+      "unit": "minutes",
+      "question": "How many minutes are there in 3 and a half hours?",
+      "correctAnswer": 210,
+      "type": "numeric_entry",
+      "id": "s-ne-0058"
+    },
+    {
+      "type": "numeric_entry",
+      "correctAnswer": 48,
+      "unit": "cm²",
+      "question": "A rectangle has a length of 12cm and a width of 4cm. What is its area?",
+      "explanation": "Area is calculated by multiplying length by width. 12cm x 4cm = 48cm².",
+      "id": "s-ne-0059"
+    },
+    {
+      "type": "numeric_entry",
+      "question": "How many faces does a square-based pyramid have?",
+      "explanation": "A square based pyramid has 1 square face on the bottom and 4 triangular faces on the sides.",
+      "correctAnswer": 6,
+      "id": "s-ne-0060"
+    },
+    {
+      "explanation": "To find 1/8 of a number, divide it by 8. Then multiply 14 by 8 to find the whole amount.",
+      "question": "If 1/8 of a number is 14, what is the number?",
+      "type": "numeric_entry",
+      "correctAnswer": 112,
+      "id": "s-ne-0061"
+    },
+    {
+      "correctAnswer": 0.65,
+      "type": "numeric_entry",
+      "question": "Write 65% as a decimal.",
+      "explanation": "To convert a percentage to a decimal, divide by 100. 65 ÷ 100 = 0.65.",
+      "id": "s-ne-0062"
+    },
+    {
+      "question": "A bottle contains 2,400ml of water. How many litres is this?",
+      "correctAnswer": 2.4,
+      "explanation": "There are 1,000 millilitres in 1 litre. Divide 2,400 by 1,000 to get the answer in litres.",
+      "type": "numeric_entry",
+      "unit": "litres",
+      "id": "s-ne-0063"
+    },
+    {
+      "unit": "degrees",
+      "type": "numeric_entry",
+      "explanation": "A full turn is 360 degrees. 360 minus 60 equals 300.",
+      "question": "How many degrees are in a full turn minus 60 degrees?",
+      "correctAnswer": 300,
+      "id": "s-ne-0064"
+    },
+    {
+      "correctAnswer": 12,
+      "type": "numeric_entry",
+      "question": "Work out the value of 7 + 15 ÷ 3.",
+      "explanation": "Using BODMAS, perform the division first (15 ÷ 3 = 5), then the addition (7 + 5 = 12).",
+      "id": "s-ne-0065"
+    },
+    {
+      "unit": "£",
+      "type": "numeric_entry",
+      "explanation": "Subtract the costs of the apple and pear from the total (£2.00 - 0.45 = £1.55).",
+      "question": "An apple costs 25p and a pear costs 20p. How much change do you get from £2.00?",
+      "correctAnswer": 1.55,
+      "id": "s-ne-0066"
+    },
+    {
+      "correctAnswer": 13,
+      "question": "What is the range of these numbers: 5, 12, 8, 18, 10?",
+      "type": "numeric_entry",
+      "explanation": "The range is the difference between the highest and lowest numbers (18 - 5 = 13).",
+      "id": "s-ne-0067"
+    },
+    {
+      "explanation": "A perimeter is the total distance around the edge. 8 + 8 + 5 + 5 = 26.",
+      "correctAnswer": 26,
+      "question": "A rectangle has a length of 8cm and a width of 5cm. What is its perimeter?",
+      "unit": "cm",
+      "type": "numeric_entry",
+      "id": "s-ne-0068"
+    },
+    {
+      "explanation": "To multiply by 100, move the digits two places to the left. 12 x 100 = 1,200.",
+      "correctAnswer": 1200,
+      "question": "What is 12 multiplied by 100?",
+      "type": "numeric_entry",
+      "id": "s-ne-0069"
+    },
+    {
+      "explanation": "A cube has 12 edges, 6 faces, and 8 vertices (corners).",
+      "question": "How many vertices does a cube have?",
+      "type": "numeric_entry",
+      "correctAnswer": 8,
+      "id": "s-ne-0070"
+    },
+    {
+      "type": "numeric_entry",
+      "question": "What is 50 divided by 4?",
+      "correctAnswer": 12.5,
+      "explanation": "Half of 50 is 25, and half of 25 is 12.5.",
+      "id": "s-ne-0071"
+    },
+    {
+      "question": "What is the value of the digit 4 in the number 3.24?",
+      "type": "numeric_entry",
+      "correctAnswer": 0.04,
+      "explanation": "The first decimal place is tenths, and the second is hundredths. 4 hundredths is written as 0.04.",
+      "id": "s-ne-0072"
+    },
+    {
+      "tolerance": 0,
+      "question": "How many seconds are there in 2 minutes?",
+      "unit": "seconds",
+      "type": "numeric_entry",
+      "explanation": "One minute has 60 seconds, so two minutes is 60 multiplied by 2.",
+      "correctAnswer": 120,
+      "id": "s-ne-0073"
+    },
+    {
+      "question": "Write 43% as a decimal.",
+      "tolerance": 0,
+      "correctAnswer": 0.43,
+      "explanation": "To convert from a percentage to a decimal, divide the number by 100.",
+      "type": "numeric_entry",
+      "id": "s-ne-0074"
+    },
+    {
+      "type": "numeric_entry",
+      "correctAnswer": 11.53,
+      "explanation": "First add the units (8+3=11), then the tenths (0.2+0.1=0.3), then the hundredths (0.05+0.18 for 0.23), total 11.53.",
+      "question": "What is 8.25 + 3.28?",
+      "tolerance": 0,
+      "id": "s-ne-0075"
+    },
+    {
+      "tolerance": 0,
+      "question": "Calculate 3/5 of 80.",
+      "type": "numeric_entry",
+      "correctAnswer": 48,
+      "explanation": "To find a fraction of a number, divide by the denominator (80 ÷ 5 = 16) and multiply by the numerator (16 x 3 = 48).",
+      "id": "s-ne-0076"
+    },
+    {
+      "question": "What is the mean of these three numbers: 10, 15 and 23?",
+      "tolerance": 0,
+      "explanation": "The mean is the sum of the numbers (10+15+23=48) divided by the count of numbers (3).",
+      "correctAnswer": 16,
+      "type": "numeric_entry",
+      "id": "s-ne-0077"
+    },
+    {
+      "type": "numeric_entry",
+      "explanation": "Using BIDMAS/BODMAS, perform the multiplication first (4 x 3 = 12) then add the result to the 3.",
+      "correctAnswer": 15,
+      "tolerance": 0,
+      "question": "Work out the value of 3 + 4 × 3.",
+      "id": "s-ne-0078"
+    },
+    {
+      "question": "How many degrees are there in three right angles?",
+      "tolerance": 0,
+      "correctAnswer": 270,
+      "explanation": "A right angle is 90 degrees. Three right angles is 90 multiplied by 3.",
+      "type": "numeric_entry",
+      "unit": "degrees",
+      "id": "s-ne-0079"
+    },
+    {
+      "tolerance": 0,
+      "question": "What is 8.55 - 0.4?",
+      "explanation": "To subtract 0.4 from 8.55, align the decimal points: 8.55 - 0.40 = 8.15.",
+      "correctAnswer": 8.15,
+      "type": "numeric_entry",
+      "id": "s-ne-0080"
+    },
+    {
+      "correctAnswer": 132,
+      "explanation": "To find the original number, multiply the result by the denominator (22 x 6 = 132).",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "question": "If 1/6 of a number is 22, what is the number?",
+      "id": "s-ne-0081"
+    },
+    {
+      "type": "numeric_entry",
+      "explanation": "15% of 1,000 is 150, and 5% of 1,000 is 50. Adding them together (150 + 50) gives 200.",
+      "correctAnswer": 200,
+      "question": "What is 20% of 1,000?",
+      "tolerance": 0,
+      "id": "s-ne-0082"
+    },
+    {
+      "correctAnswer": 115,
+      "tolerance": 0,
+      "question": "Calculate: 162 - 47",
+      "type": "numeric_entry",
+      "explanation": "To find the answer, subtract 47 from 162 using column subtraction.",
+      "id": "s-ne-0083"
+    },
+    {
+      "correctAnswer": 10,
+      "tolerance": 0,
+      "question": "I think of a number. I multiply it by 3 and the answer is the sum of 12 and 18. What is my number?",
+      "type": "numeric_entry",
+      "explanation": "The sum of 12 and 18 is 30. Divide 30 by 3 to find the answer.",
+      "id": "s-ne-0084"
+    },
+    {
+      "type": "numeric_entry",
+      "explanation": "To find 7/9 of 81, first divide 81 by 9 (which is 9) and then multiply the result by 7.",
+      "correctAnswer": 63,
+      "tolerance": 0,
+      "question": "What is 7/9 of 81?",
+      "id": "s-ne-0085"
+    },
+    {
+      "correctAnswer": 48,
+      "tolerance": 0,
+      "question": "A rectangle has a length of 8cm and a width of 6cm. What is its area in square centimetres?",
+      "unit": "cm²",
+      "type": "numeric_entry",
+      "explanation": "Area is calculated by multiplying length by width (8cm x 6cm).",
+      "id": "s-ne-0086"
+    },
+    {
+      "question": "A box holds 12 eggs. How many eggs are there in 9 full boxes?",
+      "correctAnswer": 108,
+      "tolerance": 0,
+      "explanation": "There are 12 eggs in a dozen, so 9 x 12 = 108.",
+      "type": "numeric_entry",
+      "id": "s-ne-0087"
+    },
+    {
+      "question": "What is 15% of 1,000?",
+      "correctAnswer": 150,
+      "tolerance": 0,
+      "explanation": "To find 15% of 1,000, find 10% (100) and 5% (50), then add them together.",
+      "type": "numeric_entry",
+      "id": "s-ne-0088"
+    },
+    {
+      "explanation": "When dividing by 100, move the decimal point two places to the left.",
+      "type": "numeric_entry",
+      "question": "What is 240 divided by 100?",
+      "correctAnswer": 2.4,
+      "tolerance": 0,
+      "id": "s-ne-0089"
+    },
+    {
+      "question": "Work out the value of 1 + 2 × 6.",
+      "correctAnswer": 13,
+      "tolerance": 0,
+      "explanation": "Using BIDMAS/BODMAS, perform the multiplication (2 x 6 = 12) first, then add the 1.",
+      "type": "numeric_entry",
+      "id": "s-ne-0090"
+    },
+    {
+      "type": "numeric_entry",
+      "explanation": "Angles on a straight line add up to 180 degrees. 180 - 125 = 55.",
+      "tolerance": 0,
+      "correctAnswer": 55,
+      "question": "Two angles are on a straight line. One angle is 125 degrees. What is the size of the other angle?",
+      "unit": "degrees",
+      "id": "s-ne-0091"
+    },
+    {
+      "explanation": "To find the difference, you subtract the smaller number from the larger number: 300 - 176 = 124.",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "question": "What is the difference between 300 and 176?",
+      "correctAnswer": 124,
+      "id": "s-ne-0092"
+    },
+    {
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "unit": "ml",
+      "explanation": "There are 1,000 millilitres (ml) in 1 litre (l). Therefore, 3 litres is 3 x 1,000 = 3,000ml.",
+      "correctAnswer": 3000,
+      "question": "How many millilitres are there in 3 litres?",
+      "id": "s-ne-0093"
+    },
+    {
+      "question": "A cube has 12 edges. How many edges do 4 separate cubes have altogether?",
+      "correctAnswer": 48,
+      "explanation": "A cube has 12 edges. Four identical cubes would have 4 x 12 = 48 edges in total.",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "id": "s-ne-0094"
+    },
+    {
+      "question": "Work out 11 x 12.",
+      "correctAnswer": 132,
+      "explanation": "To calculate 11 x 12, you can multiply 11 by 10 (110) then add 11 times 2 (22). 110 + 22 = 132.",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "id": "s-ne-0095"
+    },
+    {
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "explanation": "When you divide by 10, each digit moves one place to the right. 45 becomes 4.5.",
+      "correctAnswer": 4.5,
+      "question": "What is 45 divided by 10?",
+      "id": "s-ne-0096"
+    },
+    {
+      "correctAnswer": 42,
+      "question": "Find the missing number: [?] - 15 = 27",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "explanation": "The sum of 15 and 27 is 42. Since 42 - 15 = 27, the missing number is 42.",
+      "id": "s-ne-0097"
+    },
+    {
+      "correctAnswer": 45,
+      "question": "A right-angled triangle has one angle of 90 degrees and another of 45 degrees. What is the size of the third angle?",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "explanation": "The sum of angles in a triangle is 180 degrees. 180 - 90 - 45 = 45.",
+      "unit": "degrees",
+      "id": "s-ne-0098"
+    },
+    {
+      "explanation": "To find 5% of 700, first find 10% by dividing by 10 (70), then halve it (35).",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "question": "What is 5% of 700?",
+      "correctAnswer": 35,
+      "id": "s-ne-0099"
+    },
+    {
+      "question": "What is 6.7 + 2.5?",
+      "correctAnswer": 9.2,
+      "explanation": "Align the decimal points and add. 6.7 + 2.5 = 9.2.",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "id": "s-ne-0100"
+    },
+    {
+      "explanation": "One-quarter of 24 is 6 (24 ÷ 4). To find three-quarters, multiply 6 by 3, which is 18. Subtract 10 to get 8.",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "question": "Calculate three-quarters of 24, then subtract 10. What is the final number?",
+      "correctAnswer": 8,
+      "id": "s-ne-0101"
+    },
+    {
+      "question": "A bag of flour weighs 2,500g. What is this weight in kilograms?",
+      "correctAnswer": 2.5,
+      "unit": "kg",
+      "explanation": "There are 1,000 grams in a kilogram. 2,500 divided by 1,000 is 2.5.",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "id": "s-ne-0102"
+    },
+    {
+      "explanation": "To find the next number in the sequence, add 11 to 90.",
+      "question": "A sequence starts 57, 68, 79, 90... What is the next number in the sequence?",
+      "type": "numeric_entry",
+      "correctAnswer": 101,
+      "id": "s-ne-0103"
+    },
+    {
+      "correctAnswer": 35,
+      "type": "numeric_entry",
+      "explanation": "To find 5/6 of 42, first divide 42 by 6 (which is 7), then multiply that result by 5.",
+      "question": "Calculate 5/6 of 42.",
+      "id": "s-ne-0104"
+    },
+    {
+      "correctAnswer": 14,
+      "type": "numeric_entry",
+      "explanation": "Subtract 36 from 50 to find the missing part of the addition.",
+      "question": "Find the missing number: 36 + [?] = 50",
+      "id": "s-ne-0105"
+    },
+    {
+      "correctAnswer": 18,
+      "question": "A regular hexagon has sides of 3cm. What is the perimeter of the hexagon in centimetres?",
+      "unit": "cm",
+      "type": "numeric_entry",
+      "explanation": "The perimeter is the sum of all sides. For a regular hexagon, multiply the length of one side (3cm) by the number of sides (6).",
+      "id": "s-ne-0106"
+    },
+    {
+      "question": "Calculate: 44 x 7",
+      "explanation": "Multiply 44 by 7. 40 x 7 = 280, and 4 x 7 = 28. 280 + 28 = 308.",
+      "type": "numeric_entry",
+      "correctAnswer": 308,
+      "id": "s-ne-0107"
+    },
+    {
+      "explanation": "There are 1000g in 1kg. To convert, divide 4250 by 1000.",
+      "type": "numeric_entry",
+      "question": "A parcel weighs 4,250g. What is this weight in kilograms?",
+      "unit": "kg",
+      "correctAnswer": 4.25,
+      "id": "s-ne-0108"
+    },
+    {
+      "type": "numeric_entry",
+      "correctAnswer": 12,
+      "explanation": "First, find the total needed: 4 x 9 = 36. Then divide that total by 3: 36 / 3 = 12.",
+      "question": "I think of a number. I divide it by 3 and the answer is the same as 4 multiplied by 9. What is my number?",
+      "id": "s-ne-0109"
+    },
+    {
+      "question": "The three angles in a triangle are 130 degrees, 30 degrees and 'x'. What is the value of 'x' in degrees?",
+      "unit": "degrees",
+      "correctAnswer": 20,
+      "explanation": "The total sum of angles in any triangle is 180 degrees. 180 - (130 + 30) = 20.",
+      "type": "numeric_entry",
+      "id": "s-ne-0110"
+    },
+    {
+      "explanation": "Line up the decimal points and add: 5.8 + 2.3 = 8.1.",
+      "question": "What is 5.8 + 2.3?",
+      "correctAnswer": 8.1,
+      "type": "numeric_entry",
+      "id": "s-ne-0111"
+    },
+    {
+      "question": "What is 35% of 400?",
+      "explanation": "10% of 400 is 40. 35% is (3 x 40) + 20 (which is 5%), giving a total of 140.",
+      "correctAnswer": 140,
+      "type": "numeric_entry",
+      "id": "s-ne-0112"
+    },
+    {
+      "explanation": "Using BODMAS/BIDMAS, perform the division first (20 ÷ 4 = 5), then add the results: 50 + 5 = 55.",
+      "question": "Work out the value of 50 + 20 ÷ 4.",
+      "type": "numeric_entry",
+      "correctAnswer": 55,
+      "id": "s-ne-0113"
+    },
+    {
+      "explanation": "There are 60 minutes in an hour. 4 hours is 240 minutes, plus the extra 30 minutes makes 270.",
+      "type": "numeric_entry",
+      "question": "How many minutes are there in 4 and a half hours?",
+      "unit": "minutes",
+      "correctAnswer": 270,
+      "id": "s-ne-0114"
+    },
+    {
+      "explanation": "Add the two numbers: 8 + 6 = 14 (carry the 1), 7 + 4 + 1 = 12.",
+      "question": "Work out 78 + 46.",
+      "correctAnswer": 124,
+      "type": "numeric_entry",
+      "id": "s-ne-0115"
+    },
+    {
+      "type": "numeric_entry",
+      "correctAnswer": 0.65,
+      "explanation": "To divide by 100, move the decimal point two places to the left.",
+      "question": "What is 65 divided by 100?",
+      "id": "s-ne-0116"
+    },
+    {
+      "correctAnswer": 38,
+      "type": "numeric_entry",
+      "explanation": "To find the missing number, add 19 to 19 (19 + 19 = 38).",
+      "question": "Find the missing number: [?] - 19 = 19",
+      "id": "s-ne-0117"
+    },
+    {
+      "question": "An equilateral triangle has three equal angles. What is the size of each angle in degrees?",
+      "correctAnswer": 60,
+      "unit": "degrees",
+      "explanation": "The angles in a triangle sum to 180 degrees. 180 - 60 - 60 = 60.",
+      "type": "numeric_entry",
+      "id": "s-ne-0118"
+    },
+    {
+      "explanation": "10% of 500 is 50. Multiply by 3 to find 30% (50 x 3 = 150).",
+      "question": "What is 30% of 500?",
+      "correctAnswer": 150,
+      "type": "numeric_entry",
+      "id": "s-ne-0119"
+    },
+    {
+      "correctAnswer": 13.2,
+      "type": "numeric_entry",
+      "explanation": "Align the decimal points: 8.5 + 4.7 = 13.2.",
+      "question": "What is 8.5 + 4.7?",
+      "id": "s-ne-0120"
+    },
+    {
+      "explanation": "One fifth of 45 is 9 (45 ÷ 5). Three fifths is 27 (9 x 3). 27 - 6 = 21.",
+      "question": "Calculate three-fifths of 45, then subtract 6. What is the final number?",
+      "correctAnswer": 21,
+      "type": "numeric_entry",
+      "id": "s-ne-0121"
+    },
+    {
+      "question": "A bottle contains 3,500ml of water. How many litres is this?",
+      "correctAnswer": 3.5,
+      "explanation": "There are 1,000ml in 1 litre, so divide 3,500 by 1,000.",
+      "unit": "litres",
+      "type": "numeric_entry",
+      "id": "s-ne-0122"
+    },
+    {
+      "type": "numeric_entry",
+      "correctAnswer": 33,
+      "explanation": "The sequence increases by 7 each time. 26 + 7 = 33.",
+      "question": "A sequence starts 5, 12, 19, 26... What is the next number in the sequence?",
+      "id": "s-ne-0123"
+    },
+    {
+      "correctAnswer": 54,
+      "type": "numeric_entry",
+      "explanation": "1/8 of 72 is 9 (72 ÷ 8). Multiply by 6 to get 54.",
+      "question": "Calculate 6/8 of 72.",
+      "id": "s-ne-0124"
+    },
+    {
+      "question": "The perimeter of a square is 136cm. What is the length of one side in centimetres?",
+      "correctAnswer": 34,
+      "unit": "cm",
+      "explanation": "A square has 4 equal sides. Divide the total perimeter by 4 (136 ÷ 4 = 34).",
+      "type": "numeric_entry",
+      "id": "s-ne-0125"
+    },
+    {
+      "question": "Work out the value of 4 + 4 x 7.",
+      "explanation": "Following BIDMAS/BODMAS, do the multiplication first: 4 x 7 = 28. Then add 4: 28 + 4 = 32.",
+      "type": "numeric_entry",
+      "correctAnswer": 32,
+      "id": "s-ne-0126"
+    },
+    {
+      "question": "What is 82 + 42?",
+      "type": "numeric_entry",
+      "correctAnswer": 124,
+      "explanation": "To find the sum, add the hundreds, tens and ones: 80 + 40 = 120, and 2 + 2 = 4. 120 + 4 = 124.",
+      "tolerance": 0,
+      "id": "s-ne-0127"
+    },
+    {
+      "correctAnswer": 3.5,
+      "type": "numeric_entry",
+      "explanation": "There are 1,000 metres in 1 kilometre. Divide 3,500 by 1,000 to get 3.5.",
+      "tolerance": 0,
+      "unit": "km",
+      "question": "A race is 3,500 metres long. How many kilometres is this?",
+      "id": "s-ne-0128"
+    },
+    {
+      "type": "numeric_entry",
+      "correctAnswer": 480,
+      "explanation": "Six times eight is 48. Since it is 60, multiply the result by 10 to get 480.",
+      "tolerance": 0,
+      "question": "Calculate: 60 x 8",
+      "id": "s-ne-0129"
+    },
+    {
+      "unit": "£",
+      "question": "Liam buys a book for £6. He pays with a £20 note. How many pounds change does he get?",
+      "correctAnswer": 14,
+      "type": "numeric_entry",
+      "explanation": "To find the change, subtract the cost of the book from the total money: 20 - 6 = 14.",
+      "tolerance": 0,
+      "id": "s-ne-0130"
+    },
+    {
+      "question": "What is 9 x 8?",
+      "explanation": "9 multiplied by 4 is 36. Doubling 36 gives 72.",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "correctAnswer": 72,
+      "id": "s-ne-0131"
+    },
+    {
+      "correctAnswer": 27,
+      "type": "numeric_entry",
+      "explanation": "One third of 30 is 10 (30 ÷ 3). One tenth of 30 is 3 (30 ÷ 10). 30 - 3 = 27.",
+      "tolerance": 0,
+      "question": "What is nine-tenths of 30?",
+      "id": "s-ne-0132"
+    },
+    {
+      "correctAnswer": 180,
+      "type": "numeric_entry",
+      "explanation": "There are 60 seconds in one minute. 60 x 3 = 180.",
+      "tolerance": 0,
+      "question": "How many seconds are there in 3 minutes?",
+      "id": "s-ne-0133"
+    },
+    {
+      "explanation": "The sum of angles on a straight line is 180 degrees. 180 - 135 = 45.",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "correctAnswer": 45,
+      "question": "On a straight line, one angle is 135 degrees. What is the size of the other angle?",
+      "unit": "degrees",
+      "id": "s-ne-0134"
+    },
+    {
+      "tolerance": 0,
+      "explanation": "25% is the same as one quarter. 50 divided by 4 is 12.5.",
+      "type": "numeric_entry",
+      "correctAnswer": 12.5,
+      "question": "What is 25% of 50?",
+      "id": "s-ne-0135"
+    },
+    {
+      "question": "Find the missing number: [?] - 5 = 9",
+      "correctAnswer": 14,
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "explanation": "To balance the equation, add 5 to 9, which equals 14. 14 - 5 = 9.",
+      "id": "s-ne-0136"
+    },
+    {
+      "unit": "£",
+      "question": "Write 145p in pounds (£).",
+      "type": "numeric_entry",
+      "correctAnswer": 1.45,
+      "tolerance": 0,
+      "explanation": "There are 100 pence in one pound. Divide 145 by 100 to convert to pounds.",
+      "id": "s-ne-0137"
+    },
+    {
+      "tolerance": 0,
+      "explanation": "Following BODMAS/BIDMAS, do the multiplication first: 4 x 8 = 32. Then add 10: 10 + 32 = 42.",
+      "correctAnswer": 42,
+      "type": "numeric_entry",
+      "question": "Work out the value of 10 + 4 x 8.",
+      "id": "s-ne-0138"
+    },
+    {
+      "correctAnswer": 138,
+      "type": "numeric_entry",
+      "question": "What is 65 + 73?",
+      "explanation": "Starting at the units, 5 + 3 = 8. In the tens, 6 + 7 = 13, giving a total of 138.",
+      "id": "s-ne-0139"
+    },
+    {
+      "explanation": "There are 1,000 grams in 1 kilogram, so 3 multiplied by 1,000 is 3,000.",
+      "question": "A bag of flour weighs 3 kilograms. How many grams is this?",
+      "correctAnswer": 3000,
+      "unit": "g",
+      "type": "numeric_entry",
+      "id": "s-ne-0140"
+    },
+    {
+      "correctAnswer": 64,
+      "explanation": "Eight squared means 8 multiplied by itself (8 x 8), which equals 64.",
+      "type": "numeric_entry",
+      "question": "What is 8 squared?",
+      "id": "s-ne-0141"
+    },
+    {
+      "explanation": "The mean is the total divided by the number of values: (4+7+3+10) = 24. Then 24 ÷ 4 = 6.",
+      "question": "What is the mean of these four numbers: 4, 7, 3 and 10?",
+      "type": "numeric_entry",
+      "correctAnswer": 6,
+      "id": "s-ne-0142"
+    },
+    {
+      "explanation": "The area of a triangle is (base x height) divided by 2. (11 x 3) = 33, and 33 ÷ 2 = 16.5.",
+      "question": "What is the area of a triangle with a base of 11cm and a height of 3cm?",
+      "type": "numeric_entry",
+      "correctAnswer": 16.5,
+      "unit": "cm²",
+      "id": "s-ne-0143"
+    },
+    {
+      "correctAnswer": 48,
+      "explanation": "Multiplication is done before addition: 5 x 8 = 40, then 40 + 8 = 48.",
+      "type": "numeric_entry",
+      "question": "Calculate 8 + 5 x 8.",
+      "id": "s-ne-0144"
+    },
+    {
+      "correctAnswer": 20,
+      "explanation": "10% of 200 is 20. Then 20 multiplied by 5 gives 100 as the answer.",
+      "question": "What is 50% of 200?",
+      "type": "numeric_entry",
+      "id": "s-ne-0145"
+    },
+    {
+      "unit": "degrees",
+      "correctAnswer": 115,
+      "type": "numeric_entry",
+      "question": "A point has a full turn of 360 degrees. If one angle is 245 degrees, what is the missing angle?",
+      "explanation": "A full turn is 360 degrees. 360 - 245 = 115.",
+      "id": "s-ne-0146"
+    },
+    {
+      "type": "numeric_entry",
+      "correctAnswer": 36,
+      "unit": "cm",
+      "explanation": "A hexagon has 6 sides. To find the perimeter, multiply the length of one side by 6: 6 x 6 = 36.",
+      "question": "A regular hexagon has sides that are 6cm long. What is its perimeter?",
+      "id": "s-ne-0147"
+    },
+    {
+      "type": "numeric_entry",
+      "correctAnswer": 2.35,
+      "unit": "m",
+      "explanation": "To convert centimetres to metres, divide by 100. 235 ÷ 100 = 2.35.",
+      "question": "A piece of ribbon is 235cm long. What is its length in metres?",
+      "id": "s-ne-0148"
+    },
+    {
+      "correctAnswer": 225,
+      "explanation": "To find 3/4 of 300, divide 300 by 4 to get 75, then multiply by 3 to get 225.",
+      "type": "numeric_entry",
+      "question": "Calculate 3/4 of 300.",
+      "id": "s-ne-0149"
+    },
+    {
+      "question": "In a class of 20 children, 60% are girls. How many girls are in the class?",
+      "correctAnswer": 12,
+      "explanation": "The total number of pupils is 20. 60% of 20 is calculated by (20 / 100) x 60 = 12.",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "id": "s-ne-0150"
+    },
+    {
+      "question": "A rectangular playground is 100 metres long and 50 metres wide. What is its perimeter in metres?",
+      "correctAnswer": 300,
+      "unit": "m",
+      "explanation": "To find the perimeter, add the lengths of all four sides: 100 + 50 + 100 + 50 = 300.",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "id": "s-ne-0151"
+    },
+    {
+      "question": "A banana and an apple cost 68p in total. The apple costs 50p. How many pence does the banana cost?",
+      "correctAnswer": 18,
+      "unit": "p",
+      "explanation": "Subtract the cost of the apple from the total: 68 - 50 = 18.",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "id": "s-ne-0152"
+    },
+    {
+      "explanation": "Adding the two numbers together gives the total: 9 + 5 = 14.",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "question": "What is the sum of 9 and 5?",
+      "correctAnswer": 14,
+      "id": "s-ne-0153"
+    },
+    {
+      "question": "A bottle contains 750 millilitres of water. How many litres is this?",
+      "correctAnswer": 0.75,
+      "unit": "l",
+      "explanation": "To convert millilitres to litres, divide by 1,000: 750 / 1,000 = 0.75.",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "id": "s-ne-0154"
+    },
+    {
+      "explanation": "A cube has 4 edges on the top, 4 on the bottom, and 4 connecting the two faces.",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "question": "How many edges does a cube have?",
+      "correctAnswer": 12,
+      "id": "s-ne-0155"
+    },
+    {
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "explanation": "4 cubed is 4 x 4 x 4. 4 x 4 = 16, and 16 x 4 = 64.",
+      "correctAnswer": 64,
+      "question": "What is the value of 4 cubed (4³)?",
+      "id": "s-ne-0156"
+    },
+    {
+      "correctAnswer": 17,
+      "question": "Calculate 14 + 6 ÷ 2.",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "explanation": "Using BIDMAS, do the division first: 6 / 2 = 3. Then add the result to 14: 14 + 3 = 17.",
+      "id": "s-ne-0157"
+    },
+    {
+      "explanation": "To find one-fifth, divide 25 by 5 (which is 5). Then multiply by 7: 5 x 7 = 35.",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "question": "What is seven-fifths of 25?",
+      "correctAnswer": 35,
+      "id": "s-ne-0158"
+    },
+    {
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "unit": "cm²",
+      "explanation": "The area of a rectangle is found by multiplying the length by the width: 7 x 6 = 42.",
+      "correctAnswer": 42,
+      "question": "What is the area of a rectangle with a length of 7cm and a width of 6cm?",
+      "id": "s-ne-0159"
+    },
+    {
+      "correctAnswer": 30,
+      "question": "Find the missing number: [?] ÷ 3 = 10",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "explanation": "To find the missing number, work backwards: 10 times 3 equals 30.",
+      "id": "s-ne-0160"
+    },
+    {
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "explanation": "In a triangle, all three angles must add up to 180 degrees. 180 - 90 - 55 = 35.",
+      "unit": "degrees",
+      "correctAnswer": 35,
+      "question": "In a right-angled triangle, one angle is 90 degrees and another is 55 degrees. What is the size of the third angle in degrees?",
+      "id": "s-ne-0161"
+    },
+    {
+      "type": "numeric_entry",
+      "explanation": "To convert grams to kilograms, divide by 1,000 because there are 1,000 grams in 1 kilogram.",
+      "unit": "kg",
+      "correctAnswer": 0.45,
+      "question": "A bag of flour weighs 450 grams. What is its weight in kilograms?",
+      "id": "s-ne-0162"
+    },
+    {
+      "correctAnswer": 27,
+      "type": "numeric_entry",
+      "explanation": "To find one third, divide by 3 (81 ÷ 3 = 27). Alternatively, 81 ÷ 9 = 9, and 9 × 3 = 27.",
+      "question": "What is three-ninths of 81?",
+      "id": "s-ne-0163"
+    },
+    {
+      "explanation": "Divide 14 by 4. 14 divided by 2 is 7, and 7 divided by 2 is 3.5.",
+      "unit": "£",
+      "type": "numeric_entry",
+      "question": "A pack of 4 tennis balls costs £14. What is the cost of one tennis ball in pounds?",
+      "correctAnswer": 3.5,
+      "id": "s-ne-0164"
+    },
+    {
+      "explanation": "A square has 4 equal sides. Divide the perimeter by 4 (32 ÷ 4 = 8) to find the length of one side.",
+      "unit": "cm",
+      "type": "numeric_entry",
+      "question": "The perimeter of a square is 32cm. What is the length of one side in centimetres?",
+      "correctAnswer": 8,
+      "id": "s-ne-0165"
+    },
+    {
+      "explanation": "To multiply by 20, multiply by 2 and then multiply by 10. 24 × 2 = 48; 48 × 10 = 480.",
+      "question": "Calculate 24 x 20.",
+      "correctAnswer": 480,
+      "type": "numeric_entry",
+      "id": "s-ne-0166"
+    },
+    {
+      "correctAnswer": 12,
+      "type": "numeric_entry",
+      "question": "How many edges does a cuboid have?",
+      "explanation": "A cuboid has 12 edges, 8 vertices, and 6 faces.",
+      "id": "s-ne-0167"
+    },
+    {
+      "correctAnswer": 16.42,
+      "type": "numeric_entry",
+      "explanation": "Align the decimal points and subtract: 20.00 - 3.58 = 16.42.",
+      "question": "What is 20 minus 3.58?",
+      "id": "s-ne-0168"
+    },
+    {
+      "explanation": "First, find 10% of 80 (8). Then find 5% by halving that (4). 8 + 4 = 12.",
+      "question": "What is 15% of 80?",
+      "type": "numeric_entry",
+      "correctAnswer": 12,
+      "id": "s-ne-0169"
+    },
+    {
+      "question": "Calculate 32 - 5 x 3.",
+      "explanation": "Follow BIDMAS/BODMAS rules: do the multiplication first. 5 × 3 = 15. Then 32 - 15 = 17.",
+      "type": "numeric_entry",
+      "correctAnswer": 17,
+      "id": "s-ne-0170"
+    },
+    {
+      "explanation": "To find the mean, add the numbers (2+5+8=15) and divide by the count of numbers (15 ÷ 3 = 5).",
+      "question": "What is the mean of these three numbers: 2, 5 and 8?",
+      "type": "numeric_entry",
+      "correctAnswer": 5,
+      "id": "s-ne-0171"
+    },
+    {
+      "correctAnswer": 112,
+      "type": "numeric_entry",
+      "explanation": "Add the two numbers using column addition. 48 + 64 = 112.",
+      "question": "What is the sum of 48 and 64?",
+      "id": "s-ne-0172"
+    },
+    {
+      "correctAnswer": 300,
+      "explanation": "There are 100 centimetres in one metre, so multiply 3 by 100.",
+      "unit": "cm",
+      "type": "numeric_entry",
+      "question": "How many centimetres are there in 3 metres?",
+      "id": "s-ne-0173"
+    },
+    {
+      "question": "Write two-fifths (2/5) as a decimal.",
+      "explanation": "Divide 2 by 5 to find the decimal equivalent. 2 ÷ 5 = 0.4.",
+      "correctAnswer": 0.4,
+      "type": "numeric_entry",
+      "id": "s-ne-0174"
+    },
+    {
+      "correctAnswer": 150,
+      "type": "numeric_entry",
+      "question": "What is one-quarter of 600?",
+      "explanation": "To find half, divide 600 by 2. Then divide that result by 2 again to find a quarter. 600 ÷ 4 = 150.",
+      "id": "s-ne-0175"
+    },
+    {
+      "explanation": "A square has 4 sides. 40 divided by 4 equals 10.",
+      "correctAnswer": 10,
+      "question": "The perimeter of a square is 40cm. What is the length of one side?",
+      "unit": "cm",
+      "type": "numeric_entry",
+      "id": "s-ne-0176"
+    },
+    {
+      "type": "numeric_entry",
+      "correctAnswer": 108,
+      "explanation": "Multiply 9 by 12 using your times tables knowledge. 9 x 12 = 108.",
+      "question": "Calculate 9 multiplied by 12.",
+      "id": "s-ne-0177"
+    },
+    {
+      "question": "How many seconds are in 3 and a half minutes?",
+      "type": "numeric_entry",
+      "unit": "seconds",
+      "explanation": "There are 60 seconds in a minute. 3 minutes is 180 seconds, plus the extra 30 seconds equals 210.",
+      "correctAnswer": 210,
+      "id": "s-ne-0178"
+    },
+    {
+      "correctAnswer": 8,
+      "type": "numeric_entry",
+      "explanation": "A square-based pyramid has 4 triangular faces and 1 square face, meeting at 8 edges.",
+      "question": "How many edges does a square-based pyramid have?",
+      "id": "s-ne-0179"
+    },
+    {
+      "type": "numeric_entry",
+      "correctAnswer": 7,
+      "explanation": "First, subtract 5 from 33 to get 28. Then divide 28 by 4 to find the unknown number.",
+      "question": "I think of a number. I multiply it by 4 and then add 5. My answer is 33. What was my number?",
+      "id": "s-ne-0180"
+    },
+    {
+      "correctAnswer": 28,
+      "type": "numeric_entry",
+      "explanation": "10% of 40 is 4. Multiply 4 by 7 to find 70%.",
+      "question": "What is 70% of 40?",
+      "id": "s-ne-0181"
+    },
+    {
+      "correctAnswer": 80,
+      "explanation": "Angles on a straight line always add up to 180 degrees. 180 - 100 = 80.",
+      "type": "numeric_entry",
+      "unit": "degrees",
+      "question": "An angle on a straight line is 100 degrees. What is the size of the other angle?",
+      "id": "s-ne-0182"
+    },
+    {
+      "explanation": "A pentagon is a polygon with 5 sides.",
+      "question": "How many sides does a pentagon have?",
+      "correctAnswer": 5,
+      "type": "numeric_entry",
+      "id": "s-ne-0183"
+    },
+    {
+      "question": "What number is 40 less than 155?",
+      "correctAnswer": 115,
+      "explanation": "To calculate this, subtract 40 from 155 or count on from 40 to 155.",
+      "type": "numeric_entry",
+      "id": "s-ne-0184"
+    },
+    {
+      "explanation": "To find the answer, multiply 15 by 2 to get 30, then multiply by 10.",
+      "type": "numeric_entry",
+      "question": "Calculate 15 x 20.",
+      "correctAnswer": 300,
+      "id": "s-ne-0185"
+    },
+    {
+      "unit": "degrees",
+      "type": "numeric_entry",
+      "correctAnswer": 135,
+      "explanation": "A right angle is 90 degrees. Half of a right angle is 45 degrees. 90 + 45 = 135.",
+      "question": "What is the total size in degrees of one and a half right angles?",
+      "id": "s-ne-0186"
+    },
+    {
+      "question": "A book costs £7.55. How much change do you get from a £10 note?",
+      "explanation": "To find the change, subtract £7.55 from £10.00.",
+      "correctAnswer": 2.45,
+      "type": "numeric_entry",
+      "unit": "£",
+      "id": "s-ne-0187"
+    },
+    {
+      "explanation": "First, find 1/5 of 30 by dividing 30 by 5, which is 6. Then multiply 6 by 3.",
+      "type": "numeric_entry",
+      "correctAnswer": 18,
+      "question": "What is three-fifths (3/5) of 30?",
+      "id": "s-ne-0188"
+    },
+    {
+      "question": "A rectangle has a length of 4cm and a width of 3cm. What is its area in square centimetres?",
+      "explanation": "The area of a rectangle is found by multiplying the length by the width (4 x 3).",
+      "correctAnswer": 12,
+      "unit": "cm²",
+      "type": "numeric_entry",
+      "id": "s-ne-0189"
+    },
+    {
+      "type": "numeric_entry",
+      "unit": "cm",
+      "correctAnswer": 4.2,
+      "explanation": "To convert millimetres to centimetres, you divide the value by 10.",
+      "question": "What is 42 millimetres (mm) in centimetres (cm)?",
+      "id": "s-ne-0190"
+    },
+    {
+      "correctAnswer": 26,
+      "question": "What is the total sum of the number of edges, vertices, and faces on a cube?",
+      "type": "numeric_entry",
+      "explanation": "A cube has 12 edges, 8 vertices, and 6 faces. 12 + 8 + 6 = 26.",
+      "id": "s-ne-0191"
+    },
+    {
+      "type": "numeric_entry",
+      "explanation": "Work backwards: subtract 8 from 50 (42). Check: 42 + 8 = 50.",
+      "correctAnswer": 42,
+      "question": "I think of a number. When I add 8 to it, the answer is 50. What is my number?",
+      "id": "s-ne-0192"
+    },
+    {
+      "unit": "cm",
+      "type": "numeric_entry",
+      "correctAnswer": 5,
+      "explanation": "A regular hexagon has 6 equal sides. 30 divided by 6 is 5.",
+      "question": "The perimeter of a regular hexagon is 30cm. What is the length of one side?",
+      "id": "s-ne-0193"
+    },
+    {
+      "question": "Calculate 14 multiplied by 8.",
+      "type": "numeric_entry",
+      "correctAnswer": 112,
+      "explanation": "To find the product, multiply 14 by 10 (140) and subtract two 14s (28), or use vertical multiplication (14 x 8 = 112).",
+      "id": "s-ne-0194"
+    },
+    {
+      "type": "numeric_entry",
+      "question": "Write three-quarters (3/4) as a decimal.",
+      "correctAnswer": 0.75,
+      "explanation": "Three-quarters (3/4) is equivalent to 75/100, which is written as 0.75 in decimal form.",
+      "id": "s-ne-0195"
+    },
+    {
+      "prompt": "Choose the correct spelling to complete the sentence.",
+      "template": "The children forgot to take {{0}} reading books home.",
+      "type": "dropdown_blanks",
+      "explanation": "Possessive pronouns show belonging. Use 'their' because the books belong to the children.",
+      "blanks": [
+        {
+          "options": [
+            "their",
+            "there",
+            "they're"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "id": "s-db-0001"
+    },
+    {
+      "prompt": "Select the verb that correctly completes the sentence.",
+      "template": "Ten yellow ducks {{0}} swimming across the pond.",
+      "type": "dropdown_blanks",
+      "explanation": "The subject 'ducks' is plural, so the verb must be 'were' to match the past tense.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "was",
+            "were",
+            "is"
+          ]
+        }
+      ],
+      "id": "s-db-0002"
+    },
+    {
+      "prompt": "Choose the correct punctuation mark for the end of the sentence.",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "?",
+            "!",
+            "."
+          ]
+        }
+      ],
+      "explanation": "This is a statement that provides a fact, so it must end with a full stop.",
+      "type": "dropdown_blanks",
+      "template": "The capital city of England is London{{0}}",
+      "id": "s-db-0003"
+    },
+    {
+      "prompt": "Select the correct article to complete the sentence.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "an",
+            "a",
+            "the"
+          ]
+        }
+      ],
+      "explanation": "The word 'huge' starts with a consonant sound, so the article 'a' is needed.",
+      "type": "dropdown_blanks",
+      "template": "Yesterday, I saw {{0}} huge elephant at the safari park.",
+      "id": "s-db-0004"
+    },
+    {
+      "type": "dropdown_blanks",
+      "template": "{{0}} it rains, the football match is cancelled.",
+      "blanks": [
+        {
+          "options": [
+            "Whenever",
+            "Although",
+            "Even if"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "explanation": "'Whenever' is a subordinating conjunction used to show that something happens every time a condition is met.",
+      "prompt": "Choose the best conjunction to start the sentence.",
+      "id": "s-db-0005"
+    },
+    {
+      "prompt": "Identify the word class of the highlighted word.",
+      "explanation": "'Shiny' describes the noun 'coins', so it is an adjective.",
+      "blanks": [
+        {
+          "options": [
+            "adverb",
+            "noun",
+            "adjective"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "template": "The pirate found three shiny {{0}} gold coins in the chest.",
+      "type": "dropdown_blanks",
+      "id": "s-db-0006"
+    },
+    {
+      "explanation": "Fronted adverbials like 'As quietly as possible' should be followed by a comma.",
+      "blanks": [
+        {
+          "options": [
+            "quietly",
+            "quietly,",
+            "quietly;"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "template": "As quietly as possible{{0}} the cat crept towards the mouse.",
+      "type": "dropdown_blanks",
+      "prompt": "Choose the correctly punctuated option.",
+      "id": "s-db-0007"
+    },
+    {
+      "prompt": "Pick the correct spelling to complete the sentence.",
+      "template": "The hotel provided excellent {{0}} for the holidaymakers.",
+      "type": "dropdown_blanks",
+      "explanation": "'Accommodation' is a commonly misspelt word that requires a double 'c' and a double 'm'.",
+      "blanks": [
+        {
+          "options": [
+            "accommodation",
+            "acomodation",
+            "accommodationn"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "id": "s-db-0008"
+    },
+    {
+      "prompt": "Which phrase uses the present progressive tense?",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "I sang",
+            "I am singing",
+            "I will sing"
+          ]
+        }
+      ],
+      "explanation": "The present progressive tense uses 'am/is/are' plus a verb ending in '-ing'.",
+      "type": "dropdown_blanks",
+      "template": "At the moment, {{0}} my favourite song in the school choir.",
+      "id": "s-db-0009"
+    },
+    {
+      "template": "{{0}} it been a long time since we last visited the zoo?",
+      "type": "dropdown_blanks",
+      "explanation": "An apostrophe is used in 'Hasn't' to show the missing 'o' in the word 'not'.",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "Hasn't",
+            "Havent",
+            "Has'nt"
+          ]
+        }
+      ],
+      "prompt": "Select the correct contraction.",
+      "id": "s-db-0010"
+    },
+    {
+      "explanation": "The sentence is in the passive voice because the subject (the window) is being acted upon by the object (the ball).",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "active",
+            "infinitive",
+            "passive"
+          ]
+        }
+      ],
+      "template": "The window was broken by the flying football. This sentence is written in the {{0}} voice.",
+      "type": "dropdown_blanks",
+      "prompt": "Identify if the sentence is active or passive.",
+      "id": "s-db-0011"
+    },
+    {
+      "prompt": "Choose the correct way to complete the subject.",
+      "explanation": "Use 'I' as part of the subject of the sentence. A good trick is to see if the sentence works with just 'I'.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "me and Sarah",
+            "Sarah and I",
+            "Sarah and me"
+          ]
+        }
+      ],
+      "template": "{{0}} went to the library to find books about space.",
+      "type": "dropdown_blanks",
+      "id": "s-db-0012"
+    },
+    {
+      "prompt": "Choose the correct spelling to complete the sentence.",
+      "explanation": "'Their' is a possessive pronoun used to show that the toys belong to the cousins.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "options": [
+            "their",
+            "there",
+            "they're"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "template": "My cousins left {{0}} toys all over the living room floor.",
+      "id": "s-db-0013"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "gave",
+            "given",
+            "give"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "template": "By the time the bell rang, the teacher had {{0}} us our homework.",
+      "explanation": "The past participle 'given' is required after the auxiliary verb 'had'.",
+      "prompt": "Select the correct verb form.",
+      "type": "dropdown_blanks",
+      "id": "s-db-0014"
+    },
+    {
+      "type": "dropdown_blanks",
+      "explanation": "'An' is used before words that begin with a vowel sound, like 'enormous'.",
+      "prompt": "Choose the correct article.",
+      "template": "Far away in the distance, I could see {{0}} enormous mountain peak.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "a",
+            "an",
+            "the"
+          ]
+        }
+      ],
+      "id": "s-db-0015"
+    },
+    {
+      "type": "dropdown_blanks",
+      "explanation": "This is a direct question, so it must end with a question mark.",
+      "prompt": "Choose the correct punctuation mark.",
+      "template": "What time does the train to Manchester depart {{0}}",
+      "blanks": [
+        {
+          "options": [
+            "!",
+            "?",
+            "."
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "id": "s-db-0016"
+    },
+    {
+      "type": "dropdown_blanks",
+      "prompt": "Choose the best conjunction to start the sentence.",
+      "explanation": "'After' is the subordinating conjunction that correctly describes the sequence of events.",
+      "template": "{{0}} she had finished her dinner, Sarah went out to play in the garden.",
+      "blanks": [
+        {
+          "options": [
+            "After",
+            "Because",
+            "While"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "id": "s-db-0017"
+    },
+    {
+      "prompt": "Choose the correct plural spelling.",
+      "explanation": "For words ending in 'ch', we add 'es' to make them plural.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "options": [
+            "sandwichs",
+            "sandwiches",
+            "sandwiches"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "template": "Dad packed four cheese {{0}} in the picnic basket.",
+      "id": "s-db-0018"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "careful",
+            "carefully",
+            "careless"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "template": "The young boy walked {{0}} across the kitchen with the tray of eggs.",
+      "explanation": "An adverb (carefully) is needed to describe how the boy carried the eggs.",
+      "prompt": "Choose the correct word to complete the sentence.",
+      "type": "dropdown_blanks",
+      "id": "s-db-0019"
+    },
+    {
+      "explanation": "'Since' is used to refer to a specific point in time in the past until now.",
+      "prompt": "Select the correct preposition.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "options": [
+            "for",
+            "since",
+            "during"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "template": "It has been snowing heavily {{0}} eight o'clock this morning.",
+      "id": "s-db-0020"
+    },
+    {
+      "template": "Last week, our class {{0}} a long story about a magical kingdom.",
+      "blanks": [
+        {
+          "options": [
+            "wrote",
+            "written",
+            "write"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "type": "dropdown_blanks",
+      "explanation": "'Wrote' is the simple past tense of the verb 'to write'.",
+      "prompt": "Choose the correct verb tense.",
+      "id": "s-db-0021"
+    },
+    {
+      "explanation": "'Was' is the singular past tense verb that agrees with the subject 'The old wooden bridge'.",
+      "prompt": "Choose the verb that agrees with the subject.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "is",
+            "was",
+            "were"
+          ]
+        }
+      ],
+      "template": "The old wooden bridge {{0}} very wobbly during the storm.",
+      "id": "s-db-0022"
+    },
+    {
+      "template": "Without making a sound {{0}} the thief disappeared into the night.",
+      "blanks": [
+        {
+          "options": [
+            "comma",
+            "full stop",
+            "colon"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "type": "dropdown_blanks",
+      "prompt": "Choose the correct punctuation.",
+      "explanation": "A comma is used after a fronted adverbial to separate it from the rest of the sentence.",
+      "id": "s-db-0023"
+    },
+    {
+      "type": "dropdown_blanks",
+      "explanation": "'Bumpy' describes the noun 'road', so it is an adjective.",
+      "prompt": "Identify the word class of the word 'bumpy'.",
+      "template": "The tractor drove slowly down the bumpy road. In this sentence, 'bumpy' is an {{0}}.",
+      "blanks": [
+        {
+          "options": [
+            "adjective",
+            "noun",
+            "verb"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "id": "s-db-0024"
+    },
+    {
+      "prompt": "Choose the correct spelling to show possession.",
+      "template": "The children put {{0}} muddy shoes on the rack by the back door.",
+      "explanation": "'Their' is a possessive pronoun used to show that the shoes belong to the children.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "There",
+            "Their",
+            "They're"
+          ]
+        }
+      ],
+      "type": "dropdown_blanks",
+      "id": "s-db-0025"
+    },
+    {
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "options": [
+            "the",
+            "his",
+            "its"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "template": "The robot began to move once {{0}} battery had been fully charged.",
+      "prompt": "Select the correct possessive pronoun.",
+      "explanation": "'Its' (without an apostrophe) is the possessive form of 'it', belonging to the robot.",
+      "id": "s-db-0026"
+    },
+    {
+      "prompt": "Choose the correct contraction.",
+      "template": "If Martha wins the race, {{0}} be very happy.",
+      "explanation": "'She'll' is the contraction of 'she will', which is the correct future tense for this sentence.",
+      "blanks": [
+        {
+          "options": [
+            "she'll",
+            "she'd",
+            "she've"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "type": "dropdown_blanks",
+      "id": "s-db-0027"
+    },
+    {
+      "explanation": "A comma is needed after a fronted adverbial to separate it from the main clause.",
+      "template": "Early one morning{{0}} a tall man knocked on the door.",
+      "prompt": "Select the correct punctuation mark.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "!",
+            ".",
+            ","
+          ]
+        }
+      ],
+      "id": "s-db-0028"
+    },
+    {
+      "prompt": "Identify the voice used in this sentence.",
+      "template": "The delicious chocolate cake was eaten by the hungry guests. This sentence is written in the {{0}} voice.",
+      "explanation": "The sentence is in the passive voice because the subject (the cake) is being acted upon by the verb.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "active",
+            "passive",
+            "past progressive"
+          ]
+        }
+      ],
+      "type": "dropdown_blanks",
+      "id": "s-db-0029"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "Before",
+            "Unless",
+            "Because"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "type": "dropdown_blanks",
+      "prompt": "Select the most suitable subordinating conjunction.",
+      "template": "{{0}} we leave for the airport, we must check that we have our passports.",
+      "explanation": "'Before' is a subordinating conjunction that indicates the sequence of events.",
+      "id": "s-db-0030"
+    },
+    {
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "options": [
+            "write",
+            "wrote",
+            "written"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "template": "By the end of the day, Leo had {{0}} a very long poem.",
+      "prompt": "Choose the correct verb form.",
+      "explanation": "'Written' is the past participle used with the auxiliary verb 'had' to form the past perfect tense.",
+      "id": "s-db-0031"
+    },
+    {
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "boxes",
+            "boxs",
+            "boxies"
+          ]
+        }
+      ],
+      "explanation": "Nouns ending in 'x' almost always form their plural by adding 'es'.",
+      "template": "The delivery driver carried three heavy {{0}} into the hallway.",
+      "prompt": "Choose the correct plural spelling.",
+      "id": "s-db-0032"
+    },
+    {
+      "explanation": "'Which' is the correct relative pronoun used to refer to an object (the house).",
+      "prompt": "Select the correct relative pronoun.",
+      "template": "We visited the old house, {{0}} was built over a hundred years ago.",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "Which",
+            "Who",
+            "When"
+          ]
+        }
+      ],
+      "type": "dropdown_blanks",
+      "id": "s-db-0033"
+    },
+    {
+      "explanation": "The adverb 'carefully' is formed by adding the suffix '-ly' to the adjective 'careful'.",
+      "template": "The scientist {{0}} poured the liquid into the glass tube.",
+      "prompt": "Choose the correct spelling of the adverb.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "options": [
+            "carefuly",
+            "carefully",
+            "carefulley"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "id": "s-db-0034"
+    },
+    {
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "options": [
+            "?",
+            "!",
+            "."
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "explanation": "The sentence starts with the question word 'who', so it must end with a question mark.",
+      "template": "Who is responsible for leaving the gate open{{0}}",
+      "prompt": "Choose the correct punctuation mark for the end of the sentence.",
+      "id": "s-db-0035"
+    },
+    {
+      "prompt": "Select the correct homophone.",
+      "template": "Everyone was ready for the school trip {{0}} for Sam, who was late.",
+      "explanation": "'Except' is a preposition meaning 'apart from', while 'accept' means to receive something.",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "accept",
+            "acspect",
+            "except"
+          ]
+        }
+      ],
+      "type": "dropdown_blanks",
+      "id": "s-db-0036"
+    },
+    {
+      "template": "The robin sat on the branch, guarding {{0}} nest from the wind.",
+      "prompt": "Choose the correct word to show possession.",
+      "explanation": "'Its' is a possessive pronoun used here to show the nest belongs to the bird.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "it's",
+            "its",
+            "it is"
+          ]
+        }
+      ],
+      "type": "dropdown_blanks",
+      "id": "s-db-0037"
+    },
+    {
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "options": [
+            "carefuly",
+            "carefulie",
+            "carefully"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "explanation": "The suffix -ly is added to the adjective 'careful' to form an adverb.",
+      "prompt": "Choose the correct spelling of the adverb.",
+      "template": "The artist painted the tiny details {{0}} with a small brush.",
+      "id": "s-db-0038"
+    },
+    {
+      "template": "{{0}} the sun was shining, the children decided to go for a swim.",
+      "prompt": "Choose the best conjunction to start the sentence.",
+      "explanation": "'While' is a subordinating conjunction used to show two things happening at the same time.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "Before",
+            "While",
+            "Because"
+          ]
+        }
+      ],
+      "type": "dropdown_blanks",
+      "id": "s-db-0039"
+    },
+    {
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "threw",
+            "through",
+            "thorough"
+          ]
+        }
+      ],
+      "explanation": "'Threw' is the past tense of the verb 'throw', whereas 'through' relates to movement.",
+      "prompt": "Choose the correct homophone.",
+      "template": "The goalkeeper {{0}} the ball right to the other end of the pitch.",
+      "id": "s-db-0040"
+    },
+    {
+      "prompt": "Choose the correct spelling of the past tense verb.",
+      "template": "Our teacher {{0}} how to solve the difficult maths problem.",
+      "explanation": "To show past tense for regular verbs ending in 'in', we add the suffix -ed.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "explaned",
+            "explaind",
+            "explained"
+          ]
+        }
+      ],
+      "id": "s-db-0041"
+    },
+    {
+      "template": "The window was broken by the stray football. This is an example of the {{0}} voice.",
+      "prompt": "Identify the voice used in this sentence.",
+      "explanation": "The sentence is in the passive voice because the subject (the window) is being acted upon by the object (the ball).",
+      "blanks": [
+        {
+          "options": [
+            "passive",
+            "active",
+            "past"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "type": "dropdown_blanks",
+      "id": "s-db-0042"
+    },
+    {
+      "explanation": "A comma is used after a fronted adverbial to separate it from the main clause.",
+      "template": "In the middle of the dark forest{{0}} a small campfire glowed.",
+      "prompt": "Choose the correct punctuation mark.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "colon",
+            "comma",
+            "full stop"
+          ]
+        }
+      ],
+      "type": "dropdown_blanks",
+      "id": "s-db-0043"
+    },
+    {
+      "prompt": "Choose the correct word to complete the sentence.",
+      "template": "If you look over {{0}}, you can see the castle on the hill.",
+      "explanation": "'There' is used to indicate a place or position.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "theirs",
+            "there's",
+            "there"
+          ]
+        }
+      ],
+      "id": "s-db-0044"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "wolfs",
+            "wolves",
+            "wolfes"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "type": "dropdown_blanks",
+      "template": "In the story, a pack of hungry {{0}} hunted in the deep snow.",
+      "prompt": "Choose the correct plural form.",
+      "explanation": "For many words ending in 'f', the plural is formed by changing the 'f' to 'v' and adding 'es'.",
+      "id": "s-db-0045"
+    },
+    {
+      "explanation": "'Magnificent' is an adjective because it describes the quality of the noun 'palace'.",
+      "prompt": "Identify the word class of the word 'magnificent'.",
+      "template": "The king lived in a magnificent palace. In this sentence, 'magnificent' is an {{0}}.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "adjective",
+            "adverb",
+            "noun"
+          ]
+        }
+      ],
+      "id": "s-db-0046"
+    },
+    {
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "wasnt",
+            "was'nt",
+            "wasn't"
+          ]
+        }
+      ],
+      "explanation": "An apostrophe is used in contractions to show where letters have been omitted (was not).",
+      "prompt": "Choose the correctly punctuated contraction.",
+      "template": "He looked for his keys everywhere, but they {{0}} in his pocket.",
+      "id": "s-db-0047"
+    },
+    {
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "Since",
+            "Unless",
+            "Until"
+          ]
+        }
+      ],
+      "prompt": "Choose the best subordinating conjunction.",
+      "template": "{{0}} it is raining outside, we will have to stay indoors for break time.",
+      "explanation": "'Since' is a conjunction used here to mean 'because' or 'due to the fact'.",
+      "id": "s-db-0048"
+    },
+    {
+      "explanation": "'Ancient' is used to describe the noun 'statue', which makes it an adjective.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "adverb",
+            "adjective",
+            "noun",
+            "verb"
+          ]
+        }
+      ],
+      "prompt": "Identify the word class of the underlined word.",
+      "template": "The museum guard stood silently next to the ancient {{0}} statue.",
+      "type": "dropdown_blanks",
+      "id": "s-db-0049"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "was",
+            "were",
+            "is",
+            "are"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "explanation": "The subject 'The team of explorers' is singular, so it requires the singular verb 'was'.",
+      "prompt": "Select the correct verb to complete the sentence.",
+      "type": "dropdown_blanks",
+      "template": "The team of explorers {{0}} exhausted after their long journey north.",
+      "id": "s-db-0050"
+    },
+    {
+      "template": "We had to stop the football match {{0}} it started to thunder and lighten.",
+      "type": "dropdown_blanks",
+      "prompt": "Select the best conjunction to complete the sentence.",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "but",
+            "or",
+            "because",
+            "if"
+          ]
+        }
+      ],
+      "explanation": "'Because' is a subordinating conjunction used to show the reason why something happened.",
+      "id": "s-db-0051"
+    },
+    {
+      "explanation": "This is a statement that provides information, so it must end with a full stop.",
+      "blanks": [
+        {
+          "options": [
+            "!",
+            ".",
+            ",",
+            "?"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "type": "dropdown_blanks",
+      "template": "My sister is learning how to play the violin {{0}}",
+      "prompt": "Choose the correct punctuation mark to end the sentence.",
+      "id": "s-db-0052"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 3,
+          "options": [
+            "brought",
+            "buyed",
+            "brung",
+            "bought"
+          ]
+        }
+      ],
+      "explanation": "'Bought' is the irregular past tense form of the verb 'to buy'.",
+      "type": "dropdown_blanks",
+      "template": "Last Saturday, my brother {{0}} a new pair of trainers from the shop.",
+      "prompt": "Select the correct past tense verb.",
+      "id": "s-db-0053"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "wolves",
+            "wolfs",
+            "wolfes",
+            "wolfse"
+          ]
+        }
+      ],
+      "explanation": "Nouns ending in 'f' usually change to 'ves' in their plural form.",
+      "type": "dropdown_blanks",
+      "template": "In the fairy tale, the three {{0}} lived deep inside the woods.",
+      "prompt": "Choose the correct plural form of the word 'wolf'.",
+      "id": "s-db-0054"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "Their",
+            "There",
+            "They're",
+            "Them"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "explanation": "'They're' is a contraction of 'they are', which fits the context of the sentence.",
+      "type": "dropdown_blanks",
+      "template": "{{0}} going to be very disappointed when they find out the park is closed.",
+      "prompt": "Select the correct word to complete the sentence.",
+      "id": "s-db-0055"
+    },
+    {
+      "explanation": "The sentence is passive because the subject (the letter) is being acted upon by the verb.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "active",
+            "passive",
+            "imperative",
+            "interrogative"
+          ]
+        }
+      ],
+      "prompt": "Identify whether the sentence is written in the active or passive voice.",
+      "template": "The secret letter was delivered by a mysterious messenger. This is the {{0}} voice.",
+      "type": "dropdown_blanks",
+      "id": "s-db-0056"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "After",
+            "Until",
+            "Unless",
+            "If"
+          ]
+        }
+      ],
+      "explanation": "'After' is a fronted adverbial that indicates the sequence of events.",
+      "prompt": "Choose the correct fronted adverbial to start the sentence.",
+      "type": "dropdown_blanks",
+      "template": "{{0}} finishing her homework, Sarah went outside to play on her bike.",
+      "id": "s-db-0057"
+    },
+    {
+      "template": "The librarian asked the children to handle the books carefully {{0}}.",
+      "type": "dropdown_blanks",
+      "prompt": "Identify the word class of the underlined word.",
+      "blanks": [
+        {
+          "options": [
+            "preposition",
+            "pronoun",
+            "conjunction",
+            "adverb"
+          ],
+          "correctIndex": 3
+        }
+      ],
+      "explanation": "'Carefully' describes how the action (handling) is performed, making it an adverb.",
+      "id": "s-db-0058"
+    },
+    {
+      "type": "dropdown_blanks",
+      "template": "I think {{0}} going to be a very hot day today.",
+      "prompt": "Choose the correct word to complete the sentence.",
+      "explanation": "'It's' is the contraction of 'it is', which is required here. 'Its' without an apostrophe shows possession.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "its",
+            "it's",
+            "its's",
+            "its'"
+          ]
+        }
+      ],
+      "id": "s-db-0059"
+    },
+    {
+      "prompt": "Select the correct relative pronoun.",
+      "template": "The dentist, {{0}} was very kind, explained how to brush my teeth properly.",
+      "type": "dropdown_blanks",
+      "explanation": "'Who' is a relative pronoun used to refer to a person (the dentist).",
+      "blanks": [
+        {
+          "options": [
+            "whom",
+            "which",
+            "who",
+            "whose"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "id": "s-db-0060"
+    },
+    {
+      "prompt": "Choose the correct conjunction to begin the sentence.",
+      "template": "{{0}} we moved to this house, I have had my own bedroom.",
+      "blanks": [
+        {
+          "options": [
+            "When",
+            "Since",
+            "Because"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "type": "dropdown_blanks",
+      "explanation": "The subordinating conjunction 'Since' is used here to mean 'from the time that'.",
+      "id": "s-db-0061"
+    },
+    {
+      "template": "The archaeologists discovered a hoard of ancient Egyptian {{0}} gold.",
+      "prompt": "Identify the word class of the underlined word.",
+      "blanks": [
+        {
+          "options": [
+            "adverb",
+            "preposition",
+            "adjective"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "type": "dropdown_blanks",
+      "explanation": "The word 'Egyptian' describes the noun 'gold', making it an adjective.",
+      "id": "s-db-0062"
+    },
+    {
+      "template": "The crowd of spectators {{0}} cheering loudly for the runners.",
+      "prompt": "Select the correct verb to complete the past tense sentence.",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "were",
+            "was",
+            "is"
+          ]
+        }
+      ],
+      "explanation": "The subject 'crowd' is a collective noun acting as a single unit, but in this context of a past event, 'were' or 'was' can be used; 'were' is common when referring to individuals in a group.",
+      "type": "dropdown_blanks",
+      "id": "s-db-0063"
+    },
+    {
+      "template": "The pack of {{0}} howling could be heard from the village.",
+      "prompt": "Select the correct word to show plural possession.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "wolves",
+            "wolves'",
+            "wolfs"
+          ]
+        }
+      ],
+      "explanation": "The apostrophe after the 's' shows that the food belongs to the whole group (plural) of wolves.",
+      "type": "dropdown_blanks",
+      "id": "s-db-0064"
+    },
+    {
+      "template": "If the twins don't hurry up, {{0}} going to miss the bus.",
+      "prompt": "Choose the correct word to complete the sentence.",
+      "blanks": [
+        {
+          "options": [
+            "there",
+            "their",
+            "they're"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "explanation": "'They're' is a contraction of 'they are', which fits the meaning of the sentence.",
+      "type": "dropdown_blanks",
+      "id": "s-db-0065"
+    },
+    {
+      "prompt": "Identify the voice used in this sentence.",
+      "template": "The delicious chocolate cake was baked by my grandmother. This is the {{0}} voice.",
+      "explanation": "The subject (the cake) is being acted upon by the verb, which is the passive voice.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "passive",
+            "active",
+            "past"
+          ]
+        }
+      ],
+      "id": "s-db-0066"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "happily.",
+            "happily?",
+            "happily!"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "type": "dropdown_blanks",
+      "explanation": "The sentence is a statement, so it should end with a full stop.",
+      "prompt": "Choose the correct punctuation mark to end the sentence.",
+      "template": "The children played in the garden {{0}}",
+      "id": "s-db-0067"
+    },
+    {
+      "explanation": "'Which' is the relative pronoun used to provide more information about an object (the car).",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "which",
+            "who",
+            "whose"
+          ]
+        }
+      ],
+      "prompt": "Choose the correct relative pronoun.",
+      "template": "The old car, {{0}} had a rusty door, finally broke down.",
+      "id": "s-db-0068"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "Despite",
+            "Although",
+            "Instead"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "explanation": "'Although' is a conjunction used to show contrast between the cold weather and going for a swim.",
+      "type": "dropdown_blanks",
+      "prompt": "Which word best completes the sentence?",
+      "template": "{{0}} it was a very cold morning, they decided to go for a swim.",
+      "id": "s-db-0069"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "calmly",
+            "calmly.",
+            "calmly?"
+          ]
+        }
+      ],
+      "type": "dropdown_blanks",
+      "explanation": "The sentence starts with 'How', an exclamation, so it needs an exclamation mark (not offered, so standard punctuation rules apply). 'Calmly' is the adverb.",
+      "template": "How well the captain led the sheep {{0}}!",
+      "prompt": "Choose the correct adverb to complete the exclamation.",
+      "id": "s-db-0070"
+    },
+    {
+      "explanation": "The plural of 'knife' is 'knives', where the 'f' changes to a 'v'.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "options": [
+            "knives",
+            "knifes",
+            "knive's"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "prompt": "Select the correct plural form.",
+      "template": "The chef sharpened all of the {{0}} before he started cooking.",
+      "id": "s-db-0071"
+    },
+    {
+      "type": "dropdown_blanks",
+      "template": "Put your dirty football boots over {{0}} by the back door.",
+      "prompt": "Choose the correct word to complete the sentence.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "They're",
+            "There",
+            "Their"
+          ]
+        }
+      ],
+      "explanation": "'There' is used to indicate a place or position.",
+      "id": "s-db-0072"
+    },
+    {
+      "explanation": "The sentence is in the passive voice because the subject (the windows) is being acted upon by the object (the window cleaner).",
+      "blanks": [
+        {
+          "options": [
+            "active",
+            "past",
+            "passive"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "prompt": "Identify the voice used in this sentence.",
+      "template": "The windows were polished to a shine by the window cleaner. This is the {{0}} voice.",
+      "type": "dropdown_blanks",
+      "id": "s-db-0073"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "mice",
+            "mouses",
+            "mices"
+          ]
+        }
+      ],
+      "explanation": "'Mice' is the irregular plural form of the noun 'mouse'.",
+      "type": "dropdown_blanks",
+      "template": "The cat chased three tiny {{0}} across the kitchen floor.",
+      "prompt": "Choose the correct plural form.",
+      "id": "s-db-0074"
+    },
+    {
+      "explanation": "'Although' is a conjunction used to show contrast between the weather and the decision to go out.",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "until",
+            "because",
+            "although"
+          ]
+        }
+      ],
+      "template": "The children went to the park {{0}} it was starting to rain.",
+      "type": "dropdown_blanks",
+      "prompt": "Choose the best subordinating conjunction.",
+      "id": "s-db-0075"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "whose",
+            "who's",
+            "who"
+          ]
+        }
+      ],
+      "explanation": "'Whose' is a possessive pronoun used to show that the bike belongs to the boy.",
+      "type": "dropdown_blanks",
+      "template": "The boy {{0}} bike had a flat tyre felt very frustrated.",
+      "prompt": "Choose the correct word to complete the sentence.",
+      "id": "s-db-0076"
+    },
+    {
+      "prompt": "Choose the correct verb tense.",
+      "template": "Last night, I {{0}} a long letter to my pen pal in France.",
+      "type": "dropdown_blanks",
+      "explanation": "'Wrote' is the past simple tense of the verb 'write'.",
+      "blanks": [
+        {
+          "options": [
+            "write",
+            "wrote",
+            "written"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "id": "s-db-0077"
+    },
+    {
+      "prompt": "Choose the correct verb for subject-verb agreement.",
+      "template": "The bunch of keys {{0}} found at the bottom of the bag.",
+      "type": "dropdown_blanks",
+      "explanation": "The subject 'the keys' is plural, so the verb 'were' must also be plural to agree.",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "was",
+            "is",
+            "were"
+          ]
+        }
+      ],
+      "id": "s-db-0078"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "carefully",
+            "careful",
+            "carefulness"
+          ]
+        }
+      ],
+      "explanation": "'Carefully' is an adverb that describes how the painting was carried.",
+      "prompt": "Choose the correct adverb.",
+      "type": "dropdown_blanks",
+      "template": "Sanjay carried the fragile painting {{0}} up the stairs.",
+      "id": "s-db-0079"
+    },
+    {
+      "explanation": "The modal verb 'should' is followed by the infinitive 'have', not the preposition 'of'.",
+      "blanks": [
+        {
+          "options": [
+            "should of",
+            "should have",
+            "should has"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "prompt": "Choose the correct phrase to complete the sentence.",
+      "template": "I {{0}} remembered to bring my umbrella today.",
+      "type": "dropdown_blanks",
+      "id": "s-db-0080"
+    },
+    {
+      "prompt": "Choose the correct article.",
+      "type": "dropdown_blanks",
+      "template": "It was {{0}} honest mistake, but it caused a lot of trouble.",
+      "blanks": [
+        {
+          "options": [
+            "an",
+            "a",
+            "the"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "explanation": "'An' is used before words that begin with a vowel sound, like 'honest'.",
+      "id": "s-db-0081"
+    },
+    {
+      "template": "The fire roared in the grate. {{0}}, the snow continued to fall outside.",
+      "type": "dropdown_blanks",
+      "prompt": "Choose the best fronted adverbial.",
+      "explanation": "'Meanwhile' is used to describe an action happening at the same time as another.",
+      "blanks": [
+        {
+          "options": [
+            "Afterwards",
+            "However",
+            "Meanwhile"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "id": "s-db-0082"
+    },
+    {
+      "explanation": "'She'd' is the contraction for 'she would', which is needed for the conditional tense in this sentence.",
+      "blanks": [
+        {
+          "options": [
+            "she'll",
+            "she'd",
+            "she's"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "prompt": "Choose the correct contraction.",
+      "template": "If she had more time, {{0}} finish the puzzle herself.",
+      "type": "dropdown_blanks",
+      "id": "s-db-0083"
+    },
+    {
+      "explanation": "'They're' is the contraction of 'they are', which is needed to make sense of the sentence.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "options": [
+            "Theyre",
+            "They're",
+            "Their"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "template": "{{0}} meeting us at the cinema at six o'clock.",
+      "prompt": "Choose the correct word to complete the sentence.",
+      "id": "s-db-0084"
+    },
+    {
+      "template": "The sandwiches were eaten by the hungry children. This is the {{0}} voice.",
+      "prompt": "Identify the voice used in this sentence.",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "passives",
+            "passived",
+            "passive"
+          ]
+        }
+      ],
+      "type": "dropdown_blanks",
+      "explanation": "The subject (the sandwiches) is being acted upon by the verb, which is the passive voice.",
+      "id": "s-db-0085"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "geese快速",
+            "geese",
+            "gooses"
+          ]
+        }
+      ],
+      "explanation": "'Geese' is the irregular plural form of the noun 'goose'.",
+      "type": "dropdown_blanks",
+      "template": "A large flock of {{0}} flew over the lake.",
+      "prompt": "Choose the correct plural noun.",
+      "id": "s-db-0086"
+    },
+    {
+      "template": "{{0}} it was very expensive, the phone was not very good.",
+      "prompt": "Choose the best conjunction to complete the sentence.",
+      "type": "dropdown_blanks",
+      "explanation": "'Although' is a subordinating conjunction used to show contrast between two ideas.",
+      "blanks": [
+        {
+          "options": [
+            "because",
+            "although",
+            "since配音"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "id": "s-db-0087"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "who",
+            "which",
+            "whom"
+          ]
+        }
+      ],
+      "explanation": "The relative pronoun 'who' is used to give more information about a person (the teacher).",
+      "type": "dropdown_blanks",
+      "prompt": "Choose the correct relative pronoun.",
+      "template": "The teacher, {{0}} was usually very kind, looked quite cross today.",
+      "id": "s-db-0088"
+    },
+    {
+      "explanation": "'Drove' is the simple past tense of the irregular verb 'to drive'.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "drove",
+            "driven",
+            "drives"
+          ]
+        }
+      ],
+      "prompt": "Choose the correct past tense verb.",
+      "template": "My uncle {{0}} all the way from London to Cornwall yesterday.",
+      "id": "s-db-0089"
+    },
+    {
+      "type": "dropdown_blanks",
+      "explanation": "'A' is the indefinite article used before words starting with a consonant sound.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "an",
+            "a",
+            "the"
+          ]
+        }
+      ],
+      "template": "I saw {{0}} huge spider crawling across the ceiling.",
+      "prompt": "Choose the correct article.",
+      "id": "s-db-0090"
+    },
+    {
+      "prompt": "Choose the correct adverb.",
+      "template": "The artist {{0}} painted the portrait in just two hours.",
+      "type": "dropdown_blanks",
+      "explanation": "'Skilfully' is an adverb that describes how the artist painted the portrait.",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "skilfully",
+            "skilful",
+            "skilfulness"
+          ]
+        }
+      ],
+      "id": "s-db-0091"
+    },
+    {
+      "explanation": "'It's' is the contraction of 'it is'. 'Its' is a possessive determiner.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "its",
+            "it's",
+            "its'"
+          ]
+        }
+      ],
+      "prompt": "Choose the correct word.",
+      "template": "I think {{0}} going to be a very sunny day today.",
+      "id": "s-db-0092"
+    },
+    {
+      "template": "The park is beautiful. {{0}}, it has a brand new playground.",
+      "prompt": "Choose the best fronted adverbial.",
+      "explanation": "'Furthermore' is used to add more information to a point already made.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "Therefore",
+            "However",
+            "Furthermore"
+          ]
+        }
+      ],
+      "id": "s-db-0093"
+    },
+    {
+      "type": "dropdown_blanks",
+      "explanation": "The past participle 'seen' is used with the auxiliary verb 'have'.",
+      "blanks": [
+        {
+          "options": [
+            "seen",
+            "saw",
+            "seed"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "prompt": "Choose the correct verb form.",
+      "template": "Have you {{0}} my blue coat anywhere?",
+      "id": "s-db-0094"
+    },
+    {
+      "prompt": "Choose the correct word.",
+      "template": "I hope {{0}} feeling better after your rest.",
+      "type": "dropdown_blanks",
+      "explanation": "'You're' is the contraction of 'you are', which is required for the sentence to be grammatically correct.",
+      "blanks": [
+        {
+          "options": [
+            "Your",
+            "You're",
+            "Yore"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "id": "s-db-0095"
+    },
+    {
+      "template": "The group of children {{0}} happily in the park when it started to rain.",
+      "type": "dropdown_blanks",
+      "explanation": "The subject 'children' is plural, so the plural past progressive verb form 'were playing' must be used for agreement.",
+      "blanks": [
+        {
+          "options": [
+            "was playing",
+            "were playing",
+            "is playing"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "prompt": "Select the correct verb form to complete the sentence.",
+      "id": "s-db-0096"
+    },
+    {
+      "prompt": "Select the correct word to complete the sentence.",
+      "blanks": [
+        {
+          "options": [
+            "their",
+            "there",
+            "they're"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "explanation": "'They're' is a contraction of 'they are', which is the only word that makes sense in this context.",
+      "type": "dropdown_blanks",
+      "template": "I am sure {{0}} going to enjoy the school trip to the museum tomorrow.",
+      "id": "s-db-0097"
     }
   ],
   "mocks": []

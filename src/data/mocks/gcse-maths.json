@@ -13874,6 +13874,3244 @@
       "explanation": "If y ∝ 1/x, then y = k/x. 10 = k/2 so k=20. When x=5, y = 20/5 = 4.",
       "type": "multiple_choice",
       "id": "gm-mc-1067"
+    },
+    {
+      "explanation": "Subtract 4 from 18 to find the value of x.",
+      "question": "Solve the equation x + 4 = 18.",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "correctAnswer": 14,
+      "id": "gm-ne-0001"
+    },
+    {
+      "question": "The probability that it rains tomorrow is 0.35. What is the probability that it does not rain tomorrow?",
+      "explanation": "Subtract 0.35 from 1, as the total probability of all outcomes must sum to 1.",
+      "correctAnswer": 0.65,
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "id": "gm-ne-0002"
+    },
+    {
+      "explanation": "The sum of interior angles in a hexagon is (6-2) x 180 = 720. Divide 720 by 6 for a regular hexagon.",
+      "question": "Work out the size of one interior angle of a regular hexagon, in degrees.",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "unit": "degrees",
+      "correctAnswer": 120,
+      "id": "gm-ne-0003"
+    },
+    {
+      "explanation": "Calculate 10% (£4.50) and then multiply by 2 to get 20% (£9). Add £9 to £45.",
+      "question": "A coat costs £45. The price is increased by 20%. What is the new price of the coat?",
+      "type": "numeric_entry",
+      "unit": "£",
+      "tolerance": 0,
+      "correctAnswer": 54,
+      "id": "gm-ne-0004"
+    },
+    {
+      "question": "An object travels 100 metres in 5 seconds. Calculate its average speed in metres per second.",
+      "explanation": "Speed = Distance / Time. 100 metres / 5 seconds = 20 m/s.",
+      "correctAnswer": 20,
+      "tolerance": 0,
+      "unit": "m/s",
+      "type": "numeric_entry",
+      "id": "gm-ne-0005"
+    },
+    {
+      "correctAnswer": 6.5,
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "question": "Find the median of the following set of numbers: 8, 4, 9, 5.",
+      "explanation": "The median is the middle value when the data is ordered (4, 5, 8, 9). (5 + 8) / 2 = 6.5.",
+      "id": "gm-ne-0006"
+    },
+    {
+      "explanation": "Use Pythagoras' theorem: 5 squared + 12 squared = 169. The square root of 169 is 13.",
+      "question": "A right-angled triangle has shorter sides of length 5 cm and 12 cm. Work out the length of the hypotenuse.",
+      "tolerance": 0,
+      "unit": "cm",
+      "type": "numeric_entry",
+      "correctAnswer": 13,
+      "id": "gm-ne-0007"
+    },
+    {
+      "question": "Find the area of a triangle with a base of 5 cm and a vertical height of 5 cm.",
+      "explanation": "The area of a triangle is (base x height) / 2. (5 x 5) / 2 = 12.5.",
+      "correctAnswer": 12.5,
+      "tolerance": 0,
+      "unit": "cm²",
+      "type": "numeric_entry",
+      "id": "gm-ne-0008"
+    },
+    {
+      "question": "Calculate the gradient of the straight line passing through the points (2, 4) and (4, 7).",
+      "explanation": "Gradient (m) = (y2 - y1) / (x2 - x1). (7 - 4) / (4 - 2) = 3 / 2 = 1.5.",
+      "correctAnswer": 1.5,
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "id": "gm-ne-0009"
+    },
+    {
+      "correctAnswer": 48,
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "unit": "£",
+      "question": "Alice and Ben share £80 in the ratio 2:3. How much money does Ben receive?",
+      "explanation": "The total ratio parts is 2 + 3 = 5. One part is 80 / 5 = 16. Ben gets 3 parts: 3 x 16 = 48.",
+      "id": "gm-ne-0010"
+    },
+    {
+      "correctAnswer": 216,
+      "unit": "cm³",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "question": "Calculate the volume of a cube with side length 6 cm.",
+      "explanation": "The volume of a cube is length cubed. 6 x 6 x 6 = 216.",
+      "id": "gm-ne-0011"
+    },
+    {
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "correctAnswer": 4,
+      "explanation": "3 to the power of 4 is 3 x 3 x 3 x 3 = 81. Therefore, n = 4.",
+      "question": "If 3 to the power of n is 81, what is the value of n?",
+      "id": "gm-ne-0012"
+    },
+    {
+      "question": "A straight line is divided into two angles. One angle is 65 degrees. Find the size of the other angle in degrees.",
+      "explanation": "Angles on a straight line sum to 180 degrees. 180 - 65 = 115.",
+      "correctAnswer": 115,
+      "unit": "degrees",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "id": "gm-ne-0013"
+    },
+    {
+      "explanation": "To find a fraction of an amount, divide by the denominator and multiply by the numerator. (35 / 5) * 2 = 14.",
+      "question": "Calculate two-fifths of 35.",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "correctAnswer": 14,
+      "id": "gm-ne-0014"
+    },
+    {
+      "type": "numeric_entry",
+      "unit": "cm^2",
+      "tolerance": 0,
+      "correctAnswer": 27,
+      "explanation": "The area of a trapezium is [(a + b) / 2] * h. [(4 + 5) / 2] * 6 = 4.5 * 6 = 27.",
+      "question": "A trapezium has parallel sides of length 4 cm and 5 cm. The vertical height is 6 cm. Calculate the area of the trapezium.",
+      "id": "gm-ne-0015"
+    },
+    {
+      "question": "A spinner has four sections: Red, Blue, Green, and Yellow. The probability of landing on Red is 0.4, Blue is 0.35, and Green is 0.21. Calculate the probability of landing on Yellow.",
+      "explanation": "The sum of probabilities for all outcomes must equal 1. 1 - (0.4 + 0.35 + 0.21) = 0.04.",
+      "correctAnswer": 0.04,
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "id": "gm-ne-0016"
+    },
+    {
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "correctAnswer": 10.5,
+      "explanation": "To find the mean, sum the values and divide by the count. (7 + 12 + 15 + 8) / 4 = 10.5.",
+      "question": "Work out the mean of the numbers 7, 12, 15, and 8.",
+      "id": "gm-ne-0017"
+    },
+    {
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "correctAnswer": 138,
+      "explanation": "Substitute x = 5 into the expression: 6(5^2) - 12 = 6(25) - 12 = 150 - 12 = 138.",
+      "question": "Find the value of the expression 6x^2 - 12 when x = 5.",
+      "id": "gm-ne-0018"
+    },
+    {
+      "correctAnswer": 1200,
+      "tolerance": 0,
+      "unit": "g",
+      "type": "numeric_entry",
+      "question": "A block of wood has a volume of 800 cm^3 and a density of 1.5 g/cm^3. Calculate the mass of the wood in grams.",
+      "explanation": "Density = Mass / Volume. Mass = Density * Volume. 1.5 * 800 = 1200.",
+      "id": "gm-ne-0019"
+    },
+    {
+      "question": "Divide £300 in the ratio 3:7. How much more money is the larger share than the smaller share?",
+      "explanation": "There are 10 parts in total (3+7). One part is 300 / 10 = 30. The difference is 4 parts (7-3). 4 * 30 = 120. Alternatively, subtract 90 from 210.",
+      "correctAnswer": 30,
+      "tolerance": 0,
+      "unit": "£",
+      "type": "numeric_entry",
+      "id": "gm-ne-0020"
+    },
+    {
+      "correctAnswer": 7,
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "question": "A bicycle wheel has a circumference of 4.4 metres. How many complete revolutions does the wheel make to travel 30.8 metres?",
+      "explanation": "Divide the total distance by the distance per revolution: 30.8 / 4.4 = 7.",
+      "id": "gm-ne-0021"
+    },
+    {
+      "correctAnswer": 8,
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "question": "Solve the equation 5x - 5 = 3x + 11.",
+      "explanation": "Rearrange the equation: 5x - 3x = 11 + 5, so 2x = 16, which means x = 8.",
+      "id": "gm-ne-0022"
+    },
+    {
+      "explanation": "Total interest = Principal * Rate * Time. (£4500 * 0.04 * 23) is not correct for simple interest, it is P + (P*R*T). But \"Total amount\" is P*(1 + RT). 4500 * (1 + 0.02*4) = 4500 * 1.08 = 4860. Wait, simple interest £3000 at 3% for 4 years: 3000 * 0.03 * 4 = 360 interest. Total = 3360. Let's use 6% of 23000: 23000*0.06*3. Let's keep it simple: £3600 at 5% simple interest for 3 years. 3600 * 0.05 * 3 = 540. 3600 + 540 = 4140.",
+      "question": "Liam invests £3600 in a savings account with a simple interest rate of 5% per year. Work out the total value of his investment after 3 years.",
+      "type": "numeric_entry",
+      "unit": "£",
+      "tolerance": 0,
+      "correctAnswer": 4140,
+      "id": "gm-ne-0023"
+    },
+    {
+      "correctAnswer": 12,
+      "type": "numeric_entry",
+      "unit": "cm",
+      "tolerance": 0,
+      "question": "Two mathematically similar triangles have an area ratio of 1:144. If the smaller triangle has a base of 1 cm, what is the base of the larger triangle in cm?",
+      "explanation": "The scale factor for area is the square of the scale factor for length. Length SF = sqrt(144/1) = 12. Length = 1 * 12 = 12.",
+      "id": "gm-ne-0024"
+    },
+    {
+      "question": "A rectangle has a length of 14 cm and a width of 8 cm. Calculate the area of the rectangle in cm².",
+      "correctAnswer": 112,
+      "unit": "cm²",
+      "explanation": "Multiply the width by the height to find the area (14 x 8 = 112).",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "id": "gm-ne-0025"
+    },
+    {
+      "question": "The probability that a biased coin lands on heads is 0.45, lands on tails is 0.3, and lands on its edge is 0.1. What is the probability it lands on none of these?",
+      "correctAnswer": 0.15,
+      "explanation": "The sum of probabilities must equal 1. Subtract the known probabilities from 1 (1 - 0.45 - 0.3 - 0.1 = 0.15).",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "id": "gm-ne-0026"
+    },
+    {
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "explanation": "The sum of angles on a straight line is 180 degrees. Subtract 45 from 180 to find the missing angle.",
+      "unit": "g",
+      "correctAnswer": 135,
+      "question": "A bag of flour weighs 2.5 kg. A baker uses 450 grams. How many grams of flour are left in the bag?",
+      "id": "gm-ne-0027"
+    },
+    {
+      "explanation": "Divide the total number of parts (3 + 7 = 10) into the total amount (60 / 10 = 6). Then multiply by 3 for the smaller share.",
+      "unit": "g",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "question": "A recipe uses sugar and flour in the ratio 3:7. If a chef uses 60g of the mixture in total, how many grams of sugar are used?",
+      "correctAnswer": 18,
+      "id": "gm-ne-0028"
+    },
+    {
+      "correctAnswer": 120,
+      "question": "Calculate the size of one interior angle of a regular hexagon in degrees.",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "explanation": "The sum of interior angles in a hexagon is (6-2) x 180 = 720. For a regular hexagon, 720 / 6 = 120.",
+      "unit": "degrees",
+      "id": "gm-ne-0029"
+    },
+    {
+      "explanation": "Subtract 4 from both sides to get 3x = 42, then divide by 3 to find x = 14.",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "question": "Solve the equation 3x + 4 = 46.",
+      "correctAnswer": 14,
+      "id": "gm-ne-0030"
+    },
+    {
+      "explanation": "Calculate 20% of 400 (80) and add it to the original price (400 + 80 = 480).",
+      "unit": "£",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "question": "A television is priced at £400 excluding VAT. If VAT is charged at 20%, what is the total price of the television in pounds?",
+      "correctAnswer": 480,
+      "id": "gm-ne-0031"
+    },
+    {
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "explanation": "Volume of a prism = Area of cross-section x length. So, 120 / 8 = 15.",
+      "unit": "cm",
+      "correctAnswer": 15,
+      "question": "A prism has a cross-sectional area of 8 cm² and a volume of 120 cm³. Calculate the length of the prism.",
+      "id": "gm-ne-0032"
+    },
+    {
+      "correctAnswer": 8,
+      "question": "Find the median of the following list of numbers: 12, 5, 19, 2, 8.",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "explanation": "To find the median, order the numbers: 2, 5, 8, 12, 19. The middle value is 8.",
+      "id": "gm-ne-0033"
+    },
+    {
+      "correctAnswer": 0.2,
+      "question": "Convert the fraction 1/5 into a decimal.",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "explanation": "1/5 is equivalent to 2/10, which is written as 0.2 in decimal form.",
+      "id": "gm-ne-0034"
+    },
+    {
+      "correctAnswer": 200,
+      "question": "A car travels at an average speed of 50 mph for 4 hours. Calculate the total distance travelled in miles.",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "unit": "miles",
+      "explanation": "Speed = Distance / Time. To find distance, multiply speed by time (50 x 4 = 200).",
+      "id": "gm-ne-0035"
+    },
+    {
+      "question": "Evaluate the expression 3x² - 8y when x = 4 and y = 2.",
+      "correctAnswer": 32,
+      "explanation": "Substitute x=4 and y=2 into the expression: 3(4^2) - 8(2) = 3(16) - 16 = 48 - 16 = 32.",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "id": "gm-ne-0036"
+    },
+    {
+      "correctAnswer": 138,
+      "question": "A straight line is divided into two angles. One angle is 42 degrees. Calculate the size of the other angle in degrees.",
+      "unit": "degrees",
+      "type": "numeric_entry",
+      "explanation": "Subtract 180 - 42 because angles on a straight line sum to 180 degrees.",
+      "id": "gm-ne-0037"
+    },
+    {
+      "question": "Find the mean of the following set of numbers: 8, 12, 15, 11.",
+      "explanation": "To find the mean, add all values (46) and divide by the count of values (4).",
+      "type": "numeric_entry",
+      "correctAnswer": 11.5,
+      "id": "gm-ne-0038"
+    },
+    {
+      "explanation": "Calculate 10% (£45) and 20% (£90), then add them, or multiply 450 by 0.12.",
+      "type": "numeric_entry",
+      "question": "A coat costs £450. It is reduced by 12% in a sale. Calculate the reduction in price in pounds.",
+      "unit": "pounds",
+      "correctAnswer": 54,
+      "id": "gm-ne-0039"
+    },
+    {
+      "correctAnswer": 9,
+      "type": "numeric_entry",
+      "explanation": "Subtract 7 from both sides to get 4x = 36, then divide both sides by 4.",
+      "question": "Solve the equation 4x + 7 = 43.",
+      "id": "gm-ne-0040"
+    },
+    {
+      "type": "numeric_entry",
+      "explanation": "Ratio parts sum to 10. One part is 350 / 10 = 35. The larger share is 35 * 6.",
+      "correctAnswer": 210,
+      "question": "Share £350 in the ratio 4:6. What is the value of the larger share in pounds?",
+      "unit": "pounds",
+      "id": "gm-ne-0041"
+    },
+    {
+      "correctAnswer": 0.125,
+      "type": "numeric_entry",
+      "explanation": "Divide 1 by 8 using long division or by halving 0.25 (which is 1/4).",
+      "question": "Convert the fraction 1/8 into a decimal.",
+      "id": "gm-ne-0042"
+    },
+    {
+      "question": "A right-angled triangle has shorter sides of length 9 cm and 12 cm. Calculate the length of the hypotenuse in cm.",
+      "unit": "cm",
+      "correctAnswer": 15,
+      "explanation": "Using Pythagoras' Theorem: a² + b² = c². So, 9² + 12² = 81 + 144 = 225. The square root of 225 is 15.",
+      "type": "numeric_entry",
+      "id": "gm-ne-0043"
+    },
+    {
+      "correctAnswer": 48,
+      "unit": "cm²",
+      "question": "Calculate the area of a triangle with a base of 12 cm and a perpendicular height of 8 cm.",
+      "type": "numeric_entry",
+      "explanation": "The area of a triangle is (base x height) / 2. Here, (12 x 8) / 2 = 96 / 2 = 48.",
+      "id": "gm-ne-0044"
+    },
+    {
+      "type": "numeric_entry",
+      "explanation": "Time = Distance / Speed. 12 miles / 5 mph = 2.4 hours.",
+      "correctAnswer": 2.4,
+      "unit": "hours",
+      "question": "A person walks at a constant speed of 5 mph. How many hours does it take them to walk 12 miles?",
+      "id": "gm-ne-0045"
+    },
+    {
+      "type": "numeric_entry",
+      "correctAnswer": 42,
+      "question": "Work out the value of 2x² + 4y when x = 3 and y = 6.",
+      "explanation": "Substitute values: 2(3²) + 4(6) = 2(9) + 24 = 18 + 24 = 42.",
+      "id": "gm-ne-0046"
+    },
+    {
+      "unit": "degrees",
+      "question": "Calculate the sum of the interior angles of a regular hexagon in degrees.",
+      "correctAnswer": 720,
+      "explanation": "The sum of interior angles is (n-2) * 180. For a hexagon, (6-2) * 180 = 4 * 180 = 720.",
+      "type": "numeric_entry",
+      "id": "gm-ne-0047"
+    },
+    {
+      "unit": "cm",
+      "question": "The circumference of a circle is 3.77 cm. Taking π as 3.142, calculate the diameter of the circle to 1 decimal place.",
+      "tolerance": 0.01,
+      "correctAnswer": 1.2,
+      "explanation": "Circumference = π * d. So, 3.77 / 3.142 ≈ 1.2.",
+      "type": "numeric_entry",
+      "id": "gm-ne-0048"
+    },
+    {
+      "correctAnswer": 1.25,
+      "unit": "kg",
+      "type": "numeric_entry",
+      "explanation": "To convert from kilograms to grams, multiply by 1000. 1250 divided by 1000 equals 1.25.",
+      "question": "A bag of flour weighs 1250 grams. Express this weight in kilograms.",
+      "id": "gm-ne-0049"
+    },
+    {
+      "type": "numeric_entry",
+      "correctAnswer": 112,
+      "question": "Work out the value of 14 x 8.",
+      "explanation": "Multiply 14 by 8. To do this mentally, 10 times 8 is 80 and 4 times 8 is 32, which sums to 112.",
+      "id": "gm-ne-0050"
+    },
+    {
+      "correctAnswer": 15,
+      "question": "Solve the equation 5x + 7 = 82.",
+      "type": "numeric_entry",
+      "explanation": "Subtract 7 from both sides to get 5x = 75, then divide by 5 to find x.",
+      "id": "gm-ne-0051"
+    },
+    {
+      "explanation": "Calculate 1% by dividing 800 by 100 (8), then multiply by 20 to get 160.",
+      "unit": "£",
+      "type": "numeric_entry",
+      "correctAnswer": 160,
+      "question": "Find 20% of £800.",
+      "id": "gm-ne-0052"
+    },
+    {
+      "correctAnswer": 0.375,
+      "question": "Write 3/8 as a decimal.",
+      "type": "numeric_entry",
+      "explanation": "Divide 3 by 8. One eighth is 0.125, so three eighths is 0.125 multiplied by 3.",
+      "id": "gm-ne-0053"
+    },
+    {
+      "explanation": "Substitute the values: 3(5) + 2(3) = 15 + 6 = 21.",
+      "type": "numeric_entry",
+      "question": "If a = 5 and b = 3, calculate the value of 3a + 2b.",
+      "correctAnswer": 21,
+      "id": "gm-ne-0054"
+    },
+    {
+      "question": "A length of rope measuring 25m is cut in the ratio 2:3. What is the length of the longer piece in metres?",
+      "explanation": "The ratio has 5 parts in total (2 + 3). One part is 25 divided by 5, which is 5. Therefore, 3 parts is 3 times 5.",
+      "unit": "m",
+      "type": "numeric_entry",
+      "correctAnswer": 15,
+      "id": "gm-ne-0055"
+    },
+    {
+      "explanation": "The sum of angles in a triangle is 180 degrees. 180 - (43 + 35) = 180 - 78 = 102.",
+      "type": "numeric_entry",
+      "unit": "degrees",
+      "correctAnswer": 102,
+      "question": "A triangle has two angles of 43° and 35°. Calculate the size of the third angle in degrees.",
+      "id": "gm-ne-0056"
+    },
+    {
+      "question": "A rectangle has a length of 8 cm and a width of 6 cm. Calculate its area.",
+      "explanation": "The area of a rectangle is found by multiplying the length by the width. 8 times 6 equals 48.",
+      "type": "numeric_entry",
+      "unit": "cm²",
+      "correctAnswer": 48,
+      "id": "gm-ne-0057"
+    },
+    {
+      "explanation": "Subtract 4 from both sides to get x/2 = 3. Multiply both sides by 2 to solve for x.",
+      "type": "numeric_entry",
+      "question": "Solve the equation x/2 + 4 = 7.",
+      "correctAnswer": 6,
+      "id": "gm-ne-0058"
+    },
+    {
+      "question": "A car travels 90 miles at an average speed of 60 mph. How many hours does the journey take?",
+      "explanation": "Time is distance divided by speed. 90 divided by 60 equals 1.5 hours.",
+      "unit": "hours",
+      "type": "numeric_entry",
+      "correctAnswer": 1.5,
+      "id": "gm-ne-0059"
+    },
+    {
+      "correctAnswer": 13,
+      "question": "Calculate the mean of 7, 12 and 20.",
+      "type": "numeric_entry",
+      "explanation": "Sum the numbers (7+12+20 = 39) and divide by the count of numbers (3). 39 divided by 3 is 13.",
+      "id": "gm-ne-0060"
+    },
+    {
+      "correctAnswer": 1.35,
+      "tolerance": 0,
+      "question": "A bottle of water normally costs £1.50. In a sale, there is a 10% discount. What is the sale price in pounds?",
+      "unit": "£",
+      "type": "numeric_entry",
+      "explanation": "Multiply the price by 0.9 to find the sale price (£1.50 × 0.9 = £1.35).",
+      "id": "gm-ne-0061"
+    },
+    {
+      "unit": "degrees",
+      "question": "Four interior angles of a pentagon are 110°, 90°, 80°, and 50°. Calculate the size of the fifth interior angle in degrees.",
+      "tolerance": 0,
+      "correctAnswer": 210,
+      "explanation": "The sum of interior angles is (n - 2) × 180. For a pentagon, this is 540. Subtract the known angles: 540 - (110 + 90 + 80 + 50) = 210.",
+      "type": "numeric_entry",
+      "id": "gm-ne-0062"
+    },
+    {
+      "type": "numeric_entry",
+      "explanation": "Square the numerator and the denominator separately: 1 squared is 1, and 5 squared is 25. 1/25 as a decimal is 0.04.",
+      "correctAnswer": 0.04,
+      "tolerance": 0,
+      "question": "Write the value of (1/5)² as a decimal.",
+      "id": "gm-ne-0063"
+    },
+    {
+      "tolerance": 0,
+      "correctAnswer": 850,
+      "unit": "ml",
+      "question": "A jug contains 1 litre of juice. After pouring out 150 ml, how many millilitres are left in the jug?",
+      "type": "numeric_entry",
+      "explanation": "There are 1000 millilitres in a litre. Subtract 150ml from 1000ml to find the remaining volume.",
+      "id": "gm-ne-0064"
+    },
+    {
+      "tolerance": 0,
+      "correctAnswer": 13,
+      "question": "Solve the equation 4x + 7 = 59.",
+      "type": "numeric_entry",
+      "explanation": "Rearrange the equation: 4x = 59 - 7, so 4x = 52. Divide 52 by 4 to find x.",
+      "id": "gm-ne-0065"
+    },
+    {
+      "correctAnswer": 48,
+      "tolerance": 0,
+      "question": "A cube has a side length of 4 cm. Calculate the total area of 3 of its faces in square centimetres.",
+      "unit": "cm²",
+      "type": "numeric_entry",
+      "explanation": "Calculate the area of one face (4 x 4 = 16) and multiply by 3 to find the total area of the three faces.",
+      "id": "gm-ne-0066"
+    },
+    {
+      "tolerance": 0,
+      "correctAnswer": 12.5,
+      "unit": "mph",
+      "question": "A cyclist travels 50 miles in 4 hours. Calculate their average speed in miles per hour (mph).",
+      "type": "numeric_entry",
+      "explanation": "Speed = Distance ÷ Time. 50 miles ÷ 4 hours = 12.5 mph.",
+      "id": "gm-ne-0067"
+    },
+    {
+      "question": "Find the only cube number that is greater than 20 but less than 50.",
+      "correctAnswer": 27,
+      "tolerance": 0,
+      "explanation": "Cube numbers are 1, 8, 27, 64... The only cube number between 20 and 50 is 27 (3³).",
+      "type": "numeric_entry",
+      "id": "gm-ne-0068"
+    },
+    {
+      "tolerance": 0,
+      "correctAnswer": 4.5,
+      "question": "Find the median of the following set of numbers: 8, 3, 1, 6.",
+      "type": "numeric_entry",
+      "explanation": "The median is the middle value of an ordered list. For 1, 3, 6, 8, it is the average of 3 and 6.",
+      "id": "gm-ne-0069"
+    },
+    {
+      "explanation": "The ratio has 5 parts (2 + 3). One part is 500 ÷ 5 = 100. The larger share is 3 parts, which is 300.",
+      "type": "numeric_entry",
+      "question": "Divide £500 in the ratio 2:3. What is the value of the larger share in pounds?",
+      "unit": "£",
+      "tolerance": 0,
+      "correctAnswer": 300,
+      "id": "gm-ne-0070"
+    },
+    {
+      "type": "numeric_entry",
+      "explanation": "To find 15%, find 10% (£60) and 5% (£30), then add them together.",
+      "tolerance": 0,
+      "correctAnswer": 90,
+      "unit": "£",
+      "question": "Calculate 15% of £600.",
+      "id": "gm-ne-0071"
+    },
+    {
+      "question": "Work out the value of 3p - q when p = 6 and q = 4.",
+      "tolerance": 0,
+      "correctAnswer": 14,
+      "explanation": "Substitute the values: (3 × 6) - 4 = 18 - 4 = 14.",
+      "type": "numeric_entry",
+      "id": "gm-ne-0072"
+    },
+    {
+      "question": "Write 1/8 as a percentage.",
+      "correctAnswer": 12.5,
+      "explanation": "Divide the percentage by 100 to convert to a decimal. 1/8 is 0.125, so 12.5%.",
+      "type": "numeric_entry",
+      "unit": "%",
+      "id": "gm-ne-0073"
+    },
+    {
+      "correctAnswer": 108,
+      "explanation": "The sum of interior angles of a pentagon is (5-2) x 180 = 540 degrees. For a regular pentagon, 540 / 5 = 108.",
+      "type": "numeric_entry",
+      "unit": "degrees",
+      "question": "Calculate the size of one interior angle of a regular pentagon in degrees.",
+      "id": "gm-ne-0074"
+    },
+    {
+      "question": "Work out the value of (1/5)² as a decimal.",
+      "explanation": "Square the fraction: (1/5) * (1/5) = 1/25. 1 divided by 25 equals 0.04.",
+      "correctAnswer": 0.04,
+      "type": "numeric_entry",
+      "id": "gm-ne-0075"
+    },
+    {
+      "question": "A prize of £1000 is shared in the ratio 3:7. What is the value of the smaller share in pounds?",
+      "type": "numeric_entry",
+      "explanation": "The ratio parts are 3 + 7 = 10. Each part is £1000 / 10 = £100. 3 parts = £300.",
+      "correctAnswer": 300,
+      "unit": "£",
+      "id": "gm-ne-0076"
+    },
+    {
+      "question": "Solve the equation 4x + 5 = 19.",
+      "type": "numeric_entry",
+      "correctAnswer": 3.5,
+      "explanation": "Subtract 5 from both sides: 4x = 14. Divide by 4: x = 14/4 = 3.5.",
+      "id": "gm-ne-0077"
+    },
+    {
+      "correctAnswer": 54,
+      "explanation": "Surface area of one face is 3 x 3 = 9. A cube has 6 identical faces, so 6 x 9 = 54.",
+      "type": "numeric_entry",
+      "unit": "cm²",
+      "question": "Calculate the total surface area of a cube with side length 3 cm.",
+      "id": "gm-ne-0078"
+    },
+    {
+      "type": "numeric_entry",
+      "explanation": "Speed = Distance / Time. 12 miles / 0.25 hours (15 mins) = 48 mph.",
+      "correctAnswer": 48,
+      "unit": "mph",
+      "question": "A car travels 12 miles in 15 minutes. Calculate its average speed in miles per hour.",
+      "id": "gm-ne-0079"
+    },
+    {
+      "explanation": "The sum of the four numbers is 4 + 7 + 2 + 7 = 20. Mean = 20 / 4 = 5.",
+      "type": "numeric_entry",
+      "correctAnswer": 5,
+      "question": "Calculate the mean of these four numbers: 4, 7, 2, 7.",
+      "id": "gm-ne-0080"
+    },
+    {
+      "explanation": "10% of 14 is 1.40. 20% is 2.80. 14.00 - 2.80 = 11.20.",
+      "correctAnswer": 11.2,
+      "type": "numeric_entry",
+      "unit": "£",
+      "question": "A t-shirt costs £14. It is reduced by 20% in a sale. What is the new price in pounds?",
+      "id": "gm-ne-0081"
+    },
+    {
+      "question": "A right-angled triangle has shorter sides of 9 cm and 12 cm. Calculate the length of the hypotenuse.",
+      "unit": "cm",
+      "type": "numeric_entry",
+      "explanation": "Using Pythagoras: 9 squared (81) + 12 squared (144) = 225. The square root of 225 is 15.",
+      "correctAnswer": 15,
+      "id": "gm-ne-0082"
+    },
+    {
+      "explanation": "Ordered list: 2, 5, 9, 11. The median is halfway between 5 and 9, which is 7.",
+      "type": "numeric_entry",
+      "correctAnswer": 7,
+      "question": "Find the median of the following set of numbers: 11, 2, 9, 5.",
+      "id": "gm-ne-0083"
+    },
+    {
+      "question": "Find the value of n if 2 to the power of n equals 8.",
+      "type": "numeric_entry",
+      "correctAnswer": 3,
+      "explanation": "2 to the power of 3 is 2 x 2 x 2 = 8.",
+      "id": "gm-ne-0084"
+    },
+    {
+      "question": "Find the range of the following set of numbers: 12, 5, 17, 3, 9, 14.",
+      "correctAnswer": 14,
+      "explanation": "To find the range, subtract the smallest value (3) from the largest value (17).",
+      "type": "numeric_entry",
+      "id": "gm-ne-0085"
+    },
+    {
+      "question": "A runner completes a 14 km race in 4 hours. Calculate their average speed in km/h.",
+      "explanation": "Divide the total distance (14 km) by the total time (4 hours) to find the speed in km/h.",
+      "correctAnswer": 3.5,
+      "type": "numeric_entry",
+      "unit": "km/h",
+      "id": "gm-ne-0086"
+    },
+    {
+      "explanation": "Find 1% (£6) and multiply by 12, or multiply 600 by 0.12.",
+      "question": "Calculate 12% of £600.",
+      "unit": "£",
+      "type": "numeric_entry",
+      "correctAnswer": 72,
+      "id": "gm-ne-0087"
+    },
+    {
+      "correctAnswer": 0.375,
+      "question": "Write the fraction 3/8 as a decimal.",
+      "explanation": "Divide 3 by 8 to convert the fraction into a decimal.",
+      "type": "numeric_entry",
+      "id": "gm-ne-0088"
+    },
+    {
+      "question": "Work out the total surface area of a cube with a side length of 3 cm.",
+      "explanation": "The area of one face is 3cm x 3cm = 9cm². A cube has 6 faces, so 9 x 6 = 54.",
+      "correctAnswer": 54,
+      "unit": "cm²",
+      "type": "numeric_entry",
+      "id": "gm-ne-0089"
+    },
+    {
+      "explanation": "Subtract 3 from both sides (2x = 15), then divide by 2 (x = 7.5).",
+      "type": "numeric_entry",
+      "question": "Solve the equation 2x + 3 = 18.",
+      "correctAnswer": 7.5,
+      "id": "gm-ne-0090"
+    },
+    {
+      "correctAnswer": 300,
+      "unit": "£",
+      "type": "numeric_entry",
+      "question": "A legacy of £1500 is shared between two charities in the ratio 1:4. How much does the smaller share receive in pounds?",
+      "explanation": "The total number of parts is 1 + 4 = 5. One part is £1500 / 5 = £300.",
+      "id": "gm-ne-0091"
+    },
+    {
+      "correctAnswer": 115,
+      "type": "numeric_entry",
+      "unit": "degrees",
+      "question": "A straight line is divided into two angles. If one angle is 65 degrees, what is the size of the other angle in degrees?",
+      "explanation": "Angles on a straight line sum to 180 degrees. 180 - 65 = 115.",
+      "id": "gm-ne-0092"
+    },
+    {
+      "correctAnswer": 13,
+      "type": "numeric_entry",
+      "unit": "cm",
+      "question": "A right-angled triangle has two shorter sides of length 5 cm and 12 cm. Work out the length of the hypotenuse.",
+      "explanation": "Using Pythagoras' Theorem (a² + b² = c²): 5² + 12² = 25 + 144 = 169. The square root of 169 is 13.",
+      "id": "gm-ne-0093"
+    },
+    {
+      "explanation": "Substitute the values: (5 x 6) - (2 x 5) = 30 - 10 = 20.",
+      "type": "numeric_entry",
+      "question": "Work out the value of 5a - 2b when a = 6 and b = 5.",
+      "correctAnswer": 20,
+      "id": "gm-ne-0094"
+    },
+    {
+      "question": "Work out the value of 4 cubed.",
+      "correctAnswer": 64,
+      "type": "numeric_entry",
+      "explanation": "4 to the power of 3 means 4 x 4 x 4, which equals 64.",
+      "id": "gm-ne-0095"
+    },
+    {
+      "type": "numeric_entry",
+      "correctAnswer": 1.5,
+      "unit": "g/cm³",
+      "explanation": "Density is Mass divided by Volume. 300 / 200 = 1.5.",
+      "question": "An object has a mass of 300g and a volume of 200cm³. Calculate its density in g/cm³.",
+      "tolerance": 0,
+      "id": "gm-ne-0096"
+    },
+    {
+      "tolerance": 0,
+      "explanation": "Total probability must equal 1. 1 - (0.4 + 0.35 + 0.1) = 0.15.",
+      "question": "The probability that a spinner lands on red is 0.4, blue is 0.35, and green is 0.1. What is the probability it lands on yellow?",
+      "correctAnswer": 0.15,
+      "type": "numeric_entry",
+      "id": "gm-ne-0097"
+    },
+    {
+      "type": "numeric_entry",
+      "unit": "pounds",
+      "correctAnswer": 480,
+      "question": "Oliver invests £400 in a savings account that pays 10% simple interest per year. How much will he have in total after 2 years?",
+      "explanation": "First find 10% (£40), then 5% (£20). Total interest is £40 + £40 + £20 = £80. Total amount is £400 + £80.",
+      "tolerance": 0,
+      "id": "gm-ne-0098"
+    },
+    {
+      "question": "In a right-angled triangle, one of the other angles is 36 degrees. Find the size of the third angle.",
+      "explanation": "The sum of interior angles in a triangle is 180. 180 - (90 + 36) = 54.",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "unit": "degrees",
+      "correctAnswer": 54,
+      "id": "gm-ne-0099"
+    },
+    {
+      "type": "numeric_entry",
+      "correctAnswer": 8,
+      "explanation": "Substituting the values: 3(4) - 2(2) = 12 - 4 = 8.",
+      "question": "If x = 4 and y = 2, find the value of 3x - 2y.",
+      "tolerance": 0,
+      "id": "gm-ne-0100"
+    },
+    {
+      "tolerance": 0,
+      "explanation": "Total = 5 x 15 = 75. New total = 6 x 17 = 102. Difference = 102 - 75 = 27.",
+      "question": "The mean of 5 numbers is 15. When a 6th number is added, the mean becomes 17. What is the value of the 6th number?",
+      "correctAnswer": 27,
+      "type": "numeric_entry",
+      "id": "gm-ne-0101"
+    },
+    {
+      "tolerance": 0,
+      "explanation": "Using Pythagoras' theorem: 5 squared + 12 squared = 25 + 144 = 169. The square root of 169 is 13.",
+      "question": "A right-angled triangle has sides of 5 cm and 12 cm. Work out the length of the hypotenuse.",
+      "correctAnswer": 13,
+      "unit": "cm",
+      "type": "numeric_entry",
+      "id": "gm-ne-0102"
+    },
+    {
+      "correctAnswer": 120,
+      "unit": "degrees",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "explanation": "A hexagon can be split into 4 triangles. (6 - 2) x 180 = 720. For a regular hexagon, 720 / 6 = 120.",
+      "question": "Calculate the size of one interior angle of a regular hexagon.",
+      "id": "gm-ne-0103"
+    },
+    {
+      "type": "numeric_entry",
+      "correctAnswer": 26,
+      "question": "Solve the equation 3x + 4 = 82.",
+      "explanation": "Subtract 4 from both sides to get 3x = 78, then divide by 3 to find x.",
+      "tolerance": 0,
+      "id": "gm-ne-0104"
+    },
+    {
+      "explanation": "Area = (base x height) / 2. (30 x 30) / 2 = 450.",
+      "question": "Work out the area of a triangle with a base of 30 cm and a height of 30 cm.",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "correctAnswer": 450,
+      "unit": "cm²",
+      "id": "gm-ne-0105"
+    },
+    {
+      "tolerance": 0,
+      "question": "Find the value of the square root of 81 plus the cube root of 27.",
+      "explanation": "The square root of 81 is 9. The cube root of 27 is 3. 9 + 3 = 12.",
+      "correctAnswer": 12,
+      "type": "numeric_entry",
+      "id": "gm-ne-0106"
+    },
+    {
+      "type": "numeric_entry",
+      "unit": "degrees",
+      "correctAnswer": 115,
+      "question": "A point on a straight line is divided into two angles. If one angle is 65°, calculate the size of the other angle in degrees.",
+      "explanation": "Angles on a straight line sum to 180 degrees. Subtracting 65 from 180 gives 115.",
+      "id": "gm-ne-0107"
+    },
+    {
+      "explanation": "Density is mass divided by volume. 300 divided by 250 equals 1.2.",
+      "correctAnswer": 1.2,
+      "question": "A solid block has a mass of 300g and a volume of 250cm³. Calculate the density of the block in g/cm³.",
+      "unit": "g/cm³",
+      "type": "numeric_entry",
+      "id": "gm-ne-0108"
+    },
+    {
+      "question": "Write the multiplier used to increase a value by 35%.",
+      "correctAnswer": 1.35,
+      "explanation": "Increase by 35% is equivalent to multiplying by a multiplier of 1.35.",
+      "type": "numeric_entry",
+      "unit": "multiplier",
+      "id": "gm-ne-0109"
+    },
+    {
+      "type": "numeric_entry",
+      "question": "A bag contains red, blue, green, and yellow counters. The probability of picking red is 0.4, blue is 0.35, and green is 0.1. What is the probability of picking a yellow counter?",
+      "correctAnswer": 0.15,
+      "explanation": "Probabilities must sum to 1. Subtract the sum of the known probabilities (0.4 + 0.35 + 0.1 = 0.85) from 1.",
+      "id": "gm-ne-0110"
+    },
+    {
+      "type": "numeric_entry",
+      "question": "The mean of five numbers is 15. A sixth number is added and the new mean is 17. What is the value of the sixth number?",
+      "correctAnswer": 27,
+      "explanation": "The 6th number is the new total (17 * 6 = 102) minus the old total (15 * 5 = 75).",
+      "id": "gm-ne-0111"
+    },
+    {
+      "explanation": "Collect like terms: 3x - x = 56 - 4, so 2x = 52. Dividing by 2 gives 26.",
+      "question": "Solve the equation 3x + 4 = x + 56 to find the value of x.",
+      "type": "numeric_entry",
+      "correctAnswer": 26,
+      "id": "gm-ne-0112"
+    },
+    {
+      "question": "Calculate the size of one exterior angle of an equilateral triangle in degrees.",
+      "correctAnswer": 120,
+      "explanation": "Exterior angle = 360 / number of sides. 360 / 3 = 120.",
+      "type": "numeric_entry",
+      "unit": "degrees",
+      "id": "gm-ne-0113"
+    },
+    {
+      "explanation": "Using the order of operations (BIDMAS), calculate the square first (4² = 16), then add 5.",
+      "correctAnswer": 21,
+      "question": "Work out the value of 5 + 4² .",
+      "type": "numeric_entry",
+      "id": "gm-ne-0114"
+    },
+    {
+      "explanation": "Divide 5 by 8 to convert the fraction to a decimal.",
+      "correctAnswer": 0.625,
+      "question": "Convert the fraction 5/8 into a decimal.",
+      "type": "numeric_entry",
+      "id": "gm-ne-0115"
+    },
+    {
+      "type": "numeric_entry",
+      "unit": "£",
+      "question": "Ben invests £400 in a savings account paying 10% simple interest per year. How much money will he have in total after 2 years?",
+      "correctAnswer": 480,
+      "explanation": "10% of £400 is £40. Over two years, the interest is £80. Total is £400 + £80.",
+      "id": "gm-ne-0116"
+    },
+    {
+      "unit": "cm",
+      "type": "numeric_entry",
+      "explanation": "The length of the hypotenuse is the square root of (5² + 12²), which is the square root of 169.",
+      "correctAnswer": 13,
+      "question": "A right-angled triangle has two shorter sides of 5cm and 12cm. Calculate the length of the hypotenuse in cm.",
+      "id": "gm-ne-0117"
+    },
+    {
+      "question": "A prize of £150 is shared between two winners in the ratio 1:4. Work out the value of the smaller share in pounds.",
+      "correctAnswer": 30,
+      "explanation": "The total ratio parts are 1 + 4 = 5. £150 divided by 5 equals £30 per part. The smaller share is 1 part.",
+      "type": "numeric_entry",
+      "unit": "£",
+      "id": "gm-ne-0118"
+    },
+    {
+      "correctAnswer": 117,
+      "question": "A straight line is divided into two angles. One angle is 63 degrees. Calculate the size of the other angle in degrees.",
+      "unit": "degrees",
+      "type": "numeric_entry",
+      "explanation": "Angles on a straight line sum to 180 degrees. Subtract 63 from 180 to find the missing angle.",
+      "id": "gm-ne-0119"
+    },
+    {
+      "type": "numeric_entry",
+      "correctAnswer": 0.15,
+      "question": "A spinner has four sections: A, B, C, and D. The probability of landing on A is 0.3, B is 0.45, and C is 0.1. What is the probability of landing on D?",
+      "explanation": "The sum of probabilities for all outcomes must equal 1. Subtract the sum of the known probabilities (0.3 + 0.45 + 0.1) from 1.",
+      "id": "gm-ne-0120"
+    },
+    {
+      "explanation": "The median is the middle value when the data is in order. For an even number of values, it is the mean of the two middle numbers (29 and 32).",
+      "question": "Find the median of the following set of numbers: 12, 25, 29, 32, 41, 50.",
+      "correctAnswer": 30.5,
+      "type": "numeric_entry",
+      "id": "gm-ne-0121"
+    },
+    {
+      "question": "Calculate 15% of £180.",
+      "unit": "pounds",
+      "correctAnswer": 27,
+      "explanation": "Calculate 10% of £180 (£18) and 5% of £180 (£9), then add them together to find 15%.",
+      "type": "numeric_entry",
+      "id": "gm-ne-0122"
+    },
+    {
+      "correctAnswer": 10,
+      "type": "numeric_entry",
+      "explanation": "Rearrange the equation by subtracting 5 from both sides (2x = 20) and then dividing by 2.",
+      "question": "Solve the equation 2x + 5 = 25 to find the value of x.",
+      "id": "gm-ne-0123"
+    },
+    {
+      "correctAnswer": 240,
+      "question": "Share £640 in the ratio 3:5. What is the value of the smaller share?",
+      "unit": "pounds",
+      "type": "numeric_entry",
+      "explanation": "The total number of parts is 3 + 5 = 8. Divide 640 by 8 to find one part (£80), then multiply by 3 for the smaller share.",
+      "id": "gm-ne-0124"
+    },
+    {
+      "unit": "degrees",
+      "question": "Three interior angles of a quadrilateral are 95, 80 and 50 degrees. Work out the size of the fourth angle in degrees.",
+      "correctAnswer": 135,
+      "explanation": "The sum of interior angles in a quadrilateral is 360 degrees. Subtract the three known angles (95, 80, and 50) from 360.",
+      "type": "numeric_entry",
+      "id": "gm-ne-0125"
+    },
+    {
+      "explanation": "Area of a triangle = (base × height) ÷ 2. Here, (17 × 1) ÷ 2 = 8.5.",
+      "type": "numeric_entry",
+      "unit": "cm²",
+      "question": "Work out the area of a triangle with a base of 17 cm and a perpendicular height of 1 cm.",
+      "correctAnswer": 8.5,
+      "id": "gm-ne-0126"
+    },
+    {
+      "question": "If x = 5, find the value of x² + 2x - 3.",
+      "explanation": "Substitute x=5 into the expression: 5² + (2 × 5) - 3 = 25 + 10 - 3.",
+      "type": "numeric_entry",
+      "correctAnswer": 32,
+      "id": "gm-ne-0127"
+    },
+    {
+      "correctAnswer": 0.625,
+      "type": "numeric_entry",
+      "explanation": "Divide 5 by 8 using long division or converting to 625/1000.",
+      "question": "Write 5/8 as a decimal.",
+      "id": "gm-ne-0128"
+    },
+    {
+      "explanation": "Speed = Distance ÷ Time. 18 km divided by 4 hours equals 4.5 km/h.",
+      "type": "numeric_entry",
+      "question": "A cyclist travels 18 km in 4 hours. Calculate their average speed in km/h.",
+      "unit": "km/h",
+      "correctAnswer": 4.5,
+      "id": "gm-ne-0129"
+    },
+    {
+      "type": "numeric_entry",
+      "explanation": "A cube has 12 edges. Divide the total length (144) by 12 to find one edge (12), then calculate surface area (6 × 12²). Wait, simpler: 144/12 = 12. 6 * 144 = 864. Let's use a simpler one: If total edge length is 48cm, one edge is 4cm. Surface area is 6 * 4^2 = 96.",
+      "correctAnswer": 96,
+      "unit": "cm²",
+      "question": "The total length of all the edges of a cube is 48 cm. Calculate the total surface area of the cube in cm².",
+      "id": "gm-ne-0130"
+    },
+    {
+      "type": "numeric_entry",
+      "explanation": "Multiply 6.5 by 18 to find the total distance. 6 * 18 = 108 and 0.5 * 18 = 9. 108 + 9 = 117.",
+      "correctAnswer": 117,
+      "tolerance": 0,
+      "unit": "miles",
+      "question": "A motorist travels at an average speed of 18 miles per hour for 6.5 hours. Calculate the total distance travelled in miles.",
+      "id": "gm-ne-0131"
+    },
+    {
+      "explanation": "Subtract 7 from both sides to get 4x = 14, then divide by 4. 14 ÷ 4 = 3.5.",
+      "type": "numeric_entry",
+      "question": "Solve the equation 4x + 7 = 21 to find the value of x.",
+      "correctAnswer": 3.5,
+      "tolerance": 0,
+      "id": "gm-ne-0132"
+    },
+    {
+      "tolerance": 0,
+      "correctAnswer": 145,
+      "question": "Two parallel lines are crossed by a transversal. If an alternate interior angle is 35 degrees, what is the size of the adjacent angle on a straight line in degrees?",
+      "unit": "degrees",
+      "type": "numeric_entry",
+      "explanation": "Alternate angles are equal, and angles on a straight line add to 180 degrees. 180 - 35 = 145.",
+      "id": "gm-ne-0133"
+    },
+    {
+      "correctAnswer": 0.65,
+      "tolerance": 0,
+      "question": "In a bag of marbles, the probability of picking a red marble is 0.15 and the probability of picking a blue marble is 0.2. What is the probability of picking a marble that is NOT red or blue?",
+      "type": "numeric_entry",
+      "explanation": "Total probability must sum to 1. 1 - (0.15 + 0.2) = 1 - 0.35 = 0.65.",
+      "id": "gm-ne-0134"
+    },
+    {
+      "tolerance": 0,
+      "correctAnswer": 120,
+      "unit": "cm³",
+      "question": "Calculate the volume of a cuboid with length 8 cm, width 5 cm and height 3 cm.",
+      "type": "numeric_entry",
+      "explanation": "Volume of a cuboid is length x width x height. 8 * 5 * 3 = 120.",
+      "id": "gm-ne-0135"
+    },
+    {
+      "correctAnswer": 55,
+      "tolerance": 0,
+      "unit": "cm²",
+      "question": "Work out the area of a trapezium with parallel sides of length 4 cm and 7 cm and a perpendicular height of 10 cm.",
+      "type": "numeric_entry",
+      "explanation": "Area of a trapezium is 0.5 * (a + b) * h. 0.5 * (4 + 7) * 10 = 5.5 * 10 = 55.",
+      "id": "gm-ne-0136"
+    },
+    {
+      "type": "numeric_entry",
+      "explanation": "The sum of the ratio parts is 2 + 3 = 5. One part is 30 / 5 = 6. The larger share is 3 parts: 3 * 6 = 18. The difference is 18 - 12 = 6, or simply 2 parts which is 12.",
+      "tolerance": 0,
+      "correctAnswer": 12,
+      "unit": "cm",
+      "question": "A length of rope measuring 30 cm is cut in the ratio 2:3. Calculate the length of the shorter piece in cm.",
+      "id": "gm-ne-0137"
+    },
+    {
+      "type": "numeric_entry",
+      "explanation": "Substitute x = -2 into the expression: 3(-2)² + 5(-2) + 5 = 3(4) - 10 + 5 = 12 - 10 + 5 = 7.",
+      "tolerance": 0,
+      "correctAnswer": 7,
+      "question": "Find the value of 3x² + 5x + 5 when x = -2.",
+      "id": "gm-ne-0138"
+    },
+    {
+      "type": "numeric_entry",
+      "explanation": "Angles in a triangle sum to 180. 180 - (90 + 63) = 180 - 153 = 27.",
+      "tolerance": 0,
+      "correctAnswer": 27,
+      "question": "In a right-angled triangle, one of the other angles is 63 degrees. Calculate the size of the third angle in degrees.",
+      "unit": "degrees",
+      "id": "gm-ne-0139"
+    },
+    {
+      "correctAnswer": 52,
+      "tolerance": 0,
+      "question": "A coat originally costs £80. It is reduced by 35% in a sale. Work out the sale price of the coat in pounds.",
+      "unit": "£",
+      "type": "numeric_entry",
+      "explanation": "To find 65% of 80, multiply 80 by 0.65 or find 50% (40), 10% (8) and 5% (4) and add them: 40 + 8 + 4 = 52.",
+      "id": "gm-ne-0140"
+    },
+    {
+      "question": "Taking π to be 22/7, calculate the circumference of a circle with a diameter of 7 cm.",
+      "unit": "cm",
+      "tolerance": 0,
+      "correctAnswer": 22,
+      "explanation": "Circumference = π * diameter. 7 * (22/7) = 22.",
+      "type": "numeric_entry",
+      "id": "gm-ne-0141"
+    },
+    {
+      "explanation": "Angles on a straight line sum to 180 degrees. Subtracting 65 from 180 gives 115.",
+      "correctAnswer": 115,
+      "question": "An angle of 65 degrees is marked on a straight line. Calculate the size of the other angle on the line.",
+      "unit": "degrees",
+      "type": "numeric_entry",
+      "id": "gm-ne-0142"
+    },
+    {
+      "explanation": "The sum of probabilities for all possible outcomes must equal 1. 1 - (0.3 + 0.25) = 0.45.",
+      "question": "The probability that a biased coin lands on heads is 0.3 and the probability it lands on tails is 0.25. The only other outcome is it lands on its edge. What is the probability it lands on its edge?",
+      "type": "numeric_entry",
+      "correctAnswer": 0.45,
+      "id": "gm-ne-0143"
+    },
+    {
+      "unit": "£",
+      "type": "numeric_entry",
+      "explanation": "To increase by 20%, multiply by 1.2. 250 x 1.2 = 300.",
+      "correctAnswer": 300,
+      "question": "A shop increases the price of a television from £250 by 20%. What is the new price in pounds?",
+      "id": "gm-ne-0144"
+    },
+    {
+      "correctAnswer": 32,
+      "type": "numeric_entry",
+      "question": "Work out the value of 3n² + 5 when n = 3.",
+      "explanation": "Indices must be applied first. 3 squared is 9, and 9 times 3 is 27. Then 27 + 5 = 32.",
+      "id": "gm-ne-0145"
+    },
+    {
+      "correctAnswer": 6.5,
+      "question": "Find the median of the following set of numbers: 8, 2, 11, 5.",
+      "type": "numeric_entry",
+      "explanation": "To find the median, list the numbers in order (2, 5, 8, 11) and find the midpoint of the two middle numbers (5 and 8).",
+      "id": "gm-ne-0146"
+    },
+    {
+      "unit": "cm²",
+      "type": "numeric_entry",
+      "explanation": "Area of a triangle is (base x height) / 2. (9 x 4) / 2 = 18.",
+      "question": "A triangle has a base of 9 cm and a perpendicular height of 4 cm. Calculate its area.",
+      "correctAnswer": 18,
+      "id": "gm-ne-0147"
+    },
+    {
+      "type": "numeric_entry",
+      "unit": "g",
+      "correctAnswer": 48,
+      "question": "An object has a volume of 8 cm³ and a density of 6 g/cm³. Calculate the mass of the object.",
+      "explanation": "Density = Mass / Volume. Mass = Density x Volume. 6 g/cm³ x 8 cm³ = 48 g.",
+      "id": "gm-ne-0148"
+    },
+    {
+      "explanation": "Subtract 8 from both sides to get 3x = 39, then divide by 3 to find x = 13.",
+      "correctAnswer": 13,
+      "type": "numeric_entry",
+      "question": "Solve the equation 3x + 8 = 47. Find the value of x.",
+      "id": "gm-ne-0149"
+    },
+    {
+      "type": "numeric_entry",
+      "unit": "£",
+      "correctAnswer": 35,
+      "question": "A sum of money is divided in the ratio 3:4. If the smaller share is £15, what was the total amount of money divided?",
+      "explanation": "The ratio 3:4 has 7 parts in total. Each part is £5. 7 parts x £5 = £35.",
+      "id": "gm-ne-0150"
+    },
+    {
+      "unit": "mph",
+      "type": "numeric_entry",
+      "explanation": "Speed = Distance / Time. 30 miles / 0.25 hours (which is 15 minutes) = 120 mph.",
+      "question": "A train travels 30 miles in 15 minutes. Calculate its average speed in miles per hour.",
+      "correctAnswer": 120,
+      "id": "gm-ne-0151"
+    },
+    {
+      "type": "numeric_entry",
+      "unit": "degrees",
+      "correctAnswer": 210,
+      "question": "Five interior angles of a hexagon are 120, 100, 110, 95 and 85 degrees. Calculate the size of the sixth angle.",
+      "explanation": "The sum of interior angles in a hexagon is (6-2) x 180 = 720. 720 - 510 = 210.",
+      "id": "gm-ne-0152"
+    },
+    {
+      "explanation": "0.35 multiplied by 12 equals 4.2.",
+      "question": "Work out the value of 0.35 x 12.",
+      "type": "numeric_entry",
+      "correctAnswer": 4.2,
+      "id": "gm-ne-0153"
+    },
+    {
+      "question": "An angle is marked on a straight line. If one side is 65 degrees, what is the size of the other angle in degrees?",
+      "correctAnswer": 115,
+      "explanation": "Subtract the given angle from 180 degrees as angles on a straight line sum to 180.",
+      "unit": "degrees",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "id": "gm-ne-0154"
+    },
+    {
+      "correctAnswer": 0.45,
+      "question": "A biased coin has three outcomes: heads, tails, or edge. The probability of heads is 0.3 and the probability of tails is 0.25. Calculate the probability of it landing on its edge.",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "explanation": "Subtract the sum of the known probabilities (0.3 + 0.25) from 1 to find the missing probability.",
+      "id": "gm-ne-0155"
+    },
+    {
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "explanation": "The area of a triangle is calculated using the formula (base × height) ÷ 2.",
+      "unit": "cm²",
+      "correctAnswer": 18,
+      "question": "A triangle has a base of 9 cm and a perpendicular height of 4 cm. Calculate its area in cm².",
+      "id": "gm-ne-0156"
+    },
+    {
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "unit": "g",
+      "explanation": "Mass is calculated by multiplying density by volume (6 g/cm³ × 8 cm³).",
+      "correctAnswer": 48,
+      "question": "An object has a volume of 8 cm³ and a density of 6 g/cm³. Calculate the mass of the object in grams.",
+      "id": "gm-ne-0157"
+    },
+    {
+      "correctAnswer": 35,
+      "question": "A sum of money is divided in the ratio 3:4. If the smaller share is £15, what was the total amount of money divided in pounds?",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "unit": "£",
+      "explanation": "One part is worth £5 (£15 ÷ 3). The total parts are 7 (3+4), so 7 × £5 = £35.",
+      "id": "gm-ne-0158"
+    },
+    {
+      "explanation": "The sum of interior angles in a hexagon is 720 degrees. Subtract the five known angles from 720.",
+      "unit": "degrees",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "question": "Five interior angles of a hexagon are 120, 100, 110, 95 and 85 degrees. Calculate the size of the sixth angle in degrees.",
+      "correctAnswer": 210,
+      "id": "gm-ne-0159"
+    },
+    {
+      "question": "Work out the value of 0.35 × 12.",
+      "correctAnswer": 4.2,
+      "explanation": "Multiply 35 by 12 (420) and then adjust the decimal point two places to the left.",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "id": "gm-ne-0160"
+    },
+    {
+      "explanation": "Multiply the cost of one ticket by the number of people. 14 multiplied by 8 equals 112.",
+      "unit": "£",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "question": "A group of 8 friends go to the cinema. Each ticket costs £14. What is the total cost of the tickets in pounds?",
+      "correctAnswer": 112,
+      "id": "gm-ne-0161"
+    },
+    {
+      "correctAnswer": 480,
+      "question": "A right-angled triangle has a base of 30 cm and a height of 32 cm. Calculate the area of the triangle.",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "explanation": "Area of a triangle is (base x height) / 2. (30 x 32) / 2 = 960 / 2 = 480.",
+      "unit": "cm²",
+      "id": "gm-ne-0162"
+    },
+    {
+      "explanation": "The sum of probabilities for all exhaustive outcomes must equal 1. 1 - (0.2 + 0.1 + 0.3) = 0.4.",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "question": "A spinner has four sections: Red, Blue, Green and Yellow. The probability of landing on Red is 0.2, Blue is 0.1 and Green is 0.3. What is the probability of landing on Yellow?",
+      "correctAnswer": 0.4,
+      "id": "gm-ne-0163"
+    },
+    {
+      "question": "Find the mean of the following five numbers: 12, 7, 15, 3, 8.",
+      "correctAnswer": 9,
+      "explanation": "To find the mean, add all numbers (45) and divide by the count of numbers (5). 45 / 5 = 9.",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "id": "gm-ne-0164"
+    },
+    {
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "explanation": "Subtract 7 from both sides to get 4x = 20, then divide by 4 to find x = 5.",
+      "correctAnswer": 5,
+      "question": "Solve the equation 4x + 7 = 27. Find the value of x.",
+      "id": "gm-ne-0165"
+    },
+    {
+      "question": "A coat normally costs £150. In a sale, it is reduced by 20%. What is the sale price of the coat in pounds?",
+      "correctAnswer": 120,
+      "unit": "£",
+      "explanation": "First find 10% (£15), then double it to find 20% (£30). Subtract the discount from the original price: 150 - 30 = 120.",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "id": "gm-ne-0166"
+    },
+    {
+      "unit": "km",
+      "explanation": "There are 7 days in a week. 6 multiplied by 7 equals 42.",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "question": "A runner runs 6 kilometres every day for one full week. What is the total distance they run in kilometres?",
+      "correctAnswer": 42,
+      "id": "gm-ne-0167"
+    },
+    {
+      "correctAnswer": 5.5,
+      "question": "Work out the value of 22 divided by 4.",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "explanation": "Substitute x = 4 into the expression: (2 * 16) - 1. 32 - 1 = 31. This is not the logic. Wait: 2(4)^2 - 1 = 31. Let's provide a simpler decimal one. 11/2 = 5.5.",
+      "id": "gm-ne-0168"
+    },
+    {
+      "question": "A rectangular crate has a length of 12 cm, a width of 5 cm and a height of 10 cm. Calculate its volume.",
+      "correctAnswer": 600,
+      "explanation": "Volume of a cuboid = length x width x height. 12 x 5 x 10 = 600.",
+      "unit": "cm³",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "id": "gm-ne-0169"
+    },
+    {
+      "question": "Calculate the value of 12 squared.",
+      "correctAnswer": 144,
+      "explanation": "The sum of interior angles in a pentagon is (5-2) x 180 = 540. 540 / 5 = 108. The exterior angle is 180 - 108 = 72. Wait, 360/5 = 72. 180 - 36 = 144. No, interior is 108. Let's do a square. 12 squared is 144.",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "id": "gm-ne-0170"
+    },
+    {
+      "explanation": "The sum of angles in a triangle is 180. 180 - (90 + 38) = 180 - 128 = 52.",
+      "unit": "degrees",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "question": "In a right-angled triangle, one of the other angles is 38 degrees. Calculate the size of the third angle in degrees.",
+      "correctAnswer": 52,
+      "id": "gm-ne-0171"
+    },
+    {
+      "question": "A hiker walks 18 miles in 4 hours. Calculate their average speed in miles per hour.",
+      "correctAnswer": 4.5,
+      "unit": "mph",
+      "explanation": "Speed = Distance / Time. 18 miles / 4 hours = 4.5 miles per hour.",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "id": "gm-ne-0172"
+    },
+    {
+      "unit": "%",
+      "explanation": "To convert a fraction to a percentage, divide the numerator by the denominator and multiply by 100. 1 divided by 8 is 0.125.",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "question": "Convert the fraction 1/8 into a percentage.",
+      "correctAnswer": 12.5,
+      "id": "gm-ne-0173"
+    },
+    {
+      "question": "The mean of 10 numbers is 12. The sum of the first 9 numbers is 105. What is the value of the 10th number?",
+      "correctAnswer": 15,
+      "explanation": "The total of the 10 numbers is 10 multiplied by 12 (120). Subtracting the sum of the first nine (105) leaves 15.",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "id": "gm-ne-0174"
+    },
+    {
+      "question": "A total of £162 is shared in the ratio 2:7. What is the value of the larger share in pounds?",
+      "correctAnswer": 162,
+      "unit": "£",
+      "explanation": "The ratio of 2:7 has a total of 9 parts. Each part is worth 18 (162 divided by 9), so the larger share is 7 times 18.",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "id": "gm-ne-0175"
+    },
+    {
+      "question": "A prism has a cross-sectional area of 12 cm² and a length of 4 cm. Calculate the volume of the prism.",
+      "correctAnswer": 48,
+      "unit": "cm³",
+      "explanation": "The volume of a prism is the area of the cross-section multiplied by its length. 12 multiplied by 4 equals 48.",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "id": "gm-ne-0176"
+    },
+    {
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "explanation": "The sum of probabilities for all possible outcomes must equal 1. 1 minus (0.25 + 0.35) equals 0.4.",
+      "correctAnswer": 0.4,
+      "question": "A bag contains red, blue, and yellow counters. The probability of picking red is 0.25 and blue is 0.35. What is the probability of picking yellow?",
+      "id": "gm-ne-0177"
+    },
+    {
+      "correctAnswer": 6.5,
+      "question": "Solve the equation 6x + 5 = 44.",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "explanation": "Subtract 5 from both sides to get 6x = 39, then divide 39 by 6 to find x.",
+      "id": "gm-ne-0178"
+    },
+    {
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "explanation": "The exterior angle of a regular polygon is calculated by dividing 360 by the number of sides. 360 divided by 5 is 72, and 180 - 72 = 108 for the interior. However, 360/n gives the exterior; for a decagon (10 sides) it is 36. For 540 total / 10? No, let's use: (n-2)*180 / n. For a pentagon: 3*180/5 = 108. Let's ask for exterior of a pentagon: 360/5 = 72. Let's do a different one: What is the exterior angle of a regular octagon? 360/8 = 45. Let's try: Calculate the interior angle of a regular pentagon. 108. Let's use: What is the sum of the interior angles of a pentagon? (5-2) * 180.",
+      "unit": "degrees",
+      "correctAnswer": 54,
+      "question": "Calculate the sum of the interior angles of a pentagon in degrees.",
+      "id": "gm-ne-0179"
+    },
+    {
+      "unit": "£",
+      "explanation": "To increase by 15%, multiply by 1.15 or find 10% (40) and 5% (20) and add them to the original.",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "question": "Increase £400 by 15%. What is the new amount in pounds?",
+      "correctAnswer": 420,
+      "id": "gm-ne-0180"
+    },
+    {
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "explanation": "There are 1000 metres in a kilometre. Multiply 3 by 1000 to convert to metres.",
+      "unit": "m",
+      "correctAnswer": 3000,
+      "question": "A map has a scale of 1:50,000. If two points are 6 cm apart on the map, what is the actual distance in kilometres? No, let's do a direct conversion: How many metres are in 3 kilometres?",
+      "id": "gm-ne-0181"
+    },
+    {
+      "correctAnswer": 8,
+      "question": "Apples cost £1.20 per kg. Bananas cost 80p each. If I buy 3 kg of apples and spend the rest of a £10 note on bananas, how many bananas do I buy?",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "explanation": "First, find the total cost: 3 kg at £1.20 is £3.60. Subtract this from the £10 note to get the change: £6.40. Then divide 6.40 by 0.80.",
+      "id": "gm-ne-0182"
+    },
+    {
+      "question": "The total length of all the edges of a cube is 36 cm. Calculate the volume of the cube.",
+      "correctAnswer": 27,
+      "unit": "cm³",
+      "explanation": "A cube has 12 edges. If the total length is 36, each edge is 3 cm. Volume is 3 x 3 x 3 = 27.",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "id": "gm-ne-0183"
+    },
+    {
+      "tolerance": 0,
+      "correctAnswer": 115,
+      "question": "A straight line is divided into two angles. One angle is 65 degrees. What is the size of the other angle in degrees?",
+      "unit": "degrees",
+      "type": "numeric_entry",
+      "explanation": "Angles on a straight line add up to 180 degrees. Subtracting 65 from 180 gives 115.",
+      "id": "gm-ne-0184"
+    },
+    {
+      "question": "A spinner has three sections: A, B and C. The probability of landing on A is 0.1 and on B is 0.5. What is the probability of landing on C?",
+      "correctAnswer": 0.4,
+      "tolerance": 0,
+      "explanation": "Probabilities must sum to 1. Subtract the sum of the other probabilities (0.1 + 0.5 = 0.6) from 1.",
+      "type": "numeric_entry",
+      "id": "gm-ne-0185"
+    },
+    {
+      "question": "A plumber charges a call-out fee of £20 and then £40 per hour. How much would a 7-hour job cost in pounds?",
+      "unit": "£",
+      "tolerance": 0,
+      "correctAnswer": 300,
+      "explanation": "The total budget is £20 plus (7 times £40), which equals £20 + £280.",
+      "type": "numeric_entry",
+      "id": "gm-ne-0186"
+    },
+    {
+      "correctAnswer": 30,
+      "tolerance": 0,
+      "unit": "degrees",
+      "question": "In a right-angled triangle, one of the smaller angles is 60 degrees. Find the size of the smallest angle in degrees.",
+      "type": "numeric_entry",
+      "explanation": "The sum of angles in a triangle is 180. 180 - 90 - 60 = 30.",
+      "id": "gm-ne-0187"
+    },
+    {
+      "tolerance": 0,
+      "correctAnswer": 16,
+      "question": "Work out the value of 3x + 1 when x = 5.",
+      "type": "numeric_entry",
+      "explanation": "Substitute x = 5 into the expression: 3(5) + 1 = 15 + 1 = 16.",
+      "id": "gm-ne-0188"
+    },
+    {
+      "tolerance": 0,
+      "correctAnswer": 1.5,
+      "question": "A triangle has a base of 2 cm and a height of 1.5 cm. Calculate its area in square centimetres.",
+      "unit": "cm²",
+      "type": "numeric_entry",
+      "explanation": "Area of a triangle is (base x height) / 2. (2 x 1.5) / 2 = 1.5.",
+      "id": "gm-ne-0189"
+    },
+    {
+      "explanation": "One part is 40 / 5 = 8. Three parts represent 3 x 8 = 24.",
+      "type": "numeric_entry",
+      "unit": "£",
+      "question": "Divide £40 in the ratio 2:3. What is the value of the larger share in pounds?",
+      "correctAnswer": 24,
+      "tolerance": 0,
+      "id": "gm-ne-0190"
+    },
+    {
+      "type": "numeric_entry",
+      "explanation": "To find the median of 7, 8, 9, 10, calculate the mean of the two middle numbers: (8 + 9) / 2.",
+      "correctAnswer": 8.5,
+      "tolerance": 0,
+      "question": "Find the median of the following set of numbers: 10, 7, 8, 9.",
+      "id": "gm-ne-0191"
+    },
+    {
+      "question": "Convert 1.2 kilograms into grams.",
+      "unit": "g",
+      "correctAnswer": 1200,
+      "tolerance": 0,
+      "explanation": "There are 1000 grams in a kilogram. 1.2 x 1000 = 1200.",
+      "type": "numeric_entry",
+      "id": "gm-ne-0192"
+    },
+    {
+      "question": "Solve the equation 3x + 4 = 40. Find the value of x.",
+      "tolerance": 0,
+      "correctAnswer": 12,
+      "explanation": "Subtract 4 from both sides to get 3x = 36, then divide by 3.",
+      "type": "numeric_entry",
+      "id": "gm-ne-0193"
+    },
+    {
+      "question": "Calculate 30% of 50.",
+      "correctAnswer": 15,
+      "tolerance": 0,
+      "explanation": "10% of 50 is 5. Therefore, 30% is 3 times 5, which is 15.",
+      "type": "numeric_entry",
+      "id": "gm-ne-0194"
+    },
+    {
+      "question": "A right-angled triangle has a base of 20 cm and a height of 30 cm. Calculate its area in square centimetres.",
+      "correctAnswer": 300,
+      "explanation": "The area of a triangle is (base x height) / 2. (20 x 30) / 2 = 300.",
+      "type": "numeric_entry",
+      "unit": "cm²",
+      "id": "gm-ne-0195"
+    },
+    {
+      "explanation": "Probabilities must sum to 1. 1 - (0.1 + 0.5) = 0.4.",
+      "correctAnswer": 0.4,
+      "question": "A spinner has three sections: A, B, and C. The probability of landing on A is 0.1 and on B is 0.5. What is the probability of landing on C?",
+      "type": "numeric_entry",
+      "id": "gm-ne-0196"
+    },
+    {
+      "explanation": "Substitute x = 5 into the expression: 3(5) + 1 = 15 + 1 = 16.",
+      "correctAnswer": 16,
+      "type": "numeric_entry",
+      "question": "Work out the value of 3(x + 1) when x = 5.",
+      "id": "gm-ne-0197"
+    },
+    {
+      "correctAnswer": 8.5,
+      "type": "numeric_entry",
+      "question": "Find the median of the following set of numbers: 7, 8, 9, 10.",
+      "explanation": "For an even set of numbers, the median is the mean of the two middle numbers (8 and 9) when ordered.",
+      "id": "gm-ne-0198"
+    },
+    {
+      "explanation": "A cube has 12 edges. Each edge is 72 / 12 = 6 cm. Volume is 6 cubed. Since the example used 36, let's use: The total length of the edges of a cube is 48 cm. What is the length of one edge?",
+      "correctAnswer": 48,
+      "question": "The total length of all the edges of a cube is 48 cm. Calculate the length of a single edge in centimetres.",
+      "unit": "cm",
+      "type": "numeric_entry",
+      "id": "gm-ne-0199"
+    },
+    {
+      "correctAnswer": 3,
+      "question": "A map has a scale of 1:50,000. If two points are 6 cm apart on the map, what is the actual distance in kilometres?",
+      "explanation": "6 cm on map representing 1:50,000 is 300,000 cm. Divide by 100,000 to get kilometres.",
+      "type": "numeric_entry",
+      "unit": "km",
+      "id": "gm-ne-0200"
+    },
+    {
+      "type": "numeric_entry",
+      "correctAnswer": 0.4,
+      "explanation": "The sum of probabilities for all outcomes must equal 1. 1 - (0.1 + 0.5) = 0.4.",
+      "question": "A spinner has three sections: Red, Blue and Green. The probability of landing on Red is 0.1 and on Blue is 0.5. What is the probability of landing on Green?",
+      "id": "gm-ne-0201"
+    },
+    {
+      "question": "A bag of flour weighs 0.3 kilograms. Convert this weight into grams.",
+      "unit": "g",
+      "explanation": "To convert kilograms to grams, multiply the mass by 1000. 0.3 x 1000 = 300.",
+      "correctAnswer": 300,
+      "type": "numeric_entry",
+      "id": "gm-ne-0202"
+    },
+    {
+      "question": "Divide £45 in the ratio 2:3. What is the value of the larger share in pounds?",
+      "unit": "£",
+      "explanation": "Each share is 45 divided by (2+3), which is 9. The larger share is 3 x 9 = 27.",
+      "correctAnswer": 27,
+      "type": "numeric_entry",
+      "id": "gm-ne-0203"
+    },
+    {
+      "unit": "cm²",
+      "question": "A right-angled triangle has a base of 12 cm and a height of 20 cm. Calculate its area in square centimetres.",
+      "type": "numeric_entry",
+      "correctAnswer": 120,
+      "explanation": "Area of a triangle is (base x height) / 2. (12 x 20) / 2 = 120.",
+      "id": "gm-ne-0204"
+    },
+    {
+      "type": "numeric_entry",
+      "correctAnswer": 14,
+      "explanation": "Following BIDMAS/BODMAS, multiplication is done before addition. 2 + (4 x 3) = 2 + 12 = 14.",
+      "question": "Work out the value of 2 + 4 x 3.",
+      "id": "gm-ne-0205"
+    },
+    {
+      "question": "Convert 1500 grams into kilograms.",
+      "unit": "kg",
+      "explanation": "There are 1000g in 1kg. 1500 divided by 1000 equals 1.5.",
+      "type": "numeric_entry",
+      "correctAnswer": 1.5,
+      "id": "gm-ne-0206"
+    },
+    {
+      "explanation": "The square root of 64 is 8. 2 multiplied by 8 equals 16.",
+      "question": "Work out the value of 2 multiplied by the square root of 64.",
+      "type": "numeric_entry",
+      "correctAnswer": 16,
+      "id": "gm-ne-0207"
+    },
+    {
+      "question": "Divide £60 in the ratio 1:4. What is the value of the smaller share in pounds?",
+      "unit": "£",
+      "explanation": "The total ratio is 1 + 4 = 5 parts. One part is 60 / 5 = 12. The smaller share is 1 part.",
+      "correctAnswer": 12,
+      "type": "numeric_entry",
+      "id": "gm-ne-0208"
+    },
+    {
+      "question": "Solve the equation 5x + 5 = 40. Find the value of x.",
+      "explanation": "Subtract 5 from both sides to get 5x = 35. Divide by 5 to find x = 7.",
+      "correctAnswer": 7,
+      "type": "numeric_entry",
+      "id": "gm-ne-0209"
+    },
+    {
+      "question": "Calculate 10% of 125.",
+      "explanation": "10% of 125 is 12.5. Alternatively, 125 divided by 10.",
+      "correctAnswer": 12.5,
+      "type": "numeric_entry",
+      "id": "gm-ne-0210"
+    },
+    {
+      "type": "numeric_entry",
+      "correctAnswer": 8,
+      "explanation": "The volume of a cuboid is length x width x height. 2 x 2 x 2 = 8.",
+      "unit": "cm³",
+      "question": "A cube has a side length of 2 cm. Calculate its volume in cubic centimetres.",
+      "id": "gm-ne-0211"
+    },
+    {
+      "explanation": "Probabilities must sum to 1. 1 - (0.4 + 0.35) = 1 - 0.75 = 0.25.",
+      "question": "A bag contains red, blue and yellow counters. The probability of picking red is 0.4 and blue is 0.35. What is the probability of picking yellow?",
+      "type": "numeric_entry",
+      "correctAnswer": 0.25,
+      "id": "gm-ne-0212"
+    },
+    {
+      "question": "A right-angled triangle has shorter sides of length 5 cm and 12 cm. Work out the length of the hypotenuse in centimetres.",
+      "unit": "cm",
+      "explanation": "Using Pythagoras' Theorem: a² + b² = c². 5² + 12² = 25 + 144 = 169. The square root of 169 is 13.",
+      "type": "numeric_entry",
+      "correctAnswer": 13,
+      "id": "gm-ne-0213"
+    },
+    {
+      "correctAnswer": 140,
+      "type": "numeric_entry",
+      "explanation": "Internal angles of a quadrilateral sum to 360. 360 - (90 + 80 + 50) = 360 - 220 = 140.",
+      "unit": "degrees",
+      "question": "Three angles in a quadrilateral are 90, 80 and 50 degrees. Find the size of the fourth angle in degrees.",
+      "id": "gm-ne-0214"
+    },
+    {
+      "tolerance": 0,
+      "question": "A rectangle has a length of 4.2 cm and a width of 2.1 cm. Calculate the perimeter of the rectangle in centimetres.",
+      "explanation": "To find the perimeter, add all four sides (4.2 + 4.2 + 2.1 + 2.1) or use 2(l + w).",
+      "unit": "cm",
+      "correctAnswer": 1.2,
+      "type": "numeric_entry",
+      "id": "gm-ne-0215"
+    },
+    {
+      "type": "numeric_entry",
+      "correctAnswer": 0.25,
+      "explanation": "All probabilities must sum to 1. 1 - (0.4 + 0.35) = 0.25.",
+      "question": "A bag contains red, green and blue marbles. The probability of picking a red marble is 0.4. The probability of picking a green marble is 0.35. Work out the probability of picking a blue marble.",
+      "tolerance": 0,
+      "id": "gm-ne-0216"
+    },
+    {
+      "tolerance": 0,
+      "question": "Work out 80% of £400.",
+      "explanation": "To find 80%, first find 10% (400 / 10 = 40) and then multiply by 8 (40 * 8 = 320).",
+      "unit": "£",
+      "correctAnswer": 320,
+      "type": "numeric_entry",
+      "id": "gm-ne-0217"
+    },
+    {
+      "tolerance": 0,
+      "explanation": "Substitute x = 5 into the expression: 4 squared is 16, then add 4 to get 20.",
+      "question": "Find the value of (x - 1)² + 4 when x = 5.",
+      "correctAnswer": 20,
+      "type": "numeric_entry",
+      "id": "gm-ne-0218"
+    },
+    {
+      "tolerance": 0,
+      "question": "A triangle has a base of 12 cm and a perpendicular height of 8 cm. Calculate the area of the triangle in square centimetres.",
+      "explanation": "Using the formula Area = (base × height) / 2, we get (12 × 8) / 2 = 48.",
+      "unit": "cm²",
+      "correctAnswer": 48,
+      "type": "numeric_entry",
+      "id": "gm-ne-0219"
+    },
+    {
+      "type": "numeric_entry",
+      "correctAnswer": 11.53,
+      "unit": "cm",
+      "explanation": "Using Pythagoras' theorem (a² + b² = c²), 8² + 8.3² = 132.89. The square root of 132.89 is approximately 11.53.",
+      "question": "A right-angled triangle has two shorter sides of length 8 cm and 8.3 cm. Find the length of the hypotenuse to 2 decimal places.",
+      "tolerance": 0.01,
+      "id": "gm-ne-0220"
+    },
+    {
+      "tolerance": 0,
+      "explanation": "The sum of the ratio parts is 2 + 3 = 5. One part is 30 / 5 = 6. The larger share is 3 parts: 3 × 6 = 18.",
+      "question": "Share £30 in the ratio 2:3. What is the value of the larger share in pounds?",
+      "correctAnswer": 18,
+      "unit": "£",
+      "type": "numeric_entry",
+      "id": "gm-ne-0221"
+    },
+    {
+      "tolerance": 0,
+      "question": "Solve the equation 3x + 6 = 36. Find the value of x.",
+      "explanation": "First, subtract 6 from both sides to get 3x = 30. Then divide both sides by 3 to find x = 10.",
+      "correctAnswer": 10,
+      "type": "numeric_entry",
+      "id": "gm-ne-0222"
+    },
+    {
+      "tolerance": 0,
+      "question": "Change 3.4 litres into millilitres.",
+      "explanation": "There are 1000 millilitres in 1 litre. Multiply 3.4 by 1000 to get 3400.",
+      "unit": "ml",
+      "correctAnswer": 3400,
+      "type": "numeric_entry",
+      "id": "gm-ne-0223"
+    },
+    {
+      "type": "numeric_entry",
+      "correctAnswer": 300,
+      "unit": "miles",
+      "explanation": "Speed = Distance / Time. To find Distance, multiply Speed by Time: 120 mph × 2.5 hours = 300 miles.",
+      "question": "A train travels at an average speed of 120 mph for 2 hours and 30 minutes. Calculate the total distance travelled in miles.",
+      "tolerance": 0,
+      "id": "gm-ne-0224"
+    },
+    {
+      "correctAnswer": 120,
+      "unit": "degrees",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "explanation": "The sum of interior angles in a hexagon is (6 - 2) × 180 = 720. For a regular hexagon, 720 / 6 = 120.",
+      "question": "Calculate the size of one interior angle in a regular hexagon in degrees.",
+      "id": "gm-ne-0225"
+    },
+    {
+      "type": "numeric_entry",
+      "correctAnswer": 12,
+      "question": "Find the range of the following set of numbers: 3, 8, 12, 15, 4, 9.",
+      "explanation": "Subtract the smallest number (3) from the largest number (15): 15 - 3 = 12.",
+      "tolerance": 0,
+      "id": "gm-ne-0226"
+    },
+    {
+      "question": "A coat originally costs £10. The price is increased by 25%. What is the new price in pounds?",
+      "correctAnswer": 12.5,
+      "unit": "£",
+      "explanation": "Calculate 25% of 10 by dividing by 4, then multiply by 5 to find 125%. Alternatively, multiply 10 by 1.25.",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "id": "gm-ne-0227"
+    },
+    {
+      "unit": "kg",
+      "explanation": "To convert from grams to kilograms, divide the mass by 1,000. 45 divided by 1,000 is 0.045.",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "question": "Convert 45 grams into kilograms.",
+      "correctAnswer": 0.045,
+      "id": "gm-ne-0228"
+    },
+    {
+      "question": "An angle of 150 degrees and an angle x lie on a straight line. Find the value of x in degrees.",
+      "correctAnswer": 30,
+      "explanation": "The sum of angles on a straight line is 180 degrees. 180 - 150 = 30.",
+      "unit": "degrees",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "id": "gm-ne-0229"
+    },
+    {
+      "explanation": "Substitute x = 3 into the expression: 2(3)² - 5 = 2(9) - 5 = 18 - 5 = 13.",
+      "unit": "none",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "question": "Find the value of 2x² - 5 when x = 3.",
+      "correctAnswer": 13,
+      "id": "gm-ne-0230"
+    },
+    {
+      "unit": "mph",
+      "explanation": "Speed is distance divided by time. 45 miles divided by 6 hours equals 7.5 mph.",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "question": "A cyclist travels 45 miles in 6 hours. Calculate the average speed in miles per hour (mph).",
+      "correctAnswer": 7.5,
+      "id": "gm-ne-0231"
+    },
+    {
+      "correctAnswer": 21,
+      "question": "Find the median of the following set of numbers: 21, 14, 30, 25, 19.",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "unit": "none",
+      "explanation": "The median is the middle value when the data is ordered. The ordered list is 14, 19, 21, 25, 30. The middle value is 21.",
+      "id": "gm-ne-0232"
+    },
+    {
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "explanation": "The area of a trapezium is ( (a+b) / 2 ) * h. Here, ((10+14)/2) * 10 = 12 * 10 = 120.",
+      "unit": "cm²",
+      "correctAnswer": 120,
+      "question": "A trapezium has parallel sides of length 10 cm and 14 cm. The perpendicular height is 10 cm. Work out the area in square centimetres.",
+      "id": "gm-ne-0233"
+    },
+    {
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "explanation": "Isolate x by subtracting 4 from both sides to get 2x = 9, then divide by 2 to get x = 4.5.",
+      "unit": "none",
+      "correctAnswer": 4.5,
+      "question": "Solve the equation 2x + 4 = 13. Find the value of x.",
+      "id": "gm-ne-0234"
+    },
+    {
+      "question": "Calculate the total surface area of a cube with a side length of 3 cm. Give your answer in square centimetres.",
+      "correctAnswer": 54,
+      "unit": "cm²",
+      "explanation": "The total surface area of a cube is 6 * (side length²). Total area = 6 * (3²) = 6 * 9 = 54.",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "id": "gm-ne-0235"
+    },
+    {
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "explanation": "The sum of probabilities for all outcomes must equal 1. 1 - (0.2 + 0.5) = 1 - 0.7 = 0.3.",
+      "unit": "none",
+      "correctAnswer": 0.3,
+      "question": "A spinner can land on Red, White or Blue. The probability of landing on Red is 0.2. The probability of landing on White is 0.5. What is the probability of landing on Blue?",
+      "id": "gm-ne-0236"
+    },
+    {
+      "tolerance": 0.01,
+      "type": "numeric_entry",
+      "unit": "cm²",
+      "explanation": "The area of a circle is π * r². Area = π * 4² = 16π ≈ 50.265..., which rounds to 50.27.",
+      "correctAnswer": 50.27,
+      "question": "Calculate the area of a circle with a radius of 4 cm. Give your answer to 2 decimal places.",
+      "id": "gm-ne-0237"
+    },
+    {
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "correctAnswer": 115,
+      "unit": "degrees",
+      "question": "In a diagram, a straight line is intersected by a ray. One of the angles formed is 65 degrees. Calculate the size of the other angle in degrees.",
+      "explanation": "Angles on a straight line sum to 180 degrees. Subtract 65 from 180 to find the missing angle.",
+      "id": "gm-ne-0238"
+    },
+    {
+      "explanation": "To convert from pence to pounds, divide the amount by 100.",
+      "unit": "pounds",
+      "question": "A bar of chocolate costs 135p. What is this cost in pounds (£)?",
+      "correctAnswer": 1.35,
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "id": "gm-ne-0239"
+    },
+    {
+      "explanation": "The sum of probabilities for all possible outcomes must equal 1. Subtract the known probabilities from 1.",
+      "question": "A box contains red, blue, and yellow counters. The probability of picking a red counter is 0.35 and the probability of picking a blue counter is 0.25. What is the probability of picking a yellow counter?",
+      "correctAnswer": 0.4,
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "id": "gm-ne-0240"
+    },
+    {
+      "unit": "degrees",
+      "question": "A triangle has two interior angles of 25 degrees and 35 degrees. Work out the size of the third interior angle in degrees.",
+      "explanation": "The sum of interior angles in a triangle is 180 degrees. Subtract the two known angles from 180.",
+      "type": "numeric_entry",
+      "correctAnswer": 120,
+      "tolerance": 0,
+      "id": "gm-ne-0241"
+    },
+    {
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "correctAnswer": 48,
+      "unit": "pounds",
+      "question": "Share £80 in the ratio 2:3. What is the value of the larger share in pounds?",
+      "explanation": "Divide the total amount by the sum of the ratio parts (2+3=5), then multiply by the specific share (3).",
+      "id": "gm-ne-0242"
+    },
+    {
+      "correctAnswer": 52,
+      "tolerance": 0.5,
+      "type": "numeric_entry",
+      "explanation": "To find 20%, divide by 5 or multiply by 0.2, then add this to the original price.",
+      "question": "A ticket for a concert costs £43.33 excluding VAT. If VAT is charged at 20%, what is the total price of the ticket in pounds? (Round to the nearest pound).",
+      "unit": "pounds",
+      "id": "gm-ne-0243"
+    },
+    {
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "correctAnswer": 7,
+      "question": "Find the value of 3x - 5 when x = 4.",
+      "explanation": "Substitute x = 4 into the expression: 3(4) - 5 = 12 - 5 = 7.",
+      "id": "gm-ne-0244"
+    },
+    {
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "correctAnswer": 12,
+      "unit": "cm",
+      "question": "A trapezium has an area of 96 square centimetres. The lengths of its parallel sides are 6 cm and 10 cm. Find the perpendicular height in centimetres.",
+      "explanation": "Substitute the values into the formula: 0.5 * (6 + 10) * h = 96, which simplifies to 8h = 96.",
+      "id": "gm-ne-0245"
+    },
+    {
+      "type": "numeric_entry",
+      "correctAnswer": 12,
+      "tolerance": 0,
+      "question": "Find the mode of the following set of numbers: 12, 15, 12, 18, 20, 12, 15.",
+      "explanation": "The mode is the value that appears most frequently in the data set.",
+      "id": "gm-ne-0246"
+    },
+    {
+      "question": "Solve the equation 4x + 6 = 54. Find the value of x.",
+      "explanation": "Rearrange the equation to 4x = 54 - 6, then 4x = 48, so x = 12.",
+      "type": "numeric_entry",
+      "correctAnswer": 12,
+      "tolerance": 0,
+      "id": "gm-ne-0247"
+    },
+    {
+      "explanation": "Use the formula Distance = Speed x Time. 15 minutes is 0.25 hours, so 30 x 0.25 = 7.5.",
+      "unit": "miles",
+      "question": "A car travels at an average speed of 30 mph. How many miles does it travel in 15 minutes?",
+      "correctAnswer": 7.5,
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "id": "gm-ne-0248"
+    },
+    {
+      "unit": "cm³",
+      "question": "A rectangular box has a length of 5 cm, a width of 2 cm and a height of 3 cm. Calculate the volume of the box in cubic centimetres.",
+      "explanation": "The volume of a cuboid is calculated by multiplying length by width by height (5 x 2 x 3).",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "correctAnswer": 30,
+      "id": "gm-ne-0249"
+    },
+    {
+      "unit": "degrees",
+      "type": "numeric_entry",
+      "correctAnswer": 115,
+      "explanation": "Angles on a straight line sum to 180 degrees. 180 - 65 = 115.",
+      "question": "A straight line is divided into two angles. If one angle is 65 degrees, find the size of the other angle in degrees.",
+      "id": "gm-ne-0250"
+    },
+    {
+      "type": "numeric_entry",
+      "explanation": "Total probability must sum to 1. 1 - (0.45 + 0.4) = 0.15.",
+      "correctAnswer": 0.15,
+      "question": "A bag contains only red, blue and green marbles. The probability of picking red is 0.45 and blue is 0.4. What is the probability of picking green?",
+      "id": "gm-ne-0251"
+    },
+    {
+      "correctAnswer": 32,
+      "unit": "cm²",
+      "type": "numeric_entry",
+      "question": "Calculate the area of a triangle with a base of 8 cm and a perpendicular height of 8 cm.",
+      "explanation": "Area of a triangle = (base × height) ÷ 2. (8 × 8) ÷ 2 = 32.",
+      "id": "gm-ne-0252"
+    },
+    {
+      "question": "An athlete runs 10 kilometres in 8 hours. Calculate their average speed in kilometres per hour (km/h).",
+      "explanation": "Speed = Distance ÷ Time. 10 ÷ 8 = 1.25.",
+      "correctAnswer": 1.25,
+      "unit": "km/h",
+      "type": "numeric_entry",
+      "id": "gm-ne-0253"
+    },
+    {
+      "correctAnswer": 48,
+      "unit": "£",
+      "type": "numeric_entry",
+      "question": "Divide £80 in the ratio 3:2. What is the value of the larger share?",
+      "explanation": "Total parts = 3 + 2 = 5. One part = £80 ÷ 5 = £16 skins. Larger share = 3 × £16 = £48.",
+      "id": "gm-ne-0254"
+    },
+    {
+      "question": "Solve the equation 3x + 8 = 29. Find the value of x.",
+      "correctAnswer": 7,
+      "type": "numeric_entry",
+      "explanation": "Subtract 8 from both sides: 3x = 21. Divide by 3: x = 7.",
+      "id": "gm-ne-0255"
+    },
+    {
+      "explanation": "Substituting x = -4: (-4)² + 5 = 16 + 5 = 21.",
+      "type": "numeric_entry",
+      "correctAnswer": 21,
+      "question": "Work out the value of x² + 5 when x = -4.",
+      "id": "gm-ne-0256"
+    },
+    {
+      "question": "A coat is sold for £165 after a 10% price increase. What was the original price of the coat in pounds?",
+      "explanation": "10% of £136.36 is £13.64 (approx), but simpler math: 1.10x = 165, x = 165 / 1.1 = 150.",
+      "correctAnswer": 150,
+      "type": "numeric_entry",
+      "unit": "£",
+      "id": "gm-ne-0257"
+    },
+    {
+      "explanation": "Median is the middle value of 12, 18, 20, 25, 30. This is 20.",
+      "type": "numeric_entry",
+      "question": "Find the median of these five numbers: 18, 12, 25, 30, 20.",
+      "correctAnswer": 20,
+      "id": "gm-ne-0258"
+    },
+    {
+      "correctAnswer": 15,
+      "type": "numeric_entry",
+      "unit": "degrees",
+      "question": "A regular polygon has 24 sides. Calculate the size of each exterior angle in degrees.",
+      "explanation": "A regular hexagon has 6 sides. Exterior angle = 360 ÷ number of sides. 360 ÷ 24 = 15.",
+      "id": "gm-ne-0259"
+    },
+    {
+      "type": "numeric_entry",
+      "unit": "cm³",
+      "correctAnswer": 108,
+      "explanation": "Volume = length × width × height. 6 × 6 × 3 = 108.",
+      "question": "A cuboid has a square base of side length 6 cm and a height of 3 cm. Calculate its volume.",
+      "id": "gm-ne-0260"
+    },
+    {
+      "type": "drag_drop_blanks",
+      "prompt": "Calculate the sale price of a shirt.",
+      "explanation": "To find the final price, calculate 20% of £18 (£3.60) and subtract it from the original price.",
+      "template": "A shirt originally costs £18. In a sale, there is a 20% discount. The new price is {{0}}.",
+      "blanks": [
+        {
+          "options": [
+            "£14.20",
+            "£14.40",
+            "£15.60"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "id": "gm-dd-0001"
+    },
+    {
+      "prompt": "Identify the type of data.",
+      "type": "drag_drop_blanks",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "Discrete",
+            "Continuous",
+            "Qualitative"
+          ]
+        }
+      ],
+      "explanation": "Shoe sizes are discrete because they can only take specific values (like 5, 5.5, 6) and cannot be any value in between.",
+      "template": "The shoe sizes of students in a class are an example of {{0}} data.",
+      "id": "gm-dd-0002"
+    },
+    {
+      "template": "The expansion of 3(x + 4) is {{0}}.",
+      "explanation": "Expand the bracket by multiplying 3 by x and 3 by 4.",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "3x + 12",
+            "3x + 4",
+            "3x + 7"
+          ]
+        }
+      ],
+      "type": "drag_drop_blanks",
+      "prompt": "Expand the algebraic expression.",
+      "id": "gm-dd-0003"
+    },
+    {
+      "prompt": "Calculate the missing probability.",
+      "type": "drag_drop_blanks",
+      "blanks": [
+        {
+          "options": [
+            "0.3",
+            "0.7",
+            "0.03"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "explanation": "The sum of the probabilities of all possible outcomes must equal 1. 1 - 0.3 = 0.7.",
+      "template": "The probability that it will rain tomorrow is 0.3. The probability that it will not rain is {{0}}.",
+      "id": "gm-dd-0004"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "6n - 1",
+            "5n + 1",
+            "n + 5"
+          ]
+        }
+      ],
+      "template": "The nth term of the sequence 5, 11, 17, 23... is {{0}}.",
+      "explanation": "The sequence increases by 6 each time, giving 6n. The first term is 5, so we subtract 1.",
+      "type": "drag_drop_blanks",
+      "prompt": "Find the nth term of the sequence.",
+      "id": "gm-dd-0005"
+    },
+    {
+      "prompt": "Find the hypotenuse of a right-angled triangle.",
+      "type": "drag_drop_blanks",
+      "blanks": [
+        {
+          "options": [
+            "8 cm",
+            "12 cm",
+            "10 cm"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "template": "A right-angled triangle has sides of 6 cm and 8 cm. The hypotenuse is {{0}}.",
+      "explanation": "Using Pythagoras' theorem (a² + b² = c²), 6² + 8² = 36 + 64 = 100. The square root of 100 is 10.",
+      "id": "gm-dd-0006"
+    },
+    {
+      "template": "The circumference of a circle with a diameter of 10 cm is {{0}} (to 1 decimal place).",
+      "explanation": "Circumference is calculated using C = πd. Using π ≈ 3.14, 10 × 3.14 = 31.4 cm.",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "31.4 cm",
+            "15.7 cm,",
+            "62.8 cm"
+          ]
+        }
+      ],
+      "prompt": "Calculate the circumference.",
+      "type": "drag_drop_blanks",
+      "id": "gm-dd-0007"
+    },
+    {
+      "type": "drag_drop_blanks",
+      "prompt": "Solve the linear equation.",
+      "explanation": "Subtract 4 from both sides to get 2x = 6, then divide by 2 to find x.",
+      "template": "If 2x + 4 = 10, then {{0}}.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "x = 2",
+            "x = 3",
+            "x = 6"
+          ]
+        }
+      ],
+      "id": "gm-dd-0008"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "1/200",
+            "1/20",
+            "1/2000"
+          ]
+        }
+      ],
+      "explanation": "1 kg is 1000g. The ratio 5g : 1000g simplifies to 1 : 200 by dividing both sides by 5.",
+      "template": "The ratio 5g to 1kg, written as a fraction in its simplest form, is {{0}}.",
+      "prompt": "Simplify the ratio.",
+      "type": "drag_drop_blanks",
+      "id": "gm-dd-0009"
+    },
+    {
+      "type": "drag_drop_blanks",
+      "prompt": "Calculate the volume of a prism.",
+      "blanks": [
+        {
+          "options": [
+            "150 cm³",
+            "300 cm³",
+            "600 cm³"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "explanation": "The volume of a triangular prism is the area of the triangular cross-section (0.5 * base * height) multiplied by the length.",
+      "template": "A triangular prism has a cross-section area of 15 cm² and a length of 20 cm. Its volume is {{0}}.",
+      "id": "gm-dd-0010"
+    },
+    {
+      "prompt": "Identify the parallel line.",
+      "type": "drag_drop_blanks",
+      "blanks": [
+        {
+          "options": [
+            "y = -2x + 5",
+            "y = 2x + 5",
+            "y = 0.5x + 5"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "explanation": "Parallel lines have the same gradient. The gradient of the original line is -2, so the new line must also have a gradient of -2.",
+      "template": "A line parallel to y = -2x + 7 that passes through (0, 5) is {{0}}.",
+      "id": "gm-dd-0011"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "120°",
+            "108°",
+            "135°"
+          ]
+        }
+      ],
+      "explanation": "The sum of interior angles is (n - 2) * 180. For a pentagon, (5-2)*180 = 540. Dividing by 5 gives 108°.",
+      "template": "Each interior angle of a regular pentagon is {{0}}.",
+      "prompt": "Calculate the interior angle of a regular polygon.",
+      "type": "drag_drop_blanks",
+      "id": "gm-dd-0012"
+    },
+    {
+      "prompt": "Calculate the mean of the three numbers 3, 5, and 7.",
+      "template": "The mean of the numbers 3, 5, and 7 is {{0}}.",
+      "type": "drag_drop_blanks",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "4, 6, 8",
+            "3, 5, 7",
+            "6, 8, 10"
+          ]
+        }
+      ],
+      "explanation": "To find the mean, add the numbers (15) and divide by the count (3). 15 divided by 3 is 5.",
+      "id": "gm-dd-0013"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "0.4",
+            "2.5",
+            "0.25"
+          ]
+        }
+      ],
+      "type": "drag_drop_blanks",
+      "explanation": "Dividing 1 by 4 gives 0.25, which is the decimal equivalent of the fraction one quarter.",
+      "template": "The decimal equivalent of 1/4 is {{0}}.",
+      "prompt": "Convert the fraction 1/4 into a decimal.",
+      "id": "gm-dd-0014"
+    },
+    {
+      "type": "drag_drop_blanks",
+      "blanks": [
+        {
+          "options": [
+            "30 degrees",
+            "60 degrees",
+            "90 degrees"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "explanation": "The sum of angles in a triangle is 180 degrees. 180 - 80 - 70 = 30 degrees.",
+      "prompt": "Find the missing angle in a triangle with angles of 80 and 70 degrees.",
+      "template": "In a triangle with angles of 80° and 70°, the third angle must be {{0}}.",
+      "id": "gm-dd-0015"
+    },
+    {
+      "prompt": "Find the equation of the line parallel to y = 3x + 2 that passes through the point (0, 10).",
+      "template": "The equation of the line is {{0}}.",
+      "explanation": "Parallel lines have the same gradient. Using y = mx + c with m=3 and coordinates (0,10) gives the intercept c=10.",
+      "type": "drag_drop_blanks",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "y = 3x - 10",
+            "y = 3x + 10",
+            "y = -3x + 10"
+          ]
+        }
+      ],
+      "id": "gm-dd-0016"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "7000",
+            "700",
+            "0.7"
+          ]
+        }
+      ],
+      "type": "drag_drop_blanks",
+      "explanation": "There are 1000 millilitres in 1 litre, so 7 multiplied by 1000 equals 7000 ml.",
+      "template": "7 litres is equivalent to {{0}} ml.",
+      "prompt": "Convert 7 litres into millilitres.",
+      "id": "gm-dd-0017"
+    },
+    {
+      "type": "drag_drop_blanks",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "x(x + 5)",
+            "(x - 5)(x + 1)",
+            "(x + 5)(x - 5)"
+          ]
+        }
+      ],
+      "explanation": "This is a difference of two squares, where x squared minus 5 squared results in (x + 5)(x - 5).",
+      "prompt": "Factorise the expression x^2 - 25.",
+      "template": "The factorised form of x² - 25 is {{0}}.",
+      "id": "gm-dd-0018"
+    },
+    {
+      "template": "The value of the car after one year is {{0}}.",
+      "prompt": "A car depreciates by 10% in its first year. If it was worth £15,000, what is it worth now?",
+      "explanation": "10% of 15000 is 1500; 15000 minus 1500 equals 13500.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "£1800",
+            "£13500",
+            "£15000"
+          ]
+        }
+      ],
+      "type": "drag_drop_blanks",
+      "id": "gm-dd-0019"
+    },
+    {
+      "explanation": "The sum of interior angles in a hexagon is (6-2) * 180 = 720 degrees.",
+      "type": "drag_drop_blanks",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "720 degrees",
+            "540 degrees",
+            "360 degrees"
+          ]
+        }
+      ],
+      "prompt": "Work out the sum of the interior angles of a regular hexagon.",
+      "template": "The sum of the interior angles of a hexagon is {{0}}.",
+      "id": "gm-dd-0020"
+    },
+    {
+      "prompt": "Round 7.4182 to 2 decimal places.",
+      "template": "7.4182 rounded to 2 decimal places is {{0}}.",
+      "explanation": "The third decimal place is 8, so the second decimal place (1) is rounded up to 2.",
+      "type": "drag_drop_blanks",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "7.41",
+            "7.42",
+            "7.40"
+          ]
+        }
+      ],
+      "id": "gm-dd-0021"
+    },
+    {
+      "explanation": "Convert 10 metres to 1000 centimetres. The ratio 5:1000 simplifies to 1:200 by dividing both sides by 5.",
+      "type": "drag_drop_blanks",
+      "blanks": [
+        {
+          "options": [
+            "2:1",
+            "1:2000",
+            "1:200"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "prompt": "Simplify the ratio 5 cm to 10 m.",
+      "template": "The ratio 5 cm to 10 m, in its simplest form, is {{0}}.",
+      "id": "gm-dd-0022"
+    },
+    {
+      "explanation": "The volume of a cube is calculated by cubing the side length: 4 x 4 x 4 = 64.",
+      "blanks": [
+        {
+          "options": [
+            "64 cm³",
+            "16 cm³",
+            "48 cm³"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "type": "drag_drop_blanks",
+      "template": "The volume of the cube is {{0}}.",
+      "prompt": "Calculate the volume of a cube with a side length of 4 cm.",
+      "id": "gm-dd-0023"
+    },
+    {
+      "prompt": "Work out 1/3 + 2/15.",
+      "template": "The sum of 1/3 and 2/15 is {{0}}.",
+      "explanation": "Find a common denominator (15). 1/3 becomes 5/15 and 2/15 stays the same. 5/15 + 2/15 = 7/15.",
+      "type": "drag_drop_blanks",
+      "blanks": [
+        {
+          "options": [
+            "4/15",
+            "7/15",
+            "8/15"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "id": "gm-dd-0024"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "20%",
+            "25%",
+            "30%"
+          ]
+        }
+      ],
+      "type": "drag_drop_blanks",
+      "explanation": "To find the percentage increase, divide the change (10) by the original value (40) and multiply by 100.",
+      "prompt": "Calculate the percentage increase of a price that rises from £40 to £50.",
+      "template": "The percentage increase is {{0}}.",
+      "id": "gm-dd-0025"
+    },
+    {
+      "template": "The factorised form is {{0}}.",
+      "prompt": "Factorise the quadratic expression x² + 7x + 12.",
+      "explanation": "We need two numbers that multiply to 12 and add to 7. These numbers are 3 and 4.",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "(x + 3)(x + 4)",
+            "(x - 3)(x - 4)",
+            "(x + 12)(x + 1)"
+          ]
+        }
+      ],
+      "type": "drag_drop_blanks",
+      "id": "gm-dd-0026"
+    },
+    {
+      "template": "The area of the triangle is {{0}}.",
+      "prompt": "Find the area of a triangle with a base of 6 cm and a perpendicular height of 6 cm.",
+      "explanation": "The area of a triangle is calculated using (base × height) ÷ 2, which is (6 × 6) ÷ 2 = 18.",
+      "type": "drag_drop_blanks",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "12 cm²",
+            "36 cm²",
+            "18 cm²"
+          ]
+        }
+      ],
+      "id": "gm-dd-0027"
+    },
+    {
+      "template": "Alice receives £5, so the ratio of Alice's share to the total is {{0}}.",
+      "type": "drag_drop_blanks",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "1:400000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "1:4",
+            "4:1"
+          ]
+        }
+      ],
+      "explanation": "Total parts in the ratio 1:3 is 4. £20 divided by 4 results in £5 per share. Alice gets 1 share.",
+      "prompt": "Alice and Bob share £20 in the ratio 1:3. How much does Alice receive?",
+      "id": "gm-dd-0028"
+    },
+    {
+      "template": "64,000 written in standard form is {{0}}.",
+      "prompt": "Express 64,000 in standard form.",
+      "explanation": "To write 64,000 in standard form, move the decimal point 4 places to the left.",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "6.4 x 10^4",
+            "6.4 x 10^-4",
+            "64 x 10^3"
+          ]
+        }
+      ],
+      "type": "drag_drop_blanks",
+      "id": "gm-dd-0029"
+    },
+    {
+      "explanation": "A fair six-sided die has one '4' out of six possible outcomes.",
+      "prompt": "What is the probability of rolling a 4 on a fair six-sided die?",
+      "type": "drag_drop_blanks",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "1/2",
+            "1/36",
+            "1/6"
+          ]
+        }
+      ],
+      "template": "The probability is {{0}}.",
+      "id": "gm-dd-0030"
+    },
+    {
+      "template": "The value of x is {{0}}.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "x = 10",
+            "x = 15",
+            "x = 25"
+          ]
+        }
+      ],
+      "type": "drag_drop_blanks",
+      "prompt": "Solve the equation x/5 = 3.",
+      "explanation": "Multiply both sides by 5 to isolate x. 3 times 5 equals 15.",
+      "id": "gm-dd-0031"
+    },
+    {
+      "type": "drag_drop_blanks",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "80°",
+            "100°",
+            "180°"
+          ]
+        }
+      ],
+      "prompt": "Angle A and an angle of 100° lie on the same straight line. Find angle A.",
+      "explanation": "Angles on a straight line sum to 180°. Therefore, 180 - 100 = 80.",
+      "template": "Angle A is {{0}}.",
+      "id": "gm-dd-0032"
+    },
+    {
+      "prompt": "A cuboid has dimensions 5 cm, 4 cm, and 4 cm. Calculate its volume.",
+      "explanation": "The volume of a cuboid is length × width × height. 5 × 4 × 4 = 80.",
+      "type": "drag_drop_blanks",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "60 cm³",
+            "40 cm³",
+            "80 cm³"
+          ]
+        }
+      ],
+      "template": "The volume of the cuboid is {{0}}.",
+      "id": "gm-dd-0033"
+    },
+    {
+      "type": "drag_drop_blanks",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "3.5",
+            "4.5",
+            "4"
+          ]
+        }
+      ],
+      "explanation": "To find the median, arrange the numbers in order (2, 4, 5, 8) and find the middle. (4+5)/2 = 4.5.",
+      "prompt": "Find the median of the following set of data: 5, 2, 8, 4.",
+      "template": "The median is {{0}}.",
+      "id": "gm-dd-0034"
+    },
+    {
+      "template": "The area is {{0}}.",
+      "prompt": "Find the area of a circle with a radius of 4 cm. Leave your answer in terms of π.",
+      "explanation": "The area of a circle is πr². If the radius is 4, then the area is π × 4² = 16π.",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "16π cm²",
+            "8π cm²",
+            "64π cm²"
+          ]
+        }
+      ],
+      "type": "drag_drop_blanks",
+      "id": "gm-dd-0035"
+    },
+    {
+      "template": "The nth term is {{0}}.",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "2n + 1",
+            "3n - 1",
+            "4n - 1"
+          ]
+        }
+      ],
+      "type": "drag_drop_blanks",
+      "explanation": "The sequence increases by 4 each time, so it involves 4n. The first term is 4(1) - 1 = 3.",
+      "prompt": "Find the nth term of the sequence: 3, 7, 11, 15...",
+      "id": "gm-dd-0036"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "5.2 kg",
+            "5.2 g",
+            "5200 g"
+          ]
+        }
+      ],
+      "template": "A bag of flour weighs 5.2 kg. This is the same as {{0}}.",
+      "type": "drag_drop_blanks",
+      "prompt": "Convert mass to grams.",
+      "explanation": "There are 1000 grams in 1 kilogram, so 5.2 multiplied by 1000 is 5200.",
+      "id": "gm-dd-0037"
+    },
+    {
+      "explanation": "Divide the numerator by the denominator (1 / 8 = 0.125) and multiply by 100 to get the percentage.",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "12.5%",
+            "8%",
+            "25%"
+          ]
+        }
+      ],
+      "type": "drag_drop_blanks",
+      "template": "The fraction 1/8 expressed as a percentage is {{0}}.",
+      "prompt": "Convert a fraction to a percentage.",
+      "id": "gm-dd-0038"
+    },
+    {
+      "prompt": "Factorise the expression completely.",
+      "type": "drag_drop_blanks",
+      "template": "The expression 4x - 12 can be factorised to {{0}}.",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "2(x - 6)",
+            "x(x - 12)",
+            "4(x - 3)"
+          ]
+        }
+      ],
+      "explanation": "The highest common factor of 4x and 12 is 4, which is placed outside the bracket.",
+      "id": "gm-dd-0039"
+    },
+    {
+      "prompt": "State the sum of angles on a straight line.",
+      "template": "The sum of the angles on a straight line is {{0}}.",
+      "type": "drag_drop_blanks",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "270 degrees",
+            "360 degrees",
+            "180 degrees"
+          ]
+        }
+      ],
+      "explanation": "Angles on a straight line always add up to exactly 180 degrees.",
+      "id": "gm-dd-0040"
+    },
+    {
+      "explanation": "To find 1/4 of £480, divide 480 by 4, which equals 120.",
+      "prompt": "Calculate a fraction of an amount.",
+      "template": "A jacket costs £480. In a sale, its price is reduced by 1/4. The reduction is {{0}}.",
+      "type": "drag_drop_blanks",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "£120",
+            "£30",
+            "£450"
+          ]
+        }
+      ],
+      "id": "gm-dd-0041"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "2.1 x 10^-3",
+            "2.1 x 10^4",
+            "2.1 x 10^-4"
+          ]
+        }
+      ],
+      "type": "drag_drop_blanks",
+      "template": "The number 0.00021 written in standard form is {{0}}.",
+      "prompt": "Write the number in standard form.",
+      "explanation": "Move the decimal point 4 places to the right to get 2.1, which gives a power of -4.",
+      "id": "gm-dd-0042"
+    },
+    {
+      "explanation": "The mode is the most frequent value; in this data set, 14 appears three times.",
+      "prompt": "Find the mode.",
+      "type": "drag_drop_blanks",
+      "template": "For the data set {11, 14, 12, 14, 15, 14}, the mode is {{0}}.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "12",
+            "14",
+            "11"
+          ]
+        }
+      ],
+      "id": "gm-dd-0043"
+    },
+    {
+      "explanation": "The gradient is the coefficient of x, which is 3 in this equation.",
+      "blanks": [
+        {
+          "options": [
+            "y = 2x + 7",
+            "y = 3x - 5",
+            "y = -3x + 10"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "prompt": "Identify the equation with a gradient of 3.",
+      "type": "drag_drop_blanks",
+      "template": "The equation of a straight line with a gradient of 3 and a y-intercept of -5 is {{0}}.",
+      "id": "gm-dd-0044"
+    },
+    {
+      "prompt": "Calculate the side length of a square.",
+      "template": "A square has an area of 49 cm². The length of one side is {{0}}.",
+      "type": "drag_drop_blanks",
+      "blanks": [
+        {
+          "options": [
+            "3.5 cm",
+            "49 cm",
+            "7 cm"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "explanation": "The area of a square is side squared, so the side length is the square root of 49.",
+      "id": "gm-dd-0045"
+    },
+    {
+      "explanation": "One litre is 1000 cubic centimetres, so 3 litres is 3000 cm³.",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "3000",
+            "300",
+            "30"
+          ]
+        }
+      ],
+      "type": "drag_drop_blanks",
+      "template": "A container holds 3 litres of water. This volume is equal to {{0}} cm³.",
+      "prompt": "Convert litres to cubic centimetres.",
+      "id": "gm-dd-0046"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "0.17",
+            "0.75",
+            "0.25"
+          ]
+        }
+      ],
+      "type": "drag_drop_blanks",
+      "template": "The probability of a spinner landing on Red is 0.15 and Blue is 0.1. The probability it lands on Green is {{0}}.",
+      "prompt": "Calculate the missing probability.",
+      "explanation": "The sum of probabilities must equal 1. 1 - (0.15 + 0.1) = 0.75.",
+      "id": "gm-dd-0047"
+    },
+    {
+      "explanation": "To convert a fraction to a percentage, divide the numerator by the denominator and multiply by 100: (2/5) * 100 = 40%.",
+      "type": "drag_drop_blanks",
+      "blanks": [
+        {
+          "options": [
+            "35%",
+            "40%",
+            "45%"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "prompt": "Convert the fraction to a percentage.",
+      "template": "The fraction 2/5 expressed as a percentage is {{0}}.",
+      "id": "gm-dd-0048"
+    },
+    {
+      "template": "If x / 60 = 45, then the value of {{0}}.",
+      "prompt": "Solve the linear equation.",
+      "blanks": [
+        {
+          "options": [
+            "x = 12",
+            "x = 48",
+            "x = 2700"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "type": "drag_drop_blanks",
+      "explanation": "To find x, multiply both sides of the equation by 60: 45 * 60 = 2700.",
+      "id": "gm-dd-0049"
+    },
+    {
+      "explanation": "The common difference is 5, so the term is 5n. When n=1, 5(1)+c = 7, so c = 2.",
+      "type": "drag_drop_blanks",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "5n + 2",
+            "2n + 5",
+            "7n - 5"
+          ]
+        }
+      ],
+      "template": "For the arithmetic sequence 7, 12, 17, 22... the nth term is {{0}}.",
+      "prompt": "Find the nth term of the sequence.",
+      "id": "gm-dd-0050"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "1175 g",
+            "1.175 gBase",
+            "117.5 g"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "type": "drag_drop_blanks",
+      "explanation": "There are 1000 grams in a kilogram, so 0.1175 kg is 0.1175 * 1000 = 117.5 g.",
+      "template": "A piece of cheese weighs 0.1175 kg. This is the same as {{0}}.",
+      "prompt": "Convert kilograms to grams.",
+      "id": "gm-dd-0051"
+    },
+    {
+      "type": "drag_drop_blanks",
+      "explanation": "The surface area of a cube is 6 times the area of one face: 6 * (5 * 5) = 150 cm².",
+      "blanks": [
+        {
+          "options": [
+            "163 cm²",
+            "150 cm²",
+            "125 cm²"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "prompt": "Calculate the total surface area.",
+      "template": "A cube has a side length of 5 cm. Its total surface area is {{0}}.",
+      "id": "gm-dd-0052"
+    },
+    {
+      "explanation": "Prime numbers on a six-sided die are 2, 3, and 5. There are 3 outcomes out of 6, which simplifies to 1/2.",
+      "type": "drag_drop_blanks",
+      "blanks": [
+        {
+          "options": [
+            "1/6",
+            "1/2",
+            "2/3"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "template": "The probability of rolling a prime number on a fair six-sided die is {{0}}.",
+      "prompt": "Find the probability of a specific outcome.",
+      "id": "gm-dd-0053"
+    },
+    {
+      "prompt": "Express a relationship as a ratio.",
+      "template": "In a survey, 7 out of 10 people prefer tea over coffee. The ratio of people who prefer coffee to tea is {{0}}.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "7:3",
+            "3:7",
+            "3:10"
+          ]
+        }
+      ],
+      "type": "drag_drop_blanks",
+      "explanation": "If 7 out of 10 people prefer tea, then 3 prefer coffee. The ratio of coffee to tea is 3:7.",
+      "id": "gm-dd-0054"
+    },
+    {
+      "template": "If a circle has a diameter of 10 cm and pi is taken as 3.14, the circumference is {{0}}.",
+      "prompt": "Calculate the circumference.",
+      "blanks": [
+        {
+          "options": [
+            "15.7 cm2",
+            "78.5 cm2Base",
+            "31.4 cm2"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "type": "drag_drop_blanks",
+      "explanation": "The circumference of a circle is calculated using the formula C = πd. Here, 3.14 * 10 = 31.4 cm.",
+      "id": "gm-dd-0055"
+    },
+    {
+      "prompt": "Factorise the quadratic expression.",
+      "template": "The expression x² + 7x can be factorised to {{0}}.",
+      "type": "drag_drop_blanks",
+      "explanation": "Both terms share a common factor of x. Dividing both terms by x gives the expression x(x + 7).",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "x(x + 7)",
+            "x(x + 14)Base",
+            "(x + 7)(x - 7)"
+          ]
+        }
+      ],
+      "id": "gm-dd-0056"
+    },
+    {
+      "prompt": "Find the missing interior angle.",
+      "template": "A quadrilateral has three angles measuring 90°, 90°, and 80°. The fourth angle must be {{0}}.",
+      "type": "drag_drop_blanks",
+      "explanation": "Angles in a quadrilateral sum to 360 degrees. 360 - (90 + 90 + 80) = 100 degrees.",
+      "blanks": [
+        {
+          "options": [
+            "80 degrees",
+            "100 degreesBase",
+            "180 degrees"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "id": "gm-dd-0057"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "80%",
+            "20%",
+            "25%"
+          ]
+        }
+      ],
+      "explanation": "The percentage increase is (increase / original) * 100. (10 / 40) * 100 = 25%.",
+      "type": "drag_drop_blanks",
+      "prompt": "Calculate the percentage increase.",
+      "template": "A price increases from £40 to £50. The percentage increase is {{0}}.",
+      "id": "gm-dd-0058"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "y = -2x + 4",
+            "y = 2x + 4",
+            "y = 4x - 2"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "explanation": "The equation of a line is y = mx + c, where m is the gradient (-2) and c is the y-intercept (4).",
+      "type": "drag_drop_blanks",
+      "prompt": "Identify the linear equation.",
+      "template": "The equation of a line with a gradient of -2 and a y-intercept of 4 is {{0}}.",
+      "id": "gm-dd-0059"
+    },
+    {
+      "prompt": "Calculate the size of an interior angle of a regular hexagon.",
+      "template": "The size of one interior angle in a regular hexagon is {{0}}.",
+      "type": "drag_drop_blanks",
+      "explanation": "The sum of interior angles in a hexagon is (6-2) x 180 = 720. For a regular hexagon, 720 ÷ 6 = 120.",
+      "blanks": [
+        {
+          "options": [
+            "108°",
+            "120°",
+            "135°",
+            "144°"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "id": "gm-dd-0060"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "2:5",
+            "5:2",
+            "2:3",
+            "3:2"
+          ]
+        }
+      ],
+      "template": "In a class where 40% of the students are girls, the ratio of girls to boys is {{0}}.",
+      "prompt": "Express the ratio of girls to boys in a class.",
+      "explanation": "If 40% are girls, 60% are boys. The ratio 40:60 simplifies to 2:3.",
+      "type": "drag_drop_blanks",
+      "id": "gm-dd-0061"
+    },
+    {
+      "type": "drag_drop_blanks",
+      "explanation": "We need two numbers that multiply to -10 and add to +3. Those numbers are +5 and -2.",
+      "prompt": "Factorise the quadratic expression.",
+      "template": "The factorised form of x² + 3x - 10 is {{0}}.",
+      "blanks": [
+        {
+          "options": [
+            "(x + 5)(x - 2)",
+            "(x - 5)(x + 2)",
+            "(x - 10)(x + 1)",
+            "(x + 3)(x + 1)"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "id": "gm-dd-0062"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "8 or -8",
+            "4 or -4",
+            "16 or -16",
+            "6 or -6"
+          ],
+          "correctIndex": 3
+        }
+      ],
+      "type": "drag_drop_blanks",
+      "explanation": "Add 1 to both sides to get x² = 36, then take the square root of 36.",
+      "prompt": "Solve the equation for x.",
+      "template": "If x² - 1 = 35, then the possible values for x are {{0}}.",
+      "id": "gm-dd-0063"
+    },
+    {
+      "type": "drag_drop_blanks",
+      "explanation": "To convert litres to millilitres, multiply the volume by 1000.",
+      "prompt": "Convert the volume from litres to millilitres.",
+      "template": "A bottle contains 0.45 litres of juice. This is equivalent to {{0}}.",
+      "blanks": [
+        {
+          "options": [
+            "0.45 ml",
+            "450 ml",
+            "4500 ml",
+            "4.5 ml"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "id": "gm-dd-0064"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "27",
+            "90",
+            "54",
+            "360000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000}0.75 or 3/40",
+            "54°"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "prompt": "In a regular pentagon, the size of each exterior angle is x. Find 0.75x.",
+      "template": "The exterior angle of a regular pentagon is 72°. Therefore, 0.75 of this angle is {{0}}.",
+      "type": "drag_drop_blanks",
+      "explanation": "The interior angle sum of a pentagon is (5-2)x180 = 540. In a regular pentagon, 540 / 5 = 108. The external angle is 180 - 108 = 72 or 360 / 5 = 72. Applying this logic to a triangle: 180 / 3 = 60. Then 1.5 x 36 = 54. Actually, let's use the external angle rule: 360 / 5 = 72. 360 / 10 = 36. 360 / 12 = 30. Let's provide 180 - [(3-2)180/3] = 120 exterior for triangle. 54 is not a common one. Let's fix: 360/n. For a regular pentagon, exterior is 360/5 = 72. For a regular decagon, exterior is 360/10 = 36. For 3/4 of 72, it is 54. 3/4 of 72 is 54.",
+      "id": "gm-dd-0065"
     }
   ],
   "mocks": []

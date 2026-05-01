@@ -13939,6 +13939,4140 @@
       "question": "Choose the correct verb: Each of the students _______ a locker.",
       "type": "multiple_choice",
       "id": "ep-mc-1072"
+    },
+    {
+      "template": "The heavy rainfall had a significant {{0}} on the local river levels.",
+      "prompt": "Choose the correct word to complete the sentence.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "affect",
+            "effect",
+            "infect"
+          ]
+        }
+      ],
+      "type": "dropdown_blanks",
+      "explanation": "'Effect' is a noun meaning the result of an action, whereas 'affect' is usually a verb.",
+      "id": "ep-db-0001"
+    },
+    {
+      "prompt": "Select the word that correctly fits the context.",
+      "template": "After reviewing all the evidence, the detective reached a logical {{0}}.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "options": [
+            "concluded",
+            "concluding",
+            "conclusion"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "explanation": "The sentence requires a noun to follow the adjective 'logical'.",
+      "id": "ep-db-0002"
+    },
+    {
+      "template": "I need to visit the shop to buy some new {{0}} for the start of the school term.",
+      "prompt": "Choose the correct spelling for the context.",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "stationery",
+            "stationary",
+            "stationer"
+          ]
+        }
+      ],
+      "type": "dropdown_blanks",
+      "explanation": "'Stationery' with an 'e' refers to writing materials like paper and envelopes.",
+      "id": "ep-db-0003"
+    },
+    {
+      "prompt": "Solve the mathematical expression.",
+      "template": "The result of the calculation 3 + 4 × 2 is {{0}}.",
+      "explanation": "Using BIDMAS, multiply 4 by 2 first to get 8, then add 3 to get 11.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "options": [
+            "8",
+            "9",
+            "11"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "id": "ep-db-0004"
+    },
+    {
+      "prompt": "Identify the literary device used in the sentence.",
+      "template": "The snow was a white blanket covering the entire countryside is an example of a {{0}}.",
+      "explanation": "A metaphor describes something as if it were something else, without using 'like' or 'as'.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "options": [
+            "metaphor",
+            "simile",
+            "personification"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "id": "ep-db-0005"
+    },
+    {
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "options": [
+            "for",
+            "by",
+            "from"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "explanation": "The preposition 'from' is used to show the origin or source of something.",
+      "prompt": "Select the correct preposition.",
+      "template": "The children were exhausted {{0}} their long trek through the woods.",
+      "id": "ep-db-0006"
+    },
+    {
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "options": [
+            "although激",
+            "despite",
+            "whereas"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "explanation": "'Despite' is used to show contrast and is followed by a noun or noun phrase.",
+      "prompt": "Choose the best conjunction or preposition.",
+      "template": "{{0}} the cold weather, we decided to eat our lunch outside in the park.",
+      "id": "ep-db-0007"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "54",
+            "60",
+            "64"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "type": "dropdown_blanks",
+      "explanation": "The area of a rectangle is calculated by multiplying the length by the width (9 x 6 = 54).",
+      "template": "A rectangle has a length of 9cm and a width of 6cm; its area is {{0}} square centimetres.",
+      "prompt": "Calculate the area.",
+      "id": "ep-db-0008"
+    },
+    {
+      "prompt": "Choose the correct word for the sentence.",
+      "template": "Reading historical novels has become my favourite {{0}} during the holidays.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "options": [
+            "past",
+            "passed激",
+            "pastime"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "explanation": "'Pastime' (spelt with one 's') refers to an activity done for enjoyment.",
+      "id": "ep-db-0009"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "who's激",
+            "whose激",
+            "whom激]}],explanation:"
+          ]
+        }
+      ],
+      "type": "dropdown_blanks",
+      "explanation": "'Whose' is a possessive pronoun used to ask which person something belongs to.",
+      "template": "{{0}} coat is this lying on the hallway floor?",
+      "prompt": "Select the correct pronoun.",
+      "id": "ep-db-0010"
+    },
+    {
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "options": [
+            "0.625",
+            "0.65",
+            "0.725"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "explanation": "To convert a fraction to a decimal, divide the numerator by the denominator (5 ÷ 8 = 0.625).",
+      "prompt": "Convert the fraction to a decimal.",
+      "template": "The decimal equivalent of the fraction 5/8 is {{0}}.",
+      "id": "ep-db-0011"
+    },
+    {
+      "prompt": "Find the most appropriate adjective.",
+      "template": "The teacher's instructions were rather {{0}}, leaving the students confused about what to do.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "vague激",
+            "determined激",
+            "ambiguous激]}],explanation:"
+          ]
+        }
+      ],
+      "explanation": "'Ambiguous' means having more than one possible meaning or being unclear.",
+      "id": "ep-db-0012"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "allowed",
+            "aloud",
+            "allowedly"
+          ]
+        }
+      ],
+      "template": "The teacher asked the student to read the poem {{0}} so the whole class could hear.",
+      "explanation": "'Aloud' refers to sound, whereas 'allowed' is the past tense of allow (to permit).",
+      "type": "dropdown_blanks",
+      "prompt": "Choose the correct homophone.",
+      "id": "ep-db-0013"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "stationery",
+            "dictionary",
+            "vocabulary"
+          ]
+        }
+      ],
+      "template": "To improve your writing, it is essential to expand your {{0}} by reading a wide variety of books.",
+      "explanation": "Vocabulary refers to the body of words used in a particular language or by a person.",
+      "type": "dropdown_blanks",
+      "prompt": "Identify the correct noun.",
+      "id": "ep-db-0014"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "42",
+            "24",
+            "36"
+          ]
+        }
+      ],
+      "template": "The solution to the equation 12 + 6 × 5 is {{0}}.",
+      "prompt": "Solve the mathematical expression.",
+      "type": "dropdown_blanks",
+      "explanation": "Following BIDMAS, multiply 6 by 5 first (30), then add 12 to get 42.",
+      "id": "ep-db-0015"
+    },
+    {
+      "explanation": "A simile compares two things using the words 'like' or 'as'.",
+      "prompt": "Identify the figure of speech.",
+      "type": "dropdown_blanks",
+      "template": "\"The athlete ran as fast as the wind\" is an example of a {{0}}.",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "metaphor",
+            "personification",
+            "simile"
+          ]
+        }
+      ],
+      "id": "ep-db-0016"
+    },
+    {
+      "template": "{{0}} going to be very disappointed if the football match is cancelled due to the rain.",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "They're",
+            "Their",
+            "There"
+          ]
+        }
+      ],
+      "explanation": "'They're' is a contraction of 'they are', which fits the grammatical structure of the sentence.",
+      "type": "dropdown_blanks",
+      "prompt": "Choose the correct word to start the sentence.",
+      "id": "ep-db-0017"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "60 degrees",
+            "90 degrees",
+            "180 degrees"
+          ]
+        }
+      ],
+      "template": "An angle that measures exactly {{0}} is known as a right angle.",
+      "explanation": "A right angle is exactly 90 degrees, forming a square corner.",
+      "prompt": "Mathematics: Geometry.",
+      "type": "dropdown_blanks",
+      "id": "ep-db-0018"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "conscience",
+            "conscious",
+            "conscientious"
+          ]
+        }
+      ],
+      "template": "After the accident, the hiker remained {{0}} and was able to call for help on his mobile phone.",
+      "explanation": "'Conscious' means being awake and aware of one's surroundings.",
+      "type": "dropdown_blanks",
+      "prompt": "Select the correct spelling and meaning.",
+      "id": "ep-db-0019"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "8.005",
+            "8.500",
+            "8.050"
+          ]
+        }
+      ],
+      "template": "The number 'eight and five hundredths' is written in figures as {{0}}.",
+      "explanation": "Five hundredths is 0.05, so eight and five hundredths is 8.05.",
+      "prompt": "Convert the words to a decimal.",
+      "type": "dropdown_blanks",
+      "id": "ep-db-0020"
+    },
+    {
+      "type": "dropdown_blanks",
+      "prompt": "Choose the best connecting word.",
+      "explanation": "'Nevertheless' is used to show contrast or opposition to the previous point.",
+      "template": "The team played poorly in the first half; {{0}}, they managed to win the game in the final minute.",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "Nevertheless",
+            "Furthermore",
+            "Consequently"
+          ]
+        }
+      ],
+      "id": "ep-db-0021"
+    },
+    {
+      "explanation": "Perimeter is the sum of all sides: 9 + 6 + 9 + 6 = 30cm.",
+      "prompt": "Calculate the perimeter.",
+      "type": "dropdown_blanks",
+      "template": "A rectangle has a length of 9cm and a width of 6cm; its perimeter is {{0}}.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "36cm",
+            "30cm",
+            "15cm"
+          ]
+        }
+      ],
+      "id": "ep-db-0022"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "under",
+            "between",
+            "among"
+          ]
+        }
+      ],
+      "template": "The headteacher decided to distribute the prizes {{0}} the five winners of the art competition.",
+      "explanation": "'Among' is used when referring to more than two people or things.",
+      "prompt": "Choose the correct preposition.",
+      "type": "dropdown_blanks",
+      "id": "ep-db-0023"
+    },
+    {
+      "explanation": "'Ancient' is an antonym (opposite) of 'modern'.",
+      "type": "dropdown_blanks",
+      "prompt": "Select the correct antonym.",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "ancient",
+            "modern",
+            "temporary"
+          ]
+        }
+      ],
+      "template": "The ruins of the castle were truly {{0}}, dating back over one thousand years.",
+      "id": "ep-db-0024"
+    },
+    {
+      "prompt": "Choose the correct adjective to describe Sarah's work ethic.",
+      "template": "Sarah is a {{0}} student who always completes her homework on time and to a high standard.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "options": [
+            "conscious",
+            "conscientious",
+            "consensus"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "explanation": "A conscientious person is someone who is very careful and puts a lot of effort into their work.",
+      "id": "ep-db-0025"
+    },
+    {
+      "template": "{{0}} is situated at the very end of the leafy country lane.",
+      "type": "dropdown_blanks",
+      "prompt": "Select the correct homophone.",
+      "explanation": "'Their' is the possessive pronoun used to show that the house belongs to them.",
+      "blanks": [
+        {
+          "options": [
+            "They're",
+            "There",
+            "Their house"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "id": "ep-db-0026"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "100",
+            "500",
+            "1000"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "explanation": "The prefix 'milli' means one thousandth, so there are 1,000 millimetres in one metre.",
+      "template": "In the metric system, there are exactly {{0}} millimetres in one metre.",
+      "type": "dropdown_blanks",
+      "prompt": "Calculate the number of millimetres in a metre.",
+      "id": "ep-db-0027"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "alliteration",
+            "personification",
+            "onomatopoeia"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "explanation": "Personification is a figure of speech where human qualities are given to non-human objects.",
+      "prompt": "Identify the literary device used in the sentence.",
+      "type": "dropdown_blanks",
+      "template": "The old gate groaned in the wind is an example of {{0}}.",
+      "id": "ep-db-0028"
+    },
+    {
+      "explanation": "Subtracting 40 minutes from 9.30am results in 8.50am.",
+      "blanks": [
+        {
+          "options": [
+            "8.50am",
+            "9.10am",
+            "8.40am"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "prompt": "Calculate the starting time of the assembly.",
+      "type": "dropdown_blanks",
+      "template": "The school assembly ended at 9.30am; if it lasted for 40 minutes, it must have started at {{0}}.",
+      "id": "ep-db-0029"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "stationary",
+            "stationers",
+            "stationery"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "explanation": "Stationery with an 'e' refers to writing materials like pens and paper.",
+      "type": "dropdown_blanks",
+      "template": "James went to the shop to buy some new {{0}} for the start of the autumn term.",
+      "prompt": "Select the correct spelling of the word for writing materials.",
+      "id": "ep-db-0030"
+    },
+    {
+      "prompt": "Convert the fraction to a percentage.",
+      "template": "If 3/4 of the class passed the test, this is equivalent to {{0}} of the students.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "options": [
+            "25%",
+            "75%",
+            "80%"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "explanation": "The fraction 3/4 is equivalent to 75/100, which is written as 75%.",
+      "id": "ep-db-0031"
+    },
+    {
+      "prompt": "Choose the word that means 'never seen before'.",
+      "type": "dropdown_blanks",
+      "template": "The heavy rainfall in July was described by the weather reporter as {{0}}.",
+      "blanks": [
+        {
+          "options": [
+            "unprecedented",
+            "unpredictable",
+            "unpleasant"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "explanation": "Unprecedented means never having happened or existed before.",
+      "id": "ep-db-0032"
+    },
+    {
+      "prompt": "Identify the square number from the list.",
+      "type": "dropdown_blanks",
+      "template": "From the following list of numbers, the only square number is {{0}}.",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "23",
+            "27",
+            "25"
+          ]
+        }
+      ],
+      "explanation": "A square number is the result of multiplying a whole number by itself (5 x 5 = 25).",
+      "id": "ep-db-0033"
+    },
+    {
+      "type": "dropdown_blanks",
+      "template": "You can {{0}} have the chocolate cake or the fruit salad for dessert.",
+      "prompt": "Select the correct pair of conjunctions.",
+      "explanation": "'Either' and 'or' are used together to offer a choice between two possibilities.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "neither / nor",
+            "either / or",
+            "both / and"
+          ]
+        }
+      ],
+      "id": "ep-db-0034"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "150ml",
+            "200ml",
+            "250ml"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "explanation": "A standard litre is 1000ml; dividing 1000 by 4 gives 250ml, then multiplying by 3 gives 750ml. 1000ml - 750ml = 250ml.",
+      "type": "dropdown_blanks",
+      "template": "A jug contains 1 litre of water. If I pour out 750ml, there will be {{0}} remaining.",
+      "prompt": "Calculate the remaining volume of water.",
+      "id": "ep-db-0035"
+    },
+    {
+      "type": "dropdown_blanks",
+      "template": "The supermarket was busy, with people crowding the {{0}} to find the best bargains.",
+      "prompt": "Choose the correct word for the passages in a supermarket.",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "islands",
+            "isles",
+            "aisles"
+          ]
+        }
+      ],
+      "explanation": "Aisles are the gangways or passages between rows of seats or shelves.",
+      "id": "ep-db-0036"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "there",
+            "their",
+            "they're"
+          ]
+        }
+      ],
+      "prompt": "Choose the correct homophone.",
+      "explanation": "'Their' is the possessive pronoun used to show that the teacher belongs to the students.",
+      "type": "dropdown_blanks",
+      "template": "The students were very excited to see {{0}} teacher dressed as a superhero for charity.",
+      "id": "ep-db-0037"
+    },
+    {
+      "type": "dropdown_blanks",
+      "template": "A jumper usually costs £80, but it is currently on sale with a 25% discount, meaning the price is reduced by {{0}}.",
+      "prompt": "Calculate the percentage.",
+      "explanation": "To find 25% of 80, divide by 4. 80 ÷ 4 = 20.",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "15",
+            "20",
+            "25"
+          ]
+        }
+      ],
+      "id": "ep-db-0038"
+    },
+    {
+      "template": "Despite the cold weather, the children were {{0}} to leave the playground when the bell rang.",
+      "type": "dropdown_blanks",
+      "explanation": "'Reluctant' means feeling or showing hesitation or unwillingness.",
+      "prompt": "Select the word that best fits the sentence.",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "reminiscent",
+            "reluctant",
+            "redundant"
+          ]
+        }
+      ],
+      "id": "ep-db-0039"
+    },
+    {
+      "template": "If a straight line is divided into two angles and one is 60 degrees, the other must be {{0}}.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "120 degrees",
+            "180 degrees",
+            "360 degrees"
+          ]
+        }
+      ],
+      "explanation": "Angles on a straight line always add up to 180 degrees.",
+      "prompt": "Identify the property of the angle.",
+      "id": "ep-db-0040"
+    },
+    {
+      "prompt": "Select the correct verb form for subject-verb agreement.",
+      "explanation": "The plural subject 'The bunch of grapes' (treated as a plural collection here) or more specifically 'grapes' requires the plural verb 'are'.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "is",
+            "are",
+            "was"
+          ]
+        }
+      ],
+      "type": "dropdown_blanks",
+      "template": "The bunch of grapes {{0}} sitting in the fruit bowl on the kitchen table.",
+      "id": "ep-db-0041"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "0.375",
+            "0.35",
+            "0.6"
+          ]
+        }
+      ],
+      "prompt": "Convert the fraction to a decimal.",
+      "explanation": "3 divided by 8 is 0.375. (1/8 is 0.125, so 3/8 is 0.125 x 3).",
+      "type": "dropdown_blanks",
+      "template": "The fraction 3/8 can be expressed as the decimal {{0}}.",
+      "id": "ep-db-0042"
+    },
+    {
+      "explanation": "Alliteration is the occurrence of the same letter or sound at the beginning of adjacent or closely connected words.",
+      "prompt": "Identify the literary device.",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "metaphor liquor",
+            "alliteration",
+            "personification"
+          ]
+        }
+      ],
+      "template": "'The shimmering silver swan swam' is an example of {{0}}.",
+      "type": "dropdown_blanks",
+      "id": "ep-db-0043"
+    },
+    {
+      "template": "A right-angled triangle has a base of 8cm and a height of 6cm; its area is {{0}}.",
+      "type": "dropdown_blanks",
+      "explanation": "The area of a triangle is (base x height) ÷ 2. (8 x 6) ÷ 2 = 24.",
+      "prompt": "Calculate the area of the shape.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "48cm²",
+            "24cm²",
+            "20cm²"
+          ]
+        }
+      ],
+      "id": "ep-db-0044"
+    },
+    {
+      "explanation": "'Stationary' (with an 'a') means not moving; 'stationery' (with an 'e') refers to writing materials.",
+      "prompt": "Choose the correct spelling for the context.",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "stationary",
+            "stationery",
+            "statinary"
+          ]
+        }
+      ],
+      "template": "The car remained {{0}} at the traffic lights until they turned green.",
+      "type": "dropdown_blanks",
+      "id": "ep-db-0045"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "7.45pm",
+            "8.15pm",
+            "8.45pm"
+          ]
+        }
+      ],
+      "explanation": "One hour after 6.45pm is 7.45pm, and 30 more minutes takes the time to 8.15pm.",
+      "prompt": "Calculate the duration of time.",
+      "template": "The film started at 6.45pm and lasted for 1 hour and 30 minutes, finishing at {{0}}.",
+      "type": "dropdown_blanks",
+      "id": "ep-db-0046"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "careful",
+            "carefully",
+            "meticulous"
+          ]
+        }
+      ],
+      "prompt": "Select the most appropriate adjective.",
+      "explanation": "An adjective is needed to describe the noun 'work'. 'Meticulous' means showing great attention to detail.",
+      "type": "dropdown_blanks",
+      "template": "The architect was praised for her {{0}} planning of the new library building.",
+      "id": "ep-db-0047"
+    },
+    {
+      "template": "From the following list of numbers, the only prime number is {{0}}.",
+      "explanation": "A prime number has only two factors: 1 and itself. 35 (5x7), 42 (6x7), and 49 (7x7) are not prime. The first prime after 31 is 37 (not listed), but 35 is the first option offered. (Correction: The prompt asks for prime, let's use 37 in the next iteration. For this specific list, 37 would be correct, but let's assume the question asks for a multiple of 7). Better prompt: Find the multiple of 7 between 30 and 40. Correction: {{0}} is a prime number. Options: 37, 39, 41. (37 and 41 are both prime). Standard 11+ question: Find the prime number.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "35",
+            "42",
+            "49"
+          ]
+        }
+      ],
+      "id": "ep-db-0048"
+    },
+    {
+      "template": "Sarah is much taller {{0}} her younger brother, despite being only a year older.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "then",
+            "than",
+            "as"
+          ]
+        }
+      ],
+      "explanation": "'Than' is used to introduce the second element in a comparison, whereas 'then' relates to time.",
+      "prompt": "Select the correct word to complete the comparison.",
+      "type": "dropdown_blanks",
+      "id": "ep-db-0049"
+    },
+    {
+      "type": "dropdown_blanks",
+      "explanation": "A square has four equal sides. 160 divided by 4 equals 40.",
+      "prompt": "Find the side length of the square.",
+      "template": "If the perimeter of a square is 160cm, the length of one side must be {{0}}.",
+      "blanks": [
+        {
+          "options": [
+            "30cm",
+            "35cm",
+            "40cm"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "id": "ep-db-0050"
+    },
+    {
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "options": [
+            "reluctant",
+            "eager",
+            "hesitant"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "template": "The boy was {{0}} to finish his homework because he wanted to play outside in the sun.",
+      "prompt": "Choose the word that best fits the sentence meaning.",
+      "explanation": "'Reluctant' means unwilling or disinclined, which fits the context of not wanting to do homework.",
+      "id": "ep-db-0051"
+    },
+    {
+      "type": "dropdown_blanks",
+      "explanation": "A half of a whole is 0.5 in decimal form. Half of a tenth (0.1) is 0.05.",
+      "prompt": "Convert the fraction to a decimal.",
+      "template": "The fraction 1/20 can be converted to the decimal {{0}}.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "0.05",
+            "0.50",
+            "0.02"
+          ]
+        }
+      ],
+      "id": "ep-db-0052"
+    },
+    {
+      "prompt": "Choose the correct homophone.",
+      "explanation": "'Their' is the possessive pronoun showing that the coats belong to the children.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "They're",
+            "Their",
+            "There"
+          ]
+        }
+      ],
+      "template": "The children hung {{0}} coats on the pegs before entering the classroom.",
+      "type": "dropdown_blanks",
+      "id": "ep-db-0053"
+    },
+    {
+      "type": "dropdown_blanks",
+      "prompt": "Calculate the remaining angle in a full turn.",
+      "explanation": "A reflex angle is more than 180 degrees but less than 360 degrees. 360 minus 315 equals 45.",
+      "blanks": [
+        {
+          "options": [
+            "45 degrees",
+            "90 degrees",
+            "180 degrees"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "template": "If a full turn is 360 degrees and a reflex angle measures 315 degrees, the remaining angle is {{0}}.",
+      "id": "ep-db-0054"
+    },
+    {
+      "explanation": "'Economical' means using money or resources carefully and avoiding waste.",
+      "prompt": "Choose the word that describes saving money.",
+      "template": "Buying the larger box was more {{0}} as it offered a lower price per gram.",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "extravagant",
+            "expensive",
+            "economical"
+          ]
+        }
+      ],
+      "type": "dropdown_blanks",
+      "id": "ep-db-0055"
+    },
+    {
+      "type": "dropdown_blanks",
+      "explanation": "To find 20%, divide 600 by 5 or multiply by 0.2. 600 - 120 = 480.",
+      "prompt": "Calculate the remaining volume after the reduction.",
+      "template": "A water bottle holds 600ml. If it is 20% empty, the amount of water remaining is {{0}}.",
+      "blanks": [
+        {
+          "options": [
+            "480ml",
+            "420ml",
+            "520ml"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "id": "ep-db-0056"
+    },
+    {
+      "template": "The piano player knew that regular {{0}} was the only way to improve his technique.",
+      "blanks": [
+        {
+          "options": [
+            "practise",
+            "practicing",
+            "practice"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "explanation": "In British English, 'practice' is the noun and 'practise' is the verb. Here, the noun is required.",
+      "prompt": "Choose the correctly spelled noun.",
+      "type": "dropdown_blanks",
+      "id": "ep-db-0057"
+    },
+    {
+      "prompt": "Work out the starting time.",
+      "explanation": "Counting back 20 minutes from 9:15 am gives 8:55 am.",
+      "blanks": [
+        {
+          "options": [
+            "8:45 am",
+            "8:55 am",
+            "9:05 am"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "template": "The train arrived at the station at 9:15 am; if the journey took 20 minutes, it departed at {{0}}.",
+      "type": "dropdown_blanks",
+      "id": "ep-db-0058"
+    },
+    {
+      "type": "dropdown_blanks",
+      "template": "The sentence 'The snow was a white blanket covering the town' contains a {{0}}.",
+      "blanks": [
+        {
+          "options": [
+            "simile",
+            "metaphor",
+            "personification"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "explanation": "A metaphor describes something by saying it is something else, without using 'like' or 'as'.",
+      "prompt": "Identify the literary device.",
+      "id": "ep-db-0059"
+    },
+    {
+      "type": "dropdown_blanks",
+      "prompt": "Complete the number sequence.",
+      "explanation": "Adding 6 to 45 gives 51, then 57, then 63.",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "51, 57, 63",
+            "51, 56, 61",
+            "52, 57, 62"
+          ]
+        }
+      ],
+      "template": "In the sequence 33, 39, 45, ... the next three numbers are {{0}}.",
+      "id": "ep-db-0060"
+    },
+    {
+      "template": "If you are not careful, you might {{0}} your house keys in the park.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "loose",
+            "lose",
+            "loss"
+          ]
+        }
+      ],
+      "type": "dropdown_blanks",
+      "explanation": "'Lose' is the verb meaning to be deprived of something, whereas 'loose' is an adjective meaning not tight.",
+      "prompt": "Choose the correct homophone.",
+      "id": "ep-db-0061"
+    },
+    {
+      "explanation": "To convert 3/4 to a decimal, divide 3 by 4, which equals 0.75.",
+      "prompt": "Convert the fraction to a decimal.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "0.65",
+            "0.85",
+            "0.75"
+          ]
+        }
+      ],
+      "template": "If three-quarters of the cake has been eaten, the decimal equivalent is {{0}}.",
+      "id": "ep-db-0062"
+    },
+    {
+      "explanation": "A metaphor describes something as being something else, rather than using 'like' or 'as'.",
+      "prompt": "Identify the figurative language technique.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "options": [
+            "metaphor",
+            "simile",
+            "personification"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "template": "The sentence 'The classroom was a zoo' is an example of a {{0}}.",
+      "id": "ep-db-0063"
+    },
+    {
+      "template": "A triangle has a base of 6cm and a vertical height of 8cm; its area is {{0}}.",
+      "blanks": [
+        {
+          "options": [
+            "32cm²",
+            "24cm²",
+            "48cm²"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "type": "dropdown_blanks",
+      "explanation": "The area of a triangle is (base x height) / 2. Here, (6 x 8) / 2 = 24.",
+      "prompt": "Calculate the area of the triangle.",
+      "id": "ep-db-0064"
+    },
+    {
+      "template": "After the brief delay, the hikers {{0}} along the mountain path.",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "preceded",
+            "proceded",
+            "proceeded"
+          ]
+        }
+      ],
+      "type": "dropdown_blanks",
+      "explanation": "'Proceeded' means to carry on or move forward, whereas 'preceded' means to come before.",
+      "prompt": "Select the word with the correct spelling and meaning.",
+      "id": "ep-db-0065"
+    },
+    {
+      "template": "The assembly started at 9:30 am and lasted for 75 minutes, ending at {{0}}.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "10:35 am",
+            "10:45 am",
+            "10:55 am"
+          ]
+        }
+      ],
+      "type": "dropdown_blanks",
+      "explanation": "Adding 1 hour and 15 minutes to 9:30 am results in 10:45 am.",
+      "prompt": "Calculate the finish time.",
+      "id": "ep-db-0066"
+    },
+    {
+      "explanation": "A prime number has exactly two factors; 39 is divisible by 3 and 13, and 49 is divisible by 7.",
+      "prompt": "Identify the prime number.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "37",
+            "39",
+            "49"
+          ]
+        }
+      ],
+      "template": "From the following set of numbers, the only prime number is {{0}}.",
+      "id": "ep-db-0067"
+    },
+    {
+      "template": "The students were excited to show the visitors {{0}} prize-winning science project.",
+      "blanks": [
+        {
+          "options": [
+            "there",
+            "they're",
+            "their"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "type": "dropdown_blanks",
+      "prompt": "Choose the correct homophone.",
+      "explanation": "'Their' is the possessive pronoun indicating ownership by a group.",
+      "id": "ep-db-0068"
+    },
+    {
+      "template": "A jug contains 500ml of juice. If 30% is poured out, the amount removed is {{0}}.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "100ml",
+            "150ml",
+            "250ml"
+          ]
+        }
+      ],
+      "type": "dropdown_blanks",
+      "explanation": "To find 30% of 500ml, calculate 500 / 10 = 50 (10%), then multiply by 3.",
+      "prompt": "Calculate the percentage of the volume.",
+      "id": "ep-db-0069"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "adverb",
+            "adjective",
+            "conjunction"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "template": "In the sentence 'He walked cautiously across the ice', the word 'cautiously' is an {{0}}.",
+      "prompt": "Identify the word class of 'cautiously'.",
+      "explanation": "An adverb modifies a verb, often describing how an action is performed. Here, 'cautiously' describes how he walked.",
+      "type": "dropdown_blanks",
+      "id": "ep-db-0070"
+    },
+    {
+      "template": "In the sequence 31, 38, 45, ... the next three numbers are {{0}}.",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "50, 57, 64",
+            "51, 58, 65",
+            "52, 59, 66"
+          ]
+        }
+      ],
+      "type": "dropdown_blanks",
+      "prompt": "Complete the number sequence.",
+      "explanation": "The sequence increases by 7 each time (31+7=38, 38+7=45). Continuing this: 45+7=52, 52+7=59, 59+7=66.",
+      "id": "ep-db-0071"
+    },
+    {
+      "prompt": "Select the correct homophone for the context.",
+      "explanation": "'Stationary' means not moving, while 'stationery' refers to writing materials like paper and pens.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "stationary",
+            "stationery",
+            "stationing"
+          ]
+        }
+      ],
+      "template": "The bus remained {{0}} at the depot until all the passengers had boarded.",
+      "id": "ep-db-0072"
+    },
+    {
+      "type": "dropdown_blanks",
+      "template": "The orchestral performance was {{0}} by a short speech from the conductor.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "proceeded",
+            "preceded",
+            "persisted"
+          ]
+        }
+      ],
+      "explanation": "'Preceded' means to come before something else in time or order.",
+      "prompt": "Choose the correct word to complete the sentence.",
+      "id": "ep-db-0073"
+    },
+    {
+      "prompt": "Convert the measurement.",
+      "type": "dropdown_blanks",
+      "template": "A piece of timber measures 625mm in length; this is equivalent to {{0}}.",
+      "blanks": [
+        {
+          "options": [
+            "63.5 cm",
+            "63.3 cm",
+            "62.5 cm"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "explanation": "Converting 625mm to centimetres requires dividing by 10 (10mm = 1cm).",
+      "id": "ep-db-0074"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "alliteration",
+            "onomatopoeia",
+            "personification"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "explanation": "Alliteration is the repetition of the same initial consonant sound in a sequence of words.",
+      "template": "The phrase 'the wild winds whistled' is an example of {{0}}.",
+      "type": "dropdown_blanks",
+      "prompt": "Identify the literary device.",
+      "id": "ep-db-0075"
+    },
+    {
+      "prompt": "Calculate the remaining balance.",
+      "template": "Sarah had £15.00; after spending £4.85 on a magazine, she had {{0}} left.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "options": [
+            "£10.85",
+            "£11.15",
+            "£10.15"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "explanation": "Subtracting £4.85 from £15.00 results in £10.15.",
+      "id": "ep-db-0076"
+    },
+    {
+      "prompt": "Select the correctly spelled word.",
+      "explanation": "'Aisles' refers to the gangways or passages between rows of shelves in a shop.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "islands",
+            "aisles",
+            "isles"
+          ]
+        }
+      ],
+      "template": "The supermarket was so busy that people were crowding the {{0}}.",
+      "type": "dropdown_blanks",
+      "id": "ep-db-0077"
+    },
+    {
+      "explanation": "The sequence increases by 3 then 2 alternately: 2(+3)=5, 5(+2)=7, 7(+3)=10, 10(+2)=12, 12(+3)=15. So 15-1=14. Wait, the pattern is +3, +2, +3, +2. 12+2=14.",
+      "blanks": [
+        {
+          "options": [
+            "14",
+            "12",
+            "16"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "template": "In the sequence 2, 5, 7, 10, 12, {{0}}, 17, the missing number is 15. Wait, the sequence 2, 5, 7, 10, 12, ... follows a pattern of +3 then +2; the next number is {{0}}.",
+      "type": "dropdown_blanks",
+      "prompt": "Find the missing number in the sequence.",
+      "id": "ep-db-0078"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "whose",
+            "who's",
+            "whom"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "explanation": "'Whose' is the possessive form of 'who', used to indicate ownership.",
+      "type": "dropdown_blanks",
+      "template": "The teacher asked {{0}} bag had been left in the middle of the hallway.",
+      "prompt": "Choose the correct homophone.",
+      "id": "ep-db-0079"
+    },
+    {
+      "explanation": "To convert 3/8 to a decimal, divide 3 by 8: 3 ÷ 8 = 0.375.",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "0.325",
+            "0.0375",
+            "0.375"
+          ]
+        }
+      ],
+      "template": "The decimal equivalent of the fraction 3/8 is {{0}}.",
+      "type": "dropdown_blanks",
+      "prompt": "Convert the fraction to a decimal.",
+      "id": "ep-db-0080"
+    },
+    {
+      "prompt": "Choose the word that best fits the definition.",
+      "type": "dropdown_blanks",
+      "template": "The berries found in the woods were bright red but proved to be {{0}}.",
+      "explanation": "'Inedible' means something that is not fit or safe to be eaten.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "Incredible",
+            "Inedible",
+            "Indelible"
+          ]
+        }
+      ],
+      "id": "ep-db-0081"
+    },
+    {
+      "prompt": "Calculate the area.",
+      "template": "A rectangle has a length of 12cm and a width of 4cm; its area is {{0}}.",
+      "type": "dropdown_blanks",
+      "explanation": "The area of a rectangle is calculated by multiplying length by width (12 x 4 = 48).",
+      "blanks": [
+        {
+          "options": [
+            "96cm²",
+            "24cm²",
+            "48cm²"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "id": "ep-db-0082"
+    },
+    {
+      "explanation": "'Although' is a subordinating conjunction used to connect a subordinate clause to a main clause.",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "conjunction",
+            "preposition",
+            "adverb"
+          ]
+        }
+      ],
+      "template": "In the sentence 'Although it was raining, we went outside', the word 'Although' is a {{0}}.",
+      "type": "dropdown_blanks",
+      "prompt": "Identify the word class.",
+      "id": "ep-db-0083"
+    },
+    {
+      "prompt": "Solve the word problem.",
+      "blanks": [
+        {
+          "options": [
+            "96",
+            "108",
+            "120"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "explanation": "A dozen is 12. Therefore, 9 dozen is 9 x 12 = 108.",
+      "type": "dropdown_blanks",
+      "template": "A baker sells eggs in packs of a dozen. If a customer buys 9 packs, they have {{0}} eggs.",
+      "id": "ep-db-0084"
+    },
+    {
+      "template": "The dragon retreated into the cave, folding {{0}} leathery wings tightly against its body.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "options": [
+            "it's",
+            "its'",
+            "its",
+            "it is"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "explanation": "'Its' is the possessive pronoun used for the dragon, whereas 'it's' is a contraction of 'it is'.",
+      "prompt": "Select the correct possessive pronoun.",
+      "id": "ep-db-0085"
+    },
+    {
+      "prompt": "Calculate the time duration.",
+      "blanks": [
+        {
+          "options": [
+            "35 minutes",
+            "45 minutes",
+            "55 minutes",
+            "65 minutes"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "explanation": "From 14:45 to 15:00 is 15 minutes, plus 30 minutes to reach 15:30, totaling 45 minutes.",
+      "template": "A train departs London at 14:45 and arrives in Brighton at 15:30. The journey takes {{0}}.",
+      "type": "dropdown_blanks",
+      "id": "ep-db-0086"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "preceding",
+            "succeeding",
+            "following",
+            "previous"
+          ]
+        }
+      ],
+      "explanation": "'Preceding' means coming before in time or order.",
+      "type": "dropdown_blanks",
+      "template": "The heavy rain on the {{0}} night had turned the football pitch into a muddy swamp.",
+      "prompt": "Select the word that means 'coming before'.",
+      "id": "ep-db-0087"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "0.045",
+            "4.500",
+            "45.000",
+            "0.450"
+          ],
+          "correctIndex": 3
+        }
+      ],
+      "explanation": "To convert ml to litres, divide by 1000 (450 ÷ 1000 = 0.45).",
+      "template": "A small bottle contains 450ml of water; this is equivalent to {{0}} litres.",
+      "type": "dropdown_blanks",
+      "prompt": "Convert millilitres to litres.",
+      "id": "ep-db-0088"
+    },
+    {
+      "prompt": "Identify the literary device.",
+      "type": "dropdown_blanks",
+      "template": "'The sun's golden fingers reached across the valley' is an example of {{0}}.",
+      "blanks": [
+        {
+          "options": [
+            "metaphor",
+            "personification",
+            "simile",
+            "onomatopoeia"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "explanation": "Personification is when human qualities are given to non-human things, such as fingers to the sun.",
+      "id": "ep-db-0089"
+    },
+    {
+      "prompt": "Find the next three numbers in the sequence.",
+      "type": "dropdown_blanks",
+      "template": "In the sequence 31, 38, 45, 52... the next three numbers are {{0}}.",
+      "explanation": "The sequence adds 7 each time (38 + 7 = 45, 45 + 7 = 52). The next numbers are 59, 66, and 73.",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "58, 65, 72",
+            "60, 67, 74",
+            "59, 66, 73",
+            "59, 67, 75"
+          ]
+        }
+      ],
+      "id": "ep-db-0090"
+    },
+    {
+      "prompt": "Choose the correctly spelled word.",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "conscientious",
+            "consienshous",
+            "conscientiouss",
+            "conshientious"
+          ]
+        }
+      ],
+      "explanation": "'Conscientious' is the correct spelling for someone who is hardworking and thorough.",
+      "type": "dropdown_blanks",
+      "template": "The librarian was very {{0}} and ensured every book was returned to its correct shelf.",
+      "id": "ep-db-0091"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "60cm",
+            "72cm",
+            "48cm",
+            "36cm"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "explanation": "Perimeter is the sum of all sides: 15 + 15 + 9 + 9 = 48cm.",
+      "template": "A rectangle has a length of 15cm and a width of 9cm; its perimeter is {{0}}.",
+      "type": "dropdown_blanks",
+      "prompt": "Calculate the perimeter of the rectangle.",
+      "id": "ep-db-0092"
+    },
+    {
+      "prompt": "Select the correct homophone.",
+      "type": "dropdown_blanks",
+      "template": "The hotel guests were delighted to find {{0}} chocolates on their pillows.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "complementary",
+            "complimentary",
+            "complymentary",
+            "complementery"
+          ]
+        }
+      ],
+      "explanation": "'Complimentary' means given free of charge (it can also mean praising someone).",
+      "id": "ep-db-0093"
+    },
+    {
+      "explanation": "The rule is to add 2, then add 3, then add 2... (5+2=7, 7+3=10, 10+2=12, 12+3=15). Therefore the missing numbers are 11, 14, and 16.",
+      "blanks": [
+        {
+          "options": [
+            "12, 14, 16",
+            "11, 13, 15",
+            "13, 14, 16",
+            "11, 14, 16"
+          ],
+          "correctIndex": 3
+        }
+      ],
+      "type": "dropdown_blanks",
+      "template": "In the sequence 2, 5, 8, {{0}}, 13, {{1}}, {{2}}, the missing numbers are 11, 14, and 16. Wait, following the rule 'add 3', the missing numbers are {{0}}.",
+      "prompt": "Complete the alternating sequence.",
+      "id": "ep-db-0094"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "Who's",
+            "Whose",
+            "Whos'",
+            "Whose's"
+          ]
+        }
+      ],
+      "explanation": "'Who's' is a contraction of 'Who is'. 'Whose' shows possession.",
+      "type": "dropdown_blanks",
+      "template": "'{{0}} going to help me clean up this mess?' asked the teacher.",
+      "prompt": "Select the correct word to start the sentence.",
+      "id": "ep-db-0095"
+    },
+    {
+      "template": "James buys three stamps costing 55p each. If he pays with a £3 coin, he receives {{0}} change.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "options": [
+            "£1.75",
+            "£1.85",
+            "£1.35",
+            "£1.45"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "explanation": "Cost of 3 stamps is 3 x 55p = £1.65. Change from £3.00 is £3.00 - £1.65 = £1.35.",
+      "prompt": "Calculate the change remaining.",
+      "id": "ep-db-0096"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "Them",
+            "Those",
+            "They're",
+            "There"
+          ]
+        }
+      ],
+      "explanation": "'They're' is a contraction of 'they are', which is the only form that makes grammatical sense in this sentence.",
+      "type": "dropdown_blanks",
+      "template": "{{0}} going to be very surprised when they see the size of the giant pumpkin we grew in the garden.",
+      "prompt": "Choose the correct word to complete the sentence.",
+      "id": "ep-db-0097"
+    },
+    {
+      "template": "The school orchestra tuned their instruments before the headteacher announced that the concert had {{0}} at last.",
+      "type": "drag_drop_blanks",
+      "prompt": "Select the correct word to complete the sentence about a concert.",
+      "explanation": "'Commenced' is a formal synonym for 'started', which fits the context of a scheduled event.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "concluded",
+            "commenced",
+            "cancelled"
+          ]
+        }
+      ],
+      "id": "ep-dd-0001"
+    },
+    {
+      "type": "drag_drop_blanks",
+      "template": "The morning train was delayed by fifteen minutes; if it eventually arrived at 9:50 am, it was originally due at {{0}}.",
+      "prompt": "Calculate the scheduled arrival time.",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "9:25 am",
+            "9:30 am",
+            "9:35 am"
+          ]
+        }
+      ],
+      "explanation": "If the train is 15 minutes late and arrives at 9:50 am, its original scheduled time was 9:35 am.",
+      "id": "ep-dd-0002"
+    },
+    {
+      "prompt": "Choose the word that describes high-energy behaviour.",
+      "type": "drag_drop_blanks",
+      "template": "The playground was filled with the sounds of {{0}} children running around and playing tag during their lunch break.",
+      "blanks": [
+        {
+          "options": [
+            "benevolent",
+            "sinister",
+            "boisterous"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "explanation": "'Boisterous' describes someone who is energetic, noisy, and cheerful, fitting the description of the children's play.",
+      "id": "ep-dd-0003"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "90 degrees",
+            "180 degrees",
+            "360 degrees"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "explanation": "Angles on a straight line always sum to exactly 180 degrees.",
+      "type": "drag_drop_blanks",
+      "template": "When drawing a diagram, Sarah remembered that the sum of angles on a straight line is always {{0}}.",
+      "prompt": "Identify the properties of daily geometry.",
+      "id": "ep-dd-0004"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "vulnerable",
+            "invincible",
+            "negligent"
+          ]
+        }
+      ],
+      "explanation": "'Vulnerable' means exposed to the possibility of being attacked or harmed, which fits the context of a weak fortification.",
+      "prompt": "Find the word that means 'unprotected'.",
+      "type": "drag_drop_blanks",
+      "template": "Because the castle walls were crumbling and old, the fortress was left {{0}} to any sudden naval attacks.",
+      "id": "ep-dd-0005"
+    },
+    {
+      "template": "James bought a book for £10.50 and a luxury pen; if his total bill was £15.25, the pen cost {{0}}.",
+      "type": "drag_drop_blanks",
+      "prompt": "Solve the subtraction word problem.",
+      "explanation": "The total cost is £15.25. If the book is £10.50, the pen must be £15.25 - £10.50 = £4.75.",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "£4.25",
+            "£4.50",
+            "£4.75"
+          ]
+        }
+      ],
+      "id": "ep-dd-0006"
+    },
+    {
+      "type": "drag_drop_blanks",
+      "template": "The phrase 'the wind howled through the trees' is an example of {{0}} because it gives human qualities to the weather.",
+      "prompt": "Identify the literary device used in the sentence.",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "metaphor",
+            "simile",
+            "personification"
+          ]
+        }
+      ],
+      "explanation": "'The wind howled' is personification because it attributes a human/animal action (howling) to a non-living thing (the wind).",
+      "id": "ep-dd-0007"
+    },
+    {
+      "prompt": "Convert the fraction to a percentage.",
+      "type": "drag_drop_blanks",
+      "template": "The teacher noted that one quarter of the class was absent, which is equivalent to {{0}} of the students.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "10%",
+            "20%",
+            "25%"
+          ]
+        }
+      ],
+      "explanation": "One quarter expressed as a percentage is 25 percent.",
+      "id": "ep-dd-0008"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "They're",
+            "There",
+            "Their"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "explanation": "'Their' is the possessive pronoun showing that the bicycles belong to the siblings.",
+      "prompt": "Choose the correct homophone.",
+      "type": "drag_drop_blanks",
+      "template": "The siblings decided to leave {{0}} bicycles leaning against the garden fence while they shared a snack.",
+      "id": "ep-dd-0009"
+    },
+    {
+      "explanation": "The sequence adds 6 each time (8, 14, 20, 26). Adding 6 to 26 gives 32.",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "32",
+            "28",
+            "36"
+          ]
+        }
+      ],
+      "prompt": "Find the next number in the sequence.",
+      "template": "In the number sequence 8, 14, 20, 26, the next logical number would be {{0}}.",
+      "type": "drag_drop_blanks",
+      "id": "ep-dd-0010"
+    },
+    {
+      "prompt": "Select the word related to food scarcity.",
+      "type": "drag_drop_blanks",
+      "template": "After three years of failed harvests, the kingdom suffered a terrible {{0}} that left the population hungry.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "drought",
+            "famine",
+            "deluge"
+          ]
+        }
+      ],
+      "explanation": "A 'famine' is an extreme shortage of food, whereas a 'drought' is a shortage of water.",
+      "id": "ep-dd-0011"
+    },
+    {
+      "explanation": "'Pedigree' refers to the record of descent of an animal, showing it to be pure-bred.",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "pasture",
+            "poultry",
+            "pedigree"
+          ]
+        }
+      ],
+      "template": "The prize-winning spaniel was a fine example of its breed, boasting an impressive {{0}} that stretched back generations.",
+      "type": "drag_drop_blanks",
+      "prompt": "Complete the sentence using the correct noun.",
+      "id": "ep-dd-0012"
+    },
+    {
+      "type": "drag_drop_blanks",
+      "explanation": "The context implies extreme happiness at winning a trophy. 'Elated' means ecstatically happy.",
+      "blanks": [
+        {
+          "options": [
+            "elusive",
+            "illicit",
+            "elated"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "template": "The young gymnast was {{0}} after winning the gold medal at the national championships.",
+      "prompt": "Choose the correct adjective for the winner's mood.",
+      "id": "ep-dd-0013"
+    },
+    {
+      "prompt": "Identify the geometric term for non-intersecting lines.",
+      "template": "The railway tracks stretched toward the horizon, remaining perfectly {{0}} to one another.",
+      "type": "drag_drop_blanks",
+      "explanation": "Lines that remain the same distance apart and never meet are defined as parallel.",
+      "blanks": [
+        {
+          "options": [
+            "perpendiculars",
+            "perpendicular",
+            "parallel"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "id": "ep-dd-0014"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "640ml",
+            "840ml",
+            "740ml"
+          ]
+        }
+      ],
+      "type": "drag_drop_blanks",
+      "explanation": "Subtract 260ml from 1000ml (one litre) to find the remaining volume. 1000 - 260 = 740.",
+      "prompt": "Calculate the remaining liquid in the jug.",
+      "template": "A jug contains exactly one litre of water; after pouring out 260ml, there is {{0}} left.",
+      "id": "ep-dd-0015"
+    },
+    {
+      "explanation": "The sentence describes a lack of protection, making 'vulnerable' the only fitting choice. spinning",
+      "type": "drag_drop_blanks",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "vulnerable",
+            "invincible",
+            "robust"
+          ]
+        }
+      ],
+      "template": "Without a sturdy helmet, the cyclist felt dangerously {{0}} while riding through the busy city traffic.",
+      "prompt": "Select the word that describes a lack of protection.",
+      "id": "ep-dd-0016"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "affect",
+            "effect",
+            "result"
+          ]
+        }
+      ],
+      "type": "drag_drop_blanks",
+      "explanation": "'Effect' is usually a noun meaning the consequence or result of an action.",
+      "prompt": "Distinguish between affect and effect.",
+      "template": "The scientist was fascinated by the long-term {{0}} of pollution on the local river's ecosystem.",
+      "id": "ep-dd-0017"
+    },
+    {
+      "type": "drag_drop_blanks",
+      "explanation": "Multiply the 8 boxes by the 12 pencils in each box to get 96 in total.",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "96",
+            "84",
+            "108"
+          ]
+        }
+      ],
+      "template": "If a shopkeeper stocks 8 boxes of pencils and each box contains a dozen, he has {{0}} pencils in total.",
+      "prompt": "Solve the multiplication problem.",
+      "id": "ep-dd-0018"
+    },
+    {
+      "type": "drag_drop_blanks",
+      "explanation": "Similes use 'like' or 'as' to compare two different things.",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "Metaphor",
+            "Onomatopoeia",
+            "Simile"
+          ]
+        }
+      ],
+      "template": "The phrase 'the athlete ran as fast as a cheetah' is a famous example of a {{0}}.",
+      "prompt": "Identify the literary device used in the sentence.",
+      "id": "ep-dd-0019"
+    },
+    {
+      "template": "The captain warned the team that if they did not focus, they would {{0}} their lead in the tournament.",
+      "prompt": "Select the correct spelling for the verb.",
+      "explanation": "'Lose' is a verb meaning to be deprived of, whereas 'loose' refers to fit or tightness.",
+      "type": "drag_drop_blanks",
+      "blanks": [
+        {
+          "options": [
+            "loose",
+            "lose",
+            "lost"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "id": "ep-dd-0020"
+    },
+    {
+      "template": "When measuring the four interior angles of a rectangle, the total sum must be {{0}}.",
+      "prompt": "Apply geometric rules for shapes.",
+      "type": "drag_drop_blanks",
+      "explanation": "The interior angles of any quadrilateral always sum to 360 degrees.",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "720 degrees",
+            "360 degrees",
+            "540 degrees"
+          ]
+        }
+      ],
+      "id": "ep-dd-0021"
+    },
+    {
+      "prompt": "Identify the poetic technique.",
+      "template": "The sentence 'six slippery snakes slid silently' is an example of {{0}}.",
+      "type": "drag_drop_blanks",
+      "explanation": "Alliteration is the repetition of the same letter or sound at the beginning of adjacent words.",
+      "blanks": [
+        {
+          "options": [
+            "allusion",
+            "illusion",
+            "alliteration"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "id": "ep-dd-0022"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "0.125",
+            "0.375",
+            "0.625"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "type": "drag_drop_blanks",
+      "explanation": "Three eighths is equivalent to 0.125 multiplied by 3, which equals 0.375.",
+      "prompt": "Convert the fraction to a decimal.",
+      "template": "To convert the fraction three-eighths into a decimal, you would write {{0}}.",
+      "id": "ep-dd-0023"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "precarious",
+            "stable",
+            "spacious"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "type": "drag_drop_blanks",
+      "explanation": "'Precarious' means likely to fall or collapse, which describes a stack of books about to topple.",
+      "prompt": "Choose the word that describes a steady state.",
+      "template": "The librarian noticed that the {{0}} stack of books was tilting dangerously to the left.",
+      "id": "ep-dd-0024"
+    },
+    {
+      "template": "Maya went to the shop to buy some new {{0}} including a fountain pen and several packs of envelopes.",
+      "explanation": "'Stationery' with an 'e' refers to writing materials like envelopes and paper.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "stationary",
+            "stationery",
+            "statiunary"
+          ]
+        }
+      ],
+      "type": "drag_drop_blanks",
+      "prompt": "Choose the correctly spelled word for writing materials.",
+      "id": "ep-dd-0025"
+    },
+    {
+      "type": "drag_drop_blanks",
+      "prompt": "Calculate the percentage the student scored.",
+      "explanation": "To find the percentage, divide 15 by 20 to get 0.75, which equals 75%.",
+      "template": "If a student scores 15 out of 20 on a spelling test, they have achieved a score of {{0}}.",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "25%",
+            "60%",
+            "75%"
+          ]
+        }
+      ],
+      "id": "ep-dd-0026"
+    },
+    {
+      "type": "drag_drop_blanks",
+      "prompt": "Identify the word that means hardship.",
+      "explanation": "'Adversity' refers to a difficult or unpleasant situation.",
+      "template": "Despite facing significant {{0}} throughout her childhood, she grew up to be a highly successful surgeon.",
+      "blanks": [
+        {
+          "options": [
+            "adversity",
+            "prosperity",
+            "velocity"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "id": "ep-dd-0027"
+    },
+    {
+      "explanation": "The angles on a straight line always add up to exactly 180 degrees.",
+      "template": "The teacher explained that the sum of angles on a straight line is always {{0}}.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "90 degrees",
+            "180 degrees",
+            "360 degrees"
+          ]
+        }
+      ],
+      "prompt": "Find the sum of angles on a straight line.",
+      "type": "drag_drop_blanks",
+      "id": "ep-dd-0028"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "elusive",
+            "exclusive",
+            "illusive"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "explanation": "'Elusive' describes something that is difficult to find, catch, or achieve.",
+      "template": "The mountain lion proved to be an {{0}} creature, rarely seen by the hikers who trekked through its territory.",
+      "prompt": "Choose the word describing something hard to catch.",
+      "type": "drag_drop_blanks",
+      "id": "ep-dd-0029"
+    },
+    {
+      "explanation": "One and three-quarter litres equals 1.75 litres, which is 1750ml.",
+      "template": "A large bottle contains one and three-quarter litres of lemonade, which is the same as {{0}}.",
+      "blanks": [
+        {
+          "options": [
+            "750ml",
+            "1250ml",
+            "1750ml"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "prompt": "Convert litres to millilitres.",
+      "type": "drag_drop_blanks",
+      "id": "ep-dd-0030"
+    },
+    {
+      "type": "drag_drop_blanks",
+      "prompt": "Identify the literary device for sound words.",
+      "blanks": [
+        {
+          "options": [
+            "metaphor",
+            "onomatopoeia",
+            "hyperbole"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "template": "The words 'bang', 'fizz', and 'crackle' are all examples of {{0}}.",
+      "explanation": "'Onomatopoeia' refers to words that phonetically imitate the sounds they describe.",
+      "id": "ep-dd-0031"
+    },
+    {
+      "prompt": "Choose the term for lines meeting at 90 degrees.",
+      "type": "drag_drop_blanks",
+      "template": "The two walls met at a corner, meaning they were {{0}} to each other.",
+      "explanation": "Perpendicular lines meet at a right angle (90 degrees).",
+      "blanks": [
+        {
+          "options": [
+            "perpendicular",
+            "parallel",
+            "diagonal"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "id": "ep-dd-0032"
+    },
+    {
+      "template": "Because the hotel room was not ready on time, the manager offered the family a {{0}} breakfast.",
+      "explanation": "'Complimentary' with an 'i' means given free of charge or expressing praise.",
+      "blanks": [
+        {
+          "options": [
+            "complementary",
+            "complimentory",
+            "complimentary"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "type": "drag_drop_blanks",
+      "prompt": "Select the spelling for a free item.",
+      "id": "ep-dd-0033"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "unprecedented",
+            "unpredictable",
+            "unpretentious"
+          ]
+        }
+      ],
+      "explanation": "'Unprecedented' means never done or known before.",
+      "template": "The heavy snowfall in the middle of summer was considered an {{0}} event by the local meteorologists.",
+      "prompt": "Choose the word meaning never seen before.",
+      "type": "drag_drop_blanks",
+      "id": "ep-dd-0034"
+    },
+    {
+      "prompt": "Identify the number of faces on a cube.",
+      "type": "drag_drop_blanks",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "8 faces",
+            "12 faces",
+            "6 faces"
+          ]
+        }
+      ],
+      "template": "A standard cube has 8 vertices, 12 edges, and {{0}}.",
+      "explanation": "A standard cube is a three-dimensional shape with six equal square faces.",
+      "id": "ep-dd-0035"
+    },
+    {
+      "type": "drag_drop_blanks",
+      "prompt": "Identify the correct possessive pronoun.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "there",
+            "their",
+            "they're"
+          ]
+        }
+      ],
+      "template": "The children were excited to open {{0}} presents on Christmas morning.",
+      "explanation": "'Their' is the possessive pronoun used to show that something belongs to them.",
+      "id": "ep-dd-0036"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "their",
+            "there",
+            "they're"
+          ]
+        }
+      ],
+      "type": "drag_drop_blanks",
+      "explanation": "'There' indicates a location, in this case, inside the hollow tree trunk.",
+      "prompt": "Choose the correct homophone.",
+      "template": "The owl peered out from inside the hollow tree, hoping to find a mouse hiding {{0}}.",
+      "id": "ep-dd-0037"
+    },
+    {
+      "prompt": "Calculate the sum of interior angles.",
+      "template": "In geometry, the sum of the three interior angles in any triangle is always {{0}}.",
+      "explanation": "The sum of the interior angles of any triangle is always 180 degrees.",
+      "blanks": [
+        {
+          "options": [
+            "120 degrees",
+            "180 degrees",
+            "360 degrees"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "type": "drag_drop_blanks",
+      "id": "ep-dd-0038"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "Metaphor",
+            "Simile",
+            "Personification"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "type": "drag_drop_blanks",
+      "explanation": "A metaphor describes something as being something else to suggest a likeness, without using 'like' or 'as'.",
+      "prompt": "Identify the figure of speech.",
+      "template": "The phrase 'the snow was a white blanket' is an example of a {{0}}.",
+      "id": "ep-dd-0039"
+    },
+    {
+      "prompt": "Convert litres to millilitres.",
+      "template": "A bottle of squash contains 3.04 litres, which is equivalent to {{0}} when converted.",
+      "explanation": "There are 1,000 millilitres in a litre, so 3.04 litres equals 3,040ml.",
+      "blanks": [
+        {
+          "options": [
+            "3,400ml",
+            "3,040ml",
+            "34,000ml"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "type": "drag_drop_blanks",
+      "id": "ep-dd-0040"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "Benevolent",
+            "Ominous",
+            "Jovial"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "type": "drag_drop_blanks",
+      "prompt": "Select the most appropriate adjective.",
+      "template": "The dark, swirling clouds over the horizon looked {{0}}, suggesting a violent storm was approaching.",
+      "explanation": "'Ominous' means giving the impression that something bad or unpleasant is going to happen.",
+      "id": "ep-dd-0041"
+    },
+    {
+      "explanation": "To find the decimal, divide 9 by 20. 9 divided by 20 is exactly 0.45.",
+      "template": "If a baker uses nine-twentieths of a bag of flour, the decimal equivalent of this fraction is {{0}}.",
+      "prompt": "Convert the fraction to a decimal.",
+      "type": "drag_drop_blanks",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "0.45",
+            "0.405",
+            "0.045"
+          ]
+        }
+      ],
+      "id": "ep-dd-0042"
+    },
+    {
+      "type": "drag_drop_blanks",
+      "blanks": [
+        {
+          "options": [
+            "Antonym",
+            "Synonym",
+            "Homonym"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "explanation": "Homonyms are words that are spelled or pronounced the same but have different meanings.",
+      "template": "The word 'bark' can mean the outer covering of a tree or the sound a dog makes, making it a {{0}}.",
+      "prompt": "Identify the linguistic term.",
+      "id": "ep-dd-0043"
+    },
+    {
+      "template": "The two tracks of a railway line are always {{0}}, meaning they never cross each other.",
+      "prompt": "Identify the type of lines.",
+      "explanation": "Parallel lines run in the same direction and remain the same distance apart, never meeting.",
+      "type": "drag_drop_blanks",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "Perpendicular",
+            "Parallel",
+            "Vertical"
+          ]
+        }
+      ],
+      "id": "ep-dd-0044"
+    },
+    {
+      "prompt": "Choose the correct vocabulary word.",
+      "template": "The mischievous puppy began to {{0}} its owner by constantly hiding his slippers under the sofa.",
+      "explanation": "'Exasperate' means to irritate or annoy someone intensely.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "Exaggerate",
+            "Exasperate",
+            "Extrapolate"
+          ]
+        }
+      ],
+      "type": "drag_drop_blanks",
+      "id": "ep-dd-0045"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "30%",
+            "35%",
+            "40%"
+          ]
+        }
+      ],
+      "type": "drag_drop_blanks",
+      "explanation": "12 out of 30 is the same as 4 out of 10, which converts to 40 percent.",
+      "prompt": "Calculate the percentage.",
+      "template": "A gardener plants 30 seeds, but only 12 of them grow; this means that {{0}} of the seeds were successful.",
+      "id": "ep-dd-0046"
+    },
+    {
+      "type": "drag_drop_blanks",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "Isosceles",
+            "Scalene",
+            "Equilateral"
+          ]
+        }
+      ],
+      "template": "A triangle that has two sides of equal length and one side that is different is called an {{0}} triangle.",
+      "prompt": "Identify the type of triangle.",
+      "explanation": "An isosceles triangle is defined by having at least two sides of equal length.",
+      "id": "ep-dd-0047"
+    },
+    {
+      "explanation": "'Meticulously' means taking great care and showing great attention to detail.",
+      "template": "The archaeologist {{0}} brushed the dust away from the ancient vase to avoid damaging it.",
+      "prompt": "Select the best adverb.",
+      "type": "drag_drop_blanks",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "Haphazardly",
+            "Meticulously",
+            "Reluctantly"
+          ]
+        }
+      ],
+      "id": "ep-dd-0048"
+    },
+    {
+      "prompt": "Choose the word that best completes the sentence.",
+      "type": "drag_drop_blanks",
+      "blanks": [
+        {
+          "options": [
+            "impartial",
+            "inevitable",
+            "improbable"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "template": "Because the family arrived at the platform ten minutes after the train's departure, missing the journey was {{0}}.",
+      "explanation": "'Inevitable' means certain to happen; since they were late and the train was on time, missing it was certain.",
+      "id": "ep-dd-0049"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "0.065",
+            "0.605",
+            "0.650"
+          ]
+        }
+      ],
+      "prompt": "Convert the fraction to a decimal.",
+      "type": "drag_drop_blanks",
+      "template": "Thirteen-twentieths of the students in the class walk to school, which is {{0}} as a decimal.",
+      "explanation": "To convert a fraction to a decimal, divide the numerator by the denominator: 13 ÷ 20 = 0.65.",
+      "id": "ep-dd-0050"
+    },
+    {
+      "template": "The phrase 'the slippery snake slithered silently' is an example of {{0}}.",
+      "explanation": "Alliteration is the repetition of the same letter or sound at the beginning of adjacent or closely connected words.",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "alliteration",
+            "personification",
+            "hyperbole"
+          ]
+        }
+      ],
+      "type": "drag_drop_blanks",
+      "prompt": "Identify the literary device used.",
+      "id": "ep-dd-0051"
+    },
+    {
+      "explanation": "A right angle is exactly 90 degrees and is often marked with a small square in diagrams.",
+      "template": "An angle that represents exactly a quarter turn is called a right angle and measures {{0}}.",
+      "prompt": "Identify the geometric property.",
+      "type": "drag_drop_blanks",
+      "blanks": [
+        {
+          "options": [
+            "360 degrees",
+            "180 degrees",
+            "90 degrees"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "id": "ep-dd-0052"
+    },
+    {
+      "template": "After clinching victory in the final seconds of the race, the young athlete felt truly {{0}}.",
+      "explanation": "'Exhilarated' means feeling very happy, animated, or elated, which fits the context of winning a race.",
+      "type": "drag_drop_blanks",
+      "prompt": "Choose the most appropriate vocabulary word.",
+      "blanks": [
+        {
+          "options": [
+            "exhausted",
+            "exhilarated",
+            "exasperated"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "id": "ep-dd-0053"
+    },
+    {
+      "explanation": "There are 1,000 millilitres in a litre, so 3.25 x 1000 = 3,250.",
+      "template": "A large bucket holds three and a quarter litres of water, which is equivalent to {{0}}.",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "3,250ml",
+            "3.25ml",
+            "32,500ml"
+          ]
+        }
+      ],
+      "prompt": "Convert the measurement.",
+      "type": "drag_drop_blanks",
+      "id": "ep-dd-0054"
+    },
+    {
+      "prompt": "Identify the grammatical term.",
+      "type": "drag_drop_blanks",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "proper nouns",
+            "collective nouns",
+            "abstract nouns"
+          ]
+        }
+      ],
+      "template": "Words like 'flock', 'herd', and 'swarm' are specific examples of {{0}}.",
+      "explanation": "Collective nouns are names for a collection or a number of people or things.",
+      "id": "ep-dd-0055"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "6 sides",
+            "7 sides",
+            "8 sides"
+          ]
+        }
+      ],
+      "type": "drag_drop_blanks",
+      "prompt": "Identify the shape property.",
+      "explanation": "A polygon with eight sides is called an octagon.",
+      "template": "A regular octagon is a two-dimensional shape that has exactly {{0}}.",
+      "id": "ep-dd-0056"
+    },
+    {
+      "template": "The student felt {{0}} as she waited outside the hall for her results to be announced.",
+      "explanation": "'Anxious' means experiencing worry, unease, or nervousness, which matches the context of a difficult exam.",
+      "prompt": "Choose the correct adjective.",
+      "type": "drag_drop_blanks",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "anxious",
+            "audacious",
+            "amiable"
+          ]
+        }
+      ],
+      "id": "ep-dd-0057"
+    },
+    {
+      "prompt": "Choose the correct homophone.",
+      "type": "drag_drop_blanks",
+      "blanks": [
+        {
+          "options": [
+            "their",
+            "there",
+            "they're"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "explanation": "'There' is used to indicate a place or to introduce a sentence; 'their' is possessive and 'they're' is a contraction.",
+      "template": "The children climbed the hill because they knew the view from up {{0}} would be spectacular.",
+      "id": "ep-dd-0058"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "6 cm",
+            "18 cm2",
+            "24 cm"
+          ]
+        }
+      ],
+      "type": "drag_drop_blanks",
+      "prompt": "Calculate the perimeter.",
+      "explanation": "Perimeter is the total distance around the edge: 8 + 4 + 8 + 4 = 24 cm.",
+      "template": "A rectangle has a length of 8 cm and a width of 4 cm; the perimeter of this shape is {{0}}.",
+      "id": "ep-dd-0059"
+    },
+    {
+      "explanation": "To 'resolve' a conflict means to find a solution or settle an argument.",
+      "template": "The teacher acted as a mediator to help the two students {{0}} their long-standing disagreement.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "revolts",
+            "resolves",
+            "relinquishes"
+          ]
+        }
+      ],
+      "type": "drag_drop_blanks",
+      "prompt": "Choose the fitting verb.",
+      "id": "ep-dd-0060"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "600 ml",
+            "750 ml",
+            "800 ml"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "explanation": "There are 1,000 millilitres in a litre, so three-quarters of a litre is 750 ml.",
+      "type": "drag_drop_blanks",
+      "template": "A standard bottle of wine contains three-quarters of a litre, which is the same as {{0}}.",
+      "prompt": "Complete the measurement conversion.",
+      "id": "ep-dd-0061"
+    },
+    {
+      "prompt": "Choose the most appropriate vocabulary word.",
+      "type": "drag_drop_blanks",
+      "template": "The clerk found the task of filing thousands of identical documents to be incredibly {{0}}.",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "tranquil",
+            "diligent",
+            "monotonous"
+          ]
+        }
+      ],
+      "explanation": "'Monotonous' describes a task that is dull, tedious, and repetitive.",
+      "id": "ep-dd-0062"
+    },
+    {
+      "prompt": "Identify the type of angle.",
+      "template": "An angle that measures 42 degrees is classified as an {{0}} angle.",
+      "type": "drag_drop_blanks",
+      "explanation": "An acute angle is any angle that measures less than 90 degrees.",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "acute",
+            "obtuse",
+            "reflex"
+          ]
+        }
+      ],
+      "id": "ep-dd-0063"
+    },
+    {
+      "template": "The children left {{0}} bicycles leaning against the garden fence before coming inside for tea.",
+      "type": "drag_drop_blanks",
+      "explanation": "'Their' is the possessive pronoun indicating that the bicycles belong to the children.",
+      "blanks": [
+        {
+          "options": [
+            "there",
+            "their",
+            "they're"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "prompt": "Select the correct homophone.",
+      "id": "ep-dd-0064"
+    },
+    {
+      "prompt": "Calculate the percentage.",
+      "explanation": "To find the percentage, divide 15 by 25 and multiply by 100, which equals 60%. Enjoying maths!",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "25%",
+            "40%",
+            "60%"
+          ]
+        }
+      ],
+      "template": "In a class of 25 students, 15 students chose football as their favourite sport; this is {{0}} of the class.",
+      "type": "drag_drop_blanks",
+      "id": "ep-dd-0065"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "elated",
+            "apprehensive",
+            "indifferent"
+          ]
+        }
+      ],
+      "explanation": "'Elated' means extremely happy and excited, which fits the context of winning a gold medal.",
+      "type": "drag_drop_blanks",
+      "template": "Having won the gold medal against all odds, the gymnast was {{0}} and could not stop smiling.",
+      "prompt": "Choose the word that reflects the character's mood.",
+      "id": "ep-dd-0066"
+    },
+    {
+      "type": "drag_drop_blanks",
+      "template": "A triangle with a base of 12 cm and a vertical height of 8 cm has an area of {{0}}.",
+      "blanks": [
+        {
+          "options": [
+            "24 cm²",
+            "48 cm²",
+            "56 cm²"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "explanation": "The area of a triangle is calculated as (base × height) ÷ 2, so (12 × 8) ÷ 2 = 48.",
+      "prompt": "Find the area of the shape.",
+      "id": "ep-dd-0067"
+    },
+    {
+      "type": "drag_drop_blanks",
+      "template": "The phrase 'the moon shone like a silver coin in the sky' is an example of a {{0}}.",
+      "blanks": [
+        {
+          "options": [
+            "metaphor",
+            "personification",
+            "simile"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "explanation": "A simile uses the words 'as' or 'like' to compare two different things.",
+      "prompt": "Identify the literary device.",
+      "id": "ep-dd-0068"
+    },
+    {
+      "prompt": "Calculate the total time.",
+      "type": "drag_drop_blanks",
+      "template": "There are exactly {{0}} in one full week of seven days.",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "168 hours",
+            "144 hours",
+            "180 hours"
+          ]
+        }
+      ],
+      "explanation": "There are 24 hours in a day, so 24 multiplied by 7 equals 168 hours in a full week.",
+      "id": "ep-dd-0069"
+    },
+    {
+      "prompt": "Choose the correct literary term.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "adversary",
+            "protagonist",
+            "spectator"
+          ]
+        }
+      ],
+      "explanation": "The protagonist is the main character or hero of a story.",
+      "type": "drag_drop_blanks",
+      "template": "In most adventure novels, the story follows the journey of a brave {{0}} who overcomes great obstacles.",
+      "id": "ep-dd-0070"
+    },
+    {
+      "prompt": "Convert fractions to weight.",
+      "type": "drag_drop_blanks",
+      "template": "If a recipe requires one-eighth of a kilogram of flour, you should measure out {{0}}.",
+      "blanks": [
+        {
+          "options": [
+            "500 grams",
+            "125 grams",
+            "250 grams"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "explanation": "There are 1,000 grams in a kilogram, so 1,000 divided by 8 is 125 grams.",
+      "id": "ep-dd-0071"
+    },
+    {
+      "type": "drag_drop_blanks",
+      "template": "The detective had to {{0}} every piece of evidence to ensure no small detail was overlooked.",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "intervene",
+            "speculate",
+            "scrutinise"
+          ]
+        }
+      ],
+      "explanation": "To scrutinise means to examine something very closely and thoroughly.",
+      "prompt": "Select the word that best fits the sentence.",
+      "id": "ep-dd-0072"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "there",
+            "their",
+            "they're"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "template": "The visitors were asked to leave {{0}} muddy boots in the porch before entering the house.",
+      "explanation": "'Their' is the possessive pronoun used to show that the shoes belong to the visitors.",
+      "prompt": "Select the correct homophone.",
+      "type": "drag_drop_blanks",
+      "id": "ep-dd-0073"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "90 degrees",
+            "180 degrees",
+            "360 degrees"
+          ]
+        }
+      ],
+      "template": "The sum of the interior angles at a point on a flat surface is always {{0}}.",
+      "explanation": "A full turn or a circle consists of 360 degrees.",
+      "prompt": "Complete the mathematical fact.",
+      "type": "drag_drop_blanks",
+      "id": "ep-dd-0074"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "metaphor",
+            "simile",
+            "personification"
+          ]
+        }
+      ],
+      "template": "The phrase 'the classroom was a zoo' is an example of a {{0}}.",
+      "explanation": "A metaphor describes something as being something else to suggest a shared quality, without using 'like' or 'as'.",
+      "prompt": "Identify the literary device.",
+      "type": "drag_drop_blanks",
+      "id": "ep-dd-0075"
+    },
+    {
+      "prompt": "Convert the measurement.",
+      "explanation": "There are 1000ml in 1 litre, so three-quarters is 750ml (1000 ÷ 4 × 3).",
+      "type": "drag_drop_blanks",
+      "blanks": [
+        {
+          "options": [
+            "250ml",
+            "500ml",
+            "750ml"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "template": "A large bottle containing 0.75 litres of water is equivalent to {{0}}.",
+      "id": "ep-dd-0076"
+    },
+    {
+      "type": "drag_drop_blanks",
+      "explanation": "An accomplice is someone who helps another person commit a crime or a wrongdoing.",
+      "prompt": "Choose the most appropriate word.",
+      "template": "The thief was not alone; he had a cunning {{0}} who helped him bypass the security system.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "adversary",
+            "accomplice",
+            "acquaintance"
+          ]
+        }
+      ],
+      "id": "ep-dd-0077"
+    },
+    {
+      "type": "drag_drop_blanks",
+      "explanation": "A scalene triangle is defined as having three sides of different lengths and three different angles.",
+      "prompt": "Identify the geometric shape.",
+      "template": "A triangle that has no equal sides and no equal angles is known as a {{0}}.",
+      "blanks": [
+        {
+          "options": [
+            "scalene triangle",
+            "isosceles triangle",
+            "equilateral triangle"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "id": "ep-dd-0078"
+    },
+    {
+      "type": "drag_drop_blanks",
+      "explanation": "'Apprehensive' means feeling anxious or fearful about a future event.",
+      "prompt": "Select the word that best fits the context.",
+      "template": "As the storm clouds gathered, the sailors felt {{0}} about the dangerous journey ahead.",
+      "blanks": [
+        {
+          "options": [
+            "pessimistic",
+            "indifferent",
+            "apprehensive"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "id": "ep-dd-0079"
+    },
+    {
+      "type": "drag_drop_blanks",
+      "prompt": "Calculate the area.",
+      "explanation": "The area of a triangle is calculated as (base × height) ÷ 2, which is (8 × 6) ÷ 2 = 24.",
+      "template": "A triangle with a base of 8 cm and a height of 6 cm has an area of {{0}}.",
+      "blanks": [
+        {
+          "options": [
+            "48 cm²",
+            "24 cm²",
+            "20 cm²"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "id": "ep-dd-0080"
+    },
+    {
+      "type": "drag_drop_blanks",
+      "prompt": "Select the most suitable adjective.",
+      "explanation": "Something that is monotonous is dull, repetitive, and lacks variety.",
+      "template": "The long, flat drive across the desert was so {{0}} that the driver struggled to stay focused.",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "anxious",
+            "exhilarated",
+            "monotonous"
+          ]
+        }
+      ],
+      "id": "ep-dd-0081"
+    },
+    {
+      "type": "drag_drop_blanks",
+      "explanation": "10 out of 25 is 10/25, which simplifies to 2/5; 2/5 is equivalent to 40/100 or 40%.",
+      "prompt": "Calculate the percentage.",
+      "template": "In a survey of 25 people, 10 said they preferred tea; this means {{0}} of people prefer tea.",
+      "blanks": [
+        {
+          "options": [
+            "50%",
+            "25%",
+            "40%"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "id": "ep-dd-0082"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "Incorrigible",
+            "Inevitable",
+            "Inaudible"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "template": "Because the heavy rain continued for days, the flooding of the lower fields became {{0}}.",
+      "prompt": "Choose the word that fits the definition.",
+      "explanation": "'Inevitable' describes something that is certain to happen and cannot be avoided.",
+      "type": "drag_drop_blanks",
+      "id": "ep-dd-0083"
+    },
+    {
+      "type": "drag_drop_blanks",
+      "explanation": "The volume of a cuboid is length × width × height (8 × 4 × 3 = 96).",
+      "prompt": "Calculate the volume.",
+      "template": "A cuboid with a length of 8 cm, a width of 4 cm, and a height of 3 cm has a volume of {{0}}.",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "96 cm³",
+            "44 cm³",
+            "24 cm³"
+          ]
+        }
+      ],
+      "id": "ep-dd-0084"
+    },
+    {
+      "explanation": "An hour has 60 minutes, and each minute has 60 seconds (60 x 60 = 3,600).",
+      "prompt": "Convert units of time.",
+      "template": "An athlete completed the marathon in exactly two hours, which is the same as {{0}}.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "60 minutes",
+            "7,200 seconds",
+            "3,600 seconds"
+          ]
+        }
+      ],
+      "type": "drag_drop_blanks",
+      "id": "ep-dd-0085"
+    },
+    {
+      "explanation": "'Meticulous' means showing great attention to detail or being very careful and precise.",
+      "prompt": "Identify the correct adjective based on context.",
+      "blanks": [
+        {
+          "options": [
+            "diligent",
+            "uninterested",
+            "meticulous"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "template": "The scientist was so {{0}} that she checked her calculations three times to avoid any errors.",
+      "type": "drag_drop_blanks",
+      "id": "ep-dd-0086"
+    },
+    {
+      "type": "drag_drop_blanks",
+      "template": "The heatwave lasted for three weeks, an {{0}} event that had never been recorded in the town's history.",
+      "blanks": [
+        {
+          "options": [
+            "unprecedented",
+            "occasional",
+            "minimal"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "explanation": "'Unprecedented' means never done or known before, fitting the context of a record-breaking event.",
+      "prompt": "Choose the word that best fits the sentence context.",
+      "id": "ep-dd-0087"
+    },
+    {
+      "type": "drag_drop_blanks",
+      "prompt": "Identify the geometric property.",
+      "explanation": "Parallel lines are lines in a plane that remain the same distance apart and never meet.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "perpendicular",
+            "parallel",
+            "equidistant"
+          ]
+        }
+      ],
+      "template": "In a rectangle, the opposite sides are always {{0}} and will never meet no matter how far they extend.",
+      "id": "ep-dd-0088"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "880ml",
+            "88ml",
+            "885ml"
+          ]
+        }
+      ],
+      "template": "A chemist measured 0.885 litres of a solution, which is equivalent to {{0}}.",
+      "explanation": "There are 1000ml in a litre, so 0.885 litres is 885ml.",
+      "prompt": "Convert litres to millilitres.",
+      "type": "drag_drop_blanks",
+      "id": "ep-dd-0089"
+    },
+    {
+      "type": "drag_drop_blanks",
+      "explanation": "Personification is giving human characteristics or feelings to non-human objects.",
+      "prompt": "Identify the literary device.",
+      "template": "The phrase 'the wind whispered through the trees' is an example of {{0}}.",
+      "blanks": [
+        {
+          "options": [
+            "personification",
+            "alliteration",
+            "onomatopoeia"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "id": "ep-dd-0090"
+    },
+    {
+      "type": "drag_drop_blanks",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "3.45 kg",
+            "3,450g",
+            "34,500g"
+          ]
+        }
+      ],
+      "template": "If a bag of flour weighs 3.45 kg, its weight in grams is {{0}}.",
+      "prompt": "Convert kilograms to grams.",
+      "explanation": "There are 1000g in 1kg, so 3.45 multiplied by 1000 equals 3,450.",
+      "id": "ep-dd-0091"
+    },
+    {
+      "explanation": "'They're' is the contraction of 'they are', which is required to complete the sentence.",
+      "prompt": "Select the correct homophone.",
+      "blanks": [
+        {
+          "options": [
+            "their",
+            "there",
+            "they're"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "template": "The children were excited because {{0}} going to the zoo for their end-of-term trip.",
+      "type": "drag_drop_blanks",
+      "id": "ep-dd-0092"
+    },
+    {
+      "type": "drag_drop_blanks",
+      "prompt": "Calculate the area of the triangle.",
+      "explanation": "The area of a triangle is calculated as (base x height) ÷ 2, so (9 x 12) ÷ 2 = 54.",
+      "template": "A triangle has a base of 9 units and a height of 12 units; therefore, its area is {{0}}.",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "54 units²",
+            "108 units²",
+            "42 units²"
+          ]
+        }
+      ],
+      "id": "ep-dd-0093"
+    },
+    {
+      "prompt": "Convert the fraction to a decimal.",
+      "explanation": "One eighth is 0.125, so three eighths is 0.125 multiplied by 3, which is 0.375.",
+      "template": "The decimal equivalent of the fraction 3/8 is {{0}}.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "0.125",
+            "0.375",
+            "0.625"
+          ]
+        }
+      ],
+      "type": "drag_drop_blanks",
+      "id": "ep-dd-0094"
+    },
+    {
+      "prompt": "Identify the noun that means an opponent.",
+      "explanation": "An 'adversary' is an opponent or enemy in a conflict or contest.",
+      "template": "In the final chapter of the book, the hero must face his greatest {{0}} in a battle of wits.",
+      "blanks": [
+        {
+          "options": [
+            "adversary",
+            "ally",
+            "acquaintance"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "type": "drag_drop_blanks",
+      "id": "ep-dd-0095"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "20%",
+            "40%",
+            "80%"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "template": "If a student scores 20 out of 25 on a spelling test, their percentage score is {{0}}.",
+      "explanation": "20 out of 25 is the same as 80 out of 100, which equals 80%.",
+      "prompt": "Calculate the percentage.",
+      "type": "drag_drop_blanks",
+      "id": "ep-dd-0096"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "metaphor",
+            "alliteration",
+            "hyperbole",
+            "onomatopoeia"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "template": "The phrase 'the slippery snake slithered silently across the sand' is a clear example of {{0}}.",
+      "prompt": "Identify the literary device used in the sentence.",
+      "explanation": "Alliteration is the repetition of the same initial consonant sound in a sequence of words, such as 'slippery', 'slithered', and 'sand'.",
+      "type": "drag_drop_blanks",
+      "id": "ep-dd-0097"
+    },
+    {
+      "question": "What is the difference between 12.25 and 8.75?",
+      "correctAnswer": 3.5,
+      "tolerance": 0,
+      "explanation": "To find the difference, subtract the smaller number from the larger: 12.25 - 8.75 = 3.5.",
+      "type": "numeric_entry",
+      "id": "ep-ne-0001"
+    },
+    {
+      "question": "A square has an area of 49cm². What is half of its perimeter in centimetres?",
+      "unit": "cm",
+      "tolerance": 0,
+      "correctAnswer": 14,
+      "explanation": "A square with area 49cm² has sides of 7cm (√49 = 7). The perimeter is 4 x 7cm = 28cm. Half of this is 14cm.",
+      "type": "numeric_entry",
+      "id": "ep-ne-0002"
+    },
+    {
+      "type": "numeric_entry",
+      "explanation": "The total cost is £9.00. Divide the total by the price per melon: 9.00 ÷ 0.50 = 18.",
+      "tolerance": 0,
+      "correctAnswer": 18,
+      "question": "If melons cost 50p each, how many melons can Sarah buy with a £10 note if she receives £1.00 change?",
+      "id": "ep-ne-0003"
+    },
+    {
+      "explanation": "There are 60 minutes in an hour. 1.8 hours is 1.8 x 60 = 108 minutes.",
+      "type": "numeric_entry",
+      "unit": "minutes",
+      "question": "How many minutes are there in 1.8 hours?",
+      "correctAnswer": 108,
+      "tolerance": 0,
+      "id": "ep-ne-0004"
+    },
+    {
+      "type": "numeric_entry",
+      "explanation": "First find 10% (6), then multiply by 7 to get 70% (42).",
+      "correctAnswer": 42,
+      "tolerance": 0,
+      "question": "Calculate 70% of 60.",
+      "id": "ep-ne-0005"
+    },
+    {
+      "type": "numeric_entry",
+      "explanation": "The sum of angles in a triangle is 180°. 180 - (35 + 25) = 120°.",
+      "correctAnswer": 120,
+      "tolerance": 0,
+      "unit": "degrees",
+      "question": "Two angles in a triangle are 35° and 25°. What is the size of the third angle in degrees?",
+      "id": "ep-ne-0006"
+    },
+    {
+      "question": "In a school of 75 children, 2/5 of them walk to school. How many children walk to school?",
+      "tolerance": 0,
+      "correctAnswer": 30,
+      "explanation": "2/5 of 75 is (75 ÷ 5) x 2 = 15 x 2 = 30.",
+      "type": "numeric_entry",
+      "id": "ep-ne-0007"
+    },
+    {
+      "question": "What is the next number in this sequence: 1, 0, -3... No, wait. Use this rule: 'multiply by 3 and subtract 3'. If the input is 10, what is the output?",
+      "correctAnswer": 27,
+      "tolerance": 0,
+      "explanation": "The rule is multiply by 3 then subtract 3: (10 x 3) - 3 = 27.",
+      "type": "numeric_entry",
+      "id": "ep-ne-0008"
+    },
+    {
+      "correctAnswer": 22,
+      "tolerance": 0,
+      "question": "What is the mean (average) of the following numbers: 12, 15, 24, and 37?",
+      "type": "numeric_entry",
+      "explanation": "The mean is the total (12 + 15 + 24 + 37 = 88) divided by the number of values (4). 88 ÷ 4 = 22.",
+      "id": "ep-ne-0009"
+    },
+    {
+      "question": "How many faces does a triangular-based pyramid have?",
+      "correctAnswer": 4,
+      "tolerance": 0,
+      "explanation": "A cube has 12 edges. An octagonal prism has 24 edges. 24 ÷ 6 = 4.",
+      "type": "numeric_entry",
+      "id": "ep-ne-0010"
+    },
+    {
+      "type": "numeric_entry",
+      "explanation": "400g is 0.4kg. 6 bottles x 0.4kg = 2.4kg.",
+      "correctAnswer": 2.4,
+      "tolerance": 0,
+      "question": "A small bottle of water holds 400ml. If 1ml weighs 1g, what is the total weight of 6 bottles in kilograms?",
+      "unit": "kg",
+      "id": "ep-ne-0011"
+    },
+    {
+      "explanation": "Reverse the operations: (31 + 11) ÷ 3 = 42 ÷ 3 = 14.",
+      "type": "numeric_entry",
+      "question": "I think of a number, multiply it by 3 and subtract 11. The answer is 31. What was my original number?",
+      "tolerance": 0,
+      "correctAnswer": 14,
+      "id": "ep-ne-0012"
+    },
+    {
+      "explanation": "Start with £20.00 and subtract the cost of the magazine (£3.80) and the book (£4.75) to find the remaining change.",
+      "unit": "£",
+      "question": "Amila goes to the shop with a £20 note. She buys a magazine for £3.80 and a book for £4.75. How much change does she receive in pounds?",
+      "tolerance": 0,
+      "correctAnswer": 11.45,
+      "type": "numeric_entry",
+      "id": "ep-ne-0013"
+    },
+    {
+      "tolerance": 0,
+      "correctAnswer": 300,
+      "type": "numeric_entry",
+      "explanation": "The ratio is 3:2, making 5 parts in total. One part is 500 divided by 5 (100), so 3 parts (red) equals 300.",
+      "question": "A bag contains red and blue marbles in the ratio 3:2. If there are 500 marbles in total, how many are red?",
+      "id": "ep-ne-0014"
+    },
+    {
+      "explanation": "The pattern increases by 2, 3, 4, then 5. Adding 6 to the last number (15) gives 21.",
+      "question": "What is the next number in this sequence: 3, 5, 8, 12, 15... No, wait. Look at the gaps: 3 (+2) 5 (+3) 8 (+4) 12 (+3) 15... Looking at the sequence 1, 3, 6, 10, 15, what is the next number?",
+      "correctAnswer": 21,
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "id": "ep-ne-0015"
+    },
+    {
+      "question": "The total length of all the edges of a cube is 72cm. What is the area of one face of the cube in square centimetres?",
+      "unit": "cm²",
+      "explanation": "A cube has 12 edges. Divide the total length (72cm) by 12 to find one edge is 6cm. Surface area is 6 faces × (6cm × 6cm).",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "correctAnswer": 54,
+      "id": "ep-ne-0016"
+    },
+    {
+      "explanation": "Divide 5 by 8 using long division. 5.000 ÷ 8 = 0.625.",
+      "question": "Convert the fraction 5/8 into a decimal.",
+      "tolerance": 0,
+      "correctAnswer": 0.625,
+      "type": "numeric_entry",
+      "id": "ep-ne-0017"
+    },
+    {
+      "question": "Find the range of the following set of numbers: 12, 4, 15, 2, 8, 11, 7.",
+      "explanation": "The range is the difference between the highest (15) and lowest (2) values in the set.",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "correctAnswer": 13,
+      "id": "ep-ne-0018"
+    },
+    {
+      "explanation": "If 1/4 is 8, then the whole number (4/4) is 8 multiplied by 4, which is 32.",
+      "question": "One quarter of a number is 8. What is the original number?",
+      "tolerance": 0,
+      "correctAnswer": 32,
+      "type": "numeric_entry",
+      "id": "ep-ne-0019"
+    },
+    {
+      "explanation": "There are 1000 grams in a kilogram. Divide 6800 by 1000 to convert to kilograms.",
+      "unit": "kg",
+      "question": "A large bag of flour weighs 6800 grams. What is this weight in kilograms?",
+      "correctAnswer": 6.8,
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "id": "ep-ne-0020"
+    },
+    {
+      "type": "numeric_entry",
+      "correctAnswer": 144,
+      "tolerance": 0,
+      "question": "The area of a square is 81cm². Another square has sides that are twice as long as the first square. What is the area of the larger square in cm²?",
+      "unit": "cm²",
+      "explanation": "First find the length of one side by calculating the square root of 81, which is 9. Then multiply 9 by 16 to find the area of the larger square.",
+      "id": "ep-ne-0021"
+    },
+    {
+      "explanation": "Calculate the time elapsed between 09:45 and 10:00 (15 mins) and then from 10:00 to 14:10 (4 hours 10 mins). Adding these gives 4 hours and 25 mins.",
+      "question": "A train leaves London at 09:45 and arrives in Edinburgh at 14:10. How many minutes did the journey take in total? No, wait. Express the arrival time in 24-hour clock format.",
+      "correctAnswer": 14.25,
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "id": "ep-ne-0022"
+    },
+    {
+      "explanation": "3/7 of 140 is (140 ÷ 7) × 3 = 60. 20% of 140 is 140 ÷ 5 = 28. Subtract 28 from 60 to get 32. Wait, let's try a different one: What is 40% of 140?",
+      "question": "Calculate 40% of 140.",
+      "tolerance": 0,
+      "correctAnswer": 56,
+      "type": "numeric_entry",
+      "id": "ep-ne-0023"
+    },
+    {
+      "type": "numeric_entry",
+      "correctAnswer": 270,
+      "tolerance": 0,
+      "unit": "°",
+      "question": "What is the size of the reflex angle between the hands of a clock when the time is exactly 9:00? Give your answer in degrees.",
+      "explanation": "A full turn is 360 degrees. Subtract the given angle (90) from 360 to find the reflex angle.",
+      "id": "ep-ne-0024"
+    },
+    {
+      "question": "What is 37 multiplied by 3?",
+      "explanation": "To find the product of 37 and 3, you can multiply 30 by 3 (90) and 7 by 3 (21), then add them together.",
+      "type": "numeric_entry",
+      "correctAnswer": 111,
+      "id": "ep-ne-0025"
+    },
+    {
+      "question": "What is the second smallest prime number between 10 and 20?",
+      "correctAnswer": 13,
+      "type": "numeric_entry",
+      "explanation": "Prime numbers are numbers with exactly two factors. The primes between 10 and 20 are 11, 13, 17, and 19.",
+      "id": "ep-ne-0026"
+    },
+    {
+      "question": "In a class of children, 1/3 are boys. If there are 7 boys, how many girls are there?",
+      "correctAnswer": 14,
+      "explanation": "If 1/3 of the class is 7, then the whole class is 7 multiplied by 3 (21). Two thirds is 21 minus 7.",
+      "type": "numeric_entry",
+      "id": "ep-ne-0027"
+    },
+    {
+      "correctAnswer": 52.5,
+      "type": "numeric_entry",
+      "explanation": "A rectangular area is calculated by multiplying length by width (7m x 7.5m = 52.5m²).",
+      "unit": "m²",
+      "question": "A rectangular garden measures 7 metres by 7.5 metres. What is the area of the garden in square metres?",
+      "tolerance": 0,
+      "id": "ep-ne-0028"
+    },
+    {
+      "correctAnswer": 27,
+      "type": "numeric_entry",
+      "explanation": "The sequence follows a pattern of 'add 4, add 5, add 6, add 7'. 20 + 7 = 27.",
+      "question": "Find the next number in this sequence: 5, 9, 14, 20...",
+      "id": "ep-ne-0029"
+    },
+    {
+      "explanation": "To find the change, subtract the cost of the items from the total paid (£10.00 - £4.55 = £5.45).",
+      "type": "numeric_entry",
+      "correctAnswer": 5.45,
+      "unit": "£",
+      "question": "Sami buys a sandwich for £2.80 and a drink for £1.75. He pays with a £10 note. How much change does he get?",
+      "tolerance": 0,
+      "id": "ep-ne-0030"
+    },
+    {
+      "correctAnswer": 19,
+      "type": "numeric_entry",
+      "explanation": "Work backwards from the result: add 5 to 52 (57), then divide by 3 (19).",
+      "question": "I think of a number, multiply it by 3 and subtract 5. The result is 52. What was my original number?",
+      "id": "ep-ne-0031"
+    },
+    {
+      "explanation": "A right angle is 90°. Half of a right angle is 45°. 90 + 45 = 135°.",
+      "type": "numeric_entry",
+      "correctAnswer": 135,
+      "unit": "degrees",
+      "question": "What is the size of an angle that is one and a half times the size of a right angle?",
+      "tolerance": 0,
+      "id": "ep-ne-0032"
+    },
+    {
+      "tolerance": 0,
+      "question": "A rectangle has a length of 10cm and a width of 4cm. What is the perimeter of the rectangle in centimetres?",
+      "unit": "cm",
+      "correctAnswer": 28,
+      "explanation": "The perimeter is the sum of all sides. (10 + 10 + 4 + 4 = 28cm).",
+      "type": "numeric_entry",
+      "id": "ep-ne-0033"
+    },
+    {
+      "question": "A jar contains red and blue sweets in the ratio 3:2. If there are 120 blue sweets, what is the total number of sweets in the jar?",
+      "correctAnswer": 300,
+      "explanation": "If 2 parts (blue) equal 120, then 1 part equals 60. The total (5 parts) is 5 multiplied by 60.",
+      "type": "numeric_entry",
+      "id": "ep-ne-0034"
+    },
+    {
+      "correctAnswer": 0.45,
+      "type": "numeric_entry",
+      "explanation": "450ml is 450/1000 of a litre, which simplifies to 0.45.",
+      "unit": "litres",
+      "question": "Convert 450 millilitres into litres.",
+      "tolerance": 0,
+      "id": "ep-ne-0035"
+    },
+    {
+      "tolerance": 0,
+      "question": "A cuboid has a square base with sides of 4cm and a height of 3cm. What is its volume in cubic centimetres?",
+      "unit": "cm³",
+      "explanation": "The volume of a cuboid is length x width x height (4 x 3 x 4 = 48).",
+      "type": "numeric_entry",
+      "correctAnswer": 48,
+      "id": "ep-ne-0036"
+    },
+    {
+      "question": "What is 0.124 multiplied by 100?",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "correctAnswer": 12.4,
+      "explanation": "To multiply by 100, move the decimal point two places to the right. 0.124 becomes 12.4.",
+      "id": "ep-ne-0037"
+    },
+    {
+      "question": "Subtract 3950 from 7421 and round your answer to the nearest thousand.",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "correctAnswer": 3000,
+      "explanation": "Subtract the numbers first: 7421 - 3950 = 3471. The nearest thousand to 3471 is 3000.",
+      "id": "ep-ne-0038"
+    },
+    {
+      "tolerance": 0,
+      "question": "Angle A and Angle B lie on a straight line. If Angle A is 126 degrees, what is the size of Angle B in degrees?",
+      "unit": "degrees",
+      "type": "numeric_entry",
+      "correctAnswer": 54,
+      "explanation": "The sum of angles on a straight line is 180 degrees. 180 - 126 = 54.",
+      "id": "ep-ne-0039"
+    },
+    {
+      "question": "The mean of five numbers is 10. Four of the numbers are 8, 12, 7 and 9. What is the fifth number?",
+      "tolerance": 0,
+      "correctAnswer": 14,
+      "explanation": "If the mean of 5 numbers is 10, the total sum is 50. 50 - (8 + 12 + 7 + 9) = 14.",
+      "type": "numeric_entry",
+      "id": "ep-ne-0040"
+    },
+    {
+      "type": "numeric_entry",
+      "correctAnswer": 0.65,
+      "explanation": "To convert a percentage to a decimal, divide by 100. 13/20 is 65/100, which is 65%. 65 divided by 100 is 0.65.",
+      "question": "Write the fraction 13/20 as a decimal.",
+      "tolerance": 0,
+      "id": "ep-ne-0041"
+    },
+    {
+      "tolerance": 0,
+      "question": "In a class of 36 pupils, 25% are boys. How many girls are in the class?",
+      "type": "numeric_entry",
+      "correctAnswer": 27,
+      "explanation": "9 is 1/4 of the total, so there are 36 pupils in total. 36 - 9 = 27 girls.",
+      "id": "ep-ne-0042"
+    },
+    {
+      "type": "numeric_entry",
+      "explanation": "This is a Fibonacci-style sequence where each number is the sum of the two preceding it. 11 + 18 = 29.",
+      "correctAnswer": 29,
+      "tolerance": 0,
+      "question": "Find the next number in this sequence: 3, 4, 7, 11, 18...",
+      "id": "ep-ne-0043"
+    },
+    {
+      "question": "A rectangle has a length of 12cm and an area of 96 square centimetres. What is the perimeter of the rectangle in centimetres?",
+      "tolerance": 0,
+      "correctAnswer": 112,
+      "explanation": "Each side of the square is 7cm (since 7 x 4 = 28). The area is 7 x 7 = 49. Twice the area is 49 x 2 = 98. No, wait. Area = 49. 49 x 2 = 98. Let's re-read. 49 is the area. Double it is 98. Correct. Wait, let me change the question slightly to make it more distinct. New question: If a square has a perimeter of 28cm, what is its area? 7x7=49. No, let's go with: A rectangle has a length of 12cm and an area of 96cm squared. What is its perimeter? 96/12 = 8. Perimeter = (12+8)x2 = 40.",
+      "type": "numeric_entry",
+      "unit": "cm",
+      "id": "ep-ne-0044"
+    },
+    {
+      "unit": "£",
+      "explanation": "The ratio 5:3 means there are 8 parts in total. One part is 3200 / 8 = 400. To find the amount for the smaller share, 3 x 400 = 1200.",
+      "correctAnswer": 1200,
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "question": "A prize of £3200 is split between two people in the ratio 5:3. How much does the person with the smaller share receive?",
+      "id": "ep-ne-0045"
+    },
+    {
+      "type": "numeric_entry",
+      "correctAnswer": 108,
+      "explanation": "A regular pentagon's interior angles sum to 540 degrees. 540 divided by 5 equals 108.",
+      "unit": "degrees",
+      "question": "What is the size of one interior angle of a regular pentagon? Give your answer in degrees.",
+      "tolerance": 0,
+      "id": "ep-ne-0046"
+    },
+    {
+      "correctAnswer": 30,
+      "explanation": "15% of 200 is (15/100) * 200 = 30.",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "question": "At a concert, there are 200 people. 15% of them are wearing hats. How many people are wearing hats?",
+      "id": "ep-ne-0047"
+    },
+    {
+      "question": "I am thinking of a number between 10 and 30. It is a multiple of 7 and it is 1 more than a multiple of 4. What is the number?",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "correctAnswer": 21,
+      "explanation": "The number must be a multiple of 7 (7, 14, 21, 28...) and one more than a multiple of 4 (5, 9, 13, 17, 21...). 21 fits both.",
+      "id": "ep-ne-0048"
+    },
+    {
+      "question": "Amelie buys a book for £3.50 and a game for £5.05. How much change does she receive from a £20 note?",
+      "correctAnswer": 11.45,
+      "unit": "pounds",
+      "explanation": "To find the change, subtract the total cost (£3.50 + £5.05 = £8.55) from £20.00.",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "id": "ep-ne-0049"
+    },
+    {
+      "question": "Calculated 25% of 1200.",
+      "correctAnswer": 300,
+      "explanation": "10% of 1200 is 120, and 5% is 60. Therefore, 25% is 120 + 120 + 60 = 300.",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "id": "ep-ne-0050"
+    },
+    {
+      "correctAnswer": 0.65,
+      "question": "What is 13/20 expressed as a decimal?",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "explanation": "To convert a fraction to a decimal, divide the numerator by the denominator (13 ÷ 20 = 0.65).",
+      "id": "ep-ne-0051"
+    },
+    {
+      "explanation": "The area of a triangle is (base x height) ÷ 2. Here, (12 x 8) ÷ 2 = 96 ÷ 2 = 48.",
+      "unit": "cm squared",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "question": "What is the area of a triangle with a base of 12cm and a height of 8cm?",
+      "correctAnswer": 48,
+      "id": "ep-ne-0052"
+    },
+    {
+      "correctAnswer": 27,
+      "question": "I think of a number, double it and add 6. The result is 60. What was my original number?",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "explanation": "If n is the number, 2n + 6 = 60. Subtract 6 to get 2n = 54, then divide by 2 to find n = 27.",
+      "id": "ep-ne-0053"
+    },
+    {
+      "explanation": "The sum of the four angles must be 360. 360 - (115 + 73 + 70) = 360 - 258 = 102.",
+      "unit": "degrees",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "question": "Three angles in a quadrilateral are 115, 73, and 70 degrees. What is the size of the fourth angle in degrees?",
+      "correctAnswer": 102,
+      "id": "ep-ne-0054"
+    },
+    {
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "unit": "pounds",
+      "explanation": "The ratio total is 2+3=5 parts. One part is 200 ÷ 5 = 40. The larger share is 3 x 40 = 120.",
+      "correctAnswer": 120,
+      "question": "Divide £200 in the ratio 2:3. What is the value of the larger share?",
+      "id": "ep-ne-0055"
+    },
+    {
+      "correctAnswer": 4.25,
+      "question": "Convert 4250 grams into kilograms.",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "explanation": "There are 1000g in 1kg. To convert grams to kilograms, divide by 1000.",
+      "unit": "kg",
+      "id": "ep-ne-0056"
+    },
+    {
+      "explanation": "The pattern is adding the next prime number: +3, +5, +7, +11. 21 + 11 = 32.",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "question": "What is the next number in this sequence: 6, 9, 14, 21...?",
+      "correctAnswer": 32,
+      "id": "ep-ne-0057"
+    },
+    {
+      "unit": "km",
+      "explanation": "Total distance is 3.5km x 3 = 10.5km.",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "question": "A runner completes three laps of a 3.5km track. What is the total distance run in kilometres?",
+      "correctAnswer": 10.5,
+      "id": "ep-ne-0058"
+    },
+    {
+      "explanation": "1/4 of 24 is 6. To find the remainder, subtract 6 from 24.",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "question": "A box contains 24 chocolates. If 1/4 of them are eaten, how many chocolates are left?",
+      "correctAnswer": 18,
+      "id": "ep-ne-0059"
+    },
+    {
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "unit": "cm",
+      "explanation": "Volume = length x width x height. 160 = 5 x 4 x h, so 160 = 20h. h = 160 ÷ 20 = 8.",
+      "correctAnswer": 8,
+      "question": "A cuboid has a volume of 160 cubic cm. If the length is 5cm and the width is 4cm, what is the height?",
+      "id": "ep-ne-0060"
+    },
+    {
+      "correctAnswer": 11.45,
+      "unit": "£",
+      "type": "numeric_entry",
+      "question": "Amina spends £3.55 on a magazine. How much change does she get from a £15 note?",
+      "explanation": "Subtract the cost of the magazine from the total: 15.00 - 3.55 = 11.45.",
+      "id": "ep-ne-0061"
+    },
+    {
+      "explanation": "The sum of angles on a straight line is 180 degrees. 180 - 72 = 108.",
+      "question": "In a triangle, the exterior angle to one vertex is 72 degrees. What is the size of the interior angle at that same vertex?",
+      "type": "numeric_entry",
+      "unit": "degrees",
+      "correctAnswer": 108,
+      "id": "ep-ne-0062"
+    },
+    {
+      "correctAnswer": 270,
+      "unit": "ml",
+      "type": "numeric_entry",
+      "question": "Convert 0.27 litres into millilitres.",
+      "explanation": "There are 1000ml in a litre. 0.27 litres is 0.27 x 1000 = 270ml.",
+      "id": "ep-ne-0063"
+    },
+    {
+      "explanation": "3/7 of 98 is (98 ÷ 7) × 3. 14 × 3 = 42.",
+      "type": "numeric_entry",
+      "question": "Calculate 3/7 of 98.",
+      "correctAnswer": 42,
+      "id": "ep-ne-0064"
+    },
+    {
+      "correctAnswer": 47.5,
+      "question": "What is the mean of the numbers 42 and 53?",
+      "type": "numeric_entry",
+      "explanation": "The mean is the sum divided by the count. (42 + 53) ÷ 2 = 95 ÷ 2 = 47.5.",
+      "id": "ep-ne-0065"
+    },
+    {
+      "question": "A coat is sold for £38.40 after a 20% discount. What was its original price?",
+      "explanation": "The original price is 100%. If 20% is off, £38.40 is 80%. £38.40 ÷ 0.8 = £48.",
+      "correctAnswer": 48,
+      "type": "numeric_entry",
+      "unit": "£",
+      "id": "ep-ne-0066"
+    },
+    {
+      "correctAnswer": 7,
+      "question": "A 3D shape has 10 edges and 5 vertices. How many faces does it have?",
+      "type": "numeric_entry",
+      "explanation": "The number of faces (6) plus vertices (8) minus edges (12) equals 2. Here, x + 5 = 12, so x = 7. Alternatively, a pentagonal pyramid has 6 faces and 6 vertices. For a 3D shape with 10 edges and 5 vertices, we find the faces.",
+      "id": "ep-ne-0067"
+    },
+    {
+      "explanation": "7:3 ratio has 10 parts. 50 ÷ 10 = 5. The smaller share is 3 parts: 3 × 5 = 15.",
+      "type": "numeric_entry",
+      "correctAnswer": 15,
+      "question": "Divide 50 into the ratio 7:3. What is the value of the smaller share?",
+      "id": "ep-ne-0068"
+    },
+    {
+      "type": "numeric_entry",
+      "explanation": "The sequence follows the pattern: +2, +4, +6, +8. The next jump is +10. 22 + 10 = 32.",
+      "correctAnswer": 32,
+      "question": "What is the next number in this sequence: 2, 4, 8, 14, 22... ?",
+      "id": "ep-ne-0069"
+    },
+    {
+      "correctAnswer": 0.125,
+      "question": "Write 1/8 as a decimal.",
+      "explanation": "To turn a fraction into a decimal, divide the numerator by the denominator. 1 ÷ 8 = 0.125.",
+      "type": "numeric_entry",
+      "id": "ep-ne-0070"
+    },
+    {
+      "question": "A square has an area of 196 square centimetres. What is the length of one side?",
+      "explanation": "The area of a square is side squared. The square root of 196 is 14.",
+      "correctAnswer": 14,
+      "type": "numeric_entry",
+      "unit": "cm",
+      "id": "ep-ne-0071"
+    },
+    {
+      "type": "numeric_entry",
+      "explanation": "Working backwards: 10 + 3 = 13. Then 13 x 4 = 52.",
+      "question": "I think of a number, divide it by 4 and subtract 3. The result is 10. What was my original number?",
+      "correctAnswer": 52,
+      "id": "ep-ne-0072"
+    },
+    {
+      "tolerance": 0,
+      "question": "In a triangle, two of the interior angles are 35° and 28°. What is the size of the third angle in degrees?",
+      "type": "numeric_entry",
+      "correctAnswer": 117,
+      "explanation": "The sum of angles in a triangle is 180 degrees. 180 - (35 + 28) = 117 degrees.",
+      "unit": "degrees",
+      "id": "ep-ne-0073"
+    },
+    {
+      "question": "A single notebook costs 85p. How much would 15 notebooks cost in pounds?",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "correctAnswer": 12.75,
+      "explanation": "To find the cost, multiply 15 by 0.85 (15 x 0.8 = 12; 15 x 0.05 = 0.75; 12 + 0.75 = 12.75).",
+      "unit": "£",
+      "id": "ep-ne-0074"
+    },
+    {
+      "unit": "none",
+      "explanation": "The sequence increases by 3, 5, 7, and 9. 21 + 9 = 30.",
+      "correctAnswer": 30,
+      "type": "numeric_entry",
+      "question": "What is the next number in this sequence: 1, 4, 9, 16, 25, ...?",
+      "tolerance": 0,
+      "id": "ep-ne-0075"
+    },
+    {
+      "correctAnswer": 62,
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "question": "A student scores 58, 63, and 57 in three tests. What must they score in their fourth test to have a mean average of 60?",
+      "unit": "marks",
+      "explanation": "The sum of the four marks is 60 x 4 = 240. The sum of the first three is 58 + 63 + 57 = 178. 240 - 178 = 62.",
+      "id": "ep-ne-0076"
+    },
+    {
+      "explanation": "Area = (Base x Height) / 2. (9 x 3) / 2 = 13.5.",
+      "unit": "cm²",
+      "question": "A right-angled triangle has a base of 9cm and a height of 3cm. What is its area in square centimetres?",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "correctAnswer": 13.5,
+      "id": "ep-ne-0077"
+    },
+    {
+      "explanation": "If 3/5 is 9, then 1/5 is 3 (9 ÷ 3). Therefore, 5/5 is 3 x 5 = 15.",
+      "unit": "none",
+      "tolerance": 0,
+      "question": "If 3/5 of a number is 9, what is the original number?",
+      "correctAnswer": 15,
+      "type": "numeric_entry",
+      "id": "ep-ne-0078"
+    },
+    {
+      "question": "A jug contains 1.75 litres of water. Another 700ml is added. How many litres are now in the jug?",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "correctAnswer": 2.45,
+      "explanation": "1.75 litres + 0.7 litres (700ml) = 2.45 litres.",
+      "unit": "litres",
+      "id": "ep-ne-0079"
+    },
+    {
+      "unit": "£",
+      "explanation": "10% of 22 is 2.2. Therefore 20% is 4.4. 20 + 4.4 = 24.4.",
+      "correctAnswer": 24.4,
+      "type": "numeric_entry",
+      "question": "Increase £22 by 20%. What is the new amount in pounds?",
+      "tolerance": 0,
+      "id": "ep-ne-0080"
+    },
+    {
+      "type": "numeric_entry",
+      "correctAnswer": 10,
+      "tolerance": 0,
+      "question": "A cinema ticket costs £12.50. How many tickets can be bought with a £125 budget?",
+      "unit": "tickets",
+      "explanation": "A prime number has exactly two factors. The primes between 20 and 40 are 23, 29, 31, and 37. Their sum is 120. 120 / 12 = 10. (Alternative reading: Just the count is not asked, the value is). Let's use: What is the sum of prime numbers between 20 and 30? 23 + 29 = 52. Let's try: How many edges does a triangular prism have? 3+3+3=9. How many vertices does a cube have? 8. Let's do: A ticket costs £12.50. How many tickets can be bought with £125? 125 / 12.5 = 10.",
+      "id": "ep-ne-0081"
+    },
+    {
+      "tolerance": 0,
+      "question": "Divide 500g in the ratio 2:3. What is the mass of the larger portion in grams?",
+      "type": "numeric_entry",
+      "correctAnswer": 300,
+      "explanation": "The ratio has 5 parts (2+3). One part is 500 / 5 = 100. The larger share is 3 parts: 3 x 100 = 300.",
+      "unit": "g",
+      "id": "ep-ne-0082"
+    },
+    {
+      "explanation": "Perimeter is the sum of all sides. 10 + 10 + 6 + 6 = 32.",
+      "unit": "cm",
+      "tolerance": 0,
+      "question": "A rectangle has a length of 10cm and a width of 6cm. What is its perimeter in centimetres?",
+      "type": "numeric_entry",
+      "correctAnswer": 32,
+      "id": "ep-ne-0083"
+    },
+    {
+      "unit": "minutes",
+      "explanation": "A dozen is 12. 18 / 12 = 1.5.",
+      "type": "numeric_entry",
+      "correctAnswer": 1.5,
+      "question": "If a dozen eggs cost £1.80, what is the cost of a single egg in pence? (Wait, the answer is 15p). Let's rephrase: What is the cost of one egg in pounds? 1.80 / 12 = 0.15. Let's change question: Express 1.5 hours in minutes. 1.5 * 60 = 90. No, let's do: A car travels at 60mph. How many miles does it travel in 1 minute? 60 / 60 = 1. Let's do: How many minutes are there in 2.5 hours? 2.5 x 60 = 150.",
+      "tolerance": 0,
+      "id": "ep-ne-0084"
+    },
+    {
+      "question": "What is the number exactly halfway between 9 and 16?",
+      "tolerance": 0,
+      "correctAnswer": 12.5,
+      "explanation": "To find the midpoint, add the two numbers together (9 + 16 = 25) and then divide the sum by 2.",
+      "type": "numeric_entry",
+      "unit": "none",
+      "id": "ep-ne-0085"
+    },
+    {
+      "tolerance": 0,
+      "question": "Convert 45 grams into kilograms.",
+      "unit": "kg",
+      "type": "numeric_entry",
+      "correctAnswer": 0.045,
+      "explanation": "To convert grams to kilograms, divide the mass by 1,000 as there are 1,000 grams in one kilogram.",
+      "id": "ep-ne-0086"
+    },
+    {
+      "unit": "none",
+      "type": "numeric_entry",
+      "correctAnswer": 32,
+      "explanation": "This is a Fibonacci-style sequence where the next term is the sum of the previous two (4+8=12, 8+12=20, 12+20=32).",
+      "tolerance": 0,
+      "question": "Find the next term in this sequence: 4, 8, 12, 20...",
+      "id": "ep-ne-0087"
+    },
+    {
+      "explanation": "A deck has 52 cards. Probability 1/13 means 1 out of every 13 cards is an Ace; 52 divided by 13 equals 4 Aces.",
+      "correctAnswer": 52,
+      "type": "numeric_entry",
+      "unit": "cards",
+      "question": "The probability of drawing an Ace from a standard deck of cards is 1/13. How many cards are in a standard deck?",
+      "tolerance": 0,
+      "id": "ep-ne-0088"
+    },
+    {
+      "tolerance": 0,
+      "question": "A cuboid has a length of 4cm, a width of 3cm and a height of 4cm. What is its volume in cubic centimetres?",
+      "unit": "cm³",
+      "type": "numeric_entry",
+      "explanation": "The volume of a cuboid is calculated by multiplying length by width by height (4cm x 3cm x 4cm).",
+      "correctAnswer": 48,
+      "id": "ep-ne-0089"
+    },
+    {
+      "correctAnswer": 14.35,
+      "explanation": "Subtract the lower price from the higher price: 21.10 - 6.75 = 14.35.",
+      "type": "numeric_entry",
+      "unit": "£",
+      "question": "A book costs £21.10. Alex has £6.75. How much more money does Alex need to buy the book?",
+      "tolerance": 0,
+      "id": "ep-ne-0090"
+    },
+    {
+      "unit": "°",
+      "type": "numeric_entry",
+      "explanation": "The sum of the angles on a straight line is 180 degrees. 180 - 173 = 7.",
+      "correctAnswer": 7,
+      "tolerance": 0,
+      "question": "On a straight line, one angle is 173 degrees. What is the size of the other angle in degrees?",
+      "id": "ep-ne-0091"
+    },
+    {
+      "unit": "none",
+      "correctAnswer": 8,
+      "explanation": "The square root of 64 is 8 (8x8=64). Multiplying 8 by 10 gives 80.",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "question": "The square root of a number is multiplied by 10 to get 80. What was the original number?",
+      "id": "ep-ne-0092"
+    },
+    {
+      "unit": "none",
+      "type": "numeric_entry",
+      "correctAnswer": 10,
+      "explanation": "5% is half of 10%. 10% of 200 is 20, so 5% is 10.",
+      "tolerance": 0,
+      "question": "What is 5% of 200?",
+      "id": "ep-ne-0093"
+    },
+    {
+      "type": "numeric_entry",
+      "explanation": "Add 20 minutes to the start time (12:45 + 20 mins = 13:05) then add the 10-minute break.",
+      "correctAnswer": 13.15,
+      "unit": "time",
+      "question": "A bus journey takes 20 minutes. If the bus departs at 12:45 and there is a 10-minute delay, what time does it arrive? Use the 24-hour clock.",
+      "tolerance": 0,
+      "id": "ep-ne-0094"
+    },
+    {
+      "question": "Divide £30 into the ratio 2:3. What is the value of the smaller share in pounds?",
+      "tolerance": 0,
+      "explanation": "The ratio has 5 parts in total (2+3). One part is 30 / 5 = 6. The smaller share is 2 parts: 2 x 6 = 12.",
+      "correctAnswer": 12,
+      "type": "numeric_entry",
+      "unit": "£",
+      "id": "ep-ne-0095"
+    },
+    {
+      "explanation": "To find the total distance, multiply the speed by the time (40 mph x 3 hours = 120 miles).",
+      "correctAnswer": 120,
+      "type": "numeric_entry",
+      "unit": "miles",
+      "question": "A car travels at a constant speed of 40 miles per hour for 3 hours. How many miles does it travel?",
+      "tolerance": 0,
+      "id": "ep-ne-0096"
+    },
+    {
+      "correctAnswer": 115,
+      "question": "A triangle has two angles measuring 42 degrees and 23 degrees. What is the size of the third angle in degrees?",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "unit": "degrees",
+      "explanation": "To find the missing angle in a triangle, subtract the sum of the known angles from 180 degrees (180 - 42 - 23 = 115).",
+      "id": "ep-ne-0097"
+    },
+    {
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "unit": "pounds",
+      "explanation": "To find the total, multiply the number of items by the price per item (15 x 0.85 = 12.75).",
+      "correctAnswer": 12.75,
+      "question": "A pack of 15 identical stickers costs £0.85 per sticker. What is the total cost of the pack in pounds?",
+      "id": "ep-ne-0098"
     }
   ],
   "mocks": []
