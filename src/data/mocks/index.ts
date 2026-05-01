@@ -268,7 +268,18 @@ function rawToQuestion(raw: RawQuestion, idx: number): Question {
       };
     }
     case "image-question": {
-      const r = raw as RawImage;
+      const r = raw as RawImage & { imageDescription?: string };
+      // Degrade to MCQ until a real image URL is wired in.
+      if (!r.image) {
+        return {
+          type: "mcq",
+          id,
+          question: r.question,
+          options: r.options,
+          correctAnswer: r.correctAnswer,
+          explanation: r.explanation,
+        };
+      }
       return {
         type: "image-question",
         id,
@@ -281,7 +292,23 @@ function rawToQuestion(raw: RawQuestion, idx: number): Question {
       };
     }
     case "hot-spot": {
-      const r = raw as RawHotSpot;
+      const r = raw as RawHotSpot & { imageDescription?: string };
+      // Hot-spot without an image URL can't be rendered — skip in a safe way
+      // by converting to a basic MCQ if options exist; otherwise return a
+      // placeholder MCQ so the mock still has the right number of questions.
+      if (!r.image) {
+        return {
+          type: "mcq",
+          id,
+          question: r.question,
+          options: r.spots.map((s) => s.label),
+          correctAnswer: Math.max(
+            0,
+            r.spots.findIndex((s) => s.id === r.correctSpotId),
+          ),
+          explanation: r.explanation,
+        };
+      }
       return {
         type: "hot-spot",
         id,
