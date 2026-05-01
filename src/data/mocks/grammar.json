@@ -1035,7 +1035,4162 @@
       "type": "dropdown_blanks",
       "explanation": "'Oversee' means to supervise a person or a work task to ensure it is done correctly.",
       "id": "g-db-0060"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "hardly ever",
+            "seldom if ever",
+            "never ever",
+            "ever so often"
+          ]
+        }
+      ],
+      "explanation": "'Seldom if ever' is a set conjunctive phrase used to emphasise that something almost never happens.",
+      "prompt": "Choose the phrase that expresses frequency.",
+      "type": "dropdown_blanks",
+      "template": "The local council {{0}} upgrades the playground equipment, despite constant complaints from parents.",
+      "id": "g-db-0061"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "will be being finished",
+            "is being finished",
+            "will have been finished",
+            "has been finished"
+          ]
+        }
+      ],
+      "type": "dropdown_blanks",
+      "prompt": "Select the correct future tense.",
+      "template": "By the time the Olympic Games begin, the new stadium {{0}} in East London.",
+      "explanation": "The future perfect passive 'will have been finished' is used to describe an action that will be completed by a specific point in the future.",
+      "id": "g-db-0062"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "brought about",
+            "brought up",
+            "brought off",
+            "brought on"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "type": "dropdown_blanks",
+      "prompt": "Select the correct phrasal verb.",
+      "template": "The sudden change in the exchange rate was {{0}} by the Chancellor's unexpected announcement.",
+      "explanation": "'Brought about' is a phrasal verb meaning to cause something to happen.",
+      "id": "g-db-0063"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 3,
+          "options": [
+            "put off",
+            "put together",
+            "put across",
+            "put up with"
+          ]
+        }
+      ],
+      "explanation": "'Put up with' is a phrasal verb meaning to tolerate or endure a difficult situation.",
+      "type": "dropdown_blanks",
+      "prompt": "Choose the phrasal verb that means 'tolerate'.",
+      "template": "Residents in the flat below are finding it increasingly difficult to {{0}} the loud music every night.",
+      "id": "g-db-0064"
+    },
+    {
+      "explanation": "'Try as he might' is an inversion used to convey that despite his best efforts, the result was unsuccessful.",
+      "type": "dropdown_blanks",
+      "prompt": "Select the appropriate concessive phrase.",
+      "template": "{{0}}, David could not convince the bank manager to grant him a mortgage.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "However hard he tried",
+            "Try as he might",
+            "In spite of he tried",
+            "Much as he tried"
+          ]
+        }
+      ],
+      "id": "g-db-0065"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "under no circumstances",
+            "on no account",
+            "not until",
+            "only after"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "template": "{{0}} should you leave any personal belongings unattended on the train.",
+      "type": "dropdown_blanks",
+      "prompt": "Select the phrase that triggers an inversion.",
+      "explanation": "'Under no circumstances' requires negative inversion (auxiliary verb before the subject) to express that something is strictly forbidden.",
+      "id": "g-db-0066"
+    },
+    {
+      "explanation": "'Oblivious to' means not being aware of or concerned about what is happening around one.",
+      "template": "The tourists seemed totally {{0}} the fact that they were trespassing on private farmland.",
+      "prompt": "Choose the adjective-preposition pair that fits the context.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "on a par with",
+            "in line to",
+            "oblivious to",
+            "liable for"
+          ]
+        }
+      ],
+      "id": "g-db-0067"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "hardly any",
+            "a lot of",
+            "very little",
+            "few of"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "explanation": "'Notice' is an uncountable noun in this context, so 'very little' is used to show a small amount.",
+      "template": "The shoplifter was able to walk out of the supermarket because the security guards paid {{0}} notice to the alarm.",
+      "prompt": "Choose the correct quantifier.",
+      "type": "dropdown_blanks",
+      "id": "g-db-0068"
+    },
+    {
+      "explanation": "'Should have been repaired' is used to express a past obligation or expectation that was not fulfilled.",
+      "template": "The boiler {{0}} weeks ago, but the landlord keeps making excuses for the delay.",
+      "prompt": "Select the modal verb phrase that indicates a missed obligation.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "was being repaired",
+            "should have been repaired",
+            "would have been repaired",
+            "must have been repaired"
+          ]
+        }
+      ],
+      "id": "g-db-0069"
+    },
+    {
+      "explanation": "The past perfect continuous is used to describe an action that was ongoing up until a specific point in the past.",
+      "template": "The commuters {{0}} for over forty minutes when the delayed train finally pulled into the platform.",
+      "prompt": "Select the correct past tense form.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 3,
+          "options": [
+            "has been waiting",
+            "is waiting",
+            "waits",
+            "had been waiting"
+          ]
+        }
+      ],
+      "id": "g-db-0070"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "with a view to",
+            "for the purpose to Mazal",
+            "so as to be",
+            "in order that"
+          ]
+        }
+      ],
+      "template": "The government is introducing new legislation {{0}} reducing plastic waste in the oceans.",
+      "prompt": "Choose the phrase that expresses purpose.",
+      "type": "dropdown_blanks",
+      "explanation": "'With a view to' is followed by a gerund (-ing form) and expresses a purpose or intention.",
+      "id": "g-db-0071"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "negligible",
+            "unpredictable",
+            "disastrous",
+            "beneficial"
+          ]
+        }
+      ],
+      "type": "dropdown_blanks",
+      "prompt": "Select the vocabulary word that describes a negative outcome.",
+      "template": "The heavy frost in late April had a {{0}} effect on the local fruit farmers' harvest.",
+      "explanation": "'Disastrous' is used to describe something that causes great damage or failure, fitting the context of a crop failure.",
+      "id": "g-db-0072"
+    },
+    {
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "scarcely",
+            "hardly",
+            "nearly",
+            "rarely"
+          ]
+        }
+      ],
+      "explanation": "'Hardly' is used with 'any' to mean 'almost no' or 'very little'.",
+      "prompt": "Choose the correct word to complete the sentence.",
+      "template": "There is {{0}} any petrol left in the car, so we must find a service station soon.",
+      "id": "g-db-0073"
+    },
+    {
+      "prompt": "Choose the correct modal phrase.",
+      "template": "I {{0}} book a table at the restaurant because it was almost empty when we arrived.",
+      "explanation": "'Didn't need to' is used for an action that wasn't necessary, whereas 'needn't have' implies it was done unnecessarily.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "options": [
+            "ought to have",
+            "should have",
+            "didn't need to",
+            "mustn't have"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "id": "g-db-0074"
+    },
+    {
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "Unless",
+            "If",
+            "Whether",
+            "Provided"
+          ]
+        }
+      ],
+      "explanation": "'Unless' means 'if not' and is used here to show the condition under which the picnic will be cancelled.",
+      "prompt": "Choose the correct conjunction.",
+      "template": "{{0}} the weather improves significantly, the school picnic will be postponed until next week.",
+      "id": "g-db-0075"
+    },
+    {
+      "template": "I don't know how you can {{0}} the constant noise from the motorway behind your house.",
+      "prompt": "Select the correct phrasal verb.",
+      "explanation": "The phrasal verb 'put up with' means to tolerate something unpleasant.",
+      "blanks": [
+        {
+          "options": [
+            "take after scraps",
+            "get round to",
+            "make up for",
+            "put up with"
+          ],
+          "correctIndex": 3
+        }
+      ],
+      "type": "dropdown_blanks",
+      "id": "g-db-0076"
+    },
+    {
+      "template": "By the end of this month, I {{0}} my apprenticeship at the engineering firm in Birmingham.",
+      "prompt": "Complete the sentence with the correct future tense.",
+      "explanation": "The future perfect ('will have finished') is used for an action that will be completed before a specific point in the future.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "shall be finishing",
+            "will have finished",
+            "am finishing激",
+            "have finished"
+          ]
+        }
+      ],
+      "type": "dropdown_blanks",
+      "id": "g-db-0077"
+    },
+    {
+      "explanation": "Reduced relative clauses using the present participle ('offering') act like an adjective to describe the noun.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "options": [
+            "offering",
+            "offered",
+            "to offer激",
+            "had offered"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "prompt": "Choose the correct participle form.",
+      "template": "The company sent out a brochure {{0}} a wide range of organic skincare products.",
+      "id": "g-db-0078"
+    },
+    {
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "options": [
+            "did the fire alarm ring",
+            "when the fire alarm rang",
+            "had the fire alarm rung激",
+            "the fire alarm rang激粉"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "explanation": "With the negative adverb 'Hardly', we use inversion (had + subject + past participle) followed by 'when'.",
+      "prompt": "Select the phrase that correctly follows the inversion.",
+      "template": "Hardly {{0}} when everyone in the office building rushed towards the emergency exits.",
+      "id": "g-db-0079"
+    },
+    {
+      "prompt": "Choose the correct noun.",
+      "template": "The motorway was closed for three hours following a mechanical {{0}} of a heavy goods vehicle.",
+      "explanation": "A 'breakdown' refers to a failure in a system, machine, or relationship.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "options": [
+            "breakthrough",
+            "breakout激",
+            "breakdown激",
+            "breakup激"
+          ],
+          "correctIndex": 3
+        }
+      ],
+      "id": "g-db-0080"
+    },
+    {
+      "explanation": "'Must have been' is used to make a logical deduction about a past event that we are certain about.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "would have been激",
+            "must have been激",
+            "can't have been激",
+            "should have been激"
+          ]
+        }
+      ],
+      "type": "dropdown_blanks",
+      "template": "The streets are soaking wet this morning; it {{0}} raining very heavily during the night.",
+      "prompt": "Choose the correct modal for deduction.",
+      "id": "g-db-0081"
+    },
+    {
+      "template": "The day {{0}} they moved into their new cottage in the Cotswolds was the hottest of the year.",
+      "prompt": "Choose the correct relative pronoun construction.",
+      "blanks": [
+        {
+          "options": [
+            "on which激",
+            "that激",
+            "where激",
+            "at which激方]}],explanation:"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "type": "dropdown_blanks",
+      "explanation": "We use 'on which' or 'that' (informally) after 'the day'. In formal contexts, 'on which' is preferred.",
+      "id": "g-db-0082"
+    },
+    {
+      "template": "The CEO visited the factory {{0}} streamlining the production process next year.",
+      "prompt": "Choose the correct prepositional phrase.",
+      "explanation": "'With a view to' is followed by a gerund (-ing) and means 'with the intention of'.",
+      "blanks": [
+        {
+          "options": [
+            "at the sight of激",
+            "in view of激",
+            "with a view to激",
+            "regardless of激品]}],explanation:"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "type": "dropdown_blanks",
+      "id": "g-db-0083"
+    },
+    {
+      "template": "After a long walk across the moors, the exhausted hikers {{0}} down on the grass to rest.",
+      "prompt": "Choose the correct past tense verb.",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "lay激粉",
+            "lie激粉",
+            "laid激粉",
+            "lain激粉]}],explanation:"
+          ]
+        }
+      ],
+      "type": "dropdown_blanks",
+      "explanation": "'Lay' is the past tense of the intransitive verb 'lie' (to recline). 'Laid' is the past of 'lay' (to put down).",
+      "id": "g-db-0084"
+    },
+    {
+      "explanation": "'Although' is a conjunction used to introduce a subordinate clause that contains a contrast to the main clause.",
+      "prompt": "Choose the correct conjunction to show contrast.",
+      "template": "{{0}} the traffic was extremely heavy, we managed to arrive at the theatre before the curtain rose.",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "Despite",
+            "Whereas",
+            "Although",
+            "In spite"
+          ]
+        }
+      ],
+      "type": "dropdown_blanks",
+      "id": "g-db-0085"
+    },
+    {
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "on",
+            "with",
+            "to",
+            "for"
+          ]
+        }
+      ],
+      "template": "The price of the luxury apartment is equivalent {{0}} nearly twenty years of the average worker's salary.",
+      "prompt": "Select the correct preposition.",
+      "explanation": "The adjective 'equivalent' is followed by the preposition 'to' when comparing values or amounts.",
+      "id": "g-db-0086"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "Seldom",
+            "Rarely",
+            "Scarcely tastes",
+            "No sooner"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "template": "{{0}} have I witnessed such a display of courage as I saw today.",
+      "explanation": "'Seldom' is a negative adverb that triggers inversion (verb before subject) at the start of a sentence for emphasis.",
+      "prompt": "Choose the correct adverb for emphasis.",
+      "type": "dropdown_blanks",
+      "id": "g-db-0087"
+    },
+    {
+      "type": "dropdown_blanks",
+      "prompt": "Choose the correct modal verb for deduction.",
+      "explanation": "'Can't have been' is used to express a strong deduction or certainty that something did not happen in the past.",
+      "template": "He {{0}} the person who stole the laptop, as he was at a meeting in London at the time.",
+      "blanks": [
+        {
+          "correctIndex": 3,
+          "options": [
+            "couldn't have been",
+            "mustn't have been",
+            "shoudn't have been",
+            "can't have been"
+          ]
+        }
+      ],
+      "id": "g-db-0088"
+    },
+    {
+      "template": "The local council decided to {{0}} the outdoor concert until the following weekend due to the thunderstorms.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "put through",
+            "put off",
+            "put out",
+            "put away"
+          ]
+        }
+      ],
+      "explanation": "The phrasal verb 'put off' means to delay or postpone an event until a later time.",
+      "prompt": "Choose the correct phrasal verb.",
+      "type": "dropdown_blanks",
+      "id": "g-db-0089"
+    },
+    {
+      "type": "dropdown_blanks",
+      "template": "The new management team has {{0}} significant improvements in the company's productivity.",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "brought about",
+            "brought up",
+            "brought round",
+            "brought in"
+          ]
+        }
+      ],
+      "explanation": "To 'bring about' something means to cause it to happen, often used regarding significant changes.",
+      "prompt": "Choose the phrasal verb that means 'to cause'.",
+      "id": "g-db-0090"
+    },
+    {
+      "type": "dropdown_blanks",
+      "prompt": "Select the correct future tense.",
+      "explanation": "The future perfect 'will have finished' is used to describe an action that will be completed by a specific point in the future.",
+      "blanks": [
+        {
+          "options": [
+            "had finished",
+            "finishes",
+            "will have finished",
+            "is finishing"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "template": "I hope that by this time next year, the builders {{0}} the renovations on the old library.",
+      "id": "g-db-0091"
+    },
+    {
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "options": [
+            "scanty tastes",
+            "scarce",
+            "sparse",
+            "rarely"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "template": "Fresh water was becoming increasingly {{0}} in the remote village after several months of drought.",
+      "prompt": "Choose the correct adjective regarding availability.",
+      "explanation": "'Scarce' is the correct adjective to describe a resource, like fresh water, that is in short supply.",
+      "id": "g-db-0092"
+    },
+    {
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 3,
+          "options": [
+            "did I realize",
+            "I realized",
+            "I had realized",
+            "did I only realize"
+          ]
+        }
+      ],
+      "template": "Only later {{0}} that I had accidentally left my passport in the hotel drawer.",
+      "explanation": "When 'Only when' or 'Only later' starts a sentence, the auxiliary verb 'did' must precede the subject.",
+      "prompt": "Select the correct word order for inversion.",
+      "id": "g-db-0093"
+    },
+    {
+      "type": "dropdown_blanks",
+      "explanation": "To be made 'redundant' means to lose one's job because the employer no longer needs that position.",
+      "prompt": "Choose the correct work-related vocabulary.",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "redundant",
+            "dismissed",
+            "resigned resigned",
+            "retired"
+          ]
+        }
+      ],
+      "template": "Several staff members were made {{0}} when the high-street bank decided to close its local branch.",
+      "id": "g-db-0094"
+    },
+    {
+      "type": "dropdown_blanks",
+      "prompt": "Choose the correct form of the verb 'regret'.",
+      "explanation": "'Regret to tell you' is used to politely or formally deliver bad news. 'Regret telling' would mean you feel sorry about a past action.",
+      "blanks": [
+        {
+          "options": [
+            "regret to say",
+            "regret saying",
+            "regret to tell you",
+            "regretting to tell"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "template": "We {{0}} that your application for the position of senior editor has been unsuccessful on this occasion.",
+      "id": "g-db-0095"
+    },
+    {
+      "type": "dropdown_blanks",
+      "explanation": "'Not only... but also' is a correlative conjunction used to connect and emphasise two related pieces of information.",
+      "prompt": "Select the correct correlative conjunction pair.",
+      "template": "The new art gallery is {{0}} architecturally stunning {{1}} incredibly functional for the local community.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "neither nor",
+            "not only but also",
+            "either or",
+            "both and"
+          ]
+        }
+      ],
+      "id": "g-db-0096"
+    },
+    {
+      "template": "The police have launched an inquiry to look {{0}} the cause of the fire at the warehouse.",
+      "prompt": "Select the correct preposition.",
+      "explanation": "The verb 'investigate' can be replaced by the phrasal verb 'look into'.",
+      "blanks": [
+        {
+          "options": [
+            "at",
+            "into",
+            "on",
+            "to"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "type": "dropdown_blanks",
+      "id": "g-db-0097"
+    },
+    {
+      "prompt": "Choose the correct linking word.",
+      "template": "{{0}} working under immense pressure, the surgical team remained calm and focused.",
+      "explanation": "'Despite' is a preposition used to show contrast and is followed by a noun or gerund (working).",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "Despite",
+            "Although",
+            "Even so",
+            "However"
+          ]
+        }
+      ],
+      "id": "g-db-0098"
+    },
+    {
+      "template": "The front door was wide open when I arrived; I {{0}} very distracted when I left this morning.",
+      "prompt": "Choose the correct modal verb phrase.",
+      "explanation": "'Must have been' is used for making a logical deduction about a past event based on evidence.",
+      "blanks": [
+        {
+          "options": [
+            "should have been",
+            "could be",
+            "must have been",
+            "might be hid"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "type": "dropdown_blanks",
+      "id": "g-db-0099"
+    },
+    {
+      "explanation": "To 'overlook' something means to fail to notice or consider it.",
+      "blanks": [
+        {
+          "options": [
+            "overtook",
+            "overcame",
+            "overran soul",
+            "overlooked"
+          ],
+          "correctIndex": 3
+        }
+      ],
+      "type": "dropdown_blanks",
+      "template": "The committee admitted that they had {{0}} several key details in the initial safety report.",
+      "prompt": "Select the most appropriate verb.",
+      "id": "g-db-0100"
+    },
+    {
+      "prompt": "Select the correct future tense.",
+      "template": "Call me at 8 p.m.; I {{0}} my dinner by then and will be free to talk.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "options": [
+            "will finish",
+            "will have finished",
+            "is finishing",
+            "finishes"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "explanation": "The future perfect 'will have finished' is used for an action that will be completed before a certain point in the future.",
+      "id": "g-db-0101"
+    },
+    {
+      "template": "The mentor tried her best to {{0}} her student {{1}} quitting the PhD programme.",
+      "prompt": "Choose the correct verb and preposition.",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "preventing from",
+            "avoiding to",
+            "dissuading from",
+            "denying to"
+          ]
+        }
+      ],
+      "type": "dropdown_blanks",
+      "explanation": "'Dissuade' is used with the preposition 'from' and a gerund to mean persuading someone not to do something.",
+      "id": "g-db-0102"
+    },
+    {
+      "prompt": "Complete the sentence using inversion.",
+      "template": "No sooner {{0}} the picnic than the heavens opened and it began to pour with rain.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "options": [
+            "had we started",
+            "did we start",
+            "we had started",
+            "we started"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "explanation": "'No sooner' requires inversion of the subject and auxiliary verb (had we).",
+      "id": "g-db-0103"
+    },
+    {
+      "explanation": "'Obsolete' means no longer produced or used; out of date.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "options": [
+            "extinct",
+            "faint sugar",
+            "scarce",
+            "obsolete"
+          ],
+          "correctIndex": 3
+        }
+      ],
+      "prompt": "Select the correct vocabulary word.",
+      "template": "Advances in technology have rendered many traditional manufacturing methods completely {{0}}.",
+      "id": "g-db-0104"
+    },
+    {
+      "prompt": "Select the correct relative pronoun.",
+      "template": "The conditions {{0}} the refugees were subjected were described as inhumane by the charity.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "options": [
+            "to which",
+            "where",
+            "that",
+            "in which case"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "explanation": "'To which' is the formal relative pronoun phrase required after the noun 'conditions'.",
+      "id": "g-db-0105"
+    },
+    {
+      "prompt": "Choose the correct phrasal verb.",
+      "template": "A large multinational corporation is interested in {{0}} the family-run bakery in the village.",
+      "explanation": "'Take over' means to assume control of something, such as a business.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "taking after",
+            "taking over",
+            "taking up soul",
+            "taking on"
+          ]
+        }
+      ],
+      "id": "g-db-0106"
+    },
+    {
+      "template": "The council rejected the proposal, {{0}} a waste of taxpayers' money during a recession.",
+      "prompt": "Choose the most natural sounding phrase.",
+      "explanation": "The participle phrase 'it being seen as' functions as an adverbial clause of reason in this context.",
+      "blanks": [
+        {
+          "options": [
+            "as if it was seen",
+            "seeing as how",
+            "it being seen as",
+            "with a view to being seen"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "type": "dropdown_blanks",
+      "id": "g-db-0107"
+    },
+    {
+      "prompt": "Choose the correct past tense form.",
+      "template": "I'd rather you {{0}} so much money on that expensive car last month.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "hadn't spent",
+            "didn't spend",
+            "shouldn't spend",
+            "haven't spent"
+          ]
+        }
+      ],
+      "explanation": "'I'd rather' followed by a subject requires the past perfect to express regret about a past action.",
+      "id": "g-db-0108"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "hardly",
+            "barely",
+            "scarcely",
+            "virtually"
+          ]
+        }
+      ],
+      "template": "The charity event was so successful that it was {{0}} impossible to find a seat in the hall.",
+      "prompt": "Choose the most appropriate adverb.",
+      "explanation": "'Virtually' is used here as an adverb meaning 'nearly' or 'almost', whereas the others imply 'only just'.",
+      "type": "dropdown_blanks",
+      "id": "g-db-0109"
+    },
+    {
+      "prompt": "Choose the correct verb.",
+      "template": "The government is launching a campaign to {{0}} young people from smoking.",
+      "type": "dropdown_blanks",
+      "explanation": "'Discourage' is the only verb here that is followed by the preposition 'from' and a gerund (-ing form).",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "discourage",
+            "prevent",
+            "prohibit",
+            "forbid"
+          ]
+        }
+      ],
+      "id": "g-db-0110"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "of which",
+            "that",
+            "to which",
+            "whose"
+          ]
+        }
+      ],
+      "explanation": "'To which' is the correct relative pronoun structure required by the phrasal verb 'allude to'.",
+      "type": "dropdown_blanks",
+      "template": "The controversial report, {{0}} the Prime Minister alluded during his speech, has finally been published.",
+      "prompt": "Select the correct relative pronoun.",
+      "id": "g-db-0111"
+    },
+    {
+      "template": "If a serious emergency {{0}}, the local authorities would be prepared to evacuate the entire area.",
+      "prompt": "Select the correct tense for a hypothetical situation.",
+      "explanation": "The second conditional uses 'if + past simple' followed by 'would + infinitive' for hypothetical situations.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "is occurring",
+            "has occurred",
+            "would occur",
+            "occurred"
+          ]
+        }
+      ],
+      "id": "g-db-0112"
+    },
+    {
+      "explanation": "'Catch up with' means to reach the same level or standard as someone else.",
+      "type": "dropdown_blanks",
+      "template": "After being off school for three weeks, it took Sam a long time to {{0}} his classmates.",
+      "prompt": "Choose the correct phrasal verb.",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "keep on",
+            "get over",
+            "catch up with",
+            "look up to"
+          ]
+        }
+      ],
+      "id": "g-db-0113"
+    },
+    {
+      "template": "The morning train service to London was delayed {{0}} a signaling fault at Reading.",
+      "prompt": "Choose the correct prepositional phrase.",
+      "explanation": "'On account of' is a formal synonym for 'because of', indicating the reason for the delay.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "on account of",
+            "instead of",
+            "in addition to",
+            "regardless of"
+          ]
+        }
+      ],
+      "id": "g-db-0114"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 3,
+          "options": [
+            "must have been",
+            "could be",
+            "might be",
+            "should have been"
+          ]
+        }
+      ],
+      "template": "The parcel {{0}} delivered yesterday, but it still hasn't arrived.",
+      "prompt": "Select the correct modal verb for a past expectation.",
+      "explanation": "'Should have been' expresses an unfulfilled expectation or a past obligation that did not happen.",
+      "type": "dropdown_blanks",
+      "id": "g-db-0115"
+    },
+    {
+      "type": "dropdown_blanks",
+      "explanation": "Negative adverbials like 'Hardly' at the start of a sentence require subject-verb inversion using 'did' or 'had'.",
+      "prompt": "Choose the correct inverted word order.",
+      "template": "Hardly {{0}} my new job when I realised I had made a terrible mistake.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "had I started",
+            "did I start",
+            "I had started",
+            "I started"
+          ]
+        }
+      ],
+      "id": "g-db-0116"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "conscientious",
+            "conscious",
+            "conspicuous",
+            "convenient"
+          ]
+        }
+      ],
+      "explanation": "'Conscientious' describes someone who is very careful and puts a lot of effort into their work.",
+      "type": "dropdown_blanks",
+      "template": "She is such a {{0}} employee that she always double-checks every report before sending it.",
+      "prompt": "Select the correct adjective to describe a personality trait.",
+      "id": "g-db-0117"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "would have bought",
+            "will buy",
+            "would buy",
+            "buy"
+          ]
+        }
+      ],
+      "prompt": "Select the correct verb form for a mixed conditional.",
+      "template": "If I hadn't spent all my savings on that holiday, I {{0}} a new laptop today.",
+      "type": "dropdown_blanks",
+      "explanation": "In mixed conditionals, 'if + past perfect' can be followed by 'would + infinitive' to show a present result of a past action.",
+      "id": "g-db-0118"
+    },
+    {
+      "template": "It is widely {{0}} that the local library requires significant investment to remain open.",
+      "prompt": "Complete the passive construction.",
+      "explanation": "'Known' is the past participle required for the passive construction 'is widely known'.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 3,
+          "options": [
+            "had known",
+            "should know",
+            "knows",
+            "known"
+          ]
+        }
+      ],
+      "id": "g-db-0119"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "on the contrary",
+            "consequently",
+            "even so",
+            "otherwise"
+          ]
+        }
+      ],
+      "prompt": "Choose the correct linking word.",
+      "template": "The heavy rainfall caused the river levels to rise rapidly; {{0}}, several homes in the valley were flooded.",
+      "type": "dropdown_blanks",
+      "explanation": "'Consequently' is used to show a result or logical outcome of the previous statement.",
+      "id": "g-db-0120"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "has been seeing",
+            "had been seeing",
+            "was seen",
+            "has seen"
+          ]
+        }
+      ],
+      "explanation": "The past perfect continuous is used here to describe a continuous action that was happening up until a specific point in the past.",
+      "type": "dropdown_blanks",
+      "template": "He {{0}} a physiotherapist for months before his back injury finally began to improve.",
+      "prompt": "Complete the sentence using the correct past tense.",
+      "id": "g-db-0121"
+    },
+    {
+      "prompt": "Select the vocabulary word that best fits the context of public criticism.",
+      "type": "dropdown_blanks",
+      "template": "The MP was known for being {{0}} about her views on environmental policy, regardless of the party line.",
+      "blanks": [
+        {
+          "options": [
+            "withdrawn",
+            "inhibited",
+            "outspoken",
+            "passive"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "explanation": "An 'outspoken' person is someone who expresses their opinions frankly and publicly, even if they are controversial.",
+      "id": "g-db-0122"
+    },
+    {
+      "explanation": "'Should you wish' is a formal way of expressing a first conditional (if you wish), commonly used in business correspondence.",
+      "blanks": [
+        {
+          "options": [
+            "should you wish",
+            "if you wished",
+            "were you wishing",
+            "had you wished"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "prompt": "Choose the most appropriate formal conditional phrase.",
+      "template": "Please do not hesitate to contact our customer service team {{0}} to discuss the terms of your contract further.",
+      "type": "dropdown_blanks",
+      "id": "g-db-0123"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 3,
+          "options": [
+            "in order to",
+            "so as to",
+            "whereas",
+            "lest"
+          ]
+        }
+      ],
+      "explanation": "'Lest' is a formal conjunction meaning 'to avoid the risk of' or 'in case', followed by the subjunctive or 'should'.",
+      "prompt": "Choose the formal conjunction that indicates precaution.",
+      "type": "dropdown_blanks",
+      "template": "The curator handled the ancient manuscript with extreme care {{0}} it be damaged by the light.",
+      "id": "g-db-0124"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "taking up",
+            "taking over",
+            "taking on",
+            "taking in"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "explanation": "'Taking on' in this context means to accept or undertake a new responsibility or challenge.",
+      "prompt": "Select the correct phrasal verb for accepting a responsibility.",
+      "type": "dropdown_blanks",
+      "template": "I don't think she realised how much work she was {{0}} when she volunteered to lead the project.",
+      "id": "g-db-0125"
+    },
+    {
+      "explanation": "This uses negative inversion for emphasis to show that the subject was unaware of a future event at that time.",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "little did she know",
+            "she did not know little",
+            "not only she knew",
+            "hardly she knew"
+          ]
+        }
+      ],
+      "template": "{{0}} when she accepted the job that she would be moving to New York within the year.",
+      "type": "dropdown_blanks",
+      "prompt": "Choose the emphatic expression that fits the sentence structure.",
+      "id": "g-db-0126"
+    },
+    {
+      "explanation": "'In spite of' is a prepositional phrase meaning 'notwithstanding', used to show contrast. 'Despite' would not take 'of'.",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "In case of",
+            "Despite of",
+            "In spite of",
+            "Regardless to"
+          ]
+        }
+      ],
+      "template": "{{0}} the train strike, most of the staff managed to arrive at the office on time.",
+      "type": "dropdown_blanks",
+      "prompt": "Select the correct phrase to show contrast.",
+      "id": "g-db-0127"
+    },
+    {
+      "prompt": "Choose the word that describes difficult-to-read handwriting.",
+      "type": "dropdown_blanks",
+      "template": "The doctor's handwriting was so {{0}} that the pharmacist had to call the surgery to confirm the prescription.",
+      "blanks": [
+        {
+          "options": [
+            "elusive",
+            "allusive",
+            "illiterate",
+            "illegible"
+          ],
+          "correctIndex": 3
+        }
+      ],
+      "explanation": "'Illegible' refers to handwriting or print that is impossible or very hard to read.",
+      "id": "g-db-0128"
+    },
+    {
+      "explanation": "'Must have + past participle' is used to express a strong logical deduction about a past event.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "can't have known",
+            "must have known",
+            "shouldn't have known",
+            "mightn't have known"
+          ]
+        }
+      ],
+      "prompt": "Select the modal verb phrase for a logical deduction about the past.",
+      "template": "They didn't leave a key, so they {{0}} that we were planning to arrive earlier than expected.",
+      "type": "dropdown_blanks",
+      "id": "g-db-0129"
+    },
+    {
+      "prompt": "Complete the sentence with the correct passive verb form.",
+      "template": "I had to take the bus to work all last week while my car {{0}} at the local garage.",
+      "type": "dropdown_blanks",
+      "explanation": "The past continuous passive is used to describe an action that was in progress at a specific time in the past.",
+      "blanks": [
+        {
+          "options": [
+            "was being repaired",
+            "had repaired",
+            "was repairing",
+            "has been repaired"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "id": "g-db-0130"
+    },
+    {
+      "type": "dropdown_blanks",
+      "template": "The management team has promised to {{0}} the complaints regarding the lack of parking spaces.",
+      "prompt": "Select the phrasal verb that means 'to investigate'.",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "look up to",
+            "look down on",
+            "look into",
+            "look after"
+          ]
+        }
+      ],
+      "explanation": "'Look into' is a phrasal verb meaning to investigate or examine the facts about a situation.",
+      "id": "g-db-0131"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "who",
+            "which",
+            "what",
+            "whose"
+          ],
+          "correctIndex": 3
+        }
+      ],
+      "explanation": "'Whose' is a relative pronoun used to indicate possession, referring back to the director.",
+      "type": "dropdown_blanks",
+      "template": "The director, {{0}} previous film won an Oscar, is currently filming a documentary in the Highlands.",
+      "prompt": "Choose the correct relative pronoun to show possession.",
+      "id": "g-db-0132"
+    },
+    {
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "whose",
+            "whom",
+            "who",
+            "which"
+          ]
+        }
+      ],
+      "template": "The candidate for {{0}} I voted did not win the local election.",
+      "explanation": "'Whom' is the object pronoun used after a preposition in formal English.",
+      "prompt": "Choose the correct relative pronoun.",
+      "id": "g-db-0133"
+    },
+    {
+      "explanation": "To 'take on' means to accept a job or responsibility.",
+      "template": "I decided to {{0}} the role of treasurer for the local gardening club.",
+      "prompt": "Choose the correct phrasal verb.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "take up",
+            "take off",
+            "take on",
+            "take out"
+          ]
+        }
+      ],
+      "id": "g-db-0134"
+    },
+    {
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "options": [
+            "unlikely to arrive",
+            "unlikely arriving",
+            "unlikely arrive",
+            "unlikely that arrives"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "explanation": "'Unlikely to' followed by the infinitive is the standard way to express low probability.",
+      "template": "Due to the heavy snow, the delivery is {{0}} before the weekend.",
+      "prompt": "Complete the sentence with the correct future probability.",
+      "id": "g-db-0135"
+    },
+    {
+      "prompt": "Choose the correct conjunction.",
+      "explanation": "'In case' is used to talk about precautions taken for possible future situations.",
+      "template": "You should bring an umbrella {{0}} it rains during the walk.",
+      "blanks": [
+        {
+          "options": [
+            "as if",
+            "despite",
+            "whereas",
+            "in case"
+          ],
+          "correctIndex": 3
+        }
+      ],
+      "type": "dropdown_blanks",
+      "id": "g-db-0136"
+    },
+    {
+      "prompt": "Select the correct conditional structure.",
+      "template": "{{0}} about the roadworks on the M4, I would have taken a different route.",
+      "explanation": "'Had I known' is an inverted conditional used for hypothetical past situations.",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "Had I known",
+            "If I knew",
+            "Did I know",
+            "Should I know"
+          ]
+        }
+      ],
+      "type": "dropdown_blanks",
+      "id": "g-db-0137"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "disinterested",
+            "uninterested",
+            "impartial_p",
+            "prejudiced"
+          ]
+        }
+      ],
+      "type": "dropdown_blanks",
+      "prompt": "Choose the most appropriate adjective.",
+      "template": "It is essential that the referee remains completely {{0}} throughout the match.",
+      "explanation": "An 'impartial' person or judge is one who does not support one person or group more than another.",
+      "id": "g-db-0138"
+    },
+    {
+      "prompt": "Complete the sentence with the correct adverbial phrase.",
+      "explanation": "'No sooner' is followed by 'than' to describe actions happening in quick succession.",
+      "template": "{{0}} had the meeting started than the fire alarm began to ring.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "not only",
+            "no sooner",
+            "scarcely",
+            "not until"
+          ]
+        }
+      ],
+      "type": "dropdown_blanks",
+      "id": "g-db-0139"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 3,
+          "options": [
+            "did he use to be",
+            "he used to be",
+            "he was used to being",
+            "was he used to being"
+          ]
+        }
+      ],
+      "type": "dropdown_blanks",
+      "prompt": "Select the correct verb form for the inversion.",
+      "template": "Little {{0}} questioned by the press, so the interview was quite a shock for him.",
+      "explanation": "'Used to being' describes becoming accustomed to a situation; the inversion occurs after 'little'.",
+      "id": "g-db-0140"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "vague极",
+            "obsolete",
+            "redundant",
+            "archaic"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "type": "dropdown_blanks",
+      "prompt": "Choose the correct vocabulary word for employment.",
+      "explanation": "'Redundant' is the specific term used in UK employment when a job role is no longer needed.",
+      "template": "After thirty years with the company, he was unfortunately made {{0}} during the restructure.",
+      "id": "g-db-0141"
+    },
+    {
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "options": [
+            "should you have",
+            "you should have",
+            "you would have",
+            "would you have"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "explanation": "'Should you' is a formal way of saying 'if you' in conditional sentences.",
+      "template": "Please contact the reception desk {{0}} any further requirements during your stay.",
+      "prompt": "Choose the formal conditional structure.",
+      "id": "g-db-0142"
+    },
+    {
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "must be finishing",
+            "must have finished破",
+            "can't have finished",
+            "should finish破破"
+          ]
+        }
+      ],
+      "template": "The lights are all off in the office, so they {{0}} for the day.",
+      "explanation": "'Must have finished' expresses a strong logical deduction about a past event.",
+      "prompt": "Choose the correct modal verb of deduction.",
+      "id": "g-db-0143"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 3,
+          "options": [
+            "looking for",
+            "looking after",
+            "looking over",
+            "looking forward to"
+          ]
+        }
+      ],
+      "type": "dropdown_blanks",
+      "prompt": "Choose the correct phrasal verb form.",
+      "template": "We are really {{0}} visiting the Cotswolds this summer.",
+      "explanation": "'Looking forward to' must be followed by a gerund (-ing form).",
+      "id": "g-db-0144"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "on account of",
+            "considering",
+            "whereas",
+            "nevertheless"
+          ]
+        }
+      ],
+      "type": "dropdown_blanks",
+      "explanation": "'Considering' is used here as a preposition meaning 'taking into account' the high cost of living.",
+      "prompt": "Choose the correct word to introduce the reason.",
+      "template": "{{0}} how expensive London is, she manages to save a surprising amount of money every month.",
+      "id": "g-db-0145"
+    },
+    {
+      "explanation": "'To which' is the correct relative pronoun construction following the noun 'extent'.",
+      "prompt": "Choose the correct relative pronoun.",
+      "template": "The extent {{0}} the climate is changing has become a major concern for scientists worldwide.",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "to which",
+            "where",
+            "for which",
+            "that"
+          ]
+        }
+      ],
+      "type": "dropdown_blanks",
+      "id": "g-db-0146"
+    },
+    {
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "put down to",
+            "put up with",
+            "put off",
+            "put across"
+          ]
+        }
+      ],
+      "explanation": "To 'put off' means to delay or postpone an event.",
+      "template": "The outdoor concert has been {{0}} until next Tuesday because of the thunderstorm warning.",
+      "prompt": "Choose the correct phrasal verb.",
+      "id": "g-db-0147"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "having built",
+            "being built",
+            "builds",
+            "built"
+          ],
+          "correctIndex": 3
+        }
+      ],
+      "type": "dropdown_blanks",
+      "explanation": "'Built' is a past participle used here as a reduced relative clause meaning 'which was built'.",
+      "template": "The bridge, {{0}} in the late 19th century, is now a Grade II listed structure.",
+      "prompt": "Choose the correct participle form.",
+      "id": "g-db-0148"
+    },
+    {
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "will be finish",
+            "will have finished",
+            "are finishing",
+            "have finished"
+          ]
+        }
+      ],
+      "explanation": "The future perfect 'will have finished' is used for actions that will be completed before a specific point in the future.",
+      "prompt": "Choose the correct future tense.",
+      "template": "By the time the builders leave this evening, they {{0}} painting the entire ground floor.",
+      "id": "g-db-0149"
+    },
+    {
+      "explanation": "'Meticulous' means showing great attention to detail and being very careful and precise.",
+      "template": "The researcher was so {{0}} that she checked every single data point three times before publishing.",
+      "prompt": "Choose the most appropriate adjective.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "meticulous",
+            "plausible",
+            "frivolous",
+            "ambiguous"
+          ]
+        }
+      ],
+      "id": "g-db-0150"
+    },
+    {
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "options": [
+            "might not have been",
+            "couldn't be",
+            "can't have been",
+            "shouldn't have been"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "explanation": "'Can't have been' is used to express a strong deduction about a past impossibility.",
+      "prompt": "Choose the correct modal verb for deduction.",
+      "template": "He {{0}} at the meeting yesterday because he was actually on a flight to Edinburgh at the time.",
+      "id": "g-db-0151"
+    },
+    {
+      "explanation": "'Unless' means 'except if', which fits the condition for the event being cancelled.",
+      "template": "The village fete will go ahead as planned {{0}} the weather takes a sudden turn for the worse.",
+      "prompt": "Choose the correct conditional conjunction.",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "unless",
+            "provided that",
+            "as long as",
+            "if only"
+          ]
+        }
+      ],
+      "type": "dropdown_blanks",
+      "id": "g-db-0152"
+    },
+    {
+      "explanation": "'Despite' is used to show contrast and is followed directly by a noun phrase without 'of'.",
+      "template": "{{0}} her lack of experience in marketing, she was offered the senior manager position.",
+      "prompt": "Choose the correct contrast linker.",
+      "blanks": [
+        {
+          "correctIndex": 3,
+          "options": [
+            "Despite of",
+            "Even although",
+            "In spite for",
+            "Despite"
+          ]
+        }
+      ],
+      "type": "dropdown_blanks",
+      "id": "g-db-0153"
+    },
+    {
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "disinterested",
+            "uninterested",
+            "apathetic",
+            "biased"
+          ]
+        }
+      ],
+      "template": "I tried to explain the rules of cricket to him, but he seemed completely {{0}} in the sport.",
+      "prompt": "Choose the word that describes a lack of interest.",
+      "explanation": "'Uninterested' means not interested or bored, whereas 'disinterested' means impartial.",
+      "id": "g-db-0154"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "take after",
+            "take over",
+            "take up jogging",
+            "take to"
+          ]
+        }
+      ],
+      "type": "dropdown_blanks",
+      "explanation": "To 'take up' a hobby or activity means to start doing it regularly.",
+      "template": "Since moving to the countryside, I have decided to {{0}} as a way to stay fit and enjoy the fresh air.",
+      "prompt": "Choose the correct phrasal verb.",
+      "id": "g-db-0155"
+    },
+    {
+      "explanation": "'Should you require' is a formal way of saying 'If you require' using inversion.",
+      "template": "{{0}} any further assistance with your application, please do not hesitate to contact our helpdesk.",
+      "prompt": "Choose the most formal way to express a condition.",
+      "blanks": [
+        {
+          "options": [
+            "Should you require",
+            "If you required",
+            "If you've required",
+            "Were you requiring"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "type": "dropdown_blanks",
+      "id": "g-db-0156"
+    },
+    {
+      "explanation": "We use 'both of whom' to add information about two people previously mentioned in the sentence.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "of which",
+            "both of whom",
+            "whose both",
+            "both of which"
+          ]
+        }
+      ],
+      "type": "dropdown_blanks",
+      "template": "She has two elder brothers, {{0}} work as engineers in London.",
+      "prompt": "Fill in the missing word.",
+      "id": "g-db-0157"
+    },
+    {
+      "explanation": "'Unpredictable' describes something that changes frequently so that you do not know what to expect.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "options": [
+            "unlikely",
+            "improbable",
+            "unpredictable",
+            "unstable"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "prompt": "Choose the most appropriate word.",
+      "template": "The British weather is notoriously {{0}}, so it is always wise to carry an umbrella.",
+      "id": "g-db-0158"
+    },
+    {
+      "template": "Please inform the HR department immediately {{0}} your home address or contact details.",
+      "prompt": "Select the correct grammatical structure.",
+      "explanation": "This is an inverted first conditional, where 'should' replaces 'if' for a more formal tone.",
+      "blanks": [
+        {
+          "options": [
+            "should you change",
+            "had you changed",
+            "if you changed",
+            "do you change"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "type": "dropdown_blanks",
+      "id": "g-db-0159"
+    },
+    {
+      "explanation": "The phrasal verb 'look forward to' is followed by a gerund (-ing form), meaning to feel excited about a future event.",
+      "blanks": [
+        {
+          "options": [
+            "up with",
+            "in for",
+            "out of",
+            "forward to"
+          ],
+          "correctIndex": 3
+        }
+      ],
+      "type": "dropdown_blanks",
+      "template": "The children are really looking {{0}} visiting the Science Museum next weekend.",
+      "prompt": "Complete the phrasal verb.",
+      "id": "g-db-0160"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "Despite of",
+            "Regardless of",
+            "Even though",
+            "In spite"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "type": "dropdown_blanks",
+      "explanation": "'Regardless of' is a prepositional phrase meaning without being affected by something. 'Despite' wouldn't take 'of'.",
+      "template": "The charity trek will proceed {{0}} the rail strike, as most participants have arranged car sharing.",
+      "prompt": "Choose the correct linking phrase.",
+      "id": "g-db-0161"
+    },
+    {
+      "prompt": "Select the correct verb tense.",
+      "template": "By Christmas, my grandparents {{0}} in that small village in Cornwall for over fifty years.",
+      "explanation": "The future perfect continuous is used to show that something will continue up until a particular event or time in the future.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "will have been living",
+            "will be living",
+            "are living",
+            "will have lived"
+          ]
+        }
+      ],
+      "id": "g-db-0162"
+    },
+    {
+      "template": "The new intern is extremely {{0}}; she never leaves the office until every task is completed perfectly.",
+      "prompt": "Choose the best vocabulary word.",
+      "blanks": [
+        {
+          "options": [
+            "comprehensive",
+            "comprehensible",
+            "conscientious",
+            "considerable"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "type": "dropdown_blanks",
+      "explanation": "A 'conscientious' person is someone who is very careful and puts a lot of effort into their work.",
+      "id": "g-db-0163"
+    },
+    {
+      "prompt": "Select the inverted form.",
+      "template": "{{0}} such a high standard of play from a local amateur football team.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 3,
+          "options": [
+            "rarely I have seen",
+            "rarely did I see",
+            "rarely I saw",
+            "rarely have I seen"
+          ]
+        }
+      ],
+      "explanation": "When a sentence starts with a negative adverb like 'rarely', we use inversion (auxiliary verb before the subject).",
+      "id": "g-db-0164"
+    },
+    {
+      "template": "I’ve decided to take {{0}} gardening now that I have a bit more free time in the evenings.",
+      "prompt": "Choose the correct preposition.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "off",
+            "up",
+            "out",
+            "down"
+          ]
+        }
+      ],
+      "type": "dropdown_blanks",
+      "explanation": "The phrasal verb 'take up' means to start a new hobby or activity.",
+      "id": "g-db-0165"
+    },
+    {
+      "prompt": "Complete the sentence.",
+      "template": "The windows are absolutely filthy; I think they {{0}} for at least six months.",
+      "explanation": "The present perfect passive expresses that an action hasn't happened in a period of time leading up to 'now'.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "haven't been cleaned",
+            "aren't cleaned",
+            "weren't cleaning",
+            "haven't cleaned"
+          ]
+        }
+      ],
+      "id": "g-db-0166"
+    },
+    {
+      "prompt": "Choose the correct adjective.",
+      "template": "The advice my mentor gave me during my first year at university proved to be {{0}}.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "Insignificant",
+            "Slightly",
+            "Invaluable",
+            "Valueless"
+          ]
+        }
+      ],
+      "explanation": "'Invaluable' means extremely useful or indispensable, which fits the context of a mentor's help.",
+      "id": "g-db-0167"
+    },
+    {
+      "template": "There was {{0}} left in the fridge, so we decided to order a takeaway from the local curry house.",
+      "prompt": "Select the correct phrase.",
+      "blanks": [
+        {
+          "correctIndex": 3,
+          "options": [
+            "hardly any",
+            "little of",
+            "scarcely some",
+            "hardly anything"
+          ]
+        }
+      ],
+      "type": "dropdown_blanks",
+      "explanation": "'Hardly anything' is a common expression meaning almost nothing; 'hardly any' would require a noun following it.",
+      "id": "g-db-0168"
+    },
+    {
+      "explanation": "The past perfect passive is used here to describe a state that existed up until a specific point in the past.",
+      "prompt": "Choose the correct verb tense.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "hasn't been",
+            "hadn't been",
+            "wasn't being",
+            "wouldn't be"
+          ]
+        }
+      ],
+      "template": "The historic manor house {{0}} lived in for decades before the council decided to renovate it.",
+      "type": "dropdown_blanks",
+      "id": "g-db-0169"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "negligible",
+            "notable",
+            "meticulous",
+            "redundant"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "template": "The restoration of the cathedral was so {{0}} that every single stone was cleaned by hand.",
+      "explanation": "'Meticulous' means showing great attention to detail; very careful and precise.",
+      "prompt": "Select the most appropriate adjective.",
+      "type": "dropdown_blanks",
+      "id": "g-db-0170"
+    },
+    {
+      "type": "dropdown_blanks",
+      "explanation": "This is an inverted conditional structure equivalent to 'If you should experience'.",
+      "prompt": "Complete the formal conditional sentence.",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "should you experience",
+            "would you experience",
+            "did you experience",
+            "must you experience"
+          ]
+        }
+      ],
+      "template": "{{0}} any delays with your train journey, please keep your tickets to claim a refund.",
+      "id": "g-db-0171"
+    },
+    {
+      "type": "dropdown_blanks",
+      "template": "The lecturer argued that {{0}} a second language is much easier during early childhood.",
+      "blanks": [
+        {
+          "options": [
+            "attaining",
+            "achieving",
+            "obtaining",
+            "acquiring"
+          ],
+          "correctIndex": 3
+        }
+      ],
+      "prompt": "Choose the correct vocabulary word for learning.",
+      "explanation": "'Acquiring' is the standard verb used for the process of learning or developing a skill or habit.",
+      "id": "g-db-0172"
+    },
+    {
+      "type": "dropdown_blanks",
+      "prompt": "Select the correct modal verb for deduction.",
+      "explanation": "'Must have been' is used to make a logical deduction about a past event based on evidence.",
+      "template": "The motorway was completely silent; there {{0}} an accident further up the road.",
+      "blanks": [
+        {
+          "options": [
+            "had to be",
+            "must have been",
+            "should have been",
+            "can't have been"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "id": "g-db-0173"
+    },
+    {
+      "prompt": "Choose the correct phrasal verb particle.",
+      "explanation": "'To get on with' someone means to have a friendly relationship with them.",
+      "template": "Despite their different political views, the two neighbours always managed to get {{0}} each other.",
+      "blanks": [
+        {
+          "options": [
+            "up with",
+            "out of",
+            "on with",
+            "down with"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "type": "dropdown_blanks",
+      "id": "g-db-0174"
+    },
+    {
+      "type": "dropdown_blanks",
+      "template": "{{0}} did he win the local marathon, but he also broke the course record.",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "Not only",
+            "Hardly",
+            "Seldom",
+            "Rarely"
+          ]
+        }
+      ],
+      "prompt": "Complete the emphatic sentence structure.",
+      "explanation": "'Not only' is used at the start of a sentence for emphasis, followed by 'but also' later in the sentence.",
+      "id": "g-db-0175"
+    },
+    {
+      "template": "I'll take an extra jumper {{0}} the temperature drops while we are out on the moor.",
+      "blanks": [
+        {
+          "correctIndex": 3,
+          "options": [
+            "Unless",
+            "Although",
+            "Provided that",
+            "In case"
+          ]
+        }
+      ],
+      "prompt": "Select the correct conjunction.",
+      "explanation": "'In case' is used to talk about precautions taken for a possible future situation.",
+      "type": "dropdown_blanks",
+      "id": "g-db-0176"
+    },
+    {
+      "prompt": "Choose the correct relative pronoun.",
+      "explanation": "'Whose' is a possessive relative pronoun referring to the novelist's books.",
+      "template": "He is a prolific novelist {{0}} latest book has topped the bestseller charts for six weeks.",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "who",
+            "which",
+            "whose",
+            "whom"
+          ]
+        }
+      ],
+      "type": "dropdown_blanks",
+      "id": "g-db-0177"
+    },
+    {
+      "prompt": "Select the word that means impartial.",
+      "explanation": "'Disinterested' means impartial or unbiased, which is a requirement for a legal judge.",
+      "template": "A judge must remain completely {{0}} throughout the trial to ensure a fair verdict.",
+      "blanks": [
+        {
+          "options": [
+            "uninterested",
+            "disinterested",
+            "dissatisfied",
+            "uncomfortable"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "type": "dropdown_blanks",
+      "id": "g-db-0178"
+    },
+    {
+      "type": "dropdown_blanks",
+      "explanation": "'To make do with' means to manage with something that is not quite good enough.",
+      "prompt": "Choose the correct phrasal verb.",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "make do with",
+            "make up for",
+            "make out of",
+            "make away with"
+          ]
+        }
+      ],
+      "template": "Since the local shop was closed, we had to {{0}} the ingredients we already had in the cupboard.",
+      "id": "g-db-0179"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 3,
+          "options": [
+            "In spite of",
+            "Despite of",
+            "Instead of",
+            "Regardless of"
+          ]
+        }
+      ],
+      "template": "The match will proceed {{0}} the rail strike, as most fans are travelling by coach.",
+      "explanation": "'Regardless of' means without being affected by or taking into account the circumstances.",
+      "prompt": "Select the correct prepositional phrase.",
+      "type": "dropdown_blanks",
+      "id": "g-db-0180"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "at",
+            "on",
+            "in",
+            "by"
+          ]
+        }
+      ],
+      "explanation": "The preposition 'on' is used with the phrase 'on behalf of' to mean representing someone.",
+      "template": "I am writing to you {{0}} behalf of the local residents' association to complain about the noise.",
+      "prompt": "Select the correct preposition.",
+      "type": "dropdown_blanks",
+      "id": "g-db-0181"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "Should you wish",
+            "Unless you wish",
+            "Whether you wish",
+            "Might you wish"
+          ]
+        }
+      ],
+      "template": "{{0}} to discuss the contract further, please do not hesitate to contact our legal department.",
+      "explanation": "'Should you wish' is a formal way of expressing a conditional 'If you wish'.",
+      "type": "dropdown_blanks",
+      "prompt": "Choose the most appropriate formal conditional phrase.",
+      "id": "g-db-0182"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "conscientious",
+            "conscious",
+            "controversial",
+            "convenient"
+          ]
+        }
+      ],
+      "explanation": "'Controversial' describes something that causes public disagreement or heated debate.",
+      "template": "The decision to build a new runway at the airport remains a highly {{0}} issue among the local community.",
+      "prompt": "Choose the adjective that fits the context of public debate.",
+      "type": "dropdown_blanks",
+      "id": "g-db-0183"
+    },
+    {
+      "prompt": "Select the phrase that describes a past habit.",
+      "type": "dropdown_blanks",
+      "template": "My grandfather {{0}} five miles every morning to the village bakery before it closed down.",
+      "explanation": "'Used to' is used to describe past habits or states that no longer happen.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "had been walking",
+            "had been used to walking",
+            "used to walk",
+            "would walk"
+          ]
+        }
+      ],
+      "id": "g-db-0184"
+    },
+    {
+      "explanation": "'Little did I know' is an idiomatic expression used to show that the speaker was unaware of a future event.",
+      "template": "{{0}} that my move to Edinburgh would lead to such a successful career in journalism.",
+      "blanks": [
+        {
+          "correctIndex": 3,
+          "options": [
+            "hardly ever",
+            "seldomly",
+            "never before",
+            "little did I know"
+          ]
+        }
+      ],
+      "prompt": "Select the correct inversion structure.",
+      "type": "dropdown_blanks",
+      "id": "g-db-0185"
+    },
+    {
+      "prompt": "Identify the modal verb phrase used for logical deduction.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "must have forgotten",
+            "should have forgotten",
+            "can't have forgotten",
+            "needn't have forgotten"
+          ]
+        }
+      ],
+      "template": "James is usually very punctual; he {{0}} that the meeting was moved to 9:00 am.",
+      "explanation": "'Must have' is used to express a logical deduction about a past event.",
+      "id": "g-db-0186"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "look into",
+            "look up to",
+            "look forward to",
+            "look out for"
+          ]
+        }
+      ],
+      "explanation": "'Look forward to' is a phrasal verb meaning to anticipate something with pleasure, followed by a gerund (-ing).",
+      "template": "We really {{0}} visiting the Lake District during the summer holidays.",
+      "prompt": "Select the correct phrasal verb.",
+      "type": "dropdown_blanks",
+      "id": "g-db-0187"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "will have finished",
+            "will have been finishing",
+            "are finishing",
+            "is going to finish"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "explanation": "The future perfect continuous is used to show the duration of an action up to a certain point in the future.",
+      "template": "By the time the new hospital opens in October, the builders {{0}} it for over three years.",
+      "prompt": "Choose the correct future tense form.",
+      "type": "dropdown_blanks",
+      "id": "g-db-0188"
+    },
+    {
+      "type": "dropdown_blanks",
+      "prompt": "Choose the word that describes leaving a job voluntarily.",
+      "template": "After working for the same firm for twenty years, the CEO suddenly {{0}} to pursue other interests.",
+      "explanation": "'Resigned' means to voluntarily leave a job or position.",
+      "blanks": [
+        {
+          "correctIndex": 3,
+          "options": [
+            "redundant",
+            "unemployed",
+            "retired",
+            "resigned"
+          ]
+        }
+      ],
+      "id": "g-db-0189"
+    },
+    {
+      "prompt": "Select the correct linker of contrast.",
+      "type": "dropdown_blanks",
+      "explanation": "'Despite' is followed by a gerund or a noun phrase to show contrast.",
+      "template": "{{0}} a relatively small town, Stratford-upon-Avon attracts millions of tourists every year.",
+      "blanks": [
+        {
+          "options": [
+            "despite being",
+            "although being village",
+            "in spite the fact",
+            "even though was"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "id": "g-db-0190"
+    },
+    {
+      "prompt": "Select the correct structure for giving strong advice.",
+      "type": "dropdown_blanks",
+      "explanation": "'Had better' is used for strong advice, followed by the bare infinitive. The negative is 'had better not'.",
+      "template": "You {{0}} late for the interview if you want to make a good first impression.",
+      "blanks": [
+        {
+          "options": [
+            "would have been better",
+            "had better be",
+            "had better not be",
+            "had better to not be"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "id": "g-db-0191"
+    },
+    {
+      "prompt": "Choose the word that means essential.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "indefinite",
+            "indispensable",
+            "indifferent",
+            "independent"
+          ]
+        }
+      ],
+      "explanation": "'Indispensable' means absolutely necessary or essential.",
+      "template": "Reliable internet access has become an {{0}} tool for students working from home.",
+      "id": "g-db-0192"
+    },
+    {
+      "explanation": "'Needn't have' is used for actions that were done but were actually unnecessary.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "didn't have to",
+            "needn't have bought",
+            "shouldn't buy"
+          ]
+        }
+      ],
+      "type": "dropdown_blanks",
+      "template": "The fridge was already full, so we {{0}} so much milk at the supermarket.",
+      "prompt": "Choose the correct modal verb to complete the sentence.",
+      "id": "g-db-0193"
+    },
+    {
+      "template": "{{0}} {{1}} leave the laboratory equipment unattended while the experiment is in progress.",
+      "prompt": "Fill in the blanks to create a formal negative instruction.",
+      "explanation": "Negative inversions at the start of a sentence require the auxiliary verb to come before the subject.",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "On no account",
+            "Under no circumstances",
+            "Not only"
+          ]
+        },
+        {
+          "options": [
+            "you should",
+            "you would",
+            "should you"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "type": "dropdown_blanks",
+      "id": "g-db-0194"
+    },
+    {
+      "prompt": "Select the correct vocabulary word.",
+      "template": "The wine selected for the main course was {{0}} to the rich flavours of the beef bourguignon.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "complimentary",
+            "compulsory",
+            "complementary"
+          ]
+        }
+      ],
+      "explanation": "'Complementary' describes things that go well together or improve each other.",
+      "id": "g-db-0195"
+    },
+    {
+      "explanation": "The phrasal verb 'put off' means to delay or postpone an event.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "put up with",
+            "put off",
+            "put out"
+          ]
+        }
+      ],
+      "type": "dropdown_blanks",
+      "template": "The outdoor tennis tournament had to be {{0}} until next week due to the heavy downpour.",
+      "prompt": "Choose the correct phrasal verb.",
+      "id": "g-db-0196"
+    },
+    {
+      "explanation": "When 'seldom' starts a sentence, it triggers inversion; 'had she seen' follows this rule.",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "seldom",
+            "often",
+            "rarely"
+          ]
+        }
+      ],
+      "type": "dropdown_blanks",
+      "template": "{{0}} had she seen such a breathtaking view as the one from the top of the Cairngorms.",
+      "prompt": "Complete the sentence emphasizing frequency.",
+      "id": "g-db-0197"
+    },
+    {
+      "prompt": "Choose the correct future tense.",
+      "template": "By the time the train arrives in London, I {{0}} reading my paperback novel.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "options": [
+            "would have been finishing",
+            "will finish",
+            "will have finished"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "explanation": "The future perfect ('will have finished') is used to describe an action that will be completed before a certain point in the future.",
+      "id": "g-db-0198"
+    },
+    {
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "options": [
+            "despite of",
+            "regardless of",
+            "even although"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "explanation": "'Regardless of' is a prepositional phrase meaning 'without being affected by'.",
+      "prompt": "Select the correct linking phrase.",
+      "template": "The hikers decided to continue to the summit {{0}} the increasingly poor visibility.",
+      "id": "g-db-0199"
+    },
+    {
+      "template": "The politician gave several {{0}} answers when asked about the proposed changes to the pension scheme.",
+      "prompt": "Choose the word that best fits the context.",
+      "explanation": "'Evasive' is used to describe someone who avoids giving direct answers to questions.",
+      "blanks": [
+        {
+          "options": [
+            "evasive",
+            "elusive",
+            "efficient"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "type": "dropdown_blanks",
+      "id": "g-db-0200"
+    },
+    {
+      "explanation": "The adjective 'reminiscent' is paired with the preposition 'of' to describe something that reminds you of something else.",
+      "blanks": [
+        {
+          "options": [
+            "reminiscent with",
+            "reminded of",
+            "reminiscent of"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "type": "dropdown_blanks",
+      "template": "The architecture of the new museum is {{0}} the traditional industrial warehouses that used to line the canal.",
+      "prompt": "Select the correct prepositional pairing.",
+      "id": "g-db-0201"
+    },
+    {
+      "explanation": "The phrase 'to which' relates the noun (proposal) back to the verb (objected). You 'object to' something.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "to which",
+            "for which",
+            "of which"
+          ]
+        }
+      ],
+      "prompt": "Complete the relative clause.",
+      "template": "The council has approved a new development proposal, {{0}} many local residents have strongly objected.",
+      "id": "g-db-0202"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "Had I known",
+            "If I would know",
+            "Did I know"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "type": "dropdown_blanks",
+      "explanation": "'Had I known' is a formal alternative to 'If I had known' for third conditional structures.",
+      "template": "{{0}} how busy the post office was going to be, I would have gone earlier in the morning.",
+      "prompt": "Choose the correct conditional form.",
+      "id": "g-db-0203"
+    },
+    {
+      "template": "After the branch manager retired, Sarah found herself {{0}} much more responsibility than she had expected.",
+      "prompt": "Select the correct phrasal verb.",
+      "explanation": "'Taking over' means assuming control or responsibility for something from someone else.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "taking on",
+            "taking over",
+            "taking up"
+          ]
+        }
+      ],
+      "type": "dropdown_blanks",
+      "id": "g-db-0204"
+    },
+    {
+      "prompt": "Choose the correct phrase to complete the sentence.",
+      "template": "{{0}} when I parked my car in the city centre that it would be towed away within the hour.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "had I known",
+            "Little did I know",
+            "Hardly I knew",
+            "I knew little"
+          ]
+        }
+      ],
+      "explanation": "'Little did I know' is a negative inversion used for emphasis, meaning the speaker was unaware of the situation at the time.",
+      "id": "g-db-0205"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "must have left",
+            "should have left",
+            "ought to have left",
+            "could have left"
+          ]
+        }
+      ],
+      "type": "dropdown_blanks",
+      "explanation": "'Ought to have left' (or 'should have left') expresses a past obligation or expectation that was not fulfilled.",
+      "template": "You really {{0}} earlier if you wanted to catch the 10:15 express service to Bristol.",
+      "prompt": "Complete the sentence with the correct modal verb form.",
+      "id": "g-db-0206"
+    },
+    {
+      "explanation": "The adjective 'consistent' is followed by the preposition 'with' to show that two things are in agreement or compatible.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "consistent with",
+            "relevant for",
+            "familiar to",
+            "equivalent as"
+          ]
+        }
+      ],
+      "prompt": "Select the word that best completes the sentence.",
+      "template": "The witness's second statement was not entirely {{0}} the evidence found at the crime scene.",
+      "id": "g-db-0207"
+    },
+    {
+      "explanation": "'Notwithstanding' is a formal preposition meaning 'in spite of', often used to introduce a contrasting factor.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 3,
+          "options": [
+            "despite of",
+            "whereas",
+            "even though",
+            "notwithstanding"
+          ]
+        }
+      ],
+      "prompt": "Choose the correct formal conjunction or preposition.",
+      "template": "The company decided to proceed with the merger, {{0}} the concerns raised by the legal department.",
+      "id": "g-db-0208"
+    },
+    {
+      "explanation": "The phrasal verb 'look into' means to investigate or examine the facts about a situation.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "looked for",
+            "looked into",
+            "looked after",
+            "looked up to"
+          ]
+        }
+      ],
+      "prompt": "Complete the sentence with the correct phrasal verb.",
+      "template": "The local council has promised that the complaints about the noise levels will be {{0}} by the environment committee.",
+      "id": "g-db-0209"
+    },
+    {
+      "template": "The mentor {{0}} I was assigned has provided invaluable advice throughout my internship.",
+      "prompt": "Select the correct relative pronoun construction.",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "to whom",
+            "who to",
+            "for who",
+            "which to"
+          ]
+        }
+      ],
+      "type": "dropdown_blanks",
+      "explanation": "'To whom' is the correct formal relative pronoun structure when referring back to a person after a preposition.",
+      "id": "g-db-0210"
+    },
+    {
+      "prompt": "Choose the correct future tense form.",
+      "template": "By Christmas, my father {{0}} at the shipyard for exactly forty years.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "has been working",
+            "will have been working",
+            "will have worked",
+            "is working"
+          ]
+        }
+      ],
+      "explanation": "The future perfect continuous ('will have been working') describes an ongoing action that will reach a specific duration in the future.",
+      "id": "g-db-0211"
+    },
+    {
+      "prompt": "Choose the vocabulary word that best fits the context.",
+      "template": "The restoration of the Victorian manor required {{0}} attention to detail to ensure historical accuracy.",
+      "explanation": "'Meticulous' describes someone who shows great attention to detail and is very careful or precise.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "frivolous",
+            "meticulous",
+            "ambiguous",
+            "redundant"
+          ]
+        }
+      ],
+      "id": "g-db-0212"
+    },
+    {
+      "explanation": "In a professional context, 'redundancy' occurs when an employer reduces their workforce because a job is no longer needed.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "redundancy",
+            "vacancy",
+            "resignation",
+            "promotion"
+          ]
+        }
+      ],
+      "prompt": "Select the correct term for the workplace scenario.",
+      "template": "Following the closure of the regional office, several staff members were forced to accept voluntary {{0}}.",
+      "id": "g-db-0213"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "On no account you must",
+            "Under no circumstances you should",
+            "Under no circumstances should you",
+            "In no way you must"
+          ]
+        }
+      ],
+      "type": "dropdown_blanks",
+      "explanation": "Negative adverbial phrases like 'Under no circumstances' require inversion of the subject and auxiliary verb.",
+      "template": "{{0}} sign a contract before you have read the terms and conditions thoroughly.",
+      "prompt": "Identify the correct word order for this negative inversion.",
+      "id": "g-db-0214"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 3,
+          "options": [
+            "extravagant",
+            "sufficient",
+            "unreliable",
+            "unprecedented"
+          ]
+        }
+      ],
+      "type": "dropdown_blanks",
+      "explanation": "'Unprecedented' means never having happened or existed before, fitting the context of a record-breaking event.",
+      "template": "The village experienced an {{0}} level of rainfall last month, leading to the worst flooding in a century.",
+      "prompt": "Choose the most appropriate adjective.",
+      "id": "g-db-0215"
+    },
+    {
+      "prompt": "Select the formal conditional structure.",
+      "template": "{{0}} for the position, I would be able to start at the beginning of the next financial year.",
+      "explanation": "'Were I to be [verb]' is a formal subjunctive structure used for hypothetical future conditions.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "Had I have been",
+            "Were I to be hired",
+            "If I was to be hired",
+            "Should I be hired"
+          ]
+        }
+      ],
+      "id": "g-db-0216"
     }
   ],
-  "mocks": []
+  "mocks": [
+    {
+      "mockNumber": 1,
+      "title": "Grammar & Vocabulary Test 1",
+      "questionIds": [
+        "g-db-0031",
+        "g-db-0203",
+        "g-db-0127",
+        "g-db-0125",
+        "g-db-0169",
+        "g-db-0085",
+        "g-db-0172",
+        "g-db-0157",
+        "g-db-0210",
+        "g-db-0006",
+        "g-db-0090",
+        "g-db-0046",
+        "g-db-0205",
+        "g-db-0074",
+        "g-db-0053",
+        "g-db-0037",
+        "g-db-0014",
+        "g-db-0022",
+        "g-db-0080",
+        "g-db-0178",
+        "g-db-0067",
+        "g-db-0134",
+        "g-db-0175",
+        "g-db-0147"
+      ]
+    },
+    {
+      "mockNumber": 2,
+      "title": "Grammar & Vocabulary Test 2",
+      "questionIds": [
+        "g-db-0199",
+        "g-db-0045",
+        "g-db-0131",
+        "g-db-0010",
+        "g-db-0065",
+        "g-db-0209",
+        "g-db-0011",
+        "g-db-0107",
+        "g-db-0016",
+        "g-db-0116",
+        "g-db-0039",
+        "g-db-0048",
+        "g-db-0013",
+        "g-db-0043",
+        "g-db-0171",
+        "g-db-0187",
+        "g-db-0110",
+        "g-db-0004",
+        "g-db-0163",
+        "g-db-0156",
+        "g-db-0003",
+        "g-db-0100",
+        "g-db-0135",
+        "g-db-0124"
+      ]
+    },
+    {
+      "mockNumber": 3,
+      "title": "Grammar & Vocabulary Test 3",
+      "questionIds": [
+        "g-db-0136",
+        "g-db-0114",
+        "g-db-0078",
+        "g-db-0038",
+        "g-db-0208",
+        "g-db-0121",
+        "g-db-0001",
+        "g-db-0206",
+        "g-db-0101",
+        "g-db-0195",
+        "g-db-0143",
+        "g-db-0177",
+        "g-db-0141",
+        "g-db-0112",
+        "g-db-0079",
+        "g-db-0102",
+        "g-db-0139",
+        "g-db-0061",
+        "g-db-0017",
+        "g-db-0086",
+        "g-db-0173",
+        "g-db-0186",
+        "g-db-0062",
+        "g-db-0099"
+      ]
+    },
+    {
+      "mockNumber": 4,
+      "title": "Grammar & Vocabulary Test 4",
+      "questionIds": [
+        "g-db-0020",
+        "g-db-0120",
+        "g-db-0165",
+        "g-db-0149",
+        "g-db-0049",
+        "g-db-0105",
+        "g-db-0111",
+        "g-db-0132",
+        "g-db-0077",
+        "g-db-0128",
+        "g-db-0160",
+        "g-db-0082",
+        "g-db-0122",
+        "g-db-0193",
+        "g-db-0181",
+        "g-db-0047",
+        "g-db-0166",
+        "g-db-0202",
+        "g-db-0154",
+        "g-db-0215",
+        "g-db-0066",
+        "g-db-0212",
+        "g-db-0081",
+        "g-db-0033"
+      ]
+    },
+    {
+      "mockNumber": 5,
+      "title": "Grammar & Vocabulary Test 5",
+      "questionIds": [
+        "g-db-0145",
+        "g-db-0200",
+        "g-db-0133",
+        "g-db-0161",
+        "g-db-0162",
+        "g-db-0126",
+        "g-db-0028",
+        "g-db-0192",
+        "g-db-0150",
+        "g-db-0129",
+        "g-db-0073",
+        "g-db-0113",
+        "g-db-0055",
+        "g-db-0034",
+        "g-db-0096",
+        "g-db-0083",
+        "g-db-0153",
+        "g-db-0137",
+        "g-db-0168",
+        "g-db-0064",
+        "g-db-0123",
+        "g-db-0191",
+        "g-db-0103",
+        "g-db-0183"
+      ]
+    },
+    {
+      "mockNumber": 6,
+      "title": "Grammar & Vocabulary Test 6",
+      "questionIds": [
+        "g-db-0044",
+        "g-db-0035",
+        "g-db-0054",
+        "g-db-0146",
+        "g-db-0106",
+        "g-db-0042",
+        "g-db-0091",
+        "g-db-0084",
+        "g-db-0104",
+        "g-db-0015",
+        "g-db-0052",
+        "g-db-0094",
+        "g-db-0119",
+        "g-db-0211",
+        "g-db-0188",
+        "g-db-0158",
+        "g-db-0030",
+        "g-db-0019",
+        "g-db-0185",
+        "g-db-0095",
+        "g-db-0117",
+        "g-db-0005",
+        "g-db-0070",
+        "g-db-0069"
+      ]
+    },
+    {
+      "mockNumber": 7,
+      "title": "Grammar & Vocabulary Test 7",
+      "questionIds": [
+        "g-db-0012",
+        "g-db-0050",
+        "g-db-0097",
+        "g-db-0075",
+        "g-db-0194",
+        "g-db-0021",
+        "g-db-0059",
+        "g-db-0068",
+        "g-db-0018",
+        "g-db-0176",
+        "g-db-0216",
+        "g-db-0092",
+        "g-db-0159",
+        "g-db-0089",
+        "g-db-0076",
+        "g-db-0118",
+        "g-db-0170",
+        "g-db-0032",
+        "g-db-0138",
+        "g-db-0148",
+        "g-db-0196",
+        "g-db-0142",
+        "g-db-0093",
+        "g-db-0026"
+      ]
+    },
+    {
+      "mockNumber": 8,
+      "title": "Grammar & Vocabulary Test 8",
+      "questionIds": [
+        "g-db-0151",
+        "g-db-0040",
+        "g-db-0087",
+        "g-db-0025",
+        "g-db-0180",
+        "g-db-0002",
+        "g-db-0072",
+        "g-db-0201",
+        "g-db-0184",
+        "g-db-0197",
+        "g-db-0057",
+        "g-db-0098",
+        "g-db-0051",
+        "g-db-0204",
+        "g-db-0207",
+        "g-db-0108",
+        "g-db-0198",
+        "g-db-0179",
+        "g-db-0144",
+        "g-db-0182",
+        "g-db-0167",
+        "g-db-0041",
+        "g-db-0088",
+        "g-db-0115"
+      ]
+    },
+    {
+      "mockNumber": 9,
+      "title": "Grammar & Vocabulary Test 9",
+      "questionIds": [
+        "g-db-0155",
+        "g-db-0174",
+        "g-db-0056",
+        "g-db-0214",
+        "g-db-0008",
+        "g-db-0130",
+        "g-db-0060",
+        "g-db-0152",
+        "g-db-0190",
+        "g-db-0023",
+        "g-db-0027",
+        "g-db-0189",
+        "g-db-0140",
+        "g-db-0063",
+        "g-db-0029",
+        "g-db-0213",
+        "g-db-0109",
+        "g-db-0007",
+        "g-db-0071",
+        "g-db-0164",
+        "g-db-0024",
+        "g-db-0058",
+        "g-db-0036",
+        "g-db-0009"
+      ]
+    },
+    {
+      "mockNumber": 10,
+      "title": "Grammar & Vocabulary Test 10",
+      "questionIds": [
+        "g-db-0125",
+        "g-db-0067",
+        "g-db-0157",
+        "g-db-0169",
+        "g-db-0006",
+        "g-db-0172",
+        "g-db-0080",
+        "g-db-0203",
+        "g-db-0175",
+        "g-db-0037",
+        "g-db-0127",
+        "g-db-0022",
+        "g-db-0031",
+        "g-db-0074",
+        "g-db-0090",
+        "g-db-0046",
+        "g-db-0134",
+        "g-db-0205",
+        "g-db-0210",
+        "g-db-0178",
+        "g-db-0014",
+        "g-db-0085",
+        "g-db-0147",
+        "g-db-0053"
+      ]
+    },
+    {
+      "mockNumber": 11,
+      "title": "Grammar & Vocabulary Test 11",
+      "questionIds": [
+        "g-db-0110",
+        "g-db-0100",
+        "g-db-0013",
+        "g-db-0003",
+        "g-db-0043",
+        "g-db-0004",
+        "g-db-0016",
+        "g-db-0045",
+        "g-db-0131",
+        "g-db-0107",
+        "g-db-0163",
+        "g-db-0156",
+        "g-db-0116",
+        "g-db-0039",
+        "g-db-0124",
+        "g-db-0187",
+        "g-db-0010",
+        "g-db-0199",
+        "g-db-0171",
+        "g-db-0048",
+        "g-db-0135",
+        "g-db-0065",
+        "g-db-0209",
+        "g-db-0011"
+      ]
+    },
+    {
+      "mockNumber": 12,
+      "title": "Grammar & Vocabulary Test 12",
+      "questionIds": [
+        "g-db-0038",
+        "g-db-0141",
+        "g-db-0086",
+        "g-db-0099",
+        "g-db-0062",
+        "g-db-0173",
+        "g-db-0121",
+        "g-db-0112",
+        "g-db-0139",
+        "g-db-0061",
+        "g-db-0114",
+        "g-db-0208",
+        "g-db-0195",
+        "g-db-0136",
+        "g-db-0078",
+        "g-db-0101",
+        "g-db-0079",
+        "g-db-0143",
+        "g-db-0102",
+        "g-db-0186",
+        "g-db-0017",
+        "g-db-0206",
+        "g-db-0001",
+        "g-db-0177"
+      ]
+    },
+    {
+      "mockNumber": 13,
+      "title": "Grammar & Vocabulary Test 13",
+      "questionIds": [
+        "g-db-0047",
+        "g-db-0212",
+        "g-db-0020",
+        "g-db-0181",
+        "g-db-0165",
+        "g-db-0066",
+        "g-db-0202",
+        "g-db-0081",
+        "g-db-0111",
+        "g-db-0122",
+        "g-db-0120",
+        "g-db-0154",
+        "g-db-0160",
+        "g-db-0193",
+        "g-db-0128",
+        "g-db-0149",
+        "g-db-0105",
+        "g-db-0215",
+        "g-db-0082",
+        "g-db-0132",
+        "g-db-0077",
+        "g-db-0166",
+        "g-db-0049",
+        "g-db-0033"
+      ]
+    },
+    {
+      "mockNumber": 14,
+      "title": "Grammar & Vocabulary Test 14",
+      "questionIds": [
+        "g-db-0137",
+        "g-db-0153",
+        "g-db-0103",
+        "g-db-0192",
+        "g-db-0183",
+        "g-db-0083",
+        "g-db-0096",
+        "g-db-0028",
+        "g-db-0126",
+        "g-db-0162",
+        "g-db-0113",
+        "g-db-0064",
+        "g-db-0168",
+        "g-db-0145",
+        "g-db-0150",
+        "g-db-0161",
+        "g-db-0191",
+        "g-db-0200",
+        "g-db-0034",
+        "g-db-0133",
+        "g-db-0073",
+        "g-db-0129",
+        "g-db-0055",
+        "g-db-0123"
+      ]
+    },
+    {
+      "mockNumber": 15,
+      "title": "Grammar & Vocabulary Test 15",
+      "questionIds": [
+        "g-db-0211",
+        "g-db-0117",
+        "g-db-0185",
+        "g-db-0042",
+        "g-db-0119",
+        "g-db-0094",
+        "g-db-0104",
+        "g-db-0106",
+        "g-db-0084",
+        "g-db-0188",
+        "g-db-0095",
+        "g-db-0158",
+        "g-db-0069",
+        "g-db-0030",
+        "g-db-0005",
+        "g-db-0044",
+        "g-db-0070",
+        "g-db-0019",
+        "g-db-0015",
+        "g-db-0035",
+        "g-db-0091",
+        "g-db-0054",
+        "g-db-0146",
+        "g-db-0052"
+      ]
+    },
+    {
+      "mockNumber": 16,
+      "title": "Grammar & Vocabulary Test 16",
+      "questionIds": [
+        "g-db-0026",
+        "g-db-0196",
+        "g-db-0092",
+        "g-db-0032",
+        "g-db-0176",
+        "g-db-0148",
+        "g-db-0018",
+        "g-db-0093",
+        "g-db-0138",
+        "g-db-0050",
+        "g-db-0216",
+        "g-db-0142",
+        "g-db-0097",
+        "g-db-0159",
+        "g-db-0075",
+        "g-db-0076",
+        "g-db-0021",
+        "g-db-0012",
+        "g-db-0170",
+        "g-db-0194",
+        "g-db-0068",
+        "g-db-0089",
+        "g-db-0059",
+        "g-db-0118"
+      ]
+    },
+    {
+      "mockNumber": 17,
+      "title": "Grammar & Vocabulary Test 17",
+      "questionIds": [
+        "g-db-0207",
+        "g-db-0115",
+        "g-db-0041",
+        "g-db-0098",
+        "g-db-0179",
+        "g-db-0108",
+        "g-db-0197",
+        "g-db-0051",
+        "g-db-0204",
+        "g-db-0088",
+        "g-db-0002",
+        "g-db-0040",
+        "g-db-0144",
+        "g-db-0072",
+        "g-db-0184",
+        "g-db-0057",
+        "g-db-0180",
+        "g-db-0201",
+        "g-db-0087",
+        "g-db-0025",
+        "g-db-0151",
+        "g-db-0167",
+        "g-db-0198",
+        "g-db-0182"
+      ]
+    },
+    {
+      "mockNumber": 18,
+      "title": "Grammar & Vocabulary Test 18",
+      "questionIds": [
+        "g-db-0024",
+        "g-db-0190",
+        "g-db-0071",
+        "g-db-0060",
+        "g-db-0007",
+        "g-db-0140",
+        "g-db-0174",
+        "g-db-0008",
+        "g-db-0029",
+        "g-db-0130",
+        "g-db-0058",
+        "g-db-0155",
+        "g-db-0213",
+        "g-db-0214",
+        "g-db-0036",
+        "g-db-0023",
+        "g-db-0027",
+        "g-db-0189",
+        "g-db-0009",
+        "g-db-0109",
+        "g-db-0056",
+        "g-db-0063",
+        "g-db-0164",
+        "g-db-0152"
+      ]
+    },
+    {
+      "mockNumber": 19,
+      "title": "Grammar & Vocabulary Test 19",
+      "questionIds": [
+        "g-db-0090",
+        "g-db-0080",
+        "g-db-0053",
+        "g-db-0178",
+        "g-db-0134",
+        "g-db-0085",
+        "g-db-0125",
+        "g-db-0203",
+        "g-db-0031",
+        "g-db-0210",
+        "g-db-0127",
+        "g-db-0022",
+        "g-db-0147",
+        "g-db-0067",
+        "g-db-0205",
+        "g-db-0172",
+        "g-db-0037",
+        "g-db-0169",
+        "g-db-0175",
+        "g-db-0157",
+        "g-db-0074",
+        "g-db-0006",
+        "g-db-0046",
+        "g-db-0014"
+      ]
+    },
+    {
+      "mockNumber": 20,
+      "title": "Grammar & Vocabulary Test 20",
+      "questionIds": [
+        "g-db-0039",
+        "g-db-0048",
+        "g-db-0209",
+        "g-db-0100",
+        "g-db-0016",
+        "g-db-0163",
+        "g-db-0003",
+        "g-db-0171",
+        "g-db-0124",
+        "g-db-0043",
+        "g-db-0011",
+        "g-db-0045",
+        "g-db-0107",
+        "g-db-0187",
+        "g-db-0010",
+        "g-db-0135",
+        "g-db-0013",
+        "g-db-0199",
+        "g-db-0110",
+        "g-db-0065",
+        "g-db-0004",
+        "g-db-0116",
+        "g-db-0156",
+        "g-db-0131"
+      ]
+    },
+    {
+      "mockNumber": 21,
+      "title": "Grammar & Vocabulary Test 21",
+      "questionIds": [
+        "g-db-0121",
+        "g-db-0136",
+        "g-db-0079",
+        "g-db-0208",
+        "g-db-0102",
+        "g-db-0195",
+        "g-db-0078",
+        "g-db-0062",
+        "g-db-0139",
+        "g-db-0206",
+        "g-db-0101",
+        "g-db-0141",
+        "g-db-0177",
+        "g-db-0114",
+        "g-db-0061",
+        "g-db-0112",
+        "g-db-0038",
+        "g-db-0143",
+        "g-db-0086",
+        "g-db-0186",
+        "g-db-0099",
+        "g-db-0017",
+        "g-db-0173",
+        "g-db-0001"
+      ]
+    },
+    {
+      "mockNumber": 22,
+      "title": "Grammar & Vocabulary Test 22",
+      "questionIds": [
+        "g-db-0077",
+        "g-db-0154",
+        "g-db-0082",
+        "g-db-0166",
+        "g-db-0066",
+        "g-db-0132",
+        "g-db-0128",
+        "g-db-0202",
+        "g-db-0212",
+        "g-db-0033",
+        "g-db-0020",
+        "g-db-0122",
+        "g-db-0160",
+        "g-db-0047",
+        "g-db-0149",
+        "g-db-0120",
+        "g-db-0049",
+        "g-db-0181",
+        "g-db-0111",
+        "g-db-0081",
+        "g-db-0105",
+        "g-db-0215",
+        "g-db-0165",
+        "g-db-0193"
+      ]
+    },
+    {
+      "mockNumber": 23,
+      "title": "Grammar & Vocabulary Test 23",
+      "questionIds": [
+        "g-db-0183",
+        "g-db-0162",
+        "g-db-0200",
+        "g-db-0055",
+        "g-db-0083",
+        "g-db-0192",
+        "g-db-0103",
+        "g-db-0113",
+        "g-db-0129",
+        "g-db-0150",
+        "g-db-0126",
+        "g-db-0096",
+        "g-db-0137",
+        "g-db-0145",
+        "g-db-0153",
+        "g-db-0123",
+        "g-db-0073",
+        "g-db-0168",
+        "g-db-0064",
+        "g-db-0161",
+        "g-db-0133",
+        "g-db-0028",
+        "g-db-0034",
+        "g-db-0191"
+      ]
+    },
+    {
+      "mockNumber": 24,
+      "title": "Grammar & Vocabulary Test 24",
+      "questionIds": [
+        "g-db-0070",
+        "g-db-0005",
+        "g-db-0119",
+        "g-db-0035",
+        "g-db-0019",
+        "g-db-0042",
+        "g-db-0054",
+        "g-db-0030",
+        "g-db-0146",
+        "g-db-0106",
+        "g-db-0052",
+        "g-db-0091",
+        "g-db-0069",
+        "g-db-0095",
+        "g-db-0117",
+        "g-db-0044",
+        "g-db-0104",
+        "g-db-0084",
+        "g-db-0094",
+        "g-db-0211",
+        "g-db-0015",
+        "g-db-0158",
+        "g-db-0185",
+        "g-db-0188"
+      ]
+    },
+    {
+      "mockNumber": 25,
+      "title": "Grammar & Vocabulary Test 25",
+      "questionIds": [
+        "g-db-0032",
+        "g-db-0075",
+        "g-db-0050",
+        "g-db-0216",
+        "g-db-0059",
+        "g-db-0138",
+        "g-db-0170",
+        "g-db-0093",
+        "g-db-0159",
+        "g-db-0092",
+        "g-db-0076",
+        "g-db-0176",
+        "g-db-0148",
+        "g-db-0089",
+        "g-db-0068",
+        "g-db-0118",
+        "g-db-0097",
+        "g-db-0012",
+        "g-db-0018",
+        "g-db-0194",
+        "g-db-0021",
+        "g-db-0142",
+        "g-db-0196",
+        "g-db-0026"
+      ]
+    },
+    {
+      "mockNumber": 26,
+      "title": "Grammar & Vocabulary Test 26",
+      "questionIds": [
+        "g-db-0167",
+        "g-db-0098",
+        "g-db-0002",
+        "g-db-0040",
+        "g-db-0025",
+        "g-db-0201",
+        "g-db-0051",
+        "g-db-0198",
+        "g-db-0184",
+        "g-db-0088",
+        "g-db-0108",
+        "g-db-0197",
+        "g-db-0179",
+        "g-db-0041",
+        "g-db-0087",
+        "g-db-0115",
+        "g-db-0072",
+        "g-db-0182",
+        "g-db-0204",
+        "g-db-0180",
+        "g-db-0207",
+        "g-db-0057",
+        "g-db-0151",
+        "g-db-0144"
+      ]
+    },
+    {
+      "mockNumber": 27,
+      "title": "Grammar & Vocabulary Test 27",
+      "questionIds": [
+        "g-db-0056",
+        "g-db-0071",
+        "g-db-0189",
+        "g-db-0214",
+        "g-db-0213",
+        "g-db-0164",
+        "g-db-0029",
+        "g-db-0063",
+        "g-db-0058",
+        "g-db-0190",
+        "g-db-0109",
+        "g-db-0009",
+        "g-db-0152",
+        "g-db-0008",
+        "g-db-0036",
+        "g-db-0027",
+        "g-db-0174",
+        "g-db-0023",
+        "g-db-0140",
+        "g-db-0130",
+        "g-db-0024",
+        "g-db-0060",
+        "g-db-0155",
+        "g-db-0007"
+      ]
+    },
+    {
+      "mockNumber": 28,
+      "title": "Grammar & Vocabulary Test 28",
+      "questionIds": [
+        "g-db-0053",
+        "g-db-0127",
+        "g-db-0037",
+        "g-db-0085",
+        "g-db-0210",
+        "g-db-0031",
+        "g-db-0205",
+        "g-db-0046",
+        "g-db-0147",
+        "g-db-0022",
+        "g-db-0006",
+        "g-db-0090",
+        "g-db-0014",
+        "g-db-0203",
+        "g-db-0178",
+        "g-db-0074",
+        "g-db-0169",
+        "g-db-0172",
+        "g-db-0157",
+        "g-db-0134",
+        "g-db-0125",
+        "g-db-0067",
+        "g-db-0175",
+        "g-db-0080"
+      ]
+    },
+    {
+      "mockNumber": 29,
+      "title": "Grammar & Vocabulary Test 29",
+      "questionIds": [
+        "g-db-0131",
+        "g-db-0199",
+        "g-db-0004",
+        "g-db-0048",
+        "g-db-0043",
+        "g-db-0039",
+        "g-db-0100",
+        "g-db-0156",
+        "g-db-0163",
+        "g-db-0124",
+        "g-db-0065",
+        "g-db-0110",
+        "g-db-0171",
+        "g-db-0013",
+        "g-db-0003",
+        "g-db-0116",
+        "g-db-0010",
+        "g-db-0209",
+        "g-db-0107",
+        "g-db-0016",
+        "g-db-0187",
+        "g-db-0011",
+        "g-db-0135",
+        "g-db-0045"
+      ]
+    },
+    {
+      "mockNumber": 30,
+      "title": "Grammar & Vocabulary Test 30",
+      "questionIds": [
+        "g-db-0062",
+        "g-db-0141",
+        "g-db-0112",
+        "g-db-0121",
+        "g-db-0143",
+        "g-db-0099",
+        "g-db-0101",
+        "g-db-0038",
+        "g-db-0079",
+        "g-db-0001",
+        "g-db-0139",
+        "g-db-0186",
+        "g-db-0173",
+        "g-db-0208",
+        "g-db-0114",
+        "g-db-0061",
+        "g-db-0177",
+        "g-db-0017",
+        "g-db-0136",
+        "g-db-0206",
+        "g-db-0195",
+        "g-db-0078",
+        "g-db-0102",
+        "g-db-0086"
+      ]
+    },
+    {
+      "mockNumber": 31,
+      "title": "Grammar & Vocabulary Test 31",
+      "questionIds": [
+        "g-db-0166",
+        "g-db-0020",
+        "g-db-0149",
+        "g-db-0105",
+        "g-db-0047",
+        "g-db-0160",
+        "g-db-0215",
+        "g-db-0181",
+        "g-db-0212",
+        "g-db-0111",
+        "g-db-0122",
+        "g-db-0081",
+        "g-db-0132",
+        "g-db-0049",
+        "g-db-0154",
+        "g-db-0033",
+        "g-db-0077",
+        "g-db-0128",
+        "g-db-0082",
+        "g-db-0066",
+        "g-db-0193",
+        "g-db-0202",
+        "g-db-0165",
+        "g-db-0120"
+      ]
+    },
+    {
+      "mockNumber": 32,
+      "title": "Grammar & Vocabulary Test 32",
+      "questionIds": [
+        "g-db-0064",
+        "g-db-0200",
+        "g-db-0123",
+        "g-db-0055",
+        "g-db-0168",
+        "g-db-0028",
+        "g-db-0073",
+        "g-db-0103",
+        "g-db-0129",
+        "g-db-0162",
+        "g-db-0153",
+        "g-db-0191",
+        "g-db-0083",
+        "g-db-0161",
+        "g-db-0150",
+        "g-db-0183",
+        "g-db-0096",
+        "g-db-0145",
+        "g-db-0034",
+        "g-db-0192",
+        "g-db-0137",
+        "g-db-0126",
+        "g-db-0133",
+        "g-db-0113"
+      ]
+    },
+    {
+      "mockNumber": 33,
+      "title": "Grammar & Vocabulary Test 33",
+      "questionIds": [
+        "g-db-0030",
+        "g-db-0035",
+        "g-db-0042",
+        "g-db-0188",
+        "g-db-0069",
+        "g-db-0084",
+        "g-db-0185",
+        "g-db-0119",
+        "g-db-0015",
+        "g-db-0070",
+        "g-db-0005",
+        "g-db-0091",
+        "g-db-0106",
+        "g-db-0094",
+        "g-db-0095",
+        "g-db-0104",
+        "g-db-0146",
+        "g-db-0044",
+        "g-db-0019",
+        "g-db-0052",
+        "g-db-0117",
+        "g-db-0158",
+        "g-db-0054",
+        "g-db-0211"
+      ]
+    },
+    {
+      "mockNumber": 34,
+      "title": "Grammar & Vocabulary Test 34",
+      "questionIds": [
+        "g-db-0018",
+        "g-db-0068",
+        "g-db-0148",
+        "g-db-0176",
+        "g-db-0092",
+        "g-db-0026",
+        "g-db-0097",
+        "g-db-0089",
+        "g-db-0075",
+        "g-db-0118",
+        "g-db-0196",
+        "g-db-0138",
+        "g-db-0032",
+        "g-db-0194",
+        "g-db-0159",
+        "g-db-0012",
+        "g-db-0216",
+        "g-db-0142",
+        "g-db-0170",
+        "g-db-0050",
+        "g-db-0059",
+        "g-db-0076",
+        "g-db-0021",
+        "g-db-0093"
+      ]
+    },
+    {
+      "mockNumber": 35,
+      "title": "Grammar & Vocabulary Test 35",
+      "questionIds": [
+        "g-db-0057",
+        "g-db-0197",
+        "g-db-0151",
+        "g-db-0041",
+        "g-db-0098",
+        "g-db-0204",
+        "g-db-0180",
+        "g-db-0108",
+        "g-db-0087",
+        "g-db-0025",
+        "g-db-0072",
+        "g-db-0002",
+        "g-db-0051",
+        "g-db-0144",
+        "g-db-0198",
+        "g-db-0167",
+        "g-db-0115",
+        "g-db-0201",
+        "g-db-0207",
+        "g-db-0184",
+        "g-db-0182",
+        "g-db-0040",
+        "g-db-0179",
+        "g-db-0088"
+      ]
+    },
+    {
+      "mockNumber": 36,
+      "title": "Grammar & Vocabulary Test 36",
+      "questionIds": [
+        "g-db-0063",
+        "g-db-0007",
+        "g-db-0058",
+        "g-db-0024",
+        "g-db-0071",
+        "g-db-0023",
+        "g-db-0036",
+        "g-db-0130",
+        "g-db-0029",
+        "g-db-0214",
+        "g-db-0190",
+        "g-db-0189",
+        "g-db-0009",
+        "g-db-0140",
+        "g-db-0027",
+        "g-db-0164",
+        "g-db-0213",
+        "g-db-0056",
+        "g-db-0155",
+        "g-db-0174",
+        "g-db-0109",
+        "g-db-0152",
+        "g-db-0060",
+        "g-db-0008"
+      ]
+    },
+    {
+      "mockNumber": 37,
+      "title": "Grammar & Vocabulary Test 37",
+      "questionIds": [
+        "g-db-0053",
+        "g-db-0210",
+        "g-db-0157",
+        "g-db-0090",
+        "g-db-0175",
+        "g-db-0074",
+        "g-db-0125",
+        "g-db-0031",
+        "g-db-0085",
+        "g-db-0006",
+        "g-db-0205",
+        "g-db-0080",
+        "g-db-0037",
+        "g-db-0022",
+        "g-db-0147",
+        "g-db-0172",
+        "g-db-0014",
+        "g-db-0203",
+        "g-db-0127",
+        "g-db-0046",
+        "g-db-0169",
+        "g-db-0178",
+        "g-db-0067",
+        "g-db-0134"
+      ]
+    },
+    {
+      "mockNumber": 38,
+      "title": "Grammar & Vocabulary Test 38",
+      "questionIds": [
+        "g-db-0116",
+        "g-db-0156",
+        "g-db-0045",
+        "g-db-0171",
+        "g-db-0107",
+        "g-db-0004",
+        "g-db-0043",
+        "g-db-0048",
+        "g-db-0065",
+        "g-db-0110",
+        "g-db-0003",
+        "g-db-0209",
+        "g-db-0135",
+        "g-db-0039",
+        "g-db-0187",
+        "g-db-0131",
+        "g-db-0013",
+        "g-db-0010",
+        "g-db-0011",
+        "g-db-0199",
+        "g-db-0124",
+        "g-db-0100",
+        "g-db-0163",
+        "g-db-0016"
+      ]
+    },
+    {
+      "mockNumber": 39,
+      "title": "Grammar & Vocabulary Test 39",
+      "questionIds": [
+        "g-db-0062",
+        "g-db-0099",
+        "g-db-0114",
+        "g-db-0038",
+        "g-db-0208",
+        "g-db-0101",
+        "g-db-0141",
+        "g-db-0195",
+        "g-db-0177",
+        "g-db-0102",
+        "g-db-0173",
+        "g-db-0017",
+        "g-db-0121",
+        "g-db-0079",
+        "g-db-0086",
+        "g-db-0078",
+        "g-db-0139",
+        "g-db-0186",
+        "g-db-0143",
+        "g-db-0136",
+        "g-db-0206",
+        "g-db-0061",
+        "g-db-0001",
+        "g-db-0112"
+      ]
+    },
+    {
+      "mockNumber": 40,
+      "title": "Grammar & Vocabulary Test 40",
+      "questionIds": [
+        "g-db-0081",
+        "g-db-0047",
+        "g-db-0149",
+        "g-db-0020",
+        "g-db-0128",
+        "g-db-0160",
+        "g-db-0181",
+        "g-db-0033",
+        "g-db-0111",
+        "g-db-0132",
+        "g-db-0165",
+        "g-db-0122",
+        "g-db-0215",
+        "g-db-0154",
+        "g-db-0049",
+        "g-db-0212",
+        "g-db-0066",
+        "g-db-0120",
+        "g-db-0105",
+        "g-db-0082",
+        "g-db-0077",
+        "g-db-0202",
+        "g-db-0193",
+        "g-db-0166"
+      ]
+    },
+    {
+      "mockNumber": 41,
+      "title": "Grammar & Vocabulary Test 41",
+      "questionIds": [
+        "g-db-0034",
+        "g-db-0183",
+        "g-db-0137",
+        "g-db-0153",
+        "g-db-0126",
+        "g-db-0113",
+        "g-db-0161",
+        "g-db-0191",
+        "g-db-0145",
+        "g-db-0028",
+        "g-db-0200",
+        "g-db-0055",
+        "g-db-0123",
+        "g-db-0073",
+        "g-db-0192",
+        "g-db-0133",
+        "g-db-0096",
+        "g-db-0168",
+        "g-db-0150",
+        "g-db-0083",
+        "g-db-0162",
+        "g-db-0103",
+        "g-db-0064",
+        "g-db-0129"
+      ]
+    },
+    {
+      "mockNumber": 42,
+      "title": "Grammar & Vocabulary Test 42",
+      "questionIds": [
+        "g-db-0042",
+        "g-db-0091",
+        "g-db-0054",
+        "g-db-0119",
+        "g-db-0069",
+        "g-db-0104",
+        "g-db-0095",
+        "g-db-0005",
+        "g-db-0188",
+        "g-db-0094",
+        "g-db-0106",
+        "g-db-0146",
+        "g-db-0084",
+        "g-db-0158",
+        "g-db-0015",
+        "g-db-0211",
+        "g-db-0030",
+        "g-db-0070",
+        "g-db-0019",
+        "g-db-0035",
+        "g-db-0044",
+        "g-db-0052",
+        "g-db-0185",
+        "g-db-0117"
+      ]
+    },
+    {
+      "mockNumber": 43,
+      "title": "Grammar & Vocabulary Test 43",
+      "questionIds": [
+        "g-db-0170",
+        "g-db-0075",
+        "g-db-0026",
+        "g-db-0097",
+        "g-db-0176",
+        "g-db-0032",
+        "g-db-0159",
+        "g-db-0138",
+        "g-db-0142",
+        "g-db-0076",
+        "g-db-0018",
+        "g-db-0118",
+        "g-db-0194",
+        "g-db-0068",
+        "g-db-0050",
+        "g-db-0093",
+        "g-db-0021",
+        "g-db-0216",
+        "g-db-0092",
+        "g-db-0148",
+        "g-db-0196",
+        "g-db-0012",
+        "g-db-0089",
+        "g-db-0059"
+      ]
+    },
+    {
+      "mockNumber": 44,
+      "title": "Grammar & Vocabulary Test 44",
+      "questionIds": [
+        "g-db-0087",
+        "g-db-0197",
+        "g-db-0051",
+        "g-db-0184",
+        "g-db-0204",
+        "g-db-0180",
+        "g-db-0041",
+        "g-db-0115",
+        "g-db-0167",
+        "g-db-0182",
+        "g-db-0040",
+        "g-db-0098",
+        "g-db-0088",
+        "g-db-0072",
+        "g-db-0151",
+        "g-db-0207",
+        "g-db-0002",
+        "g-db-0201",
+        "g-db-0057",
+        "g-db-0198",
+        "g-db-0144",
+        "g-db-0179",
+        "g-db-0108",
+        "g-db-0025"
+      ]
+    },
+    {
+      "mockNumber": 45,
+      "title": "Grammar & Vocabulary Test 45",
+      "questionIds": [
+        "g-db-0140",
+        "g-db-0189",
+        "g-db-0213",
+        "g-db-0130",
+        "g-db-0071",
+        "g-db-0174",
+        "g-db-0036",
+        "g-db-0152",
+        "g-db-0009",
+        "g-db-0155",
+        "g-db-0029",
+        "g-db-0164",
+        "g-db-0214",
+        "g-db-0024",
+        "g-db-0027",
+        "g-db-0190",
+        "g-db-0063",
+        "g-db-0007",
+        "g-db-0023",
+        "g-db-0109",
+        "g-db-0060",
+        "g-db-0058",
+        "g-db-0008",
+        "g-db-0056"
+      ]
+    }
+  ]
 }
