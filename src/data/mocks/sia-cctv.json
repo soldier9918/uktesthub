@@ -8091,6 +8091,104 @@
       "type": "true_false",
       "correctAnswer": true,
       "id": "sc-tf-0084"
+    },
+    {
+      "explanation": "This document outlines the purpose of the system and ensures that the technology selected is fit for the specific security goals of the site.",
+      "question": "The 'Statement of Requirement' is used to identify the specific problems the CCTV system is intended to solve.",
+      "type": "true_false",
+      "correctAnswer": true,
+      "id": "sc-tf-0085"
+    },
+    {
+      "question": "It is legally permissible for an SIA CCTV operator to share interesting footage on their personal social media account as long as no names are mentioned.",
+      "type": "true_false",
+      "explanation": "CCTV operators are generally prohibited from sharing footage on social media; this is a breach of data protection and professional standards.",
+      "correctAnswer": false,
+      "id": "sc-tf-0086"
+    },
+    {
+      "type": "true_false",
+      "question": "Using 'Digital Zoom' on a camera provides a clearer and more detailed image than using 'Optical Zoom'.",
+      "explanation": "Digital zoom merely enlarges existing pixels, which reduces image quality and clarity compared to optical zoom.",
+      "correctAnswer": false,
+      "id": "sc-tf-0087"
+    },
+    {
+      "correctAnswer": true,
+      "explanation": "The PACE codes of practice provide clear guidelines for the police and others on how to handle and process evidence correctly.",
+      "type": "true_false",
+      "question": "The Police and Criminal Evidence Act (PACE) 1984 sets out instructions for the handling and labeling of evidence such as CCTV discs.",
+      "id": "sc-tf-0088"
+    },
+    {
+      "type": "true_false",
+      "question": "When fulfilling a Subject Access Request, the operator may need to redact the faces of other people appearing in the footage.",
+      "explanation": "Redaction (blurring or masking) is necessary to protect the privacy rights of third parties in the footage during a Subject Access Request.",
+      "correctAnswer": true,
+      "id": "sc-tf-0089"
+    },
+    {
+      "explanation": "Security systems should be designed with the least possible intrusion into the private lives of the public.",
+      "type": "true_false",
+      "question": "The 'Principle of Minimum Intrusion' means that CCTV surveillance should only be used when it is necessary and proportionate.",
+      "correctAnswer": true,
+      "id": "sc-tf-0090"
+    },
+    {
+      "type": "true_false",
+      "question": "A 'Varifocal' lens allows the operator to change the zoom level electronically from the control room desk at any time.",
+      "explanation": "A Varifocal lens must be manually adjusted at the camera itself to change the focal length, unlike a motorized PTZ lens.",
+      "correctAnswer": false,
+      "id": "sc-tf-0091"
+    },
+    {
+      "explanation": "The ICO (Information Commissioner's Office) is the body responsible for enforcing data protection laws in the UK.",
+      "type": "true_false",
+      "question": "The 'Health and Safety Executive' (HSE) is the primary body responsible for enforcing the Data Protection Act in the UK.",
+      "correctAnswer": false,
+      "id": "sc-tf-0092"
+    },
+    {
+      "question": "The term 'Target Tracking' refers to the process of following a specific subject through various camera views.",
+      "type": "true_false",
+      "explanation": "Identifying a person and following them across multiple cameras is a core skill for operators monitoring public spaces.",
+      "correctAnswer": true,
+      "id": "sc-tf-0093"
+    },
+    {
+      "correctAnswer": true,
+      "explanation": "While the SIA handles licensing, the local authority usually manages the licensing of specific premises like bars or clubs.",
+      "question": "A local authority may set specific conditions for CCTV coverage as part of a premises' liquor licence.",
+      "type": "true_false",
+      "id": "sc-tf-0094"
+    },
+    {
+      "question": "In CCTV terminology, 'Frame Rate' is the exact same thing as 'Bit Rate'.",
+      "type": "true_false",
+      "explanation": "Frame rate refers to the number of images per second (FPS), while bit rate refers to the amount of data processed over time.",
+      "correctAnswer": false,
+      "id": "sc-tf-0095"
+    },
+    {
+      "question": "The 'Master Copy' of an evidential recording should be sealed and stored securely, while a 'Working Copy' is used for viewing.",
+      "type": "true_false",
+      "explanation": "A 'Golden Image' or 'Master Copy' is the original, untouched recording used for court to ensure the evidence's integrity has not been compromised.",
+      "correctAnswer": true,
+      "id": "sc-tf-0096"
+    },
+    {
+      "type": "true_false",
+      "question": "The Information Commissioner's Office (ICO) is the independent body in the UK responsible for upholding information rights and data privacy.",
+      "correctAnswer": true,
+      "explanation": "The Information Commissioner's Office (ICO) enforces data protection laws in the UK, ensuring CCTV systems comply with the Data Protection Act.",
+      "id": "sc-tf-0097"
+    },
+    {
+      "explanation": "Under the Data Protection Act, operators must have a specific, justifiable reason to track a subject; browsing for entertainment or without cause is a breach of privacy.",
+      "correctAnswer": false,
+      "question": "Under UK data protection laws, it is legally acceptable for a CCTV operator to track any individual just to pass the time during a quiet shift.",
+      "type": "true_false",
+      "id": "sc-tf-0098"
     }
   ],
   "mocks": []

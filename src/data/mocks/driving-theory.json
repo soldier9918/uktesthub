@@ -13965,6 +13965,2642 @@
       ],
       "type": "multiple_choice",
       "id": "dt-mc-1074"
+    },
+    {
+      "imageDescription": "A close-up of a UK railway level crossing signal showing two red lights horizontally aligned and one amber light below. The red lights are flashing.",
+      "imageAlt": "A railway level crossing with twin red flashing lights and a steady amber light.",
+      "correctAnswer": 2,
+      "explanation": "You should stop at the first white line at a level crossing if the red lights are flashing, even if the barriers have not yet moved.",
+      "type": "image_question",
+      "options": [
+        "Slow down and prepare to stop if you see a train",
+        "Continue if the barriers are still up",
+        "Stop behind the white line",
+        "Drive across quickly before the barriers lower"
+      ],
+      "question": "The red lights are flashing at this level crossing. What must you do?",
+      "id": "dt-im-0001"
+    },
+    {
+      "question": "What should you do when a pedestrian has started to cross at this zebra crossing?",
+      "options": [
+        "Wait for the pedestrian to cross completely",
+        "Edge forward slowly to encourage them to hurry",
+        "Sound your horn to warn them you are there",
+        "Wave them across and then drive behind them"
+      ],
+      "type": "image_question",
+      "explanation": "Wait for the pedestrian to finish crossing. They have priority once they have stepped onto the crossing.",
+      "imageDescription": "A view from a car driver's perspective approaching a zebra crossing with white stripes and yellow Belisha beacons. A pedestrian is halfway across the road.",
+      "correctAnswer": 0,
+      "imageAlt": "A pedestrian crossing the road at a zebra crossing from the left side.",
+      "id": "dt-im-0002"
+    },
+    {
+      "question": "What does this traffic sign mean?",
+      "options": [
+        "A T-junction is ahead",
+        "No through road for vehicles",
+        "Hazardous dead-end for pedestrians only",
+        "A hospital is on the right-hand side"
+      ],
+      "type": "image_question",
+      "imageDescription": "A blue rectangular traffic sign featuring a white vertical bar with a red horizontal bar across the top, forming a 'T' shape.",
+      "correctAnswer": 1,
+      "imageAlt": "A blue square sign with a white 'T' shape. The top part of the T is red.",
+      "explanation": "This sign indicates that the road ahead is a dead end or no through road for vehicular traffic.",
+      "id": "dt-im-0003"
+    },
+    {
+      "type": "image_question",
+      "correctAnswer": 3,
+      "imageAlt": "A car on a one-way street with two lanes, approaching a junction to turn right.",
+      "imageDescription": "A top-down diagram of a blue car on a one-way street with two lanes. The car intends to turn right at the junction ahead. Arrow markings on the road point forward.",
+      "explanation": "When turning right from a one-way street, you should position your vehicle in the right-hand lane to allow other traffic to pass on the left.",
+      "question": "You are driving in a one-way street and want to turn right. Where should you position your vehicle?",
+      "options": [
+        "In the left-hand lane",
+        "In the center of the road",
+        "Wherever there is most space",
+        "In the right-hand lane"
+      ],
+      "id": "dt-im-0004"
+    },
+    {
+      "type": "image_question",
+      "imageDescription": "A standard UK 'Give Way' sign: a downward-pointing equilateral triangle with a thick red border and a white background. No text is visible.",
+      "correctAnswer": 2,
+      "imageAlt": "A triangular road sign pointing downwards with a red border and white center.",
+      "explanation": "The 'Give Way' sign is an inverted triangle. It warns you to yield to traffic on the main road.",
+      "question": "What does this sign mean?",
+      "options": [
+        "Stop and wait for 5 seconds",
+        "Priority over oncoming traffic",
+        "Give way to traffic on the main road",
+        "No entry for motor vehicles"
+      ],
+      "id": "dt-im-0005"
+    },
+    {
+      "question": "You are following this large vehicle. How should you improve your view of the road ahead?",
+      "options": [
+        "Increase your following distance",
+        "Move into the left lane immediately",
+        "Flash your headlights so the driver knows you are there",
+        "Stay close to stay in the lorry's slipstream"
+      ],
+      "type": "image_question",
+      "imageDescription": "A view from a car's dashboard looking at the rear of a large white lorry on a three-lane motorway. The car is currently quite close to the lorry.",
+      "imageAlt": "The rear view of a large heavy goods vehicle on a motorway.",
+      "correctAnswer": 0,
+      "explanation": "Keep well back when following a large vehicle so that you can see the road ahead more clearly and stay out of the driver's blind spots.",
+      "id": "dt-im-0006"
+    },
+    {
+      "options": [
+        "Recommended speed of 30 mph",
+        "Minimum speed of 30 mph",
+        "End of 30 mph zone",
+        "Maximum speed limit of 30 mph"
+      ],
+      "question": "What does this sign mean?",
+      "explanation": "This sign indicates a mandatory speed limit. You must not exceed 30 mph in this area.",
+      "imageAlt": "A circular sign with a red border and the number 30 in the center.",
+      "correctAnswer": 3,
+      "imageDescription": "A circular road sign with a bold red outer ring and a white interior containing the number '30' in black text.",
+      "type": "image_question",
+      "id": "dt-im-0007"
+    },
+    {
+      "question": "Are you allowed to park on these zig-zag lines?",
+      "options": [
+        "Yes, if you stay with the car",
+        "No, not under any circumstances",
+        "Yes, just to pick up a passenger",
+        "No, unless you turn on your hazard lights"
+      ],
+      "type": "image_question",
+      "explanation": "You must not park on the zig-zag lines at a pedestrian crossing as it blocks the view for both drivers and pedestrians.",
+      "imageDescription": "Road surface with white zig-zag lines painted on the approach to a zebra crossing. There is an empty space on the left near the kerb.",
+      "imageAlt": "White zig-zag road markings leading up to a zebra crossing.",
+      "correctAnswer": 1,
+      "id": "dt-im-0008"
+    },
+    {
+      "question": "What does this sign mean?",
+      "options": [
+        "No motor vehicles allowed",
+        "No cars or motorcycles on weekends",
+        "Only cars and motorcycles allowed",
+        "Route for emergency vehicles only"
+      ],
+      "type": "image_question",
+      "imageAlt": "A circular sign with a red border containing a silhouette of a car and a motorcycle.",
+      "correctAnswer": 0,
+      "imageDescription": "A white circular sign with a red border. Inside, there is a black silhouette of a car above a black silhouette of a motorcycle.",
+      "explanation": "A red circle with a car and motorcycle inside means that all motor vehicles are prohibited from entering.",
+      "id": "dt-im-0009"
+    },
+    {
+      "question": "The main traffic light is red, but the green filter arrow is lit. What should you do if you want to turn left?",
+      "options": [
+        "Stop and wait for the main green light",
+        "Only turn left if you are an emergency vehicle",
+        "You may turn left if it is safe to do so",
+        "Stop and wait for the filter light to turn amber"
+      ],
+      "type": "image_question",
+      "imageDescription": "A set of UK traffic lights where the main circular light is red, but a smaller green arrow lamp to the left is illuminated and pointing left.",
+      "imageAlt": "Traffic lights showing a full red light and a green filter arrow pointing left.",
+      "correctAnswer": 2,
+      "explanation": "When a green filter arrow is shown, you may proceed in that direction regardless of the other lights, provided the way is clear.",
+      "id": "dt-im-0010"
+    },
+    {
+      "question": "The cyclist ahead is signalling to turn right. What should you do?",
+      "options": [
+        "Overtake quickly on the left",
+        "Allow the cyclist time and room to turn",
+        "Sound your horn to show you are passing",
+        "Speed up to get past before they turn"
+      ],
+      "type": "image_question",
+      "imageDescription": "A view from a car following a cyclist. The cyclist has their right arm extended horizontally, signalling an intention to turn right at the junction ahead.",
+      "imageAlt": "A cyclist ahead signalling right with their arm out.",
+      "correctAnswer": 1,
+      "explanation": "Wait for the arm signal to finish and for the cyclist to move away. They may be unsteady or need more space to turn.",
+      "id": "dt-im-0011"
+    },
+    {
+      "question": "What does this warning sign mean?",
+      "options": [
+        "Double bend ahead",
+        "No right turn allowed",
+        "T-junction ahead",
+        "Staggered junction ahead"
+      ],
+      "type": "image_question",
+      "correctAnswer": 3,
+      "imageAlt": "A triangular sign with a red border showing a thick vertical black line with two thinner horizontal lines offset from each other.",
+      "imageDescription": "A white triangular sign with a red border. Inside is a thick black vertical line. A thin black line exits to the left, and a slightly higher thin black line exits to the right.",
+      "explanation": "This sign warns of a staggered junction ahead. This is a type of crossroads where the side roads are slightly offset.",
+      "id": "dt-im-0012"
+    },
+    {
+      "imageDescription": "The driver is on a narrow country road approaching a humpback bridge. There are solid white lines on the approach and 'Slow' painted on the road. A tall hedge obscures the view of the other side.",
+      "imageAlt": "A view from a driver's perspective approaching a narrow humpback bridge on a rural road.",
+      "explanation": "You should never overtake on the approach to a bridge where your view of oncoming traffic is restricted. Wait until you have a clear view ahead.",
+      "options": [
+        "Overtake if no cars are visible",
+        "Stay back and wait for a clear view",
+        "Sound your horn and accelerate over quickly",
+        "Move to the centre of the road to see better"
+      ],
+      "type": "image_question",
+      "question": "You are approaching this humpback bridge. What should you do?",
+      "correctAnswer": 1,
+      "id": "dt-im-0013"
+    },
+    {
+      "type": "image_question",
+      "options": [
+        "Stop your vehicle",
+        "Turn left immediately",
+        "Slow down but do not stop",
+        "Proceed with caution"
+      ],
+      "question": "What must you do when the police officer is signalling like this?",
+      "correctAnswer": 0,
+      "explanation": "You must obey the signals of a police officer or traffic warden directing traffic. If they signal you to stop, you must do so immediately.",
+      "imageAlt": "A police officer standing in the road with their arm outstretched towards the driver.",
+      "imageDescription": "A police officer in a high-visibility jacket is standing in the middle of a junction with their right arm held straight out towards your vehicle, palm facing you.",
+      "id": "dt-im-0014"
+    },
+    {
+      "imageDescription": "A first-person view of a mini-roundabout. A blue car is currently crossing the roundabout from the right-hand entrance. There is a white painted circle in the centre.",
+      "explanation": "At a mini-roundabout, you must give way to traffic approaching from your right. Check all exits before proceeding.",
+      "imageAlt": "A car approaching a mini-roundabout with a blue car already on the roundabout to the right.",
+      "correctAnswer": 2,
+      "question": "You are approaching this mini-roundabout. What's the correct way to deal with the blue car?",
+      "options": [
+        "Accelerate to beat the blue car",
+        "Stop and wait for the blue car to flash you through",
+        "Give way to the blue car coming from the right",
+        "The blue car must give way to you as you are going straight ahead"
+      ],
+      "type": "image_question",
+      "id": "dt-im-0015"
+    },
+    {
+      "question": "What does this sign mean?",
+      "correctAnswer": 3,
+      "type": "image_question",
+      "options": [
+        "End of motorway",
+        "Two-way traffic ahead",
+        "No overtaking allowed",
+        "Dual carriageway ahead"
+      ],
+      "imageAlt": "A blue sign showing two lanes merging into one with a central reservation icon.",
+      "explanation": "This sign marks the start of a dual carriageway. It does not indicate the speed limit, which will be shown on separate signs or determined by the road type.",
+      "imageDescription": "A blue rectangular sign with a white icon showing two lanes separated by a central reservation, often found at the end of a single carriageway.",
+      "id": "dt-im-0016"
+    },
+    {
+      "imageDescription": "A urban street scene showing a bus stopped at a marked bus stop. The bus has its right-hand indicator on, intending to pull back into the flow of traffic.",
+      "imageAlt": "A bus at a bus stop with its right-hand indicator flashing.",
+      "explanation": "When a bus is signalling to pull out, you should give way if it is safe to do so, especially in built-up areas.",
+      "correctAnswer": 0,
+      "question": "The bus in the picture is signalling to pull out. What should you do?",
+      "options": [
+        "Give way and allow the bus to move out",
+        "Speed up to get past before it moves",
+        "Sound your horn to warn the bus driver",
+        "Maintain your speed and drive around it"
+      ],
+      "type": "image_question",
+      "id": "dt-im-0017"
+    },
+    {
+      "question": "What is the purpose of the solid white line on the side of the road in this image?",
+      "correctAnswer": 1,
+      "options": [
+        "The path for cyclists",
+        "The edge of the carriageway",
+        "A no-parking zone",
+        "An area for emergency stopping only"
+      ],
+      "type": "image_question",
+      "imageDescription": "A night-time view of a winding rural road. There is a solid white line on the left and right edges of the tarmac, separating the road from the grass verge.",
+      "imageAlt": "A rural road at night with white lines painted along the outer edges of the tarmac.",
+      "explanation": "Solid white lines at the edge of the road indicate the edge of the carriageway. This helps drivers stay on the road in poor visibility or at night.",
+      "id": "dt-im-0018"
+    },
+    {
+      "imageAlt": "A brown rectangular sign with white lettering and a symbol of a castle.",
+      "explanation": "Brown signs are used to provide directions to tourist attractions, such as historic houses, zoos, or leisure facilities.",
+      "imageDescription": "A brown road sign featuring white text for a local 'Historic House' and a white castle icon. There is an arrow pointing to the left.",
+      "type": "image_question",
+      "options": [
+        "A temporary diversion route",
+        "A route for heavy goods vehicles",
+        "Directions to a tourist attraction",
+        "A motorway service station ahead"
+      ],
+      "question": "What type of information is provided by this brown sign?",
+      "correctAnswer": 2,
+      "id": "dt-im-0019"
+    },
+    {
+      "type": "image_question",
+      "options": [
+        "Children have already finished crossing",
+        "The crossing warden is off duty",
+        "The road is closed ahead",
+        "A school crossing patrol is ahead"
+      ],
+      "question": "What do these flashing amber lights mean?",
+      "correctAnswer": 3,
+      "explanation": "Amber lights on a school crossing patrol vehicle warn you that children may be crossing. You must be prepared to stop when the warden steps into the road.",
+      "imageAlt": "A school crossing patrol warden holding a 'Stop-Children' sign with amber lights flashing on their pole.",
+      "imageDescription": "A school crossing warden is standing on the pavement by a zebra crossing. They are holding a 'Stop-Children' sign, and two amber lights on the pole are flashing.",
+      "id": "dt-im-0020"
+    },
+    {
+      "question": "The traffic light has turned green. What should you do now?",
+      "correctAnswer": 1,
+      "options": [
+        "Sound your horn to tell them to hurry up",
+        "Wait patiently until they have reached the pavement",
+        "Drive slowly around them if there is space",
+        "Flash your lights to show them you are there"
+      ],
+      "type": "image_question",
+      "imageDescription": "A pedestrian who is blind is using a guide dog to cross at a controlled crossing. The traffic light for the driver has just turned green, but the pedestrian is still in the middle of the road.",
+      "explanation": "Wait until the pedestrian has completely finished crossing and climbed onto the pavement before you move off.",
+      "imageAlt": "A pedestrian with a white cane and a dog in a yellow harness crossing the road.",
+      "id": "dt-im-0021"
+    },
+    {
+      "options": [
+        "Go if the way is clear",
+        "Stop and wait for a green arrow",
+        "Only turn left or right",
+        "Wait for the light to flash before moving"
+      ],
+      "type": "image_question",
+      "question": "What does this traffic light signal mean?",
+      "correctAnswer": 0,
+      "imageDescription": "A standard set of UK traffic lights showing a steady green circle. The junction ahead appears clear of traffic.",
+      "imageAlt": "Traffic lights showing a steady green light at a clear junction.",
+      "explanation": "A green light means you may go if the way is clear. You must still be careful and check for any pedestrians or vehicles that might still be in the junction.",
+      "id": "dt-im-0022"
+    },
+    {
+      "correctAnswer": 3,
+      "question": "What does this sign mean?",
+      "options": [
+        "Give way to motor vehicles",
+        "Only cars and motorcycles allowed",
+        "Motorcycle parking only",
+        "No motor vehicles allowed"
+      ],
+      "type": "image_question",
+      "imageDescription": "A white circular sign with a thick red border. Inside the circle is a black silhouette of a car above a black silhouette of a motorcycle.",
+      "explanation": "Signs with a red circle are prohibitive; they tell you what you must not do. A red circle with a car and a motorcycle means no motor vehicles are allowed.",
+      "imageAlt": "A circular sign with a red border containing a silhouette of a car and a motorcycle.",
+      "id": "dt-im-0023"
+    },
+    {
+      "options": [
+        "Keep the same distance as when dry",
+        "Half your following distance",
+        "Double your following distance",
+        "Turn on your hazard lights while driving"
+      ],
+      "type": "image_question",
+      "correctAnswer": 2,
+      "question": "The weather is like this. How should you adjust your following distance to the car ahead?",
+      "imageDescription": "A driver's view through a wet windshield with wipers active. A silver car is visible ahead on a motorway, with spray coming off its wheels.",
+      "explanation": "In rainy conditions, your stopping distance will be at least double that of a dry road. Take care and increase your following distance.",
+      "imageAlt": "A view through a rainy windshield at a car in front.",
+      "id": "dt-im-0024"
+    },
+    {
+      "explanation": "Toucan crossings are designed for both cyclists and pedestrians to cross at the same time. Unlike puffin or pelican crossings, cyclists do not need to dismount.",
+      "options": [
+        "A puffin crossing",
+        "A toucan crossing",
+        "A pelican crossing",
+        "A zebra crossing"
+      ],
+      "correctAnswer": 1,
+      "imageDescription": "A close-up of a pedestrian crossing signal showing a red figure and a red bicycle symbol side-by-side on the light unit.",
+      "imageAlt": "A signal-controlled crossing with a red man and a red bicycle symbol displayed on the same light unit.",
+      "question": "What type of crossing is shown in this image, allowing both pedestrians and cyclists to cross together?",
+      "type": "image_question",
+      "id": "dt-im-0025"
+    },
+    {
+      "imageDescription": "A wide UK road with a central area marked with white diagonal stripes surrounded by a broken white line. There is a car approaching the camera.",
+      "imageAlt": "A road with white diagonal stripes bordered by a broken white line in the centre.",
+      "question": "What is the rule for the area marked with white diagonal stripes and a broken white border?",
+      "type": "image_question",
+      "explanation": "The white diagonal stripes (hatched area) bordered by a broken white line should not be entered unless it is necessary and you can see it is safe to do so.",
+      "correctAnswer": 0,
+      "options": [
+        "You should not enter it unless it is necessary and safe",
+        "You must never enter it for any reason",
+        "It is a dedicated lane for motorcyclists only",
+        "It is used for parking in an emergency"
+      ],
+      "id": "dt-im-0026"
+    },
+    {
+      "correctAnswer": 2,
+      "options": [
+        "Assume ನೀವು have right of way if you are going straight",
+        "Follow the signals of the driver to your right",
+        "Treat the junction as unmarked and be prepared to stop",
+        "Switch on your hazard lights and proceed through at speed"
+      ],
+      "explanation": "When approaching a junction where the traffic lights are not working, you should treat it as an unmarked junction and be prepared to stop. No one has priority.",
+      "type": "image_question",
+      "question": "The traffic lights at this junction are out of order. What should you do?",
+      "imageAlt": "A busy urban crossroads where all the traffic lights are dark and unlit.",
+      "imageDescription": "A view from a driver's perspective approaching a four-way junction. The traffic lights are visible but are completely dark, indicating a power failure.",
+      "id": "dt-im-0027"
+    },
+    {
+      "imageDescription": "A blue circle sign with a white arrow pointing towards the bottom left (45 degrees). It is mounted on a grey post.",
+      "question": "What does this blue mandatory sign mean?",
+      "type": "image_question",
+      "imageAlt": "A circular blue sign with a white arrow pointing to the left.",
+      "options": [
+        "Turn left ahead only",
+        "No entry to the left",
+        "Keep right at all times",
+        "Keep left"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Circular signs with a blue background and no red border give positive instructions, telling you what you must do or which route you must take.",
+      "id": "dt-im-0028"
+    },
+    {
+      "imageDescription": "A view through a car windscreen in heavy rain. The wipers are on, and there is significant spray from a lorry ahead on the dual carriageway.",
+      "question": "You are driving on this dual carriageway in heavy rain. What should you do?",
+      "type": "image_question",
+      "imageAlt": "A dual carriageway during a heavy rainstorm with spray coming off the tyres of vehicles.",
+      "correctAnswer": 1,
+      "options": [
+        "Drive at the speed limit of 70 mph to keep traffic moving",
+        "Slow down and increase your following distance",
+        "Keep close to the vehicle in front to stay in its tracks",
+        "Switch on your rear fog lights immediately"
+      ],
+      "explanation": "While the speed limit on a dual carriageway is 70 mph for cars, you must always adjust your speed to the weather conditions. In heavy rain, you should slow down to maintain a safe gap.",
+      "id": "dt-im-0029"
+    },
+    {
+      "imageAlt": "A white circular sign with a single black diagonal stripe.",
+      "question": "What is the maximum speed limit for a car on this single carriageway road?",
+      "type": "image_question",
+      "imageDescription": "A clear view of a 'National Speed Limit Applies' sign on a single-track rural road with hedges on either side.",
+      "explanation": "A white circle with a black diagonal stripe indicates that the national speed limit applies. For a car on a single carriageway, this is 60 mph.",
+      "options": [
+        "60 mph",
+        "70 mph",
+        "50 mph",
+        "40 mph"
+      ],
+      "correctAnswer": 0,
+      "id": "dt-im-0030"
+    },
+    {
+      "explanation": "Reflective studs (cats' eyes) on the left-hand edge of the motorway, between the carriageway and the hard shoulder, are red to warn you of the edge of the road.",
+      "correctAnswer": 2,
+      "options": [
+        "White",
+        "Green",
+        "Red",
+        "Amber"
+      ],
+      "imageDescription": "A night-time motorway scene. The headlights of the car light up the reflective studs. Focus is on the studs between the left lane and the hard shoulder.",
+      "imageAlt": "Night-time view of a motorway showing different coloured reflective studs.",
+      "type": "image_question",
+      "question": "On a motorway, what colour are the reflective studs between the left-hand lane and the hard shoulder?",
+      "id": "dt-im-0031"
+    },
+    {
+      "explanation": "Drivers must always yield to pedestrians who have already started to cross a side road into which the driver is turning. Patience is required.",
+      "options": [
+        "Sound your horn to tell them to hurry up",
+        "Wait for them to finish crossing safely",
+        "Drive around them if there is enough space",
+        "Flash your lights to indicate they should stop walking"
+      ],
+      "correctAnswer": 1,
+      "imageDescription": "A car is mid-turn from a main road into a side street. An elderly pedestrian with a walking stick is currently crossing that side street directly in the car's path.",
+      "imageAlt": "A car turning left into a side road where a pedestrian is halfway across the road.",
+      "type": "image_question",
+      "question": "You are turning into this side road. What should you do regarding the pedestrian?",
+      "id": "dt-im-0032"
+    },
+    {
+      "options": [
+        "Minimum speed permitted through the bridge",
+        "Maximum width of the vehicle allowed",
+        "The length of the tunnel ahead",
+        "Maximum height of the vehicle allowed"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Clearance signs with a red circle and a measurement indicate the maximum height of vehicles allowed to pass under the bridge. 4.4m is approximately 14' 6\".",
+      "type": "image_question",
+      "question": "What does this sign on the bridge mean?",
+      "imageAlt": "A red circle sign with '4.4m' and '14' 6\"' written inside it, positioned on a bridge.",
+      "imageDescription": "A low stone railway bridge over a road. Affixed to the center of the arch is a circular sign with a red border showing a height limit of 4.4 metres.",
+      "id": "dt-im-0033"
+    },
+    {
+      "options": [
+        "The road is about to become a dual carriageway",
+        "Overtaking is strictly prohibited",
+        "There is a hazard ahead",
+        "You are entering a 20 mph zone"
+      ],
+      "correctAnswer": 2,
+      "explanation": "A broken white line with long markings and short gaps in the centre of the road is a hazard warning line, indicating a hazard such as a bend or junction ahead.",
+      "type": "image_question",
+      "question": "What do these specific centre line markings indicate?",
+      "imageAlt": "A road with long white paint markings and very short gaps in the centre.",
+      "imageDescription": "A rural road where the central white line has changed from short dashes to much longer dashes with very short gaps, approaching a blind bend.",
+      "id": "dt-im-0034"
+    },
+    {
+      "question": "What does this sign mean?",
+      "type": "image_question",
+      "imageAlt": "A circular sign with a red border and a bicycle symbol in the centre.",
+      "imageDescription": "A white circular sign with a red outer ring. Inside the ring is a black silhouette of a bicycle. The sign is at the entrance to a pedestrianised zone.",
+      "correctAnswer": 0,
+      "options": [
+        "No cycling allowed",
+        "Route for cycles only",
+        "Warning: cyclists ahead",
+        "Parking for cycles only"
+      ],
+      "explanation": "Circular signs with red borders are 'prohibitory' and tell you what you must not do. A bicycle inside a red circle means no cycling is allowed in that area.",
+      "id": "dt-im-0035"
+    },
+    {
+      "correctAnswer": 1,
+      "options": [
+        "Only emergency vehicles can park here",
+        "Do not block this part of the road when traffic is queuing",
+        "Only buses are allowed to stop in this area",
+        "You must speed up when driving over this text"
+      ],
+      "explanation": "The 'Keep Clear' marking is used to ensure that junctions or entrances are not blocked by queuing traffic, allowing vehicles to turn and keeping the flow of traffic steady.",
+      "type": "image_question",
+      "question": "What is the purpose of the 'KEEP CLEAR' road marking in this image?",
+      "imageAlt": "White 'KEEP CLEAR' text painted on the road surface near a junction.",
+      "imageDescription": "Large white letters painted on the tarmac of a main road reading 'KEEP CLEAR', located directly outside the exit of a local fire station.",
+      "id": "dt-im-0036"
+    },
+    {
+      "correctAnswer": 2,
+      "explanation": "When you see a 'long vehicle' sign on a lorry or bus, it reminds you that the vehicle needs extra room to manoeuvre, especially when turning at junctions.",
+      "imageDescription": "A photo from behind a large articulated lorry showing a bright yellow rectagular sign with the words 'LONG VEHICLE' in black text.",
+      "question": "You are following this vehicle. What should you be aware of?",
+      "imageAlt": "The rear of a large heavy goods vehicle with a yellow 'LONG VEHICLE' sign.",
+      "options": [
+        "The vehicle is carrying hazardous chemicals",
+        "The vehicle is limited to 40 mph",
+        "The vehicle needs extra room to turn at junctions",
+        "The driver has a restricted view to the rear"
+      ],
+      "type": "image_question",
+      "id": "dt-im-0037"
+    },
+    {
+      "imageDescription": "A standard UK triangular warning sign with a red border showing a symbol for a double bend, first to the left. Below it is a small white rectangular plate with 'For 2 miles' written on it.",
+      "explanation": "The 'double-bend' sign with the '2 miles' plate means there are a series of bends ahead over the specified distance. Red rings on such signs are not standard; these are warning signs.",
+      "correctAnswer": 0,
+      "type": "image_question",
+      "options": [
+        "A series of bends for the next two miles",
+        "Two sharp bends ahead in the road",
+        "A diversion route lasting two miles",
+        "A sharp bend in two miles' time"
+      ],
+      "imageAlt": "A triangular warning sign with a double bend symbol and a plate saying '2 miles'.",
+      "question": "What does this sign warn you of?",
+      "id": "dt-im-0038"
+    },
+    {
+      "question": "What does this diamond-shaped sign mean?",
+      "imageAlt": "A diamond-shaped white sign with a black number inside.",
+      "options": [
+        "It is the speed limit for cars in the tram lane",
+        "It is the minimum speed for all traffic",
+        "It is the number of the next tram stop",
+        "It is the speed limit for tram drivers"
+      ],
+      "type": "image_question",
+      "correctAnswer": 3,
+      "imageDescription": "A diamond-shaped white sign with a black border, featuring the number '30' in the centre, located next to tram tracks in a city street.",
+      "explanation": "Trams cannot steer to avoid you. When you see a diamond-shaped sign, it is specifically for tram drivers, but you should be aware of their presence.",
+      "id": "dt-im-0039"
+    },
+    {
+      "imageDescription": "A view of a road with yellow zig-zag markings on the tarmac. To the side is a school gate and a sign that says 'School Keep Clear'.",
+      "explanation": "Zig-zag lines outside a school mean you must not park or stop there at all, as this blocks the view for children and drivers.",
+      "correctAnswer": 1,
+      "type": "image_question",
+      "options": [
+        "You can stop to pick up children quickly",
+        "You should not park or stop there at any time",
+        "You can park there during school holidays",
+        "You can stop there if you stay with your vehicle"
+      ],
+      "imageAlt": "Yellow zig-zag road markings outside a school entrance.",
+      "question": "What do these yellow markings mean?",
+      "id": "dt-im-0040"
+    },
+    {
+      "imageDescription": "A circular road sign with a red outer ring. Inside the white circle is a black silhouette of a car above a black silhouette of a motorcycle.",
+      "explanation": "A red circle with a car and a motorcycle means no motor vehicles are allowed. This is often used for pedestrian zones or quiet lanes.",
+      "correctAnswer": 2,
+      "options": [
+        "Motorcycles only are allowed",
+        "Warning: motor vehicles ahead",
+        "No motor vehicles allowed",
+        "No cars or motorcycles on weekends"
+      ],
+      "type": "image_question",
+      "imageAlt": "A circular sign with a red border containing a car and a motorcycle.",
+      "question": "What does this sign mean?",
+      "id": "dt-im-0041"
+    },
+    {
+      "question": "These traffic lights are at a junction. What should you do if you want to turn left?",
+      "type": "image_question",
+      "options": [
+        "Stop and wait for the main light to turn green",
+        "You may turn left only if the road is empty",
+        "Stop, then proceed with caution to the left",
+        "You may turn left despite the red light"
+      ],
+      "imageAlt": "Traffic lights showing a red main light and a green filter arrow pointing left.",
+      "correctAnswer": 3,
+      "imageDescription": "A set of traffic lights where the top light is solid red, but a separate light at the bottom-left shows a steady green arrow pointing to the left.",
+      "explanation": "The green arrow (filter light) means you may proceed in that direction regardless of the main red light, provided it is safe to do so.",
+      "id": "dt-im-0042"
+    },
+    {
+      "correctAnswer": 0,
+      "explanation": "Green reflective studs mark the edge of the main carriageway at lay-bys and slip roads to help you see the exit or entry points in the dark.",
+      "imageDescription": "A nighttime view of a motorway or dual carriageway. The white line separating the left lane from a slip road exit is marked with green reflective studs (cat's eyes).",
+      "question": "What do green reflective studs indicate on a motorway?",
+      "options": [
+        "The boundary between the carriageway and a slip road or lay-by",
+        "The right-hand edge of the motorway next to the central reservation",
+        "The division between lanes of traffic going the same way",
+        "The area that separates the motorway from the hard shoulder"
+      ],
+      "type": "image_question",
+      "imageAlt": "A motorway at night with bright green reflective studs on the left side.",
+      "id": "dt-im-0043"
+    },
+    {
+      "correctAnswer": 1,
+      "imageDescription": "A view from a car's dashboard following a cyclist who is riding in the middle of a narrow lane. There is a parked car on the left side of the road ahead of the cyclist.",
+      "explanation": "When following a cyclist, you must give them at least as much room as you would a car when overtaking (1.5 metres). This is especially important if they need to move out for hazards.",
+      "question": "How should you react to the cyclist in this situation?",
+      "imageAlt": "A cyclist riding in the primary position in the middle of the lane.",
+      "options": [
+        "Sound your horn to make them move over",
+        "Keep well back and stay behind until it is safe to pass with plenty of room",
+        "Overtake quickly before the cyclist reaches the parked car",
+        "Drive close behind to show you want to pass"
+      ],
+      "type": "image_question",
+      "id": "dt-im-0044"
+    },
+    {
+      "correctAnswer": 2,
+      "explanation": "The blue sign with a white bicycle and a pedestrian indicates a route divided for cyclists and pedestrians to use simultaneously, but in their own lanes.",
+      "imageDescription": "A blue circular sign. A white vertical line runs down the middle. To the left of the line is a pedestrian symbol, and to the right is a bicycle symbol.",
+      "question": "What does this sign mean?",
+      "options": [
+        "A route for pedestrians only",
+        "A route where pedestrians must yield to cyclists",
+        "A segregated route for pedestrians and cyclists",
+        "A prohibited zone for all vehicles except cycles"
+      ],
+      "type": "image_question",
+      "imageAlt": "A blue circular sign with a white bicycle and pedestrian separated by a vertical line.",
+      "id": "dt-im-0045"
+    },
+    {
+      "imageDescription": "A roadside sign in the shape of an inverted triangle (point at the bottom) with a thick red border and a blank white centre. There is a 'Give Way' line on the road ahead.",
+      "explanation": "An upside-down triangle with a red border and no text is the 'Give Way' sign. If it has 'STOP' in a red octagon, you must come to a complete halt.",
+      "correctAnswer": 1,
+      "imageAlt": "An inverted triangle sign with a red border and a white centre.",
+      "options": [
+        "Stop and wait for the light to change",
+        "Give way to traffic on the major road",
+        "No entry for any vehicles",
+        "One-way street ahead"
+      ],
+      "type": "image_question",
+      "question": "What does this sign indicate?",
+      "id": "dt-im-0046"
+    },
+    {
+      "correctAnswer": 0,
+      "explanation": "Single yellow lines mean parking restrictions apply at certain times. You must check the nearby sign for the specific hours of operation.",
+      "imageDescription": "A view of a kerb with a single yellow line painted on the road. Next to it on a lamp post is a small yellow rectangular sign showing time restrictions (e.g., Mon-Sat, 8am-6pm).",
+      "question": "What is the rule for parking where there is a single yellow line?",
+      "imageAlt": "A single yellow line at the edge of the road next to a time-restriction sign.",
+      "type": "image_question",
+      "options": [
+        "You must check the sign for the hours of the restriction",
+        "No parking at any time under any circumstances",
+        "You can park here for up to 20 minutes to load or unload",
+        "Parking is only allowed for Blue Badge holders"
+      ],
+      "id": "dt-im-0047"
+    },
+    {
+      "question": "What does this sign warn you about?",
+      "imageAlt": "A triangular warning sign with a car skidding symbol.",
+      "type": "image_question",
+      "options": [
+        "No motor vehicles allowed due to ice",
+        "A steep hill downwards ahead",
+        "A car testing area only",
+        "The road surface ahead may be slippery"
+      ],
+      "correctAnswer": 3,
+      "imageDescription": "A triangular warning sign with a red border showing a black silhouette of a car with two curved 'skid' lines behind the rear wheels.",
+      "explanation": "When you see a 'slippery road' sign, you should reduce your speed and avoid sudden braking or steering to prevent a skid.",
+      "id": "dt-im-0048"
+    },
+    {
+      "type": "image_question",
+      "correctAnswer": 1,
+      "explanation": "White studs are used to mark the lanes or the middle of the road on motorways and dual carriageways.",
+      "imageDescription": "A nighttime view of a three-lane UK motorway. The reflective studs between the lanes are glowing under the car's headlights.",
+      "imageAlt": "A three-lane motorway at night with reflective studs visible between the lanes.",
+      "options": [
+        "Red",
+        "White",
+        "Amber",
+        "Green"
+      ],
+      "question": "What colour are the reflective studs between the lanes on this motorway?",
+      "id": "dt-im-0049"
+    },
+    {
+      "options": [
+        "No cars allowed",
+        "No motorcycles allowed",
+        "No motor vehicles allowed",
+        "Parking for motor vehicles only"
+      ],
+      "question": "What does this sign mean?",
+      "type": "image_question",
+      "correctAnswer": 2,
+      "explanation": "A red circle with a car and a motorcycle means no motor vehicles are allowed. Pedestrians and cyclists may still use the route.",
+      "imageDescription": "A standard UK 'No Motor Vehicles' sign: a white circle with a red border, featuring a black silhouette of a car above a silhouette of a motorcycle.",
+      "imageAlt": "A circular road sign with a red border containing a silhouette of a car and a motorcycle.",
+      "id": "dt-im-0050"
+    },
+    {
+      "options": [
+        "Wait for the pedestrian to cross",
+        "Sound your horn to warn the pedestrian",
+        "Drive around the pedestrian clearly",
+        "Flash your headlights so they hurry up"
+      ],
+      "question": "You are turning left into a side road. What should you do if a pedestrian has already started to cross?",
+      "type": "image_question",
+      "correctAnswer": 0,
+      "explanation": "Always give way to pedestrians who have started to cross the road into which you are turning.",
+      "imageDescription": "Point of view from a driver's seat. The car is at a junction turning left. A pedestrian is already walking across the entrance of the side road.",
+      "imageAlt": "A car positioned to turn left into a side road where a pedestrian is halfway across the road.",
+      "id": "dt-im-0051"
+    },
+    {
+      "imageAlt": "An upright triangular road sign with a red border and a white background.",
+      "imageDescription": "A blank triangular sign with a red border and white interior, set against a rural roadside background.",
+      "correctAnswer": 1,
+      "explanation": "Triangular signs with a red border are used to provide warnings of hazards ahead.",
+      "type": "image_question",
+      "question": "What is the main purpose of road signs in this triangular shape?",
+      "options": [
+        "Information commands",
+        "Hazards ahead",
+        "Prohibitions or restrictions",
+        "Directions to places"
+      ],
+      "id": "dt-im-0052"
+    },
+    {
+      "correctAnswer": 3,
+      "explanation": "A single white line along the side of the road marks the edge of the carriageway, helping drivers see the road layout in poor light.",
+      "type": "image_question",
+      "imageAlt": "A rural road at dusk with a solid white line painted along the left edge.",
+      "imageDescription": "A winding rural road with no street lighting. A solid white line is visible on the left edge of the tarmac, separating the road from the grass verge.",
+      "options": [
+        "A cycle lane border",
+        "No parking allowed",
+        "A bus lane boundary road",
+        "The edge of the carriageway"
+      ],
+      "question": "What does the solid white line on the left side of the road indicate?",
+      "id": "dt-im-0053"
+    },
+    {
+      "type": "image_question",
+      "correctAnswer": 0,
+      "explanation": "In a ford, the water depth can vary. You should check the depth gauge and use a low gear to keep your engine speed up.",
+      "imageDescription": "A road approaching a water splash (ford). On the left side of the ford, there is a depth gauge marked in feet and metres.",
+      "imageAlt": "A road crossing a shallow stream with a depth gauge pole at the side.",
+      "options": [
+        "Check the water depth gauge",
+        "Drive through as fast as possible",
+        "Wait for a larger vehicle to go first",
+        "Switch off your headlights"
+      ],
+      "question": "What should you do before driving through this ford?",
+      "id": "dt-im-0054"
+    },
+    {
+      "imageAlt": "View from a side road looking at a main road where a red car is approaching from the right.",
+      "imageDescription": "Driver's view from behind the steering wheel at a T-junction. A red car is approaching quickly from the right on the prioritised main road.",
+      "correctAnswer": 1,
+      "explanation": "Wait for the red car to pass. Emerging from a side road requires you to give way to traffic on the main road.",
+      "type": "image_question",
+      "question": "You are at this junction. What should you do?",
+      "options": [
+        "Pull out quickly before the car arrives",
+        "Wait for the red car to pass before pulling out",
+        "Pull out halfway to signal your intent",
+        "Flash your lights to ask the car to stop"
+      ],
+      "id": "dt-im-0055"
+    },
+    {
+      "options": [
+        "Turn left ahead",
+        "One-way street only",
+        "Keep to the left of this sign",
+        "No entry for traffic from the left"
+      ],
+      "question": "What does this sign mean?",
+      "correctAnswer": 2,
+      "explanation": "An upright blue sign with a white arrow pointing left/downwards indicates that you must pass the obstruction on the side shown.",
+      "type": "image_question",
+      "imageAlt": "A blue circular sign with a white arrow pointing diagonally down to the left.",
+      "imageDescription": "A blue circular sign featuring a thick white arrow pointing towards the bottom-left corner, positioned on a traffic island.",
+      "id": "dt-im-0056"
+    },
+    {
+      "options": [
+        "50 mph",
+        "60 mph",
+        "None of these",
+        "70 mph"
+      ],
+      "question": "What is the speed limit for a car on this dual carriageway?",
+      "type": "image_question",
+      "correctAnswer": 3,
+      "explanation": "The national speed limit for a car on a dual carriageway is 70 mph, unless signs indicate otherwise.",
+      "imageAlt": "A white circular sign with a black diagonal stripe across it on a dual carriageway.",
+      "imageDescription": "A dual carriageway with a central reservation. A 'National Speed Limit' sign (white circle, black diagonal stripe) is visible on the verge.",
+      "id": "dt-im-0057"
+    },
+    {
+      "imageAlt": "The rear of a silver car on a dry road with white dashed lines.",
+      "imageDescription": "A car driving on a dry open road. The view is from a following vehicle looking at the back of a silver car. Conventional dashed white lines are in the centre.",
+      "correctAnswer": 1,
+      "explanation": "The '2-second rule' helps you keep a safe distance in dry conditions. Double this in wet weather.",
+      "type": "image_question",
+      "question": "In good, dry conditions, what is the minimum time gap you should leave between your car and the one in front?",
+      "options": [
+        "1 second",
+        "2 seconds",
+        "4 seconds",
+        "10 seconds"
+      ],
+      "id": "dt-im-0058"
+    },
+    {
+      "question": "What is the rule for giving way at this mini-roundabout?",
+      "options": [
+        "Give way to traffic from the right",
+        "Give way to traffic from the left",
+        "Stop and wait for the road to be clear",
+        "Priority is given to the largest vehicle"
+      ],
+      "imageAlt": "A mini-roundabout with a white painted circle and a 'Give Way' triangle and lines.",
+      "imageDescription": "A mini-roundabout in a residential area. There is a white painted circle in the middle and a 'Give Way' sign on the approach.",
+      "type": "image_question",
+      "correctAnswer": 0,
+      "explanation": "When you see a 'Give Way' sign at a mini-roundabout, you must give way to traffic approaching from your right.",
+      "id": "dt-im-0059"
+    },
+    {
+      "imageDescription": "A rectangular brown UK road sign with white text and a white silhouette of a steam locomotive, indicating a tourist railway.",
+      "imageAlt": "A brown rectangular road sign with a white steam train symbol.",
+      "type": "image_question",
+      "correctAnswer": 2,
+      "explanation": "Brown signs are used to provide directions to tourist attractions or points of interest.",
+      "question": "What type of information does this brown sign provide?",
+      "options": [
+        "Railway station ahead",
+        "Level crossing with a gate",
+        "Tourist attraction ahead",
+        "Industrial zone entrance"
+      ],
+      "id": "dt-im-0060"
+    },
+    {
+      "imageAlt": "A circular road sign with a red border and a white background, containing icons of a car and a motorcycle.",
+      "type": "image_question",
+      "question": "What does this sign mean?",
+      "correctAnswer": 2,
+      "imageDescription": "A standard UK 'No Motor Vehicles' sign showing a red circle with a car above a motorcycle on a white background.",
+      "explanation": "Circular signs with a red border are prohibitive. This specific sign means that motor vehicles are not allowed in the area.",
+      "options": [
+        "Only cars and motorcycles allowed",
+        "No motorcycles allowed",
+        "No motor vehicles allowed",
+        "Road closed to all traffic, including bicycles"
+      ],
+      "id": "dt-im-0061"
+    },
+    {
+      "options": [
+        "Hump bridge ahead",
+        "Uneven road surface ahead",
+        "Speed bumps for 2 miles",
+        "Low bridge ahead"
+      ],
+      "explanation": "A red triangle with a single black horizontal bar (tapering at the ends) indicates that there is a hump bridge ahead. Stay alert for limited visibility.",
+      "imageDescription": "UK warning sign: A red triangle with a white background and a black symbol of a bump representing a hump bridge.",
+      "correctAnswer": 0,
+      "type": "image_question",
+      "imageAlt": "A triangular warning sign showing a black silhouette of a hump bridge.",
+      "question": "What does this sign warn you about?",
+      "id": "dt-im-0062"
+    },
+    {
+      "imageDescription": "A car's perspective driving on a three-lane motorway at night, showing white reflective studs separating the lanes.",
+      "correctAnswer": 3,
+      "type": "image_question",
+      "imageAlt": "View of a motorway at night with white reflective studs glowing between the lanes.",
+      "question": "What do these white reflective studs indicate?",
+      "options": [
+        "The edge of the motorway on the left",
+        "The edge of the motorway on the right",
+        "The entrance to a slip road",
+        "The lane markings between traffic lanes"
+      ],
+      "explanation": "White studs are used to mark the lanes on a motorway or to mark the middle of a standard two-way road.",
+      "id": "dt-im-0063"
+    },
+    {
+      "correctAnswer": 1,
+      "imageDescription": "A UK mandatory sign: A blue circle with a vertical white line. On the left is a pedestrian symbol, and on the right is a bicycle symbol.",
+      "imageAlt": "A blue circular sign with a white line down the middle, showing a bicycle on one side and a person walking on the other.",
+      "type": "image_question",
+      "question": "What does this sign indicate?",
+      "options": [
+        "No pedestrians or cyclists allowed",
+        "Segmented route for pedestrians and cyclists",
+        "Cycle path only; no pedestrians allowed",
+        "End of shared pedestrian and cycle path"
+      ],
+      "explanation": "A blue circle sign with a white bicycle and a white pedestrian silhouette divided by a vertical line marks a route shared by cyclists and pedestrians, where they use separate sides.",
+      "id": "dt-im-0064"
+    },
+    {
+      "explanation": "Red reflective studs are placed along the left-hand edge of the motorway (between the carriageway and the hard shoulder or verge) to guide drivers in low visibility.",
+      "options": [
+        "The central reservation line",
+        "The edge of a slip road entry",
+        "The left-hand edge of the carriageway",
+        "The speed limit for the lane ahead"
+      ],
+      "question": "What is the purpose of the red reflective studs shown here?",
+      "type": "image_question",
+      "imageAlt": "Motorway hard shoulder with red studs separating it from the main lane.",
+      "imageDescription": "A motorway scene focusing on the leftmost lane and the hard shoulder, showing red reflective studs in the road.",
+      "correctAnswer": 2,
+      "id": "dt-im-0065"
+    },
+    {
+      "options": [
+        "Side road junction ahead",
+        "The road ends in a dead end",
+        "Traffic merging from the right",
+        "T-junction ahead; you must turn"
+      ],
+      "explanation": "A black 'T' symbol on a white background within a red triangle warns you that a side road joins the main road you are currently on.",
+      "imageDescription": "UK warning sign: Red triangle with a white background and a black 'T' junction symbol pointing to the right.",
+      "correctAnswer": 0,
+      "type": "image_question",
+      "imageAlt": "A triangular warning sign with a black 'T' shape inside it.",
+      "question": "What does this sign mean?",
+      "id": "dt-im-0066"
+    },
+    {
+      "explanation": "Zig-zag lines near a pedestrian crossing signify that you must not park or overtake. This ensures pedestrians have a clear view of the traffic and vice-versa.",
+      "options": [
+        "Parking is allowed for 10 minutes only",
+        "No parking or overtaking at any time",
+        "No stopping except to pick up passengers",
+        "Parking is permitted only for residents with a permit"
+      ],
+      "question": "What is the meaning of these white zig-zag lines?",
+      "type": "image_question",
+      "imageAlt": "White zig-zag lines painted on the road alongside a zebra crossing.",
+      "imageDescription": "Road markings showing white zig-zag lines leading up to a zebra crossing in a busy town centre.",
+      "correctAnswer": 1,
+      "id": "dt-im-0067"
+    },
+    {
+      "options": [
+        "No waiting during the day",
+        "One-way street ahead",
+        "Stop and wait for the green light",
+        "No entry for any vehicle"
+      ],
+      "explanation": "A red circle with a white horizontal bar is the standard sign for 'No Entry'. You must not drive past this sign into that street.",
+      "imageDescription": "A clear UK 'No Entry' sign mounted on a post at the entrance to a one-way street.",
+      "correctAnswer": 3,
+      "type": "image_question",
+      "imageAlt": "A red circular sign with a thick white horizontal bar in the centre.",
+      "question": "You see this sign at the entrance to a street. What does it mean?",
+      "id": "dt-im-0068"
+    },
+    {
+      "imageAlt": "A rectangular blue sign showing a bus, a bicycle, and the word 'Taxi'.",
+      "type": "image_question",
+      "question": "What does this sign indicate?",
+      "correctAnswer": 0,
+      "imageDescription": "A UK bus lane sign: A blue box with silhouettes of a bus, a cycle, and the word 'Taxi' in white.",
+      "explanation": "A square blue sign with a white bus and cycle symbol indicates a lane reserved for buses and cycles during the times shown on the accompanying plate. If no times are shown, it is 24/7.",
+      "options": [
+        "Bus, cycle, and taxi lane only",
+        "No parking for buses or cycles",
+        "Only buses allowed in this lane",
+        "Cycles must give way to buses"
+      ],
+      "id": "dt-im-0069"
+    },
+    {
+      "type": "image_question",
+      "imageAlt": "A blue rectangular sign with a large white arrow pointing upwards.",
+      "question": "What does this sign tell you?",
+      "imageDescription": "A vertical blue rectangular sign with a white arrow pointing straight up.",
+      "correctAnswer": 2,
+      "explanation": "An upright blue rectangle with a white arrow pointing up indicates a one-way street. Traffic is only permitted to travel in the direction of the arrow.",
+      "options": [
+        "Straight ahead only at the next junction",
+        "The road ahead has a steep hill",
+        "One-way street ahead",
+        "Dual carriageway starts here"
+      ],
+      "id": "dt-im-0070"
+    },
+    {
+      "explanation": "Tram drivers have their own traffic lights. A white vertical line on a black circular background means the tram may proceed straight ahead.",
+      "options": [
+        "Trams may proceed straight ahead",
+        "Trams must stop and wait",
+        "The tram line is closed for repairs",
+        "Trams must turn to the left"
+      ],
+      "question": "What does this signal mean for tram drivers?",
+      "type": "image_question",
+      "imageAlt": "A small black circular light featuring a white vertical bar.",
+      "imageDescription": "A tram signal consisting of a black circular face with a glowing white vertical bar.",
+      "correctAnswer": 0,
+      "id": "dt-im-0071"
+    },
+    {
+      "explanation": "A yellow box marking at a junction is meant to keep the intersection clear. You should only enter it if your exit is clear, or if you are turning right and waiting for a gap.",
+      "options": [
+        "Always stop before entering the boxes",
+        "Do not enter unless your exit is clear",
+        "Only buses are allowed to stop in the box",
+        "Traffic from the right has priority over you"
+      ],
+      "type": "image_question",
+      "imageAlt": "An intersection with yellow criss-cross lines painted on the tarmac.",
+      "question": "How should you use this box junction?",
+      "imageDescription": "A standard UK box junction with yellow criss-cross lines at a crossroad intersection.",
+      "correctAnswer": 1,
+      "id": "dt-im-0072"
+    },
+    {
+      "options": [
+        "To allow parents to drop off children safely",
+        "To keep the view of the crossing area clear",
+        "To provide a space for school buses to park",
+        "To mark the area where children should cross"
+      ],
+      "imageAlt": "Yellow zig-zag lines on the road outside a school entrance.",
+      "explanation": "You should never park on the yellow zig-zag lines outside a school. These are placed to ensure clear visibility for children and drivers.",
+      "correctAnswer": 1,
+      "type": "image_question",
+      "question": "What is the main purpose of these yellow zig-zag markings?",
+      "imageDescription": "A photograph of a UK road outside a primary school showing yellow zig-zag markings with the words 'SCHOOL KEEP CLEAR' painted on the road.",
+      "id": "dt-im-0073"
+    },
+    {
+      "options": [
+        "A hazard is ahead",
+        "The road is a one-way street",
+        "Overtaking is strictly prohibited",
+        "A dual carriageway starts ahead"
+      ],
+      "question": "What does this type of center line marking mean?",
+      "imageDescription": "A rural road showing a hazard warning line in the center: the white lines are longer than the gaps between them.",
+      "imageAlt": "A road with a central white line consisting of long strokes and short gaps.",
+      "explanation": "A long, white central line with short gaps warns of a hazard ahead, such as a bend or a junction. Do not overtake unless it is safe to do so.",
+      "correctAnswer": 0,
+      "type": "image_question",
+      "id": "dt-im-0074"
+    },
+    {
+      "options": [
+        "Between the lanes of a motorway",
+        "Between the edge of the road and a central reservation slabs",
+        "Between the hard shoulder and the carriageway",
+        "To mark the start of a slip road"
+      ],
+      "question": "Where would you find these red reflective studs on a motorway?",
+      "imageDescription": "A view of a UK motorway at dusk showing red reflective studs placed between the left-hand lane and the hard shoulder.",
+      "imageAlt": "Red reflective studs on the left side of a motorway.",
+      "explanation": "Red studs are placed between the hard shoulder and the main carriageway to help drivers identify the edge of the road in poor visibility.",
+      "correctAnswer": 2,
+      "type": "image_question",
+      "id": "dt-im-0075"
+    },
+    {
+      "options": [
+        "Steep hill upwards",
+        "Uneven road surface ahead",
+        "Steep hill downwards",
+        "Low bridge ahead"
+      ],
+      "type": "image_question",
+      "correctAnswer": 2,
+      "explanation": "This sign warns of a steep hill downwards. Check your brakes and consider shifting to a lower gear to assist with braking.",
+      "imageAlt": "A triangular warning sign with a car going down a 10% slope.",
+      "imageDescription": "A standard UK triangular warning sign with a red border showing a 10% gradient slope pointing downwards.",
+      "question": "What does this road sign warn you of?",
+      "id": "dt-im-0076"
+    },
+    {
+      "options": [
+        "The end of a 30 mph zone",
+        "An advisory speed limit of 30 mph",
+        "The national speed limit applies",
+        "A minimum speed limit of 30 mph"
+      ],
+      "imageAlt": "A circular blue sign with the number 30 in white.",
+      "explanation": "A circular blue sign with the number 30 indicates a minimum speed limit is in force, unless it is unsafe to drive at that speed.",
+      "correctAnswer": 3,
+      "type": "image_question",
+      "question": "What does this mandatory road sign mean?",
+      "imageDescription": "A blue circular road sign with white numerals '30' inside it, indicating a minimum speed.",
+      "id": "dt-im-0077"
+    },
+    {
+      "imageDescription": "An Advanced Stop Line (ASL) at a traffic light junction showing a box with a bicycle symbol.",
+      "question": "Where should you stop when the traffic lights are red at this junction?",
+      "type": "image_question",
+      "correctAnswer": 1,
+      "explanation": "You must stop at the first white line. You should only move forward to the second line when the lights change to green and it is safe.",
+      "imageAlt": "A junction with two stop lines and a bicycle symbol in between.",
+      "options": [
+        "In the bicycle box area",
+        "Behind the first white line",
+        "Level with the traffic lights",
+        "Touching the second white line"
+      ],
+      "id": "dt-im-0078"
+    },
+    {
+      "options": [
+        "Give way to traffic on the major road",
+        "Stop at the line even if the road is clear",
+        "No entry for vehicular traffic",
+        "Priority over oncoming vehicles"
+      ],
+      "imageAlt": "An inverted triangle sign with a red border and a white center.",
+      "type": "image_question",
+      "explanation": "An upside-down triangle with a red border and no symbol means you must give way to traffic on the main road.",
+      "correctAnswer": 0,
+      "imageDescription": "A blank 'Give Way' sign (inverted triangle with red border) positioned at a junction entry.",
+      "question": "What does this road sign mean?",
+      "id": "dt-im-0079"
+    },
+    {
+      "correctAnswer": 3,
+      "explanation": "When you see a 'slippery road' sign, you should slow down and avoid sudden steering or braking to prevent skidding.",
+      "type": "image_question",
+      "imageAlt": "A triangular sign showing a car skidding.",
+      "question": "How should you react to this sign?",
+      "imageDescription": "A triangular warning sign with a red border showing a car with wiggly skid marks behind its wheels.",
+      "options": [
+        "Speed up to clear the area quickly",
+        "Check your tyre pressures immediately",
+        "Drive in a higher gear than normal",
+        "Slow down and drive with extra care"
+      ],
+      "id": "dt-im-0080"
+    },
+    {
+      "options": [
+        "No parking",
+        "No waiting",
+        "No entry",
+        "No through road"
+      ],
+      "imageAlt": "A red circular sign with a white horizontal bar.",
+      "type": "image_question",
+      "explanation": "A 'No Entry' sign is a red circle with a white horizontal bar. It means you must not enter that road.",
+      "correctAnswer": 2,
+      "imageDescription": "A standard UK 'No Entry' sign.",
+      "question": "What does this sign mean?",
+      "id": "dt-im-0081"
+    },
+    {
+      "explanation": "This sign indicates that the right-hand lane is for high-occupancy vehicles, such as buses or cars with at least two people.",
+      "correctAnswer": 1,
+      "type": "image_question",
+      "imageAlt": "A blue sign showing a car with '2+' and a bus symbol.",
+      "question": "What does this sign mean?",
+      "imageDescription": "A rectangular blue sign showing a bus symbol and a car symbol with '2+' written next to it, indicating an HOV lane.",
+      "options": [
+        "Only cars with 2+ passengers may use the road",
+        "Buses and vehicles with at least 2 occupants can use this lane",
+        "The lane is for cars with more than 2 passengers only",
+        "A car sharing car park is 2 miles ahead"
+      ],
+      "id": "dt-im-0082"
+    },
+    {
+      "imageAlt": "A blue circular sign with a red cross and a red border.",
+      "correctAnswer": 0,
+      "explanation": "Clearways are stretches of road where stopping is prohibited at all times to keep traffic moving freely.",
+      "type": "image_question",
+      "question": "What does this sign indicate?",
+      "imageDescription": "A circular blue sign with a red border and a red 'X' (cross) across it.",
+      "options": [
+        "No stopping (Clearway)",
+        "No waiting",
+        "No entry for motor vehicles",
+        "National speed limit applies"
+      ],
+      "id": "dt-im-0083"
+    },
+    {
+      "options": [
+        "Cross the bridge as fast as possible",
+        "Keep to the left and speed up",
+        "Slow down and be wary of oncoming traffic",
+        "Wait for a green light before crossing"
+      ],
+      "imageAlt": "A triangular warning sign showing a hump bridge.",
+      "correctAnswer": 2,
+      "explanation": "When approaching a hump bridge, you should slow down and be prepared for oncoming traffic in the middle of the road.",
+      "type": "image_question",
+      "question": "What should you do when you see this sign?",
+      "imageDescription": "A triangular warning sign with a red border and a black silhouette of a hump bridge.",
+      "id": "dt-im-0084"
+    },
+    {
+      "imageAlt": "A circular sign with a red border. Inside, there is a large red arrow pointing up and a smaller black arrow pointing down.",
+      "explanation": "When you see this sign, you must give way to oncoming traffic that is already in the narrowed section of the road.",
+      "question": "What does this sign mean?",
+      "type": "image_question",
+      "correctAnswer": 2,
+      "options": [
+        "You have priority over oncoming vehicles",
+        "No motor vehicles allowed",
+        "Give way to oncoming traffic",
+        "Only buses and cycles may pass"
+      ],
+      "imageDescription": "A 'give way to oncoming traffic' regulatory sign on a post by the side of a narrowing road.",
+      "id": "dt-im-0085"
+    },
+    {
+      "explanation": "Green studs are used to mark the boundary between the main carriageway and a slip road or a lay-by.",
+      "imageAlt": "A row of green reflective studs set into a road surface separating the main lane from an exit slip road.",
+      "type": "image_question",
+      "question": "Where would you find these green reflective studs on a motorway?",
+      "imageDescription": "Close-up of green reflective road studs (cat's eyes) marking the entrance to a motorway slip road at night.",
+      "options": [
+        "Between the main carriageway and a slip road or lay-by",
+        "Between the hard shoulder and the main carriageway",
+        "To mark the right-hand edge of the motorway next to the central reservation",
+        "To mark the start of a cycle lane"
+      ],
+      "correctAnswer": 0,
+      "id": "dt-im-0086"
+    },
+    {
+      "imageDescription": "A brown tourist information sign showing a symbol for a zoo and a directional arrow.",
+      "options": [
+        "The way to a local recycling centre",
+        "Directions to a tourist attraction",
+        "A warning of slow-moving animals ahead",
+        "A route specifically for heavy goods vehicles"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Signs with a brown background provide directions to tourist attractions, such as theme parks, zoos, or historic houses.",
+      "imageAlt": "A brown rectangular sign with a white elephant symbol and an arrow.",
+      "type": "image_question",
+      "question": "What is the purpose of this road sign?",
+      "id": "dt-im-0087"
+    },
+    {
+      "imageDescription": "An HOV lane sign (High Occupancy Vehicle) showing the 2+ symbol and a car, indicating a car-sharing lane.",
+      "options": [
+        "Vehicles with more than two axles only",
+        "No overtaking for the next two miles",
+        "Maximum speed limit of 20 mph",
+        "Vehicles must have at least two occupants to use this lane"
+      ],
+      "correctAnswer": 3,
+      "explanation": "A white 'V' shape on a blue background above a lane indicates that the lane is for high-occupancy vehicles (HOV) only, such as cars with at least two occupants.",
+      "imageAlt": "A blue rectangular sign showing a white car with a '2+' symbol and a white 'V' shape above it.",
+      "type": "image_question",
+      "question": "What does this sign mean?",
+      "id": "dt-im-0088"
+    },
+    {
+      "question": "What must you do when you see this flashing light at a pelican crossing?",
+      "type": "image_question",
+      "imageAlt": "A traffic light showing a flashing amber signal at a pedestrian crossing.",
+      "explanation": "When the amber light is flashing at a pelican crossing, you must give way to pedestrians already on the crossing, but you may proceed if it's clear.",
+      "correctAnswer": 0,
+      "options": [
+        "Give way to pedestrians on the crossing",
+        "Stop and wait for the green light",
+        "Must stop, even if the crossing is clear",
+        "The lights are out of order and you should treat it as a junction"
+      ],
+      "imageDescription": "A pelican crossing with the amber light flashing while a pedestrian is finishing their crossing.",
+      "id": "dt-im-0089"
+    },
+    {
+      "correctAnswer": 2,
+      "options": [
+        "Steep hill downwards ahead",
+        "Loose chippings on the road surface",
+        "Slippery road surface ahead",
+        "Ford or water splash across the road"
+      ],
+      "imageDescription": "A 'slippery road' warning sign located on a rural road.",
+      "question": "What does this warning sign mean?",
+      "type": "image_question",
+      "imageAlt": "A triangular warning sign with a red border showing a car with skid marks behind it.",
+      "explanation": "This sign warns you that the road ahead is likely to be slippery, often due to rain or ice. Drive with extra care.",
+      "id": "dt-im-0090"
+    },
+    {
+      "correctAnswer": 1,
+      "imageDescription": "Traffic lights at a crossing where the pedestrian signal shows both a walking man and a bicycle.",
+      "options": [
+        "Pedestrians only",
+        "Pedestrians and cyclists",
+        "Cyclists and horse riders",
+        "Trams and buses only"
+      ],
+      "type": "image_question",
+      "question": "Who is permitted to use this crossing?",
+      "imageAlt": "A pedestrian crossing with a red signal showing both a person symbol and a bicycle symbol.",
+      "explanation": "The 'Toucan' crossing allows both pedestrians and cyclists to cross at the same time. Remember: 'Two-can' cross.",
+      "id": "dt-im-0091"
+    },
+    {
+      "options": [
+        "Only motorcycles and cars allowed",
+        "Danger: low-flying aircraft or sudden noise",
+        "Motorway traffic only",
+        "No motor vehicles allowed"
+      ],
+      "imageDescription": "A 'No Motor Vehicles' sign, which shows a motorcycle leaping over a car within a red circle.",
+      "correctAnswer": 3,
+      "question": "What does this sign mean?",
+      "type": "image_question",
+      "explanation": "Signs with a red circle are prohibitive. This specific sign means that motor vehicles are not allowed on this road.",
+      "imageAlt": "A circular sign with a red border and a white background, featuring a motorcycle above a car.",
+      "id": "dt-im-0092"
+    },
+    {
+      "imageDescription": "A street scene showing a single yellow line on the road next to a pavement with no parked cars.",
+      "options": [
+        "No parking at any time",
+        "No waiting during the times shown on the sign",
+        "Park here for a maximum of 20 minutes",
+        "Cycle lane only during peak hours"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A single yellow line means that waiting or parking is prohibited during the times shown on the accompanying sign.",
+      "imageAlt": "A single yellow line painted along the edge of the road near a kerb.",
+      "type": "image_question",
+      "question": "What does a single yellow line along the edge of the road mean?",
+      "id": "dt-im-0093"
+    },
+    {
+      "correctAnswer": 2,
+      "imageDescription": "A 'low-flying aircraft' warning sign on a road near an airfield.",
+      "options": [
+        "Airport entrance ahead on the left",
+        "Military base; do not stop",
+        "Low-flying aircraft or sudden noise ahead",
+        "Glider launch site nearby"
+      ],
+      "imageAlt": "A triangular warning sign with a red border and a black symbol of an airplane inside.",
+      "explanation": "This sign alerts drivers that there is a risk of low-flying aircraft or sudden engine noise nearby, which might startle a driver or a horse.",
+      "type": "image_question",
+      "question": "What does this sign warn you of?",
+      "id": "dt-im-0094"
+    },
+    {
+      "options": [
+        "End of all temporary restrictions",
+        "No entry to the motorway ahead",
+        "End of the clearway zone",
+        "Speed limit of 50 mph applies"
+      ],
+      "imageDescription": "The 'National Speed Limit' or 'End of Restriction' sign on a motorway gantry.",
+      "correctAnswer": 0,
+      "question": "What does this sign mean when it is displayed on a motorway gantry?",
+      "type": "image_question",
+      "explanation": "This sign is found on motorways or dual carriageways and indicates the end of a restriction, such as a temporary speed limit.",
+      "imageAlt": "A circular white sign with a black diagonal stripe from top right to bottom left.",
+      "id": "dt-im-0095"
+    },
+    {
+      "correctAnswer": 1,
+      "options": [
+        "Trams may proceed straight ahead",
+        "Trams must stop",
+        "Trams must turn left or right",
+        "The signal is changing to green"
+      ],
+      "imageDescription": "A tram signal at a junction showing a white horizontal bar.",
+      "question": "What does this signal mean to a tram driver?",
+      "type": "image_question",
+      "imageAlt": "A vertical black rectangular signal with a white horizontal bar lit up.",
+      "explanation": "When you see a white horizontal bar on a black background at a tram signal, it means the tram must stop.",
+      "id": "dt-im-0096"
+    },
+    {
+      "imageDescription": "A standard UK road sign: Red circle (prohibitory) containing a black silhouette of a car above a black silhouette of a motorcycle.",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "explanation": "A red circle with a car and a motorcycle indicates that all motor vehicles are prohibited from entering that area.",
+      "options": [
+        "No cars allowed",
+        "No motorcycles allowed",
+        "No motor vehicles allowed",
+        "No overtaking allowed"
+      ],
+      "imageAlt": "A circular road sign with a red border and white background, featuring a silhouette of a car and a motorcycle.",
+      "correctAnswer": 2,
+      "id": "dt-im-0097"
+    },
+    {
+      "imageDescription": "A motorway at night showing white reflective studs (cat's eyes) positioned between the traffic lanes.",
+      "type": "image_question",
+      "question": "What is the purpose of the white reflective studs shown in this image?",
+      "explanation": "White studs are used to mark the lanes or the middle of the road on a motorway or dual carriageway.",
+      "options": [
+        "To mark the lanes",
+        "To mark the left-hand edge of the road",
+        "To mark the right-hand edge of the road",
+        "To mark the slip-road entrance"
+      ],
+      "imageAlt": "A view of a three-lane motorway at night with white reflective studs visible between the lanes.",
+      "correctAnswer": 0,
+      "id": "dt-im-0098"
+    },
+    {
+      "question": "What does this specific shape of sign mean?",
+      "type": "image_question",
+      "imageDescription": "An inverted (downward-pointing) triangle with a thick red border and white centre, commonly used for 'Give Way'.",
+      "correctAnswer": 3,
+      "imageAlt": "A triangular road sign with one point facing downwards, featuring a red border.",
+      "options": [
+        "Stop and wait for the green light",
+        "No entry for all vehicles",
+        "Priority over oncoming traffic",
+        "Give way to traffic on the main road"
+      ],
+      "explanation": "The 'give way' sign features an upside-down triangle, which is unique to this sign so it can be identified even if covered in snow.",
+      "id": "dt-im-0099"
+    },
+    {
+      "explanation": "Blue circles give mandatory instructions, such as 'Turn left ahead'. Prohibitory signs are usually red circles.",
+      "options": [
+        "No left turn allowed",
+        "Turn left ahead",
+        "One-way street only",
+        "Keep left"
+      ],
+      "imageAlt": "A circular blue road sign with a white arrow pointing to the left.",
+      "correctAnswer": 1,
+      "imageDescription": "A blue circular sign containing a white arrow pointing towards the left.",
+      "type": "image_question",
+      "question": "What does this mandatory sign indicate?",
+      "id": "dt-im-0100"
+    },
+    {
+      "explanation": "A rectangular blue sign with a white 'P' and a motorcycle symbol indicates a parking area reserved specifically for motorcycles.",
+      "correctAnswer": 2,
+      "imageAlt": "A rectangular blue sign with a white 'P' and a white silhouette of a motorcycle underneath.",
+      "options": [
+        "Motorcycles only lane",
+        "No motorcycles allowed to park",
+        "Parking for motorcycles only",
+        "Motorcycle showroom ahead"
+      ],
+      "type": "image_question",
+      "imageDescription": "A blue rectangular information sign featuring a white capital letter 'P' above a white motorcycle icon.",
+      "question": "What does this sign mean?",
+      "id": "dt-im-0101"
+    },
+    {
+      "explanation": "A red triangle with a symbol of a car skidding warns you that the road surface ahead may be slippery.",
+      "imageAlt": "A triangular road sign with a red border containing a silhouette of a car with skid marks behind it.",
+      "options": [
+        "Car wash ahead",
+        "Icy conditions only",
+        "Slippery road surface ahead",
+        "Differential speed limit applies"
+      ],
+      "correctAnswer": 2,
+      "imageDescription": "A warning sign (red triangle) showing a black car icon with two wavy lines underneath representing skidding.",
+      "type": "image_question",
+      "question": "What does this warning sign mean?",
+      "id": "dt-im-0102"
+    },
+    {
+      "type": "image_question",
+      "imageDescription": "The standard UK 'No Entry' sign: a solid red circle with a white horizontal rectangle in the centre.",
+      "question": "What does this sign mean?",
+      "explanation": "A red circle with a white horizontal bar is the 'No Entry' sign, meaning you must not drive past it.",
+      "correctAnswer": 0,
+      "imageAlt": "A red circular sign with a white horizontal bar across the middle.",
+      "options": [
+        "No entry for any vehicle",
+        "No through road",
+        "End of the motorway",
+        "Do not park here"
+      ],
+      "id": "dt-im-0103"
+    },
+    {
+      "options": [
+        "The edge of the hard shoulder",
+        "The edge of the main carriageway at lay-bys and slip roads",
+        "The division between lane one and lane two",
+        "The right-hand edge of the motorway"
+      ],
+      "imageAlt": "A motorway junction showing green reflective studs crossing the entrance to a slip road.",
+      "correctAnswer": 1,
+      "explanation": "Green studs on a motorway mark the boundary between the main carriageway and a slip road or lay-by.",
+      "question": "Where would you see these green reflective studs?",
+      "imageDescription": "A view of the edge of a motorway where green reflective studs are used to mark the entrance to a slip road or lay-by.",
+      "type": "image_question",
+      "id": "dt-im-0104"
+    },
+    {
+      "explanation": "A yellow sign with a black 'T' inside a circle (or similar) is used to guide road users along a temporary diversion route.",
+      "imageAlt": "A yellow rectangular sign with a black square symbol in the centre.",
+      "options": [
+        "A tourist information point",
+        "A nearby hospital",
+        "A permanent change to the road layout",
+        "A temporary diversion route"
+      ],
+      "correctAnswer": 3,
+      "imageDescription": "A temporary yellow road sign featuring a black geometric shape (like a square, triangle, or circle) used for traffic diversions.",
+      "type": "image_question",
+      "question": "What does this type of sign indicate?",
+      "id": "dt-im-0105"
+    },
+    {
+      "correctAnswer": 0,
+      "options": [
+        "You must not enter this area except in an emergency",
+        "You can enter this area to overtake slow vehicles",
+        "This is a dedicated lane for motorcyclists",
+        "This area is for parking only"
+      ],
+      "imageAlt": "A road with white diagonal hatched markings in the centre, bordered by solid white lines.",
+      "explanation": "Hatched markings bordered by a solid white line are used to separate traffic; you should not enter this area unless it is an emergency.",
+      "question": "What do these road markings mean?",
+      "type": "image_question",
+      "imageDescription": "White diagonal hatched markings in the middle of a road, bordered by solid (unbroken) white lines on both sides.",
+      "id": "dt-im-0106"
+    },
+    {
+      "question": "When is this bus lane in operation?",
+      "imageDescription": "A blue rectangular bus lane sign with icons for a bus and a cycle, but with no times of operation written on it.",
+      "type": "image_question",
+      "options": [
+        "Only during peak rush hours",
+        "Only on weekdays",
+        "It is in operation 24 hours a day",
+        "Only when buses are present"
+      ],
+      "imageAlt": "A blue rectangular sign showing a bus, a cycle, and no times listed.",
+      "correctAnswer": 2,
+      "explanation": "The blue 'bus lane' sign shows which vehicles are permitted; if no times are shown, the bus lane is in operation 24 hours a day.",
+      "id": "dt-im-0107"
+    },
+    {
+      "question": "What does this sign mean?",
+      "imageDescription": "A brown tourist information sign featuring a white silhouette of an old-fashioned steam train.",
+      "type": "image_question",
+      "imageAlt": "A brown rectangular sign with a white silhouette of a steam locomotive.",
+      "options": [
+        "Level crossing ahead with gate",
+        "A heritage or tourist railway attraction",
+        "Public transport interchange ahead",
+        "Heavy freight terminal ahead"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A brown sign with a white steam train symbol indicates a tourist attraction, specifically a preserved or heritage railway.",
+      "id": "dt-im-0108"
+    },
+    {
+      "explanation": "Circular signs with red borders generally tell you what you must not do. This sign specifically prohibits all motor vehicles.",
+      "type": "image_question",
+      "imageDescription": "A standard UK sign for 'No motor vehicles' (Prohibitory): a red circle on a white background with a car above a motorcycle.",
+      "options": [
+        "Motorcycles only",
+        "Cars only",
+        "No motor vehicles",
+        "Caution: racing ahead"
+      ],
+      "question": "What does this road sign mean?",
+      "imageAlt": "A circular sign with a red border containing the symbols for a car and a motorcycle.",
+      "correctAnswer": 2,
+      "id": "dt-im-0109"
+    },
+    {
+      "question": "Where would you find these red reflective studs on a motorway?",
+      "imageAlt": "A view of a motorway at night with red reflective studs along the left edge.",
+      "correctAnswer": 0,
+      "explanation": "Reflective red studs are placed along the left-hand edge of the motorway to help drivers identify the edge of the carriageway in low visibility.",
+      "imageDescription": "A night-time view of a UK motorway showing red reflective studs placed between the hard shoulder and the main carriageway.",
+      "options": [
+        "The left-hand edge of the carriageway",
+        "The edge of the central reservation",
+        "The lane markings between lanes 2 and 3",
+        "A slip road exit"
+      ],
+      "type": "image_question",
+      "id": "dt-im-0110"
+    },
+    {
+      "explanation": "This sign warns drivers that the road ahead narrows from both sides, requiring extra caution and awareness of oncoming traffic.",
+      "imageDescription": "A UK warning sign: a red-bordered triangle with a black symbol showing two vertical lines that taper inward towards each other at the top.",
+      "options": [
+        "Dual carriageway ends",
+        "Road narrows on both sides road",
+        "One-way street ahead",
+        "T-junction ahead"
+      ],
+      "type": "image_question",
+      "question": "What does this sign warn you of?",
+      "imageAlt": "A triangular sign with a red border showing two lines that converge at the top.",
+      "correctAnswer": 1,
+      "id": "dt-im-0111"
+    },
+    {
+      "explanation": "An amber light on its own means 'Stop' at the stop line unless you have already crossed it or are so close that stopping might cause an accident.",
+      "options": [
+        "Go if the way is clear",
+        "Stop only if a pedestrian is present",
+        "Prepare to go as green is coming",
+        "Stop at the stop line if it is safe to do so"
+      ],
+      "imageDescription": "A standard UK traffic signal head with the middle amber light illuminated. Lighting is bright and clear.",
+      "type": "image_question",
+      "question": "What does this traffic light signal mean?",
+      "correctAnswer": 3,
+      "imageAlt": "A traffic light showing only the amber light.",
+      "id": "dt-im-0112"
+    },
+    {
+      "type": "image_question",
+      "options": [
+        "No stopping (Clearway)",
+        "No parking on the pavement",
+        "Give way to oncoming traffic",
+        "End of motorway"
+      ],
+      "imageDescription": "A UK Clearway sign: a blue circle with a red border and a red diagonal cross (X) stretching across the full diameter.",
+      "explanation": "This sign indicates a 'clearway', where no stopping is allowed at any time on the main carriageway.",
+      "correctAnswer": 0,
+      "imageAlt": "A circular blue sign with a red border and a red cross through it.",
+      "question": "What does this sign mean?",
+      "id": "dt-im-0113"
+    },
+    {
+      "type": "image_question",
+      "imageDescription": "A UK directional sign with a brown background, white text and a white 'castle' icon, typical of tourist information.",
+      "options": [
+        "A local government building",
+        "A tourist attraction",
+        "A waste recycling site",
+        "An industrial estate"
+      ],
+      "explanation": "Brown signs are used to provide directions to tourist attractions, such as theme parks, museums, or zoos.",
+      "imageAlt": "A rectangular brown sign with white lettering and a symbol of a castle.",
+      "correctAnswer": 1,
+      "question": "This sign is used to direct you to what?",
+      "id": "dt-im-0114"
+    },
+    {
+      "question": "What does a sign of this shape mean?",
+      "imageAlt": "An upside-down triangular sign with a red border and white centre.",
+      "correctAnswer": 2,
+      "explanation": "The 'Give Way' sign is the only UK road sign that is an upside-down triangle, ensuring it is recognisable even if covered by snow.",
+      "imageDescription": "A 'Give Way' sign: an inverted triangle (apex pointing down) with a thick red border and a white interior.",
+      "options": [
+        "No entry",
+        "Stop and wait",
+        "Give way to traffic on the major road",
+        "Warning: steep hill downwards"
+      ],
+      "type": "image_question",
+      "id": "dt-im-0115"
+    },
+    {
+      "imageAlt": "Yellow lights flashing above a sign that shows two children walking.",
+      "correctAnswer": 0,
+      "question": "What should you do when you see these lights flashing?",
+      "type": "image_question",
+      "imageDescription": "A UK 'School Crossing Patrol' warning setup: a triangle sign showing children, with two amber lights that flash alternately above it.",
+      "options": [
+        "Slow down and be prepared to stop for children crossing",
+        "The road is closed ahead for a school event",
+        "You must stop immediately even if no one is there",
+        "Overtaking is permitted here as it is a safe zone"
+      ],
+      "explanation": "Amber flashing lights at a school crossing signify that children may be crossing and drivers must be prepared to stop.",
+      "id": "dt-im-0116"
+    },
+    {
+      "imageDescription": "A UK Controlled Parking Zone entrance sign: a white rectangle with the word 'ZONE', showing a red circle with a blue centre (no-waiting) and operational hours.",
+      "options": [
+        "No parking at any time on this road",
+        "The start of a pedestrian-only area",
+        "The entrance to a controlled parking zone",
+        "A car park is located 200 yards ahead"
+      ],
+      "type": "image_question",
+      "explanation": "This sign marks the entrance to a controlled parking zone where specific restrictions apply during the times shown on the sign.",
+      "imageAlt": "A white rectangular sign with 'Zone' at the top and various parking symbols.",
+      "correctAnswer": 2,
+      "question": "What does this sign indicate?",
+      "id": "dt-im-0117"
+    },
+    {
+      "question": "What do these green reflective studs represent?",
+      "correctAnswer": 1,
+      "imageAlt": "A motorway layout showing green reflective studs crossing a lane.",
+      "explanation": "Green reflective studs on a motorway are used to mark the boundary between the main carriageway and a slip road (entry or exit).",
+      "options": [
+        "The edge of the hard shoulder",
+        "The boundary between the main road and a slip road",
+        "A temporary hazard or roadworks area",
+        "A change in the speed limit"
+      ],
+      "imageDescription": "A view of the road surface where the main motorway meets an exit slip road, with a line of green reflective studs separating the two.",
+      "type": "image_question",
+      "id": "dt-im-0118"
+    },
+    {
+      "imageAlt": "A blue circular sign with a white arrow pointing to the left.",
+      "correctAnswer": 3,
+      "question": "What does this mandatory sign mean?",
+      "imageDescription": "A UK mandatory road sign: a blue circle with a solid white arrow pointing to the left.",
+      "options": [
+        "No left turn allowed",
+        "One-way street to the left",
+        "Warning: sharp bend to the left",
+        "Turn left ahead"
+      ],
+      "type": "image_question",
+      "explanation": "Blue circular signs without red borders are mandatory signs that give positive instructions, such as 'Turn left ahead'.",
+      "id": "dt-im-0119"
+    },
+    {
+      "explanation": "Diamond-shaped signs with black numbers or symbols are specific to tram drivers and do not apply to car drivers.",
+      "type": "image_question",
+      "options": [
+        "Maximum speed for all vehicles is 30mph",
+        "Minimum speed for all vehicles is 30mph",
+        "Speed limit for tram drivers only",
+        "End of the speed limit zone"
+      ],
+      "imageDescription": "A white diamond-shaped sign with a black border containing the number 30, located next to tram tracks.",
+      "question": "Who is this sign intended for?",
+      "correctAnswer": 2,
+      "imageAlt": "A white diamond-shaped sign with a black number 30 in the middle.",
+      "id": "dt-im-0120"
+    },
+    {
+      "correctAnswer": 1,
+      "question": "What does this regulatory sign mean?",
+      "imageDescription": "A standard UK regulatory sign: a red ring on a white background with a black silhouette of a motorcycle above a black car silhouette. No diagonal red line.",
+      "type": "image_question",
+      "imageAlt": "A circular road sign with a red border and a white background, featuring a motorcycle above a car.",
+      "explanation": "A circle with a red border means a prohibition. The motorbike and car symbol together indicate that all motor vehicles are prohibited from entering.",
+      "options": [
+        "No entry for motor vehicles",
+        "Parking for cars and motorcycles only",
+        "No entry for cars only",
+        "Route for motor vehicles only"
+      ],
+      "id": "dt-im-0121"
+    },
+    {
+      "question": "Where would you see green reflective studs on a motorway?",
+      "imageDescription": "A motorway scene at night showing the various colored reflective studs (cats' eyes). The focus is on the area where a slip road joins or leaves the main road.",
+      "correctAnswer": 0,
+      "explanation": "Green studs are found between the main carriageway and slip roads at junctions, helping drivers identify exits in the dark or fog.",
+      "options": [
+        "Between the main carriageway and slip roads",
+        "Between the hard shoulder and the carriageway",
+        "Between the lanes on the main carriageway",
+        "On the right-hand edge of the carriageway"
+      ],
+      "imageAlt": "A view of a motorway at night with various colored reflective studs visible on the road surface.",
+      "type": "image_question",
+      "id": "dt-im-0122"
+    },
+    {
+      "question": "What information does this sign provide?",
+      "imageDescription": "A rectangular blue information sign with a white border and a large white arrow pointing straight ahead.",
+      "correctAnswer": 2,
+      "explanation": "An upright blue rectangle with a white arrow usually indicates a one-way street. Drivers must follow the direction of the arrow.",
+      "options": [
+        "Give way to oncoming traffic",
+        "Motorway ahead",
+        "One-way street",
+        "Priority over oncoming vehicles"
+      ],
+      "type": "image_question",
+      "imageAlt": "A rectangular blue sign with a large vertical white arrow pointing upwards.",
+      "id": "dt-im-0123"
+    },
+    {
+      "imageDescription": "A triangular warning sign with a red border. Inside is a black silhouette of a car's undercarriage making contact with a hump in the road.",
+      "question": "What hazard does this warning sign alert you to?",
+      "correctAnswer": 3,
+      "options": [
+        "Uneven road surface ahead",
+        "Hump bridge ahead",
+        "Speed humps ahead",
+        "Risk of grounding for long or low vehicles"
+      ],
+      "explanation": "A 'hump' in the road can cause low-clearance vehicles to get stuck. This sign warns these drivers specifically to avoid the risk of grounding.",
+      "imageAlt": "A triangular warning sign with a red border showing a car bottoming out over a hump.",
+      "type": "image_question",
+      "id": "dt-im-0124"
+    },
+    {
+      "options": [
+        "No cars allowed",
+        "No overtaking",
+        "Stay in single file",
+        "End of all restrictions"
+      ],
+      "explanation": "A red circle with a car and motorcycle inside a red 'X' or strike-through is not used; instead, a plain red circle with a car and bike means no motor vehicles. A red circle with a red diagonal line through a black car means 'No Overtaking'.",
+      "imageAlt": "A circular sign with a red border and two cars positioned side-by-side; the car on the right is red, the one on the left is black.",
+      "type": "image_question",
+      "imageDescription": "A UK 'No Overtaking' sign: a white circle with a red border, containing a black car on the left and a red car on the right.",
+      "question": "What restriction does this sign indicate?",
+      "correctAnswer": 1,
+      "id": "dt-im-0125"
+    },
+    {
+      "type": "image_question",
+      "imageAlt": "A circular blue sign with a white arrow pointing downwards to the left.",
+      "options": [
+        "Keep to the left-hand side",
+        "Turn left ahead",
+        "One-way street to the left",
+        "No entry for vehicles on the right"
+      ],
+      "explanation": "A blue circle with a white arrow pointing diagonally down to the left indicates that you must keep to that side of the sign or obstacle.",
+      "correctAnswer": 0,
+      "imageDescription": "A mandatory blue circular sign with a white border and a white arrow pointing diagonally down towards the bottom-left corner.",
+      "question": "What must you do when you see this sign?",
+      "id": "dt-im-0126"
+    },
+    {
+      "imageAlt": "A view of the central reservation of a motorway with reflective studs visible.",
+      "type": "image_question",
+      "options": [
+        "To separate the lanes",
+        "On the right-hand edge of the carriageway",
+        "At the entrance to a slip road",
+        "On the left-hand edge of the carriageway"
+      ],
+      "explanation": "Amber reflective studs are placed on the right-hand edge of the carriageway, next to the central reservation, to mark the edge of the road.",
+      "correctAnswer": 1,
+      "imageDescription": "A photo of a UK motorway central reservation showing the white line and the reflective studs embedded in the road next to it.",
+      "question": "Where can you find amber reflective studs on a motorway?",
+      "id": "dt-im-0127"
+    },
+    {
+      "type": "image_question",
+      "imageAlt": "A sign showing a black gate or fence silhouette inside a red triangle.",
+      "explanation": "Small white circles on a black background indicate a level crossing with a gate or barrier. The 'X' light signal tells you to stop when it flashes red.",
+      "options": [
+        "Unfenced road ahead",
+        "No entry for pedestrians",
+        "Level crossing without a gate or barrier",
+        "Level crossing with a gate or barrier"
+      ],
+      "correctAnswer": 3,
+      "question": "What does this sign mean?",
+      "imageDescription": "A triangular warning sign with a red border containing the silhouette of a gate or fence.",
+      "id": "dt-im-0128"
+    },
+    {
+      "question": "What does this sign mean?",
+      "imageDescription": "A regulatory sign: white circle, red border, black bicycle symbol, with a red diagonal line striking through the bicycle.",
+      "correctAnswer": 2,
+      "explanation": "A circular sign with a red border and a line through a bicycle indicates that cycling is not permitted in that specific area or path.",
+      "options": [
+        "Route for cyclists only",
+        "Cyclists must give way to pedestrians",
+        "No cycling allowed",
+        "Parking for bicycles only"
+      ],
+      "type": "image_question",
+      "imageAlt": "A circular sign with a red border and a black silhouette of a bicycle with a red diagonal line through it.",
+      "id": "dt-im-0129"
+    },
+    {
+      "correctAnswer": 0,
+      "imageDescription": "An information sign: blue rectangle with a white letter 'P' in the top half and a black silhouette of a coach on a white background in the bottom half.",
+      "question": "What does this sign indicate?",
+      "type": "image_question",
+      "imageAlt": "A blue rectangular sign with a white 'P' and a silhouette of a bus/coach.",
+      "options": [
+        "Parking for buses and coaches only",
+        "Bus lane starts ahead",
+        "No parking for coaches during the day",
+        "Bus station entrance ahead"
+      ],
+      "explanation": "A blue rectangle with a white 'P' and a symbol of a bus or coach indicates a dedicated parking area for those types of vehicles.",
+      "id": "dt-im-0130"
+    },
+    {
+      "correctAnswer": false,
+      "type": "true_false",
+      "explanation": "You should never use your hazard lights while moving to show you are in a hurry; they are for warning others your vehicle is obstructed or temporarily obstructing traffic.",
+      "question": "It is legal to use your hazard warning lights while driving to highlight your vehicle if you are running late for an appointment.",
+      "id": "dt-tf-0001"
+    },
+    {
+      "correctAnswer": true,
+      "type": "true_false",
+      "explanation": "Coasting reduces your control over the vehicle because the engine is not connected to the wheels to provide engine braking.",
+      "question": "Coasting (driving in neutral or with the clutch held down) can reduce the driver's control over the vehicle, especially on downhill sections.",
+      "id": "dt-tf-0002"
+    },
+    {
+      "explanation": "Heavy loads can increase the distance it takes to stop and affect the way the vehicle handles when cornering.",
+      "question": "Carrying a heavy load in your vehicle can significantly increase your overall braking distance.",
+      "type": "true_false",
+      "correctAnswer": true,
+      "id": "dt-tf-0003"
+    },
+    {
+      "correctAnswer": false,
+      "type": "true_false",
+      "question": "You should keep your full-beam headlights on at all times when driving on unlit rural roads at night, regardless of oncoming traffic.",
+      "explanation": "You must switch to dipped headlights when meeting oncoming traffic or following another vehicle to avoid dazzling other road users.",
+      "id": "dt-tf-0004"
+    },
+    {
+      "question": "The minimum legal tread depth for car tyres in the UK is 1.0mm.",
+      "explanation": "The minimum legal tread depth for car tyres in the UK is 1.6mm across the central three-quarters of the breadth of the tyre.",
+      "correctAnswer": false,
+      "type": "true_false",
+      "id": "dt-tf-0005"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": true,
+      "explanation": "Using the engine to slow down (engine braking) on a long downhill slope helps prevent the brakes from overheating and becoming less effective.",
+      "question": "Using a lower gear when driving down a long, steep hill can help prevent your brakes from overheating.",
+      "id": "dt-tf-0006"
+    },
+    {
+      "question": "In wet weather, you should increase the gap between your car and the vehicle in front to at least four seconds.",
+      "explanation": "The two-second rule applies in dry conditions; in wet weather, you should at least double this gap to four seconds.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "id": "dt-tf-0007"
+    },
+    {
+      "explanation": "Pedestrians already crossing the road at a side road have priority, and you should let them finish crossing before turning.",
+      "question": "If you are turning into a side road and a pedestrian has already started to cross, you have priority and they must stop for you.",
+      "type": "true_false",
+      "correctAnswer": false,
+      "id": "dt-tf-0008"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": true,
+      "explanation": "Under-inflated tyres increase rolling resistance, which causes the engine to work harder and use more fuel.",
+      "question": "Driving with under-inflated tyres can lead to increased fuel consumption.",
+      "id": "dt-tf-0009"
+    },
+    {
+      "correctAnswer": false,
+      "type": "true_false",
+      "question": "A Statutory Off-Road Notification (SORN) must be renewed every 12 months, even if the vehicle remains off the road.",
+      "explanation": "A SORN remains valid until the vehicle is re-taxed, sold, scrapped, or exported; it does not need to be renewed annually.",
+      "id": "dt-tf-0010"
+    },
+    {
+      "question": "Rumble strips are often used to alert drivers to a hazard ahead, such as a roundabout or a sharp bend.",
+      "explanation": "Emuislands or rumble strips are often used at the approach to roundabouts or dangerous bends to encourage drivers to slow down.",
+      "type": "true_false",
+      "correctAnswer": true,
+      "id": "dt-tf-0011"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": false,
+      "question": "It is acceptable to use your horn to signal your frustration if another driver pulls out in front of you.",
+      "explanation": "You should use your horn only to warn other road users of your presence or a potential danger, not to show annoyance or 'greet' others.",
+      "id": "dt-tf-0012"
+    },
+    {
+      "question": "When driving down a long, steep hill, using a lower gear will help to control the vehicle's speed.",
+      "explanation": "Engine braking helps control your speed without overusing the footbrake, which prevents the brakes from fading or failing due to heat.",
+      "type": "true_false",
+      "correctAnswer": true,
+      "id": "dt-tf-0013"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": false,
+      "question": "Using a hands-free phone system while driving is safe because it does not affect your concentration.",
+      "explanation": "While hands-free is legal, any use of a phone can be a significant distraction and may lead to a charge of driving without due care and attention.",
+      "id": "dt-tf-0014"
+    },
+    {
+      "explanation": "Blue flashing lights on a vehicle that isn't a standard 'emergency service' vehicle (like a car) typically indicate a doctor answering an emergency call.",
+      "question": "A car following you with a flashing blue light may be a doctor on an emergency call.",
+      "type": "true_false",
+      "correctAnswer": true,
+      "id": "dt-tf-0015"
+    },
+    {
+      "correctAnswer": false,
+      "type": "true_false",
+      "explanation": "The legal limit is 1.6mm across the central three-quarters of the breadth of the tread and around the entire outer circumference.",
+      "question": "The legal minimum depth of tread for car tyres is 1.2mm.",
+      "id": "dt-tf-0016"
+    },
+    {
+      "correctAnswer": false,
+      "type": "true_false",
+      "explanation": "The Highway Code states you must give way to pedestrians who have started crossing the road into which you are turning.",
+      "question": "Pedestrians waiting to cross a road at a junction always have priority over vehicles turning into that road.",
+      "id": "dt-tf-0017"
+    },
+    {
+      "correctAnswer": true,
+      "type": "true_false",
+      "explanation": "Over-inflated tyres have a smaller contact patch with the road, which reduces the amount of grip available.",
+      "question": "Over-inflating your tyres can reduce their grip on the road surface.",
+      "id": "dt-tf-0018"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": false,
+      "question": "You may use your hazard warning lights to signal to other drivers that you are parked illegally.",
+      "explanation": "Hazard lights should only be used while driving to warn following traffic of a hazard or obstruction ahead on a motorway or unrestricted dual carriageway.",
+      "id": "dt-tf-0019"
+    },
+    {
+      "correctAnswer": true,
+      "type": "true_false",
+      "explanation": "If you can't see because of the sun, you should slow down or stop until it is safe to continue. High-quality sunglasses can also help.",
+      "question": "If you are dazzled by bright sunlight, you should slow down or stop if necessary.",
+      "id": "dt-tf-0020"
+    },
+    {
+      "explanation": "Fog lights should only be used when visibility is seriously reduced (generally less than 100 metres) as they can dazzle other road users.",
+      "question": "You should use your rear fog lights whenever it is raining to make your car more visible.",
+      "type": "true_false",
+      "correctAnswer": false,
+      "id": "dt-tf-0021"
+    },
+    {
+      "question": "It is illegal to hold a mobile phone to check the time while you are stopped at red traffic lights.",
+      "explanation": "Touching or holding a phone for any reason—including checking the time or a notification—is illegal while driving, even when stopped at lights.",
+      "type": "true_false",
+      "correctAnswer": true,
+      "id": "dt-tf-0022"
+    },
+    {
+      "question": "Driving at high speeds can increase fuel consumption by up to 15%.",
+      "explanation": "High-speed driving causes engines to work harder and increases aerodynamic drag, both of which significantly lower fuel efficiency.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "id": "dt-tf-0023"
+    },
+    {
+      "question": "Signalling always gives you the right of way to change lanes on a motorway.",
+      "explanation": "You must still check your mirrors and blind spots; a signal only warns others of your intentions, it does not give you a right of way.",
+      "correctAnswer": false,
+      "type": "true_false",
+      "id": "dt-tf-0024"
+    },
+    {
+      "correctAnswer": true,
+      "question": "On a motorway, green reflective studs are used to mark the boundary between the slip road and the main carriageway.",
+      "type": "true_false",
+      "explanation": "Green lights on a motorway indicate the edge of the carriageway at slip road entrances and exits.",
+      "id": "dt-tf-0025"
+    },
+    {
+      "type": "true_false",
+      "explanation": "Coasting (driving in neutral or with the clutch down) reduces control because engine braking is eliminated and steering becomes less effective.",
+      "correctAnswer": false,
+      "question": "Coasting (travelling in neutral or with the clutch pressed down) is a recommended technique for saving fuel when driving downhill.",
+      "id": "dt-tf-0026"
+    },
+    {
+      "explanation": "A vehicle with a flashing amber beacon is usually a slow-moving vehicle, such as a tractor or salt spreader, and is not an emergency vehicle.",
+      "type": "true_false",
+      "question": "A vehicle with a flashing amber beacon indicates that it is an emergency vehicle being driven by a doctor.",
+      "correctAnswer": false,
+      "id": "dt-tf-0027"
+    },
+    {
+      "question": "The purpose of a car's 'crumple zone' is to absorb the energy from a collision.",
+      "correctAnswer": true,
+      "explanation": "Modern cars have a 'safety' or 'crumple' zone designed to absorb the energy of an impact, protecting the occupants in the cabin.",
+      "type": "true_false",
+      "id": "dt-tf-0028"
+    },
+    {
+      "question": "At a Pelican crossing, you must stay stopped when the amber light is flashing, even if the crossing is completely clear.",
+      "correctAnswer": false,
+      "type": "true_false",
+      "explanation": "You must stop at a Pelican crossing if the amber light is flashing and a pedestrian is still on the crossing. If the crossing is clear, you may proceed.",
+      "id": "dt-tf-0029"
+    },
+    {
+      "question": "A 'cover note' is a document issued by an insurance company before they send out your actual insurance certificate.",
+      "correctAnswer": true,
+      "explanation": "A 'cover note' is the temporary document issued by an insurance company before the actual insurance certificate is posted or emailed.",
+      "type": "true_false",
+      "id": "dt-tf-0030"
+    },
+    {
+      "question": "If you gain six or more penalty points within two years of passing your first driving test, your licence will be revoked.",
+      "correctAnswer": true,
+      "explanation": "Under the 'New Drivers Act', your licence will be revoked if you get 6 or more points within 2 years of passing your first practical driving test.",
+      "type": "true_false",
+      "id": "dt-tf-0031"
+    },
+    {
+      "type": "true_false",
+      "explanation": "A car's MOT certificate is valid for 12 months (one year) from the date of the test.",
+      "correctAnswer": false,
+      "question": "An MOT certificate for a car is valid for two years from the date of issue.",
+      "id": "dt-tf-0032"
+    },
+    {
+      "explanation": "To correct a rear-wheel skid, you should steer into the direction of the skid (the way the back of the car is sliding) rather than away from it.",
+      "type": "true_false",
+      "question": "If the rear of your car skids to the right while driving, you should steer quickly to the left to correct it.",
+      "correctAnswer": false,
+      "id": "dt-tf-0033"
+    },
+    {
+      "question": "You may pass a vehicle on the left if you are in a queue of traffic that is moving faster than the queue to your right.",
+      "correctAnswer": true,
+      "explanation": "Overtaking on the left (undertaking) is generally not allowed, but it is acceptable in slow-moving queues of traffic where your lane is moving faster than the lane to your right.",
+      "type": "true_false",
+      "id": "dt-tf-0034"
+    },
+    {
+      "correctAnswer": false,
+      "question": "A continuous white line along the edge of the road means that you are not allowed to park there at any time.",
+      "explanation": "A continuous white line down the side of the road marks the edge of the carriageway; parking is permitted unless there are specific yellow line restrictions.",
+      "type": "true_false",
+      "id": "dt-tf-0035"
+    },
+    {
+      "correctAnswer": true,
+      "question": "You should dip your headlights when following behind another vehicle to avoid dazzling the driver through their mirrors.",
+      "explanation": "You should dip your lights when following or meeting other road users to avoid dazzling them, including pedestrians, cyclists, and horse riders.",
+      "type": "true_false",
+      "id": "dt-tf-0036"
+    },
+    {
+      "correctAnswer": true,
+      "explanation": "The New Driver Act states that if you reach 6 or more points within 2 years of passing your first test, your licence is revoked and you must reapply for a provisional licence.",
+      "type": "true_false",
+      "question": "Your driving licence will be revoked if you reach six or more penalty points within two years of passing your first practical test.",
+      "id": "dt-tf-0037"
+    },
+    {
+      "correctAnswer": false,
+      "explanation": "If a person is carrying a white cane with a red band, it signifies that they are both deaf and blind.",
+      "type": "true_false",
+      "question": "A pedestrian carrying a white cane with a red band indicates that they are visually impaired only.",
+      "id": "dt-tf-0038"
+    },
+    {
+      "correctAnswer": false,
+      "type": "true_false",
+      "question": "When driving through a well-lit tunnel, you are not required to use your headlights.",
+      "explanation": "In a tunnel, you should use dipped headlights so that you remain visible to others and can see the road clearly, even if the tunnel is well-lit.",
+      "id": "dt-tf-0039"
+    },
+    {
+      "type": "true_false",
+      "question": "In wet weather, you should double the two-second gap between you and the vehicle in front to four seconds.",
+      "explanation": "In dry conditions, you should maintain a two-second gap; in wet weather, this should be doubled to at least four seconds.",
+      "correctAnswer": false,
+      "id": "dt-tf-0040"
+    },
+    {
+      "correctAnswer": true,
+      "explanation": "Heavy loads can affect the vehicle's centre of gravity and handling; you may need to increase your tyre pressure as per the manufacturer's handbook.",
+      "type": "true_false",
+      "question": "Carrying a heavy load in your vehicle may require you to increase the air pressure in your tyres.",
+      "id": "dt-tf-0041"
+    },
+    {
+      "correctAnswer": true,
+      "type": "true_false",
+      "question": "Long white lines with short gaps in the centre of the road indicate a hazard is ahead.",
+      "explanation": "The long white lines with short gaps are 'hazard warning lines', used when there is a hazard ahead such as a bend or a junction.",
+      "id": "dt-tf-0042"
+    },
+    {
+      "explanation": "Emu or blue-light services have priority, but a vehicle with a flashing green beacon is specifically used by a doctor on an emergency call.",
+      "type": "true_false",
+      "question": "A vehicle with a flashing green beacon indicates that it is an emergency fire service vehicle.",
+      "correctAnswer": false,
+      "id": "dt-tf-0043"
+    },
+    {
+      "correctAnswer": true,
+      "question": "You should wait to turn right at a dual carriageway if the central reservation is too narrow to contain your entire vehicle.",
+      "type": "true_false",
+      "explanation": "When the central reservation is narrow, an HGV or long vehicle may need to wait in the first half because its rear would overhang and block the other lane.",
+      "id": "dt-tf-0044"
+    },
+    {
+      "type": "true_false",
+      "question": "Red reflective studs on a motorway are found between the acceleration lane and the main carriageway.",
+      "explanation": "Red reflective studs are placed between the hard shoulder and the carriageway to help drivers identify the edge of the road in the dark.",
+      "correctAnswer": false,
+      "id": "dt-tf-0045"
+    },
+    {
+      "correctAnswer": false,
+      "question": "A catalytic converter is fitted to the exhaust system to improve the vehicle's fuel economy.",
+      "type": "true_false",
+      "explanation": "Catalytic converters reduce harmful exhaust gases like carbon monoxide, but they do not reduce fuel consumption; they can slightly increase it.",
+      "id": "dt-tf-0046"
+    },
+    {
+      "question": "Third-party insurance is the minimum legal level of cover required to drive on public roads.",
+      "type": "true_false",
+      "explanation": "Third-party insurance is the absolute minimum legal requirement for driving on public roads in the UK.",
+      "correctAnswer": true,
+      "id": "dt-tf-0047"
+    },
+    {
+      "explanation": "The 'slow' sign is an instruction to reduce speed because of an upcoming hazard, but it does not technically change the legal speed limit of the road.",
+      "question": "A 'SLOW' road marking painted on the tarmac officially changes the speed limit to 20mph.",
+      "type": "true_false",
+      "correctAnswer": false,
+      "id": "dt-tf-0048"
+    },
+    {
+      "type": "true_false",
+      "explanation": "Blue beacons are used by emergency vehicles such as police, fire, or ambulance services to indicate they are responding to an emergency.",
+      "question": "A vehicle with a flashing blue beacon indicates it is an emergency vehicle.",
+      "correctAnswer": true,
+      "id": "dt-tf-0049"
+    },
+    {
+      "type": "true_false",
+      "question": "The legal minimum depth of tread for car tyres is 1.0mm.",
+      "correctAnswer": false,
+      "explanation": "Under the 'tread wear indicator' rule, the legal minimum depth for car tyres is 1.6mm across the central three-quarters of the breadth of the tread.",
+      "id": "dt-tf-0050"
+    },
+    {
+      "explanation": "Zebra crossings have flashing yellow beacons (Belisha beacons) on both sides of the road to alert drivers to the crossing.",
+      "correctAnswer": true,
+      "question": "Belisha beacons are the flashing yellow lights used at Zebra crossings.",
+      "type": "true_false",
+      "id": "dt-tf-0051"
+    },
+    {
+      "type": "true_false",
+      "question": "Amber reflective studs on a motorway mark the boundary between the edge of the carriageway and the hard shoulder.",
+      "correctAnswer": false,
+      "explanation": "Amber reflective studs are found between the central reservation and the carriageway, not the hard shoulder. Red studs are used for the hard shoulder.",
+      "id": "dt-tf-0052"
+    },
+    {
+      "type": "true_false",
+      "explanation": "Coasting (driving in neutral or with the clutch down) reduces your control over the vehicle, particularly braking and steering.",
+      "correctAnswer": false,
+      "question": "Coasting is a recommended technique to save fuel when driving down a steep hill.",
+      "id": "dt-tf-0053"
+    },
+    {
+      "type": "true_false",
+      "explanation": "Traffic lights at level crossings (and some fire stations) use a steady amber light followed by twin flashing red lights to stop traffic.",
+      "question": "A steady amber light is used at a level crossing to warn you that the red flashing lights are about to start.",
+      "correctAnswer": true,
+      "id": "dt-tf-0054"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": true,
+      "question": "Most circular traffic signs with a red border are used to give orders that are 'prohibitory'.",
+      "explanation": "Circular signs with red borders are almost always prohibitive, telling you what you must not do.",
+      "id": "dt-tf-0055"
+    },
+    {
+      "explanation": "You must notify the DVLA if your health or eyesight deteriorates in a way that could affect your ability to drive safely.",
+      "correctAnswer": false,
+      "question": "You do not need to inform the DVLA if your health changes, as long as you feel competent to drive.",
+      "type": "true_false",
+      "id": "dt-tf-0056"
+    },
+    {
+      "explanation": "Underneath the main sign at a bridge, a 'variable' or 'planned' height limit may be shown if the bridge arches.",
+      "correctAnswer": true,
+      "question": "On some bridges, the maximum height shown on the sign may only apply to the highest part of the arch.",
+      "type": "true_false",
+      "id": "dt-tf-0057"
+    },
+    {
+      "question": "You are allowed to use your horn to alert a driver in front that they have not noticed a traffic light has turned green.",
+      "correctAnswer": false,
+      "explanation": "You should use your horn only to alert other road users of your presence or a potential danger, not to show annoyance.",
+      "type": "true_false",
+      "id": "dt-tf-0058"
+    },
+    {
+      "correctAnswer": true,
+      "question": "The main benefit of an Anti-lock Braking System (ABS) is that it allows the driver to steer while braking heavily.",
+      "explanation": "Anti-lock brakes prevent wheels from locking, allowing you to continue steering while braking hard in an emergency.",
+      "type": "true_false",
+      "id": "dt-tf-0059"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": false,
+      "question": "A circular blue sign with a red ring and a diagonal red line means 'No Entry'.",
+      "explanation": "Blue circles generally give positive instructions (mandatory directions), such as 'turn left' or 'ahead only'.",
+      "id": "dt-tf-0060"
+    },
+    {
+      "correctAnswer": true,
+      "explanation": "Green studs mark the boundary of slip roads at junctions, helping drivers identify where the carriageway edge changes in the dark.",
+      "question": "On a motorway, green reflective studs are used to mark the edge of the main carriageway at slip road entrances and exits.",
+      "type": "true_false",
+      "id": "dt-tf-0061"
+    },
+    {
+      "type": "true_false",
+      "question": "You should switch on your rear fog lights whenever it is raining to make your vehicle more visible.",
+      "explanation": "Fog lights must only be used when visibility is seriously reduced (generally less than 100 metres) because they can dazzle other drivers.",
+      "correctAnswer": false,
+      "id": "dt-tf-0062"
+    },
+    {
+      "correctAnswer": true,
+      "question": "Your stopping distance will increase when you are driving on a road with a loose surface, such as gravel.",
+      "type": "true_false",
+      "explanation": "Driving on a loose surface reduces the friction between the tyres and the road, meaning it takes much longer to stop.",
+      "id": "dt-tf-0063"
+    },
+    {
+      "correctAnswer": false,
+      "type": "true_false",
+      "question": "A triangular road sign with a red border and a picture of a car and a motorcycle means 'No motor vehicles'.",
+      "explanation": "A triangular sign with a red border is a warning sign; a red circle with a car and motorcycle inside means 'No motor vehicles'.",
+      "id": "dt-tf-0064"
+    },
+    {
+      "correctAnswer": true,
+      "explanation": "By looking ahead, you can anticipate hazards, react more smoothly, and avoid unnecessary braking or acceleration.",
+      "type": "true_false",
+      "question": "Scanning the road ahead for potential hazards is an essential part of 'defensive driving'.",
+      "id": "dt-tf-0065"
+    },
+    {
+      "explanation": "Diamond-shaped signs provide instructions specifically for tram drivers, though other road users should be aware of them.",
+      "type": "true_false",
+      "question": "Diamond-shaped traffic signs are used to give instructions to lorry drivers regarding weight limits.",
+      "correctAnswer": false,
+      "id": "dt-tf-0066"
+    },
+    {
+      "correctAnswer": true,
+      "explanation": "This allows the suspension to settle and prevents the vehicle from potentially rolling if the jack fails.",
+      "question": "When using a jack to change a wheel, you should apply the parking brake and put the car in gear before lifting the vehicle.",
+      "type": "true_false",
+      "id": "dt-tf-0067"
+    },
+    {
+      "correctAnswer": false,
+      "explanation": "You must inform the DVLA immediately if you develop a medical condition that could affect your driving.",
+      "question": "If you are the registered keeper of a vehicle, you only need to update the DVLA about a change of address once per year.",
+      "type": "true_false",
+      "id": "dt-tf-0068"
+    },
+    {
+      "explanation": "While they provide extra light, the primary purpose of cats' eyes is to help drivers see the layout of the road in the dark or fog.",
+      "question": "Reflective road studs (cats' eyes) are designed to provide extra illumination for your headlights in rural areas.",
+      "type": "true_false",
+      "correctAnswer": false,
+      "id": "dt-tf-0069"
+    },
+    {
+      "correctAnswer": true,
+      "type": "true_false",
+      "question": "In wet weather, you should leave at least a four-second time gap between your car and the vehicle in front.",
+      "explanation": "The two-second gap is for dry conditions; it should be doubled to four seconds in wet weather to allow for increased stopping distances.",
+      "id": "dt-tf-0070"
+    },
+    {
+      "correctAnswer": false,
+      "question": "Driving with under-inflated tyres will help your vehicle achieve better fuel economy.",
+      "type": "true_false",
+      "explanation": "Under-inflated tyres increase rolling resistance, which makes the engine work harder and uses more fuel.",
+      "id": "dt-tf-0071"
+    },
+    {
+      "question": "A steady red light and a steady amber light showing together at a traffic signal mean you must wait and not pass the line.",
+      "type": "true_false",
+      "explanation": "When an amber light follows red, it means you should prepare to go but do not move until the light turns green.",
+      "correctAnswer": true,
+      "id": "dt-tf-0072"
+    },
+    {
+      "question": "The primary purpose of a catalytic converter is to reduce toxic gases and pollutants from the engine's exhaust.",
+      "explanation": "Catalytic converters are part of the exhaust system and specifically reduce the amount of harmful pollutants, such as carbon monoxide, released into the atmosphere.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "id": "dt-tf-0073"
+    },
+    {
+      "correctAnswer": false,
+      "type": "true_false",
+      "explanation": "You should never wave pedestrians across the road; there may be another vehicle coming that you haven't seen, or they may be encouraged into danger.",
+      "question": "If you stop at a pedestrian crossing, it is a safe practice to wave pedestrians across to show them it is clear.",
+      "id": "dt-tf-0074"
+    },
+    {
+      "question": "On a motorway, amber reflective studs are used to mark the boundary between the left-hand lane and the hard shoulder.",
+      "type": "true_false",
+      "correctAnswer": false,
+      "explanation": "Amber reflective studs are used to mark the edge of the carriageway next to the central reservation, not the hard shoulder.",
+      "id": "dt-tf-0075"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": false,
+      "explanation": "You must notify the DVLA if you develop a condition that affects your eyesight, or if your eyesight deteriorates to a level where it does not meet the legal standard.",
+      "question": "You only need to inform the police, not the DVLA, if your eyesight deteriorates to below the legal driving standard.",
+      "id": "dt-tf-0076"
+    },
+    {
+      "question": "You are required to use your full-beam headlights when driving on any road that has street lighting.",
+      "correctAnswer": false,
+      "type": "true_false",
+      "explanation": "Sidelights must be used between sunset and sunrise, but you must use headlights at night on all roads without street lighting or where the speed limit exceeds 30 mph.",
+      "id": "dt-tf-0077"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": true,
+      "explanation": "At a box junction, you may enter the box and wait if you want to turn right and are only prevented from doing so by oncoming traffic or other vehicles waiting to turn right.",
+      "question": "It is legal to enter a yellow box junction to turn right if your exit is clear but you are blocked by oncoming traffic.",
+      "id": "dt-tf-0078"
+    },
+    {
+      "question": "Electronic Stability Control (ESC) is a system designed to help drivers maintain control of the vehicle during cornering or sudden manoeuvres.",
+      "type": "true_false",
+      "correctAnswer": true,
+      "explanation": "Electronic Stability Control (ESC) is a computerised technology that improves a vehicle's stability by detecting and reducing loss of traction (skidding).",
+      "id": "dt-tf-0079"
+    },
+    {
+      "explanation": "A valid MOT certificate is a legal requirement to drive on public roads for most vehicles over three years old, and you cannot renew your road tax without one.",
+      "type": "true_false",
+      "correctAnswer": false,
+      "question": "You can legally drive a car on a public road without a valid MOT certificate for up to 14 days after it has expired.",
+      "id": "dt-tf-0080"
+    },
+    {
+      "explanation": "Trams are powered by electricity and run on fixed rails, making them very quiet and unable to steer out of your way.",
+      "type": "true_false",
+      "correctAnswer": true,
+      "question": "When driving in a city with trams, you should be extra cautious because trams cannot steer to avoid you and move silently.",
+      "id": "dt-tf-0081"
+    },
+    {
+      "question": "The safest way to negotiate a sharp bend is to brake firmly while you are turning the steering wheel.",
+      "type": "true_false",
+      "correctAnswer": false,
+      "explanation": "Braking harder while cornering can cause the weight to shift and lead to a loss of grip or a skid; you should brake to the correct speed before entering the bend.",
+      "id": "dt-tf-0082"
+    },
+    {
+      "correctAnswer": true,
+      "type": "true_false",
+      "explanation": "High-set brake lights (at eye level) are effective because they can often be seen through the windows of the cars following immediately behind you.",
+      "question": "An advantage of a high-level third brake light is that it can be seen by drivers following several cars behind you.",
+      "id": "dt-tf-0083"
+    },
+    {
+      "question": "You are allowed to park your car on the pavement at any time as long as you leave enough room for a wheelchair to pass.",
+      "explanation": "In some areas, such as London, parking on the pavement is strictly prohibited unless signs say otherwise. Generally, it should be avoided as it obstructs pedestrians.",
+      "correctAnswer": false,
+      "type": "true_false",
+      "id": "dt-tf-0084"
+    },
+    {
+      "correctAnswer": true,
+      "type": "true_false",
+      "question": "You should avoid using a high-pressure hose to clean your engine bay as it can damage electrical components.",
+      "explanation": "High-pressure cleaners can force water into electrical components or the air intake, potentially causing serious engine or electrical failure.",
+      "id": "dt-tf-0085"
+    },
+    {
+      "correctAnswer": false,
+      "type": "true_false",
+      "question": "If you develop a medical condition that affects your driving, you only need to tell the DVLA if you intend to drive in the next 30 days.",
+      "explanation": "You must notify the DVLA of any health condition that may affect your ability to drive safely, even if you do not plan to drive immediately.",
+      "id": "dt-tf-0086"
+    },
+    {
+      "correctAnswer": false,
+      "question": "Driving in neutral for long distances ('coasting') is a recommended technique to save fuel and increase vehicle control.",
+      "type": "true_false",
+      "explanation": "Coasting (driving in neutral or with the clutch down) reduces your control over the car, particularly during cornering and braking.",
+      "id": "dt-tf-0087"
+    },
+    {
+      "correctAnswer": true,
+      "type": "true_false",
+      "question": "On a motorway, green reflective road studs are used to mark the edge of the main carriageway at slip roads.",
+      "explanation": "Green studs are used to indicate where slip roads or lay-bys leave or join the main carriageway.",
+      "id": "dt-tf-0088"
+    },
+    {
+      "explanation": "Circular signs with a red border are almost always 'prohibitory', meaning they tell you what you must not do. High-speed warnings are typically triangular.",
+      "correctAnswer": false,
+      "type": "true_false",
+      "question": "A circular traffic sign with a red border is used to give a warning of a hazard ahead, such as a sharp bend.",
+      "id": "dt-tf-0089"
+    },
+    {
+      "explanation": "In some hybrid or electric vehicles, the engine may restart silently and the vehicle can move off without warning.",
+      "correctAnswer": true,
+      "question": "When approaching a stationary hybrid vehicle, you should be aware that it may move off silently using electric power.",
+      "type": "true_false",
+      "id": "dt-tf-0090"
+    },
+    {
+      "explanation": "Stopping distances can be up to ten times further in icy or snowy conditions due to the lack of tyre grip on the road surface.",
+      "correctAnswer": false,
+      "type": "true_false",
+      "question": "In icy conditions, your total stopping distance can be up to five times further than in dry weather.",
+      "id": "dt-tf-0091"
+    },
+    {
+      "type": "true_false",
+      "question": "You are permitted to park on the zigzag lines at a pedestrian crossing if you are only stopping to pick up a passenger.",
+      "correctAnswer": false,
+      "explanation": "The zigzag lines are there to ensure pedestrians and drivers have a clear view. Parking there is illegal and dangerous.",
+      "id": "dt-tf-0092"
+    },
+    {
+      "explanation": "Braking too hard in a vehicle without ABS can cause the wheels to lock, which takes away your ability to steer the vehicle.",
+      "type": "true_false",
+      "question": "If your wheels lock during heavy braking in a car without ABS, you will lose the ability to steer the vehicle.",
+      "correctAnswer": true,
+      "id": "dt-tf-0093"
+    },
+    {
+      "explanation": "Overtaking on the left is only permitted in specific circumstances, such as in slow-moving queues or when the vehicle in front is signalling to turn right.",
+      "correctAnswer": false,
+      "question": "It is always legal to overtake a slower vehicle on the left on a three-lane motorway if the right-hand lanes are congested.",
+      "type": "true_false",
+      "id": "dt-tf-0094"
+    },
+    {
+      "explanation": "The three-point charge covers many offences including careless driving, which carries a fine and 3 to 9 penalty points.",
+      "correctAnswer": true,
+      "question": "If you are convicted of 'driving without due care and attention', the court can impose between 3 and 9 penalty points on your licence.",
+      "type": "true_false",
+      "id": "dt-tf-0095"
+    },
+    {
+      "type": "true_false",
+      "question": "In thick fog, you should use your full-beam headlights to see further through the mist.",
+      "correctAnswer": false,
+      "explanation": "Your high-beam headlights will reflect off the fog, creating a 'white wall' of glare that makes it harder for you to see the road.",
+      "id": "dt-tf-0096"
+    },
+    {
+      "question": "On a motorway, the reflective road studs between the carriage and the central reservation are amber in colour.",
+      "explanation": "Reflective studs on the right-hand edge of the motorway (next to the central reservation) are amber to help drivers navigate in low visibility.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "id": "dt-tf-0097"
+    },
+    {
+      "correctAnswer": false,
+      "type": "true_false",
+      "explanation": "A 'Statutory Off-Road Notification' (SORN) only applies to vehicles kept off public roads; any vehicle parked or driven on a public road must be taxed.",
+      "question": "You may park your car on a public road without road tax if you have declared it off-road via a SORN.",
+      "id": "dt-tf-0098"
     }
   ],
   "mocks": []
