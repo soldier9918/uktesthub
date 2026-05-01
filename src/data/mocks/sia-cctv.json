@@ -8007,6 +8007,90 @@
       "question": "Under the Data Protection Act, all CCTV footage must be kept for a minimum of 12 months before it can be deleted.",
       "explanation": "The DPA/GDPR requires that personal data (including CCTV footage) should not be kept for longer than is necessary for its original purpose, usually around 30 days.",
       "id": "sc-tf-0072"
+    },
+    {
+      "explanation": "The SIA CCTV Public Space Surveillance (PSS) licence is a legal requirement for anyone monitoring members of the public in public spaces for a fee or as part of a contract.",
+      "question": "An individual must hold a valid SIA Public Space Surveillance (PSS) licence if they are monitoring members of the public in a shopping centre.",
+      "type": "true_false",
+      "correctAnswer": true,
+      "id": "sc-tf-0073"
+    },
+    {
+      "question": "The Surveillance Camera Code of Practice only applies to police-run cameras and not to those operated by private security companies.",
+      "explanation": "The CCTV Code of Practice, overseen by the Biometrics and Surveillance Camera Commissioner, applies to all operators and owners of surveillance systems in public places.",
+      "correctAnswer": false,
+      "type": "true_false",
+      "id": "sc-tf-0074"
+    },
+    {
+      "correctAnswer": true,
+      "type": "true_false",
+      "question": "A primary purpose of a CCTV 'Incident Log' is to provide a detailed audit trail for evidence and internal review.",
+      "explanation": "An 'Incident Log' provides a chronological record of events and is vital for providing an audit trail for police investigations or court proceedings.",
+      "id": "sc-tf-0075"
+    },
+    {
+      "explanation": "Remote monitoring centres (ARCs) are frequently used to provide security for sites during out-of-hours periods when no on-site staff are present.",
+      "question": "A 'Remote Monitoring Station' can provide security for multi-site locations from a single, off-site central hub.",
+      "type": "true_false",
+      "correctAnswer": true,
+      "id": "sc-tf-0076"
+    },
+    {
+      "correctAnswer": false,
+      "type": "true_false",
+      "question": "It is not necessary to display signage informing the public of CCTV if the cameras are clearly visible and not hidden.",
+      "explanation": "Signs must be visible and legible to inform the public that they are being recorded and to provide contact details for the Data Controller.",
+      "id": "sc-tf-0077"
+    },
+    {
+      "question": "The term 'PTZ' stands for Pan, Tilt, and Zoom, referring to the movement capabilities of a specific type of camera.",
+      "explanation": "PTZ allows the operator to actively track a subject or move the camera to view different areas based on real-time incidents.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "id": "sc-tf-0078"
+    },
+    {
+      "explanation": "Under the Data Protection Act (and GDPR), data should only be kept for as long as necessary for its specific purpose, which is often 31 days.",
+      "question": "The Data Protection Act mandates that all CCTV systems must store footage for 90 days regardless of the location's risk level.",
+      "correctAnswer": false,
+      "type": "true_false",
+      "id": "sc-tf-0079"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": true,
+      "question": "Section 8 of the Human Rights Act 1998 concerns an individual's right to privacy, which CCTV operators must respect during their duties.",
+      "explanation": "The Human Rights Act 1998, specifically Article 8, protects an individual's right to respect for their private and family life, which applies to surveillance.",
+      "id": "sc-tf-0080"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": false,
+      "explanation": "A 'Monitor Wall' usually shows live feeds or multiple views simultaneously, while the 'Spot Monitor' is used to focus on a single, high-importance image.",
+      "question": "In a control room, a 'Spot Monitor' is a large screen used to display every camera feed in the system at the same time.",
+      "id": "sc-tf-0081"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": true,
+      "explanation": "The 'Operational Requirement' (OR) document outlines what the system is intended to achieve and is the first step in designing a CCTV system.",
+      "question": "The 'Operational Requirement' (OR) is a document used to define the needs of the CCTV system and what it is expected to achieve.",
+      "id": "sc-tf-0082"
+    },
+    {
+      "correctAnswer": false,
+      "type": "true_false",
+      "explanation": "Varifocal lenses allow the focal length to be adjusted manually during installation, whereas fixed lenses have a set field of view that cannot be changed.",
+      "question": "A 'Fixed Lens' camera allows the operator to remotely change the focal length and depth of field at any time.",
+      "id": "sc-tf-0083"
+    },
+    {
+      "explanation": "Privacy masking is a software feature used to block out sensitive areas, such as the windows of private residences, from the camera's view.",
+      "question": "'Privacy Masking' is a digital feature used to obscure private areas, such as residential windows, from being viewed or recorded.",
+      "type": "true_false",
+      "correctAnswer": true,
+      "id": "sc-tf-0084"
     }
   ],
   "mocks": []
