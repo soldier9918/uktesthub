@@ -7923,6 +7923,90 @@
       "question": "The '20-minute rule' suggests that an operator's concentration remains at peak levels for up to four hours of continuous monitoring.",
       "type": "true_false",
       "id": "sc-tf-0060"
+    },
+    {
+      "explanation": "The Freedom of Information Act allows individuals to request information held by public authorities, including certain CCTV footage, provided it does not breach data protection rights.",
+      "question": "Public authorities using CCTV must comply with the Freedom of Information Act 2000 as well as data protection laws.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "id": "sc-tf-0061"
+    },
+    {
+      "question": "An IP camera uses an analogue signal to transmit video data directly to a monitor without using a network.",
+      "explanation": "IP (Internet Protocol) cameras convert video signals into data packets that are transmitted over a network, whereas analogue cameras send an electrical signal via coaxial cable.",
+      "correctAnswer": false,
+      "type": "true_false",
+      "id": "sc-tf-0062"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": false,
+      "explanation": "The Data Protection Act requires companies to have a valid, lawful reason (such as safety or crime prevention) to monitor staff; 'just in case' is not a sufficient legal basis.",
+      "question": "It is legally acceptable for an employer to hide cameras in a staff breakroom to monitor employees 'just in case' they are lazy.",
+      "id": "sc-tf-0063"
+    },
+    {
+      "correctAnswer": true,
+      "type": "true_false",
+      "explanation": "When an operator uses a PTZ camera to follow a specific person, this is considered 'directed surveillance' and is subject to strict legal guidelines.",
+      "question": "Using a PTZ camera to follow a specific individual for a period of time is known as 'active' or 'proactive' monitoring.",
+      "id": "sc-tf-0064"
+    },
+    {
+      "correctAnswer": false,
+      "type": "true_false",
+      "explanation": "A Subject Access Request (SAR) allows an individual to request footage of themselves, but the operator must redact or blur other people's faces to protect their privacy.",
+      "question": "If a person makes a Subject Access Request, the CCTV operator must provide the full, unedited footage even if other members of the public are visible.",
+      "id": "sc-tf-0065"
+    },
+    {
+      "correctAnswer": true,
+      "type": "true_false",
+      "explanation": "The 'Data Controller' is the person or organization that determines the purposes for which, and the manner in which, personal data is processed.",
+      "question": "In the context of the Data Protection Act, the organization that owns the CCTV system is usually defined as the 'Data Controller'.",
+      "id": "sc-tf-0066"
+    },
+    {
+      "explanation": "The 'frame rate' refers to how many images are captured per second, while the 'resolution' refers to the level of detail or number of pixels in each image.",
+      "question": "In CCTV terminology, 'resolution' refers to the amount of frames per second that a camera records.",
+      "type": "true_false",
+      "correctAnswer": false,
+      "id": "sc-tf-0067"
+    },
+    {
+      "correctAnswer": true,
+      "type": "true_false",
+      "explanation": "The SIA requires that operators wait at least 20 minutes between periods of intensive screen monitoring to prevent 'monitor fatigue' and loss of concentration.",
+      "question": "Ideally, a CCTV operator should have a break from screen monitoring duties every 60 to 90 minutes to maintain alertness.",
+      "id": "sc-tf-0068"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": true,
+      "explanation": "The Equality Act 2010 prohibits discrimination; operators must never target individuals based on 'protected characteristics' like race, disability, or gender.",
+      "question": "A CCTV operator must ensure that their monitoring activities do not discriminate against individuals based on 'protected characteristics' under the Equality Act 2010.",
+      "id": "sc-tf-0069"
+    },
+    {
+      "correctAnswer": false,
+      "type": "true_false",
+      "explanation": "Standard CCTV systems are designed for security and safety; using them to record private conversations (audio) is a major breach of privacy laws and rarely permitted.",
+      "question": "Most public space CCTV systems are legally required to record high-quality audio of all conversations as well as video.",
+      "id": "sc-tf-0070"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": true,
+      "explanation": "An NVR is designed specifically for IP (network) cameras, while a DVR is typically used for analogue systems.",
+      "question": "A Network Video Recorder (NVR) is used to record and manage footage from digital IP cameras.",
+      "id": "sc-tf-0071"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": false,
+      "question": "Under the Data Protection Act, all CCTV footage must be kept for a minimum of 12 months before it can be deleted.",
+      "explanation": "The DPA/GDPR requires that personal data (including CCTV footage) should not be kept for longer than is necessary for its original purpose, usually around 30 days.",
+      "id": "sc-tf-0072"
     }
   ],
   "mocks": []

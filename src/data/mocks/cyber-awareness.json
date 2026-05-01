@@ -6952,6 +6952,906 @@
       "imageDescription": "An office worker is seen scanning their badge to open a secure glass door. A second person, dressed in casual clothes and carrying a box, is following closely behind through the open door without scanning.",
       "question": "What security breach is taking place in this photo at an office entrance?",
       "id": "ca-im-0036"
+    },
+    {
+      "question": "An employee is shown holding a secure door open for someone behind them. What security risk does this demonstrate?",
+      "explanation": "Tailgating (or piggybacking) occurs when an unauthorised person follows an authorised person through a secure door without scanned credentials.",
+      "imageAlt": "A person holding a secure door open for another person who is not wearing an ID badge.",
+      "imageDescription": "A photo of an office worker in a suit scanning a badge to open a glass security door, while a person behind them in civilian clothes catches the door to walk through without scanning.",
+      "type": "image_question",
+      "options": [
+        "Phishing",
+        "Shoulder Surfing",
+        "Tailgating",
+        "Pretexting"
+      ],
+      "correctAnswer": 2,
+      "id": "ca-im-0037"
+    },
+    {
+      "question": "Why should a user perform the action shown with the mouse cursor before clicking a link in an email?",
+      "imageDescription": "Close up of a desktop screen showing an email from 'HM Revenue & Customs'. A mouse cursor hovers over a blue button, and a small box appears at the bottom of the screen showing 'bit.ly/fake-tax-refund'.",
+      "type": "image_question",
+      "imageAlt": "A mouse cursor hovering over a 'Click Here' link in an email, revealing a suspicious URL.",
+      "explanation": "Hovering over a link allows you to see the true destination URL in the corner of your browser, helping you spot fraudulent websites.",
+      "options": [
+        "To bypass the firewall",
+        "To check the destination URL before clicking",
+        "To speed up the page loading time",
+        "To automatically scan the link for viruses"
+      ],
+      "correctAnswer": 1,
+      "id": "ca-im-0038"
+    },
+    {
+      "explanation": "A 'Clean Desk Policy' requires all sensitive information and hardware to be cleared away at the end of the day to prevent data theft.",
+      "imageAlt": "An empty office desk with a laptop, a notebook, and a sticky note with a password on it.",
+      "imageDescription": "Photo of an office desk at night. The desk has a laptop left open and a bright yellow sticky note stuck to the monitor showing 'Admin123!'. Information is visible on the screen.",
+      "type": "image_question",
+      "question": "Which workplace security policy is being violated in this image?",
+      "correctAnswer": 0,
+      "options": [
+        "Clean Desk Policy",
+        "Clear Screen PolicyIcon",
+        "Physical Firewall Policy",
+        "Data Protection Act 2018"
+      ],
+      "id": "ca-im-0039"
+    },
+    {
+      "options": [
+        "A screen protector for drops",
+        "A blue light filter for eye strain快速",
+        "A glare reduction film",
+        "A privacy filter to prevent shoulder surfing"
+      ],
+      "correctAnswer": 3,
+      "question": "What is the primary purpose of the laptop accessory shown in this image?",
+      "imageAlt": "A laptop screen that looks dark from the side but clear from the front.",
+      "explanation": "Privacy filters or screens narrow the viewing angle so that onlookers at the side cannot see what is on the display.",
+      "imageDescription": "A person is sitting on a train using a laptop. From the angle of the person sitting next to them, the screen appears completely black or heavily blurred, while the user can see it clearly.",
+      "type": "image_question",
+      "id": "ca-im-0040"
+    },
+    {
+      "question": "What is the specific name for the cyber attack shown in this text message?",
+      "imageAlt": "A smartphone screen showing a text message from an unknown number about a 'missed parcel'.",
+      "explanation": "Smishing is a form of phishing that uses SMS (text messages) to trick victims into revealing sensitive information.",
+      "imageDescription": "A smartphone screen displays a text message that says: 'UK-Delivery: Your parcel is on hold due to a missing house number. Please update here: https://parcel-redeliver-uk.com'.",
+      "type": "image_question",
+      "options": [
+        "Vishing快速",
+        "Phishing",
+        "Smishing快速",
+        "Whaling"
+      ],
+      "correctAnswer": 2,
+      "id": "ca-im-0041"
+    },
+    {
+      "correctAnswer": 1,
+      "options": [
+        "RFID BlockingIcon",
+        "Card SkimmingIcon",
+        "Contactless TheftIconIcon",
+        "Physical PhishingIconQuick"
+      ],
+      "imageDescription": "Close-up of a person's hand inspecting a cash machine (ATM). They are pulling on a bulky plastic piece over the card entry slot, revealing it is a fake overlay.",
+      "type": "image_question",
+      "explanation": "Criminals can use 'skimmers' placed over the card slot on an ATM to steal credit card information as it is swiped.",
+      "imageAlt": "A hand pulling a loose plastic attachment off an ATM card slot.",
+      "question": "What type of physical security threat to financial data is being identified in this photo?",
+      "id": "ca-im-0042"
+    },
+    {
+      "question": "What type of security verification is specifically being used in this image?",
+      "imageDescription": "A close-up of a modern smartphone. An illuminated thumbprint icon is visible on the screen, and a person is pressing their thumb against it to gain access.",
+      "type": "image_question",
+      "imageAlt": "A person placing their thumb on a scanner to unlock a smartphone.",
+      "explanation": "Biometric authentication uses unique physical characteristics, such as fingerprints or facial features, to verify identity.",
+      "options": [
+        "Biometric authentication",
+        "Two-factor authentication (2FA)快速",
+        "Multi-factor authentication (MFA)快速Icon",
+        "Token-based authentication"
+      ],
+      "correctAnswer": 0,
+      "id": "ca-im-0043"
+    },
+    {
+      "correctAnswer": 3,
+      "options": [
+        "AdwareIcon快速Icon",
+        "SpywareIconIconIcon快速Icon",
+        "Trojan HorseIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIcon",
+        "Ransomware"
+      ],
+      "imageDescription": "A laptop screen displaying a large red window with a padlock icon. Text reads: 'Your documents, photos, and databases have been encrypted. Send £300 in Bitcoin to recover them.' There is a countdown timer.",
+      "type": "image_question",
+      "imageAlt": "A computer screen showing a red 'Your files are encrypted' warning.",
+      "explanation": "Ransomware is malware that encrypts a user's files and demands payment, often in cryptocurrency, to restore access.",
+      "question": "Which specific type of malware has infected the computer shown in this image?",
+      "id": "ca-im-0044"
+    },
+    {
+      "question": "What modern social engineering technique is being used on this public utility?",
+      "imageDescription": "A photo of a London parking meter. A small, slightly crooked sticker with a QR code and the text 'Scan to Pay' has been stuck over the original payment instructions.",
+      "type": "image_question",
+      "explanation": "QR code phishing, or 'Quishing', involves malicious codes that redirect users to fraudulent websites.",
+      "imageAlt": "A sticker with a QR code placed over an official parking meter sign.",
+      "options": [
+        "VishingIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIcon",
+        "Juice JackingIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIcon",
+        "QuishingIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIcon",
+        "Quishing (QR Phishing)"
+      ],
+      "correctAnswer": 2,
+      "id": "ca-im-0045"
+    },
+    {
+      "options": [
+        "VishingIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIcon图标",
+        "BaitingIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIcon图标",
+        "Baiting",
+        "Shoulder Surfing"
+      ],
+      "correctAnswer": 1,
+      "question": "An employee finds this device in a communal area. Which social engineering technique does this represent?",
+      "imageDescription": "A photo of an office breakroom table. Next to a half-full coffee cup is a plain silver USB flash drive with a handwritten label on white tape that says 'Salaries 2024'.",
+      "type": "image_question",
+      "imageAlt": "A USB stick with the label 'Confidential Salaries' left on a breakroom table.",
+      "explanation": "Baiting is leaving a malware-infected physical device, like a USB stick, in a public place for someone to find and plug in.",
+      "id": "ca-im-0046"
+    },
+    {
+      "imageDescription": "A close-up of a web browser address bar. It shows a green padlock icon followed by the URL 'https://www.lloydds-bank-secure.co.uk'. The 'Lloyds' spelling has an extra 'd'.",
+      "type": "image_question",
+      "explanation": "The padlock alone does not guarantee safety, as criminals can obtain SSL certificates for fraudulent sites. Checking the domain name is vital.",
+      "imageAlt": "A browser address bar showing a padlock icon but a misspelled brand name.",
+      "question": "Looking at the address bar in this image, what is the most accurate security assessment?",
+      "correctAnswer": 2,
+      "options": [
+        "The site is 100% safe because of the green padlock.",
+        "The 'https' prefix ensures the company is legitimate.",
+        "The padlock icons means the connection is encrypted, but the URL suggests a phishing site.",
+        "The '.co.uk' ending proves it is a UK government-approved site."
+      ],
+      "id": "ca-im-0047"
+    },
+    {
+      "options": [
+        "To make it harder for information to be reconstructed",
+        "To save space in the recycling binIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIcon图标",
+        "To follow UK fire safety regulationsIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIcon图标",
+        "To comply with environmental waste targetsIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIconIcon图标"
+      ],
+      "correctAnswer": 0,
+      "question": "Why is using the 'cross-cut' shredding method shown in this image considered more secure for physical data?",
+      "explanation": "Cross-cut or micro-cut shredders turn sensitive documents into tiny pieces that are nearly impossible to reassemble, unlike strip-cut shredders.",
+      "imageAlt": "A pile of cross-cut shredded paper next to a document shredding machine.",
+      "imageDescription": "A photo of a high-security office shredder. Next to it is a bin full of 'cross-cut' paper, which looks like tiny confetti rather than long strips. A document with 'CONFIDENTIAL' is halfway into the feeder.",
+      "type": "image_question",
+      "id": "ca-im-0048"
+    },
+    {
+      "explanation": "Tailgating occurs when someone follows an authorised person into a restricted area without scanning their own credentials.",
+      "options": [
+        "Piggybacking",
+        "Tailgating",
+        "Shoulder surfing",
+        "Social proofing"
+      ],
+      "imageDescription": "An office worker scans their badge to open a glass security door, while a person in dark clothing and a hood follows closely behind them before the door closes.",
+      "type": "image_question",
+      "question": "Which physical security breach is being demonstrated in this image?",
+      "correctAnswer": 1,
+      "imageAlt": "A person in a hoodie following closely behind an office worker through a swipe-card door.",
+      "id": "ca-im-0049"
+    },
+    {
+      "type": "image_question",
+      "question": "Why is the user performing the action shown with the mouse cursor?",
+      "imageAlt": "A mouse cursor hovering over a 'Click Here' button in an email, revealing a suspicious URL.",
+      "correctAnswer": 0,
+      "explanation": "Hovering over a link allows you to see the real destination URL in the bottom corner of the browser, helping you spot phishing.",
+      "imageDescription": "A close-up of an email stating 'Your account is locked'. The mouse cursor is hovering over a 'Verify Now' button, and a small yellow box appears showing a long, random URL ending in .cc.",
+      "options": [
+        "To check the actual destination URL before clicking.",
+        "To speed up the loading time of the website.",
+        "To scan the website for viruses automatically.",
+        "To verify the digital signature of the email sender."
+      ],
+      "id": "ca-im-0050"
+    },
+    {
+      "explanation": "Shoulder surfing involves looking over someone's shoulder to steal PINs, passwords, or sensitive data.",
+      "imageDescription": "A man is sitting in a crowded UK coffee shop typing on a tablet. Behind him, a person is standing in the queue and clearly looking down at the man's screen.",
+      "options": [
+        "Visual eavesdropping",
+        "Screen grabbing",
+        "Shoulder surfing",
+        "Whaling"
+      ],
+      "type": "image_question",
+      "question": "What type of social engineering attack is occurring in this public setting?",
+      "imageAlt": "A person in a coffee shop looking over another person's shoulder at their tablet screen.",
+      "correctAnswer": 2,
+      "id": "ca-im-0051"
+    },
+    {
+      "question": "What is the primary purpose of the laptop accessory shown in this image?",
+      "type": "image_question",
+      "imageAlt": "A dark plastic film being applied to a laptop screen.",
+      "correctAnswer": 0,
+      "explanation": "A privacy filter narrows the viewing angle of the screen, preventing people nearby from seeing sensitive information.",
+      "imageDescription": "A hand is applying a semi-transparent black film overlay onto a laptop screen. The screen is visible from the front but appears black from a side angle.",
+      "options": [
+        "A privacy filter (or privacy screen)",
+        "An anti-glare protector",
+        "A touch-screen digitiser",
+        "A blue light filter"
+      ],
+      "id": "ca-im-0052"
+    },
+    {
+      "correctAnswer": 3,
+      "imageAlt": "A smartphone screen showing a text from 'HMRC' about a tax refund.",
+      "question": "What specific name is given to the cyber attack shown in this text message?",
+      "type": "image_question",
+      "options": [
+        "Vishing",
+        "Spear phishing",
+        "Phishing",
+        "Smishing"
+      ],
+      "imageDescription": "A mobile phone displays a text message from 'Gov-UK' claiming the recipient is owed a £400 tax refund and provides a link: gov-uk-tax-refund.net.",
+      "explanation": "Smishing is a form of phishing that uses SMS (text messages) to trick victims into revealing data.",
+      "id": "ca-im-0053"
+    },
+    {
+      "options": [
+        "Acceptable use policy",
+        "Clear desk and clear screen policy",
+        "Remote working policy",
+        "Bring Your Own Device (BYOD) policy"
+      ],
+      "imageDescription": "A laptop is sitting open on a table in a busy UK railway station. The screen is on and shows a spreadsheet. There is no one sitting at the table.",
+      "explanation": "Leaving a laptop unattended and unlocked in a public place is a major risk for theft and unauthorised access.",
+      "correctAnswer": 1,
+      "imageAlt": "An open laptop left on a table in a busy train station.",
+      "type": "image_question",
+      "question": "Which workplace security policy is being fundamentally violated in this image?",
+      "id": "ca-im-0054"
+    },
+    {
+      "type": "image_question",
+      "question": "What modern social engineering technique is being used on this public utility?",
+      "correctAnswer": 2,
+      "imageAlt": "A QR code sticker placed over an official parking meter payment sign.",
+      "explanation": "Quishing (QR Phishing) involves using malicious QR codes to redirect victims to fraudulent websites.",
+      "options": [
+        "Vishing",
+        "Baiting",
+        "Quishing",
+        "Pretexting"
+      ],
+      "imageDescription": "A close-up of a parking meter in a city. A small, slightly crooked QR code sticker has been placed over the official payment instructions.",
+      "id": "ca-im-0055"
+    },
+    {
+      "explanation": "The URL uses 'rn' instead of 'm', a technique called typosquatting or 'combosquatting' to deceive users.",
+      "options": [
+        "The domain name is misspelt to look like a legitimate site.",
+        "The site is secure because it uses 'https'.",
+        "The site is legitimate because it uses the Microsoft brand name.",
+        "The padlock symbol indicates the site is 100% safe to use."
+      ],
+      "imageDescription": "A close-up of a web browser address bar. The text says 'https://www.rnicrosoft.com/login'. The 'rn' is written to look like an 'm'.",
+      "question": "Looking at the address bar in this image, what is the most accurate security assessment?",
+      "type": "image_question",
+      "correctAnswer": 0,
+      "imageAlt": "A browser address bar showing 'www.rnicrosoft.com'.",
+      "id": "ca-im-0056"
+    },
+    {
+      "explanation": "A clean desk policy ensures that sensitive information like passwords is not left visible to others.",
+      "imageDescription": "A workstation in an office with a yellow sticky note attached to the side of the monitor. The note clearly lists a username and the password 'Summer2024!'.",
+      "options": [
+        "Password complexity policy",
+        "Workplace health and safety policy",
+        "Acceptable use policy",
+        "Clean desk policy"
+      ],
+      "question": "Which security policy is being violated by the habit shown in this image?",
+      "type": "image_question",
+      "imageAlt": "An office desk with a post-it note showing a password stuck to the monitor.",
+      "correctAnswer": 3,
+      "id": "ca-im-0057"
+    },
+    {
+      "explanation": "Multi-Factor Authentication (MFA) requires a second form of verification, such as a code from a mobile app.",
+      "options": [
+        "Single Sign-On (SSO)",
+        "Multi-Factor Authentication (MFA)",
+        "Biometric Verification",
+        "Password Synchronisation"
+      ],
+      "imageDescription": "A person is sitting at a desk. Their laptop screen says 'Enter the 6-digit code from your authenticator app'. Next to the laptop, their phone shows a 6-digit code.",
+      "type": "image_question",
+      "question": "What type of security verification is being used in this image?",
+      "correctAnswer": 1,
+      "imageAlt": "A laptop screen asking for a code and a smartphone displaying a 6-digit number.",
+      "id": "ca-im-0058"
+    },
+    {
+      "options": [
+        "Spyware",
+        "Adware",
+        "Ransomware",
+        "Rootkit"
+      ],
+      "imageDescription": "A desktop computer monitor displays a full-screen red warning message with a countdown timer. It says 'All your files have been encrypted' and asks for a Bitcoin payment.",
+      "explanation": "Ransomware encrypts files and displays a message demanding payment to restore access.",
+      "correctAnswer": 2,
+      "imageAlt": "A computer screen showing a red 'Your files are encrypted' warning.",
+      "type": "image_question",
+      "question": "What specific type of malicious software has infected the computer in this image?",
+      "id": "ca-im-0059"
+    },
+    {
+      "explanation": "ID badges can be easily 'cloned' or copied if a high-resolution photo is posted online.",
+      "imageDescription": "A young man is smiling and holding his new corporate ID badge close to his face for a selfie. The badge clearly shows his full name, department, and a barcode.",
+      "options": [
+        "The badge details could be used to create a fake or cloned ID.",
+        "The person is violating GDPR by showing their own face.",
+        "The barcode could contain a link to a computer virus.",
+        "It reveals the company's secret office location."
+      ],
+      "question": "What is the primary security risk of sharing this photo on social media?",
+      "type": "image_question",
+      "imageAlt": "A person holding their new work ID badge up for a selfie.",
+      "correctAnswer": 0,
+      "id": "ca-im-0060"
+    },
+    {
+      "question": "What security accessory is being used on this laptop to prevent 'visual hacking' in public spaces?",
+      "imageDescription": "A close-up of a laptop screen in a busy office or public cafe. From a side-view perspective, the screen looks almost entirely black, while a small portion viewed from the front is visible.",
+      "explanation": "A 'Privacy Filter' or 'Privacy Screen' narrows the viewing angle of the monitor, preventing unauthorised people from seeing sensitive data from the side.",
+      "type": "image_question",
+      "correctAnswer": 2,
+      "imageAlt": "A laptop screen that appears dark when viewed from a side angle but clear from the front.",
+      "options": [
+        "Anti-glare coating",
+        "Blue light filter",
+        "Privacy screen protector",
+        "Touchscreen digitiser"
+      ],
+      "id": "ca-im-0061"
+    },
+    {
+      "question": "What specific term describes the fraudulent text message shown in this image?",
+      "explanation": "Smishing is a form of phishing that uses SMS (text messages) to trick victims into clicking malicious links or sharing personal details.",
+      "imageDescription": "A mobile phone screen displaying a text message that says 'EVRi: Your parcel has a redirected delivery fee of £1.45. Click here to pay: [malicious link]'.",
+      "type": "image_question",
+      "correctAnswer": 0,
+      "options": [
+        "Smishing",
+        "Vishing",
+        "Whaling",
+        "Pharming"
+      ],
+      "imageAlt": "A smartphone showing a text message from an unknown number claiming to be a delivery company.",
+      "id": "ca-im-0062"
+    },
+    {
+      "correctAnswer": 1,
+      "type": "image_question",
+      "imageAlt": "A person walking away from a desktop computer with a USB stick still plugged into the front port.",
+      "options": [
+        "Keyboard ghosting",
+        "Removable media neglect",
+        "Tailgating",
+        "Pretexting Scatter"
+      ],
+      "question": "Which security risk is being demonstrated by the hardware left in this computer?",
+      "imageDescription": "An office desk with a computer monitor. A user is seen walking away in the background, while a bright red USB flash drive is left plugged into the desktop tower's front USB port.",
+      "explanation": "Leaving a USB drive in a PC after use is a security risk; it could contain malware or sensitive data that someone else might access if the PC is left unlocked.",
+      "id": "ca-im-0063"
+    },
+    {
+      "type": "image_question",
+      "correctAnswer": 3,
+      "options": [
+        "Multi-factor hardware token",
+        "Pattern unlock sequence",
+        "Knowledge-based authentication",
+        "Biometric authentication"
+      ],
+      "imageAlt": "A person's thumb pressing against a glowing scanning pad on a laptop.",
+      "question": "What type of identity verification method is being used in this image?",
+      "explanation": "Biometric authentication uses unique physical characteristics, such as fingerprints or facial features, to verify a user's identity.",
+      "imageDescription": "A high-angle close-up of a person's thumb resting on a small square sensor integrated into a silver laptop chassis next to the keyboard. The sensor has a faint blue glow.",
+      "id": "ca-im-0064"
+    },
+    {
+      "question": "Which workplace security policy is being directly violated in this image?",
+      "explanation": "A clean desk policy ensures that sensitive information, such as passwords on sticky notes, is not left visible to unauthorised people.",
+      "imageDescription": "A close-up of the corner of a computer monitor. A yellow sticky note is attached to the frame with the words 'Password: Summer2024!' written clearly on it.",
+      "correctAnswer": 1,
+      "type": "image_question",
+      "options": [
+        "Clear Screen Policy",
+        "Clean Desk Policy",
+        "Remote Working Policy",
+        "Acceptable Use Policy"
+      ],
+      "imageAlt": "An office desk with a computer monitor and a sticky note stuck to the bezel.",
+      "id": "ca-im-0065"
+    },
+    {
+      "type": "image_question",
+      "correctAnswer": 2,
+      "imageAlt": "A Windows file explorer window showing a file named 'Invoice.pdf.exe'.",
+      "options": [
+        "It is a corrupted PDF file",
+        "It is a compressed Zip folder",
+        "It is an executable file disguised as a document",
+        "It is a secure encrypted file"
+      ],
+      "question": "Looking at the file extension in this image, why is this file highly suspicious?",
+      "imageDescription": "A screenshot of a Windows file explorer window. A file is highlighted with the name 'Invoice.pdf.exe' and a generic application icon instead of a PDF icon.",
+      "explanation": "The '.exe' extension indicates an executable file, which can run code and install malware, unlike a simple '.pdf' or '.docx' document.",
+      "id": "ca-im-0066"
+    },
+    {
+      "explanation": "A Faraday bag or pouch blocks all electromagnetic signals (RFID, Bluetooth, WiFi) to prevent remote car theft or tracking.",
+      "imageDescription": "A person is placing a modern keyless entry car fob into a small black pouch with a metallic foil lining inside.",
+      "question": "What is the name of this protective item used to prevent signal-relay attacks on keyless entry fobs?",
+      "options": [
+        "Faraday pouch",
+        "Anti-static bag",
+        "Biometric sleeve",
+        "Signal booster"
+      ],
+      "imageAlt": "A car key fob being placed into a small, lined fabric pouch.",
+      "correctAnswer": 0,
+      "type": "image_question",
+      "id": "ca-im-0067"
+    },
+    {
+      "question": "What is the primary cyber security threat associated with scanning a random code like the one shown here?",
+      "explanation": "A QR code can lead to a malicious website designed to steal credentials or download malware, a tactic known as 'Quishing'.",
+      "imageDescription": "A printed poster stuck on a wall in a public train station. It says 'FREE HIGH SPEED WIFI - SCAN HERE' with a large QR code in the middle.",
+      "type": "image_question",
+      "correctAnswer": 3,
+      "options": [
+        "Man-in-the-middle attack",
+        "Juice jacking",
+        "Shoulder surfing",
+        "Quishing (QR Phishing)"
+      ],
+      "imageAlt": "A poster on a wall with a QR code and the text 'Scan for free WiFi'.",
+      "id": "ca-im-0068"
+    },
+    {
+      "question": "What is the purpose of this specific piece of office equipment?",
+      "imageDescription": "A large, grey plastic bin in an office corner. It has a heavy padlock on the front and a narrow slit in the lid. A sticker on the side reads 'Confidential Waste Only'.",
+      "explanation": "A secure shredding bin allows employees to deposit sensitive documents safely without them being accessible to others before final destruction.",
+      "correctAnswer": 1,
+      "type": "image_question",
+      "imageAlt": "A large grey locked bin with a thin slot in the lid labeled 'Confidential Waste'.",
+      "options": [
+        "General recycling bin",
+        "Secure document console",
+        "Archive storage boxConfidential waste bin",
+        "Digital media vault"
+      ],
+      "id": "ca-im-0069"
+    },
+    {
+      "correctAnswer": 2,
+      "type": "image_question",
+      "options": [
+        "Clicking the link to test its speed",
+        "Checking the website's SSL certificate",
+        "Verifying the actual destination URL before clicking",
+        "Refreshing the webpage content"
+      ],
+      "imageAlt": "A cursor hovering over a link 'www.your-bank-secure.com' while the status bar shows a different address.",
+      "question": "Why is the user hovering their mouse over the link as shown in this screenshot?",
+      "explanation": "Hovering over a link shows the true destination URL in the bottom-left corner, revealing if the link is directing to a counterfeit 'look-alike' website.",
+      "imageDescription": "An email interface. The mouse cursor is hovering over a button that says 'Login to Bank'. In the very bottom-left corner of the window, a small grey bar appears showing 'http://login-verify-user-772.top/login'.",
+      "id": "ca-im-0070"
+    },
+    {
+      "explanation": "Tailgating (or piggybacking) occurs when an unauthorised person follows an authorised person through a secure door before it closes.",
+      "imageDescription": "A person is using a keycard to open a secure glass door. A second person, wearing a plain hoodie and carrying a box, is following closely behind them into the building without scanning.",
+      "question": "Which physical security breach is being captured in this photograph?",
+      "options": [
+        "Tailgating",
+        "Whitelisting",
+        "Social engineering proximity",
+        "Bypassing MFA"
+      ],
+      "imageAlt": "Two people entering an office; one holds the door open for the other who has no visible ID badge.",
+      "type": "image_question",
+      "correctAnswer": 0,
+      "id": "ca-im-0071"
+    },
+    {
+      "question": "What is the main security risk of posting a photo like this on social media?",
+      "explanation": "Oversharing work details like building passes or ID badges can allow criminals to spoof credentials or identify internal security flaws.",
+      "imageDescription": "A first-person perspective photo of a hand holding a corporate ID badge with a clear photo, name, and barcode. The background shows the Tower Bridge in London.",
+      "correctAnswer": 3,
+      "type": "image_question",
+      "options": [
+        "Poor photographic composition",
+        "Violation of copyright law",
+        "Breach of GDPR marketing rules",
+        "Risk of credential cloning and social engineering"
+      ],
+      "imageAlt": "A hand holding a company ID badge in front of a famous London landmark for a photo.",
+      "id": "ca-im-0072"
+    },
+    {
+      "options": [
+        "The website is 100% safe from hackers",
+        "The website is a verified government site",
+        "The connection between your browser and the site is encrypted",
+        "Your computer is immune to viruses while on this site"
+      ],
+      "imageDescription": "A close-up of a web browser's address bar showing 'https://' and a closed padlock symbol next to a brand name.",
+      "imageAlt": "A browser address bar showing a padlock icon next to a URL.",
+      "correctAnswer": 2,
+      "explanation": "The padlock icon indicates that the connection is encrypted via SSL/TLS, but it does not guarantee the website's content is safe or legitimate.",
+      "question": "What does the padlock symbol in the browser address bar primarily indicate?",
+      "type": "image_question",
+      "id": "ca-im-0073"
+    },
+    {
+      "correctAnswer": 0,
+      "explanation": "Tailgating is when an unauthorised person follows an authorised person into a restricted area without scanning their own credentials.",
+      "type": "image_question",
+      "question": "Which physical security breach is taking place in this image?",
+      "imageAlt": "One person holding a security door open for another person who does not have an ID badge visible.",
+      "imageDescription": "A photo of an office security turnstile where one employee is swiping their badge and a second person is closely following them through before the gate closes.",
+      "options": [
+        "Tailgating",
+        "Pretexting",
+        "Whaling",
+        "Shoulder surfing"
+      ],
+      "id": "ca-im-0074"
+    },
+    {
+      "question": "In this email header, what is the most significant red flag?",
+      "type": "image_question",
+      "correctAnswer": 1,
+      "explanation": "The 'From' field often displays a friendly name that doesn't match the actual sender's email address, a common tactic in phishing.",
+      "options": [
+        "A legitimate government update",
+        "Display name spoofing",
+        "An encrypted secure message",
+        "A standard newsletter subscription"
+      ],
+      "imageDescription": "An email header where the display name says 'HM Revenue & Customs' but the email address in brackets is 'cheap-deals@random-domain.com'.",
+      "imageAlt": "An email header showing a mismatch between the display name and the actual email address.",
+      "id": "ca-im-0075"
+    },
+    {
+      "correctAnswer": 3,
+      "explanation": "Post-it notes with passwords are a major security risk as anyone with physical access to the desk can compromise the account.",
+      "question": "What security risk is highlighted by the sticky note in this image?",
+      "type": "image_question",
+      "options": [
+        "Unauthorised software installation",
+        "Clear desk policy violation",
+        "Social engineering via phone",
+        "Poor password hygiene and physical security breach"
+      ],
+      "imageDescription": "An office desk setup where the side of the computer monitor has several sticky notes, one of which clearly lists 'Username: Admin' and 'Pass: Welcome123!'.",
+      "imageAlt": "A computer monitor with a yellow sticky note attached containing a username and password.",
+      "id": "ca-im-0076"
+    },
+    {
+      "type": "image_question",
+      "question": "What is the term for the cyber threat shown on this parking meter?",
+      "correctAnswer": 1,
+      "explanation": "QR code phishing (Quishing) directs users to malicious sites, often used on parking meters to steal payment details.",
+      "imageAlt": "A parking meter with a fake-looking QR code sticker slapped over the original payment instructions.",
+      "imageDescription": "A photo of a UK street parking meter. A small, slightly crooked sticker with a QR code and the text 'Scan to Pay' has been placed over the official payment instructions.",
+      "options": [
+        "Vishing",
+        "Quishing",
+        "Smishing",
+        "Pharming"
+      ],
+      "id": "ca-im-0077"
+    },
+    {
+      "question": "Why is the file shown in this image considered a high security risk?",
+      "type": "image_question",
+      "correctAnswer": 0,
+      "explanation": "The '.exe' extension on a file that appears to be an image or document is a common way to trick users into running malicious code.",
+      "options": [
+        "It is a double file extension designed to hide an executable file",
+        "It is a secure encrypted document format",
+        "It is a backup file created by Windows",
+        "It is a compressed file that needs unzipping"
+      ],
+      "imageDescription": "A screenshot of a file downloads folder showing a file titled 'Urgent_Invoice.pdf.exe' with a standard PDF icon.",
+      "imageAlt": "A Windows file explorer window showing a file named 'Invoice.pdf.exe'.",
+      "id": "ca-im-0078"
+    },
+    {
+      "imageAlt": "A person using an ATM while someone behind them is looking directly at the keypad.",
+      "imageDescription": "A person at a cash machine (ATM) in a busy UK high street. A person standing in the queue behind them is leaning forward, looking intently at the keypad as the user types.",
+      "options": [
+        "Eavesdropping",
+        "Skimming",
+        "Shoulder surfing",
+        "Piggybacking"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Shoulder surfing involves looking over someone's shoulder to steal sensitive information like PINs or passwords.",
+      "type": "image_question",
+      "question": "What type of social engineering attack is being attempted in this photograph?",
+      "id": "ca-im-0079"
+    },
+    {
+      "type": "image_question",
+      "question": "What security threat is associated with the action shown in this image?",
+      "correctAnswer": 3,
+      "explanation": "USB sticks found in public places may contain 'rubber ducky' scripts or malware that installs automatically when plugged in.",
+      "imageDescription": "A person's hand reaching down to pick up a generic silver USB flash drive lying on the pavement in a company car park.",
+      "options": [
+        "Lost property recovery",
+        "Hardware data backup",
+        "Internal data transfer",
+        "'Lost' media/USB drop attack"
+      ],
+      "imageAlt": "A person picking up a plain USB drive found on the floor of a car park.",
+      "id": "ca-im-0080"
+    },
+    {
+      "options": [
+        "Single Sign-On (SSO)",
+        "Multi-Factor Authentication (MFA)",
+        "Biometric scanning",
+        "Password recovery mode"
+      ],
+      "imageDescription": "A smartphone screen displaying the Microsoft Authenticator app with a six-digit code and a countdown timer next to a company logo.",
+      "imageAlt": "A smartphone screen showing a 6-digit code in an authenticator app.",
+      "correctAnswer": 1,
+      "explanation": "MFA (Multi-Factor Authentication) requires a second form of verification, such as a code from an app, to improve security.",
+      "question": "What security process is being demonstrated on this smartphone?",
+      "type": "image_question",
+      "id": "ca-im-0081"
+    },
+    {
+      "correctAnswer": 0,
+      "explanation": "Public Wi-Fi networks can be intercepted by hackers; using a VPN (Virtual Private Network) creates an encrypted tunnel for your data.",
+      "type": "image_question",
+      "question": "What is the safest way to browse the internet when connected to the network shown in this image?",
+      "imageDescription": "A laptop screen shows the Wi-Fi selection menu. The user is connected to 'Unsecured Public WiFi'. A pop-up notification suggests using a VPN.",
+      "options": [
+        "Using a VPN (Virtual Private Network)",
+        "Turning off the laptop's firewall",
+        "Using an Incognito or Private browser tab",
+        "Disabling the laptop's Bluetooth"
+      ],
+      "imageAlt": "A laptop connected to 'Free Coffee Shop Wi-Fi' with a warning message on the side.",
+      "id": "ca-im-0082"
+    },
+    {
+      "correctAnswer": 2,
+      "explanation": "A privacy screen filter narrows the viewing angle so that the screen is only visible to the person sitting directly in front of it.",
+      "type": "image_question",
+      "question": "What device is being used on this laptop to protect sensitive data in public?",
+      "imageDescription": "Two photos side-by-side: one shows a laptop screen from the front (bright and clear), the other shows it from a 45-degree angle (completely black/opaque).",
+      "options": [
+        "Anti-glare coating",
+        "Blue light filter",
+        "Privacy screen filter",
+        "Touchscreen protector"
+      ],
+      "imageAlt": "A laptop screen that looks black from an angle but clear from the front.",
+      "id": "ca-im-0083"
+    },
+    {
+      "imageDescription": "A social media post on a phone screen showing a 'New Job!' selfie where the person is holding up their detailed company ID badge clearly to the camera.",
+      "options": [
+        "It violates the company's dress code policy",
+        "The flash from the camera might damage the badge chip",
+        "It reveals sensitive information that can be used for 'Social Engineering' or cloning",
+        "It is a breach of the UK Highway Code"
+      ],
+      "imageAlt": "A photo of an office ID badge being shared on a social media feed.",
+      "correctAnswer": 2,
+      "explanation": "Work ID badges often contain names, departments, and barcodes that can be used by hackers to craft convincing social engineering attacks.",
+      "type": "image_question",
+      "question": "Why is it a security risk to post a photo like this on social media?",
+      "id": "ca-im-0084"
+    },
+    {
+      "question": "If you found these items on the ground outside your office, what specific cyber threat would they represent?",
+      "options": [
+        "Hardware theft",
+        "Baiting / USB drop attack",
+        "Data recovery service",
+        "Software distribution"
+      ],
+      "type": "image_question",
+      "explanation": "The presence of multiple USB drives suggests a 'USB drop' attack, where malware is hidden on drives left in public spaces to entice employees to plug them in.",
+      "imageAlt": "Several unlabelled USB memory sticks scattered on a pavement near an office entrance.",
+      "imageDescription": "High-angle shot of three or four silver and black USB thumb drives lying on a grey stone pavement outside a modern corporate building.",
+      "correctAnswer": 1,
+      "id": "ca-im-0085"
+    },
+    {
+      "explanation": "Shoulder surfing involves an unauthorised person looking over someone's shoulder to steal sensitive information like passwords or PINs.",
+      "type": "image_question",
+      "options": [
+        "Shoulder surfing",
+        "Tailgating",
+        "Skimming",
+        "Social engineering"
+      ],
+      "question": "What physical security threat is being demonstrated in this photo?",
+      "imageDescription": "A person is using a wall-mounted ATM while another individual stands closely behind them, clearly looking over their shoulder at the keypad.",
+      "correctAnswer": 0,
+      "imageAlt": "A person in a hoodie standing behind someone typing at an ATM.",
+      "id": "ca-im-0086"
+    },
+    {
+      "options": [
+        "A legitimate UK government address",
+        "A professional Microsoft domain",
+        "A spoofed domain using 'typosquatting' (a zero instead of an O)",
+        "An encrypted secure mail server"
+      ],
+      "question": "Looking closely at the sender's email address in this image, why should you be suspicious?",
+      "type": "image_question",
+      "explanation": "The sender's address 'support@micros0ft-security.uk' uses a zero instead of the letter 'O', which is a classic 'typosquatting' tactic used by phishers.",
+      "imageAlt": "A phishing email showing a sender address with a zero instead of an 'o'.",
+      "imageDescription": "A close-up of an email 'From' field showing the name 'Microsoft Support' but the actual email address is 'support@micros0ft-security.uk'.",
+      "correctAnswer": 2,
+      "id": "ca-im-0087"
+    },
+    {
+      "imageAlt": "A person putting sensitive-looking documents into a cross-cut paper shredder.",
+      "imageDescription": "An office worker feeding a stack of papers marked 'Confidential - Client Data' into a modern cross-cut shredder next to a desk.",
+      "correctAnswer": 3,
+      "options": [
+        "Recycling bins",
+        "Digital backup",
+        "Clear desk policy",
+        "Secure document destruction (Shredding)"
+      ],
+      "question": "What security practice is being performed here to prevent 'dumpster diving'?",
+      "explanation": "Shredding is the only secure way shown to prevent 'dumpster diving,' where criminals look through rubbish for confidential documents.",
+      "type": "image_question",
+      "id": "ca-im-0088"
+    },
+    {
+      "imageDescription": "A hand holding a smartphone showing an authenticator app with a six-digit code and a countdown timer next to a login logo.",
+      "correctAnswer": 1,
+      "imageAlt": "A smartphone screen displaying a 6-digit verification code for an app.",
+      "type": "image_question",
+      "explanation": "Multi-Factor Authentication (MFA) requires a second form of verification, such as a code from a mobile app, to significantly improve account security.",
+      "question": "What security feature is being used in this image to protect an online account?",
+      "options": [
+        "Single Sign-On (SSO)",
+        "Multi-Factor Authentication (MFA)",
+        "Password encryption",
+        "Biometric scanning"
+      ],
+      "id": "ca-im-0089"
+    },
+    {
+      "type": "image_question",
+      "explanation": "A privacy screen/filter narrows the viewing angle so that the screen appears black or blurred to anyone not sitting directly in front of it.",
+      "question": "What is the purpose of the layer applied to the laptop screen in these images?",
+      "options": [
+        "Screen protector for scratches",
+        "Blue light filter for eye strain",
+        "Privacy screen filter for data protection",
+        "Anti-glare coating for sunlight"
+      ],
+      "imageDescription": "Two photos side-by-side: one showing a laptop screen clearly from the front, and the second showing the same screen from a 45-degree side angle where it looks completely black.",
+      "correctAnswer": 2,
+      "imageAlt": "A laptop screen being viewed from the side, appearing dark/unreadable.",
+      "id": "ca-im-0090"
+    },
+    {
+      "imageDescription": "A person holding a mobile phone to their ear with a distressed expression, while holding their debit card out as if reading details to the caller.",
+      "correctAnswer": 1,
+      "imageAlt": "A person on a phone looking stressed, holding a bank card.",
+      "explanation": "Vishing (voice phishing) involves criminals calling targets and using social engineering to extract passwords or sensitive data.",
+      "type": "image_question",
+      "question": "Which type of social engineering attack is most likely occurring in this scenario?",
+      "options": [
+        "Smishing",
+        "Vishing",
+        "Pharming",
+        "Whaling"
+      ],
+      "id": "ca-im-0091"
+    },
+    {
+      "question": "What is the primary security risk shown in this public setting?",
+      "options": [
+        "Unauthorised physical access",
+        "Remote hacking attempt",
+        "Malware infection from Wi-Fi",
+        "Hardware failure risk"
+      ],
+      "type": "image_question",
+      "explanation": "Leaving a computer unlocked allows unauthorised physical access to your files, emails, and the internal company network.",
+      "imageAlt": "An open laptop in a busy coffee shop with the owner's seat empty.",
+      "imageDescription": "A wide shot of a busy cafe. In the foreground, a laptop is open and logged into an email account on a table, with no user present.",
+      "correctAnswer": 0,
+      "id": "ca-im-0092"
+    },
+    {
+      "question": "Based on this image, what type of cyber attack is being delivered to the user's phone?",
+      "options": [
+        "A legitimate government notification",
+        "A WhatsApp scam",
+        "A Smishing (SMS Phishing) attack",
+        "A service provider update"
+      ],
+      "explanation": "Smishing is a form of phishing conducted via SMS text messages, often containing malicious links or 'urgent' requests.",
+      "type": "image_question",
+      "imageAlt": "A text message on a phone from 'HMRC' claiming a tax refund is waiting.",
+      "imageDescription": "A smartphone screen showing an SMS message from 'UK_GOV' stating 'You are eligible for a tax refund of £450. Click here to claim: bit.ly/fake-tax-link'.",
+      "correctAnswer": 2,
+      "id": "ca-im-0093"
+    },
+    {
+      "explanation": "The user is hovering over a suspicious URL to check the actual destination, which is a key way to identify a phishing link.",
+      "type": "image_question",
+      "question": "What vital security step is the user performing in this screenshot?",
+      "options": [
+        "Checking the website's speed",
+        "Updating the browser's software",
+        "Checking the site's SSL certificate",
+        "Verifying the actual URL destination before clicking"
+      ],
+      "imageDescription": "A screenshot of an email with a button saying 'Update Your Account'. A mouse cursor is hovering over it, and a small box appears at the bottom showing 'http://secure-login-vols.com/scam'.",
+      "correctAnswer": 3,
+      "imageAlt": "A mouse cursor hovering over a link, revealing a different URL in a small tooltip.",
+      "id": "ca-im-0094"
+    },
+    {
+      "explanation": "Tailgating occurs when an unauthorised person follows an authorised person through a secure entrance without using their own badge.",
+      "type": "image_question",
+      "options": [
+        "Tailgating / Piggybacking",
+        "Forced entry",
+        "Visitor management policy",
+        "Authorized access grant"
+      ],
+      "question": "What physical security breach is taking place in this image at the office entrance?",
+      "imageDescription": "A person with a security badge is holding open a heavy office door for another person carrying a box, who does not have a visible ID badge.",
+      "correctAnswer": 0,
+      "imageAlt": "A person holding a secure door open for another person who is not wearing a badge.",
+      "id": "ca-im-0095"
+    },
+    {
+      "explanation": "Mixing personal and work devices can lead to data leaks or the introduction of malware from personal apps into the corporate network.",
+      "type": "image_question",
+      "question": "What security risk is demonstrated by connecting a personal device to a work machine as shown here?",
+      "options": [
+        "Efficient charging practice",
+        "Data synchronisation policy",
+        "'Shadow IT' or 'BYOD' security risk",
+        "Standard peripheral connection"
+      ],
+      "imageDescription": "A close-up of a desk showing a personal iPad connected via a USB charging cable to the side of a corporate-branded Windows laptop.",
+      "correctAnswer": 2,
+      "imageAlt": "A personal tablet connected to a work laptop with a USB cable.",
+      "id": "ca-im-0096"
     }
   ],
   "mocks": []
