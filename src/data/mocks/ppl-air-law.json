@@ -1,0 +1,321 @@
+{
+  "version": 2,
+  "topic": "ppl-air-law",
+  "title": "PPL Air Law",
+  "category": "maritime-aviation",
+  "bank": [
+    {
+      "question": "In the UK, when does the period of 'Night' begin?",
+      "correctAnswer": 1,
+      "options": [
+        "At sunset",
+        "When the centre of the sun's disc is 6 degrees below the horizon",
+        "30 minutes after sunset",
+        "When the centre of the sun's disc is 12 degrees below the horizon"
+      ],
+      "explanation": "The SERA rules define the end of evening civil twilight as when the centre of the sun's disc is 6 degrees below the horizon.",
+      "type": "multiple_choice",
+      "id": "pal-mc-0001"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "Under SERA regulations, the Commander of the aircraft is responsible for the operation of the aircraft according to the Rules of the Air, whether they are manipulating the controls or not.",
+      "correctAnswer": 0,
+      "question": "Who is responsible for the operation of an aircraft in accordance with the Rules of the Air?",
+      "options": [
+        "The Commander",
+        "The Pilot Flying",
+        "The Owner of the aircraft",
+        "The Air Traffic Controller"
+      ],
+      "id": "pal-mc-0002"
+    },
+    {
+      "options": [
+        "The pilot may fly as long as they feel fit",
+        "The pilot may fly for up to 28 days after expiry",
+        "The pilot must not fly until they have a valid medical certificate",
+        "The pilot may fly provided a GP signs the logbook"
+      ],
+      "correctAnswer": 2,
+      "question": "If a pilot's Class 2 medical certificate has expired, what is their status regarding flying as Pilot in Command (PIC)?",
+      "type": "multiple_choice",
+      "explanation": "For a private pilot using a UK Part-FCL PPL, the medical certificate must be valid at the time the flight takes place. Flight without a valid medical is illegal.",
+      "id": "pal-mc-0003"
+    },
+    {
+      "question": "Unless necessary for take-off or landing, what is the minimum distance an aircraft must maintain from any person, vessel, vehicle, or structure?",
+      "correctAnswer": 3,
+      "options": [
+        "1,500 feet",
+        "1,000 feet",
+        "2,000 feet",
+        "500 feet"
+      ],
+      "explanation": "In Class G airspace, aircraft must avoid flying closer than 500ft to any person, vessel, vehicle, or structure, except for the purpose of landing or taking off.",
+      "type": "multiple_choice",
+      "id": "pal-mc-0004"
+    },
+    {
+      "options": [
+        "The aircraft on the right must give way",
+        "The aircraft which has the other on its right shall give way",
+        "Both aircraft must turn to the left",
+        "The faster aircraft must give way to the slower one"
+      ],
+      "correctAnswer": 1,
+      "question": "When two aircraft are converging at approximately the same altitude, which one must give way?",
+      "explanation": "In the UK, the standard 'Rules of the Air' regarding converging aircraft state that the aircraft with the other on its right shall give way.",
+      "type": "multiple_choice",
+      "id": "pal-mc-0005"
+    },
+    {
+      "explanation": "In a Class D Control Zone (CTR), it is mandatory for all aircraft to maintain a two-way radio communication with Air Traffic Control.",
+      "type": "multiple_choice",
+      "options": [
+        "Establish two-way radio communication with ATC",
+        "File an IFR flight plan",
+        "Ensure the aircraft is equipped with an autopilot",
+        "Maintain a minimum altitude of 2,500 feet"
+      ],
+      "correctAnswer": 0,
+      "question": "What is a requirement for a VFR flight wishing to enter Class D controlled airspace?",
+      "id": "pal-mc-0006"
+    },
+    {
+      "explanation": "A red flare or pyrotechnic sign fired from the ground signifies that the aircraft's permission to land has been cancelled and the pilot must not land.",
+      "type": "multiple_choice",
+      "options": [
+        "Continue approach and land with caution",
+        "The aerodrome is closed",
+        "Do not land for the time being",
+        "Land immediately on the nearest taxiway"
+      ],
+      "question": "While on final approach, you see a red pyrotechnic light fired from the ground. What does this indicate?",
+      "correctAnswer": 2,
+      "id": "pal-mc-0007"
+    },
+    {
+      "explanation": "Standard SERA VFR minima in Class G airspace at or below 3,000ft (or 1,000ft AGL) requires the pilot to remain clear of cloud and in sight of the surface.",
+      "type": "multiple_choice",
+      "options": [
+        "1,500m horizontal distance from cloud",
+        "1,000ft vertical distance from cloud",
+        "5km flight visibility and 1,500m from cloud",
+        "Clear of cloud and in sight of the surface"
+      ],
+      "correctAnswer": 3,
+      "question": "What are the VMC visibility and cloud distance requirements for a flight in Class G airspace at or below 3,000ft AMSL, flying at 140 knots or less?",
+      "id": "pal-mc-0008"
+    },
+    {
+      "options": [
+        "On all international flights",
+        "Only when the pilot is a student",
+        "Only if the aircraft is more than 10 years old",
+        "Never, photocopies are sufficient at the home airfield"
+      ],
+      "correctAnswer": 0,
+      "question": "When must the original Certificate of Airworthiness (or ARC) be carried on board an aircraft?",
+      "type": "multiple_choice",
+      "explanation": "The Certificate of Airworthiness (CofA) or Airworthiness Review Certificate (ARC) must be carried on board the aircraft during all international flights.",
+      "id": "pal-mc-0009"
+    },
+    {
+      "correctAnswer": 2,
+      "question": "If intercepted by a military aircraft, what is the meaning of the signal: 'Irregular flashing of all available lights' by the intercepted aircraft?",
+      "options": [
+        "Understood, I will follow you",
+        "Cannot comply with instructions",
+        "I am in distress",
+        "Descending for landing"
+      ],
+      "type": "multiple_choice",
+      "explanation": "An Interception involves another aircraft pulling up to your side; a series of irregular flashes of all available lights by the intercepted aircraft means 'I am in distress'.",
+      "id": "pal-mc-0010"
+    },
+    {
+      "explanation": "A steady red light directed at an aircraft in flight means 'Give way to other aircraft and continue circling'.",
+      "type": "multiple_choice",
+      "options": [
+        "Land immediately",
+        "Give way to other aircraft and continue circling",
+        "Aerodrome unsafe, do not land",
+        "Return for landing"
+      ],
+      "correctAnswer": 1,
+      "question": "What does a steady red light beam directed purely at your aircraft from the Control Tower while you are in flight mean?",
+      "id": "pal-mc-0011"
+    },
+    {
+      "correctAnswer": 3,
+      "question": "How many days of incapacity due to illness or injury require a pilot to notify the Authority?",
+      "options": [
+        "7 days",
+        "14 days",
+        "28 days",
+        "21 days"
+      ],
+      "explanation": "A pilot must notify the CAA if they suffer an injury or illness that prevents them from performing their duties for a period of 21 days or more.",
+      "type": "multiple_choice",
+      "id": "pal-mc-0012"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Alter course to the left",
+        "Alter course to the right",
+        "Climb above the other aircraft",
+        "Descend below the other aircraft"
+      ],
+      "correctAnswer": 1,
+      "explanation": "According to SERA, an aircraft being overtaken has the right-of-way, and the overtaking aircraft must keep out of the way by altering its heading to the right.",
+      "question": "When one aircraft is overtaking another, the overtaking aircraft must:",
+      "id": "pal-mc-0013"
+    },
+    {
+      "options": [
+        "Only if the weather is IFR",
+        "Only if the pilot chooses to use the service",
+        "Whenever the flight is to be conducted within controlled airspace",
+        "Only when operating above 10,000ft MSL"
+      ],
+      "type": "multiple_choice",
+      "explanation": "An Air Traffic Control Clearance is required for any flight intended to be conducted as a 'controlled flight' within controlled airspace.",
+      "question": "When is an Air Traffic Control (ATC) clearance required for a flight?",
+      "correctAnswer": 2,
+      "id": "pal-mc-0014"
+    },
+    {
+      "explanation": "ICAO Annex 2 and SERA state that aircraft on the water must keep clear of all vessels and avoid impeding their navigation.",
+      "question": "When two power-driven vessels are crossing, and one is an aircraft on the water, what is the rule?",
+      "correctAnswer": 0,
+      "options": [
+        "The aircraft must keep clear of all vessels and avoid impeding their navigation",
+        "The vessel must give way to the aircraft in all circumstances",
+        "The aircraft has right-of-way if it is on the step",
+        "Power-driven vessels always give way to aircraft"
+      ],
+      "type": "multiple_choice",
+      "id": "pal-mc-0015"
+    },
+    {
+      "explanation": "The SERA.5005(f) rule states that for VFR flight above 3,000ft AMSL, the cruising level shall be conducted at a flight level appropriate to the track as specified in the table of cruising levels.",
+      "question": "Which of the following flights must follow the 'Semi-Circular Rule' or Table of Cruising Levels?",
+      "correctAnswer": 3,
+      "options": [
+        "A gliding flight",
+        "A flight within a Military Operating Area",
+        "A flight at or below 2,000ft AGL",
+        "A VFR flight at or above 3,000ft AMSL"
+      ],
+      "type": "multiple_choice",
+      "id": "pal-mc-0016"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "The runway is currently closed to all traffic",
+        "Glider flying is in progress",
+        "Parachute dropping is in progress",
+        "Special VFR procedures are in force"
+      ],
+      "correctAnswer": 1,
+      "question": "What is the meaning of a double white cross displayed horizontally in the Signal Square?",
+      "explanation": "A double white cross displayed in the signal square signifies that the aerodrome is being used by gliders and that glider flights are in progress.",
+      "id": "pal-mc-0017"
+    },
+    {
+      "correctAnswer": 2,
+      "explanation": "For a private pilot, the logbook entry must be made no later than 7 days after the flight. For commercial flights, the period is shorter.",
+      "question": "In the UK, within what time period must a pilot make an entry in their personal flying logbook after a flight?",
+      "type": "multiple_choice",
+      "options": [
+        "Within 24 hours",
+        "Within 48 hours",
+        "As soon as practicable, but within 7 days",
+        "Within 30 days"
+      ],
+      "id": "pal-mc-0018"
+    },
+    {
+      "options": [
+        "Landings and take-offs are to be made on a runway only, but movement on the ground is not restricted to paved surfaces",
+        "The aerodrome is closed to all traffic",
+        "Right-hand circuits are in force",
+        "You should go around and wait for further instructions"
+      ],
+      "type": "multiple_choice",
+      "question": "A horizontal white dumb-bell with a black strip across each circular section, placed in a signal square, indicates:",
+      "explanation": "A white 'dumb-bell' symbol signifies that aircraft are required to land, take off and move only on the runways and taxiways.",
+      "correctAnswer": 0,
+      "id": "pal-mc-0019"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "500 feet above the highest obstacle within 600m",
+        "1,500 feet above the highest obstacle within 600m",
+        "2,000 feet above the highest obstacle within 600m",
+        "1,000 feet above the highest obstacle within 600m"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Except when necessary for take-off or landing, aircraft shall not fly over congested areas of cities or towns unless at a height allowing an emergency landing without undue hazard to persons or property, and never below 1,000ft.",
+      "question": "What is the minimum height an aircraft may fly over the congested area of a city, settlement, or town?",
+      "id": "pal-mc-0020"
+    },
+    {
+      "correctAnswer": 1,
+      "question": "What is the purpose of an Air Operator Certificate (AOC)?",
+      "explanation": "Article 11 of the Air Navigation Order states that a person must not fly an aircraft for the purpose of public transport or aerial work unless the operator has AOC. PPL holders fly private.",
+      "type": "multiple_choice",
+      "options": [
+        "To allow a pilot to carry passengers and share costs",
+        "To allow an operator to fly for the purpose of public transport",
+        "To permit a pilot to fly outside of UK airspace",
+        "To allow a flight school to conduct theoretical training only"
+      ],
+      "id": "pal-mc-0021"
+    },
+    {
+      "correctAnswer": 2,
+      "explanation": "The standard pressure setting of 1013.25 hPa (or mb) is used when flying at or above the Transition Altitude to ensure vertical separation between high-level traffic.",
+      "question": "When flying at or above the Transition Altitude, what pressure setting should be set on the altimeter?",
+      "type": "multiple_choice",
+      "options": [
+        "QFE",
+        "QNH",
+        "1013.25 hPa",
+        "The local regional pressure setting"
+      ],
+      "id": "pal-mc-0022"
+    },
+    {
+      "correctAnswer": 1,
+      "explanation": "According to UK ANO, the pilot in command must be satisfied that the aircraft is safe for the intended flight, including fuel, weight/balance, and equipment.",
+      "question": "Under the Air Navigation Order, who is responsible for ensuring the aircraft is safe for flight?",
+      "type": "multiple_choice",
+      "options": [
+        "The Registered Owner",
+        "The Pilot in Command (PIC)",
+        "The Chief Flying Instructor (CFI) of the club",
+        "The Licensed Engineer who signed the last inspection"
+      ],
+      "id": "pal-mc-0023"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Return for landing",
+        "Give way to other aircraft and continue circling",
+        "Land at this aerodrome immediately",
+        "You are cleared to land"
+      ],
+      "correctAnswer": 0,
+      "question": "What does a series of green flashes from the ground to an aircraft in flight mean?",
+      "explanation": "Series of green flashes from the ground to an aircraft in flight means 'Return for landing', usually followed by a steady green for permission to land.",
+      "id": "pal-mc-0024"
+    }
+  ],
+  "mocks": []
+}

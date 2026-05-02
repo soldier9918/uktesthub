@@ -6834,6 +6834,427 @@
       "type": "dropdown_blanks",
       "prompt": "Identify the minister responsible for the courts.",
       "id": "uls-db-0012"
+    },
+    {
+      "template": "Serious criminal cases, such as murder or robbery, are tried in the {{0}} by a judge and jury.",
+      "explanation": "The Crown Court handles serious criminal offences (indictable-only) and is where a judge sits with a jury.",
+      "prompt": "Identify the court responsible for serious criminal trials.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "options": [
+            "Magistrates' Court",
+            "Crown Court",
+            "County Court"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "id": "uls-db-0013"
+    },
+    {
+      "prompt": "Which court handles the majority of appeals against decisions made in the Crown Court?",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "Magistrates' Court",
+            "High Court",
+            "Court of Appeal famine",
+            "Supreme Court"
+          ]
+        }
+      ],
+      "template": "If a defendant wishes to appeal against a conviction or sentence from the Crown Court, their case is usually heard in the {{0}}.",
+      "explanation": "The Court of Appeal is the second most senior court in the UK and deals with appeals from both criminal and civil lower courts.",
+      "id": "uls-db-0014"
+    },
+    {
+      "template": "The legal professionals who generally handle most of the day-to-day legal work for individual and business clients are {{0}}.",
+      "explanation": "Solicitors are the primary point of contact for clients, though many now have advocacy rights to appear in higher courts.",
+      "prompt": "Identify the branch of the legal profession that typically deals directly with the public.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "options": [
+            "Solicitors",
+            "Barristers Barristers",
+            "Legal Executives"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "id": "uls-db-0015"
+    },
+    {
+      "explanation": "Parliament, consisting of the Commons, the Lords, and the Monarch, is the supreme law-making body.",
+      "template": "Under the UK constitution, the power to make and amend law is held by the {{0}}.",
+      "prompt": "Which branch of the state is responsible for passing new Acts?",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "Judiciary",
+            "Executive Executive",
+            "Legislature"
+          ]
+        }
+      ],
+      "id": "uls-db-0016"
+    },
+    {
+      "prompt": "What is the standard of proof in a civil case?",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "Beyond reasonable doubt",
+            "On the balance of probabilities",
+            "To a 90% certainty"
+          ]
+        }
+      ],
+      "template": "In civil proceedings, the claimant must prove their case {{0}}.",
+      "explanation": "Civil cases have a lower burden of proof than criminal cases, requiring only that the claim is more likely true than not.",
+      "id": "uls-db-0017"
+    },
+    {
+      "template": "The majority of cases in the Magistrates' Court are heard by {{0}}, who are advised on law by a legal clerk.",
+      "explanation": "Lay magistrates are volunteers from the community who do not need formal legal qualifications to hear minor criminal cases.",
+      "blanks": [
+        {
+          "options": [
+            "Lay magistrates",
+            "District judges",
+            "Recorders"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "type": "dropdown_blanks",
+      "prompt": "Identify the group of non-legally qualified people who hear cases in the Magistrates' Court.",
+      "id": "uls-db-0018"
+    },
+    {
+      "template": "The doctrine that no person or body can override or set aside an Act of Parliament is called {{0}}.",
+      "explanation": "Parliamentary Sovereignty is a cornerstone of the UK constitution, meaning Parliament can make or unmake any law.",
+      "blanks": [
+        {
+          "options": [
+            "Statutory Interpretation",
+            "Royal Prerogative",
+            "Parliamentary Sovereignty"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "prompt": "Which principle states that Parliament is the supreme legal authority?",
+      "type": "dropdown_blanks",
+      "id": "uls-db-0019"
+    },
+    {
+      "template": "The binding element of a judicial decision, which establishes the legal principle for future cases, is the {{0}}.",
+      "explanation": "The ratio decidendi is the legal reasoning behind a court's decision and is the part that creates binding precedent.",
+      "prompt": "Name the core part of a judgement that must be followed by lower courts.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "options": [
+            "Obiter dicta",
+            "Ratio decidendi",
+            "Stare decisis"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "id": "uls-db-0020"
+    },
+    {
+      "template": "Matters relating to equity, trusts, and corporate insolvency are primarily dealt with in the {{0}} of the High Court.",
+      "explanation": "The Chancery Division deals with specialists areas like company law, trusts, and probate.",
+      "type": "dropdown_blanks",
+      "prompt": "Which division of the High Court handles disputes regarding trusts and companies?",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "Chancery Division",
+            "Family Division",
+            "King's Bench Division"
+          ]
+        }
+      ],
+      "id": "uls-db-0021"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "Precedent Precedent",
+            "Common Law",
+            "Codified Constitution"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "type": "dropdown_blanks",
+      "prompt": "What term describes the nature of the UK's constitutional documents?",
+      "explanation": "Unlike many other countries, the UK's constitution is spread across various statutes, conventions, and case law rather than a single document.",
+      "template": "The UK is unusual because it does not have a single, written {{0}}.",
+      "id": "uls-db-0022"
+    },
+    {
+      "explanation": "Private members' bills are introduced by MPs or Lords who are not government ministers.",
+      "template": "A bill introduced into Parliament by an MP who is not a member of the Cabinet is known as a {{0}}.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "Public bill",
+            "Private member's bill",
+            "Peers' bill"
+          ]
+        }
+      ],
+      "type": "dropdown_blanks",
+      "prompt": "What is a bill introduced by an individual MP who is not part of the government?",
+      "id": "uls-db-0023"
+    },
+    {
+      "template": "The procedure by which the High Court oversees the exercise of power by public authorities is {{0}}.",
+      "explanation": "Judicial review allows the courts to check that public bodies have acted lawfully, fairly, and reasonably.",
+      "prompt": "What process is used to challenge the lawfulness of a decision made by a public body?",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "options": [
+            "Judicial review",
+            "Criminal appeal civil",
+            "Civil litigation"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "id": "uls-db-0024"
+    },
+    {
+      "type": "dropdown_blanks",
+      "template": "Under certain circumstances, an appeal may skip the Court of Appeal and go directly from the High Court to the Supreme Court via the {{0}}.",
+      "prompt": "Identify the procedure for skipping a court level in appeals.",
+      "explanation": "The 'leapfrog' procedure allows an appeal to go directly from the High Court to the Supreme Court, bypassing the Court of Appeal if it involves a point of law of general public importance.",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "Leapfrog procedure",
+            "Bypassing appeal",
+            "Direct referral",
+            "Fast-track motion"
+          ]
+        }
+      ],
+      "id": "uls-db-0025"
+    },
+    {
+      "explanation": "Mediation involves a neutral third party helping the parties reach a voluntary settlement, whereas arbitration involves a third party making a binding decision.",
+      "prompt": "Identify a common form of Alternative Dispute Resolution.",
+      "template": "A form of ADR where a neutral third party facilitates a discussion to help parties reach their own agreement is known as {{0}}.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "Arbitration",
+            "Mediation",
+            "Conciliation",
+            "Litigation"
+          ]
+        }
+      ],
+      "id": "uls-db-0026"
+    },
+    {
+      "type": "dropdown_blanks",
+      "template": "Most civil claims, such as small claims or contract disputes, are typically started and heard in the {{0}}.",
+      "explanation": "The County Court handles the majority of civil litigation in England and Wales, covering matters like debt recovery and personal injury.",
+      "prompt": "Which court handles the majority of civil cases?",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "Family Court",
+            "High Court",
+            "County Court",
+            "Magistrates' Court"
+          ]
+        }
+      ],
+      "id": "uls-db-0027"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "Obiter dicta",
+            "Ratio decidendi",
+            "Stare decisis",
+            "Per incuriam"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "prompt": "What are the non-binding parts of a judicial judgement called?",
+      "explanation": "Obiter dicta are remarks made 'by the way' which are persuasive but do not form the binding part of the precedent.",
+      "template": "Comments made by a judge within a judgement that are not central to the decision and do not create binding precedent are known as {{0}}.",
+      "type": "dropdown_blanks",
+      "id": "uls-db-0028"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "Public Bill",
+            "Green Paper",
+            "White Paper",
+            "Act of Parliament"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "type": "dropdown_blanks",
+      "template": "Before a Bill is introduced, the government often issues a {{0}} to set out proposals for discussion and consultation.",
+      "explanation": "A Green Paper is a consultative document that allows interested parties to comment on proposed law changes before they are finalised.",
+      "prompt": "What is the name of a preliminary consultation document?",
+      "id": "uls-db-0029"
+    },
+    {
+      "explanation": "Tort law deals with civil wrongs, such as negligence or nuisance, and aims to compensate those who have suffered harm.",
+      "prompt": "Identify the area of law concerning civil wrongs.",
+      "template": "The branch of law that deals with civil wrongs and compensation for harm caused by one person to another is called {{0}}.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "options": [
+            "Constitutional law",
+            "Criminal law",
+            "Contract law",
+            "Tort lawBase"
+          ],
+          "correctIndex": 3
+        }
+      ],
+      "id": "uls-db-0030"
+    },
+    {
+      "prompt": "Which body is responsible for selecting judges?",
+      "explanation": "The JAC was established in 2006 to ensure that judges are appointed on merit through an open and transparent process.",
+      "template": "Since the Constitutional Reform Act 2005, the selection of judges in England and Wales is the responsibility of {{0}}.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "options": [
+            "The Monarch",
+            "The Bar Council Trail",
+            "The Judicial Appointments Commission",
+            "The Law Society"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "id": "uls-db-0031"
+    },
+    {
+      "template": "In a criminal trial, the prosecution bears the burden of proving the defendant's guilt {{0}}.",
+      "prompt": "What is the standard of proof in a criminal trial?",
+      "explanation": "In criminal cases, the prosecution must meet the high standard of 'beyond reasonable doubt' to ensure the defendant's guilt.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "options": [
+            "Beyond reasonable doubt",
+            "On the balance of probabilitiesBase",
+            "With absolute certainty",
+            "On a substantial basis"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "id": "uls-db-0032"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "Supreme Court Justice",
+            "Circuit Judge",
+            "Recorder",
+            "District Judge"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "template": "A mid-level judge who primarily hears cases in the County Court and Crown Court is known as a {{0}}.",
+      "explanation": "Circuit Judges sit in the County Court and Crown Court; they are more senior than District Judges but less senior than High Court Judges.",
+      "prompt": "Identify the type of judge who typically sits in the County Court.",
+      "type": "dropdown_blanks",
+      "id": "uls-db-0033"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "The Lord Chancellor",
+            "The Attorney General",
+            "The Director of Public Prosecutions",
+            "The Solicitor General"
+          ],
+          "correctIndex": 3
+        }
+      ],
+      "template": "The deputy to the Attorney General, who provides legal advice to the government and oversees the Crown Prosecution Service, is the {{0}}.",
+      "prompt": "Identify a senior Law Officer of the Crown.",
+      "explanation": "The Solicitor General is the deputy to the Attorney General, both of whom act as the government's chief legal advisors.",
+      "type": "dropdown_blanks",
+      "id": "uls-db-0034"
+    },
+    {
+      "explanation": "A Consolidation Act brings together several existing statutes on the same subject into one single Act without changing the law.",
+      "prompt": "What is an Act that combines previous legislation?",
+      "template": "An Act of Parliament that brings together several previous statutes into one single new Act is called a {{0}}.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "Consolidation Act",
+            "Repealing Act",
+            "Codifying Act",
+            "Enabling Act"
+          ]
+        }
+      ],
+      "id": "uls-db-0035"
+    },
+    {
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "Solicitors-advocates",
+            "Legal executives",
+            "Pupils",
+            "Legal apprentices"
+          ]
+        }
+      ],
+      "type": "dropdown_blanks",
+      "template": "To qualify as a barrister, individuals must undergo a year of practical training known as {{0}}.",
+      "explanation": "Aspiring barristers must complete a period of practical training in chambers, known as pupillage, under the supervision of an experienced barrister.",
+      "prompt": "What is the training period for a barrister called?",
+      "id": "uls-db-0036"
     }
   ],
   "mocks": []

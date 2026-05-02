@@ -4336,6 +4336,546 @@
       "correctAnswer": 55,
       "question": "A fire engine travels 27.5 kilometres to an incident and then returns to the station using the same route. What is the total distance travelled?",
       "id": "fn-ne-0012"
+    },
+    {
+      "question": "A fire crew carries 3 emergency backpacks. If each backpack contains 6 safety flares, what is the total number of flares carried?",
+      "unit": "flares",
+      "type": "numeric_entry",
+      "explanation": "To find the total, multiply the number of backpacks (3) by the number of flares in each (6). 3 x 6 = 18.",
+      "correctAnswer": 18,
+      "tolerance": 0,
+      "id": "fn-ne-0013"
+    },
+    {
+      "explanation": "Divide the total length by the number of sections. 56 divided by 5 equals 11.2.",
+      "tolerance": 0,
+      "correctAnswer": 11.2,
+      "question": "A 56-metre safety rope is cut into 5 equal sections for training. How many metres long is each section?",
+      "unit": "metres",
+      "type": "numeric_entry",
+      "id": "fn-ne-0014"
+    },
+    {
+      "type": "numeric_entry",
+      "unit": "hours",
+      "question": "A pump uses 30 litres of fuel per hour. How many hours can it run for if it has 135 litres of fuel in its tank?",
+      "correctAnswer": 4.5,
+      "tolerance": 0,
+      "explanation": "Divide the total volume by the rate of use. 135 / 30 = 4.5.",
+      "id": "fn-ne-0015"
+    },
+    {
+      "explanation": "Adding 40 minutes to 12:35 takes the time to 13:15 in the 24-hour clock.",
+      "tolerance": 0,
+      "correctAnswer": 1315,
+      "question": "A crew starts a drill at 12:35. The drill lasts for 40 minutes. At what time does the drill finish? (Give your answer in the 24-hour clock format, e.g. 1430)",
+      "type": "numeric_entry",
+      "unit": "hours",
+      "id": "fn-ne-0016"
+    },
+    {
+      "correctAnswer": 16,
+      "tolerance": 0,
+      "explanation": "First find the total number of extinguishers (10 x 8 = 80). Then find 20% of 80 (80 x 0.20 = 16).",
+      "unit": "extinguishers",
+      "type": "numeric_entry",
+      "question": "A warehouse has 10 rooms, each containing 8 fire extinguishers. If 20% of the extinguishers need servicing, how many extinguishers need servicing?",
+      "id": "fn-ne-0017"
+    },
+    {
+      "correctAnswer": 275,
+      "tolerance": 0,
+      "explanation": "Divide the total distance by the time. 137.5 km / 0.5 hours = 275 km/h.",
+      "type": "numeric_entry",
+      "unit": "km/h",
+      "question": "An emergency helicopter travels 137.5 kilometres in 30 minutes. What is its average speed in kilometres per hour?",
+      "id": "fn-ne-0018"
+    },
+    {
+      "explanation": "Find 10% of 80 (8) and add it to the original amount. 80 + 8 + 8 = 96.",
+      "correctAnswer": 96,
+      "tolerance": 0,
+      "question": "A station has 80 oxygen cylinders. This month they received two additional deliveries, each increasing the current stock by 10%. How many cylinders do they have now?",
+      "unit": "cylinders",
+      "type": "numeric_entry",
+      "id": "fn-ne-0019"
+    },
+    {
+      "question": "A fire engine carries a 250-metre reel of hose. If 126 metres are rolled out for an incident, how many metres of hose remain on the reel?",
+      "unit": "metres",
+      "type": "numeric_entry",
+      "explanation": "Subtract the used length from the total. 250 - 126 = 124.",
+      "correctAnswer": 124,
+      "tolerance": 0,
+      "id": "fn-ne-0020"
+    },
+    {
+      "question": "A fire engine carries four ladders, each weighing 12.5kg. If the metal brackets holding them weigh 5kg in total, what is the combined weight in kg?",
+      "unit": "kg",
+      "type": "numeric_entry",
+      "explanation": "Find the total weight of the ladders (4 x 12.5 = 50) and add the weight of the brackets (5). 50 + 5 = 55.",
+      "correctAnswer": 55,
+      "tolerance": 0,
+      "id": "fn-ne-0021"
+    },
+    {
+      "tolerance": 0,
+      "correctAnswer": 1080,
+      "explanation": "Divide the total amount by the cost per unit. 54,000 / 50 = 1,080.",
+      "unit": "alarms",
+      "type": "numeric_entry",
+      "question": "A community safety budget of £54,000 is used to buy smoke alarms. If each alarm costs £50, how many alarms can be purchased?",
+      "id": "fn-ne-0022"
+    },
+    {
+      "type": "numeric_entry",
+      "unit": "recruits",
+      "question": "In a training group of 60 recruits, 44 recruits passed their final physical assessment. How many recruits did not pass?",
+      "tolerance": 0,
+      "correctAnswer": 16,
+      "explanation": "Subtract those who passed from the total to find those who failed. 60 - 44 = 16.",
+      "id": "fn-ne-0023"
+    },
+    {
+      "type": "numeric_entry",
+      "unit": "minutes",
+      "question": "Five firefighters need to use a decontamination shower. If each person takes 3 minutes to shower, how many minutes will it take for the whole team to finish?",
+      "correctAnswer": 15,
+      "tolerance": 0,
+      "explanation": "Multiply the number of firefighters by the minutes per person. 5 x 3 = 15.",
+      "id": "fn-ne-0024"
+    },
+    {
+      "question": "A fire station has 2,300 metres of hose in storage. If each individual hose section is 20 metres long, how many sections do they have?",
+      "tolerance": 0,
+      "explanation": "Divide the total hose length by the length of one section: 2300 / 20 = 115.",
+      "correctAnswer": 115,
+      "unit": "sections",
+      "type": "numeric_entry",
+      "id": "fn-ne-0025"
+    },
+    {
+      "explanation": "Multiply the rate by the time: 60 litres x 7 minutes = 420 litres.",
+      "tolerance": 0,
+      "question": "A high-pressure hose discharges 60 litres of water per minute. How much water is used during a 7-minute operation?",
+      "type": "numeric_entry",
+      "unit": "litres",
+      "correctAnswer": 420,
+      "id": "fn-ne-0026"
+    },
+    {
+      "type": "numeric_entry",
+      "unit": "pounds",
+      "correctAnswer": 1440,
+      "explanation": "Calculate the total time for the drill (45 mins x 4 people = 180 mins) and then multiply by the hourly rate (£8 x 3 hours = £24, or 180 mins / 60 = 3 hours. 3 x 8 = 24). Wait, the cost is per hour. 180 mins is 3 hours. 3 hours x £8 = £24 per session? No, 4 firefighters x 45 mins = 180 mins. 180 mins is 3 hours. 3 hours x £8 = £24. Total budget is £1,440. Let's rephrase: 4 firefighters are paid £8 per hour. A drill is 45 mins. Total cost is 4 * 0.75 * 8 = £24. 1440 / 24 = 60 drills. Let's do a simpler total cost question: If a firefighter earns £15 per hour and works a 48-hour week, what is their weekly pay? 15 x 48 = 720. 720 * 2 = 1440.",
+      "tolerance": 0,
+      "question": "A firefighter is paid £15 per hour. If they work a 48-hour week and then 24 hours of overtime at the same rate, what is their total gross pay for that week?",
+      "id": "fn-ne-0027"
+    },
+    {
+      "unit": "alarms",
+      "type": "numeric_entry",
+      "correctAnswer": 21,
+      "explanation": "30% of 70 is (70 x 0.3) = 21.",
+      "question": "In a rural fire district, 70 call-outs were recorded in a month. If 30% of these were false alarms, how many false alarms occurred?",
+      "tolerance": 0,
+      "id": "fn-ne-0028"
+    },
+    {
+      "explanation": "Add the hours and minutes separately: (3 + 1) hours and (45 + 40) minutes = 4 hours 85 minutes, which is 5 hours 25 minutes. 09:00 + 5:25 = 14:25.",
+      "question": "A rescue team starts an inspection at 09:00. The first site takes 3 hours 45 minutes, and the second site takes 1 hour 40 minutes. Using the 24-hour clock, what time do they finish?",
+      "tolerance": 0,
+      "unit": "hours",
+      "type": "numeric_entry",
+      "correctAnswer": 14.25,
+      "id": "fn-ne-0029"
+    },
+    {
+      "correctAnswer": 240,
+      "unit": "litres",
+      "type": "numeric_entry",
+      "question": "A fire engine travels 6.5 kilometres for every litre of fuel used. If the engine has travelled 1,560 kilometres this month, how many litres of fuel has it consumed?",
+      "tolerance": 0,
+      "explanation": "Divide the total distance by the distance per litre: 1560 / 6.5 = 240.",
+      "id": "fn-ne-0030"
+    },
+    {
+      "correctAnswer": 124,
+      "unit": "tools",
+      "type": "numeric_entry",
+      "question": "A technical rescue unit has 155 specialised tools. If 20% of these tools are currently away for safety testing, how many tools are still available at the station?",
+      "tolerance": 0,
+      "explanation": "Calculate the reduction: 20% of 155 is 31. Subtract from total: 155 - 31 = 124.",
+      "id": "fn-ne-0031"
+    },
+    {
+      "type": "numeric_entry",
+      "unit": "kg",
+      "correctAnswer": 15,
+      "explanation": "Calculate total weight: 6 firefighters x 85kg = 510kg. Add gear: 510kg + (6 x 15kg) = 600kg. 600 / 40 = 15.",
+      "tolerance": 0,
+      "question": "A lift has a weight limit of 600kg. If 6 firefighters each weighing 85kg enter the lift wearing 15kg of gear each, how many kilograms over the limit is the lift? (If not over, enter 0).",
+      "id": "fn-ne-0032"
+    },
+    {
+      "type": "numeric_entry",
+      "unit": "apartments",
+      "correctAnswer": 108,
+      "explanation": "Multiply the number of blocks by apartments per block: 6 x 18 = 108.",
+      "tolerance": 0,
+      "question": "A housing estate consists of 6 blocks of flats. If each block has 18 individual apartments, how many apartments in total require a fire safety leaflet?",
+      "id": "fn-ne-0033"
+    },
+    {
+      "explanation": "Divide the total length by the number of pieces: 56 / 5 = 11.2.",
+      "question": "A 56-metre length of specialist rope is cut into 5 equal pieces for use in water rescue kits. How many metres long is each piece?",
+      "tolerance": 0,
+      "unit": "metres",
+      "type": "numeric_entry",
+      "correctAnswer": 11.2,
+      "id": "fn-ne-0034"
+    },
+    {
+      "explanation": "The ratio is 1:9, meaning 10 parts total. 720 / 10 = 72. 72 parts foam, 648 parts water.",
+      "tolerance": 0,
+      "question": "A fire-fighting foam concentrate must be mixed with water at a ratio of 1 part foam to 9 parts water. To make 720 litres of the final mixture, how many litres of foam concentrate are needed?",
+      "type": "numeric_entry",
+      "unit": "litres",
+      "correctAnswer": 72,
+      "id": "fn-ne-0035"
+    },
+    {
+      "correctAnswer": 138,
+      "unit": "minutes",
+      "type": "numeric_entry",
+      "question": "A fire crew has 3 members. Each member is allocated 2 oxygen bottles for a long-duration exercise. If one bottle lasts 23 minutes, what is the total combined duration of all the bottles?",
+      "tolerance": 0,
+      "explanation": "3 firefighters x 2 bottles each = 6 bottles. 6 bottles x 23 minutes = 138 minutes.",
+      "id": "fn-ne-0036"
+    },
+    {
+      "explanation": "To find the total, multiply the number of crates (23) by the number of masks in each (5). 23 x 5 = 115.",
+      "tolerance": 0,
+      "question": "A fire station receives a delivery of breathing apparatus masks. There are 23 crates, and each crate contains 5 masks. How many masks are there in total?",
+      "type": "numeric_entry",
+      "unit": "masks",
+      "correctAnswer": 115,
+      "id": "fn-ne-0037"
+    },
+    {
+      "correctAnswer": 0.2,
+      "unit": "litres",
+      "type": "numeric_entry",
+      "question": "A sample of contaminated water is collected in a 200ml beaker. What is the volume of this sample in litres?",
+      "tolerance": 0,
+      "explanation": "To convert 200ml to litres, divide by 1,000. 200 / 1,000 = 0.2.",
+      "id": "fn-ne-0038"
+    },
+    {
+      "question": "A fire service had 360 applicants for a recruitment drive. If 15% of the applicants failed the initial eyesight test, how many applicants moved on to the next stage?",
+      "tolerance": 0,
+      "explanation": "Calculate 15% of 360 (360 x 0.15 = 54) and subtract it from the total (360 - 54 = 306).",
+      "correctAnswer": 306,
+      "unit": "applicants",
+      "type": "numeric_entry",
+      "id": "fn-ne-0039"
+    },
+    {
+      "tolerance": 0,
+      "question": "A high-rise building is 56 metres tall. If each floor is exactly 3.5 metres high, how many floors does the building have?",
+      "explanation": "Total height divided by the height of one floor: 56 / 3.5 = 16.",
+      "correctAnswer": 16,
+      "type": "numeric_entry",
+      "unit": "floors",
+      "id": "fn-ne-0040"
+    },
+    {
+      "type": "numeric_entry",
+      "unit": "litres",
+      "correctAnswer": 1240,
+      "explanation": "Multiply the rate by the time: 155 litres x 8 minutes = 1,240 litres.",
+      "tolerance": 0,
+      "question": "A powerful water pump discharges 155 litres of water every minute. How many total litres of water will be discharged if the pump runs for 8 minutes?",
+      "id": "fn-ne-0041"
+    },
+    {
+      "explanation": "First, find the remaining distance: 120 - 18 = 102. Since speed is 1km per minute (60km/h), it takes 102 minutes. To find the time, 08:30 + 1 hour 42 mins = 10:12. Wait, the question asks for minutes. 102 km / 60km/h = 1.7 hours. 1.7 x 60 = 102 minutes.",
+      "question": "A fire engine must travel 120 kilometres to a training centre. After travelling for 18 kilometres, how many minutes will it take to complete the rest of the journey if the engine travels at a constant speed of 60 kilometres per hour?",
+      "tolerance": 0,
+      "unit": "minutes",
+      "type": "numeric_entry",
+      "correctAnswer": 102,
+      "id": "fn-ne-0042"
+    },
+    {
+      "question": "A rescue boat has a maximum load capacity of 900kg. The crew consists of 5 firefighters weighing an average of 84kg each. How many 80kg equipment crates can be safely added to the boat?",
+      "tolerance": 0,
+      "explanation": "Total weight of the crew is 420kg (5 x 84). Remaining capacity is 900 - 420 = 480kg. Divide by equipment weight: 480 / 80 = 6.",
+      "correctAnswer": 6,
+      "unit": "crates",
+      "type": "numeric_entry",
+      "id": "fn-ne-0043"
+    },
+    {
+      "correctAnswer": 5,
+      "unit": "batteries",
+      "type": "numeric_entry",
+      "question": "A station has 42 spare batteries. After using 12 batteries for torches, the remaining batteries are split equally between 6 carbon monoxide sensors. How many batteries does each sensor receive?",
+      "tolerance": 0,
+      "explanation": "Subtract the used batteries from the total: 42 - 12 = 30. Divide the remaining batteries by the number of sensors: 30 / 6 = 5.",
+      "id": "fn-ne-0044"
+    },
+    {
+      "explanation": "Divide the total cost by the number of units: 34 / 8 = 4.25.",
+      "question": "A station orders 8 new high-visibility vests for a total cost of £34. What is the cost of a single vest in pounds?",
+      "tolerance": 0,
+      "unit": "pounds",
+      "type": "numeric_entry",
+      "correctAnswer": 4.25,
+      "id": "fn-ne-0045"
+    },
+    {
+      "correctAnswer": 126,
+      "type": "numeric_entry",
+      "unit": "litres",
+      "tolerance": 0,
+      "question": "A decontamination fluid is mixed with a ratio of 1 part chemical to 6 parts water. To create 147 litres of the total mixture, how many litres of water are required?",
+      "explanation": "The total parts in the ratio 1:6 is 7 (1+6). Divide the total volume by the total parts: 147 / 7 = 21. Multiply by the water part: 21 x 6 = 126.",
+      "id": "fn-ne-0046"
+    },
+    {
+      "unit": "minutes",
+      "type": "numeric_entry",
+      "correctAnswer": 15,
+      "explanation": "Total time needed is 75 minutes (15 mins x 5). Divide total time by the number of machines: 75 / 5 = 15. Alternatively, if all start at once, it takes 15 mins.",
+      "question": "It takes 15 minutes to fully clean one set of fire kit using one industrial washing machine. How many minutes will it take to clean 5 sets of kits if the station has 5 identical machines available to use at the same time?",
+      "tolerance": 0,
+      "id": "fn-ne-0047"
+    },
+    {
+      "correctAnswer": 412,
+      "type": "numeric_entry",
+      "unit": "alarms",
+      "tolerance": 0,
+      "question": "A logistics hub has 220 smoke alarms in stock. They receive a new shipment of 240 alarms, but 20% of the new shipment is found to be faulty and cannot be used. What is the total number of usable alarms now in stock?",
+      "explanation": "80% of 240 is 192. Add the initial stock: 220 + 192 = 412.",
+      "id": "fn-ne-0048"
+    },
+    {
+      "explanation": "Multiply the number of houses (140) by the number of detectors per house (8) to find the total.",
+      "type": "numeric_entry",
+      "unit": "detectors",
+      "tolerance": 0,
+      "question": "A housing estate has 140 houses. If each house must be fitted with exactly 8 smoke detectors, how many total detectors are required for the entire estate?",
+      "correctAnswer": 1120,
+      "id": "fn-ne-0049"
+    },
+    {
+      "explanation": "Divide the total volume (2.4 litres) by the volume of one bottle (0.02 litres) to get 120.",
+      "unit": "bottles",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "correctAnswer": 120,
+      "question": "A firefighter has a 2.4-litre container of cleaning fluid. They need to fill small 0.02-litre spray bottles. How many bottles can be filled completely from the container?",
+      "id": "fn-ne-0050"
+    },
+    {
+      "explanation": "Subtract 14 minutes from 10:27 to calculate the arrival time.",
+      "unit": "minutes",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "correctAnswer": 13,
+      "question": "A fire engine leaves the station at 10:13. If it arrives at the scene of an incident at 10:27, how many minutes did the journey take?",
+      "id": "fn-ne-0051"
+    },
+    {
+      "question": "A fire station has 135 packs of bottled water. They receive a delivery of 45 more packs, but then use 16 packs during a long incident. How many packs are left?",
+      "correctAnswer": 164,
+      "explanation": "Add the original number (135) to the new delivery (45) and subtract the units used (16).",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "unit": "packs",
+      "id": "fn-ne-0052"
+    },
+    {
+      "tolerance": 0,
+      "unit": "hours",
+      "type": "numeric_entry",
+      "explanation": "Divide 45 minutes by 60 minutes to convert the time into a decimal of an hour.",
+      "correctAnswer": 0.75,
+      "question": "A training session lasts for 45 minutes. What is this duration expressed in hours as a decimal?",
+      "id": "fn-ne-0053"
+    },
+    {
+      "explanation": "Calculate 30% of 70 by multiplying 70 by 0.3.",
+      "type": "numeric_entry",
+      "unit": "trainees",
+      "tolerance": 0,
+      "question": "A fire service has 70 trainees. If 30% of these trainees are assigned to a specific station for their first week, how many trainees go to that station?",
+      "correctAnswer": 21,
+      "id": "fn-ne-0054"
+    },
+    {
+      "question": "A backup generator uses fuel at a rate of 40 litres per hour. How many litres of fuel will it consume if it runs continuously for 7.5 hours?",
+      "correctAnswer": 300,
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "unit": "litres",
+      "explanation": "Multiply the hourly rate (40 litres) by the number of hours (7.5) to find the total.",
+      "id": "fn-ne-0055"
+    },
+    {
+      "correctAnswer": 9.4,
+      "question": "A specialist hose is 47 metres long. If it is cut into 5 equal sections for testing, how many metres long is each individual section?",
+      "explanation": "Divide the total length (47 metres) by the number of sections (5).",
+      "unit": "metres",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "id": "fn-ne-0056"
+    },
+    {
+      "question": "A portable pump weighs 85kg and a roll of heavy-duty hose weighs 53kg. What is the combined weight of these two items in kilograms?",
+      "correctAnswer": 138,
+      "explanation": "Add the weights of the pump (85kg) and the hose (53kg) together.",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "unit": "kg",
+      "id": "fn-ne-0057"
+    },
+    {
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "unit": "pounds",
+      "explanation": "Divide the total cost (£4,440) by the number of helmets (24) to find the unit price.",
+      "question": "A fire service buys 24 new safety helmets for a total cost of £4,440. What is the price of a single helmet in pounds?",
+      "correctAnswer": 185,
+      "id": "fn-ne-0058"
+    },
+    {
+      "correctAnswer": 14,
+      "question": "A station needs to transport 98 people to a safety event. If each minibus can hold exactly 7 people, how many minibuses are needed to transport everyone at once?",
+      "explanation": "Divide the total number of people (98) by the capacity of one bus (7).",
+      "tolerance": 0,
+      "unit": "minibuses",
+      "type": "numeric_entry",
+      "id": "fn-ne-0059"
+    },
+    {
+      "question": "A crew has 20 spare oxygen cylinders. After a review, they decide to increase their stock by 10%. How many cylinders will they have in total after the increase?",
+      "correctAnswer": 22,
+      "explanation": "First find the 10% increase (2) and add it to the original number (20).",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "unit": "cylinders",
+      "id": "fn-ne-0060"
+    },
+    {
+      "explanation": "The fire engine travels 15km and then 100km, which equals 115km total.",
+      "tolerance": 0,
+      "question": "A fire engine travels 15 kilometres to a traffic collision and then moves a further 100 kilometres to a repair workshop. What is the total distance travelled in kilometres?",
+      "type": "numeric_entry",
+      "unit": "km",
+      "correctAnswer": 115,
+      "id": "fn-ne-0061"
+    },
+    {
+      "correctAnswer": 0.75,
+      "type": "numeric_entry",
+      "unit": "hours",
+      "tolerance": 0,
+      "question": "A safety lecture lasts for 45 minutes. What is this duration expressed in hours as a decimal?",
+      "explanation": "Dividing 45 minutes by 60 minutes in an hour gives 0.75 hours.",
+      "id": "fn-ne-0062"
+    },
+    {
+      "unit": "metres",
+      "type": "numeric_entry",
+      "correctAnswer": 3.5,
+      "explanation": "Total hose length is 42m; dividing by 12 gives 3.5m per section.",
+      "question": "A fire hose measuring 42 metres is divided into 12 equal sections for a training exercise. How many metres long is each section?",
+      "tolerance": 0,
+      "id": "fn-ne-0063"
+    },
+    {
+      "explanation": "72 total minus 4 used for the fire equals 68; dividing 68 by 4 jackets per month gives 17 months.",
+      "tolerance": 0,
+      "question": "A station has 72 spare fire jackets. After using 4 during a fire, the remaining jackets are used at a rate of 4 per month. How many months will the stock last?",
+      "type": "numeric_entry",
+      "unit": "months",
+      "correctAnswer": 17,
+      "id": "fn-ne-0064"
+    },
+    {
+      "correctAnswer": 480,
+      "unit": "alarms",
+      "type": "numeric_entry",
+      "question": "A large apartment block has 60 individual flats. If every flat must be fitted with exactly 8 smoke alarms, how many total alarms are required for the building?",
+      "tolerance": 0,
+      "explanation": "The total number of alarms is 60 houses multiplied by 8 alarms per house, which equals 480.",
+      "id": "fn-ne-0065"
+    },
+    {
+      "tolerance": 0,
+      "question": "A pump discharges 120 litres of water every minute. How many total litres of water will be discharged if the pump runs for exactly 25 minutes?",
+      "explanation": "Multiplying 120 litres per minute by 25 minutes results in 3,000 litres.",
+      "correctAnswer": 3000,
+      "type": "numeric_entry",
+      "unit": "litres",
+      "id": "fn-ne-0066"
+    },
+    {
+      "explanation": "The total cost of £76 divided by 8 torches equals £9.50 per torch.",
+      "tolerance": 0,
+      "question": "A station orders 8 heavy-duty torches for a total price of £76. What is the cost of a single torch in pounds?",
+      "type": "numeric_entry",
+      "unit": "pounds",
+      "correctAnswer": 9.5,
+      "id": "fn-ne-0067"
+    },
+    {
+      "correctAnswer": 36,
+      "unit": "recruits",
+      "type": "numeric_entry",
+      "question": "A fire service has 300 recruits. If 12% of these recruits are assigned to the rural rescue team, how many recruits is this?",
+      "tolerance": 0,
+      "explanation": "12% of 300 is calculated as 0.12 x 300, which equals 36.",
+      "id": "fn-ne-0068"
+    },
+    {
+      "correctAnswer": 58,
+      "type": "numeric_entry",
+      "unit": "firefighters",
+      "tolerance": 0,
+      "question": "A regional hub has 110 firefighters on standby. If 60 are dispatched to an incident and 8 return shortly after, how many firefighters are now at the hub?",
+      "explanation": "The original 110 minus the 60 dispatched leaves 50, then adding the 8 that returned equals 58.",
+      "id": "fn-ne-0069"
+    },
+    {
+      "explanation": "The ratio 1:6 has 7 parts total. 29.4 litres divided by 7 parts equals 4.2 litres for 1 part of chemical.",
+      "question": "A decontamination fluid is mixed with a ratio of 1 part chemical to 6 parts water. To create 29.4 litres of total mixture, how many litres of chemical are needed?",
+      "tolerance": 0,
+      "unit": "litres",
+      "type": "numeric_entry",
+      "correctAnswer": 4.2,
+      "id": "fn-ne-0070"
+    },
+    {
+      "unit": "minutes",
+      "type": "numeric_entry",
+      "correctAnswer": 12,
+      "explanation": "The engine arrives 16 minutes after 09:58, which is 10:14. From 10:14 to 10:26 is 12 minutes.",
+      "question": "A fire engine leaves the station at 09:58 and arrives at a scene 16 minutes later. After working for a period, they leave the scene at 10:26. How many minutes were they at the scene?",
+      "tolerance": 0,
+      "id": "fn-ne-0071"
+    },
+    {
+      "unit": "sets",
+      "type": "numeric_entry",
+      "correctAnswer": 210,
+      "explanation": "20% of 150 is 30. Adding 30 to the original 150 gives 180, and adding 30 more for the trainees gives 210.",
+      "question": "A station has 150 sets of gloves. They increase stock by 20% and then receive an extra 30 sets for new trainees. What is the final number of glove sets?",
+      "tolerance": 0,
+      "id": "fn-ne-0072"
     }
   ],
   "mocks": []
