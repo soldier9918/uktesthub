@@ -269,7 +269,7 @@ function rawToQuestion(raw: RawQuestion, idx: number): Question {
       };
     }
     case "image-question": {
-      const r = raw as RawImage & { imageDescription?: string };
+      const r = raw as RawImage;
       // No image URL — fold the description into the question text so the
       // question is self-contained instead of misleadingly referring to a
       // missing image.
