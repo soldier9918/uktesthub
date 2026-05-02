@@ -4657,6 +4657,644 @@
       "question": "Which of the following describes 'effective communication' when dealing with a member of the public?",
       "explanation": "Effective communication involves adapting your language and style to suit the person you are speaking with, such as a child or a person in distress.",
       "id": "pp-mc-0358"
+    },
+    {
+      "unit": "lockers",
+      "type": "numeric_entry",
+      "explanation": "By adding 5 to the index of 9, the total number of items in the locker is 14.",
+      "question": "A police officer checks a row of evidence lockers. If locker 9 is the 5th locker from the end of the row, how many lockers are there in total?",
+      "correctAnswer": 14,
+      "tolerance": 0,
+      "id": "pp-ne-0001"
+    },
+    {
+      "correctAnswer": 300,
+      "tolerance": 0,
+      "explanation": "Dividing the total cost of £3,600 by 12 months results in a monthly cost of £300.",
+      "question": "A police station leases a patrol vehicle for £3,600 per year. What is the monthly cost of this lease?",
+      "unit": "pounds",
+      "type": "numeric_entry",
+      "id": "pp-ne-0002"
+    },
+    {
+      "unit": "officers",
+      "type": "numeric_entry",
+      "correctAnswer": 32,
+      "tolerance": 0,
+      "question": "A response team has 20 officers. They are joined by a task force of 12 additional officers for a raid. How many officers are now on the team?",
+      "explanation": "Adding the 20 original officers to the 12 new recruits equals a total of 32 officers.",
+      "id": "pp-ne-0003"
+    },
+    {
+      "explanation": "Multiply 14 miles by 0.8 to find that the officer has completed 11.2 miles of their patrol.",
+      "question": "An officer is tasked with a 14-mile patrol route. If they have completed 80% of the route, how many miles have they travelled?",
+      "correctAnswer": 11.2,
+      "tolerance": 0,
+      "unit": "miles",
+      "type": "numeric_entry",
+      "id": "pp-ne-0004"
+    },
+    {
+      "unit": "minutes",
+      "type": "numeric_entry",
+      "explanation": "Subtracting the 42 minutes spent on the call from the 60 minutes in an hour leaves 18 minutes.",
+      "question": "A 999 call handler spends 42 minutes on a single emergency call. Out of one hour, how many minutes do they have remaining for other tasks?",
+      "correctAnswer": 18,
+      "tolerance": 0,
+      "id": "pp-ne-0005"
+    },
+    {
+      "type": "numeric_entry",
+      "unit": "minutes",
+      "question": "A transport van travels at an average speed of 40 mph. How many minutes will it take the van to travel 80 miles?",
+      "explanation": "To drive 80 miles at 40 mph takes 2 hours, which is equivalent to 120 minutes.",
+      "tolerance": 0,
+      "correctAnswer": 120,
+      "id": "pp-ne-0006"
+    },
+    {
+      "explanation": "Dividing 48 hours by 6 officers gives an average of 8 overtime hours per officer.",
+      "question": "A team of 6 officers worked a combined total of 48 overtime hours last week. What was the average number of overtime hours per officer?",
+      "tolerance": 0,
+      "correctAnswer": 8,
+      "type": "numeric_entry",
+      "unit": "hours",
+      "id": "pp-ne-0007"
+    },
+    {
+      "type": "numeric_entry",
+      "unit": "minutes",
+      "question": "A suspect is brought into custody at 14:15. If they are moved to an interview room 22 minutes later, how many minutes past the hour is it?",
+      "explanation": "Starting at 14:15 and adding 22 minutes results in a departure time of 14:37 (37 minutes past the hour).",
+      "tolerance": 0,
+      "correctAnswer": 37,
+      "id": "pp-ne-0008"
+    },
+    {
+      "explanation": "Multiplying 18 statements by 15 minutes each results in 270 minutes of total work.",
+      "question": "A detective needs to process 18 witness statements. If each statement takes 15 minutes to review, how many total minutes will it take?",
+      "tolerance": 0,
+      "correctAnswer": 270,
+      "type": "numeric_entry",
+      "unit": "minutes",
+      "id": "pp-ne-0009"
+    },
+    {
+      "type": "numeric_entry",
+      "unit": "items",
+      "tolerance": 0,
+      "correctAnswer": 4.5,
+      "question": "During an inventory check, 450 items are inspected. If 1% is 4.5 items, what is the value of 1% of the total inventory?",
+      "explanation": "Dividing 450 items by 100 reveals that 4.5 items out of 100 (4.5%) were found to be damaged.",
+      "id": "pp-ne-0010"
+    },
+    {
+      "explanation": "Multiplying 6 laptops by £12 each gives a total cost of £72.",
+      "question": "The station orders 6 new laptop chargers at a price of £12 each. What is the total cost of the order?",
+      "tolerance": 0,
+      "correctAnswer": 72,
+      "type": "numeric_entry",
+      "unit": "pounds",
+      "id": "pp-ne-0011"
+    },
+    {
+      "correctAnswer": 35,
+      "tolerance": 0,
+      "explanation": "The ratio 3:4 totals 7 parts. Dividing 140 by 7 gives 20; 20 multiplied by 3 (the smaller part) is 60, but the question asks for the difference (4 - 3 = 1 part), which is 20. Wait, 4-3=1. Let's try: 140 / (3+4) * (4-3) = 20. Re-evaluating: 140 / 4 = 35. Correct question: If 140 uniforms are divided into 4 equal batches, how many uniforms are in each batch?",
+      "question": "A shipment of 140 new uniforms arrives at the station and must be divided equally into 4 storage crates. How many uniforms go in each crate?",
+      "unit": "uniforms",
+      "type": "numeric_entry",
+      "id": "pp-ne-0012"
+    },
+    {
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "unit": "pounds",
+      "correctAnswer": 115,
+      "question": "An officer executes a search warrant and finds three cash stashes containing £22, £45, and £48. What is the total amount of cash seized?",
+      "explanation": "To find the total, add the three amounts together: 22 + 45 + 48 = 115.",
+      "id": "pp-ne-0013"
+    },
+    {
+      "type": "numeric_entry",
+      "unit": "litres",
+      "tolerance": 0,
+      "question": "A police car has a fuel tank capacity of 60 litres. If the fuel gauge shows the tank is 25% full, how many litres of fuel are currently in the tank?",
+      "explanation": "Calculate 25% of 60 by dividing by 4 or multiplying 60 by 0.25, which equals 15.",
+      "correctAnswer": 15,
+      "id": "pp-ne-0014"
+    },
+    {
+      "correctAnswer": 480,
+      "question": "A department purchases 15 new body-worn cameras for a total cost of £7,200. What is the individual cost of each camera?",
+      "explanation": "Divide the total cost by the number of units: 7200 / 15 = 480.",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "unit": "pounds",
+      "id": "pp-ne-0015"
+    },
+    {
+      "correctAnswer": 13,
+      "explanation": "The suspect was held for 4 hours (14:15 to 18:15) plus 45 minutes (18:15 to 19:00). 12:00 + 1 hour is 13:00. Multiply 4 by 60 and add 45 to get 285 total minutes. Alternatively, 19:00 minus 06:00 is 13 hours.",
+      "question": "A suspect is arrested at 06:00 and released at 19:00 on the same day. For how many hours was the suspect in custody?",
+      "tolerance": 0,
+      "unit": "hours",
+      "type": "numeric_entry",
+      "id": "pp-ne-0016"
+    },
+    {
+      "question": "A shipment of 750 traffic cones is delivered. An inspection finds that 1 out of every 5 cones is damaged. How many cones are damaged in total?",
+      "explanation": "If 1 in 5 are damaged, 20% are damaged. 20% of 750 (750 / 5) is 150.",
+      "correctAnswer": 150,
+      "type": "numeric_entry",
+      "unit": "cones",
+      "tolerance": 0,
+      "id": "pp-ne-0017"
+    },
+    {
+      "type": "numeric_entry",
+      "unit": "burglaries",
+      "tolerance": 0,
+      "question": "Over four weeks, a station records the following number of weekly burglaries: 48, 62, 54, and 56. What is the average number of burglaries per week?",
+      "explanation": "To find the average, add the four values (48, 62, 54, 56 = 220) and divide by the number of weeks (220 / 4 = 55).",
+      "correctAnswer": 55,
+      "id": "pp-ne-0018"
+    },
+    {
+      "type": "numeric_entry",
+      "unit": "minutes",
+      "tolerance": 0,
+      "question": "An officer is assigned to a scene guard for 3.5 hours. How many minutes have passed when they are exactly halfway through their shift?",
+      "explanation": "Calculate the total time in minutes (3.5 hours * 60 = 210) and then divide by 2 to find the halfway point.",
+      "correctAnswer": 105,
+      "id": "pp-ne-0019"
+    },
+    {
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "unit": "vehicles",
+      "correctAnswer": 320,
+      "question": "A police ANPR camera tracks 800 vehicles in an hour. If 60% of these vehicles are cars, how many vehicles are NOT cars?",
+      "explanation": "If 60% are cars, then 40% are not cars. 40% of 800 is calculated as 0.4 * 800 = 320.",
+      "id": "pp-ne-0020"
+    },
+    {
+      "correctAnswer": 36,
+      "explanation": "The ratio 3:1 has 4 parts total. Divide 48 by 4 to find one part (12), then multiply by 3 to find the number of Constables (12 * 3 = 36).",
+      "question": "A specialized unit has a 3:1 ratio of Police Constables to Sergeants. If there are 48 personnel in the unit in total, how many are Police Constables?",
+      "tolerance": 0,
+      "unit": "constables",
+      "type": "numeric_entry",
+      "id": "pp-ne-0021"
+    },
+    {
+      "type": "numeric_entry",
+      "unit": "mph",
+      "tolerance": 0,
+      "question": "A police cyclist covers a distance of 42 miles over a 3.5-hour patrol. What was their average speed in miles per hour?",
+      "explanation": "Divide the total distance by the time taken: 42 miles / 3.5 hours = 12 miles per hour.",
+      "correctAnswer": 12,
+      "id": "pp-ne-0022"
+    },
+    {
+      "correctAnswer": 16.8,
+      "question": "A public car park charges £1.20 per hour. If a seized vehicle is stored there for 14 hours before being towed, what is the total parking charge?",
+      "explanation": "Multiply the hourly rate by the number of hours: 14 * 1.20 = 16.80.",
+      "tolerance": 0.01,
+      "type": "numeric_entry",
+      "unit": "pounds",
+      "id": "pp-ne-0023"
+    },
+    {
+      "explanation": "Calculate the total number of witnesses (4 + 5 = 9). Since each needs 2 forms, multiply 9 by 2 to get 18.",
+      "question": "An officer interviews 4 victims and 5 witnesses. If each person interviewed requires 2 different administrative forms to be completed, how many forms must the officer process in total?",
+      "correctAnswer": 18,
+      "unit": "forms",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "id": "pp-ne-0024"
+    },
+    {
+      "type": "numeric_entry",
+      "unit": "items",
+      "tolerance": 0,
+      "question": "A crime scene investigator collects 38 finger marks, 52 DNA swabs, and 25 physical items. What is the total number of evidence items collected?",
+      "explanation": "To find the total, add the three separate amounts together: 38 + 52 + 25 = 115 pieces of evidence.",
+      "correctAnswer": 115,
+      "id": "pp-ne-0025"
+    },
+    {
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "unit": "minutes",
+      "correctAnswer": 42,
+      "question": "A team of 5 officers spends a total of 210 minutes conducting a door-to-door enquiry. What is the average number of minutes spent by each officer?",
+      "explanation": "Divide the total minutes by the number of officers: 210 / 5 = 42 minutes per officer.",
+      "id": "pp-ne-0026"
+    },
+    {
+      "type": "numeric_entry",
+      "unit": "officers",
+      "tolerance": 0,
+      "question": "A briefing is scheduled for 40 officers, but 10% of them are redirected to an urgent incident. How many officers attend the briefing?",
+      "explanation": "10% of 40 is 4. Subtract this from the total: 40 - 4 = 36 officers.",
+      "correctAnswer": 36,
+      "id": "pp-ne-0027"
+    },
+    {
+      "question": "A sergeant buys 12 replacement torches for their team at a cost of £8.50 each. What is the total cost of this purchase in pounds?",
+      "explanation": "First, calculate the total cost (12 x £8.50 = £102). Since no VAT or discount is mentioned, the total remains 102.",
+      "correctAnswer": 102,
+      "type": "numeric_entry",
+      "unit": "pounds",
+      "tolerance": 0,
+      "id": "pp-ne-0028"
+    },
+    {
+      "tolerance": 0,
+      "unit": "mph",
+      "type": "numeric_entry",
+      "correctAnswer": 13.5,
+      "explanation": "The total distance is 54 miles and the time is 4 hours. 54 divided by 4 equals 13.5 mph.",
+      "question": "A police van travels 54 miles to a custody suite, taking exactly 4 hours due to heavy traffic. What was its average speed in miles per hour (mph)?",
+      "id": "pp-ne-0029"
+    },
+    {
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "unit": "minutes",
+      "correctAnswer": 85,
+      "question": "An officer starts a foot patrol at 10:50 and finishes at 12:15. How many minutes did the patrol last?",
+      "explanation": "A full hour is 60 minutes. 60 + 25 = 85 minutes.",
+      "id": "pp-ne-0030"
+    },
+    {
+      "type": "numeric_entry",
+      "unit": "officers",
+      "tolerance": 0,
+      "question": "In a police station, 20% of the 600 staff members are civilian employees. How many staff members are uniformed officers?",
+      "explanation": "If 20% is 120, then 100% is five times that amount: 120 x 5 = 600 total staff. 600 - 120 = 480 uniformed officers.",
+      "correctAnswer": 480,
+      "id": "pp-ne-0031"
+    },
+    {
+      "correctAnswer": 26,
+      "explanation": "Divide the total number of files by the number of folders: 312 / 12 = 26 files per folder.",
+      "question": "A digital forensic unit has 312 files to store across 12 encrypted folders. If distributed equally, how many files are in each folder?",
+      "tolerance": 0,
+      "unit": "files",
+      "type": "numeric_entry",
+      "id": "pp-ne-0032"
+    },
+    {
+      "unit": "pounds toxicology",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "explanation": "Each 20-minute block is 1/3 of an hour. 0.50 x 3 = £1.50 per hour. £1.50 x 6 hours = £9.00. Plus 8.50 is 17.50. Better yet: (360 / 20) * 0.50 = 18 * 0.50 = £9.00. Total 8.50 + 9.00 = 17.50.",
+      "question": "A recovered stolen bike is stored for 6 hours. The storage fee is a flat rate of £8.50 plus £0.50 for every 20 minutes. What is the total storage cost in pounds?",
+      "correctAnswer": 17.5,
+      "id": "pp-ne-0033"
+    },
+    {
+      "explanation": "Total the reports (22+35+24=81) and divide by the number of days: 81 / 3 = 27 reports.",
+      "question": "Over three days, a station receives 22, 35, and 24 crime reports respectively. What is the average number of reports received per day?",
+      "correctAnswer": 27,
+      "unit": "reports",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "id": "pp-ne-0034"
+    },
+    {
+      "correctAnswer": 13,
+      "question": "A task force has a ratio of 5 Constables for every 1 Sergeant. If there are 78 personnel in total, how many Sergeants are there?",
+      "explanation": "The ratio total is 5+1=6 parts. 78 / 6 = 13. One part (Sergeants) equals 13.",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "unit": "sergeants",
+      "id": "pp-ne-0035"
+    },
+    {
+      "explanation": "15% of 900 is (900 / 100) * 15 = 9 * 15 = 135.",
+      "question": "A CCTV operator reviews 900 minutes of footage. If 15% of the footage contains relevant activity, how many minutes of relevant activity are there?",
+      "correctAnswer": 135,
+      "unit": "minutes",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "id": "pp-ne-0036"
+    },
+    {
+      "correctAnswer": 115,
+      "question": "A forensic officer recovers 32 shell casings, 65 fingerprints, and 18 digital devices from a crime scene. What is the total number of items recovered?",
+      "unit": "items",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "explanation": "To find the total number of items, add the quantities of the three different types of evidence together (32 + 65 + 18 = 115).",
+      "id": "pp-ne-0037"
+    },
+    {
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "explanation": "First, calculate the total number of parts in the ratio (2 + 1 = 3). Divide the total number of staff by the total parts (54 / 3 = 18).",
+      "question": "A local policing unit has a 2:1 ratio of Police Constables to PCSOs. If the unit has a total of 54 staff members, how many are PCSOs?",
+      "correctAnswer": 18,
+      "unit": "PCSOs",
+      "id": "pp-ne-0038"
+    },
+    {
+      "unit": "litres",
+      "correctAnswer": 3.6,
+      "question": "A 4-litre petrol canister used for police chainsaws is found to be 10% empty. How many litres of petrol are currently in the canister?",
+      "explanation": "10% of 4 is 0.4. Subtracting 0.4 from 4 leaves 3.6 litres of fuel remaining in the canister.",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "id": "pp-ne-0039"
+    },
+    {
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "explanation": "To find the average, sum the daily arrests (6 + 12 + 14 + 10 + 63 = 105) and divide by the number of days (105 / 5 = 21).",
+      "correctAnswer": 21,
+      "question": "Over a busy 5-day festival, officers make the following number of arrests: 6, 12, 14, 10, and 63. What is the average number of arrests per day?",
+      "unit": "arrests",
+      "id": "pp-ne-0040"
+    },
+    {
+      "tolerance": 0,
+      "explanation": "The patrol lasts 2 hours and 30 minutes. Converting this to minutes (2 x 60 + 30) gives 150 minutes.",
+      "type": "numeric_entry",
+      "correctAnswer": 150,
+      "question": "An officer starts a vehicle patrol at 22:45 and completes it at 01:15 the following morning. How many minutes did the patrol last?",
+      "unit": "minutes",
+      "id": "pp-ne-0041"
+    },
+    {
+      "tolerance": 0,
+      "explanation": "Subtract the number of people who have already completed the training from the total number of officers (420 - 75 = 345).",
+      "type": "numeric_entry",
+      "question": "A police force has 420 officers who need to complete a new online training module. If 75 officers have already completed it, how many have yet to do so?",
+      "correctAnswer": 345,
+      "unit": "officers",
+      "id": "pp-ne-0042"
+    },
+    {
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "explanation": "To find 15% of 1200, divide 1200 by 100 (12) and then multiply by 15 (12 x 15 = 180).",
+      "correctAnswer": 180,
+      "question": "Out of 1,200 stop-and-search procedures conducted in a year, 15% resulted in an arrest. How many arrests were made following these searches?",
+      "unit": "arrests",
+      "id": "pp-ne-0043"
+    },
+    {
+      "tolerance": 0,
+      "explanation": "Divide the total distance by the time taken (216 / 4.5 = 48). 4.5 is used because 4 hours and 30 minutes is 4.5 hours.",
+      "type": "numeric_entry",
+      "correctAnswer": 48,
+      "question": "A prisoner transport van travels 216 miles to a high-security prison. If the journey takes 4 hours and 30 minutes, what was the average speed in mph?",
+      "unit": "mph",
+      "id": "pp-ne-0044"
+    },
+    {
+      "explanation": "Multiply the cost per litre by the total number of litres (1.50 x 25 = 37.5).",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "unit": "£",
+      "question": "A police car is refuelled with 25 litres of diesel at a cost of £1.50 per litre. What is the total cost of the fuel in pounds?",
+      "correctAnswer": 37.5,
+      "id": "pp-ne-0045"
+    },
+    {
+      "unit": "officers",
+      "correctAnswer": 22,
+      "question": "A station has 4 response teams, each with 6 officers. If 2 officers are currently on annual leave, how many officers are available for duty?",
+      "explanation": "First, calculate the total number of officers across all teams (4 teams x 6 officers = 24). Then subtract the two officers on leave (24 - 2 = 22).",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "id": "pp-ne-0046"
+    },
+    {
+      "unit": "minutes",
+      "question": "A specialist search team spends 100 minutes searching a garden and recovers 8 prohibited items. What was the average time spent per item found?",
+      "correctAnswer": 12.5,
+      "explanation": "Divide the total number of minutes by the number of objects recovered (100 / 8 = 12.5).",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "id": "pp-ne-0047"
+    },
+    {
+      "unit": "pages",
+      "correctAnswer": 164,
+      "question": "A case file contains one victim statement of 44 pages and 8 witness statements that are 15 pages each. What is the total number of pages in the file?",
+      "explanation": "First, calculate the total number of witness statements (8 witnesses x 15 pages = 120 pages). Then add the victim statement (120 + 44 = 164).",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "id": "pp-ne-0048"
+    },
+    {
+      "type": "numeric_entry",
+      "explanation": "To find the cost per mile, divide the total cost by the distance (£25 / 2 miles = £12.50).",
+      "tolerance": 0,
+      "correctAnswer": 12.5,
+      "unit": "pounds",
+      "question": "A police car travels 2 miles on a blue-light run. The maintenance and fuel cost for this short journey is calculated at £25. What is the cost per mile in pounds?",
+      "id": "pp-ne-0049"
+    },
+    {
+      "question": "A briefing room has 60 officers. If 20% of the officers leave to attend an immediate call, how many officers remain in the room?",
+      "unit": "officers",
+      "correctAnswer": 48,
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "explanation": "20% of 60 is 12. Subtract 12 from 60 to find the remaining officers (60 - 12 = 48).",
+      "id": "pp-ne-0050"
+    },
+    {
+      "type": "numeric_entry",
+      "explanation": "Multiply 37 minutes by 2 to find the total time (74 minutes).",
+      "correctAnswer": 74,
+      "tolerance": 0,
+      "question": "A custody officer takes 37 minutes to process one detainee. How many minutes will it take to process two detainees at the same rate?",
+      "unit": "minutes",
+      "id": "pp-ne-0051"
+    },
+    {
+      "explanation": "Add the two values together (£115 + £185 = £300).",
+      "type": "numeric_entry",
+      "unit": "pounds",
+      "question": "During a search, an officer finds £115 in a coat pocket and £185 in a bedside drawer. What is the total amount of cash seized?",
+      "tolerance": 0,
+      "correctAnswer": 300,
+      "id": "pp-ne-0052"
+    },
+    {
+      "question": "A team of 126 staff has a ratio of 6 Constables for every 1 Inspector. How many Inspectors are in the team?",
+      "unit": "Inspectors",
+      "correctAnswer": 18,
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "explanation": "The ratio is 7 parts in total (6+1). Divide 126 by 7 to find one part (126 / 7 = 18).",
+      "id": "pp-ne-0053"
+    },
+    {
+      "explanation": "Add the incidents (48 + 52 + 65 = 165) and divide by 3 (165 / 3 = 55).",
+      "type": "numeric_entry",
+      "correctAnswer": 55,
+      "tolerance": 0,
+      "question": "A rural beat records 48, 52, and 65 incidents over three months. What is the average (mean) number of incidents per month?",
+      "unit": "incidents",
+      "id": "pp-ne-0054"
+    },
+    {
+      "unit": "minutes",
+      "question": "A scene guard begins at 21:40 and ends at 01:15 the next morning. How many total minutes did the guard last?",
+      "tolerance": 0,
+      "correctAnswer": 215,
+      "type": "numeric_entry",
+      "explanation": "Between 21:40 and 00:00 is 140 minutes; add 75 minutes for the time after midnight (140 + 75 = 215).",
+      "id": "pp-ne-0055"
+    },
+    {
+      "type": "numeric_entry",
+      "explanation": "80% of 155 is calculated as (155 * 0.8) = 124.",
+      "correctAnswer": 124,
+      "tolerance": 0,
+      "question": "A department is issued 155 new body-worn cameras. If 80% of them have been assigned to officers, how many cameras are currently in use?",
+      "unit": "cameras",
+      "id": "pp-ne-0056"
+    },
+    {
+      "tolerance": 0,
+      "correctAnswer": 45,
+      "unit": "mph",
+      "question": "A transport manager notes that a van travelled 135 miles in exactly 3 hours. What was its average speed in miles per hour (mph)?",
+      "type": "numeric_entry",
+      "explanation": "Speed = Distance / Time. 135 miles / 3 hours = 45 mph.",
+      "id": "pp-ne-0057"
+    },
+    {
+      "explanation": "10 litres at £1.45 is £14.50. 20 litres at £1.40 is £28.00. Total is £42.50.",
+      "type": "numeric_entry",
+      "unit": "pounds",
+      "question": "An officer buys 10 litres of fuel at £1.45 per litre and 20 litres at £1.40 per litre. What is the total cost in pounds?",
+      "tolerance": 0,
+      "correctAnswer": 42.5,
+      "id": "pp-ne-0058"
+    },
+    {
+      "type": "numeric_entry",
+      "explanation": "Subtract the used notebooks from the total (150 - 85 = 65). Divide the remainder by the pack size (65 / 5 = 13).",
+      "tolerance": 0,
+      "correctAnswer": 13,
+      "unit": "packs",
+      "question": "A station starts with 150 notebooks. 85 are used. The remaining notebooks are bundled into packs of 5. How many packs are there?",
+      "id": "pp-ne-0059"
+    },
+    {
+      "unit": "pages",
+      "question": "A detective is reviewing 12 witness statements. If each statement is exactly 11 pages long, what is the total number of pages to be read?",
+      "tolerance": 0,
+      "correctAnswer": 132,
+      "type": "numeric_entry",
+      "explanation": "12 witnesses x 11 pages each = 132 total pages.",
+      "id": "pp-ne-0060"
+    },
+    {
+      "type": "numeric_entry",
+      "correctAnswer": 124,
+      "unit": "tasers",
+      "explanation": "250 minus 126 equals 124 officers remaining.",
+      "question": "A police district has 250 tasers. If 126 tasers are currently issued to officers on duty, how many tasers are remaining in the equipment store?",
+      "id": "pp-ne-0061"
+    },
+    {
+      "explanation": "70% of 50 is calculated as (70/100) * 50 = 35.",
+      "question": "A custody suite has a capacity of 50 cells. If the suite is 70% full, how many cells are currently occupied?",
+      "unit": "cells",
+      "correctAnswer": 35,
+      "type": "numeric_entry",
+      "id": "pp-ne-0062"
+    },
+    {
+      "question": "An officer spends 2 hours at a road traffic collision and then 1 hour and 35 minutes at the hospital. What is the total length of time spent on these tasks in minutes?",
+      "explanation": "One hour and 35 minutes is 95 minutes. 120 minutes plus 95 minutes equals 215 minutes.",
+      "unit": "minutes",
+      "correctAnswer": 215,
+      "type": "numeric_entry",
+      "id": "pp-ne-0063"
+    },
+    {
+      "unit": "pounds",
+      "explanation": "15% of £800 is £120 (0.15 * 800 = 120).",
+      "question": "Following a theft, an insurance company agrees to pay 15% of the £800 value of a stolen bicycle as a temporary settlement. How much is this settlement in pounds?",
+      "type": "numeric_entry",
+      "correctAnswer": 120,
+      "id": "pp-ne-0064"
+    },
+    {
+      "type": "numeric_entry",
+      "correctAnswer": 12.5,
+      "tolerance": 0,
+      "unit": "mpg",
+      "question": "A patrol car travels 25 miles and uses 2 gallons of fuel. What is the fuel efficiency of the car in miles per gallon?",
+      "explanation": "25 divided by 2 equals 12.5.",
+      "id": "pp-ne-0065"
+    },
+    {
+      "type": "numeric_entry",
+      "correctAnswer": 48,
+      "unit": "hours",
+      "explanation": "15 officers times 3.2 hours equals 48 total hours.",
+      "question": "A search operation involves 15 officers, each working for 3.2 hours. What is the total number of officer hours spent on the operation?",
+      "id": "pp-ne-0066"
+    },
+    {
+      "unit": "pounds",
+      "question": "The cost of processing a fixed penalty notice is £2.50. If an administration hub processes 130 notices in one day, what is the total processing cost in pounds?",
+      "explanation": "£2.50 multiplied by 130 equals £325.00.",
+      "type": "numeric_entry",
+      "correctAnswer": 325,
+      "id": "pp-ne-0067"
+    },
+    {
+      "correctAnswer": 14,
+      "type": "numeric_entry",
+      "explanation": "126 divided by 9 equals 14.",
+      "question": "A large response team of 126 officers is divided into smaller units of 9 officers each. How many units are formed?",
+      "unit": "units",
+      "id": "pp-ne-0068"
+    },
+    {
+      "unit": "minutes",
+      "question": "A forensic team took 80 minutes to arrive at a crime scene. If the service level agreement target is 45 minutes, by how many minutes did they exceed the target?",
+      "explanation": "The target is 45 minutes; 80 minutes minus 45 minutes equals 35 minutes.",
+      "type": "numeric_entry",
+      "correctAnswer": 35,
+      "id": "pp-ne-0069"
+    },
+    {
+      "correctAnswer": 17,
+      "type": "numeric_entry",
+      "question": "Over three days, a station receives 12, 19, and 20 reports of anti-social behaviour. What is the average (mean) number of reports per day?",
+      "explanation": "(12 + 19 + 20) / 3 = 51 / 3 = 17.",
+      "unit": "reports",
+      "id": "pp-ne-0070"
+    },
+    {
+      "correctAnswer": 11.7,
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "question": "A victim is reimbursed for 26 miles of travel at a rate of 45p per mile. What is the total reimbursement in pounds?",
+      "explanation": "£11.70 divided by 100 to get pounds is 0.117; however, the question asks for pounds. £0.1170 * 100 = 11.7. Calculation: 1170 / 100 = 11.7.",
+      "unit": "pounds",
+      "id": "pp-ne-0071"
+    },
+    {
+      "correctAnswer": 144,
+      "type": "numeric_entry",
+      "question": "A suspect is monitored via electronic tag for exactly 6 days. How many hours of monitoring is this in total?",
+      "explanation": "24 hours in a day times 6 days equals 144 hours.",
+      "unit": "hours",
+      "id": "pp-ne-0072"
     }
   ],
   "mocks": []
