@@ -6412,6 +6412,546 @@
       "type": "true_false",
       "correctAnswer": false,
       "id": "pal-tf-0130"
+    },
+    {
+      "question": "What does this sign, found on an aerodrome, indicate to a pilot?",
+      "type": "image_question",
+      "imageAlt": "A yellow square sign with a bold black letter C in the center.",
+      "imageDescription": "A close-up of a standard aerodrome ground sign: a yellow square base with a large, black capital letter 'C'.",
+      "correctAnswer": 2,
+      "options": [
+        "The Fire Station location",
+        "The Customs and Immigration office",
+        "Air Traffic Services Reporting Office",
+        "The Fuel farm location"
+      ],
+      "explanation": "The black 'C' on a yellow background signifies the Air Traffic Services Reporting Office or Control Office.",
+      "id": "pal-im-0001"
+    },
+    {
+      "question": "When displayed in a signal square, what does this symbol communicate?",
+      "type": "image_question",
+      "correctAnswer": 0,
+      "options": [
+        "Movement is restricted to paved surfaces only",
+        "Glider flying is currently in progress",
+        "The aerodrome is closed to all traffic",
+        "Landings are permitted on grass areas only"
+      ],
+      "imageDescription": "A top-down view of a traditional aerodrome signal square containing a large white dumbbell symbol.",
+      "imageAlt": "A white horizontal dumbbell shaped signal in a signal square.",
+      "explanation": "A white horizontal dumbbell indicates that taxiing, taking off, and landing must be confined to hard surfaces (runways and taxiways).",
+      "id": "pal-im-0002"
+    },
+    {
+      "imageAlt": "Two white crosses oriented vertically in a signal square.",
+      "imageDescription": "A signal square on a grass airfield containing two white crosses placed side-by-side.",
+      "correctAnswer": 3,
+      "options": [
+        "Medical services are available on site",
+        "Landing is prohibited due to a temporary hazard",
+        "The airfield is used for military purposes only",
+        "Glider flying is in progress"
+      ],
+      "explanation": "The double white cross indicates that glider flying is in progress at the aerodrome.",
+      "question": "What information does this symbol in the signal square provide?",
+      "type": "image_question",
+      "id": "pal-im-0003"
+    },
+    {
+      "type": "image_question",
+      "question": "What is the meaning of this signal displayed at an aerodrome?",
+      "explanation": "A red square with a single yellow diagonal indicates that the aerodrome is in a poor state and special care must be taken when landing.",
+      "imageAlt": "A red square signal with one yellow diagonal stripe.",
+      "imageDescription": "A signal square containing a red square with one single yellow diagonal stripe running from corner to corner.",
+      "correctAnswer": 1,
+      "options": [
+        "Emergency landing only",
+        "Special care should be taken during approach and landing",
+        "The aerodrome is closed for an indefinite period",
+        "Aerobatic maneuvers are prohibited over the field"
+      ],
+      "id": "pal-im-0004"
+    },
+    {
+      "question": "What does this arrow in the signal square indicate?",
+      "type": "image_question",
+      "correctAnswer": 2,
+      "options": [
+        "The airfield is for military use only",
+        "Landings are prohibited in the direction indicated",
+        "A right-hand circuit is in force",
+        "Winds are exceeding 25 knots"
+      ],
+      "imageDescription": "A signal square containing a large arrow pointed in a clockwise direction, painted with alternating red and yellow stripes.",
+      "imageAlt": "A red and yellow striped arrow pointing to the right.",
+      "explanation": "A red and yellow striped arrow indicates that the direction of the circuit is right-handed (clockwise).",
+      "id": "pal-im-0005"
+    },
+    {
+      "question": "What is the meaning of the yellow chevrons shown in this image?",
+      "type": "image_question",
+      "imageAlt": "Yellow chevrons painted on the paved surface before a runway threshold.",
+      "imageDescription": "An aerial view of the end of a runway showing large yellow chevrons painted on the pavement preceding the 'piano keys' threshold markers.",
+      "correctAnswer": 0,
+      "options": [
+        "The area is not to be used for any aircraft movement",
+        "The area is available for taxiing only",
+        "The area is a displaced threshold for landing",
+        "The area is reserved for emergency braking only"
+      ],
+      "explanation": "Two yellow 'chevrons' on a runway threshold indicate that the area is not suitable for landing, takeoff, or taxiing, often used as a blast pad or overrun.",
+      "id": "pal-im-0006"
+    },
+    {
+      "correctAnswer": 1,
+      "options": [
+        "Give way to other aircraft and continue circling",
+        "Aerodrome unsafe, do not land",
+        "Land at this aerodrome and proceed to the apron",
+        "Return for landing immediately"
+      ],
+      "imageDescription": "A view from a cockpit looking towards an Air Traffic Control tower which is emitting a series of steady red light flashes.",
+      "imageAlt": "A red light flashing at a steady interval from an ATC tower.",
+      "explanation": "A series of steady red flashes from a signal lamp while an aircraft is in flight instructs the pilot that the aerodrome is unsafe and they should not land.",
+      "question": "You are in flight and see these light signals from the tower. What is the instruction?",
+      "type": "image_question",
+      "id": "pal-im-0007"
+    },
+    {
+      "type": "image_question",
+      "question": "While on the ground, what does this flashing green light signal from the tower mean?",
+      "explanation": "A green light flashed at an aircraft on the ground gives the pilot permission to taxi.",
+      "imageAlt": "A flashing green light signal from an ATC tower toward an aircraft on the ground.",
+      "imageDescription": "A night-time view from the cockpit of an aircraft stationary on a taxiway, seeing a flashing green light from the control tower.",
+      "correctAnswer": 3,
+      "options": [
+        "Cleared to take off",
+        "Return to the starting point on the aerodrome",
+        "Clear the runway immediately",
+        "Cleared to taxi"
+      ],
+      "id": "pal-im-0008"
+    },
+    {
+      "type": "image_question",
+      "question": "What does this mandatory airfield sign indicate to the pilot?",
+      "explanation": "A vertical white strip on a black background indicates a 'No Entry' sign for taxiways or restricted areas.",
+      "correctAnswer": 2,
+      "options": [
+        "Stop and wait for ATC clearance",
+        "Runway ahead",
+        "No Entry",
+        "Taxiway ending ahead"
+      ],
+      "imageAlt": "A red sign with a white horizontal bar.",
+      "imageDescription": "A standard airfield mandatory instruction sign: a red rectangular background featuring a white horizontal bar across the middle.",
+      "id": "pal-im-0009"
+    },
+    {
+      "correctAnswer": 0,
+      "options": [
+        "The direction for take-off and landing",
+        "The location of the terminal building",
+        "The airfield has an active TACAN station",
+        "A temporary runway is in use"
+      ],
+      "imageAlt": "A large white T-shaped marker on the ground.",
+      "imageDescription": "A top-down view of a white landing T located in a signal square beside a runway.",
+      "explanation": "The white 'T' (landing T) indicates the direction to be used for take-off and landing; aircraft land parallel to the shaft towards the crossbar.",
+      "question": "What is the purpose of this ground signal?",
+      "type": "image_question",
+      "id": "pal-im-0010"
+    },
+    {
+      "type": "image_question",
+      "question": "What is the significance of the markings shown on this taxiway?",
+      "explanation": "A double yellow line (one solid, one dashed) indicates a runway-holding position where aircraft must stop unless cleared by ATC.",
+      "imageDescription": "A view from a taxiway showing a runway-holding position marking consisting of four yellow lines (two solid, two dashed) extending across the width of the taxiway.",
+      "imageAlt": "Two yellow lines, one solid and one dashed, crossing a taxiway.",
+      "correctAnswer": 1,
+      "options": [
+        "The start of a fuel-efficient taxi route",
+        "A runway-holding position marker",
+        "The boundary between the apron and the taxiway",
+        "A taxiway intersection marker"
+      ],
+      "id": "pal-im-0011"
+    },
+    {
+      "question": "What does the 'X' symbol painted on the pavement indicate?",
+      "type": "image_question",
+      "imageAlt": "A large white cross painted on a runway surface.",
+      "imageDescription": "An aerial photograph of a paved runway with a large, prominent white 'X' painted over the numbers at the threshold.",
+      "correctAnswer": 3,
+      "options": [
+        "A designated intersection for emergency vehicles",
+        "The location of a VOR check-point",
+        "A landing site for helicopters only",
+        "The runway or taxiway is closed to traffic"
+      ],
+      "explanation": "A horizontal white cross on a runway or taxiway indicates that the surface is closed to all traffic.",
+      "id": "pal-im-0012"
+    },
+    {
+      "explanation": "A double white cross in the signal square indicates that glider flying is in progress at the aerodrome.",
+      "options": [
+        "Parachute jumping is in progress",
+        "Glider flying is in progress",
+        "The aerodrome is closed to all traffic",
+        "Agricultural spraying operations are ongoing"
+      ],
+      "imageAlt": "A large white double cross (similar to a mathematical plus sign but with two vertical bars) on a black background.",
+      "correctAnswer": 1,
+      "question": "While orbiting an aerodrome, you observe this symbol in the signal square. What does it mean?",
+      "imageDescription": "A signal square containing a large white double horizontal and vertical cross, indicating glider activity.",
+      "type": "image_question",
+      "id": "pal-im-0013"
+    },
+    {
+      "correctAnswer": 0,
+      "question": "What is the meaning of this signal displayed in the aerodrome signal square?",
+      "imageDescription": "An aerodrome signal square containing a red square with one yellow diagonal stripe.",
+      "type": "image_question",
+      "explanation": "A red square with a yellow diagonal indicates that the state of the manoeuvring area is poor and caution is required during landing.",
+      "options": [
+        "The manoeuvring area is poor; exercise caution",
+        "Landings are prohibited",
+        "Special VFR flights only",
+        "Aerodrome closed to fixed-wing aircraft"
+      ],
+      "imageAlt": "A red square signal with a single yellow diagonal stripe from corner to corner.",
+      "id": "pal-im-0014"
+    },
+    {
+      "type": "image_question",
+      "question": "When displayed in a signal square, what does this white dumbbell symbol indicate?",
+      "imageDescription": "A signal square containing a white dumbbell symbol.",
+      "correctAnswer": 2,
+      "options": [
+        "Only gliders may use the grass areas",
+        "Taxiing is prohibited on the grass",
+        "Take-offs and landings must be on runways, but taxiing is permitted on the grass",
+        "Right-hand circuits are in force"
+      ],
+      "imageAlt": "A white symbol shaped like a dumbbell (two circles connected by a bar).",
+      "explanation": "A horizontal white dummy (dumbbell) indicates that aircraft are required to take off and land on runways, but may use other areas for taxiing.",
+      "id": "pal-im-0015"
+    },
+    {
+      "imageAlt": "A control tower balcony with a bright, steady red light being directed toward the camera.",
+      "options": [
+        "Give way to other aircraft and continue circling",
+        "The aerodrome is unsafe, do not land",
+        "Immediate landing required",
+        "Return for landing immediately"
+      ],
+      "explanation": "A steady red light signal from the tower to an aircraft in flight indicates that the pilot must give way to other aircraft and continue circling.",
+      "imageDescription": "A steady red light signal being emitted from an aerodrome control tower.",
+      "question": "If you are in flight and observe this steady red light signal from the tower, what action must you take?",
+      "type": "image_question",
+      "correctAnswer": 0,
+      "id": "pal-im-0016"
+    },
+    {
+      "correctAnswer": 3,
+      "type": "image_question",
+      "question": "What specific instruction is conveyed by this combined ground signal?",
+      "imageDescription": "A white dumbbell ground signal with a white letter L superimposed on one of the circular ends.",
+      "explanation": "A white letter 'L' placed over a dummy (dumbbell) indicates that light aircraft may take off and land on parts of the aerodrome other than the runways.",
+      "options": [
+        "Landing is prohibited for all aircraft",
+        "Only learners (student pilots) are permitted to land",
+        "The left-hand circuit is active",
+        "Light aircraft may land or take off on areas other than the runways"
+      ],
+      "imageAlt": "A white dumbbell symbol with a large white letter 'L' positioned on one of its circles.",
+      "id": "pal-im-0017"
+    },
+    {
+      "type": "image_question",
+      "question": "What does this signal in the signal square indicate to an approaching pilot?",
+      "imageDescription": "An aerodrome signal square containing a red square with a yellow diagonal cross.",
+      "correctAnswer": 1,
+      "options": [
+        "Caution: Runway construction in progress",
+        "Landings are prohibited and the prohibition is likely to be prolonged",
+        "Multiple gliders in the circuit",
+        "Emergency landing only"
+      ],
+      "imageAlt": "A red square signal with two yellow diagonal stripes forming an 'X' from corner to corner.",
+      "explanation": "A red square with a yellow cross (two diagonals) indicates that landings are prohibited and the aerodrome is closed.",
+      "id": "pal-im-0018"
+    },
+    {
+      "correctAnswer": 2,
+      "type": "image_question",
+      "question": "While taxiing, you see a series of white flashes from the control tower. What does this mean?",
+      "imageDescription": "A series of white flashes being directed from a control tower toward an aircraft on the ground.",
+      "explanation": "Series of white flashes from the tower to an aircraft on the ground tells the pilot to return to their starting point on the aerodrome.",
+      "options": [
+        "Cleared to taxi to the holding point",
+        "Clear the taxiway immediately",
+        "Return to the starting point on the aerodrome",
+        "Engines must be shut down immediately"
+      ],
+      "imageAlt": "A view from a cockpit showing a control tower flashing a bright white light multiple times.",
+      "id": "pal-im-0019"
+    },
+    {
+      "type": "image_question",
+      "question": "What is indicated by this sign located at a general aviation aerodrome?",
+      "imageDescription": "A yellow square sign with a black letter C, located on the side of an aerodrome building or on a pole.",
+      "correctAnswer": 1,
+      "options": [
+        "Customs and Immigration office",
+        "Air Traffic Services reporting office",
+        "Compass swinging base",
+        "Control Tower entrance"
+      ],
+      "imageAlt": "A yellow board with a large black capital letter 'C'.",
+      "explanation": "A vertical black 'C' on a yellow background marks the location of the Air Traffic Services Reporting Office (usually the C-office).",
+      "id": "pal-im-0020"
+    },
+    {
+      "imageAlt": "A sequence of red light bursts coming from the signal lamp of a control tower.",
+      "options": [
+        "Give way to another aircraft in an emergency",
+        "Land immediately at the nearest aerodrome",
+        "Your aircraft is damaged; land at your discretion",
+        "Aerodrome unsafe, do not land"
+      ],
+      "explanation": "A series of red flashes directed at an aircraft in flight means the aerodrome is unsafe and the pilot should not land.",
+      "imageDescription": "A series of red flashes from an aerodrome signal lamp directed at an aircraft in the air.",
+      "question": "You observe this series of red flashes from the tower while in the circuit. What is the meaning?",
+      "type": "image_question",
+      "correctAnswer": 3,
+      "id": "pal-im-0021"
+    },
+    {
+      "question": "What does the presence of this 'Landing T' signify?",
+      "imageDescription": "A white landing T signal located on an aerodrome.",
+      "type": "image_question",
+      "correctAnswer": 0,
+      "options": [
+        "The direction for take-off and landing is parallel to the shaft of the T towards the crossbar",
+        "The aerodrome is reporting a technical failure",
+        "Touch-and-go landings are prohibited",
+        "Taxiing is restricted to paved surfaces only"
+      ],
+      "imageAlt": "A large white T-shaped structure on the ground, with the crossbar at the top.",
+      "explanation": "A white 'T' (landing T) indicates the direction to be used by aircraft for landing and take-off, parallel to the shaft of the T.",
+      "id": "pal-im-0022"
+    },
+    {
+      "explanation": "A horizontal red panel with a yellow 'T' indicates that landing and take-off directions need not be the same, often used when a 'Landing T' is variable.",
+      "options": [
+        "No radio communication is available",
+        "Glider winching is in progress",
+        "The direction of take-off and landing may differ",
+        "Runway 20 is the active runway"
+      ],
+      "imageAlt": "A red square panel with a yellow T-shaped symbol inside it.",
+      "correctAnswer": 2,
+      "type": "image_question",
+      "question": "What is the meaning of this yellow 'T' on a red background in the signal square?",
+      "imageDescription": "A red square background containing a yellow T symbol, displayed in an aerodrome signal square.",
+      "id": "pal-im-0023"
+    },
+    {
+      "correctAnswer": 3,
+      "type": "image_question",
+      "question": "If you are in flight and receive this series of green flashes from the tower, what does it mean?",
+      "imageDescription": "A series of green flashes (or a single green flash depending on context, here series/steady is often tested) from an aerodrome tower to an aircraft in flight.",
+      "explanation": "A green flash from the tower to an aircraft in flight gives permission to land.",
+      "options": [
+        "Continue circling, wait for steady green",
+        "Land at your own risk; no ATC service",
+        "Permission to taxi to the runway",
+        "Return for landing (usually followed by a steady green for final)"
+      ],
+      "imageAlt": "A control tower signal lamp emitting a single, distinct green flash toward the viewer.",
+      "id": "pal-im-0024"
+    },
+    {
+      "imageAlt": "A red square with one yellow diagonal stripe.",
+      "correctAnswer": 2,
+      "question": "While approaching an aerodrome, you see this signal in the signal square. What does it mean?",
+      "type": "image_question",
+      "imageDescription": "A top-down view of an aerodrome signal square containing a red square panel with a single yellow diagonal stripe running from one corner to the opposite corner.",
+      "options": [
+        "The aerodrome is closed.",
+        "Glider flying is in progress.",
+        "The state of the manoeuvring area is poor.",
+        "Landings are prohibited."
+      ],
+      "explanation": "A red square with a single yellow diagonal indicates that the state of the manoeuvring area is poor and caution should be exercised when landing.",
+      "id": "pal-im-0025"
+    },
+    {
+      "imageDescription": "A rectangular yellow sign showing a bold black capital letter 'C'. It is positioned on the edge of an airfield taxiway.",
+      "options": [
+        "The location of the Flight Information or ATS Reporting Office.",
+        "The location of the Customs office.",
+        "The Compass Swing area.",
+        "A mandatory C-class airspace entry point."
+      ],
+      "explanation": "The letter 'C' in black on a yellow background signifies the location of the Air Traffic Services Reporting Office or Command Post.",
+      "correctAnswer": 0,
+      "imageAlt": "A yellow sign with a black letter 'C'.",
+      "type": "image_question",
+      "question": "What is the significance of this sign located on the aerodrome?",
+      "id": "pal-im-0026"
+    },
+    {
+      "explanation": "A white dumbbell with black stripes across the circular ends indicates that take-offs and landings are to be on runways only, but other manoeuvres are not confined to paved surfaces.",
+      "imageDescription": "A horizontal white dumbbell symbol in a signal square. Each of the two circular ends features a black bar painted across it, perpendicular to the shaft of the dumbbell.",
+      "options": [
+        "Landing and take-off is prohibited.",
+        "Take-offs and landings must be on runways, but other manoeuvres are not restricted to paved surfaces.",
+        "The aerodrome is for use by gliders only.",
+        "Exercise extreme caution due to construction on the taxiways."
+      ],
+      "type": "image_question",
+      "question": "What does this specific variation of the white dumbbell symbol indicate?",
+      "imageAlt": "A white dumbbell with two black bars across the ends.",
+      "correctAnswer": 1,
+      "id": "pal-im-0027"
+    },
+    {
+      "imageDescription": "An aerodrome signal square showing a large white landing 'T' with a horizontal white 'L' placed near it.",
+      "options": [
+        "The runway is limited to light aircraft only.",
+        "Last exit for the current runway.",
+        "Left-hand circuits are in force.",
+        "A separate landing direction is being used by light aircraft."
+      ],
+      "explanation": "A horizontal white 'L' placed over the landing 'T' indicates that light aircraft should follow a different direction of landing or pattern than heavy aircraft.",
+      "imageAlt": "A white letter L placed above a white landing T.",
+      "correctAnswer": 3,
+      "type": "image_question",
+      "question": "What is indicated by the presence of this 'L' symbol near the landing 'T'?",
+      "id": "pal-im-0028"
+    },
+    {
+      "imageDescription": "An image from a pilot's cockpit view looking towards an control tower, where a bright red pyrotechnic flare has been fired into the air.",
+      "options": [
+        "Do not land for the time being.",
+        "Total radio failure; orbit the airfield.",
+        "The aerodrome is unsafe; land elsewhere.",
+        "Give way to other aircraft and continue the circuit."
+      ],
+      "explanation": "A red light pyrotechnic or flare directed at an aircraft, regardless of whether it is in the air or on the ground, means 'Notwithstanding any previous instructions, do not land for the time being'.",
+      "correctAnswer": 0,
+      "imageAlt": "A red flare or pyrotechnic light in the sky.",
+      "type": "image_question",
+      "question": "You observe this red pyrotechnic signal from the ground. What does it mean?",
+      "id": "pal-im-0029"
+    },
+    {
+      "explanation": "Two yellow broken lines signifies a taxiway holding position marking (Pattern B), often used where a taxiway meets another taxiway or at an ILS critical area.",
+      "options": [
+        "Runway-holding position.",
+        "Intermediate taxiway-holding position.",
+        "Start of a sterile cockpit area.",
+        "Edge of the taxiway."
+      ],
+      "imageDescription": "A view looking down a concrete taxiway. Two parallel, broken (dashed) yellow lines are painted across the width of the taxiway.",
+      "question": "What is the meaning of these markings on the taxiway surface?",
+      "type": "image_question",
+      "correctAnswer": 1,
+      "imageAlt": "Two parallel broken yellow lines across a taxiway.",
+      "id": "pal-im-0030"
+    },
+    {
+      "explanation": "A sign with white text on a red background is a mandatory instruction sign; '25' indicates the runway designation, meaning the aircraft is at a runway-holding position.",
+      "options": [
+        "Taxiway 25.",
+        "Heading 250 degrees to the apron.",
+        "Runway-holding position for runway 25.",
+        "Distance remaining on the runway is 2500 feet."
+      ],
+      "imageDescription": "A rectangular red sign with white numbers '25' located at the side of a taxiway near its intersection with a runway.",
+      "type": "image_question",
+      "question": "What does this mandatory sign indicate to the pilot?",
+      "correctAnswer": 2,
+      "imageAlt": "A red sign with the white number 25.",
+      "id": "pal-im-0031"
+    },
+    {
+      "correctAnswer": 2,
+      "imageAlt": "Two white crosses in a signal square.",
+      "question": "What is the meaning of this signal seen from the air?",
+      "type": "image_question",
+      "imageDescription": "A signal square viewed from above. Inside the square are two large white crosses placed side-by-side.",
+      "options": [
+        "Medical services are available on site.",
+        "The aerodrome is closed to all traffic except emergencies.",
+        "Glider flying is in progress.",
+        "Helicopter operations only."
+      ],
+      "explanation": "A double white cross in the signal square indicates that the aerodrome is being used by gliders and that glider flying is currently in progress.",
+      "id": "pal-im-0032"
+    },
+    {
+      "explanation": "A black letter 'A' on a yellow background (typically on a sign) points towards the direction of the Apron or parking area.",
+      "options": [
+        "Alternate airfield direction.",
+        "Authorized personnel only beyond this point.",
+        "Active runway ahead.",
+        "Direction to the apron."
+      ],
+      "imageDescription": "A yellow square airfield sign with a bold black letter 'A' and a small arrow pointing diagonally.",
+      "question": "What does this information sign indicate?",
+      "type": "image_question",
+      "imageAlt": "A yellow sign with a black letter A.",
+      "correctAnswer": 3,
+      "id": "pal-im-0033"
+    },
+    {
+      "explanation": "A white cross on a yellow background in the signal square indicates that the aerodrome is for use by helicopters only.",
+      "imageDescription": "An aerodrome signal square containing a yellow square panel with a large white cross painted onto it.",
+      "options": [
+        "The aerodrome is closed to helicopters.",
+        "The aerodrome is to be used by helicopters only.",
+        "Hospital nearby; keep noise to a minimum.",
+        "Mountain rescue base."
+      ],
+      "question": "While flying over an aerodrome, you see this signal. What does it signify?",
+      "type": "image_question",
+      "correctAnswer": 1,
+      "imageAlt": "A white cross on a yellow square.",
+      "id": "pal-im-0034"
+    },
+    {
+      "type": "image_question",
+      "question": "What is the purpose of this ground signal?",
+      "correctAnswer": 0,
+      "imageAlt": "A large white Landing T.",
+      "explanation": "When displayed in the signal square, a white 'T' indicates the direction for take-off and landing (parallel to the long shaft, towards the crossbar).",
+      "imageDescription": "A large white horizontal letter 'T' laid out on the ground in the signal square of a grass airfield.",
+      "options": [
+        "The landing and take-off direction.",
+        "The location of the taxiway.",
+        "The aerodrome is for Twin-engine aircraft only.",
+        "Transponder mandatory zone."
+      ],
+      "id": "pal-im-0035"
+    },
+    {
+      "imageDescription": "A top-down view of an aerodrome signal square containing a red square panel with two yellow diagonal stripes intersecting in the center to form an 'X'.",
+      "options": [
+        "Exercise caution when landing.",
+        "Emergency landings only.",
+        "Landings are prohibited.",
+        "Aerodrome closed to fixed-wing aircraft."
+      ],
+      "explanation": "A red square with two yellow diagonal stripes (forming an X) indicates that landings are prohibited and that the prohibition is likely to be prolonged.",
+      "correctAnswer": 2,
+      "imageAlt": "A red square with two yellow diagonal stripes forming an X.",
+      "type": "image_question",
+      "question": "What does this specific signal square marking mean?",
+      "id": "pal-im-0036"
     }
   ],
   "mocks": []

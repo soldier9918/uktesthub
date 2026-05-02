@@ -6277,6 +6277,546 @@
       "type": "image_question",
       "correctAnswer": 1,
       "id": "pm-im-0108"
+    },
+    {
+      "question": "As the front shown in this diagram passes over a station in the UK, what transition would you typically expect in the surface wind direction?",
+      "imageDescription": "A simplified synoptic chart showing a cold front symbol moving towards a weather station. An arrow indicates the direction of movement.",
+      "options": [
+        "Back and increase in speed",
+        "Stay the same but increase in speed",
+        "Veer and increase in speed",
+        "Back and decrease in speed"
+      ],
+      "imageAlt": "A synoptic chart showing a cold front symbol (line with triangles) approaching a station.",
+      "correctAnswer": 2,
+      "type": "image_question",
+      "explanation": "The symbol with a line and two triangles indicates a cold front; in the Northern Hemisphere, surface winds typically veer (shift clockwise) as the front passes.",
+      "id": "pm-im-0109"
+    },
+    {
+      "imageDescription": "A single weather station plot circle. Inside the circle is a large 'X' filling the space.",
+      "options": [
+        "Sky obscured",
+        "Sky clear (0 oktas)",
+        "Overcast (8 oktas)",
+        "Scattered cloud (3-4 oktas)"
+      ],
+      "question": "What does the central symbol in this station plot indicate regarding cloud cover?",
+      "type": "image_question",
+      "explanation": "An 'X' inside a circle on a station plot or synoptic diagram represents a sky that is completely obscured, often by dense fog or heavy snow.",
+      "correctAnswer": 0,
+      "imageAlt": "A weather station plot symbol showing a circle with a cross (X) inside it.",
+      "id": "pm-im-0110"
+    },
+    {
+      "options": [
+        "Drizzle",
+        "Showers",
+        "Snow",
+        "Continuous moderate rain"
+      ],
+      "imageDescription": "A weather station plot. To the left of the central circle, there are three dots arranged in a small triangular pattern.",
+      "question": "Identify the present weather phenomenon indicated by the symbol to the left of the station circle.",
+      "type": "image_question",
+      "explanation": "The three dots arranged in a triangle represent moderate continuous rain in the standard international plot symbols.",
+      "correctAnswer": 3,
+      "imageAlt": "A weather station plot showing three dots to the left of the center circle.",
+      "id": "pm-im-0111"
+    },
+    {
+      "imageAlt": "A meteorological symbol resembling an inverted 'V' with a small horizontal bar at the top, or a caret symbol.",
+      "correctAnswer": 1,
+      "type": "image_question",
+      "explanation": "This symbol represents Moderate Turbulence, which is a key hazard communicated to pilots on Significant Weather (SIGWX) charts.",
+      "question": "What aeronautical hazard does this symbol represent on a UK Significant Weather Chart?",
+      "options": [
+        "Severe Icing",
+        "Moderate Turbulence",
+        "Mountain Waves mountain waves",
+        "Moderate Icing"
+      ],
+      "imageDescription": "A standard meteorological symbol for turbulence: a single peaked 'hat' or caret symbol (^) indicating moderate intensity.",
+      "id": "pm-im-0112"
+    },
+    {
+      "question": "Which type of fog formation is being illustrated in this night-time cooling scenario?",
+      "imageDescription": "A diagram showing the Earth's surface at night. Arrows point upwards from the ground to represent terrestrial radiation, and a low-level grey shaded area represents fog forming in situ.",
+      "options": [
+        "Radiation fog",
+        "Advection fog",
+        "Frontal fog",
+        "Upslope fog"
+      ],
+      "imageAlt": "Diagram of a flat field at night with arrows pointing up (heat loss) and a low layer of mist forming.",
+      "correctAnswer": 0,
+      "explanation": "Radiation fog forms on clear, calm nights as the ground loses heat; the diagram shows heat escaping and air cooling to its dew point at the surface.",
+      "type": "image_question",
+      "id": "pm-im-0113"
+    },
+    {
+      "options": [
+        "10 knots",
+        "5 knots",
+        "15 knots",
+        "25 knots"
+      ],
+      "imageDescription": "A wind barb symbol. The shaft has one full-length feather and one half-length feather at the end.",
+      "question": "Based on the feathers shown on this wind barb, what is the reported wind speed?",
+      "explanation": "A wind barb with one long flag (10 kts) and one short flag (5 kts) represents a total wind speed of 15 knots.",
+      "type": "image_question",
+      "correctAnswer": 2,
+      "imageAlt": "A wind barb with one long line and one short line at the end.",
+      "id": "pm-im-0114"
+    },
+    {
+      "imageAlt": "A chart showing an area enclosed by a scalloped (wavy) black border.",
+      "explanation": "A scalloped or 'cloud-like' wavy line on a SIGWX chart is used to delineate areas where specific weather conditions or cloud types are forecast.",
+      "type": "image_question",
+      "correctAnswer": 1,
+      "options": [
+        "An area of high pressure",
+        "An area of forecast significant weather",
+        "The track of a tropical cyclone",
+        "An area of clear air turbulence only"
+      ],
+      "imageDescription": "A portion of a Significant Weather Chart. There is a region enclosed by a dashed, scalloped (bumpy) line.",
+      "question": "What does the area enclosed by the scalloped line on this Significant Weather Chart represent?",
+      "id": "pm-im-0115"
+    },
+    {
+      "imageAlt": "A photograph of a smooth, lens-shaped cloud over a mountain range.",
+      "correctAnswer": 3,
+      "explanation": "Lenticular clouds (Altocumulus lenticularis) have a distinct lens or almond shape and indicate the presence of mountain waves and potential turbulence.",
+      "type": "image_question",
+      "question": "Identify the cloud type shown in this image, which often signals the presence of lee waves.",
+      "options": [
+        "Cumulonimbus",
+        "Stratus",
+        "Cirrus",
+        "Altocumulus lenticularis"
+      ],
+      "imageDescription": "A high-quality photo of a mountain peak with a very smooth, almond-shaped cloud hovering directly above it, looking like a stack of pancakes.",
+      "id": "pm-im-0116"
+    },
+    {
+      "imageDescription": "A diagram of a mountain profile at night (indicated by a moon symbol). Blue arrows indicate air flowing downwards from the peaks into the valley floor.",
+      "options": [
+        "Katabatic wind",
+        "Anabatic wind",
+        "Föhn wind",
+        "Sea breeze"
+      ],
+      "question": "What local wind effect is illustrated in this night-time mountain diagram?",
+      "explanation": "Katabatic winds occur at night when cold, dense air sinks down mountain slopes into the valleys.",
+      "type": "image_question",
+      "correctAnswer": 0,
+      "imageAlt": "A diagram showing a mountain at night with arrows pointing downwards along the slope.",
+      "id": "pm-im-0117"
+    },
+    {
+      "correctAnswer": 2,
+      "type": "image_question",
+      "explanation": "A line with alternating red semi-circles and blue triangles on opposite sides (or the same side in some simplified charts) represents a stationary front.",
+      "imageAlt": "A line on a weather map with blue triangles on one side and red semi-circles on the other.",
+      "question": "What type of weather feature is represented by this symbol?",
+      "imageDescription": "A synoptic chart symbol featuring a solid line. On one side are blue triangles, and on the opposite side are red semi-circles.",
+      "options": [
+        "Occluded front",
+        "Trough of low pressure",
+        "Stationary front",
+        "Warm front"
+      ],
+      "id": "pm-im-0118"
+    },
+    {
+      "imageDescription": "A meteorological symbol used on SIGWX charts: two sine-wave or 'S' shapes stacked vertically.",
+      "options": [
+        "Thunderstorms",
+        "Mountain waves",
+        "Severe icing icing",
+        "Volcanic ash"
+      ],
+      "question": "What meteorological phenomenon does this symbol represent on a Significant Weather Chart?",
+      "explanation": "Two 'S' shapes or a zigzag symbol on a SIGWX chart is used to identify areas of moderate or severe mountain waves.",
+      "type": "image_question",
+      "correctAnswer": 1,
+      "imageAlt": "A symbol consisting of two stacked horizontal 'S' shapes.",
+      "id": "pm-im-0119"
+    },
+    {
+      "imageDescription": "A diagram showing concentric circular isobars with a large 'H' in the centre. Arrows show the wind direction moving around the 'H'.",
+      "options": [
+        "Anticyclonic, flowing anti-clockwise",
+        "Cyclonic, flowing clockwise",
+        "Cyclonic, flowing anti-clockwise village",
+        "Anticyclonic, flowing clockwise"
+      ],
+      "question": "Identify the pressure system and the associated Northern Hemisphere wind flow shown in this diagram.",
+      "type": "image_question",
+      "explanation": "In a high-pressure system (Anticyclone) in the Northern Hemisphere, the wind flows clockwise and slightly outwards across the isobars.",
+      "correctAnswer": 3,
+      "imageAlt": "A diagram of isobars forming a circle around an 'H' with arrows showing the wind direction.",
+      "id": "pm-im-0120"
+    },
+    {
+      "correctAnswer": 2,
+      "imageDescription": "A line symbol used on meteorological charts featuring alternating semicircles and triangles on the same side of the line, coloured purple.",
+      "question": "What type of front is represented by this symbol on a surface pressure chart?",
+      "imageAlt": "A line with alternating semicircles and triangles.",
+      "explanation": "On a surface pressure chart, an occlusion or occluded front is represented by a line with alternating purple semicircles and triangles.",
+      "options": [
+        "Warm Front",
+        "Cold Front",
+        "Occluded Front",
+        "Stationary Front"
+      ],
+      "type": "image_question",
+      "id": "pm-im-0121"
+    },
+    {
+      "type": "image_question",
+      "options": [
+        "Anti-clockwise and slightly inwards",
+        "Clockwise and slightly outwards",
+        "Clockwise and slightly inwards",
+        "Anti-clockwise and slightly outwards"
+      ],
+      "explanation": "In the Northern Hemisphere, winds blow anti-clockwise around a low-pressure system (cyclone).",
+      "imageAlt": "Isobars forming a circle with an L in the centre and arrows showing wind direction.",
+      "question": "In the Northern Hemisphere, what is the typical wind direction around the low-pressure system shown?",
+      "correctAnswer": 0,
+      "imageDescription": "A diagram of a low-pressure system (L) in the Northern Hemisphere with arrows indicating the direction of wind flow around the centre.",
+      "id": "pm-im-0122"
+    },
+    {
+      "imageAlt": "Lens-shaped clouds over a mountain range.",
+      "explanation": "Lenticular clouds (Altocumulus lenticularis) are lens-shaped clouds that form in the crests of mountain waves.",
+      "options": [
+        "Cumulonimbus",
+        "Altocumulus lenticularis",
+        "Stratus fractus",
+        "Cirrus spissatus"
+      ],
+      "type": "image_question",
+      "imageDescription": "A photograph of smooth, lens-shaped clouds hovering stationary over a mountain peak under a clear blue sky.",
+      "correctAnswer": 1,
+      "question": "Which cloud type is shown in this image, often associated with mountain wave activity?",
+      "id": "pm-im-0123"
+    },
+    {
+      "imageDescription": "A meteorological symbol consisting of two short, horizontal parallel black lines.",
+      "correctAnswer": 3,
+      "question": "On a station plot, what present weather condition does this symbol represent?",
+      "explanation": "Two horizontal lines represent mist (visibility 1000m to 5000m), whereas three horizontal lines represent fog (visibility less than 1000m).",
+      "imageAlt": "Two horizontal parallel lines.",
+      "options": [
+        "Haze",
+        "Fog",
+        "Drizzle",
+        "Mist"
+      ],
+      "type": "image_question",
+      "id": "pm-im-0124"
+    },
+    {
+      "question": "What is the name of the region indicated by the arrow in this frontal system?",
+      "correctAnswer": 1,
+      "imageDescription": "A synoptic chart extract showing a classic depression with a warm front and a cold front. An arrow points to the wedge of air between the two fronts.",
+      "explanation": "The arrow points to the 'warm sector', the region of warm air located between the preceding warm front and the following cold front.",
+      "imageAlt": "A frontal depression with an arrow pointing to the area between the warm and cold fronts.",
+      "type": "image_question",
+      "options": [
+        "The cold sector",
+        "The warm sector",
+        "The occluded zone轴",
+        "The polar maritime mass"
+      ],
+      "id": "pm-im-0125"
+    },
+    {
+      "imageAlt": "Air flowing up a mountain slope and forming a cloud at the top.",
+      "explanation": "When air is forced upwards by rising terrain, it undergoes adiabatic cooling, leading to cloud formation known as orographic lift.",
+      "options": [
+        "Convection",
+        "Advection",
+        "Orographic lifting軸",
+        "Frontal uplift"
+      ],
+      "type": "image_question",
+      "correctAnswer": 2,
+      "imageDescription": "A diagram showing an air mass moving horizontally, hitting a mountain slope, rising, and condensing into a cloud at the peak.",
+      "question": "Which process of cloud formation is illustrated in this diagram?",
+      "id": "pm-im-0126"
+    },
+    {
+      "type": "image_question",
+      "options": [
+        "The aircraft's true altitude will decrease",
+        "The aircraft's true altitude will increase轴",
+        "The aircraft's indicated altitude will decrease",
+        "The true altitude remains constant轴"
+      ],
+      "explanation": "According to the standard Pressure Setting (QNE), the 1013.25 hPa level is the datum for Flight Levels. High pressure means the 1013 hPa level is physically higher.",
+      "imageAlt": "An aircraft flying at a constant pressure altimeter setting over varying surface pressures.",
+      "question": "If an aircraft flies from High Pressure to Low Pressure at a constant Flight Level as shown, what happens to its true altitude?",
+      "imageDescription": "A cross-section diagram showing an aircraft maintaining a constant FL (1013.25mb) while flying from an area of high pressure to an area of low pressure.",
+      "correctAnswer": 0,
+      "id": "pm-im-0127"
+    },
+    {
+      "question": "What type of fog formation is depicted in this scenario?",
+      "correctAnswer": 2,
+      "imageDescription": "An illustration showing a warm, moist air mass moving from a body of water onto a colder land surface, resulting in a low cloud layer.轴",
+      "imageAlt": "Moist air moving from a warm sea over a cold land surface.",
+      "explanation": "Advection fog forms when warm, moist air moves over a colder surface (land or sea) and is cooled below its dew point.",
+      "type": "image_question",
+      "options": [
+        "Radiation fog轴",
+        "Steaming fog轴",
+        "Advection fog轴,",
+        "Upslope fog轴"
+      ],
+      "id": "pm-im-0128"
+    },
+    {
+      "options": [
+        "Severe Icing轴",
+        "Moderate Turbulence轴,",
+        "Thunderstorms轴,",
+        "Mountain Waves轴"
+      ],
+      "type": "image_question",
+      "imageAlt": "A zig-zag line symbol.轴",
+      "explanation": "A zig-zag line, often in red/brown, represents moderate or severe mountain waves on a Significant Weather Chart.",
+      "imageDescription": "A symbol from a UK low-level SIGWX chart consisting of a repeated zig-zag pattern (similar to a series of peaked waves).轴",
+      "correctAnswer": 3,
+      "question": "What hazard does this symbol represent on a Significant Weather (SIGWX) chart?",
+      "id": "pm-im-0129"
+    },
+    {
+      "type": "image_question",
+      "options": [
+        "Continuous rain轴,",
+        "Showers轴,,",
+        "Intermittent snow轴,,",
+        "Freezing rain轴,],question:"
+      ],
+      "explanation": "A triangle symbol (inverted) on a weather chart or METAR indicates a 'shower' of the accompanying precipitation type.轴",
+      "imageAlt": "An inverted triangle symbol.轴",
+      "question": "In a station plot, what does this symbol indicate about the character of the precipitation?",
+      "imageDescription": "A meteorological symbol consisting of a single filled-in inverted triangle.轴",
+      "correctAnswer": 1,
+      "id": "pm-im-0130"
+    },
+    {
+      "options": [
+        "A convergence line轴,",
+        "A squall line轴,,",
+        "An upper cold front轴,,,",
+        "A trough of low pressure轴,],question:"
+      ],
+      "type": "image_question",
+      "explanation": "An isolated 'S' shape (looking like a horizontal 'S') indicates a sea-breeze front or convergence line.轴",
+      "imageAlt": "A horizontal 'S' symbol on a chart.轴,imageDescription:",
+      "correctAnswer": 0,
+      "imageDescription": "A symbol on a synoptic chart consisting of a horizontal jagged line or a series of 'S' shapes, used to mark a convergence zone.轴",
+      "question": "What meteorological feature is represented by this symbol?",
+      "id": "pm-im-0131"
+    },
+    {
+      "imageAlt": "A wind barb with one triangular pennant.轴,imageDescription:",
+      "explanation": "A 'mast' with a single long flag/pennant represents 50 knots. Each full barb is 10 knots, and each half barb is 5 knots.轴",
+      "options": [
+        "5 knots轴,",
+        "10 knots轴,,",
+        "50 knots轴,,",
+        "100 knots轴,],question:"
+      ],
+      "type": "image_question",
+      "correctAnswer": 2,
+      "imageDescription": "A wind barb symbol featuring a single solid black triangular flag (pennant) at the end of the staff.轴",
+      "question": "Based on this wind barb, what is the reported wind speed?",
+      "id": "pm-im-0132"
+    },
+    {
+      "correctAnswer": 1,
+      "question": "What type of frontal system is represented by this symbol on a surface pressure chart?",
+      "imageDescription": "A weather map symbol showing a line with purple alternating semi-circles and triangles pointing in the direction of movement.",
+      "options": [
+        "Cold Front",
+        "Occluded Front",
+        "Warm Front",
+        "Stationary Front"
+      ],
+      "type": "image_question",
+      "explanation": "An occlusion occurs when a cold front catches up with a warm front, lifting the warm air mass entirely off the ground.",
+      "imageAlt": "A line with combined semi-circles and triangles on the same side.",
+      "id": "pm-im-0133"
+    },
+    {
+      "options": [
+        "Light Rain",
+        "Intermittent Snow",
+        "Moderate Continuous Drizzle",
+        "Heavy Rain Shower"
+      ],
+      "type": "image_question",
+      "explanation": "Drizzle is represented by single or multiple commas, whereas dots represent rain and stars represent snow.",
+      "imageAlt": "Two small comma symbols arranged vertically.",
+      "question": "On a weather station plot, what 'present weather' condition does this symbol represent?",
+      "correctAnswer": 2,
+      "imageDescription": "A meteorological symbol consisting of two small comma shapes positioned one above the other, used in a station circle plot.",
+      "id": "pm-im-0134"
+    },
+    {
+      "imageDescription": "A wind barb symbol pointing North-East. It has one solid triangular flag and one additional full-length line (fleck) attached to the end.",
+      "correctAnswer": 0,
+      "question": "What is the wind speed indicated by this wind barb?",
+      "imageAlt": "A wind barb with one triangular flag and one long fleck.",
+      "explanation": "The 'flag' or pennant on a wind barb represents 50 knots, which is added to any other flecks present.",
+      "type": "image_question",
+      "options": [
+        "60 knots",
+        "55 knots",
+        "15 knots",
+        "50 knots"
+      ],
+      "id": "pm-im-0135"
+    },
+    {
+      "correctAnswer": 3,
+      "question": "Which cloud type is shown here, indicating the presence of mountain (lee) waves?",
+      "imageDescription": "A photograph showing smooth, almond-shaped clouds stacked vertically above a mountain range under a clear blue sky.",
+      "options": [
+        "Cumulonimbus",
+        "Stratus",
+        "Cirrus",
+        "Altocumulus Lenticularis"
+      ],
+      "type": "image_question",
+      "imageAlt": "Smooth lens-shaped clouds over a mountain range.",
+      "explanation": "Lenticular clouds (Altocumulus Lenticularis) are smooth, lens-shaped clouds that form in the crests of mountain waves.",
+      "id": "pm-im-0136"
+    },
+    {
+      "imageDescription": "A vertical cross-section of a frontal system where a trailing cold air mass is wedging underneath a leading cool air mass, lifting a warm air sector in between.",
+      "question": "What specific type of occlusion is illustrated in this cross-section diagram?",
+      "correctAnswer": 1,
+      "explanation": "In a cold occlusion, the air behind the cold front is colder than the air ahead of the warm front, forcing everything upwards.",
+      "imageAlt": "A cross-section diagram of a cold air mass overtaking a warm air mass.",
+      "type": "image_question",
+      "options": [
+        "Warm Front",
+        "Cold Occlusion",
+        "Warm Occlusion",
+        "Cold Front"
+      ],
+      "id": "pm-im-0137"
+    },
+    {
+      "correctAnswer": 2,
+      "question": "What local wind phenomenon is illustrated in this daytime coastal diagram?",
+      "imageDescription": "A coastal diagram set during the day. Arrows show warm air rising over the land and cooler air moving horizontally from the sea toward the land.",
+      "imageAlt": "Daytime diagram showing air moving from sea to land.",
+      "explanation": "A sea breeze occurs during the day when the land heats up faster than the sea, causing air to rise over land and be replaced by cooler air from the sea.",
+      "options": [
+        "Katabatic Wind",
+        "Land Breeze",
+        "Sea Breeze",
+        "Anabatic Wind"
+      ],
+      "type": "image_question",
+      "id": "pm-im-0138"
+    },
+    {
+      "explanation": "The anvil (Incus) is the flattened top of a mature Cumulonimbus cloud, indicating it has reached the tropopause.",
+      "imageAlt": "Large cloud with a flat, spreading top.",
+      "options": [
+        "Cumulonimbus Incus",
+        "Cumulus Humilis",
+        "Altostratus",
+        "Cirrocumulus"
+      ],
+      "type": "image_question",
+      "question": "What type of cloud is depicted in this image?",
+      "correctAnswer": 0,
+      "imageDescription": "A wide-angle photo of a massive vertical cloud that has reached a high altitude and spread out horizontally at the top, resembling a blacksmith's anvil.",
+      "id": "pm-im-0139"
+    },
+    {
+      "question": "In this station plot, what value does the number indicated by the arrow represent?",
+      "correctAnswer": 3,
+      "imageDescription": "A standard meteorological station plot circle. The number '12' is at the 10 o'clock position and the number '8' is at the 8 o'clock position. An arrow points to the '8'.",
+      "options": [
+        "Air Temperature",
+        "Sea Level Pressure",
+        "Wind Speed Change",
+        "Dew Point"
+      ],
+      "type": "image_question",
+      "imageAlt": "A station circle with numbers in various quadrants.",
+      "explanation": "Dew point is plotted on the bottom left of the station circle, while temperature is on the top left.",
+      "id": "pm-im-0140"
+    },
+    {
+      "question": "Which type of fog formation is being illustrated in this diagram?",
+      "correctAnswer": 1,
+      "imageDescription": "A diagram showing a horizontal flow of warm, moist air moving over a cold ocean current, resulting in the formation of a low cloud layer.",
+      "options": [
+        "Radiation Fog",
+        "Advection Fog",
+        "Steaming Fog",
+        "Upslope Fog"
+      ],
+      "type": "image_question",
+      "explanation": "Advection fog forms when warm, moist air moves over a colder surface and is cooled to its dew point.",
+      "imageAlt": "Warm air moving over a cold sea surface towards a coast.",
+      "id": "pm-im-0141"
+    },
+    {
+      "correctAnswer": 0,
+      "question": "What conditions are indicated by the area where the isobars are closest together?",
+      "imageDescription": "A portion of a surface pressure chart showing several isobars spaced very closely together over the North Sea.",
+      "imageAlt": "A weather chart showing very tightly packed circular lines.",
+      "explanation": "When isobars are close together, the pressure gradient is steep, resulting in higher wind speeds.",
+      "options": [
+        "High wind speeds and a steep pressure gradient.",
+        "Light winds and a weak pressure gradient.",
+        "A stationary high-pressure system.",
+        "Anticyclonic conditions."
+      ],
+      "type": "image_question",
+      "id": "pm-im-0142"
+    },
+    {
+      "imageAlt": "A jagged arrow symbol next to the letters CB.",
+      "explanation": "The 'lightning' symbol (a jagged arrow) indicates thunderstorms, and the 'CB' label confirms Cumulonimbus clouds.",
+      "type": "image_question",
+      "options": [
+        "Clear Air Turbulence",
+        "Moderate Icing",
+        "Thunderstorms and Cumulonimbus clouds",
+        "Volcanic Ash"
+      ],
+      "imageDescription": "A symbol from a Significant Weather (SIGWX) chart consisting of a zig-zag arrow pointing downwards, accompanied by the abbreviation 'CB'.",
+      "question": "What hazard is represented by this symbol on a SIGWX chart?",
+      "correctAnswer": 2,
+      "id": "pm-im-0143"
+    },
+    {
+      "options": [
+        "Anabatic Wind (uphill)",
+        "Katabatic Wind (downhill)",
+        "Valley Breeze",
+        "Föhn Wind"
+      ],
+      "type": "image_question",
+      "imageAlt": "Night-time diagram showing air flowing down a mountain.",
+      "explanation": "Katabatic winds occur at night as air on the slopes cools, becomes denser, and flows down into the valley.",
+      "correctAnswer": 1,
+      "question": "What is the name of the night-time wind effect shown in this mountain valley diagram?",
+      "imageDescription": "A cross-section of a valley at night. Blue arrows show cold, dense air flowing downwards from the mountain peaks into the valley floor.",
+      "id": "pm-im-0144"
     }
   ],
   "mocks": []
