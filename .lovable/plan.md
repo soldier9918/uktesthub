@@ -1,60 +1,91 @@
-# Plan: Dropdown styling, post-results navigation, and per-mock weight compliance
+# Fix missing images on image-based questions (Practice + Exam)
 
-## 1. Inline dropdown styling (`/quiz/grammar-mock-1` and all `dropdown_blanks` / `drag_drop_blanks`)
+## What's actually wrong
 
-**File:** `src/components/QuizRunner.tsx` — `FillBlanksQuestionView` (≈ lines 718–757)
+The user's screenshot ("What does this blue circular sign indicate to drivers?" with no picture) is one example of a wider data issue:
 
-Problem: the sentence wrapper is a `<p>` with `text-base leading-[2.4]`. The `<select>` element renders, but on some flex/grid parents inherits full row width. Even though it has `inline-block`, several browsers compute `<select>` width based on content + browser min-width that can stretch.
+- **1,220 questions** across **30 topics** are typed `image_question` (or their wording references "this sign / this image / this diagram / shown above") but have **no `image` field set**.
+- The mock loader (`src/data/mocks/index.ts` → `rawToQuestion`) silently degrades any `image_question` without an `image` URL into a plain MCQ. So the user sees an image-dependent question with no image, four answers, and no way to know what's being asked.
+- This affects both Practice and Exam mode equally — they share the same question rendering pipeline (`QuizRunner.tsx`). Practice/Exam logic itself is fine; the data + the silent fallback are the bug.
 
-Changes:
-- Replace the `<p>` with a `<div>` that uses `leading-[2.4]` and explicit inline flow (no flex). Keep prose readable.
-- On the `<select>`: add `w-auto max-w-full min-w-[6rem] align-middle` and remove `block`-promoting utilities. Set `style={{ width: 'auto' }}` defensively to override any inherited stretch.
-- Wrap each `<select>` in an `<span className="inline-flex align-baseline">` so the surrounding text continues to flow inline.
-- Apply the same fix path to `DragDropBlanksView` (it delegates to `FillBlanksQuestionView`, so a single change covers both).
+Worst-affected topics:
 
-## 2. Post-results "More mock tests" navigation does nothing
+```text
+road-signs           456
+topographical        455
+hazard-perception    424
+rya-day-skipper      234
+police-search        228
+ppl-meteorology      195
+citb-hse / fire-safety / first-aid / ipaf-pasma /
+microsoft-fundamentals / sia-cctv / comptia-a-plus /
+cscs-operative       162 each
+motorcycle-theory    131
+firefighter-nfsat / health-safety-awareness /
+manual-handling      130 each
+…30 topics in total
+```
 
-**File:** `src/routes/quiz.$slug.tsx`
+The only topics that already have working image artwork are `driving-theory` (16 imgs) and `bmat`. `public/road-signs/page-1..8.png` exist but are full Highway Code reference sheets (1103×2067) containing ~25 signs each — they cannot be used as-is, individual signs must be cropped out.
 
-Root cause: `<QuizRunner quiz={quiz} />` has no `key`. When the user clicks a related mock link, the URL/`slug` param changes and `quiz` updates, but React keeps the previous `QuizRunner` instance mounted with its `finished=true` state, so the user keeps seeing the old Results screen.
+## Fix plan
 
-Fix: add `key={quiz.slug}` to `<QuizRunner>` so it remounts on slug change, resetting `mode`, `answers`, `finished`, `timeLeft`.
+### 1. Stop the silent fallback (loader)
 
-Also: the "More tests" / "More mock tests" cards already use `<Link to="/quiz/$slug" params={{ slug: r.slug }}>` which is correct — no change needed there.
+`src/data/mocks/index.ts` currently does this for `image_question` with no `image`:
 
-## 3. Per-mock weight compliance
+```ts
+// Degrade to MCQ until a real image URL is wired in.
+return { type: "mcq", ... };
+```
 
-The audit shows 11 topics where most/all mocks ignore the configured type weights. Worst offenders are sentence/literacy topics that ended up with 100% one type:
+Change behaviour so it never silently strips the image dependency:
 
-| Topic | Current (mock 1) | Required weights |
-|---|---|---|
-| grammar | dropdown 24 | dropdown 0.40 / drag-drop 0.25 / mcq 0.25 / true-false 0.10 |
-| nhs-literacy | mcq 24 | mcq 0.55 / dropdown 0.30 / true-false 0.15 |
-| toefl | mcq 24 | mcq 0.50 / dropdown 0.25 / drag-drop 0.15 / true-false 0.10 |
-| uk-geography | mcq 24 | mcq 0.60 / image 0.25 / drag-drop 0.15 |
-| uk-laws-rights | mcq 24 | mcq 0.65 / true-false 0.25 / dropdown 0.10 |
-| ph-hmrc-tax-check | mcq 24 | mcq 0.80 / true-false 0.20 |
-| ph-london-regulations | mcq 24 | mcq 0.60 / true-false 0.20 / multi-response 0.20 |
-| ph-passenger-safety | mcq 24 | mcq 0.55 / multi-response 0.30 / true-false 0.15 |
-| esol | mcq 17 / dropdown 7 | mcq 0.45 / dropdown 0.30 / drag-drop 0.15 / true-false 0.10 |
-| verbal | mcq 18 / dropdown 6 | mcq 0.60 / dropdown 0.25 / true-false 0.15 |
-| logical | mcq 18 / drag-drop 6 | mcq 0.60 / drag-drop 0.25 / hot-spot 0.15 |
+- If the question text references an image (or type is `image_question`) and there is no resolvable image, mark the question with `imageMissing: true` and pass it through as `image-question`.
+- `QuizRunner.tsx` `ImageQuestionView` (lines ~430–460) renders a clear placeholder with the question's `imageDescription` text instead of pretending the question is text-only. This stops the misleading screen the user reported even before all artwork is in place.
 
-Approach (script in `scripts/`):
+### 2. Add a road-signs image library and wire it up
 
-1. For each non-compliant topic, compute target counts per type for a 24-question mock via `round(weight * 24)`, then top-up with the highest-weight type so total = 24.
-2. Group the existing question bank by normalized type. Where a required type is missing entirely from the bank (e.g. grammar has zero `multiple_choice`/`drag_drop_blanks`/`true_false`, nhs-literacy has no `dropdown_blanks`/`true_false`), generate the missing questions deterministically:
-   - Convert a subset of existing dropdown_blanks → drag_drop_blanks (same data shape, only `type` differs) for grammar.
-   - Synthesize the remaining types from each topic's existing question texts using a small templated generator (e.g. true/false statements derived from MCQ correct answers; MCQ from dropdown sentences turned into "Which word completes the sentence?"). Keep explanations meaningful.
-3. Re-pack each mock by sampling per-type counts from the bank with a stable seed per `mockNumber` so the 45 mocks remain deterministic and each mock individually matches the weights (±1 question rounding).
-4. Re-run the audit script as a check; fail loudly if any mock is off.
-5. Spot-verify in the browser: open one mock from each fixed topic and confirm the question types vary as expected.
+For all UK driving / road-sign questions (`road-signs`, `driving-theory` extra signs, `motorcycle-theory`, `hazard-perception` sign-only items):
 
-Other 78 topics already pass the audit and will not be modified.
+1. Run a one-off cropping script (`scripts/crop_road_signs.py`, ImageMagick + manual cell grid per page) that splits `public/road-signs/page-1..8.png` into individual sign PNGs at `public/road-signs/signs/{slug}.png` (e.g. `no-entry.png`, `give-way.png`, `max-speed-30.png`, `national-speed-limit.png`, `school-crossing-patrol.png`, …). Each page is a regular grid so the crop boxes are deterministic.
+2. Build `public/road-signs/signs/index.json` mapping slug → file + human label + a list of keywords ("blue circular", "no entry", "national speed limit", "30 mph", "give way", …).
+3. Run a matching script that, for every affected question in `road-signs.json`, `motorcycle-theory.json`, `hazard-perception.json`, and the relevant `driving-theory.json` items, picks the best sign by matching the keywords from `imageDescription` / `imageAlt` / question text against the sign index. Write the resolved path into the question's `image` field.
+4. Anything that doesn't get a confident match keeps `imageMissing: true` and shows the placeholder from step 1 — never the misleading "MCQ with no image" screen.
+
+### 3. Handle non-driving image topics
+
+Topics like `citb-hse`, `fire-safety`, `first-aid`, `ipaf-pasma`, `food-hygiene`, `manual-handling`, `sia-cctv`, `firefighter-nfsat`, `border-force`, `comptia-a-plus`, `microsoft-fundamentals`, `topographical`, `ppl-meteorology`, `rya-day-skipper`, `atpl-basics`, `bmat`, `police-search` reference diagrams and hazard pictograms we don't have artwork for. For these:
+
+- Run a script (`scripts/rewrite_image_questions.py`) that, for any `image_question` without an `image`, rewrites the question text so it stops referring to a missing image. It uses the existing `imageDescription` to turn:
+  > "What hazard does this warning sign identify?" (image: missing)
+
+  into:
+  > "A yellow triangular warning sign showing a black falling-rocks icon. What hazard does this sign identify?"
+
+  and changes `type` to `multiple_choice`. The answer/options/explanation are unchanged, so correctness is preserved. This converts the question into a self-contained text question instead of a broken image question.
+- Re-run `scripts/rebalance_mocks.py` afterward so per-mock weight compliance is preserved (these conversions move questions from `image_question` into `multiple_choice` and the weights for these topics already cap `image_question` at low percentages — the rebalancer will handle the redistribution).
+
+### 4. Verify Practice + Exam parity
+
+- After the data fixes, run a small audit script that walks every mock in every topic and asserts: no question is rendered with a "this image / this sign / shown above" wording unless either (a) `image` resolves to an existing file in `public/`, or (b) the question text has been rewritten to be self-contained.
+- Browser-test:
+  - `/quiz/road-signs-mock-1` Practice mode and Exam mode — confirm sign images render.
+  - `/quiz/driving-theory-mock-1` — confirm existing driving-theory images still work.
+  - `/quiz/citb-hse-mock-1` — confirm rewritten questions read sensibly with no "this sign" reference left dangling.
 
 ## Technical notes
 
-- Audit logic: `round(weight * questionsPerMock)` per type; allow ±2 tolerance per type and reject any extra type that isn't in the weights map.
-- Type normalization: `type.replace('-', '_')`; treat missing `type` as `multiple_choice`.
-- Mock files use both v1 (`tests[].questions`) and v2 (`bank` + `mocks[].questionIds`); the rebuild script must handle both, preserving existing IDs in v2.
-- No schema changes — only data and the two component edits above.
+- Loader change is a one-line behaviour swap in `rawToQuestion` plus a small JSX block in `ImageQuestionView` for the placeholder.
+- All data scripts are deterministic and idempotent. They live in `scripts/` and write JSON in place. No schema migration.
+- Cropping uses `nix run nixpkgs#imagemagick -- convert page-N.png -crop WxH+X+Y signs/slug.png`. Crop boxes are derived once from the regular grid layout of each Highway Code page.
+- Keyword matcher uses simple lowercased token overlap with a small synonyms map ("circular" ↔ "circle", "30 mph" ↔ "30mph"); ties broken by longest match. Uncertain matches are left for the placeholder fallback — we never guess.
+- No changes to QuizRunner mode logic (Practice vs Exam already share rendering); only the image placeholder UI is added.
+
+## Files touched
+
+- `src/data/mocks/index.ts` — remove silent MCQ fallback for `image_question`, add `imageMissing` passthrough.
+- `src/components/QuizRunner.tsx` — `ImageQuestionView` placeholder when `imageMissing`.
+- `scripts/crop_road_signs.py` (new), `scripts/match_road_signs.py` (new), `scripts/rewrite_image_questions.py` (new), `scripts/audit_image_questions.py` (new).
+- `public/road-signs/signs/*.png` (new, generated), `public/road-signs/signs/index.json` (new).
+- ~30 mock JSON files in `src/data/mocks/` — `image` fields populated where matched, image-only questions rewritten to self-contained text where not.
