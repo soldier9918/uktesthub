@@ -4517,6 +4517,186 @@
       ],
       "correctAnswer": 2,
       "id": "rds-im-0047"
+    },
+    {
+      "imageAlt": "Yellow buoy with an X topmark",
+      "correctAnswer": 1,
+      "explanation": "A yellow buoy with an 'X' topmark indicates a Special Mark, used to mark areas like racing marks or outfalls.",
+      "question": "What type of buoy is represented by this image?",
+      "type": "image_question",
+      "options": [
+        "Lateral Mark",
+        "Special Mark",
+        "Safe Water Mark",
+        "Emergency Wreck Buoy"
+      ],
+      "imageDescription": "A yellow pillar-shaped buoy with a yellow 'X' as a topmark.",
+      "id": "rds-im-0048"
+    },
+    {
+      "correctAnswer": 0,
+      "imageAlt": "Three black balls in a vertical line",
+      "explanation": "Three black spheres in a vertical line indicate a vessel aground.",
+      "question": "What is the status of a vessel displaying these three day shapes?",
+      "type": "image_question",
+      "imageDescription": "A vessel's mast displaying three black spheres (balls) in a vertical line.",
+      "options": [
+        "Vessel Aground",
+        "Vessel Constrained by Draught",
+        "Vessel Restricted in Ability to Manoeuvre",
+        "Power-driven vessel underway"
+      ],
+      "id": "rds-im-0049"
+    },
+    {
+      "correctAnswer": 2,
+      "imageAlt": "Green conical buoy",
+      "explanation": "A green conical buoy is a starboard hand lateral mark, which should be kept to the starboard side when entering a harbour (upstream).",
+      "question": "On which side should you leave this buoy when entering a harbour?",
+      "type": "image_question",
+      "options": [
+        "Port side when entering harbour",
+        "Port side when leaving harbour house",
+        "Starboard side when entering harbour",
+        "North side of the channel"
+      ],
+      "imageDescription": "A green conical buoy used for lateral navigation.",
+      "id": "rds-im-0050"
+    },
+    {
+      "type": "image_question",
+      "options": [
+        "I am taking on water.",
+        "I have a diver down.",
+        "I require a pilot.",
+        "I am taking in, discharging, or carrying dangerous cargo."
+      ],
+      "imageDescription": "International Code Flag Bravo, which is a solid red flag with a swallow-tail swallow-cut.",
+      "imageAlt": "Red swallow-tailed flag",
+      "correctAnswer": 3,
+      "explanation": "Flag 'B' (Bravo) is a red swallow-tailed flag indicating the vessel is handling dangerous cargo.",
+      "question": "What is the meaning of this International Code Flag?",
+      "id": "rds-im-0051"
+    },
+    {
+      "imageDescription": "An isolated danger mark with black and red horizontal bands and two black spheres as a topmark.",
+      "options": [
+        "Isolated Danger Mark",
+        "South Cardinal Mark",
+        "Port Hand Lateral Mark",
+        "Preferred Channel Mark"
+      ],
+      "type": "image_question",
+      "question": "Identify this buoy and the nature of the danger it marks.",
+      "explanation": "A white light showing 2 flashes every 10 seconds (Fl(2) 10s) on an isolated danger mark (black/red/black) indicates a hazard with navigable water all around.",
+      "imageAlt": "Black and red buoy with two black spheres",
+      "correctAnswer": 0,
+      "id": "rds-im-0052"
+    },
+    {
+      "type": "image_question",
+      "options": [
+        "Always underwater rock",
+        "Danger line",
+        "Rock which covers and uncovers",
+        "Dangerous wreck"
+      ],
+      "imageDescription": "A nautical chart symbol featuring a cross (plus sign) with a dot in each of the four quadrants.",
+      "correctAnswer": 2,
+      "imageAlt": "Plus symbol with dots in corners on a chart",
+      "explanation": "Rock which covers and uncovers (intertidal) is shown with a '+' symbol and dots in the corners on Admiralty charts.",
+      "question": "On a UK nautical chart, what does this symbol represent?",
+      "id": "rds-im-0053"
+    },
+    {
+      "correctAnswer": 1,
+      "imageAlt": "Green light over a white light",
+      "question": "What type of vessel is indicated by these lights at night?",
+      "explanation": "Trawlers show a green light over a white light in a vertical line at night.",
+      "type": "image_question",
+      "options": [
+        "Pilot vessel on duty",
+        "Vessel engaged in trawling",
+        "Sailing vessel underway",
+        "Vessel at anchor"
+      ],
+      "imageDescription": "Night-time lights of a vessel showing a green all-round light vertically above a white all-round light.",
+      "id": "rds-im-0054"
+    },
+    {
+      "question": "On which side of this mark is it safe to pass?",
+      "explanation": "A North Cardinal mark has both cones pointing up and flashes continuously. Pass to the North.",
+      "imageAlt": "Yellow and black buoy with two cones pointing up",
+      "correctAnswer": 3,
+      "imageDescription": "A North Cardinal pillar buoy, black at the top and yellow at the bottom, with two black cones pointing upwards.",
+      "options": [
+        "South of it",
+        "East of it",
+        "West of it",
+        "North of it"
+      ],
+      "type": "image_question",
+      "id": "rds-im-0055"
+    },
+    {
+      "correctAnswer": 2,
+      "imageAlt": "The letter M on a chart bottom",
+      "question": "What does this abbreviation indicate about the nature of the seabed?",
+      "explanation": "The 'M' abbreviation stands for Mud on nautical charts. Other common ones are S (Sand) and Sh (Shells).",
+      "type": "image_question",
+      "imageDescription": "The abbreviation 'M' printed on the seabed area of a nautical chart.",
+      "options": [
+        "Mixed Shingle",
+        "Magnetic Variation",
+        "Mud",
+        "Metres depth"
+      ],
+      "id": "rds-im-0056"
+    },
+    {
+      "correctAnswer": 1,
+      "imageAlt": "Diagonal yellow and red flag",
+      "explanation": "Flag 'O' (Oscar) is split diagonally into yellow and red, signifying 'Man Overboard'.",
+      "question": "What is the meaning of this flag when flown alone?",
+      "type": "image_question",
+      "options": [
+        "I require medical assistance.",
+        "Man Overboard.",
+        "I am dragging my anchor.",
+        "Keep clear, I am maneuvering with difficulty."
+      ],
+      "imageDescription": "International Code Flag Oscar, consisting of two triangles, one yellow and one red, divided diagonally.",
+      "id": "rds-im-0057"
+    },
+    {
+      "correctAnswer": 0,
+      "imageAlt": "Single lantern with red, green, and white sectors",
+      "explanation": "Under Rule 25, a sailing vessel under 20m can use a combined tricolour light at the masthead.",
+      "question": "Which vessel may use this single lantern instead of separate sidelights and sternlight?",
+      "type": "image_question",
+      "imageDescription": "A single tricolour masthead lantern showing red to port, green to starboard, and white to stern.",
+      "options": [
+        "Sailing vessel less than 20m in length",
+        "Power-driven vessel less than 7m in length",
+        "Vessel engaged in pilotage duties",
+        "Vessel restricted in her ability to manoeuvre"
+      ],
+      "id": "rds-im-0058"
+    },
+    {
+      "question": "What is the status of a vessel showing these lights at night?",
+      "explanation": "Two red lights in a vertical line indicate a vessel Not Under Command (NUC), unable to deviate from her course.",
+      "correctAnswer": 3,
+      "imageAlt": "Two vertical red lights",
+      "imageDescription": "Night-time lights of a vessel showing two red all-round lights in a vertical line.",
+      "options": [
+        "Vessel aground",
+        "Vessel engaged in underwater operations",
+        "Vessel at anchor",
+        "Vessel Not Under Command"
+      ],
+      "type": "image_question",
+      "id": "rds-im-0059"
     }
   ],
   "mocks": []

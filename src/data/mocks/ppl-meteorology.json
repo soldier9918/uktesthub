@@ -7836,87 +7836,87 @@
       "id": "pm-tf-0036"
     },
     {
+      "question": "The temperature in the International Standard Atmosphere (ISA) is assumed to remain constant above 36,090 feet up to 65,617 feet.",
+      "explanation": "In the ISA, temperature decreases linearly until the tropopause, which is defined at 36,090 feet (11 km), where it then remains constant.",
       "correctAnswer": true,
-      "question": "The height of the troposphere is generally higher over the equator than it is over the poles.",
       "type": "true_false",
-      "explanation": "The troposphere varies in depth, being deepest at the equator (up to 16km) and shallowest at the poles (approx 8km).",
       "id": "pm-tf-0037"
     },
     {
-      "explanation": "In the Northern Hemisphere, winds blow anti-clockwise (cyclonic) around the center of a low-pressure system.",
-      "question": "In the Northern Hemisphere, the wind blows in a clockwise direction around a low-pressure system (cyclone).",
-      "type": "true_false",
+      "explanation": "High pressure systems (anticyclones) in the Northern Hemisphere exhibit a clockwise circulation around the centre.",
+      "question": "In the Northern Hemisphere, the wind circulates in an anti-clockwise direction around an area of high pressure.",
       "correctAnswer": false,
+      "type": "true_false",
       "id": "pm-tf-0038"
     },
     {
       "type": "true_false",
-      "question": "A Terminal Aerodrome Forecast (TAF) is a report of actual weather conditions observed at a specific time.",
-      "explanation": "A TAF (Terminal Aerodrome Forecast) is a prediction of future conditions; a METAR is a report of actual observed weather.",
-      "correctAnswer": false,
+      "correctAnswer": true,
+      "question": "Standing waves (mountain waves) can produce clouds that appear to remain stationary despite high wind speeds at that altitude.",
+      "explanation": "Lenticular clouds (Altocumulus Lenticularis) remain stationary relative to the ground even though the wind is blowing through them.",
       "id": "pm-tf-0039"
     },
     {
-      "explanation": "Adiabatic cooling occurs because the decreasing external pressure allows the air parcel to expand, which uses internal energy.",
+      "correctAnswer": false,
+      "explanation": "Advection fog is formed when warm, moist air moves over a colder surface, cooling the air to its dew point.",
+      "question": "Advection fog is primarily caused by the ground cooling down due to terrestrial radiation on a clear, calm night.",
       "type": "true_false",
-      "question": "When a parcel of air rises, it expands and cools even if no heat is added to or taken away from it.",
-      "correctAnswer": true,
       "id": "pm-tf-0040"
     },
     {
-      "explanation": "1013.25 hPa is equivalent to 29.92 inches of mercury (Hg), not 28.92.",
       "type": "true_false",
-      "question": "The International Standard Atmosphere (ISA) pressure at mean sea level is 28.92 inches of mercury.",
-      "correctAnswer": false,
+      "correctAnswer": true,
+      "explanation": "Water vapour is less dense than dry air; therefore, moist air is lighter and less dense than dry air at the same temperature and pressure.",
+      "question": "Air is less dense when it contains a higher concentration of water vapour.",
       "id": "pm-tf-0041"
     },
     {
-      "explanation": "Virga occurs when precipitation falls from a cloud base but evaporates in dry air before it can reach the ground surface.",
       "type": "true_false",
-      "question": "'Virga' refers to rain or snow that evaporates before it reaches the ground.",
-      "correctAnswer": true,
+      "correctAnswer": false,
+      "explanation": "A 'VEER' is a clockwise change in direction (e.g., West to North). A counter-clockwise change (e.g., North to West) is called a 'BACK'.",
+      "question": "If the wind direction changes from 270° to 310°, the wind is said to have backed.",
       "id": "pm-tf-0042"
     },
     {
+      "question": "The general movement of frontal depressions across the United Kingdom is from East to West.",
+      "explanation": "Frontal depressions in the UK typically move from West to East, driven by the prevailing westerly flow and the jet stream.",
+      "correctAnswer": false,
       "type": "true_false",
-      "question": "Advection fog can form even in relatively high wind speeds, unlike radiation fog which usually requires light winds.",
-      "explanation": "Advection fog forms when warm, moist air moves over a cold surface, cooling the air to its dew point.",
-      "correctAnswer": true,
       "id": "pm-tf-0043"
     },
     {
-      "explanation": "Lenticular (lens-shaped) clouds are typically associated with stable air layers where wave motion is present.",
-      "question": "Altocumulus Lenticularis clouds are a classic sign of high atmospheric instability and local thunderstorms.",
+      "correctAnswer": true,
+      "question": "The presence of Stratus cloud is usually an indication of stable atmospheric conditions.",
+      "explanation": "Stable air tends to flow in horizontal layers, leading to smooth flying conditions and the formation of stratiform (layer) clouds.",
       "type": "true_false",
-      "correctAnswer": false,
       "id": "pm-tf-0044"
     },
     {
       "correctAnswer": true,
-      "explanation": "QFE is the pressure at the airfield datum; when set, the altimeter will read zero on the ground.",
+      "question": "A TAF (Terminal Aerodrome Forecast) is a statement of expected meteorological conditions at an airport for a specified period.",
+      "explanation": "A TAF provides a forecast of expected weather conditions at a specific aerodrome for a set period, unlike a METAR which is a report of actual conditions.",
       "type": "true_false",
-      "question": "When the altimeter is set to the QFE of an airfield, it will show the height of the aircraft above that airfield.",
       "id": "pm-tf-0045"
     },
     {
-      "question": "Clear ice (glaze ice) is most likely to form in Stratiform clouds where small droplets freeze instantly upon impact.",
       "type": "true_false",
-      "explanation": "Clear ice is typically formed by large supercooled water droplets that spread before freezing, often found in Cumulus clouds.",
+      "question": "When the altimeter is set to the local QFE, the instrument indicates the aircraft's height above Mean Sea Level.",
+      "explanation": "QFE is the pressure measured at the aerodrome datum; an altimeter set to QFE will read zero on the ground, not the elevation.",
       "correctAnswer": false,
       "id": "pm-tf-0046"
     },
     {
-      "correctAnswer": true,
-      "explanation": "Low-level wind shear is a rapid change in wind direction or speed and can occur near the surface during a temperature inversion.",
       "type": "true_false",
-      "question": "Wind shear can occur at a temperature inversion layer, especially when there have been strong winds above the inversion.",
+      "correctAnswer": true,
+      "explanation": "Under these conditions, the aircraft is lower than the altimeter indicates. The mnemonic 'High to Low, Look out Below' applies to both pressure and temperature.",
+      "question": "If flying into an area of much colder air without changing the subscale setting, the aircraft's true altitude will be lower than the indicated altitude.",
       "id": "pm-tf-0047"
     },
     {
       "type": "true_false",
-      "question": "In a standard UK METAR, the cloud base height is always reported in feet Above Mean Sea Level (AMSL).",
-      "explanation": "Cloud bases are reported in feet above ground level (AGL) in a METAR, but above mean sea level (AMSL) in an Area Forecast.",
       "correctAnswer": false,
+      "explanation": "A TAF forecast of 'PROB30' indicates a 30% probability of the weather occurring, which is generally not considered high enough to be the primary planning factor.",
+      "question": "In a TAF, the term 'PROB30' indicates that the forecast weather has a 70% chance of occurring.",
       "id": "pm-tf-0048"
     }
   ],

@@ -7672,6 +7672,186 @@
       "imageAlt": "A large white or yellow 'T' shaped marker on the ground.",
       "question": "What is the purpose of this marker found at some aerodromes?",
       "id": "pal-im-0084"
+    },
+    {
+      "correctAnswer": 1,
+      "question": "When seen in the signal square, what information does this symbol convey to a pilot?",
+      "imageAlt": "A red square with one yellow diagonal stripe.",
+      "imageDescription": "Top-down view of an aerodrome signal square containing a red square panel with a single yellow diagonal stripe running from corner to corner.",
+      "type": "image_question",
+      "options": [
+        "Landings are prohibited indefinitely.",
+        "Landing should be made with caution due to the state of the manoeuvring area.",
+        "Aircraft are permitted to land and take off on runways only.",
+        "The aerodrome is closed for all operations."
+      ],
+      "explanation": "A red square with a single yellow diagonal indicates that the state of the manoeuvring area is poor and pilots should exercise caution when landing.",
+      "id": "pal-im-0085"
+    },
+    {
+      "imageDescription": "A taxiway location sign featuring a black background with a yellow letter 'B' and a yellow border.",
+      "imageAlt": "A black rectangular sign with a yellow 'B' in the centre.",
+      "question": "What does this specific airfield sign indicate to the pilot?",
+      "correctAnswer": 0,
+      "options": [
+        "You are currently on taxiway B.",
+        "Turn right for taxiway B.",
+        "Taxiway B is closed.",
+        "The direction to the Bravo holding point."
+      ],
+      "explanation": "The sign with a black background and yellow letters (the 'where you are' sign) identifies the specific taxiway the aircraft is currently on.",
+      "type": "image_question",
+      "id": "pal-im-0086"
+    },
+    {
+      "correctAnswer": 2,
+      "question": "What does this symbol in the signal square indicate?",
+      "imageAlt": "A large white letter H.",
+      "imageDescription": "A top-down view of a grass signal square containing a large, bold white letter 'H' in the centre.",
+      "explanation": "A white 'H' in the signal square indicates that helicopters are required to land or take off within a specifically designated area.",
+      "options": [
+        "The aerodrome is a hospital landing site.",
+        "Glider launching is in progress.",
+        "Helicopters are to land and take off only within the area designated.",
+        "Heavy aircraft are restricted to the main runway."
+      ],
+      "type": "image_question",
+      "id": "pal-im-0087"
+    },
+    {
+      "explanation": "A green light directed at an aircraft in flight signifies that the pilot is cleared to land.",
+      "options": [
+        "Continue circling and wait for further instructions.",
+        "Give way to other aircraft.",
+        "Return for landing.",
+        "You are cleared to land."
+      ],
+      "type": "image_question",
+      "imageDescription": "An illustration of a control tower at dusk emitting a steady, narrow green light beam towards an aircraft in the circuit.",
+      "imageAlt": "A steady green beam of light coming from a control tower.",
+      "correctAnswer": 3,
+      "question": "While in the air, you see this steady light signal from the control tower. What does it mean?",
+      "id": "pal-im-0088"
+    },
+    {
+      "options": [
+        "Slow down.",
+        "Straight ahead.",
+        "Turn right.",
+        "Stop immediately."
+      ],
+      "explanation": "The marshaller holding both arms vertically above the head with palms facing inward is the signal to the pilot to continue straight ahead.",
+      "type": "image_question",
+      "imageDescription": "A ground marshaller in a high-visibility vest standing with both arms raised vertically above the head, palms facing each other.",
+      "imageAlt": "Marshaller with arms raised vertically.",
+      "question": "What instruction is the ground marshaller giving with this signal?",
+      "correctAnswer": 1,
+      "id": "pal-im-0089"
+    },
+    {
+      "type": "image_question",
+      "options": [
+        "Glider flying is in progress.",
+        "The aerodrome is for emergency use only.",
+        "Parachute dropping is in progress.",
+        "The runway is blocked."
+      ],
+      "explanation": "A white double cross signifies that the aerodrome is being used by gliders and that glider flying is currently in progress.",
+      "question": "What is the meaning of this symbol when displayed in the signal square?",
+      "correctAnswer": 0,
+      "imageAlt": "A white double cross in a signal square.",
+      "imageDescription": "A top-down view of an aerodrome signal square featuring a large white double cross (two horizontal bars intersecting a vertical bar).",
+      "id": "pal-im-0090"
+    },
+    {
+      "imageDescription": "An illustration of three red flares or pyrotechnics being fired from the vicinity of a control tower into the air.",
+      "imageAlt": "Three red pyrotechnic flares in the sky.",
+      "correctAnswer": 2,
+      "question": "What is the meaning of these pyrotechnic signals when directed at an aircraft in flight?",
+      "type": "image_question",
+      "explanation": "Three red pyrotechnics (or a steady red light) from the tower to an aircraft in flight indicate that the pilot should not land for the time being.",
+      "options": [
+        "The aerodrome is unsafe; land elsewhere.",
+        "Land immediately.",
+        "Do not land for the time being.",
+        "Return to your departure aerodrome."
+      ],
+      "id": "pal-im-0091"
+    },
+    {
+      "imageDescription": "A signal square component showing a white dumb-bell shape, but each circular end has two thin black lines across it.",
+      "correctAnswer": 0,
+      "question": "What does this variation of the dumb-bell symbol indicate?",
+      "imageAlt": "A white dumb-bell with two black bars across each circular end.",
+      "type": "image_question",
+      "options": [
+        "Take-offs and landings must be on runways, but other manoeuvres need not be.",
+        "The aerodrome is strictly for use by light aircraft only.",
+        "Gliders are operating from the grass area.",
+        "Use the grass strips for all operations."
+      ],
+      "explanation": "A horizontal white 'dumb-bell' with two black circular stripes indicates that landings and take-offs must be on runways, but other manoeuvres are not restricted to paved surfaces.",
+      "id": "pal-im-0092"
+    },
+    {
+      "type": "image_question",
+      "explanation": "A sign with white text on a red background is a mandatory instruction sign, in this case indicating the entrance to Runway 27. Pilots must not pass without clearance.",
+      "options": [
+        "The current magnetic heading is 270 degrees.",
+        "You are 2700 metres from the end of the runway.",
+        "Taxiway 27 is ahead.",
+        "The entrance to Runway 27; do not cross without ATC clearance."
+      ],
+      "imageAlt": "A red sign with '27' written in white.",
+      "question": "What is the meaning of this aerodrome sign?",
+      "correctAnswer": 3,
+      "imageDescription": "A mandatory instruction sign located next to a taxiway, consisting of a red background with the white numerals '27'.",
+      "id": "pal-im-0093"
+    },
+    {
+      "options": [
+        "Land towards the direction of the arrow.",
+        "A right-hand circuit is in force.",
+        "Right-hand turns are prohibited on the ground.",
+        "Wind is gusting from the right."
+      ],
+      "explanation": "The 'T' signal combined with a right-hand arrow in the signal square indicates that the aerodrome circuit is to the right.",
+      "type": "image_question",
+      "question": "What does this combination of symbols in the signal square indicate?",
+      "correctAnswer": 1,
+      "imageAlt": "A white landing T and a right-pointing arrow.",
+      "imageDescription": "A signal square containing a white horizontal landing T and, positioned to its side, a large white arrow pointing in a clockwise/right-hand direction.",
+      "id": "pal-im-0094"
+    },
+    {
+      "type": "image_question",
+      "options": [
+        "The area is a dedicated helicopter landing spot.",
+        "The area is for emergency parking only.",
+        "The area is unfit for the movement of aircraft.",
+        "You must stop and wait for a green light."
+      ],
+      "explanation": "A yellow cross on a runway or taxiway indicates that the area is unfit for the movement of aircraft and is effectively closed.",
+      "imageDescription": "A view from the cockpit looking at a taxiway surface that has a large, bold yellow 'X' painted across its width.",
+      "imageAlt": "A large yellow cross painted on the ground.",
+      "correctAnswer": 2,
+      "question": "What do these markings on a paved surface signify?",
+      "id": "pal-im-0095"
+    },
+    {
+      "correctAnswer": 0,
+      "question": "What is the intended meaning of this pilot action at night?",
+      "imageAlt": "An aircraft on a taxiway with flashing navigation lights.",
+      "imageDescription": "A night-time illustration of a light aircraft on a taxiway with its navigation lights and landing light being switched on and off repeatedly.",
+      "type": "image_question",
+      "options": [
+        "Acknowledgment of a signal during the hours of darkness.",
+        "An indication of an electrical emergency.",
+        "A request for immediate takeoff.",
+        "A signal to other aircraft that you are stationary."
+      ],
+      "explanation": "Flashing the landing lights or navigation lights is a standard way for a pilot to acknowledge ground signals during the hours of darkness.",
+      "id": "pal-im-0096"
     }
   ],
   "mocks": []
