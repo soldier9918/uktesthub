@@ -1355,6 +1355,162 @@
       "question": "Which of the following vehicle types is automatically exempt from ULEZ because it produces zero tailpipe emissions?",
       "type": "multiple_choice",
       "id": "u-mc-0104"
+    },
+    {
+      "explanation": "Christmas Day (25 December) is the only day of the year when the ULEZ charges do not apply. All other 364 days are chargeable.",
+      "options": [
+        "Christmas Day (25 December)",
+        "New Year's Day (1 January)",
+        "Every Sunday",
+        "Bank Holiday Mondays"
+      ],
+      "question": "The ULEZ operates 24 hours a day, every day of the year, except for which specific day?",
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "id": "u-mc-0105"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "question": "To be ULEZ compliant, motorcycles and mopeds must generally meet which minimum Euro emission standard?",
+      "options": [
+        "Euro 1",
+        "Euro 2",
+        "Euro 3",
+        "Euro 4"
+      ],
+      "explanation": "The Euro 3 standard is the minimum requirement for motorcycles and mopeds to be ULEZ compliant, generally covering bikes registered after July 2007.",
+      "id": "u-mc-0106"
+    },
+    {
+      "explanation": "Vehicle owners have up to three days after the day of travel to pay the ULEZ charge before a Penalty Charge Notice is issued.",
+      "question": "If you do not pay the ULEZ charge in advance, how many days after travel do you have to pay the daily charge?",
+      "options": [
+        "The following day only",
+        "Up to three days after travel",
+        "Exactly seven days later",
+        "Up to one month later"
+      ],
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "id": "u-mc-0107"
+    },
+    {
+      "explanation": "The ULEZ charge is a daily fee (midnight to midnight); if you stay parked and don't drive, you don't pay. Only driving triggers the charge.",
+      "options": [
+        "The time the vehicle entered the zone",
+        "The duration of time spent in the zone",
+        "The number of days the vehicle is driven within the zone",
+        "The number of miles covered within the zone"
+      ],
+      "question": "How is the ULEZ daily charge calculated for a non-compliant vehicle?",
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "id": "u-mc-0108"
+    },
+    {
+      "correctAnswer": 3,
+      "explanation": "Unlike the Congestion Charge, which covers a smaller central area, the ULEZ now covers all London boroughs within the Greater London Authority boundary.",
+      "options": [
+        "Only the North and South Circular roads",
+        "The City of London only",
+        "The area between the M25 and the M4",
+        "All London boroughs within Greater London"
+      ],
+      "question": "Following the expansion in August 2023, the ULEZ covers which of the following areas?",
+      "type": "multiple_choice",
+      "id": "u-mc-0109"
+    },
+    {
+      "correctAnswer": 1,
+      "question": "What are the minimum Euro standards for petrol and diesel cars respectively to be ULEZ compliant?",
+      "options": [
+        "Euro 4 petrol and Euro 4 diesel",
+        "Euro 4 petrol and Euro 6 diesel",
+        "Euro 6 petrol and Euro 6 diesel",
+        "Euro 5 petrol and Euro 6 diesel"
+      ],
+      "explanation": "Petrol vehicles must meet Euro 4 standards (NOx), while diesel vehicles must meet Euro 6 (NOx and PM) to avoid the daily charge.",
+      "type": "multiple_choice",
+      "id": "u-mc-0110"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Up to 1,205kg",
+        "Up to 2,500kg",
+        "Under 3,500kg",
+        "Exactly 5,000kg"
+      ],
+      "question": "In terms of ULEZ weight categories, what is the 'unladen weight' threshold for a small van?",
+      "explanation": "Small vans, generally those with a gross vehicle weight of up to 1,205kg, still follow the standard ULEZ rules based on their Euro emission rating.",
+      "correctAnswer": 0,
+      "id": "u-mc-0111"
+    },
+    {
+      "correctAnswer": 3,
+      "options": [
+        "Physical toll booths at every entry point",
+        "Windscreen stickers (vignettes)",
+        "Automatic Number Plate Recognition (ANPR) cameras",
+        "Manual spot checks by police officers"
+      ],
+      "question": "How is vehicle compliance and entry into the ULEZ monitored by Transport for London?",
+      "explanation": "TfL uses an extensive network of Automatic Number Plate Recognition (ANPR) cameras to monitor every vehicle entering or moving within the zone.",
+      "type": "multiple_choice",
+      "id": "u-mc-0112"
+    },
+    {
+      "correctAnswer": 1,
+      "options": [
+        "They pay a 50% discounted rate",
+        "They are 100% exempt from the ULEZ charge",
+        "They only pay if they are older than 3 years",
+        "They must pay the same as petrol cars"
+      ],
+      "question": "How does the ULEZ charge apply to fully electric (EV) vehicles?",
+      "explanation": "Fully electric vehicles produce no tailpipe emissions and are therefore automatically exempt from the ULEZ charge.",
+      "type": "multiple_choice",
+      "id": "u-mc-0113"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "options": [
+        "£80",
+        "£130",
+        "£180",
+        "£250"
+      ],
+      "question": "What is the full standard cost of a Penalty Charge Notice (PCN) for a non-compliant car that fails to pay the ULEZ charge?",
+      "explanation": "The fine for failing to pay the ULEZ charge is £180, though this is reduced by half if paid within 14 days of the notice.",
+      "id": "u-mc-0114"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Nitrogen Oxides (NOx) and Particulate Matter (PM)",
+        "Only Carbon Dioxide (CO2)",
+        "Carbon Monoxide and Oxygen",
+        "Sulphur Dioxide only"
+      ],
+      "question": "Which two main types of pollutants are targeted by the ULEZ emission standards?",
+      "explanation": "The ULEZ mainly targets Nitrogen Oxides (NOx) and Particulate Matter (PM) to improve air quality and public health.",
+      "correctAnswer": 0,
+      "id": "u-mc-0115"
+    },
+    {
+      "correctAnswer": 3,
+      "explanation": "If you drive a non-compliant vehicle between 11 PM one night and 1 AM the next morning, you have crossed the midnight threshold and must pay for two days.",
+      "options": [
+        "A single £12.50 charge",
+        "No charge if the trip is under 2 hours",
+        "A single £25.00 charge",
+        "Two separate daily charges"
+      ],
+      "question": "If you drive a non-compliant vehicle across the midnight threshold (e.g., from 11:30 PM to 12:30 AM), how many daily charges are required?",
+      "type": "multiple_choice",
+      "id": "u-mc-0116"
     }
   ],
   "mocks": []

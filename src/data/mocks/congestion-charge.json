@@ -1355,6 +1355,162 @@
       "question": "What is the primary benefit of the 'Congestion Charge Auto Pay' system for a regular driver?",
       "correctAnswer": 3,
       "id": "cc-mc-0104"
+    },
+    {
+      "question": "On which specific day of the year is the Congestion Charge suspended for the entire 24-hour period?",
+      "type": "multiple_choice",
+      "explanation": "The Congestion Charge does not operate during the Christmas Day bank holiday or the subsequent bank holidays until the New Year.",
+      "correctAnswer": 1,
+      "options": [
+        "Christmas Eve",
+        "Christmas Day",
+        "New Year's Day",
+        "Boxing Day"
+      ],
+      "id": "cc-mc-0105"
+    },
+    {
+      "question": "What happens to the cost of a Congestion Charge Penalty Charge Notice (PCN) if you pay it within 14 days?",
+      "explanation": "TfL provides a 50% discount on the Penalty Charge Notice (PCN) if it is paid within 14 days of the date of service.",
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "options": [
+        "It is reduced by 50%",
+        "It is reduced by 25%",
+        "It is waived for first-time offenders",
+        "It remains the same but no points are added to the licence"
+      ],
+      "id": "cc-mc-0106"
+    },
+    {
+      "correctAnswer": 2,
+      "options": [
+        "08:00 - 18:00",
+        "07:00 - 19:00",
+        "07:00 - 18:00",
+        "06:00 - 20:00"
+      ],
+      "question": "What are the standard operating hours for the Congestion Charge on a Monday?",
+      "type": "multiple_choice",
+      "explanation": "The Congestion Charge applies between 07:00 and 18:00 on weekdays (Monday to Friday).",
+      "id": "cc-mc-0107"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "Drivers who fail to pay the charge by midnight on the third day after travel will be issued a PCN.",
+      "question": "If you do not pay the Congestion Charge in advance, how many days after travel do you have to pay the £17.50 daily rate?",
+      "options": [
+        "7 days",
+        "14 days",
+        "Next day only",
+        "3 days"
+      ],
+      "correctAnswer": 3,
+      "id": "cc-mc-0108"
+    },
+    {
+      "explanation": "As of 2021, the 90% discount is closed to new applicants, but existing residents who remain at their address can continue to receive the discount.",
+      "type": "multiple_choice",
+      "question": "What is the current status of the Congestion Charge Residents' Discount for new applicants?",
+      "options": [
+        "It was abolished for everyone in 2021",
+        "It is closed to new applicants but remains for existing account holders",
+        "It is only available to residents over the age of 65",
+        "It is only available to those with electric vehicles"
+      ],
+      "correctAnswer": 1,
+      "id": "cc-mc-0109"
+    },
+    {
+      "options": [
+        "No, they are separate charges and you may have to pay both",
+        "Yes, paying the ULEZ covers the Congestion Charge automatically",
+        "Yes, but only if you are driving a diesel vehicle",
+        "No, but you get a 10% discount on the Congestion Charge if you pay ULEZ"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The Congestion Charge and ULEZ are two different schemes. Paying one does not exempt you from the other if your vehicle does not meet the required standards.",
+      "type": "multiple_choice",
+      "question": "Does paying the Ultra Low Emission Zone (ULEZ) charge exempt you from paying the Congestion Charge?",
+      "id": "cc-mc-0110"
+    },
+    {
+      "options": [
+        "Private hire vehicles (minicabs)",
+        "Motorcycles over 125cc",
+        "Accredited breakdown recovery vehicles",
+        "Standard hybrid cars"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Recovery vehicles registered with TfL are eligible for a 100% discount to ensure the swift removal of broken-down vehicles.",
+      "type": "multiple_choice",
+      "question": "Which of the following vehicles is eligible for a 100% discount on the Congestion Charge?",
+      "id": "cc-mc-0111"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "The Congestion Charge covers much of Central London, including the City of London and parts of the City of Westminster and Camden.",
+      "question": "Which of these areas is located within the Congestion Charge zone?",
+      "options": [
+        "The area inside the M25 motorway",
+        "Only the borough of Chelsea and Kensington",
+        "The North and South Circular roads",
+        "The City of London and the West End"
+      ],
+      "correctAnswer": 3,
+      "id": "cc-mc-0112"
+    },
+    {
+      "question": "What is the rule for Private Hire Vehicles (such as Uber) regarding the Congestion Charge?",
+      "explanation": "Since 2021, Private Hire Vehicles (PHVs) must pay the full Congestion Charge unless they are designated as wheelchair accessible.",
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "options": [
+        "They are always exempt from the charge",
+        "They must pay unless they are wheelchair accessible PHVs",
+        "They only pay 50% of the standard daily rate",
+        "They only pay on weekends"
+      ],
+      "id": "cc-mc-0113"
+    },
+    {
+      "question": "What must a Blue Badge holder pay to receive a 100% discount on the Congestion Charge?",
+      "type": "multiple_choice",
+      "explanation": "Even though Blue Badge holders are exempt, they must register their vehicle with TfL and pay a £10 annual administration fee.",
+      "correctAnswer": 0,
+      "options": [
+        "An annual £10 registration fee",
+        "The full daily rate for every entry",
+        "A one-off £50 lifetime fee",
+        "Nothing, registration is free of charge"
+      ],
+      "id": "cc-mc-0114"
+    },
+    {
+      "correctAnswer": 1,
+      "options": [
+        "07:00 - 18:00",
+        "12:00 - 18:00",
+        "09:00 - 20:00",
+        "The charge is not active on Saturdays"
+      ],
+      "question": "What are the operating hours for the Congestion Charge on a Saturday?",
+      "explanation": "The operating hours on weekends and Bank Holidays are 12:00 to 18:00, which is shorter than the weekday hours.",
+      "type": "multiple_choice",
+      "id": "cc-mc-0115"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "The Fleet Auto Pay system allows businesses with six or more vehicles to manage payments automatically for a £10 annual fee per vehicle.",
+      "question": "What is the minimum number of vehicles required to set up a Congestion Charge 'Fleet' Auto Pay account?",
+      "options": [
+        "2 vehicles",
+        "4 vehicles",
+        "6 vehicles",
+        "10 vehicles village"
+      ],
+      "correctAnswer": 2,
+      "id": "cc-mc-0116"
     }
   ],
   "mocks": []
