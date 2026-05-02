@@ -269,12 +269,27 @@ function rawToQuestion(raw: RawQuestion, idx: number): Question {
     }
     case "image-question": {
       const r = raw as RawImage & { imageDescription?: string };
-      // Degrade to MCQ until a real image URL is wired in.
+      // No image URL — fold the description into the question text so the
+      // question is self-contained instead of misleadingly referring to a
+      // missing image.
       if (!r.image) {
+        const desc = r.imageDescription || r.imageAlt || "";
+        const cleanedQ = (r.question || "")
+          .replace(
+            /this (mandatory blue|blue circular|red triangular|yellow|warning|prohibition|circular|mandatory|hazard|safety)? ?sign/gi,
+            "the sign",
+          )
+          .replace(/this (image|picture|diagram|illustration)/gi, "the $1")
+          .replace(/shown (above|here|below)/gi, "")
+          .replace(/\s+/g, " ")
+          .trim();
+        const composed = desc
+          ? `${desc.replace(/\s*\.?\s*$/, ".")} ${cleanedQ}`
+          : cleanedQ;
         return {
           type: "mcq",
           id,
-          question: r.question,
+          question: composed,
           options: r.options,
           correctAnswer: r.correctAnswer,
           explanation: r.explanation,
