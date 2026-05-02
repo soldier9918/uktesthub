@@ -4639,6 +4639,114 @@
       "explanation": "To find the range, subtract the lowest value from the highest value. 28 - 15 = 13.",
       "tolerance": 0,
       "id": "qn-ne-0048"
+    },
+    {
+      "unit": "km/h",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "explanation": "Convert 30 minutes to 0.5 hours. Speed = Distance / Time, which is 5.85km / 0.5h = 11.7km/h.",
+      "question": "A PE teacher cycles 5.85 kilometres to school. The journey takes 30 minutes. What is the teacher's average speed in kilometres per hour?",
+      "correctAnswer": 11.7,
+      "id": "qn-ne-0049"
+    },
+    {
+      "explanation": "Calculate 12% of 275 (0.12 x 275 = 33). Add this increase to the original number: 275 + 33 = 308 pupils.",
+      "question": "A primary school has 275 pupils. Next year, the number of pupils is expected to increase by 12%. How many pupils will be at the school next year?",
+      "correctAnswer": 308,
+      "unit": "pupils",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "id": "qn-ne-0050"
+    },
+    {
+      "type": "numeric_entry",
+      "unit": "marks",
+      "tolerance": 0,
+      "question": "In a spelling test, six pupils scored: 12, 15, 18, 10, 11, and 15. What is the mean score for this group?",
+      "explanation": "The mean is the sum (12 + 15 + 18 + 10 + 11 + 15 = 81) divided by the number of values (6). 81 / 6 = 13.5.",
+      "correctAnswer": 13.5,
+      "id": "qn-ne-0051"
+    },
+    {
+      "unit": "boys",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "explanation": "Total parts = 3 + 5 = 8. One part = 72 / 8 = 9. The number of boys is 3 parts: 3 x 9 = 27 boys.",
+      "question": "A year group of 72 pupils is split into boys and girls in the ratio 3:5. How many boys are there in the year group?",
+      "correctAnswer": 27,
+      "id": "qn-ne-0052"
+    },
+    {
+      "tolerance": 0,
+      "unit": "£",
+      "type": "numeric_entry",
+      "correctAnswer": 26.4,
+      "explanation": "10% of £24 is £2.40. Therefore, 110% (the original price plus VAT) is £24.00 + £2.40 = £26.40.",
+      "question": "A school library orders a book priced at £24.00 excluding VAT. If VAT is charged at 10%, what is the total cost of the book in pounds?",
+      "id": "qn-ne-0053"
+    },
+    {
+      "explanation": "The reading starts at 08:50. Adding 1 hour and 55 minutes (60 + 55 = 115 mins) results in 10:45.",
+      "question": "A morning literacy block starts at 08:50 and lasts for 1 hour and 55 minutes. At what time does the block finish? Give your answer using the 24-hour clock (e.g. 13.30).",
+      "correctAnswer": 10.45,
+      "unit": "time",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "id": "qn-ne-0054"
+    },
+    {
+      "type": "numeric_entry",
+      "unit": "decimal",
+      "tolerance": 0,
+      "question": "In a science let-set group, there are 7 boys and 13 girls. What is the proportion of girls in the group, expressed as a decimal?",
+      "explanation": "There are 20 pupils in total (7+13). The proportion of girls is 13/20. 13 divided by 20 equals 0.65.",
+      "correctAnswer": 0.65,
+      "id": "qn-ne-0055"
+    },
+    {
+      "correctAnswer": 4.2,
+      "question": "A teacher needs 126 pencils. Pencils are sold in packs of 30. How many packs are required? Give your answer as a decimal.",
+      "explanation": "Number of packs = 126 / 30 = 4.2 packs. Since you can only buy whole packs for the class, the decimal value needed is 4.2.",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "unit": "packs",
+      "id": "qn-ne-0056"
+    },
+    {
+      "explanation": "Total area = 4m x 3.5m = 14 square metres. Total cost = 14 x £0.80 = £11.20.",
+      "question": "A classroom floor area of 14 square metres needs to be treated with floor polish. The polish costs £0.80 per square metre. What is the total cost in pounds?",
+      "correctAnswer": 11.2,
+      "unit": "£",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "id": "qn-ne-0057"
+    },
+    {
+      "correctAnswer": 18,
+      "explanation": "First, find the total percentage of pupils who chose French or Spanish: 45% + 30% = 75%. This means 25% chose German. 25% of 72 is 18.",
+      "question": "In a year group of 72 pupils, 45% study French and 30% study Spanish. The remainder study German. How many pupils study German?",
+      "tolerance": 0,
+      "unit": "pupils",
+      "type": "numeric_entry",
+      "id": "qn-ne-0058"
+    },
+    {
+      "correctAnswer": 21,
+      "question": "Over the course of a 5-day school week, a teacher spends a total of 1 hour and 45 minutes on playground duty. What is the average daily time spent on duty in minutes?",
+      "explanation": "Total time = 7 hours. Average per day = 105 minutes / 5 days = 21 minutes per day.",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "unit": "minutes",
+      "id": "qn-ne-0059"
+    },
+    {
+      "correctAnswer": 15.5,
+      "question": "The number of pupils absent from a school over six days was: 14, 23, 12, 15, 16, and 19. What is the median number of absences?",
+      "explanation": "The median is the middle value of an ordered set. The set is: 12, 14, 15, 16, 19, 23. The middle fall between 15 and 16, so (15+16)/2 = 15.5.",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "unit": "absences",
+      "id": "qn-ne-0060"
     }
   ],
   "mocks": []
