@@ -7217,6 +7217,1558 @@
       "question": "What does this symbol represent on a nautical chart?",
       "imageAlt": "A small black and white tower symbol on a chart.",
       "id": "rds-im-0227"
+    },
+    {
+      "spots": [
+        {
+          "y": 0.2,
+          "label": "North Cardinal",
+          "w": 0.2,
+          "h": 0.3,
+          "id": "cardinal_n",
+          "x": 0.1
+        },
+        {
+          "x": 0.4,
+          "id": "cardinal_s",
+          "h": 0.3,
+          "w": 0.2,
+          "label": "South Cardinal",
+          "y": 0.2
+        },
+        {
+          "h": 0.3,
+          "id": "cardinal_e",
+          "x": 0.7,
+          "label": "East Cardinal",
+          "y": 0.2,
+          "w": 0.2
+        }
+      ],
+      "explanation": "East Cardinal marks have two cones pointing away from each other (base to base). Pass to the East of this mark for safe water.",
+      "imageDescription": "A buoy with black bands at the top and bottom and a yellow band in the middle. The topmark consists of two cones, one pointing up and one pointing down, base to base.",
+      "correctSpotId": "cardinal_e",
+      "question": "Identify the East Cardinal mark from these buoyage topmarks.",
+      "imageAlt": "A yellow and black buoy with two cone topmarks.",
+      "type": "hot_spot",
+      "id": "rds-hs-0001"
+    },
+    {
+      "imageAlt": "A nautical chart showing a coastline, a lighthouse, and a submerged drying rock.",
+      "type": "hot_spot",
+      "spots": [
+        {
+          "h": 0.05,
+          "id": "transit_line",
+          "x": 0.3,
+          "y": 0.5,
+          "label": "Transit Line",
+          "w": 0.4
+        },
+        {
+          "w": 0.4,
+          "label": "Clearing Bearing",
+          "y": 0.7,
+          "x": 0.3,
+          "h": 0.05,
+          "id": "clearing_bearing"
+        },
+        {
+          "label": "10m Contour",
+          "y": 0.3,
+          "w": 0.3,
+          "h": 0.1,
+          "id": "contour_line",
+          "x": 0.5
+        }
+      ],
+      "explanation": "A clearing bearing is a pre-planned line on a chart that ensures a vessel stays clear of a specific hazard, such as a submerged rock or shallow bank.",
+      "correctSpotId": "clearing_bearing",
+      "question": "Click on the line that represents a 'Clearing Bearing' used to safely pass the drying rock.",
+      "imageDescription": "A nautical chart segment featuring a lighthouse on a headland and a dangerous rock marked 'drying' nearby. Several lines are drawn across the water from the lighthouse.",
+      "id": "rds-hs-0002"
+    },
+    {
+      "type": "hot_spot",
+      "imageAlt": "Two motorboats on a collision course at sea. Boat A is to the left, Boat B is to the right.",
+      "question": "In this crossing situation between two power-driven vessels, click on the 'Give-Way' vessel.",
+      "correctSpotId": "port_hand_vessel",
+      "imageDescription": "A visual representation of two power-driven vessels on crossing courses. Boat A sees Boat B on its starboard (right) side. Boat B sees Boat A on its port (left) side.",
+      "explanation": "Under ColRegs Rule 15, when two power-driven vessels are crossing, the vessel which has the other on her own starboard side must keep out of the way.",
+      "spots": [
+        {
+          "label": "Boat A (Give-Way)",
+          "y": 0.3,
+          "w": 0.3,
+          "h": 0.4,
+          "id": "port_hand_vessel",
+          "x": 0.2
+        },
+        {
+          "w": 0.3,
+          "label": "Boat B (Stand-On)",
+          "y": 0.3,
+          "x": 0.6,
+          "id": "stbd_hand_vessel",
+          "h": 0.4
+        }
+      ],
+      "id": "rds-hs-0003"
+    },
+    {
+      "explanation": "An occulting light is a rhythmic light in which the total duration of light in each period is longer than the total duration of darkness.",
+      "spots": [
+        {
+          "x": 0.1,
+          "h": 0.2,
+          "id": "flashing_light_graph",
+          "w": 0.8,
+          "y": 0.1,
+          "label": "Flashing"
+        },
+        {
+          "x": 0.1,
+          "id": "isophase_light_graph",
+          "h": 0.2,
+          "w": 0.8,
+          "y": 0.4,
+          "label": "Isophase"
+        },
+        {
+          "x": 0.1,
+          "id": "occulting_light_graph",
+          "h": 0.2,
+          "w": 0.8,
+          "y": 0.7,
+          "label": "Occulting"
+        }
+      ],
+      "question": "Select the diagram that represents an 'Occulting' light characteristic.",
+      "correctSpotId": "occulting_light_graph",
+      "imageDescription": "Three timing diagrams: One shows short flashes (Flashing), one shows equal light and dark (Isophase), and one shows long periods of light interrupted by short dark periods (Occulting).",
+      "imageAlt": "Three different graphs showing light timing patterns.",
+      "type": "hot_spot",
+      "id": "rds-hs-0004"
+    },
+    {
+      "correctSpotId": "port_hand_buoy",
+      "type": "hot_spot",
+      "explanation": "In IALA Region A (UK), the Port hand lateral mark is red with a cylindrical (can) topmark.",
+      "imageDescription": "A row of four buoys: a red can buoy, a green conical buoy, a yellow and black cardinal mark, and a red and white safe water mark.",
+      "question": "You are entering a UK harbour in the direction of the flood tide. Click on the Port Hand lateral mark.",
+      "imageAlt": "Four different buoyage marks in IALA Region A.",
+      "spots": [
+        {
+          "h": 0.3,
+          "id": "port_hand_buoy",
+          "x": 0.1,
+          "w": 0.2,
+          "label": "Red Can Buoy",
+          "y": 0.4
+        },
+        {
+          "x": 0.35,
+          "w": 0.2,
+          "y": 0.4,
+          "label": "Green Cone Buoy",
+          "h": 0.3,
+          "id": "stbd_hand_buoy"
+        },
+        {
+          "w": 0.2,
+          "y": 0.4,
+          "label": "North Cardinal",
+          "x": 0.6,
+          "id": "cardinal_buoy",
+          "h": 0.3
+        },
+        {
+          "h": 0.3,
+          "id": "safe_water_buoy",
+          "x": 0.85,
+          "label": "Safe Water Mark",
+          "y": 0.4,
+          "w": 0.2
+        }
+      ],
+      "id": "rds-hs-0005"
+    },
+    {
+      "type": "hot_spot",
+      "correctSpotId": "west_cardinal",
+      "spots": [
+        {
+          "w": 0.15,
+          "label": "North Cardinal",
+          "y": 0.5,
+          "x": 0.1,
+          "id": "north_cardinal",
+          "h": 0.25
+        },
+        {
+          "h": 0.25,
+          "id": "south_cardinal",
+          "x": 0.3,
+          "w": 0.15,
+          "y": 0.5,
+          "label": "South Cardinal"
+        },
+        {
+          "x": 0.5,
+          "w": 0.15,
+          "y": 0.5,
+          "label": "East Cardinal",
+          "h": 0.25,
+          "id": "east_cardinal"
+        },
+        {
+          "label": "West Cardinal",
+          "y": 0.5,
+          "w": 0.15,
+          "x": 0.75,
+          "id": "west_cardinal",
+          "h": 0.25
+        }
+      ],
+      "imageAlt": "Four different cardinal marks showing topmarks and colour patterns.",
+      "question": "Identify the West Cardinal mark which indicates that safe water lies to the West of the mark.",
+      "imageDescription": "Four cardinal buoys arranged horizontally: North (cones up), South (cones down), East (cones apart), and West (cones together).",
+      "explanation": "A West Cardinal mark has topmark cones pointing 'in' towards each other and a yellow band in the middle of a black body.",
+      "id": "rds-hs-0006"
+    },
+    {
+      "type": "hot_spot",
+      "correctSpotId": "isolated_danger",
+      "spots": [
+        {
+          "h": 0.15,
+          "id": "safe_water_icon",
+          "x": 0.2,
+          "w": 0.15,
+          "label": "Safe Water Mark icon",
+          "y": 0.2
+        },
+        {
+          "x": 0.5,
+          "y": 0.4,
+          "label": "Port Hand icon",
+          "w": 0.15,
+          "h": 0.15,
+          "id": "port_icon_chart"
+        },
+        {
+          "h": 0.15,
+          "id": "isolated_danger",
+          "x": 0.7,
+          "w": 0.15,
+          "label": "Isolated Danger icon",
+          "y": 0.3
+        },
+        {
+          "w": 0.15,
+          "label": "Preferred Channel icon",
+          "y": 0.8,
+          "x": 0.4,
+          "id": "pref_chan_icon",
+          "h": 0.15
+        }
+      ],
+      "imageAlt": "An Admiralty chart snippet showing various buoy icons and depth contours.",
+      "explanation": "An isolated danger mark is black with one or more red horizontal bands and two black spheres as a topmark.",
+      "imageDescription": "A chart snippet featuring a safe water mark, a port hand buoy, an isolated danger mark over a rock, and a preferred channel mark.",
+      "question": "Select the buoy that marks a hazard of limited size that has navigable water all around it.",
+      "id": "rds-hs-0007"
+    },
+    {
+      "question": "In this Course To Steer (CTS) diagram, click on the line that represents the vessel's Water Track (the heading the boat is steered through the water).",
+      "explanation": "The Course To Steer (CTS) is the heading the vessel must point to counteract the tide and wind (leeway) to achieve the intended Ground Track.",
+      "imageDescription": "A standard RYA vector diagram with three lines: one for the tide, one for the Ground Track, and one representing the Water Track/Heading.",
+      "spots": [
+        {
+          "w": 0.3,
+          "y": 0.7,
+          "label": "Tidal Stream vector",
+          "x": 0.2,
+          "id": "tide_vector_line_label",
+          "h": 0.1
+        },
+        {
+          "id": "leeway_vector_end",
+          "h": 0.1,
+          "w": 0.3,
+          "label": "Water Track / Heading",
+          "y": 0.25,
+          "x": 0.5
+        },
+        {
+          "w": 0.3,
+          "label": "Course Over Ground (COG)",
+          "y": 0.8,
+          "x": 0.5,
+          "id": "ground_track_label",
+          "h": 0.1
+        }
+      ],
+      "imageAlt": "A vector diagram showing the water track, tidal stream, and ground track.",
+      "correctSpotId": "leeway_vector_end",
+      "type": "hot_spot",
+      "id": "rds-hs-0008"
+    },
+    {
+      "imageDescription": "An illustration of two motor vessels at night. Vessel A (on the left) is heading East and sees the red port sidelight of Vessel B. Vessel B (on the right) is heading North and sees the green starboard sidelight of Vessel A.",
+      "type": "hot_spot",
+      "explanation": "According to ColRegs Rule 15, when two power-driven vessels are crossing, the vessel which has the other on her own starboard side shall keep out of the way.",
+      "spots": [
+        {
+          "id": "port_vessel",
+          "y": 0.4,
+          "label": "Vessel A (Heading East)",
+          "w": 0.2,
+          "x": 0.15,
+          "h": 0.25
+        },
+        {
+          "h": 0.25,
+          "id": "stbd_vessel",
+          "y": 0.4,
+          "label": "Vessel B (Heading North)",
+          "w": 0.2,
+          "x": 0.65
+        }
+      ],
+      "imageAlt": "Two powerboats on a collision course at night. Vessel A sees a red sidelight; Vessel B sees a green sidelight.",
+      "question": "Look at these two power-driven vessels crossing at night. Click on the vessel that is the 'Stand-on' vessel.",
+      "correctSpotId": "stbd_vessel",
+      "id": "rds-hs-0009"
+    },
+    {
+      "type": "hot_spot",
+      "explanation": "A Transit (or Leading Line) uses two fixed objects aligned in a row to provide a highly accurate position line; in this case, the tower and the chimney.",
+      "imageDescription": "A nautical chart showing a coastline with several landmarks: a Church (symbolised by a cross), a conspicuous Tower, and a tall Chimney. A dashed line is drawn through the Tower and the Chimney out to sea.",
+      "correctSpotId": "conspicuous_tower",
+      "question": "In this chart extract, a skipper is using a 'Transit' to stay in the deep water channel. Click on the front mark (the object closest to the observer) of the transit.",
+      "spots": [
+        {
+          "id": "church_symbol",
+          "label": "Church",
+          "y": 0.2,
+          "x": 0.2,
+          "w": 0.15,
+          "h": 0.15
+        },
+        {
+          "h": 0.15,
+          "w": 0.15,
+          "x": 0.4,
+          "y": 0.45,
+          "label": "Conspicuous Tower",
+          "id": "conspicuous_tower"
+        },
+        {
+          "h": 0.15,
+          "id": "tall_chimney",
+          "w": 0.15,
+          "x": 0.55,
+          "y": 0.6,
+          "label": "Tall Chimney"
+        }
+      ],
+      "imageAlt": "A nautical chart snippet showing a church, a tower, and a chimney. A dashed line connects the tower and chimney.",
+      "id": "rds-hs-0010"
+    },
+    {
+      "spots": [
+        {
+          "h": 0.1,
+          "id": "bow_line",
+          "y": 0.3,
+          "label": "Bow Line",
+          "w": 0.2,
+          "x": 0.1
+        },
+        {
+          "h": 0.1,
+          "y": 0.3,
+          "label": "Stern Line",
+          "w": 0.2,
+          "x": 0.7,
+          "id": "stern_line"
+        },
+        {
+          "h": 0.1,
+          "label": "Forward Spring",
+          "y": 0.45,
+          "x": 0.3,
+          "w": 0.2,
+          "id": "fwd_spring"
+        },
+        {
+          "y": 0.45,
+          "label": "Aft Spring",
+          "w": 0.2,
+          "x": 0.5,
+          "id": "aft_spring",
+          "h": 0.1
+        }
+      ],
+      "imageAlt": "A yacht moored alongside a pontoon with four lines labeled: Bow line, Stern line, Forward Spring, and Aft Spring.",
+      "question": "You want to leave the pontoon by 'springing the bow off' using slow ahead gear and fenders. Click on the mooring line that must remain attached to act as the pivot point.",
+      "correctSpotId": "aft_spring",
+      "imageDescription": "A diagram of a sailing yacht moored port-side-to a pontoon. Four mooring lines are shown: one from the bow forward, one from the stern aft, one from the bow leading aft (Forward Spring), and one from the stern leading forward (Aft Spring).",
+      "type": "hot_spot",
+      "explanation": "The aft spring prevents the vessel from moving forward while the engine is in gear, allowing the bow to swing out away from the pontoon.",
+      "id": "rds-hs-0011"
+    },
+    {
+      "correctSpotId": "south_cardinal",
+      "imageAlt": "An array of four cardinal marks with varying topmarks and yellow/black bands.",
+      "spots": [
+        {
+          "h": 0.3,
+          "id": "north_cardinal",
+          "x": 0.1,
+          "w": 0.15,
+          "label": "Buoy A (Cones Up)",
+          "y": 0.3
+        },
+        {
+          "id": "west_cardinal",
+          "y": 0.3,
+          "label": "Buoy B (Cones Point-to-Point)",
+          "w": 0.15,
+          "x": 0.3,
+          "h": 0.3
+        },
+        {
+          "h": 0.3,
+          "x": 0.5,
+          "w": 0.15,
+          "label": "Buoy C (Cones Base-to-Base)",
+          "y": 0.3,
+          "id": "east_cardinal"
+        },
+        {
+          "h": 0.3,
+          "label": "Buoy D (Cones Down)",
+          "y": 0.3,
+          "x": 0.7,
+          "w": 0.15,
+          "id": "south_cardinal"
+        }
+      ],
+      "question": "You are navigating near a dangerous sandbank. The chart indicates the safe water is to the South of the hazard. Click on the correct buoy to look for.",
+      "imageDescription": "An image showing four different Cardinal buoys. Buoy A has two cones pointing up. Buoy B has two cones pointing towards each other. Buoy C has two cones pointing away from each other. Buoy D has two cones pointing downwards.",
+      "explanation": "A South Cardinal mark has two downward-pointing cones as its topmark and a yellow-over-black colour sequence on the buoy body.",
+      "type": "hot_spot",
+      "id": "rds-hs-0012"
+    },
+    {
+      "type": "hot_spot",
+      "correctSpotId": "north_cardinal",
+      "spots": [
+        {
+          "id": "east_cardinal",
+          "h": 0.3,
+          "label": "Buoy A",
+          "y": 0.35,
+          "w": 0.2,
+          "x": 0.1
+        },
+        {
+          "x": 0.35,
+          "y": 0.35,
+          "label": "Buoy B",
+          "w": 0.2,
+          "h": 0.3,
+          "id": "west_cardinal"
+        },
+        {
+          "id": "north_cardinal",
+          "h": 0.3,
+          "label": "Buoy C",
+          "y": 0.35,
+          "w": 0.2,
+          "x": 0.6
+        },
+        {
+          "id": "south_cardinal",
+          "h": 0.3,
+          "w": 0.2,
+          "y": 0.35,
+          "label": "Buoy D",
+          "x": 0.85
+        }
+      ],
+      "imageAlt": "Four cardinal buoys with different cone topmark arrangements.",
+      "question": "You are navigating around a hazard. Click on the North Cardinal mark.",
+      "imageDescription": "An image showing four cardinal buoys. A: Topmarks pointing away from each other (East). B: Topmarks pointing towards each other (West). C: Both topmarks pointing up (North). D: Both topmarks pointing down (South).",
+      "explanation": "A North Cardinal mark has two cones pointing upwards and indicates that the safest water is to the North of the buoy.",
+      "id": "rds-hs-0013"
+    },
+    {
+      "correctSpotId": "dead_reckoning",
+      "type": "hot_spot",
+      "explanation": "A Dead Reckoning (DR) position is calculated using only your course steered and distance through the water, marked on a chart with a single line across the track.",
+      "imageDescription": "A chart plot starting at a fix. A straight line shows the track. Position A is marked with a single vertical stroke. Position B is marked with a small triangle (Estimated Position).",
+      "question": "Look at this plot. Click on the symbol that represents a 'Dead Reckoning' (DR) position.",
+      "imageAlt": "A nautical chart plot showing a starting position, a line representing the course, and two marked positions.",
+      "spots": [
+        {
+          "x": 0.1,
+          "y": 0.7,
+          "label": "Initial Fix",
+          "w": 0.2,
+          "h": 0.2,
+          "id": "start_fix"
+        },
+        {
+          "x": 0.4,
+          "label": "Position A",
+          "y": 0.5,
+          "w": 0.15,
+          "h": 0.2,
+          "id": "dead_reckoning"
+        },
+        {
+          "id": "estimated_pos",
+          "h": 0.2,
+          "label": "Position B",
+          "y": 0.3,
+          "w": 0.15,
+          "x": 0.7
+        }
+      ],
+      "id": "rds-hs-0014"
+    },
+    {
+      "correctSpotId": "stern_spring",
+      "type": "hot_spot",
+      "question": "You are departing a pontoon and want to 'spring the stern out' using slow astern gear. Click on the Stern Spring line.",
+      "explanation": "To spring the stern out from a pontoon while in reverse gear, you should use a stern spring to hold the aft part of the boat while the bow swings out.",
+      "imageDescription": "A yacht moored alongside. Line A: Bow line. Line B: Bow spring (leading aft). Line C: Stern spring (leading forward). Line D: Stern line.",
+      "imageAlt": "A sailing yacht alongside a pontoon with four mooring lines labelled.",
+      "spots": [
+        {
+          "y": 0.4,
+          "label": "Line A",
+          "w": 0.15,
+          "x": 0.1,
+          "id": "bow_line",
+          "h": 0.1
+        },
+        {
+          "id": "bow_spring",
+          "h": 0.1,
+          "w": 0.2,
+          "label": "Line B",
+          "y": 0.5,
+          "x": 0.3
+        },
+        {
+          "w": 0.2,
+          "label": "Line C",
+          "y": 0.5,
+          "x": 0.5,
+          "id": "stern_spring",
+          "h": 0.1
+        },
+        {
+          "h": 0.1,
+          "id": "stern_line",
+          "x": 0.8,
+          "w": 0.15,
+          "y": 0.4,
+          "label": "Line D"
+        }
+      ],
+      "id": "rds-hs-0015"
+    },
+    {
+      "spots": [
+        {
+          "id": "constrained_draught",
+          "h": 0.3,
+          "w": 0.2,
+          "y": 0.35,
+          "label": "Vessel A",
+          "x": 0.1
+        },
+        {
+          "h": 0.3,
+          "id": "not_under_command",
+          "x": 0.35,
+          "w": 0.2,
+          "y": 0.35,
+          "label": "Vessel B"
+        },
+        {
+          "y": 0.35,
+          "label": "Vessel C",
+          "w": 0.2,
+          "x": 0.6,
+          "id": "trawling",
+          "h": 0.3
+        },
+        {
+          "id": "sailing",
+          "h": 0.3,
+          "w": 0.2,
+          "y": 0.35,
+          "label": "Vessel D",
+          "x": 0.85
+        }
+      ],
+      "imageAlt": "Four different navigation light configurations for vessels at night.",
+      "imageDescription": "Four diagrams of vessels seen from the side. A: Three red lights in a line (Constrained by Draught). B: Two red lights in a line (Not Under Command). C: Green over White (Trawling). D: Red over Green (Sailing).",
+      "explanation": "Under IRPCS Rule 27, a vessel 'Not Under Command' shows two all-round red lights in a vertical line when making way at night.",
+      "question": "You see a vessel at night displaying these lights. Click on the diagram showing a vessel 'Not Under Command' (NUC).",
+      "type": "hot_spot",
+      "correctSpotId": "not_under_command",
+      "id": "rds-hs-0016"
+    },
+    {
+      "question": "You are moored port-side to a pontoon and wish to spring the bow off using 'Slow Ahead' power. Click on the Aft Spring.",
+      "correctSpotId": "aft_spring",
+      "explanation": "The aft spring runs from the stern of the boat forward to the pontoon, preventing the vessel from moving ahead while in gear.",
+      "spots": [
+        {
+          "w": 0.2,
+          "id": "bow_line",
+          "label": "Bow Line",
+          "x": 0.7,
+          "h": 0.1,
+          "y": 0.2
+        },
+        {
+          "y": 0.4,
+          "h": 0.1,
+          "x": 0.6,
+          "label": "Forward Spring",
+          "id": "fwd_spring",
+          "w": 0.2
+        },
+        {
+          "id": "aft_spring",
+          "w": 0.2,
+          "y": 0.5,
+          "h": 0.1,
+          "x": 0.3,
+          "label": "Aft Spring"
+        },
+        {
+          "id": "stern_line",
+          "w": 0.2,
+          "h": 0.1,
+          "y": 0.7,
+          "label": "Stern Line",
+          "x": 0.1
+        }
+      ],
+      "type": "hot_spot",
+      "imageAlt": "A diagram of a sailing yacht moored alongside a pontoon with multiple mooring lines labeled.",
+      "imageDescription": "A top-down view of a yacht alongside a pontoon. Lines shown: Bow line, Stern line, Forward Spring, and Aft Spring. The vessel is preparing to use a spring to move the bow away from the pontoon.",
+      "id": "rds-hs-0017"
+    },
+    {
+      "type": "hot_spot",
+      "imageAlt": "Four different buoy topmarks: a cone, a cylinder, two spheres, and a single sphere.",
+      "imageDescription": "A selection of IALA Region A buoy topmarks including a Starboard Lateral (cone), Port Lateral (can), Isolated Danger (two spheres), and Safe Water Mark (single sphere).",
+      "correctSpotId": "isolated_danger",
+      "explanation": "The Isolated Danger mark features two black spheres as a topmark and is placed directly over a hazard that has navigable water all around it.",
+      "spots": [
+        {
+          "label": "Cone topmark",
+          "x": 0.1,
+          "y": 0.3,
+          "h": 0.2,
+          "w": 0.15,
+          "id": "starboard_lat"
+        },
+        {
+          "label": "Can topmark",
+          "x": 0.35,
+          "y": 0.3,
+          "h": 0.2,
+          "w": 0.15,
+          "id": "port_lat"
+        },
+        {
+          "h": 0.2,
+          "y": 0.3,
+          "x": 0.6,
+          "label": "Two spheres topmark",
+          "id": "isolated_danger",
+          "w": 0.15
+        },
+        {
+          "id": "safe_water",
+          "w": 0.15,
+          "h": 0.2,
+          "y": 0.3,
+          "label": "Single sphere topmark",
+          "x": 0.85
+        }
+      ],
+      "question": "Click on the topmark used for an Isolated Danger Mark.",
+      "id": "rds-hs-0018"
+    },
+    {
+      "type": "hot_spot",
+      "imageDescription": "A chart showing a Dead Reckoning (DR) position (vertical tally mark on path), an Estimated Position (EP) (triangle with time), and a Fix (circle or cross where two lines intersect with time).",
+      "imageAlt": "A nautical chart extract showing three different types of position symbols.",
+      "correctSpotId": "fix_symbol_3",
+      "explanation": "A 'Fix' is represented on a chart by the intersection of position lines, usually identified by a circle around the intersection or a cross with the time written کنار it.",
+      "spots": [
+        {
+          "id": "dr_symbol_1",
+          "w": 0.15,
+          "h": 0.15,
+          "y": 0.5,
+          "x": 0.2,
+          "label": "Straight line with tally mark"
+        },
+        {
+          "x": 0.5,
+          "label": "Triangle around a dot",
+          "y": 0.4,
+          "h": 0.15,
+          "w": 0.15,
+          "id": "ep_symbol_2"
+        },
+        {
+          "label": "Circle around an intersection of lines",
+          "x": 0.8,
+          "y": 0.6,
+          "h": 0.15,
+          "w": 0.15,
+          "id": "fix_symbol_3"
+        }
+      ],
+      "question": "After taking two bearings with a hand-bearing compass, you have plotted your position. Click on the symbol representing a 'Fix'.",
+      "id": "rds-hs-0019"
+    },
+    {
+      "imageAlt": "Four sets of vertical navigation lights shown against a black background.",
+      "imageDescription": "Four light configurations: Red over Red (NUC), Green over White (Trawler), Red over White (Fishing), and Red/White/Red (Restricted in Ability to Manoeuvre).",
+      "type": "hot_spot",
+      "spots": [
+        {
+          "w": 0.15,
+          "id": "nuc_night",
+          "label": "Red over Red lights",
+          "x": 0.1,
+          "y": 0.3,
+          "h": 0.25
+        },
+        {
+          "y": 0.3,
+          "h": 0.25,
+          "label": "Green over White lights",
+          "x": 0.35,
+          "id": "trawler_night",
+          "w": 0.15
+        },
+        {
+          "id": "fishing_night",
+          "w": 0.15,
+          "y": 0.3,
+          "h": 0.25,
+          "x": 0.6,
+          "label": "Red over White lights"
+        },
+        {
+          "x": 0.85,
+          "label": "Red/White/Red lights",
+          "y": 0.3,
+          "h": 0.25,
+          "w": 0.15,
+          "id": "ram_night"
+        }
+      ],
+      "explanation": "A trawler displays green over white 'all-round' lights, while a vessel engaged in fishing other than trawling displays red over white.",
+      "correctSpotId": "trawler_night",
+      "question": "You are navigating at night and see lights ahead. Click on the light configuration for a vessel 'Engaged in Trawling'.",
+      "id": "rds-hs-0020"
+    },
+    {
+      "explanation": "Channel 16 is the international distress, safety, and calling frequency used for initial contact before moving to a working channel.",
+      "question": "You need to make a routine initial call to another vessel or monitor for distress signals. Click on the internationally recognised hailing and distress channel.",
+      "imageAlt": "A close-up of a fixed DSC VHF marine radio interface with various buttons and a digital display showing multiple channel numbers.",
+      "spots": [
+        {
+          "label": "Channel 06",
+          "h": 0.15,
+          "id": "vhf_ch06",
+          "y": 0.3,
+          "w": 0.15,
+          "x": 0.2
+        },
+        {
+          "w": 0.15,
+          "x": 0.4,
+          "id": "vhf_ch13",
+          "label": "Channel 13",
+          "h": 0.15,
+          "y": 0.3
+        },
+        {
+          "x": 0.6,
+          "w": 0.15,
+          "y": 0.3,
+          "id": "vhf_ch16",
+          "h": 0.15,
+          "label": "Channel 16"
+        },
+        {
+          "x": 0.8,
+          "w": 0.15,
+          "y": 0.3,
+          "label": "Channel 72",
+          "h": 0.15,
+          "id": "vhf_ch72"
+        }
+      ],
+      "imageDescription": "A marine VHF radio display showing several channel options: 06, 13, 16, and 72. Each number is contained within a selectable box.",
+      "correctSpotId": "vhf_ch16",
+      "type": "hot_spot",
+      "id": "rds-hs-0021"
+    },
+    {
+      "correctSpotId": "leeway_vector",
+      "type": "hot_spot",
+      "imageDescription": "Vector diagram showing a Water Track line. At the end of the Water Track, there are two arrows: one pointing downwind representing leeway, and one representing the tidal stream.",
+      "explanation": "The Leeway vector is applied to the Water Track (the direction the boat is pointed) to account for the wind pushing the vessel sideways.",
+      "spots": [
+        {
+          "y": 0.4,
+          "h": 0.2,
+          "label": "Water Track line",
+          "id": "water_track",
+          "x": 0.3,
+          "w": 0.3
+        },
+        {
+          "x": 0.55,
+          "w": 0.1,
+          "y": 0.45,
+          "label": "Leeway arrow",
+          "h": 0.1,
+          "id": "leeway_vector"
+        },
+        {
+          "y": 0.6,
+          "h": 0.15,
+          "label": "Tidal Stream vector",
+          "id": "tidal_vector",
+          "x": 0.7,
+          "w": 0.2
+        }
+      ],
+      "question": "When plotting an Estimated Position (EP), you must account for the wind's effect on the hull. Click on the vector that represents 'Leeway'.",
+      "imageAlt": "A vector diagram used for an Estimated Position (EP). It shows a line for the water track, a small perpendicular arrow for leeway, and a tidal stream vector.",
+      "id": "rds-hs-0022"
+    },
+    {
+      "explanation": "The Safe Water Mark is identified by a single red sphere topmark and vertical red and white stripes on the body.",
+      "spots": [
+        {
+          "w": 0.15,
+          "x": 0.1,
+          "label": "North Cardinal Topmark",
+          "h": 0.2,
+          "id": "north_cardinal_topmark",
+          "y": 0.5
+        },
+        {
+          "y": 0.5,
+          "id": "port_lateral_topmark",
+          "h": 0.2,
+          "label": "Port Lateral Topmark",
+          "x": 0.35,
+          "w": 0.15
+        },
+        {
+          "y": 0.5,
+          "id": "safe_water_mark_topmark",
+          "label": "Safe Water Topmark",
+          "h": 0.2,
+          "x": 0.6,
+          "w": 0.15
+        },
+        {
+          "label": "Special Mark Topmark",
+          "h": 0.2,
+          "id": "special_mark_topmark",
+          "y": 0.5,
+          "w": 0.15,
+          "x": 0.85
+        }
+      ],
+      "question": "You are approaching a landfall after a cross-channel passage. Click on the topmark that identifies a 'Safe Water Mark'.",
+      "imageAlt": "Four different buoy topmarks: two black cones pointing up, a red can, a red sphere, and a yellow 'X'.",
+      "imageDescription": "A row of four buoy topmarks. A: Two black cones (points up), B: A red can/cylinder, C: A single red sphere, D: A yellow cross/X shape.",
+      "correctSpotId": "safe_water_mark_topmark",
+      "type": "hot_spot",
+      "id": "rds-hs-0023"
+    },
+    {
+      "spots": [
+        {
+          "y": 0.4,
+          "id": "overtaking_vessel_stern_light",
+          "h": 0.25,
+          "label": "Single white stern light",
+          "x": 0.15,
+          "w": 0.2
+        },
+        {
+          "x": 0.4,
+          "w": 0.2,
+          "y": 0.4,
+          "id": "sailing_vessel_masthead",
+          "h": 0.25,
+          "label": "Red over Green lights"
+        },
+        {
+          "y": 0.4,
+          "id": "port_side_light",
+          "h": 0.25,
+          "label": "Single red light",
+          "x": 0.65,
+          "w": 0.2
+        },
+        {
+          "y": 0.4,
+          "h": 0.25,
+          "label": "Single green light",
+          "id": "starboard_side_light",
+          "x": 0.9,
+          "w": 0.2
+        }
+      ],
+      "imageAlt": "A night view of the sea showing four different configurations of single or grouped navigation lights.",
+      "question": "You are look-out at night. You see a single white light directly ahead, which you confirm is not a steaming light. Click on the light indicating you are the 'Overtaking' vessel.",
+      "explanation": "A vessel is deemed to be overtaking when approaching another from a direction more than 22.5 degrees abaft her beam, where only the stern light would be visible.",
+      "imageDescription": "Four separate panels showing: 1. A single white light. 2. A red light over a green light. 3. A red light. 4. A green light.",
+      "type": "hot_spot",
+      "correctSpotId": "overtaking_vessel_stern_light",
+      "id": "rds-hs-0024"
+    },
+    {
+      "question": "You are entering a UK harbour at night. Click on the Port Hand lateral mark.",
+      "type": "hot_spot",
+      "imageAlt": "Four different lateral marks on the water.",
+      "imageDescription": "A scene showing four lateral buoys: a red can buoy, a green cone buoy, a red can buoy with a light, and a green cone buoy with a light.",
+      "correctSpotId": "port_hand",
+      "explanation": "When entering a harbour with the flood tide, Port hand marks are red with square topmarks and should be left on the port (left) side.",
+      "spots": [
+        {
+          "x": 0.2,
+          "label": "Red Can Buoy",
+          "h": 0.2,
+          "y": 0.4,
+          "w": 0.15,
+          "id": "port_hand"
+        },
+        {
+          "y": 0.4,
+          "h": 0.2,
+          "x": 0.4,
+          "label": "Green Cone Buoy",
+          "id": "stbd_hand_1",
+          "w": 0.15
+        },
+        {
+          "id": "stbd_hand_2",
+          "w": 0.15,
+          "h": 0.2,
+          "y": 0.4,
+          "x": 0.6,
+          "label": "Green Cone with Light"
+        },
+        {
+          "id": "port_hand_2_wrong",
+          "w": 0.15,
+          "h": 0.2,
+          "y": 0.4,
+          "x": 0.8,
+          "label": "Yellow Special Mark"
+        }
+      ],
+      "id": "rds-hs-0025"
+    },
+    {
+      "question": "You are navigating near a rock. The chart tells you to pass to the East of the hazard. Click on the East Cardinal mark.",
+      "type": "hot_spot",
+      "imageDescription": "A diagram showing four cardinal marks (North, South, East, and West) with their respective black/yellow colour patterns and topmarks.",
+      "imageAlt": "Four different cardinal marks.",
+      "correctSpotId": "east_cardinal",
+      "explanation": "An East Cardinal mark has two cones pointing away from each other (bases together) and indicates safe water to the East.",
+      "spots": [
+        {
+          "y": 0.3,
+          "h": 0.25,
+          "x": 0.1,
+          "label": "North Cardinal",
+          "id": "north_cardinal",
+          "w": 0.15
+        },
+        {
+          "id": "east_cardinal",
+          "w": 0.15,
+          "h": 0.25,
+          "y": 0.3,
+          "x": 0.3,
+          "label": "East Cardinal"
+        },
+        {
+          "label": "South Cardinal",
+          "x": 0.5,
+          "y": 0.3,
+          "h": 0.25,
+          "w": 0.15,
+          "id": "south_cardinal"
+        },
+        {
+          "label": "West Cardinal",
+          "x": 0.7,
+          "y": 0.3,
+          "h": 0.25,
+          "w": 0.15,
+          "id": "west_cardinal"
+        }
+      ],
+      "id": "rds-hs-0026"
+    },
+    {
+      "spots": [
+        {
+          "y": 0.2,
+          "h": 0.1,
+          "x": 0.2,
+          "label": "Water Track (Single Arrow)",
+          "id": "water_track_wrong",
+          "w": 0.4
+        },
+        {
+          "label": "Tidal Stream (Three Arrows)",
+          "x": 0.5,
+          "h": 0.1,
+          "y": 0.5,
+          "w": 0.2,
+          "id": "tide_vector_wrong"
+        },
+        {
+          "id": "ground_track",
+          "w": 0.4,
+          "y": 0.6,
+          "h": 0.1,
+          "x": 0.2,
+          "label": "Ground Track (Double Arrow)"
+        }
+      ],
+      "explanation": "In a Course to Steer (CTS) diagram, the line with two arrows represents the 'Course Over Ground' (COG) or Ground Track.",
+      "correctSpotId": "ground_track",
+      "imageDescription": "A vector triangle showing one line with one arrow, one line with three arrows (tide), and one line with two arrows.",
+      "imageAlt": "A standard RYA CTS vector diagram showing water track, tidal stream, and ground track.",
+      "type": "hot_spot",
+      "question": "In this Course to Steer (CTS) diagram, click on the vector representing the Ground Track (the intended path over the seabed).",
+      "id": "rds-hs-0027"
+    },
+    {
+      "question": "You see a vessel at night and observe its masthead lights. Click on the configuration for a 'Sailing Vessel' under way.",
+      "type": "hot_spot",
+      "imageAlt": "Four sets of vessel lights at night.",
+      "imageDescription": "Four diagrams of lights: 1. Red over white (fishing), 2. Red over green (sailing), 3. Red over red (NUC), 4. White over white (towing).",
+      "correctSpotId": "sailing_vessel",
+      "explanation": "A sailing vessel seen from the side at night shows a red (port) or green (starboard) sidelight; if over 20m or using optional lights, it may show red over green at the masthead.",
+      "spots": [
+        {
+          "x": 0.1,
+          "label": "Red over White",
+          "h": 0.3,
+          "y": 0.2,
+          "w": 0.2,
+          "id": "fishing_wrong"
+        },
+        {
+          "w": 0.2,
+          "id": "sailing_vessel",
+          "x": 0.35,
+          "label": "Red over Green",
+          "y": 0.2,
+          "h": 0.3
+        },
+        {
+          "label": "Red over Red",
+          "x": 0.6,
+          "h": 0.3,
+          "y": 0.2,
+          "w": 0.2,
+          "id": "nuc_wrong"
+        },
+        {
+          "h": 0.3,
+          "y": 0.2,
+          "x": 0.85,
+          "label": "White over White",
+          "id": "towing_wrong",
+          "w": 0.2
+        }
+      ],
+      "id": "rds-hs-0028"
+    },
+    {
+      "correctSpotId": "ch16",
+      "spots": [
+        {
+          "label": "Channel 16",
+          "w": 0.15,
+          "id": "ch16",
+          "x": 0.5,
+          "h": 0.15,
+          "y": 0.3
+        },
+        {
+          "x": 0.3,
+          "label": "Channel 06",
+          "w": 0.15,
+          "id": "ch06",
+          "y": 0.3,
+          "h": 0.15
+        },
+        {
+          "y": 0.3,
+          "h": 0.15,
+          "x": 0.7,
+          "id": "ch13",
+          "w": 0.15,
+          "label": "Channel 13"
+        },
+        {
+          "x": 0.5,
+          "w": 0.15,
+          "id": "ch72",
+          "label": "Channel 72",
+          "y": 0.6,
+          "h": 0.15
+        }
+      ],
+      "imageAlt": "Close up of a marine VHF radio interface with several numbered buttons including 16, 06, 13, and 72.",
+      "type": "hot_spot",
+      "imageDescription": "A standard marine VHF radio control panel showing various channel selection buttons.",
+      "question": "You need to monitor the international distress frequency. Which channel button should you select?",
+      "explanation": "Channel 16 is the international distress, safety, and calling frequency used to establish initial contact before switching to a working channel.",
+      "id": "rds-hs-0029"
+    },
+    {
+      "imageAlt": "Four different cardinal marks showing their specific black and yellow band patterns and cone topmarks.",
+      "imageDescription": "A diagram showing the four cardinal marks: North, East, South, and West, each with their unique topmarks.",
+      "type": "hot_spot",
+      "explanation": "A West Cardinal mark has two cones point-to-point (forming a 'waist' shape) and indicates safe water is to the West of the mark.",
+      "question": "You are approaching a cluster of rocks. To stay in safe water, you must pass to the West of the hazard. Click on the West Cardinal mark.",
+      "correctSpotId": "west_cardinal",
+      "spots": [
+        {
+          "h": 0.4,
+          "y": 0.3,
+          "label": "North Cardinal",
+          "id": "north_cardinal",
+          "w": 0.2,
+          "x": 0.1
+        },
+        {
+          "id": "south_cardinal",
+          "w": 0.2,
+          "label": "South Cardinal",
+          "x": 0.3,
+          "h": 0.4,
+          "y": 0.3
+        },
+        {
+          "w": 0.2,
+          "id": "east_cardinal",
+          "label": "East Cardinal",
+          "x": 0.6,
+          "h": 0.4,
+          "y": 0.3
+        },
+        {
+          "x": 0.8,
+          "w": 0.2,
+          "id": "west_cardinal",
+          "label": "West Cardinal",
+          "y": 0.3,
+          "h": 0.4
+        }
+      ],
+      "id": "rds-hs-0030"
+    },
+    {
+      "spots": [
+        {
+          "h": 0.1,
+          "y": 0.2,
+          "label": "Ground Track (2 arrows)",
+          "id": "track_vector",
+          "w": 0.5,
+          "x": 0.5
+        },
+        {
+          "w": 0.3,
+          "id": "tide_vector",
+          "label": "Tidal Stream (3 arrows)",
+          "x": 0.7,
+          "h": 0.1,
+          "y": 0.5
+        },
+        {
+          "h": 0.1,
+          "y": 0.7,
+          "w": 0.5,
+          "id": "cts_vector",
+          "label": "Course to Steer (1 arrow)",
+          "x": 0.4
+        }
+      ],
+      "correctSpotId": "cts_vector",
+      "question": "You are planning a passage and have drawn your vector triangle. Click on the vector that represents the Course to Steer (heading through the water).",
+      "explanation": "In a Course to Steer (CTS) triangle, the vector with one arrow represents the path through the water (vessel's heading and speed).",
+      "type": "hot_spot",
+      "imageDescription": "A standard three-vector RYA course to steer diagram showing the relationship between tide, track, and heading.",
+      "imageAlt": "A navigation triangle showing three vectors: the ground track (intended path), the tide (set and drift), and the course to steer.",
+      "id": "rds-hs-0031"
+    },
+    {
+      "correctSpotId": "vessel_a",
+      "spots": [
+        {
+          "x": 0.2,
+          "label": "Vessel A",
+          "w": 0.3,
+          "id": "vessel_a",
+          "y": 0.5,
+          "h": 0.3
+        },
+        {
+          "label": "Vessel B",
+          "w": 0.3,
+          "id": "vessel_b",
+          "x": 0.7,
+          "h": 0.3,
+          "y": 0.5
+        }
+      ],
+      "imageAlt": "A bird's-eye view diagram of two motorboats on crossing courses. Vessel B is approaching from the right (starboard) of Vessel A.",
+      "question": "In this crossing situation between two power-driven vessels in sight of one another, click on the 'Give-way' vessel.",
+      "explanation": "Rule 15 states that when two power-driven vessels are crossing, the vessel which has the other on her own starboard side shall keep out of the way. Vessel B is on the starboard side of Vessel A.",
+      "type": "hot_spot",
+      "imageDescription": "Collision Regulations diagram showing two power-driven vessels, A and B, on a collision course at right angles.",
+      "id": "rds-hs-0032"
+    },
+    {
+      "spots": [
+        {
+          "x": 0.5,
+          "w": 0.15,
+          "y": 0.15,
+          "id": "north_cardinal",
+          "label": "North Cardinal Mark",
+          "h": 0.2
+        },
+        {
+          "w": 0.15,
+          "x": 0.8,
+          "label": "East Cardinal Mark",
+          "id": "east_cardinal",
+          "h": 0.2,
+          "y": 0.5
+        },
+        {
+          "h": 0.2,
+          "id": "south_cardinal",
+          "label": "South Cardinal Mark",
+          "y": 0.85,
+          "w": 0.15,
+          "x": 0.5
+        },
+        {
+          "w": 0.15,
+          "x": 0.15,
+          "h": 0.2,
+          "label": "West Cardinal Mark",
+          "id": "west_cardinal",
+          "y": 0.5
+        }
+      ],
+      "imageAlt": "A diagram showing four different cardinal marks in a circle around a hazard.",
+      "question": "You are approaching a shallow bank and must pass to the south of it. Click on the South Cardinal mark.",
+      "explanation": "A South Cardinal mark features two cones pointing downwards and a yellow-over-black colour scheme.",
+      "type": "hot_spot",
+      "correctSpotId": "south_cardinal",
+      "imageDescription": "Four cardinal marks (North, East, South, West) surrounding a central hazard symbol.",
+      "id": "rds-hs-0033"
+    },
+    {
+      "explanation": "When plotting an Estimated Position (EP), the tidal vector is drawn from the DR position in the direction the tide is setting.",
+      "imageAlt": "A navigation plot showing a starting point, a water track (DR), and a resulting position after tide.",
+      "question": "You are plotting an Estimated Position (EP). Based on the DR line already drawn, click on the vector representing the 'Tide' (Set and Drift).",
+      "spots": [
+        {
+          "y": 0.4,
+          "h": 0.1,
+          "label": "Water Track (DR)",
+          "id": "dr_line",
+          "x": 0.3,
+          "w": 0.4
+        },
+        {
+          "h": 0.15,
+          "id": "tide_vector",
+          "label": "Tidal Vector",
+          "y": 0.6,
+          "w": 0.2,
+          "x": 0.7
+        },
+        {
+          "w": 0.5,
+          "x": 0.4,
+          "h": 0.1,
+          "id": "ground_track",
+          "label": "Track Made Good",
+          "y": 0.7
+        }
+      ],
+      "correctSpotId": "tide_vector",
+      "type": "hot_spot",
+      "imageDescription": "A vector diagram showing an initial position, a line representing the boat's movement through water (DR), and a secondary line representing tidal set.",
+      "id": "rds-hs-0034"
+    },
+    {
+      "spots": [
+        {
+          "w": 0.2,
+          "x": 0.1,
+          "id": "vessel_ram",
+          "label": "Restricted in Ability to Manoeuvre",
+          "h": 0.25,
+          "y": 0.3
+        },
+        {
+          "y": 0.3,
+          "h": 0.25,
+          "id": "vessel_constrained_draught",
+          "label": "Constrained by Draught",
+          "x": 0.4,
+          "w": 0.2
+        },
+        {
+          "y": 0.3,
+          "label": "Not Under Command",
+          "id": "vessel_nuc_2",
+          "h": 0.25,
+          "x": 0.7,
+          "w": 0.2
+        }
+      ],
+      "question": "You are in a narrow channel. Click on the vessel that is 'Constrained by her Draught' and unable to deviate from her course.",
+      "imageAlt": "Four different sets of vertical navigation lights seen on vessel silhouettes.",
+      "explanation": "A vessel constrained by her draught displays three red all-round lights in a vertical line at night.",
+      "type": "hot_spot",
+      "correctSpotId": "vessel_constrained_draught",
+      "imageDescription": "Four vessel silhouettes showing different light configurations: NUC, Restricted in Ability to Manoeuvre, Constrained by Draught, and Pilot.",
+      "id": "rds-hs-0035"
+    },
+    {
+      "type": "hot_spot",
+      "correctSpotId": "transom_cleat",
+      "imageDescription": "A boat moored alongside a pontoon with lines A, B, C, and D representing Bow/Stern lines and Springs.",
+      "spots": [
+        {
+          "y": 0.2,
+          "h": 0.1,
+          "label": "Bow Spring",
+          "id": "bow_spring",
+          "x": 0.3,
+          "w": 0.2
+        },
+        {
+          "w": 0.2,
+          "x": 0.5,
+          "label": "Aft Spring 2",
+          "id": "stern_spring",
+          "h": 0.1,
+          "y": 0.2
+        },
+        {
+          "w": 0.1,
+          "x": 0.8,
+          "h": 0.15,
+          "id": "transom_cleat",
+          "label": "Stern Breast Line",
+          "y": 0.5
+        }
+      ],
+      "question": "You are moored alongside in a cross-wind. Click on the 'Stern Breast' line used to keep the aft of the boat tight against the pontoon.",
+      "imageAlt": "Top-down diagram of a boat alongside a pontoon with several mooring lines labelled.",
+      "explanation": "The breast back is a short line led roughly at 90 degrees to the pontoon to hold the stern in close.",
+      "id": "rds-hs-0036"
+    },
+    {
+      "question": "You are securing your vessel to a metal ring on a harbour wall. Click on the knot most suitable for this task that is least likely to jam under tension.",
+      "explanation": "The Round Turn and Two Half Hitches is the most reliable knot for securing a boat to a ring or post under load as it won't jam and is easy to untie.",
+      "spots": [
+        {
+          "x": 0.2,
+          "h": 0.3,
+          "w": 0.3,
+          "label": "Bowline",
+          "y": 0.2,
+          "id": "bowline"
+        },
+        {
+          "x": 0.7,
+          "h": 0.3,
+          "id": "clove_hitch",
+          "y": 0.2,
+          "label": "Clove Hitch",
+          "w": 0.3
+        },
+        {
+          "h": 0.3,
+          "x": 0.2,
+          "id": "bth_hitch",
+          "label": "Round Turn and Two Half Hitches",
+          "w": 0.3,
+          "y": 0.7
+        },
+        {
+          "label": "Figure of Eight",
+          "w": 0.3,
+          "y": 0.7,
+          "id": "fig_8",
+          "x": 0.7,
+          "h": 0.3
+        }
+      ],
+      "imageDescription": "Four distinct knots tied in white rope against a blue background, labelled A to D.",
+      "imageAlt": "A selection of four common nautical knots: a Bowline, a Clove Hitch, a Round Turn and Two Half Hitches, and a Figure of Eight.",
+      "correctSpotId": "bth_hitch",
+      "type": "hot_spot",
+      "id": "rds-hs-0037"
+    },
+    {
+      "question": "In this crossing situation between two power-driven vessels, which vessel is the 'Stand-on' vessel according to the ColRegs?",
+      "explanation": "Under IRPCS Rule 15, when two power-driven vessels are crossing, the vessel which has the other on her own starboard side shall keep out of the way.",
+      "imageDescription": "An overhead diagram showing two power-driven vessels, A and B, crossing at 90 degrees. Vessel B is to the starboard of Vessel A.",
+      "spots": [
+        {
+          "id": "port_vessel",
+          "label": "Vessel A (Port side)",
+          "w": 0.4,
+          "y": 0.5,
+          "x": 0.2,
+          "h": 0.4
+        },
+        {
+          "h": 0.4,
+          "x": 0.7,
+          "id": "starboard_vessel",
+          "y": 0.5,
+          "w": 0.4,
+          "label": "Vessel B (Starboard side)"
+        }
+      ],
+      "imageAlt": "Two motorboats on a collision course. Boat A is seeing the port side of Boat B. Boat B is seeing the starboard side of Boat A.",
+      "correctSpotId": "starboard_vessel",
+      "type": "hot_spot",
+      "id": "rds-hs-0038"
+    },
+    {
+      "question": "You are navigating near a submerged wreck. To stay in safe water, the chart indicates you must pass to the North. Click on the correct Cardinal Mark.",
+      "correctSpotId": "north_cardinal",
+      "imageAlt": "Four cardinal marks: North, South, East, and West.",
+      "imageDescription": "A row of four cardinal buoys with their respective black and yellow bands and conical topmarks.",
+      "spots": [
+        {
+          "h": 0.6,
+          "x": 0.1,
+          "label": "North Cardinal (Cones Up)",
+          "w": 0.2,
+          "y": 0.4,
+          "id": "north_cardinal"
+        },
+        {
+          "id": "south_cardinal",
+          "w": 0.2,
+          "label": "South Cardinal (Cones Down)",
+          "y": 0.4,
+          "x": 0.35,
+          "h": 0.6
+        },
+        {
+          "w": 0.2,
+          "label": "East Cardinal (Cones base-to-base)",
+          "y": 0.4,
+          "id": "east_cardinal",
+          "x": 0.6,
+          "h": 0.6
+        },
+        {
+          "x": 0.85,
+          "h": 0.6,
+          "y": 0.4,
+          "label": "West Cardinal (Cones point-to-point)",
+          "w": 0.2,
+          "id": "west_cardinal"
+        }
+      ],
+      "explanation": "A North Cardinal mark indicates that the deepest or safest water lies to the North; its topmark consists of two cones pointing upwards.",
+      "type": "hot_spot",
+      "id": "rds-hs-0039"
+    },
+    {
+      "imageAlt": "Four light phase diagrams: Flashing, Occulting, Isophase, and Quick Flashing.",
+      "correctSpotId": "sq_occulting",
+      "explanation": "An occulting light is one where the total duration of light in each period is longer than the total duration of darkness.",
+      "spots": [
+        {
+          "h": 0.2,
+          "x": 0.5,
+          "id": "sq_flashing",
+          "label": "Flashing (mostly dark)",
+          "w": 0.8,
+          "y": 0.2
+        },
+        {
+          "label": "Occulting (mostly light)",
+          "w": 0.8,
+          "y": 0.4,
+          "id": "sq_occulting",
+          "h": 0.2,
+          "x": 0.5
+        },
+        {
+          "x": 0.5,
+          "h": 0.2,
+          "y": 0.6,
+          "w": 0.8,
+          "label": "Isophase (equal light/dark)",
+          "id": "sq_isophase"
+        },
+        {
+          "h": 0.2,
+          "x": 0.5,
+          "label": "Quick Flashing",
+          "w": 0.8,
+          "y": 0.8,
+          "id": "sq_quick"
+        }
+      ],
+      "imageDescription": "Four timing diagrams showing the patterns of light and dark for different light characteristics.",
+      "question": "You are identifying a lighthouse from the chart with the characteristic 'Oc 10s'. Click on the diagram that represents an 'Occulting' light.",
+      "type": "hot_spot",
+      "id": "rds-hs-0040"
     }
   ],
   "mocks": []
