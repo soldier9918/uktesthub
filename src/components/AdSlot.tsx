@@ -139,15 +139,11 @@ export function AdSlot({
     };
   }, [visible, slotId]);
 
-  // No AdSense configured → reserve the space but render an invisible box
-  // (no border, no fill, no text) so layout/spacing stays consistent.
+  // No AdSense configured → render nothing so unfilled slots don't create
+  // empty whitespace that misaligns the surrounding layout. Once AdSense is
+  // enabled and ads start filling, real reserved space returns.
   if (!ADSENSE_ENABLED) {
-    return (
-      <div
-        aria-hidden
-        className={`w-full ${sizeStyles[size]} ${className}`}
-      />
-    );
+    return null;
   }
 
   // Missing slotId in production → render nothing
