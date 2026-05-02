@@ -6817,6 +6817,186 @@
       "question": "What is the name of the night-time wind effect shown in this mountain valley diagram?",
       "imageDescription": "A cross-section of a valley at night. Blue arrows show cold, dense air flowing downwards from the mountain peaks into the valley floor.",
       "id": "pm-im-0144"
+    },
+    {
+      "question": "On a surface station plot, what amount of cloud cover does this symbol represent?",
+      "options": [
+        "Clear skies (0/8)",
+        "Overcast (8/8)",
+        "Broken (5/8 to 7/8)",
+        "Sky obscured"
+      ],
+      "imageAlt": "Surface station circle symbol completely filled in black.",
+      "imageDescription": "A standard meteorological station plot circle that is entirely blacked out.",
+      "type": "image_question",
+      "correctAnswer": 1,
+      "explanation": "The circle in a surface station plot indicates the total cloud cover in oktas; a completely filled circle signifies 8/8 coverage (overcast).",
+      "id": "pm-im-0145"
+    },
+    {
+      "question": "What does the spacing of the isobars in this region indicate about the wind conditions?",
+      "options": [
+        "Light and variable winds",
+        "High pressure system center",
+        "Strong pressure gradient and high wind speeds Light and variable winds",
+        "Low vertical wind shear"
+      ],
+      "imageAlt": "A surface pressure chart showing isobars tightly packed over the North Sea.",
+      "imageDescription": "A portion of a synoptic pressure chart where the 1004mb and 1000mb isobars are drawn very close together.",
+      "correctAnswer": 2,
+      "explanation": "Isobars that are closely spaced indicate a steep pressure gradient, which results in higher wind speeds.",
+      "type": "image_question",
+      "id": "pm-im-0146"
+    },
+    {
+      "explanation": "In the Northern Hemisphere, surface winds blow across the isobars at approximately 10 to 20 degrees over the sea and up to 30 degrees over land towards lower pressure.",
+      "correctAnswer": 0,
+      "type": "image_question",
+      "imageDescription": "A diagram of a curve labeled 1012mb (isobar) with a Low pressure area to the left. An arrow shows wind direction angled 30 degrees inward towards the Low.",
+      "imageAlt": "A diagram showing an isobar with an arrow indicating the wind direction slightly across it towards low pressure.",
+      "options": [
+        "Surface friction slowing the wind and causing it to back (in the NH)",
+        "The effect of geostrophic balance in the upper atmosphere",
+        "The centrifugal force in a high-pressure system",
+        "Air moving directly from High to Low pressure without Coriolis effect"
+      ],
+      "question": "Which factor causes the surface wind to cross the isobars at the angle shown in this diagram?",
+      "id": "pm-im-0147"
+    },
+    {
+      "question": "What significant weather feature is identified by this symbol on a SIGWX chart?",
+      "options": [
+        "A cold front",
+        "A warm front",
+        "An occluded front",
+        "A squall line"
+      ],
+      "imageDescription": "A dedicated symbol for a squall line represented by a line with double-dot patterns or a specific SIGWX line indicating a line of thunderstorms.",
+      "imageAlt": "A SIGWX chart symbol consisting of a line with V-shapes (pips) along it.",
+      "explanation": "The symbol for a squall line on a weather chart consists of a line with two dots and a dash repeatedly, or sometimes a solid line with double 'pips'.",
+      "correctAnswer": 3,
+      "type": "image_question",
+      "id": "pm-im-0148"
+    },
+    {
+      "imageDescription": "A standard meteorological symbol for light drizzle, which consists of two commas placed next to each other.",
+      "imageAlt": "Two commas side by side in a meteorological station plot.",
+      "type": "image_question",
+      "correctAnswer": 0,
+      "explanation": "The symbols 'comma-comma' (,,) on a station plot represent drizzle. Continuous drizzle is shown as four commas in a square or three in a line.",
+      "question": "What type of precipitation is indicated by this specific symbol on a weather station plot?",
+      "options": [
+        "Drizzle",
+        "Rain showers",
+        "Snow grains",
+        "Ice pellets"
+      ],
+      "id": "pm-im-0149"
+    },
+    {
+      "question": "What hazard to flight is indicated by this symbol on a UK SIGWX chart?",
+      "options": [
+        "Clear Air Turbulence only",
+        "Mountain waves",
+        "Moderate turbulence",
+        "Severe icing"
+      ],
+      "imageDescription": "The standard SIGWX symbol for moderate turbulence (a 'broken' caret shape).",
+      "imageAlt": "A symbol resembling a letter 'v' atop another 'v', forming a jagged arrow.",
+      "type": "image_question",
+      "correctAnswer": 2,
+      "explanation": "This specific 'zig-zag' arrow symbol is used on Significant Weather charts to denote the presence of moderate or severe turbulence.",
+      "id": "pm-im-0150"
+    },
+    {
+      "question": "Identify the type of front represented by this symbol.",
+      "options": [
+        "Stationary Front",
+        "Occluded Front",
+        "Cold Front returning as a Warm Front",
+        "Squall Line"
+      ],
+      "imageAlt": "A line on a weather map with alternating purple triangles and semi-circles.",
+      "imageDescription": "A meteorological map symbol showing a purple line with alternating triangles and semi-circles on the same side of the line.",
+      "type": "image_question",
+      "correctAnswer": 1,
+      "explanation": "In an occluded front, the symbols (triangles and semi-circles) are both pointed in the same direction of travel and alternate along the line.",
+      "id": "pm-im-0151"
+    },
+    {
+      "explanation": "A short barb represents 5 knots, a long barb 10 knots, and a pennant 50 knots. A long and a short barb together equal 15 knots.",
+      "correctAnswer": 3,
+      "type": "image_question",
+      "imageAlt": "A wind barb with one long line and one short line at the end.",
+      "imageDescription": "A wind barb symbol consisting of one full-length feather (10kts) and one half-length feather (5kts).",
+      "options": [
+        "5 knots",
+        "10 knots",
+        "20 knots",
+        "15 knots village"
+      ],
+      "question": "What wind speed is indicated by the feathers on this wind barb?",
+      "id": "pm-im-0152"
+    },
+    {
+      "options": [
+        "Fog (Visibility < 1000m)",
+        "Mist (Visibility 1000m to 5000m)",
+        "Heavy Haze",
+        "Smoke haze"
+      ],
+      "question": "On a station plot, what atmospheric condition is represented by this symbol?",
+      "type": "image_question",
+      "explanation": "The symbol consisting of three vertical bars represents fog, which is defined as visibility reduced to less than 1,000 metres.",
+      "correctAnswer": 0,
+      "imageDescription": "The standard meteorological symbol for fog: three horizontal, parallel black lines stacked vertically.",
+      "imageAlt": "Three horizontal parallel lines.",
+      "id": "pm-im-0153"
+    },
+    {
+      "imageAlt": "Diagram showing ground being heated by the sun and air rising to form a cumulonimbus cloud.",
+      "imageDescription": "A diagram showing the sun shining on a dark field, with red arrows pointing upwards into a large, anvil-topped cloud.",
+      "correctAnswer": 1,
+      "explanation": "Air mass thunderstorms are caused by intense solar heating of the ground, which leads to localized convection and updrafts.",
+      "type": "image_question",
+      "question": "Which lifting mechanism is primary responsible for the cloud formation shown in this diagram?",
+      "options": [
+        "Frontal lifting",
+        "Surface heating (Convection)",
+        "Orographic lifting over hills",
+        "Convergence of air in a low-pressure center"
+      ],
+      "id": "pm-im-0154"
+    },
+    {
+      "correctAnswer": 2,
+      "explanation": "An anticyclone (High) in the Northern Hemisphere features winds that circulate in a clockwise direction and slightly outwards at the surface.",
+      "type": "image_question",
+      "imageDescription": "A synoptic chart extract showing a High pressure center (1032mb) with wind arrows illustrating the circulation around it in the Northern Hemisphere.",
+      "imageAlt": "A large 'H' on a chart with arrows circling it in a clockwise direction.",
+      "options": [
+        "Anticyclonic and anti-clockwise",
+        "Cyclonic and clockwise village",
+        "Anticyclonic and clockwise village",
+        "Cyclonic and anti-clockwise village"
+      ],
+      "question": "What is the name and typical direction of the wind circulation around the pressure system shown here?",
+      "id": "pm-im-0155"
+    },
+    {
+      "imageAlt": "Diagram of warm air moving from a warm sea over a cold land surface, creating fog.",
+      "imageDescription": "A cross-section diagram showing a warm air mass moving horizontally over a colder surface (labelled 'Cold Surface'), resulting in fog near the ground.",
+      "type": "image_question",
+      "explanation": "Advection fog forms when warm, moist air moves over a relatively cold surface, cooling the air below its dew point.",
+      "correctAnswer": 1,
+      "question": "Which type of fog formation is being demonstrated in this meteorological diagram?",
+      "options": [
+        "Radiation fog village",
+        "Advection fog village",
+        "Hill fog village",
+        "Frontal fog village"
+      ],
+      "id": "pm-im-0156"
     }
   ],
   "mocks": []
