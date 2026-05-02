@@ -315,6 +315,162 @@
       "question": "What does a series of green flashes from the ground to an aircraft in flight mean?",
       "explanation": "Series of green flashes from the ground to an aircraft in flight means 'Return for landing', usually followed by a steady green for permission to land.",
       "id": "pal-mc-0024"
+    },
+    {
+      "explanation": "ICAO/UK SERA rules dictate that gliders always have right of way over powered aircraft.",
+      "options": [
+        "Both must turn right to avoid each other",
+        "The glider must give way because it is slower",
+        "The powered aircraft must give way to the glider",
+        "The aircraft that has the other on its right must give way"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "question": "When a powered aircraft and a glider are on a converging course, which one has the right of way?",
+      "id": "pal-mc-0025"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "question": "At what stage must a female pilot notify the Authority (CAA) of her pregnancy?",
+      "explanation": "The Pilot in Command must notify the CAA if a pregnancy is confirmed to ensure medical fitness standards are maintained.",
+      "options": [
+        "As soon as the pregnancy is confirmed",
+        "At the end of the first trimester (12 weeks)",
+        "When the pilot can no longer reach the controls comfortably",
+        "Only if the pilot intends to fly for a commercial airline"
+      ],
+      "id": "pal-mc-0026"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "question": "In which of the following ways is VFR flight handled in Class C Airspace?",
+      "explanation": "Class C airspace allows VFR flight, but it requires ATC clearance and the flight is separated from IFR traffic.",
+      "options": [
+        "VFR flight is prohibited at all times",
+        "VFR flight is permitted without a clearance",
+        "VFR flight is permitted and is only separated from other VFR traffic",
+        "VFR flight is permitted and is separated from IFR traffic"
+      ],
+      "id": "pal-mc-0027"
+    },
+    {
+      "question": "According to the Rules of the Air, who is primarily responsible for the operation of the aircraft in accordance with the rules?",
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "options": [
+        "The owner of the aircraft",
+        "The Pilot in Command",
+        "The Air Traffic Controller on duty",
+        "The handling agent at the departure airfield"
+      ],
+      "explanation": "SERA 3101 states that no aircraft shall be operated in a negligent or reckless manner so as to endanger life or property of others.",
+      "id": "pal-mc-0028"
+    },
+    {
+      "options": [
+        "Move clear of the landing area/runway immediately",
+        "Stop where you are and wait for further instructions",
+        "Return to the starting point on the aerodrome",
+        "You are cleared to cross the runway"
+      ],
+      "explanation": "Standard light signals are used when radio communication is unavailable; a red flash to an aircraft on the ground tells them to taxi clear of the landing area.",
+      "correctAnswer": 0,
+      "question": "What does a series of red flashes directed at an aircraft on the ground mean?",
+      "type": "multiple_choice",
+      "id": "pal-mc-0029"
+    },
+    {
+      "question": "What is the minimum distance an aircraft should maintain from any person, vessel, vehicle, or structure?",
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "options": [
+        "200 feet",
+        "1,000 feet",
+        "500 feet",
+        "1,500 feet"
+      ],
+      "explanation": "Unless specifically exempted, aircraft should not fly closer than 500ft to any person, vessel, vehicle, or structure under the SERA '500ft rule'.",
+      "id": "pal-mc-0030"
+    },
+    {
+      "options": [
+        "The lowest flight level available for use above the transition altitude",
+        "The height at which the pilot must set the local QNH",
+        "The altitude below which horizontal distance from clouds is not required",
+        "The altitude at which the cruising levels table no longer applies"
+      ],
+      "explanation": "The transition level is the first available flight level above the transition altitude, where the altimeter is changed from local pressure to 1013.25 hPa.",
+      "correctAnswer": 0,
+      "question": "What is the definition of the Transition Level?",
+      "type": "multiple_choice",
+      "id": "pal-mc-0031"
+    },
+    {
+      "options": [
+        "Both aircraft should climb to avoid a collision",
+        "Each aircraft shall alter its course to the right",
+        "The smaller aircraft must give way to the larger aircraft",
+        "The aircraft with the highest groundspeed must turn left"
+      ],
+      "explanation": "Rules of the Air state that when two aircraft are approaching head-on, both must alter their course to the right.",
+      "question": "When two aircraft are approaching head-on and there is a danger of collision, what action should be taken?",
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "id": "pal-mc-0032"
+    },
+    {
+      "options": [
+        "An occurrence where a person is fatally or seriously injured",
+        "An occurrence where the aircraft sustains structural failure",
+        "An occurrence where the aircraft is missing or inaccessible",
+        "An occurrence, other than an accident, associated with the operation of an aircraft which affects or could affect safety"
+      ],
+      "explanation": "An 'Incident' is an occurrence other than an accident that affects or could affect the safety of operation.",
+      "question": "How is an 'Incident' defined in the context of ICAO Annex 13?",
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "id": "pal-mc-0033"
+    },
+    {
+      "options": [
+        "The runway is currently blocked by a disabled aircraft",
+        "Glider flights are in progress at the aerodrome",
+        "The aerodrome is closed to all fixed-wing traffic",
+        "Aircraft should land on the grass areas only"
+      ],
+      "explanation": "A 'Total Frost' (two white strips) indicates that the aerodrome is being used by gliders and that glider flights are in progress.",
+      "question": "What does a white 'L' shape displayed in a signal square indicate?",
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "id": "pal-mc-0034"
+    },
+    {
+      "explanation": "Except for an aircraft taking off or landing, 1,000ft is the minimum vertical clearance over the highest obstacle in a congested area.",
+      "options": [
+        "500 feet above the highest obstacle within 600m",
+        "1,500 feet above the highest obstacle within 2,000m",
+        "1,000 feet above the highest obstacle within 600m",
+        "2,000 feet above the highest obstacle within 300m"
+      ],
+      "type": "multiple_choice",
+      "question": "When flying over a congested area of a city, what is the minimum height required above the highest obstacle within 600m of the aircraft?",
+      "correctAnswer": 2,
+      "id": "pal-mc-0035"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "In the UK AIP, what does the prefix 'EGR' followed by a number signify?",
+      "correctAnswer": 0,
+      "explanation": "A restricted area (identified by 'R' in the code) is an airspace of defined dimensions where the flight of aircraft is restricted in accordance with specific conditions.",
+      "options": [
+        "Restricted Area",
+        "Danger Area",
+        "Prohibited Area",
+        "Mandatory Radio Zone (MRZ)"
+      ],
+      "id": "pal-mc-0036"
     }
   ],
   "mocks": []

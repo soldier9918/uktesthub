@@ -4876,6 +4876,114 @@
       "question": "A station has 150 sets of gloves. They increase stock by 20% and then receive an extra 30 sets for new trainees. What is the final number of glove sets?",
       "tolerance": 0,
       "id": "fn-ne-0072"
+    },
+    {
+      "tolerance": 0,
+      "correctAnswer": 11.2,
+      "explanation": "To find the total distance, add the three legs: 3.2 + 1.2 + 6.8 = 11.2 km.",
+      "unit": "km",
+      "type": "numeric_entry",
+      "question": "A fire engine travels 3.2 km to an incident, 1.2 km to a water refill point, and 6.8 km back to the station. What is the total distance travelled in kilometres?",
+      "id": "fn-ne-0073"
+    },
+    {
+      "type": "numeric_entry",
+      "question": "A crew of 27 firefighters are staying at a temporary camp. If each person is allocated 7 litres of drinking water per day, how many litres are needed in total for one day?",
+      "tolerance": 0,
+      "unit": "litres",
+      "explanation": "Multiply the number of people by the daily allowance: 27 x 7 = 189 litres.",
+      "correctAnswer": 189,
+      "id": "fn-ne-0074"
+    },
+    {
+      "question": "A fire hose can be laid at a rate of 30 metres per minute. How many 30-metre lengths of hose can a team lay in 14 minutes?",
+      "type": "numeric_entry",
+      "explanation": "There are 60 minutes in an hour, so 420 divided by 30 equals 14 lengths.",
+      "correctAnswer": 14,
+      "unit": "lengths",
+      "tolerance": 0,
+      "id": "fn-ne-0075"
+    },
+    {
+      "explanation": "Divide the total distance by the time: 18 / 4 = 4.5 km/h.",
+      "correctAnswer": 4.5,
+      "unit": "km/h",
+      "tolerance": 0,
+      "question": "A search team covers a distance of 18 kilometres over a 4-hour shift. What was their average speed in kilometres per hour (km/h)?",
+      "type": "numeric_entry",
+      "id": "fn-ne-0076"
+    },
+    {
+      "question": "A high-volume pump can move 10,800 litres of water per hour. How many litres of water can it move in 12 minutes?",
+      "type": "numeric_entry",
+      "unit": "litres",
+      "correctAnswer": 2160,
+      "explanation": "12 minutes is one-fifth of an hour. 10,800 divided by 5 equals 2,160 litres.",
+      "tolerance": 0,
+      "id": "fn-ne-0077"
+    },
+    {
+      "tolerance": 0,
+      "unit": "extinguishers",
+      "correctAnswer": 138,
+      "explanation": "15% of 120 is 18. Adding this to the original amount results in 120 + 18 = 138.",
+      "type": "numeric_entry",
+      "question": "A station currently has 120 fire extinguishers. They order a 15% increase in stock for a new district. How many extinguishers will they have in total once the order arrives?",
+      "id": "fn-ne-0078"
+    },
+    {
+      "unit": "£",
+      "correctAnswer": 144,
+      "explanation": "Divide the total cost by the number of units: 1,728 / 12 = 144.",
+      "tolerance": 0,
+      "question": "A fire service purchases 12 thermal imaging cameras for a total of £1,728. What is the cost of one camera in pounds?",
+      "type": "numeric_entry",
+      "id": "fn-ne-0079"
+    },
+    {
+      "unit": "hours",
+      "correctAnswer": 0.75,
+      "explanation": "45 minutes is three-quarters of an hour, which is 0.75 as a decimal.",
+      "tolerance": 0,
+      "question": "A safety inspection at a local warehouse is scheduled to last 45 minutes. Express this duration in hours as a decimal.",
+      "type": "numeric_entry",
+      "id": "fn-ne-0080"
+    },
+    {
+      "unit": "canisters",
+      "correctAnswer": 13,
+      "explanation": "Add the weights (20.5 + 44.5 = 65) and divide by the weight of one canister (65 / 5 = 13).",
+      "tolerance": 0,
+      "question": "Two crates of equipment weigh 20.5kg and 44.5kg. If this total weight is replaced by canisters weighing 5kg each, how many canisters are needed to match the weight?",
+      "type": "numeric_entry",
+      "id": "fn-ne-0081"
+    },
+    {
+      "tolerance": 0,
+      "unit": "£",
+      "explanation": "Divide the total amount by the number of people: 114 / 8 = 14.25.",
+      "correctAnswer": 14.25,
+      "type": "numeric_entry",
+      "question": "A station's mess fund has £114. If this is split equally between 8 firefighters, how much does each person receive in pounds?",
+      "id": "fn-ne-0082"
+    },
+    {
+      "unit": "litres",
+      "explanation": "A 1:5 ratio means 6 parts total. 144 / 6 = 24 litres of foam.",
+      "correctAnswer": 24,
+      "tolerance": 0,
+      "question": "A foam solution is mixed in a ratio of 1 part foam concentrate to 5 parts water. To produce 144 litres of solution, how many litres of foam concentrate are required?",
+      "type": "numeric_entry",
+      "id": "fn-ne-0083"
+    },
+    {
+      "tolerance": 0,
+      "correctAnswer": 10.25,
+      "explanation": "Arriving at 09:55 and working for 30 minutes means they finish at 10:25.",
+      "unit": "time",
+      "type": "numeric_entry",
+      "question": "A fire engine leaves at 09:42 and arrives at the scene 13 minutes later. They work for exactly 30 minutes. At what time do they finish work? (Use HH.MM format)",
+      "id": "fn-ne-0084"
     }
   ],
   "mocks": []

@@ -7255,6 +7255,222 @@
       "explanation": "Aspiring barristers must complete a period of practical training in chambers, known as pupillage, under the supervision of an experienced barrister.",
       "prompt": "What is the training period for a barrister called?",
       "id": "uls-db-0036"
+    },
+    {
+      "prompt": "Legal professionals in the UK.",
+      "template": "A solicitor who has passed additional training to represent clients in the higher courts is known as a {{0}}.",
+      "type": "dropdown_blanks",
+      "explanation": "Solicitor-advocates are solicitors who have gained the same rights of audience as barristers in the higher courts.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "Barrister",
+            "Solicitor-Advocate",
+            "Junior Counsel",
+            "Chartered Legal Executive"
+          ]
+        }
+      ],
+      "id": "uls-db-0037"
+    },
+    {
+      "prompt": "Rules of judicial precedent.",
+      "template": "According to the rule in Young v Bristol Aeroplane Co Ltd, the {{0}} is generally bound by its own previous decisions.",
+      "type": "dropdown_blanks",
+      "explanation": "The Court of Appeal (Civil Division) is generally bound by its own previous decisions, with limited exceptions as established in Young v Bristol Aeroplane Co Ltd.",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "Court of Appeal",
+            "High Court",
+            "Privy Council",
+            "Upper Tribunal Justice"
+          ]
+        }
+      ],
+      "id": "uls-db-0038"
+    },
+    {
+      "template": "The most common form of delegated legislation, used by government ministers to add detail to an Act, is a {{0}}.",
+      "prompt": "Delegated legislation.",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "Common law law",
+            "Consolidating law",
+            "Statutory instrument",
+            "Enabling Act"
+          ]
+        }
+      ],
+      "explanation": "A Statutory Instrument is the most common form of delegated legislation, allowing ministers to update laws without a full Act of Parliament.",
+      "type": "dropdown_blanks",
+      "id": "uls-db-0039"
+    },
+    {
+      "template": "The independent body that investigates potential miscarriages of justice and refers cases back to the courts is the {{0}}.",
+      "prompt": "Post-conviction processes.",
+      "explanation": "The CCRC is the independent body responsible for investigating suspected miscarriages of justice in England, Wales, and Northern Ireland.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 3,
+          "options": [
+            "Crown Prosecution Service (CPS)",
+            "Magistrates' Court",
+            "Ministry of Justice",
+            "Criminal Cases Review Commission (CCRC)"
+          ]
+        }
+      ],
+      "id": "uls-db-0040"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "Public Law",
+            "Private Law",
+            "Criminal Law medical",
+            "Administrative Law"
+          ],
+          "correctIndex": 0
+        }
+      ],
+      "explanation": "Public law regulates the relationship between individuals and the state, including constitutional, administrative, and criminal law.",
+      "type": "dropdown_blanks",
+      "template": "The category of law that governs the relationship between the state and its citizens is known as {{0}}.",
+      "prompt": "Classification of law.",
+      "id": "uls-db-0041"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "Green Paper",
+            "Draft Bill",
+            "White Paper",
+            "First Reading speech"
+          ],
+          "correctIndex": 2
+        }
+      ],
+      "type": "dropdown_blanks",
+      "explanation": "A White Paper sets out firm government proposals for future legislation, following the more tentative Green Paper stage.",
+      "prompt": "The legislative process.",
+      "template": "A document produced by the government that sets out definitive proposals for new legislation is a {{0}}.",
+      "id": "uls-db-0042"
+    },
+    {
+      "type": "dropdown_blanks",
+      "explanation": "Either-way offences, such as theft, can be tried in either the Magistrates' Court or the Crown Court depending on the severity.",
+      "blanks": [
+        {
+          "correctIndex": 1,
+          "options": [
+            "Indictable-only offences",
+            "Either-way offences",
+            "Summary offences",
+            "Strict liability offences"
+          ]
+        }
+      ],
+      "prompt": "Criminal procedure.",
+      "template": "Crimes that can be tried in either the Magistrates' Court or the Crown Court are referred to as {{0}}.",
+      "id": "uls-db-0043"
+    },
+    {
+      "template": "The constitutional head of the judiciary in England and Wales is the {{0}}.",
+      "prompt": "The judiciary.",
+      "explanation": "The Lord Chief Justice is the head of the Judiciary of England and Wales and President of the Courts of England and Wales.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 3,
+          "options": [
+            "Master of the Rolls",
+            "Lord Chancellor",
+            "Attorney General",
+            "Lord Chief Justice"
+          ]
+        }
+      ],
+      "id": "uls-db-0044"
+    },
+    {
+      "blanks": [
+        {
+          "options": [
+            "Practice Directions",
+            "Standard of Proof",
+            "Rules of Natural Justice",
+            "Civil Procedure Rules"
+          ],
+          "correctIndex": 1
+        }
+      ],
+      "explanation": "The rules of natural justice, specifically 'audi alteram partem' (hear the other side), ensure fairness in legal proceedings.",
+      "type": "dropdown_blanks",
+      "template": "The legal principle requiring that a person must be given a fair hearing and that the judge must be impartial is known as the {{0}}.",
+      "prompt": "Fundamental legal principles.",
+      "id": "uls-db-0045"
+    },
+    {
+      "template": "The final stage of a Bill's journey through Parliament, where it becomes law, is receiving {{0}}.",
+      "prompt": "How laws are made.",
+      "explanation": "Royal Assent is the formal method by which a Monarch confirms a Bill, making it an Act of Parliament.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 0,
+          "options": [
+            "Royal Assent taps",
+            "The Third Reading",
+            "The Signature of State",
+            "Executive Validation"
+          ]
+        }
+      ],
+      "id": "uls-db-0046"
+    },
+    {
+      "type": "dropdown_blanks",
+      "explanation": "Arbitration involves a neutral third party making a binding decision that is enforceable in court, unlike mediation.",
+      "blanks": [
+        {
+          "options": [
+            "Conciliation",
+            "Early Neutral Evaluation",
+            "Mediation",
+            "Arbitration"
+          ],
+          "correctIndex": 3
+        }
+      ],
+      "prompt": "Alternative Dispute Resolution.",
+      "template": "A form of ADR where an independent third party makes a binding decision to resolve a dispute is called {{0}}.",
+      "id": "uls-db-0047"
+    },
+    {
+      "template": "A senior judge who sits in the Crown Court and is addressed as 'Your Honour' is a {{0}}.",
+      "prompt": "Judicial hierarchy.",
+      "explanation": "Circuit Judges are senior to District Judges and sit in the County Court and the Crown Court.",
+      "type": "dropdown_blanks",
+      "blanks": [
+        {
+          "correctIndex": 2,
+          "options": [
+            "A High Court Judge",
+            "A District Judge",
+            "A Circuit Judge hearing",
+            "The Lord Justice of Appeal"
+          ]
+        }
+      ],
+      "id": "uls-db-0048"
     }
   ],
   "mocks": []
