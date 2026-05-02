@@ -4228,6 +4228,112 @@
       ],
       "explanation": "The word 'Accommodate' requires a double 'c' and a double 'm'.",
       "id": "ab-mc-0325"
+    },
+    {
+      "type": "numeric_entry",
+      "correctAnswer": 115,
+      "explanation": "The total cost is calculated by adding the price of the boots (£85) to the price of the bag (£30).",
+      "unit": "pounds",
+      "question": "A soldier buys a pair of boots for £85 and a kit bag for £30. What is the total cost in pounds?",
+      "tolerance": 0,
+      "id": "ab-ne-0001"
+    },
+    {
+      "tolerance": 0,
+      "question": "A storeman has 12 boxes, and each box contains one dozen shirts. How many shirts are there in total?",
+      "unit": "shirts",
+      "type": "numeric_entry",
+      "explanation": "There are 12 items in a dozen; multiplying 12 by 12 gives a total of 144 items.",
+      "correctAnswer": 144,
+      "id": "ab-ne-0002"
+    },
+    {
+      "question": "A platoon must complete a 42km march. If they have already covered 27km, how many kilometres are left to march?",
+      "tolerance": 0,
+      "explanation": "To find the remaining distance, subtract the distance already covered (27km) from the total distance (42km).",
+      "correctAnswer": 15,
+      "type": "numeric_entry",
+      "unit": "km",
+      "id": "ab-ne-0003"
+    },
+    {
+      "tolerance": 0,
+      "question": "A vehicle travels at a steady speed of 60 miles per hour. How many miles will it travel in 8 hours?",
+      "unit": "miles",
+      "type": "numeric_entry",
+      "correctAnswer": 480,
+      "explanation": "The total distance is calculated by multiplying the speed (60 mph) by the time (8 hours).",
+      "id": "ab-ne-0004"
+    },
+    {
+      "tolerance": 0,
+      "question": "If there are 108 soldiers in a company and they are divided into sections of 12, how many sections are there?",
+      "unit": "sections",
+      "correctAnswer": 9,
+      "explanation": "Divide the total number of soldiers (108) by the number of soldiers per section (12) to get 9 sections.",
+      "type": "numeric_entry",
+      "id": "ab-ne-0005"
+    },
+    {
+      "tolerance": 0,
+      "question": "A fuel tank holds 300 litres. If the tank is 25% empty, how many litres of fuel are currently in the tank?",
+      "unit": "litres",
+      "correctAnswer": 225,
+      "explanation": "Calculate 25% of 300 by dividing 300 by 4, which is 75. Subtract 75 from 300 to find the remaining amount.",
+      "type": "numeric_entry",
+      "id": "ab-ne-0006"
+    },
+    {
+      "question": "What is the next number in this sequence: 34, 41, 48, 55, _?",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "correctAnswer": 62,
+      "explanation": "The sequence increases by 7 each time (34, 41, 48, 55). Adding 7 to 55 gives 62.",
+      "id": "ab-ne-0007"
+    },
+    {
+      "unit": "pounds",
+      "explanation": "Calculate the cost of the first 20kg (20 x £1 = £20) and the remaining 8kg (8 x £1.50 = £12), then add them together.",
+      "correctAnswer": 32,
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "question": "A parcel weighs 28kg. Shipping costs £1 per kg for the first 20kg and £1.50 per kg for any weight over that. What is the total cost?",
+      "id": "ab-ne-0008"
+    },
+    {
+      "question": "A 10-metre length of rope is cut into 8 equal pieces. How long is each piece in metres?",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "explanation": "Divide the total length (10m) by the number of pieces (8) to find the length of each piece.",
+      "correctAnswer": 1.25,
+      "unit": "metres",
+      "id": "ab-ne-0009"
+    },
+    {
+      "correctAnswer": 18,
+      "explanation": "Convert hours to minutes (3 hours = 180 minutes) and then divide by the time per target (10 minutes).",
+      "type": "numeric_entry",
+      "unit": "items",
+      "question": "A soldier is given 3 hours to clean his equipment. If it takes 10 minutes to clean one item, how many items can he clean?",
+      "tolerance": 0,
+      "id": "ab-ne-0010"
+    },
+    {
+      "type": "numeric_entry",
+      "explanation": "Multiply the number of boxes (15) by the packets per box (20) and then by the rounds per packet (10).",
+      "correctAnswer": 3000,
+      "unit": "rounds",
+      "question": "An ammunition crate contains 15 boxes. Each box has 20 packets, and each packet has 10 rounds. How many rounds are in the crate?",
+      "tolerance": 0,
+      "id": "ab-ne-0011"
+    },
+    {
+      "type": "numeric_entry",
+      "explanation": "Add the three scores together (45+60+60 = 165) and divide by the number of tests (3).",
+      "correctAnswer": 55,
+      "tolerance": 0,
+      "question": "A recruit scores 45, 60, and 60 on three fitness bleep tests. What is his average score?",
+      "id": "ab-ne-0012"
     }
   ],
   "mocks": []
