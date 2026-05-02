@@ -4228,6 +4228,114 @@
       "correctAnswer": 2,
       "explanation": "This demonstrates effective decision-making and commitment to safety by addressing the immediate risk and ensuring the correct report is filed.",
       "id": "fn-mc-0325"
+    },
+    {
+      "question": "A fire station has a total of 42 water pumps. If 28 pumps are currently operational, how many pumps are in need of repair?",
+      "correctAnswer": 14,
+      "type": "numeric_entry",
+      "unit": "pumps",
+      "tolerance": 0,
+      "explanation": "To find the answer, subtract the number of operational pumps from the total number of pumps: 42 - 28 = 14.",
+      "id": "fn-ne-0001"
+    },
+    {
+      "correctAnswer": 4.5,
+      "question": "A firefighter connects three lengths of hose together. Each length is 1.5 metres long. What is the total length of the connected hose in metres?",
+      "unit": "metres",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "explanation": "Multiply the length of one hose by the total number of hoses: 1.5 metres x 3 = 4.5 metres.",
+      "id": "fn-ne-0002"
+    },
+    {
+      "tolerance": 0,
+      "unit": "detectors",
+      "type": "numeric_entry",
+      "explanation": "Multiply the number of floors by the number of detectors per floor: 15 floors x 15 detectors = 225 detectors.",
+      "correctAnswer": 225,
+      "question": "A high-rise building has 15 floors. If each floor requires 15 smoke detectors, how many smoke detectors are needed for the entire building?",
+      "id": "fn-ne-0003"
+    },
+    {
+      "question": "A station records 450 emergency calls in January, 510 in February, and 480 in March. What is the average number of calls per month for this period?",
+      "correctAnswer": 480,
+      "explanation": "To find the average, add the three totals and divide by three: (450 + 510 + 480) / 3 = 480.",
+      "type": "numeric_entry",
+      "unit": "calls",
+      "tolerance": 0,
+      "id": "fn-ne-0004"
+    },
+    {
+      "explanation": "Calculate 25% of 120 (30), then subtract that from the total: 120 - 30 = 90. Then add the 25 trainees: 90 + 25 = 115.",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "unit": "staff units",
+      "question": "A fire service has 120 staff members. If 25% of the staff retire and 25 new trainees are hired, what is the new total number of staff?",
+      "correctAnswer": 115,
+      "id": "fn-ne-0005"
+    },
+    {
+      "question": "A fire engine's water tank holds 800 litres. If the hose uses water at a rate of 50 litres per minute, how many minutes will a full tank last?",
+      "correctAnswer": 16,
+      "explanation": "Divide the total volume of the tank by the rate of usage: 800 litres / 50 litres per minute = 16 minutes.",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "unit": "minutes",
+      "id": "fn-ne-0006"
+    },
+    {
+      "question": "A fire crew leaves the station at 12:15 hours. It takes them 30 minutes to reach the scene. At what time do they arrive (using the 24-hour clock)?",
+      "correctAnswer": 1245,
+      "explanation": "Add the travel time to the departure time: 12:15 + 30 minutes = 12:45. In 24-hour format, this is 1245.",
+      "type": "numeric_entry",
+      "unit": "hours",
+      "tolerance": 0,
+      "id": "fn-ne-0007"
+    },
+    {
+      "unit": "men",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "explanation": "Subtract the 28 women from the total of 90 to find the number of men: 90 - 28 = 62.",
+      "correctAnswer": 62,
+      "question": "Out of 90 firefighters at a regional headquarters, 28 are women. How many men work at the headquarters?",
+      "id": "fn-ne-0008"
+    },
+    {
+      "question": "During a safety inspection, each of the 12 crews must check 6 pieces of breathing apparatus. How many pieces are checked in total?",
+      "correctAnswer": 72,
+      "type": "numeric_entry",
+      "unit": "pieces",
+      "tolerance": 0,
+      "explanation": "Multiply the number of crew members by the pieces of equipment each: 12 crews x 6 pieces = 72 pieces.",
+      "id": "fn-ne-0009"
+    },
+    {
+      "correctAnswer": 120,
+      "question": "A station is allocated £3,000 for new fire-resistant gloves. If one pair of gloves costs £25, how many pairs can the station purchase?",
+      "unit": "pairs",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "explanation": "Divide the total amount by the cost per unit: £3,000 / £25 = 120 units.",
+      "id": "fn-ne-0010"
+    },
+    {
+      "explanation": "Calculate the total number of houses (100) and subtract those that passed the check: 100 - 15 = 85.",
+      "tolerance": 0,
+      "unit": "houses",
+      "type": "numeric_entry",
+      "correctAnswer": 85,
+      "question": "In a street of 100 houses, 15% passed a fire safety check. How many houses did not pass the check?",
+      "id": "fn-ne-0011"
+    },
+    {
+      "explanation": "Add the distance to the scene and the distance back: 27.5 km + 27.5 km = 55 km.",
+      "tolerance": 0,
+      "unit": "kilometres",
+      "type": "numeric_entry",
+      "correctAnswer": 55,
+      "question": "A fire engine travels 27.5 kilometres to an incident and then returns to the station using the same route. What is the total distance travelled?",
+      "id": "fn-ne-0012"
     }
   ],
   "mocks": []
