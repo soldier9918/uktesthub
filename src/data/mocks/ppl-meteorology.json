@@ -6997,7 +6997,2622 @@
         "Frontal fog village"
       ],
       "id": "pm-im-0156"
+    },
+    {
+      "options": [
+        "South East at 20 knots",
+        "North West at 20 knots",
+        "North West at 15 knots",
+        "South East at 10 knots"
+      ],
+      "imageAlt": "A wind barb symbol on a weather chart.",
+      "correctAnswer": 1,
+      "explanation": "The wind barb shows two long feathers representing 10 knots each, totalling 20 knots. Wind direction is indicated by the 'shaft' pointing towards the northwest.",
+      "imageDescription": "A single wind barb symbol on a white background. The shaft points towards the upper-left (North West). There are two full-length feathers at the end of the shaft.",
+      "type": "image_question",
+      "question": "Based on this wind barb, what is the wind direction and speed?",
+      "id": "pm-im-0157"
+    },
+    {
+      "imageDescription": "A meteorological surface pressure chart showing the British Isles with several curved lines labelled with values such as 1008, 1012, and 1016. A red arrow points to one of these lines.",
+      "explanation": "Lines of constant pressure on a weather map are called isobars. They connect points of equal mean sea level atmospheric pressure.",
+      "type": "image_question",
+      "question": "What are the lines labeled with pressure values (e.g., 1012, 1016) on this chart called?",
+      "options": [
+        "Isobars",
+        "Isotachs",
+        "Isogons",
+        "Isotherms"
+      ],
+      "correctAnswer": 0,
+      "imageAlt": "A surface pressure chart with several curved lines.",
+      "id": "pm-im-0158"
+    },
+    {
+      "question": "What atmospheric phenomenon is indicated by this specific symbol on a station plot?",
+      "explanation": "The symbol with three horizontal lines represents fog, which reduces visibility to less than 1,000 metres.",
+      "imageDescription": "A close-up of a weather station plot. Focus on the 'present weather' symbol located to the left of the station circle, which consists of three horizontal parallel black lines.",
+      "type": "image_question",
+      "imageAlt": "A weather station plot symbol.",
+      "correctAnswer": 2,
+      "options": [
+        "Heavy Rain",
+        "Haze",
+        "Fog",
+        "Snow"
+      ],
+      "id": "pm-im-0159"
+    },
+    {
+      "options": [
+        "Anticlockwise and inward",
+        "Anticlockwise and outward",
+        "Clockwise and inward",
+        "Clockwise and outward"
+      ],
+      "correctAnswer": 3,
+      "imageAlt": "A high-pressure system on a weather map.",
+      "type": "image_question",
+      "imageDescription": "A weather map showing a High-pressure centre marked with a large 'H' over the UK. Several arrows are drawn around the 'H' to indicate wind direction.",
+      "explanation": "An anticyclone (high pressure) in the Northern Hemisphere features clockwise circulation that slightly diverges outwards from the centre due to surface friction.",
+      "question": "In the Northern Hemisphere, what is the wind direction around the high-pressure system shown in this diagram?",
+      "id": "pm-im-0160"
+    },
+    {
+      "options": [
+        "Lenticular clouds (Mountain Waves)",
+        "Cumulonimbus (Thunderstorm)",
+        "Stratus (Low Cloud)",
+        "Cirrus (High Cloud)"
+      ],
+      "correctAnswer": 0,
+      "imageAlt": "Lens-shaped clouds over a mountain range.",
+      "type": "image_question",
+      "imageDescription": "A photograph of smooth, lens-shaped clouds stacked on top of each other, hovering stationary above a mountain ridge in the Lake District.",
+      "explanation": "Lenticular clouds (Altocumulus lenticularis) form in the crests of mountain waves and indicate high-altitude turbulence and strong winds.",
+      "question": "What type of cloud is shown in this image, and what does it typically indicate to a pilot?",
+      "id": "pm-im-0161"
+    },
+    {
+      "question": "In this station plot, what meteorological value is represented by the number indicated by the arrow?",
+      "explanation": "Dew point is the temperature to which air must be cooled to become saturated. On a standard UK station plot, it is found in the bottom-left position.",
+      "imageDescription": "A standard meteorological station plot. The number in the top left is '15'. The number in the bottom left is '13'. The circle is half shaded. An arrow points specifically to the number '13'.",
+      "type": "image_question",
+      "imageAlt": "A standard surface station plot.",
+      "correctAnswer": 1,
+      "options": [
+        "Air Temperature",
+        "Dew Point",
+        "Sea Level Pressure",
+        "Pressure Tendency"
+      ],
+      "id": "pm-im-0162"
+    },
+    {
+      "imageAlt": "A UK SIGWX chart symbol for precipitation.",
+      "correctAnswer": 2,
+      "options": [
+        "Continuous light rain",
+        "Drizzle from Stratus cloud",
+        "Rain showersจาก clouds of convective origin",
+        "Intermittent snow flurries"
+      ],
+      "question": "What type of precipitation is indicated by this symbol on a SIGWX chart?",
+      "type": "image_question",
+      "explanation": "The symbol showing a large 'R' with a downward arrow represents moderate or heavy rain showers. Showers are associated with convective (cumuliform) clouds.",
+      "imageDescription": "A symbol from a UK Significant Weather (SIGWX) chart. It shows a black triangular shape (shower symbol) with a 'rain' dot above it. Specifically, it is the 'SHRA' symbol.",
+      "id": "pm-im-0163"
+    },
+    {
+      "options": [
+        "Cold Front",
+        "Occluded Front",
+        "Warm Front",
+        "Stationary Front"
+      ],
+      "imageAlt": "A cross-section of a weather front.",
+      "correctAnswer": 1,
+      "type": "image_question",
+      "explanation": "An occlusion occurs when a cold front catches up with a warm front, lifting the warm air mass entirely off the ground.",
+      "imageDescription": "A vertical cross-section diagram of a weather system. A wedge of cold air is moving under cool air, pushing a wedge of warm air upwards so it no longer touches the surface.",
+      "question": "Which type of front is illustrated in this vertical cross-section diagram?",
+      "id": "pm-im-0164"
+    },
+    {
+      "type": "image_question",
+      "imageDescription": "A station plot. In the top right corner, the number '124' is written. An arrow points to this number.",
+      "explanation": "The number in the top right of a station plot represents the last three digits of the pressure in hectopascals (hPa) to the nearest tenth. '124' represents 1012.4 hPa.",
+      "question": "What is the sea level pressure indicated by the figures on this station plot?",
+      "options": [
+        "1240 hPa",
+        "1012.4 hPa",
+        "912.4 hPa",
+        "1124 hPa"
+      ],
+      "correctAnswer": 1,
+      "imageAlt": "A station plot showing pressure.",
+      "id": "pm-im-0165"
+    },
+    {
+      "correctAnswer": 0,
+      "imageAlt": "A SIGWX chart symbol for turbulence.",
+      "options": [
+        "Moderate turbulence",
+        "Severe icing",
+        "Mountain waves",
+        "Microburst activity"
+      ],
+      "question": "What aviation hazard is represented by this symbol on a Significant Weather chart?",
+      "type": "image_question",
+      "imageDescription": "A specific symbol from a SIGWX chart consisting of two slanted lines meeting at a point, resembling a '^' symbol, but specifically the meteorological symbol for moderate turbulence.",
+      "explanation": "The symbol for moderate turbulence on a SIGWX chart is represented by a 'hat' or 'broken tent' shape.",
+      "id": "pm-im-0166"
+    },
+    {
+      "question": "Which type of fog formation is being illustrated in this diagram?",
+      "type": "image_question",
+      "explanation": "Advection fog forms when warm, moist air moves horizontally over a colder surface (land or sea), cooling the air to its dew point.",
+      "imageDescription": "A diagram showing a warm air mass moving from a warm land area over a cold sea surface. Clouds/fog are forming at the surface where the air meets the water. An arrow shows horizontal movement.",
+      "imageAlt": "A diagram showing air moving over a cold sea.",
+      "correctAnswer": 3,
+      "options": [
+        "Radiation fog",
+        "Valley fog",
+        "Up-slope fog",
+        "Advection fog"
+      ],
+      "id": "pm-im-0167"
+    },
+    {
+      "question": "Given the pressure pattern and time of year (Winter) shown on this chart, what morning weather hazard is most likely?",
+      "type": "image_question",
+      "explanation": "Radiation fog typically forms in high-pressure conditions with clear skies and light winds, allowing the ground to cool rapidly overnight.",
+      "imageDescription": "A surface pressure chart of the UK showing very widely spaced isobars and a large 'H' (High Pressure) positioned directly over Central England in winter. In the corner, a small inset shows clear night skies.",
+      "imageAlt": "A surface pressure chart.",
+      "correctAnswer": 2,
+      "options": [
+        "Strong winds and heavy rain",
+        "Cloudy skies and warm temperatures",
+        "Clear skies, light winds, and potential radiation fog",
+        "Unstable air and frequent thunderstorms"
+      ],
+      "id": "pm-im-0168"
+    },
+    {
+      "correctAnswer": 2,
+      "options": [
+        "Warm Front",
+        "Occluded Front",
+        "Cold Front",
+        "Stationary Front"
+      ],
+      "question": "Which type of front is represented by this symbol on a surface pressure chart?",
+      "imageAlt": "A blue line with three solid triangles pointing in the direction of movement.",
+      "explanation": "The symbol with a line and three triangles represents a cold front, where colder air replaces warmer air, typically causing vertical cloud development.",
+      "type": "image_question",
+      "imageDescription": "A meteorological symbol consisting of a blue line with three solid triangles attached to it, all pointing the same direction.",
+      "id": "pm-im-0169"
+    },
+    {
+      "imageDescription": "A weather station plot circle (okta scale) that is empty except for one vertical line passing through the centre.",
+      "type": "image_question",
+      "explanation": "A circle with a single vertical line through the centre indicates a sky coverage of 1/8th, which is classified as 'Few'.",
+      "options": [
+        "Sky Clear (SKC)",
+        "Few (1/8) units",
+        "Scattered (3/8) units",
+        "Broken (5/8) units"
+      ],
+      "imageAlt": "A station plot circle that is clear except for one vertical line down the middle.",
+      "question": "On a meteorological station plot, what amount of cloud cover does this circle symbol represent?",
+      "correctAnswer": 1,
+      "id": "pm-im-0170"
+    },
+    {
+      "correctAnswer": 0,
+      "imageAlt": "Two short, horizontal parallel lines.",
+      "question": "Identify the weather phenomenon represented by this symbol on a METAR station plot.",
+      "options": [
+        "Mist",
+        "Fog",
+        "Haze",
+        "Drizzle death"
+      ],
+      "imageDescription": "A meteorological symbol consisting of two horizontal parallel lines, typically used to indicate stable weather conditions with reduced visibility.",
+      "type": "image_question",
+      "explanation": "Two horizontal lines (parallel) are the standard international symbol for mist when visibility is between 1000m and 5000m.",
+      "id": "pm-im-0171"
+    },
+    {
+      "correctAnswer": 3,
+      "explanation": "In the Northern Hemisphere, wind flows clockwise around a high-pressure system (Anticyclone) and slightly outwards due to friction.",
+      "type": "image_question",
+      "imageDescription": "A synoptic chart showing a high-pressure system (marked with an 'H') located over the UK, with circular isobars around it. Airflow arrows are to be inferred.",
+      "question": "In the Northern Hemisphere, what is the characteristic surface wind flow around the pressure system marked 'H' in this image?",
+      "imageAlt": "A weather chart showing an area marked with a large 'H' and concentric circular isobars.",
+      "options": [
+        "Anticlockwise and inwards",
+        "Anticlockwise and outwards",
+        "Clockwise and inwards",
+        "Clockwise and outwards"
+      ],
+      "id": "pm-im-0172"
+    },
+    {
+      "question": "What wind speed is indicated by this wind barb on a high-level weather chart?",
+      "imageAlt": "A wind barb pointing towards the northwest with one solid triangle (pennant) and one long feather.",
+      "options": [
+        "15 knots",
+        "60 knots",
+        "55 knots",
+        "110 knots"
+      ],
+      "type": "image_question",
+      "imageDescription": "A wind barb symbol showing a north-westerly wind direction. The barb has one solid triangular flag and one long line (feather) attached to it.",
+      "explanation": "A flag (pennant) on a wind barb denotes 50 knots, and a single long feather denotes 10 knots, totalling 60 knots.",
+      "correctAnswer": 1,
+      "id": "pm-im-0173"
+    },
+    {
+      "explanation": "Three horizontal lines represent 'Fog'. In METAR/SYNOP code, this indicates visibility has dropped below 1000m.",
+      "type": "image_question",
+      "imageDescription": "A weather symbol consisting of three horizontal parallel lines stacked vertically.",
+      "question": "Which weather phenomenon is indicated by this specific symbol on a station plot?",
+      "imageAlt": "Three short, horizontal parallel lines.",
+      "options": [
+        "Mist (BR)",
+        "Smoke (FU)",
+        "Fog (FG)",
+        "Moderate Rain (RA)"
+      ],
+      "correctAnswer": 2,
+      "id": "pm-im-0174"
+    },
+    {
+      "options": [
+        "High wind speeds",
+        "Light and variable winds",
+        "Rising surface temperatures",
+        "Rapidly clearing skies"
+      ],
+      "question": "What does the close spacing of isobars in this region of the chart indicate?",
+      "imageAlt": "A synoptic chart showing several isobars located very close to each other over the North Sea.",
+      "type": "image_question",
+      "imageDescription": "A section of a surface pressure chart where the isobars (lines of equal pressure) are drawn very close together over a small geographic area.",
+      "explanation": "Closely spaced isobars indicate a steep pressure gradient, which results in high wind speeds at the surface.",
+      "correctAnswer": 0,
+      "id": "pm-im-0175"
+    },
+    {
+      "explanation": "Lenticular clouds (Altocumulus lenticularis) are lens-shaped and form at the crest of mountain waves, indicating severe turbulence.",
+      "imageDescription": "A smooth, almond or lens-shaped cloud forming in the lee of a mountain range, appearing stationary despite high winds.",
+      "type": "image_question",
+      "options": [
+        "An approaching warm front",
+        "Mountain wave activity and turbulence",
+        "The presence of a thermal up-draft",
+        "Heavy rain and thunderstorms"
+      ],
+      "imageAlt": "A lens-shaped, smooth cloud hovering over a mountain peak.",
+      "question": "What does the presence of this specific cloud type (Altocumulus lenticularis) suggest to a pilot?",
+      "correctAnswer": 1,
+      "id": "pm-im-0176"
+    },
+    {
+      "correctAnswer": 3,
+      "imageAlt": "A red line with three solid semi-circles (humps) pointing in the direction of movement.",
+      "question": "Which type of front is represented by this symbol on a UK surface pressure chart?",
+      "options": [
+        "Cold Front",
+        "Occluded Front",
+        "Trough",
+        "Warm Front"
+      ],
+      "imageDescription": "A meteorological symbol consisting of a line with three solid semi-circles attached to one side.",
+      "type": "image_question",
+      "explanation": "The symbol with a line and semi-circles represents a warm front, where warm air advances and rises over cooler air.",
+      "id": "pm-im-0177"
+    },
+    {
+      "correctAnswer": 0,
+      "imageDescription": "A meteorological chart symbol showing a line made of a long dash followed by two dots, repeating along its length.",
+      "type": "image_question",
+      "explanation": "The symbol for a squall line consists of a line with two dots and a dash/broken pattern, indicating a line of active thunderstorms.",
+      "imageAlt": "A line consisting of alternating long dashes and two dots.",
+      "question": "What meteorological feature is represented by this symbol on a Significant Weather (SIGWX) chart?",
+      "options": [
+        "Squall line",
+        "Trough of low pressure",
+        "Ridge of high pressure",
+        "Convergence zone"
+      ],
+      "id": "pm-im-0178"
+    },
+    {
+      "correctAnswer": 2,
+      "options": [
+        "Clockwise and outwards",
+        "Clockwise and inwards",
+        "Anticlockwise and inwards",
+        "Anticlockwise and outwards"
+      ],
+      "question": "What is the typical surface wind direction around the low-pressure system marked 'L' in this Northern Hemisphere chart?",
+      "imageAlt": "A weather chart showing a large 'L' over the Atlantic with isobars.",
+      "type": "image_question",
+      "imageDescription": "A synoptic chart showing a low-pressure system marked with a large 'L'. Concentric isobars surround the center.",
+      "explanation": "A large 'L' denotes a Low Pressure system (Depression). In the Northern Hemisphere, winds circulate anticlockwise around a Low.",
+      "id": "pm-im-0179"
+    },
+    {
+      "correctAnswer": 1,
+      "imageAlt": "A symbol shaped like a 'U' with a crossbar on top.",
+      "question": "Which aviation hazard is indicated by this symbol on a Significant Weather chart?",
+      "options": [
+        "Light Turbulence",
+        "Moderate Icing",
+        "Severe Turbulence",
+        "Mountain Waves"
+      ],
+      "explanation": "The symbol for moderate icing is a 'U' shape with a horizontal bar across the top, resembling a stylized pair of horns or a bracket.",
+      "imageDescription": "The standard ICAO/WMO symbol for moderate airframe icing, which looks like a letter 'U' with a horizontal line across the top opening.",
+      "type": "image_question",
+      "id": "pm-im-0180"
+    },
+    {
+      "explanation": "A circle with a vertical line indicates 4 oktas (half cover). High clouds are indicated above the station circle.",
+      "options": [
+        "2 oktas of low cloud",
+        "4 oktas of medium cloud",
+        "8 oktas of high cloud",
+        "6 oktas of stratocumulus"
+      ],
+      "question": "On this station plot, what is the reported cloud cover and cloud type?",
+      "imageAlt": "A METAR station plot symbol showing cloud cover and some clouds above it.",
+      "correctAnswer": 1,
+      "type": "image_question",
+      "imageDescription": "A standard meteorological station circle. Inside the circle, a single vertical line divides it in half. Above the circle, there is a small 'M' shape representing Altocumulus clouds.",
+      "id": "pm-im-0181"
+    },
+    {
+      "options": [
+        "Lines of constant temperature (Isotherms)",
+        "Lines of constant wind speed (Isotachs)",
+        "Lines of constant pressure change (Isallobars)",
+        "Lines of constant humidity (Isohumes)"
+      ],
+      "imageAlt": "A weather chart with dashed lines labeled with values like +2.0 and -1.5.",
+      "question": "What are the dashed lines on this surface chart representing?",
+      "explanation": "Isallobars are lines connecting points of equal pressure change over a specified period, usually 3 hours.",
+      "correctAnswer": 2,
+      "type": "image_question",
+      "imageDescription": "A surface pressure chart where, in addition to solid black isobars, there are dashed blue and red lines labeled with numerical values representing pressure tendency.",
+      "id": "pm-im-0182"
+    },
+    {
+      "imageDescription": "A diagram of a high-pressure system (marked H) in the Northern Hemisphere. Four arrows show the direction of wind flow around and away from the center.",
+      "type": "image_question",
+      "correctAnswer": 0,
+      "question": "What is the characteristic surface wind direction around the pressure system shown in this diagram?",
+      "imageAlt": "A large H on a map with arrows spinning around it.",
+      "options": [
+        "Clockwise and slightly outwards",
+        "Anticlockwise and slightly inwards pigeon-toed",
+        "Clockwise and directly towards the centre",
+        "Anticlockwise and directly away from the centre"
+      ],
+      "explanation": "A large 'H' with arrows moving clockwise and slightly outwards represents an anticyclone in the Northern Hemisphere.",
+      "id": "pm-im-0183"
+    },
+    {
+      "imageDescription": "A meteorological station plot. To the left of the central circle, there are two solid, vertically aligned dots.",
+      "type": "image_question",
+      "correctAnswer": 3,
+      "explanation": "Two red dots represent moderate rain. One dot is light rain, and three or four indicate heavy rain.",
+      "imageAlt": "A station plot with two solid green/black dots to the left of the circle.",
+      "question": "What weather phenomenon is indicated by the symbol to the left of the station plot?",
+      "options": [
+        "Light drizzle",
+        "Heavy snow",
+        "Continuous rain showers",
+        "Moderate rain"
+      ],
+      "id": "pm-im-0184"
+    },
+    {
+      "type": "image_question",
+      "imageDescription": "A meteorological chart symbol showing a line. On one side of the line is a blue triangle, and on the opposite side of the line is a red semicircle.",
+      "explanation": "The line with alternating blue triangles and red semicircles on opposite sides indicates a stationary front.",
+      "imageAlt": "A line on a weather chart with a triangle on one side and a semicircle on the other.",
+      "question": "Which type of frontal system is represented by this symbol?",
+      "options": [
+        "An occluded front",
+        "A stationary front",
+        "A squall line",
+        "A warm front moving south"
+      ],
+      "correctAnswer": 1,
+      "id": "pm-im-0185"
+    },
+    {
+      "correctAnswer": 2,
+      "explanation": "A flag (pennant) represents 50 knots, a long barb 10 knots, and a short barb 5 knots. Total: 65 knots.",
+      "imageAlt": "A wind barb with one triangular flag, one long line, and one short line.",
+      "question": "What wind speed is indicated by this specific wind barb?",
+      "options": [
+        "15 knots",
+        "55 knots",
+        "65 knots",
+        "115 knots"
+      ],
+      "imageDescription": "A wind barb symbol. At the end of the shaft, there is one filled triangle (pennant), one long line, and one short line half the length of the long line.",
+      "type": "image_question",
+      "id": "pm-im-0186"
+    },
+    {
+      "imageDescription": "An excerpt from a SIGWX (Significant Weather) chart. A dashed line encloses an area containing a symbol that looks like a caret (^) with a horizontal bar through the peak.",
+      "type": "image_question",
+      "correctAnswer": 0,
+      "question": "What aviation hazard is indicated inside the dashed area on this SIGWX chart?",
+      "imageAlt": "A SIGWX chart showing a boxed area with a peaked symbol.",
+      "options": [
+        "Severe turbulence",
+        "Moderate icing",
+        "Mountain waves",
+        "Severe squalls"
+      ],
+      "explanation": "The symbols for severe turbulence are two inverted 'V' shapes or a 'hat' symbol with a line through it. TTT indicates the area.",
+      "id": "pm-im-0187"
+    },
+    {
+      "explanation": "Advection fog occurs when warm, moist air moves over a colder surface (land or sea), common in the UK in autumn/winter.",
+      "options": [
+        "Radiation fog",
+        "Frontal fog",
+        "Upslope fog",
+        "Advection fog"
+      ],
+      "question": "Which process of fog formation is illustrated in this diagram?",
+      "imageAlt": "Warm air moving from the sea over a cold land surface.",
+      "correctAnswer": 3,
+      "type": "image_question",
+      "imageDescription": "A cross-section diagram. An arrow labeled 'Warm Moist Air' moves from over a blue area representing the sea onto a green area representing cold land. Fog is shown forming at the surface of the land.",
+      "id": "pm-im-0188"
+    },
+    {
+      "type": "image_question",
+      "imageDescription": "A station plot. To the left side of the circle, there are two thin, parallel, horizontal lines.",
+      "imageAlt": "A station plot with two parallel horizontal lines.",
+      "question": "What atmospheric obscurity is indicated by the symbol on this station plot?",
+      "options": [
+        "Fog",
+        "Mist",
+        "Haze",
+        "Smoke"
+      ],
+      "explanation": "The horizontal lines (like a T) indicate mist. Three horizontal lines indicate fog (visibility < 1000m). Two lines indicate mist.",
+      "correctAnswer": 1,
+      "id": "pm-im-0189"
+    },
+    {
+      "correctAnswer": 2,
+      "explanation": "A line of three green asterisks (stars) indicates moderate snow. 3 stars = moderate, 4 stars = heavy.",
+      "options": [
+        "Hail showers",
+        "Light snow showers",
+        "Moderate snow",
+        "Freezing rain"
+      ],
+      "imageAlt": "Three star-shaped symbols.",
+      "question": "What type of precipitation does this symbol represent on a weather map?",
+      "imageDescription": "A weather symbol consisting of three asterisks arranged in a horizontal row.",
+      "type": "image_question",
+      "id": "pm-im-0190"
+    },
+    {
+      "question": "What is the sea level pressure indicated on this station plot?",
+      "imageAlt": "A station plot with the number 052 in the top right position.",
+      "options": [
+        "1005.2 hPa",
+        "905.2 hPa",
+        "1052 hPa",
+        "52 hPa below standard pressure"
+      ],
+      "explanation": "The number in the top right of a station plot is the pressure in hPa (millibars). 052 represents 1005.2 hPa.",
+      "correctAnswer": 0,
+      "type": "image_question",
+      "imageDescription": "A meteorological station plot. In the '1 o'clock' position relative to the center circle, the digits '052' are written.",
+      "id": "pm-im-0191"
+    },
+    {
+      "correctAnswer": 3,
+      "explanation": "A zigzag arrow with a flat top indicates a thunderstorm (CB activity), commonly associated with severe turbulence and icing.",
+      "imageAlt": "A symbol that looks like a lightning bolt with a horizontal bar on top.",
+      "question": "What weather phenomenon is indicated by this symbol on a Significant Weather chart?",
+      "options": [
+        "Active cold front",
+        "Dust storm area",
+        "Thunderstorms (CB)",
+        "Volcanic ash cloud"
+      ],
+      "imageDescription": "A SIGWX chart symbol consisting of a stylized lightning bolt (Z-shape) with a horizontal line across the top. It is located within a scalloped border.",
+      "type": "image_question",
+      "id": "pm-im-0192"
+    },
+    {
+      "explanation": "A 'V' shaped extension of low pressure is known as a trough, which usually brings a change in wind direction and inclement weather.",
+      "question": "On a surface pressure chart, what is the name of the feature indicated by the 'V' shaped extension of isobars leading away from the low-pressure centre?",
+      "imageAlt": "A surface pressure chart showing isobars extending outwards from a low pressure centre in a V-shape.",
+      "correctAnswer": 2,
+      "imageDescription": "A synoptic surface pressure chart showing a Low pressure system with isobars forming a distinct 'V' shape extending outwards, marked with a thick solid line.",
+      "options": [
+        "A ridge of high pressure",
+        "A col",
+        "A trough of low pressure",
+        "An anticyclone"
+      ],
+      "type": "image_question",
+      "id": "pm-im-0193"
+    },
+    {
+      "correctAnswer": 0,
+      "imageAlt": "A weather station plot with a symbol to the left of the central circle consisting of three horizontal parallel lines.",
+      "explanation": "The symbol consisting of three horizontal lines represents fog, indicating horizontal visibility is reduced to less than 1,000 metres.",
+      "question": "What weather phenomenon is indicated by the symbol located to the left of the station plot?",
+      "type": "image_question",
+      "options": [
+        "Fog",
+        "Mist",
+        "Haze",
+        "Drizzle"
+      ],
+      "imageDescription": "A standard meteorological station plot. To the left of the central circle (which represents cloud cover), there is a symbol consisting of three horizontal, parallel black lines.",
+      "id": "pm-im-0194"
+    },
+    {
+      "type": "image_question",
+      "options": [
+        "Anticlockwise and inwards towards the centre",
+        "Clockwise and outwards from the centre",
+        "Clockwise and inwards towards the centre",
+        "Anticlockwise and outwards from the centre"
+      ],
+      "imageDescription": "A weather chart showing a large area of high pressure (marked with a blue 'H') positioned over the North Sea and the UK, with circular isobars surrounding it.",
+      "imageAlt": "A synoptic chart showing a high-pressure system marked with 'H' over the UK with several circular isobars.",
+      "correctAnswer": 1,
+      "explanation": "In the Northern Hemisphere, air flows clockwise and slightly outwards from the centre of a high-pressure system (anticyclone).",
+      "question": "In the Northern Hemisphere, what is the general pattern of surface wind flow around the high-pressure system shown in this chart?",
+      "id": "pm-im-0195"
+    },
+    {
+      "explanation": "In the Northern Hemisphere, the Coriolis force deflects moving air to the right, causing wind to flow clockwise around high-pressure systems.",
+      "type": "true_false",
+      "question": "In the Northern Hemisphere, the wind blows in a clockwise direction around an anticyclone (high pressure).",
+      "correctAnswer": true,
+      "id": "pm-tf-0001"
+    },
+    {
+      "type": "true_false",
+      "explanation": "Mist is defined by visibility between 1,000 and 5,000 metres; if visibility is less than 1,000 metres, it is reported as fog.",
+      "correctAnswer": false,
+      "question": "When visibility is restricted by water droplets to 800 metres, the meteorological phenomenon is reported as 'Mist' (BR).",
+      "id": "pm-tf-0002"
+    },
+    {
+      "explanation": "Lenticular clouds (Altocumulus lenticularis) are formed by stationary waves in the lee of mountains and often indicate significant turbulence.",
+      "type": "true_false",
+      "question": "Lenticular clouds are typically an indication of mountain wave activity and potential turbulence.",
+      "correctAnswer": true,
+      "id": "pm-tf-0003"
+    },
+    {
+      "type": "true_false",
+      "explanation": "The International Standard Atmosphere (ISA) lapse rate is 2 degrees Celsius per 1,000 feet of altitude increase.",
+      "correctAnswer": false,
+      "question": "According to the International Standard Atmosphere (ISA), the temperature lapse rate is 1.98 degrees Celsius per 100 feet.",
+      "id": "pm-tf-0004"
+    },
+    {
+      "type": "true_false",
+      "explanation": "As an aircraft descends, friction with the surface slows the wind and reduces the Coriolis effect, causing the wind to back (turn counter-clockwise) and decrease in speed.",
+      "correctAnswer": true,
+      "question": "During an approach to land in the Northern Hemisphere, the surface wind will usually be backed and lighter compared to the wind at 2,000 feet.",
+      "id": "pm-tf-0005"
+    },
+    {
+      "type": "true_false",
+      "explanation": "The dew point is the temperature at which air becomes saturated; if the air temperature drops to this level, water vapour condenses into liquid.",
+      "correctAnswer": true,
+      "question": "Condensation will occur when the air temperature is cooled at constant pressure to its dew point.",
+      "id": "pm-tf-0006"
+    },
+    {
+      "correctAnswer": false,
+      "question": "A warm front is typically associated with heavy, showery precipitation and thunderstorms.",
+      "type": "true_false",
+      "explanation": "The heavy rain is associated with the cold front; the warm front typically produces steady, light to moderate precipitation from stratiform clouds.",
+      "id": "pm-tf-0007"
+    },
+    {
+      "correctAnswer": false,
+      "question": "An 'inversion' refers to a layer of the atmosphere where the air temperature decreases rapidly with an increase in altitude.",
+      "type": "true_false",
+      "explanation": "An inversion is a layer where temperature increases with altitude, which acts as a lid, trapping pollutants and preventing vertical air movement.",
+      "id": "pm-tf-0008"
+    },
+    {
+      "type": "true_false",
+      "explanation": "Advection fog occurs when moist air moves over a colder surface, cooling the air below its dew point; it often affects coastal areas when sea air moves over cold land.",
+      "correctAnswer": true,
+      "question": "Advection fog is caused by the movement of warm, moist air over a colder surface.",
+      "id": "pm-tf-0009"
+    },
+    {
+      "correctAnswer": true,
+      "question": "A very light wind is generally required for the formation of radiation fog.",
+      "type": "true_false",
+      "explanation": "Radiation fog requires clear nights with light winds (2-8 knots) to allow for cooling and slight mixing; calm air would only produce dew.",
+      "id": "pm-tf-0010"
+    },
+    {
+      "explanation": "Hoar frost forms through sublimation when water vapour turns directly into ice crystals on a surface that is below the freezing point.",
+      "type": "true_false",
+      "question": "Hoar frost is formed when rain droplets freeze instantly upon contact with the leading edge of an aircraft wing.",
+      "correctAnswer": false,
+      "id": "pm-tf-0011"
+    },
+    {
+      "type": "true_false",
+      "explanation": "By definition, CAVOK requires visibility of 10km or more, no clouds below 5,000ft (or the highest minimum sector altitude), and no significant weather.",
+      "correctAnswer": true,
+      "question": "For a METAR to report 'CAVOK', there must be no significant weather and no clouds below 5,000 feet (or highest MSA).",
+      "id": "pm-tf-0012"
+    },
+    {
+      "type": "true_false",
+      "explanation": "The tropopause is the boundary where the temperature stops decreasing with height, and its height varies from about 8km at the poles to 16km at the equator.",
+      "question": "The height of the tropopause is generally higher over the Equator than it is over the North or South Poles.",
+      "correctAnswer": true,
+      "id": "pm-tf-0013"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": false,
+      "question": "In the Northern Hemisphere, the wind blows in a clockwise direction around a cyclone (low pressure).",
+      "explanation": "In the Northern Hemisphere, winds blow anti-clockwise and slightly inwards towards the centre of a low-pressure system.",
+      "id": "pm-tf-0014"
+    },
+    {
+      "correctAnswer": true,
+      "question": "The appearance of Altocumulus Castellanus clouds is often an indicator of increasing atmospheric instability aloft.",
+      "explanation": "The presence of Altocumulus Castellanus indicates instability in the medium levels of the atmosphere, often a precursor to thunderstorm development.",
+      "type": "true_false",
+      "id": "pm-tf-0015"
+    },
+    {
+      "correctAnswer": false,
+      "question": "A TAF is a report of the actual weather conditions observed at an airfield at a specific time.",
+      "explanation": "A TAF (Terminal Aerodrome Forecast) is a prediction of future conditions, whereas a METAR is a report of actual observed weather at a specific time.",
+      "type": "true_false",
+      "id": "pm-tf-0016"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": true,
+      "explanation": "Cold air is denser than warm air; therefore, at a constant pressure, the vertical distance between two pressure levels (thickness) is smaller in cold air.",
+      "question": "The vertical distance between two pressure surfaces (e.g., 1000hPa and 500hPa) represents 'thickness' and is smaller in cold air than in warm air.",
+      "id": "pm-tf-0017"
+    },
+    {
+      "correctAnswer": false,
+      "explanation": "Pressure decreases with altitude. According to ISA, the rate is approximately 1 hPa per 30 feet in the lower levels of the atmosphere.",
+      "question": "In the lower levels of the International Standard Atmosphere (ISA), atmospheric pressure increases at a rate of 1 hPa per 30 feet of altitude gain.",
+      "type": "true_false",
+      "id": "pm-tf-0018"
+    },
+    {
+      "type": "true_false",
+      "question": "An occluded front is formed when a cold front catches up with and overtakes a warm front.",
+      "explanation": "An occluded front occurs when a faster-moving cold front overtakes a slower warm front, lifting the warm air mass entirely off the ground.",
+      "correctAnswer": true,
+      "id": "pm-tf-0019"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": false,
+      "explanation": "The term for this process is 'sublimation' or 'deposition'. Quick-freezing rain on an airframe is known as clear ice or rime ice, but not hoar frost.",
+      "question": "Hoar frost is caused by the direct transition of water vapour into ice crystals on a surface that is below freezing.",
+      "id": "pm-tf-0020"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": false,
+      "question": "The International Standard Atmosphere (ISA) value for sea-level pressure is 1021 hPa.",
+      "explanation": "The standard ISA sea-level pressure is 1013.25 hPa; 1021 hPa represents a high-pressure condition relative to the standard.",
+      "id": "pm-tf-0021"
+    },
+    {
+      "correctAnswer": true,
+      "question": "A 'Katabatic' wind refers to cold, dense air flowing down a hillside or mountain slope at night.",
+      "explanation": "Katabatic winds occur at night when air on high ground cools by radiation, becomes denser, and flows down slopes into valleys.",
+      "type": "true_false",
+      "id": "pm-tf-0022"
+    },
+    {
+      "correctAnswer": false,
+      "explanation": "Cumulonimbus (CB) clouds are associated with severe icing, lightning, and heavy rain, but they are defined by strong convective currents, not smooth air.",
+      "question": "Flying through a Cumulonimbus (CB) cloud is generally recommended for PPL pilots because the internal air is very stable and smooth.",
+      "type": "true_false",
+      "id": "pm-tf-0023"
+    },
+    {
+      "correctAnswer": true,
+      "question": "In a METAR, a wind gust is reported when the maximum wind speed exceeds the mean speed by at least 10 knots.",
+      "explanation": "In a METAR, the gust (G) is reported if the peak wind speed exceeds the mean wind speed by 10 knots or more during the preceding 10 minutes.",
+      "type": "true_false",
+      "id": "pm-tf-0024"
+    },
+    {
+      "correctAnswer": true,
+      "type": "true_false",
+      "question": "Rime frost is characterized by its white, opaque appearance and is formed by the instantaneous freezing of small, supercooled water droplets.",
+      "explanation": "Rime frost forms when supercooled water droplets freeze rapidly on contact with a cold surface, trapping air and creating an opaque, milky appearance.",
+      "id": "pm-tf-0025"
+    },
+    {
+      "correctAnswer": false,
+      "type": "true_false",
+      "question": "The dew point of a rising parcel of air will increase as the altitude increases.",
+      "explanation": "Dew point is the temperature to which air must be cooled to become saturated; as a parcel of air rises and expands, its temperature decreases.",
+      "id": "pm-tf-0026"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": true,
+      "explanation": "A veer is a clockwise change in direction; in the Northern Hemisphere, surface friction reduces as you climb, causing the wind to veer and increase in speed.",
+      "question": "When climbing out of the friction layer in the Northern Hemisphere, the wind will typically veer and increase in speed.",
+      "id": "pm-tf-0027"
+    },
+    {
+      "explanation": "In the ISA, temperature is assumed to decrease at a rate of 1.98°C (approximately 2°C) per 1000ft up to the tropopause.",
+      "question": "The standard environmental lapse rate in the International Standard Atmosphere (ISA) is 3°C per 1,000 feet.",
+      "type": "true_false",
+      "correctAnswer": false,
+      "id": "pm-tf-0028"
+    },
+    {
+      "explanation": "Lenticularis clouds are stationary, lens-shaped clouds that form in the crests of mountain waves, indicating strong winds and potential turbulence.",
+      "question": "The presence of Altocumulus Lenticularis clouds is a strong indicator of mountain wave activity and potential turbulence.",
+      "type": "true_false",
+      "correctAnswer": true,
+      "id": "pm-tf-0029"
+    },
+    {
+      "explanation": "Radiation fog typically occurs over land during clear, still nights; advection fog is more common over the sea when warm air moves over colder water.",
+      "question": "Radiation fog is the most common type of fog found over the open sea.",
+      "type": "true_false",
+      "correctAnswer": false,
+      "id": "pm-tf-0030"
+    },
+    {
+      "explanation": "An Anabatic wind is a warm wind that blows up a slope during the day as the hillside is heated by the sun.",
+      "question": "An 'Anabatic' wind refers to air that is cooled by the ground at night and flows down into a valley.",
+      "type": "true_false",
+      "correctAnswer": false,
+      "id": "pm-tf-0031"
+    },
+    {
+      "question": "In a METAR, the code 'BR' is used to indicate mist, which is reported when visibility is 1,000 metres or more but less than 5,000 metres.",
+      "explanation": "Mist (BR) is reported when visibility is between 1,000m and 5,000m; Fog (FG) is reported when visibility is less than 1,000m.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "id": "pm-tf-0032"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": true,
+      "explanation": "Lapse rates determine stability; if the environmental lapse rate is less than the saturated adiabatic lapse rate, the air is stable.",
+      "question": "The atmosphere is considered stable if a parcel of air, when displaced vertically, tends to return to its original level.",
+      "id": "pm-tf-0033"
+    },
+    {
+      "question": "Lines on a weather chart that join places of equal atmospheric temperature are called Isobars.",
+      "explanation": "Isobars are lines of constant pressure; lines joining places of equal temperature are called 'Isotherms'.",
+      "correctAnswer": false,
+      "type": "true_false",
+      "id": "pm-tf-0034"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": true,
+      "explanation": "Surface heating from the sun causes the air near the ground to become less dense and rise, creating convective currents.",
+      "question": "Convection is a process where the air is heated by the earth's surface and rises, often leading to the formation of Cumulus clouds.",
+      "id": "pm-tf-0035"
+    },
+    {
+      "correctAnswer": false,
+      "type": "true_false",
+      "question": "If you fly from an area of high pressure to an area of low pressure without resetting your altimeter, the aircraft will be higher than the altimeter indicates.",
+      "explanation": "The transition from a high-pressure area (Anticyclone) to a low-pressure area (Cyclone) would typically result in a falling altimeter setting (QNH).",
+      "id": "pm-tf-0036"
+    },
+    {
+      "question": "The temperature in the International Standard Atmosphere (ISA) is assumed to remain constant above 36,090 feet up to 65,617 feet.",
+      "explanation": "In the ISA, temperature decreases linearly until the tropopause, which is defined at 36,090 feet (11 km), where it then remains constant.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "id": "pm-tf-0037"
+    },
+    {
+      "explanation": "High pressure systems (anticyclones) in the Northern Hemisphere exhibit a clockwise circulation around the centre.",
+      "question": "In the Northern Hemisphere, the wind circulates in an anti-clockwise direction around an area of high pressure.",
+      "correctAnswer": false,
+      "type": "true_false",
+      "id": "pm-tf-0038"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": true,
+      "question": "Standing waves (mountain waves) can produce clouds that appear to remain stationary despite high wind speeds at that altitude.",
+      "explanation": "Lenticular clouds (Altocumulus Lenticularis) remain stationary relative to the ground even though the wind is blowing through them.",
+      "id": "pm-tf-0039"
+    },
+    {
+      "correctAnswer": false,
+      "explanation": "Advection fog is formed when warm, moist air moves over a colder surface, cooling the air to its dew point.",
+      "question": "Advection fog is primarily caused by the ground cooling down due to terrestrial radiation on a clear, calm night.",
+      "type": "true_false",
+      "id": "pm-tf-0040"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": true,
+      "explanation": "Water vapour is less dense than dry air; therefore, moist air is lighter and less dense than dry air at the same temperature and pressure.",
+      "question": "Air is less dense when it contains a higher concentration of water vapour.",
+      "id": "pm-tf-0041"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": false,
+      "explanation": "A 'VEER' is a clockwise change in direction (e.g., West to North). A counter-clockwise change (e.g., North to West) is called a 'BACK'.",
+      "question": "If the wind direction changes from 270° to 310°, the wind is said to have backed.",
+      "id": "pm-tf-0042"
+    },
+    {
+      "question": "The general movement of frontal depressions across the United Kingdom is from East to West.",
+      "explanation": "Frontal depressions in the UK typically move from West to East, driven by the prevailing westerly flow and the jet stream.",
+      "correctAnswer": false,
+      "type": "true_false",
+      "id": "pm-tf-0043"
+    },
+    {
+      "correctAnswer": true,
+      "question": "The presence of Stratus cloud is usually an indication of stable atmospheric conditions.",
+      "explanation": "Stable air tends to flow in horizontal layers, leading to smooth flying conditions and the formation of stratiform (layer) clouds.",
+      "type": "true_false",
+      "id": "pm-tf-0044"
+    },
+    {
+      "correctAnswer": true,
+      "question": "A TAF (Terminal Aerodrome Forecast) is a statement of expected meteorological conditions at an airport for a specified period.",
+      "explanation": "A TAF provides a forecast of expected weather conditions at a specific aerodrome for a set period, unlike a METAR which is a report of actual conditions.",
+      "type": "true_false",
+      "id": "pm-tf-0045"
+    },
+    {
+      "type": "true_false",
+      "question": "When the altimeter is set to the local QFE, the instrument indicates the aircraft's height above Mean Sea Level.",
+      "explanation": "QFE is the pressure measured at the aerodrome datum; an altimeter set to QFE will read zero on the ground, not the elevation.",
+      "correctAnswer": false,
+      "id": "pm-tf-0046"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": true,
+      "explanation": "Under these conditions, the aircraft is lower than the altimeter indicates. The mnemonic 'High to Low, Look out Below' applies to both pressure and temperature.",
+      "question": "If flying into an area of much colder air without changing the subscale setting, the aircraft's true altitude will be lower than the indicated altitude.",
+      "id": "pm-tf-0047"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": false,
+      "explanation": "A TAF forecast of 'PROB30' indicates a 30% probability of the weather occurring, which is generally not considered high enough to be the primary planning factor.",
+      "question": "In a TAF, the term 'PROB30' indicates that the forecast weather has a 70% chance of occurring.",
+      "id": "pm-tf-0048"
+    },
+    {
+      "explanation": "Ice pellets indicate that rain is freezing as it falls through a colder layer of air below, suggesting warmer air and freezing rain may be present at higher altitudes.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "question": "The presence of ice pellets at the surface is a reliable indicator that freezing rain may be encountered at higher altitudes.",
+      "id": "pm-tf-0049"
+    },
+    {
+      "correctAnswer": false,
+      "explanation": "A 'veering' wind is a change in direction in a clockwise sense (e.g., from 200° to 240°). A change from 090° to 045° is 'backing'.",
+      "question": "If the wind direction changes from 090° to 045°, the wind is said to have veered.",
+      "type": "true_false",
+      "id": "pm-tf-0050"
+    },
+    {
+      "correctAnswer": true,
+      "explanation": "In the troposphere, the ISA lapse rate is 1.98°C (commonly rounded to 2°C) per 1,000 feet.",
+      "type": "true_false",
+      "question": "In the International Standard Atmosphere (ISA), the temperature lapse rate is assumed to be 2°C per 1,000ft up to the tropopause.",
+      "id": "pm-tf-0051"
+    },
+    {
+      "correctAnswer": false,
+      "explanation": "The 'S' in VOLMET stands for 'Service'. It is a continuous radiotelephony broadcast of METARs and TAFs for pilots in flight.",
+      "question": "The acronym VOLMET stands for 'Video On-Line Meteorological Terminal'.",
+      "type": "true_false",
+      "id": "pm-tf-0052"
+    },
+    {
+      "type": "true_false",
+      "question": "If the air temperature is 15°C and the dew point is 10°C, the relative humidity is 100%.",
+      "explanation": "Dew point is the temperature to which air must be cooled to become saturated. If the air temperature is higher than the dew point, the air is not saturated.",
+      "correctAnswer": false,
+      "id": "pm-tf-0053"
+    },
+    {
+      "correctAnswer": true,
+      "explanation": "High humidity and high temperatures both decrease air density, which reduces engine performance and wing lift.",
+      "type": "true_false",
+      "question": "High humidity results in a decrease in air density, which can negatively affect aircraft take-off performance.",
+      "id": "pm-tf-0054"
+    },
+    {
+      "correctAnswer": false,
+      "explanation": "Surface friction slows the wind and causes it to cross the isobars at an angle (roughly 10°-20° over sea and 30° over land) towards the low pressure.",
+      "type": "true_false",
+      "question": "The surface wind always blows parallel to the isobars regardless of the terrain.",
+      "id": "pm-tf-0055"
+    },
+    {
+      "explanation": "In a METAR, 'CAVOK' requires visibility of 10km or more, no cloud below 5,000ft (or the highest MSA), and no significant weather (CB/TCU).",
+      "correctAnswer": false,
+      "type": "true_false",
+      "question": "The term 'CAVOK' can be used in a METAR if the visibility is 5,000 metres and there are no clouds below 3,000 feet.",
+      "id": "pm-tf-0056"
+    },
+    {
+      "correctAnswer": true,
+      "explanation": "Katabatic winds occur at night when air on high ground cools by radiation, becomes denser, and sinks down slopes into valleys.",
+      "type": "true_false",
+      "question": "A 'Katabatic' wind is caused by air cooling at night and flowing down a hillside.",
+      "id": "pm-tf-0057"
+    },
+    {
+      "type": "true_false",
+      "question": "The height of the tropopause is constant at all latitudes across the globe.",
+      "explanation": "The troposphere varies in height; it is highest at the Equator (approx 16km) and lowest at the Poles (approx 8km).",
+      "correctAnswer": false,
+      "id": "pm-tf-0058"
+    },
+    {
+      "question": "Advection fog can form even when wind speeds are relatively high (15 knots or more).",
+      "type": "true_false",
+      "explanation": "Advection fog occurs when warm, moist air moves over a cold surface, causing the air to cool below its dew point. This is common over the sea.",
+      "correctAnswer": true,
+      "id": "pm-tf-0059"
+    },
+    {
+      "explanation": "The Coriolis force is weaker at the surface due to friction, causing the wind to cross isobars toward lower pressure.",
+      "correctAnswer": true,
+      "question": "In the Northern Hemisphere, the surface wind typically blows slightly across the isobars towards the centre of lower pressure.",
+      "type": "true_false",
+      "id": "pm-tf-0060"
+    },
+    {
+      "explanation": "Lenticular clouds (Altocumulus lenticularis) are a primary indicator of mountain waves and potential severe turbulence.",
+      "correctAnswer": false,
+      "question": "The appearance of lenticular clouds is a sign of a very stable air mass with no risk of turbulence.",
+      "type": "true_false",
+      "id": "pm-tf-0061"
+    },
+    {
+      "correctAnswer": true,
+      "question": "A light wind is generally required for the formation of radiation fog to mix the chilled air near the surface.",
+      "explanation": "Radiation fog requires light winds (approx 2-8 knots) to slightly mix the cooled air; total calm results in only dew.",
+      "type": "true_false",
+      "id": "pm-tf-0062"
+    },
+    {
+      "type": "true_false",
+      "question": "The wind direction reported in a METAR is always given in degrees True.",
+      "correctAnswer": true,
+      "explanation": "In an anemometer-style report (METAR/TAF), wind direction is referenced to True North, whereas ATIS/Tower use Magnetic.",
+      "id": "pm-tf-0063"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": false,
+      "question": "An elongated area of high pressure is known as a trough.",
+      "explanation": "A ridge is an extension of high pressure, while a trough is an elongated area of low pressure.",
+      "id": "pm-tf-0064"
+    },
+    {
+      "correctAnswer": false,
+      "question": "In a METAR, the term 'FG' (Fog) is used whenever the visibility is reduced below 2,000 metres.",
+      "explanation": "Mist is reported when visibility is between 1,000m and 5,000m; fog is used when visibility is less than 1,000m.",
+      "type": "true_false",
+      "id": "pm-tf-0065"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": true,
+      "question": "In the International Standard Atmosphere, the temperature is assumed to remain constant above the tropopause up to 20km.",
+      "explanation": "In the ISA, the temperature remains constant at -56.5°C from the tropopause (36,090ft) up to approximately 65,600ft.",
+      "id": "pm-tf-0066"
+    },
+    {
+      "type": "true_false",
+      "question": "A Cumulonimbus (CB) cloud is a sign of high atmospheric stability.",
+      "correctAnswer": false,
+      "explanation": "Cumulonimbus clouds are associated with unstable air, whereas 'stable' air typically produces layer clouds like Stratus.",
+      "id": "pm-tf-0067"
+    },
+    {
+      "explanation": "Sublimation is the phase change from a solid directly to a gas, or a gas directly to a solid (deposition).",
+      "correctAnswer": true,
+      "question": "The transition of water vapour directly into ice crystals is known as sublimation.",
+      "type": "true_false",
+      "id": "pm-tf-0068"
+    },
+    {
+      "explanation": "QNH sets the altimeter to show altitude above Mean Sea Level. QFE is used for height above the airfield datum.",
+      "correctAnswer": false,
+      "question": "When an altimeter is set to the local QNH, the needles will indicate the aircraft's height above the airfield elevation.",
+      "type": "true_false",
+      "id": "pm-tf-0069"
+    },
+    {
+      "explanation": "The dew point is the temperature at which air becomes saturated; therefore, the relative humidity is 100%.",
+      "question": "If the air temperature and the dew point are the same, the relative humidity is 100%.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "id": "pm-tf-0070"
+    },
+    {
+      "explanation": "The warm front has a much shallower slope (approx 1:150) compared to the steeper cold front (approx 1:50).",
+      "question": "The slope of a typical cold front is much shallower than the slope of a typical warm front.",
+      "correctAnswer": false,
+      "type": "true_false",
+      "id": "pm-tf-0071"
+    },
+    {
+      "question": "In the International Standard Atmosphere (ISA), the pressure at mean sea level is 1013.25 hPa.",
+      "type": "true_false",
+      "correctAnswer": true,
+      "explanation": "The ISA sea level pressure is specifically 1013.25 hPa; pilots use this value as the standard datum for flight levels.",
+      "id": "pm-tf-0072"
+    },
+    {
+      "correctAnswer": false,
+      "type": "true_false",
+      "question": "An 'Anabatic' wind refers to the movement of air flowing down a hillside during the night.",
+      "explanation": "An Anabatic wind flows up a slope (Anabatic = 'up-going') as the sun heats the hillside during the day.",
+      "id": "pm-tf-0073"
+    },
+    {
+      "correctAnswer": true,
+      "type": "true_false",
+      "question": "The wind direction around an area of high pressure in the Northern Hemisphere is clockwise.",
+      "explanation": "In the Northern Hemisphere, winds blow clockwise around a high-pressure system (anticyclone).",
+      "id": "pm-tf-0074"
+    },
+    {
+      "explanation": "Rough terrain increases surface friction, which reduces wind speed and causes the wind to back (turn anti-clockwise) in the Northern Hemisphere.",
+      "question": "Friction caused by the Earth's surface causes the surface wind to veer and increase in speed compared to the wind at 2,000 feet.",
+      "type": "true_false",
+      "correctAnswer": false,
+      "id": "pm-tf-0075"
+    },
+    {
+      "correctAnswer": true,
+      "type": "true_false",
+      "question": "Clear ice is generally considered the most dangerous form of airframe icing because it is heavy and alters the aerofoil shape.",
+      "explanation": "Clear ice is heavy, transparent, and difficult to remove because it spreads back over the wing before freezing.",
+      "id": "pm-tf-0076"
+    },
+    {
+      "type": "true_false",
+      "question": "The term 'CAVOK' can be used in a METAR if the visibility is exactly 8 kilometres.",
+      "correctAnswer": false,
+      "explanation": "In a METAR, 'CAVOK' requires visibility to be 10km or more, no cloud below 5,000ft (or the highest minimum sector altitude), and no significant weather.",
+      "id": "pm-tf-0077"
+    },
+    {
+      "correctAnswer": true,
+      "question": "An occlusion is formed when a cold front overtakes a warm front, lifting the warm air mass aloft.",
+      "type": "true_false",
+      "explanation": "A cold front moves faster than a warm front; when it catches up, the warm air is lifted completely off the ground.",
+      "id": "pm-tf-0078"
+    },
+    {
+      "explanation": "The ISA lapse rate is 1.98°C (universally treated as 2°C) per 1,000 feet up to the tropopause.",
+      "correctAnswer": false,
+      "type": "true_false",
+      "question": "In the ISA, the temperature is assumed to decrease at a rate of 4.5°C per 1,000 feet.",
+      "id": "pm-tf-0079"
+    },
+    {
+      "type": "true_false",
+      "question": "When a controller provides a wind direction via the radio, it is always given in degrees True.",
+      "correctAnswer": false,
+      "explanation": "The ATIS (Automatic Terminal Information Service) provides information on True North for wind direction, while the Tower (ATC) gives wind in Magnetic North.",
+      "id": "pm-tf-0080"
+    },
+    {
+      "explanation": "A ridge is an extension of high pressure, usually bringing settled weather, unlike a trough which is associated with low pressure.",
+      "type": "true_false",
+      "question": "An elongated area of high pressure is known as a 'ridge'.",
+      "correctAnswer": true,
+      "id": "pm-tf-0081"
+    },
+    {
+      "explanation": "Radiation fog occurs under clear skies and light winds, but it almost always forms over land as the ground cools, not over the open sea.",
+      "type": "true_false",
+      "question": "Radiation fog is a common occurrence over the open sea during the summer months.",
+      "correctAnswer": false,
+      "id": "pm-tf-0082"
+    },
+    {
+      "question": "The wind speed reported in a TAF is the mean (average) speed expected over a 10-minute period.",
+      "type": "true_false",
+      "correctAnswer": true,
+      "explanation": "In a TAF or METAR, the wind speed is given as a 10-minute average, whereas gusts are the maximum peaks.",
+      "id": "pm-tf-0083"
+    },
+    {
+      "explanation": "At the tropopause, the temperature lapse rate stops decreasing and becomes isothermal or starts to increase slightly.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "question": "In the International Standard Atmosphere (ISA), the tropopause is characterized by a stop in the decrease of temperature with height.",
+      "id": "pm-tf-0084"
+    },
+    {
+      "question": "In the Northern Hemisphere, surface friction causes the wind to veer (turn clockwise) compared to the wind at 2,000 feet.",
+      "type": "true_false",
+      "correctAnswer": false,
+      "explanation": "The Coriolis force is proportional to wind speed; as friction slows the wind near the surface, the Coriolis force decreases, causing the wind to back (turn anti-clockwise).",
+      "id": "pm-tf-0085"
+    },
+    {
+      "type": "true_false",
+      "question": "Advection fog is primarily formed by the rapid cooling of the ground on clear, calm nights through terrestrial radiation.",
+      "explanation": "Advection fog forms when warm, moist air moves over a cold surface, such as a cold sea or landmass, cooling the air to its dew point.",
+      "correctAnswer": false,
+      "id": "pm-tf-0086"
+    },
+    {
+      "explanation": "Hoar frost forms when the aircraft skin temperature is below freezing and water vapour from the air turns directly into ice crystals without passing through the liquid phase.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "question": "Hoar frost can form on an aircraft parked outside overnight even if there has been no precipitation.",
+      "id": "pm-tf-0087"
+    },
+    {
+      "type": "true_false",
+      "question": "In a METAR, the code 'VCSH' indicates that showers are occurring at the aerodrome itself.",
+      "explanation": "In a METAR, the prefix 'VC' (Vicinity) is used for weather phenomena between 8km and 16km from the aerodrome reference point.",
+      "correctAnswer": false,
+      "id": "pm-tf-0088"
+    },
+    {
+      "correctAnswer": true,
+      "explanation": "A Katabatic wind is the downslope flow of cold, dense air toward valleys, typically occurring at night under clear skies.",
+      "question": "A Katabatic wind is a localized wind that flows down a mountainside or hill during the night.",
+      "type": "true_false",
+      "id": "pm-tf-0089"
+    },
+    {
+      "correctAnswer": false,
+      "explanation": "Lenticular (lens-shaped) clouds are a visual indicator of mountain waves and often signify areas of severe turbulence and strong vertical currents.",
+      "question": "The presence of 'Lenticularis' clouds is a reliable indicator of smooth, calm flying conditions in mountainous areas.",
+      "type": "true_false",
+      "id": "pm-tf-0090"
+    },
+    {
+      "type": "true_false",
+      "question": "If you fly from an area of high pressure to an area of low pressure without adjusting your altimeter, your true altitude will be higher than indicated.",
+      "explanation": "When flying from a high-pressure area to a low-pressure area at a constant altimeter setting, the aircraft will be lower than the altimeter indicates.",
+      "correctAnswer": false,
+      "id": "pm-tf-0091"
+    },
+    {
+      "question": "The dew point is the temperature at which the air becomes saturated with water vapour.",
+      "type": "true_false",
+      "correctAnswer": true,
+      "explanation": "Dew point is the temperature to which air must be cooled at constant pressure to become saturated, and it is a direct measure of the amount of water vapour present.",
+      "id": "pm-tf-0092"
+    },
+    {
+      "correctAnswer": false,
+      "explanation": "Standard pressure (QNE) used for Flight Levels is always 1013.25 hPa; 1000 hPa is not used as a standard pressure setting.",
+      "question": "When flying in the UK above the Transition Altitude, the altimeter must be set to 1000 hPa to indicate Flight Levels.",
+      "type": "true_false",
+      "id": "pm-tf-0093"
+    },
+    {
+      "type": "true_false",
+      "question": "Lines on a weather map that connect points of equal pressure tendency (change) are called isallobars.",
+      "explanation": "Isallobars are lines on a weather chart that connect points where the atmospheric pressure has changed by the same amount over a specific period.",
+      "correctAnswer": true,
+      "id": "pm-tf-0094"
+    },
+    {
+      "question": "The term 'Castellanus' added to a cloud type indicates that the cloud is composed entirely of ice crystals.",
+      "type": "true_false",
+      "correctAnswer": false,
+      "explanation": "While many clouds contain ice, 'Castellanus' identifies mid-level instability (Altocumulus) and is a common precursor to thunderstorm development.",
+      "id": "pm-tf-0095"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": false,
+      "explanation": "In a METAR, the wind direction is reported in degrees True, whereas a controller providing wind via radio (ATIS or Tower) uses degrees Magnetic.",
+      "question": "When a pilot receives a wind direction from an Air Traffic Controller over the radio, the direction is given relative to True North.",
+      "id": "pm-tf-0096"
+    },
+    {
+      "question": "In the Northern Hemisphere, surface friction causes the wind at the surface to back and decrease in speed compared to the gradient wind.",
+      "explanation": "Surface friction over land reduces wind speed more than over water; this causes the wind to back (turn anti-clockwise) and its speed to decrease near the surface.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "id": "pm-tf-0097"
     }
   ],
-  "mocks": []
+  "mocks": [
+    {
+      "mockNumber": 1,
+      "title": "PPL Meteorology Test 1",
+      "questionIds": [
+        "pm-mc-0090",
+        "pm-im-0100",
+        "pm-mc-0054",
+        "pm-tf-0039",
+        "pm-im-0148",
+        "pm-im-0158",
+        "pm-tf-0020",
+        "pm-mc-0089",
+        "pm-im-0153",
+        "pm-im-0074",
+        "pm-mc-0334",
+        "pm-mc-0104",
+        "pm-tf-0024",
+        "pm-mc-0312",
+        "pm-mc-0081",
+        "pm-mc-0170",
+        "pm-im-0058",
+        "pm-tf-0027",
+        "pm-mc-0291",
+        "pm-mc-0155",
+        "pm-im-0057",
+        "pm-mc-0311",
+        "pm-mc-0336",
+        "pm-mc-0124"
+      ]
+    },
+    {
+      "mockNumber": 2,
+      "title": "PPL Meteorology Test 2",
+      "questionIds": [
+        "pm-mc-0160",
+        "pm-mc-0183",
+        "pm-im-0116",
+        "pm-tf-0004",
+        "pm-im-0084",
+        "pm-mc-0100",
+        "pm-im-0154",
+        "pm-mc-0166",
+        "pm-mc-0198",
+        "pm-mc-0092",
+        "pm-tf-0030",
+        "pm-im-0002",
+        "pm-tf-0012",
+        "pm-mc-0226",
+        "pm-tf-0037",
+        "pm-mc-0067",
+        "pm-mc-0168",
+        "pm-mc-0242",
+        "pm-mc-0097",
+        "pm-mc-0140",
+        "pm-mc-0279",
+        "pm-im-0062",
+        "pm-im-0018",
+        "pm-im-0169"
+      ]
+    },
+    {
+      "mockNumber": 3,
+      "title": "PPL Meteorology Test 3",
+      "questionIds": [
+        "pm-tf-0036",
+        "pm-mc-0150",
+        "pm-mc-0035",
+        "pm-im-0017",
+        "pm-mc-0287",
+        "pm-tf-0047",
+        "pm-im-0152",
+        "pm-im-0016",
+        "pm-tf-0008",
+        "pm-mc-0027",
+        "pm-mc-0189",
+        "pm-mc-0348",
+        "pm-mc-0078",
+        "pm-im-0067",
+        "pm-mc-0263",
+        "pm-im-0031",
+        "pm-mc-0211",
+        "pm-mc-0319",
+        "pm-mc-0095",
+        "pm-mc-0304",
+        "pm-tf-0042",
+        "pm-im-0157",
+        "pm-im-0133",
+        "pm-mc-0180"
+      ]
+    },
+    {
+      "mockNumber": 4,
+      "title": "PPL Meteorology Test 4",
+      "questionIds": [
+        "pm-im-0081",
+        "pm-mc-0110",
+        "pm-mc-0047",
+        "pm-mc-0188",
+        "pm-mc-0026",
+        "pm-im-0119",
+        "pm-im-0125",
+        "pm-tf-0083",
+        "pm-mc-0199",
+        "pm-im-0063",
+        "pm-mc-0039",
+        "pm-mc-0232",
+        "pm-tf-0044",
+        "pm-im-0168",
+        "pm-mc-0229",
+        "pm-tf-0078",
+        "pm-mc-0073",
+        "pm-im-0149",
+        "pm-mc-0145",
+        "pm-tf-0070",
+        "pm-im-0051",
+        "pm-mc-0326",
+        "pm-mc-0219",
+        "pm-mc-0224"
+      ]
+    },
+    {
+      "mockNumber": 5,
+      "title": "PPL Meteorology Test 5",
+      "questionIds": [
+        "pm-mc-0176",
+        "pm-tf-0002",
+        "pm-im-0044",
+        "pm-mc-0214",
+        "pm-mc-0075",
+        "pm-mc-0011",
+        "pm-tf-0028",
+        "pm-tf-0038",
+        "pm-mc-0262",
+        "pm-im-0175",
+        "pm-tf-0013",
+        "pm-im-0129",
+        "pm-mc-0305",
+        "pm-mc-0234",
+        "pm-mc-0174",
+        "pm-mc-0066",
+        "pm-mc-0321",
+        "pm-mc-0358",
+        "pm-im-0173",
+        "pm-im-0193",
+        "pm-im-0113",
+        "pm-im-0118",
+        "pm-mc-0353",
+        "pm-mc-0335"
+      ]
+    },
+    {
+      "mockNumber": 6,
+      "title": "PPL Meteorology Test 6",
+      "questionIds": [
+        "pm-im-0167",
+        "pm-mc-0267",
+        "pm-im-0013",
+        "pm-mc-0192",
+        "pm-mc-0091",
+        "pm-tf-0033",
+        "pm-im-0093",
+        "pm-mc-0144",
+        "pm-mc-0201",
+        "pm-mc-0285",
+        "pm-mc-0327",
+        "pm-tf-0040",
+        "pm-mc-0209",
+        "pm-im-0037",
+        "pm-mc-0038",
+        "pm-im-0184",
+        "pm-mc-0101",
+        "pm-im-0123",
+        "pm-mc-0134",
+        "pm-tf-0097",
+        "pm-tf-0062",
+        "pm-mc-0020",
+        "pm-mc-0317",
+        "pm-im-0048"
+      ]
+    },
+    {
+      "mockNumber": 7,
+      "title": "PPL Meteorology Test 7",
+      "questionIds": [
+        "pm-im-0055",
+        "pm-mc-0012",
+        "pm-im-0080",
+        "pm-mc-0202",
+        "pm-tf-0082",
+        "pm-im-0019",
+        "pm-mc-0252",
+        "pm-tf-0026",
+        "pm-mc-0276",
+        "pm-mc-0086",
+        "pm-mc-0179",
+        "pm-tf-0076",
+        "pm-mc-0337",
+        "pm-tf-0003",
+        "pm-mc-0157",
+        "pm-im-0138",
+        "pm-mc-0159",
+        "pm-im-0139",
+        "pm-im-0072",
+        "pm-mc-0147",
+        "pm-mc-0265",
+        "pm-im-0141",
+        "pm-mc-0070",
+        "pm-mc-0216"
+      ]
+    },
+    {
+      "mockNumber": 8,
+      "title": "PPL Meteorology Test 8",
+      "questionIds": [
+        "pm-im-0192",
+        "pm-mc-0121",
+        "pm-mc-0010",
+        "pm-mc-0306",
+        "pm-im-0117",
+        "pm-mc-0222",
+        "pm-im-0180",
+        "pm-mc-0123",
+        "pm-tf-0043",
+        "pm-mc-0107",
+        "pm-im-0047",
+        "pm-mc-0114",
+        "pm-tf-0096",
+        "pm-im-0060",
+        "pm-mc-0148",
+        "pm-im-0008",
+        "pm-mc-0071",
+        "pm-mc-0293",
+        "pm-tf-0090",
+        "pm-mc-0253",
+        "pm-tf-0075",
+        "pm-mc-0191",
+        "pm-mc-0250",
+        "pm-im-0182"
+      ]
+    },
+    {
+      "mockNumber": 9,
+      "title": "PPL Meteorology Test 9",
+      "questionIds": [
+        "pm-mc-0128",
+        "pm-im-0124",
+        "pm-mc-0204",
+        "pm-mc-0106",
+        "pm-mc-0119",
+        "pm-mc-0032",
+        "pm-mc-0338",
+        "pm-mc-0251",
+        "pm-tf-0015",
+        "pm-mc-0289",
+        "pm-im-0022",
+        "pm-im-0131",
+        "pm-mc-0281",
+        "pm-im-0187",
+        "pm-tf-0009",
+        "pm-mc-0152",
+        "pm-mc-0008",
+        "pm-tf-0095",
+        "pm-im-0195",
+        "pm-tf-0006",
+        "pm-mc-0044",
+        "pm-im-0078",
+        "pm-im-0098",
+        "pm-mc-0163"
+      ]
+    },
+    {
+      "mockNumber": 10,
+      "title": "PPL Meteorology Test 10",
+      "questionIds": [
+        "pm-tf-0021",
+        "pm-im-0166",
+        "pm-mc-0025",
+        "pm-im-0050",
+        "pm-im-0146",
+        "pm-tf-0045",
+        "pm-mc-0060",
+        "pm-im-0097",
+        "pm-mc-0248",
+        "pm-mc-0007",
+        "pm-mc-0056",
+        "pm-tf-0035",
+        "pm-mc-0322",
+        "pm-mc-0207",
+        "pm-mc-0105",
+        "pm-mc-0258",
+        "pm-mc-0320",
+        "pm-tf-0022",
+        "pm-im-0107",
+        "pm-mc-0049",
+        "pm-im-0183",
+        "pm-im-0006",
+        "pm-mc-0094",
+        "pm-mc-0171"
+      ]
+    },
+    {
+      "mockNumber": 11,
+      "title": "PPL Meteorology Test 11",
+      "questionIds": [
+        "pm-mc-0181",
+        "pm-im-0137",
+        "pm-tf-0005",
+        "pm-mc-0269",
+        "pm-mc-0063",
+        "pm-mc-0061",
+        "pm-mc-0132",
+        "pm-mc-0085",
+        "pm-im-0056",
+        "pm-mc-0257",
+        "pm-mc-0315",
+        "pm-mc-0178",
+        "pm-mc-0172",
+        "pm-tf-0063",
+        "pm-im-0115",
+        "pm-mc-0158",
+        "pm-tf-0085",
+        "pm-mc-0009",
+        "pm-tf-0046",
+        "pm-im-0076",
+        "pm-im-0041",
+        "pm-im-0089",
+        "pm-mc-0260",
+        "pm-im-0161"
+      ]
+    },
+    {
+      "mockNumber": 12,
+      "title": "PPL Meteorology Test 12",
+      "questionIds": [
+        "pm-im-0015",
+        "pm-mc-0344",
+        "pm-mc-0019",
+        "pm-mc-0087",
+        "pm-im-0122",
+        "pm-tf-0091",
+        "pm-tf-0066",
+        "pm-im-0023",
+        "pm-mc-0298",
+        "pm-mc-0357",
+        "pm-mc-0002",
+        "pm-mc-0231",
+        "pm-mc-0339",
+        "pm-tf-0087",
+        "pm-mc-0059",
+        "pm-tf-0053",
+        "pm-mc-0006",
+        "pm-mc-0031",
+        "pm-im-0099",
+        "pm-im-0075",
+        "pm-mc-0238",
+        "pm-im-0164",
+        "pm-im-0082",
+        "pm-mc-0254"
+      ]
+    },
+    {
+      "mockNumber": 13,
+      "title": "PPL Meteorology Test 13",
+      "questionIds": [
+        "pm-tf-0051",
+        "pm-mc-0133",
+        "pm-im-0121",
+        "pm-mc-0116",
+        "pm-mc-0331",
+        "pm-im-0083",
+        "pm-im-0096",
+        "pm-mc-0210",
+        "pm-im-0066",
+        "pm-tf-0089",
+        "pm-mc-0055",
+        "pm-mc-0249",
+        "pm-mc-0200",
+        "pm-im-0087",
+        "pm-im-0069",
+        "pm-mc-0223",
+        "pm-im-0174",
+        "pm-tf-0034",
+        "pm-mc-0323",
+        "pm-tf-0071",
+        "pm-mc-0240",
+        "pm-mc-0103",
+        "pm-mc-0295",
+        "pm-mc-0277"
+      ]
+    },
+    {
+      "mockNumber": 14,
+      "title": "PPL Meteorology Test 14",
+      "questionIds": [
+        "pm-mc-0021",
+        "pm-mc-0125",
+        "pm-mc-0122",
+        "pm-tf-0093",
+        "pm-mc-0146",
+        "pm-mc-0316",
+        "pm-mc-0286",
+        "pm-tf-0073",
+        "pm-mc-0169",
+        "pm-mc-0225",
+        "pm-im-0085",
+        "pm-im-0009",
+        "pm-im-0025",
+        "pm-mc-0033",
+        "pm-mc-0355",
+        "pm-mc-0018",
+        "pm-im-0143",
+        "pm-tf-0049",
+        "pm-mc-0022",
+        "pm-im-0043",
+        "pm-tf-0069",
+        "pm-im-0036",
+        "pm-mc-0043",
+        "pm-im-0052"
+      ]
+    },
+    {
+      "mockNumber": 15,
+      "title": "PPL Meteorology Test 15",
+      "questionIds": [
+        "pm-im-0108",
+        "pm-tf-0056",
+        "pm-mc-0213",
+        "pm-tf-0080",
+        "pm-mc-0042",
+        "pm-tf-0031",
+        "pm-mc-0255",
+        "pm-mc-0005",
+        "pm-mc-0154",
+        "pm-mc-0079",
+        "pm-tf-0017",
+        "pm-im-0004",
+        "pm-im-0135",
+        "pm-mc-0282",
+        "pm-mc-0218",
+        "pm-im-0188",
+        "pm-mc-0292",
+        "pm-im-0102",
+        "pm-mc-0083",
+        "pm-mc-0015",
+        "pm-im-0059",
+        "pm-im-0045",
+        "pm-mc-0278",
+        "pm-mc-0062"
+      ]
+    },
+    {
+      "mockNumber": 16,
+      "title": "PPL Meteorology Test 16",
+      "questionIds": [
+        "pm-mc-0245",
+        "pm-mc-0051",
+        "pm-tf-0058",
+        "pm-im-0134",
+        "pm-mc-0208",
+        "pm-mc-0130",
+        "pm-mc-0244",
+        "pm-mc-0046",
+        "pm-im-0159",
+        "pm-mc-0028",
+        "pm-mc-0077",
+        "pm-im-0136",
+        "pm-im-0156",
+        "pm-mc-0156",
+        "pm-mc-0271",
+        "pm-mc-0196",
+        "pm-im-0026",
+        "pm-im-0112",
+        "pm-mc-0096",
+        "pm-tf-0011",
+        "pm-tf-0048",
+        "pm-tf-0088",
+        "pm-mc-0164",
+        "pm-im-0005"
+      ]
+    },
+    {
+      "mockNumber": 17,
+      "title": "PPL Meteorology Test 17",
+      "questionIds": [
+        "pm-mc-0227",
+        "pm-im-0090",
+        "pm-mc-0165",
+        "pm-mc-0068",
+        "pm-mc-0284",
+        "pm-im-0021",
+        "pm-mc-0299",
+        "pm-tf-0057",
+        "pm-im-0190",
+        "pm-mc-0076",
+        "pm-mc-0197",
+        "pm-mc-0243",
+        "pm-tf-0041",
+        "pm-im-0049",
+        "pm-tf-0065",
+        "pm-im-0127",
+        "pm-im-0032",
+        "pm-mc-0246",
+        "pm-mc-0001",
+        "pm-mc-0129",
+        "pm-im-0172",
+        "pm-tf-0092",
+        "pm-mc-0212",
+        "pm-mc-0342"
+      ]
+    },
+    {
+      "mockNumber": 18,
+      "title": "PPL Meteorology Test 18",
+      "questionIds": [
+        "pm-mc-0185",
+        "pm-tf-0068",
+        "pm-im-0120",
+        "pm-mc-0228",
+        "pm-tf-0077",
+        "pm-mc-0261",
+        "pm-im-0104",
+        "pm-mc-0241",
+        "pm-tf-0018",
+        "pm-mc-0270",
+        "pm-im-0103",
+        "pm-mc-0193",
+        "pm-mc-0350",
+        "pm-mc-0069",
+        "pm-im-0128",
+        "pm-mc-0065",
+        "pm-im-0151",
+        "pm-im-0147",
+        "pm-mc-0003",
+        "pm-mc-0247",
+        "pm-mc-0030",
+        "pm-im-0179",
+        "pm-tf-0094",
+        "pm-mc-0142"
+      ]
+    },
+    {
+      "mockNumber": 19,
+      "title": "PPL Meteorology Test 19",
+      "questionIds": [
+        "pm-mc-0221",
+        "pm-mc-0273",
+        "pm-mc-0297",
+        "pm-mc-0314",
+        "pm-mc-0153",
+        "pm-im-0007",
+        "pm-tf-0086",
+        "pm-im-0046",
+        "pm-mc-0330",
+        "pm-im-0101",
+        "pm-mc-0264",
+        "pm-tf-0016",
+        "pm-mc-0098",
+        "pm-im-0165",
+        "pm-tf-0072",
+        "pm-tf-0007",
+        "pm-mc-0239",
+        "pm-im-0162",
+        "pm-mc-0161",
+        "pm-mc-0040",
+        "pm-mc-0325",
+        "pm-im-0106",
+        "pm-mc-0266",
+        "pm-im-0132"
+      ]
+    },
+    {
+      "mockNumber": 20,
+      "title": "PPL Meteorology Test 20",
+      "questionIds": [
+        "pm-tf-0029",
+        "pm-im-0105",
+        "pm-mc-0057",
+        "pm-im-0191",
+        "pm-mc-0205",
+        "pm-mc-0352",
+        "pm-mc-0340",
+        "pm-tf-0060",
+        "pm-im-0061",
+        "pm-mc-0308",
+        "pm-im-0181",
+        "pm-mc-0135",
+        "pm-mc-0131",
+        "pm-mc-0356",
+        "pm-tf-0067",
+        "pm-im-0091",
+        "pm-tf-0023",
+        "pm-mc-0127",
+        "pm-mc-0220",
+        "pm-im-0185",
+        "pm-mc-0093",
+        "pm-mc-0300",
+        "pm-mc-0301",
+        "pm-im-0064"
+      ]
+    },
+    {
+      "mockNumber": 21,
+      "title": "PPL Meteorology Test 21",
+      "questionIds": [
+        "pm-tf-0014",
+        "pm-tf-0055",
+        "pm-mc-0109",
+        "pm-mc-0272",
+        "pm-im-0111",
+        "pm-mc-0162",
+        "pm-mc-0268",
+        "pm-im-0092",
+        "pm-mc-0313",
+        "pm-im-0011",
+        "pm-tf-0001",
+        "pm-mc-0074",
+        "pm-mc-0256",
+        "pm-mc-0203",
+        "pm-mc-0206",
+        "pm-im-0079",
+        "pm-im-0033",
+        "pm-mc-0345",
+        "pm-mc-0235",
+        "pm-im-0094",
+        "pm-mc-0034",
+        "pm-mc-0138",
+        "pm-tf-0084",
+        "pm-im-0145"
+      ]
+    },
+    {
+      "mockNumber": 22,
+      "title": "PPL Meteorology Test 22",
+      "questionIds": [
+        "pm-mc-0274",
+        "pm-mc-0290",
+        "pm-mc-0294",
+        "pm-mc-0139",
+        "pm-im-0140",
+        "pm-tf-0064",
+        "pm-im-0160",
+        "pm-im-0095",
+        "pm-mc-0029",
+        "pm-mc-0167",
+        "pm-im-0038",
+        "pm-tf-0052",
+        "pm-mc-0088",
+        "pm-tf-0032",
+        "pm-mc-0037",
+        "pm-mc-0354",
+        "pm-mc-0237",
+        "pm-mc-0118",
+        "pm-im-0010",
+        "pm-mc-0137",
+        "pm-im-0039",
+        "pm-tf-0019",
+        "pm-mc-0332",
+        "pm-im-0150"
+      ]
+    },
+    {
+      "mockNumber": 23,
+      "title": "PPL Meteorology Test 23",
+      "questionIds": [
+        "pm-mc-0149",
+        "pm-mc-0187",
+        "pm-tf-0081",
+        "pm-mc-0108",
+        "pm-mc-0117",
+        "pm-tf-0025",
+        "pm-mc-0190",
+        "pm-im-0114",
+        "pm-im-0003",
+        "pm-mc-0182",
+        "pm-mc-0084",
+        "pm-mc-0324",
+        "pm-mc-0307",
+        "pm-mc-0233",
+        "pm-mc-0052",
+        "pm-im-0110",
+        "pm-tf-0050",
+        "pm-im-0186",
+        "pm-im-0029",
+        "pm-mc-0318",
+        "pm-im-0144",
+        "pm-tf-0074",
+        "pm-mc-0341",
+        "pm-im-0020"
+      ]
+    },
+    {
+      "mockNumber": 24,
+      "title": "PPL Meteorology Test 24",
+      "questionIds": [
+        "pm-mc-0275",
+        "pm-mc-0186",
+        "pm-mc-0023",
+        "pm-mc-0024",
+        "pm-im-0086",
+        "pm-tf-0059",
+        "pm-im-0012",
+        "pm-mc-0283",
+        "pm-mc-0236",
+        "pm-mc-0151",
+        "pm-mc-0036",
+        "pm-im-0071",
+        "pm-im-0001",
+        "pm-tf-0054",
+        "pm-tf-0079",
+        "pm-im-0034",
+        "pm-mc-0296",
+        "pm-mc-0194",
+        "pm-tf-0010",
+        "pm-im-0178",
+        "pm-mc-0041",
+        "pm-im-0042",
+        "pm-mc-0064",
+        "pm-mc-0099"
+      ]
+    },
+    {
+      "mockNumber": 25,
+      "title": "PPL Meteorology Test 25",
+      "questionIds": [
+        "pm-im-0014",
+        "pm-mc-0195",
+        "pm-mc-0111",
+        "pm-mc-0351",
+        "pm-mc-0343",
+        "pm-im-0065",
+        "pm-mc-0310",
+        "pm-mc-0329",
+        "pm-mc-0050",
+        "pm-tf-0024",
+        "pm-mc-0175",
+        "pm-mc-0136",
+        "pm-mc-0080",
+        "pm-tf-0039",
+        "pm-tf-0061",
+        "pm-im-0126",
+        "pm-im-0024",
+        "pm-im-0130",
+        "pm-mc-0173",
+        "pm-tf-0027",
+        "pm-im-0177",
+        "pm-im-0109",
+        "pm-mc-0184",
+        "pm-mc-0177"
+      ]
+    },
+    {
+      "mockNumber": 26,
+      "title": "PPL Meteorology Test 26",
+      "questionIds": [
+        "pm-tf-0020",
+        "pm-mc-0082",
+        "pm-mc-0014",
+        "pm-mc-0113",
+        "pm-mc-0346",
+        "pm-mc-0333",
+        "pm-tf-0004",
+        "pm-mc-0004",
+        "pm-tf-0037",
+        "pm-mc-0349",
+        "pm-im-0088",
+        "pm-mc-0230",
+        "pm-mc-0102",
+        "pm-mc-0288",
+        "pm-mc-0302",
+        "pm-im-0176",
+        "pm-im-0189",
+        "pm-mc-0215",
+        "pm-im-0054",
+        "pm-im-0155",
+        "pm-mc-0143",
+        "pm-im-0053",
+        "pm-im-0163",
+        "pm-tf-0012"
+      ]
+    },
+    {
+      "mockNumber": 27,
+      "title": "PPL Meteorology Test 27",
+      "questionIds": [
+        "pm-mc-0048",
+        "pm-im-0068",
+        "pm-im-0040",
+        "pm-mc-0309",
+        "pm-mc-0053",
+        "pm-tf-0008",
+        "pm-tf-0047",
+        "pm-im-0030",
+        "pm-im-0028",
+        "pm-tf-0030",
+        "pm-mc-0303",
+        "pm-mc-0217",
+        "pm-mc-0045",
+        "pm-mc-0017",
+        "pm-im-0194",
+        "pm-im-0070",
+        "pm-im-0073",
+        "pm-mc-0280",
+        "pm-mc-0347",
+        "pm-mc-0120",
+        "pm-mc-0016",
+        "pm-mc-0112",
+        "pm-mc-0259",
+        "pm-tf-0036"
+      ]
+    },
+    {
+      "mockNumber": 28,
+      "title": "PPL Meteorology Test 28",
+      "questionIds": [
+        "pm-mc-0124",
+        "pm-mc-0170",
+        "pm-mc-0072",
+        "pm-im-0077",
+        "pm-im-0035",
+        "pm-mc-0126",
+        "pm-tf-0078",
+        "pm-mc-0058",
+        "pm-mc-0115",
+        "pm-tf-0042",
+        "pm-im-0142",
+        "pm-mc-0104",
+        "pm-im-0170",
+        "pm-im-0171",
+        "pm-mc-0311",
+        "pm-mc-0328",
+        "pm-im-0153",
+        "pm-tf-0044",
+        "pm-mc-0291",
+        "pm-mc-0013",
+        "pm-tf-0070",
+        "pm-im-0027",
+        "pm-mc-0090",
+        "pm-mc-0141"
+      ]
+    },
+    {
+      "mockNumber": 29,
+      "title": "PPL Meteorology Test 29",
+      "questionIds": [
+        "pm-im-0148",
+        "pm-mc-0166",
+        "pm-mc-0067",
+        "pm-im-0158",
+        "pm-mc-0054",
+        "pm-tf-0028",
+        "pm-im-0100",
+        "pm-mc-0155",
+        "pm-mc-0140",
+        "pm-im-0057",
+        "pm-im-0058",
+        "pm-mc-0092",
+        "pm-tf-0083",
+        "pm-tf-0038",
+        "pm-mc-0336",
+        "pm-mc-0081",
+        "pm-tf-0013",
+        "pm-mc-0334",
+        "pm-mc-0089",
+        "pm-mc-0226",
+        "pm-mc-0312",
+        "pm-im-0169",
+        "pm-im-0074",
+        "pm-mc-0279"
+      ]
+    },
+    {
+      "mockNumber": 30,
+      "title": "PPL Meteorology Test 30",
+      "questionIds": [
+        "pm-im-0084",
+        "pm-mc-0242",
+        "pm-im-0062",
+        "pm-tf-0097",
+        "pm-mc-0035",
+        "pm-mc-0078",
+        "pm-tf-0033",
+        "pm-im-0154",
+        "pm-mc-0211",
+        "pm-im-0002",
+        "pm-mc-0100",
+        "pm-im-0018",
+        "pm-tf-0040",
+        "pm-mc-0097",
+        "pm-mc-0168",
+        "pm-mc-0150",
+        "pm-mc-0183",
+        "pm-mc-0304",
+        "pm-tf-0002",
+        "pm-im-0116",
+        "pm-mc-0348",
+        "pm-mc-0160",
+        "pm-im-0133",
+        "pm-mc-0198"
+      ]
+    },
+    {
+      "mockNumber": 31,
+      "title": "PPL Meteorology Test 31",
+      "questionIds": [
+        "pm-mc-0319",
+        "pm-im-0152",
+        "pm-mc-0073",
+        "pm-im-0081",
+        "pm-tf-0026",
+        "pm-mc-0047",
+        "pm-tf-0062",
+        "pm-mc-0287",
+        "pm-mc-0263",
+        "pm-im-0017",
+        "pm-tf-0082",
+        "pm-mc-0232",
+        "pm-tf-0003",
+        "pm-mc-0189",
+        "pm-mc-0229",
+        "pm-mc-0180",
+        "pm-mc-0224",
+        "pm-im-0157",
+        "pm-mc-0027",
+        "pm-im-0031",
+        "pm-im-0067",
+        "pm-im-0016",
+        "pm-mc-0095",
+        "pm-mc-0326"
+      ]
+    },
+    {
+      "mockNumber": 32,
+      "title": "PPL Meteorology Test 32",
+      "questionIds": [
+        "pm-im-0168",
+        "pm-tf-0096",
+        "pm-im-0051",
+        "pm-mc-0026",
+        "pm-im-0119",
+        "pm-tf-0043",
+        "pm-tf-0076",
+        "pm-mc-0110",
+        "pm-im-0149",
+        "pm-mc-0039",
+        "pm-mc-0262",
+        "pm-im-0063",
+        "pm-mc-0176",
+        "pm-mc-0305",
+        "pm-mc-0145",
+        "pm-mc-0075",
+        "pm-mc-0219",
+        "pm-mc-0188",
+        "pm-mc-0353",
+        "pm-tf-0075",
+        "pm-mc-0011",
+        "pm-mc-0199",
+        "pm-im-0125",
+        "pm-im-0118"
+      ]
+    },
+    {
+      "mockNumber": 33,
+      "title": "PPL Meteorology Test 33",
+      "questionIds": [
+        "pm-mc-0066",
+        "pm-mc-0174",
+        "pm-tf-0015",
+        "pm-mc-0321",
+        "pm-im-0173",
+        "pm-mc-0327",
+        "pm-mc-0038",
+        "pm-mc-0091",
+        "pm-mc-0267",
+        "pm-mc-0201",
+        "pm-mc-0358",
+        "pm-im-0184",
+        "pm-mc-0335",
+        "pm-tf-0095",
+        "pm-tf-0090",
+        "pm-mc-0234",
+        "pm-mc-0020",
+        "pm-im-0044",
+        "pm-im-0113",
+        "pm-mc-0214",
+        "pm-tf-0009",
+        "pm-im-0193",
+        "pm-im-0129",
+        "pm-im-0175"
+      ]
+    },
+    {
+      "mockNumber": 34,
+      "title": "PPL Meteorology Test 34",
+      "questionIds": [
+        "pm-mc-0159",
+        "pm-tf-0006",
+        "pm-mc-0265",
+        "pm-mc-0101",
+        "pm-tf-0022",
+        "pm-mc-0144",
+        "pm-im-0123",
+        "pm-tf-0021",
+        "pm-mc-0192",
+        "pm-im-0093",
+        "pm-mc-0134",
+        "pm-im-0013",
+        "pm-im-0048",
+        "pm-tf-0035",
+        "pm-mc-0317",
+        "pm-im-0141",
+        "pm-mc-0086",
+        "pm-im-0037",
+        "pm-mc-0285",
+        "pm-mc-0216",
+        "pm-mc-0209",
+        "pm-mc-0202",
+        "pm-im-0167",
+        "pm-mc-0337"
+      ]
+    },
+    {
+      "mockNumber": 35,
+      "title": "PPL Meteorology Test 35",
+      "questionIds": [
+        "pm-im-0072",
+        "pm-mc-0070",
+        "pm-im-0080",
+        "pm-mc-0010",
+        "pm-mc-0179",
+        "pm-im-0055",
+        "pm-im-0180",
+        "pm-im-0138",
+        "pm-mc-0147",
+        "pm-mc-0252",
+        "pm-im-0019",
+        "pm-mc-0107",
+        "pm-tf-0085",
+        "pm-tf-0005",
+        "pm-mc-0276",
+        "pm-tf-0045",
+        "pm-im-0139",
+        "pm-mc-0071",
+        "pm-mc-0012",
+        "pm-tf-0046",
+        "pm-mc-0306",
+        "pm-mc-0157",
+        "pm-mc-0148",
+        "pm-mc-0114"
+      ]
+    },
+    {
+      "mockNumber": 36,
+      "title": "PPL Meteorology Test 36",
+      "questionIds": [
+        "pm-im-0117",
+        "pm-tf-0087",
+        "pm-im-0060",
+        "pm-mc-0191",
+        "pm-im-0124",
+        "pm-mc-0338",
+        "pm-im-0008",
+        "pm-mc-0250",
+        "pm-tf-0066",
+        "pm-mc-0121",
+        "pm-tf-0063",
+        "pm-im-0047",
+        "pm-mc-0106",
+        "pm-mc-0204",
+        "pm-im-0182",
+        "pm-tf-0053",
+        "pm-mc-0044",
+        "pm-mc-0293",
+        "pm-mc-0253",
+        "pm-im-0192",
+        "pm-mc-0128",
+        "pm-mc-0032",
+        "pm-mc-0123",
+        "pm-mc-0222"
+      ]
+    },
+    {
+      "mockNumber": 37,
+      "title": "PPL Meteorology Test 37",
+      "questionIds": [
+        "pm-mc-0094",
+        "pm-im-0022",
+        "pm-mc-0060",
+        "pm-mc-0258",
+        "pm-mc-0322",
+        "pm-mc-0152",
+        "pm-tf-0034",
+        "pm-mc-0008",
+        "pm-im-0078",
+        "pm-im-0187",
+        "pm-tf-0051",
+        "pm-mc-0251",
+        "pm-mc-0119",
+        "pm-tf-0091",
+        "pm-mc-0163",
+        "pm-tf-0089",
+        "pm-im-0098",
+        "pm-im-0195",
+        "pm-mc-0007",
+        "pm-mc-0281",
+        "pm-im-0107",
+        "pm-mc-0320",
+        "pm-im-0131",
+        "pm-mc-0289"
+      ]
+    },
+    {
+      "mockNumber": 38,
+      "title": "PPL Meteorology Test 38",
+      "questionIds": [
+        "pm-mc-0171",
+        "pm-mc-0049",
+        "pm-mc-0269",
+        "pm-tf-0071",
+        "pm-mc-0025",
+        "pm-mc-0158",
+        "pm-mc-0056",
+        "pm-im-0006",
+        "pm-im-0183",
+        "pm-mc-0172",
+        "pm-mc-0248",
+        "pm-mc-0105",
+        "pm-im-0146",
+        "pm-tf-0073",
+        "pm-mc-0207",
+        "pm-im-0050",
+        "pm-tf-0093",
+        "pm-tf-0069",
+        "pm-im-0115",
+        "pm-mc-0257",
+        "pm-im-0166",
+        "pm-im-0097",
+        "pm-mc-0178",
+        "pm-mc-0063"
+      ]
+    },
+    {
+      "mockNumber": 39,
+      "title": "PPL Meteorology Test 39",
+      "questionIds": [
+        "pm-im-0089",
+        "pm-mc-0344",
+        "pm-mc-0181",
+        "pm-im-0161",
+        "pm-mc-0315",
+        "pm-tf-0080",
+        "pm-mc-0061",
+        "pm-mc-0254",
+        "pm-mc-0085",
+        "pm-im-0122",
+        "pm-tf-0031",
+        "pm-mc-0019",
+        "pm-tf-0017",
+        "pm-mc-0298",
+        "pm-mc-0132",
+        "pm-mc-0009",
+        "pm-mc-0260",
+        "pm-im-0041",
+        "pm-mc-0059",
+        "pm-tf-0049",
+        "pm-im-0056",
+        "pm-mc-0002",
+        "pm-im-0076",
+        "pm-im-0137"
+      ]
+    },
+    {
+      "mockNumber": 40,
+      "title": "PPL Meteorology Test 40",
+      "questionIds": [
+        "pm-mc-0323",
+        "pm-tf-0048",
+        "pm-mc-0103",
+        "pm-im-0082",
+        "pm-im-0075",
+        "pm-mc-0331",
+        "pm-mc-0231",
+        "pm-mc-0087",
+        "pm-im-0015",
+        "pm-tf-0088",
+        "pm-mc-0238",
+        "pm-tf-0011",
+        "pm-tf-0056",
+        "pm-mc-0116",
+        "pm-mc-0031",
+        "pm-mc-0006",
+        "pm-im-0099",
+        "pm-mc-0133",
+        "pm-im-0121",
+        "pm-mc-0339",
+        "pm-mc-0277",
+        "pm-im-0164",
+        "pm-im-0023",
+        "pm-mc-0357"
+      ]
+    },
+    {
+      "mockNumber": 41,
+      "title": "PPL Meteorology Test 41",
+      "questionIds": [
+        "pm-mc-0122",
+        "pm-mc-0225",
+        "pm-mc-0169",
+        "pm-mc-0355",
+        "pm-mc-0240",
+        "pm-im-0143",
+        "pm-mc-0043",
+        "pm-im-0069",
+        "pm-mc-0223",
+        "pm-tf-0065",
+        "pm-tf-0057",
+        "pm-mc-0295",
+        "pm-im-0083",
+        "pm-tf-0058",
+        "pm-tf-0092",
+        "pm-im-0066",
+        "pm-mc-0210",
+        "pm-im-0174",
+        "pm-mc-0249",
+        "pm-mc-0033",
+        "pm-mc-0200",
+        "pm-mc-0055",
+        "pm-im-0087",
+        "pm-im-0096"
+      ]
+    },
+    {
+      "mockNumber": 42,
+      "title": "PPL Meteorology Test 42",
+      "questionIds": [
+        "pm-tf-0068",
+        "pm-im-0004",
+        "pm-im-0085",
+        "pm-mc-0005",
+        "pm-im-0025",
+        "pm-mc-0022",
+        "pm-tf-0041",
+        "pm-mc-0021",
+        "pm-mc-0125",
+        "pm-tf-0077",
+        "pm-mc-0146",
+        "pm-mc-0218",
+        "pm-mc-0062",
+        "pm-im-0009",
+        "pm-mc-0015",
+        "pm-im-0036",
+        "pm-mc-0316",
+        "pm-mc-0255",
+        "pm-im-0052",
+        "pm-mc-0286",
+        "pm-im-0043",
+        "pm-mc-0018",
+        "pm-mc-0079",
+        "pm-tf-0018"
+      ]
+    },
+    {
+      "mockNumber": 43,
+      "title": "PPL Meteorology Test 43",
+      "questionIds": [
+        "pm-mc-0083",
+        "pm-mc-0278",
+        "pm-mc-0154",
+        "pm-im-0102",
+        "pm-mc-0282",
+        "pm-im-0135",
+        "pm-mc-0292",
+        "pm-im-0045",
+        "pm-im-0108",
+        "pm-mc-0271",
+        "pm-mc-0096",
+        "pm-im-0059",
+        "pm-tf-0016",
+        "pm-tf-0094",
+        "pm-mc-0245",
+        "pm-mc-0156",
+        "pm-im-0188",
+        "pm-mc-0208",
+        "pm-tf-0072",
+        "pm-mc-0051",
+        "pm-mc-0213",
+        "pm-im-0136",
+        "pm-tf-0086",
+        "pm-mc-0042"
+      ]
+    },
+    {
+      "mockNumber": 44,
+      "title": "PPL Meteorology Test 44",
+      "questionIds": [
+        "pm-mc-0130",
+        "pm-mc-0046",
+        "pm-tf-0067",
+        "pm-tf-0060",
+        "pm-im-0112",
+        "pm-im-0049",
+        "pm-mc-0001",
+        "pm-im-0134",
+        "pm-tf-0007",
+        "pm-mc-0129",
+        "pm-mc-0196",
+        "pm-mc-0077",
+        "pm-mc-0068",
+        "pm-im-0026",
+        "pm-im-0156",
+        "pm-mc-0028",
+        "pm-mc-0299",
+        "pm-mc-0212",
+        "pm-im-0159",
+        "pm-mc-0244",
+        "pm-tf-0023",
+        "pm-mc-0227",
+        "pm-im-0005",
+        "pm-mc-0164"
+      ]
+    },
+    {
+      "mockNumber": 45,
+      "title": "PPL Meteorology Test 45",
+      "questionIds": [
+        "pm-mc-0030",
+        "pm-im-0127",
+        "pm-mc-0185",
+        "pm-mc-0076",
+        "pm-im-0104",
+        "pm-im-0172",
+        "pm-im-0021",
+        "pm-mc-0270",
+        "pm-mc-0069",
+        "pm-mc-0342",
+        "pm-tf-0014",
+        "pm-tf-0001",
+        "pm-mc-0243",
+        "pm-mc-0165",
+        "pm-im-0090",
+        "pm-tf-0029",
+        "pm-im-0032",
+        "pm-tf-0055",
+        "pm-mc-0228",
+        "pm-mc-0193",
+        "pm-mc-0246",
+        "pm-im-0190",
+        "pm-mc-0197",
+        "pm-mc-0284"
+      ]
+    }
+  ]
 }

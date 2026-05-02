@@ -3992,6 +3992,3231 @@
       "imageDescription": "A pillar buoy with vertical red and white stripes. It has a single red sphere as its topmark.",
       "question": "Identify this navigation mark.",
       "id": "rds-im-0012"
+    },
+    {
+      "imageDescription": "A medium-sized motor vessel in daylight displaying two black balls in a vertical line where they can best be seen.",
+      "type": "image_question",
+      "imageAlt": "A vessel displaying two black spheres vertically in the rigging.",
+      "question": "What is the status of a vessel displaying these day shapes?",
+      "correctAnswer": 1,
+      "options": [
+        "Vessel at anchor",
+        "Vessel not under command",
+        "Vessel constrained by her draught",
+        "Vessel engaged in fishing"
+      ],
+      "explanation": "Two black spheres indicate a vessel Not Under Command (NUC), unable to deviate from her course.",
+      "id": "rds-im-0013"
+    },
+    {
+      "correctAnswer": 2,
+      "options": [
+        "North Cardinal - Pass to the North",
+        "East Cardinal - Pass to the East",
+        "South Cardinal - Pass to the South",
+        "West Cardinal - Pass to the West"
+      ],
+      "explanation": "A yellow and black buoy with two cones pointing down is a South Cardinal mark; pass to the South of it.",
+      "imageDescription": "A South Cardinal buoy in the water. The top half is yellow, the bottom half is black. The topmark consists of two black cones, both pointing downwards.",
+      "type": "image_question",
+      "imageAlt": "A buoy with yellow top and black bottom, with two downward-pointing cones as a topmark.",
+      "question": "Identify this cardinal mark and the safe side on which to pass it.",
+      "id": "rds-im-0014"
+    },
+    {
+      "explanation": "A single white light seen from ahead on a small power-driven vessel under 7m and 7 knots is the all-round white light.",
+      "options": [
+        "A power-driven vessel of less than 7 metres in length",
+        "The stern of a large cargo ship",
+        "A lighthouse in the distance",
+        "A rowing boat at anchor"
+      ],
+      "correctAnswer": 0,
+      "imageAlt": "A single white light visible against a dark night sky.",
+      "question": "At night, you see this single white light. What is the most likely source?",
+      "imageDescription": "A dark night scene showing a single, bright white light on the horizon. There are no other coloured sidelights visible.",
+      "type": "image_question",
+      "id": "rds-im-0015"
+    },
+    {
+      "explanation": "A yellow 'X' topmark indicates a Special Mark, used for features like outfalls or racing buoys.",
+      "correctAnswer": 3,
+      "options": [
+        "A safe water mark",
+        "An isolated danger mark",
+        "An emergency wreck buoy house",
+        "A special mark"
+      ],
+      "imageAlt": "A yellow buoy with a yellow 'X' shaped topmark.",
+      "question": "What type of navigation mark is indicated by this yellow 'X' topmark?",
+      "imageDescription": "A yellow pillar buoy floating in a channel. It features a yellow 'X' (St Andrew's Cross) as a topmark.",
+      "type": "image_question",
+      "id": "rds-im-0016"
+    },
+    {
+      "correctAnswer": 2,
+      "options": [
+        "A vessel engaged in pilotage duty",
+        "A vessel aground",
+        "A vessel restricted in her ability to manoeuvre",
+        "A vessel constrained by her draught"
+      ],
+      "explanation": "A vertical line of Red-White-Red lights indicates a vessel Restricted in her Ability to Manoeuvre (RAM).",
+      "imageDescription": "Night scene showing three lights in a vertical line. The top light is red, the middle is white, and the bottom is red. side lights are not shown.",
+      "type": "image_question",
+      "imageAlt": "Three vertical lights: Red at the top, White in the middle, Red at the bottom.",
+      "question": "What does this light configuration indicate at night?",
+      "id": "rds-im-0017"
+    },
+    {
+      "imageDescription": "Close up of a nautical chart showing a green area (drying bank). Inside the green area is the number 3.5 with a line underneath it.",
+      "type": "image_question",
+      "imageAlt": "A nautical chart snippet showing a drying bank with the number 3.5 underlined.",
+      "question": "On a UK chart, what does this symbol within a green shaded area represent?",
+      "options": [
+        "A drying height of 3.5m above Chart Datum",
+        "A depth of 3.5m at Mean High Water Springs",
+        "A clearance of 3.5m under a bridge",
+        "A depth of 3.5m below Chart Datum"
+      ],
+      "correctAnswer": 0,
+      "explanation": "A height of 3.5m underlined on a chart represents a 'drying height', which is the height above Chart Datum.",
+      "id": "rds-im-0018"
+    },
+    {
+      "explanation": "Three black balls in a vertical line indicate a vessel aground.",
+      "correctAnswer": 1,
+      "options": [
+        "A vessel engaged in mine clearance",
+        "A vessel aground",
+        "A vessel restricted in her ability to manoeuvre",
+        "A vessel at anchor"
+      ],
+      "question": "What is the meaning of this day shape configuration?",
+      "imageAlt": "A vessel displaying three black balls in a vertical line.",
+      "type": "image_question",
+      "imageDescription": "A large ship seen in daylight. It is displaying three black spheres in a vertical line on its mast.",
+      "id": "rds-im-0019"
+    },
+    {
+      "explanation": "Isolated danger marks have two black spheres as a topmark and indicate hazards with navigable water all around.",
+      "correctAnswer": 2,
+      "options": [
+        "Safe Water Mark",
+        "Preferred Channel Mark",
+        "Isolated Danger Mark",
+        "Emergency Wreck Buoy"
+      ],
+      "imageAlt": "A buoy with black and red horizontal stripes and two black spheres on top.",
+      "question": "Which type of mark is represented by these colours and topmark?",
+      "imageDescription": "A pillar buoy with horizontal black and red stripes. On top of the buoy are two black spheres arranged vertically.",
+      "type": "image_question",
+      "id": "rds-im-0020"
+    },
+    {
+      "explanation": "A red-white-red-white-red pattern on a chart indicates a submarine cable.",
+      "options": [
+        "Undersea pipeline",
+        "Submarine cable",
+        "Recommended track",
+        "Harbour limit"
+      ],
+      "correctAnswer": 1,
+      "question": "What does this magenta dashed line on a chart indicate?",
+      "imageAlt": "A wavy magenta line on a nautical chart with small lightning bolt or T symbols.",
+      "type": "image_question",
+      "imageDescription": "A snippet of a nautical chart showing a magenta dashed line snaking across the seabed, often accompanied by a small magenta telephone or lightning symbol.",
+      "id": "rds-im-0021"
+    },
+    {
+      "explanation": "The flag 'A' (Alpha) signifies 'I have a diver down; keep well clear at slow speed.'",
+      "correctAnswer": 3,
+      "options": [
+        "I am dragging my anchor",
+        "I require a pilot",
+        "I am carrying dangerous cargo",
+        "I have a diver down; keep well clear at slow speed"
+      ],
+      "imageAlt": "A signal flag with a blue and white swallow-tail design.",
+      "question": "What is the meaning of this International Code Flag?",
+      "imageDescription": "A rectangular flag with a swallow-tail. The half closer to the hoist is white, and the outer half is blue.",
+      "type": "image_question",
+      "id": "rds-im-0022"
+    },
+    {
+      "imageAlt": "A red and white vertically striped buoy with a single red sphere topmark.",
+      "question": "What light characteristic would you expect this buoy to have at night?",
+      "imageDescription": "A buoy with vertical red and white stripes and a single red sphere as a topmark. In the background, the sun is setting.",
+      "type": "image_question",
+      "explanation": "A Safe Water Mark (red/white stripes) uses an occulting, isophase, or Long Flash (LFL 10s) light.",
+      "options": [
+        "Single long flash every 10 seconds",
+        "Quick flashing white light",
+        "Group flashing (2) every 5 seconds",
+        "Continuous red light"
+      ],
+      "correctAnswer": 0,
+      "id": "rds-im-0023"
+    },
+    {
+      "type": "image_question",
+      "imageDescription": "A nautical chart showing an anchor symbol that has been struck through with a magenta diagonal cross.",
+      "question": "What does this symbol on a nautical chart tell the mariner?",
+      "imageAlt": "An anchor symbol on a nautical chart with a magenta 'X' or cross over it.",
+      "correctAnswer": 3,
+      "options": [
+        "Recommended anchorage",
+        "Deep water anchorage for tankers",
+        "Small craft mooring area",
+        "Anchoring prohibited"
+      ],
+      "explanation": "An anchor symbol with a cross through it on a chart indicates that anchoring is prohibited.",
+      "id": "rds-im-0024"
+    },
+    {
+      "options": [
+        "Vessel at anchor",
+        "Vessel constrained by draught",
+        "Vessel restricted in ability to manoeuvre",
+        "Vessel aground"
+      ],
+      "question": "What is the status of a vessel displaying these three vertical day shapes?",
+      "explanation": "The three black shapes (Ball-Diamond-Ball) indicate a vessel restricted in its ability to manoeuvre, such as one engaged in diving or underwater operations.",
+      "correctAnswer": 2,
+      "type": "image_question",
+      "imageDescription": "A medium-sized workboat at sea displaying three black day shapes in a vertical line: a ball at the top, a diamond in the middle, and a ball at the bottom.",
+      "imageAlt": "A vessel showing three vertical day shapes: a black ball, a black diamond, and a black ball.",
+      "id": "rds-im-0025"
+    },
+    {
+      "question": "Which type of buoy is represented by this colour scheme and topmark?",
+      "options": [
+        "Safe Water Mark",
+        "Isolated Danger Mark",
+        "Special Mark",
+        "Emergency Wreck Buoy"
+      ],
+      "imageDescription": "A pillar-shaped buoy painted with red and white vertical stripes, featuring a single red sphere (ball) as a topmark.",
+      "imageAlt": "A white buoy with a single vertical red stripe and a red ball topmark.",
+      "type": "image_question",
+      "correctAnswer": 0,
+      "explanation": "A white cylinder with a horizontal red band indicates a safe water mark, used to show that there is navigable water all around the mark.",
+      "id": "rds-im-0026"
+    },
+    {
+      "explanation": "The 'shunting' arrows (standard chart symbol) indicate the direction of the flood stream or a specific tidal flow direction.",
+      "correctAnswer": 2,
+      "type": "image_question",
+      "imageDescription": "A snippet of a nautical chart showing a magenta arrow with two feathers on its tail, pointing towards a coastal bay.",
+      "imageAlt": "A chart symbol showing a straight arrow with feathers on one side.",
+      "options": [
+        "Prevailing wind direction",
+        "Direction of the ebb tide",
+        "Direction of the flood tide",
+        "Recommended track for small craft"
+      ],
+      "question": "What does this arrow symbol on a nautical chart indicate?",
+      "id": "rds-im-0027"
+    },
+    {
+      "type": "image_question",
+      "correctAnswer": 1,
+      "explanation": "Two black balls in a vertical line indicate a vessel 'Not Under Command', meaning it cannot deviate from its course due to exceptional circumstances like engine failure.",
+      "imageDescription": "A ship at sea with two black spheres (balls) hanging vertically from its masthead or rigging. No other shapes are visible.",
+      "imageAlt": "A vessel displaying two black balls in a vertical line.",
+      "options": [
+        "Vessel at anchor",
+        "Vessel not under command",
+        "Vessel engaged in fishing",
+        "Vessel constrained by draught"
+      ],
+      "question": "Identifying these day shapes, what is the status of this vessel?",
+      "id": "rds-im-0028"
+    },
+    {
+      "question": "What does this light configuration signify at night?",
+      "options": [
+        "Vessel at anchor",
+        "Pilot vessel on duty",
+        "Vessel restricted in her ability to manoeuvre",
+        "Vessel not under command"
+      ],
+      "imageDescription": "A night-time view of a horizon where two bright red lights are positioned vertically one above the other. No other navigation lights are visible.",
+      "imageAlt": "Two vertical red lights visible in the darkness.",
+      "type": "image_question",
+      "correctAnswer": 3,
+      "explanation": "Two red lights in a vertical line signify a vessel 'Not Under Command' at night, indicating it is unable to manoeuvre as required by the ColRegs.",
+      "id": "rds-im-0029"
+    },
+    {
+      "question": "Identify this buoy and the side on which it should be left when entering a harbour.",
+      "options": [
+        "Port Hand Mark - leave to port when entering harbour",
+        "Starboard Hand Mark - leave to starboard when entering harbour",
+        "Special Mark - indicates a racing buoy",
+        "Emergency Wreck Buoy - do not pass close by"
+      ],
+      "imageDescription": "A red cylindrical (can) buoy floating in a channel, with no topmark.",
+      "imageAlt": "A red can-shaped buoy.",
+      "explanation": "In IALA Region A (UK), a port hand lateral mark is red, often cylindrical (can) shaped, and marks the left side of a channel when following the direction of buoyage.",
+      "correctAnswer": 0,
+      "type": "image_question",
+      "id": "rds-im-0030"
+    },
+    {
+      "question": "What does this specific wreck symbol on a nautical chart represent?",
+      "options": [
+        "A wreck visible at low water",
+        "A wreck always underwater/submerged",
+        "A dangerous rock at chart datum",
+        "A designated anchoring area for fishing vessels"
+      ],
+      "imageDescription": "A nautical chart excerpt showing the letters 'Wk' surrounded by a precise circle of small black dots or 'fringe'.",
+      "imageAlt": "Chart symbol showing 'Wk' surrounded by a circle of small dots.",
+      "explanation": "The chart symbol 'Wk' with a circle of dots indicates a wreck that is always underwater at the chart datum level.",
+      "correctAnswer": 1,
+      "type": "image_question",
+      "id": "rds-im-0031"
+    },
+    {
+      "question": "What is the status of a vessel showing these three vertical red lights?",
+      "options": [
+        "Vessel engaged in underwater cable laying",
+        "Vessel Not Under Command",
+        "Pilot vessel on duty",
+        "Vessel constrained by her draught"
+      ],
+      "imageDescription": "A large ship at night displaying three red lights in a vertical line, along with standard steaming lights (masthead and sidelights).",
+      "imageAlt": "Three vertical red lights on a ship's mast.",
+      "type": "image_question",
+      "explanation": "Three vertical red lights indicate a vessel constrained by her draught, meaning she is severely restricted in her ability to deviate from course due to the depth of water.",
+      "correctAnswer": 3,
+      "id": "rds-im-0032"
+    },
+    {
+      "options": [
+        "North Cardinal - pass to the North",
+        "South Cardinal - pass to the South",
+        "East Cardinal - pass to the East",
+        "West Cardinal - pass to the West"
+      ],
+      "question": "Identify this cardinal mark and the safe side on which to pass it.",
+      "type": "image_question",
+      "correctAnswer": 1,
+      "explanation": "A yellow buoy with a black horizontal band and two cones pointing downwards is a South Cardinal mark; safe water lies to the South.",
+      "imageDescription": "A cardinal buoy painted yellow on top, black in the middle, and yellow on the bottom (or yellow above black), with a topmark of two black cones pointing downwards.",
+      "imageAlt": "A yellow buoy with a black horizontal band in the middle and two downward cones.",
+      "id": "rds-im-0033"
+    },
+    {
+      "options": [
+        "Vessel at anchor",
+        "Vessel engaged in towing",
+        "Vessel constrained by her draught",
+        "Vessel restricted in ability to manoeuvre"
+      ],
+      "question": "What does this black cylinder day shape indicate?",
+      "type": "image_question",
+      "correctAnswer": 2,
+      "explanation": "A cylinder shape ('can' day shape) is the required signal for a vessel constrained by its draught during daylight hours.",
+      "imageDescription": "A very large crude carrier (tanker) displaying a single black cylinder (can) shape high up in its rigging.",
+      "imageAlt": "A vessel displaying a black cylinder day shape.",
+      "id": "rds-im-0034"
+    },
+    {
+      "question": "What is the meaning of this International Code Flag when flown by a vessel?",
+      "options": [
+        "I have a diver down; keep well clear at slow speed.",
+        "I am taking in or discharging explosives.",
+        "I am dragging my anchor.",
+        "My vessel is healthy and I request free pratique."
+      ],
+      "imageDescription": "The International Code Flag 'Alpha', which is vertically split with white on the hoist side and blue on the fly side, featuring a swallow-tail cut.",
+      "imageAlt": "A blue and white flag with a swallowed tail.",
+      "correctAnswer": 0,
+      "explanation": "The blue and white 'Alpha' flag is the international signal indicating that the vessel has a diver down and other vessels should keep well clear at slow speed.",
+      "type": "image_question",
+      "id": "rds-im-0035"
+    },
+    {
+      "imageDescription": "A West Cardinal pillar buoy: yellow with a single broad black horizontal band in the middle, and a topmark of two black cones with points facing each other.",
+      "imageAlt": "A buoy with two black cones pointing towards each other.",
+      "type": "image_question",
+      "explanation": "A yellow buoy with a single horizontal black band and two cones with points together (middle) is a West Cardinal mark. Pass it to the West.",
+      "correctAnswer": 2,
+      "question": "Identify this buoy and the direction of safe water.",
+      "options": [
+        "East Cardinal - pass to the East",
+        "North Cardinal - pass to the North",
+        "West Cardinal - pass to the West",
+        "Isolated Danger - pass well clear on either side"
+      ],
+      "id": "rds-im-0036"
+    },
+    {
+      "options": [
+        "Lateral Mark",
+        "Special Mark",
+        "Safe Water Mark",
+        "Emergency Wreck Buoy"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A yellow cross topmark on a yellow buoy identifies it as a Special Mark, used to indicate features like outfalls or racing marks.",
+      "imageDescription": "A yellow pillar-shaped buoy with a single yellow 'X' shaped topmark (St Andrew's Cross).",
+      "type": "image_question",
+      "imageAlt": "A yellow buoy with a yellow 'X' shaped topmark.",
+      "question": "Identify the type of buoy shown in this image.",
+      "id": "rds-im-0037"
+    },
+    {
+      "imageDescription": "A sailing yacht at anchor in a bay, with a single black spherical day shape hanging from the forestay.",
+      "type": "image_question",
+      "imageAlt": "A yacht at anchor displaying a black ball in the fore rigging.",
+      "question": "What is the status of a vessel displaying this day shape?",
+      "options": [
+        "Vessel at anchor",
+        "Vessel aground",
+        "Vessel restricted in her ability to manoeuvre",
+        "Vessel constrained by her draft"
+      ],
+      "correctAnswer": 0,
+      "explanation": "A vessel displaying a single black ball is at anchor. Vessels under 7m are generally exempt unless in a narrow channel.",
+      "id": "rds-im-0038"
+    },
+    {
+      "options": [
+        "Restricted in ability to manoeuvre",
+        "Constrained by draft",
+        "Not under command",
+        "Vessel aground"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Two black spheres in a vertical line indicate a vessel that is 'Not Under Command' due to an exceptional circumstance.",
+      "type": "image_question",
+      "imageDescription": "A motor vessel displaying two black spherical day shapes positioned vertically one above the other.",
+      "question": "What does this day shape configuration indicate?",
+      "imageAlt": "Two black balls in a vertical line on a ship.",
+      "id": "rds-im-0039"
+    },
+    {
+      "imageDescription": "A cardinal buoy with black on the top half and yellow on the bottom half. The topmark consists of two black cones, both pointing upwards.",
+      "type": "image_question",
+      "question": "Identify this cardinal mark and the safe side on which to pass it.",
+      "imageAlt": "A buoy with two upward-pointing cones and black over yellow horizontal bands.",
+      "options": [
+        "East Cardinal - Pass East",
+        "South Cardinal - Pass South",
+        "West Cardinal - Pass West",
+        "North Cardinal - Pass North"
+      ],
+      "correctAnswer": 3,
+      "explanation": "A North Cardinal mark is black over yellow with both cones pointing upwards. Pass to the North of this mark.",
+      "id": "rds-im-0040"
+    },
+    {
+      "imageDescription": "An extract of a nautical chart showing a rock symbol (an asterisk shape) with the number 2.4 printed next to it, where the 4 is smaller and underlined.",
+      "type": "image_question",
+      "imageAlt": "A chart symbol of a rock with '2' followed by a small underlined '4'.",
+      "question": "On a UK chart, what does this symbol and number indicate?",
+      "options": [
+        "A drying height of 2.4m above Chart Datum",
+        "A depth of 2.4m at Mean High Water Springs",
+        "A rock with 2.4m of water over it at Low Water",
+        "The height of the rock above the seabed is 2.4m"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The number 2.4 under a line signifies the drying height of the rock, meaning it is 2.4m above the Chart Datum.",
+      "id": "rds-im-0041"
+    },
+    {
+      "question": "What does this light configuration indicate at night?",
+      "imageAlt": "Vertical lights: Red, White, Red.",
+      "imageDescription": "A night-time view showing three vertical lights on a mast in the configuration: Red (top), White (middle), Red (bottom).",
+      "type": "image_question",
+      "explanation": "A vessel 'Restricted in her Ability to Manoeuvre' (RAM) shows a red-white-red vertical light sequence at night.",
+      "options": [
+        "Vessel at anchor",
+        "Pilot vessel on duty",
+        "Vessel restricted in her ability to manoeuvre",
+        "Vessel engaged in fishing"
+      ],
+      "correctAnswer": 2,
+      "id": "rds-im-0042"
+    },
+    {
+      "correctAnswer": 1,
+      "options": [
+        "Starboard hand mark - leave to starboard when entering harbour",
+        "Port hand mark - leave to port when entering harbour",
+        "Starboard hand mark - leave to port when entering harbour",
+        "Port hand mark - leave to starboard when entering harbour"
+      ],
+      "explanation": "In IALA Region A (UK), a port hand lateral mark is red and has a flat 'can' topmark. Keep it to your port side when entering.",
+      "type": "image_question",
+      "imageDescription": "A red pillar buoy with a flat-topped red cylinder (can) topmark.",
+      "question": "Identify this buoy and how you should pass it when entering a harbour.",
+      "imageAlt": "A red buoy with a cylinder-shaped topmark.",
+      "id": "rds-im-0043"
+    },
+    {
+      "explanation": "The 'TBY' letters indicate the seabed is composed of 'Tiny' (T) shell and 'By' (Bly) or in standard abbreviations, 'T' is not common but 'Sh' is shell; specifically 'Cy' is Clay. In RYA terms, 'Cy' stands for Clay.",
+      "correctAnswer": 1,
+      "options": [
+        "Crystals",
+        "Clay",
+        "Coarse sand",
+        "Cinders"
+      ],
+      "imageAlt": "Chart symbol with the letters 'Cy'.",
+      "question": "What does the abbreviation 'Cy' on a nautical chart mean regarding the seabed?",
+      "imageDescription": "A nautical chart snippet showing the abbreviation 'Cy' near a depth sounding.",
+      "type": "image_question",
+      "id": "rds-im-0044"
+    },
+    {
+      "imageAlt": "A blue and white swallow-tailed flag.",
+      "question": "What is the meaning of this International Code Flag?",
+      "type": "image_question",
+      "imageDescription": "International Code Flag 'A' (Alpha), which is a swallow-tailed flag divided vertically into white (hoist) and blue (fly).",
+      "explanation": "Flag 'A' (Alpha) is blue and white and indicates 'I have a diver down; keep well clear at slow speed.'",
+      "correctAnswer": 3,
+      "options": [
+        "I am dragging my anchor",
+        "I require a pilot",
+        "I am carrying dangerous cargo",
+        "I have a diver down; keep well clear"
+      ],
+      "id": "rds-im-0045"
+    },
+    {
+      "imageDescription": "A pillar buoy with alternating red and white vertical stripes. It is topped with a single red spherical topmark.",
+      "type": "image_question",
+      "imageAlt": "A buoy with vertical red and white stripes and a red ball topmark.",
+      "question": "What type of mark is represented by these colours and topmark?",
+      "correctAnswer": 0,
+      "options": [
+        "Safe Water Mark",
+        "Isolated Danger Mark",
+        "South Cardinal Mark",
+        "Port Hand Mark"
+      ],
+      "explanation": "A Safe Water Mark has vertical red and white stripes and a single red sphere topmark. It has clean water all around it.",
+      "id": "rds-im-0046"
+    },
+    {
+      "imageAlt": "Sidelights and two white masthead lights at different heights.",
+      "question": "What is the size and type of the vessel showing these lights at night?",
+      "type": "image_question",
+      "imageDescription": "A night view of a vessel showing a red sidelight (port), a green sidelight (starboard), and two white masthead lights, with the aft white light higher than the forward one.",
+      "explanation": "At night, a power-driven vessel over 50m shows two masthead lights, sidelights, and a sternlight. The higher second masthead light is aft.",
+      "options": [
+        "Sailing vessel under 20m",
+        "Power-driven vessel less than 50m in length",
+        "Power-driven vessel over 50m in length",
+        "Vessel engaged in trawling"
+      ],
+      "correctAnswer": 2,
+      "id": "rds-im-0047"
+    },
+    {
+      "explanation": "The diamond shape indicates a vessel engaged in towing where the length of the tow exceeds 200 metres.",
+      "options": [
+        "A vessel restricted in her ability to manoeuvre",
+        "A vessel engaged in a tow exceeding 200m",
+        "A vessel engaged in fishing with gear extending 150m",
+        "A vessel at anchor"
+      ],
+      "correctAnswer": 1,
+      "question": "What does this black diamond day shape indicate on a towing vessel?",
+      "imageAlt": "A power-driven vessel with a black diamond day shape.",
+      "type": "image_question",
+      "imageDescription": "A power-driven vessel seen from the side towing another vessel. A black diamond day shape is displayed on the towing vessel where it can best be seen.",
+      "id": "rds-im-0048"
+    },
+    {
+      "imageDescription": "A rectangular white flag with a red saltire (diagonal cross) from corner to corner, flying from a mast.",
+      "type": "image_question",
+      "imageAlt": "A white rectangular flag with a red diagonal cross.",
+      "question": "What is the meaning of this International Code Flag?",
+      "options": [
+        "I have a diver down; keep well clear",
+        "I am moving to port",
+        "I require assistance",
+        "Man overboard"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The 'V' flag indicates 'I require assistance' and is a standard International Code of Signals flag.",
+      "id": "rds-im-0049"
+    },
+    {
+      "question": "Identify this buoy and the correct action to take.",
+      "imageAlt": "A black buoy with a red horizontal band and two black spheres as a topmark.",
+      "type": "image_question",
+      "imageDescription": "A pillar-shaped buoy, coloured black with one horizontal red band. The topmark consists of two black spheres one above the other.",
+      "explanation": "Isolated danger marks are positioned over hazards with navigable water all around them. Pass on either side but give a wide berth.",
+      "correctAnswer": 0,
+      "options": [
+        "Isolated danger mark; pass on either side but with caution",
+        "Emergency wreck buoy; pass to the North",
+        "Special mark; marks a recreation zone",
+        "Safe water mark; keep to the starboard side"
+      ],
+      "id": "rds-im-0050"
+    },
+    {
+      "imageDescription": "The night-time profile of a vessel showing three green lights in a vertical triangular formation (one at the masthead and one on each end of the foreyard).",
+      "type": "image_question",
+      "imageAlt": "Three green lights in a vertical line on a mast.",
+      "question": "What type of vessel is indicated by these three green lights?",
+      "correctAnswer": 1,
+      "options": [
+        "A pilot vessel on duty",
+        "A vessel engaged in mine clearance",
+        "A vessel constrained by her draught",
+        "A trawler hauling nets"
+      ],
+      "explanation": "Three green lights in a vertical line indicate a vessel engaged in mine clearance operations. Keep well clear.",
+      "id": "rds-im-0051"
+    },
+    {
+      "explanation": "The Magenta '!' inside a circle indicates a 'Precautionary Area' where ships must navigate with particular caution, often near Traffic Separation Schemes.",
+      "options": [
+        "Entry prohibited area",
+        "Firing practice area",
+        "Recommended anchorage",
+        "Precautionary area; navigate with caution"
+      ],
+      "correctAnswer": 3,
+      "imageAlt": "A chart symbol showing a magenta circle with an exclamation mark.",
+      "question": "What does this chart symbol signify?",
+      "imageDescription": "An extract from a nautical chart showing a magenta circular dashed line with a large magenta exclamation mark in the centre.",
+      "type": "image_question",
+      "id": "rds-im-0052"
+    },
+    {
+      "options": [
+        "West Cardinal; pass to the West",
+        "East Cardinal; pass to the East",
+        "South Cardinal; pass to the South",
+        "Preferred channel to port"
+      ],
+      "correctAnswer": 0,
+      "explanation": "A West Cardinal mark has a yellow band in the middle of two black bands and 'point-to-point' cones. Pass to the West.",
+      "imageDescription": "A pillar buoy with a black top band, a central yellow band, and a black bottom band. The topmark is two black cones with points together (wasp-waisted).",
+      "type": "image_question",
+      "imageAlt": "A yellow buoy with a black band at the top and bottom, and two cones pointing at each other.",
+      "question": "Identify this cardinal mark and the safe side on which to pass it.",
+      "id": "rds-im-0053"
+    },
+    {
+      "explanation": "A vessel aground shows two red lights in a vertical line plus her usual anchor lights (white).",
+      "options": [
+        "A vessel hampered by her draught",
+        "An NUC vessel making way through the water",
+        "A vessel aground",
+        "A vessel engaged in underwater operations"
+      ],
+      "correctAnswer": 2,
+      "question": "What does this light configuration signify?",
+      "imageAlt": "Two red lights in a vertical line above a white all-round light.",
+      "type": "image_question",
+      "imageDescription": "At night, a vessel showing two all-round red lights in a vertical line and, in addition, the white all-round anchor lights.",
+      "id": "rds-im-0054"
+    },
+    {
+      "type": "image_question",
+      "imageDescription": "A close-up of a depth soundings area on a nautical chart with the abbreviation 'Co' printed near a depth number.",
+      "question": "On a British Admiralty chart, what does the abbreviation 'Co' mean?",
+      "imageAlt": "The letters 'Co' on a nautical chart.",
+      "correctAnswer": 1,
+      "options": [
+        "Coral",
+        "Cobbles",
+        "Coarse sand粗",
+        "Copper deposit"
+      ],
+      "explanation": "The 'Co' indicates Cobbles on the seabed, which can provide moderate holding but may be uneven.",
+      "id": "rds-im-0055"
+    },
+    {
+      "options": [
+        "Metres (unit of height)",
+        "Middle of channel",
+        "Mixed ground",
+        "Mud"
+      ],
+      "correctAnswer": 3,
+      "explanation": "The 'm' signifies the seabed is made of Mud, which generally offers good holding ground for anchors.",
+      "imageDescription": "A nautical chart extract showing a depth of 12 metres with a small lowercase 'm' underneath the digits.",
+      "type": "image_question",
+      "imageAlt": "The letter 'm' on a nautical chart.",
+      "question": "What does the abbreviation 'm' indicate about the nature of the seabed?",
+      "id": "rds-im-0056"
+    },
+    {
+      "explanation": "A vessel of 50m or more must show two masthead lights; the aft one is higher than the forward one. 225-degree arc of visibility.",
+      "correctAnswer": 2,
+      "options": [
+        "A power-driven vessel less than 7m in length",
+        "A sailing vessel using an engine",
+        "A power-driven vessel 50m or more in length",
+        "A pilot vessel at anchor"
+      ],
+      "question": "The presence of two masthead lights at different heights indicates what?",
+      "imageAlt": "Two white masthead lights at different heights.",
+      "type": "image_question",
+      "imageDescription": "A silhouette of a ship at night showing two white masthead lights (steaming lights) at different heights, and red/green sidelights.",
+      "id": "rds-im-0057"
+    },
+    {
+      "type": "image_question",
+      "imageDescription": "A spar buoy, yellow on top and black on bottom. The topmark features two black cones both pointing downwards.",
+      "question": "Identify this mark and the safe side on which to pass it.",
+      "imageAlt": "A yellow buoy with a black bottom and two black cones pointing down.",
+      "options": [
+        "South Cardinal; pass to the South",
+        "North Cardinal; pass to the North",
+        "East Cardinal; pass to the East",
+        "Special mark; avoid the area"
+      ],
+      "correctAnswer": 0,
+      "explanation": "This is a South Cardinal buoy (two cones pointing down). In a buoyage direction, pass to the South of this mark.",
+      "id": "rds-im-0058"
+    },
+    {
+      "type": "image_question",
+      "imageDescription": "Night view of a vessel showing a red light directly above a green light, both all-round, at or near the masthead. No other lights are visible.",
+      "question": "What type of vessel is displaying these lights?",
+      "imageAlt": "A red light over a green light in a vertical line.",
+      "options": [
+        "A pilot vessel under way",
+        "A sailing vessel under way",
+        "A vessel restricted in her ability to manoeuvre",
+        "A trawler fishing"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A vessel seen from ahead showing a red over green light is a sailing vessel under way. No white masthead light is visible.",
+      "id": "rds-im-0059"
+    },
+    {
+      "type": "image_question",
+      "imageDescription": "A day-time scene of a motor vessel at sea. From its mast, it is flying two solid black circular shapes (balls) arranged one above the other in a vertical line.",
+      "imageAlt": "A vessel with two black balls displayed vertically on its mast.",
+      "question": "What does this day shape configuration indicate?",
+      "correctAnswer": 1,
+      "options": [
+        "A vessel aground",
+        "A vessel not under command",
+        "A vessel restricted in her ability to manoeuvre",
+        "A vessel engaged in fishing"
+      ],
+      "explanation": "Two black spheres (balls) in a vertical line indicate a vessel 'not under command' (NUC), meaning it cannot maneuver as required.",
+      "id": "rds-im-0060"
+    },
+    {
+      "explanation": "A yellow buoy with a black horizontal band and two cones pointing towards each other is an East Cardinal mark. Pass to the East.",
+      "options": [
+        "West Cardinal mark - pass to the West",
+        "North Cardinal mark - pass to the North",
+        "East Cardinal mark - pass to the East",
+        "South Cardinal mark - pass to the South"
+      ],
+      "correctAnswer": 2,
+      "imageAlt": "An East Cardinal mark with two cones pointing at each other.",
+      "question": "Identify this buoy and the safe side on which to pass it.",
+      "imageDescription": "A buoy painted yellow with a single broad black horizontal band around the middle. The topmark consists of two black cones, one pointing up and one pointing down, with their apexes touching (hourglass shape).",
+      "type": "image_question",
+      "id": "rds-im-0061"
+    },
+    {
+      "options": [
+        "A vessel constrained by her draught",
+        "A vessel engaged in pilotage duty",
+        "A vessel aground",
+        "A vessel restricted in her ability to manoeuvre"
+      ],
+      "correctAnswer": 0,
+      "explanation": "A vessel displaying three red lights in a vertical line is 'constrained by her draught' and cannot deviate from her course.",
+      "imageDescription": "A night scene showing the silhouette of a large ship. On its mast, it displays three red all-round lights in a vertical line. Port and starboard sidelights are also visible.",
+      "type": "image_question",
+      "imageAlt": "A large ship at night with three vertical red lights.",
+      "question": "What does this light configuration indicate at night?",
+      "id": "rds-im-0062"
+    },
+    {
+      "imageAlt": "Chart symbol showing 'Wk' surrounded by dots with a depth of 4.5m.",
+      "question": "What does this chart symbol and depth indicate?",
+      "imageDescription": "A snippet of a nautical chart showing a small circle of dots. Inside the circle is the abbreviation 'Wk' and a depth sounding of '4.5'.",
+      "type": "image_question",
+      "explanation": "The symbol 'Wk' with a circle of dots and a depth number indicates a wreck that is fully submerged but has been surveyed.",
+      "correctAnswer": 3,
+      "options": [
+        "A wreck showing above the water level",
+        "A dangerous rock at chart datum",
+        "A wreck over which the depth is unknown",
+        "A submerged wreck with a known depth of 4.5m"
+      ],
+      "id": "rds-im-0063"
+    },
+    {
+      "imageAlt": "A yacht with a single black ball on the foredeck.",
+      "question": "What is indicated by the day shape shown on this yacht?",
+      "imageDescription": "A yacht at anchor in a bay during the day. Hanging from the forestay at the front of the boat is a single solid black sphere.",
+      "type": "image_question",
+      "explanation": "A single black ball is the day shape for a vessel at anchor.",
+      "correctAnswer": 2,
+      "options": [
+        "The vessel is fishing",
+        "The vessel is under sail and motor",
+        "The vessel is at anchor motor-sailing",
+        "The vessel is aground"
+      ],
+      "id": "rds-im-0064"
+    },
+    {
+      "question": "Identify the meaning of this day shape.",
+      "imageAlt": "A large commercial vessel carrying a black cylinder shape.",
+      "type": "image_question",
+      "imageDescription": "A large container ship at sea. On its main mast, it is displaying a large, solid black cylinder day shape.",
+      "explanation": "A cylinder day shape is specifically used by vessels constrained by their draught to indicate their status during the day.",
+      "options": [
+        "Vessel constrained by her draught",
+        "Vessel restricted in her ability to manoeuvre",
+        "Vessel at anchor",
+        "Vessel engaged in underwater operations"
+      ],
+      "correctAnswer": 0,
+      "id": "rds-im-0065"
+    },
+    {
+      "explanation": "A green conical buoy is a starboard hand lateral mark; when entering a harbour (direction of buoyage), it should be kept to the starboard side.",
+      "options": [
+        "Port hand mark - leave to port when entering harbour",
+        "Starboard hand mark - leave to starboard when entering harbour",
+        "Preferred channel mark to port",
+        "Special mark - caution required"
+      ],
+      "correctAnswer": 1,
+      "imageAlt": "A green conical-shaped buoy.",
+      "question": "Identify this buoy and how you should pass it when entering a harbour.",
+      "imageDescription": "A green buoy, conical in shape, floating in a channel. It has no topmark and is plain green.",
+      "type": "image_question",
+      "id": "rds-im-0066"
+    },
+    {
+      "question": "What is the status of a vessel displaying these lights?",
+      "imageAlt": "A vessel at night with red, white, and red vertical lights.",
+      "type": "image_question",
+      "imageDescription": "A night view of a vessel. In addition to normal steaming lights, it displays three all-round lights in a vertical line: Red on top, White in the middle, and Red on the bottom.",
+      "explanation": "A red-white-red vertical light sequence indicates a vessel Restricted in Her Ability to Manoeuvre (RAM), such as a dredger or cable layer.",
+      "correctAnswer": 3,
+      "options": [
+        "A vessel at anchor",
+        "A vessel engaged in pilotage duty",
+        "A vessel constrained by her draught",
+        "A vessel restricted in her ability to manoeuvre"
+      ],
+      "id": "rds-im-0067"
+    },
+    {
+      "explanation": "The abbreviation 'Sh' on a chart stands for 'Shells', indicating the composition of the seabed in that area.",
+      "options": [
+        "Shallow water entry",
+        "Shingle seabed",
+        "Shells on the seabed",
+        "Sharp rocks below"
+      ],
+      "correctAnswer": 2,
+      "question": "What does the abbreviation 'Sh' indicate on a nautical chart?",
+      "imageAlt": "Chart abbreviation 'Sh' near a sounding.",
+      "type": "image_question",
+      "imageDescription": "A section of a nautical chart. Near a depth sounding of 12 metres, the letters 'Sh' are printed in lower case/italics.",
+      "id": "rds-im-0068"
+    },
+    {
+      "explanation": "A vessel being towed is indicated by its sidelights and a sternlight, but no masthead (steaming) lights.",
+      "correctAnswer": 1,
+      "options": [
+        "A sailing vessel under motor",
+        "A vessel being towed",
+        "A pilot vessel on duty",
+        "A vessel less than 7 metres in length"
+      ],
+      "imageAlt": "A vessel's lights at night showing only port/starboard sidelights and no masthead light.",
+      "question": "What is the status of the second vessel being moved in this night scene?",
+      "type": "image_question",
+      "imageDescription": "A night-time view showing a vessel (the tow) behind another. This vessel displays only its red and green sidelights. No white masthead lights are visible on this specific vessel.",
+      "id": "rds-im-0069"
+    },
+    {
+      "question": "Identify this mark and the safe side on which to pass it.",
+      "imageAlt": "A black and yellow buoy with two upward-pointing cones.",
+      "type": "image_question",
+      "imageDescription": "A buoy painted black on the top half and yellow on the bottom half. It has a topmark of two black cones, both pointing upwards.",
+      "explanation": "Two black cones with apexes pointing up indicate a North Cardinal mark. It should be passed to the North to stay in safe water.",
+      "correctAnswer": 0,
+      "options": [
+        "North Cardinal mark - pass to the North",
+        "South Cardinal mark - pass to the South",
+        "West Cardinal mark - pass to the West",
+        "Isolated danger mark - pass well clear"
+      ],
+      "id": "rds-im-0070"
+    },
+    {
+      "question": "What type of vessel is indicated by these lights?",
+      "imageAlt": "A small vessel at night showing a white light above a red light.",
+      "imageDescription": "A night scene of a small boat. On its mast, it has two all-round lights in a vertical line: a white light on top and a red light directly below it. Sidelights are also visible.",
+      "type": "image_question",
+      "explanation": "A white light over a red light in a vertical line indicates a vessel on pilotage duty. 'White over red, pilot ahead'.",
+      "options": [
+        "Vessel engaged in fishing",
+        "Vessel restricted in her ability to manoeuvre",
+        "Vessel on pilotage duty",
+        "Vessel at anchor"
+      ],
+      "correctAnswer": 2,
+      "id": "rds-im-0071"
+    },
+    {
+      "question": "Identify this buoy type based on its shape and topmark.",
+      "type": "image_question",
+      "imageDescription": "A yellow pillar-shaped buoy with a yellow 'X' shaped topmark. No lights are shown in this daytime view.",
+      "correctAnswer": 1,
+      "imageAlt": "A yellow buoy with a yellow cross topmark.",
+      "options": [
+        "Lateral Mark",
+        "Special Mark",
+        "Emergency Wreck Buoy Racing Mark",
+        "Isolated Danger Mark"
+      ],
+      "explanation": "A yellow cross topmark on a buoy indicates a Special Mark, used to mark specific features like outfalls or racing marks.",
+      "id": "rds-im-0072"
+    },
+    {
+      "explanation": "The white 'I' symbol indicates an island, and 'Wk' stands for a wreck; the surrounding dots indicate it is always covers/uncovers.",
+      "correctAnswer": 0,
+      "options": [
+        "A wreck that is always covered by water",
+        "A wreck that dries at low water",
+        "A safe water mark near a wreck",
+        "A dangerous rock in the vicinity of a harbour"
+      ],
+      "imageAlt": "A chart symbol showing a small island with the letters Wk nearby.",
+      "type": "image_question",
+      "imageDescription": "A snippet of a nautical chart showing a small drying height area with the abbreviation 'Wk' (wreck) and the symbol for a rock or small island.",
+      "question": "What does this specific nautical chart symbol represent?",
+      "id": "rds-im-0073"
+    },
+    {
+      "question": "According to ColRegs, what is the status of a vessel displaying these lights?",
+      "type": "image_question",
+      "imageDescription": "The night-time profile of a vessel showing two vertical all-round red lights. No other lights are visible.",
+      "correctAnswer": 2,
+      "options": [
+        "Vessel aground",
+        "Vessel restricted in her ability to manoeuvre",
+        "Vessel not under command",
+        "Vessel engaged in pilotage duty"
+      ],
+      "imageAlt": "Two red lights in a vertical line on a mast.",
+      "explanation": "A vessel 'Not Under Command' (NUC) is required to show two all-round red lights in a vertical line when making way.",
+      "id": "rds-im-0074"
+    },
+    {
+      "question": "What does this day shape indicate about the vessel's movement?",
+      "imageDescription": "A large commercial vessel seen from the side displaying a single black cylinder day shape in the rigging.",
+      "type": "image_question",
+      "options": [
+        "Vessel constrained by her draught",
+        "Vessel restricted in her ability to manoeuvre",
+        "Vessel at anchor",
+        "Vessel engaged in underwater operations"
+      ],
+      "imageAlt": "A black cylinder day shape on a large ship.",
+      "correctAnswer": 0,
+      "explanation": "A cylinder day shape signifies a vessel constrained by her draught, unable to deviate from her course.",
+      "id": "rds-im-0075"
+    },
+    {
+      "type": "image_question",
+      "imageDescription": "A green buoy with a conical (pointed) top, floating in a channel.",
+      "question": "You are entering a harbour (with the flood tide). On which side should you leave this mark?",
+      "explanation": "In IALA Region A, a green conical buoy marks the starboard side of the channel when entering with the flood tide.",
+      "correctAnswer": 3,
+      "imageAlt": "A green conical buoy.",
+      "options": [
+        "Port hand mark, leave to port when entering",
+        "Starboard hand mark, leave to port when entering",
+        "Port hand mark, leave to starboard when entering village",
+        "Starboard hand mark, leave to starboard when entering"
+      ],
+      "id": "rds-im-0076"
+    },
+    {
+      "type": "image_question",
+      "imageDescription": "A symbol of a tall tower with radiating lines and the abbreviation 'R' next to it on a coastal chart.",
+      "question": "What is the meaning of this landmark symbol on a British Admiralty chart?",
+      "explanation": "The symbol 'R' or 'Ro' on a chart indicates a Radio or TV mast, often used as a conspicuous landmark for bearings.",
+      "correctAnswer": 1,
+      "options": [
+        "Rescue Station",
+        "Radio or TV Mast",
+        "Radar Station",
+        "Refuge for small craft"
+      ],
+      "imageAlt": "Chart symbol showing a tall mast with the letter R.",
+      "id": "rds-im-0077"
+    },
+    {
+      "imageDescription": "Lights at night showing a green all-round light directly above a white all-round light. Red and green sidelights are also visible below.",
+      "type": "image_question",
+      "question": "What activity is this vessel engaged in based on these lights?",
+      "explanation": "A green light over a white light in a vertical line signifies a vessel engaged in trawling.",
+      "imageAlt": "A green light over a white light on a mast.",
+      "options": [
+        "Vessel engaged in pilotage duty",
+        "Vessel engaged in fishing other than trawling",
+        "Vessel engaged in trawling",
+        "Sailing vessel underway"
+      ],
+      "correctAnswer": 2,
+      "id": "rds-im-0078"
+    },
+    {
+      "question": "What does the day shape shown on this vessel signify?",
+      "imageDescription": "A yacht at anchor in a bay, displaying one black ball in the forward part of the vessel.",
+      "type": "image_question",
+      "imageAlt": "A black ball day shape.",
+      "options": [
+        "Vessel under power and sail",
+        "Vessel at anchor",
+        "Vessel aground",
+        "Vessel restricted in her ability to manoeuvre house"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A black ball is the standard day shape to indicate a vessel is at anchor.",
+      "id": "rds-im-0079"
+    },
+    {
+      "explanation": "Two black diamonds in a vertical line indicate the safe side to pass a vessel restricted in its ability to manoeuvre.",
+      "imageAlt": "Two black diamonds in a vertical line on the side of a ship.",
+      "options": [
+        "The vessel is at anchor",
+        "There is an obstruction on this side; do not pass",
+        "The vessel is constrained by its draught",
+        "This is the safe side to pass the vessel"
+      ],
+      "correctAnswer": 3,
+      "imageDescription": "A ship displaying three shapes in a vertical line (ball-diamond-ball) on its mast, and an additional two diamonds in a vertical line on its starboard side.",
+      "type": "image_question",
+      "question": "What is indicated by the two diamonds shown on the side of this vessel?",
+      "id": "rds-im-0080"
+    },
+    {
+      "explanation": "A Safe Water Mark (red/white stripes) indicates that there is navigable water all around the mark.",
+      "correctAnswer": 0,
+      "options": [
+        "Safe Water Mark",
+        "Isolated Danger Mark",
+        "Mid-channel Port Hand Mark",
+        "South Cardinal Mark"
+      ],
+      "imageAlt": "A buoy with red and white vertical stripes.",
+      "type": "image_question",
+      "imageDescription": "A spherical buoy with red and white vertical stripes and a single red ball topmark.",
+      "question": "Identify this buoy and its purpose.",
+      "id": "rds-im-0081"
+    },
+    {
+      "imageDescription": "A section of a chart with the letters 'f S' printed near a depth sounder.",
+      "type": "image_question",
+      "question": "What does the abbreviation 'f' indicate regarding the nature of the seabed?",
+      "explanation": "The 'f' abbreviation indicates a seabed composed of fine-grained material (Fine Sand).",
+      "options": [
+        "Foul Ground, Sand",
+        "Firm Sand",
+        "Fine Sand",
+        "Flat Seabed, Sand"
+      ],
+      "imageAlt": "Chart text showing 'f S'.",
+      "correctAnswer": 2,
+      "id": "rds-im-0082"
+    },
+    {
+      "imageDescription": "A nautical chart excerpt showing a sheltered area of water with a small pictorial symbol of a sailing yacht inside it.",
+      "type": "image_question",
+      "question": "What does this chart symbol signify for a coastal navigator?",
+      "explanation": "The symbol of a yacht inside a box usually indicates a marina or a dedicated yacht basin.",
+      "options": [
+        "Anchorage for small craft",
+        "Marina or Yacht Basin",
+        "Sailing club with no mooring",
+        "Restricted area for yachts"
+      ],
+      "imageAlt": "A chart symbol of a yacht in a rectangular enclosure.",
+      "correctAnswer": 1,
+      "id": "rds-im-0083"
+    },
+    {
+      "imageAlt": "A yellow and black buoy with two upward-pointing cones as a topmark.",
+      "options": [
+        "East Cardinal - Pass to the East",
+        "North Cardinal - Pass to the North",
+        "West Cardinal - Pass to the West",
+        "South Cardinal - Pass to the South"
+      ],
+      "type": "image_question",
+      "explanation": "A North Cardinal mark has two cones pointing up. You should pass to the North of this mark to remain in safe water.",
+      "correctAnswer": 1,
+      "question": "Identify this buoy and the safe side on which to pass it.",
+      "imageDescription": "A North Cardinal buoy with a black band above a yellow band and two triangles (cones) both pointing upwards as the topmark.",
+      "id": "rds-im-0084"
+    },
+    {
+      "type": "image_question",
+      "explanation": "A cylinder day shape indicates a vessel constrained by her draught, meaning she is severely restricted in her ability to deviate from the course she is following.",
+      "correctAnswer": 0,
+      "question": "What is the status of a vessel displaying this day shape?",
+      "imageDescription": "A profile view of a large commercial container ship displaying a black cylinder day shape in its rigging.",
+      "options": [
+        "Constrained by her draught",
+        "Restricted in her ability to manoeuvre",
+        "Aground",
+        "Trawling"
+      ],
+      "imageAlt": "A large ship displaying a black cylinder shape on its mast.",
+      "id": "rds-im-0085"
+    },
+    {
+      "correctAnswer": 2,
+      "explanation": "A single ball day shape indicates a vessel at anchor. This signifies the vessel is not under way.",
+      "type": "image_question",
+      "question": "What does the black ball shape on this vessel indicate?",
+      "imageDescription": "A white hull sailing yacht in a bay, with a single black sphere (ball) suspended from the forestay near the bow.",
+      "options": [
+        "Vessel under sail and power",
+        "Vessel aground outdoor",
+        "Vessel at anchor",
+        "Vessel engaged in diving operations"
+      ],
+      "imageAlt": "A sailing yacht at anchor with a black ball hanging from the bow.",
+      "id": "rds-im-0086"
+    },
+    {
+      "imageAlt": "Night scene showing a vertical green light over a vertical white light.",
+      "type": "image_question",
+      "explanation": "Green over white lights in a vertical line indicate a vessel engaged in trawling. Red over white would indicate fishing other than trawling.",
+      "correctAnswer": 3,
+      "imageDescription": "A dark night scene with two vertical lights on a mast: the top one is green and the bottom one is white. Red/green sidelights are not visible.",
+      "question": "What type of vessel is indicated by these lights at night?",
+      "options": [
+        "Vessel engaged in pilotage duty",
+        "Vessel restricted in her ability to manoeuvre",
+        "Vessel fishing (other than trawling)",
+        "Vessel engaged in trawling"
+      ],
+      "id": "rds-im-0087"
+    },
+    {
+      "options": [
+        "Vessel Not Under Command",
+        "Vessel Restricted in her Ability to Manoeuvre",
+        "Vessel Aground",
+        "Vessel engaged in underwater operations"
+      ],
+      "type": "image_question",
+      "explanation": "Two black balls in a vertical line indicate a vessel 'Not Under Command' (NUC), meaning through exceptional circumstances she cannot manoeuvre as required.",
+      "correctAnswer": 0,
+      "imageDescription": "A medium-sized motor cruiser at sea displaying two black spheres in a vertical line on its signal mast.",
+      "question": "What does this day shape configuration indicate about the vessel?",
+      "imageAlt": "A motor vessel displaying two black balls vertically on its mast.",
+      "id": "rds-im-0088"
+    },
+    {
+      "imageAlt": "A section of a nautical chart with the letter 'M' written on the seabed.",
+      "imageDescription": "A close-up of an Admiralty chart showing a depth sounding of 12 meters with a small lowercase 'm' or uppercase 'M' nearby indicating seabed composition.",
+      "question": "What does the abbreviation 'M' indicate on a nautical chart regarding the seabed?",
+      "explanation": "The abbreviation 'M' on a chart stands for Mud. It is important to know this for choosing a suitable anchorage.",
+      "correctAnswer": 1,
+      "type": "image_question",
+      "options": [
+        "Mixed bottom",
+        "Mud",
+        "Magnetism area",
+        "Marina ahead"
+      ],
+      "id": "rds-im-0089"
+    },
+    {
+      "imageAlt": "A buoy with black and red horizontal bands and two black balls on top.",
+      "options": [
+        "Safe Water Mark",
+        "East Cardinal Mark",
+        "Isolated Danger Mark",
+        "Special Mark"
+      ],
+      "type": "image_question",
+      "correctAnswer": 2,
+      "explanation": "An isolated danger mark has two black spheres as a topmark. It is placed directly over a hazard that has navigable water all around it.",
+      "question": "Identify this buoy.",
+      "imageDescription": "A pillar-shaped buoy with horizontal black and red bands, topped with two black spheres at the topmark.",
+      "id": "rds-im-0090"
+    },
+    {
+      "type": "image_question",
+      "explanation": "A safe water mark (red and white vertical stripes) has a single red ball as a topmark. Its light phase is often Isophase, Occulting, or a single Long Flash every 10s.",
+      "correctAnswer": 0,
+      "imageDescription": "A tall pillar buoy with red and white vertical stripes, featuring a single red sphere (ball) as the topmark.",
+      "question": "What is this buoy and what does it indicate?",
+      "options": [
+        "Safe Water Mark",
+        "Port Hand Lateral Mark",
+        "Starboard Hand Lateral Mark",
+        "Emergency Wreck Buoy"
+      ],
+      "imageAlt": "A buoy with red and white vertical stripes and one red ball on top.",
+      "id": "rds-im-0091"
+    },
+    {
+      "correctAnswer": 3,
+      "explanation": "Three vertical red lights indicate a vessel constrained by her draught. Memory aid: 'Three Reds, Not much water under my beds'.",
+      "type": "image_question",
+      "question": "What is the status of a vessel displaying these three vertical red lights at night?",
+      "imageDescription": "A vessel at night displaying three all-round red lights in a vertical line. Sidelights and a masthead light are also visible.",
+      "options": [
+        "Vessel aground",
+        "Vessel not under command",
+        "Vessel restricted in her ability to manoeuvre",
+        "Vessel constrained by her draught"
+      ],
+      "imageAlt": "Night scene showing three vertical red lights on a ship's mast.",
+      "id": "rds-im-0092"
+    },
+    {
+      "question": "Identify this buoy and which side you should leave it on when heading into port.",
+      "imageDescription": "A red, flat-topped (can) buoy floating in a channel. There are no topmarks.",
+      "correctAnswer": 1,
+      "explanation": "In IALA Region A (UK/Europe), a Port Hand mark is red and may be a can, pillar, or spar shape. When entering a harbour with the flood tide, you leave it to your port (left) side.",
+      "type": "image_question",
+      "options": [
+        "Starboard Hand Mark - Leave to starboard when entering harbour",
+        "Port Hand Mark - Leave to port when entering harbour",
+        "Special Mark - Area of interest",
+        "Isolated Danger - Pass either side"
+      ],
+      "imageAlt": "A red can-shaped buoy.",
+      "id": "rds-im-0093"
+    },
+    {
+      "imageAlt": "A yellow buoy with a yellow 'X' topmark.",
+      "options": [
+        "West Cardinal Mark",
+        "New Danger Mark",
+        "Special Mark",
+        "Safe Water Mark"
+      ],
+      "question": "Identify this buoy based on its colour and topmark.",
+      "imageDescription": "A bright yellow buoy (it can be any shape but usually spar or pillar) with a single yellow 'X' (cross) as the topmark.",
+      "explanation": "A yellow cross indicates a Special Mark. These are used to mark features like racing buoys, outfalls, or cable areas, rather than navigation hazards.",
+      "correctAnswer": 2,
+      "type": "image_question",
+      "id": "rds-im-0094"
+    },
+    {
+      "explanation": "According to ColRegs Rule 26, a vessel fishing other than trawling (e.g., with nets/lines) displays Red over White lights. Red over White, Frying tonight!",
+      "correctAnswer": 0,
+      "type": "image_question",
+      "question": "Identify the activity of this vessel based on the vertical red and white lights.",
+      "imageDescription": "A dark night scene showing a vessel with a red light over a white light in a vertical line. A white sidelight is visible further back.",
+      "options": [
+        "Vessel fishing (other than trawling)",
+        "Vessel engaged in pilotage duty",
+        "Vessel at anchor",
+        "Sailing vessel under way"
+      ],
+      "imageAlt": "Night scene showing a vertical red light over a vertical white light.",
+      "id": "rds-im-0095"
+    },
+    {
+      "explanation": "A North Cardinal mark indicates that the safest water lies to the North of the buoy. Its topmark consists of two cones pointing upwards.",
+      "imageDescription": "A North Cardinal mark buoy with black over yellow horizontal bands and a topmark of two black cones both pointing upwards.",
+      "correctAnswer": 2,
+      "type": "image_question",
+      "options": [
+        "To the South",
+        "To the East",
+        "To the North",
+        "To the West"
+      ],
+      "question": "On which side of this buoy is the safest water?",
+      "imageAlt": "Yellow and black buoy with two cones pointing up.",
+      "id": "rds-im-0096"
+    },
+    {
+      "correctAnswer": 0,
+      "explanation": "A depth with a line under it, or bracketed, indicates that the position of the sounding has shifted or is not in its surveyed position.",
+      "imageDescription": "A nautical chart extract showing a depth sounding of 4.5 metres with a thin horizontal line printed directly underneath the digits.",
+      "type": "image_question",
+      "options": [
+        "Position of depth is doubtful",
+        "The area is drying at low water",
+        "Depth is in fathoms, not metres",
+        "The seabed is rocky at this point"
+      ],
+      "imageAlt": "Chart sounding with a line under the number.",
+      "question": "What does the line under the depth sounding 4.5 indicate on an Admiralty chart?",
+      "id": "rds-im-0097"
+    },
+    {
+      "question": "What is the status of a vessel displaying this day shape?",
+      "imageAlt": "A black cylinder day shape.",
+      "options": [
+        "Vessel at anchor",
+        "Vessel constrained by her draught",
+        "Vessel restricted in her ability to manoeuvre",
+        "Vessel aground"
+      ],
+      "type": "image_question",
+      "explanation": "A vessel constrained by her draught must show three vertical red lights at night and a cylinder day shape.",
+      "imageDescription": "A black cylinder day shape displayed prominently from the mast of a large vessel.",
+      "correctAnswer": 1,
+      "id": "rds-im-0098"
+    },
+    {
+      "explanation": "The symbol of a magenta diamond with a letter inside refers to a 'Tidal Diamond', with data found in the tidal marks table on the chart.",
+      "imageDescription": "A nautical chart symbol showing a magenta-coloured diamond shape containing the capital letter 'B'.",
+      "correctAnswer": 3,
+      "type": "image_question",
+      "options": [
+        "A pilot boarding station",
+        "A dangerous wreck",
+        "A marine nature reserve",
+        "Tidal stream information is available for this position"
+      ],
+      "question": "What does this chart symbol indicate to a navigator?",
+      "imageAlt": "Magenta diamond with the letter B.",
+      "id": "rds-im-0099"
+    },
+    {
+      "question": "What does the seabed abbreviation 'Co' stand for?",
+      "imageAlt": "The letters 'Co' on a white background.",
+      "options": [
+        "Coral",
+        "Cobbles",
+        "Coarse sand",
+        "Concrete blocks"
+      ],
+      "type": "image_question",
+      "explanation": "The symbol 'Co' on an Admiralty chart stands for Coral, which is a significant seabed feature.",
+      "imageDescription": "A nautical chart extract showing the abbreviation 'Co' on the seabed area.",
+      "correctAnswer": 0,
+      "id": "rds-im-0100"
+    },
+    {
+      "type": "image_question",
+      "explanation": "A West Cardinal mark has a black band in the middle and its cones point towards each other. To pass safely, you must stay to the West.",
+      "imageDescription": "A West Cardinal mark buoy, yellow with a single broad horizontal black band. The topmark is two black cones with their points together (pointing at each other).",
+      "correctAnswer": 2,
+      "question": "In which direction should you pass this buoy to remain in safe water?",
+      "imageAlt": "Yellow buoy with a black band and two cones pointing together.",
+      "options": [
+        "To the North",
+        "To the East",
+        "To the West",
+        "To the South"
+      ],
+      "id": "rds-im-0101"
+    },
+    {
+      "explanation": "A vessel 'Restricted in her Ability to Manoeuvre' (RAM) shows a red-white-red light configuration or a ball-diamond-ball day shape.",
+      "imageDescription": "The night-time lights of a vessel showing three vertical lights: Red at the top, White in the middle, and Red at the bottom.",
+      "correctAnswer": 1,
+      "type": "image_question",
+      "options": [
+        "Vessel aground",
+        "Vessel restricted in her ability to manoeuvre",
+        "Vessel constrained by her draught",
+        "Vessel engaged in fishing"
+      ],
+      "question": "What is the status of a vessel displaying these vertical lights at night?",
+      "imageAlt": "Three vertical lights: Top red, middle white, bottom red.",
+      "id": "rds-im-0102"
+    },
+    {
+      "imageAlt": "Yellow buoy with a yellow 'X' topmark.",
+      "question": "Identify this buoy and its general purpose.",
+      "options": [
+        "Special Mark indicating a specific feature (e.g. outfall or spoil ground)",
+        "Isolated Danger mark",
+        "Preferred Channel mark to Starboard",
+        "Emergency Wreck Buoy"
+      ],
+      "type": "image_question",
+      "correctAnswer": 0,
+      "imageDescription": "A yellow buoy, pillar-shaped, with a yellow 'X' shaped topmark.",
+      "explanation": "A flashing yellow light (usually 2 seconds on, 2 seconds off) on a Special Mark identifies a specific area such as a race course or outfall.",
+      "id": "rds-im-0103"
+    },
+    {
+      "type": "image_question",
+      "correctAnswer": 3,
+      "explanation": "A Safe Water Mark, with vertical red/white stripes, can be used as a 'Landfall' mark to indicate the start of a buoyed channel.",
+      "imageDescription": "A pillar-shaped buoy with vertical red and white stripes and a single red spherical topmark.",
+      "imageAlt": "Red and white vertical striped buoy with a red ball topmark.",
+      "question": "What type of buoy is this, often used to indicate the start of a channel?",
+      "options": [
+        "Port Hand Mark",
+        "Starboard Hand Mark",
+        "Isolated Danger Mark",
+        "Safe Water Mark"
+      ],
+      "id": "rds-im-0104"
+    },
+    {
+      "options": [
+        "Fairway Mark",
+        "North Cardinal Mark",
+        "Isolated Danger Mark",
+        "New Danger Mark"
+      ],
+      "imageAlt": "Black buoy with a red horizontal band and two black balls.",
+      "question": "What is the name of this buoy?",
+      "correctAnswer": 2,
+      "imageDescription": "A buoy with horizontal black and red bands and a topmark consisting of two black spheres/balls.",
+      "explanation": "An isolated danger mark is placed over a hazard that has navigable water all around it. It is black with one or more red horizontal bands.",
+      "type": "image_question",
+      "id": "rds-im-0105"
+    },
+    {
+      "type": "image_question",
+      "explanation": "A green buoy with a conical shape is a Starboard Hand mark. When entering a harbour (direction of buoyage), it should be left to starboard (the right side).",
+      "imageDescription": "A green conical-shaped buoy, used as an IALA Region A Starboard hand mark.",
+      "correctAnswer": 1,
+      "question": "Heading into a UK harbour (with the flood), on which side of the boat should you leave this mark?",
+      "imageAlt": "Green conical buoy.",
+      "options": [
+        "Port side (Left)",
+        "Starboard side (Right)",
+        "Either side",
+        "Do not pass"
+      ],
+      "id": "rds-im-0106"
+    },
+    {
+      "type": "image_question",
+      "correctAnswer": 2,
+      "imageDescription": "A black conical day shape, pointing downwards, displayed on the forestay of a sailing vessel.",
+      "explanation": "A yacht under power with sails up is considered a power-driven vessel and must display a conical shape, point down, in the forward part where it can best be seen.",
+      "imageAlt": "Black cone pointing downwards.",
+      "question": "What does this day shape indicate when displayed on a sailing vessel?",
+      "options": [
+        "Vessel is at anchor",
+        "Vessel is fishing",
+        "Vessel is motorsailing (under power and sail)",
+        "Vessel is a pilot boat"
+      ],
+      "id": "rds-im-0107"
+    },
+    {
+      "type": "image_question",
+      "options": [
+        "Vessel at anchor",
+        "Vessel constrained by draught",
+        "Vessel restricted in her ability to manœuvre",
+        "Vessel aground"
+      ],
+      "imageAlt": "Three black day shapes in a vertical line: ball, diamond, ball.",
+      "explanation": "A black ball over a black diamond over a black ball indicates a vessel restricted in her ability to manœuvre.",
+      "question": "What is the status of a vessel displaying these three day shapes in a vertical line?",
+      "correctAnswer": 2,
+      "imageDescription": "A diagram of a vessel's mast displaying three black day shapes in a vertical line: a ball at the top, a diamond in the middle, and a ball at the bottom.",
+      "id": "rds-im-0108"
+    },
+    {
+      "imageAlt": "A pillar buoy with black over yellow horizontal bands and two upward-pointing cones.",
+      "explanation": "A yellow and black buoy with two cones pointing upwards is a North Cardinal mark; you must pass to the North.",
+      "type": "image_question",
+      "options": [
+        "North",
+        "South",
+        "East",
+        "West"
+      ],
+      "question": "To remain in safe water, on which side (Compass direction) should you pass this buoy?",
+      "correctAnswer": 0,
+      "imageDescription": "A North Cardinal pillar buoy with a topmark of two black cones pointing upwards. The top half of the buoy is black and the bottom half is yellow.",
+      "id": "rds-im-0109"
+    },
+    {
+      "correctAnswer": 1,
+      "question": "What does the abbreviation 'W' indicate on a nautical chart regarding the seabed?",
+      "imageDescription": "A snippet of a nautical chart showing a depth sounding with the capital letter 'W' printed underneath it.",
+      "options": [
+        "White sand",
+        "Seaweed",
+        "Wreck nearby",
+        "West cardinal mark"
+      ],
+      "type": "image_question",
+      "imageAlt": "The letter 'W' printed on a white background representing a sea chart.",
+      "explanation": "An uppercase 'W' on an Admiralty chart indicates a seabed composed of Seaweed.",
+      "id": "rds-im-0110"
+    },
+    {
+      "explanation": "A cylinder topmark on a red port lateral mark indicates the port side of the channel when returning to harbour (IALA A).",
+      "imageAlt": "A red can-shaped buoy with a flat top.",
+      "options": [
+        "Starboard side of the channel",
+        "Mid-channel mark",
+        "Isolated danger mark",
+        "Port side of the channel"
+      ],
+      "type": "image_question",
+      "imageDescription": "A red port hand lateral buoy with a cylindrical (can) topmark.",
+      "correctAnswer": 3,
+      "question": "When entering a harbour in the UK, what does this buoy indicate?",
+      "id": "rds-im-0111"
+    },
+    {
+      "explanation": "A sailing vessel under engine power is treated as a power-driven vessel and must display a cone, apex down.",
+      "imageAlt": "A black cone day shape with the point facing downwards.",
+      "type": "image_question",
+      "options": [
+        "A sailing vessel also propelled by machinery",
+        "A vessel fishing with gear extended",
+        "A vessel under sail only",
+        "A pilot vessel on duty"
+      ],
+      "imageDescription": "A black cone day shape displayed on the forestay of a yacht, with the apex (point) pointing downwards.",
+      "question": "What does this day shape indicate when displayed on a yacht?",
+      "correctAnswer": 0,
+      "id": "rds-im-0112"
+    },
+    {
+      "imageAlt": "A pillar buoy with vertical blue and yellow stripes and a yellow cross topmark.",
+      "explanation": "A blue and yellow buoy usually indicates an emergency wreck mark, used for newly discovered dangers.",
+      "options": [
+        "Special Mark",
+        "Emergency Wreck Mark",
+        "Fairway Mark house",
+        "Safe Water Mark"
+      ],
+      "type": "image_question",
+      "correctAnswer": 1,
+      "question": "What is the purpose of this specifically coloured blue and yellow buoy?",
+      "imageDescription": "A pillar buoy with equal vertical stripes of blue and yellow, topped with a yellow upright cross.",
+      "id": "rds-im-0113"
+    },
+    {
+      "imageDescription": "A night-time view showing two red all-round lights in a vertical line on a vessel's mast. No other lights are visible.",
+      "question": "What does this light configuration indicate at night?",
+      "correctAnswer": 2,
+      "explanation": "Two red lights in a vertical line indicate a vessel 'Not Under Command' (NUC), unable to manœuvre.",
+      "imageAlt": "Two red lights positioned vertically one above the other.",
+      "type": "image_question",
+      "options": [
+        "Vessel at anchor",
+        "Vessel engaged in pilotage",
+        "Vessel not under command",
+        "Vessel constrained by her draught"
+      ],
+      "id": "rds-im-0114"
+    },
+    {
+      "imageAlt": "A compass rose on a chart showing 2° 15' W 2015 (8' E).",
+      "explanation": "Mag Var (Magnetic Variation) is the difference between calculations based on True North and Magnetic North.",
+      "options": [
+        "Magnetic Variation",
+        "Magnetic Deviation_now",
+        "Grid North offset",
+        "Tidal stream direction"
+      ],
+      "type": "image_question",
+      "correctAnswer": 0,
+      "question": "What does this information found in the centre of a chart's compass rose represent?",
+      "imageDescription": "A compass rose from a nautical chart showing a variation of 2° 15' W in 2015, with an annual change of 8' E.",
+      "id": "rds-im-0115"
+    },
+    {
+      "imageDescription": "A yellow pillar-shaped buoy with a yellow 'X' (St Andrew's Cross) topmark.",
+      "correctAnswer": 3,
+      "question": "Identify this buoy.",
+      "explanation": "A yellow buoy with an 'X' topmark is a Special Mark, used to indicate areas like racing marks or outfalls.",
+      "imageAlt": "A yellow buoy, any shape, featuring a yellow X-shaped topmark.",
+      "options": [
+        "Safe Water Mark",
+        "Lateral Mark",
+        "Isolated Danger Mark house",
+        "Special Mark"
+      ],
+      "type": "image_question",
+      "id": "rds-im-0116"
+    },
+    {
+      "imageDescription": "A chart symbol for a lighthouse with the text 'Int.Q.R.10s' printed beside it.",
+      "correctAnswer": 1,
+      "question": "In the light description 'Int.Q.R.10s', what does 'Int' stand for?",
+      "options": [
+        "International Quality light",
+        "Interrupted Quick flashing light house",
+        "Intense Quartz light",
+        "Internal Quiet period"
+      ],
+      "type": "image_question",
+      "explanation": "The 'Int' prefix on a lighthouse description stands for 'Interrupted Quick' flashing.",
+      "imageAlt": "The text 'Int.Q.R.10s' next to a lighthouse symbol on a chart.",
+      "id": "rds-im-0117"
+    },
+    {
+      "imageDescription": "An Isolated Danger buoy with black and red horizontal bands and two black spheres (balls) as a topmark.",
+      "correctAnswer": 2,
+      "question": "Identify this buoy and its topmark configuration.",
+      "explanation": "Two black balls in a vertical line represent an isolated danger mark, indicating navigable water all around but a hazard at the spot.",
+      "imageAlt": "A buoy with black and red horizontal bands and two black balls as a topmark.",
+      "options": [
+        "Safe Water Mark house",
+        "South Cardinal Mark house house",
+        "Isolated Danger Mark house house",
+        "Port Hand Mark house house"
+      ],
+      "type": "image_question",
+      "id": "rds-im-0118"
+    },
+    {
+      "imageDescription": "A black diamond day shape displayed on a vessel.",
+      "question": "What does this black diamond day shape indicate when seen on a tug or its tow?",
+      "correctAnswer": 0,
+      "explanation": "A diamond shape indicates a vessel being towed if the length of the tow exceeds 200 metres.",
+      "imageAlt": "A black diamond day shape.",
+      "type": "image_question",
+      "options": [
+        "A tow exceeding 200m in length",
+        "A vessel engaged in diving operations",
+        "A vessel at anchor",
+        "A vessel restricted in its ability to manœuvre"
+      ],
+      "id": "rds-im-0119"
+    },
+    {
+      "imageDescription": "A single black cylinder day shape displayed vertically on a vessel.",
+      "options": [
+        "Vessel at anchor",
+        "Vessel constrained by draught",
+        "Vessel restricted in her ability to manoeuvre",
+        "Vessel engaged in fishing"
+      ],
+      "type": "image_question",
+      "explanation": "A vessel displaying a cylinder day shape is constrained by its draught, meaning it is severely restricted in its ability to deviate from its course due to the depth of water.",
+      "question": "What is the status of a vessel displaying this black cylinder day shape?",
+      "imageAlt": "A black cylinder day shape.",
+      "correctAnswer": 1,
+      "id": "rds-im-0120"
+    },
+    {
+      "correctAnswer": 3,
+      "imageAlt": "A buoy with black-yellow-black horizontal bands and two cones pointing away from each other.",
+      "explanation": "The topmarks (two cones pointing away from each other) and the black-yellow-black horizontal bands identify this as an East Cardinal mark.",
+      "question": "Identify this cardinal mark.",
+      "type": "image_question",
+      "options": [
+        "North Cardinal",
+        "South Cardinal",
+        "East Cardinal",
+        "West Cardinal"
+      ],
+      "imageDescription": "An East Cardinal buoy with black bands at the top and bottom and a yellow band in the middle. The topmark consists of two black cones pointing away from each other (base to base).",
+      "id": "rds-im-0121"
+    },
+    {
+      "question": "What type of buoy is this, indicating that there is navigable water all around it?",
+      "explanation": "Red and white vertical stripes with a single red ball topmark identify a Safe Water Mark, which indicates navigable water all around.",
+      "correctAnswer": 0,
+      "imageAlt": "A buoy with red and white vertical stripes and a red sphere topmark.",
+      "options": [
+        "Safe Water Mark",
+        "Isolated Danger Mark",
+        "Emergency Wreck Buoy",
+        "Special Mark"
+      ],
+      "imageDescription": "A pillar buoy with vertical red and white stripes and a single red sphere as a topmark.",
+      "type": "image_question",
+      "id": "rds-im-0122"
+    },
+    {
+      "explanation": "Two vertical red lights signify a vessel 'Not Under Command,' meaning it cannot manoeuvre as required by the rules due to some exceptional circumstance.",
+      "question": "At night, what does a vessel displaying these two vertical red lights indicate?",
+      "imageAlt": "Two red lights in a vertical line.",
+      "correctAnswer": 2,
+      "imageDescription": "A night-time view showing two red lights arranged in a vertical line on a vessel's mast.",
+      "options": [
+        "Vessel at anchor",
+        "Vessel aground",
+        "Vessel not under command",
+        "Pilot vessel on duty"
+      ],
+      "type": "image_question",
+      "id": "rds-im-0123"
+    },
+    {
+      "explanation": "The abbreviation 'm' stands for mud, which is a soft type of seabed material often found in estuaries.",
+      "question": "What does the seabed abbreviation 'm' indicate on a nautical chart?",
+      "correctAnswer": 1,
+      "imageAlt": "Chart abbreviation 'm' next to a depth sounding.",
+      "options": [
+        "Mixed ground",
+        "Mud",
+        "Mussels",
+        "Medium sand"
+      ],
+      "imageDescription": "A snippet of a nautical chart showing a depth sounding with the lowercase letter 'm' underneath it.",
+      "type": "image_question",
+      "id": "rds-im-0124"
+    },
+    {
+      "type": "image_question",
+      "imageDescription": "A green cone-shaped (triangular) topmark pointing upwards, typically found on a channel buoy.",
+      "options": [
+        "Starboard Lateral Mark (IALA A)",
+        "Port Lateral Mark (IALA A)",
+        "Isolated Danger Mark",
+        "North Cardinal Mark"
+      ],
+      "imageAlt": "A green triangular topmark.",
+      "correctAnswer": 0,
+      "question": "On which type of buoy would you find this green triangular topmark in the UK?",
+      "explanation": "A green triangular topmark is used for Starboard Lateral marks in IALA Region A (which includes the UK).",
+      "id": "rds-im-0125"
+    },
+    {
+      "imageDescription": "An isolated danger mark buoy, painted black with one or more red horizontal bands, topped with two black spheres in a vertical line.",
+      "options": [
+        "Safe Water Mark",
+        "Vessel aground",
+        "Isolated Danger Mark",
+        "Special Mark"
+      ],
+      "type": "image_question",
+      "explanation": "Two black spheres in a vertical line indicate an isolated danger, such as a rock or wreck, that has navigable water all around it.",
+      "question": "What does this topmark of two black spheres indicate?",
+      "imageAlt": "Two black spheres in a vertical line.",
+      "correctAnswer": 2,
+      "id": "rds-im-0126"
+    },
+    {
+      "imageDescription": "A chart symbol for a buoy with the text 'Fl(3) 10s' written next to it.",
+      "options": [
+        "Flash every three seconds",
+        "Three flashes every three seconds",
+        "Fixed light for ten seconds",
+        "Group of three flashes every ten seconds"
+      ],
+      "type": "image_question",
+      "question": "Relating to a buoy's light, what does the description 'Fl(3) 10s' mean?",
+      "explanation": "The light characteristic Fl(3) 10s means the buoy emits a group of three flashes every ten seconds.",
+      "imageAlt": "Light description 'Fl(3) 10s' on a chart.",
+      "correctAnswer": 3,
+      "id": "rds-im-0127"
+    },
+    {
+      "type": "image_question",
+      "imageDescription": "A single black sphere (ball) day shape displayed in the forward part of a vessel.",
+      "options": [
+        "Vessel under power and sail",
+        "Vessel at anchor",
+        "Vessel aground",
+        "Vessel fishing"
+      ],
+      "imageAlt": "A black ball day shape.",
+      "correctAnswer": 1,
+      "question": "What is the meaning of this day shape when displayed by a vessel?",
+      "explanation": "A black ball day shape indicates a vessel of less than 50 metres in length is at anchor.",
+      "id": "rds-im-0128"
+    },
+    {
+      "imageDescription": "A yellow buoy with a topmark in the shape of a yellow 'X' (St Andrew's Cross).",
+      "options": [
+        "Special Mark",
+        "East Cardinal Mark",
+        "Starboard Lateral Mark",
+        "Safe Water Mark"
+      ],
+      "type": "image_question",
+      "explanation": "A yellow 'X' topmark is the standard topmark for a Special Mark, used to indicate features like outfalls or racing marks.",
+      "question": "What type of buoy uses this yellow 'X' topmark?",
+      "imageAlt": "A yellow 'X' shaped topmark.",
+      "correctAnswer": 0,
+      "id": "rds-im-0129"
+    },
+    {
+      "explanation": "The abbreviation 'Sh' indicates that the seabed is composed of shells.",
+      "question": "What does the chart abbreviation 'Sh' tell you about the nature of the seabed?",
+      "imageAlt": "Chart abbreviation 'Sh'.",
+      "correctAnswer": 2,
+      "imageDescription": "A close-up of a nautical chart symbol showing the abbreviation 'Sh' near a depth contour.",
+      "options": [
+        "Shallow water",
+        "Silt",
+        "Shells",
+        "Shingle"
+      ],
+      "type": "image_question",
+      "id": "rds-im-0130"
+    },
+    {
+      "imageAlt": "Three day shapes: ball, diamond, ball in a vertical line.",
+      "correctAnswer": 3,
+      "explanation": "A vessel restricted in her ability to manoeuvre (other than one engaged in minesweeping) displays a ball-diamond-ball vertical configuration.",
+      "question": "Identify the status of a vessel displaying these three day shapes in a vertical line.",
+      "type": "image_question",
+      "imageDescription": "A vessel displaying three day shapes in a vertical line: the highest is a black ball, the middle is a black diamond, and the lowest is a black ball.",
+      "options": [
+        "Vessel aground",
+        "Vessel constrained by draught",
+        "Vessel engaged in pilotage duty",
+        "Vessel restricted in her ability to manoeuvre"
+      ],
+      "id": "rds-im-0131"
+    },
+    {
+      "imageDescription": "Nautical Signal Flag Zulu (Z). Quadrant design with yellow, blue, red, and black triangles.",
+      "options": [
+        "I require assistance",
+        "I require a tug",
+        "Man overboard",
+        "I am dragging my anchor"
+      ],
+      "imageAlt": "A rectangular flag divided into four triangles: yellow at the top, blue at the bottom, red at the hoist, and black at the fly.",
+      "question": "What is the International Code of Signals meaning for this flag?",
+      "type": "image_question",
+      "correctAnswer": 1,
+      "explanation": "The 'Z' flag (Yellow, Blue, Red, Black triangles) indicates 'I require a tug'. In a racing context, it can also relate to a penalty.",
+      "id": "rds-im-0132"
+    },
+    {
+      "correctAnswer": 2,
+      "type": "image_question",
+      "explanation": "A North Cardinal Mark has two black cones pointing up and uses a black-over-yellow colour scheme. Its light flashes continuously.",
+      "imageAlt": "A pillar buoy painted black on the top half and yellow on the bottom half, with two upward-pointing black cones on top.",
+      "question": "Identify this cardinal mark and its associated light sequence.",
+      "imageDescription": "A North Cardinal pillar buoy with two black cones pointing upwards as the topmark. Black band above yellow band.",
+      "options": [
+        "East Cardinal Mark; Q(3) 10s",
+        "South Cardinal Mark; Q(6)+LFl 15s",
+        "North Cardinal Mark; Q or VQ continuous flash",
+        "West Cardinal Mark; Q(9) 15s"
+      ],
+      "id": "rds-im-0133"
+    },
+    {
+      "type": "image_question",
+      "correctAnswer": 0,
+      "explanation": "A yacht under power but with sails up must display an inverted black cone (point down) to indicate it is technically a power-driven vessel.",
+      "imageDescription": "A black cone day shape, point down, displayed in the rigging of a sailing vessel.",
+      "options": [
+        "A vessel under sail also being propelled by machinery",
+        "A vessel at anchor",
+        "A vessel restricted in her ability to manoeuvre",
+        "A vessel engaged in fishing"
+      ],
+      "imageAlt": "A dark cone shape hanging from the rigging of a sailing yacht, with the point of the cone facing downwards.",
+      "question": "What does this day shape indicate when displayed by a sailing vessel?",
+      "id": "rds-im-0134"
+    },
+    {
+      "explanation": "The white 'isophase' light means the duration of light and darkness are equal within the 4-second cycle.",
+      "correctAnswer": 3,
+      "type": "image_question",
+      "imageDescription": "Nautical chart text abbreviation 'Iso.W.4s' indicating a light character.",
+      "options": [
+        "A white light flashing once every 4 seconds",
+        "A white light flashing four times every 10 seconds",
+        "A white light that is on for 3 seconds and off for 1 second",
+        "A white light with equal periods of light and darkness every 4 seconds"
+      ],
+      "imageAlt": "A light character description on a white background: Iso.W.4s.",
+      "question": "On a nautical chart, what does the light description 'Iso.W.4s' mean?",
+      "id": "rds-im-0135"
+    },
+    {
+      "type": "image_question",
+      "correctAnswer": 1,
+      "explanation": "A 'Not Under Command' vessel (NUC) displays two all-round red lights in a vertical line when making way through the water.",
+      "imageAlt": "A vertical arrangement of two red lights on a black background.",
+      "question": "What does this light configuration indicate at night?",
+      "imageDescription": "Two vertical red lights, one above the other, as seen at night on a vessel.",
+      "options": [
+        "A vessel aground",
+        "A vessel Not Under Command",
+        "A vessel constrained by her draught",
+        "A pilot boat on duty"
+      ],
+      "id": "rds-im-0136"
+    },
+    {
+      "explanation": "The blue and white 'Alpha' flag indicates a vessel has a diver down and must be given a wide berth at slow speed.",
+      "type": "image_question",
+      "correctAnswer": 0,
+      "imageAlt": "A rectangular flag with a 'swallow-tail' cutout, the left half is white and the right half is blue.",
+      "question": "What does this flag indicate when flown by a vessel?",
+      "imageDescription": "International Code Flag Alpha. Blue and white swallow-tail flag.",
+      "options": [
+        "I have a diver down; keep well clear at slow speed",
+        "I am taking in or discharging explosives",
+        "I am dragging my anchor",
+        "My vessel is healthy and I request free pratique"
+      ],
+      "id": "rds-im-0137"
+    },
+    {
+      "imageDescription": "A West Cardinal buoy showing the 'waist' topmark (cones point to point) and the yellow-in-the-middle colour scheme.",
+      "options": [
+        "North Cardinal Mark",
+        "South Cardinal Mark",
+        "West Cardinal Mark",
+        "East Cardinal Mark"
+      ],
+      "imageAlt": "A pillar buoy with two black cones pointing towards each other. The buoy has a yellow horizontal band in the middle and black bands at the top and bottom.",
+      "question": "Identify this cardinal buoy which indicates safe water is to its West.",
+      "explanation": "A West Cardinal mark has two cones pointing towards each other (waist to waist) and its yellow band is in the middle of two black bands.",
+      "type": "image_question",
+      "correctAnswer": 2,
+      "id": "rds-im-0138"
+    },
+    {
+      "imageDescription": "Night-time light configuration: three vertical all-round red lights.",
+      "options": [
+        "A vessel aground",
+        "A vessel engaged in minesweeping",
+        "A vessel restricted in her ability to manoeuvre",
+        "A vessel constrained by her draught"
+      ],
+      "imageAlt": "Three red lights arranged in a vertical line on a black background.",
+      "question": "What is the status of a vessel displaying these three vertical red lights at night?",
+      "type": "image_question",
+      "correctAnswer": 3,
+      "explanation": "Three red lights in a vertical line indicate a vessel 'Constrained by her Draught', meaning she cannot deviate from her course due to depth.",
+      "id": "rds-im-0139"
+    },
+    {
+      "imageDescription": "Day shapes: Ball-Diamond-Ball displayed vertically.",
+      "options": [
+        "A vessel restricted in her ability to manoeuvre",
+        "A vessel aground",
+        "A vessel engaged in fishing",
+        "A vessel at anchor"
+      ],
+      "imageAlt": "Three black day shapes in a vertical line: a sphere at the top, a diamond in the middle, and a sphere at the bottom.",
+      "question": "What does this combination of day shapes signify?",
+      "correctAnswer": 0,
+      "type": "image_question",
+      "explanation": "A vessel 'Restricted in her Ability to Manoeuvre' (RAM) displays a ball-diamond-ball configuration. A vessel aground shows three balls.",
+      "id": "rds-im-0140"
+    },
+    {
+      "type": "image_question",
+      "correctAnswer": 2,
+      "explanation": "In IALA Region A (UK/Europe), a Port Hand buoy is red, can-shaped, and has an even number. Prefixes like 'No 2' are common.",
+      "imageDescription": "A red Port Hand lateral buoy, cylindrical shape, with the white number 2.",
+      "options": [
+        "Starboard Hand Mark; leave to starboard when entering harbour",
+        "Special Mark; indicates a race buoy or outfall",
+        "Port Hand Mark; leave to port when entering harbour",
+        "Safe Water Mark; indicates the start of a channel"
+      ],
+      "imageAlt": "A red cylindrical (can) buoy with the number '2' painted in white on the side.",
+      "question": "Identify this buoy and the correct action when entering a harbour in the UK.",
+      "id": "rds-im-0141"
+    },
+    {
+      "type": "image_question",
+      "correctAnswer": 1,
+      "explanation": "The 'Wk' abbreviation on a chart indicates a wreck. The bracketed depth tells you the least depth of water over it.",
+      "imageAlt": "A chart symbol showing the letters 'Wk' with a small number '(4.2)' written beside it.",
+      "question": "What does this chart symbol indicate?",
+      "imageDescription": "Nautical chart symbol for a wreck with a Drying height or depth of 4.2 metres.",
+      "options": [
+        "Water depth at low tide is 4.2 metres",
+        "A wreck with a least depth of 4.2 metres over it",
+        "A walking track 4.2km long on the coast",
+        "A rocky patch with a depth of 4.2 metres"
+      ],
+      "id": "rds-im-0142"
+    },
+    {
+      "type": "image_question",
+      "correctAnswer": 3,
+      "explanation": "A vessel aground at night must show the two all-round red lights (NUC) plus her anchor lights. In daytime, she shows three black balls.",
+      "imageAlt": "Three black spheres (balls) arranged in a vertical line.",
+      "question": "What is the status of a vessel displaying these three day shapes?",
+      "imageDescription": "Day shapes: Three black balls displayed in a vertical line.",
+      "options": [
+        "A vessel at anchor",
+        "A vessel Not Under Command",
+        "A vessel restricted in her ability to manoeuvre",
+        "A vessel aground"
+      ],
+      "id": "rds-im-0143"
+    },
+    {
+      "imageAlt": "A yellow and black buoy with two downward-pointing triangles as a topmark.",
+      "imageDescription": "A South Cardinal buoy: top half yellow, bottom half black. The topmark consists of two black cones, both pointing downwards.",
+      "explanation": "A South Cardinal mark features two downward-pointing triangles and a yellow over black colour scheme.",
+      "question": "Identify this cardinal mark and the safe side on which to pass it.",
+      "type": "image_question",
+      "options": [
+        "East Cardinal - pass to the East",
+        "North Cardinal - pass to the North",
+        "South Cardinal - pass to the South",
+        "West Cardinal - pass to the West"
+      ],
+      "correctAnswer": 2,
+      "id": "rds-im-0144"
+    },
+    {
+      "correctAnswer": 0,
+      "options": [
+        "A vessel constrained by her draught",
+        "A vessel restricted in her ability to manoeuvre",
+        "A vessel engaged in underwater operations",
+        "A vessel aground"
+      ],
+      "type": "image_question",
+      "imageDescription": "A power-driven vessel seen from the side, flying a single black vertical cylinder from its mast.",
+      "explanation": "A vessel displaying a black cylinder day shape is constrained by her draught, indicating she can only navigate within a narrow channel.",
+      "question": "What is the status of a vessel displaying this black cylinder day shape?",
+      "imageAlt": "A vessel displaying a single black cylinder day shape on its mast.",
+      "id": "rds-im-0145"
+    },
+    {
+      "imageAlt": "A vessel displaying a black diamond day shape.",
+      "question": "What does this day shape indicate on a vessel and its tow?",
+      "explanation": "The single diamond shape indicates a vessel towing where the length of the tow exceeds 200 metres.",
+      "imageDescription": "A tug boat pulling a barge, with a black diamond shape displayed on the mast of the tug where it is most clearly seen.",
+      "options": [
+        "Vessel at anchor",
+        "Vessel engaged in fishing",
+        "Vessel restricted in her ability to manoeuvre",
+        "Vessel towing with a tow exceeding 200m"
+      ],
+      "type": "image_question",
+      "correctAnswer": 3,
+      "id": "rds-im-0146"
+    },
+    {
+      "correctAnswer": 1,
+      "type": "image_question",
+      "options": [
+        "Flashing White every 5 seconds",
+        "White light flashing in groups of two",
+        "Quick flashing white light",
+        "Long flashing white light every 10 seconds"
+      ],
+      "explanation": "Group Flashing 2 (Gp Fl(2)) is the standard light characteristic for an Isolated Danger Mark.",
+      "imageDescription": "An isolated danger mark buoy, coloured black with one or more horizontal red bands. The topmark is two black spheres.",
+      "question": "What is the typical white light sequence for this Isolated Danger Mark?",
+      "imageAlt": "A black and red buoy with two black spheres on top.",
+      "id": "rds-im-0147"
+    },
+    {
+      "correctAnswer": 2,
+      "options": [
+        "I am taking in explosives",
+        "I require a pilot house",
+        "I have a diver down; keep well clear at slow speed",
+        "My vessel is stopped and making no way through the water"
+      ],
+      "type": "image_question",
+      "explanation": "The Alpha flag (white and blue) indicates a vessel has a diver down and must be given a wide berth at slow speed.",
+      "imageDescription": "The International Code Flag 'Alpha', which is vertically split with white on the hoist side and blue on the fly side, and is swallow-tailed.",
+      "question": "What is the meaning of this International Code Flag?",
+      "imageAlt": "A blue and white swallow-tailed flag.",
+      "id": "rds-im-0148"
+    },
+    {
+      "imageAlt": "Three vertical red lights displayed on a mast.",
+      "explanation": "Three red lights in a vertical line indicate a vessel 'constrained by her draught' under COLREGs.",
+      "imageDescription": "A night view of a vessel's mast showing three all-round red lights in a vertical line. No other lights are shown for the purpose of this status.",
+      "question": "What does this vertical light configuration indicate at night?",
+      "options": [
+        "A vessel constrained by her draught",
+        "A vessel aground",
+        "A vessel not under command",
+        "A pilot vessel on duty"
+      ],
+      "type": "image_question",
+      "correctAnswer": 0,
+      "id": "rds-im-0149"
+    },
+    {
+      "correctAnswer": 1,
+      "type": "image_question",
+      "options": [
+        "A lighthouse with a radio beacon",
+        "A VHF calling-in point for Traffic Separation/VTS",
+        "A rocky outcrop submerged at low tide",
+        "An area restricted to recreational craft"
+      ],
+      "question": "What does this symbol on a nautical chart indicate?",
+      "explanation": "The chart symbol of a magenta circle with 'R' indicates a radio or VHF calling-in point for Vessel Traffic Services.",
+      "imageDescription": "A standard UKHO nautical chart symbol showing a magenta circle with a small arrow pointing in a specific direction and the letter 'R' next to it.",
+      "imageAlt": "A chart symbol of a magenta circle with an arrow and the letter R.",
+      "id": "rds-im-0150"
+    },
+    {
+      "question": "What does the chart abbreviation 'Co S' indicate about the seabed?",
+      "explanation": "The 'Co' abbreviation stands for Coarse, and 'S' stands for Sand, describing the seabed composition.",
+      "imageDescription": "A small section of a nautical chart showing depth soundings and the abbreviation 'Co S' written in lowercase/uppercase style near a sounding of 12 metres.",
+      "imageAlt": "The text 'Co S' on a nautical chart.",
+      "correctAnswer": 3,
+      "type": "image_question",
+      "options": [
+        "Cobbles and Shells",
+        "Coral and Silt",
+        "Cold Surface waters",
+        "Coarse Sand"
+      ],
+      "id": "rds-im-0151"
+    },
+    {
+      "correctAnswer": 0,
+      "options": [
+        "Port Hand Mark - leave to port when entering a harbour",
+        "Starboard Hand Mark - leave to starboard when entering a harbour",
+        "Preferred Channel Port hand mark",
+        "Special Mark - stay clear"
+      ],
+      "type": "image_question",
+      "question": "Identify this buoy and the rule for passing it when entering a harbour (IALA Region A).",
+      "explanation": "Port hand lateral marks in IALA Region A (including the UK) are red and square (can) shaped.",
+      "imageDescription": "A red port hand lateral mark buoy with a flat-topped 'can' shape. It is situated at the entrance to a channel.",
+      "imageAlt": "A red buoy with a flat, square top.",
+      "id": "rds-im-0152"
+    },
+    {
+      "imageAlt": "Two black spheres displayed vertically on a vessel.",
+      "question": "What is the status of a vessel displaying these two black spheres?",
+      "imageDescription": "A vessel at sea displaying two black spheres in a vertical line from its masthead.",
+      "explanation": "A vessel displaying two black balls in a vertical line is 'not under command', meaning she cannot manoeuvre as required by the rules.",
+      "options": [
+        "A vessel at anchor",
+        "A vessel aground",
+        "A vessel not under command",
+        "A vessel engaged in fishing"
+      ],
+      "type": "image_question",
+      "correctAnswer": 2,
+      "id": "rds-im-0153"
+    },
+    {
+      "imageAlt": "A chart symbol showing a motorboat inside a circle with a diagonal red line.",
+      "imageDescription": "A nautical chart symbol featuring a silhouette of a powerboat inside a magenta or red circle with a diagonal line through it.",
+      "explanation": "The symbol of a boat with a cross inside a circle indicates a prohibited area for the type of craft shown.",
+      "question": "What does this chart symbol indicate to a mariner?",
+      "options": [
+        "Recommended track for powerboats",
+        "Power-driven vessels prohibited",
+        "Anchorage for small craft only",
+        "Water-skiing area"
+      ],
+      "type": "image_question",
+      "correctAnswer": 1,
+      "id": "rds-im-0154"
+    },
+    {
+      "explanation": "A West Cardinal mark has a 'yellow-black-yellow' horizontal band pattern and its cones point 'point-to-point'.",
+      "imageDescription": "A West Cardinal mark buoy showing a black horizontal band on a yellow background (yellow-black-yellow) with a topmark of two black cones pointing towards each other.",
+      "question": "Identify this cardinal mark based on its colour pattern and topmark.",
+      "imageAlt": "A yellow buoy with a black horizontal band in the middle.",
+      "correctAnswer": 3,
+      "options": [
+        "North Cardinal",
+        "South Cardinal",
+        "East Cardinal",
+        "West Cardinal"
+      ],
+      "type": "image_question",
+      "id": "rds-im-0155"
+    },
+    {
+      "explanation": "A North Cardinal mark has two cones pointing up and a black-over-yellow colour scheme. Safe water lies to the North.",
+      "correctAnswer": 1,
+      "imageAlt": "A black and yellow buoy with two triangles pointing upwards.",
+      "type": "image_question",
+      "options": [
+        "South Cardinal - Pass to the South",
+        "North Cardinal - Pass to the North",
+        "East Cardinal - Pass to the East",
+        "West Cardinal - Pass to the West"
+      ],
+      "imageDescription": "A North Cardinal buoy with topmark cones pointing up, black band at the top and yellow at the bottom. The buoy is floating in choppy blue water.",
+      "question": "Identify this cardinal mark and the safe side on which to pass it.",
+      "id": "rds-im-0156"
+    },
+    {
+      "imageAlt": "Two vertical red lights on a mast.",
+      "explanation": "A vessel Not Under Command (NUC) shows two red lights in a vertical line when under way at night.",
+      "correctAnswer": 2,
+      "question": "What does this light configuration indicate about a vessel's status at night?",
+      "imageDescription": "A night scene showing two red all-round lights in a vertical line on a vessel's mast. No other lights are visible.",
+      "type": "image_question",
+      "options": [
+        "Vessel constrained by draught",
+        "Vessel aground",
+        "Vessel Not Under Command",
+        "Vessel restricted in her ability to manoeuvre"
+      ],
+      "id": "rds-im-0157"
+    },
+    {
+      "correctAnswer": 0,
+      "explanation": "A diamond shape indicates a vessel engaged in towing where the length of the tow exceeds 200 metres.",
+      "imageAlt": "A black diamond day shape.",
+      "options": [
+        "The length of the tow exceeds 200m",
+        "The vessel is restricted in its ability to manoeuvre",
+        "The vessel is at anchor",
+        "The vessel is fishing with gear extending 150m"
+      ],
+      "type": "image_question",
+      "imageDescription": "A large black diamond day shape hoisted on the mast of a tug boat. The tug is pulling a long barge.",
+      "question": "What does this day shape indicate on a vessel engaged in towing?",
+      "id": "rds-im-0158"
+    },
+    {
+      "question": "Identify this buoy and the correct action when entering a harbour in the UK.",
+      "type": "image_question",
+      "options": [
+        "Port hand mark - Leave to port when entering a harbour",
+        "Safe water mark - Pass on either side",
+        "Preferred channel mark - Follow the main channel",
+        "Starboard hand mark - Leave to starboard when entering a harbour"
+      ],
+      "imageDescription": "A green conical buoy in a blue sea with a small ‘G’ symbol on the side. It is daylight.",
+      "explanation": "A green conical buoy marks the starboard side of a channel when entering a harbour (returning from sea) in IALA Region A.",
+      "correctAnswer": 3,
+      "imageAlt": "A green cone-shaped buoy.",
+      "id": "rds-im-0159"
+    },
+    {
+      "imageAlt": "A chart symbol showing 'Wk' surrounded by a dotted circle.",
+      "correctAnswer": 1,
+      "explanation": "The 'Wk' abbreviation stands for Wreck, and the surrounding dots indicate it is \"dangerous\" as it is covered at chart datum.",
+      "question": "What does this specific nautical chart symbol indicate?",
+      "imageDescription": "Close up of a nautical chart showing the symbol 'Wk' enclosed within a circle of small black dots. Water depth around it is 15 metres.",
+      "options": [
+        "Sunken rock not dangerous to surface navigation",
+        "Dangerous wreck with a depth of water unknown",
+        "Wreck over which the exact depth is known",
+        "A fish haven or artificial reef"
+      ],
+      "type": "image_question",
+      "id": "rds-im-0160"
+    },
+    {
+      "imageDescription": "A vessel visible during the day displaying three black balls in a vertical line from its mast. It appears to be stationary near a sandbank.",
+      "type": "image_question",
+      "options": [
+        "Vessel constrained by draught",
+        "Vessel restricted in its ability to manoeuvre",
+        "Vessel aground",
+        "Vessel engaged in underwater operations"
+      ],
+      "question": "What is the status of a vessel displaying these three day shapes?",
+      "imageAlt": "Three black balls in a vertical line.",
+      "explanation": "A vessel aground displays three black spheres in a vertical line during the day.",
+      "correctAnswer": 2,
+      "id": "rds-im-0161"
+    },
+    {
+      "question": "What is the meaning of this International Code Flag?",
+      "imageDescription": "A rectangular flag flying from a mast. The flag consists of five horizontal stripes in the order: blue, white, red, white, blue.",
+      "options": [
+        "International Code Flag 'C' - Affirmative",
+        "International Code Flag 'N' - No",
+        "International Code Flag 'T' - Keep clear",
+        "International Code Flag 'D' - Manoeuvring with difficulty"
+      ],
+      "type": "image_question",
+      "imageAlt": "A flag with blue, white, red, white, blue horizontal stripes.",
+      "correctAnswer": 0,
+      "explanation": "The 'C' flag (Charlie) consists of blue, white, and red horizontal stripes and means 'Yes' or 'Affirmative'.",
+      "id": "rds-im-0162"
+    },
+    {
+      "imageAlt": "A black buoy with a red horizontal band and two black balls on top.",
+      "correctAnswer": 2,
+      "explanation": "An Isolated Danger Mark has two black spheres as a topmark and a black-red-black horizontal colour scheme.",
+      "question": "Identify this buoy which marks a hazard with navigable water all around it.",
+      "imageDescription": "A pillar-style buoy, black with one broad red horizontal band in the middle. It is topped with two black spheres one above the other.",
+      "options": [
+        "Port hand mark",
+        "South Cardinal mark",
+        "Isolated Danger mark",
+        "Special mark"
+      ],
+      "type": "image_question",
+      "id": "rds-im-0163"
+    },
+    {
+      "options": [
+        "The vessel is at anchor",
+        "A sailing vessel also under engine power",
+        "A vessel restricted in her ability to manoeuvre",
+        "A vessel engaged in fishing"
+      ],
+      "type": "image_question",
+      "imageDescription": "A yacht under sail but with a black cone (point down) hoisted in the forward part of the rigging.",
+      "question": "What does the display of this day shape indicate on a sailing yacht?",
+      "correctAnswer": 1,
+      "explanation": "A sailing vessel under way and also being propelled by machinery must display a black cone, point downwards.",
+      "imageAlt": "A black cone pointing downwards.",
+      "id": "rds-im-0164"
+    },
+    {
+      "correctAnswer": 3,
+      "explanation": "The 'Tr' symbol on a chart identifies a prominent Tower used as a landmark for navigation.",
+      "imageAlt": "A chart symbol showing a small circle with 'Tr' next to it.",
+      "question": "What does this symbol on a nautical chart indicate?",
+      "options": [
+        "Transit mark",
+        "Track or recommended route",
+        "Trigger point for reporting",
+        "Tower - a prominent landmark"
+      ],
+      "type": "image_question",
+      "imageDescription": "A snippet of a coastal chart showing a small circle on land with the text 'Tr' next to it. Nearby there are contour lines for a hill.",
+      "id": "rds-im-0165"
+    },
+    {
+      "options": [
+        "Vessel restricted in her ability to manoeuvre",
+        "Vessel Not Under Command",
+        "Vessel engaged in mine clearance",
+        "Vessel constrained by draught"
+      ],
+      "type": "image_question",
+      "imageDescription": "A large commercial vessel displaying three day shapes in a vertical line: a ball at the top, a diamond in the middle, and a ball at the bottom.",
+      "question": "What is the status of a vessel displaying these three day shapes?",
+      "correctAnswer": 0,
+      "explanation": "The Ball-Diamond-Ball configuration identifies a vessel restricted in her ability to manoeuvre (RAM).",
+      "imageAlt": "A black ball, a black diamond, and a black ball in a vertical line.",
+      "id": "rds-im-0166"
+    },
+    {
+      "question": "Identify this cardinal mark based on its colour pattern and topmark.",
+      "options": [
+        "North Cardinal - Pass to the North",
+        "East Cardinal - Pass to the East",
+        "West Cardinal - Pass to the West",
+        "South Cardinal - Pass to the South"
+      ],
+      "type": "image_question",
+      "imageDescription": "A West Cardinal buoy with topmark cones pointing 'point to point'. The buoy is painted yellow with a single broad black horizontal band across the middle.",
+      "correctAnswer": 2,
+      "explanation": "A West Cardinal mark has two cones pointing towards each other ('waist') and a yellow-black-yellow colour scheme.",
+      "imageAlt": "A yellow buoy with a black band in the middle and two cones pointing at each other.",
+      "id": "rds-im-0167"
+    },
+    {
+      "correctAnswer": 1,
+      "type": "image_question",
+      "question": "Identify this cardinal mark and the correct side on which to pass it.",
+      "explanation": "A North Cardinal Mark's topmark consists of two cones pointing up, and its light flashes continuously. Pass to the North of this mark.",
+      "imageAlt": "A yellow and black buoy with two upward-pointing cones.",
+      "options": [
+        "South Cardinal Mark - Pass to the South",
+        "North Cardinal Mark - Pass to the North",
+        "East Cardinal Mark - Pass to the East",
+        "West Cardinal Mark - Pass to the West"
+      ],
+      "imageDescription": "A North Cardinal Mark buoy with a black band above a yellow band. The topmark consists of two black cones, both pointing upwards.",
+      "id": "rds-im-0168"
+    },
+    {
+      "type": "image_question",
+      "question": "What does this day shape indicate when displayed by a vessel?",
+      "correctAnswer": 2,
+      "imageAlt": "A black diamond shape on a vessel.",
+      "options": [
+        "Vessel at anchor",
+        "Vessel not under command",
+        "Vessel towing where the tow exceeds 200m",
+        "Vessel constrained by her draught"
+      ],
+      "imageDescription": "A black diamond day shape hoisted on a vessel engaged in towing.",
+      "explanation": "A single black diamond shape indicates a vessel engaged in a tow where the length of the tow exceeds 200 metres.",
+      "id": "rds-im-0169"
+    },
+    {
+      "correctAnswer": 0,
+      "question": "What does this chart symbol indicate to the mariner?",
+      "type": "image_question",
+      "explanation": "The standard chart symbol for a wreck with its depth known (here 4.5m) and which is considered dangerous to surface navigation.",
+      "options": [
+        "Dangerous wreck with a known depth of 4.5m",
+        "Safe water mark at 4.5m depth",
+        "Underwater rock with 4.5m of clearance at Chart Datum",
+        "Submerged cable area"
+      ],
+      "imageDescription": "A nautical chart symbol showing a wreck surrounded by a dotted 'danger' line with the number '4.5' written inside the symbol.",
+      "imageAlt": "A chart symbol showing an enclosed wreck with a depth figure.",
+      "id": "rds-im-0170"
+    },
+    {
+      "question": "Identify this buoy, often used to mark spoil grounds or racing marks.",
+      "type": "image_question",
+      "correctAnswer": 3,
+      "imageDescription": "A yellow pillar buoy with a yellow 'X' as a topmark. Used in IALA Region A.",
+      "options": [
+        "Safe Water Mark",
+        "Emergency Wreck Buoy",
+        "Isolated Danger Mark",
+        "Special Mark"
+      ],
+      "imageAlt": "A yellow buoy with an X topmark.",
+      "explanation": "A yellow buoy with an 'X' topmark indicates a Special Mark, used to show specific features such as race buoys or outfalls.",
+      "id": "rds-im-0171"
+    },
+    {
+      "explanation": "A red cylinder is the day shape for a vessel constrained by her draught, indicating she cannot easily deviate from her course.",
+      "imageAlt": "A vertical red cylinder on a ship's mast.",
+      "options": [
+        "Vessel restricted in her ability to manoeuvre",
+        "Vessel constrained by her draught",
+        "Vessel engaged in fishing",
+        "Vessel aground"
+      ],
+      "imageDescription": "A black day shape in the form of a cylinder (often shown as red in theory diagrams for 'Constrained by Draught' identification) on a large vessel.",
+      "correctAnswer": 1,
+      "type": "image_question",
+      "question": "What is the status of a vessel displaying this day shape?",
+      "id": "rds-im-0172"
+    },
+    {
+      "question": "When entering a harbour in the UK, what the light/colour of this chart symbol represent?",
+      "type": "image_question",
+      "correctAnswer": 0,
+      "imageDescription": "A nautical chart symbol of a green conical buoy, labelled 'G'.",
+      "options": [
+        "Starboard hand lateral mark",
+        "Port hand lateral mark",
+        "Isolated danger mark",
+        "Safe water mark"
+      ],
+      "imageAlt": "A green conical symbol on a nautical chart.",
+      "explanation": "A green triangle (cone) on a chart represents a starboard hand lateral mark when entering a harbour in IALA Region A (UK).",
+      "id": "rds-im-0173"
+    },
+    {
+      "imageAlt": "Three black balls in a vertical line on a ship.",
+      "options": [
+        "Vessel at anchor",
+        "Vessel constrained by her draught",
+        "Vessel aground",
+        "Vessel engaged in minesweeping"
+      ],
+      "imageDescription": "Three black spheres (balls) displayed in a vertical line on a vessel.",
+      "explanation": "A vessel aground displays three black balls in a vertical line during the day and red-over-red lights at night.",
+      "type": "image_question",
+      "question": "What is the status of a vessel displaying these three day shapes in a vertical line?",
+      "correctAnswer": 2,
+      "id": "rds-im-0174"
+    },
+    {
+      "explanation": "A green buoy with a single horizontal red band indicates the 'preferred channel to port' at a channel bifurcation.",
+      "imageAlt": "A green buoy with a red horizontal band.",
+      "imageDescription": "A green conical buoy with one horizontal red band in the middle. IALA Region A.",
+      "options": [
+        "Port hand lateral mark",
+        "Starboard hand lateral mark",
+        "Preferred channel to starboard",
+        "Preferred channel to port"
+      ],
+      "correctAnswer": 3,
+      "type": "image_question",
+      "question": "In IALA Region A, what does this specific buoy indicate at a channel bifurcation?",
+      "id": "rds-im-0175"
+    },
+    {
+      "imageDescription": "The International Code Flag 'Alpha', which is vertically split with white on the hoist side and blue on the fly side, with a swallow-tail.",
+      "options": [
+        "I am dragging my anchor",
+        "I have a diver down; keep well clear at slow speed",
+        "I require a pilot",
+        "I am discharging dangerous goods"
+      ],
+      "imageAlt": "A blue and white swallow-tailed flag.",
+      "explanation": "Flag 'A' (Alpha) means 'I have a diver down; keep well clear at slow speed.'",
+      "question": "What is the meaning of this International Code Flag?",
+      "type": "image_question",
+      "correctAnswer": 1,
+      "id": "rds-im-0176"
+    },
+    {
+      "type": "image_question",
+      "question": "What type of vessel is permitted to use this combined 'tri-colour' light at the masthead?",
+      "correctAnswer": 0,
+      "imageAlt": "A single light showing red, green, and white sectors.",
+      "imageDescription": "An illustration of a tri-colour masthead light showing red (port), green (starboard), and white (stern) sectors.",
+      "options": [
+        "Sailing vessel under 20m under sail alone",
+        "Power driven vessel under 7m",
+        "Vessel engaged in trawling",
+        "Pilot vessel on duty"
+      ],
+      "explanation": "The 'Tr colour' light (Red/Green/White) is only permitted on sailing vessels under 20m in length while under sail.",
+      "id": "rds-im-0177"
+    },
+    {
+      "type": "image_question",
+      "question": "What is the light sequence for this cardinal mark?",
+      "correctAnswer": 2,
+      "imageAlt": "A yellow and black buoy with cones pointing at each other.",
+      "imageDescription": "A West Cardinal Mark showing a yellow horizontal band in the middle of a black buoy. The topmarks are two cones with points together (wasp waist).",
+      "options": [
+        "3 flashes every 10 seconds",
+        "6 flashes + 1 long flash every 15 seconds",
+        "9 flashes every 15 seconds",
+        "Continuous flashing"
+      ],
+      "explanation": "A West Cardinal Mark has a yellow band between two black bands, and 'point-to-point' cones. Its light flashes in groups of 9.",
+      "id": "rds-im-0178"
+    },
+    {
+      "type": "image_question",
+      "question": "What does this common chart abbreviation stand for?",
+      "correctAnswer": 3,
+      "imageAlt": "The letters Wk on a nautical chart.",
+      "imageDescription": "The chart abbreviation 'Wk' printed next to a depth sounding or symbol.",
+      "options": [
+        "Waterway",
+        "Weak stream",
+        "Working area",
+        "Wreck"
+      ],
+      "explanation": "The abbreviation 'Wk' on a chart stands for Wreck, indicating a shipwreck on the seabed.",
+      "id": "rds-im-0179"
+    },
+    {
+      "question": "What does the display of this black diamond day shape indicate?",
+      "type": "image_question",
+      "options": [
+        "Vessel at anchor",
+        "Vessel restricted in ability to manoeuvre",
+        "Towing vessel where tow exceeds 200m",
+        "Vessel engaged in fishing"
+      ],
+      "imageDescription": "A large black diamond-shaped day signal hanging from the mast or rigging of a tug boat.",
+      "explanation": "A diamond shape on a vessel indicates it is towing and the length of the tow exceeds 200 metres.",
+      "imageAlt": "A black diamond dayshape displayed on a vessel.",
+      "correctAnswer": 2,
+      "id": "rds-im-0180"
+    },
+    {
+      "correctAnswer": 0,
+      "explanation": "A yellow diamond with a small 'm' indicates a measured distance, used for calibrating boat speed instruments.",
+      "imageAlt": "Chart symbol showing a yellow diamond with a small letter 'm'.",
+      "imageDescription": "A snippet of a nautical chart showing a yellow diamond symbol with a small letter 'm' underneath it.",
+      "options": [
+        "Measured distance for speed trials",
+        "Military practice area",
+        "Magnetic anomaly",
+        "Muddy bottom type"
+      ],
+      "type": "image_question",
+      "question": "What does this chart symbol indicate to the mariner?",
+      "id": "rds-im-0181"
+    },
+    {
+      "question": "Identify this cardinal mark based on its topmark and colour pattern.",
+      "type": "image_question",
+      "options": [
+        "North Cardinal Mark",
+        "East Cardinal Mark",
+        "South Cardinal Mark",
+        "West Cardinal Mark"
+      ],
+      "imageDescription": "A pillar buoy with a black-yellow-black horizontal stripe pattern and a topmark consisting of two cones with their bases together.",
+      "imageAlt": "An East Cardinal buoy with two cones pointing away from each other.",
+      "explanation": "An East Cardinal mark has two cones pointing away from each other (bases together) and a black-yellow-black horizontal colour scheme.",
+      "correctAnswer": 1,
+      "id": "rds-im-0182"
+    },
+    {
+      "imageAlt": "A green conical buoy.",
+      "explanation": "A green triangle (conical) buoy in IALA Region A marks the starboard side of a channel when travelling in the direction of buoyage.",
+      "correctAnswer": 0,
+      "type": "image_question",
+      "imageDescription": "A bright green conical-shaped buoy floating in the water.",
+      "options": [
+        "Starboard hand mark",
+        "Port hand mark",
+        "Isolated danger mark",
+        "Special mark"
+      ],
+      "question": "When entering a harbour in the UK, what is the meaning of this buoy?",
+      "id": "rds-im-0183"
+    },
+    {
+      "type": "image_question",
+      "options": [
+        "Vessel at anchor",
+        "Vessel not under command",
+        "Pilot vessel on duty",
+        "Vessel constrained by her draught"
+      ],
+      "imageDescription": "A vessel's mast showing three red all-round lights in a vertical line against a night sky.",
+      "question": "At night, what does the display of these three vertical red lights indicate?",
+      "explanation": "Three red lights in a vertical line indicate a vessel 'constrained by her draught', unable to deviate from her course.",
+      "imageAlt": "Three vertical red lights.",
+      "correctAnswer": 3,
+      "id": "rds-im-0184"
+    },
+    {
+      "imageAlt": "International Code Flag Alpha (blue and white).",
+      "explanation": "A blue and white flag (Flag Alpha) means 'I have a diver down; keep well clear at slow speed'.",
+      "correctAnswer": 2,
+      "question": "What is the meaning of this International Code Flag?",
+      "type": "image_question",
+      "imageDescription": "A rectangular flag, swallow-tailed, with the half nearest the mast white and the outer half blue.",
+      "options": [
+        "I am dragging my anchor",
+        "I require a pilot",
+        "I have a diver down; keep well clear",
+        "I am discharging dangerous cargo"
+      ],
+      "id": "rds-im-0185"
+    },
+    {
+      "question": "What does this specific nautical chart symbol represent?",
+      "type": "image_question",
+      "options": [
+        "Wreck showing above lowest astronomical tide",
+        "Dangerous wreck with depth unknown",
+        "Wreck over which the depth is known",
+        "Safe water mark near a wreck"
+      ],
+      "imageDescription": "A chart symbol showing the letters 'Wk' surrounded by a scalloped or dotted circle.",
+      "imageAlt": "Chart symbol for a dangerous wreck.",
+      "explanation": "The symbol 'Wk' with a circle of dots indicates a wreck that is always covered by water but is considered dangerous to surface navigation.",
+      "correctAnswer": 1,
+      "id": "rds-im-0186"
+    },
+    {
+      "type": "image_question",
+      "options": [
+        "VQ(9) or Q(9) every 10 or 15 seconds",
+        "VQ(3) or Q(3) every 5 or 10 seconds",
+        "VQ(6) + long flash every 10 or 15 seconds conscientiously",
+        "Continuous very quick flashing light"
+      ],
+      "imageDescription": "A West Cardinal pillar buoy with yellow-black-yellow stripes and two cones pointing towards each other.",
+      "question": "What is the light sequence for this specific cardinal mark?",
+      "explanation": "A West Cardinal mark flashes in groups of 9 to correspond with the 9 o'clock position on a clock face.",
+      "imageAlt": "A West Cardinal mark with cones pointing point-to-point.",
+      "correctAnswer": 0,
+      "id": "rds-im-0187"
+    },
+    {
+      "type": "image_question",
+      "imageDescription": "A vessel at sea displaying a large black cylinder shape in its rigging.",
+      "options": [
+        "Vessel restricted in ability to manoeuvre",
+        "Vessel not under command",
+        "Vessel at anchor",
+        "Vessel constrained by her draught"
+      ],
+      "question": "What is the status of a vessel displaying this day shape?",
+      "explanation": "A cylinder day shape is the daytime signal for a vessel constrained by her draught.",
+      "imageAlt": "A black cylinder day shape.",
+      "correctAnswer": 3,
+      "id": "rds-im-0188"
+    },
+    {
+      "type": "image_question",
+      "imageDescription": "A nautical chart extract showing a large magenta circle with an exclamation mark inside it, located at a junction of shipping lanes.",
+      "options": [
+        "Obstruction of unknown depth",
+        "Radio reporting point",
+        "Precautionary Area",
+        "Recommended anchorage"
+      ],
+      "question": "What does this magenta symbol on a nautical chart indicate?",
+      "imageAlt": "Magenta exclamation mark symbol on a chart.",
+      "explanation": "The magenta 'exclamation mark' symbol indicates a Precautionary Area where ships must navigate with particular caution, often within a TSS.",
+      "correctAnswer": 2,
+      "id": "rds-im-0189"
+    },
+    {
+      "correctAnswer": 1,
+      "explanation": "A white light showing 2 flashes plus 1 flash (2+1) is the standard light character for a Preferred Channel Mark.",
+      "imageAlt": "A green buoy with a red horizontal band.",
+      "question": "What would be the light sequence for this Preferred Channel Mark (Starboard) in IALA Region A?",
+      "imageDescription": "A green conical buoy with a single red horizontal band around its middle.",
+      "options": [
+        "Fl G 3s",
+        "Fl (2+1) G",
+        "Q G 10s",
+        "Iso G 4s"
+      ],
+      "type": "image_question",
+      "id": "rds-im-0190"
+    },
+    {
+      "imageAlt": "An inverted black cone (point down).",
+      "explanation": "A yacht under power with sails up must display an inverted cone to show it is technically a power-driven vessel.",
+      "correctAnswer": 0,
+      "question": "What does the display of this day shape indicate on a sailing yacht?",
+      "type": "image_question",
+      "options": [
+        "Vessel is under engine power as well as sail",
+        "Vessel is at anchor",
+        "Vessel is fishing with nets",
+        "Vessel is aground"
+      ],
+      "imageDescription": "A sailing yacht with its mainsail hoisted, also displaying a black cone pointing downwards in the forward rigging.",
+      "id": "rds-im-0191"
+    },
+    {
+      "imageAlt": "Black cylinder day shape on a large vessel.",
+      "options": [
+        "Vessel at anchor",
+        "Vessel restricted in her ability to manoeuvre",
+        "Vessel constrained by her draught",
+        "Vessel engaged in fishing"
+      ],
+      "imageDescription": "A professional diagram of a large commercial ship viewed from the side, displaying a single black cylinder day shape in the rigging.",
+      "explanation": "A cylinder day shape indicates a vessel constrained by her draught, unable to deviate from her course due to depth.",
+      "question": "What is the status of a vessel displaying this day shape?",
+      "correctAnswer": 2,
+      "type": "image_question",
+      "id": "rds-im-0192"
+    },
+    {
+      "explanation": "An East cardinal mark has two cones point-to-point and a light sequence of 3 flashes.",
+      "imageDescription": "An East Cardinal buoy painted black with a single yellow horizontal band in the middle. The topmarks are two black cones, bases together (pointing away from each other).",
+      "imageAlt": "An East Cardinal buoy with two cones pointing away from each other.",
+      "options": [
+        "Very Quick (3) or Quick (3) every 10 or 15 seconds",
+        "Very Quick (6) + Long Flash every 10 or 15 seconds",
+        "Continuous Very Quick or Quick flashing",
+        "Very Quick (9) or Quick (9) every 10 or 15 seconds"
+      ],
+      "type": "image_question",
+      "correctAnswer": 0,
+      "question": "What is the light sequence for this cardinal mark?",
+      "id": "rds-im-0193"
+    },
+    {
+      "question": "What is indicated by this vertical sequence of day shapes?",
+      "correctAnswer": 1,
+      "type": "image_question",
+      "options": [
+        "Vessel Not Under Command",
+        "Vessel Restricted in her Ability to Manoeuvre",
+        "Vessel Constrained by her Draught",
+        "Vessel Aground"
+      ],
+      "imageAlt": "Three day shapes: a ball, a diamond, and a ball in a vertical line.",
+      "explanation": "The single ball/diamond/ball sequence indicates a vessel restricted in her ability to manoeuvre, such as one engaged in diving or cable laying.",
+      "imageDescription": "A diagram showing the mast of a vessel with three black day shapes in a vertical line: a ball at the top, a diamond in the middle, and a ball at the bottom.",
+      "id": "rds-im-0194"
+    },
+    {
+      "type": "image_question",
+      "correctAnswer": 3,
+      "question": "Which side of this mark should you pass to stay in safe water?",
+      "explanation": "A South Cardinal mark has two cones pointing down and a light sequence of 6 flashes plus 1 long flash.",
+      "imageDescription": "A South Cardinal buoy, yellow on top and black on the bottom. The topmark consists of two black cones, both pointing downwards.",
+      "imageAlt": "A South Cardinal buoy with two cones pointing downwards.",
+      "options": [
+        "Pass to the North of this mark",
+        "Pass to the East of this mark",
+        "Pass to the West of this mark",
+        "Pass to the South of this mark"
+      ],
+      "id": "rds-im-0195"
+    },
+    {
+      "type": "image_question",
+      "correctAnswer": 1,
+      "question": "What does this chart symbol represent?",
+      "imageDescription": "A close-up of a nautical chart showing a magenta diamond symbol with the letter 'B' inside it, located in the middle of a sea channel.",
+      "explanation": "A yellow diamond on a chart indicates the position where tidal stream information is available in the 'Tidal Diamonds' table.",
+      "options": [
+        "A dangerous rock at low water",
+        "A tidal stream station (Tidal Diamond)",
+        "Recommended track for small vessels",
+        "Position of a light vessel"
+      ],
+      "imageAlt": "A magenta/yellow diamond with a letter inside on a nautical chart.",
+      "id": "rds-im-0196"
+    },
+    {
+      "imageDescription": "A red port-hand lateral buoy, can-shaped, with a flat top. The buoy is floating in a channel.",
+      "explanation": "In IALA Region A (UK), a port lateral mark is a red can, and the light flash sequence would be any rhythm other than 2+1.",
+      "imageAlt": "A red can-shaped buoy.",
+      "options": [
+        "Green light, any rhythm",
+        "Green light, Flashing (2+1)",
+        "Red light, any rhythm (except 2+1)",
+        "White light, Isophase"
+      ],
+      "type": "image_question",
+      "correctAnswer": 2,
+      "question": "When entering a harbour in the UK (IALA Region A), what is the colour and rhythm of the light usually found on this buoy?",
+      "id": "rds-im-0197"
+    },
+    {
+      "correctAnswer": 0,
+      "question": "What is the light characteristics of this mark?",
+      "type": "image_question",
+      "imageAlt": "A buoy with black and red horizontal bands and two black spheres.",
+      "options": [
+        "White light, Group Flashing (2)",
+        "White light, Group Flashing (3)",
+        "Red light, Morse Code 'A'",
+        "White light, Quick Flashing"
+      ],
+      "imageDescription": "An isolated danger mark buoy with horizontal black and red bands. The topmark is two black spheres, one above the other.",
+      "explanation": "An isolated danger mark (black/red/black) indicates a hazard with navigable water all around it. The light is White Group Flashing (2).",
+      "id": "rds-im-0198"
+    },
+    {
+      "question": "What is the meaning of this International Code Flag?",
+      "correctAnswer": 3,
+      "type": "image_question",
+      "options": [
+        "I am dragging my anchor",
+        "I require a pilot",
+        "Man overboard",
+        "I have a diver down; keep well clear at slow speed"
+      ],
+      "imageAlt": "A blue and white swallow-tailed flag.",
+      "imageDescription": "International Code Flag 'Alpha'. A swallow-tailed flag, vertically divided, with white on the hoist side and blue on the fly side.",
+      "explanation": "Flag Alpha (A) is a blue and white swallow-tail flag indicating 'I have a diver down; keep well clear at slow speed.'",
+      "id": "rds-im-0199"
+    },
+    {
+      "question": "At night, what does the display of these two vertical red lights indicate?",
+      "correctAnswer": 1,
+      "type": "image_question",
+      "options": [
+        "Vessel at anchor",
+        "Vessel Not Under Command",
+        "Vessel engaged in pilotage duty",
+        "Vessel aground"
+      ],
+      "imageAlt": "Two red lights in a vertical line on a ship's mast.",
+      "explanation": "Two vertical red lights at night indicate a vessel Not Under Command (NUC), unable to manoeuvre as required by the rules.",
+      "imageDescription": "A night-time view of a vessel's mast showing two all-round red lights in a vertical line. No other lights are visible.",
+      "id": "rds-im-0200"
+    },
+    {
+      "correctAnswer": 0,
+      "question": "What does this nautical chart symbol indicate?",
+      "type": "image_question",
+      "options": [
+        "A rock that is always underwater",
+        "A rock that dries at low water",
+        "A wreck that is visible at all states of the tide",
+        "A dangerous whirlpool"
+      ],
+      "imageAlt": "A chart symbol consisting of a cross with four dots in the corners.",
+      "explanation": "Dotted lines surrounding a 'plus' symbol indicate a rock that is always underwater (submerged) but is a hazard to navigation.",
+      "imageDescription": "A nautical chart symbol showing a small cross (plus sign) with a dot in each of the four quadrants created by the cross.",
+      "id": "rds-im-0201"
+    },
+    {
+      "type": "image_question",
+      "question": "What is the light sequence for this Safe Water Mark?",
+      "correctAnswer": 2,
+      "imageDescription": "A Safe Water Mark buoy, painted with vertical red and white stripes. It has a single red sphere as a topmark.",
+      "explanation": "A safe water mark (red/white vertical stripes) has a single red sphere as a topmark and can use an Isophase, Occulting, or Long Flash (every 10s) light sequence.",
+      "options": [
+        "Group Flashing (2) every 5 seconds",
+        "Quick Flashing every 1 second",
+        "Isophase, Occulting, or Long Flash every 10s",
+        "Fixed Red light"
+      ],
+      "imageAlt": "A buoy with vertical red and white stripes and a single red ball topmark.",
+      "id": "rds-im-0202"
+    },
+    {
+      "explanation": "A green triangular symbol on a chart represents a starboard lateral mark (conical buoy).",
+      "imageDescription": "A close-up of a UK nautical chart showing a small green triangle symbol with the abbreviation 'Fl.G.5s' next to it.",
+      "imageAlt": "A small green triangle on a nautical chart.",
+      "options": [
+        "A port hand buoy",
+        "A starboard hand buoy",
+        "A cardinal mark",
+        "An isolated danger mark"
+      ],
+      "type": "image_question",
+      "correctAnswer": 1,
+      "question": "What does this chart symbol indicate to the mariner?",
+      "id": "rds-im-0203"
+    },
+    {
+      "explanation": "A yacht motoring with sails up is considered a power-driven vessel and must display an inverted cone.",
+      "correctAnswer": 2,
+      "options": [
+        "Sailing yacht only",
+        "Vessel at anchor",
+        "Power-driven vessel (motorsailing)",
+        "Vessel not under command"
+      ],
+      "type": "image_question",
+      "question": "In daylight, what is the status of this vessel under the COLREGs?",
+      "imageDescription": "A sailing yacht with sails hoisted, also using its engine, displaying an inverted black cone in the forward part of the vessel where it can best be seen.",
+      "imageAlt": "A yacht under sail with an inverted black cone day shape on the forestay.",
+      "id": "rds-im-0204"
+    },
+    {
+      "correctAnswer": 0,
+      "options": [
+        "Pass to the West of this mark",
+        "Pass to the East of this mark",
+        "Pass to the North of this mark",
+        "Pass to the South of this mark"
+      ],
+      "explanation": "A West Cardinal mark has a black band in the middle with yellow above and below, and 'waisted' cones as topmarks.",
+      "imageAlt": "A West Cardinal buoy with black band in the middle and two cones point-to-point.",
+      "type": "image_question",
+      "question": "Which side of this buoy should you pass to remain in safe water?",
+      "imageDescription": "A pillar-shaped buoy with a black horizontal band in the middle and yellow bands above and below. The topmark consists of two black cones with their points together (waisted).",
+      "id": "rds-im-0205"
+    },
+    {
+      "imageDescription": "A nautical chart symbol featuring a small magenta circle with the letter 'C' printed inside it, often found near harbour entrances.",
+      "question": "What does this specific magenta symbol on a nautical chart represent?",
+      "type": "image_question",
+      "imageAlt": "A magenta circle on a chart with the letter 'C' inside it.",
+      "explanation": "The 'C' symbol on a chart indicates the presence of a compass rose showing magnetic variation.",
+      "options": [
+        "Coastguard station",
+        "Clearance height",
+        "Current direction",
+        "Compass station/observation point"
+      ],
+      "correctAnswer": 3,
+      "id": "rds-im-0206"
+    },
+    {
+      "imageAlt": "Three vertical all-round red lights.",
+      "imageDescription": "A vertical line of three all-round red lights shown against a dark night background.",
+      "type": "image_question",
+      "question": "At night, what type of vessel is indicated by these three vertical red lights?",
+      "correctAnswer": 1,
+      "options": [
+        "Vessel aground",
+        "Vessel constrained by her draught",
+        "Vessel restricted in her ability to manoeuvre",
+        "Pilot vessel on duty"
+      ],
+      "explanation": "A vessel constrained by her draught displays three vertical red lights at night.",
+      "id": "rds-im-0207"
+    },
+    {
+      "correctAnswer": 0,
+      "options": [
+        "Man Overboard",
+        "I require a pilot",
+        "Keep clear, I am manoeuvring with difficulty",
+        "I am dragging my anchor"
+      ],
+      "explanation": "Flag 'O' (Oscar) is the international signal for 'Man Overboard'.",
+      "imageAlt": "A square flag divided diagonally from top-left to bottom-right, yellow on the bottom and red on the top.",
+      "type": "image_question",
+      "question": "What is the meaning of this International Code Flag?",
+      "imageDescription": "A maritime signal flag divided diagonally into two triangles: the top right is red and the bottom left is yellow.",
+      "id": "rds-im-0208"
+    },
+    {
+      "explanation": "This symbol indicates a wreck which is always covered by water but is considered dangerous to surface navigation.",
+      "options": [
+        "Wreck showing at low water",
+        "Safe water over a wreck",
+        "Wreck dangerous to surface navigation",
+        "Fish haven or reef"
+      ],
+      "correctAnswer": 2,
+      "imageDescription": "A nautical chart symbol: a dotted oval shape containing a horizontal line with three short vertical tick marks across it (resembling a shipwreck symbol).",
+      "question": "What does this chart symbol indicate?",
+      "type": "image_question",
+      "imageAlt": "A chart symbol showing an oval with cross-hairs and dots in the quadrants.",
+      "id": "rds-im-0209"
+    },
+    {
+      "imageAlt": "A vertical sequence of shapes: black ball, black diamond, black ball.",
+      "type": "image_question",
+      "question": "What is the status of a vessel displaying this vertical sequence of day shapes?",
+      "imageDescription": "A vertical sequence of three day shapes displayed by a vessel: a black ball at the top, a black diamond in the middle, and a black ball at the bottom.",
+      "correctAnswer": 1,
+      "options": [
+        "Vessel aground",
+        "Vessel restricted in her ability to manoeuvre",
+        "Vessel constrained by her draught",
+        "Vessel engaged in fishing"
+      ],
+      "explanation": "Restricted in Ability to Manoeuvre (RAM) vessels display a ball-diamond-ball sequence of day shapes.",
+      "id": "rds-im-0210"
+    },
+    {
+      "correctAnswer": 3,
+      "options": [
+        "Fl (3) 10s",
+        "Q (9) 15s",
+        "L Fl 10s",
+        "Gp Fl (2) 5s or 10s"
+      ],
+      "explanation": "Isolated Danger Marks have a light sequence of White Group Flashing (2).",
+      "imageAlt": "A black buoy with one or more red horizontal bands and two black spheres as a topmark.",
+      "imageDescription": "A pillar or spar buoy, black with one or more red horizontal bands. The topmark is two black spheres one above the other.",
+      "type": "image_question",
+      "question": "What is the light rhythm of this Isolated Danger Mark?",
+      "id": "rds-im-0211"
+    },
+    {
+      "imageAlt": "Night view of a vessel showing two white masthead lights, a green sidelight, and a red sidelight.",
+      "type": "image_question",
+      "question": "What vessel is being observed from this angle at night?",
+      "imageDescription": "A night view of a vessel showing two white masthead lights at different heights (the aft one being higher), and both a red and a green sidelight simultaneously.",
+      "correctAnswer": 2,
+      "options": [
+        "A sailing vessel seen from ahead",
+        "A power-driven vessel under 50m seen from ahead",
+        "A power-driven vessel 50m or more in length seen from ahead",
+        "A pilot vessel seen from ahead"
+      ],
+      "explanation": "A power-driven vessel over 50m must show two masthead lights (steaming lights), sidelights, and a sternlight.",
+      "id": "rds-im-0212"
+    },
+    {
+      "imageDescription": "A pillar buoy with an equal number of vertical blue and yellow stripes. It has a topmark consisting of a yellow upright cross (+).",
+      "type": "image_question",
+      "question": "What is the purpose of this specifically coloured buoy?",
+      "imageAlt": "A buoy with blue and yellow vertical stripes and a yellow upright cross on top.",
+      "explanation": "An 'Emergency Wreck Buoy' is marked with blue and yellow vertical stripes and a yellow cross topmark.",
+      "correctAnswer": 0,
+      "options": [
+        "Emergency Wreck Buoy",
+        "Special Mark",
+        "Safe Water Mark",
+        "New Hazard Warning Mark"
+      ],
+      "id": "rds-im-0213"
+    },
+    {
+      "imageDescription": "A red, can-shaped buoy used in IALA Region A to mark the left-hand side of a channel when entering with the flood tide.",
+      "type": "image_question",
+      "question": "When entering a channel in the UK, what is the standard shape for this Port Lateral mark?",
+      "imageAlt": "A red can-shaped buoy.",
+      "explanation": "In IALA Region A, a Port Lateral mark is red and has a square (can) topmark.",
+      "correctAnswer": 1,
+      "options": [
+        "Conical",
+        "Can (Cylindrical)",
+        "Pillar",
+        "Spherical"
+      ],
+      "id": "rds-im-0214"
+    },
+    {
+      "options": [
+        "Anchor berth",
+        "Agape reef symbol",
+        "Tidal Diamond (refer to tidal stream table)",
+        "Area of high traffic density"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Tidal diamond letters refer to a table on the chart that provides data on tidal stream direction and rate.",
+      "imageAlt": "A magenta diamond-shaped border with a letter 'A' inside it on a chart.",
+      "imageDescription": "A chart symbol consisting of a magenta diamond with a capital letter (e.g., 'A') inside it, placed in the sea area of the chart.",
+      "question": "What does this symbol on a nautical chart refer the mariner to?",
+      "type": "image_question",
+      "id": "rds-im-0215"
+    },
+    {
+      "imageAlt": "A green conical buoy with a central red horizontal band.",
+      "correctAnswer": 1,
+      "type": "image_question",
+      "question": "You are entering a harbour in IALA Region A and see this buoy. Which is the preferred channel?",
+      "options": [
+        "The preferred channel is to Starboard (pass to your Port)",
+        "The preferred channel is to Port (pass to your Starboard)",
+        "You are entering a high-speed ferry zone",
+        "Emergency wreck marking buoy"
+      ],
+      "explanation": "Preferred channels are marked with Lateral marks that have a horizontal band of the alternative colour. Green/Red/Green indicates the main channel is to port.",
+      "imageDescription": "A green conical buoy with a single horizontal red band around its middle, sitting in blue water.",
+      "id": "rds-im-0216"
+    },
+    {
+      "explanation": "A black ball, diamond, black ball sequence indicates a vessel restricted in her ability to maneuver (RAM) due to the nature of her work.",
+      "imageDescription": "A workboat or survey vessel at sea displaying three black day shapes in a vertical line: a ball at the top, a diamond in the middle, and a ball at the bottom.",
+      "imageAlt": "A vessel displaying three vertical day shapes: Ball, Diamond, Ball.",
+      "correctAnswer": 2,
+      "type": "image_question",
+      "options": [
+        "Vessel at anchor",
+        "Vessel constrained by her draught",
+        "Vessel restricted in her ability to manoeuvre",
+        "Vessel not under command"
+      ],
+      "question": "What is the status of a vessel displaying these day shapes?",
+      "id": "rds-im-0217"
+    },
+    {
+      "imageAlt": "A square flag divided diagonally from top-left to bottom-right into yellow and red sections.",
+      "question": "What is the meaning of this International Code Flag?",
+      "options": [
+        "Man Overboard",
+        "I require a pilot",
+        "I am dragging my anchor",
+        "You are running into danger"
+      ],
+      "correctAnswer": 0,
+      "type": "image_question",
+      "explanation": "The Flag 'O' (Oscar) is the international signal for 'Man Overboard'.",
+      "imageDescription": "An international maritime signal flag, square, with a diagonal split from top-left to bottom-right. The top-right half is red and the bottom-left half is yellow.",
+      "id": "rds-im-0218"
+    },
+    {
+      "explanation": "A continuous series of white dots on a chart indicates the 10-metre depth contour (isobath).",
+      "imageDescription": "A close-up of a nautical chart showing a line formed by small, evenly spaced black dots, separating a light blue area from a darker blue area.",
+      "imageAlt": "A chart symbol showing a line of small black dots.",
+      "options": [
+        "Low water mark",
+        "5-metre depth contour",
+        "Limit of a nature reserve",
+        "10-metre depth contour"
+      ],
+      "question": "What does this specific dotted line represent on a standard Admiralty chart?",
+      "correctAnswer": 3,
+      "type": "image_question",
+      "id": "rds-im-0219"
+    },
+    {
+      "explanation": "A single black ball indicates a vessel at anchor. This must be displayed by vessels over 7m in or near a narrow channel.",
+      "imageDescription": "A sailing yacht with its sails furled, showing a single black ball-shaped day signal hanging from the forestay/bow area.",
+      "imageAlt": "A sailboat with a black sphere hoisted in the rigging.",
+      "correctAnswer": 1,
+      "type": "image_question",
+      "question": "What is this vessel indicating by displaying this shape during the day?",
+      "options": [
+        "Vessel under motor and sail",
+        "Vessel at anchor",
+        "Vessel aground",
+        "Pilot boat on duty"
+      ],
+      "id": "rds-im-0220"
+    },
+    {
+      "imageAlt": "Three vertical lights: Red over White over Red.",
+      "options": [
+        "A vessel restricted in her ability to manoeuvre",
+        "A vessel engaged in pilotage duties",
+        "A vessel aground",
+        "A sailing vessel under way"
+      ],
+      "question": "What type of vessel is indicated by this night signal?",
+      "correctAnswer": 0,
+      "type": "image_question",
+      "explanation": "White/Red/White vertical lights identify a vessel Restricted in Her Ability to Manoeuvre (RAM), seen from the side (no sidelights shown).",
+      "imageDescription": "A nighttime view showing three lights in a vertical line: the top is red, the middle is white, and the bottom is red. No other lights are visible.",
+      "id": "rds-im-0221"
+    },
+    {
+      "imageAlt": "A magenta flare symbol on a chart with the letters W R G.",
+      "correctAnswer": 2,
+      "type": "image_question",
+      "question": "What does this chart symbol indicate to the navigator?",
+      "options": [
+        "A standard lighthouse",
+        "A fishing zone boundary",
+        "A sector light or directional light",
+        "A radio beacon station"
+      ],
+      "explanation": "The magenta flare symbol with 'R' or 'G' indicates a sector light that changes colour based on the observer's bearing.",
+      "imageDescription": "A nautical chart symbol showing a tiny circle with a magenta 'teardrop' flare extending from it, with the text 'Dir WRG' written nearby.",
+      "id": "rds-im-0222"
+    },
+    {
+      "explanation": "South cardinal marks have two downward-pointing cones as topmarks and use a Very Quick or Quick light with 6 flashes + 1 long flash.",
+      "imageDescription": "A cardinal buoy with the top half yellow and the bottom half black. The topmark consists of two black cones, both pointing downwards.",
+      "imageAlt": "A yellow and black buoy with two downward-pointing triangles.",
+      "correctAnswer": 0,
+      "type": "image_question",
+      "options": [
+        "South Cardinal Mark",
+        "North Cardinal Mark",
+        "East Cardinal Mark",
+        "West Cardinal Mark contraband"
+      ],
+      "question": "Identify this cardinal mark and the safe water it indicates.",
+      "id": "rds-im-0223"
+    },
+    {
+      "imageDescription": "A yacht with its sails up, but displaying a black cone (point down) in the forward part of the rigging.",
+      "explanation": "An upside-down triangle (cone) indicates a sailing vessel that is also being propelled by machinery.",
+      "correctAnswer": 3,
+      "type": "image_question",
+      "question": "In daylight, what does the display of this shape indicate?",
+      "options": [
+        "Vessel fishing with nets",
+        "Vessel constrained by her draught",
+        "Vessel with a broken mast",
+        "Sailing vessel also under motor"
+      ],
+      "imageAlt": "A sailboat with an inverted black cone shape displayed forward.",
+      "id": "rds-im-0224"
+    },
+    {
+      "explanation": "Flag 'A' (Alpha) signifies 'I have a diver down; keep well clear at slow speed.'",
+      "imageDescription": "A maritime signal flag, swallow-tailed (two points at the fly), with a white vertical half on the hoist side and a blue vertical half on the fly side.",
+      "imageAlt": "A blue and white flag with a swallow-tail.",
+      "correctAnswer": 1,
+      "type": "image_question",
+      "question": "What is the meaning of this International Code Flag?",
+      "options": [
+        "I am altering course to port",
+        "I have a diver down; keep well clear",
+        "I am carrying dangerous cargo",
+        "I require a tug"
+      ],
+      "id": "rds-im-0225"
+    },
+    {
+      "imageAlt": "A buoy with two cones, bases together, pointing away from each other.",
+      "correctAnswer": 2,
+      "type": "image_question",
+      "options": [
+        "West Cardinal: Pass to the West",
+        "North Cardinal: Pass to the North",
+        "East Cardinal: Pass to the East",
+        "South Cardinal: Pass to the South"
+      ],
+      "question": "On which side of this mark must you pass to find deep water?",
+      "explanation": "An East cardinal mark has two cones with their bases together (forming a diamond shape). Pass to the East.",
+      "imageDescription": "A cardinal buoy with a black band in the middle and yellow bands at the top and bottom. The topmark consists of two black cones with their bases together.",
+      "id": "rds-im-0226"
+    },
+    {
+      "imageDescription": "A nautical chart symbol depicting a small black lighthouse icon with a tiny 'star' at the top, placed on a coastline.",
+      "explanation": "A green/black/green lighthouse symbol on an Admiralty chart indicates a specific tower or significant structure used as a landmark.",
+      "correctAnswer": 0,
+      "type": "image_question",
+      "options": [
+        "A lighthouse or major light",
+        "A water tower",
+        "A church with a spire",
+        "A conspicuous chimney"
+      ],
+      "question": "What does this symbol represent on a nautical chart?",
+      "imageAlt": "A small black and white tower symbol on a chart.",
+      "id": "rds-im-0227"
     }
   ],
   "mocks": []
