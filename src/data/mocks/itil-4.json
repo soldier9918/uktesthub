@@ -1407,6 +1407,162 @@
       ],
       "correctAnswer": 2,
       "id": "i4-mc-0108"
+    },
+    {
+      "correctAnswer": 2,
+      "options": [
+        "The provision of resources to the consumer",
+        "The consumption of resources by the user",
+        "Joint activities to ensure value co-creation in line with agreed offerings",
+        "The formal agreement of service levels and targets"
+      ],
+      "type": "multiple_choice",
+      "explanation": "Service relationship management consists of joint activities performed by a service provider and a service consumer to ensure value co-creation.",
+      "question": "What is the definition of service relationship management?",
+      "id": "i4-mc-0109"
+    },
+    {
+      "correctAnswer": 0,
+      "options": [
+        "Governance",
+        "Practices",
+        "The service value chain",
+        "Continual improvement"
+      ],
+      "type": "multiple_choice",
+      "question": "Which component of the service value system provides the means by which an organisation is directed and controlled?",
+      "explanation": "Governance is the means by which an organisation is directed and controlled, sitting at the heart of the service value system.",
+      "id": "i4-mc-0110"
+    },
+    {
+      "explanation": "The 'focus on value' principle requires that all activities link back, directly or indirectly, to value for the customer and stakeholders.",
+      "question": "Which guiding principle recommends that even if an activity is purely internal, its contribution to value for the customer should be understood?",
+      "correctAnswer": 3,
+      "options": [
+        "Think and work holistically",
+        "Keep it simple and practical",
+        "Start where you are",
+        "Focus on value"
+      ],
+      "type": "multiple_choice",
+      "id": "i4-mc-0111"
+    },
+    {
+      "explanation": "A service is a means of enabling value co-creation by enhancing outcomes the consumer wants to achieve without them managing specific costs and risks.",
+      "question": "What is the ITIL 4 definition of a service?",
+      "options": [
+        "A tangible deliverable provided to a customer",
+        "A means of enabling value co-creation by facilitating outcomes customers want to achieve",
+        "A set of specialised organisational capabilities for generating value for customers",
+        "A configuration of an organisation's resources designed to offer value to a consumer"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "id": "i4-mc-0112"
+    },
+    {
+      "explanation": "The 'Partners and suppliers' dimension includes the relationships between organisations and the contracts or agreements involved.",
+      "question": "Which dimension of service management considers the contracts and agreements between the organisation and its external partners?",
+      "options": [
+        "Information and technology",
+        "Value streams and processes",
+        "Partners and suppliers",
+        "Organisations and people"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "id": "i4-mc-0113"
+    },
+    {
+      "correctAnswer": 0,
+      "options": [
+        "Service desk",
+        "Service level management",
+        "Change enablement",
+        "Deployment management"
+      ],
+      "type": "multiple_choice",
+      "question": "Which practice provides the point of communication between the service provider and all of its users?",
+      "explanation": "The purpose of 'Monitor and announce' (as part of the service desk) is to capture demand for incident resolution and service requests.",
+      "id": "i4-mc-0114"
+    },
+    {
+      "correctAnswer": 1,
+      "options": [
+        "Standard change",
+        "Normal change",
+        "Emergency change",
+        "Iterative change"
+      ],
+      "type": "multiple_choice",
+      "question": "Which type of change is NOT pre-authorised and must be assessed and scheduled according to a specific process?",
+      "explanation": "Normal changes are those that need to be scheduled, assessed, and authorised following a standard process that is not 'pre-authorised'.",
+      "id": "i4-mc-0115"
+    },
+    {
+      "explanation": "Deployment management moves the service components into the live environment, whereas release management makes them available for use.",
+      "question": "Which practice is responsible for moving new or changed components to live environments?",
+      "options": [
+        "Service configuration management",
+        "Change enablement",
+        "Release management",
+        "Deployment management"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "id": "i4-mc-0116"
+    },
+    {
+      "explanation": "Collaboration and visibility focuses on breaking down silos by sharing work in progress and involving the right people.",
+      "question": "Which guiding principle emphasizes the importance of removing silos and increasing transparency across the organisation?",
+      "correctAnswer": 0,
+      "options": [
+        "Collaborate and promote visibility",
+        "Progress iteratively with feedback",
+        "Optimize and automate",
+        "Focus on value"
+      ],
+      "type": "multiple_choice",
+      "id": "i4-mc-0117"
+    },
+    {
+      "options": [
+        "Engage",
+        "Design and transition",
+        "Improve",
+        "Deliver and support"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "explanation": "The 'Improve' activity of the value chain ensures the continual improvement of products, services, and practices across all value chain activities.",
+      "question": "Which service value chain activity ensures the continual improvement of products and services across all value chain activities?",
+      "id": "i4-mc-0118"
+    },
+    {
+      "explanation": "Problem management aims to reduce the likelihood and impact of incidents by identifying actual and potential causes of incidents.",
+      "question": "What is the primary purpose of problem management?",
+      "correctAnswer": 1,
+      "options": [
+        "To restore normal service operation as quickly as possible",
+        "To reduce the likelihood and impact of incidents by identifying actual and potential causes",
+        "To ensure that all changes are recorded and evaluated",
+        "To plan and manage the full lifecycle of all IT assets"
+      ],
+      "type": "multiple_choice",
+      "id": "i4-mc-0119"
+    },
+    {
+      "options": [
+        "A problem that has been analysed and has not yet been resolved",
+        "A permanent fix to a recurring incident",
+        "A change that must be implemented as soon as possible",
+        "A solution that reduces or eliminates the impact of an incident or problem for which a full resolution is not yet available"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "question": "What is a workaround in the context of problem management?",
+      "explanation": "Workarounds are temporary fixes used when a full resolution is not yet available, reducing the impact of the problem or incident.",
+      "id": "i4-mc-0120"
     }
   ],
   "mocks": []
