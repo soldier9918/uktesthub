@@ -1043,6 +1043,162 @@
       ],
       "question": "How does the ULEZ charge interact with the Congestion Charge if you drive in Central London?",
       "id": "u-mc-0080"
+    },
+    {
+      "explanation": "The ULEZ operates 24 hours a day, 7 days a week, every day of the year except for Christmas Day (25 December).",
+      "type": "multiple_choice",
+      "options": [
+        "Every day of the year",
+        "Monday to Friday only",
+        "Every day except Christmas Day",
+        "Weekends and Bank Holidays only"
+      ],
+      "correctAnswer": 2,
+      "question": "On which day of the year is the Ultra Low Emission Zone (ULEZ) charge suspended?",
+      "id": "u-mc-0081"
+    },
+    {
+      "explanation": "Most motorcycles, mopeds, and scooters must meet Euro 3 emission standards to avoid the daily ULEZ charge.",
+      "options": [
+        "Euro 3",
+        "Euro 4",
+        "Euro 5",
+        "Euro 6"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "question": "What is the minimum Euro emission standard for a motorcycle to be considered ULEZ compliant?",
+      "id": "u-mc-0082"
+    },
+    {
+      "explanation": "If you fail to pay the daily charge, the full PCN amount for a car is £180, though this is halved if paid within 14 days.",
+      "type": "multiple_choice",
+      "options": [
+        "£80",
+        "£120",
+        "£160",
+        "£180"
+      ],
+      "question": "What is the standard full cost of a Penalty Charge Notice (PCN) for a non-compliant car that fails to pay the ULEZ charge?",
+      "correctAnswer": 3,
+      "id": "u-mc-0083"
+    },
+    {
+      "explanation": "TfL's 'Check your vehicle' tool uses the vehicle registration mark (number plate) to determine compliance based on DVLA data.",
+      "type": "multiple_choice",
+      "options": [
+        "The vehicle's chassis number",
+        "The vehicle's registration mark (VRM)",
+        "The owner's National Insurance number",
+        "The vehicle's fuel efficiency rating"
+      ],
+      "correctAnswer": 1,
+      "question": "To check if a vehicle is ULEZ compliant on the TfL website, what specific information must the user provide?",
+      "id": "u-mc-0084"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "10 years old",
+        "40 years old",
+        "25 years old",
+        "50 years old"
+      ],
+      "explanation": "Vehicles that have been significantly modified and have a 'historic' tax class are generally exempt from ULEZ.",
+      "correctAnswer": 1,
+      "question": "Generally, how old must a vehicle be to qualify for the 'historic vehicle' tax class exemption from ULEZ?",
+      "id": "u-mc-0085"
+    },
+    {
+      "explanation": "Heavy vehicles over 3.5 tonnes (like lorries and coaches) are subject to the LEZ (Low Emission Zone) rather than the ULEZ.",
+      "type": "multiple_choice",
+      "options": [
+        "1.5 tonnes",
+        "2.5 tonnes",
+        "3.5 tonnes",
+        "7.5 tonnes"
+      ],
+      "question": "What is the weight threshold above which most heavy vehicles (HGVs) are subject to LEZ standards instead of ULEZ?",
+      "correctAnswer": 2,
+      "id": "u-mc-0086"
+    },
+    {
+      "question": "What is the daily ULEZ charge for a non-compliant van or minibus that does not exceed 3.5 tonnes?",
+      "correctAnswer": 0,
+      "explanation": "The daily charge for larger non-compliant vehicles such as vans, minibuses, and ambulances is £12.50, the same as for cars.",
+      "options": [
+        "£12.50",
+        "£17.50Target",
+        "£25.00",
+        "£50.00"
+      ],
+      "type": "multiple_choice",
+      "id": "u-mc-0087"
+    },
+    {
+      "question": "In what year did the Euro 4 emission standard become mandatory for all new petrol cars sold in the UK?",
+      "correctAnswer": 2,
+      "explanation": "While Euro 6 became mandatory in 2015, petrol cars have been required to meet Euro 4 since 2005, making many older petrol cars compliant.",
+      "options": [
+        "1996",
+        "2001Target",
+        "2005",
+        "2015"
+      ],
+      "type": "multiple_choice",
+      "id": "u-mc-0088"
+    },
+    {
+      "correctAnswer": 1,
+      "question": "How much does it currently cost to sign up for the TfL Auto Pay system?",
+      "explanation": "Auto Pay is free to set up and ensures drivers are billed automatically, avoiding the risk of receiving a PCN.",
+      "type": "multiple_choice",
+      "options": [
+        "£10 per year",
+        "It is free to register",
+        "£1 per month",
+        "A one-off £5 fee"
+      ],
+      "id": "u-mc-0089"
+    },
+    {
+      "correctAnswer": 3,
+      "question": "What is the deadline for paying the ULEZ charge after driving a non-compliant vehicle within the zone?",
+      "explanation": "Drivers have until midnight on the third day following the journey to pay the ULEZ charge.",
+      "options": [
+        "Midnight on the same day",
+        "24 hours after the journey",
+        "Midnight the following day",
+        "Midnight on the third day after travel"
+      ],
+      "type": "multiple_choice",
+      "id": "u-mc-0090"
+    },
+    {
+      "question": "What discount do owners of ULEZ-compliant vehicles receive when driving within the zone?",
+      "correctAnswer": 0,
+      "explanation": "If a vehicle meets the required Euro standards, it is compliant regardless of whether the owner lives inside or outside of London.",
+      "type": "multiple_choice",
+      "options": [
+        "None - all compliant vehicles drive for free",
+        "A flat £5 daily fee",
+        "Only the first 10 journeys are free",
+        "A 50% discount on the daily charge"
+      ],
+      "id": "u-mc-0091"
+    },
+    {
+      "explanation": "Charities can apply for a grace period (temporary exemption) for certain non-compliant minibuses used for community transport.",
+      "type": "multiple_choice",
+      "options": [
+        "Supermarkets",
+        "Private schools",
+        "Registered charities",
+        "High street banks"
+      ],
+      "correctAnswer": 2,
+      "question": "Which of the following organisations can apply for a 'grace period' for non-compliant minibuses used for community transport?",
+      "id": "u-mc-0092"
     }
   ],
   "mocks": []
