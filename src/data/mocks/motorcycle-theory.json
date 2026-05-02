@@ -2496,7 +2496,7 @@
         "Mirror, Signal, Manoeuvre",
         "Look, Lean, Roll"
       ],
-      "explanation": "The basic 'Safety' or 'Check' sequence is Mirrors – Signal – Manoeuvre, which must be used for every change of direction or speed",
+      "explanation": "The basic 'Safety' or 'Check' sequence is Mirrors \u2013 Signal \u2013 Manoeuvre, which must be used for every change of direction or speed",
       "type": "multiple_choice",
       "id": "mt-mc-0192"
     },
@@ -4789,7 +4789,7 @@
       "id": "mt-mc-0368"
     },
     {
-      "question": "How can you use your motorcycle’s engine to help control your speed on a long, steep downhill section?",
+      "question": "How can you use your motorcycle\u2019s engine to help control your speed on a long, steep downhill section?",
       "explanation": "On a long downhill stretch, using a lower gear allows 'engine braking' to help control your speed and prevent the brakes from overheating",
       "options": [
         "Select a higher gear and use the front brake only",
@@ -5187,7 +5187,7 @@
         "The fuel consumption will decrease significantly"
       ],
       "correctAnswer": 1,
-      "question": "What is likely to happen if your motorcycle’s front wheel is out of balance?",
+      "question": "What is likely to happen if your motorcycle\u2019s front wheel is out of balance?",
       "type": "multiple_choice",
       "id": "mt-mc-0399"
     },
@@ -5662,13 +5662,13 @@
     {
       "options": [
         "It should be as tight as possible with no movement",
-        "It should have a small amount of slack (typically 25–40mm)",
+        "It should have a small amount of slack (typically 25\u201340mm)",
         "It should hang loosely so it can move freely",
         "It should only be adjusted when the engine is running"
       ],
       "correctAnswer": 1,
       "question": "How should a motorcycle's drive chain be correctly adjusted?",
-      "explanation": "A correctly adjusted chain should have about 25–40mm (1 inch) of 'play' or slack at its mid-point to allow for suspension movement",
+      "explanation": "A correctly adjusted chain should have about 25\u201340mm (1 inch) of 'play' or slack at its mid-point to allow for suspension movement",
       "type": "multiple_choice",
       "id": "mt-mc-0436"
     },
@@ -6006,7 +6006,7 @@
       ],
       "correctAnswer": 2,
       "question": "What should you look for to ensure motorcycle body armour meets safety standards?",
-      "explanation": "Body armour should carry the CE (Conformité Européenne) mark, indicating it meets European safety standards for impact protection",
+      "explanation": "Body armour should carry the CE (Conformit\u00e9 Europ\u00e9enne) mark, indicating it meets European safety standards for impact protection",
       "type": "multiple_choice",
       "id": "mt-mc-0462"
     },
@@ -8787,10 +8787,11 @@
         "Emergency vehicle drivers"
       ],
       "explanation": "Diamond-shaped signs provide instructions specifically for tram drivers, but you should still be aware of them to understand tram movements",
-      "question": "You see a diamond-shaped traffic sign. Who is this sign primarily intended for?",
+      "question": "You see a diamond-shaped traffic sign. Who is the described sign primarily intended for?",
       "correctAnswer": 1,
       "type": "multiple_choice",
-      "id": "mt-mc-0676"
+      "id": "mt-mc-0676",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 0,
@@ -9890,7 +9891,7 @@
         "Dry, powdery snow",
         "Freshly fallen snow in deep drifts",
         "Clear ice in the shade of a tree",
-        "Melting snow or slush at 0°C to 2°C"
+        "Melting snow or slush at 0\u00b0C to 2\u00b0C"
       ],
       "correctAnswer": 3,
       "question": "Which of these winter road conditions is likely to provide the least amount of grip for a motorcycle?",
@@ -14045,8 +14046,7 @@
       "id": "mt-mc-1080"
     },
     {
-      "type": "image_question",
-      "imageDescription": "A point-of-view shot from a motorcycle approaching a red traffic light. There is a lead-in line, a box for cyclists (Advanced Stop Line), and a second stop line at the junction",
+      "type": "multiple_choice",
       "options": [
         "In the middle of the cycle box",
         "Just past the second stop line",
@@ -14054,16 +14054,14 @@
         "Anywhere as long as you dont hit a cyclist"
       ],
       "explanation": "You must stop at the first white line when the lights are red. Entering the Box Junction or the cycle area is a traffic violation",
-      "question": "Where should you stop your motorcycle at these traffic lights when the light is red?",
+      "question": "A point-of-view shot from a motorcycle approaching a red traffic light. There is a lead-in line, a box for cyclists (Advanced Stop Line), and a second stop line at the junction. Where should you stop your motorcycle at these traffic lights when the light is red?",
       "correctAnswer": 2,
-      "imageAlt": "A motorcyclist approaching a set of traffic lights with an Advanced Stop Line for cyclists",
-      "id": "mt-im-0001"
+      "id": "mt-im-0001",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A red triangular warning sign showing a thick vertical black line with a thinner black line joining it from the right side",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 0,
-      "imageAlt": "A warning sign showing a T-junction with a priority road",
       "options": [
         "Road on the right joins the main road",
         "T-junction ahead, you must give way",
@@ -14071,12 +14069,12 @@
         "Cul-de-sac on the right"
       ],
       "explanation": "The 'T-junction' sign with a thick line and a thinner side line indicates that the road you are on has priority over the joining side road",
-      "question": "What does this road sign mean?",
-      "id": "mt-im-0002"
+      "question": "A red triangular warning sign showing a thick vertical black line with a thinner black line joining it from the right side. What does this road sign mean?",
+      "id": "mt-im-0002",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 3,
-      "imageAlt": "A motorcycle following a slow-moving van uphill on a single carriageway",
       "options": [
         "Overtake if the van signals you through",
         "Overtake if you have a powerful engine",
@@ -14084,14 +14082,13 @@
         "Stay behind and do not overtake"
       ],
       "explanation": "You should never overtake when approaching a brow of a hill, as your view of oncoming traffic is restricted",
-      "question": "You are following a slow-moving vehicle. Why is it dangerous to overtake here?",
-      "imageDescription": "View from a motorcycle behind a white van. The road is a single carriageway and goes steeply uphill towards a blind brow. There are solid white lines on the road",
-      "type": "image_question",
-      "id": "mt-im-0003"
+      "question": "View from a motorcycle behind a white van. The road is a single carriageway and goes steeply uphill towards a blind brow. There are solid white lines on the road. You are following a slow-moving vehicle. Why is it dangerous to overtake here?",
+      "type": "multiple_choice",
+      "id": "mt-im-0003",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageDescription": "A blue circular road sign featuring a white arrow pointing diagonally down and to the left",
+      "type": "multiple_choice",
       "options": [
         "Keep left of the bollard",
         "Turn left ahead",
@@ -14099,31 +14096,28 @@
         "No left turn"
       ],
       "explanation": "Blue circular signs with white arrows indicate a mandatory direction. This sign means 'Turn left ahead'",
-      "question": "What is the meaning of this mandatory road sign?",
+      "question": "A blue circular road sign featuring a white arrow pointing diagonally down and to the left. What is the meaning of this mandatory road sign?",
       "correctAnswer": 1,
-      "imageAlt": "A blue circular sign with a white arrow pointing diagonally left",
-      "id": "mt-im-0004"
+      "id": "mt-im-0004",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "Parked cars can hide pedestrians, especially children, or car doors might open suddenly. Keep a door's width away where possible",
-      "question": "What should you be most aware of when riding through this narrow residential street?",
+      "question": "A narrow residential street with cars parked on both sides. A motorcyclist is riding down the center. A ball is visible rolling into the road from between two cars. What should you be most aware of when riding through this narrow residential street?",
       "options": [
         "Speed up to get past quickly",
         "Move closer to the left-hand side",
         "Look for movement or feet between the cars",
         "Flash your headlight to warn residents"
       ],
-      "imageAlt": "A residential street with cars parked on both sides and a motorcyclist riding down the middle",
       "correctAnswer": 2,
-      "type": "image_question",
-      "imageDescription": "A narrow residential street with cars parked on both sides. A motorcyclist is riding down the center. A ball is visible rolling into the road from between two cars",
-      "id": "mt-im-0005"
+      "type": "multiple_choice",
+      "id": "mt-im-0005",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "View from a motorcycle of a junction. There is a thick, solid white line across the road and a red octagonal sign that says 'STOP'",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 0,
-      "imageAlt": "A motorcycle approaching a junction with a solid white line and a STOP sign",
       "options": [
         "Stop behind the line and wait for a gap",
         "Slow down and crawl across if it is clear",
@@ -14131,12 +14125,12 @@
         "Stop only if you see a police car"
       ],
       "explanation": "A thick white line across the road at a junction accompanied by a 'STOP' sign means you must come to a complete halt before proceeding",
-      "question": "What must you do when approaching this junction?",
-      "id": "mt-im-0006"
+      "question": "View from a motorcycle of a junction. There is a thick, solid white line across the road and a red octagonal sign that says 'STOP'. What must you do when approaching this junction?",
+      "id": "mt-im-0006",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 3,
-      "imageAlt": "A motorcycle riding on a motorway in heavy rain with spray",
       "options": [
         "Leave a one-second gap",
         "Leave a two-second gap",
@@ -14144,14 +14138,13 @@
         "Leave at least a four-second gap"
       ],
       "explanation": "In wet weather, your stopping distance can be at least double the distance required on dry roads due to reduced tyre grip",
-      "question": "How much of a time gap should you leave between you and the vehicle in front in these conditions?",
-      "imageDescription": "A motorcyclist riding in the rain on a three-lane motorway. There is a lot of spray from the car in front. The road surface looks very shiny and wet",
-      "type": "image_question",
-      "id": "mt-im-0007"
+      "question": "A motorcyclist riding in the rain on a three-lane motorway. There is a lot of spray from the car in front. The road surface looks very shiny and wet. How much of a time gap should you leave between you and the vehicle in front in these conditions?",
+      "type": "multiple_choice",
+      "id": "mt-im-0007",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 1,
-      "imageAlt": "A motorcycle on a rural road positioned near the center of its lane",
       "options": [
         "Ride right next to the gutter",
         "Stay in the center of your lane",
@@ -14159,14 +14152,13 @@
         "Hugging the left curb to let cars pass"
       ],
       "explanation": "When the road is divided by a single broken white line and the lane is wide, stay in the center of your lane to maintain a 'lifesaver' space and visibility",
-      "question": "What is the safest road position for a motorcyclist in this situation?",
-      "imageDescription": "A wide rural single-carriageway road. A motorcyclist is riding in the center of the left-hand lane. The road is clear ahead",
-      "type": "image_question",
-      "id": "mt-im-0008"
+      "question": "A wide rural single-carriageway road. A motorcyclist is riding in the center of the left-hand lane. The road is clear ahead. What is the safest road position for a motorcyclist in this situation?",
+      "type": "multiple_choice",
+      "id": "mt-im-0008",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 2,
-      "imageAlt": "A junction with yellow criss-cross markings and a motorcycle waiting to enter",
       "options": [
         "Enter and stop behind the car",
         "Wait on the yellow lines until the car moves",
@@ -14174,55 +14166,52 @@
         "Weave between the traffic in the box"
       ],
       "explanation": "Yellow box junctions must be kept clear. You may only enter if your exit is clear, or if you are turning right and waiting for a gap",
-      "question": "The traffic is queueing. When can you enter this marked area?",
-      "imageDescription": "A large junction with yellow criss-cross lines painted on the ground. A car is currently stopped halfway across the box due to traffic ahead",
-      "type": "image_question",
-      "id": "mt-im-0009"
+      "question": "A large junction with yellow criss-cross lines painted on the ground. A car is currently stopped halfway across the box due to traffic ahead. The traffic is queueing. When can you enter this marked area?",
+      "type": "multiple_choice",
+      "id": "mt-im-0009",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageDescription": "A motorcyclist in the middle lane of a motorway, level with the cab of a large high-sided lorry they are overtaking. Wind-sock signs are visible in the distance",
+      "type": "multiple_choice",
       "explanation": "Wind 'shadows' occur when passing tall vehicles; as you emerge from the shelter of the vehicle, a sudden gust of wind can push your motorcycle sideways",
-      "question": "What specific danger should you expect when overtaking this vehicle?",
+      "question": "A motorcyclist in the middle lane of a motorway, level with the cab of a large high-sided lorry they are overtaking. Wind-sock signs are visible in the distance. What specific danger should you expect when overtaking this vehicle?",
       "options": [
         "The lorry will speed up",
         "A sudden gust of wind as you pass the front",
         "The lorry driver cannot see you at all",
         "The road surface will be more slippery"
       ],
-      "imageAlt": "A motorcycle overtaking a high-sided lorry on a windy day",
       "correctAnswer": 1,
-      "id": "mt-im-0010"
+      "id": "mt-im-0010",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A brown rectangular sign with white text and a symbol of a building with columns, indicating a local museum",
-      "type": "image_question",
-      "imageAlt": "A brown rectangular road sign with a white border and a museum symbol",
+      "type": "multiple_choice",
       "correctAnswer": 0,
       "explanation": "Brown road signs are used to provide directions to tourist attractions or points of interest",
-      "question": "What does the colour of this sign indicate?",
+      "question": "A brown rectangular sign with white text and a symbol of a building with columns, indicating a local museum. What does the colour of the sign indicate?",
       "options": [
         "Tourist attraction",
         "Primary route sign",
         "Local council offices",
         "Hospital ahead"
       ],
-      "id": "mt-im-0011"
+      "id": "mt-im-0011",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A motorcycle behind a car at a zebra crossing with zig-zag lines",
       "correctAnswer": 2,
       "explanation": "Zig-zag lines near a pedestrian crossing mean no parking and no overtaking. Overtaking the lead vehicle would be dangerous and illegal",
-      "question": "What must you NOT do when approaching these road markings?",
+      "question": "A zebra crossing with white zig-zag lines on the road. A car is slowing down for a pedestrian. A motorcycle is approaching from behind the car. What must you NOT do when approaching these road markings?",
       "options": [
         "Overtake the car before it stops",
         "Wait on the zig-zag lines",
         "Stay behind the car and do not overtake",
         "Sound your horn to warn the pedestrian"
       ],
-      "imageDescription": "A zebra crossing with white zig-zag lines on the road. A car is slowing down for a pedestrian. A motorcycle is approaching from behind the car",
-      "type": "image_question",
-      "id": "mt-im-0012"
+      "type": "multiple_choice",
+      "id": "mt-im-0012",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "Staggered junctions mean vehicles can pull out or turn from both sides. Keep a central position and be ready to react",
@@ -14233,31 +14222,28 @@
         "No right turn allowed at the junction"
       ],
       "correctAnswer": 2,
-      "imageDescription": "A warning sign (red triangle) showing a thick vertical black line with two thinner horizontal lines staggered: one to the left and one further up to the right",
-      "question": "What does this warning sign mean?",
-      "type": "image_question",
-      "imageAlt": "A road sign showing a staggered junction ahead",
-      "id": "mt-im-0013"
+      "question": "A warning sign (red triangle) showing a thick vertical black line with two thinner horizontal lines staggered: one to the left and one further up to the right. What does the sign mean?",
+      "type": "multiple_choice",
+      "id": "mt-im-0013",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A motorcyclist wearing a bright neon yellow-green reflective vest over their jacket",
-      "type": "image_question",
-      "question": "What is the main benefit of wearing this item of clothing?",
+      "type": "multiple_choice",
+      "question": "A closeup of a motorcyclist's torso wearing a fluorescent yellow high-visibility waistcoat with reflective silver strips over black motorcycle leathers. What is the main benefit of wearing this item of clothing?",
       "options": [
         "It makes you more visible to other road users",
         "It provides extra protection against impacts",
         "It is a legal requirement for all riders at all times",
         "It helps to keep the rider warm in winter"
       ],
-      "imageDescription": "A closeup of a motorcyclist's torso wearing a fluorescent yellow high-visibility waistcoat with reflective silver strips over black motorcycle leathers",
       "correctAnswer": 0,
       "explanation": "High-visibility vests make you significantly easier to spot by other road users, especially in dull weather or at junctions",
-      "id": "mt-im-0014"
+      "id": "mt-im-0014",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What do these road markings in the center of the road mean?",
+      "question": "A shot from the rider's perspective of a two-lane road with a central area of white diagonal stripes bordered by a broken white line. What do these road markings in the center of the road mean?",
       "correctAnswer": 1,
-      "imageDescription": "A shot from the rider's perspective of a two-lane road with a central area of white diagonal stripes bordered by a broken white line",
       "options": [
         "You must never enter this area for any reason",
         "You should not enter the area unless it is necessary and safe",
@@ -14265,14 +14251,12 @@
         "You must use this area if you are traveling at the speed limit"
       ],
       "explanation": "The white diagonal stripes with a broken border mean you should not enter the area unless it is necessary and you can see it is safe",
-      "imageAlt": "A road with white diagonal stripes (hatched markings) in the centre",
-      "type": "image_question",
-      "id": "mt-im-0015"
+      "type": "multiple_choice",
+      "id": "mt-im-0015",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageAlt": "A road with a very low sun shining directly into the camera lens",
-      "imageDescription": "A view through a motorcycle visor of a straight suburban road during sunset, with a bright orange sun low on the horizon causing significant glare",
+      "type": "multiple_choice",
       "correctAnswer": 3,
       "options": [
         "You should speed up to get out of the glare quickly",
@@ -14281,26 +14265,26 @@
         "Be aware that others may not see your signals or lights"
       ],
       "explanation": "Low sun can blind you or other drivers. In this situation, others may not see your signals or brake lights clearly",
-      "question": "What specific hazard should you consider when riding in these conditions?",
-      "id": "mt-im-0016"
+      "question": "A view through a motorcycle visor of a straight suburban road during sunset, with a bright orange sun low on the horizon causing significant glare. What specific hazard should you consider when riding in these conditions?",
+      "id": "mt-im-0016",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What does this sign mean?",
+      "question": "A blue circular mandatory sign featuring a white pictogram of a bicycle on the left and a white pictogram of a walking person on the right, divided by a vertical white line. What does the sign mean?",
       "explanation": "The blue circular sign with a white bicycle and pedestrian indicates a route divided for use by both, usually separated by a line or different textures",
       "correctAnswer": 0,
-      "imageDescription": "A blue circular mandatory sign featuring a white pictogram of a bicycle on the left and a white pictogram of a walking person on the right, divided by a vertical white line",
       "options": [
         "A segregated route for pedestrians and cyclists",
         "A pedestrian crossing for cyclists only",
         "No motor vehicles allowed on this path",
         "A shared path with no division for pedestrians"
       ],
-      "imageAlt": "A blue circular sign with a bicycle and a walking person separated by a vertical white line",
-      "type": "image_question",
-      "id": "mt-im-0017"
+      "type": "multiple_choice",
+      "id": "mt-im-0017",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What should you specifically look out for regarding the parked silver car?",
+      "question": "Perspective of a rider on a street with cars parked on the left. The silver car's front wheels are visibly angled out toward the center of the road. What should you specifically look out for regarding the parked silver car?",
       "explanation": "When riding on a road with parked cars, look for clues like front wheels turning out, which indicates a vehicle may be about to pull out into your path",
       "options": [
         "The car is parked incorrectly and is a hazard",
@@ -14309,16 +14293,13 @@
         "The car's steering lock has failed"
       ],
       "correctAnswer": 2,
-      "imageDescription": "Perspective of a rider on a street with cars parked on the left. The silver car's front wheels are visibly angled out toward the center of the road",
-      "imageAlt": "A line of parked cars on the left with one car's front wheels turned toward the road",
-      "type": "image_question",
-      "id": "mt-im-0018"
+      "type": "multiple_choice",
+      "id": "mt-im-0018",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A road sign showing a steep hill downwards",
-      "type": "image_question",
-      "question": "How should you use your motorcycle's controls when approaching this steep descent?",
-      "imageDescription": "A red triangle warning sign showing a black car on a 10 percent downward slope",
+      "type": "multiple_choice",
+      "question": "A red triangle warning sign showing a black car on a 10 percent downward slope. How should you use your motorcycle's controls when approaching this steep descent?",
       "correctAnswer": 1,
       "options": [
         "Shift into neutral to save fuel",
@@ -14327,41 +14308,39 @@
         "Rely only on the rear brake to slow down"
       ],
       "explanation": "On long downhill stretches, use a lower gear to allow engine braking to control your speed, preventing brakes from overheating and fading",
-      "id": "mt-im-0019"
+      "id": "mt-im-0019",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What is the minimum time gap you should leave behind the car in these conditions?",
+      "question": "A rider's view of a car ahead on a rainy day. Water is spraying up from the car's tires, and the road surface is shiny and dark. What is the minimum time gap you should leave behind the car in these conditions?",
       "explanation": "In wet weather, the gap between you and the vehicle in front should be doubled to at least four seconds due to increased stopping distances",
       "correctAnswer": 0,
-      "imageDescription": "A rider's view of a car ahead on a rainy day. Water is spraying up from the car's tires, and the road surface is shiny and dark",
       "options": [
         "At least four seconds",
         "One second",
         "Exactly two seconds",
         "Two motorcycle lengths"
       ],
-      "imageAlt": "A motorcycle riding on a wet road with spray coming off the tires of a car in front",
-      "type": "image_question",
-      "id": "mt-im-0020"
+      "type": "multiple_choice",
+      "id": "mt-im-0020",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What does this sign indicate?",
+      "question": "A clear view of a 'No Entry' sign: a red solid circle with a thick horizontal white bar across the center, mounted on a grey pole. What does the sign indicate?",
       "options": [
         "No parking allowed",
         "One-way street ahead",
         "Give way to oncoming traffic",
         "No entry for all vehicles"
       ],
-      "imageDescription": "A clear view of a 'No Entry' sign: a red solid circle with a thick horizontal white bar across the center, mounted on a grey pole",
       "correctAnswer": 3,
       "explanation": "The 'No Entry' sign prohibits all vehicles, including motorcycles, from entering that road",
-      "imageAlt": "A red circle sign with a horizontal white bar in the middle",
-      "type": "image_question",
-      "id": "mt-im-0021"
+      "type": "multiple_choice",
+      "id": "mt-im-0021",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What does the color of this sign tell you?",
-      "imageDescription": "A brown rectangular directional sign featuring a white pictogram of a tent and a caravan, pointing to the left",
+      "question": "A brown rectangular directional sign featuring a white pictogram of a tent and a caravan, pointing to the left. What does the color of the sign tell you?",
       "correctAnswer": 2,
       "options": [
         "A high-risk area for crosswinds",
@@ -14370,14 +14349,13 @@
         "A lay-by for heavy goods vehicles only"
       ],
       "explanation": "Brown signs with white lettering and symbols are used to provide directions to tourist attractions",
-      "imageAlt": "A brown rectangular sign with a white symbol of a tent and trailer",
-      "type": "image_question",
-      "id": "mt-im-0022"
+      "type": "multiple_choice",
+      "id": "mt-im-0022",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What is the safest action to take when following this vehicle?",
+      "question": "A motorcycle is positioned directly behind and slightly to the left of a long articulated lorry at a T-junction. The lorry's left indicator is flashing. What is the safest action to take when following this vehicle?",
       "correctAnswer": 0,
-      "imageDescription": "A motorcycle is positioned directly behind and slightly to the left of a long articulated lorry at a T-junction. The lorry's left indicator is flashing",
       "options": [
         "Stay well back and wait for the vehicle to turn",
         "Manoeuvre into the gap on the vehicle's left side",
@@ -14385,28 +14363,26 @@
         "Move as close as possible to the vehicle's rear bumper"
       ],
       "explanation": "When turning left, stay at the rear of a long vehicle. They may need to swing out to the right before turning left to clear the kerb",
-      "imageAlt": "A motorcycle behind a large lorry at a junction; the lorry is signaling left",
-      "type": "image_question",
-      "id": "mt-im-0023"
+      "type": "multiple_choice",
+      "id": "mt-im-0023",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What is the primary danger of riding with a tire in this condition?",
+      "question": "A close-up of a motorcycle rear tire where the tread pattern is almost flush with the surface of the rubber. What is the primary danger of riding with a tire in this condition?",
       "explanation": "Worn tires with shallow tread are dangerous because they cannot disperse water effectively, leading to a high risk of aquaplaning",
       "correctAnswer": 1,
-      "imageDescription": "A close-up of a motorcycle rear tire where the tread pattern is almost flush with the surface of the rubber",
       "options": [
         "Reduced fuel consumption",
         "Increased risk of aquaplaning (sliding on water)",
         "Better grip on dry roads than new tires",
         "Heavier steering feel at low speeds"
       ],
-      "imageAlt": "A motorcycle tire with very shallow, worn-down tread patterns",
-      "type": "image_question",
-      "id": "mt-im-0024"
+      "type": "multiple_choice",
+      "id": "mt-im-0024",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageAlt": "A yellow box junction at a crossroads with a car waiting in the middle",
+      "type": "multiple_choice",
       "options": [
         "When the lights are green regardless of traffic",
         "Only if your exit road is clear",
@@ -14414,14 +14390,13 @@
         "If you are riding a motorcycle under 125cc"
       ],
       "explanation": "Yellow box junctions are designed to keep the junction clear for through traffic. Only enter if your exit is clear",
-      "question": "You are approaching this box junction. When are you allowed to enter it?",
-      "imageDescription": "POV from a motorcycle approaching a large yellow hatched box junction at a busy city intersection. A car is currently in the box, and traffic ahead is stationary",
+      "question": "POV from a motorcycle approaching a large yellow hatched box junction at a busy city intersection. A car is currently in the box, and traffic ahead is stationary. You are approaching this box junction. When are you allowed to enter it?",
       "correctAnswer": 1,
-      "id": "mt-im-0025"
+      "id": "mt-im-0025",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageAlt": "A large articulated lorry signaling left at a roundabout",
+      "type": "multiple_choice",
       "options": [
         "Overtake it on the left quickly",
         "Flash your lights to tell them to move over",
@@ -14429,44 +14404,41 @@
         "Move into the blind spot to be seen"
       ],
       "explanation": "Large vehicles need extra room to turn. Do not attempt to overtake them on the side they are signaling towards",
-      "imageDescription": "View from a motorcycle behind a long articulated lorry. The lorry is in the middle lane of a roundabout but has its left indicator flashing",
-      "question": "What should you do when following this long vehicle as it approaches a roundabout?",
+      "question": "View from a motorcycle behind a long articulated lorry. The lorry is in the middle lane of a roundabout but has its left indicator flashing. What should you do when following this long vehicle as it approaches a roundabout?",
       "correctAnswer": 2,
-      "id": "mt-im-0026"
+      "id": "mt-im-0026",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 0,
-      "imageDescription": "A wide road with a central area marked with white diagonal stripes (hatched markings) surrounded by a broken white line. No other traffic is present",
-      "question": "When may you enter this area of the road marked with diagonal stripes and a broken white border?",
+      "question": "A wide road with a central area marked with white diagonal stripes (hatched markings) surrounded by a broken white line. No other traffic is present. When may you enter this area of the road marked with diagonal stripes and a broken white border?",
       "explanation": "Diagonal stripes with a broken border may be entered if it is safe and necessary to do so",
-      "imageAlt": "Road markings consisting of white diagonal stripes bordered by a broken line",
       "options": [
         "Only if it is necessary and safe to do so",
         "Only when overtaking a cyclist",
         "Whenever you want to improve your road position",
         "Never, it is against the law to enter them"
       ],
-      "type": "image_question",
-      "id": "mt-im-0027"
+      "type": "multiple_choice",
+      "id": "mt-im-0027",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A triangular red warning sign with two black arrows pointing in opposite directions",
       "options": [
         "No overtaking ahead",
         "Dual carriageway ends ahead",
         "Two-way traffic crosses a one-way road",
         "Two-way traffic straight ahead"
       ],
-      "type": "image_question",
-      "imageDescription": "A standard UK triangular warning sign with a red border. Inside is a black symbol of two vertical arrows, one pointing up and one pointing down",
-      "question": "What does this warning sign mean?",
+      "type": "multiple_choice",
+      "question": "A standard UK triangular warning sign with a red border. Inside is a black symbol of two vertical arrows, one pointing up and one pointing down. What does the sign mean?",
       "correctAnswer": 3,
       "explanation": "The 'Two-way traffic' sign warns you that the one-way street or dual carriageway you are on is ending soon",
-      "id": "mt-im-0028"
+      "id": "mt-im-0028",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageAlt": "A snowy road with tire tracks visible in the slush",
+      "type": "multiple_choice",
       "options": [
         "Double the normal distance",
         "Five times the normal distance",
@@ -14474,59 +14446,55 @@
         "Twenty times the normal distance"
       ],
       "explanation": "In icy or snowy conditions, your stopping distance can be ten times greater than on a dry road",
-      "imageDescription": "POV from a motorcycle looking down a residential street covered in thin snow and slush. A car is parked roughly 50 metres ahead",
-      "question": "How much should you increase your stopping distance when riding on a road in these conditions?",
+      "question": "POV from a motorcycle looking down a residential street covered in thin snow and slush. A car is parked roughly 50 metres ahead. How much should you increase your stopping distance when riding on a road in these conditions?",
       "correctAnswer": 2,
-      "id": "mt-im-0029"
+      "id": "mt-im-0029",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What does this sign tell you about the road layout ahead?",
-      "imageDescription": "A blue rectangular information sign featuring a white bicycle symbol above a white horizontal line. Below the line is a white arrow pointing upwards, and to the side is an arrow pointing downwards",
+      "question": "A blue rectangular information sign featuring a white bicycle symbol above a white horizontal line. Below the line is a white arrow pointing upwards, and to the side is an arrow pointing downwards. What does the sign tell you about the road layout ahead?",
       "correctAnswer": 1,
       "explanation": "This sign indicates a contra-flow cycle lane, meaning cyclists will be traveling towards you in a dedicated lane",
-      "imageAlt": "A blue rectangular sign showing a bicycle and an arrow pointing in the opposite direction",
       "options": [
         "Cyclists only road ahead",
         "With-flow cycle lane ahead",
         "Contra-flow cycle lane ahead",
         "No cycling allowed beyond this sign"
       ],
-      "type": "image_question",
-      "id": "mt-im-0030"
+      "type": "multiple_choice",
+      "id": "mt-im-0030",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "A blue circle with a white number and a red diagonal line indicates the end of a minimum speed limit",
       "correctAnswer": 0,
-      "question": "What does this sign mean?",
-      "imageDescription": "A circular blue sign with white borders. It has the number '30' written in white in the centre, with a red diagonal line striking through the number from top-right to bottom-left",
-      "type": "image_question",
-      "imageAlt": "A blue circular sign with the number 30 and a red diagonal line through it",
+      "question": "A circular blue sign with white borders. It has the number '30' written in white in the centre, with a red diagonal line striking through the number from top-right to bottom-left. What does the sign mean?",
+      "type": "multiple_choice",
       "options": [
         "End of minimum speed limit",
         "Minimum speed limit 30 mph",
         "Maximum speed limit 30 mph",
         "End of 30 mph zone"
       ],
-      "id": "mt-im-0031"
+      "id": "mt-im-0031",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A road crossing a shallow stream with a depth gauge on the bank",
       "options": [
         "The speed of the current",
         "The thickness of the ice",
         "The depth of the water",
         "The cleanliness of the water"
       ],
-      "type": "image_question",
-      "imageDescription": "A rural road that dips down into a 'Ford' where a small river flows over the tarmac. There is a white post with black horizontal markers standing in the water",
-      "question": "You are approaching this ford. What does the marked scale on the side of the road indicate?",
+      "type": "multiple_choice",
+      "question": "A rural road that dips down into a 'Ford' where a small river flows over the tarmac. There is a white post with black horizontal markers standing in the water. You are approaching this ford. What does the marked scale on the side of the road indicate?",
       "correctAnswer": 2,
       "explanation": "At a ford, the water depth is usually indicated by a depth gauge (water level probe) at the side of the crossing",
-      "id": "mt-im-0032"
+      "id": "mt-im-0032",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageAlt": "Two horse riders on a narrow country lane",
+      "type": "multiple_choice",
       "options": [
         "Rev your engine to let them know you are there",
         "Sound your horn and pass quickly on the right",
@@ -14535,144 +14503,135 @@
       ],
       "explanation": "Horses are unpredictable and easily spooked; you must pass them slowly and give them a wide berth",
       "correctAnswer": 3,
-      "imageDescription": "A narrow country lane with high hedges. Two horses and riders are moving away from the camera on the left-hand side. There is a blind bend ahead",
-      "question": "What is the most important precaution to take when passing these road users?",
-      "id": "mt-im-0033"
+      "question": "A narrow country lane with high hedges. Two horses and riders are moving away from the camera on the left-hand side. There is a blind bend ahead. What is the most important precaution to take when passing these road users?",
+      "id": "mt-im-0033",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "When the light is green and the white filter arrow is lit, you may turn in that direction regardless of other lights",
-      "imageDescription": "A set of traffic lights at a junction. The main circular light is green, and there is an additional lit white arrow pointing to the left on a black background",
-      "question": "What does this light signal mean?",
+      "question": "A set of traffic lights at a junction. The main circular light is green, and there is an additional lit white arrow pointing to the left on a black background. What does this light signal mean?",
       "correctAnswer": 1,
-      "type": "image_question",
-      "imageAlt": "Traffic lights showing a full green light and a white filter arrow pointing left",
+      "type": "multiple_choice",
       "options": [
         "You must stop and wait for the arrow to turn green",
         "You may turn left if it's safe to do so",
         "You can only turn left if there is no oncoming traffic",
         "The filter arrow is for buses only"
       ],
-      "id": "mt-im-0034"
+      "id": "mt-im-0034",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "The 'Double Bend' sign warns of a series of bends, the first one being in the direction indicated by the symbol (at the bottom)",
-      "imageDescription": "A triangular warning sign with a red border. The black symbol inside is a zig-zag line that starts by curving to the right and then curves back to the left",
-      "question": "What does this sign warn you of?",
+      "question": "A triangular warning sign with a red border. The black symbol inside is a zig-zag line that starts by curving to the right and then curves back to the left. What does the sign warn you of?",
       "correctAnswer": 0,
-      "type": "image_question",
-      "imageAlt": "A triangular warning sign showing a zig-zag line",
+      "type": "multiple_choice",
       "options": [
         "Double bend, first to the right",
         "Double bend, first to the left",
         "Winding road for 2 miles",
         "Slippery road surface ahead"
       ],
-      "id": "mt-im-0035"
+      "id": "mt-im-0035",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "When a level crossing has no gates or barriers, you MUST stop at the 'Stop' sign before proceeding",
-      "question": "How should you approach this level crossing?",
-      "imageDescription": "A rural railway level crossing where the tracks cross the road. There are no barriers or gates. There is a red 'Stop' sign and a signal with twin flashing red lights (currently off)",
+      "question": "A rural railway level crossing where the tracks cross the road. There are no barriers or gates. There is a red 'Stop' sign and a signal with twin flashing red lights (currently off). How should you approach this level crossing?",
       "correctAnswer": 2,
-      "type": "image_question",
-      "imageAlt": "An open railway level crossing with no barriers and a 'Stop' sign",
+      "type": "multiple_choice",
       "options": [
         "Slow down and look both ways without stopping",
         "Stop only if you see a train coming",
         "Stop behind the white line and look both ways before crossing",
         "Accelerate to cross the tracks as quickly as possible"
       ],
-      "id": "mt-im-0036"
+      "id": "mt-im-0036",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A blue circular sign with a white bicycle and a white moped symbol",
       "explanation": "Blue circular signs with no red border give positive instructions. This sign indicates that the road is only for cycles and mopeds",
       "correctAnswer": 2,
-      "type": "image_question",
-      "question": "What does this sign mean?",
-      "imageDescription": "A blue circular mandatory sign featuring white silhouettes of a bicycle above a moped",
+      "type": "multiple_choice",
+      "question": "A blue circular mandatory sign featuring white silhouettes of a bicycle above a moped. What does the sign mean?",
       "options": [
         "Motorcycles only",
         "No motorcycles or mopeds allowed",
         "Route for cycles and mopeds only",
         "Cycles and motorcycles allowed to park here"
       ],
-      "id": "mt-im-0037"
+      "id": "mt-im-0037",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A first-person view from a motorcycle on a single carriageway road approaching a right-hand turn into a side road. There is a white line in the middle of the road",
       "options": [
         "Just to the left of the centre line",
         "On the extreme left of the road",
         "In the middle of the left-hand lane",
         "On the right-hand side of the road"
       ],
-      "question": "Where should you position your motorcycle when preparing to turn right in this situation?",
-      "type": "image_question",
+      "question": "A first-person view from a motorcycle on a single carriageway road approaching a right-hand turn into a side road. There is a white line in the middle of the road. Where should you position your motorcycle when preparing to turn right in this situation?",
+      "type": "multiple_choice",
       "correctAnswer": 0,
       "explanation": "When turning right from a major road into a minor road, you should position yourself just to the left of the centre line to allow other traffic to pass on your left",
-      "imageAlt": "A motorcyclist on a two-lane road preparing to turn right into a side street",
-      "id": "mt-im-0038"
+      "id": "mt-im-0038",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "question": "What does this temporary sign warn you about?",
-      "imageAlt": "A yellow warning sign showing a car kicking up stones behind it",
+      "type": "multiple_choice",
+      "question": "A temporary yellow diamond-shaped or rectangular sign with a car symbol and small 'flying' dots representing stones behind the rear wheels. What does this temporary sign warn you about?",
       "explanation": "Loose chippings are common after road resurfacing. They can significantly reduce your grip and cause your motorcycle to skid if you brake or turn sharply",
       "correctAnswer": 3,
-      "imageDescription": "A temporary yellow diamond-shaped or rectangular sign with a car symbol and small 'flying' dots representing stones behind the rear wheels",
       "options": [
         "Uneven road surface ahead",
         "Soft verges for the next two miles",
         "Danger of falling rocks",
         "Risk of loose chippings on the road"
       ],
-      "id": "mt-im-0039"
+      "id": "mt-im-0039",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 1,
       "explanation": "Hazard warning lines have longer painted strokes and shorter gaps than normal lane lines. They warn you of a hazard ahead, such as a junction or a bend",
-      "imageAlt": "A road with long white broken lines in the centre and shorter gaps between them",
-      "question": "What is the meaning of the change in the white centre lines seen here?",
-      "type": "image_question",
+      "question": "A point-of-view shot from a motorcycle on a straight road where the white dashed line in the middle changes from short dashes to much longer dashes with shorter gaps. What is the meaning of the change in the white centre lines seen here?",
+      "type": "multiple_choice",
       "options": [
         "The speed limit is increasing",
         "You are approaching a hazard",
         "Overtaking is strictly prohibited",
         "You are entering a high-speed dual carriageway"
       ],
-      "imageDescription": "A point-of-view shot from a motorcycle on a straight road where the white dashed line in the middle changes from short dashes to much longer dashes with shorter gaps",
-      "id": "mt-im-0040"
+      "id": "mt-im-0040",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A sunny day scene showing a motorcycle moving along a road where parts of the asphalt look wet, dark, and reflective despite there being no rain",
       "options": [
         "The road is wet from a localized shower",
         "Oil has been spilled across the lane",
         "The road surface is softening in the heat",
         "The road has been recently polished"
       ],
-      "type": "image_question",
-      "question": "What should you be aware of when riding on this type of road surface in very hot weather?",
-      "imageAlt": "A motorcycle riding on a road where the tarmac looks shiny and dark under bright sunlight",
+      "type": "multiple_choice",
+      "question": "A sunny day scene showing a motorcycle moving along a road where parts of the asphalt look wet, dark, and reflective despite there being no rain. What should you be aware of when riding on this type of road surface in very hot weather?",
       "explanation": "When the weather is very hot, the surface of a tarmac road can melt and become 'fatty', making it very slippery for motorcycle tyres",
       "correctAnswer": 2,
-      "id": "mt-im-0041"
+      "id": "mt-im-0041",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A blue circular sign with the number 30 and a red diagonal line across it",
       "explanation": "When seeing an 'End of Minimum Speed' sign (a blue circle with a red diagonal line), you must still drive safely but the specific minimum speed requirement no longer applies",
       "correctAnswer": 1,
-      "type": "image_question",
-      "question": "What does this sign mean?",
-      "imageDescription": "A blue circular sign with the number '30' in white. A red diagonal strike-through line runs from the top right to bottom left",
+      "type": "multiple_choice",
+      "question": "A blue circular sign with the number '30' in white. A red diagonal strike-through line runs from the top right to bottom left. What does the sign mean?",
       "options": [
         "The end of the 30 mph speed limit",
         "The end of the 30 mph minimum speed zone",
         "Minimum speed of 30 mph ahead",
         "Maximum speed limit of 30 mph starts here"
       ],
-      "id": "mt-im-0042"
+      "id": "mt-im-0042",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -14681,33 +14640,30 @@
         "Only motorcycles are allowed to cross this area",
         "You may enter if the road is clear"
       ],
-      "imageDescription": "A view of a road where a slip road joins. Between the main lane and the slip road is an area of white diagonal 'chevron' markings surrounded by a continuous solid white border",
-      "imageAlt": "An area of the road with white diagonal stripes bordered by a solid white line",
       "explanation": "White diagonal stripes or chevrons framed by a solid white line are used to separate traffic lanes. You must not enter this area except in a real emergency",
       "correctAnswer": 0,
-      "type": "image_question",
-      "question": "What do the road markings shown here mean?",
-      "id": "mt-im-0043"
+      "type": "multiple_choice",
+      "question": "A view of a road where a slip road joins. Between the main lane and the slip road is an area of white diagonal 'chevron' markings surrounded by a continuous solid white border. What do the road markings mean?",
+      "id": "mt-im-0043",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 3,
       "explanation": "Tram drivers cannot deviate from their tracks. You should give them plenty of room and be particularly careful when crossing the tracks, especially in wet weather",
-      "imageAlt": "A motorcycle following a tram on a city street",
-      "question": "Why should you take extra care when riding near a tram as shown?",
-      "type": "image_question",
+      "question": "A city center street scene showing a motorcycle positioned behind a tram. There are metal rails embedded in the road surface. Why should you take extra care when riding near a tram as shown?",
+      "type": "multiple_choice",
       "options": [
         "The tram will always stop for you",
         "Trams can steer around obstacles",
         "Trams have very short stopping distances",
         "Trams cannot steer to avoid you"
       ],
-      "imageDescription": "A city center street scene showing a motorcycle positioned behind a tram. There are metal rails embedded in the road surface",
-      "id": "mt-im-0044"
+      "id": "mt-im-0044",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What must you do when approaching this junction?",
-      "type": "image_question",
-      "imageAlt": "A red hexagonal sign with the word STOP on it, next to a solid white line across the road",
+      "question": "The view from a motorcycle approaching a junction. There is a red hexagonal STOP sign on the left and a solid white line across the mouth of the junction. What must you do when approaching this junction?",
+      "type": "multiple_choice",
       "correctAnswer": 2,
       "explanation": "At a junction with 'Stop' signs and a solid white 'Stop' line, you must bring your motorcycle to a complete standstill before proceeding, even if the road looks clear",
       "options": [
@@ -14716,26 +14672,24 @@
         "Stop completely before the white line",
         "Stop only if turning right"
       ],
-      "imageDescription": "The view from a motorcycle approaching a junction. There is a red hexagonal STOP sign on the left and a solid white line across the mouth of the junction",
-      "id": "mt-im-0045"
+      "id": "mt-im-0045",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A brown rectangular directional sign featuring a white silhouette of an elephant and a white arrow pointing to the left",
       "options": [
         "Danger of wild animals crossing",
         "Route to a tourist attraction",
         "Rest area for heavy vehicles",
         "Zebra crossing ahead"
       ],
-      "imageAlt": "A brown rectangular sign with a white elephant symbol and an arrow",
       "explanation": "Signs with a brown background provide directions to tourist attractions, such as theme parks, historic houses, or zoos",
       "correctAnswer": 1,
-      "type": "image_question",
-      "question": "What does the color of this sign indicate?",
-      "id": "mt-im-0046"
+      "type": "multiple_choice",
+      "question": "A brown rectangular directional sign featuring a white silhouette of an elephant and a white arrow pointing to the left. What does the color of the sign indicate?",
+      "id": "mt-im-0046",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A first-person view from a motorcycle on a wet motorway during rain. Fine spray is coming off the tires of the car in front",
       "options": [
         "4 seconds",
         "2 seconds",
@@ -14744,59 +14698,56 @@
       ],
       "correctAnswer": 0,
       "explanation": "In wet weather, visibility is reduced and tyres have less grip. You should double the standard two-second gap to four seconds to provide a safe stopping distance",
-      "imageAlt": "A motorcycle following a car on a motorway in heavy rain",
-      "question": "What is the minimum time gap you should maintain behind the vehicle in front in these conditions?",
-      "type": "image_question",
-      "id": "mt-im-0047"
+      "question": "A first-person view from a motorcycle on a wet motorway during rain. Fine spray is coming off the tires of the car in front. What is the minimum time gap you should maintain behind the vehicle in front in these conditions?",
+      "type": "multiple_choice",
+      "id": "mt-im-0047",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "Triangular signs with a red border warn you of dangers ahead. One with a car and a motorcycle 'jumping' indicates a hump bridge. Just because the road is clear doesn't mean it's safe to speed over it",
       "correctAnswer": 3,
-      "imageAlt": "A red triangular sign with a black symbol of a hump bridge",
-      "type": "image_question",
-      "question": "What does this warning sign mean?",
+      "type": "multiple_choice",
+      "question": "A warning sign (red triangle) featuring a black silhouette of a bridge with a humped road surface over water. What does the sign mean?",
       "options": [
         "Low bridge ahead",
         "Opening bridge ahead",
         "Uneven road for 1 mile",
         "Hump bridge ahead"
       ],
-      "imageDescription": "A warning sign (red triangle) featuring a black silhouette of a bridge with a humped road surface over water",
-      "id": "mt-im-0048"
+      "id": "mt-im-0048",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "A blue circle with a red border and a single red diagonal line indicates that waiting is prohibited. You may stop briefly to pick up or set down passengers, but you cannot park",
       "correctAnswer": 1,
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "No stopping (Clearway)",
         "No waiting",
         "Entry prohibited for motor vehicles",
         "National speed limit applies"
       ],
-      "imageAlt": "A circular road sign with a blue background, a red border, and one red diagonal line",
-      "imageDescription": "A standard UK 'No Waiting' sign (Diagram 636) on a post against a clear sky",
-      "question": "What does this road sign mean?",
-      "id": "mt-im-0049"
+      "question": "A standard UK 'No Waiting' sign (Diagram 636) on a post against a clear sky. What does this road sign mean?",
+      "id": "mt-im-0049",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 0,
       "explanation": "When it is raining or the road is wet, your stopping distance will be at least double that of a dry road because your tyres have less grip",
-      "imageDescription": "A first-person view from a motorcycle cockpit looking through a rain-streaked visor at a car ahead on a wet motorway",
-      "question": "Based on these weather conditions, how much should you increase your following distance?",
+      "question": "A first-person view from a motorcycle cockpit looking through a rain-streaked visor at a car ahead on a wet motorway. Based on these weather conditions, how much should you increase your following distance?",
       "options": [
         "At least double",
         "At least ten times",
         "The same as in dry weather",
         "Half the usual distance"
       ],
-      "imageAlt": "A motorcyclist riding on a tarmac road during a rainstorm with visible surface spray",
-      "id": "mt-im-0050"
+      "id": "mt-im-0050",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "The 'Two-way traffic' sign warns you that the one-way street or dual carriageway you are on is ending, and you will soon face oncoming traffic",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 2,
       "options": [
         "Give way to oncoming traffic",
@@ -14804,120 +14755,110 @@
         "Two-way traffic straight ahead",
         "One-way street ends ahead"
       ],
-      "imageAlt": "A triangular warning sign with two vertical black arrows pointing in opposite directions (up and down)",
-      "imageDescription": "A UK warning sign for two-way traffic straight ahead, positioned on a grass verge",
-      "question": "What does this sign warn you about?",
-      "id": "mt-im-0051"
+      "question": "A UK warning sign for two-way traffic straight ahead, positioned on a grass verge. What does the sign warn you about?",
+      "id": "mt-im-0051",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A motorway at night with white studs between lanes and a row of green studs marking the start of an exit slip road",
-      "question": "What is the purpose of the green reflective studs shown in this image?",
+      "question": "A motorway at night with white studs between lanes and a row of green studs marking the start of an exit slip road. What is the purpose of the green reflective studs shown ?",
       "options": [
         "The right-hand edge of the motorway",
         "The boundary between the hard shoulder and carriageway",
         "A hazardous bend in the road",
         "The entrance or exit of a slip road"
       ],
-      "imageAlt": "A night-time view of a motorway showing various coloured reflective studs on the road surface",
       "explanation": "Green road studs (reflectors) are used to mark the edge of the main carriageway where it crosses the entrance or exit of a slip road",
       "correctAnswer": 3,
-      "type": "image_question",
-      "id": "mt-im-0052"
+      "type": "multiple_choice",
+      "id": "mt-im-0052",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 1,
       "explanation": "A white rectangle with a black 'T' shape indicates a dead end or a road with no through access for motor vehicles",
-      "imageDescription": "A UK 'No through road' sign mounted on a lamp post at the entrance to a residential street",
-      "question": "What does this sign indicate?",
-      "imageAlt": "A rectangular blue sign with a white border and a white 'T' shape",
+      "question": "A UK 'No through road' sign mounted on a lamp post at the entrance to a residential street. What does the sign indicate?",
       "options": [
         "T-junction ahead",
         "No through road",
         "Turn left or right only",
         "Tram stop ahead"
       ],
-      "id": "mt-im-0053"
+      "id": "mt-im-0053",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A 'Side winds' warning sign located on an exposed bridge or open motorway stretch",
-      "question": "What should you do when you see this sign?",
+      "question": "A 'Side winds' warning sign located on an exposed bridge or open motorway stretch. What should you do when you see the sign?",
       "options": [
         "Be prepared to lean or adjust for side winds",
         "The road ahead is closed to motorcycles",
         "A low-flying aircraft zone",
         "Strong headwinds will reduce your fuel economy"
       ],
-      "imageAlt": "A triangular sign showing a windsock tilted by a gust of wind",
       "correctAnswer": 0,
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "High winds can cause a motorcycle to drift or be blown off course. You should give high-sided vehicles, cyclists, and horses extra room as they are also vulnerable to gusts",
-      "id": "mt-im-0054"
+      "id": "mt-im-0054",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 2,
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "Zig-zag lines near a pedestrian crossing mean no parking and no overtaking. Overtaking the lead vehicle could lead to a collision if a pedestrian is crossing",
-      "imageDescription": "A zebra crossing with black and white poles (Belisha beacons) and white zig-zag markings on the approach",
-      "question": "What do these road markings mean?",
-      "imageAlt": "White zig-zag lines painted on the road approaching a zebra crossing",
+      "question": "A zebra crossing with black and white poles (Belisha beacons) and white zig-zag markings on the approach. What do these road markings mean?",
       "options": [
         "You may park here briefly to use a shop",
         "You can overtake if the road is clear",
         "You must not park or overtake in this area",
         "You should speed up to clear the area quickly"
       ],
-      "id": "mt-im-0055"
+      "id": "mt-im-0055",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A narrow road leading up to a steep hump-backed bridge with a warning sign and road markings",
-      "question": "What does this combination of sign and road marking indicate?",
+      "question": "A narrow road leading up to a steep hump-backed bridge with a warning sign and road markings. What does this combination of sign and road marking indicate?",
       "options": [
         "The road surface is uneven for 100 yards",
         "Speed humps are located ahead",
         "The road is prone to flooding",
         "A hump bridge which may restrict your view"
       ],
-      "imageAlt": "A triangular sign showing a hump bridge, with the word 'SLOW' painted on the road surface below it",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 3,
       "explanation": "The red triangle with a 'hump' symbol warns of a bridge that might be steep or have limited visibility; a 'slow' marking reinforces the need for caution",
-      "id": "mt-im-0056"
+      "id": "mt-im-0056",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "The blue circular sign with a white bicycle and a pedestrian indicates a route that is shared by both, with no physical separation between the two",
       "correctAnswer": 1,
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Cycles only, no pedestrians allowed",
         "A route for pedestrians and cyclists only",
         "Segregated cycle and pedestrian path",
         "No motor vehicles allowed on the pavement"
       ],
-      "imageAlt": "A blue circular sign with white symbols of a person walking and a bicycle",
-      "imageDescription": "A shared-use path sign at the start of a wide pavement or park path",
-      "question": "What does this sign mean?",
-      "id": "mt-im-0057"
+      "question": "A shared-use path sign at the start of a wide pavement or park path. What does the sign mean?",
+      "id": "mt-im-0057",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "An urban T-junction featuring a mini-roundabout with various cars approaching",
-      "question": "What is the rule for giving way at this road feature?",
+      "question": "An urban T-junction featuring a mini-roundabout with various cars approaching. What is the rule for giving way at this road feature?",
       "options": [
         "Give way to traffic from the right",
         "Give way to traffic from the left",
         "Stop at the line even if it is clear",
         "Motorcycles have priority over cars here"
       ],
-      "imageAlt": "A mini-roundabout marked by a white painted circle and three white arrows",
       "correctAnswer": 0,
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "When approaching a mini-roundabout, you must give way to traffic approaching from your right, just like a conventional roundabout",
-      "id": "mt-im-0058"
+      "id": "mt-im-0058",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A motorway gantry with electronic signals; the leftmost lane shows a red X while others show speed limits",
-      "question": "What does the red 'X' on the overhead gantry mean?",
-      "imageAlt": "An overhead digital gantry sign showing a red 'X' over the left-hand lane",
+      "question": "A motorway gantry with electronic signals; the leftmost lane shows a red X while others show speed limits. What does the red 'X' on the overhead gantry mean?",
       "options": [
         "The lane is for emergency vehicles only",
         "Check your speed and stay in the lane",
@@ -14925,12 +14866,13 @@
         "The lane is clear for high-speed travel"
       ],
       "explanation": "A red cross (X) above a lane on a motorway means that the lane is closed. You must move out of that lane as soon as it is safe to do so",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 2,
-      "id": "mt-im-0059"
+      "id": "mt-im-0059",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 1,
       "explanation": "Riding over metal surfaces like manhole covers or cattle grids can be extremely slippery for motorcycles, especially when wet. Avoid leaning or braking sharply on them",
       "options": [
@@ -14939,16 +14881,13 @@
         "Stand up on your footpegs to absorb vibration",
         "Expect a sudden increase in tyre grip"
       ],
-      "imageAlt": "A series of parallel metal bars set into the road surface (a cattle grid)",
-      "imageDescription": "A rural road with a cattle grid across its width and a warning sign showing a cow",
-      "question": "What is the main hazard when crossing this feature on a motorcycle?",
-      "id": "mt-im-0060"
+      "question": "A rural road with a cattle grid across its width and a warning sign showing a cow. What is the main hazard when crossing this feature on a motorcycle?",
+      "id": "mt-im-0060",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "Zig-zag markings outside a school mean you must not park or stop there, even to set down or pick up passengers",
-      "question": "What do these yellow zig-zag markings mean?",
-      "imageAlt": "Yellow zig-zag lines on the road with the words 'SCHOOL KEEP CLEAR' painted alongside them",
-      "imageDescription": "A close-up view of a road surface outside a primary school showing yellow zig-zag markings and 'SCHOOL KEEP CLEAR' text",
+      "question": "A close-up view of a road surface outside a primary school showing yellow zig-zag markings and 'SCHOOL KEEP CLEAR' text. What do these yellow zig-zag markings mean?",
       "correctAnswer": 2,
       "options": [
         "No overtaking is allowed here",
@@ -14956,23 +14895,23 @@
         "You must not park or stop at any time",
         "Only motorcycles are allowed to park here"
       ],
-      "type": "image_question",
-      "id": "mt-im-0061"
+      "type": "multiple_choice",
+      "id": "mt-im-0061",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 0,
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "To give you an instruction",
         "To warn you of a hazard ahead",
         "To give you information about a route",
         "To tell you about a speed limit"
       ],
-      "imageAlt": "A circular blue sign with a white arrow pointing to the left",
-      "imageDescription": "A standard UK road sign: a circular blue background with a white arrow pointing diagonally down to the left",
       "explanation": "Blue signs with white borders are used to provide positive instructions, such as 'turn left' or 'minimum speed'",
-      "question": "What is the primary purpose of a circular sign with a blue background?",
-      "id": "mt-im-0062"
+      "question": "A standard UK road sign: a circular blue background with a white arrow pointing diagonally down to the left. What is the primary purpose of a circular sign with a blue background?",
+      "id": "mt-im-0062",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -14981,16 +14920,15 @@
         "Amber",
         "White"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 1,
-      "question": "What colour are the reflective studs between the left-hand lane and the hard shoulder on a motorway?",
+      "question": "A night-time view of a three-lane motorway showing the left-hand edge of the road marked by red reflective studs. What colour are the reflective studs between the left-hand lane and the hard shoulder on a motorway?",
       "explanation": "Reflective studs on the left side of a motorway, between the hard shoulder and the carriageway, are red to help you identify the road edge in the dark",
-      "imageDescription": "A night-time view of a three-lane motorway showing the left-hand edge of the road marked by red reflective studs",
-      "imageAlt": "The edge of a motorway at night with red reflective studs glowing between the left lane and the hard shoulder",
-      "id": "mt-im-0063"
+      "id": "mt-im-0063",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Lean your body the opposite way",
         "Apply the front brake firmly",
@@ -14998,14 +14936,13 @@
         "Apply pressure to the right-hand handlebar"
       ],
       "correctAnswer": 3,
-      "imageDescription": "A point-of-view shot from a motorcycle rider's perspective approaching a sharp right-hand bend, showing the rider's hands on the handlebars",
-      "imageAlt": "A motorcyclist leaning into a right-hand bend on a country road",
-      "question": "At higher speeds, which technique should you use to help the motorcycle lean into this right-hand bend?",
+      "question": "A point-of-view shot from a motorcycle rider's perspective approaching a sharp right-hand bend, showing the rider's hands on the handlebars. At higher speeds, which technique should you use to help the motorcycle lean into this right-hand bend?",
       "explanation": "Counter-steering involves pushing on the handlebar in the direction you want to turn to initiate a lean at higher speeds",
-      "id": "mt-im-0064"
+      "id": "mt-im-0064",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Stop inside the green cycle box",
         "Stop behind the first white line",
@@ -15013,18 +14950,15 @@
         "Filter to the front and wait on the green box"
       ],
       "correctAnswer": 1,
-      "imageDescription": "An approach to a set of traffic lights showing an Advanced Stop Line (ASL) for cyclists, marked with a green box and a bicycle symbol",
-      "imageAlt": "A road junction with a green box for cyclists and two separate stop lines",
-      "question": "When the traffic light is red, where should you position your motorcycle at this junction?",
+      "question": "An approach to a set of traffic lights showing an Advanced Stop Line (ASL) for cyclists, marked with a green box and a bicycle symbol. When the traffic light is red, where should you position your motorcycle at this junction?",
       "explanation": "You must always stop behind the first white line at a junction with a cycle box (Advanced Stop Line) when the lights are red",
-      "id": "mt-im-0065"
+      "id": "mt-im-0065",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A triangular UK warning sign with a red border and a black silhouette of a car with 'S' shaped skid marks behind it",
-      "imageAlt": "A red triangular sign with a black symbol of a car skidding",
-      "question": "What does this warning sign mean?",
+      "question": "A triangular UK warning sign with a red border and a black silhouette of a car with 'S' shaped skid marks behind it. What does the sign mean?",
       "explanation": "This sign warns you that the road ahead is likely to be slippery, often due to oil, rain, or mud",
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "No motor vehicles allowed",
         "Low-flying aircraft ahead",
@@ -15032,37 +14966,36 @@
         "Loose chippings on the road"
       ],
       "correctAnswer": 2,
-      "id": "mt-im-0066"
+      "id": "mt-im-0066",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "Double white lines where the line nearest to you is solid mean you must not cross or straddle the line except in specific limited circumstances",
-      "question": "What do these road markings tell you?",
-      "imageAlt": "A rural road with double white lines in the center; the line closest to the viewer is solid, the other is broken",
-      "imageDescription": "A photograph of a single-carriageway road with double white lines. The line on the rider's side is solid, while the line on the opposite side is broken",
+      "question": "A photograph of a single-carriageway road with double white lines. The line on the rider's side is solid, while the line on the opposite side is broken. What do these road markings tell you?",
       "correctAnswer": 0,
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "You must not cross the line to overtake",
         "You are allowed to park on this road",
         "You may cross the line if the road is clear",
         "Overtaking is encouraged here"
       ],
-      "id": "mt-im-0067"
+      "id": "mt-im-0067",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "An open level crossing with no gates or barriers, marked with a 'St Andrew's Cross' sign",
-      "imageDescription": "A railway level crossing in a rural area that has no barriers or gates, featuring a standard 'X' shaped warning sign and light signals",
       "explanation": "Level crossings with no gates or barriers are high-risk; you must be prepared to stop if the red lights flash",
-      "question": "What must you do when approaching this open level crossing?",
+      "question": "A railway level crossing in a rural area that has no barriers or gates, featuring a standard 'X' shaped warning sign and light signals. What must you do when approaching this open level crossing?",
       "correctAnswer": 2,
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Speed up to cross quickly",
         "Wait for a green light before crossing",
         "Stop if the red lights flash",
         "Only cross if a train is not visible"
       ],
-      "id": "mt-im-0068"
+      "id": "mt-im-0068",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -15071,49 +15004,44 @@
         "Turn right if the road is clear",
         "Go in the direction of the arrow if it's safe"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 3,
-      "imageDescription": "A set of traffic lights at a junction where the main signal is red, but a secondary green filter arrow is illuminated, pointing left",
-      "imageAlt": "Traffic lights showing a main red light but a separate green arrow pointing to the left",
-      "question": "What does this green filter light mean?",
+      "question": "A set of traffic lights at a junction where the main signal is red, but a secondary green filter arrow is illuminated, pointing left. What does this green filter light mean?",
       "explanation": "A green arrow filter light means you may proceed in that direction regardless of the main red light, provided it is safe",
-      "id": "mt-im-0069"
+      "id": "mt-im-0069",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 1,
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Accelerate quickly over it",
         "Avoid braking or steering sharply",
         "Always ride on the far left of the cover",
         "Flash your lights at oncoming traffic"
       ],
-      "imageAlt": "A large rectangular metal manhole cover in the middle of a wet road",
-      "imageDescription": "A close-up of a wet asphalt road surface featuring a large, smooth metal utility cover located directly in the riding line",
       "explanation": "Metal manhole covers are extremely slippery when wet; you should avoid leaning the bike or braking hard while crossing them",
-      "question": "How should you deal with this feature when the road surface is wet?",
-      "id": "mt-im-0070"
+      "question": "A close-up of a wet asphalt road surface featuring a large, smooth metal utility cover located directly in the riding line. How should you deal with this feature when the road surface is wet?",
+      "id": "mt-im-0070",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 0,
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Tourist information or attraction",
         "A local recycling centre",
         "A temporary road hazard",
         "Primary route directions"
       ],
-      "imageAlt": "A brown rectangular sign with a white caravan symbol and an arrow",
-      "imageDescription": "A UK directional road sign with a brown background and white text/symbols, showing a caravan symbol and a distance",
       "explanation": "A brown sign with white symbols is used to provide directions to tourist attractions or facilities",
-      "question": "What does the colour of this sign indicate?",
-      "id": "mt-im-0071"
+      "question": "A UK directional road sign with a brown background and white text/symbols, showing a caravan symbol and a distance. What does the colour of the sign indicate?",
+      "id": "mt-im-0071",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "Windy conditions can cause 'buffeting' or sudden gusts when passing large vehicles or gaps in hedges; keep a firm grip and allow extra room",
-      "question": "What does this sign warn you about?",
-      "imageAlt": "A sign showing a windsock symbol inside a red triangle",
-      "imageDescription": "A triangular warning sign with a red border containing a black silhouette of a windsock, set against a background of open fields",
+      "question": "A triangular warning sign with a red border containing a black silhouette of a windsock, set against a background of open fields. What does the sign warn you about?",
       "correctAnswer": 2,
       "options": [
         "A light aircraft strip is nearby",
@@ -15121,8 +15049,9 @@
         "Side winds are likely ahead",
         "Air fresheners are being sold nearby"
       ],
-      "type": "image_question",
-      "id": "mt-im-0072"
+      "type": "multiple_choice",
+      "id": "mt-im-0072",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -15131,46 +15060,43 @@
         "Parking for cars and motorcycles only",
         "Limited access for cars only"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 1,
-      "imageAlt": "A circular sign with a red border containing an image of a car and a motorcycle",
-      "imageDescription": "A standard UK road sign: a red-bordered circle with a white background featuring a silhouette of a car above a silhouette of a motorcycle",
       "explanation": "Circular signs with red borders are generally prohibitive. This specific sign prohibits all motor vehicles, including motorcycles",
-      "question": "What does this traffic sign mean?",
-      "id": "mt-im-0073"
+      "question": "A standard UK road sign: a red-bordered circle with a white background featuring a silhouette of a car above a silhouette of a motorcycle. What does this traffic sign mean?",
+      "id": "mt-im-0073",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 0,
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Crossing the rails at a shallow angle",
         "Crossing the rails at a right angle",
         "Riding on the metal rails in the wet",
         "Accelerating hard over the rails"
       ],
-      "question": "What is the greatest risk to a motorcyclist when riding over these tram rails?",
+      "question": "A perspective view from a motorcycle's handlebars looking ahead at tram tracks that run parallel to the direction of travel and then curve across the lane. What is the greatest risk to a motorcyclist when riding over these tram rails?",
       "explanation": "Tram rails can be very slippery and can catch a motorcycle's tires. Crossing them at a shallow angle increases the risk of the wheels sliding or getting stuck",
-      "imageAlt": "A motorcycle approaching tram tracks embedded in the road surface",
-      "imageDescription": "A perspective view from a motorcycle's handlebars looking ahead at tram tracks that run parallel to the direction of travel and then curve across the lane",
-      "id": "mt-im-0074"
+      "id": "mt-im-0074",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What do these road markings with a solid white border mean?",
+      "question": "A road surface showing 'hatched' markings (diagonal white stripes) surrounded by a continuous, solid white line used to separate lanes of traffic. What do these road markings with a solid white border mean?",
       "explanation": "White diagonal stripes with a solid white border are used to separate traffic streams. You must not enter this area except in an emergency",
-      "imageDescription": "A road surface showing 'hatched' markings (diagonal white stripes) surrounded by a continuous, solid white line used to separate lanes of traffic",
-      "imageAlt": "Diagonal white stripes on the road bordered by a solid white line",
       "correctAnswer": 2,
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "You may enter to overtake slow vehicles",
         "You should use this area to turn right",
         "You must not enter this area except in an emergency",
         "You may park here temporarily"
       ],
-      "id": "mt-im-0075"
+      "id": "mt-im-0075",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Steep hill upwards ahead",
         "Hidden dip ahead",
@@ -15178,18 +15104,15 @@
         "Steep hill downwards ahead"
       ],
       "correctAnswer": 3,
-      "imageDescription": "A UK warning sign: a red triangle with a white background and a black silhouette of a car descending a slope, with the text '10%' inside",
-      "imageAlt": "A triangular warning sign showing a car pointing down a slope with '10%' written on it",
       "explanation": "Triangular signs are warning signs. This one warns you that there is a steep hill downwards so you may need to use a lower gear to control your speed",
-      "question": "You see this sign while riding. What should you be prepared for?",
-      "id": "mt-im-0076"
+      "question": "A UK warning sign: a red triangle with a white background and a black silhouette of a car descending a slope, with the text '10%' inside. You see the sign while riding. What should you be prepared for?",
+      "id": "mt-im-0076",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A standard UK three-aspect traffic light with the bottom green light illuminated. The road ahead is clear except for a pedestrian stepping off the kerb",
-      "imageAlt": "A set of traffic lights showing a green light",
       "explanation": "A green signal means you may go if the way is clear, but you must take extra care and give way to pedestrians already crossing the road",
-      "question": "What does this light signal mean?",
-      "type": "image_question",
+      "question": "A standard UK three-aspect traffic light with the bottom green light illuminated. The road ahead is clear except for a pedestrian stepping off the kerb. What does this light signal mean?",
+      "type": "multiple_choice",
       "options": [
         "Go immediately as you have priority",
         "Go only if the way is clear, giving way to pedestrians already crossing",
@@ -15197,12 +15120,11 @@
         "Wait for a green filter arrow to appear"
       ],
       "correctAnswer": 1,
-      "id": "mt-im-0077"
+      "id": "mt-im-0077",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A view of a motorway at night with reflective studs illuminated by headlights",
-      "imageDescription": "A night-time view of a three-lane motorway showing the reflective studs between the left-most running lane and the hard shoulder",
-      "question": "What colour are the reflective studs between the carriage and the hard shoulder?",
+      "question": "A night-time view of a three-lane motorway showing the reflective studs between the left-most running lane and the hard shoulder. What colour are the reflective studs between the carriage and the hard shoulder?",
       "explanation": "On a motorway, red reflective studs are placed between the left-hand lane and the hard shoulder to help drivers identify the edge of the carriageway in poor visibility",
       "options": [
         "Red",
@@ -15210,12 +15132,13 @@
         "Amber",
         "Green"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 0,
-      "id": "mt-im-0078"
+      "id": "mt-im-0078",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "A parking area for bicycles only",
         "A shared path for motorcycles and cycles",
@@ -15223,15 +15146,14 @@
         "An advisory cycle lane; ride in it if necessary"
       ],
       "correctAnswer": 2,
-      "imageAlt": "A blue circular sign with a white bicycle symbol",
-      "imageDescription": "A blue circular sign featuring a white bicycle symbol, located next to a lane separated by a solid white line",
       "explanation": "This sign indicates a mandatory cycle lane. Motorcyclists and other motor vehicles are prohibited from using this lane during its hours of operation",
-      "question": "What does this sign mean for motorcyclists?",
-      "id": "mt-im-0079"
+      "question": "A blue circular sign featuring a white bicycle symbol, located next to a lane separated by a solid white line. What does the sign mean for motorcyclists?",
+      "id": "mt-im-0079",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 3,
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "The vehicle is limited to 40 mph",
         "The vehicle is carrying a hazardous load",
@@ -15239,16 +15161,13 @@
         "The vehicle may swing out wide when turning at junctions"
       ],
       "explanation": "A 'long vehicle' sign on the rear of a vehicle indicates it may need to swing out wide to the left or right to negotiate turns safely. Don't try to overtake it at junctions",
-      "question": "What should you be aware of when following a vehicle displaying this sign?",
-      "imageDescription": "The back of a large articulated HGV featuring a yellow and red reflective 'LONG VEHICLE' plate. The vehicle is approaching a left-hand turn",
-      "imageAlt": "The rear of a heavy goods vehicle with a 'LONG VEHICLE' plate",
-      "id": "mt-im-0080"
+      "question": "The back of a large articulated HGV featuring a yellow and red reflective 'LONG VEHICLE' plate. The vehicle is approaching a left-hand turn. What should you be aware of when following a vehicle displaying the sign?",
+      "id": "mt-im-0080",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What should you do if this appears in your mirrors?",
+      "question": "A view through a motorcycle's mirror showing a police car with active blue flashing lights approaching from behind on a busy road. What should you do if this appears in your mirrors?",
       "explanation": "When an emergency vehicle with blue flashing lights is behind you, you should pull over where it is safe to do so to let it pass, without breaking any traffic laws",
-      "imageDescription": "A view through a motorcycle's mirror showing a police car with active blue flashing lights approaching from behind on a busy road",
-      "imageAlt": "A police car with blue lights flashing in the motorcycle's rear-view mirror",
       "correctAnswer": 1,
       "options": [
         "Speed up to stay ahead of it",
@@ -15256,11 +15175,12 @@
         "Stop immediately in the middle of your lane",
         "Maintain your speed and ignore it"
       ],
-      "type": "image_question",
-      "id": "mt-im-0081"
+      "type": "multiple_choice",
+      "id": "mt-im-0081",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Parking for motorcycles only",
         "No parking for motorcycles",
@@ -15268,11 +15188,10 @@
         "A motorcycle showroom is ahead"
       ],
       "correctAnswer": 0,
-      "imageAlt": "A rectangular blue sign with a white 'P' and a motorcycle symbol",
-      "imageDescription": "A blue rectangular sign with a white 'P' and a white silhouette of a motorcycle underneath it",
       "explanation": "An upright sign with a blue 'P' and a motorcycle symbol indicates a parking area specifically designated for motorcycles",
-      "question": "What does this sign indicate?",
-      "id": "mt-im-0082"
+      "question": "A blue rectangular sign with a white 'P' and a white silhouette of a motorcycle underneath it. What does the sign indicate?",
+      "id": "mt-im-0082",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -15281,16 +15200,15 @@
         "A steep hill with two-way traffic",
         "Two-way traffic crosses the road ahead"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 3,
-      "imageAlt": "A triangular sign with two arrows pointing in opposite vertical directions",
-      "imageDescription": "A red triangular warning sign with a white background and two black arrows: one pointing up and one pointing down",
       "explanation": "The 'Two-way traffic' sign warns you that the road you are on will soon change from a one-way system or a dual carriageway to a two-way single carriageway",
-      "question": "What is the purpose of this warning sign?",
-      "id": "mt-im-0083"
+      "question": "A red triangular warning sign with a white background and two black arrows: one pointing up and one pointing down. What is the purpose of the sign?",
+      "id": "mt-im-0083",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "A route for heavy goods vehicles",
         "Directions to a tourist attraction",
@@ -15298,15 +15216,13 @@
         "An upcoming motorway service station"
       ],
       "correctAnswer": 1,
-      "imageDescription": "A brown directional road sign with white text and a white castle silhouette, pointing towards a 'Historic Castle'",
-      "imageAlt": "A brown rectangular sign with white text and a symbol of a castle",
-      "question": "What does the colour of this sign tell you?",
+      "question": "A brown directional road sign with white text and a white castle silhouette, pointing towards a 'Historic Castle'. What does the colour of the sign tell you?",
       "explanation": "A brown sign in the UK is used to provide directions to tourist attractions, such as museums, parks, or historic sites",
-      "id": "mt-im-0084"
+      "id": "mt-im-0084",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A circular traffic sign with a red border and pictures of a motorcycle and a car inside",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 2,
       "explanation": "A circular sign with a red border and a motorcycle over a car means that no motor vehicles are allowed past that point",
       "options": [
@@ -15315,9 +15231,9 @@
         "No motor vehicles allowed",
         "Route for motor vehicles only"
       ],
-      "imageDescription": "A standard UK 'No Motor Vehicles' sign: a white circle with a red border featuring a motorcycle symbol above a car symbol",
-      "question": "What does this sign mean?",
-      "id": "mt-im-0085"
+      "question": "A standard UK 'No Motor Vehicles' sign: a white circle with a red border featuring a motorcycle symbol above a car symbol. What does the sign mean?",
+      "id": "mt-im-0085",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 0,
@@ -15328,18 +15244,15 @@
         "Cycle path only; mopeds must stay on the road",
         "Parking for motorcycles and bicycles"
       ],
-      "imageDescription": "A UK mandatory traffic sign: blue circle with white symbols of a bicycle and a moped",
-      "question": "What does this sign indicate?",
-      "imageAlt": "A blue circular sign showing a white bicycle and a white moped",
-      "type": "image_question",
-      "id": "mt-im-0086"
+      "question": "A UK mandatory traffic sign: blue circle with white symbols of a bicycle and a moped. What does the sign indicate?",
+      "type": "multiple_choice",
+      "id": "mt-im-0086",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageAlt": "Road with long dashes and short gaps in the centre line",
+      "type": "multiple_choice",
       "correctAnswer": 3,
-      "question": "What do these centre-of-the-road markings mean?",
-      "imageDescription": "A road view showing hazard warning lines: white dashes in the middle of the road where the dashes are longer than the gaps",
+      "question": "A road view showing hazard warning lines: white dashes in the middle of the road where the dashes are longer than the gaps. What do these centre-of-the-road markings mean?",
       "options": [
         "You are approaching a motorway",
         "The speed limit is about to increase",
@@ -15347,7 +15260,8 @@
         "A hazard is ahead; do not overtake unless safe"
       ],
       "explanation": "Short white lines with large gaps in the center of the road indicate a hazard warning; you should be cautious and only overtake if it is safe",
-      "id": "mt-im-0087"
+      "id": "mt-im-0087",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 1,
@@ -15357,12 +15271,11 @@
         "Motorcycle showroom ahead",
         "Motorcycle rental location"
       ],
-      "imageDescription": "A UK information sign showing a white 'P' for parking on a blue background, with a white motorcycle symbol underneath",
       "explanation": "A rectangular blue sign with a white 'P' and a motorcycle symbol identifies a parking area reserved specifically for motorcycles",
-      "question": "What is indicated by this sign?",
-      "imageAlt": "A blue rectangular sign with a white 'P' and a motorcycle symbol",
-      "type": "image_question",
-      "id": "mt-im-0088"
+      "question": "A UK information sign showing a white 'P' for parking on a blue background, with a white motorcycle symbol underneath. What is indicated by the sign?",
+      "type": "multiple_choice",
+      "id": "mt-im-0088",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 2,
@@ -15373,15 +15286,13 @@
         "Give way to pedestrians already on the crossing",
         "Speed up to clear the crossing quickly"
       ],
-      "imageDescription": "A street scene at a pelican crossing. The traffic light is showing a flashing amber signal, and a pedestrian is halfway across the road",
-      "question": "The light is flashing amber. What should you do?",
-      "imageAlt": "A pelican crossing with a flashing amber light and a pedestrian on the crossing",
-      "type": "image_question",
-      "id": "mt-im-0089"
+      "question": "A street scene at a pelican crossing. The traffic light is showing a flashing amber signal, and a pedestrian is halfway across the road. The light is flashing amber. What should you do?",
+      "type": "multiple_choice",
+      "id": "mt-im-0089",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "Yellow zig-zag road markings outside a school gate",
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "Zig-zag markings outside schools mean you must not park or stop at all, even for picking up or dropping off passengers",
       "options": [
         "You must not stop or park here at any time",
@@ -15389,14 +15300,13 @@
         "Only motorcycles can park here",
         "You can stop here to drop off school children"
       ],
-      "imageDescription": "Yellow zig-zag markings on the road edge with the words 'SCHOOL KEEP CLEAR' painted nearby",
-      "question": "What do these road markings mean?",
+      "question": "Yellow zig-zag markings on the road edge with the words 'SCHOOL KEEP CLEAR' painted nearby. What do these road markings mean?",
       "correctAnswer": 0,
-      "id": "mt-im-0090"
+      "id": "mt-im-0090",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 1,
-      "imageDescription": "A UK warning sign: a red triangle with a white background showing a symbol of a car with wavy skid marks behind it",
       "options": [
         "Uneven road surface ahead",
         "Slippery road ahead",
@@ -15404,16 +15314,14 @@
         "Sharp bends ahead"
       ],
       "explanation": "A triangle with a car skidding indicates that the road surface ahead may be slippery; you should adjust your speed and avoid sudden braking",
-      "question": "You see this sign on a country road. What should you do?",
-      "imageAlt": "A triangular warning sign with a car and skid marks",
-      "type": "image_question",
-      "id": "mt-im-0091"
+      "question": "A UK warning sign: a red triangle with a white background showing a symbol of a car with wavy skid marks behind it. You see the sign on a country road. What should you do?",
+      "type": "multiple_choice",
+      "id": "mt-im-0091",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A blue sign showing a bus and a bicycle facing the opposite direction to a white arrow",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 3,
-      "imageDescription": "A blue rectangular sign with symbols for a bus and a bicycle separated from a thick white arrow by a vertical line",
       "options": [
         "A designated bus stop for cycles",
         "No buses or cycles allowed",
@@ -15421,26 +15329,26 @@
         "A contraflow bus and cycle lane ahead"
       ],
       "explanation": "A rectangular blue sign with a white bus and cycle symbol indicates a contraflow lane, where cycles and buses travel in the opposite direction to the rest of the traffic",
-      "question": "What does this sign mean?",
-      "id": "mt-im-0092"
+      "question": "A blue rectangular sign with symbols for a bus and a bicycle separated from a thick white arrow by a vertical line. What does the sign mean?",
+      "id": "mt-im-0092",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageAlt": "A circular sign with a red border and a bicycle symbol inside",
+      "type": "multiple_choice",
       "correctAnswer": 2,
-      "question": "What does this traffic sign mean?",
+      "question": "A UK prohibitory sign: a white circle with a red border containing a black symbol of a bicycle. What does this traffic sign mean?",
       "options": [
         "Cycle route ahead",
         "No motor vehicles allowed",
         "No cycling allowed",
         "Recommended route for pedal cycles"
       ],
-      "imageDescription": "A UK prohibitory sign: a white circle with a red border containing a black symbol of a bicycle",
       "explanation": "A sign with a red circle and a bicycle indicates that cycling is prohibited in that specific area",
-      "id": "mt-im-0093"
+      "id": "mt-im-0093",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What colour are the reflective studs on the left-hand edge of the motorway?",
+      "question": "A night-time view of a UK motorway. The focus is on the line of reflective studs separating the main lanes from the hard shoulder. What colour are the reflective studs on the left-hand edge of the motorway?",
       "explanation": "Studs on the left-hand edge of a motorway (between the carriageway and the hard shoulder) are red to help you identify the road edge in poor visibility",
       "options": [
         "White",
@@ -15448,17 +15356,14 @@
         "Green",
         "Amber"
       ],
-      "imageDescription": "A night-time view of a UK motorway. The focus is on the line of reflective studs separating the main lanes from the hard shoulder",
       "correctAnswer": 1,
-      "type": "image_question",
-      "imageAlt": "Motorway scene at night showing reflective studs on the left side",
-      "id": "mt-im-0094"
+      "type": "multiple_choice",
+      "id": "mt-im-0094",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageAlt": "A triangular warning sign showing a person digging",
-      "question": "What does this sign warn you of?",
-      "imageDescription": "A UK warning sign: a red triangle with a white background and a black symbol of a person using a shovel",
+      "type": "multiple_choice",
+      "question": "A UK warning sign: a red triangle with a white background and a black symbol of a person using a shovel. What does the sign warn you of?",
       "options": [
         "Roadworks ahead",
         "Pedestrians in the road",
@@ -15467,29 +15372,27 @@
       ],
       "explanation": "A red triangle with a symbol of a man working indicates that there are roadworks ahead; be alert for workers and machinery",
       "correctAnswer": 0,
-      "id": "mt-im-0095"
+      "id": "mt-im-0095",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageAlt": "A triangular warning sign showing a car driving off a pier into water",
-      "question": "What does this sign mean?",
+      "type": "multiple_choice",
+      "question": "A UK warning sign: a red triangle with a white background showing a symbol of a car falling over a vertical edge into water. What does the sign mean?",
       "options": [
         "Ford ahead",
         "Heavy rain likely",
         "Slippery road near a lake",
         "Quayside or river bank ahead"
       ],
-      "imageDescription": "A UK warning sign: a red triangle with a white background showing a symbol of a car falling over a vertical edge into water",
       "explanation": "A sign showing a car falling into water warns you that the road lead to a quayside or river bank",
       "correctAnswer": 3,
-      "id": "mt-im-0096"
+      "id": "mt-im-0096",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageAlt": "A circular blue sign with a white silhouette of a motorcycle",
+      "type": "multiple_choice",
       "correctAnswer": 2,
-      "question": "What does this mandatory road sign mean?",
-      "imageDescription": "A standard UK mandatory road sign: a blue circle containing a white silhouette of a motorcycle",
+      "question": "A standard UK mandatory road sign: a blue circle containing a white silhouette of a motorcycle. What does this mandatory road sign mean?",
       "options": [
         "No motorcycles allowed",
         "End of motorway",
@@ -15497,7 +15400,8 @@
         "Park here for motorcycles"
       ],
       "explanation": "A blue circle with an image of a motorcycle indicates a route or path that is for the use of motorcycles only",
-      "id": "mt-im-0097"
+      "id": "mt-im-0097",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "Green reflective studs are used to mark the boundary between the main carriageway and slip roads or lay-bys",
@@ -15507,17 +15411,15 @@
         "On the right-hand edge of the motorway",
         "Between the hard shoulder and the carriageway"
       ],
-      "imageDescription": "A photo of a motorway at night focusing on the slip road entrance, showing green reflective studs (cats' eyes) marking the crossing",
-      "question": "Where would you see green reflective studs on a motorway?",
+      "question": "A photo of a motorway at night focusing on the slip road entrance, showing green reflective studs (cats' eyes) marking the crossing. Where would you see green reflective studs on a motorway?",
       "correctAnswer": 0,
-      "imageAlt": "A night-time view of a motorway exit with green reflective studs on the road surface",
-      "type": "image_question",
-      "id": "mt-im-0098"
+      "type": "multiple_choice",
+      "id": "mt-im-0098",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 3,
-      "imageAlt": "A triangular warning sign with a red border showing a car with skid marks behind it",
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "A red triangle with a picture of a car skidding warns of a slippery road surface ahead; you should reduce speed and avoid sudden movements",
       "options": [
         "Ice on the road ahead",
@@ -15525,14 +15427,13 @@
         "Sharp bend to the left",
         "Slippery road ahead"
       ],
-      "imageDescription": "A UK warning sign in a red triangle depicting a car skidding, signifying a slippery road",
-      "question": "What does this warning sign mean?",
-      "id": "mt-im-0099"
+      "question": "A UK warning sign in a red triangle depicting a car skidding, signifying a slippery road. What does the sign mean?",
+      "id": "mt-im-0099",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "White diagonal hatch markings on the road surface surrounded by a solid white line",
       "correctAnswer": 1,
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "You may enter to overtake slow vehicles",
         "You must not enter this area except in an emergency",
@@ -15540,14 +15441,13 @@
         "You should enter this area to turn right"
       ],
       "explanation": "Hatched markings bordered by a solid white line are used to separate traffic; you must not enter the area except in an emergency",
-      "question": "What is the rule for the area marked with these white diagonal stripes?",
-      "imageDescription": "Road markings consisting of white diagonal stripes (chevron or hatch markings) bounded by a solid white line in the center of the road",
-      "id": "mt-im-0100"
+      "question": "Road markings consisting of white diagonal stripes (chevron or hatch markings) bounded by a solid white line in the center of the road. What is the rule for the area marked with these white diagonal stripes?",
+      "id": "mt-im-0100",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A blue square sign with a white 'P' and a white motorcycle symbol underneath",
       "correctAnswer": 2,
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "A blue rectangular sign with a white 'P' and a motorcycle symbol indicates a parking place reserved specifically for motorcycles",
       "options": [
         "Parking for all vehicles",
@@ -15555,16 +15455,14 @@
         "Parking for motorcycles only",
         "Motorcycle repair shop ahead"
       ],
-      "imageDescription": "A UK informatory sign: a blue square with a white letter P and a white silhouette of a motorcycle below it",
-      "question": "What does this sign mean?",
-      "id": "mt-im-0101"
+      "question": "A UK informatory sign: a blue square with a white letter P and a white silhouette of a motorcycle below it. What does the sign mean?",
+      "id": "mt-im-0101",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageAlt": "A police officer in high-visibility clothing holding one arm straight up with the palm facing forward",
+      "type": "multiple_choice",
       "correctAnswer": 0,
-      "imageDescription": "A police officer in uniform standing in the road with their right arm raised vertically, palm open towards the camera",
-      "question": "What is the police officer signaling you to do?",
+      "question": "A police officer in uniform standing in the road with their right arm raised vertically, palm open towards the camera. What is the police officer signaling you to do?",
       "explanation": "When a police officer is directing traffic and has their arm held up straight, it is a signal for traffic coming from the front to stop",
       "options": [
         "Stop",
@@ -15572,11 +15470,11 @@
         "Turn left",
         "Speed up"
       ],
-      "id": "mt-im-0102"
+      "id": "mt-im-0102",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A brown UK tourist information sign showing a white steam locomotive symbol and a directional arrow",
-      "question": "What does the brown background of this sign tell you?",
+      "question": "A brown UK tourist information sign showing a white steam locomotive symbol and a directional arrow. What does the brown background of the sign tell you?",
       "options": [
         "Roadworks ahead",
         "Railway station ahead",
@@ -15584,14 +15482,13 @@
         "Route for heavy goods vehicles"
       ],
       "explanation": "Signs with a brown background are used to provide directions to tourist attractions or points of interest",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 2,
-      "imageAlt": "A brown rectangular sign with a white steam train symbol and an arrow",
-      "id": "mt-im-0103"
+      "id": "mt-im-0103",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What does this warning sign mean?",
-      "imageDescription": "UK warning sign: red triangle with a black silhouette of a bicycle in the middle",
+      "question": "UK warning sign: red triangle with a black silhouette of a bicycle in the middle. What does the sign mean?",
       "options": [
         "No cycling allowed",
         "Cycle route or crossing ahead",
@@ -15599,17 +15496,15 @@
         "A cycle shop is nearby"
       ],
       "explanation": "A red triangle with a bicycle symbol warns that there is a cycle route or crossing ahead; watch out for cyclists",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 1,
-      "imageAlt": "A triangular warning sign with a red border and a black bicycle symbol in the centre",
-      "id": "mt-im-0104"
+      "id": "mt-im-0104",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageAlt": "A white circular sign with a red border containing a black motorcycle silhouette",
+      "type": "multiple_choice",
       "correctAnswer": 3,
-      "question": "What does this prohibitory sign mean?",
-      "imageDescription": "A UK prohibitory sign: white circle, red border, black motorcycle silhouette inside",
+      "question": "A UK prohibitory sign: white circle, red border, black motorcycle silhouette inside. What does this prohibitory sign mean?",
       "explanation": "A circular sign with a red border and a motorcycle symbol inside it means that motorcycling is prohibited in that area",
       "options": [
         "Motorcycles only",
@@ -15617,12 +15512,12 @@
         "National speed limit applies",
         "No motorcycles allowed"
       ],
-      "id": "mt-im-0105"
+      "id": "mt-im-0105",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 0,
-      "imageAlt": "A close-up of a motorcycle tyre with very little tread visible and a tread depth gauge",
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "The tyre is illegal and needs replacing",
         "The tyre is perfect for dry weather",
@@ -15630,14 +15525,13 @@
         "The tyre is only for off-road use"
       ],
       "explanation": "Worn tyres with a tread depth below the legal limit (1.0mm for motorcycles over 50cc) are dangerous and illegal",
-      "question": "What is the main concern with the condition of this motorcycle tyre?",
-      "imageDescription": "A close-up photo of a motorcycle tyre showing significant wear, with the tread nearly flush with the surface of the rubber",
-      "id": "mt-im-0106"
+      "question": "A close-up photo of a motorcycle tyre showing significant wear, with the tread nearly flush with the surface of the rubber. What is the main concern with the condition of this motorcycle tyre?",
+      "id": "mt-im-0106",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 1,
-      "imageAlt": "An octagonal red sign with the word 'STOP' in white letters",
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Slow down and look both ways but do not stop",
         "You must stop behind the line",
@@ -15645,14 +15539,13 @@
         "Keep moving if the road is clear"
       ],
       "explanation": "At a 'Stop' sign, you must come to a complete halt at the solid white line before proceeding when safe",
-      "question": "What must you do when you see this sign at a junction?",
-      "imageDescription": "A standard UK octagonal 'STOP' sign at a road junction with a solid white line on the road",
-      "id": "mt-im-0107"
+      "question": "A standard UK octagonal 'STOP' sign at a road junction with a solid white line on the road. What must you do when you see the sign at a junction?",
+      "id": "mt-im-0107",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 2,
-      "imageAlt": "A yellow rectangular sign with black lettering showing a temporary lane closure",
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "A rectangular yellow sign with black text and symbols is used to provide temporary information about roadworks or changes in traffic flow",
       "options": [
         "A permanent change to the road layout",
@@ -15660,15 +15553,13 @@
         "Temporary information about roadworks",
         "Direction to a new housing development"
       ],
-      "imageDescription": "A temporary UK roadworks sign: yellow background, black text and a diagram showing a lane narrowing",
-      "question": "What type of information does this yellow sign provide?",
-      "id": "mt-im-0108"
+      "question": "A temporary UK roadworks sign: yellow background, black text and a diagram showing a lane narrowing. What type of information does the sign provide?",
+      "id": "mt-im-0108",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageDescription": "A standard UK mandatory road sign: a blue circle with a white bicycle icon in the centre",
+      "type": "multiple_choice",
       "correctAnswer": 2,
-      "imageAlt": "A blue circular sign with a white bicycle symbol",
       "explanation": "Blue circles with a white border are mandatory signs. This specific sign means that a route is for cycles only",
       "options": [
         "Cycling is prohibited",
@@ -15676,15 +15567,14 @@
         "Route for cycles only",
         "A bicycle parking area"
       ],
-      "question": "What does this mandatory road sign mean?",
-      "id": "mt-im-0109"
+      "question": "A standard UK mandatory road sign: a blue circle with a white bicycle icon in the centre. What does this mandatory road sign mean?",
+      "id": "mt-im-0109",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 0,
-      "imageAlt": "White diagonal stripes on the road surface surrounded by a solid white line",
-      "imageDescription": "A road surface marking consisting of white diagonal stripes bounded by a continuous solid white line, typically found near a junction or hazard",
-      "type": "image_question",
-      "question": "What rule applies to this road marking if it is bordered by a solid white line?",
+      "type": "multiple_choice",
+      "question": "A road surface marking consisting of white diagonal stripes bounded by a continuous solid white line, typically found near a junction or hazard. What rule applies to this road marking if it is bordered by a solid white line?",
       "explanation": "White diagonal stripes or chevrons bordered by a solid white line are used to separate traffic lanes or protect traffic turning right. You must not enter this area",
       "options": [
         "You must not enter this area",
@@ -15692,10 +15582,11 @@
         "You should enter this area to overtake cycles",
         "You may enter this area in an emergency"
       ],
-      "id": "mt-im-0110"
+      "id": "mt-im-0110",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "Where would you find these red reflective studs on a motorway?",
+      "question": "A night-time view of a motorway showing red reflective studs placed along the left-hand edge of the lane. Where would you find these red reflective studs on a motorway?",
       "options": [
         "The right-hand edge of the road",
         "The division between lanes",
@@ -15703,17 +15594,14 @@
         "The left-hand edge of the carriageway"
       ],
       "explanation": "Red studs are placed along the left-hand edge of the carriageway, between the running lane and the hard shoulder or verge",
-      "imageAlt": "Red reflective studs on the edge of a road lane at night",
       "correctAnswer": 3,
-      "imageDescription": "A night-time view of a motorway showing red reflective studs placed along the left-hand edge of the lane",
-      "type": "image_question",
-      "id": "mt-im-0111"
+      "type": "multiple_choice",
+      "id": "mt-im-0111",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 1,
-      "imageAlt": "Amber reflective studs alongside a motorway central reservation",
-      "imageDescription": "A close-up of amber-coloured reflective road studs (cats' eyes) installed next to the central reservation of a dual carriageway",
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "Amber reflective studs are used specifically to mark the right-hand edge of the carriageway, adjacent to the central reservation",
       "options": [
         "The left-hand edge of the road",
@@ -15721,8 +15609,9 @@
         "The start of a hazard zone",
         "Between the lanes of a motorway"
       ],
-      "question": "Where would you see these amber reflective studs on a motorway or dual carriageway?",
-      "id": "mt-im-0112"
+      "question": "A close-up of amber-coloured reflective road studs (cats' eyes) installed next to the central reservation of a dual carriageway. Where would you see these amber reflective studs on a motorway or dual carriageway?",
+      "id": "mt-im-0112",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "An upright arm with the palm facing forward is the signal for traffic coming from the front to stop. Myriad signals help manage traffic when lights fail",
@@ -15732,17 +15621,14 @@
         "Stop, traffic approaching from behind",
         "Wait for the officer to turn around"
       ],
-      "question": "What is this police officer signaling you to do?",
+      "question": "A police officer in a yellow high-visibility jacket standing in the road with one arm raised vertically, palm facing the viewer. What is this police officer signaling you to do?",
       "correctAnswer": 0,
-      "imageAlt": "A police officer in high-visibility clothing holding one arm straight up with the palm out",
-      "type": "image_question",
-      "imageDescription": "A police officer in a yellow high-visibility jacket standing in the road with one arm raised vertically, palm facing the viewer",
-      "id": "mt-im-0113"
+      "type": "multiple_choice",
+      "id": "mt-im-0113",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A UK warning sign: a red triangle containing a black 'T' symbol, where the vertical bar of the 'T' represents the side road",
-      "type": "image_question",
-      "imageAlt": "A red triangle sign with a black 'T' shape inside",
+      "type": "multiple_choice",
       "correctAnswer": 3,
       "options": [
         "No through road ahead",
@@ -15751,11 +15637,12 @@
         "T-junction ahead; you must give way to the main road"
       ],
       "explanation": "The 'T' shape inside a red triangle warns of a T-junction ahead. The thicker line indicates which road has priority",
-      "question": "What does this warning sign mean?",
-      "id": "mt-im-0114"
+      "question": "A UK warning sign: a red triangle containing a black 'T' symbol, where the vertical bar of the 'T' represents the side road. What does the sign mean?",
+      "id": "mt-im-0114",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What is the primary safety concern with this motorcycle tyre?",
+      "question": "A close-up of a motorcycle tyre showing significant wear in the middle of the tread, with the tread grooves looking extremely shallow. What is the primary safety concern with this motorcycle tyre?",
       "options": [
         "It has too much air pressure",
         "The rubber has perished due to age",
@@ -15763,14 +15650,13 @@
         "The tyre has been fitted backwards"
       ],
       "explanation": "The tyre has worn down below the legal minimum tread depth of 1.0mm for motorcycles over 50cc, making it illegal and dangerous",
-      "imageAlt": "A motorcycle tyre where the tread is almost flat and smooth in the centre",
       "correctAnswer": 2,
-      "imageDescription": "A close-up of a motorcycle tyre showing significant wear in the middle of the tread, with the tread grooves looking extremely shallow",
-      "type": "image_question",
-      "id": "mt-im-0115"
+      "type": "multiple_choice",
+      "id": "mt-im-0115",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What does this prohibitory sign mean?",
+      "question": "A prohibitory road sign: a red circle with a white background, featuring a black car icon and a black motorcycle. What does this prohibitory sign mean?",
       "options": [
         "Motorcycles only beyond this point",
         "No cars allowed, motorcycles only",
@@ -15778,11 +15664,10 @@
         "Only cars and motorcycles allowed"
       ],
       "explanation": "A red circle with a car and a motorcycle indicates that no motor vehicles are allowed. This applies to all motorised transport",
-      "imageAlt": "A red circle sign containing a black car above a motorcycle",
       "correctAnswer": 2,
-      "type": "image_question",
-      "imageDescription": "A prohibitory road sign: a red circle with a white background, featuring a black car icon and a black motorcycle",
-      "id": "mt-im-0116"
+      "type": "multiple_choice",
+      "id": "mt-im-0116",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "A blue sign with a white arrow pointing diagonally down to the left tells drivers they must pass this point on the side indicated",
@@ -15792,12 +15677,11 @@
         "One-way street starts on the left",
         "No right turn allowed here"
       ],
-      "question": "What does this sign mean?",
+      "question": "A blue mandatory circular sign showing a white arrow pointing towards the bottom left at a 45-degree angle. What does the sign mean?",
       "correctAnswer": 1,
-      "imageAlt": "A blue circular sign with a white arrow pointing diagonally down to the left",
-      "type": "image_question",
-      "imageDescription": "A blue mandatory circular sign showing a white arrow pointing towards the bottom left at a 45-degree angle",
-      "id": "mt-im-0117"
+      "type": "multiple_choice",
+      "id": "mt-im-0117",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "A red triangle with a 'quayside' or 'river bank' symbol warns that the road leads onto a quay or a river bank. Use extra caution, especially at night",
@@ -15807,12 +15691,11 @@
         "Ford or water crossing ahead",
         "Soft verges for the next mile"
       ],
-      "question": "What does this warning sign indicate?",
-      "type": "image_question",
-      "imageDescription": "A UK warning sign: a red triangle showing a black silhouette of a car falling off the edge of a quay into water",
+      "question": "A UK warning sign: a red triangle showing a black silhouette of a car falling off the edge of a quay into water. What does the sign indicate?",
+      "type": "multiple_choice",
       "correctAnswer": 0,
-      "imageAlt": "A red triangle sign featuring a car falling off a pier into water",
-      "id": "mt-im-0118"
+      "id": "mt-im-0118",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -15822,18 +15705,15 @@
         "Route for heavy goods vehicles"
       ],
       "explanation": "Brown signs are used specifically to provide directions to tourist attractions, such as museums, zoos, or heritage sites",
-      "question": "What does the brown background of this sign tell you?",
-      "imageAlt": "A brown rectangular road sign with white text and an elephant symbol",
+      "question": "A rectangular brown road sign with a white border, featuring white text 'Zoo' and a small icon of an elephant. What does the brown background of the sign tell you?",
       "correctAnswer": 1,
-      "imageDescription": "A rectangular brown road sign with a white border, featuring white text 'Zoo' and a small icon of an elephant",
-      "type": "image_question",
-      "id": "mt-im-0119"
+      "type": "multiple_choice",
+      "id": "mt-im-0119",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 3,
-      "imageAlt": "A road with short broken white lines in the centre",
-      "type": "image_question",
-      "imageDescription": "A view of a straight two-lane road with a central marking consisting of short white lines and long gaps between them",
+      "type": "multiple_choice",
       "explanation": "Short broken white lines in the centre of the road with long gaps indicate a standard hazard-free section where you may overtake if safe",
       "options": [
         "No overtaking allowed",
@@ -15841,15 +15721,14 @@
         "The road is about to become a dual carriageway",
         "A standard road marking; you may overtake if it is safe to do so"
       ],
-      "question": "What do these road markings mean?",
-      "id": "mt-im-0120"
+      "question": "A view of a straight two-lane road with a central marking consisting of short white lines and long gaps between them. What do these road markings mean?",
+      "id": "mt-im-0120",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 2,
-      "imageAlt": "A triangular warning sign with a red border containing the symbol of a bicycle",
-      "question": "What does this warning sign tell you?",
-      "imageDescription": "UK road sign: red triangle with a black silhouette of a bicycle in the centre",
+      "question": "UK road sign: red triangle with a black silhouette of a bicycle in the centre. What does the sign tell you?",
       "explanation": "A triangular sign with a cycle symbol indicates a cycle route ahead that crosses the road. You should look out for cyclists emerging or crossing",
       "options": [
         "A dedicated cycle lane begins here",
@@ -15857,11 +15736,11 @@
         "Cycle route ahead crossing the road",
         "Cycle hire station located nearby"
       ],
-      "id": "mt-im-0121"
+      "id": "mt-im-0121",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "UK mandatory road sign: blue circle with a bold white arrow pointing left",
-      "question": "What is the meaning of this mandatory sign?",
+      "question": "UK mandatory road sign: blue circle with a bold white arrow pointing left. What is the meaning of the sign?",
       "options": [
         "Turn left ahead",
         "No turning left allowed",
@@ -15869,15 +15748,14 @@
         "Watch for traffic joining from the left"
       ],
       "explanation": "A blue circular sign with an arrow pointing to the left means you must turn left. Circular blue signs are mandatory instructions",
-      "type": "image_question",
-      "imageAlt": "A circular blue sign containing a white arrow pointing to the left",
+      "type": "multiple_choice",
       "correctAnswer": 0,
-      "id": "mt-im-0122"
+      "id": "mt-im-0122",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 3,
-      "imageAlt": "A road with white lines in the centre that have long strokes and short gaps",
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "Broken white lines with long marks and short gaps indicate a hazard or a junction is approaching; do not cross them unless it is safe and necessary",
       "options": [
         "A bus lane is starting soon",
@@ -15885,16 +15763,14 @@
         "You are on a one-way street",
         "A hazard or junction is ahead"
       ],
-      "imageDescription": "View from a rider's perspective of a road with 'hazard warning lines'—the central white lines have longer dashes and shorter gaps than standard lane lines",
-      "question": "What do these specific road markings indicate?",
-      "id": "mt-im-0123"
+      "question": "View from a rider's perspective of a road with 'hazard warning lines'\u2014the central white lines have longer dashes and shorter gaps than standard lane lines. What do these specific road markings indicate?",
+      "id": "mt-im-0123",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 1,
-      "imageAlt": "The entrance to a motorway slip road at night with green studs reflecting light",
-      "imageDescription": "A motorway at night showing green reflective studs across the opening of a slip road",
-      "question": "What do these green reflective studs indicate on a motorway?",
+      "question": "A motorway at night showing green reflective studs across the opening of a slip road. What do these green reflective studs indicate on a motorway?",
       "explanation": "Green reflective studs are placed across the entrances and exits of slip roads to help riders identify junction layouts at night",
       "options": [
         "The start of a cycle lane",
@@ -15902,7 +15778,8 @@
         "The boundary of a hard shoulder",
         "The division between lanes of traffic"
       ],
-      "id": "mt-im-0124"
+      "id": "mt-im-0124",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -15912,12 +15789,11 @@
         "Uneven road surface for 10 miles"
       ],
       "explanation": "This sign warns of a steep hill downwards. The percentage shows the gradient, helping you choose the correct gear for engine braking",
-      "question": "What does this road sign warn you about?",
-      "imageDescription": "UK warning sign: red triangle featuring a black slope with '10%' written on it, slanting downwards from left to right",
-      "imageAlt": "A triangular sign with a red border showing a car on a 10 percent downward slope",
+      "question": "UK warning sign: red triangle featuring a black slope with '10%' written on it, slanting downwards from left to right. What does this road sign warn you about?",
       "correctAnswer": 2,
-      "type": "image_question",
-      "id": "mt-im-0125"
+      "type": "multiple_choice",
+      "id": "mt-im-0125",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -15927,12 +15803,11 @@
         "End of dual carriageway ahead"
       ],
       "explanation": "Circular signs with red borders are generally prohibitory. This specific sign means no motor vehicles are allowed",
-      "imageDescription": "UK prohibitory sign: white circle with a red border, containing a black silhouette of a car above a black silhouette of a motorcycle",
-      "question": "What does this sign mean?",
-      "imageAlt": "A circular sign with a red border featuring a motorcycle and a car",
+      "question": "UK prohibitory sign: white circle with a red border, containing a black silhouette of a car above a black silhouette of a motorcycle. What does the sign mean?",
       "correctAnswer": 0,
-      "type": "image_question",
-      "id": "mt-im-0126"
+      "type": "multiple_choice",
+      "id": "mt-im-0126",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -15942,19 +15817,16 @@
         "0.5 mm"
       ],
       "explanation": "The legal minimum tread depth for a motorcycle over 50cc is 1mm across three-quarters of the breadth of the tread",
-      "question": "For a motorcycle over 50cc, what is the legal minimum tread depth across the central three-quarters of the tyre?",
-      "imageDescription": "A close-up photograph of a motorcycle tyre with a tread depth gauge inserted into the groove",
-      "imageAlt": "A close-up of a depth gauge measuring the tread on a motorcycle tyre",
+      "question": "A close-up photograph of a motorcycle tyre with a tread depth gauge inserted into the groove. For a motorcycle over 50cc, what is the legal minimum tread depth across the central three-quarters of the tyre?",
       "correctAnswer": 1,
-      "type": "image_question",
-      "id": "mt-im-0127"
+      "type": "multiple_choice",
+      "id": "mt-im-0127",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageAlt": "A small rectangular yellow sign with a large black letter H and two numbers",
+      "type": "multiple_choice",
       "correctAnswer": 3,
-      "question": "What is the purpose of this yellow sign often seen on walls or posts near the road?",
-      "imageDescription": "A yellow hydrant plate found on a wall or post, featuring a large black 'H' with numbers indicating the size and distance of the hydrant",
+      "question": "A yellow hydrant plate found on a wall or post, featuring a large black 'H' with numbers indicating the size and distance of the hydrant. What is the purpose of the sign often seen on walls or posts near the road?",
       "options": [
         "Hazardous chemicals nearby",
         "Hospital entrance 100 yards ahead",
@@ -15962,7 +15834,8 @@
         "Fire hydrant location indicator"
       ],
       "explanation": "A yellow sign with a black 'H' on it identifies the location of a fire hydrant for emergency services",
-      "id": "mt-im-0128"
+      "id": "mt-im-0128",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "Clearway signs mean you must not stop at any time on the main carriageway, even to pick up or drop off passengers",
@@ -15972,16 +15845,14 @@
         "No stopping (Clearway) at any time",
         "National speed limit applies"
       ],
-      "question": "What does this sign mean on a main road?",
-      "imageDescription": "UK road sign: a blue circle with a red border and two red diagonal lines forming a cross (clearway sign)",
+      "question": "UK road sign: a blue circle with a red border and two red diagonal lines forming a cross (clearway sign). What does the sign mean on a main road?",
       "correctAnswer": 2,
-      "imageAlt": "A circular blue sign with a red border and a red cross (X) over it",
-      "type": "image_question",
-      "id": "mt-im-0129"
+      "type": "multiple_choice",
+      "id": "mt-im-0129",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What hazard does this sign warn you of?",
-      "imageDescription": "UK warning sign: red triangle containing a black silhouette of an old-fashioned steam locomotive",
+      "question": "UK warning sign: red triangle containing a black silhouette of an old-fashioned steam locomotive. What hazard does the sign warn you of?",
       "explanation": "This sign warns of a level crossing that does not have a gate or barrier. You must be prepared to stop",
       "options": [
         "Level crossing without a gate or barrier",
@@ -15989,10 +15860,10 @@
         "Level crossing with a gate or barrier",
         "Trams crossing the road ahead"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 0,
-      "imageAlt": "A triangular sign with a red border and a black silhouette of a steam train",
-      "id": "mt-im-0130"
+      "id": "mt-im-0130",
+      "__rewritten_from_image__": true
     },
     {
       "type": "true_false",
@@ -16648,7 +16519,7 @@
     {
       "type": "true_false",
       "correctAnswer": false,
-      "explanation": "Counter-steering involves pushing the handlebar in the direction you want to turn at speeds typically above 7–10 mph",
+      "explanation": "Counter-steering involves pushing the handlebar in the direction you want to turn at speeds typically above 7\u201310 mph",
       "question": "At high speeds, to turn the motorcycle to the right, you should pull the right-hand handlebar towards you",
       "id": "mt-tf-0094"
     },

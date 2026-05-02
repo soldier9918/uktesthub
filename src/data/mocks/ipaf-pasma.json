@@ -286,7 +286,7 @@
         "To lift the wheels off the ground for cleaning"
       ],
       "correctAnswer": 0,
-      "explanation": "Stabilisers must be deployed as per the manufacturer’s instructions to provide the necessary footprint for stability",
+      "explanation": "Stabilisers must be deployed as per the manufacturer\u2019s instructions to provide the necessary footprint for stability",
       "question": "Why are stabilisers or outriggers used on certain types of MEWPs and towers?",
       "id": "ip-mc-0022"
     },
@@ -364,7 +364,7 @@
         "Wash them with high-pressure water daily"
       ],
       "type": "multiple_choice",
-      "question": "What is a vital part of the daily pre-use inspection regarding a MEWP’s tyres?",
+      "question": "What is a vital part of the daily pre-use inspection regarding a MEWP\u2019s tyres?",
       "correctAnswer": 0,
       "id": "ip-mc-0028"
     },
@@ -512,7 +512,7 @@
       "id": "ip-mc-0039"
     },
     {
-      "question": "When using the '3T' method of tower assembly, why is it important to sit ‘within’ the trapdoor?",
+      "question": "When using the '3T' method of tower assembly, why is it important to sit \u2018within\u2019 the trapdoor?",
       "explanation": "The 3T (Through The Trap) method allows the operator to sit on the trapdoor to install guardrails before fully ascending",
       "options": [
         "To allow more than one person to climb at once",
@@ -559,7 +559,7 @@
         "Ask a colleague to walk beside the MEWP to watch for potholes",
         "Only move the MEWP if the ground is perfectly level and smooth"
       ],
-      "explanation": "Self-propelled MEWPs must never be moved with the platform raised unless the manufacturer’s manual specifically states it is safe",
+      "explanation": "Self-propelled MEWPs must never be moved with the platform raised unless the manufacturer\u2019s manual specifically states it is safe",
       "question": "What should an operator do before driving a self-propelled MEWP (3a or 3b) a significant distance?",
       "id": "ip-mc-0043"
     },
@@ -2023,7 +2023,7 @@
       "correctAnswer": 1,
       "question": "What is the function of 'secondary guarding' on a modern MEWP?",
       "type": "multiple_choice",
-      "explanation": "Secondary guarding (like overhead 센서 bars) is designed to stop the machine's movement if an operator is pushed against the controls by an obstruction",
+      "explanation": "Secondary guarding (like overhead \uc13c\uc11c bars) is designed to stop the machine's movement if an operator is pushed against the controls by an obstruction",
       "options": [
         "To prevent falling out of the basket",
         "To reduce the risk of overhead crushing or entrapment",
@@ -2151,7 +2151,7 @@
     },
     {
       "question": "What is the rule regarding the deployment of outriggers or stabilisers on a MEWP?",
-      "explanation": "Outriggers must be deployed exactly as specified by the manufacturer to ensure the machine’s stability and prevent overturning",
+      "explanation": "Outriggers must be deployed exactly as specified by the manufacturer to ensure the machine\u2019s stability and prevent overturning",
       "options": [
         "Always follow the manufacturer's specific instructions for that machine",
         "Only extend them halfway to save space on site",
@@ -2970,7 +2970,7 @@
     },
     {
       "explanation": "Personal Fall Protection (PFP) is always at the bottom of the hierarchy as it only minimizes the consequences of a fall rather than preventing it",
-      "question": "In the ‘Hierarchy of Control’, why is the use of harness equipment (fall arrest) ranked below the use of guardrails?",
+      "question": "In the \u2018Hierarchy of Control\u2019, why is the use of harness equipment (fall arrest) ranked below the use of guardrails?",
       "type": "multiple_choice",
       "options": [
         "To provide the highest level of operator safety",
@@ -3678,7 +3678,7 @@
         "The 3:1 height-to-base ratio rule of thumb",
         "A height of 8 metres regardless of the environment",
         "The height of the nearest building or permanent structure",
-        "The manufacturer’s instruction manual for that specific tower"
+        "The manufacturer\u2019s instruction manual for that specific tower"
       ],
       "correctAnswer": 3,
       "id": "ip-mc-0283"
@@ -5077,17 +5077,16 @@
     {
       "explanation": "High-voltage overhead power lines can arc (jump) across a gap. Always maintain the minimum safety distance as specified by the DNO and IPAF guidance",
       "correctAnswer": 2,
-      "type": "image_question",
-      "imageAlt": "A MEWP parked near overhead power cables with a warning symbol",
-      "imageDescription": "A Scissor Lift operating outdoors near high-voltage overhead electricity pylons and cables. A red 'X' and a green 'checkmark' indicate distance zones",
+      "type": "multiple_choice",
       "options": [
         "1 metre",
         "3 metres",
         "Stay outside the specified exclusion zone",
         "As long as you don't touch them, it is safe"
       ],
-      "question": "When operating a MEWP near overhead power lines, what is the most important safety rule regarding distance?",
-      "id": "ip-im-0001"
+      "question": "A Scissor Lift operating outdoors near high-voltage overhead electricity pylons and cables. A red 'X' and a green 'checkmark' indicate distance zones. When operating a MEWP near overhead power lines, what is the most important safety rule regarding distance?",
+      "id": "ip-im-0001",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -5096,88 +5095,82 @@
         "Increase the engine RPM",
         "Operate only from the ground controls"
       ],
-      "question": "What should be placed under the outrigger legs to ensure the ground can support the weight of the MEWP?",
+      "question": "Close-up of a boom lift outrigger leg positioned on a slightly uneven tarmac surface without a spreader plate. A crack is visible in the tarmac. What should be placed under the outrigger legs to ensure the ground can support the weight of the MEWP?",
       "explanation": "Outrigger pads (spreader plates) must be used to distribute the weight of the machine and prevent it from sinking into the ground or overturning",
       "correctAnswer": 0,
-      "type": "image_question",
-      "imageDescription": "Close-up of a boom lift outrigger leg positioned on a slightly uneven tarmac surface without a spreader plate. A crack is visible in the tarmac",
-      "imageAlt": "A MEWP outrigger leg resting directly on soft tarmac",
-      "id": "ip-im-0002"
+      "type": "multiple_choice",
+      "id": "ip-im-0002",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What is the primary danger when driving a MEWP near an uncovered floor hole or 'mouse hole' like the one shown?",
+      "question": "An indoor warehouse scene showing a scissor lift being driven toward a small, open square hole in the concrete floor that is not marked or covered. What is the primary danger when driving a MEWP near an uncovered floor hole or 'mouse hole' like the one shown?",
       "options": [
         "The machine will drive over it easily",
         "The wheel could drop in, causing the machine to overturn",
         "The tyres will pop",
         "The motor will overheat"
       ],
-      "imageAlt": "A scissor lift approaching a small uncovered drainage hole in a concrete floor",
-      "imageDescription": "An indoor warehouse scene showing a scissor lift being driven toward a small, open square hole in the concrete floor that is not marked or covered",
       "explanation": "Holes or voids in the floor can cause a wheel to drop, leading to a sudden tip-over. These must be identified and covered or barriered off",
       "correctAnswer": 1,
-      "type": "image_question",
-      "id": "ip-im-0003"
+      "type": "multiple_choice",
+      "id": "ip-im-0003",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "Lanyard length must be short enough to prevent the occupant from being ejected or falling out of the basket (fall restraint)",
       "correctAnswer": 3,
-      "type": "image_question",
-      "imageDescription": "A worker in a cherry picker basket. The harness lanyard is so long that if they fell, they would hit the ground before the lanyard became taut",
-      "imageAlt": "An operator in a boom lift wearing a harness with a very long lanyard",
+      "type": "multiple_choice",
       "options": [
         "It makes it easier to move around",
         "It is safer for the rescue team",
         "It is the correct way to wear it",
         "It would not prevent the operator from hitting the ground or obstacles"
       ],
-      "question": "Why is the lanyard length shown in this image considered unsafe for a boom-type MEWP?",
-      "id": "ip-im-0004"
+      "question": "A worker in a cherry picker basket. The harness lanyard is so long that if they fell, they would hit the ground before the lanyard became taut. Why is the lanyard length shown considered unsafe for a boom-type MEWP?",
+      "id": "ip-im-0004",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "Which safety rule is being broken by the worker on the mobile access tower in this image?",
+      "question": "A mobile access tower (PASMA style) where a worker is sitting on the top guardrail to reach a higher point, instead of using the platform. Which safety rule is being broken by the worker on the mobile access tower ?",
       "options": [
         "Never climb or sit on the guardrails",
         "Only do it if someone is holding the tower base",
         "It is allowed for short durations under 5 minutes",
         "Only if wearing a hard hat"
       ],
-      "imageAlt": "A person sitting on the top rail of a mobile access tower",
-      "imageDescription": "A mobile access tower (PASMA style) where a worker is sitting on the top guardrail to reach a higher point, instead of using the platform",
       "correctAnswer": 0,
       "explanation": "Towers must be built following the specific 3T (Through The Trap) or AGR (Advance Guard Rail) methods provided by the manufacturer",
-      "type": "image_question",
-      "id": "ip-im-0005"
+      "type": "multiple_choice",
+      "id": "ip-im-0005",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What limit is likely being exceeded in this image, potentially causing the machine to cut out?",
+      "question": "A scissor lift platform heavily loaded with three large buckets of mortar, several stacks of bricks, and two large workers. The 'SWL' sticker is visible. What limit is likely being exceeded , potentially causing the machine to cut out?",
       "options": [
         "Wind speed limit",
         "Maximum height limit",
         "Safe Working Load (SWL)",
         "Battery charge level"
       ],
-      "imageDescription": "A scissor lift platform heavily loaded with three large buckets of mortar, several stacks of bricks, and two large workers. The 'SWL' sticker is visible",
-      "imageAlt": "A scissor lift platform filled with heavy bricks and two workers",
       "correctAnswer": 2,
       "explanation": "The SWL includes the weight of the operator, their tools, and any materials on the platform. Exceeding it triggers the overload alarm and stops the machine",
-      "type": "image_question",
-      "id": "ip-im-0006"
+      "type": "multiple_choice",
+      "id": "ip-im-0006",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What must happen before the mobile tower in the image is moved to a new location?",
+      "question": "A PASMA-style mobile tower being pushed across a site floor by two workers while a third worker remains on the top platform holding a paint tin. What must happen before the mobile tower is moved to a new location?",
       "options": [
         "Ensure the wheels are unlocked first",
         "The person on top must climb down before moving",
         "Push from the top section for better leverage",
         "Only move it if the wind speed is below 15mph"
       ],
-      "imageAlt": "Two people pushing a tower while a third person stays on top",
-      "imageDescription": "A PASMA-style mobile tower being pushed across a site floor by two workers while a third worker remains on the top platform holding a paint tin",
       "explanation": "Never move a mobile access tower with people or materials on the platform as it shifts the centre of gravity and risks overturning",
       "correctAnswer": 1,
-      "type": "image_question",
-      "id": "ip-im-0007"
+      "type": "multiple_choice",
+      "id": "ip-im-0007",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -5186,28 +5179,26 @@
         "Turn the basket away from the wind",
         "Cease operations and lower the platform to the ground"
       ],
-      "question": "If the anemometer shows the reading in the image, what action should the operator take?",
+      "question": "A hand-held anemometer displaying a reading of 15 metres per second (m/s) next to a boom lift extended on a gusty day. If the anemometer shows the reading , what action should the operator take?",
       "correctAnswer": 3,
       "explanation": "The wind speed must be measured at the platform height using an anemometer. If it exceeds the manufacturer's limit (usually 12.5 m/s), work must stop",
-      "type": "image_question",
-      "imageDescription": "A hand-held anemometer displaying a reading of 15 metres per second (m/s) next to a boom lift extended on a gusty day",
-      "imageAlt": "A wind speed meter (anemometer) showing a high reading near a MEWP",
-      "id": "ip-im-0008"
+      "type": "multiple_choice",
+      "id": "ip-im-0008",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "Looking at the harness fitment in this image, what is the specific safety concern?",
+      "question": "A close-up of a safety harness leg strap where there is a large 4-inch gap between the strap and the worker's thigh. Looking at the harness fitment , what is the specific safety concern?",
       "options": [
         "The leg straps are too loose",
         "The strap is the wrong colour",
         "The buckle is upside down",
         "The worker is not wearing a high-vis jacket"
       ],
-      "imageAlt": "Close up of a harness leg strap being very loose",
-      "imageDescription": "A close-up of a safety harness leg strap where there is a large 4-inch gap between the strap and the worker's thigh",
       "explanation": "The harness must be snug. A 'fist' should not be able to fit easily between the strap and the leg, as this could cause injury during a fall",
       "correctAnswer": 0,
-      "type": "image_question",
-      "id": "ip-im-0009"
+      "type": "multiple_choice",
+      "id": "ip-im-0009",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -5216,77 +5207,70 @@
         "The battery needs water level check",
         "The hydraulic fluid is low"
       ],
-      "question": "What does this level indicator tell the operator about the current position of the machine?",
-      "type": "image_question",
+      "question": "A circular 'bullseye' bubble level located on the chassis of a MEWP. The bubble is completely outside the inner red circle. What does this level indicator tell the operator about the current position of the machine?",
+      "type": "multiple_choice",
       "explanation": "The platform must be level for stability. If the bubble is outside the marks, the machine is on too steep a slope and is at risk of tipping",
       "correctAnswer": 1,
-      "imageDescription": "A circular 'bullseye' bubble level located on the chassis of a MEWP. The bubble is completely outside the inner red circle",
-      "imageAlt": "A spirit level bubble indicator on a MEWP chassis showing it is off-centre",
-      "id": "ip-im-0010"
+      "id": "ip-im-0010",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What is missing from this mobile tower joint that must be corrected before use?",
+      "question": "A close-up of a mobile tower joint where two frames meet. The hole for the locking 'interlock' pin is empty. What is missing from this mobile tower joint that must be corrected before use?",
       "options": [
         "Paint it to prevent rust",
         "Apply grease to the joint",
         "Insert a proper locking pin or 'R-clip'",
         "Wrap it in duct tape for security"
       ],
-      "imageDescription": "A close-up of a mobile tower joint where two frames meet. The hole for the locking 'interlock' pin is empty",
-      "imageAlt": "A tower frame joint missing its locking pin",
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "Safety pins or 'R-clips' ensure the frame components stay locked together. Missing pins can lead to the tower collapsing during use or moving",
       "correctAnswer": 2,
-      "id": "ip-im-0011"
+      "id": "ip-im-0011",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What is the function of the red control button shown in this image?",
+      "question": "A top-down view of a scissor lift control box focusing on the large, red, mushroom-headed 'Emergency Stop' button. What is the function of the red control button shown ?",
       "options": [
         "Emergency Stop button",
         "Horn / Warning signal",
         "Engine Start button",
         "Platform lower button"
       ],
-      "imageAlt": "The large red mushroom-shaped button on a control panel",
-      "imageDescription": "A top-down view of a scissor lift control box focusing on the large, red, mushroom-headed 'Emergency Stop' button",
       "correctAnswer": 0,
       "explanation": "The 'E-stop' is for emergencies only. It cuts all power to the controls to stop dangerous movement instantly",
-      "type": "image_question",
-      "id": "ip-im-0012"
+      "type": "multiple_choice",
+      "id": "ip-im-0012",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A close-up photographic view of a MEWP outrigger leg firmly placed on a large square yellow nylon spreader pad on an asphalt surface",
-      "imageAlt": "A close-up of an outrigger foot resting on a yellow spreader plate on asphalt",
       "explanation": "The spreader plate must be of sufficient size and strength to distribute the load over a larger area, preventing the outrigger from sinking into the ground",
       "correctAnswer": 2,
-      "question": "What is the primary purpose of using the spreader plate shown under this outrigger?",
+      "question": "A close-up photographic view of a MEWP outrigger leg firmly placed on a large square yellow nylon spreader pad on an asphalt surface. What is the primary purpose of using the spreader plate shown under this outrigger?",
       "options": [
         "To stop the outrigger from getting dirty",
         "To increase the height of the machine",
         "To distribute the load across a wider surface area",
         "To provide a non-slip surface for the operator"
       ],
-      "type": "image_question",
-      "id": "ip-im-0013"
+      "type": "multiple_choice",
+      "id": "ip-im-0013",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "Safety harnesses must be inspected by a competent person every 6 months, and more frequently if used in harsh environments",
-      "imageAlt": "A close-up of a safety inspection tag attached to a harness D-ring",
-      "imageDescription": "A close-up of a plastic inspection tag attached to a safety harness showing dates and a 'next inspection due' section",
       "options": [
         "6 months",
         "12 months",
         "24 months",
         "Once every 5 years"
       ],
-      "question": "What is the maximum legal interval for a formal thorough examination of the harness shown in this image?",
+      "question": "A close-up of a plastic inspection tag attached to a safety harness showing dates and a 'next inspection due' section. What is the maximum legal interval for a formal thorough examination of the harness shown ?",
       "correctAnswer": 0,
-      "type": "image_question",
-      "id": "ip-im-0014"
+      "type": "multiple_choice",
+      "id": "ip-im-0014",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A clear, high-contrast safety decal on the side of a MEWP basket showing 'SWL 250kg' and a diagram of two people plus equipment",
-      "imageAlt": "A sticker on a MEWP platform showing 'SWL 250kg' with a person and tool icons",
       "explanation": "Exceeding the Safe Working Load (SWL) can cause the machine to become unstable or trigger an overload alarm that disables functions",
       "correctAnswer": 1,
       "options": [
@@ -5295,9 +5279,10 @@
         "The total weight of the machine including fuel",
         "The maximum wind speed allowed for operation"
       ],
-      "question": "What does the 'SWL' value on this machine's identification plate specifically refer to?",
-      "type": "image_question",
-      "id": "ip-im-0015"
+      "question": "A clear, high-contrast safety decal on the side of a MEWP basket showing 'SWL 250kg' and a diagram of two people plus equipment. What does the 'SWL' value on this machine's identification plate specifically refer to?",
+      "type": "multiple_choice",
+      "id": "ip-im-0015",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -5306,34 +5291,30 @@
         "Lower risk of falling objects hitting the public",
         "Increased wind speeds due to the funnel effect"
       ],
-      "question": "When working at height in the position shown, why might wind speeds be higher than the ground-level forecast?",
+      "question": "A wide shot of a boom lift working at height near the sharp corner of a modern high-rise skyscraper on a windy day. When working at height in the position shown, why might wind speeds be higher than the ground-level forecast?",
       "correctAnswer": 3,
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "Wind speed can increase significantly around the corners of tall buildings due to the 'funnel' or 'venturi' effect",
-      "imageAlt": "A MEWP positioned at the corner of a high-rise glass building",
-      "imageDescription": "A wide shot of a boom lift working at height near the sharp corner of a modern high-rise skyscraper on a windy day",
-      "id": "ip-im-0016"
+      "id": "ip-im-0016",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 1,
-      "question": "What critical safety check is the operator in this image failing to perform while elevating?",
+      "question": "A side view of a MEWP operator focusing on the control panel and the ground while the platform moves upwards toward a ceiling with visible cables. What critical safety check is the operator failing to perform while elevating?",
       "options": [
         "Checking the fuel level",
         "Looking up for overhead obstructions or power lines",
         "Waving to colleagues on the ground",
         "Ensuring the emergency stop is depressed"
       ],
-      "type": "image_question",
-      "imageDescription": "A side view of a MEWP operator focusing on the control panel and the ground while the platform moves upwards toward a ceiling with visible cables",
-      "imageAlt": "An operator at the basket controls looking down at the ground while the boom is ascending",
+      "type": "multiple_choice",
       "explanation": "Always check for overhead hazards, particularly power lines, before elevating the platform to prevent electrocution or arcing",
-      "id": "ip-im-0017"
+      "id": "ip-im-0017",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A close-up of a yellow fall-arrest lanyard where a knot has been tied in the webbing to shorten its length",
-      "imageAlt": "A lanyard with a knot tied in the middle of the webbing",
       "explanation": "Tying a knot in a lanyard significantly reduces its strength and can cause it to fail during a fall",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 2,
       "options": [
         "It makes the lanyard last longer",
@@ -5341,12 +5322,13 @@
         "It significantly reduces the strength of the lanyard",
         "It helps the shock absorber deploy faster"
       ],
-      "question": "Why is it dangerous to use the lanyard in the condition shown in this image?",
-      "id": "ip-im-0018"
+      "question": "A close-up of a yellow fall-arrest lanyard where a knot has been tied in the webbing to shorten its length. Why is it dangerous to use the lanyard in the condition shown ?",
+      "id": "ip-im-0018",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "question": "What is the immediate safety fault visible on this mobile tower base?",
+      "type": "multiple_choice",
+      "question": "A close-up of a castor wheel at the base of a PASMA tower with the locking brake lever clearly in the 'off' or 'up' position. What is the immediate safety fault visible on this mobile tower base?",
       "options": [
         "The brakes are not engaged",
         "The wheel is the wrong colour for this tower",
@@ -5355,30 +5337,26 @@
       ],
       "correctAnswer": 0,
       "explanation": "To prevent a mobile tower from over-balancing, the wheels must be locked before anyone climbs the structure",
-      "imageAlt": "A mobile access tower wheel with the brake lever in the 'up' position",
-      "imageDescription": "A close-up of a castor wheel at the base of a PASMA tower with the locking brake lever clearly in the 'off' or 'up' position",
-      "id": "ip-im-0019"
+      "id": "ip-im-0019",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "An operator inside a scissor lift platform with both feet standing on the middle guardrail to reach a high ceiling fixture",
-      "imageAlt": "An operator standing on the mid-rail of a scissor lift basket to reach a light fixture",
       "explanation": "Operators must never stand on the guardrails or use ladders inside the basket to gain extra height, as this leads to falls or tip-overs",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 3,
-      "question": "Which dangerous practice is the operator in this image demonstrating?",
+      "question": "An operator inside a scissor lift platform with both feet standing on the middle guardrail to reach a high ceiling fixture. Which dangerous practice is the operator demonstrating?",
       "options": [
         "Using a safety harness inappropriately",
         "Exceeding the platform capacity",
         "Working too close to a hazard",
         "Standing on the guardrails to gain extra height"
       ],
-      "id": "ip-im-0020"
+      "id": "ip-im-0020",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A worker climbing the internal ladder of an alloy tower while holding a large metal toolbox with both hands",
-      "imageAlt": "A person climbing a tower ladder with both hands carrying a heavy toolbox",
       "explanation": "The '3 points of contact' rule (two hands and one foot, or two feet and one hand) must be maintained when climbing the ladder of a tower",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 2,
       "options": [
         "The toolbox is too heavy for the tower",
@@ -5386,8 +5364,9 @@
         "Failure to maintain three points of contact",
         "Climbing the outside of the tower frame"
       ],
-      "question": "Looking at the image, why is the worker's method of ascending the tower unsafe?",
-      "id": "ip-im-0021"
+      "question": "A worker climbing the internal ladder of an alloy tower while holding a large metal toolbox with both hands. Looking at the image, why is the worker's method of ascending the tower unsafe?",
+      "id": "ip-im-0021",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 1,
@@ -5397,31 +5376,29 @@
         "The machine must be stored in a garage",
         "The machine is only for use in residential buildings"
       ],
-      "question": "What does this symbol on the machine's chassis indicate to the operator?",
-      "type": "image_question",
-      "imageDescription": "A close-up of a safety decal on a small scissor lift showing a person inside a building icon with a wind speed of 0 metres per second",
+      "question": "A close-up of a safety decal on a small scissor lift showing a person inside a building icon with a wind speed of 0 metres per second. What does this symbol on the machine's chassis indicate to the operator?",
+      "type": "multiple_choice",
       "explanation": "The 'T' symbol or 'Indoor Use Only' icon indicates that the machine is not designed to withstand wind loads and must not be used outside",
-      "imageAlt": "A decal on a scissor lift showing a 'house' icon with 0m/s wind speed",
-      "id": "ip-im-0022"
+      "id": "ip-im-0022",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "The 'Drop-N-Go' or locking trigger on a boom lift mast must be fully engaged to ensure the boom sections are mechanically locked",
-      "imageAlt": "A mechanical locking pin on a boom lift that is not fully seated in its hole",
-      "imageDescription": "A close-up of a boom section locking pin that is halfway out of its designated locking position",
       "options": [
         "The locking pin is not fully engaged",
         "The machine needs more grease on the joints",
         "The pin is the wrong shape for this model",
         "The boom is fully extended and safe"
       ],
-      "question": "What is the significant mechanical safety issue shown in this close-up of the boom mast?",
+      "question": "A close-up of a boom section locking pin that is halfway out of its designated locking position. What is the significant mechanical safety issue shown in this close-up of the boom mast?",
       "correctAnswer": 0,
-      "type": "image_question",
-      "id": "ip-im-0023"
+      "type": "multiple_choice",
+      "id": "ip-im-0023",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "question": "What is wrong with the fall protection setup shown in this image?",
+      "type": "multiple_choice",
+      "question": "A close-up of a fall-arrest lanyard hook clipped directly onto the top yellow tubular handrail of a MEWP basket instead of the designated anchor point. What is wrong with the fall protection setup shown ?",
       "options": [
         "The hook is not large enough for the rail",
         "The lanyard is too short for this machine",
@@ -5430,13 +5407,11 @@
       ],
       "correctAnswer": 2,
       "explanation": "The lanyard should be attached to the manufacturer's designated anchorage point, usually a metal D-ring or bar within the basket, never to the guardrails",
-      "imageAlt": "A lanyard clipped onto the top handrail of a MEWP basket",
-      "imageDescription": "A close-up of a fall-arrest lanyard hook clipped directly onto the top yellow tubular handrail of a MEWP basket instead of the designated anchor point",
-      "id": "ip-im-0024"
+      "id": "ip-im-0024",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "The outrigger must be fully deployed and the wheel lifted off the ground to ensure the machine's stability and level base",
-      "imageDescription": "A close-up photo of a spider lift outrigger leg. The footpad is on a spreader plate, but the machine's main wheel is still firmly touching the ground, indicating the weight hasn't been transferred",
       "correctAnswer": 2,
       "options": [
         "The spreader plate is too small",
@@ -5444,10 +5419,10 @@
         "The machine's weight is still on the wheels",
         "The ground is too soft"
       ],
-      "type": "image_question",
-      "imageAlt": "Close up of an outrigger foot touching the ground but the pneumatic tyre is still carrying weight",
-      "question": "When setting up the machine as shown in the image, what is the primary safety error?",
-      "id": "ip-im-0025"
+      "type": "multiple_choice",
+      "question": "A close-up photo of a spider lift outrigger leg. The footpad is on a spreader plate, but the machine's main wheel is still firmly touching the ground, indicating the weight hasn't been transferred. When setting up the machine as shown , what is the primary safety error?",
+      "id": "ip-im-0025",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -5456,18 +5431,16 @@
         "Ground-up assembly method",
         "Cantilever assembly technique"
       ],
-      "type": "image_question",
-      "imageAlt": "A person sitting on the platform edge with legs through the trapdoor of a mobile tower",
-      "question": "What assembly method is the operative demonstrating in this image?",
-      "imageDescription": "A person is positioned sitting on the edge of a tower platform with their feet on the ladder below, preparing to fit guardrails. This illustrates the 3T assembly method",
+      "type": "multiple_choice",
+      "question": "A person is positioned sitting on the edge of a tower platform with their feet on the ladder below, preparing to fit guardrails. This illustrates the 3T assembly method. What assembly method is the operative demonstrating ?",
       "explanation": "The '3T' (Through The Trapdoor) method requires the operator to sit on the trapdoor to install guardrails before fully ascending",
       "correctAnswer": 0,
-      "id": "ip-im-0026"
+      "id": "ip-im-0026",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageAlt": "A worker looking down while driving a scissor lift near overhead cables",
-      "question": "What is the operator failing to look out for while driving the machine in this image?",
+      "type": "multiple_choice",
+      "question": "An operator is driving a scissor lift in its stowed position through a warehouse. Above them, there are low-hanging overhead power lines and busbars that they are not looking at. What is the operator failing to look out for while driving the machine ?",
       "options": [
         "The speed of the machine",
         "The tyre pressure levels",
@@ -5475,69 +5448,65 @@
         "Overhead hazards and power lines"
       ],
       "explanation": "Always check for overhead hazards like power lines before every move, even if the distance is short",
-      "imageDescription": "An operator is driving a scissor lift in its stowed position through a warehouse. Above them, there are low-hanging overhead power lines and busbars that they are not looking at",
       "correctAnswer": 3,
-      "id": "ip-im-0027"
+      "id": "ip-im-0027",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A close-up image of two fall-arrest lanyards that have been knotted together to extend their length so a worker can reach a distant anchor point",
       "explanation": "Tying two lanyards together creates a point of failure and can increase the potential fall distance beyond the design limits",
       "correctAnswer": 1,
-      "type": "image_question",
-      "imageAlt": "Two safety lanyards joined together by a knot to reach a further anchor point",
-      "question": "Looking at this fall protection setup, why is this an extremely dangerous practice?",
+      "type": "multiple_choice",
+      "question": "A close-up image of two fall-arrest lanyards that have been knotted together to extend their length so a worker can reach a distant anchor point. Looking at this fall protection setup, why is this an extremely dangerous practice?",
       "options": [
         "The anchor point is too high",
         "Lanyards must never be knotted or joined together",
         "The worker is using the wrong colour lanyard",
         "The shock absorber is missing"
       ],
-      "id": "ip-im-0028"
+      "id": "ip-im-0028",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 2,
       "explanation": "Castor brakes must be locked before anyone climbs the tower to prevent unintended movement and potential overturn",
-      "imageDescription": "A close-up of a castor wheel at the base of a mobile access tower. The brake locking lever is clearly in the 'off' or 'up' position while a worker is visible on the platform above",
-      "imageAlt": "A mobile tower castor wheel with the brake lever in the 'up' position",
-      "question": "What is the immediate safety hazard visible at the base of this mobile tower?",
-      "type": "image_question",
+      "question": "A close-up of a castor wheel at the base of a mobile access tower. The brake locking lever is clearly in the 'off' or 'up' position while a worker is visible on the platform above. What is the immediate safety hazard visible at the base of this mobile tower?",
+      "type": "multiple_choice",
       "options": [
         "The wheel is the wrong diameter",
         "The tyre is worn out",
         "The castor brake is not engaged",
         "The adjustable leg is at maximum extension"
       ],
-      "id": "ip-im-0029"
+      "id": "ip-im-0029",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 0,
       "explanation": "Harnesses must be snug. A gap larger than two flat fingers indicates the harness is too loose and could cause injury during a fall",
-      "imageDescription": "A close-up shot of a worker's leg where a safety harness strap is being pulled away. A person is able to fit their entire hand (four fingers) between the strap and the thigh",
-      "imageAlt": "A hand fitting four fingers easily between a worker's thigh and the harness leg strap",
-      "question": "Based on the 'two-finger' rule, what is wrong with the harness fitment shown here?",
-      "type": "image_question",
+      "question": "A close-up shot of a worker's leg where a safety harness strap is being pulled away. A person is able to fit their entire hand (four fingers) between the strap and the thigh. Based on the 'two-finger' rule, what is wrong with the harness fitment ?",
+      "type": "multiple_choice",
       "options": [
         "The harness is too loose and requires tightening",
         "The harness is the wrong size for the worker",
         "The strap is twisted and must be straightened",
         "The D-ring is positioned incorrectly"
       ],
-      "id": "ip-im-0030"
+      "id": "ip-im-0030",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageAlt": "A yellow tag hanging from a tower ladder saying 'DO NOT USE'",
-      "question": "What does the status of the inspection tag in this image indicate?",
+      "type": "multiple_choice",
+      "question": "A bright yellow inspection tag is attached to the base of a mobile access tower ladder. The text 'DO NOT USE' is clearly visible, but a worker is seen starting to climb. What does the status of the inspection tag indicate?",
       "options": [
         "The tower is ready for use",
         "The tower is only for height-restricted use",
         "The tower has been cleaned recently",
         "The tower has failed inspection and is unsafe to use"
       ],
-      "imageDescription": "A bright yellow inspection tag is attached to the base of a mobile access tower ladder. The text 'DO NOT USE' is clearly visible, but a worker is seen starting to climb",
       "explanation": "A yellow 'Do Not Use' tag (like Scafftag) indicates the equipment has failed inspection or is incomplete and must not be boarded",
       "correctAnswer": 3,
-      "id": "ip-im-0031"
+      "id": "ip-im-0031",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -5546,18 +5515,16 @@
         "The platform trapdoor is open",
         "The worker is not wearing a helmet"
       ],
-      "imageAlt": "A tower platform with guardrails but no boards around the base of the platform floor",
-      "question": "What essential safety component is missing from this working platform?",
-      "type": "image_question",
+      "question": "A view of the top platform of a mobile tower. Guardrails and mid-rails are present, but there are no wooden or plastic boards around the perimeter of the platform floor. Loose tools are lying on the floor. What essential safety component is missing from this working platform?",
+      "type": "multiple_choice",
       "correctAnswer": 1,
       "explanation": "Toeboards are mandatory on all working platforms to prevent tools and materials from falling onto people below",
-      "imageDescription": "A view of the top platform of a mobile tower. Guardrails and mid-rails are present, but there are no wooden or plastic boards around the perimeter of the platform floor. Loose tools are lying on the floor",
-      "id": "ip-im-0032"
+      "id": "ip-im-0032",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageAlt": "A scissor lift platform cluttered with offcuts of pipe, boxes, and empty water bottles",
-      "question": "What safety concern is most evident on the platform in this image?",
+      "type": "multiple_choice",
+      "question": "A wide shot of a scissor lift platform. The floor is covered in construction debris, scrap metal offcuts, and several toolboxes, leaving very little room for the operator to stand safely. What safety concern is most evident on the platform ?",
       "options": [
         "The platform is overloaded by weight",
         "The guardrails have been removed",
@@ -5565,14 +5532,13 @@
         "The gate is tied open"
       ],
       "explanation": "The platform must be kept clear of debris and excessive materials to prevent trips, falls, and overloading",
-      "imageDescription": "A wide shot of a scissor lift platform. The floor is covered in construction debris, scrap metal offcuts, and several toolboxes, leaving very little room for the operator to stand safely",
       "correctAnswer": 2,
-      "id": "ip-im-0033"
+      "id": "ip-im-0033",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A frame joint on a mobile tower where the locking pin is hanging loose by its wire",
-      "question": "What is the mechanical fault shown at this frame connection?",
-      "type": "image_question",
+      "question": "A close-up of a joint where two vertical frames of a mobile access tower meet. The locking pin (interlock clip) is hanging on its retaining wire and is not inserted through the holes in the frames. What is the mechanical fault shown at this frame connection?",
+      "type": "multiple_choice",
       "options": [
         "The frame sections are not locked together",
         "The frame is upside down",
@@ -5580,29 +5546,27 @@
         "The joint is the wrong colour for this tower"
       ],
       "correctAnswer": 0,
-      "imageDescription": "A close-up of a joint where two vertical frames of a mobile access tower meet. The locking pin (interlock clip) is hanging on its retaining wire and is not inserted through the holes in the frames",
       "explanation": "Interlock clips (often called 'pigtails') must be engaged to prevent frame sections from separating or lifting apart",
-      "id": "ip-im-0034"
+      "id": "ip-im-0034",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "Wind speed increases with height and can be funneled between buildings, creating higher pressure than at ground level",
-      "imageDescription": "A worker in a boom lift is positioned in a narrow gap between two very tall skyscrapers. A wind-sock on a nearby pole is blowing forcefully in a horizontal direction",
       "correctAnswer": 3,
-      "type": "image_question",
-      "imageAlt": "A MEWP worker between two tall office buildings with a wind-sock blowing horizontally",
-      "question": "Why is wind a particular hazard for the operator in the position shown?",
+      "type": "multiple_choice",
+      "question": "A worker in a boom lift is positioned in a narrow gap between two very tall skyscrapers. A wind-sock on a nearby pole is blowing forcefully in a horizontal direction. Why is wind a particular hazard for the operator in the position shown?",
       "options": [
         "The buildings block the wind completely",
         "The air is thinner at higher altitudes",
         "The temperature is higher between buildings",
         "The 'wind tunnel' effect increases wind speed between buildings"
       ],
-      "id": "ip-im-0035"
+      "id": "ip-im-0035",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "An operator holding a small yellow pen-like device near a metal cable tray",
-      "question": "What is the operator checking for with the tool shown in this image?",
-      "type": "image_question",
+      "question": "An operator is holding a yellow non-contact voltage detector (volt stick) near a metal cable tray before high-level maintenance. The device is glowing red. What is the operator checking for with the tool shown ?",
+      "type": "multiple_choice",
       "options": [
         "Checking for gas leaks",
         "Checking for live electricity/voltage",
@@ -5610,15 +5574,13 @@
         "Measuring the distance to the ceiling"
       ],
       "correctAnswer": 1,
-      "imageDescription": "An operator is holding a yellow non-contact voltage detector (volt stick) near a metal cable tray before high-level maintenance. The device is glowing red",
       "explanation": "An AC voltage detector (volt stick) is used to verify if metallic structures or nearby lines are live before starting work",
-      "id": "ip-im-0036"
+      "id": "ip-im-0036",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "The castor wheel is in the 'unlocked' position. All castors must be locked before any person climbs the tower to ensure stability",
-      "imageAlt": "Close-up of a mobile tower castor wheel with the brake lever in the up position",
-      "type": "image_question",
-      "imageDescription": "A detailed close-up of a standard mobile access tower castor wheel. The locking brake lever is pointed upwards, indicating it is not engaged with the wheel",
+      "type": "multiple_choice",
       "options": [
         "The wheel is the wrong diameter",
         "The brake lever is not engaged",
@@ -5626,8 +5588,9 @@
         "The trail-lock is missing"
       ],
       "correctAnswer": 1,
-      "question": "Before climbing this mobile tower, what is the primary fault you must correct at the base?",
-      "id": "ip-im-0037"
+      "question": "A detailed close-up of a standard mobile access tower castor wheel. The locking brake lever is pointed upwards, indicating it is not engaged with the wheel. Before climbing this mobile tower, what is the primary fault you must correct at the base?",
+      "id": "ip-im-0037",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 2,
@@ -5637,18 +5600,15 @@
         "The ground pressure is exceeding soil capacity",
         "The footpad is the wrong shape"
       ],
-      "question": "What is the primary danger associated with the outrigger setup shown here?",
-      "type": "image_question",
+      "question": "A close-up of a MEWP outrigger foot. The foot is sinking several inches into soft, dark soil, creating a deep depression. There are no spreader plates underneath. What is the primary danger associated with the outrigger setup ?",
+      "type": "multiple_choice",
       "explanation": "The image shows the outrigger pad sinking into soft ground. Spreaders or mats are required to distribute the load on soft surfaces",
-      "imageAlt": "An outrigger foot pressing into soft, muddy soil with visible deformation",
-      "imageDescription": "A close-up of a MEWP outrigger foot. The foot is sinking several inches into soft, dark soil, creating a deep depression. There are no spreader plates underneath",
-      "id": "ip-im-0038"
+      "id": "ip-im-0038",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageAlt": "A red pull-knob located at the base of a scissor lift marked with a lowering",
+      "type": "multiple_choice",
       "explanation": "This is the Emergency Lowering Control, used to descend the platform safely if the main power or controls fail",
-      "imageDescription": "A clear view of the base chassis of a scissor lift. A bright red T-handle or pull-knob is clearly visible, often accompanied by a decal showing a descending platform",
       "correctAnswer": 0,
       "options": [
         "Emergency lowering handle",
@@ -5656,8 +5616,9 @@
         "Hydraulic oil drain plug",
         "Manual steering override"
       ],
-      "question": "What is the purpose of the control shown in this image?",
-      "id": "ip-im-0039"
+      "question": "A clear view of the base chassis of a scissor lift. A bright red T-handle or pull-knob is clearly visible, often accompanied by a decal showing a descending platform. What is the purpose of the control shown ?",
+      "id": "ip-im-0039",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 3,
@@ -5667,12 +5628,11 @@
         "Using tools without a lanyard",
         "Standing on the mid-rails to gain height"
       ],
-      "question": "Which unsafe practice is the operative demonstrating in this image?",
-      "type": "image_question",
+      "question": "An operative wearing a hard hat is standing with both feet on the mid-rail of a MEWP basket. Their back is arched as they reach for a ceiling fixture. Which unsafe practice is the operative demonstrating ?",
+      "type": "multiple_choice",
       "explanation": "The operative is performing a 'tip-toe' or overreaching action. Your feet must remain firmly on the platform floor at all times",
-      "imageAlt": "A worker standing on the mid-rails of a scissor lift platform to reach higher",
-      "imageDescription": "An operative wearing a hard hat is standing with both feet on the mid-rail of a MEWP basket. Their back is arched as they reach for a ceiling fixture",
-      "id": "ip-im-0040"
+      "id": "ip-im-0040",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 1,
@@ -5682,15 +5642,14 @@
         "The trapdoor is opening the wrong way",
         "The guardrail is too high"
       ],
-      "question": "Looking at this platform assembly, what safety feature is missing?",
-      "type": "image_question",
+      "question": "A view of the working platform of a mobile tower. The guardrails and mid-rails are present, but there is a clear 150mm gap between the platform deck and the first rail. Looking at this platform assembly, what safety feature is missing?",
+      "type": "multiple_choice",
       "explanation": "The image shows a missing toe-board. Toe-boards are essential to prevent tools or materials from falling onto people below",
-      "imageAlt": "A mobile tower platform with side rails but a gap at floor level where a board should be",
-      "imageDescription": "A view of the working platform of a mobile tower. The guardrails and mid-rails are present, but there is a clear 150mm gap between the platform deck and the first rail",
-      "id": "ip-im-0041"
+      "id": "ip-im-0041",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What is the meaning of the decal shown on the chassis in this image?",
+      "question": "A side view of a boom lift chassis with a large, high-visibility arrow decal pointing toward the steering wheels. There is often a matching arrow on the control box. What is the meaning of the decal shown on the chassis ?",
       "options": [
         "Maximum wind speed direction",
         "Emergency exit route",
@@ -5698,11 +5657,10 @@
         "Hydraulic flow direction"
       ],
       "correctAnswer": 2,
-      "imageDescription": "A side view of a boom lift chassis with a large, high-visibility arrow decal pointing toward the steering wheels. There is often a matching arrow on the control box",
       "explanation": "This symbol indicates the direction of travel (Forward) relative to the chassis, helping the operator orient the controls",
-      "imageAlt": "A black and white arrow decal on the chassis of a boom lift",
-      "type": "image_question",
-      "id": "ip-im-0042"
+      "type": "multiple_choice",
+      "id": "ip-im-0042",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 0,
@@ -5712,15 +5670,14 @@
         "Using the tower as a lifting derrick",
         "Exceeding the safe working load of the tower"
       ],
-      "question": "What dangerous practice is being performed in this image?",
-      "type": "image_question",
-      "imageAlt": "A step ladder leaning against the side of a mobile access tower",
+      "question": "A wide shot showing a small mobile tower. A worker has placed a step ladder on the ground and leaned it against the outer frame of the tower to reach a high point. What dangerous practice is being performed ?",
+      "type": "multiple_choice",
       "explanation": "The image shows a person using a mobile tower as a support for a ladder. This is strictly prohibited as it can cause the tower to overturn",
-      "imageDescription": "A wide shot showing a small mobile tower. A worker has placed a step ladder on the ground and leaned it against the outer frame of the tower to reach a high point",
-      "id": "ip-im-0043"
+      "id": "ip-im-0043",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What is the most significant hazard shown in this elevation sequence?",
+      "question": "A boom lift is being elevated. The top of the operator's head is inches away from a low-hanging concrete beam, but the operator's eyes are focused on the foot pedal or floor. What is the most significant hazard shown in this elevation sequence?",
       "correctAnswer": 3,
       "options": [
         "The operator is not wearing gloves",
@@ -5728,11 +5685,10 @@
         "The platform is overloaded",
         "Risk of overhead entrapment"
       ],
-      "imageDescription": "A boom lift is being elevated. The top of the operator's head is inches away from a low-hanging concrete beam, but the operator's eyes are focused on the foot pedal or floor",
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "The 'crush zone' is the area between the platform and an overhead structure. The operator is looking down instead of up at the hazard",
-      "imageAlt": "A boom lift platform rising toward a concrete beam with the operator looking at the floor",
-      "id": "ip-im-0044"
+      "id": "ip-im-0044",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 1,
@@ -5742,12 +5698,11 @@
         "Using rusted components",
         "The frame is missing its paint coating"
       ],
-      "question": "What is the safety concern with the assembly shown in this photo?",
-      "type": "image_question",
+      "question": "A close-up of a junction between two tower frames. One frame is blue with a specific locking pin, and the other is silver with a different lug design. They do not sit flush. What is the safety concern with the assembly shown in this photo?",
+      "type": "multiple_choice",
       "explanation": "The image shows 'intermixing' components from two different tower manufacturers. This is unsafe as components may not lock together correctly",
-      "imageAlt": "Two tower frames joined together where the colors and locking mechanisms do not match",
-      "imageDescription": "A close-up of a junction between two tower frames. One frame is blue with a specific locking pin, and the other is silver with a different lug design. They do not sit flush",
-      "id": "ip-im-0045"
+      "id": "ip-im-0045",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -5757,12 +5712,11 @@
         "Wearing the wrong type of footwear"
       ],
       "correctAnswer": 0,
-      "question": "What error is the worker making while ascending the tower?",
-      "imageAlt": "A worker climbing a tower ladder with only one hand, while carrying a large box in the other",
+      "question": "A side view of a person climbing the internal ladder of an access tower. They have one hand on the rung and one foot on the rung below. Their other hand is clutching a large cardboard box. What error is the worker making while ascending the tower?",
       "explanation": "The image shows a worker carrying a heavy box while climbing. You must maintain 3 points of contact and use a hoist line for tools/materials",
-      "type": "image_question",
-      "imageDescription": "A side view of a person climbing the internal ladder of an access tower. They have one hand on the rung and one foot on the rung below. Their other hand is clutching a large cardboard box",
-      "id": "ip-im-0046"
+      "type": "multiple_choice",
+      "id": "ip-im-0046",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -5772,15 +5726,14 @@
         "Failing to close the gate mechanism"
       ],
       "correctAnswer": 2,
-      "question": "Why is the fall arrest connection shown in this image incorrect?",
+      "question": "A close-up inside a MEWP basket. There is a clearly marked yellow anchorage point on the floor, but the worker\u2019s lanyard snaphook is clipped over the top guardrail. Why is the fall arrest connection shown incorrect?",
       "explanation": "The image shows a harness lanyard connected to a guardrail instead of the designated anchorage point (yellow ring/D-ring)",
-      "imageAlt": "A harness hook clipped onto a horizontal guardrail instead of the yellow anchor point",
-      "type": "image_question",
-      "imageDescription": "A close-up inside a MEWP basket. There is a clearly marked yellow anchorage point on the floor, but the worker’s lanyard snaphook is clipped over the top guardrail",
-      "id": "ip-im-0047"
+      "type": "multiple_choice",
+      "id": "ip-im-0047",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What major safety violation is shown in this image?",
+      "question": "A worker is standing with one foot on the steering wheel and one foot on the battery compartment of a scissor lift to reach a wall, rather than staying inside the platform. What major safety violation is shown ?",
       "correctAnswer": 1,
       "options": [
         "Standing on the battery box cover",
@@ -5788,45 +5741,42 @@
         "Wearing a harness while on a scissor lift",
         "Working without a second person on the ground"
       ],
-      "imageDescription": "A worker is standing with one foot on the steering wheel and one foot on the battery compartment of a scissor lift to reach a wall, rather than staying inside the platform",
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "The image shows an operative standing on the base frame of the machine. Only the platform floor is designed for standing",
-      "imageAlt": "A worker standing on the metal frame of the machine chassis to reach a wall",
-      "id": "ip-im-0048"
+      "id": "ip-im-0048",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 1,
       "explanation": "The castors must be locked whenever the tower is in use to prevent unexpected movement and instability",
-      "question": "Looking at the base of this mobile tower, what is the immediate safety concern?",
-      "type": "image_question",
-      "imageAlt": "A close-up of a mobile tower castor wheel with the brake tab in the 'up' position",
-      "imageDescription": "A close-up photograph of a heavy-duty castor wheel at the base of a mobile access tower. The locking lever/brake tab is clearly in the raised (unlocked) position, and the tower is on a smooth concrete floor",
+      "question": "A close-up photograph of a heavy-duty castor wheel at the base of a mobile access tower. The locking lever/brake tab is clearly in the raised (unlocked) position, and the tower is on a smooth concrete floor. Looking at the base of this mobile tower, what is the immediate safety concern?",
+      "type": "multiple_choice",
       "options": [
         "The wheel is the wrong colour code",
         "The brake is not engaged (unlocked)",
         "The adjustable leg is at maximum extension",
         "The tyre is made of the wrong material"
       ],
-      "id": "ip-im-0049"
+      "id": "ip-im-0049",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A low toe board on a platform next to a measuring tape",
-      "imageDescription": "A photograph of a wooden toe board fitted to a scissor lift platform. A tape measure is held up against it, showing the height is only 75mm. Nearby, a hammer is resting near the edge",
       "options": [
         "The board is made of the wrong wood",
         "The board is too thick for the clips",
         "The toe board is not high enough (minimum 150mm)",
         "The toe board should be painted bright yellow"
       ],
-      "question": "Based on the measurement shown, why does this platform fail a safety inspection?",
-      "type": "image_question",
+      "question": "A photograph of a wooden toe board fitted to a scissor lift platform. A tape measure is held up against it, showing the height is only 75mm. Nearby, a hammer is resting near the edge. Based on the measurement shown, why does this platform fail a safety inspection?",
+      "type": "multiple_choice",
       "correctAnswer": 2,
       "explanation": "Toe boards must be at least 150mm high to prevent tools or materials from falling off the edge of the platform",
-      "id": "ip-im-0050"
+      "id": "ip-im-0050",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "question": "What is the hazard associated with the lanyard connection shown in this image?",
+      "type": "multiple_choice",
+      "question": "A close-up of a fall-arrest lanyard. The worker has wrapped the rope portion around a sharp-edged steel I-beam and clipped the large 'scaffold hook' back onto the lanyard rope itself. What is the hazard associated with the lanyard connection shown ?",
       "explanation": "Lanyards must never be looped around sharp edges or back onto themselves unless specifically designed for it, as this can cause the webbing to fail during a fall",
       "correctAnswer": 0,
       "options": [
@@ -5835,150 +5785,139 @@
         "The energy absorber is missing from the assembly",
         "The worker is using 100% tie-off incorrectly"
       ],
-      "imageDescription": "A close-up of a fall-arrest lanyard. The worker has wrapped the rope portion around a sharp-edged steel I-beam and clipped the large 'scaffold hook' back onto the lanyard rope itself",
-      "imageAlt": "A harness lanyard wrapped twice around a square metal beam and clipped back to its own rope",
-      "id": "ip-im-0051"
+      "id": "ip-im-0051",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A side view of an outrigger attached to a mobile access tower. The footpad of the outrigger is clearly about 2 inches off the ground, while the tower's main castors are on the floor",
       "options": [
         "The outrigger is at the wrong angle to the frame",
         "The footpad is missing its rubber grip",
         "The outrigger is too short for this tower height",
         "The outrigger is not in contact with the ground"
       ],
-      "imageAlt": "An outrigger leg on a mobile tower that is hovering slightly above the pavement",
       "correctAnswer": 3,
       "explanation": "Outriggers or stabilisers must always be deployed and 'firmly' set to the ground as per the manufacturer's instruction manual before ascending",
-      "question": "What is the primary assembly fault visible in this image?",
-      "type": "image_question",
-      "id": "ip-im-0052"
+      "question": "A side view of an outrigger attached to a mobile access tower. The footpad of the outrigger is clearly about 2 inches off the ground, while the tower's main castors are on the floor. What is the primary assembly fault visible ?",
+      "type": "multiple_choice",
+      "id": "ip-im-0052",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "On a mobile access tower, the ladder should be positioned on the inside of the frame to ensure the worker stays within the footprint of the tower while climbing",
       "correctAnswer": 2,
-      "type": "image_question",
-      "question": "What is the safety error regarding the ladder position in this image?",
+      "type": "multiple_choice",
+      "question": "An image of a worker in PPE climbing an integrated ladder system on a mobile tower. The ladder is attached to the external face of the tower frame rather than the internal face. What is the safety error regarding the ladder position ?",
       "options": [
         "The worker is not wearing a safety harness",
         "The worker is carrying a tool bag in one hand",
         "The ladder is positioned on the outside of the tower frame",
         "The ladder rungs are spaced too far apart"
       ],
-      "imageDescription": "An image of a worker in PPE climbing an integrated ladder system on a mobile tower. The ladder is attached to the external face of the tower frame rather than the internal face",
-      "imageAlt": "A person climbing a ladder that is hooked onto the outside of a scaffold tower",
-      "id": "ip-im-0053"
+      "id": "ip-im-0053",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A worker stepping from a cherry picker basket onto the roof of a building",
       "options": [
         "The operator is not using a fall arrest lanyard",
         "The operator is exiting the platform at height",
         "The platform is too far away from the building edge",
         "The wind speed is too high for this manoeuvre"
       ],
-      "imageDescription": "A photograph of a boom lift (cherry picker) raised to the edge of a flat roof. The operator has one foot on the basket floor and the other foot on the roof parapet, attempting to exit the platform at height",
       "explanation": "Never use a MEWP to gain access to another level by stepping out of the basket unless a specific risk assessment and manufacturer approval are in place",
       "correctAnswer": 1,
-      "type": "image_question",
-      "question": "Which unsafe act is being demonstrated by the operative in this image?",
-      "id": "ip-im-0054"
+      "type": "multiple_choice",
+      "question": "A photograph of a boom lift (cherry picker) raised to the edge of a flat roof. The operator has one foot on the basket floor and the other foot on the roof parapet, attempting to exit the platform at height. Which unsafe act is being demonstrated by the operative ?",
+      "id": "ip-im-0054",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A close-up of a MEWP chassis display screen. It shows a spirit-level style icon with a red circle and a cross through it, alongside an angle reading of 7 degrees",
       "options": [
         "The ground slope exceeds the machine's safe limit",
         "The machine is low on hydraulic fluid",
         "The platform load is unevenly distributed",
         "The emergency stop has been pressed outdoors"
       ],
-      "imageAlt": "A digital spirit level/incline sensor on a MEWP showing a red cross",
       "correctAnswer": 0,
       "explanation": "The 'X' on a slope/incline gauge indicates that the ground is too steep for safe operation, increasing the risk of the MEWP overturning",
-      "question": "What does the symbol on this machine's display indicate to the operator?",
-      "type": "image_question",
-      "id": "ip-im-0055"
+      "question": "A close-up of a MEWP chassis display screen. It shows a spirit-level style icon with a red circle and a cross through it, alongside an angle reading of 7 degrees. What does the symbol on this machine's display indicate to the operator?",
+      "type": "multiple_choice",
+      "id": "ip-im-0055",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "The outrigger foot of a truck-mounted MEWP is placed directly onto a patch of soft grass and mud. The foot is visible sinking into the earth by several inches",
       "options": [
         "The outrigger is not fully extended laterally",
         "The locking pin is not inserted into the outrigger leg",
         "The outrigger is missing a spreader plate for soft ground",
         "The tyre pressure on the vehicle is too low"
       ],
-      "imageAlt": "Small outrigger foot sinking into soft grass and soil",
       "explanation": "Spreader plates should be used on soft or uneven ground to distribute the weight and prevent the outriggers from sinking or slipping",
       "correctAnswer": 2,
-      "type": "image_question",
-      "question": "What is the safety requirement missing from this outrigger setup?",
-      "id": "ip-im-0056"
+      "type": "multiple_choice",
+      "question": "The outrigger foot of a truck-mounted MEWP is placed directly onto a patch of soft grass and mud. The foot is visible sinking into the earth by several inches. What is the safety requirement missing from this outrigger setup?",
+      "id": "ip-im-0056",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A photograph of the entry point to a scissor lift platform. The sliding mid-rail and top-rail used for access have been left in the raised position, leaving a large open gap in the side of the platform protection",
       "options": [
         "The platform floor is cluttered with materials",
         "The entry guardrail/gate has been left open",
         "The control box is not mounted correctly",
         "The harness point is obscured by the rail"
       ],
-      "imageAlt": "The entry point of a scissor lift with the sliding rail left in the 'up' position",
-      "question": "What is the safety violation visible on this platform?",
-      "type": "image_question",
+      "question": "A photograph of the entry point to a scissor lift platform. The sliding mid-rail and top-rail used for access have been left in the raised position, leaving a large open gap in the side of the platform protection. What is the safety violation visible on this platform?",
+      "type": "multiple_choice",
       "correctAnswer": 1,
       "explanation": "Guardrails must be continuous; any gaps through which a person could fall must be protected, usually by a self-closing gate or drop bar",
-      "id": "ip-im-0057"
+      "id": "ip-im-0057",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "Horizontal forces (like drilling or pushing off a wall) must be limited to prevent the machine or tower from tipping over. This decal shows the maximum force allowed",
       "correctAnswer": 3,
-      "type": "image_question",
-      "question": "What does the decal shown in this image represent?",
+      "type": "multiple_choice",
+      "question": "A yellow and black safety decal found in a machine basket. It depicts a stick figure pushing against a vertical wall with an arrow and the text 'MAX 200N' (Newtons). What does the decal shown represent?",
       "options": [
         "The maximum weight of tools allowed on the floor",
         "The maximum wind speed allowed during operation",
         "The maximum number of people allowed in the basket",
         "The maximum allowable manual side force"
       ],
-      "imageDescription": "A yellow and black safety decal found in a machine basket. It depicts a stick figure pushing against a vertical wall with an arrow and the text 'MAX 200N' (Newtons)",
-      "imageAlt": "A decal on a platform showing a person pushing a wall and the text '200N'",
-      "id": "ip-im-0058"
+      "id": "ip-im-0058",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A frame joint on a tower where the locking pin is dangling on its chain instead of being in the hole",
-      "imageDescription": "A close-up of the connection point where two frames of a mobile tower join. The interlocking pin (pigtail) is hanging by its retaining chain, and the hole where it should be inserted is empty",
       "options": [
         "The frame is upside down",
         "The interlocking clip is not engaged",
         "The tube is bent and should be replaced",
         "There is too much grease on the joint"
       ],
-      "question": "What component failure or omission is visible at this frame joint?",
-      "type": "image_question",
+      "question": "A close-up of the connection point where two frames of a mobile tower join. The interlocking pin (pigtail) is hanging by its retaining chain, and the hole where it should be inserted is empty. What component failure or omission is visible at this frame joint?",
+      "type": "multiple_choice",
       "correctAnswer": 1,
       "explanation": "Interlock clips or 'pigtails' must be correctly engaged to prevent the tower frames from separating during use or movement",
-      "id": "ip-im-0059"
+      "id": "ip-im-0059",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "When performing a pre-use inspection, why should this harness be rejected?",
-      "type": "image_question",
+      "question": "A high-resolution photo of a green polyester harness strap. On the edge of the strap, there is a small, V-shaped cut or 'nick' about 5mm deep into the webbing. When performing a pre-use inspection, why should this harness be rejected?",
+      "type": "multiple_choice",
       "correctAnswer": 2,
       "explanation": "Harnesses must be inspected for physical damage, including 'nicks' or cuts in the webbing which can drastically reduce the strength of the material",
-      "imageDescription": "A high-resolution photo of a green polyester harness strap. On the edge of the strap, there is a small, V-shaped cut or 'nick' about 5mm deep into the webbing",
       "options": [
         "The harness is just dirty and needs cleaning",
         "The stitching is the wrong colour for the strap",
         "The strap has a 'nick' (cut) and must be decommissioned",
         "The webbing has faded due to UV exposure"
       ],
-      "imageAlt": "A close-up of a harness strap showing a small 5mm cut in the edge of the fabric",
-      "id": "ip-im-0060"
+      "id": "ip-im-0060",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 2,
-      "question": "The working platform shown in this image is incomplete. Which components must be added before use?",
-      "imageAlt": "A mobile tower platform with guardrails but missing the bottom perimeter boards",
+      "question": "A close-up of a PASMA tower working platform showing double guardrails and a trapdoor deck, but there are no toe boards installed around the base of the platform. The working platform shown is incomplete. Which components must be added before use?",
       "options": [
         "Missing the internal ladder",
         "Incorrect guardrail height",
@@ -5986,11 +5925,10 @@
         "Incorrect deck material"
       ],
       "explanation": "Toe boards are a mandatory requirement on working platforms to prevent tools or materials from being kicked off the edge",
-      "imageDescription": "A close-up of a PASMA tower working platform showing double guardrails and a trapdoor deck, but there are no toe boards installed around the base of the platform",
-      "id": "ip-im-0061"
+      "id": "ip-im-0061",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A clear yellow and black decal found on the side of a cherry picker basket. It shows a weight limit of 250kg and icons representing two people and a tool bag",
       "options": [
         "Safe Working Load (SWL) for the platform",
         "The total weight of the machine's chassis",
@@ -5998,14 +5936,13 @@
         "Minimum ground pressure required"
       ],
       "explanation": "The load includes the weight of the operator, their tools, and all materials on the platform. Exceeding the SWL can cause structural failure or overturning",
-      "question": "What information is this decal providing to the operator?",
-      "imageAlt": "A decal on a MEWP basket showing '250kg' and a symbol of two people plus a suitcase",
-      "type": "image_question",
+      "question": "A clear yellow and black decal found on the side of a cherry picker basket. It shows a weight limit of 250kg and icons representing two people and a tool bag. What information is this decal providing to the operator?",
+      "type": "multiple_choice",
       "correctAnswer": 0,
-      "id": "ip-im-0062"
+      "id": "ip-im-0062",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "An operative inside a boom lift basket. Their safety lanyard is clipped directly onto the top circular handrail instead of the designated D-ring at the bottom of the basket",
       "explanation": "Harnesses must be connected to the dedicated anchor points provided by the manufacturer, never to the guardrails which are not designed for fall arrest loads",
       "options": [
         "It is a trip hazard",
@@ -6013,17 +5950,16 @@
         "The snap hook is upside down",
         "The lanyard is attached to a non-load-bearing guardrail"
       ],
-      "imageAlt": "A worker in a boom-type MEWP with a lanyard clipped to the top handrail",
-      "question": "What is the safety hazard regarding the fall protection setup in this image?",
+      "question": "An operative inside a boom lift basket. Their safety lanyard is clipped directly onto the top circular handrail instead of the designated D-ring at the bottom of the basket. What is the safety hazard regarding the fall protection setup ?",
       "correctAnswer": 3,
-      "type": "image_question",
-      "id": "ip-im-0063"
+      "type": "multiple_choice",
+      "id": "ip-im-0063",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A MEWP outrigger leg pressing directly into soft, muddy soil",
-      "question": "Why is this outrigger deployment considered unsafe?",
+      "question": "The hydraulic outrigger foot of a spider lift is placed directly onto soft, unlevelled grass/mud without any spreader plates or wooden pads underneath. Why is this outrigger deployment considered unsafe?",
       "correctAnswer": 1,
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "The leg is not fully extended",
         "The outrigger is missing a spreader plate (sole board)",
@@ -6031,11 +5967,10 @@
         "The hydraulic cylinder is leaking"
       ],
       "explanation": "Outrigger pads (spreader plates) must be used to distribute the weight of the machine over a larger area to prevent the ground from giving way",
-      "imageDescription": "The hydraulic outrigger foot of a spider lift is placed directly onto soft, unlevelled grass/mud without any spreader plates or wooden pads underneath",
-      "id": "ip-im-0064"
+      "id": "ip-im-0064",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A close-up shot of a 125mm castor wheel at the base of a mobile access tower. The brake locking lever is clearly in the raised (unlocked) position",
       "explanation": "Castors must be locked whenever the tower is in use to prevent the structure from moving or rolling while a person is on it",
       "options": [
         "The wheel is the wrong diameter",
@@ -6043,16 +5978,15 @@
         "The castor brake is not engaged",
         "The adjustable leg has reached its limit"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 2,
-      "question": "What is the primary concern with the base of the tower shown here?",
-      "imageAlt": "A close-up of a tower wheel with the brake lever in the 'up' position",
-      "id": "ip-im-0065"
+      "question": "A close-up shot of a 125mm castor wheel at the base of a mobile access tower. The brake locking lever is clearly in the raised (unlocked) position. What is the primary concern with the base of the tower ?",
+      "id": "ip-im-0065",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What unsafe practice is being demonstrated by the operator in this image?",
-      "imageAlt": "An operator standing on the middle rail of a scissor lift to reach a ceiling light",
-      "type": "image_question",
+      "question": "Inside a scissor lift, an operator is standing with both feet on the mid-rail of the platform to reach a light fixture that is just out of reach from the floor. What unsafe practice is being demonstrated by the operator ?",
+      "type": "multiple_choice",
       "correctAnswer": 0,
       "explanation": "Standing on the mid-rail or top-rail is a leading cause of falls from height. Operators must keep both feet on the platform floor",
       "options": [
@@ -6061,8 +5995,8 @@
         "The operator is not wearing a helmet",
         "The emergency stop has not been pressed"
       ],
-      "imageDescription": "Inside a scissor lift, an operator is standing with both feet on the mid-rail of the platform to reach a light fixture that is just out of reach from the floor",
-      "id": "ip-im-0066"
+      "id": "ip-im-0066",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -6072,18 +6006,15 @@
         "Point of Access Protection (PAP)Indices"
       ],
       "explanation": "The 3T (Through The Trapdoor) method ensures the operator is always protected by guardrails while they sit on the trapdoor to install the next set of rails",
-      "imageAlt": "A person sitting on a tower trapdoor platform with their legs through the hatch",
-      "question": "Which recognised safe assembly method is being used in this image?",
+      "question": "A worker is seen sitting on the edge of an open trapdoor on a mobile tower, with his feet on the ladder below, preparing to install guardrails. Which recognised safe assembly method is being used ?",
       "correctAnswer": 1,
-      "type": "image_question",
-      "imageDescription": "A worker is seen sitting on the edge of an open trapdoor on a mobile tower, with his feet on the ladder below, preparing to install guardrails",
-      "id": "ip-im-0067"
+      "type": "multiple_choice",
+      "id": "ip-im-0067",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A telescopic boom lift is extended high between two tall office buildings that are spaced closely together, creating a narrow alleyway",
-      "question": "When operating in an area like the one shown, what specific environmental hazard is increased?",
-      "imageAlt": "A MEWP being used at the narrow gap between two large buildings",
-      "type": "image_question",
+      "question": "A telescopic boom lift is extended high between two tall office buildings that are spaced closely together, creating a narrow alleyway. When operating in an area like the one shown, what specific environmental hazard is increased?",
+      "type": "multiple_choice",
       "correctAnswer": 3,
       "options": [
         "Falling debris from the windows",
@@ -6092,7 +6023,8 @@
         "The 'venturi' effect causing high wind speeds"
       ],
       "explanation": "Wind speeds can increase significantly around the corners of buildings due to the 'funnel' or 'venturi' effect, making the MEWP unstable",
-      "id": "ip-im-0068"
+      "id": "ip-im-0068",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "Towers must be perfectly vertical to remain stable. If the bubble is not centered, the adjustable legs must be used to level the structure",
@@ -6102,18 +6034,15 @@
         "The tower is not level and is at risk of instability",
         "The spirit level is broken"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 2,
-      "question": "Based on this spirit level reading, what action is required?",
-      "imageAlt": "A spirit level on a tower frame showing the bubble far to one side",
-      "imageDescription": "A close-up of a small spirit level attached to the horizontal brace of a mobile tower. The air bubble is completely touching the right-hand black line",
-      "id": "ip-im-0069"
+      "question": "A close-up of a small spirit level attached to the horizontal brace of a mobile tower. The air bubble is completely touching the right-hand black line. Based on this spirit level reading, what action is required?",
+      "id": "ip-im-0069",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A side view of a simple leaning ladder against a brick wall. The base of the ladder is very far from the wall, making the angle roughly 45 degrees",
-      "question": "What is the main safety issue with the ladder setup shown in this image?",
-      "imageAlt": "A leaning ladder set against a wall at a very shallow angle",
-      "type": "image_question",
+      "question": "A side view of a simple leaning ladder against a brick wall. The base of the ladder is very far from the wall, making the angle roughly 45 degrees. What is the main safety issue with the ladder setup shown ?",
+      "type": "multiple_choice",
       "correctAnswer": 1,
       "explanation": "The 1:4 rule (75 degrees) is essential for ladder stability. Too steep and it may flip backwards; too shallow and it may slide out at the base",
       "options": [
@@ -6122,7 +6051,8 @@
         "The rungs are the incorrect shape",
         "The ladder is not tied at the bottom"
       ],
-      "id": "ip-im-0070"
+      "id": "ip-im-0070",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "On a mobile tower, the internal ladder must be positioned so that the rungs align and the user doesn't have to climb over the outside of the frames",
@@ -6132,15 +6062,13 @@
         "The ladder is made of wood instead of aluminium",
         "The ladder is missing its safety feet"
       ],
-      "question": "Why would this tower fail a pre-use inspection?",
-      "imageAlt": "A tower where the ladder is on the opposite side of the trapdoor opening",
-      "type": "image_question",
+      "question": "A view from below a tower platform. The internal ladder is leaning against the left frame, but the trapdoor opening in the platform is on the right-hand side. Why would this tower fail a pre-use inspection?",
+      "type": "multiple_choice",
       "correctAnswer": 0,
-      "imageDescription": "A view from below a tower platform. The internal ladder is leaning against the left frame, but the trapdoor opening in the platform is on the right-hand side",
-      "id": "ip-im-0071"
+      "id": "ip-im-0071",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A macro photograph of a polyester webbing strap on a fall arrest harness. There is clear fraying at the edges and a small 5mm cut in the center of the weave",
       "options": [
         "The strap is the wrong color for the site",
         "The harness is more than 6 months old",
@@ -6148,75 +6076,69 @@
         "The webbing is damaged and must be decommissioned"
       ],
       "explanation": "A frayed or cut webbed strap significantly reduces the strength of the harness, making it unsafe to use in a fall. It must be destroyed and replaced",
-      "question": "During a pre-use inspection, what should the operative conclude about this harness?",
-      "imageAlt": "A close-up of a safety harness strap with visible fraying and a small tear",
-      "type": "image_question",
+      "question": "A macro photograph of a polyester webbing strap on a fall arrest harness. There is clear fraying at the edges and a small 5mm cut in the center of the weave. During a pre-use inspection, what should the operative conclude about this harness?",
+      "type": "multiple_choice",
       "correctAnswer": 3,
-      "id": "ip-im-0072"
+      "id": "ip-im-0072",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A close-up of a mobile access tower base plate or screw jack resting directly on a patch of soft, wet soil without any timber support underneath",
       "options": [
         "Nothing, it is secure",
         "The screw jack is over-extended",
         "It lacks a suitable sole board",
         "The base plate is the wrong colour"
       ],
-      "imageAlt": "A scaffolding base plate resting directly on soft mud",
-      "type": "image_question",
-      "question": "What is the primary safety concern with this tower foundation?",
+      "type": "multiple_choice",
+      "question": "A close-up of a mobile access tower base plate or screw jack resting directly on a patch of soft, wet soil without any timber support underneath. What is the primary safety concern with this tower foundation?",
       "correctAnswer": 2,
       "explanation": "The base plate must be centered on a sole board to spread the load, especially on soft or uneven ground",
-      "id": "ip-im-0073"
+      "id": "ip-im-0073",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "An aerial view looking down at a scissor lift platform where an operative is working, but the drop-bar entry gate is clearly left in the raised position",
       "options": [
         "The entry gate is not secured",
         "The operative is too heavy",
         "The floor is cluttered",
         "The guardrails are too low"
       ],
-      "imageAlt": "A MEWP platform with the entry bar left in the 'up' position",
       "correctAnswer": 0,
       "explanation": "The safety bar or gate must be closed and secured at all times when an operative is inside the platform to prevent falls",
-      "type": "image_question",
-      "question": "What safety violation is occurring on this MEWP platform?",
-      "id": "ip-im-0074"
+      "type": "multiple_choice",
+      "question": "An aerial view looking down at a scissor lift platform where an operative is working, but the drop-bar entry gate is clearly left in the raised position. What safety violation is occurring on this MEWP platform?",
+      "id": "ip-im-0074",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "Lanyard lengths should be kept as short as possible to minimize the potential free-fall distance in the event of a platform failure",
       "correctAnswer": 3,
-      "question": "In this fall restraint setup, what is the main hazard regarding the lanyard?",
-      "type": "image_question",
-      "imageDescription": "A side profile of a worker in a cherry picker bucket. Their safety lanyard is attached to the anchor point but is so long it loops down significantly below the platform floor",
+      "question": "A side profile of a worker in a cherry picker bucket. Their safety lanyard is attached to the anchor point but is so long it loops down significantly below the platform floor. In this fall restraint setup, what is the main hazard regarding the lanyard?",
+      "type": "multiple_choice",
       "options": [
         "Wrong harness type",
         "Unapproved anchor point",
         "No high-visibility vest",
         "The lanyard length is excessive"
       ],
-      "imageAlt": "An operative in a boom lift with a very long, loose lanyard",
-      "id": "ip-im-0075"
+      "id": "ip-im-0075",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 1,
       "explanation": "Towers must only be climbed from the inside using the integral ladders or climbing frames provided by the manufacturer",
-      "type": "image_question",
-      "question": "Which unsafe practice is being demonstrated by the operative in this image?",
-      "imageDescription": "A wide shot of a mobile access tower showing a worker climbing up the exterior horizontal braces rather than using the internal ladder",
+      "type": "multiple_choice",
+      "question": "A wide shot of a mobile access tower showing a worker climbing up the exterior horizontal braces rather than using the internal ladder. Which unsafe practice is being demonstrated by the operative ?",
       "options": [
         "Wearing the wrong boots",
         "Climbing on the outside of the tower",
         "Climbing too fast",
         "Not using a safety harness while climbing"
       ],
-      "imageAlt": "A person climbing up the outside of a mobile tower",
-      "id": "ip-im-0076"
+      "id": "ip-im-0076",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "An operative holding an anemometer at waist height while on the ground",
-      "imageDescription": "A worker standing on the ground next to a large boom lift, holding a hand-held anemometer (wind gauge) at chest height to check conditions",
       "options": [
         "Wind speed should be checked at height",
         "The anemometer is the wrong model",
@@ -6225,73 +6147,68 @@
       ],
       "correctAnswer": 0,
       "explanation": "Wind speed must be measured at the working height, as wind is often stronger higher up than at ground level",
-      "type": "image_question",
-      "question": "What is the error in checking the weather conditions in this scenario?",
-      "id": "ip-im-0077"
+      "type": "multiple_choice",
+      "question": "A worker standing on the ground next to a large boom lift, holding a hand-held anemometer (wind gauge) at chest height to check conditions. What is the error in checking the weather conditions in this scenario?",
+      "id": "ip-im-0077",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "question": "Which recognised safe assembly method is being used in this image?",
+      "type": "multiple_choice",
+      "question": "A worker following the 3T method on a PASMA tower; they are sitting on the edge of the trapdoor with their feet on the ladder, preparing to install a brace. Which recognised safe assembly method is being used ?",
       "correctAnswer": 2,
       "explanation": "The 3T (Through The Trap) method requires the operator to sit on the trapdoor platform to install guardrails before standing on it",
-      "imageDescription": "A worker following the 3T method on a PASMA tower; they are sitting on the edge of the trapdoor with their feet on the ladder, preparing to install a brace",
       "options": [
         "The Advanced Guardrail method (AGR)",
         "The 'Leaning Over' method",
         "The 'Through The Trap' (3T) method",
         "The 'Free-climbing' method"
       ],
-      "imageAlt": "An operative sitting on a platform through the trapdoor hole",
-      "id": "ip-im-0078"
+      "id": "ip-im-0078",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A close-up of the base of a mobile tower where the wheels are turned inwards under the frame instead of outwards",
       "options": [
         "The wheels are dirty",
         "The castors are not trailed outwards",
         "The brakes are not applied",
         "The tyres are flat"
       ],
-      "imageAlt": "The castor wheels of a tower turned inward toward the center",
-      "question": "Regarding the stability of this mobile tower, what is the error shown?",
-      "type": "image_question",
+      "question": "A close-up of the base of a mobile tower where the wheels are turned inwards under the frame instead of outwards. Regarding the stability of this mobile tower, what is the error shown?",
+      "type": "multiple_choice",
       "explanation": "Castors should be pointing outwards to maximize the 'footprint' and stability of the tower before the brakes are locked",
       "correctAnswer": 1,
-      "id": "ip-im-0079"
+      "id": "ip-im-0079",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A tower platform with guardrails but no boards at foot level",
-      "imageDescription": "A view of a completed top platform of a tower. It has double guardrails, but the wooden or plastic kick-boards around the floor perimeter are missing",
       "options": [
         "Braced frames",
         "The trapdoor platform",
         "Adjustable legs",
         "Toe boards"
       ],
-      "question": "Which safety component is missing from the working platform in this image?",
-      "type": "image_question",
+      "question": "A view of a completed top platform of a tower. It has double guardrails, but the wooden or plastic kick-boards around the floor perimeter are missing. Which safety component is missing from the working platform ?",
+      "type": "multiple_choice",
       "explanation": "Toe boards must be fitted to all working platforms to prevent tools or materials from falling onto people below",
       "correctAnswer": 3,
-      "id": "ip-im-0080"
+      "id": "ip-im-0080",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A close-up of a harness strap with a small cut",
-      "imageDescription": "A macro shot of a polyester harness webbing strap showing a distinct 5mm cut or tear in the edge of the material",
       "options": [
         "It is the wrong colour for safety",
         "The D-ring is slightly dusty",
         "The webbing is cut or frayed",
         "The manufacturer label is missing"
       ],
-      "type": "image_question",
-      "question": "Why must this harness be removed from service immediately?",
+      "type": "multiple_choice",
+      "question": "A macro shot of a polyester harness webbing strap showing a distinct 5mm cut or tear in the edge of the material. Why must this harness be removed from service immediately?",
       "explanation": "The presence of any cut or fraying on a harness strap is an immediate 'fail' criteria during a pre-use inspection",
       "correctAnswer": 2,
-      "id": "ip-im-0081"
+      "id": "ip-im-0081",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A decal showing a machine on a slope with a red 'X'",
-      "imageDescription": "A yellow warning decal on a MEWP chassis showing a simple icon of a machine tilted on a slope with a numerical value (e.g., 3°) and a red diagonal line through it",
       "options": [
         "Do not operate on slopes exceeding the limit",
         "Do not use near overhead power lines",
@@ -6300,39 +6217,38 @@
       ],
       "correctAnswer": 0,
       "explanation": "This symbol warns the operator that the machine must not be used on a gradient steeper than the specified limit",
-      "question": "What does the decal shown in this image represent?",
-      "type": "image_question",
-      "id": "ip-im-0082"
+      "question": "A yellow warning decal on a MEWP chassis showing a simple icon of a machine tilted on a slope with a numerical value (e.g., 3\u00b0) and a red diagonal line through it. What does the decal shown represent?",
+      "type": "multiple_choice",
+      "id": "ip-im-0082",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A photo of a narrow-width mobile tower standing 4 metres high with no stabilizers or outriggers attached to the sides.",
       "options": [
         "The ladder is on the wrong side",
         "The brakes are not on",
         "The tower is too wide",
         "The stabilizers are missing"
       ],
-      "imageAlt": "A tall, narrow tower without any outriggers/stabilizers",
       "correctAnswer": 3,
       "explanation": "To prevent the tower from tipping, stabilizers should be fitted once the tower reaches the height specified in the manufacturer's manual",
-      "type": "image_question",
-      "question": "What is the main safety omission for a tower of this height?",
-      "id": "ip-im-0083"
+      "type": "multiple_choice",
+      "question": "A photo of a narrow-width mobile tower standing 4 metres high with no stabilizers or outriggers attached to the sides. What is the main safety omission for a tower of this height?",
+      "id": "ip-im-0083",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "An operative in a scissor lift is leaning their entire upper body over the top guardrail to reach a light fixture that is about 1 metre away from the platform",
       "options": [
         "The light is too bright",
         "The operative is overreaching",
         "Not wearing a hard hat",
         "Using the wrong tool for the job"
       ],
-      "imageAlt": "A worker leaning far out of a scissor lift to reach a light",
       "explanation": "Overreaching can cause the equipment to tip or the operative to fall; always move the equipment closer to the work area",
       "correctAnswer": 1,
-      "type": "image_question",
-      "question": "What unsafe act is being demonstrated by the operative in this image?",
-      "id": "ip-im-0084"
+      "type": "multiple_choice",
+      "question": "An operative in a scissor lift is leaning their entire upper body over the top guardrail to reach a light fixture that is about 1 metre away from the platform. What unsafe act is being demonstrated by the operative ?",
+      "id": "ip-im-0084",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -6341,48 +6257,44 @@
         "The horizontal force exerted on the tower",
         "The weight of the power tool"
       ],
-      "type": "image_question",
-      "imageAlt": "An operative on a tower scaffold pushing hard against a concrete wall",
-      "question": "When using a power tool as shown in the image, what is the most significant risk to the stability of the tower?",
-      "imageDescription": "An operative standing on a mobile access tower platform, leaning out and using a large hammer drill to push horizontally against a brick wall. The tower is slightly tilting away from the wall",
+      "type": "multiple_choice",
+      "question": "An operative standing on a mobile access tower platform, leaning out and using a large hammer drill to push horizontally against a brick wall. The tower is slightly tilting away from the wall. When using a power tool as shown , what is the most significant risk to the stability of the tower?",
       "explanation": "Horizontal forces, such as drilling into a wall, can cause a tower to overturn if they exceed the manufacturer's specified limit (usually 20kg)",
       "correctAnswer": 2,
-      "id": "ip-im-0085"
+      "id": "ip-im-0085",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What is the primary safety concern regarding the component shown in this image?",
-      "type": "image_question",
+      "question": "A detailed close-up of a dual-pedal castor wheel on a mobile tower. The locking lever is in the 'off' or 'unlocked' position while the tower is being climbed in the background. What is the primary safety concern regarding the component shown ?",
+      "type": "multiple_choice",
       "options": [
         "The castor brake is not engaged",
         "The wheel is the wrong colour for the tower type",
         "The adjustable leg is extended too far",
         "There is a lack of grease on the swivel joint"
       ],
-      "imageAlt": "A close-up of a scaffold tower wheel with the brake lever in the up position",
       "correctAnswer": 0,
       "explanation": "Castors must be locked whenever the tower is in use to prevent unintentional movement or 'walking' of the tower",
-      "imageDescription": "A detailed close-up of a dual-pedal castor wheel on a mobile tower. The locking lever is in the 'off' or 'unlocked' position while the tower is being climbed in the background",
-      "id": "ip-im-0086"
+      "id": "ip-im-0086",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "Which safety feature is missing from the working platform shown in this image?",
-      "type": "image_question",
+      "question": "A view of a tower platform from above. It has double guardrails and a trapdoor, but the wooden or plastic boards that should run around the perimeter of the platform floor are missing. Which safety feature is missing from the working platform shown ?",
+      "type": "multiple_choice",
       "options": [
         "The platform is missing its trapdoor",
         "The mid-rail is too high",
         "The trapdoor is facing the wrong way",
         "Toe boards have not been installed"
       ],
-      "imageAlt": "A working platform at height with guardrails but no boards around the base of the floor",
       "correctAnswer": 3,
-      "imageDescription": "A view of a tower platform from above. It has double guardrails and a trapdoor, but the wooden or plastic boards that should run around the perimeter of the platform floor are missing",
       "explanation": "Toe boards are essential to prevent tools, materials, or debris from falling off the platform and injuring people below",
-      "id": "ip-im-0087"
+      "id": "ip-im-0087",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What serious safety violation is occurring during the assembly process shown here?",
-      "imageAlt": "An operative standing on the top platform of a tower with no guardrails around them",
-      "type": "image_question",
+      "question": "An operative is standing fully upright on a tower platform to install a brace. There are no guardrails at waist or knee height installed yet around this specific platform level. What serious safety violation is occurring during the assembly process ?",
+      "type": "multiple_choice",
       "options": [
         "The operative is not wearing gloves",
         "The operative is standing on an unguarded platform",
@@ -6390,24 +6302,23 @@
         "The tower is too close to a wall"
       ],
       "correctAnswer": 1,
-      "imageDescription": "An operative is standing fully upright on a tower platform to install a brace. There are no guardrails at waist or knee height installed yet around this specific platform level",
       "explanation": "Advanced Guard Rails (AGR) or the '3T' (Through The Trapdoor) method must be used to ensure the operative is never standing on an unguarded platform",
-      "id": "ip-im-0088"
+      "id": "ip-im-0088",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "Why would this tower fail a safety inspection based on the outrigger setup shown?",
-      "type": "image_question",
+      "question": "A close-up of an outrigger (stabiliser) attached to a tower. The foot of the outrigger is about 2 inches off the ground and is not supported by any packing. Why would this tower fail a safety inspection based on the outrigger setup shown?",
+      "type": "multiple_choice",
       "options": [
         "The outrigger is the wrong length",
         "The outrigger foot is not in contact with the ground",
         "The outrigger is not painted a high-visibility colour",
         "The coupler is not tight enough"
       ],
-      "imageAlt": "A tower outrigger foot hovering slightly above the pavement",
       "correctAnswer": 1,
       "explanation": "Outriggers or stabilisers should be positioned to create a larger footprint and must always maintain firm contact with the ground",
-      "imageDescription": "A close-up of an outrigger (stabiliser) attached to a tower. The foot of the outrigger is about 2 inches off the ground and is not supported by any packing",
-      "id": "ip-im-0089"
+      "id": "ip-im-0089",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -6416,118 +6327,110 @@
         "The ground condition is unsuitable and uneven",
         "The tyres are not inflated correctly"
       ],
-      "type": "image_question",
-      "imageAlt": "A large MEWP parked with one side on soft grass and the other on tarmac",
-      "question": "What is the main hazard associated with the positioning of the MEWP in this image?",
+      "type": "multiple_choice",
+      "question": "A Scissor Lift or Cherry Picker parked on a slope where one set of wheels is on a paved road and the other set is on soft, muddy grass without spreader plates. What is the main hazard associated with the positioning of the MEWP ?",
       "explanation": "A MEWP must be parked on firm, level ground. Soft ground can cause the machine to tilt or sink, leading to an overturn",
-      "imageDescription": "A Scissor Lift or Cherry Picker parked on a slope where one set of wheels is on a paved road and the other set is on soft, muddy grass without spreader plates",
       "correctAnswer": 2,
-      "id": "ip-im-0090"
+      "id": "ip-im-0090",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "An operative is partially visible through the trapdoor of a tower platform. They are seated on the platform with their feet on the ladder, safely clipping a guardrail into place",
       "explanation": "The '3T' method means the operative should sit in the trapdoor with their feet on the interior ladder while installing guardrails, ensuring they are protected",
       "correctAnswer": 0,
-      "imageAlt": "An operative sitting in an open trapdoor to fit a guardrail",
       "options": [
         "3T (Through The Trapdoor) method",
         "Advanced Guard Rail (AGR) system",
         "Free-climbing assembly method",
         "External ladder access method"
       ],
-      "type": "image_question",
-      "question": "Which safe method of assembly is being demonstrated in this image?",
-      "id": "ip-im-0091"
+      "type": "multiple_choice",
+      "question": "An operative is partially visible through the trapdoor of a tower platform. They are seated on the platform with their feet on the ladder, safely clipping a guardrail into place. Which safe method of assembly is being demonstrated ?",
+      "id": "ip-im-0091",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 3,
-      "imageDescription": "A person is halfway up the internal ladder of a tower. They are holding the side of the ladder with one hand and carrying a heavy toolbox in the other hand",
       "explanation": "Materials should be hoisted up using a rope or passed up internally. Carrying heavy loads while climbing a ladder is dangerous as it prevents 'three-point contact.'",
-      "question": "What is the safety risk regarding the operative's actions in this image?",
+      "question": "A person is halfway up the internal ladder of a tower. They are holding the side of the ladder with one hand and carrying a heavy toolbox in the other hand. What is the safety risk regarding the operative's actions ?",
       "options": [
         "The box is too large for the platform",
         "The worker is wearing the wrong footwear",
         "The worker should be using an external ladder",
         "The worker does not have three points of contact on the ladder"
       ],
-      "type": "image_question",
-      "imageAlt": "A worker climbing an internal tower ladder while carrying a heavy box in one hand",
-      "id": "ip-im-0092"
+      "type": "multiple_choice",
+      "id": "ip-im-0092",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "Wind speed must be monitored using an anemometer. If it exceeds the manufacturer's limit (often 17mph/28kph), work should stop and the tower may need to be dismantled or tied-in",
-      "imageDescription": "A close-up of a digital anemometer held up near a tower scaffold in a windy area. The screen shows a reading of 25 mph. In the background, trees are swaying significantly",
       "correctAnswer": 2,
-      "imageAlt": "A hand-held wind speed meter showing a high reading near a tower",
       "options": [
         "The temperature is too low for work",
         "The humidity will make the platform slippery",
         "The wind speed exceeds safe working limits",
         "The air pressure is dropping rapidly"
       ],
-      "type": "image_question",
-      "question": "Based on the reading shown in this image, what action should be taken?",
-      "id": "ip-im-0093"
+      "type": "multiple_choice",
+      "question": "A close-up of a digital anemometer held up near a tower scaffold in a windy area. The screen shows a reading of 25 mph. In the background, trees are swaying significantly. Based on the reading shown , what action should be taken?",
+      "id": "ip-im-0093",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 1,
       "explanation": "When using a boom-type MEWP, a full-body harness with a short restraint lanyard is required to prevent the occupant from being ejected from the basket",
-      "imageDescription": "An operative inside the basket of a boom lift. They are wearing a harness, but it is attached to the anchor point with a 2-meter fall-arrest lanyard that has a large energy absorber",
-      "question": "What is the error in the Personal Fall Protection Equipment (PFPE) setup shown here?",
-      "imageAlt": "An operative in a cherry picker basket wearing a harness with a long fall-arrest lanyard",
+      "question": "An operative inside the basket of a boom lift. They are wearing a harness, but it is attached to the anchor point with a 2-meter fall-arrest lanyard that has a large energy absorber. What is the error in the Personal Fall Protection Equipment (PFPE) setup ?",
       "options": [
         "The harness is the wrong colour for high-visibility",
         "A short restraint lanyard should be used instead of a fall-arrest lanyard",
         "The lanyard is not connected to the guardrail",
         "The operative should not be wearing a harness in a boom lift"
       ],
-      "type": "image_question",
-      "id": "ip-im-0094"
+      "type": "multiple_choice",
+      "id": "ip-im-0094",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What is the immediate danger shown in this scenario?",
-      "type": "image_question",
+      "question": "A close-up of a manufacturer's label on a platform that says 'SWL 275kg'. Next to it on the platform are ten 40kg bags of cement and two workers standing together. What is the immediate danger shown in this scenario?",
+      "type": "multiple_choice",
       "options": [
         "The Safe Working Load (SWL) has been exceeded",
         "The bags are blocking the trapdoor",
         "The platform boards are the wrong material",
         "The weight is not distributed over the joists"
       ],
-      "imageAlt": "A decal on a tower platform that says 'SWL 275kg' with many heavy bags of cement on it",
       "correctAnswer": 0,
       "explanation": "The 'Safe Working Load' (SWL) must never be exceeded. Overloading the platform can lead to structural failure or instability",
-      "imageDescription": "A close-up of a manufacturer's label on a platform that says 'SWL 275kg'. Next to it on the platform are ten 40kg bags of cement and two workers standing together",
-      "id": "ip-im-0095"
+      "id": "ip-im-0095",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "Adjustable legs are for levelling the tower on uneven ground; the nut should not be at the very top of the thread as this reduces stability and engagement",
-      "imageDescription": "A close-up of an adjustable leg on a tower. The threaded part of the leg is extended almost fully out of the frame, with only 2 or 3 threads remaining inside the tube",
       "correctAnswer": 1,
-      "imageAlt": "A scaffold tower leg extended to its very maximum limit",
       "options": [
         "The leg is rusty and needs oiling",
         "The adjustable leg is over-extended",
         "The base plate is too small for the load",
         "The locking pin is missing from the castor"
       ],
-      "type": "image_question",
-      "question": "What is the specific fault with the tower base component shown in this image?",
-      "id": "ip-im-0096"
+      "type": "multiple_choice",
+      "question": "A close-up of an adjustable leg on a tower. The threaded part of the leg is extended almost fully out of the frame, with only 2 or 3 threads remaining inside the tube. What is the specific fault with the tower base component shown ?",
+      "id": "ip-im-0096",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 1,
-      "imageDescription": "A mobile tower scaffold on castors. One operative is at the base pushing the tower, while a second operative is standing on the top working platform with their tools",
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "The worker at the base is not wearing a helmet",
         "A person is remaining on the platform while the tower is being moved",
         "The castors are not locked during the move",
         "The outriggers are touching the ground"
       ],
-      "question": "What is the major safety violation occurring in this image?",
+      "question": "A mobile tower scaffold on castors. One operative is at the base pushing the tower, while a second operative is standing on the top working platform with their tools. What is the major safety violation occurring ?",
       "explanation": "Towers must never be moved with persons or materials on the platform as this significantly raises the centre of gravity and risk of overturn",
-      "imageAlt": "A worker standing on top of a mobile tower while another worker pushes it from the base",
-      "id": "ip-im-0097"
+      "id": "ip-im-0097",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -6536,50 +6439,45 @@
         "The platform is being raised dangerously close to overhead power lines",
         "The ground is too soft for the machine"
       ],
-      "imageDescription": "A scissor lift being operated outdoors. Directly above the platform are several overhead electrical cables. The operator is looking down at the controls rather than up",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 2,
       "explanation": "Always check for overhead power lines before elevating. Electricity can 'arcing' across a gap even if you don't touch the wires",
-      "question": "What is the most critical hazard the operator has failed to identify in this scene?",
-      "imageAlt": "A MEWP being raised near overhead power lines",
-      "id": "ip-im-0098"
+      "question": "A scissor lift being operated outdoors. Directly above the platform are several overhead electrical cables. The operator is looking down at the controls rather than up. What is the most critical hazard the operator has failed to identify in this scene?",
+      "id": "ip-im-0098",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A worker climbing up the outside of a scaffold tower frame",
-      "question": "What unsafe practice is being demonstrated by the operative in this image?",
+      "question": "A mobile access tower. A worker is seen climbing up the horizontal and diagonal braces on the outside of the tower rather than using the internal ladder. What unsafe practice is being demonstrated by the operative ?",
       "explanation": "Towers must be accessed from the inside using the built-in ladder system to maintain stability and prevent falls",
       "correctAnswer": 0,
-      "imageDescription": "A mobile access tower. A worker is seen climbing up the horizontal and diagonal braces on the outside of the tower rather than using the internal ladder",
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Climbing the outside of the tower instead of using the internal ladder",
         "Not wearing a safety harness while climbing",
         "Climbing with both hands on the frame",
         "The tower is too close to a wall"
       ],
-      "id": "ip-im-0099"
+      "id": "ip-im-0099",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 3,
-      "type": "image_question",
-      "imageDescription": "A close-up of a safety decal on a machine. It shows a windsock icon, a diagonal line through it, and the text 'MAX 12.5 m/s'",
+      "type": "multiple_choice",
       "options": [
         "The maximum travel speed of the machine",
         "The maximum load capacity of the platform",
         "The minimum distance from buildings",
         "The maximum wind speed for safe operation"
       ],
-      "imageAlt": "A decal on a MEWP showing a windsock and the number 12.5m/s",
-      "question": "What does this specific safety decal on the machine signify?",
+      "question": "A close-up of a safety decal on a machine. It shows a windsock icon, a diagonal line through it, and the text 'MAX 12.5 m/s'. What does this specific safety decal on the machine signify?",
       "explanation": "The high wind speed symbol (usually a windsock or 'Max m/s') indicates the limit for safe operation; exceeding this risks an overturn",
-      "id": "ip-im-0100"
+      "id": "ip-im-0100",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "Standard mobile towers are not designed to be used as 'edge protection' or as a means of access to another surface unless specifically designed for it",
-      "question": "What is the safety concern regarding the use of the tower in this image?",
-      "imageAlt": "A tower scaffold positioned next to a roof edge with the worker stepping across",
-      "type": "image_question",
-      "imageDescription": "A tower scaffold is positioned next to a flat roof. An operative is seen stepping from the tower platform onto the roof across a 500mm gap",
+      "question": "A tower scaffold is positioned next to a flat roof. An operative is seen stepping from the tower platform onto the roof across a 500mm gap. What is the safety concern regarding the use of the tower ?",
+      "type": "multiple_choice",
       "options": [
         "The tower is not tall enough for the roof",
         "Using the tower as a means of access to another structure",
@@ -6587,11 +6485,11 @@
         "The guardrails are too high"
       ],
       "correctAnswer": 1,
-      "id": "ip-im-0101"
+      "id": "ip-im-0101",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageDescription": "A close-up of the base of a mobile access tower. The four castors are all turned inwards towards the centre of the tower, and the brakes appear to be off",
+      "type": "multiple_choice",
       "options": [
         "The castors are the wrong colour for this tower type",
         "The adjustable legs are extended too far",
@@ -6599,10 +6497,10 @@
         "The floor is not documented as load-bearing"
       ],
       "correctAnswer": 2,
-      "imageAlt": "The base of a tower where all four castors are turned inwards under the tower",
       "explanation": "Castors must be turned outwards to provide the largest possible 'footprint' for stability, then locked before anyone ascends",
-      "question": "What is the error regarding the tower's base setup in this image?",
-      "id": "ip-im-0102"
+      "question": "A close-up of the base of a mobile access tower. The four castors are all turned inwards towards the centre of the tower, and the brakes appear to be off. What is the error regarding the tower's base setup ?",
+      "id": "ip-im-0102",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 0,
@@ -6612,12 +6510,11 @@
         "The platform planks are not tied down",
         "The guardrail is too low"
       ],
-      "type": "image_question",
-      "imageDescription": "Looking down at a working platform on a tower scaffold. There are double guardrails in place, but there are no vertical boards around the perimeter of the platform floor. A hammer is sitting near the edge",
-      "imageAlt": "A platform with guardrails but no boards around the base of the deck",
-      "question": "Which safety component is missing from the platform in this image?",
+      "type": "multiple_choice",
+      "question": "Looking down at a working platform on a tower scaffold. There are double guardrails in place, but there are no vertical boards around the perimeter of the platform floor. A hammer is sitting near the edge. Which safety component is missing from the platform ?",
       "explanation": "Toe boards are essential to prevent tools, debris, or materials from being kicked off the platform onto people below",
-      "id": "ip-im-0103"
+      "id": "ip-im-0103",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 2,
@@ -6627,12 +6524,11 @@
         "The worker is overreaching, risking a fall or tower instability",
         "The guardrails are not positioned correctly"
       ],
-      "imageDescription": "A worker on a tower scaffold is leaning significantly over the side guardrail to reach a section of a window frame, with one foot lifting off the platform",
-      "type": "image_question",
-      "question": "What is the primary hazard shown in this image?",
+      "type": "multiple_choice",
+      "question": "A worker on a tower scaffold is leaning significantly over the side guardrail to reach a section of a window frame, with one foot lifting off the platform. What is the primary hazard shown ?",
       "explanation": "Overreaching (leaning out) shifts the centre of gravity and can cause a tower to tip or the worker to fall through the rails",
-      "imageAlt": "A worker leaning far out over the guardrail of a tower to reach a window",
-      "id": "ip-im-0104"
+      "id": "ip-im-0104",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -6641,28 +6537,26 @@
         "Ballast should never be used on mobile towers",
         "The sandbags are not bright enough to be seen"
       ],
-      "type": "image_question",
-      "imageDescription": "A mobile tower with ballast weights (sandbags) tied to the horizontal braces about 1 metre off the ground, rather than placed on the base members",
+      "type": "multiple_choice",
       "correctAnswer": 1,
       "explanation": "Weights must be applied as indicated by the manufacturer to prevent the tower from tipping, especially when used in wind or with side loads",
-      "question": "What is the problem with how the ballast is being used in this image?",
-      "imageAlt": "A tower with sandbags tied to the side braces rather than stacked on the base",
-      "id": "ip-im-0105"
+      "question": "A mobile tower with ballast weights (sandbags) tied to the horizontal braces about 1 metre off the ground, rather than placed on the base members. What is the problem with how the ballast is being used ?",
+      "id": "ip-im-0105",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What is the main risk to the tower's stability in this scenario?",
+      "question": "A worker on the top of a tower is using a large crowbar to push against a masonry wall with significant force to dislodge a stone. What is the main risk to the tower's stability in this scenario?",
       "explanation": "A heavy 'side load' caused by pushing against a structure can tip a tower over. Always follow manufacturer limits for horizontal force",
-      "imageAlt": "A worker on a tower using a crowbar to pry a stone block from a wall",
       "correctAnswer": 3,
-      "imageDescription": "A worker on the top of a tower is using a large crowbar to push against a masonry wall with significant force to dislodge a stone",
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "The worker is not wearing gloves for the task",
         "The crowbar is not tethered to the worker",
         "The tower is too close to the wall for the tool to work",
         "Applying excessive side load which could cause the tower to overturn"
       ],
-      "id": "ip-im-0106"
+      "id": "ip-im-0106",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -6671,20 +6565,17 @@
         "Outriggers are only required on one side if the tower is near a wall",
         "The outriggers are too long for this specific tower height"
       ],
-      "type": "image_question",
-      "imageDescription": "Top-down view diagram of a tower scaffold. The four outriggers are all deployed on the same side of the tower rather than being spread out to all four corners",
+      "type": "multiple_choice",
       "correctAnswer": 0,
-      "imageAlt": "A tower with four outriggers, all pointing in the same direction along one side",
       "explanation": "Outriggers/stabilizers should be set up to form a square/rectangle as per the manual to ensure the tower has a wide, stable base in all directions",
-      "question": "What is incorrect about the outrigger configuration shown in this diagram?",
-      "id": "ip-im-0107"
+      "question": "Top-down view diagram of a tower scaffold. The four outriggers are all deployed on the same side of the tower rather than being spread out to all four corners. What is incorrect about the outrigger configuration shown ?",
+      "id": "ip-im-0107",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A tower scaffold on a slope that is leaning visibly to one side",
       "explanation": "Platforms must be level to ensure stability and prevent tools or persons from sliding. Use adjustable legs to level the tower on uneven ground",
-      "question": "What is the main fault with the tower setup in this image?",
-      "type": "image_question",
-      "imageDescription": "A mobile tower erected on a slight slope. The tower is leaning visibly to the left because the adjustable legs have not been used to level the platform",
+      "question": "A mobile tower erected on a slight slope. The tower is leaning visibly to the left because the adjustable legs have not been used to level the platform. What is the main fault with the tower setup ?",
+      "type": "multiple_choice",
       "options": [
         "The tower is too close to the edge of the slope",
         "The worker should be on the uphill side of the platform",
@@ -6692,43 +6583,40 @@
         "The wheels should be removed when on a slope"
       ],
       "correctAnswer": 2,
-      "id": "ip-im-0108"
+      "id": "ip-im-0108",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "Stabilisers must be positioned to create the largest possible footprint and must make firm contact with the ground to ensure the tower does not tip",
       "correctAnswer": 1,
-      "imageDescription": "A close-up of a mobile scaffold tower base. The four outriggers are deployed, but one of the rubber feet is clearly not making contact with the concrete floor",
-      "type": "image_question",
-      "imageAlt": "A mobile access tower with four stabilisers attached. Three are touching the ground, but one is hovering 2 inches above the pavement",
+      "type": "multiple_choice",
       "options": [
         "The tower is too close to the wall",
         "The stabiliser is not in firm contact with the ground",
         "The wheels are not locked",
         "The tower is missing its toe-boards"
       ],
-      "question": "What is the primary safety defect visible in the setup of this mobile access tower?",
-      "id": "ip-im-0109"
+      "question": "A close-up of a mobile scaffold tower base. The four outriggers are deployed, but one of the rubber feet is clearly not making contact with the concrete floor. What is the primary safety defect visible in the setup of this mobile access tower?",
+      "id": "ip-im-0109",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageDescription": "A Scissor lift (MEWP) is elevated to its full height. In the background, directly above the operator, are overhead electrical power lines within a few metres of the platform",
-      "question": "Looking at this image, what is the most significant hazard the operator is facing?",
+      "type": "multiple_choice",
+      "question": "A Scissor lift (MEWP) is elevated to its full height. In the background, directly above the operator, are overhead electrical power lines within a few metres of the platform. Looking at the image, what is the most significant hazard the operator is facing?",
       "options": [
         "The proximity to overhead power lines",
         "The lack of a safety harness on a scissor lift",
         "The wind speed is too high for the machine",
         "The ground is too soft for the machine weight"
       ],
-      "imageAlt": "A scissor lift raised near several overhead black cables running between wooden poles",
       "explanation": "Operating a MEWP near overhead power lines is extremely dangerous; specific exclusion zones must be maintained to prevent arcing or contact",
       "correctAnswer": 0,
-      "id": "ip-im-0110"
+      "id": "ip-im-0110",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A close-up shot of a MEWP outrigger leg foot. It is resting on a large, high-visibility yellow square spreader plate on top of tarmac",
-      "type": "image_question",
-      "imageAlt": "A heavy-duty plastic square plate placed under the foot of a MEWP outrigger leg",
-      "question": "What is the purpose of the component shown beneath the outrigger leg in this image?",
+      "type": "multiple_choice",
+      "question": "A close-up shot of a MEWP outrigger leg foot. It is resting on a large, high-visibility yellow square spreader plate on top of tarmac. What is the purpose of the component shown beneath the outrigger leg ?",
       "options": [
         "To keep the machine level on slopes",
         "To prevent the machine from being stolen",
@@ -6737,142 +6625,134 @@
       ],
       "explanation": "The spreader plate distributes the weight of the outrigger over a larger area to prevent the ground from collapsing or the leg from sinking",
       "correctAnswer": 2,
-      "id": "ip-im-0111"
+      "id": "ip-im-0111",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "In a boom-type MEWP, a short lanyard is used to prevent the operator from being catapulted out of the basket if the machine jolts",
       "correctAnswer": 3,
-      "imageDescription": "An operative inside a boom-lift (cherry picker) basket. They are wearing a harness, and a short restraint lanyard is clearly clipped to the designated anchor point at the base of the basket",
-      "type": "image_question",
-      "imageAlt": "An operative in a cherry picker wearing a full body harness with a very short strap attached to a floor D-ring",
+      "type": "multiple_choice",
       "options": [
         "Fall arrest system",
         "Twin-leg lanyards",
         "Climbing rope system",
         "Work restraint system"
       ],
-      "question": "Which type of fall protection system is the operative using in this boom-type MEWP?",
-      "id": "ip-im-0112"
+      "question": "An operative inside a boom-lift (cherry picker) basket. They are wearing a harness, and a short restraint lanyard is clearly clipped to the designated anchor point at the base of the basket. Which type of fall protection system is the operative using in this boom-type MEWP?",
+      "id": "ip-im-0112",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 0,
       "explanation": "Toe-boards are essential to prevent tools, materials, or debris from being accidentally kicked or knocked off the platform onto people below",
-      "question": "What essential safety feature is missing from the working platform shown in this image?",
+      "question": "The working platform of a PASMA tower. It has double guardrails and a trapdoor, but the wooden or aluminium boards around the base of the platform floor are missing. What essential safety feature is missing from the working platform shown ?",
       "options": [
         "Missing toe-boards",
         "Incorrect guardrail height",
         "The trapdoor is left open",
         "The platform is overloaded"
       ],
-      "imageAlt": "A scaffold platform with guardrails, but there is a clear gap between the floorboards and the bottom rail where planks should be",
-      "type": "image_question",
-      "imageDescription": "The working platform of a PASMA tower. It has double guardrails and a trapdoor, but the wooden or aluminium boards around the base of the platform floor are missing",
-      "id": "ip-im-0113"
+      "type": "multiple_choice",
+      "id": "ip-im-0113",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageDescription": "A self-propelled boom-lift (cherry picker) with a telescopic arm and a jib, parked on a construction site",
+      "type": "multiple_choice",
       "options": [
         "3a (Mobile Vertical)",
         "3b (Mobile Boom)",
         "1b (Static Boom)",
         "PAV (Push Around Vertical)"
       ],
-      "question": "According to IPAF categories, which classification does the machine in this image fall under?",
-      "imageAlt": "A machine with a large base and a telescopic arm that can move horizontally and vertically",
+      "question": "A self-propelled boom-lift (cherry picker) with a telescopic arm and a jib, parked on a construction site. According to IPAF categories, which classification does the machine fall under?",
       "explanation": "IPAF 3a and 3b categories refer to Mobile Vertical (Scissor Lift) and Mobile Boom (Cherry Picker) respectively",
       "correctAnswer": 1,
-      "id": "ip-im-0114"
+      "id": "ip-im-0114",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A person wearing high-vis clothing is climbing up the diagonal bracing on the outside of a scaffold tower",
       "options": [
         "He is not wearing a safety harness",
         "He is carrying tools in his hands",
         "The tower is not tied to the building",
         "He is climbing the outside of the tower frame"
       ],
-      "question": "What unsafe action is being performed by the operative in this image?",
-      "imageDescription": "An operative is seen climbing up the external framework/bracing of a mobile tower rather than using the internal ladder system or climbing through the trapdoor",
-      "type": "image_question",
+      "question": "An operative is seen climbing up the external framework/bracing of a mobile tower rather than using the internal ladder system or climbing through the trapdoor. What unsafe action is being performed by the operative ?",
+      "type": "multiple_choice",
       "correctAnswer": 3,
       "explanation": "Standard mobile towers are not designed to support the weight or forces of a person climbing the outside; always use the internal ladder",
-      "id": "ip-im-0115"
+      "id": "ip-im-0115",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageDescription": "A hand holding a digital anemometer at a construction site. The screen shows a wind speed reading of 15 miles per hour (approx 6.7 m/s)",
-      "question": "What is this device measuring to ensure the safe use of height equipment?",
+      "type": "multiple_choice",
+      "question": "A hand holding a digital anemometer at a construction site. The screen shows a wind speed reading of 15 miles per hour (approx 6.7 m/s). What is this device measuring to ensure the safe use of height equipment?",
       "options": [
         "The weight of the machine's fuel",
         "The battery charge remaining",
         "The current wind speed at the site",
         "The distance to the nearest obstacle"
       ],
-      "imageAlt": "A digital handheld device with three cups on top spinning in the wind, showing a reading of 15 mph",
       "explanation": "Wind speed can cause MEWPs to become unstable or tip over. The Beaufort scale or an anemometer is used to check if it is safe to operate",
       "correctAnswer": 2,
-      "id": "ip-im-0116"
+      "id": "ip-im-0116",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A worker sitting in a platform trapdoor, with their legs inside the tower, as they attach a horizontal guardrail",
       "options": [
         "The 3T (Through The Trapdoor) method",
         "The AGR (Advance Guardrail) system",
         "The free-climbing method",
         "The cantilever assembly method"
       ],
-      "question": "Which safe method of tower assembly is being demonstrated in this image?",
-      "imageDescription": "An operative is part-way through a trapdoor on a PASMA tower. They are sitting on the platform with their feet on the ladder, attaching a guardrail at the next level",
-      "type": "image_question",
+      "question": "An operative is part-way through a trapdoor on a PASMA tower. They are sitting on the platform with their feet on the ladder, attaching a guardrail at the next level. Which safe method of tower assembly is being demonstrated ?",
+      "type": "multiple_choice",
       "correctAnswer": 0,
       "explanation": "The '3T' (Through The Trapdoor) method involves the operator sitting through the trapdoor of the platform to install guardrails before stepping onto it",
-      "id": "ip-im-0117"
+      "id": "ip-im-0117",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "Using boxes or ladders on a MEWP platform to gain extra height is extremely dangerous as it bypasses the guardrail protection",
       "correctAnswer": 2,
-      "imageDescription": "Inside a scissor lift basket, an operative has placed a large plastic milk crate on the floor and is standing on top of it to reach a higher point",
-      "type": "image_question",
-      "imageAlt": "An operative in a scissor lift standing on an overturned plastic crate to reach a light fixture",
+      "type": "multiple_choice",
       "options": [
         "The operative is working alone",
         "The machine is not high enough for the job",
         "The operative is standing on a crate to increase their reach",
         "The guardrail is too high for the operative"
       ],
-      "question": "What is the specific safety violation shown inside the MEWP platform in this image?",
-      "id": "ip-im-0118"
+      "question": "Inside a scissor lift basket, an operative has placed a large plastic milk crate on the floor and is standing on top of it to reach a higher point. What is the specific safety violation shown inside the MEWP platform ?",
+      "id": "ip-im-0118",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageDescription": "A close-up image of a castor wheel at the base of a mobile access tower. The metal brake lever is in the 'off' (raised) position while the tower is in use",
-      "question": "What is wrong with the wheel assembly shown in this image?",
+      "type": "multiple_choice",
+      "question": "A close-up image of a castor wheel at the base of a mobile access tower. The metal brake lever is in the 'off' (raised) position while the tower is in use. What is wrong with the wheel assembly shown ?",
       "options": [
         "The wheel is the wrong size for the tower",
         "The castor brake is not engaged",
         "The adjustable leg is extended too far",
         "There is a flat spot on the tyre"
       ],
-      "imageAlt": "A close-up of a scaffold castor wheel. The locking lever is in the 'up' position",
       "explanation": "Brakes must be applied on all wheels during use to prevent the tower from rolling while an operative is on the platform",
       "correctAnswer": 1,
-      "id": "ip-im-0119"
+      "id": "ip-im-0119",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "The operator of a cherry picker is looking up at the ceiling while driving the base of the machine forward",
-      "question": "What is the primary safety error the operator is making while driving the machine in this image?",
+      "question": "A side view of a MEWP operator moving the machine along a factory floor. The operator's head is tilted back looking at the roof structure, while the machine is moving forward. What is the primary safety error the operator is making while driving the machine ?",
       "options": [
         "The operator is driving too fast",
         "The operator is not using the joystick correctly",
         "The operator is not wearing gloves",
         "The operator is not looking in the direction of travel"
       ],
-      "imageDescription": "A side view of a MEWP operator moving the machine along a factory floor. The operator's head is tilted back looking at the roof structure, while the machine is moving forward",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 3,
       "explanation": "Operators must always look in the direction of travel to ensure there are no pedestrians or obstacles in the machine's path",
-      "id": "ip-im-0120"
+      "id": "ip-im-0120",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -6881,61 +6761,56 @@
         "Wind speed",
         "Ambient temperature"
       ],
-      "imageDescription": "A handheld digital anemometer showing a wind speed reading on its screen, held by a hand wearing a high-visibility glove against a cloudy sky",
-      "imageAlt": "An anemometer being held up toward the sky",
       "explanation": "When working outdoors, wind speed must be monitored. Beufort Scale 6 (approx. 28mph) is the standard limit for most towers and MEWPs unless specified otherwise",
       "correctAnswer": 2,
-      "type": "image_question",
-      "question": "What environmental factor is this tool used to measure before commencing work at height?",
-      "id": "ip-im-0121"
+      "type": "multiple_choice",
+      "question": "A handheld digital anemometer showing a wind speed reading on its screen, held by a hand wearing a high-visibility glove against a cloudy sky. What environmental factor is this tool used to measure before commencing work at height?",
+      "id": "ip-im-0121",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A green safety tag attached to a scaffold tube",
       "explanation": "A 'Scafftag' or inspection move-card indicates the tower has been inspected by a competent person and is fit for use",
-      "imageDescription": "A green plastic safety 'Scafftag' insert clipped into a holder on a mobile tower frame, clearly showing a 'Next Inspection Due' date",
       "options": [
         "The tower has been inspected and is safe to use",
         "The tower is currently under construction and is out of bounds",
         "The tower is faulty and should be dismantled",
         "This is the manufacturer's serial number plate"
       ],
-      "question": "What does the presence of this green tag on a mobile access tower indicate to an operator?",
+      "question": "A green plastic safety 'Scafftag' insert clipped into a holder on a mobile tower frame, clearly showing a 'Next Inspection Due' date. What does the presence of this green tag on a mobile access tower indicate to an operator?",
       "correctAnswer": 0,
-      "type": "image_question",
-      "id": "ip-im-0122"
+      "type": "multiple_choice",
+      "id": "ip-im-0122",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What is the stability error shown in this close-up of the tower base?",
-      "type": "image_question",
+      "question": "A close-up of a mobile tower leg where the outrigger is attached but the castor wheel is still firmly carrying the weight of the tower on the ground. What is the stability error shown in this close-up of the tower base?",
+      "type": "multiple_choice",
       "correctAnswer": 3,
       "explanation": "Outriggers (stabilisers) must always be deployed and the weight taken off the castors as per the manufacturer's instruction manual",
-      "imageAlt": "A tower castor wheel still touching the ground while an outrigger is deployed nearby",
       "options": [
         "Nothing, the castor should always take the weight",
         "The castor should be removed entirely",
         "The castor wheel must be turned inward",
         "The outrigger should be adjusted to take the weight off the castor"
       ],
-      "imageDescription": "A close-up of a mobile tower leg where the outrigger is attached but the castor wheel is still firmly carrying the weight of the tower on the ground",
-      "id": "ip-im-0123"
+      "id": "ip-im-0123",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "Under which IPAF category does the machine shown in this image fall?",
-      "type": "image_question",
+      "question": "A standard mobile scissor lift platform extended upwards, positioned on a smooth internal warehouse floor. Under which IPAF category does the machine shown fall?",
+      "type": "multiple_choice",
       "correctAnswer": 1,
       "explanation": "A scissor lift is a Vertical Personnel Platform, categorized by IPAF as 3a because it is mobile and travels vertically",
-      "imageAlt": "A mobile scissor lift on a flat concrete floor",
-      "imageDescription": "A standard mobile scissor lift platform extended upwards, positioned on a smooth internal warehouse floor",
       "options": [
         "Static Vertical (1a)",
         "Mobile Vertical (3a)",
         "Mobile Boom (3b)",
         "Static Boom (1b)"
       ],
-      "id": "ip-im-0124"
+      "id": "ip-im-0124",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "Worker sitting with legs through a trapdoor on a tower",
       "explanation": "The 3T (Through The Trapdoor) method allows the operator to sit on the trapdoor to install rails, ensuring they are always protected by a guardrail",
       "options": [
         "Advanced Guardrail System (AGR)",
@@ -6943,11 +6818,11 @@
         "Through The Trapdoor (3T)",
         "Step-up Assembly Method"
       ],
-      "imageDescription": "An operative sitting on the edge of a trapdoor platform with their lower body protected by the tower frame while they attach a horizontal brace",
-      "question": "Which approved method of tower assembly is being used by the operative in this image?",
+      "question": "An operative sitting on the edge of a trapdoor platform with their lower body protected by the tower frame while they attach a horizontal brace. Which approved method of tower assembly is being used by the operative ?",
       "correctAnswer": 2,
-      "type": "image_question",
-      "id": "ip-im-0125"
+      "type": "multiple_choice",
+      "id": "ip-im-0125",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -6956,43 +6831,40 @@
         "Access ladder",
         "Castor locks"
       ],
-      "imageDescription": "A mobile tower platform with double guardrails installed, but the wooden or plastic kick-boards around the base of the platform floor are missing",
       "explanation": "Toe boards are mandatory on working platforms to prevent tools, materials, or debris from falling onto people below",
-      "imageAlt": "A platform with guardrails but an open gap at the floor level",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 0,
-      "question": "Which essential component is missing from this working platform to prevent falling objects?",
-      "id": "ip-im-0126"
+      "question": "A mobile tower platform with double guardrails installed, but the wooden or plastic kick-boards around the base of the platform floor are missing. Which essential component is missing from this working platform to prevent falling objects?",
+      "id": "ip-im-0126",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What is the primary danger associated with the platform setup shown in this image?",
-      "type": "image_question",
+      "question": "A small MEWP platform designed for two people, currently occupied by three workers and four large bags of building materials. What is the primary danger associated with the platform setup shown ?",
+      "type": "multiple_choice",
       "correctAnswer": 1,
       "explanation": "The platform capacity (SWL) must never be exceeded. Overloading can lead to structural failure or tipping",
-      "imageAlt": "A MEWP platform crowded with three people and several heavy bags of cement",
-      "imageDescription": "A small MEWP platform designed for two people, currently occupied by three workers and four large bags of building materials",
       "options": [
         "Incorrect PPE being worn",
         "Exceeding the Safe Working Load (SWL)",
         "Working too close to the edge",
         "Using an unapproved harness type"
       ],
-      "id": "ip-im-0127"
+      "id": "ip-im-0127",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "When operating a boom-type MEWP, a full body harness with a short restrained lanyard is mandatory to prevent it being thrown out of the basket",
-      "imageAlt": "A worker in a cherry picker wearing a harness attached to the platform",
       "options": [
         "Fall arrest lanyard",
         "Leather waist belt",
         "Elasticated bungee cord",
         "Short adjustable restraint lanyard"
       ],
-      "imageDescription": "A worker inside a cherry picker (boom lift) wearing a yellow high-vis jacket and a full-body harness connected to a designated anchorage point in the basket",
-      "question": "What type of lanyard is required for the operative working in the boom-type MEWP shown here?",
-      "type": "image_question",
+      "question": "A worker inside a cherry picker (boom lift) wearing a yellow high-vis jacket and a full-body harness connected to a designated anchorage point in the basket. What type of lanyard is required for the operative working in the boom-type MEWP ?",
+      "type": "multiple_choice",
       "correctAnswer": 3,
-      "id": "ip-im-0128"
+      "id": "ip-im-0128",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -7001,31 +6873,28 @@
         "A mechanical oil leak",
         "Vandalism to the site"
       ],
-      "imageDescription": "A large heavy-duty MEWP wheel parked on a construction site where the ground has become soft, causing the tyre to sink several inches into the mud",
-      "imageAlt": "Close up of a MEWP wheel sinking into soft mud",
       "explanation": "The 'Point of Work' risk assessment determines if the ground is capable of supporting the weight of the machine and its load",
       "correctAnswer": 1,
-      "type": "image_question",
-      "question": "What hazard is being demonstrated in this image that could lead to the machine tipping?",
-      "id": "ip-im-0129"
+      "type": "multiple_choice",
+      "question": "A large heavy-duty MEWP wheel parked on a construction site where the ground has become soft, causing the tyre to sink several inches into the mud. What hazard is being demonstrated that could lead to the machine tipping?",
+      "id": "ip-im-0129",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "An outrigger foot resting directly on a patch of grass",
       "explanation": "Spreader plates (sole boards) must be used under outriggers on soft or uneven ground to distribute the weight and prevent sinking",
-      "imageDescription": "The metal foot of a tower outrigger placed directly onto a lawn surface without any timber or plastic support underneath",
       "options": [
         "The outrigger is the wrong color",
         "The outrigger is not locked at the top",
         "A spreader plate is missing from under the foot",
         "The grass needs to be mown first"
       ],
-      "question": "What is the safety error regarding the outrigger placement in this image?",
+      "question": "The metal foot of a tower outrigger placed directly onto a lawn surface without any timber or plastic support underneath. What is the safety error regarding the outrigger placement ?",
       "correctAnswer": 2,
-      "type": "image_question",
-      "id": "ip-im-0130"
+      "type": "multiple_choice",
+      "id": "ip-im-0130",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "An operative on a podium step leaning excessively to one side with one foot lifting off the platform to reach a light fixture",
       "options": [
         "Over-reaching beyond the footprint of the equipment",
         "Using the wrong type of screwdriver",
@@ -7033,33 +6902,30 @@
         "Working on a Monday morning"
       ],
       "explanation": "Over-reaching is a major cause of falls. Users should always keep their belt buckle within the side frames of the equipment",
-      "imageAlt": "A worker on a ladder leaning far to the left to reach a window",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 0,
-      "question": "What unsafe practice is the operative performing in this image?",
-      "id": "ip-im-0131"
+      "question": "An operative on a podium step leaning excessively to one side with one foot lifting off the platform to reach a light fixture. What unsafe practice is the operative performing ?",
+      "id": "ip-im-0131",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "Towers must be moved by pushing at the base, never from the top, and never with people or materials on the platform",
-      "imageAlt": "Two people pushing a tall tower from the mid-section",
       "options": [
         "The tower is being moved too fast",
         "The castors are not unlocked",
         "One person should pull while the other pushes",
         "The tower is being pushed from the wrong height"
       ],
-      "imageDescription": "A mobile access tower being moved by two workers who are pushing it from a height of approximately 2 meters above the ground",
-      "question": "What is the manual handling and stability error shown in this image of a tower being moved?",
-      "type": "image_question",
+      "question": "A mobile access tower being moved by two workers who are pushing it from a height of approximately 2 meters above the ground. What is the manual handling and stability error shown of a tower being moved?",
+      "type": "multiple_choice",
       "correctAnswer": 3,
-      "id": "ip-im-0132"
+      "id": "ip-im-0132",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "The image shows the machine's base plate resting on soft, uneven soil. Stable, level ground or spreader plates are required to prevent sinking or tipping",
-      "type": "image_question",
-      "question": "What is the primary safety concern regarding the base setup shown in this image?",
-      "imageAlt": "A MEWP outrigger foot sinking into soft mud",
-      "imageDescription": "Close-up shot of a hydraulic outrigger foot of a cherry picker resting directly on soft, wet soil without a spreader plate, showing the foot beginning to sink into the ground",
+      "type": "multiple_choice",
+      "question": "Close-up shot of a hydraulic outrigger foot of a cherry picker resting directly on soft, wet soil without a spreader plate, showing the foot beginning to sink into the ground. What is the primary safety concern regarding the base setup shown ?",
       "options": [
         "The outrigger is fully extended",
         "The ground conditions are unstable",
@@ -7067,29 +6933,27 @@
         "The hydraulic fluid is leaking"
       ],
       "correctAnswer": 1,
-      "id": "ip-im-0133"
+      "id": "ip-im-0133",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "Side view of an operative in a scissor lift platform who has climbed onto the mid-rail to reach a higher light fixture, rather than raising the platform further",
       "options": [
         "Standing on the guardrails",
         "Working without a hi-vis vest",
         "Failure to use a spirit level",
         "Overloading the platform capacity"
       ],
-      "imageAlt": "An operator standing on the handrails of a scissor lift",
       "correctAnswer": 0,
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "The image shows an operative standing on the mid-rails. You must always keep both feet on the platform floor",
-      "question": "What unsafe act is being committed by the operator in this image?",
-      "id": "ip-im-0134"
+      "question": "Side view of an operative in a scissor lift platform who has climbed onto the mid-rail to reach a higher light fixture, rather than raising the platform further. What unsafe act is being committed by the operator ?",
+      "id": "ip-im-0134",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "The image shows a person's hands gripping the rungs. Safe egress requires maintaining three points of contact (two hands and one foot, or two feet and one hand)",
-      "type": "image_question",
-      "question": "When using the internal access shown in this image, what safety rule is being broken?",
-      "imageAlt": "A person climbing a tower ladder with both hands on the side frames",
-      "imageDescription": "View from above looking down at an operative climbing the internal ladder of a mobile tower, holding a tool bag in one hand and only one hand on the rung",
+      "type": "multiple_choice",
+      "question": "View from above looking down at an operative climbing the internal ladder of a mobile tower, holding a tool bag in one hand and only one hand on the rung. When using the internal access shown , what safety rule is being broken?",
       "options": [
         "Using the wrong ladder type",
         "Climbing too quickly",
@@ -7097,7 +6961,8 @@
         "Wearing the wrong type of gloves"
       ],
       "correctAnswer": 2,
-      "id": "ip-im-0135"
+      "id": "ip-im-0135",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -7106,80 +6971,73 @@
         "IPAF Category 3a",
         "IPAF Category PAV"
       ],
-      "imageDescription": "A high-quality photo of a self-propelled telescopic boom lift (cherry picker) extended in an open yard. The machine has controls in the basket and a diesel engine base",
-      "imageAlt": "A self-propelled telescopic boom lift",
       "correctAnswer": 1,
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "The image shows the '3b' (Mobile Boom) category. 3b refers to self-propelled booms which can be driven while elevated",
-      "question": "To operate the machine shown in this image, which IPAF category must be on your PAL card?",
-      "id": "ip-im-0136"
+      "question": "A high-quality photo of a self-propelled telescopic boom lift (cherry picker) extended in an open yard. The machine has controls in the basket and a diesel engine base. To operate the machine shown , which IPAF category must be on your PAL card?",
+      "id": "ip-im-0136",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A worker walking directly on corrugated roof sheets",
       "options": [
         "The worker is walking too fast",
         "The roof pitch is too steep",
         "The worker is wearing incorrect footwear",
         "The risk of falling through a fragile surface"
       ],
-      "imageDescription": "An operative walking directly across a corrugated asbestos-cement roof without any crawling boards or fall mitigation measures in place",
       "correctAnswer": 3,
       "explanation": "The image shows 'point loading' on a fragile roof. Roof crawling boards or staging should be used to spread the weight",
-      "type": "image_question",
-      "question": "What is the most significant hazard illustrated in this roof-work image?",
-      "id": "ip-im-0137"
+      "type": "multiple_choice",
+      "question": "An operative walking directly across a corrugated asbestos-cement roof without any crawling boards or fall mitigation measures in place. What is the most significant hazard illustrated in this roof-work image?",
+      "id": "ip-im-0137",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "The image shows the '3a' (Mobile Vertical) category. This includes scissor lifts that can be driven while in the elevated position",
-      "question": "What is the correct IPAF classification for the equipment shown in this image?",
+      "question": "A standard electric scissor lift with the platform partially raised. The wheels are visible, indicating it is a mobile unit. What is the correct IPAF classification for the equipment shown ?",
       "options": [
         "IPAF Category 1a",
         "IPAF Category 1b",
         "IPAF Category 3a",
         "IPAF Category 3b"
       ],
-      "imageDescription": "A standard electric scissor lift with the platform partially raised. The wheels are visible, indicating it is a mobile unit",
-      "imageAlt": "A self-propelled scissor lift",
       "correctAnswer": 2,
-      "id": "ip-im-0138"
+      "id": "ip-im-0138",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A mobile tower castor wheel with the brake lever in the up position",
       "options": [
         "The wheel brake is not engaged",
         "The castor is the wrong diameter",
         "The adjustable leg is bent",
         "The wheel is making contact with a pebble"
       ],
-      "imageDescription": "Close-up of a mobile access tower castor wheel. The brake pedal is in the raised (unlocked) position while an operative is visible on the platform above",
       "correctAnswer": 0,
       "explanation": "The image shows the castor wheel brake in the 'up' position. Castors must be locked whenever the tower is in use",
-      "type": "image_question",
-      "question": "What is the critical safety error visible at the base of this tower?",
-      "id": "ip-im-0139"
+      "type": "multiple_choice",
+      "question": "Close-up of a mobile access tower castor wheel. The brake pedal is in the raised (unlocked) position while an operative is visible on the platform above. What is the critical safety error visible at the base of this tower?",
+      "id": "ip-im-0139",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What is the primary danger of handling the material shown in this image?",
+      "question": "An operative in a boom lift platform attempting to hold a large 8x4 sheet of plywood. The background shows trees bending in the wind. What is the primary danger of handling the material shown ?",
       "explanation": "The image shows 'wind-sail' effect where large panels act like a sail, potentially pushing the MEWP over in high winds",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 1,
-      "imageAlt": "A MEWP operator carrying a large plywood sheet in high winds",
-      "imageDescription": "An operative in a boom lift platform attempting to hold a large 8x4 sheet of plywood. The background shows trees bending in the wind",
       "options": [
         "The panel is too heavy for the floor",
         "The panel acts as a sail and may tip the machine",
         "The panel is blocking the emergency stop",
         "The operative is not wearing gloves"
       ],
-      "id": "ip-im-0140"
+      "id": "ip-im-0140",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "The image shows a PASMA-standard tower. Toeboards are missing, which are required to prevent tools or materials from falling",
-      "type": "image_question",
-      "question": "Regarding the platform safety components, what is missing from this tower setup?",
-      "imageAlt": "A mobile tower platform with guardrails but no bottom boards",
-      "imageDescription": "A view of the working platform of a mobile tower. The top and mid-rails are present, but there is a gap between the platform deck and the mid-rail where the toeboards should be",
+      "type": "multiple_choice",
+      "question": "A view of the working platform of a mobile tower. The top and mid-rails are present, but there is a gap between the platform deck and the mid-rail where the toeboards should be. Regarding the platform safety components, what is missing from this tower setup?",
       "options": [
         "Toeboards are missing",
         "The trapdoor is locked open",
@@ -7187,52 +7045,50 @@
         "The platform deck is upside down"
       ],
       "correctAnswer": 0,
-      "id": "ip-im-0141"
+      "id": "ip-im-0141",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What stability defect is shown in this image of a mobile access tower?",
-      "explanation": "The image shows the stabilizer 'foot' hovering off the ground. All stabilizers must be firmly deployed as per the manufacturer’s instructions before ascending",
-      "type": "image_question",
+      "question": "A wide shot of a mobile access tower where one of the four outrigger/stabilizer legs is clearly not touching the pavement, leaving a visible gap. What stability defect is shown of a mobile access tower?",
+      "explanation": "The image shows the stabilizer 'foot' hovering off the ground. All stabilizers must be firmly deployed as per the manufacturer\u2019s instructions before ascending",
+      "type": "multiple_choice",
       "correctAnswer": 2,
-      "imageAlt": "A mobile tower stabilizer not touching the ground",
       "options": [
         "The stabilizer is too short",
         "The stabilizer is pointing the wrong way",
         "The stabilizer is not making contact with the ground",
         "The stabilizer coupler is loose"
       ],
-      "imageDescription": "A wide shot of a mobile access tower where one of the four outrigger/stabilizer legs is clearly not touching the pavement, leaving a visible gap",
-      "id": "ip-im-0142"
+      "id": "ip-im-0142",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 3,
-      "imageDescription": "Close-up of the threaded adjustable leg of a mobile tower. The leg is wound out to its maximum extent, showing a large amount of thread and a 'stopped' warning mark",
       "options": [
         "The thread is dirty",
         "The leg is not locked with a pin",
         "The wheel is missing a tyre",
         "The adjustable leg is over-extended"
       ],
-      "imageAlt": "A tower adjustable leg extended to its maximum limit",
-      "question": "What is the safety issue regarding the adjustable leg shown in this image?",
-      "type": "image_question",
-      "explanation": "The image shows an adjustable leg extended over 125mm without checking the manufacturer’s manual. Excessive extension reduces the strength of the leg",
-      "id": "ip-im-0143"
+      "question": "Close-up of the threaded adjustable leg of a mobile tower. The leg is wound out to its maximum extent, showing a large amount of thread and a 'stopped' warning mark. What is the safety issue regarding the adjustable leg shown ?",
+      "type": "multiple_choice",
+      "explanation": "The image shows an adjustable leg extended over 125mm without checking the manufacturer\u2019s manual. Excessive extension reduces the strength of the leg",
+      "id": "ip-im-0143",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "The image shows an operative in a boom lift. For all boom-type platforms, a full-body harness with a short restrained lanyard is mandatory",
-      "type": "image_question",
-      "question": "Which Personal Protective Equipment (PPE) violation is shown in this image?",
-      "imageAlt": "An operative in a cherry picker wearing only a waist belt",
+      "type": "multiple_choice",
+      "question": "An operative working from a boom lift (3b) wearing a simple waist belt tethered to the cage instead of a full-body fall arrest or restraint harness. Which Personal Protective Equipment (PPE) violation is shown ?",
       "options": [
         "A hard hat is missing",
         "A full-body harness is not being used",
         "The lanyard is too long",
         "The anchor point is on the wrong side"
       ],
-      "imageDescription": "An operative working from a boom lift (3b) wearing a simple waist belt tethered to the cage instead of a full-body fall arrest or restraint harness",
       "correctAnswer": 1,
-      "id": "ip-im-0144"
+      "id": "ip-im-0144",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 1,
@@ -7242,12 +7098,11 @@
         "Every 24 months",
         "Only when it looks damaged"
       ],
-      "imageDescription": "A high-detail photograph of a fabric inspection tag attached to a safety harness, showing columns for date of inspection and next due date",
-      "question": "According to health and safety best practices, how often should the safety equipment shown in this image be formally inspected?",
-      "type": "image_question",
-      "imageAlt": "A close-up of a safety harness inspection label with various dates",
+      "question": "A high-detail photograph of a fabric inspection tag attached to a safety harness, showing columns for date of inspection and next due date. According to health and safety best practices, how often should the safety equipment shown be formally inspected?",
+      "type": "multiple_choice",
       "explanation": "Harnesses and lanyards used for work at height must be inspected by a competent person every 6 months to ensure safety",
-      "id": "ip-im-0145"
+      "id": "ip-im-0145",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -7258,11 +7113,10 @@
       ],
       "correctAnswer": 0,
       "explanation": "The 3-point contact rule requires at least two hands and one foot, or two feet and one hand, to be in contact with the equipment during ascent or descent",
-      "imageAlt": "An operative climbing the ladder of an access tower using both hands",
-      "type": "image_question",
-      "question": "Which safety principle for climbing is the operative in this image demonstrating?",
-      "imageDescription": "A side view of a worker in high-visibility clothing climbing an internal ladder of a mobile tower, with both hands firmly on the rungs and one foot on a step",
-      "id": "ip-im-0146"
+      "type": "multiple_choice",
+      "question": "A side view of a worker in high-visibility clothing climbing an internal ladder of a mobile tower, with both hands firmly on the rungs and one foot on a step. Which safety principle for climbing is the operative demonstrating?",
+      "id": "ip-im-0146",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -7272,12 +7126,11 @@
         "Working only at night"
       ],
       "correctAnswer": 2,
-      "imageAlt": "A MEWP boom extended over a public road with traffic nearby",
       "explanation": "When working in a boom-type MEWP near a road, high-visibility clothing and traffic management (like cones) are essential to prevent collisions",
-      "imageDescription": "An aerial platform extended over a sidewalk and partially over a road lane, with cars passing by and a worker inside the basket",
-      "type": "image_question",
-      "question": "What is the most important site control required for the task shown in this image to protect against vehicular collision?",
-      "id": "ip-im-0147"
+      "type": "multiple_choice",
+      "question": "An aerial platform extended over a sidewalk and partially over a road lane, with cars passing by and a worker inside the basket. What is the most important site control required for the task shown to protect against vehicular collision?",
+      "id": "ip-im-0147",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -7288,18 +7141,15 @@
       ],
       "correctAnswer": 3,
       "explanation": "Standard mobile access towers must never be used as a point to anchor a fall arrest system or for lifting heavy loads from the ground",
-      "imageAlt": "A worker using a rope and pulley attached to the top rail of a tower to lift a heavy bucket",
-      "type": "image_question",
-      "question": "What serious safety violation is being shown in this image involving the tower structure?",
-      "imageDescription": "A mobile tower where a worker has tied a rope to the top guardrail and is pulling up a heavy cement bucket from the ground",
-      "id": "ip-im-0148"
+      "type": "multiple_choice",
+      "question": "A mobile tower where a worker has tied a rope to the top guardrail and is pulling up a heavy cement bucket from the ground. What serious safety violation is being shown involving the tower structure?",
+      "id": "ip-im-0148",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A MEWP outrigger foot resting directly on soft, uneven grass",
       "explanation": "Spreader pads should be used under outriggers to distribute the load over a larger area, preventing the machine from sinking or tipping on soft ground",
-      "imageDescription": "A close-up of a heavy-duty hydraulic outrigger foot placed directly onto soft soil and grass without any support underneath",
-      "type": "image_question",
-      "question": "What is the main stability concern with the outrigger setup shown in this image?",
+      "type": "multiple_choice",
+      "question": "A close-up of a heavy-duty hydraulic outrigger foot placed directly onto soft soil and grass without any support underneath. What is the main stability concern with the outrigger setup shown ?",
       "correctAnswer": 0,
       "options": [
         "Lack of spreader pads/mats",
@@ -7307,7 +7157,8 @@
         "The foot is the wrong colour",
         "There is no safety pin visible"
       ],
-      "id": "ip-im-0149"
+      "id": "ip-im-0149",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 2,
@@ -7317,12 +7168,11 @@
         "Excessive horizontal force being applied to the tower",
         "The platform is too high for the worker"
       ],
-      "imageAlt": "A worker on top of a tower pushing hard against a wall to align a window frame",
       "explanation": "Standard mobile towers are designed for vertical loads; pushing against a building or structure can cause the tower to overturn due to horizontal forces",
-      "imageDescription": "An operative on a mobile access tower leaning out and using significant physical force to push against a brick wall",
-      "question": "What hazard is being created by the operative's actions in this image?",
-      "type": "image_question",
-      "id": "ip-im-0150"
+      "question": "An operative on a mobile access tower leaning out and using significant physical force to push against a brick wall. What hazard is being created by the operative's actions ?",
+      "type": "multiple_choice",
+      "id": "ip-im-0150",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 1,
@@ -7332,18 +7182,15 @@
         "The tyre surface is worn down",
         "The adjustable leg is at maximum extension"
       ],
-      "question": "Which safety feature is incorrectly set on the tower base shown in this image?",
-      "type": "image_question",
-      "imageDescription": "A macro shot of a castor wheel at the base of an alloy tower, showing the locking lever in the unlocked, raised position while a worker is visible on the platform above",
+      "question": "A macro shot of a castor wheel at the base of an alloy tower, showing the locking lever in the unlocked, raised position while a worker is visible on the platform above. Which safety feature is incorrectly set on the tower base shown ?",
+      "type": "multiple_choice",
       "explanation": "Wheels on a mobile tower must be locked (braked) at all times while the tower is in use to prevent unexpected movement",
-      "imageAlt": "A close-up of a tower castor wheel with the brake lever in the 'up' position",
-      "id": "ip-im-0151"
+      "id": "ip-im-0151",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A handheld wind speed meter (anemometer) displaying 35 km/h, held by a worker in the basket of a high-reaching cherry picker",
-      "question": "Based on the device reading in this image, what hazard must the operator consider?",
-      "type": "image_question",
-      "imageAlt": "An anemometer showing a high wind speed reading next to a MEWP platform",
+      "question": "A handheld wind speed meter (anemometer) displaying 35 km/h, held by a worker in the basket of a high-reaching cherry picker. Based on the device reading , what hazard must the operator consider?",
+      "type": "multiple_choice",
       "explanation": "Wind speeds above the manufacturer's limit (usually 17mph or 28km/h) require work to stop and the MEWP to be lowered to prevent instability",
       "options": [
         "The humidity is too high to work",
@@ -7352,7 +7199,8 @@
         "The wind speed exceeds safe operating limits"
       ],
       "correctAnswer": 3,
-      "id": "ip-im-0152"
+      "id": "ip-im-0152",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 1,
@@ -7363,17 +7211,14 @@
         "Wearing the wrong type of boots"
       ],
       "explanation": "Towers must be accessed from the inside using the built-in ladder system to maintain stability and prevent falls",
-      "imageAlt": "A person climbing up the outside of the tower frames",
-      "question": "What unsafe access method is being demonstrated in this image?",
-      "type": "image_question",
-      "imageDescription": "A worker wearing a harness climbing up the external horizontal rungs of an alloy tower frame instead of using the internal ladder",
-      "id": "ip-im-0153"
+      "question": "A worker wearing a harness climbing up the external horizontal rungs of an alloy tower frame instead of using the internal ladder. What unsafe access method is being demonstrated ?",
+      "type": "multiple_choice",
+      "id": "ip-im-0153",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A high-reach platform where an operative is holding a 4x8 foot sheet of plywood vertically while the wind is visibly blowing their clothing",
-      "type": "image_question",
-      "question": "What is the primary danger of handling the large flat material shown in this image while at height?",
-      "imageAlt": "A worker in a MEWP basket holding a large, flat sheet of plywood in windy conditions",
+      "type": "multiple_choice",
+      "question": "A high-reach platform where an operative is holding a 4x8 foot sheet of plywood vertically while the wind is visibly blowing their clothing. What is the primary danger of handling the large flat material shown while at height?",
       "explanation": "Wind sailing occurs when materials like plywood or signage act as a sail, catching the wind and potentially tipping the MEWP or tower over",
       "options": [
         "The 'wind sailing' effect causing instability",
@@ -7382,7 +7227,8 @@
         "The wood blocking the operator's view of the ground"
       ],
       "correctAnswer": 0,
-      "id": "ip-im-0154"
+      "id": "ip-im-0154",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 2,
@@ -7392,12 +7238,11 @@
         "Stabilisers are missing for this height of tower",
         "The ladder is on the wrong side"
       ],
-      "imageDescription": "A 6-metre high mobile access tower standing on its four wheels without any diagonal stabilisers (outriggers) attached to the corners",
-      "type": "image_question",
-      "question": "What critical component is missing from this tower setup to ensure it does not overturn?",
-      "imageAlt": "A very tall, narrow tower without any stabiliser legs attached",
+      "type": "multiple_choice",
+      "question": "A 6-metre high mobile access tower standing on its four wheels without any diagonal stabilisers (outriggers) attached to the corners. What critical component is missing from this tower setup to ensure it does not overturn?",
       "explanation": "Stabilisers or outriggers must be deployed according to the manufacturer's instructions, especially as the tower height increases",
-      "id": "ip-im-0155"
+      "id": "ip-im-0155",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -7407,17 +7252,15 @@
         "The wires obstructing the operator's view of the ground"
       ],
       "correctAnswer": 1,
-      "imageAlt": "A MEWP boom positioned very close to overhead electric cables",
       "explanation": "Overhead power lines are a major electrocution hazard; MEWPs must maintain a safe distance (exclusion zone) from them at all times",
-      "imageDescription": "A telescopic boom lift extended upwards, with the basket positioned approximately 2 metres away from high-voltage overhead power lines",
-      "type": "image_question",
-      "question": "What is the most lethal hazard shown in this image of a MEWP operating near utility lines?",
-      "id": "ip-im-0156"
+      "type": "multiple_choice",
+      "question": "A telescopic boom lift extended upwards, with the basket positioned approximately 2 metres away from high-voltage overhead power lines. What is the most lethal hazard shown of a MEWP operating near utility lines?",
+      "id": "ip-im-0156",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What is the critical safety violation shown in this image of an operative in a boom-type MEWP?",
-      "type": "image_question",
-      "imageDescription": "An operative is standing in the basket of a telescopic boom lift (cherry picker) at height. They are wearing a hard hat and high-vis vest, but there is no lanyard attached to the anchor point and no harness visible on their torso",
+      "question": "An operative is standing in the basket of a telescopic boom lift (cherry picker) at height. They are wearing a hard hat and high-vis vest, but there is no lanyard attached to the anchor point and no harness visible on their torso. What is the critical safety violation shown of an operative in a boom-type MEWP?",
+      "type": "multiple_choice",
       "options": [
         "The operative is too tall for the basket",
         "The operative is not wearing a fall-restraint harness",
@@ -7426,43 +7269,40 @@
       ],
       "correctAnswer": 1,
       "explanation": "A harness must be worn in a boom-type MEWP to prevent the operator from being catapulted out if the platform jolts",
-      "imageAlt": "An operative in a cherry picker boom lift without a harness",
-      "id": "ip-im-0157"
+      "id": "ip-im-0157",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "Regarding the stability of this mobile tower, what is the main error shown?",
+      "question": "A mobile access tower is built to four metres. The four stabilisers (outriggers) are attached to the legs but are swung inward parallel to the frames rather than being extended outwards. Regarding the stability of this mobile tower, what is the main error shown?",
       "options": [
         "Incorrect colour of the frames",
         "The castors are not locked",
         "The stabilisers are not deployed in the correct position",
         "The ladder is on the wrong side"
       ],
-      "imageDescription": "A mobile access tower is built to four metres. The four stabilisers (outriggers) are attached to the legs but are swung inward parallel to the frames rather than being extended outwards",
-      "type": "image_question",
-      "imageAlt": "A mobile tower with outriggers tucked in against the frames",
-      "explanation": "Outriggers must be deployed according to the manufacturer’s instructions to provide the necessary footprint for stability",
+      "type": "multiple_choice",
+      "explanation": "Outriggers must be deployed according to the manufacturer\u2019s instructions to provide the necessary footprint for stability",
       "correctAnswer": 3,
-      "id": "ip-im-0158"
+      "id": "ip-im-0158",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "Based on the reading shown on this device, what action should the operator take?",
-      "imageDescription": "A close-up shot of a digital anemometer being held up at height. The screen shows a wind speed reading of 15.0 m/s. In the background, trees are visible swaying significantly",
+      "question": "A close-up shot of a digital anemometer being held up at height. The screen shows a wind speed reading of 15.0 m/s. In the background, trees are visible swaying significantly. Based on the reading shown on this device, what action should the operator take?",
       "options": [
         "The wind speed exceeds the safe operating limit for most MEWPs",
         "The battery on the device is low",
         "The temperature is too low for hydraulic fluid",
         "The humidity will cause the tower to rust"
       ],
-      "type": "image_question",
-      "imageAlt": "A handheld anemometer showing a high digital reading",
+      "type": "multiple_choice",
       "explanation": "The Beaufort Scale is used to estimate wind speed; work on MEWPs or towers should usually stop if wind speeds exceed 12.5m/s (28mph)",
       "correctAnswer": 0,
-      "id": "ip-im-0159"
+      "id": "ip-im-0159",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What is the specific fall hazard visible on the platform in this image?",
-      "type": "image_question",
-      "imageDescription": "An operative is working on the top platform of a PASMA tower. The trapdoor in the platform floor is flipped open, leaving a significant hole right next to the operative's feet",
+      "question": "An operative is working on the top platform of a PASMA tower. The trapdoor in the platform floor is flipped open, leaving a significant hole right next to the operative's feet. What is the specific fall hazard visible on the platform ?",
+      "type": "multiple_choice",
       "options": [
         "The operative is working alone",
         "The guardrails are too low",
@@ -7471,38 +7311,36 @@
       ],
       "correctAnswer": 2,
       "explanation": "Platform trapdoors must be kept closed at all times, except when accessing or leaving the platform, to prevent falls",
-      "imageAlt": "A tower platform with an open trapdoor while a worker is standing on it",
-      "id": "ip-im-0160"
+      "id": "ip-im-0160",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 1,
       "explanation": "The '3b' category covers self-propelled boom lifts (cherry pickers) where the machine can be driven at height",
-      "imageAlt": "A self-propelled cherry picker (boom lift)",
-      "question": "What is the correct IPAF category for the MEWP shown in this image?",
-      "type": "image_question",
-      "imageDescription": "A photo of a self-propelled, diesel-powered telescopic boom lift (cherry picker) parked on a construction site. It has four wheels and a rotating turntable",
+      "question": "A photo of a self-propelled, diesel-powered telescopic boom lift (cherry picker) parked on a construction site. It has four wheels and a rotating turntable. What is the correct IPAF category for the MEWP shown ?",
+      "type": "multiple_choice",
       "options": [
         "1b (Static Boom)",
         "3b (Mobile Boom)",
         "3a (Mobile Vertical)",
         "PAV (Push Around Vertical)"
       ],
-      "id": "ip-im-0161"
+      "id": "ip-im-0161",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "Which essential component is missing from the edge protection on this platform?",
+      "question": "A view of the top working platform of a mobile tower. It has double guardrails (mid-rail and top-rail) but the solid boards around the base of the platform floor are missing. Which essential component is missing from the edge protection on this platform?",
       "options": [
         "The toe boards are missing",
         "The platform is made of the wrong material",
         "The guardrails are not horizontal",
         "There is no non-slip surface"
       ],
-      "imageDescription": "A view of the top working platform of a mobile tower. It has double guardrails (mid-rail and top-rail) but the solid boards around the base of the platform floor are missing",
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "Toe boards are an essential component of the guardrail system used to prevent tools or materials from being kicked off the edge",
       "correctAnswer": 0,
-      "imageAlt": "The base of a tower platform missing the wooden or metal kick plates",
-      "id": "ip-im-0162"
+      "id": "ip-im-0162",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "The ground must be checked to ensure it can support the weight of the machine and its load, including the use of spreader plates if necessary",
@@ -7961,7 +7799,7 @@
     },
     {
       "explanation": "Even if not required for stability on a certain tower height, some manufacturers require outriggers whenever the tower is in use for safety",
-      "question": "Stabilisers or outriggers should always be fitted if the manufacturer’s instruction manual specifies they are required for that height",
+      "question": "Stabilisers or outriggers should always be fitted if the manufacturer\u2019s instruction manual specifies they are required for that height",
       "correctAnswer": true,
       "type": "true_false",
       "id": "ip-tf-0066"
@@ -7989,7 +7827,7 @@
     },
     {
       "explanation": "The Safe Working Load (SWL) must never be exceeded. If the load is too heavy, a larger machine or different method must be used",
-      "question": "If a MEWP’s Safe Working Load (SWL) is exceeded by 10%, it is still safe to operate as most machines have a built-in safety factor",
+      "question": "If a MEWP\u2019s Safe Working Load (SWL) is exceeded by 10%, it is still safe to operate as most machines have a built-in safety factor",
       "correctAnswer": false,
       "type": "true_false",
       "id": "ip-tf-0070"

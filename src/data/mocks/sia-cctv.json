@@ -85,7 +85,7 @@
     {
       "type": "multiple_choice",
       "correctAnswer": 0,
-      "question": "Which Act of Parliament protects an individual’s right to a private and family life in the context of CCTV monitoring?",
+      "question": "Which Act of Parliament protects an individual\u2019s right to a private and family life in the context of CCTV monitoring?",
       "explanation": "The Human Rights Act 1998 protects an individual's right to privacy, which must be balanced against the need for CCTV surveillance",
       "options": [
         "Human Rights Act 1998",
@@ -1285,7 +1285,7 @@
         "Curiosity about public behaviour",
         "To monitor staff work rates"
       ],
-      "explanation": "The Surveillance Camera Commissioner’s Code of Practice states that CCTV should only be used to meet a specific 'pressing need' in the interest of public safety",
+      "explanation": "The Surveillance Camera Commissioner\u2019s Code of Practice states that CCTV should only be used to meet a specific 'pressing need' in the interest of public safety",
       "question": "According to the Surveillance Camera Code of Practice, a system must be used for a specific purpose which is",
       "correctAnswer": 0,
       "type": "multiple_choice",
@@ -1611,7 +1611,7 @@
         "The Health and Safety Executive (HSE) manual",
         "The Environmental Protection Act",
         "The Freedom of Information Act",
-        "The Surveillance Camera Commissioner’s Code of Practice"
+        "The Surveillance Camera Commissioner\u2019s Code of Practice"
       ],
       "explanation": "The Surveillance Camera Commissioner's Code of Practice (12 Guiding Principles) provides the framework for the ethical and legal use of surveillance systems",
       "id": "sc-mc-0124"
@@ -3128,9 +3128,9 @@
       "correctAnswer": 2,
       "type": "multiple_choice",
       "options": [
-        "A fine of £50 only",
+        "A fine of \u00a350 only",
         "A verbal warning from the ICO",
-        "A fine of up to £5,000 and/or 6 months in prison",
+        "A fine of up to \u00a35,000 and/or 6 months in prison",
         "The loss of their passport"
       ],
       "explanation": "Under the Private Security Industry Act 2001, it is a criminal offence to work as a CCTV operator in a public space without a valid SIA license",
@@ -4828,7 +4828,7 @@
       "id": "sc-mc-0371"
     },
     {
-      "explanation": "Operators must be aware of 'Blind Spots'—areas the cameras cannot see—as criminals may use these areas to hide",
+      "explanation": "Operators must be aware of 'Blind Spots'\u2014areas the cameras cannot see\u2014as criminals may use these areas to hide",
       "correctAnswer": 0,
       "question": "In CCTV operations, what are 'Blind Spots'?",
       "options": [
@@ -5075,23 +5075,21 @@
       "id": "sc-mc-0390"
     },
     {
-      "imageDescription": "A standard UK 'No Entry' road sign mounted on a grey metal pole against a clear sky",
       "correctAnswer": 2,
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "No Parking",
         "Speed Limit 20mph",
         "No Entry",
         "One Way Street"
       ],
-      "imageAlt": "A circular red sign with a horizontal white bar across the middle",
-      "question": "In a CCTV control room monitoring traffic flow, what does this specific road sign indicate?",
+      "question": "A standard UK 'No Entry' road sign mounted on a grey metal pole against a clear sky. In a CCTV control room monitoring traffic flow, what does this specific road sign indicate?",
       "explanation": "The 'No Entry' sign is a regulatory sign used to prevent vehicles from entering a specific area, often used to manage traffic flow around protected sites",
-      "id": "sc-im-0001"
+      "id": "sc-im-0001",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "WEEE stands for Waste Electrical and Electronic Equipment; CCTV operators must ensure old hardware is disposed of following these environmental regulations",
-      "imageDescription": "The WEEE symbol, featuring a black wheelie bin with a large 'X' over it and a thick horizontal line beneath it",
       "correctAnswer": 0,
       "options": [
         "Waste Electrical and Electronic Equipment regulation",
@@ -5099,103 +5097,96 @@
         "Recyclable plastics only",
         "Hazardous chemical warning"
       ],
-      "type": "image_question",
-      "imageAlt": "A symbol of a crossed-out wheeled bin with a solid bar underneath",
-      "question": "When disposing of old CCTV monitors or DVRs, what regulation does this symbol represent?",
-      "id": "sc-im-0002"
+      "type": "multiple_choice",
+      "question": "The WEEE symbol, featuring a black wheelie bin with a large 'X' over it and a thick horizontal line beneath it. When disposing of old CCTV monitors or DVRs, what regulation does this symbol represent?",
+      "id": "sc-im-0002",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "Signage indicating that CCTV is in operation is a legal requirement under Data Protection law to inform the public they are being recorded",
-      "imageDescription": "A standard UK CCTV warning sign with a black camera silhouette and text stating 'CCTV in operation' for 'Public Safety'",
       "correctAnswer": 1,
-      "imageAlt": "A yellow rectangular sign with a black camera icon and text",
-      "question": "Under the Data Protection Act and GDPR, what is the purpose of displaying this sign?",
-      "type": "image_question",
+      "question": "A standard UK CCTV warning sign with a black camera silhouette and text stating 'CCTV in operation' for 'Public Safety'. Under the Data Protection Act and GDPR, what is the purpose of displaying the sign?",
+      "type": "multiple_choice",
       "options": [
         "No photography allowed",
         "CCTV in operation",
         "Speed camera ahead",
         "TV recording in progress"
       ],
-      "id": "sc-im-0003"
+      "id": "sc-im-0003",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "Green 'running man' signs indicate the direction of the nearest emergency exit door or escape route during an evacuation",
-      "imageAlt": "A green rectangular sign with a white silhouette of a person running towards a door",
-      "question": "If a CCTV operator tracks a fire starting, which route should they advise personnel to follow based on this sign?",
+      "question": "A standard green fire exit sign showing a white stick figure running through a doorway with an arrow pointing right. If a CCTV operator tracks a fire starting, which route should they advise personnel to follow based on the sign?",
       "options": [
         "Entry to the building",
         "Staff only area",
         "Assembly point location",
         "Emergency fire exit route"
       ],
-      "type": "image_question",
-      "imageDescription": "A standard green fire exit sign showing a white stick figure running through a doorway with an arrow pointing right",
+      "type": "multiple_choice",
       "correctAnswer": 3,
-      "id": "sc-im-0004"
+      "id": "sc-im-0004",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Security Industry Authority Licensing",
         "Safety Inspection Association",
         "System Integration Agency",
         "Security Intelligence Agency"
       ],
-      "imageAlt": "A blue and white circular logo with the letters SIA",
-      "question": "A CCTV operator must display a valid licence from which organisation, represented by this logo?",
-      "imageDescription": "The official Security Industry Authority logo featuring the acronym SIA inside a stylized circular graphic",
+      "question": "The official Security Industry Authority logo featuring the acronym SIA inside a stylized circular graphic. A CCTV operator must display a valid licence from which organisation, represented by this logo?",
       "correctAnswer": 0,
       "explanation": "The SIA logo confirms that the operator has been trained and vetted to the legal standard required to work in the UK private security industry",
-      "id": "sc-im-0005"
+      "id": "sc-im-0005",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "PTZ (Pan-Tilt-Zoom) camera",
         "Thermal imaging camera",
         "Fixed/Static camera",
         "Body-worn camera"
       ],
-      "imageAlt": "A white rectangular CCTV camera mounted on a bracket",
-      "question": "What type of CCTV camera is shown here, which cannot be moved remotely by the operator?",
-      "imageDescription": "A static/fixed 'bullet' style CCTV camera mounted on a wall bracket, pointing in a single direction",
+      "question": "A static/fixed 'bullet' style CCTV camera mounted on a wall bracket, pointing in a single direction. What type of CCTV camera is , which cannot be moved remotely by the operator?",
       "correctAnswer": 2,
       "explanation": "Fixed cameras are non-movable and point at a specific target; they are used for constant monitoring of a high-risk area like a doorway",
-      "id": "sc-im-0006"
+      "id": "sc-im-0006",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "A Joystick is the primary peripheral used by operators to control PTZ cameras for tracking individuals or zooming in on incidents",
-      "imageAlt": "A grey security control desk joystick",
-      "question": "What is the primary function of this piece of equipment found in a CCTV control room?",
+      "question": "A professional CCTV joystick controller with multiple buttons and a 3-axis stick used for PTZ control. What is the primary function of this piece of equipment found in a CCTV control room?",
       "options": [
         "A volume controller",
         "A PTZ (Pan-Tilt-Zoom) joystick",
         "A digital light dimmer",
         "A computer mouse replacement"
       ],
-      "type": "image_question",
-      "imageDescription": "A professional CCTV joystick controller with multiple buttons and a 3-axis stick used for PTZ control",
+      "type": "multiple_choice",
       "correctAnswer": 1,
-      "id": "sc-im-0007"
+      "id": "sc-im-0007",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A yellow triangle with a black lightning bolt symbol",
-      "question": "An operator sees this sign on a fence near an intruder. What specific hazard does it warn them of?",
+      "question": "A yellow warning sign with a black border and a jagged lightning bolt symbol inside. An operator sees the sign on a fence near an intruder. What specific hazard does it warn them of?",
       "options": [
         "Radiation hazard",
         "High voltage electricity hazard",
         "Corrosive material warning",
         "Flammable substance warning"
       ],
-      "type": "image_question",
-      "imageDescription": "A yellow warning sign with a black border and a jagged lightning bolt symbol inside",
+      "type": "multiple_choice",
       "correctAnswer": 1,
       "explanation": "The yellow 'Danger of Death' sign with a lightning bolt identifies high-voltage electrical equipment that must be monitored for safety and vandalism",
-      "id": "sc-im-0008"
+      "id": "sc-im-0008",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A green and white 'Assembly Point' sign with white arrows in each corner pointing to a group of people in the middle",
       "correctAnswer": 2,
       "options": [
         "Bus stop location",
@@ -5203,138 +5194,128 @@
         "Fire assembly point",
         "Smoking area"
       ],
-      "type": "image_question",
-      "imageAlt": "A green square sign with four arrows pointing to a central point where a family silhouette stands",
-      "question": "During an emergency evacuation, where should the CCTV operator direct staff based on this sign?",
+      "type": "multiple_choice",
+      "question": "A green and white 'Assembly Point' sign with white arrows in each corner pointing to a group of people in the middle. During an emergency evacuation, where should the CCTV operator direct staff based on the sign?",
       "explanation": "This sign identifies an area where individuals can safely gather after evacuating a building during an emergency",
-      "id": "sc-im-0009"
+      "id": "sc-im-0009",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "Dome cameras are popular in retail because the tinted or opaque cover makes it difficult for people to see exactly which way the lens is pointing",
       "correctAnswer": 0,
-      "imageDescription": "A ceiling-mounted dome CCTV camera with a dark tinted hemispherical cover",
-      "question": "Which type of camera is shown in the image, often used in shops to hide the direction the lens is pointing?",
-      "imageAlt": "A white dome-shaped camera mounted on a ceiling",
+      "question": "A ceiling-mounted dome CCTV camera with a dark tinted hemispherical cover. Which type of camera is shown , often used in shops to hide the direction the lens is pointing?",
       "options": [
         "Dome camera",
         "Bullet camera",
         "ANPR camera",
         "Pinhole camera"
       ],
-      "type": "image_question",
-      "id": "sc-im-0010"
+      "type": "multiple_choice",
+      "id": "sc-im-0010",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A green square with a white cross in the centre",
-      "question": "If an operator sees a visitor collapse, what does this symbol indicate the proximity of?",
-      "type": "image_question",
+      "question": "A green square sign featuring a bold white cross in the middle, signifying first aid facilities. If an operator sees a visitor collapse, what does this symbol indicate the proximity of?",
+      "type": "multiple_choice",
       "options": [
         "Pharmacy location",
         "Doctor's office",
         "Hospital entrance",
         "First aid kit or personnel"
       ],
-      "imageDescription": "A green square sign featuring a bold white cross in the middle, signifying first aid facilities",
       "correctAnswer": 3,
       "explanation": "A green cross sign is the standard international symbol for identifying first aid equipment or personnel",
-      "id": "sc-im-0011"
+      "id": "sc-im-0011",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A blue square with a white lowercase 'i' letter",
-      "question": "In a public space like a shopping centre, what does this blue icon represent to a CCTV operator?",
-      "type": "image_question",
+      "question": "A blue square information sign with a white lowercase 'i' in the centre. In a public space like a shopping centre, what does this blue icon represent to a CCTV operator?",
+      "type": "multiple_choice",
       "options": [
         "Internet cafe",
         "Information point",
         "Individual person area",
         "Intercom system"
       ],
-      "imageDescription": "A blue square information sign with a white lowercase 'i' in the centre",
       "correctAnswer": 1,
       "explanation": "The Blue 'I' sign indicates a location where visitors can obtain information or help from staff",
-      "id": "sc-im-0012"
+      "id": "sc-im-0012",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A white spherical security camera mounted on a wall bracket",
       "options": [
         "Fixed Lens Camera",
         "Static Bullet Camera",
         "PTZ Dome Camera",
         "Thermal Imaging Camera"
       ],
-      "question": "Which type of camera is shown in the image, allowing the operator to control its movement and zoom?",
+      "question": "A high-definition PTZ (Pan Tilt Zoom) dome camera mounted on an external wall with a visible lens behind clear glass. Which type of camera is shown , allowing the operator to control its movement and zoom?",
       "explanation": "This is a PTZ (Pan, Tilt, Zoom) camera, which allows operators to track movement in real-time across a wide area",
       "correctAnswer": 2,
-      "imageDescription": "A high-definition PTZ (Pan Tilt Zoom) dome camera mounted on an external wall with a visible lens behind clear glass",
-      "type": "image_question",
-      "id": "sc-im-0013"
+      "type": "multiple_choice",
+      "id": "sc-im-0013",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 0,
-      "imageDescription": "A standard UK health and safety warning sign: a yellow equilateral triangle with a black border and a bold black exclamation mark",
       "explanation": "The yellow triangle with an exclamation mark is the general 'Caution' or 'Warning' sign used to alert staff to potential hazards",
-      "imageAlt": "A yellow triangle with a black border and a black exclamation mark in the centre",
       "options": [
         "General Warning/Hazard",
         "No Entry",
         "Fire Exit left",
         "First Aid point"
       ],
-      "question": "While monitoring a loading bay, an operator sees this sign. What category of safety sign is it?",
-      "id": "sc-im-0014"
+      "question": "A standard UK health and safety warning sign: a yellow equilateral triangle with a black border and a bold black exclamation mark. While monitoring a loading bay, an operator sees the sign. What category of safety sign is it?",
+      "id": "sc-im-0014",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "The Information Commissioner's Office (ICO) is the UK's independent body set up to uphold information rights and data privacy",
-      "question": "Compliance with the Data Protection Act is overseen by which organisation, represented by this logo?",
-      "imageAlt": "The logo of the Information Commissioner's Office",
+      "question": "The official logo of the ICO (Information Commissioner's Office) featuring its distinctive lettering and branding. Compliance with the Data Protection Act is overseen by which organisation, represented by this logo?",
       "options": [
         "Health and Safety Executive",
         "Information Commissioner's Office",
         "Security Industry Authority",
         "Police Service Centre"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 1,
-      "imageDescription": "The official logo of the ICO (Information Commissioner's Office) featuring its distinctive lettering and branding",
-      "id": "sc-im-0015"
+      "id": "sc-im-0015",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "The yellow 'Lightning Bolt' symbol indicates a risk of high voltage or electric shock in the vicinity",
-      "question": "If an operator sees an intruder entering a room with this sign, what specific danger must they warn responders about?",
-      "imageAlt": "A yellow triangle with a black jagged arrow pointing downwards",
+      "question": "A yellow warning triangle containing a black stylized jagged arrow representing electricity or high voltage. If an operator sees an intruder entering a room with the sign, what specific danger must they warn responders about?",
       "options": [
         "Wet Floor Hazard",
         "Falling Objects Warning",
         "Trip Hazard Zone",
         "Danger of Death / High Voltage"
       ],
-      "type": "image_question",
-      "imageDescription": "A yellow warning triangle containing a black stylized jagged arrow representing electricity or high voltage",
+      "type": "multiple_choice",
       "correctAnswer": 3,
-      "id": "sc-im-0016"
+      "id": "sc-im-0016",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "An operator spots a member of the public passing this sign into a secure warehouse area. What does the sign indicate?",
+      "question": "A standard 'No Entry' traffic and pedestrian sign: a solid red circle with a white rectangular bar across the centre. An operator spots a member of the public passing the sign into a secure warehouse area. What does the sign indicate?",
       "options": [
         "Emergency Exit Only",
         "One Way Street",
         "No Entry for unauthorised persons",
         "Staff Meeting Point"
       ],
-      "imageAlt": "A red circular sign with a thick white horizontal line in the middle",
       "explanation": "The red circle with a horizontal white bar is the 'No Entry' sign, indicating that unauthorized access is prohibited",
       "correctAnswer": 2,
-      "imageDescription": "A standard 'No Entry' traffic and pedestrian sign: a solid red circle with a white rectangular bar across the centre",
-      "type": "image_question",
-      "id": "sc-im-0017"
+      "type": "multiple_choice",
+      "id": "sc-im-0017",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 0,
-      "imageDescription": "A close-up of a professional CCTV camera lens showing the adjustment rings for 'Zoom' and 'Focus'",
-      "type": "image_question",
-      "question": "This image shows the lens components of a camera. What type of lens allows for the focal length to be adjusted?",
-      "imageAlt": "A close-up of a camera lens with two adjustment rings for focus and zoom",
+      "type": "multiple_choice",
+      "question": "A close-up of a professional CCTV camera lens showing the adjustment rings for 'Zoom' and 'Focus'. The image shows the lens components of a camera. What type of lens allows for the focal length to be adjusted?",
       "options": [
         "Varifocal Lens",
         "Fixed 3.6mm Lens",
@@ -5342,56 +5323,53 @@
         "Wide Angle Fish-eye Lens"
       ],
       "explanation": "Varifocal lenses allow the field of view to be adjusted manually or automatically to focus on specific distances",
-      "id": "sc-im-0018"
+      "id": "sc-im-0018",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "A CCTV operator uses this specific piece of equipment to perform which task?",
+      "question": "A professional CCTV PTZ joystick controller on a desk, used by operators to pan, tilt, and zoom cameras manually. A CCTV operator uses this specific piece of equipment to perform which task?",
       "options": [
         "Digital Video Recorder (DVR)",
         "Network Switch",
         "Monitor Splitter",
         "PTZ Joystick Controller"
       ],
-      "imageAlt": "A desktop controller with a 3-axis joystick and several numbered buttons",
       "explanation": "This is a joystick controller, used by operators to move PTZ cameras and navigate on-screen menus",
-      "imageDescription": "A professional CCTV PTZ joystick controller on a desk, used by operators to pan, tilt, and zoom cameras manually",
       "correctAnswer": 3,
-      "type": "image_question",
-      "id": "sc-im-0019"
+      "type": "multiple_choice",
+      "id": "sc-im-0019",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "The 'Fire Action' notice provides specific instructions on what to do, who to call, and where to go in the event of a fire",
-      "question": "In a control room, what is the name of this document that provides instructions in the event of a fire?",
-      "imageAlt": "A blue and white sign with numbered instructions for fire procedures",
+      "question": "A standard UK Fire Action Notice sign featuring blue circles with white numbers and text boxes for 'Assembly Point' details. In a control room, what is the name of this document that provides instructions in the event of a fire?",
       "options": [
         "A CCTV Maintenance Log",
         "A Fire Action Notice",
         "A Staff Rota",
         "A Visitor Sign-in Sheet"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 1,
-      "imageDescription": "A standard UK Fire Action Notice sign featuring blue circles with white numbers and text boxes for 'Assembly Point' details",
-      "id": "sc-im-0020"
+      "id": "sc-im-0020",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 2,
-      "imageDescription": "The identifying colour-coded label (Black) found on a Carbon Dioxide fire extinguisher",
-      "type": "image_question",
-      "question": "An operator spots a small electrical fire in the server room. Which extinguisher type, identified by this black label, is most appropriate?",
+      "type": "multiple_choice",
+      "question": "The identifying colour-coded label (Black) found on a Carbon Dioxide fire extinguisher. An operator spots a small electrical fire in the server room. Which extinguisher type, identified by this black label, is most appropriate?",
       "options": [
         "Water Extinguisher",
         "Foam Extinguisher",
         "CO2 Extinguisher",
         "Dry Powder Extinguisher"
       ],
-      "imageAlt": "A black square label with white text saying 'CO2'",
       "explanation": "The white 'CO2' text on a black background identifies a Carbon Dioxide fire extinguisher, safe for use on electrical fires",
-      "id": "sc-im-0021"
+      "id": "sc-im-0021",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageDescription": "A screenshot of a CCTV monitor showing a street scene, but with one specific residential window covered by a blacked-out digital square",
+      "type": "multiple_choice",
       "correctAnswer": 0,
       "explanation": "A Privacy Mask is a software feature that blocks out sensitive areas (like private windows) from being viewed or recorded",
       "options": [
@@ -5400,39 +5378,37 @@
         "Digital Zoom Area digital zoom area",
         "Video Loss Indicator"
       ],
-      "imageAlt": "A CCTV monitor display where a specific area is blacked out by a solid square",
-      "question": "What feature is being used in this image to comply with privacy laws regarding residential windows?",
-      "id": "sc-im-0022"
+      "question": "A screenshot of a CCTV monitor showing a street scene, but with one specific residential window covered by a blacked-out digital square. What feature is being used to comply with privacy laws regarding residential windows?",
+      "id": "sc-im-0022",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "Green signs with white icons and arrows are emergency exit signs, indicating the direction to safety",
-      "question": "If an operator is guiding people out of a building during a power cut, what does this illuminated sign indicate?",
+      "question": "A standard UK 'Running Man' fire exit sign with a white arrow pointing to the right. If an operator is guiding people out of a building during a power cut, what does this illuminated sign indicate?",
       "options": [
         "Entry point for staff",
         "Direction to a Fire Exit",
         "Location of a safe room",
         "Fire Alarm Call Point"
       ],
-      "imageAlt": "A green rectangular sign with a white figure running through a doorway and an arrow",
-      "type": "image_question",
-      "imageDescription": "A standard UK 'Running Man' fire exit sign with a white arrow pointing to the right",
+      "type": "multiple_choice",
       "correctAnswer": 1,
-      "id": "sc-im-0023"
+      "id": "sc-im-0023",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A black screen on a CCTV monitor with a small icon of a camera with a red 'X' through it",
       "options": [
         "Camera in Sleep Mode",
         "Privacy Mode Active",
         "Video Loss / No Signal",
         "Recording Paused"
       ],
-      "question": "What should an operator conclude if they see this image on one of their monitor tiles?",
+      "question": "A CCTV monitor tile showing a black screen with a 'Video Loss' or 'No Signal' icon in the centre. What should an operator conclude if they see the image on one of their monitor tiles?",
       "explanation": "This icon represents 'Video Loss', meaning the camera signal has been interrupted or the device has failed",
       "correctAnswer": 2,
-      "imageDescription": "A CCTV monitor tile showing a black screen with a 'Video Loss' or 'No Signal' icon in the centre",
-      "type": "image_question",
-      "id": "sc-im-0024"
+      "type": "multiple_choice",
+      "id": "sc-im-0024",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 1,
@@ -5442,17 +5418,15 @@
         "Hazardous chemicals area",
         "First aid kit location"
       ],
-      "imageAlt": "A green rectangular sign showing a white figure running toward a door with an arrow",
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "A green sign with a white person running and an arrow indicates an emergency exit or the direction to a place of safety",
-      "imageDescription": "A standard UK green fire exit sign with a running 'man' icon and a directional arrow",
-      "question": "When monitoring an evacuation, what does this green sign indicate to the CCTV operator?",
-      "id": "sc-im-0025"
+      "question": "A standard UK green fire exit sign with a running 'man' icon and a directional arrow. When monitoring an evacuation, what does this green sign indicate to the CCTV operator?",
+      "id": "sc-im-0025",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "The yellow hazard triangle with a lightning bolt warns of the danger of high voltage or electric shocks",
-      "type": "image_question",
-      "imageAlt": "A yellow triangle with a black border and a black lightning bolt symbol in the centre",
+      "type": "multiple_choice",
       "options": [
         "Risk of electric shock",
         "Risk of falling objects",
@@ -5460,14 +5434,13 @@
         "Radiation hazard zone"
       ],
       "correctAnswer": 0,
-      "question": "An operator sees a technician working near this sign. What hazard does it specifically warn of?",
-      "imageDescription": "A standard UK 'Danger of Death' or high voltage electricity warning sign",
-      "id": "sc-im-0026"
+      "question": "A standard UK 'Danger of Death' or high voltage electricity warning sign. An operator sees a technician working near the sign. What hazard does it specifically warn of?",
+      "id": "sc-im-0026",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A professional CCTV PTZ controller with a prominent three-axis joystick on a desk",
-      "question": "What is the primary purpose of this control room equipment?",
-      "type": "image_question",
+      "question": "A professional CCTV PTZ controller with a prominent three-axis joystick on a desk. What is the primary purpose of this control room equipment?",
+      "type": "multiple_choice",
       "correctAnswer": 2,
       "options": [
         "Recording footage to a DVD",
@@ -5475,13 +5448,12 @@
         "Controlling PTZ cameras manually",
         "Communicating via the radio network"
       ],
-      "imageAlt": "A desktop control unit featuring a 3-axis joystick and several numbered buttons",
       "explanation": "A joystick is the standard hardware used by operators to manually pan, tilt, and zoom (PTZ) controllable cameras",
-      "id": "sc-im-0027"
+      "id": "sc-im-0027",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "The yellow 'CCTV in operation' sign is a legal requirement under the DPA/GDPR to inform the public that they are being recorded",
-      "imageAlt": "A yellow sign with a black camera icon and text regarding image recording and the Data Protection Act",
       "correctAnswer": 3,
       "options": [
         "Police authority only zone",
@@ -5489,16 +5461,14 @@
         "No photography allowed",
         "Notice of CCTV monitoring in progress"
       ],
-      "type": "image_question",
-      "question": "This sign is displayed in a public car park. What is its main purpose under Data Protection laws?",
-      "imageDescription": "A standard UK yellow CCTV advisory sign with a camera symbol and text about the purposes of the system",
-      "id": "sc-im-0028"
+      "type": "multiple_choice",
+      "question": "A standard UK yellow CCTV advisory sign with a camera symbol and text about the purposes of the system. The sign is displayed in a public car park. What is its main purpose under Data Protection laws?",
+      "id": "sc-im-0028",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A vandal-proof 'eyeball' dome camera with a thick metal casing and security screws",
-      "question": "What type of camera housing is shown, specifically designed to withstand physical attacks?",
-      "type": "image_question",
-      "imageAlt": "A rugged, metal-cased eyeball-style camera mounted to a concrete wall",
+      "question": "A vandal-proof 'eyeball' dome camera with a thick metal casing and security screws. What type of camera housing is shown, specifically designed to withstand physical attacks?",
+      "type": "multiple_choice",
       "options": [
         "Body-worn camera",
         "Vandal-resistant camera",
@@ -5507,13 +5477,12 @@
       ],
       "correctAnswer": 1,
       "explanation": "Vandal-resistant cameras often feature a reinforced metal 'eyeball' design within a heavy-duty housing to prevent tampering or damage",
-      "id": "sc-im-0029"
+      "id": "sc-im-0029",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A stylized logo representing the ICO (Information Commissioner's Office) or FOI",
-      "question": "As an operator in a public authority control room, you must be aware of this legislation regarding information access. Which Act is it?",
-      "type": "image_question",
-      "imageAlt": "The logo for the Freedom of Information Act or the Information Commissioner's Office",
+      "question": "A stylized logo representing the ICO (Information Commissioner's Office) or FOI. As an operator in a public authority control room, you must be aware of this legislation regarding information access. Which Act is it?",
+      "type": "multiple_choice",
       "correctAnswer": 0,
       "options": [
         "Freedom of Information Act 2000",
@@ -5522,11 +5491,11 @@
         "Human Rights Act 1998"
       ],
       "explanation": "The Freedom of Information Act allows citizens to request information from public authorities, though it is separate from SARs under Data Protection",
-      "id": "sc-im-0030"
+      "id": "sc-im-0030",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What is the common name for the style of camera shown in this image?",
-      "imageDescription": "A classic outdoor 'bullet' style CCTV camera with an integrated sunhood and wall mount",
+      "question": "A classic outdoor 'bullet' style CCTV camera with an integrated sunhood and wall mount. What is the common name for the style of camera shown ?",
       "explanation": "Bullet cameras are characterized by their sleek, cylindrical shape and are typically used for fixed-angle perimeter monitoring",
       "correctAnswer": 2,
       "options": [
@@ -5535,13 +5504,13 @@
         "Bullet camera",
         "Covert pinhole camera"
       ],
-      "imageAlt": "A long, cylindrical camera with a sunshield, mounted on a wall bracket",
-      "type": "image_question",
-      "id": "sc-im-0031"
+      "type": "multiple_choice",
+      "id": "sc-im-0031",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "The red circle with a white horizontal bar is the standard 'No Entry' sign, used to identify areas where access is prohibited",
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "No Parking area",
         "No Entry for unauthorised persons",
@@ -5549,14 +5518,12 @@
         "Danger: Explosive atmosphere"
       ],
       "correctAnswer": 1,
-      "imageAlt": "A red circular sign with a white horizontal line across the middle",
-      "question": "An operator sees a member of the public walking past this sign. What is the individual doing?",
-      "imageDescription": "A standard UK 'No Entry' road/pedestrian sign",
-      "id": "sc-im-0032"
+      "question": "A standard UK 'No Entry' road/pedestrian sign. An operator sees a member of the public walking past the sign. What is the individual doing?",
+      "id": "sc-im-0032",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageAlt": "A metal cylindrical connector at the end of a black cable with a twist-lock mechanism",
+      "type": "multiple_choice",
       "options": [
         "HDMI connector",
         "USB-C data cable",
@@ -5564,13 +5531,13 @@
         "BNC video connector"
       ],
       "correctAnswer": 3,
-      "explanation": "BNC (Bayonet Neill–Concelman) connectors are the industry-standard physical connectors for coaxial video cables in CCTV systems",
-      "imageDescription": "A close-up of a BNC connector used for analogue or HD-SDI video signals",
-      "question": "This component is often used in CCTV installations. What is its name?",
-      "id": "sc-im-0033"
+      "explanation": "BNC (Bayonet Neill\u2013Concelman) connectors are the industry-standard physical connectors for coaxial video cables in CCTV systems",
+      "question": "A close-up of a BNC connector used for analogue or HD-SDI video signals. This component is often used in CCTV installations. What is its name?",
+      "id": "sc-im-0033",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 0,
       "options": [
         "Information or help point",
@@ -5578,11 +5545,10 @@
         "Inspection area for security",
         "Individual safe zone for staff"
       ],
-      "imageAlt": "A square blue sign with a white lowercase 'i' symbol",
       "explanation": "A white 'I' on a blue background indicates an Information point, where members of the public can seek assistance",
-      "imageDescription": "A standard blue information sign found in shopping centres and transport hubs",
-      "question": "If an operator is asked to direct a lost visitor to a help desk, which sign would they look for?",
-      "id": "sc-im-0034"
+      "question": "A standard blue information sign found in shopping centres and transport hubs. If an operator is asked to direct a lost visitor to a help desk, which sign would they look for?",
+      "id": "sc-im-0034",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "An Incident Report log is used by operators to record specific events, actions taken, and police CAD numbers for future evidence",
@@ -5593,15 +5559,13 @@
         "Incident report log",
         "Asset tracking register"
       ],
-      "imageAlt": "A printed logbook page with columns for 'Time', 'Event', 'Action', and 'Police Reference'",
-      "type": "image_question",
-      "question": "A CCTV operator is filling out this document after witnessing a theft. What is it?",
-      "imageDescription": "A typical CCTV control room incident log sheet with manual handwritten entries",
-      "id": "sc-im-0035"
+      "type": "multiple_choice",
+      "question": "A typical CCTV control room incident log sheet with manual handwritten entries. A CCTV operator is filling out this document after witnessing a theft. What is it?",
+      "id": "sc-im-0035",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "Based on the connection port shown, what type of camera system is this part of?",
-      "imageDescription": "The rear interface of a digital IP camera featuring a network port and a 'PoE' label",
+      "question": "The rear interface of a digital IP camera featuring a network port and a 'PoE' label. Based on the connection port shown, what type of camera system is this part of?",
       "explanation": "IP (Internet Protocol) cameras connect to a network using an RJ45 connector and Ethernet cabling",
       "correctAnswer": 1,
       "options": [
@@ -5610,13 +5574,13 @@
         "Dummy camera",
         "Infrared-only camera"
       ],
-      "imageAlt": "The back of a camera showing an Ethernet port (RJ45) instead of a round BNC connector",
-      "type": "image_question",
-      "id": "sc-im-0036"
+      "type": "multiple_choice",
+      "id": "sc-im-0036",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "A yellow diamond-shaped sign with an exclamation mark is the general warning sign for a potential hazard",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 2,
       "options": [
         "Mandatory action required",
@@ -5624,15 +5588,13 @@
         "General danger or hazard",
         "First aid station nearby"
       ],
-      "imageAlt": "A yellow triangular sign with a black border and a large exclamation mark in the centre",
-      "question": "An operator sees a technician placing this sign near a wet floor. What does this specific shape and colour indicate?",
-      "imageDescription": "A standard UK health and safety warning sign: yellow triangle, black border, black exclamation mark pictogram",
-      "id": "sc-im-0037"
+      "question": "A standard UK health and safety warning sign: yellow triangle, black border, black exclamation mark pictogram. An operator sees a technician placing the sign near a wet floor. What does this specific shape and colour indicate?",
+      "id": "sc-im-0037",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A modern PTZ (Pan-Tilt-Zoom) dome camera mounted on an external wall bracket",
-      "question": "What are the primary movement capabilities of the camera shown in this image?",
-      "type": "image_question",
+      "question": "A modern PTZ (Pan-Tilt-Zoom) dome camera mounted on an external wall bracket. What are the primary movement capabilities of the camera shown ?",
+      "type": "multiple_choice",
       "correctAnswer": 0,
       "options": [
         "Pan, Tilt, and Zoom functions",
@@ -5640,13 +5602,12 @@
         "Covert recording only",
         "Analogue transmission only"
       ],
-      "imageAlt": "A spherical camera inside a clear glass or plastic dome, mounted to a wall bracket",
       "explanation": "A PTZ (Pan, Tilt, Zoom) camera allows the operator to move the lens horizontally, vertically, and adjust the magnification",
-      "id": "sc-im-0038"
+      "id": "sc-im-0038",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "During an incident, a security guard shows this card to the camera. What does this card confirm?",
-      "imageDescription": "A standard blue SIA Frontline Door Supervisor or CCTV licence card with a holographic SIA logo",
+      "question": "A standard blue SIA Frontline Door Supervisor or CCTV licence card with a holographic SIA logo. During an incident, a security guard shows this card to the camera. What does this card confirm?",
       "explanation": "The SIA logo on a blue card indicates a frontline licence holder, authorized to perform security activities",
       "correctAnswer": 1,
       "options": [
@@ -5655,29 +5616,27 @@
         "First Aid Certificate miles",
         "Building Access Pass"
       ],
-      "imageAlt": "A blue plastic ID card featuring the SIA logo and a photograph of a person",
-      "type": "image_question",
-      "id": "sc-im-0039"
+      "type": "multiple_choice",
+      "id": "sc-im-0039",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "According to health and safety (DSE) guidelines, what is the correct height for the monitor shown here?",
-      "imageDescription": "An ergonomic diagram showing a person sitting at a CCTV console with lines indicating correct eye-to-screen alignment",
+      "question": "An ergonomic diagram showing a person sitting at a CCTV console with lines indicating correct eye-to-screen alignment. According to health and safety (DSE) guidelines, what is the correct height for the monitor ?",
       "explanation": "Monitors should be positioned at or slightly below eye level to prevent neck strain and fatigue during long shifts",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 3,
-      "imageAlt": "A side view of a person sitting at a desk looking at several computer monitors",
       "options": [
         "The screen must be above head height",
         "The screen must be touching the desk",
         "The screen must be 2 metres away",
         "The screen should be at or slightly below eye level"
       ],
-      "id": "sc-im-0040"
+      "id": "sc-im-0040",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 2,
-      "imageAlt": "A yellow sign with a camera icon and several lines of empty text boxes",
       "options": [
         "The location of the cameras",
         "The crimes being recorded",
@@ -5685,24 +5644,23 @@
         "The price of the CCTV system"
       ],
       "explanation": "Under GDPR/DPA 2018, signage must clearly state who is responsible for the system and their contact details",
-      "imageDescription": "A CCTV warning sign with a camera pictogram, but the 'Contact Details' and 'Operator Name' sections are blank",
-      "question": "To be legally compliant, what must be written in the blank spaces of this CCTV warning sign?",
-      "id": "sc-im-0041"
+      "question": "A CCTV warning sign with a camera pictogram, but the 'Contact Details' and 'Operator Name' sections are blank. To be legally compliant, what must be written in the blank spaces of this CCTV warning sign?",
+      "id": "sc-im-0041",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 0,
-      "imageAlt": "A silver metal cylindrical connector with a locking ring at the end of a black cable",
       "options": [
         "BNC connector",
         "RJ45 connector",
         "HDMI connector",
         "USB-C connector"
       ],
-      "explanation": "BNC (Bayonet Neill–Concelman) connectors are the standard interface for analogue video signals in CCTV",
-      "imageDescription": "A close-up of a BNC connector at the end of a piece of RG59 coaxial cable",
-      "question": "What is the name of this common cable connector used in analogue CCTV installations?",
-      "id": "sc-im-0042"
+      "explanation": "BNC (Bayonet Neill\u2013Concelman) connectors are the standard interface for analogue video signals in CCTV",
+      "question": "A close-up of a BNC connector at the end of a piece of RG59 coaxial cable. What is the name of this common cable connector used in analogue CCTV installations?",
+      "id": "sc-im-0042",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "A monitor wall allows operators to view multiple camera feeds simultaneously for broad situational awareness",
@@ -5712,42 +5670,39 @@
         "To store video data for 30 days",
         "To print out still images of suspects"
       ],
-      "imageAlt": "A large wall in a control room covered in many different video screens displaying different areas",
       "correctAnswer": 1,
-      "type": "image_question",
-      "question": "What is the primary function of the 'Video Wall' shown in this control room setting?",
-      "imageDescription": "A large-scale video wall in a professional control room displaying various camera feeds in a grid",
-      "id": "sc-im-0043"
+      "type": "multiple_choice",
+      "question": "A large-scale video wall in a professional control room displaying various camera feeds in a grid. What is the primary function of the 'Video Wall' shown in this control room setting?",
+      "id": "sc-im-0043",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "An operator sees this sign on a storage cupboard. What specific risk does it identify?",
-      "imageDescription": "A UK health and safety warning sign showing the 'flammable material' flame symbol",
+      "question": "A UK health and safety warning sign showing the 'flammable material' flame symbol. An operator sees the sign on a storage cupboard. What specific risk does it identify?",
       "explanation": "Warning signs for flammable substances feature a flame icon within a yellow triangle",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 3,
-      "imageAlt": "A yellow triangular sign with a black border and a black flame symbol",
       "options": [
         "Warning: Explosive material",
         "Warning: High voltage",
         "Warning: Biohazard present",
         "Warning: Flammable material"
       ],
-      "id": "sc-im-0044"
+      "id": "sc-im-0044",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Analogue camera system",
         "Wireless radio system",
         "IP (Network) camera system",
         "Battery-only system"
       ],
-      "imageAlt": "A plastic connector with eight small copper pins and a locking tab on the top",
       "correctAnswer": 2,
       "explanation": "IP (Internet Protocol) cameras use network cables (RJ45/Cat5e/6) to transmit digital video data",
-      "imageDescription": "A close-up of an RJ45 Ethernet connector plugged into the back of a camera",
-      "question": "The presence of this type of network connector suggests the camera is part of which system?",
-      "id": "sc-im-0045"
+      "question": "A close-up of an RJ45 Ethernet connector plugged into the back of a camera. The presence of this type of network connector suggests the camera is part of which system?",
+      "id": "sc-im-0045",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "The 'No Entry' sign is a red circle with a white horizontal bar, indicating that entry is forbidden",
@@ -5758,17 +5713,14 @@
         "One-way traffic only",
         "End of motorway"
       ],
-      "imageAlt": "A red circular sign with a thick white horizontal bar across the middle",
-      "type": "image_question",
-      "question": "If an operator sees a vehicle driving past this sign in a private complex, what violation is occurring?",
-      "imageDescription": "A standard UK 'No Entry' road and pedestrian safety sign",
-      "id": "sc-im-0046"
+      "type": "multiple_choice",
+      "question": "A standard UK 'No Entry' road and pedestrian safety sign. If an operator sees a vehicle driving past the sign in a private complex, what violation is occurring?",
+      "id": "sc-im-0046",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "The front face of a CCTV camera with an LED ring of infrared illuminators visible around the lens",
-      "question": "What is the purpose of the small LEDs surrounding the lens of this camera?",
-      "type": "image_question",
-      "imageAlt": "A close-up of a camera lens surrounded by a ring of small red glowing bulbs",
+      "question": "The front face of a CCTV camera with an LED ring of infrared illuminators visible around the lens. What is the purpose of the small LEDs surrounding the lens of this camera?",
+      "type": "multiple_choice",
       "options": [
         "To warn people they are being recorded",
         "To allow for vision in total darkness",
@@ -5777,116 +5729,109 @@
       ],
       "correctAnswer": 1,
       "explanation": "Infrared (IR) illuminators allow cameras to capture images in total darkness by lighting the scene with light invisible to humans",
-      "id": "sc-im-0047"
+      "id": "sc-im-0047",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "Under the Data Protection Act, requests from individuals to see their own data are called Subject Access Requests (SAR)",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 2,
-      "imageAlt": "A person handing a formal-looking letter to a security officer at a desk",
       "options": [
         "Freedom of Information Request",
         "Police Witness Statement",
         "Subject Access Request (SAR)",
         "Criminal Records Check"
       ],
-      "question": "A person submits this written request to view footage of themselves. What is this process called?",
-      "imageDescription": "A photograph of a member of the public handing a written request form to a CCTV operator",
-      "id": "sc-im-0048"
+      "question": "A photograph of a member of the public handing a written request form to a CCTV operator. A person submits this written request to view footage of themselves. What is this process called?",
+      "id": "sc-im-0048",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Fire exit route",
         "Hazardous materials storage",
         "First aid equipment location",
         "Mandatory PPE zone"
       ],
-      "imageAlt": "A square green sign with a white cross in the centre",
-      "question": "An operator sees a person injured on camera. Which sign indicates the location of medical supplies?",
+      "question": "A standard UK Health and Safety 'First Aid' sign featuring a white cross on a solid green background. An operator sees a person injured on camera. Which sign indicates the location of medical supplies?",
       "correctAnswer": 2,
-      "imageDescription": "A standard UK Health and Safety 'First Aid' sign featuring a white cross on a solid green background",
       "explanation": "A green sign with white text/symbols indicates a safe condition, such as the location of first aid equipment",
-      "id": "sc-im-0049"
+      "id": "sc-im-0049",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "Under the Data Protection Act 2018 (GDPR), individuals have the right to request access to their personal data by submitting a Subject Access Request",
-      "imageDescription": "A close-up of a document titled 'Subject Access Request' being handed across a desk in a security control room",
       "correctAnswer": 1,
-      "question": "What legal process is being initiated when a member of the public submits this document?",
-      "imageAlt": "A person handing a formal letter titled 'Subject Access Request' to a security desk",
+      "question": "A close-up of a document titled 'Subject Access Request' being handed across a desk in a security control room. What legal process is being initiated when a member of the public submits this document?",
       "options": [
         "Freedom of Information Request",
         "Subject Access Request",
         "Section 17 Request",
         "Right to Erasure Notice"
       ],
-      "type": "image_question",
-      "id": "sc-im-0050"
+      "type": "multiple_choice",
+      "id": "sc-im-0050",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "A PTZ (Pan, Tilt, Zoom) camera allows the operator to move the lens horizontally, vertically, and change the focal length",
       "correctAnswer": 0,
-      "imageDescription": "A professional PTZ (Pan-Tilt-Zoom) dome camera mounted on an external wall bracket",
-      "imageAlt": "A large dome camera with a visible lens that can rotate and tilt inside the housing",
-      "question": "What manual control functions does this specific type of camera provide to an operator?",
-      "type": "image_question",
+      "question": "A professional PTZ (Pan-Tilt-Zoom) dome camera mounted on an external wall bracket. What manual control functions does this specific type of camera provide to an operator?",
+      "type": "multiple_choice",
       "options": [
         "Pan, Tilt, and Zoom",
         "Fixed Wide Angle only",
         "Digital Zoom only",
         "Static 360-degree view"
       ],
-      "id": "sc-im-0051"
+      "id": "sc-im-0051",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 3,
-      "imageDescription": "The official cover of the UK Data Protection Act 2018 legislation document",
-      "question": "Which piece of legislation primarily governs how CCTV operators handle and store images of identifiable people?",
-      "imageAlt": "A book cover with the title 'Data Protection Act 2018'",
+      "question": "The official cover of the UK Data Protection Act 2018 legislation document. Which piece of legislation primarily governs how CCTV operators handle and store images of identifiable people?",
       "options": [
         "The Private Security Industry Act 2001",
         "The Human Rights Act 1998",
         "The Freedom of Information Act 2000",
         "The Data Protection Act 2018"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "The Data Protection Act 2018 (incorporating GDPR) is the primary legislation governing the processing of personal data via CCTV",
-      "id": "sc-im-0052"
+      "id": "sc-im-0052",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A yellow triangle sign with a black lightning bolt symbol",
-      "question": "What is the primary meaning of the shape and colour of this sign found in a plant room?",
-      "type": "image_question",
+      "question": "A standard UK yellow triangular warning sign showing a black lightning bolt, indicating danger of electricity. What is the primary meaning of the shape and colour of the sign found in a plant room?",
+      "type": "multiple_choice",
       "options": [
         "Mandatory action required",
         "Warning of a hazard",
         "Prohibited area",
         "Information or direction"
       ],
-      "imageDescription": "A standard UK yellow triangular warning sign showing a black lightning bolt, indicating danger of electricity",
       "correctAnswer": 1,
       "explanation": "Yellow triangular signs with black borders are used to warn people of potential hazards or dangers",
-      "id": "sc-im-0053"
+      "id": "sc-im-0053",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "An Incident Log is used to record chronologically all significant events, observations, and actions taken by the operator during a shift",
-      "question": "What is the name of this document used by CCTV operators to record chronological events?",
-      "imageAlt": "A logbook with columns for Date, Time, Incident Details, and Action Taken",
+      "question": "A page from a security control room incident logbook with handwritten entries detailing times and events. What is the name of this document used by CCTV operators to record chronological events?",
       "options": [
         "Subject Access Log",
         "Maintenance Schedule",
         "Incident Log",
         "Visitor Registration Form"
       ],
-      "type": "image_question",
-      "imageDescription": "A page from a security control room incident logbook with handwritten entries detailing times and events",
+      "type": "multiple_choice",
       "correctAnswer": 2,
-      "id": "sc-im-0054"
+      "id": "sc-im-0054",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "IP (Internet Protocol) cameras use RJ45 connectors to transmit data over a computer network",
-      "imageDescription": "A close-up of a standard RJ45 Ethernet connector plug, often used for IP CCTV cameras",
       "correctAnswer": 0,
       "options": [
         "IP (Internet Protocol) system",
@@ -5894,25 +5839,24 @@
         "Wireless Analogue system",
         "Fiber Optic only system"
       ],
-      "type": "image_question",
-      "question": "The use of this connector indicates that the CCTV camera is part of which type of system?",
-      "imageAlt": "A clear plastic RJ45 network connector at the end of a blue Ethernet cable",
-      "id": "sc-im-0055"
+      "type": "multiple_choice",
+      "question": "A close-up of a standard RJ45 Ethernet connector plug, often used for IP CCTV cameras. The use of this connector indicates that the CCTV camera is part of which type of system?",
+      "id": "sc-im-0055",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "DSE regulations recommend that the top of the monitor screen should be at or slightly below eye level to prevent neck strain",
-      "imageAlt": "A diagram of a person sitting at a desk with an arrow pointing to the top of the monitor",
-      "question": "According to DSE guidelines, at what height should the operator's eye level meet the monitor?",
-      "type": "image_question",
+      "question": "A Health and Safety diagram showing a person at a workstation with a dotted line indicating eye level meeting the top of the screen. According to DSE guidelines, at what height should the operator's eye level meet the monitor?",
+      "type": "multiple_choice",
       "options": [
         "At waist height",
         "Above the head looking up",
         "At the very bottom of the screen",
         "At or slightly below eye level"
       ],
-      "imageDescription": "A Health and Safety diagram showing a person at a workstation with a dotted line indicating eye level meeting the top of the screen",
       "correctAnswer": 3,
-      "id": "sc-im-0056"
+      "id": "sc-im-0056",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -5921,73 +5865,68 @@
         "No entry for pedestrians",
         "First aid post location"
       ],
-      "type": "image_question",
-      "question": "If an operator sees a person entering a construction site without the equipment shown on this sign, what is occurring?",
-      "imageAlt": "A blue circular sign with a white silhouette of a person wearing a hard hat",
+      "type": "multiple_choice",
+      "question": "A blue circular mandatory sign showing a white icon of a head wearing a safety helmet. If an operator sees a person entering a construction site without the equipment shown on the sign, what is occurring?",
       "correctAnswer": 1,
-      "imageDescription": "A blue circular mandatory sign showing a white icon of a head wearing a safety helmet",
       "explanation": "Blue circular signs indicate mandatory actions that must be taken, such as wearing specific safety gear",
-      "id": "sc-im-0057"
+      "id": "sc-im-0057",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "A 'Privacy Mask' or 'Privacy Zone' is used to digitally block out areas where people have a high expectation of privacy, such as bedroom windows",
       "correctAnswer": 2,
-      "imageDescription": "A view of a residential street on a CCTV monitor with a black digital block covering a window of a",
       "options": [
         "Digital Zoom area",
         "Motion Detection zone digital mask",
         "Privacy Masking",
         "Signal Loss indicator"
       ],
-      "type": "image_question",
-      "question": "What feature is being used on this monitor to protect the privacy of residents in their homes?",
-      "imageAlt": "A CCTV monitor screen showing a street, with a black rectangle covering a specific window",
-      "id": "sc-im-0058"
+      "type": "multiple_choice",
+      "question": "A view of a residential street on a CCTV monitor with a black digital block covering a window of a. What feature is being used on this monitor to protect the privacy of residents in their homes?",
+      "id": "sc-im-0058",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What is the most important piece of information an operator must check on this card to ensure they are working legally?",
-      "imageAlt": "A blue SIA CCTV Operator licence showing an expiry date",
+      "question": "A view of an SIA CCTV (Public Space Surveillance) licence with the expiry date clearly highlighted. What is the most important piece of information an operator must check on this card to ensure they are working legally?",
       "options": [
         "The licence expiry date",
         "The operator's home address",
         "The National Insurance number personally",
         "The payroll reference number"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 0,
-      "imageDescription": "A view of an SIA CCTV (Public Space Surveillance) licence with the expiry date clearly highlighted",
       "explanation": "Operators must check their SIA licence regularly to ensure it is valid/current; working with an expired licence is a criminal offence",
-      "id": "sc-im-0059"
+      "id": "sc-im-0059",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "Bullet cameras are named for their cylindrical shape and are typically used for fixed views in specific directions",
       "correctAnswer": 1,
-      "imageDescription": "A standard outdoor cylindrical 'bullet' style CCTV camera with a sun shield",
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Dome camera",
         "Bullet camera",
         "Covert camera covertly",
         "Corner mount camera"
       ],
-      "imageAlt": "A cylindrical, long-bodied camera mounted on a wall",
-      "question": "What is the common industry name for the style of camera shown in this image?",
-      "id": "sc-im-0060"
+      "question": "A standard outdoor cylindrical 'bullet' style CCTV camera with a sun shield. What is the common industry name for the style of camera shown ?",
+      "id": "sc-im-0060",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "While patrolling a secure server room via CCTV, you see this sign on a cabinet. What hazard does it warn of?",
-      "type": "image_question",
+      "question": "A standard UK health and safety warning sign: a yellow equilateral triangle with a black border and a black lightning bolt in the centre. While patrolling a secure server room via CCTV, you see the sign on a cabinet. What hazard does it warn of?",
+      "type": "multiple_choice",
       "correctAnswer": 2,
       "explanation": "The yellow triangle indicates a warning, and the lightning bolt symbol warns of a risk of electric shock",
-      "imageDescription": "A standard UK health and safety warning sign: a yellow equilateral triangle with a black border and a black lightning bolt in the centre",
-      "imageAlt": "Yellow triangular sign with a black lightning bolt symbol",
       "options": [
         "Trip hazard",
         "Flammable materials",
         "Risk of electric shock",
         "Biohazard present"
       ],
-      "id": "sc-im-0061"
+      "id": "sc-im-0061",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 0,
@@ -5997,12 +5936,11 @@
         "Home Office Surveillance Dept",
         "British Security Industry Association"
       ],
-      "imageAlt": "The official logo of the Information Commissioner's Office",
-      "imageDescription": "The logo of the ICO (Information Commissioner's Office), featuring the letters 'ico.' in a specific font and blue/teal colour scheme",
       "explanation": "The Information Commissioner's Office (ICO) is the UK's independent body set up to uphold information rights and data privacy",
-      "question": "CCTV operators must follow codes of practice issued by which regulatory body, represented by this logo?",
-      "type": "image_question",
-      "id": "sc-im-0062"
+      "question": "The logo of the ICO (Information Commissioner's Office), featuring the letters 'ico.' in a specific font and blue/teal colour scheme. CCTV operators must follow codes of practice issued by which regulatory body, represented by this logo?",
+      "type": "multiple_choice",
+      "id": "sc-im-0062",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 3,
@@ -6012,19 +5950,16 @@
         "Covert pinhole camera",
         "Static or Fixed camera"
       ],
-      "imageAlt": "A traditional rectangular CCTV camera body on a fixed wall bracket",
-      "imageDescription": "A professional box-style CCTV camera mounted on a fixed metal bracket on an external brick wall, pointing at a doorway. It has no visible motors for movement",
       "explanation": "A 'Static' or 'Fixed' camera is mounted in a stationary position to view a specific, unchanging area",
-      "question": "What type of camera is shown in this image, which remains pointed at a specific target area?",
-      "type": "image_question",
-      "id": "sc-im-0063"
+      "question": "A professional box-style CCTV camera mounted on a fixed metal bracket on an external brick wall, pointing at a doorway. It has no visible motors for movement. What type of camera is shown , which remains pointed at a specific target area?",
+      "type": "multiple_choice",
+      "id": "sc-im-0063",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "question": "If an operator sees a contractor entering a warehouse without the gear shown on this sign, what are they failing to do?",
+      "type": "multiple_choice",
+      "question": "A mandatory blue circular safety sign featuring a white pictogram of a person wearing a high-visibility waistcoat. If an operator sees a contractor entering a warehouse without the gear shown on the sign, what are they failing to do?",
       "explanation": "Health and Safety signs that are blue and circular indicate mandatory actions that must be carried out",
-      "imageDescription": "A mandatory blue circular safety sign featuring a white pictogram of a person wearing a high-visibility waistcoat",
-      "imageAlt": "A blue circular sign with a white symbol of a person wearing a high-visibility vest",
       "options": [
         "Warning: High-visibility clothing area",
         "Mandatory: High-visibility clothing must be worn",
@@ -6032,13 +5967,13 @@
         "Emergency: First aid kit location"
       ],
       "correctAnswer": 1,
-      "id": "sc-im-0064"
+      "id": "sc-im-0064",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "An operator sees a car stopped in an area marked with this sign. What does the sign mean?",
-      "type": "image_question",
+      "question": "A standard UK road and car park sign: a blue square with a large white capital letter 'P' in the center. An operator sees a car stopped in an area marked with the sign. What does the sign mean?",
+      "type": "multiple_choice",
       "correctAnswer": 0,
-      "imageDescription": "A standard UK road and car park sign: a blue square with a large white capital letter 'P' in the center",
       "explanation": "The blue 'P' sign indicates a designated parking area where vehicles are permitted to park",
       "options": [
         "Parking is permitted",
@@ -6046,27 +5981,25 @@
         "Police station nearby",
         "Petrol station ahead"
       ],
-      "imageAlt": "A square blue sign with a large white letter P",
-      "id": "sc-im-0065"
+      "id": "sc-im-0065",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 1,
       "explanation": "A Privacy Impact Assessment (PIA) or Data Protection Impact Assessment (DPIA) must be conducted before installing new cameras to justify their use",
-      "imageDescription": "A formal document header with the title 'Privacy Impact Assessment' followed by sections for 'System Purpose' and 'Privacy Risks'",
-      "imageAlt": "A document header titled 'Privacy Impact Assessment - New Camera Installation'",
       "options": [
         "When a crime is committed",
         "Before installing a new CCTV system",
         "Only when requested by the Police",
         "After a subject access request is made"
       ],
-      "question": "When should the document shown in this image be completed by a CCTV manager?",
-      "type": "image_question",
-      "id": "sc-im-0066"
+      "question": "A formal document header with the title 'Privacy Impact Assessment' followed by sections for 'System Purpose' and 'Privacy Risks'. When should the document shown be completed by a CCTV manager?",
+      "type": "multiple_choice",
+      "id": "sc-im-0066",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 2,
-      "imageDescription": "A close-up view of a CCTV camera lens showing two silver adjustment pins or screws labelled 'W-T' (Wide-Tele) and 'N-F' (Near-Far)",
       "explanation": "A 'Varifocal' lens allows the installer to manually adjust the focal length (zoom) and focus to frame the scene perfectly",
       "options": [
         "Fixed lens",
@@ -6074,14 +6007,13 @@
         "Varifocal lens",
         "Auto-iris lens"
       ],
-      "imageAlt": "Close up of a camera lens with two manual adjustment screws labelled 'Tele/Wide' and 'Near/Far'",
-      "question": "The presence of these two manual adjustment screws on a lens identifies it as which type?",
-      "type": "image_question",
-      "id": "sc-im-0067"
+      "question": "A close-up view of a CCTV camera lens showing two silver adjustment pins or screws labelled 'W-T' (Wide-Tele) and 'N-F' (Near-Far). The presence of these two manual adjustment screws on a lens identifies it as which type?",
+      "type": "multiple_choice",
+      "id": "sc-im-0067",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 0,
-      "imageAlt": "A template for a CCTV Incident Log with columns for Date, Time, Description, and Operator Name",
       "options": [
         "Incident Log",
         "Visitor Sign-in Sheet",
@@ -6089,14 +6021,13 @@
         "DSE Assessment Form"
       ],
       "explanation": "Under the Data Protection Act, an Incident Log must be kept to record all significant events, including the theft of a vehicle",
-      "imageDescription": "A blank paper or digital form with headings: 'Incident Log', 'Time of Event', 'Camera Number', and 'Action Taken'",
-      "question": "Which document is an operator most likely to use to record the details of a vehicle theft they witnessed on screen?",
-      "type": "image_question",
-      "id": "sc-im-0068"
+      "question": "A blank paper or digital form with headings: 'Incident Log', 'Time of Event', 'Camera Number', and 'Action Taken'. Which document is an operator most likely to use to record the details of a vehicle theft they witnessed on screen?",
+      "type": "multiple_choice",
+      "id": "sc-im-0068",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 2,
-      "imageAlt": "A CCTV telemetry keyboard featuring a 3-axis joystick and numeric keypad",
       "options": [
         "Changing the monitor brightness",
         "Entering the site PIN code",
@@ -6104,10 +6035,10 @@
         "Editing recorded video footage"
       ],
       "explanation": "A joystick controller is used to operate PTZ (Pan, Tilt, Zoom) cameras, allowing the operator to follow a person of interest",
-      "imageDescription": "A specialized CCTV control unit with a joystick on the right side and several buttons on the left for selecting camera numbers",
-      "question": "What is the primary use of the joystick on this CCTV control equipment?",
-      "type": "image_question",
-      "id": "sc-im-0069"
+      "question": "A specialized CCTV control unit with a joystick on the right side and several buttons on the left for selecting camera numbers. What is the primary use of the joystick on this CCTV control equipment?",
+      "type": "multiple_choice",
+      "id": "sc-im-0069",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -6116,33 +6047,29 @@
         "Mandatory: Use mobile phones here",
         "Prohibited: No mobile phones allowed"
       ],
-      "imageAlt": "A red circular sign with a diagonal line through a black mobile phone silhouette",
-      "imageDescription": "A prohibition sign featuring a red circle with a red diagonal line over a black pictogram of a mobile phone",
       "explanation": "A red circle with a slash indicates a prohibition. Here, it prohibits the use of mobile phones in a specific sensitive area",
       "correctAnswer": 3,
-      "type": "image_question",
-      "question": "A simple random sample of 500 households in a large town was selected and it was found that the population of households was 20,000 . The average size of the 500 households was 4.2 individuals. The population mean household size is? O A. 4.2 OB. unknown and cannot be estimated O c. 42 O D. unknown but can be estimated from the sample mean",
-      "id": "sc-im-0070"
+      "type": "multiple_choice",
+      "question": "A prohibition sign featuring a red circle with a red diagonal line over a black pictogram of a mobile phone. A simple random sample of 500 households in a large town was selected and it was found that the population of households was 20,000 . The average size of the 500 households was 4.2 individuals. The population mean household size is? O A. 4.2 OB. unknown and cannot be estimated O c. 42 O D. unknown but can be estimated from the sample mean?",
+      "id": "sc-im-0070",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "Standard deviation is a measure of spread for numerical data. To which of the following variables would it NOT be appropriate to apply standard deviation?",
-      "type": "image_question",
+      "question": "Four graphs labeled A, B, C, and D. Graph A shows a left-skewed histogram. Graph B shows a normal distribution (symmetric). Graph C shows a right-skewed histogram. Graph D is a bar chart representing eye colors (Brown, Blue, Green, Hazel). Standard deviation is a measure of spread for numerical data. To which of the following variables would it NOT be appropriate to apply standard deviation?",
+      "type": "multiple_choice",
       "correctAnswer": 1,
       "explanation": "Standard deviation is a measure of dispersion and can be calculated for numerical variables like weight or height. Eye colour is a categorical variable, and you cannot compute the average or spread in the same way as with numerical data",
-      "imageDescription": "Four graphs labeled A, B, C, and D. Graph A shows a left-skewed histogram. Graph B shows a normal distribution (symmetric). Graph C shows a right-skewed histogram. Graph D is a bar chart representing eye colors (Brown, Blue, Green, Hazel)",
-      "imageAlt": "A graph showing four different data distributions: skewed left, symmetric, skewed right, and categorical",
       "options": [
         "Numerical data and skewed distributions",
         "Categorical data like eye colour",
         "Numerical data with small sample sizes",
         "Numerical data with large sample sizes"
       ],
-      "id": "sc-im-0071"
+      "id": "sc-im-0071",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "Discrete data consists of specific, separate values (often integers) that are obtained by counting. Number of pets is a classic example",
-      "imageDescription": "Four images: 1. A bathroom scale showing a weight. 2. A tape measure showing height. 3. A digital clock showing time. 4. A cluster of three dogs",
-      "imageAlt": "Four images representing weight (scale), height (ruler), time (clock), and number of pets (dogs)",
       "options": [
         "The number of pets in a household",
         "The weight of a golden retriever",
@@ -6150,9 +6077,10 @@
         "The height of a cat"
       ],
       "correctAnswer": 0,
-      "type": "image_question",
-      "question": "Which of the following is an example of discrete data?",
-      "id": "sc-im-0072"
+      "type": "multiple_choice",
+      "question": "Four images: 1. A bathroom scale showing a weight. 2. A tape measure showing height. 3. A digital clock showing time. 4. A cluster of three dogs. Which of the following is an example of discrete data?",
+      "id": "sc-im-0072",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 2,
@@ -6162,42 +6090,39 @@
         "Warning of a potential hazard",
         "Safe condition or first aid"
       ],
-      "question": "What does the shape and colour of this health and safety sign indicate?",
-      "type": "image_question",
-      "imageDescription": "A standard health and safety warning sign: a yellow equilateral triangle with a black border and a black lightning bolt symbol in the center",
+      "question": "A standard health and safety warning sign: a yellow equilateral triangle with a black border and a black lightning bolt symbol in the center. What does the shape and colour of this health and safety sign indicate?",
+      "type": "multiple_choice",
       "explanation": "A yellow triangle with a black border and symbol is a warning sign, used to alert people to potential hazards",
-      "imageAlt": "A yellow triangle with a black border containing a black lightning bolt symbol",
-      "id": "sc-im-0073"
+      "id": "sc-im-0073",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A high-quality image of a modern PTZ dome CCTV camera mounted on a white ceiling, featuring a dark glass housing",
       "explanation": "PTZ stands for Pan, Tilt, and Zoom, which are the three movements this type of camera can perform remotely",
-      "imageAlt": "A dome-style CCTV camera mounted on a ceiling",
       "correctAnswer": 0,
-      "question": "This type of camera is often referred to as a 'PTZ' camera. What does PTZ stand for?",
+      "question": "A high-quality image of a modern PTZ dome CCTV camera mounted on a white ceiling, featuring a dark glass housing. This type of camera is often referred to as a 'PTZ' camera. What does PTZ stand for?",
       "options": [
         "Pan, Tilt and Zoom",
         "Primary Track and Zone",
         "Private Technical Zoom",
         "Power, Time and Zenith"
       ],
-      "type": "image_question",
-      "id": "sc-im-0074"
+      "type": "multiple_choice",
+      "id": "sc-im-0074",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "The Information Commissioner's Office (ICO) is the UK's independent body set up to uphold information rights and data privacy",
-      "imageAlt": "The logo of the Information Commissioner's Office (ICO)",
-      "imageDescription": "The official logo of the Information Commissioner's Office (UK), featuring the letters 'ico.' in a specific font",
-      "question": "Which regulator's code of practice must a CCTV operator follow regarding the processing of personal data?",
+      "question": "The official logo of the Information Commissioner's Office (UK), featuring the letters 'ico.' in a specific font. Which regulator's code of practice must a CCTV operator follow regarding the processing of personal data?",
       "options": [
         "Security Industry Authority (SIA)",
         "Information Commissioner's Office (ICO)",
         "Health and Safety Executive (HSE)",
         "Home Office Bureau"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 1,
-      "id": "sc-im-0075"
+      "id": "sc-im-0075",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 3,
@@ -6207,122 +6132,112 @@
         "Resting on the desk surface",
         "At or slightly below eye level"
       ],
-      "question": "According to Display Screen Equipment (DSE) regulations, what is the ideal height for a CCTV monitor?",
-      "type": "image_question",
-      "imageDescription": "A side-view diagram of a person sitting at a desk with a monitor. Option A is too high, B is too low, C is tilted away, and D shows the eye level hitting the top third of the screen",
+      "question": "A side-view diagram of a person sitting at a desk with a monitor. Option A is too high, B is too low, C is tilted away, and D shows the eye level hitting the top third of the screen. According to Display Screen Equipment (DSE) regulations, what is the ideal height for a CCTV monitor?",
+      "type": "multiple_choice",
       "explanation": "To prevent neck strain, the top of the monitor screen should be roughly at eye level, allowing a slight downward gaze",
-      "imageAlt": "A diagram showing a person sitting at a desk with four different monitor height options labeled A, B, C, and D",
-      "id": "sc-im-0076"
+      "id": "sc-im-0076",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 0,
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Subject Access Request",
         "Incident Report Form",
         "Police Evidence Receipt",
         "Daily Activity Log"
       ],
-      "question": "What is the name of the request being made when a member of the public asks to view CCTV footage of themselves?",
-      "imageDescription": "A close-up of a formal document header that clearly reads 'Subject Access Request' with fields for 'Name', 'Date', and 'Reason for Request'",
-      "imageAlt": "A document header titled 'Subject Access Request Form'",
+      "question": "A close-up of a formal document header that clearly reads 'Subject Access Request' with fields for 'Name', 'Date', and 'Reason for Request'. What is the name of the request being made when a member of the public asks to view CCTV footage of themselves?",
       "explanation": "A Subject Access Request (SAR) allows individuals to see the data (including CCTV footage) held about them",
-      "id": "sc-im-0077"
+      "id": "sc-im-0077",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 2,
-      "question": "This image shows a camera that is permanently fixed on a single field of view. What is it commonly called?",
+      "question": "A classic white bullet CCTV camera mounted on an external wall bracket, pointing in a single fixed direction. The image shows a camera that is permanently fixed on a single field of view. What is it commonly called?",
       "options": [
         "A PTZ camera",
         "A 360-degree camera",
         "A static camera",
         "A covert camera"
       ],
-      "type": "image_question",
-      "imageDescription": "A classic white bullet CCTV camera mounted on an external wall bracket, pointing in a single fixed direction",
+      "type": "multiple_choice",
       "explanation": "Static cameras are fixed on a specific view and do not move, making them ideal for monitoring entrances or specific assets",
-      "imageAlt": "A fixed 'bullet' style CCTV camera mounted on a bracket",
-      "id": "sc-im-0078"
+      "id": "sc-im-0078",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "A blue circular sign with a white symbol indicates a mandatory action that must be followed",
-      "imageAlt": "A blue circular sign showing white ear muffs",
-      "imageDescription": "A circular blue mandatory sign with a white graphic of ear defenders or ear muffs",
-      "question": "If an operator sees a technician entering a noisy plant room without the gear shown on this sign, what rule is being broken?",
+      "question": "A circular blue mandatory sign with a white graphic of ear defenders or ear muffs. If an operator sees a technician entering a noisy plant room without the gear shown on the sign, what rule is being broken?",
       "options": [
         "Ear protection is optional",
         "Ear protection must be worn",
         "No loud noises allowed",
         "Danger of high voltage"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 1,
-      "id": "sc-im-0079"
+      "id": "sc-im-0079",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "The text 'RIDDOR' displayed in large, bold, professional font on a plain background",
       "explanation": "The RIDDOR regulations require employers to report certain serious workplace accidents, diseases, and dangerous occurrences",
-      "imageAlt": "The acronym RIDDOR written in bold letters",
       "correctAnswer": 0,
-      "question": "In the context of health and safety, what does the acronym RIDDOR stand for?",
+      "question": "The text 'RIDDOR' displayed in large, bold, professional font on a plain background. In the context of health and safety, what does the acronym RIDDOR stand for?",
       "options": [
         "Reporting of Injuries, Diseases and Dangerous Occurrences Regulations",
         "Recording of Incidents, Damages and Daily Operational Reports",
         "Regulatory Inspections of Digital Data and Operational Records",
         "Review of Internal Data and Digital Operating Rules"
       ],
-      "type": "image_question",
-      "id": "sc-im-0080"
+      "type": "multiple_choice",
+      "id": "sc-im-0080",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 3,
-      "question": "What digital feature has been applied to the blacked-out areas on this monitor to comply with privacy laws?",
+      "question": "A screenshot of a CCTV feed looking at a residential street. Two specific windows on a house are obscured by solid black digital rectangles. What digital feature has been applied to the blacked-out areas on this monitor to comply with privacy laws?",
       "options": [
         "Digital Zoom",
         "Motion Detection Zone",
         "Video Loss Error",
         "Privacy Masking"
       ],
-      "type": "image_question",
-      "imageDescription": "A screenshot of a CCTV feed looking at a residential street. Two specific windows on a house are obscured by solid black digital rectangles",
+      "type": "multiple_choice",
       "explanation": "Privacy masking is a software feature used to black out or blur sensitive areas like private windows or keypad entries",
-      "imageAlt": "A CCTV monitor showing a street view with two black boxes covering specific windows of a",
-      "id": "sc-im-0081"
+      "id": "sc-im-0081",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 1,
-      "type": "image_question",
-      "question": "What type of specialized camera technology produced this image, allowing for detection in total darkness?",
+      "type": "multiple_choice",
+      "question": "A thermal imaging view of a person walking through a graveyard or park at night, where the person's body heat glows bright orange/yellow. What type of specialized camera technology produced the image, allowing for detection in total darkness?",
       "options": [
         "Low-light CMOS image",
         "Thermal image",
         "Ultraviolet image",
         "Black and white analogue image"
       ],
-      "imageDescription": "A thermal imaging view of a person walking through a graveyard or park at night, where the person's body heat glows bright orange/yellow",
-      "imageAlt": "An image of a person shown in bright yellow and orange against a dark purple background",
       "explanation": "Thermal cameras detect heat (infrared radiation) and are very effective for perimeter security in total darkness",
-      "id": "sc-im-0082"
+      "id": "sc-im-0082",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 2,
-      "question": "What is the legal category of this sign, which tells you what you must NOT do?",
+      "question": "A standard 'No Smoking' sign: a white circle with a red border and a diagonal red slash over a black cigarette with smoke. What is the legal category of the sign, which tells you what you must NOT do?",
       "options": [
         "A warning sign",
         "A mandatory sign",
         "A prohibition sign",
         "A safe condition sign"
       ],
-      "type": "image_question",
-      "imageDescription": "A standard 'No Smoking' sign: a white circle with a red border and a diagonal red slash over a black cigarette with smoke",
+      "type": "multiple_choice",
       "explanation": "A red circle with a slash or specific symbol inside indicates an action or item that is strictly prohibited",
-      "imageAlt": "A red circle with a diagonal red line through a black cigarette",
-      "id": "sc-im-0083"
+      "id": "sc-im-0083",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A close-up of a plastic tamper-evident evidence bag label, showing the 'Chain of Custody' section where multiple people sign for the item",
       "explanation": "The 'continuity of evidence' or 'chain of custody' ensures that evidence is tracked from the moment it is recorded until it reaches court",
-      "imageAlt": "A label on an evidence bag with spaces for 'Date', 'Time', and 'Signature'",
       "correctAnswer": 0,
       "options": [
         "Chain of Custody or Continuity of Evidence",
@@ -6330,88 +6245,83 @@
         "The Official Secrets Act Signature",
         "Operator Performance Review"
       ],
-      "question": "This document is used to track who has handled a piece of evidence. What is this process called?",
-      "type": "image_question",
-      "id": "sc-im-0084"
+      "question": "A close-up of a plastic tamper-evident evidence bag label, showing the 'Chain of Custody' section where multiple people sign for the item. This document is used to track who has handled a piece of evidence. What is this process called?",
+      "type": "multiple_choice",
+      "id": "sc-im-0084",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A blue circular sign with a white symbol of safety goggles",
       "options": [
         "Warning: Eye protection required",
         "No entry without safety glasses",
         "Mandatory: Wear eye protection",
         "First aid station for eyes"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 2,
-      "question": "What is the meaning of this specific health and safety sign shape and colour?",
-      "imageDescription": "A standard UK mandatory health and safety sign: a solid blue circle featuring a white graphic of safety eye protection goggles in the center",
+      "question": "A standard UK mandatory health and safety sign: a solid blue circle featuring a white graphic of safety eye protection goggles in the center. What is the meaning of this specific health and safety sign shape and colour?",
       "explanation": "The blue circle indicates a mandatory sign, meaning the action or equipment shown must be worn or followed",
-      "id": "sc-im-0085"
+      "id": "sc-im-0085",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "Cameras with Infrared (IR) illuminators can see in total darkness by projecting light invisible to the human eye",
       "correctAnswer": 0,
-      "question": "The small bulbs surrounding the lens on this camera indicate it has which feature?",
-      "imageDescription": "A close-up of a bullet-style CCTV camera lens surrounded by a circular array of small LED bulbs, which are the infrared illuminators for night vision",
-      "type": "image_question",
+      "question": "A close-up of a bullet-style CCTV camera lens surrounded by a circular array of small LED bulbs, which are the infrared illuminators for night vision. The small bulbs surrounding the lens on this camera indicate it has which feature?",
+      "type": "multiple_choice",
       "options": [
         "Infrared (night vision) capabilities",
         "Motion detection sensors",
         "Facial recognition lasers",
         "External microphone sensors"
       ],
-      "imageAlt": "A CCTV camera with a ring of small LED bulbs around the lens",
-      "id": "sc-im-0086"
+      "id": "sc-im-0086",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Data Protection Audit",
         "Operator Logbook",
         "Subject Access Request Form",
         "Maintenance Schedule"
       ],
-      "imageAlt": "A handwritten logbook with columns for Date, Time, Incident, and Signature",
       "explanation": "A logbook or incident report is the primary document used to record chronological events and observations during a shift",
-      "imageDescription": "A photo of an open paper logbook used in a control room, showing columns titled 'Date', 'Time', 'Incident Details', and 'Operator Name'",
-      "question": "Which document is shown here, used for recording daily activities and events?",
+      "question": "A photo of an open paper logbook used in a control room, showing columns titled 'Date', 'Time', 'Incident Details', and 'Operator Name'. Which document is , used for recording daily activities and events?",
       "correctAnswer": 1,
-      "id": "sc-im-0087"
+      "id": "sc-im-0087",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "The yellow triangle with a black border is a warning sign, alerting people to a potential hazard or danger",
-      "imageDescription": "A standard UK warning sign: a yellow equilateral triangle with a black border and a black lightning bolt symbol in the middle indicating high voltage",
-      "question": "In a CCTV control room, what does this category of sign represent?",
+      "question": "A standard UK warning sign: a yellow equilateral triangle with a black border and a black lightning bolt symbol in the middle indicating high voltage. In a CCTV control room, what does this category of sign represent?",
       "correctAnswer": 3,
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Mandatory action sign",
         "Prohibition sign",
         "Information sign",
         "Warning sign"
       ],
-      "imageAlt": "A yellow triangle with a black border and a black bolt of electricity",
-      "id": "sc-im-0088"
+      "id": "sc-im-0088",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Fixed lens",
         "Vari-focal lens",
         "Wide-angle lens",
         "Pinhole lens"
       ],
-      "imageAlt": "A CCTV camera lens with two toggle levers labeled 'Zoom' and 'Focus'",
       "explanation": "A vari-focal lens allows the operator or installer to manually adjust the focal length (zoom) and focus during setup",
       "correctAnswer": 1,
-      "question": "Which type of camera lens is shown in this image?",
-      "imageDescription": "A detailed view of a professional CCTV camera lens showing two manual adjustment levers or screws, one clearly labeled 'Tele/Wide' (Zoom) and the other 'Near/Far' (Focus)",
-      "id": "sc-im-0089"
+      "question": "A detailed view of a professional CCTV camera lens showing two manual adjustment levers or screws, one clearly labeled 'Tele/Wide' (Zoom) and the other 'Near/Far' (Focus). Which type of camera lens is shown ?",
+      "id": "sc-im-0089",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "The text 'Data Protection Act 2018' presented in a formal font, representing the primary legislation for CCTV operators in the UK",
-      "question": "This logo represents the legislation that protects personal data. What is the common name for the EU version often paired with UK law?",
+      "question": "The text 'Data Protection Act 2018' presented in a formal font, representing the primary legislation for CCTV operators in the UK. This logo represents the legislation that protects personal data. What is the common name for the EU version often paired with UK law?",
       "correctAnswer": 0,
       "explanation": "The UK General Data Protection Regulation (GDPR) and the Data Protection Act 2018 are the primary laws governing personal data and CCTV",
       "options": [
@@ -6420,13 +6330,12 @@
         "Freedom of Information Act 2000",
         "Private Security Industry Act 2001"
       ],
-      "imageAlt": "A logo with the words 'Data Protection Act 2018'",
-      "type": "image_question",
-      "id": "sc-im-0090"
+      "type": "multiple_choice",
+      "id": "sc-im-0090",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageAlt": "A green rectangular sign with a white figure running through an open doorway",
+      "type": "multiple_choice",
       "options": [
         "Warning sign",
         "Prohibition sign",
@@ -6434,29 +6343,27 @@
         "Mandatory sign"
       ],
       "explanation": "A green rectangular sign indicates a safe condition, such as an emergency exit, first aid, or an assembly point",
-      "imageDescription": "A standard UK safe condition sign: a green rectangle with a white pictogram of a person running toward a door with a directional arrow",
-      "question": "What type of health and safety information does this sign provide?",
+      "question": "A standard UK safe condition sign: a green rectangle with a white pictogram of a person running toward a door with a directional arrow. What type of health and safety information does the sign provide?",
       "correctAnswer": 2,
-      "id": "sc-im-0091"
+      "id": "sc-im-0091",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "Monitors should be positioned so the top of the screen is at or slightly below eye level to reduce neck and eye strain",
-      "imageDescription": "A side-view diagram of a CCTV operator sitting at a desk, showing 'Screen A' too high, 'Screen B' at eye level, and 'Screen C' too low. A line indicates the correct ergonomic viewing angle",
-      "question": "According to DSE (Display Screen Equipment) guidelines, which monitor position is ergonomically correct?",
+      "question": "A side-view diagram of a CCTV operator sitting at a desk, showing 'Screen A' too high, 'Screen B' at eye level, and 'Screen C' too low. A line indicates the correct ergonomic viewing angle. According to DSE (Display Screen Equipment) guidelines, which monitor position is ergonomically correct?",
       "correctAnswer": 3,
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Position A (Above eye level)",
         "Position C (Laps level)",
         "Directly touching the keyboard",
         "Position B (Top of screen at eye level)"
       ],
-      "imageAlt": "An operator sitting at a desk with several monitors at different heights",
-      "id": "sc-im-0092"
+      "id": "sc-im-0092",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageAlt": "A silver twist-lock connector at the end of a thick black cable",
+      "type": "multiple_choice",
       "options": [
         "BNC connector",
         "RJ45 connector",
@@ -6465,28 +6372,26 @@
       ],
       "explanation": "BNC (Bayonet Neill-Concelman) connectors are the standard type of connector used for analogue video signals on coaxial cables",
       "correctAnswer": 0,
-      "question": "What is the name of this common CCTV video cable connector?",
-      "imageDescription": "A close-up of a BNC connector, which is a silver metal twist-lock plug commonly found on the end of coaxial cables used for CCTV video signals",
-      "id": "sc-im-0093"
+      "question": "A close-up of a BNC connector, which is a silver metal twist-lock plug commonly found on the end of coaxial cables used for CCTV video signals. What is the name of this common CCTV video cable connector?",
+      "id": "sc-im-0093",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A ceiling-mounted camera inside a dark plastic semi-sphere",
       "options": [
         "Bullet camera",
         "Covert camera",
         "Dome camera",
         "Thermal camera"
       ],
-      "type": "image_question",
-      "imageDescription": "A ceiling-mounted 'dome' camera with a smoked/tinted transparent semi-spherical cover that hides the direction of the lens",
-      "question": "What is the name of this type of camera, commonly used for its discreet appearance?",
+      "type": "multiple_choice",
+      "question": "A ceiling-mounted 'dome' camera with a smoked/tinted transparent semi-spherical cover that hides the direction of the lens. What is the name of this type of camera, commonly used for its discreet appearance?",
       "correctAnswer": 2,
       "explanation": "Dome cameras are preferred for indoor use because their shape makes it difficult for people to see exactly where the lens is pointing",
-      "id": "sc-im-0094"
+      "id": "sc-im-0094",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageAlt": "A red circle with a diagonal red line over a black silhouette of a camera",
+      "type": "multiple_choice",
       "options": [
         "Mandatory: Use cameras here",
         "Prohibition: No photography or filming",
@@ -6495,29 +6400,27 @@
       ],
       "explanation": "Red circular signs with a diagonal slash indicate a prohibition, meaning an action is strictly forbidden",
       "correctAnswer": 1,
-      "imageDescription": "A prohibition sign: a red outer circle with a diagonal red bar across the center, over a black icon of a handheld camera",
-      "question": "What does this sign mean in the context of a secure facility?",
-      "id": "sc-im-0095"
+      "question": "A prohibition sign: a red outer circle with a diagonal red bar across the center, over a black icon of a handheld camera. What does the sign mean in the context of a secure facility?",
+      "id": "sc-im-0095",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A rack-mounted metal box with blinking lights and several hard drive slots",
       "options": [
         "Monitor Controller",
         "Video Matrix",
         "Joystick Console",
         "Digital Video Recorder (DVR) or NVR"
       ],
-      "type": "image_question",
-      "question": "In a CCTV system, what is the primary function of the hardware shown in this image?",
-      "imageDescription": "A photo of a 19-inch rack-mounted Network Video Recorder (NVR) showing blinking status lights and the presence of internal hard drive bays",
+      "type": "multiple_choice",
+      "question": "A photo of a 19-inch rack-mounted Network Video Recorder (NVR) showing blinking status lights and the presence of internal hard drive bays. In a CCTV system, what is the primary function of the hardware shown ?",
       "correctAnswer": 3,
       "explanation": "The 'Control' or 'Server' unit is where the hard drives are located to store recorded footage for later retrieval",
-      "id": "sc-im-0096"
+      "id": "sc-im-0096",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A standard UK 'No Photography' or 'No CCTV' prohibition sign showing a camera icon inside a red circle with a slash",
-      "type": "image_question",
-      "question": "According to the Health and Safety (Safety Signs and Signals) Regulations 1996, what does this specific sign type indicate?",
+      "type": "multiple_choice",
+      "question": "A standard UK 'No Photography' or 'No CCTV' prohibition sign showing a camera icon inside a red circle with a slash. According to the Health and Safety (Safety Signs and Signals) Regulations 1996, what does this specific sign type indicate?",
       "options": [
         "Mandatory Action",
         "Warning of Danger",
@@ -6526,8 +6429,8 @@
       ],
       "correctAnswer": 2,
       "explanation": "Prohibition signs are circular with a red border and a diagonal line, indicating actions that are not allowed",
-      "imageAlt": "A circular sign with a red border and a diagonal red slash over a black silhouette of a camera",
-      "id": "sc-im-0097"
+      "id": "sc-im-0097",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 0,
@@ -6537,27 +6440,25 @@
         "The Freedom of Information Act 2000",
         "The Private Security Industry Act 2001"
       ],
-      "question": "Which piece of legislation gives an individual the right to submit this type of written request?",
-      "type": "image_question",
-      "imageDescription": "A generic template of a letter titled 'Subject Access Request' with the text body asking for access to footage from a specific date",
-      "imageAlt": "A formal letter addressed to a Data Protection Officer requesting CCTV footage",
+      "question": "A generic template of a letter titled 'Subject Access Request' with the text body asking for access to footage from a specific date. Which piece of legislation gives an individual the right to submit this type of written request?",
+      "type": "multiple_choice",
       "explanation": "Subject Access Requests (SARs) allow individuals to request a copy of their personal data held by an organisation",
-      "id": "sc-im-0098"
+      "id": "sc-im-0098",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What is the primary purpose of the equipment shown in this image?",
-      "type": "image_question",
+      "question": "A professional CCTV keyboard controller with a prominent joystick used by operators to move cameras manually. What is the primary purpose of the equipment shown ?",
+      "type": "multiple_choice",
       "options": [
         "Digital Video Recorder (DVR)",
         "PTZ (Pan, Tilt, Zoom) Controller",
         "Video Matrix Switcher",
         "Monitor Mounting Bracket"
       ],
-      "imageDescription": "A professional CCTV keyboard controller with a prominent joystick used by operators to move cameras manually",
       "correctAnswer": 1,
       "explanation": "A PTZ (Pan, Tilt, Zoom) controller allows the operator to move the camera in four directions and adjust the focus or magnification",
-      "imageAlt": "A CCTV joystick controller board with a 3-axis joystick and numbered buttons",
-      "id": "sc-im-0099"
+      "id": "sc-im-0099",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 3,
@@ -6567,30 +6468,27 @@
         "A Maintenance Fault Log",
         "An Incident Log Book"
       ],
-      "question": "What is the specific name of this document, used to record significant events such as a spotted theft or assault?",
-      "type": "image_question",
-      "imageDescription": "A close-up of a structured logbook page used in a control room to record specific criminal or safety incidents",
-      "imageAlt": "A paper-based logbook with columns for Date, Time, Camera Number, Incident Details, and Operator Signature",
+      "question": "A close-up of a structured logbook page used in a control room to record specific criminal or safety incidents. What is the specific name of this document, used to record significant events such as a spotted theft or assault?",
+      "type": "multiple_choice",
       "explanation": "The 'Incident Log' or 'Incidents Page' is where significant events are documented for legal and operational audit trails",
-      "id": "sc-im-0100"
+      "id": "sc-im-0100",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A square red sign with a white icon of a fire extinguisher and a small flame",
       "explanation": "This symbol represents a fire extinguisher, which is categorized as Fire Fighting Equipment",
-      "imageDescription": "A standard UK fire safety sign: red square background with a white pictogram of a fire extinguisher",
       "options": [
         "Emergency Exit Route",
         "Fire Fighting Equipment",
         "Danger: Flammable Material",
         "First Aid Point"
       ],
-      "type": "image_question",
-      "question": "In a control room environment, what is the meaning of this category of safety sign?",
+      "type": "multiple_choice",
+      "question": "A standard UK fire safety sign: red square background with a white pictogram of a fire extinguisher. In a control room environment, what is the meaning of this category of safety sign?",
       "correctAnswer": 1,
-      "id": "sc-im-0101"
+      "id": "sc-im-0101",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A yellow sign with a camera icon and text saying 'CCTV in Operation'",
       "explanation": "The Data Protection Act requires signs to be placed in areas monitored by CCTV to inform the public",
       "options": [
         "To comply with the Data Protection Act",
@@ -6598,14 +6496,13 @@
         "To signal to police that a crime is happening",
         "To test if the camera is visible to the public"
       ],
-      "question": "Why is it a legal requirement for a CCTV operator's employer to display this sign in areas where cameras are active?",
-      "type": "image_question",
-      "imageDescription": "A standard UK yellow and black CCTV notification sign that includes details of the purpose and the operator's contact info",
+      "question": "A standard UK yellow and black CCTV notification sign that includes details of the purpose and the operator's contact info. Why is it a legal requirement for a CCTV operator's employer to display the sign in areas where cameras are active?",
+      "type": "multiple_choice",
       "correctAnswer": 0,
-      "id": "sc-im-0102"
+      "id": "sc-im-0102",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A cylindrical-shaped camera with a small sunshield on top",
       "explanation": "A bullet camera is characterized by its long, cylindrical shape and is typically used for fixed-angle outdoor surveillance",
       "options": [
         "Dome Camera",
@@ -6613,41 +6510,39 @@
         "Bullet Camera",
         "PTZ Camera"
       ],
-      "type": "image_question",
-      "question": "What is the common name for the type of camera shown in this image?",
-      "imageDescription": "A classic bullet-style CCTV camera mounted on a bracket against a brick wall",
+      "type": "multiple_choice",
+      "question": "A classic bullet-style CCTV camera mounted on a bracket against a brick wall. What is the common name for the type of camera shown ?",
       "correctAnswer": 2,
-      "id": "sc-im-0103"
+      "id": "sc-im-0103",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "An SIA Licence card inside a plastic arm-band holder",
       "explanation": "An individual's UK SIA licence must be worn where it is clearly visible while they are carrying out licensable activities",
       "correctAnswer": 1,
-      "imageDescription": "A photograph of a blue and white SIA Public Space Surveillance (CCTV) licence disc inside a clear arm-mount holder",
-      "question": "According to the Private Security Industry Act, where should this licence be kept while an operator is on duty?",
-      "type": "image_question",
+      "question": "A photograph of a blue and white SIA Public Space Surveillance (CCTV) licence disc inside a clear arm-mount holder. According to the Private Security Industry Act, where should this licence be kept while an operator is on duty?",
+      "type": "multiple_choice",
       "options": [
         "In a wallet or pocket at all times",
         "In a visible position (e.g., on an arm-band or lanyard)",
         "Left in a secure locker at the workstation",
         "Displayed on the wall of the control room"
       ],
-      "id": "sc-im-0104"
+      "id": "sc-im-0104",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What category of health and safety sign is represented by this triangular shape and yellow colour?",
-      "type": "image_question",
+      "question": "A 'Danger of Death' or 'Risk of Electric Shock' warning sign found near electrical equipment in a control room. What category of health and safety sign is represented by this triangular shape and yellow colour?",
+      "type": "multiple_choice",
       "options": [
         "Prohibition Sign",
         "Mandatory Sign",
         "Safe Condition Sign",
         "Warning Sign"
       ],
-      "imageDescription": "A 'Danger of Death' or 'Risk of Electric Shock' warning sign found near electrical equipment in a control room",
       "correctAnswer": 3,
       "explanation": "Warning signs are triangular with a yellow background and a black border, used to alert people to potential hazards",
-      "imageAlt": "A triangular yellow sign with a black border and a lightning bolt symbol",
-      "id": "sc-im-0105"
+      "id": "sc-im-0105",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 2,
@@ -6657,154 +6552,142 @@
         "A footrest for ergonomic support",
         "A decorative floor mat"
       ],
-      "question": "What is the name of this piece of ergonomic equipment used to prevent fatigue in a CCTV control room?",
-      "type": "image_question",
-      "imageDescription": "An ergonomic diagram showing a workstation setup with a footrest under the desk to support the user's posture",
-      "imageAlt": "A diagram of a person sitting at a desk with an angled wedge under their feet",
+      "question": "An ergonomic diagram showing a workstation setup with a footrest under the desk to support the user's posture. What is the name of this piece of ergonomic equipment used to prevent fatigue in a CCTV control room?",
+      "type": "multiple_choice",
       "explanation": "Operators should use a footrest and adjustable chair to ensure their legs are at a comfortable 90-degree angle to prevent strain",
-      "id": "sc-im-0106"
+      "id": "sc-im-0106",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A piece of rack-mounted hardware with 'NVR' printed on the front and several Ethernet ports",
       "explanation": "An NVR (Network Video Recorder) is designed specifically to record footage from IP (Internet Protocol) cameras across a network",
       "correctAnswer": 0,
-      "imageDescription": "A professional network video recorder unit showing the front panel with LED status lights and the rear with RJ45 ports",
-      "question": "What is the name of this device, used for recording and storing footage from digital IP cameras?",
-      "type": "image_question",
+      "question": "A professional network video recorder unit showing the front panel with LED status lights and the rear with RJ45 ports. What is the name of this device, used for recording and storing footage from digital IP cameras?",
+      "type": "multiple_choice",
       "options": [
         "Network Video Recorder (NVR)",
         "Analogue Monitor Switcher",
         "Uninterruptible Power Supply (UPS)",
         "Hard Drive Shredder"
       ],
-      "id": "sc-im-0107"
+      "id": "sc-im-0107",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 2,
-      "imageDescription": "A close-up of a CCTV disc evidence bag showing a tamper-evident seal that has been applied across the opening",
-      "question": "What is the purpose of the security seal shown on this evidence bag?",
-      "type": "image_question",
+      "question": "A close-up of a CCTV disc evidence bag showing a tamper-evident seal that has been applied across the opening. What is the purpose of the security seal shown on this evidence bag?",
+      "type": "multiple_choice",
       "options": [
         "To make the bag waterproof",
         "To identify which operator burnt the disc",
         "To prove the evidence has not been tampered with",
         "To indicate the date the footage was recorded"
       ],
-      "imageAlt": "A plastic evidence bag with a red security seal that says 'VOID' if peeled",
       "explanation": "Tamper-evident seals are used to ensure that evidence has not been interfered with during the chain of custody",
-      "id": "sc-im-0108"
+      "id": "sc-im-0108",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "Blue circular signs indicate mandatory actions that must be followed according to health and safety regulations",
-      "question": "Under health and safety sign regulations, what does this blue circular sign represent?",
-      "imageAlt": "A blue circular sign with a white symbol of ear defenders",
+      "question": "A standard UK mandatory health and safety sign: a solid blue circle with a white pictogram of person wearing ear protection. Under health and safety sign regulations, what does the sign represent?",
       "options": [
         "Warning of a hazard",
         "Mandatory requirement",
         "Prohibited action",
         "Safe condition information"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 1,
-      "imageDescription": "A standard UK mandatory health and safety sign: a solid blue circle with a white pictogram of person wearing ear protection",
-      "id": "sc-im-0109"
+      "id": "sc-im-0109",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "The front cover of a UK Parliament Act titled 'Private Security Industry Act 2001' with the Royal Coat of Arms at the top",
       "correctAnswer": 0,
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Private Security Industry Act 2001",
         "Data Protection Act 2018",
         "Human Rights Act 1998",
         "Freedom of Information Act 2000"
       ],
-      "imageAlt": "A document header titled 'Private Security Industry Act 2001'",
-      "question": "Which piece of legislation established the SIA and the requirement for CCTV operators to be licensed?",
+      "question": "The front cover of a UK Parliament Act titled 'Private Security Industry Act 2001' with the Royal Coat of Arms at the top. Which piece of legislation established the SIA and the requirement for CCTV operators to be licensed?",
       "explanation": "The PSIA 2001 is the primary legislation that established the SIA and the licensing framework for the private security industry",
-      "id": "sc-im-0110"
+      "id": "sc-im-0110",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A high-speed dome CCTV camera mounted on a wall bracket with overlaid arrows indicating rotation and up/down movement",
       "correctAnswer": 2,
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Fixed lens camera",
         "Static bullet camera",
         "PTZ (Pan-Tilt-Zoom) camera",
         "Thermal imaging camera"
       ],
-      "imageAlt": "A dome camera with 'Pan-Tilt-Zoom' functional arrows around it",
-      "question": "What type of camera is shown in the image that allows an operator to remotely move its field of vision?",
+      "question": "A high-speed dome CCTV camera mounted on a wall bracket with overlaid arrows indicating rotation and up/down movement. What type of camera is shown that allows an operator to remotely move its field of vision?",
       "explanation": "A PTZ (Pan-Tilt-Zoom) camera allows the operator to move the lens horizontally, vertically, and adjust the focal length",
-      "id": "sc-im-0111"
+      "id": "sc-im-0111",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "Correct posture involves feet flat on the floor or a footrest to prevent musculoskeletal strain during long shifts",
-      "imageAlt": "An illustration of a person sitting at a desk with feet flat on the floor",
       "options": [
         "Tiptoes touching the floor",
         "Feet flat on the floor or a footrest",
         "Legs crossed at the knees",
         "Feet tucked under the chair"
       ],
-      "question": "According to DSE guidance for control room operators, what is the correct position for the feet?",
-      "type": "image_question",
-      "imageDescription": "An ergonomic diagram of a person sitting at a computer workstation, highlighting the lower body with feet positioned flat on the floor",
+      "question": "An ergonomic diagram of a person sitting at a computer workstation, highlighting the lower body with feet positioned flat on the floor. According to DSE guidance for control room operators, what is the correct position for the feet?",
+      "type": "multiple_choice",
       "correctAnswer": 1,
-      "id": "sc-im-0112"
+      "id": "sc-im-0112",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 3,
-      "imageDescription": "A standard UK warning sign: a yellow triangle with a black border containing a black lightning bolt symbol",
       "explanation": "The yellow triangle indicates a warning, and the lightning bolt specifically warns of the risk of electric shock",
-      "question": "An operator notices this sign on a piece of equipment in the server room. What does it warn against?",
-      "imageAlt": "A yellow triangular sign with a black lightning bolt",
+      "question": "A standard UK warning sign: a yellow triangle with a black border containing a black lightning bolt symbol. An operator notices the sign on a piece of equipment in the server room. What does it warn against?",
       "options": [
         "Toxic chemicals",
         "Tripping hazard",
         "High temperatures spotted",
         "Risk of electric shock spotted"
       ],
-      "id": "sc-im-0113"
+      "id": "sc-im-0113",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "A RAID (Redundant Array of Independent Disks) setup uses multiple hard drives to ensure footage is not lost if one drive fails",
-      "question": "What system is used in the hardware shown to ensure video data is preserved if a single hard drive fails?",
-      "imageAlt": "A server rack showing multiple removable hard drive bays",
+      "question": "Close-up of a rack-mounted storage server with several hard drive caddies slotted in, commonly used for data redundancy. What system is used in the hardware shown to ensure video data is preserved if a single hard drive fails?",
       "options": [
         "RAID (Redundant Array of Independent Disks)",
         "Single SD card storage",
         "Cloud-only buffer memory",
         "Analogue tape deck"
       ],
-      "type": "image_question",
-      "imageDescription": "Close-up of a rack-mounted storage server with several hard drive caddies slotted in, commonly used for data redundancy",
+      "type": "multiple_choice",
       "correctAnswer": 0,
-      "id": "sc-im-0114"
+      "id": "sc-im-0114",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageDescription": "A standard yellow CCTV advisory sign with a black camera icon and space for the operator's contact details",
+      "type": "multiple_choice",
       "correctAnswer": 1,
       "explanation": "The Data Protection Act 2018 requires symbols or signs to inform the public they are in an area covered by CCTV",
-      "question": "The use of this sign is a requirement under which legislation to ensure transparency with the public?",
-      "imageAlt": "A yellow sign with a camera symbol and text about CCTV usage",
+      "question": "A standard yellow CCTV advisory sign with a black camera icon and space for the operator's contact details. The use of the sign is a requirement under which legislation to ensure transparency with the public?",
       "options": [
         "Health and Safety at Work Act",
         "Data Protection Act 2018 (GDPR)",
         "The Theft Act 1968",
         "The Equality Act 2010"
       ],
-      "id": "sc-im-0115"
+      "id": "sc-im-0115",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A professional CCTV telemetry controller featuring a 3-axis joystick, a numeric keypad, and an LCD display",
       "correctAnswer": 3,
-      "type": "image_question",
-      "question": "What device is shown in the image that allows an operator to control the movement of a PTZ camera?",
-      "imageAlt": "A CCTV control keyboard with a three-axis joystick",
+      "type": "multiple_choice",
+      "question": "A professional CCTV telemetry controller featuring a 3-axis joystick, a numeric keypad, and an LCD display. What device is shown that allows an operator to control the movement of a PTZ camera?",
       "options": [
         "Computer mouse only",
         "Touchscreen panel",
@@ -6812,37 +6695,36 @@
         "Telemetry joystick controller"
       ],
       "explanation": "A joystick is the standard tool used by CCTV operators to smoothly control the movement and zoom of PTZ cameras",
-      "id": "sc-im-0116"
+      "id": "sc-im-0116",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A formal document template with the heading 'Subject Access Request' and fields for name, date, and description of incident",
       "correctAnswer": 2,
-      "type": "image_question",
-      "question": "What is the name of the request being made when a member of the public asks for this form to view footage of themselves?",
+      "type": "multiple_choice",
+      "question": "A formal document template with the heading 'Subject Access Request' and fields for name, date, and description of incident. What is the name of the request being made when a member of the public asks for this form to view footage of themselves?",
       "options": [
         "Freedom of Information form",
         "Criminal record check request",
         "Subject Access Request (SAR)",
         "CCTV maintenance logform"
       ],
-      "imageAlt": "A form titled 'Subject Access Request'",
       "explanation": "A Subject Access Request (SAR) allows individuals to see information or footage held about them by an organisation",
-      "id": "sc-im-0117"
+      "id": "sc-im-0117",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What type of lens is shown, allowing for the manual adjustment of the focal length/zoom?",
+      "question": "A close-up of a CCTV camera lens showing two adjustment rings labelled 'T/W' (Tele/Wide) and 'N/F' (Near/Far). What type of lens is shown, allowing for the manual adjustment of the focal length/zoom?",
       "options": [
         "Varifocal lens",
         "Fixed 3.6mm lens",
         "Pinhole lens",
         "Fisheye lens"
       ],
-      "imageAlt": "A camera lens with adjustable rings for 'Zoom' and 'Focus'",
       "explanation": "A varifocal lens allows the installer or operator to manually or remotely adjust the focal length to change the field of view",
-      "imageDescription": "A close-up of a CCTV camera lens showing two adjustment rings labelled 'T/W' (Tele/Wide) and 'N/F' (Near/Far)",
       "correctAnswer": 0,
-      "type": "image_question",
-      "id": "sc-im-0118"
+      "type": "multiple_choice",
+      "id": "sc-im-0118",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -6851,33 +6733,30 @@
         "The protection of life and public safety",
         "The maintenance of technical equipment"
       ],
-      "imageAlt": "A graphic showing people, a building, and money",
-      "question": "According to the core principles of the SIA, what is the primary objective represented by the 'person' icon in this hierarchy?",
+      "question": "An instructional graphic showing three icons: a person (Life), a building (Property), and a pound sign (Assets). According to the core principles of the SIA, what is the primary objective represented by the 'person' icon in this hierarchy?",
       "explanation": "The first priority of any security operative, including CCTV operators, is the protection of life and the safety of the public",
       "correctAnswer": 2,
-      "imageDescription": "An instructional graphic showing three icons: a person (Life), a building (Property), and a pound sign (Assets)",
-      "type": "image_question",
-      "id": "sc-im-0119"
+      "type": "multiple_choice",
+      "id": "sc-im-0119",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 1,
-      "imageDescription": "The rear view of a 16-channel Digital Video Recorder (DVR) showing numerous BNC video inputs for analogue cameras",
-      "type": "image_question",
-      "imageAlt": "A device with multiple BNC ports on the back panels",
+      "type": "multiple_choice",
       "options": [
         "Network Video Recorder (NVR)",
         "Digital Video Recorder (DVR)",
         "Video Matrix Switcher",
         "PoE Network Switch"
       ],
-      "question": "What device is shown, used specifically to record footage from multiple analogue cameras?",
+      "question": "The rear view of a 16-channel Digital Video Recorder (DVR) showing numerous BNC video inputs for analogue cameras. What device is shown, used specifically to record footage from multiple analogue cameras?",
       "explanation": "A Digital Video Recorder (DVR) is used to convert and store footage from older analogue cameras onto a digital hard drive",
-      "id": "sc-im-0120"
+      "id": "sc-im-0120",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "Under the Health and Safety at Work Act, what does this specific sign indicate in a secure area?",
-      "type": "image_question",
-      "imageDescription": "A standard UK health and safety prohibition sign showing a camera with a red circle and a diagonal line across it",
+      "question": "A standard UK health and safety prohibition sign showing a camera with a red circle and a diagonal line across it. Under the Health and Safety at Work Act, what does this specific sign indicate in a secure area?",
+      "type": "multiple_choice",
       "options": [
         "Mandatory action",
         "Safety warning",
@@ -6885,28 +6764,26 @@
         "Safe condition"
       ],
       "explanation": "Red circular signs with a diagonal cross or line indicate prohibited actions under UK Health and Safety regulations",
-      "imageAlt": "A red circular sign with a white background and a red diagonal line through a camera",
       "correctAnswer": 2,
-      "id": "sc-im-0121"
+      "id": "sc-im-0121",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
         "Security Industry Authority (SIA)",
         "Home Office Surveillance Commission",
         "Police Licensing Department (PLD)",
-        "Information Commissioner’s Office (ICO)"
+        "Information Commissioner\u2019s Office (ICO)"
       ],
-      "question": "Which regulatory body issues the licence shown in this image for CCTV operators in the UK?",
-      "type": "image_question",
-      "imageDescription": "A mock-up of an SIA front-line CCTV licence showing the Security Industry Authority logo, hologram, and license holder details",
+      "question": "A mock-up of an SIA front-line CCTV licence showing the Security Industry Authority logo, hologram, and license holder details. Which regulatory body issues the licence shown for CCTV operators in the UK?",
+      "type": "multiple_choice",
       "explanation": "The SIA logo on a licence indicates that the individual has been vetted and is authorised to work in the private security industry",
-      "imageAlt": "A standard SIA CCTV Operator licence card including a hologram",
       "correctAnswer": 0,
-      "id": "sc-im-0122"
+      "id": "sc-im-0122",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "A 'Bullet' camera is named for its cylindrical shape and is commonly used for fixed-view observation in outdoor environments",
-      "imageAlt": "A white cylindrical camera mounted on a wall bracket",
       "correctAnswer": 1,
       "options": [
         "Dome camera",
@@ -6914,14 +6791,13 @@
         "PTZ camera",
         "360-degree camera"
       ],
-      "question": "What is the industry term for the specific style of camera housing shown in this image?",
-      "type": "image_question",
-      "imageDescription": "A professional-grade white cylindrical 'bullet' style security camera fixed to a grey background wall",
-      "id": "sc-im-0123"
+      "question": "A professional-grade white cylindrical 'bullet' style security camera fixed to a grey background wall. What is the industry term for the specific style of camera housing shown ?",
+      "type": "multiple_choice",
+      "id": "sc-im-0123",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "Green rectangular signs indicate safe conditions, such as the location of first aid equipment or emergency exits",
-      "imageAlt": "A green rectangular sign with a white cross",
       "correctAnswer": 3,
       "options": [
         "Warning of danger",
@@ -6929,40 +6805,38 @@
         "Fire equipment location striping",
         "Safe condition / First aid point"
       ],
-      "question": "In a control room environment, what is the meaning of this category of safety sign?",
-      "type": "image_question",
-      "imageDescription": "A standard green and white 'First Aid' sign used in UK workplaces",
-      "id": "sc-im-0124"
+      "question": "A standard green and white 'First Aid' sign used in UK workplaces. In a control room environment, what is the meaning of this category of safety sign?",
+      "type": "multiple_choice",
+      "id": "sc-im-0124",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A blue network cable with a plastic RJ45 connector",
       "correctAnswer": 1,
       "explanation": "An Ethernet (RJ45) cable is used to transmit digital data and power between an IP camera and a network switch",
-      "question": "Which type of cable, commonly used for modern IP CCTV systems, is shown in this image?",
-      "type": "image_question",
-      "imageDescription": "A close-up of a blue Ethernet Cat5e/6 cable with a standard RJ45 connector, used for IP CCTV networking",
+      "question": "A close-up of a blue Ethernet Cat5e/6 cable with a standard RJ45 connector, used for IP CCTV networking. Which type of cable, commonly used for modern IP CCTV systems, is shown ?",
+      "type": "multiple_choice",
       "options": [
         "Coaxial cable (BNC)",
         "Network cable (RJ45)",
         "HDMI video cable",
         "Fibre optic connector"
       ],
-      "id": "sc-im-0125"
+      "id": "sc-im-0125",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "Standard workstation ergonomics require the top of the monitor to be at or slightly below eye level to prevent neck strain",
-      "imageAlt": "A diagram showing an operator sitting at a desk with a monitor",
       "correctAnswer": 2,
-      "question": "According to Display Screen Equipment (DSE) regulations, what is the correct height for the monitor shown in this diagram?",
-      "type": "image_question",
-      "imageDescription": "An ergonomic diagram side view of a person sitting at a computer desk, showing the recommended height for the screen relative to their eyes",
+      "question": "An ergonomic diagram side view of a person sitting at a computer desk, showing the recommended height for the screen relative to their eyes. According to Display Screen Equipment (DSE) regulations, what is the correct height for the monitor shown ?",
+      "type": "multiple_choice",
       "options": [
         "Above the head level",
         "Resting on the desk surface",
         "At or slightly below eye level",
         "Tilted upwards at 45 degrees"
       ],
-      "id": "sc-im-0126"
+      "id": "sc-im-0126",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -6971,78 +6845,72 @@
         "To allow more people to stand behind the operator",
         "To increase the heat generated by the screens"
       ],
-      "imageDescription": "An image of a CCTV control room console with six monitors arranged in a curved configuration",
-      "question": "Why are monitors in a CCTV control room often arranged in the 'arc' configuration shown here?",
-      "type": "image_question",
-      "imageAlt": "A row of several monitors arranged in a semi-circle",
+      "question": "An image of a CCTV control room console with six monitors arranged in a curved configuration. Why are monitors in a CCTV control room often arranged in the 'arc' configuration ?",
+      "type": "multiple_choice",
       "correctAnswer": 0,
       "explanation": "Monitors in a control room should be arranged in a 'monitor wall' or arc to allow the operator to see all screens without excessive head movement",
-      "id": "sc-im-0127"
+      "id": "sc-im-0127",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "The ICO logo represents the body responsible for enforcing the Data Protection Act and UK GDPR regarding CCTV usage",
-      "imageAlt": "The logo of the Information Commissioner's Office",
       "correctAnswer": 2,
-      "question": "Which organization, represented by this logo, identifies the standards for handling personal data?",
-      "type": "image_question",
-      "imageDescription": "The official logo for the Information Commissioner's Office (ICO), which includes the text 'ico.' in a specific blue font",
+      "question": "The official logo for the Information Commissioner's Office (ICO), which includes the text 'ico.' in a specific blue font. Which organization, represented by this logo, identifies the standards for handling personal data?",
+      "type": "multiple_choice",
       "options": [
         "The SIA National Helpline",
         "The Health and Safety Executive (HSE) England",
-        "The Information Commissioner’s Office (ICO)",
+        "The Information Commissioner\u2019s Office (ICO)",
         "The British Standards Institution (BSI)"
       ],
-      "id": "sc-im-0128"
+      "id": "sc-im-0128",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A clear plastic bag with a red 'VOID' seal tape at the top",
       "correctAnswer": 1,
       "explanation": "TAMPER evident bags are used to maintain the chain of evidence by showing if any unauthorised person has tried to open the bag",
-      "question": "What is the primary purpose of the specialized storage item shown in this image?",
-      "type": "image_question",
-      "imageDescription": "A transparent evidence bag used by security personnel, showing a secure tamper-evident seal that displays 'VOID' if opened",
+      "question": "A transparent evidence bag used by security personnel, showing a secure tamper-evident seal that displays 'VOID' if opened. What is the primary purpose of the specialized storage item shown ?",
+      "type": "multiple_choice",
       "options": [
         "General waste disposal bag",
         "Tamper-evident evidence bag",
         "Personal property storage pouch",
         "Recycling bag for old disks"
       ],
-      "id": "sc-im-0129"
+      "id": "sc-im-0129",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A black box with several UK power outlets and a power button",
       "correctAnswer": 0,
       "explanation": "A UPS provides emergency power to the CCTV system during a mains failure to ensure continuous recording",
-      "imageDescription": "A black Uninterruptible Power Supply (UPS) unit showing status lights and power sockets on the rear",
-      "question": "What is the name of this device used to keep a CCTV system running during a power cut?",
-      "type": "image_question",
+      "question": "A black Uninterruptible Power Supply (UPS) unit showing status lights and power sockets on the rear. What is the name of this device used to keep a CCTV system running during a power cut?",
+      "type": "multiple_choice",
       "options": [
         "Uninterruptible Power Supply (UPS)",
         "Digital Video Recorder (DVR)",
         "Network Router",
         "Voltage Transformer"
       ],
-      "id": "sc-im-0130"
+      "id": "sc-im-0130",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "COSHH signs warn of hazardous substances. CCTV operators may see these on cleaning chemicals or server room fire suppressants",
-      "imageAlt": "A diamond-shaped sign with a red border showing a black flame symbol",
       "correctAnswer": 3,
-      "question": "What does this symbol, often found on cleaning supplies or in maintenance areas, represent?",
-      "type": "image_question",
-      "imageDescription": "A red-bordered white diamond sign featuring a black flame icon, used for flammable substances under COSHH",
+      "question": "A red-bordered white diamond sign featuring a black flame icon, used for flammable substances under COSHH. What does this symbol, often found on cleaning supplies or in maintenance areas, represent?",
+      "type": "multiple_choice",
       "options": [
         "General danger warning",
         "Mandatory fire drill area",
         "Safe to use near electricity",
         "Presence of flammable substances (COSHH)"
       ],
-      "id": "sc-im-0131"
+      "id": "sc-im-0131",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "An operator sees this reflection on their screen. What is the most likely cause of this ergonomic issue?",
-      "type": "image_question",
-      "imageDescription": "A CCTV monitor displaying a camera feed, but with a significant white glare reflecting off the glass from an unseen window",
+      "question": "A CCTV monitor displaying a camera feed, but with a significant white glare reflecting off the glass from an unseen window. An operator sees this reflection on their screen. What is the most likely cause of this ergonomic issue?",
+      "type": "multiple_choice",
       "options": [
         "A faulty camera sensor",
         "Dust on the camera lens",
@@ -7050,9 +6918,9 @@
         "Low light levels in the area being viewed"
       ],
       "explanation": "Monitors should be positioned to avoid glare from windows or overhead lighting to prevent eye strain and maintain clarity of the footage",
-      "imageAlt": "A monitor screen with a bright white reflection obscuring the image",
       "correctAnswer": 2,
-      "id": "sc-im-0132"
+      "id": "sc-im-0132",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -7061,13 +6929,12 @@
         "Infrared (IR) LEDs",
         "Status indicator lights"
       ],
-      "imageAlt": "A close-up of a CCTV camera lens surrounded by small circular bulbs",
-      "question": "What is the purpose of the ring of small bulbs surrounding the lens on this camera?",
-      "imageDescription": "A close-up photograph of a fixed security camera lens. Surrounding the glass lens is a ring of small, circular LEDs that glow faintly red or are clear",
+      "question": "A close-up photograph of a fixed security camera lens. Surrounding the glass lens is a ring of small, circular LEDs that glow faintly red or are clear. What is the purpose of the ring of small bulbs surrounding the lens on this camera?",
       "explanation": "Infrared (IR) LEDs provide invisible light that allows the camera to capture clear monochrome footage in total darkness",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 2,
-      "id": "sc-im-0133"
+      "id": "sc-im-0133",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -7076,13 +6943,12 @@
         "Human Rights Act 1998s",
         "Health and Safety at Work Act 1974"
       ],
-      "imageAlt": "A yellow sign with a black camera icon and text",
-      "imageDescription": "A standard UK yellow CCTV warning sign. It features a black icon of a camera and space below for the name of the scheme operator and a contact number",
-      "question": "The presence of this sign is a legal requirement under which piece of legislation?",
+      "question": "A standard UK yellow CCTV warning sign. It features a black icon of a camera and space below for the name of the scheme operator and a contact number. The presence of the sign is a legal requirement under which piece of legislation?",
       "explanation": "The Data Protection Act 2018 (incorporating GDPR) requires clear signage to inform the public that CCTV is in operation",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 0,
-      "id": "sc-im-0134"
+      "id": "sc-im-0134",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -7091,19 +6957,16 @@
         "Pinhole lens",
         "Wide-angle lens"
       ],
-      "imageAlt": "A camera lens with two protruding adjustment pins labeled 'Tele/Wide' and 'Near/Far'",
-      "question": "What type of CCTV lens is shown in this image, which allows for manual adjustment of the zoom and focus?",
-      "imageDescription": "A side profile of a CCTV camera lens removed from the body. It has two small metal pins used for manual adjustment, labeled with 'T/W' for Zoom and 'N/F' for Focus",
+      "question": "A side profile of a CCTV camera lens removed from the body. It has two small metal pins used for manual adjustment, labeled with 'T/W' for Zoom and 'N/F' for Focus. What type of CCTV lens is shown , which allows for manual adjustment of the zoom and focus?",
       "explanation": "Varifocal lenses allow the operator or installer to manually adjust the field of view and focus to suit the specific area being monitored",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 1,
-      "id": "sc-im-0135"
+      "id": "sc-im-0135",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "The BNC (Bayonet Neill-Concelman) connector is the standard physical interface used for connecting analogue coaxial cables to cameras and recorders",
-      "question": "What is the name of this specific connector, commonly used to connect analogue cameras to a DVR?",
-      "imageDescription": "A high-resolution photo of a BNC connector at the end of a RG59 coaxial cable. The connector has a rotating locking ring",
-      "imageAlt": "A silver metal connector at the end of a thick black cable",
+      "question": "A high-resolution photo of a BNC connector at the end of a RG59 coaxial cable. The connector has a rotating locking ring. What is the name of this specific connector, commonly used to connect analogue cameras to a DVR?",
       "options": [
         "RJ45 connector",
         "HDMI connector",
@@ -7111,12 +6974,12 @@
         "BNC connector"
       ],
       "correctAnswer": 3,
-      "type": "image_question",
-      "id": "sc-im-0136"
+      "type": "multiple_choice",
+      "id": "sc-im-0136",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "According to DSE regulations, what is the recommended height for the monitor relative to the operator's eyes?",
-      "imageDescription": "A technical drawing of a CCTV operator sitting in an ergonomic chair. A dashed line shows the horizontal line of sight from the operator's eyes to the top of the screen",
+      "question": "A technical drawing of a CCTV operator sitting in an ergonomic chair. A dashed line shows the horizontal line of sight from the operator's eyes to the top of the screen. According to DSE regulations, what is the recommended height for the monitor relative to the operator's eyes?",
       "explanation": "To prevent neck strain and musculoskeletal issues, the top of the monitor should be at or slightly below the operator's eye level",
       "options": [
         "Above eye level",
@@ -7124,29 +6987,27 @@
         "At or slightly below eye level",
         "As high as possible to allow for standing"
       ],
-      "imageAlt": "A side view diagram of a person sitting at a desk with a monitor",
       "correctAnswer": 2,
-      "type": "image_question",
-      "id": "sc-im-0137"
+      "type": "multiple_choice",
+      "id": "sc-im-0137",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 0,
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "The 'Pan, Tilt, and Zoom' (PTZ) camera is designed to be moved remotely by an operator to track subjects or investigate incidents",
-      "imageDescription": "A large white speed-dome camera mounted on an external wall bracket. It has a glass lower half and is capable of rotating 360 degrees",
-      "question": "What type of camera is shown, designed to be actively controlled by an operator in a control room?",
-      "imageAlt": "A white dome-shaped camera hanging from a wall bracket",
+      "question": "A large white speed-dome camera mounted on an external wall bracket. It has a glass lower half and is capable of rotating 360 degrees. What type of camera is shown, designed to be actively controlled by an operator in a control room?",
       "options": [
         "PTZ (Pan, Tilt, Zoom) camera",
         "Fixed bullet camera",
         "Covert pinhole cameras",
         "Thermal imaging camera"
       ],
-      "id": "sc-im-0138"
+      "id": "sc-im-0138",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A document template used in a CCTV control room. The header reads 'Subject Access Request Form' and includes sections for the date, time, and location of the recorded event",
-      "question": "What is the name of the process an individual follows when submitting this form to view footage of themselves?",
+      "question": "A document template used in a CCTV control room. The header reads 'Subject Access Request Form' and includes sections for the date, time, and location of the recorded event. What is the name of the process an individual follows when submitting this form to view footage of themselves?",
       "explanation": "A Subject Access Request (SAR) allows an individual to request a copy of personal data (including CCTV footage) held about them",
       "options": [
         "Freedom of Information Request",
@@ -7154,16 +7015,14 @@
         "Police Disclosure Form",
         "Incident Report Log"
       ],
-      "imageAlt": "A paper form titled 'Application for Access to Personal Data'",
       "correctAnswer": 1,
-      "type": "image_question",
-      "id": "sc-im-0139"
+      "type": "multiple_choice",
+      "id": "sc-im-0139",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "A Video Matrix allows multiple camera inputs to be routed to various different monitors within a large control room",
-      "imageDescription": "The rear view of a professional rack-mounted video matrix switcher. It has dozens of BNC ports arranged in rows and columns for input and output routing",
-      "question": "In a large-scale control room, what is the primary function of the rack-mounted equipment shown here?",
-      "imageAlt": "A rack-mounted electronic device with many BNC inputs on the back",
+      "question": "The rear view of a professional rack-mounted video matrix switcher. It has dozens of BNC ports arranged in rows and columns for input and output routing. In a large-scale control room, what is the primary function of the rack-mounted equipment ?",
       "options": [
         "Uninterruptible Power Supply",
         "Digital Video Recorder",
@@ -7171,14 +7030,13 @@
         "Network Switch"
       ],
       "correctAnswer": 2,
-      "type": "image_question",
-      "id": "sc-im-0140"
+      "type": "multiple_choice",
+      "id": "sc-im-0140",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "The Incident Log is a vital document used to record all significant events, observations, and actions taken by the operator during their shift",
-      "imageDescription": "A close-up of a page in a CCTV operator's daily logbook. The columns are clearly marked for recording chronological events throughout a shift",
-      "question": "What is the name of the document shown, used by operators to record evidence and daily activities?",
-      "imageAlt": "A logbook with columns for 'Time', 'Camera No.', and 'Details of Incident'",
+      "question": "A close-up of a page in a CCTV operator's daily logbook. The columns are clearly marked for recording chronological events throughout a shift. What is the name of the document shown, used by operators to record evidence and daily activities?",
       "options": [
         "Visitor Register",
         "Data Protection Audit",
@@ -7186,14 +7044,13 @@
         "Incident Log"
       ],
       "correctAnswer": 3,
-      "type": "image_question",
-      "id": "sc-im-0141"
+      "type": "multiple_choice",
+      "id": "sc-im-0141",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "Fire exit signs must be green and rectangular (safe condition) to comply with health and safety regulations for emergency routes",
-      "imageDescription": "A standard UK 'Running Man' fire exit sign. It is green with a white pictogram and an arrow pointing towards a doorway",
-      "question": "In a control room environment, what category of safety sign is shown in this image?",
-      "imageAlt": "A green rectangular sign with a white figure running through a door",
+      "question": "A standard UK 'Running Man' fire exit sign. It is green with a white pictogram and an arrow pointing towards a doorway. In a control room environment, what category of safety sign is shown ?",
       "options": [
         "Warning sign",
         "Safe condition sign",
@@ -7201,8 +7058,9 @@
         "Prohibition sign"
       ],
       "correctAnswer": 1,
-      "type": "image_question",
-      "id": "sc-im-0142"
+      "type": "multiple_choice",
+      "id": "sc-im-0142",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -7211,32 +7069,29 @@
         "Criminal Justice Act 1994",
         "Local Government Act 1972"
       ],
-      "imageAlt": "A blue and white card with a photo and a 'Public Space Surveillance' title",
-      "question": "The licence shown is issued under the authority of which legislation?",
-      "imageDescription": "The front of an SIA Public Space Surveillance (CCTV) licence. It features the SIA logo, the operator's photo, an expiry date, and a holographic security feature",
+      "question": "The front of an SIA Public Space Surveillance (CCTV) licence. It features the SIA logo, the operator's photo, an expiry date, and a holographic security feature. The licence shown is issued under the authority of which legislation?",
       "explanation": "Under the PSIA 2001, it is a criminal offence to work as a CCTV operator without a valid SIA licence clearly displayed",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 0,
-      "id": "sc-im-0143"
+      "id": "sc-im-0143",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 3,
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "IP (Internet Protocol) cameras use RJ45 connectors and Ethernet cables (Cat5e/Cat6) to transmit digital video data over a network",
-      "imageDescription": "A close-up of an RJ45 modular plug at the end of a blue Ethernet cable, often used for connecting IP cameras to a network switch",
-      "question": "What type of connector is shown, which is required for installing and connecting modern IP cameras?",
-      "imageAlt": "A clear plastic connector with eight small copper pins",
+      "question": "A close-up of an RJ45 modular plug at the end of a blue Ethernet cable, often used for connecting IP cameras to a network switch. What type of connector is shown, which is required for installing and connecting modern IP cameras?",
       "options": [
         "Coaxial connector",
         "F-Type connector",
         "Fiber optic connector",
         "RJ45 connector"
       ],
-      "id": "sc-im-0144"
+      "id": "sc-im-0144",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageDescription": "The official logo of the Information Commissioner's Office (ICO), which includes the letters 'ico.' and the text 'Information Commissioner's Office'",
+      "type": "multiple_choice",
       "correctAnswer": 1,
       "options": [
         "SIA",
@@ -7244,29 +7099,27 @@
         "Home Office",
         "Police Scotland"
       ],
-      "question": "An operator must follow the guidelines set by which organization, represented by this logo, regarding data protection?",
-      "imageAlt": "The logo of the Information Commissioner's Office",
+      "question": "The official logo of the Information Commissioner's Office (ICO), which includes the letters 'ico.' and the text 'Information Commissioner's Office'. An operator must follow the guidelines set by which organization, represented by this logo, regarding data protection?",
       "explanation": "The Information Commissioner's Office (ICO) is the UK's independent body set up to uphold information rights",
-      "id": "sc-im-0145"
+      "id": "sc-im-0145",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 0,
-      "imageDescription": "A screenshot of a CCTV monitor showing a public street. A solid black rectangular box has been digitally placed over a residential bedroom window to obscure it",
       "explanation": "A privacy mask is a feature used to block out specific areas (like private windows) from being viewed or recorded",
-      "imageAlt": "A CCTV screen showing a street with a black box covering a house window",
-      "question": "What feature is being used in this image to protect the privacy of local residents?",
+      "question": "A screenshot of a CCTV monitor showing a public street. A solid black rectangular box has been digitally placed over a residential bedroom window to obscure it. What feature is being used to protect the privacy of local residents?",
       "options": [
         "Privacy masking",
         "Digital zoom",
         "Motion detection failure",
         "Infrared interference"
       ],
-      "id": "sc-im-0146"
+      "id": "sc-im-0146",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageDescription": "A classic cylinder-shaped 'bullet' CCTV camera with a small sunshield on top, mounted to an external brick wall with a bracket",
+      "type": "multiple_choice",
       "correctAnswer": 2,
       "options": [
         "PTZ camera",
@@ -7274,16 +7127,14 @@
         "Fixed camera",
         "Covert camera"
       ],
-      "question": "What type of camera is shown in the image, typically used for fixed-angle perimeter monitoring?",
-      "imageAlt": "A bullet-style CCTV camera mounted on a wall",
+      "question": "A classic cylinder-shaped 'bullet' CCTV camera with a small sunshield on top, mounted to an external brick wall with a bracket. What type of camera is shown , typically used for fixed-angle perimeter monitoring?",
       "explanation": "A fixed 'bullet' camera is designed to point in one permanent direction and is highly visible to act as a deterrent",
-      "id": "sc-im-0147"
+      "id": "sc-im-0147",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A standard blue informational sign featuring a white lowercase letter 'i' in the centre",
       "correctAnswer": 0,
-      "type": "image_question",
-      "imageAlt": "A blue square sign with a white lowercase letter i",
+      "type": "multiple_choice",
       "explanation": "The 'i' symbol indicates a source of information, such as a help desk or an information point in a public space",
       "options": [
         "Information Point",
@@ -7291,29 +7142,27 @@
         "Incident reported",
         "Internal corridor"
       ],
-      "question": "What does this standard signage symbol represent when seen on a site map by a CCTV operator?",
-      "id": "sc-im-0148"
+      "question": "A standard blue informational sign featuring a white lowercase letter 'i' in the centre. What does this standard signage symbol represent when seen on a site map by a CCTV operator?",
+      "id": "sc-im-0148",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "Control room consoles should have adjustable height to accommodate different operators and reduce ergonomic strain",
-      "imageAlt": "An adjustable height desk with monitors",
-      "question": "What ergonomic feature does this specific type of control room desk provide for the operator?",
+      "question": "A professional CCTV workstation desk with a motorized leg system allowed for 'sit-stand' height adjustment. What ergonomic feature does this specific type of control room desk provide for the operator?",
       "options": [
         "Soundproofing",
         "Security locking",
         "Heat ventilation",
         "Height adjustability"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 3,
-      "imageDescription": "A professional CCTV workstation desk with a motorized leg system allowed for 'sit-stand' height adjustment",
-      "id": "sc-im-0149"
+      "id": "sc-im-0149",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A heavy-duty metal locker with individual keyed compartments, used for the secure storage of removable media like USBs or DVDs",
       "correctAnswer": 1,
-      "type": "image_question",
-      "imageAlt": "A metal locker for storing evidence media",
+      "type": "multiple_choice",
       "explanation": "Video clips exported as evidence must be kept in a locked, secure cabinet or safe to maintain the chain of evidence",
       "options": [
         "In an unlocked desk drawer",
@@ -7321,8 +7170,9 @@
         "On a shelf in the public reception area",
         "In the operator's personal locker"
       ],
-      "question": "Where should the physical media shown in this storage unit be kept to comply with the PACE Act?",
-      "id": "sc-im-0150"
+      "question": "A heavy-duty metal locker with individual keyed compartments, used for the secure storage of removable media like USBs or DVDs. Where should the physical media shown in this storage unit be kept to comply with the PACE Act?",
+      "id": "sc-im-0150",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -7331,34 +7181,30 @@
         "Controlling PTZ cameras",
         "Printing still images"
       ],
-      "question": "What is the primary function of this piece of equipment found in a CCTV control room?",
-      "imageAlt": "A CCTV joystick controller unit",
+      "question": "A CCTV control keyboard featuring a multi-axis joystick, a numerical keypad, and several function buttons for camera selection. What is the primary function of this piece of equipment found in a CCTV control room?",
       "explanation": "A joystick controller is the standard peripheral used for manually panning, tilting, and zooming a PTZ camera",
-      "imageDescription": "A CCTV control keyboard featuring a multi-axis joystick, a numerical keypad, and several function buttons for camera selection",
       "correctAnswer": 2,
-      "type": "image_question",
-      "id": "sc-im-0151"
+      "type": "multiple_choice",
+      "id": "sc-im-0151",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "The 'flammable' symbol warns that the contents of a container can easily catch fire",
-      "imageAlt": "A red diamond sign with a flame symbol",
-      "question": "If an operator sees this symbol on a barrel during a site patrol, what hazard does it represent?",
+      "question": "A COSHH hazard warning sign showing a black flame on a red background, indicating a flammable substance. If an operator sees this symbol on a barrel during a site patrol, what hazard does it represent?",
       "options": [
         "Flammable material",
         "Toxic substance",
         "Oxidizing agent",
         "Corrosive liquid"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 0,
-      "imageDescription": "A COSHH hazard warning sign showing a black flame on a red background, indicating a flammable substance",
-      "id": "sc-im-0152"
+      "id": "sc-im-0152",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "The back panel of a digital recording device showing multiple RJ45 Ethernet ports, a VGA port, and an HDMI port",
       "correctAnswer": 2,
-      "type": "image_question",
-      "imageAlt": "The rear of a Network Video Recorder showing Ethernet ports",
+      "type": "multiple_choice",
       "explanation": "A NVR (Network Video Recorder) is used to record footage from IP cameras connected via a local area network",
       "options": [
         "Analogue VCR",
@@ -7366,14 +7212,13 @@
         "Network Video Recorder (NVR)",
         "Video multiplexer"
       ],
-      "question": "What type of recording device is shown in this image, characterized by its network ports?",
-      "id": "sc-im-0153"
+      "question": "The back panel of a digital recording device showing multiple RJ45 Ethernet ports, a VGA port, and an HDMI port. What type of recording device is shown , characterized by its network ports?",
+      "id": "sc-im-0153",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A standard circular 'No Entry' road/safety sign with a red background and a white horizontal rectangle in the middle",
       "correctAnswer": 1,
-      "type": "image_question",
-      "imageAlt": "A red circle with a white horizontal bar",
+      "type": "multiple_choice",
       "explanation": "The 'no entry' sign is a prohibitory sign, indicated by its red circular shape",
       "options": [
         "Mandatory sign",
@@ -7381,12 +7226,12 @@
         "Warning sign",
         "Safe condition sign"
       ],
-      "question": "In terms of safety signage categories, what type of sign is shown here?",
-      "id": "sc-im-0154"
+      "question": "A standard circular 'No Entry' road/safety sign with a red background and a white horizontal rectangle in the middle. In terms of safety signage categories, what type of sign is ?",
+      "id": "sc-im-0154",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageDescription": "A ceiling-mounted dome camera housed in a heavy-duty metal casing with visible security screws to prevent removal",
+      "type": "multiple_choice",
       "correctAnswer": 3,
       "options": [
         "Low-light capability",
@@ -7394,14 +7239,13 @@
         "Thermal imaging",
         "Vandal resistance"
       ],
-      "question": "What is the main design advantage of the camera housing shown in this image?",
-      "imageAlt": "A dome camera with a metal reinforced casing",
+      "question": "A ceiling-mounted dome camera housed in a heavy-duty metal casing with visible security screws to prevent removal. What is the main design advantage of the camera housing shown ?",
       "explanation": "Vandal-resistant dome cameras are designed with high-impact housings to prevent damage from tampering or physical attack",
-      "id": "sc-im-0155"
+      "id": "sc-im-0155",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageDescription": "A paper form with the heading 'Subject Access Request Form' and fields for 'Name', 'Date of Birth', and 'Description of Incident'",
+      "type": "multiple_choice",
       "correctAnswer": 0,
       "options": [
         "Subject Access Request (SAR)",
@@ -7409,10 +7253,10 @@
         "Police witness statement",
         "SIA licence application"
       ],
-      "question": "What is the name of the request being made when a member of the public submits this form?",
-      "imageAlt": "A document titled Subject Access Request Form",
+      "question": "A paper form with the heading 'Subject Access Request Form' and fields for 'Name', 'Date of Birth', and 'Description of Incident'. What is the name of the request being made when a member of the public submits this form?",
       "explanation": "A 'Subject Access Request' is the formal process under the UK GDPR for an individual to ask for their personal data",
-      "id": "sc-im-0156"
+      "id": "sc-im-0156",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -7423,11 +7267,10 @@
       ],
       "correctAnswer": 1,
       "explanation": "Under the Data Protection Act 2018, CCTV operators must use privacy masking to obscure certain areas, such as private windows, to ensure monitoring is proportionate",
-      "imageDescription": "A digital screenshot of a CCTV management system showing a residential street. A solid black digital box is placed over a specific window of a house to prevent viewing inside",
-      "type": "image_question",
-      "question": "Which technical feature is being applied to this camera view to ensure compliance with the Data Protection Act?",
-      "imageAlt": "A CCTV monitor view of a street where a black square covers a bedroom window of a nearby",
-      "id": "sc-im-0157"
+      "type": "multiple_choice",
+      "question": "A digital screenshot of a CCTV management system showing a residential street. A solid black digital box is placed over a specific window of a house to prevent viewing inside. Which technical feature is being applied to this camera view to ensure compliance with the Data Protection Act?",
+      "id": "sc-im-0157",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -7438,11 +7281,10 @@
       ],
       "correctAnswer": 2,
       "explanation": "The yellow triangle indicates a 'Warning' sign, alerting staff to potential hazards like electricity or slippery floors in the control room or equipment area",
-      "imageDescription": "A standard UK health and safety warning sign: a yellow equilateral triangle with a black border containing a black lightning bolt symbol, mounted on a grey wall",
-      "type": "image_question",
-      "question": "What category of safety sign is shown in this image, often found near CCTV server racks?",
-      "imageAlt": "A yellow triangular sign with a black border and a lightning bolt symbol",
-      "id": "sc-im-0158"
+      "type": "multiple_choice",
+      "question": "A standard UK health and safety warning sign: a yellow equilateral triangle with a black border containing a black lightning bolt symbol, mounted on a grey wall. What category of safety sign is shown , often found near CCTV server racks?",
+      "id": "sc-im-0158",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "A PTZ (Pan, Tilt, Zoom) controller with a joystick allows operators to follow targets and change the camera's field of view in real-time",
@@ -7453,11 +7295,10 @@
         "To increase the monitor resolution"
       ],
       "correctAnswer": 0,
-      "imageAlt": "A CCTV control desk peripheral with a joystick and several numbered buttons",
-      "question": "What is the primary purpose of the specific piece of equipment shown in this image?",
-      "type": "image_question",
-      "imageDescription": "A professional CCTV joystick controller unit sitting on a desk. It has a 3-axis joystick, a numeric keypad, and small LCD screen for selecting camera inputs",
-      "id": "sc-im-0159"
+      "question": "A professional CCTV joystick controller unit sitting on a desk. It has a 3-axis joystick, a numeric keypad, and small LCD screen for selecting camera inputs. What is the primary purpose of the specific piece of equipment shown ?",
+      "type": "multiple_choice",
+      "id": "sc-im-0159",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 3,
@@ -7468,17 +7309,14 @@
         "Video Analytics (Object Tracking)"
       ],
       "explanation": "A Green circle around a person in a VMS (Video Management System) typically indicates an 'Analytics' trigger, such as a tripwire or loitering alert",
-      "type": "image_question",
-      "imageDescription": "A modern CCTV interface showing a person walking through a secured gate. The software has automatically drawn a green bounding box around the person to track their movement",
-      "imageAlt": "A CCTV screen showing a person walking through a car park with a green digital box around them",
-      "question": "What is the CCTV software performing in this image as the person enters the restricted area?",
-      "id": "sc-im-0160"
+      "type": "multiple_choice",
+      "question": "A modern CCTV interface showing a person walking through a secured gate. The software has automatically drawn a green bounding box around the person to track their movement. What is the CCTV software performing as the person enters the restricted area?",
+      "id": "sc-im-0160",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A clear plastic evidence bag used by security professionals. It has a serial number printed on the side and a red tamper-evident adhesive seal at the top",
-      "type": "image_question",
-      "question": "What is the legislative purpose for using the item shown in this image when handling recorded media?",
-      "imageAlt": "A clear plastic bag with a red 'VOID' seal tape at the top, used for holding a hard drive",
+      "type": "multiple_choice",
+      "question": "A clear plastic evidence bag used by security professionals. It has a serial number printed on the side and a red tamper-evident adhesive seal at the top. What is the legislative purpose for using the item shown when handling recorded media?",
       "options": [
         "General waste disposal",
         "Static protection storage",
@@ -7487,13 +7325,12 @@
       ],
       "correctAnswer": 2,
       "explanation": "When hard drives or media are removed from a system for evidence, they must be placed in a tamper-evident bag to maintain the 'Chain of Evidence' for court",
-      "id": "sc-im-0161"
+      "id": "sc-im-0161",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "According to Health and Safety DSE guidelines, why is the keyboard positioned with a gap at the front of the desk as shown?",
-      "imageAlt": "A top-down view of a CCTV workstation showing the keyboard, mouse, and a space between the keyboard and the edge of the desk",
-      "imageDescription": "An ergonomic CCTV workstation setup showing a keyboard and mouse. There is a clear 10cm gap between the front of the keyboard and the edge of the desk",
-      "type": "image_question",
+      "question": "An ergonomic CCTV workstation setup showing a keyboard and mouse. There is a clear 10cm gap between the front of the keyboard and the edge of the desk. According to Health and Safety DSE guidelines, why is the keyboard positioned with a gap at the front of the desk as shown?",
+      "type": "multiple_choice",
       "explanation": "According to DSE (Display Screen Equipment) guidelines, the keyboard should be positioned with enough space in front to allow the operator to rest their wrists",
       "correctAnswer": 0,
       "options": [
@@ -7502,7 +7339,8 @@
         "To allow space for a notepad or logbook",
         "To comply with fire exit clearance codes"
       ],
-      "id": "sc-im-0162"
+      "id": "sc-im-0162",
+      "__rewritten_from_image__": true
     },
     {
       "question": "When handling recorded media, a robust 'chain of custody' or audit trail must be maintained at all times",
@@ -7863,7 +7701,7 @@
     },
     {
       "type": "true_false",
-      "question": "Under the GDPR, a CCTV operator must always charge a standard fee of £50 to any individual making a Subject Access Request",
+      "question": "Under the GDPR, a CCTV operator must always charge a standard fee of \u00a350 to any individual making a Subject Access Request",
       "correctAnswer": false,
       "explanation": "Subject Access Requests are usually free, though a 'reasonable fee' may be charged only if the request is manifestly unfounded or excessive",
       "id": "sc-tf-0052"

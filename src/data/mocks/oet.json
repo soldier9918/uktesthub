@@ -300,8 +300,9 @@
         "The patient requires a soft-food diet only",
         "The patient must take all medications with food"
       ],
-      "question": "If a patient's notes state they are 'NBM', what does this signify?",
-      "id": "o-mc-0023"
+      "question": "If a patient's notes state they are 'NBM', what does the described signify?",
+      "id": "o-mc-0023",
+      "__rewritten_from_image__": true
     },
     {
       "type": "multiple_choice",
@@ -721,7 +722,7 @@
     },
     {
       "options": [
-        "The patient’s preferred brand of the medication",
+        "The patient\u2019s preferred brand of the medication",
         "The minimum time interval allowed between doses",
         "The cost of the medication to the NHS",
         "The location where the medication must be stored at home"
@@ -1046,7 +1047,7 @@
     },
     {
       "question": "Which of the following best describes 'sepsis'?",
-      "explanation": "Sepsis is a critical condition where the body’s extreme response to an infection causes organ dysfunction and potential failure",
+      "explanation": "Sepsis is a critical condition where the body\u2019s extreme response to an infection causes organ dysfunction and potential failure",
       "correctAnswer": 0,
       "type": "multiple_choice",
       "options": [
@@ -1424,7 +1425,7 @@
     {
       "explanation": "Benign tumours are non-cancerous, meaning they do not invade nearby tissues or spread throughout the body",
       "correctAnswer": 1,
-      "question": "A patient's biopsy report describes a growth as 'benign'. What does this signify?",
+      "question": "A patient's biopsy report describes a growth as 'benign'. What does the described signify?",
       "options": [
         "It is rapidly spreading to other organs",
         "It is non-cancerous and does not spread",
@@ -1432,7 +1433,8 @@
         "It has originated in the bone marrow"
       ],
       "type": "multiple_choice",
-      "id": "o-mc-0110"
+      "id": "o-mc-0110",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 3,
@@ -3277,7 +3279,7 @@
         "Normal Physiological Output"
       ],
       "correctAnswer": 2,
-      "question": "A patient’s notes indicate they are 'NPO' prior to an operation. What does this mean?",
+      "question": "A patient\u2019s notes indicate they are 'NPO' prior to an operation. What does this mean?",
       "id": "o-mc-0252"
     },
     {
@@ -3285,12 +3287,12 @@
       "correctAnswer": 2,
       "type": "multiple_choice",
       "options": [
-        "94–98%",
-        "92–96%",
-        "88–92%",
+        "94\u201398%",
+        "92\u201396%",
+        "88\u201392%",
         "100%"
       ],
-      "explanation": "NICE guidelines (NG180) specify a target oxygen saturation of 88–92% for patients with COPD who are at risk of hypercapnic respiratory failure",
+      "explanation": "NICE guidelines (NG180) specify a target oxygen saturation of 88\u201392% for patients with COPD who are at risk of hypercapnic respiratory failure",
       "id": "o-mc-0253"
     },
     {
@@ -4032,7 +4034,7 @@
       ],
       "explanation": "'Discharge' is the standard clinical term for the formal process of releasing a patient from hospital care",
       "type": "dropdown_blanks",
-      "template": "The patient’s recovery was sufficient to allow for a planned {{0}} scheduled for tomorrow morning",
+      "template": "The patient\u2019s recovery was sufficient to allow for a planned {{0}} scheduled for tomorrow morning",
       "id": "o-db-0013"
     },
     {
@@ -4212,7 +4214,7 @@
         }
       ],
       "type": "dropdown_blanks",
-      "template": "The patient’s blood pressure remained {{0}} despite the introduction of a second antihypertensive agent",
+      "template": "The patient\u2019s blood pressure remained {{0}} despite the introduction of a second antihypertensive agent",
       "id": "o-db-0023"
     },
     {
@@ -4235,7 +4237,7 @@
     },
     {
       "type": "dropdown_blanks",
-      "template": "The patient’s acute asthma attack was {{0}} by an unseasonably high pollen count during the weekend",
+      "template": "The patient\u2019s acute asthma attack was {{0}} by an unseasonably high pollen count during the weekend",
       "prompt": "Select the correct word to complete the sentence regarding clinical triggers",
       "explanation": "'Precipitated' is the correct medical term meaning to cause an event or situation (typically a bad one) to happen suddenly or unexpectedly",
       "blanks": [
@@ -4319,7 +4321,7 @@
       ],
       "explanation": "'Idiopathic' refers to any disease or condition which arises spontaneously or for which the cause is unknown",
       "prompt": "Select the term for a condition with an unknown cause",
-      "template": "Because all diagnostic tests returned normal results, the patient’s pulmonary fibrosis was classified as {{0}}",
+      "template": "Because all diagnostic tests returned normal results, the patient\u2019s pulmonary fibrosis was classified as {{0}}",
       "type": "dropdown_blanks",
       "id": "o-db-0029"
     },
@@ -4409,7 +4411,7 @@
         }
       ],
       "explanation": "Medications like steroids must be 'tapered' (gradually reduced) to prevent withdrawal symptoms or adrenal crisis",
-      "template": "To avoid withdrawal symptoms, the patient’s long-term corticosteroid prescription must be {{0}} over several weeks",
+      "template": "To avoid withdrawal symptoms, the patient\u2019s long-term corticosteroid prescription must be {{0}} over several weeks",
       "type": "dropdown_blanks",
       "id": "o-db-0034"
     },
@@ -4533,7 +4535,7 @@
           ]
         }
       ],
-      "template": "Once the patient’s vital signs had stabilized and their pain was well-controlled, they were {{0}} home with a follow-up appointment",
+      "template": "Once the patient\u2019s vital signs had stabilized and their pain was well-controlled, they were {{0}} home with a follow-up appointment",
       "type": "dropdown_blanks",
       "id": "o-db-0041"
     },
@@ -4749,7 +4751,7 @@
       "id": "o-db-0053"
     },
     {
-      "template": "The patient’s discomfort was significantly {{0}} by the administration of intravenous morphine",
+      "template": "The patient\u2019s discomfort was significantly {{0}} by the administration of intravenous morphine",
       "prompt": "Find the word that means to lessen the severity of pain",
       "explanation": "'Alleviated' means to make a problem, such as pain or suffering, less severe",
       "type": "dropdown_blanks",
@@ -4768,7 +4770,7 @@
     },
     {
       "prompt": "Select the most appropriate term for a worsening clinical state",
-      "template": "The patient’s condition {{0}} rapidly overnight, necessitating an urgent transfer to the intensive care unit",
+      "template": "The patient\u2019s condition {{0}} rapidly overnight, necessitating an urgent transfer to the intensive care unit",
       "explanation": "'Deteriorated' is used to describe a patient's condition becoming progressively worse",
       "type": "dropdown_blanks",
       "blanks": [
@@ -4840,7 +4842,7 @@
     },
     {
       "prompt": "Choose the word for adjusting medication dosage",
-      "template": "The dose of warfarin was carefully {{0}} until the patient’s INR reached the target therapeutic range",
+      "template": "The dose of warfarin was carefully {{0}} until the patient\u2019s INR reached the target therapeutic range",
       "explanation": "'Titrated' refers to adjusting the dose of a medication to reach the desired effect with minimal side effects",
       "type": "dropdown_blanks",
       "blanks": [
@@ -4930,7 +4932,7 @@
     },
     {
       "explanation": "'Remission' refers to the period during which the symptoms of a chronic disease subside or disappear",
-      "template": "After six months of chemotherapy, the oncologist confirmed that the patient’s leukaemia was in complete {{0}}",
+      "template": "After six months of chemotherapy, the oncologist confirmed that the patient\u2019s leukaemia was in complete {{0}}",
       "prompt": "Select the term for a reduction in disease activity",
       "type": "dropdown_blanks",
       "blanks": [
@@ -5021,7 +5023,7 @@
     {
       "explanation": "'Exacerbated' means to make a problem or bad situation worse, often used for chronic conditions",
       "prompt": "Identify the verb for making a condition worse",
-      "template": "The patient’s asthma was significantly {{0}} by the high pollen count and poor air quality in the city",
+      "template": "The patient\u2019s asthma was significantly {{0}} by the high pollen count and poor air quality in the city",
       "blanks": [
         {
           "options": [
@@ -5217,7 +5219,7 @@
       "id": "o-db-0079"
     },
     {
-      "template": "The nursing staff were tasked with {{0}} the patient’s neurological status every fifteen minutes following the head injury",
+      "template": "The nursing staff were tasked with {{0}} the patient\u2019s neurological status every fifteen minutes following the head injury",
       "blanks": [
         {
           "correctIndex": 3,
@@ -5334,7 +5336,7 @@
           "correctIndex": 2
         }
       ],
-      "template": "The patient’s Crohn’s disease has {{0}}, allowing for a reduction in their maintenance immunosuppressant dosage",
+      "template": "The patient\u2019s Crohn\u2019s disease has {{0}}, allowing for a reduction in their maintenance immunosuppressant dosage",
       "prompt": "Complete the sentence about disease progression",
       "explanation": "'Remitted' (or to go into remission) refers to a period where symptoms of a chronic disease disappear or diminish",
       "type": "dropdown_blanks",
@@ -5560,7 +5562,7 @@
       ],
       "explanation": "'Aggravated' is the correct term for making a chronic condition or injury worse or more serious",
       "prompt": "Choose the word that means to make a condition worse",
-      "template": "The patient’s occupational history suggests that heavy lifting has significantly {{0}} his pre-existing lumbar disc prolapse",
+      "template": "The patient\u2019s occupational history suggests that heavy lifting has significantly {{0}} his pre-existing lumbar disc prolapse",
       "type": "dropdown_blanks",
       "id": "o-db-0099"
     },
@@ -5633,7 +5635,7 @@
       "explanation": "'Ascertaining' means to find something out for certain or to clarify, which is required before dosing medication",
       "prompt": "Select the verb for finding out or confirming information",
       "type": "dropdown_blanks",
-      "template": "The nurse was responsible for {{0}} the patient’s exact weight before calculating the heparin infusion rate",
+      "template": "The nurse was responsible for {{0}} the patient\u2019s exact weight before calculating the heparin infusion rate",
       "id": "o-db-0103"
     },
     {
@@ -5722,7 +5724,7 @@
         }
       ],
       "type": "dropdown_blanks",
-      "template": "The registrar noted that the patient’s peripheral oedema had largely {{0}} following forty-eight hours of diuretic therapy",
+      "template": "The registrar noted that the patient\u2019s peripheral oedema had largely {{0}} following forty-eight hours of diuretic therapy",
       "prompt": "Select the term used when a symptom has disappeared",
       "id": "o-db-0108"
     },
@@ -5781,7 +5783,7 @@
       "id": "o-db-0111"
     },
     {
-      "template": "The haematologist confirmed that the patient’s leukaemia had {{0}} following the second cycle of chemotherapy",
+      "template": "The haematologist confirmed that the patient\u2019s leukaemia had {{0}} following the second cycle of chemotherapy",
       "explanation": "'Remitted' (in remission) describes a period where the symptoms of a chronic disease disappear or diminish",
       "type": "dropdown_blanks",
       "prompt": "Choose the term describing a reduction in disease activity",
@@ -5902,8 +5904,8 @@
           "correctIndex": 2
         }
       ],
-      "template": "The rapid onset of a purpuric rash confirmed the doctor’s {{0}} of meningococcal septicaemia",
-      "explanation": "In medicine, 'suspicions' refers to a clinician’s belief that a certain disease might be present before it is definitively proven",
+      "template": "The rapid onset of a purpuric rash confirmed the doctor\u2019s {{0}} of meningococcal septicaemia",
+      "explanation": "In medicine, 'suspicions' refers to a clinician\u2019s belief that a certain disease might be present before it is definitively proven",
       "id": "o-db-0118"
     },
     {
@@ -5973,7 +5975,7 @@
           ]
         }
       ],
-      "template": "After three days of intravenous antibiotics, there was a {{0}} improvement in the patient’s inflammatory markers",
+      "template": "After three days of intravenous antibiotics, there was a {{0}} improvement in the patient\u2019s inflammatory markers",
       "type": "dropdown_blanks",
       "explanation": "'Notable' is used to describe an improvement that is significant enough to be clearly seen or noticed",
       "id": "o-db-0122"
@@ -6045,7 +6047,7 @@
           "correctIndex": 2
         }
       ],
-      "template": "The neurologist explained that the patient’s speech difficulties were long-term {{0}} of the initial ischaemic stroke",
+      "template": "The neurologist explained that the patient\u2019s speech difficulties were long-term {{0}} of the initial ischaemic stroke",
       "type": "dropdown_blanks",
       "explanation": "'Sequelae' are chronic conditions or consequences that follow as a result of a previous disease or injury",
       "id": "o-db-0126"
@@ -6071,7 +6073,7 @@
     {
       "explanation": "'Deteriorated rapidly' describes a quick and significant worsening of a patient's health status",
       "type": "dropdown_blanks",
-      "template": "The ward sister called for a crash team when the patient’s respiratory function {{0}} over the course of ten minutes",
+      "template": "The ward sister called for a crash team when the patient\u2019s respiratory function {{0}} over the course of ten minutes",
       "blanks": [
         {
           "correctIndex": 3,
@@ -6298,7 +6300,7 @@
       ],
       "explanation": "Genetic 'predisposition' means having a higher-than-average tendency to develop a particular condition",
       "prompt": "Choose the term for genetic susceptibility",
-      "template": "The patient’s family history suggested he was genetically {{0}} to developing Type 2 diabetes",
+      "template": "The patient\u2019s family history suggested he was genetically {{0}} to developing Type 2 diabetes",
       "type": "dropdown_blanks",
       "id": "o-db-0140"
     },
@@ -6359,7 +6361,7 @@
     {
       "explanation": "'Remission' is the stage where the symptoms of a chronic disease disappear or are significantly reduced",
       "prompt": "Select the term for a period of disease inactivity",
-      "template": "After several rounds of chemotherapy, the oncologist confirmed that the patient’s leukaemia was in complete {{0}}",
+      "template": "After several rounds of chemotherapy, the oncologist confirmed that the patient\u2019s leukaemia was in complete {{0}}",
       "type": "dropdown_blanks",
       "blanks": [
         {
@@ -6528,7 +6530,7 @@
       "id": "o-db-0153"
     },
     {
-      "template": "Extra precautions were taken because the patient’s immune system had been severely {{0}} by the transplant medication",
+      "template": "Extra precautions were taken because the patient\u2019s immune system had been severely {{0}} by the transplant medication",
       "type": "dropdown_blanks",
       "blanks": [
         {
@@ -6705,7 +6707,7 @@
       "id": "o-db-0163"
     },
     {
-      "template": "The onset of Alzheimer’s disease is often {{0}}, with memory lapses being attributed to normal ageing",
+      "template": "The onset of Alzheimer\u2019s disease is often {{0}}, with memory lapses being attributed to normal ageing",
       "type": "dropdown_blanks",
       "blanks": [
         {
@@ -7096,7 +7098,7 @@
           ]
         }
       ],
-      "template": "The consultant is trying to identify any {{0}} factors that may have led to the patient’s sudden hypertensive crisis",
+      "template": "The consultant is trying to identify any {{0}} factors that may have led to the patient\u2019s sudden hypertensive crisis",
       "prompt": "Identify the word that describes a factor that triggers an event",
       "id": "o-db-0185"
     },
@@ -8016,7 +8018,7 @@
       "id": "o-dd-0042"
     },
     {
-      "template": "A series of blood tests and imaging studies were ordered to {{0}} the exact cause of the patient’s persistent jaundice",
+      "template": "A series of blood tests and imaging studies were ordered to {{0}} the exact cause of the patient\u2019s persistent jaundice",
       "explanation": "To 'ascertain' means to find out or make certain, which fits the context of confirming a diagnosis through testing",
       "blanks": [
         {
@@ -8726,7 +8728,7 @@
         }
       ],
       "type": "drag_drop_blanks",
-      "template": "The pharmacist noticed that the patient’s poor treatment {{0}} was due to confusion regarding the complex dosing schedule",
+      "template": "The pharmacist noticed that the patient\u2019s poor treatment {{0}} was due to confusion regarding the complex dosing schedule",
       "id": "o-dd-0084"
     },
     {

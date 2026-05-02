@@ -1293,7 +1293,7 @@
     },
     {
       "explanation": "Port 3389 is the default port used by Microsoft's Remote Desktop Protocol (RDP) for remote management",
-      "question": "An IT manager in Bristol needs to remotely access a Windows server's desktop user interface across the local network. Which port must be open on the server’s firewall?",
+      "question": "An IT manager in Bristol needs to remotely access a Windows server's desktop user interface across the local network. Which port must be open on the server\u2019s firewall?",
       "correctAnswer": 3,
       "type": "multiple_choice",
       "options": [
@@ -1851,7 +1851,7 @@
       "id": "cap-mc-0142"
     },
     {
-      "question": "An iPhone user in Cambridge needs to replace their damaged charging cable. What is the name of Apple’s proprietary 8-pin connector used for mobile devices?",
+      "question": "An iPhone user in Cambridge needs to replace their damaged charging cable. What is the name of Apple\u2019s proprietary 8-pin connector used for mobile devices?",
       "type": "multiple_choice",
       "correctAnswer": 2,
       "explanation": "Modern Apple devices use the proprietary Lightning connector (mostly older iPhones) or USB-C (newer models) for charging and data transfer",
@@ -2703,7 +2703,7 @@
         "RFID"
       ],
       "explanation": "NFC (Near Field Communication) is the short-range wireless technology used for contactless payments like Apple Pay and Google Pay",
-      "question": "A café in Cardiff wants to allow customers to pay for coffee by tapping their mobile phones against a payment terminal. Which wireless technology makes this possible?",
+      "question": "A caf\u00e9 in Cardiff wants to allow customers to pay for coffee by tapping their mobile phones against a payment terminal. Which wireless technology makes this possible?",
       "correctAnswer": 2,
       "type": "multiple_choice",
       "id": "cap-mc-0208"
@@ -5082,16 +5082,13 @@
         "VGA",
         "DVI-D"
       ],
-      "type": "image_question",
-      "imageDescription": "A close-up photo of the back of a computer motherboard showing a blue DE-15 connector, commonly known as a VGA port",
-      "imageAlt": "A blue 15-pin female port on the back of a PC case",
+      "type": "multiple_choice",
       "correctAnswer": 2,
-      "question": "You are setting up a legacy workstation for a client. Which video port is shown in the image?",
-      "id": "cap-im-0001"
+      "question": "A close-up photo of the back of a computer motherboard showing a blue DE-15 connector, commonly known as a VGA port. You are setting up a legacy workstation for a client. Which video port is shown ?",
+      "id": "cap-im-0001",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A small circuit board with memory chips, roughly half the size of a desktop RAM stick",
-      "imageDescription": "A high-resolution photo of a DDR4 SO-DIMM RAM module, clearly showing the 260-pin configuration and its small form factor",
       "explanation": "SO-DIMM (Small Outline Dual In-line Memory Module) is the standard form factor used for laptop RAM due to its compact size",
       "options": [
         "Laptop (SO-DIMM)",
@@ -5099,16 +5096,15 @@
         "Server (Buffered)",
         "Micro-SD"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 0,
-      "question": "A technician is looking to upgrade the memory in a device. Based on the size of the module in the image, what type of device is it intended for?",
-      "id": "cap-im-0002"
+      "question": "A high-resolution photo of a DDR4 SO-DIMM RAM module, clearly showing the 260-pin configuration and its small form factor. A technician is looking to upgrade the memory in a device. Based on the size of the module , what type of device is it intended for?",
+      "id": "cap-im-0002",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "Which component is shown in the image, primarily designed to dissipate heat from internal chips?",
-      "imageDescription": "An image of an aluminium passive heat sink with multiple rows of cooling fins, designed for a motherboard chipset or CPU",
-      "imageAlt": "A metal object with many thin vertical fins and a flat base",
-      "type": "image_question",
+      "question": "An image of an aluminium passive heat sink with multiple rows of cooling fins, designed for a motherboard chipset or CPU. Which component is shown , primarily designed to dissipate heat from internal chips?",
+      "type": "multiple_choice",
       "explanation": "Heat sinks use a large surface area of fins to dissipate heat from the CPU into the surrounding air, often assisted by a fan",
       "options": [
         "Power Supply",
@@ -5117,10 +5113,11 @@
         "Heat Sink"
       ],
       "correctAnswer": 3,
-      "id": "cap-im-0003"
+      "id": "cap-im-0003",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "A network engineer needs to connect a console cable to a router. Which legacy PC port shown in the image is typically used for this?",
+      "question": "A photo of a 9-pin DB9 Serial (RS-232) port, usually found on older PCs or modern industrial equipment. A network engineer needs to connect a console cable to a router. Which legacy PC port shown is typically used for this?",
       "explanation": "The 'D' shape and 9-pin configuration identify this as a DB9 Serial port, used for console connections to networking equipment",
       "options": [
         "Parallel Port",
@@ -5128,15 +5125,14 @@
         "PS/2 Port",
         "USB-B Port"
       ],
-      "type": "image_question",
-      "imageDescription": "A photo of a 9-pin DB9 Serial (RS-232) port, usually found on older PCs or modern industrial equipment",
-      "imageAlt": "A 9-pin male connector on the back of a computer",
+      "type": "multiple_choice",
       "correctAnswer": 1,
-      "id": "cap-im-0004"
+      "id": "cap-im-0004",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 0,
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "This is a Molex connector, which provides 5V and 12V power to older PATA hard drives and optical drives",
       "options": [
         "Molex connector",
@@ -5144,15 +5140,14 @@
         "PCIe 8-pin connector",
         "Berg connector"
       ],
-      "imageDescription": "A close-up image of a 4-pin Molex peripheral power connector extending from a PC power supply unit",
-      "imageAlt": "A white plastic 4-pin power connector with red, black, and yellow wires",
-      "question": "What is the name of the power connector shown in the image, commonly used for older internal peripherals?",
-      "id": "cap-im-0005"
+      "question": "A close-up image of a 4-pin Molex peripheral power connector extending from a PC power supply unit. What is the name of the power connector shown , commonly used for older internal peripherals?",
+      "id": "cap-im-0005",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "Identify the internal storage component shown in the image",
+      "question": "An image of an NVMe M.2 2280 internal Solid State Drive (SSD), showing the NAND flash chips and the interface pins. Identify the internal storage component shown?",
       "correctAnswer": 2,
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "The notched 'M' and 'B' keys on the circuit board identify this as an M.2 SSD, used for high-speed storage",
       "options": [
         "Sound Card",
@@ -5160,9 +5155,8 @@
         "M.2 SSD",
         "CMOS Battery"
       ],
-      "imageDescription": "An image of an NVMe M.2 2280 internal Solid State Drive (SSD), showing the NAND flash chips and the interface pins",
-      "imageAlt": "A small, flat rectangular circuit board with a gold-plated connector at one end",
-      "id": "cap-im-0006"
+      "id": "cap-im-0006",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 1,
@@ -5173,16 +5167,13 @@
         "Torx driver",
         "Hex key (Allen wrench)"
       ],
-      "type": "image_question",
-      "imageDescription": "A clear image of a Phillips head screwdriver with a magnetic tip, positioned next to a standard PC case screw",
-      "imageAlt": "A screwdriver with a cross-shaped tip",
-      "question": "Which tool shown in the image is the primary requirement for assembling a standard desktop PC?",
-      "id": "cap-im-0007"
+      "type": "multiple_choice",
+      "question": "A clear image of a Phillips head screwdriver with a magnetic tip, positioned next to a standard PC case screw. Which tool shown is the primary requirement for assembling a standard desktop PC?",
+      "id": "cap-im-0007",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What does the blue colour inside the USB port in the image signify?",
-      "imageDescription": "A close-up of a laptop's side showing a USB Type-A port with the distinct blue interior colour coding",
-      "imageAlt": "A USB Type-A port with a blue internal plastic part",
+      "question": "A close-up of a laptop's side showing a USB Type-A port with the distinct blue interior colour coding. What does the blue colour inside the USB port signify?",
       "explanation": "The blue plastic tab inside the port indicates it is a USB 3.0 (SuperSpeed) port, capable of faster data transfer than USB 2.0",
       "options": [
         "USB 1.1",
@@ -5190,14 +5181,13 @@
         "FireWire 800",
         "USB 3.0 (SuperSpeed)"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 3,
-      "id": "cap-im-0008"
+      "id": "cap-im-0008",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 1,
-      "imageAlt": "A large black plastic container with a long green or black roller visible",
-      "imageDescription": "A photograph of a replacement toner cartridge for a laser printer, showing the drum assembly and developer unit",
       "explanation": "The image shows a Laser printer toner cartridge; toner is a fine powder used in the laser printing process rather than liquid ink",
       "options": [
         "Inkjet cartridge laser unit",
@@ -5205,13 +5195,14 @@
         "Thermal transfer ribbon",
         "Dot matrix ribbon"
       ],
-      "type": "image_question",
-      "question": "Which type of printer consumable is shown in the image?",
-      "id": "cap-im-0009"
+      "type": "multiple_choice",
+      "question": "A photograph of a replacement toner cartridge for a laser printer, showing the drum assembly and developer unit. Which type of printer consumable is shown ?",
+      "id": "cap-im-0009",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 2,
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "This is an RJ45 connector, used for Ethernet networking. It has 8 pins, unlike the smaller 4-pin RJ11 phone connector",
       "options": [
         "RJ11 connector",
@@ -5219,17 +5210,14 @@
         "RJ45 connector",
         "ST Fibre connector"
       ],
-      "imageDescription": "An image of an RJ45 modular plug terminated on a Category 6 Ethernet cable",
-      "imageAlt": "A clear plastic connector at the end of a network cable with 8 copper pins",
-      "question": "What is the name of the connector shown at the end of this network cable?",
-      "id": "cap-im-0010"
+      "question": "An image of an RJ45 modular plug terminated on a Category 6 Ethernet cable. What is the name of the connector shown at the end of this network cable?",
+      "id": "cap-im-0010",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "Which tool would a technician use to test the voltage output of a PC power supply as shown in the image?",
+      "question": "An image of a digital multimeter with probes attached, showing the various settings for Volts, Ohms, and Amps on the central dial. Which tool would a technician use to test the voltage output of a PC power supply as shown ?",
       "correctAnswer": 0,
-      "imageDescription": "An image of a digital multimeter with probes attached, showing the various settings for Volts, Ohms, and Amps on the central dial",
-      "imageAlt": "A handheld electronic device with a digital screen, a dial, and two probes (red and black)",
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "A multimeter is used to measure electrical values such as voltage (AC/DC), resistance (Ohms), and continuity",
       "options": [
         "Multimeter",
@@ -5237,13 +5225,12 @@
         "Tone generator",
         "Cable tester"
       ],
-      "id": "cap-im-0011"
+      "id": "cap-im-0011",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 3,
-      "imageAlt": "A white cable with a thick copper core and a threaded metal nut at the end",
-      "imageDescription": "An image of a Coaxial cable (RG-6) with a pre-installed F-type compression connector",
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "The thick, round connectors with threaded collars are F-type connectors, standard for RG-6 coaxial cables used in cable TV and internet",
       "options": [
         "HDMI cable",
@@ -5251,53 +5238,51 @@
         "STP Ethernet cable",
         "Coaxial cable"
       ],
-      "question": "Which type of cabling, often used for cable internet installations, is shown in the image?",
-      "id": "cap-im-0012"
+      "question": "An image of a Coaxial cable (RG-6) with a pre-installed F-type compression connector. Which type of cabling, often used for cable internet installations, is shown ?",
+      "id": "cap-im-0012",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 2,
-      "imageDescription": "A close-up of an LC fibre optic connector, highlighting its compact size and the square-shaped plastic body with a retaining clip on top",
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "The image shows an LC (Lucent Connector), which is a small form factor fibre optic connector with a push-pull clip mechanism",
-      "imageAlt": "Small fibre optic connector with a plastic locking clip",
-      "question": "A technician is installing a high-speed backbone connection between two network switches. Which type of fibre optic connector is shown in the image?",
+      "question": "A close-up of an LC fibre optic connector, highlighting its compact size and the square-shaped plastic body with a retaining clip on top. A technician is installing a high-speed backbone connection between two network switches. Which type of fibre optic connector is shown ?",
       "options": [
         "SC connector",
         "ST connector",
         "LC connector",
         "MT-RJ connector"
       ],
-      "id": "cap-im-0013"
+      "id": "cap-im-0013",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 0,
-      "imageDescription": "Top-down view of a Mini-DTX motherboard, showing the CPU socket, RAM slots, and two distinct PCIe expansion slots at the bottom",
-      "type": "image_question",
-      "imageAlt": "Small rectangular motherboard with two PCIe slots",
+      "type": "multiple_choice",
       "explanation": "The image displays a Mini-DTX motherboard, which is slightly longer than Mini-ITX but smaller than Micro-ATX, typically featuring two expansion slots",
-      "question": "An engineer is building a Small Form Factor (SFF) PC. Based on the layout and the presence of two expansion slots, which motherboard form factor is shown?",
+      "question": "Top-down view of a Mini-DTX motherboard, showing the CPU socket, RAM slots, and two distinct PCIe expansion slots at the bottom. An engineer is building a Small Form Factor (SFF) PC. Based on the layout and the presence of two expansion slots, which motherboard form factor is shown?",
       "options": [
         "Mini-DTX",
         "Mini-ITX",
         "Micro-ATX",
         "ATX"
       ],
-      "id": "cap-im-0014"
+      "id": "cap-im-0014",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "Three-pronged recessed power connector on the back of a PC",
       "explanation": "The image shows a C14 inlet on a PC power supply, which accepts a C13 'kettle lead' power cable common in the UK and worldwide",
-      "question": "When connecting a desktop computer to UK mains power, which standard IEC connector found on the back of the PSU is shown in the image?",
+      "question": "The rear of a desktop power supply unit (PSU) showing the male 3-pin recessed power interface known as a C14 inlet. When connecting a desktop computer to UK mains power, which standard IEC connector found on the back of the PSU is shown ?",
       "options": [
         "C19 connector",
         "C14 inlet",
         "C7 'Figure-8' connector",
         "C5 'Cloverleaf' connector"
       ],
-      "imageDescription": "The rear of a desktop power supply unit (PSU) showing the male 3-pin recessed power interface known as a C14 inlet",
       "correctAnswer": 1,
-      "type": "image_question",
-      "id": "cap-im-0015"
+      "type": "multiple_choice",
+      "id": "cap-im-0015",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -5306,49 +5291,45 @@
         "M.2 NVMe drive",
         "1.8-inch Micro-SATA drive"
       ],
-      "question": "A technician is repairing a legacy ultra-portable laptop. Which storage form factor is shown in the image?",
+      "question": "An internal mechanical or solid-state drive that is significantly smaller than a 2.5-inch laptop drive, featuring a combined power and data SATA interface. A technician is repairing a legacy ultra-portable laptop. Which storage form factor is shown ?",
       "explanation": "The image shows a 1.8-inch Micro-SATA (uSATA) drive, which was commonly used in ultra-portable laptops before M.2 became the standard",
-      "imageAlt": "Small 1.8-inch internal storage drive",
-      "type": "image_question",
-      "imageDescription": "An internal mechanical or solid-state drive that is significantly smaller than a 2.5-inch laptop drive, featuring a combined power and data SATA interface",
+      "type": "multiple_choice",
       "correctAnswer": 3,
-      "id": "cap-im-0016"
+      "id": "cap-im-0016",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 2,
-      "imageDescription": "Side view of a laptop chassis showing a small video output port that is smaller than HDMI but larger than USB-C, with a distinct 'D' shaped icon next to it",
       "options": [
         "Micro-HDMI",
         "Thunderbolt 4",
         "Mini-DisplayPort",
         "DVI-D"
       ],
-      "question": "A user wants to connect their laptop to an external monitor. Which video output port is shown on the side of the device?",
-      "imageAlt": "Small rectangular port with two angled corners",
+      "question": "Side view of a laptop chassis showing a small video output port that is smaller than HDMI but larger than USB-C, with a distinct 'D' shaped icon next to it. A user wants to connect their laptop to an external monitor. Which video output port is shown on the side of the device?",
       "explanation": "The image shows a Mini-DisplayPort, often identified by its rectangular shape with two notched corners, frequently used on laptops and surface devices",
-      "id": "cap-im-0017"
+      "id": "cap-im-0017",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "A laser printer is producing vertical streaks on every page. Which component shown in the image likely needs cleaning or replacement?",
+      "question": "An individual laser printer component consisting of a long, light-sensitive cylinder with a metallic green coating, separate from the toner cartridge. A laser printer is producing vertical streaks on every page. Which component shown likely needs cleaning or replacement?",
       "options": [
         "Imaging drum",
         "Fuser assembly",
         "Transfer belt Imaging",
         "Pickup roller"
       ],
-      "imageAlt": "Long cylindrical component with a shiny green/blue surface",
       "explanation": "The image shows a toner drum unit. In laser printing, the drum is the component that receives the image from the laser before transferring toner to the paper",
-      "type": "image_question",
-      "imageDescription": "An individual laser printer component consisting of a long, light-sensitive cylinder with a metallic green coating, separate from the toner cartridge",
+      "type": "multiple_choice",
       "correctAnswer": 0,
-      "id": "cap-im-0018"
+      "id": "cap-im-0018",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageDescription": "A screenshot of a Wi-Fi analyser tool showing a crowded 2.4GHz spectrum with numerous overlapping Service Set Identifiers (SSIDs)",
+      "type": "multiple_choice",
       "correctAnswer": 1,
-      "question": "To resolve the network congestion shown in the Wi-Fi analyser image, which frequency band should the technician migrate users to?",
+      "question": "A screenshot of a Wi-Fi analyser tool showing a crowded 2.4GHz spectrum with numerous overlapping Service Set Identifiers (SSIDs). To resolve the network congestion shown in the Wi-Fi analyser image, which frequency band should the technician migrate users to?",
       "options": [
         "2.4GHz band",
         "5.0GHz band",
@@ -5356,12 +5337,11 @@
         "900MHz band"
       ],
       "explanation": "High-density Wi-Fi deployments use the 5GHz frequency to provide more channels and less interference than the 2.4GHz band",
-      "imageAlt": "Wi-Fi analyser screen showing many overlapping 2.4GHz signals",
-      "id": "cap-im-0019"
+      "id": "cap-im-0019",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageDescription": "A networking tool consisting of an RJ45 connector with the transmit pins wired directly to the receive pins, used for diagnostic testing",
+      "type": "multiple_choice",
       "correctAnswer": 1,
       "options": [
         "Punchdown tool",
@@ -5369,31 +5349,29 @@
         "TDR (Time Domain Reflectometer)",
         "Tone generator"
       ],
-      "question": "Which diagnostic tool is shown in the image, used to verify that a computer's network port is functioning correctly?",
-      "imageAlt": "Small RJ45 plug with a single wire looping back into itself",
+      "question": "A networking tool consisting of an RJ45 connector with the transmit pins wired directly to the receive pins, used for diagnostic testing. Which diagnostic tool is shown , used to verify that a computer's network port is functioning correctly?",
       "explanation": "The image shows a loopback plug, used to test the physical port of a network interface card (NIC) by routing the outgoing signal back to the input",
-      "id": "cap-im-0020"
+      "id": "cap-im-0020",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 3,
-      "imageDescription": "A comparison of two memory modules; one is a standard laptop SODIMM, and the other is a significantly smaller 172-pin Micro-DIMM",
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "A Micro-DIMM is the smallest type of RAM module shown, historically used in sub-notebooks and very small form factor devices",
-      "imageAlt": "Very small RAM module next to a standard SODIMM for scale",
       "options": [
         "DDR4 DIMM",
         "DDR3 SODIMM",
         "Desktop SDRAM",
         "Micro-DIMM"
       ],
-      "question": "A technician is upgrading a very old sub-notebook. Which specialised memory form factor is shown in the image?",
-      "id": "cap-im-0021"
+      "question": "A comparison of two memory modules; one is a standard laptop SODIMM, and the other is a significantly smaller 172-pin Micro-DIMM. A technician is upgrading a very old sub-notebook. Which specialised memory form factor is shown ?",
+      "id": "cap-im-0021",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageDescription": "A close-up of a motherboard showing a very short expansion slot located near a full-length PCIe x16 slot",
+      "type": "multiple_choice",
       "correctAnswer": 0,
-      "question": "A technician needs to install a simple Wi-Fi expansion card. Which motherboard slot shown in the image is typically used for this?",
+      "question": "A close-up of a motherboard showing a very short expansion slot located near a full-length PCIe x16 slot. A technician needs to install a simple Wi-Fi expansion card. Which motherboard slot shown is typically used for this?",
       "options": [
         "PCIe x1 slot",
         "PCIe x4 slot",
@@ -5401,26 +5379,24 @@
         "PCI slot"
       ],
       "explanation": "The image shows a PCIe x1 slot, which is the smallest expansion slot on a modern motherboard, providing a single lane of communication",
-      "imageAlt": "Shortest expansion slot on a motherboard",
-      "id": "cap-im-0022"
+      "id": "cap-im-0022",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "The image shows an M.2 SSD with two notches, which identifies it as a 'B & M Key' drive, typically supporting SATA or PCIe x2 speeds",
-      "imageAlt": "M.2 SSD with two cut-outs in the connector",
       "options": [
         "M-Key only",
         "B-Key only",
         "B & M Key",
         "E-Key only"
       ],
-      "question": "Which keying configuration is shown on the M.2 SSD in the image?",
+      "question": "An M.2 solid-state drive showing the edge connector pins with two distinct notches (keys) at the end. Which keying configuration is shown on the M.2 SSD ?",
       "correctAnswer": 2,
-      "imageDescription": "An M.2 solid-state drive showing the edge connector pins with two distinct notches (keys) at the end",
-      "type": "image_question",
-      "id": "cap-im-0023"
+      "type": "multiple_choice",
+      "id": "cap-im-0023",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "Small metal modular transceiver used in network switches",
       "explanation": "The image shows an SFP (Small Form-factor Pluggable) transceiver, used to convert electrical signals to optical signals in network switches",
       "options": [
         "SFP module",
@@ -5428,31 +5404,29 @@
         "DB9 adapter",
         "PCIe bridge"
       ],
-      "question": "Which modular transceiver is shown in the image, used to add fibre optic connectivity to a network switch?",
+      "question": "A hot-swappable, metal input/output transceiver used in the SFP port of a network switch to provide fibre optic connectivity. Which modular transceiver is shown , used to add fibre optic connectivity to a network switch?",
       "correctAnswer": 0,
-      "imageDescription": "A hot-swappable, metal input/output transceiver used in the SFP port of a network switch to provide fibre optic connectivity",
-      "type": "image_question",
-      "id": "cap-im-0024"
+      "type": "multiple_choice",
+      "id": "cap-im-0024",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Solder paste",
         "Thermal compound/paste",
         "Conductive adhesive",
         "Silicone lubricant"
       ],
-      "imageAlt": "A small tube of grey viscous liquid being applied to a square processor chip",
       "correctAnswer": 1,
       "explanation": "Thermal paste is applied between the CPU and the heat sink to fill microscopic air gaps and facilitate heat transfer",
-      "imageDescription": "A close-up of a syringe dispensing a pea-sized amount of grey thermal compound onto the centre of an Intel or AMD CPU installed on a motherboard",
-      "question": "What substance is being applied to the CPU in the image to aid heat dissipation?",
-      "id": "cap-im-0025"
+      "question": "A close-up of a syringe dispensing a pea-sized amount of grey thermal compound onto the centre of an Intel or AMD CPU installed on a motherboard. What substance is being applied to the CPU to aid heat dissipation?",
+      "id": "cap-im-0025",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "The DB-9 connector is the standard interface for RS-232 serial communications on older PCs and networking equipment",
-      "type": "image_question",
-      "imageAlt": "A trapezoidal connector with 9 pins arranged in two rows",
+      "type": "multiple_choice",
       "options": [
         "DB-9 (Serial)",
         "VGA (DE-15)",
@@ -5460,14 +5434,12 @@
         "Parallel Port"
       ],
       "correctAnswer": 0,
-      "question": "Identify the 9-pin legacy connector shown in the image",
-      "imageDescription": "A close-up of a male DB-9 serial port, featuring 9 pins in a 5-over-4 configuration, commonly found on old motherboards or industrial equipment",
-      "id": "cap-im-0026"
+      "question": "A close-up of a male DB-9 serial port, featuring 9 pins in a 5-over-4 configuration, commonly found on old motherboards or industrial equipment. Identify the 9-pin legacy connector shown?",
+      "id": "cap-im-0026",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A professional networking crimping tool with an RJ45 connector inserted into the die, showing the metal teeth about to be pressed into the wires",
-      "question": "Which tool is shown being used to terminate a network cable with an RJ45 connector?",
-      "imageAlt": "A hand tool with metal jaws and handles designed to squeeze connectors onto cables",
+      "question": "A professional networking crimping tool with an RJ45 connector inserted into the die, showing the metal teeth about to be pressed into the wires. Which tool is shown being used to terminate a network cable with an RJ45 connector?",
       "options": [
         "Wire stripper crimper",
         "Punch down tool",
@@ -5475,9 +5447,10 @@
         "Cable tester"
       ],
       "correctAnswer": 2,
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "A crimper is used to attach RJ45 or RJ11 connectors to the ends of twisted-pair or telephone cables",
-      "id": "cap-im-0027"
+      "id": "cap-im-0027",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "The 24-pin ATX connector provides the primary power from the PSU to the motherboard in modern systems",
@@ -5487,16 +5460,14 @@
         "4-pin EPS connector",
         "24-pin ATX power"
       ],
-      "imageAlt": "A large white or black plastic connector with 24 pins at the end of a bundle of multi-coloured wires",
       "correctAnswer": 3,
-      "type": "image_question",
-      "question": "What is the name of the main motherboard power connector shown in the image?",
-      "imageDescription": "A close-up of the main 24-pin ATX power connector being held near its corresponding socket on a motherboard",
-      "id": "cap-im-0028"
+      "type": "multiple_choice",
+      "question": "A close-up of the main 24-pin ATX power connector being held near its corresponding socket on a motherboard. What is the name of the main motherboard power connector shown ?",
+      "id": "cap-im-0028",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A specialised ESD-safe vacuum cleaner used by technicians to clean spilled toner inside a laser printer",
-      "question": "Which specialised cleaning tool is shown in the image for maintaining laser printers?",
+      "question": "A specialised ESD-safe vacuum cleaner used by technicians to clean spilled toner inside a laser printer. Which specialised cleaning tool is shown for maintaining laser printers?",
       "correctAnswer": 0,
       "options": [
         "Toner vacuum",
@@ -5504,25 +5475,24 @@
         "Compressed air canister",
         "HEPA desktop fan"
       ],
-      "imageAlt": "A portable black canister vacuum with a flexible hose and various nozzle attachments",
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "A toner vacuum is ESD-safe and includes high-efficiency filters to trap the extremely fine particles found in laser printer toner",
-      "id": "cap-im-0029"
+      "id": "cap-im-0029",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 2,
-      "imageAlt": "A small rectangular circuit board with gold pins on one edge and several black memory chips",
       "options": [
         "DIMM",
         "MicroDIMM",
         "SODIMM",
         "SIMM"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "The image shows an SODIMM, which is the smaller memory module form factor used in laptops and small-form-factor PCs",
-      "imageDescription": "A laptop DDR4 SODIMM module held between two fingers, significantly shorter than a standard desktop RAM stick",
-      "question": "Which RAM form factor, typically used in laptops, is shown in the image?",
-      "id": "cap-im-0030"
+      "question": "A laptop DDR4 SODIMM module held between two fingers, significantly shorter than a standard desktop RAM stick. Which RAM form factor, typically used in laptops, is shown ?",
+      "id": "cap-im-0030",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -5531,17 +5501,15 @@
         "SCSI cable",
         "Floppy drive cable"
       ],
-      "imageAlt": "A wide, flat grey ribbon cable with a long rectangular connector",
       "correctAnswer": 1,
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "The PATA (Parallel ATA) or IDE cable uses a wide ribbon and 40-pin connectors, used for older hard drives and optical drives",
-      "imageDescription": "A 40-pin IDE/PATA ribbon cable with a blue connector on one end and two grey connectors for Master/Slave drives",
-      "question": "Which legacy data cable for internal storage drives is shown in the image?",
-      "id": "cap-im-0031"
+      "question": "A 40-pin IDE/PATA ribbon cable with a blue connector on one end and two grey connectors for Master/Slave drives. Which legacy data cable for internal storage drives is shown ?",
+      "id": "cap-im-0031",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "A Punch Down Tool is used to insert wires into IDC (Insulation Displacement Connector) terminals on patch panels or wall jacks",
-      "imageAlt": "A handheld tool with a spring-loaded yellow or blue handle and a metal blade",
       "options": [
         "Punch down tool",
         "Wire stripper",
@@ -5549,15 +5517,14 @@
         "Precision screwdriver"
       ],
       "correctAnswer": 0,
-      "type": "image_question",
-      "question": "Which tool is shown in the image being used to connect wires to a patch panel?",
-      "imageDescription": "An impact punch down tool being used to force a copper wire into a Krone-style terminal block on a network patch panel",
-      "id": "cap-im-0032"
+      "type": "multiple_choice",
+      "question": "An impact punch down tool being used to force a copper wire into a Krone-style terminal block on a network patch panel. Which tool is shown being used to connect wires to a patch panel?",
+      "id": "cap-im-0032",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 3,
-      "imageAlt": "A long plastic expansion slot on a motherboard with a small latch at one end",
       "options": [
         "PCI slot",
         "PCIe x1 slot",
@@ -5565,15 +5532,14 @@
         "PCIe x16 slot"
       ],
       "explanation": "The PCIe x16 slot is the longest expansion slot and provides the highest bandwidth, required for high-performance graphics cards",
-      "imageDescription": "A close-up view of a Primary PCI Express x16 slot on a modern motherboard, highlighted in a bright colour like red or blue",
-      "question": "Which motherboard expansion slot shown in the image is primarily used for dedicated graphics cards?",
-      "id": "cap-im-0033"
+      "question": "A close-up view of a Primary PCI Express x16 slot on a modern motherboard, highlighted in a bright colour like red or blue. Which motherboard expansion slot shown is primarily used for dedicated graphics cards?",
+      "id": "cap-im-0033",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "Identify the mobile device charging connector shown in the image",
-      "imageDescription": "An Apple Lightning cable connector shown from the top, displaying the 8 gold pins on the flat surface",
+      "question": "An Apple Lightning cable connector shown from the top, displaying the 8 gold pins on the flat surface. Identify the mobile device charging connector shown?",
       "explanation": "Lightning is a proprietary connector developed by Apple for iPhones, iPads, and older iPods",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 2,
       "options": [
         "USB-C",
@@ -5581,15 +5547,13 @@
         "Lightning",
         "Mini-USB"
       ],
-      "imageAlt": "A small, flat, 8-pin reversible connector at the end of a white cable",
-      "id": "cap-im-0034"
+      "id": "cap-im-0034",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What is the name of the component shown in the image that maintains BIOS settings?",
-      "imageDescription": "A close-up of a CR2032 lithium coin cell battery installed in its holder on a green motherboard PCB",
+      "question": "A close-up of a CR2032 lithium coin cell battery installed in its holder on a green motherboard PCB. What is the name of the component shown that maintains BIOS settings?",
       "explanation": "The CMOS battery (usually a CR2032) provides power to the BIOS/UEFI chip to maintain system settings and the real-time clock when the PC is off",
-      "type": "image_question",
-      "imageAlt": "A silver coin-shaped battery sitting in a small circular socket on a motherboard",
+      "type": "multiple_choice",
       "options": [
         "Southbridge chip",
         "CMOS battery",
@@ -5597,12 +5561,12 @@
         "Sintered capacitor"
       ],
       "correctAnswer": 1,
-      "id": "cap-im-0035"
+      "id": "cap-im-0035",
+      "__rewritten_from_image__": true
     },
     {
-      "explanation": "The image shows the BNC (Bayonet Neill–Concelman) connector, often used with RG-59 or RG-6 coaxial cables for video or older networking",
-      "type": "image_question",
-      "imageAlt": "A cylindrical metal connector with a locking ring that twists",
+      "explanation": "The image shows the BNC (Bayonet Neill\u2013Concelman) connector, often used with RG-59 or RG-6 coaxial cables for video or older networking",
+      "type": "multiple_choice",
       "options": [
         "BNC connector",
         "F-type connector",
@@ -5610,9 +5574,9 @@
         "SMA connector"
       ],
       "correctAnswer": 0,
-      "question": "Which type of coaxial cable connector is shown in the image?",
-      "imageDescription": "A BNC connector attached to the end of a black coaxial cable, showing the characteristic internal pin and outside twist-lock mechanism",
-      "id": "cap-im-0036"
+      "question": "A BNC connector attached to the end of a black coaxial cable, showing the characteristic internal pin and outside twist-lock mechanism. Which type of coaxial cable connector is shown ?",
+      "id": "cap-im-0036",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -5621,19 +5585,16 @@
         "NEMA 5-15P",
         "Molex 8981"
       ],
-      "question": "A technician needs to replace a damaged power cable for a desktop workstation in a UK office. Which connector type is shown in the image?",
-      "imageDescription": "A close-up of a black C13/C14 power cable, often referred to as a kettle lead, used for PCs and monitors",
+      "question": "A close-up of a black C13/C14 power cable, often referred to as a kettle lead, used for PCs and monitors. A technician needs to replace a damaged power cable for a desktop workstation in a UK office. Which connector type is shown ?",
       "explanation": "The image shows a C13 power lead, which is the standard connector used for desktop computers and monitors",
       "correctAnswer": 1,
-      "type": "image_question",
-      "imageAlt": "Standard AC power cable with three-pinned female end",
-      "id": "cap-im-0037"
+      "type": "multiple_choice",
+      "id": "cap-im-0037",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A digital multi-metre displaying a voltage reading with red and black probes held against a motherboard connector",
-      "question": "Which diagnostic tool is being used in the image to verify the voltage output of a power supply?",
-      "imageAlt": "A digital tool with a screen and a red and black probe",
-      "type": "image_question",
+      "question": "A digital multi-metre displaying a voltage reading with red and black probes held against a motherboard connector. Which diagnostic tool is being used to verify the voltage output of a power supply?",
+      "type": "multiple_choice",
       "correctAnswer": 2,
       "explanation": "The Multi-metre is the primary tool used to check if a power supply is delivering the correct DC voltages to the motherboard",
       "options": [
@@ -5642,22 +5603,22 @@
         "Multi-metre",
         "Cable Tester"
       ],
-      "id": "cap-im-0038"
+      "id": "cap-im-0038",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A black digital video cable with a gold-plated connector",
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "HDMI carries both high-definition video and digital audio signals over a single cable",
       "correctAnswer": 0,
-      "imageDescription": "A high-definition multimedia interface (HDMI) cable head showing the 19 pins and the distinctive D-shape",
-      "question": "Which interface shown in the image is designed to carry both digital video and audio signals?",
+      "question": "A high-definition multimedia interface (HDMI) cable head showing the 19 pins and the distinctive D-shape. Which interface shown is designed to carry both digital video and audio signals?",
       "options": [
         "HDMI",
         "VGA",
         "DVI-D",
         "DisplayPort"
       ],
-      "id": "cap-im-0039"
+      "id": "cap-im-0039",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -5666,19 +5627,16 @@
         "Mini DisplayPort",
         "Thunderbolt 3"
       ],
-      "imageAlt": "USB-C port with a small lightning bolt symbol next to it",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 3,
       "explanation": "The Thunderbolt 3 icon is a lightning bolt, and the connector uses the USB-C form factor",
-      "imageDescription": "A close-up of a laptop side-profile showing a USB-C port marked with a tiny lightning bolt symbol",
-      "question": "What high-speed data and video interface is represented by the port and symbol shown in the image?",
-      "id": "cap-im-0040"
+      "question": "A close-up of a laptop side-profile showing a USB-C port marked with a tiny lightning bolt symbol. What high-speed data and video interface is represented by the port and symbol shown ?",
+      "id": "cap-im-0040",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A POST (Power-On Self-Test) diagnostic card installed in a PCIe slot, showing a '2D' hexadecimal code on its LED display",
-      "question": "Which diagnostic hardware is shown in the image, used to troubleshoot a computer that fails to boot?",
-      "imageAlt": "Small circuit board with a two-digit LED display plugged into an expansion slot",
-      "type": "image_question",
+      "question": "A POST (Power-On Self-Test) diagnostic card installed in a PCIe slot, showing a '2D' hexadecimal code on its LED display. Which diagnostic hardware is shown , used to troubleshoot a computer that fails to boot?",
+      "type": "multiple_choice",
       "explanation": "A POST card is plugged into a motherboard slot to display hexadecimal codes that identify hardware errors during the boot process",
       "correctAnswer": 1,
       "options": [
@@ -5687,22 +5645,22 @@
         "Video Card",
         "SATA Controller"
       ],
-      "id": "cap-im-0041"
+      "id": "cap-im-0041",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A rectangular video connector with one corner angled",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 2,
       "explanation": "DisplayPort connectors have a unique flat side and a keyed side, and often feature a latching mechanism",
-      "imageDescription": "A DisplayPort cable connector showing the distinctive 'L' shape and the latch buttons on the top",
-      "question": "Which digital display interface is shown in the image, commonly used to connect high-end workstations to monitors?",
+      "question": "A DisplayPort cable connector showing the distinctive 'L' shape and the latch buttons on the top. Which digital display interface is shown , commonly used to connect high-end workstations to monitors?",
       "options": [
         "HDMI 2.1",
         "USB-C Alt Mode",
         "DisplayPort",
         "DVI-I"
       ],
-      "id": "cap-im-0042"
+      "id": "cap-im-0042",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -5711,28 +5669,26 @@
         "Soldering Flux",
         "Conductive Adhesive"
       ],
-      "imageDescription": "A small pea-sized amount of silver-grey thermal compound being applied to the centre of an LGA 1200 CPU",
-      "question": "What material is being applied in the image to ensure efficient heat transfer between the CPU and the cooling assembly?",
-      "type": "image_question",
+      "question": "A small pea-sized amount of silver-grey thermal compound being applied to the centre of an LGA 1200 CPU. What material is being applied to ensure efficient heat transfer between the CPU and the cooling assembly?",
+      "type": "multiple_choice",
       "explanation": "Thermal paste (or compound) is applied between the CPU and the heatsink to fill microscopic air gaps and improve heat transfer",
       "correctAnswer": 0,
-      "imageAlt": "Grey paste being applied to the top of a processor",
-      "id": "cap-im-0043"
+      "id": "cap-im-0043",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "The underside of a modern CPU with many flat gold contact points",
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "The image shows the underside of a CPU using Land Grid Array (LGA), where the pins are on the motherboard socket rather than the chip",
       "correctAnswer": 3,
-      "imageDescription": "The gold-contact underside of an Intel-based CPU, showing the flat 'Land Grid Array' pads instead of pins",
-      "question": "Which CPU socket architecture is identified by the flat gold contact points shown in the image?",
+      "question": "The gold-contact underside of an Intel-based CPU, showing the flat 'Land Grid Array' pads instead of pins. Which CPU socket architecture is identified by the flat gold contact points shown ?",
       "options": [
         "PGA (Pin Grid Array)",
         "BGA (Ball Grid Array)",
         "SEC (Single Edge Contact)",
         "LGA (Land Grid Array)"
       ],
-      "id": "cap-im-0044"
+      "id": "cap-im-0044",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -5741,28 +5697,26 @@
         "RAID 5",
         "RAID 10"
       ],
-      "imageAlt": "Diagram of two hard drives with identical blocks of data on both",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 1,
       "explanation": "RAID 1 provides redundancy by mirroring data across two drives; the image shows two identical disks with cloned data",
-      "imageDescription": "A technical diagram showing two hard drives labelled 'Disk 0' and 'Disk 1' with identical data blocks A, B, and C on each, representing mirroring",
-      "question": "Which RAID configuration is depicted in the diagram, focusing on data redundancy through mirroring?",
-      "id": "cap-im-0045"
+      "question": "A technical diagram showing two hard drives labelled 'Disk 0' and 'Disk 1' with identical data blocks A, B, and C on each, representing mirroring. Which RAID configuration is described, focusing on data redundancy through mirroring?",
+      "id": "cap-im-0045",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "White 4-pin plastic power connector",
       "correctAnswer": 2,
       "explanation": "Molex remains a common connector for powering older peripherals or secondary components like case fans",
-      "type": "image_question",
-      "question": "Which legacy internal power connector is shown in the image, often used for case fans or PATA drives?",
-      "imageDescription": "The 4-pin peripheral power connector, commonly known as a Molex connector, with yellow, black, and red wires",
+      "type": "multiple_choice",
+      "question": "The 4-pin peripheral power connector, commonly known as a Molex connector, with yellow, black, and red wires. Which legacy internal power connector is shown , often used for case fans or PATA drives?",
       "options": [
         "SATA Power",
         "Berg Connector",
         "Molex Connector",
         "EPS +12V"
       ],
-      "id": "cap-im-0046"
+      "id": "cap-im-0046",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -5771,28 +5725,26 @@
         "eSATA Port",
         "TPM Module"
       ],
-      "imageDescription": "A steel security cable locked into a Kensington Security Slot on the side of a silver laptop",
-      "question": "What type of physical security device is shown in the image, used to prevent laptop theft?",
-      "imageAlt": "A cable lock attached to a small rectangular hole on the side of a laptop",
-      "type": "image_question",
+      "question": "A steel security cable locked into a Kensington Security Slot on the side of a silver laptop. What type of physical security device is shown , used to prevent laptop theft?",
+      "type": "multiple_choice",
       "correctAnswer": 0,
       "explanation": "Kensington locks use a standard security slot (K-slot) to physically secure laptops to desks or fixtures",
-      "id": "cap-im-0047"
+      "id": "cap-im-0047",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "USB 3.0 Type-B connectors are used for large peripherals like printers and scanners and are physically taller than USB 2.0 Type-B",
       "correctAnswer": 3,
-      "imageAlt": "Blue squared-off USB connector with an extra 'bump' on the top",
-      "imageDescription": "A blue USB 3.0 Type-B connector, showing the standard square base with the additional five-pin 'tower' section on top",
-      "question": "Which USB connector is shown in the image, commonly used for high-speed connections to printers or external hard drives?",
+      "question": "A blue USB 3.0 Type-B connector, showing the standard square base with the additional five-pin 'tower' section on top. Which USB connector is shown , commonly used for high-speed connections to printers or external hard drives?",
       "options": [
         "USB 2.0 Type-B",
         "USB 3.0 Type-A",
         "Micro-USB B",
         "USB 3.0 Type-B"
       ],
-      "id": "cap-im-0048"
+      "id": "cap-im-0048",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "The image shows an LC (Lucent Connector), which is a small form-factor fiber optic connector featuring a locking tab functionality",
@@ -5802,12 +5754,11 @@
         "LC connector",
         "MTRJ connector"
       ],
-      "imageAlt": "A small, square-shaped fiber optic connector with a plastic clip",
-      "imageDescription": "A close-up of a blue LC fiber optic connector with a ceramic ferrule and a locking clip at the top",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 2,
-      "question": "Which type of fiber optic connector is shown in the image, commonly used in high-density networking environments?",
-      "id": "cap-im-0049"
+      "question": "A close-up of a blue LC fiber optic connector with a ceramic ferrule and a locking clip at the top. Which type of fiber optic connector is shown , commonly used in high-density networking environments?",
+      "id": "cap-im-0049",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "The S/PDIF (Toslink) port uses optical light pulses to transmit high-quality digital audio to sound systems",
@@ -5817,30 +5768,27 @@
         "Thunderbolt 3",
         "DisplayPort Audio"
       ],
-      "imageAlt": "A square-shaped optical audio port on the back of a PC",
       "correctAnswer": 0,
-      "question": "Which port shown in the image is used to transmit digital audio via optical fiber?",
-      "imageDescription": "A close-up of an S/PDIF optical audio port on a motherboard backplane, showing the square shape and internal shutter",
-      "type": "image_question",
-      "id": "cap-im-0050"
+      "question": "A close-up of an S/PDIF optical audio port on a motherboard backplane, showing the square shape and internal shutter. Which port shown is used to transmit digital audio via optical fiber?",
+      "type": "multiple_choice",
+      "id": "cap-im-0050",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "The image shows a Molex to SATA power adapter, used to provide power to newer SATA drives from older power supplies",
-      "imageAlt": "A cable with a 4-pin white plastic connector on one end and a flat black connector on the other",
       "options": [
         "PATA to SATA data adapter",
         "Molex to SATA power adapter",
         "PCIe to CPU power cable",
         "USB to SATA adapter cable"
       ],
-      "imageDescription": "A short adapter cable featuring a 4-pin Molex male connector linked to a 15-pin SATA power female connector",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 1,
-      "question": "What type of power conversion cable is shown in the image?",
-      "id": "cap-im-0051"
+      "question": "A short adapter cable featuring a 4-pin Molex male connector linked to a 15-pin SATA power female connector. What type of power conversion cable is shown ?",
+      "id": "cap-im-0051",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A blue coiled strap with a velcro band and a metal crocodile clip",
       "options": [
         "Cable management tie",
         "Power supply grounding wire",
@@ -5848,17 +5796,16 @@
         "ESD wrist strap"
       ],
       "explanation": "An ESD (Electrostatic Discharge) strap is worn on the wrist and clipped to a grounded metal surface to prevent static damage to electronics",
-      "imageDescription": "An anti-static wrist strap with a blue coiled cord, a wrist band, and a metal alligator clip for grounding",
-      "type": "image_question",
-      "question": "Which safety tool is shown in the image, designed to prevent electrostatic damage to internal components?",
+      "type": "multiple_choice",
+      "question": "An anti-static wrist strap with a blue coiled cord, a wrist band, and a metal alligator clip for grounding. Which safety tool is shown , designed to prevent electrostatic damage to internal components?",
       "correctAnswer": 3,
-      "id": "cap-im-0052"
+      "id": "cap-im-0052",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A desktop DDR4 RAM stick (DIMM) showing the PCB, memory chips, and a single off-centre notch in the pin row",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 1,
-      "question": "Which specific desktop memory form factor is shown in the image?",
+      "question": "A desktop DDR4 RAM stick (DIMM) showing the PCB, memory chips, and a single off-centre notch in the pin row. Which specific desktop memory form factor is shown ?",
       "explanation": "The DDR4 DIMM is identified by the position of its single notch and its 288-pin configuration used in modern desktops",
       "options": [
         "DDR3 DIMM",
@@ -5866,29 +5813,27 @@
         "DDR4 SO-DIMM",
         "DDR2 RAM module"
       ],
-      "imageAlt": "A long rectangular memory module with gold pins and a single notch",
-      "id": "cap-im-0053"
+      "id": "cap-im-0053",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A technician using a specialised electronic heat gun to warm the edges of a mobile phone screen for disassembly",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 0,
-      "question": "Which tool is being used in the image to assist in the removal of a mobile phone screen?",
+      "question": "A technician using a specialised electronic heat gun to warm the edges of a mobile phone screen for disassembly. Which tool is being used to assist in the removal of a mobile phone screen?",
       "explanation": "The heat gun is used in technical repair to soften adhesives, such as those holding a smartphone screen in place",
-      "imageAlt": "A handheld tool resembling a heavy-duty hair dryer being pointed at a phone",
       "options": [
         "Heat gun",
         "Soldering iron",
         "De-magnetiser",
         "Compressed air canister"
       ],
-      "id": "cap-im-0054"
+      "id": "cap-im-0054",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageDescription": "A technical diagram illustrating three hard drives (Disk 0, Disk 1, Disk 2) with data blocks A1, A2 and Parity A distributed across them",
+      "type": "multiple_choice",
       "correctAnswer": 2,
-      "question": "Which RAID level is depicted in this logic diagram?",
+      "question": "A technical diagram illustrating three hard drives (Disk 0, Disk 1, Disk 2) with data blocks A1, A2 and Parity A distributed across them. Which RAID level is depicted in this logic diagram?",
       "explanation": "RAID 5 uses disk striping with distributed parity, requiring at least three disks and providing a balance of performance and fault tolerance",
       "options": [
         "RAID 0 (Striping)",
@@ -5896,8 +5841,8 @@
         "RAID 5 (Striping with Parity)",
         "RAID 10 (Striping/Mirroring)"
       ],
-      "imageAlt": "A diagram showing data blocks spread across three drives with 'Parity' blocks highlighted",
-      "id": "cap-im-0055"
+      "id": "cap-im-0055",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "The image shows a laptop docking station, which provides a single connection point for peripherals like monitors, keyboards, and power",
@@ -5907,18 +5852,16 @@
         "USB Hub extension",
         "Docking station"
       ],
-      "imageAlt": "A flat device with multiple ports like USB, HDMI, and Ethernet, where a laptop can be seated",
-      "imageDescription": "A modern universal docking station with various ports (USB, DisplayPort, Ethernet) and a proprietary connector for a business laptop",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 3,
-      "question": "Which device is shown in the image, used to extend a laptop's connectivity to various desktop peripherals?",
-      "id": "cap-im-0056"
+      "question": "A modern universal docking station with various ports (USB, DisplayPort, Ethernet) and a proprietary connector for a business laptop. Which device is shown , used to extend a laptop's connectivity to various desktop peripherals?",
+      "id": "cap-im-0056",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageDescription": "An M.2 2280 form factor NVMe Solid State Drive showing the NAND flash chips and the M-key interface",
+      "type": "multiple_choice",
       "correctAnswer": 0,
-      "question": "Which internal storage component is shown in the image?",
+      "question": "An M.2 2280 form factor NVMe Solid State Drive showing the NAND flash chips and the M-key interface. Which internal storage component is shown ?",
       "explanation": "The M.2 NVMe SSD is a small, elongated drive that plugs directly into the motherboard and offers faster speeds than traditional SATA SSDs",
       "options": [
         "M.2 NVMe SSD",
@@ -5926,15 +5869,13 @@
         "Wi-Fi expansion card",
         "Laptop RAM module"
       ],
-      "imageAlt": "A small rectangular circuit board with memory chips and a gold-pin edge connector",
-      "id": "cap-im-0057"
+      "id": "cap-im-0057",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "Which laser printer component is shown in the image, responsible for melting toner onto the paper?",
+      "question": "An internal laser printer fuser unit featuring a heating roller and a pressure roller. Which laser printer component is shown , responsible for melting toner onto the paper?",
       "correctAnswer": 2,
-      "type": "image_question",
-      "imageDescription": "An internal laser printer fuser unit featuring a heating roller and a pressure roller",
-      "imageAlt": "A long mechanical component with rollers, often found inside a laser printer",
+      "type": "multiple_choice",
       "options": [
         "Imaging drum unit",
         "Transfer belt assembly",
@@ -5942,25 +5883,24 @@
         "Toner cartridge hopper"
       ],
       "explanation": "The fuser assembly uses heat and pressure to permanently bond the toner powder onto the paper in a laser printer",
-      "id": "cap-im-0058"
+      "id": "cap-im-0058",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A close-up of a laptop side-profile showing a USB Type-A port with a distinct blue inner plastic tab",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 1,
-      "question": "Based on the colour coding shown in the image, what is the speed standard of this USB port?",
+      "question": "A close-up of a laptop side-profile showing a USB Type-A port with a distinct blue inner plastic tab. Based on the colour coding shown , what is the speed standard of this USB port?",
       "explanation": "The blue plastic insert in a USB port typically signifies USB 3.0 (or 3.1 Gen 1) 'SuperSpeed' capability",
-      "imageAlt": "A USB-A port on a laptop with a blue plastic interior",
       "options": [
         "USB 2.0 (High Speed)",
         "USB 3.0 (SuperSpeed)",
         "USB 1.1 (Full Speed)",
         "USB Type-C socket"
       ],
-      "id": "cap-im-0059"
+      "id": "cap-im-0059",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A D-shaped connector with 9 pins in two rows",
       "options": [
         "DB-9 (Serial) connector",
         "VGA (DB-15) connector",
@@ -5968,71 +5908,67 @@
         "Parallel (DB-25) port"
       ],
       "explanation": "The DB-9 (RS-232) connector was traditionally used for serial communication with devices like routers, switches, and modems",
-      "question": "Which legacy connector, formerly used for serial terminal connections, is shown in the image?",
+      "question": "A male DB-9 serial connector with 5 pins on the top row and 4 pins on the bottom row. Which legacy connector, formerly used for serial terminal connections, is shown ?",
       "correctAnswer": 0,
-      "type": "image_question",
-      "imageDescription": "A male DB-9 serial connector with 5 pins on the top row and 4 pins on the bottom row",
-      "id": "cap-im-0060"
+      "type": "multiple_choice",
+      "id": "cap-im-0060",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "An RJ45 connector has eight pins and is the standard connector for twisted-pair Ethernet cabling",
-      "imageDescription": "A close-up of an RJ45 modular plug at the end of a blue Cat6 cable, showing the eight gold contact pins clearly",
       "options": [
         "RJ11 connector",
         "BNC connector",
         "RJ45 connector",
         "F-type connector"
       ],
-      "type": "image_question",
-      "question": "Identify the network connector shown in the image, typically used for Ethernet connections",
-      "imageAlt": "A close-up of a clear plastic network connector with 8 gold pins",
+      "type": "multiple_choice",
+      "question": "A close-up of an RJ45 modular plug at the end of a blue Cat6 cable, showing the eight gold contact pins clearly. Identify the network connector shown , typically used for Ethernet connections?",
       "correctAnswer": 2,
-      "id": "cap-im-0061"
+      "id": "cap-im-0061",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "LGA (Land Grid Array) sockets have pins on the motherboard that touch flat pads on the underside of the CPU",
-      "imageDescription": "A high-angle shot of an Intel LGA 1700 motherboard socket with the protective plastic cover removed, revealing the dense grid of pins",
       "options": [
         "LGA (Land Grid Array)",
         "PGA (Pin Grid Array)",
         "BGA (Ball Grid Array)",
         "ZIF (Zero Insertion Force)"
       ],
-      "question": "Which motherboard socket type is shown in the image, where the pins are located on the socket rather than the processor?",
-      "type": "image_question",
-      "imageAlt": "A motherboard socket with many small pins sticking up",
+      "question": "A high-angle shot of an Intel LGA 1700 motherboard socket with the protective plastic cover removed, revealing the dense grid of pins. Which motherboard socket type is shown , where the pins are located on the socket rather than the processor?",
+      "type": "multiple_choice",
       "correctAnswer": 0,
-      "id": "cap-im-0062"
+      "id": "cap-im-0062",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "A Multimeter is used to measure voltage, resistance, and current to troubleshoot power supply issues",
-      "imageDescription": "A yellow digital multimeter with black and red probes being used to test a 24-pin ATX power connector",
       "options": [
         "Cable tester",
         "Multimeter",
         "Tone generator and probe",
         "Loopback plug"
       ],
-      "question": "Which technician tool is shown in the image being used to check the voltage output of a power supply?",
-      "type": "image_question",
-      "imageAlt": "A handheld device with two probes and a digital display showing numbers",
+      "question": "A yellow digital multimeter with black and red probes being used to test a 24-pin ATX power connector. Which technician tool is shown being used to check the voltage output of a power supply?",
+      "type": "multiple_choice",
       "correctAnswer": 1,
-      "id": "cap-im-0063"
+      "id": "cap-im-0063",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 3,
-      "imageAlt": "A small, oval-shaped symmetrical USB plug",
-      "type": "image_question",
-      "question": "Which reversible peripheral connector is shown in the image?",
+      "type": "multiple_choice",
+      "question": "A close-up of a modern silver USB-C connector showing its symmetrical, rounded rectangular shape. Which reversible peripheral connector is shown ?",
       "options": [
         "USB Mini-B",
         "USB Micro-B",
         "USB Type-A",
         "USB Type-C"
       ],
-      "imageDescription": "A close-up of a modern silver USB-C connector showing its symmetrical, rounded rectangular shape",
       "explanation": "USB-C is a reversible 24-pin connector that supports high-speed data transfer and power delivery",
-      "id": "cap-im-0064"
+      "id": "cap-im-0064",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "RAID 5 uses block-level striping with distributed parity, requiring at least three disks",
@@ -6042,18 +5978,16 @@
         "RAID 10",
         "RAID 1"
       ],
-      "imageDescription": "A diagram showing three hard drives (Disk 0, Disk 1, Disk 2). Data blocks A1, A2 and Parity A are distributed across all three drives",
-      "type": "image_question",
-      "question": "Which RAID level is illustrated in this diagram, showing distributed parity across three disks?",
+      "type": "multiple_choice",
+      "question": "A diagram showing three hard drives (Disk 0, Disk 1, Disk 2). Data blocks A1, A2 and Parity A are distributed across all three drives. Which RAID level is illustrated , showing distributed parity across three disks?",
       "correctAnswer": 1,
-      "imageAlt": "A diagram showing data strips and parity blocks spread across three disks",
-      "id": "cap-im-0065"
+      "id": "cap-im-0065",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "Which internal storage component is shown in the image?",
-      "type": "image_question",
+      "question": "A top-down view of an M.2 2280 NVMe SSD showing the NAND flash chips and the M-key edge connector. Which internal storage component is shown ?",
+      "type": "multiple_choice",
       "correctAnswer": 0,
-      "imageAlt": "A small rectangular circuit board with a storage chip and a notched connector",
       "explanation": "An M.2 NVMe SSD is a small internal expansion card used for high-speed storage, typically installed directly onto the motherboard",
       "options": [
         "M.2 NVMe SSD",
@@ -6061,8 +5995,8 @@
         "PCIe x16 Video Card",
         "SODIMM Memory"
       ],
-      "imageDescription": "A top-down view of an M.2 2280 NVMe SSD showing the NAND flash chips and the M-key edge connector",
-      "id": "cap-im-0066"
+      "id": "cap-im-0066",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "SATA power connectors are L-shaped and have 15 pins to provide power to modern hard drives and SSDs",
@@ -6072,49 +6006,44 @@
         "15-pin SATA power connector",
         "6-pin PCIe connector"
       ],
-      "imageDescription": "A close-up of a 15-pin SATA power connector from a standard PC power supply",
-      "type": "image_question",
-      "question": "Which power connector is shown in the image, commonly used for internal SATA drives?",
+      "type": "multiple_choice",
+      "question": "A close-up of a 15-pin SATA power connector from a standard PC power supply. Which power connector is shown , commonly used for internal SATA drives?",
       "correctAnswer": 2,
-      "imageAlt": "A flat, black power connector with an L-shaped slot",
-      "id": "cap-im-0067"
+      "id": "cap-im-0067",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "A Molex tool or 'extrusion tool' is not shown; the image depicts a punch-down tool used to secure wires into a patch panel or keystone jack",
-      "imageDescription": "A technician using a punch-down tool with a 110-block blade to terminate a Cat6 wire into a wall jack",
       "options": [
         "Crimper",
         "Wire stripper",
         "Tone probe",
         "Punch-down tool"
       ],
-      "question": "Which networking tool is shown in the image being used to terminate copper wiring?",
-      "type": "image_question",
-      "imageAlt": "A hand using a tool to push a wire into a plastic slot on a panel",
+      "question": "A technician using a punch-down tool with a 110-block blade to terminate a Cat6 wire into a wall jack. Which networking tool is shown being used to terminate copper wiring?",
+      "type": "multiple_choice",
       "correctAnswer": 3,
-      "id": "cap-im-0068"
+      "id": "cap-im-0068",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "question": "Which tool is being used in the image to safely clean up toner spills?",
-      "imageAlt": "A small portable vacuum with a hose being used inside a printer",
+      "type": "multiple_choice",
+      "question": "A technician using a specialised black ESD-safe vacuum cleaner to remove spilled black powder from inside a laser printer. Which tool is being used to safely clean up toner spills?",
       "correctAnswer": 1,
       "explanation": "The toner vacuum is specially designed with an ESD-safe filter to handle the fine, electrically charged particles of toner",
-      "imageDescription": "A technician using a specialised black ESD-safe vacuum cleaner to remove spilled black powder from inside a laser printer",
       "options": [
         "Compressed air canister",
         "Toner vacuum",
         "Standard household vacuum",
         "Isopropyl alcohol wipes"
       ],
-      "id": "cap-im-0069"
+      "id": "cap-im-0069",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A rectangular cable end with one corner cut off diagonally",
       "correctAnswer": 0,
-      "question": "Which video interface connector is shown in the image?",
-      "type": "image_question",
-      "imageDescription": "A close-up of a DisplayPort cable connector showing the 20-pin layout and the single notched corner characteristic of the interface",
+      "question": "A close-up of a DisplayPort cable connector showing the 20-pin layout and the single notched corner characteristic of the interface. Which video interface connector is shown ?",
+      "type": "multiple_choice",
       "options": [
         "DisplayPort",
         "HDMI",
@@ -6122,10 +6051,10 @@
         "VGA (DE-15)"
       ],
       "explanation": "DisplayPort connectors have a unique rectangular shape with one notched (slanted) corner",
-      "id": "cap-im-0070"
+      "id": "cap-im-0070",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A side-by-side comparison of a laptop screen; one side shows the screen clearly from the front, while the other shows it appearing black when viewed from a 45-degree angle",
       "options": [
         "Anti-glare protector",
         "Blue light filter",
@@ -6133,48 +6062,44 @@
         "Touchscreen digitizer"
       ],
       "explanation": "A privacy filter is a screen overlay that narrows the viewing angle to prevent shoulder surfing",
-      "imageAlt": "A laptop screen that looks dark when viewed from the side but clear from the front",
       "correctAnswer": 2,
-      "question": "Which physical security accessory is being demonstrated on the laptop screen in the image?",
-      "type": "image_question",
-      "id": "cap-im-0071"
+      "question": "A side-by-side comparison of a laptop screen; one side shows the screen clearly from the front, while the other shows it appearing black when viewed from a 45-degree angle. Which physical security accessory is being demonstrated on the laptop screen ?",
+      "type": "multiple_choice",
+      "id": "cap-im-0071",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "question": "Which type of fiber optic connector is shown in the image, featuring a bayonet-style coupling?",
-      "imageAlt": "A round fiber optic connector with a long white ceramic tip and a metal twist-lock",
+      "type": "multiple_choice",
+      "question": "A pair of ST fiber optic connectors with their distinctive round, metal, 'twist-and-lock' bayonet couplings. Which type of fiber optic connector is shown , featuring a bayonet-style coupling?",
       "correctAnswer": 1,
       "explanation": "ST (Straight Tip) connectors use a bayonet-style twist-lock mechanism, similar to a BNC connector",
-      "imageDescription": "A pair of ST fiber optic connectors with their distinctive round, metal, 'twist-and-lock' bayonet couplings",
       "options": [
         "LC connector",
         "ST connector",
         "SC connector",
         "MTRJ connector"
       ],
-      "id": "cap-im-0072"
+      "id": "cap-im-0072",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "S/PDIF (Sony/Philips Digital Interface) over Toslink uses fibre optic cables to transmit high-quality digital audio",
-      "imageAlt": "A square-shaped digital audio port with a flap",
       "options": [
         "HDMI 2.1",
         "S/PDIF (Toslink)",
         "3.5mm Jack",
         "DisplayPort"
       ],
-      "question": "Which digital audio interface port, which uses fibre optic technology, is shown in the image?",
-      "type": "image_question",
-      "imageDescription": "A close-up of the rear I/O panel of a PC motherboard showing an optical S/PDIF (Toslink) audio port with its protective dust flap",
+      "question": "A close-up of the rear I/O panel of a PC motherboard showing an optical S/PDIF (Toslink) audio port with its protective dust flap. Which digital audio interface port, which uses fibre optic technology, is shown ?",
+      "type": "multiple_choice",
       "correctAnswer": 1,
-      "id": "cap-im-0073"
+      "id": "cap-im-0073",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "An image of a specialized ESD-safe vacuum cleaner designed for cleaning the internal components of laser printers",
       "correctAnswer": 2,
-      "type": "image_question",
-      "question": "Which specific tool is shown in the image, designed to safely remove fine particles from inside a laser printer?",
-      "imageAlt": "A specialized handheld vacuum cleaner",
+      "type": "multiple_choice",
+      "question": "An image of a specialized ESD-safe vacuum cleaner designed for cleaning the internal components of laser printers. Which specific tool is shown , designed to safely remove fine particles from inside a laser printer?",
       "options": [
         "Standard domestic vacuum",
         "Compressed air canister",
@@ -6182,12 +6107,12 @@
         "Wet/Dry shop vac"
       ],
       "explanation": "A toner vacuum is specifically designed with specialized filters to trap fine toner particles that would pass through a standard household vacuum",
-      "id": "cap-im-0074"
+      "id": "cap-im-0074",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 0,
-      "imageDescription": "A close-up of a 110 punch-down block with several twisted-pair copper wires partially terminated into the slots",
       "explanation": "The 110 block is a type of punch-down block used to terminate runs of on-premises wiring in structured cabling",
       "options": [
         "110 block",
@@ -6195,24 +6120,23 @@
         "Patch panel port",
         "F-connector"
       ],
-      "imageAlt": "A plastic block with metal slots for wires",
-      "question": "Which type of termination point for twisted-pair cabling is shown in the image?",
-      "id": "cap-im-0075"
+      "question": "A close-up of a 110 punch-down block with several twisted-pair copper wires partially terminated into the slots. Which type of termination point for twisted-pair cabling is shown ?",
+      "id": "cap-im-0075",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageDescription": "An image of a passive aluminium heat sink with a series of vertical fins, sitting atop a motherboard chipset",
+      "type": "multiple_choice",
       "correctAnswer": 3,
       "explanation": "A Heat Sink uses a large surface area (fins) to dissipate heat from the CPU or chipset into the surrounding air",
-      "imageAlt": "A metal component with many thin fins",
       "options": [
         "Liquid cooling block",
         "Peltier cooler",
         "Voltage Regulator Module (VRM)",
         "Heat Sink"
       ],
-      "question": "Which passive cooling component, used to dissipate heat via thermal conduction, is shown in the image?",
-      "id": "cap-im-0076"
+      "question": "An image of a passive aluminium heat sink with a series of vertical fins, sitting atop a motherboard chipset. Which passive cooling component, used to dissipate heat via thermal conduction, is shown ?",
+      "id": "cap-im-0076",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "Thunderbolt 3 uses the USB-C physical connector but is identified by the distinctive lightning bolt symbol",
@@ -6222,27 +6146,25 @@
         "Mini DisplayPort",
         "FireWire 800"
       ],
-      "imageAlt": "A USB-C port with a small lightning bolt icon next to it",
-      "question": "Identify the high-speed interface shown in the image, indicated by the specific icon next to the port",
-      "type": "image_question",
+      "question": "A macro shot of a laptop's side port showing a USB-C shaped interface marked with a small lightning bolt. Identify the high-speed interface shown , indicated by the specific icon next to the port?",
+      "type": "multiple_choice",
       "correctAnswer": 1,
-      "imageDescription": "A macro shot of a laptop's side port showing a USB-C shaped interface marked with a small lightning bolt",
-      "id": "cap-im-0077"
+      "id": "cap-im-0077",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageDescription": "An image of a network loopback plug inserted into an Ethernet port on a network interface card",
+      "type": "multiple_choice",
       "correctAnswer": 2,
       "explanation": "The loopback plug is used to redirect a signal back to the source to test the functionality of a physical port",
-      "question": "Which diagnostic tool is shown in the image, used to test the transmit and receive functions of a network port?",
-      "imageAlt": "A small RJ-45 plug with wires looped back into itself",
+      "question": "An image of a network loopback plug inserted into an Ethernet port on a network interface card. Which diagnostic tool is shown , used to test the transmit and receive functions of a network port?",
       "options": [
         "Crossover cable",
         "Bridge connector",
         "Loopback plug",
         "PoE injector"
       ],
-      "id": "cap-im-0078"
+      "id": "cap-im-0078",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -6251,18 +6173,16 @@
         "EPS 12V connector",
         "PCIe power connector"
       ],
-      "imageAlt": "A white 4-pin plastic power connector",
-      "question": "Which legacy internal power connector, typically used for older PATA hard drives or fans, is shown in the image?",
+      "question": "A close-up of a 4-pin peripheral power connector (Molex) originating from a PC power supply unit. Which legacy internal power connector, typically used for older PATA hard drives or fans, is shown ?",
       "explanation": "A Molex connector is a legacy 4-pin power connector used for older HDDs, optical drives, and case fans",
       "correctAnswer": 0,
-      "imageDescription": "A close-up of a 4-pin peripheral power connector (Molex) originating from a PC power supply unit",
-      "type": "image_question",
-      "id": "cap-im-0079"
+      "type": "multiple_choice",
+      "id": "cap-im-0079",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 2,
-      "imageDescription": "An image of a small, narrow circuit board located at the bottom of an older laptop's LCD panel assembly",
       "explanation": "An Inverter converts DC power from the motherboard to AC power to light the CCFL backlight in older laptop LCDs",
       "options": [
         "Digitizer",
@@ -6270,39 +6190,37 @@
         "Inverter",
         "Graphics card"
       ],
-      "imageAlt": "A long, thin circuit board found inside a laptop screen",
-      "question": "Which component, responsible for powering the backlight in older CCFL-based laptop displays, is shown in the image?",
-      "id": "cap-im-0080"
+      "question": "An image of a small, narrow circuit board located at the bottom of an older laptop's LCD panel assembly. Which component, responsible for powering the backlight in older CCFL-based laptop displays, is shown ?",
+      "id": "cap-im-0080",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "Which laser printer component is shown in the image, responsible for pulling toner from the drum onto the paper?",
+      "question": "An internal view of a laser printer showing the black, rubberised transfer roller located underneath the toner cartridge area. Which laser printer component is shown , responsible for pulling toner from the drum onto the paper?",
       "options": [
         "Fuser assembly",
         "Transfer roller",
         "Pickup roller",
         "Separation pad"
       ],
-      "imageAlt": "A long black spongy or rubberised roller",
       "explanation": "The Transfer Roller is responsible for moving the toner from the imaging drum to the paper by using an electrical charge",
       "correctAnswer": 1,
-      "imageDescription": "An internal view of a laser printer showing the black, rubberised transfer roller located underneath the toner cartridge area",
-      "type": "image_question",
-      "id": "cap-im-0081"
+      "type": "multiple_choice",
+      "id": "cap-im-0081",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageDescription": "A block diagram of a motherboard architecture showing a central chip connected directly to the CPU, RAM, and the Graphics Slot",
+      "type": "multiple_choice",
       "correctAnswer": 0,
       "explanation": "The Northbridge (or MCH) conventionally managed high-speed communication between the CPU, RAM, and PCIe/AGP video cards",
-      "question": "In this motherboard architecture diagram, which component is responsible for high-speed communication between the CPU and Memory?",
-      "imageAlt": "A logic diagram of a motherboard chipset",
+      "question": "A block diagram of a motherboard architecture showing a central chip connected directly to the CPU, RAM, and the Graphics Slot. In this motherboard architecture diagram, which component is responsible for high-speed communication between the CPU and Memory?",
       "options": [
         "Northbridge",
         "Southbridge",
         "Super I/O",
         "TPM Module"
       ],
-      "id": "cap-im-0082"
+      "id": "cap-im-0082",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -6311,121 +6229,112 @@
         "MT-RJ connector",
         "LC connector"
       ],
-      "imageAlt": "Two small fibre optic connectors with a clip",
-      "question": "Which small form factor fibre optic connector is shown in the image?",
+      "question": "A photo of a duplex LC fibre optic connector with its characteristic small size and locking tab. Which small form factor fibre optic connector is shown ?",
       "explanation": "The LC (Lucent Connector) is a small form factor fibre connector typically used in high-density data centre environments",
       "correctAnswer": 3,
-      "imageDescription": "A photo of a duplex LC fibre optic connector with its characteristic small size and locking tab",
-      "type": "image_question",
-      "id": "cap-im-0083"
+      "type": "multiple_choice",
+      "id": "cap-im-0083",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A photo of a DDR4 desktop RAM module featuring 8 memory chips on one side and no central parity chip",
       "correctAnswer": 1,
-      "type": "image_question",
-      "imageAlt": "A RAM stick with 8 chips on one side",
+      "type": "multiple_choice",
       "options": [
         "ECC RAM",
         "Non-ECC RAM",
         "Buffered RAM",
         "VRAM"
       ],
-      "question": "Based on the lack of an additional parity chip, which type of memory module is shown in the image?",
+      "question": "A photo of a DDR4 desktop RAM module featuring 8 memory chips on one side and no central parity chip. Based on the lack of an additional parity chip, which type of memory module is shown ?",
       "explanation": "Non-ECC (Error Correction Code) memory is standard consumer RAM that does not have the extra chip required for error checking",
-      "id": "cap-im-0084"
+      "id": "cap-im-0084",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A small, rectangular internal storage drive with a SATA interface",
       "correctAnswer": 2,
       "explanation": "The image shows a 2.5-inch Solid State Drive (SSD), which is the standard size for most laptop storage expansion and replacements",
-      "type": "image_question",
-      "imageDescription": "A close-up of a 2.5-inch SATA Solid State Drive (SSD) with logical labelling indicating its capacity and form factor",
+      "type": "multiple_choice",
       "options": [
         "3.5-inch HDD",
         "M.2 NVMe SSD",
         "2.5-inch SATA SSD",
         "PCIe Expansion Card"
       ],
-      "question": "Which internal storage form factor, commonly used to upgrade laptop hard drives, is shown in the image?",
-      "id": "cap-im-0085"
+      "question": "A close-up of a 2.5-inch SATA Solid State Drive (SSD) with logical labelling indicating its capacity and form factor. Which internal storage form factor, commonly used to upgrade laptop hard drives, is shown ?",
+      "id": "cap-im-0085",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A technician using a punch-down tool to secure copper wires into a 110-block patch panel",
       "options": [
         "Punch-down tool",
         "Crimping tool",
         "Cable stripper",
         "Loopback plug"
       ],
-      "type": "image_question",
-      "question": "Which networking tool is shown in the image being used to secure wires into a patch panel?",
+      "type": "multiple_choice",
+      "question": "A technician using a punch-down tool to secure copper wires into a 110-block patch panel. Which networking tool is shown being used to secure wires into a patch panel?",
       "explanation": "An impact punch-down tool is used to insert individual wires into 66-block or 110-block termination points",
       "correctAnswer": 0,
-      "imageAlt": "A hand-held tool with a spring-loaded mechanism and a metal blade at the tip",
-      "id": "cap-im-0086"
+      "id": "cap-im-0086",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A blue D-sub connector with three rows of five pins",
       "correctAnswer": 3,
       "explanation": "The image shows a 15-pin VGA (Video Graphics Array) connector, which is an analogue interface for video",
-      "type": "image_question",
-      "imageDescription": "A standard DE-15 (VGA) cable connector with a blue plastic housing and two thumbscrews",
+      "type": "multiple_choice",
       "options": [
         "HDMI",
         "DisplayPort",
         "DVI-D",
         "VGA"
       ],
-      "question": "Which analogue video connector is shown in the image?",
-      "id": "cap-im-0087"
+      "question": "A standard DE-15 (VGA) cable connector with a blue plastic housing and two thumbscrews. Which analogue video connector is shown ?",
+      "id": "cap-im-0087",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageDescription": "A hand applying a pea-sized amount of silver-coloured thermal compound to the top of a CPU seated in a motherboard",
+      "type": "multiple_choice",
       "options": [
         "Adhesive glue",
         "Thermal paste",
         "Conductive lubricant",
         "Liquid coolant"
       ],
-      "question": "What substance is being applied to the CPU in the image to facilitate heat transfer to the heat sink?",
+      "question": "A hand applying a pea-sized amount of silver-coloured thermal compound to the top of a CPU seated in a motherboard. What substance is being applied to the CPU to facilitate heat transfer to the heat sink?",
       "correctAnswer": 1,
       "explanation": "Thermal paste is applied to the CPU before the heat sink is installed to fill microscopic gaps and improve heat transfer",
-      "imageAlt": "A small syringe containing a grey, viscous substance being applied to a processor",
-      "id": "cap-im-0088"
+      "id": "cap-im-0088",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 0,
       "explanation": "A toner vacuum is specifically designed with high-efficiency filters to trap fine toner particles that would pass through a standard vacuum cloth",
-      "imageAlt": "A specialized black vacuum cleaner with a flexible hose and fine nozzle",
-      "question": "Which specific tool, shown in the image, is used to safely remove spilled toner without dispersing it into the air?",
-      "type": "image_question",
-      "imageDescription": "A specialized anti-static vacuum cleaner being used to clean the interior of a laser printer",
+      "question": "A specialized anti-static vacuum cleaner being used to clean the interior of a laser printer. Which specific tool, shown , is used to safely remove spilled toner without dispersing it into the air?",
+      "type": "multiple_choice",
       "options": [
         "Toner vacuum",
         "Compressed air canister",
         "Standard household vacuum",
         "Damp microfibre cloth"
       ],
-      "id": "cap-im-0089"
+      "id": "cap-im-0089",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A short, rectangular memory module with a notched connector at the bottom",
       "explanation": "The image shows a SODIMM (Small Outline Dual In-line Memory Module), which is the smaller RAM form factor used in laptops",
       "correctAnswer": 2,
-      "imageDescription": "A DDR4 SODIMM memory module featuring a 260-pin configuration, significantly shorter than a desktop RAM stick",
       "options": [
         "DIMM",
         "MicroDIMM",
         "SODIMM",
         "SIMM"
       ],
-      "type": "image_question",
-      "question": "Which type of memory module form factor is shown in the image, typically used in portables and laptops?",
-      "id": "cap-im-0090"
+      "type": "multiple_choice",
+      "question": "A DDR4 SODIMM memory module featuring a 260-pin configuration, significantly shorter than a desktop RAM stick. Which type of memory module form factor is shown , typically used in portables and laptops?",
+      "id": "cap-im-0090",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A small, reversible 8-pin male connector on a white cable",
       "explanation": "The Lightning connector is a proprietary 8-pin connector developed by Apple for mobile devices",
       "correctAnswer": 3,
       "options": [
@@ -6434,30 +6343,28 @@
         "Mini-USB",
         "Lightning"
       ],
-      "imageDescription": "A close-up of an Apple Lightning charging and data cable connector",
-      "type": "image_question",
-      "question": "Which proprietary Apple connector is shown in the image?",
-      "id": "cap-im-0091"
+      "type": "multiple_choice",
+      "question": "A close-up of an Apple Lightning charging and data cable connector. Which proprietary Apple connector is shown ?",
+      "id": "cap-im-0091",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A long, thin roller located inside a printer, often covered in black foam or rubber",
       "correctAnswer": 1,
       "explanation": "The Transfer Roller is responsible for moving the toner from the drum onto the paper by applying an electrical charge to the back of the paper",
-      "question": "Which laser printer component is shown in the image, responsible for pulling the toner from the drum to the paper?",
-      "type": "image_question",
+      "question": "A technician pointing to the transfer roller inside a dismantled laser printer, located underneath the drum area. Which laser printer component is shown , responsible for pulling the toner from the drum to the paper?",
+      "type": "multiple_choice",
       "options": [
         "Fuser assembly",
         "Transfer roller",
         "Pickup roller Explorer",
         "Imaging drum"
       ],
-      "imageDescription": "A technician pointing to the transfer roller inside a dismantled laser printer, located underneath the drum area",
-      "id": "cap-im-0092"
+      "id": "cap-im-0092",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "Which legacy power connector, shown in the image, is used for older PATA (IDE) drives?",
-      "type": "image_question",
-      "imageDescription": "A 4-pin Molex power connector from a standard ATX power supply",
+      "question": "A 4-pin Molex power connector from a standard ATX power supply. Which legacy power connector, shown , is used for older PATA (IDE) drives?",
+      "type": "multiple_choice",
       "options": [
         "Molex connector",
         "SATA power connector",
@@ -6466,13 +6373,12 @@
       ],
       "correctAnswer": 0,
       "explanation": "The image shows a Molex connector, a legacy 4-pin peripheral power connector used for older hard drives and fans",
-      "imageAlt": "A white plastic 4-pin power connector with round pins",
-      "id": "cap-im-0093"
+      "id": "cap-im-0093",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "Based on the colour and the icon shown in the image, what type of port is this?",
-      "type": "image_question",
-      "imageDescription": "A laptop side panel showing a blue USB Type-A port with a 'SS' icon printed on the chassis",
+      "question": "A laptop side panel showing a blue USB Type-A port with a 'SS' icon printed on the chassis. Based on the colour and the icon shown , what type of port is this?",
+      "type": "multiple_choice",
       "options": [
         "USB 2.0 port",
         "USB 3.0 port",
@@ -6481,23 +6387,22 @@
       ],
       "correctAnswer": 1,
       "explanation": "The blue coloured port with the 'SS' (SuperSpeed) logo indicates a USB 3.0 (or 3.1 Gen 1) port",
-      "imageAlt": "A rectangular USB port with a blue plastic interior and a logo next to it",
-      "id": "cap-im-0094"
+      "id": "cap-im-0094",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "Which printer consumable is shown in the image?",
+      "question": "A standard replacement toner cartridge for a monochrome laser printer. Which printer consumable is shown ?",
       "options": [
         "Inkjet cartridge",
         "Ribbon cartridge Explorer",
         "Toner cartridge",
         "Waste toner bottle"
       ],
-      "imageDescription": "A standard replacement toner cartridge for a monochrome laser printer",
-      "type": "image_question",
-      "imageAlt": "A large black plastic container with a handle and a long roller visible on one side",
+      "type": "multiple_choice",
       "explanation": "The image shows a toner cartridge, which contains the powder used in laser printers for creating images and text",
       "correctAnswer": 2,
-      "id": "cap-im-0095"
+      "id": "cap-im-0095",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -6506,49 +6411,45 @@
         "ST connector",
         "MTRJ connector"
       ],
-      "imageDescription": "A duplex LC fibre optic connector with a plastic locking tab",
-      "type": "image_question",
-      "question": "Which small form factor fibre optic connector is shown in the image?",
+      "type": "multiple_choice",
+      "question": "A duplex LC fibre optic connector with a plastic locking tab. Which small form factor fibre optic connector is shown ?",
       "explanation": "The image shows an LC (Lucent Connector), which is a small form factor fibre optic connector with a push-pull latch",
       "correctAnswer": 0,
-      "imageAlt": "Two small square fibre optic connectors joined together with a clip",
-      "id": "cap-im-0096"
+      "id": "cap-im-0096",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 2,
-      "question": "Identify the legacy communication port shown in the image, commonly used for connecting to networking equipment consoles",
-      "imageDescription": "A close-up of a DE-9 (often called DB-9) male port on a metal PC backplate, featuring two rows of pins (5 on top, 4 on bottom)",
+      "question": "A close-up of a DE-9 (often called DB-9) male port on a metal PC backplate, featuring two rows of pins (5 on top, 4 on bottom). Identify the legacy communication port shown , commonly used for connecting to networking equipment consoles?",
       "explanation": "The image shows a DB-9 connector, which is the standard physical interface for RS-232 serial communications on PCs",
-      "imageAlt": "A male 9-pin D-subminiature connector on the back of a computer",
       "options": [
         "VGA port",
         "Parallel port Carry",
         "RS-232 Serial port",
         "PS/2 port"
       ],
-      "id": "cap-im-0097"
+      "id": "cap-im-0097",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A USB Type-B male cable end, showing its distinct square shape with slightly angled top corners",
       "explanation": "The image shows a USB Type-B connector, which is most commonly used for the 'upstream' connection on printers and scanners",
       "correctAnswer": 0,
-      "type": "image_question",
-      "question": "Which device typically uses the USB connector shown in the image?",
-      "imageAlt": "A square-shaped USB connector with two bevelled corners",
+      "type": "multiple_choice",
+      "question": "A USB Type-B male cable end, showing its distinct square shape with slightly angled top corners. Which device typically uses the USB connector shown ?",
       "options": [
         "Printer (USB Type-B)",
         "Smartphone (Micro-USB)",
         "Digital Camera (Mini-USB)",
         "High-speed Drive (USB Type-C)"
       ],
-      "id": "cap-im-0098"
+      "id": "cap-im-0098",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 3,
-      "question": "Identify the motherboard port shown in the image, used for legacy input devices",
-      "imageDescription": "A purple PS/2 port (Mini-DIN 6) located on a motherboard I/O shield next to a green port of the same shape",
+      "question": "A purple PS/2 port (Mini-DIN 6) located on a motherboard I/O shield next to a green port of the same shape. Identify the motherboard port shown , used for legacy input devices?",
       "explanation": "The image shows a Mini-DIN 6 connector, which was the standard for PS/2 keyboards (purple) and mice (green) before USB became dominant",
       "options": [
         "S-Video port",
@@ -6556,11 +6457,10 @@
         "FireWire port",
         "PS/2 Keyboard port"
       ],
-      "imageAlt": "A small round purple port with 6 pins on a motherboard backplate",
-      "id": "cap-im-0099"
+      "id": "cap-im-0099",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A white plastic block with metal slots for individual coloured wires",
       "options": [
         "66 block",
         "110 block",
@@ -6568,17 +6468,16 @@
         "ST connector tube"
       ],
       "correctAnswer": 1,
-      "type": "image_question",
-      "question": "Which type of termination block is shown in the image, commonly found on the rear of a network patch panel?",
-      "imageDescription": "A close-up of a 110 punchdown block on a network patch panel with several twisted-pair wires partially inserted",
+      "type": "multiple_choice",
+      "question": "A close-up of a 110 punchdown block on a network patch panel with several twisted-pair wires partially inserted. Which type of termination block is shown , commonly found on the rear of a network patch panel?",
       "explanation": "The image shows a 110-style punchdown block, which is the standard termination point for Cat5e and Cat6 cabling in UK/EU patch panels",
-      "id": "cap-im-0100"
+      "id": "cap-im-0100",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "Which power conversion cable is shown in the image?",
+      "question": "A power adapter cable showing a 4-pin Molex male connector leading to a 15-pin SATA power female connector. Which power conversion cable is shown ?",
       "correctAnswer": 2,
-      "type": "image_question",
-      "imageDescription": "A power adapter cable showing a 4-pin Molex male connector leading to a 15-pin SATA power female connector",
+      "type": "multiple_choice",
       "explanation": "The image shows a Molex to SATA power adapter, which allows older PSUs without SATA leads to power modern drives",
       "options": [
         "PCIe to CPU power adapter",
@@ -6586,38 +6485,36 @@
         "Molex to SATA power adapter",
         "USB to SATA adapter"
       ],
-      "imageAlt": "A short cable with a 4-pin white plastic plug on one end and a thin black flat connector on the other",
-      "id": "cap-im-0101"
+      "id": "cap-im-0101",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A small, thin rectangular circuit board with NAND flash chips and an edge connector",
       "options": [
         "M.2 SSD",
         "mSATA SSD",
         "DIMM module",
         "PCIe x1 riser"
       ],
-      "question": "Which storage component form factor is shown in the image?",
-      "type": "image_question",
+      "question": "An M.2 2280 NVMe SSD showing the label, flash controller, and the keyed edge connector pins. Which storage component form factor is shown ?",
+      "type": "multiple_choice",
       "correctAnswer": 0,
-      "imageDescription": "An M.2 2280 NVMe SSD showing the label, flash controller, and the keyed edge connector pins",
       "explanation": "The image shows an M.2 SSD, which is a modern small-form-factor storage device that mounts directly onto the motherboard",
-      "id": "cap-im-0102"
+      "id": "cap-im-0102",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A wide laser printer assembly featuring a heating roller and a pressure roller",
       "options": [
         "Imaging Drum",
         "Fuser Assembly",
         "Transfer Roller Strip",
         "Pickup Roller Set"
       ],
-      "imageDescription": "A removable laser printer fuser assembly showing the warning labels for high temperature and the orange/black rollers",
       "explanation": "The image shows a Fuser unit, which uses heat and pressure to permanently bond toner to the paper",
-      "question": "Which laser printer component is shown in the image, responsible for melting toner onto the paper?",
+      "question": "A removable laser printer fuser assembly showing the warning labels for high temperature and the orange/black rollers. Which laser printer component is shown , responsible for melting toner onto the paper?",
       "correctAnswer": 1,
-      "type": "image_question",
-      "id": "cap-im-0103"
+      "type": "multiple_choice",
+      "id": "cap-im-0103",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -6626,76 +6523,71 @@
         "USB 4.0 (Thunderbolt)",
         "USB 3.0 (SuperSpeed)"
       ],
-      "imageAlt": "A USB Type-A port on a laptop with a visible blue plastic insert",
-      "imageDescription": "A side view of a laptop showing various ports, specifically focusing on a USB port with a bright blue interior",
       "explanation": "The blue tab inside the USB Type-A port indicates it is a USB 3.0 (or 3.1/3.2 Gen 1) SuperSpeed port",
-      "question": "Based on the colour of the port housing, what is the maximum speed standard of this USB port?",
-      "type": "image_question",
+      "question": "A side view of a laptop showing various ports, specifically focusing on a USB port with a bright blue interior. Based on the colour of the port housing, what is the maximum speed standard of this USB port?",
+      "type": "multiple_choice",
       "correctAnswer": 3,
-      "id": "cap-im-0104"
+      "id": "cap-im-0104",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A 1.8-inch mechanical hard drive featuring a ZIF connector ribbon cable interface instead of standard SATA pins",
       "explanation": "The image shows a 1.8-inch ZIF (Zero Insertion Force) hard drive connector, often found in older iPods and ultra-portable laptops",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 2,
-      "question": "Which specialised internal drive interface is shown in the image?",
-      "imageAlt": "A very thin hard drive with a flip-up locking bar for a ribbon cable",
+      "question": "A 1.8-inch mechanical hard drive featuring a ZIF connector ribbon cable interface instead of standard SATA pins. Which specialised internal drive interface is shown ?",
       "options": [
         "SATA data connector",
         "IDE 40-pin connector",
         "ZIF connector",
         "SCSI internal connector"
       ],
-      "id": "cap-im-0105"
+      "id": "cap-im-0105",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A digital multimeter with the dial set to Volts DC, with the red and black probes resting next to it",
       "explanation": "The image shows a multimeter, which is the primary tool used to check for correct AC/DC voltage levels and continuity in PC components",
       "correctAnswer": 1,
-      "type": "image_question",
-      "question": "Which tool is shown in the image, used by technicians to verify if a wall outlet or power supply is providing the correct voltage?",
+      "type": "multiple_choice",
+      "question": "A digital multimeter with the dial set to Volts DC, with the red and black probes resting next to it. Which tool is shown , used by technicians to verify if a wall outlet or power supply is providing the correct voltage?",
       "options": [
         "Power Supply Tester",
         "Multimeter",
         "Oscilloscope",
         "Tone Generator"
       ],
-      "imageAlt": "A handheld electronic device with a digital screen and two probes (red and black)",
-      "id": "cap-im-0106"
+      "id": "cap-im-0106",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A long plastic slot on a motherboard with a small locking lever at one end",
       "options": [
         "PCIe x16 slot",
         "AGP slot",
         "PCI legacy slot",
         "PCIe x1 slot"
       ],
-      "imageDescription": "A close-up of a PCIe x16 expansion slot on a motherboard, identifiable by its length and the plastic latch at the rear",
       "explanation": "The image shows a PCIe x16 slot, which provides the high bandwidth required for modern dedicated graphics cards",
-      "question": "Which expansion slot is shown in the image, primarily used for installing a High-End Video Card?",
+      "question": "A close-up of a PCIe x16 expansion slot on a motherboard, identifiable by its length and the plastic latch at the rear. Which expansion slot is shown , primarily used for installing a High-End Video Card?",
       "correctAnswer": 0,
-      "type": "image_question",
-      "id": "cap-im-0107"
+      "type": "multiple_choice",
+      "id": "cap-im-0107",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "An SC fibre optic connector on the end of a patch lead, showing its square profile and blue plastic 'Standard Connector' body",
       "explanation": "The 'SC' (Subscriber Connector) is a square-shaped fibre optic connector that uses a push-pull latching mechanism",
       "correctAnswer": 2,
-      "type": "image_question",
-      "question": "Which fibre optic connector style is shown in the image?",
-      "imageAlt": "A square fibre optic connector with a plastic housing and a white ceramic tip",
+      "type": "multiple_choice",
+      "question": "An SC fibre optic connector on the end of a patch lead, showing its square profile and blue plastic 'Standard Connector' body. Which fibre optic connector style is shown ?",
       "options": [
         "ST Connector",
         "LC Connector",
         "SC Connector",
         "FC Connector"
       ],
-      "id": "cap-im-0108"
+      "id": "cap-im-0108",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "Identify the high-definition digital video interface connector shown in the image",
+      "question": "A close-up of a male DisplayPort cable header, showing the signature 20-pin 'D' shape with one corner angled and two small metal teeth for the locking mechanism. Identify the high-definition digital video interface connector shown?",
       "explanation": "A DisplayPort connector features a unique rectangular shape with one slanted corner and often includes a locking latch mechanism",
       "options": [
         "HDMI",
@@ -6703,32 +6595,28 @@
         "DisplayPort",
         "VGA"
       ],
-      "imageAlt": "A digital video connector with one slanted corner and a latching mechanism",
       "correctAnswer": 2,
-      "type": "image_question",
-      "imageDescription": "A close-up of a male DisplayPort cable header, showing the signature 20-pin 'D' shape with one corner angled and two small metal teeth for the locking mechanism",
-      "id": "cap-im-0109"
+      "type": "multiple_choice",
+      "id": "cap-im-0109",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 0,
-      "imageAlt": "A metal block with many thin fins and a plastic fan mounted on top",
       "options": [
         "Heat sink and fan assembly",
         "Liquid cooling radiator",
         "Passive cooling block",
         "Peltier cooler"
       ],
-      "question": "Which cooling component is shown in the image, used to manage the thermal output of a processor?",
+      "question": "A standard aluminium heat sink with thin vertical cooling fins, topped with a black plastic cooling fan, designed for a desktop CPU. Which cooling component is shown , used to manage the thermal output of a processor?",
       "explanation": "The heat sink draws heat away from the CPU, while the fan dissipates that heat into the chassis air",
-      "imageDescription": "A standard aluminium heat sink with thin vertical cooling fins, topped with a black plastic cooling fan, designed for a desktop CPU",
-      "type": "image_question",
-      "id": "cap-im-0110"
+      "type": "multiple_choice",
+      "id": "cap-im-0110",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A small, rectangular internal expansion card (Mini-PCIe form factor) typically used for wireless networking in a laptop, featuring gold contacts at the base",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 1,
-      "imageAlt": "A small expansion card with two gold-plated notch sections being inserted into a motherboard slot",
       "options": [
         "M.2 NVMe SSD card",
         "Mini-PCIe Wi-Fi card",
@@ -6736,38 +6624,37 @@
         "DIMM memory module"
       ],
       "explanation": "Mini-PCIe slots are commonly used in laptops to add internal expansion cards like Wi-Fi or Bluetooth modules",
-      "question": "Which internal laptop expansion component is shown in the image?",
-      "id": "cap-im-0111"
+      "question": "A small, rectangular internal expansion card (Mini-PCIe form factor) typically used for wireless networking in a laptop, featuring gold contacts at the base. Which internal laptop expansion component is shown ?",
+      "id": "cap-im-0111",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 3,
-      "imageAlt": "A technician using a portable black vacuum with a hose on a laser printer",
       "options": [
         "Compressed air canister",
         "Industrial shop vac",
         "Antistatic cloth",
         "Toner vacuum"
       ],
-      "question": "To prevent the spread of fine particles, which tool is being used in the image to clean the printer?",
+      "question": "A technician using a specialised ESD-safe toner vacuum with a long narrow nozzle to clean the internal chassis of a large office laser printer. To prevent the spread of fine particles, which tool is being used to clean the printer?",
       "explanation": "A Toner Vacuum uses specialised HEPA filters to trap fine toner particles that would pass through a standard household vacuum",
-      "imageDescription": "A technician using a specialised ESD-safe toner vacuum with a long narrow nozzle to clean the internal chassis of a large office laser printer",
-      "type": "image_question",
-      "id": "cap-im-0112"
+      "type": "multiple_choice",
+      "id": "cap-im-0112",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "The 24-pin ATX connector provides the main power from the PSU to the motherboard in modern desktop systems",
-      "question": "Identify the main motherboard power connector shown in the image",
+      "question": "A close-up of a 24-pin ATX power connector from a power supply unit, showing the two rows of 12 pins and the plastic clip on the side. Identify the main motherboard power connector shown?",
       "options": [
         "8-pin EPS connector",
         "24-pin ATX connector",
         "6-pin PCIe connector",
         "15-pin SATA power connector"
       ],
-      "imageAlt": "A large white 24-pin plastic connector at the end of a bundle of colourful wires",
       "correctAnswer": 1,
-      "type": "image_question",
-      "imageDescription": "A close-up of a 24-pin ATX power connector from a power supply unit, showing the two rows of 12 pins and the plastic clip on the side",
-      "id": "cap-im-0113"
+      "type": "multiple_choice",
+      "id": "cap-im-0113",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -6777,31 +6664,28 @@
         "PCIe to Molex adapter"
       ],
       "explanation": "Molex to SATA adapters are used to provide power to newer SATA drives from older power supplies that lack SATA power leads",
-      "question": "Which power adapter cable is shown in the image?",
+      "question": "A short adapter cable showing a male 4-pin Molex connector at one end and a female 15-pin SATA power connector at the other. Which power adapter cable is shown ?",
       "correctAnswer": 0,
-      "imageAlt": "A cable with a 4-pin white plastic connector on one end and a flat black 15-pin connector on the other",
-      "type": "image_question",
-      "imageDescription": "A short adapter cable showing a male 4-pin Molex connector at one end and a female 15-pin SATA power connector at the other",
-      "id": "cap-im-0114"
+      "type": "multiple_choice",
+      "id": "cap-im-0114",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 2,
-      "imageAlt": "A silver metal cylindrical connector with a rotating locking ring",
       "options": [
         "F-type connector",
         "ST connector",
         "BNC connector",
         "RJ-45 connector"
       ],
-      "question": "Which type of coaxial cable connector is shown in the image?",
+      "question": "A silver BNC connector terminated on the end of a black coaxial cable, showing the internal pin and the outer bayonet-style locking nut. Which type of coaxial cable connector is shown ?",
       "explanation": "The BNC connector is a miniature quick connect/disconnect RF connector used for coaxial cables, often seen in older 10Base2 networks or CCTV",
-      "imageDescription": "A silver BNC connector terminated on the end of a black coaxial cable, showing the internal pin and the outer bayonet-style locking nut",
-      "type": "image_question",
-      "id": "cap-im-0115"
+      "type": "multiple_choice",
+      "id": "cap-im-0115",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 3,
-      "imageAlt": "A printer component with two long rollers, one of which is orange or red",
       "options": [
         "Imaging drum",
         "Transfer roller",
@@ -6809,29 +6693,27 @@
         "Fuser assembly"
       ],
       "explanation": "The fuser assembly uses heat and pressure to permanently bond the toner powder to the paper",
-      "question": "Which laser printer component is shown in the image?",
-      "imageDescription": "The internal fuser unit of a laser printer, clearly showing the heated roller (often orange or film-covered) and the pressure roller",
-      "type": "image_question",
-      "id": "cap-im-0116"
+      "question": "The internal fuser unit of a laser printer, clearly showing the heated roller (often orange or film-covered) and the pressure roller. Which laser printer component is shown ?",
+      "type": "multiple_choice",
+      "id": "cap-im-0116",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "An ink ribbon cartridge for an impact (dot matrix) printer, showing the black plastic casing and the exposed fabric ribbon loop",
-      "type": "image_question",
-      "imageAlt": "A long black plastic cartridge containing a looped ink-soaked fabric ribbon",
+      "type": "multiple_choice",
       "correctAnswer": 1,
       "explanation": "Impact printers use a ribbon, similar to a typewriter, to transfer ink to paper when struck by print head pins",
-      "question": "Which printer consumable is shown in the image, typically used in dot matrix printers?",
+      "question": "An ink ribbon cartridge for an impact (dot matrix) printer, showing the black plastic casing and the exposed fabric ribbon loop. Which printer consumable is shown , typically used in dot matrix printers?",
       "options": [
         "Toner cartridge",
         "Ink ribbon",
         "Ink tank",
         "Thermal paper roll"
       ],
-      "id": "cap-im-0117"
+      "id": "cap-im-0117",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageDescription": "An M.2 NVMe SSD module, showing the flash memory chips on the PCB and the 'M key' edge connector",
+      "type": "multiple_choice",
       "options": [
         "M.2 SSD",
         "SODIMM RAM",
@@ -6839,10 +6721,10 @@
         "CompactFlash"
       ],
       "explanation": "M.2 SSDs are small, rectangular modules that plug directly into the motherboard, offering much faster speeds than traditional drives",
-      "question": "Which high-speed storage form factor is shown in the image?",
+      "question": "An M.2 NVMe SSD module, showing the flash memory chips on the PCB and the 'M key' edge connector. Which high-speed storage form factor is shown ?",
       "correctAnswer": 0,
-      "imageAlt": "A small, flat rectangular circuit board with memory chips and a notched connector at one end",
-      "id": "cap-im-0118"
+      "id": "cap-im-0118",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -6851,33 +6733,30 @@
         "Loopback plug",
         "Crimping tool"
       ],
-      "question": "Which network diagnostic tool is shown in the image?",
+      "question": "An RJ-45 Ethernet loopback plug, showing a clear plastic connector with short wires connecting the transmit pins directly to the receive pins. Which network diagnostic tool is shown ?",
       "explanation": "A loopback plug is used to redirect signals back to the source to test the physical port's functionality",
       "correctAnswer": 2,
-      "imageAlt": "A small RJ-45 plastic plug with wires looped from one pin back into another",
-      "type": "image_question",
-      "imageDescription": "An RJ-45 Ethernet loopback plug, showing a clear plastic connector with short wires connecting the transmit pins directly to the receive pins",
-      "id": "cap-im-0119"
+      "type": "multiple_choice",
+      "id": "cap-im-0119",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "A digitiser is the component in a mobile device that converts physical touch into digital signals",
-      "question": "Which mobile device component, responsible for touch input, is shown in the image?",
+      "question": "A replacement glass panel for a tablet, showing the transparent touch-sensitive digitiser layer and its attached ribbon cable. Which mobile device component, responsible for touch input, is shown ?",
       "options": [
         "LCD panel",
         "Digitiser",
         "Inverter",
         "Backlight"
       ],
-      "imageAlt": "A thin layer of glass with a flexible ribbon cable attached to the corner",
       "correctAnswer": 1,
-      "type": "image_question",
-      "imageDescription": "A replacement glass panel for a tablet, showing the transparent touch-sensitive digitiser layer and its attached ribbon cable",
-      "id": "cap-im-0120"
+      "type": "multiple_choice",
+      "id": "cap-im-0120",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A clear plastic 8-pin modular connector attached to a blue cable",
       "correctAnswer": 1,
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "RJ11",
         "RJ45",
@@ -6885,13 +6764,12 @@
         "DB-9"
       ],
       "explanation": "The image shows an RJ45 connector, which is the standard physical interface for Ethernet networking cables such as Cat5e or Cat6",
-      "question": "Which network connector is shown in the image?",
-      "imageDescription": "A close-up shot of an RJ45 connector at the end of a blue Category 6 Ethernet cable, showing the eight gold-plated pins",
-      "id": "cap-im-0121"
+      "question": "A close-up shot of an RJ45 connector at the end of a blue Category 6 Ethernet cable, showing the eight gold-plated pins. Which network connector is shown ?",
+      "id": "cap-im-0121",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A DDR4 desktop RAM stick (DIMM) lying on an anti-static mat, showing the 288-pin contact point and the offset notch",
-      "question": "Which type of desktop memory module is shown in the image?",
+      "question": "A DDR4 desktop RAM stick (DIMM) lying on an anti-static mat, showing the 288-pin contact point and the offset notch. Which type of desktop memory module is shown ?",
       "options": [
         "DDR2 SDRAM",
         "DDR3 SDRAM",
@@ -6899,15 +6777,14 @@
         "SDR SDRAM"
       ],
       "explanation": "DDR4 RAM modules have 288 pins and a distinctive curved bottom edge to make insertion easier and prevent damage",
-      "type": "image_question",
-      "imageAlt": "A long, thin memory module with a notch and a slightly curved bottom edge",
+      "type": "multiple_choice",
       "correctAnswer": 2,
-      "id": "cap-im-0122"
+      "id": "cap-im-0122",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A white plastic 4-pin female power connector with red, black, and yellow wires",
       "correctAnswer": 0,
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Molex 4-pin",
         "SATA power",
@@ -6915,14 +6792,13 @@
         "EPS 8-pin"
       ],
       "explanation": "A Molex connector is a 4-pin power connector used to provide 5V and 12V DC power to older PATA hard drives and optical drives",
-      "imageDescription": "A 4-pin Molex peripheral power connector protruding from a PC power supply unit, showing the red, two black, and yellow wires",
-      "question": "Which legacy internal power connector is shown in the image?",
-      "id": "cap-im-0123"
+      "question": "A 4-pin Molex peripheral power connector protruding from a PC power supply unit, showing the red, two black, and yellow wires. Which legacy internal power connector is shown ?",
+      "id": "cap-im-0123",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A small, symmetrical oval-shaped plug on the end of a white cable",
       "correctAnswer": 3,
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "USB Type-A Mini",
         "USB Type-B Micro Imaging",
@@ -6930,16 +6806,14 @@
         "USB Type-C"
       ],
       "explanation": "USB Type-C is a reversible 24-pin connector used for data, video output, and power delivery on modern devices",
-      "imageDescription": "A close-up of a white USB Type-C connector, showing its symmetrical, reversible shape with no visible 'up' or 'down' side",
-      "question": "Which reversible peripheral connector is shown in the image?",
-      "id": "cap-im-0124"
+      "question": "A close-up of a white USB Type-C connector, showing its symmetrical, reversible shape with no visible 'up' or 'down' side. Which reversible peripheral connector is shown ?",
+      "id": "cap-im-0124",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 2,
-      "imageAlt": "A small fibre optic connector with a plastic locking tab",
-      "question": "Which small form factor fibre optic connector is shown in the image?",
-      "imageDescription": "A duplex LC fibre optic connector with two ceramic ferrules and a clip holding the two small square connectors together",
+      "question": "A duplex LC fibre optic connector with two ceramic ferrules and a clip holding the two small square connectors together. Which small form factor fibre optic connector is shown ?",
       "explanation": "The LC (Lucent Connector) is a small form factor fibre optic connector featuring a tab-lock mechanism similar to an RJ45 plug",
       "options": [
         "SC Connector",
@@ -6947,12 +6821,12 @@
         "LC Connector",
         "MTRJ Connector"
       ],
-      "id": "cap-im-0125"
+      "id": "cap-im-0125",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A handheld tool with a spring-loaded mechanism and a metal blade at the tip",
       "correctAnswer": 0,
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Punch down tool",
         "Crimping tool",
@@ -6960,14 +6834,13 @@
         "Loopback plug"
       ],
       "explanation": "An impact tool (or punch down tool) is used to terminate wires into insulation-displacement connectors (IDC) on patch panels and keystone jacks",
-      "imageDescription": "A technician's punch down tool with a yellow handle, shown being used to press a single copper wire into a terminal block",
-      "question": "Which tool is shown in the image, used for terminating wires into a patch panel?",
-      "id": "cap-im-0126"
+      "question": "A technician's punch down tool with a yellow handle, shown being used to press a single copper wire into a terminal block. Which tool is shown , used for terminating wires into a patch panel?",
+      "id": "cap-im-0126",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 1,
-      "imageAlt": "A rectangular video connector with one corner angled and a small button on its side",
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "DisplayPort is a digital display interface that often features a locking latch to prevent the cable from being accidentally unplugged",
       "options": [
         "HDMI Type-A",
@@ -6975,16 +6848,14 @@
         "DVI-D Dual Link",
         "VGA (DE-15)"
       ],
-      "question": "Which video interface connector, featuring a small physical latch, is shown in the image?",
-      "imageDescription": "A DisplayPort cable head showing the asymmetrical 'L' shape and the mechanical latching button on the top of the casing",
-      "id": "cap-im-0127"
+      "question": "A DisplayPort cable head showing the asymmetrical 'L' shape and the mechanical latching button on the top of the casing. Which video interface connector, featuring a small physical latch, is shown ?",
+      "id": "cap-im-0127",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 3,
-      "imageAlt": "Two handheld electronic devices; one with a speaker and a pointed tip, the other with a switch",
-      "question": "Which tool set is shown in the image, used to trace a specific wire within a large bundle?",
-      "imageDescription": "A tone generator and probe kit, often called a 'fox and hound', used for identifies and tracing wires within a bundle",
+      "question": "A tone generator and probe kit, often called a 'fox and hound', used for identifies and tracing wires within a bundle. Which tool set is shown , used to trace a specific wire within a large bundle?",
       "explanation": "A tone generator (and probe) is used to trace cables by injecting a signal on one end that is detected audibly by the probe at the other end",
       "options": [
         "Multimeter set",
@@ -6992,14 +6863,13 @@
         "Loopback adapter kit",
         "Tone generator and probe"
       ],
-      "id": "cap-im-0128"
+      "id": "cap-im-0128",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageAlt": "A small rectangular memory module, much shorter than a desktop RAM stick",
+      "type": "multiple_choice",
       "correctAnswer": 2,
-      "question": "Which type of laptop memory module is shown in the image?",
-      "imageDescription": "A DDR3 SODIMM laptop memory module showing the 204-pin layout and a single notch on the bottom edge",
+      "question": "A DDR3 SODIMM laptop memory module showing the 204-pin layout and a single notch on the bottom edge. Which type of laptop memory module is shown ?",
       "options": [
         "SIMM module",
         "MicroDIMM module",
@@ -7007,7 +6877,8 @@
         "DIMM module"
       ],
       "explanation": "A 204-pin SODIMM is the standard form factor for DDR3 memory used in laptop computers",
-      "id": "cap-im-0129"
+      "id": "cap-im-0129",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -7017,19 +6888,16 @@
         "USB-C connector"
       ],
       "explanation": "The Lightning connector is a proprietary 8-pin connector developed by Apple for mobile devices like the iPhone and iPad",
-      "question": "Which proprietary mobile device connector is shown in the image?",
-      "imageDescription": "An Apple Lightning connector cable, showing the thin, flat connector with exposed pins on the surface of the plug",
-      "imageAlt": "A small, flat, silver-coloured plug with 8 visible gold contacts on both sides",
+      "question": "An Apple Lightning connector cable, showing the thin, flat connector with exposed pins on the surface of the plug. Which proprietary mobile device connector is shown ?",
       "correctAnswer": 1,
-      "type": "image_question",
-      "id": "cap-im-0130"
+      "type": "multiple_choice",
+      "id": "cap-im-0130",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageAlt": "A small, silver, coin-shaped battery located on a motherboard",
+      "type": "multiple_choice",
       "correctAnswer": 0,
-      "question": "Which motherboard component is shown in the image, responsible for maintaining system time when the PC is off?",
-      "imageDescription": "A close-up of a CR2032 lithium coin cell battery seated in its socket on a computer motherboard",
+      "question": "A close-up of a CR2032 lithium coin cell battery seated in its socket on a computer motherboard. Which motherboard component is shown , responsible for maintaining system time when the PC is off?",
       "options": [
         "CMOS battery",
         "RAID controller battery",
@@ -7037,14 +6905,13 @@
         "BIOS capacitor"
       ],
       "explanation": "A CMOS battery (typically a CR2032 lithium cell) provides power to the BIOS/UEFI firmware to retain hardware settings and the system clock",
-      "id": "cap-im-0131"
+      "id": "cap-im-0131",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageAlt": "A very short expansion slot on a motherboard, located near longer slots",
+      "type": "multiple_choice",
       "correctAnswer": 2,
-      "question": "Which motherboard expansion slot is shown in the image, typically used for sound cards or network adapters?",
-      "imageDescription": "A close-up of a PCIe x1 expansion slot on a motherboard, positioned next to a larger PCIe x16 slot for comparison",
+      "question": "A close-up of a PCIe x1 expansion slot on a motherboard, positioned next to a larger PCIe x16 slot for comparison. Which motherboard expansion slot is shown , typically used for sound cards or network adapters?",
       "options": [
         "PCIe x16 slot",
         "PCIe x4 slot",
@@ -7052,40 +6919,39 @@
         "Legacy PCI slot"
       ],
       "explanation": "A PCIe x1 slot is the smallest PCI Express slot, designed for low-bandwidth expansion cards like network adapters or sound cards",
-      "id": "cap-im-0132"
+      "id": "cap-im-0132",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "Which internal data storage connector is shown in the image?",
+      "question": "A close-up of a SATA data cable, typically red or blue, showing the internal L-shaped contact point of the connector. Which internal data storage connector is shown ?",
       "explanation": "SATA provides data transfer for hard drives and optical drives, featuring a distinct L-shape to prevent incorrect insertion",
-      "imageAlt": "A narrow, flat internal computer cable with an L-shaped 7-pin connector",
-      "imageDescription": "A close-up of a SATA data cable, typically red or blue, showing the internal L-shaped contact point of the connector",
       "correctAnswer": 2,
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "IDE cable",
         "PATA cable",
         "SATA cable",
         "eSATA cable"
       ],
-      "id": "cap-im-0133"
+      "id": "cap-im-0133",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "Which type of coaxial connector, often used in older 10Base2 networks or for video signals, is shown in the image?",
+      "question": "A BNC connector attached to the end of a thin coaxial cable, showing the bayonet-style locking mechanism. Which type of coaxial connector, often used in older 10Base2 networks or for video signals, is shown ?",
       "explanation": "The BNC connector is a miniature quick connect/disconnect RF connector used for coaxial cable",
-      "imageAlt": "A silver cylindrical connector with a rotating locking ring used on coaxial cables",
-      "imageDescription": "A BNC connector attached to the end of a thin coaxial cable, showing the bayonet-style locking mechanism",
       "correctAnswer": 0,
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "BNC",
         "F-type",
         "ST",
         "LC"
       ],
-      "id": "cap-im-0134"
+      "id": "cap-im-0134",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "VGA port",
         "Serial (DB-9) port",
@@ -7093,32 +6959,28 @@
         "PS/2 port"
       ],
       "correctAnswer": 1,
-      "imageDescription": "A male DB-9 serial port connector, showing the nine pins and the characteristic D-shell shape",
-      "imageAlt": "A D-shaped connector with 9 pins arranged in two rows",
       "explanation": "DB-9 connectors are commonly used for RS-232 serial communication ports on older PCs and networking equipment",
-      "question": "Which legacy communication port is shown in the image?",
-      "id": "cap-im-0135"
+      "question": "A male DB-9 serial port connector, showing the nine pins and the characteristic D-shell shape. Which legacy communication port is shown ?",
+      "id": "cap-im-0135",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "USB Type-B connectors are square-shaped with slightly beveled corners, commonly found on printers and external hard drive enclosures",
-      "question": "Which USB connector type, typically used for connecting printers, is shown in the image?",
-      "imageAlt": "A square-shaped USB connector with angled top corners",
-      "imageDescription": "A close-up of a USB 2.0 Type-B plug, highlighting its square profile and internal pin layout",
+      "question": "A close-up of a USB 2.0 Type-B plug, highlighting its square profile and internal pin layout. Which USB connector type, typically used for connecting printers, is shown ?",
       "correctAnswer": 3,
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "USB Type-A",
         "USB Type-C",
         "Mini-USB",
         "USB Type-B"
       ],
-      "id": "cap-im-0136"
+      "id": "cap-im-0136",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "Which internal laser printer component is shown in the image?",
+      "question": "A laser printer fuser assembly, showing the heating roller and the pressure roller through which paper passes. Which internal laser printer component is shown ?",
       "explanation": "The fuser assembly uses heat and pressure to permanently bond the toner powder to the paper",
-      "imageAlt": "A unit containing two rollers, one of which is usually orange or black, used in a laser printer",
-      "imageDescription": "A laser printer fuser assembly, showing the heating roller and the pressure roller through which paper passes",
       "correctAnswer": 1,
       "options": [
         "Imaging drum",
@@ -7126,8 +6988,9 @@
         "Transfer belt",
         "Pickup roller"
       ],
-      "type": "image_question",
-      "id": "cap-im-0137"
+      "type": "multiple_choice",
+      "id": "cap-im-0137",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -7136,43 +6999,40 @@
         "Dust caps",
         "Splicing sleeves"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 2,
-      "imageAlt": "Small plastic caps fitted over the ends of a fiber optic cable connector",
-      "imageDescription": "A pair of fiber optic connectors with small white plastic dust caps covering the ferrules",
       "explanation": "Fiber optic cables require protective caps (dust caps) to prevent contamination of the polished glass ends when not in use",
-      "question": "What equipment is shown attached to the ends of these fiber optic connectors to prevent contamination?",
-      "id": "cap-im-0138"
+      "question": "A pair of fiber optic connectors with small white plastic dust caps covering the ferrules. What equipment is shown attached to the ends of these fiber optic connectors to prevent contamination?",
+      "id": "cap-im-0138",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "Thermal paste is applied between the CPU and the heat sink to fill microscopic air gaps and improve heat transfer",
-      "question": "Which substance is being applied in the image to improve heat conduction between a CPU and a cooler?",
-      "imageAlt": "A tube of grey or silver metallic-looking paste being squeezed onto a processor",
-      "imageDescription": "A syringe applying a small amount of silver thermal compound onto the integrated heat spreader of a CPU",
+      "question": "A syringe applying a small amount of silver thermal compound onto the integrated heat spreader of a CPU. Which substance is being applied to improve heat conduction between a CPU and a cooler?",
       "correctAnswer": 0,
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Thermal paste/grease",
         "Conductive adhesive",
         "Dielectric grease",
         "Soldering flux"
       ],
-      "id": "cap-im-0139"
+      "id": "cap-im-0139",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "A Molex connector is a 4-pin power connector used for older IDE hard drives, optical drives, and some case fans",
-      "question": "Which classic 4-pin peripheral power connector is shown in the image?",
-      "imageDescription": "A standard 4-pin peripheral power connector, commonly known as a Molex connector, showing the four large pins and white plastic housing",
-      "imageAlt": "A white plastic 4-pin power connector with large rounded pins",
+      "question": "A standard 4-pin peripheral power connector, commonly known as a Molex connector, showing the four large pins and white plastic housing. Which classic 4-pin peripheral power connector is shown ?",
       "correctAnswer": 3,
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "SATA power connector",
         "PCIe power connector",
         "CPU power connector 4-pin",
         "Molex connector"
       ],
-      "id": "cap-im-0140"
+      "id": "cap-im-0140",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -7181,20 +7041,17 @@
         "DSL modem",
         "Wireless bridge"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 1,
-      "imageAlt": "A small black box with two RJ45 ports and a mains power lead",
-      "imageDescription": "A standalone PoE injector showing the 'Data In' and 'Data/Power Out' ports and a power status LED",
-      "question": "Which device is shown in the image, used to provide power to a network device via an Ethernet cable?",
+      "question": "A standalone PoE injector showing the 'Data In' and 'Data/Power Out' ports and a power status LED. Which device is shown , used to provide power to a network device via an Ethernet cable?",
       "explanation": "Power over Ethernet (PoE) injectors allow a single cable to provide both data and electrical power to devices like IP cameras or VoIP phones",
-      "id": "cap-im-0141"
+      "id": "cap-im-0141",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A small RJ45 connector with short wires looped back into the same plug",
-      "imageDescription": "A network loopback plug, showing the wires exiting and re-entering the RJ45 housing to complete a circuit",
-      "question": "Which diagnostic tool is shown in the image, used for testing a physical port's ability to send and receive signals?",
+      "question": "A network loopback plug, showing the wires exiting and re-entering the RJ45 housing to complete a circuit. Which diagnostic tool is shown , used for testing a physical port's ability to send and receive signals?",
       "explanation": "Loopback plugs are used to test the physical ports of a computer or network device by redirecting the outgoing signal back into the same port",
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Crossover cable",
         "Null modem cable",
@@ -7202,14 +7059,13 @@
         "Bridge adapter"
       ],
       "correctAnswer": 2,
-      "id": "cap-im-0142"
+      "id": "cap-im-0142",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A very small rectangular memory card, roughly the size of a fingernail",
-      "imageDescription": "A Micro-SD flash memory card shown next to a standard SD adapter to illustrate its small size",
-      "question": "Which form factor of flash memory card is shown in the image?",
+      "question": "A Micro-SD flash memory card shown next to a standard SD adapter to illustrate its small size. Which form factor of flash memory card is shown ?",
       "explanation": "The Micro-SD card is the smallest standard flash memory card, commonly used in smartphones, tablets, and action cameras",
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Micro-SD card",
         "CompactFlash card",
@@ -7217,7 +7073,8 @@
         "MMC card"
       ],
       "correctAnswer": 0,
-      "id": "cap-im-0143"
+      "id": "cap-im-0143",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -7226,13 +7083,12 @@
         "Liquid cooling block",
         "Heat pipe"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 1,
-      "imageDescription": "A passive aluminium heat sink with multiple thin fins designed to dissipate heat from a motherboard chipset",
-      "imageAlt": "A block of metal with many thin vertical fins",
-      "question": "Which passive cooling component is shown in the image?",
+      "question": "A passive aluminium heat sink with multiple thin fins designed to dissipate heat from a motherboard chipset. Which passive cooling component is shown ?",
       "explanation": "The heat sink uses a large surface area, often with fins, to dissipate heat from components like CPUs or GPUs into the surrounding air",
-      "id": "cap-im-0144"
+      "id": "cap-im-0144",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -7241,62 +7097,57 @@
         "VGA",
         "DisplayPort"
       ],
-      "question": "Which legacy analogue video connector is shown in the image?",
-      "imageDescription": "Close up of a blue DB-15 VGA cable head with its distinctive three rows of five pins",
-      "type": "image_question",
-      "imageAlt": "A 15-pin, three-row, blue D-subminiature connector on a cable",
+      "question": "Close up of a blue DB-15 VGA cable head with its distinctive three rows of five pins. Which legacy analogue video connector is shown ?",
+      "type": "multiple_choice",
       "explanation": "The image shows a DB-15 VGA (Video Graphics Array) connector, a legacy analogue interface used primarily for monitors and projectors",
       "correctAnswer": 2,
-      "id": "cap-im-0145"
+      "id": "cap-im-0145",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A clear plastic RJ-45 connector crimped onto a blue Cat6 Ethernet cable, showing the eight copper contacts",
-      "question": "Which networking connector is shown in the image, commonly used for twisted-pair Ethernet cables?",
+      "question": "A clear plastic RJ-45 connector crimped onto a blue Cat6 Ethernet cable, showing the eight copper contacts. Which networking connector is shown , commonly used for twisted-pair Ethernet cables?",
       "options": [
         "RJ-45",
         "RJ-11",
         "RS-232",
         "BNC"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 0,
       "explanation": "The image shows an RJ-45 connector, which features 8 positions and 8 contacts (8P8C), standard for Ethernet networking",
-      "imageAlt": "An 8-pin clear plastic modular connector at the end of a network cable",
-      "id": "cap-im-0146"
+      "id": "cap-im-0146",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A DDR2 MicroDIMM memory module, significantly smaller than a standard laptop SO-DIMM stick, showing the high-density pin layout",
-      "question": "Which specialized laptop memory form factor is shown in the image?",
+      "question": "A DDR2 MicroDIMM memory module, significantly smaller than a standard laptop SO-DIMM stick, showing the high-density pin layout. Which specialized laptop memory form factor is shown ?",
       "options": [
         "SO-DIMM music",
         "MicroDIMM",
         "SIMM",
         "DIMM"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 1,
-      "imageAlt": "A very small memory module, smaller than a standard laptop RAM stick",
       "explanation": "The image shows a 172-pin MicroDIMM, which is a smaller form factor than SO-DIMM, used in older ultra-portable laptops",
-      "id": "cap-im-0147"
+      "id": "cap-im-0147",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 3,
       "explanation": "The image shows a Molex-to-SATA power adapter, used to connect newer SATA drives to older power supplies that lack SATA leads",
-      "imageAlt": "A short cable with a white 4-pin plastic connector on one end and a black flat 15-pin connector on the other",
-      "question": "Which power adapter cable is shown in the image?",
-      "imageDescription": "An adapter cable with a male 4-pin Molex connector transitioning to a female 15-pin SATA power connector",
+      "question": "An adapter cable with a male 4-pin Molex connector transitioning to a female 15-pin SATA power connector. Which power adapter cable is shown ?",
       "options": [
         "SATA data cable",
         "PCIe power cable",
         "PATA ribbon cable",
         "Molex to SATA adapter"
       ],
-      "id": "cap-im-0148"
+      "id": "cap-im-0148",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "Which tool is shown in the image, used to secure a connector onto a network cable?",
-      "imageDescription": "A heavy-duty hand-operated crimping tool with slots for RJ-45 and RJ-11 connectors",
+      "question": "A heavy-duty hand-operated crimping tool with slots for RJ-45 and RJ-11 connectors. Which tool is shown , used to secure a connector onto a network cable?",
       "options": [
         "Punch-down tool",
         "Crimper",
@@ -7305,54 +7156,51 @@
       ],
       "correctAnswer": 1,
       "explanation": "The image shows a crimping tool, which is used to physically attach modular connectors like RJ-45 or RJ-11 to the ends of cables",
-      "imageAlt": "A metal hand tool with handles and a die head designed to squeeze plastic connectors",
-      "type": "image_question",
-      "id": "cap-im-0149"
+      "type": "multiple_choice",
+      "id": "cap-im-0149",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "Which video signal converter is shown in the image?",
-      "imageDescription": "A short black converter cable with a male DisplayPort connector on one end and a female HDMI port on the other",
+      "question": "A short black converter cable with a male DisplayPort connector on one end and a female HDMI port on the other. Which video signal converter is shown ?",
       "options": [
         "DisplayPort to HDMI adapter",
         "DVI to VGA adapter",
         "USB-C to DisplayPort cable",
         "Mini-HDMI to HDMI coupler"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 0,
-      "imageAlt": "A small adapter with a DisplayPort male plug and an HDMI female socket",
       "explanation": "The image shows a DisplayPort to HDMI adapter, allowing a device with a DisplayPort output to connect to an HDMI-only display",
-      "id": "cap-im-0150"
+      "id": "cap-im-0150",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 2,
       "explanation": "The image shows an SC (Subscriber Connector), characterized by its square shape and push-pull latching mechanism",
-      "imageAlt": "A square-faced fibre optic connector with a plastic body",
-      "question": "Which type of fibre optic connector is shown in the image?",
-      "imageDescription": "A pair of square-shaped fibre optic connectors, known as SC connectors, often found in single-mode networking",
+      "question": "A pair of square-shaped fibre optic connectors, known as SC connectors, often found in single-mode networking. Which type of fibre optic connector is shown ?",
       "options": [
         "ST connector",
         "LC connector",
         "SC connector",
         "MTRJ connector"
       ],
-      "id": "cap-im-0151"
+      "id": "cap-im-0151",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 1,
-      "imageAlt": "A small, thin circuit board with memory chips and a notched edge connector",
       "explanation": "The image shows a M.2 SSD, which is a modern, compact internal storage form factor that mounts directly to the motherboard",
-      "question": "Which high-speed internal storage form factor is shown in the image?",
-      "imageDescription": "An NVMe M.2 2280 solid-state drive, showing the flash memory chips and the M-key edge connector",
+      "question": "An NVMe M.2 2280 solid-state drive, showing the flash memory chips and the M-key edge connector. Which high-speed internal storage form factor is shown ?",
       "options": [
         "mSATA SSD",
         "M.2 SSD",
         "PCIe expansion card",
         "DIMM memory"
       ],
-      "id": "cap-im-0152"
+      "id": "cap-im-0152",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -7361,13 +7209,12 @@
         "AGP slot",
         "PCIe x16 slot"
       ],
-      "imageDescription": "A close-up of a PCIe x16 expansion slot on a motherboard, featuring the securing latch at the right-hand side",
-      "question": "Which motherboard expansion slot is shown in the image, typically used for dedicated graphics cards?",
+      "question": "A close-up of a PCIe x16 expansion slot on a motherboard, featuring the securing latch at the right-hand side. Which motherboard expansion slot is shown , typically used for dedicated graphics cards?",
       "explanation": "The image shows a PCIe x16 slot, the longest version of the slot, which provides the bandwidth required for modern graphics cards",
-      "imageAlt": "A long plastic expansion slot on a motherboard with a small latch at one end",
       "correctAnswer": 3,
-      "type": "image_question",
-      "id": "cap-im-0153"
+      "type": "multiple_choice",
+      "id": "cap-im-0153",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -7376,17 +7223,15 @@
         "Loopback plug",
         "Tone generator"
       ],
-      "imageDescription": "A digital multimeter with the dial set to measure DC voltage, with two test leads (probes) attached",
-      "question": "Which diagnostic tool is shown in the image, used to verify the output of a computer's power supply?",
-      "type": "image_question",
+      "question": "A digital multimeter with the dial set to measure DC voltage, with two test leads (probes) attached. Which diagnostic tool is shown , used to verify the output of a computer's power supply?",
+      "type": "multiple_choice",
       "explanation": "The image shows a multimeter, a versatile tool used to measure electrical properties like voltage, resistance, and continuity",
-      "imageAlt": "A handheld electronic device with a digital display, a dial, and red and black probes",
       "correctAnswer": 0,
-      "id": "cap-im-0154"
+      "id": "cap-im-0154",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "Which legacy peripheral connector is shown in the image?",
-      "imageDescription": "A purple PS/2 Mini-DIN connector at the end of a keyboard cable",
+      "question": "A purple PS/2 Mini-DIN connector at the end of a keyboard cable. Which legacy peripheral connector is shown ?",
       "options": [
         "S-Video",
         "FireWire",
@@ -7394,25 +7239,24 @@
         "MIDI"
       ],
       "correctAnswer": 2,
-      "imageAlt": "A small round purple connector with 6 pins inside a metal rim",
       "explanation": "The image shows a Mini-DIN 6 connector, historically used for PS/2 keyboards (purple) and mice (green)",
-      "type": "image_question",
-      "id": "cap-im-0155"
+      "type": "multiple_choice",
+      "id": "cap-im-0155",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A small, flat, oval-shaped connector that can be plugged in either way",
       "explanation": "The image shows a USB Type-C connector, which is reversible, compact, and supports high-speed data and power delivery",
       "correctAnswer": 1,
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Micro-USB",
         "USB Type-C",
         "Mini-USB",
         "USB Type-A"
       ],
-      "imageDescription": "A USB Type-C cable head showing the symmetrical, reversible connector design",
-      "question": "Which modern, reversible USB connector is shown in the image?",
-      "id": "cap-im-0156"
+      "question": "A USB Type-C cable head showing the symmetrical, reversible connector design. Which modern, reversible USB connector is shown ?",
+      "id": "cap-im-0156",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "The image shows a Molex to SATA power adapter, which allows older power supplies to connect to modern SATA drives",
@@ -7422,12 +7266,11 @@
         "Molex to SATA adapter",
         "P4 to SATA adapter"
       ],
-      "imageAlt": "A power cable adapter with a white 4-pin male connector on one side and a black 15-pin female connector on the other",
-      "type": "image_question",
-      "question": "A technician needs to connect a new SATA SSD to an older power supply that lacks SATA power connectors. Which adapter cable shown in the image is required?",
-      "imageDescription": "Close-up of a Molex to SATA power adapter cable lying on a wooden desk",
+      "type": "multiple_choice",
+      "question": "Close-up of a Molex to SATA power adapter cable lying on a wooden desk. A technician needs to connect a new SATA SSD to an older power supply that lacks SATA power connectors. Which adapter cable shown is required?",
       "correctAnswer": 2,
-      "id": "cap-im-0157"
+      "id": "cap-im-0157",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "A punch-down tool is used to terminate wires into blocks like the 110-block or a patch panel by pushing the wire into the slot and cutting the excess",
@@ -7437,16 +7280,14 @@
         "Wire stripper",
         "Tone generator"
       ],
-      "type": "image_question",
-      "imageAlt": "A hand-held tool with a yellow handle and a metal bladed tip resting against a network patch panel",
-      "question": "Which tool is shown being used to terminate copper wiring into a patch panel or keystone jack?",
-      "imageDescription": "A technician holding a punch-down tool against a CAT6 patch panel in a server rack",
+      "type": "multiple_choice",
+      "question": "A technician holding a punch-down tool against a CAT6 patch panel in a server rack. Which tool is shown being used to terminate copper wiring into a patch panel or keystone jack?",
       "correctAnswer": 0,
-      "id": "cap-im-0158"
+      "id": "cap-im-0158",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "Close-up of pre-cut grey thermal pads being applied to the voltage regulator modules (VRMs) near a CPU socket",
-      "question": "Instead of using thermal paste, which pre-cut heat-conductive material is shown being applied to these internal components?",
+      "question": "Close-up of pre-cut grey thermal pads being applied to the voltage regulator modules (VRMs) near a CPU socket. Instead of using thermal paste, which pre-cut heat-conductive material is shown being applied to these internal components?",
       "correctAnswer": 1,
       "options": [
         "Adhesive tape",
@@ -7455,13 +7296,12 @@
         "Silicon washers"
       ],
       "explanation": "Thermal pads provide a consistent interface for heat transfer and are often used on VRMs or M.2 drives where thermal paste might be too messy",
-      "imageAlt": "Small, soft grey rectangular pads being placed onto electronic components on a motherboard",
-      "type": "image_question",
-      "id": "cap-im-0159"
+      "type": "multiple_choice",
+      "id": "cap-im-0159",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "Which digital video interface connector is shown in the image?",
-      "imageDescription": "A close-up shot of a DisplayPort cable connector showing its distinct asymmetrical shape",
+      "question": "A close-up shot of a DisplayPort cable connector showing its distinct asymmetrical shape. Which digital video interface connector is shown ?",
       "correctAnswer": 3,
       "explanation": "The DisplayPort connector features a unique 'hook' or 'D' shape with one flat corner and is the standard for high-bandwidth video on modern PCs",
       "options": [
@@ -7470,9 +7310,9 @@
         "USB-C Display Mode",
         "DisplayPort"
       ],
-      "imageAlt": "A rectangular black plug with one corner slanted and 20 pins visible inside",
-      "type": "image_question",
-      "id": "cap-im-0160"
+      "type": "multiple_choice",
+      "id": "cap-im-0160",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -7482,12 +7322,11 @@
         "Dual-channel RAM"
       ],
       "explanation": "Parity or ECC RAM modules often feature an extra memory chip (9 instead of 8) on the module to store error-checking data",
-      "imageAlt": "A stick of desktop RAM with nine individual memory chips visible on one side instead of the standard eight",
-      "type": "image_question",
-      "imageDescription": "A high-resolution photo of a DDR4 RAM module where nine memory chips are clearly visible in a row",
-      "question": "Based on the number of memory chips visible on this module, which type of specialized memory is most likely shown?",
+      "type": "multiple_choice",
+      "question": "A high-resolution photo of a DDR4 RAM module where nine memory chips are clearly visible in a row. Based on the number of memory chips visible on this module, which type of specialized memory is most likely shown?",
       "correctAnswer": 1,
-      "id": "cap-im-0161"
+      "id": "cap-im-0161",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -7497,12 +7336,11 @@
         "Chassis screws"
       ],
       "explanation": "Stand-offs are small brass or plastic spacers that screw into the case to prevent the motherboard's circuits from touching the metal chassis",
-      "type": "image_question",
-      "imageAlt": "Small gold-coloured brass hexagonal spacers with a screw thread on one end and a hole on the other",
-      "imageDescription": "A collection of brass motherboard stand-offs sitting next to a screwdriver inside a computer case",
-      "question": "Which essential mounting components are shown, used to prevent a motherboard from shorting against the computer case?",
+      "type": "multiple_choice",
+      "question": "A collection of brass motherboard stand-offs sitting next to a screwdriver inside a computer case. Which essential mounting components are shown, used to prevent a motherboard from shorting against the computer case?",
       "correctAnswer": 0,
-      "id": "cap-im-0162"
+      "id": "cap-im-0162",
+      "__rewritten_from_image__": true
     },
     {
       "type": "true_false",

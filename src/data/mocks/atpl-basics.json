@@ -696,12 +696,12 @@
     {
       "question": "In the International Standard Atmosphere (ISA), what is the standard lapse rate of temperature in the troposphere?",
       "correctAnswer": 1,
-      "explanation": "In the International Standard Atmosphere (ISA), the temperature is assumed to decrease at a rate of 1.98°C (approximately 2°C) per 1000 ft up to the Tropopause",
+      "explanation": "In the International Standard Atmosphere (ISA), the temperature is assumed to decrease at a rate of 1.98\u00b0C (approximately 2\u00b0C) per 1000 ft up to the Tropopause",
       "options": [
-        "1.5°C per 1,000 ft",
-        "1.98°C per 1,000 ft",
-        "3.0°C per 1,000 ft",
-        "0.5°C per 1,000 ft"
+        "1.5\u00b0C per 1,000 ft",
+        "1.98\u00b0C per 1,000 ft",
+        "3.0\u00b0C per 1,000 ft",
+        "0.5\u00b0C per 1,000 ft"
       ],
       "type": "multiple_choice",
       "id": "ab-mc-0054"
@@ -1019,7 +1019,7 @@
       "id": "ab-mc-0078"
     },
     {
-      "question": "According to Bernoulli’s Principle, what happens to air flowing through a Venturi tube at the point of greatest constriction?",
+      "question": "According to Bernoulli\u2019s Principle, what happens to air flowing through a Venturi tube at the point of greatest constriction?",
       "explanation": "The Venturi effect states that as air is constricted, its velocity increases and its static pressure decreases",
       "correctAnswer": 2,
       "options": [
@@ -1114,10 +1114,10 @@
       "type": "multiple_choice",
       "question": "What is the standard International Standard Atmosphere (ISA) temperature lapse rate in the troposphere?",
       "options": [
-        "1°C per 1,000 feet",
-        "3°C per 1,000 feet",
-        "2°C per 1,000 feet",
-        "1.5°C per 1,000 feet"
+        "1\u00b0C per 1,000 feet",
+        "3\u00b0C per 1,000 feet",
+        "2\u00b0C per 1,000 feet",
+        "1.5\u00b0C per 1,000 feet"
       ],
       "explanation": "The ISA temperature lapse rate is approximately 2 degrees Celsius per 1,000 feet (or 0.65 degrees per 100 metres)",
       "id": "ab-mc-0086"
@@ -1321,7 +1321,7 @@
       "question": "What is the approximate rate of descent required to maintain a 3-degree glideslope at a groundspeed of 120 knots?",
       "type": "multiple_choice",
       "correctAnswer": 2,
-      "explanation": "On a 3-degree ILS glideslope, the standard rate of descent is approximately 5 times the groundspeed (Rate = GS × 5). 120 x 5 = 600",
+      "explanation": "On a 3-degree ILS glideslope, the standard rate of descent is approximately 5 times the groundspeed (Rate = GS \u00d7 5). 120 x 5 = 600",
       "options": [
         "450 feet per minute",
         "500 feet per minute",
@@ -1376,7 +1376,7 @@
         "1.73 G",
         "2.00 G"
       ],
-      "explanation": "For a steady-state coordinated turn at a constant altitude, the load factor (n) is calculated by 1 / cos(bank angle). For 60°, cos(60) = 0.5, so n = 2.0",
+      "explanation": "For a steady-state coordinated turn at a constant altitude, the load factor (n) is calculated by 1 / cos(bank angle). For 60\u00b0, cos(60) = 0.5, so n = 2.0",
       "correctAnswer": 3,
       "type": "multiple_choice",
       "question": "What is the load factor (G) acting on an aircraft in a level, coordinated 60-degree bank turn?",
@@ -1423,7 +1423,7 @@
     },
     {
       "type": "multiple_choice",
-      "explanation": "A supercooled water droplet is liquid water that remains in a liquid state at temperatures below 0°C; it freezes instantly upon impact with an aircraft",
+      "explanation": "A supercooled water droplet is liquid water that remains in a liquid state at temperatures below 0\u00b0C; it freezes instantly upon impact with an aircraft",
       "options": [
         "Ice that has melted and then refrozen on the wing surface",
         "Water that has frozen into ice pellets before hitting the aircraft",
@@ -1723,13 +1723,13 @@
     {
       "type": "multiple_choice",
       "correctAnswer": 2,
-      "explanation": "Below the tropopause, the temperature in the ISA is assumed to decrease at a set rate of 1.98°C (often rounded to 2°C) per 1,000 feet",
+      "explanation": "Below the tropopause, the temperature in the ISA is assumed to decrease at a set rate of 1.98\u00b0C (often rounded to 2\u00b0C) per 1,000 feet",
       "question": "In the International Standard Atmosphere (ISA), what is the temperature lapse rate in the troposphere?",
       "options": [
-        "1.50°C per 1,000 ft",
-        "3.00°C per 1,000 ft",
-        "1.98°C per 1,000 ft",
-        "0.50°C per 1,000 ft"
+        "1.50\u00b0C per 1,000 ft",
+        "3.00\u00b0C per 1,000 ft",
+        "1.98\u00b0C per 1,000 ft",
+        "0.50\u00b0C per 1,000 ft"
       ],
       "id": "ab-mc-0133"
     },
@@ -1760,7 +1760,7 @@
       "id": "ab-mc-0135"
     },
     {
-      "explanation": "The line of 0° longitude passes through the Royal Observatory in Greenwich, London, serving as the starting point for measuring East/West longitude",
+      "explanation": "The line of 0\u00b0 longitude passes through the Royal Observatory in Greenwich, London, serving as the starting point for measuring East/West longitude",
       "options": [
         "The Equator",
         "The International Date Line",
@@ -1922,7 +1922,7 @@
         "Declination",
         "Magnetic Dip"
       ],
-      "explanation": "The magnetic dip is the angle the Earth's magnetic field lines make with the horizontal; it is 0° at the magnetic equator and 90° at the magnetic poles",
+      "explanation": "The magnetic dip is the angle the Earth's magnetic field lines make with the horizontal; it is 0\u00b0 at the magnetic equator and 90\u00b0 at the magnetic poles",
       "question": "What is the term for the vertical angle between the Earth's magnetic field lines and the horizontal plane?",
       "correctAnswer": 3,
       "type": "multiple_choice",
@@ -2063,7 +2063,7 @@
       "question": "In meteorology, what is the definition of a 'Temperature Inversion'?",
       "type": "multiple_choice",
       "options": [
-        "The environmental lapse rate is exactly 2°C per 1,000ft",
+        "The environmental lapse rate is exactly 2\u00b0C per 1,000ft",
         "Air temperature decreases rapidly with height",
         "Air temperature increases with an increase in altitude",
         "A layer of air where the pressure remains constant"
@@ -2137,7 +2137,7 @@
       "id": "ab-mc-0164"
     },
     {
-      "question": "According to Bernoulli’s Principle, as air flows through a venturi and its velocity increases, what happens to the static pressure?",
+      "question": "According to Bernoulli\u2019s Principle, as air flows through a venturi and its velocity increases, what happens to the static pressure?",
       "correctAnswer": 1,
       "explanation": "According to Bernoulli's principle, as the velocity of a moving fluid (like air) increases, the static pressure within that fluid decreases",
       "type": "multiple_choice",
@@ -2271,10 +2271,10 @@
       "type": "multiple_choice",
       "correctAnswer": 2,
       "options": [
-        "3.0°C per 1,000 ft",
-        "1.5°C per 1,000 ft",
-        "2.0°C per 1,000 ft",
-        "0.5°C per 1,000 ft"
+        "3.0\u00b0C per 1,000 ft",
+        "1.5\u00b0C per 1,000 ft",
+        "2.0\u00b0C per 1,000 ft",
+        "0.5\u00b0C per 1,000 ft"
       ],
       "explanation": "Under ICAO standards, the standard temperature lapse rate is approximately 2 degrees Celsius per 1,000 feet of altitude",
       "id": "ab-mc-0175"
@@ -2367,7 +2367,7 @@
         "Air density increases"
       ],
       "type": "multiple_choice",
-      "question": "On a day where the temperature is ISA +15°C, what is the effect on the density altitude?",
+      "question": "On a day where the temperature is ISA +15\u00b0C, what is the effect on the density altitude?",
       "id": "ab-mc-0182"
     },
     {
@@ -2555,12 +2555,12 @@
     {
       "question": "What are the standard sea-level pressure and temperature values defined by ISA?",
       "options": [
-        "1013.25 hPa and 0°C",
-        "1000.00 hPa and 15°C",
-        "1013.25 hPa and 15°C",
-        "1020.15 hPa and 20°C"
+        "1013.25 hPa and 0\u00b0C",
+        "1000.00 hPa and 15\u00b0C",
+        "1013.25 hPa and 15\u00b0C",
+        "1020.15 hPa and 20\u00b0C"
       ],
-      "explanation": "1013.25 hPa (or mb) and 15°C are the established sea-level constants for the International Standard Atmosphere",
+      "explanation": "1013.25 hPa (or mb) and 15\u00b0C are the established sea-level constants for the International Standard Atmosphere",
       "correctAnswer": 2,
       "type": "multiple_choice",
       "id": "ab-mc-0197"
@@ -2607,7 +2607,7 @@
     {
       "type": "multiple_choice",
       "correctAnswer": 1,
-      "explanation": "Carburettor icing is most likely when the outside air temperature is between -5°C and +30°C with high humidity",
+      "explanation": "Carburettor icing is most likely when the outside air temperature is between -5\u00b0C and +30\u00b0C with high humidity",
       "options": [
         "High temperature and low humidity",
         "Moderate temperature and high humidity",
@@ -2900,7 +2900,7 @@
       "correctAnswer": 0,
       "question": "In Bernoulli's equation, which term represents the pressure due to the motion of the fluid?",
       "type": "multiple_choice",
-      "explanation": "Dynamic pressure is the 'moving' pressure component, calculated as 1/2 x density x velocity squared (1/2ρv²)",
+      "explanation": "Dynamic pressure is the 'moving' pressure component, calculated as 1/2 x density x velocity squared (1/2\u03c1v\u00b2)",
       "id": "ab-mc-0223"
     },
     {
@@ -3699,7 +3699,7 @@
     {
       "options": [
         "The temperature starts to increase rapidly",
-        "The lapse rate increases to 3°C per 1,000ft",
+        "The lapse rate increases to 3\u00b0C per 1,000ft",
         "The air pressure begins to increase",
         "The temperature lapse rate becomes zero or very small"
       ],
@@ -3790,12 +3790,12 @@
     {
       "type": "multiple_choice",
       "options": [
-        "1.0°C per 1,000 ft",
-        "3.0°C per 1,000 ft",
-        "0.5°C per 1,000 ft",
-        "1.98°C per 1,000 ft"
+        "1.0\u00b0C per 1,000 ft",
+        "3.0\u00b0C per 1,000 ft",
+        "0.5\u00b0C per 1,000 ft",
+        "1.98\u00b0C per 1,000 ft"
       ],
-      "explanation": "ISA standards define the Temperature Lapse Rate as 1.98°C per 1,000 feet (often rounded to 2°C) up to the Tropopause",
+      "explanation": "ISA standards define the Temperature Lapse Rate as 1.98\u00b0C per 1,000 feet (often rounded to 2\u00b0C) up to the Tropopause",
       "question": "What is the International Standard Atmosphere (ISA) temperature lapse rate in the troposphere?",
       "correctAnswer": 3,
       "id": "ab-mc-0292"
@@ -4244,15 +4244,15 @@
     },
     {
       "options": [
-        "1.013 kg/m³",
-        "1.325 kg/m³",
-        "1.225 kg/m³",
-        "0.985 kg/m³"
+        "1.013 kg/m\u00b3",
+        "1.325 kg/m\u00b3",
+        "1.225 kg/m\u00b3",
+        "0.985 kg/m\u00b3"
       ],
       "correctAnswer": 2,
       "question": "What is the standard air density at Sea Level according to the International Standard Atmosphere (ISA)?",
       "type": "multiple_choice",
-      "explanation": "By convention, the density of dry air at MSL is 1.225 kg/m³ according to the International Standard Atmosphere",
+      "explanation": "By convention, the density of dry air at MSL is 1.225 kg/m\u00b3 according to the International Standard Atmosphere",
       "id": "ab-mc-0327"
     },
     {
@@ -4347,12 +4347,12 @@
       "id": "ab-mc-0334"
     },
     {
-      "explanation": "Standard temperature at MSL is 15°C, with a standard lapse rate of 1.98°C (approx 2°C) per 1000 feet",
+      "explanation": "Standard temperature at MSL is 15\u00b0C, with a standard lapse rate of 1.98\u00b0C (approx 2\u00b0C) per 1000 feet",
       "options": [
-        "+15°C and 1.98°C per 1000ft lapse rate",
-        "+15°C and 2.0°C per 1000ft lapse rate",
-        "+10°C and 1.5°C per 1000ft lapse rate",
-        "+20°C and 2.0°C per 1000ft lapse rate"
+        "+15\u00b0C and 1.98\u00b0C per 1000ft lapse rate",
+        "+15\u00b0C and 2.0\u00b0C per 1000ft lapse rate",
+        "+10\u00b0C and 1.5\u00b0C per 1000ft lapse rate",
+        "+20\u00b0C and 2.0\u00b0C per 1000ft lapse rate"
       ],
       "question": "What are the ISA standard sea level temperature and the standard temperature lapse rate in the troposphere?",
       "correctAnswer": 1,
@@ -4537,7 +4537,7 @@
       ],
       "correctAnswer": 1,
       "type": "multiple_choice",
-      "explanation": "Parasite drag, which includes skin friction and form drag, increases with the square of the velocity (V²), making it much more significant at high speeds",
+      "explanation": "Parasite drag, which includes skin friction and form drag, increases with the square of the velocity (V\u00b2), making it much more significant at high speeds",
       "question": "How does Parasite Drag (Profile Drag) vary in relation to an aircraft's airspeed?",
       "id": "ab-mc-0349"
     },
@@ -4625,7 +4625,7 @@
         "Altitude above the ground surface",
         "Pressure altitude corrected for non-standard temperature",
         "Altitude indicated on the altimeter when set to 1013.25 hPa",
-        "The altitude at which the air density is exactly 1.225 kg/m³"
+        "The altitude at which the air density is exactly 1.225 kg/m\u00b3"
       ],
       "correctAnswer": 1,
       "type": "multiple_choice",
@@ -4691,14 +4691,14 @@
       "correctAnswer": 1.98,
       "tolerance": 0.02,
       "question": "According to the International Standard Atmosphere (ISA), what is the temperature lapse rate per 1,000 feet in the troposphere?",
-      "explanation": "The standard ISA environmental lapse rate is 1.98°C (often rounded to 2°C) per 1,000 feet of altitude gain",
+      "explanation": "The standard ISA environmental lapse rate is 1.98\u00b0C (often rounded to 2\u00b0C) per 1,000 feet of altitude gain",
       "id": "ab-ne-0004"
     },
     {
       "correctAnswer": 0.85,
       "tolerance": 0.01,
-      "question": "If a sample of Jet A-1 fuel has a density of 850 kg/m³, what is its specific gravity?",
-      "explanation": "Specific gravity is the ratio of fuel density to water density (1000 kg/m³). 850/1000 = 0.85",
+      "question": "If a sample of Jet A-1 fuel has a density of 850 kg/m\u00b3, what is its specific gravity?",
+      "explanation": "Specific gravity is the ratio of fuel density to water density (1000 kg/m\u00b3). 850/1000 = 0.85",
       "type": "numeric_entry",
       "unit": "ratio",
       "id": "ab-ne-0005"
@@ -4732,7 +4732,7 @@
     },
     {
       "tolerance": 2,
-      "question": "A runway is at 5,000ft Pressure Altitude. If the OAT is +20°C, calculate the density altitude and enter the percentage increase over pressure altitude",
+      "question": "A runway is at 5,000ft Pressure Altitude. If the OAT is +20\u00b0C, calculate the density altitude and enter the percentage increase over pressure altitude",
       "correctAnswer": 27,
       "explanation": "Density altitude = Pressure Altitude + (120 x (OAT - ISA Temp)). ISA at 5000 is 5C. 5000 + (120 x (20-5)) = 6800. The correction is 1800ft. (27-25 range accepted)",
       "type": "numeric_entry",
@@ -4830,12 +4830,12 @@
       "id": "ab-ne-0019"
     },
     {
-      "explanation": "In ISA conditions, the temperature decreases by 1.98°C for every 1,000 feet of altitude gain in the troposphere",
+      "explanation": "In ISA conditions, the temperature decreases by 1.98\u00b0C for every 1,000 feet of altitude gain in the troposphere",
       "tolerance": 0.02,
       "type": "numeric_entry",
       "correctAnswer": 1.98,
       "question": "What is the standard ISA temperature lapse rate per 1,000 feet in degrees Celsius?",
-      "unit": "°C",
+      "unit": "\u00b0C",
       "id": "ab-ne-0020"
     },
     {
@@ -4904,7 +4904,7 @@
     {
       "explanation": "The ISA temperature at Mean Sea Level is defined as 15 degrees Celsius",
       "type": "numeric_entry",
-      "unit": "°C",
+      "unit": "\u00b0C",
       "question": "What is the standard ISA temperature at Mean Sea Level in degrees Celsius?",
       "correctAnswer": 15,
       "tolerance": 0,
@@ -5025,11 +5025,11 @@
       "id": "ab-ne-0041"
     },
     {
-      "unit": "°C",
+      "unit": "\u00b0C",
       "question": "What is the precise ISA temperature lapse rate per 1,000 feet in the troposphere, expressed to two decimal places?",
       "correctAnswer": 1.98,
       "tolerance": 0,
-      "explanation": "The ISA temperature lapse rate is approximately 1.98°C per 1,000 feet, often rounded to 2°C for general calculations",
+      "explanation": "The ISA temperature lapse rate is approximately 1.98\u00b0C per 1,000 feet, often rounded to 2\u00b0C for general calculations",
       "type": "numeric_entry",
       "id": "ab-ne-0042"
     },
@@ -5074,7 +5074,7 @@
       "question": "To the nearest whole number, what is the speed of sound at sea level in ISA conditions, expressed in metres per second (m/s)?",
       "tolerance": 1,
       "correctAnswer": 340,
-      "explanation": "The Speed of Sound at MSL in ISA conditions (15°C) is approximately 340.3 m/s or 661 knots",
+      "explanation": "The Speed of Sound at MSL in ISA conditions (15\u00b0C) is approximately 340.3 m/s or 661 knots",
       "type": "numeric_entry",
       "id": "ab-ne-0047"
     },
@@ -5144,7 +5144,7 @@
       "id": "ab-ne-0055"
     },
     {
-      "unit": "°C/1000ft",
+      "unit": "\u00b0C/1000ft",
       "correctAnswer": 2,
       "question": "To the nearest whole number, what is the standard ISA temperature lapse rate in degrees Celsius per 1,000 feet?",
       "type": "numeric_entry",
@@ -5297,8 +5297,8 @@
       "question": "What is the standard ISA temperature lapse rate in degrees Celsius per 1,000 metres?",
       "tolerance": 0,
       "type": "numeric_entry",
-      "explanation": "In the ISA, the temperature decreases at a constant rate of 0.65°C per 100m or 1.98°C (approx 2°C) per 1,000ft up to the tropopause",
-      "unit": "°C/1000m",
+      "explanation": "In the ISA, the temperature decreases at a constant rate of 0.65\u00b0C per 100m or 1.98\u00b0C (approx 2\u00b0C) per 1,000ft up to the tropopause",
+      "unit": "\u00b0C/1000m",
       "id": "ab-ne-0074"
     },
     {
@@ -5360,7 +5360,7 @@
       "correctAnswer": 1.98,
       "tolerance": 0.01,
       "explanation": "The ISA temperature lapse rate is approximately 1.98 degrees Celsius per 1,000 feet up to the tropopause",
-      "unit": "°C/1000ft",
+      "unit": "\u00b0C/1000ft",
       "question": "What is the standard ISA temperature lapse rate in degrees Celsius per 1,000 feet? (Provide the answer to two decimal places)",
       "id": "ab-ne-0081"
     },
@@ -5410,10 +5410,10 @@
       "id": "ab-ne-0086"
     },
     {
-      "question": "What is the standard ISA air density at Mean Sea Level expressed in kilograms per cubic metre (kg/m³)? (Provide the answer to three decimal places)",
-      "unit": "kg/m³",
+      "question": "What is the standard ISA air density at Mean Sea Level expressed in kilograms per cubic metre (kg/m\u00b3)? (Provide the answer to three decimal places)",
+      "unit": "kg/m\u00b3",
       "tolerance": 0,
-      "explanation": "The standard air density at Mean Sea Level (MSL) in the International Standard Atmosphere is 1.225 kg/m³",
+      "explanation": "The standard air density at Mean Sea Level (MSL) in the International Standard Atmosphere is 1.225 kg/m\u00b3",
       "type": "numeric_entry",
       "correctAnswer": 1.225,
       "id": "ab-ne-0087"
@@ -5424,12 +5424,12 @@
       "type": "numeric_entry",
       "correctAnswer": 340,
       "tolerance": 1,
-      "explanation": "At standard ISA sea level temperature (15°C), the speed of sound is approximately 661 knots or 340 metres per second",
+      "explanation": "At standard ISA sea level temperature (15\u00b0C), the speed of sound is approximately 661 knots or 340 metres per second",
       "id": "ab-ne-0088"
     },
     {
       "question": "What is the constant ISA temperature in degrees Celsius at the tropopause and through the lower stratosphere? (Provide a positive number for the absolute value or include the minus sign)",
-      "unit": "°C",
+      "unit": "\u00b0C",
       "tolerance": 0.1,
       "explanation": "From 36,089 feet to 65,617 feet, the ISA temperature remains constant at -56.5 degrees Celsius",
       "correctAnswer": 56.5,
@@ -5484,15 +5484,15 @@
     {
       "type": "numeric_entry",
       "tolerance": 0.02,
-      "explanation": "The ISA lapse rate is 1.98°C per 1,000 feet, often rounded to 2°C for general calculations",
-      "unit": "°C/1000ft",
+      "explanation": "The ISA lapse rate is 1.98\u00b0C per 1,000 feet, often rounded to 2\u00b0C for general calculations",
+      "unit": "\u00b0C/1000ft",
       "correctAnswer": 1.98,
       "question": "What is the standard ISA temperature lapse rate in degrees Celsius per 1,000 feet? Provide the answer to two decimal places",
       "id": "ab-ne-0095"
     },
     {
-      "explanation": "In the International Standard Atmosphere, the air density at sea level is defined as 1.225 kg/m³",
-      "question": "What is the standard ISA air density at Mean Sea Level, expressed in kilograms per cubic metre (kg/m³)? (Provide the answer to three decimal places)",
+      "explanation": "In the International Standard Atmosphere, the air density at sea level is defined as 1.225 kg/m\u00b3",
+      "question": "What is the standard ISA air density at Mean Sea Level, expressed in kilograms per cubic metre (kg/m\u00b3)? (Provide the answer to three decimal places)",
       "correctAnswer": 1.225,
       "tolerance": 0,
       "type": "numeric_entry",
@@ -5538,7 +5538,7 @@
       "type": "numeric_entry",
       "correctAnswer": 15,
       "tolerance": 0,
-      "unit": "°C",
+      "unit": "\u00b0C",
       "question": "What is the ISA standard temperature at Mean Sea Level in degrees Celsius?",
       "explanation": "The ISA standard temperature at mean sea level is +15 degrees Celsius",
       "id": "ab-ne-0101"
@@ -5580,12 +5580,12 @@
       "id": "ab-ne-0105"
     },
     {
-      "explanation": "Under ISA conditions at sea level, the standard density of air is 1.225 kg/m³",
-      "question": "What is the standard ISA air density at Mean Sea Level, expressed in kilograms per cubic metre (kg/m³)? Provide the answer to three decimal places",
+      "explanation": "Under ISA conditions at sea level, the standard density of air is 1.225 kg/m\u00b3",
+      "question": "What is the standard ISA air density at Mean Sea Level, expressed in kilograms per cubic metre (kg/m\u00b3)? Provide the answer to three decimal places",
       "tolerance": 0,
       "type": "numeric_entry",
       "correctAnswer": 1.225,
-      "unit": "kg/m³",
+      "unit": "kg/m\u00b3",
       "id": "ab-ne-0106"
     },
     {
@@ -5616,10 +5616,10 @@
     },
     {
       "question": "What is the standard ISA temperature lapse rate per 1,000 metres (not feet) in the troposphere?",
-      "explanation": "In the ISA, the temperature decreases at a constant rate of 6.5°C per 1,000 metres up to the tropopause",
+      "explanation": "In the ISA, the temperature decreases at a constant rate of 6.5\u00b0C per 1,000 metres up to the tropopause",
       "tolerance": 0,
       "type": "numeric_entry",
-      "unit": "°C/1000m",
+      "unit": "\u00b0C/1000m",
       "correctAnswer": 6.5,
       "id": "ab-ne-0110"
     },
@@ -5671,7 +5671,7 @@
       "type": "numeric_entry",
       "unit": "kg/l",
       "correctAnswer": 0.8,
-      "question": "What is the standard density value in kilograms per litre (kg/l) typically used for Jet A-1 fuel at 15°C? Provide the answer to one decimal place",
+      "question": "What is the standard density value in kilograms per litre (kg/l) typically used for Jet A-1 fuel at 15\u00b0C? Provide the answer to one decimal place",
       "explanation": "The standard density of Jet A-1 is widely accepted as 0.8 kg/l for weight and balance calculations",
       "tolerance": 0.01,
       "id": "ab-ne-0116"
@@ -5694,7 +5694,7 @@
       "id": "ab-ne-0118"
     },
     {
-      "explanation": "At standard sea level (15°C), the speed of sound is approximately 340.29 m/s or 661.7 knots",
+      "explanation": "At standard sea level (15\u00b0C), the speed of sound is approximately 340.29 m/s or 661.7 knots",
       "question": "What is the speed of sound in metres per second (m/s) at ISA standard sea level?",
       "unit": "m/s",
       "correctAnswer": 340.29,
@@ -5703,8 +5703,8 @@
       "id": "ab-ne-0119"
     },
     {
-      "explanation": "Within the troposphere, the standard temperature lapse rate is 1.98°C per 1,000 ft or 6.5°C per 1,000 m",
-      "unit": "°C/1000m",
+      "explanation": "Within the troposphere, the standard temperature lapse rate is 1.98\u00b0C per 1,000 ft or 6.5\u00b0C per 1,000 m",
+      "unit": "\u00b0C/1000m",
       "question": "What is the standard ISA temperature lapse rate per 1,000 metres in the troposphere?",
       "correctAnswer": 6.5,
       "tolerance": 0,
@@ -5732,9 +5732,9 @@
       "correctAnswer": 0.71,
       "tolerance": 0.01,
       "type": "numeric_entry",
-      "explanation": "Standard Avgas has a lower density than Jet A-1, typically around 0.71 to 0.72 kg/l at 15°C",
+      "explanation": "Standard Avgas has a lower density than Jet A-1, typically around 0.71 to 0.72 kg/l at 15\u00b0C",
       "unit": "kg/l",
-      "question": "What is the standard density of Avgas (100LL) fuel in kg/l at 15°C?",
+      "question": "What is the standard density of Avgas (100LL) fuel in kg/l at 15\u00b0C?",
       "id": "ab-ne-0123"
     },
     {
@@ -5747,8 +5747,8 @@
       "id": "ab-ne-0124"
     },
     {
-      "question": "What is the ISA standard air density at Mean Sea Level in kg/m³? (Provide the answer to three decimal places)",
-      "unit": "kg/m³",
+      "question": "What is the ISA standard air density at Mean Sea Level in kg/m\u00b3? (Provide the answer to three decimal places)",
+      "unit": "kg/m\u00b3",
       "explanation": "In the International Standard Atmosphere, sea level air density is defined as 1.225 kilograms per cubic metre",
       "type": "numeric_entry",
       "tolerance": 0,
@@ -5786,7 +5786,7 @@
       "tolerance": 0.02,
       "question": "What is the standard ISA temperature lapse rate per 1,000 feet in the troposphere?",
       "correctAnswer": 1.98,
-      "explanation": "The standard ISA temperature lapse rate is 1.98°C (often rounded to 2°C) per 1,000 feet",
+      "explanation": "The standard ISA temperature lapse rate is 1.98\u00b0C (often rounded to 2\u00b0C) per 1,000 feet",
       "unit": "degrees Celsius",
       "type": "numeric_entry",
       "id": "ab-ne-0129"
@@ -5882,11 +5882,11 @@
       "id": "ab-ne-0139"
     },
     {
-      "explanation": "In the ISA, the temperature stays constant at -56.5°C from the Tropopause (36,089 ft) up to 20 km",
+      "explanation": "In the ISA, the temperature stays constant at -56.5\u00b0C from the Tropopause (36,089 ft) up to 20 km",
       "correctAnswer": -56.5,
       "tolerance": 0,
-      "unit": "°C",
-      "question": "What is the standard ISA temperature in degrees Celsius (°C) at the Tropopause?",
+      "unit": "\u00b0C",
+      "question": "What is the standard ISA temperature in degrees Celsius (\u00b0C) at the Tropopause?",
       "type": "numeric_entry",
       "id": "ab-ne-0140"
     },
@@ -5900,12 +5900,12 @@
       "id": "ab-ne-0141"
     },
     {
-      "explanation": "Typical Jet A-1 fuel density is approximately 0.8 kg/l at 15°C",
+      "explanation": "Typical Jet A-1 fuel density is approximately 0.8 kg/l at 15\u00b0C",
       "tolerance": 0.01,
       "correctAnswer": 0.8,
       "unit": "kg/l",
       "type": "numeric_entry",
-      "question": "What is the standard density of Jet A-1 fuel in kg/l at 15°C?",
+      "question": "What is the standard density of Jet A-1 fuel in kg/l at 15\u00b0C?",
       "id": "ab-ne-0142"
     },
     {
@@ -5990,9 +5990,9 @@
       "id": "ab-ne-0151"
     },
     {
-      "unit": "°C",
+      "unit": "\u00b0C",
       "type": "numeric_entry",
-      "explanation": "The ISA temperature lapse rate in the troposphere is 1.98°C per 1,000 feet (often rounded to 2°C for general calculations)",
+      "explanation": "The ISA temperature lapse rate in the troposphere is 1.98\u00b0C per 1,000 feet (often rounded to 2\u00b0C for general calculations)",
       "correctAnswer": 1.98,
       "tolerance": 0.02,
       "question": "What is the standard ISA temperature lapse rate per 1,000 feet in the troposphere, expressed in degrees Celsius?",
@@ -6037,9 +6037,9 @@
     {
       "explanation": "The standard density of air at mean sea level in ISA conditions is 1.225 kilograms per cubic metre",
       "correctAnswer": 1.225,
-      "question": "What is the ISA standard air density at mean sea level in kg/m³?",
+      "question": "What is the ISA standard air density at mean sea level in kg/m\u00b3?",
       "tolerance": 0.005,
-      "unit": "kg/m³",
+      "unit": "kg/m\u00b3",
       "type": "numeric_entry",
       "id": "ab-ne-0157"
     },
@@ -6069,7 +6069,7 @@
       "id": "ab-ne-0160"
     },
     {
-      "unit": "°/sec",
+      "unit": "\u00b0/sec",
       "explanation": "A standard rate turn (Rate 1) involves turning at a rate of 3 degrees per second, completing a 360-degree turn in 2 minutes",
       "type": "numeric_entry",
       "question": "In a Rate 1 turn, how many degrees does the aircraft turn per second?",
@@ -6077,10 +6077,10 @@
       "id": "ab-ne-0161"
     },
     {
-      "question": "According to the ISA, what is the temperature lapse rate per 100 metres in the troposphere (in °C)?",
+      "question": "According to the ISA, what is the temperature lapse rate per 100 metres in the troposphere (in \u00b0C)?",
       "correctAnswer": 0.607,
-      "unit": "°C",
-      "explanation": "In the standard lapse rate, temperature decreases by 0.65°C per 100m, which is equivalent to 1.98°C (approx 2°C) per 1,000 feet",
+      "unit": "\u00b0C",
+      "explanation": "In the standard lapse rate, temperature decreases by 0.65\u00b0C per 100m, which is equivalent to 1.98\u00b0C (approx 2\u00b0C) per 1,000 feet",
       "tolerance": 0.05,
       "type": "numeric_entry",
       "id": "ab-ne-0162"
@@ -6110,7 +6110,7 @@
     },
     {
       "question": "How many main aircraft categories (A through E) are defined for ICAO approach procedures based on Vat?",
-      "explanation": "Category A aircraft have a Vat (speed at threshold) of less than 91 knots; Cat B is 91–120 kt; Cat C is 121–140 kt; Cat D is 141–165 kt; Cat E is 166–210 kt",
+      "explanation": "Category A aircraft have a Vat (speed at threshold) of less than 91 knots; Cat B is 91\u2013120 kt; Cat C is 121\u2013140 kt; Cat D is 141\u2013165 kt; Cat E is 166\u2013210 kt",
       "type": "numeric_entry",
       "correctAnswer": 5,
       "id": "ab-ne-0166"
@@ -6143,10 +6143,10 @@
     {
       "type": "numeric_entry",
       "tolerance": 0.005,
-      "explanation": "The standard density of air at sea level (15°C and 1013.25 hPa) is 1.225 kg/m³",
-      "unit": "kg/m³",
+      "explanation": "The standard density of air at sea level (15\u00b0C and 1013.25 hPa) is 1.225 kg/m\u00b3",
+      "unit": "kg/m\u00b3",
       "correctAnswer": 1.225,
-      "question": "In the International Standard Atmosphere, what is the density of air at Mean Sea Level in kg/m³?",
+      "question": "In the International Standard Atmosphere, what is the density of air at Mean Sea Level in kg/m\u00b3?",
       "id": "ab-ne-0170"
     },
     {
@@ -6168,10 +6168,10 @@
       "id": "ab-ne-0172"
     },
     {
-      "question": "According to the International Standard Atmosphere (ISA), what is the air density at mean sea level in kg/m³?",
+      "question": "According to the International Standard Atmosphere (ISA), what is the air density at mean sea level in kg/m\u00b3?",
       "correctAnswer": 1.225,
-      "explanation": "The ISA air density at mean sea level (MSL) is a constant value of 1.225 kg/m³",
-      "unit": "kg/m³",
+      "explanation": "The ISA air density at mean sea level (MSL) is a constant value of 1.225 kg/m\u00b3",
+      "unit": "kg/m\u00b3",
       "tolerance": 0.001,
       "type": "numeric_entry",
       "id": "ab-ne-0173"
@@ -6235,7 +6235,7 @@
       "type": "numeric_entry",
       "tolerance": 0,
       "explanation": "The standard ISA temperature at mean sea level is +15 degrees Celsius",
-      "unit": "°C",
+      "unit": "\u00b0C",
       "id": "ab-ne-0180"
     },
     {
@@ -6252,8 +6252,8 @@
       "question": "What is the precise ISA temperature lapse rate per 1,000 feet in the troposphere, expressed in degrees Celsius?",
       "type": "numeric_entry",
       "tolerance": 0.02,
-      "explanation": "The standard lapse rate is 1.98°C per 1,000 feet, often rounded to 2°C in basic calculations",
-      "unit": "°C/1000ft",
+      "explanation": "The standard lapse rate is 1.98\u00b0C per 1,000 feet, often rounded to 2\u00b0C in basic calculations",
+      "unit": "\u00b0C/1000ft",
       "id": "ab-ne-0182"
     },
     {
@@ -6284,7 +6284,7 @@
       "id": "ab-ne-0185"
     },
     {
-      "explanation": "The ISA temperature lapse rate is 0.65°C per 100m, which equates to 1.98°C per 1,000 feet",
+      "explanation": "The ISA temperature lapse rate is 0.65\u00b0C per 100m, which equates to 1.98\u00b0C per 1,000 feet",
       "unit": "Degrees Celsius",
       "tolerance": 0.02,
       "type": "numeric_entry",
@@ -6338,11 +6338,11 @@
       "id": "ab-ne-0191"
     },
     {
-      "unit": "kg/m³",
+      "unit": "kg/m\u00b3",
       "tolerance": 0,
       "type": "numeric_entry",
       "correctAnswer": 1.225,
-      "question": "What is the air density at mean sea level in kg/m³ according to the International Standard Atmosphere?",
+      "question": "What is the air density at mean sea level in kg/m\u00b3 according to the International Standard Atmosphere?",
       "explanation": "The standard density of air at mean sea level (MSL) in the ISA is 1.225 kilograms per cubic metre",
       "id": "ab-ne-0192"
     },
@@ -6365,16 +6365,15 @@
       "id": "ab-ne-0194"
     },
     {
-      "question": "Using the International Standard Atmosphere (ISA) lapse rate of 6.5°C per 1,000 metres, what is the total temperature drop in degrees Celsius for a climb of 1,823 metres?",
+      "question": "Using the International Standard Atmosphere (ISA) lapse rate of 6.5\u00b0C per 1,000 metres, what is the total temperature drop in degrees Celsius for a climb of 1,823 metres?",
       "tolerance": 0.05,
-      "explanation": "In the ISA, the temperature lapse rate is 6.5°C per 1,000 metres. For 1,823 metres: (1823 / 1000) * 6.5 = 11.8495",
+      "explanation": "In the ISA, the temperature lapse rate is 6.5\u00b0C per 1,000 metres. For 1,823 metres: (1823 / 1000) * 6.5 = 11.8495",
       "type": "numeric_entry",
       "correctAnswer": 11.85,
-      "unit": "°C",
+      "unit": "\u00b0C",
       "id": "ab-ne-0195"
     },
     {
-      "imageAlt": "Cross-section of an airfoil with airflow lines",
       "correctAnswer": 2,
       "options": [
         "Transition point",
@@ -6383,15 +6382,14 @@
         "Center of pressure"
       ],
       "explanation": "Increasing the angle of attack causes the stagnation point to move further down the lower surface of the leading edge",
-      "type": "image_question",
-      "question": "In the provided diagram of airflow over an airfoil, what is the specific name of point 'X' where the relative airflow velocity is zero?",
-      "imageDescription": "A 2D cross-section of a wing (airfoil) with several streamlines. One streamline terminates at the leading edge. An arrow points to this point labeled 'X'",
-      "id": "ab-im-0001"
+      "type": "multiple_choice",
+      "question": "A 2D cross-section of a wing (airfoil) with several streamlines. One streamline terminates at the leading edge. An arrow points to this point labeled 'X'. In the provided diagram of airflow over an airfoil, what is the specific name of point 'X' where the relative airflow velocity is zero?",
+      "id": "ab-im-0001",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A mechanical airspeed indicator showing various coloured arcs: a white arc, a green arc, and a yellow arc, ending at a red line",
-      "question": "On the airspeed indicator shown, what does the white arc represent?",
-      "type": "image_question",
+      "question": "A mechanical airspeed indicator showing various coloured arcs: a white arc, a green arc, and a yellow arc, ending at a red line. On the airspeed indicator shown, what does the white arc represent?",
+      "type": "multiple_choice",
       "explanation": "The white sector on the airspeed indicator marks the flap operating range, from stall speed with flaps down to maximum flap extended speed",
       "options": [
         "Flap operating range",
@@ -6400,11 +6398,10 @@
         "Never exceed speed"
       ],
       "correctAnswer": 0,
-      "imageAlt": "A standard round airspeed indicator",
-      "id": "ab-im-0002"
+      "id": "ab-im-0002",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A graph showing total drag, parasite drag, and induced drag",
       "correctAnswer": 1,
       "options": [
         "Parasite drag",
@@ -6413,17 +6410,15 @@
         "Wave drag"
       ],
       "explanation": "Induced drag is greatest at high angles of attack (low speeds) because the pressure differential between the upper and lower surfaces is higher",
-      "type": "image_question",
-      "question": "In this drag polar diagram, which curve represents Induced Drag?",
-      "imageDescription": "A graph with 'Drag' on the Y-axis and 'Speed' on the X-axis. Three curves are shown. Curve A decreases as speed increases. Curve B increases as speed increases. Curve C is U-shaped",
-      "id": "ab-im-0003"
+      "type": "multiple_choice",
+      "question": "A graph with 'Drag' on the Y-axis and 'Speed' on the X-axis. Three curves are shown. Curve A decreases as speed increases. Curve B increases as speed increases. Curve C is U-shaped. In this drag polar diagram, which curve represents Induced Drag?",
+      "id": "ab-im-0003",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "question": "What is the name of the region indicated by the shaded area where air velocity is reduced by surface friction?",
-      "imageDescription": "A diagram showing a solid surface with velocity vectors (arrows) getting longer as they move away from the surface. A shaded region near the surface is highlighted",
+      "type": "multiple_choice",
+      "question": "A diagram showing a solid surface with velocity vectors (arrows) getting longer as they move away from the surface. A shaded region near the surface is highlighted. What is the name of the region indicated by the shaded area where air velocity is reduced by surface friction?",
       "explanation": "The boundary layer is the thin layer of air near the surface where viscosity significantly slows the flow compared to the free stream",
-      "imageAlt": "Detailed view of air molecules near a wing surface",
       "correctAnswer": 3,
       "options": [
         "The Laminar Core",
@@ -6431,7 +6426,8 @@
         "The Free Stream Flow",
         "The Boundary Layer"
       ],
-      "id": "ab-im-0004"
+      "id": "ab-im-0004",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "An aerofoil creates lift by accelerating air over the upper surface, resulting in lower static pressure according to Bernoulli's principle",
@@ -6442,17 +6438,14 @@
         "Increasing density on top"
       ],
       "correctAnswer": 1,
-      "imageAlt": "Airfoil with pressure distribution arrows",
-      "imageDescription": "An airfoil with arrows pointing away from the upper surface (longer arrows) and arrows pointing toward the lower surface (shorter arrows)",
-      "question": "Based on the pressure distribution arrows shown, what is being generated on the upper surface of the wing?",
-      "type": "image_question",
-      "id": "ab-im-0005"
+      "question": "An airfoil with arrows pointing away from the upper surface (longer arrows) and arrows pointing toward the lower surface (shorter arrows). Based on the pressure distribution arrows shown, what is being generated on the upper surface of the wing?",
+      "type": "multiple_choice",
+      "id": "ab-im-0005",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "question": "What does the arrow in this Center of Gravity (CG) envelope diagram represent?",
-      "imageDescription": "Profile of a light aircraft with a horizontal bar beneath the wing. The bar has a shaded 'safe' region. An arrow points to the rearward-most limit of this shaded region",
-      "imageAlt": "Side view of an airplane with a CG range bar",
+      "type": "multiple_choice",
+      "question": "Profile of a light aircraft with a horizontal bar beneath the wing. The bar has a shaded 'safe' region. An arrow points to the rearward-most limit of this shaded region. What does the arrow in this Center of Gravity (CG) envelope diagram represent?",
       "correctAnswer": 0,
       "options": [
         "Aft limit of the Center of Gravity",
@@ -6461,7 +6454,8 @@
         "Aerodynamic center"
       ],
       "explanation": "The aft limit of the CG range is determined by longitudinal stability requirements; if the CG is too far aft, the aircraft becomes unstable",
-      "id": "ab-im-0006"
+      "id": "ab-im-0006",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "When the aircraft rolls, the down-going wing has a higher effective angle of attack, creating more lift but also more induced drag, causing a yaw",
@@ -6472,16 +6466,14 @@
         "Adverse Yaw Birding",
         "Adverse Yaw"
       ],
-      "imageAlt": "An airplane rolling to the left with yaw arrows",
-      "imageDescription": "A rear view of an aircraft rolling to the left. Arrows indicate the lift vectors on both wings and a secondary 'drag' arrow on the rising wing. An arrow indicates the nose yawing to the right",
-      "type": "image_question",
-      "question": "The phenomenon illustrated, where the aircraft yaws in the opposite direction of the roll, is known as",
-      "id": "ab-im-0007"
+      "type": "multiple_choice",
+      "question": "A rear view of an aircraft rolling to the left. Arrows indicate the lift vectors on both wings and a secondary 'drag' arrow on the rising wing. An arrow indicates the nose yawing to the right. The phenomenon illustrated, where the aircraft yaws in the opposite direction of the roll, is known as?",
+      "id": "ab-im-0007",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "Two wings: one is long and narrow (glider-like), the other is short and wide (fighter-like). Dimensions 'b' (span) and 'c' (chord) are marked",
-      "type": "image_question",
-      "question": "By comparing the span (b) and chord (c) of these wings, which aerodynamic property is being highlighted?",
+      "type": "multiple_choice",
+      "question": "Two wings: one is long and narrow (glider-like), the other is short and wide (fighter-like). Dimensions 'b' (span) and 'c' (chord) are marked. By comparing the span (b) and chord (c) of these wings, which aerodynamic property is being highlighted?",
       "explanation": "The aspect ratio is the ratio of the wing span to its mean chord. High aspect ratio wings (long and thin) are more efficient at low speeds",
       "correctAnswer": 3,
       "options": [
@@ -6490,14 +6482,13 @@
         "Sweepback angle",
         "Aspect Ratio"
       ],
-      "imageAlt": "Top-down view of two different wing shapes",
-      "id": "ab-im-0008"
+      "id": "ab-im-0008",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A horizontal tube (Venturi) with a wide entrance, a narrow throat, and a wide exit. Three vertical tubes (manometers) show different fluid levels. The level in the throat is the lowest",
-      "question": "What does this Venturi tube diagram demonstrate regarding the narrowest part of the tube?",
-      "type": "image_question",
-      "explanation": "A venturi tube demonstrates Bernoulli’s principle: as the fluid speeds up in the constriction, the static pressure drops",
+      "question": "A horizontal tube (Venturi) with a wide entrance, a narrow throat, and a wide exit. Three vertical tubes (manometers) show different fluid levels. The level in the throat is the lowest. What does this Venturi tube diagram demonstrate regarding the narrowest part of the tube?",
+      "type": "multiple_choice",
+      "explanation": "A venturi tube demonstrates Bernoulli\u2019s principle: as the fluid speeds up in the constriction, the static pressure drops",
       "options": [
         "Static pressure is lowest in the throat",
         "Static pressure is highest in the throat",
@@ -6505,13 +6496,12 @@
         "Density is lowest in the throat"
       ],
       "correctAnswer": 0,
-      "imageAlt": "A pipe that narrows in the middle with three vertical pressure tubes",
-      "id": "ab-im-0009"
+      "id": "ab-im-0009",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "An aircraft climbing at a constant angle. Arrows show Lift (perpendicular to flight path), Weight (acting vertically down), and Thrust (along flight path). Weight is broken into two components",
-      "type": "image_question",
-      "question": "In the steady, constant-speed climb shown, how does Lift compare to Weight?",
+      "type": "multiple_choice",
+      "question": "An aircraft climbing at a constant angle. Arrows show Lift (perpendicular to flight path), Weight (acting vertically down), and Thrust (along flight path). Weight is broken into two components. In the steady, constant-speed climb shown, how does Lift compare to Weight?",
       "correctAnswer": 2,
       "options": [
         "Lift is greater than Weight",
@@ -6519,14 +6509,13 @@
         "Lift is less than Weight",
         "Thrust is equal to Drag"
       ],
-      "imageAlt": "An airplane in a steady climb with force vectors",
       "explanation": "In a steady-state climb, lift is less than weight because a component of the weight acts opposite to the flight path, supported by thrust",
-      "id": "ab-im-0010"
+      "id": "ab-im-0010",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "Frontal silhouette of an aircraft. A horizontal reference line is drawn through the wing roots, and the wings are tilted upwards at an angle 'alpha' from this line",
-      "type": "image_question",
-      "question": "What is the name of the angle 'alpha' shown in this frontal view of the aircraft?",
+      "type": "multiple_choice",
+      "question": "Frontal silhouette of an aircraft. A horizontal reference line is drawn through the wing roots, and the wings are tilted upwards at an angle 'alpha' from this line. What is the name of the angle 'alpha' shown in this frontal view of the aircraft?",
       "correctAnswer": 1,
       "options": [
         "Anhedral angle",
@@ -6534,12 +6523,11 @@
         "Angle of incidence",
         "Washout angle"
       ],
-      "imageAlt": "Front view of an aircraft with wings angled upwards",
       "explanation": "Dihedral is the upward angle of the wings from the fuselage, which provides lateral (roll) stability",
-      "id": "ab-im-0011"
+      "id": "ab-im-0011",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A graph showing Load Factor vs Airspeed",
       "options": [
         "Total Drag Curve",
         "V-n Diagram (Manoeuvre Envelope)",
@@ -6548,91 +6536,84 @@
       ],
       "correctAnswer": 1,
       "explanation": "V-n diagrams show the relationship between airspeed and load factor, defining the safe structural operating envelope",
-      "question": "What is the name of the aerodynamic chart shown that plots Load Factor (G) against Airspeed?",
-      "type": "image_question",
-      "imageDescription": "A V-n diagram showing a curved 'manoeuvring' boundary on the left and a vertical 'Vne' boundary on the right. A point 'Vp' (Manoeuvring Speed) is marked at the intersection of the limit load",
-      "id": "ab-im-0012"
+      "question": "A V-n diagram showing a curved 'manoeuvring' boundary on the left and a vertical 'Vne' boundary on the right. A point 'Vp' (Manoeuvring Speed) is marked at the intersection of the limit load. What is the name of the aerodynamic chart shown that plots Load Factor (G) against Airspeed?",
+      "type": "multiple_choice",
+      "id": "ab-im-0012",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A line drawing of an aircraft fuselage with a longitudinal axis line. A wing is attached, and its chord line is drawn. An angle is marked between the chord line and the fuselage axis",
       "explanation": "The Angle of Incidence is the angle between the wing's chord line and the longitudinal axis of the fuselage",
-      "question": "In the side-view diagram provided, what is the name of the angle between the fuselage longitudinal axis and the wing chord line?",
-      "imageAlt": "Diagram showing the side view of an aircraft fuselage and wing",
+      "question": "A line drawing of an aircraft fuselage with a longitudinal axis line. A wing is attached, and its chord line is drawn. An angle is marked between the chord line and the fuselage axis. In the side-view diagram provided, what is the name of the angle between the fuselage longitudinal axis and the wing chord line?",
       "options": [
         "Angle of Attack",
         "Angle of Incidence",
         "Dihedral Angle",
         "Washout Angle"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 1,
-      "id": "ab-im-0013"
+      "id": "ab-im-0013",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 0,
-      "imageAlt": "Diagram of an aircraft flying very close to the ground with airflow lines behind the wing",
       "options": [
         "Induced Drag decreases",
         "Parasite Drag increases",
         "Induced Drag increases",
         "Stall speed increases"
       ],
-      "question": "Which aerodynamic effect is primarily caused by the wing's proximity to the surface as shown in this diagram?",
-      "imageDescription": "An aircraft in landing flare very close to the runway surface. Airflow lines behind the wing are shown flatter compared to free-air flight. A force vector for drag is highlighted",
+      "question": "An aircraft in landing flare very close to the runway surface. Airflow lines behind the wing are shown flatter compared to free-air flight. A force vector for drag is highlighted. Which aerodynamic effect is primarily caused by the wing's proximity to the surface as shown ?",
       "explanation": "Ground effect reduces the downward deflection of the airflow, leading to a decrease in induced drag",
-      "id": "ab-im-0014"
+      "id": "ab-im-0014",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "Graphical plot of Parasite Drag (increasing curve), Induced Drag (decreasing curve), and Total Drag (U-shaped curve). A vertical dashed line marks the lowest point of the Total Drag curve",
       "explanation": "Total drag is at its minimum value where the parasite drag and induced drag curves intersect",
-      "question": "On this Drag vs. Velocity graph, what performance speed is found at the lowest point of the Total Drag curve?",
-      "imageAlt": "A graph showing Drag on the vertical axis and Velocity on the horizontal axis",
+      "question": "Graphical plot of Parasite Drag (increasing curve), Induced Drag (decreasing curve), and Total Drag (U-shaped curve). A vertical dashed line marks the lowest point of the Total Drag curve. On this Drag vs. Velocity graph, what performance speed is found at the lowest point of the Total Drag curve?",
       "options": [
         "Maximum lift-to-drag ratio speed (V_MD)",
         "Stall speed (V_S)",
         "Minimum drag speed (V_IMD)",
         "Maximum level flight speed (V_H)"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 2,
-      "id": "ab-im-0015"
+      "id": "ab-im-0015",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "The Mean Aerodynamic Chord is the average chord length of a tapered wing, representing its longitudinal aerodynamic characteristics",
-      "imageDescription": "A plan view of a trapezoidal wing. Lines indicate the root chord, tip chord, and a specific average chord line marked 'MAC'",
-      "question": "What is represented by the line labeled 'MAC' in this overhead view of a tapered wing?",
+      "question": "A plan view of a trapezoidal wing. Lines indicate the root chord, tip chord, and a specific average chord line marked 'MAC'. What is represented by the line labeled 'MAC' in this overhead view of a tapered wing?",
       "options": [
         "Leading Edge line",
         "Mean Aerodynamic Chord (MAC)",
         "Quarter-chord line",
         "Aspect Ratio line"
       ],
-      "imageAlt": "Top-down view of a tapered aircraft wing with various lines",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 1,
-      "id": "ab-im-0016"
+      "id": "ab-im-0016",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "Identify the high-lift device shown in the extended position on the leading edge of this wing profile",
+      "question": "An airfoil profile with a slat extended at the front. Airflow arrows show air passing through the gap between the slat and the main wing. Identify the high-lift device shown in the extended position on the leading edge of this wing profile?",
       "explanation": "Slot and Slats allow high-pressure air from below to flow to the upper surface, delaying the stall at high angles of attack",
-      "imageDescription": "An airfoil profile with a slat extended at the front. Airflow arrows show air passing through the gap between the slat and the main wing",
       "correctAnswer": 3,
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Spoilers",
         "Fowler Flaps",
         "Vortex Generators",
         "Leading Edge Slats"
       ],
-      "imageAlt": "Cross-section of a wing with a leading-edge slat deployed",
-      "id": "ab-im-0017"
+      "id": "ab-im-0017",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "An ASI face showing a white arc, a green arc, a yellow arc, and a red radial line. The needle is pointing to the yellow section",
       "explanation": "The yellow arc signifies the structural warning range, where flight is permitted only in smooth air",
-      "question": "On the Airspeed Indicator (ASI) shown, what flight condition is represented by the yellow arc?",
-      "imageAlt": "Close up of a standard steam-gauge Airspeed Indicator",
+      "question": "An ASI face showing a white arc, a green arc, a yellow arc, and a red radial line. The needle is pointing to the yellow section. On the Airspeed Indicator (ASI) shown, what flight condition is represented by the yellow arc?",
       "options": [
         "Caution range/Smooth air only",
         "Flap operating range",
@@ -6640,14 +6621,14 @@
         "Never exceed speed (V_NE)"
       ],
       "correctAnswer": 0,
-      "type": "image_question",
-      "id": "ab-im-0018"
+      "type": "multiple_choice",
+      "id": "ab-im-0018",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What is the primary aerodynamic consequence of moving the Center of Gravity to the 'Aft' position shown in the diagram?",
+      "question": "Diagram showing a fuselage. The Lift vector is fixed. The Weight vector (CG) is shown in two positions: one forward and one shifted significantly toward the tail. What is the primary aerodynamic consequence of moving the Center of Gravity to the 'Aft' position shown ?",
       "explanation": "An aft CG location reduces the longitudinal stability as the CG moves closer to the Center of Pressure",
-      "imageDescription": "Diagram showing a fuselage. The Lift vector is fixed. The Weight vector (CG) is shown in two positions: one forward and one shifted significantly toward the tail",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 2,
       "options": [
         "Increased longitudinal stability",
@@ -6655,59 +6636,55 @@
         "Decreased longitudinal stability",
         "Increased nose-down pitching moment"
       ],
-      "imageAlt": "Side view of a plane with Weight and Lift arrows at different positions",
-      "id": "ab-im-0019"
+      "id": "ab-im-0019",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "The standard Lift Equation written out",
       "options": [
         "Dynamic Pressure (q)",
         "Static Pressure (p)",
         "Coefficient of Lift (Cl)",
         "Air Density (rho)"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 0,
-      "imageDescription": "The equation L = Cl * 1/2 * rho * v^2 * S. A box is drawn around the '1/2 * rho * v^2' part",
       "explanation": "The 'q' in the lift formula represents Dynamic Pressure, calculated as 1/2 rho V squared",
-      "question": "In the Lift Equation shown, what does the component inside the box represent?",
-      "id": "ab-im-0020"
+      "question": "The equation L = Cl * 1/2 * rho * v^2 * S. A box is drawn around the '1/2 * rho * v^2' part. In the Lift Equation shown, what does the component inside the box represent?",
+      "id": "ab-im-0020",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "An aircraft in a left bank. Arrows show the lift vector tilted and a lateral movement (sideslip) arrow pointing towards the lower wing",
       "explanation": "Secondary effects of controls: Rolling causes sideslip, which then interacts with the keel surface and dihedral to produce yaw",
-      "question": "This diagram illustrates the secondary effect of using ailerons. What is the resulting movement after the roll?",
-      "imageAlt": "Diagram of an aircraft banking to the left",
+      "question": "An aircraft in a left bank. Arrows show the lift vector tilted and a lateral movement (sideslip) arrow pointing towards the lower wing. The diagram illustrates the secondary effect of using ailerons. What is the resulting movement after the roll?",
       "options": [
         "Adverse yaw",
         "Rolling causing yaw (further effect)",
         "Spiral instability",
         "Dutch roll"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 1,
-      "id": "ab-im-0021"
+      "id": "ab-im-0021",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 3,
-      "type": "image_question",
-      "imageAlt": "Graph of Temperature vs Altitude in the atmosphere",
+      "type": "multiple_choice",
       "options": [
         "Stratosphere",
         "Mesosphere Arcade",
         "Isothermal layer",
         "Tropopause"
       ],
-      "question": "In this Standard Atmosphere (ISA) temperature profile, what is the name of the boundary indicated by 'Line B'?",
-      "imageDescription": "A plot where temperature decreases linearly until about 36,000ft, after which the line becomes vertical (constant temperature). A label 'Line B' points to the corner",
+      "question": "A plot where temperature decreases linearly until about 36,000ft, after which the line becomes vertical (constant temperature). A label 'Line B' points to the corner. In this Standard Atmosphere (ISA) temperature profile, what is the name of the boundary indicated by 'Line B'?",
       "explanation": "The tropopause is the boundary layer where the temperature stops decreasing with altitude in the ISA model",
-      "id": "ab-im-0022"
+      "id": "ab-im-0022",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "Based on the vector resolution in this steady, constant-speed climb diagram, how does the Lift vector relate to the Weight vector?",
+      "question": "An aircraft angled upwards. Vectors are shown for Lift (perpendicular to flight path), Weight (towards center of earth), and Thrust (along flight path). Angle of climb is marked. Based on the vector resolution in this steady, constant-speed climb diagram, how does the Lift vector relate to the Weight vector?",
       "explanation": "In a constant speed climb, the total upward forces (Lift + Vertical Component of Thrust) must balance the total downward forces. Lift itself is slightly less than Weight",
-      "imageDescription": "An aircraft angled upwards. Vectors are shown for Lift (perpendicular to flight path), Weight (towards center of earth), and Thrust (along flight path). Angle of climb is marked",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 2,
       "options": [
         "Lift is greater than Weight",
@@ -6715,11 +6692,11 @@
         "Lift is less than Weight",
         "Load factor is greater than 1G"
       ],
-      "imageAlt": "Vector diagram of an aircraft in a steady climb",
-      "id": "ab-im-0023"
+      "id": "ab-im-0023",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 1,
       "options": [
         "Dihedral",
@@ -6727,29 +6704,26 @@
         "Taper ratio",
         "Sweepback angle"
       ],
-      "imageAlt": "A wing viewed from the side at the root and then at the tip",
-      "question": "What design feature is illustrated by this comparison between the wing root and wing tip incidence angles?",
+      "question": "Two airfoil cross-sections overlaid. The root section has a higher angle of incidence than the tip section. An arrow indicates the 'twist' in the wing structure. What design feature is illustrated by this comparison between the wing root and wing tip incidence angles?",
       "explanation": "Washout is a decrease in the angle of incidence from the wing root to the wing tip to ensure the root stalls before the tip",
-      "imageDescription": "Two airfoil cross-sections overlaid. The root section has a higher angle of incidence than the tip section. An arrow indicates the 'twist' in the wing structure",
-      "id": "ab-im-0024"
+      "id": "ab-im-0024",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "question": "In this graph of drag versus airspeed, what type of drag is represented by Curve B?",
+      "type": "multiple_choice",
+      "question": "A graph of Drag (Vertical Axis) vs Airspeed (Horizontal Axis). Curve A starts high and curves downward. Curve B starts at the origin and curves upward sharply. Curve C is the sum of both, showing total drag. An arrow points to Curve B. In this graph of drag versus airspeed, what type of drag is represented by Curve B?",
       "correctAnswer": 2,
-      "imageAlt": "A graph showing three curves: one decreasing, one increasing, and one U-shaped curve combining them",
       "explanation": "Parasite drag increases with the square of the airspeed, while induced drag decreases as airspeed increases, resulting in the U-shaped total drag curve",
-      "imageDescription": "A graph of Drag (Vertical Axis) vs Airspeed (Horizontal Axis). Curve A starts high and curves downward. Curve B starts at the origin and curves upward sharply. Curve C is the sum of both, showing total drag. An arrow points to Curve B",
       "options": [
         "Induced Drag",
         "Wave Drag",
         "Parasite Drag",
         "Total Drag"
       ],
-      "id": "ab-im-0025"
+      "id": "ab-im-0025",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "An aerofoil cross-section. Line A is a straight line from the leading edge to the trailing edge. Line B is a curved line following the middle of the profile. Line C is the thickness. A label points to Line A",
       "options": [
         "Chord line",
         "Mean camber line",
@@ -6757,18 +6731,16 @@
         "Relative airflow"
       ],
       "explanation": "The chord line is a straight line connecting the leading and trailing edges, whereas the mean camber line is equidistant between the upper and lower surfaces",
-      "imageAlt": "A cross-section of an aerofoil with several lines drawn through it",
       "correctAnswer": 0,
-      "type": "image_question",
-      "question": "What is the name of the straight line labeled 'A' in this aerofoil profile?",
-      "id": "ab-im-0026"
+      "type": "multiple_choice",
+      "question": "An aerofoil cross-section. Line A is a straight line from the leading edge to the trailing edge. Line B is a curved line following the middle of the profile. Line C is the thickness. A label points to Line A. What is the name of the straight line labeled 'A' in this aerofoil profile?",
+      "id": "ab-im-0026",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 1,
-      "imageAlt": "Side view of an aircraft fuselage showing CG and NP positions",
-      "question": "What term describes the distance between the Center of Gravity (CG) and the Neutral Point (NP) as shown?",
-      "type": "image_question",
-      "imageDescription": "A side view diagram of an aircraft. 'CG' marks the Center of Gravity and 'NP' marks the Aerodynamic Center/Neutral Point. A double-headed horizontal arrow indicates the distance between them",
+      "question": "A side view diagram of an aircraft. 'CG' marks the Center of Gravity and 'NP' marks the Aerodynamic Center/Neutral Point. A double-headed horizontal arrow indicates the distance between them. What term describes the distance between the Center of Gravity (CG) and the Neutral Point (NP) as shown?",
+      "type": "multiple_choice",
       "options": [
         "Center of Pressure shift",
         "Static Margin",
@@ -6776,7 +6748,8 @@
         "Mean Aerodynamic Chord"
       ],
       "explanation": "Static margin is the distance between the Center of Gravity and the Neutral Point; a larger margin increases longitudinal stability",
-      "id": "ab-im-0027"
+      "id": "ab-im-0027",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -6785,13 +6758,12 @@
         "Drag",
         "Lift"
       ],
-      "imageDescription": "An aircraft in a 30-degree bank. A vertical vector 'W' points down. A vector 'L' points perpendicular to the wings. A horizontal vector 'CF' points toward the center of the turn. An arrow highlights the 'L' vector",
       "explanation": "In a coordinated turn, the total lift must increase to provide both the vertical component to oppose weight and the horizontal component to provide centripetal force",
-      "imageAlt": "Rear view of an aircraft in a banked turn with vector arrows",
       "correctAnswer": 3,
-      "question": "In this diagram of an aircraft in a steady level turn, which force is represented by the vector pointing perpendicular to the wing span?",
-      "type": "image_question",
-      "id": "ab-im-0028"
+      "question": "An aircraft in a 30-degree bank. A vertical vector 'W' points down. A vector 'L' points perpendicular to the wings. A horizontal vector 'CF' points toward the center of the turn. An arrow highlights the 'L' vector. Of an aircraft in a steady level turn, which force is represented by the vector pointing perpendicular to the wing span?",
+      "type": "multiple_choice",
+      "id": "ab-im-0028",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -6800,13 +6772,12 @@
         "Phugoid Motion",
         "Deep Stall"
       ],
-      "imageDescription": "An overhead view of an aircraft flying along a path that oscillates left and right, with the nose yawing away from the direction of the roll. A label 'X' identifies this motion",
       "explanation": "Dutch Roll is a coupled lateral/directional instability characterized by out-of-phase rolling and yawing",
       "correctAnswer": 1,
-      "imageAlt": "A diagram showing a repetitive 'S' shaped path of an aircraft from above",
-      "question": "What aerodynamic phenomenon is illustrated by the oscillatory flight path shown in this diagram?",
-      "type": "image_question",
-      "id": "ab-im-0029"
+      "question": "An overhead view of an aircraft flying along a path that oscillates left and right, with the nose yawing away from the direction of the roll. A label 'X' identifies this motion. What aerodynamic phenomenon is illustrated by the oscillatory flight path shown ?",
+      "type": "multiple_choice",
+      "id": "ab-im-0029",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "The Vmca (Minimum Control Speed) is the minimum speed at which directional control can be maintained with the critical engine inoperative",
@@ -6816,12 +6787,11 @@
         "Minimum control speed (air)",
         "Never exceed speed"
       ],
-      "imageDescription": "A close-up of a multi-engine aircraft Airspeed Indicator. There is a white arc, a green arc, a blue radial line, and a red radial line at the lower end of the speed scale. An arrow points to the red radial line",
-      "question": "On this airspeed indicator for a multi-engine aircraft, what does the red radial line at the bottom of the scale indicate?",
-      "type": "image_question",
+      "question": "A close-up of a multi-engine aircraft Airspeed Indicator. There is a white arc, a green arc, a blue radial line, and a red radial line at the lower end of the speed scale. An arrow points to the red radial line. On this airspeed indicator for a multi-engine aircraft, what does the red radial line at the bottom of the scale indicate?",
+      "type": "multiple_choice",
       "correctAnswer": 2,
-      "imageAlt": "An ASI with various colored markings and a small red radial line",
-      "id": "ab-im-0030"
+      "id": "ab-im-0030",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "The boundary layer is the thin layer of fluid near the wing surface where velocity changes from zero to the free-stream value due to viscosity",
@@ -6831,19 +6801,16 @@
         "Stagnation Point",
         "Turbulent Wake"
       ],
-      "imageDescription": "A cross-section of a wing surface. Very close to the surface, multiple horizontal arrows of increasing length are shown stacked vertically, representing air velocity. This region is bracketed and labeled 'Z'",
-      "question": "What region of the airflow is represented by the label 'Z' in this diagram?",
-      "type": "image_question",
+      "question": "A cross-section of a wing surface. Very close to the surface, multiple horizontal arrows of increasing length are shown stacked vertically, representing air velocity. This region is bracketed and labeled 'Z'. What region of the airflow is represented by the label 'Z' ?",
+      "type": "multiple_choice",
       "correctAnswer": 0,
-      "imageAlt": "Profile of a wing with tiny arrows increasing in length as they move away from the surface",
-      "id": "ab-im-0031"
+      "id": "ab-im-0031",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A row of small metal tabs on the upper surface of a wing",
       "correctAnswer": 2,
-      "question": "What is the purpose of the devices shown on the upper surface of this wing?",
-      "type": "image_question",
-      "imageDescription": "A perspective view of the upper surface of a wing. A series of small, angled vertical fins are mounted in a row near the leading edge. An arrow points to one of these fins",
+      "question": "A perspective view of the upper surface of a wing. A series of small, angled vertical fins are mounted in a row near the leading edge. An arrow points to one of these fins. What is the purpose of the devices shown on the upper surface of this wing?",
+      "type": "multiple_choice",
       "options": [
         "Winglets",
         "Trim tabs",
@@ -6851,10 +6818,10 @@
         "Static dischargers"
       ],
       "explanation": "Vortex generators create small-scale turbulence to re-energize the boundary layer, delaying airflow separation at high angles of attack",
-      "id": "ab-im-0032"
+      "id": "ab-im-0032",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "Two aircraft planforms viewed from above. Aircraft A has straight wings. Aircraft B has wings angled backward at 35 degrees. A label asks for the primary high-speed benefit of Design B",
       "options": [
         "Increased low-speed lift",
         "Higher Critical Mach Number",
@@ -6863,10 +6830,10 @@
       ],
       "explanation": "Swept-back wings delay the onset of compressibility effects and increase the Critical Mach Number by reducing the effective chordwise velocity",
       "correctAnswer": 1,
-      "imageAlt": "Top-down view of two different wing planforms, one straight and one angled back",
-      "type": "image_question",
-      "question": "Compared to the straight wing, what is the primary advantage of the swept-back design (B) during high-speed flight?",
-      "id": "ab-im-0033"
+      "type": "multiple_choice",
+      "question": "Two aircraft planforms viewed from above. Aircraft A has straight wings. Aircraft B has wings angled backward at 35 degrees. A label asks for the primary high-speed benefit of Design B. Compared to the straight wing, what is the primary advantage of the swept-back design (B) during high-speed flight?",
+      "id": "ab-im-0033",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "Winglets reduce the strength of wing-tip vortices, which decreases induced drag and improves fuel efficiency",
@@ -6876,12 +6843,11 @@
         "Decrease lift-to-drag ratio",
         "Decrease induced drag"
       ],
-      "imageDescription": "A close-up of a modern aircraft wing tip. The wing curves sharply upwards into a vertical or near-vertical extension. An arrow points to this extension",
-      "question": "What is the primary aerodynamic function of the wing feature indicated by the arrow?",
-      "type": "image_question",
+      "question": "A close-up of a modern aircraft wing tip. The wing curves sharply upwards into a vertical or near-vertical extension. An arrow points to this extension. What is the primary aerodynamic function of the wing feature indicated by the arrow?",
+      "type": "multiple_choice",
       "correctAnswer": 3,
-      "imageAlt": "The tip of a wing curving vertically upwards",
-      "id": "ab-im-0034"
+      "id": "ab-im-0034",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -6890,28 +6856,26 @@
         "Coffin Corner",
         "Compressibility Stall"
       ],
-      "imageDescription": "A wing cross-section at Mach 0.85. A shock wave is shown on the upper surface moved towards the trailing edge. A large curved arrow shows the nose of the aircraft pitching downwards",
       "explanation": "The Mach Tuck phenomenon occurs as the shock wave moves aft on the wing, shifting the center of pressure rearward and causing a nose-down pitching moment",
-      "imageAlt": "A profile of a wing at supersonic speed with a shock wave and a downward pitching arrow",
       "correctAnswer": 0,
-      "question": "What high-speed aerodynamic phenomenon is depicted in this diagram?",
-      "type": "image_question",
-      "id": "ab-im-0035"
+      "question": "A wing cross-section at Mach 0.85. A shock wave is shown on the upper surface moved towards the trailing edge. A large curved arrow shows the nose of the aircraft pitching downwards. What high-speed aerodynamic phenomenon is described?",
+      "type": "multiple_choice",
+      "id": "ab-im-0035",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 2,
-      "imageAlt": "A cross-section of an aileron deflected upwards with its nose protruding below the wing",
-      "question": "Which type of aileron design is shown in this diagram to counter adverse yaw?",
-      "type": "image_question",
+      "question": "A cross-section of a wing and aileron. The aileron is deflected upwards. The shape of the aileron is such that its leading edge (nose) protrudes below the lower surface of the wing into the airflow. Which type of aileron design is shown to counter adverse yaw?",
+      "type": "multiple_choice",
       "options": [
         "Differential aileron",
         "Slotted aileron",
         "Frise aileron",
         "Plain aileron"
       ],
-      "imageDescription": "A cross-section of a wing and aileron. The aileron is deflected upwards. The shape of the aileron is such that its leading edge (nose) protrudes below the lower surface of the wing into the airflow",
       "explanation": "Frise ailerons feature a leading edge that projects into the airflow below the wing when the aileron is deflected upwards, creating drag to counteract adverse yaw",
-      "id": "ab-im-0036"
+      "id": "ab-im-0036",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -6920,73 +6884,68 @@
         "Best Rate of Climb Speed (Vy)",
         "Stall Speed in Landing Configuration (Vso)"
       ],
-      "question": "In this Airspeed Indicator, what is indicated by the striped red-and-white pointer (B)?",
-      "imageAlt": "Close up of a traditional analogue Airspeed Indicator with multiple needles",
-      "type": "image_question",
-      "imageDescription": "A round dial Airspeed Indicator. Needle A is the primary airspeed pointer. Needle B is a striped red-and-white pointer. Needle C is a sub-scale setting pointer",
+      "question": "A round dial Airspeed Indicator. Needle A is the primary airspeed pointer. Needle B is a striped red-and-white pointer. Needle C is a sub-scale setting pointer. In this Airspeed Indicator, what is indicated by the striped red-and-white pointer (B)?",
+      "type": "multiple_choice",
       "correctAnswer": 1,
       "explanation": "The red and white hatched pointer (B) indicates the Maximum Operating Speed (Vmo) or Maximum Operating Mach number (Mmo), which varies with altitude",
-      "id": "ab-im-0037"
+      "id": "ab-im-0037",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "Static stability refers to the initial tendency of an aircraft to return to its original equilibrium position following a disturbance",
       "correctAnswer": 0,
-      "imageDescription": "A diagram showing three scenarios: A ball in a bowl (A); a ball on a flat surface (B); and a ball on top of an inverted bowl (C). A represents stability",
-      "type": "image_question",
-      "imageAlt": "Diagram of a ball in three different shaped bowls. Ball A is at the bottom of a U-shaped bowl",
-      "question": "In the context of flight mechanics, what type of stability is represented by scenario 'A' in the diagram?",
+      "type": "multiple_choice",
+      "question": "A diagram showing three scenarios: A ball in a bowl (A); a ball on a flat surface (B); and a ball on top of an inverted bowl (C). A represents stability. In the context of flight mechanics, what type of stability is represented by scenario 'A' ?",
       "options": [
         "Static Stability",
         "Dynamic Stability",
         "Neutral Stability",
         "Aperiodic Instability"
       ],
-      "id": "ab-im-0038"
+      "id": "ab-im-0038",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "At the point where the Parasite Drag and Induced Drag curves intersect, Total Drag is at its minimum value (Vmd)",
       "correctAnswer": 2,
-      "type": "image_question",
-      "imageDescription": "A graph with Airspeed on the X-axis and Drag on the Y-axis. Curve 1 is Induced Drag (decreasing), Curve 2 is Parasite Drag (increasing), and Curve 3 is Total Drag (U-shaped). A point 'P' is marked at the bottom of Curve 3",
-      "question": "What specific flight condition is represented by point 'P' on this drag curve diagram?",
+      "type": "multiple_choice",
+      "question": "A graph with Airspeed on the X-axis and Drag on the Y-axis. Curve 1 is Induced Drag (decreasing), Curve 2 is Parasite Drag (increasing), and Curve 3 is Total Drag (U-shaped). A point 'P' is marked at the bottom of Curve 3. What specific flight condition is represented by point 'P' on this drag curve diagram?",
       "options": [
         "Maximum Lift-to-Drag Ratio (L/D Max) point",
         "Maximum Power Required point",
         "Minimum Drag Speed (Vmd)",
         "Maximum Range Speed for a jet aircraft"
       ],
-      "imageAlt": "Line graph showing Drag vs Airspeed with three curves: L-shaped, U-shaped, and rising",
-      "id": "ab-im-0039"
+      "id": "ab-im-0039",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageDescription": "A diagram showing a wing cross-section with an aileron. The upward deflection angle is shown as 25 degrees, while the downward deflection angle is shown as 15 degrees",
-      "question": "Which design feature is depicted in this diagram to help reduce adverse yaw?",
+      "type": "multiple_choice",
+      "question": "A diagram showing a wing cross-section with an aileron. The upward deflection angle is shown as 25 degrees, while the downward deflection angle is shown as 15 degrees. Which design feature is described to help reduce adverse yaw?",
       "options": [
         "Differential Ailerons",
         "Frise-type Ailerons",
         "Aileron Reversal mechanism",
         "Balance Tabs"
       ],
-      "imageAlt": "Side view diagram of a wing section showing aileron movement angles",
       "explanation": "A differential aileron is designed to deflect upward more than downward to increase drag on the downgoing wing, helping to counter adverse yaw",
       "correctAnswer": 0,
-      "id": "ab-im-0040"
+      "id": "ab-im-0040",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "The 'Power Settling' or Vortex Ring State occurs when a helicopter descends into its own downwash, creating a recirculating flow pattern that loses lift",
       "correctAnswer": 1,
-      "type": "image_question",
-      "imageDescription": "A side view of a helicopter in a vertical descent. Arrows show airflow moving down through the rotor disc and then curling back up and around the blade tips into the top of the disc",
+      "type": "multiple_choice",
       "options": [
         "Blade Sailing",
         "Vortex Ring State (Power Settling)",
         "Ground Effect transition",
         "Dissymmetry of Lift"
       ],
-      "question": "What aerodynamic state is illustrated by the airflow pattern around this helicopter rotor?",
-      "imageAlt": "Diagram of a helicopter rotor showing air circulating back up through the blades",
-      "id": "ab-im-0041"
+      "question": "A side view of a helicopter in a vertical descent. Arrows show airflow moving down through the rotor disc and then curling back up and around the blade tips into the top of the disc. What aerodynamic state is illustrated by the airflow pattern around this helicopter rotor?",
+      "id": "ab-im-0041",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 3,
@@ -6997,191 +6956,178 @@
         "Increase in Mach Tuck tendency",
         "Reduction in Induced Drag"
       ],
-      "question": "By comparing Image A and Image B, what is the primary benefit of the wing feature shown in Image B?",
-      "imageAlt": "Comparison of two wing tips, one with a vertical extension and one without, showing air swirls",
-      "type": "image_question",
-      "imageDescription": "Illustration showing the end of a wing. Image A shows large circular air swirls at the tip. Image B shows a winglet (upward extension) with significantly smaller swirls",
-      "id": "ab-im-0042"
+      "question": "Illustration showing the end of a wing. Image A shows large circular air swirls at the tip. Image B shows a winglet (upward extension) with significantly smaller swirls. By comparing Image A and Image B, what is the primary benefit of the wing feature shown in Image B?",
+      "type": "multiple_choice",
+      "id": "ab-im-0042",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageDescription": "A planform view of a swept, tapered wing. Line A is the root chord, line B is the tip chord, line C is a dashed line representing the average chord length across the wing",
+      "type": "multiple_choice",
       "options": [
         "Root Chord",
         "Geometric Chord",
         "Mean Aerodynamic Chord (MAC)",
         "Spanwise flow line"
       ],
-      "question": "In this wing planform diagram, what does the dashed line labeled 'C' represent?",
-      "imageAlt": "Top-down view of a tapered wing with several horizontal lines marked",
+      "question": "A planform view of a swept, tapered wing. Line A is the root chord, line B is the tip chord, line C is a dashed line representing the average chord length across the wing. In this wing planform diagram, what does the dashed line labeled 'C' represent?",
       "explanation": "The mean aerodynamic chord (MAC) is the average chord length of a tapered wing, used as a reference for longitudinal stability and CG calculations",
       "correctAnswer": 2,
-      "id": "ab-im-0043"
+      "id": "ab-im-0043",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageDescription": "Wing A is very long and narrow (glider-like). Wing B is short and wide (delta or fighter-like). The question asks for the name of this geometric ratio",
-      "question": "What geometric property is being contrasted between Wing A and Wing B?",
+      "type": "multiple_choice",
+      "question": "Wing A is very long and narrow (glider-like). Wing B is short and wide (delta or fighter-like). The question asks for the name of this geometric ratio. What geometric property is being contrasted between Wing A and Wing B?",
       "options": [
         "Aspect Ratio",
         "Taper Ratio",
         "Thickness-to-Chord Ratio",
         "Fineness Ratio"
       ],
-      "imageAlt": "Two wing shapes: one long and thin, one short and wide",
       "explanation": "The Aspect Ratio is the ratio of the wing span to its mean chord, or span squared divided by wing area. High aspect ratio wings (like gliders) are more efficient",
       "correctAnswer": 0,
-      "id": "ab-im-0044"
+      "id": "ab-im-0044",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 1,
       "explanation": "Dihedral is the upward angle of the wings from the longitudinal axis, which improves lateral (roll) stability",
-      "question": "What is the name of the angle 'Theta' shown in this frontal view of the aircraft?",
+      "question": "Frontal view of an airplane. The wings are not horizontal but are angled upwards at an angle 'Theta' relative to the horizontal plane of the fuselage. What is the name of the angle 'Theta' shown in this frontal view of the aircraft?",
       "options": [
         "Anhedral Angle",
         "Dihedral Angle",
         "Angle of Incidence",
         "Washout Angle"
       ],
-      "imageAlt": "Front view of an aircraft showing wings angled upwards from the fuselage",
-      "type": "image_question",
-      "imageDescription": "Frontal view of an airplane. The wings are not horizontal but are angled upwards at an angle 'Theta' relative to the horizontal plane of the fuselage",
-      "id": "ab-im-0045"
+      "type": "multiple_choice",
+      "id": "ab-im-0045",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageDescription": "An aerofoil in a high-speed airflow. Most of the air is marked M=0.8, but a small bubble on the upper surface is marked M=1.0. An arrow points to the onset of this bubble",
+      "type": "multiple_choice",
       "options": [
         "Shock Stall Mach Number",
         "Maximum Mach Number (Mmo)",
         "Critical Mach Number (Mcrit)",
         "Drag Divergence Mach Number"
       ],
-      "question": "Which aerodynamic threshold is being reached in this diagram?",
-      "imageAlt": "Cross-section of a wing with a small region labeled 'M = 1.0'",
+      "question": "An aerofoil in a high-speed airflow. Most of the air is marked M=0.8, but a small bubble on the upper surface is marked M=1.0. An arrow points to the onset of this bubble. Which aerodynamic threshold is being reached ?",
       "explanation": "The critical Mach number is the free-stream Mach speed at which the airflow over any part of the wing first reaches the speed of sound (Mach 1.0)",
       "correctAnswer": 2,
-      "id": "ab-im-0046"
+      "id": "ab-im-0046",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 1,
       "explanation": "The 'Relative Airflow' is the direction of the airflow produced by the aircraft's motion through the air, acting parallel and opposite to the flight path",
-      "question": "In this diagram defining the Angle of Attack, what does arrow 'X' represent?",
+      "question": "An aerofoil section moving through the air. Arrow X is the oncoming air. Line Y is the chord line. The angle between them is marked as the Angle of Attack. Defining the Angle of Attack, what does arrow 'X' represent?",
       "options": [
         "Induced Airflow",
         "Relative Airflow",
         "Upwash Airflow",
         "Free Stream Velocity"
       ],
-      "imageAlt": "A wing profile with an oncoming arrow labeled X and the chord line labeled Y",
-      "type": "image_question",
-      "imageDescription": "An aerofoil section moving through the air. Arrow X is the oncoming air. Line Y is the chord line. The angle between them is marked as the Angle of Attack",
-      "id": "ab-im-0047"
+      "type": "multiple_choice",
+      "id": "ab-im-0047",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "A servo tab moves in the opposite direction to the primary control surface to provide the aerodynamic force required to move the main surface, reducing control forces for the pilot",
       "correctAnswer": 3,
-      "imageDescription": "A diagram of a primary control surface (elevator) deflected UP. A small tab at the trailing edge of the elevator is deflected DOWN. Arrows show the pilot's input and the resulting aerodynamic force",
-      "type": "image_question",
-      "imageAlt": "Diagram of an elevator and a small tab at the rear moving in opposite directions",
+      "type": "multiple_choice",
       "options": [
         "Trim Tab",
         "Anti-Balance Tab",
         "Spring Tab",
         "Servo Tab"
       ],
-      "question": "What type of control tab is shown in this diagram, where the tab moves opposite to the main control surface?",
-      "id": "ab-im-0048"
+      "question": "A diagram of a primary control surface (elevator) deflected UP. A small tab at the trailing edge of the elevator is deflected DOWN. Arrows show the pilot's input and the resulting aerodynamic force. What type of control tab is shown , where the tab moves opposite to the main control surface?",
+      "id": "ab-im-0048",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "In this airspeed indicator, what does the red and white striped pointer (barber pole) represent?",
-      "imageDescription": "Close-up of an analog Airspeed Indicator (ASI) with a fixed red radial line at a high speed and a movable red and white striped pointer (barber pole)",
+      "question": "Close-up of an analog Airspeed Indicator (ASI) with a fixed red radial line at a high speed and a movable red and white striped pointer (barber pole). In this airspeed indicator, what does the red and white striped pointer (barber pole) represent?",
       "options": [
         "Vne (Never Exceed Speed)",
         "Vmo (Maximum Operating Limit Speed)",
         "Va (Design Manoeuvring Speed)",
         "Vle (Landing Gear Extended Speed)"
       ],
-      "imageAlt": "An airspeed indicator with a red and white striped pointer",
       "correctAnswer": 1,
       "explanation": "Vmo is the Maximum Operating Limit Speed, often indicated by a red/white barber pole pointer on an ASI",
-      "type": "image_question",
-      "id": "ab-im-0049"
+      "type": "multiple_choice",
+      "id": "ab-im-0049",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What is the primary function of the small fins shown on the wing surface in this image?",
+      "question": "A row of small, vertical metallic fins (vortex generators) installed on the upper surface of an aircraft wing near the leading edge. What is the primary function of the small fins shown on the wing surface ?",
       "options": [
         "To re-energise the boundary layer and delay a stall",
         "To reduce the total drag of the aircraft in cruise",
         "To increase the total lift produced by the wing during takeoff",
         "To provide structural reinforcement to the wing skin"
       ],
-      "imageDescription": "A row of small, vertical metallic fins (vortex generators) installed on the upper surface of an aircraft wing near the leading edge",
       "correctAnswer": 0,
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "Vortex generators create turbulence in the boundary layer, delaying flow separation at high angles of attack",
-      "imageAlt": "Small metal fins on the top of a wing",
-      "id": "ab-im-0050"
+      "id": "ab-im-0050",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 2,
       "explanation": "The 'back of the drag curve' is the region where more power is required to fly more slowly because induced drag increases rapidly",
-      "type": "image_question",
-      "imageAlt": "A drag curve graph with a shaded region at low speeds",
-      "question": "What is the shaded region on this drag curve commonly referred to as?",
+      "type": "multiple_choice",
+      "question": "A graph showing Total Drag vs Velocity. A shaded area is highlighted on the left side of the curve, where speed is lower than Vmd (Minimum Drag speed). What is the shaded region on this drag curve commonly referred to as?",
       "options": [
         "The region of maximum range",
         "The region of normal command",
         "The region of reversed command",
         "The region of high-speed buffet"
       ],
-      "imageDescription": "A graph showing Total Drag vs Velocity. A shaded area is highlighted on the left side of the curve, where speed is lower than Vmd (Minimum Drag speed)",
-      "id": "ab-im-0051"
+      "id": "ab-im-0051",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "Static margin is the distance between the Centre of Gravity and the Neutral Point; a positive margin ensures longitudinal stability",
       "correctAnswer": 3,
-      "imageAlt": "Side view of an aircraft showing CG and NP labels",
       "options": [
         "The Moment Arm",
         "The Aerodynamic Centre",
         "The Centre of Pressure",
         "The Static Margin"
       ],
-      "imageDescription": "A side-view diagram of an aircraft showing the Centre of Gravity (CG) located forward of the Neutral Point (NP). The distance between them is highlighted with a bracket",
-      "question": "What term is used to describe the distance between the two points illustrated in this diagram?",
-      "id": "ab-im-0052"
+      "question": "A side-view diagram of an aircraft showing the Centre of Gravity (CG) located forward of the Neutral Point (NP). The distance between them is highlighted with a bracket. What term is used to describe the distance between the two points illustrated ?",
+      "id": "ab-im-0052",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "An aircraft with a horizontal stabiliser mounted at the top of the fin",
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "A T-tail keeps the horizontal stabiliser out of the wing's wake but is susceptible to 'deep stall' at high angles of attack",
       "correctAnswer": 0,
-      "imageDescription": "An image of the rear section of an aircraft where the horizontal stabiliser is mounted on top of the vertical tail (T-tail configuration)",
       "options": [
         "Deep stall (Super stall) at high angles of attack",
         "Inability to recover from a flat spin",
         "Excessive Dutch Roll at low speeds",
         "Increased drag during transonic cruise"
       ],
-      "question": "What is a potential aerodynamic risk associated with the tail configuration shown in this image?",
-      "id": "ab-im-0053"
+      "question": "An image of the rear section of an aircraft where the horizontal stabiliser is mounted on top of the vertical tail (T-tail configuration). What is a potential aerodynamic risk associated with the tail configuration shown ?",
+      "id": "ab-im-0053",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A graph of the International Standard Atmosphere (ISA) showing temperature decreasing with height, then becoming constant at approximately 36,000 feet. A label points to the kink in the line",
       "options": [
         "The Stratopause",
         "The Tropopause",
         "The Mesopause",
         "The Isothermal Layer"
       ],
-      "question": "What atmospheric boundary is indicated by the transition point in this temperature-altitude graph?",
-      "type": "image_question",
+      "question": "A graph of the International Standard Atmosphere (ISA) showing temperature decreasing with height, then becoming constant at approximately 36,000 feet. A label points to the kink in the line. What atmospheric boundary is indicated by the transition point in this temperature-altitude graph?",
+      "type": "multiple_choice",
       "explanation": "The tropopause is the boundary where the temperature lapse rate stops and temperature remains constant with increasing altitude",
       "correctAnswer": 1,
-      "imageAlt": "A graph showing altitude vs temperature in the atmosphere",
-      "id": "ab-im-0054"
+      "id": "ab-im-0054",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -7190,58 +7136,54 @@
         "An Expansion Fan (Prandtl-Meyer)",
         "A Compression Wave"
       ],
-      "imageDescription": "A diagram of an aerofoil in supersonic flow. At the point where the surface curves away from the flow, a series of fan-like lines are drawn",
-      "question": "What supersonic flow phenomenon is represented by the fan-like lines in this diagram?",
-      "imageAlt": "Supersonic flow over a curved surface",
+      "question": "A diagram of an aerofoil in supersonic flow. At the point where the surface curves away from the flow, a series of fan-like lines are drawn. What supersonic flow phenomenon is represented by the fan-like lines ?",
       "explanation": "Expansion waves occur in supersonic flow when the air is forced to turn away from the flow direction, resulting in decreased pressure and density",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 2,
-      "id": "ab-im-0055"
+      "id": "ab-im-0055",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A planform view of a tapered wing with several chord lines",
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "The mean aerodynamic chord (MAC) is the average chord length of a tapered wing, used for longitudinal stability calculations",
       "correctAnswer": 0,
-      "imageDescription": "A planform diagram of a tapered swept wing. A specific longitudinal line is highlighted that represents the average chord of the wing",
       "options": [
         "Mean Aerodynamic Chord (MAC)",
         "Root Chord",
         "Tip Chord",
         "Geometric Chord Line"
       ],
-      "question": "What measurement of the wing planform is indicated by the highlighted line in this diagram?",
-      "id": "ab-im-0056"
+      "question": "A planform diagram of a tapered swept wing. A specific longitudinal line is highlighted that represents the average chord of the wing. What measurement of the wing planform is indicated by the highlighted line ?",
+      "id": "ab-im-0056",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What type of control surface arrangement is shown in this diagram?",
+      "question": "A side-view diagram of an elevator. The elevator is deflected upwards, while a small tab at the trailing edge is deflected downwards. What type of control surface arrangement is shown ?",
       "options": [
         "An Anti-balance tab",
         "A Trim tab",
         "A Servo tab",
         "A Balance tab"
       ],
-      "imageDescription": "A side-view diagram of an elevator. The elevator is deflected upwards, while a small tab at the trailing edge is deflected downwards",
-      "imageAlt": "A tailplane with an elevator and a small tab moving in opposite directions",
       "correctAnswer": 3,
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "A balance tab moves in the opposite direction to the control surface to reduce the aerodynamic force (pilot effort) required to move it",
-      "id": "ab-im-0057"
+      "id": "ab-im-0057",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A photograph of a modern airliner wingtip featuring a 'blended winglet' extending vertically upwards",
       "options": [
         "To increase the wing's stalling angle",
         "To reduce induced drag by weakening wingtip vortices",
         "To increase the aircraft's maximum speed (Vne)",
         "To provide extra lift during the takeoff roll"
       ],
-      "question": "What is the primary aerodynamic purpose of the wing feature shown in this image?",
-      "imageAlt": "A wingtip with a vertical extension",
+      "question": "A photograph of a modern airliner wingtip featuring a 'blended winglet' extending vertically upwards. What is the primary aerodynamic purpose of the wing feature shown ?",
       "explanation": "Winglets reduce the strength of wingtip vortices, decreasing induced drag, particularly at high lift coefficients",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 1,
-      "id": "ab-im-0058"
+      "id": "ab-im-0058",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -7250,43 +7192,40 @@
         "Downwash",
         "Slipstream effect"
       ],
-      "imageDescription": "A diagram showing air being deflected downwards behind a wing (downwash) and subsequently striking the horizontal stabiliser at an angle different from the freestream",
-      "question": "What aerodynamic effect is being illustrated by the airflow change between the wing and the tail in this diagram?",
-      "type": "image_question",
+      "question": "A diagram showing air being deflected downwards behind a wing (downwash) and subsequently striking the horizontal stabiliser at an angle different from the freestream. What aerodynamic effect is being illustrated by the airflow change between the wing and the tail ?",
+      "type": "multiple_choice",
       "explanation": "Downwash from the wing reduces the effective angle of attack of the horizontal stabiliser, affecting longitudinal trim",
       "correctAnswer": 2,
-      "imageAlt": "Airflow behind a wing hitting the tail",
-      "id": "ab-im-0059"
+      "id": "ab-im-0059",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A sequence of drawings showing an aircraft viewed from above and behind, oscillating in both yaw and roll simultaneously in a 'figure-eight' path",
       "options": [
         "Dutch Roll",
         "Spiral Instability",
         "Phugoid Oscillation",
         "Directional Divergence"
       ],
-      "question": "Which flight dynamic phenomenon is depicted by the aircraft's motion in this diagram?",
-      "imageAlt": "An aircraft performing a combined yaw and roll oscillation",
-      "type": "image_question",
+      "question": "A sequence of drawings showing an aircraft viewed from above and behind, oscillating in both yaw and roll simultaneously in a 'figure-eight' path. Which flight dynamic phenomenon is depicted by the aircraft's motion ?",
+      "type": "multiple_choice",
       "explanation": "Dutch Roll is an out-of-phase combination of yawing and rolling motions, common in aircraft with swept wings",
       "correctAnswer": 0,
-      "id": "ab-im-0060"
+      "id": "ab-im-0060",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A diagram of an aerofoil profile. Line A follows the upper surface, Line B is a straight line from the front tip to the rear tip, Line C is the mean camber line, and Line D represents the thickness",
       "explanation": "The chord line is a straight line connecting the leading and trailing edges of an aerofoil",
-      "imageAlt": "A cross-section of an aircraft wing with various lines labeled",
       "correctAnswer": 1,
-      "question": "In this aerofoil cross-section, which line represents the chord line?",
+      "question": "A diagram of an aerofoil profile. Line A follows the upper surface, Line B is a straight line from the front tip to the rear tip, Line C is the mean camber line, and Line D represents the thickness. In this aerofoil cross-section, which line represents the chord line?",
       "options": [
         "Mean camber line",
         "Chord line",
         "Relative airflow",
         "Thickness-to-chord ratio line"
       ],
-      "type": "image_question",
-      "id": "ab-im-0061"
+      "type": "multiple_choice",
+      "id": "ab-im-0061",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 2,
@@ -7296,16 +7235,15 @@
         "Balance tab",
         "Spring tab"
       ],
-      "type": "image_question",
-      "question": "What type of control tab is depicted in this diagram, where the tab moves in the opposite direction to the main surface?",
-      "imageAlt": "A side view of an elevator with a smaller hinged surface at the rear moving in the opposite direction",
-      "imageDescription": "A technical drawing of a horizontal stabiliser and elevator. As the elevator moves upward, a small tab at the trailing edge is shown moving downward. Arrows indicate the direction of movement",
+      "type": "multiple_choice",
+      "question": "A technical drawing of a horizontal stabiliser and elevator. As the elevator moves upward, a small tab at the trailing edge is shown moving downward. Arrows indicate the direction of movement. What type of control tab is described, where the tab moves in the opposite direction to the main surface?",
       "explanation": "A balance tab moves in the opposite direction to the primary control surface to reduce the physical force required by the pilot to move the controls",
-      "id": "ab-im-0062"
+      "id": "ab-im-0062",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "On this airspeed indicator, what does the lower limit of the white arc signify?",
-      "type": "image_question",
+      "question": "An image of an analogue Airspeed Indicator (ASI). A white arc starts at 55 knots and ends at 105 knots. A green arc starts at 62 knots. A yellow arc starts at 140 knots. On this airspeed indicator, what does the lower limit of the white arc signify?",
+      "type": "multiple_choice",
       "options": [
         "Vso (Stalling speed in landing configuration)",
         "Vs1 (Stalling speed in clean configuration)",
@@ -7313,43 +7251,39 @@
         "Vno (Normal operating limit)"
       ],
       "correctAnswer": 0,
-      "imageAlt": "A standard analogue airspeed indicator with various coloured arcs",
       "explanation": "The white arc on an ASI represents the flap operating range, with the lower limit being Vso (stalling speed in landing configuration)",
-      "imageDescription": "An image of an analogue Airspeed Indicator (ASI). A white arc starts at 55 knots and ends at 105 knots. A green arc starts at 62 knots. A yellow arc starts at 140 knots",
-      "id": "ab-im-0063"
+      "id": "ab-im-0063",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "A t-tail configuration can lead to a deep stall where the wake from the stalled main wing blankets the elevators, making recovery difficult",
-      "imageDescription": "A profile view of a T-tail aircraft at a high nose-up pitch angle. Turbulent airflow lines originate from the main wing and flow directly back over the horizontal stabiliser",
-      "imageAlt": "High T-tail aircraft at a high angle of attack with turbulent air from the wing hitting the tail",
       "options": [
         "Dutch roll",
         "Mach tuck",
         "Spiral instability",
         "Deep (Super) stall"
       ],
-      "type": "image_question",
-      "question": "Which aerodynamic phenomenon is the aircraft in this diagram at risk of experiencing due to its pitch angle and tail design?",
+      "type": "multiple_choice",
+      "question": "A profile view of a T-tail aircraft at a high nose-up pitch angle. Turbulent airflow lines originate from the main wing and flow directly back over the horizontal stabiliser. Which aerodynamic phenomenon is the aircraft at risk of experiencing due to its pitch angle and tail design?",
       "correctAnswer": 3,
-      "id": "ab-im-0064"
+      "id": "ab-im-0064",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "An exaggerated 3D view of a wing where the leading edge at the wing tip is aimed lower than the leading edge at the wing root. Angle Alpha is marked at the root and Angle Beta is marked at the tip",
       "explanation": "Washout is a decrease in the angle of incidence from the wing root to the wing tip to ensure the root stalls before the tip",
       "correctAnswer": 1,
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Anhedral",
         "Washout",
         "Torsion",
         "Dihedral"
       ],
-      "question": "What wing design feature is illustrated in this diagram by the change in incidence angle from root to tip?",
-      "imageAlt": "Frontal view of a wing showing a twist in the structure",
-      "id": "ab-im-0065"
+      "question": "An exaggerated 3D view of a wing where the leading edge at the wing tip is aimed lower than the leading edge at the wing root. Angle Alpha is marked at the root and Angle Beta is marked at the tip. What wing design feature is illustrated by the change in incidence angle from root to tip?",
+      "id": "ab-im-0065",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "Two wings compared: one long and thin, one short and wide",
       "correctAnswer": 2,
       "options": [
         "Taper ratio",
@@ -7357,26 +7291,25 @@
         "Aspect ratio",
         "Sweepback angle"
       ],
-      "type": "image_question",
-      "question": "Which wing geometric property is being compared between Wing A and Wing B in this diagram?",
-      "imageDescription": "Diagram showing Wing A (long span, narrow chord) and Wing B (short span, wide chord). Annotations show the span (b) and the chord (c)",
+      "type": "multiple_choice",
+      "question": "Diagram showing Wing A (long span, narrow chord) and Wing B (short span, wide chord). Annotations show the span (b) and the chord (c). Which wing geometric property is being compared between Wing A and Wing B ?",
       "explanation": "The aspect ratio is the ratio of the wing span to its mean chord; high aspect ratio wings (like gliders) have lower induced drag",
-      "id": "ab-im-0066"
+      "id": "ab-im-0066",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "An Airspeed Indicator focus on the green arc",
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Vs1 (Stall speed clean)",
         "Vne (Never exceed speed)",
         "Vref (Landing reference speed)",
         "Va (Manoeuvring speed)"
       ],
-      "question": "In the provided image of an Airspeed Indicator, what does the start of the green arc represent?",
+      "question": "Close up of an Airspeed Indicator. The green arc starts at a specific speed mark (Vs1) and ends at the yellow arc (Vno). In the provided image of an Airspeed Indicator, what does the start of the green arc represent?",
       "correctAnswer": 0,
       "explanation": "The green arc indicates the normal operating range, and its lower limit is Vs1 (stall speed in a specific clean configuration)",
-      "imageDescription": "Close up of an Airspeed Indicator. The green arc starts at a specific speed mark (Vs1) and ends at the yellow arc (Vno)",
-      "id": "ab-im-0067"
+      "id": "ab-im-0067",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -7385,18 +7318,15 @@
         "Positive dynamic stability",
         "Positive static stability"
       ],
-      "type": "image_question",
-      "question": "What type of stability is represented by the negative slope of the moment curve in this graph?",
+      "type": "multiple_choice",
+      "question": "A graph showing Pitching Moment (M) on the vertical axis and Angle of Attack (alpha) on the horizontal axis. The line has a negative slope (downward sloping to the right) and crosses the zero-moment line. What type of stability is represented by the negative slope of the moment curve in this graph?",
       "correctAnswer": 3,
-      "imageAlt": "Graph of Moment vs Angle of Attack",
       "explanation": "Static stability is the initial tendency of an aircraft to return to its original equilibrium position following a disturbance",
-      "imageDescription": "A graph showing Pitching Moment (M) on the vertical axis and Angle of Attack (alpha) on the horizontal axis. The line has a negative slope (downward sloping to the right) and crosses the zero-moment line",
-      "id": "ab-im-0068"
+      "id": "ab-im-0068",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A graph of the International Standard Atmosphere. The x-axis is temperature, the y-axis is altitude. The line moves diagonally left (colder) from sea level up to approximately 36,000 feet",
       "explanation": "The troposphere is characterized by a steady decrease in temperature with altitude (the lapse rate)",
-      "imageAlt": "Graph showing temperature decreasing as altitude increases",
       "correctAnswer": 1,
       "options": [
         "Stratosphere",
@@ -7404,30 +7334,29 @@
         "Mesosphere",
         "Thermosphere"
       ],
-      "type": "image_question",
-      "question": "This temperature-altitude profile represents which layer of the Earth's atmosphere?",
-      "id": "ab-im-0069"
+      "type": "multiple_choice",
+      "question": "A graph of the International Standard Atmosphere. The x-axis is temperature, the y-axis is altitude. The line moves diagonally left (colder) from sea level up to approximately 36,000 feet. This temperature-altitude profile represents which layer of the Earth's atmosphere?",
+      "id": "ab-im-0069",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What is the primary aerodynamic purpose of the winglet shown in this image?",
+      "question": "A diagram of a wingtip equipped with a vertical winglet. Spiralling lines representing vortices are shown being smaller or deflected compared to a standard wingtip. What is the primary aerodynamic purpose of the winglet shown ?",
       "options": [
         "Increase stall speed",
         "Decrease parasite drag",
         "Decrease induced drag",
         "Increase lateral stability"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 2,
-      "imageAlt": "Wingtip with a vertical extension and airflow lines",
       "explanation": "A winglet reduces induced drag by weakening the wingtip vortices created by pressure differentials",
-      "imageDescription": "A diagram of a wingtip equipped with a vertical winglet. Spiralling lines representing vortices are shown being smaller or deflected compared to a standard wingtip",
-      "id": "ab-im-0070"
+      "id": "ab-im-0070",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "The transition from laminar flow to turbulent flow occurs at the transition point within the boundary layer",
-      "imageDescription": "A side view of an aerofoil. Airflow starts as smooth, parallel lines (Laminar) and then becomes chaotic and thick (Turbulent) halfway along the upper surface. A point 'P' is marked where the change begins",
-      "question": "In this diagram of boundary layer flow, what is the name of the point labeled 'P'?",
-      "type": "image_question",
+      "question": "A side view of an aerofoil. Airflow starts as smooth, parallel lines (Laminar) and then becomes chaotic and thick (Turbulent) halfway along the upper surface. A point 'P' is marked where the change begins. Of boundary layer flow, what is the name of the point labeled 'P'?",
+      "type": "multiple_choice",
       "options": [
         "Transition point",
         "Separation point",
@@ -7435,8 +7364,8 @@
         "Stall point"
       ],
       "correctAnswer": 0,
-      "imageAlt": "Airflow over a wing showing smooth lines becoming wavy",
-      "id": "ab-im-0071"
+      "id": "ab-im-0071",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 3,
@@ -7446,18 +7375,15 @@
         "Incidence angle",
         "Sweepback angle"
       ],
-      "type": "image_question",
-      "question": "What is the name of the angle designated as 'Phi' in this wing planform diagram?",
-      "imageAlt": "Top-down view of a wing angled backwards",
-      "imageDescription": "A top-down planform view of a jet aircraft wing. An angle 'Phi' is measured between a line perpendicular to the longitudinal axis and the leading edge of the wing",
+      "type": "multiple_choice",
+      "question": "A top-down planform view of a jet aircraft wing. An angle 'Phi' is measured between a line perpendicular to the longitudinal axis and the leading edge of the wing. What is the name of the angle designated as 'Phi' in this wing planform diagram?",
       "explanation": "Wing sweep increases the Critical Mach Number by reducing the effective airflow velocity component perpendicular to the leading edge",
-      "id": "ab-im-0072"
+      "id": "ab-im-0072",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "Mach tuck is caused by the aft movement of the centre of pressure as an aircraft enters the transonic regime, leading to a nose-down pitching moment",
-      "imageAlt": "A diagram showing a nose-down pitching moment on a silhouette of an aircraft at high Mach numbers",
-      "type": "image_question",
-      "imageDescription": "Diagram showing a high-speed aircraft silhouette with an arrow indicating the centre of pressure moving rearward and a large curved arrow showing the nose pitching downwards",
+      "type": "multiple_choice",
       "options": [
         "Deep Stall",
         "Mach Tuck",
@@ -7465,8 +7391,9 @@
         "Dutch Roll"
       ],
       "correctAnswer": 1,
-      "question": "What high-speed phenomenon is illustrated in this diagram by the rearward movement of the centre of pressure causing a nose-down pitch?",
-      "id": "ab-im-0073"
+      "question": "Diagram showing a high-speed aircraft silhouette with an arrow indicating the centre of pressure moving rearward and a large curved arrow showing the nose pitching downwards. What high-speed phenomenon is illustrated by the rearward movement of the centre of pressure causing a nose-down pitch?",
+      "id": "ab-im-0073",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -7476,19 +7403,16 @@
         "Spring tab"
       ],
       "correctAnswer": 2,
-      "question": "What type of aerodynamic tab is shown in this diagram, moving in the opposite direction to the control surface?",
-      "imageAlt": "Diagram of an elevator with a smaller tab at the trailing edge moving upwards as the elevator moves downwards",
+      "question": "Side-view diagram of a horizontal stabiliser and elevator. The elevator is deflected downwards, and a small tab at the rear is deflected upwards. Arrows indicate the direction of movement. What type of aerodynamic tab is shown , moving in the opposite direction to the control surface?",
       "explanation": "A balance tab moves in the opposite direction to the control surface to reduce the aerodynamic forces (hinge moment) required to move the controls",
-      "type": "image_question",
-      "imageDescription": "Side-view diagram of a horizontal stabiliser and elevator. The elevator is deflected downwards, and a small tab at the rear is deflected upwards. Arrows indicate the direction of movement",
-      "id": "ab-im-0074"
+      "type": "multiple_choice",
+      "id": "ab-im-0074",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "Close-up view of an analogue Airspeed Indicator (ASI). Most of the scale is white/green/yellow, but there is a clear red radial line at the 250-knot mark",
-      "type": "image_question",
-      "imageAlt": "An Airspeed Indicator with a prominent red radial line at a high speed value",
+      "type": "multiple_choice",
       "explanation": "The red line on the ASI indicates Vne, the velocity never exceed, which is the structural speed limit of the aircraft",
-      "question": "On this Airspeed Indicator, what specific speed limit is indicated by the red radial line?",
+      "question": "Close-up view of an analogue Airspeed Indicator (ASI). Most of the scale is white/green/yellow, but there is a clear red radial line at the 250-knot mark. On this Airspeed Indicator, what specific speed limit is indicated by the red radial line?",
       "correctAnswer": 0,
       "options": [
         "Vne (Never Exceed Speed)",
@@ -7496,13 +7420,12 @@
         "Vfe (Flaps Extended Speed)",
         "Va (Manoeuvring Speed)"
       ],
-      "id": "ab-im-0075"
+      "id": "ab-im-0075",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageAlt": "Velocity profile of air passing over a wing surface, showing speed decreasing closer to the surface",
+      "type": "multiple_choice",
       "explanation": "Surface friction and viscosity in the boundary layer cause the air velocity to decrease to zero at the actual surface of the aerofoil",
-      "imageDescription": "A diagram showing an aerofoil surface with several horizontal arrows representing air velocity. The arrows are long far from the surface and get progressively shorter until they are dots at the surface",
       "correctAnswer": 3,
       "options": [
         "The stagnation point",
@@ -7510,14 +7433,13 @@
         "The separation point",
         "The no-slip condition"
       ],
-      "question": "What aerodynamic principle is illustrated in this diagram where flow velocity reaches zero at the solid boundary?",
-      "id": "ab-im-0076"
+      "question": "A diagram showing an aerofoil surface with several horizontal arrows representing air velocity. The arrows are long far from the surface and get progressively shorter until they are dots at the surface. What aerodynamic principle is illustrated where flow velocity reaches zero at the solid boundary?",
+      "id": "ab-im-0076",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "Dihedral is the upward angle of the wings from the fuselage, which provides lateral (roll) stability",
-      "imageAlt": "Front view of an aircraft showing the wings angled upwards from the wing roots",
-      "type": "image_question",
-      "imageDescription": "A front-on silhouette of a low-wing aircraft. A horizontal reference line is drawn through the wing roots, and an angle is marked showing the wings rising above this line towards the tips",
+      "type": "multiple_choice",
       "options": [
         "Anhedral",
         "Dihedral",
@@ -7525,15 +7447,14 @@
         "Sweep back"
       ],
       "correctAnswer": 1,
-      "question": "What wing design feature is represented by the angle shown in this front-view diagram?",
-      "id": "ab-im-0077"
+      "question": "A front-on silhouette of a low-wing aircraft. A horizontal reference line is drawn through the wing roots, and an angle is marked showing the wings rising above this line towards the tips. What wing design feature is represented by the angle shown in this front-view diagram?",
+      "id": "ab-im-0077",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "Trailing view of a wing tip. Arrows show air curling from the high-pressure lower surface over the tip into the low-pressure upper surface, forming a spiral",
-      "imageAlt": "Diagram of a wing tip with spiralling air currents moving from the bottom surface to the top",
       "explanation": "Vortices are formed at the wingtips due to the high-pressure air from underneath the wing flowing around to the low-pressure area on top",
-      "type": "image_question",
-      "question": "Which aerodynamic phenomenon is depicted by the airflow patterns at the wingtip in this diagram?",
+      "type": "multiple_choice",
+      "question": "Trailing view of a wing tip. Arrows show air curling from the high-pressure lower surface over the tip into the low-pressure upper surface, forming a spiral. Which aerodynamic phenomenon is depicted by the airflow patterns at the wingtip ?",
       "options": [
         "Wing-tip vortices",
         "Downwash",
@@ -7541,7 +7462,8 @@
         "Induced drag reduction"
       ],
       "correctAnswer": 0,
-      "id": "ab-im-0078"
+      "id": "ab-im-0078",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -7551,15 +7473,14 @@
         "Thickness-to-chord ratio"
       ],
       "correctAnswer": 2,
-      "question": "What geometric property of the wing is being highlighted by the comparison of the two planforms in this image?",
-      "imageAlt": "Top-down view of two different wings: one long and thin, one short and wide",
+      "question": "A comparison diagram showing two wing planforms. Wing A is long and narrow (high aspect ratio), while Wing B is short and wide (low aspect ratio). Labels 'b' (span) and 'c' (chord) are present. What geometric property of the wing is being highlighted by the comparison of the two planforms ?",
       "explanation": "The aspect ratio is the ratio of the wing's span to its mean chord; high aspect ratio wings (like gliders) are long and narrow",
-      "type": "image_question",
-      "imageDescription": "A comparison diagram showing two wing planforms. Wing A is long and narrow (high aspect ratio), while Wing B is short and wide (low aspect ratio). Labels 'b' (span) and 'c' (chord) are present",
-      "id": "ab-im-0079"
+      "type": "multiple_choice",
+      "id": "ab-im-0079",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What atmospheric condition is represented by the section of the graph where temperature increases with height?",
+      "question": "A meteorological graph showing height versus temperature. Usually, the line goes left (colder) as height increases, but in a specific layer, the line slants to the right (warmer). What atmospheric condition is represented by the section of the graph where temperature increases with height?",
       "correctAnswer": 3,
       "options": [
         "Isothermal layer",
@@ -7567,18 +7488,15 @@
         "Dry adiabatic lapse rate",
         "Temperature inversion"
       ],
-      "imageDescription": "A meteorological graph showing height versus temperature. Usually, the line goes left (colder) as height increases, but in a specific layer, the line slants to the right (warmer)",
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "A temperature inversion occurs when air temperature increases with altitude, contrary to the standard lapse rate",
-      "imageAlt": "A graph showing altitude on the vertical axis and temperature on the horizontal axis, with the line moving right as it goes up",
-      "id": "ab-im-0080"
+      "id": "ab-im-0080",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A diagram of a triangular wedge in a supersonic flow. A sharp, straight line angles back from the point of the wedge, labeled with the Greek letter Beta",
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "Oblique shocks form on supersonic aircraft when the flow is turned through a specific angle, such as at the nose or leading edge",
-      "imageAlt": "Diagram of a supersonic wedge-shaped object with a sharp angled shock wave originating from the tip",
-      "question": "What type of shock wave is depicted in this diagram of a wedge in supersonic flow?",
+      "question": "A diagram of a triangular wedge in a supersonic flow. A sharp, straight line angles back from the point of the wedge, labeled with the Greek letter Beta. What type of shock wave is described of a wedge in supersonic flow?",
       "correctAnswer": 1,
       "options": [
         "Normal shock wave",
@@ -7586,7 +7504,8 @@
         "Expansion fan",
         "Bow wave"
       ],
-      "id": "ab-im-0081"
+      "id": "ab-im-0081",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -7596,15 +7515,14 @@
         "Positive dynamic stability"
       ],
       "correctAnswer": 0,
-      "question": "What type of aircraft stability is being represented by the 'ball in a bowl' analogy in this diagram?",
-      "imageAlt": "Diagram of a ball in a bowl returning to the center after being pushed",
+      "question": "A conceptual physics diagram showing three scenarios: a ball in a bowl (returning), a ball on a flat surface (staying put), and a ball on a hill (moving away). The question focuses on the ball in the bowl. What type of aircraft stability is being represented by the 'ball in a bowl' analogy ?",
       "explanation": "Static stability refers to the initial tendency of an aircraft to return to its original equilibrium position after a disturbance",
-      "type": "image_question",
-      "imageDescription": "A conceptual physics diagram showing three scenarios: a ball in a bowl (returning), a ball on a flat surface (staying put), and a ball on a hill (moving away). The question focuses on the ball in the bowl",
-      "id": "ab-im-0082"
+      "type": "multiple_choice",
+      "id": "ab-im-0082",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "In this aerofoil section, what is the name of the dashed line that represents the curvature of the wing?",
+      "question": "Side view of an asymmetrical aerofoil. There is a straight line (chord) and a curved dashed line that stays exactly halfway between the upper and lower skins. In this aerofoil section, what is the name of the dashed line that represents the curvature of the wing?",
       "correctAnswer": 2,
       "options": [
         "Chord line",
@@ -7612,11 +7530,10 @@
         "Mean camber line",
         "Stagnation line"
       ],
-      "imageDescription": "Side view of an asymmetrical aerofoil. There is a straight line (chord) and a curved dashed line that stays exactly halfway between the upper and lower skins",
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "The camber line is the locus of points equidistant from the upper and lower surfaces of an aerofoil",
-      "imageAlt": "Cross-section of a wing with a curved line running through the middle between the top and bottom surfaces",
-      "id": "ab-im-0083"
+      "id": "ab-im-0083",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 1,
@@ -7626,27 +7543,25 @@
         "Stalling speed (Vs)",
         "Best rate of climb speed (Vy)"
       ],
-      "question": "What specific airspeed is identified by the lowest point on the total drag curve in this diagram?",
-      "type": "image_question",
+      "question": "A graph of Drag (Y-axis) vs Airspeed (X-axis). It shows an upward sloping curve (Parasite), a downward sloping curve (Induced), and a combined U-shaped curve. A point is marked at the bottom of the U-shape. What specific airspeed is identified by the lowest point on the total drag curve ?",
+      "type": "multiple_choice",
       "explanation": "Total drag is the sum of parasite drag (which increases with speed) and induced drag (which decreases with speed). The minimum occurs at Vmd",
-      "imageAlt": "Graph showing three curves: one increasing, one decreasing, and a 'U' shaped curve representing their sum",
-      "imageDescription": "A graph of Drag (Y-axis) vs Airspeed (X-axis). It shows an upward sloping curve (Parasite), a downward sloping curve (Induced), and a combined U-shaped curve. A point is marked at the bottom of the U-shape",
-      "id": "ab-im-0084"
+      "id": "ab-im-0084",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "Pressure and density decrease with altitude in the ISA, whereas temperature decreases only up to the tropopause",
-      "question": "In this ISA (International Standard Atmosphere) graph, lines B and C represent the continuous decrease of which two properties with height?",
-      "imageAlt": "A graph showing three different lines representing atmospheric properties against altitude",
-      "type": "image_question",
+      "question": "A graph plotting Altitude (y-axis) against a value (x-axis). Three lines are shown: Line A is a straight diagonal representing temperature, Line B is a curve representing Pressure, and Line C is a curve representing Density. All three show a decrease as altitude increases. In this ISA (International Standard Atmosphere) graph, lines B and C represent the continuous decrease of which two properties with height?",
+      "type": "multiple_choice",
       "options": [
         "Temperature and Gravity",
         "Pressure and Density",
         "Humidity and Viscosity",
         "Temperature and Lapse Rate"
       ],
-      "imageDescription": "A graph plotting Altitude (y-axis) against a value (x-axis). Three lines are shown: Line A is a straight diagonal representing temperature, Line B is a curve representing Pressure, and Line C is a curve representing Density. All three show a decrease as altitude increases",
       "correctAnswer": 1,
-      "id": "ab-im-0085"
+      "id": "ab-im-0085",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -7655,33 +7570,30 @@
         "Vfe (Maximum flap extended speed)",
         "Vno (Maximum structural cruising speed)"
       ],
-      "type": "image_question",
-      "imageAlt": "An Airspeed Indicator showing various coloured arcs",
+      "type": "multiple_choice",
       "correctAnswer": 0,
-      "imageDescription": "A standard analogue Airspeed Indicator (ASI). The white arc starts at 55 knots and ends at 100 knots. The green arc starts at 65 knots and ends at 160 knots. A yellow arc continues to a red line at 200 knots",
       "explanation": "Vso is the stalling speed or minimum steady flight speed in the landing configuration, shown at the start of the white arc",
-      "question": "On this Airspeed Indicator, what specific speed is indicated by the start of the white arc (55 knots)?",
-      "id": "ab-im-0086"
+      "question": "A standard analogue Airspeed Indicator (ASI). The white arc starts at 55 knots and ends at 100 knots. The green arc starts at 65 knots and ends at 160 knots. A yellow arc continues to a red line at 200 knots. On this Airspeed Indicator, what specific speed is indicated by the start of the white arc (55 knots)?",
+      "id": "ab-im-0086",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "The stagnation point is where the relative airflow velocity is zero as it meets the leading edge of the aerofoil",
-      "question": "In this diagram of airflow over an aerofoil, what is the name of the point labeled 'X'?",
+      "question": "A 2D cross-section of an aerofoil. Streamlines approach from the left. One specific streamline terminates at the very front of the nose, labeled with the letter 'X'. The other streamlines curve over or under the wing. Of airflow over an aerofoil, what is the name of the point labeled 'X'?",
       "options": [
         "Transition Point",
         "Separation Point scraps",
         "Stagnation Point",
         "Centre of Pressure"
       ],
-      "type": "image_question",
-      "imageAlt": "An aerofoil section with streamlines. One streamline hits the leading edge directly at a point labeled X",
+      "type": "multiple_choice",
       "correctAnswer": 2,
-      "imageDescription": "A 2D cross-section of an aerofoil. Streamlines approach from the left. One specific streamline terminates at the very front of the nose, labeled with the letter 'X'. The other streamlines curve over or under the wing",
-      "id": "ab-im-0087"
+      "id": "ab-im-0087",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What aerodynamic condition is achieved at the point where the tangent from the origin meets the total drag curve?",
+      "question": "A standard drag graph showing the U-shaped Total Drag curve. A straight line is drawn from the origin (0,0) so that it is tangent to the lowest part of the Total Drag curve. The point of tangency is highlighted. What aerodynamic condition is achieved at the point where the tangent from the origin meets the total drag curve?",
       "explanation": "The lift-to-drag ratio (L/D) is at its maximum where the tangent from the origin touches the drag curve, corresponding to Vmd",
-      "imageDescription": "A standard drag graph showing the U-shaped Total Drag curve. A straight line is drawn from the origin (0,0) so that it is tangent to the lowest part of the Total Drag curve. The point of tangency is highlighted",
       "correctAnswer": 3,
       "options": [
         "Minimum Parasite Drag speed",
@@ -7689,14 +7601,13 @@
         "Minimum Power speed (Vmp)",
         "Maximum Lift-to-Drag ratio speed (Vmd)sl"
       ],
-      "imageAlt": "A drag curve graph (Drag vs Airspeed) showing Induced, Parasite, and Total drag",
-      "type": "image_question",
-      "id": "ab-im-0088"
+      "type": "multiple_choice",
+      "id": "ab-im-0088",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "Which wing design feature, labeled 'Lambda' in this planform view, is used primarily to increase the Critical Mach Number?",
+      "question": "A planform view of a commercial jet wing. A line is drawn perpendicular to the fuselage (lateral axis) and another line follows the leading edge of the wing. The angle between them is labeled 'Lambda'. Which wing design feature, labeled 'Lambda' in this planform view, is used primarily to increase the Critical Mach Number?",
       "explanation": "Wing sweepback increases the Critical Mach number by reducing the effective chordwise component of the airflow",
-      "imageDescription": "A planform view of a commercial jet wing. A line is drawn perpendicular to the fuselage (lateral axis) and another line follows the leading edge of the wing. The angle between them is labeled 'Lambda'",
       "correctAnswer": 1,
       "options": [
         "Aspect Ratio",
@@ -7704,27 +7615,25 @@
         "Dihedral Angle scraps",
         "Taper Ratio"
       ],
-      "type": "image_question",
-      "imageAlt": "Top-down view of an aircraft wing with an angle measured from the lateral axis",
-      "id": "ab-im-0089"
+      "type": "multiple_choice",
+      "id": "ab-im-0089",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "Which aerodynamic phenomenon is illustrated here by the reduction in induced drag as the aircraft flies close to the surface?",
+      "question": "A side-profile diagram of an aircraft flying at a height 'h' above the ground. The height 'h' is shown to be less than the wingspan 'b'. Streamlines behind the wing show flattened vortices compared to free air. Which aerodynamic phenomenon is illustrated here by the reduction in induced drag as the aircraft flies close to the surface?",
       "explanation": "Ground effect occurs within one wingspan of the surface, reducing induced drag due to the restriction of wingtip vortices",
       "correctAnswer": 2,
-      "imageDescription": "A side-profile diagram of an aircraft flying at a height 'h' above the ground. The height 'h' is shown to be less than the wingspan 'b'. Streamlines behind the wing show flattened vortices compared to free air",
-      "type": "image_question",
-      "imageAlt": "An aircraft flying very close to a runway surface with vortex diagrams",
+      "type": "multiple_choice",
       "options": [
         "Dynamic Hydroplaning",
         "Compressibility Error",
         "Ground Effect",
         "Wind Gradient"
       ],
-      "id": "ab-im-0090"
+      "id": "ab-im-0090",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A cross-section of a horizontal stabiliser and elevator. The elevator is deflected upwards. A small tab on the trailing edge of the elevator is deflected downwards. Red arrows indicate the direction of movement",
       "correctAnswer": 0,
       "options": [
         "Balance Tab",
@@ -7732,26 +7641,25 @@
         "Trim Tab",
         "Servo Tab"
       ],
-      "type": "image_question",
-      "imageAlt": "A tail section showing an elevator and a small secondary surface at the trailing edge moving in opposite directions",
-      "question": "What type of control tab is shown in this diagram, designed to reduce the pilot's physical workload by moving opposite to the main surface?",
+      "type": "multiple_choice",
+      "question": "A cross-section of a horizontal stabiliser and elevator. The elevator is deflected upwards. A small tab on the trailing edge of the elevator is deflected downwards. Red arrows indicate the direction of movement. What type of control tab is shown , designed to reduce the pilot's physical workload by moving opposite to the main surface?",
       "explanation": "A Balance Tab moves in the opposite direction to the control surface to reduce the aerodynamic forces required to move the controls",
-      "id": "ab-im-0091"
+      "id": "ab-im-0091",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What wing design feature is illustrated by the reduction in the angle of incidence from the root to the tip?",
+      "question": "A diagram showing two aerofoil sections of the same wing. The root section has a high angle of incidence relative to the longitudinal axis. The tip section has a visibly lower, or even negative, angle of incidence. An arrow points from root to tip. What wing design feature is illustrated by the reduction in the angle of incidence from the root to the tip?",
       "explanation": "Washout is a decrease in the angle of incidence from the wing root to the wing tip to ensure the root stalls before the tip",
       "correctAnswer": 3,
-      "imageDescription": "A diagram showing two aerofoil sections of the same wing. The root section has a high angle of incidence relative to the longitudinal axis. The tip section has a visibly lower, or even negative, angle of incidence. An arrow points from root to tip",
-      "imageAlt": "A perspective view of a wing from the side, looking from root to tip",
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Anhedral",
         "Wing Twist (Wash-in)",
         "Differential Aileron Travel",
         "Wing Twist (Washout)"
       ],
-      "id": "ab-im-0092"
+      "id": "ab-im-0092",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -7760,17 +7668,15 @@
         "Longitudinal Stability",
         "Spiral Instability"
       ],
-      "type": "image_question",
-      "imageAlt": "An aircraft in profile showing a pitch disturbance and a return path",
+      "type": "multiple_choice",
       "correctAnswer": 2,
-      "imageDescription": "A profile view of an aircraft. A curved arrow shows the nose pitching up due to a gust. A second, sequence-style drawing shows the nose subsequently pitching back down toward the original level flight path. Labels indicate the pitch axis",
       "explanation": "Longitudinal stability refers to the aircraft's tendency to return to its original pitch attitude following a disturbance",
-      "question": "This diagram, showing an aircraft returning to its original pitch attitude after a disturbance, illustrates which type of stability?",
-      "id": "ab-im-0093"
+      "question": "A profile view of an aircraft. A curved arrow shows the nose pitching up due to a gust. A second, sequence-style drawing shows the nose subsequently pitching back down toward the original level flight path. Labels indicate the pitch axis. The diagram, showing an aircraft returning to its original pitch attitude after a disturbance, illustrates which type of stability?",
+      "id": "ab-im-0093",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageAlt": "A graph with two curves: Lift Coefficient (Cl) and Drag Coefficient (Cd) plotted against Angle of Attack",
+      "type": "multiple_choice",
       "options": [
         "The stalling angle of attack",
         "The best L/D ratio (optimum angle of attack)",
@@ -7778,25 +7684,24 @@
         "The region of reverse command"
       ],
       "correctAnswer": 1,
-      "imageDescription": "A graph showing Angle of Attack on the horizontal axis. One curve (Cl) rises linearly then curves at the top. Another curve (Cd) starts low and rises exponentially. A third dashed line indicates where the ratio of Cl/Cd is highest",
       "explanation": "The Cl/Cd (Lift to Drag) ratio is at its maximum at the most efficient angle of attack",
-      "question": "In this graph of aerodynamic coefficients, what does the peak of the Cl/Cd ratio represent?",
-      "id": "ab-im-0094"
+      "question": "A graph showing Angle of Attack on the horizontal axis. One curve (Cl) rises linearly then curves at the top. Another curve (Cd) starts low and rises exponentially. A third dashed line indicates where the ratio of Cl/Cd is highest. In this graph of aerodynamic coefficients, what does the peak of the Cl/Cd ratio represent?",
+      "id": "ab-im-0094",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What specific aerodynamic flow pattern is being illustrated at the wingtip in this rear-view diagram?",
+      "question": "A rear-view diagram of a wing. Red arrows show air moving outward under the wing and inward over the top of the wing, creating a circular spiral at the tip rotating from bottom-to-top outboard. What specific aerodynamic flow pattern is being illustrated at the wingtip in this rear-view diagram?",
       "explanation": "Vortices rotate from the high-pressure lower surface to the low-pressure upper surface around the wingtip",
-      "imageDescription": "A rear-view diagram of a wing. Red arrows show air moving outward under the wing and inward over the top of the wing, creating a circular spiral at the tip rotating from bottom-to-top outboard",
       "correctAnswer": 0,
-      "imageAlt": "A rear view of a wing showing circular airflow at the tips",
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Wingtip Vortices",
         "Spanwise flow separation",
         "Downwash interference",
         "Propeller slipstream"
       ],
-      "id": "ab-im-0095"
+      "id": "ab-im-0095",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -7805,13 +7710,12 @@
         "Va (Design Manoeuvring Speed)sl",
         "Vle (Landing Gear Extended Speed)"
       ],
-      "imageAlt": "An Airspeed Indicator with many markings and a single red line at the high end",
-      "type": "image_question",
-      "imageDescription": "A close-up of an Airspeed Indicator. Various markings are visible: a white arc, a green arc, and a yellow arc. At the very end of the yellow arc, at 250 knots, there is a distinct red radial line. An arrow points to this line",
+      "type": "multiple_choice",
       "correctAnswer": 1,
       "explanation": "Vne (Never Exceed Speed) is marked by a red radial line on the ASI",
-      "question": "On this Airspeed Indicator, what speed limit is defined by the red radial line?",
-      "id": "ab-im-0096"
+      "question": "A close-up of an Airspeed Indicator. Various markings are visible: a white arc, a green arc, and a yellow arc. At the very end of the yellow arc, at 250 knots, there is a distinct red radial line. An arrow points to this line. On this Airspeed Indicator, what speed limit is defined by the red radial line?",
+      "id": "ab-im-0096",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "The chord line is a straight line connecting the leading and trailing edges of an aerofoil, whereas the mean camber line follows the curvature",
@@ -7821,12 +7725,11 @@
         "Thickness-to-chord ratio",
         "Angle of attack line"
       ],
-      "imageDescription": "A diagram of an aerofoil profile. There is a straight dashed line connecting the leading edge directly to the trailing edge, labeled 'A'. There is a curved line equidistant between the upper and lower surfaces, labeled 'B'",
-      "type": "image_question",
-      "question": "In this diagram of an aerofoil profile, what is the name of the straight line labeled 'A' that connects the leading edge to the trailing edge?",
+      "type": "multiple_choice",
+      "question": "A diagram of an aerofoil profile. There is a straight dashed line connecting the leading edge directly to the trailing edge, labeled 'A'. There is a curved line equidistant between the upper and lower surfaces, labeled 'B'. Of an aerofoil profile, what is the name of the straight line labeled 'A' that connects the leading edge to the trailing edge?",
       "correctAnswer": 1,
-      "imageAlt": "Cross-section of an aerofoil with a straight line and a curved line passing through it",
-      "id": "ab-im-0097"
+      "id": "ab-im-0097",
+      "__rewritten_from_image__": true
     }
   ],
   "mocks": [

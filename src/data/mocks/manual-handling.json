@@ -520,7 +520,7 @@
         "Provide a list of local doctors for injury treatment",
         "Assess the risk and take steps to reduce it as far as possible"
       ],
-      "question": "If a manual handling task cannot be avoided, what is the employer’s next legal duty under MHOR 1992?",
+      "question": "If a manual handling task cannot be avoided, what is the employer\u2019s next legal duty under MHOR 1992?",
       "explanation": "Under MHOR 1992, if a risk cannot be eliminated, the employer must assess the risk and then take steps to reduce it",
       "id": "mh-mc-0040"
     },
@@ -2086,7 +2086,7 @@
     },
     {
       "correctAnswer": 3,
-      "question": "What is the main benefit of holding a load close to the body’s centre of gravity?",
+      "question": "What is the main benefit of holding a load close to the body\u2019s centre of gravity?",
       "options": [
         "It prevents the load from getting dirty",
         "It allows the worker to see over the top of the load more easily",
@@ -3835,7 +3835,7 @@
       ],
       "correctAnswer": 0,
       "type": "multiple_choice",
-      "explanation": "Bending the knees (squatting) allows the strong leg muscles to do the work, بينما keeping the back straight protects the spinal discs",
+      "explanation": "Bending the knees (squatting) allows the strong leg muscles to do the work, \u0628\u064a\u0646\u0645\u0627 keeping the back straight protects the spinal discs",
       "question": "Which of the following is a recommended technique for a stable and safe lift?",
       "id": "mh-mc-0295"
     },
@@ -3923,10 +3923,10 @@
       "explanation": "The 1992 Regulations set out a clear hierarchy: Avoid, Assess, and then Reduce the risk of injury",
       "type": "multiple_choice",
       "options": [
-        "Avoid – Assess – Reduce",
-        "Assess – Lift – Record",
-        "Ignore – Avoid – Assess",
-        "Record – Reduce – React"
+        "Avoid \u2013 Assess \u2013 Reduce",
+        "Assess \u2013 Lift \u2013 Record",
+        "Ignore \u2013 Avoid \u2013 Assess",
+        "Record \u2013 Reduce \u2013 React"
       ],
       "id": "mh-mc-0302"
     },
@@ -5290,7 +5290,7 @@
         "Acute trauma",
         "Reflexive impact"
       ],
-      "explanation": "Long-term MSDs often stem from 'cumulative' strain—small, repeated injuries over time—rather than just one single heavy lift",
+      "explanation": "Long-term MSDs often stem from 'cumulative' strain\u2014small, repeated injuries over time\u2014rather than just one single heavy lift",
       "correctAnswer": 1,
       "type": "multiple_choice",
       "id": "mh-mc-0407"
@@ -5492,8 +5492,8 @@
     },
     {
       "explanation": "Bending at the waist with straight legs puts significant pressure on the lower back (lumbar spine), increasing the risk of a disc injury",
-      "type": "image_question",
-      "question": "What is the primary safety risk shown in this lifting posture?",
+      "type": "multiple_choice",
+      "question": "An illustration of a worker reaching down to pick up a cardboard box from the ground. Their legs are completely straight, their back is arched/curved, and their head is looking down. What is the primary safety risk shown in this lifting posture?",
       "correctAnswer": 2,
       "options": [
         "Bending the knees too much",
@@ -5501,13 +5501,12 @@
         "Bending from the waist with straight legs",
         "Wearing incorrect footwear"
       ],
-      "imageDescription": "An illustration of a worker reaching down to pick up a cardboard box from the ground. Their legs are completely straight, their back is arched/curved, and their head is looking down",
-      "imageAlt": "A person leaning over with straight legs to pick up a box from the floor",
-      "id": "mh-im-0001"
+      "id": "mh-im-0001",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "A trolley is a mechanical aid that reduces the need for manual force, which falls under the 'E' (Equipment) or 'L' (Load) changes in the TILE/LITE assessment",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 0,
       "options": [
         "Use of a mechanical aid to reduce manual effort",
@@ -5515,10 +5514,9 @@
         "Improving the lighting in the work area",
         "Twisting the torso while moving"
       ],
-      "imageDescription": "A photo of a worker in a high-visibility vest using a blue metal sack truck (dolly) to transport a stack of three brown boxes across a flat warehouse floor",
-      "imageAlt": "A warehouse worker using a sack truck to move three heavy boxes",
-      "question": "How is this worker applying the TILE/LITE principles to make the task safer?",
-      "id": "mh-im-0002"
+      "question": "A photo of a worker in a high-visibility vest using a blue metal sack truck (dolly) to transport a stack of three brown boxes across a flat warehouse floor. How is this worker applying the TILE/LITE principles to make the task safer?",
+      "id": "mh-im-0002",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 1,
@@ -5528,17 +5526,14 @@
         "Keeping the load at waist height",
         "Wearing gloves for better grip"
       ],
-      "imageDescription": "A person standing with their feet pointing forward but their torso rotated 90 degrees to the right to place a plastic crate onto a mid-height shelf",
-      "imageAlt": "A worker holding a crate and twisting their upper body to place it on a side shelf",
-      "question": "Which poor manual handling habit is being demonstrated here?",
+      "question": "A person standing with their feet pointing forward but their torso rotated 90 degrees to the right to place a plastic crate onto a mid-height shelf. Which poor manual handling habit is being demonstrated here?",
       "explanation": "Twisting the spine while holding a load is a major cause of back injury; the worker should move their feet to turn instead",
-      "type": "image_question",
-      "id": "mh-im-0003"
+      "type": "multiple_choice",
+      "id": "mh-im-0003",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "Why are the feet positioned this way before starting the lift?",
-      "imageDescription": "A top-down view showing a person's feet in safety boots positioned on either side of a small box, with one foot slightly in front of the other for balance",
-      "imageAlt": "Close up of a worker's feet positioned around a box on the floor",
+      "question": "A top-down view showing a person's feet in safety boots positioned on either side of a small box, with one foot slightly in front of the other for balance. Why are the feet positioned this way before starting the lift?",
       "correctAnswer": 3,
       "options": [
         "To prepare for a fast run",
@@ -5546,16 +5541,15 @@
         "To stretch the leg muscles",
         "To provide a stable and balanced base for the lift"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "Spreading the feet provides a stable base and better balance, which is a fundamental step in safe lifting",
-      "id": "mh-im-0004"
+      "id": "mh-im-0004",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "Lifting or reaching above shoulder height increases strain on the upper back and neck; loads should ideally be kept at waist height",
-      "question": "In this TILE assessment, what is the main 'Task' hazard?",
-      "imageDescription": "A worker reaching their arms fully above their head to grasp a box on a shelf that is higher than their head height. They are on their tiptoes",
-      "imageAlt": "A person reaching up high to pull a heavy box off a top shelf",
+      "question": "A worker reaching their arms fully above their head to grasp a box on a shelf that is higher than their head height. They are on their tiptoes. In this TILE assessment, what is the main 'Task' hazard?",
       "correctAnswer": 1,
       "options": [
         "The load is too light",
@@ -5563,10 +5557,11 @@
         "The worker is using a step ladder",
         "The area is too cluttered"
       ],
-      "id": "mh-im-0005"
+      "id": "mh-im-0005",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "When handling a load like the one shown, where should the heaviest side be positioned?",
+      "question": "An illustration of a box where one side is marked with a heavy weight icon. A worker is shown holding the box with that heavy side furthest away from their chest. When handling a load like the one shown, where should the heaviest side be positioned?",
       "correctAnswer": 2,
       "options": [
         "Hold it at arm's length",
@@ -5574,14 +5569,13 @@
         "Keep the heaviest side closest to the body",
         "Always lift it with one hand"
       ],
-      "imageDescription": "An illustration of a box where one side is marked with a heavy weight icon. A worker is shown holding the box with that heavy side furthest away from their chest",
-      "imageAlt": "A box with a heavy weight symbol on one side being held by a worker",
       "explanation": "The heaviest side of a load should always be placed closest to the body to keep the centre of gravity stable",
-      "type": "image_question",
-      "id": "mh-im-0006"
+      "type": "multiple_choice",
+      "id": "mh-im-0006",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "Which part of the TILE/LITE acronym relates to the worker's personal ability to lift this specific load?",
+      "question": "A small-framed worker looking up at a massive wooden crate that is clearly too large and heavy for one person to lift safely. Which part of the TILE/LITE acronym relates to the worker's personal ability to lift this specific load?",
       "correctAnswer": 0,
       "options": [
         "Individual Capability",
@@ -5589,17 +5583,14 @@
         "Load Characteristics",
         "Task Requirements"
       ],
-      "imageDescription": "A small-framed worker looking up at a massive wooden crate that is clearly too large and heavy for one person to lift safely",
-      "imageAlt": "A worker looking at a very large crate and appearing unsure or strained",
       "explanation": "The 'Individual Capability' part of TILE considers personal factors like pregnancy, health conditions, or physical strength",
-      "type": "image_question",
-      "id": "mh-im-0007"
+      "type": "multiple_choice",
+      "id": "mh-im-0007",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "When two people lift together, they should ideally be of similar height and must communicate clearly to coordinate the move",
-      "imageAlt": "Two people of different heights trying to carry a long table",
-      "imageDescription": "A photo of two workers carrying a long conference table. One worker is much taller than the other, causing the table to tilt and the weight to be unevenly distributed",
       "options": [
         "They are moving too fast",
         "There is a significant height difference causing an uneven load",
@@ -5607,13 +5598,12 @@
         "The table is being held by the legs"
       ],
       "correctAnswer": 1,
-      "question": "What is the main risk factor in this two-person lift?",
-      "id": "mh-im-0008"
+      "question": "A photo of two workers carrying a long conference table. One worker is much taller than the other, causing the table to tilt and the weight to be unevenly distributed. What is the main risk factor in this two-person lift?",
+      "id": "mh-im-0008",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "Looking at this 'Environment', what is the most immediate danger for manual handling?",
-      "imageAlt": "A corridor with boxes and a stray cable on the floor",
-      "imageDescription": "A photo of a narrow hallway intended for moving stock, but there are empty pallets, loose wires, and a small spill on the floor",
+      "question": "A photo of a narrow hallway intended for moving stock, but there are empty pallets, loose wires, and a small spill on the floor. Looking at this 'Environment', what is the most immediate danger for manual handling?",
       "options": [
         "The lighting is too bright",
         "The walls are the wrong colour",
@@ -5621,14 +5611,13 @@
         "The ceiling is too high"
       ],
       "correctAnswer": 2,
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "Walking paths must be clear of obstacles to prevent slips, trips, and falls while carrying loads",
-      "id": "mh-im-0009"
+      "id": "mh-im-0009",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "Why is this grip considered unsafe for manual handling?",
-      "imageAlt": "A hand gripping the corner of a box with just the fingertips",
-      "imageDescription": "A close-up illustration of a hand attempting to lift a box using only the tips of the fingers rather than placing the palm underneath or around the corner",
+      "question": "A close-up illustration of a hand attempting to lift a box using only the tips of the fingers rather than placing the palm underneath or around the corner. Why is this grip considered unsafe for manual handling?",
       "options": [
         "It is the strongest way to grip",
         "It prevents the box from getting dirty",
@@ -5636,12 +5625,13 @@
         "It is a 'pincer' grip which is weak and increases the risk of dropping the load"
       ],
       "correctAnswer": 3,
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "Using the palms and the roots of the fingers (a 'hook' grip) is more secure and less straining than using just the fingertips",
-      "id": "mh-im-0010"
+      "id": "mh-im-0010",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What positive technique is the worker demonstrating in this image?",
+      "question": "A worker in a warehouse with knees bent, back straight, and arms tucked in, ready to lift a parcel from a low pallet. What positive technique is the worker demonstrating ?",
       "correctAnswer": 0,
       "options": [
         "Using the strong leg muscles to lift",
@@ -5649,17 +5639,14 @@
         "Keeping the load away from the body",
         "Closing the eyes to concentrate"
       ],
-      "imageDescription": "A worker in a warehouse with knees bent, back straight, and arms tucked in, ready to lift a parcel from a low pallet",
-      "imageAlt": "A worker in a squatting position with a straight back ready to lift a package",
       "explanation": "Bending the knees (squatting) allows the powerful leg muscles to do the work rather than the weaker muscles of the back",
-      "type": "image_question",
-      "id": "mh-im-0011"
+      "type": "multiple_choice",
+      "id": "mh-im-0011",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "Pushing is generally safer than pulling because it allows the worker to use their body weight and see clearly where they are going",
-      "imageAlt": "An arrow pointing towards a person pushing a trolley, and an 'X' over a person pulling it",
-      "imageDescription": "A diagram comparing two methods of moving a tall roll cage: one showing a person pulling it behind them, the other showing a person pushing it in front",
       "options": [
         "Pulling is always better",
         "There is no difference between pushing and pulling",
@@ -5667,28 +5654,26 @@
         "You should only move a load by pulling it sideways"
       ],
       "correctAnswer": 2,
-      "question": "According to HSE guidelines for using trolleys or roll cages, which is true?",
-      "id": "mh-im-0012"
+      "question": "A diagram comparing two methods of moving a tall roll cage: one showing a person pulling it behind them, the other showing a person pushing it in front. According to HSE guidelines for using trolleys or roll cages, which is true?",
+      "id": "mh-im-0012",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A person in a warehouse setting reaching down to pick up a cardboard box from the floor. Their legs are completely straight, and their spine is curved into a 'C' shape as they reach for the box",
       "explanation": "Bending at the waist with straight legs puts extreme pressure on the lower vertebrae; the worker should bend their knees and keep their back straight",
       "correctAnswer": 1,
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "The weight of the box is too heavy",
         "The worker is bending from the waist instead of the knees",
         "The worker is wearing incorrect footwear",
         "The worker is using a power grip"
       ],
-      "question": "What is the primary technical error in the spinal alignment of the worker shown?",
-      "imageAlt": "A worker leaning over a box with straight legs and a rounded back",
-      "id": "mh-im-0013"
+      "question": "A person in a warehouse setting reaching down to pick up a cardboard box from the floor. Their legs are completely straight, and their spine is curved into a 'C' shape as they reach for the box. What is the primary technical error in the spinal alignment of the worker shown?",
+      "id": "mh-im-0013",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A side view of a worker who has just lifted a plastic crate. Their feet are pointing forward, but their shoulders and torso are twisted 90 degrees to the left to place the crate on a bench",
       "explanation": "Twisting the torso while holding a load (as seen here) is a major cause of disc injury; the worker should move their feet to turn instead",
-      "imageAlt": "A worker holding a crate while their torso is twisted away from their feet",
       "correctAnswer": 0,
       "options": [
         "Twisting while carrying a load",
@@ -5696,15 +5681,15 @@
         "Holding the load too close to the body",
         "The load is visually obstructing the view"
       ],
-      "type": "image_question",
-      "question": "What specific risk factor for Musculoskeletal Disorders (MSDs) is demonstrated in this image?",
-      "id": "mh-im-0014"
+      "type": "multiple_choice",
+      "question": "A side view of a worker who has just lifted a plastic crate. Their feet are pointing forward, but their shoulders and torso are twisted 90 degrees to the left to place the crate on a bench. What specific risk factor for Musculoskeletal Disorders (MSDs) is demonstrated ?",
+      "id": "mh-im-0014",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "Keeping a load close to the center of gravity reduces the strain on the back muscles and spine",
-      "imageDescription": "A worker holding a medium-sized box with their arms fully extended horizontally, keeping the box about 20 inches away from their torso",
-      "question": "Why is the arm position shown in this image considered high-risk?",
-      "type": "image_question",
+      "question": "A worker holding a medium-sized box with their arms fully extended horizontally, keeping the box about 20 inches away from their torso. Why is the arm position shown considered high-risk?",
+      "type": "multiple_choice",
       "options": [
         "It makes the load feel lighter over time",
         "It improves visibility of the floor",
@@ -5712,28 +5697,26 @@
         "It prevents the box from slipping"
       ],
       "correctAnswer": 2,
-      "imageAlt": "A worker holding a heavy box far away from their chest",
-      "id": "mh-im-0015"
+      "id": "mh-im-0015",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A worker looking at a large, oddly shaped wooden crate",
       "correctAnswer": 3,
-      "question": "Which part of the TILE assessment is the worker focusing on by checking the stability and weight of this crate?",
+      "question": "An employee standing in front of a large, irregular wooden crate that has no handles and appears to have shifted contents. They are assessing it before lifting. Which part of the TILE assessment is the worker focusing on by checking the stability and weight of this crate?",
       "options": [
         "Task",
         "Individual Capability",
         "Environment",
         "Load"
       ],
-      "type": "image_question",
-      "imageDescription": "An employee standing in front of a large, irregular wooden crate that has no handles and appears to have shifted contents. They are assessing it before lifting",
+      "type": "multiple_choice",
       "explanation": "The 'L' in TILE stands for Load, which includes checking if it is heavy, bulky, sharp, or unstable",
-      "id": "mh-im-0016"
+      "id": "mh-im-0016",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A top-down view of a worker's feet placed side-by-side",
-      "question": "In terms of stability, what is wrong with the foot positioning shown here?",
-      "type": "image_question",
+      "question": "A bird's-eye view illustration showing a worker's feet placed perfectly parallel and touching each other while they prepare to lift a heavy parcel. In terms of stability, what is wrong with the foot positioning ?",
+      "type": "multiple_choice",
       "options": [
         "The feet are too far apart",
         "The feet are too close together for a stable base",
@@ -5742,38 +5725,36 @@
       ],
       "correctAnswer": 1,
       "explanation": "Manual handling guidelines suggest a stable base with one foot slightly forward to maintain balance throughout the lift",
-      "imageDescription": "A bird's-eye view illustration showing a worker's feet placed perfectly parallel and touching each other while they prepare to lift a heavy parcel",
-      "id": "mh-im-0017"
+      "id": "mh-im-0017",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "Resting a load on a mid-way point like a table or 'staging' area allows the worker to change their grip and reduce the duration of the strain",
-      "imageDescription": "A worker carrying a box across a large room is seen pausing to place the box on a waist-high table before picking it up again to continue",
-      "imageAlt": "A worker placing a box on a waist-high bench halfway to its destination",
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "It is a waste of time and increases effort",
         "It is only necessary if the worker is tired",
         "It is a recommended 'staging' technique for long distances",
         "It is a requirement of the PPE regulations"
       ],
-      "question": "What safe handling principle is being demonstrated by using the bench as shown?",
+      "question": "A worker carrying a box across a large room is seen pausing to place the box on a waist-high table before picking it up again to continue. What safe handling principle is being demonstrated by using the bench as shown?",
       "correctAnswer": 2,
-      "id": "mh-im-0018"
+      "id": "mh-im-0018",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 0,
-      "question": "When using the equipment shown, why is the worker's choice to push rather than pull correct?",
-      "type": "image_question",
+      "question": "A worker in a corridor using their body weight to lean into a loaded flatbed trolley, pushing it forward with both hands on the handle. When using the equipment shown, why is the worker's choice to push rather than pull correct?",
+      "type": "multiple_choice",
       "options": [
         "Pushing is generally safer than pulling",
         "Pulling is always preferred for better control",
         "Neither, mechanical aids should only be used by two people",
         "Pushing is only safe if the floor is carpeted"
       ],
-      "imageAlt": "A worker pushing a heavy flatbed trolley",
-      "imageDescription": "A worker in a corridor using their body weight to lean into a loaded flatbed trolley, pushing it forward with both hands on the handle",
       "explanation": "Pushing is generally safer than pulling because it uses body weight and leg power more effectively while providing better visibility",
-      "id": "mh-im-0019"
+      "id": "mh-im-0019",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 3,
@@ -5783,47 +5764,43 @@
         "A team lift is never allowed for metal objects",
         "One person must take the lead to coordinate the lift"
       ],
-      "type": "image_question",
-      "question": "What is a critical requirement for safety during the two-person lift shown?",
-      "imageAlt": "Two workers lifting a long heavy pipe",
-      "imageDescription": "Two workers at opposite ends of a long, heavy metal pipe. They are looking at each other, appearing ready to lift at the same time",
+      "type": "multiple_choice",
+      "question": "Two workers at opposite ends of a long, heavy metal pipe. They are looking at each other, appearing ready to lift at the same time. What is a critical requirement for safety during the two-person lift shown?",
       "explanation": "In a team lift, one person must take the lead to coordinate timing, ensuring the load remains level and both workers move together",
-      "id": "mh-im-0020"
+      "id": "mh-im-0020",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A worker is squeezed into a narrow gap between high shelves. There is bubble wrap on the floor and very dim lighting. They are reaching for a box",
       "explanation": "The 'Environment' part of TILE covers external factors like floor conditions, lighting, and workspace constraints",
-      "imageAlt": "A worker trying to lift a box in a very cramped, cluttered storeroom",
       "correctAnswer": 0,
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Environment",
         "Individual Capability",
         "Load",
         "Task"
       ],
-      "question": "Which TILE factor is most compromised by the cluttered floor and tight space in this image?",
-      "id": "mh-im-0021"
+      "question": "A worker is squeezed into a narrow gap between high shelves. There is bubble wrap on the floor and very dim lighting. They are reaching for a box. Which TILE factor is most compromised by the cluttered floor and tight space ?",
+      "id": "mh-im-0021",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 1,
-      "question": "How does using the equipment in this image improve the safety of the 'Task'?",
-      "type": "image_question",
+      "question": "A worker is using a small, sturdy two-step platform to retrieve a box from a shelf that is roughly 7 feet high. How does using the equipment improve the safety of the 'Task'?",
+      "type": "multiple_choice",
       "options": [
         "It makes the task more dangerous due to falling risks",
         "It brings the load into a safer 'power zone' for the arms and back",
         "It is only necessary if the box is over 25kg",
         "Step stools are banned under manual handling law"
       ],
-      "imageAlt": "A worker standing on a step stool to reach a high shelf",
-      "imageDescription": "A worker is using a small, sturdy two-step platform to retrieve a box from a shelf that is roughly 7 feet high",
       "explanation": "Lifting from a shelf above shoulder height increases the risk of injury; using steps or a platform brings the 'Task' into a safer zone",
-      "id": "mh-im-0022"
+      "id": "mh-im-0022",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A close-up of a hand firmly gripping a box handle with the whole palm",
-      "question": "Which secure gripping technique is being demonstrated in this close-up?",
-      "type": "image_question",
+      "question": "A close-up photographic view of a worker's hand wrapped fully around the handle of a plastic tote, with the palm making full contact and the thumb wrapped around. Which secure gripping technique is being demonstrated in this close-up?",
+      "type": "multiple_choice",
       "options": [
         "Pinch grip",
         "Hook grip",
@@ -5832,98 +5809,92 @@
       ],
       "correctAnswer": 2,
       "explanation": "The 'Power Grip' uses the whole palm and all fingers, which is much more secure than a 'Hook' or fingertip grip",
-      "imageDescription": "A close-up photographic view of a worker's hand wrapped fully around the handle of a plastic tote, with the palm making full contact and the thumb wrapped around",
-      "id": "mh-im-0023"
+      "id": "mh-im-0023",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "An illustration of a person in a squatting position ready to lift",
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Legs (Quadriceps and Glutes)",
         "Lower back (Lumbar spine)",
         "Upper back (Trapezius)",
         "Forearms and wrists"
       ],
-      "question": "Which muscle group is primarily intended to provide the 'drive' for the lift shown in this posture?",
+      "question": "An anatomical illustration showing a person in a deep squat next to a box. Their back is straight, and their thighs are parallel to the floor, ready to drive upward. Which muscle group is primarily intended to provide the 'drive' for the lift shown in this posture?",
       "correctAnswer": 0,
       "explanation": "Bending the knees into a squat or semi-squat allows the strong leg muscles to do the work rather than the weaker muscles of the back",
-      "imageDescription": "An anatomical illustration showing a person in a deep squat next to a box. Their back is straight, and their thighs are parallel to the floor, ready to drive upward",
-      "id": "mh-im-0024"
+      "id": "mh-im-0024",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "Resting the load on the thigh or a stable surface during a complex lift allows the worker to adjust their grip and regain control",
-      "question": "What is the benefit of the 'resting' technique shown in this image?",
+      "question": "A person in a warehouse setting mid-lift, resting a large cardboard box on a sturdy workbench before continuing the lift to a higher shelf. What is the benefit of the 'resting' technique shown ?",
       "options": [
         "It shows the worker is too weak for the task",
         "It allows the worker to adjust their grip safely",
         "It is a waste of time and increases fatigue",
         "It increases the risk of dropping the load"
       ],
-      "imageAlt": "A worker pauses a lift by resting the box on a waist-high table edge",
       "correctAnswer": 1,
-      "imageDescription": "A person in a warehouse setting mid-lift, resting a large cardboard box on a sturdy workbench before continuing the lift to a higher shelf",
-      "id": "mh-im-0025"
+      "id": "mh-im-0025",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "Holding a load away from the body significantly increases the pressure on the lower spine, making the load feel much heavier",
-      "question": "Why is the carrying position shown in this image considered a high-risk movement?",
+      "question": "A side view of a worker holding a plastic crate with straight arms, creating a large gap between the load and their torso. Why is the carrying position shown considered a high-risk movement?",
       "options": [
         "It increases the strain on the lower back",
         "It makes the load easier to balance",
         "It improves the worker's visibility of the floor",
         "It is the recommended way to carry light loads"
       ],
-      "imageDescription": "A side view of a worker holding a plastic crate with straight arms, creating a large gap between the load and their torso",
       "correctAnswer": 0,
-      "imageAlt": "A worker holding a crate with arms fully extended away from their chest",
-      "id": "mh-im-0026"
+      "id": "mh-im-0026",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 2,
-      "imageAlt": "A worker bent double at the waist to pick up a parcel from the floor",
-      "imageDescription": "A worker with straight legs and a rounded back reaching down to the floor to pick up a small parcel, showing a 'stooping' posture",
       "options": [
         "Leg muscle fatigue",
         "Over-stretching the hamstrings",
         "Increased pressure on spinal discs",
         "Improved lifting speed"
       ],
-      "question": "What is the primary physical risk associated with the 'stooping' posture shown here?",
+      "question": "A worker with straight legs and a rounded back reaching down to the floor to pick up a small parcel, showing a 'stooping' posture. What is the primary physical risk associated with the 'stooping' posture ?",
       "explanation": "Bending from the waist with straight legs puts extreme tension on the spinal discs; the correct method is to use the legs",
-      "type": "image_question",
-      "id": "mh-im-0027"
+      "type": "multiple_choice",
+      "id": "mh-im-0027",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "Which TILE factor is specifically highlighted in this scenario?",
+      "question": "A pregnant worker in a retail environment standing in front of a heavy-looking box, considering whether to lift it. Which TILE factor is specifically highlighted in this scenario?",
       "explanation": "The 'I' in TILE stands for the Individual, which covers personal factors like health, age, fitness, or pregnancy",
-      "type": "image_question",
-      "imageAlt": "A pregnant employee looking at a heavy box on a shelf",
+      "type": "multiple_choice",
       "correctAnswer": 3,
-      "imageDescription": "A pregnant worker in a retail environment standing in front of a heavy-looking box, considering whether to lift it",
       "options": [
         "Task (T)",
         "Environment (E)",
         "Load (L)",
         "Individual (I)"
       ],
-      "id": "mh-im-0028"
+      "id": "mh-im-0028",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What is the most dangerous element of the lifting technique shown in this image?",
+      "question": "A top-down view showing a worker's feet pointing forward while their torso is twisted 45 degrees to the side to pick up a sack of flour. What is the most dangerous element of the lifting technique shown ?",
       "explanation": "Lifting a load while the torso is twisted puts uneven stress on the back and is a frequent cause of injury",
-      "type": "image_question",
-      "imageAlt": "A worker lifting a sack while their feet face one way and their shoulders face another",
+      "type": "multiple_choice",
       "correctAnswer": 1,
-      "imageDescription": "A top-down view showing a worker's feet pointing forward while their torso is twisted 45 degrees to the side to pick up a sack of flour",
       "options": [
         "Low center of gravity",
         "Twisting of the spine under load",
         "Incorrect footwear for the floor type",
         "Lack of mechanical assistance"
       ],
-      "id": "mh-im-0029"
+      "id": "mh-im-0029",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -5932,18 +5903,15 @@
         "It requires less grip strength on the handle",
         "It prevents the wheels from locking up"
       ],
-      "imageDescription": "A warehouse worker using a manual pallet truck, leaning forward to push the load across a flat concrete floor",
       "correctAnswer": 0,
-      "imageAlt": "A worker pushing a pallet truck rather than pulling it behind them",
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "Pushing is generally safer than pulling as it allows the worker to use their body weight and see where they are going more easily",
-      "question": "According to safety guidance, why is pushing the equipment shown usually preferred over pulling?",
-      "id": "mh-im-0030"
+      "question": "A warehouse worker using a manual pallet truck, leaning forward to push the load across a flat concrete floor. According to safety guidance, why is pushing the equipment shown usually preferred over pulling?",
+      "id": "mh-im-0030",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "An overhead view of a worker pivoting their feet to turn with a load",
       "correctAnswer": 2,
-      "imageDescription": "A series of three photos showing a worker turning 90 degrees with a box by moving their feet in small steps, rather than twisting at the waist",
       "options": [
         "Twisting the waist is faster than moving the feet",
         "Legs should be crossed during the turn",
@@ -5951,9 +5919,10 @@
         "The load should be swung to create momentum"
       ],
       "explanation": "Twisting the body while moving is a major risk; turning should be done by moving the feet to keep the spine aligned",
-      "question": "What correct principle for turning with a load is shown in these images?",
-      "type": "image_question",
-      "id": "mh-im-0031"
+      "question": "A series of three photos showing a worker turning 90 degrees with a box by moving their feet in small steps, rather than twisting at the waist. What correct principle for turning with a load is shown in these images?",
+      "type": "multiple_choice",
+      "id": "mh-im-0031",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -5962,47 +5931,44 @@
         "Environment (E)",
         "Task (T)"
       ],
-      "imageDescription": "A worker leaning into a dark, shadowy corner of a stockroom to retrieve a heavy box, with a visible lack of overhead lighting",
-      "imageAlt": "A worker attempting to lift a box in a very dimly lit storeroom",
       "correctAnswer": 2,
-      "type": "image_question",
-      "question": "Which element of the TILE assessment is most obviously neglected in this image?",
+      "type": "multiple_choice",
+      "question": "A worker leaning into a dark, shadowy corner of a stockroom to retrieve a heavy box, with a visible lack of overhead lighting. Which element of the TILE assessment is most obviously neglected ?",
       "explanation": "The Environment (E) in TILE covers external factors like lighting, temperature, space constraints, and floor conditions",
-      "id": "mh-im-0032"
+      "id": "mh-im-0032",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "Which secure handling technique is being shown in this close-up of the worker's hands?",
+      "question": "A detailed close-up shot of a person's hands gripping the bottom corners of a cardboard box, with palms in contact and fingers wrapped under. Which secure handling technique is being shown in this close-up of the worker's hands?",
       "explanation": "The palm grip (hook grip) is more secure and powerful than using the fingertips, which can easily slip",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 1,
-      "imageAlt": "Close up of hands grasping a box with the fingers and palms tucked underneath",
-      "imageDescription": "A detailed close-up shot of a person's hands gripping the bottom corners of a cardboard box, with palms in contact and fingers wrapped under",
       "options": [
         "A fingertip-only grip for better feel",
         "A full palm grip for maximum security",
         "Gripping by the packaging straps only",
         "Holding the box by the top corners only"
       ],
-      "id": "mh-im-0033"
+      "id": "mh-im-0033",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What is the primary concern regarding the foot positioning in this image?",
+      "question": "A person lifting a heavy bucket of liquid, with their feet positioned touching each other side-by-side. What is the primary concern regarding the foot positioning ?",
       "explanation": "A wide, stable base with feet slightly apart (one foot slightly forward) provides the most balance during a lift",
-      "type": "image_question",
-      "imageDescription": "A person lifting a heavy bucket of liquid, with their feet positioned touching each other side-by-side",
+      "type": "multiple_choice",
       "correctAnswer": 3,
-      "imageAlt": "A worker standing with feet very close together while lifting a heavy bucket",
       "options": [
         "The feet are too far apart",
         "The worker is wearing the wrong shoes",
         "One foot should be on a raised platform",
         "The narrow base of support makes the worker unstable"
       ],
-      "id": "mh-im-0034"
+      "id": "mh-im-0034",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "question": "In this TILE assessment, what is the main hazard related to the 'Task'?",
+      "type": "multiple_choice",
+      "question": "A person reaching up to a shelf that is significantly higher than their head height to grab a medium-sized box. In this TILE assessment, what is the main hazard related to the 'Task'?",
       "explanation": "Loads stored above shoulder height require the arms to be raised, which increases the strain on the neck and shoulders",
       "options": [
         "The weight of the load is too light",
@@ -6010,10 +5976,9 @@
         "The box is the wrong color for the environment",
         "The worker is not using gloves"
       ],
-      "imageDescription": "A person reaching up to a shelf that is significantly higher than their head height to grab a medium-sized box",
-      "imageAlt": "A worker reaching above their head to pull a box down from a high shelf",
       "correctAnswer": 1,
-      "id": "mh-im-0035"
+      "id": "mh-im-0035",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -6023,76 +5988,69 @@
         "The liquid is a hazardous chemical hazard"
       ],
       "correctAnswer": 0,
-      "imageAlt": "A worker carrying a half-full large container of water",
-      "imageDescription": "An image of a worker carrying a transparent 20-litre container half-filled with blue liquid, showing the liquid sloshing to one side",
-      "type": "image_question",
-      "question": "Why does the 'Load' in this image present a specific manual handling risk?",
+      "type": "multiple_choice",
+      "question": "An image of a worker carrying a transparent 20-litre container half-filled with blue liquid, showing the liquid sloshing to one side. Why does the 'Load' present a specific manual handling risk?",
       "explanation": "Standard risk assessments assume a 'stable' load; liquid sloshing around makes the load unpredictable and harder to balance",
-      "id": "mh-im-0036"
+      "id": "mh-im-0036",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A worker in a warehouse environment is lifting a large, square cardboard box. Their arms are stretched out straight in front of them, creating a large gap between the box and their torso",
       "options": [
         "The worker's back is straight",
         "The load is too far from the body",
         "The box is being held by the corners",
         "The worker is wearing safety boots"
       ],
-      "imageAlt": "A person lifting a cardboard box with their arms fully extended away from their chest",
-      "question": "Based on safe lifting principles, why is the posture in this image hazardous?",
+      "question": "A worker in a warehouse environment is lifting a large, square cardboard box. Their arms are stretched out straight in front of them, creating a large gap between the box and their torso. Based on safe lifting principles, why is the posture hazardous?",
       "correctAnswer": 1,
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "Lifting with the load held far from the body significantly increases the strain on the lower back. Loads should be kept close to the trunk",
-      "id": "mh-im-0037"
+      "id": "mh-im-0037",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "The 'E' in the TILE assessment stands for Environment, which includes factors like lighting, floor conditions, and temperature",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 2,
-      "question": "Which element of the TILE assessment is most immediately concerning in this scene?",
-      "imageAlt": "A worker carrying a crate through a dimly lit area with a wet, slippery floor",
-      "imageDescription": "A person is carrying a blue plastic crate through a corridor. There are visible puddles of liquid on the floor and the overhead lighting is flickering and dim",
+      "question": "A person is carrying a blue plastic crate through a corridor. There are visible puddles of liquid on the floor and the overhead lighting is flickering and dim. Which element of the TILE assessment is most immediately concerning in this scene?",
       "options": [
         "Task",
         "Individual Capability",
         "Environment",
         "Load"
       ],
-      "id": "mh-im-0038"
+      "id": "mh-im-0038",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What major manual handling error is being committed in this image?",
+      "question": "A close-up shot of a person's midsection and legs. They are holding a heavy sack of flour across their chest. Their feet are firmly planted facing forward, but their shoulders and torso are twisted 45 degrees to the right. What major manual handling error is being committed ?",
       "correctAnswer": 0,
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "Twisting the spine while under load is a leading cause of back injury. Always move the feet to turn rather than rotating the torso",
-      "imageDescription": "A close-up shot of a person's midsection and legs. They are holding a heavy sack of flour across their chest. Their feet are firmly planted facing forward, but their shoulders and torso are twisted 45 degrees to the right",
       "options": [
         "Twisting the trunk while carrying",
         "Bending the knees too much",
         "Holding the load too low",
         "Wearing a high-visibility vest"
       ],
-      "imageAlt": "A person's upper body is twisted to the side while holding a heavy bag, while their feet remain facing forward",
-      "id": "mh-im-0039"
+      "id": "mh-im-0039",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "Which zone represents the safest height for a person to handle a heavy load?",
+      "question": "A diagram of a person standing. Four horizontal zones are highlighted in different colours: Zone A (Ankle to Knee), Zone B (Knee to Waist), Zone C (Waist to Shoulder), and Zone D (Above Shoulder). Which zone represents the safest height for a person to handle a heavy load?",
       "correctAnswer": 3,
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "For most people, the 'Power Zone' or 'Strike Zone' for lifting is between the mid-thigh and shoulder height. Mid-thigh to waist is optimal",
-      "imageDescription": "A diagram of a person standing. Four horizontal zones are highlighted in different colours: Zone A (Ankle to Knee), Zone B (Knee to Waist), Zone C (Waist to Shoulder), and Zone D (Above Shoulder)",
       "options": [
         "Zone A",
         "Zone D",
         "Zone C",
         "Zone B"
       ],
-      "imageAlt": "A diagram showing four horizontal zones on a human body: Floor to knee, knee to waist, waist to shoulder, and above shoulder",
-      "id": "mh-im-0040"
+      "id": "mh-im-0040",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A close up of hands positioned under the bottom edges of a box with fingers tucked under",
-      "imageDescription": "A close-up of a person's hands. They are reaching under the base of a heavy wooden crate. Their palms are facing upwards and their fingers are curled around the bottom edge of the load",
       "options": [
         "The worker is using gloves",
         "The grip is on the sides of the load",
@@ -6100,44 +6058,41 @@
         "The worker is using only their fingertips"
       ],
       "explanation": "A 'palms up' or 'hook' grip is generally more secure and less straining on the fingers than a 'fingertip' grip",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 2,
-      "question": "What aspect of a 'secure grip' is being correctly demonstrated here?",
-      "id": "mh-im-0041"
+      "question": "A close-up of a person's hands. They are reaching under the base of a heavy wooden crate. Their palms are facing upwards and their fingers are curled around the bottom edge of the load. What aspect of a 'secure grip' is being correctly demonstrated here?",
+      "id": "mh-im-0041",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A pregnant woman looking at a stack of heavy boxes with a concerned expression",
       "options": [
         "Floor surface conditions",
         "The weight of the files",
         "Individual capability of the worker",
         "The distance the files must be moved"
       ],
-      "imageDescription": "A woman who is visibly pregnant is standing in an office storage room. She is looking at a high shelf filled with heavy lever-arch files and seems to be contemplating moving them",
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "The Individual Capability (I) part of TILE considers personal factors like pregnancy, underlying health conditions, or physical strength",
-      "question": "When assessing this specific scenario, which TILE factor requires the most urgent consideration?",
+      "question": "A woman who is visibly pregnant is standing in an office storage room. She is looking at a high shelf filled with heavy lever-arch files and seems to be contemplating moving them. When assessing this specific scenario, which TILE factor requires the most urgent consideration?",
       "correctAnswer": 2,
-      "id": "mh-im-0042"
+      "id": "mh-im-0042",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A worker using a sack truck to move three stacked crates",
-      "imageDescription": "A warehouse worker is using a two-wheeled metal sack truck. Three heavy plastic crates are stacked on the base plate. The truck is tilted back and the worker is walking forward",
       "options": [
         "It allows the worker to carry more weight than legally allowed",
         "It reduces the physical effort required by the worker",
         "It eliminates the need for any TILE assessment",
         "It allows the worker to travel faster than walking speed"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "Sack trucks and trolleys move the weight of the load from the person to the mechanical aid, reducing the risk of musculoskeletal disorders",
-      "question": "What is the primary safety benefit of using the equipment shown in this image?",
+      "question": "A warehouse worker is using a two-wheeled metal sack truck. Three heavy plastic crates are stacked on the base plate. The truck is tilted back and the worker is walking forward. What is the primary safety benefit of using the equipment shown ?",
       "correctAnswer": 1,
-      "id": "mh-im-0043"
+      "id": "mh-im-0043",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A person standing over a box with their feet hip-width apart and one foot slightly in front of the other",
-      "imageDescription": "Looking down from above at a person's feet. They are standing over a small package. Their feet are shoulder-width apart, and the right foot is positioned about 15cm ahead of the left foot",
       "options": [
         "It provides a stable and balanced base for the lift",
         "It ensures the worker can jump back if the load falls",
@@ -6145,70 +6100,67 @@
         "It is only necessary if the floor is slippery"
       ],
       "explanation": "One of the first steps of a safe lift is to place the feet apart with one leg slightly forward to provide a stable, balanced base",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 0,
-      "question": "Why is the foot positioning shown in this image considered 'best practice'?",
-      "id": "mh-im-0044"
+      "question": "Looking down from above at a person's feet. They are standing over a small package. Their feet are shoulder-width apart, and the right foot is positioned about 15cm ahead of the left foot. Why is the foot positioning shown considered 'best practice'?",
+      "id": "mh-im-0044",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What is the main manual handling risk shown in this 'Task' image?",
+      "question": "A person is standing on their tiptoes, reaching their arms fully above their head to pull a heavy plastic container from a top shelf that is well above their shoulder height. What is the main manual handling risk shown in this 'Task' image?",
       "correctAnswer": 3,
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "Overreaching or lifting above shoulder height puts excessive strain on the small muscles of the neck and shoulders, increasing injury risk",
-      "imageDescription": "A person is standing on their tiptoes, reaching their arms fully above their head to pull a heavy plastic container from a top shelf that is well above their shoulder height",
       "options": [
         "The load is too light for the person",
         "The worker is not wearing a back brace",
         "The shelf is too wide",
         "The lift is being performed above shoulder height"
       ],
-      "imageAlt": "A person reaching up onto a very high shelf to grab a heavy-looking container",
-      "id": "mh-im-0045"
+      "id": "mh-im-0045",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "The 'L' in TILE refers to the Load. Characteristics like sharp edges, heat, or poor grip points make the load itself hazardous",
-      "question": "In this image, which specific hazard is associated with the 'Load'?",
+      "question": "A close-up of a large, unfinished metal component. The edges of the metal are jagged, rough, and have sharp burrs. There are no obvious handles or gripping points. , which specific hazard is associated with the 'Load'?",
       "correctAnswer": 1,
-      "imageAlt": "A metal part with sharp, jagged edges sitting on a workbench",
       "options": [
         "The Environment is too hot",
         "The Load has sharp or dangerous edges",
         "The Individual is not strong enough",
         "The Task requires too much repetition"
       ],
-      "imageDescription": "A close-up of a large, unfinished metal component. The edges of the metal are jagged, rough, and have sharp burrs. There are no obvious handles or gripping points",
-      "id": "mh-im-0046"
+      "id": "mh-im-0046",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A worker is leaning over to pick up a small wastepaper bin with their right hand. Their left hand is placed firmly on the surface of a nearby heavy wooden desk to support their upper body",
       "options": [
         "Using a stable object for support to reduce back strain",
         "Showing that the bin is light enough for one hand",
         "Checking the desk for dust before starting the task",
         "Ensuring the desk doesn't move during the lift"
       ],
-      "imageAlt": "A person picking up a small bin with one hand while leaning their other hand on a sturdy desk",
       "correctAnswer": 0,
-      "question": "What safe handling technique is being demonstrated in this one-handed lift?",
+      "question": "A worker is leaning over to pick up a small wastepaper bin with their right hand. Their left hand is placed firmly on the surface of a nearby heavy wooden desk to support their upper body. What safe handling technique is being demonstrated in this one-handed lift?",
       "explanation": "Using one hand to support your weight on a stable object (like a table or desk) helps offload the stress on your back during a one-handed lift",
-      "type": "image_question",
-      "id": "mh-im-0047"
+      "type": "multiple_choice",
+      "id": "mh-im-0047",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "Two people of very different heights attempting to carry a long ladder together",
-      "imageDescription": "A very tall person and a much shorter person are carrying a long extension ladder. Because of the height difference, the ladder is tilted at a steep angle, and the weight is unevenly distributed",
       "options": [
         "The ladder is the wrong colour for safety",
         "The workers are not wearing identical gloves",
         "The significant height difference between the handlers",
         "The ladder is being carried horizontally"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "When two people lift together, they should ideally be of similar height and capability, and one person must take the lead to coordinate the movement",
-      "question": "In this two-person lift, what factor is most likely to cause an uneven and unsafe load distribution?",
+      "question": "A very tall person and a much shorter person are carrying a long extension ladder. Because of the height difference, the ladder is tilted at a steep angle, and the weight is unevenly distributed. In this two-person lift, what factor is most likely to cause an uneven and unsafe load distribution?",
       "correctAnswer": 2,
-      "id": "mh-im-0048"
+      "id": "mh-im-0048",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "Resting the load on the thigh or a mid-way point helps the lifter adjust their grip and keeps the load close to the body, reducing strain on the lower back",
@@ -6218,12 +6170,11 @@
         "To check if the box is damaged before continuing",
         "To use leg muscles to throw the box onto a high shelf"
       ],
-      "imageAlt": "A worker resting a box on their raised knee half-way through a lift",
       "correctAnswer": 1,
-      "question": "What is the primary purpose of the 'intermediate rest' technique shown in this image?",
-      "imageDescription": "A person in a warehouse setting, lifting a medium-sized cardboard box from the floor. They have stopped mid-lift and are resting the base of the box on their bent right knee to adjust their hand placement",
-      "type": "image_question",
-      "id": "mh-im-0049"
+      "question": "A person in a warehouse setting, lifting a medium-sized cardboard box from the floor. They have stopped mid-lift and are resting the base of the box on their bent right knee to adjust their hand placement. What is the primary purpose of the 'intermediate rest' technique shown ?",
+      "type": "multiple_choice",
+      "id": "mh-im-0049",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "When reaching for an object at head height or above, the spine is often over-extended and the arms have less leverage, making the lift much more strenuous",
@@ -6233,17 +6184,15 @@
         "The lighting in the room is too dim to see the shelf clearly",
         "The worker is not wearing a high-visibility vest or helmet"
       ],
-      "imageAlt": "A person reaching up to a high shelf for a container",
       "correctAnswer": 0,
-      "question": "Why is the manual handling 'task' shown here considered high-risk according to the TILE assessment?",
-      "imageDescription": "A side-view of an office worker reaching up to the top shelf of a tall bookcase to retrieve a heavy lever-arch file. Their arms are fully extended upwards and their back is slightly arched",
-      "type": "image_question",
-      "id": "mh-im-0050"
+      "question": "A side-view of an office worker reaching up to the top shelf of a tall bookcase to retrieve a heavy lever-arch file. Their arms are fully extended upwards and their back is slightly arched. Why is the manual handling 'task' considered high-risk according to the TILE assessment?",
+      "type": "multiple_choice",
+      "id": "mh-im-0050",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What is the most significant ergonomic error being demonstrated in this top-down view?",
-      "imageDescription": "A bird's-eye view (top-down) of a worker. Their feet are pointed forward toward a conveyor belt, but their upper body and the crate they are holding are twisted 45 degrees to the right toward a pallet",
-      "type": "image_question",
+      "question": "A bird's-eye view (top-down) of a worker. Their feet are pointed forward toward a conveyor belt, but their upper body and the crate they are holding are twisted 45 degrees to the right toward a pallet. What is the most significant ergonomic error being demonstrated in this top-down view?",
+      "type": "multiple_choice",
       "options": [
         "The worker is moving too quickly for the environment",
         "The crate is being held too low against the waist",
@@ -6252,8 +6201,8 @@
       ],
       "explanation": "Twisting while holding or moving a load puts significant shearing force on the spinal discs; feet should be moved to turn the whole body instead",
       "correctAnswer": 2,
-      "imageAlt": "A top-down view of a worker twisting their torso while carrying a crate",
-      "id": "mh-im-0051"
+      "id": "mh-im-0051",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "The 'E' in TILE/LITE stands for Environment, which includes factors like floor condition, lighting, space constraints, and temperature",
@@ -6263,17 +6212,15 @@
         "Load",
         "Environment"
       ],
-      "imageAlt": "A worker maneuvering a trolley over a wet, slippery floor with a 'Caution' sign",
       "correctAnswer": 3,
-      "question": "In this scenario, which specific element of the TILE assessment is highlighted by the condition of the floor?",
-      "imageDescription": "A worker pushing a flatbed trolley loaded with boxes. The floor clearly has a large puddle of water on it, and a yellow 'wet floor' A-frame sign is visible in the background",
-      "type": "image_question",
-      "id": "mh-im-0052"
+      "question": "A worker pushing a flatbed trolley loaded with boxes. The floor clearly has a large puddle of water on it, and a yellow 'wet floor' A-frame sign is visible in the background. In this scenario, which specific element of the TILE assessment is highlighted by the condition of the floor?",
+      "type": "multiple_choice",
+      "id": "mh-im-0052",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "Why is the 'hugging' technique shown in this image recommended for lifting irregular soft loads like sacks?",
-      "type": "image_question",
-      "imageDescription": "A worker in a kitchen or warehouse environment lifting a large, heavy sack. They are holding it tight against their chest and stomach, with their arms wrapped around the middle of the bag",
+      "question": "A worker in a kitchen or warehouse environment lifting a large, heavy sack. They are holding it tight against their chest and stomach, with their arms wrapped around the middle of the bag. Why is the 'hugging' technique shown recommended for lifting irregular soft loads like sacks?",
+      "type": "multiple_choice",
       "explanation": "The pivot/hug technique keeps the load's center of gravity as close to the lifter's spine as possible, which is a core principle of safe lifting",
       "options": [
         "It keeps the center of gravity of the load close to the body",
@@ -6281,9 +6228,9 @@
         "It prevents the sack from tearing or spilling its contents",
         "It allows the worker to move faster across the floor"
       ],
-      "imageAlt": "A worker hugging a large sack of grain close to their chest",
       "correctAnswer": 0,
-      "id": "mh-im-0053"
+      "id": "mh-im-0053",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "When two people lift together, the load capacity is not simply doubled; it is reduced to about two-thirds of their combined individual limits due to the difficulty of synchronising movements",
@@ -6293,18 +6240,15 @@
         "Only the person at the front needs to see where they are going",
         "One person should take 20% of the weight while the other takes 80%"
       ],
-      "imageAlt": "Two people carrying a long wooden bench together",
       "correctAnswer": 1,
-      "question": "When performing the team lift shown in this image, what is a key safety rule regarding weight limits?",
-      "type": "image_question",
-      "imageDescription": "Two workers, one at each end of a long wooden bench. They are lifting the bench simultaneously to move it across a workshop floor. They appear to be talking to each other",
-      "id": "mh-im-0054"
+      "question": "Two workers, one at each end of a long wooden bench. They are lifting the bench simultaneously to move it across a workshop floor. They appear to be talking to each other. When performing the team lift shown , what is a key safety rule regarding weight limits?",
+      "type": "multiple_choice",
+      "id": "mh-im-0054",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageDescription": "A close-up image of a person's hands gripping the underside of a plastic delivery crate. The fingers are tucked under the rim and the palms are flat against the side of the crate",
-      "question": "This close-up shows which type of recommended secure grip?",
-      "imageAlt": "A close-up of hands holding a plastic crate from underneath",
+      "type": "multiple_choice",
+      "question": "A close-up image of a person's hands gripping the underside of a plastic delivery crate. The fingers are tucked under the rim and the palms are flat against the side of the crate. This close-up shows which type of recommended secure grip?",
       "correctAnswer": 3,
       "explanation": "A 'palmar' grip, using the palms of the hands and the roots of the fingers, is more secure and less tiring than a 'fingertip' grip",
       "options": [
@@ -6313,14 +6257,13 @@
         "Pinch grip on the top edge",
         "Palmar grip using the whole hand"
       ],
-      "id": "mh-im-0055"
+      "id": "mh-im-0055",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A worker is seen straining to lift a very large, heavy-looking wooden crate by hand. In the immediate background, a manual pallet jack (pump truck) is sitting unused and available",
-      "type": "image_question",
-      "question": "Under the Manual Handling Operations Regulations, what is the worker's duty regarding the equipment seen in the background?",
+      "type": "multiple_choice",
+      "question": "A worker is seen straining to lift a very large, heavy-looking wooden crate by hand. In the immediate background, a manual pallet jack (pump truck) is sitting unused and available. Under the Manual Handling Operations Regulations, what is the worker's duty regarding the equipment seen in the background?",
       "correctAnswer": 2,
-      "imageAlt": "A worker ignoring a nearby pallet jack to lift a heavy box manually",
       "options": [
         "To work faster to meet company deadlines",
         "To improve their physical strength and fitness",
@@ -6328,10 +6271,10 @@
         "To carry the load only if it weighs more than 50kg"
       ],
       "explanation": "The Health and Safety at Work Act 1974 and MHOR 1992 require employees to use the safety equipment and mechanical aids provided by their employer correctly",
-      "id": "mh-im-0056"
+      "id": "mh-im-0056",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A diagram showing a person squatting down to reach a box",
       "correctAnswer": 1,
       "explanation": "Bending the knees (squatting) allows the powerful leg muscles to do the work of the lift, rather than placing the stress on the relatively weak muscles and discs of the lower back",
       "options": [
@@ -6340,10 +6283,10 @@
         "To lower the worker's head so they can see the labels",
         "To decrease the distance the worker has to walk"
       ],
-      "type": "image_question",
-      "imageDescription": "A side-profile illustration of a person preparing to lift a box from the floor. Their knees are deeply bent, their back is kept straight, and their feet are positioned on either side of the load",
-      "question": "In the 'stable start' position shown, why is it essential to bend the knees as pictured?",
-      "id": "mh-im-0057"
+      "type": "multiple_choice",
+      "question": "A side-profile illustration of a person preparing to lift a box from the floor. Their knees are deeply bent, their back is kept straight, and their feet are positioned on either side of the load. In the 'stable start' position shown, why is it essential to bend the knees as pictured?",
+      "id": "mh-im-0057",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "Gloves are a form of PPE that can protect against sharp edges, splinters, or chemicals, but they can also reduce the tactile 'feel' and grip strength if they are poorly fitted",
@@ -6353,15 +6296,13 @@
         "They are not required when handling metal materials",
         "They prevent the worker from using a two-handed lift"
       ],
-      "imageAlt": "A worker wearing thick, padded industrial gloves while holding a metal pipe",
       "correctAnswer": 0,
-      "question": "What is a potential manual handling risk associated with using the thick gloves shown in this image?",
-      "imageDescription": "A worker's hands holding a galvanized steel pipe. The worker is wearing very thick, bulky orange industrial safety gloves that appear slightly too large for their hands",
-      "type": "image_question",
-      "id": "mh-im-0058"
+      "question": "A worker's hands holding a galvanized steel pipe. The worker is wearing very thick, bulky orange industrial safety gloves that appear slightly too large for their hands. What is a potential manual handling risk associated with using the thick gloves shown ?",
+      "type": "multiple_choice",
+      "id": "mh-im-0058",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A person leaning deep into a car boot to place a grocery crate",
       "correctAnswer": 3,
       "explanation": "Placing a load into a car boot often requires the worker to lean forward (flexion) and reach out, which significantly increases the strain on the lower back",
       "options": [
@@ -6370,15 +6311,14 @@
         "The worker's footwear is unsuitable for the task",
         "The worker is forced into a stooped and reaching posture"
       ],
-      "type": "image_question",
-      "imageDescription": "A person is bent over at the waist, reaching deep into the trunk (boot) of a car to place a heavy plastic crate. Their legs are straight and their back is horizontal to the ground",
-      "question": "What is the main risk factor for Musculoskeletal Disorders (MSDs) in this specific car-loading scene?",
-      "id": "mh-im-0059"
+      "type": "multiple_choice",
+      "question": "A person is bent over at the waist, reaching deep into the trunk (boot) of a car to place a heavy plastic crate. Their legs are straight and their back is horizontal to the ground. What is the main risk factor for Musculoskeletal Disorders (MSDs) in this specific car-loading scene?",
+      "id": "mh-im-0059",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "When assessing the 'Load' shown in this image, what is the most important safety information conveyed?",
-      "type": "image_question",
-      "imageDescription": "A square cardboard box sitting on a table. One side of the box has a bright red sticker that says 'HEAVY - THIS SIDE'. The box is slightly tilted toward the side with the sticker",
+      "question": "A square cardboard box sitting on a table. One side of the box has a bright red sticker that says 'HEAVY - THIS SIDE'. The box is slightly tilted toward the side with the sticker. When assessing the 'Load' shown , what is the most important safety information conveyed?",
+      "type": "multiple_choice",
       "explanation": "A load is much easier to control and less likely to cause injury if its center of gravity is kept close to the body; offset loads (unbalanced) increase the risk",
       "options": [
         "The box is too large to fit through standard doorways",
@@ -6386,16 +6326,14 @@
         "The load is unbalanced or has an offset center of gravity",
         "The contents of the box are likely to be sharp or hot"
       ],
-      "imageAlt": "A cardboard box with a 'Heavy' sticker on one side only",
       "correctAnswer": 2,
-      "id": "mh-im-0060"
+      "id": "mh-im-0060",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "When applying the TILE acronym to this worker, which factor are we assessing regarding their physical ability to move this crate?",
-      "imageAlt": "A worker looking at a large box, appearing unsure or physically strained",
-      "type": "image_question",
+      "question": "A medium shot of a worker standing in front of a heavy wooden crate. The worker is petite and looking at the crate with a concerned expression, highlighting the difference between the person's size and the load size. When applying the TILE acronym to this worker, which factor are we assessing regarding their physical ability to move this crate?",
+      "type": "multiple_choice",
       "correctAnswer": 2,
-      "imageDescription": "A medium shot of a worker standing in front of a heavy wooden crate. The worker is petite and looking at the crate with a concerned expression, highlighting the difference between the person's size and the load size",
       "explanation": "The 'I' in TILE stands for Individual Capability, which assesses whether the specific person is physically able, trained, and suitably dressed for the task",
       "options": [
         "Task factors",
@@ -6403,7 +6341,8 @@
         "Individual capability",
         "Environment conditions"
       ],
-      "id": "mh-im-0061"
+      "id": "mh-im-0061",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -6413,19 +6352,16 @@
         "Using a mechanical aid incorrectly"
       ],
       "explanation": "Bending from the waist (stooping) puts significant pressure on the lower spine; the correct method is to bend the knees and keep the back straight",
-      "imageDescription": "A side view of an office worker leaning over a desk to pick up a heavy box of paper. Their legs are completely straight and their back is arched into a 'C' shape",
       "correctAnswer": 0,
-      "type": "image_question",
-      "imageAlt": "A worker bending over a parcel with straight legs and a curved back",
-      "question": "What is the most significant postural error being demonstrated by the worker in this image?",
-      "id": "mh-im-0062"
+      "type": "multiple_choice",
+      "question": "A side view of an office worker leaning over a desk to pick up a heavy box of paper. Their legs are completely straight and their back is arched into a 'C' shape. What is the most significant postural error being demonstrated by the worker ?",
+      "id": "mh-im-0062",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A worker carrying a box towards a cluttered, narrow corridor",
-      "question": "Which 'Environment' risk factor is most visible in this manual handling scenario?",
-      "type": "image_question",
+      "question": "A worker carrying a large opaque box that obstructs their forward vision, walking toward a hallway filled with loose cables and discarded packaging. Which 'Environment' risk factor is most visible in this manual handling scenario?",
+      "type": "multiple_choice",
       "correctAnswer": 3,
-      "imageDescription": "A worker carrying a large opaque box that obstructs their forward vision, walking toward a hallway filled with loose cables and discarded packaging",
       "explanation": "The Environment factor of TILE includes looking for hazards like narrow doorways, uneven floors, or poor lighting that might hinder a safe move",
       "options": [
         "The weight of the load",
@@ -6433,14 +6369,13 @@
         "The size of the box",
         "Tripping hazards in the environment"
       ],
-      "id": "mh-im-0063"
+      "id": "mh-im-0063",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A diagram showing a person holding a box close to their stomach vs. holding it at arm's length",
-      "question": "Why is the technique shown on the left of this image considered safer than the one on the right?",
-      "type": "image_question",
+      "question": "A split-screen infographic. On the left, a person holds a box against their torso. On the right, they hold it with arms fully extended. Red arrows indicate high pressure on the lower back in the right-hand image. Why is the technique shown on the left of the image considered safer than the one on the right?",
+      "type": "multiple_choice",
       "correctAnswer": 1,
-      "imageDescription": "A split-screen infographic. On the left, a person holds a box against their torso. On the right, they hold it with arms fully extended. Red arrows indicate high pressure on the lower back in the right-hand image",
       "explanation": "Keeping the load close to the waist (the body's centre of gravity) reduces the strain on the back muscles and spine",
       "options": [
         "It makes the load feel heavier",
@@ -6448,7 +6383,8 @@
         "It allows the worker to see their feet better",
         "It prevents the load from getting dirty"
       ],
-      "id": "mh-im-0064"
+      "id": "mh-im-0064",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "Twisting (rotation) while carrying a load is a major cause of back injury; users should move their feet to turn instead",
@@ -6458,19 +6394,16 @@
         "Twisting the torso while under load",
         "Poor footwear choice"
       ],
-      "type": "image_question",
-      "imageAlt": "A worker's torso twisted to the side while holding a heavy container",
-      "question": "Which dangerous movement is being performed by the worker in this image?",
-      "imageDescription": "A worker standing with feet planted firmly forward, but their shoulders and the heavy water bottle they are carrying are turned 45 degrees to the right to place it on a stand",
+      "type": "multiple_choice",
+      "question": "A worker standing with feet planted firmly forward, but their shoulders and the heavy water bottle they are carrying are turned 45 degrees to the right to place it on a stand. Which dangerous movement is being performed by the worker ?",
       "correctAnswer": 2,
-      "id": "mh-im-0065"
+      "id": "mh-im-0065",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 1,
-      "imageDescription": "A warehouse worker using their foot to gently nudge a cardboard box to test its stability and weight before attempting to lift it",
-      "imageAlt": "A worker pushing a box slightly with their foot before lifting",
-      "question": "What stage of a safe manual handling procedure is the worker performing here?",
-      "type": "image_question",
+      "question": "A warehouse worker using their foot to gently nudge a cardboard box to test its stability and weight before attempting to lift it. What stage of a safe manual handling procedure is the worker performing here?",
+      "type": "multiple_choice",
       "options": [
         "Cleaning the floor surface",
         "Planning the lift by testing the load's weight and stability",
@@ -6478,14 +6411,13 @@
         "Reducing the weight of the load"
       ],
       "explanation": "A 'Plan' involves checking the weight, the route, and the final destination before actually lifting the object",
-      "id": "mh-im-0066"
+      "id": "mh-im-0066",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 0,
-      "imageDescription": "An image of a worker in a dark, cramped basement storage area, squinting to see the labels on boxes while reaching into a corner",
-      "imageAlt": "A worker trying to lift a box in a very dimly lit storage room",
-      "question": "In this storage room scenario, which LITE/TILE category is the primary concern?",
-      "type": "image_question",
+      "question": "An image of a worker in a dark, cramped basement storage area, squinting to see the labels on boxes while reaching into a corner. In this storage room scenario, which LITE/TILE category is the primary concern?",
+      "type": "multiple_choice",
       "options": [
         "Environment (Poor lighting)",
         "Individual (Lack of strength)",
@@ -6493,14 +6425,13 @@
         "Load (Sharp edges)"
       ],
       "explanation": "The 'E' in the LITE or TILE assessment refers to Environment, which includes lighting, temperature, and space constraints",
-      "id": "mh-im-0067"
+      "id": "mh-im-0067",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 3,
-      "imageDescription": "Two workers carrying a long conference table. One worker appears to be speaking or signalling to the other while they walk",
-      "question": "What is a critical safety requirement for the team lift shown in this image?",
-      "imageAlt": "Two people carrying a long table, looking at each other",
-      "type": "image_question",
+      "question": "Two workers carrying a long conference table. One worker appears to be speaking or signalling to the other while they walk. What is a critical safety requirement for the team lift shown ?",
+      "type": "multiple_choice",
       "options": [
         "The taller person should carry more weight",
         "Both people should walk as fast as possible",
@@ -6508,7 +6439,8 @@
         "One person should act as the leader to coordinate the move"
       ],
       "explanation": "Moving a load together requires one person to take charge and coordinate movements (e.g., 'Ready, steady, lift') to ensure synchronisation",
-      "id": "mh-im-0068"
+      "id": "mh-im-0068",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "Sack trucks and trolleys are mechanical aids designed to reduce the need for manual handling and decrease the risk of injury",
@@ -6518,12 +6450,11 @@
         "Mechanical aids to reduce manual handling risks",
         "Storage solutions for heavy loads"
       ],
-      "type": "image_question",
-      "question": "Under the Manual Handling Operations Regulations, what are the items shown in this image classified as?",
-      "imageAlt": "An image of a sack truck and a flatbed trolley",
-      "imageDescription": "A clean studio shot of a standard red sack truck and a blue four-wheeled flatbed trolley placed side-by-side",
+      "type": "multiple_choice",
+      "question": "A clean studio shot of a standard red sack truck and a blue four-wheeled flatbed trolley placed side-by-side. Under the Manual Handling Operations Regulations, what are the items shown classified as?",
       "correctAnswer": 2,
-      "id": "mh-im-0069"
+      "id": "mh-im-0069",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -6534,18 +6465,15 @@
       ],
       "explanation": "The pallet's low position forces the worker to stoop or reach low, which significantly increases the risk of Musculoskeletal Disorders (MSDs)",
       "correctAnswer": 0,
-      "imageDescription": "A worker bending down low to grab a small parcel off a pallet that is sitting directly on the warehouse floor, rather than on a raised platform",
-      "question": "What is the main risk associated with the 'Task' shown in this image?",
-      "imageAlt": "A worker reaching down to a pallet on the floor",
-      "type": "image_question",
-      "id": "mh-im-0070"
+      "question": "A worker bending down low to grab a small parcel off a pallet that is sitting directly on the warehouse floor, rather than on a raised platform. What is the main risk associated with the 'Task' shown ?",
+      "type": "multiple_choice",
+      "id": "mh-im-0070",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 1,
-      "imageDescription": "A traveller carrying a very large suitcase by one handle. Their body is noticeably tilted to the opposite side to balance the weight",
-      "imageAlt": "A person carrying a heavy suitcase in one hand, leaning to the side",
-      "question": "In this image, why does carrying the suitcase with one hand increase the risk of injury?",
-      "type": "image_question",
+      "question": "A traveller carrying a very large suitcase by one handle. Their body is noticeably tilted to the opposite side to balance the weight. , why does carrying the suitcase with one hand increase the risk of injury?",
+      "type": "multiple_choice",
       "options": [
         "The handles might break",
         "The load is unbalanced, causing lateral strain on the spine",
@@ -6553,7 +6481,8 @@
         "The person is walking too slowly"
       ],
       "explanation": "Lifting a load with one hand is unbalanced and puts uneven stress on the spine; the load should be distributed across both hands if possible",
-      "id": "mh-im-0071"
+      "id": "mh-im-0071",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "Health and Safety legislation requires employees to use any safety equipment or mechanical aids provided by their employer correctly",
@@ -6563,12 +6492,11 @@
         "To only use the trolley if they feel tired",
         "To move the trolley out of the way of other workers"
       ],
-      "question": "Regarding the equipment seen in the background, what is the worker's legal duty in this situation?",
-      "imageAlt": "A worker ignoring a trolley and carrying multiple heavy boxes by hand",
-      "type": "image_question",
+      "question": "A worker struggling to carry a stack of four heavy boxes by hand, while a completely empty and available trolley sits just two metres away in the background. Regarding the equipment seen in the background, what is the worker's legal duty in this situation?",
+      "type": "multiple_choice",
       "correctAnswer": 0,
-      "imageDescription": "A worker struggling to carry a stack of four heavy boxes by hand, while a completely empty and available trolley sits just two metres away in the background",
-      "id": "mh-im-0072"
+      "id": "mh-im-0072",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 1,
@@ -6579,11 +6507,10 @@
         "The floor surface is uneven or cracked"
       ],
       "explanation": "The TILE assessment (Task, Individual, Load, Environment) highlights that lifting from floor level or above shoulder height increases strain on the spine",
-      "imageDescription": "A warehouse worker standing on tiptoes, reaching up to a high shelf above their head to pull down a cardboard box labeled 15kg",
-      "question": "According to the 'Task' element of TILE, why is the lift shown in this image considered high risk?",
-      "type": "image_question",
-      "imageAlt": "A worker reaching high a shelf to grab a heavy box",
-      "id": "mh-im-0073"
+      "question": "A warehouse worker standing on tiptoes, reaching up to a high shelf above their head to pull down a cardboard box labeled 15kg. According to the 'Task' element of TILE, why is the lift shown considered high risk?",
+      "type": "multiple_choice",
+      "id": "mh-im-0073",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -6594,17 +6521,14 @@
       ],
       "correctAnswer": 0,
       "explanation": "Keeping the load close to the waist reduces the pressure on the lower back and keeps the centre of gravity stable",
-      "imageDescription": "A person in overalls holding a medium-sized box close to their torso at waist height, with elbows tucked in",
-      "type": "image_question",
-      "question": "What is the primary benefit of the carrying technique being demonstrated in this image?",
-      "imageAlt": "Worker holding a parcel close to their stomach",
-      "id": "mh-im-0074"
+      "type": "multiple_choice",
+      "question": "A person in overalls holding a medium-sized box close to their torso at waist height, with elbows tucked in. What is the primary benefit of the carrying technique being demonstrated ?",
+      "id": "mh-im-0074",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "Which part of the TILE assessment is most relevant to the worker's physical state in this image?",
-      "type": "image_question",
-      "imageAlt": "A worker with a wrist support brace lifting a small item",
-      "imageDescription": "A close-up of a worker's hands picking up a small crate; the worker is wearing a compression support/brace on their right wrist",
+      "question": "A close-up of a worker's hands picking up a small crate; the worker is wearing a compression support/brace on their right wrist. Which part of the TILE assessment is most relevant to the worker's physical state ?",
+      "type": "multiple_choice",
       "correctAnswer": 2,
       "options": [
         "Task (T)",
@@ -6613,7 +6537,8 @@
         "Environment (E)"
       ],
       "explanation": "The 'I' in TILE stands for Individual Capability, which considers a person's health, age, fitness, and any existing medical conditions",
-      "id": "mh-im-0075"
+      "id": "mh-im-0075",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "Twisting while carrying a load puts significant shearing force on the spinal discs and is a major cause of Musculoskeletal Disorders (MSDs)",
@@ -6624,17 +6549,14 @@
         "Twisting the trunk (torso) while loaded"
       ],
       "correctAnswer": 3,
-      "imageDescription": "A worker whose feet are pointing forward toward a table, but their upper body is twisted 90 degrees to place a heavy bag on a side counter",
-      "imageAlt": "Worker rotating their torso while holding a heavy load",
-      "type": "image_question",
-      "question": "Which dangerous movement is being demonstrated by the worker in this image?",
-      "id": "mh-im-0076"
+      "type": "multiple_choice",
+      "question": "A worker whose feet are pointing forward toward a table, but their upper body is twisted 90 degrees to place a heavy bag on a side counter. Which dangerous movement is being demonstrated by the worker ?",
+      "id": "mh-im-0076",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A worker carrying a tray of items walking toward a brightly lit area where a clear liquid spill is visible on the polished concrete floor",
-      "question": "Under the TILE assessment, which category does the hazard on the floor in this image fall under?",
-      "type": "image_question",
-      "imageAlt": "A puddle of water on a warehouse floor near a worker",
+      "question": "A worker carrying a tray of items walking toward a brightly lit area where a clear liquid spill is visible on the polished concrete floor. Under the TILE assessment, which category does the hazard on the floor fall under?",
+      "type": "multiple_choice",
       "correctAnswer": 1,
       "options": [
         "Individual Capability",
@@ -6643,13 +6565,12 @@
         "Task Duration"
       ],
       "explanation": "The 'E' in TILE/LITE stands for Environment, which includes checking for trip hazards, lighting, and floor conditions such as the liquid seen here",
-      "id": "mh-im-0077"
+      "id": "mh-im-0077",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A worker pulling a manual pallet jack (pump truck) loaded with several stacked boxes through a warehouse aisle",
-      "type": "image_question",
-      "question": "What is the main purpose of the equipment being used by the worker in this image?",
-      "imageAlt": "A worker using a manual pallet jack to move a heavy pallet",
+      "type": "multiple_choice",
+      "question": "A worker pulling a manual pallet jack (pump truck) loaded with several stacked boxes through a warehouse aisle. What is the main purpose of the equipment being used by the worker ?",
       "options": [
         "Providing a mechanical aid to reduce manual handling",
         "Increasing the speed of the task to save time",
@@ -6658,7 +6579,8 @@
       ],
       "correctAnswer": 0,
       "explanation": "Using a pallet truck is a form of mechanical aid that significantly reduces the risk of injury by removing the need for manual force",
-      "id": "mh-im-0078"
+      "id": "mh-im-0078",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 2,
@@ -6669,17 +6591,14 @@
         "The distance the item needs to be moved"
       ],
       "explanation": "The 'L' in TILE refers to the Load. Sharp edges, heat, or unstable contents make a load more hazardous to handle",
-      "question": "When assessing this specific scenario, which 'LITE' factor describes the sharp edges of the container?",
-      "type": "image_question",
-      "imageAlt": "A heavy metal crate with jagged, sharp edges",
-      "imageDescription": "A close-up shot of an industrial metal basket filled with scrap metal parts, showing sharp protruding edges and oily surfaces",
-      "id": "mh-im-0079"
+      "question": "A close-up shot of an industrial metal basket filled with scrap metal parts, showing sharp protruding edges and oily surfaces. When assessing this specific scenario, which 'LITE' factor describes the sharp edges of the container?",
+      "type": "multiple_choice",
+      "id": "mh-im-0079",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "Regarding the trolley in the background, what is the employee's legal duty under the Manual Handling Regulations?",
-      "type": "image_question",
-      "imageAlt": "A worker ignoring a trolley and carrying multiple heavy boxes by hand",
-      "imageDescription": "A worker is struggling to carry three large boxes stacked in their arms, while an empty, available flatbed trolley sits right next to them",
+      "question": "A worker is struggling to carry three large boxes stacked in their arms, while an empty, available flatbed trolley sits right next to them. Regarding the trolley in the background, what is the employee's legal duty under the Manual Handling Regulations?",
+      "type": "multiple_choice",
       "correctAnswer": 1,
       "options": [
         "To work as quickly as possible to meet targets",
@@ -6688,7 +6607,8 @@
         "To only use equipment when a manager is watching"
       ],
       "explanation": "Employees are legally required to follow safe systems of work and use safety equipment provided by their employer correctly",
-      "id": "mh-im-0080"
+      "id": "mh-im-0080",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -6699,17 +6619,14 @@
       ],
       "correctAnswer": 3,
       "explanation": "Bending at the waist (stooping) puts extreme pressure on the lower back; the correct method is to bend the knees and keep the back straight",
-      "type": "image_question",
-      "question": "What is the main technique error the worker is making in this lift?",
-      "imageAlt": "A worker bending at the waist with straight legs to pick up a box",
-      "imageDescription": "A person attempting to lift a box from the floor with their legs kept completely straight and their back bent over in a 'U' shape",
-      "id": "mh-im-0081"
+      "type": "multiple_choice",
+      "question": "A person attempting to lift a box from the floor with their legs kept completely straight and their back bent over in a 'U' shape. What is the main technique error the worker is making in this lift?",
+      "id": "mh-im-0081",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "For the team lift shown in this image, what is a vital safety requirement?",
-      "type": "image_question",
-      "imageAlt": "Two people carrying a long ladder together",
-      "imageDescription": "Two workers in HI-VIS vests are carrying a long industrial ladder; one is at the front and one is at the back",
+      "question": "Two workers in HI-VIS vests are carrying a long industrial ladder; one is at the front and one is at the back. For the team lift shown , what is a vital safety requirement?",
+      "type": "multiple_choice",
       "correctAnswer": 0,
       "options": [
         "One person should take the lead and give clear instructions",
@@ -6718,7 +6635,8 @@
         "They should hold the ladder with only one hand each"
       ],
       "explanation": "Good communication and a designated 'lead' person are essential in team lifts to ensure movements are synchronized and safe",
-      "id": "mh-im-0082"
+      "id": "mh-im-0082",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "Standard UK HSE guidelines suggest a maximum lifting capacity of 25kg for a male at waist height, which this load exceeds",
@@ -6729,17 +6647,14 @@
         "It is light enough to be carried over long distances without a break"
       ],
       "correctAnswer": 2,
-      "imageAlt": "A box marked with a 35kg weight label",
-      "type": "image_question",
-      "question": "Look at the weight label in this image. Why does this load require a formal risk assessment?",
-      "imageDescription": "A large cardboard box sitting on a table with a clear, bold '35kg' weight warning label printed on the side",
-      "id": "mh-im-0083"
+      "type": "multiple_choice",
+      "question": "A large cardboard box sitting on a table with a clear, bold '35kg' weight warning label printed on the side. Look at the weight label . Why does this load require a formal risk assessment?",
+      "id": "mh-im-0083",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A close-up of a hand wrapped around the handle of a plastic crate, showing the palm in full contact with the handle surface",
-      "imageAlt": "A hand gripping the corner of a crate using the whole palm",
-      "question": "Which type of secure, recommended grip is being demonstrated in this close-up image?",
-      "type": "image_question",
+      "question": "A close-up of a hand wrapped around the handle of a plastic crate, showing the palm in full contact with the handle surface. Which type of secure, recommended grip is being demonstrated in this close-up image?",
+      "type": "multiple_choice",
       "explanation": "A 'palmar' grip, using the whole palm and finger roots, is more secure and less tiring than using just the fingertips",
       "correctAnswer": 1,
       "options": [
@@ -6748,7 +6663,8 @@
         "Hook grip",
         "Pinch grip"
       ],
-      "id": "mh-im-0084"
+      "id": "mh-im-0084",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -6758,19 +6674,16 @@
         "The type of footwear worn"
       ],
       "correctAnswer": 2,
-      "question": "What is the primary manual handling risk factor shown in this image?",
-      "imageDescription": "A warehouse worker is leaning over a wide packing table, reaching out with both arms fully extended to pick up a medium-sized cardboard box from the far side of the table",
-      "type": "image_question",
-      "imageAlt": "A worker reaching across a wide workbench to lift a heavy box",
+      "question": "A warehouse worker is leaning over a wide packing table, reaching out with both arms fully extended to pick up a medium-sized cardboard box from the far side of the table. What is the primary manual handling risk factor shown ?",
+      "type": "multiple_choice",
       "explanation": "The worker is overreaching away from the body, which significantly increases the strain on the lower back compared to keeping the load close",
-      "id": "mh-im-0085"
+      "id": "mh-im-0085",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "An individual is holding a plastic crate at waist height. Their feet are pointing forward, but their upper body is twisted 90 degrees to the right to place the box on a shelf",
-      "type": "image_question",
-      "imageAlt": "A person holding a crate and twisting their torso to place it on a side shelf",
+      "type": "multiple_choice",
       "explanation": "Twisting while carrying a load puts uneven pressure on the spinal discs and is a major cause of Musculoskeletal Disorders (MSDs)",
-      "question": "In this image, what is the most dangerous movement the worker is performing?",
+      "question": "An individual is holding a plastic crate at waist height. Their feet are pointing forward, but their upper body is twisted 90 degrees to the right to place the box on a shelf. , what is the most dangerous movement the worker is performing?",
       "correctAnswer": 0,
       "options": [
         "Twisting the spine while under load",
@@ -6778,14 +6691,13 @@
         "Holding the load at waist height",
         "The box being made of plastic"
       ],
-      "id": "mh-im-0086"
+      "id": "mh-im-0086",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A person is positioned to lift a box from the floor. They are in a deep squat with their feet apart, back straight, and hands firmly on the box",
-      "type": "image_question",
-      "imageAlt": "A worker in a squatting position about to lift a box with a straight back",
+      "type": "multiple_choice",
       "explanation": "Using the legs and keeping the back straight (the 'power position') allows the strongest muscles to do the work and protects the spine",
-      "question": "Which key principle of a safe lifting technique is being demonstrated here?",
+      "question": "A person is positioned to lift a box from the floor. They are in a deep squat with their feet apart, back straight, and hands firmly on the box. Which key principle of a safe lifting technique is being demonstrated here?",
       "correctAnswer": 3,
       "options": [
         "Bending the spine",
@@ -6793,14 +6705,13 @@
         "Closing the eyes during the lift",
         "Using the strong leg muscles to lift"
       ],
-      "id": "mh-im-0087"
+      "id": "mh-im-0087",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "Obstructions like the spilled liquid shown fall under 'Environment' (E) in the LITE/TILE assessment",
-      "imageAlt": "A worker carrying a box towards a puddle of water on the floor",
-      "type": "image_question",
-      "imageDescription": "A worker is carrying a large parcel through a corridor. Directly in their path is a clearly visible patch of spilled liquid on the shiny floor",
-      "question": "Under the TILE/LITE assessment framework, which category does the hazard in this image belong to?",
+      "type": "multiple_choice",
+      "question": "A worker is carrying a large parcel through a corridor. Directly in their path is a clearly visible patch of spilled liquid on the shiny floor. Under the TILE/LITE assessment framework, which category does the hazard belong to?",
       "correctAnswer": 1,
       "options": [
         "Load (L)",
@@ -6808,14 +6719,13 @@
         "Individual Capability (I)",
         "Task (T)"
       ],
-      "id": "mh-im-0088"
+      "id": "mh-im-0088",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A worker ignoring a 'Use Trolley' sign and lifting a heavy box manually",
       "explanation": "Employees have a legal duty to follow the safe systems of work and training provided by their employer to ensure their own safety",
-      "imageDescription": "A worker is manually lifting a heavy-looking wooden crate. In the background, there is a clear safety sign saying 'Heaving Loads: Use Trolley Provided', and an empty trolley is visible nearby",
-      "type": "image_question",
-      "question": "Based on the UK Manual Handling Regulations, what is the worker doing wrong in this scenario?",
+      "type": "multiple_choice",
+      "question": "A worker is manually lifting a heavy-looking wooden crate. In the background, there is a clear safety sign saying 'Heaving Loads: Use Trolley Provided', and an empty trolley is visible nearby. Based on the UK Manual Handling Regulations, what is the worker doing wrong in this scenario?",
       "correctAnswer": 2,
       "options": [
         "The employer has no responsibility here",
@@ -6823,7 +6733,8 @@
         "The worker is failing to use the provided safety equipment/aids",
         "The worker is legally required to work faster"
       ],
-      "id": "mh-im-0089"
+      "id": "mh-im-0089",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 0,
@@ -6833,12 +6744,11 @@
         "It allows the worker to run faster",
         "It prevents the box from getting dirty"
       ],
-      "type": "image_question",
-      "imageDescription": "A close-up photograph showing a person's hands positioned at diagonal corners of a cardboard box, with the palms in full contact with the box and the fingers tucked under",
+      "type": "multiple_choice",
       "explanation": "A 'palma grip' or 'hook grip' using the whole hand is more secure than using just the fingers, reducing the risk of dropping the load",
-      "imageAlt": "A close-up of a worker's hands gripping the bottom corners of a box",
-      "question": "What is the benefit of the hand placement shown in this image?",
-      "id": "mh-im-0090"
+      "question": "A close-up photograph showing a person's hands positioned at diagonal corners of a cardboard box, with the palms in full contact with the box and the fingers tucked under. What is the benefit of the hand placement shown ?",
+      "id": "mh-im-0090",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 3,
@@ -6848,19 +6758,16 @@
         "Internal Risk",
         "Individual Capability"
       ],
-      "type": "image_question",
-      "imageDescription": "A female worker who is visibly pregnant is standing next to a stack of heavy boxes, looking concerned. A TILE assessment chart is on the wall behind her",
+      "type": "multiple_choice",
       "explanation": "The 'I' in TILE stands for Individual Capability, which considers factors like health, age, and physical strength",
-      "imageAlt": "A pregnant worker looking at a heavy stack of boxes",
-      "question": "Which factor of the TILE assessment is most important to consider for the person in this image?",
-      "id": "mh-im-0091"
+      "question": "A female worker who is visibly pregnant is standing next to a stack of heavy boxes, looking concerned. A TILE assessment chart is on the wall behind her. Which factor of the TILE assessment is most important to consider for the person ?",
+      "id": "mh-im-0091",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A person is carrying a large, half-full plastic container of liquid. As they move, the liquid is visibly sloshing from side to side, shifting the weight",
-      "type": "image_question",
-      "imageAlt": "A semi-transparent container showing liquid sloshing around inside",
+      "type": "multiple_choice",
       "explanation": "The 'Load' (L) in LITE/TILE covers the physical characteristics of the object, including its weight, size, and whether the contents might shift",
-      "question": "Which LITE factor is represented by the unstable contents of the container in this image?",
+      "question": "A person is carrying a large, half-full plastic container of liquid. As they move, the liquid is visibly sloshing from side to side, shifting the weight. Which LITE factor is represented by the unstable contents of the container ?",
       "correctAnswer": 1,
       "options": [
         "Environment",
@@ -6868,14 +6775,13 @@
         "Task",
         "Individual"
       ],
-      "id": "mh-im-0092"
+      "id": "mh-im-0092",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageDescription": "An employee is operating an electric-powered pallet truck to move a pallet stacked with heavy bags of cement across a warehouse floor",
+      "type": "multiple_choice",
       "explanation": "Providing mechanical aids like this electric pallet jack is part of the 'Automate or Mechanise' step in the Manual Handling hierarchy of control",
-      "imageAlt": "A worker using an electric powered pallet truck to move a heavy pallet",
-      "question": "What risk control measure is being demonstrated in this warehouse image?",
+      "question": "An employee is operating an electric-powered pallet truck to move a pallet stacked with heavy bags of cement across a warehouse floor. What risk control measure is being demonstrated in this warehouse image?",
       "correctAnswer": 2,
       "options": [
         "Lifting with the back",
@@ -6883,7 +6789,8 @@
         "Use of a mechanical aid to reduce risk",
         "Applying the TILE assessment manually"
       ],
-      "id": "mh-im-0093"
+      "id": "mh-im-0093",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -6893,19 +6800,16 @@
         "Both workers having different heights"
       ],
       "correctAnswer": 0,
-      "question": "What is the most important element for safety during the team lift shown here?",
-      "imageDescription": "Two workers are carrying a long extension ladder. One worker is at the front, and the other is at the back. They appear to be talking to each other as they move",
-      "type": "image_question",
-      "imageAlt": "Two workers carrying a long ladder, one looking back at the other",
+      "question": "Two workers are carrying a long extension ladder. One worker is at the front, and the other is at the back. They appear to be talking to each other as they move. What is the most important element for safety during the team lift ?",
+      "type": "multiple_choice",
       "explanation": "When team lifting, one person must take the lead to coordinate timing and movements to ensure the load is balanced",
-      "id": "mh-im-0094"
+      "id": "mh-im-0094",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A worker reaching high up to pull a box down from a top shelf",
       "explanation": "Lifting from the floor or from above shoulder height is part of the 'Task' assessment as it increases the physical demand and risk of injury",
-      "imageDescription": "A worker is standing on their tiptoes, reaching well above their head to pull a heavy box off a top shelf in a storage room",
-      "type": "image_question",
-      "question": "Which part of the LITE assessment identifies the height of the lift shown here as a risk?",
+      "type": "multiple_choice",
+      "question": "A worker is standing on their tiptoes, reaching well above their head to pull a heavy box off a top shelf in a storage room. Which part of the LITE assessment identifies the height of the lift as a risk?",
       "correctAnswer": 1,
       "options": [
         "Individual Capability",
@@ -6913,14 +6817,13 @@
         "Environment - lighting",
         "Load - sharp edges"
       ],
-      "id": "mh-im-0095"
+      "id": "mh-im-0095",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "In the context of UK law, what is the purpose of the weight zones shown in this image?",
+      "question": "A graphic showing the HSE (Health and Safety Executive) suggested weight guidelines for manual handling, showing different zones for men and women relative to their body height. In the context of UK law, what is the purpose of the weight zones shown ?",
       "explanation": "The HSE provides guideline weights for lifting and lowering, which are reduced if the load is held away from the body or above shoulder height",
-      "imageAlt": "An HSE guideline chart showing weight limits for men and women at different heights",
-      "type": "image_question",
-      "imageDescription": "A graphic showing the HSE (Health and Safety Executive) suggested weight guidelines for manual handling, showing different zones for men and women relative to their body height",
+      "type": "multiple_choice",
       "options": [
         "They are legal limits that cannot be exceeded",
         "They apply to team lifts only",
@@ -6928,14 +6831,13 @@
         "They only apply to office workers"
       ],
       "correctAnswer": 2,
-      "id": "mh-im-0096"
+      "id": "mh-im-0096",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "In the TILE assessment, which factor accounts for the specific physical needs of the person shown in this image?",
+      "question": "A side view of a warehouse employee who is visibly pregnant, standing next to a stack of boxes and looking hesitant about lifting one. In the TILE assessment, which factor accounts for the specific physical needs of the person shown ?",
       "explanation": "The 'I' in TILE stands for Individual Capability, which considers a person's health, fitness, and any existing medical conditions or physical limitations",
-      "imageDescription": "A side view of a warehouse employee who is visibly pregnant, standing next to a stack of boxes and looking hesitant about lifting one",
-      "type": "image_question",
-      "imageAlt": "A pregnant worker considering whether to lift a box",
+      "type": "multiple_choice",
       "options": [
         "Task",
         "Load",
@@ -6943,149 +6845,139 @@
         "Environment"
       ],
       "correctAnswer": 2,
-      "id": "mh-im-0097"
+      "id": "mh-im-0097",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A person standing with feet shoulder-width apart next to a box",
       "options": [
         "To provide a stable base of support",
         "To increase the lifting speed",
         "To reduce the weight of the load",
         "To keep the floor clean"
       ],
-      "type": "image_question",
-      "imageDescription": "A close-up of a worker's feet; they are wearing safety boots and are positioned shoulder-width apart with one foot slightly ahead of the other next to a heavy crate",
+      "type": "multiple_choice",
       "correctAnswer": 0,
       "explanation": "Widening the stance provides a stable base and better balance, which is essential before attempting to move a load",
-      "question": "What is the primary reason for the foot position shown in this photo?",
-      "id": "mh-im-0098"
+      "question": "A close-up of a worker's feet; they are wearing safety boots and are positioned shoulder-width apart with one foot slightly ahead of the other next to a heavy crate. What is the primary reason for the foot position shown in this photo?",
+      "id": "mh-im-0098",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What high-risk movement is the worker in this image performing?",
+      "question": "A worker is holding a parcel at chest height. Their feet are facing forward, but their upper body is twisted 90 degrees to place the parcel on a side table. What high-risk movement is the worker performing?",
       "explanation": "Twisting while carrying a load is a major cause of back injury; workers should move their feet to turn instead of rotating the spine",
-      "imageDescription": "A worker is holding a parcel at chest height. Their feet are facing forward, but their upper body is twisted 90 degrees to place the parcel on a side table",
-      "imageAlt": "A worker holding a box and twisting their torso to the side",
       "options": [
         "Reaching too high",
         "Twisting the trunk (spine)",
         "Lifting with the legs",
         "Holding the load too close"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 1,
-      "id": "mh-im-0099"
+      "id": "mh-im-0099",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 3,
-      "imageDescription": "A worker in a high-visibility vest is using a metal sack truck to move three large, stacked cardboard boxes across a flat floor",
-      "imageAlt": "A sack truck being used to move several heavy boxes",
       "options": [
         "To make the task more difficult",
         "To replace the need for training",
         "Because the law says everyone must use one for every load",
         "To avoid the need for manual handling where reasonably practicable"
       ],
-      "type": "image_question",
-      "question": "According to UK Manual Handling Regulations, why should the equipment in this image be used?",
+      "type": "multiple_choice",
+      "question": "A worker in a high-visibility vest is using a metal sack truck to move three large, stacked cardboard boxes across a flat floor. According to UK Manual Handling Regulations, why should the equipment be used?",
       "explanation": "Employers are legally required to provide mechanical aids, such as trolleys or pallet trucks, whenever it is 'reasonably practicable' to avoid manual handling",
-      "id": "mh-im-0100"
+      "id": "mh-im-0100",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "Lifting from the floor level requires more effort and puts more strain on the body than lifting from waist height",
-      "question": "Looking at the position of the load in this image, what is a significant 'Task' risk factor?",
-      "imageAlt": "A box sitting directly on the warehouse floor",
+      "question": "A single, large cardboard box sitting on a concrete floor with no pallet or platform underneath it. A worker is preparing to bend down to grab it. Looking at the position of the load , what is a significant 'Task' risk factor?",
       "options": [
         "The load is too light",
         "The vertical lift distance from the floor level",
         "The color of the box",
         "The lack of labels"
       ],
-      "type": "image_question",
-      "imageDescription": "A single, large cardboard box sitting on a concrete floor with no pallet or platform underneath it. A worker is preparing to bend down to grab it",
+      "type": "multiple_choice",
       "correctAnswer": 1,
-      "id": "mh-im-0101"
+      "id": "mh-im-0101",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 2,
-      "type": "image_question",
-      "imageAlt": "A worker walking toward a small spill of liquid on the floor",
+      "type": "multiple_choice",
       "options": [
         "Load",
         "Individual",
         "Environment",
         "Task"
       ],
-      "imageDescription": "In a warehouse aisle, there is a small puddle of clear liquid on the floor directly in the path of a worker carrying a crate",
       "explanation": "The 'E' in LITE stands for Environment, which includes hazards like uneven floors, poor lighting, or temperature issues",
-      "question": "Under the LITE assessment, which category does the hazard on the floor in this image fall into?",
-      "id": "mh-im-0102"
+      "question": "In a warehouse aisle, there is a small puddle of clear liquid on the floor directly in the path of a worker carrying a crate. Under the LITE assessment, which category does the hazard on the floor fall into?",
+      "id": "mh-im-0102",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "HSE guidelines suggest that the maximum weight capacity for men and women reduces significantly when the load is held at head height",
-      "question": "How does the height of the shelf in this image affect the safe lifting capacity of the worker?",
+      "question": "A silhouette of a person lifting a 5kg box from waist height up to a shelf that is above their head height. How does the height of the shelf affect the safe lifting capacity of the worker?",
       "correctAnswer": 0,
-      "type": "image_question",
-      "imageAlt": "A diagram showing a person lifting a box to a high shelf above their head",
+      "type": "multiple_choice",
       "options": [
         "The lifting capacity of the individual decreases",
         "The load becomes lighter at height",
         "It is safer to lift above the head than at waist height",
         "The spine is under less pressure"
       ],
-      "imageDescription": "A silhouette of a person lifting a 5kg box from waist height up to a shelf that is above their head height",
-      "id": "mh-im-0103"
+      "id": "mh-im-0103",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 1,
-      "imageAlt": "A side view of a worker holding a box close to their stomach",
       "options": [
         "Holding it at arm's length",
         "Keeping the load close to the body",
         "Lifting with a rounded back",
         "Looking down at the feet"
       ],
-      "type": "image_question",
-      "imageDescription": "A worker is shown from the side in a 'frozen' mid-lift position. They are holding a box tucked tightly against their torso at waist height",
+      "type": "multiple_choice",
       "explanation": "Proper manual handling training teaches workers to keep the load's center of gravity as close to their own body as possible to reduce strain",
-      "question": "Which safe lifting principle is being correctly demonstrated in this image?",
-      "id": "mh-im-0104"
+      "question": "A worker is shown from the side in a 'frozen' mid-lift position. They are holding a box tucked tightly against their torso at waist height. Which safe lifting principle is being correctly demonstrated ?",
+      "id": "mh-im-0104",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What type of injury is most likely being experienced by the person in this image?",
+      "question": "An office worker is sitting at a desk but is leaning forward and holding their lower back with a grimace, suggesting pain from a recent lift. What type of injury is most likely being experienced by the person ?",
       "explanation": "Musculoskeletal Disorders (MSDs) are injuries affecting the muscles, nerves, and joints, often caused by poor manual handling",
-      "imageDescription": "An office worker is sitting at a desk but is leaning forward and holding their lower back with a grimace, suggesting pain from a recent lift",
-      "imageAlt": "A worker sitting down and rubbing their lower back in pain",
       "options": [
         "Minor Scratches",
         "Flu symptoms",
         "Digestive issues",
         "Musculoskeletal Disorders (MSDs)"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 3,
-      "id": "mh-im-0105"
+      "id": "mh-im-0105",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 2,
-      "imageDescription": "Two workers are standing at either end of a long wooden crate, communicating with each other before they lift it together",
-      "type": "image_question",
-      "imageAlt": "Two people standing on either side of a very long, heavy-looking crate",
+      "type": "multiple_choice",
       "options": [
         "Using a forklift",
         "Wearing a back brace",
         "Performing a team lift",
         "Changing the weight of the box"
       ],
-      "question": "What control measure is being used to manage the risk of the heavy load shown here?",
+      "question": "Two workers are standing at either end of a long wooden crate, communicating with each other before they lift it together. What control measure is being used to manage the risk of the heavy load ?",
       "explanation": "If a load is too heavy or awkward for one person, getting help for a team lift is a standard risk control measure",
-      "id": "mh-im-0106"
+      "id": "mh-im-0106",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What is the benefit of the hand placement (grip) shown in this close-up?",
+      "question": "A close-up shot of a person's hands positioned underneath the corners of a box. The weight is resting on the palms rather than just the fingers. What is the benefit of the hand placement (grip) shown in this close-up?",
       "explanation": "A 'Palms' or 'Power' grip uses the whole hand, which is more secure and reduces the strain on fingers compared to a fingertip grip",
-      "imageDescription": "A close-up shot of a person's hands positioned underneath the corners of a box. The weight is resting on the palms rather than just the fingers",
-      "type": "image_question",
-      "imageAlt": "Close up of hands underneath a box using the palms",
+      "type": "multiple_choice",
       "options": [
         "It is more secure and uses the whole hand",
         "It allows the worker to drop the box faster",
@@ -7093,29 +6985,27 @@
         "It prevents the box from getting dirty"
       ],
       "correctAnswer": 0,
-      "id": "mh-im-0107"
+      "id": "mh-im-0107",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A worker is shown leaning forward over a wide packing table to reach a parcel on the far side, extending their arms fully",
-      "imageAlt": "A worker reaching across a wide table to grab a parcel",
       "options": [
         "Leg strength",
         "Floor surface",
         "Grip type",
         "Stretching and over-reaching"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 3,
-      "question": "Which specific risk factor is most evident in this worker's posture?",
+      "question": "A worker is shown leaning forward over a wide packing table to reach a parcel on the far side, extending their arms fully. Which specific risk factor is most evident in this worker's posture?",
       "explanation": "The HSE provided 'MAC' tool or lifting charts show that reach distance significantly impacts how much weight can be safely handled",
-      "id": "mh-im-0108"
+      "id": "mh-im-0108",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A delivery driver twisting their torso to place a box onto a side rack while their feet remain facing forward",
-      "imageDescription": "A person in a high-visibility vest holding a cardboard box. Their feet are firmly planted facing forward, but their shoulders and torso are rotated 90 degrees to the right to place the box on a shelf",
       "explanation": "Twisting while carrying a load puts uneven pressure on the spinal discs and is a major cause of back injury",
-      "type": "image_question",
-      "question": "What is the main ergonomic hazard being demonstrated by the worker in this image?",
+      "type": "multiple_choice",
+      "question": "A person in a high-visibility vest holding a cardboard box. Their feet are firmly planted facing forward, but their shoulders and torso are rotated 90 degrees to the right to place the box on a shelf. What is the main ergonomic hazard being demonstrated by the worker ?",
       "options": [
         "Incorrect foot placement",
         "Over-reaching upwards",
@@ -7123,11 +7013,12 @@
         "Holding the load too close"
       ],
       "correctAnswer": 2,
-      "id": "mh-im-0109"
+      "id": "mh-im-0109",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "question": "By using the workbench shown in the image, which element of the TILE assessment is being improved?",
+      "type": "multiple_choice",
+      "question": "A warehouse worker picking up a plastic crate from a sturdy metal workbench that is approximately 75cm high. There is a similar crate on the floor nearby that they are ignoring. By using the workbench shown , which element of the TILE assessment is being improved?",
       "options": [
         "Individual capability",
         "The Task (reducing vertical travel)",
@@ -7135,17 +7026,14 @@
         "The Environment (lighting)"
       ],
       "correctAnswer": 1,
-      "imageAlt": "A worker lifting a crate from a waist-high workbench instead of the floor",
-      "imageDescription": "A warehouse worker picking up a plastic crate from a sturdy metal workbench that is approximately 75cm high. There is a similar crate on the floor nearby that they are ignoring",
       "explanation": "Lifting from the floor significantly increases the strain on the lower back; using a table to keep the load at waist height is a key 'Task' improvement",
-      "id": "mh-im-0110"
+      "id": "mh-im-0110",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A worker pulling a pallet jack through a warehouse corridor",
-      "imageDescription": "Detailed view of a warehouse employee using a manual pallet jack to move a loaded wooden pallet. They are walking backwards, pulling the handle with one hand",
       "explanation": "Manual handling encompasses any transporting or supporting of a load, including pulling, pushing, and carrying",
-      "type": "image_question",
-      "question": "Does the activity shown in this image fall under the legal definition of 'Manual Handling' in the UK?",
+      "type": "multiple_choice",
+      "question": "Detailed view of a warehouse employee using a manual pallet jack to move a loaded wooden pallet. They are walking backwards, pulling the handle with one hand. Does the activity shown fall under the legal definition of 'Manual Handling' in the UK?",
       "options": [
         "Yes, manual handling includes pulling and pushing loads",
         "No, because the load is on wheels",
@@ -7153,7 +7041,8 @@
         "Only if the load exceeds 25kg"
       ],
       "correctAnswer": 0,
-      "id": "mh-im-0111"
+      "id": "mh-im-0111",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 1,
@@ -7163,17 +7052,14 @@
         "To keep the load at arm's length",
         "To ensure the back is perfectly vertical"
       ],
-      "question": "Why is the person in this image using this specific leg position to start the lift?",
-      "type": "image_question",
+      "question": "A person positioned to lift a box from the floor. Their knees are bent, their back is straight/flat at an angle, and their feet are hip-width apart. Why is the person using this specific leg position to start the lift?",
+      "type": "multiple_choice",
       "explanation": "Bending the knees (squatting) allows the strong leg muscles to do the work rather than the weaker muscles of the lower back",
-      "imageDescription": "A person positioned to lift a box from the floor. Their knees are bent, their back is straight/flat at an angle, and their feet are hip-width apart",
-      "imageAlt": "A person in a squatting position with a flat back, preparing to lift a box from the ground",
-      "id": "mh-im-0112"
+      "id": "mh-im-0112",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "A 'Load' risk factor includes the physical state of the item; sharp edges or rough surfaces can cause immediate injury",
-      "imageAlt": "A close-up of a wooden pallet with splintered edges and protruding rusty nails",
-      "imageDescription": "Macro shot of the side of a used wooden pallet. The wood is cracked with sharp splinters sticking out, and a rusty nail head is partially exposed",
       "correctAnswer": 3,
       "options": [
         "The Environment",
@@ -7181,16 +7067,15 @@
         "The Task",
         "The Load"
       ],
-      "type": "image_question",
-      "question": "According to the LITE/TILE assessment, which category of risk is represented by the condition of the equipment in this photo?",
-      "id": "mh-im-0113"
+      "type": "multiple_choice",
+      "question": "Macro shot of the side of a used wooden pallet. The wood is cracked with sharp splinters sticking out, and a rusty nail head is partially exposed. According to the LITE/TILE assessment, which category of risk is represented by the condition of the equipment in this photo?",
+      "id": "mh-im-0113",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A bird's-eye view looking down at a worker's feet on a warehouse floor. One foot is positioned to the side of a box, and the other is slightly behind it, create a wide, staggered stance",
-      "imageAlt": "Top-down view of a worker's feet positioned around a box, with one foot slightly ahead of the other",
       "explanation": "Maintaining a wide, stable base with one foot slightly forward helps with balance throughout the duration of a lift",
-      "question": "What is the primary purpose of the foot placement shown in this image?",
-      "type": "image_question",
+      "question": "A bird's-eye view looking down at a worker's feet on a warehouse floor. One foot is positioned to the side of a box, and the other is slightly behind it, create a wide, staggered stance. What is the primary purpose of the foot placement shown ?",
+      "type": "multiple_choice",
       "options": [
         "To prevent the box from moving",
         "To improve walking speed",
@@ -7198,14 +7083,13 @@
         "To protect the toes from falling objects"
       ],
       "correctAnswer": 2,
-      "id": "mh-im-0114"
+      "id": "mh-im-0114",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A narrow storage aisle with boxes stacked high on both sides and a small puddle of liquid on the floor",
-      "imageDescription": "A very narrow aisle in a stockroom. Space is cramped. On the floor, there is a small, shiny patch indicating a liquid spill or wet surface",
       "explanation": "The 'Environment' factor in TILE includes considerations like floor conditions, space constraints, and lighting",
-      "type": "image_question",
-      "question": "In this image, which TILE factor poses the most immediate risk to a worker attempting a lift?",
+      "type": "multiple_choice",
+      "question": "A very narrow aisle in a stockroom. Space is cramped. On the floor, there is a small, shiny patch indicating a liquid spill or wet surface. , which TILE factor poses the most immediate risk to a worker attempting a lift?",
       "options": [
         "The Environment (slippery and cramped)",
         "The Individual (poor training)",
@@ -7213,11 +7097,12 @@
         "The Task (too repetitive)"
       ],
       "correctAnswer": 0,
-      "id": "mh-im-0115"
+      "id": "mh-im-0115",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What common type of workplace injury is the person in this image likely suffering from?",
-      "type": "image_question",
+      "question": "An office employee standing next to a stack of heavy paper reams. They have one hand pressed into the small of their back and their face is contorted in discomfort. What common type of workplace injury is the person likely suffering from?",
+      "type": "multiple_choice",
       "options": [
         "Acute respiratory infection",
         "Repetitive Strain Sight (RSS)",
@@ -7225,10 +7110,9 @@
         "Musculoskeletal Disorders (MSDs)"
       ],
       "correctAnswer": 3,
-      "imageDescription": "An office employee standing next to a stack of heavy paper reams. They have one hand pressed into the small of their back and their face is contorted in discomfort",
-      "imageAlt": "An office worker rubbing their lower back with a pained expression after moving a stack of paper",
       "explanation": "Musculoskeletal Disorders (MSDs) are injuries affecting the muscles, nerves, tendons, and joints, often caused by poor manual handling",
-      "id": "mh-im-0116"
+      "id": "mh-im-0116",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 1,
@@ -7238,17 +7122,14 @@
         "Providing back braces to everyone",
         "Reducing the weight of the boxes"
       ],
-      "type": "image_question",
-      "question": "This image demonstrates which 'Hierarchy of Control' for manual handling?",
+      "type": "multiple_choice",
+      "question": "A motorized roller conveyor belt in a factory setting moving cardboard boxes from one station to another. There are no people carrying the boxes. The image demonstrates which 'Hierarchy of Control' for manual handling?",
       "explanation": "Employers must first attempt to avoid manual handling altogether before looking at ways to reduce the risk through other means",
-      "imageAlt": "A conveyor belt system transporting boxes across a factory floor, replacing the need for workers to carry them",
-      "imageDescription": "A motorized roller conveyor belt in a factory setting moving cardboard boxes from one station to another. There are no people carrying the boxes",
-      "id": "mh-im-0117"
+      "id": "mh-im-0117",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "The HSE suggests guide weights for lifting; for a woman, the maximum recommended weight at elbow height (the strongest zone) is 16kg",
-      "imageAlt": "A diagram showing the HSE lifting zones with a load held at elbow height by a female worker",
-      "imageDescription": "An infographic showing a female silhouette. Superimposed over her are coloured zones (red, amber, green) showing weight limits. The green 'safe' zone is at elbow height",
       "correctAnswer": 2,
       "options": [
         "7kg",
@@ -7256,13 +7137,14 @@
         "16kg",
         "10kg"
       ],
-      "type": "image_question",
-      "question": "According to HSE guidelines for the 'average' woman, what is the maximum recommended weight for a lift in the zone shown as green in this image?",
-      "id": "mh-im-0118"
+      "type": "multiple_choice",
+      "question": "An infographic showing a female silhouette. Superimposed over her are coloured zones (red, amber, green) showing weight limits. The green 'safe' zone is at elbow height. According to HSE guidelines for the 'average' woman, what is the maximum recommended weight for a lift in the zone shown as green ?",
+      "id": "mh-im-0118",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "question": "Why is the activity in this image considered a high-risk 'Task' under the Manual Handling Regulations?",
+      "type": "multiple_choice",
+      "question": "A worker sitting in a standard office swivel chair. They are leaning over the side of the chair to lift a heavy-looking archive box from the floor while remaining seated. Why is the activity considered a high-risk 'Task' under the Manual Handling Regulations?",
       "correctAnswer": 0,
       "options": [
         "Lifting while seated reduces lifting capacity significantly",
@@ -7270,10 +7152,9 @@
         "It is safer because they cannot trip over",
         "It is more efficient for short distances"
       ],
-      "imageAlt": "An office worker sitting in a chair and reaching to pick up a heavy box from the floor",
-      "imageDescription": "A worker sitting in a standard office swivel chair. They are leaning over the side of the chair to lift a heavy-looking archive box from the floor while remaining seated",
       "explanation": "Handling a load while seated is a 'Task' risk because it significantly reduces the strength of the back and increases the risk of injury",
-      "id": "mh-im-0119"
+      "id": "mh-im-0119",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -7283,15 +7164,13 @@
         "The Load factor (unstable contents)"
       ],
       "correctAnswer": 3,
-      "question": "Which risk factor is specifically highlighted by the movement of the contents in this container?",
-      "type": "image_question",
+      "question": "A semi-transparent 25-litre plastic drum. It is half-full of liquid. As it is tilted slightly, the liquid is seen rushing to one side, shifting the weight. Which risk factor is specifically highlighted by the movement of the contents in this container?",
+      "type": "multiple_choice",
       "explanation": "The HSE indicates that loads with a shifting centre of gravity (like liquids) increase the physical demand and unpredictability of a lift",
-      "imageDescription": "A semi-transparent 25-litre plastic drum. It is half-full of liquid. As it is tilted slightly, the liquid is seen rushing to one side, shifting the weight",
-      "imageAlt": "A large plastic container half-filled with water, showing the water sloshing to one side",
-      "id": "mh-im-0120"
+      "id": "mh-im-0120",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A split image showing a worker lifting a box from the floor. Side A shows a hunched secondary curve in the spine (incorrect). Side B shows the worker with a neutral spine, bent knees, and the load held close (correct)",
       "options": [
         "To look more professional while working",
         "To maintain the natural 'S' shape of the spine",
@@ -7299,18 +7178,16 @@
         "To increase the amount of weight a person can carry"
       ],
       "explanation": "Maintaining the natural 'S' curve of the spine while lifting reduces pressure on the intervertebral discs and prevents Musculoskeletal Disorders (MSDs)",
-      "type": "image_question",
-      "imageAlt": "Side view of a worker lifting a box with a curved, rounded back vs a neutral, straight back",
-      "question": "Why is the spine position shown in the 'correct' example of this image vital for long-term health?",
+      "type": "multiple_choice",
+      "question": "A split image showing a worker lifting a box from the floor. Side A shows a hunched secondary curve in the spine (incorrect). Side B shows the worker with a neutral spine, bent knees, and the load held close (correct). Why is the spine position shown in the 'correct' example of the image vital for long-term health?",
       "correctAnswer": 1,
-      "id": "mh-im-0121"
+      "id": "mh-im-0121",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "Two workers: one very tall person and one shorter person trying to reach the same high overhead shelf",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 0,
-      "question": "When performing a TILE assessment, which factor is most clearly highlighted by the difference between these two workers?",
-      "imageDescription": "Two workers of significantly different heights are attempting to retrieve a lightweight box from a high shelf. One is reaching comfortably; the other is on their tiptoes, overstretching",
+      "question": "Two workers of significantly different heights are attempting to retrieve a lightweight box from a high shelf. One is reaching comfortably; the other is on their tiptoes, overstretching. When performing a TILE assessment, which factor is most clearly highlighted by the difference between these two workers?",
       "options": [
         "Individual capability",
         "Environmental temperature",
@@ -7318,7 +7195,8 @@
         "Task frequency"
       ],
       "explanation": "The TILE (Task, Individual, Load, Environment) assessment requires evaluating the person's physical capability, including their height and strength",
-      "id": "mh-im-0122"
+      "id": "mh-im-0122",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -7328,18 +7206,16 @@
         "Twisting the trunk (torso) while under load"
       ],
       "explanation": "Twisting while lifting is a major cause of back injury; workers should move their feet to turn instead of rotating the torso",
-      "imageDescription": "An overhead view of a worker mid-lift. Their feet are planted firmly facing one direction, but their hips and shoulders are twisted sharply to the right to place a crate on a conveyor belt",
-      "type": "image_question",
-      "imageAlt": "A worker holding a crate with their feet facing forward but their torso twisted 90 degrees to place it on a side table",
-      "question": "In this image, which high-risk movement is the worker performing while handling the crate?",
+      "type": "multiple_choice",
+      "question": "An overhead view of a worker mid-lift. Their feet are planted firmly facing one direction, but their hips and shoulders are twisted sharply to the right to place a crate on a conveyor belt. , which high-risk movement is the worker performing while handling the crate?",
       "correctAnswer": 3,
-      "id": "mh-im-0123"
+      "id": "mh-im-0123",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 2,
-      "question": "What is the primary safety benefit of the 'Team Handling' technique shown in this image?",
-      "type": "image_question",
-      "imageAlt": "Two people carrying a long, heavy wooden plank together",
+      "question": "Two workers are carrying a long, heavy timber beam. They are positioned at either end, walking in sync. One appears to be leading the movement. What is the primary safety benefit of the 'Team Handling' technique shown ?",
+      "type": "multiple_choice",
       "explanation": "A two-person lift (team handling) reduces the weight handled by each individual but requires clear communication and coordination",
       "options": [
         "It allows them to carry three times the weight of one person",
@@ -7347,8 +7223,8 @@
         "It reduces the individual load but requires coordination",
         "It is the legal requirement for any load over 5kg"
       ],
-      "imageDescription": "Two workers are carrying a long, heavy timber beam. They are positioned at either end, walking in sync. One appears to be leading the movement",
-      "id": "mh-im-0124"
+      "id": "mh-im-0124",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -7358,19 +7234,16 @@
         "Risk only exists if the load is heavier than 50kg"
       ],
       "explanation": "The HSE guidelines state that the weight capacity for lifting is significantly reduced when a load is held at head or shoulder height",
-      "imageDescription": "A diagram of a human silhouette with various 'zones' marked (Floor, Knuckle, Elbow, Shoulder, Head). There are arrows pointing to the Head/Shoulder zone",
-      "imageAlt": "A diagram showing a person holding a box at different heights: floor, knuckle height, elbow height, and head height",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 0,
-      "question": "According to HSE guidelines, how does holding a load at the height indicated in this image affect lifting capacity?",
-      "id": "mh-im-0125"
+      "question": "A diagram of a human silhouette with various 'zones' marked (Floor, Knuckle, Elbow, Shoulder, Head). There are arrows pointing to the Head/Shoulder zone. According to HSE guidelines, how does holding a load at the height indicated affect lifting capacity?",
+      "id": "mh-im-0125",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A transparent container half-filled with water being tilted, showing the liquid sloshing to one side",
-      "type": "image_question",
-      "question": "Regarding the 'Load' element of TILE, why is the container in this image difficult to handle safely?",
+      "type": "multiple_choice",
+      "question": "A person is carrying a semi-transparent plastic container half-filled with liquid. As they walk, the liquid is sloshing back and forth, causing the container to tilt. Regarding the 'Load' element of TILE, why is the container difficult to handle safely?",
       "correctAnswer": 2,
-      "imageDescription": "A person is carrying a semi-transparent plastic container half-filled with liquid. As they walk, the liquid is sloshing back and forth, causing the container to tilt",
       "options": [
         "The weight of the load is too low for a trolley",
         "The container is too small to be a risk",
@@ -7378,7 +7251,8 @@
         "The Load is perfectly safe because it is under 10kg"
       ],
       "explanation": "A 'stable' load has its centre of gravity fixed. When liquid moves, the centre of gravity shifts, making the load harder to control",
-      "id": "mh-im-0126"
+      "id": "mh-im-0126",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -7388,15 +7262,13 @@
         "The Load being too hot to touch"
       ],
       "explanation": "The Environment (E in LITE/TILE) includes factors like lighting, floor surface, and space constraints that affect safety",
-      "imageDescription": "A worker is seen from the back, walking down a very narrow, poorly lit hallway while carrying a large box that obscures their downward vision. Small scraps of packing tape are on the floor",
-      "imageAlt": "A narrow warehouse aisle with dim lighting and several cardboard scraps on the floor",
-      "type": "image_question",
-      "question": "Which specific category of the LITE assessment is most concerning in this workplace scenario?",
+      "type": "multiple_choice",
+      "question": "A worker is seen from the back, walking down a very narrow, poorly lit hallway while carrying a large box that obscures their downward vision. Small scraps of packing tape are on the floor. Which specific category of the LITE assessment is most concerning in this workplace scenario?",
       "correctAnswer": 1,
-      "id": "mh-im-0127"
+      "id": "mh-im-0127",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A worker is using a manual pallet jack (pump truck) to move a pallet of bricks across a smooth warehouse floor. They are pulling the jack with one hand while looking ahead",
       "options": [
         "To speed up the work to increase profit",
         "Because workers are not allowed to lift more than 5kg",
@@ -7404,16 +7276,15 @@
         "To avoid hazardous manual handling where reasonably practicable"
       ],
       "explanation": "The Manual Handling Operations Regulations 1992 state that employers must avoid hazardous manual handling tasks 'so far as is reasonably practicable'",
-      "imageAlt": "An employee using a pallet jack to move a heavy stack of boxes instead of carrying them",
-      "type": "image_question",
-      "question": "What is the primary legal reason for using the mechanical aid shown in this image?",
+      "type": "multiple_choice",
+      "question": "A worker is using a manual pallet jack (pump truck) to move a pallet of bricks across a smooth warehouse floor. They are pulling the jack with one hand while looking ahead. What is the primary legal reason for using the mechanical aid shown ?",
       "correctAnswer": 3,
-      "id": "mh-im-0128"
+      "id": "mh-im-0128",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "An office worker who is visibly pregnant reaching down to pick up a stack of paper",
-      "type": "image_question",
-      "question": "In the context of the 'Individual' in TILE, why does the person in this image require special consideration?",
+      "type": "multiple_choice",
+      "question": "A female worker in an office setting, who is clearly in the later stages of pregnancy, is bending over her desk to lift a heavy-looking archive box from a low shelf. In the context of the 'Individual' in TILE, why does the person require special consideration?",
       "correctAnswer": 0,
       "options": [
         "Pregnancy requires a specific individual risk assessment",
@@ -7422,14 +7293,13 @@
         "Only the 'Environment' needs to be checked in this case"
       ],
       "explanation": "The 'Individual' factor includes checking if the person has a pre-existing injury or a health condition like pregnancy that may require a specific risk assessment",
-      "imageDescription": "A female worker in an office setting, who is clearly in the later stages of pregnancy, is bending over her desk to lift a heavy-looking archive box from a low shelf",
-      "id": "mh-im-0129"
+      "id": "mh-im-0129",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 1,
-      "question": "Why might the PPE (gloves) shown in this image actually increase the risk during manual handling?",
-      "type": "image_question",
-      "imageAlt": "Close up of hands wearing oversized, loose-fitting industrial gloves trying to grip a small metal handle",
+      "question": "A close-up shot of a worker's hands. They are wearing heavy, oversized leather gloves that are much too big for them, making it difficult to wrap their fingers around the handle of a tool box. Why might the PPE (gloves) shown actually increase the risk during manual handling?",
+      "type": "multiple_choice",
       "explanation": "Wearing gloves (PPE) can improve grip on slippery or rough loads, but if they are poorly fitted, they can reduce dexterity and increase risk",
       "options": [
         "They provide maximum protection regardless of size",
@@ -7437,8 +7307,8 @@
         "Gloves are only used to keep hands clean",
         "The worker should be wearing a back support belt instead"
       ],
-      "imageDescription": "A close-up shot of a worker's hands. They are wearing heavy, oversized leather gloves that are much too big for them, making it difficult to wrap their fingers around the handle of a tool box",
-      "id": "mh-im-0130"
+      "id": "mh-im-0130",
+      "__rewritten_from_image__": true
     },
     {
       "question": "By law, an employer's first priority should be to avoid the need for manual handling altogether if there is a risk of injury",
@@ -7786,7 +7656,7 @@
     {
       "explanation": "The 'T' in TILE stands for 'Task', which includes factors like twisting, stooping, stretching, and the frequency of the lift",
       "correctAnswer": false,
-      "question": "In the TILE assessment, the letter ‘T’ stands for 'Tools', referring to any equipment used during the lift",
+      "question": "In the TILE assessment, the letter \u2018T\u2019 stands for 'Tools', referring to any equipment used during the lift",
       "type": "true_false",
       "id": "mh-tf-0050"
     },

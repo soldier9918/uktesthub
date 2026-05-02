@@ -676,7 +676,7 @@
         "Minutes or hours",
         "A few days",
         "Exactly one year",
-        "Many years (often 10–40 years)"
+        "Many years (often 10\u201340 years)"
       ],
       "id": "ch-mc-0052"
     },
@@ -827,7 +827,7 @@
       "type": "multiple_choice",
       "options": [
         "The site layout plan",
-        "The fire marshal’s handbook",
+        "The fire marshal\u2019s handbook",
         "The Lifting Operations and Lifting Equipment Regulations (LOLER)",
         "The COSHH assessment for that substance"
       ],
@@ -885,7 +885,7 @@
       ],
       "explanation": "Weil's disease (Leptospirosis) is a serious infection carried in rat urine, often found in wet ground or near water",
       "correctAnswer": 1,
-      "question": "How is Weil’s disease (Leptospirosis) most commonly contracted on a construction site?",
+      "question": "How is Weil\u2019s disease (Leptospirosis) most commonly contracted on a construction site?",
       "id": "ch-mc-0068"
     },
     {
@@ -902,7 +902,7 @@
       "id": "ch-mc-0069"
     },
     {
-      "explanation": "Red signs with white symbols or text indicate prohibited actions—things you must not do",
+      "explanation": "Red signs with white symbols or text indicate prohibited actions\u2014things you must not do",
       "options": [
         "Prohibition (things you must not do)",
         "Mandatory (things you must do)",
@@ -2235,9 +2235,9 @@
         "Foxes",
         "Domestic cats"
       ],
-      "explanation": "Weil’s disease (Leptospirosis) is often carried in the urine of rats and can enter the body through cuts or the mouth",
+      "explanation": "Weil\u2019s disease (Leptospirosis) is often carried in the urine of rats and can enter the body through cuts or the mouth",
       "correctAnswer": 1,
-      "question": "Which animal is the most common primary carrier of Weil’s disease (Leptospirosis) on a construction site?",
+      "question": "Which animal is the most common primary carrier of Weil\u2019s disease (Leptospirosis) on a construction site?",
       "id": "ch-mc-0172"
     },
     {
@@ -3496,9 +3496,9 @@
         "Touching lead-based paint without using gloves",
         "Contact with water or soil contaminated by rat urine"
       ],
-      "explanation": "Leptospirosis (Weil’s disease) is a serious infection carried in the urine of rats and is often found in contaminated water or damp soil",
+      "explanation": "Leptospirosis (Weil\u2019s disease) is a serious infection carried in the urine of rats and is often found in contaminated water or damp soil",
       "type": "multiple_choice",
-      "question": "How is a worker most likely to catch Leptospirosis (Weil’s disease)?",
+      "question": "How is a worker most likely to catch Leptospirosis (Weil\u2019s disease)?",
       "id": "ch-mc-0269"
     },
     {
@@ -4009,14 +4009,14 @@
       "id": "ch-mc-0308"
     },
     {
-      "explanation": "Leptospirosis (Weil’s disease) is a serious infection spread in the urine of animals, most commonly rats",
+      "explanation": "Leptospirosis (Weil\u2019s disease) is a serious infection spread in the urine of animals, most commonly rats",
       "options": [
         "Pigeons",
         "Domestic cats",
         "Foxes",
         "Rats"
       ],
-      "question": "Which animal is the most common carrier of Weil’s disease (Leptospirosis) on site?",
+      "question": "Which animal is the most common carrier of Weil\u2019s disease (Leptospirosis) on site?",
       "correctAnswer": 3,
       "type": "multiple_choice",
       "id": "ch-mc-0309"
@@ -5082,12 +5082,11 @@
         "Ear protection must be worn",
         "Do not use power tools"
       ],
-      "question": "What does this mandatory blue sign mean?",
-      "imageDescription": "A standard UK mandatory health and safety sign: a blue circle with a white silhouette of ear defenders/headphones in the center",
+      "question": "A standard UK mandatory health and safety sign: a blue circle with a white silhouette of ear defenders/headphones in the center. What does the sign mean?",
       "correctAnswer": 2,
-      "imageAlt": "A blue circular sign showing white headphones",
-      "type": "image_question",
-      "id": "ch-im-0001"
+      "type": "multiple_choice",
+      "id": "ch-im-0001",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "A red circle with a diagonal line through a symbol indicates a prohibition; this task is strictly forbidden",
@@ -5097,16 +5096,14 @@
         "Only authorized personnel may climb",
         "Fragile roof: use crawl boards"
       ],
-      "imageDescription": "A prohibition sign consisting of a red circle with a red diagonal slash through it, superimposed over a black pictogram of a person climbing a silhouette of a ladder",
-      "question": "What is the meaning of this prohibition sign?",
+      "question": "A prohibition sign consisting of a red circle with a red diagonal slash through it, superimposed over a black pictogram of a person climbing a silhouette of a ladder. What is the meaning of the sign?",
       "correctAnswer": 0,
-      "imageAlt": "A red circular sign with a diagonal line over a person climbing a ladder",
-      "type": "image_question",
-      "id": "ch-im-0002"
+      "type": "multiple_choice",
+      "id": "ch-im-0002",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A standard UK fire extinguisher, painted signal red, featuring a prominent black rectangular band/label identifying it as Carbon Dioxide (CO2)",
-      "question": "Which type of fire extinguisher is identified by this black colour-coded band?",
+      "question": "A standard UK fire extinguisher, painted signal red, featuring a prominent black rectangular band/label identifying it as Carbon Dioxide (CO2). Which type of fire extinguisher is identified by this black colour-coded band?",
       "options": [
         "Water only",
         "Dry powder only",
@@ -5114,14 +5111,13 @@
         "Carbon dioxide (CO2)"
       ],
       "explanation": "Carbon dioxide (CO2) extinguishers are identifiable by the black band and are suitable for electrical fires",
-      "type": "image_question",
-      "imageAlt": "A red fire extinguisher with a black band around its body",
+      "type": "multiple_choice",
       "correctAnswer": 3,
-      "id": "ch-im-0003"
+      "id": "ch-im-0003",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What hazard does this warning sign identify?",
-      "imageDescription": "A triangular hazard warning sign with a yellow background, black border, and a black lightning bolt symbol in the center",
+      "question": "A triangular hazard warning sign with a yellow background, black border, and a black lightning bolt symbol in the center. What hazard does the sign identify?",
       "explanation": "An yellow triangle with a lightning bolt warns of the danger of live electricity or high voltage",
       "options": [
         "Static electricity hazard",
@@ -5129,17 +5125,15 @@
         "Magnetic field hazard",
         "Laser radiation warning"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 1,
-      "imageAlt": "A yellow triangle with a black lightning bolt symbol inside",
-      "id": "ch-im-0004"
+      "id": "ch-im-0004",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageAlt": "A green square sign with a white cross and an arrow pointing down",
+      "type": "multiple_choice",
       "correctAnswer": 0,
-      "imageDescription": "A safe condition sign: a green square featuring a white symbol of a cross and a white arrow pointing downwards",
-      "question": "What does this green and white sign indicate?",
+      "question": "A safe condition sign: a green square featuring a white symbol of a cross and a white arrow pointing downwards. What does this green and white sign indicate?",
       "options": [
         "First-aid equipment is located here",
         "Hospital this way",
@@ -5147,12 +5141,12 @@
         "Safe to cross here"
       ],
       "explanation": "The green square with a white cross and a downward arrow indicates the location of first-aid equipment or a first-aider",
-      "id": "ch-im-0005"
+      "id": "ch-im-0005",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A white diamond with a red border showing a dead tree and a dead fish",
       "correctAnswer": 2,
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Hazardous to skin",
         "Poisonous if swallowed",
@@ -5160,13 +5154,12 @@
         "Flammable material"
       ],
       "explanation": "This sign warns of a hazard that is harmful to the natural environment, such as aquatic life",
-      "question": "What does this hazardous substance symbol mean?",
-      "imageDescription": "A GHS (Globally Harmonized System) hazard pictogram: a white diamond with a thick red border depicting a silhouette of a dead tree and a dead fish",
-      "id": "ch-im-0006"
+      "question": "A GHS (Globally Harmonized System) hazard pictogram: a white diamond with a thick red border depicting a silhouette of a dead tree and a dead fish. What does this hazardous substance symbol mean?",
+      "id": "ch-im-0006",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What instruction does this mandatory sign give?",
-      "imageDescription": "A mandatory blue circular sign featuring a white pictogram of a person walking",
+      "question": "A mandatory blue circular sign featuring a white pictogram of a person walking. What instruction does the sign give?",
       "options": [
         "No pedestrians allowed",
         "Pedestrians must use this route",
@@ -5174,15 +5167,14 @@
         "Watch out for pedestrians"
       ],
       "explanation": "This sign indicates a designated route for pedestrians to ensure they are kept separate from moving vehicles",
-      "type": "image_question",
-      "imageAlt": "A blue circular sign with a white silhouette of a person walking",
+      "type": "multiple_choice",
       "correctAnswer": 1,
-      "id": "ch-im-0007"
+      "id": "ch-im-0007",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A white diamond sign with a red border showing a black flame symbol",
       "correctAnswer": 3,
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Corrosive substance",
         "Explosive material",
@@ -5190,16 +5182,14 @@
         "Flammable material"
       ],
       "explanation": "This symbol warns of materials that are flammable and can catch fire easily",
-      "question": "What is the meaning of this hazard pictogram?",
-      "imageDescription": "A GHS hazard pictogram: a white diamond with a red border containing a black silhouette of a flame",
-      "id": "ch-im-0008"
+      "question": "A GHS hazard pictogram: a white diamond with a red border containing a black silhouette of a flame. What is the meaning of this hazard pictogram?",
+      "id": "ch-im-0008",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageAlt": "A green rectangular sign showing a white figure running through a doorway with an arrow",
+      "type": "multiple_choice",
       "correctAnswer": 0,
-      "imageDescription": "A standard emergency exit sign: a green rectangle featuring a white pictogram of a person running toward an open door and a right-pointing arrow",
-      "question": "What does this safe condition sign mean?",
+      "question": "A standard emergency exit sign: a green rectangle featuring a white pictogram of a person running toward an open door and a right-pointing arrow. What does this safe condition sign mean?",
       "options": [
         "Emergency exit / Escape route",
         "Way out for unauthorized persons",
@@ -5207,12 +5197,12 @@
         "Fire assembly point"
       ],
       "explanation": "Signs with a green background and white text/symbols identify emergency exits and escape routes",
-      "id": "ch-im-0009"
+      "id": "ch-im-0009",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 2,
-      "imageAlt": "A yellow triangle with a black skull and crossbones symbol",
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "A yellow triangle with a black skull and crossbones indicates a substance that is toxic or poisonous",
       "options": [
         "Corrosive hazard",
@@ -5220,16 +5210,14 @@
         "Toxic or poisonous substance",
         "Do not enter"
       ],
-      "question": "What hazard is represented by this sign?",
-      "imageDescription": "A triangular warning sign with a yellow background and a black border, containing a black skull and crossbones pictogram",
-      "id": "ch-im-0010"
+      "question": "A triangular warning sign with a yellow background and a black border, containing a black skull and crossbones pictogram. What hazard is represented by the sign?",
+      "id": "ch-im-0010",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 1,
-      "imageAlt": "A blue circular sign with a white silhouette of a person's head wearing a helmet",
-      "question": "What does this sign mean on a construction site?",
-      "imageDescription": "A blue mandatory sign featuring a white silhouette of a human head wearing a safety helmet",
+      "question": "A blue mandatory sign featuring a white silhouette of a human head wearing a safety helmet. What does the sign mean on a construction site?",
       "explanation": "This mandatory sign indicates that head protection, such as a hard hat, must be worn in the area",
       "options": [
         "Bump caps allowed",
@@ -5237,14 +5225,13 @@
         "Watch your head",
         "Visitors only area"
       ],
-      "id": "ch-im-0011"
+      "id": "ch-im-0011",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 0,
-      "imageAlt": "A blue circular sign with white silhouettes of two gloves",
-      "imageDescription": "A blue mandatory circle sign featuring a white pictogram of a pair of safety gloves",
-      "question": "What does this mandatory sign tell you to do?",
+      "question": "A blue mandatory circle sign featuring a white pictogram of a pair of safety gloves. What does the sign tell you to do?",
       "explanation": "A blue circle with two white gloves indicates that hand protection must be worn for the task or in the area",
       "options": [
         "Wear hand protection",
@@ -5252,202 +5239,190 @@
         "No handling allowed",
         "Disposable gloves provided"
       ],
-      "id": "ch-im-0012"
+      "id": "ch-im-0012",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What does this warning sign mean?",
+      "question": "A standard yellow triangular warning sign showing a silhouette of a person standing below several falling rectangular blocks. What does the sign mean?",
       "correctAnswer": 2,
-      "imageAlt": "Yellow triangle warning sign with a person and falling debris",
       "explanation": "This yellow warning sign indicates that workers are overhead, and there is a risk of materials falling",
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "No entry for pedestrians",
         "Demolition work in progress",
         "Caution: Overhead hazards / Falling objects",
         "Watch out for tripping hazards"
       ],
-      "imageDescription": "A standard yellow triangular warning sign showing a silhouette of a person standing below several falling rectangular blocks",
-      "id": "ch-im-0013"
+      "id": "ch-im-0013",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A mandatory blue circular sign featuring a thick white arrow pointing horizontally to the left",
       "options": [
         "Keep left",
         "Turn left ahead",
         "One-way street only",
         "No right turn"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "A blue circle with a white arrow pointing to the left is a mandatory sign indicating that all vehicles or pedestrians must stay to the left",
-      "imageAlt": "Blue circular sign with a white arrow pointing left",
       "correctAnswer": 0,
-      "question": "What does this mandatory sign instruct you to do?",
-      "id": "ch-im-0014"
+      "question": "A mandatory blue circular sign featuring a thick white arrow pointing horizontally to the left. What does the sign instruct you to do?",
+      "id": "ch-im-0014",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "The blue band on a fire extinguisher indicates it contains Dry Powder, which can be used on many types of fires including electrical",
-      "imageAlt": "A red fire extinguisher with a blue rectangular label band",
       "correctAnswer": 3,
-      "question": "What type of extinguishing agent is in the extinguisher marked with this blue band?",
-      "imageDescription": "A standard red fire extinguisher cylinder with a prominent blue colour-coded band across the middle of the label",
+      "question": "A standard red fire extinguisher cylinder with a prominent blue colour-coded band across the middle of the label. What type of extinguishing agent is in the extinguisher marked with this blue band?",
       "options": [
         "Water",
         "Foam",
         "Carbon Dioxide (CO2)",
         "Dry Powder"
       ],
-      "type": "image_question",
-      "id": "ch-im-0015"
+      "type": "multiple_choice",
+      "id": "ch-im-0015",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Flammable liquid",
         "Gas under pressure",
         "Oxidising agent",
         "Corrosive substance"
       ],
-      "imageDescription": "A white diamond with a thick red border containing a black silhouette of a compressed gas cylinder",
-      "question": "What does this hazardous substance pictogram mean?",
+      "question": "A white diamond with a thick red border containing a black silhouette of a compressed gas cylinder. What does this hazardous substance pictogram mean?",
       "correctAnswer": 1,
-      "imageAlt": "Red diamond pictogram showing a black gas cylinder symbol",
       "explanation": "The symbol of a gas cylinder inside a red diamond warns that the contents are gas under pressure and may explode if heated",
-      "id": "ch-im-0016"
+      "id": "ch-im-0016",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A green rectangular safe condition sign showing a person silhouette surrounded by four white arrows pointing towards them from the corners",
       "options": [
         "First aid post",
         "Emergency exit this way",
         "Fire assembly point",
         "Rest area"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "Green signs with a white cross and a person indicate the designated assembly point where you must go if the fire alarm sounds",
-      "imageAlt": "Green square sign with a white person icon and four arrows pointing inwards",
       "correctAnswer": 2,
-      "question": "What does this safe condition sign indicate?",
-      "id": "ch-im-0017"
+      "question": "A green rectangular safe condition sign showing a person silhouette surrounded by four white arrows pointing towards them from the corners. What does this safe condition sign indicate?",
+      "id": "ch-im-0017",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What is the meaning of this prohibition sign?",
+      "question": "A circular prohibition sign with a red border and diagonal red line over a black silhouette of a person climbing a ladder. What is the meaning of the sign?",
       "correctAnswer": 0,
-      "imageAlt": "Prohibition sign showing a person on a ladder with a red bar across it",
       "explanation": "A red circle with a line through a person climbing a ladder means that the use of that specific ladder or access point is prohibited",
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Do not use this ladder",
         "No climbing on scaffolding",
         "Unsafe roof - do not walk here",
         "Authorized personnel only on ladders"
       ],
-      "imageDescription": "A circular prohibition sign with a red border and diagonal red line over a black silhouette of a person climbing a ladder",
-      "id": "ch-im-0018"
+      "id": "ch-im-0018",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 3,
-      "question": "What instruction is being given by this mandatory sign?",
+      "question": "A blue circular sign with a white silhouette of a person's upper body wearing a waistcoat with reflective strips. What instruction is being given by the sign?",
       "explanation": "A blue circular sign showing a person wearing a high-visibility vest means that hi-vis clothing is mandatory in that area",
-      "imageAlt": "Blue mandatory sign showing a person in a reflective vest",
       "options": [
         "Protective clothing must be worn",
         "Body harness required here",
         "Life jacket must be worn",
         "High-visibility clothing must be worn"
       ],
-      "type": "image_question",
-      "imageDescription": "A blue circular sign with a white silhouette of a person's upper body wearing a waistcoat with reflective strips",
-      "id": "ch-im-0019"
+      "type": "multiple_choice",
+      "id": "ch-im-0019",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Battery charging area",
         "Danger: High voltage / Electricity",
         "Static electricity risk",
         "Laser radiation hazard"
       ],
-      "imageDescription": "A yellow triangular warning sign with a black border containing a black lightning bolt symbol",
-      "question": "What hazard does this warning sign identify?",
+      "question": "A yellow triangular warning sign with a black border containing a black lightning bolt symbol. What hazard does the sign identify?",
       "correctAnswer": 1,
-      "imageAlt": "Yellow triangle sign with a black lightning bolt symbol",
       "explanation": "The yellow triangle with a black lightning bolt is the standard warning for the presence of high voltage electricity",
-      "id": "ch-im-0020"
+      "id": "ch-im-0020",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What does this fire equipment sign mean?",
+      "question": "A red square fire equipment sign showing a white silhouette of a telephone handset. What does this fire equipment sign mean?",
       "correctAnswer": 2,
-      "imageAlt": "Red square sign with a white telephone handset",
       "explanation": "A red sign with a white telephone indicates the location of internal fire-fighting communication or a fire alarm telephone",
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Emergency phone for public use",
         "Site office phone location",
         "Fire emergency telephone",
         "Report all accidents here"
       ],
-      "imageDescription": "A red square fire equipment sign showing a white silhouette of a telephone handset",
-      "id": "ch-im-0021"
+      "id": "ch-im-0021",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "White diamond with red border showing a black skull and crossbones",
       "explanation": "The 'skull and crossbones' pictogram indicates that a substance is acutely toxic and can cause serious illness or death if inhaled, swallowed, or touched",
-      "question": "What hazard is indicated by this pictogram found on a container?",
+      "question": "A CLP hazard pictogram consisting of a red-bordered white diamond containing a black silhouette of a human skull and two crossed bones. What hazard is indicated by this pictogram found on a container?",
       "correctAnswer": 0,
-      "imageDescription": "A CLP hazard pictogram consisting of a red-bordered white diamond containing a black silhouette of a human skull and two crossed bones",
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Toxic / Poisonous substance",
         "Danger of death by falling",
         "Corrosive material",
         "Harmful to the environment"
       ],
-      "id": "ch-im-0022"
+      "id": "ch-im-0022",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Rest room for workers",
         "First-aid room / Medical facility",
         "Sleeping quarters",
         "Morgue area"
       ],
-      "imageDescription": "A green square safe condition sign featuring a white cross in the top corner and a silhouette of a person lying on a stretcher or bed",
-      "question": "What does this safe condition sign mean?",
+      "question": "A green square safe condition sign featuring a white cross in the top corner and a silhouette of a person lying on a stretcher or bed. What does this safe condition sign mean?",
       "correctAnswer": 1,
-      "imageAlt": "Green square sign with a white cross and a person lying down",
       "explanation": "A green sign with a white cross and a person in a bed or on a stretcher indicates the location of the First Aid room or medical facility",
-      "id": "ch-im-0023"
+      "id": "ch-im-0023",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A circular prohibition sign with a red border and a diagonal red line over a black silhouette of a person walking",
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Slow down - pedestrians ahead",
         "No running on site",
         "Public footpath only",
         "No pedestrians / No thoroughfare"
       ],
-      "imageAlt": "Prohibition sign showing a walking person with a red line through it",
       "explanation": "A red circle with a pedestrian and a cross-line means that walking in this area is strictly prohibited, usually due to vehicle traffic",
-      "question": "What does this prohibition sign mean?",
+      "question": "A circular prohibition sign with a red border and a diagonal red line over a black silhouette of a person walking. What does the sign mean?",
       "correctAnswer": 3,
-      "id": "ch-im-0024"
+      "id": "ch-im-0024",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 2,
       "explanation": "A yellow triangle with a black border and a skull and crossbones indicates the presence of toxic or poisonous substances",
-      "imageAlt": "Yellow triangle sign with a skull and crossbones symbol",
       "options": [
         "Biohazardous waste area",
         "Danger: Corrosive acid",
         "Danger: Toxic or poisonous substance",
         "No entry for unauthorised personnel"
       ],
-      "question": "What does this warning sign mean?",
-      "imageDescription": "A standard UK health and safety warning sign: a yellow equilateral triangle with a thick black border and a black skull and crossbones symbol in the centre",
-      "type": "image_question",
-      "id": "ch-im-0025"
+      "question": "A standard UK health and safety warning sign: a yellow equilateral triangle with a thick black border and a black skull and crossbones symbol in the centre. What does the sign mean?",
+      "type": "multiple_choice",
+      "id": "ch-im-0025",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -5456,63 +5431,58 @@
         "Keep left of the bollard",
         "No right turn permitted"
       ],
-      "question": "What instruction does this mandatory sign give?",
-      "imageAlt": "Blue circular sign with a white arrow pointing to the left",
+      "question": "A mandatory blue circular sign with a white border and a bold white arrow pointing horizontally to the left. What instruction does the sign give?",
       "explanation": "The white arrow on a blue circle indicates a mandatory direction; in this case, all traffic must turn left",
       "correctAnswer": 0,
-      "type": "image_question",
-      "imageDescription": "A mandatory blue circular sign with a white border and a bold white arrow pointing horizontally to the left",
-      "id": "ch-im-0026"
+      "type": "multiple_choice",
+      "id": "ch-im-0026",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "An older-style hazard pictogram: a bright orange square with a thick black border and a large black 'X' in the middle",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 3,
-      "imageAlt": "Orange square pictogram featuring a bold black 'X'",
       "options": [
         "Flammable liquid",
         "Explosive material",
         "Corrosive substance",
         "Harmful or irritant substance"
       ],
-      "question": "What health hazard is identified by this older style pictogram?",
+      "question": "An older-style hazard pictogram: a bright orange square with a thick black border and a large black 'X' in the middle. What health hazard is identified by this older style pictogram?",
       "explanation": "A black cross on an orange background historically indicated a 'harmful' or 'irritant' substance; modern GHS labels use an exclamation mark for similar hazards",
-      "id": "ch-im-0027"
+      "id": "ch-im-0027",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 1,
-      "question": "What type of extinguishing agent is contained in an extinguisher with this cream-coloured band?",
+      "question": "A standard red fire extinguisher cylinder featuring a prominent cream-coloured horizontal band or block of colour near the top where the instructions are printed. What type of extinguishing agent is contained in an extinguisher with this cream-coloured band?",
       "options": [
         "Dry Powder",
         "Foam",
         "Carbon Dioxide (CO2)",
         "Wet Chemical"
       ],
-      "imageAlt": "A fire extinguisher with a cream-coloured band",
       "explanation": "A fire extinguisher with a cream-coloured label or band contains foam, which is suitable for both wood/paper and flammable liquid fires",
-      "imageDescription": "A standard red fire extinguisher cylinder featuring a prominent cream-coloured horizontal band or block of colour near the top where the instructions are printed",
-      "type": "image_question",
-      "id": "ch-im-0028"
+      "type": "multiple_choice",
+      "id": "ch-im-0028",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 0,
       "explanation": "A red circle with a diagonal line through a figure walking indicates that pedestrian access is strictly forbidden",
-      "question": "What is the meaning of this prohibition sign?",
+      "question": "A circular prohibition sign with a red border and a red diagonal cross-bar over a black silhouette of a person walking. What is the meaning of the sign?",
       "options": [
         "No pedestrians allowed",
         "Watch out for pedestrians",
         "Pedestrian crossing ahead",
         "One-way walking system"
       ],
-      "imageAlt": "Prohibition sign showing a black figure of a person walking with a red diagonal line through it",
-      "imageDescription": "A circular prohibition sign with a red border and a red diagonal cross-bar over a black silhouette of a person walking",
-      "type": "image_question",
-      "id": "ch-im-0029"
+      "type": "multiple_choice",
+      "id": "ch-im-0029",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 2,
-      "imageAlt": "Warning sign showing a person being hit by falling objects",
-      "question": "What specific hazard does this warning sign highlight?",
+      "question": "A yellow warning triangle with a black border, depicting a black silhouette of a person with several small black blocks falling onto them. What specific hazard does the sign highlight?",
       "options": [
         "Danger of uneven ground",
         "Danger of crumbling masonry",
@@ -5520,54 +5490,51 @@
         "Danger of heavy lifting"
       ],
       "explanation": "A yellow triangle showing a figure being struck by falling debris warns of hazards from overhead works or unstable materials",
-      "imageDescription": "A yellow warning triangle with a black border, depicting a black silhouette of a person with several small black blocks falling onto them",
-      "type": "image_question",
-      "id": "ch-im-0030"
+      "type": "multiple_choice",
+      "id": "ch-im-0030",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A green square safe condition sign. It contains a white graphic of a telephone handset and a small white 'plus' sign (cross) in the corner",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 1,
-      "imageAlt": "Green square sign with a white telephone handset and a small white cross",
       "options": [
         "Site office location",
         "Emergency telephone",
         "Break room location",
         "Internal site radio channel"
       ],
-      "question": "What does this safe condition sign indicate?",
+      "question": "A green square safe condition sign. It contains a white graphic of a telephone handset and a small white 'plus' sign (cross) in the corner. What does this safe condition sign indicate?",
       "explanation": "A green sign with a white phone symbol and a cross indicates the location of an emergency telephone, often used for first aid or emergencies",
-      "id": "ch-im-0031"
+      "id": "ch-im-0031",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A circular blue mandatory sign with a white border, featuring a white silhouette of a person wearing a full-body safety harness with a lanyard attached",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 3,
-      "imageAlt": "Blue circular sign showing a person wearing a safety harness",
       "options": [
         "Work at height permitted",
         "Danger of falling from height",
         "High-visibility clothing must be worn",
         "Safety harness must be worn"
       ],
-      "question": "What must you do when you see this mandatory sign?",
+      "question": "A circular blue mandatory sign with a white border, featuring a white silhouette of a person wearing a full-body safety harness with a lanyard attached. What must you do when you see the sign?",
       "explanation": "A mandatory blue sign with a person wearing a safety harness reminds workers that fall arrest equipment must be used",
-      "id": "ch-im-0032"
+      "id": "ch-im-0032",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A red square fire equipment sign featuring a white pictogram of a flame on the left and a white symbol of a fire ladder on the right",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 0,
       "explanation": "A red square sign with a white flame and a ladder/hose symbol indicates the location of fire-fighting equipment",
-      "imageAlt": "Red square sign with a white symbol of a fire and a vertical ladder",
-      "question": "What is this fire-fighting equipment sign identifying?",
+      "question": "A red square fire equipment sign featuring a white pictogram of a flame on the left and a white symbol of a fire ladder on the right. What is this fire-fighting equipment sign identifying?",
       "options": [
         "Fire ladder location",
         "Fire exit this way",
         "Do not use ladders in a fire",
         "Flammable materials stored here"
       ],
-      "id": "ch-im-0033"
+      "id": "ch-im-0033",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -5576,50 +5543,45 @@
         "Danger: Overhead electric cables",
         "Danger: Static electricity"
       ],
-      "question": "What specific electrical hazard is represented by this sign?",
-      "imageAlt": "Warning sign showing a black lightning bolt and a horizontal wire",
+      "question": "A yellow warning triangle with a black border, showing a black horizontal line with a jagged lightning bolt symbol pointing towards it from above. What specific electrical hazard is represented by the sign?",
       "explanation": "A black 'C' shape with an exclamation mark inside a yellow triangle warns of the presence of overhead electric cables",
       "correctAnswer": 2,
-      "type": "image_question",
-      "imageDescription": "A yellow warning triangle with a black border, showing a black horizontal line with a jagged lightning bolt symbol pointing towards it from above",
-      "id": "ch-im-0034"
+      "type": "multiple_choice",
+      "id": "ch-im-0034",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 1,
       "explanation": "A person standing under a shower is the international symbol for an emergency safety shower to wash off hazardous chemicals",
-      "imageAlt": "Green square sign with a white silhouette of a person under a shower",
       "options": [
         "On-site welfare showers",
         "Emergency safety shower perforated sign",
         "Drinking water point",
         "Decontamination unit entrance"
       ],
-      "question": "What is the meaning of this safe condition sign?",
-      "imageDescription": "A green square safe condition sign showing a white silhouette of a person standing under a shower-head with vertical lines representing water",
-      "type": "image_question",
-      "id": "ch-im-0035"
+      "question": "A green square safe condition sign showing a white silhouette of a person standing under a shower-head with vertical lines representing water. What is the meaning of this safe condition sign?",
+      "type": "multiple_choice",
+      "id": "ch-im-0035",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageDescription": "A circular prohibition sign with a red border and a diagonal red line over a black silhouette of a large commercial lorry/truck",
+      "type": "multiple_choice",
       "explanation": "A red circle with a black 'L' and a diagonal line indicates that heavy goods vehicles (HGVs) or large lorries are prohibited",
-      "imageAlt": "Prohibition sign with a red border and a black silhouette of a lorry",
       "options": [
         "No parking for lorries",
         "Construction traffic only",
         "Weight limit of 7.5 tonnes",
         "No heavy goods vehicles allowed"
       ],
-      "question": "What does this prohibition sign mean?",
+      "question": "A circular prohibition sign with a red border and a diagonal red line over a black silhouette of a large commercial lorry/truck. What does the sign mean?",
       "correctAnswer": 3,
-      "id": "ch-im-0036"
+      "id": "ch-im-0036",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 2,
-      "imageDescription": "A mandatory blue circle sign featuring a white pictogram of a walking pedestrian",
-      "question": "What does this mandatory sign tell you about a designated area?",
-      "type": "image_question",
-      "imageAlt": "A blue circular sign with a white silhouette of a person walking",
+      "question": "A mandatory blue circle sign featuring a white pictogram of a walking pedestrian. What does the sign tell you about a designated area?",
+      "type": "multiple_choice",
       "options": [
         "Vehicles must give way to pedestrians",
         "Pedestrians must walk faster here",
@@ -5627,11 +5589,11 @@
         "No trespassing allowed"
       ],
       "explanation": "This sign indicates that the route is intended for pedestrians only and vehicles are not allowed to enter",
-      "id": "ch-im-0037"
+      "id": "ch-im-0037",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "An older style orange square warning sign with a thick black 'X' in the middle",
-      "question": "What health hazard is identified by this older-style hazard pictogram?",
+      "question": "An older style orange square warning sign with a thick black 'X' in the middle. What health hazard is identified by this older-style hazard pictogram?",
       "correctAnswer": 0,
       "options": [
         "The substance is harmful or an irritant",
@@ -5640,13 +5602,12 @@
         "The substance is environmentally friendly"
       ],
       "explanation": "The black 'X' on an orange background is an older hazard symbol used to indicate that a substance is harmful or an irritant",
-      "type": "image_question",
-      "imageAlt": "A square orange sign with a bold black 'X' symbol",
-      "id": "ch-im-0038"
+      "type": "multiple_choice",
+      "id": "ch-im-0038",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A red cylinder fire extinguisher with a distinct blue colour-coded band near the top",
-      "question": "What type of fire extinguisher is identified by the blue band on its body?",
+      "question": "A red cylinder fire extinguisher with a distinct blue colour-coded band near the top. What type of fire extinguisher is identified by the blue band on its body?",
       "correctAnswer": 1,
       "options": [
         "Carbon Dioxide (CO2)",
@@ -5655,13 +5616,12 @@
         "Foam"
       ],
       "explanation": "A blue band on a red fire extinguisher indicates it contains dry powder, which can be used on many types of fires",
-      "type": "image_question",
-      "imageAlt": "A red fire extinguisher with a solid blue rectangular band across the body",
-      "id": "ch-im-0039"
+      "type": "multiple_choice",
+      "id": "ch-im-0039",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A yellow triangular sign with a black border and a silhouette of an excavator or digger",
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "No parking for heavy vehicles",
         "Demolition work in progress",
@@ -5670,13 +5630,12 @@
       ],
       "explanation": "This sign is used to warn workers and the public that heavy machinery or plant equipment is operating in the vicinity",
       "correctAnswer": 2,
-      "imageDescription": "A yellow triangle warning sign featuring a black silhouette of a 360-degree excavator",
-      "question": "What specific site hazard is indicated by this warning sign?",
-      "id": "ch-im-0040"
+      "question": "A yellow triangle warning sign featuring a black silhouette of a 360-degree excavator. What specific site hazard is indicated by the sign?",
+      "id": "ch-im-0040",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageAlt": "A green rectangular sign with a white cross in the centre",
+      "type": "multiple_choice",
       "options": [
         "First aid station or equipment",
         "Doctors surgery nearby",
@@ -5685,9 +5644,9 @@
       ],
       "explanation": "This sign marks a designated first aid post or where first aid equipment and trained personnel can be found",
       "correctAnswer": 0,
-      "imageDescription": "A green square/rectangular safe condition sign with a white cross symbol",
-      "question": "What does this safe condition sign mean?",
-      "id": "ch-im-0041"
+      "question": "A green square/rectangular safe condition sign with a white cross symbol. What does this safe condition sign mean?",
+      "id": "ch-im-0041",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "A red circle with a diagonal line over a mobile phone icon means that using mobile phones or similar electronic devices is strictly forbidden",
@@ -5697,12 +5656,11 @@
         "Mobile phone signal is weak",
         "No mobile phones allowed"
       ],
-      "imageAlt": "A red circular sign with a diagonal line over a black silhouette of a mobile phone",
-      "type": "image_question",
-      "question": "What rule is being enforced by this prohibition sign?",
-      "imageDescription": "A prohibition sign showing a red circle and slash over a black mobile phone",
+      "type": "multiple_choice",
+      "question": "A prohibition sign showing a red circle and slash over a black mobile phone. What rule is being enforced by the sign?",
       "correctAnswer": 3,
-      "id": "ch-im-0042"
+      "id": "ch-im-0042",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "The exclamation mark pictogram indicates that a substance may be an irritant to skin or eyes, or have lower-grade toxicity",
@@ -5712,16 +5670,14 @@
         "The substance is under high pressure",
         "The substance is a respiratory sensitiser"
       ],
-      "imageAlt": "A white diamond with a red border and a black exclamation mark in the centre",
-      "type": "image_question",
-      "question": "According to modern GHS standards, what does this hazard pictogram warn you about?",
-      "imageDescription": "A modern GHS hazard pictogram consisting of a red-bordered diamond with a black exclamation mark inside",
+      "type": "multiple_choice",
+      "question": "A modern GHS hazard pictogram consisting of a red-bordered diamond with a black exclamation mark inside. According to modern GHS standards, what does this hazard pictogram warn you about?",
       "correctAnswer": 1,
-      "id": "ch-im-0043"
+      "id": "ch-im-0043",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What action must you take when you enter an area displaying this sign?",
-      "imageDescription": "A mandatory blue circle sign featuring a white pictogram of a person's head with ear defenders",
+      "question": "A mandatory blue circle sign featuring a white pictogram of a person's head with ear defenders. What action must you take when you enter an area displaying the sign?",
       "correctAnswer": 0,
       "explanation": "A mandatory sign with a white ear protector silhouette means that hearing protection must be worn in the designated area",
       "options": [
@@ -5730,9 +5686,9 @@
         "Danger: High noise levels nearby",
         "Earplugs are available for purchase"
       ],
-      "imageAlt": "A blue circular sign with a white silhouette of a person wearing ear defenders",
-      "type": "image_question",
-      "id": "ch-im-0044"
+      "type": "multiple_choice",
+      "id": "ch-im-0044",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -5742,16 +5698,14 @@
         "Keep out - crowded area"
       ],
       "explanation": "This sign shows the location of a fire assembly point where everyone should gather after evacuating a building",
-      "type": "image_question",
-      "imageAlt": "A green rectangular sign with several white silhouettes of people and four arrows pointing inwards to a central point",
-      "imageDescription": "A green safe condition sign showing several white figures standing together with arrows pointing towards them",
-      "question": "What is the purpose of the location marked by this sign?",
+      "type": "multiple_choice",
+      "question": "A green safe condition sign showing several white figures standing together with arrows pointing towards them. What is the purpose of the location marked by the sign?",
       "correctAnswer": 2,
-      "id": "ch-im-0045"
+      "id": "ch-im-0045",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What hazard is identified by this pictogram found on a chemical container?",
-      "imageDescription": "A modern GHS chemical hazard pictogram: a red-framed diamond with a black skull and crossbones",
+      "question": "A modern GHS chemical hazard pictogram: a red-framed diamond with a black skull and crossbones. What hazard is identified by this pictogram found on a chemical container?",
       "correctAnswer": 1,
       "explanation": "The 'skull and crossbones' symbol is used on substances that are acutely toxic and can be fatal if inhaled, swallowed, or touched",
       "options": [
@@ -5760,13 +5714,12 @@
         "The substance is highly flammable",
         "The substance is an explosive risk"
       ],
-      "type": "image_question",
-      "imageAlt": "A white diamond with a red border containing a black skull and crossbones symbol",
-      "id": "ch-im-0046"
+      "type": "multiple_choice",
+      "id": "ch-im-0046",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageAlt": "A yellow triangular sign with a black border and a silhouette of a vehicle hitting an overhead bar",
+      "type": "multiple_choice",
       "options": [
         "Bridge closed to traffic",
         "Strictly no parking for trucks",
@@ -5775,9 +5728,9 @@
       ],
       "explanation": "This sign warns of overhead hazards like low bridges, scaffolding, or power lines that could be struck by tall vehicles",
       "correctAnswer": 3,
-      "imageDescription": "A yellow triangle warning sign showing a black silhouette of a truck trailer hitting an overhead beam",
-      "question": "What is the main hazard being identified by this warning sign?",
-      "id": "ch-im-0047"
+      "question": "A yellow triangle warning sign showing a black silhouette of a truck trailer hitting an overhead beam. What is the main hazard being identified by the sign?",
+      "id": "ch-im-0047",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "A red circle with a slash over a figure climbing a ladder means that the use of ladders for the specific task or in that area is forbidden",
@@ -5787,16 +5740,14 @@
         "One person only on the ladder",
         "Check ladder for defects before use"
       ],
-      "imageAlt": "A prohibition sign showing a red circle and slash over a person on a ladder",
-      "type": "image_question",
-      "question": "What instruction is given by this prohibition sign?",
-      "imageDescription": "A prohibition sign featuring a red border, a diagonal crossbar, and a black silhouette of a person on a ladder",
+      "type": "multiple_choice",
+      "question": "A prohibition sign featuring a red border, a diagonal crossbar, and a black silhouette of a person on a ladder. What instruction is given by the sign?",
       "correctAnswer": 0,
-      "id": "ch-im-0048"
+      "id": "ch-im-0048",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "The red circle with a diagonal line is a prohibition sign. It means that the specific activity (in this case, smoking) is not allowed",
-      "imageAlt": "A red circular sign with a diagonal line over a burning cigarette",
       "correctAnswer": 2,
       "options": [
         "Cigarettes for sale here",
@@ -5804,14 +5755,14 @@
         "Smoking is strictly prohibited",
         "Only electronic cigarettes allowed"
       ],
-      "type": "image_question",
-      "question": "What does this sign tell you?",
-      "imageDescription": "A standard 'No Smoking' prohibition sign featuring a black cigarette with smoke and a red cross-bar",
-      "id": "ch-im-0049"
+      "type": "multiple_choice",
+      "question": "A standard 'No Smoking' prohibition sign featuring a black cigarette with smoke and a red cross-bar. What does the sign tell you?",
+      "id": "ch-im-0049",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "A white arrow on a green background is a safe condition sign indicating the direction to the nearest emergency exit",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 0,
       "options": [
         "The direction to an emergency exit",
@@ -5819,10 +5770,9 @@
         "The location of the first-aid kit",
         "The direction to the assembly point"
       ],
-      "imageAlt": "A rectangular green sign with a white figure running through a door and an arrow pointing right",
-      "question": "What is the meaning of this green and white sign?",
-      "imageDescription": "A green emergency exit sign (running man) with a white arrow pointing to the right",
-      "id": "ch-im-0050"
+      "question": "A green emergency exit sign (running man) with a white arrow pointing to the right. What is the meaning of this green and white sign?",
+      "id": "ch-im-0050",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -5832,16 +5782,15 @@
         "Hard hats are available for purchase here"
       ],
       "correctAnswer": 1,
-      "imageAlt": "A blue circular sign with a white symbol of a person wearing a safety helmet",
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "Signs with a blue background and white symbols are mandatory signs; they indicate an action that must be taken to remain safe",
-      "imageDescription": "A mandatory 'Head Protection Must Be Worn' sign showing a white silhouette of a head wearing a hard hat on a blue background",
-      "question": "What must you do when entering an area with this sign?",
-      "id": "ch-im-0051"
+      "question": "A mandatory 'Head Protection Must Be Worn' sign showing a white silhouette of a head wearing a hard hat on a blue background. What must you do when entering an area with the sign?",
+      "id": "ch-im-0051",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "A yellow triangle with a black border indicates a hazard. The 'skull and crossbones' symbol identifies materials that are toxic or poisonous if inhaled, swallowed, or touched",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 3,
       "options": [
         "Fragile roof ahead",
@@ -5849,10 +5798,9 @@
         "Area under demolition",
         "Toxic or poisonous substance hazard"
       ],
-      "imageAlt": "A yellow triangular sign with a black border and a black skull and crossbones symbol",
-      "question": "What hazard does this warning sign identify?",
-      "imageDescription": "A warning sign displaying a skull and crossbones, indicating toxic substances",
-      "id": "ch-im-0052"
+      "question": "A warning sign displaying a skull and crossbones, indicating toxic substances. What hazard does the sign identify?",
+      "id": "ch-im-0052",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -5862,12 +5810,11 @@
         "A high-pressure jet wash station"
       ],
       "correctAnswer": 1,
-      "imageAlt": "A red square sign with a white symbol of a hose reel",
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "Black symbols on a red background usually identify fire-fighting equipment. This specific symbol marks the location of a fire hose reel",
-      "imageDescription": "A fire equipment sign showing a white fire hose reel on a red background",
-      "question": "What does this fire-fighting equipment sign identify?",
-      "id": "ch-im-0053"
+      "question": "A fire equipment sign showing a white fire hose reel on a red background. What does this fire-fighting equipment sign identify?",
+      "id": "ch-im-0053",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "The symbol of a person being hit by a falling load warns workers to stay clear of areas where overhead lifting or crane operations are taking place",
@@ -5878,15 +5825,13 @@
         "Manual handling area only"
       ],
       "correctAnswer": 2,
-      "imageAlt": "A yellow triangle with a black border showing a black silhouette of a crane hook and objects falling on a person",
-      "type": "image_question",
-      "question": "What specific site hazard is indicated by this sign?",
-      "imageDescription": "A warning sign depicting the danger of overhead loads and falling objects from a crane",
-      "id": "ch-im-0054"
+      "type": "multiple_choice",
+      "question": "A warning sign depicting the danger of overhead loads and falling objects from a crane. What specific site hazard is indicated by the sign?",
+      "id": "ch-im-0054",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "This GHS pictogram indicates that the substance is corrosive and can cause severe skin burns and eye damage, or damage metals",
-      "imageAlt": "A white diamond with a red border showing liquids pouring from test tubes onto a hand and a metal bar",
       "options": [
         "The substance is corrosive and causes burns",
         "The substance is highly flammable",
@@ -5894,10 +5839,10 @@
         "The substance is harmful to the environment"
       ],
       "correctAnswer": 0,
-      "type": "image_question",
-      "question": "What does this hazard pictogram on a chemical container mean?",
-      "imageDescription": "A GHS hazard pictogram for corrosive substances, showing a test tube dripping onto a hand and a metal bench",
-      "id": "ch-im-0055"
+      "type": "multiple_choice",
+      "question": "A GHS hazard pictogram for corrosive substances, showing a test tube dripping onto a hand and a metal bench. What does this hazard pictogram on a chemical container mean?",
+      "id": "ch-im-0055",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 1,
@@ -5907,15 +5852,13 @@
         "Green zone for safe staff breaks",
         "Hospital direction sign"
       ],
-      "imageAlt": "A green square sign with a white cross in the centre",
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "A green rectangle with a white cross is the standard sign for a first-aid station or the location of a first-aid kit",
-      "imageDescription": "A safe condition sign featuring a white cross on a green background",
-      "question": "What does this sign mean on a construction site?",
-      "id": "ch-im-0056"
+      "question": "A safe condition sign featuring a white cross on a green background. What does the sign mean on a construction site?",
+      "id": "ch-im-0056",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A blue circular sign with white symbols of two boots",
       "options": [
         "No heavy footwear allowed here",
         "Pedestrians only beyond this point",
@@ -5923,18 +5866,16 @@
         "Safety footwear must be worn in this area"
       ],
       "correctAnswer": 3,
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "This mandatory sign indicates that safety boots with protective toecaps must be worn to protect against foot injuries",
-      "imageDescription": "A mandatory sign showing white silhouettes of safety boots on a blue background",
-      "question": "What instruction is given by this sign?",
-      "id": "ch-im-0057"
+      "question": "A mandatory sign showing white silhouettes of safety boots on a blue background. What instruction is given by the sign?",
+      "id": "ch-im-0057",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What does this hazard pictogram warn you about?",
-      "imageDescription": "GHS pictogram: a red-bordered diamond containing a black exclamation mark",
+      "question": "GHS pictogram: a red-bordered diamond containing a black exclamation mark. What does this hazard pictogram warn you about?",
       "explanation": "The black 'exclamation mark' pictogram is used to identify substances that can cause skin irritation, serious eye irritation, or health effects like drowsiness",
-      "type": "image_question",
-      "imageAlt": "A white diamond with a red border and a large black exclamation mark in the centre",
+      "type": "multiple_choice",
       "options": [
         "General warning of danger ahead",
         "Highly explosive material inside",
@@ -5942,10 +5883,10 @@
         "Stop work immediately if seen"
       ],
       "correctAnswer": 2,
-      "id": "ch-im-0058"
+      "id": "ch-im-0058",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A red circular sign with a diagonal line through a black silhouette of a walking person",
       "options": [
         "No pedestrian access or entry",
         "Run quickly through this area",
@@ -5953,16 +5894,15 @@
         "One-way walking system in place"
       ],
       "correctAnswer": 0,
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "A red circle with a black pedestrian silhouette and a red diagonal line means pedestrians are not allowed to enter this area",
-      "imageDescription": "A prohibition sign showing a person walking with a red line through them",
-      "question": "What restriction is being shown by this sign?",
-      "id": "ch-im-0059"
+      "question": "A prohibition sign showing a person walking with a red line through them. What restriction is being shown by the sign?",
+      "id": "ch-im-0059",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A warning sign with a black lightning bolt inside a yellow triangle",
-      "question": "What hazard is identified by this warning sign?",
-      "type": "image_question",
+      "question": "A warning sign with a black lightning bolt inside a yellow triangle. What hazard is identified by the sign?",
+      "type": "multiple_choice",
       "options": [
         "Electricians only beyond this point",
         "Charging point for electric vehicles",
@@ -5970,9 +5910,9 @@
         "Static electricity hazard area"
       ],
       "correctAnswer": 2,
-      "imageAlt": "A yellow triangular sign with a black border and a black lightning bolt symbol",
       "explanation": "A yellow triangle with a black lightning bolt symbol is a universal warning for the presence of high voltage or electricity hazards",
-      "id": "ch-im-0060"
+      "id": "ch-im-0060",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -5983,11 +5923,10 @@
       ],
       "correctAnswer": 1,
       "explanation": "This sign is used to identify the location of the first-aid box or the first-aid station on site",
-      "type": "image_question",
-      "imageAlt": "A green square sign with a white cross in the center",
-      "question": "What does this safe condition sign represent?",
-      "imageDescription": "A standard UK Health and Safety First Aid sign, featuring a white cross on a solid green background",
-      "id": "ch-im-0061"
+      "type": "multiple_choice",
+      "question": "A standard UK Health and Safety First Aid sign, featuring a white cross on a solid green background. What does this safe condition sign represent?",
+      "id": "ch-im-0061",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -5996,13 +5935,12 @@
         "Pedestrians only",
         "Remove boots before entering"
       ],
-      "imageAlt": "A blue circular sign showing a white silhouette of a safety boot",
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "Blue circular signs are mandatory signs, and this one indicates that safety boots or protective footwear must be worn",
       "correctAnswer": 0,
-      "imageDescription": "A mandatory safety sign with a blue circle background and a white graphic of a high-cut safety boot",
-      "question": "What instruction must you follow when you see this sign?",
-      "id": "ch-im-0062"
+      "question": "A mandatory safety sign with a blue circle background and a white graphic of a high-cut safety boot. What instruction must you follow when you see the sign?",
+      "id": "ch-im-0062",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -6011,19 +5949,16 @@
         "Warning: Plant machinery operating",
         "Danger: Unstable ground"
       ],
-      "question": "What hazard is identified by this warning sign?",
-      "imageDescription": "A black and yellow triangular warning sign featuring a graphic of an excavator (digger) inside",
+      "question": "A black and yellow triangular warning sign featuring a graphic of an excavator (digger) inside. What hazard is identified by the sign?",
       "explanation": "This sign warns workers that heavy machinery or plant equipment is operating in the vicinity",
       "correctAnswer": 2,
-      "type": "image_question",
-      "imageAlt": "A yellow triangular sign with a black border and a silhouette of a digger or JCB",
-      "id": "ch-im-0063"
+      "type": "multiple_choice",
+      "id": "ch-im-0063",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A GHS hazard pictogram showing a black gas cylinder symbol inside a red-bordered diamond",
-      "question": "What does this hazard pictogram found on a chemical container mean?",
-      "imageAlt": "A white diamond with a red border showing a black silhouette of a gas cylinder",
-      "type": "image_question",
+      "question": "A GHS hazard pictogram showing a black gas cylinder symbol inside a red-bordered diamond. What does this hazard pictogram found on a chemical container mean?",
+      "type": "multiple_choice",
       "explanation": "The 'Gas Cylinder' pictogram is found on containers holding gas under pressure which may explode if heated",
       "correctAnswer": 1,
       "options": [
@@ -6032,22 +5967,22 @@
         "Oxidising agent",
         "Explosive material"
       ],
-      "id": "ch-im-0064"
+      "id": "ch-im-0064",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What is the meaning of this prohibition sign?",
-      "imageDescription": "A standard prohibition sign showing a cigarette with smoke, crossed out by a red diagonal bar inside a red circle",
-      "imageAlt": "A red circle with a diagonal red line through a black silhouette of a lit cigarette",
+      "question": "A standard prohibition sign showing a cigarette with smoke, crossed out by a red diagonal bar inside a red circle. What is the meaning of the sign?",
       "explanation": "Prohibition signs with a red circle and diagonal bar indicate actions that are forbidden; this one prohibits smoking",
       "correctAnswer": 3,
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Flammable materials here",
         "Designated smoking area",
         "Vaping allowed only",
         "No smoking"
       ],
-      "id": "ch-im-0065"
+      "id": "ch-im-0065",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -6056,49 +5991,44 @@
         "No entry for people without hats",
         "Bump caps are sufficient"
       ],
-      "imageDescription": "A mandatory blue circle sign with a white graphic of a head wearing a construction safety helmet",
-      "question": "What does this sign mean when displayed at a site entrance?",
-      "imageAlt": "A blue circular sign with a white silhouette of a person wearing a safety helmet",
+      "question": "A mandatory blue circle sign with a white graphic of a head wearing a construction safety helmet. What does the sign mean when displayed at a site entrance?",
       "explanation": "Blue mandatory signs indicate specific PPE requirements; this sign means you must wear a safety helmet (hard hat)",
       "correctAnswer": 0,
-      "type": "image_question",
-      "id": "ch-im-0066"
+      "type": "multiple_choice",
+      "id": "ch-im-0066",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A green square sign showing four white arrows pointing inwards towards a group of people",
       "correctAnswer": 1,
       "explanation": "In the UK, this sign is used to mark the assembly point where everyone should gather in the event of an emergency evacuation",
-      "type": "image_question",
-      "imageDescription": "A green and white safe condition sign depicting a group of figures in the centre with four arrows pointing towards them from the corners",
-      "question": "What is the purpose of the area marked by this sign?",
+      "type": "multiple_choice",
+      "question": "A green and white safe condition sign depicting a group of figures in the centre with four arrows pointing towards them from the corners. What is the purpose of the area marked by the sign?",
       "options": [
         "Bus stop for site workers",
         "Emergency assembly point",
         "Social distancing zone",
         "Site office location"
       ],
-      "id": "ch-im-0067"
+      "id": "ch-im-0067",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A yellow triangular sign with a black border and a black lightning bolt symbol",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 3,
       "explanation": "A yellow triangle with a black lightning bolt icon indicates there is a risk of electric shock or high voltage",
-      "question": "What hazard does this warning sign alert you to?",
-      "imageDescription": "A standard warning sign: a yellow triangle with a black border and a black 'zig-zag' lightning bolt in the center",
+      "question": "A standard warning sign: a yellow triangle with a black border and a black 'zig-zag' lightning bolt in the center. What hazard does the sign alert you to?",
       "options": [
         "Flash photography forbidden",
         "Static electricity area",
         "Power tools being used",
         "Danger: Electricity"
       ],
-      "id": "ch-im-0068"
+      "id": "ch-im-0068",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A GHS hazard pictogram showing liquid from two test tubes corroding a metal bar and a human hand",
-      "question": "What is the specific danger identified by this pictogram?",
-      "imageAlt": "A white diamond with a red border showing test tubes pouring liquid onto a hand and a metal bar",
-      "type": "image_question",
+      "question": "A GHS hazard pictogram showing liquid from two test tubes corroding a metal bar and a human hand. What is the specific danger identified by this pictogram?",
+      "type": "multiple_choice",
       "explanation": "The 'Acid' or 'Corrosive' pictogram shows a liquid dripping onto a hand and a surface, causing damage",
       "correctAnswer": 2,
       "options": [
@@ -6107,7 +6037,8 @@
         "Corrosive: can cause skin burns and eye damage",
         "Harmful to the environment"
       ],
-      "id": "ch-im-0069"
+      "id": "ch-im-0069",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -6116,28 +6047,26 @@
         "Entrance to the building",
         "One-way walking system"
       ],
-      "question": "What does this green and white sign tell you?",
-      "imageDescription": "A green and white directional sign showing a 'running man' figure, a door, and a white arrow pointing to the right",
-      "imageAlt": "A green rectangular sign with a white figure running through an open door and an arrow",
-      "type": "image_question",
+      "question": "A green and white directional sign showing a 'running man' figure, a door, and a white arrow pointing to the right. What does this green and white sign tell you?",
+      "type": "multiple_choice",
       "correctAnswer": 0,
       "explanation": "This sign indicates the direction to the nearest emergency exit or escape route",
-      "id": "ch-im-0070"
+      "id": "ch-im-0070",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 1,
       "explanation": "The exclamation mark pictogram is used for substances that are hazardous to health, such as skin irritants or substances causing drowsiness",
-      "imageAlt": "A white diamond with a red border and a large black exclamation mark in the centre",
-      "question": "What does this hazard pictogram on a chemical label warn you about?",
-      "imageDescription": "A GHS hazard pictogram consisting of a red diamond frame with a thick black exclamation mark symbol",
+      "question": "A GHS hazard pictogram consisting of a red diamond frame with a thick black exclamation mark symbol. What does this hazard pictogram on a chemical label warn you about?",
       "options": [
         "Danger of explosion",
         "Harmful or irritant",
         "Corrosive substance",
         "Biohazard present"
       ],
-      "id": "ch-im-0071"
+      "id": "ch-im-0071",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -6146,18 +6075,15 @@
         "No entry for pedestrians or vehicles",
         "Stop and wait for instructions"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 2,
       "explanation": "A red circle with a white horizontal bar is the standard 'No Entry' sign, meaning you must not enter the area",
-      "imageAlt": "A red circular sign with a thick white horizontal bar across the middle",
-      "imageDescription": "A standard 'No Entry' prohibition sign: a solid red circle with a horizontal white rectangular bar in the center",
-      "question": "What rule is indicated by this sign?",
-      "id": "ch-im-0072"
+      "question": "A standard 'No Entry' prohibition sign: a solid red circle with a horizontal white rectangular bar in the center. What rule is indicated by the sign?",
+      "id": "ch-im-0072",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A blue circular sign with a white exclamation mark and text",
-      "question": "What mandatory action must be taken when seeing this sign at a site entrance?",
-      "imageDescription": "A blue mandatory sign with a white exclamation mark in a circle, with the text 'All visitors must report to the site office' written below it",
+      "question": "A blue mandatory sign with a white exclamation mark in a circle, with the text 'All visitors must report to the site office' written below it. What mandatory action must be taken when seeing the sign at a site entrance?",
       "explanation": "This sign requires all visitors and workers to report to the site office to receive a safety induction and sign in before entering the worksite",
       "options": [
         "Only delivery drivers need to signal their arrival",
@@ -6166,13 +6092,12 @@
         "You must wear a high-visibility vest to enter the office"
       ],
       "correctAnswer": 1,
-      "type": "image_question",
-      "id": "ch-im-0073"
+      "type": "multiple_choice",
+      "id": "ch-im-0073",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "Which hazard is represented by this pictogram found on a container label?",
-      "imageAlt": "A red diamond-shaped warning pictogram with a black silhouette of a person's head and chest",
-      "imageDescription": "A GHS hazard pictogram consisting of a red diamond frame with a black silhouette of a person's head and upper body, with a white 'exploding' star shape on the chest",
+      "question": "A GHS hazard pictogram consisting of a red diamond frame with a black silhouette of a person's head and upper body, with a white 'exploding' star shape on the chest. Which hazard is represented by this pictogram found on a container label?",
       "explanation": "The pictogram of a person with a white star-shaped burst on their chest indicates a substance that can cause long-term health issues, such as cancer or respiratory sensitization",
       "correctAnswer": 0,
       "options": [
@@ -6181,15 +6106,14 @@
         "The substance is poisonous if swallowed",
         "The substance is corrosive to skin"
       ],
-      "type": "image_question",
-      "id": "ch-im-0074"
+      "type": "multiple_choice",
+      "id": "ch-im-0074",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A standard green and white 'Fire Exit' sign featuring a white silhouette of a person running through a doorway with an arrow pointing right",
       "explanation": "The 'running man' pointing towards a door indicates the direction and location of the nearest emergency exit to be used in an evacuation",
-      "imageAlt": "A green rectangular sign showing a white figure running through an open doorway",
-      "question": "What information does this safe condition sign provide?",
-      "type": "image_question",
+      "question": "A standard green and white 'Fire Exit' sign featuring a white silhouette of a person running through a doorway with an arrow pointing right. What information does this safe condition sign provide?",
+      "type": "multiple_choice",
       "options": [
         "The way to the site canteen",
         "The location of the first-aid room",
@@ -6197,7 +6121,8 @@
         "Entering this area is prohibited"
       ],
       "correctAnswer": 2,
-      "id": "ch-im-0075"
+      "id": "ch-im-0075",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -6207,15 +6132,14 @@
         "Ear protection must be worn"
       ],
       "correctAnswer": 3,
-      "type": "image_question",
-      "imageAlt": "A blue circular sign with a white silhouette of a person wearing ear defenders",
-      "question": "What does this mandatory sign require you to do?",
-      "imageDescription": "A blue mandatory safety sign showing a white silhouette of a head wearing ear defenders",
+      "type": "multiple_choice",
+      "question": "A blue mandatory safety sign showing a white silhouette of a head wearing ear defenders. What does the sign require you to do?",
       "explanation": "The symbol of an ear protector inside a blue circle means that hearing protection is compulsory in that area due to high noise levels",
-      "id": "ch-im-0076"
+      "id": "ch-im-0076",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Warning: Danger of electricity",
         "Warning: High temperature",
@@ -6223,11 +6147,10 @@
         "Warning: Overhead power lines only"
       ],
       "correctAnswer": 0,
-      "imageDescription": "A yellow warning triangle containing a black jagged lightning bolt symbol",
       "explanation": "A yellow triangle with a black lightning bolt is the standard warning for the presence of high-voltage electricity or electrical equipment",
-      "imageAlt": "A yellow triangular sign with a black border and a black lightning bolt symbol",
-      "question": "What danger does this warning sign identify?",
-      "id": "ch-im-0077"
+      "question": "A yellow warning triangle containing a black jagged lightning bolt symbol. What danger does the sign identify?",
+      "id": "ch-im-0077",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 1,
@@ -6237,17 +6160,14 @@
         "Pedestrians must walk in single file",
         "One-way pedestrian system in operation"
       ],
-      "type": "image_question",
-      "question": "What is the meaning of this prohibition sign?",
-      "imageAlt": "A white circular sign with a red border and a diagonal red line over a black silhouette of a person walking",
-      "imageDescription": "A prohibition sign featuring a red circle with a diagonal slash over a black silhouette of a walking person",
+      "type": "multiple_choice",
+      "question": "A prohibition sign featuring a red circle with a diagonal slash over a black silhouette of a walking person. What is the meaning of the sign?",
       "explanation": "A red circle with a black silhouette of a person and a diagonal red line indicates that pedestrians are not allowed to enter or walk in that specific area",
-      "id": "ch-im-0078"
+      "id": "ch-im-0078",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A red diamond-shaped pictogram with a black circle and a flame on top",
-      "question": "What does this hazard pictogram on a chemical container indicate?",
-      "imageDescription": "A GHS hazard pictogram showing a red diamond border with a black circle inside, having a flame positioned on top of the circle",
+      "question": "A GHS hazard pictogram showing a red diamond border with a black circle inside, having a flame positioned on top of the circle. What does this hazard pictogram on a chemical container indicate?",
       "explanation": "The symbol of a flame over a circle indicates that the chemical is an oxidizer, which can provide oxygen to a fire and make it burn more intensely",
       "options": [
         "The substance is flammable",
@@ -6256,15 +6176,14 @@
         "The substance is highly corrosive"
       ],
       "correctAnswer": 2,
-      "type": "image_question",
-      "id": "ch-im-0079"
+      "type": "multiple_choice",
+      "id": "ch-im-0079",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A GHS hazard pictogram in a red diamond showing liquid dropping from two test tubes, one corroding a piece of metal and the other a human hand",
       "explanation": "The sign showing a hand being dripped on by liquid and a metal bar being corroded warns that the substance can cause chemical burns to skin and damage materials",
-      "question": "What is the primary danger shown by this pictogram?",
-      "imageAlt": "A red diamond-shaped pictogram showing liquid dripping from two test tubes onto a hand and a metal bar",
-      "type": "image_question",
+      "question": "A GHS hazard pictogram in a red diamond showing liquid dropping from two test tubes, one corroding a piece of metal and the other a human hand. What is the primary danger shown by this pictogram?",
+      "type": "multiple_choice",
       "correctAnswer": 0,
       "options": [
         "The substance is corrosive",
@@ -6272,14 +6191,13 @@
         "The substance is harmful to the environment",
         "The substance is an irritant"
       ],
-      "id": "ch-im-0080"
+      "id": "ch-im-0080",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A green safe condition sign featuring a large white Greek-style cross in the middle",
       "explanation": "The white cross on a green background is the universal symbol for first-aid equipment or the location of a first aider",
-      "question": "What does this green and white sign point you toward?",
-      "imageAlt": "A green rectangular sign with a white cross in the centre",
-      "type": "image_question",
+      "question": "A green safe condition sign featuring a large white Greek-style cross in the middle. What does this green and white sign point you toward?",
+      "type": "multiple_choice",
       "correctAnswer": 3,
       "options": [
         "Emergency assembly point",
@@ -6287,12 +6205,11 @@
         "Safe way out",
         "First-aid kit or facility"
       ],
-      "id": "ch-im-0081"
+      "id": "ch-im-0081",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A yellow triangular sign with a black border and a silhouette of a forklift truck",
-      "question": "What hazard is being identified by this warning sign?",
-      "imageDescription": "A yellow warning triangle showing a black silhouette of a forklift truck",
+      "question": "A yellow warning triangle showing a black silhouette of a forklift truck. What hazard is being identified by the sign?",
       "explanation": "This sign is used to warn of heavy machinery or vehicles, such as forklifts, operating in the immediate area",
       "options": [
         "Forklift training area",
@@ -6301,13 +6218,12 @@
         "Electric vehicle charging point"
       ],
       "correctAnswer": 1,
-      "type": "image_question",
-      "id": "ch-im-0082"
+      "type": "multiple_choice",
+      "id": "ch-im-0082",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What restriction is being shown by this sign?",
-      "imageAlt": "A red circular prohibition sign with a black silhouette of a mobile phone and a diagonal red line",
-      "imageDescription": "A prohibition sign with a red border and diagonal line over a black graphic of a mobile phone",
+      "question": "A prohibition sign with a red border and diagonal line over a black graphic of a mobile phone. What restriction is being shown by the sign?",
       "explanation": "A red circle with a diagonal line over a mobile phone indicates that the use of mobile devices is prohibited, often due to safety or interference risks",
       "correctAnswer": 3,
       "options": [
@@ -6316,15 +6232,14 @@
         "Mobile charging point",
         "No mobile phones allowed"
       ],
-      "type": "image_question",
-      "id": "ch-im-0083"
+      "type": "multiple_choice",
+      "id": "ch-im-0083",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A blue circular sign containing a white graphic of a traditional construction hard hat",
       "explanation": "The blue hat symbol indicates that a safety helmet must be worn at all times in this area to protect against falling objects or head impacts",
-      "question": "What is the requirement when entering an area with this sign?",
-      "imageAlt": "A blue circular mandatory sign with a white silhouette of a safety helmet",
-      "type": "image_question",
+      "question": "A blue circular sign containing a white graphic of a traditional construction hard hat. What is the requirement when entering an area with the sign?",
+      "type": "multiple_choice",
       "correctAnswer": 0,
       "options": [
         "Safety helmets must be worn",
@@ -6332,7 +6247,8 @@
         "Hairnets must be worn",
         "Site office location for helmets"
       ],
-      "id": "ch-im-0084"
+      "id": "ch-im-0084",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -6341,88 +6257,82 @@
         "Only construction workers can enter",
         "The area is for storing clothing"
       ],
-      "type": "image_question",
-      "imageDescription": "A standard circular blue HSE mandatory sign featuring an icon of a high-visibility waistcoat",
+      "type": "multiple_choice",
       "correctAnswer": 1,
-      "question": "If you see this sign at the entrance to a construction site, what does it mean?",
+      "question": "A standard circular blue HSE mandatory sign featuring an icon of a high-visibility waistcoat. If you see the sign at the entrance to a construction site, what does it mean?",
       "explanation": "This is a Mandatory sign indicating that high-visibility clothing must be worn in this area to remain visible to vehicle operators",
-      "imageAlt": "Blue circular sign with a white icon of a high-visibility vest",
-      "id": "ch-im-0085"
+      "id": "ch-im-0085",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A triangular yellow warning sign with a black border and a black lightning bolt symbol in the centre",
       "options": [
         "Warning: Risk of electric shock",
         "Warning: Flammable material",
         "Warning: Overhead moving loads",
         "Warning: Laser beam hazard"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "The yellow triangle with a black lightning bolt is the standard warning for high voltage or risk of electric shock",
-      "imageAlt": "Yellow triangular sign with a black lightning bolt symbol",
       "correctAnswer": 0,
-      "question": "What specific hazard is this sign warning you about?",
-      "id": "ch-im-0086"
+      "question": "A triangular yellow warning sign with a black border and a black lightning bolt symbol in the centre. What specific hazard is the sign warning you about?",
+      "id": "ch-im-0086",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A rectangular green safe condition sign with a white border and a white cross in the centre",
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Safe to cross the road here",
         "Emergency exit route",
         "Doctor on site today",
         "First-aid equipment location"
       ],
-      "imageAlt": "Green rectangular sign with a white cross in the middle",
       "explanation": "This sign marks the location of the first-aid kit or the first-aid station on a site",
-      "question": "What information is provided by this green and white sign?",
+      "question": "A rectangular green safe condition sign with a white border and a white cross in the centre. What information is provided by this green and white sign?",
       "correctAnswer": 3,
-      "id": "ch-im-0087"
+      "id": "ch-im-0087",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "This prohibition sign indicates that pedestrian access is forbidden, usually due to heavy machinery or dangerous site activities",
-      "imageAlt": "Round white sign with a red border and a red diagonal line over a black figure walking",
       "correctAnswer": 2,
-      "question": "What does this sign tell you about the area ahead?",
-      "imageDescription": "A circular sign with a red border and a diagonal red slash over a black silhouette of a person walking",
+      "question": "A circular sign with a red border and a diagonal red slash over a black silhouette of a person walking. What does the sign tell you about the area ahead?",
       "options": [
         "Walking is allowed if wearing a helmet",
         "Zebra crossing ahead",
         "No pedestrian access beyond this point",
         "Pedestrians have right of way"
       ],
-      "type": "image_question",
-      "id": "ch-im-0088"
+      "type": "multiple_choice",
+      "id": "ch-im-0088",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A CLP hazard pictogram: a white diamond with a red border containing a black symbol of a flame",
       "options": [
         "The substance is explosive",
         "The substance is highly flammable",
         "The substance is corrosive to skin",
         "The substance is under pressure"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "This pictogram on a container indicates that the substance inside can catch fire easily and must be kept away from heat sources",
-      "imageAlt": "White diamond with a red border showing a black flame",
       "correctAnswer": 1,
-      "question": "What does this hazard pictogram on a chemical container mean?",
-      "id": "ch-im-0089"
+      "question": "A CLP hazard pictogram: a white diamond with a red border containing a black symbol of a flame. What does this hazard pictogram on a chemical container mean?",
+      "id": "ch-im-0089",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What is the meaning of this sign found on a construction site?",
+      "question": "A square green safe condition sign showing four white arrows pointing toward a group of white figures in the middle. What is the meaning of the sign found on a construction site?",
       "correctAnswer": 0,
-      "imageAlt": "Green sign with people silhouettes and arrows pointing inwards toward a central point",
       "explanation": "This sign shows the direction to a designated assembly point where staff should gather following an emergency evacuation",
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Fire assembly point location",
         "Canteen or break area ahead physician",
         "Manual handling training area",
         "Site office entrance"
       ],
-      "imageDescription": "A square green safe condition sign showing four white arrows pointing toward a group of white figures in the middle",
-      "id": "ch-im-0090"
+      "id": "ch-im-0090",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -6431,28 +6341,26 @@
         "Hand protection must be worn",
         "Only use hands, do not use tools"
       ],
-      "type": "image_question",
-      "imageDescription": "A circular blue mandatory sign with a white graphic of a pair of safety gloves",
+      "type": "multiple_choice",
       "correctAnswer": 2,
-      "question": "When you see this sign displayed, what action must you take?",
+      "question": "A circular blue mandatory sign with a white graphic of a pair of safety gloves. When you see the sign displayed, what action must you take?",
       "explanation": "This mandatory sign indicates that protective gloves must be worn to protect hands from hazards like skin-absorbing chemicals or abrasions",
-      "imageAlt": "Blue circular sign with white icons of two hands/gloves",
-      "id": "ch-im-0091"
+      "id": "ch-im-0091",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A yellow triangular warning sign showing a black hook lifting a rectangular load",
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Warning: Deep excavation",
         "Warning: Site transport moving",
         "Warning: Falling masonry",
         "Warning: Overhead loads"
       ],
-      "imageAlt": "Yellow triangular sign with a black hook and a load symbol",
       "explanation": "This warning sign alerts workers to the presence of overhead loads being moved by cranes or lifting equipment",
-      "question": "What danger does this warning sign identify?",
+      "question": "A yellow triangular warning sign showing a black hook lifting a rectangular load. What danger does the sign identify?",
       "correctAnswer": 3,
-      "id": "ch-im-0092"
+      "id": "ch-im-0092",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -6461,65 +6369,59 @@
         "Wash hands here",
         "Empty chemical containers here"
       ],
-      "type": "image_question",
-      "imageDescription": "A prohibition sign featuring a red circle and slash over a black icon of a tap dripping into a glass",
+      "type": "multiple_choice",
       "correctAnswer": 1,
-      "question": "What does this sign mean if placed above a water tap?",
+      "question": "A prohibition sign featuring a red circle and slash over a black icon of a tap dripping into a glass. What does the sign mean if placed above a water tap?",
       "explanation": "This sign indicates that the water is not safe for drinking and is likely for industrial or toilet use only",
-      "imageAlt": "Circular sign with red border and slash over a glass of water and a tap",
-      "id": "ch-im-0093"
+      "id": "ch-im-0093",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "The exclamation mark pictogram warns of substances that can cause skin or eye irritation or respiratory sensitisation",
-      "imageAlt": "White diamond with a red border containing a black exclamation mark",
       "correctAnswer": 2,
-      "question": "What hazard does this pictogram on a product label identify?",
-      "imageDescription": "A CLP hazard pictogram: a white diamond with a red border and a large black exclamation mark in the centre",
+      "question": "A CLP hazard pictogram: a white diamond with a red border and a large black exclamation mark in the centre. What hazard does this pictogram on a product label identify?",
       "options": [
         "Danger: Explosive material",
         "Danger: High noise levels",
         "Warning: Harmful or irritating substance",
         "Warning: Radioactive material"
       ],
-      "type": "image_question",
-      "id": "ch-im-0094"
+      "type": "multiple_choice",
+      "id": "ch-im-0094",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "Yellow triangular sign with a black sun-like burst symbol",
       "explanation": "This sign indicates that the area contains lasers, which can cause permanent eye damage if viewed directly or via reflections",
-      "question": "What specific hazard is identified by this triangular sign?",
+      "question": "A yellow triangular warning sign with a black border and a black 'hazard burst' symbol representing a laser beam. What specific hazard is identified by this triangular sign?",
       "correctAnswer": 0,
-      "imageDescription": "A yellow triangular warning sign with a black border and a black 'hazard burst' symbol representing a laser beam",
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Laser radiation hazard",
         "Bright lights in use",
         "Welding in progress",
         "Explosive atmosphere"
       ],
-      "id": "ch-im-0095"
+      "id": "ch-im-0095",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A circular blue mandatory sign with a white silhouette of a head wearing ear defenders",
       "options": [
         "No loud shouting allowed",
         "Music is playing in this area",
         "Radios must be turned off",
         "Hearing protection must be worn"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "This mandatory sign indicates that hearing protection, such as ear muffs or plugs, must be worn due to high noise levels",
-      "imageAlt": "Blue circular sign with a white icon of a person wearing ear defenders",
       "correctAnswer": 3,
-      "question": "What is required in an area where this sign is displayed?",
-      "id": "ch-im-0096"
+      "question": "A circular blue mandatory sign with a white silhouette of a head wearing ear defenders. What is required in an area where the sign is displayed?",
+      "id": "ch-im-0096",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "This sign indicates that the water is not safe for drinking. Drinking water is usually marked with a green and white sign",
-      "imageDescription": "A standard prohibition sign showing a red circle with a slash over a black icon of a water faucet and a glass being filled",
-      "question": "What is the meaning of this sign?",
-      "type": "image_question",
-      "imageAlt": "A red circle with a diagonal line through it over a symbol of a tap and a glass",
+      "question": "A standard prohibition sign showing a red circle with a slash over a black icon of a water faucet and a glass being filled. What is the meaning of the sign?",
+      "type": "multiple_choice",
       "correctAnswer": 2,
       "options": [
         "Water for washing only",
@@ -6527,14 +6429,13 @@
         "Do not drink this water",
         "Turn off tap after use"
       ],
-      "id": "ch-im-0097"
+      "id": "ch-im-0097",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "This sign warns of overhead electrical cables. High-voltage risks require constant awareness and safe working distances",
-      "imageDescription": "A triangular yellow warning sign featuring a black lightning bolt pointing downwards",
-      "imageAlt": "A yellow triangle with a black border and a black lightning bolt symbol",
-      "type": "image_question",
-      "question": "What risk does this sign highlight?",
+      "type": "multiple_choice",
+      "question": "A triangular yellow warning sign featuring a black lightning bolt pointing downwards. What risk does the sign highlight?",
       "correctAnswer": 0,
       "options": [
         "Danger: Overhead electricity",
@@ -6542,7 +6443,8 @@
         "Danger: Laser radiation",
         "Static electricity hazard"
       ],
-      "id": "ch-im-0098"
+      "id": "ch-im-0098",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -6552,12 +6454,11 @@
         "Safety helmets must be worn"
       ],
       "correctAnswer": 3,
-      "type": "image_question",
-      "question": "What does this mandatory sign tell you?",
-      "imageAlt": "A blue circle with a white silhouette of a person wearing a safety helmet",
-      "imageDescription": "A mandatory blue circular sign showing a white head profile wearing a hard hat or safety helmet",
+      "type": "multiple_choice",
+      "question": "A mandatory blue circular sign showing a white head profile wearing a hard hat or safety helmet. What does the sign tell you?",
       "explanation": "This blue sign indicates that safety helmets are mandatory in the area to protect against falling objects",
-      "id": "ch-im-0099"
+      "id": "ch-im-0099",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -6567,12 +6468,11 @@
         "Keep hands clear of machinery"
       ],
       "correctAnswer": 1,
-      "type": "image_question",
-      "question": "What instruction is given by this sign regarding power tool use?",
-      "imageAlt": "A blue circle containing a white hand with jagged lines radiating from it",
-      "imageDescription": "A mandatory blue circular sign with a white graphic of a hand and jagged lines representing vibration",
+      "type": "multiple_choice",
+      "question": "A mandatory blue circular sign with a white graphic of a hand and jagged lines representing vibration. What instruction is given by the sign regarding power tool use?",
       "explanation": "Hand arm vibration (HAVS) can cause permanent damage; this sign reminds workers to use vibration-reducing measures or limit exposure time",
-      "id": "ch-im-0100"
+      "id": "ch-im-0100",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "This 'GHS' pictogram identifies substances that are corrosive and can cause skin burns or eye damage upon contact",
@@ -6582,33 +6482,30 @@
         "Toxic if swallowed sprays",
         "Flammable liquids"
       ],
-      "imageAlt": "A white diamond with a red border showing two test tubes pouring liquid onto a hand and a metal bar",
-      "question": "What is the meaning of this pictogram found on a container?",
-      "type": "image_question",
+      "question": "A chemical hazard pictogram showing a red diamond frame with a black icon of liquid dripping from test tubes, causing corrosion to a surface and a hand. What is the meaning of this pictogram found on a container?",
+      "type": "multiple_choice",
       "correctAnswer": 0,
-      "imageDescription": "A chemical hazard pictogram showing a red diamond frame with a black icon of liquid dripping from test tubes, causing corrosion to a surface and a hand",
-      "id": "ch-im-0101"
+      "id": "ch-im-0101",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A square green safety sign featuring a bold white cross",
       "options": [
         "Hospital ahead",
         "First-aid station",
         "Doctors surgery only",
         "Pharmacy/chemist location"
       ],
-      "type": "image_question",
-      "question": "What does this green and white safety sign represent?",
-      "imageAlt": "A green square with a white cross in the centre",
+      "type": "multiple_choice",
+      "question": "A square green safety sign featuring a bold white cross. What does this green and white safety sign represent?",
       "correctAnswer": 1,
       "explanation": "This sign indicates the location of first-aid equipment or a first-aid station, used for emergency medical treatment",
-      "id": "ch-im-0102"
+      "id": "ch-im-0102",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "Pedestrians are prohibited from entering or using the route where this sign is displayed for safety reasons",
-      "imageAlt": "A red circle with a diagonal line over a black silhouette of a person walking",
-      "type": "image_question",
-      "question": "What does this sign mean on a construction site?",
+      "type": "multiple_choice",
+      "question": "A circular prohibition sign with a red border and diagonal slash over a black figure of a person walking. What does the sign mean on a construction site?",
       "correctAnswer": 2,
       "options": [
         "Fragile roof: do not walk here",
@@ -6616,75 +6513,69 @@
         "No pedestrian access",
         "Public footpath only"
       ],
-      "imageDescription": "A circular prohibition sign with a red border and diagonal slash over a black figure of a person walking",
-      "id": "ch-im-0103"
+      "id": "ch-im-0103",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "This sign warns that the material contains asbestos, which is dangerous if fibres are inhaled. Do not disturb it",
       "correctAnswer": 3,
-      "type": "image_question",
-      "question": "What hazard does this specific label identify?",
-      "imageAlt": "A large black letter 'a' on a white and black background with specific warning text",
+      "type": "multiple_choice",
+      "question": "A rectangular sign with a large black 'a' and text that says 'WARNING: CONTAINS ASBESTOS'. What hazard does this specific label identify?",
       "options": [
         "Acid storage area",
         "Aggregates storage area",
         "Authorized personnel only",
         "Contains asbestos fibres"
       ],
-      "imageDescription": "A rectangular sign with a large black 'a' and text that says 'WARNING: CONTAINS ASBESTOS'",
-      "id": "ch-im-0104"
+      "id": "ch-im-0104",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "A CO2 fire extinguisher (black label) is suitable for electrical fires as it does not conduct electricity",
-      "imageDescription": "A carbon dioxide (CO2) fire extinguisher which is red with a distinct black band and a horn-shaped nozzle",
       "correctAnswer": 0,
-      "imageAlt": "A black fire extinguisher with a black band",
-      "type": "image_question",
-      "question": "Which type of fire is this extinguisher primarily used for?",
+      "type": "multiple_choice",
+      "question": "A carbon dioxide (CO2) fire extinguisher which is red with a distinct black band and a horn-shaped nozzle. Which type of fire is this extinguisher primarily used for?",
       "options": [
         "Electrical fires",
         "Wood and paper fires only",
         "Cooking oil fires only",
         "Flammable metal fires"
       ],
-      "id": "ch-im-0105"
+      "id": "ch-im-0105",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "The exclamation mark pictogram indicates an irritant, which may cause less severe health effects like skin rashes or respiratory irritation",
-      "imageDescription": "A GHS hazard pictogram consisting of a red diamond border with a black exclamation mark centered inside",
       "options": [
         "Danger of explosion",
         "Harmful or irritant substance",
         "Extremely toxic substance",
         "Radioactive material"
       ],
-      "question": "What does this substance hazard pictogram indicate?",
-      "type": "image_question",
-      "imageAlt": "A white diamond with a red border and a thick black exclamation mark in the center",
+      "question": "A GHS hazard pictogram consisting of a red diamond border with a black exclamation mark centered inside. What does this substance hazard pictogram indicate?",
+      "type": "multiple_choice",
       "correctAnswer": 1,
-      "id": "ch-im-0106"
+      "id": "ch-im-0106",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 2,
-      "imageAlt": "A blue circle with a white arrow pointing to the left",
-      "question": "What must a driver do when seeing this sign on site?",
-      "type": "image_question",
+      "question": "A mandatory blue circular sign featuring a white arrow pointing towards the left. What must a driver do when seeing the sign on site?",
+      "type": "multiple_choice",
       "options": [
         "One-way street exit",
         "No left turn allowed",
         "Turn left only",
         "Diversion route for pedestrians"
       ],
-      "imageDescription": "A mandatory blue circular sign featuring a white arrow pointing towards the left",
       "explanation": "The white arrow on a blue background indicates the mandatory direction of travel for vehicles on site",
-      "id": "ch-im-0107"
+      "id": "ch-im-0107",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "This sign marks the location of the emergency assembly point where staff should gather after evacuating",
-      "imageDescription": "A green safety sign showing four white arrows pointing from the corners toward a group of white figures in the center",
-      "imageAlt": "A green square sign with white figures and arrows pointing inwards to a central point",
-      "type": "image_question",
-      "question": "What is the purpose of this sign?",
+      "type": "multiple_choice",
+      "question": "A green safety sign showing four white arrows pointing from the corners toward a group of white figures in the center. What is the purpose of the sign?",
       "correctAnswer": 0,
       "options": [
         "Fire assembly point",
@@ -6692,7 +6583,8 @@
         "Waiting area for visitors",
         "Site office location"
       ],
-      "id": "ch-im-0108"
+      "id": "ch-im-0108",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -6702,16 +6594,13 @@
         "Wear a hard hat and ear defenders"
       ],
       "correctAnswer": 1,
-      "imageDescription": "A standard UK mandatory safety sign: a solid blue circle containing a white silhouette of a head wearing ear defenders",
-      "imageAlt": "A blue circular sign with a white symbol of a person wearing ear defenders",
-      "question": "What must you do when you see this mandatory sign?",
+      "question": "A standard UK mandatory safety sign: a solid blue circle containing a white silhouette of a head wearing ear defenders. What must you do when you see the sign?",
       "explanation": "Blue circular signs are mandatory, and this specific symbol indicates that ear protection must be worn to prevent hearing damage",
-      "type": "image_question",
-      "id": "ch-im-0109"
+      "type": "multiple_choice",
+      "id": "ch-im-0109",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A red circular sign with a diagonal line over a black silhouette of a person walking",
-      "imageDescription": "A prohibition sign: a white circle with a red thick border and a red diagonal slash over a black icon of a walking person",
       "correctAnswer": 0,
       "options": [
         "No pedestrians allowed",
@@ -6719,15 +6608,16 @@
         "Watch out for people walking",
         "Footpath ends ahead"
       ],
-      "question": "What is the instruction given by this prohibition sign?",
-      "type": "image_question",
+      "question": "A prohibition sign: a white circle with a red thick border and a red diagonal slash over a black icon of a walking person. What is the instruction given by the sign?",
+      "type": "multiple_choice",
       "explanation": "The red circle with a diagonal line through a figure walking indicates that pedestrians are not allowed in that specific area",
-      "id": "ch-im-0110"
+      "id": "ch-im-0110",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "The exclamation mark in a yellow triangle represents a general hazard, warning you to be cautious of unspecified dangers in the vicinity",
-      "type": "image_question",
-      "question": "What does this warning sign indicate to workers on site?",
+      "type": "multiple_choice",
+      "question": "A warning sign: a yellow equilateral triangle with a thick black border containing a bold black exclamation mark. What does the sign indicate to workers on site?",
       "options": [
         "First aid post ahead",
         "High voltage area",
@@ -6735,14 +6625,11 @@
         "Stop immediately"
       ],
       "correctAnswer": 2,
-      "imageAlt": "A yellow triangle with a black border and a large black exclamation mark in the centre",
-      "imageDescription": "A warning sign: a yellow equilateral triangle with a thick black border containing a bold black exclamation mark",
-      "id": "ch-im-0111"
+      "id": "ch-im-0111",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What hazard is identified by this pictogram on a chemical container?",
-      "imageAlt": "A white diamond with a red border containing a black symbol of a gas cylinder",
-      "imageDescription": "A GHS hazard pictogram: a white diamond with a red border showing a black silhouette of a gas cylinder (like a rolling pin shape)",
+      "question": "A GHS hazard pictogram: a white diamond with a red border showing a black silhouette of a gas cylinder (like a rolling pin shape). What hazard is identified by this pictogram on a chemical container?",
       "correctAnswer": 1,
       "options": [
         "Flammable liquid",
@@ -6750,12 +6637,13 @@
         "Corrosive substance",
         "Explosive material"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "The gas cylinder pictogram on a product label indicates that the contents are under pressure and could explode if heated",
-      "id": "ch-im-0112"
+      "id": "ch-im-0112",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What does this sign represent on a construction site?",
+      "question": "An emergency information sign: a green rectangle with a white cross in the corner and a white silhouette of a head. What does the sign represent on a construction site?",
       "correctAnswer": 3,
       "options": [
         "Smoking area",
@@ -6763,16 +6651,15 @@
         "Fire exit route",
         "First aid point"
       ],
-      "imageDescription": "An emergency information sign: a green rectangle with a white cross in the corner and a white silhouette of a head",
-      "imageAlt": "A green rectangular sign with a white cross and a silhouette of a person's head",
       "explanation": "The green sign with a white cross and a person's profile indicates the location of a first aid station or first aider",
-      "type": "image_question",
-      "id": "ch-im-0113"
+      "type": "multiple_choice",
+      "id": "ch-im-0113",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "A skull and crossbones pictogram indicates that the substance is acutely toxic and can cause serious harm or death if inhaled, swallowed, or touched",
-      "type": "image_question",
-      "question": "What does this hazard pictogram mean when found on a product?",
+      "type": "multiple_choice",
+      "question": "A GHS hazard pictogram: a white diamond with a red border showing a black skull and two crossed bones. What does this hazard pictogram mean when found on a product?",
       "correctAnswer": 0,
       "options": [
         "Acute toxicity (fatal or toxic)",
@@ -6780,13 +6667,12 @@
         "Irritant substance",
         "Oxidising agent"
       ],
-      "imageDescription": "A GHS hazard pictogram: a white diamond with a red border showing a black skull and two crossed bones",
-      "imageAlt": "A white diamond with a red border containing a black skull and crossbones symbol",
-      "id": "ch-im-0114"
+      "id": "ch-im-0114",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "The white arrow on a blue background is a mandatory sign directing you to keep to the left side of a path or road",
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Turn left ahead",
         "Keep left",
@@ -6794,16 +6680,13 @@
         "One-way traffic only"
       ],
       "correctAnswer": 1,
-      "imageDescription": "A mandatory sign: a solid blue circle with a bold white arrow pointing towards the bottom left",
-      "imageAlt": "A blue circular sign with a white arrow pointing diagonally down to the left",
-      "question": "What direction does this mandatory sign provide?",
-      "id": "ch-im-0115"
+      "question": "A mandatory sign: a solid blue circle with a bold white arrow pointing towards the bottom left. What direction does the sign provide?",
+      "id": "ch-im-0115",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "This specific symbol indicates that the equipment or area contains high-voltage electricity and represents a risk of electric shock",
-      "imageDescription": "A warning sign: a yellow triangle with a black border and a zigzag black lightning bolt pointing downwards",
-      "imageAlt": "A yellow triangle with a black border containing a black lightning bolt symbol",
       "correctAnswer": 2,
       "options": [
         "Laser radiation hazard",
@@ -6811,12 +6694,13 @@
         "Danger of death - high voltage",
         "Electric tools only"
       ],
-      "question": "What specific danger is highlighted by this warning sign?",
-      "id": "ch-im-0116"
+      "question": "A warning sign: a yellow triangle with a black border and a zigzag black lightning bolt pointing downwards. What specific danger is highlighted by the sign?",
+      "id": "ch-im-0116",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "Carbon Dioxide (CO2) extinguishers are identified by a black label and are safe for use on electrical fires as they do not conduct electricity",
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Electrical fires",
         "Wood and paper fires only",
@@ -6824,15 +6708,12 @@
         "Flammable metal fires"
       ],
       "correctAnswer": 0,
-      "imageDescription": "A standard UK CO2 fire extinguisher: a red body with a prominent black label/band and a large black discharge horn",
-      "imageAlt": "A red fire extinguisher with a black band or label and a horn-shaped nozzle",
-      "question": "Which type of fire is this extinguisher primarily designed for?",
-      "id": "ch-im-0117"
+      "question": "A standard UK CO2 fire extinguisher: a red body with a prominent black label/band and a large black discharge horn. Which type of fire is this extinguisher primarily designed for?",
+      "id": "ch-im-0117",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What is the meaning of this prohibition sign?",
-      "imageDescription": "A prohibition sign: a white circle with a red border and diagonal slash over a black icon of a burning match",
-      "imageAlt": "A red circular sign with a diagonal line over a black symbol of a lit match",
+      "question": "A prohibition sign: a white circle with a red border and diagonal slash over a black icon of a burning match. What is the meaning of the sign?",
       "options": [
         "Fire assembly point",
         "Smoking allowed here",
@@ -6840,16 +6721,15 @@
         "Hot works allowed with permit"
       ],
       "correctAnswer": 2,
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "The red circle with a line through a lit match indicates that naked flames are forbidden, usually to prevent fires in areas with flammable materials",
-      "id": "ch-im-0118"
+      "id": "ch-im-0118",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "The running person and arrow in green indicate the direction to follow to reach a safe exit in an emergency",
-      "question": "What information does this green and white sign provide?",
-      "imageDescription": "A directional fire exit sign: a green rectangle featuring a white silhouette of a person moving through a doorway with a directional arrow",
-      "imageAlt": "A green rectangular sign with a white silhouette of a person running toward an open door and an arrow",
+      "question": "A directional fire exit sign: a green rectangle featuring a white silhouette of a person moving through a doorway with a directional arrow. What information does this green and white sign provide?",
       "correctAnswer": 3,
       "options": [
         "Site office location",
@@ -6857,10 +6737,11 @@
         "Storage area direction",
         "Fire exit route direction"
       ],
-      "id": "ch-im-0119"
+      "id": "ch-im-0119",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What instruction must be followed when this sign is displayed?",
+      "question": "A mandatory sign: a solid blue circle containing a white silhouette of a pair of safety gloves. What instruction must be followed when the sign is displayed?",
       "correctAnswer": 1,
       "options": [
         "Wash your hands",
@@ -6868,15 +6749,13 @@
         "Do not touch machinery",
         "Rubber gloves only"
       ],
-      "imageDescription": "A mandatory sign: a solid blue circle containing a white silhouette of a pair of safety gloves",
-      "imageAlt": "A blue circular sign with a white symbol of two hands/gloves",
       "explanation": "This symbol reminds workers that gloves must be worn to protect hands from hazards like cuts, chemicals, or abrasions",
-      "type": "image_question",
-      "id": "ch-im-0120"
+      "type": "multiple_choice",
+      "id": "ch-im-0120",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A blue circular sign showing a white silhouette of a person wearing ear defenders",
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "A blue circle with a white symbol is a mandatory sign, meaning you must follow the instruction shown",
       "options": [
         "Ear protection may be worn if it is noisy",
@@ -6885,13 +6764,12 @@
         "Danger of high-pitched noises ahead"
       ],
       "correctAnswer": 1,
-      "question": "What is the specific requirement when entering an area displaying this sign?",
-      "imageDescription": "A blue circular mandatory safety sign with a white graphic of a person wearing ear protection",
-      "id": "ch-im-0121"
+      "question": "A blue circular mandatory safety sign with a white graphic of a person wearing ear protection. What is the specific requirement when entering an area displaying the sign?",
+      "id": "ch-im-0121",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What does this safety warning sign indicate?",
-      "imageDescription": "A yellow triangular warning sign with a black border and a black lightning bolt symbol in the center",
+      "question": "A yellow triangular warning sign with a black border and a black lightning bolt symbol in the center. What does this safety warning sign indicate?",
       "correctAnswer": 3,
       "explanation": "Yellow triangular signs provide warnings about specific hazards or dangers in the vicinity",
       "options": [
@@ -6900,16 +6778,14 @@
         "Static electricity hazard",
         "Danger: Electricity"
       ],
-      "type": "image_question",
-      "imageAlt": "A yellow triangle with a black border containing a black lightning bolt symbol",
-      "id": "ch-im-0122"
+      "type": "multiple_choice",
+      "id": "ch-im-0122",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 0,
-      "question": "What action is forbidden by this sign?",
-      "imageDescription": "A prohibition sign consisting of a red circle and slash over a black figure of a person walking",
-      "type": "image_question",
-      "imageAlt": "A red circle with a diagonal red line through it, over a black silhouette of a person",
+      "question": "A prohibition sign consisting of a red circle and slash over a black figure of a person walking. What action is forbidden by the sign?",
+      "type": "multiple_choice",
       "explanation": "Red circle signs with a diagonal bar are prohibition signs, indicating an action that is strictly forbidden",
       "options": [
         "No pedestrians allowed beyond this point",
@@ -6917,11 +6793,11 @@
         "Staff entrance only",
         "Pavement ends ahead"
       ],
-      "id": "ch-im-0123"
+      "id": "ch-im-0123",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "Which type of fire extinguisher is identified by the blue label?",
-      "imageDescription": "A standard red fire extinguisher featuring a blue color-coded label indicating it is a dry powder type",
+      "question": "A standard red fire extinguisher featuring a blue color-coded label indicating it is a dry powder type. Which type of fire extinguisher is identified by the blue label?",
       "correctAnswer": 2,
       "explanation": "Dry powder extinguishers are identified by a blue label and are versatile for several fire types",
       "options": [
@@ -6930,13 +6806,12 @@
         "Dry Powder",
         "Foam"
       ],
-      "imageAlt": "A red fire extinguisher with a prominent blue rectangular strip near the top",
-      "type": "image_question",
-      "id": "ch-im-0124"
+      "type": "multiple_choice",
+      "id": "ch-im-0124",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageAlt": "A white diamond with a red border showing a black flame",
+      "type": "multiple_choice",
       "options": [
         "The substance is explosive",
         "The substance is flammable",
@@ -6945,16 +6820,14 @@
       ],
       "explanation": "This pictogram on a container indicates that the substance inside can catch fire easily",
       "correctAnswer": 1,
-      "imageDescription": "A GHS hazard pictogram on a white background with a red diamond frame, containing a black flame symbol",
-      "question": "What does this GHS symbol indicate about a chemical substance?",
-      "id": "ch-im-0125"
+      "question": "A GHS hazard pictogram on a white background with a red diamond frame, containing a black flame symbol. What does this GHS symbol indicate about a chemical substance?",
+      "id": "ch-im-0125",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 0,
-      "imageDescription": "A green rectangular safety sign featuring a white cross, commonly used to denote medical help",
-      "question": "Where would you expect to find this sign?",
-      "imageAlt": "A green rectangular sign with a white cross in the center",
-      "type": "image_question",
+      "question": "A green rectangular safety sign featuring a white cross, commonly used to denote medical help. Where would you expect to find the sign?",
+      "type": "multiple_choice",
       "options": [
         "First-aid post or equipment location",
         "Pharmacy for prescription drugs",
@@ -6962,14 +6835,13 @@
         "Assembly point for emergencies"
       ],
       "explanation": "Green signs are for emergency escapes, first aid, or safety equipment locations",
-      "id": "ch-im-0126"
+      "id": "ch-im-0126",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 2,
-      "imageDescription": "A green emergency exit sign showing a white figure of a person running toward a doorway with a directional arrow",
-      "question": "What is the purpose of this green and white safety sign?",
-      "imageAlt": "A green rectangular sign showing a white figure of a man running through an open doorway toward an arrow",
-      "type": "image_question",
+      "question": "A green emergency exit sign showing a white figure of a person running toward a doorway with a directional arrow. What is the purpose of this green and white safety sign?",
+      "type": "multiple_choice",
       "options": [
         "No running allowed on site",
         "Entrance to the site office",
@@ -6977,11 +6849,11 @@
         "Staff canteen location"
       ],
       "explanation": "A white person on a green background indicates a designated safe route or exit",
-      "id": "ch-im-0127"
+      "id": "ch-im-0127",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A white diamond with a red border showing a black skull and crossbones",
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "The 'skull and crossbones' indicates that the substance is toxic and can cause death or serious injury if inhaled or swallowed",
       "options": [
         "The substance is radioactive",
@@ -6990,13 +6862,12 @@
         "The substance is acutely toxic"
       ],
       "correctAnswer": 3,
-      "question": "What does this pictogram warn you about when found on a product label?",
-      "imageDescription": "A GHS hazard pictogram consisting of a red diamond border enclosing a black skull and crossbones symbol",
-      "id": "ch-im-0128"
+      "question": "A GHS hazard pictogram consisting of a red diamond border enclosing a black skull and crossbones symbol. What does this pictogram warn you about when found on a product label?",
+      "id": "ch-im-0128",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What instruction does this mandatory sign give?",
-      "imageDescription": "A blue circular sign with a white graphic of a hard hat or safety helmet",
+      "question": "A blue circular sign with a white graphic of a hard hat or safety helmet. What instruction does the sign give?",
       "correctAnswer": 1,
       "explanation": "Mandatory signs for safety helmets mean they must be worn to protect against falling objects or head strikes",
       "options": [
@@ -7005,13 +6876,12 @@
         "No overhead work is being carried out",
         "Remove headwear before entering"
       ],
-      "type": "image_question",
-      "imageAlt": "A blue circular sign showing a white silhouette of a safety helmet",
-      "id": "ch-im-0129"
+      "type": "multiple_choice",
+      "id": "ch-im-0129",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageAlt": "A yellow triangle with a black border and a large black exclamation mark in the center",
+      "type": "multiple_choice",
       "options": [
         "General danger; proceed with caution",
         "Information point ahead",
@@ -7020,13 +6890,12 @@
       ],
       "explanation": "An exclamation mark in a yellow triangle warns of general danger that isn't covered by a specific symbol",
       "correctAnswer": 0,
-      "imageDescription": "A yellow triangular warning sign with a black exclamation mark inside a black border",
-      "question": "What is the meaning of this warning sign on a construction site?",
-      "id": "ch-im-0130"
+      "question": "A yellow triangular warning sign with a black exclamation mark inside a black border. What is the meaning of the sign on a construction site?",
+      "id": "ch-im-0130",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What does this pictogram warn about regarding the substance's disposal?",
-      "imageDescription": "A GHS hazard pictogram showing a red diamond border with a black silhouette of a dead fish and a leafless tree",
+      "question": "A GHS hazard pictogram showing a red diamond border with a black silhouette of a dead fish and a leafless tree. What does this pictogram warn about regarding the substance's disposal?",
       "correctAnswer": 2,
       "explanation": "The 'fish and tree' GHS symbol highlights substances that are dangerous to aquatic life and ecosystems",
       "options": [
@@ -7035,13 +6904,12 @@
         "The substance is hazardous to the environment",
         "The substance is organic and biodegradable"
       ],
-      "type": "image_question",
-      "imageAlt": "A white diamond with a red border showing a black dead fish and a bare tree",
-      "id": "ch-im-0131"
+      "type": "multiple_choice",
+      "id": "ch-im-0131",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What hazard does this warning sign alert you to?",
-      "imageDescription": "A yellow triangular warning sign showing a black icon of interlocking gears or moving machine parts",
+      "question": "A yellow triangular warning sign showing a black icon of interlocking gears or moving machine parts. What hazard does the sign alert you to?",
       "correctAnswer": 1,
       "explanation": "Black fingers and an object indicate a risk of clothes or body parts being caught in moving machine parts",
       "options": [
@@ -7050,13 +6918,12 @@
         "Maintenance work in progress",
         "Turn off the machine after use"
       ],
-      "imageAlt": "A yellow triangle with a black border showing black gears or cogs",
-      "type": "image_question",
-      "id": "ch-im-0132"
+      "type": "multiple_choice",
+      "id": "ch-im-0132",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "Yellow triangle with a black border and a symbol of a person tripping over an object",
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "Yellow and black warning signs alert you to specific hazards; this one indicates a potential trip hazard in the area",
       "options": [
         "Watch your step - uneven ground",
@@ -7065,9 +6932,9 @@
         "Slippery surface"
       ],
       "correctAnswer": 1,
-      "question": "What specific hazard is identified by this warning sign?",
-      "imageDescription": "A standard UK health and safety warning sign: a yellow equilateral triangle with a black border and a black pictogram of a person stumbling over a block",
-      "id": "ch-im-0133"
+      "question": "A standard UK health and safety warning sign: a yellow equilateral triangle with a black border and a black pictogram of a person stumbling over a block. What specific hazard is identified by the sign?",
+      "id": "ch-im-0133",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "The CO2 extinguisher is identified by a black label and is used for electrical fires as it does not conduct electricity",
@@ -7077,16 +6944,14 @@
         "Cooking oil fires (Class F)",
         "Metal fires"
       ],
-      "type": "image_question",
-      "imageAlt": "A red fire extinguisher with a prominent black rectangular label or band",
-      "question": "What type of fire is this specific extinguisher most suitable for?",
-      "imageDescription": "A red fire extinguisher with a black color-coded label and a horn-shaped nozzle, typical of a Carbon Dioxide (CO2) extinguisher",
+      "type": "multiple_choice",
+      "question": "A red fire extinguisher with a black color-coded label and a horn-shaped nozzle, typical of a Carbon Dioxide (CO2) extinguisher. What type of fire is this specific extinguisher most suitable for?",
       "correctAnswer": 0,
-      "id": "ch-im-0134"
+      "id": "ch-im-0134",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What does this mandatory sign require you to do?",
-      "imageDescription": "A mandatory safety sign featuring a solid blue circle with a white silhouette of a pair of industrial work boots",
+      "question": "A mandatory safety sign featuring a solid blue circle with a white silhouette of a pair of industrial work boots. What does the sign require you to do?",
       "correctAnswer": 2,
       "explanation": "Blue circular signs are mandatory signs, and this one instructs workers that safety boots must be worn in the area",
       "options": [
@@ -7095,13 +6960,12 @@
         "Safety boots must be worn",
         "Danger: heavy objects on floor"
       ],
-      "type": "image_question",
-      "imageAlt": "Blue circle with a white pictogram of a pair of safety boots",
-      "id": "ch-im-0135"
+      "type": "multiple_choice",
+      "id": "ch-im-0135",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageAlt": "Green rectangle with a white cross in the center",
+      "type": "multiple_choice",
       "options": [
         "Emergency exit route",
         "Hospital nearby",
@@ -7110,16 +6974,14 @@
       ],
       "explanation": "Green signs are for emergency escape or first aid; this specific sign points towards the location of first aid equipment or a first aider",
       "correctAnswer": 3,
-      "imageDescription": "A green rectangular safety sign featuring a white 'Greek' cross in the center, representing first aid",
-      "question": "What does this green and white sign indicate the location of?",
-      "id": "ch-im-0136"
+      "question": "A green rectangular safety sign featuring a white 'Greek' cross in the center, representing first aid. What does this green and white sign indicate the location of?",
+      "id": "ch-im-0136",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 0,
-      "imageDescription": "A GHS hazard pictogram: a white diamond with a red border showing a chemical dripping from two test tubes, one burning a hole in a metal bar and the other burning a hand",
-      "question": "What does this hazard pictogram on a chemical container mean?",
-      "imageAlt": "White diamond with a red border showing test tubes pouring liquid onto a hand and a metal surface",
-      "type": "image_question",
+      "question": "A GHS hazard pictogram: a white diamond with a red border showing a chemical dripping from two test tubes, one burning a hole in a metal bar and the other burning a hand. What does this hazard pictogram on a chemical container mean?",
+      "type": "multiple_choice",
       "options": [
         "Corrosive substance",
         "Oxidising agent",
@@ -7127,11 +6989,11 @@
         "Flammable liquid"
       ],
       "explanation": "This GHS pictogram indicates that a substance is corrosive and can cause skin burns or eye damage upon contact",
-      "id": "ch-im-0137"
+      "id": "ch-im-0137",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What is the meaning of this prohibition sign?",
-      "imageDescription": "A prohibition sign consisting of a red circle with a diagonal crossbar over a black pictogram of a person walking",
+      "question": "A prohibition sign consisting of a red circle with a diagonal crossbar over a black pictogram of a person walking. What is the meaning of the sign?",
       "correctAnswer": 2,
       "explanation": "Red circular signs with a diagonal line are prohibition signs. This one means that pedestrians are not allowed in the designated area",
       "options": [
@@ -7140,13 +7002,12 @@
         "No pedestrians allowed",
         "Men at work"
       ],
-      "imageAlt": "Red circle with a red diagonal line over a black silhouette of a walking person",
-      "type": "image_question",
-      "id": "ch-im-0138"
+      "type": "multiple_choice",
+      "id": "ch-im-0138",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "Yellow triangle with a black border and a pictogram of a person falling off an edge",
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Fragile roof above",
         "Danger: Drop or edge",
@@ -7155,13 +7016,12 @@
       ],
       "explanation": "This sign warns that there is a risk of falling from a height or that there is a drop ahead",
       "correctAnswer": 1,
-      "imageDescription": "A yellow warning triangle with a black border, showing a black silhouette of a person falling backwards off a ledge",
-      "question": "What is this sign warning you about?",
-      "id": "ch-im-0139"
+      "question": "A yellow warning triangle with a black border, showing a black silhouette of a person falling backwards off a ledge. What is the sign warning you about?",
+      "id": "ch-im-0139",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What is the primary danger indicated by this GHS symbol?",
-      "imageDescription": "A hazard pictogram featuring a white diamond with a red border and a black skull and crossbones in the center",
+      "question": "A hazard pictogram featuring a white diamond with a red border and a black skull and crossbones in the center. What is the primary danger indicated by this GHS symbol?",
       "correctAnswer": 3,
       "explanation": "The skull and crossbones symbol is used for substances that can cause death or serious poisoning if they enter the body",
       "options": [
@@ -7170,13 +7030,12 @@
         "Biohazard risk",
         "Acute toxicity (toxic)"
       ],
-      "type": "image_question",
-      "imageAlt": "White diamond with a red border and a black skull and crossbones symbol",
-      "id": "ch-im-0140"
+      "type": "multiple_choice",
+      "id": "ch-im-0140",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "Which location is identified by this sign?",
-      "imageDescription": "A green safety sign showing a group of white figures surrounded by four white arrows pointing towards them from the corners",
+      "question": "A green safety sign showing a group of white figures surrounded by four white arrows pointing towards them from the corners. Which location is identified by the sign?",
       "correctAnswer": 0,
       "explanation": "This sign indicates the direction and location of the designated safe area where workers should meet during an emergency",
       "options": [
@@ -7185,16 +7044,14 @@
         "Public square",
         "Wait here for transport"
       ],
-      "type": "image_question",
-      "imageAlt": "Green square sign with a white pictogram of a group of people and four arrows pointing inwards to them",
-      "id": "ch-im-0141"
+      "type": "multiple_choice",
+      "id": "ch-im-0141",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 2,
-      "question": "Which of these fire types is a cream-labelled extinguisher suitable for?",
-      "imageDescription": "A red fire extinguisher featuring a cream-coloured (off-white) rectangular block on the main body, signifying it is a foam extinguisher",
-      "imageAlt": "Red fire extinguisher with a cream-coloured label",
-      "type": "image_question",
+      "question": "A red fire extinguisher featuring a cream-coloured (off-white) rectangular block on the main body, signifying it is a foam extinguisher. Which of these fire types is a cream-labelled extinguisher suitable for?",
+      "type": "multiple_choice",
       "explanation": "Foam extinguishers (cream label) are effective on flammable liquids as the foam creates a seal over the fuel, starving the fire of oxygen",
       "options": [
         "Live electrical equipment",
@@ -7202,14 +7059,13 @@
         "Flammable liquids (Class B)",
         "Deep fat fryers"
       ],
-      "id": "ch-im-0142"
+      "id": "ch-im-0142",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 1,
-      "question": "When seen on a product label, what does this pictogram mean?",
-      "imageDescription": "A GHS hazard pictogram: a white diamond with a red border containing a large black exclamation mark",
-      "imageAlt": "White diamond with a red border and a thick black exclamation mark in the center",
-      "type": "image_question",
+      "question": "A GHS hazard pictogram: a white diamond with a red border containing a large black exclamation mark. When seen on a product label, what does this pictogram mean?",
+      "type": "multiple_choice",
       "explanation": "The 'exclamation mark' GHS symbol is used for various health hazards, most commonly indicating the substance is an irritant to skin or eyes",
       "options": [
         "Explosive substance",
@@ -7217,11 +7073,11 @@
         "High voltage hazard",
         "General danger - see manual"
       ],
-      "id": "ch-im-0143"
+      "id": "ch-im-0143",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What does this sign mean?",
-      "imageDescription": "A mandatory circular blue sign showing a white head profile wearing a construction safety helmet",
+      "question": "A mandatory circular blue sign showing a white head profile wearing a construction safety helmet. What does the sign mean?",
       "correctAnswer": 2,
       "explanation": "The white symbol on a blue background is a mandatory instruction; this one says the safety helmet (hard hat) provided must be worn",
       "options": [
@@ -7230,28 +7086,26 @@
         "Safety helmet must be worn",
         "Head protection optional"
       ],
-      "imageAlt": "Blue circle with a white silhouette of a person wearing a safety helmet",
-      "type": "image_question",
-      "id": "ch-im-0144"
+      "type": "multiple_choice",
+      "id": "ch-im-0144",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "This GHS pictogram indicates that a substance is classified as acutely toxic and can cause serious health effects or death if swallowed, inhaled, or touched",
       "correctAnswer": 2,
-      "imageAlt": "A red diamond border containing a black skull and crossbones symbol",
       "options": [
         "Fragile contents",
         "Biohazardous waste",
         "Toxic or poisonous substance",
         "Corrosive material"
       ],
-      "type": "image_question",
-      "imageDescription": "GHS Hazard Pictogram for Acute Toxicity (Skull and Crossbones)",
-      "question": "When found on a chemical container, what does this symbol mean?",
-      "id": "ch-im-0145"
+      "type": "multiple_choice",
+      "question": "GHS Hazard Pictogram for Acute Toxicity (Skull and Crossbones). When found on a chemical container, what does this symbol mean?",
+      "id": "ch-im-0145",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 0,
-      "imageAlt": "A blue circular sign showing a white silhouette of a person wearing a full body safety harness",
       "options": [
         "Fall protection must be worn",
         "High-visibility clothing required",
@@ -7259,10 +7113,10 @@
         "Rescue equipment point"
       ],
       "explanation": "Blue circular signs are mandatory signs; this specific icon requires the use of a safety harness to prevent falls from height",
-      "question": "What must you do when you see this sign at the entrance to a work area?",
-      "type": "image_question",
-      "imageDescription": "Mandatory safety sign for wearing a safety harness",
-      "id": "ch-im-0146"
+      "question": "Mandatory safety sign for wearing a safety harness. What must you do when you see the sign at the entrance to a work area?",
+      "type": "multiple_choice",
+      "id": "ch-im-0146",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "Carbon Dioxide (CO2) extinguishers have a black label and are safe to use on electrical fires as the gas is non-conductive",
@@ -7272,42 +7126,39 @@
         "Flammable metal fires",
         "Electrical equipment fires"
       ],
-      "imageAlt": "A red fire extinguisher with a prominent black label or band around the top",
       "correctAnswer": 3,
-      "imageDescription": "A standard UK CO2 fire extinguisher with a black label",
-      "type": "image_question",
-      "question": "What type of fire is this extinguisher specifically designed for?",
-      "id": "ch-im-0147"
+      "type": "multiple_choice",
+      "question": "A standard UK CO2 fire extinguisher with a black label. What type of fire is this extinguisher specifically designed for?",
+      "id": "ch-im-0147",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "Yellow triangular signs are warning signs; this one warns of fragile roofing materials that cannot support a person's weight",
       "correctAnswer": 1,
-      "imageAlt": "A yellow triangle with a black border showing a person falling through a slanted roof surface",
       "options": [
         "Slip hazard on roof",
         "Fragile roof - do not walk here",
         "Risk of falling onto roof",
         "Roof under construction"
       ],
-      "type": "image_question",
-      "imageDescription": "Warning sign for a fragile roof",
-      "question": "What hazardous condition does this warning sign identify?",
-      "id": "ch-im-0148"
+      "type": "multiple_choice",
+      "question": "Warning sign for a fragile roof. What hazardous condition does the sign identify?",
+      "id": "ch-im-0148",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageDescription": "Emergency eye wash station sign",
-      "question": "What does this green and white sign indicate the location of?",
+      "type": "multiple_choice",
+      "question": "Emergency eye wash station sign. What does this green and white sign indicate the location of?",
       "explanation": "This sign marks the location of a dedicated station for flushing eyes in the event of chemical or debris contamination",
       "correctAnswer": 2,
-      "imageAlt": "A green square sign with a white icon of an eye and a shower/fountain spray above it",
       "options": [
         "Drinking water tap",
         "Chemical shower room",
         "Emergency eye wash station",
         "Hand washing facilities"
       ],
-      "id": "ch-im-0149"
+      "id": "ch-im-0149",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "A red circle with a diagonal bar over a pedestrian silhouette means that access for people on foot is strictly forbidden",
@@ -7317,33 +7168,29 @@
         "Danger: Pedestrians ahead",
         "Shared vehicle and foot path"
       ],
-      "imageAlt": "A red circle with a red diagonal line through it, over a black figure of a person walking",
       "correctAnswer": 0,
-      "imageDescription": "Prohibition sign: No pedestrians",
-      "type": "image_question",
-      "question": "What is the meaning of this prohibition sign?",
-      "id": "ch-im-0150"
+      "type": "multiple_choice",
+      "question": "Prohibition sign: No pedestrians. What is the meaning of the sign?",
+      "id": "ch-im-0150",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageDescription": "GHS Hazard Pictogram for Environmental Hazard (Dead tree and fish)",
-      "question": "What does this pictogram on a product label mean?",
+      "type": "multiple_choice",
+      "question": "GHS Hazard Pictogram for Environmental Hazard (Dead tree and fish). What does this pictogram on a product label mean?",
       "explanation": "This GHS pictogram indicates that a substance can damage the environment, specifically posing long-term hazards to fish and plants in water",
       "correctAnswer": 1,
-      "imageAlt": "A red diamond border containing a black image of a dead tree and a dead fish",
       "options": [
         "Natural area - do not enter",
         "Hazardous to the aquatic environment",
         "Liquid waste disposal point only",
         "Area for washing vehicles"
       ],
-      "id": "ch-im-0151"
+      "id": "ch-im-0151",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What is the purpose of this warning sign?",
-      "imageDescription": "General warning sign (exclamation mark)",
-      "type": "image_question",
-      "imageAlt": "A yellow triangle with a black border and a large black exclamation mark in the centre",
+      "question": "General warning sign (exclamation mark). What is the purpose of the sign?",
+      "type": "multiple_choice",
       "options": [
         "First aid kit location",
         "Mandatory instruction follows",
@@ -7352,10 +7199,10 @@
       ],
       "correctAnswer": 3,
       "explanation": "The exclamation mark symbol on a yellow background warns of general hazards that are not covered by more specific symbols",
-      "id": "ch-im-0152"
+      "id": "ch-im-0152",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A red diamond border containing a black circle with flames on top of it",
       "options": [
         "Oxidising substance",
         "Flammable gas",
@@ -7364,16 +7211,14 @@
       ],
       "correctAnswer": 0,
       "explanation": "This symbol indicates that the substance inside the container is an oxidiser, which can provide oxygen to a fire and make it burn more intensely",
-      "question": "What hazard is identified by this specific symbol on a chemical container?",
-      "imageDescription": "GHS Hazard Pictogram for Oxidising substances (Flame over circle)",
-      "type": "image_question",
-      "id": "ch-im-0153"
+      "question": "GHS Hazard Pictogram for Oxidising substances (Flame over circle). What hazard is identified by this specific symbol on a chemical container?",
+      "type": "multiple_choice",
+      "id": "ch-im-0153",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "Where should you go if you are told to report to the location marked by this sign?",
-      "imageDescription": "Fire assembly point sign",
-      "type": "image_question",
-      "imageAlt": "A green square sign with white arrows pointing inward from each corner toward a central group of figures",
+      "question": "Fire assembly point sign. Where should you go if you are told to report to the location marked by the sign?",
+      "type": "multiple_choice",
       "options": [
         "Site office location",
         "Canteen and rest area",
@@ -7382,14 +7227,13 @@
       ],
       "correctAnswer": 2,
       "explanation": "This sign denotes the designated location where all personnel should gather if a fire alarm or emergency evacuation is initiated",
-      "id": "ch-im-0154"
+      "id": "ch-im-0154",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "Mandatory sign for ear protection",
-      "type": "image_question",
-      "question": "What is the mandatory requirement when entering an area with this sign?",
+      "type": "multiple_choice",
+      "question": "Mandatory sign for ear protection. What is the mandatory requirement when entering an area with the sign?",
       "explanation": "Blue mandatory signs with an ear muff symbol mean that high noise levels require the use of hearing protection to prevent damage",
-      "imageAlt": "A blue circular sign with a white silhouette of a person wearing ear defenders",
       "options": [
         "Quiet zone - no talking",
         "Hearing protection must be worn",
@@ -7397,14 +7241,13 @@
         "Alarm testing in progress"
       ],
       "correctAnswer": 1,
-      "id": "ch-im-0155"
+      "id": "ch-im-0155",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What risk does this warning sign alert you to?",
-      "type": "image_question",
-      "imageDescription": "Warning sign for overhead electric cables",
+      "question": "Warning sign for overhead electric cables. What risk does the sign alert you to?",
+      "type": "multiple_choice",
       "correctAnswer": 3,
-      "imageAlt": "A yellow triangle with a black border showing a black lightning bolt and a horizontal line above it with two arrows",
       "options": [
         "Underground cables below",
         "Battery charging station",
@@ -7412,27 +7255,26 @@
         "Overhead electric cables hazard"
       ],
       "explanation": "This sign warns of overhead electrical cables, which pose a significant risk of electrocution if contacted by plant or equipment",
-      "id": "ch-im-0156"
+      "id": "ch-im-0156",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "Safety signs with a blue circle provide mandatory instructions that must be followed to maintain safety on site",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 1,
-      "imageAlt": "Circular blue sign with a white image of a person wearing a hard hat",
       "options": [
         "Hard hats are available for sale",
         "Safety helmets must be worn in this area",
         "Only people in hard hats can park here",
         "Head protection is optional in this area"
       ],
-      "question": "What is the meaning of this mandatory sign?",
-      "imageDescription": "Blue mandatory safety sign showing a white icon of a person wearing a safety helmet (hard hat)",
-      "id": "ch-im-0157"
+      "question": "Blue mandatory safety sign showing a white icon of a person wearing a safety helmet (hard hat). What is the meaning of the sign?",
+      "id": "ch-im-0157",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 0,
-      "imageAlt": "Red diamond-shaped hazard symbol with a black skull and crossbones icon in the center",
       "options": [
         "The substance is toxic or poisonous",
         "The substance is flammable",
@@ -7440,16 +7282,14 @@
         "The substance is environmentally friendly"
       ],
       "explanation": "The skull and crossbones symbol indicates a substance that is acutely toxic and can cause serious illness or death if inhaled, swallowed, or touched",
-      "imageDescription": "GHS hazard pictogram featuring a white background, red diamond border, and a black skull and crossbones symbol",
-      "question": "What does this hazard symbol on a container tell you about the substance inside?",
-      "id": "ch-im-0158"
+      "question": "GHS hazard pictogram featuring a white background, red diamond border, and a black skull and crossbones symbol. What does this hazard symbol on a container tell you about the substance inside?",
+      "id": "ch-im-0158",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What specific instruction does this prohibition sign give?",
-      "imageDescription": "A prohibition sign showing a red circle with a slash over a silhouette of a person climbing a horizontal bar structure or racking",
+      "question": "A prohibition sign showing a red circle with a slash over a silhouette of a person climbing a horizontal bar structure or racking. What specific instruction does the sign give?",
       "explanation": "A red circle with a diagonal line over a person climbing indicates that climbing on the racking or structure is strictly prohibited",
-      "type": "image_question",
-      "imageAlt": "Circular sign with a red border and diagonal line over a black stick figure climbing a ladder-like structure",
+      "type": "multiple_choice",
       "correctAnswer": 2,
       "options": [
         "You must use a ladder to reach the top",
@@ -7457,11 +7297,11 @@
         "Do not climb on the racking or structure",
         "Falling hazard from above"
       ],
-      "id": "ch-im-0159"
+      "id": "ch-im-0159",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageAlt": "Red diamond-shaped symbol with a large black exclamation mark in the center",
+      "type": "multiple_choice",
       "correctAnswer": 0,
       "options": [
         "Harmful or an irritant",
@@ -7470,15 +7310,13 @@
         "First aid kit location"
       ],
       "explanation": "A black exclamation mark in a red diamond indicates a substance that may cause skin irritation, allergic reactions, or respiratory irritation",
-      "imageDescription": "GHS hazard symbol with a white background, red diamond border, and a bold black exclamation mark",
-      "question": "What hazard is represented by this symbol on a chemical label?",
-      "id": "ch-im-0160"
+      "question": "GHS hazard symbol with a white background, red diamond border, and a bold black exclamation mark. What hazard is represented by this symbol on a chemical label?",
+      "id": "ch-im-0160",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A rectangular green emergency sign with a white pictogram of a person running toward an open door to the left",
-      "question": "What does this green and white sign mean?",
-      "type": "image_question",
-      "imageAlt": "Green rectangular sign showing a white silhouette of a person running toward a door",
+      "question": "A rectangular green emergency sign with a white pictogram of a person running toward an open door to the left. What does this green and white sign mean?",
+      "type": "multiple_choice",
       "correctAnswer": 3,
       "options": [
         "Entry to the construction site office",
@@ -7487,11 +7325,11 @@
         "Direction to an emergency exit route"
       ],
       "explanation": "The 'Running Man' sign on a green background indicates the direction of a designated emergency exit or escape route",
-      "id": "ch-im-0161"
+      "id": "ch-im-0161",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageAlt": "A red fire extinguisher with a prominent black label and a large discharge horn",
+      "type": "multiple_choice",
       "correctAnswer": 1,
       "options": [
         "Water extinguisher for wood and paper",
@@ -7500,9 +7338,9 @@
         "Wet Chemical extinguisher for cooking oils"
       ],
       "explanation": "Carbon Dioxide (CO2) extinguishers feature a black label and are used specifically for flammable liquid fires and electrical equipment risks",
-      "imageDescription": "A standard UK fire extinguisher with a black label/band and a large black horn at the end of the hose for CO2 discharge",
-      "question": "What type of fire extinguisher is identified by this black label?",
-      "id": "ch-im-0162"
+      "question": "A standard UK fire extinguisher with a black label/band and a large black horn at the end of the hose for CO2 discharge. What type of fire extinguisher is identified by this black label?",
+      "id": "ch-im-0162",
+      "__rewritten_from_image__": true
     },
     {
       "type": "true_false",
@@ -7568,7 +7406,7 @@
       "id": "ch-tf-0009"
     },
     {
-      "question": "Weil’s Disease can be caught from contact with water or mud contaminated by rat urine",
+      "question": "Weil\u2019s Disease can be caught from contact with water or mud contaminated by rat urine",
       "explanation": "Leptospirosis (Weil's disease) is a serious infection spread in the urine of rats and other animals, often found in wet ground or near water",
       "type": "true_false",
       "correctAnswer": true,

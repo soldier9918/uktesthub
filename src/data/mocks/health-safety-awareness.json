@@ -2386,7 +2386,7 @@
     {
       "correctAnswer": 3,
       "type": "multiple_choice",
-      "explanation": "A 'near miss' is an unplanned event that did not result in injury, illness, or damage—but had the potential to do so",
+      "explanation": "A 'near miss' is an unplanned event that did not result in injury, illness, or damage\u2014but had the potential to do so",
       "options": [
         "An injury that requires only basic first aid",
         "A dangerous occurrence that must be reported to the HSE immediately",
@@ -3223,7 +3223,7 @@
         "Excessive dust in woodworking shops",
         "Toxic fumes from welding in confined spaces"
       ],
-      "explanation": "Legionella bacteria thrive in stagnant water kept between 20°C and 45°C, often found in cooling towers or poorly maintained plumbing",
+      "explanation": "Legionella bacteria thrive in stagnant water kept between 20\u00b0C and 45\u00b0C, often found in cooling towers or poorly maintained plumbing",
       "question": "What is 'Legionella' most likely to be associated with in a workplace environment?",
       "correctAnswer": 1,
       "id": "hsa-mc-0248"
@@ -4257,7 +4257,7 @@
     },
     {
       "type": "multiple_choice",
-      "explanation": "All four components—the individual, the environment, the task, and the load—must be considered in a manual handling risk assessment",
+      "explanation": "All four components\u2014the individual, the environment, the task, and the load\u2014must be considered in a manual handling risk assessment",
       "options": [
         "Task and Environment only",
         "Individual and Load only",
@@ -5305,7 +5305,7 @@
         "An event that had the potential to cause injury or ill health but did not",
         "A reportable dangerous occurrence under RIDDOR"
       ],
-      "explanation": "The HSE defines a 'near miss' as an unplanned event that did not result in injury, illness, or damage—but had the potential to do so",
+      "explanation": "The HSE defines a 'near miss' as an unplanned event that did not result in injury, illness, or damage\u2014but had the potential to do so",
       "id": "hsa-mc-0408"
     },
     {
@@ -5491,8 +5491,7 @@
       "id": "hsa-mc-0422"
     },
     {
-      "question": "What does this safety sign indicate?",
-      "imageDescription": "A standard UK health and safety warning sign featuring a yellow triangle, black border, and a black lightning bolt in the centre",
+      "question": "A standard UK health and safety warning sign featuring a yellow triangle, black border, and a black lightning bolt in the centre. What does the sign indicate?",
       "explanation": "The yellow triangle with a black border and symbol is a warning sign, used to alert workers to potential hazards like electricity",
       "options": [
         "Warning: Danger of electricity",
@@ -5500,15 +5499,14 @@
         "Prohibition: Do not touch cables",
         "Emergency exit for electrical fires"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 0,
-      "imageAlt": "A yellow triangle with a black lightning bolt symbol",
-      "id": "hsa-im-0001"
+      "id": "hsa-im-0001",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A blue circle with a white symbol of a safety boot",
       "correctAnswer": 1,
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "The blue circle indicates a mandatory action; in this case, safety footwear must be worn in the designated area",
       "options": [
         "Footwear prohibited",
@@ -5516,13 +5514,12 @@
         "Slippery surface ahead",
         "Protective leggings required"
       ],
-      "imageDescription": "A mandatory safety sign consisting of a solid blue circle with a white silhouette of a safety boot",
-      "question": "Which instruction does this sign convey to site visitors and workers?",
-      "id": "hsa-im-0002"
+      "question": "A mandatory safety sign consisting of a solid blue circle with a white silhouette of a safety boot. Which instruction does the sign convey to site visitors and workers?",
+      "id": "hsa-im-0002",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "In the UK, what type of substance is identified by this COSHH hazard pictogram?",
-      "imageDescription": "A GHS/COSHH hazard pictogram showing a red diamond frame with a black exclamation mark inside",
+      "question": "A GHS/COSHH hazard pictogram showing a red diamond frame with a black exclamation mark inside. In the UK, what type of substance is identified by this COSHH hazard pictogram?",
       "explanation": "The 'Exclamation Mark' COSHH symbol indicates substances that are hazardous to health, including skin sensitisers or respiratory irritants",
       "options": [
         "Explosive material",
@@ -5530,10 +5527,10 @@
         "Health hazard / Irritant",
         "Flammable gas"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 2,
-      "imageAlt": "A red-bordered diamond containing a black exclamation mark symbol",
-      "id": "hsa-im-0003"
+      "id": "hsa-im-0003",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "A green square or rectangular sign provides safety information or directions to emergency facilities, such as a first aid point",
@@ -5543,18 +5540,16 @@
         "Medical waste bin",
         "First aid post"
       ],
-      "imageDescription": "An emergency safety sign featuring a green background and a white cross symbol",
-      "question": "What is the meaning of this green and white safety sign?",
-      "imageAlt": "A green square sign with a white cross in the middle",
+      "question": "An emergency safety sign featuring a green background and a white cross symbol. What is the meaning of this green and white safety sign?",
       "correctAnswer": 3,
-      "type": "image_question",
-      "id": "hsa-im-0004"
+      "type": "multiple_choice",
+      "id": "hsa-im-0004",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageAlt": "A red circle with a diagonal line through it over a cigarette symbol",
+      "type": "multiple_choice",
       "correctAnswer": 2,
-      "question": "What does this prohibition sign mean in a workplace setting?",
+      "question": "A prohibition sign consisting of a red circle with a diagonal crossbar over a black cigarette silhouette on a white background. What does the sign mean in a workplace setting?",
       "explanation": "Red circles with a diagonal slash indicate prohibited actions, such as 'No Smoking'",
       "options": [
         "Smoking area available here",
@@ -5562,13 +5557,12 @@
         "No smoking allowed",
         "Use matches only"
       ],
-      "imageDescription": "A prohibition sign consisting of a red circle with a diagonal crossbar over a black cigarette silhouette on a white background",
-      "id": "hsa-im-0005"
+      "id": "hsa-im-0005",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "An inverted triangle showing levels of control from Elimination at the top to PPE at the bottom",
       "correctAnswer": 1,
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "PPE should be the final option in the Hierarchy of Control, used only when the hazard cannot be eliminated or reduced by other means",
       "options": [
         "The most effective control measure",
@@ -5576,12 +5570,12 @@
         "The only control needed for chemical spills",
         "Used to replace engineering controls"
       ],
-      "imageDescription": "A diagram of the Hierarchy of Control pyramid with five levels: Elimination, Substitution, Engineering Controls, Administrative Controls, and PPE",
-      "question": "According to the Hierarchy of Control shown, where does PPE (Personal Protective Equipment) sit?",
-      "id": "hsa-im-0006"
+      "question": "A diagram of the Hierarchy of Control pyramid with five levels: Elimination, Substitution, Engineering Controls, Administrative Controls, and PPE. According to the Hierarchy of Control shown, where does PPE (Personal Protective Equipment) sit?",
+      "id": "hsa-im-0006",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "You see this sign at the entrance to a factory floor. What must you do?",
+      "question": "A mandatory blue circular safety sign depicting a person wearing ear defenders. You see the sign at the entrance to a factory floor. What must you do?",
       "explanation": "This sign indicates a mandatory requirement to wear ear protection, typically because noise levels exceed 85 decibels",
       "options": [
         "Ear protection must be worn",
@@ -5589,11 +5583,10 @@
         "Silent zone: No talking",
         "Radios prohibited in this area"
       ],
-      "imageDescription": "A mandatory blue circular safety sign depicting a person wearing ear defenders",
-      "type": "image_question",
-      "imageAlt": "A blue circle with white ear defenders symbol",
+      "type": "multiple_choice",
       "correctAnswer": 0,
-      "id": "hsa-im-0007"
+      "id": "hsa-im-0007",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "COSHH (Control of Substances Hazardous to Health) requires that cleaning chemicals be stored in a locked, ventilated cupboard away from food and unauthorised personnel",
@@ -5603,15 +5596,13 @@
         "In an open hallway for ventilation",
         "In a secure, labelled hazardous storage cabinet"
       ],
-      "imageDescription": "A photo of a yellow heavy-duty chemical storage metal cabinet with a prominent hazard warning sign and dual locking handles",
-      "question": "In accordance with COSHH, how should site cleaning chemicals be stored?",
-      "imageAlt": "A yellow metal cabinet with a 'Hazardous' label and a lock",
+      "question": "A photo of a yellow heavy-duty chemical storage metal cabinet with a prominent hazard warning sign and dual locking handles. In accordance with COSHH, how should site cleaning chemicals be stored?",
       "correctAnswer": 3,
-      "type": "image_question",
-      "id": "hsa-im-0008"
+      "type": "multiple_choice",
+      "id": "hsa-im-0008",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A standard UK fire extinguisher, painted red with a distinctive black identifying band and a horn-shaped nozzle",
       "explanation": "A fire extinguisher with a black label or band contains Carbon Dioxide (CO2), which is safe for use on electrical fires",
       "options": [
         "Water extinguisher",
@@ -5619,11 +5610,11 @@
         "Carbon Dioxide (CO2) extinguisher",
         "Wet chemical extinguisher"
       ],
-      "question": "Identify this type of fire extinguisher, often used for electrical fires",
+      "question": "A standard UK fire extinguisher, painted red with a distinctive black identifying band and a horn-shaped nozzle. Identify this type of fire extinguisher, often used for electrical fires?",
       "correctAnswer": 2,
-      "imageAlt": "A red fire extinguisher with a black band around the top",
-      "type": "image_question",
-      "id": "hsa-im-0009"
+      "type": "multiple_choice",
+      "id": "hsa-im-0009",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "The dead fish and tree symbol identifies substances that pose an immediate or long-term danger to the environment, particularly water systems",
@@ -5633,15 +5624,14 @@
         "Fishing prohibited in this area",
         "Organic matter storage"
       ],
-      "imageDescription": "A COSHH hazard pictogram in a red diamond showing a silhouette of a leafless tree and a dead fish",
-      "question": "What hazard does this COSHH pictogram represent?",
-      "imageAlt": "A red diamond symbol with a black dead tree and dead fish",
+      "question": "A COSHH hazard pictogram in a red diamond showing a silhouette of a leafless tree and a dead fish. What hazard does this COSHH pictogram represent?",
       "correctAnswer": 0,
-      "type": "image_question",
-      "id": "hsa-im-0010"
+      "type": "multiple_choice",
+      "id": "hsa-im-0010",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What type of safety control is the lever shown on this equipment?",
+      "question": "A close-up of a lawnmower handle showing the safety bail arm (dead man's handle) which must be held against the main handle to keep the engine running. What type of safety control is the lever shown on this equipment?",
       "explanation": "The 'Dead Man's Handle' on a lawnmower or power tool is an engineering control that automatically stops the machine if the operator releases their grip",
       "options": [
         "Administrative Control",
@@ -5649,17 +5639,15 @@
         "Personal Protective Equipment",
         "Hazard Substitution"
       ],
-      "imageDescription": "A close-up of a lawnmower handle showing the safety bail arm (dead man's handle) which must be held against the main handle to keep the engine running",
-      "type": "image_question",
-      "imageAlt": "A handle on a piece of machinery with a lever that must be squeezed to operate",
+      "type": "multiple_choice",
       "correctAnswer": 1,
-      "id": "hsa-im-0011"
+      "id": "hsa-im-0011",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageAlt": "A blue circular sign with white text saying 'Fire door keep shut'",
+      "type": "multiple_choice",
       "correctAnswer": 3,
-      "question": "What is the mandatory requirement for the door marked with this sign?",
+      "question": "A blue circular mandatory sign with the text 'Fire door keep shut' written in white capital letters. What is the mandatory requirement for the door marked with the sign?",
       "explanation": "Blue signs provide mandatory instructions. In the UK, this sign means that the fire door must be kept closed to prevent the spread of fire and smoke",
       "options": [
         "This door is for emergency exit only",
@@ -5667,8 +5655,8 @@
         "This door is fireproof for 12 hours",
         "This door must be kept closed at all times when not in use"
       ],
-      "imageDescription": "A blue circular mandatory sign with the text 'Fire door keep shut' written in white capital letters",
-      "id": "hsa-im-0012"
+      "id": "hsa-im-0012",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -5678,19 +5666,16 @@
         "Safe condition sign"
       ],
       "explanation": "Yellow triangular signs are warning signs used to alert people to potential hazards or dangers in the vicinity",
-      "imageDescription": "A yellow triangular safety sign featuring a black lightning bolt symbol, indicating the presence of high voltage electricity",
-      "imageAlt": "A yellow triangle with a black border and a lightning bolt symbol",
       "correctAnswer": 1,
-      "question": "What is the primary purpose of a safety sign with this specific shape and colour?",
-      "type": "image_question",
-      "id": "hsa-im-0013"
+      "question": "A yellow triangular safety sign featuring a black lightning bolt symbol, indicating the presence of high voltage electricity. What is the primary purpose of a safety sign with this specific shape and colour?",
+      "type": "multiple_choice",
+      "id": "hsa-im-0013",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A standard COSHH hazard pictogram showing a skull and crossbones inside a red-bordered diamond",
-      "imageAlt": "A white diamond with a red border containing a black skull and crossbones",
       "correctAnswer": 3,
-      "question": "Under COSHH regulations, what hazard does this pictogram identify?",
-      "type": "image_question",
+      "question": "A standard COSHH hazard pictogram showing a skull and crossbones inside a red-bordered diamond. Under COSHH regulations, what hazard does this pictogram identify?",
+      "type": "multiple_choice",
       "options": [
         "Flammable material",
         "Corrosive substance",
@@ -5698,13 +5683,12 @@
         "Oxidising agent"
       ],
       "explanation": "The skull and crossbones pictogram indicates that a substance is acutely toxic and can cause immediate harm or death if inhaled, swallowed, or touched",
-      "id": "hsa-im-0014"
+      "id": "hsa-im-0014",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What mandatory instruction does this blue sign provide to workers in a noisy environment?",
-      "type": "image_question",
-      "imageDescription": "A blue circular mandatory safety sign depicting white earmuffs/ear defenders",
-      "imageAlt": "A blue circle containing a white silhouette of a person wearing ear defenders",
+      "question": "A blue circular mandatory safety sign depicting white earmuffs/ear defenders. What mandatory instruction does this blue sign provide to workers in a noisy environment?",
+      "type": "multiple_choice",
       "correctAnswer": 0,
       "options": [
         "Ear protection must be worn",
@@ -5713,7 +5697,8 @@
         "Area for hearing tests"
       ],
       "explanation": "Blue circular signs are mandatory signs, meaning a specific action or piece of PPE must be worn/followed",
-      "id": "hsa-im-0015"
+      "id": "hsa-im-0015",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "The fire assembly point sign is a 'safe condition' sign, which are always green and white to indicate safety or medical information",
@@ -5724,11 +5709,10 @@
         "Emergency exit route"
       ],
       "correctAnswer": 2,
-      "imageAlt": "A green square sign with white figures standing around a central point with arrows pointing inward",
-      "imageDescription": "A green and white safety sign showing the 'Fire Assembly Point' symbol with four arrows pointing towards figures in the centre",
-      "type": "image_question",
-      "question": "Identify the meaning of this green and white safety sign",
-      "id": "hsa-im-0016"
+      "type": "multiple_choice",
+      "question": "A green and white safety sign showing the 'Fire Assembly Point' symbol with four arrows pointing towards figures in the centre. Identify the meaning of this green and white safety sign?",
+      "id": "hsa-im-0016",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "The black flame on a red diamond indicates a flammable substance which must be kept away from ignition sources to prevent fire",
@@ -5738,12 +5722,11 @@
         "Flammable material",
         "Corrosive liquid"
       ],
-      "type": "image_question",
-      "question": "Which hazardous property is represented by this pictogram found on a chemical container?",
+      "type": "multiple_choice",
+      "question": "A COSHH hazard pictogram for flammable liquids or gases, featuring a black flame silhouette on a white background with a red border. Which hazardous property is represented by this pictogram found on a chemical container?",
       "correctAnswer": 2,
-      "imageAlt": "A red-bordered diamond pictogram showing a black flame",
-      "imageDescription": "A COSHH hazard pictogram for flammable liquids or gases, featuring a black flame silhouette on a white background with a red border",
-      "id": "hsa-im-0017"
+      "id": "hsa-im-0017",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -5753,12 +5736,11 @@
         "Matches must be used here"
       ],
       "explanation": "Red circles with a diagonal slash are prohibition signs, indicating that a specific behaviour or action is strictly forbidden",
-      "imageDescription": "A prohibition sign showing a lit cigarette crossing out by a red diagonal bar inside a red circle",
-      "imageAlt": "A red circle with a diagonal red line over a black cigarette",
       "correctAnswer": 1,
-      "question": "What type of safety instruction does this red-bordered circular sign represent?",
-      "type": "image_question",
-      "id": "hsa-im-0018"
+      "question": "A prohibition sign showing a lit cigarette crossing out by a red diagonal bar inside a red circle. What type of safety instruction does this red-bordered circular sign represent?",
+      "type": "multiple_choice",
+      "id": "hsa-im-0018",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -5768,12 +5750,11 @@
         "Health Surveillance"
       ],
       "explanation": "Exclusion zones or 'Elimination' (the top of the hierarchy) involve physically removing the hazard by preventing anyone from entering the risk area",
-      "question": "In the Hierarchy of Control, what level of protection is provided by these physical barriers around an excavation?",
-      "type": "image_question",
-      "imageDescription": "A photograph showing physical plastic barriers (red and white) surrounding a deep excavation on a UK construction site",
-      "imageAlt": "A photo of a construction site with red and white plastic barriers blocking off a deep trench",
+      "question": "A photograph showing physical plastic barriers (red and white) surrounding a deep excavation on a UK construction site. In the Hierarchy of Control, what level of protection is provided by these physical barriers around an excavation?",
+      "type": "multiple_choice",
       "correctAnswer": 0,
-      "id": "hsa-im-0019"
+      "id": "hsa-im-0019",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -5783,12 +5764,11 @@
         "Harmful or irritant substance"
       ],
       "explanation": "A black 'X' or an exclamation mark (the modern pictogram) on a red-bordered diamond indicates a substance that can cause skin or eye irritation or sensitization",
-      "imageAlt": "A red-bordered diamond containing a large black exclamation mark",
-      "imageDescription": "The modern COSHH 'exclamation mark' pictogram used to identify irritants or skin sensitisers",
       "correctAnswer": 3,
-      "type": "image_question",
-      "question": "What is the specific meaning of this COSHH pictogram?",
-      "id": "hsa-im-0020"
+      "type": "multiple_choice",
+      "question": "The modern COSHH 'exclamation mark' pictogram used to identify irritants or skin sensitisers. What is the specific meaning of this COSHH pictogram?",
+      "id": "hsa-im-0020",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -5798,12 +5778,11 @@
         "Dry Powder extinguisher"
       ],
       "explanation": "Black labels on extinguishers denote Carbon Dioxide (CO2), which is the standard choice for fires involving live electrical equipment",
-      "question": "Which type of fire extinguisher is identified by the black label shown?",
-      "type": "image_question",
-      "imageDescription": "A standard UK fire extinguisher with a red body and a prominent black label, featuring a CO2 discharge horn",
-      "imageAlt": "A red fire extinguisher with a black rectangular label and a horn-shaped nozzle",
+      "question": "A standard UK fire extinguisher with a red body and a prominent black label, featuring a CO2 discharge horn. Which type of fire extinguisher is identified by the black label shown?",
+      "type": "multiple_choice",
       "correctAnswer": 2,
-      "id": "hsa-im-0021"
+      "id": "hsa-im-0021",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -5813,12 +5792,11 @@
         "Explosive substance"
       ],
       "explanation": "The hazard symbol for corrosive substances shows a liquid dripping onto both a surface and a hand, indicating it can cause burns to both",
-      "question": "This pictogram warns that a substance has which of the following properties?",
-      "type": "image_question",
-      "imageDescription": "The COSHH 'corrosive' pictogram showing the destruction of a surface and skin by a chemical",
-      "imageAlt": "A red-bordered diamond showing liquid dripping from two test tubes, eating into a metal bar and a human hand",
+      "question": "The COSHH 'corrosive' pictogram showing the destruction of a surface and skin by a chemical. This pictogram warns that a substance has which of the following properties?",
+      "type": "multiple_choice",
       "correctAnswer": 1,
-      "id": "hsa-im-0022"
+      "id": "hsa-im-0022",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "The person with their hands up in a 'stop' motion on a green background indicates it is an emergency stop button",
@@ -5829,11 +5807,10 @@
         "Entry allowed with permission"
       ],
       "correctAnswer": 0,
-      "imageAlt": "A green square sign with a white icon of a hand pressing a button or a palm facing forward",
-      "imageDescription": "A green safety sign used to indicate the location of an emergency stop control on a machine",
-      "type": "image_question",
-      "question": "What does this green and white sign indicate on a piece of industrial machinery?",
-      "id": "hsa-im-0023"
+      "type": "multiple_choice",
+      "question": "A green safety sign used to indicate the location of an emergency stop control on a machine. What does this green and white sign indicate on a piece of industrial machinery?",
+      "id": "hsa-im-0023",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -5843,18 +5820,16 @@
         "Safety footwear must be worn"
       ],
       "explanation": "A white figure on a blue circle indicates a mandatory requirement for footwear to protect against workplace hazards like falling objects",
-      "question": "You see this sign at the entrance to a warehouse. What is its meaning?",
-      "type": "image_question",
-      "imageDescription": "A mandatory safety sign featuring a white silhouette of a boot inside a blue circle",
-      "imageAlt": "A blue circular sign with a white silhouette of a safety boot",
+      "question": "A mandatory safety sign featuring a white silhouette of a boot inside a blue circle. You see the sign at the entrance to a warehouse. What is its meaning?",
+      "type": "multiple_choice",
       "correctAnswer": 3,
-      "id": "hsa-im-0024"
+      "id": "hsa-im-0024",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 1,
-      "type": "image_question",
-      "imageDescription": "A standard UK 'No Entry' prohibition sign: a solid red circle with a thick horizontal white rectangle across the center",
-      "question": "What is the meaning of this safety sign commonly found on construction sites or restricted areas?",
+      "type": "multiple_choice",
+      "question": "A standard UK 'No Entry' prohibition sign: a solid red circle with a thick horizontal white rectangle across the center. What is the meaning of the sign commonly found on construction sites or restricted areas?",
       "explanation": "Red signs with a white crossbar are 'No Entry' signs, prohibiting access to an area for safety or security reasons",
       "options": [
         "Authorised personnel only",
@@ -5862,15 +5837,13 @@
         "Stop and wait for instructions",
         "No thoroughfare for vehicles only"
       ],
-      "imageAlt": "A circular red sign with a horizontal white bar in the middle",
-      "id": "hsa-im-0025"
+      "id": "hsa-im-0025",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What hazard is identified by this warning sign?",
-      "imageDescription": "A warning sign featuring a yellow triangle with a black border. Inside is a black silhouette of a hard hat and several falling rectangles representing debris",
-      "type": "image_question",
+      "question": "A warning sign featuring a yellow triangle with a black border. Inside is a black silhouette of a hard hat and several falling rectangles representing debris. What hazard is identified by the sign?",
+      "type": "multiple_choice",
       "correctAnswer": 0,
-      "imageAlt": "A yellow triangle with a black border showing a depiction of objects falling",
       "options": [
         "Warning: Falling objects",
         "Storage area above",
@@ -5878,13 +5851,13 @@
         "Danger: Demolition in progress"
       ],
       "explanation": "Yellow triangular signs with a black border indicate a warning of a hazard, such as the danger of falling objects",
-      "id": "hsa-im-0026"
+      "id": "hsa-im-0026",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 2,
-      "question": "Under COSHH regulations, what does this hazard pictogram indicate?",
-      "imageDescription": "A COSHH/GHS Hazard Pictogram showing a white diamond with a thick red border. Inside is a black skull and crossbones silhouette",
-      "type": "image_question",
+      "question": "A COSHH/GHS Hazard Pictogram showing a white diamond with a thick red border. Inside is a black skull and crossbones silhouette. Under COSHH regulations, what does this hazard pictogram indicate?",
+      "type": "multiple_choice",
       "explanation": "A diamond-shaped white sign with a red border showing a skull and crossbones indicates that a substance is acutely toxic",
       "options": [
         "Corrosive substance",
@@ -5892,15 +5865,13 @@
         "Acute toxicity (fatal or toxic)",
         "Explosive material"
       ],
-      "imageAlt": "A white diamond with a red border containing a black skull and crossbones symbol",
-      "id": "hsa-im-0027"
+      "id": "hsa-im-0027",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A standard UK fire extinguisher. It is all red with a red identification band/block near the top containing the text 'WATER' in white",
-      "question": "This red-coded extinguisher is designed for use on which class of fire?",
-      "type": "image_question",
+      "question": "A standard UK fire extinguisher. It is all red with a red identification band/block near the top containing the text 'WATER' in white. This red-coded extinguisher is designed for use on which class of fire?",
+      "type": "multiple_choice",
       "correctAnswer": 3,
-      "imageAlt": "A red fire extinguisher with a solid red panel at the top and the word 'WATER' clearly written",
       "options": [
         "Class B (Flammable liquids)",
         "Class C (Flammable gases)",
@@ -5908,13 +5879,13 @@
         "Class A (Combustible solids)"
       ],
       "explanation": "Water extinguishers have a solid red label and are used for Class A fires involving solid materials like wood, paper, and textiles",
-      "id": "hsa-im-0028"
+      "id": "hsa-im-0028",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 1,
-      "imageDescription": "Graphic of the Hierarchy of Control pyramid. The top level is 'Elimination'. The second level down is highlighted with a question mark",
-      "question": "In the Hierarchy of Control, what is the second most effective method after 'Elimination'?",
-      "type": "image_question",
+      "question": "Graphic of the Hierarchy of Control pyramid. The top level is 'Elimination'. The second level down is highlighted with a question mark. In the Hierarchy of Control, what is the second most effective method after 'Elimination'?",
+      "type": "multiple_choice",
       "explanation": "Substitution involves replacing a hazardous substance or process with a less dangerous one, appearing near the top of the Hierarchy of Control",
       "options": [
         "Isolation",
@@ -5922,11 +5893,10 @@
         "Engineering Controls",
         "Administrative Controls"
       ],
-      "imageAlt": "A flowchart showing a hierarchy with 'Elimination' at the top, then a second level being highlighted",
-      "id": "hsa-im-0029"
+      "id": "hsa-im-0029",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A white diamond with a red border containing a black silhouette of a gas cylinder",
       "options": [
         "Flammable gas inside",
         "Gas under pressure",
@@ -5934,17 +5904,16 @@
         "Non-potable gas supply"
       ],
       "explanation": "A white diamond with a red border showing a gas cylinder indicates that the contents are gas under pressure and may explode if heated",
-      "type": "image_question",
-      "imageDescription": "A COSHH/GHS pictogram featuring a white diamond, a red border, and a black symbol of a gas cylinder (like a bottle lying on its side)",
-      "question": "Which hazard does this COSHH pictogram represent?",
+      "type": "multiple_choice",
+      "question": "A COSHH/GHS pictogram featuring a white diamond, a red border, and a black symbol of a gas cylinder (like a bottle lying on its side). Which hazard does this COSHH pictogram represent?",
       "correctAnswer": 1,
-      "id": "hsa-im-0030"
+      "id": "hsa-im-0030",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 2,
-      "question": "What information does this green safety sign provide?",
-      "imageDescription": "A rectangular green safety sign. It features a white arrow pointing down and white text that reads 'Push bar to open'",
-      "type": "image_question",
+      "question": "A rectangular green safety sign. It features a white arrow pointing down and white text that reads 'Push bar to open'. What information does this green safety sign provide?",
+      "type": "multiple_choice",
       "explanation": "Green rectangular signs provide safety information, such as the 'Push bar to open' instruction for emergency exits",
       "options": [
         "The door is locked during the day",
@@ -5952,14 +5921,13 @@
         "Operating instructions for an emergency exit",
         "No entry unless in an emergency"
       ],
-      "imageAlt": "A green rectangular sign with white text saying 'Push bar to open'",
-      "id": "hsa-im-0031"
+      "id": "hsa-im-0031",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 0,
-      "imageDescription": "A mandatory safety sign: a solid blue circle containing a white silhouette of a human head wearing a filtered respiratory mask",
-      "question": "What mandatory action is required when encountering this sign in a workshop?",
-      "type": "image_question",
+      "question": "A mandatory safety sign: a solid blue circle containing a white silhouette of a human head wearing a filtered respiratory mask. What mandatory action is required when encountering the sign in a workshop?",
+      "type": "multiple_choice",
       "explanation": "The blue circle with a white silhouette of a face wearing a mask indicates that respiratory protection is a mandatory requirement",
       "options": [
         "Wear respiratory protection",
@@ -5967,14 +5935,13 @@
         "Dust-free zone",
         "No smoking or vaping"
       ],
-      "imageAlt": "A blue circular sign with a white graphic of a person's head wearing a respirator",
-      "id": "hsa-im-0032"
+      "id": "hsa-im-0032",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 3,
-      "question": "What is the meaning of this warning sign found near workplace hazards?",
-      "imageDescription": "A standard UK warning sign: a yellow triangle with a black border containing a single black exclamation mark",
-      "type": "image_question",
+      "question": "A standard UK warning sign: a yellow triangle with a black border containing a single black exclamation mark. What is the meaning of the sign found near workplace hazards?",
+      "type": "multiple_choice",
       "explanation": "A yellow triangle with a black border showing an exclamation mark indicates a general hazard that requires caution",
       "options": [
         "First Aid station ahead",
@@ -5982,12 +5949,11 @@
         "No walking in this area",
         "General danger / caution"
       ],
-      "imageAlt": "A yellow triangle with a black border and a large black exclamation mark in the center",
-      "id": "hsa-im-0033"
+      "id": "hsa-im-0033",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "This COSHH pictogram indicates a substance that is a 'Health Hazard', such as a sensitiser, carcinogen, or mutagen",
-      "imageAlt": "A white diamond with a red border and a black silhouette of a person's torso with a white star-shape on the chest",
       "options": [
         "Toxic if swallowed",
         "Serious health hazard (e.g., carcinogen)",
@@ -5995,10 +5961,10 @@
         "Biohazardous material"
       ],
       "correctAnswer": 1,
-      "type": "image_question",
-      "imageDescription": "A COSHH hazard pictogram: a white diamond with a red frame. Inside is a black silhouette of a person's head and shoulders with a white 'starburst' exploding from the chest area",
-      "question": "What category of hazard is identified by this specific symbol?",
-      "id": "hsa-im-0034"
+      "type": "multiple_choice",
+      "question": "A COSHH hazard pictogram: a white diamond with a red frame. Inside is a black silhouette of a person's head and shoulders with a white 'starburst' exploding from the chest area. What category of hazard is identified by this specific symbol?",
+      "id": "hsa-im-0034",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "The yellow and black hatched marking is used to indicate a permanent hazard such as a low ceiling or a trip hazard like a step",
@@ -6008,12 +5974,11 @@
         "Warning of a permanent hazard (e.g. low headroom)",
         "Loading bay boundary line"
       ],
-      "imageAlt": "A pattern of diagonal yellow and black stripes",
       "correctAnswer": 2,
-      "imageDescription": "A visual representation of 'hazard tape': a series of diagonal stripes alternating between bright yellow and solid black",
-      "question": "What is the standard meaning of these diagonal yellow and black markings on a warehouse floor or beam?",
-      "type": "image_question",
-      "id": "hsa-im-0035"
+      "question": "A visual representation of 'hazard tape': a series of diagonal stripes alternating between bright yellow and solid black. What is the standard meaning of these diagonal yellow and black markings on a warehouse floor or beam?",
+      "type": "multiple_choice",
+      "id": "hsa-im-0035",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -6022,80 +5987,73 @@
         "Highly reactive metal",
         "Explosive when dry"
       ],
-      "imageAlt": "A white diamond with a red border featuring a black ring with a flame on top",
       "explanation": "A white diamond with a red border showing a flame over a circle indicates an 'Oxidising' hazard, which can provide oxygen to fires",
-      "type": "image_question",
-      "question": "What specific property does this hazard pictogram warn against?",
-      "imageDescription": "A COSHH hazard pictogram: a white diamond with a red border. Inside is a black circle (the letter 'O') with flames emerging from the top of it",
+      "type": "multiple_choice",
+      "question": "A COSHH hazard pictogram: a white diamond with a red border. Inside is a black circle (the letter 'O') with flames emerging from the top of it. What specific property does this hazard pictogram warn against?",
       "correctAnswer": 0,
-      "id": "hsa-im-0036"
+      "id": "hsa-im-0036",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 2,
-      "type": "image_question",
-      "imageDescription": "A mandatory white pictogram of a person wearing a hard hat on a blue circular background",
+      "type": "multiple_choice",
       "options": [
         "Warning: overhead hazards",
         "Information: hard hats available here",
         "Mandatory: safety helmets must be worn",
         "Prohibition: no entry without a permit"
       ],
-      "question": "What type of instruction does this blue circular sign represent in a workplace?",
+      "question": "A mandatory white pictogram of a person wearing a hard hat on a blue circular background. What type of instruction does the sign represent in a workplace?",
       "explanation": "Blue circular signs indicate mandatory actions that must be taken to ensure safety",
-      "imageAlt": "A blue circular sign showing a person wearing a safety helmet",
-      "id": "hsa-im-0037"
+      "id": "hsa-im-0037",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "The 'flame over circle' pictogram specifically identifies oxidising gases, liquids, or solids that can cause or contribute to combustion",
-      "imageAlt": "COSHH symbol showing a circle with flames coming off the top",
       "correctAnswer": 0,
-      "question": "This pictogram identifies a substance with which of the following properties?",
-      "type": "image_question",
-      "imageDescription": "A red diamond-shaped COSHH pictogram containing a black symbol of a circle with a flame on top",
+      "question": "A red diamond-shaped COSHH pictogram containing a black symbol of a circle with a flame on top. This pictogram identifies a substance with which of the following properties?",
+      "type": "multiple_choice",
       "options": [
         "Oxidising substance",
         "Highly flammable liquid",
         "Explosive material",
         "Compressed gas under pressure"
       ],
-      "id": "hsa-im-0038"
+      "id": "hsa-im-0038",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A fire extinguisher with a cream-coloured label above the instructions",
       "explanation": "A cream-coloured label signifies a foam extinguisher, which is suitable for both wood/paper (Class A) and flammable liquids (Class B)",
       "correctAnswer": 3,
-      "question": "What types of fire is this extinguisher with a cream label designed to tackle?",
-      "imageDescription": "A red fire extinguisher featuring a cream/beige rectangular panel on the front with the word 'FOAM'",
+      "question": "A red fire extinguisher featuring a cream/beige rectangular panel on the front with the word 'FOAM'. What types of fire is this extinguisher with a cream label designed to tackle?",
       "options": [
         "Electrical fires only",
         "Cooking oils and fats only",
         "Flammable gases only",
         "Wood, paper, and flammable liquid fires"
       ],
-      "type": "image_question",
-      "id": "hsa-im-0039"
+      "type": "multiple_choice",
+      "id": "hsa-im-0039",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "In the Hierarchy of Control, which level of protection is represented by the highlighted tier?",
-      "imageDescription": "An inverted triangle representing the Hierarchy of Control. The top tier is 'Elimination', and the second tier below it is highlighted for identification",
+      "question": "An inverted triangle representing the Hierarchy of Control. The top tier is 'Elimination', and the second tier below it is highlighted for identification. In the Hierarchy of Control, which level of protection is represented by the highlighted tier?",
       "options": [
         "Engineering Controls",
         "Substitution",
         "Administrative Controls",
         "Personal Protective Equipment (PPE)"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 1,
       "explanation": "Under the Hierarchy of Control, substituting a dangerous process or material with a less hazardous one is the second most effective measure",
-      "imageAlt": "A diagram of the Hierarchy of Control with the second-highest tier highlighted",
-      "id": "hsa-im-0040"
+      "id": "hsa-im-0040",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A yellow triangular sign with a black exclamation mark in the centre",
       "explanation": "A yellow triangle with a black exclamation mark is a general warning sign used to alert workers to various potential hazards",
-      "question": "What is the meaning of this safety sign commonly seen in industrial environments?",
-      "type": "image_question",
-      "imageDescription": "A standard UK safety warning sign: a yellow equilateral triangle with a black border and a bold black exclamation mark",
+      "question": "A standard UK safety warning sign: a yellow equilateral triangle with a black border and a bold black exclamation mark. What is the meaning of the sign commonly seen in industrial environments?",
+      "type": "multiple_choice",
       "options": [
         "Hazardous chemicals present",
         "General danger or hazard nearby",
@@ -6103,29 +6061,27 @@
         "First aid point ahead"
       ],
       "correctAnswer": 1,
-      "id": "hsa-im-0041"
+      "id": "hsa-im-0041",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What category of safety information is provided by this green and white sign?",
-      "imageDescription": "A green rectangular safety sign featuring a white cross in the centre, indicating medical assistance",
+      "question": "A green rectangular safety sign featuring a white cross in the centre, indicating medical assistance. What category of safety information is provided by this green and white sign?",
       "options": [
         "Warning: hospital nearby",
         "Prohibition: no smoking zone",
         "Safe condition: first aid point",
         "Mandatory: wash hands here"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 2,
-      "imageAlt": "A green rectangular sign showing a white cross",
       "explanation": "Green signs with white text or symbols indicate 'Safe Condition' information, such as emergency exits or first aid locations",
-      "id": "hsa-im-0042"
+      "id": "hsa-im-0042",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "COSHH symbol showing a skull and crossbones",
       "explanation": "The 'skull and crossbones' symbol indicates substances that are acutely toxic and can cause immediate harm or death if inhaled, swallowed, or touched",
-      "question": "What danger does this specific COSHH hazard pictogram warn against?",
-      "type": "image_question",
-      "imageDescription": "A red diamond hazard pictogram featuring a black skull and crossbones symbol in the centre",
+      "question": "A red diamond hazard pictogram featuring a black skull and crossbones symbol in the centre. What danger does this specific COSHH hazard pictogram warn against?",
+      "type": "multiple_choice",
       "options": [
         "Hazardous to the environment",
         "Corrosive to metal and skin",
@@ -6133,57 +6089,54 @@
         "Acutely toxic substance"
       ],
       "correctAnswer": 3,
-      "id": "hsa-im-0043"
+      "id": "hsa-im-0043",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "To effectively manage fire risks, which missing element completes the 'Fire Triangle' shown?",
-      "imageDescription": "An illustration of the Fire Triangle. Two sides are labelled 'Heat' and 'Fuel'. The third side has a question mark",
+      "question": "An illustration of the Fire Triangle. Two sides are labelled 'Heat' and 'Fuel'. The third side has a question mark. To effectively manage fire risks, which missing element completes the 'Fire Triangle' shown?",
       "options": [
         "Oxygen",
         "Carbon Dioxide",
         "Chemical Reaction",
         "Ignition Source"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 0,
       "explanation": "In a fire, oxygen (oxidiser), fuel, and heat are the three elements required for combustion to occur",
-      "imageAlt": "A diagram showing the 'Fire Triangle' with one side missing or represented by a question mark",
-      "id": "hsa-im-0044"
+      "id": "hsa-im-0044",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "Pictogram showing a person's silhouette with a white star-like shape on their chest",
       "explanation": "The 'exploding chest' (health hazard) symbol is used for substances that cause long-term health issues like respiratory sensitisation or organ damage",
       "correctAnswer": 1,
-      "question": "What does this COSHH pictogram indicate regarding a substance's effect on health?",
-      "type": "image_question",
-      "imageDescription": "A red diamond-bordered pictogram with a black silhouette of a person’s head and shoulders, featuring a white 'shattering' star on the chest area",
+      "question": "A red diamond-bordered pictogram with a black silhouette of a person\u2019s head and shoulders, featuring a white 'shattering' star on the chest area. What does this COSHH pictogram indicate regarding a substance's effect on health?",
+      "type": "multiple_choice",
       "options": [
         "Corrosive to internal organs",
         "Serious long-term health hazard (e.g., carcinogen)",
         "Risk of physical impact to the chest",
         "Radioactive material source"
       ],
-      "id": "hsa-im-0045"
+      "id": "hsa-im-0045",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 2,
-      "type": "image_question",
-      "imageDescription": "A prohibition sign consisting of a red circle with a diagonal red bar across a black symbol of a lit cigarette",
+      "type": "multiple_choice",
       "options": [
         "Warning: flammable materials",
         "Mandatory: extinguish cigarettes here",
         "Prohibition: no smoking allowed",
         "Information: designated smoking area nearby"
       ],
-      "question": "Which type of safety instruction does this red-bordered sign provide?",
-      "imageAlt": "A red circular sign with a diagonal line through a cigarette",
+      "question": "A prohibition sign consisting of a red circle with a diagonal red bar across a black symbol of a lit cigarette. Which type of safety instruction does this red-bordered sign provide?",
       "explanation": "Red circular signs with a diagonal crossbar are prohibition signs, indicating actions that are strictly forbidden",
-      "id": "hsa-im-0046"
+      "id": "hsa-im-0046",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What specific hazard is identified by this pictogram found on a storage container?",
-      "type": "image_question",
-      "imageDescription": "A red diamond-framed pictogram containing a black silhouette of a gas cylinder or bottle",
+      "question": "A red diamond-framed pictogram containing a black silhouette of a gas cylinder or bottle. What specific hazard is identified by this pictogram found on a storage container?",
+      "type": "multiple_choice",
       "options": [
         "Gas under pressure",
         "Highly flammable gas",
@@ -6192,28 +6145,27 @@
       ],
       "correctAnswer": 0,
       "explanation": "The 'gas cylinder' pictogram is used to identify chemicals stored under pressure, which may explode if heated",
-      "imageAlt": "A COSHH pictogram showing a black gas cylinder",
-      "id": "hsa-im-0047"
+      "id": "hsa-im-0047",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A diagram of the Hierarchy of Control with the bottom-most tier highlighted",
       "explanation": "Personal Protective Equipment (PPE) is the final level of the hierarchy, used only when hazards cannot be fully controlled by other means",
-      "question": "Which level of the Hierarchy of Control is represented by the base (bottom tier) of the triangle?",
-      "imageDescription": "An inverted pyramid showing the Hierarchy of Control. The smallest, bottom section is highlighted",
+      "question": "An inverted pyramid showing the Hierarchy of Control. The smallest, bottom section is highlighted. Which level of the Hierarchy of Control is represented by the base (bottom tier) of the triangle?",
       "options": [
         "Engineering Controls",
         "Elimination",
         "Personal Protective Equipment (PPE)",
         "Administrative Controls"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 2,
-      "id": "hsa-im-0048"
+      "id": "hsa-im-0048",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 1,
-      "question": "What is the primary purpose of a safety sign with this shape and colour?",
-      "type": "image_question",
+      "question": "A standard UK Prohibition safety sign showing a red circle with a diagonal slash over a white background. No specific pictogram inside. What is the primary purpose of a safety sign with this shape and colour?",
+      "type": "multiple_choice",
       "explanation": "The red circle with a diagonal bar identifies a 'Prohibition' sign, meaning an action or behaviour is strictly forbidden",
       "options": [
         "Warning - Danger ahead",
@@ -6221,28 +6173,26 @@
         "Mandatory - You must do this",
         "Information - Safe way out"
       ],
-      "imageDescription": "A standard UK Prohibition safety sign showing a red circle with a diagonal slash over a white background. No specific pictogram inside",
-      "imageAlt": "A red circular sign with a white background and a red diagonal line across it",
-      "id": "hsa-im-0049"
+      "id": "hsa-im-0049",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "question": "What is the meaning of a safety sign that uses this triangular shape?",
+      "type": "multiple_choice",
+      "question": "A blank yellow equilateral triangle with a thick black border, typically used for warning signs in the UK. What is the meaning of a safety sign that uses this triangular shape?",
       "correctAnswer": 0,
-      "imageAlt": "A yellow triangle with a black border",
       "options": [
         "To warn of a hazard",
         "To show a safe route",
         "To prohibit access",
         "To show mandatory PPE"
       ],
-      "imageDescription": "A blank yellow equilateral triangle with a thick black border, typically used for warning signs in the UK",
       "explanation": "According to the HSE, yellow or amber triangular signs provide a warning of a specific hazard or danger",
-      "id": "hsa-im-0050"
+      "id": "hsa-im-0050",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What specific hazard does this COSHH pictogram warn about?",
-      "type": "image_question",
+      "question": "The standard GHS/COSHH pictogram for 'Acute Toxicity', featuring a black skull and crossbones inside a red-bordered diamond. What specific hazard does this COSHH pictogram warn about?",
+      "type": "multiple_choice",
       "correctAnswer": 2,
       "options": [
         "Corrosive substance",
@@ -6250,44 +6200,41 @@
         "Acute toxicity (poison)",
         "Environmental hazard"
       ],
-      "imageDescription": "The standard GHS/COSHH pictogram for 'Acute Toxicity', featuring a black skull and crossbones inside a red-bordered diamond",
-      "imageAlt": "A white diamond with a red border containing a black skull and crossbones",
       "explanation": "The 'skull and crossbones' pictogram indicates that a substance is toxic and can cause serious harm or death if inhaled, swallowed, or absorbed",
-      "id": "hsa-im-0051"
+      "id": "hsa-im-0051",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 3,
-      "question": "Which type of fire is this extinguisher primarily intended for?",
-      "type": "image_question",
+      "question": "A standard UK fire extinguisher with a black label, indicating it is a Carbon Dioxide (CO2) extinguisher. Which type of fire is this extinguisher primarily intended for?",
+      "type": "multiple_choice",
       "explanation": "A CO2 extinguisher is identified by a black label and is used for electrical fires as it does not leave residue or conduct electricity",
-      "imageDescription": "A standard UK fire extinguisher with a black label, indicating it is a Carbon Dioxide (CO2) extinguisher",
       "options": [
         "Wood and paper only",
         "Flammable liquids only",
         "Cooking oils and fats",
         "Electrical equipment fires"
       ],
-      "imageAlt": "A red fire extinguisher with a black rectangular panel/label",
-      "id": "hsa-im-0052"
+      "id": "hsa-im-0052",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "Substitution involves replacing a hazardous substance or process with one that is less dangerous, which is more effective than relying on PPE",
-      "imageDescription": "An inverted pyramid showing the Hierarchy of Control. The top tier is Elimination; the second tier down is highlighted and blank for the user to identify",
       "options": [
         "Engineering Controls",
         "Substitution",
         "Administrative Controls",
         "Personal Protective Equipment"
       ],
-      "imageAlt": "A flowchart showing Substitution as the second tier in the Hierarchy of Control",
       "correctAnswer": 1,
-      "question": "In the Hierarchy of Control, which method involves replacing a hazard with a safer alternative?",
-      "type": "image_question",
-      "id": "hsa-im-0053"
+      "question": "An inverted pyramid showing the Hierarchy of Control. The top tier is Elimination; the second tier down is highlighted and blank for the user to identify. In the Hierarchy of Control, which method involves replacing a hazard with a safer alternative?",
+      "type": "multiple_choice",
+      "id": "hsa-im-0053",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What does this hazard symbol indicate about a chemical's properties?",
-      "type": "image_question",
+      "question": "The GHS/COSHH pictogram for 'Health Hazard/Irritant', showing a bold black exclamation mark inside a red-bordered diamond. What does this hazard symbol indicate about a chemical's properties?",
+      "type": "multiple_choice",
       "correctAnswer": 0,
       "options": [
         "Harmful or irritant",
@@ -6295,62 +6242,56 @@
         "Gas under pressure",
         "Flammable solid"
       ],
-      "imageDescription": "The GHS/COSHH pictogram for 'Health Hazard/Irritant', showing a bold black exclamation mark inside a red-bordered diamond",
-      "imageAlt": "A white diamond with a red border containing a black exclamation mark",
       "explanation": "The exclamation mark pictogram is used for substances that cause skin or eye irritation, or have lower-level health effects",
-      "id": "hsa-im-0054"
+      "id": "hsa-im-0054",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A standard UK safety sign: a green square with a white cross, representing a First Aid station or kit",
       "options": [
         "Emergency exit route",
         "Fire assembly point",
         "First aid equipment location",
         "Hazardous waste area"
       ],
-      "imageAlt": "A green square sign with a white cross in the centre",
       "explanation": "First aid signs are always green and white, indicating a safe condition or the location of life-saving equipment",
-      "question": "What is the specific meaning of this safety sign?",
-      "type": "image_question",
+      "question": "A standard UK safety sign: a green square with a white cross, representing a First Aid station or kit. What is the specific meaning of the sign?",
+      "type": "multiple_choice",
       "correctAnswer": 2,
-      "id": "hsa-im-0055"
+      "id": "hsa-im-0055",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "Which hazard is represented by this symbol often found on industrial gas bottles?",
-      "type": "image_question",
+      "question": "The GHS/COSHH pictogram for 'Gas Under Pressure', showing a black silhouette of a gas bottle or cylinder. Which hazard is represented by this symbol often found on industrial gas bottles?",
+      "type": "multiple_choice",
       "correctAnswer": 1,
-      "imageDescription": "The GHS/COSHH pictogram for 'Gas Under Pressure', showing a black silhouette of a gas bottle or cylinder",
       "options": [
         "Compressed air only",
         "Gas under pressure",
         "Explosive when dry",
         "Oxygen storage only"
       ],
-      "imageAlt": "A white diamond with a red border containing a black gas cylinder symbol",
       "explanation": "A gas cylinder inside a red-bordered diamond identifies gases stored under pressure, which may explode if heated",
-      "id": "hsa-im-0056"
+      "id": "hsa-im-0056",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 0,
-      "type": "image_question",
-      "question": "If a worker suffers a fractured leg due to this trip hazard, what is the legal requirement?",
+      "type": "multiple_choice",
+      "question": "A simple cartoon or diagram of an employee tripping over a cable and clutching a clearly broken leg in an office environment. If a worker suffers a fractured leg due to this trip hazard, what is the legal requirement?",
       "explanation": "Under RIDDOR, any workplace accident that results in a bone fracture (other than to fingers, thumbs, or toes) must be reported to the HSE",
-      "imageAlt": "An illustration of a worker falling and sustaining a leg injury",
-      "imageDescription": "A simple cartoon or diagram of an employee tripping over a cable and clutching a clearly broken leg in an office environment",
       "options": [
         "Reporting to the HSE under RIDDOR",
         "Recording in the site diary only",
         "Nothing, unless they miss 7 days of work",
         "Reporting to the local police"
       ],
-      "id": "hsa-im-0057"
+      "id": "hsa-im-0057",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "question": "Which level of the Hierarchy of Control is represented by this middle section?",
+      "type": "multiple_choice",
+      "question": "An inverted pyramid showing the Hierarchy of Control. The third tier from the top (middle section) is highlighted. Which level of the Hierarchy of Control is represented by this middle section?",
       "correctAnswer": 3,
-      "imageAlt": "The middle tier of the Hierarchy of Control pyramid is highlighted",
-      "imageDescription": "An inverted pyramid showing the Hierarchy of Control. The third tier from the top (middle section) is highlighted",
       "options": [
         "PPE",
         "Elimination",
@@ -6358,41 +6299,39 @@
         "Engineering Controls"
       ],
       "explanation": "Engineering controls involve physical changes to the workplace, such as installing local exhaust ventilation (LEV) or machine guards",
-      "id": "hsa-im-0058"
+      "id": "hsa-im-0058",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "question": "What specific property does this pictogram warn against?",
+      "type": "multiple_choice",
+      "question": "The GHS/COSHH pictogram for 'Oxidising' substances, featuring a black 'O' with a flame on top, inside a red-bordered diamond. What specific property does this pictogram warn against?",
       "correctAnswer": 2,
-      "imageAlt": "A white diamond with a red border containing a black flame over a circle (an 'O')",
       "options": [
         "Highly flammable substance",
         "Explosive substance",
         "Oxidising substance",
         "Corrosive substance"
       ],
-      "imageDescription": "The GHS/COSHH pictogram for 'Oxidising' substances, featuring a black 'O' with a flame on top, inside a red-bordered diamond",
       "explanation": "The diamond symbol with a flame over a circle indicates an 'Oxidising' substance, which can provide oxygen to a fire and make it burn more intensely",
-      "id": "hsa-im-0059"
+      "id": "hsa-im-0059",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 1,
-      "type": "image_question",
-      "question": "What does this category of red safety sign indicate?",
+      "type": "multiple_choice",
+      "question": "A red square safety sign with a white pictogram of a fire extinguisher and a small flame symbol. What does this category of red safety sign indicate?",
       "explanation": "Safety signs for fire equipment, such as extinguishers or alarms, are red and square/rectangular, but do not have a diagonal prohibition bar",
-      "imageAlt": "A red square sign with a white symbol of a fire extinguisher",
       "options": [
         "A prohibition of fire in the area",
         "The location of fire-fighting equipment",
         "A warning that the building is on fire",
         "Instruction to use water on all fires"
       ],
-      "imageDescription": "A red square safety sign with a white pictogram of a fire extinguisher and a small flame symbol",
-      "id": "hsa-im-0060"
+      "id": "hsa-im-0060",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A standard GHS/COSHH toxic hazard pictogram featuring a black skull and crossbones inside a red-bordered diamond",
-      "question": "What does this chemical hazard pictogram warn you about?",
+      "question": "A standard GHS/COSHH toxic hazard pictogram featuring a black skull and crossbones inside a red-bordered diamond. What does this chemical hazard pictogram warn you about?",
       "options": [
         "Corrosive substance",
         "Acute toxicity (Poison)",
@@ -6400,17 +6339,15 @@
         "Oxidising agent"
       ],
       "explanation": "The skull and crossbones symbol indicates that a substance is toxic and can cause serious illness or death if inhaled, swallowed, or absorbed",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 1,
-      "imageAlt": "A white diamond with a red border containing a black skull and crossbones",
-      "id": "hsa-im-0061"
+      "id": "hsa-im-0061",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageAlt": "A yellow equilateral triangle with a black border containing a large black exclamation mark",
+      "type": "multiple_choice",
       "correctAnswer": 2,
-      "question": "What is the meaning of this specific warning sign?",
-      "imageDescription": "A standard UK health and safety warning sign: a yellow triangle with a black exclamation mark",
+      "question": "A standard UK health and safety warning sign: a yellow triangle with a black exclamation mark. What is the meaning of this specific warning sign?",
       "options": [
         "Mandatory action required",
         "Prohibited area",
@@ -6418,14 +6355,13 @@
         "First aid station nearby"
       ],
       "explanation": "A yellow triangle with a black border and a black exclamation mark is a general warning sign, indicating a hazard is present in the area",
-      "id": "hsa-im-0062"
+      "id": "hsa-im-0062",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 0,
-      "imageAlt": "A solid blue circle with a white exclamation mark in the centre",
-      "imageDescription": "A blue circular mandatory sign featuring a white exclamation mark",
-      "question": "Which category of safety information does this blue circular sign belong to?",
+      "question": "A blue circular mandatory sign featuring a white exclamation mark. Which category of safety information does the sign belong to?",
       "options": [
         "Mandatory action (instruction)",
         "Warning of danger",
@@ -6433,14 +6369,13 @@
         "No entry permitted"
       ],
       "explanation": "A blue circular sign with a white exclamation mark indicates a mandatory instruction, such as 'Keep Clear' or 'Keep Locked'",
-      "id": "hsa-im-0063"
+      "id": "hsa-im-0063",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 3,
-      "imageAlt": "An image of a kitchen pan on fire with high yellow flames",
-      "question": "Which type of fire extinguisher is specifically designed for a fire involving this hazard?",
-      "imageDescription": "A deep-fat fryer or kitchen pan with a large flame erupting from the top",
+      "question": "A deep-fat fryer or kitchen pan with a large flame erupting from the top. Which type of fire extinguisher is specifically designed for a fire involving this hazard?",
       "explanation": "Fires involving cooking oils and fats (Class F) require specialized wet chemical extinguishers; water or CO2 can cause dangerous flare-ups",
       "options": [
         "Water",
@@ -6448,11 +6383,11 @@
         "Powder",
         "Wet Chemical"
       ],
-      "id": "hsa-im-0064"
+      "id": "hsa-im-0064",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "An inverted pyramid representing the Hierarchy of Control, with the top, widest section highlighted in a bright colour",
-      "question": "Which level of the Hierarchy of Control is represented by the top section of this pyramid?",
+      "question": "An inverted pyramid representing the Hierarchy of Control, with the top, widest section highlighted in a bright colour. Which level of the Hierarchy of Control is represented by the top section of this pyramid?",
       "explanation": "Elimination is the most effective level of the Hierarchy of Control because it completely removes the hazard from the workplace",
       "options": [
         "Elimination",
@@ -6460,10 +6395,10 @@
         "Engineering Controls",
         "Personal Protective Equipment (PPE)"
       ],
-      "type": "image_question",
-      "imageAlt": "A hierarchy of control pyramid with the very top section highlighted",
+      "type": "multiple_choice",
       "correctAnswer": 0,
-      "id": "hsa-im-0065"
+      "id": "hsa-im-0065",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -6473,17 +6408,15 @@
         "Prohibition sign"
       ],
       "explanation": "A safety sign with a white pictogram on a green background indicates a safe condition, such as an escape route or first aid point",
-      "imageDescription": "A standard UK emergency exit sign: green background with a white 'running man' and an arrow",
-      "question": "What type of safety information is provided by this green rectangular sign?",
+      "question": "A standard UK emergency exit sign: green background with a white 'running man' and an arrow. What type of safety information is provided by this green rectangular sign?",
       "correctAnswer": 2,
-      "imageAlt": "A green rectangular sign with a white pictogram of a person running through an open doorway",
-      "type": "image_question",
-      "id": "hsa-im-0066"
+      "type": "multiple_choice",
+      "id": "hsa-im-0066",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A red-bordered diamond containing a black silhouette of a person’s head and chest with a white star-shaped explosion inside the chest",
       "correctAnswer": 1,
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Corrosive to skin",
         "Serious long-term health hazard (e.g. carcinogen)",
@@ -6491,13 +6424,12 @@
         "Harmful to the environment"
       ],
       "explanation": "The 'Health Hazard' symbol (a person with a star in the chest) warns of substances that may cause cancer, respiratory sensitivity, or organ damage over time",
-      "imageDescription": "A GHS 'Health Hazard' pictogram showing a silhouette of a person with internal damage",
-      "question": "What does this specific hazard pictogram represent?",
-      "id": "hsa-im-0067"
+      "question": "A GHS 'Health Hazard' pictogram showing a silhouette of a person with internal damage. What does this specific hazard pictogram represent?",
+      "id": "hsa-im-0067",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "An industrial dust extractor with a clear 'Class M' safety certification label visible on the side",
-      "question": "This vacuum cleaner is rated Class 'M'. What type of dust is it primarily designed to extract safely?",
+      "question": "An industrial dust extractor with a clear 'Class M' safety certification label visible on the side. This vacuum cleaner is rated Class 'M'. What type of dust is it primarily designed to extract safely?",
       "explanation": "The 'M' class label on a vacuum indicates it is rated for medium-risk dusts, such as wood dust or silica dust from construction",
       "options": [
         "Medium-risk dust (e.g. wood or silica)",
@@ -6505,10 +6437,10 @@
         "High-risk asbestos dust only",
         "Metal shavings only"
       ],
-      "type": "image_question",
-      "imageAlt": "A close up of a label on an industrial vacuum cleaner showing a large letter 'M' inside a box",
+      "type": "multiple_choice",
       "correctAnswer": 0,
-      "id": "hsa-im-0068"
+      "id": "hsa-im-0068",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -6518,17 +6450,15 @@
         "7 days"
       ],
       "explanation": "Under RIDDOR, any workplace accident that results in an employee being unable to perform their normal work for more than seven consecutive days must be reported",
-      "question": "According to RIDDOR, an injury must be reported if it results in an incapacitated worker being unable to work for more than how many consecutive days?",
-      "imageDescription": "A calendar page where 8 consecutive days are marked off, illustrating a period of absence",
+      "question": "A calendar page where 8 consecutive days are marked off, illustrating a period of absence. According to RIDDOR, an injury must be reported if it results in an incapacitated worker being unable to work for more than how many consecutive days?",
       "correctAnswer": 3,
-      "imageAlt": "A calendar showing a sequence of 8 days crossed out with red marks",
-      "type": "image_question",
-      "id": "hsa-im-0069"
+      "type": "multiple_choice",
+      "id": "hsa-im-0069",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 1,
-      "imageAlt": "The acronym COSHH written in bold capital letters with a question mark over the letter 'O'",
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Organisations",
         "Of",
@@ -6536,16 +6466,14 @@
         "Occupational"
       ],
       "explanation": "The 'O' in COSHH stands for 'of', following 'Control', and preceded by 'Substances'. It stands for Control of Substances Hazardous to Health",
-      "question": "In the context of UK workplace regulations, what does the letter 'O' stand for in this acronym?",
-      "imageDescription": "The word COSHH in large block letters, with the letter 'O' highlighted or replaced by a question mark",
-      "id": "hsa-im-0070"
+      "question": "The word COSHH in large block letters, with the letter 'O' highlighted or replaced by a question mark. In the context of UK workplace regulations, what does the letter 'O' stand for in this acronym?",
+      "id": "hsa-im-0070",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 2,
-      "imageAlt": "An illustration of a worker lifting a box far away from their body versus close to their chest",
-      "imageDescription": "A diagram showing two workers lifting boxes: one holds the box near their stomach, the other holds it at arm's length",
-      "question": "When following manual handling guidelines, which factor is most likely to increase the risk of injury in this image?",
+      "question": "A diagram showing two workers lifting boxes: one holds the box near their stomach, the other holds it at arm's length. When following manual handling guidelines, which factor is most likely to increase the risk of injury ?",
       "options": [
         "The weight of the box only",
         "The speed of the lift",
@@ -6553,11 +6481,11 @@
         "the colour of the box"
       ],
       "explanation": "HSE guidance recommends that the weight of a load is just one factor; the position of the load relative to the body is also critical for safety",
-      "id": "hsa-im-0071"
+      "id": "hsa-im-0071",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What is the meaning of a safety sign that uses this red circular shape and diagonal bar?",
-      "imageDescription": "A standard prohibition sign: a red circle and slash over a black cigarette icon, indicating 'No Smoking'",
+      "question": "A standard prohibition sign: a red circle and slash over a black cigarette icon, indicating 'No Smoking'. What is the meaning of a safety sign that uses this red circular shape and diagonal bar?",
       "options": [
         "A mandatory instruction",
         "A prohibited action",
@@ -6565,13 +6493,13 @@
         "A fire-fighting equipment location"
       ],
       "explanation": "A white circle with a red border and a diagonal red line indicates an action that is strictly prohibited",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 1,
-      "imageAlt": "A red circular border with a cross-bar over a black icon of a cigarette",
-      "id": "hsa-im-0072"
+      "id": "hsa-im-0072",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What is the general meaning of this category of safety sign?",
+      "question": "A standard UK health and safety warning sign: a yellow equilateral triangle with a thick black border and a large black exclamation mark in the centre. What is the general meaning of this category of safety sign?",
       "options": [
         "Prohibition (Stop)",
         "Warning (Caution)",
@@ -6580,15 +6508,12 @@
       ],
       "explanation": "A yellow triangle with a black border indicates a warning sign, alerting people to be aware of a specific hazard in the area",
       "correctAnswer": 1,
-      "imageAlt": "A yellow triangular sign with a black border and an exclamation mark",
-      "imageDescription": "A standard UK health and safety warning sign: a yellow equilateral triangle with a thick black border and a large black exclamation mark in the centre",
-      "type": "image_question",
-      "id": "hsa-im-0073"
+      "type": "multiple_choice",
+      "id": "hsa-im-0073",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageDescription": "A medical illustration showing a human hand with red, flaky, and inflamed skin on the fingers and palm, representing a common occupational health issue",
-      "imageAlt": "Infographic showing a red, inflamed hand",
+      "type": "multiple_choice",
       "correctAnswer": 0,
       "explanation": "Dermatitis is a common skin condition caused by contact with irritants found in many workplace chemicals and cleaning agents",
       "options": [
@@ -6597,14 +6522,13 @@
         "Tinnitus",
         "Leptospirosis"
       ],
-      "question": "Which occupational health condition is most likely caused by regular, unprotected exposure to the irritants shown in these symptoms?",
-      "id": "hsa-im-0074"
+      "question": "A medical illustration showing a human hand with red, flaky, and inflamed skin on the fingers and palm, representing a common occupational health issue. Which occupational health condition is most likely caused by regular, unprotected exposure to the irritants shown in these symptoms?",
+      "id": "hsa-im-0074",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 2,
-      "imageAlt": "GHS Pictogram of a skull and crossbones inside a red diamond",
-      "imageDescription": "The Global Harmonised System (GHS) pictogram for acute toxicity: a black skull and crossbones symbol inside a white diamond with a thick red border",
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Corrosive to metal",
         "Explosive hazard",
@@ -6612,11 +6536,12 @@
         "Environmentally damaging"
       ],
       "explanation": "A black skull and crossbones inside a red diamond warns that the substance is acutely toxic and can be fatal if inhaled, swallowed, or touched",
-      "question": "Under COSHH regulations, what does this hazard pictogram indicate?",
-      "id": "hsa-im-0075"
+      "question": "The Global Harmonised System (GHS) pictogram for acute toxicity: a black skull and crossbones symbol inside a white diamond with a thick red border. Under COSHH regulations, what does this hazard pictogram indicate?",
+      "id": "hsa-im-0075",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "Which level of the Hierarchy of Control does the bottom section of this pyramid represent?",
+      "question": "A five-tier inverted pyramid representing the Hierarchy of Control. The smallest, bottom-most tier is highlighted in a different colour than the rest. Which level of the Hierarchy of Control does the bottom section of this pyramid represent?",
       "options": [
         "Elimination",
         "Substitution",
@@ -6624,11 +6549,10 @@
         "Personal Protective Equipment (PPE)"
       ],
       "explanation": "The bottom tier of the hierarchy of control is PPE. It is the last line of defence and should only be used if the hazard cannot be controlled by other means",
-      "imageDescription": "A five-tier inverted pyramid representing the Hierarchy of Control. The smallest, bottom-most tier is highlighted in a different colour than the rest",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 3,
-      "imageAlt": "A hierarchy of control pyramid with the bottom section highlighted",
-      "id": "hsa-im-0076"
+      "id": "hsa-im-0076",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "The 'L' in TILE (Task, Individual, Load, Environment) reminds workers to assess the weight, size, and stability of the item before lifting",
@@ -6638,17 +6562,14 @@
         "Liquids",
         "Legs"
       ],
-      "question": "When performing a manual handling assessment using the 'TILE' acronym, what does this letter stand for?",
-      "imageAlt": "The letter L written in a bold, blue box",
+      "question": "The capital letter 'L' prominently displayed in a bold blue square, representing one of the four key factors in manual handling risk assessments. When performing a manual handling assessment using the 'TILE' acronym, what does this letter stand for?",
       "correctAnswer": 0,
-      "type": "image_question",
-      "imageDescription": "The capital letter 'L' prominently displayed in a bold blue square, representing one of the four key factors in manual handling risk assessments",
-      "id": "hsa-im-0077"
+      "type": "multiple_choice",
+      "id": "hsa-im-0077",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageDescription": "A mandatory safety sign: a solid blue circle containing a white silhouette of a pair of safety boots or work shoes",
-      "imageAlt": "A blue circular sign showing a white pair of safety boots",
+      "type": "multiple_choice",
       "correctAnswer": 1,
       "explanation": "Blue circular signs are mandatory signs, meaning a specific action or piece of PPE must be worn to proceed safely",
       "options": [
@@ -6657,13 +6578,12 @@
         "Beware of slippery floor",
         "Foot protection is optional"
       ],
-      "question": "What does this mandatory safety sign mean?",
-      "id": "hsa-im-0078"
+      "question": "A mandatory safety sign: a solid blue circle containing a white silhouette of a pair of safety boots or work shoes. What does this mandatory safety sign mean?",
+      "id": "hsa-im-0078",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageDescription": "The GHS pictogram for oxidizing substances: a black circle with a flame on top, enclosed in a white diamond with a thick red border",
-      "imageAlt": "GHS Pictogram showing a flame over a circle in a red diamond",
+      "type": "multiple_choice",
       "correctAnswer": 3,
       "explanation": "A black flame over a circle (oxidiser) indicates the substance provides oxygen, which can cause or intensify a fire even in the absence of air",
       "options": [
@@ -6672,11 +6592,12 @@
         "Explosive substance",
         "Oxidising agent (can intensify fire)"
       ],
-      "question": "What property does this chemical hazard symbol warn against?",
-      "id": "hsa-im-0079"
+      "question": "The GHS pictogram for oxidizing substances: a black circle with a flame on top, enclosed in a white diamond with a thick red border. What property does this chemical hazard symbol warn against?",
+      "id": "hsa-im-0079",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "In the Hierarchy of Control, providing safety training and procedures (as shown) falls into which category?",
+      "question": "An illustration of a construction worker in hi-vis gear standing in front of a wall-mounted safety notice board, reading a training poster. In the Hierarchy of Control, providing safety training and procedures (as shown) falls into which category?",
       "explanation": "Administrative controls involve changing work patterns, providing training, or using signs to reduce exposure to a hazard",
       "options": [
         "Engineering Controls",
@@ -6684,16 +6605,13 @@
         "Elimination",
         "PPE"
       ],
-      "type": "image_question",
-      "imageDescription": "An illustration of a construction worker in hi-vis gear standing in front of a wall-mounted safety notice board, reading a training poster",
-      "imageAlt": "A worker looking at a safety training poster on a wall",
+      "type": "multiple_choice",
       "correctAnswer": 1,
-      "id": "hsa-im-0080"
+      "id": "hsa-im-0080",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageDescription": "A standard UK fire extinguisher that is entirely red, including the signal band/label, indicating it is a water extinguisher",
-      "imageAlt": "A red fire extinguisher with a solid red label",
+      "type": "multiple_choice",
       "correctAnswer": 2,
       "explanation": "Water extinguishers (red label) are only suitable for Class A fires (solid combustibles like wood/paper) and must never be used on electrical equipment",
       "options": [
@@ -6702,8 +6620,9 @@
         "Wood, paper, and textiles (Class A)",
         "Cooking oils (Class F)"
       ],
-      "question": "This fire extinguisher is best suited for which type of fire?",
-      "id": "hsa-im-0081"
+      "question": "A standard UK fire extinguisher that is entirely red, including the signal band/label, indicating it is a water extinguisher. This fire extinguisher is best suited for which type of fire?",
+      "id": "hsa-im-0081",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -6713,15 +6632,14 @@
         "Work at height in progress"
       ],
       "explanation": "A black silhouette of a person being hit by falling objects inside a yellow triangle warns of a danger from above, common on construction sites",
-      "question": "What specific hazard does this warning sign alert you to?",
-      "imageDescription": "A yellow triangular warning sign showing a black silhouette of a person with several black blocks (bricks) falling towards their head",
-      "type": "image_question",
+      "question": "A yellow triangular warning sign showing a black silhouette of a person with several black blocks (bricks) falling towards their head. What specific hazard does the sign alert you to?",
+      "type": "multiple_choice",
       "correctAnswer": 0,
-      "imageAlt": "Warning sign with a person and falling bricks",
-      "id": "hsa-im-0082"
+      "id": "hsa-im-0082",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "In the context of health and safety, what does the first 'P' in this acronym stand for?",
+      "question": "The acronym 'P.P.E.' written in large, black, bold capital letters on a white background. In the context of health and safety, what does the first 'P' in this acronym stand for?",
       "explanation": "The 'P' in PPE stands for Personal. It refers to equipment used to protect the individual worker against health or safety risks",
       "options": [
         "Prevention",
@@ -6729,11 +6647,10 @@
         "Permanent",
         "Personal"
       ],
-      "imageAlt": "The letters P.P.E. in large block capitals",
       "correctAnswer": 3,
-      "type": "image_question",
-      "imageDescription": "The acronym 'P.P.E.' written in large, black, bold capital letters on a white background",
-      "id": "hsa-im-0083"
+      "type": "multiple_choice",
+      "id": "hsa-im-0083",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "A green sign with a white person walking through a door indicates a designated emergency exit or an escape route to safety",
@@ -6743,19 +6660,16 @@
         "Emergency exit / Escape route",
         "Authorized personnel only"
       ],
-      "question": "What is the primary purpose of this green safety sign?",
-      "imageAlt": "A green rectangular sign with a white silhouette of a person running through a doorway",
+      "question": "A standard UK rectangular green safety sign showing a white silhouette of a person running towards an open doorway, accompanied by a white arrow pointing right. What is the primary purpose of this green safety sign?",
       "correctAnswer": 2,
-      "type": "image_question",
-      "imageDescription": "A standard UK rectangular green safety sign showing a white silhouette of a person running towards an open doorway, accompanied by a white arrow pointing right",
-      "id": "hsa-im-0084"
+      "type": "multiple_choice",
+      "id": "hsa-im-0084",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 1,
-      "imageDescription": "A standard UK mandatory safety sign: a solid blue circle with a white silhouette of a safety boot in the centre",
-      "type": "image_question",
-      "question": "What action must you take when you see this mandatory safety sign?",
-      "imageAlt": "A blue circular sign with a white symbol of a boot",
+      "type": "multiple_choice",
+      "question": "A standard UK mandatory safety sign: a solid blue circle with a white silhouette of a safety boot in the centre. What action must you take when you see this mandatory safety sign?",
       "options": [
         "Warning: Falling objects",
         "Safety boots must be worn",
@@ -6763,89 +6677,83 @@
         "First aid station available"
       ],
       "explanation": "Blue circular signs indicate mandatory actions that must be followed. This specific sign means that safety boots must be worn in the area",
-      "id": "hsa-im-0085"
+      "id": "hsa-im-0085",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A yellow triangular sign with a black border and a black exclamation mark",
       "options": [
         "General hazard warning",
         "Electrical risk ahead",
         "Fragile roof nearby",
         "Explosive substances present"
       ],
-      "question": "What is the primary purpose of this category of safety sign?",
+      "question": "A general warning sign: a yellow equilateral triangle with a thick black border and a large black exclamation mark in the centre. What is the primary purpose of this category of safety sign?",
       "explanation": "Under the Health and Safety (Safety Signs and Signals) Regulations 1996, yellow triangular signs provide warnings of specific hazards",
       "correctAnswer": 0,
-      "imageDescription": "A general warning sign: a yellow equilateral triangle with a thick black border and a large black exclamation mark in the centre",
-      "type": "image_question",
-      "id": "hsa-im-0086"
+      "type": "multiple_choice",
+      "id": "hsa-im-0086",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "In the Hierarchy of Control, 'Substitution' involves replacing a high-risk item or process with one that is less hazardous, such as swapping a chemical for a water-based alternative",
-      "question": "Which level of the Hierarchy of Control is highlighted in this diagram?",
+      "question": "An inverted pyramid showing the Hierarchy of Control levels. The second level from the top (below 'Elimination') is highlighted or circled. Which level of the Hierarchy of Control is highlighted ?",
       "options": [
         "Elimination",
         "Engineering Controls",
         "Substitution",
         "Administrative Controls"
       ],
-      "imageAlt": "A diagram of the hierarchy of control with the second level from the top highlighted",
-      "type": "image_question",
-      "imageDescription": "An inverted pyramid showing the Hierarchy of Control levels. The second level from the top (below 'Elimination') is highlighted or circled",
+      "type": "multiple_choice",
       "correctAnswer": 2,
-      "id": "hsa-im-0087"
+      "id": "hsa-im-0087",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A diamond-shaped pictogram showing a dead fish and a leafless tree",
       "options": [
         "Highly flammable",
         "Corrosive to metal",
         "Toxic if swallowed",
         "Hazardous to the aquatic environment"
       ],
-      "question": "Under COSHH regulations, what does this hazard pictogram represent?",
+      "question": "A GHS/COSHH hazard pictogram: a red diamond border with a black silhouette of a dead fish and a bare tree. Under COSHH regulations, what does this hazard pictogram represent?",
       "explanation": "This pictogram indicates chemicals that are hazardous to the aquatic environment, potentially causing long-term damage to fish and plant life",
-      "imageDescription": "A GHS/COSHH hazard pictogram: a red diamond border with a black silhouette of a dead fish and a bare tree",
       "correctAnswer": 3,
-      "type": "image_question",
-      "id": "hsa-im-0088"
+      "type": "multiple_choice",
+      "id": "hsa-im-0088",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageDescription": "A standard UK fire extinguisher with a black identifying label/band and a characteristic wide discharge horn attached to the hose",
+      "type": "multiple_choice",
       "correctAnswer": 0,
       "explanation": "A black-bodied fire extinguisher with a black horn is a Carbon Dioxide (CO2) extinguisher, primarily used for electrical fires as it does not leave residue",
-      "question": "Which type of fire extinguisher is shown in this image?",
+      "question": "A standard UK fire extinguisher with a black identifying label/band and a characteristic wide discharge horn attached to the hose. Which type of fire extinguisher is shown ?",
       "options": [
         "CO2 (Carbon Dioxide)",
         "Water",
         "Dry Powder",
         "Wet Chemical"
       ],
-      "imageAlt": "A fire extinguisher with a black label and a large discharge horn",
-      "id": "hsa-im-0089"
+      "id": "hsa-im-0089",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "The letters T, I, L, and E displayed in a bold font. The letter 'E' is highlighted in a different colour or circled",
       "correctAnswer": 1,
-      "type": "image_question",
-      "question": "When using the TILE manual handling assessment tool, what does the letter 'E' stand for?",
+      "type": "multiple_choice",
+      "question": "The letters T, I, L, and E displayed in a bold font. The letter 'E' is highlighted in a different colour or circled. When using the TILE manual handling assessment tool, what does the letter 'E' stand for?",
       "options": [
         "Equipment",
         "Environment",
         "Effort",
         "Emergency"
       ],
-      "imageAlt": "The acronym TILE with the letter E highlighted",
       "explanation": "In a manual handling risk assessment, 'E' stands for 'Environment', which considers factors like floor conditions, lighting, and weather",
-      "id": "hsa-im-0090"
+      "id": "hsa-im-0090",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 2,
-      "imageDescription": "The official HSE 'Health and Safety Law - What You Need to Know' poster, featuring blue sections and white text",
-      "type": "image_question",
-      "question": "What is this document, which must be displayed in every UK workplace?",
-      "imageAlt": "A blue and white poster titled Health and Safety Law",
+      "type": "multiple_choice",
+      "question": "The official HSE 'Health and Safety Law - What You Need to Know' poster, featuring blue sections and white text. What is this document, which must be displayed in every UK workplace?",
       "options": [
         "Evidence of insurance coverage",
         "Fire evacuation plan",
@@ -6853,22 +6761,22 @@
         "The company's annual profit report"
       ],
       "explanation": "Health and safety law requires the 'Health and Safety Law' poster to be displayed in a visible location for all employees or for each worker to be given the equivalent leaflet",
-      "id": "hsa-im-0091"
+      "id": "hsa-im-0091",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A prohibition sign: a red circle with a diagonal red line through the middle, placed over a black silhouette of a burning cigarette with smoke",
       "correctAnswer": 3,
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Warning: Flammable vapours",
         "Fire assembly point",
         "Designated smoking area",
         "No smoking"
       ],
-      "imageAlt": "A circular sign with a red border, a diagonal red line, and a cigarette symbol",
-      "question": "What is the meaning of this safety sign?",
+      "question": "A prohibition sign: a red circle with a diagonal red line through the middle, placed over a black silhouette of a burning cigarette with smoke. What is the meaning of the sign?",
       "explanation": "A red circle with a diagonal cross-bar means prohibition. This specific sign prohibits smoking in the designated area",
-      "id": "hsa-im-0092"
+      "id": "hsa-im-0092",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -6877,88 +6785,82 @@
         "Skin protection",
         "Engineering control"
       ],
-      "imageAlt": "A disposable FFP3 dust mask",
-      "question": "Which type of Personal Protective Equipment (PPE) is shown here?",
+      "question": "A photo of a white, cup-shaped disposable FFP3 respirator mask with elastic headstraps and an exhalation valve. Which type of Personal Protective Equipment (PPE) is ?",
       "explanation": "Respiratory Protective Equipment (RPE) like this FFP3 mask is the 'last resort' in the Hierarchy of Control when other measures cannot fully mitigate airborne hazards",
       "correctAnswer": 0,
-      "imageDescription": "A photo of a white, cup-shaped disposable FFP3 respirator mask with elastic headstraps and an exhalation valve",
-      "type": "image_question",
-      "id": "hsa-im-0093"
+      "type": "multiple_choice",
+      "id": "hsa-im-0093",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 1,
-      "imageDescription": "A GHS hazard pictogram: a red diamond border containing a black silhouette of a pressurised gas cylinder (resembling a bottle or tank)",
       "explanation": "This pictogram identifies gases that are stored under pressure, which may explode if heated or cause injury if the cylinder is damaged",
-      "question": "What hazard is identified by this COSHH symbol?",
-      "imageAlt": "A diamond-shaped pictogram with a black silhouette of a gas cylinder",
+      "question": "A GHS hazard pictogram: a red diamond border containing a black silhouette of a pressurised gas cylinder (resembling a bottle or tank). What hazard is identified by this COSHH symbol?",
       "options": [
         "Oxidising agent",
         "Gas under pressure",
         "Explosive material",
         "Acute toxicity"
       ],
-      "id": "hsa-im-0094"
+      "id": "hsa-im-0094",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "Fitting a physical guard on a piece of machinery, as shown, is an example of which control measure?",
+      "question": "A stationary power tool, such as a table saw or pillar drill, with a transparent plastic safety guard fixed over the moving parts. Fitting a physical guard on a piece of machinery, as shown, is an example of which control measure?",
       "options": [
         "Personal Protective Equipment",
         "Administrative Controls",
         "Engineering Controls",
         "Substitution"
       ],
-      "imageAlt": "A clear plastic safety guard covering a circular saw blade",
       "explanation": "In the Hierarchy of Control, 'Engineering Controls' involve physical changes to the workplace or equipment to isolate people from the hazard, such as fitting a guard",
       "correctAnswer": 2,
-      "imageDescription": "A stationary power tool, such as a table saw or pillar drill, with a transparent plastic safety guard fixed over the moving parts",
-      "type": "image_question",
-      "id": "hsa-im-0095"
+      "type": "multiple_choice",
+      "id": "hsa-im-0095",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What information is provided by this green and white safety sign?",
+      "question": "A standard UK emergency exit sign: a green rectangle with a white pictogram of a person running through a doorway, with an arrow pointing right. What information is provided by this green and white safety sign?",
       "options": [
         "Safe to enter area",
         "First aid room location",
         "Must stay inside during fire",
         "Emergency exit/Fire exit"
       ],
-      "imageAlt": "A rectangular green sign with a white silhouette of a person running towards a door",
       "explanation": "Signs showing a white figure running through a door on a green background indicate an emergency exit route to a place of safety",
-      "imageDescription": "A standard UK emergency exit sign: a green rectangle with a white pictogram of a person running through a doorway, with an arrow pointing right",
       "correctAnswer": 3,
-      "type": "image_question",
-      "id": "hsa-im-0096"
+      "type": "multiple_choice",
+      "id": "hsa-im-0096",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What does this warning sign indicate?",
+      "question": "A standard UK health and safety warning sign: yellow triangle, black border, featuring a skull and crossbones. What does the sign indicate?",
       "correctAnswer": 1,
-      "imageDescription": "A standard UK health and safety warning sign: yellow triangle, black border, featuring a skull and crossbones",
-      "imageAlt": "Yellow triangular sign with a black border and a skull and crossbones symbol in the centre",
       "options": [
         "Corrosive material",
         "Toxic hazard",
         "Flammable gas",
         "Oxidising agent"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "The yellow triangle signifies a warning sign, and the skull and crossbones symbol specifically warns of toxic or poisonous substances",
-      "id": "hsa-im-0097"
+      "id": "hsa-im-0097",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 0,
-      "question": "This specific fire extinguisher is most suitable for which type of fire?",
-      "imageAlt": "A red fire extinguisher with a black band and a large cone-shaped horn at the end of the hose",
+      "question": "A standard UK CO2 fire extinguisher with a black label/band and a distinctive discharge horn. This specific fire extinguisher is most suitable for which type of fire?",
       "explanation": "CO2 (carbon dioxide) extinguishers, identified by a black band, are primarily used for electrical fires as they are non-conductive",
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Electrical fires",
         "Wood and paper fires only",
         "Cooking oil fires (Class F)",
         "Flammable metal fires"
       ],
-      "imageDescription": "A standard UK CO2 fire extinguisher with a black label/band and a distinctive discharge horn",
-      "id": "hsa-im-0098"
+      "id": "hsa-im-0098",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -6967,16 +6869,15 @@
         "Task",
         "Total Weight"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "The 'T' in the TILE assessment stands for 'Task', which involves looking at how often the load is moved and the distance involved",
-      "imageAlt": "Four boxes labelled T, I, L, and E. The letter T is highlighted",
-      "imageDescription": "A diagram showing the letters T-I-L-E used for manual handling, with the letter 'T' specifically highlighted or circled",
       "correctAnswer": 2,
-      "question": "In a manual handling risk assessment, what does the 'T' in the acronym shown here represent?",
-      "id": "hsa-im-0099"
+      "question": "A diagram showing the letters T-I-L-E used for manual handling, with the letter 'T' specifically highlighted or circled. In a manual handling risk assessment, what does the 'T' in the acronym represent?",
+      "id": "hsa-im-0099",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "Safe condition signs, such as first aid or emergency exits, are always green rectangles or squares with white symbols",
       "options": [
         "Prohibition sign",
@@ -6984,31 +6885,29 @@
         "Warning sign",
         "Safe condition sign"
       ],
-      "imageAlt": "A square green sign with a white cross in the centre",
-      "imageDescription": "A standard UK first aid sign: green background with a bold white cross",
       "correctAnswer": 3,
-      "question": "What category of safety sign does this image belong to?",
-      "id": "hsa-im-0100"
+      "question": "A standard UK first aid sign: green background with a bold white cross. What category of safety sign does the image belong to?",
+      "id": "hsa-im-0100",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "Where must this official poster be displayed within a UK workplace?",
+      "question": "The official HSE Health and Safety Law poster, white and blue with various sections of text and a large title at the top. Where must this official poster be displayed within a UK workplace?",
       "correctAnswer": 1,
-      "imageDescription": "The official HSE Health and Safety Law poster, white and blue with various sections of text and a large title at the top",
-      "imageAlt": "A 'Health and Safety Law: What You Need To Know' poster displayed on a wall",
       "explanation": "Health and Safety Law posters must be displayed in a prominent position where all employees can easily read them",
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Only in the manager's office",
         "In a prominent place accessible to all workers",
         "On the outside of the building next to the entrance",
         "Inside the first aid kit"
       ],
-      "id": "hsa-im-0101"
+      "id": "hsa-im-0101",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 2,
-      "question": "Based on its position in the Hierarchy of Control shown here, how should PPE be regarded?",
-      "type": "image_question",
+      "question": "A diagram of the Hierarchy of Control (Elimination, Substitution, Engineering, Administrative, PPE) with PPE highlighted at the bottom. Based on its position in the Hierarchy of Control , how should PPE be regarded?",
+      "type": "multiple_choice",
       "explanation": "PPE is the final stage (the 'last resort') in the Hierarchy of Control because it only protects the wearer, not others, and the hazard remains",
       "options": [
         "The most effective control measure",
@@ -7016,28 +6915,25 @@
         "The last resort (least effective) measure",
         "A way to eliminate the hazard entirely"
       ],
-      "imageAlt": "An inverted pyramid showing the Hierarchy of Control. PPE is at the very bottom (the narrowest point)",
-      "imageDescription": "A diagram of the Hierarchy of Control (Elimination, Substitution, Engineering, Administrative, PPE) with PPE highlighted at the bottom",
-      "id": "hsa-im-0102"
+      "id": "hsa-im-0102",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "A blue circle indicates a mandatory action. In this case, the ear defenders symbol means that hearing protection must be worn",
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Ear protection must be worn",
         "Caution: loud noises ahead",
         "No entry without an appointment",
         "Warning: high frequency radiation"
       ],
-      "imageAlt": "A blue circular sign with a white silhouette of a person wearing ear defenders",
-      "imageDescription": "A mandatory blue safety sign showing the head of a person wearing ear defenders",
       "correctAnswer": 0,
-      "question": "What does this mandatory safety sign mean?",
-      "id": "hsa-im-0103"
+      "question": "A mandatory blue safety sign showing the head of a person wearing ear defenders. What does this mandatory safety sign mean?",
+      "id": "hsa-im-0103",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A calendar showing 7 days highlighted with a red circle",
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "Under RIDDOR, any workplace injury that results in a worker being unable to perform their normal work for more than seven consecutive days is reportable",
       "options": [
         "1 day",
@@ -7045,40 +6941,38 @@
         "5 days",
         "7 days"
       ],
-      "imageDescription": "A graphic representation of a calendar week with seven days crossed out or highlighted",
       "correctAnswer": 3,
-      "question": "Under RIDDOR, an injury must be reported to the HSE if the worker is unable to perform their normal duties for more than how many consecutive days?",
-      "id": "hsa-im-0104"
+      "question": "A graphic representation of a calendar week with seven days crossed out or highlighted. Under RIDDOR, an injury must be reported to the HSE if the worker is unable to perform their normal duties for more than how many consecutive days?",
+      "id": "hsa-im-0104",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A red diamond COSHH pictogram showing a black silhouette of a person's head and chest with a white star-like shape in the chest area",
       "options": [
         "Acute toxicity (poison)",
         "Serious health hazard (e.g. carcinogen)",
         "Explosive material",
         "Environmentally damaging substance"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "The pictogram of a person with a 'star' bursting from their chest indicates a substance that can cause serious long-term health effects, such as cancer or respiratory sensitisation",
-      "imageDescription": "The GHS / COSHH hazard symbol for serious health hazards (chronic toxicity/carcinogenicity)",
       "correctAnswer": 1,
-      "question": "What health hazard does this COSHH symbol represent?",
-      "id": "hsa-im-0105"
+      "question": "The GHS / COSHH hazard symbol for serious health hazards (chronic toxicity/carcinogenicity). What health hazard does this COSHH symbol represent?",
+      "id": "hsa-im-0105",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A standard UK prohibition sign for no smoking",
       "explanation": "A red circle with a diagonal line is a prohibition sign, meaning do not do or stop doing the action depicted. In this case, it means no smoking",
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Fire risk area",
         "Smoking area nearbyOK",
         "No smoking allowed",
         "Discard cigarettes here"
       ],
-      "imageAlt": "A red circle with a diagonal red line over a black cigarette with smoke",
-      "question": "What does this safety sign communicate?",
+      "question": "A standard UK prohibition sign for no smoking. What does the sign communicate?",
       "correctAnswer": 2,
-      "id": "hsa-im-0106"
+      "id": "hsa-im-0106",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -7088,57 +6982,53 @@
         "Any of these can be used on any fire"
       ],
       "explanation": "Water extinguishers (red label) are for Class A fires (wood, paper, textiles), while Foam (cream) and CO2 (black) are better for liquids or electricity",
-      "type": "image_question",
-      "imageAlt": "A display of four fire extinguishers with different coloured bands: Red, Cream, Blue, Black",
-      "imageDescription": "A collection of UK fire extinguishers showing the various colour-coded labels (Red, Cream, Blue, Black)",
+      "type": "multiple_choice",
       "correctAnswer": 3,
-      "question": "Which of these extinguishers should NEVER be used on an electrical fire? (Assuming the first one is Water/Red)",
-      "id": "hsa-im-0107"
+      "question": "A collection of UK fire extinguishers showing the various colour-coded labels (Red, Cream, Blue, Black). Which of these extinguishers should NEVER be used on an electrical fire? (Assuming the first one is Water/Red)?",
+      "id": "hsa-im-0107",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "An illustration showing a toxic chemical bottle being replaced by a safer, eco-friendly alternative bottle",
       "explanation": "Substitution involves replacing a high-risk activity or substance with a lower-risk one, such as using a less toxic chemical",
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Elimination",
         "Substitution",
         "Engineering Controls",
         "Administrative Controls"
       ],
-      "imageAlt": "An arrow pointing from a bottle with a 'skull' symbol to a bottle with a 'leaf' symbol",
-      "question": "Which part of the Hierarchy of Control does this image illustrate?",
+      "question": "An illustration showing a toxic chemical bottle being replaced by a safer, eco-friendly alternative bottle. Which part of the Hierarchy of Control does the image illustrate?",
       "correctAnswer": 1,
-      "id": "hsa-im-0108"
+      "id": "hsa-im-0108",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A book cover with the title 'Health and Safety at Work etc. Act 1974'",
       "options": [
         "1964",
         "1974",
         "1984",
         "1994"
       ],
-      "question": "In what year was the primary UK Health and Safety law shown here enacted?",
+      "question": "A formal legal document or book cover titled 'Health and Safety at Work etc. Act 1974' with the Royal Coat of Arms of the United Kingdom. In what year was the primary UK Health and Safety law enacted?",
       "explanation": "The Health and Safety at Work etc. Act 1974 is the primary piece of legislation governing occupational health and safety in Great Britain",
       "correctAnswer": 1,
-      "imageDescription": "A formal legal document or book cover titled 'Health and Safety at Work etc. Act 1974' with the Royal Coat of Arms of the United Kingdom",
-      "type": "image_question",
-      "id": "hsa-im-0109"
+      "type": "multiple_choice",
+      "id": "hsa-im-0109",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 2,
-      "imageDescription": "A standard UK warning sign: a yellow equilateral triangle with a thick black border and a black skull and crossbones symbol in the centre",
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Corrosive substance",
         "Flammable gas",
         "Toxic hazard",
         "Explosive material"
       ],
-      "imageAlt": "Yellow triangular sign with a black skull and crossbones symbol",
-      "question": "What specific hazard does this warning sign identify?",
+      "question": "A standard UK warning sign: a yellow equilateral triangle with a thick black border and a black skull and crossbones symbol in the centre. What specific hazard does the sign identify?",
       "explanation": "A yellow triangle with a black border and a skull and crossbones indicates a substance or area that is poisonous or toxic",
-      "id": "hsa-im-0110"
+      "id": "hsa-im-0110",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -7147,13 +7037,12 @@
         "Information sign - ear defenders available here",
         "Prohibition sign - no loud noises allowed"
       ],
-      "imageAlt": "A blue circular sign showing white ear defenders",
-      "question": "What is the category and meaning of this blue safety sign?",
+      "question": "A mandatory safety sign featuring a solid blue circle with a white silhouette of a person wearing ear defenders. What is the category and meaning of this blue safety sign?",
       "explanation": "Blue circular signs with white symbols are 'Mandatory' signs, meaning you MUST carry out the action shown",
-      "imageDescription": "A mandatory safety sign featuring a solid blue circle with a white silhouette of a person wearing ear defenders",
       "correctAnswer": 0,
-      "type": "image_question",
-      "id": "hsa-im-0111"
+      "type": "multiple_choice",
+      "id": "hsa-im-0111",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -7162,17 +7051,15 @@
         "Engineering Controls",
         "Elimination"
       ],
-      "imageAlt": "An inverted pyramid diagram representing the Hierarchy of Control",
-      "question": "According to the Hierarchy of Control shown, which is the most effective way to control a risk?",
+      "question": "An inverted pyramid diagram showing the five stages of the Hierarchy of Control: Elimination, Substitution, Engineering Controls, Administrative Controls, and PPE. According to the Hierarchy of Control shown, which is the most effective way to control a risk?",
       "explanation": "The Hierarchy of Control lists 'Elimination' as the most effective method because it removes the hazard entirely",
       "correctAnswer": 3,
-      "imageDescription": "An inverted pyramid diagram showing the five stages of the Hierarchy of Control: Elimination, Substitution, Engineering Controls, Administrative Controls, and PPE",
-      "type": "image_question",
-      "id": "hsa-im-0112"
+      "type": "multiple_choice",
+      "id": "hsa-im-0112",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "Under the regulations shown in this image, which statement regarding workplace fatalities is correct?",
-      "imageAlt": "The logo for RIDDOR (Reporting of Injuries, Diseases and Dangerous Occurrences Regulations)",
+      "question": "The official logo or text for 'RIDDOR' - Reporting of Injuries, Diseases and Dangerous Occurrences Regulations. Under the regulations shown , which statement regarding workplace fatalities is correct?",
       "options": [
         "Only if the worker was over 18",
         "All workplace fatalities must be reported",
@@ -7181,73 +7068,68 @@
       ],
       "explanation": "Under RIDDOR, the death of any person arising out of or in connection with work must be reported to the HSE",
       "correctAnswer": 1,
-      "imageDescription": "The official logo or text for 'RIDDOR' - Reporting of Injuries, Diseases and Dangerous Occurrences Regulations",
-      "type": "image_question",
-      "id": "hsa-im-0113"
+      "type": "multiple_choice",
+      "id": "hsa-im-0113",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A graphic showing the TILE acronym (Task, Individual, Load, Environment) used for manual handling assessments",
       "correctAnswer": 2,
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Instruction",
         "Information",
         "Individual Capability",
         "Inspection"
       ],
-      "imageAlt": "An infographic showing the word T-I-L-E vertically",
-      "question": "In the manual handling assessment tool shown, what does the 'I' represent?",
+      "question": "A graphic showing the TILE acronym (Task, Individual, Load, Environment) used for manual handling assessments. In the manual handling assessment tool shown, what does the 'I' represent?",
       "explanation": "The 'I' in the TILE mnemonic stands for 'Individual Capability', referring to the person's physical strength or known health conditions",
-      "id": "hsa-im-0114"
+      "id": "hsa-im-0114",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "A red circle with a diagonal crossbar over a cigarette means smoking is strictly prohibited in that area",
-      "question": "What does this safety sign communicate to people on site?",
-      "imageAlt": "A red circle with a diagonal line through it, over a black cigarette symbol",
+      "question": "A standard UK prohibition sign: a white background with a red circular border and a red diagonal line across a black silhouette of a burning cigarette. What does the sign communicate to people on site?",
       "options": [
         "Prohibition: No smoking",
         "Warning: Fire risk",
         "Mandatory: Use the smoking area",
         "Information: Cigarettes sold here"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 0,
-      "imageDescription": "A standard UK prohibition sign: a white background with a red circular border and a red diagonal line across a black silhouette of a burning cigarette",
-      "id": "hsa-im-0115"
+      "id": "hsa-im-0115",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "This symbol indicates a 'Serious health hazard', which identifies substances that may cause respiratory sensitisation or germ cell mutagenicity",
-      "question": "What type of hazard is represented by this COSHH pictogram?",
+      "question": "A GHS/COSHH hazard pictogram: a white diamond with a red border, containing a black silhouette of a human head and shoulders with a white six-pointed star exploding from the chest. What type of hazard is represented by this COSHH pictogram?",
       "options": [
         "Corrosive to skin",
         "Oxidising agent",
         "Acute toxicity (harmful)",
         "Serious health hazard (e.g. carcinogen)"
       ],
-      "imageAlt": "A white diamond with a red border showing a black silhouette of a person with a white star-like burst on their chest",
-      "type": "image_question",
-      "imageDescription": "A GHS/COSHH hazard pictogram: a white diamond with a red border, containing a black silhouette of a human head and shoulders with a white six-pointed star exploding from the chest",
+      "type": "multiple_choice",
       "correctAnswer": 3,
-      "id": "hsa-im-0116"
+      "id": "hsa-im-0116",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "The 'First Aid' sign is green and white, which is the colour scheme used for 'Safe Condition' signs under UK regulations",
-      "imageAlt": "A green square sign with a white cross",
       "options": [
         "Warning sign",
         "Safe condition sign",
         "Mandatory sign",
         "Prohibition sign"
       ],
-      "question": "Which category of safety sign does this image fall under?",
-      "type": "image_question",
+      "question": "A green square safety sign featuring a white cross in the centre, commonly used to denote a first aid station. Which category of safety sign does the image fall under?",
+      "type": "multiple_choice",
       "correctAnswer": 1,
-      "imageDescription": "A green square safety sign featuring a white cross in the centre, commonly used to denote a first aid station",
-      "id": "hsa-im-0117"
+      "id": "hsa-im-0117",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "This fire extinguisher is specifically designed for use on which type of fire?",
-      "imageAlt": "A red fire extinguisher with a large black band",
+      "question": "A standard UK fire extinguisher with a red body and a prominent black band/label, indicating it is a Carbon Dioxide (CO2) extinguisher. This fire extinguisher is specifically designed for use on which type of fire?",
       "options": [
         "Wood, paper, and textiles",
         "Cooking oils and fats",
@@ -7256,9 +7138,9 @@
       ],
       "explanation": "A CO2 extinguisher (identified by the black label) is the standard choice for fires involving electrical equipment as it is non-conductive and leaves no residue",
       "correctAnswer": 2,
-      "imageDescription": "A standard UK fire extinguisher with a red body and a prominent black band/label, indicating it is a Carbon Dioxide (CO2) extinguisher",
-      "type": "image_question",
-      "id": "hsa-im-0118"
+      "type": "multiple_choice",
+      "id": "hsa-im-0118",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "Replacing a hazardous chemical with a less dangerous alternative is 'Substitution' in the hierarchy of control",
@@ -7268,16 +7150,14 @@
         "Engineering Control",
         "Substitution"
       ],
-      "imageAlt": "An illustration of a worker replacing a jar marked 'Toxic' with one marked 'Safe'",
-      "question": "Swapping a hazardous substance for a safer one, as depicted here, is known as what?",
-      "type": "image_question",
-      "imageDescription": "An illustration showing a worker removing a container with a 'Skull and Crossbones' label and replacing it with a container with a 'Green Tick' label",
+      "question": "An illustration showing a worker removing a container with a 'Skull and Crossbones' label and replacing it with a container with a 'Green Tick' label. Swapping a hazardous substance for a safer one, as depicted here, is known as what?",
+      "type": "multiple_choice",
       "correctAnswer": 3,
-      "id": "hsa-im-0119"
+      "id": "hsa-im-0119",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "Who is responsible for providing and paying for the equipment shown in this image?",
-      "imageAlt": "A collection of PPE: hard hat, high-vis vest, gloves, and safety boots",
+      "question": "A photo of various items of PPE laid out on a table, including a yellow hard hat, a high-visibility waistcoat, safety goggles, and protective gloves. Who is responsible for providing and paying for the equipment shown ?",
       "options": [
         "The employer must provide it free of charge",
         "The employee must buy it themselves",
@@ -7286,9 +7166,9 @@
       ],
       "explanation": "The employer is legally responsible for providing the necessary PPE and ensuring it is maintained, though employees must use it correctly",
       "correctAnswer": 0,
-      "imageDescription": "A photo of various items of PPE laid out on a table, including a yellow hard hat, a high-visibility waistcoat, safety goggles, and protective gloves",
-      "type": "image_question",
-      "id": "hsa-im-0120"
+      "type": "multiple_choice",
+      "id": "hsa-im-0120",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -7298,16 +7178,14 @@
         "Mandatory sign"
       ],
       "explanation": "The Health and Safety (Safety Signs and Signals) Regulations 1996 state that 'Warning' signs must be triangular with a yellow background and black border",
-      "question": "According to UK safety sign regulations, what category of sign is represented by this image?",
-      "imageDescription": "A standard UK health and safety warning sign featuring a yellow triangle with a bold black border and a large black exclamation mark in the centre",
-      "imageAlt": "A black exclamation mark inside a yellow triangle with a black border",
+      "question": "A standard UK health and safety warning sign featuring a yellow triangle with a bold black border and a large black exclamation mark in the centre. According to UK safety sign regulations, what category of sign is represented by the image?",
       "correctAnswer": 2,
-      "type": "image_question",
-      "id": "hsa-im-0121"
+      "type": "multiple_choice",
+      "id": "hsa-im-0121",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A white diamond-shaped sign with a thick red border, containing a black silhouette of a large flame",
-      "question": "What does this specific COSHH hazard symbol indicate about a substance?",
+      "question": "A white diamond-shaped sign with a thick red border, containing a black silhouette of a large flame. What does this specific COSHH hazard symbol indicate about a substance?",
       "options": [
         "Flammable substance",
         "Oxidising agent",
@@ -7315,14 +7193,13 @@
         "Gas under pressure"
       ],
       "explanation": "COSHH symbols with a flame indicate that a substance is highly flammable and must be kept away from ignition sources like heat or sparks",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 0,
-      "imageAlt": "A black flame symbol inside a red diamond frame",
-      "id": "hsa-im-0122"
+      "id": "hsa-im-0122",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A circular prohibition sign with a red border and diagonal cross-bar over a black pictogram of a walking person on a white background",
-      "question": "What instruction does this prohibition sign give to workers on a site?",
+      "question": "A circular prohibition sign with a red border and diagonal cross-bar over a black pictogram of a walking person on a white background. What instruction does the sign give to workers on a site?",
       "explanation": "This sign means that pedestrians are strictly forbidden from entering the area to prevent accidents or injuries",
       "options": [
         "Pedestrians must walk here",
@@ -7330,17 +7207,15 @@
         "Watch out for people walking",
         "Footpath ahead"
       ],
-      "type": "image_question",
-      "imageAlt": "A red circle with a diagonal line through it, over a black silhouette of a person walking",
+      "type": "multiple_choice",
       "correctAnswer": 1,
-      "id": "hsa-im-0123"
+      "id": "hsa-im-0123",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 3,
-      "imageAlt": "A blue circle containing a white silhouette of safety goggles",
-      "imageDescription": "A solid blue circle with a white pictogram of safety goggles in the centre",
-      "question": "When encountering this sign at a workshop entrance, what action must be taken?",
+      "question": "A solid blue circle with a white pictogram of safety goggles in the centre. When encountering the sign at a workshop entrance, what action must be taken?",
       "options": [
         "Goggles are available if you want them",
         "Warning: flying debris",
@@ -7348,12 +7223,12 @@
         "Eye protection must be worn"
       ],
       "explanation": "The blue circle indicates a 'Mandatory' action, meaning eye protection is not optional and must be worn in the designated area",
-      "id": "hsa-im-0124"
+      "id": "hsa-im-0124",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 2,
-      "imageAlt": "A green square sign with a white cup/glass and a tap",
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "Under the Health and Safety at Work Act 1974, employers must provide a safe working environment, including welfare facilities like clean drinking water",
       "options": [
         "Wash hands here",
@@ -7361,14 +7236,13 @@
         "Drinking water",
         "Corrosive liquid storage"
       ],
-      "question": "This green safety sign identifies the location of which essential workplace facility?",
-      "imageDescription": "A square green information sign featuring white symbols of a water tap dripping into a glass",
-      "id": "hsa-im-0125"
+      "question": "A square green information sign featuring white symbols of a water tap dripping into a glass. This green safety sign identifies the location of which essential workplace facility?",
+      "id": "hsa-im-0125",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 1,
-      "imageAlt": "A person shown in a crouched position with a straight back, about to lift a box",
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Bend your back to reach further",
         "Bend your knees and keep your back straight",
@@ -7376,14 +7250,13 @@
         "Keep your legs straight and feet together"
       ],
       "explanation": "Correct manual handling involves keeping the back straight and bending the knees to use the leg muscles for lifting",
-      "question": "Which key principle of safe manual handling is being demonstrated in this illustration?",
-      "imageDescription": "A diagram of a person demonstrating the correct 'kinetic' lifting technique: feet apart, knees bent, back straight, and arms close to the body",
-      "id": "hsa-im-0126"
+      "question": "A diagram of a person demonstrating the correct 'kinetic' lifting technique: feet apart, knees bent, back straight, and arms close to the body. Which key principle of safe manual handling is being demonstrated ?",
+      "id": "hsa-im-0126",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 0,
-      "imageAlt": "A red fire extinguisher with a prominent black colour-coded band",
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "A black label indicates a Carbon Dioxide (CO2) extinguisher, which is safe for use on electrical fires as it does not leave residue or conduct electricity",
       "options": [
         "Carbon Dioxide (CO2)",
@@ -7391,13 +7264,12 @@
         "Foam",
         "Wet Chemical"
       ],
-      "imageDescription": "A red fire extinguisher cylinder featuring a distinct black rectangular stripe/label near the top where the instructions are printed",
-      "question": "Based on the black colour-coded label shown, what is the contents of this fire extinguisher?",
-      "id": "hsa-im-0127"
+      "question": "A red fire extinguisher cylinder featuring a distinct black rectangular stripe/label near the top where the instructions are printed. Based on the black colour-coded label shown, what is the contents of this fire extinguisher?",
+      "id": "hsa-im-0127",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "The official RIDDOR logo with text, often seen on accident reporting posters or leaflets",
-      "question": "Under the regulations shown in this logo, which of the following must be reported to the HSE?",
+      "question": "The official RIDDOR logo with text, often seen on accident reporting posters or leaflets. Under the regulations shown in this logo, which of the following must be reported to the HSE?",
       "options": [
         "Commuting accidents",
         "Minor cuts requiring a plaster",
@@ -7405,14 +7277,13 @@
         "Any illness lasting more than one day"
       ],
       "explanation": "RIDDOR requires employers to report 'Specified Injuries' (formerly 'Major Injuries') such as fractures, amputations, or serious burns to the HSE",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 2,
-      "imageAlt": "The logo for RIDDOR (Reporting of Injuries, Diseases and Dangerous Occurrences Regulations)",
-      "id": "hsa-im-0128"
+      "id": "hsa-im-0128",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A white diamond with a red border showing a black pictogram of a human silhouette with a white 'explosion' or starburst shape on the chest area",
-      "question": "What type of risk is identified by this COSHH pictogram?",
+      "question": "A white diamond with a red border showing a black pictogram of a human silhouette with a white 'explosion' or starburst shape on the chest area. What type of risk is identified by this COSHH pictogram?",
       "explanation": "A health hazard symbol (chest/starburst) indicates substances that can cause serious long-term health effects like respiratory sensitisation or cancer",
       "options": [
         "Acute toxicity (poison)",
@@ -7420,17 +7291,15 @@
         "Environmentally damaging",
         "Serious long-term health hazard"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 3,
-      "imageAlt": "A red diamond containing a black silhouette of a person's head and chest with a white starburst shape in the chest",
-      "id": "hsa-im-0129"
+      "id": "hsa-im-0129",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageAlt": "A flowchart showing the 5 steps of risk assessment, with the first box highlighted",
+      "type": "multiple_choice",
       "correctAnswer": 1,
-      "question": "In the standard 5-step risk assessment process shown here, what is the first action an employer should take?",
-      "imageDescription": "A vertical process chart showing five boxes. Box 1 is highlighted and contains a question mark, representing the start of the risk assessment process",
+      "question": "A vertical process chart showing five boxes. Box 1 is highlighted and contains a question mark, representing the start of the risk assessment process. In the standard 5-step risk assessment process , what is the first action an employer should take?",
       "options": [
         "Record your findings",
         "Identify the hazards",
@@ -7438,7 +7307,8 @@
         "Review the assessment"
       ],
       "explanation": "In the HSE's 'Five Steps to Risk Assessment', the first step is to walk around the workplace and identify what could cause harm",
-      "id": "hsa-im-0130"
+      "id": "hsa-im-0130",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "The Health and Safety at Work etc. Act 1974 places a legal duty on employees to take reasonable care of their own health and safety and that of others",

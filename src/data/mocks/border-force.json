@@ -233,7 +233,7 @@
         "Class A, B, or C controlled drugs",
         "Alcoholic beverages over 40% ABV",
         "Prescription painkillers for personal use with a valid script",
-        "More than £5,000 in cash without a declaration"
+        "More than \u00a35,000 in cash without a declaration"
       ],
       "explanation": "These are controlled substances and cannot be imported into the UK without a specific license from the Home Office",
       "id": "bf-mc-0018"
@@ -273,7 +273,7 @@
         "Fresh meat or dairy products from outside the EU",
         "Chocolate and confectionery items",
         "Bottled water exceeding 100ml",
-        "Electronic goods worth less than £390"
+        "Electronic goods worth less than \u00a3390"
       ],
       "id": "bf-mc-0021"
     },
@@ -414,7 +414,7 @@
         "Accept it as it would be rude to refuse a guest",
         "Politely decline the gift and follow departmental guidance on reporting such offers",
         "Accept it but give it to a local charity",
-        "Accept it only if the value is estimated to be under £50"
+        "Accept it only if the value is estimated to be under \u00a350"
       ],
       "question": "An arriving passenger offers a Border Force officer a high-value watch as a 'thank you' for their help. How should the officer respond?",
       "correctAnswer": 1,
@@ -564,12 +564,12 @@
       "id": "bf-mc-0043"
     },
     {
-      "explanation": "Cash or 'bearer negotiable instruments' worth £10,000 or more must be declared when entering or leaving the UK from/to any country",
+      "explanation": "Cash or 'bearer negotiable instruments' worth \u00a310,000 or more must be declared when entering or leaving the UK from/to any country",
       "options": [
-        "£1,000",
-        "£5,000",
-        "£10,000",
-        "£50,000"
+        "\u00a31,000",
+        "\u00a35,000",
+        "\u00a310,000",
+        "\u00a350,000"
       ],
       "question": "If a passenger is carrying cash into the UK from abroad, at what threshold (in GBP or equivalent) must they make a formal declaration?",
       "type": "multiple_choice",
@@ -882,7 +882,7 @@
       "explanation": "The primary aim is to ensure the child is safe and that there are no safeguarding concerns, rather than immediate deportation",
       "options": [
         "To check if the child has enough money for their stay",
-        "To ensure the child’s safety and verify the identity of the person meeting them",
+        "To ensure the child\u2019s safety and verify the identity of the person meeting them",
         "To issue an immediate fine to the airline for boarding a minor",
         "To contact the child's school in their home country for a reference"
       ],
@@ -1086,13 +1086,13 @@
     {
       "correctAnswer": 1,
       "type": "multiple_choice",
-      "explanation": "Under UK law, all cash amounts over £10,000 (or equivalent) must be declared when entering or leaving the UK from/to a non-EU country",
+      "explanation": "Under UK law, all cash amounts over \u00a310,000 (or equivalent) must be declared when entering or leaving the UK from/to a non-EU country",
       "question": "What is the current threshold amount of cash that a person must declare to Border Force when entering or leaving the UK?",
       "options": [
-        "£1,000",
-        "£10,000",
-        "£5,000",
-        "£50,000"
+        "\u00a31,000",
+        "\u00a310,000",
+        "\u00a35,000",
+        "\u00a350,000"
       ],
       "id": "bf-mc-0084"
     },
@@ -2393,7 +2393,7 @@
         "The VAT Recovery Point",
         "The Red Channel"
       ],
-      "question": "A passenger arriving from outside the UK is carrying £15,000 in cash. Which channel or area must they use to declare this sum?",
+      "question": "A passenger arriving from outside the UK is carrying \u00a315,000 in cash. Which channel or area must they use to declare this sum?",
       "id": "bf-mc-0184"
     },
     {
@@ -2961,7 +2961,7 @@
         "They are always exempt from all taxes",
         "They may be subject to VAT and Customs Duty depending on value and origin",
         "They are treated exactly the same as goods moving between London and Manchester",
-        "They only require documentation if the value exceeds £10,000"
+        "They only require documentation if the value exceeds \u00a310,000"
       ],
       "explanation": "Goods from the EU are generally subject to UK VAT and potentially customs duties since the UK's exit from the EU single market",
       "question": "Following the UK's departure from the European Union, what is the status of commercial goods imported from the EU?",
@@ -3129,7 +3129,7 @@
       "question": "When arriving at a UK airport, what is the purpose of the 'Red Point' or Red Channel?",
       "options": [
         "Only for passengers arriving from non-EU countries",
-        "Only for passengers with more than £10,000 in cash",
+        "Only for passengers with more than \u00a310,000 in cash",
         "For passengers with goods that exceed their duty-free allowance or restricted items",
         "For passengers with nothing to declare to customs"
       ],
@@ -3167,13 +3167,13 @@
       "correctAnswer": 1,
       "type": "multiple_choice",
       "options": [
-        "£5,000 or more",
-        "£10,000 or more",
-        "£15,000 or more",
-        "£20,000 or more"
+        "\u00a35,000 or more",
+        "\u00a310,000 or more",
+        "\u00a315,000 or more",
+        "\u00a320,000 or more"
       ],
       "question": "What is the minimum amount of cash a passenger must declare when entering the UK from a country outside the UK?",
-      "explanation": "Any traveler carrying £10,000 or more in cash (or equivalent in other currencies) when entering or leaving the UK must declare it",
+      "explanation": "Any traveler carrying \u00a310,000 or more in cash (or equivalent in other currencies) when entering or leaving the UK must declare it",
       "id": "bf-mc-0244"
     },
     {
@@ -3273,7 +3273,7 @@
         "A single bottle of 40% ABV spirits",
         "A flick knife or 'gravity knife' purchased as a souvenir",
         "Fresh meat from within the European Union for personal use",
-        "A laptop computer worth over £1,000"
+        "A laptop computer worth over \u00a31,000"
       ],
       "question": "Which of the following items is considered a 'prohibited' item, meaning it cannot be imported into the UK under any circumstances?",
       "type": "multiple_choice",
@@ -3457,7 +3457,7 @@
         "To provide frontline security, immigration, and customs functions at UK ports",
         "To manage the UK's long-term environmental policies",
         "To issue UK driving licences and vehicle registrations",
-        "To manage the UK’s high-street policing and local crime prevention"
+        "To manage the UK\u2019s high-street policing and local crime prevention"
       ],
       "explanation": "The primary role of the UK Home Office's Border Force is to protect the UK border by conducting immigration and customs controls on people and goods",
       "id": "bf-mc-0266"
@@ -4062,14 +4062,14 @@
     },
     {
       "options": [
-        "£10,000 or more",
-        "£5,000 or more",
-        "£20,000 or more",
+        "\u00a310,000 or more",
+        "\u00a35,000 or more",
+        "\u00a320,000 or more",
         "None of the above; there is no limit"
       ],
       "question": "When entering the UK from a country outside the UK, at what value must a passenger declare the cash they are carrying?",
       "type": "multiple_choice",
-      "explanation": "Passengers are required to declare any cash or cash equivalents (banknotes, cheques, travers cheques) if the total value is £10,000 or more",
+      "explanation": "Passengers are required to declare any cash or cash equivalents (banknotes, cheques, travers cheques) if the total value is \u00a310,000 or more",
       "correctAnswer": 0,
       "id": "bf-mc-0313"
     },
@@ -4250,7 +4250,7 @@
       "options": [
         "Bottled water over 100ml from outside the EU",
         "Heroin and other Class A drugs",
-        "Cash totalling exactly £5,000",
+        "Cash totalling exactly \u00a35,000",
         "Endangered animals or plants (CITES)",
         "Flick knives and gravity knives"
       ],
@@ -5376,7 +5376,7 @@
       "options": [
         "The National Crime Agency (NCA)",
         "The Forestry Commission",
-        "His Majesty’s Revenue and Customs (HMRC)",
+        "His Majesty\u2019s Revenue and Customs (HMRC)",
         "Regional Police Forces (Special Branch)",
         "The Department for Education"
       ],
@@ -5512,7 +5512,7 @@
     {
       "explanation": "Large amounts of cash and inconsistent travel stories are major indicators of potential financial crime or illegal immigration attempts",
       "options": [
-        "Large sums of undeclared cash (exceeding £10,000)",
+        "Large sums of undeclared cash (exceeding \u00a310,000)",
         "A single carry-on bag for a weekend trip",
         "An itinerary that does not match the passenger's stated purpose of visit",
         "Valid return flight tickets and hotel bookings"
@@ -6531,7 +6531,7 @@
         "Offensive weapons such as butterfly knives or flick knives",
         "A standard smartphone purchased abroad for personal use",
         "Unlicensed products derived from endangered species (CITES)",
-        "More than £5,000 in cash when travelling from outside the UK"
+        "More than \u00a35,000 in cash when travelling from outside the UK"
       ],
       "type": "multiple_response",
       "explanation": "Controlled drugs, weapons, and meat from countries with health restrictions are all prohibited or restricted items",
@@ -7035,7 +7035,7 @@
     },
     {
       "correctAnswer": true,
-      "question": "Travellers carrying £10,000 or more in cash into the UK from a country outside the UK must make a formal declaration",
+      "question": "Travellers carrying \u00a310,000 or more in cash into the UK from a country outside the UK must make a formal declaration",
       "explanation": "Under the Proceeds of Crime Act, large sums of cash must be declared when entering or leaving the UK to prevent money laundering",
       "type": "true_false",
       "id": "bf-tf-0011"
@@ -7205,7 +7205,7 @@
       "correctAnswer": false,
       "explanation": "Duty-free allowances apply to the individual traveller and cannot be combined or \"pooled\" to cover a single high-value item",
       "type": "true_false",
-      "question": "Two passengers travelling together can pool their individual duty-free allowances to bring in a single item worth £600 without paying duty",
+      "question": "Two passengers travelling together can pool their individual duty-free allowances to bring in a single item worth \u00a3600 without paying duty",
       "id": "bf-tf-0035"
     },
     {
@@ -7344,7 +7344,7 @@
     {
       "correctAnswer": true,
       "type": "true_false",
-      "explanation": "Border Force works with agencies like the NCA to intercept bulk cash (usually over £10,000) that may be the proceeds of crime",
+      "explanation": "Border Force works with agencies like the NCA to intercept bulk cash (usually over \u00a310,000) that may be the proceeds of crime",
       "question": "One of the responsibilities of Border Force is to seize large quantities of undeclared cash being moved across the border",
       "id": "bf-tf-0055"
     },
@@ -7447,14 +7447,14 @@
       "id": "bf-tf-0069"
     },
     {
-      "question": "Travellers entering the UK from a country outside the UK must declare cash only if the total amount exceeds £50,000",
-      "explanation": "The limit for declaring cash (including coins, notes, and cheques) when entering or leaving the UK from outside the country is £10,000 or more",
+      "question": "Travellers entering the UK from a country outside the UK must declare cash only if the total amount exceeds \u00a350,000",
+      "explanation": "The limit for declaring cash (including coins, notes, and cheques) when entering or leaving the UK from outside the country is \u00a310,000 or more",
       "type": "true_false",
       "correctAnswer": false,
       "id": "bf-tf-0070"
     },
     {
-      "question": "Haulage companies are exempt from fines if ‘clandestine entrants’ (stowaways) are found in their vehicles, provided the driver was unaware of their presence",
+      "question": "Haulage companies are exempt from fines if \u2018clandestine entrants\u2019 (stowaways) are found in their vehicles, provided the driver was unaware of their presence",
       "explanation": "Under the Carriers' Liability secondary legislation, owners of HGVs can be fined for each 'clandestine entrant' found, regardless of whether the driver knew they were there",
       "correctAnswer": false,
       "type": "true_false",
@@ -7485,7 +7485,7 @@
       "type": "true_false",
       "correctAnswer": true,
       "explanation": "The Duty Free allowance for spirits is 4 litres, while for sparkling wine/fortified wine/cider it is 9 litres",
-      "question": "Under current UK customs rules, a traveller’s personal allowance for spirits is lower in volume (litres) than their allowance for sparkling wine",
+      "question": "Under current UK customs rules, a traveller\u2019s personal allowance for spirits is lower in volume (litres) than their allowance for sparkling wine",
       "id": "bf-tf-0075"
     },
     {
@@ -7513,7 +7513,7 @@
       "correctAnswer": false,
       "type": "true_false",
       "question": "Travellers must only declare cash to Border Force if they are entering the UK, as there is no requirement to declare cash when leaving the UK",
-      "explanation": "Any amount of cash (including coins, notes, or cheques) totalling £10,000 or more must be declared when entering or leaving the UK from/to any country",
+      "explanation": "Any amount of cash (including coins, notes, or cheques) totalling \u00a310,000 or more must be declared when entering or leaving the UK from/to any country",
       "id": "bf-tf-0079"
     },
     {
@@ -7527,7 +7527,7 @@
       "type": "true_false",
       "correctAnswer": false,
       "explanation": "Officers can inspect any goods, regardless of value, to ensure they comply with health, safety, and security regulations",
-      "question": "Border Force is only permitted to examine goods if they have a retail value of more than £1,000",
+      "question": "Border Force is only permitted to examine goods if they have a retail value of more than \u00a31,000",
       "id": "bf-tf-0081"
     },
     {
@@ -7573,9 +7573,9 @@
       "id": "bf-tf-0087"
     },
     {
-      "question": "Travellers must declare cash only if the total amount being carried into or out of the UK is £20,000 or more",
+      "question": "Travellers must declare cash only if the total amount being carried into or out of the UK is \u00a320,000 or more",
       "type": "true_false",
-      "explanation": "The threshold for declaring cash (including notes, coins, and cheques) when entering or leaving the UK from a country outside the UK is £10,000 or more",
+      "explanation": "The threshold for declaring cash (including notes, coins, and cheques) when entering or leaving the UK from a country outside the UK is \u00a310,000 or more",
       "correctAnswer": false,
       "id": "bf-tf-0088"
     },
@@ -7601,8 +7601,8 @@
       "id": "bf-tf-0091"
     },
     {
-      "explanation": "Under the ‘Clandestine Entrant Civil Penalty Scheme’, both the driver and the owner/operator can be fined per person found concealed on the vehicle",
-      "question": "Hauliers can be fined up to £10,000 for every ‘clandestine entrant’ discovered in their vehicle if it is found to be insecure",
+      "explanation": "Under the \u2018Clandestine Entrant Civil Penalty Scheme\u2019, both the driver and the owner/operator can be fined per person found concealed on the vehicle",
+      "question": "Hauliers can be fined up to \u00a310,000 for every \u2018clandestine entrant\u2019 discovered in their vehicle if it is found to be insecure",
       "type": "true_false",
       "correctAnswer": true,
       "id": "bf-tf-0092"
@@ -7656,17 +7656,15 @@
         "Oxygen",
         "Propane Gas"
       ],
-      "question": "Based on the international chemical symbol shown on this industrial canister, what substance does it contain?",
-      "type": "image_question",
-      "imageDescription": "A grey high-pressure gas cylinder with a bright yellow warning diamond. Inside the diamond is the capital letter 'O' and a small flame symbol",
-      "imageAlt": "A metal canister with a yellow warning label and a large letter O",
+      "question": "A grey high-pressure gas cylinder with a bright yellow warning diamond. Inside the diamond is the capital letter 'O' and a small flame symbol. Based on the international chemical symbol shown on this industrial canister, what substance does it contain?",
+      "type": "multiple_choice",
       "correctAnswer": 2,
       "explanation": "The chemical symbol 'O' on the canister indicates Oxygen, which is a common industrial gas used in welding or medical scenarios",
-      "id": "bf-im-0001"
+      "id": "bf-im-0001",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "A common indicator of a forged passport is misaligned text or irregular spacing in the Machine Readable Zone (MRZ)",
-      "imageAlt": "A close up of the bottom of a passport page showing two lines of characters",
       "correctAnswer": 0,
       "options": [
         "Inconsistent alignment in the MRZ text",
@@ -7674,15 +7672,14 @@
         "Standard font size for the country code",
         "Clear holographic overlays"
       ],
-      "question": "Looking closely at the Machine Readable Zone (MRZ) of this travel document, which security red flag is most prominent?",
-      "type": "image_question",
-      "imageDescription": "A macro photo of the Machine Readable Zone at the bottom of a passport. Several letters in the top line are slightly higher than others and the font appears inconsistent",
-      "id": "bf-im-0002"
+      "question": "A macro photo of the Machine Readable Zone at the bottom of a passport. Several letters in the top line are slightly higher than others and the font appears inconsistent. Looking closely at the Machine Readable Zone (MRZ) of this travel document, which security red flag is most prominent?",
+      "type": "multiple_choice",
+      "id": "bf-im-0002",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "An officer discovers these items in a shipping crate. Under which category of restricted goods do these fall?",
-      "type": "image_question",
-      "imageDescription": "A collection of large, curved elephant tusks arranged on a table for inspection. The texture shows characteristic 'Schreger lines' on the cross-section",
+      "question": "A collection of large, curved elephant tusks arranged on a table for inspection. The texture shows characteristic 'Schreger lines' on the cross-section. An officer discovers these items in a shipping crate. Under which category of restricted goods do these fall?",
+      "type": "multiple_choice",
       "options": [
         "Antique furniture components",
         "Synthetic resin molds",
@@ -7690,29 +7687,27 @@
         "Endangered species animal products (Ivory)"
       ],
       "explanation": "The image shows ivory tusks, which are strictly regulated under CITES as an endangered species product",
-      "imageAlt": "Several curved, cream-colored animal tusks laid out on a table",
       "correctAnswer": 3,
-      "id": "bf-im-0003"
+      "id": "bf-im-0003",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A plastic bag with a circular symbol and three interlocking circles",
       "correctAnswer": 1,
       "explanation": "The orange and black 'Biohazard' symbol indicates items that may contain infectious agents or medical waste",
-      "imageDescription": "A bright yellow clinical waste bag featuring the universal biohazard symbol: three circles interlaced with a small central circle",
-      "question": "What type of danger does this symbol on a parcel signify to a Border Force officer?",
-      "type": "image_question",
+      "question": "A bright yellow clinical waste bag featuring the universal biohazard symbol: three circles interlaced with a small central circle. What type of danger does this symbol on a parcel signify to a Border Force officer?",
+      "type": "multiple_choice",
       "options": [
         "Radioactive material",
         "Biohazardous waste",
         "Corrosive chemicals",
         "Flammable solids"
       ],
-      "id": "bf-im-0004"
+      "id": "bf-im-0004",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "An X-ray security scan of a hard-shell suitcase. Inside the metal lining of the handle mechanism, there are dark orange rectangular blocks that do not match the luggage structure",
-      "question": "In this X-ray scan, what do the dark orange rectangular shapes inside the suitcase handle assembly suggest?",
-      "type": "image_question",
+      "question": "An X-ray security scan of a hard-shell suitcase. Inside the metal lining of the handle mechanism, there are dark orange rectangular blocks that do not match the luggage structure. In this X-ray scan, what do the dark orange rectangular shapes inside the suitcase handle assembly suggest?",
+      "type": "multiple_choice",
       "options": [
         "A laptop battery",
         "Metal reinforcements for the frame",
@@ -7720,14 +7715,13 @@
         "Standard clothing density"
       ],
       "explanation": "The X-ray shows the distinct block-like shape of organic density hidden within the structural cavity of the suitcase frame",
-      "imageAlt": "An X-ray scan of a suitcase showing blue and orange shapes",
       "correctAnswer": 2,
-      "id": "bf-im-0005"
+      "id": "bf-im-0005",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A luggage trolley in a customs hall carrying a bag containing six identical 1-litre bottles of Scotch whiskey and two suitcases",
-      "type": "image_question",
-      "question": "A single passenger arrives from outside the UK with these six 1-litre bottles of whiskey. Why is this a customs issue?",
+      "type": "multiple_choice",
+      "question": "A luggage trolley in a customs hall carrying a bag containing six identical 1-litre bottles of Scotch whiskey and two suitcases. A single passenger arrives from outside the UK with these six 1-litre bottles of whiskey. Why is this a customs issue?",
       "options": [
         "The spirits exceed the 4-litre personal allowance",
         "The passenger has exceeded the tobacco allowance",
@@ -7735,58 +7729,54 @@
         "No rules have been broken for a single passenger"
       ],
       "correctAnswer": 0,
-      "imageAlt": "A passenger's trolley with six 1-litre bottles of whiskey",
       "explanation": "The UK Duty Free allowance for spirits is 4 litres, which this passenger has significantly exceeded with six 1-litre bottles",
-      "id": "bf-im-0006"
+      "id": "bf-im-0006",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 1,
-      "imageAlt": "A blue sign with a large white letter C and the words 'Nothing to Declare'",
       "explanation": "The blue 'C' (Channel) sign indicates the route for passengers arriving from outside the UK with no goods to declare",
-      "imageDescription": "A standard UK airport customs sign. It is a blue square with a large white letter 'C' in the centre, often placed above the Green Channel",
-      "type": "image_question",
-      "question": "Which customs area does this blue 'C' symbol typically represent in a UK port or airport?",
+      "type": "multiple_choice",
+      "question": "A standard UK airport customs sign. It is a blue square with a large white letter 'C' in the centre, often placed above the Green Channel. Which customs area does this blue 'C' symbol typically represent in a UK port or airport?",
       "options": [
         "Red Channel (Goods to Declare)",
         "Green Channel (Nothing to Declare)",
         "EU arrivals only",
         "Passport Control (EU/EEA)"
       ],
-      "id": "bf-im-0007"
+      "id": "bf-im-0007",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "The density and shape of the orange mass at the bottom of the aerosol can are inconsistent with a liquid spray and suggest a hidden compartment",
       "correctAnswer": 3,
-      "imageAlt": "An X-ray of a hairspray can with a mass at the bottom",
-      "imageDescription": "An X-ray image of a standard aerosol can. The top half appears empty as expected, but the bottom third contains a dense, solid organic mass that shouldn't be there",
-      "type": "image_question",
-      "question": "What anomaly should an officer notice in this X-ray of a seemingly ordinary aerosol can?",
+      "type": "multiple_choice",
+      "question": "An X-ray image of a standard aerosol can. The top half appears empty as expected, but the bottom third contains a dense, solid organic mass that shouldn't be there. What anomaly should an officer notice in this X-ray of a seemingly ordinary aerosol can?",
       "options": [
         "Remaining liquid propellant",
         "A manufacturing defect in the metal",
         "Standard internal tube assembly",
         "A false bottom used for concealment"
       ],
-      "id": "bf-im-0008"
+      "id": "bf-im-0008",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "Bulleyes or excessive glue around a photo indicate it may have been replaced or tampered with manually",
-      "imageAlt": "A close up of a passport photograph with a slight ripple at the edges",
       "correctAnswer": 2,
-      "imageDescription": "A high-resolution photo of a passport identification page. Around the edges of the portrait photo, there is a visible film of clear glue and a slight raised bump",
-      "question": "What does the visible residue around the edge of this passport photo suggest to an examining officer?",
-      "type": "image_question",
+      "question": "A high-resolution photo of a passport identification page. Around the edges of the portrait photo, there is a visible film of clear glue and a slight raised bump. What does the visible residue around the edge of this passport photo suggest to an examining officer?",
+      "type": "multiple_choice",
       "options": [
         "Normal wear and tear",
         "Digital printing error",
         "Photo substitution or tampering",
         "Official laminate cooling marks"
       ],
-      "id": "bf-im-0009"
+      "id": "bf-im-0009",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 0,
-      "imageAlt": "A gold symbol on a passport cover showing a small rectangle and a circle",
       "explanation": "The 'e-Passport' symbol (a circle inside a rectangle) indicates the document contains an electronic chip with biometric data",
       "options": [
         "The document contains a biometric chip",
@@ -7794,10 +7784,10 @@
         "The document is expired",
         "The document is a temporary travel permit"
       ],
-      "type": "image_question",
-      "question": "What does this specific gold symbol on the front of a passport signify?",
-      "imageDescription": "A close-up of a dark blue passport cover. At the bottom, there is a small gold-foil symbol consisting of a rectangle bisected by a horizontal line with a circle in the middle",
-      "id": "bf-im-0010"
+      "type": "multiple_choice",
+      "question": "A close-up of a dark blue passport cover. At the bottom, there is a small gold-foil symbol consisting of a rectangle bisected by a horizontal line with a circle in the middle. What does this specific gold symbol on the front of a passport signify?",
+      "id": "bf-im-0010",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -7806,17 +7796,15 @@
         "Weight limit violation for hand luggage",
         "Evidence of illegal entry via coastline"
       ],
-      "type": "image_question",
-      "question": "Why would these boots be flagged for closer inspection by a Border Force officer at a terminal?",
-      "imageDescription": "A pair of dirty hiking boots being held by an officer. The soles are caked in thick, wet mud and small pieces of plant matter",
+      "type": "multiple_choice",
+      "question": "A pair of dirty hiking boots being held by an officer. The soles are caked in thick, wet mud and small pieces of plant matter. Why would these boots be flagged for closer inspection by a Border Force officer at a terminal?",
       "correctAnswer": 1,
-      "imageAlt": "A pair of hiking boots with thick mud on the soles",
       "explanation": "The presence of soil on boots can carry non-native pests or diseases, which is a major biosecurity risk at the border",
-      "id": "bf-im-0011"
+      "id": "bf-im-0011",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 2,
-      "imageAlt": "The interior of a white van with a suspiciously short cargo area",
       "explanation": "A hidden compartment behind a false wall in a van is a classic method for smuggling people or illicit goods",
       "options": [
         "Standard bulkhead insulation",
@@ -7824,13 +7812,13 @@
         "Possible hidden compartment (false bulkhead)",
         "Factory-fitted shelving unit"
       ],
-      "type": "image_question",
-      "question": "When measuring the interior of this vehicle, an officer finds the cargo space is shorter than expected. What is the likely reason?",
-      "imageDescription": "The interior of a white delivery van. The metal bulkhead behind the driver's seat appears to be 50cm further back than the external measurements of the van suggest",
-      "id": "bf-im-0012"
+      "type": "multiple_choice",
+      "question": "The interior of a white delivery van. The metal bulkhead behind the driver's seat appears to be 50cm further back than the external measurements of the van suggest. When measuring the interior of this vehicle, an officer finds the cargo space is shorter than expected. What is the likely reason?",
+      "id": "bf-im-0012",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "An officer notices this symbol on a drum being unloaded from a freight ship. What specific hazard does it indicate?",
+      "question": "A standard international GHS corrosive substance warning sign, featuring a white background with a red border and black pictogram. An officer notices this symbol on a drum being unloaded from a freight ship. What specific hazard does it indicate?",
       "options": [
         "Flammable liquid",
         "Explosive material",
@@ -7838,11 +7826,10 @@
         "Biohazardous waste"
       ],
       "explanation": "The Corrosive symbol (a liquid spilling onto hands and metal) indicates substances that can cause severe chemical burns to skin and damage materials",
-      "imageAlt": "A diamond-shaped warning sign with a black symbol of liquid dripping from two test tubes onto a hand and a metal bar",
       "correctAnswer": 2,
-      "imageDescription": "A standard international GHS corrosive substance warning sign, featuring a white background with a red border and black pictogram",
-      "type": "image_question",
-      "id": "bf-im-0013"
+      "type": "multiple_choice",
+      "id": "bf-im-0013",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -7851,16 +7838,15 @@
         "It is a diplomatic passport with full immunity",
         "It has been cancelled or invalidated by the home office"
       ],
-      "question": "What does the specific gold symbol at the very bottom of this passport cover signify?",
+      "question": "Close-up of the front cover of a British passport, focusing on the gold embossed lettering and the international biometric symbol at the base. What does the specific gold symbol at the very bottom of this passport cover signify?",
       "correctAnswer": 0,
-      "imageDescription": "Close-up of the front cover of a British passport, focusing on the gold embossed lettering and the international biometric symbol at the base",
-      "type": "image_question",
-      "imageAlt": "The front cover of a dark blue British passport with a small gold rectangular symbol at the bottom",
+      "type": "multiple_choice",
       "explanation": "A biometric passport (e-passport) is identified by the small rectangular camera/chip symbol at the bottom of the front cover",
-      "id": "bf-im-0014"
+      "id": "bf-im-0014",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "In this X-ray scan of a passenger's suitcase, what does the solid orange-coloured mass suggest?",
+      "question": "An airport security X-ray image of a suitcase. Metal objects like zippers are blue; a large, dense, rectangular organic mass is highlighted in orange. In this X-ray scan of a passenger's suitcase, what does the solid orange-coloured mass suggest?",
       "options": [
         "A heavy metallic weapon",
         "Organic material such as narcotics or explosives",
@@ -7868,29 +7854,27 @@
         "Empty space within the lining"
       ],
       "explanation": "Organic materials like drugs or explosives often appear orange on many X-ray systems, while denser metals appear blue or black",
-      "imageAlt": "An X-ray scan showing a suitcase with several bright blue metal objects and one large orange block hidden in the lining",
       "correctAnswer": 1,
-      "type": "image_question",
-      "imageDescription": "An airport security X-ray image of a suitcase. Metal objects like zippers are blue; a large, dense, rectangular organic mass is highlighted in orange",
-      "id": "bf-im-0015"
+      "type": "multiple_choice",
+      "id": "bf-im-0015",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "Personal allowances for spirits from outside the UK are restricted to 4 litres; 8 litres significantly exceeds the duty-free limit",
-      "imageAlt": "Eight 1-litre bottles of premium vodka sitting on a customs inspection table",
       "correctAnswer": 3,
-      "imageDescription": "A collection of eight 1-litre bottles of spirits grouped together on a stainless steel surface, as if seized at a terminal",
-      "type": "image_question",
-      "question": "A traveller arrives from a non-EU country with these eight 1-litre bottles of spirits. Why is this a customs violation?",
+      "type": "multiple_choice",
+      "question": "A collection of eight 1-litre bottles of spirits grouped together on a stainless steel surface, as if seized at a terminal. A traveller arrives from a non-EU country with these eight 1-litre bottles of spirits. Why is this a customs violation?",
       "options": [
         "Nothing, this is within the personal allowance for one person",
         "The bottles are illegal brands in the UK",
         "Spirits are completely banned from entry",
         "The quantity exceeds the 4-litre personal allowance for spirits"
       ],
-      "id": "bf-im-0016"
+      "id": "bf-im-0016",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What should an officer conclude about the misaligned characters in this travel document's Machine Readable Zone (MRZ)?",
+      "question": "Macro photograph of a passport's MRZ lines, showing uneven spacing and characters that are slightly out of vertical alignment. What should an officer conclude about the misaligned characters in this travel document's Machine Readable Zone (MRZ)?",
       "options": [
         "Standard printing variation",
         "Evidence of document tampering or forgery",
@@ -7898,32 +7882,28 @@
         "A specialized security watermarking technique"
       ],
       "explanation": "Misaligned text or 'ghosting' in the MRZ (Machine Readable Zone) is a primary indicator of a forged or tampered data page",
-      "imageAlt": "A close-up of the bottom of a passport data page where the characters in the two lines of code are not straight",
-      "type": "image_question",
-      "imageDescription": "Macro photograph of a passport's MRZ lines, showing uneven spacing and characters that are slightly out of vertical alignment",
+      "type": "multiple_choice",
       "correctAnswer": 1,
-      "id": "bf-im-0017"
+      "id": "bf-im-0017",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 0,
-      "imageDescription": "A wooden crate filled with carved ivory tusks, with a CITES (Convention on International Trade in Endangered Species) permit placed on top",
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "The CITES logo or specific species markings are used to control the trade of endangered plants and animals",
-      "imageAlt": "A wooden crate containing several pieces of ivory and a document with a green 'CITES' logo on it",
       "options": [
         "Convention on International Trade in Endangered Species (CITES)",
         "UK General Data Protection Regulation (GDPR) aviation code",
         "HM Revenue and Customs VAT exemption status",
         "International Maritime Organisation safety certificate"
       ],
-      "question": "These items have been seized in a commercial shipment. Under which international convention are they restricted?",
-      "id": "bf-im-0018"
+      "question": "A wooden crate filled with carved ivory tusks, with a CITES (Convention on International Trade in Endangered Species) permit placed on top. These items have been seized in a commercial shipment. Under which international convention are they restricted?",
+      "id": "bf-im-0018",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A high-contrast X-ray image of a laptop computer. Inside the battery area is a thick, solid red rectangular shape that the X-rays cannot see through",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 2,
-      "imageAlt": "An X-ray view of a laptop where a solid red rectangle is visible inside the battery compartment",
       "explanation": "Red areas in X-rays usually indicate dense materials that are 'impenetrable,' requiring manual inspection to ensure they aren't hiding further items",
       "options": [
         "Normal lithium-ion battery cells",
@@ -7931,29 +7911,27 @@
         "A dense object that the X-ray could not penetrate",
         "Standard copper wiring clusters"
       ],
-      "question": "This X-ray of an electronic device shows a solid red 'impenetrable' zone. What action must the officer take?",
-      "id": "bf-im-0019"
+      "question": "A high-contrast X-ray image of a laptop computer. Inside the battery area is a thick, solid red rectangular shape that the X-rays cannot see through. This X-ray of an electronic device shows a solid red 'impenetrable' zone. What action must the officer take?",
+      "id": "bf-im-0019",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "Why would a Border Force officer find the specific area shown in this vehicle inspection suspicious?",
+      "question": "Detailed shot of a vehicle's chassis underbody. Most of the metal is weathered and rusty, but one rectangular section has fresh black sealant and silver paint. Why would a Border Force officer find the specific area shown in this vehicle inspection suspicious?",
       "options": [
         "Recent routine maintenance for rust prevention",
         "Potential creation of a concealed 'trap' or compartment",
         "Standard factory-issued reinforcement plates",
         "Damage from a recent road traffic accident"
       ],
-      "imageAlt": "A close-up of the underside of a van showing a patch of bright, clean silver paint and new bolts amidst older, rusted metal",
       "explanation": "Fresh paint, new welds, or smelling of glue on an older vehicle often indicates the recent construction of a hidden 'trap' or false compartment",
       "correctAnswer": 1,
-      "imageDescription": "Detailed shot of a vehicle's chassis underbody. Most of the metal is weathered and rusty, but one rectangular section has fresh black sealant and silver paint",
-      "type": "image_question",
-      "id": "bf-im-0020"
+      "type": "multiple_choice",
+      "id": "bf-im-0020",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 3,
-      "type": "image_question",
-      "imageDescription": "Side-by-side comparison of a genuine and a fake UK £20 note under a magnifying glass, showing the difference in print quality and holographic features",
-      "imageAlt": "Two £20 notes side-by-side; one has blurry, flat lettering while the other has sharp, raised printing",
+      "type": "multiple_choice",
       "explanation": "Counterfeit banknotes often lack the fine, raised intaglio ink texture and clear 'see-through' register features found on genuine currency",
       "options": [
         "Natural wear and tear from circulation",
@@ -7961,11 +7939,12 @@
         "An error during the official minting process",
         "Poor print quality indicating a counterfeit note"
       ],
-      "question": "When inspecting this currency, what does the lack of sharp detail and raised ink suggest?",
-      "id": "bf-im-0021"
+      "question": "Side-by-side comparison of a genuine and a fake UK \u00a320 note under a magnifying glass, showing the difference in print quality and holographic features. When inspecting this currency, what does the lack of sharp detail and raised ink suggest?",
+      "id": "bf-im-0021",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "An officer finds these food items in a passenger's luggage. Why must they be seized?",
+      "question": "A suitcase filled with various unsecured food items, specifically focusing on packages of raw meat and sausages. An officer finds these food items in a passenger's luggage. Why must they be seized?",
       "options": [
         "The passenger must pay VAT on the food items",
         "The items are permitted if they are vacuum-sealed",
@@ -7973,17 +7952,14 @@
         "Only cooked meat is allowed; raw meat is banned"
       ],
       "explanation": "All meat and dairy products from outside the EU/EFTA are generally prohibited to prevent the spread of diseases like Foot and Mouth",
-      "imageAlt": "A passenger's open suitcase containing several packs of vacuum-sealed raw steaks and homemade sausages",
       "correctAnswer": 2,
-      "type": "image_question",
-      "imageDescription": "A suitcase filled with various unsecured food items, specifically focusing on packages of raw meat and sausages",
-      "id": "bf-im-0022"
+      "type": "multiple_choice",
+      "id": "bf-im-0022",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 0,
-      "type": "image_question",
-      "imageDescription": "An officer conducting a 'sniff test' at the door of a shipping container, with a caption suggesting a strong chemical odour is present",
-      "imageAlt": "An officer leaning inside a dark shipping container filled with stacked sacks of flour",
+      "type": "multiple_choice",
       "explanation": "A chemical smell, such as vinegar (acetic acid) or ammonia, is a classic 'red flag' for the chemical processing of narcotics like heroin or cocaine",
       "options": [
         "Potential presence of narcotics or chemical precursors",
@@ -7991,38 +7967,37 @@
         "Evidence of a leak in the container's hydraulic system",
         "Standard fumigation gases used for all international cargo"
       ],
-      "question": "During a 'primary' search, an officer detects a strong smell of vinegar from this container. What does this likely indicate?",
-      "id": "bf-im-0023"
+      "question": "An officer conducting a 'sniff test' at the door of a shipping container, with a caption suggesting a strong chemical odour is present. During a 'primary' search, an officer detects a strong smell of vinegar from this container. What does this likely indicate?",
+      "id": "bf-im-0023",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "The 'Red Point' or Red Channel is for passengers who have goods that exceed their duty-free allowance or are restricted/prohibited",
-      "imageAlt": "A large red illuminated sign above a walkway at an airport terminal that says 'Goods to Declare'",
-      "imageDescription": "A wide shot of an airport arrivals hall showing two exits: a green one and a red one with the sign 'Goods to Declare'",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 2,
-      "question": "Which passengers are required to use the 'Red Channel' exit shown in this image?",
+      "question": "A wide shot of an airport arrivals hall showing two exits: a green one and a red one with the sign 'Goods to Declare'. Which passengers are required to use the 'Red Channel' exit shown ?",
       "options": [
         "They are a citizen of a non-visa country",
         "They have no goods to declare to customs",
         "They have goods that exceed their duty-free allowance",
         "They are travelling on a diplomatic or official passport"
       ],
-      "id": "bf-im-0024"
+      "id": "bf-im-0024",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "In this X-ray scan of a suitcase, what is the most likely composition of the dense orange-coloured rectangular blocks?",
-      "type": "image_question",
+      "question": "An X-ray image of a suitcase containing clothing (green/blue) and three distinct, dense orange rectangular blocks packed tightly in the centre. In this X-ray scan of a suitcase, what is the most likely composition of the dense orange-coloured rectangular blocks?",
+      "type": "multiple_choice",
       "explanation": "Organic materials like drugs or food appear orange in X-ray scans; dense blocks like this suggest a large quantity of a controlled substance",
-      "imageAlt": "An X-ray scan of a checked-in suitcase showing several dense orange rectangular blocks",
       "options": [
         "Metallic electronics",
         "Lead-lined shielding",
         "Organic material or narcotics",
         "Empty space or air gaps"
       ],
-      "imageDescription": "An X-ray image of a suitcase containing clothing (green/blue) and three distinct, dense orange rectangular blocks packed tightly in the centre",
       "correctAnswer": 2,
-      "id": "bf-im-0025"
+      "id": "bf-im-0025",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -8031,18 +8006,16 @@
         "It shows the document is water damaged",
         "It is a standard check for visa stamps"
       ],
-      "imageDescription": "A close-up of a passport's biodata page under an infrared light source, showing some text disappearing and a lack of expected reactive security patterns",
       "correctAnswer": 0,
-      "question": "What should an officer conclude if a passport biodata page fails to show fluorescent features under this infrared (IR) light test?",
-      "type": "image_question",
+      "question": "A close-up of a passport's biodata page under an infrared light source, showing some text disappearing and a lack of expected reactive security patterns. What should an officer conclude if a passport biodata page fails to show fluorescent features under this infrared (IR) light test?",
+      "type": "multiple_choice",
       "explanation": "The light from the IR lamp should reveal specific security features; a lack of a glowing crest or reactive ink usually indicates a fake",
-      "imageAlt": "An officer holding a passport page under a specialised infrared (IR) light source",
-      "id": "bf-im-0026"
+      "id": "bf-im-0026",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What is the most likely reason for the difference in measurements shown between the interior and exterior of this freight trailer?",
-      "type": "image_question",
-      "imageAlt": "A tape measure being used inside an empty freight trailer, showing a measurement significantly shorter than the trailer's exterior",
+      "question": "A side-by-side comparison image: the exterior of a 13.6m trailer and an interior shot where a tape measure shows the internal wall is at 12.5m. What is the most likely reason for the difference in measurements shown between the interior and exterior of this freight trailer?",
+      "type": "multiple_choice",
       "explanation": "A discrepancy between the internal and external length of a trailer often indicates a false bulkhead used for concealment",
       "correctAnswer": 1,
       "options": [
@@ -8051,23 +8024,22 @@
         "The trailer has extra thick insulation",
         "The floor is unevenly weighted"
       ],
-      "imageDescription": "A side-by-side comparison image: the exterior of a 13.6m trailer and an interior shot where a tape measure shows the internal wall is at 12.5m",
-      "id": "bf-im-0027"
+      "id": "bf-im-0027",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "This international symbol indicates 'Dangerous for the Environment,' specifically meaning the substance is toxic to aquatic life",
-      "imageAlt": "A white diamond labels on a shipping container showing a dead fish and a leafless tree",
-      "question": "What hazard does this specific international symbol on a commercial chemical drum indicate?",
-      "type": "image_question",
+      "question": "A close-up of a GHS (Globally Harmonized System) hazard pictogram showing a dead fish and a black, leafless tree inside a red-bordered diamond. What hazard does this specific international symbol on a commercial chemical drum indicate?",
+      "type": "multiple_choice",
       "options": [
         "Flammable liquid",
         "Oxidizing agent",
         "Infectious substance",
         "Environmentally hazardous substance"
       ],
-      "imageDescription": "A close-up of a GHS (Globally Harmonized System) hazard pictogram showing a dead fish and a black, leafless tree inside a red-bordered diamond",
       "correctAnswer": 3,
-      "id": "bf-im-0028"
+      "id": "bf-im-0028",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 2,
@@ -8077,15 +8049,13 @@
         "The entire amount is over the duty-free limit",
         "Cigarettes cannot be imported by air"
       ],
-      "imageDescription": "An open piece of hand luggage containing five standard-sized cartons of 200 cigarettes each, totaling 1,000 cigarettes",
-      "imageAlt": "A passenger's open carry-on bag containing five cartons of cigarettes",
       "explanation": "UK customs regulations allow a maximum of 200 cigarettes (one carton) for personal use from non-EU countries before duty is owed",
-      "question": "A passenger is entering the UK from outside the EU with these five cartons of cigarettes. Why is this a customs issue?",
-      "type": "image_question",
-      "id": "bf-im-0029"
+      "question": "An open piece of hand luggage containing five standard-sized cartons of 200 cigarettes each, totaling 1,000 cigarettes. A passenger is entering the UK from outside the EU with these five cartons of cigarettes. Why is this a customs issue?",
+      "type": "multiple_choice",
+      "id": "bf-im-0029",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A close-up of a designer handbag made from crocodile skin, with a specific CITES-style identification tag or a label indicating a protected species",
       "options": [
         "Counterfeit brand logo",
         "Hazardous chemicals in the dye",
@@ -8094,13 +8064,12 @@
       ],
       "correctAnswer": 2,
       "explanation": "The symbol of a fish with a horizontal line through it indicates the product is a protected CITES species and is restricted/prohibited",
-      "imageAlt": "A luxury handbag made of exotic skin with a small 'CITES' restriction tag visible",
-      "question": "Why would this luxury item require a CITES permit for legal importation into the UK?",
-      "type": "image_question",
-      "id": "bf-im-0030"
+      "question": "A close-up of a designer handbag made from crocodile skin, with a specific CITES-style identification tag or a label indicating a protected species. Why would this luxury item require a CITES permit for legal importation into the UK?",
+      "type": "multiple_choice",
+      "id": "bf-im-0030",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A macro photograph of a UK entry clearance visa. The name field uses a slightly thinner, lighter font than the surrounding printed data",
       "options": [
         "Printer error at the embassy",
         "The document has been altered or forged",
@@ -8109,40 +8078,38 @@
       ],
       "correctAnswer": 1,
       "explanation": "Different fonts and ink weights within the same document typically indicate that data has been scraped and rewritten (forgery)",
-      "imageAlt": "A close-up of a visa sticker where the name and date have slightly different fonts",
-      "question": "What does the variation in font and ink density in the printed fields of this visa sticker suggest to an officer?",
-      "type": "image_question",
-      "id": "bf-im-0031"
+      "question": "A macro photograph of a UK entry clearance visa. The name field uses a slightly thinner, lighter font than the surrounding printed data. What does the variation in font and ink density in the printed fields of this visa sticker suggest to an officer?",
+      "type": "multiple_choice",
+      "id": "bf-im-0031",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 0,
-      "imageDescription": "An X-ray scan of a commercial crate of fruit. Most oranges appear as light orange circles, but one is a solid, dark, dense mass with no internal pulp structure",
       "options": [
         "The fruit contains a foreign object or narcotic concealment",
         "The fruit is overripe or rotten",
         "The fruit is cold-stored (refrigerated)",
         "The crate has a metallic lining"
       ],
-      "question": "Why should an officer flag the specific piece of fruit highlighted in this X-ray scan?",
-      "type": "image_question",
-      "imageAlt": "A box of oranges on an X-ray machine, but one orange appears as a much darker, solid mass",
+      "question": "An X-ray scan of a commercial crate of fruit. Most oranges appear as light orange circles, but one is a solid, dark, dense mass with no internal pulp structure. Why should an officer flag the specific piece of fruit highlighted in this X-ray scan?",
+      "type": "multiple_choice",
       "explanation": "In an X-ray, organic substances like narcotics or explosives often appear as dense orange shapes that stand out from the surrounding blue/green metal",
-      "id": "bf-im-0032"
+      "id": "bf-im-0032",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "A thick stack of £50 notes inside a clear plastic evidence bag",
-      "explanation": "Under UK law, any amount of cash (including cheques and traveller's cheques) over £10,000 must be declared when entering or leaving the UK",
-      "question": "If this stack of cash totals £15,000 and the passenger hasn't declared it, what is the primary legal concern?",
-      "type": "image_question",
+      "explanation": "Under UK law, any amount of cash (including cheques and traveller's cheques) over \u00a310,000 must be declared when entering or leaving the UK",
+      "question": "A photo of four stacks of \u00a350 notes, each bundle approximately 2cm thick, found in a passenger's jacket pocket. If this stack of cash totals \u00a315,000 and the passenger hasn't declared it, what is the primary legal concern?",
+      "type": "multiple_choice",
       "correctAnswer": 3,
-      "imageDescription": "A photo of four stacks of £50 notes, each bundle approximately 2cm thick, found in a passenger's jacket pocket",
       "options": [
         "The notes are out of circulation",
         "It is illegal to carry cash on a plane",
         "The notes appear to be counterfeit",
-        "It exceeds the £10,000 declaration threshold"
+        "It exceeds the \u00a310,000 declaration threshold"
       ],
-      "id": "bf-im-0033"
+      "id": "bf-im-0033",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 0,
@@ -8152,12 +8119,11 @@
         "A repair made by the owner for wear and tear",
         "Standard reinforced stitching for heavy items"
       ],
-      "imageDescription": "A close-up of the inner seam of a suitcase. The original factory stitching is straight and white, but a secondary layer of messy, thick black thread has been added over it",
-      "imageAlt": "A close-up of the internal lining of a suitcase showing messy, thick black thread over existing factory stitching",
       "explanation": "Thick, mismatched, or uneven stitching on the seams of a suitcase can indicate that the lining has been removed and resewn to hide contraband",
-      "question": "What anomaly should an officer notice about the stitching in the lining of this suitcase?",
-      "type": "image_question",
-      "id": "bf-im-0034"
+      "question": "A close-up of the inner seam of a suitcase. The original factory stitching is straight and white, but a secondary layer of messy, thick black thread has been added over it. What anomaly should an officer notice about the stitching in the lining of this suitcase?",
+      "type": "multiple_choice",
+      "id": "bf-im-0034",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 1,
@@ -8167,19 +8133,16 @@
         "Corrosive acids",
         "Explosive blasting caps"
       ],
-      "imageDescription": "A yellow diamond-shaped label on a shipping crate. The top half is yellow with a black 'trefoil' (three-leaf) symbol, and the bottom half says 'RADIOACTIVE'",
-      "question": "What specific danger does this yellow and white symbol indicate on a piece of freight?",
-      "type": "image_question",
-      "imageAlt": "A yellow and white trefoil symbol on a small wooden crate",
+      "question": "A yellow diamond-shaped label on a shipping crate. The top half is yellow with a black 'trefoil' (three-leaf) symbol, and the bottom half says 'RADIOACTIVE'. What specific danger does this yellow and white symbol indicate on a piece of freight?",
+      "type": "multiple_choice",
       "explanation": "This symbol indicates a 'Class 7' hazard, which is radioactive material, requiring specific handling and documentation",
-      "id": "bf-im-0035"
+      "id": "bf-im-0035",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What does the raised ridge and white border around this passport photograph suggest?",
-      "type": "image_question",
+      "question": "A macro photo of a passport's identification page. A faint, raised ridge and a thin white border are visible around the edge of the photograph. What does the raised ridge and white border around this passport photograph suggest?",
+      "type": "multiple_choice",
       "explanation": "A visible line or 'halo' around a portrait is a classic sign of a 'photo substitution,' where a new photo has been glued over the original",
-      "imageAlt": "A passport photo page where a thin white line is visible around the edge of the person's photograph",
-      "imageDescription": "A macro photo of a passport's identification page. A faint, raised ridge and a thin white border are visible around the edge of the photograph",
       "options": [
         "Normal wear from the passport sleeve",
         "A decorative border used by some countries seals",
@@ -8187,29 +8150,27 @@
         "The passport has been exposed to moisture"
       ],
       "correctAnswer": 2,
-      "id": "bf-im-0036"
+      "id": "bf-im-0036",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 2,
-      "question": "When examining the Machine Readable Zone (MRZ) on this passport, what does the use of the letter 'O' instead of the number '0' suggest?",
-      "type": "image_question",
+      "question": "A high-resolution close-up of the bottom two lines of a passport (Machine Readable Zone). One line contains the character 'O' where a numeric '0' should be based on the date of birth. When examining the Machine Readable Zone (MRZ) on this passport, what does the use of the letter 'O' instead of the number '0' suggest?",
+      "type": "multiple_choice",
       "options": [
         "The document was printed on an older machine",
         "This is a standard variation for this nationality",
         "It indicates a high probability of a forged or altered document",
         "The font size is slightly too large for the field"
       ],
-      "imageAlt": "Close-up of a passport MRZ line with letters and numbers",
-      "imageDescription": "A high-resolution close-up of the bottom two lines of a passport (Machine Readable Zone). One line contains the character 'O' where a numeric '0' should be based on the date of birth",
       "explanation": "An 'O' instead of a '0' in the MRZ is a common error in forged documents, as official systems use standardized OCR-B fonts",
-      "id": "bf-im-0037"
+      "id": "bf-im-0037",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "question": "This item made from exotic skin has been intercepted. Which international convention governs the legal movement of such items?",
+      "type": "multiple_choice",
+      "question": "A luxury handbag made from genuine crocodile or alligator skin, displayed on an inspection table with a Border Force evidence marker. This item made from exotic skin has been intercepted. Which international convention governs the legal movement of such items?",
       "correctAnswer": 0,
-      "imageAlt": "Luxury handbag made from dark reptilian skin",
-      "imageDescription": "A luxury handbag made from genuine crocodile or alligator skin, displayed on an inspection table with a Border Force evidence marker",
       "options": [
         "The Convention on International Trade in Endangered Species (CITES)",
         "The Geneva Convention on Customs Clearances",
@@ -8217,14 +8178,13 @@
         "The UK Biosecurity and Alien Species Act 2015"
       ],
       "explanation": "The CITES 'Appendices' regulate the international trade of endangered species, including certain exotic skins used in fashion",
-      "id": "bf-im-0038"
+      "id": "bf-im-0038",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "question": "In this X-ray scan of an electronic device, what do the bright orange rectangular masses inside the battery compartment likely represent?",
+      "type": "multiple_choice",
+      "question": "An X-ray security scan of a laptop computer. Inside the battery compartment area, there are two distinct, dense rectangular blocks colored bright orange. In this X-ray scan of an electronic device, what do the bright orange rectangular masses inside the battery compartment likely represent?",
       "correctAnswer": 3,
-      "imageDescription": "An X-ray security scan of a laptop computer. Inside the battery compartment area, there are two distinct, dense rectangular blocks colored bright orange",
-      "imageAlt": "X-ray scan of a laptop showing orange organic shapes",
       "options": [
         "Dense metallic wiring",
         "Glass or ceramic components",
@@ -8232,27 +8192,27 @@
         "Organic material such as narcotics or explosives"
       ],
       "explanation": "Organic materials, including explosives, narcotics, and food, typically appear orange or brown on most airport X-ray security systems",
-      "id": "bf-im-0039"
+      "id": "bf-im-0039",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "Passport page illuminated by a purple UV lamp",
-      "imageDescription": "A passport page being held under a handheld UV (ultraviolet) light. The page appears dull purple with no glowing patterns or security threads visible",
       "options": [
         "The light is not strong enough to react with the paper",
         "The document lacks standard security features and is likely counterfeit",
         "This is normal for passports issued before 2020",
         "The passenger has likely spilled a chemical on the page"
       ],
-      "type": "image_question",
-      "question": "The passport page in the image is being viewed under Ultraviolet (UV) light. What is the significance of the lack of glowing security features?",
+      "type": "multiple_choice",
+      "question": "A passport page being held under a handheld UV (ultraviolet) light. The page appears dull purple with no glowing patterns or security threads visible. The passport page is being viewed under Ultraviolet (UV) light. What is the significance of the lack of glowing security features?",
       "correctAnswer": 1,
       "explanation": "Under UV light, genuine UK and international passports contain complex fluorescent patterns and fibres that are difficult to replicate",
-      "id": "bf-im-0040"
+      "id": "bf-im-0040",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "Importing meat products from many non-EU countries is restricted to prevent the spread of diseases like Foot and Mouth or African Swine Fever",
-      "question": "Why would these processed meat products likely be seized by an officer at the UK border?",
-      "type": "image_question",
+      "question": "A selection of vacuum-sealed packages containing dried meat 'biltong' or jerky found in a passenger's suitcase arriving from outside the UK. Why would these processed meat products likely be seized by an officer at the UK border?",
+      "type": "multiple_choice",
       "correctAnswer": 2,
       "options": [
         "The items exceed the weight limit for personal snacks",
@@ -8260,24 +8220,22 @@
         "There are strict biosecurity bans on importing meat products from certain regions",
         "The goods are commercial in nature and require a VAT invoice"
       ],
-      "imageDescription": "A selection of vacuum-sealed packages containing dried meat 'biltong' or jerky found in a passenger's suitcase arriving from outside the UK",
-      "imageAlt": "Wrapped dried meat sticks found in a suitcase",
-      "id": "bf-im-0041"
+      "id": "bf-im-0041",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "Secondary 'aftermarket' welding or fresh paint in hidden areas often indicates the creation of a 'natural' or 'false' concealment compartment",
       "correctAnswer": 1,
-      "type": "image_question",
-      "question": "During a vehicle search, an officer notices this area of 'fresh' welding and paint. Why is this a major red flag?",
-      "imageDescription": "A view of the underside of a vehicle on a lift. There is a section of the chassis where the metal looks recently welded and painted black, contrasting with the aged, dusty surrounding metal.",
-      "imageAlt": "Underside of a car showing a patch of fresh metal welding.",
+      "type": "multiple_choice",
+      "question": "A view of the underside of a vehicle on a lift. There is a section of the chassis where the metal looks recently welded and painted black, contrasting with the aged, dusty surrounding metal. During a vehicle search, an officer notices this area of 'fresh' welding and paint. Why is this a major red flag?",
       "options": [
         "Routine maintenance to repair rust damage",
         "Evidence of a hidden compartment designed for smuggling",
         "A standard manufacturer modification for that vehicle model",
         "A repair made following a minor road traffic accident"
       ],
-      "id": "bf-im-0042"
+      "id": "bf-im-0042",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "Intaglios or 'raised ink' is a primary security feature on UK banknotes that gives them a distinct tactile feel.",
@@ -8287,62 +8245,58 @@
         "To detect if the note is made of paper rather than polymer",
         "To feel for hidden tracking chips embedded in high-value notes"
       ],
-      "imageDescription": "A close-up shot of a Border Force officer's hand performing a tactile check on a £20 note, specifically feeling the 'Bank of England' text.",
-      "imageAlt": "Officer's thumb rubbing the 'Bank of England' text on a £20 note.",
-      "question": "What specific feature is the officer testing by running their thumb over the text on this banknote?",
-      "type": "image_question",
+      "question": "A close-up shot of a Border Force officer's hand performing a tactile check on a \u00a320 note, specifically feeling the 'Bank of England' text. What specific feature is the officer testing by running their thumb over the text on this banknote?",
+      "type": "multiple_choice",
       "correctAnswer": 0,
-      "id": "bf-im-0043"
+      "id": "bf-im-0043",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "Small holes or 'probes' in bulk sacks often indicate that long-reach sampling tools have been used to extract or hide contraband.",
       "correctAnswer": 3,
-      "question": "Why should an officer be suspicious of the small taped hole in this bulk cargo sack?",
-      "type": "image_question",
+      "question": "A large industrial 'Big Bag' or bulk sack containing white crystalline grain. There is a small, neat circular hole in the side of the fabric that has been taped over. Why should an officer be suspicious of the small taped hole in this bulk cargo sack?",
+      "type": "multiple_choice",
       "options": [
         "The bag was damaged by warehouse machinery during transit",
         "The bag has been affected by a pest infestation",
         "The hole was caused by air pressure changes in the shipping container",
         "The sack may have been 'probed' to insert or extract illicit goods"
       ],
-      "imageDescription": "A large industrial 'Big Bag' or bulk sack containing white crystalline grain. There is a small, neat circular hole in the side of the fabric that has been taped over.",
-      "imageAlt": "Large white sack of grain with a small circular puncture.",
-      "id": "bf-im-0044"
+      "id": "bf-im-0044",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "The 'I' symbol indicates ionizing radiation, which is a significant health and safety hazard for officers inspecting cargo.",
       "correctAnswer": 1,
-      "question": "What hazard does this specific international warning symbol indicate to an officer inspecting a cargo manifest?",
-      "type": "image_question",
+      "question": "A yellow triangular warning label on a wooden shipping crate showing the black 'trefoil' symbol representing ionizing radiation. What hazard does this specific international warning symbol indicate to an officer inspecting a cargo manifest?",
+      "type": "multiple_choice",
       "options": [
         "The contents are highly flammable liquids",
         "The package contains radioactive material and requires specialized handling",
         "The contents are toxic if inhaled or swallowed",
         "The crate contains biological hazards or medical waste"
       ],
-      "imageAlt": "Yellow trefoil radioactivity symbol on a shipping crate.",
-      "imageDescription": "A yellow triangular warning label on a wooden shipping crate showing the black 'trefoil' symbol representing ionizing radiation.",
-      "id": "bf-im-0045"
+      "id": "bf-im-0045",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "Under what circumstances is a passenger permitted to use the exit lane shown in this image?",
-      "type": "image_question",
+      "question": "A wide-angle shot of the customs arrivals area at a UK airport. A passenger is walking through the green archway labelled 'Nothing to Declare'. Under what circumstances is a passenger permitted to use the exit lane shown ?",
+      "type": "multiple_choice",
       "correctAnswer": 2,
       "options": [
         "They are carrying commercial goods for sale in the UK",
-        "They have more than £10,000 in cash to report",
+        "They have more than \u00a310,000 in cash to report",
         "They are within their personal duty-free allowance and have no prohibited items",
         "They are returning from a business trip with corporate samples"
       ],
-      "imageAlt": "Passenger walking through a green 'Nothing to Declare' portal.",
-      "imageDescription": "A wide-angle shot of the customs arrivals area at a UK airport. A passenger is walking through the green archway labelled 'Nothing to Declare'",
       "explanation": "The green channel is for passengers who have nothing to declare and are within their personal duty-free allowances.",
-      "id": "bf-im-0046"
+      "id": "bf-im-0046",
+      "__rewritten_from_image__": true
     },
     {
       "explanation": "In a 'substitute' or 'photo-substitution' forgery, the edge of the new photo often creates a visible ridge or lack of integration with the page's background pattern.",
-      "question": "Looking at this magnified image of a passport's biodata page, what does the distinct edge around the photograph indicate?",
-      "type": "image_question",
+      "question": "A digital microscope view of the edge of a passport photograph. There is a visible physical gap between the photo edge and the background printing of the page. Looking at this magnified image of a passport's biodata page, what does the distinct edge around the photograph indicate?",
+      "type": "multiple_choice",
       "correctAnswer": 0,
       "options": [
         "The photograph has been replaced or overlaid (photo-substitution)",
@@ -8350,13 +8304,10 @@
         "This is a standard manufacturing feature of digital passports",
         "The passenger has used an incorrect glue to re-attach their own photo"
       ],
-      "imageAlt": "Extreme close-up of a passport photo edge under magnification.",
-      "imageDescription": "A digital microscope view of the edge of a passport photograph. There is a visible physical gap between the photo edge and the background printing of the page",
-      "id": "bf-im-0047"
+      "id": "bf-im-0047",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "Large 500ml bottle of shampoo in a security tray.",
-      "imageDescription": "A plastic security tray containing a 500ml bottle of liquid shampoo and a regular-sized toothpaste tube",
       "options": [
         "The item must be declared for VAT payment",
         "The liquid container exceeds the 100ml limit for cabin baggage",
@@ -8364,17 +8315,16 @@
         "The item is considered a dangerous chemical under COSHH regulations"
       ],
       "correctAnswer": 1,
-      "type": "image_question",
-      "question": "Why would the large bottle in this security tray be rejected at the passenger screening point?",
+      "type": "multiple_choice",
+      "question": "A plastic security tray containing a 500ml bottle of liquid shampoo and a regular-sized toothpaste tube. Why would the large bottle in this security tray be rejected at the passenger screening point?",
       "explanation": "The 100ml rule for liquids, aerosols, and gels (LAGs) is a standard security measure for carry-on luggage at UK airports.",
-      "id": "bf-im-0048"
+      "id": "bf-im-0048",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "An open suitcase packed with professional clothing and six identical, brand-new boxed mobile phones tucked into the sides",
-      "type": "image_question",
-      "imageAlt": "A suitcase containing various clothes and six identical, boxed smartphones",
+      "type": "multiple_choice",
       "correctAnswer": 2,
-      "question": "A passenger claims these items are for personal use during a three-day trip. Why should an officer be skeptical?",
+      "question": "An open suitcase packed with professional clothing and six identical, brand-new boxed mobile phones tucked into the sides. A passenger claims these items are for personal use during a three-day trip. Why should an officer be skeptical?",
       "explanation": "The presence of multiple mobile phones of the same model can be an indicator of intended commercial resale or 'smurfing' activities",
       "options": [
         "The electronics exceed the 100ml liquid limit",
@@ -8382,12 +8332,12 @@
         "The volume of identical items suggests commercial intent rather than personal use",
         "Mobile phones are prohibited items in hand luggage"
       ],
-      "id": "bf-im-0049"
+      "id": "bf-im-0049",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "The Machine Readable Zone (MRZ) at the bottom of a passport page",
       "correctAnswer": 0,
-      "question": "What is the primary purpose of an officer checking the Machine Readable Zone (MRZ) shown in this image?",
+      "question": "A close-up of the bottom two lines of a passport biodata page, showing the alphanumeric characters and chevron symbols. What is the primary purpose of an officer checking the Machine Readable Zone (MRZ) shown ?",
       "explanation": "The MRZ must follow strict formatting; the character '<' is used as a filler, and specific positions must contain checksums or dates",
       "options": [
         "To verify the data matches the visual information above it",
@@ -8395,43 +8345,40 @@
         "To confirm the passenger's height and weight",
         "To see if the ink reacts to heat"
       ],
-      "imageDescription": "A close-up of the bottom two lines of a passport biodata page, showing the alphanumeric characters and chevron symbols",
-      "type": "image_question",
-      "id": "bf-im-0050"
+      "type": "multiple_choice",
+      "id": "bf-im-0050",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
-        "£1,000 or more",
-        "£5,000 or more",
-        "£8,500 or more",
-        "£10,000 or more"
+        "\u00a31,000 or more",
+        "\u00a35,000 or more",
+        "\u00a38,500 or more",
+        "\u00a310,000 or more"
       ],
-      "question": "What is the minimum threshold of cash that must be declared to Border Force when entering or leaving the UK?",
-      "explanation": "Under UK law, any amount of cash (including banknotes, coins, and cheques) equal to or exceeding £10,000 must be declared when entering from outside the UK",
+      "question": "A thick stack of \u00a350 banknotes tied with a rubber band, totalling approximately \u00a312,000, sitting on a customs inspection table. What is the minimum threshold of cash that must be declared to Border Force when entering or leaving the UK?",
+      "explanation": "Under UK law, any amount of cash (including banknotes, coins, and cheques) equal to or exceeding \u00a310,000 must be declared when entering from outside the UK",
       "correctAnswer": 3,
-      "imageAlt": "A stack of British Fifty Pound notes next to a declaration form",
-      "type": "image_question",
-      "imageDescription": "A thick stack of £50 banknotes tied with a rubber band, totalling approximately £12,000, sitting on a customs inspection table",
-      "id": "bf-im-0051"
+      "type": "multiple_choice",
+      "id": "bf-im-0051",
+      "__rewritten_from_image__": true
     },
     {
-      "imageAlt": "X-ray scan of a laptop showing organic material in the drive bay",
       "correctAnswer": 1,
       "explanation": "The presence of organic material (orange/green) inside a metal frame (blue/black) where it doesn't belong indicates a potential concealment",
-      "question": "In this X-ray scan of a laptop, why should the orange mass in the center be investigated?",
+      "question": "A colour-coded X-ray scan of a laptop where a dense orange mass is visible inside the compartment usually reserved for the hard drive. In this X-ray scan of a laptop, why should the orange mass in the center be investigated?",
       "options": [
         "The laptop battery is depleted",
         "The organic mass inside the compartment suggests hidden contraband",
         "The laptop screen is cracked internally",
         "The metal casing is too thin to be genuine"
       ],
-      "imageDescription": "A colour-coded X-ray scan of a laptop where a dense orange mass is visible inside the compartment usually reserved for the hard drive",
-      "type": "image_question",
-      "id": "bf-im-0052"
+      "type": "multiple_choice",
+      "id": "bf-im-0052",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageDescription": "A close-up of the front cover of a blue UK passport, specifically focusing on the gold rectangular 'E' symbol at the bottom",
+      "type": "multiple_choice",
       "options": [
         "The passport is for emergency use only",
         "The document is only valid for travel within Europe",
@@ -8439,43 +8386,41 @@
         "The document was issued by an embassy abroad"
       ],
       "explanation": "The 'E' mark on a passport or ID indicates it contains an electronic chip which can be read at eGates by eligible travellers",
-      "question": "What does the symbol highlighted at the bottom of this passport cover represent?",
+      "question": "A close-up of the front cover of a blue UK passport, specifically focusing on the gold rectangular 'E' symbol at the bottom. What does the symbol highlighted at the bottom of this passport cover represent?",
       "correctAnswer": 2,
-      "imageAlt": "A passport cover showing the biometric chip symbol",
-      "id": "bf-im-0053"
+      "id": "bf-im-0053",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A close-up of a UK entry visa sticker where the expiry date appears to have been handwritten in black ink over another printed date",
-      "type": "image_question",
-      "imageAlt": "A visa sticker with some handwritten dates",
+      "type": "multiple_choice",
       "correctAnswer": 0,
       "explanation": "Handwritten entries on modern visa stickers are highly unusual and often indicate a forged or altered document",
-      "question": "Why is the handwriting on this visa sticker a cause for concern for a Border Force officer?",
+      "question": "A close-up of a UK entry visa sticker where the expiry date appears to have been handwritten in black ink over another printed date. Why is the handwriting on this visa sticker a cause for concern for a Border Force officer?",
       "options": [
         "Visa stickers are usually entirely printed; handwriting suggests alteration",
         "The ink colour must always be red for validity",
         "Handwriting is only allowed for diplomatic staff",
         "The sticker is the wrong size for the page"
       ],
-      "id": "bf-im-0054"
+      "id": "bf-im-0054",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
-      "imageDescription": "A large industrial gas cylinder in a shipping container, featuring a green diamond hazard label with a white gas bottle",
+      "type": "multiple_choice",
       "explanation": "Vessels or containers with high-pressure warnings require specialist handling and must be cross-referenced with the cargo manifest for safety",
-      "question": "What type of hazardous material does the green diamond label on this cargo indicate?",
+      "question": "A large industrial gas cylinder in a shipping container, featuring a green diamond hazard label with a white gas bottle. What type of hazardous material does the green diamond label on this cargo indicate?",
       "options": [
         "Flammable solids Hazard Class 4",
         "Non-flammable, non-toxic compressed gas Hazard Class 2",
         "Oxidising substances Hazard Class 5",
         "Radioactive material Hazard Class 7"
       ],
-      "imageAlt": "A gas cylinder with a green diamond symbol",
       "correctAnswer": 2,
-      "id": "bf-im-0055"
+      "id": "bf-im-0055",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "What security feature is the officer checking by using their sense of touch in this image?",
+      "question": "Macro shot of an officer's thumb feeling the 'United Kingdom of Great Britain' text on the biodata page of a passport. What security feature is the officer checking by using their sense of touch ?",
       "explanation": "Intaglio printing creates a raised feel on genuine banknotes and passports; a flat surface often indicates a high-quality photocopy",
       "options": [
         "To check for adhesive residue from a photo swap",
@@ -8483,11 +8428,10 @@
         "To test the humidity levels of the paper",
         "To wipe away fingerprints for a clearer scan"
       ],
-      "imageAlt": "An officer rubbing a thumb across a passport's surface",
       "correctAnswer": 1,
-      "type": "image_question",
-      "imageDescription": "Macro shot of an officer's thumb feeling the 'United Kingdom of Great Britain' text on the biodata page of a passport",
-      "id": "bf-im-0056"
+      "type": "multiple_choice",
+      "id": "bf-im-0056",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -8497,34 +8441,30 @@
         "The frequency of visits suggests the passenger may be living in the UK via visitor status"
       ],
       "explanation": "Immigration rules limit the amount of time visitors can spend in the UK; multiple recent entry/exit stamps can signal someone living in the UK illegally",
-      "question": "Why would the appearance of this passport page prompt further questioning about the visitor's intentions?",
+      "question": "A single passport page that is heavily crowded with numerous UK entry and exit stamps dated within the last 12 months. Why would the appearance of this passport page prompt further questioning about the visitor's intentions?",
       "correctAnswer": 3,
-      "imageAlt": "A passport page filled with various entry and exit stamps",
-      "type": "image_question",
-      "imageDescription": "A single passport page that is heavily crowded with numerous UK entry and exit stamps dated within the last 12 months",
-      "id": "bf-im-0057"
+      "type": "multiple_choice",
+      "id": "bf-im-0057",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "Under-vehicle view of a van showing a fuel tank where one section has bright, glossy black paint compared to the rusted metal of the rest of the chassis",
-      "type": "image_question",
-      "imageAlt": "The underside of a van showing mismatched paint on a fuel tank",
+      "type": "multiple_choice",
       "correctAnswer": 0,
       "explanation": "Freshly painted surfaces in specific areas of a vehicle may be used to hide recent mechanical work done to create 'hides' for smuggling",
-      "question": "Why would an officer find the mismatched paint on this vehicle's fuel tank suspicious?",
+      "question": "Under-vehicle view of a van showing a fuel tank where one section has bright, glossy black paint compared to the rusted metal of the rest of the chassis. Why would an officer find the mismatched paint on this vehicle's fuel tank suspicious?",
       "options": [
         "Mismatched paint can indicate the concealment of a 'hide' or modification",
         "The vehicle is not roadworthy for UK motorways",
         "The fuel tank is leaking hazardous chemicals",
         "The vehicle was stolen from a body shop"
       ],
-      "id": "bf-im-0058"
+      "id": "bf-im-0058",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A suspicious supporting document (bank statement) being held under a UV light, where the entire sheet of paper is glowing a bright, fluorescent blue",
-      "type": "image_question",
-      "imageAlt": "A document glowing brightly under a UV lamp",
+      "type": "multiple_choice",
       "correctAnswer": 1,
-      "question": "What does the bright fluorescent glow of this document under UV light suggest to an officer?",
+      "question": "A suspicious supporting document (bank statement) being held under a UV light, where the entire sheet of paper is glowing a bright, fluorescent blue. What does the bright fluorescent glow of this document under UV light suggest to an officer?",
       "explanation": "Under UV light, genuine security papers should remain 'dull' or dark, while standard commercial paper will glow brightly due to optical brighteners",
       "options": [
         "The document is genuine because it glows",
@@ -8532,13 +8472,12 @@
         "The ink used is invisible to the naked eye",
         "The document has been cleaned with a chemical agent"
       ],
-      "id": "bf-im-0059"
+      "id": "bf-im-0059",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A close-up of a passenger's bag containing a small unlabelled potted fern and a packet of heirloom vegetable seeds",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 2,
-      "imageAlt": "A passenger carrying a bag of seeds and a small potted plant",
       "options": [
         "The plant is an endangered species covered by CITES",
         "The soil might contain illegal minerals",
@@ -8546,12 +8485,12 @@
         "The passenger has exceeded their duty-free allowance for flora"
       ],
       "explanation": "Certain plants and seeds are prohibited or restricted to prevent the introduction of pests and diseases that could harm the UK's environment",
-      "question": "What is the primary concern when an officer intercepts the items shown in this image?",
-      "id": "bf-im-0060"
+      "question": "A close-up of a passenger's bag containing a small unlabelled potted fern and a packet of heirloom vegetable seeds. What is the primary concern when an officer intercepts the items shown ?",
+      "id": "bf-im-0060",
+      "__rewritten_from_image__": true
     },
     {
-      "imageDescription": "A highly magnified view of a passport identification page showing the edge of the printed portrait. The background security pattern of fine wavy lines is visibly broken and misaligned where it meets the rectangular edge of the photograph",
-      "question": "In this magnified view of a passport, why is the misalignment of the fine lines at the edge of the photograph a critical security concern?",
+      "question": "A highly magnified view of a passport identification page showing the edge of the printed portrait. The background security pattern of fine wavy lines is visibly broken and misaligned where it meets the rectangular edge of the photograph. In this magnified view of a passport, why is the misalignment of the fine lines at the edge of the photograph a critical security concern?",
       "options": [
         "A standard printing error from the factory",
         "A 'photo substitution' indicating potential document forgery",
@@ -8559,25 +8498,24 @@
         "The result of natural wear and tear on the laminate"
       ],
       "explanation": "The misalignment of the microprinted background pattern across the photo edge suggests the original image was replaced or tampered with",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 1,
-      "imageAlt": "A close-up of a passport photograph where the background lines do not match up with the lines on the photo edge",
-      "id": "bf-im-0061"
+      "id": "bf-im-0061",
+      "__rewritten_from_image__": true
     },
     {
       "correctAnswer": 0,
-      "imageAlt": "Green, Red, and Blue customs channel signs in a UK airport arrivals hall",
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Passengers arriving from outside the UK with no goods to declare",
         "Passengers with commercial goods for trade or sale",
-        "Passengers who are carrying more than £10,000 in cash",
+        "Passengers who are carrying more than \u00a310,000 in cash",
         "Passengers who have been diverted from the Red channel"
       ],
       "explanation": "The blue 'Nothing to Declare' channel is specifically for passengers arriving from outside the UK with goods that do not exceed their duty-free allowance",
-      "imageDescription": "A wide shot of a UK airport customs area showing three distinct lanes: a Green channel, a Red channel, and a Blue channel with 'Nothing to Declare' and 'Arrivals from the European Union' signage",
-      "question": "Based on standard UK border procedures, which group of passengers is the Blue channel (shown in the image) primarily intended for?",
-      "id": "bf-im-0062"
+      "question": "A wide shot of a UK airport customs area showing three distinct lanes: a Green channel, a Red channel, and a Blue channel with 'Nothing to Declare' and 'Arrivals from the European Union' signage. Based on standard UK border procedures, which group of passengers is the Blue channel (shown ) primarily intended for?",
+      "id": "bf-im-0062",
+      "__rewritten_from_image__": true
     },
     {
       "options": [
@@ -8587,16 +8525,14 @@
         "Thin glass containers or electronic circuit boards"
       ],
       "explanation": "Organic materials like food, plants, or explosives typically appear orange or tan in X-ray scans, unlike the blues and greens of metals and plastics",
-      "question": "In this X-ray scan of a traveler's suitcase, what does the bright orange/tan colour of the highlighted mass generally indicate to an officer?",
-      "imageDescription": "An airport X-ray monitor display of a passenger's suitcase. Metal items like a hairdryer and zippers are blue, plastic layers are green, and a large dense mass inside a container shows as a bright orange/tan colour",
+      "question": "An airport X-ray monitor display of a passenger's suitcase. Metal items like a hairdryer and zippers are blue, plastic layers are green, and a large dense mass inside a container shows as a bright orange/tan colour. In this X-ray scan of a traveler's suitcase, what does the bright orange/tan colour of the highlighted mass generally indicate to an officer?",
       "correctAnswer": 2,
-      "imageAlt": "An X-ray scan of a suitcase showing various shapes in different colours",
-      "type": "image_question",
-      "id": "bf-im-0063"
+      "type": "multiple_choice",
+      "id": "bf-im-0063",
+      "__rewritten_from_image__": true
     },
     {
-      "question": "When a passenger imports these exotic leather goods, what specific documentation must they provide to avoid seizure under international conservation laws?",
-      "imageDescription": "An image of various high-end fashion accessories including belts and wallets made from distinct crocodile and python skins, laid out on an inspection table",
+      "question": "An image of various high-end fashion accessories including belts and wallets made from distinct crocodile and python skins, laid out on an inspection table. When a passenger imports these exotic leather goods, what specific documentation must they provide to avoid seizure under international conservation laws?",
       "explanation": "Convention on International Trade in Endangered Species (CITES) permits are required for products made from protected animals, such as ivory or certain leathers",
       "options": [
         "Proof that the items are genuine designer brands",
@@ -8604,17 +8540,15 @@
         "A health certificate usually reserved for live animals",
         "A CITES permit to prove the items are legally sourced and traded"
       ],
-      "type": "image_question",
-      "imageAlt": "A collection of luxury belts and wallets made from exotic reptilian skin",
+      "type": "multiple_choice",
       "correctAnswer": 3,
-      "id": "bf-im-0064"
+      "id": "bf-im-0064",
+      "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 2,
-      "imageAlt": "A heavy metal bolt seal on a shipping container that has been cut and loosely put back together",
-      "question": "Why would an officer viewing this specific damage to a shipping container seal immediately flag it for a full physical inspection?",
-      "imageDescription": "A close-up of a high-security metal bolt seal on the locking bar of a large shipping container. Upon close inspection, the metal shows signs of being cut and then superficially glued or taped back into place",
+      "question": "A close-up of a high-security metal bolt seal on the locking bar of a large shipping container. Upon close inspection, the metal shows signs of being cut and then superficially glued or taped back into place. Why would an officer viewing this specific damage to a shipping container seal immediately flag it for a full physical inspection?",
       "options": [
         "The container has been damaged by sea salt and weather",
         "The cargo is too heavy for the container's locking mechanism",
@@ -8622,7 +8556,8 @@
         "A standard UK Customs inspection has already been completed"
       ],
       "explanation": "Seals are used to ensure cargo has not been tampered with; a broken or bypassed seal is a primary indicator of unauthorized access or smuggling",
-      "id": "bf-im-0065"
+      "id": "bf-im-0065",
+      "__rewritten_from_image__": true
     }
   ],
   "mocks": [
