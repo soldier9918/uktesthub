@@ -6511,6 +6511,726 @@
       ],
       "type": "image_question",
       "id": "fn-im-0036"
+    },
+    {
+      "explanation": "The 'H' plate indicates a fire hydrant; the top number is the diameter of the main in millimetres and the bottom number is the distance in metres.",
+      "imageAlt": "A yellow H-shaped hydrant plate with the number 100 on top and 5 on the bottom.",
+      "imageDescription": "A standard UK yellow fire hydrant 'H' plate. The top section contains the number 100 and the bottom section contains the number 5.",
+      "correctAnswer": 1,
+      "options": [
+        "100 metres",
+        "100 millimetres",
+        "5 millimetres",
+        "50 millimetres"
+      ],
+      "question": "On this standard UK hydrant plate, what does the top number '100' represent?",
+      "type": "image_question",
+      "id": "fn-im-0037"
+    },
+    {
+      "type": "image_question",
+      "question": "What does this green hazard diamond found on a pressurized cylinder indicate?",
+      "correctAnswer": 0,
+      "options": [
+        "Non-flammable, non-toxic gas",
+        "Flammable gas",
+        "Oxidizing agent",
+        "Corrosive substance"
+      ],
+      "imageAlt": "A green diamond-shaped hazard placard with a gas cylinder symbol and the number 2.",
+      "imageDescription": "A green ADR hazard diamond for non-flammable, non-toxic gases, showing a black gas cylinder icon and the number 2 at the bottom.",
+      "explanation": "Oxygen (Class 2.2) is represented by a green diamond with a white or black gas cylinder symbol.",
+      "id": "fn-im-0038"
+    },
+    {
+      "explanation": "Lifting with a straight back and bent knees uses the strong leg muscles and protects the spine from injury.",
+      "options": [
+        "Diagram A",
+        "Diagram B",
+        "Diagram C",
+        "Diagram D"
+      ],
+      "correctAnswer": 2,
+      "imageDescription": "Four illustrations of a person lifting a box. A shows a bent back; B shows straight legs; C shows a straight back with bent knees; D shows the box held far from the body.",
+      "imageAlt": "Four diagrams showing different lifting postures for a heavy box.",
+      "type": "image_question",
+      "question": "Which diagram illustrates the correct manual handling technique for lifting a heavy equipment crate?",
+      "id": "fn-im-0039"
+    },
+    {
+      "imageAlt": "A circular road sign with a red border containing a car and a motorcycle.",
+      "imageDescription": "A UK 'No Motor Vehicles' road sign: a white circle with a red border, featuring a black silhouette of a car above a motorcycle.",
+      "options": [
+        "Access for fire engines only",
+        "Danger: High traffic area",
+        "One-way street ahead",
+        "No motor vehicles permitted"
+      ],
+      "correctAnswer": 3,
+      "question": "When navigating to an incident, what does this road sign indicate to the driver of a fire appliance?",
+      "type": "image_question",
+      "explanation": "A white circle with a red border and a car/motorcycle indicates 'No Motor Vehicles'.",
+      "id": "fn-im-0040"
+    },
+    {
+      "explanation": "The blue circle with a white arrow signifies a mandatory direction that must be followed.",
+      "imageAlt": "A circular blue sign with a white arrow pointing to the left.",
+      "imageDescription": "A blue 'Mandatory' road sign featuring a large white arrow pointing towards the left (Turn Left).",
+      "options": [
+        "Mandatory: Turn Left",
+        "Direction to Fire Exit",
+        "Information: One way street",
+        "Warning: Sharp bend ahead"
+      ],
+      "correctAnswer": 0,
+      "type": "image_question",
+      "question": "What does this blue mandatory sign indicate to emergency vehicle drivers?",
+      "id": "fn-im-0041"
+    },
+    {
+      "explanation": "The skull and crossbones pictogram is the international symbol for substances that are acutely toxic if swallowed, inhaled, or touched.",
+      "imageAlt": "A white diamond with a red border containing a black skull and crossbones.",
+      "imageDescription": "A GHS (Globally Harmonized System) hazard pictogram showing a black skull and crossbones inside a red-bordered white diamond.",
+      "options": [
+        "Flammable material",
+        "Health hazard (long term)",
+        "Acute toxicity (poison)",
+        "Explosive hazard"
+      ],
+      "correctAnswer": 2,
+      "type": "image_question",
+      "question": "A crew finds this pictogram on a storage vat at a chemical site. What hazard does it represent?",
+      "id": "fn-im-0042"
+    },
+    {
+      "question": "Looking at this building floor plan, what does the symbol 'FD30' indicate?",
+      "type": "image_question",
+      "imageDescription": "A section of a building's fire safety plan where a doorway is clearly marked with the abbreviation 'FD' and a 30, meaning Fire Door 30-minute rated.",
+      "imageAlt": "A floor plan snippet showing a doorway marked with the letters 'FD' and a small half-circle.",
+      "correctAnswer": 1,
+      "options": [
+        "Final Exit door",
+        "Fire Resisting door",
+        "Automatic sliding door",
+        "Folding partition wall"
+      ],
+      "explanation": "Building plans use specific symbols; a red circle with a line through it or a specific door symbol usually denotes a fire door intended to stop the spread of smoke and flame.",
+      "id": "fn-im-0043"
+    },
+    {
+      "options": [
+        "Explosive substance",
+        "Radioactive material迷",
+        "Biohazard waste",
+        "High voltage area"
+      ],
+      "correctAnswer": 0,
+      "imageDescription": "A Class 1 Explosive hazard placard, orange in colour, featuring a black icon of a bomb exploding into fragments.",
+      "imageAlt": "An orange/yellow diamond with a black symbol of a bomb exploding.",
+      "question": "What hazard is represented by this orange placard found on the back of a transport vehicle?",
+      "type": "image_question",
+      "explanation": "A yellow diamond with an exploding bomb symbol indicates a substance that is unstable or explosive.",
+      "id": "fn-im-0044"
+    },
+    {
+      "explanation": "Blue safety signs are mandatory and indicate an action that must be taken by anyone entering the area.",
+      "options": [
+        "Eye protection must be worn",
+        "Ear protection required",
+        "Respiratory protection must be worn",
+        "No smoking in this area"
+      ],
+      "correctAnswer": 2,
+      "imageDescription": "A blue mandatory safety sign showing a white icon of a person wearing a full-face respirator or breathing apparatus.",
+      "imageAlt": "A blue circular sign with a white silhouette of a face wearing a respirator mask.",
+      "type": "image_question",
+      "question": "What instruction does this mandatory sign provide to firefighters entering a specific zone?",
+      "id": "fn-im-0045"
+    },
+    {
+      "type": "image_question",
+      "question": "Based on the UK colour-coding, which extinguishing agent is found inside this extinguisher?",
+      "imageDescription": "Standard UK fire extinguisher, red body, with a large black rectangular band or label clearly visible on the front.",
+      "imageAlt": "A red fire extinguisher with a prominent black label.",
+      "options": [
+        "Water",
+        "Carbon Dioxide (CO2)",
+        "Dry Powder",
+        "Wet Chemical"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Fire extinguishers with a black label or band contain Carbon Dioxide (CO2), used primarily for electrical fires.",
+      "id": "fn-im-0046"
+    },
+    {
+      "explanation": "The Kemler code (top number) 33 indicates a highly flammable liquid (the double digit means intensified effect).",
+      "type": "image_question",
+      "question": "On this ADR transport plate, what does the top '33' (Hazard Identification Number) signify?",
+      "options": [
+        "Corrosive gas",
+        "Toxic solid substance",
+        "Radioactive liquid",
+        "Highly flammable liquid"
+      ],
+      "correctAnswer": 3,
+      "imageAlt": "An orange rectangular Hazard Identification Plate with 33 on top and 1203 on the bottom.",
+      "imageDescription": "A standard ADR orange plate. The top box has the number '33' and the bottom box has '1203'.",
+      "id": "fn-im-0047"
+    },
+    {
+      "explanation": "Safe working load (SWL) refers to the maximum weight equipment like a winch or crane can safely handle.",
+      "question": "What does the abbreviation 'SWL' mean on this piece of heavy rescue equipment?",
+      "type": "image_question",
+      "correctAnswer": 0,
+      "options": [
+        "Safe Working Load of 500 kilograms",
+        "Standard Weight Limit of 500 kilograms",
+        "Stop Work Level at 500 kilograms",
+        "System Winch Length of 500 metres"
+      ],
+      "imageAlt": "A metal plate on a winch marked with 'SWL 500kg'.",
+      "imageDescription": "A close-up of a manufacturer's plate on a lifting winch, clearly displaying the text 'SWL 500kg'.",
+      "id": "fn-im-0048"
+    },
+    {
+      "imageAlt": "A red fire extinguisher with a prominent black band.",
+      "explanation": "Under British Standard EN3, a solid black banner or body on a fire extinguisher denotes Carbon Dioxide (CO2).",
+      "type": "image_question",
+      "options": [
+        "Water",
+        "Carbon Dioxide (CO2)",
+        "Dry Powder",
+        "Foam"
+      ],
+      "imageDescription": "A photo of a standard red fire extinguisher with a large black rectangle label across the middle containing text and instructions.",
+      "question": "Based on the colour coding of the label on this extinguisher, what is the extinguishing agent?",
+      "correctAnswer": 1,
+      "id": "fn-im-0049"
+    },
+    {
+      "correctAnswer": 2,
+      "question": "What does this standard UK street sign indicate to a fire crew?",
+      "imageDescription": "A yellow fire hydrant identification plate mounted on a wall, featuring a large black 'H' and two sets of numbers.",
+      "options": [
+        "Hazardous Materials Storage",
+        "High Voltage Area",
+        "Fire Hydrant Location",
+        "Hose Reel Point"
+      ],
+      "type": "image_question",
+      "imageAlt": "A yellow rectangular plate with a large black letter H.",
+      "explanation": "The letter 'H' on a yellow background signifies a Fire Hydrant, used by fire crews to access the water main.",
+      "id": "fn-im-0050"
+    },
+    {
+      "type": "image_question",
+      "options": [
+        "Acute Toxicity (Toxic)",
+        "Corrosive Material",
+        "Environmental Hazard",
+        "Flammable Gas inhalant"
+      ],
+      "imageAlt": "A white diamond with a red border containing a black skull and crossbones.",
+      "explanation": "The skull and crossbones symbol inside a red-bordered diamond is the GHS symbol for Acute Toxicity (Fatal or Toxic).",
+      "correctAnswer": 0,
+      "imageDescription": "A GHS (Globally Harmonized System) hazard pictogram showing a black skull and crossbones inside a red diamond frame.",
+      "question": "What hazard is represented by this international pictogram found on a chemical container?",
+      "id": "fn-im-0051"
+    },
+    {
+      "imageDescription": "A standard UK mandatory safety sign consisting of a solid blue circle with a large white exclamation mark in the centre.",
+      "question": "In a safety context, what type of instruction does this blue circular sign convey?",
+      "correctAnswer": 3,
+      "type": "image_question",
+      "options": [
+        "Warning: Danger ahead",
+        "No entry for unauthorised personnel",
+        "Fire exit this way",
+        "General mandatory action (refer to supplementary signage)"
+      ],
+      "imageAlt": "A blue circular sign with a white exclamation mark.",
+      "explanation": "A blue circle containing a white exclamation mark is a mandatory sign, indicating that a specific action or PPE is required.",
+      "id": "fn-im-0052"
+    },
+    {
+      "question": "What facility is located at the site of this green and white sign?",
+      "imageDescription": "A green emergency sign showing a white medical cross in the corner and a white icon of an eye being rinsed by a spray of water.",
+      "correctAnswer": 2,
+      "options": [
+        "Drinking Water Point",
+        "Chemical Shower Area",
+        "Emergency Eye Wash Station",
+        "First Aid Kit Location"
+      ],
+      "type": "image_question",
+      "imageAlt": "A green square sign with a white cross and a stylized eye with water droplets.",
+      "explanation": "This symbol is used globally to identify the location of an Emergency Eye Wash station.",
+      "id": "fn-im-0053"
+    },
+    {
+      "correctAnswer": 1,
+      "imageDescription": "A UK Hazchem emergency action code plate. It is rectangular and orange, showing the code '2W' and the UN number '1263'.",
+      "question": "What does the '2W' code on this UK Hazchem plate provide to the arriving incident commander?",
+      "imageAlt": "An orange Hazchem scale plate with 2W and 1263.",
+      "explanation": "The '3' in the top-left of a Hazchem (UK EAC) plate tells the driver whether to use jets (1/2) or fog (3/4) and if the substance is violently reactive.",
+      "type": "image_question",
+      "options": [
+        "The number of casualties involved",
+        "The Emergency Action Code (EAC) for the substance",
+        "The telephone number for the chemical company",
+        "The total weight of the cargo in tonnes"
+      ],
+      "id": "fn-im-0054"
+    },
+    {
+      "type": "image_question",
+      "options": [
+        "Corrosive to metals and skin",
+        "Oxidising agent hazard",
+        "Explosive under pressure",
+        "Flammable liquid category 1"
+      ],
+      "explanation": "A hand and a metal bar being eaten away by liquid indicates a corrosive substance that can damage skin or materials.",
+      "imageAlt": "A red diamond symbol showing liquid pouring from test tubes onto a hand and a metal bar.",
+      "correctAnswer": 0,
+      "imageDescription": "A GHS hazard pictogram showing two test tubes dripping liquid onto a flat surface and a human hand, both of which are shown being corroded.",
+      "question": "Which specific hazard does this chemical symbol warn firefighters about?",
+      "id": "fn-im-0055"
+    },
+    {
+      "question": "On this tactical incident plan, what area does 'Sector 3' represent?",
+      "imageDescription": "A top-down tactical diagram of a burning warehouse. The front of the building is labelled Sector 1, the rear is Sector 3, and the sides are 2 and 4.",
+      "correctAnswer": 2,
+      "imageAlt": "A diagram of a building with numbers 1 through 4 assigned to different sides.",
+      "explanation": "In a fire zone sectorisation plan, Sector 1 is the front (Alpha), Sector 2 is the left (Bravo), Sector 3 is the rear (Charlie), and Sector 4 is the right (Delta).",
+      "options": [
+        "The main entrance only",
+        "The designated assembly point",
+        "The rear side (Charlie) of the building",
+        "The location of the internal riser"
+      ],
+      "type": "image_question",
+      "id": "fn-im-0056"
+    },
+    {
+      "imageDescription": "A standard UK warning sign: a yellow equilateral triangle with a black border and a black symbol of a flame in the middle.",
+      "question": "What is the primary warning given by this yellow triangular sign?",
+      "correctAnswer": 3,
+      "explanation": "A yellow triangle with a black border and a flame symbol indicates the presence of highly flammable material.",
+      "imageAlt": "A yellow triangle with a black border and a black flame symbol.",
+      "type": "image_question",
+      "options": [
+        "Oxidising material present",
+        "Biohazard area",
+        "Explosive atmosphere",
+        "Flammable material or High fire risk"
+      ],
+      "id": "fn-im-0057"
+    },
+    {
+      "imageAlt": "A yellow hydrant plate with the numbers 100 on top and 5 on the bottom.",
+      "explanation": "The number at the bottom of a hydrant plate indicates the distance in metres from the plate to the actual hydrant cover.",
+      "type": "image_question",
+      "options": [
+        "The depth of the hydrant pit in centimetres",
+        "The distance in metres from the plate to the hydrant cover",
+        "The water pressure in bars",
+        "The age of the water main in years"
+      ],
+      "imageDescription": "A yellow Fire Hydrant plate with a black 'H'. The top number is '100' and the bottom number is '5'.",
+      "question": "Looking at the bottom number on this plate, how far away is the hydrant?",
+      "correctAnswer": 1,
+      "id": "fn-im-0058"
+    },
+    {
+      "imageDescription": "A standard UK fire exit sign: a green rectangle featuring a white silhouette of a person running towards a door and an arrow pointing to the left.",
+      "question": "What information is provided by this green and white sign?",
+      "correctAnswer": 0,
+      "imageAlt": "A green rectangular sign with a white running man and an arrow pointing left.",
+      "explanation": "A green sign with a white figure running through a doorway with an arrow indicates the direction to the nearest emergency exit.",
+      "type": "image_question",
+      "options": [
+        "Emergency Exit route to the left",
+        "Fire Assembly Point location",
+        "Location of fire-fighting equipment",
+        "Authorized personnel only beyond this point"
+      ],
+      "id": "fn-im-0059"
+    },
+    {
+      "correctAnswer": 2,
+      "imageDescription": "A mandatory safety sign featuring a blue circle with a white pictogram of a human head wearing a full-face respirator mask.",
+      "question": "What does this mandatory sign require of any firefighter entering the designated area?",
+      "imageAlt": "A blue circular sign showing a person wearing a gas mask or respirator.",
+      "explanation": "A blue circle with a white symbol of a face wearing a respirator indicates that Respiratory Protective Equipment is required.",
+      "type": "image_question",
+      "options": [
+        "Oxygen cylinders stored here",
+        "Dust mask recommended for visitors",
+        "Respiratory Protective Equipment (RPE) must be worn",
+        "Ventilation fans must be switched on"
+      ],
+      "id": "fn-im-0060"
+    },
+    {
+      "type": "image_question",
+      "question": "What specific hazard is indicated by this yellow triangular warning sign found on a laboratory door?",
+      "correctAnswer": 2,
+      "imageAlt": "Yellow triangular warning sign with a black skull and crossbones.",
+      "options": [
+        "Flammable material",
+        "Corrosive substance",
+        "Toxic substance",
+        "Radioactive material"
+      ],
+      "imageDescription": "A standard yellow ISO warning triangle featuring a black skull and crossbones symbol in the centre.",
+      "explanation": "The yellow triangle with a black skull and crossbones is the standard warning sign for toxic or poisonous substances.",
+      "id": "fn-im-0061"
+    },
+    {
+      "correctAnswer": 0,
+      "type": "image_question",
+      "question": "What is the primary purpose of this green and white sign located in a public corridor?",
+      "explanation": "A green square sign with a white person running towards a door indicates an emergency exit or means of escape.",
+      "imageAlt": "Green rectangular sign with a white figure of a man running towards a doorway.",
+      "options": [
+        "Emergency exit route",
+        "First aid point",
+        "Fire assembly point",
+        "Safe to enter area"
+      ],
+      "imageDescription": "A standard UK green and white emergency exit sign showing a white pictogram of a person running through a doorway with an arrow.",
+      "id": "fn-im-0062"
+    },
+    {
+      "options": [
+        "Water",
+        "Carbon Dioxide (CO2)",
+        "Dry Powder",
+        "Foam"
+      ],
+      "imageDescription": "A standard UK red fire extinguisher with a prominent cream/beige label or band wrapped around the canister.",
+      "imageAlt": "A red fire extinguisher with a cream-coloured horizontal band or label.",
+      "explanation": "In the UK, an extinguisher with a gold or cream-coloured band contains foam, suitable for Class A and B fires.",
+      "question": "Based on the UK colour-coding system, what extinguishing agent is contained within this extinguisher?",
+      "type": "image_question",
+      "correctAnswer": 3,
+      "id": "fn-im-0063"
+    },
+    {
+      "type": "image_question",
+      "question": "On this standard UK fire hydrant plate, what does the top number (100) indicate?",
+      "correctAnswer": 1,
+      "imageAlt": "Yellow H-shaped hydrant indicator plate with numbers 100 and 5.",
+      "options": [
+        "100 metres",
+        "100 millimetres",
+        "100 centimetres",
+        "100 feet"
+      ],
+      "imageDescription": "A yellow hydrant marker plate with a black 'H'. The top number is 100 and the bottom number is 5.",
+      "explanation": "A yellow 'H' plate shows the diameter of the water main in millimetres at the top and the distance to the hydrant in metres at the bottom.",
+      "id": "fn-im-0064"
+    },
+    {
+      "imageDescription": "A red square safety sign containing a white pictogram of a small flame, used to denote fire equipment inside a building.",
+      "options": [
+        "Fire-fighting equipment location",
+        "Highly flammable area",
+        "Fire alarm call point",
+        "Controlled burning zone death"
+      ],
+      "imageAlt": "Red square sign with a white silhouette of a flame.",
+      "explanation": "A red square with a white flame indicates the location of fire-fighting equipment, such as an extinguisher or hose reel.",
+      "question": "In a commercial building, what is indicated by this red and white square sign?",
+      "type": "image_question",
+      "correctAnswer": 0,
+      "id": "fn-im-0065"
+    },
+    {
+      "explanation": "The number '5' on a hazard diamond specifically denotes oxidising substances which can intensify a fire.",
+      "options": [
+        "Explosives",
+        "Flammable Solids",
+        "Oxidising substances",
+        "Compressed Gas"
+      ],
+      "imageDescription": "A yellow hazard diamond placard with a symbol of a flame over a circle (oxidiser symbol) and the number 5.1 at the bottom.",
+      "imageAlt": "A yellow diamonds-shaped placard with a black circle and flame and the number 5.1.",
+      "correctAnswer": 2,
+      "question": "What type of hazard is represented by this yellow placard with the number 5.1?",
+      "type": "image_question",
+      "id": "fn-im-0066"
+    },
+    {
+      "type": "image_question",
+      "question": "What instruction must a firefighter follow when encountering this blue sign at an industrial site?",
+      "correctAnswer": 2,
+      "imageAlt": "Blue circular sign with white headphones/ear defender symbol.",
+      "imageDescription": "A blue circular mandatory sign featuring a white pictogram of a person wearing ear defenders.",
+      "options": [
+        "Use radio communications",
+        "Hazardous noise area ahead",
+        "Ear protection must be worn",
+        "Silence required in this zone"
+      ],
+      "explanation": "Blue circular signs are mandatory signs; the ear protection symbol means wearers must use ear defenders in this area.",
+      "id": "fn-im-0067"
+    },
+    {
+      "question": "On a tactical fire incident plan, what does this red triangle with a white 'X' represent?",
+      "type": "image_question",
+      "correctAnswer": 1,
+      "imageDescription": "A tactical fire service map symbol consisting of a red-bordered triangle with a prominent white 'X' inside it.",
+      "options": [
+        "Fire origin point",
+        "Building unsafe for internal entry",
+        "Hazardous chemicals present",
+        "Water source unavailable"
+      ],
+      "imageAlt": "A red triangle on a site plan with a large white X inside it.",
+      "explanation": "A red triangle with a white 'X' inside is used on tactical maps to indicate a building is unsafe for internal firefighting operations.",
+      "id": "fn-im-0068"
+    },
+    {
+      "options": [
+        "No entry for unauthorised persons",
+        "No smoking allowed",
+        "Wash hands before entry",
+        "Wear protective gloves"
+      ],
+      "imageDescription": "A circular prohibition sign with a red border and a red diagonal slash over a black/white pictogram of an upright palm (hand).",
+      "imageAlt": "Red circular sign with a white hand and a diagonal red slash through it.",
+      "explanation": "The white hand inside a red circle with a diagonal line is the universal symbol for 'no entry' or 'access forbidden'.",
+      "question": "What does this prohibition sign mean when found at the entrance to a fire scene?",
+      "type": "image_question",
+      "correctAnswer": 0,
+      "id": "fn-im-0069"
+    },
+    {
+      "correctAnswer": 3,
+      "type": "image_question",
+      "question": "On this transport vehicle's ADR plate, what hazard is denoted by the top number '30'?",
+      "explanation": "An ADR plate for a fuel tanker with '30' at the top indicates a flammable liquid with a flashpoint between 23°C and 60°C.",
+      "imageAlt": "Orange ADR hazard plate with 30 at the top and 1202 at the bottom.",
+      "imageDescription": "A rectangular orange transport plate. The top number is '30' and the bottom number is '1202' (Diesel fuel).",
+      "options": [
+        "Corrosive liquid",
+        "Explosive substance",
+        "Oxidising agent",
+        "Flammable liquid"
+      ],
+      "id": "fn-im-0070"
+    },
+    {
+      "imageAlt": "Diamond hazard sign showing liquid dripping from two test tubes onto a metal bar and a hand.",
+      "imageDescription": "A hazard diamond, half white and half black, showing a pictogram of liquid from a test tube corroding a metal plate and a human hand.",
+      "options": [
+        "Biohazardous waste",
+        "Corrosive substance",
+        "Environmental hazard",
+        "Radioactive source"
+      ],
+      "explanation": "The white test tube dripping onto a surface and a hand is the international symbol for corrosive substances that cause burns.",
+      "type": "image_question",
+      "question": "A crew identifies this pictogram on a storage drum. What is the primary risk?",
+      "correctAnswer": 1,
+      "id": "fn-im-0071"
+    },
+    {
+      "type": "image_question",
+      "question": "What must a firefighter wear before entering a zone marked with this blue and white sign?",
+      "correctAnswer": 0,
+      "imageAlt": "Blue circular sign with a white silhouette of a person in a full-body protective suit.",
+      "imageDescription": "A circular blue mandatory sign with a white pictogram representing a person wearing a full-body chemical protection suit.",
+      "options": [
+        "Full chemical protection suit required",
+        "High-visibility clothing required maternity",
+        "General uniform only area",
+        "Thermal undergarments required"
+      ],
+      "explanation": "A blue mandatory sign showing a person in a full suit indicates that chemical or gas-tight protection is required.",
+      "id": "fn-im-0072"
+    },
+    {
+      "type": "image_question",
+      "imageDescription": "A standard UK 'No Smoking' prohibition sign against a white background.",
+      "question": "What does this prohibition sign indicate to personnel on site?",
+      "explanation": "A red circle with a slash over a cigarette is the standard UK prohibition sign for 'No Smoking'.",
+      "correctAnswer": 2,
+      "imageAlt": "A circular sign with a red border and a diagonal red slash over a black cigarette silhouette.",
+      "options": [
+        "Smoking area ahead",
+        "Flammable materials present",
+        "No smoking",
+        "Matches only"
+      ],
+      "id": "fn-im-0073"
+    },
+    {
+      "question": "According to the UK colour-coding system, what extinguishing agent is inside this cylinder?",
+      "imageDescription": "A standard 6kg Dry Powder fire extinguisher showing a blue colour-coded band.",
+      "type": "image_question",
+      "imageAlt": "A red fire extinguisher with a prominent blue rectangular label above the operating instructions.",
+      "options": [
+        "Dry Powder",
+        "Water",
+        "Carbon Dioxide (CO2)",
+        "Foam"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The blue portion of a standard fire extinguisher indicates it contains Dry Powder, suitable for various fire types.",
+      "id": "fn-im-0074"
+    },
+    {
+      "question": "Which hazard is identified by this warning sign found on a chemical storage unit?",
+      "type": "image_question",
+      "imageDescription": "A standard Hazard Warning sign for toxic substances.",
+      "correctAnswer": 3,
+      "options": [
+        "Corrosive material",
+        "Biological hazard",
+        "Explosive risk",
+        "Toxic substance"
+      ],
+      "imageAlt": "A yellow triangular warning sign with a black border and a black skull and crossbones symbol in the centre.",
+      "explanation": "A yellow triangle featuring a black skull and crossbones is the international symbol for toxic or poisonous substances.",
+      "id": "fn-im-0075"
+    },
+    {
+      "imageDescription": "A UK standard 'Fire Exit' directional sign with a downward-pointing arrow.",
+      "type": "image_question",
+      "question": "In the event of an evacuation, what does the downward arrow on this green sign instruct occupants to do?",
+      "explanation": "An Arrow pointing down towards a person running indicates that the exit or escape route is directly ahead/down from that point.",
+      "options": [
+        "Exit located on the floor below",
+        "Progress straight on/down from here to the exit",
+        "Exit is behind you",
+        "Assembly point this way"
+      ],
+      "imageAlt": "A green rectangular sign showing a white running man and a white arrow pointing downwards.",
+      "correctAnswer": 1,
+      "id": "fn-im-0076"
+    },
+    {
+      "question": "On this fire tactical plan, what does the symbol 'S' represent?",
+      "imageDescription": "A fire service tactical plan snippet showing a Dry Riser inlet symbol.",
+      "type": "image_question",
+      "imageAlt": "A tactical building plan showing a red square symbol with a white letter 'S' inside it.",
+      "options": [
+        "Smoke vent",
+        "Sprinkler valve",
+        "Riser inlet (Standpipe)",
+        "Storage area"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The 'S' symbol on a tactical plan marks the location of a dry or wet riser inlet where crews can connect hoses.",
+      "id": "fn-im-0077"
+    },
+    {
+      "type": "image_question",
+      "imageDescription": "An ADR/GHS placard for Class 1.1 Explosives.",
+      "question": "When found on a transport vehicle, what hazard does this orange 1.1 placard signify?",
+      "explanation": "Hazard Division 1.1 represents substances that have a mass explosion hazard.",
+      "correctAnswer": 0,
+      "imageAlt": "An orange diamond-shaped placard with the number '1.1' and an icon of an exploding bomb.",
+      "options": [
+        "Mass explosion hazard",
+        "Flammable gas",
+        "Oxidising agent激",
+        "Non-flammable hazard"
+      ],
+      "id": "fn-im-0078"
+    },
+    {
+      "question": "What is the mandatory requirement when entering an area marked with this sign?",
+      "type": "image_question",
+      "imageDescription": "A mandatory safety sign for ear protection.",
+      "correctAnswer": 3,
+      "options": [
+        "Quiet zone",
+        "Radio use only激",
+        "Explosion risk zone",
+        "Ear protection must be worn激"
+      ],
+      "imageAlt": "A circular blue sign with a white silhouette of a person wearing ear defenders.",
+      "explanation": "A blue circular sign with white ear defenders indicates that hearing protection is mandatory in that area.",
+      "id": "fn-im-0079"
+    },
+    {
+      "type": "image_question",
+      "imageDescription": "A standard UK warning sign for electricity/high voltage.",
+      "question": "What hazard does this sign warn firefighters of when entering a plant room?激",
+      "explanation": "A yellow triangle with a black lightning bolt identifies a risk of electric shock or high voltage equipment.激",
+      "correctAnswer": 1,
+      "imageAlt": "A yellow triangular sign with a black border and a black jagged lightning bolt symbol.",
+      "options": [
+        "Laser hazard",
+        "Danger of electricity",
+        "Static discharge area激",
+        "Battery charging point"
+      ],
+      "id": "fn-im-0080"
+    },
+    {
+      "type": "image_question",
+      "imageDescription": "A Carbon Dioxide (CO2) fire extinguisher showing the black identification band.",
+      "question": "Based on the colour-coded band, which extinguisher is this?",
+      "explanation": "In the UK, the black band on a fire extinguisher signifies Carbon Dioxide (CO2), often used for electrical fires.",
+      "correctAnswer": 2,
+      "imageAlt": "A red fire extinguisher with a black band and a prominent black horn-shaped nozzle.",
+      "options": [
+        "Water",
+        "Foam",
+        "Carbon Dioxide (CO2)",
+        "Halon替代"
+      ],
+      "id": "fn-im-0081"
+    },
+    {
+      "correctAnswer": 0,
+      "imageAlt": "A green square sign with four white arrows in the corners pointing towards a central group of white figures.",
+      "options": [
+        "Emergency assembly point激",
+        "First aid station",
+        "Safe refuge area激",
+        "Emergency exit path"
+      ],
+      "explanation": "A green sign with four arrows pointing inwards toward a group of people identifies the designated Emergency Assembly Point.",
+      "question": "What location is designated by this green and white sign?",
+      "type": "image_question",
+      "imageDescription": "A standard UK Emergency Assembly Point sign.",
+      "id": "fn-im-0082"
+    },
+    {
+      "explanation": "A yellow triangle with a flame symbol over a circle indicates the presence of oxidising substances which can intensify a fire.",
+      "imageAlt": "A yellow triangular sign showing a black circle with a flame on top of it.",
+      "options": [
+        "Highly flammable liquid",
+        "Oxidising agent",
+        "Compressed gas cylinder激",
+        "Biohazard area激"
+      ],
+      "correctAnswer": 1,
+      "imageDescription": "Warning sign for Oxidising substances.",
+      "type": "image_question",
+      "question": "What specific risk is indicated by this warning symbol?",
+      "id": "fn-im-0083"
+    },
+    {
+      "options": [
+        "Distance in metres",
+        "Depth of the valve",
+        "Flow rate in litres",
+        "Main diameter in millimetres"
+      ],
+      "imageAlt": "A yellow H-shaped plate with the number 150 on top and 10 on the bottom.",
+      "correctAnswer": 3,
+      "explanation": "Standard UK hydrant plates use the top number for the diameter of the water main in millimetres (mm).",
+      "question": "On this hydrant plate, what does the top number '150' represent?",
+      "imageDescription": "A standard UK fire hydrant identification plate.",
+      "type": "image_question",
+      "id": "fn-im-0084"
     }
   ],
   "mocks": []

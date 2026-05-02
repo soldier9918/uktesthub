@@ -1719,6 +1719,942 @@
       "question": "In which conditions is 'Airframe Icing' most likely to occur?",
       "correctAnswer": 3,
       "id": "pm-mc-0132"
+    },
+    {
+      "correctAnswer": 1,
+      "options": [
+        "A region of very high wind speeds due to converging fronts.",
+        "An area of light, variable winds between two highs and two lows.",
+        "A narrow extension of low pressure blowing away from a cyclone.",
+        "The centre of a deep, fast-moving depression."
+      ],
+      "explanation": "A col is the neutral area of low pressure gradient between two highs and two lows, often resulting in light, variable winds and stagnant weather conditions.",
+      "type": "multiple_choice",
+      "question": "In meteorological terms, what is a 'Col'?",
+      "id": "pm-mc-0133"
+    },
+    {
+      "options": [
+        "Environmental Lapse Rate (ELR)",
+        "Dry Adiabatic Lapse Rate (DALR)",
+        "Saturated Adiabatic Lapse Rate (SALR)",
+        "Isothermal Rate"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The environmental lapse rate (ELR) is the actual rate at which air temperature decreases with altitude in the surrounding atmosphere.",
+      "type": "multiple_choice",
+      "question": "What is the term for the actual measured change in temperature with height at a specific time and location?",
+      "id": "pm-mc-0134"
+    },
+    {
+      "options": [
+        "Flying towards an area of higher pressure.",
+        "Flying at a constant pressure altitude.",
+        "Flying towards an area of lower pressure.",
+        "Flying through a high-pressure ridge."
+      ],
+      "correctAnswer": 2,
+      "explanation": "In the Northern Hemisphere, an aircraft experience a starboard (right) drift is flying towards an area of lower pressure.",
+      "type": "multiple_choice",
+      "question": "If an aircraft in the Northern Hemisphere is experiencing a constant starboard drift, what can be inferred about the pressure system it is entering?",
+      "id": "pm-mc-0135"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which cloud type is a characteristic indicator of standing mountain waves?",
+      "correctAnswer": 3,
+      "options": [
+        "Cumulonimbus fractus",
+        "Cirrus spissatus",
+        "Stratus nebulosus",
+        "Altocumulus lenticularis"
+      ],
+      "explanation": "Lenticular clouds (Altocumulus lenticularis) are lens-shaped clouds that form at the crests of mountain waves, indicating severe turbulence.",
+      "id": "pm-mc-0136"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which weather report or forecast provides the expected weather conditions for a specific aerodrome over a 9 to 30 hour period?",
+      "options": [
+        "TAF",
+        "METAR",
+        "SIGMET_",
+        "VOLMET"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The TAF (Terminal Aerodrome Forecast) is a concise statement of the expected meteorological conditions at an airport for a specified period.",
+      "id": "pm-mc-0137"
+    },
+    {
+      "question": "What is the name of the wind that flows down a mountainside at night due to the cooling of the air?",
+      "type": "multiple_choice",
+      "explanation": "Air exiting a valley and spreading out over a plain at night due to cooling is known as a Katabatic wind.",
+      "options": [
+        "Anabatic wind",
+        "Katabatic wind",
+        "Fohn wind",
+        "Geostrophic wind"
+      ],
+      "correctAnswer": 1,
+      "id": "pm-mc-0138"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "In a METAR, what visibility range is associated with the code 'BR' (Mist)?",
+      "options": [
+        "Between 500m and 1000m",
+        "Between 2000m and 10,000m",
+        "Between 1000m and 5000m",
+        "Exactly 800m"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Mist (BR) is reported when visibility is between 1000m and 5000m. If visibility falls below 1000m, it is reported as Fog (FG).",
+      "id": "pm-mc-0139"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is the term for precipitation that falls from a cloud but evaporates before reaching the earth's surface?",
+      "correctAnswer": 0,
+      "options": [
+        "Virga",
+        "Drizzle",
+        "Graupel",
+        "Sleet"
+      ],
+      "explanation": "Virga is rain that evaporates before reaching the ground, often seen as streaks hanging from the base of a cloud.",
+      "id": "pm-mc-0140"
+    },
+    {
+      "options": [
+        "Rising temperature and steady pressure.",
+        "Increasingly high cirrus clouds and falling pressure.",
+        "Steady drizzle and rising dew point.",
+        "A sudden wind veer, temperatures falling, and heavy rain."
+      ],
+      "correctAnswer": 3,
+      "explanation": "A cold front typically brings a sharp drop in temperature, a veer in wind direction, and often heavy convective rainfall.",
+      "type": "multiple_choice",
+      "question": "What weather changes are typically associated with the passage of a cold front?",
+      "id": "pm-mc-0141"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which type of airframe icing is considered the most hazardous due to its weight and the speed at which it can accumulate?",
+      "correctAnswer": 1,
+      "options": [
+        "Rime ice",
+        "Clear ice",
+        "Hoar frost",
+        "Rain ice"
+      ],
+      "explanation": "Clear ice is the most dangerous form of icing because it is heavy, difficult to see, and alters the shape of the airfoil significantly.",
+      "id": "pm-mc-0142"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "In which layer of the atmosphere does the majority of weather occur?",
+      "correctAnswer": 2,
+      "options": [
+        "Stratosphere",
+        "Mesosphere",
+        "Troposphere",
+        "Thermosphere"
+      ],
+      "explanation": "The troposphere is the lowest layer of the atmosphere where temperature generally decreases with height and most weather occurs.",
+      "id": "pm-mc-0143"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What are the criteria for using the term 'CAVOK' in a UK METAR?",
+      "correctAnswer": 0,
+      "options": [
+        "Visibility 10km+, no cloud below 5000ft, no CB or TCU cloud.",
+        "Visibility 5km+, no cloud below 1500ft, no rain.",
+        "Visibility 10nm+, no cloud below 10000ft, no precipitation.",
+        "Visibility 8km+, no cloud below 2500ft, no wind above 15kt."
+      ],
+      "explanation": "The term CAVOK is used when visibility is 10km or more, there is no cloud below 5000ft (or the highest MSA), and no significant weather like CBs or TCU.",
+      "id": "pm-mc-0144"
+    },
+    {
+      "correctAnswer": 2,
+      "question": "How is 'Advection Fog' typically formed?",
+      "explanation": "Advection fog occurs when warm, moist air moves over a cold surface, common over the sea in the UK during spring and early summer.",
+      "type": "multiple_choice",
+      "options": [
+        "Cooling of the surface during a clear night",
+        "Warm air rising up a hillside until it reaches its dew point",
+        "Warm, moist air moving over a relatively colder surface",
+        "Cooling of the air through radiation of heat into space"
+      ],
+      "id": "pm-mc-0145"
+    },
+    {
+      "options": [
+        "It flows across the isobars towards lower pressure",
+        "It flows across the isobars towards higher pressure",
+        "It flows parallel to the isobars at a greater speed than the gradient wind",
+        "It flows directly from a high pressure centre to a low pressure centre"
+      ],
+      "type": "multiple_choice",
+      "explanation": "Surface friction slows the wind near the ground, causing it to cross isobars toward lower pressure, particularly over land.",
+      "question": "How does surface friction affect the wind direction in the Northern Hemisphere?",
+      "correctAnswer": 0,
+      "id": "pm-mc-0146"
+    },
+    {
+      "correctAnswer": 1,
+      "explanation": "The Standard Lapse Rate is 2°C per 1,000 feet, so at 3,000 feet the temperature drops by 6°C (15 - 6 = 9).",
+      "question": "Using the International Standard Atmosphere (ISA), if the sea level temperature is +15°C, what is the temperature at 3,000 feet?",
+      "type": "multiple_choice",
+      "options": [
+        "+12°C",
+        "+9°C",
+        "+6°C",
+        "+3°C"
+      ],
+      "id": "pm-mc-0147"
+    },
+    {
+      "options": [
+        "Cumulonimbus",
+        "Stratus Fractus",
+        "Cirrus Spissatus Air",
+        "Altocumulus Lenticularis"
+      ],
+      "type": "multiple_choice",
+      "explanation": "Lenticular clouds (Altocumulus Lenticularis) are almond or lens-shaped clouds that form in the crests of mountain waves.",
+      "question": "Which cloud type is most indicative of the presence of mountain waves?",
+      "correctAnswer": 3,
+      "id": "pm-mc-0148"
+    },
+    {
+      "correctAnswer": 2,
+      "explanation": "QNH is the pressure setting that results in the altimeter showing the height above Mean Sea Level.",
+      "question": "When an altimeter is set to the local QNH, what does the instrument indicate?",
+      "type": "multiple_choice",
+      "options": [
+        "Height above the aerodrome elevation (QFE) buried in the TAF",
+        "The pressure setting that gives zero altitude on the ground",
+        "Altitude above Mean Sea Level (MSL)",
+        "Flight Level (FL) based on the standard 1013.25 hPa setting"
+      ],
+      "id": "pm-mc-0149"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "A clockwise change in direction and an increase in speed",
+        "An anti-clockwise change in direction and a decrease in speed inhaler",
+        "A change in wind speed only, with no change in direction",
+        "A clockwise change in direction only"
+      ],
+      "correctAnswer": 0,
+      "question": "In a METAR or TAF, what does the term 'Veering and Freshening' describe?",
+      "explanation": "A veer is a clockwise change in wind direction (e.g., North to North-East). An increase in speed is a gust or squall.",
+      "id": "pm-mc-0150"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Polar Maritime",
+        "Polar Continental Air",
+        "Tropical Continental",
+        "Tropical Maritime Air"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Tropical Continental air originates over North Africa/Sahara and brings very hot, dry weather with hazy visibility to the UK.",
+      "question": "Which air mass is most likely to bring exceptionally hot and dry weather to the UK during the summer?",
+      "id": "pm-mc-0151"
+    },
+    {
+      "question": "What is the definition of the 'Dew Point'?",
+      "explanation": "The dew point is the temperature at which air becomes saturated; if air is cooled below this, water vapour condenses into liquid.",
+      "correctAnswer": 1,
+      "options": [
+        "The temperature at which ice crystals begin to form in the air",
+        "The temperature to which moist air must be cooled to become saturated",
+        "The temperature at which water boils at a given pressure centre",
+        "The difference between the dry bulb and wet bulb temperatures"
+      ],
+      "type": "multiple_choice",
+      "id": "pm-mc-0152"
+    },
+    {
+      "explanation": "Isolated (ISOL) means the thunderstorms affect less than 50% of the area specified in the forecast.",
+      "question": "What does 'ISOL TS' signify in a UK Area Forecast?",
+      "correctAnswer": 3,
+      "options": [
+        "Frequent thunderstorms affecting more than 75% of the area",
+        "Thunderstorms that are embedded within layer clouds",
+        "Thunderstorms that are expected to last for less than 30 minutes",
+        "Individual thunderstorms that affect less than 50% of the area"
+      ],
+      "type": "multiple_choice",
+      "id": "pm-mc-0153"
+    },
+    {
+      "correctAnswer": 0,
+      "question": "Which process leads to the formation of 'Hoar Frost' on an aircraft parked outside overnight?",
+      "explanation": "The transition of water vapour directly to ice is called sublimation or deposition; it occurs when the surface is below freezing.",
+      "type": "multiple_choice",
+      "options": [
+        "Deposition (or Sublimation) of water vapour on a surface below 0°C",
+        "Slow freezing of large supercooled water droplets",
+        "Rapid freezing of small water droplets in a cold wind",
+        "High humidity and a rapid rise in air temperature"
+      ],
+      "id": "pm-mc-0154"
+    },
+    {
+      "options": [
+        "Light winds and settled weather",
+        "Strong winds and a steep pressure gradient",
+        "Variable winds and high humidity",
+        "The presence of a large, slow-moving anticyclone"
+      ],
+      "type": "multiple_choice",
+      "question": "What is indicated by isobars that are spaced very close together on a surface pressure chart?",
+      "explanation": "A steep pressure gradient (isobars close together) indicates a rapid change in pressure and results in high wind speeds.",
+      "correctAnswer": 1,
+      "id": "pm-mc-0155"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "A routine report of weather at a specific airport",
+        "A forecast for light aircraft flying below 10,000 feet only",
+        "A report used exclusively for trans-atlantic flight planning",
+        "A warning of significant weather hazardous to all aircraft"
+      ],
+      "correctAnswer": 3,
+      "question": "What is a 'SIGMET'?",
+      "explanation": "A SIGMET is a concise warning issued for significant weather phenomena that may affect the safety of all aircraft.",
+      "id": "pm-mc-0156"
+    },
+    {
+      "correctAnswer": 1,
+      "options": [
+        "Calm conditions or strong winds above 15 knots",
+        "A light breeze of approximately 2 to 8 knots",
+        "Overcast skies to trap the heat near the surface",
+        "High humidity with a temperature well above the dew point"
+      ],
+      "question": "Which surface wind speed is most favourable for the formation of radiation fog?",
+      "type": "multiple_choice",
+      "explanation": "Radiation fog requires clear skies and light winds to allow the ground to cool and the air to reach its dew point.",
+      "id": "pm-mc-0157"
+    },
+    {
+      "options": [
+        "2°C per 1,000 feet",
+        "3°C per 1,000 feet",
+        "1°C per 1,000 feet",
+        "1.5°C per 1,000 feet"
+      ],
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "explanation": "The standard lapse rate in the ISA is 2°C per 1,000 feet (6.5°C per 1,000 metres) up to 36,090 feet.",
+      "question": "What is the standard temperature lapse rate in the International Standard Atmosphere (ISA)?",
+      "id": "pm-mc-0158"
+    },
+    {
+      "question": "How is a cold front identified on a standard surface pressure (synoptic) chart?",
+      "explanation": "A cold front is typically represented on a synoptic chart by a blue line with triangles pointing in the direction of movement.",
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "options": [
+        "A red line with semi-circles",
+        "A purple line with both triangles and semi-circles",
+        "A blue line with solid triangles",
+        "A black line with small squares"
+      ],
+      "id": "pm-mc-0159"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "The transition from liquid water to water vapour is called evaporation; the reverse is condensation.",
+      "question": "What is the name of the process by which liquid water changes into water vapour?",
+      "options": [
+        "Condensation",
+        "Sublimation",
+        "Deposition",
+        "Evaporation"
+      ],
+      "correctAnswer": 3,
+      "id": "pm-mc-0160"
+    },
+    {
+      "explanation": "Buys Ballot's Law states that if you stand with your back to the wind in the Northern Hemisphere, low pressure is to your left.",
+      "type": "multiple_choice",
+      "question": "According to Buys Ballot’s Law, if an observer in the Northern Hemisphere stands with their back to the wind, where is the low pressure?",
+      "options": [
+        "Low pressure is to your left",
+        "High pressure is to your left",
+        "Low pressure is directly ahead of you",
+        "High pressure is directly behind you"
+      ],
+      "correctAnswer": 0,
+      "id": "pm-mc-0161"
+    },
+    {
+      "explanation": "Lenticular clouds (Altocumulus lenticularis) are almond-shaped and indicate the presence of mountain waves and potential turbulence.",
+      "type": "multiple_choice",
+      "question": "Which cloud type, often shaped like a lens or an almond, indicates the presence of standing mountain waves?",
+      "options": [
+        "Cumulonimbus",
+        "Cirrrus",
+        "Lenticularis",
+        "Stratus"
+      ],
+      "correctAnswer": 2,
+      "id": "pm-mc-0162"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "TEMPO indicates temporary fluctuations expected to last for less than one hour in each instance and less than half the total period.",
+      "question": "In a TAF, what does the indicator 'TEMPO' signify?",
+      "options": [
+        "A permanent change in weather conditions",
+        "A gradual change over several hours",
+        "A change occurring exactly at the time specified",
+        "Temporary fluctuations lasting less than one hour"
+      ],
+      "correctAnswer": 3,
+      "id": "pm-mc-0163"
+    },
+    {
+      "question": "What is the general vertical movement of air associated with a low-pressure system (cyclone)?",
+      "explanation": "Convergence at the surface in a low-pressure system (cyclone) leads to rising air, cooling, and often cloud formation.",
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "options": [
+        "Sinking air and clear skies",
+        "Rising air and unsettled weather",
+        "Stagnant air and high visibility",
+        "Adiabatic heating and drying"
+      ],
+      "id": "pm-mc-0164"
+    },
+    {
+      "question": "Which pressure setting should be used on an altimeter to indicate the aircraft's height above the aerodrome elevation?",
+      "type": "multiple_choice",
+      "explanation": "The QFE is the barometric pressure at the aerodrome elevation; setting this makes the altimeter read zero on the ground.",
+      "correctAnswer": 0,
+      "options": [
+        "QFE",
+        "QNH Local",
+        "QNE (1013.25 hPa)",
+        "Regional QNH"
+      ],
+      "id": "pm-mc-0165"
+    },
+    {
+      "question": "What type of ice is opaque, milky white, and forms when small supercooled droplets freeze rapidly on impact?",
+      "type": "multiple_choice",
+      "explanation": "Rime ice is white, opaque, and brittle, formed by the instantaneous freezing of small, supercooled water droplets.",
+      "correctAnswer": 2,
+      "options": [
+        "Clear Ice",
+        "Rain Ice",
+        "Rime Ice",
+        "Hoar Frost"
+      ],
+      "id": "pm-mc-0166"
+    },
+    {
+      "question": "What is the name for a wind that blows up a slope during the day due to solar heating?",
+      "explanation": "An Anabatic wind occurs during the day when the sun warms the mountain slopes, causing the air to rise.",
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "options": [
+        "Katabatic wind",
+        "Föhn wind",
+        "Land breeze",
+        "Anabatic wind"
+      ],
+      "id": "pm-mc-0167"
+    },
+    {
+      "correctAnswer": 1,
+      "options": [
+        "Tropical Continental",
+        "Polar Maritime",
+        "Arctic Maritime",
+        "Tropical Maritime"
+      ],
+      "question": "Which air mass is most common in the UK and typically brings cool, moist air with convective showers?",
+      "type": "multiple_choice",
+      "explanation": "The Polar Maritime air mass originates over the North Atlantic, bringing cool, moist, and unstable air to the UK.",
+      "id": "pm-mc-0168"
+    },
+    {
+      "options": [
+        "The layer where all weather ceases to exist.",
+        "The boundary between the troposphere and the stratosphere.",
+        "The level where pressure is exactly 1013.25 hPa.",
+        "The altitude where the air becomes 100% saturated."
+      ],
+      "explanation": "The tropopause marks the upper limit of the troposphere; below it, temperature generally decreases with height, while above it in the stratosphere, it remains constant or increases.",
+      "question": "What is the definition of the 'Tropopause'?",
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "id": "pm-mc-0169"
+    },
+    {
+      "explanation": "CAVOK is used when visibility is 10km or more, there are no clouds below 5000ft (or the highest Minimum Sector Altitude), and no significant weather.",
+      "options": [
+        "Visibility 10km or more, no clouds below 5000ft (or MSA), and no significant weather.",
+        "Visibility 5km or more, no clouds below 3000ft, and no precipitation.",
+        "Clear skies and visibility 10 nautical miles or more.",
+        "Cloud base above the circuit height and visibility 8km."
+      ],
+      "correctAnswer": 0,
+      "question": "In a METAR, what are the specific criteria required to use the term 'CAVOK'?",
+      "type": "multiple_choice",
+      "id": "pm-mc-0170"
+    },
+    {
+      "question": "What type of cloud and precipitation are most commonly associated with a stable air mass?",
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "options": [
+        "Towering cumulus and heavy rain showers.",
+        "Clear skies and high visibility.",
+        "Layered (stratiform) clouds and steady rain or drizzle.",
+        "Thunderstorms and severe turbulence."
+      ],
+      "explanation": "Stable air resists vertical movement. If forced to rise (e.g., by a hill), it tends to spread out horizontally into layers (stratiform clouds) rather than building vertically.",
+      "id": "pm-mc-0171"
+    },
+    {
+      "explanation": "Frontal fog (or mixing fog) occurs when warm rain falls from the warm air above a frontal surface into the colder, drier air below, saturating it.",
+      "options": [
+        "Radiation fog.",
+        "Advection fog.",
+        "Steaming fog.",
+        "Frontal fog."
+      ],
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "question": "Which type of fog is formed by the evaporation of warm raindrops falling into cooler, drier air near the surface?",
+      "id": "pm-mc-0172"
+    },
+    {
+      "explanation": "Microbursts are intense, localized downdrafts that lead to dangerous low-level windshear, hazardous during takeoff and landing.",
+      "options": [
+        "An intense, localized downdraft that spreads out radially upon reaching the surface.",
+        "A small-scale tornado that only occurs over water.",
+        "The rapid increase in wind speed as an aircraft climbs through an inversion.",
+        "A gust front associated with a fast-moving cold front."
+      ],
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "question": "What is a 'microburst'?",
+      "id": "pm-mc-0173"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "In the Northern Hemisphere, how does the surface wind usually differ from the geostrophic wind due to the effect of surface friction?",
+      "correctAnswer": 2,
+      "options": [
+        "The wind speed increases and the direction veers.",
+        "The wind speed decreases and the direction veers.",
+        "The wind speed decreases and the direction backs.",
+        "The wind speed increases and the direction backs."
+      ],
+      "explanation": "Surface friction slows the wind and causes it to cross isobars at roughly 30° toward lower pressure over land (and about 10° over the sea).",
+      "id": "pm-mc-0174"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What are the standard sea-level pressure and temperature values in the International Standard Atmosphere (ISA)?",
+      "correctAnswer": 1,
+      "options": [
+        "1013.25 hPa and 0°C.",
+        "1013.25 hPa and +15°C.",
+        "1000.00 hPa and +15°C.",
+        "1013.25 hPa and +10°C."
+      ],
+      "explanation": "In the ISA, the pressure at sea level is 1013.25 hPa and the temperature is +15°C.",
+      "id": "pm-mc-0175"
+    },
+    {
+      "question": "Which type of airframe icing is the most hazardous due to its weight, rapid accumulation, and the difficulty of removal?",
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "options": [
+        "Rime ice.",
+        "Clear ice.",
+        "Hoar frost.",
+        "Rain ice."
+      ],
+      "explanation": "Clear ice forms when large supercooled water droplets (often in CB clouds) spread out before freezing, creating a heavy, transparent, and tenacious coating.",
+      "id": "pm-mc-0176"
+    },
+    {
+      "explanation": "A katabatic wind is a nocturnal wind that flows down a slope as the air in contact with the ground cools and becomes denser than the surrounding air.",
+      "options": [
+        "Anabatic wind.",
+        "Sea breeze.",
+        "Föhn wind.",
+        "Katabatic wind."
+      ],
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "question": "What is the name of the wind that flows down a hillside at night due to surface cooling?",
+      "id": "pm-mc-0177"
+    },
+    {
+      "question": "Which air mass is responsible for the 'heatwave' conditions sometimes experienced in the UK during July and August?",
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "options": [
+        "Tropical Continental (tC).",
+        "Tropical Maritime (tM).",
+        "Polar Maritime (pM).",
+        "Arctic Maritime (aM)."
+      ],
+      "explanation": "In the UK, the Tropical Continental air mass originates over North Africa/Sahara and brings the highest summer temperatures.",
+      "id": "pm-mc-0178"
+    },
+    {
+      "explanation": "Thunderstorms (CB) require three things: a supply of moisture, an unstable air mass (lapse rate), and a trigger or 'lifting mechanism' to start the ascent.",
+      "options": [
+        "High pressure, low humidity, and a temperature inversion.",
+        "Stable air, high humidity, and surface heating.",
+        "Moisture, instability, and a lifting agent (trigger).",
+        "Cold temperatures, high pressure, and calm winds."
+      ],
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "question": "What three conditions are necessary for the formation of a cumulonimbus (CB) cloud?",
+      "id": "pm-mc-0179"
+    },
+    {
+      "options": [
+        "Degrees True and knots.",
+        "Degrees Magnetic and knots.",
+        "Degrees True and kilometres per hour.",
+        "Degrees Magnetic and metres per second."
+      ],
+      "explanation": "Wind is quoted in degrees True (referenced to True North) in written reports like METARs and TAFs, but in degrees Magnetic when given by Air Traffic Control.",
+      "question": "In a METAR, what are the units used for wind direction and speed?",
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "id": "pm-mc-0180"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "If the surface temperature is 15°C and the Dew Point is 11°C, there is a 4°C spread. In convective conditions, the cloud base is approximately 400ft per degree spread (4 x 400 = 1600).",
+      "question": "If the surface temperature is 15°C and the Dew Point is 11°C, what is the estimated base of convective cloud?",
+      "correctAnswer": 1,
+      "options": [
+        "800 ft",
+        "1,600 ft",
+        "2,400 ft",
+        "4,000 ft"
+      ],
+      "id": "pm-mc-0181"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "Advection fog forms when warm, moist air moves over a colder surface (land or sea), cooling the air to its dew point.",
+      "correctAnswer": 0,
+      "question": "What is the primary cause of Advection Fog?",
+      "options": [
+        "Warm, moist air moving over a cold surface",
+        "Rapid cooling of the ground on a clear, still night",
+        "Cold air moving over a warm sea surface",
+        "Warm rain falling into cold air near the ground"
+      ],
+      "id": "pm-mc-0182"
+    },
+    {
+      "options": [
+        "A rise in temperature and a backing wind",
+        "A drop in pressure and steady temperature",
+        "A drop in temperature and a veering wind",
+        "Steady pressure and increasing humidity"
+      ],
+      "correctAnswer": 2,
+      "question": "Which of the following describes the typical changes observed during the passage of a cold front?",
+      "explanation": "The passage of a cold front is typically marked by a sharp veer in wind direction (e.g., SW to NW) and a rapid drop in temperature.",
+      "type": "multiple_choice",
+      "id": "pm-mc-0183"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "In the ISA, temperature decreases at a rate of 1.98°C (commonly rounded to 2°C) per 1,000 ft up to the tropopause.",
+      "question": "What is the standard temperature lapse rate in the International Standard Atmosphere (ISA) below the tropopause?",
+      "correctAnswer": 3,
+      "options": [
+        "3°C per 1,000 ft",
+        "1°C per 1,000 ft",
+        "0.5°C per 1,000 ft",
+        "1.98°C per 1,000 ft"
+      ],
+      "id": "pm-mc-0184"
+    },
+    {
+      "explanation": "A SIGMET is a weather advisory issued to notify pilots of potentially hazardous weather phenomena such as severe turbulence or icing.",
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "question": "What does a 'SIGMET' message represent?",
+      "options": [
+        "A routine aerodrome forecast valid for 9 hours",
+        "A warning of significant meteorological phenomena hazardous to all aircraft",
+        "A report of actual weather conditions at a specific airfield",
+        "A forecast specifically for low-level cross-country navigation"
+      ],
+      "id": "pm-mc-0185"
+    },
+    {
+      "explanation": "The 'BECMG' trend indicator is used when weather changes are expected to be permanent and occur at a regular or irregular rate during the period.",
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "question": "In a TAF, the term 'BECMG' indicates:",
+      "options": [
+        "A permanent change in conditions occurring during the specified period",
+        "Temporary fluctuations lasting less than one hour",
+        "A forecast of intermittent heavy showers",
+        "The start of the main TAF validity period"
+      ],
+      "id": "pm-mc-0186"
+    },
+    {
+      "options": [
+        "Widespread heavy rain and low visibility",
+        "Developing thunderstorms and lightning",
+        "Stable air with no vertical movement",
+        "The presence of mountain waves and potential turbulence"
+      ],
+      "question": "What do 'Lenticular' clouds indicate to a pilot?",
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "explanation": "Lenticular clouds (Altocumulus Lenticularis) indicate high-velocity winds at altitude and the presence of mountain wave turbulence.",
+      "id": "pm-mc-0187"
+    },
+    {
+      "explanation": "A 'High' or Anticyclone is generally associated with descending (subsiding) air, which inhibits cloud formation and leads to settled weather.",
+      "type": "multiple_choice",
+      "options": [
+        "Strong winds and heavy precipitation",
+        "Subsiding air and generally settled weather conditions",
+        "Rapidly rising air and convective storms",
+        "Low-level wind shear and cooling temperatures"
+      ],
+      "correctAnswer": 1,
+      "question": "Which of the following is most commonly associated with an Anticyclone?",
+      "id": "pm-mc-0188"
+    },
+    {
+      "question": "What conditions are most conducive to the formation of Radiation Fog?",
+      "correctAnswer": 2,
+      "options": [
+        "Strong winds above 15 knots and overcast skies",
+        "No wind at all and very dry air",
+        "Clear skies, high humidity, and a light wind (2-8 kts)",
+        "Warm air moving rapidly over a cold sea surface"
+      ],
+      "explanation": "Radiation fog requires a clear sky, high humidity, and a light wind (approx. 2-8 knots) to stir the air slightly and spread the cooling.",
+      "type": "multiple_choice",
+      "id": "pm-mc-0189"
+    },
+    {
+      "explanation": "Veering refers to the wind direction changing in a clockwise direction (e.g., West to North-West). Backing is anti-clockwise.",
+      "type": "multiple_choice",
+      "options": [
+        "A clockwise change in direction",
+        "An increase in wind speed",
+        "An anti-clockwise change in direction",
+        "A sudden decrease in wind speed"
+      ],
+      "correctAnswer": 0,
+      "question": "In meteorology, what does the term 'Veering' mean in relation to wind?",
+      "id": "pm-mc-0190"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "Virga is rain that evaporates before reaching the ground, often seen as dark streaks hanging from the base of a cloud.",
+      "options": [
+        "Rain that freezes upon contact with the airframe",
+        "Small pellets of ice falling from a Cumulonimbus",
+        "Precipitation that evaporates before reaching the ground",
+        "A type of low-level cloud associated with drizzle"
+      ],
+      "question": "What is 'Virga'?",
+      "correctAnswer": 2,
+      "id": "pm-mc-0191"
+    },
+    {
+      "options": [
+        "A high-altitude winds and temperatures forecast",
+        "A pilot report of hazardous weather conditions encountered in flight",
+        "A lightning detection system used by air traffic control",
+        "A continuous VHF broadcast of METARs for selected aerodromes"
+      ],
+      "correctAnswer": 3,
+      "question": "What is the purpose of a VOLMET broadcast?",
+      "type": "multiple_choice",
+      "explanation": "The 'S' in VOLMET stands for 'Statistical' or 'Service', providing continuous VHF broadcasts of actual METARs for specific main aerodromes.",
+      "id": "pm-mc-0192"
+    },
+    {
+      "question": "In the Northern Hemisphere, what is the wind direction and flow around an area of High Pressure (Anticyclone) at 3,000 feet AGL?",
+      "explanation": "Above the friction layer in the Northern Hemisphere, air flows clockwise around an area of high pressure, following the isobars.",
+      "correctAnswer": 1,
+      "options": [
+        "Anticlockwise, crossing the isobars towards the centre",
+        "Clockwise, parallel to the isobars",
+        "Clockwise, crossing the isobars away from the centre",
+        "Anticlockwise, parallel to the isobars"
+      ],
+      "type": "multiple_choice",
+      "id": "pm-mc-0193"
+    },
+    {
+      "correctAnswer": 0,
+      "question": "Which of the following conditions is most likely to result in unstable air, leading to good visibility and vertical cloud development?",
+      "explanation": "Lapse rates greater than 3°C/1000ft (the DALR) mean air will continue to rise if displaced, indicating an unstable atmosphere.",
+      "type": "multiple_choice",
+      "options": [
+        "High (Steep) environmental lapse rate",
+        "Low (Shallow) environmental lapse rate",
+        "An isothermal layer",
+        "A temperature inversion"
+      ],
+      "id": "pm-mc-0194"
+    },
+    {
+      "explanation": "Under the influence of the Coriolis force, air moving from High to Low pressure is deflected to the right in the Northern Hemisphere.",
+      "question": "According to Buys Ballot's Law, in the Northern Hemisphere, the Pressure Gradient Force acts to move air from High to Low, but the Coriolis force deflects it:",
+      "correctAnswer": 2,
+      "options": [
+        "To the left",
+        "Directly towards the Low pressure centre",
+        "To the right",
+        "Downwards towards the surface"
+      ],
+      "type": "multiple_choice",
+      "id": "pm-mc-0195"
+    },
+    {
+      "correctAnswer": 0,
+      "question": "When a pilot sets the QNH on the altimeter sub-scale, what does the altimeter indicate?",
+      "explanation": "The QNH is the pressure value set on the altimeter sub-scale so that the instrument indicates altitude above Mean Sea Level (MSL).",
+      "type": "multiple_choice",
+      "options": [
+        "Altitude above Mean Sea Level (MSL)",
+        "Height above the airfield (AGL)",
+        "Pressure altitude relative to the 1013.25 hPa datum",
+        "True altitude corrected for temperature"
+      ],
+      "id": "pm-mc-0196"
+    },
+    {
+      "explanation": "Maritime Polar (mP) air travels over the Atlantic; as it moves over warmer sea towards the UK, it becomes unstable, causing frequent showers.",
+      "question": "Which air mass is most frequently associated with 'bright intervals and heavy showers' across the UK?",
+      "correctAnswer": 3,
+      "options": [
+        "Tropical Continental (tC) air from North Africa",
+        "Polar Continental (pC) air from Siberia",
+        "Tropical Maritime (tM) air from the Azores",
+        "Maritime Polar (mP) air from the North Atlantic Provincial"
+      ],
+      "type": "multiple_choice",
+      "id": "pm-mc-0197"
+    },
+    {
+      "explanation": "A 'backing' wind means the direction is changing in an anti-clockwise direction (e.g., from North to North-West).",
+      "question": "A pilot is told the wind is 'Backing'. What does this mean?",
+      "correctAnswer": 2,
+      "options": [
+        "The wind speed is decreasing",
+        "The wind direction is changing clockwise",
+        "The wind direction is changing anti-clockwise",
+        "The wind speed is increasing in gusts"
+      ],
+      "type": "multiple_choice",
+      "id": "pm-mc-0198"
+    },
+    {
+      "correctAnswer": 1,
+      "explanation": "A TAF (Terminal Aerodrome Forecast) is a prediction of expected weather conditions at a specific airport for a set period.",
+      "question": "What is the definition of a TAF?",
+      "type": "multiple_choice",
+      "options": [
+        "A report of actual weather observed at an airport",
+        "A forecast of weather conditions at an airport for a specific period",
+        "A warning of hazardous weather across a wide flight information region (FIR)",
+        "A chart showing the location of fronts and pressure systems"
+      ],
+      "id": "pm-mc-0199"
+    },
+    {
+      "options": [
+        "When a cold front overtakes a warm front",
+        "When a warm front overtakes a cold front",
+        "When two air masses of the same temperature meet and stall",
+        "When a high-pressure system meets a low-pressure system"
+      ],
+      "type": "multiple_choice",
+      "question": "How is an 'Occlusion' (Occluded Front) formed?",
+      "explanation": "Occluded fronts form when a fast-moving cold front catches up with and lifts a slower-moving warm front.",
+      "correctAnswer": 0,
+      "id": "pm-mc-0200"
+    },
+    {
+      "correctAnswer": 3,
+      "question": "What process causes the formation of Hoar Frost on an aircraft parked outside overnight?",
+      "explanation": "Hoar frost forms when moist air comes into contact with a surface that is already below freezing, causing water vapour to turn directly to ice.",
+      "type": "multiple_choice",
+      "options": [
+        "Freezing rain falling onto the wings",
+        "Flying through a cloud consisting of supercooled water droplets",
+        "Sudden cooling of the air temperature below the dew point",
+        "Water vapour turning directly to ice on a surface that is below 0°C"
+      ],
+      "id": "pm-mc-0201"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Radiational cooling of the valley floor at night",
+        "Solar heating of a hill slope during the day",
+        "A strong pressure gradient across a mountain range",
+        "Cold air descending from a glacier"
+      ],
+      "correctAnswer": 1,
+      "explanation": "An Anabatic wind is caused by the sun heating a hillside, causing the air in contact with the slope to warm and rise.",
+      "question": "What is the primary cause of an 'Anabatic' wind?",
+      "id": "pm-mc-0202"
+    },
+    {
+      "question": "In the International Standard Atmosphere (ISA), what is the pressure at MSL expressed in inches of Mercury?",
+      "explanation": "At ISIT (International Standard Atmosphere) sea level, 1013.25 hPa is approximately 29.92 inches of Mercury (Hg).",
+      "correctAnswer": 2,
+      "options": [
+        "1013.25\" Hg",
+        "15.00\" Hg",
+        "29.92\" Hg",
+        "32.12\" Hg"
+      ],
+      "type": "multiple_choice",
+      "id": "pm-mc-0203"
+    },
+    {
+      "explanation": "Dew Point is the temperature at which air must be cooled (at constant pressure) to become fully saturated (100% Relative Humidity).",
+      "question": "If the ambient air temperature is exactly the same as the Dew Point temperature, what does this indicate?",
+      "correctAnswer": 0,
+      "options": [
+        "The air is saturated and cannot hold any more water vapour",
+        "The air is at its maximum possible temperature for the day",
+        "Cloud will definitely form at the surface",
+        "The air is extremely dry and stable"
+      ],
+      "type": "multiple_choice",
+      "id": "pm-mc-0204"
     }
   ],
   "mocks": []
