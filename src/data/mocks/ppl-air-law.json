@@ -4599,9 +4599,9 @@
       "question": "In the UK Aeronautical Information Service, what colour is used for an Aeronautical Information Circular (AIC) that relates to Safety?",
       "options": [
         "Pink",
-        "Yellow旋",
-        "White旋",
-        "Green旋"
+        "Yellow",
+        "White",
+        "Green"
       ],
       "explanation": "The pink AIC series contains information regarding safety-related topics and operational matters",
       "id": "pal-mc-0354"
@@ -4613,7 +4613,7 @@
       "options": [
         "The aerodrome is unsafe, do not land",
         "Cleared to land",
-        "Give way to other aircraft and continue circling旋",
+        "Give way to other aircraft and continue circling",
         "Return for landing followed by a steady green light"
       ],
       "explanation": "A steady red light directed at an aircraft in flight means the pilot must give way to other aircraft and continue circling",
@@ -4622,10 +4622,10 @@
     {
       "question": "The UK Aeronautical Information Publication (AIP) is divided into which three main sections?",
       "options": [
-        "GEN, COM, MET旋",
-        "AGA, COM, MET旋",
-        "AD, ENR, AGA旋",
-        "GEN, ENR, AD旋 stories"
+        "GEN, COM, MET",
+        "AGA, COM, MET",
+        "AD, ENR, AGA",
+        "GEN, ENR, AD stories"
       ],
       "explanation": "GEN (General) covers administrative and legal info; ENR (En-Route) covers airspace; AD (Aerodromes) covers specific details of airports",
       "type": "multiple_choice",
@@ -4633,11 +4633,11 @@
       "id": "pal-mc-0356"
     },
     {
-      "question": "Which Transponder code should be used to indicate that an aircraft is being subjected to unlawful interference?旋",
+      "question": "Which Transponder code should be used to indicate that an aircraft is being subjected to unlawful interference?",
       "options": [
-        "7500旋",
-        "7600旋旋",
-        "7700旋旋旋",
+        "7500",
+        "7600",
+        "7700",
         "7000"
       ],
       "explanation": "The squawk code 7500 is the international code used to signal that an aircraft is a victim of unlawful interference (hijack)",
@@ -4649,9 +4649,9 @@
       "explanation": "A red flare fired from the ground, regardless of the time of day, means 'Do not land for the time being'",
       "options": [
         "The aerodrome is closed",
-        "Do not land for the time being旋",
-        "Your aircraft is damaged, land immediately旋",
-        "Give way to other aircraft in the circuit旋"
+        "Do not land for the time being",
+        "Your aircraft is damaged, land immediately",
+        "Give way to other aircraft in the circuit"
       ],
       "question": "What is the meaning of a red flare fired from the ground toward an aircraft in flight?",
       "correctAnswer": 1,
@@ -4661,8 +4661,8 @@
     {
       "explanation": "A series of green flashes directed at an aircraft in flight means 'Return for landing' and wait for a steady green to land",
       "options": [
-        "Cleared to land旋",
-        "Give way to other aircraft旋旋旋",
+        "Cleared to land",
+        "Give way to other aircraft",
         "Return for landing",
         "Land at this aerodrome and proceed to the apron"
       ],
@@ -4678,7 +4678,7 @@
         "Take-offs and landings must be on a runway, but movement on the ground is not restricted to paved surfaces",
         "Aircraft are only allowed to move on paved surfaces at all times",
         "The aerodrome is closed to all movements",
-        " Glider flying is in progress"
+        "Glider flying is in progress"
       ],
       "correctAnswer": 0,
       "type": "multiple_choice",

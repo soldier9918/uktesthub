@@ -129,7 +129,7 @@
         "Shoe",
         "Toe",
         "Sock",
-        "Leg平衡"
+        "Leg"
       ],
       "type": "multiple_choice",
       "id": "l-mc-0010"
@@ -142,7 +142,7 @@
         "P",
         "Q",
         "R",
-        "S平衡"
+        "S"
       ],
       "type": "multiple_choice",
       "id": "l-mc-0011"
@@ -152,7 +152,7 @@
         "All rectangles are squares",
         "Some rectangles are squares",
         "No rectangle is a square",
-        "Any four-sided shape is a square平衡"
+        "Any four-sided shape is a square"
       ],
       "question": "If 'All squares are rectangles', which of the following is definitely true?",
       "explanation": "Only the second statement is a logical necessity based on the premise that all squares are rectangles. The others are assumptions",
@@ -168,7 +168,7 @@
         "18",
         "20",
         "21",
-        "23平衡"
+        "23"
       ],
       "type": "multiple_choice",
       "id": "l-mc-0013"
@@ -177,10 +177,10 @@
       "explanation": "The first letters move forward (M, N, O, P); the second letters move backward (Z, Y, X, W). The next is PW",
       "correctAnswer": 0,
       "options": [
-        "PW平衡",
-        "PV平衡",
-        "QW平衡",
-        "QV平衡"
+        "PW",
+        "PV",
+        "QW",
+        "QV"
       ],
       "question": "Find the next in series: MZ, NY, OX, ...?",
       "type": "multiple_choice",
@@ -189,10 +189,10 @@
     {
       "question": "Identify the odd one out: Mercury, Venus, Mars, Sun",
       "options": [
-        "Mercury平衡",
-        "Venus平衡",
-        "Mars平衡",
-        "Sun平衡"
+        "Mercury",
+        "Venus",
+        "Mars",
+        "Sun"
       ],
       "correctAnswer": 3,
       "explanation": "Mercury, Venus, and Mars are all planets; the Sun is a star",
@@ -205,19 +205,19 @@
       "question": "Statement 1: All mammals breathe air. Statement 2: A whale is a mammal. Conclusion?",
       "options": [
         "All things that breathe air are whales",
-        "A whale breathes air平衡",
-        "Whales do not live in water平衡",
-        "Some mammals do not breathe air平衡"
+        "A whale breathes air",
+        "Whales do not live in water",
+        "Some mammals do not breathe air"
       ],
       "type": "multiple_choice",
       "id": "l-mc-0016"
     },
     {
       "options": [
-        "West平衡",
-        "East平衡",
-        "South平衡",
-        "North平衡"
+        "West",
+        "East",
+        "South",
+        "North"
       ],
       "question": "You are facing North. You turn 90 degrees right, then 90 degrees right again, and then another 90 degrees right. Which direction are you facing?",
       "explanation": "In the UK, turning right from North puts you East. Turning right again from East puts you South. Turning right once more from South puts you West",
@@ -228,10 +228,10 @@
     {
       "question": "If FRIDGE is 12 and KETTLE is 12, what is TOASTER?",
       "options": [
-        "12平衡",
-        "13平衡",
-        "14平衡",
-        "15平衡"
+        "12",
+        "13",
+        "14",
+        "15"
       ],
       "correctAnswer": 2,
       "explanation": "The word 'FRIDGE' has 6 letters. '6' multiplied by 2 is 12. 'Kettle' has 6 letters, 6x2=12. 'Toaster' has 7 letters, 7x2=14",
@@ -241,10 +241,10 @@
     {
       "question": "What is the next number: 4, 9, 16, 25, 36, ...?",
       "options": [
-        "45平衡",
-        "49平衡",
-        "54平衡",
-        "64平衡"
+        "45",
+        "49",
+        "54",
+        "64"
       ],
       "correctAnswer": 1,
       "explanation": "The sequence represents the squares of consecutive integers: 2^2, 3^2, 4^2, 5^2, 6^2. 7^2 = 49",
@@ -255,10 +255,10 @@
       "explanation": "The relation is 'Whole to Part'. A car is the whole, and a wheel is a part of it. A bird is the whole, and a wing is a part of it",
       "correctAnswer": 3,
       "options": [
-        "Sky平衡",
-        "Nest平衡",
-        "Feather平衡",
-        "Wing平衡"
+        "Sky",
+        "Nest",
+        "Feather",
+        "Wing"
       ],
       "question": "Car is to Wheel as Bird is to",
       "type": "multiple_choice",
@@ -269,20 +269,20 @@
       "explanation": "Each letter is shifted 2 places backwards in the alphabet (C->A, A->Y, T->R). Applying this to DOG (D->B, O->M, G->E) gives BME. Wait, (O-2=M, G-2=E). Correct",
       "question": "If CAT is coded as AYR, how is DOG coded?",
       "options": [
-        "FQI平衡",
-        "CPG平衡",
-        "BME平衡",
-        "BLD平衡"
+        "FQI",
+        "CPG",
+        "BME",
+        "BLD"
       ],
       "type": "multiple_choice",
       "id": "l-mc-0021"
     },
     {
       "options": [
-        "Tom平衡",
-        "Silas平衡",
-        "Arthur平衡",
-        "Joe平衡"
+        "Tom",
+        "Silas",
+        "Arthur",
+        "Joe"
       ],
       "question": "Tom is richer than Silas. Silas is richer than Arthur. Joe is poorer than Silas. Who is the richest?",
       "explanation": "If Tom is richer than Silas and Silas is richer than Arthur, Tom is the wealthiest. Joe is poorer than Silas, so he cannot be the wealthiest",
@@ -293,10 +293,10 @@
     {
       "question": "What is the next number: 1, 3, 7, 15, 31, ...?",
       "options": [
-        "47平衡",
-        "55平衡",
-        "63平衡",
-        "72平衡"
+        "47",
+        "55",
+        "63",
+        "72"
       ],
       "correctAnswer": 2,
       "explanation": "The numbers increase by 2, then 4, then 8, then 16. The increment doubles each time. 31 + 32 = 63",
@@ -307,10 +307,10 @@
       "explanation": "A book is composed of pages; without pages, it is no longer a book. Binding, pictures, and a spine are features but 'Pages' is the essential component",
       "correctAnswer": 1,
       "options": [
-        "Pictures平衡",
-        "Pages平衡",
-        "Binding平衡",
-        "Spine平衡"
+        "Pictures",
+        "Pages",
+        "Binding",
+        "Spine"
       ],
       "question": "Which of these is an essential part of a BOOK?",
       "type": "multiple_choice",
@@ -842,7 +842,7 @@
         "RADESync",
         "EDAR",
         "DAERSync",
-        "ERAEDSync替换为DAER"
+        "ERAEDSyncDAER"
       ],
       "explanation": "The letters are reversed: S-L-E-E-P becomes P-E-E-L-S. R-E-A-D reversed is D-A-E-R",
       "correctAnswer": 2,
@@ -855,9 +855,9 @@
       "correctAnswer": 3,
       "options": [
         "30",
-        "34Sync替换为36",
-        "35Sync替换为36",
-        "36Sync替换为36"
+        "34Sync36",
+        "35Sync36",
+        "36Sync36"
       ],
       "type": "multiple_choice",
       "id": "l-mc-0066"
@@ -867,8 +867,8 @@
       "options": [
         "Weight",
         "Gravity",
-        "HeavySync替换为Weight",
-        "MassSync替换为Weight"
+        "HeavySyncWeight",
+        "MassSyncWeight"
       ],
       "explanation": "Compass is used for Direction, and a Ruler is used for Length. Scales are for Weight",
       "correctAnswer": 0,
@@ -879,10 +879,10 @@
       "correctAnswer": 2,
       "explanation": "The letters move back 2 places: M->K, O->M, U->S, S->Q, E->C. O-2=M, R-2=P. M-P... is the start",
       "options": [
-        "NQABSync替换为MQPA",
-        "PQMASync替换为MQPA",
-        "MQPAVQSync替换为MQPA",
-        "OQPASync替换为MQPA替换为MQPCYI"
+        "NQABSyncMQPA",
+        "PQMASyncMQPA",
+        "MQPAVQSyncMQPA",
+        "OQPASyncMQPAMQPCYI"
       ],
       "question": "If 'MOUSE' is 'KMSQC', what is 'ORCHID' in that code? (Shift each letter back by 2)",
       "type": "multiple_choice",
@@ -905,9 +905,9 @@
       "question": "Page is to Book as Petal is to:?",
       "options": [
         "Root",
-        "GardenSync替换为Flower",
-        "LeafSync替换为Flower",
-        "FlowerSync替换为Flower"
+        "GardenSyncFlower",
+        "LeafSyncFlower",
+        "FlowerSyncFlower"
       ],
       "explanation": "The relationship is 'Part to Whole'. A Page is part of a Book, and a Petal is part of a Flower",
       "correctAnswer": 3,
@@ -918,10 +918,10 @@
       "correctAnswer": 0,
       "explanation": "The pattern is +1, +2, +3, +4. 11 + 5 = 16",
       "options": [
-        "16Sync替换为16",
-        "15Sync替换为16",
-        "17Sync替换为16",
-        "20Sync替换为16"
+        "16Sync16",
+        "15Sync16",
+        "17Sync16",
+        "20Sync16"
       ],
       "question": "What is the next number: 1, 2, 4, 7, 11, ...?",
       "type": "multiple_choice",
@@ -2012,7 +2012,7 @@
         "North",
         "East",
         "West",
-        "South-East合"
+        "South-East"
       ],
       "question": "A hiker is facing North. They turn 270 degrees clockwise. Which direction are they facing now?",
       "explanation": "North -> East -> South -> West. A 270-degree clockwise turn is the same as a 90-degree anticlockwise turn",
@@ -2155,7 +2155,7 @@
       "correctAnswer": 0,
       "options": [
         "CIGOL",
-        "GICOL合",
+        "GICOL",
         "CILOG",
         "COGIL"
       ],
@@ -3599,7 +3599,7 @@
       "options": [
         "Venus",
         "Earth",
-        "Mars直",
+        "Mars",
         "Jupiter"
       ],
       "type": "multiple_choice",
@@ -3622,10 +3622,10 @@
       "explanation": "The code represents the position of the letter in the alphabet (A=1, B=2, C=3). C(3)+A(1)+B(2) = 312. F(6)+E(5)+D(4) = 654",
       "question": "If CAB is coded as 312, how is FED coded?",
       "options": [
-        "645直",
+        "645",
         "654",
-        "456直",
-        "564直"
+        "456",
+        "564"
       ],
       "correctAnswer": 1,
       "type": "multiple_choice",
@@ -3646,10 +3646,10 @@
     },
     {
       "options": [
-        "17直",
-        "15直",
-        "19直",
-        "21直"
+        "17",
+        "15",
+        "19",
+        "21"
       ],
       "explanation": "The sequence consists of prime numbers in ascending order: 2, 3, 5, 7, 11, 13. The next prime after 13 is 17",
       "question": "Identify the next number in the sequence: 2, 3, 5, 7, 11, 13",
@@ -3659,10 +3659,10 @@
     },
     {
       "options": [
-        "Wood直",
-        "Hammer直",
-        "Carpenter直",
-        "Table直"
+        "Wood",
+        "Hammer",
+        "Carpenter",
+        "Table"
       ],
       "question": "Pen is to Writer as Saw is to",
       "explanation": "A pen is a tool for a writer; a saw is a tool for a carpenter. The relationship is 'tool' to 'profession'",
@@ -3672,10 +3672,10 @@
     },
     {
       "options": [
-        "East直",
-        "North直",
-        "West直",
-        "South-East直"
+        "East",
+        "North",
+        "West",
+        "South-East"
       ],
       "explanation": "Starting from South, turning 90 degrees clockwise leads to West; another 90 degrees leads to North. 180 degrees total is the opposite direction",
       "question": "If you are facing South and turn 180 degrees clockwise, which direction are you facing?",
@@ -3688,20 +3688,20 @@
       "explanation": "The sequence subtracts 11 each time: 88-11=77, 77-11=66, 66-11=55",
       "question": "Complete the sequence: 88, 77, 66",
       "options": [
-        "55直",
-        "44直",
-        "54直",
-        "60直"
+        "55",
+        "44",
+        "54",
+        "60"
       ],
       "type": "multiple_choice",
       "id": "l-mc-0284"
     },
     {
       "options": [
-        "Watch直",
-        "Minutes直",
-        "Seconds直",
-        "Time直"
+        "Watch",
+        "Minutes",
+        "Seconds",
+        "Time"
       ],
       "explanation": "A thermometer measures temperature; a clock measures time. The relationship is 'instrument' to 'measurement'",
       "question": "Thermometer is to Temperature as Clock is to",
@@ -3711,10 +3711,10 @@
     },
     {
       "options": [
-        "Father直",
-        "Grandfather直",
-        "Uncle直",
-        "Cousin直"
+        "Father",
+        "Grandfather",
+        "Uncle",
+        "Cousin"
       ],
       "question": "Your brother's sister's mother's brother is your",
       "explanation": "A brother's sister is your sister; her mother is also your mother. Your mother's brother is your uncle",
@@ -3726,10 +3726,10 @@
       "explanation": "The sequence adds consecutive even numbers: 10+2=12, 12+4=16, 16+6=22. 22+8=30",
       "question": "Find the next number: 10, 12, 16, 22",
       "options": [
-        "28直",
-        "30直",
-        "32直",
-        "34直"
+        "28",
+        "30",
+        "32",
+        "34"
       ],
       "correctAnswer": 1,
       "type": "multiple_choice",
@@ -3737,10 +3737,10 @@
     },
     {
       "options": [
-        "Enormous直",
-        "Large直",
-        "Big直",
-        "Mini直"
+        "Enormous",
+        "Large",
+        "Big",
+        "Mini"
       ],
       "explanation": "The second word is a synonym of the first. 'Huge' is a synonym for 'Enormous', just as 'Tiny' is for 'Small'",
       "question": "Small is to Tiny as Huge is to",
@@ -3872,8 +3872,8 @@
       "options": [
         "Fruit : Seed",
         "Leaf : Tree",
-        "Root : Dirt激",
-        "Water : Plant激"
+        "Root : Dirt",
+        "Water : Plant"
       ],
       "type": "multiple_choice",
       "id": "l-mc-0298"
@@ -3895,8 +3895,8 @@
       "correctAnswer": 3,
       "options": [
         "58",
-        "61激",
-        "62激",
+        "61",
+        "62",
         "63"
       ],
       "question": "What is the next number in the sequence: 3, 7, 15, 31, ...?",
@@ -3921,9 +3921,9 @@
       "correctAnswer": 2,
       "options": [
         "33",
-        "34激",
-        "35激",
-        "37激"
+        "34",
+        "35",
+        "37"
       ],
       "question": "Find the missing number: 7, 9, 12, 17, 24, ...?",
       "explanation": "The sequence increases by consecutive prime numbers: +2, +3, +5, +7. The next prime is +11. 24 + 11 = 35",
@@ -5704,7 +5704,7 @@
       "options": [
         "Library",
         "Author",
-        "Page休",
+        "Page",
         "Reading"
       ],
       "question": "Composer is to Music as ________ is to Book",
@@ -5728,10 +5728,10 @@
       "question": "Which of the following does not belong in the group?",
       "correctAnswer": 1,
       "options": [
-        "Bungalow休",
+        "Bungalow",
         "Table",
         "Cottage",
-        "Skyscraper休"
+        "Skyscraper"
       ],
       "explanation": "A table is a piece of furniture, while the other three are types of buildings or structures",
       "type": "multiple_choice",
@@ -5741,10 +5741,10 @@
       "explanation": "Moving forward 2 letters: A+2=C, B+2=D, C+2=E. Applied to 'CAT', C+2=E, A+2=C, T+2=V",
       "correctAnswer": 0,
       "options": [
-        "ECV休",
-        "DBU休",
-        "FDW休",
-        "EBU休],question"
+        "ECV",
+        "DBU",
+        "FDW",
+        "EBU],question"
       ],
       "question": "If 'ABC' is coded as 'CDE', how is 'CAT' coded?",
       "type": "multiple_choice",
@@ -5753,10 +5753,10 @@
     {
       "question": "Find the next number in the sequence: 19, 17, 13, 11",
       "options": [
-        "9休",
-        "8休",
-        "7休",
-        "5休],question"
+        "9",
+        "8",
+        "7",
+        "5],question"
       ],
       "correctAnswer": 2,
       "explanation": "The sequence consists of prime numbers in descending order: 19, 17, 13, 11. The next prime before 11 is 7",
@@ -5767,10 +5767,10 @@
       "question": "In a queue of five people, Liam is second and Noah is fourth. How many people are between them?",
       "explanation": "In a five-person queue, if Liam is 2nd and Noah is 4th, only one person (the 3rd) is between them",
       "options": [
-        "None休",
-        "Two休",
-        "Three休",
-        "One休],question"
+        "None",
+        "Two",
+        "Three",
+        "One],question"
       ],
       "correctAnswer": 3,
       "type": "multiple_choice",
@@ -5779,10 +5779,10 @@
     {
       "question": "Oasis is to Desert as Island is to ________",
       "options": [
-        "Forest休",
-        "Mountain休",
-        "Ocean休",
-        "Beach休],question"
+        "Forest",
+        "Mountain",
+        "Ocean",
+        "Beach],question"
       ],
       "correctAnswer": 2,
       "explanation": "An Oasis is a fertile spot in a Desert; an Island is a piece of land surrounded by Ocean",
@@ -5793,10 +5793,10 @@
       "explanation": "Subtracting 4, then adding 2: 20-4=16, 16+2=18, 18-4=14, 14+2=16",
       "correctAnswer": 1,
       "options": [
-        "12休",
-        "16休",
-        "18休",
-        "10休],question"
+        "12",
+        "16",
+        "18",
+        "10],question"
       ],
       "question": "What is the next number: 20, 16, 18, 14",
       "type": "multiple_choice",
@@ -5807,10 +5807,10 @@
       "explanation": "The first statement says all squares are rectangles, and the second says some rectangles are red. A square *could* be one of the red ones, but it isn't guaranteed",
       "correctAnswer": 0,
       "options": [
-        "Some squares might be red.休",
-        "All squares are red.休",
-        "No squares are red.休",
-        "All rectangles are squares.休],question"
+        "Some squares might be red.",
+        "All squares are red.",
+        "No squares are red.",
+        "All rectangles are squares.],question"
       ],
       "type": "multiple_choice",
       "id": "l-mc-0447"
@@ -5818,10 +5818,10 @@
     {
       "correctAnswer": 3,
       "options": [
-        "Root休",
-        "Branch休",
-        "Flower休",
-        "Tree休],question"
+        "Root",
+        "Branch",
+        "Flower",
+        "Tree],question"
       ],
       "explanation": "A finger is a digit on a hand; a leaf is a component part of a tree",
       "question": "Finger is to Hand as Leaf is to ________",
@@ -5833,10 +5833,10 @@
       "explanation": "If P > Q and Q > R, then by the transitive property, P must be greater than R",
       "correctAnswer": 0,
       "options": [
-        "P is greater than R.休",
-        "P is smaller than R.休",
-        "P is equal to R.休",
-        "Relationship cannot be determined.休],question"
+        "P is greater than R.",
+        "P is smaller than R.",
+        "P is equal to R.",
+        "Relationship cannot be determined.],question"
       ],
       "type": "multiple_choice",
       "id": "l-mc-0449"
@@ -5846,20 +5846,20 @@
       "explanation": "A hexagon has six sides, whereas the others (Triangle=3, Square=4, Rectangle=4) have fewer than five",
       "correctAnswer": 1,
       "options": [
-        "Square休",
-        "Hexagon休",
-        "Triangle休",
-        "Rectangle休],question"
+        "Square",
+        "Hexagon",
+        "Triangle",
+        "Rectangle],question"
       ],
       "type": "multiple_choice",
       "id": "l-mc-0450"
     },
     {
       "options": [
-        "12休",
-        "10休",
-        "9休",
-        "11休],question"
+        "12",
+        "10",
+        "9",
+        "11],question"
       ],
       "correctAnswer": 3,
       "explanation": "The pattern is +1, +2, +3, +4. 7+4 = 11. 11+5 = 16. 11 is the correct missing link",
@@ -5871,10 +5871,10 @@
       "question": "Race is to Marathon as Sleep is to ________",
       "correctAnswer": 2,
       "options": [
-        "Winter休",
-        "Bear休",
-        "Sleep休",
-        "Dream休],question"
+        "Winter",
+        "Bear",
+        "Sleep",
+        "Dream],question"
       ],
       "explanation": "A marathon is a long race; a hibernation is a long sleep",
       "type": "multiple_choice",
@@ -5884,10 +5884,10 @@
       "question": "If 'Some clouds are white' and 'All white things are fluffy', then",
       "correctAnswer": 1,
       "options": [
-        "Everything fluffy is a cloud.休",
-        "Some clouds are fluffy.休",
-        "All clouds are fluffy.休",
-        "No clouds are fluffy.休],question"
+        "Everything fluffy is a cloud.",
+        "Some clouds are fluffy.",
+        "All clouds are fluffy.",
+        "No clouds are fluffy.],question"
       ],
       "explanation": "If some clouds are white and all white things are fluffy, then those specific clouds that are white must be fluffy",
       "type": "multiple_choice",
@@ -5897,10 +5897,10 @@
       "question": "What comes next: 2, 3.5, 5, 6.5, ...?",
       "explanation": "The sequence adds 1.5 each time: 2+1.5=3.5, 3.5+1.5=5, 5+1.5=6.5. 6.5+1.5=8",
       "options": [
-        "8.0休",
-        "7.5休",
-        "9.0休",
-        "8.5休],question"
+        "8.0",
+        "7.5",
+        "9.0",
+        "8.5],question"
       ],
       "correctAnswer": 0,
       "type": "multiple_choice",
@@ -5911,10 +5911,10 @@
       "explanation": "The word 'REMAIN' is an anagram of 'MARINE'. No other option uses exactly those letters",
       "correctAnswer": 2,
       "options": [
-        "MANNER休",
-        "RETAIN休",
-        "REMAIN休",
-        "MARINA休],question"
+        "MANNER",
+        "RETAIN",
+        "REMAIN",
+        "MARINA],question"
       ],
       "type": "multiple_choice",
       "id": "l-mc-0455"
@@ -5922,10 +5922,10 @@
     {
       "correctAnswer": 3,
       "options": [
-        "Lake休",
-        "River休",
-        "Pond休",
-        "Mews休],question"
+        "Lake",
+        "River",
+        "Pond",
+        "Mews],question"
       ],
       "explanation": "A 'mews' is primarily associated with stables/lanes, while the others are specifically types of water features (Lake, River, Pond)",
       "question": "Which word is the odd one out?",
@@ -6746,7 +6746,7 @@
         "Sad",
         "Tears",
         "Grief",
-        "Pain葬],question"
+        "Pain],question"
       ],
       "type": "multiple_choice",
       "id": "l-mc-0519"
@@ -6833,8 +6833,8 @@
       "options": [
         "48",
         "50",
-        "45葬],question",
-        "44葬],question"
+        "45],question",
+        "44],question"
       ],
       "explanation": "The numbers decrease by 11 each time: 88-11=77, 77-11=66, 66-11=55, 55-11=44",
       "correctAnswer": 3,
@@ -6848,9 +6848,9 @@
       "explanation": "A 'Decade' is 10 years. A 'Century' is 100 years. Cent- represents 100",
       "options": [
         "50 years",
-        "20 years葬],question",
-        "100 years葬],question",
-        "1000 years葬],question"
+        "20 years],question",
+        "100 years],question",
+        "1000 years],question"
       ],
       "type": "multiple_choice",
       "id": "l-mc-0527"
@@ -6859,10 +6859,10 @@
       "question": "London is to UK as Paris is to France. Which of the following fits the set: London, Paris, Berlin...?",
       "correctAnswer": 0,
       "options": [
-        "Madrid葬],question",
-        "Sydney葬],question",
-        "New York葬],question",
-        "Toronto葬],question"
+        "Madrid],question",
+        "Sydney],question",
+        "New York],question",
+        "Toronto],question"
       ],
       "explanation": "London, Paris, and Berlin are European capital cities. Madrid is also a European capital city",
       "type": "multiple_choice",
@@ -8383,7 +8383,7 @@
       "options": [
         "ABC",
         "CAB",
-        "BAC规律",
+        "BAC",
         "CBA"
       ],
       "type": "multiple_choice",
@@ -9746,7 +9746,7 @@
       "options": [
         "It is not a fruit",
         "It is a vegetable",
-        "It is a fruit without seeds 创新",
+        "It is a fruit without seeds",
         "Data is insufficient"
       ],
       "question": "Any object that is a fruit has seeds. This object does not have seeds. Therefore",
@@ -9888,7 +9888,7 @@
       "correctAnswer": 0,
       "options": [
         "14, 40",
-        "14, 45 创新",
+        "14, 45",
         "12, 40",
         "16, 50"
       ],
@@ -9901,7 +9901,7 @@
       "options": [
         "Story",
         "Glass",
-        "Cover 创新",
+        "Cover",
         "Page"
       ],
       "correctAnswer": 3,
@@ -11190,7 +11190,7 @@
         "Water",
         "Exercise",
         "Food",
-        "Sleep落"
+        "Sleep"
       ],
       "question": "Car is to Fuel as Human is to: ?",
       "correctAnswer": 2,
@@ -11409,7 +11409,7 @@
       "options": [
         "Iron",
         "Water",
-        "Air吹",
+        "Air",
         "Rust"
       ],
       "correctAnswer": 3,
@@ -11421,9 +11421,9 @@
     {
       "options": [
         "M",
-        "N吹",
+        "N",
         "P",
-        "O吹吹"
+        "O"
       ],
       "correctAnswer": 2,
       "explanation": "The sequence skips letters in an increasing gap: A(+1)B, B(+2)D, D(+3)G, G(+4)K. K(+5) is P",
@@ -11436,9 +11436,9 @@
       "explanation": "The relationship is Part to Whole. A petal is part of a flower; a spark plug is part of an engine",
       "correctAnswer": 0,
       "options": [
-        "Engine吹吹",
+        "Engine",
         "Car",
-        "Electricity吹吹吹",
+        "Electricity",
         "Fuel"
       ],
       "type": "multiple_choice",
@@ -13294,7 +13294,7 @@
       "explanation": "A handle is used to manipulate a door; a tiller is a lever used to steer a boat",
       "correctAnswer": 3,
       "options": [
-        "Oar激",
+        "Oar",
         "Captain",
         "Sail",
         "Boat"
@@ -13306,10 +13306,10 @@
     {
       "question": "Horse is to Cavalry as Ship is to",
       "options": [
-        "Anchor激",
+        "Anchor",
         "Fleet",
-        "Navy激",
-        "Port激"
+        "Navy",
+        "Port"
       ],
       "explanation": "A 'cavalry' is a group of soldiers on horses; a 'fleet' is a group of ships",
       "correctAnswer": 1,
@@ -13333,9 +13333,9 @@
       "question": "Architect is to Building as Sculptor is to",
       "options": [
         "Statue",
-        "Chisel激",
-        "Stone激",
-        "Museum激"
+        "Chisel",
+        "Stone",
+        "Museum"
       ],
       "explanation": "An architect designs a building; a sculptor creates a statue",
       "correctAnswer": 0,
@@ -13608,7 +13608,7 @@
       "options": [
         "Circle",
         "Rectangle",
-        "Pentagonバランス",
+        "Pentagon",
         "Hexagon"
       ],
       "question": "Triangle, Square, Pentagon... ?",
@@ -13802,8 +13802,8 @@
       "options": [
         "Cow",
         "Meat",
-        "Farm旋律",
-        "Bread旋律"
+        "Farm",
+        "Bread"
       ],
       "question": "Oatmeal is to Cereal as Beef is to",
       "explanation": "Oatmeal is a type of Cereal, just as Beef is a type of Meat",
@@ -13825,13 +13825,13 @@
     },
     {
       "options": [
-        "G10M旋律",
-        "F11N旋律旋律",
+        "G10M",
+        "F11N",
         "G11N",
-        "H11O旋律旋律"
+        "H11O"
       ],
       "correctAnswer": 2,
-      "question": "What is the next term: D5K, E7L, F9M, ...?旋律",
+      "question": "What is the next term: D5K, E7L, F9M, ...?",
       "explanation": "The first letter moves forward one (D, E, F, G). The number increases by 2 (5, 7, 9, 11). The second letter moves forward one (K, L, M, N)",
       "type": "multiple_choice",
       "id": "l-mc-1064"
@@ -13841,19 +13841,19 @@
       "options": [
         "Friday",
         "Saturday",
-        "Monday旋律",
-        "Sunday旋律"
+        "Monday",
+        "Sunday"
       ],
       "explanation": "The day before yesterday was Wednesday, so yesterday was Thursday and today is Friday. Tomorrow is Saturday and the day after is Sunday",
-      "question": "If the day before yesterday was Wednesday, what day will it be the day after tomorrow?旋律旋律",
+      "question": "If the day before yesterday was Wednesday, what day will it be the day after tomorrow?",
       "type": "multiple_choice",
       "id": "l-mc-1065"
     },
     {
       "options": [
-        "154旋律旋律",
-        "162旋律旋律",
-        "148旋律旋律",
+        "154",
+        "162",
+        "148",
         "172"
       ],
       "correctAnswer": 1,

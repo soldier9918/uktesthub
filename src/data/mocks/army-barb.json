@@ -423,9 +423,9 @@
     {
       "options": [
         "North-East",
-        "South-East均衡",
-        "North-West均衡",
-        "East均衡"
+        "South-East",
+        "North-West",
+        "East"
       ],
       "explanation": "90 degrees clockwise from South is West; another 45 degrees reaches North-West",
       "question": "A soldier is facing South. They turn 135 degrees clockwise. Which direction are they facing? (Note: A full circle is 360 degrees)",
@@ -452,9 +452,9 @@
       "question": "If 3 packs of rations cost £6.00, what is the cost of 7 packs?",
       "options": [
         "£12",
-        "£18均衡",
+        "£18",
         "£15",
-        "£14均衡"
+        "£14"
       ],
       "explanation": "Each pack costs £2 (6 / 3 = 2). Seven packs would cost £14 (7 x 2 = 14)",
       "id": "ab-mc-0035"
@@ -3259,9 +3259,9 @@
       "explanation": "The compass moves 90 degrees clockwise each time: North, East, South, West",
       "options": [
         "West",
-        "North-West吹",
-        "North-East吹",
-        "South-West吹吹"
+        "North-West",
+        "North-East",
+        "South-West"
       ],
       "correctAnswer": 0,
       "type": "multiple_choice",
