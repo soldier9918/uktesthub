@@ -1043,6 +1043,162 @@
       ],
       "type": "multiple_choice",
       "id": "cc-mc-0080"
+    },
+    {
+      "correctAnswer": 1,
+      "question": "What is the standard daily cost for the Congestion Charge if paid on the day of travel?",
+      "options": [
+        "£12.50",
+        "£15.00",
+        "£17.50",
+        "£20.00"
+      ],
+      "type": "multiple_choice",
+      "explanation": "The daily charge for the Congestion Charge is £15 if paid in advance or on the day of travel.",
+      "id": "cc-mc-0081"
+    },
+    {
+      "question": "During which festive period is the Congestion Charge zone suspended?",
+      "correctAnswer": 3,
+      "explanation": "The Congestion Charge is suspended every year from Christmas Day (25 December) through to New Year's Day bank holiday inclusive.",
+      "type": "multiple_choice",
+      "options": [
+        "Christmas Day only",
+        "Christmas Day and Boxing Day only",
+        "New Year's Day only",
+        "Christmas Day to New Year's Day inclusive"
+      ],
+      "id": "cc-mc-0082"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "£80",
+        "£60",
+        "£100",
+        "£160"
+      ],
+      "explanation": "If you pay a PCN within 14 days of the date of service, the fine is reduced by 50% to £80.",
+      "question": "If you receive a Penalty Charge Notice (PCN), how much is the fine if paid within 14 days?",
+      "correctAnswer": 0,
+      "id": "cc-mc-0083"
+    },
+    {
+      "question": "Which specific group can claim a reimbursement of the Congestion Charge for journeys to hospital appointments?",
+      "correctAnswer": 2,
+      "explanation": "NHS patients who are clinically assessed as too ill to travel by public transport may be eligible for a full reimbursement of the charge.",
+      "type": "multiple_choice",
+      "options": [
+        "The elderly over 75",
+        "Students in full-time education",
+        "NHS patients assessed as too ill to use public transport",
+        "Low-income families on Universal Credit"
+      ],
+      "id": "cc-mc-0084"
+    },
+    {
+      "explanation": "Vans and lorries are subject to the Congestion Charge if they are driven within the zone during operating hours, unless they qualify for a specific discount.",
+      "options": [
+        "They are always exempt",
+        "They only pay on weekdays",
+        "They must pay the daily charge unless they have an exemption",
+        "They only pay if they exceed 3.5 tonnes"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "question": "How does the Congestion Charge apply to commercial delivery vans?",
+      "id": "cc-mc-0085"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "12:00 - 18:00",
+        "07:00 - 18:00",
+        "08:00 - 20:00",
+        "10:00 - 16:00"
+      ],
+      "explanation": "The Congestion Charge operates from 12:00 to 18:00 (midday to 6pm) on Saturdays, Sundays, and bank holidays.",
+      "question": "What are the operating hours for the Congestion Charge on a Sunday?",
+      "correctAnswer": 0,
+      "id": "cc-mc-0086"
+    },
+    {
+      "explanation": "While there is no daily fee for Auto Pay, there is a £10 annual registration fee per vehicle to maintain the account.",
+      "options": [
+        "£5",
+        "£10",
+        "£15",
+        "£20"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "question": "What is the annual registration fee per vehicle for the Congestion Charge Auto Pay system?",
+      "id": "cc-mc-0087"
+    },
+    {
+      "explanation": "The Congestion Charge is enforced using a network of fixed and mobile cameras that read vehicle registration marks (Automatic Number Plate Recognition).",
+      "type": "multiple_choice",
+      "options": [
+        "Physical toll booths",
+        "Windscreen stickers (vignettes)",
+        "GPS tracking devices in cars",
+        "Automatic Number Plate Recognition (ANPR) cameras"
+      ],
+      "question": "What is the primary method used by TfL to detect vehicles driving within the Congestion Charge zone?",
+      "correctAnswer": 3,
+      "id": "cc-mc-0088"
+    },
+    {
+      "explanation": "Taxis (Black Cabs) are exempt from the Congestion Charge when they are actively licensed with TfL, though private hire vehicles generally are not.",
+      "type": "multiple_choice",
+      "options": [
+        "Private Hire Vehicles (Uber/Minicabs)",
+        "Licensed London Taxis (Black Cabs)",
+        "Self-drive rental cars",
+        "All vehicles with a Blue Badge on display"
+      ],
+      "question": "Which of the following vehicles is exempt from the Congestion Charge without needing to pay an annual registration fee?",
+      "correctAnswer": 1,
+      "id": "cc-mc-0089"
+    },
+    {
+      "explanation": "The Congestion Charge zone covers specific areas in Central London; it does not extend to the M25 or Outer London boroughs.",
+      "options": [
+        "All areas within the M25 motorway",
+        "The North and South Circular roads",
+        "Specific areas in Central London only",
+        "Every borough in Greater London"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "question": "Geographically, which area does the London Congestion Charge zone cover?",
+      "id": "cc-mc-0090"
+    },
+    {
+      "correctAnswer": 1,
+      "question": "To qualify for the 100% 'Bus and Coach' discount, how many passenger seats must a vehicle have?",
+      "explanation": "The '9 or more seats' discount is for vehicles with 9 to 14 seats, while the 'Bus and Coach' discount applies to vehicles with 15 or more seats.",
+      "options": [
+        "9 or more seats",
+        "15 or more seats",
+        "20 or more seats",
+        "Only double-decker buses qualify"
+      ],
+      "type": "multiple_choice",
+      "id": "cc-mc-0091"
+    },
+    {
+      "correctAnswer": 0,
+      "question": "Which of the following is true regarding the availability of the Residents' Discount for the Congestion Charge?",
+      "explanation": "The Residents' Discount (90% off) is currently closed to new applicants; only those with an existing active discount can continue to use it.",
+      "options": [
+        "It is currently closed to new applicants",
+        "It is available to anyone moving into the zone for the first time",
+        "It is only for residents over the age of 65",
+        "It is only available to residents who do not own a car"
+      ],
+      "type": "multiple_choice",
+      "id": "cc-mc-0092"
     }
   ],
   "mocks": []
