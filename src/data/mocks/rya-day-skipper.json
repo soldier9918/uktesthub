@@ -1,0 +1,321 @@
+{
+  "version": 2,
+  "topic": "rya-day-skipper",
+  "title": "RYA Day Skipper Theory",
+  "category": "maritime-aviation",
+  "bank": [
+    {
+      "explanation": "Under IALA Region A, lateral port hand marks are red cans and starboard hand marks are green cones.",
+      "type": "multiple_choice",
+      "question": "In IALA Region A, what are the standard colors and shapes for port and starboard lateral marks when entering a harbour in the direction of buoyage?",
+      "options": [
+        "Green cones and red cans",
+        "Red cans and green cones",
+        "Red cones and green cans",
+        "Black pillars and yellow spars"
+      ],
+      "correctAnswer": 1,
+      "id": "rds-mc-0001"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "Variation is the angular difference between Magnetic North and True North, caused by the Earth's magnetic field.",
+      "question": "In navigation, what does the term 'Variation' refer to?",
+      "options": [
+        "The angle between Magnetic North and a ship's compass North.",
+        "The difference between a back-bearing and a forward bearing.",
+        "The angular difference between True North and Magnetic North.",
+        "The movement of the tide over a 6 hour period."
+      ],
+      "correctAnswer": 2,
+      "id": "rds-mc-0002"
+    },
+    {
+      "correctAnswer": 1,
+      "question": "According to COLREGs Rule 5, when must a vessel maintain a proper look-out?",
+      "options": [
+        "Only at night or in restricted visibility.",
+        "At all times, by sight, hearing, and all available means.",
+        "Only when navigating in busy shipping lanes.",
+        "Whenever the skipper is below deck."
+      ],
+      "explanation": "Rule 5 of COLREGs states that every vessel shall at all times maintain a proper look-out by sight and hearing as well as by all available means.",
+      "type": "multiple_choice",
+      "id": "rds-mc-0003"
+    },
+    {
+      "correctAnswer": 0,
+      "explanation": "Neap tides occur when the moon is at its first or last quarter, resulting in the smallest tidal range.",
+      "type": "multiple_choice",
+      "options": [
+        "At the first and last quarter moon.",
+        "During a full moon or new moon.",
+        "Only during the summer solstice.",
+        "When the sun and moon are in direct alignment with Earth."
+      ],
+      "question": "When do 'Neap' tides typically occur?",
+      "id": "rds-mc-0004"
+    },
+    {
+      "correctAnswer": 3,
+      "question": "What characterizes 'Spring' tides?",
+      "options": [
+        "High water is lower than average and low water is higher than average.",
+        "The time between high and low water is shorter than 6 hours.",
+        "The tidal range is at its minimum.",
+        "High water is at its highest and low water at its lowest."
+      ],
+      "explanation": "Spring tides feature the highest high waters and lowest low waters, creating the greatest range.",
+      "type": "multiple_choice",
+      "id": "rds-mc-0005"
+    },
+    {
+      "correctAnswer": 2,
+      "explanation": "To calculate Depth, add the Height of Tide to the Charted Datum Depth. Height of tide (3.0m) + Charted depth (2.5m) = 5.5m.",
+      "type": "multiple_choice",
+      "options": [
+        "0.5m",
+        "3.0m",
+        "5.5m",
+        "4.5m"
+      ],
+      "question": "If the charted depth is 2.5m and the height of tide is 3.0m, what is the actual depth of water?",
+      "id": "rds-mc-0006"
+    },
+    {
+      "correctAnswer": 0,
+      "question": "When encountering a North Cardinal Mark, where is the safest water located?",
+      "options": [
+        "To the North of the mark.",
+        "To the South of the mark.",
+        "Passed closely on either side.",
+        "Inside the nearest harbour."
+      ],
+      "type": "multiple_choice",
+      "explanation": "Cardinal marks indicate the side of the buoy on which the safest water lies; a North mark means safe water is to the North.",
+      "id": "rds-mc-0007"
+    },
+    {
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "explanation": "The 'course to steer' must account for the offset caused by the tidal stream (Set and Drift).",
+      "options": [
+        "The compass heading ignoring tide.",
+        "The direction the boat must head to counteract tide and leeway to reach a destination.",
+        "The actual path the boat has travelled over the ground.",
+        "The bearing of the destination from the starting point."
+      ],
+      "question": "What is meant by the navigational term 'Course to Steer' (CTS)?",
+      "id": "rds-mc-0008"
+    },
+    {
+      "correctAnswer": 2,
+      "explanation": "A sailing vessel under engine power is considered a power-driven vessel and must display a cone, apex down.",
+      "type": "multiple_choice",
+      "question": "What day shape must a sailing vessel display when it is being propelled by machinery?",
+      "options": [
+        "A ball",
+        "A cylinder",
+        "A cone, apex down",
+        "A diamond"
+      ],
+      "id": "rds-mc-0009"
+    },
+    {
+      "correctAnswer": 3,
+      "options": [
+        "980 hPa",
+        "995 hPa",
+        "1000 hPa",
+        "1020 hPa"
+      ],
+      "question": "Which of the following barometric pressure readings is most likely to indicate settled, fair weather?",
+      "explanation": "A standard barometer reading for fair, settled weather is 1013 hPa; values significantly higher indicate high pressure.",
+      "type": "multiple_choice",
+      "id": "rds-mc-0010"
+    },
+    {
+      "question": "In meteorology, what does it mean when the wind 'backs'?",
+      "options": [
+        "The wind shifts in a clockwise direction.",
+        "The wind shifts in an anti-clockwise direction.",
+        "The wind speed increases suddenly.",
+        "The wind speed drops to zero."
+      ],
+      "explanation": "A backing wind shifts in an anti-clockwise direction (e.g., North to North-West).",
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "id": "rds-mc-0011"
+    },
+    {
+      "options": [
+        "Both vessels should alter course to starboard.",
+        "Both vessels should alter course to port.",
+        "The larger vessel has right of way.",
+        "The vessel with the wind on its port side stands on."
+      ],
+      "question": "According to COLREGs, if two power-driven vessels are meeting on nearly reciprocal courses so as to involve risk of collision, what action should they take?",
+      "explanation": "Under Rule 14, when two power-driven vessels meet on reciprocal courses, both must alter course to starboard.",
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "id": "rds-mc-0012"
+    },
+    {
+      "question": "When entering a harbor in IALA Region A, what are the characteristics of a 'Preferred Channel to Starboard' mark?",
+      "explanation": "In IALA Region A, the preferred channel to starboard mark is a red can shape with a horizontal green band.",
+      "correctAnswer": 1,
+      "options": [
+        "Green buoy, conical shape, with a red band",
+        "Red buoy, cylindrical shape, with a green band",
+        "Green buoy, conical shape, with a single light flash",
+        "Red buoy, conical shape, with a green band"
+      ],
+      "type": "multiple_choice",
+      "id": "rds-mc-0013"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "The sailing vessel, as the overtaking vessel, must keep clear",
+        "The power-driven vessel, because sail gives way to power when overtaking",
+        "The power-driven vessel, because it is more maneuverable",
+        "Both vessels must alter course to starboard to pass port-to-port"
+      ],
+      "correctAnswer": 0,
+      "question": "Under COLREGs, a sailing vessel is overtaking a power-driven vessel from a direction more than 22.5 degrees abaft her beam. Which vessel is the give-way vessel?",
+      "explanation": "Rule 13 states that any vessel overtaking any other shall keep out of the way of the vessel being overtaken.",
+      "id": "rds-mc-0014"
+    },
+    {
+      "correctAnswer": 2,
+      "question": "What are the day mark and colour characteristics of a South Cardinal Mark?",
+      "explanation": "A South Cardinal Mark has two downward-pointing black cones and a yellow-over-black colour scheme.",
+      "type": "multiple_choice",
+      "options": [
+        "Top cones pointing towards each other, black band in the middle",
+        "Top cones pointing away from each other, yellow band in the middle",
+        "Two cones pointing downwards, black band on the bottom half",
+        "Two cones pointing upwards, black band on the top half"
+      ],
+      "id": "rds-mc-0015"
+    },
+    {
+      "correctAnswer": 3,
+      "explanation": "Variation is the angle between True North and Magnetic North, caused by the Earth's magnetic fields. Deviation is caused by local onboard magnetism.",
+      "question": "What is the primary difference between 'Variation' and 'Deviation' in magnetic navigation?",
+      "type": "multiple_choice",
+      "options": [
+        "Variation is fixed; Deviation changes hourly",
+        "Variation is caused by the engine; Deviation is caused by the Earth's poles",
+        "Variation is local to the boat; Deviation is the same for all boats in the area",
+        "Variation is caused by the Earth's magnetic field; Deviation is caused by magnetic influences on the boat"
+      ],
+      "id": "rds-mc-0016"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "To calculate the distance to the horizon at different eye heights",
+        "To estimate the hourly change in tidal height during a 6-hour cycle",
+        "To determine the speed of a tidal stream in a narrow channel",
+        "To calculate the safety clearance under a bridge at high water"
+      ],
+      "correctAnswer": 1,
+      "question": "In tidal theory, what is the 'Rule of Twelfths' used for?",
+      "explanation": "The Rule of Twelfths is a rule of thumb used to estimate the height of tide at hourly intervals between high and low water.",
+      "id": "rds-mc-0017"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Low cloud and steady, persistent rain",
+        "Clear skies and sudden, heavy squalls",
+        "Rapidly rising pressure and bright sunshine",
+        "Fog followed by a sudden drop in temperature"
+      ],
+      "correctAnswer": 0,
+      "question": "Which weather conditions are most commonly associated with the approach of a Warm Front?",
+      "explanation": "A warm front is typically associated with a lowering of cloud base (stratus) and the onset of steady, persistent rain.",
+      "id": "rds-mc-0018"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Course Steered, Distance through water, and Tidal Stream",
+        "Ground Track, Leeway, and Tide Flow",
+        "Course Steered and Distance through water only",
+        "Compass Heading and Depth Soundings"
+      ],
+      "correctAnswer": 2,
+      "question": "What two primary pieces of information are used to plot a 'Dead Reckoning' (DR) position?",
+      "explanation": "Dead Reckoning (DR) only uses the course steered and the distance through the water, ignoring external factors like tide.",
+      "id": "rds-mc-0019"
+    },
+    {
+      "correctAnswer": 3,
+      "explanation": "Standard Port marks (Red) emit flashes in even numbers (e.g., 2, 4, 6), whereas Starboard marks (Green) emit odd numbers.",
+      "question": "On a chart, if a port hand lateral mark is described as 'Fl(2) R 6s', what light pattern should you expect to see?",
+      "type": "multiple_choice",
+      "options": [
+        "A single long flash every 10 seconds",
+        "A continuous quick flashing light",
+        "An odd number of green flashes",
+        "An even number of red flashes"
+      ],
+      "id": "rds-mc-0020"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "At the bow, below the pulpit",
+        "At or near the top of the mast where it can best be seen",
+        "On the stern, alongside the white light",
+        "On the spreader, at least 1 metre below the masthead"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Rule 25 states that a sailing vessel under 20m in length may use a combined 'tricolour' lantern at the top of the mast.",
+      "question": "Where must a 'Tricolour' light be positioned on a sailing vessel under 20 metres?",
+      "id": "rds-mc-0021"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "VHF Channel 16",
+        "VHF Channel 06",
+        "VHF Channel 13",
+        "VHF Channel 67"
+      ],
+      "correctAnswer": 0,
+      "explanation": "CH 16 is the international distress, safety, and calling channel; it must be monitored at all times while at sea.",
+      "question": "Which VHF channel is used for the initial call during a Mayday or Pan-Pan distress situation?",
+      "id": "rds-mc-0022"
+    },
+    {
+      "options": [
+        "From the seabed to the surface",
+        "From Mean High Water Springs to the surface",
+        "From Chart Datum (CD) to the water surface",
+        "From the yacht's keel to the seabed"
+      ],
+      "type": "multiple_choice",
+      "explanation": "Height of tide is measured from the Chart Datum (CD), which is usually the Lowest Astronomical Tide level.",
+      "question": "How is the 'Height of Tide' defined in UK Admiralty tide tables?",
+      "correctAnswer": 2,
+      "id": "rds-mc-0023"
+    },
+    {
+      "question": "What is the topmark of an 'Isolated Danger' mark?",
+      "explanation": "Isolated Danger Marks are placed directly over a hazard and are identified by two black spheres as a topmark.",
+      "correctAnswer": 1,
+      "options": [
+        "A single red sphere",
+        "Two black spheres",
+        "A yellow 'X' shape",
+        "A single black cone pointing upwards"
+      ],
+      "type": "multiple_choice",
+      "id": "rds-mc-0024"
+    }
+  ],
+  "mocks": []
+}
