@@ -7490,6 +7490,216 @@
       "type": "image_question",
       "imageDescription": "A ball-and-stick molecular model showing two black spheres (carbon) connected by two parallel grey rods (a double bond). Each carbon is also bonded to two white spheres (hydrogen).",
       "id": "b-im-0084"
+    },
+    {
+      "type": "image_question",
+      "imageAlt": "diagram of a cell during the final stage of mitosis.",
+      "explanation": "The diagram shows an animal cell in telophase, where the nuclear envelopes reform and the cytoplasm begins to divide (cytokinesis).",
+      "options": [
+        "Prophase",
+        "Telophase",
+        "Metaphase",
+        "Anaphase"
+      ],
+      "correctAnswer": 1,
+      "question": "Which stage of mitosis is illustrated in the diagram?",
+      "imageDescription": "A diagram of a cell with two distinct nuclei forming at opposite poles, chromosomes decondensing, and a cleavage furrow beginning to pinch the cell membrane in the middle.",
+      "id": "b-im-0085"
+    },
+    {
+      "correctAnswer": 2,
+      "imageDescription": "A velocity-time graph with a straight line starting at a high point on the y-axis (velocity) and sloping downwards towards the x-axis (time).",
+      "question": "What does the gradient of the line in this velocity-time graph represent?",
+      "imageAlt": "velocity-time graph showing a straight line sloping downwards.",
+      "type": "image_question",
+      "options": [
+        "Constant velocity",
+        "Increasing acceleration",
+        "Constant deceleration",
+        "Stationary"
+      ],
+      "explanation": "The velocity-time graph shows a straight line with a constant negative gradient, indicating constant deceleration.",
+      "id": "b-im-0086"
+    },
+    {
+      "type": "image_question",
+      "imageAlt": "Diagram of the Earth, Sun, and Moon alignment.",
+      "explanation": "The diagram shows the Earth, Sun, and Moon in a straight line, representing a total solar eclipse where the Moon blocks the Sun's light.",
+      "options": [
+        "Solar eclipse",
+        "Lunar eclipse",
+        "Full Moon phase",
+        "Vernal equinox"
+      ],
+      "correctAnswer": 0,
+      "question": "Which astronomical event is occurring in this diagram?",
+      "imageDescription": "A top-down view of the solar system showing the Moon positioned directly between the Sun and the Earth, casting a small shadow (umbra) onto the Earth's surface.",
+      "id": "b-im-0087"
+    },
+    {
+      "imageAlt": "Circuit diagram with two resistors connected in parallel.",
+      "type": "image_question",
+      "options": [
+        "9 ohms",
+        "4.5 ohms",
+        "3 ohms",
+        "2 ohms"
+      ],
+      "explanation": "The circuit shows two components in parallel; the total resistance is calculated using 1/Rt = 1/R1 + 1/R2, resulting in a value lower than either individual resistor.",
+      "correctAnswer": 3,
+      "imageDescription": "A schematic of a DC circuit with a 12V battery and two resistors, one 6 ohms and one 3 ohms, connected in a parallel arrangement.",
+      "question": "What is the total resistance of the circuit shown in the diagram?",
+      "id": "b-im-0088"
+    },
+    {
+      "options": [
+        "Solubility",
+        "Boiling point",
+        "Density",
+        "Molecular mass"
+      ],
+      "explanation": "Fractional distillation separates crude oil into fractions based on their different boiling points as they rise through the column.",
+      "type": "image_question",
+      "imageAlt": "Diagram of a fractional distillation column.",
+      "imageDescription": "A tall fractionating column with crude oil entering at the bottom. Different levels are marked, showing where gases, petrol, kerosene, and diesel are collected at different heights.",
+      "question": "On what physical property does the separation process in this fractional distillation column primarily depend?",
+      "correctAnswer": 1,
+      "id": "b-im-0089"
+    },
+    {
+      "question": "What is the primary function of the structures indicated in this leaf epidermis diagram?",
+      "imageDescription": "A high-magnification view of a leaf epidermis showing several oval-shaped pores, each surrounded by two crescent-shaped guard cells.",
+      "correctAnswer": 2,
+      "explanation": "Stomata are pores found mainly on the underside of leaves that open and close to regulate gas exchange and water loss via transpiration.",
+      "options": [
+        "Absorption of minerals",
+        "Sugar transport",
+        "Gas exchange",
+        "DNA replication"
+      ],
+      "type": "image_question",
+      "imageAlt": "Microscopic view of a leaf surface with openings.",
+      "id": "b-im-0090"
+    },
+    {
+      "type": "image_question",
+      "imageAlt": "Dot-and-cross diagram of sodium and fluorine.",
+      "options": [
+        "Ionic bonding",
+        "Covalent bonding",
+        "Metallic bonding",
+        "Giant covalent structure"
+      ],
+      "explanation": "The dot-and-cross diagram shows the transfer of an electron from sodium to fluorine, forming an ionic bond between oppositely charged ions.",
+      "correctAnswer": 0,
+      "imageDescription": "A dot-and-cross diagram showing a Sodium atom (Na) losing its outer electron to a Fluorine atom (F), resulting in [Na]+ and [F]- ions with full outer shells.",
+      "question": "Which type of chemical bonding is illustrated in this diagram?",
+      "id": "b-im-0091"
+    },
+    {
+      "imageDescription": "A horizontal ray of light hitting a rectangular glass block at an angle. The ray bends towards the normal line inside the block and then out away from the normal as it exits.",
+      "question": "Which optical phenomenon is being demonstrated in this diagram?",
+      "correctAnswer": 3,
+      "options": [
+        "Reflection",
+        "Diffraction",
+        "Dispersion",
+        "Refraction"
+      ],
+      "explanation": "The diagram shows the refraction of light as it moves from a less dense medium (air) to a more dense medium (glass), bending towards the normal.",
+      "type": "image_question",
+      "imageAlt": "Diagram of a light ray passing through a glass block.",
+      "id": "b-im-0092"
+    },
+    {
+      "correctAnswer": 1,
+      "question": "What does this ecological pyramid represent?",
+      "imageDescription": "A horizontal bar chart shaped like a pyramid. The bottom bar (producers) is the widest, the next bar (primary consumers) is narrower, followed by secondary and tertiary consumers.",
+      "type": "image_question",
+      "imageAlt": "Pyramid of biomass graph.",
+      "explanation": "The graph shows biomass decreasing at each successive trophic level, which is typical for most terrestrial ecosystems.",
+      "options": [
+        "Number of individuals",
+        "Total biomass",
+        "Energy loss as heat",
+        "Rate of photosynthesis"
+      ],
+      "id": "b-im-0093"
+    },
+    {
+      "question": "An object moves from point A to point B along the semi-circular path shown. What is its total displacement?",
+      "imageDescription": "A diagram showing a circular track with a diameter of 10 metres. A point 'A' is at the top and point 'B' is at the exact opposite bottom. An arrow shows an object moving from A to B along the curve.",
+      "correctAnswer": 2,
+      "explanation": "Displacement is the straight-line distance from the start to the end point. For a circular path, after half a lap of a 10m diameter circle, the displacement is the diameter.",
+      "options": [
+        "0 m",
+        "5 m",
+        "10 m",
+        "31.4 m"
+      ],
+      "type": "image_question",
+      "imageAlt": "Diagram of an object moving in a semi-circle.",
+      "id": "b-im-0094"
+    },
+    {
+      "correctAnswer": 0,
+      "question": "What specific type of chemical reaction is shown in the diagram?",
+      "imageDescription": "Two test tubes containing clear liquids are poured into a beaker. Upon mixing, a bright yellow solid forms and sinks to the bottom of the beaker.",
+      "type": "image_question",
+      "imageAlt": "Diagram of two liquids mixed to form a solid.",
+      "explanation": "The diagram shows a double replacement (precipitation) reaction where two aqueous solutions react to form an insoluble solid.",
+      "options": [
+        "Precipitation",
+        "Combustion",
+        "Thermal decomposition thermal",
+        "Electrolysis"
+      ],
+      "id": "b-im-0095"
+    },
+    {
+      "correctAnswer": 1,
+      "question": "What is the biological advantage of the structural adaptation illustrated in this surface area comparison?",
+      "imageDescription": "A diagram showing one large cube (side 3cm) and 27 small cubes (side 1cm) that make up the same total volume, highlighting the difference in total surface area.",
+      "type": "image_question",
+      "imageAlt": "Diagram comparing surface area to volume of two cubes.",
+      "explanation": "Large, flat surfaces and thin shapes are adaptations to increase the surface area to volume ratio for efficient diffusion.",
+      "options": [
+        "Increase mechanical strength",
+        "Maximise diffusion rate",
+        "Retain heat in cold climates",
+        "Reduce water loss"
+      ],
+      "id": "b-im-0096"
+    },
+    {
+      "question": "Which stage of the cardiac cycle is illustrated in the diagram?",
+      "imageDescription": "Detailed anatomical diagram of the human heart. Arrows indicate blood moving from the left and right atria downwards into the ventricles. The bicuspid and tricuspid valves are open, while the semi-lunar valves (aortic and pulmonary) are closed.",
+      "explanation": "The diagram shows the heart in atrial systole, where the atria contract to push blood through the open atrioventricular (AV) valves into the ventricles.",
+      "imageAlt": "Cross-section diagram of a human heart with arrows showing blood flow from atria to ventricles.",
+      "options": [
+        "Ventricular systole",
+        "Atrial systole",
+        "Diastole",
+        "Ventricular fibrillation"
+      ],
+      "correctAnswer": 1,
+      "type": "image_question",
+      "id": "b-im-0097"
+    },
+    {
+      "imageDescription": "A physics diagram showing a light ray incident on a glass block at an angle (theta 1). The ray bends as it enters the glass (theta 2) and bends again as it exits back into the air. Normals are drawn as dashed lines at the boundaries.",
+      "question": "Which wave phenomenon is primarily demonstrated as the light ray enters the glass block?",
+      "type": "image_question",
+      "options": [
+        "Reflection",
+        "Difraction",
+        "Refraction",
+        "Total Internal Reflection"
+      ],
+      "imageAlt": "A ray of light traveling from air into a rectangular glass block at an angle.",
+      "correctAnswer": 2,
+      "explanation": "Refraction occurs when light changes speed as it passes from one medium to another; according to Snell's Law, it bends towards the normal when entering a denser medium.",
+      "id": "b-im-0098"
     }
   ],
   "mocks": []
