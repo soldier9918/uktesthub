@@ -8121,6 +8121,1542 @@
       "type": "hot_spot",
       "imageDescription": "The interior view of a reception desk showing a computer monitor, a keyboard, a telephone, and a small red button mounted on the underside of the desk.",
       "id": "ps-hs-0024"
+    },
+    {
+      "imageDescription": "A wall in a server room featuring various fire safety tools including a water extinguisher, a foam extinguisher, a CO2 extinguisher, and a fire blanket.",
+      "explanation": "A CO2 fire extinguisher is the correct equipment for electrical fires as it does not conduct electricity and leaves no residue.",
+      "correctSpotId": "fext_01",
+      "type": "hot_spot",
+      "spots": [
+        {
+          "label": "CO2 Extinguisher (Black Band)",
+          "id": "fext_01",
+          "x": 0.2,
+          "y": 0.4,
+          "w": 0.15,
+          "h": 0.3
+        },
+        {
+          "label": "Water Extinguisher (Red Band)",
+          "id": "fext_02",
+          "h": 0.3,
+          "w": 0.15,
+          "y": 0.4,
+          "x": 0.4
+        },
+        {
+          "w": 0.15,
+          "x": 0.6,
+          "y": 0.4,
+          "h": 0.3,
+          "label": "Foam Extinguisher (Cream Band)",
+          "id": "fext_03"
+        },
+        {
+          "label": "Fire Blanket",
+          "id": "fblanket_01",
+          "h": 0.2,
+          "y": 0.45,
+          "x": 0.8,
+          "w": 0.1
+        }
+      ],
+      "question": "You are conducting a fire safety check in the station's server room. Which piece of equipment is specifically designed for extinguishing a fire involving electrical components?",
+      "imageAlt": "A station server room with different types of fire extinguishers mounted on the wall.",
+      "id": "ps-hs-0025"
+    },
+    {
+      "imageAlt": "A high-angle view of a police station secure swipe-card entry point with an open door.",
+      "question": "You are reviewing station security procedures. Identify the specific structural feature of this entrance that presents a high risk of 'tailgating' if not monitored correctly.",
+      "spots": [
+        {
+          "h": 0.15,
+          "w": 0.1,
+          "x": 0.5,
+          "y": 0.12,
+          "label": "CCTV Camera",
+          "id": "cam_01"
+        },
+        {
+          "label": "Swipe Card Reader",
+          "id": "rd_01",
+          "h": 0.12,
+          "x": 0.85,
+          "y": 0.55,
+          "w": 0.08
+        },
+        {
+          "h": 0.6,
+          "w": 0.4,
+          "x": 0.3,
+          "y": 0.35,
+          "label": "Slow-closing Heavy Door Gap",
+          "id": "crd_01"
+        },
+        {
+          "h": 0.1,
+          "y": 0.85,
+          "x": 0.35,
+          "w": 0.3,
+          "label": "Anti-slip Matting",
+          "id": "mat_01"
+        }
+      ],
+      "correctSpotId": "crd_01",
+      "explanation": "A common way for unauthorized individuals to enter secure police buildings is by 'tailgating' behind an officer as the door closes.",
+      "imageDescription": "A doorway showing a card reader on the wall, a heavy fire door partly open, a CCTV camera above, and a floor mat.",
+      "type": "hot_spot",
+      "id": "ps-hs-0026"
+    },
+    {
+      "imageAlt": "A close-up of a police van wheel and tyre.",
+      "spots": [
+        {
+          "w": 0.06,
+          "y": 0.48,
+          "x": 0.68,
+          "h": 0.08,
+          "id": "air_01_valv",
+          "label": "Tyre Valve Stem"
+        },
+        {
+          "label": "Wheel Nut",
+          "id": "nut_01",
+          "h": 0.15,
+          "x": 0.5,
+          "y": 0.5,
+          "w": 0.08
+        },
+        {
+          "h": 0.12,
+          "w": 0.1,
+          "x": 0.3,
+          "y": 0.7,
+          "label": "Alloy Rim Edge",
+          "id": "rim_01"
+        },
+        {
+          "label": "Tyre Sidewall",
+          "id": "sdw_01",
+          "w": 0.2,
+          "y": 0.4,
+          "x": 0.2,
+          "h": 0.1
+        }
+      ],
+      "question": "During your pre-shift vehicle checks, you need to verify the tyre pressure. Select the part of the wheel assembly where you would attach the pressure gauge.",
+      "type": "hot_spot",
+      "imageDescription": "The image shows a standard police van wheel, showing the tyre sidewall, the alloy rim, the brake disc behind, and the valve stem.",
+      "explanation": "The tyre valve is the correct location to check air pressure and ensure the cap is present to prevent dirt ingress.",
+      "correctSpotId": "air_01_valv",
+      "id": "ps-hs-0027"
+    },
+    {
+      "imageAlt": "A transparent evidence bag containing a mobile phone.",
+      "correctSpotId": "seal_04_num",
+      "explanation": "The unique serial number is essential for the 'chain of custody', allowing the specific bag to be tracked through the legal system.",
+      "imageDescription": "A clear plastic evidence bag with a blue seal at the top. The bag has areas for writing names, dates, and a printed unique serial number.",
+      "type": "hot_spot",
+      "question": "When processing a seized item, which specific part of the evidence bag packaging allows the exhibit to be uniquely identified and tracked in the property system?",
+      "spots": [
+        {
+          "w": 0.3,
+          "y": 0.3,
+          "x": 0.2,
+          "h": 0.1,
+          "label": "Officer's Name Section",
+          "id": "wr_01_name"
+        },
+        {
+          "w": 0.3,
+          "y": 0.5,
+          "x": 0.2,
+          "h": 0.08,
+          "id": "wr_02_desc",
+          "label": "Item Description Box"
+        },
+        {
+          "id": "seal_04_num",
+          "label": "Unique Serial Number",
+          "h": 0.06,
+          "x": 0.65,
+          "y": 0.15,
+          "w": 0.25
+        },
+        {
+          "id": "seal_05_top",
+          "label": "Tamper-Evident Adhesive Seal",
+          "h": 0.1,
+          "w": 0.8,
+          "y": 0.05,
+          "x": 0.1
+        }
+      ],
+      "id": "ps-hs-0028"
+    },
+    {
+      "imageAlt": "A staff kitchen area with cupboards, a sink, and various safety signs.",
+      "type": "hot_spot",
+      "explanation": "In a station kitchen or workshop, a primary first aid kit must be clearly visible and accessible for immediate response to injuries.",
+      "spots": [
+        {
+          "x": 0.1,
+          "id": "fire_extinguisher",
+          "h": 0.15,
+          "w": 0.1,
+          "label": "Fire Extinguisher",
+          "y": 0.7
+        },
+        {
+          "w": 0.12,
+          "label": "First Aid Kit",
+          "y": 0.4,
+          "x": 0.75,
+          "h": 0.12,
+          "id": "first_aid_kit"
+        },
+        {
+          "label": "Kettle",
+          "y": 0.6,
+          "w": 0.08,
+          "h": 0.08,
+          "id": "kettle",
+          "x": 0.4
+        },
+        {
+          "x": 0.5,
+          "h": 0.1,
+          "id": "notice_board",
+          "w": 0.15,
+          "label": "Notice Boardバランス",
+          "y": 0.2
+        }
+      ],
+      "imageDescription": "A photo of a staff breakout area featuring a clearly marked green and white box mounted on the wall near the exit.",
+      "correctSpotId": "first_aid_kit",
+      "question": "You are conducting a Health and Safety walk-through of the staff breakout area. Select the item that must be present and easily accessible to provide immediate medical assistance for minor injuries.",
+      "id": "ps-hs-0029"
+    },
+    {
+      "correctSpotId": "brake_reservoir_cap",
+      "imageDescription": "A high-angle view of a patrol car engine bay with several yellow and blue caps visible on various tanks.",
+      "question": "Before starting your shift, you must perform a 'POWDER' check on your patrol vehicle. Click on the reservoir cap for the system that ensures the vehicle can stop safely.",
+      "explanation": "Checking the brake fluid level is a critical safety component of the daily POWDER (Petrol, Oil, Water, Damage, Electrics, Rubber) vehicle check.",
+      "spots": [
+        {
+          "y": 0.45,
+          "label": "Oil Filler Cap",
+          "w": 0.1,
+          "id": "oil_filler_cap",
+          "h": 0.1,
+          "x": 0.5
+        },
+        {
+          "h": 0.08,
+          "id": "washer_fluid_cap",
+          "x": 0.8,
+          "label": "Washer Fluid Cap",
+          "y": 0.7,
+          "w": 0.08
+        },
+        {
+          "y": 0.3,
+          "label": "Brake Fluid Reservoir",
+          "w": 0.07,
+          "h": 0.07,
+          "id": "brake_reservoir_cap",
+          "x": 0.2
+        },
+        {
+          "label": "Coolant Expansion Tank",
+          "y": 0.2,
+          "w": 0.1,
+          "id": "coolant_cap_id",
+          "h": 0.1,
+          "x": 0.7
+        }
+      ],
+      "type": "hot_spot",
+      "imageAlt": "An open car engine bay showing various components like the battery, engine cover, and fluid reservoirs.",
+      "id": "ps-hs-0030"
+    },
+    {
+      "spots": [
+        {
+          "h": 0.08,
+          "id": "description_box",
+          "x": 0.3,
+          "label": "Description of Exhibit",
+          "y": 0.15,
+          "w": 0.4
+        },
+        {
+          "x": 0.3,
+          "id": "signature_box_officer_seizing",
+          "h": 0.08,
+          "w": 0.4,
+          "y": 0.65,
+          "label": "Signature of Officer Seizing"
+        },
+        {
+          "x": 0.3,
+          "h": 0.08,
+          "id": "date_time_box",
+          "w": 0.3,
+          "y": 0.4,
+          "label": "Date and Time seized"
+        },
+        {
+          "x": 0.7,
+          "h": 0.08,
+          "id": "incident_ref_box",
+          "w": 0.2,
+          "label": "Incident Reference Number",
+          "y": 0.05
+        }
+      ],
+      "explanation": "The integrity of the chain of custody begins with the signature of the officer who originally recovered the item.",
+      "question": "You have just recovered a mobile phone from a suspect. To officially start the chain of custody, identify the specific box on the exhibit label where the recovering officer must sign.",
+      "correctSpotId": "signature_box_officer_seizing",
+      "imageDescription": "A white and blue adhesive exhibit label containing fields for 'Description', 'Location', 'Time/Date', and 'Signature of officer seizing'.",
+      "imageAlt": "A close-up of a standard UK police evidence bag label with multiple data fields.",
+      "type": "hot_spot",
+      "id": "ps-hs-0031"
+    },
+    {
+      "explanation": "In custody environments, air vents must be designed with small holes or mesh (anti-ligature) to prevent detainees from attaching items to them.",
+      "spots": [
+        {
+          "id": "intercom_button_id",
+          "h": 0.1,
+          "x": 0.2,
+          "y": 0.5,
+          "label": "Cell Intercom Button",
+          "w": 0.1
+        },
+        {
+          "w": 0.15,
+          "y": 0.1,
+          "label": "Ventilation Grille",
+          "x": 0.8,
+          "id": "anti_ligature_vent",
+          "h": 0.15
+        },
+        {
+          "id": "integrated_bed_plinth",
+          "h": 0.12,
+          "x": 0.4,
+          "y": 0.8,
+          "label": "Integrated Bed Base",
+          "w": 0.3
+        },
+        {
+          "w": 0.1,
+          "label": "Observation Port Window",
+          "y": 0.3,
+          "x": 0.1,
+          "h": 0.1,
+          "id": "observation_port_glass"
+        }
+      ],
+      "imageDescription": "A close-up of a custody cell interior showing a flush-mounted metal ventilation grille near the ceiling.",
+      "correctSpotId": "anti_ligature_vent",
+      "question": "During a deep-clean inspection of a custody cell, you are looking for potential self-harm risks. Identify the fixture that must be flush-mounted and designed to prevent anything from being hooked onto it.",
+      "imageAlt": "The upper corner of a grey custody cell showing the wall and ceiling interface.",
+      "type": "hot_spot",
+      "id": "ps-hs-0032"
+    },
+    {
+      "imageDescription": "A green wall-mounted first aid box with a white cross. It has two plastic clips on the side and a small plastic security seal through the latch.",
+      "question": "You are conducting a weekly inspection of the station's first aid equipment. Click on the feature that confirms the kit remains intact and has not been tampered with since the last check.",
+      "explanation": "The tamper-evident seal must be checked to ensure the kit has not been opened and the contents are sterile and complete.",
+      "spots": [
+        {
+          "label": "First Aid Symbol",
+          "x": 0.45,
+          "y": 0.4,
+          "id": "white_cross",
+          "w": 0.1,
+          "h": 0.12
+        },
+        {
+          "x": 0.85,
+          "label": "Plastic Tamper Seal",
+          "id": "tamper_seal",
+          "y": 0.48,
+          "w": 0.06,
+          "h": 0.08
+        },
+        {
+          "w": 0.15,
+          "h": 0.1,
+          "x": 0.5,
+          "label": "Wall Mounting Bracket",
+          "id": "wall_mount",
+          "y": 0.1
+        }
+      ],
+      "imageAlt": "A standard green British police first aid kit mounted on a wall.",
+      "type": "hot_spot",
+      "correctSpotId": "tamper_seal",
+      "id": "ps-hs-0033"
+    },
+    {
+      "imageAlt": "A close-up view of a car tyre's tread pattern.",
+      "explanation": "The Tread Wear Indicator (TWI) is a small raised bar within the tyre grooves that identifies when the legal minimum depth of 1.6mm is reached.",
+      "spots": [
+        {
+          "w": 0.2,
+          "h": 0.15,
+          "label": "Tyre Sidewall",
+          "x": 0.1,
+          "y": 0.5,
+          "id": "outer_sidewall"
+        },
+        {
+          "label": "Tread Wear Indicator Bar",
+          "x": 0.55,
+          "id": "tread_wear_indicator",
+          "y": 0.45,
+          "w": 0.1,
+          "h": 0.08
+        },
+        {
+          "label": "Shoulder Block",
+          "x": 0.3,
+          "y": 0.2,
+          "id": "shoulder_block",
+          "w": 0.15,
+          "h": 0.12
+        }
+      ],
+      "correctSpotId": "tread_wear_indicator",
+      "type": "hot_spot",
+      "question": "During a vehicle safety check, you must assess if the tyres meet legal requirements. Click on the part of the tyre tread that indicates if the rubber has worn down to the legal limit.",
+      "imageDescription": "A close-up of a vehicle tyre showing several deep longitudinal grooves. Inside one of the grooves, there is a small raised rubber bar.",
+      "id": "ps-hs-0034"
+    },
+    {
+      "imageDescription": "A clear plastic evidence bag with white printed boxes for 'Suspect Name', 'Description', and 'Officer Signature'. At the top corner, there is a unique alphanumeric code and barcode.",
+      "question": "You are logging a recovered laptop into the property system. Click on the unique identifier on this evidence bag that prevents it from being confused with another exhibit.",
+      "correctSpotId": "production_code",
+      "type": "hot_spot",
+      "spots": [
+        {
+          "h": 0.12,
+          "w": 0.3,
+          "y": 0.4,
+          "id": "suspect_box",
+          "label": "Suspect Details Box",
+          "x": 0.2
+        },
+        {
+          "id": "production_code",
+          "y": 0.1,
+          "label": "Unique Reference Number/Barcode",
+          "x": 0.7,
+          "h": 0.08,
+          "w": 0.25
+        },
+        {
+          "x": 0.2,
+          "label": "Date/Time Box",
+          "id": "date_box",
+          "y": 0.6,
+          "w": 0.2,
+          "h": 0.1
+        }
+      ],
+      "explanation": "The unique reference number or barcode is the primary identifier used to track the specific exhibit through the criminal justice system.",
+      "imageAlt": "A professional evidence bag with printed sections for details.",
+      "id": "ps-hs-0035"
+    },
+    {
+      "type": "hot_spot",
+      "correctSpotId": "ligature_point",
+      "imageAlt": "An interior view of a standard police custody cell.",
+      "spots": [
+        {
+          "x": 0.4,
+          "label": "Floor Drain Grille",
+          "id": "drain_grille",
+          "y": 0.85,
+          "w": 0.15,
+          "h": 0.1
+        },
+        {
+          "y": 0.6,
+          "id": "ligature_point",
+          "label": "Wall-Mounted Grab Rail",
+          "x": 0.75,
+          "h": 0.15,
+          "w": 0.2
+        },
+        {
+          "w": 0.4,
+          "h": 0.12,
+          "label": "Concrete Bed Plinth",
+          "x": 0.2,
+          "id": "bed_plinth",
+          "y": 0.5
+        }
+      ],
+      "explanation": "The gap behind the handrail of a toilet or grab bar is a significant ligature risk that must be checked for safety during cell inspections.",
+      "question": "You are conducting a pre-admission cell safety check for a vulnerable detainee. Identify the fixture that presents the highest risk as a potential ligature point.",
+      "imageDescription": "A custody cell showing a concrete plinth for a bed and a stainless steel toilet. Attached to the wall next to the toilet is a metal grab rail.",
+      "id": "ps-hs-0036"
+    },
+    {
+      "correctSpotId": "spot-fire-ext-co2",
+      "explanation": "A CO2 (Carbon Dioxide) extinguisher, identified by its black label and hard horn, is the correct choice for electrical fires as it does not leave residue or conduct electricity.",
+      "imageDescription": "Three fire extinguishers: one Water (red label), one Foam (cream label), and one CO2 (black label). All are standing on a station floor next to a fire safety sign.",
+      "type": "hot_spot",
+      "imageAlt": "A group of three different fire extinguishers standing against a wall.",
+      "question": "You are patrolling the station when you notice an electrical socket smoking in the office. Which extinguisher is safest to use on an electrical fire?",
+      "spots": [
+        {
+          "y": 0.4,
+          "w": 0.2,
+          "id": "spot-fire-ext-water",
+          "label": "Water Extinguisher (Red Label)",
+          "x": 0.15,
+          "h": 0.4
+        },
+        {
+          "id": "spot-fire-ext-foam",
+          "w": 0.2,
+          "h": 0.4,
+          "x": 0.45,
+          "label": "Foam Extinguisher (Cream Label)",
+          "y": 0.4
+        },
+        {
+          "id": "spot-fire-ext-co2",
+          "w": 0.2,
+          "h": 0.4,
+          "x": 0.75,
+          "label": "CO2 Extinguisher (Black Label)",
+          "y": 0.4
+        }
+      ],
+      "id": "ps-hs-0037"
+    },
+    {
+      "correctSpotId": "spot-defib-pad-indicator",
+      "explanation": "The expiry date on the pads must be checked during every inspection to ensure the adhesive and conductive gel remain effective for emergency use.",
+      "imageDescription": "An open AED case showing the main unit, a battery pack, and a sealed packet of electrode pads with various text and date markings.",
+      "type": "hot_spot",
+      "spots": [
+        {
+          "label": "Expiry Date Stamp",
+          "x": 0.6,
+          "h": 0.15,
+          "w": 0.25,
+          "id": "spot-defib-pad-indicator",
+          "y": 0.75
+        },
+        {
+          "h": 0.2,
+          "x": 0.3,
+          "label": "Power Button",
+          "id": "spot-defib-on-button",
+          "w": 0.15,
+          "y": 0.2
+        },
+        {
+          "y": 0.3,
+          "label": "Voice Prompt Speaker",
+          "x": 0.5,
+          "h": 0.25,
+          "w": 0.2,
+          "id": "spot-defib-speaker"
+        }
+      ],
+      "question": "During a routine check of the station's Automated External Defibrillator (AED), which specific part of the electrode pad packaging must be inspected to ensure it is still legal and fit for use?",
+      "imageAlt": "The internal components of an opened Automated External Defibrillator (AED) kit.",
+      "id": "ps-hs-0038"
+    },
+    {
+      "correctSpotId": "spot-vest-radio-dock",
+      "explanation": "The radio dock/Klick Fast stud is the correct attachment point for secure communication devices, ensuring the radio is accessible but firmly held during physical activity.",
+      "type": "hot_spot",
+      "imageDescription": "A black tactical vest with various pouches, a 'POLICE' patch, and specialized mounting points on the shoulder and chest area.",
+      "imageAlt": "A close-up view of the front of a standard UK police tactical load-bearing vest.",
+      "question": "You are preparing your personal protective equipment (PPE) for duty. Click on the specific mounting point on this tactical vest designed to securely hold your Airwave radio.",
+      "spots": [
+        {
+          "y": 0.3,
+          "id": "spot-vest-radio-dock",
+          "w": 0.1,
+          "x": 0.22,
+          "h": 0.12,
+          "label": "Klick Fast Radio Dock"
+        },
+        {
+          "y": 0.5,
+          "h": 0.15,
+          "x": 0.5,
+          "label": "Document Zip Pocket",
+          "id": "spot-vest-zip-pocket",
+          "w": 0.25
+        },
+        {
+          "y": 0.25,
+          "h": 0.1,
+          "x": 0.6,
+          "label": "Identification Patch Area",
+          "id": "spot-vest-badge-area",
+          "w": 0.3
+        }
+      ],
+      "id": "ps-hs-0039"
+    },
+    {
+      "imageAlt": "A detailed view of a modern police vehicle engine bay with various fluid caps visible.",
+      "spots": [
+        {
+          "y": 0.4,
+          "label": "Engine Oil Filler Cap",
+          "x": 0.4,
+          "h": 0.12,
+          "w": 0.12,
+          "id": "spot-oil-filler-cap"
+        },
+        {
+          "x": 0.75,
+          "h": 0.1,
+          "label": "Brake Fluid Reservoir Cap",
+          "id": "spot-brake-fluid-reservoir",
+          "w": 0.1,
+          "y": 0.25
+        },
+        {
+          "y": 0.3,
+          "id": "spot-coolant-expansion-tank",
+          "w": 0.15,
+          "x": 0.15,
+          "h": 0.1,
+          "label": "Coolant Expansion Tank Cap"
+        }
+      ],
+      "question": "As part of your pre-shift vehicle safety checks, you need to verify the levels of the hydraulic system that assists in stopping the vehicle. Select the reservoir cap for the brake fluid.",
+      "type": "hot_spot",
+      "imageDescription": "An engine bay containing a car battery, the engine cover, and several translucent plastic reservoirs with coloured caps for different fluids.",
+      "explanation": "The brake fluid reservoir, often identified by a yellow cap with a circular symbol, must be checked to ensure the hydraulic braking system functions correctly.",
+      "correctSpotId": "spot-brake-fluid-reservoir",
+      "id": "ps-hs-0040"
+    },
+    {
+      "question": "You are conducting a Health and Safety walk-through. Identify the wall-mounted device that allows an officer to manually trigger the station's fire alarm system.",
+      "imageDescription": "A standard police station corridor. On the walls are a notice board, a fire extinguisher, a red manual call point, and a light switch.",
+      "explanation": "In the event of a fire, manual call points (break glass units) must be easily accessible and clearly visible to all staff to initiate an emergency alarm.",
+      "spots": [
+        {
+          "h": 0.1,
+          "label": "Notice Board",
+          "id": "notice_board",
+          "x": 0.2,
+          "y": 0.4,
+          "w": 0.15
+        },
+        {
+          "y": 0.6,
+          "x": 0.5,
+          "w": 0.08,
+          "h": 0.15,
+          "label": "Fire Extinguisher",
+          "id": "fire_extinguisher"
+        },
+        {
+          "w": 0.06,
+          "x": 0.7,
+          "y": 0.55,
+          "h": 0.08,
+          "id": "fire_alarm_call_point",
+          "label": "Manual Call Point"
+        },
+        {
+          "id": "light_switch",
+          "label": "Light Switch",
+          "h": 0.05,
+          "w": 0.04,
+          "x": 0.8,
+          "y": 0.5
+        }
+      ],
+      "imageAlt": "A hallway in a police station with various wall-mounted items.",
+      "type": "hot_spot",
+      "correctSpotId": "fire_alarm_call_point",
+      "id": "ps-hs-0041"
+    },
+    {
+      "imageAlt": "A transparent plastic evidence bag containing a piece of clothing.",
+      "spots": [
+        {
+          "h": 0.06,
+          "id": "seal_integrity_strip",
+          "label": "Tamper-evident seal",
+          "w": 0.8,
+          "x": 0.1,
+          "y": 0.05
+        },
+        {
+          "x": 0.2,
+          "y": 0.3,
+          "w": 0.6,
+          "h": 0.4,
+          "label": "Written Label Area",
+          "id": "evidence_label"
+        },
+        {
+          "w": 0.5,
+          "x": 0.25,
+          "y": 0.6,
+          "h": 0.3,
+          "id": "bag_contents",
+          "label": "Seized Item"
+        },
+        {
+          "id": "barcode",
+          "label": "Barcode Strip",
+          "h": 0.08,
+          "w": 0.3,
+          "y": 0.85,
+          "x": 0.6
+        }
+      ],
+      "type": "hot_spot",
+      "correctSpotId": "seal_integrity_strip",
+      "explanation": "To prove evidence has not been tampered with, the seal must be intact and the unique numbering across the perforated edge should match.",
+      "question": "You are inspecting a piece of evidence at the property store. Click on the area of the bag that provides visual evidence of whether the container has been tampered with or opened.",
+      "imageDescription": "A transparent evidence bag with an adhesive seal at the top. The seal has a unique serial number and a tamper-evident pattern. There is a written label below it.",
+      "id": "ps-hs-0042"
+    },
+    {
+      "correctSpotId": "oil_dipstick",
+      "type": "hot_spot",
+      "spots": [
+        {
+          "x": 0.1,
+          "y": 0.2,
+          "w": 0.15,
+          "h": 0.12,
+          "label": "Battery Terminals",
+          "id": "battery_terminals"
+        },
+        {
+          "h": 0.1,
+          "label": "Coolant Reservoir Cap",
+          "id": "coolant_cap",
+          "x": 0.4,
+          "y": 0.3,
+          "w": 0.1
+        },
+        {
+          "id": "oil_dipstick",
+          "label": "Engine Oil Dipstick",
+          "h": 0.08,
+          "w": 0.08,
+          "x": 0.6,
+          "y": 0.5
+        },
+        {
+          "y": 0.7,
+          "x": 0.8,
+          "w": 0.1,
+          "h": 0.1,
+          "label": "Washer Fluid Cap",
+          "id": "washer_fluid_cap"
+        }
+      ],
+      "imageAlt": "The engine bay of a modern patrol vehicle with the bonnet open.",
+      "explanation": "The 'POWDER' check includes checking the 'O' for Oil; the dipstick is the primary method for manually verifying the current engine oil level.",
+      "imageDescription": "A detailed view of a car engine. Visible items include the battery, the coolant expansion tank, a yellow-handled dipstick, and the windshield washer fluid blue cap.",
+      "question": "As part of your pre-shift vehicle maintenance (POWDER) checks, you must check the engine's lubrication level. Identify the component used to manually measure the oil level.",
+      "id": "ps-hs-0043"
+    },
+    {
+      "question": "You are conducting a cell induction for a newly arrived detainee. Identify the specific feature they must use if they require urgent medical assistance or wish to speak to the Custody Sergeant.",
+      "imageDescription": "A sterile custody cell environment showing a bench-style bed, a stainless steel toilet, and a wall-mounted intercom panel with a single button.",
+      "explanation": "For the safety of the detainee and the security of the officer, the intercom/call button is the primary tool for a detainee to request immediate assistance.",
+      "spots": [
+        {
+          "x": 0.1,
+          "y": 0.7,
+          "w": 0.2,
+          "label": "Sanitary Facilities",
+          "id": "toilet_area",
+          "h": 0.15
+        },
+        {
+          "w": 0.1,
+          "x": 0.75,
+          "y": 0.45,
+          "h": 0.1,
+          "id": "custody_call_button",
+          "label": "Intercom/Call Button"
+        },
+        {
+          "y": 0.6,
+          "x": 0.2,
+          "w": 0.6,
+          "h": 0.3,
+          "label": "Detainee Bench",
+          "id": "cell_bench_bed"
+        },
+        {
+          "label": "Air Vent",
+          "id": "ventilation_grille",
+          "h": 0.08,
+          "y": 0.1,
+          "x": 0.4,
+          "w": 0.12
+        }
+      ],
+      "imageAlt": "Inside a standard UK police custody cell.",
+      "correctSpotId": "custody_call_button",
+      "type": "hot_spot",
+      "id": "ps-hs-0044"
+    },
+    {
+      "type": "hot_spot",
+      "correctSpotId": "fire_ext_label",
+      "explanation": "Officers must check the service label to ensure the extinguisher is within its inspection expiry date and functional for duty safety.",
+      "imageDescription": "A close-up of a red water fire extinguisher showing the nozzle, handle, pressure gauge, and a white service label on the side.",
+      "imageAlt": "A standard red water fire extinguisher mounted on a wall.",
+      "spots": [
+        {
+          "w": 0.1,
+          "x": 0.5,
+          "h": 0.1,
+          "label": "Pressure Gauge",
+          "y": 0.3,
+          "id": "pressure_gauge_ext"
+        },
+        {
+          "w": 0.2,
+          "h": 0.25,
+          "x": 0.4,
+          "label": "Service Maintenance Label",
+          "y": 0.65,
+          "id": "fire_ext_label"
+        },
+        {
+          "x": 0.8,
+          "h": 0.1,
+          "w": 0.1,
+          "label": "Nozzle",
+          "y": 0.4,
+          "id": "ext_nozzle"
+        }
+      ],
+      "question": "You are conducting a monthly Health and Safety audit of the station's fire equipment. Select the area of the extinguisher that confirms it has been professionally inspected within the last 12 months.",
+      "id": "ps-hs-0045"
+    },
+    {
+      "explanation": "The lens must be checked for obstructions or damage as it is the primary component for capturing visual evidence during interactions.",
+      "imageDescription": "A black body-worn camera with a large central lens, a red record button, and two small status indicator lights on the top edge.",
+      "imageAlt": "A front-facing view of a standard UK police body-worn video camera.",
+      "spots": [
+        {
+          "label": "Record Button",
+          "x": 0.4,
+          "h": 0.2,
+          "w": 0.2,
+          "id": "record_button",
+          "y": 0.8
+        },
+        {
+          "id": "bodycam_lens",
+          "y": 0.4,
+          "label": "Camera Lens",
+          "w": 0.3,
+          "h": 0.3,
+          "x": 0.35
+        },
+        {
+          "label": "Status LEDs",
+          "x": 0.4,
+          "h": 0.1,
+          "w": 0.2,
+          "id": "status_lights",
+          "y": 0.1
+        }
+      ],
+      "question": "You are preparing your Body Worn Video (BWV) for patrol. Identify the part of the device you must inspect specifically for scratches or debris to ensure clear evidence capture.",
+      "type": "hot_spot",
+      "correctSpotId": "bodycam_lens",
+      "id": "ps-hs-0046"
+    },
+    {
+      "correctSpotId": "brake_reservoir",
+      "type": "hot_spot",
+      "imageAlt": "An open engine bay of a police patrol car showing various fluid containers.",
+      "imageDescription": "Inside an engine bay showing the battery, the screen wash cap, the oil filler cap, and a translucent reservoir near the bulkhead with 'Max' and 'Min' markings.",
+      "explanation": "The brake fluid reservoir identifies the fluid level for the stopping system; maintaining this is a critical safety requirement of the POWDER check.",
+      "question": "You are performing a 'POWDER' check on a patrol vehicle. Identify the reservoir that contains the fluid responsible for the vehicle's hydraulic braking system.",
+      "spots": [
+        {
+          "w": 0.15,
+          "x": 0.1,
+          "h": 0.15,
+          "label": "Screen Wash Reservoir",
+          "y": 0.2,
+          "id": "windscreen_wash"
+        },
+        {
+          "y": 0.4,
+          "id": "oil_filler",
+          "w": 0.15,
+          "h": 0.15,
+          "x": 0.5,
+          "label": "Oil Filler Cap"
+        },
+        {
+          "y": 0.15,
+          "id": "brake_reservoir",
+          "w": 0.12,
+          "x": 0.8,
+          "h": 0.12,
+          "label": "Brake Fluid Reservoir"
+        }
+      ],
+      "id": "ps-hs-0047"
+    },
+    {
+      "type": "hot_spot",
+      "correctSpotId": "pava_nozzle_orientation",
+      "spots": [
+        {
+          "w": 0.15,
+          "x": 0.4,
+          "h": 0.1,
+          "label": "Safety Flip-Cap",
+          "y": 0.1,
+          "id": "safety_cap"
+        },
+        {
+          "w": 0.1,
+          "x": 0.43,
+          "h": 0.08,
+          "label": "Directional Nozzle",
+          "y": 0.22,
+          "id": "pava_nozzle_orientation"
+        },
+        {
+          "id": "pava_trigger",
+          "y": 0.35,
+          "label": "Trigger Area",
+          "x": 0.4,
+          "h": 0.15,
+          "w": 0.15
+        }
+      ],
+      "question": "Prior to deployment, you must check your PAVA (incapacitant) spray. Identify the specific part of the canister that must be checked to ensure the spray is correctly oriented for use.",
+      "explanation": "The nozzle direction must be verified to ensure the spray is directed towards the subject and not the officer during deployment.",
+      "imageDescription": "A black PAVA canister with a yellow safety flip-cap, showing the directional nozzle at the top and the trigger mechanism.",
+      "imageAlt": "A handheld PAVA irritant spray canister in its holster.",
+      "id": "ps-hs-0048"
+    },
+    {
+      "question": "You are booking in a high-value item of jewellery. Click on the unique security feature that must be recorded on the property system to prevent evidence tampering.",
+      "imageDescription": "A clear plastic evidence bag featuring a tamper-evident seal. At the very top edge, there is a printed unique serial number and a barcode on the plastic strip.",
+      "explanation": "The unique serial number on the evidence bag seal ensures that the item has not been tampered with and maintains the chain of custody.",
+      "imageAlt": "A standard clear plastic police evidence bag with a yellow security seal at the top.",
+      "spots": [
+        {
+          "id": "seal-id",
+          "label": "Unique Serial Number",
+          "h": 0.1,
+          "w": 0.25,
+          "x": 0.35,
+          "y": 0.05
+        },
+        {
+          "label": "Main Bag Compartment",
+          "id": "bag-body",
+          "h": 0.4,
+          "y": 0.4,
+          "x": 0.25,
+          "w": 0.5
+        },
+        {
+          "id": "writing-area",
+          "label": "Case Information Panel",
+          "h": 0.15,
+          "w": 0.4,
+          "y": 0.7,
+          "x": 0.3
+        }
+      ],
+      "correctSpotId": "seal-id",
+      "type": "hot_spot",
+      "id": "ps-hs-0049"
+    },
+    {
+      "imageAlt": "A sealed, sterile medical bandage in a green and white wrapper.",
+      "spots": [
+        {
+          "y": 0.8,
+          "x": 0.15,
+          "w": 0.2,
+          "h": 0.12,
+          "label": "Batch/Lot Number",
+          "id": "lot-no"
+        },
+        {
+          "y": 0.8,
+          "x": 0.65,
+          "w": 0.2,
+          "label": "Expiry Date/Hourglass Symbol",
+          "id": "exp-date",
+          "h": 0.12
+        },
+        {
+          "w": 0.3,
+          "x": 0.35,
+          "y": 0.2,
+          "h": 0.1,
+          "id": "brand-name",
+          "label": "Manufacturer Brand"
+        }
+      ],
+      "type": "hot_spot",
+      "correctSpotId": "exp-date",
+      "question": "While auditing the first aid kit in a response vehicle, you find this sterile bandage. Select the specific information that determines if this item is still fit for operational use.",
+      "imageDescription": "The back of a sterile dressing packet. It shows various symbols and text including a lot number, a manufacture date, and a final expiry date marked with an hourglass symbol.",
+      "explanation": "The expiry date on the bandage ensures the sterile integrity of the item, which is critical for infection control in first aid.",
+      "id": "ps-hs-0050"
+    },
+    {
+      "imageDescription": "Large view of a tyre tread. Inside the main longitudinal grooves, there are small raised rubber bars located at intervals around the circumference.",
+      "question": "During a vehicle safety check, you are assessing the roadworthiness of the tyres. Click on the 'Tread Wear Indicator' (TWI) that shows if the tyre has reached its legal limit.",
+      "explanation": "The TWI is a small raised bump within the tyre grooves that indicates when the tread has worn down to the legal minimum of 1.6mm.",
+      "type": "hot_spot",
+      "correctSpotId": "tyre-indicator",
+      "imageAlt": "A close-up view of a car tyre's tread pattern.",
+      "spots": [
+        {
+          "y": 0.5,
+          "x": 0.8,
+          "w": 0.15,
+          "label": "Tyre Sidewall",
+          "id": "sidewall",
+          "h": 0.15
+        },
+        {
+          "x": 0.45,
+          "y": 0.42,
+          "w": 0.1,
+          "label": "Tread Wear Indicator Bar",
+          "id": "tyre-indicator",
+          "h": 0.08
+        },
+        {
+          "w": 0.2,
+          "y": 0.3,
+          "x": 0.2,
+          "h": 0.1,
+          "id": "tread-block",
+          "label": "Main Tread Block"
+        }
+      ],
+      "id": "ps-hs-0051"
+    },
+    {
+      "type": "hot_spot",
+      "correctSpotId": "anti-ligature",
+      "imageAlt": "A close-up of a ventilation grille in a custody cell.",
+      "spots": [
+        {
+          "y": 0.3,
+          "x": 0.25,
+          "w": 0.5,
+          "label": "Fine Perforated Mesh Surface",
+          "id": "anti-ligature",
+          "h": 0.4
+        },
+        {
+          "id": "security-screw",
+          "label": "Tamper-Proof Screw",
+          "h": 0.1,
+          "w": 0.08,
+          "x": 0.1,
+          "y": 0.1
+        },
+        {
+          "w": 0.6,
+          "x": 0.2,
+          "y": 0.85,
+          "id": "sealant",
+          "label": "Pick-Resistant Sealant",
+          "h": 0.1
+        }
+      ],
+      "imageDescription": "A square metal plate mounted to a cell wall. The plate is covered in hundreds of tiny, pin-sized holes rather than horizontal bars or wide gaps.",
+      "question": "You are performing a risk assessment of a custody cell for a detainee who is a high suicide risk. Click on the safety feature of this ventilation grille designed to prevent self-harm.",
+      "explanation": "Safe custody cells use anti-ligature vents with tiny perforations to prevent detainees from attaching items to them for self-harm.",
+      "id": "ps-hs-0052"
+    },
+    {
+      "question": "During a vehicle safety check, you are ensuring the demisting system is operational. Click on the dashboard vent used specifically to clear the front windscreen.",
+      "imageAlt": "The interior dashboard of a police response vehicle.",
+      "spots": [
+        {
+          "y": 0.45,
+          "x": 0.1,
+          "h": 0.1,
+          "label": "Side Air Vent",
+          "id": "side_vent",
+          "w": 0.12
+        },
+        {
+          "id": "defrost_vent",
+          "w": 0.4,
+          "x": 0.3,
+          "h": 0.08,
+          "label": "Windscreen Vent",
+          "y": 0.15
+        },
+        {
+          "label": "Left Centre Vent",
+          "h": 0.15,
+          "x": 0.35,
+          "w": 0.1,
+          "id": "centre_vent_l",
+          "y": 0.5
+        },
+        {
+          "h": 0.15,
+          "x": 0.55,
+          "label": "Right Centre Vent",
+          "id": "centre_vent_r",
+          "w": 0.1,
+          "y": 0.5
+        }
+      ],
+      "type": "hot_spot",
+      "imageDescription": "A close-up shot of a modern police vehicle dashboard showing the steering wheel, digital display, and various vents.",
+      "explanation": "The windscreen vents are critical for maintaining a clear field of vision and must be checked for obstructions or damage during vehicle inspections.",
+      "correctSpotId": "defrost_vent",
+      "id": "ps-hs-0053"
+    },
+    {
+      "correctSpotId": "exp_date_seal",
+      "explanation": "Officers must check the expiry date of the security seal to ensure the sterile contents of the kit remain valid and haven't been compromised.",
+      "type": "hot_spot",
+      "imageDescription": "A close-up of a plastic security pull-tight seal attached to the zips of a green first aid bag, displaying printed text including a date.",
+      "question": "You are auditing the medical supplies in the locker room. Identify the specific part of the security seal that indicates when the kit's contents must be re-validated.",
+      "imageAlt": "A security seal on the handle and zip of a medical kit.",
+      "spots": [
+        {
+          "y": 0.6,
+          "w": 0.2,
+          "id": "bar_code",
+          "label": "Barcode Area",
+          "x": 0.4,
+          "h": 0.15
+        },
+        {
+          "y": 0.45,
+          "label": "Expiry Date/Batch Code",
+          "h": 0.12,
+          "x": 0.38,
+          "w": 0.25,
+          "id": "exp_date_seal"
+        },
+        {
+          "y": 0.5,
+          "label": "Pull Tab Handle",
+          "x": 0.7,
+          "h": 0.1,
+          "w": 0.1,
+          "id": "pull_tab"
+        },
+        {
+          "x": 0.3,
+          "h": 0.2,
+          "label": "Locking Teeth",
+          "id": "locking_mechanism",
+          "w": 0.08,
+          "y": 0.55
+        }
+      ],
+      "id": "ps-hs-0054"
+    },
+    {
+      "explanation": "Ensuring the copper or gold contacts are clean is essential for the reliable power supply and operation of communication equipment.",
+      "correctSpotId": "battery_contacts_gold_pins",
+      "spots": [
+        {
+          "label": "Battery Connection Pins",
+          "h": 0.12,
+          "x": 0.41,
+          "w": 0.18,
+          "id": "battery_contacts_gold_pins",
+          "y": 0.42
+        },
+        {
+          "w": 0.3,
+          "id": "belt_clip_mount",
+          "label": "Belt Clip Mount",
+          "h": 0.08,
+          "x": 0.35,
+          "y": 0.1
+        },
+        {
+          "y": 0.75,
+          "label": "Serial Number Label",
+          "x": 0.3,
+          "h": 0.1,
+          "w": 0.4,
+          "id": "serial_sticker_area"
+        },
+        {
+          "h": 0.15,
+          "x": 0.05,
+          "label": "Side Accessory Port",
+          "id": "accessory_port_cover",
+          "w": 0.08,
+          "y": 0.3
+        }
+      ],
+      "imageAlt": "The back of a police digital handheld radio with the battery removed.",
+      "question": "You are troubleshooting a radio that keeps losing power. Click on the metallic area of the radio body that completes the circuit with the battery pack.",
+      "imageDescription": "A view of the internal back panel of a digital radio unit showing several small gold-coloured metallic pins used to connect to the battery.",
+      "type": "hot_spot",
+      "id": "ps-hs-0055"
+    },
+    {
+      "imageDescription": "A close-up of a square body-worn camera showing the lens, a large central button, and a small LED status indicator light in the top corner.",
+      "type": "hot_spot",
+      "spots": [
+        {
+          "y": 0.3,
+          "w": 0.2,
+          "id": "lens_area_glass",
+          "label": "Camera Lens",
+          "h": 0.2,
+          "x": 0.4
+        },
+        {
+          "w": 0.1,
+          "id": "inspection_light_port",
+          "label": "LED Status Light",
+          "x": 0.15,
+          "h": 0.1,
+          "y": 0.15
+        },
+        {
+          "id": "main_record_button",
+          "w": 0.3,
+          "h": 0.25,
+          "x": 0.35,
+          "label": "Record Activation Button",
+          "y": 0.6
+        },
+        {
+          "h": 0.12,
+          "x": 0.7,
+          "label": "Microphone Input",
+          "id": "microphone_grille",
+          "w": 0.15,
+          "y": 0.82
+        }
+      ],
+      "question": "Before going on patrol, you must check the operational status of your Body Worn Video (BWV) camera. Click on the LED indicator that displays the current recording status.",
+      "imageAlt": "A front-facing view of a police body-worn video camera.",
+      "correctSpotId": "inspection_light_port",
+      "explanation": "The status indicator light provides immediate visual feedback on the device's operational status and battery life.",
+      "id": "ps-hs-0056"
+    },
+    {
+      "correctSpotId": "first_aid_sign",
+      "type": "hot_spot",
+      "question": "You are conducting a safety orientation for a new staff member. Click on the universal safety sign that identifies the location of emergency medical supplies.",
+      "imageDescription": "A long police station corridor with a fire exit sign, a toilet door, and a green sign with a white cross mounted on the wall.",
+      "explanation": "Under Health and Safety regulations, first aid locations must be clearly marked with a green and white sign to ensure quick access during emergencies.",
+      "spots": [
+        {
+          "h": 0.15,
+          "id": "fire_exit",
+          "x": 0.1,
+          "y": 0.1,
+          "label": "Fire Exit Sign",
+          "w": 0.12
+        },
+        {
+          "label": "First Aid Sign",
+          "y": 0.25,
+          "w": 0.15,
+          "x": 0.75,
+          "id": "first_aid_sign",
+          "h": 0.18
+        },
+        {
+          "label": "Water Cooler Sign",
+          "y": 0.4,
+          "w": 0.1,
+          "x": 0.4,
+          "id": "water_cooler_sign",
+          "h": 0.3
+        }
+      ],
+      "imageAlt": "A corridor in a police station with various signs and doors.",
+      "id": "ps-hs-0057"
+    },
+    {
+      "question": "You are reviewing vehicle safety for night-time patrols. Click on the specific area of the vehicle's livery designed to maximize its lateral (side-on) visibility to other road users.",
+      "explanation": "The retro-reflective 'Battenburg' markings on the side of the vehicle are designed to provide maximum visibility from a side-on profile in low light conditions.",
+      "imageDescription": "A white police car with blue and yellow high-visibility checkered patterns along the side, a light bar on top, and police decals on the door.",
+      "imageAlt": "A side view of a UK police response vehicle with high-visibility markings.",
+      "spots": [
+        {
+          "label": "Emergency Light Bar",
+          "y": 0.15,
+          "w": 0.2,
+          "x": 0.45,
+          "id": "light_bar_blue",
+          "h": 0.1
+        },
+        {
+          "id": "hi_vis_stripes_side",
+          "h": 0.4,
+          "label": "Yellow and Blue Side Markings",
+          "y": 0.5,
+          "w": 0.6,
+          "x": 0.2
+        },
+        {
+          "w": 0.08,
+          "y": 0.45,
+          "label": "Door Handle",
+          "x": 0.35,
+          "id": "door_handle",
+          "h": 0.15
+        },
+        {
+          "h": 0.2,
+          "id": "police_badge",
+          "x": 0.1,
+          "w": 0.1,
+          "y": 0.48,
+          "label": "Police Crest Decal"
+        }
+      ],
+      "correctSpotId": "hi_vis_stripes_side",
+      "type": "hot_spot",
+      "id": "ps-hs-0058"
+    },
+    {
+      "type": "hot_spot",
+      "correctSpotId": "seal_number",
+      "imageAlt": "A high-security clear plastic evidence bag with a red tamper-evident seal.",
+      "spots": [
+        {
+          "h": 0.15,
+          "id": "seal_number",
+          "x": 0.35,
+          "w": 0.3,
+          "y": 0.2,
+          "label": "Unique Serial Number"
+        },
+        {
+          "x": 0.3,
+          "w": 0.4,
+          "y": 0.6,
+          "label": "Date/Time Entry Box",
+          "h": 0.1,
+          "id": "write_on_area"
+        },
+        {
+          "x": 0.1,
+          "w": 0.8,
+          "label": "Tamper Evident Adhesive",
+          "y": 0.05,
+          "h": 0.2,
+          "id": "adhesive_strip"
+        }
+      ],
+      "question": "You are preparing to book a seized mobile phone into the property store. Identify the unique identifier on the evidence bag seal that must be recorded on the property system to maintain the chain of custody.",
+      "explanation": "The unique serial number on an evidence bag seal is the primary reference used to maintain the chain of custody and ensure the bag has not been tampered with.",
+      "imageDescription": "A close-up of the top of an evidence bag showing the adhesive strip and a unique alphanumeric serial number printed directly onto the red plastic seal.",
+      "id": "ps-hs-0059"
+    },
+    {
+      "correctSpotId": "emergency_button",
+      "type": "hot_spot",
+      "question": "During a radio functionality check, you need to identify the feature used to instantly alert the control room that you are in urgent need of assistance. Click on this emergency feature.",
+      "imageDescription": "A handheld radio showing the volume knob, the antenna, and a prominent small orange button located on the top surface.",
+      "explanation": "The orange 'panic' button is the dedicated emergency feature on the Airwave radio, used to send an immediate SOS signal to the control room.",
+      "imageAlt": "The top view of a standard police handheld Airwave radio.",
+      "spots": [
+        {
+          "id": "antenna_base",
+          "h": 0.2,
+          "w": 0.1,
+          "y": 0.1,
+          "label": "Antenna Base",
+          "x": 0.2
+        },
+        {
+          "w": 0.12,
+          "y": 0.2,
+          "label": "Orange Emergency Button",
+          "x": 0.45,
+          "id": "emergency_button",
+          "h": 0.15
+        },
+        {
+          "id": "volume_dial_top",
+          "h": 0.25,
+          "w": 0.15,
+          "label": "On/Off Volume Dial",
+          "y": 0.15,
+          "x": 0.75
+        }
+      ],
+      "id": "ps-hs-0060"
+    },
+    {
+      "correctSpotId": "spot_aed_pad",
+      "type": "hot_spot",
+      "explanation": "Automated External Defibrillator (AED) pads are single-use medical items that must be checked for an intact seal and a valid expiry date to ensure they work in an emergency.",
+      "spots": [
+        {
+          "x": 0.1,
+          "label": "AED Main Unit",
+          "id": "spot_aed_main",
+          "y": 0.2,
+          "w": 0.4,
+          "h": 0.3
+        },
+        {
+          "id": "spot_aed_pad",
+          "y": 0.6,
+          "label": "Electrode Pad Package",
+          "x": 0.55,
+          "h": 0.25,
+          "w": 0.35
+        },
+        {
+          "y": 0.1,
+          "id": "spot_aed_handle",
+          "x": 0.25,
+          "label": "Carrying Handle",
+          "h": 0.15,
+          "w": 0.2
+        }
+      ],
+      "imageAlt": "Inside of an opened AED cabinet housing the main device and a sealed electrode pad package.",
+      "question": "You are performing a weekly check of the station's medical equipment. Identify the item in this kit that must be checked specifically for a valid expiry date and an intact vacuum seal.",
+      "imageDescription": "An image of an open emergency medical cabinet or AED kit containing the device and a separate, sealed white and orange foil package.",
+      "id": "ps-hs-0061"
+    },
+    {
+      "correctSpotId": "spot_sidewall_markings",
+      "type": "hot_spot",
+      "spots": [
+        {
+          "h": 0.15,
+          "w": 0.25,
+          "y": 0.2,
+          "id": "spot_brand_logo",
+          "x": 0.35,
+          "label": "Manufacturer Logo"
+        },
+        {
+          "label": "DOT Date Code",
+          "x": 0.4,
+          "id": "spot_sidewall_markings",
+          "y": 0.65,
+          "w": 0.25,
+          "h": 0.2
+        },
+        {
+          "w": 0.3,
+          "h": 0.12,
+          "x": 0.1,
+          "label": "Tyre Size Specifications",
+          "y": 0.45,
+          "id": "spot_size_specs"
+        }
+      ],
+      "explanation": "The tyre sidewall contains a standardized code (e.g., 2221) indicating the week and year of manufacture, which is vital for ensuring the rubber has not perished over time.",
+      "imageAlt": "Close-up of a vehicle tyre sidewall near the rim, showing various embossed numbers and letters.",
+      "question": "As part of a routine vehicle inspection, you are checking for tyre degradation. Identify the specific area on the tyre sidewall that indicates when the tyre was manufactured.",
+      "imageDescription": "A detailed close-up of a black rubber tyre sidewall showing the brand, size specifications, and a four-digit date code in a small oval.",
+      "id": "ps-hs-0062"
+    },
+    {
+      "spots": [
+        {
+          "w": 0.15,
+          "h": 0.15,
+          "x": 0.75,
+          "label": "Door Handle/Lock Bench",
+          "id": "spot_cell_handle",
+          "y": 0.45
+        },
+        {
+          "h": 0.15,
+          "w": 0.2,
+          "y": 0.3,
+          "id": "spot_custody_hatch",
+          "label": "Inspection Hatch (Spyhole)",
+          "x": 0.4
+        },
+        {
+          "label": "Food Serving Hatch",
+          "x": 0.35,
+          "y": 0.75,
+          "id": "spot_food_slot_hatch",
+          "w": 0.3,
+          "h": 0.12
+        }
+      ],
+      "explanation": "The spyhole or inspection hatch allows officers to maintain visual contact with a detainee to ensure their safety without needing to open the cell door.",
+      "imageAlt": "A heavy blue custody cell door with a handle, a small sliding hatch, and a floor-level food slot.",
+      "correctSpotId": "spot_custody_hatch",
+      "type": "hot_spot",
+      "question": "You are conducting a 'Level 1' observation of a detainee. Identify the feature on the cell door that allows you to safely observe the occupant without breaching the cell's integrity.",
+      "imageDescription": "Front view of a standard UK police custody cell door featuring various mechanical security fixtures.",
+      "id": "ps-hs-0063"
+    },
+    {
+      "spots": [
+        {
+          "w": 0.15,
+          "h": 0.1,
+          "label": "Volume/Talkgroup Knob",
+          "x": 0.42,
+          "y": 0.05,
+          "id": "spot_volume_knob_rad"
+        },
+        {
+          "w": 0.12,
+          "h": 0.2,
+          "label": "Push-To-Talk (PTT) Button",
+          "x": 0.05,
+          "id": "spot_ptt_button",
+          "y": 0.3
+        },
+        {
+          "w": 0.4,
+          "h": 0.15,
+          "x": 0.3,
+          "label": "Numerical Keypad",
+          "id": "spot_keypad_rad",
+          "y": 0.7
+        }
+      ],
+      "explanation": "The PTT button is the primary interface for transmitting voice communications; it must be checked to ensure it clicks/engages and is not stuck by debris.",
+      "imageAlt": "Front and side view of a police Airwave radio (TETRA terminal) showing buttons and a screen.",
+      "correctSpotId": "spot_ptt_button",
+      "type": "hot_spot",
+      "question": "Before starting your patrol, you must perform a 'radio check'. Identify the specific control that must be depressed to transmit your voice to the control room.",
+      "imageDescription": "A close-up image of a hand-held digital radio focusing on the interface buttons and the large rubberised button on the left side.",
+      "id": "ps-hs-0064"
     }
   ],
   "mocks": []
