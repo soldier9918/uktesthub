@@ -6,8 +6,8 @@
   "bank": [
     {
       "type": "dropdown_blanks",
-      "template": "Ridesharing is {{0}} people who do not {{1}} each other pay separate fares and travel together in the same {{2}}.",
-      "prompt": "Select the words from the dropdowns to complete the sentence.",
+      "template": "Ridesharing is {{0}} people who do not {{1}} each other pay separate fares and travel together in the same {{2}}",
+      "prompt": "Select the words from the dropdowns to complete the sentence",
       "blanks": [
         {
           "options": [
@@ -34,13 +34,13 @@
           "correctIndex": 0
         }
       ],
-      "explanation": "TfL defines ridesharing as separate fares paid by people who do not know each other travelling together in the same vehicle.",
+      "explanation": "TfL defines ridesharing as separate fares paid by people who do not know each other travelling together in the same vehicle",
       "id": "s-db-0001"
     },
     {
       "type": "dropdown_blanks",
-      "template": "As a private hire driver, you must {{0}} your PHV licence and {{1}} disc on the vehicle whenever you are working.",
-      "prompt": "Select the correct words to complete the sentence.",
+      "template": "As a private hire driver, you must {{0}} your PHV licence and {{1}} disc on the vehicle whenever you are working",
+      "prompt": "Select the correct words to complete the sentence",
       "blanks": [
         {
           "options": [
@@ -59,13 +59,13 @@
           "correctIndex": 0
         }
       ],
-      "explanation": "Drivers must display their TfL PHV identification disc on the vehicle and carry their driver licence at all times when working.",
+      "explanation": "Drivers must display their TfL PHV identification disc on the vehicle and carry their driver licence at all times when working",
       "id": "s-db-0002"
     },
     {
       "type": "dropdown_blanks",
-      "template": "If a passenger has an assistance dog, you {{0}} refuse the booking and you {{1}} charge an extra fee for the dog.",
-      "prompt": "Select the correct words to complete the sentence.",
+      "template": "If a passenger has an assistance dog, you {{0}} refuse the booking and you {{1}} charge an extra fee for the dog",
+      "prompt": "Select the correct words to complete the sentence",
       "blanks": [
         {
           "options": [
@@ -84,13 +84,13 @@
           "correctIndex": 0
         }
       ],
-      "explanation": "Under the Equality Act 2010, refusing an assistance dog or charging extra is unlawful discrimination.",
+      "explanation": "Under the Equality Act 2010, refusing an assistance dog or charging extra is unlawful discrimination",
       "id": "s-db-0003"
     },
     {
       "type": "dropdown_blanks",
-      "template": "As a driver, you may have to {{0}} children or adults who are at risk. You may come into {{1}} with passengers that are being trafficked, exploited or abused.",
-      "prompt": "Select the correct words to complete the sentence.",
+      "template": "As a driver, you may have to {{0}} children or adults who are at risk. You may come into {{1}} with passengers that are being trafficked, exploited or abused",
+      "prompt": "Select the correct words to complete the sentence",
       "blanks": [
         {
           "options": [
@@ -109,13 +109,13 @@
           "correctIndex": 0
         }
       ],
-      "explanation": "Drivers may transport vulnerable passengers and come into contact with people at risk; safeguarding awareness is essential.",
+      "explanation": "Drivers may transport vulnerable passengers and come into contact with people at risk; safeguarding awareness is essential",
       "id": "s-db-0004"
     },
     {
       "type": "dropdown_blanks",
-      "template": "You must report any incident, accident or {{0}} to TfL within {{1}} hours.",
-      "prompt": "Select the correct words to complete the sentence.",
+      "template": "You must report any incident, accident or {{0}} to TfL within {{1}} hours",
+      "prompt": "Select the correct words to complete the sentence",
       "blanks": [
         {
           "options": [
@@ -134,7 +134,7 @@
           "correctIndex": 0
         }
       ],
-      "explanation": "TfL requires private hire operators and drivers to report incidents and complaints within 72 hours.",
+      "explanation": "TfL requires private hire operators and drivers to report incidents and complaints within 72 hours",
       "id": "s-db-0005"
     },
     {
@@ -147,7 +147,7 @@
         "As the driver decides"
       ],
       "correctAnswer": 0,
-      "explanation": "The maximum number of passengers is set on the vehicle licence and must never be exceeded.",
+      "explanation": "The maximum number of passengers is set on the vehicle licence and must never be exceeded",
       "id": "s-mc-0001"
     },
     {
@@ -160,7 +160,7 @@
         "Wait for the passenger to call"
       ],
       "correctAnswer": 1,
-      "explanation": "Lost property must be handed to the operator or to a police station as soon as reasonably possible.",
+      "explanation": "Lost property must be handed to the operator or to a police station as soon as reasonably possible",
       "id": "s-mc-0002"
     },
     {
@@ -173,12 +173,12 @@
         "Job title"
       ],
       "correctAnswer": 1,
-      "explanation": "Disability is one of nine protected characteristics under the Equality Act 2010.",
+      "explanation": "Disability is one of nine protected characteristics under the Equality Act 2010",
       "id": "s-mc-0003"
     },
     {
       "type": "multiple_choice",
-      "question": "If a passenger asks you to break the speed limit, you should:",
+      "question": "If a passenger asks you to break the speed limit, you should",
       "options": [
         "Speed up briefly",
         "Politely refuse — you are responsible for safe driving",
@@ -186,7 +186,7 @@
         "Only speed on motorways"
       ],
       "correctAnswer": 1,
-      "explanation": "You are legally responsible for the safe operation of the vehicle and must obey speed limits at all times.",
+      "explanation": "You are legally responsible for the safe operation of the vehicle and must obey speed limits at all times",
       "id": "s-mc-0004"
     },
     {
@@ -199,12 +199,12 @@
         "Borrow another driver's disc"
       ],
       "correctAnswer": 2,
-      "explanation": "A lost or stolen disc must be reported to TfL and a replacement obtained before continuing to work.",
+      "explanation": "A lost or stolen disc must be reported to TfL and a replacement obtained before continuing to work",
       "id": "s-mc-0005"
     },
     {
       "type": "multiple_choice",
-      "question": "A wheelchair user books a vehicle. You should:",
+      "question": "A wheelchair user books a vehicle. You should",
       "options": [
         "Cancel the booking",
         "Charge a higher fare",
@@ -212,7 +212,7 @@
         "Ask the passenger to fold the wheelchair themselves"
       ],
       "correctAnswer": 2,
-      "explanation": "Drivers must provide reasonable assistance to disabled passengers without charging extra.",
+      "explanation": "Drivers must provide reasonable assistance to disabled passengers without charging extra",
       "id": "s-mc-0006"
     },
     {
@@ -225,7 +225,7 @@
         "0 mg/100 ml"
       ],
       "correctAnswer": 0,
-      "explanation": "In England the limit is 80 mg of alcohol per 100 ml of blood, but professional drivers should not drink before working.",
+      "explanation": "In England the limit is 80 mg of alcohol per 100 ml of blood, but professional drivers should not drink before working",
       "id": "s-mc-0007"
     },
     {
@@ -238,12 +238,12 @@
         "The passenger"
       ],
       "correctAnswer": 2,
-      "explanation": "The driver is responsible for checking the vehicle is roadworthy before each shift.",
+      "explanation": "The driver is responsible for checking the vehicle is roadworthy before each shift",
       "id": "s-mc-0008"
     },
     {
       "type": "multiple_choice",
-      "question": "If you witness a hate crime, you should:",
+      "question": "If you witness a hate crime, you should",
       "options": [
         "Ignore it — it is not your problem",
         "Report it to the police",
@@ -251,7 +251,7 @@
         "Tell the passenger to leave"
       ],
       "correctAnswer": 1,
-      "explanation": "Hate crimes should always be reported to the police on 101 or 999 in an emergency.",
+      "explanation": "Hate crimes should always be reported to the police on 101 or 999 in an emergency",
       "id": "s-mc-0009"
     }
   ],
