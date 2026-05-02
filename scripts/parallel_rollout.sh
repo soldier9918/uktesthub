@@ -7,16 +7,29 @@ P="${1:-4}"; shift
 LOGDIR=/tmp/rollout-logs
 mkdir -p "$LOGDIR"
 
-run_one() {
+PYBIN="$(command -v python3 || command -v python)"
+
+run_topic() {
   local t="$1"
+  local log="$LOGDIR/$t.log"
   {
     echo "=== START $(date -u +%H:%M:%S) $t ==="
-    python -u scripts/generate_mocks.py bank --topic "$t" --delay 1
-    python -u scripts/generate_mocks.py assemble --topic "$t"
-    python -u scripts/generate_mocks.py validate --topic "$t"
-    echo "=== DONE $(date -u +%H:%M:%S) $t ==="
-  } > "$LOGDIR/$t.log" 2>&1
+    "$PYBIN" -u scripts/generate_mocks.py bank --topic "$t" --delay 1
+    "$PYBIN" -u scripts/generate_mocks.py assemble --topic "$t"
+    "$PYBIN" -u scripts/generate_mocks.py validate --topic "$t"
+    echo "=== DONE  $(date -u +%H:%M:%S) $t ==="
+  } > "$log" 2>&1
 }
 
-export -f run_one
-printf '%s\n' "$@" | xargs -n1 -P "$P" -I{} bash -c 'run_one "$@"' _ {}
+# Simple parallelism via job control (avoids xargs/export-f quirks)
+running=0
+for t in "$@"; do
+  run_topic "$t" &
+  running=$((running+1))
+  if (( running >= P )); then
+    wait -n
+    running=$((running-1))
+  fi
+done
+wait
+echo "All done."

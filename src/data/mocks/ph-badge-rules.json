@@ -107,6 +107,3594 @@
       "explanation": "It shows the driver's photo and unique licence number.",
       "type": "multiple_choice",
       "id": "pbr-mc-0008"
+    },
+    {
+      "options": [
+        "Keep it as a souvenir of your career",
+        "Destroy it or throw it in the domestic bin",
+        "Return it to the licensing authority within 7 days",
+        "Pass it on to a friend who wants to be a driver"
+      ],
+      "type": "multiple_choice",
+      "explanation": "The badge is the property of the licensing authority (e.g., TfL) and must be returned if you stop working as a licensed driver.",
+      "correctAnswer": 2,
+      "question": "What must you do with your PHV driver badge if you decide to stop being a private hire driver?",
+      "id": "pbr-mc-0009"
+    },
+    {
+      "correctAnswer": 0,
+      "question": "If you change your name by deed poll or marriage, what action must you take regarding your badge?",
+      "explanation": "The personal details on your badge must always match your current legal information held by the licensing authority.",
+      "options": [
+        "Notify the licensing authority immediately to get a replacement",
+        "Wait until the badge expires to update the details",
+        "Write the new name on the back of the badge with a pen",
+        "Do nothing as long as your driver's licence is updated"
+      ],
+      "type": "multiple_choice",
+      "id": "pbr-mc-0010"
+    },
+    {
+      "explanation": "Your badge is only valid for the specific person named and pictured; it cannot be shared with family or colleagues.",
+      "options": [
+        "Up to 2 family members",
+        "Any driver insured on the same vehicle",
+        "Business partners holding a valid operator licence",
+        "No one else is permitted to use it"
+      ],
+      "type": "multiple_choice",
+      "question": "How many people, other than yourself, are legally allowed to use your PHV driver badge?",
+      "correctAnswer": 3,
+      "id": "pbr-mc-0011"
+    },
+    {
+      "question": "While waiting for a replacement badge to arrive in the post, what should you do if you continue to drive?",
+      "correctAnswer": 1,
+      "explanation": "If you are still working while waiting for a replacement, carrying the official receipt or reference proves you are licensed.",
+      "type": "multiple_choice",
+      "options": [
+        "Stop working immediately until the new badge arrives",
+        "Carry the official receipt or notification of the replacement request",
+        "Use a photocopy of your old badge instead",
+        "Write your licence number on a piece of cardboard and display it"
+      ],
+      "id": "pbr-mc-0012"
+    },
+    {
+      "question": "Which of the following is true regarding the 'special powers' a PHV badge gives you over traffic laws?",
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "options": [
+        "It exempts you from all speed limits in emergencies",
+        "It allows you to park on double red lines at any time",
+        "It does not grant any special exemptions from general traffic laws",
+        "It allows you to use bus lanes in every UK borough"
+      ],
+      "explanation": "Private Hire Drivers are not generally exempt from wearing seatbelts unless they are carrying a passenger; the badge does not grant a generic exemption.",
+      "id": "pbr-mc-0013"
+    },
+    {
+      "correctAnswer": 0,
+      "question": "Why is it important for a passenger to see your driver's badge before starting a journey?",
+      "options": [
+        "It ensures they are getting into the right car with a licensed driver",
+        "It allows them to see if you have any criminal convictions",
+        "It lets them know your home address for safety reasons",
+        "It is a requirement for them to process their payment via the app"
+      ],
+      "type": "multiple_choice",
+      "explanation": "Checking the badge ensures the passenger is entering the correct vehicle with a licensed professional for their own safety.",
+      "id": "pbr-mc-0014"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "A small fine and a warning letter",
+        "A request to retake the Topographical test",
+        "Revocation of your licence and potential criminal prosecution",
+        "Points on your DVLA driving licence only"
+      ],
+      "explanation": "Forging or altering an official licensing document is a serious criminal offence that leads to immediate revocation.",
+      "question": "What is the likely consequence of being caught with a forged or tampered PHV driver badge?",
+      "correctAnswer": 2,
+      "id": "pbr-mc-0015"
+    },
+    {
+      "question": "If you hold PHV badges from two different licensing authorities, how should you display them?",
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "options": [
+        "Display both in the windscreen at the same time",
+        "Only display the badge relevant to the area/authority you are currently working in",
+        "Stack them on top of each other in a single lanyard",
+        "Hide both and only show them if a passenger asks"
+      ],
+      "explanation": "If you obtain a second badge (e.g., for a different region), you must not display both simultaneously as it causes confusion.",
+      "id": "pbr-mc-0016"
+    },
+    {
+      "question": "If a passenger with a disability asks for your badge number to keep a record, you must:",
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "options": [
+        "Tell them to contact your operator instead",
+        "Refuse unless they show their own ID first",
+        "Only provide it if the police are present",
+        "Allow them to note down your badge number or take a photo of it"
+      ],
+      "explanation": "Under the Equality Act, you must provide your badge details if requested to ensure the driver is accountable for their service.",
+      "id": "pbr-mc-0017"
+    },
+    {
+      "options": [
+        "A recent, clear photograph of the driver's head and shoulders",
+        "A wide-angle photo of the driver standing next to their car",
+        "A copy of the photo from the driver's passport taken 10 years ago",
+        "An avatar or digital illustration of the driver"
+      ],
+      "type": "multiple_choice",
+      "explanation": "The photo must be a recent, clear likeness of the driver to prevent identity fraud and ensure passenger trust.",
+      "question": "What type of photograph must be displayed on a valid PHV driver badge?",
+      "correctAnswer": 0,
+      "id": "pbr-mc-0018"
+    },
+    {
+      "correctAnswer": 2,
+      "question": "If your badge is stolen from your vehicle, what is the first official step you should take?",
+      "explanation": "The badge is a security item; if it is stolen, it must be reported to the police so a crime reference number can be issued.",
+      "options": [
+        "Wait 14 days to see if it is returned by the thief",
+        "Order a new one online without telling anyone",
+        "Report the theft to the police and get a crime reference number",
+        "Ask your operator to issue you a temporary paper version"
+      ],
+      "type": "multiple_choice",
+      "id": "pbr-mc-0019"
+    },
+    {
+      "question": "According to standard PHV regulations, where is the most appropriate place to 'wear' your badge?",
+      "correctAnswer": 1,
+      "options": [
+        "In the driver's wallet or purse for safekeeping",
+        "On a lanyard around the neck or clipped to clothing",
+        "In the glove box with the insurance documents",
+        "Taped to the rear passenger window"
+      ],
+      "type": "multiple_choice",
+      "explanation": "Rules generally state the badge should be worn on the body (lanyard/clip) or in a prominent position in the cab as dictated by local policy.",
+      "id": "pbr-mc-0020"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "The licensing authority remains the sole owner of the PHV driver badge; it is issued to you as a license to work but is not your property.",
+      "question": "Who is the legal owner of the PHV driver badge once it has been issued to you?",
+      "options": [
+        "The driver",
+        "The vehicle owner",
+        "The licensing authority (e.g., TfL)",
+        "The operator"
+      ],
+      "correctAnswer": 2,
+      "id": "pbr-mc-0021"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "Rules state that your badge must be clearly visible to the passenger at all times during the journey to ensure safety and transparency.",
+      "options": [
+        "Visible to passengers at all times",
+        "Kept in the glove compartment for safety",
+        "Hidden under your coat to prevent theft",
+        "Stuck to the outside of the driver's door"
+      ],
+      "question": "While you are working and carrying passengers, your badge must be:",
+      "correctAnswer": 0,
+      "id": "pbr-mc-0022"
+    },
+    {
+      "question": "Having a PHV driver badge means you are legally allowed to:",
+      "options": [
+        "Park on double yellow lines for up to 30 minutes",
+        "Drive in bus lanes during restricted hours",
+        "Ignore speed limits when running late for a booking",
+        "Follow all standard UK road signs and parking regulations"
+      ],
+      "correctAnswer": 3,
+      "explanation": "The PHV driver badge is tied to private hire regulations and does not grant any exemptions from standard parking or waiting restrictions.",
+      "type": "multiple_choice",
+      "id": "pbr-mc-0023"
+    },
+    {
+      "correctAnswer": 1,
+      "options": [
+        "6 months",
+        "21 days",
+        "48 hours",
+        "The next time you renew your badge"
+      ],
+      "question": "If you move to a new house, within how many days must you notify the licensing authority of your change of address?",
+      "explanation": "You must notify the licensing authority within the specified timeframe (usually 21 days) if you change your home address.",
+      "type": "multiple_choice",
+      "id": "pbr-mc-0024"
+    },
+    {
+      "correctAnswer": 2,
+      "options": [
+        "Refuse and cancel the booking immediately",
+        "Charge the passenger a small fee for the information",
+        "Provide the badge number as requested without delay",
+        "Only provide it if a police officer is present"
+      ],
+      "question": "If a passenger asks to see your badge or know your badge number, what must you do?",
+      "explanation": "Drivers have a legal duty to provide their badge or license number if a passenger requests it for verification or complaint purposes.",
+      "type": "multiple_choice",
+      "id": "pbr-mc-0025"
+    },
+    {
+      "explanation": "Drivers must pass a medical exam to ensure they are fit to drive; failure to meet these standards can result in badge suspension.",
+      "type": "multiple_choice",
+      "options": [
+        "Your fitness to drive according to medical standards",
+        "Your ability to fix mechanical faults on the car",
+        "Your knowledge of local historical landmarks",
+        "Your ability to speak more than three languages"
+      ],
+      "question": "To maintain a valid PHV badge, what does the licensing authority regularly check regarding your health?",
+      "correctAnswer": 0,
+      "id": "pbr-mc-0026"
+    },
+    {
+      "question": "A valid PHV driver badge allows you to legally:",
+      "options": [
+        "Pick up passengers who hail you on the street",
+        "Carry out bookings through a licensed operator",
+        "Use taxi ranks at major train stations",
+        "Work for any company without a private hire license"
+      ],
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "explanation": "A PHV driver badge only permits you to carry out pre-booked journeys through a licensed operator; it does not allow you to be hailed on the street.",
+      "id": "pbr-mc-0027"
+    },
+    {
+      "correctAnswer": 3,
+      "options": [
+        "Only if the police tell you to",
+        "Only if it results in a prison sentence",
+        "When you next apply for a badge renewal",
+        "Promptly, as it may affect your status as a 'fit and proper' person"
+      ],
+      "question": "If you are convicted of a criminal offence while holding a PHV badge, when should you tell the licensing authority?",
+      "type": "multiple_choice",
+      "explanation": "All convictions, including those occurring after your badge is issued, must be reported to the licensing authority as they affect your 'fit and proper' status.",
+      "id": "pbr-mc-0028"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "While a lanyard is common, the badge must be visible; keeping it in a wallet or bag is not acceptable while working.",
+      "correctAnswer": 2,
+      "question": "Which of these is a correct way to display your badge while on duty?",
+      "options": [
+        "In your wallet in your back pocket",
+        "In the car's boot for safekeeping",
+        "Worn on a lanyard or clipped to your clothing",
+        "Left at home so it doesn't get lost"
+      ],
+      "id": "pbr-mc-0029"
+    },
+    {
+      "options": [
+        "It is strictly prohibited and illegal",
+        "It is allowed if they are also a licensed driver",
+        "It is allowed only for emergency shifts",
+        "It is allowed if the operator gives permission"
+      ],
+      "question": "What is the rule regarding lending your PHV badge to a family member who also wants to drive the car?",
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "explanation": "A PHV driver badge is specific to the individual; it cannot be transferred or 'rented' to anyone else, including family members.",
+      "id": "pbr-mc-0030"
+    },
+    {
+      "explanation": "The badge serves as proof of identity and licensing for passengers and enforcement officers to verify the driver's legality.",
+      "type": "multiple_choice",
+      "question": "What is the primary purpose of the PHV driver badge?",
+      "options": [
+        "To prove the car has had an MOT",
+        "To show passengers you are a licensed and 'fit and proper' driver",
+        "To get discounts at petrol stations",
+        "To allow you to skip queues at traffic lights"
+      ],
+      "correctAnswer": 1,
+      "id": "pbr-mc-0031"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "If your license is suspended or revoked, you must immediately return the badge to the licensing authority as you are no longer authorized to use it.",
+      "correctAnswer": 3,
+      "question": "If your PHV driver license is revoked, what must you do with your badge?",
+      "options": [
+        "Keep it until it reaches its original expiry date",
+        "Give it to a friend who is still driving",
+        "Destroy it with scissors at home",
+        "Return it to the licensing authority immediately"
+      ],
+      "id": "pbr-mc-0032"
+    },
+    {
+      "question": "What should you do if the information or photo on your badge becomes faded and difficult to read?",
+      "explanation": "If your badge becomes illegible or damaged, you must order a replacement immediately to ensure you remain compliant with identification laws.",
+      "options": [
+        "Cover it with clear tape to fix it",
+        "Draw over the faded parts with a pen",
+        "Apply for a replacement from the licensing authority immediately",
+        "Wait until your license renewal to get a new one"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "id": "pbr-mc-0033"
+    },
+    {
+      "explanation": "Allowing any other person to use your badge is a serious offence that will result in the immediate revocation of your license.",
+      "question": "What is the law regarding permitting another person to use your PHV driver badge?",
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "options": [
+        "It is strictly prohibited and can lead to prosecution",
+        "It is allowed if they are also a licensed PHV driver",
+        "It is allowed only for short trips or emergencies",
+        "It is allowed if they are a family member registered at your address"
+      ],
+      "id": "pbr-mc-0034"
+    },
+    {
+      "question": "Which vehicles are you legally allowed to drive while using your Private Hire Driver badge?",
+      "explanation": "A PHV badge only permits you to drive vehicles licensed by the exact same authority that issued your driver badge.",
+      "type": "multiple_choice",
+      "options": [
+        "Any car with a valid MOT",
+        "Any vehicle licensed as a PHV in the UK",
+        "Only vehicles you personally own",
+        "Only vehicles licensed by the same authority that issued your badge"
+      ],
+      "correctAnswer": 3,
+      "id": "pbr-mc-0035"
+    },
+    {
+      "question": "When must you display your PHV driver badge while working?",
+      "explanation": "Even if you are not currently carrying a passenger, if you are 'on duty' or available for hire, you must display your badge.",
+      "options": [
+        "Only when a passenger is physically in the car",
+        "At all times when you are working or available for hire",
+        "Only when driving during night-time hours",
+        "Only when picking up passengers from an airport"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "id": "pbr-mc-0036"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "You have a 28-day grace period to keep working",
+        "You must stop working immediately as it is no longer valid",
+        "You can work as long as you have already applied for a renewal",
+        "You can work for 7 more days if you notify the council"
+      ],
+      "correctAnswer": 1,
+      "question": "If your badge expires and you have not received a new one, what is your legal status?",
+      "explanation": "A badge is valid only until its expiry date; driving with an expired badge is the same as driving unlicensed.",
+      "id": "pbr-mc-0037"
+    },
+    {
+      "question": "Who is responsible for the safety and correct display of the PHV driver badge?",
+      "explanation": "Badges are issued to individuals, and it is your personal responsibility to keep it safe and displayed correctly.",
+      "options": [
+        "The vehicle owner",
+        "The PHV Operator you work for",
+        "The individual driver named on the badge",
+        "The local police station"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "id": "pbr-mc-0038"
+    },
+    {
+      "options": [
+        "To help passengers identify that you are a licensed driver",
+        "To allow you to ignore 'No Entry' signs in town centres",
+        "To give you the right to use bus lanes at all times",
+        "To prove to the bank that you are self-employed"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "question": "What is one of the main safety reasons for wearing your badge in a prominent position?",
+      "explanation": "Safety and identification are the priorities; keeping the badge visible helps passengers identify you as a legitimate, vetted driver.",
+      "id": "pbr-mc-0039"
+    },
+    {
+      "explanation": "PHV badges do not grant any special privileges or exemptions from standard UK parking laws or restrictions.",
+      "question": "What rights does a PHV badge give you regarding parking on local streets?",
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "options": [
+        "You can park on double yellow lines for up to 30 minutes",
+        "You are exempt from paying all toll bridge charges",
+        "You can park in 'Resident Only' bays while waiting for a fare",
+        "You must still obey all local parking and waiting restrictions"
+      ],
+      "id": "pbr-mc-0040"
+    },
+    {
+      "explanation": "Checking the photo ensures that the person driving the car is the same person whose background has been checked and licensed by the council.",
+      "question": "Why should a passenger check the photo on your driver badge?",
+      "correctAnswer": 1,
+      "options": [
+        "To see if they like the driver's haircut",
+        "To ensure the person driving is the licensed individual they booked",
+        "To check the driver's age for insurance purposes",
+        "To see if the driver is wearing a uniform"
+      ],
+      "type": "multiple_choice",
+      "id": "pbr-mc-0041"
+    },
+    {
+      "options": [
+        "In the glove box for safety",
+        "Hanging from the internal rear-view mirror only",
+        "Where it is clearly visible but does not obstruct your view of the road",
+        "Stuck to the outside of the driver-side window"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "question": "When displaying your badge on the dashboard or person, what must you ensure?",
+      "explanation": "While it must be visible to passengers, the badge must not interfere with your ability to see the road or control the car.",
+      "id": "pbr-mc-0042"
+    },
+    {
+      "question": "Some authorities issue two badges (a neck lanyard and a dash badge). What is the purpose of the dashboard-mounted badge?",
+      "explanation": "Local authorities may issue a second badge specifically for dashboard display to assist with passenger safety and identification.",
+      "type": "multiple_choice",
+      "options": [
+        "To provide an extra layer of identification for passengers outside the vehicle",
+        "To allow the police to see the badge through the windscreen at night",
+        "So you can leave it in the car when you go home",
+        "Because you are required to have one for each person in the car"
+      ],
+      "correctAnswer": 0,
+      "id": "pbr-mc-0043"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Refuse, as only a police officer can ask for it",
+        "Produce it for inspection immediately",
+        "Tell them to contact your Operator to see it",
+        "Ask them for their own ID before showing yours"
+      ],
+      "correctAnswer": 1,
+      "question": "What must you do if an authorised Licensing Officer asks to inspect your badge?",
+      "explanation": "The licensing authority has the power to inspect your badge at any time to verify you are complying with the terms of your license.",
+      "id": "pbr-mc-0044"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Keep it as a souvenir of your work history.",
+        "Shred it at home to protect your personal data.",
+        "Return it to the licensing authority within the specified timeframe.",
+        "Pass it on to your operator for their records."
+      ],
+      "correctAnswer": 2,
+      "question": "If you decide to stop working as a private hire driver and do not intend to renew your license, what must you do with your badge?",
+      "explanation": "The badge remains the property of the licensing authority (the Council or TfL) and must be returned if it is no longer being used for its licensed purpose.",
+      "id": "pbr-mc-0045"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "It must be clearly visible to the passenger at all times.",
+        "It must be kept in your wallet to show only if asked.",
+        "It can be kept in the glove box as long as you are wearing the lanyard.",
+        "It must be stuck to the outside of the driver's door."
+      ],
+      "correctAnswer": 0,
+      "explanation": "While wearing it on your person is standard, some authorities allow it to be clearly visible on the dashboard as long as the photo and details are facing the passenger.",
+      "question": "According to standard licensing rules, where must your badge be if you are not wearing it on your person while working?",
+      "id": "pbr-mc-0046"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Wait until your license is up for renewal to mention it.",
+        "Notify the licensing authority immediately.",
+        "Tell your operator, but there is no need to tell the council.",
+        "Only report it if you are involved in a road traffic accident."
+      ],
+      "correctAnswer": 1,
+      "question": "If you develop a new medical condition that affects your driving, what are your obligations regarding your PHV badge?",
+      "explanation": "Any change in medical status that could affect your ability to drive safely must be reported to the licensing authority immediately.",
+      "id": "pbr-mc-0047"
+    },
+    {
+      "correctAnswer": 3,
+      "explanation": "Most licensing authorities strictly forbid any covering or modification of the ID badge to ensure its security features remain visible.",
+      "question": "Which of the following is prohibited regarding the physical state of your driver badge?",
+      "type": "multiple_choice",
+      "options": [
+        "Trim the edges so it fits into a smaller holder.",
+        "Place a protective sticker over your photo to prevent fading.",
+        "Write your phone number on the back of the badge in permanent ink.",
+        "Keep the badge in its original issued state without any alterations."
+      ],
+      "id": "pbr-mc-0048"
+    },
+    {
+      "question": "While wearing your badge, what does it signify regarding your legal authority to take passengers?",
+      "explanation": "Standard PHV licenses do not allow drivers to pick up passengers from the street; all journeys must be pre-booked through a licensed operator.",
+      "correctAnswer": 1,
+      "options": [
+        "You can pick up any passenger who hails you on the street.",
+        "You are only insured and licensed for journeys pre-booked via an operator.",
+        "You are legally allowed to use bus lanes at all times of the day.",
+        "You are exempt from all local speed limits while on a call."
+      ],
+      "type": "multiple_choice",
+      "id": "pbr-mc-0049"
+    },
+    {
+      "options": [
+        "If you know the badge number by heart, you can continue to work.",
+        "You should wait 7 days to see if it is returned by a passenger.",
+        "Report it to the licensing authority and the police (if stolen) immediately.",
+        "Photocopy your paper license and tape it to your shirt instead."
+      ],
+      "type": "multiple_choice",
+      "explanation": "Reporting a lost badge immediately is essential to prevent identity fraud and ensure you receive a replacement so you can continue working legally.",
+      "question": "What is the correct procedure if you lose your PHV driver badge during a shift?",
+      "correctAnswer": 2,
+      "id": "pbr-mc-0050"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Your home address.",
+        "Your photograph.",
+        "The badge expiry date.",
+        "The name of the issuing licensing authority."
+      ],
+      "correctAnswer": 0,
+      "explanation": "To protect your privacy and safety, the badge usually displays your first name, badge number, and photo, but rarely your home address.",
+      "question": "A standard PHV driver badge contains several pieces of information. Which of the following is usually NOT displayed on the badge face?",
+      "id": "pbr-mc-0051"
+    },
+    {
+      "correctAnswer": 3,
+      "question": "When must you notify the licensing authority about a change of your home address?",
+      "explanation": "Changing your address is a change in your personal circumstances that must be updated on the licensing system, often requiring a new badge or record update.",
+      "type": "multiple_choice",
+      "options": [
+        "28 days after you move.",
+        "Only when you renew your vehicle insurance.",
+        "At the end of the financial year.",
+        "Within the timeframe set by your local authority (usually 7 days)."
+      ],
+      "id": "pbr-mc-0052"
+    },
+    {
+      "options": [
+        "Any vehicle licensed as a PHV anywhere in the UK.",
+        "Only PHVs licensed by the same authority that issued your badge.",
+        "Only the specific car brand that you listed on your application.",
+        "Any car, including private cars, for the purpose of carrying passengers."
+      ],
+      "type": "multiple_choice",
+      "explanation": "You are only licensed to drive private hire vehicles that are licensed by the same authority that issued your driver badge.",
+      "question": "Your badge allows you to drive a Private Hire Vehicle, but which vehicles are specifically covered?",
+      "correctAnswer": 1,
+      "id": "pbr-mc-0053"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "It is the operator's job to tell you when it expires.",
+        "The Council will always send a letter 3 months in advance.",
+        "The driver is personally responsible for knowing the expiry date.",
+        "The badge lasts forever as long as you pay your annual fee."
+      ],
+      "correctAnswer": 2,
+      "question": "Who is ultimately responsible for ensuring that a PHV driver badge is renewed before it expires?",
+      "explanation": "Drivers must check their badge expiry date regularly; working with an expired badge is a serious offence equivalent to driving without a license.",
+      "id": "pbr-mc-0054"
+    },
+    {
+      "correctAnswer": 0,
+      "explanation": "The badge is a legal requirement for the person driving; if you aren't working, you shouldn't be wearing the official identification.",
+      "question": "Are you required to wear your PHV driver badge when you are using your licensed vehicle for personal, non-work journeys?",
+      "type": "multiple_choice",
+      "options": [
+        "No, it should only be worn while you are working.",
+        "Yes, it proves you are a professional driver at all times.",
+        "Yes, because it serves as a secondary form of ID for daily life.",
+        "No, unless you are driving your family to the shops."
+      ],
+      "id": "pbr-mc-0055"
+    },
+    {
+      "correctAnswer": 1,
+      "explanation": "Even if the Council is slow, you cannot legally work as a PHV driver without a physically valid, in-date badge.",
+      "question": "If your badge expires and the Council has not yet issued your renewal, what is the rule regarding working?",
+      "type": "multiple_choice",
+      "options": [
+        "You can continue to work as long as you have the receipt for the renewal fee.",
+        "You must stop working immediately until the new badge arrives.",
+        "You can use your old badge as long as you carry a letter of extension.",
+        "You can use your DVLA driving license as a temporary substitute."
+      ],
+      "id": "pbr-mc-0056"
+    },
+    {
+      "explanation": "It is a strict legal requirement that the driver's badge is clearly visible to ensure passengers can verify the driver's identity.",
+      "correctAnswer": 2,
+      "question": "While working as a private hire driver, how must you present your badge?",
+      "type": "multiple_choice",
+      "options": [
+        "Keep it in your wallet to prevent theft",
+        "Leave it in the glove box until a passenger asks to see it",
+        "Wear it on your person or display it in a prominent position as required by the council",
+        "Only display it during night-time shifts"
+      ],
+      "id": "pbr-mc-0057"
+    },
+    {
+      "question": "What should you do if your PHV driver badge is stolen?",
+      "options": [
+        "Contact the licensing authority immediately to arrange a replacement",
+        "Wait until your annual renewal to mention it",
+        "Borrow a badge from a colleague who is not working that day",
+        "Hand-write your badge number on a piece of paper and tape it to the window"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "explanation": "Most councils require you to report a lost badge immediately or within a very short timeframe (e.g., 48 hours) to prevent fraudulent use.",
+      "id": "pbr-mc-0058"
+    },
+    {
+      "explanation": "A PHV badge only authorises you to drive vehicles licensed by the same authority that issued your badge.",
+      "correctAnswer": 3,
+      "options": [
+        "Any car in the UK",
+        "Only vehicles owned by your family",
+        "Any Hackney Carriage (taxi) in London",
+        "Only Private Hire Vehicles licensed by the same issuing authority"
+      ],
+      "type": "multiple_choice",
+      "question": "What type of vehicle does your Private Hire Driver badge allow you to drive for hire and reward?",
+      "id": "pbr-mc-0059"
+    },
+    {
+      "correctAnswer": 1,
+      "explanation": "Licensing authorities require notification of any criminal convictions, including driving offences, as it affects 'fit and proper' status.",
+      "options": [
+        "Only if you receive more than 6 points",
+        "You must notify the licensing authority in writing within the timeframe specified in your conditions (e.g. 7 days)",
+        "Only when you apply to renew your badge in three years",
+        "You do not need to tell them as they will find out eventually via the DVLA"
+      ],
+      "type": "multiple_choice",
+      "question": "If you are convicted of a motoring offence, what must you do regarding your PHV licence status?",
+      "id": "pbr-mc-0060"
+    },
+    {
+      "explanation": "Allowing someone else to use your badge is a serious breach of licensing law and can lead to immediate revocation.",
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "options": [
+        "Yes, if they are also a licensed driver with the same council",
+        "No, a badge is non-transferable and can only be used by the person it was issued to",
+        "Yes, if they are driving your vehicle while you sit in the passenger seat",
+        "Yes, but only for a maximum of two hours in an emergency"
+      ],
+      "question": "Is it ever legal to lend your PHV driver badge to a friend or family member?",
+      "id": "pbr-mc-0061"
+    },
+    {
+      "options": [
+        "The passenger's employer",
+        "Only your operator's manager",
+        "A Police Officer or an authorised Licensing Officer",
+        "Any member of the public who asks to see it on the street"
+      ],
+      "type": "multiple_choice",
+      "question": "Which of the following people has the legal authority to demand to see your badge?",
+      "explanation": "Licensing officers and Police have the legal right to inspect your credentials at any reasonable time while you are working.",
+      "correctAnswer": 2,
+      "id": "pbr-mc-0062"
+    },
+    {
+      "correctAnswer": 0,
+      "explanation": "The badge is the property of the Council and must be returned if it is no longer being used for its intended purpose.",
+      "type": "multiple_choice",
+      "options": [
+        "Return it to the licensing authority within the specified timeframe (usually 7 days)",
+        "Destroy it at home and put it in the recycling bin",
+        "Keep it as a souvenir of your time as a driver",
+        "Give it to your operator to give to a new driver"
+      ],
+      "question": "If your PHV driver licence is suspended or revoked, what must you do with the physical badge?",
+      "id": "pbr-mc-0063"
+    },
+    {
+      "question": "Which piece of information is almost always visible on the front of a PHV driver badge?",
+      "options": [
+        "The driver's home telephone number",
+        "The driver's home address",
+        "The driver's blood type",
+        "The driver's unique licence number and expiry date"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "explanation": "While specific designs vary, the driver's unique licence number is a universal requirement for identification.",
+      "id": "pbr-mc-0064"
+    },
+    {
+      "question": "Before starting a shift, what is the most important check a driver should perform regarding their badge?",
+      "type": "multiple_choice",
+      "options": [
+        "Check that you have the physical, valid badge and that it is not past its expiry date",
+        "Check that you have enough fuel for the day",
+        "Make sure you have your passport in the car",
+        "Ensure you have a spare set of tyres in the boot"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Using an expired badge is an offence; you must have a valid, current badge in your possession to work legally.",
+      "id": "pbr-mc-0065"
+    },
+    {
+      "question": "Which of the following actions is strictly prohibited regarding your driver badge?",
+      "options": [
+        "Changing the lanyard to a different colour",
+        "Defacing, altering, or tampering with any details on the badge",
+        "Cleaning the badge with a damp cloth",
+        "Wearing the badge on a clip instead of a neck cord"
+      ],
+      "type": "multiple_choice",
+      "explanation": "To prevent identity fraud, badges must not be altered, cropped, or covered with stickers.",
+      "correctAnswer": 1,
+      "id": "pbr-mc-0066"
+    },
+    {
+      "question": "What is a common misconception about the 'power' of a PHV driver badge?",
+      "options": [
+        "Wait on double yellow lines for as long as you want",
+        "Ignore \"No Entry\" signs if you have a passenger",
+        "A PHV badge does not exempt you from following normal road traffic signs and orders",
+        "Drive in any bus lane at any time of day"
+      ],
+      "type": "multiple_choice",
+      "explanation": "A PHV badge does not grant any special exemptions from standard UK traffic laws or parking restrictions.",
+      "correctAnswer": 2,
+      "id": "pbr-mc-0067"
+    },
+    {
+      "explanation": "The badge is a security feature that builds passenger trust by proving the driver has been vetted and is legally allowed to work.",
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "options": [
+        "To provide reassurance to the passenger that the driver is properly licensed and vetted",
+        "To help the driver get discounts at local petrol stations",
+        "To allow the driver to use staff-only toilets in shopping centres",
+        "To serve as a secondary form of ID for opening a bank account"
+      ],
+      "question": "Beyond legal compliance, why is it important for a passenger to see your badge?",
+      "id": "pbr-mc-0068"
+    },
+    {
+      "question": "If you develop a new medical condition that could affect your driving, what is the correct procedure?",
+      "explanation": "Drivers must report any medical condition that may affect their driving ability to the licensing authority within a specific (often 7-day) period.",
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "options": [
+        "Wait until your next licence renewal date",
+        "Tell your Private Hire Operator only",
+        "Notify the licensing authority in writing immediately",
+        "Only notify the DVLA, not the local council"
+      ],
+      "id": "pbr-mc-0069"
+    },
+    {
+      "question": "Which of the following is a legal requirement regarding the display of your driver badge while working?",
+      "explanation": "Local licensing rules generally state that the badge must be worn on your person (e.g., around the neck or on a clip) and distinctly visible at all times while working.",
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "options": [
+        "It must be worn on your person and clearly visible at all times",
+        "It must be kept in the glove box for safety",
+        "It is only required to be displayed on the vehicle windscreen",
+        "It can be kept in your wallet as long as you have it on you"
+      ],
+      "id": "pbr-mc-0070"
+    },
+    {
+      "options": [
+        "It allows you to pick up passengers at a designated Taxi Rank",
+        "It allows you to take pre-booked bookings through an operator only",
+        "It allows you to be flagged down by passengers on the street",
+        "It allows you to charge any price you want without a meter"
+      ],
+      "correctAnswer": 1,
+      "explanation": "While a badge permits you to drive a PHV, you can only pick up passengers who have pre-booked through a licensed operator.",
+      "type": "multiple_choice",
+      "question": "What does your PHV driver badge allow you to do in terms of picking up passengers?",
+      "id": "pbr-mc-0071"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "Any change in your status, including a change of the operator you work for, must be reported to the council to keep their records accurate.",
+      "correctAnswer": 3,
+      "options": [
+        "The council finds out automatically via the operator's records",
+        "You only need to tell the council if you leave the trade entirely",
+        "You don't need to report it as long as the new operator is licensed",
+        "You must notify the licensing authority of the change within the required timeframe"
+      ],
+      "question": "What should you do if you stop working for one private hire operator and start with a different one?",
+      "id": "pbr-mc-0072"
+    },
+    {
+      "explanation": "Your badge is personal to you and issued by a specific council; you cannot use it to work in a vehicle licensed by a different local authority.",
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "options": [
+        "Any car that has 4 doors and is currently insured",
+        "Any vehicle licensed as a Hackney Carriage (Taxi) anywhere in the UK",
+        "Only a PHV licensed by the same authority that issued your driver badge",
+        "Any PHV licensed by any council in the UK"
+      ],
+      "question": "Which specific vehicles are you permitted to drive for work purposes using your badge?",
+      "id": "pbr-mc-0073"
+    },
+    {
+      "question": "What is the status of your badge if the photo becomes faded or the text is illegible?",
+      "type": "multiple_choice",
+      "explanation": "Altering or defacing a licensing document is a serious offence and could lead to the revocation of your licence and badge.",
+      "correctAnswer": 1,
+      "options": [
+        "The badge is still valid as long as the name is readable",
+        "The badge is considered defaced and you must apply for a replacement immediately",
+        "You should fix it with tape and continue working",
+        "You can draw the photo back on yourself if it has faded"
+      ],
+      "id": "pbr-mc-0074"
+    },
+    {
+      "explanation": "Under the Equality Act 2010, PHV drivers must carry assistance dogs unless they have a medical exemption certificate issued by the council.",
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "options": [
+        "You must carry the dog and are not allowed to charge extra for it",
+        "You can refuse the booking if you don't like dogs",
+        "You can charge a 'cleaning fee' in advance for the dog",
+        "You can only carry the dog if it is placed in a cage in the boot"
+      ],
+      "question": "If a passenger with an assistance dog books a ride, what are your obligations regarding your licence conditions?",
+      "id": "pbr-mc-0075"
+    },
+    {
+      "question": "Is it acceptable to partially cover your driver badge with a jacket or scarf while working?",
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "explanation": "The badge identifies the driver for safety; concealing it prevents passengers from verifying who is driving them.",
+      "options": [
+        "It is recommended to protect your privacy",
+        "It is allowed if the sun is too bright and makes the badge hot",
+        "It is allowed as long as you show it if a Police officer asks",
+        "It is a breach of licensing conditions and can lead to enforcement action"
+      ],
+      "id": "pbr-mc-0076"
+    },
+    {
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "explanation": "Most licensing authorities require notification of any arrest or charge, not just a final conviction, within a short window (e.g., 72 hours).",
+      "options": [
+        "Only if you are found guilty in a court of law",
+        "Only if the arrest results in a driving ban",
+        "Typically within 72 hours of the arrest or charge occurring",
+        "At the time of your next badge renewal"
+      ],
+      "question": "When must you notify the Licensing Authority if you are arrested or charged with a criminal offence?",
+      "id": "pbr-mc-0077"
+    },
+    {
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "explanation": "If a passenger asks to see your badge, you are legally required to allow them to inspect it to verify your identity and licence status.",
+      "options": [
+        "Ignore the request and continue driving",
+        "Politely allow them to see and read the details on the badge",
+        "Tell them they must contact the Council to see your details",
+        "Only show it if they pay an extra 'inspection fee'"
+      ],
+      "question": "How should you respond if a passenger asks to look at your badge to verify your identity?",
+      "id": "pbr-mc-0078"
+    },
+    {
+      "question": "Which of the following is a standard feature on the physical PHV driver badge?",
+      "options": [
+        "The date the licence expires",
+        "The driver's home telephone number",
+        "The driver's full home address",
+        "The name of the driver's insurance company"
+      ],
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "explanation": "The expiry date is a critical piece of information that tells the public and authorities that your licence is currently valid.",
+      "id": "pbr-mc-0079"
+    },
+    {
+      "options": [
+        "You are exempt at all times because you hold a vocational licence",
+        "You must wear it at all times, no exceptions apply to PHV drivers",
+        "You may be exempt only when actively carrying a passenger for hire",
+        "Exemption only applies if you are driving over 40mph"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Private Hire Drivers are often exempt from wearing seatbelts *only* when they are actively carrying a passenger for hire, not when driving for personal use.",
+      "type": "multiple_choice",
+      "question": "According to the Law, what is the seatbelt rule for a PHV driver holding a valid badge?",
+      "id": "pbr-mc-0080"
+    },
+    {
+      "question": "What should you do immediately if you discover your PHV driver badge is lost or stolen?",
+      "explanation": "If your badge is lost or stolen, you must report it to the police to get a crime reference number and then notify the Licensing Authority immediately for a replacement.",
+      "correctAnswer": 2,
+      "options": [
+        "Wait until your next licence renewal to get a new one",
+        "Write your licence number on a piece of paper and tape it to the dash",
+        "Report it to the police and the Licensing Authority immediately",
+        "Continue working as long as you have the vehicle discs shown"
+      ],
+      "type": "multiple_choice",
+      "id": "pbr-mc-0081"
+    },
+    {
+      "options": [
+        "30 days",
+        "7 days",
+        "When you renew your annual insurance",
+        "Only when the badge itself expires"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "explanation": "Standard licensing rules require drivers to inform the authority of any change of address, usually within 7 days, to ensure records and contact details are accurate.",
+      "question": "How long do you usually have to notify the Licensing Authority if you change your home address?",
+      "id": "pbr-mc-0082"
+    },
+    {
+      "question": "Which vehicles are you permitted to drive for hire and reward while using your PHV badge?",
+      "explanation": "Your PHV driver badge only permits you to drive vehicles that are specifically licensed for Private Hire by the same authority.",
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "options": [
+        "Any vehicle licensed for Private Hire by your specific Licensing Authority",
+        "Any vehicle with more than 4 seats and a valid MOT",
+        "Any car as long as you have a clean DVLA driving licence",
+        "Any car owned by your Private Hire Operator"
+      ],
+      "id": "pbr-mc-0083"
+    },
+    {
+      "explanation": "Most authorities mandate that the badge must be worn on your person (e.g., on a lanyard or clipped to clothing) so it is visible to passengers at all times.",
+      "question": "Where must your driver badge typically be displayed while you are working?",
+      "type": "multiple_choice",
+      "options": [
+        "Kept safely in the glove compartment",
+        "Left at home as long as you know your badge number",
+        "Placed on the floor in the footwell",
+        "Worn on your person or displayed in a prominent position as specified by your authority"
+      ],
+      "correctAnswer": 3,
+      "id": "pbr-mc-0084"
+    },
+    {
+      "question": "Under the rules of your badge, where are you legally allowed to accept a passenger?",
+      "explanation": "Plying for hire (picking up unbooked passengers on the street) is illegal for PHV drivers and can lead to immediate licence revocation.",
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "options": [
+        "At a designated taxi rank outside a train station",
+        "Only via a booking made through a licensed Private Hire Operator",
+        "By waving at people on the street in busy areas",
+        "By handing out business cards while parked on double yellow lines"
+      ],
+      "id": "pbr-mc-0085"
+    },
+    {
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "options": [
+        "Only if they are also a licensed driver with the same operator",
+        "Only if you are in the car with them at the time",
+        "No, it is strictly for your use only and cannot be shared",
+        "Yes, but only for a maximum of one shift in an emergency"
+      ],
+      "question": "Can you allow another licensed driver to use your badge if their own badge is temporarily unavailable?",
+      "explanation": "Your Private Hire badge is strictly for your own use; allowing someone else to use it is a serious criminal offence and a breach of licensing conditions.",
+      "id": "pbr-mc-0086"
+    },
+    {
+      "options": [
+        "You must stop working immediately as you are no longer licensed",
+        "You have a 14-day 'grace period' to continue working",
+        "You can work as long as you have started the online renewal form",
+        "You can work for another month if your vehicle licence is still valid"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "explanation": "The badge expiry date is the absolute deadline. Driving for one day past this date means you are unlicensed and your insurance will likely be void.",
+      "question": "What is the legal consequence if you continue to work after the expiry date shown on your badge?",
+      "id": "pbr-mc-0087"
+    },
+    {
+      "question": "Who officially owns the physical PHV driver badge issued to you?",
+      "explanation": "The badge is the property of the issuing Licensing Authority and they can demand its return at any time if they deem you no longer 'fit and proper'.",
+      "correctAnswer": 3,
+      "options": [
+        "The Private Hire Operator you work for",
+        "You (the driver), because you paid the application fee",
+        "The DVLA in Swansea",
+        "The Licensing Authority that issued it"
+      ],
+      "type": "multiple_choice",
+      "id": "pbr-mc-0088"
+    },
+    {
+      "correctAnswer": 1,
+      "options": [
+        "Only if you reach 12 points and face a driving ban",
+        "You must notify the Licensing Authority in writing within the required timeframe",
+        "You only need to tell your insurance company",
+        "Nothing, as long as you don't lose your DVLA licence"
+      ],
+      "type": "multiple_choice",
+      "question": "If you receive 3 penalty points on your DVLA licence for speeding, what must you do regarding your PHV licence?",
+      "explanation": "Drivers must report any motoring convictions, including fixed penalty points, to the Licensing Authority within a specific timeframe (often 7 days).",
+      "id": "pbr-mc-0089"
+    },
+    {
+      "explanation": "The badge provides proof to the passenger that the driver has been vetted (DBS checked) and is authorised by the local council to carry out the booking.",
+      "question": "What is the primary purpose of the driver badge from a passenger’s perspective?",
+      "options": [
+        "To show the passenger how much the journey will cost",
+        "To prove the car has a valid MOT certificate",
+        "To provide the passenger with proof of your identity and licensed status",
+        "To allow the passenger to check your personal home address"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "id": "pbr-mc-0090"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "An offence that will likely result in the loss of your licence",
+        "Acceptable if the original badge is getting dirty",
+        "Useful for keeping a copy in your wallet for emergencies",
+        "Permitted as long as the photo is still recognisable"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The badge acts as a 'badge of trust'. Any attempt to alter, photocopy, or tamper with it is a major breach of conditions and usually results in revocation.",
+      "question": "Tampering with or altering the details on your PHV badge is considered:",
+      "id": "pbr-mc-0091"
+    },
+    {
+      "options": [
+        "The driver's home phone number",
+        "The badge expiry date",
+        "The vehicle's registration number (VRM)",
+        "The driver's National Insurance number"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "explanation": "Driver badges usually feature the Licensing Authority's name/logo, the driver's photo, the licence number, and the expiry date.",
+      "question": "Which of the following dates is typically found on a PHV driver badge?",
+      "id": "pbr-mc-0092"
+    },
+    {
+      "question": "What is the legal requirement regarding your physical badge if your Private Hire licence is revoked?",
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "options": [
+        "Keep it as a souvenir of your service",
+        "Destroy it and throw it in the domestic waste",
+        "Return it to the Licensing Authority immediately",
+        "Give it to a friend who is applying for a licence"
+      ],
+      "explanation": "Upon the expiry, suspension, or revocation of your licence, the badge remains the property of the council and must be returned within the specified timeframe (usually 7 days).",
+      "id": "pbr-mc-0093"
+    },
+    {
+      "explanation": "Wearing the badge prominently on your person allows the passenger to verify your identity before entering the vehicle, which is a key safety requirement.",
+      "type": "multiple_choice",
+      "question": "Why is it a licensing condition to wear your badge where it is clearly visible to the passenger?",
+      "correctAnswer": 0,
+      "options": [
+        "It allows passengers to identify you as a licensed driver before they enter the vehicle",
+        "It proves the vehicle has passed its MOT and emission standards",
+        "It exempts you from all parking fines and local traffic restrictions",
+        "It confirms that the vehicle is insured for third-party fire and theft only"
+      ],
+      "id": "pbr-mc-0094"
+    },
+    {
+      "explanation": "Private Hire drivers are strictly prohibited from 'plying for hire' or accepting passengers who hail them in the street; all jobs must be pre-booked through an operator.",
+      "options": [
+        "Only if the customer is in a hurry and offers double the fare",
+        "Only if the local council has given you verbal permission to do so",
+        "Only if you are parked on a designated Hackney Carriage rank",
+        "Never; all journeys must be pre-booked through a licensed Private Hire Operator"
+      ],
+      "correctAnswer": 3,
+      "question": "Is a Private Hire driver permitted to accept a fare from someone who hails them on the street?",
+      "type": "multiple_choice",
+      "id": "pbr-mc-0095"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "If you develop a new medical condition that may affect your driving, what action must you take regarding your badge?",
+      "correctAnswer": 1,
+      "options": [
+        "Wait until your licence renewal to mention it to the council",
+        "Notify the Licensing Authority in writing without delay",
+        "Continue driving as long as you feel healthy enough to work",
+        "Only tell your Operator so they can give you shorter journeys"
+      ],
+      "explanation": "Medical fitness is a core requirement of holding a badge; drivers must notify the Licensing Authority of any condition that might affect their ability to drive safely.",
+      "id": "pbr-mc-0096"
+    },
+    {
+      "options": [
+        "Yes, as long as it still looks like you and hasn't expired",
+        "Yes, but only if you have a letter from the police explaining the loss",
+        "No, you must only use the most recently issued, valid badge",
+        "No, unless you are working in a different council area than usual"
+      ],
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "question": "If you find a badge you previously reported as lost, can you use it if you have already received a replacement?",
+      "explanation": "Using a badge that has been reported as lost or has been replaced is a breach of licensing conditions and can lead to enforcement action.",
+      "id": "pbr-mc-0097"
+    },
+    {
+      "explanation": "It is your responsibility to ensure you have a valid badge to work; you should apply for renewal well in advance (typically 6-8 weeks) of the expiry date.",
+      "question": "Who is responsible for ensuring a Private Hire driver badge is renewed before it expires?",
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "options": [
+        "The driver is responsible for applying for a renewal in good time",
+        "The Licensing Authority will automatically send a new one without an application",
+        "The Operator is legally responsible for renewing all driver badges",
+        "The local police will issue a temporary permit while you wait"
+      ],
+      "id": "pbr-mc-0098"
+    },
+    {
+      "question": "What must you do if an authorised Licensing Officer or a Police Officer asks to see your badge while you are working?",
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "options": [
+        "Refuse unless they pay a 'document inspection' fee first",
+        "Tell them you have left it at home and will show them tomorrow",
+        "Drive away and call your Operator for legal advice",
+        "Produce your badge for inspection immediately when requested"
+      ],
+      "explanation": "Authorised officers and police have a legal right to inspect your badge at any time to ensure you are complying with the terms of your licence.",
+      "id": "pbr-mc-0099"
+    },
+    {
+      "explanation": "Licensing conditions require you to behave professionally and avoid any conduct that could bring the trade into disrepute or threaten public safety.",
+      "options": [
+        "As long as you wear your badge, you can treat passengers however you like",
+        "You must behave in a civil and orderly manner at all times while working",
+        "You are only required to be polite if the passenger promises a tip",
+        "You should only speak to the passenger if they speak to you first"
+      ],
+      "correctAnswer": 1,
+      "question": "Which of these statements best describes the standard of conduct expected from a badge holder?",
+      "type": "multiple_choice",
+      "id": "pbr-mc-0100"
+    },
+    {
+      "explanation": "While you are working, that specific vehicle is 'licensed' and the driver seatbelt exemption applies, though it is strongly recommended to wear one for safety.",
+      "question": "Under the Road Traffic Act, what is the seatbelt exemption specifically for licensed PHV drivers while they are on duty?",
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "options": [
+        "You must only wear a seatbelt if a passenger is actually in the car",
+        "You must always wear a seatbelt at all times, with no legal exceptions",
+        "Licensed drivers are legally exempt from wearing a seatbelt while working",
+        "Only your passengers are required by law to wear seatbelts"
+      ],
+      "id": "pbr-mc-0101"
+    },
+    {
+      "explanation": "A badge only authorises you to drive for the specific council that issued it; you cannot use it to work for an operator in a different licensing jurisdiction.",
+      "options": [
+        "No, you can only work for an operator licensed by the same council as you",
+        "Yes, a PHV badge allows you to work for any operator in the UK",
+        "Yes, but only if the other operator pays you in cash for the shift",
+        "No, unless you are driving a limousine or an executive car"
+      ],
+      "correctAnswer": 0,
+      "question": "Can you use your current PHV badge to work for a private hire operator licensed in a different council area?",
+      "type": "multiple_choice",
+      "id": "pbr-mc-0102"
+    },
+    {
+      "explanation": "An 'Exemption Notice' (often a dashboard card) is required for those who cannot lift heavy luggage or carry assistance animals due to medical reasons, and this must be carried alongside the badge.",
+      "correctAnswer": 1,
+      "options": [
+        "Tell the passenger to find another car because you are busy",
+        "Show your official Medical Exemption Certificate issued by the council",
+        "Charge the passenger an extra 'cleaning fee' for the dog",
+        "Accept the booking but make the dog sit in the boot of the car"
+      ],
+      "type": "multiple_choice",
+      "question": "If you have a medical reason for not carrying an assistance dog, what must you display to avoid a breach of your badge conditions?",
+      "id": "pbr-mc-0103"
+    },
+    {
+      "explanation": "A Private Hire badge is only valid for Private Hire vehicles; a separate Hackney Carriage (Taxi) licence is required to drive a 'Black Cab' or similar vehicle.",
+      "type": "multiple_choice",
+      "question": "Are you allowed to drive a Hackney Carriage (Taxi) if you only hold a Private Hire driver badge?",
+      "correctAnswer": 2,
+      "options": [
+        "Only during peak hours or during transport strikes",
+        "Yes, if you have been a PHV driver for more than five years",
+        "No, you must have a specific Hackney Carriage driver licence",
+        "Yes, as long as the Hackney Carriage is not picking up on the street"
+      ],
+      "id": "pbr-mc-0104"
+    },
+    {
+      "explanation": "If your badge is stolen, you must report it to the police immediately to obtain a crime reference number before requesting a replacement from the licensing authority.",
+      "question": "If your PHV driver badge is stolen, what is the first official step you should take?",
+      "type": "multiple_choice",
+      "options": [
+        "Wait until your next renewal date to mention it",
+        "Continue working using a photocopy of your badge",
+        "Report the theft to the police and get a crime reference number",
+        "Borrow a friend's badge while yours is being replaced"
+      ],
+      "correctAnswer": 2,
+      "id": "pbr-mc-0105"
+    },
+    {
+      "explanation": "Licensing conditions require drivers to notify the authority of any change of address within a specific timeframe (usually 7 days) to ensure records are accurate.",
+      "options": [
+        "Usually within 7 days of moving",
+        "Only when you renew your badge next year",
+        "Within 30 days of moving",
+        "You do not need to notify them as long as your DVLA licence is updated"
+      ],
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "question": "How soon must you typically notify the licensing authority if you change your home address?",
+      "id": "pbr-mc-0106"
+    },
+    {
+      "correctAnswer": 3,
+      "options": [
+        "Keeping it in your wallet or glove box",
+        "Displaying it only if the passenger asks to see it",
+        "Leaving it at home once you have memorised your ID number",
+        "Wearing it on a lanyard or clipped to your clothing where it can be seen"
+      ],
+      "question": "Which of these is the correct way to display your badge while working as a PHV driver?",
+      "type": "multiple_choice",
+      "explanation": "While some councils allow a clip or lanyard, the badge must be visible to the passenger at all times for safety and identification.",
+      "id": "pbr-mc-0107"
+    },
+    {
+      "question": "Is a PHV badge holder allowed to stop on a taxi rank to wait for a pre-booked passenger?",
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "options": [
+        "Yes, but only for up to 5 minutes",
+        "No, you are never allowed to wait on a taxi rank",
+        "Yes, if you have a pre-booked passenger nearby",
+        "Only if there are no Hackney Carriages currently using the rank"
+      ],
+      "explanation": "Private Hire drivers are strictly prohibited from parking or waiting on designated taxi ranks; these are reserved for Hackney Carriages only.",
+      "id": "pbr-mc-0108"
+    },
+    {
+      "correctAnswer": 2,
+      "options": [
+        "Any operator in the UK",
+        "Any operator within a 50-mile radius",
+        "An operator licensed by the same council that issued your badge",
+        "Only operators that have a contract with the local council"
+      ],
+      "type": "multiple_choice",
+      "question": "To remain compliant with your license, which type of operator can you legally accept bookings from?",
+      "explanation": "A driver can only work for a Private Hire Operator that is licensed by the same local authority that issued the driver's badge.",
+      "id": "pbr-mc-0109"
+    },
+    {
+      "explanation": "Under the Equality Act 2010, drivers must carry assistance dogs at no extra charge unless they have an official medical exemption certificate.",
+      "correctAnswer": 0,
+      "options": [
+        "You must carry the dog at no extra cost to the passenger",
+        "You can charge a small cleaning fee in advance",
+        "You can refuse the dog if you have a general fear of animals",
+        "The passenger must provide their own seat cover for the dog"
+      ],
+      "type": "multiple_choice",
+      "question": "If a passenger with an assistance dog books a ride, what is your legal obligation if you do not have a medical exemption?",
+      "id": "pbr-mc-0110"
+    },
+    {
+      "question": "What must you do with your badge if you decide to permanently stop working as a PHV driver?",
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "options": [
+        "Throw it away in your household recycling bin",
+        "Keep it as a souvenir of your time as a driver",
+        "Return it to the licensing authority immediately",
+        "Pass it on to the next driver at your firm"
+      ],
+      "explanation": "The badge belongs to the licensing authority (the Council or TfL). If you stop working or your licence ends, you must return it.",
+      "id": "pbr-mc-0111"
+    },
+    {
+      "explanation": "PHV drivers are expected to be polite, helpful, and behave professionally toward passengers and other road users at all times.",
+      "options": [
+        "Being professional and helpful to passengers at all times",
+        "Choosing the longest route to increase the fare charge",
+        "Discussing personal or controversial topics with passengers",
+        "Only being polite to passengers who leave a tip"
+      ],
+      "correctAnswer": 0,
+      "question": "Which of the following describes the professional standard expected of a PHV badge holder?",
+      "type": "multiple_choice",
+      "id": "pbr-mc-0112"
+    },
+    {
+      "explanation": "A PHV driver badge typically displays the driver's photo, name, badge number, and the expiry date of the licence.",
+      "type": "multiple_choice",
+      "question": "Which piece of information is legally required to be displayed on your PHV driver badge?",
+      "correctAnswer": 1,
+      "options": [
+        "The driver's home telephone number",
+        "A clear and up-to-date photograph of the driver",
+        "The driver's National Insurance number",
+        "The vehicle's insurance policy number"
+      ],
+      "id": "pbr-mc-0113"
+    },
+    {
+      "correctAnswer": 3,
+      "options": [
+        "Do nothing unless you are found guilty in court",
+        "Wait until you apply to renew your badge",
+        "Tell your operator but not the council",
+        "Notify the licensing authority in writing immediately"
+      ],
+      "type": "multiple_choice",
+      "question": "If you are arrested for an offence while holding a PHV badge, what action should you take?",
+      "explanation": "Any arrest, charge, or conviction for a criminal offence must be reported to the licensing authority as it affects your 'fit and proper' status.",
+      "id": "pbr-mc-0114"
+    },
+    {
+      "question": "What is a potential consequence of failing to wear your driver badge while working?",
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "options": [
+        "A small verbal reminder from your operator",
+        "Nothing, as long as you have the vehicle's ID plate",
+        "Action against your licence, such as a suspension or fine",
+        "A refund of your application fee"
+      ],
+      "explanation": "Failing to wear or display your badge is a breach of licensing conditions and can lead to formal warnings, fines, or suspension.",
+      "id": "pbr-mc-0115"
+    },
+    {
+      "explanation": "PHV drivers are exempt from wearing a seatbelt ONLY when they are carrying a passenger for hire. Use is mandatory when the car is empty.",
+      "options": [
+        "At all times when driving for work",
+        "Only when a fare-paying passenger is actually in the vehicle",
+        "Only when driving at speeds below 30mph",
+        "Never; PHV drivers must always wear a seatbelt regardless of passengers"
+      ],
+      "correctAnswer": 1,
+      "question": "When are you legally exempt from wearing a seatbelt as a licensed PHV driver?",
+      "type": "multiple_choice",
+      "id": "pbr-mc-0116"
+    },
+    {
+      "explanation": "Operators must provide the vehicle registration, driver's name, and badge number to passengers before the journey begins to ensure safety.",
+      "options": [
+        "Only for long-distance journeys",
+        "Only if the passenger specifically requests it",
+        "Before the passenger enters the vehicle for every booking",
+        "At the end of the journey when the receipt is issued"
+      ],
+      "correctAnswer": 2,
+      "question": "When must a licensed operator provide the driver's badge details and vehicle information to a passenger?",
+      "type": "multiple_choice",
+      "id": "pbr-mc-0117"
+    },
+    {
+      "question": "If you receive a fixed penalty notice for a motoring offence, what is your legal obligation regarding your PHV badge?",
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "options": [
+        "Notify the licensing authority in writing within the required timeframe",
+        "Wait until your badge is up for renewal to disclose it",
+        "Only report it if it results in a driving disqualification",
+        "Inform your insurance company only"
+      ],
+      "explanation": "You must notify the licensing authority in writing of any criminal convictions, cautions, or fixed penalty notices within the timeframe specified in your local policy (usually 7 days).",
+      "id": "pbr-mc-0118"
+    },
+    {
+      "question": "What are the geographical restrictions for a PHV badge holder regarding where they can legally accept pre-booked fares?",
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "options": [
+        "Across the entire United Kingdom regardless of where the operator is based",
+        "Within the district where the driver and operator are licensed",
+        "Only within a 5-mile radius of the driver's home address",
+        "Anywhere in England and Wales except for London"
+      ],
+      "explanation": "Private hire drivers are generally only permitted to ply for hire (accept bookings) within the district where both they and their operator are licensed.",
+      "id": "pbr-mc-0119"
+    },
+    {
+      "question": "What is the name of the assessment used by licensing authorities to determine if an applicant is suitable to hold a PHV badge?",
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "options": [
+        "The Driver Competency Test",
+        "The Public Safety Assessment",
+        "The Professional Conduct Review",
+        "The Fit and Proper Person Test"
+      ],
+      "explanation": "The 'Fit and Proper' test is the standard used to ensure a driver is safe, honest, and reliable enough to hold a public-facing licence.",
+      "id": "pbr-mc-0120"
+    },
+    {
+      "options": [
+        "Every year regardless of age",
+        "At initial application and then at intervals depending on age (usually every 5 years after age 45)",
+        "Only after an accident or a major surgery",
+        "Once when you first apply, with no further checks required"
+      ],
+      "correctAnswer": 1,
+      "question": "How often must a PHV badge holder typically undergo a medical examination to prove they are fit to drive?",
+      "type": "multiple_choice",
+      "explanation": "Licensed drivers must undergo regular medical checks, usually reaching the 'Group 2' standard used for HGV and bus drivers.",
+      "id": "pbr-mc-0121"
+    },
+    {
+      "explanation": "While your licence is suspended, you are no longer authorised to drive a PHV and must return the physical badge to the council.",
+      "correctAnswer": 2,
+      "options": [
+        "Keep the badge in your glove box until the suspension is lifted",
+        "Continue wearing the badge but do not carry passengers",
+        "Return the badge to the licensing authority immediately",
+        "Destroy the badge and apply for a new one later"
+      ],
+      "type": "multiple_choice",
+      "question": "If your PHV driver licence is suspended for any reason, what must you do with your physical badge?",
+      "id": "pbr-mc-0122"
+    },
+    {
+      "explanation": "Licensed Private Hire drivers must have 'Hire and Reward' insurance, as standard social and domestic policies do not cover commercial passenger transport.",
+      "question": "Which specific type of motor insurance is mandatory for a PHV badge holder to carry passengers for profit?",
+      "type": "multiple_choice",
+      "options": [
+        "Hire and Reward insurance",
+        "Third-party only insurance",
+        "Social, Domestic, and Pleasure insurance",
+        "Comprehensive Personal insurance"
+      ],
+      "correctAnswer": 0,
+      "id": "pbr-mc-0123"
+    },
+    {
+      "correctAnswer": 3,
+      "options": [
+        "Only if the rank is empty",
+        "Only if the passenger is already standing there waiting for you",
+        "Only between the hours of 11 PM and 6 AM",
+        "Under no circumstances, as ranks are for Hackney Carriages only"
+      ],
+      "type": "multiple_choice",
+      "question": "When can a PHV badge holder use a designated taxi rank to pick up a passenger?",
+      "explanation": "A PHV is only allowed to pick up passengers who have pre-booked through a licensed operator; using a taxi rank is an offence.",
+      "id": "pbr-mc-0124"
+    },
+    {
+      "options": [
+        "Yes, as long as the other driver has a valid UK driving licence",
+        "Yes, if they are covered by your insurance policy",
+        "No, the badge is strictly for your use only",
+        "Only if you are present in the vehicle as a passenger"
+      ],
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "question": "Can you allow another person to use your PHV driver badge if they are driving your licensed vehicle?",
+      "explanation": "A PHV badge is personal to the individual it was issued to and cannot be shared or used by another driver.",
+      "id": "pbr-mc-0125"
+    },
+    {
+      "explanation": "It is a criminal offence for a PHV driver to 'tout' or solicit for business in the street; all journeys must be pre-booked through an operator.",
+      "correctAnswer": 1,
+      "options": [
+        "You can accept it but must call your operator immediately to log it",
+        "You must refuse the fare and advise them to book through a licensed operator",
+        "You can accept it if the passenger agrees to pay in cash",
+        "You can accept it as long as the journey is less than two miles"
+      ],
+      "type": "multiple_choice",
+      "question": "What should you do if a member of the public approaches your vehicle on the street and asks for a lift?",
+      "id": "pbr-mc-0126"
+    },
+    {
+      "explanation": "As a badge holder, you have a duty of care to provide reasonable assistance, such as helping with luggage or mobility aids, unless you have a medical exemption.",
+      "type": "multiple_choice",
+      "question": "What is the requirement for a PHV badge holder regarding passengers who require assistance with luggage or folding wheelchairs?",
+      "options": [
+        "Provide reasonable assistance to the passenger",
+        "Refuse the booking if the passenger has heavy bags",
+        "Charge an extra 'assistance fee' for loading bags",
+        "Wait in the car and let the passenger handle everything themselves"
+      ],
+      "correctAnswer": 0,
+      "id": "pbr-mc-0127"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is the legal consequence if you continue to drive for hire after your PHV badge has expired?",
+      "options": [
+        "You will receive a verbal warning from the operator",
+        "You will be fined £10 but can continue working",
+        "Nothing, as long as you have applied for the renewal",
+        "You are driving without valid insurance and can be prosecuted"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Operating a vehicle as a PHV without a valid, current badge is a serious offence that can lead to prosecution and a future ban from the trade.",
+      "id": "pbr-mc-0128"
+    },
+    {
+      "question": "If you move house, what is your legal obligation regarding your PHV driver's license?",
+      "correctAnswer": 2,
+      "explanation": "You must notify the licensing authority in writing within a specific timeframe (usually 7 days) of any change to your home address.",
+      "type": "multiple_choice",
+      "options": [
+        "No action is needed as long as your operator knows your address",
+        "You only need to tell them when you renew your badge",
+        "You must notify the licensing authority in writing within 7 days",
+        "You only need to notify the DVLA, not the local council"
+      ],
+      "id": "pbr-mc-0129"
+    },
+    {
+      "explanation": "A PHV badge only permits you to carry passengers in a vehicle that is also licensed for private hire by the same authority.",
+      "type": "multiple_choice",
+      "options": [
+        "No, the vehicle must also be licensed for private hire",
+        "Yes, as long as you are wearing your badge",
+        "Yes, but only for trips shorter than 5 miles",
+        "Yes, if your personal insurance covers 'business use'"
+      ],
+      "question": "Does holding a PHV driver badge allow you to pick up passengers in your own personal, unlicensed car?",
+      "correctAnswer": 0,
+      "id": "pbr-mc-0130"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "In your wallet or glove box for safekeeping",
+        "Hanging from the rear-view mirror",
+        "Pinned to your clothing or on a lanyard where it is clearly visible",
+        "In the boot of the car with your first aid kit"
+      ],
+      "explanation": "By law, you must wear your badge in a position where it is clearly visible to passengers at all times while working.",
+      "question": "Where is the legally required place to display your PHV driver badge while ನೀವು are on duty?",
+      "correctAnswer": 2,
+      "id": "pbr-mc-0131"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "If the passenger is a regular customer of yours",
+        "If the passenger is standing directly outside your house",
+        "If the passenger offers to pay double the usual fare",
+        "Under no circumstances; all bookings must go through a licensed operator"
+      ],
+      "explanation": "A PHV badge holder may only accept bookings that have been pre-cleared and dispatched by a licensed operator.",
+      "question": "Under what circumstances can a PHV badge holder legally accept a fare shouted from the street?",
+      "correctAnswer": 3,
+      "id": "pbr-mc-0132"
+    },
+    {
+      "explanation": "Plying for hire (picking up unbooked street hails) is a serious offence and typically leads to immediate badge revocation and prosecution.",
+      "options": [
+        "A small fine and a verbal warning from the operator",
+        "Immediate revocation of your badge and potential prosecution",
+        "A temporary 24-hour suspension of your license",
+        "Nothing, as long as you report the fare to your operator later"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "question": "What is the likely penalty for a PHV badge holder found 'plying for hire' in the street?",
+      "id": "pbr-mc-0133"
+    },
+    {
+      "correctAnswer": 0,
+      "question": "Regarding passenger safety, what is a key responsibility of a PHV driver?",
+      "options": [
+        "Ensuring the safety of all passengers and that children use correct restraints",
+        "Charging children a higher fare because they are more difficult to transport",
+        "Refusing to take any passenger under the age of 12 years old",
+        "Allowing children to sit in the footwell if the car is full"
+      ],
+      "type": "multiple_choice",
+      "explanation": "PHV drivers have a duty of care to ensure all passengers, especially children, are seated safely according to the law.",
+      "id": "pbr-mc-0134"
+    },
+    {
+      "explanation": "You must report the loss to both the police (to get a reference number) and the licensing authority immediately to arrange a replacement.",
+      "type": "multiple_choice",
+      "options": [
+        "Continue working and tell the council when you next see them",
+        "Report it to the police and the licensing authority immediately",
+        "Make a temporary badge out of cardboard until a new one arrives",
+        "Borrow a badge from a friend who is not working that day"
+      ],
+      "question": "What should you do if your PHV driver badge is lost or stolen?",
+      "correctAnswer": 1,
+      "id": "pbr-mc-0135"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Only a Police Officer in uniform",
+        "Only an official from the DVLA",
+        "A Police Officer or an authorised Licensing Officer",
+        "Your private hire operator's manager only"
+      ],
+      "explanation": "Local authorities have the power to inspect badges at any time to ensure the driver is properly licensed and insured.",
+      "question": "Who is authorised to ask to see your PHV driver badge for inspection at any reasonable time?",
+      "correctAnswer": 3,
+      "id": "pbr-mc-0136"
+    },
+    {
+      "correctAnswer": 0,
+      "question": "Can a PHV driver badge holder refuse a booking because they do not like the destination?",
+      "explanation": "A PHV driver cannot refuse a pre-booked passenger based on their destination, even if it is a short trip or outside their usual area.",
+      "options": [
+        "No, you cannot refuse a booking without a reasonable excuse once accepted",
+        "Yes, if the journey is less than two miles long",
+        "Yes, but only if the passenger looks like they might not tip",
+        "Yes, if the destination is in an area you do not like driving in"
+      ],
+      "type": "multiple_choice",
+      "id": "pbr-mc-0137"
+    },
+    {
+      "correctAnswer": 2,
+      "question": "What are the general rules regarding a PHV badge holder's appearance and dress code?",
+      "explanation": "PHV drivers must maintain a high standard of personal hygiene and wear clean, professional clothing as per licensing conditions.",
+      "options": [
+        "There are no rules; you can wear whatever you like",
+        "You must wear a full three-piece suit at all times",
+        "You must be clean and tidy in your appearance and clothing",
+        "You must wear a high-visibility vest over your clothes"
+      ],
+      "type": "multiple_choice",
+      "id": "pbr-mc-0138"
+    },
+    {
+      "options": [
+        "Being silent and avoiding any eye contact with the passenger",
+        "Being polite and helpful to passengers and other road users",
+        "Driving as fast as possible to complete more bookings per hour",
+        "Demanding a tip before allowing the passenger to exit the vehicle"
+      ],
+      "type": "multiple_choice",
+      "explanation": "PHV drivers are expected to be polite and helpful to all members of the public to maintain the reputation of the trade.",
+      "correctAnswer": 1,
+      "question": "Which of the following describes the correct professional conduct for a licensed driver?",
+      "id": "pbr-mc-0139"
+    },
+    {
+      "correctAnswer": 0,
+      "question": "What is the standard maximum duration for which a PHV driver badge is typically issued before it must be renewed?",
+      "explanation": "PHV driver badges are usually issued for a maximum of 3 years, though some authorities may issue 1-year licenses.",
+      "options": [
+        "Typically 3 years",
+        "Usually 10 years, same as a standard driving license",
+        "The badge never expires as long as you keep driving",
+        "Exactly 6 months from the date of issue"
+      ],
+      "type": "multiple_choice",
+      "id": "pbr-mc-0140"
+    },
+    {
+      "correctAnswer": 2,
+      "question": "What is the rule regarding a PHV driver carrying a passenger with an assistance dog?",
+      "options": [
+        "Charge a small 'cleaning fee' for the dog",
+        "Only take the dog if it is in a carrier",
+        "Carry the dog at no extra cost and allow it in the passenger compartment",
+        "Refuse the booking if they have leather seats"
+      ],
+      "type": "multiple_choice",
+      "explanation": "PHV drivers are legally required to carry assistance dogs at no extra cost unless they have a medical exemption certificate from the licensing authority.",
+      "id": "pbr-mc-0141"
+    },
+    {
+      "question": "For a booking to be legal, what must happen before a PHV driver starts the journey?",
+      "correctAnswer": 0,
+      "explanation": "All private hire bookings must be recorded by the licensed operator before the journey starts to ensure there is a record of the trip.",
+      "options": [
+        "The licensed operator must record the booking before the journey starts",
+        "The driver must write the details in a logbook after the trip",
+        "The passenger must sign a declaration form",
+        "No record is needed if the trip is less than two miles"
+      ],
+      "type": "multiple_choice",
+      "id": "pbr-mc-0142"
+    },
+    {
+      "options": [
+        "Wait until the yearly license renewal to disclose it",
+        "Notify the licensing authority in writing within the timeframe specified in their policy",
+        "Only tell the operator you work for",
+        "No action is needed if the conviction is not driving-related"
+      ],
+      "type": "multiple_choice",
+      "explanation": "Drivers must notify the licensing authority (e.g., TfL or the local council) of any new criminal convictions or cautions, usually within 7 to 21 days depending on local rules.",
+      "question": "What must a PHV badge holder do if they receive a criminal conviction after their license has been issued?",
+      "correctAnswer": 1,
+      "id": "pbr-mc-0143"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Add a 10% tip automatically to every fare",
+        "Round every fare up to the nearest £5 regardless of the distance",
+        "Negotiate a higher price than the operator's quote after the passenger gets in",
+        "Charge no more than the price agreed by the operator or shown on the meter"
+      ],
+      "explanation": "Overcharging or refusing to follow the meter (if one is fitted and required by the council) or the agreed operator price is a breach of licensing conditions.",
+      "question": "Which of the following is a legal requirement regarding the fare charged to a passenger?",
+      "correctAnswer": 3,
+      "id": "pbr-mc-0144"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Drop them at the nearest petrol station immediately",
+        "Tell them to walk the rest of the way if they are confused",
+        "Ensure they are safely inside their destination or with another responsible person if required",
+        "Only drop them at the exact GPS coordinate even if it looks unsafe"
+      ],
+      "explanation": "Drivers have a duty of care to ensure passengers, especially vulnerable ones, reach their destination safely and are not left in dangerous situations.",
+      "question": "When dropping off a vulnerable passenger, such as an elderly person, what is the driver's responsibility?",
+      "correctAnswer": 2,
+      "id": "pbr-mc-0145"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Only if they are checking the GPS map for the next fare",
+        "It is strictly prohibited while driving and can lead to license suspension",
+        "It is allowed if the car is stationary at a red traffic light",
+        "Only if the call is from their operator"
+      ],
+      "explanation": "Using a hand-held mobile phone while driving (even when stopped at lights) is illegal and can lead to the immediate suspension of a PHV badge.",
+      "question": "When is a PHV driver legally allowed to use a hand-held mobile phone?",
+      "correctAnswer": 1,
+      "id": "pbr-mc-0146"
+    },
+    {
+      "question": "What is the policy regarding a PHV driver refusing a fare based on a passenger's race or religion?",
+      "correctAnswer": 0,
+      "explanation": "Operators and drivers are legally prohibited from discriminating against passengers based on race, religion, or any other protected characteristic.",
+      "type": "multiple_choice",
+      "options": [
+        "It is illegal and a breach of the Equality Act 2010",
+        "It is allowed if the driver feels 'uncomfortable' with certain cultures",
+        "It is only allowed if the passenger is travelling to a place of worship",
+        "It is up to the driver's personal discretion"
+      ],
+      "id": "pbr-mc-0147"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Keep it for 30 days and then sell it if not claimed",
+        "Leave it on the backseat for the next passenger to find",
+        "Report and hand it in to the operator or the local licensing authority as soon as possible",
+        "Dispose of it if it appears to be worth less than £10"
+      ],
+      "explanation": "Found items must be handed in to the police or the licensing authority's lost property office within a specific timeframe (usually 24-48 hours).",
+      "question": "What should a PHV driver do if a passenger leaves an item of value in the vehicle?",
+      "correctAnswer": 2,
+      "id": "pbr-mc-0148"
+    },
+    {
+      "correctAnswer": 1,
+      "question": "Which of the following best describes the professional driving standard required for a PHV badge holder?",
+      "explanation": "PHV drivers are expected to drive in a way that ensures passenger comfort and safety, avoiding aggressive moves or excessive speed.",
+      "options": [
+        "Fast and efficient, even if it means harsh braking",
+        "Safe, smooth, and in accordance with all road traffic laws",
+        "As slowly as possible to increase the fare on the meter",
+        "Only obeying speed limits when a passenger asks"
+      ],
+      "type": "multiple_choice",
+      "id": "pbr-mc-0149"
+    },
+    {
+      "correctAnswer": 0,
+      "question": "What are the rules regarding smoking or vaping inside a licensed Private Hire Vehicle?",
+      "explanation": "Smoking (including e-cigarettes/vaping) is strictly prohibited in all licensed PHVs at all times, even when no passenger is in the car.",
+      "options": [
+        "Smoking and vaping are strictly prohibited in the vehicle at all times",
+        "The driver may smoke if the windows are fully open and there is no passenger",
+        "Vaping is allowed, but smoking tobacco is not",
+        "Smoking is allowed only if the passenger gives their permission"
+      ],
+      "type": "multiple_choice",
+      "id": "pbr-mc-0150"
+    },
+    {
+      "correctAnswer": 3,
+      "question": "If a PHV driver loses their DVLA driving license due to points or a ban, what happens to their PHV badge?",
+      "type": "multiple_choice",
+      "options": [
+        "The PHV badge remains valid for 30 days",
+        "The driver can continue to work as long as they have their PHV badge physical copy",
+        "The driver can work if they have a letter from their operator",
+        "The PHV badge is automatically invalid and the driver must stop working immediately"
+      ],
+      "explanation": "A PHV driver's license is only valid if they also hold a valid DVLA driving license; if the DVLA license is lost, the PHV license becomes invalid.",
+      "id": "pbr-mc-0151"
+    },
+    {
+      "question": "What is the PHV driver's responsibility regarding passengers and seatbelts?",
+      "correctAnswer": 0,
+      "options": [
+        "The driver must ensure all passengers follow seatbelt laws and use appropriate restraints",
+        "Only the passenger is responsible for their own seatbelt",
+        "Children do not need to wear seatbelts in the back of a PHV",
+        "Seatbelts are optional for passengers in the rear of the vehicle"
+      ],
+      "type": "multiple_choice",
+      "explanation": "The driver is responsible for checking that all seatbelt laws are followed, particularly ensuring children use the correct restraints or follow exempt criteria.",
+      "id": "pbr-mc-0152"
+    },
+    {
+      "question": "Where must a licensed PHV driver display their badge while working?",
+      "correctAnswer": 2,
+      "options": [
+        "Kept in the glove compartment for safekeeping",
+        "Attached to the car's sun visor",
+        "Worn on the driver's person or displayed in a clear holder in the vehicle",
+        "Only shown if the passenger asks to see it"
+      ],
+      "type": "multiple_choice",
+      "explanation": "The drivers badge must be clearly visible to passengers at all times when working to allow for identification and safety.",
+      "id": "pbr-mc-0153"
+    },
+    {
+      "correctAnswer": 0,
+      "question": "Within how many days must a PHV badge holder normally notify the licensing authority of a change of home address?",
+      "options": [
+        "7 days",
+        "14 days",
+        "30 days",
+        "When the license is due for renewal"
+      ],
+      "type": "multiple_choice",
+      "explanation": "Licensing authorities must be kept up to date with a driver's current address as a condition of holding a license.",
+      "id": "pbr-mc-0154"
+    },
+    {
+      "explanation": "The driver and the operator must both be licensed by the same local authority for a booking to be legally valid.",
+      "type": "multiple_choice",
+      "options": [
+        "Any local authority in the UK",
+        "The same local authority that issued the driver's PHV badge",
+        "A neighbouring council area only",
+        "The authority where the passenger lives"
+      ],
+      "correctAnswer": 1,
+      "question": "To accept a booking, which authority must the PHV operator be licensed by?",
+      "id": "pbr-mc-0155"
+    },
+    {
+      "options": [
+        "Always, provided they are carrying a passenger",
+        "Only during peak rush hour times",
+        "Never, bus lanes are only for buses and cyclists",
+        "Only if the local road signs specifically state that PHVs are permitted"
+      ],
+      "type": "multiple_choice",
+      "explanation": "PHVs are only permitted to use bus lanes if there is specific signage stating 'PHV' or 'Taxis'. Most bus lanes are restricted to buses and cyclists.",
+      "correctAnswer": 3,
+      "question": "What is the rule regarding PHVs using bus lanes in the UK?",
+      "id": "pbr-mc-0156"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "The destination is too close and the fare is too small",
+        "The passenger is being violent or abusive towards the driver",
+        "The passenger wishes to use a credit card for payment",
+        "The driver is nearing the end of their shift"
+      ],
+      "explanation": "Passengers who are abusive or present a safety risk can be refused, provided the refusal is not based on discrimination.",
+      "correctAnswer": 1,
+      "question": "In which scenario is a PHV driver legally permitted to refuse a pre-booked journey?",
+      "id": "pbr-mc-0157"
+    },
+    {
+      "correctAnswer": 0,
+      "question": "Maintaining good personal hygiene as a PHV driver:",
+      "type": "multiple_choice",
+      "options": [
+        "Is a requirement of the professional code of conduct",
+        "Is entirely at the driver's discretion",
+        "Is only relevant if a passenger complains",
+        "Is only checked during the annual medical exam"
+      ],
+      "explanation": "Personal hygiene is a core part of the professional standards and code of conduct set by licensing authorities.",
+      "id": "pbr-mc-0158"
+    },
+    {
+      "options": [
+        "Stop immediately in the middle of the road",
+        "Pull onto the pavement to clear the road",
+        "Find a safe and legal place to pull over and stop",
+        "Stop on a 'No Loading' double-yellow line if the passenger is ready"
+      ],
+      "type": "multiple_choice",
+      "explanation": "Drivers must wait until it is safe and legal to stop; they are not exempt from parking laws because of a booking.",
+      "correctAnswer": 2,
+      "question": "A passenger waves from the pavement for their pre-booked PHV. What should the driver do?",
+      "id": "pbr-mc-0159"
+    },
+    {
+      "correctAnswer": 2,
+      "question": "When an operator has not provided a set route, which route should a PHV driver take?",
+      "type": "multiple_choice",
+      "options": [
+        "Whatever route the driver finds most interesting",
+        "The route with the most traffic lights to increase wait time",
+        "The shortest or most cost-effective route unless the passenger requests otherwise",
+        "Regardless of distance, the route that uses the most motorways"
+      ],
+      "explanation": "While a passenger can request a specific route, the driver must not intentionally take a longer route to increase the fare.",
+      "id": "pbr-mc-0160"
+    },
+    {
+      "question": "What is the maximum number of passengers a PHV driver is permitted to carry?",
+      "correctAnswer": 1,
+      "explanation": "It is a criminal offence to carry more passengers than the vehicle is licensed for, even for short trips or with children.",
+      "options": [
+        "The number of seatbelts plus one child",
+        "The maximum number stated on the vehicle's license plate",
+        "As many as can safely fit in the back seat",
+        "One extra person if the passenger pays a higher fare"
+      ],
+      "type": "multiple_choice",
+      "id": "pbr-mc-0161"
+    },
+    {
+      "correctAnswer": 3,
+      "question": "When assisting a passenger with a physical disability, what is the best approach?",
+      "options": [
+        "Pick up the passenger and place them in the seat",
+        "Decline the booking due to health and safety risks",
+        "Wait in the car until the passenger has loaded their own chair",
+        "Ask the passenger how best you can help them and wait for their instructions"
+      ],
+      "type": "multiple_choice",
+      "explanation": "While help should be offered, drivers should never lift or move a passenger without their consent to avoid injury or discomfort.",
+      "id": "pbr-mc-0162"
+    },
+    {
+      "explanation": "Any medical condition that might impair the ability to drive safely must be reported to both the DVLA and the licensing authority.",
+      "options": [
+        "Notify the licensing authority immediately",
+        "Wait until the next medical examination is due",
+        "Only notify the authority if you are involved in an accident",
+        "Stop driving but do not report it to anyone"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "question": "If a driver develops a medical condition that affects their driving, what should they do?",
+      "id": "pbr-mc-0163"
+    },
+    {
+      "explanation": "The badge is the property of the licensing authority; if it expires or is revoked, it must be returned to them.",
+      "type": "multiple_choice",
+      "options": [
+        "Keep it as a souvenir of your employment",
+        "Dispose of it in the household recycling bin",
+        "Return it to the issuing licensing authority within 7 days",
+        "Pass it on to a friend who wants to become a driver"
+      ],
+      "question": "What must you do with your PHV driver badge if you decide to stop being a private hire driver?",
+      "correctAnswer": 2,
+      "id": "pbr-mc-0164"
+    },
+    {
+      "correctAnswer": 2,
+      "question": "A person approaches your vehicle on the street and asks to be taken to a nearby train station. What must you do?",
+      "explanation": "Private Hire Vehicles can only take bookings made through a licensed operator. Picking up an unbooked passenger is illegal \"plying for hire\" and invalidates insurance.",
+      "type": "multiple_choice",
+      "options": [
+        "Pick them up if they agree to a cash price",
+        "Pick them up if the passenger is in a hurry",
+        "Refuse the fare and explain that all journeys must be pre-booked through an operator",
+        "Contact the operator to book it while the passenger is already in the car"
+      ],
+      "id": "pbr-mc-0165"
+    },
+    {
+      "correctAnswer": 3,
+      "question": "A passenger with a guide dog has booked a vehicle. What is your legal obligation?",
+      "type": "multiple_choice",
+      "explanation": "Drivers are required by law to carry assistance dogs at no extra charge unless they have an official medical exemption certificate.",
+      "options": [
+        "Charge an extra cleaning fee for the dog",
+        "Ask the passenger to put the dog in the boot area",
+        "Refuse the booking if they are allergic to dogs (without an exemption certificate)",
+        "Accept the passenger and the assistance dog at no extra cost"
+      ],
+      "id": "pbr-mc-0166"
+    },
+    {
+      "question": "Where should the external licence plate be fixed on a Private Hire Vehicle?",
+      "type": "multiple_choice",
+      "explanation": "By law, the private hire vehicle licence plates must be clearly displayed on the exterior of the vehicle as instructed by the licensing authority.",
+      "correctAnswer": 0,
+      "options": [
+        "Attached to the outside of the vehicle in the position specified by the council",
+        "Stored in the glove compartment to keep it safe from theft",
+        "Displayed on the dashboard so it is visible through the windscreen",
+        "Attached to the interior of the rear window"
+      ],
+      "id": "pbr-mc-0167"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "Licensing authorities must be notified of any criminal convictions or cautions to ensure the driver remains a \"fit and proper\" person.",
+      "question": "Within how many days must a licensed driver usually report a criminal conviction or caution to the licensing authority?",
+      "correctAnswer": 1,
+      "options": [
+        "Every 3 years when renewing the badge",
+        "Within the timeframe specified by the licensing authority (usually 7 days)",
+        "Only if the conviction results in a prison sentence",
+        "When the driver next undergoes a DBS check"
+      ],
+      "id": "pbr-mc-0168"
+    },
+    {
+      "correctAnswer": 2,
+      "explanation": "It is your responsibility to ensure the vehicle is safe, which includes checking that all tyres meet the legal depth and condition requirements.",
+      "type": "multiple_choice",
+      "question": "Who is legally responsible for ensuring the tyres of a Private Hire Vehicle are in a roadworthy condition before starting a shift?",
+      "options": [
+        "The vehicle owner",
+        "The PHV Operator",
+        "The Driver",
+        "The local council garage"
+      ],
+      "id": "pbr-mc-0169"
+    },
+    {
+      "options": [
+        "No, the licence is specific to that particular vehicle",
+        "Yes, as long as the second car is also insured for social use",
+        "Yes, provided the driver moves the licence plates to the temporary car",
+        "Only if the driver’s operator gives verbal permission"
+      ],
+      "question": "Can a driver use their own personal, unlicensed car for a private hire booking if their licensed vehicle is being repaired?",
+      "explanation": "The private hire licence is for the vehicle itself; if a different vehicle is used, it must also be specifically licensed for private hire.",
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "id": "pbr-mc-0170"
+    },
+    {
+      "options": [
+        "Only a Police Officer",
+        "Only the PHV Operator",
+        "Only a Council Licensing Officer",
+        "Both a Police Officer and an authorised Council Officer"
+      ],
+      "correctAnswer": 3,
+      "question": "Who is entitled to ask to see your PHV driver’s badge while you are working?",
+      "type": "multiple_choice",
+      "explanation": "A PHV driver's badge is a legal identification document and must be produced if any authorised officer or police officer requests to see it.",
+      "id": "pbr-mc-0171"
+    },
+    {
+      "question": "What is your duty under the Equality Act regarding a passenger in a wheelchair?",
+      "explanation": "Under the Equality Act 2010, drivers must provide reasonable assistance to passengers in wheelchairs without charging extra.",
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "options": [
+        "Charge a \"lifting fee\" for the heavy equipment",
+        "Provide reasonable assistance to help the passenger board and exit the vehicle",
+        "Advise the passenger to book a different type of taxi specifically for wheelchairs",
+        "Only assist if the passenger offers a tip in advance"
+      ],
+      "id": "pbr-mc-0172"
+    },
+    {
+      "options": [
+        "Ignore them and focus on the road",
+        "Pull over and call the licensing authority immediately",
+        "Stop the vehicle in a safe place and ask them to stop, or terminate the journey if it is unsafe",
+        "Speed up to get them to their destination faster"
+      ],
+      "correctAnswer": 2,
+      "question": "What should a driver do if a passenger becomes aggressive or distracting while the vehicle is in motion?",
+      "type": "multiple_choice",
+      "explanation": "Road safety is the priority; if the passenger's behaviour threatens safety, the driver may legally refuse to continue the trip.",
+      "id": "pbr-mc-0173"
+    },
+    {
+      "options": [
+        "Within 72 hours of the accident",
+        "Only if someone was injured",
+        "Only if the vehicle is written off",
+        "At the end of the month during payroll"
+      ],
+      "question": "A PHV driver is involved in a minor road traffic accident. Within what time frame must they typically report this to the licensing authority?",
+      "type": "multiple_choice",
+      "explanation": "Any road traffic incident involving a licensed vehicle must be reported to the council within a specific timeframe (often 72 hours) to check for damage.",
+      "correctAnswer": 0,
+      "id": "pbr-mc-0174"
+    },
+    {
+      "options": [
+        "Wearing whatever is most comfortable, including flip-flops",
+        "Wearing a high-visibility vest at all times",
+        "Wearing a full tuxedo or formal suit",
+        "Maintaining a clean and tidy appearance that meets the Licensing Authority's standards"
+      ],
+      "type": "multiple_choice",
+      "explanation": "Using a high-standard PHV driver helps project a professional image to the public and ensures passenger trust.",
+      "question": "What is the general expectation for a PHV driver's dress code and appearance?",
+      "correctAnswer": 3,
+      "id": "pbr-mc-0175"
+    },
+    {
+      "options": [
+        "Never; you must take every passenger who has booked",
+        "If the passenger is so intoxicated they are likely to be sick or a safety risk",
+        "Only if the passenger refuses to pay in advance",
+        "If the passenger is carrying more than two shopping bags"
+      ],
+      "question": "In which of these circumstances would it be most reasonable to refuse a pre-booked passenger at the point of pick-up?",
+      "explanation": "If a passenger is too drunk to provide a destination or is likely to be sick/violent, a driver may refuse the fare for safety reasons.",
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "id": "pbr-mc-0176"
+    },
+    {
+      "question": "How should you display your PHV driver badge while on duty?",
+      "type": "multiple_choice",
+      "explanation": "By law, you must wear your driver badge in a position where it is clearly visible to passengers at all times while working.",
+      "correctAnswer": 2,
+      "options": [
+        "Keep it in the glove compartment for safety",
+        "Leave it on the dashboard or hanging from the mirror",
+        "Wear it on your person so it is clearly visible to passengers",
+        "Keep it in your wallet or pocket to show only if asked"
+      ],
+      "id": "pbr-mc-0177"
+    },
+    {
+      "correctAnswer": 1,
+      "options": [
+        "Accepting a pre-booked fare from your operator",
+        "Picking up a passenger who hails you in the street",
+        "Dropping off a passenger at a designated rank",
+        "Assisting a passenger with their luggage at a hotel"
+      ],
+      "explanation": "It is a criminal offence for a PHV driver to ply for hire or accept a fare that has not been pre-booked through a licensed operator.",
+      "type": "multiple_choice",
+      "question": "Which of the following is considered 'illegal plying for hire'?",
+      "id": "pbr-mc-0178"
+    },
+    {
+      "explanation": "The licensing authority must be kept up to date with your current address to ensure all legal correspondence reaches you correctly.",
+      "correctAnswer": 0,
+      "options": [
+        "Usually within 7 days",
+        "Only when you renew your badge",
+        "Within 3 months of moving",
+        "At the end of the tax year"
+      ],
+      "question": "If you change your home address, how soon must you notify the licensing authority?",
+      "type": "multiple_choice",
+      "id": "pbr-mc-0179"
+    },
+    {
+      "options": [
+        "Lock the doors and leave them alone for no more than 10 minutes",
+        "Ask a passerby to keep an eye on the car while you are gone",
+        "Leave the engine running so the heater or air conditioning stays on",
+        "Never leave a child or vulnerable person alone in the vehicle"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Leaving a child or vulnerable person in the vehicle is a safety risk and could lead to licensing action or criminal charges.",
+      "type": "multiple_choice",
+      "question": "Which statement is correct regarding leaving a child or vulnerable person alone in a PHV?",
+      "id": "pbr-mc-0180"
+    },
+    {
+      "options": [
+        "You can charge a flat fee of £5 per animal",
+        "You must not charge any extra for carrying a guide dog",
+        "You can charge extra if the dog is very large",
+        "You can charge for the time taken to clean the car after the trip"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Unless you have a medical exemption certificate, you cannot charge extra for carrying assistance dogs or mobility aids.",
+      "type": "multiple_choice",
+      "question": "Can a PHV driver charge an extra fee for carrying a passenger’s guide dog?",
+      "id": "pbr-mc-0181"
+    },
+    {
+      "options": [
+        "At all times, even when not working",
+        "Only when carrying a fare-paying passenger",
+        "Only when driving at night",
+        "Only when parked in a public place"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Private hire vehicles must always have their licence plates clearly visible to inform the public and enforcement officers that the vehicle is licensed.",
+      "type": "multiple_choice",
+      "question": "When must the external licence plates be displayed on a Private Hire Vehicle?",
+      "id": "pbr-mc-0182"
+    },
+    {
+      "explanation": "Drivers should check for belongings after every trip; found items should be handled according to the operator's or authority's lost property policy.",
+      "options": [
+        "Keep it until the passenger calls your private mobile number",
+        "Leave it in the car and hope the next passenger doesn't take it",
+        "Check the vehicle and follow your operator's lost property procedure",
+        "Drop it off at the nearest charity shop at the end of your shift"
+      ],
+      "correctAnswer": 2,
+      "question": "What should a driver do if a passenger leaves property in the vehicle?",
+      "type": "multiple_choice",
+      "id": "pbr-mc-0183"
+    },
+    {
+      "explanation": "While you should assist, you should never lift a passenger manually due to the risk of injury to both yourself and the passenger.",
+      "options": [
+        "Tell them they must wait for a different vehicle type",
+        "Physically lift the passenger from their wheelchair into the car seat",
+        "Ask the passenger to crawl into the vehicle independently",
+        "Ask the passenger how you can best assist them without manual lifting"
+      ],
+      "correctAnswer": 3,
+      "question": "When assisting a passenger with limited mobility into your vehicle, you should:",
+      "type": "multiple_choice",
+      "id": "pbr-mc-0184"
+    },
+    {
+      "options": [
+        "The child's parent or guardian",
+        "The driver of the vehicle",
+        "The licensed operator who took the booking",
+        "The local education authority"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The driver is legally responsible for ensuring children use the correct restraints or follow the specific exemptions allowed for taxis/PHVs.",
+      "type": "multiple_choice",
+      "question": "Who is responsible for ensuring a child under 14 years old wears a seatbelt or uses the correct child restraint?",
+      "id": "pbr-mc-0185"
+    },
+    {
+      "correctAnswer": 0,
+      "options": [
+        "Asking people in the street if they need a taxi",
+        "Handing out business cards for your licensed operator",
+        "Placing a licensed advert on the side of your vehicle",
+        "Waiting in a pre-arranged parking spot for a booking"
+      ],
+      "explanation": "Touting for business in public places is illegal and can result in the loss of your private hire licence.",
+      "type": "multiple_choice",
+      "question": "What is 'touting' in the context of private hire driving?",
+      "id": "pbr-mc-0186"
+    },
+    {
+      "correctAnswer": 2,
+      "options": [
+        "It is okay if you are stopped at red traffic lights",
+        "It is allowed if you are scrolling through your booking app",
+        "It is illegal while driving, even if you are stationary in traffic",
+        "It is permitted if you are only checking a map for 5 seconds"
+      ],
+      "explanation": "Using a hand-held phone or device while driving (including while stopped at lights) is illegal and carries heavy penalties for professional drivers.",
+      "type": "multiple_choice",
+      "question": "What is the law regarding using a hand-held mobile phone while the engine is running?",
+      "id": "pbr-mc-0187"
+    },
+    {
+      "explanation": "Smoking and vaping (using e-cigarettes) are strictly prohibited in all licensed private hire vehicles at all times by law.",
+      "correctAnswer": 0,
+      "options": [
+        "Smoking and vaping are never allowed in a PHV",
+        "Vaping is allowed but only if the passenger agrees",
+        "Smoking is allowed if the driver is alone in the car",
+        "Smoking is allowed if the windows are fully open"
+      ],
+      "question": "What are the rules regarding smoking or vaping inside a licensed Private Hire Vehicle?",
+      "type": "multiple_choice",
+      "id": "pbr-mc-0188"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "The driver",
+        "The operator",
+        "The licensing authority",
+        "The DVLA"
+      ],
+      "explanation": "The PHV driver's badge is the property of the licensing authority and must be returned if the licence is suspended or revoked.",
+      "question": "Who technically owns the physical Private Hire Driver's badge provided to you?",
+      "correctAnswer": 2,
+      "id": "pbr-mc-0189"
+    },
+    {
+      "explanation": "Private Hire Vehicles are only permitted to accept bookings made through a licensed operator; they cannot be hailed on the street.",
+      "type": "multiple_choice",
+      "options": [
+        "Politely decline and advise them to book through a licensed operator",
+        "Take the fare if they are going in the same direction you are travelling",
+        "Negotiate a price and then call your operator to 'back-log' the journey",
+        "Check if there is a taxi rank nearby and tell them to wait there instead"
+      ],
+      "question": "While parked, a person approaches your window and asks for a lift. What is the correct legal response?",
+      "correctAnswer": 0,
+      "id": "pbr-mc-0190"
+    },
+    {
+      "correctAnswer": 1,
+      "question": "Who is legally allowed to drive a licensed Private Hire Vehicle even when it is not being used for work?",
+      "options": [
+        "Anyone with a valid UK driving licence and insurance",
+        "Only a person holding a valid PHV driver's licence from the same authority",
+        "The vehicle owner's family members, provided they are over 25",
+        "Any PHV driver licensed by any UK council"
+      ],
+      "type": "multiple_choice",
+      "explanation": "The vehicle must be driven by a driver licensed by the same authority that licensed the vehicle and the operator.",
+      "id": "pbr-mc-0191"
+    },
+    {
+      "explanation": "Convictions, including driving offences or cautions, must be reported to the licensing authority within the timeframe specified in your policy (often 7 days).",
+      "type": "multiple_choice",
+      "options": [
+        "When you renew your licence every three years",
+        "Only if you receive a prison sentence or a driving ban",
+        "Only if the offence happened while you were carrying a passenger",
+        "Within the specific timeframe required by your licensing authority (e.g., 7 days)"
+      ],
+      "question": "If you are convicted of a motoring offence, when must you notify the licensing authority?",
+      "correctAnswer": 3,
+      "id": "pbr-mc-0192"
+    },
+    {
+      "correctAnswer": 1,
+      "question": "What specific type of insurance is mandatory for a vehicle to be used for private hire work?",
+      "explanation": "Private Hire Vehicles must have a valid 'hire and reward' insurance policy to legally carry passengers for payment.",
+      "options": [
+        "Standard Social, Domestic and Pleasure (SDP) insurance",
+        "Hire and Reward insurance",
+        "Third-party only insurance",
+        "Personal accident insurance"
+      ],
+      "type": "multiple_choice",
+      "id": "pbr-mc-0193"
+    },
+    {
+      "question": "On what grounds can a licensing authority suspend or revoke a Private Hire Driver's licence?",
+      "correctAnswer": 2,
+      "explanation": "Licensing authorities can suspend or revoke a licence if the driver is no longer considered 'fit and proper' to hold one.",
+      "type": "multiple_choice",
+      "options": [
+        "The driver's vehicle is more than five years old",
+        "The driver fails to find a high-paying fare for several weeks",
+        "The driver is no longer considered a 'fit and proper' person",
+        "The driver chooses to work for more than one operator at a time"
+      ],
+      "id": "pbr-mc-0194"
+    },
+    {
+      "question": "What is the standard expectation regarding a PHV driver assisting passengers with luggage?",
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "options": [
+        "You are generally expected to assist with luggage unless you have a proven medical exemption",
+        "You are only required to help if the passenger offers a tip in advance",
+        "You should never touch a passenger's luggage for insurance reasons",
+        "It is entirely up to the passenger to load and unload their own bags"
+      ],
+      "explanation": "Drivers have a legal duty to assist passengers with luggage to ensure a safe and comfortable journey.",
+      "id": "pbr-mc-0195"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Stop immediately in the middle of the road to avoid delaying the person",
+        "Only stop if there is a 'Taxi' sign or a designated rank available",
+        "Pull up onto the pavement so you don't block the road for other cars",
+        "Find a safe, legal place to stop that does not block junctions or cycle lanes"
+      ],
+      "explanation": "Safety is the priority; you should only pull over in a safe, legal location where you are not obstructing traffic.",
+      "question": "When picking up a passenger, what should be your primary consideration when choosing where to pull over?",
+      "correctAnswer": 3,
+      "id": "pbr-mc-0196"
+    },
+    {
+      "explanation": "A driver must have a medical certificate to legally refuse a passenger with an assistance dog due to allergies or phobias.",
+      "type": "multiple_choice",
+      "options": [
+        "If the driver has a genuine fear of dogs",
+        "If the driver’s car has expensive leather seats that could be scratched",
+        "If the driver holds a valid medical exemption certificate issued by the council",
+        "If the dog is a large breed, such as a German Shepherd or Labrador"
+      ],
+      "question": "Under what condition can a driver legally refuse to carry an assistance dog?",
+      "correctAnswer": 2,
+      "id": "pbr-mc-0197"
+    },
+    {
+      "explanation": "If you suspect a passenger is being exploited or is at risk, you should report it to the police or your operator's safeguarding lead.",
+      "type": "multiple_choice",
+      "options": [
+        "Ignore it as it is not your business and you are not the police",
+        "Report your concerns to the police or the operator's safeguarding lead",
+        "Confront the passenger directly and ask them if they are in danger",
+        "Post a description of the passenger on social media to warn other drivers"
+      ],
+      "question": "If you suspect a passenger is a victim of modern slavery or human trafficking, what should you do?",
+      "correctAnswer": 1,
+      "id": "pbr-mc-0198"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "The driver has a legal responsibility to comply with data protection (GDPR) laws",
+        "The driver can post the footage on YouTube if a passenger misbehaves",
+        "CCTV is strictly forbidden in all private hire vehicles for privacy reasons",
+        "The driver must delete all footage at the end of every single shift"
+      ],
+      "explanation": "CCTV helps protect the driver and passengers, but its use must comply with data protection laws (GDPR).",
+      "question": "If your vehicle is fitted with a CCTV system, which of the following is true?",
+      "correctAnswer": 0,
+      "id": "pbr-mc-0199"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Keep it in your wallet to show people only if they ask to see it",
+        "Wear it on your person or display it in a holder as specified by your council",
+        "Hang it from the rear-view mirror so it is visible from outside the car",
+        "Keep it in the glove box so it does not get lost or stolen"
+      ],
+      "explanation": "The badge must be worn or displayed in the manner specified by the local authority so it is clearly visible to the passenger.",
+      "question": "How must you carry or display your driver's badge while you are working?",
+      "correctAnswer": 1,
+      "id": "pbr-mc-0200"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "To send them promotional offers for your own side-business",
+        "To contact them about a lost item found in the car",
+        "Only for purposes related to the specific booking they made",
+        "To invite them to use a different booking app next time"
+      ],
+      "question": "How should a driver handle a passenger's personal phone number after a journey is completed?",
+      "explanation": "Personal information should never be used for anything other than the specific booking for which it was provided.",
+      "correctAnswer": 2,
+      "id": "pbr-mc-0201"
+    },
+    {
+      "correctAnswer": 0,
+      "explanation": "Drivers must always notify the authority of any change in their physical or mental health that could affect their driving.",
+      "question": "If you develop a new medical condition that affects your driving, when should you inform the Licensing Authority?",
+      "options": [
+        "As soon as possible, as it may affect your fitness to drive",
+        "Only when you apply to renew your licence in three years",
+        "Only if the condition causes a road traffic accident",
+        "Never, as medical records are private and confidential"
+      ],
+      "type": "multiple_choice",
+      "id": "pbr-mc-0202"
+    },
+    {
+      "question": "Under what circumstances can a Private Hire Driver pick up a passenger who hails them on the street?",
+      "options": [
+        "If the passenger is in a hurry and offers double the fare",
+        "If the driver is already on their way home after a shift",
+        "If the passenger is elderly or appears to be vulnerable",
+        "Never; all PHV journeys must be pre-booked through an operator"
+      ],
+      "explanation": "PHV drivers are only legally permitted to take journeys that have been pre-booked through a licensed operator.",
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "id": "pbr-mc-0203"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "explanation": "Drivers have a duty of care to ensure all passengers, especially children, exit safely away from moving traffic.",
+      "options": [
+        "Leave it to the parent to decide which side they use",
+        "Encourage them to exit onto the pavement side of the road",
+        "Stop in the middle of the road so they can choose either side",
+        "Ask the children to wait until you personally open the door"
+      ],
+      "question": "What is the safest way to let children out of a Private Hire Vehicle?",
+      "id": "pbr-mc-0204"
+    },
+    {
+      "explanation": "A PHV cannot be used for any hire purposes if the specific vehicle licence plate has expired.",
+      "question": "What happens if your vehicle's licence plate expires but you have already applied for a renewal?",
+      "options": [
+        "You can continue working for up to 7 days while the renewal processes",
+        "You can work as long as your personal driver's badge is still valid",
+        "The vehicle cannot be used for hire until the new plate is issued",
+        "You can write the old plate number on a piece of paper and display it"
+      ],
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "id": "pbr-mc-0205"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "explanation": "Licensed vehicles must be kept in a clean and safe condition both inside and out.",
+      "question": "What is the requirement regarding the cleanliness and condition of a licensed Private Hire Vehicle?",
+      "options": [
+        "It must be clean, safe, and in good internal and external condition",
+        "It only needs to be mechanically sound; cleanliness is optional",
+        "The interior must be clean, but the exterior does not matter",
+        "It only needs to be cleaned once a week, regardless of use"
+      ],
+      "id": "pbr-mc-0206"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "explanation": "The operator is responsible for setting the price and making the contract; the driver just carries out the work.",
+      "options": [
+        "The driver and the passenger agree on a price at the end of the trip",
+        "The booking must be recorded by the operator and a fare or estimate given",
+        "The driver must turn on a taxi meter as soon as the passenger enters",
+        "The passenger pays whatever they think the journey was worth"
+      ],
+      "question": "Which of the following describes the legal process for a Private Hire booking?",
+      "id": "pbr-mc-0207"
+    },
+    {
+      "question": "What is the primary purpose of safeguarding training for Private Hire Drivers?",
+      "options": [
+        "To teach drivers how to perform basic first aid on passengers",
+        "To help drivers avoid getting into arguments over fares",
+        "To explain the technical maintenance schedule of the car",
+        "To help drivers recognise and report signs of abuse or neglect"
+      ],
+      "explanation": "Safeguarding training helps drivers identify and report signs of exploitation or danger to children and vulnerable adults.",
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "id": "pbr-mc-0208"
+    },
+    {
+      "options": [
+        "Within 24 hours",
+        "The driver does not need to notify the council of a home move",
+        "Usually within 7 days (depending on local council policy)",
+        "Only when the annual insurance policy is due for renewal"
+      ],
+      "question": "Within what timeframe must you usually notify the Licensing Authority of a change of home address?",
+      "explanation": "Drivers must notify the licensing authority of any address changes so records remain accurate and legal documents can be sent.",
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "id": "pbr-mc-0209"
+    },
+    {
+      "correctAnswer": 0,
+      "question": "What standard of behaviour is expected from a licensed driver according to most council codes of conduct?",
+      "options": [
+        "A high standard of professional conduct and civility",
+        "The driver can be as rude as they like if the passenger is late",
+        "A silent environment where no talking is allowed at any time village",
+        "Only the minimum required to complete the transaction"
+      ],
+      "explanation": "Drivers must be polite, helpful, and professional to all members of the public at all times.",
+      "type": "multiple_choice",
+      "id": "pbr-mc-0210"
+    },
+    {
+      "explanation": "A driver's licence can be revoked if they are no longer considered 'fit and proper' to hold the badge.",
+      "question": "What does the term 'Fit and Proper' mean in relation to a licensed driver?",
+      "options": [
+        "That the driver has passed an advanced racing driving course",
+        "That the driver is safe, honest, and reliable to serve the public",
+        "That the driver knows every single street name in the UK by heart",
+        "That the driver owns the vehicle they are currently using"
+      ],
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "id": "pbr-mc-0211"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "explanation": "It is illegal to discriminate against anyone based on a protected characteristic like religion or race.",
+      "question": "If a passenger has a specific religious belief, how should a driver respond?",
+      "options": [
+        "Tell the passenger you are busy and drive away quickly",
+        "Charge them a higher fare because of the extra time taken",
+        "Provide the service exactly as you would for any other passenger",
+        "Tell them they must wait for a driver of their own background"
+      ],
+      "id": "pbr-mc-0212"
+    },
+    {
+      "question": "When must a licensed driver notify the Licensing Authority if they receive a criminal conviction or caution?",
+      "type": "multiple_choice",
+      "options": [
+        "Only when the licence is up for renewal",
+        "Only if it results in a driving ban",
+        "Within a specified timeframe (e.g. 7 days) as per local policy",
+        "Only if the police inform the council directly"
+      ],
+      "explanation": "Drivers must report any criminal convictions, cautions, or fixed penalty notices to the Licensing Authority within a specific timeframe (usually 7 days).",
+      "correctAnswer": 2,
+      "id": "pbr-mc-0213"
+    },
+    {
+      "explanation": "Drivers are legally required to provide a fare estimate if requested by the passenger before the trip begins.",
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "options": [
+        "You must provide a fare estimate if requested by the passenger",
+        "You can refuse to give an estimate until the journey is finished",
+        "You must always charge exactly what the sat-nav predicts regardless of traffic",
+        "Estimates are only required for journeys over 20 miles"
+      ],
+      "question": "What is your obligation if a passenger asks for a fare estimate before the journey starts?",
+      "id": "pbr-mc-0214"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Yes, if the wheelchair is heavy and requires extra effort",
+        "No, it is illegal to charge extra for carrying a wheelchair or mobility aid",
+        "Yes, but only if the journey is more than 5 miles",
+        "Only if the passenger did not mention the wheelchair when booking"
+      ],
+      "question": "Are you permitted to charge a passenger an additional fee for carrying a wheelchair?",
+      "explanation": "Under the Equality Act 2010, drivers cannot charge extra for carrying passengers in wheelchairs or those with mobility aids.",
+      "correctAnswer": 1,
+      "id": "pbr-mc-0215"
+    },
+    {
+      "question": "If you find a mobile phone left in your vehicle after a shift, what is the correct procedure?",
+      "options": [
+        "Keep the item for 30 days and then sell it if unclaimed",
+        "Leave it on the pavement at the passenger's drop-off point",
+        "Discard it if it appears to have a value of less than £10",
+        "Follow the Licensing Authority's specific 'Lost Property' procedure"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "explanation": "If an item is found, the driver must follow the local Licensing Authority's policy, which usually involves attempting to return it or taking it to a police station/council office.",
+      "id": "pbr-mc-0216"
+    },
+    {
+      "explanation": "It is a legal requirement that the rear licence plate remains visible and clean at all times; failing this can lead to enforcement action.",
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "options": [
+        "It is acceptable as long as the front plate is clean",
+        "You only need to clean it at the end of your shift",
+        "You must ensure the plate is clean and clear of any obstructions before driving",
+        "You should cover it with plastic to keep it dry"
+      ],
+      "question": "What is the rule regarding the visibility of the vehicle's external licence plate during bad weather?",
+      "id": "pbr-mc-0217"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Signs of grooming, physical injury, or extreme distress",
+        "Whether or not the child has paid their own fare",
+        "If the child is wearing the most expensive brand of clothing",
+        "The child’s ability to use a smartphone fluently"
+      ],
+      "question": "When considering 'Safeguarding', which of the following should a driver stay alert for?",
+      "explanation": "When children are present, you must be alert to signs of neglect, grooming, or physical harm as part of your safeguarding duty.",
+      "correctAnswer": 0,
+      "id": "pbr-mc-0218"
+    },
+    {
+      "correctAnswer": 3,
+      "explanation": "Smoking or using e-cigarettes is strictly prohibited in any licensed private hire vehicle at any time, even without passengers.",
+      "options": [
+        "Only when a passenger is in the car",
+        "Only if the passenger gives you permission to smoke",
+        "As long as the window is fully open and no one else is inside",
+        "At no time, as it is a smoke-free workplace by law"
+      ],
+      "type": "multiple_choice",
+      "question": "When are you allowed to smoke or use an e-cigarette inside your licensed vehicle?",
+      "id": "pbr-mc-0219"
+    },
+    {
+      "correctAnswer": 1,
+      "explanation": "PHV drivers are only allowed to carry the maximum number of passengers specified on the vehicle's licence and plate.",
+      "question": "How many passengers are you legally allowed to carry in your Private Hire Vehicle?",
+      "options": [
+        "Any number of people as long as they all have seatbelts",
+        "Only the maximum number of passengers stated on the vehicle licence plate",
+        "One extra person as long as it is a short journey",
+        "As many people as the driver feels is safe for the vehicle's weight"
+      ],
+      "type": "multiple_choice",
+      "id": "pbr-mc-0220"
+    },
+    {
+      "correctAnswer": 2,
+      "explanation": "Plying for hire (picking up unbooked passengers) is illegal for PHV drivers and usually invalidates your hire and reward insurance.",
+      "options": [
+        "You will receive a commendation for efficiency",
+        "The booking will be logged automatically by the council",
+        "Your insurance will likely be invalid and you may be prosecuted",
+        "You are only allowed to do this during peak hours"
+      ],
+      "type": "multiple_choice",
+      "question": "What is a major consequence of picking up a passenger who has not pre-booked through an operator?",
+      "id": "pbr-mc-0221"
+    },
+    {
+      "correctAnswer": 0,
+      "explanation": "The Operator is legally responsible for keeping the booking records, though the driver must follow the instructions given.",
+      "question": "Who is legally responsible for keeping the records of a private hire booking?",
+      "options": [
+        "The Private Hire Operator",
+        "The Driver",
+        "The Driver's husband or wife",
+        "The Passenger"
+      ],
+      "type": "multiple_choice",
+      "id": "pbr-mc-0222"
+    },
+    {
+      "explanation": "Personal use is permitted, but the vehicle remains a licensed PHV and must comply with all licensing conditions (like displaying plates).",
+      "correctAnswer": 1,
+      "question": "If you use your licensed PHV for social or domestic purposes, which rule applies?",
+      "type": "multiple_choice",
+      "options": [
+        "You must remove your licence plates before using it for social trips",
+        "You must still comply with licensing rules, including displaying plates",
+        "You can carry as many passengers as you want for social events",
+        "You are not required to wear your driver's badge for social trips"
+      ],
+      "id": "pbr-mc-0223"
+    },
+    {
+      "correctAnswer": 3,
+      "explanation": "Safety is paramount; drivers should avoid any verbal or physical confrontation and report serious incidents to the police.",
+      "options": [
+        "Lock the doors and refuse to let the passenger out until they pay",
+        "Physical force is permitted to defend your vehicle property",
+        "Follow the passenger home to demand payment the next day",
+        "Avoid confrontation, prioritize your safety, and report the incident to the police"
+      ],
+      "type": "multiple_choice",
+      "question": "If a passenger becomes aggressive or threatening, what is the best course of action for a driver?",
+      "id": "pbr-mc-0224"
+    },
+    {
+      "question": "Where must you display your private hire driver badge while you are working?",
+      "correctAnswer": 2,
+      "options": [
+        "Keep it in your glove box for safety",
+        "Only show it if a police officer asks for it",
+        "Keep it clearly visible on your person at all times",
+        "Leave it hanging from the rear-view mirror"
+      ],
+      "type": "multiple_choice",
+      "explanation": "You must wear your driver badge in a visible position on your person at all times when working, so that passengers can identify you easily.",
+      "id": "pbr-mc-0225"
+    },
+    {
+      "question": "A person approaches you on the street and asks for a lift. What is the correct action?",
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "options": [
+        "Decline the fare and tell them to book through your operator",
+        "Accept the fare if they are going a long distance",
+        "Accept the fare but do not use the meter",
+        "Negotiate a cash price and report it to the operator later"
+      ],
+      "explanation": "Private hire drivers can only accept bookings through a licensed operator. Picking up a passenger on the street is 'plying for hire' and is illegal.",
+      "id": "pbr-mc-0226"
+    },
+    {
+      "correctAnswer": 1,
+      "question": "How soon must you report an accident that causes damage to your licensed vehicle to the Licensing Authority?",
+      "explanation": "Drivers must report any damage to their vehicle that affects safety or appearance to the Licensing Authority within a specific timeframe (usually 72 hours).",
+      "options": [
+        "Once the vehicle is being repaired at a garage",
+        "Within 72 hours of the accident occurring",
+        "At the end of your current shift",
+        "When you next apply for a vehicle licence renewal"
+      ],
+      "type": "multiple_choice",
+      "id": "pbr-mc-0227"
+    },
+    {
+      "question": "A passenger with a visual impairment and a guide dog wants to book a journey. What should you do?",
+      "correctAnswer": 3,
+      "explanation": "Refusing a passenger because of their disability is illegal under the Equality Act 2010. You must provide them with the same level of service as any other passenger.",
+      "options": [
+        "Tell them you are about to finish your shift",
+        "Apply an extra 'cleaning' surcharge to the fare",
+        "Ask them to wait for a larger vehicle to arrive",
+        "Accept the booking and provide reasonable assistance"
+      ],
+      "type": "multiple_choice",
+      "id": "pbr-mc-0228"
+    },
+    {
+      "explanation": "To keep your passenger safe, use the central locking only if requested, park in well-lit areas, and ensure they have reached their destination safely.",
+      "options": [
+        "Drop them at the nearest main road to save time",
+        "Demand payment before the journey begins to avoid disputes",
+        "Keep the doors locked until the fare has been paid in full",
+        "Wait until the passenger has safely entered their destination building if it is dark"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "question": "What is a recommended safety practice when dropping off a lone passenger late at night?",
+      "id": "pbr-mc-0229"
+    },
+    {
+      "options": [
+        "Your insurance is invalidated and you are breaking the law",
+        "You can continue working for 7 days while the renewal is processed",
+        "You only need to stop if the police stop you for a check",
+        "You can work as long as the operator says it is okay"
+      ],
+      "type": "multiple_choice",
+      "explanation": "Operating a vehicle with an expired licence means you are no longer insured for hire and reward, which is a serious legal offence.",
+      "question": "What happens to your insurance if you continue to drive after your vehicle licence has expired?",
+      "correctAnswer": 0,
+      "id": "pbr-mc-0230"
+    },
+    {
+      "explanation": "You must notify the Licensing Authority in writing of any medical condition that may affect your ability to drive as soon as you are aware of it.",
+      "type": "multiple_choice",
+      "options": [
+        "Only if you are involved in a road traffic accident",
+        "At the time of your next medical examination",
+        "As soon as the condition is diagnosed or worsens",
+        "Only if you need to take more than a week off work"
+      ],
+      "question": "When must you notify the Licensing Authority about a new medical condition that affects your driving?",
+      "correctAnswer": 2,
+      "id": "pbr-mc-0231"
+    },
+    {
+      "question": "Which of these is most important for maintaining professional boundaries with a passenger?",
+      "correctAnswer": 1,
+      "options": [
+        "Ask them for their phone number to offer future private bookings",
+        "Keep conversation professional and related to the journey",
+        "Share your personal political or religious views to pass the time",
+        "Ask detailed questions about their personal life and relationship status"
+      ],
+      "type": "multiple_choice",
+      "explanation": "Drivers should not engage in personal or inappropriate conversations. This helps maintain a professional boundary and ensures the passenger feels safe.",
+      "id": "pbr-mc-0232"
+    },
+    {
+      "question": "According to licensing rules, how must vehicle licence plates be displayed?",
+      "correctAnswer": 2,
+      "explanation": "Your vehicle must have both front and rear plates securely fixed to the outside of the vehicle as required by the licensing conditions.",
+      "type": "multiple_choice",
+      "options": [
+        "Placed inside the front and rear windscreens",
+        "Kept in the boot in case they are needed for inspection",
+        "Securely fixed to the outside front and rear of the vehicle",
+        "Magnets can be used so they can be removed when not working"
+      ],
+      "id": "pbr-mc-0233"
+    },
+    {
+      "question": "If your driver's badge is lost or stolen, what action should you take?",
+      "correctAnswer": 0,
+      "explanation": "If you lose your badge, you must stop working immediately and report it to the Licensing Authority to obtain a replacement.",
+      "type": "multiple_choice",
+      "options": [
+        "Report it immediately and stop working until you get a replacement",
+        "Write your badge number on a piece of paper and keep driving",
+        "Borrow a spare badge from a colleague or friend",
+        "Wait until your next shift to see if it turns up in the car"
+      ],
+      "id": "pbr-mc-0234"
+    },
+    {
+      "explanation": "The ID card inside the vehicle allows the passenger to verify that the driver is licensed and provides the details needed for a complaint or feedback.",
+      "type": "multiple_choice",
+      "options": [
+        "To advertise the driver's contact details for private hire",
+        "To allow the passenger to identify the driver and their licence number",
+        "To prove to the operator that the driver is currently working",
+        "To show that the driver has passed their advanced driving test"
+      ],
+      "correctAnswer": 1,
+      "question": "What is the main purpose of the internal ID card displayed in a Private Hire Vehicle?",
+      "id": "pbr-mc-0235"
+    },
+    {
+      "question": "What is the most important legal responsibility of a Private Hire Driver?",
+      "correctAnswer": 3,
+      "explanation": "The driver's primary responsibility is the safety of the passengers and the general public, adhering to all traffic laws and licensing conditions.",
+      "type": "multiple_choice",
+      "options": [
+        "To complete as many fares as possible in a single shift",
+        "To always follow the route suggested by the operator's app",
+        "To keep the vehicle's fuel consumption as low as possible",
+        "To ensure the safety and comfort of passengers at all times"
+      ],
+      "id": "pbr-mc-0236"
+    },
+    {
+      "explanation": "PHV drivers may only take bookings through a licensed operator; taking bookings directly is 'plying for hire' and is illegal.",
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "options": [
+        "Taking a booking directly from a customer via your personal phone",
+        "Ensuring the booking goes through your licensed operator's system",
+        "Refusing a fare that was not pre-arranged",
+        "Confirming the passenger's name before they enter the vehicle"
+      ],
+      "question": "Which of the following actions would be considered a breach of your private hire licence conditions?",
+      "id": "pbr-mc-0237"
+    },
+    {
+      "question": "What is the penalty for allowing a friend to smoke in your licensed vehicle while you are using it for personal use?",
+      "type": "multiple_choice",
+      "explanation": "Even if you are not working, the vehicle remains a licensed PHV and the law prohibits smoking in it at all times.",
+      "correctAnswer": 0,
+      "options": [
+        "A fine and possible suspension of your licence",
+        "No penalty as long as the 'No Smoking' sign is covered",
+        "A warning only if there are no passengers present",
+        "A verbal reprimand from your operator"
+      ],
+      "id": "pbr-mc-0238"
+    },
+    {
+      "options": [
+        "Charge a small cleaning fee in advance",
+        "Carry the dog in the boot of the vehicle",
+        "Carry the assistance dog at no extra cost",
+        "Ask the passenger to provide a blanket for the seat"
+      ],
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "explanation": "Unless you have a medical exemption certificate, you must carry assistance dogs and cannot charge extra for them.",
+      "question": "What are you legally required to do if a passenger with an assistance dog books a ride?",
+      "id": "pbr-mc-0239"
+    },
+    {
+      "options": [
+        "When you renew your annual licence",
+        "Only if it results in a driving ban",
+        "If the operator asks for an updated DBS check",
+        "Within the specific timeframe set by your Licensing Authority (e.g., 7 days)"
+      ],
+      "explanation": "By law, you must report any criminal conviction, caution, or fixed penalty to the Licensing Authority within the timeframe specified in your policy (usually 7 days).",
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "question": "When must you notify the Licensing Authority if you are convicted of a motoring offence?",
+      "id": "pbr-mc-0240"
+    },
+    {
+      "question": "If you decide to stop working as a private hire driver, what must you do with your badge?",
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "explanation": "Your driver badge is a security item; you must return it to the council if you stop working as a private hire driver.",
+      "options": [
+        "Keep it as a souvenir of your employment",
+        "Return it to the Licensing Authority immediately",
+        "Give it to your operator to hold for you",
+        "Destroy it and inform the police"
+      ],
+      "id": "pbr-mc-0241"
+    },
+    {
+      "question": "What can happen if your vehicle is found to be in an unsafe condition during a spot check?",
+      "options": [
+        "The licence for that vehicle can be suspended immediately",
+        "You can continue driving if you promise to fix it within a month",
+        "You are only allowed to drive during daylight hours",
+        "Your operator will be fined, but you can continue working"
+      ],
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "explanation": "If the vehicle fails to meet safety standards, the Licensing Authority can issue a 'Stop Notice' or 'deferred notice' preventing its use.",
+      "id": "pbr-mc-0242"
+    },
+    {
+      "question": "Who is legally responsible for ensuring that a child under the age of 14 wears a seatbelt in a PHV?",
+      "options": [
+        "The child's parents or guardians",
+        "The Licensing Authority",
+        "The driver of the vehicle",
+        "The private hire operator"
+      ],
+      "correctAnswer": 2,
+      "explanation": "You are responsible for ensuring all passengers under 14 are wearing seatbelts or using the correct child restraints.",
+      "type": "multiple_choice",
+      "id": "pbr-mc-0243"
+    },
+    {
+      "options": [
+        "No, PHV drivers are never allowed to use taxi ranks",
+        "Yes, but only between the hours of midnight and 5 AM",
+        "Yes, if there are no Hackney Carriages currently waiting there",
+        "Only if the passenger has already booked through the operator"
+      ],
+      "explanation": "A PHV driver can only pick up passengers at a designated rank or on the street if they are a licensed Hackney Carriage (Taxi) driver.",
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "question": "Are you permitted to pull onto a taxi rank to wait for a pre-booked passenger?",
+      "id": "pbr-mc-0244"
+    },
+    {
+      "question": "If you arrive early for a booking in a busy residential area, what should you do?",
+      "options": [
+        "Park on double yellow lines if you stay in the car",
+        "Wait on the pavement to see the passenger come out",
+        "Double park next to other cars to stay close to the door",
+        "Find a legal parking space nearby and wait for the dispatch signal"
+      ],
+      "explanation": "To prevent 'over-ranking' and traffic issues, you should wait in a legal parking spot away from the pick-up point until the booking time.",
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "id": "pbr-mc-0245"
+    },
+    {
+      "options": [
+        "By using a Hackney Carriage taxi meter",
+        "By the operator at the time of booking or via a set scale of charges",
+        "By the driver negotiating with the passenger at the end of the trip",
+        "By the passenger deciding what is a fair price to pay"
+      ],
+      "explanation": "Private hire journeys are not on a meter like taxis; the fare must be agreed upon or calculated by the operator system at the time of booking.",
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "question": "How is the fare for a private hire journey usually determined?",
+      "id": "pbr-mc-0246"
+    },
+    {
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "explanation": "Drivers must carry their badge at all times while working, as it allows passengers and officials to verify their identity.",
+      "options": [
+        "To show you have passed your advanced driving test",
+        "To allow you to park in restricted zones for free",
+        "To prove to passengers and officers that you are licensed and 'fit and proper'",
+        "To provide your personal contact details to the public"
+      ],
+      "question": "What is the primary purpose of the Private Hire Driver Badge?",
+      "id": "pbr-mc-0247"
+    },
+    {
+      "options": [
+        "Wait until your licence is due for renewal",
+        "Notify the Licensing Authority in writing within the required period (e.g. 7 days)",
+        "Tell your operator and let them update the council for you",
+        "Inform the DVLA only; the local council will find out automatically"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Any change of address must be reported immediately so the Licensing Authority's records and your licence are accurate.",
+      "type": "multiple_choice",
+      "question": "What must you do if you move house to a new address?",
+      "id": "pbr-mc-0248"
+    },
+    {
+      "explanation": "By law, private hire drivers are not permitted to accept 'street hails' or ply for hire. All bookings must be made through an operator.",
+      "correctAnswer": 2,
+      "question": "Which of the following describes the illegal act of 'plying for hire'?",
+      "type": "multiple_choice",
+      "options": [
+        "Waiting at a bus stop for passengers during a strike",
+        "Parking near a busy nightclub and waving at people to get in",
+        "Cruising the streets and picking up a passenger who flags you down",
+        "Charging a passenger more than the price quoted by the operator"
+      ],
+      "id": "pbr-mc-0249"
+    },
+    {
+      "question": "What is the correct procedure if you find lost property in your vehicle after a journey?",
+      "type": "multiple_choice",
+      "options": [
+        "Report and hand it in at a police station or the Licensing Authority office",
+        "Keep it at your home for 30 days to see if the passenger calls you directly",
+        "Leave it in the boot of the car until your next shift ends",
+        "Donate it to a local charity shop if it is not claimed within 12 hours"
+      ],
+      "explanation": "If a passenger leaves property behind, the driver must take it to a police station or the Licensing Authority within a specified timeframe (often 24-48 hours).",
+      "correctAnswer": 0,
+      "id": "pbr-mc-0250"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Standard Group 1 Medical Exam",
+        "NHS General Wellbeing Assessment",
+        "DVLA Group 2 Medical Standard",
+        "A basic eyesight test at a local optician"
+      ],
+      "question": "To hold a Private Hire Driver's licence, which medical standard must you usually meet?",
+      "explanation": "The DVLA Group 2 medical standard is the higher health requirement used for bus, lorry, and private hire drivers in most UK jurisdictions.",
+      "correctAnswer": 2,
+      "id": "pbr-mc-0251"
+    },
+    {
+      "question": "According to typical licensing rules, when must the external licence plates be displayed on a vehicle?",
+      "options": [
+        "Only if they are taking a passenger outside of the licensed district",
+        "At all times, even when the vehicle is being used for personal social use",
+        "Only during hours when the driver is logged onto an operator's app",
+        "Never; the plates should be removed when not working to prevent theft"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "explanation": "While you can use the car for personal errands, it remains a licensed vehicle and must always display its licence plates unless an official exemption is held.",
+      "id": "pbr-mc-0252"
+    },
+    {
+      "explanation": "You must wear your badge in a way that is clearly visible to passengers at all times when you are working as a driver.",
+      "correctAnswer": 3,
+      "question": "How should you display your driver's badge while you are working?",
+      "type": "multiple_choice",
+      "options": [
+        "Kept securely in the glove compartment or centre console",
+        "Attached to the car's sun visor so it can be flipped down if asked",
+        "Pinned to your wallet or kept in your pocket for security",
+        "Worn on your person in a position where it is clearly visible to the passenger"
+      ],
+      "id": "pbr-mc-0253"
+    },
+    {
+      "correctAnswer": 1,
+      "explanation": "If your vehicle is involved in an accident that affects the safety or appearance of the car, you must notify the Licensing Authority (usually within 72 hours).",
+      "options": [
+        "Only if there were passengers in the car at the time of the crash",
+        "As soon as possible, and usually within 72 hours of the incident",
+        "Only if the police were called to the scene of the accident",
+        "At the end of the year when you renew your annual vehicle licence"
+      ],
+      "type": "multiple_choice",
+      "question": "When must you report an accident involving your licensed vehicle to the Licensing Authority?",
+      "id": "pbr-mc-0254"
+    },
+    {
+      "question": "Under what circumstances can a Private Hire Vehicle drive in a designated bus lane?",
+      "type": "multiple_choice",
+      "options": [
+        "Only if the local road signs specifically include 'PHV' or 'Private Hire'",
+        "Always, because all licensed hire vehicles are classified as public transport",
+        "Only when you have a passenger in the vehicle who is in a hurry",
+        "Any time between the hours of 7:00 PM and 7:00 AM"
+      ],
+      "explanation": "PHVs are not allowed to use bus lanes unless specific local signage explicitly states that PHVs (not just Taxis/Hackney Carriages) are permitted.",
+      "correctAnswer": 0,
+      "id": "pbr-mc-0255"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Always ask the passenger for their phone number for future direct bookings",
+        "Play your favourite music at a high volume to create an atmosphere",
+        "Be polite and helpful, while avoiding sensitive topics like religion or politics",
+        "Tell the passenger about your personal problems to build a rapport"
+      ],
+      "question": "What is the professional way to interact with a passenger during a journey?",
+      "explanation": "Drivers should behave professionally and avoid controversial topics like religion, politics, or personal finances to prevent conflict.",
+      "correctAnswer": 2,
+      "id": "pbr-mc-0256"
+    },
+    {
+      "correctAnswer": 3,
+      "explanation": "PHVs must be pre-booked. Taxis (Hackney Carriages) are the only vehicles that can use ranks or be hailed in the street.",
+      "options": [
+        "You can pick up anyone as long as the journey is under 5 miles",
+        "You can pick up a passenger if they agree to your price first",
+        "You can pick up a passenger who hails you if you have no other bookings",
+        "You cannot pick up anyone who has not pre-booked through your operator"
+      ],
+      "type": "multiple_choice",
+      "question": "Which of the following is true regarding picking up passengers in a Private Hire Vehicle?",
+      "id": "pbr-mc-0257"
+    },
+    {
+      "correctAnswer": 1,
+      "explanation": "It is illegal to smoke or use e-cigarettes in a smoke-free vehicle, regardless of whether the driver is working or if the vehicle is being used privately.",
+      "question": "Is smoking or using e-cigarettes (vaping) allowed in a licensed Private Hire Vehicle?",
+      "options": [
+        "Only if there are no passengers in the vehicle at the time",
+        "It is never allowed, as the vehicle is a smoke-free public place by law",
+        "Only if the driver has the window fully open while smoking",
+        "Only if the vehicle's engine is turned off and it is parked on a driveway"
+      ],
+      "type": "multiple_choice",
+      "id": "pbr-mc-0258"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Suspend or revoke your licence with immediate effect",
+        "Order you to take a new driving test within 24 hours",
+        "Fine your operator £5,000 but leave your licence alone",
+        "Force you to work extra hours to pay off a penalty fee"
+      ],
+      "question": "What action can the Licensing Authority take if they believe a driver is no longer 'fit and proper'?",
+      "explanation": "The licensing authority has the power to suspend or revoke a licence if the driver is no longer considered 'fit and proper' due to conduct or safety concerns.",
+      "correctAnswer": 0,
+      "id": "pbr-mc-0259"
+    },
+    {
+      "question": "Which of these is a strictly prohibited activity for a Private Hire Driver?",
+      "options": [
+        "Using a GPS device to navigate to the passenger's destination",
+        "Carrying more than one passenger from the same booking party",
+        "Displaying a 'Taxi' sign or any roof sign on a Private Hire Vehicle",
+        "Helping a disabled passenger load their wheelchair into the vehicle"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "explanation": "Private hire drivers must not behave in a way that suggests they are a taxi (Hackney Carriage). This includes using the word 'Taxi' on the car or roof.",
+      "id": "pbr-mc-0260"
+    },
+    {
+      "correctAnswer": 2,
+      "question": "Is it legal to charge a passenger an additional fee because they use a wheelchair?",
+      "options": [
+        "Only if the wheelchair is exceptionally heavy",
+        "Only if the journey takes longer than 15 minutes",
+        "No, it is illegal to charge extra for wheelchair users",
+        "Yes, as long as the extra charge is under £5.00"
+      ],
+      "type": "multiple_choice",
+      "explanation": "The Equality Act 2010 makes it illegal to charge more for carrying a passenger in a wheelchair or for carrying an assistance dog.",
+      "id": "pbr-mc-0261"
+    },
+    {
+      "explanation": "A child under 3 may travel without a seatbelt or car seat in a PHV if the driver does not provide one and the child sits in the rear.",
+      "type": "multiple_choice",
+      "options": [
+        "In the rear seat only, without a seatbelt if no child seat is available",
+        "In the front seat with an adult seatbelt",
+        "They cannot travel unless the driver provides a baby seat",
+        "On the lap of a passenger in the front seat"
+      ],
+      "question": "How should a child under the age of 3 travel in the rear of a Private Hire Vehicle if a child seat is not provided?",
+      "correctAnswer": 0,
+      "id": "pbr-mc-0262"
+    },
+    {
+      "question": "Who must hold the booking record for every journey carried out by a Private Hire driver?",
+      "correctAnswer": 1,
+      "explanation": "A Private Hire driver cannot accept any booking directly; all journeys must be recorded and dispatched by a licensed operator.",
+      "options": [
+        "The driver themselves- via their mobile phone",
+        "A licensed Private Hire Operator",
+        "The local police station",
+        "The passenger, by writing it in the driver's logbook"
+      ],
+      "type": "multiple_choice",
+      "id": "pbr-mc-0263"
+    },
+    {
+      "options": [
+        "If the dog is not wearing a high-visibility harness",
+        "If the passenger does not have a booking confirmation",
+        "If the driver has a general fear of dogs",
+        "Only if the driver has a valid medical exemption certificate issued by the council"
+      ],
+      "type": "multiple_choice",
+      "explanation": "Guide dogs, hearing dogs, and other assistance dogs must be carried free of charge unless the driver has a medical exemption certificate.",
+      "correctAnswer": 3,
+      "question": "In which of the following scenarios is a driver legally allowed to refuse an assistance dog?",
+      "id": "pbr-mc-0264"
+    },
+    {
+      "correctAnswer": 0,
+      "question": "Which of the following documents must you provide to the Licensing Authority to prove your eligibility for a licence?",
+      "type": "multiple_choice",
+      "options": [
+        "Evidence of your right to work in the UK",
+        "Proof that you own a house in the local area",
+        "A certificate showing you have passed an advanced racing course",
+        "A letter from a local Member of Parliament"
+      ],
+      "explanation": "The 'Right to Work' is a mandatory requirement for holding a UK PHV licence to ensure all drivers are legally entitled to be employed in the UK.",
+      "id": "pbr-mc-0265"
+    },
+    {
+      "question": "What must you do if you are convicted of a motoring offence or receive a police caution?",
+      "correctAnswer": 2,
+      "options": [
+        "Only when you renew your badge every three years",
+        "Only if the conviction results in a prison sentence",
+        "You must notify the Licensing Authority in writing within a specific timeframe (usually 7 days)",
+        "You only need to tell your insurance company"
+      ],
+      "type": "multiple_choice",
+      "explanation": "Drivers must notify the licensing authority of any convictions or cautions, usually within 7 days, to remain a 'fit and proper' person.",
+      "id": "pbr-mc-0266"
+    },
+    {
+      "correctAnswer": 1,
+      "question": "Who is permitted to drive a licensed Private Hire Vehicle at any time, even for social or domestic use?",
+      "explanation": "A private hire vehicle can only be driven by a person who holds a valid private hire driver’s licence issued by the same authority.",
+      "options": [
+        "Any person with a full UK driving licence and insurance",
+        "Only a person who holds a valid Private Hire Driver's licence from that specific authority",
+        "A family member of the driver, as long as they are over 25",
+        "Anyone, provided the vehicle is not 'on hire' at the time"
+      ],
+      "type": "multiple_choice",
+      "id": "pbr-mc-0267"
+    },
+    {
+      "question": "When must a driver report damage to their licensed vehicle that affects the safety, performance, or appearance?",
+      "correctAnswer": 3,
+      "explanation": "To maintain the safety of the public and the vehicle, drivers or operators must alert the council of any damage that affects safety or appearance.",
+      "type": "multiple_choice",
+      "options": [
+        "Only if the vehicle is written off by the insurance company",
+        "Only if the police were called to the scene",
+        "Within one month of the damage occurring",
+        "As soon as possible, and usually within 72 hours of the incident"
+      ],
+      "id": "pbr-mc-0268"
+    },
+    {
+      "question": "Who technically owns the Private Hire Driver's badge provided to you by the council?",
+      "correctAnswer": 1,
+      "options": [
+        "The driver's employer or operator",
+        "The Licensing Authority that issued it",
+        "The driver's insurance company",
+        "The Driver and Vehicle Licensing Agency (DVLA)"
+      ],
+      "type": "multiple_choice",
+      "explanation": "The licence is issued to a specific person and is not transferable; it belongs to the licensing authority.",
+      "id": "pbr-mc-0269"
+    },
+    {
+      "correctAnswer": 0,
+      "question": "What is the expected professional conduct regarding a passenger's luggage?",
+      "type": "multiple_choice",
+      "options": [
+        "Offer reasonable assistance with luggage or shopping",
+        "Charge an extra £1.00 per bag loaded into the boot",
+        "Tell the passenger to load it themselves to avoid injury claims",
+        "Refuse the booking if the luggage weighs more than 10kg"
+      ],
+      "explanation": "Drivers are expected to help with luggage as part of providing a professional and accessible service to all passengers.",
+      "id": "pbr-mc-0270"
+    },
+    {
+      "question": "Where is a Private Hire driver officially allowed to wait for a pre-booked passenger?",
+      "correctAnswer": 2,
+      "options": [
+        "Double yellow lines during peak hours",
+        "In a designated 'Taxi Rank' outside a train station",
+        "A legal parking space or a designated pick-up/drop-off point",
+        "Directly on a pedestrian crossing to save the passenger walking"
+      ],
+      "type": "multiple_choice",
+      "explanation": "While PHVs cannot use taxi ranks, they may wait in places where parking/boarding is legal, provided they do not cause an obstruction.",
+      "id": "pbr-mc-0271"
+    },
+    {
+      "options": [
+        "To prove you have paid your road tax",
+        "To allow you to drive in bus lanes legally",
+        "To show you have reached the age of 21",
+        "To allow passengers to identify that you are a properly licensed driver"
+      ],
+      "type": "multiple_choice",
+      "explanation": "The ID badge must be visible so passengers can verify that the driver is licensed and authorised to carry out the journey.",
+      "question": "Why is it a requirement for a driver to wear or display their ID badge while working?",
+      "correctAnswer": 3,
+      "id": "pbr-mc-0272"
+    },
+    {
+      "correctAnswer": 2,
+      "question": "Which of the following describes the correct procedure for accepting a booking?",
+      "options": [
+        "Anywhere within the council's boundaries",
+        "Only if they are parked at a designated taxi rank",
+        "Never; all bookings must be made through a licensed operator",
+        "Only if the passenger is paying with cash"
+      ],
+      "type": "multiple_choice",
+      "explanation": "Private hire drivers are forbidden from accepting fares directly from the street; all journeys must be pre-arranged through a licensed operator.",
+      "id": "pbr-mc-0273"
+    },
+    {
+      "correctAnswer": 1,
+      "question": "By law, when must you notify the Licensing Authority if you move to a new house?",
+      "explanation": "If you change your home address, you must notify the Licensing Authority in writing within the timeframe specified in your local policy (usually 7 days).",
+      "type": "multiple_choice",
+      "options": [
+        "At the time of your next licence renewal",
+        "Within 7 days of the move",
+        "Only if you move outside the local borough",
+        "Within 30 days of the move"
+      ],
+      "id": "pbr-mc-0274"
+    },
+    {
+      "correctAnswer": 0,
+      "question": "Where should an assistance dog be placed within a Private Hire Vehicle?",
+      "explanation": "Assistance dogs must be carried in the passenger compartment of the vehicle at no extra charge to the passenger.",
+      "options": [
+        "In the passenger compartment with their owner",
+        "Only in the boot of an estate car with a guard",
+        "On the front seat next to the driver",
+        "They can only be carried if the driver provides a blanket"
+      ],
+      "type": "multiple_choice",
+      "id": "pbr-mc-0275"
+    },
+    {
+      "question": "What is the correct way to display your driver's identification badge while working?",
+      "correctAnswer": 2,
+      "explanation": "The driver must wear their badge in a way that is clearly visible to the public at all times they are working.",
+      "type": "multiple_choice",
+      "options": [
+        "Keeping it in the glove box or centre console",
+        "Attaching it to the vehicle's rear-view mirror",
+        "Wearing it on a lanyard or clipped to clothing so it is clearly seen",
+        "Placing it on the dashboard facing outwards"
+      ],
+      "id": "pbr-mc-0276"
+    },
+    {
+      "question": "Who is legally allowed to drive a licensed vehicle for personal use on a weekend?",
+      "correctAnswer": 3,
+      "explanation": "Regardless of the journey's length or purpose, a licensed vehicle always remains a licensed vehicle and the driver must always hold a current private hire licence.",
+      "type": "multiple_choice",
+      "options": [
+        "No one needs a licence for a private social trip",
+        "Any driver with a standard UK driving licence",
+        "A family member, provided they are insured",
+        "Only a driver who holds a valid Private Hire Driver's licence"
+      ],
+      "id": "pbr-mc-0277"
+    },
+    {
+      "correctAnswer": 1,
+      "question": "What should you do if you lose your Private Hire Driver's badge?",
+      "explanation": "If you lose your badge, you must report it to the Licensing Authority and pay for a replacement; you should not work without it.",
+      "type": "multiple_choice",
+      "options": [
+        "Continue working and show your paper licence if asked",
+        "Stop working and contact the Licensing Authority for a replacement badge",
+        "Use a photocopy of the badge until the original is found",
+        "Write your badge number on a piece of paper and display it on the dash"
+      ],
+      "id": "pbr-mc-0278"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "To ensure the driver is honest, trustworthy, and safe to transport the public",
+        "To ensure the driver knows the local area perfectly without a GPS",
+        "To ensure the driver can speak more than three languages",
+        "To ensure the driver owns their own vehicle outright"
+      ],
+      "explanation": "Local authorities have 'fit and proper' rules that expect drivers to behave professionally and honestly toward passengers.",
+      "question": "What is the primary purpose of the 'Fit and Proper' person test for drivers?",
+      "correctAnswer": 0,
+      "id": "pbr-mc-0279"
+    },
+    {
+      "explanation": "Most licensing conditions state that you must report any arrest, caution, or conviction, including fixed penalties, within a short period.",
+      "options": [
+        "Only if it results in a prison sentence",
+        "At the time you renew your driver's licence",
+        "Within the timeframe specified by your council (often 48 hours to 7 days)",
+        "Only if you reach 12 penalty points on your licence"
+      ],
+      "type": "multiple_choice",
+      "question": "When must you inform the Licensing Department if you are arrested for any reason?",
+      "correctAnswer": 2,
+      "id": "pbr-mc-0280"
+    },
+    {
+      "options": [
+        "The health and safety of the vehicle only",
+        "Ensuring the car is cleaned once a week",
+        "Taking the shortest possible route regardless of traffic",
+        "The safety and well-being of the passenger throughout the journey"
+      ],
+      "type": "multiple_choice",
+      "explanation": "Drivers have a duty of care to ensure all passengers, especially vulnerable ones, reach their destination safely and are assisted when needed.",
+      "question": "Under 'Duty of Care', what is a driver's main responsibility towards a passenger?",
+      "correctAnswer": 3,
+      "id": "pbr-mc-0281"
+    },
+    {
+      "question": "When is a Private Hire driver required to use the taxi meter (if fitted)?",
+      "correctAnswer": 1,
+      "explanation": "If a meter is fitted, it must be used for all journeys unless a fixed price is agreed upon at the time of booking via the operator.",
+      "options": [
+        "Only when the passenger asks for it to be turned on",
+        "If the vehicle is fitted with one, unless a fare is pre-agreed at the time of booking",
+        "Only for journeys that go outside the council boundaries",
+        "It is never required in a Private Hire Vehicle, only in Taxis"
+      ],
+      "type": "multiple_choice",
+      "id": "pbr-mc-0282"
+    },
+    {
+      "correctAnswer": 0,
+      "question": "If you feel tired while driving a passenger, what is the safest and most professional action?",
+      "explanation": "Drivers must ensure they have adequate rest to avoid fatigue; if you feel tired, you must stop in a safe place.",
+      "options": [
+        "Stop at the first safe opportunity and take a break",
+        "Drink an energy drink and continue to the next booking",
+        "Open the windows and play loud music to stay awake",
+        "Ask the passenger to keep talking to you so you stay alert"
+      ],
+      "type": "multiple_choice",
+      "id": "pbr-mc-0283"
+    },
+    {
+      "explanation": "Plying for hire (waiting for or soliciting passengers without a booking) is a criminal offence and invalidates insurance.",
+      "type": "multiple_choice",
+      "options": [
+        "Double parking on a main road",
+        "Driving faster than the speed limit to be on time",
+        "Picking up a passenger who hails you on the street without a booking",
+        "Playing the radio too loudly during a journey"
+      ],
+      "question": "Which of the following is an example of 'Illegal Plying for Hire'?",
+      "correctAnswer": 2,
+      "id": "pbr-mc-0284"
     }
   ],
   "mocks": []
