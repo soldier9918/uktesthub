@@ -10361,7 +10361,3308 @@
         }
       ],
       "id": "rds-hs-0080"
+    },
+    {
+      "explanation": "A West Cardinal mark has two cones point-to-point (waist) and indicates that the safest water lies to the West.",
+      "correctSpotId": "west_cardinal",
+      "imageAlt": "A row of four different Cardinal Marks on the water.",
+      "imageDescription": "A clear photo showing a North, East, South, and West Cardinal mark side-by-side. The West mark has yellow/black/yellow horizontal bands and its topmark cones point towards each other.",
+      "spots": [
+        {
+          "x": 0.1,
+          "w": 0.2,
+          "id": "north_cardinal",
+          "label": "North Cardinal",
+          "y": 0.3,
+          "h": 0.4
+        },
+        {
+          "id": "east_cardinal",
+          "label": "East Cardinal",
+          "w": 0.2,
+          "y": 0.3,
+          "h": 0.4,
+          "x": 0.35
+        },
+        {
+          "x": 0.6,
+          "h": 0.4,
+          "y": 0.3,
+          "id": "south_cardinal",
+          "label": "South Cardinal",
+          "w": 0.2
+        },
+        {
+          "w": 0.2,
+          "id": "west_cardinal",
+          "label": "West Cardinal",
+          "y": 0.3,
+          "h": 0.4,
+          "x": 0.85
+        }
+      ],
+      "type": "hot_spot",
+      "question": "You are approaching a submerged reef. To stay in safe water, you must remain to the West of the hazard. Click on the West Cardinal Mark.",
+      "id": "rds-hs-0081"
+    },
+    {
+      "correctSpotId": "trawl_shape_vessel",
+      "explanation": "A vessel engaged in trawling displays two cones with their apexes together (hourglass shape).",
+      "question": "While sailing in the English Channel, you see a vessel ahead. Click on the vessel that is displaying the day shape for a vessel engaged in trawling.",
+      "type": "hot_spot",
+      "spots": [
+        {
+          "y": 0.5,
+          "h": 0.3,
+          "w": 0.2,
+          "label": "Ball-Diamond-Ball Boat",
+          "id": "restricted_vessel",
+          "x": 0.1
+        },
+        {
+          "h": 0.3,
+          "y": 0.5,
+          "w": 0.2,
+          "label": "Two cones apex-to-apex Boat",
+          "id": "trawl_shape_vessel",
+          "x": 0.35
+        },
+        {
+          "x": 0.6,
+          "w": 0.2,
+          "id": "nuc_vessel_shape",
+          "label": "Two balls Boat",
+          "y": 0.5,
+          "h": 0.3
+        },
+        {
+          "x": 0.85,
+          "id": "constrained_draft_vessel",
+          "label": "Cylinder Boat",
+          "w": 0.2,
+          "h": 0.3,
+          "y": 0.5
+        }
+      ],
+      "imageDescription": "An illustration of four boats: one with a diamond, one with a ball, one with a cylinder, and one with two cones apex-to-apex.",
+      "imageAlt": "Four small vessels displaying different black day shapes.",
+      "id": "rds-hs-0082"
+    },
+    {
+      "explanation": "The Clove Hitch is used for temporary attachments to a rail or piling but can slip or jam if used for permanent mooring.",
+      "correctSpotId": "clove_hitch_point",
+      "type": "hot_spot",
+      "question": "You want to temporarily hang a fender from a horizontal rail. Click on the Clove Hitch.",
+      "imageAlt": "Three different knots tied around a horizontal wooden rail.",
+      "imageDescription": "A diagram showing a Clove Hitch, a Round Turn and Two Half Hitches, and a Bowline tied around a rail.",
+      "spots": [
+        {
+          "w": 0.3,
+          "label": "Clove Hitch",
+          "id": "clove_hitch_point",
+          "y": 0.3,
+          "h": 0.4,
+          "x": 0.15
+        },
+        {
+          "x": 0.5,
+          "h": 0.4,
+          "y": 0.3,
+          "w": 0.3,
+          "label": "Round Turn and Two Half Hitches",
+          "id": "rt_tw_hitches_point"
+        },
+        {
+          "y": 0.3,
+          "h": 0.4,
+          "id": "bowline_point_on_rail",
+          "label": "Bowline",
+          "w": 0.3,
+          "x": 0.85
+        }
+      ],
+      "id": "rds-hs-0083"
+    },
+    {
+      "explanation": "A 'Fix' is a position derived from two or more external observations (like bearings) and is traditionally marked with a circle around a dot.",
+      "correctSpotId": "fix_symbol",
+      "imageAlt": "A section of a coastal chart with three different position symbols.",
+      "imageDescription": "A nautical chart showing a cross (Dead Reckoning), a triangle (EP), and a circle with a dot in the centre (Fix).",
+      "spots": [
+        {
+          "x": 0.2,
+          "id": "dr_symbol_cross",
+          "label": "Dead Reckoning Cross",
+          "w": 0.2,
+          "h": 0.2,
+          "y": 0.4
+        },
+        {
+          "x": 0.5,
+          "w": 0.2,
+          "label": "Fix Circle and Dot",
+          "id": "fix_symbol",
+          "y": 0.4,
+          "h": 0.2
+        },
+        {
+          "w": 0.2,
+          "id": "ep_symbol_triangle",
+          "label": "Estimated Position Triangle",
+          "y": 0.4,
+          "h": 0.2,
+          "x": 0.8
+        }
+      ],
+      "type": "hot_spot",
+      "question": "You have just taken three visual bearings with your hand-bearing compass and plotted them on the chart. Click on the symbol used to represent this 'Fix'.",
+      "id": "rds-hs-0084"
+    },
+    {
+      "type": "hot_spot",
+      "explanation": "A vessel under power between 7m and 20m must show a masthead light, sidelights, and a sternlight. The green sidelight is visible on the starboard side.",
+      "question": "You are navigating at night and see a power-driven vessel crossing from your port side to your starboard side. Click on the light sector that represents the boat's Starboard Sidelight.",
+      "correctSpotId": "spot_stbd_running",
+      "imageAlt": "A diagram of a power-driven vessel showing light sectors.",
+      "spots": [
+        {
+          "y": 0.4,
+          "w": 0.15,
+          "h": 0.15,
+          "x": 0.3,
+          "label": "Port Sidelight (Red)",
+          "id": "spot_port_running"
+        },
+        {
+          "label": "Starboard Sidelight (Green)",
+          "id": "spot_stbd_running",
+          "h": 0.15,
+          "w": 0.15,
+          "x": 0.7,
+          "y": 0.4
+        },
+        {
+          "y": 0.2,
+          "w": 0.2,
+          "h": 0.15,
+          "x": 0.5,
+          "label": "Masthead Light",
+          "id": "spot_masthead"
+        },
+        {
+          "w": 0.2,
+          "h": 0.15,
+          "x": 0.5,
+          "y": 0.8,
+          "label": "Sternlight",
+          "id": "spot_sternlight"
+        }
+      ],
+      "imageDescription": "A plan view of a motorboat showing white masthead and stern light sectors, a red port sector, and a green starboard sector.",
+      "id": "rds-hs-0085"
+    },
+    {
+      "question": "You are moored alongside in a tidal current. Click on the Forward Spring.",
+      "imageDescription": "A bird's-eye view of a yacht alongside a pontoon showing bow line, stern line, forward spring, and aft spring.",
+      "spots": [
+        {
+          "y": 0.2,
+          "x": 0.2,
+          "h": 0.1,
+          "w": 0.2,
+          "id": "spot_bow_line",
+          "label": "Bow Line"
+        },
+        {
+          "id": "spot_fwd_spring",
+          "label": "Forward Spring",
+          "y": 0.35,
+          "x": 0.4,
+          "h": 0.1,
+          "w": 0.2
+        },
+        {
+          "label": "Aft Spring",
+          "id": "spot_aft_spring",
+          "y": 0.35,
+          "h": 0.1,
+          "w": 0.2,
+          "x": 0.6
+        },
+        {
+          "id": "spot_stern_line",
+          "label": "Stern Line",
+          "x": 0.8,
+          "h": 0.1,
+          "w": 0.2,
+          "y": 0.2
+        }
+      ],
+      "imageAlt": "A boat moored alongside a pontoon with several mooring lines.",
+      "correctSpotId": "spot_fwd_spring",
+      "explanation": "The forward spring runs from the bow of the boat aft to the pontoon, preventing the vessel from moving forward.",
+      "type": "hot_spot",
+      "id": "rds-hs-0086"
+    },
+    {
+      "type": "hot_spot",
+      "explanation": "A South Cardinal mark has two cones pointing downwards and a yellow over black colour scheme. It indicates safe water is to the South.",
+      "correctSpotId": "spot_south_cardinal",
+      "imageAlt": "Four different cardinal marks in a row.",
+      "imageDescription": "An illustration of North, East, South, and West cardinal marks showing their specific cone topmarks and yellow/black hull patterns.",
+      "spots": [
+        {
+          "label": "North Cardinal",
+          "id": "spot_north_cardinal",
+          "w": 0.15,
+          "h": 0.3,
+          "x": 0.1,
+          "y": 0.5
+        },
+        {
+          "h": 0.3,
+          "w": 0.15,
+          "x": 0.35,
+          "y": 0.5,
+          "label": "East Cardinal",
+          "id": "spot_east_cardinal"
+        },
+        {
+          "id": "spot_south_cardinal",
+          "label": "South Cardinal",
+          "x": 0.6,
+          "h": 0.3,
+          "w": 0.15,
+          "y": 0.5
+        },
+        {
+          "y": 0.5,
+          "x": 0.85,
+          "w": 0.15,
+          "h": 0.3,
+          "id": "spot_west_cardinal",
+          "label": "West Cardinal"
+        }
+      ],
+      "question": "You are navigating near a hazard and your chart indicates you must stay to the South of the mark. Click on the South Cardinal Mark.",
+      "id": "rds-hs-0087"
+    },
+    {
+      "explanation": "A 'running fix' uses a transferred position line, which is traditionally marked with two arrows at each end of the line.",
+      "type": "hot_spot",
+      "question": "You have performed a 'Running Fix' by taking a bearing of a lighthouse, sailing for an hour, and taking a second bearing. Click on the symbol used to denote the Transferred Position Line.",
+      "imageDescription": "A section of a chart showing a single DR position, a standard position line with one arrow, and a transferred position line with two arrows.",
+      "spots": [
+        {
+          "id": "spot_standard_pl",
+          "label": "Single Position Line",
+          "y": 0.5,
+          "x": 0.25,
+          "w": 0.2,
+          "h": 0.1
+        },
+        {
+          "h": 0.1,
+          "w": 0.2,
+          "x": 0.75,
+          "y": 0.5,
+          "label": "Transferred Position Line",
+          "id": "spot_transferred_pos"
+        }
+      ],
+      "imageAlt": "A nautical chart showing various navigation symbols and plotted lines.",
+      "correctSpotId": "spot_transferred_pos",
+      "id": "rds-hs-0088"
+    },
+    {
+      "question": "You are finishing your mooring process. Click on the knot correctly used to secure a rope to a deck cleat.",
+      "type": "hot_spot",
+      "spots": [
+        {
+          "w": 0.4,
+          "x": 0.1,
+          "y": 0.1,
+          "id": "eight",
+          "label": "Figure-of-eight knot",
+          "h": 0.4
+        },
+        {
+          "w": 0.4,
+          "x": 0.5,
+          "h": 0.4,
+          "y": 0.1,
+          "label": "Reef knot",
+          "id": "reef"
+        },
+        {
+          "id": "cleat_hitch",
+          "label": "Cleat hitch",
+          "y": 0.5,
+          "h": 0.4,
+          "x": 0.1,
+          "w": 0.4
+        },
+        {
+          "x": 0.5,
+          "w": 0.4,
+          "label": "Clove hitch",
+          "id": "clove_hitch_alt",
+          "y": 0.5,
+          "h": 0.4
+        }
+      ],
+      "imageDescription": "A collage showing four distinct knots: a figure-of-eight, a reef knot, a clove hitch, and a cleat hitch.",
+      "imageAlt": "Four different knots used in boating.",
+      "correctSpotId": "cleat_hitch",
+      "explanation": "The Cleat Hitch is the standard and most secure way to fasten a line to a deck cleat.",
+      "id": "rds-hs-0089"
+    },
+    {
+      "spots": [
+        {
+          "label": "North Cardinal Mark",
+          "id": "north_cardinal",
+          "y": 0.1,
+          "h": 0.4,
+          "x": 0.4,
+          "w": 0.2
+        },
+        {
+          "y": 0.4,
+          "id": "east_cardinal",
+          "label": "East Cardinal Mark",
+          "h": 0.4,
+          "w": 0.2,
+          "x": 0.75
+        },
+        {
+          "x": 0.4,
+          "w": 0.2,
+          "h": 0.4,
+          "label": "South Cardinal Mark",
+          "id": "south_cardinal",
+          "y": 0.7
+        },
+        {
+          "x": 0.05,
+          "w": 0.2,
+          "h": 0.4,
+          "label": "West Cardinal Mark",
+          "id": "west_cardinal",
+          "y": 0.4
+        }
+      ],
+      "type": "hot_spot",
+      "question": "You are approaching a hazard and need to pass it on the Northern side. Click on the correct Cardinal Mark you should look for.",
+      "imageAlt": "Four different cardinal marks used in maritime buoyage.",
+      "imageDescription": "A diagram showing the four cardinal marks: North, East, South, and West, each with their distinct black/yellow bands and cone topmarks.",
+      "explanation": "A North Cardinal mark has two cones pointing upwards and indicates that the safest water lies to the North of the mark.",
+      "correctSpotId": "north_cardinal",
+      "id": "rds-hs-0090"
+    },
+    {
+      "question": "You are sailing at night and see multiple lights. Click on the light configuration that indicates a vessel engaged in trawling.",
+      "spots": [
+        {
+          "h": 0.2,
+          "y": 0.1,
+          "label": "Red over White lights",
+          "id": "fishing_non_trawl",
+          "w": 0.3,
+          "x": 0.1
+        },
+        {
+          "w": 0.3,
+          "x": 0.6,
+          "y": 0.1,
+          "id": "trawler",
+          "label": "Green over White lights",
+          "h": 0.2
+        },
+        {
+          "x": 0.1,
+          "w": 0.3,
+          "h": 0.2,
+          "label": "Red over Red lights",
+          "id": "nuc_lights",
+          "y": 0.6
+        },
+        {
+          "w": 0.3,
+          "x": 0.6,
+          "y": 0.6,
+          "id": "pilot_lights",
+          "label": "White over Red lights",
+          "h": 0.2
+        }
+      ],
+      "type": "hot_spot",
+      "correctSpotId": "trawler",
+      "explanation": "A vessel engaged in trawling shows a green light over a white light. Memory aid: 'Green over white, trawling by night'.",
+      "imageDescription": "Four vertical boxes. A: Red over White (Fishing), B: Green over White (Trawling), C: Red over Red (NUC), D: White over Red (Pilot).",
+      "imageAlt": "Four different sets of navigation lights shown by vessels at night.",
+      "id": "rds-hs-0091"
+    },
+    {
+      "imageDescription": "A split screen showing a red cylindrical buoy on the left and a green conical buoy on the right.",
+      "imageAlt": "Port and Starboard lateral marks used in UK waters.",
+      "correctSpotId": "conical_buoy_top",
+      "explanation": "In IALA Region A (UK), the Port Hand mark is red/cylindrical and the Starboard Hand mark is green/conical. Click the cone shape.",
+      "question": "You are following a buoyed channel into a UK marina. Click on the 'Topmark' shape that identifies the Starboard side of the channel.",
+      "type": "hot_spot",
+      "spots": [
+        {
+          "h": 0.4,
+          "y": 0.3,
+          "id": "cylindrical_buoy_top",
+          "label": "Cylindrical (Can) Topmark",
+          "w": 0.4,
+          "x": 0.05
+        },
+        {
+          "x": 0.55,
+          "w": 0.4,
+          "label": "Conical (Cone) Topmark",
+          "id": "conical_buoy_top",
+          "y": 0.3,
+          "h": 0.4
+        }
+      ],
+      "id": "rds-hs-0092"
+    },
+    {
+      "question": "You are returning to a UK port from the sea. Click on the shape that represents the Port Hand lateral mark.",
+      "spots": [
+        {
+          "h": 0.3,
+          "w": 0.2,
+          "x": 0.15,
+          "label": "Red Cylinder (Can)",
+          "y": 0.25,
+          "id": "port_mark"
+        },
+        {
+          "y": 0.25,
+          "id": "stbd_mark",
+          "x": 0.45,
+          "w": 0.2,
+          "h": 0.3,
+          "label": "Green Cone (Conical)"
+        },
+        {
+          "w": 0.2,
+          "h": 0.3,
+          "x": 0.75,
+          "label": "Red/White Sphere",
+          "y": 0.25,
+          "id": "safe_water"
+        }
+      ],
+      "explanation": "In IALA Region A (UK), the Port Hand lateral mark is a red can - remember: 'is there any red port left in the can?'",
+      "imageDescription": "A collection of buoy shapes including a red cylinder (can), a green cone, a yellow pillar, and a black sphere.",
+      "imageAlt": "A container of various buoy topmarks and shapes.",
+      "correctSpotId": "port_mark",
+      "type": "hot_spot",
+      "id": "rds-hs-0093"
+    },
+    {
+      "imageAlt": "Diagram of a yacht moored alongside a pontoon with four distinct lines labeled A, B, C, and D.",
+      "imageDescription": "A yacht alongside a pontoon. Line A runs from the bow forward, Line B is a forward spring, Line C is an aft spring, and Line D is a stern line.",
+      "explanation": "The bow line prevents the vessel from moving backwards (astern) and keeps the bow close to the pontoon.",
+      "spots": [
+        {
+          "label": "Line A (Forward from bow)",
+          "w": 0.25,
+          "h": 0.2,
+          "x": 0.1,
+          "id": "bow_line",
+          "y": 0.4
+        },
+        {
+          "y": 0.45,
+          "id": "fwd_spring",
+          "h": 0.2,
+          "w": 0.25,
+          "x": 0.35,
+          "label": "Line B (Aft from bow)"
+        },
+        {
+          "id": "aft_spring",
+          "y": 0.45,
+          "label": "Line C (Forward from stern)",
+          "w": 0.25,
+          "h": 0.2,
+          "x": 0.65
+        }
+      ],
+      "question": "You are moored alongside a pontoon. Click on the mooring line that is specifically used as a 'Bow Line' to prevent the vessel moving astern.",
+      "type": "hot_spot",
+      "correctSpotId": "bow_line",
+      "id": "rds-hs-0094"
+    },
+    {
+      "correctSpotId": "bowline_knot",
+      "type": "hot_spot",
+      "explanation": "A bowline forms a fixed, non-slipping loop at the end of a rope, which is essential for safety and utility on a boat.",
+      "imageDescription": "Four knots: a figure-of-eight, a bowline, a reef knot, and a rolling hitch. Each is clearly tied in a white rope.",
+      "imageAlt": "Four different nautical knots shown side-by-side.",
+      "question": "You need to create a secure loop at the end of a line that will not slip under load. Click on the Bowline.",
+      "spots": [
+        {
+          "x": 0.1,
+          "h": 0.4,
+          "w": 0.2,
+          "label": "Figure of Eight",
+          "y": 0.3,
+          "id": "fig_8"
+        },
+        {
+          "label": "Bowline",
+          "w": 0.2,
+          "h": 0.4,
+          "x": 0.4,
+          "id": "bowline_knot",
+          "y": 0.3
+        },
+        {
+          "y": 0.3,
+          "id": "reef_knot",
+          "x": 0.7,
+          "w": 0.2,
+          "h": 0.4,
+          "label": "Reef Knot"
+        }
+      ],
+      "id": "rds-hs-0095"
+    },
+    {
+      "type": "hot_spot",
+      "correctSpotId": "vessel_b",
+      "imageAlt": "Bird's-eye view of two powerboats on a crossing course. Boat A is coming from the west, Boat B is coming from the south. Boats are at 90 degrees.",
+      "imageDescription": "Two power-driven vessels, A and B, approaching on a collision course. Vessel A sees Vessel B on its Port side. Vessel B sees Vessel A on its Starboard side.",
+      "explanation": "Under ColRegs Rule 15, when two power-driven vessels are crossing, the vessel which has the other on her starboard side must keep out of the way.",
+      "spots": [
+        {
+          "x": 0.2,
+          "w": 0.3,
+          "h": 0.3,
+          "label": "Vessel A (Stand-on)",
+          "y": 0.5,
+          "id": "vessel_a"
+        },
+        {
+          "y": 0.5,
+          "id": "vessel_b",
+          "w": 0.3,
+          "h": 0.3,
+          "x": 0.6,
+          "label": "Vessel B (Give-way)"
+        }
+      ],
+      "question": "Two power-driven vessels are on a collision course. Click on the 'Give-way' vessel according to the crossing rule.",
+      "id": "rds-hs-0096"
+    },
+    {
+      "spots": [
+        {
+          "w": 0.3,
+          "y": 0.3,
+          "id": "port_marker",
+          "h": 0.4,
+          "x": 0.1,
+          "label": "Red Cylindrical Buoy"
+        },
+        {
+          "w": 0.3,
+          "y": 0.3,
+          "id": "stbd_marker",
+          "label": "Green Conical Buoy",
+          "x": 0.6,
+          "h": 0.4
+        }
+      ],
+      "imageDescription": "The image shows a green conical buoy and a red cylindrical (can) buoy positioned as if marking a channel entrance.",
+      "type": "hot_spot",
+      "question": "You are entering a UK harbour from the sea. Click on the shape that represents the Starboard Hand Lateral Mark.",
+      "correctSpotId": "stbd_marker",
+      "imageAlt": "Two buoy shapes side by side on a white background.",
+      "explanation": "When entering a harbour in IALA Region A (UK), the starboard side of the channel is marked by green conical buoys.",
+      "id": "rds-hs-0097"
+    },
+    {
+      "imageAlt": "Two yachts sailing on the same tack, one positioned upwind of the other.",
+      "explanation": "Under ColRegs Rule 12, when two sailing vessels have the wind on the same side, the vessel to windward (Vessel B) shall keep out of the way of the vessel to leeward.",
+      "correctSpotId": "vessel_b",
+      "spots": [
+        {
+          "w": 0.35,
+          "x": 0.5,
+          "label": "Vessel A (Leeward)",
+          "h": 0.4,
+          "id": "vessel_a",
+          "y": 0.5
+        },
+        {
+          "id": "vessel_b",
+          "y": 0.2,
+          "h": 0.4,
+          "x": 0.2,
+          "label": "Vessel B (Windward)",
+          "w": 0.35
+        }
+      ],
+      "imageDescription": "Side-on view of two sailing yachts on a Starboard tack. Vessel A is downwind (leeward) and Vessel B is upwind (windward).",
+      "type": "hot_spot",
+      "question": "Two sailing vessels are on the same tack. According to ColRegs Rule 12, click on the vessel that is required to 'Give-way'.",
+      "id": "rds-hs-0098"
+    },
+    {
+      "spots": [
+        {
+          "w": 0.3,
+          "y": 0.45,
+          "id": "fwd_spring_line",
+          "h": 0.15,
+          "x": 0.3,
+          "label": "Forward Spring"
+        },
+        {
+          "id": "stern_spring_line",
+          "y": 0.55,
+          "label": "Stern Spring",
+          "x": 0.5,
+          "h": 0.15,
+          "w": 0.3
+        },
+        {
+          "x": 0.1,
+          "label": "Bow Line",
+          "h": 0.2,
+          "y": 0.35,
+          "id": "bow_line",
+          "w": 0.2
+        },
+        {
+          "w": 0.2,
+          "label": "Stern Line",
+          "x": 0.8,
+          "h": 0.2,
+          "y": 0.6,
+          "id": "stern_line_pos"
+        }
+      ],
+      "imageDescription": "A diagram of a boat alongside a pontoon. Lines shown: Bow line, Forward Spring, Stern Spring, and Stern Line.",
+      "type": "hot_spot",
+      "question": "You are moored alongside in a strong wind from astern. Click on the line that prevents the boat from moving forward along the pontoon.",
+      "correctSpotId": "stern_spring",
+      "imageAlt": "A boat moored alongside a pontoon with four primary lines shown.",
+      "explanation": "The stern spring runs from the stern of the boat forward to the pontoon to prevent the vessel from moving forward.",
+      "id": "rds-hs-0099"
+    },
+    {
+      "question": "You are looking for a landfall buoy at the start of a channel where there is deep water in all directions. Click on the Safe Water Mark.",
+      "spots": [
+        {
+          "w": 0.2,
+          "h": 0.5,
+          "x": 0.05,
+          "label": "Lateral Mark",
+          "id": "lat_mark_1",
+          "y": 0.25
+        },
+        {
+          "w": 0.2,
+          "h": 0.5,
+          "label": "Safe Water Mark",
+          "x": 0.3,
+          "id": "safe_water_mark_1",
+          "y": 0.25
+        },
+        {
+          "label": "Isolated Danger Mark",
+          "x": 0.55,
+          "h": 0.5,
+          "y": 0.25,
+          "id": "iso_danger_mark_1",
+          "w": 0.2
+        },
+        {
+          "w": 0.2,
+          "id": "spec_mark_1",
+          "y": 0.25,
+          "x": 0.8,
+          "label": "Special Mark",
+          "h": 0.5
+        }
+      ],
+      "type": "hot_spot",
+      "imageDescription": "A row of four buoys. From left to right: Red/Green Lateral, a Pillar buoy with vertical red and white stripes, a Black/Red Isolated Danger mark, and a yellow Special Mark.",
+      "explanation": "The Safe Water Mark (vertical red/white stripes with a red sphere topmark) indicates that there is navigable water all around the mark.",
+      "imageAlt": "Four different types of buoy: a port mark, a starboard mark, a safe water mark, and an isolated danger mark.",
+      "correctSpotId": "safe_water_mark",
+      "id": "rds-hs-0100"
+    },
+    {
+      "question": "You are navigating in open water and see a buoy indicating a small hazard (like a rock) that has navigable water all around it. Click on the Isolated Danger Mark.",
+      "type": "hot_spot",
+      "spots": [
+        {
+          "label": "Emergency Wreck Mark",
+          "y": 0.2,
+          "id": "emergency_wreck_mark",
+          "x": 0.1,
+          "w": 0.15,
+          "h": 0.2
+        },
+        {
+          "h": 0.2,
+          "w": 0.15,
+          "x": 0.35,
+          "id": "isolated_danger_mark",
+          "y": 0.2,
+          "label": "Isolated Danger Mark"
+        },
+        {
+          "label": "Preferred Channel Mark (Starboard)",
+          "x": 0.6,
+          "id": "preferred_channel_mark",
+          "y": 0.2,
+          "h": 0.2,
+          "w": 0.15
+        },
+        {
+          "h": 0.2,
+          "w": 0.15,
+          "x": 0.85,
+          "y": 0.2,
+          "id": "safe_water_mark",
+          "label": "Safe Water Mark"
+        }
+      ],
+      "explanation": "An Isolated Danger Mark is placed over a hazard surrounded by navigable water and is identified by two black spheres as a topmark.",
+      "imageDescription": "An illustration of various maritime buoy types used in IALA Region A.",
+      "imageAlt": "A selection of four sea marks including an Isolated Danger, an Emergency Wreck Mark, a Preferred Channel Mark, and a Safe Water Mark.",
+      "correctSpotId": "isolated_danger_mark",
+      "id": "rds-hs-0101"
+    },
+    {
+      "spots": [
+        {
+          "id": "power_driven_vessel_head_on",
+          "y": 0.3,
+          "x": 0.1,
+          "w": 0.2,
+          "h": 0.25,
+          "label": "Power-driven vessel head-on"
+        },
+        {
+          "x": 0.35,
+          "y": 0.3,
+          "id": "sailing_vessel_starboard_side",
+          "h": 0.25,
+          "w": 0.2,
+          "label": "Sailing vessel from starboard side"
+        },
+        {
+          "label": "Vessel at anchor (single white light)",
+          "y": 0.3,
+          "id": "vessel_at_anchor",
+          "x": 0.6,
+          "w": 0.2,
+          "h": 0.25
+        },
+        {
+          "label": "Trawler fishing (Green over White)",
+          "y": 0.3,
+          "id": "trawler_fishing",
+          "x": 0.85,
+          "w": 0.2,
+          "h": 0.25
+        }
+      ],
+      "type": "hot_spot",
+      "question": "You are entering a busy bay at night and scanning for hazards. Click on the vessel that is currently at anchor.",
+      "correctSpotId": "vessel_at_anchor",
+      "imageAlt": "Four digital night-time views of different ship light configurations.",
+      "imageDescription": "Four panels showing the navigation lights of various vessels at night against a dark background.",
+      "explanation": "Under ColRegs Rule 30, a vessel at anchor must show one all-round white light where it can best be seen (for vessels under 50m).",
+      "id": "rds-hs-0102"
+    },
+    {
+      "spots": [
+        {
+          "h": 0.25,
+          "w": 0.18,
+          "x": 0.1,
+          "id": "clove_hitch_spot_2",
+          "y": 0.4,
+          "label": "Clove Hitch on a ring"
+        },
+        {
+          "x": 0.35,
+          "id": "round_turn_two_half_hitches_spot",
+          "y": 0.4,
+          "h": 0.25,
+          "w": 0.18,
+          "label": "Round Turn and Two Half Hitches"
+        },
+        {
+          "label": "Figure of Eight knot",
+          "y": 0.4,
+          "id": "figure_of_eight_spot_2",
+          "x": 0.6,
+          "w": 0.18,
+          "h": 0.25
+        },
+        {
+          "id": "sheet_bend_spot_2",
+          "y": 0.4,
+          "x": 0.85,
+          "w": 0.18,
+          "h": 0.25,
+          "label": "Sheet Bend"
+        }
+      ],
+      "question": "You intend to leave your boat moored to a harbour ring for several days. Click on the knot that is most secure and least likely to jam under heavy load.",
+      "type": "hot_spot",
+      "imageAlt": "Four different knots tied to a metal ring: a Round Turn and Two Half Hitches, a Clove Hitch, a Figure of Eight, and a Sheet Bend.",
+      "correctSpotId": "round_turn_two_half_hitches_spot",
+      "imageDescription": "A diagram showing four common marine knots tied around metal mooring rings.",
+      "explanation": "The Round Turn and Two Half Hitches is the preferred knot for securing a boat to a ring or post because it is easy to undo even after being under heavy load.",
+      "id": "rds-hs-0103"
+    },
+    {
+      "imageAlt": "A chart fragment showing a Dead Reckoning (DR) cross, an Estimated Position (EP) triangle, and a Fix (circle/cross-intersection).",
+      "correctSpotId": "estimated_position_symbol",
+      "imageDescription": "A small section of a nautical chart with three different navigational plot symbols.",
+      "explanation": "An Estimated Position (EP) is marked on a chart using a triangle with a dot in the centre, often with a line showing the direction of the water track.",
+      "spots": [
+        {
+          "label": "DR position (Vertical cross)",
+          "h": 0.2,
+          "w": 0.18,
+          "x": 0.15,
+          "y": 0.5,
+          "id": "dead_reckoning_symbol_1"
+        },
+        {
+          "label": "EP position (Triangle with dot)",
+          "w": 0.18,
+          "h": 0.2,
+          "id": "estimated_position_symbol_1",
+          "y": 0.5,
+          "x": 0.45
+        },
+        {
+          "label": "Fix (Circle or crossing lines)",
+          "x": 0.75,
+          "id": "fix_symbol_1",
+          "y": 0.5,
+          "h": 0.2,
+          "w": 0.18
+        }
+      ],
+      "question": "You have calculated your position by applying the effects of tide and leeway to your Dead Reckoning (DR) track. Click on the symbol used to plot this 'Estimated Position'.",
+      "type": "hot_spot",
+      "id": "rds-hs-0104"
+    },
+    {
+      "question": "You have finished mooring your vessel. Click on the image showing the rope correctly secured with a Cleat Hitch.",
+      "imageAlt": "Four diagrams of a deck cleat with different knots applied to them.",
+      "type": "hot_spot",
+      "correctSpotId": "cleat_hitch",
+      "explanation": "The Cleat Hitch is the correct way to secure a line to a cleat, involving a full turn around the base followed by a figure-eight pattern.",
+      "spots": [
+        {
+          "label": "Simple Knot",
+          "h": 0.4,
+          "id": "wrong_knot_1",
+          "w": 0.4,
+          "y": 0.1,
+          "x": 0.1
+        },
+        {
+          "label": "Round Turn and Half Hitches",
+          "id": "wrong_knot_2",
+          "h": 0.4,
+          "w": 0.4,
+          "y": 0.1,
+          "x": 0.55
+        },
+        {
+          "label": "Correct Cleat Hitch",
+          "h": 0.4,
+          "id": "cleat_hitch",
+          "w": 0.4,
+          "y": 0.55,
+          "x": 0.1
+        },
+        {
+          "w": 0.4,
+          "h": 0.4,
+          "id": "wrong_knot_3",
+          "label": "Tangled Line",
+          "x": 0.55,
+          "y": 0.55
+        }
+      ],
+      "imageDescription": "A series of four diagrams showing a rope being attached to a deck cleat. One shows a simple knot, one shows a round turn and two half hitches, one shows a classic figure-eight cleat hitch, and one shows a messy tangle.",
+      "id": "rds-hs-0105"
+    },
+    {
+      "imageDescription": "A diagram of a sailing yacht moored port-side-to a pontoon. Lines are shown connecting the boat to cleats on the dock: a bow line, a forward spring, a stern spring, and a stern line.",
+      "spots": [
+        {
+          "y": 0.4,
+          "x": 0.7,
+          "label": "Bow Line",
+          "w": 0.2,
+          "id": "bow_line",
+          "h": 0.15
+        },
+        {
+          "w": 0.2,
+          "id": "fwd_spring",
+          "h": 0.15,
+          "label": "Forward Spring",
+          "x": 0.6,
+          "y": 0.5
+        },
+        {
+          "y": 0.5,
+          "x": 0.3,
+          "label": "Stern Spring",
+          "id": "stern_spring",
+          "h": 0.15,
+          "w": 0.2
+        },
+        {
+          "label": "Stern Line",
+          "w": 0.2,
+          "h": 0.15,
+          "id": "stern_line",
+          "y": 0.4,
+          "x": 0.1
+        }
+      ],
+      "question": "You are moored in a strong current pushing you from ahead. Click on the 'Stern Spring' line (the line that prevents the boat from moving backwards).",
+      "imageAlt": "Layout of a boat moored alongside a pontoon with four primary mooring lines labeled.",
+      "explanation": "The Stern Spring runs from the stern of the boat forward to the pontoon, preventing the vessel from moving aft while moored.",
+      "type": "hot_spot",
+      "correctSpotId": "stern_spring",
+      "id": "rds-hs-0106"
+    },
+    {
+      "imageDescription": "Illustration of four different yellow and black cardinal buoys. One has two cones pointing up, one has two cones pointing down, one has cones point-to-point, and one has cones base-to-base.",
+      "spots": [
+        {
+          "x": 0.1,
+          "y": 0.2,
+          "w": 0.2,
+          "h": 0.4,
+          "id": "north_cardinal",
+          "label": "North Cardinal"
+        },
+        {
+          "label": "South Cardinal",
+          "id": "south_cardinal",
+          "h": 0.4,
+          "w": 0.2,
+          "y": 0.2,
+          "x": 0.35
+        },
+        {
+          "y": 0.2,
+          "x": 0.6,
+          "label": "West Cardinal",
+          "w": 0.2,
+          "id": "west_cardinal",
+          "h": 0.4
+        },
+        {
+          "w": 0.2,
+          "id": "east_cardinal",
+          "h": 0.4,
+          "label": "East Cardinal",
+          "x": 0.85,
+          "y": 0.2
+        }
+      ],
+      "explanation": "A West Cardinal mark has two black cones pointing towards each other (point-to-point) and indicates the safest water is to the West of the mark.",
+      "correctSpotId": "west_cardinal",
+      "type": "hot_spot",
+      "imageAlt": "Four different cardinal buoys showing different cone configurations (Topmarks).",
+      "question": "You are approaching a reef and your chart shows West Cardinal Mark. Click on the buoy that demonstrates the correct 'Topmark' for a West Cardinal.",
+      "id": "rds-hs-0107"
+    },
+    {
+      "question": "You see a vessel ahead that appears to be drifting and unable to maneuver due to an exceptional circumstance. Click on the light configuration for a vessel 'Not Under Command'.",
+      "imageAlt": "Four sets of navigation lights as seen from a distance at night.",
+      "explanation": "A vessel Not Under Command (NUC) is identified at night by two all-round red lights in a vertical line.",
+      "type": "hot_spot",
+      "correctSpotId": "vessel_not_under_command_night",
+      "imageDescription": "Night view of four different vessels. One shows Red over Green lights, one shows White over Red, one shows two vertical Red lights, and one shows three vertical Red lights.",
+      "spots": [
+        {
+          "x": 0.1,
+          "y": 0.3,
+          "w": 0.2,
+          "id": "sailing_vessel_lights",
+          "h": 0.4,
+          "label": "Sailing Vessel (Red/Green)"
+        },
+        {
+          "x": 0.35,
+          "y": 0.3,
+          "id": "pilot_vessel_lights",
+          "h": 0.4,
+          "w": 0.2,
+          "label": "Pilot Vessel (White/Red)"
+        },
+        {
+          "x": 0.6,
+          "y": 0.3,
+          "id": "vessel_not_under_command_night",
+          "h": 0.4,
+          "w": 0.2,
+          "label": "Not Under Command (Red/Red)"
+        },
+        {
+          "label": "Constrained by Draught (Red/Red/Red)",
+          "w": 0.2,
+          "id": "constrained_by_draught_night",
+          "h": 0.4,
+          "y": 0.3,
+          "x": 0.85
+        }
+      ],
+      "id": "rds-hs-0108"
+    },
+    {
+      "imageDescription": "A plan view of a sailing yacht moored alongside a pontoon. There are four distinct mooring lines shown as bold lines.",
+      "explanation": "The aft spring runs from the stern of the boat forward to the pontoon, preventing the vessel from moving backwards along the berth.",
+      "imageAlt": "A diagram of a yacht moored alongside a pontoon with four lines labeled: Bow Line, Forward Spring, Aft Spring, and Stern Line.",
+      "spots": [
+        {
+          "y": 0.2,
+          "id": "bow_line",
+          "w": 0.2,
+          "x": 0.7,
+          "h": 0.1,
+          "label": "Bow Line"
+        },
+        {
+          "label": "Forward Spring",
+          "h": 0.1,
+          "x": 0.5,
+          "w": 0.2,
+          "id": "fwd_spring",
+          "y": 0.3
+        },
+        {
+          "y": 0.7,
+          "id": "aft_spring",
+          "x": 0.4,
+          "w": 0.2,
+          "h": 0.1,
+          "label": "Aft Spring"
+        },
+        {
+          "label": "Stern Line",
+          "h": 0.1,
+          "x": 0.1,
+          "w": 0.2,
+          "id": "stern_line",
+          "y": 0.8
+        }
+      ],
+      "question": "The wind is blowing strongly from the bow, pushing the boat backwards. Click on the mooring line that primarily prevents the boat from moving astern.",
+      "type": "hot_spot",
+      "correctSpotId": "aft_spring",
+      "id": "rds-hs-0109"
+    },
+    {
+      "type": "hot_spot",
+      "correctSpotId": "south_cardinal",
+      "imageDescription": "An illustration showing four cardinal marks. One has two cones pointing up, one has cones pointing down, one has cones point-to-point, and one has cones base-to-base.",
+      "explanation": "A South Cardinal mark has two cones pointing downwards and a yellow band above a black band on the hull.",
+      "imageAlt": "Four yellow and black cardinal marks arranged in a row.",
+      "spots": [
+        {
+          "y": 0.3,
+          "id": "north_cardinal",
+          "w": 0.2,
+          "x": 0.1,
+          "h": 0.3,
+          "label": "North Cardinal"
+        },
+        {
+          "y": 0.3,
+          "id": "south_cardinal",
+          "x": 0.35,
+          "w": 0.2,
+          "h": 0.3,
+          "label": "South Cardinal"
+        },
+        {
+          "label": "East Cardinal",
+          "h": 0.3,
+          "w": 0.2,
+          "x": 0.6,
+          "id": "east_cardinal",
+          "y": 0.3
+        },
+        {
+          "label": "West Cardinal",
+          "x": 0.85,
+          "w": 0.2,
+          "h": 0.3,
+          "id": "west_cardinal",
+          "y": 0.3
+        }
+      ],
+      "question": "You are approaching a sandbank and need to stay to the South of the hazard. Click on the South Cardinal mark.",
+      "id": "rds-hs-0110"
+    },
+    {
+      "type": "hot_spot",
+      "correctSpotId": "sailing_vessel_port",
+      "spots": [
+        {
+          "id": "sailing_vessel_starboard",
+          "y": 0.4,
+          "label": "Yacht A (Starboard Tack)",
+          "x": 0.2,
+          "w": 0.3,
+          "h": 0.4
+        },
+        {
+          "label": "Yacht B (Port Tack)",
+          "w": 0.3,
+          "x": 0.6,
+          "h": 0.4,
+          "id": "sailing_vessel_port",
+          "y": 0.4
+        }
+      ],
+      "question": "Two sailing vessels are on a collision course with the wind coming from different sides. Click on the vessel that must give way.",
+      "imageDescription": "A diagram showing two sailing yachts approaching each other. Yacht A is on a starboard tack (wind from the right). Yacht B is on a port tack (wind from the left).",
+      "explanation": "Under ColRegs Rule 12, when two sailing vessels have the wind on different sides, the vessel with the wind on the port side must give way.",
+      "imageAlt": "Two yachts on a collision course. Yacht A has the wind on its starboard side. Yacht B has the wind on its port side.",
+      "id": "rds-hs-0111"
+    },
+    {
+      "imageDescription": "Four illustrations of different knots and hitches commonly used in maritime environments, each tied around a vertical timber post.",
+      "explanation": "A clove hitch is a quick and effective way to temporarily secure a line to a vertical post or rail.",
+      "imageAlt": "Four different knots tied to a wooden piling: a bowline, a clove hitch, a round turn and two half hitches, and a figure eight.",
+      "spots": [
+        {
+          "y": 0.4,
+          "id": "bowline_post",
+          "h": 0.2,
+          "w": 0.2,
+          "x": 0.1,
+          "label": "Bowline"
+        },
+        {
+          "label": "Clove Hitch",
+          "x": 0.35,
+          "w": 0.2,
+          "h": 0.2,
+          "id": "clove_hitch_round_post",
+          "y": 0.4
+        },
+        {
+          "id": "round_turn_hitches",
+          "y": 0.4,
+          "label": "Round Turn and Two Half Hitches",
+          "x": 0.6,
+          "w": 0.2,
+          "h": 0.2
+        },
+        {
+          "id": "figure_eight_knot",
+          "y": 0.4,
+          "label": "Figure of Eight",
+          "w": 0.2,
+          "x": 0.85,
+          "h": 0.2
+        }
+      ],
+      "question": "You want to quickly tie a temporary line to a vertical timber post on a pier. Click on the Clove Hitch.",
+      "type": "hot_spot",
+      "correctSpotId": "clove_hitch_round_post",
+      "id": "rds-hs-0112"
+    },
+    {
+      "question": "You are navigating a power-driven vessel and see another power-driven vessel approaching head-on. According to ColRegs, click on the vessel that must alter its course to starboard.",
+      "imageDescription": "A top-down diagram showing two power-driven vessels (A and B) on a direct collision course, meeting head-on. Vessel A is at the bottom moving up, Vessel B is at the top moving down.",
+      "spots": [
+        {
+          "w": 0.1,
+          "h": 0.15,
+          "label": "Vessel A",
+          "x": 0.45,
+          "y": 0.75,
+          "id": "marker_port_vessel"
+        },
+        {
+          "y": 0.2,
+          "id": "marker_stbd_vessel",
+          "x": 0.45,
+          "label": "Vessel B",
+          "h": 0.15,
+          "w": 0.1
+        }
+      ],
+      "imageAlt": "Two motorboats approaching each other directly head-on in a channel.",
+      "explanation": "Under ColRegs Rule 14, when two power-driven vessels meet on head-on courses, both must alter course to starboard, meaning each passes on the port side of the other.",
+      "type": "hot_spot",
+      "correctSpotId": "marker_port_vessel",
+      "id": "rds-hs-0113"
+    },
+    {
+      "type": "hot_spot",
+      "correctSpotId": "sheet_bend",
+      "explanation": "The Sheet Bend is the standard knot used for joining two ropes together, especially if they are of unequal thickness.",
+      "spots": [
+        {
+          "h": 0.2,
+          "w": 0.2,
+          "y": 0.1,
+          "id": "fig_8",
+          "label": "Figure of Eight",
+          "x": 0.1
+        },
+        {
+          "w": 0.2,
+          "h": 0.2,
+          "x": 0.6,
+          "label": "Clove Hitch",
+          "id": "clove_hitch_v2",
+          "y": 0.1
+        },
+        {
+          "h": 0.2,
+          "w": 0.2,
+          "id": "round_turn",
+          "y": 0.6,
+          "label": "Round Turn & Two Half Hitches",
+          "x": 0.1
+        },
+        {
+          "id": "sheet_bend",
+          "y": 0.6,
+          "x": 0.6,
+          "label": "Sheet Bend",
+          "h": 0.2,
+          "w": 0.2
+        }
+      ],
+      "imageAlt": "Four different knots commonly used in sailing.",
+      "imageDescription": "An image showing four knots: a Figure of Eight, a Clove Hitch, a Round Turn and Two Half Hitches, and a Sheet Bend.",
+      "question": "You need to join two ropes of different diameters together securely. Click on the knot most suitable for this purpose.",
+      "id": "rds-hs-0114"
+    },
+    {
+      "type": "hot_spot",
+      "correctSpotId": "east_cardinal",
+      "explanation": "An East Cardinal mark has two cones pointing away from each other (base to base) and a black-yellow-black colour sequence.",
+      "spots": [
+        {
+          "y": 0.1,
+          "id": "north_cardinal_aux",
+          "label": "North Cardinal",
+          "x": 0.05,
+          "h": 0.4,
+          "w": 0.2
+        },
+        {
+          "label": "South Cardinal",
+          "x": 0.3,
+          "y": 0.1,
+          "id": "south_cardinal_aux",
+          "w": 0.2,
+          "h": 0.4
+        },
+        {
+          "h": 0.4,
+          "w": 0.2,
+          "id": "east_cardinal_aux",
+          "y": 0.1,
+          "label": "East Cardinal",
+          "x": 0.55
+        },
+        {
+          "y": 0.1,
+          "id": "west_cardinal_aux",
+          "label": "West Cardinal",
+          "x": 0.8,
+          "h": 0.4,
+          "w": 0.2
+        }
+      ],
+      "imageAlt": "A set of four cardinal marks used in maritime navigation.",
+      "imageDescription": "The image shows four cardinal buoys with different top-marks and yellow/black colour bands.",
+      "question": "You are navigating near a hazard and need to pass to the East of it. Click on the East Cardinal Mark.",
+      "id": "rds-hs-0115"
+    },
+    {
+      "correctSpotId": "epirb_unit",
+      "type": "hot_spot",
+      "explanation": "An EPIRB (Emergency Position Indicating Radio Beacon) is used to alert search and rescue services via satellite in the event of an emergency.",
+      "imageAlt": "A collection of safety equipment found on a small yacht.",
+      "spots": [
+        {
+          "w": 0.2,
+          "h": 0.3,
+          "label": "Lifebuoy",
+          "x": 0.1,
+          "y": 0.1,
+          "id": "lifebuoy_item"
+        },
+        {
+          "w": 0.2,
+          "h": 0.3,
+          "x": 0.4,
+          "label": "Fire Extinguisher",
+          "y": 0.1,
+          "id": "fire_ext_item"
+        },
+        {
+          "w": 0.2,
+          "h": 0.3,
+          "x": 0.1,
+          "label": "Handheld Flare",
+          "y": 0.5,
+          "id": "flare_item"
+        },
+        {
+          "w": 0.2,
+          "h": 0.3,
+          "label": "EPIRB",
+          "x": 0.4,
+          "id": "epirb_unit",
+          "y": 0.5
+        }
+      ],
+      "imageDescription": "The image displays a lifebuoy, a fire extinguisher, a handheld flare, and an EPIRB unit.",
+      "question": "In a distress situation where you must abandon ship, you need to activate your satellite-based emergency beacon. Click on the EPIRB.",
+      "id": "rds-hs-0116"
+    },
+    {
+      "type": "hot_spot",
+      "correctSpotId": "port_hand_buoy",
+      "question": "You are entering a UK harbour from the sea. Click on the Port Hand Lateral Mark.",
+      "spots": [
+        {
+          "x": 0.1,
+          "w": 0.2,
+          "h": 0.3,
+          "label": "Red Can Buoy",
+          "y": 0.3,
+          "id": "port_hand_buoy"
+        },
+        {
+          "y": 0.3,
+          "id": "star_hand_buoy",
+          "h": 0.3,
+          "w": 0.2,
+          "x": 0.35,
+          "label": "Green Cone Buoy"
+        },
+        {
+          "h": 0.3,
+          "x": 0.6,
+          "w": 0.2,
+          "label": "Red Cone Buoy",
+          "y": 0.3,
+          "id": "wrong_port_shape"
+        },
+        {
+          "y": 0.3,
+          "id": "wrong_star_shape",
+          "w": 0.2,
+          "x": 0.85,
+          "h": 0.3,
+          "label": "Green Can Buoy"
+        }
+      ],
+      "imageAlt": "Four different lateral marks found in IALA Region A.",
+      "explanation": "When entering a harbour in the UK (IALA Region A), the Port Hand mark is red and has a cylindrical (can) topmark.",
+      "imageDescription": "An illustration of four buoys: a red can, a green cone, a red cone, and a green can.",
+      "id": "rds-hs-0117"
+    },
+    {
+      "correctSpotId": "bowline",
+      "type": "hot_spot",
+      "imageAlt": "Four different common nautical knots.",
+      "imageDescription": "An illustration showing a Bowline, a Figure of Eight, a Clove Hitch, and a Round Turn and Two Half Hitches.",
+      "explanation": "The Bowline is the standard knot used to form a secure, non-slipping loop at the end of a rope, ideal for securing to a bollard or ring.",
+      "spots": [
+        {
+          "id": "bowline",
+          "y": 0.2,
+          "label": "Bowline",
+          "h": 0.25,
+          "w": 0.25,
+          "x": 0.1
+        },
+        {
+          "h": 0.25,
+          "x": 0.5,
+          "w": 0.25,
+          "label": "Figure of Eight",
+          "y": 0.2,
+          "id": "fig_8"
+        },
+        {
+          "h": 0.25,
+          "w": 0.25,
+          "x": 0.1,
+          "label": "Clove Hitch",
+          "y": 0.6,
+          "id": "clove_hitch_alt"
+        },
+        {
+          "y": 0.6,
+          "id": "rt_2hh",
+          "h": 0.25,
+          "w": 0.25,
+          "x": 0.5,
+          "label": "Round Turn and Two Half Hitches"
+        }
+      ],
+      "question": "You need to put a fixed, non-slipping loop in a line to secure it over a harbour bollard. Click on the Bowline knot.",
+      "id": "rds-hs-0118"
+    },
+    {
+      "spots": [
+        {
+          "h": 0.2,
+          "x": 0.1,
+          "w": 0.3,
+          "label": "Not Under Command (Red over Red)",
+          "y": 0.15,
+          "id": "nuc_vessel"
+        },
+        {
+          "id": "vessel_towing",
+          "y": 0.15,
+          "label": "Towing (White over White)",
+          "h": 0.2,
+          "x": 0.6,
+          "w": 0.3
+        },
+        {
+          "y": 0.6,
+          "id": "anchor_light_alt",
+          "w": 0.3,
+          "x": 0.1,
+          "h": 0.2,
+          "label": "At Anchor (Single White)"
+        },
+        {
+          "label": "Sailing Vessel (Red over Green)",
+          "w": 0.3,
+          "x": 0.6,
+          "h": 0.2,
+          "id": "sailing_vessel_lights",
+          "y": 0.6
+        }
+      ],
+      "question": "You are at sea at night and see the lights of another vessel. Click on the image representing a power-driven vessel engaged in towing (length of tow under 200m) seen from the side.",
+      "imageDescription": "Four vessel light profiles: one with three vertical red lights, one with two vertical white masthead lights and side lights, one with a single white light, and one with a red over green light.",
+      "explanation": "Rule 24 states that a power-driven vessel towing (with a tow length under 200m) must show two masthead lights in a vertical line.",
+      "imageAlt": "Night-time light configurations for four different vessels seen from the side.",
+      "correctSpotId": "vessel_towing",
+      "type": "hot_spot",
+      "id": "rds-hs-0119"
+    },
+    {
+      "correctSpotId": "north_cardinal",
+      "type": "hot_spot",
+      "imageAlt": "The four cardinal marks: North, South, East, and West.",
+      "imageDescription": "Four yellow and black buoys with different topmarks: two cones up, two cones down, two cones points-outward, and two cones points-together.",
+      "explanation": "A North Cardinal mark is identified by its topmark of two cones both pointing upwards (North).",
+      "spots": [
+        {
+          "id": "north_cardinal",
+          "y": 0.3,
+          "label": "Two cones pointing up",
+          "h": 0.4,
+          "x": 0.05,
+          "w": 0.2
+        },
+        {
+          "h": 0.4,
+          "w": 0.2,
+          "x": 0.3,
+          "label": "Two cones pointing down",
+          "y": 0.3,
+          "id": "south_cardinal_alt"
+        },
+        {
+          "x": 0.55,
+          "w": 0.2,
+          "h": 0.4,
+          "label": "Two cones pointing away from each other",
+          "y": 0.3,
+          "id": "east_cardinal_alt"
+        },
+        {
+          "h": 0.4,
+          "w": 0.2,
+          "x": 0.8,
+          "label": "Two cones pointing towards each other",
+          "y": 0.3,
+          "id": "west_cardinal_alt"
+        }
+      ],
+      "question": "You are navigating near a dangerous wreck and need to pass to the North of it. Click on the North Cardinal Mark.",
+      "id": "rds-hs-0120"
+    },
+    {
+      "question": "You are approaching a vessel engaged in underwater operations. Click on the day shape that indicates a vessel 'Restricted in her Ability to Manoeuvre'.",
+      "imageDescription": "Four vessel silhouettes. Vessel A shows one ball. Vessel B shows two balls. Vessel C shows two cones with apexes pointing together. Vessel D shows a cylinder.",
+      "type": "hot_spot",
+      "correctSpotId": "triangles_down",
+      "spots": [
+        {
+          "id": "one_ball_anchor",
+          "y": 0.3,
+          "label": "One Ball",
+          "x": 0.1,
+          "h": 0.2,
+          "w": 0.2
+        },
+        {
+          "label": "Two Balls",
+          "x": 0.35,
+          "id": "two_balls_nuc",
+          "y": 0.3,
+          "w": 0.2,
+          "h": 0.2
+        },
+        {
+          "x": 0.6,
+          "label": "Two Cones Apex Together",
+          "id": "triangles_down",
+          "y": 0.3,
+          "w": 0.2,
+          "h": 0.2
+        },
+        {
+          "x": 0.85,
+          "label": "Cylinder",
+          "y": 0.3,
+          "id": "cylinder_constrained",
+          "w": 0.2,
+          "h": 0.2
+        }
+      ],
+      "explanation": "The V-shaped day shape (two cones, apexes pointing together) indicates a vessel restricted in her ability to manoeuvre. Men at work or diving operations often use this signal.",
+      "imageAlt": "Four silhouettes of vessels with various black day shapes on their masts.",
+      "id": "rds-hs-0121"
+    },
+    {
+      "type": "hot_spot",
+      "correctSpotId": "ep_position",
+      "explanation": "The Estimated Position (EP) is represented by a triangle around the fix, with the track line showing the water track plus the tide (indicated by 3 arrows).",
+      "imageAlt": "A navigation chart diagram showing three different position symbols along a course line.",
+      "spots": [
+        {
+          "h": 0.2,
+          "w": 0.2,
+          "y": 0.5,
+          "id": "fix_position",
+          "label": "Circle with Dot",
+          "x": 0.2
+        },
+        {
+          "w": 0.2,
+          "h": 0.2,
+          "x": 0.5,
+          "label": "Plain Cross",
+          "id": "dr_position",
+          "y": 0.5
+        },
+        {
+          "h": 0.2,
+          "w": 0.2,
+          "id": "ep_position",
+          "y": 0.5,
+          "x": 0.8,
+          "label": "Triangle with Dot"
+        }
+      ],
+      "question": "You have plotted your course and accounted for both leeway and the SET of the tide. Click on the symbol that represents an 'Estimated Position' (EP).",
+      "imageDescription": "A diagram showing a series of position marks: a dot with a circle (Fix), a plain cross (DR), and a dot inside a triangle. The line leading to the triangle has a three-arrow vector indicating tidal stream.",
+      "id": "rds-hs-0122"
+    },
+    {
+      "imageAlt": "Four black day shapes: a ball, a cone apex down, a diamond, and two balls.",
+      "explanation": "When a yacht is under sail but also using its engine, it is considered a power-driven vessel and must display a conical shape, apex downwards.",
+      "spots": [
+        {
+          "w": 0.2,
+          "h": 0.25,
+          "x": 0.12,
+          "label": "Anchor Ball",
+          "id": "black_ball",
+          "y": 0.4
+        },
+        {
+          "w": 0.2,
+          "h": 0.25,
+          "x": 0.38,
+          "label": "Motor-Sailing Cone",
+          "y": 0.4,
+          "id": "green_cone"
+        },
+        {
+          "h": 0.25,
+          "w": 0.2,
+          "id": "black_diamond",
+          "y": 0.4,
+          "label": "Towing Diamond",
+          "x": 0.63
+        },
+        {
+          "id": "two_balls_nuc_shape",
+          "y": 0.4,
+          "label": "NUC Balls",
+          "x": 0.88,
+          "h": 0.25,
+          "w": 0.2
+        }
+      ],
+      "type": "hot_spot",
+      "correctSpotId": "green_cone",
+      "question": "You are motor-sailing (using both sails and engine) during the day. Click on the day shape you are required to display to other vessels.",
+      "imageDescription": "A selection of marine day shapes commonly used on yachts: A) Ball, B) Cone (Apex down), C) Diamond, D) Two Balls in a vertical line.",
+      "id": "rds-hs-0123"
+    },
+    {
+      "correctSpotId": "bow_spring",
+      "type": "hot_spot",
+      "spots": [
+        {
+          "id": "bow_line",
+          "y": 0.2,
+          "label": "Line 1 (Bow Line)",
+          "x": 0.2,
+          "h": 0.15,
+          "w": 0.2
+        },
+        {
+          "id": "bow_spring",
+          "y": 0.35,
+          "label": "Line 2 (Bow Spring)",
+          "x": 0.45,
+          "h": 0.15,
+          "w": 0.2
+        },
+        {
+          "h": 0.15,
+          "w": 0.2,
+          "id": "stern_spring_line",
+          "y": 0.55,
+          "x": 0.55,
+          "label": "Line 3 (Stern Spring)"
+        },
+        {
+          "y": 0.7,
+          "id": "stern_line",
+          "x": 0.8,
+          "label": "Line 4 (Stern Line)",
+          "h": 0.15,
+          "w": 0.2
+        }
+      ],
+      "imageAlt": "A top-down view of a boat moored alongside a pontoon with four main numbered mooring lines.",
+      "explanation": "The bow spring runs from the bow of the vessel to a point further aft on the pontoon, preventing the boat from moving forward.",
+      "question": "You are moored alongside in a marina with a strong wind blowing from astern. Click on the 'Bow Spring' (the line that stops the boat moving forward).",
+      "imageDescription": "A boat moored alongside a dock. Line 1 is the Bow Line (forward). Line 2 runs from the bow to the mid-cleat on the dock (Bow Spring). Line 3 runs from the stern to the mid-cleat (Stern Spring). Line 4 is the Stern Line (aft).",
+      "id": "rds-hs-0124"
+    },
+    {
+      "type": "hot_spot",
+      "imageDescription": "A diagram showing four rows of light sequences. Row A shows a short flash, Row B shows a long light with short dark periods (occulting), Row C shows equal parts light and dark (isophase), and Row D shows a group of two flashes.",
+      "explanation": "An Isophase light has equal periods of light and darkness, as shown by the perfectly balanced 2s on/2s off pattern.",
+      "question": "You are identifying a light on your chart labelled 'Iso W 4s'. Click on the timing diagram that represents an Isophase light.",
+      "imageAlt": "Graphic showing four different light timing diagrams (flash, occulting, isophase, and group flash).",
+      "spots": [
+        {
+          "h": 0.2,
+          "w": 0.8,
+          "x": 0.1,
+          "label": "Flashing Light",
+          "y": 0.1,
+          "id": "flash_light"
+        },
+        {
+          "y": 0.3,
+          "label": "Occulting Light",
+          "x": 0.1,
+          "w": 0.8,
+          "id": "occ_light",
+          "h": 0.2
+        },
+        {
+          "y": 0.5,
+          "label": "Isophase Light",
+          "x": 0.1,
+          "w": 0.8,
+          "id": "iso_light",
+          "h": 0.2
+        },
+        {
+          "h": 0.2,
+          "x": 0.1,
+          "w": 0.8,
+          "y": 0.7,
+          "label": "Group Flashing Light",
+          "id": "gp_fl_light"
+        }
+      ],
+      "correctSpotId": "iso_light",
+      "id": "rds-hs-0125"
+    },
+    {
+      "explanation": "A Safe Water Mark, characterised by vertical red and white stripes and a single red sphere topmark, indicates there is navigable water all around the buoy.",
+      "imageDescription": "An image showing four different buoys. 1: Port Lateral (Red), 2: Special Mark (Yellow/X), 3: Safe Water Mark (Red/White stripes, spherical topmark), 4: Isolated Danger (Black/Red/Black).",
+      "type": "hot_spot",
+      "spots": [
+        {
+          "h": 0.4,
+          "x": 0.05,
+          "w": 0.2,
+          "y": 0.3,
+          "label": "Port Lateral Mark",
+          "id": "port_mark_1"
+        },
+        {
+          "x": 0.3,
+          "w": 0.2,
+          "y": 0.3,
+          "label": "Special Mark",
+          "id": "special_mark_2",
+          "h": 0.4
+        },
+        {
+          "id": "safe_water_mark_3",
+          "w": 0.2,
+          "x": 0.55,
+          "label": "Safe Water Mark",
+          "y": 0.3,
+          "h": 0.4
+        },
+        {
+          "h": 0.4,
+          "y": 0.3,
+          "label": "Isolated Danger Mark",
+          "x": 0.8,
+          "w": 0.2,
+          "id": "isolated_danger_4"
+        }
+      ],
+      "imageAlt": "A selection of four buoyage marks: a Starboard Hand Mark, a North Cardinal, a Special Mark, and a Safe Water Mark.",
+      "question": "You are navigating towards a channel and wish to find the 'Fairway' or 'Landfall' buoy where the water is safe in all directions. Click on the Safe Water Mark.",
+      "correctSpotId": "safe_water_mark",
+      "id": "rds-hs-0126"
+    },
+    {
+      "correctSpotId": "starboard_vessel",
+      "spots": [
+        {
+          "w": 0.4,
+          "x": 0.1,
+          "label": "Windward Vessel (Give-way)",
+          "y": 0.2,
+          "id": "windward_vessel",
+          "h": 0.4
+        },
+        {
+          "h": 0.4,
+          "id": "leeward_vessel_stand_on",
+          "label": "Leeward Vessel (Stand-on)",
+          "y": 0.4,
+          "w": 0.4,
+          "x": 0.5
+        }
+      ],
+      "question": "Two sailing vessels are on the same tack (Starboard Tack) on a collision course. Click on the vessel that is the 'Stand-on vessel' (the vessel that should maintain course and speed).",
+      "imageAlt": "Top-down view of two sailing vessels on Starboard Tack; vessel A is upwind of vessel B.",
+      "imageDescription": "A diagram showing two yachts navigating on a Starboard Tack. Yacht A is closer to the wind (windward) and Yacht B is further from the wind (leeward). Both are on a converging course.",
+      "explanation": "According to IRPCS Rule 12, when two sailing vessels have the wind on the same side, the vessel to windward must keep out of the way of the vessel to leeward.",
+      "type": "hot_spot",
+      "id": "rds-hs-0127"
+    },
+    {
+      "type": "hot_spot",
+      "explanation": "A transit (or range) is formed when two fixed objects on the chart are observed to be perfectly in line, providing a very accurate position line.",
+      "imageDescription": "A nautical chart extract showing three different lines of position. Line A is a single bearing from a lighthouse. Line B is a straight line drawn through a church spire and a beacon. Line C is a distance arc from a GPS waypoint.",
+      "correctSpotId": "transit_line_B",
+      "imageAlt": "Chart snippet showing a boat observing a church tower and a lighthouse in a straight line.",
+      "question": "You are navigating visually into a narrow harbour entrance. Click on the line that represents a 'Transit' or 'Leading Line'.",
+      "spots": [
+        {
+          "label": "Single Bearing Line",
+          "y": 0.15,
+          "w": 0.7,
+          "x": 0.1,
+          "id": "bearing_line_A",
+          "h": 0.2
+        },
+        {
+          "id": "transit_line_B_correct",
+          "label": "Transit Line through two objects",
+          "y": 0.45,
+          "w": 0.7,
+          "x": 0.1,
+          "h": 0.2
+        },
+        {
+          "h": 0.2,
+          "id": "arc_line_C_dist",
+          "w": 0.7,
+          "x": 0.1,
+          "label": "Distance Arc",
+          "y": 0.75
+        }
+      ],
+      "id": "rds-hs-0128"
+    },
+    {
+      "spots": [
+        {
+          "x": 0.4,
+          "id": "north-cardinal",
+          "w": 0.2,
+          "label": "North Cardinal Mark",
+          "y": 0.1,
+          "h": 0.3
+        },
+        {
+          "x": 0.4,
+          "id": "south-cardinal",
+          "w": 0.2,
+          "label": "South Cardinal Mark",
+          "y": 0.7,
+          "h": 0.3
+        },
+        {
+          "x": 0.75,
+          "label": "East Cardinal Mark",
+          "id": "east-cardinal",
+          "w": 0.2,
+          "h": 0.3,
+          "y": 0.4
+        },
+        {
+          "id": "west-cardinal",
+          "w": 0.2,
+          "label": "West Cardinal Mark",
+          "y": 0.4,
+          "h": 0.3,
+          "x": 0.05
+        }
+      ],
+      "imageDescription": "Four cardinal marks (North, South, East, and West) arranged around a central symbol representing a rock or hazard. The North mark has two upward cones, the South two downward, the East two base-to-base, and the West two point-to-point.",
+      "imageAlt": "An array of four cardinal marks surrounding a central hazard symbol.",
+      "question": "You are approaching a rocky outcrop and need to pass to the West of the danger. Click on the West Cardinal Mark.",
+      "type": "hot_spot",
+      "correctSpotId": "west-cardinal",
+      "explanation": "A West Cardinal mark indicates safe water to the West of the hazard and is identified by two cones point-to-point.",
+      "id": "rds-hs-0129"
+    },
+    {
+      "explanation": "In RYA navigation, a line with two arrows indicates the Course to Steer (CTS) after correcting for tide and leeway.",
+      "correctSpotId": "cts-arrow",
+      "imageAlt": "A navigation chart segment showing a course plot with various arrow symbols.",
+      "imageDescription": "A nautical plot showing three different lines: one with a single arrow (Water Track), one with three arrows (Tidal Diamond/Vector), and one with two arrows pointing in the direction of travel.",
+      "spots": [
+        {
+          "x": 0.1,
+          "id": "water-track",
+          "w": 0.3,
+          "label": "Water Track (1 arrow)",
+          "y": 0.2,
+          "h": 0.1
+        },
+        {
+          "id": "cts-arrow",
+          "w": 0.3,
+          "label": "Course to Steer (2 arrows)",
+          "y": 0.5,
+          "h": 0.1,
+          "x": 0.1
+        },
+        {
+          "label": "Tidal Stream (3 arrows)",
+          "id": "tide-vector",
+          "w": 0.3,
+          "h": 0.1,
+          "y": 0.8,
+          "x": 0.5
+        }
+      ],
+      "type": "hot_spot",
+      "question": "You have completed your secondary port calculation and plotted your Course to Steer (CTS) to account for tidal stream. Click on the line symbol specifically representing the CTS.",
+      "id": "rds-hs-0130"
     }
   ],
-  "mocks": []
+  "mocks": [
+    {
+      "mockNumber": 1,
+      "title": "RYA Day Skipper Theory Test 1",
+      "questionIds": [
+        "rds-mc-0269",
+        "rds-im-0144",
+        "rds-mc-0125",
+        "rds-hs-0114",
+        "rds-hs-0051",
+        "rds-im-0008",
+        "rds-hs-0105",
+        "rds-mc-0096",
+        "rds-im-0141",
+        "rds-im-0098",
+        "rds-im-0024",
+        "rds-mc-0235",
+        "rds-hs-0076",
+        "rds-mc-0210",
+        "rds-mc-0086",
+        "rds-mc-0090",
+        "rds-im-0059",
+        "rds-hs-0055",
+        "rds-mc-0285",
+        "rds-im-0154",
+        "rds-im-0111",
+        "rds-mc-0025",
+        "rds-mc-0020",
+        "rds-mc-0160"
+      ]
+    },
+    {
+      "mockNumber": 2,
+      "title": "RYA Day Skipper Theory Test 2",
+      "questionIds": [
+        "rds-im-0185",
+        "rds-mc-0039",
+        "rds-im-0142",
+        "rds-hs-0047",
+        "rds-im-0037",
+        "rds-mc-0194",
+        "rds-hs-0013",
+        "rds-mc-0002",
+        "rds-mc-0105",
+        "rds-mc-0275",
+        "rds-hs-0018",
+        "rds-im-0058",
+        "rds-hs-0024",
+        "rds-mc-0152",
+        "rds-hs-0113",
+        "rds-mc-0270",
+        "rds-mc-0083",
+        "rds-mc-0228",
+        "rds-im-0167",
+        "rds-mc-0216",
+        "rds-mc-0211",
+        "rds-im-0182",
+        "rds-im-0094",
+        "rds-im-0161"
+      ]
+    },
+    {
+      "mockNumber": 3,
+      "title": "RYA Day Skipper Theory Test 3",
+      "questionIds": [
+        "rds-hs-0020",
+        "rds-mc-0179",
+        "rds-mc-0079",
+        "rds-im-0042",
+        "rds-mc-0038",
+        "rds-hs-0014",
+        "rds-im-0115",
+        "rds-im-0029",
+        "rds-hs-0074",
+        "rds-im-0084",
+        "rds-im-0112",
+        "rds-mc-0274",
+        "rds-mc-0006",
+        "rds-im-0197",
+        "rds-mc-0101",
+        "rds-hs-0002",
+        "rds-mc-0263",
+        "rds-mc-0062",
+        "rds-mc-0208",
+        "rds-mc-0147",
+        "rds-hs-0005",
+        "rds-im-0210",
+        "rds-im-0186",
+        "rds-mc-0266"
+      ]
+    },
+    {
+      "mockNumber": 4,
+      "title": "RYA Day Skipper Theory Test 4",
+      "questionIds": [
+        "rds-im-0080",
+        "rds-mc-0087",
+        "rds-mc-0271",
+        "rds-im-0133",
+        "rds-mc-0116",
+        "rds-hs-0089",
+        "rds-im-0050",
+        "rds-hs-0112",
+        "rds-mc-0074",
+        "rds-im-0009",
+        "rds-mc-0007",
+        "rds-mc-0133",
+        "rds-hs-0088",
+        "rds-im-0215",
+        "rds-mc-0218",
+        "rds-hs-0003",
+        "rds-mc-0066",
+        "rds-im-0158",
+        "rds-mc-0256",
+        "rds-hs-0063",
+        "rds-im-0039",
+        "rds-mc-0238",
+        "rds-im-0086",
+        "rds-mc-0183"
+      ]
+    },
+    {
+      "mockNumber": 5,
+      "title": "RYA Day Skipper Theory Test 5",
+      "questionIds": [
+        "rds-mc-0134",
+        "rds-hs-0041",
+        "rds-im-0101",
+        "rds-mc-0139",
+        "rds-mc-0106",
+        "rds-mc-0192",
+        "rds-hs-0120",
+        "rds-hs-0069",
+        "rds-mc-0027",
+        "rds-im-0181",
+        "rds-hs-0129",
+        "rds-hs-0035",
+        "rds-mc-0243",
+        "rds-mc-0035",
+        "rds-mc-0261",
+        "rds-im-0120",
+        "rds-mc-0239",
+        "rds-mc-0277",
+        "rds-im-0156",
+        "rds-im-0038",
+        "rds-im-0022",
+        "rds-im-0126",
+        "rds-mc-0049",
+        "rds-im-0105"
+      ]
+    },
+    {
+      "mockNumber": 6,
+      "title": "RYA Day Skipper Theory Test 6",
+      "questionIds": [
+        "rds-im-0221",
+        "rds-mc-0206",
+        "rds-im-0200",
+        "rds-im-0060",
+        "rds-mc-0264",
+        "rds-hs-0044",
+        "rds-hs-0122",
+        "rds-mc-0005",
+        "rds-mc-0089",
+        "rds-mc-0056",
+        "rds-mc-0043",
+        "rds-hs-0068",
+        "rds-im-0096",
+        "rds-im-0211",
+        "rds-mc-0236",
+        "rds-im-0044",
+        "rds-mc-0092",
+        "rds-im-0066",
+        "rds-mc-0231",
+        "rds-hs-0103",
+        "rds-hs-0062",
+        "rds-mc-0033",
+        "rds-mc-0224",
+        "rds-im-0172"
+      ]
+    },
+    {
+      "mockNumber": 7,
+      "title": "RYA Day Skipper Theory Test 7",
+      "questionIds": [
+        "rds-hs-0065",
+        "rds-mc-0291",
+        "rds-im-0119",
+        "rds-mc-0178",
+        "rds-hs-0093",
+        "rds-im-0025",
+        "rds-mc-0114",
+        "rds-hs-0083",
+        "rds-mc-0122",
+        "rds-mc-0265",
+        "rds-mc-0207",
+        "rds-hs-0126",
+        "rds-mc-0145",
+        "rds-hs-0117",
+        "rds-im-0087",
+        "rds-im-0219",
+        "rds-mc-0010",
+        "rds-im-0045",
+        "rds-im-0051",
+        "rds-mc-0252",
+        "rds-mc-0140",
+        "rds-im-0205",
+        "rds-im-0165",
+        "rds-mc-0121"
+      ]
+    },
+    {
+      "mockNumber": 8,
+      "title": "RYA Day Skipper Theory Test 8",
+      "questionIds": [
+        "rds-im-0093",
+        "rds-mc-0155",
+        "rds-mc-0244",
+        "rds-mc-0282",
+        "rds-hs-0033",
+        "rds-im-0204",
+        "rds-im-0121",
+        "rds-mc-0162",
+        "rds-hs-0021",
+        "rds-mc-0052",
+        "rds-im-0122",
+        "rds-mc-0293",
+        "rds-hs-0046",
+        "rds-im-0135",
+        "rds-mc-0199",
+        "rds-im-0052",
+        "rds-mc-0067",
+        "rds-mc-0182",
+        "rds-hs-0070",
+        "rds-mc-0226",
+        "rds-hs-0099",
+        "rds-im-0148",
+        "rds-mc-0124",
+        "rds-im-0085"
+      ]
+    },
+    {
+      "mockNumber": 9,
+      "title": "RYA Day Skipper Theory Test 9",
+      "questionIds": [
+        "rds-mc-0167",
+        "rds-im-0004",
+        "rds-mc-0071",
+        "rds-mc-0078",
+        "rds-mc-0085",
+        "rds-mc-0034",
+        "rds-mc-0022",
+        "rds-mc-0197",
+        "rds-hs-0009",
+        "rds-mc-0290",
+        "rds-im-0152",
+        "rds-im-0023",
+        "rds-im-0176",
+        "rds-im-0092",
+        "rds-hs-0008",
+        "rds-im-0069",
+        "rds-mc-0154",
+        "rds-hs-0048",
+        "rds-hs-0098",
+        "rds-hs-0016",
+        "rds-mc-0061",
+        "rds-im-0214",
+        "rds-im-0103",
+        "rds-mc-0249"
+      ]
+    },
+    {
+      "mockNumber": 10,
+      "title": "RYA Day Skipper Theory Test 10",
+      "questionIds": [
+        "rds-hs-0030",
+        "rds-im-0014",
+        "rds-mc-0104",
+        "rds-hs-0036",
+        "rds-im-0046",
+        "rds-hs-0072",
+        "rds-mc-0251",
+        "rds-im-0083",
+        "rds-mc-0245",
+        "rds-mc-0191",
+        "rds-mc-0008",
+        "rds-hs-0100",
+        "rds-mc-0220",
+        "rds-mc-0108",
+        "rds-im-0097",
+        "rds-mc-0073",
+        "rds-mc-0011",
+        "rds-hs-0034",
+        "rds-im-0079",
+        "rds-im-0175",
+        "rds-im-0032",
+        "rds-im-0127",
+        "rds-mc-0289",
+        "rds-mc-0031"
+      ]
+    },
+    {
+      "mockNumber": 11,
+      "title": "RYA Day Skipper Theory Test 11",
+      "questionIds": [
+        "rds-mc-0135",
+        "rds-im-0226",
+        "rds-hs-0094",
+        "rds-mc-0185",
+        "rds-mc-0047",
+        "rds-mc-0149",
+        "rds-mc-0232",
+        "rds-mc-0202",
+        "rds-im-0075",
+        "rds-mc-0204",
+        "rds-im-0132",
+        "rds-mc-0203",
+        "rds-mc-0193",
+        "rds-hs-0007",
+        "rds-im-0124",
+        "rds-mc-0107",
+        "rds-hs-0092",
+        "rds-im-0047",
+        "rds-hs-0015",
+        "rds-im-0209",
+        "rds-im-0155",
+        "rds-im-0106",
+        "rds-mc-0132",
+        "rds-hs-0081"
+      ]
+    },
+    {
+      "mockNumber": 12,
+      "title": "RYA Day Skipper Theory Test 12",
+      "questionIds": [
+        "rds-im-0002",
+        "rds-mc-0123",
+        "rds-mc-0200",
+        "rds-mc-0077",
+        "rds-im-0193",
+        "rds-hs-0106",
+        "rds-hs-0116",
+        "rds-im-0010",
+        "rds-mc-0100",
+        "rds-mc-0130",
+        "rds-mc-0273",
+        "rds-mc-0157",
+        "rds-im-0191",
+        "rds-hs-0102",
+        "rds-mc-0262",
+        "rds-hs-0058",
+        "rds-mc-0051",
+        "rds-im-0005",
+        "rds-hs-0067",
+        "rds-im-0089",
+        "rds-mc-0028",
+        "rds-im-0194",
+        "rds-im-0020",
+        "rds-mc-0151"
+      ]
+    },
+    {
+      "mockNumber": 13,
+      "title": "RYA Day Skipper Theory Test 13",
+      "questionIds": [
+        "rds-hs-0108",
+        "rds-mc-0129",
+        "rds-im-0091",
+        "rds-mc-0046",
+        "rds-mc-0001",
+        "rds-im-0198",
+        "rds-im-0183",
+        "rds-im-0216",
+        "rds-im-0177",
+        "rds-hs-0111",
+        "rds-mc-0158",
+        "rds-mc-0246",
+        "rds-mc-0188",
+        "rds-im-0057",
+        "rds-im-0071",
+        "rds-im-0072",
+        "rds-hs-0045",
+        "rds-hs-0097",
+        "rds-mc-0209",
+        "rds-hs-0109",
+        "rds-mc-0088",
+        "rds-mc-0223",
+        "rds-mc-0286",
+        "rds-mc-0234"
+      ]
+    },
+    {
+      "mockNumber": 14,
+      "title": "RYA Day Skipper Theory Test 14",
+      "questionIds": [
+        "rds-mc-0153",
+        "rds-mc-0099",
+        "rds-mc-0003",
+        "rds-hs-0119",
+        "rds-im-0114",
+        "rds-im-0017",
+        "rds-mc-0279",
+        "rds-hs-0118",
+        "rds-mc-0247",
+        "rds-mc-0065",
+        "rds-hs-0064",
+        "rds-im-0043",
+        "rds-im-0107",
+        "rds-mc-0257",
+        "rds-mc-0030",
+        "rds-mc-0201",
+        "rds-im-0099",
+        "rds-hs-0059",
+        "rds-mc-0205",
+        "rds-im-0006",
+        "rds-hs-0050",
+        "rds-im-0227",
+        "rds-mc-0171",
+        "rds-im-0036"
+      ]
+    },
+    {
+      "mockNumber": 15,
+      "title": "RYA Day Skipper Theory Test 15",
+      "questionIds": [
+        "rds-im-0007",
+        "rds-hs-0004",
+        "rds-mc-0196",
+        "rds-hs-0130",
+        "rds-im-0213",
+        "rds-hs-0006",
+        "rds-mc-0029",
+        "rds-mc-0024",
+        "rds-mc-0174",
+        "rds-mc-0040",
+        "rds-hs-0123",
+        "rds-im-0012",
+        "rds-im-0116",
+        "rds-mc-0127",
+        "rds-mc-0292",
+        "rds-im-0220",
+        "rds-mc-0240",
+        "rds-im-0222",
+        "rds-mc-0131",
+        "rds-mc-0109",
+        "rds-hs-0010",
+        "rds-im-0033",
+        "rds-im-0180",
+        "rds-mc-0041"
+      ]
+    },
+    {
+      "mockNumber": 16,
+      "title": "RYA Day Skipper Theory Test 16",
+      "questionIds": [
+        "rds-mc-0110",
+        "rds-mc-0150",
+        "rds-hs-0031",
+        "rds-im-0128",
+        "rds-mc-0189",
+        "rds-mc-0037",
+        "rds-mc-0036",
+        "rds-im-0147",
+        "rds-im-0137",
+        "rds-mc-0068",
+        "rds-mc-0064",
+        "rds-im-0174",
+        "rds-im-0082",
+        "rds-mc-0212",
+        "rds-mc-0253",
+        "rds-im-0065",
+        "rds-im-0110",
+        "rds-hs-0019",
+        "rds-mc-0169",
+        "rds-hs-0029",
+        "rds-hs-0026",
+        "rds-hs-0040",
+        "rds-mc-0144",
+        "rds-im-0088"
+      ]
+    },
+    {
+      "mockNumber": 17,
+      "title": "RYA Day Skipper Theory Test 17",
+      "questionIds": [
+        "rds-mc-0128",
+        "rds-im-0028",
+        "rds-im-0054",
+        "rds-mc-0165",
+        "rds-mc-0283",
+        "rds-im-0151",
+        "rds-mc-0186",
+        "rds-hs-0082",
+        "rds-im-0035",
+        "rds-mc-0146",
+        "rds-im-0157",
+        "rds-mc-0190",
+        "rds-hs-0091",
+        "rds-im-0070",
+        "rds-hs-0128",
+        "rds-im-0030",
+        "rds-hs-0012",
+        "rds-mc-0055",
+        "rds-mc-0168",
+        "rds-mc-0254",
+        "rds-im-0212",
+        "rds-hs-0043",
+        "rds-mc-0276",
+        "rds-mc-0278"
+      ]
+    },
+    {
+      "mockNumber": 18,
+      "title": "RYA Day Skipper Theory Test 18",
+      "questionIds": [
+        "rds-mc-0015",
+        "rds-hs-0011",
+        "rds-hs-0104",
+        "rds-mc-0009",
+        "rds-hs-0085",
+        "rds-im-0027",
+        "rds-im-0178",
+        "rds-mc-0084",
+        "rds-hs-0022",
+        "rds-mc-0081",
+        "rds-im-0113",
+        "rds-mc-0103",
+        "rds-im-0163",
+        "rds-mc-0241",
+        "rds-im-0140",
+        "rds-mc-0258",
+        "rds-im-0196",
+        "rds-im-0078",
+        "rds-mc-0176",
+        "rds-mc-0057",
+        "rds-mc-0233",
+        "rds-im-0195",
+        "rds-hs-0061",
+        "rds-mc-0267"
+      ]
+    },
+    {
+      "mockNumber": 19,
+      "title": "RYA Day Skipper Theory Test 19",
+      "questionIds": [
+        "rds-im-0095",
+        "rds-mc-0119",
+        "rds-mc-0044",
+        "rds-im-0073",
+        "rds-mc-0229",
+        "rds-im-0164",
+        "rds-hs-0115",
+        "rds-im-0130",
+        "rds-mc-0225",
+        "rds-im-0063",
+        "rds-mc-0137",
+        "rds-hs-0028",
+        "rds-mc-0070",
+        "rds-im-0218",
+        "rds-hs-0095",
+        "rds-hs-0057",
+        "rds-mc-0164",
+        "rds-hs-0066",
+        "rds-mc-0242",
+        "rds-mc-0156",
+        "rds-mc-0255",
+        "rds-im-0166",
+        "rds-mc-0063",
+        "rds-im-0090"
+      ]
+    },
+    {
+      "mockNumber": 20,
+      "title": "RYA Day Skipper Theory Test 20",
+      "questionIds": [
+        "rds-hs-0075",
+        "rds-im-0187",
+        "rds-mc-0054",
+        "rds-im-0003",
+        "rds-mc-0095",
+        "rds-im-0138",
+        "rds-mc-0180",
+        "rds-hs-0125",
+        "rds-im-0160",
+        "rds-mc-0166",
+        "rds-hs-0060",
+        "rds-mc-0094",
+        "rds-mc-0069",
+        "rds-mc-0019",
+        "rds-hs-0084",
+        "rds-im-0162",
+        "rds-hs-0078",
+        "rds-im-0055",
+        "rds-mc-0042",
+        "rds-im-0026",
+        "rds-mc-0091",
+        "rds-mc-0268",
+        "rds-mc-0172",
+        "rds-im-0019"
+      ]
+    },
+    {
+      "mockNumber": 21,
+      "title": "RYA Day Skipper Theory Test 21",
+      "questionIds": [
+        "rds-hs-0027",
+        "rds-hs-0056",
+        "rds-mc-0060",
+        "rds-mc-0222",
+        "rds-hs-0101",
+        "rds-im-0168",
+        "rds-mc-0026",
+        "rds-im-0077",
+        "rds-mc-0214",
+        "rds-im-0062",
+        "rds-hs-0037",
+        "rds-mc-0163",
+        "rds-mc-0098",
+        "rds-mc-0288",
+        "rds-mc-0075",
+        "rds-im-0225",
+        "rds-im-0171",
+        "rds-im-0118",
+        "rds-mc-0117",
+        "rds-im-0102",
+        "rds-mc-0219",
+        "rds-mc-0248",
+        "rds-hs-0110",
+        "rds-im-0034"
+      ]
+    },
+    {
+      "mockNumber": 22,
+      "title": "RYA Day Skipper Theory Test 22",
+      "questionIds": [
+        "rds-mc-0221",
+        "rds-mc-0148",
+        "rds-mc-0181",
+        "rds-mc-0018",
+        "rds-im-0108",
+        "rds-hs-0039",
+        "rds-im-0134",
+        "rds-im-0199",
+        "rds-mc-0059",
+        "rds-mc-0170",
+        "rds-im-0202",
+        "rds-hs-0124",
+        "rds-mc-0227",
+        "rds-hs-0121",
+        "rds-im-0053",
+        "rds-mc-0093",
+        "rds-mc-0260",
+        "rds-mc-0198",
+        "rds-im-0169",
+        "rds-im-0067",
+        "rds-hs-0001",
+        "rds-hs-0107",
+        "rds-mc-0012",
+        "rds-im-0145"
+      ]
+    },
+    {
+      "mockNumber": 23,
+      "title": "RYA Day Skipper Theory Test 23",
+      "questionIds": [
+        "rds-im-0203",
+        "rds-mc-0142",
+        "rds-hs-0087",
+        "rds-mc-0159",
+        "rds-im-0159",
+        "rds-hs-0023",
+        "rds-mc-0213",
+        "rds-hs-0073",
+        "rds-im-0207",
+        "rds-mc-0161",
+        "rds-mc-0076",
+        "rds-mc-0097",
+        "rds-mc-0138",
+        "rds-mc-0021",
+        "rds-mc-0250",
+        "rds-im-0146",
+        "rds-hs-0079",
+        "rds-im-0031",
+        "rds-im-0206",
+        "rds-mc-0237",
+        "rds-im-0064",
+        "rds-hs-0096",
+        "rds-mc-0032",
+        "rds-im-0011"
+      ]
+    },
+    {
+      "mockNumber": 24,
+      "title": "RYA Day Skipper Theory Test 24",
+      "questionIds": [
+        "rds-mc-0173",
+        "rds-mc-0177",
+        "rds-im-0061",
+        "rds-mc-0118",
+        "rds-im-0018",
+        "rds-hs-0054",
+        "rds-im-0021",
+        "rds-mc-0050",
+        "rds-im-0104",
+        "rds-mc-0184",
+        "rds-mc-0187",
+        "rds-hs-0049",
+        "rds-im-0048",
+        "rds-hs-0127",
+        "rds-hs-0017",
+        "rds-im-0153",
+        "rds-mc-0136",
+        "rds-mc-0281",
+        "rds-hs-0025",
+        "rds-im-0190",
+        "rds-mc-0195",
+        "rds-im-0173",
+        "rds-mc-0287",
+        "rds-mc-0023"
+      ]
+    },
+    {
+      "mockNumber": 25,
+      "title": "RYA Day Skipper Theory Test 25",
+      "questionIds": [
+        "rds-im-0123",
+        "rds-mc-0082",
+        "rds-mc-0113",
+        "rds-mc-0143",
+        "rds-mc-0004",
+        "rds-im-0150",
+        "rds-mc-0080",
+        "rds-im-0131",
+        "rds-mc-0284",
+        "rds-hs-0042",
+        "rds-im-0217",
+        "rds-mc-0111",
+        "rds-mc-0215",
+        "rds-hs-0052",
+        "rds-hs-0038",
+        "rds-im-0013",
+        "rds-im-0129",
+        "rds-hs-0071",
+        "rds-mc-0230",
+        "rds-hs-0090",
+        "rds-im-0136",
+        "rds-im-0041",
+        "rds-mc-0175",
+        "rds-mc-0272"
+      ]
+    },
+    {
+      "mockNumber": 26,
+      "title": "RYA Day Skipper Theory Test 26",
+      "questionIds": [
+        "rds-hs-0086",
+        "rds-mc-0014",
+        "rds-im-0081",
+        "rds-mc-0016",
+        "rds-mc-0102",
+        "rds-mc-0045",
+        "rds-hs-0077",
+        "rds-mc-0259",
+        "rds-hs-0080",
+        "rds-mc-0217",
+        "rds-im-0149",
+        "rds-mc-0048",
+        "rds-mc-0280",
+        "rds-im-0208",
+        "rds-mc-0112",
+        "rds-im-0139",
+        "rds-im-0192",
+        "rds-mc-0017",
+        "rds-im-0015",
+        "rds-hs-0053",
+        "rds-mc-0120",
+        "rds-im-0189",
+        "rds-im-0016",
+        "rds-hs-0032"
+      ]
+    },
+    {
+      "mockNumber": 27,
+      "title": "RYA Day Skipper Theory Test 27",
+      "questionIds": [
+        "rds-mc-0141",
+        "rds-hs-0051",
+        "rds-im-0125",
+        "rds-mc-0053",
+        "rds-im-0076",
+        "rds-hs-0105",
+        "rds-hs-0076",
+        "rds-im-0143",
+        "rds-im-0170",
+        "rds-hs-0055",
+        "rds-mc-0160",
+        "rds-mc-0090",
+        "rds-mc-0269",
+        "rds-mc-0058",
+        "rds-im-0184",
+        "rds-im-0040",
+        "rds-im-0049",
+        "rds-mc-0285",
+        "rds-im-0056",
+        "rds-mc-0115",
+        "rds-mc-0013",
+        "rds-mc-0126",
+        "rds-mc-0072",
+        "rds-hs-0114"
+      ]
+    },
+    {
+      "mockNumber": 28,
+      "title": "RYA Day Skipper Theory Test 28",
+      "questionIds": [
+        "rds-mc-0152",
+        "rds-mc-0270",
+        "rds-mc-0025",
+        "rds-im-0117",
+        "rds-im-0179",
+        "rds-mc-0210",
+        "rds-hs-0024",
+        "rds-mc-0020",
+        "rds-mc-0235",
+        "rds-hs-0113",
+        "rds-im-0224",
+        "rds-im-0188",
+        "rds-im-0074",
+        "rds-im-0201",
+        "rds-im-0223",
+        "rds-mc-0096",
+        "rds-hs-0013",
+        "rds-hs-0018",
+        "rds-mc-0211",
+        "rds-mc-0086",
+        "rds-hs-0047",
+        "rds-im-0109",
+        "rds-mc-0275",
+        "rds-mc-0125"
+      ]
+    },
+    {
+      "mockNumber": 29,
+      "title": "RYA Day Skipper Theory Test 29",
+      "questionIds": [
+        "rds-im-0059",
+        "rds-im-0068",
+        "rds-mc-0263",
+        "rds-im-0024",
+        "rds-mc-0216",
+        "rds-hs-0005",
+        "rds-im-0111",
+        "rds-mc-0083",
+        "rds-im-0100",
+        "rds-im-0001",
+        "rds-im-0154",
+        "rds-mc-0147",
+        "rds-hs-0020",
+        "rds-hs-0074",
+        "rds-mc-0228",
+        "rds-mc-0194",
+        "rds-hs-0014",
+        "rds-mc-0039",
+        "rds-mc-0105",
+        "rds-mc-0006",
+        "rds-mc-0002",
+        "rds-hs-0002",
+        "rds-im-0141",
+        "rds-mc-0179"
+      ]
+    },
+    {
+      "mockNumber": 30,
+      "title": "RYA Day Skipper Theory Test 30",
+      "questionIds": [
+        "rds-im-0144",
+        "rds-mc-0079",
+        "rds-im-0161",
+        "rds-hs-0003",
+        "rds-im-0098",
+        "rds-mc-0238",
+        "rds-hs-0088",
+        "rds-im-0058",
+        "rds-mc-0218",
+        "rds-im-0185",
+        "rds-mc-0274",
+        "rds-im-0167",
+        "rds-hs-0112",
+        "rds-mc-0062",
+        "rds-mc-0101",
+        "rds-mc-0271",
+        "rds-mc-0266",
+        "rds-mc-0183",
+        "rds-hs-0063",
+        "rds-im-0037",
+        "rds-im-0008",
+        "rds-mc-0208",
+        "rds-hs-0089",
+        "rds-mc-0038"
+      ]
+    },
+    {
+      "mockNumber": 31,
+      "title": "RYA Day Skipper Theory Test 31",
+      "questionIds": [
+        "rds-mc-0087",
+        "rds-im-0142",
+        "rds-im-0094",
+        "rds-hs-0035",
+        "rds-hs-0069",
+        "rds-mc-0192",
+        "rds-hs-0129",
+        "rds-mc-0066",
+        "rds-mc-0133",
+        "rds-im-0115",
+        "rds-hs-0120",
+        "rds-im-0182",
+        "rds-hs-0041",
+        "rds-mc-0007",
+        "rds-mc-0243",
+        "rds-mc-0116",
+        "rds-mc-0049",
+        "rds-im-0084",
+        "rds-mc-0074",
+        "rds-im-0210",
+        "rds-im-0112",
+        "rds-im-0186",
+        "rds-mc-0256",
+        "rds-mc-0027"
+      ]
+    },
+    {
+      "mockNumber": 32,
+      "title": "RYA Day Skipper Theory Test 32",
+      "questionIds": [
+        "rds-im-0133",
+        "rds-hs-0062",
+        "rds-im-0009",
+        "rds-mc-0106",
+        "rds-im-0215",
+        "rds-hs-0068",
+        "rds-hs-0103",
+        "rds-mc-0261",
+        "rds-im-0086",
+        "rds-mc-0239",
+        "rds-mc-0043",
+        "rds-im-0042",
+        "rds-im-0029",
+        "rds-mc-0206",
+        "rds-mc-0134",
+        "rds-im-0197",
+        "rds-mc-0277",
+        "rds-mc-0035",
+        "rds-mc-0236",
+        "rds-hs-0044",
+        "rds-mc-0089",
+        "rds-mc-0139",
+        "rds-im-0080",
+        "rds-hs-0122"
+      ]
+    },
+    {
+      "mockNumber": 33,
+      "title": "RYA Day Skipper Theory Test 33",
+      "questionIds": [
+        "rds-mc-0224",
+        "rds-mc-0033",
+        "rds-hs-0093",
+        "rds-mc-0092",
+        "rds-im-0038",
+        "rds-mc-0010",
+        "rds-mc-0121",
+        "rds-im-0050",
+        "rds-mc-0265",
+        "rds-mc-0140",
+        "rds-mc-0005",
+        "rds-hs-0065",
+        "rds-mc-0231",
+        "rds-hs-0117",
+        "rds-hs-0083",
+        "rds-mc-0056",
+        "rds-im-0158",
+        "rds-im-0120",
+        "rds-im-0126",
+        "rds-mc-0264",
+        "rds-hs-0126",
+        "rds-im-0039",
+        "rds-im-0181",
+        "rds-im-0105"
+      ]
+    },
+    {
+      "mockNumber": 34,
+      "title": "RYA Day Skipper Theory Test 34",
+      "questionIds": [
+        "rds-mc-0293",
+        "rds-hs-0099",
+        "rds-mc-0199",
+        "rds-mc-0145",
+        "rds-hs-0070",
+        "rds-mc-0114",
+        "rds-im-0096",
+        "rds-hs-0046",
+        "rds-mc-0291",
+        "rds-im-0221",
+        "rds-mc-0207",
+        "rds-im-0211",
+        "rds-im-0044",
+        "rds-hs-0021",
+        "rds-mc-0122",
+        "rds-hs-0033",
+        "rds-mc-0282",
+        "rds-im-0156",
+        "rds-mc-0178",
+        "rds-mc-0067",
+        "rds-mc-0252",
+        "rds-im-0022",
+        "rds-im-0060",
+        "rds-im-0101"
+      ]
+    },
+    {
+      "mockNumber": 35,
+      "title": "RYA Day Skipper Theory Test 35",
+      "questionIds": [
+        "rds-im-0205",
+        "rds-mc-0162",
+        "rds-im-0165",
+        "rds-im-0066",
+        "rds-mc-0052",
+        "rds-im-0119",
+        "rds-hs-0098",
+        "rds-im-0025",
+        "rds-mc-0124",
+        "rds-mc-0244",
+        "rds-im-0200",
+        "rds-im-0172",
+        "rds-hs-0008",
+        "rds-hs-0016",
+        "rds-mc-0155",
+        "rds-hs-0009",
+        "rds-im-0087",
+        "rds-mc-0034",
+        "rds-mc-0226",
+        "rds-hs-0048",
+        "rds-mc-0078",
+        "rds-mc-0182",
+        "rds-mc-0022",
+        "rds-mc-0167"
+      ]
+    },
+    {
+      "mockNumber": 36,
+      "title": "RYA Day Skipper Theory Test 36",
+      "questionIds": [
+        "rds-im-0085",
+        "rds-hs-0030",
+        "rds-im-0093",
+        "rds-mc-0197",
+        "rds-hs-0036",
+        "rds-mc-0251",
+        "rds-im-0121",
+        "rds-mc-0085",
+        "rds-hs-0034",
+        "rds-mc-0071",
+        "rds-hs-0100",
+        "rds-im-0204",
+        "rds-mc-0191",
+        "rds-im-0045",
+        "rds-im-0148",
+        "rds-hs-0072",
+        "rds-im-0051",
+        "rds-mc-0154",
+        "rds-mc-0061",
+        "rds-im-0219",
+        "rds-mc-0289",
+        "rds-mc-0220",
+        "rds-mc-0249",
+        "rds-mc-0290"
+      ]
+    },
+    {
+      "mockNumber": 37,
+      "title": "RYA Day Skipper Theory Test 37",
+      "questionIds": [
+        "rds-mc-0047",
+        "rds-im-0135",
+        "rds-mc-0185",
+        "rds-im-0052",
+        "rds-mc-0193",
+        "rds-mc-0104",
+        "rds-hs-0092",
+        "rds-mc-0108",
+        "rds-im-0004",
+        "rds-im-0152",
+        "rds-hs-0094",
+        "rds-mc-0008",
+        "rds-mc-0011",
+        "rds-hs-0015",
+        "rds-mc-0073",
+        "rds-hs-0007",
+        "rds-im-0069",
+        "rds-im-0023",
+        "rds-mc-0107",
+        "rds-mc-0245",
+        "rds-hs-0081",
+        "rds-im-0122",
+        "rds-im-0176",
+        "rds-mc-0031"
+      ]
+    },
+    {
+      "mockNumber": 38,
+      "title": "RYA Day Skipper Theory Test 38",
+      "questionIds": [
+        "rds-mc-0132",
+        "rds-mc-0135",
+        "rds-mc-0273",
+        "rds-hs-0102",
+        "rds-mc-0232",
+        "rds-mc-0100",
+        "rds-mc-0203",
+        "rds-im-0097",
+        "rds-im-0175",
+        "rds-mc-0200",
+        "rds-mc-0149",
+        "rds-mc-0202",
+        "rds-im-0079",
+        "rds-hs-0106",
+        "rds-mc-0204",
+        "rds-im-0032",
+        "rds-hs-0058",
+        "rds-hs-0116",
+        "rds-hs-0067",
+        "rds-im-0103",
+        "rds-im-0092",
+        "rds-im-0014",
+        "rds-im-0214",
+        "rds-mc-0123"
+      ]
+    },
+    {
+      "mockNumber": 39,
+      "title": "RYA Day Skipper Theory Test 39",
+      "questionIds": [
+        "rds-im-0083",
+        "rds-mc-0129",
+        "rds-mc-0051",
+        "rds-im-0209",
+        "rds-mc-0130",
+        "rds-hs-0111",
+        "rds-mc-0262",
+        "rds-im-0127",
+        "rds-mc-0077",
+        "rds-hs-0045",
+        "rds-hs-0109",
+        "rds-mc-0234",
+        "rds-hs-0108",
+        "rds-mc-0046",
+        "rds-mc-0157",
+        "rds-mc-0028",
+        "rds-mc-0151",
+        "rds-im-0132",
+        "rds-im-0046",
+        "rds-hs-0097",
+        "rds-im-0106",
+        "rds-mc-0001",
+        "rds-im-0047",
+        "rds-im-0124"
+      ]
+    },
+    {
+      "mockNumber": 40,
+      "title": "RYA Day Skipper Theory Test 40",
+      "questionIds": [
+        "rds-im-0226",
+        "rds-hs-0119",
+        "rds-im-0155",
+        "rds-im-0075",
+        "rds-im-0191",
+        "rds-mc-0247",
+        "rds-mc-0223",
+        "rds-mc-0286",
+        "rds-im-0020",
+        "rds-hs-0059",
+        "rds-mc-0246",
+        "rds-hs-0118",
+        "rds-hs-0050",
+        "rds-mc-0171",
+        "rds-mc-0188",
+        "rds-mc-0209",
+        "rds-im-0089",
+        "rds-mc-0030",
+        "rds-hs-0064",
+        "rds-mc-0088",
+        "rds-mc-0003",
+        "rds-im-0193",
+        "rds-im-0005",
+        "rds-mc-0158"
+      ]
+    },
+    {
+      "mockNumber": 41,
+      "title": "RYA Day Skipper Theory Test 41",
+      "questionIds": [
+        "rds-mc-0040",
+        "rds-im-0010",
+        "rds-mc-0029",
+        "rds-mc-0041",
+        "rds-mc-0201",
+        "rds-hs-0010",
+        "rds-mc-0109",
+        "rds-im-0002",
+        "rds-mc-0205",
+        "rds-hs-0006",
+        "rds-hs-0004",
+        "rds-mc-0065",
+        "rds-im-0071",
+        "rds-hs-0123",
+        "rds-hs-0130",
+        "rds-im-0091",
+        "rds-mc-0153",
+        "rds-im-0057",
+        "rds-mc-0257",
+        "rds-im-0194",
+        "rds-mc-0099",
+        "rds-mc-0279",
+        "rds-im-0072",
+        "rds-im-0216"
+      ]
+    },
+    {
+      "mockNumber": 42,
+      "title": "RYA Day Skipper Theory Test 42",
+      "questionIds": [
+        "rds-hs-0029",
+        "rds-hs-0019",
+        "rds-im-0227",
+        "rds-im-0177",
+        "rds-im-0043",
+        "rds-mc-0131",
+        "rds-hs-0026",
+        "rds-mc-0174",
+        "rds-mc-0127",
+        "rds-hs-0040",
+        "rds-mc-0196",
+        "rds-im-0183",
+        "rds-mc-0169",
+        "rds-im-0198",
+        "rds-mc-0189",
+        "rds-im-0114",
+        "rds-mc-0240",
+        "rds-mc-0150",
+        "rds-im-0099",
+        "rds-mc-0292",
+        "rds-im-0017",
+        "rds-mc-0024",
+        "rds-mc-0110",
+        "rds-hs-0031"
+      ]
+    },
+    {
+      "mockNumber": 43,
+      "title": "RYA Day Skipper Theory Test 43",
+      "questionIds": [
+        "rds-mc-0253",
+        "rds-mc-0068",
+        "rds-mc-0144",
+        "rds-im-0213",
+        "rds-mc-0212",
+        "rds-im-0012",
+        "rds-mc-0036",
+        "rds-im-0007",
+        "rds-im-0107",
+        "rds-im-0036",
+        "rds-mc-0165",
+        "rds-im-0220",
+        "rds-hs-0128",
+        "rds-hs-0043",
+        "rds-mc-0276",
+        "rds-im-0006",
+        "rds-im-0180",
+        "rds-mc-0254",
+        "rds-hs-0091",
+        "rds-mc-0128",
+        "rds-mc-0064",
+        "rds-hs-0012",
+        "rds-hs-0082",
+        "rds-mc-0037"
+      ]
+    },
+    {
+      "mockNumber": 44,
+      "title": "RYA Day Skipper Theory Test 44",
+      "questionIds": [
+        "rds-mc-0146",
+        "rds-mc-0055",
+        "rds-hs-0022",
+        "rds-hs-0085",
+        "rds-im-0082",
+        "rds-hs-0104",
+        "rds-im-0222",
+        "rds-im-0065",
+        "rds-hs-0011",
+        "rds-mc-0241",
+        "rds-mc-0283",
+        "rds-mc-0186",
+        "rds-mc-0103",
+        "rds-im-0033",
+        "rds-im-0147",
+        "rds-mc-0278",
+        "rds-im-0116",
+        "rds-mc-0081",
+        "rds-im-0174",
+        "rds-mc-0190",
+        "rds-hs-0061",
+        "rds-mc-0009",
+        "rds-im-0110",
+        "rds-mc-0168"
+      ]
+    },
+    {
+      "mockNumber": 45,
+      "title": "RYA Day Skipper Theory Test 45",
+      "questionIds": [
+        "rds-im-0128",
+        "rds-im-0157",
+        "rds-im-0137",
+        "rds-mc-0084",
+        "rds-hs-0066",
+        "rds-im-0088",
+        "rds-im-0070",
+        "rds-mc-0225",
+        "rds-mc-0164",
+        "rds-mc-0015",
+        "rds-hs-0095",
+        "rds-hs-0057",
+        "rds-mc-0233",
+        "rds-mc-0267",
+        "rds-im-0054",
+        "rds-hs-0028",
+        "rds-im-0028",
+        "rds-hs-0115",
+        "rds-mc-0119",
+        "rds-mc-0070",
+        "rds-mc-0176",
+        "rds-im-0212",
+        "rds-mc-0258",
+        "rds-mc-0057"
+      ]
+    }
+  ]
 }
