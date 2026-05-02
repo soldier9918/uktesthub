@@ -7217,6 +7217,910 @@
       "imageDescription": "A woman is being interviewed by an officer. She is pointing at her wrist watch and then pointing down the street at a fleeing figure.",
       "type": "image_question",
       "id": "ps-im-0227"
+    },
+    {
+      "imageDescription": "A wide shot of a police custody desk. On the wall to the left is a red fire extinguisher; on the desk is a computer, a fingerprint scanner, and a telephone. A first aid kit is mounted behind the sergeant's chair.",
+      "spots": [
+        {
+          "x": 0.1,
+          "w": 0.08,
+          "y": 0.4,
+          "h": 0.15,
+          "id": "fire_extinguisher",
+          "label": "Fire Extinguisher"
+        },
+        {
+          "h": 0.1,
+          "y": 0.65,
+          "label": "Fingerprint Scanner",
+          "id": "fingerprint_scanner",
+          "x": 0.45,
+          "w": 0.12
+        },
+        {
+          "x": 0.75,
+          "w": 0.1,
+          "y": 0.3,
+          "h": 0.12,
+          "id": "first_aid_kit",
+          "label": "First Aid Kit"
+        }
+      ],
+      "type": "hot_spot",
+      "question": "You are conducting a daily health and safety check of the custody suite. Click on the item that must be present and unobstructed to ensure fire safety compliance.",
+      "correctSpotId": "fire_extinguisher",
+      "explanation": "In a custody suite, immediate access to fire safety equipment is a mandatory health and safety requirement to protect both staff and detainees.",
+      "imageAlt": "A modern police station custody booking desk with various safety items visible.",
+      "id": "ps-hs-0001"
+    },
+    {
+      "imageDescription": "A narrow urban alleyway. A CCTV camera is mounted 3 metres high on the right-hand wall, facing away from a large recessed doorway on the same side. There are bins and a fire exit door further down.",
+      "spots": [
+        {
+          "w": 0.2,
+          "x": 0.8,
+          "id": "cctv_blindspot",
+          "label": "Recessed Doorway Area",
+          "y": 0.6,
+          "h": 0.25
+        },
+        {
+          "x": 0.6,
+          "w": 0.08,
+          "h": 0.1,
+          "y": 0.15,
+          "label": "CCTV Camera",
+          "id": "camera_lens"
+        },
+        {
+          "w": 0.15,
+          "x": 0.45,
+          "id": "alley_exit",
+          "label": "Alley Exit",
+          "y": 0.8,
+          "h": 0.2
+        }
+      ],
+      "type": "hot_spot",
+      "question": "When assessing the security of this crime scene, identify the area that represents a significant 'blind spot' not covered by the existing CCTV camera.",
+      "correctSpotId": "cctv_blindspot",
+      "explanation": "Identifying gaps in CCTV coverage is crucial for officer safety and the integrity of evidence when securing a potential crime scene.",
+      "imageAlt": "An outdoor alleyway behind a commercial building with a CCTV camera mounted high on one wall.",
+      "id": "ps-hs-0002"
+    },
+    {
+      "explanation": "Officers must ensure their vehicle is roadworthy before starting a shift; a bulging or damaged tyre wall is a critical safety defect.",
+      "correctSpotId": "damaged_tyre",
+      "imageAlt": "Side profile of a police patrol car's front wheel and tyre.",
+      "imageDescription": "A close-up of a marked police vehicle tyre. There is a visible bulge/egg on the sidewall near the rim. The alloy wheel has minor scuffs. The tread appears deep, and the valve cap is present.",
+      "type": "hot_spot",
+      "question": "During your pre-shift vehicle checks, you inspect the tyres of your patrol car. Click on the specific defect that would require the vehicle to be taken off the road immediately.",
+      "spots": [
+        {
+          "id": "damaged_tyre",
+          "label": "Tyre Sidewall Bulge",
+          "y": 0.45,
+          "h": 0.15,
+          "w": 0.12,
+          "x": 0.55
+        },
+        {
+          "id": "wheel_scuff",
+          "label": "Alloy Scuff Marks",
+          "y": 0.7,
+          "h": 0.1,
+          "w": 0.1,
+          "x": 0.3
+        },
+        {
+          "x": 0.7,
+          "w": 0.05,
+          "h": 0.08,
+          "y": 0.6,
+          "label": "Tyre Valve Cap",
+          "id": "valve_cap"
+        }
+      ],
+      "id": "ps-hs-0003"
+    },
+    {
+      "type": "hot_spot",
+      "question": "A student officer is preparing their kit for patrol. Identify where the personal radio should be correctly docked for easy access and optimal signal clearance.",
+      "spots": [
+        {
+          "h": 0.1,
+          "y": 0.15,
+          "label": "Shoulder Radio Dock",
+          "id": "shoulder_radio",
+          "x": 0.25,
+          "w": 0.1
+        },
+        {
+          "label": "Utility Belt",
+          "id": "utility_belt",
+          "h": 0.15,
+          "y": 0.85,
+          "w": 0.2,
+          "x": 0.5
+        },
+        {
+          "id": "chest_pocket",
+          "label": "Chest Pocket",
+          "y": 0.4,
+          "h": 0.1,
+          "w": 0.12,
+          "x": 0.6
+        }
+      ],
+      "imageDescription": "A torso-up view of a police officer in a high-visibility tactical vest. On the belt is a baton and handcuffs. On the chest are two pockets. On the left shoulder is a dock for a radio. The officer's hands are at their sides.",
+      "imageAlt": "A police officer in full uniform including a tactical vest and various equipment.",
+      "explanation": "To maintain effective communication and safety, the radio should be securely attached to the shoulder dock of the tactical vest.",
+      "correctSpotId": "shoulder_radio",
+      "id": "ps-hs-0004"
+    },
+    {
+      "correctSpotId": "panic_alarm",
+      "spots": [
+        {
+          "y": 0.3,
+          "h": 0.1,
+          "x": 0.4,
+          "w": 0.2,
+          "id": "monitor",
+          "label": "Computer Monitor"
+        },
+        {
+          "label": "Panic Alarm Strip",
+          "w": 0.3,
+          "id": "panic_alarm",
+          "x": 0.35,
+          "h": 0.1,
+          "y": 0.65
+        },
+        {
+          "y": 0.5,
+          "h": 0.1,
+          "x": 0.75,
+          "label": "Fingerprint Scanner",
+          "w": 0.15,
+          "id": "scanner"
+        },
+        {
+          "label": "Telephone",
+          "id": "phone",
+          "w": 0.12,
+          "x": 0.1,
+          "h": 0.08,
+          "y": 0.45
+        }
+      ],
+      "imageDescription": "A standard UK police custody booking desk. Under the wooden lip of the desk, there is a red panic alarm strip, a computer keyboard, a telephone, and an electronic fingerprint scanner.",
+      "question": "You are conducting a safety inspection of the custody booking area. Identify the most critical safety feature that allows staff to immediately call for emergency assistance during an incident at the desk.",
+      "explanation": "Custody desks must have a functional, easily reachable panic alarm (strip or button) to summon emergency assistance if a detainee becomes violent.",
+      "type": "hot_spot",
+      "imageAlt": "A view of a modern custody booking desk with a computer monitor, paperwork, and various buttons/switches.",
+      "id": "ps-hs-0005"
+    },
+    {
+      "correctSpotId": "inner_cordon",
+      "spots": [
+        {
+          "id": "outer_cordon",
+          "w": 0.2,
+          "label": "Outer Cordon Perimeter",
+          "x": 0.1,
+          "h": 0.15,
+          "y": 0.8
+        },
+        {
+          "y": 0.5,
+          "h": 0.2,
+          "x": 0.5,
+          "label": "Inner Cordon Area",
+          "id": "inner_cordon",
+          "w": 0.25
+        },
+        {
+          "x": 0.8,
+          "label": "Public Footpath Outside Cordon",
+          "id": "public_path",
+          "w": 0.15,
+          "y": 0.2,
+          "h": 0.1
+        },
+        {
+          "label": "Incident Command Van",
+          "id": "command_van",
+          "w": 0.2,
+          "x": 0.1,
+          "h": 0.1,
+          "y": 0.2
+        }
+      ],
+      "imageAlt": "An aerial view of an outdoor crime scene with two nested cordons marked with blue and white tape.",
+      "imageDescription": "A forensic scene in a park. There is an outer cordon approximately 20 metres away from the centre, and a smaller, inner cordon tape surrounding a specific piece of evidence on the grass. Officers in forensic suits are inside the smaller ring.",
+      "explanation": "The inner cordon directly surrounds the focal point of the crime scene and is the most restricted area where high-visibility protective suits must be worn.",
+      "question": "You are managing a crime scene following a serious assault. Click on the area where access is restricted strictly to forensic specialists and where Personal Protective Equipment (PPE) is mandatory.",
+      "type": "hot_spot",
+      "id": "ps-hs-0006"
+    },
+    {
+      "spots": [
+        {
+          "y": 0.7,
+          "h": 0.15,
+          "x": 0.2,
+          "label": "Inner Tyre Wall",
+          "w": 0.1,
+          "id": "tyre_tread"
+        },
+        {
+          "id": "exhaust_system",
+          "w": 0.3,
+          "label": "Corroded Exhaust Pipe",
+          "x": 0.4,
+          "h": 0.12,
+          "y": 0.55
+        },
+        {
+          "label": "Oil Sump Tank",
+          "id": "oil_sump",
+          "w": 0.15,
+          "x": 0.5,
+          "h": 0.1,
+          "y": 0.3
+        },
+        {
+          "y": 0.6,
+          "h": 0.1,
+          "x": 0.75,
+          "id": "suspension",
+          "w": 0.1,
+          "label": "Suspension Spring"
+        }
+      ],
+      "correctSpotId": "exhaust_system",
+      "question": "During a weekly vehicle maintenance check, you inspect the undercarriage of the patrol car. Click on the defect that poses the highest risk of carbon monoxide poisoning to the vehicle's occupants.",
+      "explanation": "A leaking or damaged exhaust system can allow carbon monoxide to enter the cabin, causing fatigue or loss of consciousness for the officers on patrol.",
+      "type": "hot_spot",
+      "imageDescription": "The undercarriage of a patrol vehicle. Clearly visible are the tyres, the oil sump, the exhaust pipe with a large corroded hole in the middle section, and the suspension springs.",
+      "imageAlt": "The underside of a police car being inspected on a car lift.",
+      "id": "ps-hs-0007"
+    },
+    {
+      "spots": [
+        {
+          "y": 0.55,
+          "h": 0.1,
+          "x": 0.3,
+          "label": "Description of Contents Box",
+          "id": "desc_box",
+          "w": 0.3
+        },
+        {
+          "label": "Officer Signature Line",
+          "id": "officer_sig_box",
+          "w": 0.2,
+          "x": 0.3,
+          "h": 0.1,
+          "y": 0.75
+        },
+        {
+          "label": "Tamper-Evident Serial Code Barcode",
+          "w": 0.4,
+          "id": "evid_bag_seal_code",
+          "x": 0.3,
+          "h": 0.15,
+          "y": 0.15
+        },
+        {
+          "h": 0.2,
+          "y": 0.4,
+          "id": "mobile_phone_item",
+          "w": 0.25,
+          "label": "The Seized Item (Phone)",
+          "x": 0.4
+        }
+      ],
+      "correctSpotId": "evid_bag_seal_code",
+      "imageAlt": "A transparent plastic police evidence bag containing a mobile phone, with various labels on the front.",
+      "imageDescription": "A standard clear evidence bag. There is a section for the officer's name, the date, and a description. At the top, there is a tamper-evident adhesive strip with a unique barcode and an alphanumeric serial number.",
+      "explanation": "The unique barcode and serial number on the tamper-evident seal are vital for maintaining the 'chain of continuity' required for evidence to be admissible in court.",
+      "question": "You are processing a mobile phone seized from a suspect. Identify the specific feature on the evidence bag that ensures the 'chain of continuity' and proves the bag has not been opened since its initial sealing.",
+      "type": "hot_spot",
+      "id": "ps-hs-0008"
+    },
+    {
+      "type": "hot_spot",
+      "correctSpotId": "spot_defib",
+      "explanation": "The Automated External Defibrillator (AED) is a critical piece of life-saving equipment that should be checked daily for operational readiness.",
+      "imageAlt": "A public-facing police station reception desk area with various equipment.",
+      "spots": [
+        {
+          "y": 0.45,
+          "id": "spot_phone",
+          "x": 0.2,
+          "label": "Station Telephone",
+          "h": 0.15,
+          "w": 0.1
+        },
+        {
+          "x": 0.75,
+          "label": "AED Unit",
+          "y": 0.3,
+          "id": "spot_defib",
+          "w": 0.12,
+          "h": 0.2
+        },
+        {
+          "h": 0.12,
+          "w": 0.08,
+          "id": "spot_sanitiser",
+          "y": 0.5,
+          "label": "Hand Sanitiser Station",
+          "x": 0.1
+        }
+      ],
+      "question": "You are performing a morning health and safety audit of the station's public reception area. Click on the piece of life-saving equipment that must be checked for power and operational status.",
+      "imageDescription": "An image of a police station front desk showing a keyboard, a telephone, a hand sanitiser station, and an AED (Defibrillator) mounted on the wall.",
+      "id": "ps-hs-0009"
+    },
+    {
+      "spots": [
+        {
+          "y": 0.05,
+          "id": "spot_seal",
+          "x": 0.1,
+          "label": "Tamper-Evident Seal",
+          "h": 0.1,
+          "w": 0.8
+        },
+        {
+          "h": 0.3,
+          "w": 0.6,
+          "id": "spot_write",
+          "y": 0.2,
+          "x": 0.2,
+          "label": "Exhibit Label Area"
+        },
+        {
+          "w": 0.7,
+          "h": 0.4,
+          "x": 0.15,
+          "label": "Seized Clothing Item",
+          "y": 0.55,
+          "id": "spot_item"
+        }
+      ],
+      "explanation": "The unique serial number on the tamper-evident seal is essential for maintaining the chain of evidence and ensuring the bag has not been opened.",
+      "imageAlt": "A clear plastic forensic evidence bag containing a piece of clothing.",
+      "correctSpotId": "spot_seal",
+      "type": "hot_spot",
+      "imageDescription": "A close-up of a standard UK police evidence bag showing the writing area, the contents, and the red tamper-evident adhesive seal at the top.",
+      "question": "You are preparing an exhibit for court. Identify the specific part of the evidence bag that contains the unique tamper-evident security seal which proves the integrity of the evidence.",
+      "id": "ps-hs-0010"
+    },
+    {
+      "imageDescription": "A corridor in a modern custody suite showing heavy cell doors, a CCTV camera on the ceiling, and a fire extinguisher behind a locked glass panel.",
+      "question": "When conducting a risk assessment in the custody suite, identify the item that, if not properly secured in its cabinet, poses a significant risk as an improvised weapon.",
+      "correctSpotId": "spot_extinguisher",
+      "type": "hot_spot",
+      "spots": [
+        {
+          "w": 0.1,
+          "h": 0.1,
+          "x": 0.45,
+          "label": "CCTV Camera",
+          "id": "spot_camera",
+          "y": 0.1
+        },
+        {
+          "id": "spot_extinguisher",
+          "y": 0.5,
+          "label": "Fire Extinguisher Cabinet",
+          "x": 0.8,
+          "h": 0.25,
+          "w": 0.15
+        },
+        {
+          "y": 0.4,
+          "id": "spot_door",
+          "label": "Cell Door Handle",
+          "x": 0.15,
+          "h": 0.5,
+          "w": 0.1
+        }
+      ],
+      "explanation": "In a secure custody environment, fire extinguishers must be stored in recessed, locked cabinets to prevent them from being used as weapons by detainees.",
+      "imageAlt": "A sterile custody hallway with cell doors and safety equipment.",
+      "id": "ps-hs-0011"
+    },
+    {
+      "imageDescription": "A top-down view of a car engine bay showing the battery, the screen wash cap, the oil dipstick, and the brake fluid reservoir.",
+      "question": "As part of your pre-patrol vehicle check, you must verify the fluid levels. Click on the reservoir that houses the fluid responsible for the vehicle's braking system.",
+      "spots": [
+        {
+          "id": "spot_wash",
+          "y": 0.1,
+          "label": "Screen Wash Reservoir",
+          "x": 0.05,
+          "h": 0.12,
+          "w": 0.1
+        },
+        {
+          "id": "spot_dipstick",
+          "y": 0.5,
+          "label": "Oil Dipstick",
+          "x": 0.4,
+          "h": 0.08,
+          "w": 0.05
+        },
+        {
+          "w": 0.12,
+          "h": 0.15,
+          "x": 0.8,
+          "label": "Brake Fluid Reservoir",
+          "id": "spot_reservoir",
+          "y": 0.15
+        }
+      ],
+      "explanation": "Checking the brake fluid reservoir is a mandatory part of the pre-use vehicle inspection to ensure the braking system is safe and functional.",
+      "imageAlt": "The engine bay of a standard police patrol vehicle with various fluid caps visible.",
+      "type": "hot_spot",
+      "correctSpotId": "spot_reservoir",
+      "id": "ps-hs-0012"
+    },
+    {
+      "correctSpotId": "defibrillator",
+      "explanation": "In a station locker room, an Automated External Defibrillator (AED) must be clearly marked and unobstructed to ensure rapid emergency response for staff.",
+      "type": "hot_spot",
+      "imageDescription": "A photograph of a standard police locker room. On the far wall, between two rows of lockers, is a bright green cabinet containing an AED. Several gym bags are resting on the floor nearby.",
+      "imageAlt": "A police station locker room with lockers, benches, and a wall-mounted glass cabinet.",
+      "spots": [
+        {
+          "label": "Seating Area",
+          "x": 0.3,
+          "h": 0.15,
+          "w": 0.2,
+          "id": "bench",
+          "y": 0.7
+        },
+        {
+          "y": 0.4,
+          "w": 0.12,
+          "id": "defibrillator",
+          "label": "AED Cabinet",
+          "h": 0.18,
+          "x": 0.55
+        },
+        {
+          "w": 0.15,
+          "id": "bags_floor",
+          "label": "Gym Bags",
+          "h": 0.2,
+          "x": 0.4,
+          "y": 0.85
+        },
+        {
+          "h": 0.1,
+          "x": 0.15,
+          "label": "Locker Door",
+          "id": "locker_door",
+          "w": 0.08,
+          "y": 0.3
+        }
+      ],
+      "question": "You are conducting a Health and Safety audit of the locker room. Select the piece of emergency medical equipment that must remain easily accessible at all times.",
+      "id": "ps-hs-0013"
+    },
+    {
+      "imageDescription": "A top-down view of a UK police evidence bag. It has a barcode at the bottom, a white label field for officer details in the middle, and a red adhesive seal strip at the top edge.",
+      "type": "hot_spot",
+      "spots": [
+        {
+          "y": 0.9,
+          "label": "Serial Barcode",
+          "x": 0.5,
+          "h": 0.1,
+          "w": 0.15,
+          "id": "barcode"
+        },
+        {
+          "label": "Case Information Label",
+          "x": 0.5,
+          "h": 0.2,
+          "w": 0.4,
+          "id": "label_field",
+          "y": 0.5
+        },
+        {
+          "y": 0.1,
+          "h": 0.08,
+          "x": 0.5,
+          "label": "Adhesive Seal Strip",
+          "id": "seal_strip",
+          "w": 0.6
+        },
+        {
+          "w": 0.05,
+          "id": "air_hole",
+          "label": "Ventilation Hole",
+          "x": 0.85,
+          "h": 0.12,
+          "y": 0.15
+        }
+      ],
+      "question": "You are training a new recruit on exhibit handling. Click on the part of the evidence bag that ensures the contents are secure and tamper-evident once closed.",
+      "imageAlt": "A translucent plastic evidence bag containing a piece of clothing.",
+      "correctSpotId": "seal_strip",
+      "explanation": "The tamper-evident seal strip is the primary feature that proves the integrity of the evidence has not been compromised since it was bagged.",
+      "id": "ps-hs-0014"
+    },
+    {
+      "explanation": "A loose or broken exhaust mounting can cause the exhaust to fall off or vibrate excessively, posing a danger to other road users and the vehicle's integrity.",
+      "correctSpotId": "exhaust_mount",
+      "imageAlt": "A view of the underside of a police BMW patrol car.",
+      "question": "During a daily vehicle inspection, you check the underside of your patrol car. Identify the specific mechanical defect that would require the vehicle to be taken off the road immediately.",
+      "spots": [
+        {
+          "id": "exhaust_mount",
+          "w": 0.1,
+          "h": 0.1,
+          "x": 0.65,
+          "label": "Broken Rubber Mounting",
+          "y": 0.75
+        },
+        {
+          "y": 0.8,
+          "id": "tire_tread",
+          "w": 0.12,
+          "h": 0.08,
+          "x": 0.2,
+          "label": "Tyre Tread Depth"
+        },
+        {
+          "y": 0.75,
+          "x": 0.1,
+          "h": 0.1,
+          "label": "Dirty Mud Flap",
+          "id": "mud_flap",
+          "w": 0.1
+        },
+        {
+          "id": "oil_pan",
+          "w": 0.2,
+          "x": 0.5,
+          "h": 0.05,
+          "label": "Clean Oil Sump",
+          "y": 0.5
+        }
+      ],
+      "imageDescription": "The photograph shows the rear underside of a vehicle. The exhaust pipe is visible, and one of the black rubber hanging brackets is snapped, causing the pipe to tilt downwards.",
+      "type": "hot_spot",
+      "id": "ps-hs-0015"
+    },
+    {
+      "correctSpotId": "sharps_bin",
+      "explanation": "Used needles and sharp objects must be disposed of in a yellow, puncture-resistant sharps bin to prevent needle-stick injuries and biological hazards.",
+      "type": "hot_spot",
+      "imageDescription": "A custody sergeant's desk. To the left is a computer monitor, in the centre are custody records, and to the right is a small yellow plastic container with a biohazard symbol on it.",
+      "imageAlt": "A custody processing desk with various items including a keyboard, paperwork, and a yellow bin.",
+      "question": "You have just seized a used syringe during a search in the custody suite. Identify the correct container for the safe disposal of this item.",
+      "spots": [
+        {
+          "y": 0.85,
+          "w": 0.12,
+          "id": "waste_paper",
+          "label": "Paper Recycling Bin",
+          "h": 0.15,
+          "x": 0.1
+        },
+        {
+          "x": 0.8,
+          "h": 0.12,
+          "label": "Yellow Sharps Container",
+          "id": "sharps_bin",
+          "w": 0.1,
+          "y": 0.6
+        },
+        {
+          "id": "out_tray_paper",
+          "w": 0.2,
+          "h": 0.1,
+          "x": 0.5,
+          "label": "Evidence Paperwork TrayBase",
+          "y": 0.7
+        },
+        {
+          "y": 0.4,
+          "label": "Computer Monitor",
+          "x": 0.3,
+          "h": 0.12,
+          "w": 0.2,
+          "id": "monitor"
+        }
+      ],
+      "id": "ps-hs-0016"
+    },
+    {
+      "correctSpotId": "evid_tag_01",
+      "imageDescription": "A close-up of a standard police evidence bag. It features a tamper-evident seal at the top, a transparent window showing a folded shirt, and a white cardboard tag attached to the side for officer details.",
+      "imageAlt": "A clear plastic evidence bag containing a piece of clothing, with various labels and sections visible.",
+      "question": "You have just seized a piece of clothing from a suspect. Identify the specific area where the continuity of evidence (exhibit label) details must be recorded.",
+      "explanation": "The exhibit label must be fully completed and firmly attached to the evidence bag to ensure a clear chain of custody for court.",
+      "spots": [
+        {
+          "id": "seal_01",
+          "h": 0.15,
+          "w": 0.4,
+          "y": 0.05,
+          "label": "Tamper-evident seal",
+          "x": 0.3
+        },
+        {
+          "h": 0.2,
+          "w": 0.3,
+          "y": 0.4,
+          "id": "evid_tag_01",
+          "label": "Exhibit identification label",
+          "x": 0.65
+        },
+        {
+          "label": "Transparent viewing window",
+          "x": 0.1,
+          "h": 0.4,
+          "y": 0.3,
+          "w": 0.5,
+          "id": "window_01"
+        }
+      ],
+      "type": "hot_spot",
+      "id": "ps-hs-0017"
+    },
+    {
+      "type": "hot_spot",
+      "spots": [
+        {
+          "h": 0.2,
+          "w": 0.15,
+          "y": 0.4,
+          "id": "mirror_blind",
+          "label": "A-pillar and wing mirror junction",
+          "x": 0.1
+        },
+        {
+          "id": "windscreen_main",
+          "h": 0.3,
+          "w": 0.5,
+          "y": 0.3,
+          "x": 0.4,
+          "label": "Main windscreen view"
+        },
+        {
+          "id": "rear_view",
+          "h": 0.2,
+          "w": 0.2,
+          "y": 0.1,
+          "label": "Rear-view mirror",
+          "x": 0.45
+        }
+      ],
+      "explanation": "The area behind the 'A' pillar and just beside the wing mirror is a well-known blind spot that can hide pedestrians or cyclists from the driver's view.",
+      "question": "During a driver safety assessment, you are asked to identify a common 'blind spot' caused by the vehicle's design. Click on the area where a cyclist would most likely be obscured from the driver's direct vision.",
+      "correctSpotId": "mirror_blind",
+      "imageDescription": "View from the driver's seat of a car. The dashboard, steering wheel, and the thick pillar (A-pillar) between the windscreen and the side window are visible. Outside, there is a suburban street.",
+      "imageAlt": "An interior view from the driver's seat of a police patrol vehicle looking through the front windscreen and side window.",
+      "id": "ps-hs-0018"
+    },
+    {
+      "type": "hot_spot",
+      "spots": [
+        {
+          "id": "anti_ligature",
+          "w": 0.15,
+          "y": 0.15,
+          "h": 0.15,
+          "x": 0.75,
+          "label": "Anti-ligature ventilation grille"
+        },
+        {
+          "w": 0.6,
+          "y": 0.6,
+          "h": 0.3,
+          "id": "cell_bench",
+          "x": 0.2,
+          "label": "Fixed sleeping plinth"
+        },
+        {
+          "id": "floor_drain",
+          "w": 0.1,
+          "y": 0.85,
+          "h": 0.1,
+          "x": 0.5,
+          "label": "Floor drainage point"
+        }
+      ],
+      "correctSpotId": "anti_ligature",
+      "imageDescription": "A sterile, grey-walled custody cell. There is a blue plastic-covered mattress on a low plinth and a smooth, circular ventilation plate on the wall near the ceiling.",
+      "imageAlt": "Inside a blank police custody cell showing a concrete bench and a high-mounted ventilation grille.",
+      "explanation": "Anti-ligature fittings are essential in custody cells to prevent detainees from harming themselves using cords or clothing.",
+      "question": "You are conducting a safety sweep of a custody cell before a high-risk detainee is admitted. Click on the fixture specifically designed to prevent self-harm.",
+      "id": "ps-hs-0019"
+    },
+    {
+      "spots": [
+        {
+          "y": 0.4,
+          "w": 0.2,
+          "h": 0.2,
+          "id": "inner_cordon",
+          "label": "Inner forensic cordon",
+          "x": 0.4
+        },
+        {
+          "x": 0.1,
+          "label": "Outer traffic/public cordon boundary",
+          "y": 0.2,
+          "w": 0.8,
+          "h": 0.6,
+          "id": "outer_cordon"
+        },
+        {
+          "id": "command_post",
+          "h": 0.1,
+          "y": 0.8,
+          "w": 0.1,
+          "label": "Incident Command Point",
+          "x": 0.05
+        }
+      ],
+      "type": "hot_spot",
+      "imageAlt": "An aerial map view of a street with two concentric circles drawn around a house.",
+      "imageDescription": "A diagram of a residential street. A red circle (inner cordon) surrounds a single house. A larger blue circle (outer cordon) encompasses the entire block and adjacent junctions.",
+      "correctSpotId": "outer_cordon",
+      "question": "You are managing a crime scene and need to set up a perimeter for traffic control and public management. Click on the cordon that marks the limit of the 'Outer Cordon'.",
+      "explanation": "The outer cordon is used to manage public movement and traffic, while the inner cordon protects the high-security forensic area.",
+      "id": "ps-hs-0020"
+    },
+    {
+      "spots": [
+        {
+          "id": "fire_extinguisher",
+          "y": 0.6,
+          "w": 0.1,
+          "label": "Fire Extinguisher",
+          "h": 0.15,
+          "x": 0.2
+        },
+        {
+          "label": "AED Cabinet",
+          "h": 0.2,
+          "x": 0.5,
+          "id": "defibrillator_case",
+          "y": 0.45,
+          "w": 0.15
+        },
+        {
+          "w": 0.12,
+          "y": 0.5,
+          "id": "first_aid_kit",
+          "x": 0.8,
+          "label": "First Aid Kit",
+          "h": 0.15
+        }
+      ],
+      "imageAlt": "A police station corridor with various wall-mounted items.",
+      "type": "hot_spot",
+      "explanation": "An Automated External Defibrillator (AED) is a mandatory life-saving device that must be checked daily to ensure it is operational and accessible.",
+      "imageDescription": "A view of a police station interior wall featuring a fire extinguisher, a first aid kit, a notice board, and a bright green AED cabinet.",
+      "question": "You are conducting a daily health and safety audit of the station. Locate the piece of equipment used specifically for life-saving intervention during a cardiac arrest.",
+      "correctSpotId": "defibrillator_case",
+      "id": "ps-hs-0021"
+    },
+    {
+      "imageDescription": "A detailed view of a vehicle tyre showing the grooves and small raised rubber bars within the main tread pattern.",
+      "imageAlt": "A close-up view of a car tyre's tread pattern.",
+      "spots": [
+        {
+          "id": "sidewall_text",
+          "y": 0.8,
+          "w": 0.2,
+          "h": 0.15,
+          "label": "Tyre Pressure Markings",
+          "x": 0.1
+        },
+        {
+          "x": 0.45,
+          "h": 0.1,
+          "label": "Tread Wear Indicator (TWI) Bar",
+          "w": 0.1,
+          "y": 0.5,
+          "id": "tread_wear_indicator"
+        },
+        {
+          "w": 0.08,
+          "id": "valve_stem",
+          "y": 0.7,
+          "x": 0.85,
+          "label": "Air Valve Stem",
+          "h": 0.1
+        }
+      ],
+      "type": "hot_spot",
+      "explanation": "The Tread Wear Indicator (TWI) shows when the tyre depth has reached 1.6mm, which is the legal minimum for road safety.",
+      "question": "During a pre-shift vehicle check, you must ensure the tyres are roadworthy. Click on the built-in feature that indicates if the tread depth has reached the legal limit.",
+      "correctSpotId": "tread_wear_indicator",
+      "id": "ps-hs-0022"
+    },
+    {
+      "imageAlt": "A standard UK police evidence bag label.",
+      "spots": [
+        {
+          "id": "case_ref",
+          "y": 0.15,
+          "w": 0.3,
+          "label": "Case Reference Number",
+          "h": 0.1,
+          "x": 0.35
+        },
+        {
+          "x": 0.3,
+          "label": "Item Description Box",
+          "h": 0.2,
+          "w": 0.4,
+          "y": 0.35,
+          "id": "desc_box"
+        },
+        {
+          "x": 0.3,
+          "h": 0.25,
+          "label": "Continuity of Evidence Log",
+          "w": 0.4,
+          "y": 0.7,
+          "id": "log_sheet_section"
+        }
+      ],
+      "type": "hot_spot",
+      "explanation": "The exhibit label's log or continuity section must be signed by every officer who handles the item to maintain a chain of custody.",
+      "imageDescription": "The front of a clear plastic evidence bag showing printed sections for 'Case Reference', 'Description', and a 'Continuity' table with multiple signature lines.",
+      "question": "You are preparing an exhibit for a trial. Click on the specific section of the label that records the chronological movement of the evidence to ensure its integrity in court.",
+      "correctSpotId": "log_sheet_section",
+      "id": "ps-hs-0023"
+    },
+    {
+      "question": "While working on the front inquiry desk, a visitor becomes physically aggressive. Click on the discreet safety feature used to alert colleagues to an emergency.",
+      "correctSpotId": "panic_alarm_button",
+      "spots": [
+        {
+          "label": "Internal Telephone",
+          "h": 0.12,
+          "x": 0.25,
+          "y": 0.6,
+          "id": "telephone_handset",
+          "w": 0.1
+        },
+        {
+          "w": 0.1,
+          "y": 0.8,
+          "id": "panic_alarm_button",
+          "x": 0.5,
+          "h": 0.1,
+          "label": "Under-desk Panic Alarm"
+        },
+        {
+          "x": 0.75,
+          "h": 0.15,
+          "label": "CCTV Monitor",
+          "w": 0.2,
+          "id": "monitor_screen",
+          "y": 0.4
+        }
+      ],
+      "imageAlt": "A police station front counter from the staff side.",
+      "explanation": "Panic buttons are strategically placed under desks to allow staff to call for immediate assistance without escalating a situation with a member of the public.",
+      "type": "hot_spot",
+      "imageDescription": "The interior view of a reception desk showing a computer monitor, a keyboard, a telephone, and a small red button mounted on the underside of the desk.",
+      "id": "ps-hs-0024"
     }
   ],
   "mocks": []
