@@ -7109,6 +7109,33 @@
       "tolerance": 0,
       "type": "numeric_entry",
       "id": "af-ne-0322"
+    },
+    {
+      "unit": "£",
+      "type": "numeric_entry",
+      "explanation": "The gross profit is £5,000 - £3,200 = £1,800. Net profit is calculated by subtracting expenses from gross profit (£1,800 - £560 = £1,240).",
+      "correctAnswer": 1240,
+      "tolerance": 0,
+      "question": "A business has sales of £5,000 and a cost of sales of £3,200. Operating expenses for the period are £560. Calculate the net profit for the period in pounds.",
+      "id": "af-ne-0323"
+    },
+    {
+      "tolerance": 0,
+      "question": "A VAT-registered business has credit sales of £25,000 and credit purchases of £10,000. All figures are exclusive of VAT. If the VAT rate is 20%, calculate the VAT payable to HMRC.",
+      "correctAnswer": 3000,
+      "explanation": "Output VAT is £5,000 (£25,000 x 20%) and Input VAT is £2,000 (£10,000 x 20%). The amount payable to HMRC is the difference (£5,000 - £2,000 = £3,000).",
+      "type": "numeric_entry",
+      "unit": "£",
+      "id": "af-ne-0324"
+    },
+    {
+      "explanation": "Total additions to capital are £1,200 (Profit) + £250 (Capital Introduced) = £1,450. Adding this to the opening capital (£800) and subtracting drawings (£1,100) gives the closing capital of £1,150.",
+      "tolerance": 0,
+      "question": "At the start of the year, a sole trader's capital was £800. During the year, the business made a profit of £1,200, the owner introduced £250 of their own cash, and took out drawings of £1,100. Calculate the closing capital balance.",
+      "correctAnswer": 1150,
+      "unit": "£",
+      "type": "numeric_entry",
+      "id": "af-ne-0325"
     }
   ],
   "mocks": []

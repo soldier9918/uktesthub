@@ -1,0 +1,165 @@
+{
+  "version": 2,
+  "topic": "atpl-basics",
+  "title": "ATPL Basics Practice",
+  "category": "maritime-aviation",
+  "bank": [
+    {
+      "options": [
+        "1 hPa per 100 feet",
+        "1 hPa per 30 feet",
+        "2 hPa per 50 feet",
+        "1 hPa per 27 feet"
+      ],
+      "question": "What is the approximate pressure lapse rate in the ISA lower troposphere?",
+      "explanation": "Standard Pressure Lapse Rate in the lower troposphere is approximately 1 hPa per 30 feet of altitude.",
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "id": "ab-mc-0001"
+    },
+    {
+      "explanation": "Lift acts perpendicular to the relative airflow, whereas weight acts towards the centre of the Earth.",
+      "question": "In steady level flight, in which direction does the Lift vector act?",
+      "options": [
+        "Perpendicular to the relative airflow",
+        "Parallel to the chord line",
+        "Perpendicular to the longitudinal axis",
+        "Parallel to the gravity vector"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "id": "ab-mc-0002"
+    },
+    {
+      "explanation": "QNH is the pressure setting that, when set on the altimeter sub-scale, displays the aircraft's altitude above Mean Sea Level (MSL).",
+      "question": "When an altimeter is set to the local QNH, what does the instrument indicate?",
+      "options": [
+        "Height above the airfield (AGL)",
+        "Pressure altitude relative to 1013.25 hPa",
+        "Altitude above Mean Sea Level (MSL)",
+        "Density altitude for performance calculations"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "id": "ab-mc-0003"
+    },
+    {
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "question": "In a light aircraft, what will the Airspeed Indicator (ASI) read if the pitot tube is completely blocked but the drain hole and static port remain open?",
+      "options": [
+        "It will over-read during a climb",
+        "It will freeze at the current speed",
+        "It will under-read during a descent",
+        "It will drop to zero"
+      ],
+      "explanation": "The pitot-static system must be clear; a blocked pitot tube with an open drain hole will cause the airspeed indicator to drop to zero.",
+      "id": "ab-mc-0004"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "explanation": "V1 is the decision speed; below this speed the takeoff should be aborted, above it the takeoff must be continued.",
+      "question": "Which of the following best describes the speed V1?",
+      "options": [
+        "The maximum speed for flap retraction",
+        "The take-off decision speed",
+        "The minimum control speed on the ground",
+        "The rotate speed"
+      ],
+      "id": "ab-mc-0005"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "explanation": "Secondary flight controls like trim tabs are used to neutralize the aerodynamic forces on the primary controls, reducing pilot fatigue.",
+      "question": "What is the primary purpose of a trim tab on a control surface?",
+      "options": [
+        "To reduce the control forces required by the pilot",
+        "To increase the effectiveness of the rudder",
+        "To prevent the aircraft from stalling at low speeds",
+        "To increase lift during the takeoff phase"
+      ],
+      "id": "ab-mc-0006"
+    },
+    {
+      "explanation": "The troposphere contains the majority of the atmosphere's water vapour and is where almost all weather phenomena occur.",
+      "options": [
+        "Stratosphere",
+        "Mesosphere",
+        "Troposphere",
+        "Thermosphere"
+      ],
+      "question": "In which layer of the atmosphere does the majority of 'weather' occur?",
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "id": "ab-mc-0007"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "explanation": "Induced drag is a byproduct of lift; it increases as the angle of attack increases at lower speeds.",
+      "options": [
+        "It increases with the square of the speed",
+        "It remains constant regardless of speed",
+        "It decreases as the weight of the aircraft increases",
+        "It increases as airspeed decreases"
+      ],
+      "question": "How does induced drag vary with airspeed in level flight?",
+      "id": "ab-mc-0008"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "explanation": "Induced drag is greatest at low speeds and high angles of attack, such as during the initial climb out.",
+      "options": [
+        "High speed cruise",
+        "Initial climb after takeoff",
+        "Engine idle descent",
+        "Taxiing to the stand"
+      ],
+      "question": "In which phase of flight is induced drag typically at its highest proportion of total drag?",
+      "id": "ab-mc-0009"
+    },
+    {
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "options": [
+        "An EVEN flight level (e.g., FL80)",
+        "An ODD flight level (e.g., FL90)",
+        "Any flight level assigned by ATC only",
+        "Only VFR levels (e.g., FL85)"
+      ],
+      "question": "According to the UK semi-circular rule, at what level should an IFR aircraft fly when on a magnetic track of 210 degrees?",
+      "explanation": "The semi-circular rule in the UK dictates that tracks 000-179 should fly at Odd levels and 180-359 at Even levels.",
+      "id": "ab-mc-0010"
+    },
+    {
+      "options": [
+        "Rapid cooling of the earth's surface on a clear night",
+        "Cold air moving over a warm sea surface",
+        "Warm, moist air moving over a colder surface",
+        "Adiabatic cooling of air rising up a mountain slope"
+      ],
+      "question": "What is the primary cause of Advection Fog?",
+      "explanation": "Advection fog forms when moist, warm air moves over a colder surface, cooling the air to its dew point.",
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "id": "ab-mc-0011"
+    },
+    {
+      "question": "What is the name of the line on an aeronautical chart that connects points of equal magnetic variation?",
+      "options": [
+        "Isotach",
+        "Isobar road",
+        "Isotherm",
+        "Isogonal"
+      ],
+      "explanation": "A line of permanent magnetism is known as an Isogonic line, connecting points of equal magnetic variation.",
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "id": "ab-mc-0012"
+    }
+  ],
+  "mocks": []
+}
