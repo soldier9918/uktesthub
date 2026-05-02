@@ -855,6 +855,9 @@ def main():
     p_bank = sub.add_parser("bank", help="Fill the per-type question bank for a topic")
     p_bank.add_argument("--topic", required=True)
     p_bank.add_argument("--delay", type=float, default=1.0)
+    p_bank.add_argument("--batch-size", type=int, default=BATCH_SIZE)
+    p_bank.add_argument("--max-added", type=int, default=0, help="Stop after adding this many questions")
+    p_bank.add_argument("--max-failures", type=int, default=0, help="Stop after this many failed AI batches")
     p_bank.set_defaults(func=cmd_bank)
 
     p_asm = sub.add_parser("assemble", help="Assemble 45 mocks from the bank (no AI)")
