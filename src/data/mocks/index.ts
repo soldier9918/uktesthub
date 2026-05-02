@@ -69,8 +69,9 @@ type RawImage = {
   type: "image-question" | "image_question";
   id?: string;
   question: string;
-  image: string;
+  image?: string;
   imageAlt: string;
+  imageDescription?: string;
   options: string[];
   correctAnswer: number;
   explanation: string;
