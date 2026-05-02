@@ -178,7 +178,7 @@
       "options": [
         "Monitoring",
         "Verification",
-        "Validation激",
+        "Validation",
         "Corrective Action"
       ],
       "type": "multiple_choice",
@@ -217,9 +217,9 @@
       "correctAnswer": 2,
       "options": [
         "0°C to 5°C",
-        "-18°C to 0°C激",
-        "5°C to 63°C激",
-        "75°C to 100°C激"
+        "-18°C to 0°C",
+        "5°C to 63°C",
+        "75°C to 100°C"
       ],
       "type": "multiple_choice",
       "explanation": "The Danger Zone (5°C to 63°C) is the temperature range where bacteria multiply most rapidly. Food should be kept out of this range",
@@ -282,7 +282,7 @@
       "options": [
         "Continue as normal and check again in an hour",
         "Follow the pre-set Corrective Action and record it",
-        "Throw the thermometer away and get a new one激",
+        "Throw the thermometer away and get a new one",
         "Wait for the manager to arrive the next day"
       ],
       "correctAnswer": 1,
@@ -295,7 +295,7 @@
       "options": [
         "To identify every step where a hazard might occur",
         "To show the staff where the fire exits are",
-        "To decorate the staff noticeboard激",
+        "To decorate the staff noticeboard",
         "To track how much profit each dish makes"
       ],
       "correctAnswer": 0,
@@ -310,7 +310,7 @@
       "options": [
         "Only when the EHO visits for an inspection",
         "Once every ten years",
-        "Only if a member of staff leaves the company激",
+        "Only if a member of staff leaves the company",
         "Whenever the menu or food preparation process changes"
       ],
       "question": "When should a food business review and potentially update its HACCP plan?",
@@ -803,8 +803,8 @@
       "question": "In HACCP, what are the maximum or minimum values used to ensure a CCP is under control?",
       "options": [
         "Critical Limits",
-        "Target Levels 勾",
-        "Flow Diagrams 勾",
+        "Target Levels",
+        "Flow Diagrams",
         "Hazard Analysis"
       ],
       "explanation": "Critical Limits are the specific values (like 75°C) that separate safe food from unsafe food",
@@ -828,9 +828,9 @@
       "correctAnswer": 1,
       "question": "Which of the following is an example of a chemical hazard?",
       "options": [
-        "Broken glass from a jar 勾",
+        "Broken glass from a jar",
         "Bleach residue left on a food surface",
-        "Stones found in a bag of lentils 勾",
+        "Stones found in a bag of lentils",
         "Salmonella bacteria in poultry"
       ],
       "explanation": "Chemical hazards include cleaning agents, pesticides, or naturally occurring toxins in food",
@@ -852,9 +852,9 @@
     {
       "explanation": "Metal detection is a specific check designed to eliminate a physical hazard, making it a CCP",
       "options": [
-        "Staff washing their hands after a break 勾",
+        "Staff washing their hands after a break",
         "Passing finished products through a metal detector",
-        "Cleaning the floors at the end of a shift 勾",
+        "Cleaning the floors at the end of a shift",
         "Providing hairnets for all production staff"
       ],
       "question": "Which of these activities is most likely to be a Critical Control Point (CCP) in a food factory?",
@@ -866,8 +866,8 @@
       "question": "What must a food handler do if a Critical Limit at a CCP is not met?",
       "options": [
         "Carry out a corrective action",
-        "Close the business immediately 勾",
-        "Continue production and check again later 勾",
+        "Close the business immediately",
+        "Continue production and check again later",
         "Delete the temperature record"
       ],
       "explanation": "Corrective actions must be taken immediately when a CCP is found to be out of control",
@@ -882,7 +882,7 @@
       "options": [
         "4 hours",
         "6 hours",
-        "90 minutes 勾",
+        "90 minutes",
         "3 hours"
       ],
       "explanation": "In the UK, food must be cooled as quickly as possible, ideally reaching 8°C or below within 90 minutes",
@@ -894,9 +894,9 @@
       "question": "Why is it important to record the batch number and 'use by' date during the delivery stage?",
       "explanation": "Checking a batch number allows a business to trace a product back to its source in the event of a safety issue",
       "options": [
-        "Preventing bacterial growth 勾",
+        "Preventing bacterial growth",
         "Traceability of the product",
-        "Monitoring the temperature of the van 勾",
+        "Monitoring the temperature of the van",
         "Checking for physical damage"
       ],
       "id": "hl2-mc-0069"
@@ -904,9 +904,9 @@
     {
       "question": "What does the term 'Verification' refer to in a HACCP system?",
       "options": [
-        "Setting a Critical Limit 勾",
-        "Predicting a hazard before it happens 勾",
-        "Recording a temperature 勾",
+        "Setting a Critical Limit",
+        "Predicting a hazard before it happens",
+        "Recording a temperature",
         "Confirming the HACCP system is working effectively"
       ],
       "explanation": "Verifying a HACCP plan involves checking that the system is actually working effectively in practice",
@@ -916,9 +916,9 @@
     },
     {
       "options": [
-        "5°C to 63°C 勾",
-        "0°C to 5°C 勾",
-        "63°C to 100°C 勾",
+        "5°C to 63°C",
+        "0°C to 5°C",
+        "63°C to 100°C",
         "-18°C to 0°C"
       ],
       "explanation": "Pathogenic bacteria like E. coli grow most rapidly between 5°C and 63°C, known as the Temperature Danger Zone",
@@ -930,8 +930,8 @@
     {
       "options": [
         "Only when an Environmental Health Officer visits",
-        "Every five years 勾",
-        "Annually or when the process changes 勾",
+        "Every five years",
+        "Annually or when the process changes",
         "Only after a customer complains of food poisoning"
       ],
       "explanation": "HACCP systems should be reviewed at least annually or whenever there is a change to the menu, equipment, or processes",
@@ -2000,7 +2000,7 @@
       "options": [
         "Flow Diagram",
         "Action Plan",
-        "Organisational Chart激",
+        "Organisational Chart",
         "Hazard Matrix"
       ],
       "correctAnswer": 0,
@@ -6796,7 +6796,7 @@
           "options": [
             "Cross-contamination",
             "Chemical sanitisation",
-            "Safe handling house知识"
+            "Safe handling house"
           ],
           "correctIndex": 0
         }
@@ -6814,7 +6814,7 @@
           "options": [
             "Every 5 years",
             "Only when the EHO visits",
-            "Whenever a process changes house知识"
+            "Whenever a process changes house"
           ]
         }
       ],
@@ -7745,7 +7745,7 @@
           "options": [
             "High-risk foods",
             "Raw ingredients",
-            "Ambient goods均衡"
+            "Ambient goods"
           ],
           "correctIndex": 1
         }
@@ -7761,9 +7761,9 @@
       "blanks": [
         {
           "options": [
-            "Documentation and Record Keeping辨识",
-            "Hazard Analysis辨识",
-            "Corrective Actions辨识"
+            "Documentation and Record Keeping",
+            "Hazard Analysis",
+            "Corrective Actions"
           ],
           "correctIndex": 0
         }

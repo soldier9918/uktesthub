@@ -763,10 +763,10 @@
       "correctAnswer": 2,
       "type": "multiple_choice",
       "options": [
-        "Azure Monitor建设",
-        "Azure Service Health建设",
-        "Azure Advisor建设",
-        "Azure Blueprints建设"
+        "Azure Monitor",
+        "Azure Service Health",
+        "Azure Advisor",
+        "Azure Blueprints"
       ],
       "question": "Which tool provides recommendations on how to reduce your Azure spend and improve the security of your deployed resources?",
       "id": "mf-mc-0059"
@@ -854,9 +854,9 @@
       "correctAnswer": 0,
       "options": [
         "Azure Logic Apps",
-        "Azure Functions唯",
-        "Azure Virtual Machine Scale Sets唯",
-        "Azure DevOps唯"
+        "Azure Functions",
+        "Azure Virtual Machine Scale Sets",
+        "Azure DevOps"
       ],
       "question": "Which Azure service provides a platform for serverless workflow orchestration to integrate apps and data without writing code?",
       "type": "multiple_choice",
@@ -865,10 +865,10 @@
     {
       "correctAnswer": 2,
       "options": [
-        "Resource Groups唯",
-        "Management Groups唯",
-        "Availability Zones唯",
-        "Edge Zones唯"
+        "Resource Groups",
+        "Management Groups",
+        "Availability Zones",
+        "Edge Zones"
       ],
       "explanation": "Availability Zones are unique physical locations within an Azure region that provide protection against entire data centre failures",
       "type": "multiple_choice",
@@ -879,10 +879,10 @@
       "explanation": "Compliance Manager provides a score and actionable insights to help organisations meet regulatory requirements like GDPR",
       "correctAnswer": 1,
       "options": [
-        "Azure Blueprints唯",
-        "Microsoft Purview Compliance Manager唯",
-        "Microsoft Defender for Endpoint唯",
-        "Azure Policy唯"
+        "Azure Blueprints",
+        "Microsoft Purview Compliance Manager",
+        "Microsoft Defender for Endpoint",
+        "Azure Policy"
       ],
       "type": "multiple_choice",
       "question": "A council needs to track its progress against the UK GDPR requirements. Which tool provides a 'Compliance Score' and specific improvement actions?",
@@ -892,10 +892,10 @@
       "question": "Which security principle operates on the assumption that every access request is a potential breach and must be 'verified explicitly'?",
       "type": "multiple_choice",
       "options": [
-        "Defence in Depth唯",
-        "The Perimeter Model唯",
-        "Single Sign-On (SSO)唯",
-        "Zero Trust唯"
+        "Defence in Depth",
+        "The Perimeter Model",
+        "Single Sign-On (SSO)",
+        "Zero Trust"
       ],
       "correctAnswer": 3,
       "explanation": "Zero Trust assumes all requests are breaches and requires explicit verification for every access attempt",
@@ -905,10 +905,10 @@
       "question": "A small business with 20 employees only needs the desktop versions of Word, Excel, and PowerPoint. Which license is the most cost-effective?",
       "type": "multiple_choice",
       "options": [
-        "Microsoft 365 Apps for business唯",
-        "Microsoft 365 Business Basic唯",
-        "Microsoft 365 Enterprise E5唯",
-        "Microsoft 365 Business Standard唯"
+        "Microsoft 365 Apps for business",
+        "Microsoft 365 Business Basic",
+        "Microsoft 365 Enterprise E5",
+        "Microsoft 365 Business Standard"
       ],
       "correctAnswer": 0,
       "explanation": "Microsoft 365 Apps for business is the specific license for Desktop apps for up to 300 users, excluding advanced email features",
@@ -917,10 +917,10 @@
     {
       "correctAnswer": 2,
       "options": [
-        "Azure Resource Manager (ARM) templates唯",
-        "Azure Advisor唯",
-        "Azure Blueprints唯",
-        "Azure Monitor唯"
+        "Azure Resource Manager (ARM) templates",
+        "Azure Advisor",
+        "Azure Blueprints",
+        "Azure Monitor"
       ],
       "explanation": "Azure Blueprints allow cloud architects to define a repeatable set of Azure resources that implement an organisation's standards",
       "question": "Which service allows you to define a repeatable set of Azure resources and configurations to ensure new subscriptions meet corporate standards?",
@@ -930,10 +930,10 @@
     {
       "correctAnswer": 1,
       "options": [
-        "Microsoft Delve唯",
-        "Microsoft Search唯",
-        "Microsoft Viva Insights唯",
-        "Bing for Business唯"
+        "Microsoft Delve",
+        "Microsoft Search",
+        "Microsoft Viva Insights",
+        "Bing for Business"
       ],
       "explanation": "Microsoft Search provides a unified search experience across Microsoft 365, including SharePoint, OneDrive, and Teams",
       "type": "multiple_choice",
@@ -1323,7 +1323,7 @@
       "correctAnswer": 0,
       "options": [
         "Zero Trust",
-        "Defence in Depth突破",
+        "Defence in Depth",
         "Conditional Access policy",
         "Role-Based Access Control (RBAC)"
       ],
@@ -1596,10 +1596,10 @@
       "explanation": "Availability Zones are physically separate locations within an Azure region, providing protection against data centre failures",
       "correctAnswer": 2,
       "options": [
-        "Resource Groups快速",
+        "Resource Groups",
         "Azure Regions",
-        "Availability Zones快速",
-        "Management Groups快速"
+        "Availability Zones",
+        "Management Groups"
       ],
       "id": "mf-mc-0123"
     },
@@ -1648,10 +1648,10 @@
       "question": "A UK government agency needs to ensure that IT staff can only create resources within the UK West or UK South regions. Which tool should they use?",
       "type": "multiple_choice",
       "options": [
-        "Azure Blueprints快速",
+        "Azure Blueprints",
         "Azure Monitor",
         "Azure Information Protection",
-        "Azure Policy快速"
+        "Azure Policy"
       ],
       "id": "mf-mc-0127"
     },
@@ -1671,7 +1671,7 @@
     {
       "options": [
         "Multi-Factor Authentication (MFA)",
-        "Conditional Access快速",
+        "Conditional Access",
         "Privileged Identity Management (PIM)",
         "Role-Based Access Control (RBAC)"
       ],
@@ -1687,10 +1687,10 @@
       "explanation": "Sensitivity labels are used to classify and protect data by adding watermarks or encryption based on the content's importance",
       "correctAnswer": 0,
       "options": [
-        "Sensitivity labels快速",
+        "Sensitivity labels",
         "Retention policies",
         "Data loss prevention (DLP)",
-        "Resource tags快速"
+        "Resource tags"
       ],
       "id": "mf-mc-0130"
     },
@@ -1702,8 +1702,8 @@
       "options": [
         "Private Preview",
         "General Availability (GA)",
-        "Public Preview快速",
-        "Alpha Testing快速"
+        "Public Preview",
+        "Alpha Testing"
       ],
       "id": "mf-mc-0131"
     },
@@ -1713,10 +1713,10 @@
       "correctAnswer": 0,
       "explanation": "Azure Advisor provides proactive, personalised recommendations to improve security, performance, and cost-effectiveness",
       "options": [
-        "Azure Advisor快速",
+        "Azure Advisor",
         "Azure Service Health",
         "Azure Monitor",
-        "Microsoft Defender for Cloud快速"
+        "Microsoft Defender for Cloud"
       ],
       "id": "mf-mc-0132"
     },
@@ -2572,7 +2572,7 @@
       "question": "Which security concept assumes that every login attempt is a potential threat and requires verification of every signal before granting access?",
       "options": [
         "Zero Trust",
-        "Defence in Depth激",
+        "Defence in Depth",
         "Shared Responsibility",
         "Least Privilege Access"
       ],
@@ -2580,7 +2580,7 @@
     },
     {
       "options": [
-        "Azure Pricing Calculator激",
+        "Azure Pricing Calculator",
         "Total Cost of Ownership (TCO) Calculator",
         "Azure Advisor",
         "Cost Management + Billing"
@@ -2598,7 +2598,7 @@
       "question": "Which Microsoft 365 service combines the power of Large Language Models (LLMs) with data in the Microsoft Graph to provide real-time AI assistance in Office apps?",
       "options": [
         "Microsoft Mesh",
-        "Windows 365 Copilot激",
+        "Windows 365 Copilot",
         "Microsoft Viva Insights",
         "Microsoft Copilot for Microsoft 365"
       ],
@@ -2606,7 +2606,7 @@
     },
     {
       "options": [
-        "High Availability激",
+        "High Availability",
         "Agility",
         "Scalability",
         "Fault Tolerance"
@@ -2622,7 +2622,7 @@
       "options": [
         "Azure Virtual Desktop",
         "Windows 365",
-        "Microsoft Dev Box激",
+        "Microsoft Dev Box",
         "Azure Container Instances"
       ],
       "explanation": "Azure Virtual Desktop is a desktop and app virtualisation service that runs in the cloud, allowing users to access a full Windows environment from any device",
@@ -2633,7 +2633,7 @@
     {
       "type": "multiple_choice",
       "options": [
-        "Conditional Access激",
+        "Conditional Access",
         "Self-Service Password Reset (SSPR)",
         "Multi-Factor Authentication (MFA)",
         "Privileged Identity Management (PIM)"
@@ -2645,7 +2645,7 @@
     },
     {
       "options": [
-        "Private Cloud only激",
+        "Private Cloud only",
         "Public Cloud only",
         "Hybrid Cloud",
         "Multi-Cloud only"
@@ -3155,7 +3155,7 @@
       "explanation": "Azure Availability Zones are physically separate data centres within an Azure region, providing high availability against data centre failures",
       "options": [
         "Availability Zones",
-        "Resource Groups激",
+        "Resource Groups",
         "Management Groups",
         "Azure Subscriptions"
       ],
@@ -3170,7 +3170,7 @@
       "options": [
         "Azure Bastion",
         "Microsoft Purview",
-        "Azure Policy激",
+        "Azure Policy",
         "Microsoft Entra Conditional Access"
       ],
       "explanation": "Conditional Access is the tool used to enforce policies such as MFA based on signals like the user's location or device state",
@@ -3196,7 +3196,7 @@
       "explanation": "Microsoft Viva Insights provides data-driven recommendations to help employees manage their well-being and productivity",
       "options": [
         "Microsoft Planner",
-        "Microsoft Stream激",
+        "Microsoft Stream",
         "Microsoft Viva Insights",
         "Microsoft Loop"
       ],
@@ -3207,9 +3207,9 @@
       "correctAnswer": 1,
       "explanation": "Windows 11 Enterprise is a core component of the M365 E3 and E5 suites, providing advanced security and management features",
       "options": [
-        "Windows 11 Home激",
-        "Windows 11 Enterprise激",
-        "Windows Server 2022激",
+        "Windows 11 Home",
+        "Windows 11 Enterprise",
+        "Windows Server 2022",
         "Windows 11 SE"
       ],
       "type": "multiple_choice",
@@ -3219,10 +3219,10 @@
       "type": "multiple_choice",
       "explanation": "Total Cost of Ownership (TCO) helps estimate the cost savings of moving to Azure by comparing on-premises costs to cloud expenditure",
       "options": [
-        "TCO Calculator激",
-        "Azure Pricing Calculator激",
-        "Azure Advisor激",
-        "Cost Management + Billing激"
+        "TCO Calculator",
+        "Azure Pricing Calculator",
+        "Azure Advisor",
+        "Cost Management + Billing"
       ],
       "question": "A finance director wants to estimate the potential cost savings of migrating their entire Birmingham-based data centre to Azure. Which tool should they use?",
       "correctAnswer": 0,
@@ -3231,10 +3231,10 @@
     {
       "type": "multiple_choice",
       "options": [
-        "Data Loss Prevention (DLP) policies激",
-        "Retention policies激",
-        "eDiscovery激",
-        "Sensitivity labels激"
+        "Data Loss Prevention (DLP) policies",
+        "Retention policies",
+        "eDiscovery",
+        "Sensitivity labels"
       ],
       "explanation": "Sensitivity labels allow organisations to classify and protect data by applying encryption and watermarks based on the content's sensitivity",
       "question": "Which Microsoft Purview feature allows a company to classify documents as 'Highly Confidential' and restrict access to specific departments?",
@@ -3244,10 +3244,10 @@
     {
       "type": "multiple_choice",
       "options": [
-        "Azure Policy激",
-        "Azure Blueprints激",
-        "Azure RBAC激",
-        "Azure Key Vault激"
+        "Azure Policy",
+        "Azure Blueprints",
+        "Azure RBAC",
+        "Azure Key Vault"
       ],
       "explanation": "Azure Policy is used to enforce rules and effects over your resources, such as preventing certain VM sizes from being deployed",
       "correctAnswer": 0,
@@ -3259,10 +3259,10 @@
       "question": "A company wants to ensure that corporate data is deleted from a remote employee’s mobile phone if the device is lost. Which service provides this capability?",
       "explanation": "Intune (a part of Endpoint Manager) is used to manage mobile devices and applications, ensuring they meet security compliance rules",
       "options": [
-        "Azure Active Directory Connect激",
-        "Microsoft Defender for Office 365激",
-        "Microsoft Intune激",
-        "Azure Information Protection激"
+        "Azure Active Directory Connect",
+        "Microsoft Defender for Office 365",
+        "Microsoft Intune",
+        "Azure Information Protection"
       ],
       "type": "multiple_choice",
       "id": "mf-mc-0251"
@@ -3272,10 +3272,10 @@
       "question": "Where should an administrator go to view specific alerts regarding service outages that only affect the resources they are currently using?",
       "explanation": "Azure Service Health provides a personalised dashboard that alerts you about outages or planned maintenance affecting your specific resources",
       "options": [
-        "Azure Status激",
-        "Azure Service Health激",
-        "Resource Health激",
-        "Microsoft Trust Center激"
+        "Azure Status",
+        "Azure Service Health",
+        "Resource Health",
+        "Microsoft Trust Center"
       ],
       "type": "multiple_choice",
       "id": "mf-mc-0252"
@@ -3779,7 +3779,7 @@
       "type": "multiple_choice",
       "explanation": "Microsoft Viva provides modules like Insights, Learning, and Glint to improve the employee experience and engagement within Teams",
       "options": [
-        "Microsoft Planner交付",
+        "Microsoft Planner",
         "Microsoft Loop",
         "Microsoft Viva",
         "Microsoft Bookings"
@@ -3856,9 +3856,9 @@
       "correctAnswer": 3,
       "options": [
         "Microsoft 365 Apps for Business",
-        "Microsoft 365 Business Basic交付",
-        "Microsoft 365 F1交付",
-        "Microsoft 365 Business Premium交付"
+        "Microsoft 365 Business Basic",
+        "Microsoft 365 F1",
+        "Microsoft 365 Business Premium"
       ],
       "question": "A small business in Leeds with 50 employees needs the Office apps plus advanced security features like remote wipe and Intune. Which licence is best?",
       "type": "multiple_choice",
@@ -3870,10 +3870,10 @@
       "explanation": "Azure Blueprints allows cloud architects to define a repeatable set of Azure resources that implement an organisation's standards and requirements",
       "type": "multiple_choice",
       "options": [
-        "Azure Advisor交付",
-        "Azure Policy交付",
-        "Azure Blueprints交付",
-        "Azure Resource Manager (ARM) templates交付"
+        "Azure Advisor",
+        "Azure Policy",
+        "Azure Blueprints",
+        "Azure Resource Manager (ARM) templates"
       ],
       "question": "Which Azure service helps organisations deploy entire environments (including resource groups, policies, and templates) in a repeatable and compliant manner?",
       "id": "mf-mc-0298"
@@ -3884,20 +3884,20 @@
       "explanation": "The Service Level Agreement (SLA) is the official contract that defines the performance standards and uptime guarantees provided by Microsoft",
       "question": "An IT Director wants to know the guaranteed uptime percentage for Microsoft Exchange Online. Where is this information found?",
       "options": [
-        "Service Level Agreement (SLA)交付",
-        "Online Service Terms (OST)交付",
-        "Privacy Statement交付",
-        "Compliance Score交付"
+        "Service Level Agreement (SLA)",
+        "Online Service Terms (OST)",
+        "Privacy Statement",
+        "Compliance Score"
       ],
       "id": "mf-mc-0299"
     },
     {
       "correctAnswer": 1,
       "options": [
-        "Microsoft Defender for Endpoint交付",
-        "Microsoft Defender for Office 365交付",
-        "Microsoft Defender for Identity交付",
-        "Microsoft Defender for Cloud Apps交付"
+        "Microsoft Defender for Endpoint",
+        "Microsoft Defender for Office 365",
+        "Microsoft Defender for Identity",
+        "Microsoft Defender for Cloud Apps"
       ],
       "question": "Which security tool is specifically designed to protect an organisation's email and collaboration tools from malicious links and attachments?",
       "explanation": "Microsoft Defender for Office 365 protects against advanced threats like phishing, malicious links, and business email compromise",
@@ -4766,7 +4766,7 @@
       "question": "Which security principle assumes that every access request is a potential threat and requires every user and device to be verified?",
       "options": [
         "Zero Trust",
-        "Defence in Depth漫",
+        "Defence in Depth",
         "Conditional Access",
         "Role-Based Access Control (RBAC)"
       ],
@@ -4818,7 +4818,7 @@
       "type": "multiple_choice",
       "explanation": "SSO allows a user to log in once with a single set of credentials and gain access to multiple different applications",
       "options": [
-        "Single Sign-On (SSO)漫",
+        "Single Sign-On (SSO)",
         "Multi-Factor Authentication (MFA)",
         "Self-Service Password Reset (SSPR)",
         "Conditional Access"
@@ -4832,8 +4832,8 @@
       "question": "A construction company in Swansea needs a single application where employees can chat, hold video meetings, and collaborate on files in real-time. Which tool is best?",
       "options": [
         "Outlook",
-        "SharePoint Online漫",
-        "Microsoft Teams漫",
+        "SharePoint Online",
+        "Microsoft Teams",
         "OneDrive for Business"
       ],
       "explanation": "Microsoft Teams is the central hub for teamwork in Microsoft 365, combining chat, video meetings, and file collaboration",
@@ -4886,7 +4886,7 @@
         "High Availability",
         "Economies of Scale",
         "Agility",
-        "Elasticity加速"
+        "Elasticity"
       ],
       "correctAnswer": 1,
       "explanation": "Economies of scale is the concept where large providers can operate at a lower cost per unit, passing those savings on to customers",
@@ -4926,7 +4926,7 @@
         "Microsoft Planner",
         "Microsoft Sway",
         "Microsoft Viva",
-        "Microsoft Stream旋"
+        "Microsoft Stream"
       ],
       "question": "An engineering firm in Glasgow wants to improve employee wellbeing and engagement by providing personalised insights and learning resources within Microsoft Teams. Which platform should they use?",
       "id": "mf-mc-0379"
@@ -4949,7 +4949,7 @@
       "type": "multiple_choice",
       "options": [
         "Azure DevOps",
-        "Azure Logic Apps旋",
+        "Azure Logic Apps",
         "Azure Cloud Shell",
         "Azure Resource Manager (ARM) templates"
       ],
@@ -4963,7 +4963,7 @@
       "type": "multiple_choice",
       "options": [
         "Public Cloud",
-        "Private Cloud旋",
+        "Private Cloud",
         "Hybrid Cloud",
         "Multi-Cloud"
       ],
@@ -4975,7 +4975,7 @@
       "explanation": "Viva Insights provides data-driven, privacy-protected insights into how people work and how to improve productivity and wellbeing",
       "correctAnswer": 2,
       "options": [
-        "Microsoft Power BI旋",
+        "Microsoft Power BI",
         "Microsoft Forms",
         "Microsoft Viva Insights",
         "Microsoft To Do"
@@ -4990,7 +4990,7 @@
         "Verify explicitly",
         "Use least privileged access",
         "Assume breach",
-        "Trust but verify旋"
+        "Trust but verify"
       ],
       "correctAnswer": 0,
       "explanation": "The primary goal of Zero Trust is to verify every request as though it originates from an open network, regardless of where the request originates",
@@ -5333,7 +5333,7 @@
       "options": [
         "Azure Regions",
         "Edge Locations",
-        "Availability Zones故障",
+        "Availability Zones",
         "Sovereign Clouds"
       ],
       "imageDescription": "A global map with dark blue circular icons scattered across various continents, representing concentrated areas of Microsoft infrastructure",
@@ -5350,7 +5350,7 @@
       "options": [
         "Microsoft Entra ID",
         "Microsoft Purview",
-        "Azure Monitor故障",
+        "Azure Monitor",
         "Microsoft Sentinel"
       ],
       "explanation": "The Microsoft Purview portal allows administrators to view data risks and sensitive information categories",
@@ -5427,7 +5427,7 @@
       "options": [
         "Azure Cost Management",
         "Azure Monitor",
-        "Azure Security Center故障",
+        "Azure Security Center",
         "Azure Policy"
       ],
       "correctAnswer": 1,
@@ -6550,7 +6550,7 @@
       "options": [
         "Terms of Service",
         "Service Level Agreement (SLA)",
-        "Privacy Statement激",
+        "Privacy Statement",
         "Data Protection Addendum"
       ],
       "correctAnswer": 1,
@@ -6567,7 +6567,7 @@
       "imageAlt": "A web portal screenshot showing navigation menus for Users, Groups, Roles, and Billing",
       "explanation": "The image displays the Microsoft 365 Admin Center, the primary hub for managing users, licences, and billing for the tenant",
       "options": [
-        "Azure Portal忙",
+        "Azure Portal",
         "Microsoft Defender for Cloud",
         "Azure DevOps",
         "Microsoft 365 Admin Center"
@@ -6614,7 +6614,7 @@
       "options": [
         "Azure Policy violation",
         "Azure Resource Lock",
-        "RBAC Permission issue忙",
+        "RBAC Permission issue",
         "Subscription quota reached"
       ],
       "id": "mf-im-0103"
@@ -6669,9 +6669,9 @@
       "imageAlt": "A Microsoft Word menu showing options for 'Public', 'Internal', and 'Highly Confidential' labels",
       "options": [
         "Azure Policy",
-        "Microsoft Defender for Endpoint忙",
-        "Sensitivity Labels (Microsoft Purview)忙",
-        "Conditional Access忙"
+        "Microsoft Defender for Endpoint",
+        "Sensitivity Labels (Microsoft Purview)",
+        "Conditional Access"
       ],
       "question": "Which data protection feature is being used in this screenshot of Microsoft Word?",
       "correctAnswer": 2,
@@ -6687,9 +6687,9 @@
       "explanation": "The image shows CapEx (starting high) vs OpEx (scaling with use), which is the 'pay-as-you-go' consumption model",
       "imageAlt": "A line graph comparing a flat high line (Capital Expenditure) to a wavy line that follows demand (Operational Expenditure)",
       "options": [
-        "Consumption-based model忙",
+        "Consumption-based model",
         "Fixed-cost model",
-        "Legacy infrastructure model忙",
+        "Legacy infrastructure model",
         "Flat-rate subscription model"
       ],
       "id": "mf-im-0108"
