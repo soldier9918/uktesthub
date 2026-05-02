@@ -7750,6 +7750,90 @@
       "explanation": "In a METAR, the gust (G) is reported if the peak wind speed exceeds the mean wind speed by 10 knots or more during the preceding 10 minutes.",
       "type": "true_false",
       "id": "pm-tf-0024"
+    },
+    {
+      "correctAnswer": true,
+      "type": "true_false",
+      "question": "Rime frost is characterized by its white, opaque appearance and is formed by the instantaneous freezing of small, supercooled water droplets.",
+      "explanation": "Rime frost forms when supercooled water droplets freeze rapidly on contact with a cold surface, trapping air and creating an opaque, milky appearance.",
+      "id": "pm-tf-0025"
+    },
+    {
+      "correctAnswer": false,
+      "type": "true_false",
+      "question": "The dew point of a rising parcel of air will increase as the altitude increases.",
+      "explanation": "Dew point is the temperature to which air must be cooled to become saturated; as a parcel of air rises and expands, its temperature decreases.",
+      "id": "pm-tf-0026"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": true,
+      "explanation": "A veer is a clockwise change in direction; in the Northern Hemisphere, surface friction reduces as you climb, causing the wind to veer and increase in speed.",
+      "question": "When climbing out of the friction layer in the Northern Hemisphere, the wind will typically veer and increase in speed.",
+      "id": "pm-tf-0027"
+    },
+    {
+      "explanation": "In the ISA, temperature is assumed to decrease at a rate of 1.98°C (approximately 2°C) per 1000ft up to the tropopause.",
+      "question": "The standard environmental lapse rate in the International Standard Atmosphere (ISA) is 3°C per 1,000 feet.",
+      "type": "true_false",
+      "correctAnswer": false,
+      "id": "pm-tf-0028"
+    },
+    {
+      "explanation": "Lenticularis clouds are stationary, lens-shaped clouds that form in the crests of mountain waves, indicating strong winds and potential turbulence.",
+      "question": "The presence of Altocumulus Lenticularis clouds is a strong indicator of mountain wave activity and potential turbulence.",
+      "type": "true_false",
+      "correctAnswer": true,
+      "id": "pm-tf-0029"
+    },
+    {
+      "explanation": "Radiation fog typically occurs over land during clear, still nights; advection fog is more common over the sea when warm air moves over colder water.",
+      "question": "Radiation fog is the most common type of fog found over the open sea.",
+      "type": "true_false",
+      "correctAnswer": false,
+      "id": "pm-tf-0030"
+    },
+    {
+      "explanation": "An Anabatic wind is a warm wind that blows up a slope during the day as the hillside is heated by the sun.",
+      "question": "An 'Anabatic' wind refers to air that is cooled by the ground at night and flows down into a valley.",
+      "type": "true_false",
+      "correctAnswer": false,
+      "id": "pm-tf-0031"
+    },
+    {
+      "question": "In a METAR, the code 'BR' is used to indicate mist, which is reported when visibility is 1,000 metres or more but less than 5,000 metres.",
+      "explanation": "Mist (BR) is reported when visibility is between 1,000m and 5,000m; Fog (FG) is reported when visibility is less than 1,000m.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "id": "pm-tf-0032"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": true,
+      "explanation": "Lapse rates determine stability; if the environmental lapse rate is less than the saturated adiabatic lapse rate, the air is stable.",
+      "question": "The atmosphere is considered stable if a parcel of air, when displaced vertically, tends to return to its original level.",
+      "id": "pm-tf-0033"
+    },
+    {
+      "question": "Lines on a weather chart that join places of equal atmospheric temperature are called Isobars.",
+      "explanation": "Isobars are lines of constant pressure; lines joining places of equal temperature are called 'Isotherms'.",
+      "correctAnswer": false,
+      "type": "true_false",
+      "id": "pm-tf-0034"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": true,
+      "explanation": "Surface heating from the sun causes the air near the ground to become less dense and rise, creating convective currents.",
+      "question": "Convection is a process where the air is heated by the earth's surface and rises, often leading to the formation of Cumulus clouds.",
+      "id": "pm-tf-0035"
+    },
+    {
+      "correctAnswer": false,
+      "type": "true_false",
+      "question": "If you fly from an area of high pressure to an area of low pressure without resetting your altimeter, the aircraft will be higher than the altimeter indicates.",
+      "explanation": "The transition from a high-pressure area (Anticyclone) to a low-pressure area (Cyclone) would typically result in a falling altimeter setting (QNH).",
+      "id": "pm-tf-0036"
     }
   ],
   "mocks": []

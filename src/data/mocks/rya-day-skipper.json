@@ -4352,6 +4352,171 @@
         "Isolated Danger - pass well clear on either side"
       ],
       "id": "rds-im-0036"
+    },
+    {
+      "options": [
+        "Lateral Mark",
+        "Special Mark",
+        "Safe Water Mark",
+        "Emergency Wreck Buoy"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A yellow cross topmark on a yellow buoy identifies it as a Special Mark, used to indicate features like outfalls or racing marks.",
+      "imageDescription": "A yellow pillar-shaped buoy with a single yellow 'X' shaped topmark (St Andrew's Cross).",
+      "type": "image_question",
+      "imageAlt": "A yellow buoy with a yellow 'X' shaped topmark.",
+      "question": "Identify the type of buoy shown in this image.",
+      "id": "rds-im-0037"
+    },
+    {
+      "imageDescription": "A sailing yacht at anchor in a bay, with a single black spherical day shape hanging from the forestay.",
+      "type": "image_question",
+      "imageAlt": "A yacht at anchor displaying a black ball in the fore rigging.",
+      "question": "What is the status of a vessel displaying this day shape?",
+      "options": [
+        "Vessel at anchor",
+        "Vessel aground",
+        "Vessel restricted in her ability to manoeuvre",
+        "Vessel constrained by her draft"
+      ],
+      "correctAnswer": 0,
+      "explanation": "A vessel displaying a single black ball is at anchor. Vessels under 7m are generally exempt unless in a narrow channel.",
+      "id": "rds-im-0038"
+    },
+    {
+      "options": [
+        "Restricted in ability to manoeuvre",
+        "Constrained by draft",
+        "Not under command",
+        "Vessel aground"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Two black spheres in a vertical line indicate a vessel that is 'Not Under Command' due to an exceptional circumstance.",
+      "type": "image_question",
+      "imageDescription": "A motor vessel displaying two black spherical day shapes positioned vertically one above the other.",
+      "question": "What does this day shape configuration indicate?",
+      "imageAlt": "Two black balls in a vertical line on a ship.",
+      "id": "rds-im-0039"
+    },
+    {
+      "imageDescription": "A cardinal buoy with black on the top half and yellow on the bottom half. The topmark consists of two black cones, both pointing upwards.",
+      "type": "image_question",
+      "question": "Identify this cardinal mark and the safe side on which to pass it.",
+      "imageAlt": "A buoy with two upward-pointing cones and black over yellow horizontal bands.",
+      "options": [
+        "East Cardinal - Pass East",
+        "South Cardinal - Pass South",
+        "West Cardinal - Pass West",
+        "North Cardinal - Pass North"
+      ],
+      "correctAnswer": 3,
+      "explanation": "A North Cardinal mark is black over yellow with both cones pointing upwards. Pass to the North of this mark.",
+      "id": "rds-im-0040"
+    },
+    {
+      "imageDescription": "An extract of a nautical chart showing a rock symbol (an asterisk shape) with the number 2.4 printed next to it, where the 4 is smaller and underlined.",
+      "type": "image_question",
+      "imageAlt": "A chart symbol of a rock with '2' followed by a small underlined '4'.",
+      "question": "On a UK chart, what does this symbol and number indicate?",
+      "options": [
+        "A drying height of 2.4m above Chart Datum",
+        "A depth of 2.4m at Mean High Water Springs",
+        "A rock with 2.4m of water over it at Low Water",
+        "The height of the rock above the seabed is 2.4m"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The number 2.4 under a line signifies the drying height of the rock, meaning it is 2.4m above the Chart Datum.",
+      "id": "rds-im-0041"
+    },
+    {
+      "question": "What does this light configuration indicate at night?",
+      "imageAlt": "Vertical lights: Red, White, Red.",
+      "imageDescription": "A night-time view showing three vertical lights on a mast in the configuration: Red (top), White (middle), Red (bottom).",
+      "type": "image_question",
+      "explanation": "A vessel 'Restricted in her Ability to Manoeuvre' (RAM) shows a red-white-red vertical light sequence at night.",
+      "options": [
+        "Vessel at anchor",
+        "Pilot vessel on duty",
+        "Vessel restricted in her ability to manoeuvre",
+        "Vessel engaged in fishing"
+      ],
+      "correctAnswer": 2,
+      "id": "rds-im-0042"
+    },
+    {
+      "correctAnswer": 1,
+      "options": [
+        "Starboard hand mark - leave to starboard when entering harbour",
+        "Port hand mark - leave to port when entering harbour",
+        "Starboard hand mark - leave to port when entering harbour",
+        "Port hand mark - leave to starboard when entering harbour"
+      ],
+      "explanation": "In IALA Region A (UK), a port hand lateral mark is red and has a flat 'can' topmark. Keep it to your port side when entering.",
+      "type": "image_question",
+      "imageDescription": "A red pillar buoy with a flat-topped red cylinder (can) topmark.",
+      "question": "Identify this buoy and how you should pass it when entering a harbour.",
+      "imageAlt": "A red buoy with a cylinder-shaped topmark.",
+      "id": "rds-im-0043"
+    },
+    {
+      "explanation": "The 'TBY' letters indicate the seabed is composed of 'Tiny' (T) shell and 'By' (Bly) or in standard abbreviations, 'T' is not common but 'Sh' is shell; specifically 'Cy' is Clay. In RYA terms, 'Cy' stands for Clay.",
+      "correctAnswer": 1,
+      "options": [
+        "Crystals",
+        "Clay",
+        "Coarse sand",
+        "Cinders"
+      ],
+      "imageAlt": "Chart symbol with the letters 'Cy'.",
+      "question": "What does the abbreviation 'Cy' on a nautical chart mean regarding the seabed?",
+      "imageDescription": "A nautical chart snippet showing the abbreviation 'Cy' near a depth sounding.",
+      "type": "image_question",
+      "id": "rds-im-0044"
+    },
+    {
+      "imageAlt": "A blue and white swallow-tailed flag.",
+      "question": "What is the meaning of this International Code Flag?",
+      "type": "image_question",
+      "imageDescription": "International Code Flag 'A' (Alpha), which is a swallow-tailed flag divided vertically into white (hoist) and blue (fly).",
+      "explanation": "Flag 'A' (Alpha) is blue and white and indicates 'I have a diver down; keep well clear at slow speed.'",
+      "correctAnswer": 3,
+      "options": [
+        "I am dragging my anchor",
+        "I require a pilot",
+        "I am carrying dangerous cargo",
+        "I have a diver down; keep well clear"
+      ],
+      "id": "rds-im-0045"
+    },
+    {
+      "imageDescription": "A pillar buoy with alternating red and white vertical stripes. It is topped with a single red spherical topmark.",
+      "type": "image_question",
+      "imageAlt": "A buoy with vertical red and white stripes and a red ball topmark.",
+      "question": "What type of mark is represented by these colours and topmark?",
+      "correctAnswer": 0,
+      "options": [
+        "Safe Water Mark",
+        "Isolated Danger Mark",
+        "South Cardinal Mark",
+        "Port Hand Mark"
+      ],
+      "explanation": "A Safe Water Mark has vertical red and white stripes and a single red sphere topmark. It has clean water all around it.",
+      "id": "rds-im-0046"
+    },
+    {
+      "imageAlt": "Sidelights and two white masthead lights at different heights.",
+      "question": "What is the size and type of the vessel showing these lights at night?",
+      "type": "image_question",
+      "imageDescription": "A night view of a vessel showing a red sidelight (port), a green sidelight (starboard), and two white masthead lights, with the aft white light higher than the forward one.",
+      "explanation": "At night, a power-driven vessel over 50m shows two masthead lights, sidelights, and a sternlight. The higher second masthead light is aft.",
+      "options": [
+        "Sailing vessel under 20m",
+        "Power-driven vessel less than 50m in length",
+        "Power-driven vessel over 50m in length",
+        "Vessel engaged in trawling"
+      ],
+      "correctAnswer": 2,
+      "id": "rds-im-0047"
     }
   ],
   "mocks": []
