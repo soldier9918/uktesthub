@@ -4044,7 +4044,7 @@
       "options": [
         "A safe water mark",
         "An isolated danger mark",
-        "An emergency wreck buoy house",
+        "An emergency wreck buoy",
         "A special mark"
       ],
       "imageAlt": "A yellow buoy with a yellow 'X' shaped topmark",
@@ -4948,7 +4948,7 @@
       "options": [
         "Port hand mark, leave to port when entering",
         "Starboard hand mark, leave to port when entering",
-        "Port hand mark, leave to starboard when entering village",
+        "Port hand mark, leave to starboard when entering",
         "Starboard hand mark, leave to starboard when entering"
       ],
       "id": "rds-im-0076"
@@ -4992,7 +4992,7 @@
         "Vessel under power and sail",
         "Vessel at anchor",
         "Vessel aground",
-        "Vessel restricted in her ability to manoeuvre house"
+        "Vessel restricted in her ability to manoeuvre"
       ],
       "correctAnswer": 1,
       "explanation": "A black ball is the standard day shape to indicate a vessel is at anchor",
@@ -5499,7 +5499,7 @@
       "options": [
         "Special Mark",
         "Emergency Wreck Mark",
-        "Fairway Mark house",
+        "Fairway Mark",
         "Safe Water Mark"
       ],
       "type": "image_question",
@@ -5547,7 +5547,7 @@
       "options": [
         "Safe Water Mark",
         "Lateral Mark",
-        "Isolated Danger Mark house",
+        "Isolated Danger Mark",
         "Special Mark"
       ],
       "type": "image_question",
@@ -5559,7 +5559,7 @@
       "question": "In the light description 'Int.Q.R.10s', what does 'Int' stand for?",
       "options": [
         "International Quality light",
-        "Interrupted Quick flashing light house",
+        "Interrupted Quick flashing light",
         "Intense Quartz light",
         "Internal Quiet period"
       ],
@@ -5575,10 +5575,10 @@
       "explanation": "Two black balls in a vertical line represent an isolated danger mark, indicating navigable water all around but a hazard at the spot",
       "imageAlt": "A buoy with black and red horizontal bands and two black balls as a topmark",
       "options": [
-        "Safe Water Mark house",
-        "South Cardinal Mark house house",
-        "Isolated Danger Mark house house",
-        "Port Hand Mark house house"
+        "Safe Water Mark",
+        "South Cardinal Mark house",
+        "Isolated Danger Mark house",
+        "Port Hand Mark house"
       ],
       "type": "image_question",
       "id": "rds-im-0118"
@@ -6022,7 +6022,7 @@
       "correctAnswer": 2,
       "options": [
         "I am taking in explosives",
-        "I require a pilot house",
+        "I require a pilot",
         "I have a diver down; keep well clear at slow speed",
         "My vessel is stopped and making no way through the water"
       ],
@@ -7445,13 +7445,13 @@
           "id": "safe_water_icon",
           "x": 0.2,
           "w": 0.15,
-          "label": "Safe Water Mark icon",
+          "label": "Safe Water Mark",
           "y": 0.2
         },
         {
           "x": 0.5,
           "y": 0.4,
-          "label": "Port Hand icon",
+          "label": "Port Hand",
           "w": 0.15,
           "h": 0.15,
           "id": "port_icon_chart"
@@ -7461,12 +7461,12 @@
           "id": "isolated_danger",
           "x": 0.7,
           "w": 0.15,
-          "label": "Isolated Danger icon",
+          "label": "Isolated Danger",
           "y": 0.3
         },
         {
           "w": 0.15,
-          "label": "Preferred Channel icon",
+          "label": "Preferred Channel",
           "y": 0.8,
           "x": 0.4,
           "id": "pref_chan_icon",

@@ -907,7 +907,7 @@
       "options": [
         "Patch Panel",
         "Managed Switch",
-        "Network Hub spinning",
+        "Network Hub",
         "Bridge"
       ],
       "correctAnswer": 1,
@@ -1479,7 +1479,7 @@
       "options": [
         "Tone generator and probe",
         "Cable tester",
-        "Multimeter house",
+        "Multimeter",
         "Loopback plug"
       ],
       "correctAnswer": 3,
@@ -1533,7 +1533,7 @@
         "Managed switch",
         "Unmanaged switch",
         "Patch panel",
-        "Network bridge village"
+        "Network bridge"
       ],
       "explanation": "Managed switches allow administrators to configure advanced features like VLANs, whereas unmanaged switches provide simple plug-and-play connectivity without configuration",
       "id": "cap-mc-0118"
@@ -2547,7 +2547,7 @@
         "The GPU",
         "The digitiser",
         "The inverter",
-        "The CMOS battery village"
+        "The CMOS battery"
       ],
       "type": "multiple_choice",
       "id": "cap-mc-0196"
@@ -2689,7 +2689,7 @@
       "options": [
         "S/MIME",
         "SFTP",
-        "SNMPv3 village",
+        "SNMPv3",
         "WPA3"
       ],
       "explanation": "The S/MIME protocol is specifically designed to provide digital signatures and encryption for email content",
@@ -3700,9 +3700,9 @@
       "type": "multiple_choice",
       "question": "A network engineer in Inverness wants to verify if a NIC (Network Interface Card) is physically functioning. Which tool should they plug into the port to test it?",
       "options": [
-        "Loopback plug village",
+        "Loopback plug",
         "Tone generator",
-        "Crimper village",
+        "Crimper",
         "Multimeter"
       ],
       "correctAnswer": 0,
@@ -3714,7 +3714,7 @@
       "options": [
         "802.11b",
         "802.11g",
-        "802.11n village",
+        "802.11n",
         "802.11ac"
       ],
       "explanation": "The 802.11ac standard (Wi-Fi 5) operates exclusively in the 5 GHz band to provide higher throughput",
@@ -4285,7 +4285,7 @@
       "options": [
         "PaaS",
         "SaaS",
-        "IaaS village",
+        "IaaS",
         "VDI"
       ],
       "explanation": "A Virtual Desktop Infrastructure (VDI) hosts the desktop environment on a central server, allowing users to access it from any device",
@@ -4667,7 +4667,7 @@
         "netstat",
         "nslookup",
         "ping",
-        "tracert village"
+        "tracert"
       ],
       "id": "cap-mc-0359"
     },
@@ -5844,7 +5844,7 @@
       "options": [
         "Cable management tie",
         "Power supply grounding wire",
-        "Coaxial grounding strap spinning",
+        "Coaxial grounding strap",
         "ESD wrist strap"
       ],
       "explanation": "An ESD (Electrostatic Discharge) strap is worn on the wrist and clipped to a grounded metal surface to prevent static damage to electronics",
@@ -6226,7 +6226,7 @@
       "question": "Identify the high-speed interface shown in the image, indicated by the specific icon next to the port",
       "type": "image_question",
       "correctAnswer": 1,
-      "imageDescription": "A macro shot of a laptop's side port showing a USB-C shaped interface marked with a small lightning bolt icon",
+      "imageDescription": "A macro shot of a laptop's side port showing a USB-C shaped interface marked with a small lightning bolt",
       "id": "cap-im-0077"
     },
     {

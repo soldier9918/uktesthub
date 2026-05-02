@@ -2165,7 +2165,7 @@
     {
       "question": "How can you tell if a website uses an encrypted connection for data transfer?",
       "options": [
-        "The URL starts with 'https://' and has a padlock icon",
+        "The URL starts with 'https://' and has a padlock",
         "The website has a professional logo and design",
         "The website is the top result on a search engine",
         "The website has no pop-up advertisements"
@@ -5093,7 +5093,7 @@
       "options": [
         "Baiting",
         "Dumpster Diving",
-        "Whaling spinning",
+        "Whaling",
         "Pharming"
       ],
       "question": "An attacker leaves a USB stick labelled 'Executive Salaries' in a company car park. This social engineering tactic is known as",
@@ -6610,7 +6610,7 @@
     },
     {
       "correctAnswer": 0,
-      "imageDescription": "A close-up of a web browser address bar showing the URL 'www.microsoft-security-update.com' with a green padlock icon",
+      "imageDescription": "A close-up of a web browser address bar showing the URL 'www.microsoft-security-update.com' with a green padlock",
       "type": "image_question",
       "imageAlt": "A browser address bar showing wide-bank-uk.co.uk instead of widebank.co.uk",
       "explanation": "Even if a site uses HTTPS (the padlock), the URL itself can be a 'typosquat' designed to look like a legitimate brand to steal credentials",
@@ -7399,7 +7399,7 @@
         "It is a secure encrypted file"
       ],
       "question": "Looking at the file extension in this image, why is this file highly suspicious?",
-      "imageDescription": "A screenshot of a Windows file explorer window. A file is highlighted with the name 'Invoice.pdf.exe' and a generic application icon instead of a PDF icon",
+      "imageDescription": "A screenshot of a Windows file explorer window. A file is highlighted with the name 'Invoice.pdf.exe' and a generic application icon instead of a PDF",
       "explanation": "The '.exe' extension indicates an executable file, which can run code and install malware, unlike a simple '.pdf' or '.docx' document",
       "id": "ca-im-0066"
     },
@@ -7579,7 +7579,7 @@
         "It is a backup file created by Windows",
         "It is a compressed file that needs unzipping"
       ],
-      "imageDescription": "A screenshot of a file downloads folder showing a file titled 'Urgent_Invoice.pdf.exe' with a standard PDF icon",
+      "imageDescription": "A screenshot of a file downloads folder showing a file titled 'Urgent_Invoice.pdf.exe' with a standard PDF",
       "imageAlt": "A Windows file explorer window showing a file named 'Invoice.pdf.exe'",
       "id": "ca-im-0078"
     },

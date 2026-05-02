@@ -5549,7 +5549,7 @@
         "Medicine",
         "Hospital",
         "Patient",
-        "Nurse house"
+        "Nurse"
       ],
       "question": "Waiter is to Restaurant as Doctor is to",
       "type": "multiple_choice",
@@ -8549,7 +8549,7 @@
       "options": [
         "ZRUN",
         "ARVO",
-        "YRUN village",
+        "YRUN",
         "YQUM"
       ],
       "explanation": "The code shifts each letter forward by 3 places in the alphabet (L->O, O->R, N->Q, D->G)",
@@ -8578,7 +8578,7 @@
       "options": [
         "Thread",
         "Tailor",
-        "Cloth spinning",
+        "Cloth",
         "Sewing machine"
       ],
       "type": "multiple_choice",
@@ -8691,9 +8691,9 @@
     {
       "options": [
         "VCMF",
-        "VBNF village",
-        "UCMF village",
-        "WCNG village"
+        "VBNF",
+        "UCMF",
+        "WCNG"
       ],
       "explanation": "Each letter is replaced by the letter immediately following it in the alphabet. T->U, A->B, B->C, L->M, E->F",
       "question": "If TABLE is coded as UBMF, how is TABLET coded? (Wait, correction: how is UBLE coded?) No, if TABLE is UBMF, what is UCMF the code for?",
@@ -8705,8 +8705,8 @@
       "options": [
         "Mother",
         "Cousin",
-        "Niece village",
-        "Aunt village"
+        "Niece",
+        "Aunt"
       ],
       "explanation": "Brother and Sister are siblings (opposite gender, same generation); Nephew and Niece share the same relationship",
       "correctAnswer": 2,
@@ -8730,9 +8730,9 @@
     {
       "options": [
         "18",
-        "20 village",
-        "21 village",
-        "19 village"
+        "20",
+        "21",
+        "19"
       ],
       "explanation": "The rule is (A x B) + 1. (3x4)+1=13; (5x2)+1=11; (6x3)+1=19",
       "question": "If 3 # 4 = 13 and 5 # 2 = 11, what is 6 # 3?",
@@ -9590,7 +9590,7 @@
         "DWG",
         "EVH",
         "DWH",
-        "DXI house"
+        "DXI"
       ],
       "question": "Which group of letters follows: AZB, BYD, CXF, ...?",
       "explanation": "The first letter follows A, B, C, D. The second letter follows Z, Y, X, W. The third letter follows B, D, F, H (skipping one). D + W + H = DWH",
@@ -9640,7 +9640,7 @@
     {
       "question": "What comes next in the sequence: EV2, FU4, GT6, HS8, ...?",
       "options": [
-        "IR10 death",
+        "IR10",
         "HS10",
         "JQ11",
         "IR12"
@@ -9851,7 +9851,7 @@
         "North",
         "South-East",
         "West",
-        "East spinning"
+        "East"
       ],
       "question": "A man faces North. He turns 45 degrees clockwise, then 180 degrees clockwise, then 90 degrees anti-clockwise. Which direction is he facing?",
       "explanation": "South-East is 135 degrees clockwise from North. West is 135 degrees anti-clockwise from North. The distance is equal but opposite direction. If he faces North then turns 45 right and 180, he faces South-West. If he turns 90 left from North, he faces West",
@@ -11607,7 +11607,7 @@
         "Estuary",
         "Source",
         "Tributary",
-        "Valley house"
+        "Valley"
       ],
       "question": "River is to Delta as Sea is to ...?",
       "type": "multiple_choice",
@@ -11994,7 +11994,7 @@
       "options": [
         "Susan",
         "Jo",
-        "Rae spinning",
+        "Rae",
         "Pam"
       ],
       "explanation": "If Susan is older than Jo and Jo is older than Rae, Susan is the eldest. If Pam is older than Susan, Pam is the eldest. High to low: Pam, Susan, Jo, Rae",
@@ -12010,7 +12010,7 @@
       "options": [
         "Abundance",
         "Shortage",
-        "Hunger spinning",
+        "Hunger",
         "Crop"
       ],
       "type": "multiple_choice",
@@ -12035,7 +12035,7 @@
       "question": "Find the missing number: 2, 5, 14, 41, ...?",
       "options": [
         "120",
-        "121 spinning",
+        "121",
         "122",
         "125"
       ],
@@ -12048,9 +12048,9 @@
       "explanation": "Logic dictates that if people who eat vegetables are healthy, and some children eat vegetables, those specific children must be healthy",
       "options": [
         "Some children are healthy",
-        "All children are healthy spinning",
+        "All children are healthy",
         "No children are healthy",
-        "Vegetables are only for children spinning"
+        "Vegetables are only for children"
       ],
       "type": "multiple_choice",
       "id": "l-mc-0927"
@@ -12060,9 +12060,9 @@
       "question": "If today is the 1st of May, what month was it three months ago?",
       "options": [
         "January",
-        "February spinning",
-        "March spinning",
-        "April spinning"
+        "February",
+        "March",
+        "April"
       ],
       "correctAnswer": 1,
       "type": "multiple_choice",
@@ -12073,10 +12073,10 @@
       "explanation": "A hexagon has 6 sides, a pentagon 5, a quadrilateral 4. The next shape should have 3 sides, which is a triangle",
       "question": "Hexagon, Pentagon, Quadrilateral, ...? What comes next in this sequence of decreasing sides?",
       "options": [
-        "Square spinning",
-        "Circle spinning",
-        "Octagon spinning",
-        "Triangle spinning"
+        "Square",
+        "Circle",
+        "Octagon",
+        "Triangle"
       ],
       "type": "multiple_choice",
       "id": "l-mc-0929"
@@ -12084,9 +12084,9 @@
     {
       "correctAnswer": 0,
       "options": [
-        "Tailor spinning",
-        "Thread spinning spinning",
-        "Button spinning spinning spinning",
+        "Tailor",
+        "Thread spinning",
+        "Button spinning spinning",
         "Sewing"
       ],
       "explanation": "A pen is used by a poet to create; a needle is used by a tailor to create",
@@ -12296,7 +12296,7 @@
         "Water",
         "Food",
         "Health",
-        "Sleep spinning"
+        "Sleep"
       ],
       "question": "Breathing is to Oxygen as Eating is to",
       "type": "multiple_choice",
@@ -12436,7 +12436,7 @@
       "explanation": "Light allows us to see, while sound allows us to hear",
       "correctAnswer": 1,
       "options": [
-        "Noise spinning",
+        "Noise",
         "Hear",
         "Ear",
         "Quietness"
@@ -12605,7 +12605,7 @@
       "explanation": "A pedal is the part used to operate a bicycle; a handle is the part used to operate a door",
       "correctAnswer": 1,
       "options": [
-        "Window : House",
+        "Window :",
         "Handle : Door",
         "Steering : Road",
         "Engine : Car"
@@ -12710,7 +12710,7 @@
         "Saw : Carpenter",
         "Wood : Table wood",
         "Hammer : Nail",
-        "Builder : House"
+        "Builder :"
       ],
       "explanation": "The logic is 'Person : Tool'. A chef uses a knife; a carpenter uses a saw",
       "correctAnswer": 0,
@@ -12830,7 +12830,7 @@
         "Wood",
         "Hammer",
         "Nails",
-        "Workshop spinning"
+        "Workshop"
       ],
       "type": "multiple_choice",
       "id": "l-mc-0987"

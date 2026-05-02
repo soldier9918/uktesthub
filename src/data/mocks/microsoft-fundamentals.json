@@ -116,7 +116,7 @@
       "options": [
         "Microsoft 365 Roadmap",
         "Azure Service Health",
-        "Microsoft Trust Center village",
+        "Microsoft Trust Center",
         "The Compliance Manager"
       ],
       "id": "mf-mc-0009"
@@ -142,7 +142,7 @@
       "options": [
         "Elasticity",
         "Fault Tolerance",
-        "Scalability village",
+        "Scalability",
         "Agility"
       ],
       "id": "mf-mc-0011"
@@ -386,7 +386,7 @@
         "Security groups",
         "Microsoft 365 groups",
         "Distribution groups",
-        "Mail-enabled security groups village"
+        "Mail-enabled security groups"
       ],
       "question": "Which type of group in Microsoft 365 is primarily used to manage access to shared resources and assign permissions to a set of users?",
       "explanation": "Security groups are used for granting access to resources like SharePoint sites or for applying policies to a group of users",
@@ -413,7 +413,7 @@
       "question": "Which licensing model allows an organisation to purchase Microsoft 365 licences from a third-party partner who also provides support and billing?",
       "options": [
         "Microsoft Online Services Agreement (MOSA)",
-        "Enterprise Agreement (EA) village",
+        "Enterprise Agreement (EA)",
         "Cloud Solution Provider (CSP)",
         "Microsoft Customer Agreement (MCA)"
       ],
@@ -439,7 +439,7 @@
       "question": "A company needs a cloud-based storage solution that can be mounted as a network drive on Windows, Linux, and macOS. Which service should they use?",
       "options": [
         "Azure Files",
-        "Azure Blob Storage village",
+        "Azure Blob Storage",
         "Azure Disks",
         "Azure Table Storage"
       ],
@@ -464,7 +464,7 @@
       "type": "multiple_choice",
       "options": [
         "Azure Policy",
-        "Role-Based Access Control (RBAC) village",
+        "Role-Based Access Control (RBAC)",
         "Azure Blueprints",
         "Resource Locks"
       ],
@@ -3093,7 +3093,7 @@
       "options": [
         "Scalability",
         "Reliability",
-        "Elasticity village",
+        "Elasticity",
         "Agility"
       ],
       "id": "mf-mc-0238"
@@ -3106,7 +3106,7 @@
       "options": [
         "Microsoft 365 F3",
         "Microsoft 365 E5",
-        "Microsoft 365 Business Premium village",
+        "Microsoft 365 Business Premium",
         "Microsoft 365 E3"
       ],
       "id": "mf-mc-0239"
@@ -3119,7 +3119,7 @@
       "options": [
         "Fixed Lifecycle Policy",
         "Modern Lifecycle Policy",
-        "Extended Support Policy village village",
+        "Extended Support Policy village",
         "Standard Support Policy"
       ],
       "id": "mf-mc-0240"
@@ -5191,7 +5191,7 @@
       "explanation": "A Hybrid Cloud allows data and applications to be shared between private (on-premises) and public cloud environments",
       "type": "image_question",
       "correctAnswer": 1,
-      "imageDescription": "Illustration showing a local office building labelled 'Private Datacenter' with a secure tunnel (VPN/ExpressRoute) connecting it to a 'Public Cloud' (Azure) icon",
+      "imageDescription": "Illustration showing a local office building labelled 'Private Datacenter' with a secure tunnel (VPN/ExpressRoute) connecting it to a 'Public Cloud' (Azure)",
       "id": "mf-im-0008"
     },
     {
@@ -5371,7 +5371,7 @@
       "explanation": "A Hybrid Cloud deployment uses an encrypted connection (like VPN or ExpressRoute) to link local data centres with public cloud resources",
       "type": "image_question",
       "question": "Which cloud deployment model is illustrated in this connectivity diagram?",
-      "imageAlt": "A diagram showing a local server connected via a tunnel to a cloud icon",
+      "imageAlt": "A diagram showing a local server connected via a tunnel to a cloud",
       "id": "mf-im-0020"
     },
     {
@@ -5680,7 +5680,7 @@
       "type": "image_question",
       "explanation": "Vertical scaling, or scaling up, involves adding more resources (like CPU or RAM) to an existing virtual machine to increase power",
       "imageDescription": "An illustration of a single server icon growing larger in size with an upward arrow, representing an increase in hardware specifications",
-      "imageAlt": "An arrow pointing from a small server icon to a significantly larger server icon",
+      "imageAlt": "An arrow pointing from a small server icon to a significantly larger server",
       "options": [
         "Horizontal scaling (Scaling out)",
         "Vertical scaling (Scaling up)",
@@ -5728,7 +5728,7 @@
         "Azure DevTest Labs",
         "Azure Blueprints",
         "Azure Arc",
-        "Azure Lighthouse spinning icon"
+        "Azure Lighthouse spinning"
       ],
       "explanation": "Azure Blueprints allow cloud architects to define a repeatable set of Azure resources that implement an organisation's standards",
       "imageDescription": "A diagram showing a 'Blueprint' container that includes 'Role Assignments', 'Policy Assignments', and 'Resource Groups' for deployment",
@@ -5786,7 +5786,7 @@
       "imageAlt": "A graph showing CPU percentage and network throughput over time",
       "options": [
         "Azure Monitor",
-        "Azure Advisor spinning icon",
+        "Azure Advisor spinning",
         "Azure Security Center",
         "Microsoft Sentinel Dashboard"
       ],
@@ -5915,7 +5915,7 @@
       "id": "mf-im-0056"
     },
     {
-      "imageAlt": "A diagram showing a single small server icon growing into a much larger server icon",
+      "imageAlt": "A diagram showing a single small server icon growing into a much larger server",
       "imageDescription": "An illustration of a single virtual machine icon with an arrow pointing upwards, labeled '+ RAM' and '+ CPU'",
       "correctAnswer": 0,
       "question": "Which scaling method is being visualised in this diagram?",
@@ -6263,7 +6263,7 @@
       "correctAnswer": 2,
       "explanation": "A Hybrid Cloud environment combines on-premises servers with public cloud services, allowing data and apps to be shared between them",
       "imageDescription": "A network diagram showing a local data centre connected via VPN to an Azure Subscription icon with the heading 'Hybrid Cloud'",
-      "imageAlt": "A diagram showing a private server connected by a tunnel to a public cloud cloud icon",
+      "imageAlt": "A diagram showing a private server connected by a tunnel to a public cloud cloud",
       "options": [
         "Public Cloud only",
         "Private Cloud only",
@@ -6308,7 +6308,7 @@
       "explanation": "Vertical scaling (scaling up) involves adding more resources, such as CPU or RAM, to an existing virtual machine",
       "correctAnswer": 0,
       "imageDescription": "Diagram showing a single virtual machine icon increasing in size with labels for 'More RAM' and 'More CPU'",
-      "imageAlt": "An arrow pointing upwards from a small server icon to a larger server icon",
+      "imageAlt": "An arrow pointing upwards from a small server icon to a larger server",
       "type": "image_question",
       "options": [
         "Vertical scaling (scaling up)",
@@ -7036,7 +7036,7 @@
         "High Availability"
       ],
       "imageAlt": "A world map with icons in Europe, North America, and Asia connected by blue lines",
-      "imageDescription": "A world map where several locations (London, New York, Tokyo) have 'Data centre' icons. Lines show traffic originating from local users being routed to the nearest data centre icon",
+      "imageDescription": "A world map where several locations (London, New York, Tokyo) have 'Data centre' icons. Lines show traffic originating from local users being routed to the nearest data centre",
       "id": "mf-im-0131"
     },
     {
@@ -7315,7 +7315,7 @@
       "imageAlt": "Diagram showing multiple different companies accessing the same cloud infrastructure via the internet",
       "options": [
         "Private Cloud",
-        "Hybrid Cloud village",
+        "Hybrid Cloud",
         "Public Cloud",
         "Community Cloud"
       ],
