@@ -7233,6 +7233,186 @@
       "question": "Which security tool generated the 'Secure Score' shown in this dashboard screenshot?",
       "type": "image_question",
       "id": "mf-im-0144"
+    },
+    {
+      "question": "Which cloud service model is represented by this diagram where the customer is responsible for managing the operating system?",
+      "correctAnswer": 1,
+      "imageAlt": "Diagram showing layers of hardware, networking, OS, and applications managed by the user.",
+      "options": [
+        "Software as a Service (SaaS)",
+        "Infrastructure as a Service (IaaS)",
+        "Platform as a Service (PaaS)",
+        "Serverless computing"
+      ],
+      "imageDescription": "A shared responsibility model diagram where the provider manages the physical host, network, and data centre, but the customer manages the OS, middleware, and applications.",
+      "explanation": "Infrastructure as a Service (IaaS) gives the user the most control, including managing the operating system and applications on virtual machines.",
+      "type": "image_question",
+      "id": "mf-im-0145"
+    },
+    {
+      "options": [
+        "Management Groups",
+        "Subscribed Services",
+        "Resource Groups",
+        "Azure Tenants Shape"
+      ],
+      "imageAlt": "Icon representing a square box containing various Azure service icons like disks and VMs.",
+      "question": "Which Azure architectural component is used to logically group the resources shown in this image?",
+      "correctAnswer": 2,
+      "type": "image_question",
+      "explanation": "Resource Groups act as logical containers for grouping related Azure resources for easier management and billing.",
+      "imageDescription": "A visual representation of an Azure Resource Group containing a Virtual Machine, a Storage Account, and a Virtual Network.",
+      "id": "mf-im-0146"
+    },
+    {
+      "options": [
+        "Azure DevOps",
+        "Azure DevTest Labs",
+        "Azure Logic Apps",
+        "Azure App Service"
+      ],
+      "imageAlt": "Interface showing a kanban board with columns for 'To Do', 'Doing', and 'Done'.",
+      "correctAnswer": 0,
+      "question": "Which Azure service is being used in this screenshot to manage software development tasks via a Kanban board?",
+      "type": "image_question",
+      "explanation": "Azure DevOps provides tools like Boards, Pipelines, and Repos to support agile development and CI/CD workflows.",
+      "imageDescription": "A screenshot of a web-based project management board with work items assigned to different developers.",
+      "id": "mf-im-0147"
+    },
+    {
+      "type": "image_question",
+      "explanation": "Sensitivity labels allow organisations to classify and protect data by adding headers, footers, or encryption based on the content's importance.",
+      "imageDescription": "A screenshot of the Microsoft Word 'Sensitivity' button menu with several classification options visible.",
+      "options": [
+        "Data Loss Prevention (DLP) policy",
+        "Retention tags sensitivity",
+        "Information Barriers",
+        "Sensitivity labels"
+      ],
+      "imageAlt": "Microsoft Word ribbon showing a dropdown menu with labels like 'Public', 'Internal', and 'Confidential'.",
+      "question": "Which Microsoft Purview feature is shown in this menu for classifying and protecting documents?",
+      "correctAnswer": 3,
+      "id": "mf-im-0148"
+    },
+    {
+      "options": [
+        "Azure Portal",
+        "Microsoft 365 Admin Center",
+        "Microsoft Entra Admin Center",
+        "Exchange Admin Center"
+      ],
+      "imageAlt": "Web dashboard showing 'Active users', 'Billing', and 'Support' shortcuts.",
+      "correctAnswer": 1,
+      "question": "Which administrative portal is shown in this interface?",
+      "type": "image_question",
+      "explanation": "The Microsoft 365 Admin Center is the primary web portal for managing users, licences, and billing for the whole organization.",
+      "imageDescription": "A screenshot of the Microsoft 365 Admin Center home page with a navigation pane on the left and various management tiles.",
+      "id": "mf-im-0149"
+    },
+    {
+      "question": "Which cloud deployment model is illustrated in this diagram?",
+      "correctAnswer": 2,
+      "imageAlt": "Diagram showing multiple different companies accessing the same cloud infrastructure via the internet.",
+      "options": [
+        "Private Cloud",
+        "Hybrid Cloud village",
+        "Public Cloud",
+        "Community Cloud"
+      ],
+      "imageDescription": "A diagram with icons for 'Company A', 'Company B', and 'Company C' all connecting to a single large cloud icon via the public internet.",
+      "explanation": "A Public Cloud provides services over the internet to multiple organisations (multi-tenant) using hardware owned by the cloud provider.",
+      "type": "image_question",
+      "id": "mf-im-0150"
+    },
+    {
+      "correctAnswer": 0,
+      "question": "Which security feature is depicted in this workflow for automating access decisions?",
+      "imageAlt": "Flowchart showing 'User', 'Location', and 'Device' signals feeding into a 'Decision' box.",
+      "options": [
+        "Conditional Access",
+        "Privileged Identity Management (PIM)",
+        "Multi-Factor Authentication (MFA)",
+        "Self-Service Password Reset (SSPR)"
+      ],
+      "explanation": "Conditional Access uses signals like location and device health to enforce security policies before allowing a user to sign in.",
+      "imageDescription": "An architectural diagram showing Microsoft Entra Conditional Access evaluating signals to determine if access should be 'Allowed' or 'Blocked'.",
+      "type": "image_question",
+      "id": "mf-im-0151"
+    },
+    {
+      "type": "image_question",
+      "imageDescription": "A document snippet showing service availability targets and the percentage of service credit provided for various periods of downtime.",
+      "explanation": "A Service Level Agreement (SLA) defines the uptime guarantee (e.g., 99.9%) and provides financial credits if the service falls below this level.",
+      "options": [
+        "Acceptable Use Policy",
+        "Privacy Statement",
+        "Regulatory Compliance report-book",
+        "Service Level Agreement (SLA)"
+      ],
+      "imageAlt": "Table showing 99.9%, 99.95%, and 99.99% targets alongside service names.",
+      "question": "Which type of document specifies the Microsoft uptime guarantees shown in this table?",
+      "correctAnswer": 3,
+      "id": "mf-im-0152"
+    },
+    {
+      "options": [
+        "Capital Expenditure (CapEx) costs",
+        "Operational Expenditure (OpEx) costs",
+        "Fixed Asset spending",
+        "Legacy hardware costs"
+      ],
+      "imageAlt": "Graph showing monthly bills that fluctuate based on the actual usage of cloud resources.",
+      "correctAnswer": 1,
+      "question": "Which financial model is represented by this graph of variable monthly cloud costs?",
+      "type": "image_question",
+      "explanation": "Operational Expenditure (OpEx) is a 'pay-as-you-go' model where you pay only for what you use, with no large upfront investment.",
+      "imageDescription": "A line graph showing low, variable costs over time, with a label indicating 'No upfront investment'.",
+      "id": "mf-im-0153"
+    },
+    {
+      "type": "image_question",
+      "explanation": "Power Automate is used to create automated workflows between apps and services to synchronise files or get notifications.",
+      "imageDescription": "A screenshot of a low-code workflow designer showing a trigger icon followed by several step icons.",
+      "options": [
+        "Power BI desktop",
+        "Power Apps developer",
+        "Power Automate",
+        "Power Virtual Agents"
+      ],
+      "question": "Which Microsoft Power Platform tool is being used to build this automated workflow?",
+      "correctAnswer": 2,
+      "imageAlt": "Diagram with a trigger 'When an email arrives' followed by an action 'Save attachment'.",
+      "id": "mf-im-0154"
+    },
+    {
+      "type": "image_question",
+      "imageDescription": "An architectural diagram showing an Azure Region divided into three distinct Availability Zones connected by high-speed fibre.",
+      "explanation": "Zonal redundancy ensures that if one data centre (Zone) within a region fails, the service remains available in another Zone.",
+      "options": [
+        "Availability Zones",
+        "Paired Regions",
+        "Fault Domains",
+        "Resource Groups zone"
+      ],
+      "imageAlt": "Diagram showing a single Azure region containing three separate buildings labelled Zone 1, Zone 2, and Zone 3.",
+      "correctAnswer": 0,
+      "question": "Which Azure high-availability feature is illustrated by this diagram of multiple data centres in one region?",
+      "id": "mf-im-0155"
+    },
+    {
+      "options": [
+        "Azure Monitor log",
+        "Microsoft Sentinel portal",
+        "Microsoft Defender for Cloud",
+        "Azure Service Health dashboard"
+      ],
+      "question": "Which service is providing this overview of security recommendations and regulatory compliance?",
+      "correctAnswer": 2,
+      "imageAlt": "Dashboard showing a percentage score and a list of security recommendations like 'Enable MFA'.",
+      "type": "image_question",
+      "explanation": "Microsoft Defender for Cloud provides tools to track and improve the security posture of cloud resources, including a 'Secure Score'.",
+      "imageDescription": "A screenshot of the Microsoft Defender for Cloud dashboard showing the 'Cloud Security Posture' overview.",
+      "id": "mf-im-0156"
     }
   ],
   "mocks": []
