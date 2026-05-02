@@ -1,0 +1,2505 @@
+{
+  "version": 2,
+  "topic": "bmat",
+  "title": "BMAT Practice",
+  "category": "healthcare-entry",
+  "bank": [
+    {
+      "explanation": "Power = Energy / Time. 1.2 kJ is 1200 J. 1200 J / 60 seconds = 20 Watts.",
+      "options": [
+        "2 Watts",
+        "20 Watts",
+        "72 Watts",
+        "1200 Watts"
+      ],
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "question": "A light bulb transfers 1.2 kJ of energy in one minute. What is the power rating of the bulb?",
+      "id": "b-mc-0001"
+    },
+    {
+      "correctAnswer": 0,
+      "options": [
+        "Hydrogen and Chlorine",
+        "Sodium and Oxygen",
+        "Hydrogen and Oxygen",
+        "Sodium and Chlorine"
+      ],
+      "type": "multiple_choice",
+      "explanation": "At the cathode (negative electrode), less reactive metals or hydrogen are produced; at the anode (positive), halogens or oxygen are produced.",
+      "question": "What are the products of the electrolysis of concentrated aqueous sodium chloride?",
+      "id": "b-mc-0002"
+    },
+    {
+      "question": "How many chromosomes are found in a healthy human skin cell?",
+      "explanation": "Human somatic cells have 46 chromosomes (diploid). Gametes (sperm/egg) have 23, and a zygote returns to 46.",
+      "correctAnswer": 2,
+      "options": [
+        "23",
+        "92",
+        "46",
+        "48"
+      ],
+      "type": "multiple_choice",
+      "id": "b-mc-0003"
+    },
+    {
+      "explanation": "In an arithmetic sequence, the nth term is a + (n-1)d. Here a=5 and d=4. 5 + (19 * 4) = 5 + 76 = 81.",
+      "correctAnswer": 3,
+      "options": [
+        "77",
+        "79",
+        "85",
+        "81"
+      ],
+      "type": "multiple_choice",
+      "question": "What is the 20th term of the arithmetic sequence 5, 9, 13, 17, ...?",
+      "id": "b-mc-0004"
+    },
+    {
+      "explanation": "The pulmonary vein is the only vein that carries oxygenated blood (from lungs to left atrium).",
+      "type": "multiple_choice",
+      "options": [
+        "Vena Cava",
+        "Pulmonary Artery",
+        "Pulmonary Vein",
+        "Aorta"
+      ],
+      "correctAnswer": 2,
+      "question": "Which blood vessel carries oxygenated blood from the lungs to the heart?",
+      "id": "b-mc-0005"
+    },
+    {
+      "question": "If three islands A, B, and C are connected such that A borders B and C, and B borders C, how many distinct land boundaries exist between them?",
+      "explanation": "Islands A and B share an edge (1) and C (2). B and C share (3). Total 3 boundaries.",
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "options": [
+        "3",
+        "2",
+        "4",
+        "5"
+      ],
+      "id": "b-mc-0006"
+    },
+    {
+      "question": "In the exothermic Haber process, what happens to the equilibrium yield of ammonia if the temperature is increased?",
+      "correctAnswer": 1,
+      "options": [
+        "Yield increases because particles move faster.",
+        "Yield decreases as equilibrium shifts to the left.",
+        "Yield remains unchanged.",
+        "The reaction stops."
+      ],
+      "type": "multiple_choice",
+      "explanation": "An increase in temperature shifts the equilibrium in the endothermic direction (backwards) to absorb heat, decreasing yield.",
+      "id": "b-mc-0007"
+    },
+    {
+      "options": [
+        "1.5 A",
+        "1.0 A",
+        "0.5 A",
+        "2.0 A"
+      ],
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "explanation": "Total resistance R = R1 + R2 = 4 + 8 = 12 Ohms. Current I = V / R = 6 / 12 = 0.5 Amps.",
+      "question": "A 6V battery is connected to two resistors in series, one 4 Ohms and one 8 Ohms. What is the current in the circuit?",
+      "id": "b-mc-0008"
+    },
+    {
+      "question": "What is the primary function of amylase in the human digestive system?",
+      "explanation": "Starch is a large insoluble molecule that must be broken down by amylase into maltose (a simpler sugar).",
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "options": [
+        "To synthesize proteins.",
+        "To break down large starch molecules into smaller sugars.",
+        "To neutralize stomach acid.",
+        "To emulsify fats."
+      ],
+      "id": "b-mc-0009"
+    },
+    {
+      "explanation": "Speed = Distance / Time. 100m / 12.5s = 8 m/s.",
+      "correctAnswer": 2,
+      "options": [
+        "6 m/s",
+        "7.5 m/s",
+        "8 m/s",
+        "12.5 m/s"
+      ],
+      "type": "multiple_choice",
+      "question": "A sprinter runs 100 metres in 12.5 seconds. What is their average speed?",
+      "id": "b-mc-0010"
+    },
+    {
+      "explanation": "Group 1 elements (alkali metals) increase in reactivity as you go down the group because the outer electron is further from the nucleus.",
+      "type": "multiple_choice",
+      "options": [
+        "Reactivity increases.",
+        "Reactivity decreases.",
+        "Melting point increases.",
+        "Density decreases."
+      ],
+      "correctAnswer": 0,
+      "question": "Which of the following describes the trend in reactivity of Group 1 elements as the atomic number increases?",
+      "id": "b-mc-0011"
+    },
+    {
+      "question": "In an isosceles triangle, the two equal angles are 45 degrees each. What is the size of the third angle?",
+      "explanation": "The sum of angles in a triangle is 180. 180 - (45 + 45) = 90 degrees. Correct answer is 90.",
+      "correctAnswer": 3,
+      "options": [
+        "45 degrees",
+        "60 degrees",
+        "80 degrees",
+        "90 degrees"
+      ],
+      "type": "multiple_choice",
+      "id": "b-mc-0012"
+    },
+    {
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "options": [
+        "Right atrium",
+        "Right ventricle",
+        "Left atrium",
+        "Left ventricle"
+      ],
+      "explanation": "The right ventricle pumps deoxygenated blood to the lungs, while the left ventricle pumps oxygenated blood to the rest of the body through the aorta.",
+      "question": "Which chamber of the human heart pumps deoxygenated blood specifically to the lungs?",
+      "id": "b-mc-0013"
+    },
+    {
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "options": [
+        "Methane",
+        "Ethane",
+        "Ethene",
+        "Propane"
+      ],
+      "explanation": "Ethene (C2H4) is an alkene with a carbon-carbon double bond, meaning it is unsaturated and will decolourise bromine water.",
+      "question": "Which of the following hydrocarbons will cause bromine water to change from orange-brown to colourless?",
+      "id": "b-mc-0014"
+    },
+    {
+      "options": [
+        "5 W",
+        "12.5 W",
+        "20 W",
+        "500 W"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "explanation": "Work done = Force × Distance. Here, 50 N × 4 m = 200 J. Power is Work / Time, so 200 J / 10 s = 20 W.",
+      "question": "A constant force of 50 N is used to push a box 4 metres across a floor in 10 seconds. What is the power exerted?",
+      "id": "b-mc-0015"
+    },
+    {
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "options": [
+        "-35",
+        "-38",
+        "-42",
+        "-45"
+      ],
+      "question": "What is the 15th term of the arithmetic sequence 7, 4, 1, -2, ...?",
+      "explanation": "The nth term is a + (n-1)d. Here, 7 + (15-1)(-3) = 7 + (14 × -3) = 7 - 42 = -35.",
+      "id": "b-mc-0016"
+    },
+    {
+      "explanation": "Meiosis produces four non-identical haploid daughter cells (gametes) for sexual reproduction.",
+      "question": "In animals, what is the end result of a single cell undergoing meiosis?",
+      "type": "multiple_choice",
+      "options": [
+        "Two identical diploid cells",
+        "Two non-identical haploid cells",
+        "Four non-identical haploid cells",
+        "Four identical diploid cells"
+      ],
+      "correctAnswer": 2,
+      "id": "b-mc-0017"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Fluorine is the least reactive halogen.",
+        "Boiling points decrease as you go down the group.",
+        "The atoms get smaller as you go down the group.",
+        "Reactivity decreases as the atomic number increases."
+      ],
+      "correctAnswer": 3,
+      "explanation": "Fluorine is the most reactive, and reactivity decreases down Group 7 as the outer shell is further from the nucleus, making it harder to attract an electron.",
+      "question": "Which of the following statements is true regarding the Group 7 elements (Halogens)?",
+      "id": "b-mc-0018"
+    },
+    {
+      "question": "A car accelerates uniformly from 10 m/s to 22 m/s in 4 seconds. What is the acceleration of the car?",
+      "explanation": "Acceleration = (Final Velocity - Initial Velocity) / Time. (22 m/s - 10 m/s) / 4 s = 12 / 4 = 3 m/s².",
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "options": [
+        "2.5 m/s²",
+        "3.0 m/s²",
+        "5.5 m/s²",
+        "8.0 m/s²"
+      ],
+      "id": "b-mc-0019"
+    },
+    {
+      "question": "What is the area of a circle with a diameter of 14 cm? (Leave your answer in terms of π)",
+      "explanation": "Area of a circle = πr². If diameter = 14, radius = 7. Area = π × 7² = 49π.",
+      "options": [
+        "14π cm²",
+        "28π cm²",
+        "49π cm²",
+        "196π cm²"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "id": "b-mc-0020"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Lowering blood glucose levels",
+        "Increasing the heart rate",
+        "Breaking down proteins in the stomach",
+        "Stimulating the release of eggs from the ovaries"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Insulin is a hormone produced by the pancreas that allows cells to take in glucose, lowering blood sugar levels.",
+      "question": "What is the primary role of insulin in the human body?",
+      "id": "b-mc-0021"
+    },
+    {
+      "correctAnswer": 2,
+      "options": [
+        "Same mass number, different atomic number",
+        "Different number of electrons, same number of neutrons",
+        "Same atomic number, different mass number",
+        "Same number of neutrons, different atomic number"
+      ],
+      "type": "multiple_choice",
+      "question": "Which of the following best defines a pair of isotopes?",
+      "explanation": "Isotopes have the same number of protons (same atomic number) but different numbers of neutrons (different mass number).",
+      "id": "b-mc-0022"
+    },
+    {
+      "correctAnswer": 1,
+      "options": [
+        "37.5 N",
+        "96 N",
+        "375 N",
+        "600 N"
+      ],
+      "type": "multiple_choice",
+      "question": "On Earth (g=10 N/kg), an object weighs 600 N. What would the same object weigh on the Moon where g=1.6 N/kg?",
+      "explanation": "Weight = Mass × Gravitational Field Strength. 60 kg × 1.6 N/kg = 96 N.",
+      "id": "b-mc-0023"
+    },
+    {
+      "explanation": "Probability of two independent events both happening is the product of their individual probabilities: (1/6) × (1/6) = 1/36.",
+      "question": "What is the probability of rolling a '6' twice in a row using a fair six-sided die?",
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "options": [
+        "1/36",
+        "1/12",
+        "1/6",
+        "1/3"
+      ],
+      "id": "b-mc-0024"
+    },
+    {
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "explanation": "Glycolysis occurs in the cytoplasm, while the Link reaction, Krebs cycle, and Electron Transport Chain occur in the mitochondria.",
+      "options": [
+        "Mitochondria",
+        "Cytoplasm",
+        "Nucleus",
+        "Ribosomes"
+      ],
+      "question": "In which part of a eukaryotic cell does glycolysis take place?",
+      "id": "b-mc-0025"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "question": "Which of the following gases is most significantly responsible for the formation of acid rain?",
+      "options": [
+        "Carbon dioxide",
+        "Nitrogen gas",
+        "Methane",
+        "Sulfur dioxide"
+      ],
+      "explanation": "Sulfur dioxide (SO2) reacts with water and oxygen in the atmosphere to form sulfuric acid, a primary component of acid rain.",
+      "id": "b-mc-0026"
+    },
+    {
+      "question": "An object with a mass of 0.5 kg is moving at a constant speed of 4 m/s. What is its kinetic energy?",
+      "options": [
+        "4 J",
+        "8 J",
+        "16 J",
+        "32 J"
+      ],
+      "explanation": "Kinetic energy = 0.5 * m * v^2. Here, 0.5 * 0.5kg * (4m/s)^2 = 0.25 * 16 = 4 Joules.",
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "id": "b-mc-0027"
+    },
+    {
+      "question": "Calculate 15 less than two-fifths of 150.",
+      "options": [
+        "35",
+        "40",
+        "45",
+        "50"
+      ],
+      "explanation": "To find 2/5 of 150, divide 150 by 5 (30) and multiply by 2 (60). Then, 60 - 15 = 45.",
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "id": "b-mc-0028"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "question": "Which of the following describes the correct sequence of neurones in a reflex arc?",
+      "explanation": "In a reflex arc, the sensory neurone carries the impulse to the spinal cord, and the motor neurone carries it to the effector (muscle or gland).",
+      "options": [
+        "Relay neurone to sensory neurone",
+        "Sensory neurone to motor neurone",
+        "Motor neurone to relay neurone",
+        "Effector to sensory neurone"
+      ],
+      "id": "b-mc-0029"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "question": "Which of the following substances contains only covalent bonds?",
+      "options": [
+        "Sodium chloride (NaCl)",
+        "Magnesium oxide (MgO)",
+        "Copper (Cu)",
+        "Methane (CH4)"
+      ],
+      "explanation": "Covalent bonding involves the sharing of electron pairs between non-metal atoms; NaCl and MgO involve ions, while Cu involves metallic bonding.",
+      "id": "b-mc-0030"
+    },
+    {
+      "explanation": "The resistance of an LDR (Light Dependent Resistor) decreases as the light intensity increases.",
+      "options": [
+        "It increases linearly",
+        "It remains constant",
+        "It decreases",
+        "It increases exponentially"
+      ],
+      "question": "What happens to the electrical resistance of an LDR as the intensity of light falling on it increases?",
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "id": "b-mc-0031"
+    },
+    {
+      "question": "A sphere has a radius of 3 cm. What is its volume in terms of π?",
+      "explanation": "The volume of a sphere = (4/3) * π * r^3. If r = 3, then Volume = (4/3) * π * 27 = 4 * 9 * π = 36π.",
+      "options": [
+        "36π cm³",
+        "12π cm³",
+        "108π cm³",
+        "18π cm³"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "id": "b-mc-0032"
+    },
+    {
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "options": [
+        "Selective breeding",
+        "Genetic engineering",
+        "Natural selection",
+        "Artificial mutation"
+      ],
+      "explanation": "Natural selection is the process where organisms better adapted to their environment tend to survive and produce more offspring.",
+      "question": "What is the name of the process by which individuals with favourable traits are more likely to survive and reproduce?",
+      "id": "b-mc-0033"
+    },
+    {
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "options": [
+        "6 protons and 6 neutrons",
+        "6 protons and 8 neutrons",
+        "8 protons and 6 neutrons",
+        "14 protons and 0 neutrons road"
+      ],
+      "explanation": "Isotopes have the same number of protons (same atomic number) but different numbers of neutrons (different mass number). Carbon-14 has 8 neutrons.",
+      "question": "A neutral atom of the isotope Carbon-14 has an atomic number of 6. How many protons and neutrons does it contain?",
+      "id": "b-mc-0034"
+    },
+    {
+      "question": "Which type of ionising radiation is the least penetrating and can be stopped by a sheet of paper?",
+      "explanation": "Alpha radiation is highly ionising but has low penetrating power and is stopped by a single sheet of paper.",
+      "options": [
+        "Gamma radiation",
+        "X-rays",
+        "Beta radiation",
+        "Alpha radiation"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "id": "b-mc-0035"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "question": "If you double a number and add 7, the result is 31. What is the square of the original number?",
+      "options": [
+        "121",
+        "100",
+        "144",
+        "169"
+      ],
+      "explanation": "Let the number be x. 2x + 7 = 31. Subtract 7: 2x = 24. Divide by 2: x = 12. 12 squared is 144.",
+      "id": "b-mc-0036"
+    },
+    {
+      "explanation": "In natural selection, individuals with phenotypes better suited to their environment are more likely to survive and pass on their alleles to the next generation.",
+      "options": [
+        "Acquired characteristics are passed on to offspring.",
+        "Advantageous alleles are more likely to be passed to the next generation.",
+        "Mutations occur in response to environmental pressure.",
+        "Individuals change their genes during their lifetime to survive."
+      ],
+      "question": "Which of the following statements best describes the process of natural selection?",
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "id": "b-mc-0037"
+    },
+    {
+      "explanation": "Redox reactions involve both reduction (gain of electrons) and oxidation (loss of electrons). Displacement of a less reactive halogen is a classic example.",
+      "options": [
+        "HCl + NaOH -> NaCl + H2O",
+        "CaCO3 -> CaO + CO2",
+        "Cl2 + 2KI -> 2KCl + I2",
+        "AgNO3 + NaCl -> AgCl + NaNO3"
+      ],
+      "question": "Which of the following chemical equations represents a redox reaction?",
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "id": "b-mc-0038"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "explanation": "Work done = Force x distance. Here, 50 N x 3 m = 150 J. Power = Work / time, so 150 J / 5 s = 30 W.",
+      "options": [
+        "30 W",
+        "150 W",
+        "750 W",
+        "10 W"
+      ],
+      "question": "A force of 50 N is used to push a box 3 metres across a floor in 5 seconds. What is the power exerted?",
+      "id": "b-mc-0039"
+    },
+    {
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "question": "The price of a car increased by 20% to £18,000. What was the price of the car before the increase?",
+      "options": [
+        "£14,400",
+        "£15,200",
+        "£15,000",
+        "£16,000"
+      ],
+      "explanation": "To find the original price before a 20% increase: £18,000 / 1.20 = £15,000.",
+      "id": "b-mc-0040"
+    },
+    {
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "options": [
+        "To pump blood at high pressure.",
+        "To prevent the backflow of blood using valves.",
+        "To transport oxygenated blood only.",
+        "To provide a short diffusion pathway for substances."
+      ],
+      "question": "What is the primary structural adaptation of capillaries that facilitates gas exchange?",
+      "explanation": "Capillaries have walls only one cell thick (made of endothelial cells) to allow for efficient diffusion of gases and nutrients.",
+      "id": "b-mc-0041"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "explanation": "Mendeleev famously left gaps for undiscovered elements and swapped some elements (like tellurium and iodine) so they matched the properties of their groups.",
+      "options": [
+        "He arranged elements strictly by increasing atomic number.",
+        "He left gaps for elements he predicted had not yet been discovered.",
+        "He placed noble gases in the first column of the table.",
+        "He grouped elements based on their radioactivity."
+      ],
+      "question": "Which of the following was a key feature of Mendeleev’s early periodic table?",
+      "id": "b-mc-0042"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "explanation": "The pressure in a liquid is calculated using P = hρg (height x density x gravitational field strength).",
+      "question": "Which of the following factors affects the pressure at a specific point underwater in a lake?",
+      "options": [
+        "The shape of the container.",
+        "The depth below the surface of the liquid.",
+        "The surface area of the liquid.",
+        "The total volume of the liquid in the container."
+      ],
+      "id": "b-mc-0043"
+    },
+    {
+      "options": [
+        "17",
+        "9",
+        "7",
+        "13"
+      ],
+      "question": "Solve the equation for x: 3(x - 4) = 2x + 5",
+      "explanation": "Solving 3(x - 4) = 2x + 5 gives 3x - 12 = 2x + 5. Subtracting 2x and adding 12 to both sides results in x = 17.",
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "id": "b-mc-0044"
+    },
+    {
+      "explanation": "Bile is produced by the liver and stored in the gallbladder. Its main roles are neutralising stomach acid and emulsifying fats.",
+      "options": [
+        "Stomach",
+        "Pancreas",
+        "Liver",
+        "Small intestine"
+      ],
+      "question": "Which organ in the human body is responsible for the production of bile?",
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "id": "b-mc-0045"
+    },
+    {
+      "explanation": "Fractional distillation works because the different hydrocarbons in crude oil have different boiling points based on their chain length.",
+      "options": [
+        "Different solubility in water.",
+        "Different chemical reactivity with oxygen.",
+        "Different densities at room temperature.",
+        "Different boiling points."
+      ],
+      "question": "What physical property is exploited to separate crude oil into fractions?",
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "id": "b-mc-0046"
+    },
+    {
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "question": "A 12V battery is connected in series with two resistors of 4 Ω and 6 Ω. What is the total current in the circuit?",
+      "options": [
+        "0.5 A",
+        "2.0 A",
+        "1.2 A",
+        "3.0 A"
+      ],
+      "explanation": "Total resistance in series: 4 + 6 = 10 Ω. Using Ohm's Law (V=IR): 12 V / 10 Ω = 1.2 A.",
+      "id": "b-mc-0047"
+    },
+    {
+      "question": "A prize of £200 is split between three people in the ratio 2:3:5. What is the value of the largest share?",
+      "options": [
+        "£100",
+        "£80",
+        "£120",
+        "£60"
+      ],
+      "explanation": "The ratio 2:3:5 sums to 10 parts. Each part is £200 / 10 = £20. The largest share is 5 parts: 5 x £20 = £100.",
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "id": "b-mc-0048"
+    },
+    {
+      "explanation": "Alveoli have a high surface area to volume ratio, thin (one-cell thick) walls to minimize diffusion distance, and a moist lining to allow gases to dissolve.",
+      "options": [
+        "Narrow diameter and thick elastic walls",
+        "Small surface area and thick walls",
+        "Large surface area and one-cell thick walls",
+        "Lack of blood supply to keep gases pure"
+      ],
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "question": "Which of the following features of the alveoli in the human lungs is an adaptation for efficient gas exchange?",
+      "id": "b-mc-0049"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "In which of the following reactions will a displacement occur?",
+      "options": [
+        "Iron + Potassium Chloride",
+        "Potassium + Iron(II) Oxide",
+        "Iron + Potassium Oxide",
+        "Potassium Chloride + Iron Oxide"
+      ],
+      "explanation": "Potassium is a more reactive metal than Iron, so it will more readily lose its outer electron and replace iron in a compound.",
+      "correctAnswer": 1,
+      "id": "b-mc-0050"
+    },
+    {
+      "question": "Which of the following processes describes nuclear fusion?",
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "explanation": "Nuclear fusion involves light nuclei (like hydrogen) joining to form a heavier nucleus (like helium), releasing vast amounts of energy.",
+      "options": [
+        "Hydrogen nuclei joining to form helium",
+        "Uranium nuclei splitting into smaller fragments",
+        "The burning of hydrogen gas in oxygen",
+        "The release of electrons from a metal surface"
+      ],
+      "id": "b-mc-0051"
+    },
+    {
+      "correctAnswer": 2,
+      "options": [
+        "25% decrease",
+        "15% decrease",
+        "20% decrease",
+        "75% decrease"
+      ],
+      "explanation": "If x = 1.25y, then y = x / 1.25. 1 divided by 1.25 is 0.8, which represents an 80% value, or a 20% decrease.",
+      "question": "If the value of x is 25% greater than the value of y, by what percentage is y smaller than x?",
+      "type": "multiple_choice",
+      "id": "b-mc-0052"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What are the two main products of aerobic respiration in humans?",
+      "options": [
+        "Oxygen and Nitrogen",
+        "Carbon Dioxide and Water",
+        "Glucose and Lactic Acid",
+        "Ethanol and Carbon Dioxide"
+      ],
+      "explanation": "In the second stage of aerobic respiration, oxygen acts as the final electron acceptor to produce water; carbon dioxide is a waste product.",
+      "correctAnswer": 1,
+      "id": "b-mc-0053"
+    },
+    {
+      "correctAnswer": 3,
+      "explanation": "Diamond is a giant covalent structure where every carbon atom is bonded to four others, creating a rigid, hard lattice with no free electrons.",
+      "options": [
+        "It has a low melting point",
+        "It conducts electricity in a liquid state",
+        "Each carbon atom is bonded to three others",
+        "It has a giant covalent structure with strong bonds"
+      ],
+      "question": "Why does diamond have a very high melting point?",
+      "type": "multiple_choice",
+      "id": "b-mc-0054"
+    },
+    {
+      "question": "An object accelerates uniformly from a velocity of 5 m/s to 15 m/s in 4 seconds. What is its acceleration?",
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "options": [
+        "2.0 m/s²",
+        "2.5 m/s²",
+        "1.25 m/s²",
+        "10.0 m/s²"
+      ],
+      "explanation": "Acceleration is the change in velocity divided by time: (15 m/s - 5 m/s) / 4 s = 10 / 4 = 2.5 m/s².",
+      "id": "b-mc-0055"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "A rectangle has an area of 60 cm². If its length is three times its width, what is its perimeter?",
+      "explanation": "If area is 60 and length is 3w, then 3w * w = 60; w^2 = 20; w = √20 = 2√5. Perimeter = 2(3w + w) = 8w = 16√5.",
+      "options": [
+        "16√5 cm",
+        "20√3 cm",
+        "32 cm",
+        "8√15 cm"
+      ],
+      "correctAnswer": 0,
+      "id": "b-mc-0056"
+    },
+    {
+      "explanation": "Insulin is a hormone produced by the pancreas that triggers cells to take in glucose, thus lowering blood sugar levels.",
+      "options": [
+        "Glucagon",
+        "Glycogen",
+        "Insulin",
+        "Adrenaline"
+      ],
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "question": "Which hormone is responsible for lowering blood glucose levels after a meal?",
+      "id": "b-mc-0057"
+    },
+    {
+      "explanation": "In Group 7 (Halogens), reactivity decreases down the group because the outer shell is further from the nucleus, making it harder to attract an electron.",
+      "options": [
+        "The boiling points decrease down the group",
+        "Fluorine is the least reactive element in the group",
+        "They form positive ions when reacting with metals",
+        "Reactivity decreases as you go down the group"
+      ],
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "question": "Which statement about the halogens (Group 7) is correct?",
+      "id": "b-mc-0058"
+    },
+    {
+      "question": "What is the term for the bending of light as it passes from air into a glass block?",
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "explanation": "Refraction is the change in direction of a wave (like light) as it passes from one medium to another with a different density.",
+      "options": [
+        "Reflection",
+        "Refraction",
+        "Diffraction",
+        "Total Internal Reflection"
+      ],
+      "id": "b-mc-0059"
+    },
+    {
+      "explanation": "Total ways are 6x6=36. Pairs that sum to 10: (4,6), (5,5), (6,4). 3/36 simplifies to 1/12.",
+      "options": [
+        "1/6",
+        "1/9",
+        "1/12",
+        "1/18"
+      ],
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "question": "If two fair six-sided dice are rolled, what is the probability that the sum of the two numbers is exactly 10?",
+      "id": "b-mc-0060"
+    },
+    {
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "question": "Which of the following statements correctly describes the outcome of mitosis in a human body cell?",
+      "options": [
+        "It results in two haploid daughter cells.",
+        "It results in four diploid daughter cells.",
+        "It results in two genetically identical diploid cells.",
+        "It results in four genetically identical cells."
+      ],
+      "explanation": "Mitosis results in two genetically identical diploid daughter cells, whereas meiosis results in four genetically unique haploid gametes.",
+      "id": "b-mc-0061"
+    },
+    {
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "options": [
+        "Energy is released to the surroundings.",
+        "The temperature of the surroundings increases.",
+        "The products have less energy than the reactants.",
+        "The enthalpy change (ΔH) is positive."
+      ],
+      "question": "Which of the following is true for an endothermic reaction?",
+      "explanation": "Endothermic reactions absorb energy from the surroundings, causing the temperature of the surroundings to decrease.",
+      "id": "b-mc-0062"
+    },
+    {
+      "question": "An object has a mass of 10 kg on Earth. If it is taken to the Moon, where gravity is weaker, which statement is correct?",
+      "options": [
+        "Weight remains the same, mass decreases.",
+        "Mass remains the same, weight decreases.",
+        "Both mass and weight decrease.",
+        "Both mass and weight remain the same."
+      ],
+      "explanation": "Weight is a force (W = mg). On the Moon, mass remains the same (10kg), but lower gravity (1.6 N/kg) results in a lower weight (16N).",
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "id": "b-mc-0063"
+    },
+    {
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "options": [
+        "£80.00",
+        "£78.20",
+        "£83.00",
+        "£75.50"
+      ],
+      "question": "A coat is sold for £68 after a 15% discount. What was the original price of the coat?",
+      "explanation": "To find the original price, divide the sale price by 0.85 (100% - 15%). £68 / 0.85 = £80.",
+      "id": "b-mc-0064"
+    },
+    {
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "question": "What is the primary function of a reflex arc?",
+      "options": [
+        "To allow the brain to process information more deeply.",
+        "To provide a rapid, automatic response to a stimulus.",
+        "To ensure muscles only contract slowly.",
+        "To allow for voluntary control of movement."
+      ],
+      "explanation": "Reflex arcs bypass the conscious parts of the brain to ensure a rapid response to danger, usually involving the spinal cord or brainstem.",
+      "id": "b-mc-0065"
+    },
+    {
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "options": [
+        "They become less reactive as you go down the group.",
+        "They are stored in water to prevent reaction.",
+        "They react with water to produce hydrogen gas.",
+        "They form negative ions (anions) during reactions."
+      ],
+      "question": "Which of the following is a correct property of the Alkali Metals (Group 1)?",
+      "explanation": "Potassium is more reactive than Lithium and Sodium because its outer electron is further from the nucleus, making it easier to lose.",
+      "id": "b-mc-0066"
+    },
+    {
+      "options": [
+        "50 Hz",
+        "20 Hz",
+        "0.5 Hz",
+        "200 Hz"
+      ],
+      "question": "A sound wave has a period of 0.02 seconds. What is its frequency?",
+      "explanation": "The frequency of a wave is the number of cycles per second, calculated as 1 / period (1 / 0.02 = 50).",
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "id": "b-mc-0067"
+    },
+    {
+      "options": [
+        "4x² - 9",
+        "4x² + 9",
+        "4x² - 6x + 9",
+        "4x² - 12x + 9"
+      ],
+      "question": "Expand and simplify the expression: (2x - 3)²",
+      "explanation": "Expanding (2x - 3)² gives (2x - 3)(2x - 3) = 4x² - 6x - 6x + 9 = 4x² - 12x + 9.",
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "id": "b-mc-0068"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "explanation": "White blood cells (leukocytes) are the primary components of the immune system responsible for identifying and destroying pathogens.",
+      "options": [
+        "Red blood cells",
+        "White blood cells",
+        "Platelets",
+        "Plasma"
+      ],
+      "question": "Which component of human blood is primarily responsible for defending the body against pathogens?",
+      "id": "b-mc-0069"
+    },
+    {
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "options": [
+        "They have different numbers of protons.",
+        "They have different chemical properties.",
+        "They have different mass numbers.",
+        "They have different numbers of electrons."
+      ],
+      "question": "Which of the following is true for isotopes of the same element?",
+      "explanation": "Isotopes are atoms of the same element with the same number of protons but different numbers of neutrons.",
+      "id": "b-mc-0070"
+    },
+    {
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "question": "What is the power of a converging lens with a focal length of 50 cm?",
+      "options": [
+        "+2.0 D",
+        "+0.5 D",
+        "+5.0 D",
+        "-2.0 D"
+      ],
+      "explanation": "The power of a lens is the reciprocal of the focal length in metres. P = 1 / 0.5 = 2.0 D.",
+      "id": "b-mc-0071"
+    },
+    {
+      "explanation": "The volume of a cylinder is V = πr²h. V = π * 3² * 10 = 90π.",
+      "options": [
+        "30π cm³",
+        "60π cm³",
+        "45π cm³",
+        "90π cm³"
+      ],
+      "question": "A cylinder has a radius of 3 cm and a height of 10 cm. What is its volume in terms of π?",
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "id": "b-mc-0072"
+    },
+    {
+      "question": "What are the primary products of anaerobic respiration in a human muscle cell?",
+      "options": [
+        "Carbon dioxide and water",
+        "Lactic acid and energy",
+        "Ethanol and carbon dioxide",
+        "Oxygen and glucose"
+      ],
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "explanation": "Lactic acid is produced during anaerobic respiration in muscle cells, while carbon dioxide and water are products of aerobic respiration.",
+      "id": "b-mc-0073"
+    },
+    {
+      "question": "Why is graphite commonly used as a lubricant in machinery?",
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "options": [
+        "Weak intermolecular forces between layers of carbon atoms.",
+        "Large gaps between the atoms in the covalent lattice.",
+        "Delocalised electrons that allow the atoms to shift.",
+        "The presence of ionic bonds within the structure."
+      ],
+      "explanation": "Graphite has layers of carbon atoms that can slide over each other due to weak intermolecular forces between the layers.",
+      "id": "b-mc-0074"
+    },
+    {
+      "explanation": "Momentum = mass × velocity. (0.5 kg × 10 m/s) - (0.5 kg × -6 m/s) = 5 + 3 = 8 kg m/s. Velocity is a vector.",
+      "options": [
+        "2 kg m/s",
+        "3 kg m/s",
+        "8 kg m/s",
+        "5 kg m/s"
+      ],
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "question": "A 0.5 kg ball hits a wall at 10 m/s and bounces back at 6 m/s. What is the magnitude of the change in momentum?",
+      "id": "b-mc-0075"
+    },
+    {
+      "question": "If the length of each side of a cube is doubled, by what factor does its surface area increase?",
+      "explanation": "The surface area of a cube is 6s². If s = 4, area = 6 × 16 = 96. If s = 8, area = 6 × 64 = 384. 384 / 96 = 4.",
+      "options": [
+        "2 times",
+        "3 times",
+        "6 times",
+        "4 times"
+      ],
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "id": "b-mc-0076"
+    },
+    {
+      "explanation": "The xylem transports water and minerals up the plant, while the phloem transports sugars (sucrose) and amino acids.",
+      "type": "multiple_choice",
+      "options": [
+        "Phloem",
+        "Xylem",
+        "Stomata",
+        "Mesophyll"
+      ],
+      "correctAnswer": 1,
+      "question": "Which plant tissue is responsible for the transport of water and dissolved minerals from the roots to the leaves?",
+      "id": "b-mc-0077"
+    },
+    {
+      "question": "In terms of electron transfer, what is the definition of reduction?",
+      "type": "multiple_choice",
+      "options": [
+        "Gain of electrons",
+        "Loss of electrons",
+        "Gain of oxygen",
+        "Loss of protons"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Reduction is the gain of electrons (OIL RIG: Oxidation Is Loss, Reduction Is Gain).",
+      "id": "b-mc-0078"
+    },
+    {
+      "question": "What is the total resistance of a circuit containing a 6 Ω resistor and a 12 Ω resistor connected in parallel?",
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "options": [
+        "18 Ω",
+        "4 Ω",
+        "2 Ω",
+        "9 Ω"
+      ],
+      "explanation": "The total resistance in a parallel circuit is 1/Rt = 1/R1 + 1/R2. Here 1/Rt = 1/6 + 1/12 = 3/12, so Rt = 4 Ω.",
+      "id": "b-mc-0079"
+    },
+    {
+      "question": "A pair of shoes costs £120. It is discounted by 15%, and then a further 10% is taken off the new price. What is the final price?",
+      "explanation": "First, calculate 15% of 120 (18). 120 - 18 = 102. Then 10% of 102 (10.20). 102 - 10.20 = 91.80.",
+      "options": [
+        "£90.00",
+        "£92.00",
+        "£91.80",
+        "£89.50"
+      ],
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "id": "b-mc-0080"
+    },
+    {
+      "explanation": "Natural selection requires genetic variation to allow certain individuals to have a survival advantage.",
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "options": [
+        "A stable environment without change",
+        "No competition for resources",
+        "Identical genetic makeup in all individuals",
+        "Genetic variation within a population"
+      ],
+      "question": "Which of the following is an essential requirement for evolution by natural selection to occur?",
+      "id": "b-mc-0081"
+    },
+    {
+      "explanation": "Moles = volume (dm³) × concentration. 0.050 dm³ × 2.0 mol/dm³ = 0.1 mol.",
+      "correctAnswer": 2,
+      "options": [
+        "0.25 mol",
+        "0.2 mol",
+        "0.1 mol",
+        "0.01 mol"
+      ],
+      "type": "multiple_choice",
+      "question": "Calculate the number of moles of solute in 50 cm³ of a 2.0 mol/dm³ solution of hydrochloric acid.",
+      "id": "b-mc-0082"
+    },
+    {
+      "question": "Under what condition does total internal reflection occur?",
+      "explanation": "Total internal reflection occurs when the angle of incidence is greater than the critical angle as light travels into a less dense medium.",
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "options": [
+        "The angle of incidence is greater than the critical angle.",
+        "The angle of incidence is equal to the angle of refraction.",
+        "Light travels from a lower density to a higher density medium.",
+        "The critical angle is exactly 90 degrees."
+      ],
+      "id": "b-mc-0083"
+    },
+    {
+      "explanation": "Area = ½ × base × height. 30 = ½ × 12 × height. 30 = 6h, so h = 5 cm. Using Pythagoras: √(6² + 5²) = √61.",
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "options": [
+        "√41 cm",
+        "√61 cm",
+        "7 cm",
+        "13 cm"
+      ],
+      "question": "An isosceles triangle has an area of 30 cm² and a base of 12 cm. What is the length of one of the two equal sides?",
+      "id": "b-mc-0084"
+    },
+    {
+      "options": [
+        "Glucagon, glycogen to glucose",
+        "Insulin, glucose to glycogen",
+        "Adrenaline, glucose to glycogen",
+        "Insulin, glycogen to glucose"
+      ],
+      "question": "Which hormone is released by the pancreas when blood glucose levels are high, and what is its effect on the liver?",
+      "explanation": "Insulin causes the liver and muscle cells to take up glucose and convert it into glycogen for storage, lowering blood sugar levels.",
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "id": "b-mc-0085"
+    },
+    {
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "options": [
+        "Fluorine is the most reactive because it has the fewest shells of electrons.",
+        "Astatine is the most reactive because it has the largest atomic mass.",
+        "Reactivity increases down the group as the atoms get larger.",
+        "Chlorine is less reactive than Iodine because it has higher electronegativity."
+      ],
+      "question": "Which statement correctly describes the reactivity of the Halogens (Group 7)?",
+      "explanation": "Going down Group 7, the atomic radius increases and shielding increases, making it harder for the nucleus to attract an incoming electron to form a negative ion.",
+      "id": "b-mc-0086"
+    },
+    {
+      "question": "A resistor of 5 Ω has a current of 2 A flowing through it. What is the power dissipated by the resistor?",
+      "options": [
+        "10 W",
+        "0.8 W",
+        "20 W",
+        "50 W"
+      ],
+      "explanation": "Power is calculated as current squared multiplied by resistance (P = I²R). 2² x 5 = 20 Watts.",
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "id": "b-mc-0087"
+    },
+    {
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "options": [
+        "108°",
+        "140°",
+        "120°",
+        "135°"
+      ],
+      "question": "In a regular hexagon, what is the size of each interior angle?",
+      "explanation": "The sum of the interior angles of a hexagon is 720°. (720 - 120) / 5 = 120°. Since all angles are equal, each must be 120°.",
+      "id": "b-mc-0088"
+    },
+    {
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "options": [
+        "Four haploid daughter cells",
+        "Two diploid daughter cells",
+        "Four diploid daughter cells",
+        "Two haploid daughter cells"
+      ],
+      "question": "What are the final products of a single cell undergoing meiosis?",
+      "explanation": "Meiosis produces four genetically non-identical haploid cells whereas mitosis produces two genetically identical diploid cells.",
+      "id": "b-mc-0089"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "explanation": "A catalyst provides an alternative reaction pathway with a lower activation energy, increasing the rate of reaction.",
+      "options": [
+        "It increases the kinetic energy of the particles.",
+        "It shifts the position of equilibrium towards the products.",
+        "It increases the frequency of collisions between particles.",
+        "It provides a pathway with a lower activation energy."
+      ],
+      "question": "How does a catalyst increase the rate of a chemical reaction?",
+      "id": "b-mc-0090"
+    },
+    {
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "question": "A student lifts a 15 kg box vertically through a height of 2 metres. Taking g = 10 m/s², how much work is done against gravity?",
+      "options": [
+        "30 J",
+        "300 J",
+        "150 J",
+        "7.5 J"
+      ],
+      "explanation": "Work done = Force x distance. Here, the force is weight (15 kg x 10 m/s² = 150 N). 150 N x 2 m = 300 J.",
+      "id": "b-mc-0091"
+    },
+    {
+      "options": [
+        "1:1",
+        "2:3",
+        "9:11",
+        "11:9"
+      ],
+      "question": "In a school of 400 students, there are 40 more girls than boys. What is the ratio of boys to girls in its simplest form?",
+      "explanation": "Let x be the number of boys. Girls = x + 40. x + (x + 40) = 400. 2x = 360, so x = 180. The ratio 180:220 simplifies to 9:11.",
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "id": "b-mc-0092"
+    },
+    {
+      "question": "Which feature of capillaries allows for the efficient exchange of substances between blood and tissues?",
+      "options": [
+        "Their walls are only one cell thick.",
+        "They contain valves to prevent the backflow of blood.",
+        "They carry blood at very high pressures.",
+        "They have a very narrow lumen to slow down blood flow."
+      ],
+      "explanation": "Capillaries have walls only one cell thick to provide a short diffusion distance for oxygen, nutrients, and waste products.",
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "id": "b-mc-0093"
+    },
+    {
+      "question": "Which of the following pairs of hydrocarbons have the same empirical formula?",
+      "options": [
+        "CH₄ and C₂H₆",
+        "C₂H₂ and C₂H₄",
+        "C₂H₄ and C₄H₁₀",
+        "C₂H₄ and C₃H₆"
+      ],
+      "explanation": "Empirical formula is the simplest whole-number ratio. C₂H₄ simplifies to CH₂. Both C₂H₄ and C₃H₆ have the empirical formula CH₂.",
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "id": "b-mc-0094"
+    },
+    {
+      "question": "What happens to the atomic number of a nucleus when it undergoes beta-minus (β-) decay?",
+      "options": [
+        "The mass number decreases by 4.",
+        "The atomic number increases by 1.",
+        "The atomic number decreases by 2.",
+        "The mass number increases by 1."
+      ],
+      "explanation": "Beta radiation occurs when a neutron in the nucleus turns into a proton and an electron (the beta particle). The atomic number increases by 1.",
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "id": "b-mc-0095"
+    },
+    {
+      "explanation": "The standard form for 0.00045 is 4.5 × 10⁻⁴. Multiplying this by 2 gives 9.0 × 10⁻⁴.",
+      "question": "What is the value of 2 multiplied by 0.00045, expressed in standard form?",
+      "options": [
+        "9.0 × 10⁻⁴",
+        "9.0 × 10⁻⁵",
+        "4.5 × 10⁻⁸",
+        "9.0 × 10⁻³"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "id": "b-mc-0096"
+    },
+    {
+      "explanation": "DNA is a polymer made of four different nucleotide monomers: adenine, thymine, cytosine, and guanine.",
+      "options": [
+        "Amino acids",
+        "Nucleotides",
+        "Fatty acids",
+        "Monosaccharides"
+      ],
+      "question": "What are the individual building blocks (monomers) of a DNA molecule?",
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "id": "b-mc-0097"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "explanation": "In an exothermic reaction, energy is released into the surroundings, so the enthalpy of the products is lower than the reactants (negative ΔH).",
+      "options": [
+        "ΔH is positive and temperature increases",
+        "ΔH is positive and temperature decreases",
+        "ΔH is negative and temperature decreases",
+        "ΔH is negative and temperature increases"
+      ],
+      "question": "Which of the following describes an exothermic reaction?",
+      "id": "b-mc-0098"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "explanation": "The law of conservation of momentum states that total momentum remains constant in a closed system where no external forces act.",
+      "question": "Two objects collide and stick together in a closed system. What happens to the total momentum of the system?",
+      "options": [
+        "It remains the same",
+        "It doubles",
+        "It is reduced to zero",
+        "It increases by the mass of the objects"
+      ],
+      "id": "b-mc-0099"
+    },
+    {
+      "explanation": "If 20% are red, 80% are blue. The ratio is 20:80, which simplifies to 1:4.",
+      "question": "A bag contains only red and blue marbles. If 20% of the marbles are red, what is the ratio of red marbles to blue marbles?",
+      "options": [
+        "1:5",
+        "4:5",
+        "1:4",
+        "4:1"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "id": "b-mc-0100"
+    },
+    {
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "options": [
+        "Stomach and Pancreas",
+        "Liver and Small Intestine",
+        "Salivary Glands and Pancreas",
+        "Salivary Glands and Stomach"
+      ],
+      "question": "In the human digestive system, which two organs produce amylase?",
+      "explanation": "Amylase is produced in the salivary glands and the pancreas to break down starch into maltose.",
+      "id": "b-mc-0101"
+    },
+    {
+      "question": "What is the mass of 0.5 moles of carbon dioxide (CO2)? (Ar: C=12, O=16)",
+      "options": [
+        "44g",
+        "22g",
+        "11g",
+        "26g"
+      ],
+      "explanation": "The mass of 0.5 moles of CO2 is 0.5 * (12 + 16*2) = 0.5 * 44 = 22g.",
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "id": "b-mc-0102"
+    },
+    {
+      "question": "When light passes from air into a glass block, which of the following properties remains unchanged?",
+      "options": [
+        "Speed",
+        "Wavelength",
+        "Direction",
+        "Frequency"
+      ],
+      "explanation": "Frequency remains constant when a wave changes medium; only speed and wavelength change.",
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "id": "b-mc-0103"
+    },
+    {
+      "explanation": "Since the angles in a triangle must sum to 180, x + 2x + 60 = 180, so 3x = 120, and x = 40.",
+      "question": "The angles in a triangle are x, 2x, and 60°. What are the values of the two unknown angles?",
+      "options": [
+        "40° and 80°",
+        "30° and 90°",
+        "50° and 70°",
+        "20° and 100°"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "id": "b-mc-0104"
+    },
+    {
+      "options": [
+        "23 and 23",
+        "46 and 23",
+        "23 and 46",
+        "46 and 46"
+      ],
+      "question": "How many chromosomes are found in a human skin cell and a human sperm cell respectively?",
+      "explanation": "Human body cells are diploid (46 chromosomes), while gametes (sperm/egg) are haploid (23 chromosomes).",
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "id": "b-mc-0105"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "explanation": "Isotopes have the same number of protons (atomic number) but different numbers of neutrons (mass number).",
+      "question": "Which statement correctly describes isotopes of the same element?",
+      "options": [
+        "Different number of protons, same number of neutrons",
+        "Same number of protons, same number of electrons, same number of neutrons",
+        "Same number of protons, different number of neutrons",
+        "Different number of protons, different number of neutrons"
+      ],
+      "id": "b-mc-0106"
+    },
+    {
+      "options": [
+        "100 V",
+        "400 V",
+        "0.0025 V",
+        "50 V"
+      ],
+      "question": "A current of 0.5 A flows through a 200 Ω resistor. What is the potential difference across the resistor?",
+      "explanation": "Using V = IR, the potential difference is 0.5 A * 200 Ω = 100 V.",
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "id": "b-mc-0107"
+    },
+    {
+      "options": [
+        "1/2",
+        "1/4",
+        "1/8",
+        "1/16"
+      ],
+      "question": "A fair coin is tossed three times. What is the probability of getting three heads?",
+      "explanation": "The probability is 1/2 * 1/2 * 1/2 = 1/8.",
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "id": "b-mc-0108"
+    },
+    {
+      "question": "Which of the following describes the outcome of a single cell undergoing mitosis?",
+      "correctAnswer": 2,
+      "explanation": "Mitosis produces two genetically identical diploid daughter cells for growth and repair.",
+      "type": "multiple_choice",
+      "options": [
+        "Four genetically different haploid cells",
+        "Four genetically identical diploid cells",
+        "Two genetically identical diploid cells",
+        "Two genetically different haploid cells"
+      ],
+      "id": "b-mc-0109"
+    },
+    {
+      "question": "In the electrolysis of aqueous sodium chloride, what substance is produced at the negative electrode (cathode)?",
+      "correctAnswer": 1,
+      "explanation": "In electrolysis of aqueous salts, the least reactive metal (or hydrogen) is reduced at the cathode; since sodium is more reactive than hydrogen, hydrogen gas is produced.",
+      "type": "multiple_choice",
+      "options": [
+        "Sodium metal",
+        "Hydrogen gas",
+        "Chlorine gas",
+        "Oxygen gas"
+      ],
+      "id": "b-mc-0110"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "4%",
+        "400%",
+        "75%",
+        "25%"
+      ],
+      "question": "An electric motor is supplied with 1200 J of electrical energy. It performs 300 J of useful work. What is the efficiency of the motor?",
+      "correctAnswer": 3,
+      "explanation": "Efficiency = (Useful Energy Out / Total Energy In) * 100. (300 / 1200) * 100 = 25%.",
+      "id": "b-mc-0111"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "30 m³",
+        "300 m³",
+        "3000 m³",
+        "3 m³"
+      ],
+      "explanation": "Volume = Length × Width × Height. 200 cm = 2 m. Total volume = 5 × 3 × 2 = 30 cubic metres.",
+      "question": "A rectangular swimming pool is 5 metres long, 3 metres wide, and 200 centimetres deep. What is the total volume of the pool in cubic metres?",
+      "correctAnswer": 0,
+      "id": "b-mc-0112"
+    },
+    {
+      "question": "Which type of neurone carries impulses from sense organs to the central nervous system?",
+      "correctAnswer": 1,
+      "explanation": "Sensory neurones carry electrical impulses from receptors (like skin) to the Central Nervous System (CNS).",
+      "type": "multiple_choice",
+      "options": [
+        "Motor neurone",
+        "Sensory neurone",
+        "Relay neurone",
+        "Effector neurone"
+      ],
+      "id": "b-mc-0113"
+    },
+    {
+      "correctAnswer": 2,
+      "question": "Which of the following pairs contains only alkanes?",
+      "explanation": "The general formula for alkanes is CnH2n+2. Ethane (C2H6) fits this; Ethene (C2H4) is an alkene.",
+      "options": [
+        "Methane and Ethene",
+        "Ethane and Propene",
+        "Propane and Ethane",
+        "Ethene and Butene"
+      ],
+      "type": "multiple_choice",
+      "id": "b-mc-0114"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "1200 Pa",
+        "150 Pa",
+        "300 Pa",
+        "600 Pa"
+      ],
+      "question": "A force of 600 N is applied over an area of 2 square metres. What is the resulting pressure?",
+      "correctAnswer": 2,
+      "explanation": "Pressure = Force / Area. 600 N / 2 m² = 300 N/m² (Pascals).",
+      "id": "b-mc-0115"
+    },
+    {
+      "options": [
+        "15 cm²",
+        "45 cm²",
+        "135 cm²",
+        "25 cm²"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "question": "Two mathematically similar triangles have side lengths in the ratio 1:3. If the area of the smaller triangle is 5 cm², what is the area of the larger triangle?",
+      "explanation": "The scale factor for area is the square of the scale factor for length. 3 squared is 9. 5 cm² × 9 = 45 cm².",
+      "id": "b-mc-0116"
+    },
+    {
+      "correctAnswer": 3,
+      "question": "Which changes occur in the thorax during inhalation?",
+      "explanation": "During inhalation, the diaphragm contracts and flattens, while the external intercostal muscles contract to lift the ribcage, increasing lung volume.",
+      "options": [
+        "Diaphragm relaxes and moves up, intercostal muscles relax",
+        "Diaphragm contracts and moves up, intercostal muscles contract",
+        "Diaphragm relaxes and flattens, intercostal muscles relax",
+        "Diaphragm contracts and flattens, intercostal muscles contract"
+      ],
+      "type": "multiple_choice",
+      "id": "b-mc-0117"
+    },
+    {
+      "explanation": "Oxidation is the loss of electrons (OIL RIG); Mg loses two electrons to become Mg2+.",
+      "correctAnswer": 0,
+      "question": "In the reaction 2Mg + O2 -> 2MgO, which statement about electron transfer is correct?",
+      "options": [
+        "Magnesium is oxidised because it loses electrons",
+        "Magnesium is reduced because it gains electrons",
+        "Oxygen is oxidised because it gains electrons",
+        "Oxygen is reduced because it loses electrons"
+      ],
+      "type": "multiple_choice",
+      "id": "b-mc-0118"
+    },
+    {
+      "question": "Which type of nuclear radiation has the highest ionising power and the lowest penetrating power?",
+      "correctAnswer": 2,
+      "explanation": "Alpha particles consist of 2 protons and 2 neutrons, so they have a mass of 4 and a charge of +2. Beta particles have negligible mass.",
+      "type": "multiple_choice",
+      "options": [
+        "Beta particle",
+        "Gamma ray",
+        "Alpha particle",
+        "Neutron radiation"
+      ],
+      "id": "b-mc-0119"
+    },
+    {
+      "correctAnswer": 1,
+      "question": "What are the gradient and y-intercept of the line with the equation 6x - 3y = 12?",
+      "explanation": "Rearranging the equation: 3y = 6x - 12 => y = 2x - 4. The gradient (m) is 2 and the y-intercept (c) is -4.",
+      "options": [
+        "Gradient = 6, y-intercept = -12",
+        "Gradient = 2, y-intercept = -4",
+        "Gradient = -2, y-intercept = 4",
+        "Gradient = 2, y-intercept = 4"
+      ],
+      "type": "multiple_choice",
+      "id": "b-mc-0120"
+    },
+    {
+      "correctAnswer": 1,
+      "question": "Which chambers of the heart contain oxygenated blood?",
+      "explanation": "Oxygenated blood returns from the lungs via the pulmonary vein into the left atrium, then passes to the left ventricle.",
+      "options": [
+        "Right atrium and right ventricle",
+        "Left atrium and left ventricle",
+        "Left atrium and right atrium",
+        "Right ventricle and pulmonary artery"
+      ],
+      "type": "multiple_choice",
+      "id": "b-mc-0121"
+    },
+    {
+      "question": "An element X is in Group 1 of the Periodic Table. An element Y is in Group 7. What is the formula of the ionic compound formed between X and Y?",
+      "correctAnswer": 2,
+      "explanation": "Group 1 elements lose one electron to form 1+ ions; Group 7 elements gain one electron to form 1- ions. The ratio is 1:1.",
+      "type": "multiple_choice",
+      "options": [
+        "XY2",
+        "X2Y",
+        "XY",
+        "X2Y2"
+      ],
+      "id": "b-mc-0122"
+    },
+    {
+      "options": [
+        "600 W",
+        "360 W",
+        "36 W",
+        "60 W"
+      ],
+      "type": "multiple_choice",
+      "explanation": "Power = Energy / Time. 360,000 Joules / 600 seconds = 600 Watts.",
+      "correctAnswer": 0,
+      "question": "An electric kettle transfers 360 kJ of energy to water in 10 minutes. What is the power of the kettle?",
+      "id": "b-mc-0123"
+    },
+    {
+      "explanation": "15% of £80 is £12. £80 - £12 = £68. Then 10% of £68 is £6.80. £68 - £6.80 = £61.20.",
+      "question": "A coat costs £80. Its price is reduced by 15% in a sale. A week later, the sale price is reduced by a further 10%. What is the final price?",
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "options": [
+        "£60.00",
+        "£59.50",
+        "£62.40",
+        "£61.20"
+      ],
+      "id": "b-mc-0124"
+    },
+    {
+      "explanation": "Active transport moves substances from a low to a high concentration (against the gradient) and requires ATP from respiration.",
+      "correctAnswer": 0,
+      "question": "Which process describes the movement of mineral ions into plant root hair cells against a concentration gradient?",
+      "options": [
+        "Active transport",
+        "Osmosis",
+        "Facilitated diffusion",
+        "Simple diffusion"
+      ],
+      "type": "multiple_choice",
+      "id": "b-mc-0125"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "0.01 moles",
+        "0.1 moles",
+        "0.2 moles",
+        "0.4 moles"
+      ],
+      "question": "How many moles are there in 4.0 g of magnesium oxide (MgO)? (Ar: Mg=24, O=16)",
+      "correctAnswer": 1,
+      "explanation": "The relative formula mass of MgO is 24 + 16 = 40. 4g / 40g/mol = 0.1 moles.",
+      "id": "b-mc-0126"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "15 seconds",
+        "10 seconds",
+        "5 seconds",
+        "2 seconds"
+      ],
+      "explanation": "The total distance is 150m (sum of lengths) and the relative speed is 30m/s (sum of speeds). Time = 150/30 = 5 seconds.",
+      "question": "Train A (100m long) travels at 20m/s. Train B (50m long) travels at 10m/s in the opposite direction. How long does it take for them to completely pass each other?",
+      "correctAnswer": 2,
+      "id": "b-mc-0127"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "1/9",
+        "1/6",
+        "1/12",
+        "1/18"
+      ],
+      "explanation": "The total number of outcomes is 6 x 6 = 36. Pairs that sum to 4 are (1,3), (2,2), and (3,1). 3/36 = 1/12.",
+      "question": "Two fair six-sided dice are rolled. What is the probability that the sum of the two numbers shown is exactly 4?",
+      "correctAnswer": 2,
+      "id": "b-mc-0128"
+    },
+    {
+      "question": "In the human body, where is bile produced?",
+      "correctAnswer": 2,
+      "explanation": "Bile is produced by the liver and stored in the gallbladder before being released into the small intestine to emulsify fats.",
+      "type": "multiple_choice",
+      "options": [
+        "Pancreas",
+        "Stomach",
+        "Liver",
+        "Small intestine"
+      ],
+      "id": "b-mc-0129"
+    },
+    {
+      "options": [
+        "Solubility in water",
+        "Boiling point",
+        "Density",
+        "Chemical reactivity"
+      ],
+      "type": "multiple_choice",
+      "explanation": "Fractional distillation separates crude oil based on the different boiling points of the hydrocarbon chains.",
+      "correctAnswer": 1,
+      "question": "What physical property is used to separate the Different fractions of crude oil during fractional distillation?",
+      "id": "b-mc-0130"
+    },
+    {
+      "correctAnswer": 3,
+      "question": "A ray of light hits a plane mirror at an angle of incidence of 60°. What is the angle of reflection?",
+      "explanation": "The angle of incidence always equals the angle of reflection when measured from the normal.",
+      "options": [
+        "30°",
+        "90°",
+        "120°",
+        "60°"
+      ],
+      "type": "multiple_choice",
+      "id": "b-mc-0131"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "2x² + 7x - 15",
+        "2x² - 7x - 15",
+        "2x² + 13x - 15",
+        "2x² + 7x + 15"
+      ],
+      "explanation": "Expanding (2x - 3)(x + 5) gives 2x² + 10x - 3x - 15, which simplifies to 2x² + 7x - 15.",
+      "question": "Which of the following is the correct expansion and simplification of (2x - 3)(x + 5)?",
+      "correctAnswer": 0,
+      "id": "b-mc-0132"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "options": [
+        "Reduction by carbon in a blast furnace",
+        "Heating the ore in air",
+        "Electrolysis of molten aluminium oxide",
+        "Thermal decomposition of aluminium carbonate"
+      ],
+      "explanation": "Aluminium is extracted from its ore (bauxite) using electrolysis because it is more reactive than carbon.",
+      "question": "Which method is typically used to extract aluminium from its ore?",
+      "id": "b-mc-0133"
+    },
+    {
+      "explanation": "Mitochondria are the site of aerobic respiration, which releases energy in the form of ATP.",
+      "type": "multiple_choice",
+      "options": [
+        "Mitochondrion",
+        "Ribosome",
+        "Rough endoplasmic reticulum",
+        "Golgi apparatus"
+      ],
+      "correctAnswer": 0,
+      "question": "Which cell organelle is the site of aerobic respiration?",
+      "id": "b-mc-0134"
+    },
+    {
+      "question": "Which of the following is a vector quantity?",
+      "explanation": "A vector has both magnitude and direction. Velocity includes direction, whereas the others are scalar quantities.",
+      "type": "multiple_choice",
+      "options": [
+        "Speed",
+        "Distance",
+        "Mass",
+        "Velocity"
+      ],
+      "correctAnswer": 3,
+      "id": "b-mc-0135"
+    },
+    {
+      "explanation": "To solve 3x/4 - 2 = 10, add 2 to get 3x/4 = 12, then multiply by 4 to get 3x = 48, and divide by 3 to get x = 16.",
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "options": [
+        "12",
+        "16",
+        "18",
+        "9"
+      ],
+      "question": "Solve the equation: 3x / 4 - 2 = 10",
+      "id": "b-mc-0136"
+    },
+    {
+      "question": "What type of biological molecule are enzymes primarily composed of?",
+      "correctAnswer": 0,
+      "options": [
+        "Proteins",
+        "Carbohydrates",
+        "Lipids",
+        "Nucleic acids"
+      ],
+      "type": "multiple_choice",
+      "explanation": "Enzymes are biological catalysts made of proteins that increase the rate of chemical reactions without being consumed.",
+      "id": "b-mc-0137"
+    },
+    {
+      "explanation": "Group 1 elements react with water to produce a metal hydroxide and hydrogen gas. Metal oxides are not produced in this reaction.",
+      "options": [
+        "A metal oxide only",
+        "A metal oxide and hydrogen gas",
+        "A metal hydroxide and hydrogen gas",
+        "A metal and steam"
+      ],
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "question": "When a Group 1 metal reacts with water, what are the products?",
+      "id": "b-mc-0138"
+    },
+    {
+      "question": "A bulb in a 12 V circuit has a current of 2 A flowing through it. What is the power output of the bulb?",
+      "explanation": "Power = current × voltage. Using 12 V and 2 A, the power is 12 × 2 = 24 W.",
+      "correctAnswer": 1,
+      "options": [
+        "6 W",
+        "24 W",
+        "14 W",
+        "10 W"
+      ],
+      "type": "multiple_choice",
+      "id": "b-mc-0139"
+    },
+    {
+      "question": "Between which two consecutive integers does the value of the square root of 30 lie?",
+      "type": "multiple_choice",
+      "options": [
+        "Between 4 and 5",
+        "Between 5 and 6",
+        "Between 6 and 7",
+        "Between 7 and 8"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The square of 5 is 25. The square of 6 is 36. Therefore, sqrt(30) must fall between 5 and 6.",
+      "id": "b-mc-0140"
+    },
+    {
+      "explanation": "Natural selection involves genetic variation, environmental pressure leading to survival of the fittest, and inheritance of advantageous alleles.",
+      "options": [
+        "Acquiring traits through use and disuse during a lifetime",
+        "Artificial breeding by humans for specific traits",
+        "Random mutations that have no effect on survival",
+        "Survival and reproduction of individuals with advantageous alleles"
+      ],
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "question": "Which of the following best describes the process of natural selection?",
+      "id": "b-mc-0141"
+    },
+    {
+      "options": [
+        "Acid + Metal -> Salt + Hydrogen",
+        "Acid + Carbonate -> Salt + Water + Carbon Dioxide",
+        "Acid + Alkali -> Salt + Water",
+        "Displacement of a less reactive metal"
+      ],
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "explanation": "A neutralisation reaction occurs between an acid and a base (alkali), typically producing a salt and water.",
+      "question": "Which of the following describes a neutralisation reaction?",
+      "id": "b-mc-0142"
+    },
+    {
+      "explanation": "Density = Mass / Volume. Here, 500g / 250cm³ = 2 g/cm³.",
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "options": [
+        "0.5 g/cm³",
+        "2.0 g/cm³",
+        "125 g/cm³",
+        "125,000 g/cm³"
+      ],
+      "question": "An object has a mass of 500 g and a volume of 250 cm³. What is its density?",
+      "id": "b-mc-0143"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "options": [
+        "102",
+        "105",
+        "108",
+        "112"
+      ],
+      "explanation": "To find 15% of 120, multiply 120 by 0.15 (or 10% is 12 and 5% is 6), giving 18. Subtract 18 from 120 to get 102.",
+      "question": "In a sale, a £120 bicycle is reduced by 15%. What is the new price?",
+      "id": "b-mc-0144"
+    },
+    {
+      "options": [
+        "Xylem",
+        "Stomata",
+        "Phloem",
+        "Spongy mesophyll"
+      ],
+      "question": "Which plant tissue is responsible for the transport of dissolved sugars from the leaves to the rest of the plant?",
+      "explanation": "Phloem is responsible for the translocation of sugars (sucrose) and amino acids from sources to sinks.",
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "id": "b-mc-0145"
+    },
+    {
+      "explanation": "In the periodic table, Group 7 elements (halogens) become less reactive as you go down the group because the outer shell is further from the nucleus, making it harder to attract an electron.",
+      "options": [
+        "Reactivity decreases down the group",
+        "Reactivity increases down the group",
+        "Boiling point decreases down the group",
+        "Atomic radius decreases down the group"
+      ],
+      "question": "Which of the following is a correct trend observed in Group 7 of the Periodic Table?",
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "id": "b-mc-0146"
+    },
+    {
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "question": "A car starts from rest and accelerates uniformly at 5 m/s² for 6 seconds. What is the final velocity of the car?",
+      "options": [
+        "11 m/s",
+        "1.2 m/s",
+        "25 m/s",
+        "30 m/s"
+      ],
+      "explanation": "Using the formula v = u + at, where u=0, a=5, and t=6, the final velocity is 0 + (5 * 6) = 30 m/s.",
+      "id": "b-mc-0147"
+    },
+    {
+      "explanation": "Volume of a cylinder = πr²h. Here r = 2, so r² = 4. Volume = π * 4 * 10 = 40π.",
+      "question": "A cylinder has a radius of 2 cm and a height of 10 cm. What is its volume in cm³?",
+      "options": [
+        "20π cm³",
+        "40π cm³",
+        "80π cm³",
+        "400π cm³"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "id": "b-mc-0148"
+    },
+    {
+      "explanation": "Diffusion is the net movement of particles from an area of high concentration to an area of low concentration until evenly distributed.",
+      "options": [
+        "Active transport",
+        "Osmosis",
+        "Diffusion",
+        "Endocytosis"
+      ],
+      "question": "The movement of oxygen from the alveoli into the blood capillaries occurs primarily by which process?",
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "id": "b-mc-0149"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "explanation": "The empirical formula is the simplest whole-number ratio. C4H10 simplifies to C2H5 by dividing both subscripts by 2.",
+      "question": "What is the empirical formula of Butane (C4H10)?",
+      "options": [
+        "CH2.5",
+        "C2H5",
+        "CH2",
+        "CH4"
+      ],
+      "id": "b-mc-0150"
+    },
+    {
+      "question": "Calculate the kinetic energy of a 2 kg object moving at a constant speed of 3 m/s.",
+      "options": [
+        "9 J",
+        "18 J",
+        "6 J",
+        "3 J"
+      ],
+      "explanation": "Kinetic energy = 0.5 * m * v². So, 0.5 * 2 * 3² = 1 * 9 = 9 J.",
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "id": "b-mc-0151"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "explanation": "Substitute x=2 into the expression: 2(2²) - 3(2) + 5 = 2(4) - 6 + 5 = 8 - 6 + 5 = 7.",
+      "options": [
+        "3",
+        "5",
+        "7",
+        "9"
+      ],
+      "question": "What is the value of the expression 2x² - 3x + 5 when x = 2?",
+      "id": "b-mc-0152"
+    },
+    {
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "options": [
+        "Aorta",
+        "Vena Cava",
+        "Pulmonary Vein",
+        "Pulmonary Artery"
+      ],
+      "question": "Which blood vessel carries deoxygenated blood from the heart to the lungs?",
+      "explanation": "The pulmonary artery is the only artery that carries deoxygenated blood (from the heart to the lungs).",
+      "id": "b-mc-0153"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "explanation": "Isotopes are atoms of the same element with the same number of protons but different numbers of neutrons.",
+      "options": [
+        "Number of protons",
+        "Number of neutrons",
+        "Number of electrons",
+        "Atomic number"
+      ],
+      "question": "Two isotopes of the same element must differ in their:",
+      "id": "b-mc-0154"
+    },
+    {
+      "options": [
+        "Gamma rays",
+        "Beta particles",
+        "Alpha particles",
+        "X-rays"
+      ],
+      "question": "Which type of nuclear radiation has the highest ionising power?",
+      "explanation": "Alpha radiation consists of helium nuclei (2 protons, 2 neutrons), which are positively charged and relatively heavy, resulting in high ionising power but low penetration.",
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "id": "b-mc-0155"
+    },
+    {
+      "explanation": "Divide total distance by total time. Time = 30/60 + 60/40 = 0.5 + 1.5 = 2 hours. Ave Speed = 90 / 2 = 45 km/h.",
+      "options": [
+        "45 km/h",
+        "48 km/h",
+        "50 km/h",
+        "52 km/h"
+      ],
+      "question": "A cyclist travels 30 km at 60 km/h and then 60 km at 40 km/h. What is the average speed for the whole journey?",
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "id": "b-mc-0156"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "The rate remains the same.",
+        "The rate doubles.",
+        "The rate decreases to 1/4 of the original.",
+        "The rate decreases to 1/2 of the original."
+      ],
+      "explanation": "Light intensity follows the inverse square law; doubling the distance (10cm to 20cm) decreases intensity by a factor of 4 (2²).",
+      "correctAnswer": 2,
+      "question": "In an experiment measuring the rate of photosynthesis, a light source is moved from 10 cm away to 20 cm away from a plant. How does the light intensity change?",
+      "id": "b-mc-0157"
+    },
+    {
+      "question": "Which method is used to extract aluminium from its ore (bauxite) in industry?",
+      "correctAnswer": 1,
+      "explanation": "Aluminium is more reactive than carbon and cannot be reduced by it; it must be extracted using electrolysis of molten bauxite.",
+      "options": [
+        "Carbon reduction in a blast furnace.",
+        "Electrolysis of molten aluminium ore.",
+        "Thermal decomposition of aluminium carbonate.",
+        "Fractional distillation of bauxite."
+      ],
+      "type": "multiple_choice",
+      "id": "b-mc-0158"
+    },
+    {
+      "correctAnswer": 0,
+      "question": "The speed of light in a vacuum is 3.0 x 10⁸ m/s. If the speed of light in a glass block is 2.0 x 10⁸ m/s, what is the refractive index of the glass?",
+      "type": "multiple_choice",
+      "options": [
+        "1.500",
+        "0.667",
+        "2.000",
+        "1.333"
+      ],
+      "explanation": "The refractive index (n) is calculated by dividing the speed of light in a vacuum (c) by the speed of light in the medium (v).",
+      "id": "b-mc-0159"
+    },
+    {
+      "correctAnswer": 3,
+      "question": "A jacket costs £96 after a 20% price increase. What was the original price of the jacket?",
+      "type": "multiple_choice",
+      "options": [
+        "£76.00",
+        "£76.80",
+        "£115.20",
+        "£80.00"
+      ],
+      "explanation": "To find the original price from a 20% increase, divide the final price by 1.2 (£96 / 1.2 = £80).",
+      "id": "b-mc-0160"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Pancreas",
+        "Gallbladder",
+        "Liver",
+        "Stomach"
+      ],
+      "explanation": "The liver produces bile, which is then stored and concentrated in the gallbladder before being released into the small intestine.",
+      "correctAnswer": 2,
+      "question": "Which organ in the human body is responsible for the production of bile?",
+      "id": "b-mc-0161"
+    },
+    {
+      "options": [
+        "Sodium hydroxide",
+        "Concentrated sulfuric acid",
+        "Nickel catalyst",
+        "Manganese(IV) oxide"
+      ],
+      "explanation": "Concentrated sulfuric acid (H2SO4) acts as a catalyst and a dehydrating agent in the esterification reaction between an alcohol and a carboxylic acid.",
+      "type": "multiple_choice",
+      "question": "Which catalyst is typically used in the laboratory to produce an ester from an alcohol and a carboxylic acid?",
+      "correctAnswer": 1,
+      "id": "b-mc-0162"
+    },
+    {
+      "options": [
+        "Mass = 60 kg, Weight = 96 N",
+        "Mass = 10 kg, Weight = 100 N",
+        "Mass = 60 kg, Weight = 600 N",
+        "Mass = 10 kg, Weight = 60 N"
+      ],
+      "explanation": "Weight = mass x gravitational field strength. On the Moon, W = 60 kg x 1.6 N/kg = 96 N. Mass remains constant.",
+      "type": "multiple_choice",
+      "question": "An astronaut has a mass of 60 kg on Earth (g = 10 N/kg). What is their mass and weight on the Moon, where g = 1.6 N/kg?",
+      "correctAnswer": 0,
+      "id": "b-mc-0163"
+    },
+    {
+      "question": "Which of the following is a solution to the quadratic equation x² - 2x - 15 = 0?",
+      "correctAnswer": 1,
+      "options": [
+        "x = 3",
+        "x = -3",
+        "x = 5",
+        "x = -5"
+      ],
+      "explanation": "Substituting x = -3 into the equation gives: (-3)² - 2(-3) - 15 = 9 + 6 - 15 = 0.",
+      "type": "multiple_choice",
+      "id": "b-mc-0164"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "The human nervous system consists of the Central Nervous System (brain and spinal cord) and the Peripheral Nervous System.",
+      "options": [
+        "The brain and heart",
+        "The brain and sensory organs",
+        "The spinal cord and nerves",
+        "The brain and spinal cord"
+      ],
+      "correctAnswer": 3,
+      "question": "Which two structures make up the Central Nervous System (CNS) in humans?",
+      "id": "b-mc-0165"
+    },
+    {
+      "correctAnswer": 2,
+      "question": "How many protons and neutrons are in an atom of Carbon-14 (atomic number 6)?",
+      "type": "multiple_choice",
+      "explanation": "An atom of Carbon-14 has 6 protons (atomic number) and 8 neutrons (14 - 6 = 8).",
+      "options": [
+        "6 protons, 6 neutrons",
+        "8 protons, 6 neutrons",
+        "6 protons, 8 neutrons",
+        "14 protons, 6 neutrons"
+      ],
+      "id": "b-mc-0166"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "5 days",
+        "3 days",
+        "7.5 days",
+        "10 days"
+      ],
+      "explanation": "Half-life is the time for activity to halve. 800 to 100 takes three half-lives (400, 200, 100). 15 days / 3 = 5 days.",
+      "correctAnswer": 0,
+      "question": "The activity of a radioactive sample drops from 800 Bq to 100 Bq in 15 days. What is the half-life of the substance?",
+      "id": "b-mc-0167"
+    },
+    {
+      "explanation": "Volume of a sphere = (4/3)πr³. With r = 3, V = (4/3) * π * 27 = 36π.",
+      "options": [
+        "9π cm³",
+        "12π cm³",
+        "36π cm³",
+        "108π cm³"
+      ],
+      "type": "multiple_choice",
+      "question": "What is the volume of a sphere with a radius of 3 cm in terms of π?",
+      "correctAnswer": 2,
+      "id": "b-mc-0168"
+    },
+    {
+      "explanation": "Arteries carry blood away from the heart and have thick muscular walls to withstand high pressure, while veins have valves to prevent backflow in lower pressure.",
+      "options": [
+        "Arteries have valves and thin walls.",
+        "Arteries have thick muscular walls and no valves.",
+        "Veins have thick muscular walls and carry blood at high pressure.",
+        "Capillaries have valves to ensure one-way blood flow."
+      ],
+      "question": "Which of the following correctly describes the structure of human blood vessels?",
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "id": "b-mc-0169"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "explanation": "Group 1 metals (alkali metals) increase in reactivity as you go down the group because the outer electron is further from the nucleus and more easily lost.",
+      "question": "Which statement about the reactivity of Group 1 metals is correct?",
+      "options": [
+        "Lithium is more reactive than Sodium.",
+        "Reactivity decreases as the atomic number increases.",
+        "Potassium reacts less vigorously with water than Sodium.",
+        "Caesium is more reactive than Rubidium."
+      ],
+      "id": "b-mc-0170"
+    },
+    {
+      "question": "An object has a mass of 50 kg. Taking g = 10 N/kg, what is its weight on Earth?",
+      "options": [
+        "Mass 50kg; Weight 50N",
+        "Mass 5kg; Weight 500N",
+        "Mass 50kg; Weight 500N",
+        "Mass 500kg; Weight 50N"
+      ],
+      "explanation": "Weight = mass × gravitational field strength. On Earth, 50kg × 10N/kg = 500N. Mass remains constant regardless of location.",
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "id": "b-mc-0171"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "explanation": "To find the original price before a 20% discount, divide the sale price by 0.8 (since £48 is 80% of the original). £48 / 0.8 = £60.",
+      "question": "A pair of shoes is sold for £48 after a 20% discount. What was the original price?",
+      "options": [
+        "£57.60",
+        "£58.00",
+        "£60.00",
+        "£72.00"
+      ],
+      "id": "b-mc-0172"
+    },
+    {
+      "options": [
+        "Sensory neurone -> Relay neurone -> Motor neurone",
+        "Motor neurone -> Relay neurone -> Sensory neurone",
+        "Sensory neurone -> Brain stem -> Motor neurone",
+        "Effector -> Sensory neurone -> Motor neurone"
+      ],
+      "question": "What is the correct sequence of neurones in a typical reflex arc?",
+      "explanation": "Reflex arcs bypass the conscious parts of the brain to produce a rapid, involuntary response, protecting the body from harm.",
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "id": "b-mc-0173"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "explanation": "Group 7 elements (halogens) exist as diatomic molecules (e.g., F2, Cl2). As you move down the group, boiling points increase due to stronger intermolecular forces.",
+      "question": "Which of the following is true for all elements in Group 7 of the Periodic Table?",
+      "options": [
+        "They are all gases at room temperature.",
+        "They exist as diatomic molecules.",
+        "Reactivity increases down the group.",
+        "They form ions with a +1 charge."
+      ],
+      "id": "b-mc-0174"
+    },
+    {
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "options": [
+        "5 Watts",
+        "200 Watts",
+        "500 Watts",
+        "20 Watts"
+      ],
+      "question": "A force of 50 N is used to push a box 4 metres across a floor in 10 seconds. What is the power exerted?",
+      "explanation": "Work done = Force × Distance. Here, 50 N × 4 m = 200 J. Power = Work / Time, so 200 J / 10 s = 20 W.",
+      "id": "b-mc-0175"
+    },
+    {
+      "question": "Which of the following is a root of the quadratic equation x² + 5x + 6 = 0?",
+      "options": [
+        "x = 2",
+        "x = 3",
+        "x = -2",
+        "x = -1"
+      ],
+      "explanation": "Substitute x = -2 into the equation: (-2)^2 + 5(-2) + 6 = 4 - 10 + 6 = 0. Therefore, x = -2 is a root.",
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "id": "b-mc-0176"
+    },
+    {
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "options": [
+        "White blood cells",
+        "Red blood cells",
+        "Platelets",
+        "Plasma proteins"
+      ],
+      "question": "Which component of human blood is primarily responsible for the immune response against pathogens?",
+      "explanation": "White blood cells (lymphocytes and phagocytes) are the primary components of the immune system responsible for identifying and destroying pathogens.",
+      "id": "b-mc-0177"
+    },
+    {
+      "question": "In the balanced chemical equation for the complete combustion of ethane: 2C2H6 + xO2 -> 4CO2 + 6H2O, what is the value of x?",
+      "options": [
+        "x = 3.5",
+        "x = 5",
+        "x = 7",
+        "x = 13"
+      ],
+      "explanation": "In a balanced equation, the number of atoms of each element must be equal on both sides. 2C2H6 + 7O2 -> 4CO2 + 6H2O. x=7.",
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "id": "b-mc-0178"
+    },
+    {
+      "question": "Two resistors are connected in series to a 12V battery. If one resistor is 4 Ω and the total current is 2A, what is the resistance of the second resistor?",
+      "options": [
+        "1.5 Ω",
+        "2.0 Ω",
+        "3.0 Ω",
+        "8.0 Ω"
+      ],
+      "explanation": "Using V = IR, the total resistance R = V / I = 12V / 2A = 6 ohms. In series, R_total = R1 + R2, so 6 = 4 + R2, meaning R2 = 2 ohms.",
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "id": "b-mc-0179"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "explanation": "Total outcomes = 36. Sums of 10: (4,6), (5,5), (6,4). Probability = 3/36 = 1/12.",
+      "question": "If two fair six-sided dice are rolled, what is the probability that the sum of the two numbers is exactly 10?",
+      "options": [
+        "1/12",
+        "1/9",
+        "1/6",
+        "1/36"
+      ],
+      "id": "b-mc-0180"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Aorta",
+        "Pulmonary vein",
+        "Pulmonary artery",
+        "Hepatic artery"
+      ],
+      "explanation": "The pulmonary artery is the only artery that carries deoxygenated blood (moving from the heart to the lungs).",
+      "correctAnswer": 2,
+      "question": "Which of the following blood vessels carries deoxygenated blood?",
+      "id": "b-mc-0181"
+    },
+    {
+      "correctAnswer": 3,
+      "question": "What must be true for two atoms to be described as isotopes of the same element?",
+      "options": [
+        "They have the same number of neutrons.",
+        "They have different numbers of protons.",
+        "They have different chemical properties.",
+        "They have the same number of protons."
+      ],
+      "type": "multiple_choice",
+      "explanation": "Isotopes have the same number of protons (same atomic number) but different numbers of neutrons (different mass numbers).",
+      "id": "b-mc-0182"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "100 Pa",
+        "400 Pa",
+        "1000 Pa",
+        "4000 Pa"
+      ],
+      "explanation": "Pressure = Force / Area. 200 N / 0.5 m² = 400 Pa (N/m²).",
+      "correctAnswer": 1,
+      "question": "A force of 200 N is applied to an area of 0.5 m². What is the pressure exerted on the surface?",
+      "id": "b-mc-0183"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "4.5 x 10⁻⁴",
+        "4.5 x 10⁻³",
+        "45 x 10⁻⁵",
+        "0.45 x 10⁻³"
+      ],
+      "explanation": "Standard form requires a single non-zero digit before the decimal point; moving the decimal 4 places right gives 4.5 x 10⁻⁴.",
+      "correctAnswer": 0,
+      "question": "What is 0.00045 expressed in standard form?",
+      "id": "b-mc-0184"
+    },
+    {
+      "correctAnswer": 1,
+      "question": "Which term describes the process by which individuals with better-adapted traits are more likely to survive and pass on their genes?",
+      "type": "multiple_choice",
+      "options": [
+        "Selective breeding",
+        "Natural selection",
+        "Genetic engineering",
+        "Speciation"
+      ],
+      "explanation": "Natural selection is the process where organisms with advantageous traits are more likely to survive and reproduce.",
+      "id": "b-mc-0185"
+    },
+    {
+      "explanation": "Noble gases are in Group 0 and have full outer electron shells, making them extremely stable and unreactive.",
+      "type": "multiple_choice",
+      "options": [
+        "Alkali metals",
+        "Halogens",
+        "Noble gases",
+        "Transition metals"
+      ],
+      "question": "Which group of elements is generally unreactive because they have a full outer shell of electrons?",
+      "correctAnswer": 2,
+      "id": "b-mc-0186"
+    },
+    {
+      "question": "An electric kettle is rated at 2400 W and is connected to a 240 V mains supply. What is the current flowing through it?",
+      "correctAnswer": 3,
+      "explanation": "Current = Power / Voltage. 2400W / 240V = 10A.",
+      "type": "multiple_choice",
+      "options": [
+        "0.1 A",
+        "5 A",
+        "8 A",
+        "10 A"
+      ],
+      "id": "b-mc-0187"
+    },
+    {
+      "question": "What is the volume of a cone with a base radius of 3 cm and a vertical height of 10 cm?",
+      "correctAnswer": 1,
+      "explanation": "1/3 x pi x r² x h = 1/3 x pi x 3² x 10 = 1/3 x pi x 9 x 10 = 30pi.",
+      "type": "multiple_choice",
+      "options": [
+        "10π cm³",
+        "30π cm³",
+        "90π cm³",
+        "270π cm³"
+      ],
+      "id": "b-mc-0188"
+    },
+    {
+      "options": [
+        "Gallbladder",
+        "Pancreas",
+        "Liver",
+        "Stomach"
+      ],
+      "type": "multiple_choice",
+      "explanation": "Bile is stored and concentrated in the gallbladder before being released into the small intestine.",
+      "correctAnswer": 0,
+      "question": "Which organ serves as the storage site for bile before it is released into the small intestine?",
+      "id": "b-mc-0189"
+    },
+    {
+      "options": [
+        "Thermal decomposition",
+        "Photosynthesis",
+        "Combustion",
+        "Cracking of alkanes"
+      ],
+      "type": "multiple_choice",
+      "explanation": "An exothermic reaction (like combustion) releases energy to the surroundings, usually as heat.",
+      "correctAnswer": 2,
+      "question": "Which of the following processes is an example of an exothermic reaction?",
+      "id": "b-mc-0190"
+    },
+    {
+      "correctAnswer": 1,
+      "question": "A sound wave has a speed of 340 m/s and a wavelength of 0.5 m. What is its frequency?",
+      "options": [
+        "170 Hz",
+        "680 Hz",
+        "340 Hz",
+        "1360 Hz"
+      ],
+      "type": "multiple_choice",
+      "explanation": "The frequency of a wave remains constant when it passes from one medium to another. frequency = speed / wavelength = 340 / 0.5 = 680 Hz.",
+      "id": "b-mc-0191"
+    },
+    {
+      "correctAnswer": 3,
+      "question": "Expand and simplify the expression: (3x - 1)(x + 4)",
+      "options": [
+        "3x² + 11x + 4",
+        "3x² - 11x - 4",
+        "3x² + 13x - 4",
+        "3x² + 11x - 4"
+      ],
+      "type": "multiple_choice",
+      "explanation": "(3x - 1)(x + 4) = 3x² + 12x - x - 4 = 3x² + 11x - 4.",
+      "id": "b-mc-0192"
+    }
+  ],
+  "mocks": []
+}

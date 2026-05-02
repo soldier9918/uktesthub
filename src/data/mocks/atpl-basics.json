@@ -159,6 +159,2502 @@
       "correctAnswer": 3,
       "type": "multiple_choice",
       "id": "ab-mc-0012"
+    },
+    {
+      "options": [
+        "The layer between the Stratosphere and Mesosphere",
+        "The boundary layer where the temperature stops decreasing with height",
+        "The region of the atmosphere where the Ozone layer is thickest",
+        "The atmospheric layer starting at 50,000 feet everywhere"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "question": "What is the definition of the 'Tropopause' in the International Standard Atmosphere (ISA)?",
+      "explanation": "The Tropopause is the boundary layer where the temperature lapse rate ceases, marking the top of the Troposphere.",
+      "id": "ab-mc-0013"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Altitude above mean sea level based on local QNH",
+        "The height of the aircraft above the ground (AGL)",
+        "The altitude indicated when the subscale is set to the local QFE",
+        "The altitude indicated when the altimeter subscale is set to 1013.25 hPa"
+      ],
+      "correctAnswer": 3,
+      "question": "What is the definition of 'Pressure Altitude'?",
+      "explanation": "Pressure altitude is the height above the 1013.25 hPa pressure datum, used for standardising flight levels.",
+      "id": "ab-mc-0014"
+    },
+    {
+      "question": "According to Bernoulli’s Principle, what happens to static pressure as the velocity of a moving gas increases?",
+      "explanation": "According to Bernoulli's principle, as airflow accelerates over a surface (increased velocity), the static pressure decreases.",
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "options": [
+        "The static pressure decreases",
+        "The static pressure increases",
+        "The density of the air increases significantly",
+        "The temperature of the air increases significantly"
+      ],
+      "id": "ab-mc-0015"
+    },
+    {
+      "question": "What is the definition of the airspeed V2?",
+      "explanation": "V2 is the minimum speed the aircraft must reach at the screen height (35ft) if an engine fails at V1.",
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "options": [
+        "The maximum speed for flap extension",
+        "The speed at which the nose wheel is lifted during take-off",
+        "The takeoff safety speed to be maintained until reaching acceleration altitude following an engine failure",
+        "The minimum speed at which the aircraft is controllable on the ground"
+      ],
+      "id": "ab-mc-0016"
+    },
+    {
+      "question": "What is the primary factor providing lateral stability about the longitudinal axis?",
+      "explanation": "Secondary stability or 'roll stability' is primarily provided by the wing's dihedral angle, which creates a restoring moment.",
+      "type": "multiple_choice",
+      "options": [
+        "The dihedral angle of the wings",
+        "The surface area of the vertical stabiliser",
+        "The position of the centre of gravity behind the centre of pressure",
+        "The use of differential ailerons"
+      ],
+      "correctAnswer": 0,
+      "id": "ab-mc-0017"
+    },
+    {
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "options": [
+        "Warm moist air moving over a cold sea surface",
+        "Terrestrial radiation cooling the ground and the air in contact with it on a clear night",
+        "Moist air being forced up a mountain slope",
+        "Cold air moving over a much warmer water surface"
+      ],
+      "question": "What is the primary cause of Radiation Fog?",
+      "explanation": "As air cools at night over land, its capacity to hold water vapour decreases until it reaches the dew point, forming Radiation Fog.",
+      "id": "ab-mc-0018"
+    },
+    {
+      "correctAnswer": 2,
+      "options": [
+        "It decreases as the square of the airspeed increases",
+        "It remains constant regardless of airspeed in level flight",
+        "It increases as the square of the airspeed increases",
+        "It is highest at low speeds and lowest at high speeds"
+      ],
+      "type": "multiple_choice",
+      "question": "How does Parasite Drag change as the airspeed of an aircraft increases?",
+      "explanation": "Parasite drag (including skin friction and form drag) increases with the square of the airspeed.",
+      "id": "ab-mc-0019"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "It will show a continuous climb",
+        "It will show a continuous descent",
+        "It will lag significantly but eventually show the correct rate",
+        "It will return to and remain at zero regardless of the rate of climb"
+      ],
+      "correctAnswer": 3,
+      "explanation": "The VSI is connected to the static port; if blocked, the pressure inside the instrument cannot change, resulting in a zero reading.",
+      "question": "What will the Vertical Speed Indicator (VSI) show if the static vent becomes completely blocked during a climb?",
+      "id": "ab-mc-0020"
+    },
+    {
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "options": [
+        "High altitude and low temperature",
+        "High altitude and high temperature",
+        "Low altitude and low temperature",
+        "Low altitude and high temperature"
+      ],
+      "question": "Which combination of factors results in the lowest air density (and therefore the worst aircraft performance)?",
+      "explanation": "Density decreases as altitude or temperature increases; high/hot conditions provide fewer air molecules for lift and engine performance.",
+      "id": "ab-mc-0021"
+    },
+    {
+      "explanation": "A steady, non-fluctuating red light from the Control Tower to an aircraft in flight means 'Give way to other aircraft and continue circling'.",
+      "question": "What does a steady red light signal from an ATC tower mean to an aircraft in flight?",
+      "options": [
+        "Give way to other aircraft and continue circling",
+        "Airport unsafe, do not land",
+        "Return for landing immediately",
+        "Cleared to land"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "id": "ab-mc-0022"
+    },
+    {
+      "question": "In the UK, what is the appropriate IFR Flight Level for an aircraft on a magnetic track of 045 degrees?",
+      "explanation": "A magnetic track of 045 is 'Eastbound'. Under UK IFR semi-circular rules, headings 000-179 use odd flight levels (FL 50, 70, 90 etc).",
+      "type": "multiple_choice",
+      "options": [
+        "Any even flight level (e.g., FL 60)",
+        "Any flight level ending in 50 (e.g., FL 65)",
+        "Any odd flight level (e.g., FL 50 or FL 70)",
+        "Only Flight Level 45"
+      ],
+      "correctAnswer": 2,
+      "id": "ab-mc-0023"
+    },
+    {
+      "options": [
+        "Behind the Centre of Pressure",
+        "Forward of the Centre of Pressure",
+        "At the same location as the Centre of Pressure",
+        "Towards the wingtips to improve roll rate"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "explanation": "The centre of gravity (CG) must be forward of the centre of pressure (CP) to provide a natural nose-down pitch if lift is lost, aiding stall recovery.",
+      "question": "To ensure longitudinal stability, where is the Centre of Gravity usually located in relation to the Centre of Pressure?",
+      "id": "ab-mc-0024"
+    },
+    {
+      "options": [
+        "The ratio of wing thickness to wing span.",
+        "The ratio of wing area to the square of the span.",
+        "The ratio of the wingspan to the mean chord.",
+        "The ratio of the root chord to the tip chord."
+      ],
+      "type": "multiple_choice",
+      "explanation": "The aspect ratio is the ratio of the wingspan to the mean chord of the wing.",
+      "correctAnswer": 2,
+      "question": "In aerodynamics, what is the definition of the 'Aspect Ratio' of a wing?",
+      "id": "ab-mc-0025"
+    },
+    {
+      "correctAnswer": 1,
+      "question": "What is the primary cause of an aerodynamic stall?",
+      "explanation": "The critical angle of attack is the point where airflow separates and the wing stops producing sufficient lift, regardless of airspeed.",
+      "options": [
+        "Increasing the aircraft weight.",
+        "Exceeding the critical angle of attack.",
+        "Reducing the airspeed below Vmo.",
+        "Lowering the landing gear."
+      ],
+      "type": "multiple_choice",
+      "id": "ab-mc-0026"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "-1.98°C per 1,000 ft.",
+        "-3.0°C per 1,000 ft.",
+        "-0.65°C per 1,000 ft.",
+        "-5.0°C per 1,000 ft."
+      ],
+      "explanation": "According to the ISA, the temperature lapse rate is -1.98°C (often rounded to 2°C) per 1,000 feet.",
+      "question": "What is the standard temperature lapse rate in the International Standard Atmosphere (ISA) below the tropopause?",
+      "correctAnswer": 0,
+      "id": "ab-mc-0027"
+    },
+    {
+      "explanation": "At high speed, the primary risk of extension is structural damage or aerodynamic overstressing.",
+      "correctAnswer": 3,
+      "question": "What is the main purpose of the Vlo (Landing Gear Operating Speed) limitation?",
+      "options": [
+        "To ensure the aircraft can stall at a lower speed.",
+        "To prevent the engine from overspeeding.",
+        "To protect the tyres from high-speed friction.",
+        "To prevent structural damage to the gear doors and mechanisms."
+      ],
+      "type": "multiple_choice",
+      "id": "ab-mc-0028"
+    },
+    {
+      "explanation": "A secondary move of the primary control surface is used to relieve the pilot of the physical force required to maintain a specific pitch or bank.",
+      "correctAnswer": 2,
+      "question": "What is the function of a balance tab on a primary control surface?",
+      "options": [
+        "To increase the total lift of the wing.",
+        "To provide a backup in case of hydraulic failure.",
+        "To reduce the control forces required to be held by the pilot.",
+        "To prevent the aircraft from entering a spiral dive."
+      ],
+      "type": "multiple_choice",
+      "id": "ab-mc-0029"
+    },
+    {
+      "explanation": "Density altitude is the pressure altitude corrected for non-standard temperature variations.",
+      "question": "How is 'Density Altitude' best defined in aviation?",
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "options": [
+        "The altitude indicated when the subscale is set to 1013.25 hPa.",
+        "Pressure altitude corrected for non-standard temperature.",
+        "The height of the aircraft above the ground (AGL).",
+        "The altitude of the aircraft relative to Mean Sea Level."
+      ],
+      "id": "ab-mc-0030"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "The temperature at which air becomes saturated.",
+        "The temperature at which ice crystals form on the wing.",
+        "The temperature at which water begins to boil at high altitude.",
+        "The difference between the air temperature and the wet-bulb temperature."
+      ],
+      "explanation": "Dewpoint is the temperature to which air must be cooled at constant pressure to become saturated with water vapour.",
+      "question": "Which of the following describes 'Dewpoint'?",
+      "correctAnswer": 0,
+      "id": "ab-mc-0031"
+    },
+    {
+      "options": [
+        "Cleared to land.",
+        "Yield to other aircraft and continue circling.",
+        "Aerodrome unsafe, do not land.",
+        "Return for landing, followed by a steady green at the appropriate time."
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "question": "What does a series of green flashes from an ATC tower mean to an aircraft in flight?",
+      "explanation": "A series of green flashes from a signal lamp to an aircraft in flight means the pilot should return for landing.",
+      "id": "ab-mc-0032"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "An elongated area of low pressure.",
+        "An elongated area of high pressure.",
+        "A boundary between two different air masses.",
+        "The center of a tropical cyclone."
+      ],
+      "question": "In meteorology, what is a 'Ridge'?",
+      "correctAnswer": 1,
+      "explanation": "A ridge is an elongated area of high pressure, usually associated with fair weather and subsiding air.",
+      "id": "ab-mc-0033"
+    },
+    {
+      "question": "Which of the following defines the speed 'Vy'?",
+      "correctAnswer": 2,
+      "explanation": "Vy provides the maximum altitude gain per unit of time (the best climb rate).",
+      "type": "multiple_choice",
+      "options": [
+        "The speed that results in the greatest altitude gain over a given distance.",
+        "The speed for the steepest angle of climb.",
+        "The speed that results in the greatest altitude gain over a given time.",
+        "The speed used for en-route cruise climbs."
+      ],
+      "id": "ab-mc-0034"
+    },
+    {
+      "explanation": "Dihedral (the upward angle of the wings) creates a restoring rolling moment when the aircraft slips, providing lateral stability.",
+      "question": "What is 'Dihedral' in the context of aircraft design?",
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "options": [
+        "Upward inclination of the wings from the root to the tip.",
+        "The angle between the chord line and the longitudinal axis.",
+        "The angle between the wing and the horizontal stabilizer.",
+        "The sweepback angle of the leading edge."
+      ],
+      "id": "ab-mc-0035"
+    },
+    {
+      "options": [
+        "Pressure exerted by the air due to its motion.",
+        "The sum of static and dynamic pressure.",
+        "The pressure produced by the weight of the air acting in all directions.",
+        "The pressure measured at the stagnation point of a pitot tube."
+      ],
+      "type": "multiple_choice",
+      "explanation": "Static pressure acts equally in all directions, regardless of the flow velocity.",
+      "correctAnswer": 2,
+      "question": "What is the definition of 'Static Pressure'?",
+      "id": "ab-mc-0036"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "It increases proportionally with the square of the airspeed.",
+        "It remains constant regardless of airspeed.",
+        "It decreases as the airspeed of the aircraft increases.",
+        "It is unaffected by the weight of the aircraft."
+      ],
+      "question": "How does Induced Drag change as the airspeed of an aircraft increases in level flight?",
+      "correctAnswer": 2,
+      "explanation": "Induced drag is a byproduct of lift; as speed increases, the angle of attack decreases, reducing the pressure differential and the strength of wingtip vortices.",
+      "id": "ab-mc-0037"
+    },
+    {
+      "options": [
+        "Temperature begins to increase rapidly with altitude.",
+        "Temperature remains constant with increasing altitude.",
+        "Temperature continues to decrease at a rate of 1.98°C per 1,000ft.",
+        "Air pressure begins to increase with altitude."
+      ],
+      "type": "multiple_choice",
+      "explanation": "The transition from the troposphere to the stratosphere is marked by a pause in the temperature lapse rate, where temperature remains constant with height.",
+      "correctAnswer": 1,
+      "question": "What characterizes the temperature change within the ISA Tropopause layer?",
+      "id": "ab-mc-0038"
+    },
+    {
+      "explanation": "In a constant-speed propeller system, the governor adjusts the blade angle (pitch) to maintain a set RPM despite changes in power or airspeed.",
+      "question": "On a constant-speed propeller, what happens to the blade angle if the airspeed increases while the power setting remains constant?",
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "options": [
+        "The blade angle (pitch) increases.",
+        "The blade angle (pitch) decreases.",
+        "The RPM increases proportionally.",
+        "The RPM decreases to maintain torque."
+      ],
+      "id": "ab-mc-0039"
+    },
+    {
+      "explanation": "Ground effect reduces the upwash, downwash, and wingtip vortices, which decreases induced drag and allows the wing to produce the same lift at a lower angle of attack.",
+      "correctAnswer": 3,
+      "question": "What is the primary aerodynamic effect of 'Ground Effect' when an aircraft is within one wingspan of the surface?",
+      "options": [
+        "An increase in induced drag and a decrease in lift.",
+        "A decrease in parasite drag and an increase in stability.",
+        "A decrease in static pressure on the upper wing surface.",
+        "A reduction in induced drag and an increase in effective lift."
+      ],
+      "type": "multiple_choice",
+      "id": "ab-mc-0040"
+    },
+    {
+      "explanation": "In the Northern Hemisphere, the Coriolis force deflects air to the right, creating a clockwise flow around high-pressure systems.",
+      "question": "In the Northern Hemisphere, what is the direction of air circulation around a High Pressure (Anticyclone) system?",
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "options": [
+        "Anticyclonic and counter-clockwise.",
+        "Anticyclonic and clockwise.",
+        "Cyclonic and clockwise.",
+        "Cyclonic and counter-clockwise."
+      ],
+      "id": "ab-mc-0041"
+    },
+    {
+      "options": [
+        "The Altimeter and VSI will both read lower than actual.",
+        "The Airspeed Indicator will indicate a lower speed than actual.",
+        "The Altimeter will indicate higher than actual and the Airspeed Indicator will over-read.",
+        "There will be no change in instrument indications."
+      ],
+      "type": "multiple_choice",
+      "explanation": "The alternate static source is usually located inside the cockpit where pressure is slightly lower than outside, causing the instruments to over-read.",
+      "correctAnswer": 2,
+      "question": "What is the effect on the flight instruments if the alternate static source is vented to the cockpit?",
+      "id": "ab-mc-0042"
+    },
+    {
+      "options": [
+        "Opposite rudder and move the control column forward.",
+        "Full rudder in the direction of the spin and pull back on the control column.",
+        "Use ailerons against the direction of the spin.",
+        "Increase power to maximum and pull back on the control column."
+      ],
+      "type": "multiple_choice",
+      "explanation": "To recover from a spin, the rudder must be used to oppose the rotation (yaw) while the elevator moves forward to reduce the angle of attack.",
+      "correctAnswer": 0,
+      "question": "What is the standard primary recovery action for an aircraft in a developed spin?",
+      "id": "ab-mc-0043"
+    },
+    {
+      "explanation": "An occluded front occurs when a faster-moving cold front catches up with and overtakes a slower-moving warm front.",
+      "question": "How is an 'Occluded Front' formed in a mid-latitude depression?",
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "options": [
+        "When a cold air mass replaces a warm air mass.",
+        "When two air masses of different temperatures remain stationary.",
+        "When a cold front overtakes a warm front.",
+        "When a warm front overtakes a cold front."
+      ],
+      "id": "ab-mc-0044"
+    },
+    {
+      "explanation": "Vno is the maximum speed for normal operations; exceeding it in turbulent air creates a risk of structural damage due to high load factors.",
+      "correctAnswer": 1,
+      "question": "What does the speed 'Vno' represent in aircraft performance?",
+      "options": [
+        "Maximum Landing Gear Extension speed.",
+        "Maximum Structural Cruising speed.",
+        "Never Exceed speed.",
+        "Maximum Manoeuvring speed."
+      ],
+      "type": "multiple_choice",
+      "id": "ab-mc-0045"
+    },
+    {
+      "explanation": "Advection fog forms when warm, moist air moves over a colder surface (land or sea) and is cooled to its dew point.",
+      "question": "What is the primary cause of Advection Fog?",
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "options": [
+        "Rapid terrestrial radiation on a clear night.",
+        "Adiabatic cooling of air rising up a mountain slope.",
+        "Warm, moist air moving over a colder surface.",
+        "Cold air moving over a much warmer water surface."
+      ],
+      "id": "ab-mc-0046"
+    },
+    {
+      "explanation": "The semi-circular rule in the UK (and many other regions) dictates that for tracks 000-179°, odd flight levels are used, and for 180-359°, even levels are used.",
+      "correctAnswer": 0,
+      "question": "According to the UK semi-circular rule, what flight level should an aircraft follow on a magnetic track of 190 degrees?",
+      "options": [
+        "Even flight levels (e.g., FL60, FL80).",
+        "Odd flight levels (e.g., FL50, FL70).",
+        "Flight levels ending in 5 (e.g., FL55, FL65).",
+        "The pilot can choose any flight level regardless of track."
+      ],
+      "type": "multiple_choice",
+      "id": "ab-mc-0047"
+    },
+    {
+      "options": [
+        "A longitudinal oscillation in pitch.",
+        "A rapid increase in airspeed during a dive.",
+        "A combined rolling and yawing oscillation.",
+        "A state of deep stall caused by T-tail interference."
+      ],
+      "type": "multiple_choice",
+      "explanation": "Dutch Roll is an oscillatory instability involving a combination of rolling and yawing, often found in swept-wing aircraft when lateral stability is stronger than directional stability.",
+      "correctAnswer": 2,
+      "question": "Which of the following describes the phenomenon known as 'Dutch Roll'?",
+      "id": "ab-mc-0048"
+    },
+    {
+      "question": "In meteorology, what is the definition of an 'Isobar'?",
+      "correctAnswer": 0,
+      "explanation": "An isobar is a line on a meteorological chart that connects points of equal atmospheric pressure, usually reduced to mean sea level.",
+      "type": "multiple_choice",
+      "options": [
+        "A line connecting points of equal atmospheric pressure.",
+        "A line connecting points of equal temperature.",
+        "A line connecting points of equal wind speed.",
+        "A line connecting points of equal dewpoint."
+      ],
+      "id": "ab-mc-0049"
+    },
+    {
+      "correctAnswer": 2,
+      "question": "How does Parasite Drag change as the airspeed of an aircraft increases?",
+      "type": "multiple_choice",
+      "options": [
+        "Decreases as airspeed increases.",
+        "Remains constant regardless of airspeed.",
+        "Increases as airspeed increases.",
+        "Increases only when landing gear is retracted."
+      ],
+      "explanation": "Parasite drag (skin friction and form drag) increases with the square of the airspeed, whereas induced drag decreases with speed.",
+      "id": "ab-mc-0050"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Unstable air and light winds below 5 knots.",
+        "Stable air and wind speeds of at least 20 knots at the ridge top.",
+        "A rapid decrease in wind speed with altitude.",
+        "Highly turbulent air in a valley with no wind over the ridge."
+      ],
+      "explanation": "A mountain wave is most likely to form when stable air flows over a ridge at speeds of at least 20 knots, provided the wind direction is perpendicular to the ridge.",
+      "correctAnswer": 1,
+      "question": "Which condition is most likely to lead to the formation of Mountain Waves?",
+      "id": "ab-mc-0051"
+    },
+    {
+      "question": "Which airspeed provides the maximum gliding distance for a fixed-wing aircraft in the event of engine failure?",
+      "correctAnswer": 0,
+      "explanation": "The lift-to-drag ratio (L/D Max) determines the maximum distance an aircraft can glide without power for a given altitude.",
+      "options": [
+        "The airspeed resulting in the best lift-to-drag ratio (L/D Max).",
+        "The airspeed resulting in the lowest possible stalling speed.",
+        "The highest possible airspeed the airframe can tolerate.",
+        "The speed providing the highest rate of climb."
+      ],
+      "type": "multiple_choice",
+      "id": "ab-mc-0052"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "The engine oil pressure gauge.",
+        "The attitude indicator and turn coordinator.",
+        "The magnetic compass and ADF.",
+        "The altimeter, airspeed indicator, and vertical speed indicator."
+      ],
+      "explanation": "The pitot-static system must be checked for blockage or leaks, as these are the primary causes of simultaneous incorrect readings on these three instruments.",
+      "correctAnswer": 3,
+      "question": "Which instruments are connected to the static port and would be affected by a static line blockage?",
+      "id": "ab-mc-0053"
+    },
+    {
+      "question": "What is the fundamental cause of an aerodynamic stall?",
+      "correctAnswer": 1,
+      "explanation": "An aerofoil stalls when the angle of attack exceeds the critical angle, causing the smooth airflow to break away from the upper surface.",
+      "options": [
+        "When the aircraft exceeds the maximum operating speed (Vmo).",
+        "When the critical angle of attack is exceeded.",
+        "When the aircraft is flown in a nose-down attitude.",
+        "When the engine fails and thrust is lost."
+      ],
+      "type": "multiple_choice",
+      "id": "ab-mc-0054"
+    },
+    {
+      "options": [
+        "Stop immediately.",
+        "Cleared to taxi to the apron.",
+        "Taxi clear of the landing area or runway in use.",
+        "Return to the starting point on the aerodrome."
+      ],
+      "type": "multiple_choice",
+      "explanation": "A flashing red light from ATC to an aircraft on the ground indicates that the pilot should clear the taxiway or runway currently in use.",
+      "correctAnswer": 2,
+      "question": "What is the meaning of a flashing red light signal from the control tower to an aircraft on the ground?",
+      "id": "ab-mc-0055"
+    },
+    {
+      "options": [
+        "Decreases density and reduces performance.",
+        "Increases density and improves performance.",
+        "Decreases density and improves performance.",
+        "Has no effect on density or performance."
+      ],
+      "type": "multiple_choice",
+      "explanation": "Humidity decreases the density of the air because water vapour is less dense than dry air, which in turn reduces overall engine and aerodynamic performance.",
+      "correctAnswer": 0,
+      "question": "What effect does high humidity have on the density of the air and aircraft performance?",
+      "id": "ab-mc-0056"
+    },
+    {
+      "options": [
+        "To increase the stall speed for better landing control.",
+        "To reduce parasite drag at high speeds.",
+        "To reduce induced drag by weakening wingtip vortices.",
+        "To provide better lateral stability during a spin."
+      ],
+      "type": "multiple_choice",
+      "explanation": "A winglet reduces the strength of the wingtip vortex, thereby reducing induced drag and improving efficiency.",
+      "correctAnswer": 2,
+      "question": "What is the primary purpose of winglets on a transport category aircraft?",
+      "id": "ab-mc-0057"
+    },
+    {
+      "question": "In multi-engine aircraft performance, what does the speed 'V1' represent?",
+      "correctAnswer": 1,
+      "explanation": "The speed V1 is the point beyond which a takeoff must be continued even if an engine fails, as there is insufficient runway left to stop safely.",
+      "options": [
+        "The speed at which the aircraft leaves the ground.",
+        "The maximum speed at which a pilot can safely abort a takeoff.",
+        "The speed for the best rate of climb after an engine failure.",
+        "The minimum speed for flight in the landing configuration."
+      ],
+      "type": "multiple_choice",
+      "id": "ab-mc-0058"
+    },
+    {
+      "explanation": "The directional gyro (heading indicator) is prone to precession over time due to friction and the Earth's rotation, requiring periodic manual adjustment to match the magnetic compass.",
+      "options": [
+        "The Altimeter.",
+        "The Vertical Speed Indicator.",
+        "The Airspeed Indicator.",
+        "The Heading Indicator (Directional Gyro)."
+      ],
+      "type": "multiple_choice",
+      "question": "Which instrument is most susceptible to errors caused by gyroscopic precession?",
+      "correctAnswer": 3,
+      "id": "ab-mc-0059"
+    },
+    {
+      "question": "What squawk code should a pilot select on the transponder to indicate a total loss of radio communication?",
+      "correctAnswer": 1,
+      "explanation": "A Transponder set to Code 7600 informs Radar Controllers that the aircraft has suffered a radio communications failure.",
+      "options": [
+        "7500.",
+        "7600.",
+        "7700.",
+        "7000."
+      ],
+      "type": "multiple_choice",
+      "id": "ab-mc-0060"
+    },
+    {
+      "explanation": "Induced drag is a byproduct of lift; as speed increases, the angle of attack decreases to maintain steady flight, reducing the pressure differential and the resulting drag.",
+      "options": [
+        "It increases with the square of the speed.",
+        "It decreases as airspeed increases.",
+        "It remains constant regardless of airspeed.",
+        "It is only present during supersonic flight."
+      ],
+      "question": "How does induced drag behave as the airspeed of an aircraft increases?",
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "id": "ab-mc-0061"
+    },
+    {
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "options": [
+        "Cumulonimbus clouds with heavy rain.",
+        "Fractostratus and high turbulence.",
+        "Altocumulus lenticularis (lens-shaped clouds).",
+        "Strong thermal updrafts and clear skies."
+      ],
+      "explanation": "Stable air that is forced to rise over terrain cools adiabatically, often forming smooth, lens-shaped clouds known as lenticularis.",
+      "question": "Which type of cloud is most commonly associated with stable air being forced over a mountain range?",
+      "id": "ab-mc-0062"
+    },
+    {
+      "options": [
+        "Nautical Miles per unit of fuel.",
+        "Fuel flow divided by ground speed.",
+        "The total distance the aircraft can fly on a full tank.",
+        "The time the aircraft can stay airborne per unit of fuel."
+      ],
+      "explanation": "Specific Range is defined as the distance an aircraft can travel per unit of fuel consumed (e.g., Nautical Miles per Kilogram).",
+      "question": "In aircraft performance, what does the term 'Specific Range' refer to?",
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "id": "ab-mc-0063"
+    },
+    {
+      "question": "What is the definition of the 'Critical Engine' on a multi-engine propeller aircraft?",
+      "options": [
+        "The engine that produces the most thrust.",
+        "The engine with the highest operating temperature.",
+        "The outboard engine on a four-engine aircraft.",
+        "The engine whose failure most adversely affects aircraft control."
+      ],
+      "explanation": "The critical engine is the one whose failure would most adversely affect the performance or handling qualities of the aircraft, usually the left engine on standard propellers.",
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "id": "ab-mc-0064"
+    },
+    {
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "explanation": "The Turning Error (Northerly Turning Error) is greatest when turning through North or South, causing the compass to lag or lead.",
+      "options": [
+        "On East/West headings.",
+        "On North/South headings.",
+        "During steady climbs or descents.",
+        "When flying directly over the magnetic equator."
+      ],
+      "question": "When using a direct-reading magnetic compass in the Northern Hemisphere, acceleration/deceleration errors are most pronounced:",
+      "id": "ab-mc-0065"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "question": "What is the primary characteristic used to identify the 'Tropopause' in a standard atmosphere?",
+      "explanation": "The tropopause is the boundary layer where the lapse rate becomes zero or very small, marking the transition between the troposphere and the stratosphere.",
+      "options": [
+        "An increase in humidity and cloud formation.",
+        "A sharp increase in the environmental lapse rate.",
+        "An abrupt change in the temperature lapse rate.",
+        "The point where air pressure reaches 500 hPa."
+      ],
+      "id": "ab-mc-0066"
+    },
+    {
+      "question": "According to ICAO standards, what is the term for the vertical position of an aircraft when at or below the transition altitude?",
+      "explanation": "The PANS-OPS transition altitude is the altitude at or below which the vertical position of an aircraft is controlled by reference to altitudes based on QNH.",
+      "options": [
+        "Altitude.",
+        "Flight Level.",
+        "Height.",
+        "Standard Pressure Altitude."
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "id": "ab-mc-0067"
+    },
+    {
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "explanation": "An over-reading altimeter is a significant safety risk because the aircraft is actually lower than the pilot believes, potentially leading to a CFIT accident.",
+      "options": [
+        "The altimeter under-reads the actual altitude.",
+        "The altimeter remains unaffected by temperature.",
+        "The altimeter over-reads (the aircraft is lower than indicated).",
+        "The altimeter indicates the height above the ground rather than sea level."
+      ],
+      "question": "What is the danger when flying from a warm air mass into a cold air mass if the altimeter setting (QNH) is not changed?",
+      "id": "ab-mc-0068"
+    },
+    {
+      "options": [
+        "Move in the same direction as the control surface to increase effectiveness.",
+        "Move in the opposite direction to the control surface to reduce manual force.",
+        "Be used only for long-term trim adjustments.",
+        "Lock the control surface in a neutral position at high speeds."
+      ],
+      "explanation": "A balance tab is moved in the opposite direction to the control surface, creating an aerodynamic force that assists the pilot in moving the controls.",
+      "question": "What is the purpose of a 'Balance Tab' on a primary control surface?",
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "id": "ab-mc-0069"
+    },
+    {
+      "options": [
+        "Velocity for flap engagement.",
+        "Maximum speed for flap retraction.",
+        "Minimum speed required for flap extension.",
+        "Maximum speed with flaps extended."
+      ],
+      "explanation": "The Vfe speed is the maximum speed allowable with the flaps in a specific extended position to prevent structural damage.",
+      "question": "What does the abbreviation 'Vfe' stand for in relation to aircraft operating speeds?",
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "id": "ab-mc-0070"
+    },
+    {
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "explanation": "Density altitude is pressure altitude corrected for non-standard temperature; high temperatures reduce air density, which increases the density altitude.",
+      "options": [
+        "Pressure altitude corrected for non-standard temperature.",
+        "The altitude shown on the altimeter when set to 1013.25 hPa.",
+        "The geographic height above mean sea level.",
+        "The vertical distance above the terrain."
+      ],
+      "question": "Which of the following best defines 'Density Altitude'?",
+      "id": "ab-mc-0071"
+    },
+    {
+      "question": "Which transponder code should be set to indicate a hijacking (unlawful interference) in progress?",
+      "explanation": "7500 is the international squawk code for unlawful interference (hijacking). 7600 is for radio failure, and 7700 is for general emergency.",
+      "options": [
+        "7700",
+        "7600",
+        "7500",
+        "7000"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "id": "ab-mc-0072"
+    },
+    {
+      "question": "In aerodynamics, what is the definition of the 'Angle of Attack' (AoA)?",
+      "explanation": "Angle of Attack is defined as the angle between the wing's chord line and the relative airflow (or flight path).",
+      "options": [
+        "The angle between the aircraft longitudinal axis and the horizon",
+        "The angle between the chord line and the relative airflow",
+        "The angle between the longitudinal axis and the relative airflow",
+        "The angle between the wing root and the wing tip along the fuselage"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "id": "ab-mc-0073"
+    },
+    {
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "question": "How is the indicated airspeed (IAS) derived within the aircraft's pitot-static system?",
+      "options": [
+        "The difference between total pressure and static pressure",
+        "The sum of static pressure and total pressure",
+        "Static pressure alone as measured by the static port",
+        "The ratio of total pressure to ambient temperature"
+      ],
+      "explanation": "The Pitot-Static system uses the Difference between the total (pitot) pressure and the static pressure to calculate Dynamic Pressure, which is displayed as Airspeed.",
+      "id": "ab-mc-0074"
+    },
+    {
+      "question": "Which force is responsible for the deflection of air to the right in the Northern Hemisphere?",
+      "explanation": "The 'Coriolis Effect' is the force caused by the Earth's rotation that deflects moving air to the right in the Northern Hemisphere and to the left in the Southern Hemisphere.",
+      "options": [
+        "Pressure Gradient Force",
+        "Centrifugal Force",
+        "Coriolis Effect",
+        "Geostrophic Force"
+      ],
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "id": "ab-mc-0075"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "explanation": "Clear ice is most dangerous because it is heavy, transparent, forms smoothly along the wing profile, and is difficult for the pilot to see.",
+      "options": [
+        "Hoar frost",
+        "Rime ice",
+        "Mixed ice",
+        "Clear ice (Glaze ice)"
+      ],
+      "question": "Which type of airframe icing is generally considered the most dangerous due to its rapid accumulation and density?",
+      "id": "ab-mc-0076"
+    },
+    {
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "question": "In aircraft performance calculations, what does the speed 'Vmcg' refer to?",
+      "options": [
+        "Minimum speed for landing gear retraction",
+        "Minimum control speed on the ground following engine failure",
+        "Minimum speed for a gear-up landing",
+        "Maximum cruising speed on the ground during taxi"
+      ],
+      "explanation": "Vmcg is the minimum control speed on the ground during the take-off run, where the aircraft can be controlled by aerodynamic forces alone (rudder) after an engine failure.",
+      "id": "ab-mc-0077"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "question": "What additional capability does a TCAS II system provide compared to a TCAS I system?",
+      "options": [
+        "Resolution Advisories (RA) in the vertical plane",
+        "Resolution Advisories (RA) in the horizontal plane",
+        "Automatic steering to avoid the threat aircraft",
+        "Direct communication with the other aircraft via radio"
+      ],
+      "explanation": "TCAS II provides both Traffic Advisories (TA) to alert the pilot and Resolution Advisories (RA) which provide vertical escape manoeuvres.",
+      "id": "ab-mc-0078"
+    },
+    {
+      "question": "What is the definition of an 'Isobar'?",
+      "options": [
+        "An area of equal temperature",
+        "An area of equal wind speed",
+        "A line connecting points of equal atmospheric pressure",
+        "A line connecting points of equal humidity"
+      ],
+      "explanation": "An isobar is a line on a weather map (synoptic chart) connecting points of equal atmospheric pressure.",
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "id": "ab-mc-0079"
+    },
+    {
+      "options": [
+        "Decreased parasite drag",
+        "Stability in the longitudinal axis",
+        "Decreased wing loading",
+        "The horizontal component of lift"
+      ],
+      "explanation": "When an aircraft turns, the total lift is divided into a vertical component (opposing weight) and a horizontal component (providing centripetal force), necessitating an increase in total lift to maintain altitude.",
+      "question": "What is the primary cause of an aircraft turning in level flight?",
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "id": "ab-mc-0080"
+    },
+    {
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "question": "What is the meaning of a 'steady red' light signal from Air Traffic Control to an aircraft currently in the air?",
+      "explanation": "A 'steady red' light from a control tower indicates to an aircraft in flight that they should give way to other aircraft and continue circling.",
+      "options": [
+        "Give way to other aircraft and continue circling",
+        "Cleared to land immediately",
+        "Land at this aerodrome after receiving a green light",
+        "Airport unsafe, do not land"
+      ],
+      "id": "ab-mc-0081"
+    },
+    {
+      "question": "If the static port becomes blocked during a climb, what will be the effect on the Altimeter?",
+      "options": [
+        "The altimeter will read zero",
+        "The altimeter will freeze at the current altitude",
+        "The altimeter will show a continuous climb",
+        "The altimeter will show a continuous descent"
+      ],
+      "explanation": "A blockage of the static port will cause the altimeter to freeze at the altitude where the blockage occurred, as it can no longer sense changes in ambient pressure.",
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "id": "ab-mc-0082"
+    },
+    {
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "question": "What is the fundamental principle used by 'Primary Radar' to detect an aircraft?",
+      "explanation": "Primary radar works by emitting a pulse of energy and measuring the time it takes for that pulse to reflect off an object back to the antenna.",
+      "options": [
+        "The aircraft’s transponder replying to an interrogation",
+        "Satellite signals being received by the aircraft",
+        "Reflections of electromagnetic pulses from the aircraft's skin",
+        "The Doppler shift of the aircraft’s engine noise"
+      ],
+      "id": "ab-mc-0083"
+    },
+    {
+      "options": [
+        "30 seconds",
+        "45 seconds",
+        "2 minutes",
+        "1 minute"
+      ],
+      "explanation": "A standard turn is 3 degrees per second, meaning 360 degrees takes 120 seconds, and 180 degrees takes 60 seconds (one minute).",
+      "question": "How long does it take to complete a 180-degree Rate 1 (Standard Rate) turn?",
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "id": "ab-mc-0084"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "Induced drag is a byproduct of lift; as airspeed decreases, the angle of attack must increase to maintain lift, leading to stronger wingtip vortices and higher induced drag.",
+      "correctAnswer": 1,
+      "question": "What happens to 'Induced Drag' as an aircraft's airspeed decreases in level flight?",
+      "options": [
+        "It decreases because of lower friction.",
+        "It increases because a higher angle of attack is required to maintain lift.",
+        "It remains constant regardless of airspeed.",
+        "It decreases proportionally with the square of the speed."
+      ],
+      "id": "ab-mc-0085"
+    },
+    {
+      "explanation": "The ILS localiser provides lateral guidance to the runway centreline, while the glide path provides vertical guidance.",
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "options": [
+        "Vertical guidance only.",
+        "Distance information from the threshold.",
+        "Azimuth (lateral) guidance relative to the runway centreline.",
+        "The rate of climb required for a missed approach."
+      ],
+      "question": "In an Instrument Landing System (ILS), what is the primary function of the 'Localiser'?",
+      "id": "ab-mc-0086"
+    },
+    {
+      "question": "Which meteorological conditions are most conducive to the formation of 'Radiation Fog'?",
+      "options": [
+        "Clear skies, little or no wind, and high relative humidity.",
+        "Strong winds and heavy cloud cover.",
+        "Warm, moist air moving over a cold sea surface.",
+        "Cold air moving over a very warm moist surface."
+      ],
+      "type": "multiple_choice",
+      "explanation": "Radiation fog forms over land on clear, calm nights when the ground loses heat through terrestrial radiation, cooling the air above it to the dew point.",
+      "correctAnswer": 0,
+      "id": "ab-mc-0087"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "Vno is the maximum speed for normal operations; exceeding it puts the aircraft at risk of structural damage if turbulence is encountered.",
+      "correctAnswer": 2,
+      "question": "What does the airspeed 'Vno' represent?",
+      "options": [
+        "Never-exceed speed.",
+        "Maximum landing gear extended speed.",
+        "Maximum structural cruising speed.",
+        "Stall speed in a specific configuration."
+      ],
+      "id": "ab-mc-0088"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "explanation": "A cold front involves cold air undercutting warm air, often leading to rapid lifting, instability, and the formation of cumulonimbus (CB) clouds.",
+      "question": "Which of the following is a common characteristic of a 'Cold Front' passage?",
+      "options": [
+        "Steady drizzle and widespread fog.",
+        "Sudden wind shifts, a drop in temperature, and heavy rain or thunderstorms.",
+        "A gradual increase in temperature and high-level cirrus clouds.",
+        "Stable air with no vertical cloud development."
+      ],
+      "id": "ab-mc-0089"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "The ELT 406 MHz signal is monitored by Cospas-Sarsat satellites to provide global distress alerting and location data.",
+      "correctAnswer": 3,
+      "question": "Which frequency is used by modern Emergency Locator Transmitters (ELTs) to transmit digital distress signals to satellites?",
+      "options": [
+        "121.5 MHz only.",
+        "243.0 MHz only.",
+        "500 KHz.",
+        "406 MHz."
+      ],
+      "id": "ab-mc-0090"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "Dutch Roll is an unstable oscillatory mode involving out-of-phase combination of yaw and roll, often appearing in swept-wing aircraft.",
+      "correctAnswer": 0,
+      "question": "In aircraft stability, what is the 'Dutch Roll' phenomenon?",
+      "options": [
+        "A combined rolling and yawing oscillation.",
+        "A pure pitching oscillation caused by high speed.",
+        "A rapid increase in drag at transonic speeds.",
+        "A tendency for the nose to drop during a steep turn."
+      ],
+      "id": "ab-mc-0091"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "In the Northern Hemisphere, turning through North results in a lag (under-read), while turning through South results in a lead (over-read).",
+      "correctAnswer": 2,
+      "question": "Why does a direct-reading magnetic compass 'lag' when turning through North in the Northern Hemisphere?",
+      "options": [
+        "Precession of the vertical gyro.",
+        "Magnetic variation changes.",
+        "Liquid swirl and the dip-compensating weight causing the compass to lag.",
+        "The aircraft's electrical interference."
+      ],
+      "id": "ab-mc-0092"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "Pressure altitude is the height above the standard datum plane (1013.25 hPa); it is what the altimeter shows when 1013 is set in the subscale.",
+      "correctAnswer": 1,
+      "question": "What is the definition of 'Pressure Altitude'?",
+      "options": [
+        "Altitude corrected for temperature.",
+        "Altitude indicated when the altimeter subscale is set to 1013.25 hPa.",
+        "Height above the actual ground level (AGL).",
+        "Height above Mean Sea Level (MSL)."
+      ],
+      "id": "ab-mc-0093"
+    },
+    {
+      "options": [
+        "When the airspeed reaches zero.",
+        "When the aircraft nose is pointed too high above the horizon.",
+        "When the engines lose total power.",
+        "When the critical angle of attack is exceeded."
+      ],
+      "question": "At what point does an aircraft wing 'stall'?",
+      "correctAnswer": 3,
+      "explanation": "A stall occurs when the critical angle of attack is exceeded, causing the smooth airflow over the wing to become turbulent and lift to drop sharply.",
+      "type": "multiple_choice",
+      "id": "ab-mc-0094"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "V1 is the 'take-off decision speed'; if an engine fails before V1, the pilot must abort the take-off; after V1, the take-off should be continued.",
+      "correctAnswer": 0,
+      "question": "In transport category aircraft performance, what is 'V1' defined as?",
+      "options": [
+        "Take-off decision speed.",
+        "Minimum control speed on the ground.",
+        "Rotation speed.",
+        "Maximum flap extension speed."
+      ],
+      "id": "ab-mc-0095"
+    },
+    {
+      "explanation": "The 'cone of silence' is a small area directly above a NDB or VOR station where the signal strength drops or the needle becomes unreliable.",
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "options": [
+        "The area where radio transmissions are forbidden.",
+        "A region of high turbulence near a thunderstorm.",
+        "A region directly above a NDB or VOR transmitter where no signal is received.",
+        "The blind spot of a weather radar."
+      ],
+      "question": "In radio navigation, what is meant by the 'Cone of Silence'?",
+      "id": "ab-mc-0096"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "explanation": "The troposphere contains almost all water vapour and weather phenomena; its height varies from about 8km at the poles to 18km at the equator.",
+      "question": "In which layer of the Earth's atmosphere does the majority of weather activity occur?",
+      "options": [
+        "Stratosphere",
+        "Troposphere",
+        "Mesosphere",
+        "Exosphere"
+      ],
+      "id": "ab-mc-0097"
+    },
+    {
+      "explanation": "The pitot-static system calculates airspeed by measuring the difference between the total pressure (pitot) and the static pressure.",
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "question": "The Airspeed Indicator (ASI) operates by measuring 'Dynamic Pressure', which is defined as:",
+      "options": [
+        "Absolute pressure minus static pressure",
+        "Static pressure minus dynamic pressure",
+        "Total pressure minus static pressure",
+        "Total pressure plus static pressure"
+      ],
+      "id": "ab-mc-0098"
+    },
+    {
+      "question": "Which transponder squawk code should a pilot select to indicate a total loss of radio communications?",
+      "explanation": "The transponder code 7600 is used internationally to signal a failure of radio communications.",
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "options": [
+        "7600",
+        "7500",
+        "7700",
+        "2000"
+      ],
+      "id": "ab-mc-0099"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "Vref is the landing reference speed, typically calculated as 1.3 times the stalling speed in the landing configuration (Vso).",
+      "correctAnswer": 3,
+      "question": "In aircraft operations, what is the definition of 'Vref'?",
+      "options": [
+        "The speed at which the aircraft becomes airborne during takeoff.",
+        "The maximum speed for extending landing gear.",
+        "The speed at which a go-around must be initiated.",
+        "The reference speed for final approach, usually 1.3 times the stall speed in landing configuration."
+      ],
+      "id": "ab-mc-0100"
+    },
+    {
+      "options": [
+        "10 kts wind and 10°C temperature",
+        "1013.25 hPa and +15°C temperature",
+        "998 hPa and 0°C temperature",
+        "1013.25 hPa and -15°C temperature"
+      ],
+      "question": "What are the standard sea-level pressure and temperature values used in the International Standard Atmosphere (ISA)?",
+      "correctAnswer": 1,
+      "explanation": "A standard ISA day assumes a sea-level temperature of +15°C and a pressure of 1013.25 hPa.",
+      "type": "multiple_choice",
+      "id": "ab-mc-0101"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "explanation": "Load factor increases significantly in a banked turn to maintain altitude; in a 60-degree bank, the load factor is exactly 2.0g.",
+      "question": "In a coordinated level turn with a 60-degree bank angle, what is the approximate 'load factor' (G-load) experienced by the aircraft?",
+      "options": [
+        "2.0g",
+        "1.5g",
+        "1.0g",
+        "4.0g"
+      ],
+      "id": "ab-mc-0102"
+    },
+    {
+      "options": [
+        "The rudder deflection.",
+        "The vertical component of lift.",
+        "The horizontal component of lift.",
+        "The engine thrust."
+      ],
+      "question": "When an aircraft is banked into a turn, what force acts as the 'centripetal force' to change the aircraft's direction?",
+      "type": "multiple_choice",
+      "explanation": "The horizontal component of lift provides the centripetal force necessary to pull the aircraft into a turn.",
+      "correctAnswer": 2,
+      "id": "ab-mc-0103"
+    },
+    {
+      "question": "Which component of an Instrument Landing System (ILS) provides vertical guidance to the pilot?",
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "explanation": "The Glide Path (or Glide Slope) provides vertical guidance, typically at a 3-degree angle, to the runway touchdown zone.",
+      "options": [
+        "The Localiser",
+        "The Glide Path (GP)",
+        "The Outer Marker",
+        "The DME"
+      ],
+      "id": "ab-mc-0104"
+    },
+    {
+      "options": [
+        "Light, clean, and fast.",
+        "Heavy, with full flaps, and slow.",
+        "Light, with full flaps, and fast.",
+        "Heavy, clean, and slow."
+      ],
+      "question": "In which configuration does a fixed-wing aircraft produce the strongest wake turbulence?",
+      "type": "multiple_choice",
+      "explanation": "Wake turbulence (wingtip vortices) is strongest when the aircraft is heavy (high lift needed), clean (no flaps), and slow (high angle of attack).",
+      "correctAnswer": 3,
+      "id": "ab-mc-0105"
+    },
+    {
+      "explanation": "The 'back side' of the power curve is where induced drag is high; flying slower requires more power to maintain level flight.",
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "question": "What is a characteristic of flying on the 'back side' of the power curve (the region of reversed command)?",
+      "options": [
+        "More power is required to fly slower.",
+        "Less power is required to fly slower.",
+        "The aircraft is at its most efficient cruising speed.",
+        "Drag is at its absolute minimum value."
+      ],
+      "id": "ab-mc-0106"
+    },
+    {
+      "options": [
+        "The difference between indicated altitude and true altitude.",
+        "The error caused by the aircraft's internal magnetic fields.",
+        "The angular difference between True North and Magnetic North.",
+        "The movement of the compass needle during acceleration."
+      ],
+      "question": "In air navigation, what is meant by the term 'Magnetic Variation'?",
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "explanation": "The Variation is the angular difference between the Magnetic North Pole and the Geographic (True) North Pole.",
+      "id": "ab-mc-0107"
+    },
+    {
+      "correctAnswer": 1,
+      "explanation": "A steep pressure gradient (isobars close together) indicates a rapid change in pressure over distance, resulting in higher wind speeds.",
+      "type": "multiple_choice",
+      "question": "What do closely spaced isobars on a surface pressure chart generally indicate?",
+      "options": [
+        "Light winds and clear skies.",
+        "Strong winds.",
+        "Fog and low visibility.",
+        "High temperatures and humidity."
+      ],
+      "id": "ab-mc-0108"
+    },
+    {
+      "options": [
+        "The height is constant at 36,090ft worldwide.",
+        "It is higher at the poles than at the equator.",
+        "It is higher at the equator than at the poles.",
+        "It is lower in summer than in winter."
+      ],
+      "type": "multiple_choice",
+      "explanation": "The tropopause acts as a lid on weather; its height varies from roughly 26,000ft at the poles to 54,000ft at the equator.",
+      "correctAnswer": 2,
+      "question": "In the International Standard Atmosphere (ISA), how does the height of the tropopause vary with latitude?",
+      "id": "ab-mc-0109"
+    },
+    {
+      "explanation": "Aspect ratio is the ratio of the wingspan to the mean chord; high aspect ratio wings are more efficient as they produce less induced drag.",
+      "question": "What is a primary aerodynamic advantage of a wing with a high aspect ratio?",
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "options": [
+        "Low induced drag.",
+        "High induced drag.",
+        "Very high stall speed.",
+        "Increased parasitic drag."
+      ],
+      "id": "ab-mc-0110"
+    },
+    {
+      "explanation": "Semi-monocoque designs use a combination of a stressed skin and internal longitudinal members (stringers/longerons) to distribute loads.",
+      "question": "In aircraft construction, which of the following best describes a 'semi-monocoque' fuselage?",
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "options": [
+        "Internal bracing wires only.",
+        "Stressed skin reinforced by stringers and longerons.",
+        "A heavy internal heavy steel frame.",
+        "A single hollow tube with no internal support."
+      ],
+      "id": "ab-mc-0111"
+    },
+    {
+      "options": [
+        "Pressure altitude.",
+        "The aircraft's discrete 4-digit squawk code.",
+        "Special identity (SPI) ident pulse.",
+        "Remaining fuel endurance."
+      ],
+      "type": "multiple_choice",
+      "explanation": "A secondary surveillance radar (SSR) transponder provides identification and altitude, but cannot transmit the aircraft's fuel status.",
+      "correctAnswer": 3,
+      "question": "Which of the following information is NOT transmitted by a Mode C transponder?",
+      "id": "ab-mc-0112"
+    },
+    {
+      "explanation": "A temperature inversion occurs when air temperature increases with altitude, often trapping pollutants or moisture below it.",
+      "question": "In meteorology, what is meant by the term 'Temperature Inversion'?",
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "options": [
+        "A rapid decrease in temperature with altitude.",
+        "A constant temperature regardless of altitude.",
+        "An increase in temperature with an increase in altitude.",
+        "A phenomenon that only occurs inside clouds."
+      ],
+      "id": "ab-mc-0113"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Minimum control speed in the air.",
+        "Minimum climb speed with one engine out.",
+        "Maximum speed for flap extension.",
+        "Velocity of maximum cruise altitude."
+      ],
+      "explanation": "Vmca is the minimum speed at which directional control can be maintained with the critical engine failed and the other at takeoff power.",
+      "question": "In multi-engine aerodynamics, what does the term 'Vmca' represent?",
+      "correctAnswer": 0,
+      "id": "ab-mc-0114"
+    },
+    {
+      "options": [
+        "Lowers the density altitude.",
+        "Increases the density altitude.",
+        "Has no effect on density altitude.",
+        "Decreases the pressure altitude."
+      ],
+      "type": "multiple_choice",
+      "explanation": "Density altitude is pressure altitude corrected for non-standard temperature; high temperatures result in higher density altitudes.",
+      "correctAnswer": 1,
+      "question": "How does an increase in ambient temperature affect 'Density Altitude' at a constant pressure altitude?",
+      "id": "ab-mc-0115"
+    },
+    {
+      "correctAnswer": 3,
+      "question": "What transponder code should be set to indicate a 'Hijack' or 'Unlawful Interference'?",
+      "explanation": "7500 is the international squawk code for unlawful interference (hijacking).",
+      "options": [
+        "7700",
+        "7600",
+        "2000",
+        "7500"
+      ],
+      "type": "multiple_choice",
+      "id": "ab-mc-0116"
+    },
+    {
+      "correctAnswer": 0,
+      "question": "Which of the following is the correct definition of 'Relative Humidity'?",
+      "explanation": "Relative humidity is the ratio of water vapour present compared to the maximum amount the air could hold at that temperature.",
+      "options": [
+        "The amount of water vapour present relative to the maximum possible at that temperature.",
+        "The actual weight of water vapour per kilogram of air.",
+        "The temperature at which condensation will occur.",
+        "The percentage of oxygen present in the air."
+      ],
+      "type": "multiple_choice",
+      "id": "ab-mc-0117"
+    },
+    {
+      "correctAnswer": 1,
+      "question": "What is the primary internal component of a Vertial Speed Indicator (VSI) that allows it to show a rate of change?",
+      "explanation": "The vertical speed indicator (VSI) uses a calibrated orifice (metering unit) to create a pressure differential during climbs or descents.",
+      "options": [
+        "An aneroid capsule measuring absolute pressure.",
+        "A diaphragm and a calibrated leak (metering unit).",
+        "A pitot tube and a static vent.",
+        "A gyroscope rotating in the vertical plane."
+      ],
+      "type": "multiple_choice",
+      "id": "ab-mc-0118"
+    },
+    {
+      "options": [
+        "The speed at which the aircraft will stall in a turn.",
+        "The maximum speed for landing gear extension.",
+        "The maximum operating limit speed.",
+        "The minimum speed for safe flight in icing conditions."
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "question": "In aircraft performance, what does 'Vmo' stand for?",
+      "explanation": "Vmo (the maximum operating limit speed) is usually expressed in KIAS at lower altitudes and Mach number (Mmo) at higher altitudes.",
+      "id": "ab-mc-0119"
+    },
+    {
+      "explanation": "Radiation fog occurs on clear, still nights when the ground loses heat through radiation, cooling the air immediately above it to its dew point.",
+      "correctAnswer": 0,
+      "question": "Which type of fog is most likely to form on a clear night with light winds due to the cooling of the Earth's surface?",
+      "options": [
+        "Radiation fog.",
+        "Advection fog.",
+        "Frontal fog.",
+        "Upslope fog."
+      ],
+      "type": "multiple_choice",
+      "id": "ab-mc-0120"
+    },
+    {
+      "correctAnswer": 1,
+      "question": "Which two pressure inputs are required by the Airspeed Indicator (ASI) to function correctly?",
+      "options": [
+        "Pitot pressure and dynamic pressure",
+        "Pitot pressure and static pressure",
+        "Dynamic pressure and static pressure",
+        "Total pressure and dynamic pressure"
+      ],
+      "type": "multiple_choice",
+      "explanation": "The pitot-static system uses the pitot tube to measure total (pitot) pressure and static ports to measure ambient atmospheric pressure.",
+      "id": "ab-mc-0121"
+    },
+    {
+      "explanation": "Induced drag is a byproduct of lift; as speed decreases, a higher angle of attack is needed to maintain lift, leading to stronger wingtip vortices and more induced drag.",
+      "options": [
+        "Remaining constant regardless of airspeed",
+        "Decreasing as airspeed decreases",
+        "Increasing as airspeed decreases",
+        "Decreasing as the angle of attack increases"
+      ],
+      "type": "multiple_choice",
+      "question": "In level flight, how does induced drag typically change as the aircraft's airspeed decreases?",
+      "correctAnswer": 2,
+      "id": "ab-mc-0122"
+    },
+    {
+      "question": "Under standard ICAO/UK Rules of the Air, which aircraft has the right-of-way when one aircraft is overtaking another?",
+      "correctAnswer": 0,
+      "explanation": "According to the Rules of the Air, an aircraft being overtaken has the right-of-way, and the overtaking aircraft must keep out of the way by altering course to the right.",
+      "type": "multiple_choice",
+      "options": [
+        "The aircraft being overtaken",
+        "The aircraft performing the overtaking manoeuvre",
+        "The faster of the two aircraft",
+        "The aircraft flying at the lower altitude"
+      ],
+      "id": "ab-mc-0123"
+    },
+    {
+      "question": "According to the International Standard Atmosphere (ISA), what happens to the air temperature above the tropopause (up to 20km)?",
+      "correctAnswer": 3,
+      "explanation": "The tropopause marks the upper boundary of the troposphere; above this point, in the lower stratosphere, the temperature remains constant at -56.5°C in the ISA model.",
+      "type": "multiple_choice",
+      "options": [
+        "Continues to decrease at 2°C per 1,000ft",
+        "Starts to increase rapidly",
+        "Decreases at a rate of 0.65°C per 100m",
+        "Remains constant with increasing altitude"
+      ],
+      "id": "ab-mc-0124"
+    },
+    {
+      "options": [
+        "Pitch up and yaw to the left",
+        "Roll to the left and pitch down",
+        "Roll to the right and yaw to the right",
+        "Yaw to the right and pitch down"
+      ],
+      "type": "multiple_choice",
+      "explanation": "The secondary effect of applying right rudder is a yaw to the right, which causes the left wing to move faster than the right, creating more lift and causing a roll to the right.",
+      "correctAnswer": 2,
+      "question": "When a pilot applies right rudder in flight, what is the 'secondary effect' of this control input?",
+      "id": "ab-mc-0125"
+    },
+    {
+      "correctAnswer": 1,
+      "question": "In a METAR, what does a small temperature-dew point spread (e.g., 2°C or less) generally indicate to a pilot?",
+      "type": "multiple_choice",
+      "options": [
+        "Low probability of fog formation",
+        "High probability of fog formation",
+        "Increasing visibility conditions",
+        "Rapidly clearing skies"
+      ],
+      "explanation": "A narrow spread between the air temperature and the dew point indicates high relative humidity, meaning the air is close to saturation and fog is likely to form.",
+      "id": "ab-mc-0126"
+    },
+    {
+      "explanation": "Vne (Never Exceed Speed) is the maximum speed the aircraft is designed to withstand; exceeding it risks structural failure or aeroelastic flutter.",
+      "options": [
+        "Never Exceed Speed",
+        "Maximum Structural Cruising Speed",
+        "Manoeuvring Speed",
+        "Maximum Flap Extended Speed"
+      ],
+      "type": "multiple_choice",
+      "question": "What does the red radial line on a standard analogue Airspeed Indicator (ASI) represent?",
+      "correctAnswer": 0,
+      "id": "ab-mc-0127"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "1.98°C per 1,000 metres",
+        "1.98°C per 1,000 feet",
+        "0.5°C per 1,000 feet",
+        "3.0°C per 1,000 feet"
+      ],
+      "explanation": "The standard lapse rate is a decrease of 1.98°C (often rounded to 2°C) per 1,000 feet of altitude gain in the troposphere.",
+      "correctAnswer": 1,
+      "question": "What is the standard ISA temperature lapse rate in the troposphere?",
+      "id": "ab-mc-0128"
+    },
+    {
+      "explanation": "As air density decreases (due to altitude or heat), the engine produces less power and the propeller/wings are less efficient, resulting in a longer takeoff roll.",
+      "options": [
+        "Reduced takeoff distance and improved climb rate",
+        "Higher engine power output and shorter ground roll",
+        "Increased air density and decreased takeoff roll",
+        "Increased takeoff distance and reduced rate of climb"
+      ],
+      "type": "multiple_choice",
+      "question": "How does a high density altitude affect the takeoff performance of a piston-engine aircraft?",
+      "correctAnswer": 3,
+      "id": "ab-mc-0129"
+    },
+    {
+      "correctAnswer": 2,
+      "question": "To achieve the best glide range in the event of an engine failure, a pilot should fly at the airspeed that corresponds to:",
+      "type": "multiple_choice",
+      "options": [
+        "Minimum induced drag only",
+        "Maximum possible lift coefficient",
+        "Maximum Lift-to-Drag ratio (L/D Max)",
+        "The highest possible airspeed for the aircraft type"
+      ],
+      "explanation": "The lift-to-drag (L/D) ratio is highest at a specific angle of attack, providing the minimum total drag and the furthest gliding distance for any given altitude.",
+      "id": "ab-mc-0130"
+    },
+    {
+      "options": [
+        "Advection fog",
+        "Radiation fog",
+        "Upslope fog",
+        "Frontal fog"
+      ],
+      "type": "multiple_choice",
+      "explanation": "Advection fog occurs when warm, moist air moves horizontally over a colder surface (land or sea), cooling the air to its dew point.",
+      "correctAnswer": 0,
+      "question": "Which type of fog forms when warm, moist air moves over a colder surface, such as the sea?",
+      "id": "ab-mc-0131"
+    },
+    {
+      "options": [
+        "992 hPa",
+        "1013.25 hPa",
+        "1000 hPa",
+        "The local QNH value"
+      ],
+      "type": "multiple_choice",
+      "explanation": "Pressure altitude is the altitude indicated on an altimeter when it is set to the standard pressure setting of 1013.25 hPa (29.92 inches Hg).",
+      "correctAnswer": 1,
+      "question": "What pressure setting must be entered into the altimeter sub-scale to read 'Pressure Altitude'?",
+      "id": "ab-mc-0132"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Anti-clockwise and outwards",
+        "Clockwise and outwards",
+        "Clockwise and inwards",
+        "Anti-clockwise and inwards"
+      ],
+      "explanation": "High-pressure systems (anticyclones) in the Northern Hemisphere circulate clockwise and slightly outwards (sub-gradient) due to the Coriolis effect and surface friction.",
+      "correctAnswer": 1,
+      "question": "In the Northern Hemisphere, what is the general surface wind direction around a High Pressure system?",
+      "id": "ab-mc-0133"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Maximum flap extended speed",
+        "Maximum landing gear operating speed",
+        "Minimum maneuvering speed",
+        "Maximum structural cruising speed"
+      ],
+      "explanation": "Vfec is the maximum speed at which the flaps can be kept fully or partially extended during flight.",
+      "correctAnswer": 0,
+      "question": "In aircraft performance terminology, what does the abbreviation 'Vfe' represent?",
+      "id": "ab-mc-0134"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "Wake turbulence is generated when an aircraft is producing lift, with the strongest vortices occurring when it is heavy, clean, and slow.",
+      "options": [
+        "Light, clean, and fast",
+        "Heavy, dirty, and slow",
+        "Heavy, clean, and slow",
+        "Light, dirty, and fast"
+      ],
+      "correctAnswer": 2,
+      "question": "Under which of the following conditions will an aircraft generate the strongest wake turbulence?",
+      "id": "ab-mc-0135"
+    },
+    {
+      "question": "Which transponder code should a pilot select to indicate a total communications (radio) failure?",
+      "correctAnswer": 2,
+      "explanation": "7600 is the international squawk code for a radio failure; 7500 is for hijack and 7700 is for general emergencies.",
+      "options": [
+        "7500",
+        "7700",
+        "7600",
+        "2000"
+      ],
+      "type": "multiple_choice",
+      "id": "ab-mc-0136"
+    },
+    {
+      "question": "What is the primary 'secondary effect' of aileron input if no rudder correction is applied?",
+      "correctAnswer": 1,
+      "options": [
+        "Roll in the opposite direction",
+        "Yaw in the opposite direction (Adverse yaw)",
+        "Pitch up tendency",
+        "Pitch down tendency"
+      ],
+      "explanation": "The secondary effect of aileron input is yaw in the opposite direction (adverse yaw) caused by increased drag on the rising wing.",
+      "type": "multiple_choice",
+      "id": "ab-mc-0137"
+    },
+    {
+      "correctAnswer": 3,
+      "question": "In air navigation, what is meant by the term 'Variation'?",
+      "type": "multiple_choice",
+      "explanation": "Magnetic variation is the angular difference between the direction of True North and Magnetic North at a specific geographic location.",
+      "options": [
+        "The difference between Compass North and Magnetic North",
+        "The error caused by magnetic interference from the aircraft engine",
+        "The angle between the longitudinal axis and the relative wind",
+        "The angular difference between True North and Magnetic North"
+      ],
+      "id": "ab-mc-0138"
+    },
+    {
+      "explanation": "At sea level in the International Standard Atmosphere, the pressure is 1013.25 hPa (rounded to 1013 hPa).",
+      "options": [
+        "1000 hPa",
+        "1013 hPa/mb",
+        "29.92 hPa",
+        "1024 hPa"
+      ],
+      "type": "multiple_choice",
+      "question": "What is the standard ISA sea-level pressure value?",
+      "correctAnswer": 1,
+      "id": "ab-mc-0139"
+    },
+    {
+      "correctAnswer": 0,
+      "question": "In multi-engine aerodynamics, how is the 'Critical Engine' defined?",
+      "type": "multiple_choice",
+      "options": [
+        "The engine whose failure would most adversely affect aircraft control",
+        "The engine with the highest operating temperature",
+        "The engine that must be started first for electrical power",
+        "The engine closest to the cockpit for monitoring"
+      ],
+      "explanation": "The critical engine is the engine that, if it fails, would most adversely affect the performance or handling qualities of the aircraft.",
+      "id": "ab-mc-0140"
+    },
+    {
+      "correctAnswer": 1,
+      "question": "What is 'Ground Effect' in relation to aircraft aerodynamics?",
+      "type": "multiple_choice",
+      "explanation": "Ground effect reduces induced drag by interfering with wingtip vortex development, allowing the aircraft to fly at a lower speed than normal for a given lift.",
+      "options": [
+        "An increase in parasite drag",
+        "A reduction in induced drag when very close to the ground",
+        "An increase in stall speed during takeoff",
+        "A total loss of lift immediately after liftoff"
+      ],
+      "id": "ab-mc-0141"
+    },
+    {
+      "question": "Which of the following is the correct definition of 'Relative Humidity'?",
+      "correctAnswer": 2,
+      "options": [
+        "The weight of water vapour per kilogram of air",
+        "The actual temperature at which dew starts to form",
+        "The amount of water vapour present expressed as a percentage of the saturation value",
+        "The pressure exerted by water vapour in the atmosphere"
+      ],
+      "explanation": "Relative humidity is the ratio of water vapour present in the air compared to the maximum amount the air could hold at that temperature.",
+      "type": "multiple_choice",
+      "id": "ab-mc-0142"
+    },
+    {
+      "options": [
+        "QFE (Field Elevation)",
+        "QNH (Nautical Height)",
+        "QNE (En-route)",
+        "QDM (Magnetic Heading)"
+      ],
+      "explanation": "QFE is the barometric pressure at the aerodrome elevation, so the altimeter will read zero when on the ground.",
+      "type": "multiple_choice",
+      "question": "Which altimeter setting will result in the instrument displaying height above the airfield (reading zero on the runway)?",
+      "correctAnswer": 0,
+      "id": "ab-mc-0143"
+    },
+    {
+      "options": [
+        "It decreases significantly",
+        "It remains exactly the same in terms of True Airspeed",
+        "It decreases as air density increases",
+        "It increases in terms of True Airspeed (TAS)"
+      ],
+      "explanation": "At higher altitudes, stall speed (Indicated Airspeed) remains largely constant, but the True Airspeed (TAS) at which that stall occurs increases because the air is less dense.",
+      "type": "multiple_choice",
+      "question": "How does the True Airspeed (TAS) at which a stall occurs change with an increase in altitude?",
+      "correctAnswer": 3,
+      "id": "ab-mc-0144"
+    },
+    {
+      "question": "In aircraft performance, what does the speed 'Va' represent?",
+      "explanation": "Va is the maximum speed at which full or abrupt control movements can be made without overstressing the airframe.",
+      "correctAnswer": 2,
+      "options": [
+        "Maximum Structural Cruising Speed",
+        "Maximum Flap Extended Speed",
+        "Design Manoeuvring Speed",
+        "Never Exceed Speed"
+      ],
+      "type": "multiple_choice",
+      "id": "ab-mc-0145"
+    },
+    {
+      "question": "What happens to 'Induced Drag' as the airspeed of an aircraft decreases in level flight?",
+      "options": [
+        "It increases as airspeed decreases.",
+        "It increases as airspeed increases.",
+        "It remains constant regardless of airspeed.",
+        "It is only present during supersonic flight."
+      ],
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "explanation": "Induced drag is a byproduct of lift and is highest at low speeds where high angles of attack are required.",
+      "id": "ab-mc-0146"
+    },
+    {
+      "correctAnswer": 3,
+      "options": [
+        "Cumulonimbus",
+        "Stratus",
+        "Cirrus",
+        "Lenticular"
+      ],
+      "type": "multiple_choice",
+      "explanation": "Lenticular clouds (Altocumulus lenticularis) form in the crests of mountain waves and are a reliable indicator of clear air turbulence.",
+      "question": "Which cloud type is most commonly associated with standing mountain waves and significant turbulence?",
+      "id": "ab-mc-0147"
+    },
+    {
+      "question": "How does a more aft (rearward) Centre of Gravity (CG) affect an aircraft's stall speed?",
+      "type": "multiple_choice",
+      "options": [
+        "The stall speed increases.",
+        "The stall speed decreases.",
+        "The stall speed remains unchanged.",
+        "The aircraft becomes impossible to stall."
+      ],
+      "correctAnswer": 1,
+      "explanation": "An aft (rearward) CG reduces the tail down force required, leading to less wing lift needed and therefore lower stall speeds.",
+      "id": "ab-mc-0148"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "options": [
+        "The altimeter will indicate lower than the actual altitude.",
+        "The altimeter reading will not change.",
+        "The altimeter will indicate higher than the actual altitude.",
+        "The altimeter will automatically adjust to the local QNH."
+      ],
+      "explanation": "When transitioning from high pressure to low pressure, the altimeter will over-read (show a higher altitude than actual).",
+      "question": "When flying from an area of high pressure to an area of low pressure without resetting the altimeter, what will happen to the indicated altitude?",
+      "id": "ab-mc-0149"
+    },
+    {
+      "explanation": "P-factor is caused by the descending propeller blade having a higher angle of attack than the ascending blade when the aircraft is at a high angle of attack.",
+      "type": "multiple_choice",
+      "options": [
+        "The descending blade produces more thrust than the ascending blade.",
+        "The engine torque rotates the airframe in the opposite direction.",
+        "The propeller wash hits the vertical stabiliser on one side.",
+        "Gyroscopic precession shifts the force 90 degrees in the direction of rotation."
+      ],
+      "correctAnswer": 0,
+      "question": "Which of the following best describes the cause of 'Asymmetric Blade Effect' (P-factor)?",
+      "id": "ab-mc-0150"
+    },
+    {
+      "options": [
+        "90 degrees",
+        "45 degrees",
+        "180 degrees",
+        "0 degrees"
+      ],
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "explanation": "At the magnetic equator, the magnetic flux lines are parallel to the Earth's surface, resulting in zero dip.",
+      "question": "What is the value of 'Magnetic Dip' at the Earth's magnetic equator?",
+      "id": "ab-mc-0151"
+    },
+    {
+      "question": "In meteorology, what is the definition of an 'Occluded Front'?",
+      "explanation": "An occluded front occurs when a fast-moving cold front overtakes a slower-moving warm front, lifting the warm air aloft.",
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "options": [
+        "A warm front overtaking a cold front.",
+        "A cold front overtaking a warm front.",
+        "Two stationary air masses of equal temperature.",
+        "A high-pressure system meeting a low-pressure system."
+      ],
+      "id": "ab-mc-0152"
+    },
+    {
+      "question": "Which transponder code should be set to indicate an aircraft is subject to 'Unlawful Interference' (Hijack)?",
+      "explanation": "A transponder code of 7500 is the international signal for unlawful interference or hijacking.",
+      "correctAnswer": 2,
+      "options": [
+        "7700",
+        "7600",
+        "7500",
+        "7000"
+      ],
+      "type": "multiple_choice",
+      "id": "ab-mc-0153"
+    },
+    {
+      "question": "What is the definition of 'Specific Range' in aircraft cruise performance?",
+      "type": "multiple_choice",
+      "options": [
+        "Distance flown per unit of fuel consumed.",
+        "Total fuel consumed over a specific time.",
+        "The maximum endurance of the aircraft in hours.",
+        "The distance covered during the climb phase only."
+      ],
+      "correctAnswer": 0,
+      "explanation": "Specific Range is the distance covered per unit of fuel burned, often expressed as Nautical Miles per Kilogram or Gallon.",
+      "id": "ab-mc-0154"
+    },
+    {
+      "question": "What is the primary aerodynamic purpose of 'Winglets' on a modern transport category aircraft?",
+      "explanation": "The primary purpose of a winglet is to reduce the strength of wingtip vortices, thereby reducing induced drag.",
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "options": [
+        "To increase the total lift produced by the wing.",
+        "To reduce induced drag by weakening wingtip vortices.",
+        "To increase the maximum takeoff weight.",
+        "To provide additional lateral stability during turbulence."
+      ],
+      "id": "ab-mc-0155"
+    },
+    {
+      "explanation": "The aspect ratio of a wing is the ratio of its span to its mean chord (Span / Chord).",
+      "correctAnswer": 2,
+      "options": [
+        "The ratio of wing thickness to wing chord.",
+        "The ratio of wing area to fuselage length.",
+        "The ratio of wing span to its mean chord.",
+        "The angle at which the wing is attached to the fuselage."
+      ],
+      "type": "multiple_choice",
+      "question": "In aerodynamics, how is the 'Aspect Ratio' of a wing calculated?",
+      "id": "ab-mc-0156"
+    },
+    {
+      "explanation": "Density altitude is pressure altitude adjusted for non-standard temperature; as temperature increases, density altitude increases, degrading performance.",
+      "question": "What is the definition of 'Density Altitude'?",
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "options": [
+        "The altitude displayed when the altimeter is set to 1013.25 hPa.",
+        "Pressure altitude corrected for non-standard temperature.",
+        "The vertical distance above the airfield elevation.",
+        "The altitude determined by the local QNH setting."
+      ],
+      "id": "ab-mc-0157"
+    },
+    {
+      "options": [
+        "0.2 Mach.",
+        "0.6 Mach.",
+        "0.3 Mach.",
+        "0.4 Mach."
+      ],
+      "type": "multiple_choice",
+      "explanation": "Compressibility effects generally become significant above Mach 0.4, causing air density changes that must be accounted for in airspeed calculations.",
+      "correctAnswer": 3,
+      "question": "At what approximate Mach number do compressibility effects typically begin to affect the accuracy of the airspeed indicator?",
+      "id": "ab-mc-0158"
+    },
+    {
+      "question": "In the context of takeoff performance, what is the definition of the speed 'V1'?",
+      "correctAnswer": 0,
+      "explanation": "V1 is the decision speed at which a takeoff can be either safely aborted or continued following an engine failure.",
+      "type": "multiple_choice",
+      "options": [
+        "The maximum speed during takeoff at which the pilot can take the first action to stop the aircraft.",
+        "The minimum speed at which the aircraft is able to climb with one engine inoperative.",
+        "The speed at which the aircraft leaves the ground (liftoff speed).",
+        "The maximum speed for extending the landing gear."
+      ],
+      "id": "ab-mc-0159"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "The speed at which the aircraft exceeds Mach 1.0.",
+        "The speed at which drag begins to decrease significantly.",
+        "The highest speed of flight without supersonic flow over any part of the airframe.",
+        "The speed at which a shockwave first forms on the wing."
+      ],
+      "question": "What is the definition of the 'Critical Mach Number' (M_crit)?",
+      "correctAnswer": 2,
+      "explanation": "The Mach number of the aircraft when the airflow over any part of the wing first reaches the speed of sound is known as the Critical Mach Number.",
+      "id": "ab-mc-0160"
+    },
+    {
+      "question": "Wingtip vortices are most severe when the generating aircraft is:",
+      "correctAnswer": 2,
+      "explanation": "Vortices are strongest from heavy aircraft, in clean configuration (flaps up), and traveling at slow speeds.",
+      "type": "multiple_choice",
+      "options": [
+        "Light, fast, and in a landing configuration.",
+        "Heavy, fast, and in a clean configuration.",
+        "Heavy, slow, and in a clean configuration.",
+        "Light, slow, and in a landing configuration."
+      ],
+      "id": "ab-mc-0161"
+    },
+    {
+      "options": [
+        "A line representing the shortest distance between two points on the Earth's surface.",
+        "A line on the Earth's surface that crosses all meridians at the same angle.",
+        "A line of constant longitude.",
+        "A line that follows a great circle path."
+      ],
+      "type": "multiple_choice",
+      "explanation": "Rhumb lines cross all meridians at the same angle, making them easier to steer for navigation, though they are not the shortest distance.",
+      "correctAnswer": 1,
+      "question": "In air navigation, what is a 'Rhumb Line'?",
+      "id": "ab-mc-0162"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Fuel vaporising in the fuel lines, preventing the flow of liquid fuel to the engine.",
+        "Water ice forming in the fuel tank vents.",
+        "Air bubbles entering the fuel pump during high-G manoeuvres.",
+        "A mechanical failure of the fuel selector valve."
+      ],
+      "question": "What is the phenomenon known as 'Vapor Lock' in a fuel system?",
+      "correctAnswer": 0,
+      "explanation": "Vapor locks occur when fuel evaporates in the lines due to high temperatures or low pressure, blocking the flow of liquid fuel.",
+      "id": "ab-mc-0163"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "The CG must be exactly at the Aerodynamic Centre.",
+        "The CG must be aft of the Neutral Point.",
+        "The CG must be at the most rearward limit of the Mean Aerodynamic Chord.",
+        "The CG must be forward of the Neutral Point."
+      ],
+      "question": "For an aircraft to possess positive static longitudinal stability, where must the Centre of Gravity (CG) be located?",
+      "correctAnswer": 3,
+      "explanation": "An aircraft is longitudinally stable if the CG is located forward of the Neutral Point, providing a restoring moment.",
+      "id": "ab-mc-0164"
+    },
+    {
+      "question": "What is the primary purpose of 'Differential Ailerons'?",
+      "correctAnswer": 2,
+      "explanation": "Differential ailerons move the upward-deflecting aileron further than the downward-deflecting one to counter adverse yaw by equalising drag.",
+      "type": "multiple_choice",
+      "options": [
+        "To increase the rate of roll at high speeds.",
+        "To reduce the pilot effort required to move the control column.",
+        "To reduce adverse yaw by creating more drag on the down-going wing.",
+        "To prevent the aircraft from entering a high-speed buffet."
+      ],
+      "id": "ab-mc-0165"
+    },
+    {
+      "explanation": "7600 is the international transponder code used to signal a failure of radio communications.",
+      "correctAnswer": 0,
+      "question": "Which transponder code should be selected to indicate a 'Radio Communication Failure'?",
+      "options": [
+        "7600.",
+        "7500.",
+        "7700.",
+        "2000."
+      ],
+      "type": "multiple_choice",
+      "id": "ab-mc-0166"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "By reducing the wing's surface area.",
+        "By increasing the critical angle of attack.",
+        "By decreasing the wing's camber.",
+        "By transitioning the boundary layer from turbulent to laminar."
+      ],
+      "explanation": "Slats increase the wing's camber and energy in the boundary layer, allowing the aircraft to maintain lift at higher angles of attack.",
+      "question": "How do leading-edge slats primarily help to reduce the stall speed of an aircraft?",
+      "correctAnswer": 1,
+      "id": "ab-mc-0167"
+    },
+    {
+      "explanation": "Advection fog forms when warm, moist air moves over a cool surface, cooling the air to its dew point.",
+      "correctAnswer": 2,
+      "question": "What is the primary cause of 'Advection Fog'?",
+      "options": [
+        "Moist air being lifted by a mountain range.",
+        "Rapid cooling of the ground on a clear, still night.",
+        "Warm, moist air moving over a colder surface.",
+        "Cold air moving over a warm sea surface."
+      ],
+      "type": "multiple_choice",
+      "id": "ab-mc-0168"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "explanation": "Induced drag is produced by the creation of lift and decreases as airspeed increases, while parasite drag increases with airspeed.",
+      "question": "How does 'Induced Drag' behave in relation to the airspeed of an aircraft in level flight?",
+      "options": [
+        "Decreases as speed decreases",
+        "Decreases as speed increases",
+        "Remains constant regardless of speed",
+        "Is independent of the angle of attack"
+      ],
+      "id": "ab-mc-0169"
+    },
+    {
+      "question": "Which transponder code should be selected to indicate a general 'Emergency' (Mayday) situation?",
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "explanation": "By international convention, 7700 is the code used globally to indicate that an aircraft is in a state of emergency.",
+      "options": [
+        "7700",
+        "7600",
+        "7500",
+        "7000"
+      ],
+      "id": "ab-mc-0170"
+    },
+    {
+      "options": [
+        "Decrease",
+        "Stay the same",
+        "Increase",
+        "Fluctuate depending on the lapse rate"
+      ],
+      "correctAnswer": 2,
+      "explanation": "TAS increases with altitude for a constant CAS because the air density decreases, requiring a higher true speed to produce the same dynamic pressure.",
+      "type": "multiple_choice",
+      "question": "When climbing at a constant Calibrated Airspeed (CAS) in the troposphere, what will happen to the True Airspeed (TAS)?",
+      "id": "ab-mc-0171"
+    },
+    {
+      "question": "What type of cloud and precipitation are typically associated with a cold air mass moving over a warmer surface?",
+      "explanation": "A cold air mass moving over a warmer surface becomes unstable from below, leading to convective vertical development and cumuliform clouds.",
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "options": [
+        "Stratiform clouds and steady rain",
+        "A reduction in visibility due to fog",
+        "No cloud formation due to high pressure",
+        "Cumuliform clouds and showery precipitation"
+      ],
+      "id": "ab-mc-0172"
+    },
+    {
+      "question": "In aircraft performance, what does the abbreviation 'V_MCG' represent?",
+      "type": "multiple_choice",
+      "explanation": "V_MCG is the minimum speed during takeoff at which the aircraft can be controlled on the ground using only aerodynamic controls following an engine failure.",
+      "correctAnswer": 1,
+      "options": [
+        "Maximum Ground speed for gear retraction",
+        "Minimum Control speed on the Ground",
+        "Maximum Continuous Generator output speed",
+        "Minimum speed for Glideslope intercept"
+      ],
+      "id": "ab-mc-0173"
+    },
+    {
+      "explanation": "Oxygen systems undergo high-pressure changes and chemical reactions; oils and greases can cause spontaneous combustion or explosions when in contact with pure oxygen.",
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "question": "Which of the following substances must NEVER be used on aircraft oxygen system components due to the risk of fire or explosion?",
+      "options": [
+        "Standard aviation fuel",
+        "Hydraulic fluid (Skydrol)",
+        "Water-based lubricants",
+        "Hydrocarbon-based oils or greases"
+      ],
+      "id": "ab-mc-0174"
+    },
+    {
+      "options": [
+        "Variation",
+        "Deviation",
+        "Drift angle",
+        "Magnetic Inclination"
+      ],
+      "question": "What is the term used to describe the angular difference between True North and Magnetic North?",
+      "explanation": "Variation is the angular difference between True North (geographic) and Magnetic North (where the compass needle points).",
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "id": "ab-mc-0175"
+    },
+    {
+      "options": [
+        "1 minute",
+        "4 minutes",
+        "2 minutes undercover",
+        "3 minutes"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "explanation": "A standard rate turn is 3 degrees per second, which means a full 360-degree circle takes 120 seconds (2 minutes).",
+      "question": "How long does it take to complete a 360-degree 'Rate 1' (Standard Rate) turn?",
+      "id": "ab-mc-0176"
+    },
+    {
+      "question": "The phenomenon of 'Dutch Roll' is primarily caused by an imbalance between:",
+      "explanation": "Dutch Roll is an oscillatory instability combining yawing and rolling, typical of swept-wing aircraft, and is usually countered by a yaw damper.",
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "options": [
+        "Longitudinal stability vs. Pitching",
+        "Directional stability vs. Lateral stability balance",
+        "Ground effect vs. Wing loading",
+        "Engine torque vs. Gyroscopic precession"
+      ],
+      "id": "ab-mc-0177"
+    },
+    {
+      "explanation": "The pressure altimeter operates on the principle of the International Standard Atmosphere (ISA) and uses an aneroid capsule to detect static pressure changes.",
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "question": "Which pressure is measured by a standard barometric altimeter to determine altitude?",
+      "options": [
+        "Static pressure",
+        "Pitot pressure",
+        "Dynamic pressure",
+        "Differential pressure"
+      ],
+      "id": "ab-mc-0178"
+    },
+    {
+      "question": "In which layer of the Earth's atmosphere does nearly all weather occurs?",
+      "explanation": "The troposphere contains most of the atmosphere's water vapour and is characterized by a decrease in temperature with height (lapse rate).",
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "options": [
+        "Mesosphere",
+        "Stratosphere",
+        "Troposphere",
+        "Thermosphere"
+      ],
+      "id": "ab-mc-0179"
+    },
+    {
+      "options": [
+        "The total length of the runway plus the clearway",
+        "The length of runway declared available for the ground run of an aircraft taking off",
+        "The length of the runway plus the stopway",
+        "The distance required to reach a height of 50 feet above the surface"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "explanation": "TORA (Take-Off Run Available) is the physical length of the runway that is declared available and suitable for the ground run of an aircraft taking off.",
+      "question": "What is the definition of 'TORA' in airport performance calculations?",
+      "id": "ab-mc-0180"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "Critical engine failure is most severe when the failed engine's thrust vector is furthest from the fuselage, maximizing the yawing moment.",
+      "options": [
+        "Low density altitude",
+        "Aft Centre of Gravity (CG) position",
+        "Forward Centre of Gravity (CG) position",
+        "High aircraft weight"
+      ],
+      "correctAnswer": 2,
+      "question": "Which of the following conditions would increase the Minimum Control Speed (VMC) of a multi-engine aircraft?",
+      "id": "ab-mc-0181"
+    },
+    {
+      "explanation": "The Tropopause is characterized by an isothermal layer where the temperature stops decreasing with an increase in altitude.",
+      "options": [
+        "The temperature remains constant with increasing altitude.",
+        "The temperature increases rapidly with altitude.",
+        "The air pressure is at its highest point.",
+        "Water vapour concentration is at its maximum."
+      ],
+      "type": "multiple_choice",
+      "question": "What is the primary temperature characteristic of the Tropopause layer?",
+      "correctAnswer": 0,
+      "id": "ab-mc-0182"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "The 1-in-60 rule states that a 1-mile track error over 60 miles results in a 1-degree angle error.",
+      "options": [
+        "3 degrees",
+        "6 degrees",
+        "1 degree",
+        "10 degrees"
+      ],
+      "correctAnswer": 1,
+      "question": "Using the 1-in-60 rule, if an aircraft is 2 nautical miles off track after flying 20 nautical miles, what is the track error angle?",
+      "id": "ab-mc-0183"
+    },
+    {
+      "question": "In high-speed aerodynamics, what is 'Mach Tuck'?",
+      "correctAnswer": 3,
+      "explanation": "Mach Tuck occurs as the centre of pressure moves aft due to shockwave formation on the upper wing surface at high transonic speeds.",
+      "options": [
+        "An increase in lift due to shockwaves.",
+        "A tendency for the aircraft to roll uncontrollably.",
+        "A forward movement of the centre of pressure.",
+        "An aerodynamic nose-down pitch caused by the aft movement of the centre of pressure."
+      ],
+      "type": "multiple_choice",
+      "id": "ab-mc-0184"
+    },
+    {
+      "correctAnswer": 2,
+      "question": "What is the primary physical property of hydraulic fluid that makes it suitable for transmitting power?",
+      "type": "multiple_choice",
+      "options": [
+        "Highly compressible",
+        "High volatility",
+        "Non-compressible",
+        "Low viscosity index"
+      ],
+      "explanation": "Hydraulic fluid is considered non-compressible, which allows for the immediate and efficient transmission of force in the system.",
+      "id": "ab-mc-0185"
+    },
+    {
+      "question": "What is the standard vertical separation minimum (VSM) between IFR aircraft operating below Flight Level 290?",
+      "correctAnswer": 0,
+      "explanation": "According to ICAO standards, the 1000-foot rule is the standard vertical separation minimum applied below FL290.",
+      "options": [
+        "1,000 feet",
+        "500 feet",
+        "2,000 feet",
+        "1,500 feet"
+      ],
+      "type": "multiple_choice",
+      "id": "ab-mc-0186"
+    },
+    {
+      "correctAnswer": 1,
+      "question": "What does the 'Octane Rating' of aviation gasoline (AVGAS) represent?",
+      "type": "multiple_choice",
+      "options": [
+        "The volatility of the fuel.",
+        "The resistance of the fuel to detonation.",
+        "The freezing point of the fuel.",
+        "The energy content per kilogram."
+      ],
+      "explanation": "The Octane rating measures the fuel's ability to resist detonation or 'knocking' during the combustion stroke.",
+      "id": "ab-mc-0187"
+    },
+    {
+      "question": "How is the Accelerate-Stop Distance Available (ASDA) calculated?",
+      "correctAnswer": 3,
+      "explanation": "ASDA is the length of the takeoff run available plus the length of the stopway, used for calculating accelerate-stop performance.",
+      "options": [
+        "TORA + Clearway",
+        "TORA + SWY + CWY",
+        "LDA + StopwayLength",
+        "TORA + Stopway (SWY)"
+      ],
+      "type": "multiple_choice",
+      "id": "ab-mc-0188"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Lift is less than weight.",
+        "Lift is greater than weight.",
+        "Lift is equal to weight.",
+        "Lift is equal to drag."
+      ],
+      "explanation": "In a climb, the total lift required is less than weight because the vertical component of thrust supports a portion of the aircraft's weight.",
+      "correctAnswer": 0,
+      "question": "In a steady, constant-speed climb, what is the relationship between Lift and Weight?",
+      "id": "ab-mc-0189"
+    },
+    {
+      "question": "What is the value of magnetic 'Dip' (inclination) at the Earth's magnetic equator?",
+      "correctAnswer": 1,
+      "explanation": "At the magnetic equator, the magnetic flux lines are parallel to the Earth's surface, resulting in zero dip.",
+      "options": [
+        "90 degrees",
+        "0 degrees",
+        "45 degrees",
+        "180 degrees"
+      ],
+      "type": "multiple_choice",
+      "id": "ab-mc-0190"
+    },
+    {
+      "explanation": "The venturi in a carburettor creates a pressure drop, which can cause moisture to freeze even when outside air temperatures are well above freezing.",
+      "options": [
+        "Only when OAT is below -10°C.",
+        "Only during high power settings.",
+        "When OAT is as high as +30°C in high humidity.",
+        "Only when flying through visible moisture."
+      ],
+      "type": "multiple_choice",
+      "question": "Under what conditions can carburettor icing occur?",
+      "correctAnswer": 2,
+      "id": "ab-mc-0191"
+    },
+    {
+      "options": [
+        "Both roll rate and yaw rate.",
+        "Roll rate only.",
+        "Yaw rate and angle of bank.",
+        "Pitch rate and roll rate."
+      ],
+      "explanation": "The turn coordinator uses a gimbal tilted at an angle (usually 30 degrees) to sense both roll rate and yaw rate.",
+      "type": "multiple_choice",
+      "question": "What does a standard 'Turn Coordinator' sense that a 'Turn and Slip Indicator' does not?",
+      "correctAnswer": 0,
+      "id": "ab-mc-0192"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "options": [
+        "Airspeed / Fuel Flow",
+        "Groundspeed / Fuel Flow",
+        "Fuel Flow / Groundspeed",
+        "Fuel Flow / Airspeed"
+      ],
+      "explanation": "Specific range is the ground distance covered per unit of fuel consumed, calculated as Groundspeed divided by Fuel Flow.",
+      "question": "In aircraft performance, how is 'Specific Range' defined?",
+      "id": "ab-mc-0193"
+    },
+    {
+      "explanation": "The 'Q' code QUJ represents the true bearing from the aircraft to the station.",
+      "options": [
+        "True bearing TO the station",
+        "Magnetic bearing TO the station",
+        "True bearing FROM the station",
+        "Magnetic bearing FROM the station"
+      ],
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "question": "In radio navigation, what does the code 'QUJ' signify?",
+      "id": "ab-mc-0194"
+    },
+    {
+      "explanation": "Geometric altitude is the actual vertical distance above Mean Sea Level (MSL), regardless of atmospheric pressure variations.",
+      "correctAnswer": 2,
+      "options": [
+        "Pressure Altitude corrected for non-standard pressure",
+        "Vertical distance above the ground (AGL)",
+        "The actual vertical distance above Mean Sea Level (MSL)",
+        "The vertical distance above the 1013.25 hPa datum"
+      ],
+      "type": "multiple_choice",
+      "question": "What is the definition of 'Geometric Altitude'?",
+      "id": "ab-mc-0195"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "options": [
+        "The speed range between V1 and VR",
+        "The legal gap between VMO and MMO",
+        "The altitude where the aircraft speed exceeds the speed of sound",
+        "The altitude where the low-speed stall and high-speed buffet speeds meet"
+      ],
+      "explanation": "At high altitudes, the speed of sound decreases due to lower temperatures, causing the 'high-speed' buffet (Mach) to occur at lower TAS, while lower air density causes 'low-speed' buffet (Stall) to occur at higher TAS.",
+      "question": "What is meant by the term 'Coffin Corner' in high-altitude aerodynamics?",
+      "id": "ab-mc-0196"
+    },
+    {
+      "options": [
+        "It provides tactile feedback to the pilot's controls",
+        "It moves the control surfaces without moving the cockpit controls",
+        "It is used only for manual trimming of the aircraft",
+        "It requires a mechanical link directly to the control yoke"
+      ],
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "explanation": "The primary benefit of a series actuator in an autopilot system is that it moves the control surfaces without causing corresponding movement of the pilot's control column or pedals.",
+      "question": "In an automatic flight control system, what is the main characteristic of a 'series' actuator?",
+      "id": "ab-mc-0197"
+    },
+    {
+      "question": "How does 'Induced Drag' change as the airspeed of an aircraft in level flight increases?",
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "options": [
+        "It increases in direct proportion to speed",
+        "It increases with the square of the speed",
+        "It decreases as airspeed increases",
+        "It remains constant regardless of airspeed"
+      ],
+      "explanation": "Induced drag is inversely proportional to the square of the airspeed (1/V²); as airspeed increases, the angle of attack decreases, reducing induced drag.",
+      "id": "ab-mc-0198"
+    },
+    {
+      "question": "Which of the following is included in an aircraft's 'Standard Empty Mass'?",
+      "explanation": "Standard empty mass typically includes the airframe, engines, fixed equipment, and unusable fuel/liquids. Useful load (including cabin crew) is added to this.",
+      "type": "multiple_choice",
+      "options": [
+        "Unusable fuel and unusable engine oil",
+        "Variable load and usable fuel",
+        "The flight crew and their baggage",
+        "The maximum payload capacity only"
+      ],
+      "correctAnswer": 0,
+      "id": "ab-mc-0199"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "High humidity",
+        "Rich fuel/air mixture",
+        "Low cylinder head temperatures",
+        "Excessively lean fuel/air mixture"
+      ],
+      "correctAnswer": 3,
+      "explanation": "In a piston engine, a lean mixture (high air-to-fuel ratio) causes the fuel to burn more slowly and at higher temperatures, potentially leading to detonation.",
+      "question": "Which of the following conditions is most likely to cause 'detonation' in a piston engine?",
+      "id": "ab-mc-0200"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Advection fog",
+        "Radiation fog",
+        "Upslope fog",
+        "Frontal fog"
+      ],
+      "correctAnswer": 0,
+      "explanation": "An 'Advection' fog forms when a relatively warm, moist air mass moves over a colder surface, cooling the air to its dew point.",
+      "question": "What type of fog is formed when warm, moist air flows over a cold land or sea surface?",
+      "id": "ab-mc-0201"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "options": [
+        "To filter out metallic contaminants",
+        "To store fluid pressure for emergency use or to damp surges",
+        "To cool the hydraulic fluid during high-demand phases",
+        "To convert hydraulic pressure into mechanical linear motion"
+      ],
+      "explanation": "The primary purpose of an 'accumulator' in a hydraulic system is to store fluid under pressure to act as an energy buffer and damp out pressure surges.",
+      "question": "What is the primary function of an 'accumulator' in an aircraft hydraulic system?",
+      "id": "ab-mc-0202"
+    },
+    {
+      "question": "On an ILS approach, what is the immediate effect of a sudden increase in headwind component (windshear)?",
+      "explanation": "In the Northern Hemisphere, when transitioning from a tailwind to a headwind (increasing performance), the aircraft will initially experience an increase in IAS and an upward trend on the glidepath.",
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "options": [
+        "The IAS decreases and the aircraft sinks below the glidepath",
+        "The groundspeed increases while the IAS remains constant",
+        "The vertical speed increases causing a 'fly down' indication",
+        "The IAS increases and the aircraft rises above the glidepath"
+      ],
+      "id": "ab-mc-0203"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "options": [
+        "A gust front",
+        "A squall line",
+        "A microburst",
+        "A funnel cloud"
+      ],
+      "explanation": "An isolated, intense downdraft from a thunderstorm that spreads out horizontally upon reaching the ground is defined as a microburst.",
+      "question": "What is the term for a concentrated, strong downdraft of air with a diameter of less than 4km, often associated with cumulonimbus clouds?",
+      "id": "ab-mc-0204"
     }
   ],
   "mocks": []
