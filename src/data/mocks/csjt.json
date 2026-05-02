@@ -5059,6 +5059,199 @@
       "explanation": "Addressing minor errors early prevents them from becoming major issues and focuses on collective improvement.",
       "question": "You notice several factual errors in a report that your team has already submitted to another department. What are the best responses?",
       "id": "c-mr-0024"
+    },
+    {
+      "options": [
+        "Inform the stakeholder that you will approve it this once to avoid conflict.",
+        "Formally decline the request and cite the specific departmental data policies.",
+        "Ignore the request and hope they do not follow up.",
+        "Consult your department's Legal or Data Protection team to assess the risk."
+      ],
+      "question": "A senior stakeholder from an partner organisation asks you to share a dataset that contains identifiable information, which exceeds the scope of your data-sharing agreement. Which two actions are best?",
+      "type": "multiple_response",
+      "correctAnswers": [
+        1,
+        3
+      ],
+      "explanation": "Escalating immediately allows legal teams to assess risk, while open communication ensures the stakeholder understands the reasoning behind the refusal.",
+      "id": "c-mr-0025"
+    },
+    {
+      "correctAnswers": [
+        1,
+        2
+      ],
+      "explanation": "Establishing clear expectations while providing focused development support addresses the root cause of the performance issues while maintaining standards.",
+      "type": "multiple_response",
+      "question": "You have a team member who is delivering work late and with high error rates, despite previous informal reminders. Which two actions are appropriate?",
+      "options": [
+        "Wait for the next annual review to bring up the performance issues officially.",
+        "Schedule a private meeting to discuss specific examples where their work fell short.",
+        "Work with the employee to create a Performance Improvement Plan (PIP) with clear milestones.",
+        "Reassign their complex tasks to more capable team members without telling them why."
+      ],
+      "id": "c-mr-0026"
+    },
+    {
+      "correctAnswers": [
+        0,
+        3
+      ],
+      "explanation": "Collaborative planning creates a shared sense of ownership, while transparency about the necessity of the change helps reduce staff anxiety.",
+      "type": "multiple_response",
+      "question": "Your department is introducing new software that will significantly change how your team operates. Several staff members are vocal about their preference for the old system. Which two actions are best?",
+      "options": [
+        "Organise a workshop for the team to help design the implementation of the new technology.",
+        "Announce that the change is non-negotiable and anyone who disagrees should see HR.",
+        "Delegate the entire implementation process to a junior staff member to save time.",
+        "Set up regular briefing sessions to explain the benefits and timelines of the new system."
+      ],
+      "id": "c-mr-0027"
+    },
+    {
+      "explanation": "Gathering feedback from those impacted identifies hidden risks, while seeking more time ensures the policy is grounded in robust evidence.",
+      "correctAnswers": [
+        1,
+        2
+      ],
+      "type": "multiple_response",
+      "question": "A Minister has requested a high-priority policy paper within a very short timeframe, but you are concerned that the evidence base is incomplete. Which two actions should you take?",
+      "options": [
+        "Quickly draft the policy based on your assumptions to meet the deadline.",
+        "Consult with frontline staff who will be implementing the policy to identify potential issues.",
+        "Request a short extension from the Minister’s office to allow for more detailed analysis.",
+        "Advise the Minister that the policy cannot be written until next year."
+      ],
+      "id": "c-mr-0028"
+    },
+    {
+      "question": "During weekly meetings, a colleague consistently interrupts you and other junior staff members. Which two actions are most effective?",
+      "type": "multiple_response",
+      "correctAnswers": [
+        0,
+        1
+      ],
+      "explanation": "Directly addressing the colleague preserves the professional relationship, while a team-wide reminder reinforces general expectations without singling anyone out publicly.",
+      "options": [
+        "Speak to the colleague privately to explain the impact of their interruptions on the meeting.",
+        "Ask the meeting chair to ensure everyone is given equal time to speak without being interrupted.",
+        "Interrupt them back whenever they try to speak to show them how it feels.",
+        "Send an email to your manager complaining about the colleague's lack of professionalism."
+      ],
+      "id": "c-mr-0029"
+    },
+    {
+      "options": [
+        "Report the colleague to the Permanent Secretary for misleading the department.",
+        "Say nothing to avoid creating friction with a powerful colleague.",
+        "Prepare an evidence-based brief detailing why the proposed approach might not work.",
+        "Propose a pilot scheme to test the colleague's idea on a smaller scale first.",
+        "Publicly disagree with the colleague during a large departmental town hall."
+      ],
+      "question": "A senior colleague is promoting a project that you believe is based on outdated data. You are worried that it will waste public funds. Which two actions are best?",
+      "type": "multiple_response",
+      "correctAnswers": [
+        2,
+        3
+      ],
+      "explanation": "Using data to back up your claims demonstrates professional integrity, while suggesting alternatives shows you are focused on achieving the overall objective.",
+      "id": "c-mr-0030"
+    },
+    {
+      "options": [
+        "Work late every night until all tasks from both managers are finished.",
+        "Produce a list of your current tasks and ask both managers to help you prioritise them.",
+        "Guess which task is more important and ignore the other manager's requests.",
+        "Inform both managers that you have conflicting priorities and suggest a revised timeline."
+      ],
+      "question": "You are working on projects for two different managers. Both have just given you an 'urgent' task, but you only have time to complete one. Which two actions should you take?",
+      "type": "multiple_response",
+      "explanation": "Prioritising tasks based on strategic value ensures the most important work is done, while early communication allows managers to adjust expectations or redistribute tasks.",
+      "correctAnswers": [
+        1,
+        3
+      ],
+      "id": "c-mr-0031"
+    },
+    {
+      "options": [
+        "Stop inviting the team member to meetings since they do not contribute.",
+        "Tell the team member in front of the group that they need to participate more.",
+        "Offer the team member the opportunity to provide their feedback in writing after meetings.",
+        "Schedule a one-to-one to understand if there are specific barriers to them contributing."
+      ],
+      "explanation": "Providing additional opportunities for contributions ensures inclusivity, while acknowledging their work publicly (with permission) helps build their confidence.",
+      "correctAnswers": [
+        2,
+        3
+      ],
+      "question": "You manage a team member who is very quiet in group settings and rarely shares their ideas, even though their written work is excellent. Which two actions are best?",
+      "type": "multiple_response",
+      "id": "c-mr-0032"
+    },
+    {
+      "type": "multiple_response",
+      "question": "A public-facing digital service has crashed due to a sudden spike in traffic. Citizens are unable to access vital information. Which two actions are the priority?",
+      "correctAnswers": [
+        0,
+        1
+      ],
+      "explanation": "Identifying the technical root cause is essential for a permanent fix, while effective communication manages stakeholder expectations and maintains trust.",
+      "options": [
+        "Brief the communications team immediately so they can prepare a public statement.",
+        "Work with the technical team to identify the root cause of the failure.",
+        "Ask the technical team to implement a quick fix, even if it might fail again later.",
+        "Wait until the service is back online before informing any senior stakeholders."
+      ],
+      "id": "c-mr-0033"
+    },
+    {
+      "type": "multiple_response",
+      "question": "Your team’s reports are frequently being sent back by senior management for being too long and lacking clear recommendations. Which two actions are best?",
+      "correctAnswers": [
+        1,
+        2
+      ],
+      "explanation": "Seeking specific feedback identifies where the gaps are, while mentoring provides the support needed to meet the higher quality standards.",
+      "options": [
+        "Accept that your team is underperforming and stop aiming for high standards.",
+        "Ask the board for specific examples of where the submissions fell short.",
+        "Assign a senior member of the team to mentor those responsible for drafting reports.",
+        "Tell the board that their standards are too high for your current staffing levels."
+      ],
+      "id": "c-mr-0034"
+    },
+    {
+      "explanation": "Upholding the Civil Service Code ensures ethical standards are met, while seeking internal guidance prevents accidental breaches of protocol.",
+      "correctAnswers": [
+        0,
+        3
+      ],
+      "question": "A potential vendor sends you an expensive hamper as a 'thank you' for your time during a consultation phase. Which two actions should you take?",
+      "type": "multiple_response",
+      "options": [
+        "Politely decline the gift and explain the rules regarding departmental hospitality.",
+        "Accept the gift but don't tell your manager about it.",
+        "Accept the gift and promise to help the vendor with their next bid.",
+        "Log the offer in the department’s gift and hospitality register as per policy."
+      ],
+      "id": "c-mr-0035"
+    },
+    {
+      "options": [
+        "Alert the recipient department immediately and provide the corrected figures.",
+        "Hope the other department doesn't notice the errors in the report.",
+        "Review the quality-assurance process that allowed the errors to be missed.",
+        "Blame the junior member of staff who initially compiled the data."
+      ],
+      "type": "multiple_response",
+      "question": "You discover significant numerical errors in a briefing that was sent to the Treasury three hours ago. Which two actions are the most responsible?",
+      "explanation": "Correcting the record immediately ensures that decisions are based on accurate data, while an internal review prevents the same error from recurring.",
+      "correctAnswers": [
+        0,
+        2
+      ],
+      "id": "c-mr-0036"
     }
   ],
   "mocks": []
