@@ -5586,6 +5586,678 @@
       "type": "true_false",
       "question": "An 'Air Traffic Incident' includes occurrences such as a near-miss (Airprox) or the failure of ground facilities.",
       "id": "pal-tf-0012"
+    },
+    {
+      "explanation": "According to the Rules of the Air, any aircraft in flight or on the ground that is aware of another aircraft experiencing an emergency shall give way to that aircraft.",
+      "type": "true_false",
+      "correctAnswer": true,
+      "question": "An aircraft that is known to be in an emergency has the right of way over all other aircraft.",
+      "id": "pal-tf-0013"
+    },
+    {
+      "explanation": "In the UK, SERA 5005(f) states that VFR flights are generally prohibited at night unless a specific authorization or qualification (like a Night Rating) is held.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "question": "Unless otherwise authorised, VFR flight at night is prohibited in the UK.",
+      "id": "pal-tf-0014"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": false,
+      "question": "An ATC clearance provides the pilot with total immunity from the Rules of the Air.",
+      "explanation": "An Air Traffic Control Clearance is not an authorization to deviate from any applicable regulations or to neglect the pilot's responsibility for safety.",
+      "id": "pal-tf-0015"
+    },
+    {
+      "explanation": "When two aircraft are approaching head-on, or approximately so, each shall alter its course to the right.",
+      "question": "When two aircraft are approaching head-on, both must alter their course to the left to avoid a collision.",
+      "type": "true_false",
+      "correctAnswer": false,
+      "id": "pal-tf-0016"
+    },
+    {
+      "question": "The international emergency frequency is 121.500 MHz.",
+      "type": "true_false",
+      "correctAnswer": true,
+      "explanation": "VHF 121.500 MHz is the internationally designated frequency for aeronautical distress and emergency communication.",
+      "id": "pal-tf-0017"
+    },
+    {
+      "question": "A PPL holder may only land at aerodromes that are designated as 'Customs and Excise' airports.",
+      "correctAnswer": false,
+      "type": "true_false",
+      "explanation": "While airfields can be designated as Customs and Excise airports, a standard PPL holder may use any licensed or unlicensed aerodrome for domestic flights, subject to owner permission.",
+      "id": "pal-tf-0018"
+    },
+    {
+      "explanation": "A Special VFR (SVFR) clearance allows flight in VMC that is less than the standard VFR minima, but it must still be away from clouds and with the surface in sight.",
+      "correctAnswer": false,
+      "type": "true_false",
+      "question": "A Special VFR (SVFR) flight can be conducted even if the pilot is unable to remain clear of cloud.",
+      "id": "pal-tf-0019"
+    },
+    {
+      "question": "In the UK, 'Night' is defined as the period from 30 minutes after sunset to 30 minutes before sunrise.",
+      "type": "true_false",
+      "correctAnswer": true,
+      "explanation": "The Air Navigation Order (ANO) defines 'Night' as the time from half an hour after sunset until half an hour before sunrise (determined at surface level).",
+      "id": "pal-tf-0020"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": true,
+      "question": "The transponder code 7600 is used to indicate a radio communication failure.",
+      "explanation": "The squawk code 7600 is used internationally to indicate that the aircraft has experienced a failure of its radio communication equipment.",
+      "id": "pal-tf-0021"
+    },
+    {
+      "correctAnswer": false,
+      "type": "true_false",
+      "question": "When two aircraft are on a converging course at the same altitude, the aircraft that has the other on its left has the right of way.",
+      "explanation": "Aircraft flying at the same level must give way to those on their right. Therefore, the aircraft that has the other on its right must give way.",
+      "id": "pal-tf-0022"
+    },
+    {
+      "explanation": "Smoking is strictly prohibited by law in any UK-registered aircraft during take-off and landing.",
+      "question": "Smoking is permitted on the flight deck of a private aircraft during take-off as long as the commander agrees.",
+      "correctAnswer": false,
+      "type": "true_false",
+      "id": "pal-tf-0023"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": true,
+      "question": "A flight plan must be filed for any flight that is intended to cross an international boundary.",
+      "explanation": "If the total estimated elapsed time for the intended flight exceeds 30 minutes, a flight plan must be submitted for any flight crossing an international border.",
+      "id": "pal-tf-0024"
+    },
+    {
+      "correctAnswer": true,
+      "question": "In the UK, the '500-foot rule' does not apply to an aircraft which is taking off or landing in accordance with normal aviation practice.",
+      "type": "true_false",
+      "explanation": "The '500-foot rule' requires aircraft to maintain at least 500ft distance from people, vessels, vehicles, or structures, except when landing or taking off in accordance with normal aviation practice.",
+      "id": "pal-tf-0025"
+    },
+    {
+      "explanation": "A Series of Green Flashes from a light gun to an aircraft on the ground means 'Cleared to Taxi', not 'Cleared for Take-off' (which is a steady green light).",
+      "type": "true_false",
+      "question": "If an Aerodrome Controller directs a series of green flashes with a light gun at an aircraft on the ground, it means 'Cleared for Take-off'.",
+      "correctAnswer": false,
+      "id": "pal-tf-0026"
+    },
+    {
+      "correctAnswer": true,
+      "question": "A glider and a private jet are on converging courses at the same altitude. The private jet is on the glider's right-hand side. The glider must give way to the jet.",
+      "type": "true_false",
+      "explanation": "ICAO Annex 2 specifies that when two aircraft are converging, the aircraft that has the other on its right shall give way. Since the private jet is on the glider's right, the glider must give way.",
+      "id": "pal-tf-0027"
+    },
+    {
+      "explanation": "SERA (Standardised European Rules of the Air) and UK law require the PIC to ensure they are fit for the flight; an expired medical certificate invalidates the licence privileges.",
+      "type": "true_false",
+      "question": "A PPL holder may continue to act as Pilot in Command (PIC) if their Medical Certificate has expired, provided the flight is private and not for hire or reward.",
+      "correctAnswer": false,
+      "id": "pal-tf-0028"
+    },
+    {
+      "question": "The transponder code 7500 is used to indicate that an aircraft is subject to unlawful interference.",
+      "correctAnswer": true,
+      "explanation": "Squawk 7500 is the international code specifically assigned to indicate that an aircraft is the subject of unlawful interference (hijacking).",
+      "type": "true_false",
+      "id": "pal-tf-0029"
+    },
+    {
+      "type": "true_false",
+      "explanation": "In the UK, an aircraft must not fly over a congested area of a city, town or settlement at a height less than 1,000 feet above the highest fixed object within 600 metres of the aircraft.",
+      "correctAnswer": false,
+      "question": "In the UK, the minimum height for an aircraft flying over a congested area is 500 feet above the highest obstacle within 600 metres.",
+      "id": "pal-tf-0030"
+    },
+    {
+      "explanation": "Unless otherwise notified, the standard direction of turns in a UK aerodrome traffic circuit is to the left.",
+      "type": "true_false",
+      "question": "The standard direction of turns in an aerodrome traffic circuit is to the left, unless otherwise indicated or instructed.",
+      "correctAnswer": true,
+      "id": "pal-tf-0031"
+    },
+    {
+      "question": "A horizontal white dumbbell displayed in an aerodrome signals area indicates that aircraft are restricted to using paved surfaces for all ground movements.",
+      "correctAnswer": false,
+      "explanation": "The signal of a horizontal white dumbbell in a signals area indicates that aircraft are required to take off and land on runways only, but may move on the ground elsewhere. Movements are not restricted to paved surfaces.",
+      "type": "true_false",
+      "id": "pal-tf-0032"
+    },
+    {
+      "explanation": "ICAO and UK regulations specify that an aircraft which is being overtaken has the right-of-way, and the overtaking aircraft must keep out of the way by altering course to the right.",
+      "type": "true_false",
+      "question": "An aircraft that is being overtaken by another aircraft has the right-of-way.",
+      "correctAnswer": true,
+      "id": "pal-tf-0033"
+    },
+    {
+      "type": "true_false",
+      "explanation": "Under UK law, any accident resulting in serious injury or substantial damage must be reported to the AAIB by the quickest means available.",
+      "correctAnswer": true,
+      "question": "If a light aircraft is involved in an accident resulting in serious injury, the commander must notify the Air Accidents Investigation Branch (AAIB) without delay.",
+      "id": "pal-tf-0034"
+    },
+    {
+      "question": "A pilot flying VFR in Class C controlled airspace does not require an ATC clearance, provided they remain in Visual Meteorological Conditions (VMC).",
+      "correctAnswer": false,
+      "explanation": "VFR flight in Class C airspace in the UK requires a mandatory ATC Clearance and compliance with ATC instructions.",
+      "type": "true_false",
+      "id": "pal-tf-0035"
+    },
+    {
+      "question": "A PPL holder can log 'Pilot in Command' time while acting as a passenger on a scheduled commercial airline flight.",
+      "correctAnswer": false,
+      "explanation": "UK PPL holders must log all flight time as PIC, student, or dual, but not as a passenger or an observer. Submitting 'flight time' as a passenger is not permitted for currency.",
+      "type": "true_false",
+      "id": "pal-tf-0036"
+    },
+    {
+      "explanation": "Under the Rules of the Air, an aircraft following a line feature such as a road, railway, or canal must keep the feature on its left.",
+      "type": "true_false",
+      "question": "When flying along a line feature such as a railway line or motorway in the UK, the pilot should keep the feature to their left.",
+      "correctAnswer": true,
+      "id": "pal-tf-0037"
+    },
+    {
+      "type": "true_false",
+      "question": "The standard SSR transponder code for a VFR flight in the UK is 7700.",
+      "correctAnswer": false,
+      "explanation": "The transponder code 7000 is used for VFR flight in most of Europe/UK; 7700 is the international emergency code for distress.",
+      "id": "pal-tf-0038"
+    },
+    {
+      "explanation": "The minimum flight visibility for a VFR flight in Class G airspace at or below 3,000ft AMSL and at 140kt or less is 5km, not 1,500m (unless specifically permitted by a local exemption).",
+      "question": "In Class G airspace, at or below 3,000ft AMSL, the absolute minimum visibility for any VFR flight is 1,500 metres.",
+      "type": "true_false",
+      "correctAnswer": false,
+      "id": "pal-tf-0039"
+    },
+    {
+      "correctAnswer": true,
+      "question": "When two aircraft are approaching head-on, each shall alter its heading to the right.",
+      "type": "true_false",
+      "explanation": "SERA defines the 'Right of Way' rules; when two aircraft are approaching head-on, both are required to alter their heading to the right.",
+      "id": "pal-tf-0040"
+    },
+    {
+      "explanation": "A large red square with a yellow diagonal indicates that because of the state of the manoeuvring area, precautions should be observed during landing.",
+      "type": "true_false",
+      "question": "A red square with a single yellow diagonal displayed in a signals area indicates that landings are prohibited.",
+      "correctAnswer": true,
+      "id": "pal-tf-0041"
+    },
+    {
+      "explanation": "A PPL(A) remains valid for life, but the privileges can only be exercised if the pilot holds a valid medical and a valid class/type rating.",
+      "correctAnswer": false,
+      "type": "true_false",
+      "question": "A UK PPL(A) license itself expires 5 years after it is issued and must be renewed by the CAA.",
+      "id": "pal-tf-0042"
+    },
+    {
+      "explanation": "The pilot is responsible for assessing the fitness of the passengers and ensuring they are briefed on safety equipment and procedures.",
+      "question": "The Pilot in Command is responsible for ensuring that all passengers are briefed on the location and use of emergency equipment.",
+      "type": "true_false",
+      "correctAnswer": true,
+      "id": "pal-tf-0043"
+    },
+    {
+      "correctAnswer": false,
+      "question": "A steady red light from an aerodrome control tower to an aircraft in flight means 'Aerodrome unsafe, do not land'.",
+      "type": "true_false",
+      "explanation": "A steady red light directed at an aircraft in flight signifies 'Give way to other aircraft and continue circling'.",
+      "id": "pal-tf-0044"
+    },
+    {
+      "explanation": "Under UK ANO/SERA, any aircraft with a power-driven engine must give way to those that are towing other aircraft or objects.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "question": "A power-driven aircraft must give way to aircraft which are seen to be towing other aircraft or objects.",
+      "id": "pal-tf-0045"
+    },
+    {
+      "explanation": "Class D airspace is controlled; all flights (VFR and IFR) require an ATC clearance to enter.",
+      "type": "true_false",
+      "question": "An aircraft may enter Class D controlled airspace without a clearance provided the pilot is flying in VMC.",
+      "correctAnswer": false,
+      "id": "pal-tf-0046"
+    },
+    {
+      "type": "true_false",
+      "question": "The Pilot in Command must report an accident to the AAIB if a person on board suffers a broken bone (excluding fingers or toes).",
+      "correctAnswer": true,
+      "explanation": "The commander must report any 'Serious Injury' (as defined by the AAIB) resulting from the operation of the aircraft.",
+      "id": "pal-tf-0047"
+    },
+    {
+      "correctAnswer": false,
+      "type": "true_false",
+      "question": "A pilot may fly under basic VFR day rules at any time between official sunset and official sunrise.",
+      "explanation": "The definition of 'Night' in the UK for aviation purposes is from 30 minutes after sunset until 30 minutes before sunrise.",
+      "id": "pal-tf-0048"
+    },
+    {
+      "explanation": "This follows the right-of-way hierarchy where less maneuverable aircraft have priority over power-driven aircraft.",
+      "question": "A power-driven heavier-than-air aircraft must give way to airships, gliders, and balloons.",
+      "type": "true_false",
+      "correctAnswer": true,
+      "id": "pal-tf-0049"
+    },
+    {
+      "correctAnswer": false,
+      "type": "true_false",
+      "question": "In the UK, an aircraft must not fly over a congested area at a height of less than 500 feet above the highest obstacle within 600 metres.",
+      "explanation": "The minimum height over a congested area of a city, town, or settlement is 1,000 feet above the highest obstacle within a radius of 600 metres from the aircraft.",
+      "id": "pal-tf-0050"
+    },
+    {
+      "question": "In the air, when two power-driven aircraft are converging at approximately the same level, the aircraft that has the other on its right shall give way.",
+      "explanation": "SERA (Standardised European Rules of the Air) dictates that when two aircraft are on converging courses at the same level, the one with the other on its right shall give way.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "id": "pal-tf-0051"
+    },
+    {
+      "question": "A UK Part-FCL PPL is generally a 'lifetime' license, but the ratings contained within it have specific validity periods.",
+      "explanation": "While the license itself is non-expiring (lifetime), the ratings (such as SEP) within it must be revalidated or renewed periodically.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "id": "pal-tf-0052"
+    },
+    {
+      "correctAnswer": false,
+      "type": "true_false",
+      "question": "A flashing green light signal from the ground to an aircraft in flight means 'Cleared to land'.",
+      "explanation": "A flashing green light to an aircraft in flight means 'Return for landing' (and wait for a steady green to land). 'Cleared to land' is a steady green light.",
+      "id": "pal-tf-0053"
+    },
+    {
+      "question": "The Pilot in Command (PIC) is ultimately responsible for the safety of the aircraft, its occupants, and its operation during flight time.",
+      "explanation": "SERA and UK law require the PIC to ensure the aircraft is safe for flight and that all legal requirements (documents, fuel, etc.) are met.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "id": "pal-tf-0054"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": false,
+      "explanation": "7600 is the international code for a radio (communications) failure. 7700 is used for emergencies.",
+      "question": "The SSR transponder code for a total loss of radio communication is 7700.",
+      "id": "pal-tf-0055"
+    },
+    {
+      "question": "An aircraft shall not taxi on the manoeuvring area of a controlled aerodrome without the permission of the aerodrome control tower.",
+      "explanation": "Movement on the maneuvering area (runways and taxiways) is only permitted after receiving specifically granted ATC clearance.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "id": "pal-tf-0056"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": false,
+      "explanation": "A red pyrotechnic (flare) from the ground always means 'Notwithstanding any previous instructions, do not land for the time being'.",
+      "question": "A red pyrotechnic light fired from the ground means 'The aerodrome is unsafe, move to an alternative'.",
+      "id": "pal-tf-0057"
+    },
+    {
+      "question": "Except for taking off or landing, an aircraft shall not fly closer than 500 feet to any person, vessel, vehicle, or structure.",
+      "explanation": "Standard UK rules require the aircraft to fly at least 500 feet from any person, vessel, vehicle, or structure, unless taking off or landing.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "id": "pal-tf-0058"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": false,
+      "explanation": "Night is defined as the period between the end of evening civil twilight and the beginning of morning civil twilight (approx. 30 mins after sunset to 30 mins before sunrise).",
+      "question": "In the UK, for the purposes of flight logging and lighting, 'Night' is defined strictly as the period between Sunset and Sunrise.",
+      "id": "pal-tf-0059"
+    },
+    {
+      "correctAnswer": true,
+      "type": "true_false",
+      "question": "A double white cross displayed in the signals area at an aerodrome indicates that gliding is in progress.",
+      "explanation": "A double white cross in the signals area indicates that glider flying is currently taking place at the aerodrome.",
+      "id": "pal-tf-0060"
+    },
+    {
+      "explanation": "According to SERA 3225, when two aircraft are approaching head-on, or approximately so, each shall alter its course to the right.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "question": "When two aircraft are approaching head-on, both aircraft must alter their heading to the right.",
+      "id": "pal-tf-0061"
+    },
+    {
+      "explanation": "SERA 5005 states that above 3,000ft AMSL, VFR flight requires 5km visibility (up to 10,000ft) and a distance from clouds of 1,500m horizontally and 1,000ft vertically.",
+      "correctAnswer": false,
+      "type": "true_false",
+      "question": "In Class G airspace, the VFR weather minima for an aircraft flying at 4,000ft AMSL involves remaining clear of cloud and in sight of the surface at all times.",
+      "id": "pal-tf-0062"
+    },
+    {
+      "explanation": "The pilot must declare an emergency (MAYDAY) when there is a condition of being threatened by serious and/or imminent danger and of requiring immediate assistance.",
+      "question": "The international radio telephony distress signal is 'MAYDAY', spoken three times.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "id": "pal-tf-0063"
+    },
+    {
+      "correctAnswer": false,
+      "type": "true_false",
+      "question": "A series of green flashes from an aerodrome control tower to an aircraft on the ground means 'Cleared for Takeoff'.",
+      "explanation": "A series of green flashes directed at an aircraft on the ground means 'Cleared to taxi'. 'Cleared for takeoff' is indicated by a steady green light.",
+      "id": "pal-tf-0064"
+    },
+    {
+      "explanation": "Chicago Convention Annex 2 and SERA require the pilot to follow the instructions of the Marshaller even if they differ from those previously given by ATC.",
+      "question": "A pilot is not required to follow the signals of a marshaller if they have already received taxi instructions from Air Traffic Control.",
+      "correctAnswer": false,
+      "type": "true_false",
+      "id": "pal-tf-0065"
+    },
+    {
+      "explanation": "Rule 11 of the UK Rules of the Air states that unless otherwise authorised, an aircraft shall not fly over a congested area of a city, town or settlement at a height lower than 1,000ft above the highest object within 600m.",
+      "question": "In the UK, the '1,000ft Rule' means an aircraft must be at a height that allows an emergency landing without undue hazard, but also at least 1,000ft above the highest obstacle within 600m in a congested area.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "id": "pal-tf-0066"
+    },
+    {
+      "question": "The Pilot in Command is responsible for ensuring the aircraft carries enough fuel for the planned flight plus a reserve.",
+      "type": "true_false",
+      "correctAnswer": true,
+      "explanation": "The commander of an aircraft shall ensure that a flight is not commenced unless they have satisfied themselves that the fuel and oil carried are sufficient for the intended flight.",
+      "id": "pal-tf-0067"
+    },
+    {
+      "explanation": "Standard transponder code 7000 is used for VFR traffic to improve situational awareness for ATC, though it is not strictly mandatory in all Class G airspace unless required by specific regional rules.",
+      "question": "In the UK, the standard SSR code for an aircraft flying under VFR and not receiving a specific service from ATC is 1200.",
+      "correctAnswer": false,
+      "type": "true_false",
+      "id": "pal-tf-0068"
+    },
+    {
+      "explanation": "A white dumb-bell with a black strip across each circular end indicates that takeoffs and landings are to be on the runways only, but taxiing is not confined to paved surfaces.",
+      "question": "A white dumb-bell sign in the signals area indicates that aircraft are required to land and take off on runways, but may move on the ground elsewhere.",
+      "type": "true_false",
+      "correctAnswer": false,
+      "id": "pal-tf-0069"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": true,
+      "question": "An aircraft that is being overtaken has the right of way, and the overtaking aircraft must keep clear by moving to the right.",
+      "explanation": "SERA 3210 states that an aircraft that is being overtaken has the right-of-way and the overtaking aircraft shall keep out of the way by altering its course to the right.",
+      "id": "pal-tf-0070"
+    },
+    {
+      "explanation": "Squawk 7600 is for radio failure. Squawk 7500 is specifically used for 'Unlawful Interference' (hijack).",
+      "question": "The SSR code 7500 is used to indicate a radio communication failure.",
+      "type": "true_false",
+      "correctAnswer": false,
+      "id": "pal-tf-0071"
+    },
+    {
+      "question": "At a non-controlled aerodrome with no specific instructions, a pilot should normally make all turns to the left when flying in the traffic circuit.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "explanation": "Rule 22 of the UK Rules of the Air requires pilots to make all turns to the left when approaching to land or after taking off, unless otherwise notified.",
+      "id": "pal-tf-0072"
+    },
+    {
+      "explanation": "The light signal for 'Return for landing' is a steady green light; a steady red light indicates 'Give way to other aircraft and continue circling'.",
+      "correctAnswer": false,
+      "type": "true_false",
+      "question": "An aircraft in flight seeing a steady red light from an aerodrome control tower must land immediately.",
+      "id": "pal-tf-0073"
+    },
+    {
+      "question": "If two aircraft of the same category are on converging courses, the aircraft on the left has the right of way.",
+      "type": "true_false",
+      "correctAnswer": false,
+      "explanation": "SERA states that if two aircraft are on a converging course at approximately the same level, the aircraft having the other on its right shall give way.",
+      "id": "pal-tf-0074"
+    },
+    {
+      "explanation": "Transition Altitude is the altitude at or below which the vertical position of an aircraft is expressed in terms of altitude (based on QNH).",
+      "question": "When flying at or below the Transition Altitude, the vertical position of an aircraft is expressed as an altitude based on the QNH datum.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "id": "pal-tf-0075"
+    },
+    {
+      "explanation": "Under SERA and UK law, a steady green light to a vehicle on the manoeuvring area signifies 'Cleared to cross' or 'Proceed'.",
+      "type": "true_false",
+      "correctAnswer": true,
+      "question": "A steady green light signal from the tower to a vehicle on the manoeuvring area means 'Permission to cross the runway' or 'Proceed'.",
+      "id": "pal-tf-0076"
+    },
+    {
+      "correctAnswer": false,
+      "type": "true_false",
+      "question": "The SSR code 7700 is used specifically to indicate that an aircraft is subject to unlawful interference.",
+      "explanation": "The official SSR code for an aircraft experiencing unlawful interference (hijack) is 7500. 7700 is for general emergencies.",
+      "id": "pal-tf-0077"
+    },
+    {
+      "question": "A large white 'L' displayed in the signal square indicates that a portion of the aerodrome is available for light aircraft to land.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "explanation": "A white 'L' displayed on the signal square indicates that light aircraft are permitted to take off and land on a part of the aerodrome other than the main runway.",
+      "id": "pal-tf-0078"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": false,
+      "question": "In the hierarchy of right of way, a powered aeroplane always has right of way over a glider.",
+      "explanation": "Gliders have the right of way over both airships and powered aeroplanes because they are less manoeuvrable.",
+      "id": "pal-tf-0079"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": true,
+      "question": "An aircraft flying VFR must obtain ATC clearance before entering Class D controlled airspace.",
+      "explanation": "Clearance is required for all VFR flights entering or operating within Class D controlled airspace, regardless of the weather conditions.",
+      "id": "pal-tf-0080"
+    },
+    {
+      "explanation": "While many countries use 1200, the UK standard 'conspicuity' code for VFR flights outside controlled airspace is 7000.",
+      "type": "true_false",
+      "correctAnswer": false,
+      "question": "The UK 'conspicuity' SSR code for an aircraft flying under VFR in Class G airspace is 1200.",
+      "id": "pal-tf-0081"
+    },
+    {
+      "explanation": "This signifies that the aerodrome is being used by gliders and that such flights are being performed.",
+      "type": "true_false",
+      "correctAnswer": true,
+      "question": "A double white cross displayed in the signal square indicates that glider flying is in progress.",
+      "id": "pal-tf-0082"
+    },
+    {
+      "explanation": "Standard UK VFR minima above 3,000ft AMSL in Class G include 1,500m horizontal and 1,000ft vertical separation from cloud.",
+      "question": "In Class G airspace at 4,500ft AMSL, the VFR weather minima require a vertical distance from cloud of at least 1,000 feet.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "id": "pal-tf-0083"
+    },
+    {
+      "explanation": "A black letter 'C' on a yellow background marks the location of the Air Traffic Services Reporting Office (Control Tower/Reporting point).",
+      "question": "A yellow cross on a black background marks the location of the C (Command) post at a civil aerodrome.",
+      "correctAnswer": false,
+      "type": "true_false",
+      "id": "pal-tf-0084"
+    },
+    {
+      "question": "The Pilot in Command must hold a valid pilot licence and a current medical certificate appropriate to the exercise of the licence privileges.",
+      "correctAnswer": true,
+      "explanation": "By law, the Pilot in Command must have a valid licence with the appropriate ratings and a current medical certificate to act as the legal commander of the flight.",
+      "type": "true_false",
+      "id": "pal-tf-0085"
+    },
+    {
+      "explanation": "The transition altitude in the UK is not fixed at 3,000ft; it varies throughout the country, particularly within major terminal control areas where it is often higher (e.g., 6,000ft).",
+      "question": "According to the UK AIP, the Transition Altitude is 3,000ft throughout the entire United Kingdom.",
+      "correctAnswer": false,
+      "type": "true_false",
+      "id": "pal-tf-0086"
+    },
+    {
+      "explanation": "Rules of the Air state that when two aircraft are approaching head-on, or approximately so, each shall alter its course to the right.",
+      "question": "Two aircraft approaching head-on must both alter their course to the left to avoid a collision.",
+      "correctAnswer": false,
+      "type": "true_false",
+      "id": "pal-tf-0087"
+    },
+    {
+      "type": "true_false",
+      "explanation": "A series of green flashes directed at an aircraft in flight means 'Return for landing', usually followed by a steady green light for permission to land.",
+      "question": "A series of green flashes from the ground to an aircraft in flight signifies that the pilot should return for landing.",
+      "correctAnswer": true,
+      "id": "pal-tf-0088"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": false,
+      "question": "The SSR code 7600 should be selected if an aircraft is being hijacked.",
+      "explanation": "7600 is the international transponder code for a total loss of radio communications (Radio Failure).",
+      "id": "pal-tf-0089"
+    },
+    {
+      "explanation": "VFR flights must generally be conducted between sunrise and sunset unless the pilot holds a Night Rating and the flight complies with night VFR requirements.",
+      "question": "Standard VFR flight in the UK is prohibited at night unless the pilot holds a valid Night Rating.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "id": "pal-tf-0090"
+    },
+    {
+      "explanation": "SERA (Standardised European Rules of the Air) remains the basis for UK air law, adapted by the CAA following the UK's exit from the EU.",
+      "correctAnswer": true,
+      "question": "The UK currently follows the Standardised European Rules of the Air (SERA) as the basis for its aviation regulations.",
+      "type": "true_false",
+      "id": "pal-tf-0091"
+    },
+    {
+      "correctAnswer": false,
+      "question": "A horizontal white 'T' in the signals area indicates that gliders are currently launching.",
+      "explanation": "A horizontal white T (Wind Tee) indicates the direction for take-off and landing, which should be parallel to the shaft of the T towards the crosshead.",
+      "type": "true_false",
+      "id": "pal-tf-0092"
+    },
+    {
+      "type": "true_false",
+      "question": "A private pilot may drop any object from an aircraft provided they are satisfied it will not cause injury to persons on the ground.",
+      "correctAnswer": false,
+      "explanation": "Dropping articles or spraying from an aircraft in flight is generally prohibited unless a specific permit has been granted by the CAA.",
+      "id": "pal-tf-0093"
+    },
+    {
+      "explanation": "Airships must give way to gliders and balloons because gliders and balloons have less manoeuvrability.",
+      "correctAnswer": true,
+      "question": "When encountering a glider, a pilot flying a powered airship must give way to the glider.",
+      "type": "true_false",
+      "id": "pal-tf-0094"
+    },
+    {
+      "correctAnswer": false,
+      "question": "The minimum height for an aircraft flying over a congested area is 500ft above the highest obstacle within a radius of 600m.",
+      "explanation": "In the UK, SERA 5005(c) states that for VFR flight, the minimum height over a congested area of a city, town, or settlement is 1,000ft above the highest obstacle within 600m.",
+      "type": "true_false",
+      "id": "pal-tf-0095"
+    },
+    {
+      "correctAnswer": true,
+      "question": "A red pyrotechnic flare fired from the ground means 'Do not land for the time being' to an aircraft in flight.",
+      "explanation": "A red flare fired from the ground, regardless of the time of day, means 'Notwithstanding any previous instructions, do not land for the time being'.",
+      "type": "true_false",
+      "id": "pal-tf-0096"
+    },
+    {
+      "correctAnswer": true,
+      "type": "true_false",
+      "question": "An aircraft that is known to be in an emergency or compelled to land has right of way over all other aircraft.",
+      "explanation": "According to the Rules of the Air, any aircraft becoming aware that another is compelled to land must give way to that aircraft.",
+      "id": "pal-tf-0097"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": false,
+      "question": "A pilot should set the SSR transponder to 7500 to indicate a state of general emergency.",
+      "explanation": "The SSR code 7500 is specifically used for unlawful interference (hijack); 7700 is for general emergencies.",
+      "id": "pal-tf-0098"
+    },
+    {
+      "explanation": "A red square with a single yellow diagonal indicates that the aerodrome is in a poor state and that special care is necessary during approach and landing.",
+      "question": "A red square with a yellow diagonal stripe indicates that landings at the aerodrome are prohibited.",
+      "type": "true_false",
+      "correctAnswer": false,
+      "id": "pal-tf-0099"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": true,
+      "explanation": "At speeds of 140 knots or less at or below 3,000ft AMSL, the requirement is simply to remain clear of cloud and in sight of the surface.",
+      "question": "In Class G airspace, a pilot flying a fixed-wing aircraft at 140 knots at 2,000ft AMSL may fly VFR while clear of cloud and in sight of the surface.",
+      "id": "pal-tf-0100"
+    },
+    {
+      "question": "According to the Rules of the Air, two aircraft approaching head-on should both alter course to the right.",
+      "explanation": "Two aircraft approaching head-on must both alter their course to the right, not the left.",
+      "type": "true_false",
+      "correctAnswer": false,
+      "id": "pal-tf-0101"
+    },
+    {
+      "question": "A black 'C' on a yellow background indicates the location of the Air Traffic Services reporting office.",
+      "explanation": "A black letter 'C' on a yellow background signifies the location where pilots should report to the aerodrome authority (Air Traffic Control or Flight Information Service).",
+      "correctAnswer": true,
+      "type": "true_false",
+      "id": "pal-tf-0102"
+    },
+    {
+      "explanation": "The Rule of the Air states that an aircraft being overtaken has the right of way, and the overtaking aircraft must keep out of the way by altering its course to the right.",
+      "question": "An overtaking aircraft has the right of way over the aircraft being overtaken.",
+      "type": "true_false",
+      "correctAnswer": false,
+      "id": "pal-tf-0103"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": true,
+      "explanation": "Series of red flashes indicate that the aerodrome is unsafe and the aircraft should not land.",
+      "question": "A series of red flashes from the ground to an aircraft in flight means the aerodrome is unsafe and the pilot should not land.",
+      "id": "pal-tf-0104"
+    },
+    {
+      "explanation": "The 500ft rule applies to persons, vessels, vehicles, and structures; the congested area rule (1,000ft) is a separate requirement.",
+      "question": "Except when taking off or landing, an aircraft shall not fly closer than 500ft to any person, vessel, vehicle or structure.",
+      "type": "true_false",
+      "correctAnswer": false,
+      "id": "pal-tf-0105"
+    },
+    {
+      "correctAnswer": true,
+      "type": "true_false",
+      "question": "In the UK, 'Night' is defined as the period from 30 minutes after sunset until 30 minutes before sunrise.",
+      "explanation": "ICAO defines 'Night' in the UK as the time from half an hour after sunset until half an hour before sunrise (determined at surface level).",
+      "id": "pal-tf-0106"
+    },
+    {
+      "explanation": "A pilot may not drop any article or animal from an aircraft in flight except in accordance with specific conditions or permissions (e.g., agricultural work).",
+      "question": "A pilot is permitted to drop any small article from an aircraft as long as it is dropped into a designated 'drop zone'.",
+      "correctAnswer": false,
+      "type": "true_false",
+      "id": "pal-tf-0107"
+    },
+    {
+      "correctAnswer": true,
+      "type": "true_false",
+      "explanation": "7000 is the standard UK VFR conspicuity code; 1200 is used in the USA.",
+      "question": "The standard SSR code for a VFR flight in the UK, unless otherwise instructed by ATC, is 7000.",
+      "id": "pal-tf-0108"
     }
   ],
   "mocks": []
