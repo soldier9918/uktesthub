@@ -4852,6 +4852,108 @@
       "tolerance": 0,
       "question": "A teacher has 16 metres of display ribbon. She uses seven-eighths of it for a wall display. How many metres of ribbon were used?",
       "id": "qn-ne-0072"
+    },
+    {
+      "explanation": "Add the six scores together (70.5) and divide by the number of students (6) to find the mean.",
+      "question": "In a small group, six pupils scored the following in a spelling test: 12, 15, 8, 11, 14, and 10.5. What was the mean score for the group?",
+      "correctAnswer": 11.75,
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "id": "qn-ne-0073"
+    },
+    {
+      "type": "numeric_entry",
+      "explanation": "One fifth of 45 is 9. Subtracting 9 from 45 leaves 36 students who attended.",
+      "question": "A drama workshop has 45 students on the register. On Monday, one fifth of the students were absent. How many students attended the workshop?",
+      "correctAnswer": 36,
+      "tolerance": 0,
+      "id": "qn-ne-0074"
+    },
+    {
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "unit": "£",
+      "explanation": "Calculate 10% of £14 (£1.40), then double it to find 20% (£2.80), and add this to the original price.",
+      "question": "A school sweatshirt currently costs £14.00. The supplier announces a 20% price increase for the new term. What will be the new price of a sweatshirt in pounds?",
+      "correctAnswer": 16.8,
+      "id": "qn-ne-0075"
+    },
+    {
+      "correctAnswer": 0.65,
+      "question": "In a revision group of 20 pupils, 13 are girls. What is the proportion of girls expressed as a decimal?",
+      "explanation": "Divide 13 by the total number of pupils (20) to get 0.65.",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "id": "qn-ne-0076"
+    },
+    {
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "explanation": "Adding 55 minutes to 12:50 takes the time to 13:45.",
+      "question": "A school lunch break starts at 12:50 and lasts for 55 minutes. Using the 24-hour clock, what time does the lunch break end?",
+      "correctAnswer": 13.45,
+      "id": "qn-ne-0077"
+    },
+    {
+      "unit": "litres",
+      "explanation": "The total number of parts is 1 + 4 = 5. Divide 100 by 5 to find the value of one part.",
+      "question": "A primary school makes 100 litres of orange squash using a ratio of 1 part concentrate to 4 parts water. How many litres of concentrate are used?",
+      "correctAnswer": 20,
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "id": "qn-ne-0078"
+    },
+    {
+      "type": "numeric_entry",
+      "correctAnswer": 5,
+      "question": "A teacher needs to buy exercise books for 130 pupils. The books are sold in packs of 30. How many packs must the teacher buy?",
+      "explanation": "To find the number of packs, divide 130 by 30 (4.33...). You must round up to the nearest whole number to ensure all pupils have a book.",
+      "tolerance": 0,
+      "id": "qn-ne-0079"
+    },
+    {
+      "type": "numeric_entry",
+      "correctAnswer": 2.3,
+      "question": "In one week, a teacher spends 138 minutes on administrative tasks. What is this time expressed in hours as a decimal?",
+      "explanation": "Convert 138 minutes to hours by dividing by 60 (138 ÷ 60 = 2.3).",
+      "unit": "hours",
+      "tolerance": 0,
+      "id": "qn-ne-0080"
+    },
+    {
+      "correctAnswer": 10.5,
+      "question": "A teacher wants to cover a rectangular display board that measures 3 metres by 3.5 metres. What is the total area of the board in square metres?",
+      "explanation": "Calculate the area of the rectangle (3m x 3.5m = 10.5 square metres).",
+      "unit": "square metres",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "id": "qn-ne-0081"
+    },
+    {
+      "type": "numeric_entry",
+      "explanation": "Since 25% is one quarter, 75% represents three quarters. Three quarters of 160 is 120.",
+      "correctAnswer": 120,
+      "question": "In a school survey of 160 pupils, 75% stated they walk to school. How many pupils walk to school?",
+      "tolerance": 0,
+      "id": "qn-ne-0082"
+    },
+    {
+      "tolerance": 0,
+      "unit": "£",
+      "explanation": "10% of £250 is £25. Deduct £25 from £250 to get the new price of £225. Then divide £225 by 15.",
+      "question": "A set of 15 calculators originally costs £250. The supplier offers a 10% discount. What is the final cost per calculator in pounds?",
+      "correctAnswer": 15,
+      "type": "numeric_entry",
+      "id": "qn-ne-0083"
+    },
+    {
+      "explanation": "Multiply 18 by 0.075 to find the total thickness (1.35cm).",
+      "unit": "cm",
+      "correctAnswer": 1.35,
+      "question": "A teacher stacks 18 identical workbooks. Each workbook is 0.075cm thick. What is the total height of the stack in centimetres?",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "id": "qn-ne-0084"
     }
   ],
   "mocks": []
