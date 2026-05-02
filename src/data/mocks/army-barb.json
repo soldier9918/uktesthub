@@ -1,0 +1,1101 @@
+{
+  "version": 2,
+  "topic": "army-barb",
+  "title": "Army BARB Test",
+  "category": "military-emergency",
+  "bank": [
+    {
+      "question": "Which letter comes next in the following sequence: R, S, T, U, ...?",
+      "correctAnswer": 1,
+      "options": [
+        "W",
+        "V",
+        "X",
+        "U"
+      ],
+      "explanation": "This is an alphabetical reasoning task. S follows R, T follows S, and U follows T. Therefore, V follows U.",
+      "type": "multiple_choice",
+      "id": "ab-mc-0001"
+    },
+    {
+      "options": [
+        "£57",
+        "£60",
+        "£62",
+        "£65"
+      ],
+      "explanation": "To find the total, add the costs together: 45 + 12 = 57. Then 57 + 5 = 62.",
+      "type": "multiple_choice",
+      "question": "A soldier buys a boots for £45, socks for £12, and a water bottle for £5. What is the total cost?",
+      "correctAnswer": 2,
+      "id": "ab-mc-0002"
+    },
+    {
+      "correctAnswer": 0,
+      "question": "If an arrow is pointing North and it is rotated 90 degrees clockwise, which direction is it now pointing?",
+      "type": "multiple_choice",
+      "options": [
+        "East",
+        "South",
+        "West",
+        "North-West"
+      ],
+      "explanation": "This is a 'Symbol Rotation' style question. A 90-degree clockwise turn moves the top point to the right side.",
+      "id": "ab-mc-0003"
+    },
+    {
+      "correctAnswer": 3,
+      "question": "What is the next number in the sequence: 10, 7, 8, 5, 6, ...?",
+      "type": "multiple_choice",
+      "options": [
+        "7",
+        "5",
+        "4",
+        "3"
+      ],
+      "explanation": "The sequence follows a pattern of 'subtract 3, then add 1'. 10-3=7, 7+1=8, 8-3=5, 5+1=6. Next is 6-3=3.",
+      "id": "ab-mc-0004"
+    },
+    {
+      "correctAnswer": 1,
+      "question": "All Sergeants are soldiers. Smith is a Sergeant. Therefore:",
+      "type": "multiple_choice",
+      "options": [
+        "Smith is an Officer",
+        "Smith is a soldier",
+        "Smith is a recruit",
+        "Smith is a pilot"
+      ],
+      "explanation": "In basic logic, if all A are B, and X is an A, then X must be a B. Since all Sergeants are soldiers, Smith must be a soldier.",
+      "id": "ab-mc-0005"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "3 mph",
+        "4 mph",
+        "5 mph",
+        "6 mph"
+      ],
+      "explanation": "Speed = Distance divided by Time. 15 miles divided by 3 hours equals 5 miles per hour.",
+      "correctAnswer": 2,
+      "question": "A recruit marches 15 miles in 3 hours. What is their average speed in miles per hour?",
+      "id": "ab-mc-0006"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "This tests speed of identification. 'Believe' is the only word in the list spelled correctly according to standard UK English rules.",
+      "options": [
+        "Believe",
+        "Beleive",
+        "Belive",
+        "Bellieve"
+      ],
+      "correctAnswer": 0,
+      "question": "Which of the following words is spelled correctly?",
+      "id": "ab-mc-0007"
+    },
+    {
+      "question": "What number comes next in the sequence: 3, 6, 12, 24, ...?",
+      "correctAnswer": 3,
+      "explanation": "The sequence doubles each time: 3x2=6, 6x2=12, 12x2=24. Therefore, 24x2=48.",
+      "options": [
+        "30",
+        "36",
+        "42",
+        "48"
+      ],
+      "type": "multiple_choice",
+      "id": "ab-mc-0008"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "There are 60 minutes in an hour. 2.5 hours is 60 + 60 + 30 = 150 minutes.",
+      "options": [
+        "120 minutes",
+        "150 minutes",
+        "180 minutes",
+        "250 minutes"
+      ],
+      "correctAnswer": 1,
+      "question": "How many minutes are there in 2.5 hours?",
+      "id": "ab-mc-0009"
+    },
+    {
+      "correctAnswer": 2,
+      "question": "If the word 'POT' is viewed in a mirror, what is the order of the letters from left to right?",
+      "type": "multiple_choice",
+      "explanation": "This tests basic mirror reasoning. When 'POT' is reflected, the P (now on the right) faces left, and the T stays the same on the left.",
+      "options": [
+        "POT",
+        "TOP",
+        "TOP (reversed letters)",
+        "PTO"
+      ],
+      "id": "ab-mc-0010"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "50",
+        "250",
+        "100",
+        "75"
+      ],
+      "explanation": "A 'quarter' means dividing by 4. 200 divided by 4 is 50.",
+      "correctAnswer": 0,
+      "question": "What is a quarter of 200?",
+      "id": "ab-mc-0011"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Enter",
+        "Leave",
+        "Stay",
+        "Build"
+      ],
+      "explanation": "This tests linguistic synonyms. To 'evacuate' means to leave or empty a place for safety.",
+      "correctAnswer": 1,
+      "question": "Which word means the same as 'EVACUATE'?",
+      "id": "ab-mc-0012"
+    },
+    {
+      "question": "What is the next number in the sequence: 4, 8, 6, 10, 8, ...?",
+      "correctAnswer": 1,
+      "explanation": "The sequence alternates between adding 4 and subtracting 2 (4+4=8, 8-2=6, 6+4=10, 10-2=8). Following this, 8+4=12.",
+      "type": "multiple_choice",
+      "options": [
+        "10",
+        "12",
+        "14",
+        "16"
+      ],
+      "id": "ab-mc-0013"
+    },
+    {
+      "correctAnswer": 2,
+      "question": "If you arrange the following words in alphabetical order, which one comes third: DANGER, AMBULANCE, HELPFUL, HEALTH?",
+      "options": [
+        "AMBULANCE",
+        "DANGER",
+        "HEALTH",
+        "HELPFUL"
+      ],
+      "type": "multiple_choice",
+      "explanation": "The word 'AMBULANCE' starts with A, followed by D in 'DANGER', and H in 'HEALTH', meaning the third word alphabetically is 'HEALTH'.",
+      "id": "ab-mc-0014"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "North-East",
+        "North-West",
+        "South-East",
+        "West"
+      ],
+      "explanation": "A 180-degree turn means facing the exact opposite direction. The opposite of South-West is North-East.",
+      "correctAnswer": 0,
+      "question": "If a soldier is facing South-West and turns 180 degrees, which direction are they facing now?",
+      "id": "ab-mc-0015"
+    },
+    {
+      "explanation": "Divide the total cost by the number of units: £1.20 divided by 6 equals £0.20 per ration pack.",
+      "type": "multiple_choice",
+      "options": [
+        "£0.10",
+        "£0.15",
+        "£0.20",
+        "£0.25"
+      ],
+      "question": "A box of 6 ration packs costs £1.20. How much does one ration pack cost?",
+      "correctAnswer": 2,
+      "id": "ab-mc-0016"
+    },
+    {
+      "correctAnswer": 1,
+      "question": "Which of the following words is the opposite of 'Strong'?",
+      "type": "multiple_choice",
+      "options": [
+        "Tough",
+        "Fragile",
+        "Sturdy",
+        "Heavy"
+      ],
+      "explanation": "'Fragile' means something is easily broken or delicate, which is the opposite of 'Strong'.",
+      "id": "ab-mc-0017"
+    },
+    {
+      "explanation": "The rule is to multiply the previous number by 3 (1x3=3, 3x3=9, 9x3=27). Thus, 27x3=81.",
+      "options": [
+        "45",
+        "54",
+        "72",
+        "81"
+      ],
+      "type": "multiple_choice",
+      "question": "What is the next number in the sequence: 1, 3, 9, 27, ...?",
+      "correctAnswer": 3,
+      "id": "ab-mc-0018"
+    },
+    {
+      "correctAnswer": 0,
+      "question": "All Corporals are leaders. John is a Corporal. Which of the following must be true?",
+      "options": [
+        "John is a leader",
+        "All leaders are Corporals",
+        "John is not a leader",
+        "Some leaders are not soldiers"
+      ],
+      "type": "multiple_choice",
+      "explanation": "If the first two statements are true, then John is a Corporal, and because all Corporals are leaders, John must be a leader.",
+      "id": "ab-mc-0019"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Right",
+        "Left",
+        "Top",
+        "Bottom"
+      ],
+      "explanation": "At 15:00 hours, the '3' is on the right. In a mirror reflection, the right and left are swapped, so the '3' would appear on the left side of the clock face.",
+      "correctAnswer": 1,
+      "question": "If an analogue clock showing 15:00 hours is viewed in a mirror, where would the hour hand appear to be?",
+      "id": "ab-mc-0020"
+    },
+    {
+      "correctAnswer": 3,
+      "question": "A jacket normally costs £80 but is on sale with a 15% discount. What is the new price?",
+      "type": "multiple_choice",
+      "options": [
+        "£65",
+        "£72",
+        "£75",
+        "£68"
+      ],
+      "explanation": "15% of £80 is calculated as (80 / 100) * 15, which is 0.8 * 15 = £12. £80 - £12 = £68.",
+      "id": "ab-mc-0021"
+    },
+    {
+      "options": [
+        "H",
+        "J",
+        "I",
+        "K"
+      ],
+      "type": "multiple_choice",
+      "explanation": "The alphabet sequence skips one letter: A (b) C (d) E (f) G (h). The next letter after skipping H is I.",
+      "correctAnswer": 2,
+      "question": "Which letter comes next in the sequence: A, C, E, G, ...?",
+      "id": "ab-mc-0022"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "longer",
+        "shorter",
+        "higher",
+        "slower"
+      ],
+      "explanation": "The sentence follows the logic of speed and distance; a fast vehicle covers the distance in a 'shorter' amount of time.",
+      "correctAnswer": 1,
+      "question": "Select the word that best completes the sentence: The faster the tank travels, the _______ the time it takes to reach the objective.",
+      "id": "ab-mc-0023"
+    },
+    {
+      "correctAnswer": 0,
+      "question": "A convoy travels at a steady speed of 50 mph. How long will it take to travel 200 miles?",
+      "options": [
+        "4 hours",
+        "5 hours",
+        "2 hours",
+        "8 hours"
+      ],
+      "type": "multiple_choice",
+      "explanation": "Divide the total distance by the speed: 200 miles divided by 50 mph equals 4 hours.",
+      "id": "ab-mc-0024"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "options": [
+        "9",
+        "12",
+        "16",
+        "14"
+      ],
+      "explanation": "The sequence follows a pattern of alternating between adding 5 and subtracting 2 (+5, -2). 8+5=13, 13-2=11. Adding 5 to 11 gives 16.",
+      "question": "What number comes next in the sequence: 5, 10, 8, 13, 11, ...?",
+      "id": "ab-mc-0025"
+    },
+    {
+      "explanation": "The first statement says all soldiers wear uniforms. Because Steve is a soldier, he must belong to that group and therefore wear a uniform.",
+      "options": [
+        "Steve wears a uniform.",
+        "Only soldiers wear uniforms.",
+        "Every uniform wearer is Steve.",
+        "Steve is an officer."
+      ],
+      "question": "All soldiers wear uniforms. Steve is a soldier. Therefore:",
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "id": "ab-mc-0026"
+    },
+    {
+      "explanation": "Twelve minutes is 1/5th of an hour (60 divided by 5). To find the distance, divide the speed by 5: 30 / 5 = 6 miles.",
+      "options": [
+        "5 miles",
+        "6 miles",
+        "7 miles",
+        "10 miles"
+      ],
+      "question": "A vehicle travels at a constant speed of 30 mph. How far does it travel in 12 minutes?",
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "id": "ab-mc-0027"
+    },
+    {
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "question": "Which of the following words is spelled correctly?",
+      "explanation": "The correct spelling is 'Maintenance', which ends in '-tenance'. It is a common word used in equipment upkeep.",
+      "options": [
+        "Maintenence",
+        "Maintenance",
+        "Maintanance",
+        "Maintenance"
+      ],
+      "id": "ab-mc-0028"
+    },
+    {
+      "question": "Arrange these words in alphabetical order: BRIDGE, BRAVO, BUNKER, BAKER. Which word is second?",
+      "explanation": "Alphabetical order: Baker, Bravo, Bridge, Bunker. 'Bravo' comes second.",
+      "options": [
+        "Baker",
+        "Bravo",
+        "Bridge",
+        "Bunker"
+      ],
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "id": "ab-mc-0029"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "question": "What is a quarter of 80 plus a quarter of 200?",
+      "options": [
+        "60",
+        "70",
+        "80",
+        "90"
+      ],
+      "explanation": "A quarter of 80 is 20 (80 / 4). A quarter of 200 is 50 (200 / 4). 20 + 50 = 70.",
+      "id": "ab-mc-0030"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "question": "If the word 'MUD' is viewed in a mirror, what is the order of the letters from left to right?",
+      "options": [
+        "DUM",
+        "UMD",
+        "MDV",
+        "DUM (reversed D)"
+      ],
+      "explanation": "In a mirror, the image is flipped horizontally. The last letter (D) becomes the first, and 'M' becomes the last.",
+      "id": "ab-mc-0031"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "question": "Which of the following words is the opposite of 'DETAIN'?",
+      "explanation": "To 'detain' means to prevent someone from leaving or to hold them, which is the opposite of 'release'.",
+      "options": [
+        "Capture",
+        "Escort",
+        "Release",
+        "Question"
+      ],
+      "id": "ab-mc-0032"
+    },
+    {
+      "question": "A soldier is facing North. If they turn 135 degrees clockwise, which direction are they facing?",
+      "options": [
+        "South-East",
+        "South-West",
+        "North-East",
+        "North-West"
+      ],
+      "explanation": "North is 0/360 degrees. A 90-degree turn clockwise moves to East. Another 45 degrees (half of 90) moves to South-East.",
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "id": "ab-mc-0033"
+    },
+    {
+      "explanation": "The pattern skips two letters each time: A (bc) D (ef) G (hi) J. The next would skip (kl) to reach M.",
+      "options": [
+        "K",
+        "L",
+        "M",
+        "N"
+      ],
+      "question": "Which letter comes next in the sequence: A, D, G, J, ...?",
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "id": "ab-mc-0034"
+    },
+    {
+      "question": "A radio costs £200. If the price is reduced by 20%, what is the new price?",
+      "options": [
+        "£150",
+        "£160",
+        "£170",
+        "£180"
+      ],
+      "explanation": "20% of £200 is £40 (200 / 5). £200 minus £40 equals £160.",
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "id": "ab-mc-0035"
+    },
+    {
+      "options": [
+        "Harder",
+        "Easier",
+        "Better",
+        "Slower"
+      ],
+      "explanation": "The sentence describes a cause and effect regarding visibility. Low light levels (darkness) make things harder to see.",
+      "question": "Select the word that best completes the sentence: The darker the night, the _______ it becomes to spot the enemy.",
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "id": "ab-mc-0036"
+    },
+    {
+      "explanation": "The sequence alternates between adding 4 and subtracting 2 (4+4=8, 8-2=6, 6+4=10, 10-2=8). Following this, 8+4=12.",
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "options": [
+        "10",
+        "12",
+        "14",
+        "16"
+      ],
+      "question": "What number comes next in the sequence: 4, 8, 6, 10, 8, ...?",
+      "id": "ab-mc-0037"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "options": [
+        "Rigid",
+        "Pliable",
+        "Supple",
+        "Limp"
+      ],
+      "explanation": "'Rigid' means unable to bend or be forced out of shape, which is the direct opposite of 'Flexible'.",
+      "question": "Which of the following words is the opposite of 'Flexible'?",
+      "id": "ab-mc-0038"
+    },
+    {
+      "question": "What is one-third of a quarter of 60?",
+      "explanation": "A quarter of 60 is 15 (60 divided by 4). 15 divided by 3 equals 5.",
+      "correctAnswer": 2,
+      "options": [
+        "15",
+        "10",
+        "5",
+        "20"
+      ],
+      "type": "multiple_choice",
+      "id": "ab-mc-0039"
+    },
+    {
+      "options": [
+        "All soldiers have maps.",
+        "No soldiers have maps.",
+        "The Lieutenant always has a map.",
+        "Some soldiers do not have maps."
+      ],
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "explanation": "The statement says 'some' soldiers have maps, but it doesn't say all or none. Therefore, it is possible that some don't have maps.",
+      "question": "If some soldiers have maps, which of the following must be true?",
+      "id": "ab-mc-0040"
+    },
+    {
+      "question": "Which letter comes next in the sequence: B, E, H, K, ...?",
+      "explanation": "The sequence moves forward by 3 letters each time: B (+3) E (+3) H (+3) K (+3) N.",
+      "correctAnswer": 1,
+      "options": [
+        "M",
+        "N",
+        "O",
+        "P"
+      ],
+      "type": "multiple_choice",
+      "id": "ab-mc-0041"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "options": [
+        "Necessary",
+        "Neccessary",
+        "Necisary",
+        "Nessessary"
+      ],
+      "explanation": "'Necessary' is spelled with one 'c' and two 's's. Other options are common misspellings.",
+      "question": "Select the word that is spelled correctly.",
+      "id": "ab-mc-0042"
+    },
+    {
+      "explanation": "80% of 150 is 120 (0.8 x 150 = 120). 150 - 120 leaves 30 rounds remaining.",
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "options": [
+        "120",
+        "15",
+        "50",
+        "30"
+      ],
+      "question": "A soldier has 150 rounds of ammunition. If they fire 80% of their rounds, how many do they have left?",
+      "id": "ab-mc-0043"
+    },
+    {
+      "question": "Arrange these words in alphabetical order: RATIONS, RAPID, RANGE, RALLY. Which word comes third?",
+      "correctAnswer": 2,
+      "options": [
+        "Rations",
+        "Rally",
+        "Rapid",
+        "Range"
+      ],
+      "type": "multiple_choice",
+      "explanation": "In alphabetical order: RALLY, RANGE, RAPID, RATIONS. 'Rapid' is the third word.",
+      "id": "ab-mc-0044"
+    },
+    {
+      "question": "If the word 'BAT' is printed on a card and held up to a mirror, what is the order of the characters from left to right?",
+      "explanation": "A mirror flips the image horizontally. The 'T' remains 'T', the 'A' remains 'A', but the 'B' appears backwards on the far left. T-A-B backwards is B-A-T.",
+      "correctAnswer": 1,
+      "options": [
+        "TAB",
+        "BAT",
+        "TBA直",
+        "BTA"
+      ],
+      "type": "multiple_choice",
+      "id": "ab-mc-0045"
+    },
+    {
+      "question": "Select the word that best completes the sentence: As the fog thickened, the visibility for the patrol was greatly _______.",
+      "correctAnswer": 0,
+      "options": [
+        "Diminished",
+        "Enhanced",
+        "Clarified",
+        "Prolonged"
+      ],
+      "type": "multiple_choice",
+      "explanation": "The word 'diminished' means to make or become less, which fits the context of visibility reducing as fog heavyens.",
+      "id": "ab-mc-0046"
+    },
+    {
+      "question": "A soldier is facing North. If they turn 315 degrees anti-clockwise, which direction are they facing?",
+      "explanation": "A full rotation is 360 degrees. Anti-clockwise from North: 90 is West, 180 is South, 270 is East. 45 more (315) is North-East.",
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "options": [
+        "South-East",
+        "South-West",
+        "North-West",
+        "North-East"
+      ],
+      "id": "ab-mc-0047"
+    },
+    {
+      "options": [
+        "Water",
+        "Anchor",
+        "Deck",
+        "Submarine"
+      ],
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "explanation": "The relationship is based on the role and its location. A pilot operates in a cockpit; a sailor operates on a deck.",
+      "question": "Pilot is to Cockpit as Sailor is to:",
+      "id": "ab-mc-0048"
+    },
+    {
+      "question": "Arrange these words in alphabetical order: RAZOR, RATION, RANGER, RIFLE. Which word comes second?",
+      "explanation": "Alphabetical order is Ranger, Ration, Razor, Rifle. Ration is the second word.",
+      "options": [
+        "Ranger",
+        "Ration",
+        "Razor",
+        "Rifle"
+      ],
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "id": "ab-mc-0049"
+    },
+    {
+      "question": "A uniform costs £120. If the price is reduced by 10%, what is the new price?",
+      "explanation": "10% of 120 is 12. 120 minus 12 equals 108.",
+      "options": [
+        "£110",
+        "£112",
+        "£108",
+        "£102"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "id": "ab-mc-0050"
+    },
+    {
+      "question": "If the word 'TENT' is viewed in a mirror, what is the order of the letters from left to right?",
+      "explanation": "In a mirror, the order of characters is reversed. T is the last letter, so it appears first on the left.",
+      "options": [
+        "T - N - E - T",
+        "T - E - N - T",
+        "N - E - T - T",
+        "T - N - T - E"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "id": "ab-mc-0051"
+    },
+    {
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "question": "Which of the following words is the most nearly opposite in meaning to 'DILIGENT'?",
+      "options": [
+        "Careful",
+        "Active",
+        "Steady",
+        "Lazy"
+      ],
+      "explanation": "Diligent means showing care and effort. Lazy is the opposite of being hardworking or diligent.",
+      "id": "ab-mc-0052"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "options": [
+        "14",
+        "15",
+        "16",
+        "17"
+      ],
+      "explanation": "The pattern is +2, then +3. (3+2=5, 5+3=8, 8+2=10, 10+3=13). 13+2=15.",
+      "question": "What number comes next in the sequence: 3, 5, 8, 10, 13, ...?",
+      "id": "ab-mc-0053"
+    },
+    {
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "options": [
+        "East",
+        "West",
+        "South",
+        "South-East"
+      ],
+      "explanation": "North to East is 90 degrees. Another 90 degrees makes it 180 degrees, which is South.",
+      "question": "A soldier is facing North. If they turn 180 degrees clockwise, which direction are they facing?",
+      "id": "ab-mc-0054"
+    },
+    {
+      "question": "Select the word that best completes the sentence: The higher the altitude, the _______ the air becomes.",
+      "options": [
+        "thinner",
+        "thinly",
+        "thinnest",
+        "thickly"
+      ],
+      "explanation": "The phrase 'The higher the altitude' requires a comparative adjective like 'thinner' to complete the logic.",
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "id": "ab-mc-0055"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "options": [
+        "W",
+        "X",
+        "Y",
+        "Z"
+      ],
+      "explanation": "The pattern skips two letters each time: M (no n, o) P (no q, r) S (no t, u) V. The next two skipped are w, x, leading to Y.",
+      "question": "Which letter comes next in the sequence: M, P, S, V, ...?",
+      "id": "ab-mc-0056"
+    },
+    {
+      "question": "What is one-fifth of a half of 60?",
+      "options": [
+        "5",
+        "6",
+        "10",
+        "12"
+      ],
+      "explanation": "One half of 60 is 30. One fifth of 30 is 6.",
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "id": "ab-mc-0057"
+    },
+    {
+      "explanation": "The word 'Maneuver' is often misspelled; 'Manoeuvre' is the correct British English spelling.",
+      "options": [
+        "Manouvre",
+        "Manoever",
+        "Manuever",
+        "Manoeuvre"
+      ],
+      "question": "Select the word that is spelled correctly.",
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "id": "ab-mc-0058"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "explanation": "The word 'some' implies that at least one member of the group possesses the map.",
+      "options": [
+        "At least one sergeant has a map.",
+        "All sergeants have maps.",
+        "No sergeants have maps.",
+        "Only one sergeant has a map."
+      ],
+      "question": "If some sergeants have maps, which of the following must be true?",
+      "id": "ab-mc-0059"
+    },
+    {
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "question": "Doctor is to Surgery as Mechanic is to:",
+      "explanation": "A doctor works in a surgery; a mechanic works in a garage. It relates a professional to their workplace.",
+      "options": [
+        "Tools",
+        "Engineer",
+        "Garage",
+        "Car"
+      ],
+      "id": "ab-mc-0060"
+    },
+    {
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "explanation": "The pattern adds 4 then subtracts 1 (7+4=11, 11-1=10, 10+4=14, 14-1=13). Therefore, 13+4=17.",
+      "question": "What number comes next in the sequence: 7, 11, 10, 14, 13, ...?",
+      "options": [
+        "16",
+        "15",
+        "17",
+        "18"
+      ],
+      "id": "ab-mc-0061"
+    },
+    {
+      "options": [
+        "Accommodation",
+        "Acommodation",
+        "Accomodation",
+        "Acomodation"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Accommodation is spelled with a double 'c' and a double 'm'.",
+      "type": "multiple_choice",
+      "question": "Which of the following words is spelled correctly?",
+      "id": "ab-mc-0062"
+    },
+    {
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "explanation": "Starting at East, a 90-degree clockwise turn leads to South, and another 45 degrees leads to South-West.",
+      "question": "A soldier is facing East. They turn 135 degrees clockwise. Which direction are they now facing?",
+      "options": [
+        "West",
+        "South-West",
+        "North-West",
+        "South-East"
+      ],
+      "id": "ab-mc-0063"
+    },
+    {
+      "options": [
+        "J",
+        "H",
+        "K",
+        "I"
+      ],
+      "question": "Which letter comes next in the sequence: A, C, E, G, ...?",
+      "correctAnswer": 3,
+      "explanation": "The sequence skips one letter each time: A (b) C (d) E (f) G (h) I.",
+      "type": "multiple_choice",
+      "id": "ab-mc-0064"
+    },
+    {
+      "options": [
+        "£75",
+        "£90",
+        "£105",
+        "£120"
+      ],
+      "question": "A rucksack costs £45 and three pouches cost £15 each. What is the total cost for one rucksack and three pouches?",
+      "type": "multiple_choice",
+      "explanation": "Total cost is £45 + (£15 x 3). 15 x 3 = 45. 45 + 45 = 90.",
+      "correctAnswer": 1,
+      "id": "ab-mc-0065"
+    },
+    {
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "explanation": "The correct alphabetical order is: Battle, Bravo, Bridge, Bright. 'Bright' is the fourth word.",
+      "question": "Arrange these words in alphabetical order: BRIDGE, BATTLE, BRIGHT, BRAVO. Which word comes fourth?",
+      "options": [
+        "Battle",
+        "Bravo",
+        "Bridge",
+        "Bright"
+      ],
+      "id": "ab-mc-0066"
+    },
+    {
+      "options": [
+        "Improve",
+        "Decline",
+        "Worsen",
+        "Sustain"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Deteriorate means to become progressively worse, making it the opposite of improve.",
+      "type": "multiple_choice",
+      "question": "Which word is the most nearly opposite in meaning to 'DETERIORATE'?",
+      "id": "ab-mc-0067"
+    },
+    {
+      "question": "Baker is to Bread as _______ is to Iron.",
+      "type": "multiple_choice",
+      "explanation": "Bread is made by a Baker, and Iron is forged by a Blacksmith.",
+      "correctAnswer": 2,
+      "options": [
+        "Steel",
+        "Hammer",
+        "Blacksmith",
+        "Anvil"
+      ],
+      "id": "ab-mc-0068"
+    },
+    {
+      "explanation": "The mirror reverses the order of characters and their orientation. In terms of just character order, 'SIGNAL' becomes 'LANGIS'.",
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "question": "If the word 'SIGNAL' is viewed in a mirror, what is the order of the letters from left to right?",
+      "options": [
+        "LANISEG",
+        "LANGIS",
+        "LGANIS",
+        "SNGIAL"
+      ],
+      "id": "ab-mc-0069"
+    },
+    {
+      "options": [
+        "Broken",
+        "Ignored",
+        "Intercepted",
+        "Relayed"
+      ],
+      "question": "Select the word that best completes the sentence: The radio transmission was ______ by the enemy before it reached headquarters.",
+      "correctAnswer": 2,
+      "explanation": "The prefix 'inter-' means between or among; an interception happens between the start and end point.",
+      "type": "multiple_choice",
+      "id": "ab-mc-0070"
+    },
+    {
+      "explanation": "30% of 200 is (30/100) * 200 = 60. 200 - 60 = 140.",
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "question": "A vehicle's fuel tank holds 200 kg of fuel. If it uses 30% of its fuel on a mission, how many kilograms remain?",
+      "options": [
+        "140 kg",
+        "170 kg",
+        "160 kg",
+        "130 kg"
+      ],
+      "id": "ab-mc-0071"
+    },
+    {
+      "question": "If some members of the platoon have red berets, which of the following MUST be true?",
+      "explanation": "The statement only confirms that 'some' members have red berets; it does not guarantee anyone has a blue one or that everyone has a red one.",
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "options": [
+        "All platoon members have red berets.",
+        "No platoon members have blue berets.",
+        "At least one person in the platoon has a red beret.",
+        "The Sergeant has a red beret."
+      ],
+      "id": "ab-mc-0072"
+    },
+    {
+      "question": "What number comes next in the sequence: 12, 18, 16, 22, 20, ...?",
+      "explanation": "The pattern alternates between adding 6 and subtracting 2: (12+6=18), (18-2=16), (16+6=22), (22-2=20). The next step is 20+6=26.",
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "options": [
+        "22",
+        "26",
+        "24",
+        "18"
+      ],
+      "id": "ab-mc-0073"
+    },
+    {
+      "explanation": "South-West is 225 degrees clockwise from North. Turning back 90 degrees (anti-clockwise) lands on South-East.",
+      "question": "A soldier is facing South-West. If they turn 90 degrees anti-clockwise, which direction are they facing?",
+      "options": [
+        "North-West mountain",
+        "West",
+        "South-East",
+        "South-West"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "id": "ab-mc-0074"
+    },
+    {
+      "correctAnswer": 0,
+      "options": [
+        "Vigilant",
+        "Hostile",
+        "Obedient",
+        "Swift"
+      ],
+      "type": "multiple_choice",
+      "question": "Which word is the most nearly opposite in meaning to 'NEGLIGENT'?",
+      "explanation": "'Vigilant' means being alert and watchful, which is the opposite of being 'Negligent' or careless.",
+      "id": "ab-mc-0075"
+    },
+    {
+      "explanation": "The total cost is £120 + (£15 x 4). This equals £120 + £60 = £180.",
+      "question": "A pair of boots costs £120 and four pairs of socks cost £15 each. What is the total cost for one pair of boots and four pairs of socks?",
+      "correctAnswer": 3,
+      "options": [
+        "£135",
+        "£165",
+        "£175",
+        "£180"
+      ],
+      "type": "multiple_choice",
+      "id": "ab-mc-0076"
+    },
+    {
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "options": [
+        "Acomodate",
+        "Accomadate",
+        "Accommodate",
+        "Acommodate"
+      ],
+      "question": "Select the word that is spelled correctly.",
+      "explanation": "'Accommodate' is spelled with a double 'c' and a double 'm'.",
+      "id": "ab-mc-0077"
+    },
+    {
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "options": [
+        "Steel",
+        "Wood",
+        "House",
+        "Hammer"
+      ],
+      "explanation": "A Cobbler works with boots/shoes, and a Carpenter works with wood. This is a worker-to-material relationship.",
+      "question": "Cobbler is to Boot as Carpenter is to:",
+      "id": "ab-mc-0078"
+    },
+    {
+      "explanation": "The alphabet skips two letters each time: A (bc) D (ef) G (hi) J (kl) M.",
+      "question": "Which letter comes next in the sequence: A, D, G, J, ...?",
+      "options": [
+        "M",
+        "N",
+        "L",
+        "O"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "id": "ab-mc-0079"
+    },
+    {
+      "explanation": "If 'some' are marksmen, it means at least one individual qualifies. It does not mean they all are, or that the majority are.",
+      "question": "If some non-commissioned officers are marksmen, which of the following MUST be true?",
+      "correctAnswer": 2,
+      "options": [
+        "No non-commissioned officers are marksmen.",
+        "All non-commissioned officers are marksmen.",
+        "There is at least one non-commissioned officer who is a marksman.",
+        "Exactly half of the non-commissioned officers are marksmen."
+      ],
+      "type": "multiple_choice",
+      "id": "ab-mc-0080"
+    },
+    {
+      "question": "What is 15% of 120?",
+      "explanation": "To calculate 15% of 120, you can find 10% (12) and 5% (6), then add them together (12 + 6 = 18).",
+      "options": [
+        "15",
+        "18",
+        "20",
+        "22"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "id": "ab-mc-0081"
+    },
+    {
+      "question": "Arrange these words in alphabetical order: CANTEEN, CANVAS, CAMPER, CANOE. Which word comes fourth?",
+      "explanation": "Arranged alphabetically: CAMPER, CANOE, CANTEEN, CANVAS. CANVAS is the last word in the list.",
+      "options": [
+        "CAMPER",
+        "CANOE",
+        "CANTEEN",
+        "CANVAS"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "id": "ab-mc-0082"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Objective",
+        "Obsession",
+        "Obstacle",
+        "Observation"
+      ],
+      "correctAnswer": 2,
+      "question": "Select the word that best completes the sentence: The fallen tree was a major _______ to the advancing convoy.",
+      "explanation": "'Obstacle' describes something that blocks progress or stands in the way, fitting the context of the sentence.",
+      "id": "ab-mc-0083"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "6",
+        "8",
+        "10",
+        "12"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Three-quarters of 80 is 60. Then, 10% of 60 is 6.",
+      "question": "What is 10% of three-quarters of 80?",
+      "id": "ab-mc-0084"
+    }
+  ],
+  "mocks": []
+}
