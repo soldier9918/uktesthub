@@ -471,6 +471,786 @@
         "Mandatory Radio Zone (MRZ)"
       ],
       "id": "pal-mc-0036"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "In UK law, a reportable accident must be reported to the AAIB without delay and by the quickest means available.",
+      "options": [
+        "24 hours",
+        "12 hours",
+        "As soon as possible (without delay)",
+        "7 days"
+      ],
+      "question": "According to the Civil Aviation (Investigation of Air Accidents and Incidents) Regulations, how soon must a reportable accident be notified to the AAIB?",
+      "correctAnswer": 2,
+      "id": "pal-mc-0037"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "explanation": "SERA rules dictate that an aircraft being overtaken has right of way, and the overtaking aircraft must alter course to the right.",
+      "options": [
+        "The overtaking aircraft should pass to the left.",
+        "The overtaking aircraft should alter its course to the right.",
+        "The aircraft being overtaken must give way.",
+        "The overtaking aircraft should climb above the other."
+      ],
+      "question": "When one aircraft is overtaking another in flight, what action must the overtaking pilot take?",
+      "id": "pal-mc-0038"
+    },
+    {
+      "correctAnswer": 0,
+      "explanation": "The 7xxx series of squawk codes are reserved for specific emergencies; 7500 specifically denotes unlawful interference (hijack).",
+      "options": [
+        "7500",
+        "7600",
+        "7700",
+        "7000"
+      ],
+      "question": "Which SSR code should a pilot select to indicate that the aircraft is the subject of unlawful interference?",
+      "type": "multiple_choice",
+      "id": "pal-mc-0039"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "In the UK, Class G is uncontrolled airspace where IFR flight is permitted without a specific ATC clearance.",
+      "question": "In which class of UK airspace is a pilot NOT required to obtain an ATC clearance for flight under IFR?",
+      "options": [
+        "Class A",
+        "Class C",
+        "Class D",
+        "Class G"
+      ],
+      "correctAnswer": 3,
+      "id": "pal-mc-0040"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "A Certificate of Airworthiness (C of A) is fundamentally invalid if the aircraft has not been maintained according to its approved schedule.",
+      "question": "A Certificate of Airworthiness (C of A) becomes invalid if:",
+      "options": [
+        "The pilot-in-command changes.",
+        "The aircraft is flown outside of the UK.",
+        "The aircraft is parked outside for more than 30 days.",
+        "The aircraft is not maintained in accordance with its maintenance schedule."
+      ],
+      "correctAnswer": 3,
+      "id": "pal-mc-0041"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "Under SERA, the PIC may only deviate from rules in an absolute emergency where it is necessary for the safety of the aircraft.",
+      "options": [
+        "To the extent necessary to avoid immediate danger.",
+        "Only if instructed by ATC.",
+        "If the pilot believes the rule is unnecessary for the specific flight.",
+        "Only when flying in uncontrolled airspace."
+      ],
+      "question": "Under what circumstances may a Pilot-in-Command (PIC) deviate from the Rules of the Air?",
+      "correctAnswer": 0,
+      "id": "pal-mc-0042"
+    },
+    {
+      "question": "If a pilot has filed a flight plan and the estimated time of arrival at the destination changes, at what point must ATC be notified of the revised time?",
+      "options": [
+        "5 minutes",
+        "2 minutes",
+        "10 minutes",
+        "1 minute"
+      ],
+      "explanation": "Standard UK procedures require a pilot to notify ATC and obtain permission if a revised ETA differs by more than 2 minutes.",
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "id": "pal-mc-0043"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What does the altimeter indicate when the scale is set to the aerodrome QFE?",
+      "options": [
+        "Horizontal distance from the runway.",
+        "Height above Mean Sea Level.",
+        "Height above the aerodrome datum.",
+        "Height above the Transition Level."
+      ],
+      "explanation": "The QFE setting provides the height of the aircraft above the specific airfield datum (usually the highest point of the landing area).",
+      "correctAnswer": 2,
+      "id": "pal-mc-0044"
+    },
+    {
+      "question": "What is the standard vertical limit of an Aerodrome Traffic Zone (ATZ) in the UK?",
+      "options": [
+        "1,500 feet AAL",
+        "2,000 feet AAL",
+        "2,500 feet AAL",
+        "3,000 feet AAL"
+      ],
+      "explanation": "An 'Aerodrome Traffic Zone' (ATZ) usually extends from the surface to 2,000 feet above aerodrome level.",
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "id": "pal-mc-0045"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "Rule 11 of the UK Rules of the Air states that an aircraft may not fly closer than 500ft to any person, vessel, vehicle or structure.",
+      "options": [
+        "1,000 feet",
+        "1,500 feet",
+        "2,000 feet",
+        "500 feet"
+      ],
+      "question": "What is the minimum distance an aircraft is allowed to fly from any person, vessel, vehicle, or structure, except for the purpose of landing or taking off?",
+      "correctAnswer": 3,
+      "id": "pal-mc-0046"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "options": [
+        "Do not land for the time being.",
+        "Land immediately.",
+        "Give way to other aircraft.",
+        "Aerodrome is unsafe, do not land."
+      ],
+      "question": "What does a red pyrotechnic flare fired from the ground to an aircraft in flight signify?",
+      "explanation": "A red flare is a universal signal to an aircraft in flight that it should not land at that time.",
+      "id": "pal-mc-0047"
+    },
+    {
+      "correctAnswer": 2,
+      "question": "What are the VFR horizontal cloud separation requirements when flying in Class D airspace at 4,000 feet AMSL?",
+      "options": [
+        "Clear of cloud and in sight of the surface.",
+        "500m horizontally from cloud.",
+        "1.5km horizontally from cloud.",
+        "Vertical separation of 500ft from cloud."
+      ],
+      "explanation": "To fly VFR in Class D airspace at or above 3,000ft AMSL, the pilot must remain 1.5km horizontally from cloud.",
+      "type": "multiple_choice",
+      "id": "pal-mc-0048"
+    },
+    {
+      "correctAnswer": 1,
+      "explanation": "The pilot-in-command of an aircraft has the ultimate authority to take all measures necessary for the safety of the aircraft and persons on board.",
+      "question": "Under the Rules of the Air, who is directly responsible for the operation of an aircraft in accordance with the law and has final authority as to the disposition of the aircraft?",
+      "options": [
+        "The aircraft owner or operator",
+        "The Pilot-in-Command (PIC)",
+        "The Air Traffic Controller on duty",
+        "The Chief Flying Instructor of the aerodrome"
+      ],
+      "type": "multiple_choice",
+      "id": "pal-mc-0049"
+    },
+    {
+      "correctAnswer": 3,
+      "explanation": "A steady green light to an aircraft in flight means the aircraft is cleared to land.",
+      "options": [
+        "Return for landing and wait for a series of green flashes",
+        "Aerodrome unsafe; do not land",
+        "Cleared to land",
+        "Give way to other aircraft and continue circling"
+      ],
+      "type": "multiple_choice",
+      "question": "What is the meaning of a steady green light directed from the tower to an aircraft in flight?",
+      "id": "pal-mc-0050"
+    },
+    {
+      "explanation": "Night is defined as the time from 30 minutes after sunset until 30 minutes before sunrise, determined at surface level.",
+      "correctAnswer": 0,
+      "question": "In the United Kingdom, how is 'Night' defined for the purposes of aviation?",
+      "type": "multiple_choice",
+      "options": [
+        "30 minutes after sunset to 30 minutes before sunrise",
+        "Sunset to sunrise",
+        "1 hour after sunset to 1 hour before sunrise",
+        "The period between 20:00 and 06:00 local time"
+      ],
+      "id": "pal-mc-0051"
+    },
+    {
+      "question": "When two power-driven aircraft are converging at approximately the same altitude, which one must give way?",
+      "options": [
+        "The faster aircraft has the right of way",
+        "The aircraft on the right must give way",
+        "The aircraft which has the other on its right shall give way",
+        "Both aircraft must turn left to avoid each other"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "explanation": "When two aircraft are on converging headings at the same level, the aircraft that has the other on its right shall give way.",
+      "id": "pal-mc-0052"
+    },
+    {
+      "explanation": "A double white cross in the signal square indicates that the aerodrome is being used by gliders and that glider flights are in progress.",
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "options": [
+        "Land at this aerodrome only in an emergency",
+        "Glider flying is in progress",
+        "The aerodrome is closed to all traffic",
+        "Watch out for parachuting activity"
+      ],
+      "question": "A signal square contains a white double cross. What does this indicate to a pilot?",
+      "id": "pal-mc-0053"
+    },
+    {
+      "correctAnswer": 2,
+      "explanation": "In the UK, an ATZ generally extends from the surface to 2,000 feet above aerodrome level (AAL).",
+      "options": [
+        "1,000 feet AAL",
+        "1,500 feet AAL",
+        "2,000 feet AAL",
+        "3,000 feet AAL"
+      ],
+      "type": "multiple_choice",
+      "question": "What is the standard vertical upper limit of a UK Aerodrome Traffic Zone (ATZ)?",
+      "id": "pal-mc-0054"
+    },
+    {
+      "correctAnswer": 0,
+      "explanation": "Class G is uncontrolled airspace where IFR flight is permitted without a specific ATC clearance.",
+      "question": "In which class of UK airspace is an ATC clearance NOT required for an IFR flight?",
+      "options": [
+        "Class G",
+        "Class D",
+        "Class C",
+        "Class A"
+      ],
+      "type": "multiple_choice",
+      "id": "pal-mc-0055"
+    },
+    {
+      "question": "Except for take-off and landing, what is the minimum height an aircraft may fly over any person, vessel, vehicle or structure?",
+      "type": "multiple_choice",
+      "options": [
+        "200 feet",
+        "500 feet",
+        "1,000 feet",
+        "1,500 feet"
+      ],
+      "explanation": "According to SERA, an aircraft is prohibited from flying closer than 500ft to any person, vessel, vehicle or structure.",
+      "correctAnswer": 1,
+      "id": "pal-mc-0056"
+    },
+    {
+      "explanation": "7700 is the international transponder code used to indicate a general emergency or distress (Mayday) situation.",
+      "correctAnswer": 3,
+      "question": "Which SSR transponder code should be used by a pilot to indicate a state of emergency?",
+      "type": "multiple_choice",
+      "options": [
+        "7500",
+        "7600",
+        "7000",
+        "7700"
+      ],
+      "id": "pal-mc-0057"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "General information (GEN)",
+        "Aerodromes (AD) personally",
+        "Safety (Reporting and procedures)",
+        "En-route (ENR) navigation information"
+      ],
+      "question": "In the UK Aeronautical Information Publication (AIP), what is specifically found in the 'Pink' pages?",
+      "explanation": "The pink pages of the UK AIP contain information regarding Safety and the reporting of occurrences.",
+      "correctAnswer": 2,
+      "id": "pal-mc-0058"
+    },
+    {
+      "correctAnswer": 0,
+      "explanation": "Medical certificates for PPL holders (Class 2) under age 40 are valid for 60 months (5 years).",
+      "options": [
+        "60 months",
+        "24 months",
+        "12 months",
+        "36 months"
+      ],
+      "type": "multiple_choice",
+      "question": "For a Private Pilot License (PPL) holder under the age of 40, what is the standard validity period of a Class 2 medical certificate?",
+      "id": "pal-mc-0059"
+    },
+    {
+      "question": "If two aircraft are approaching an aerodrome to land, which aircraft generally has the right of way?",
+      "type": "multiple_choice",
+      "options": [
+        "The aircraft higher in altitude has right of way",
+        "The aircraft lower in altitude has right of way",
+        "The aircraft with the highest ground speed has right of way",
+        "The aircraft that called 'finals' first has right of way"
+      ],
+      "explanation": "If an aircraft is in the landing pattern or on final approach, any aircraft it is following or overtaking must be given the right of way.",
+      "correctAnswer": 1,
+      "id": "pal-mc-0060"
+    },
+    {
+      "correctAnswer": 2,
+      "options": [
+        "The aircraft owner",
+        "The Licensed Engineer who signed the last maintenance release",
+        "The Pilot-in-Command",
+        "The Air Traffic Controller at the departure airfield"
+      ],
+      "question": "Who is responsible for ensuring that an aircraft is airworthy before a flight commences?",
+      "explanation": "The captain is legally required to verify the aircraft and its documentation are fit for the intended flight before departure.",
+      "type": "multiple_choice",
+      "id": "pal-mc-0061"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "VFR flights are prohibited from entering Class A airspace, which is reserved exclusively for IFR traffic.",
+      "correctAnswer": 0,
+      "options": [
+        "Class A",
+        "Class C",
+        "Class D",
+        "Class E"
+      ],
+      "question": "In which class of UK Airspace is VFR flight strictly prohibited?",
+      "id": "pal-mc-0062"
+    },
+    {
+      "correctAnswer": 1,
+      "options": [
+        "The overtaking aircraft should pass to the left of the other aircraft",
+        "The overtaking aircraft should pass to the right of the other aircraft",
+        "The aircraft being overtaken must climb to provide clearance",
+        "The aircraft being overtaken must dive to provide clearance"
+      ],
+      "question": "When one aircraft is overtaking another in flight, what action must the overtaking aircraft take?",
+      "type": "multiple_choice",
+      "explanation": "SERA rules state that an aircraft being overtaken has the right of way, and the overtaking aircraft must keep clear by altering course to the right.",
+      "id": "pal-mc-0063"
+    },
+    {
+      "correctAnswer": 3,
+      "options": [
+        "1,000 feet AGL",
+        "1,500 feet AGL",
+        "2,500 feet AGL",
+        "2,000 feet AGL"
+      ],
+      "question": "What is the standard vertical upper limit of a UK Aerodrome Traffic Zone (ATZ)?",
+      "explanation": "In the UK, an ATZ generally extends from the surface up to 2,000 feet above aerodrome level.",
+      "type": "multiple_choice",
+      "id": "pal-mc-0064"
+    },
+    {
+      "explanation": "Squawk 7000 is the standard code for aircraft operating under VFR in the UK unless otherwise instructed.",
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "options": [
+        "7700",
+        "7600",
+        "7000",
+        "2000"
+      ],
+      "question": "What is the standard SSR transponder code for a VFR flight in the UK (Conspicuity Code)?",
+      "id": "pal-mc-0065"
+    },
+    {
+      "options": [
+        "GEN, ENR, and AD",
+        "OPS, MET, and LIC",
+        "VFR, IFR, and ATC",
+        "GEN, COM, and NAV"
+      ],
+      "question": "The UK Aeronautical Information Publication (AIP) is divided into which three main parts?",
+      "correctAnswer": 0,
+      "explanation": "AD (Aerodromes) is the third main section of the AIP, following GEN (General) and ENR (En Route).",
+      "type": "multiple_choice",
+      "id": "pal-mc-0066"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "A flashing red light to an aircraft in flight means the aerodrome is unsafe and the pilot should not land.",
+      "question": "What does a flashing red light signal from the ground to an aircraft in flight mean?",
+      "options": [
+        "Give way to other aircraft and continue circling",
+        "Land immediately at this aerodrome",
+        "Return for landing later",
+        "Aerodrome unsafe, do not land"
+      ],
+      "correctAnswer": 3,
+      "id": "pal-mc-0067"
+    },
+    {
+      "correctAnswer": 1,
+      "options": [
+        "1,500m horizontal and 1,000ft vertical separation from cloud",
+        "Clear of cloud and in sight of the surface",
+        "5km visibility and 500ft vertical separation from cloud",
+        "1,000m horizontal and 1,000ft vertical separation from cloud"
+      ],
+      "question": "What are the VMC minima for a pilot flying at 2,500ft AMSL in Class G airspace at 120kt or less?",
+      "type": "multiple_choice",
+      "explanation": "In Class G airspace below 3,000ft, a pilot must remain clear of cloud and in sight of the surface.",
+      "id": "pal-mc-0068"
+    },
+    {
+      "correctAnswer": 0,
+      "question": "What is the primary privilege of a Private Pilot License (PPL) holder regarding passenger carriage?",
+      "options": [
+        "Carriage of passengers for no remuneration",
+        "Carriage of passengers for hire or reward",
+        "Public transport operations under IFR",
+        "Acting as a flight instructor for CPL students"
+      ],
+      "type": "multiple_choice",
+      "explanation": "The PPL(A) only allows the carriage of passengers if no remuneration is paid to the pilot for the service.",
+      "id": "pal-mc-0069"
+    },
+    {
+      "explanation": "Squawk 7600 is internationally recognized as the code used to indicate a radio communication failure.",
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "options": [
+        "7500",
+        "7700",
+        "7600 squawking Mode C",
+        "0000"
+      ],
+      "question": "Which transponder code should be selected in the event of a total radio failure?",
+      "id": "pal-mc-0070"
+    },
+    {
+      "explanation": "The white dumb-bell indicates that aircraft are restricted to using hard runways and taxiways only.",
+      "type": "multiple_choice",
+      "question": "A white dumb-bell signal in an aerodrome signal square indicates:",
+      "options": [
+        "Glider flying in progress",
+        "Use hard runways and taxiways only",
+        "Take-offs and landings allowed on grass areas only",
+        "Special precautions must be taken during landing"
+      ],
+      "correctAnswer": 1,
+      "id": "pal-mc-0071"
+    },
+    {
+      "correctAnswer": 0,
+      "options": [
+        "12 months",
+        "24 months",
+        "60 months",
+        "6 months"
+      ],
+      "question": "What is the validity period of a Class 2 medical certificate for a PPL holder aged 52?",
+      "explanation": "A Class 2 medical for a pilot aged over 50 is valid for 12 months (1 year).",
+      "type": "multiple_choice",
+      "id": "pal-mc-0072"
+    },
+    {
+      "question": "When one aircraft is overtaking another, which of the following is true?",
+      "type": "multiple_choice",
+      "explanation": "According to the Rules of the Air, an aircraft which is being overtaken has the right-of-way and the overtaking aircraft shall keep out of the way of the other aircraft by altering its course to the right.",
+      "options": [
+        "The aircraft being overtaken must turn right to allow the faster aircraft to pass.",
+        "The overtaking aircraft shall keep out of the way by altering its course to the right.",
+        "The overtaking aircraft should climb or descend to avoid the slower aircraft.",
+        "The aircraft being overtaken must maintain speed and heading exactly."
+      ],
+      "correctAnswer": 1,
+      "id": "pal-mc-0073"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What does a steady red light directed at an aircraft in flight signify?",
+      "correctAnswer": 3,
+      "options": [
+        "Cleared to land immediately.",
+        "Give way to other aircraft and continue circling.",
+        "Aerodrome unsafe, do not land.",
+        "Do not land; give way to other aircraft and continue circling."
+      ],
+      "explanation": "A steady red light from the Control Tower directed at an aircraft in flight means the aircraft is not clear to land and must continue circling.",
+      "id": "pal-mc-0074"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What does a white landing 'T' in the signal square indicate?",
+      "correctAnswer": 0,
+      "options": [
+        "Take-offs and landings are to be made in the direction of the shaft of the T towards the cross-arm.",
+        "The aerodrome is closed to all fixed-wing traffic.",
+        "Landings are only permitted on the grass runways.",
+        "Glider flying is in progress at the aerodrome."
+      ],
+      "explanation": "A horizontal white letter 'T' in the signal square indicates that landings and take-offs are to be made in a direction parallel to the shaft of the 'T' towards the cross-arm.",
+      "id": "pal-mc-0075"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What does a series of green flashes directed at an aircraft on the ground mean?",
+      "options": [
+        "Cleared to line up and wait.",
+        "Cleared for take-off.",
+        "Cleared to taxi.",
+        "Return to the starting point on the aerodrome."
+      ],
+      "correctAnswer": 2,
+      "explanation": "A series of green flashes directed at an aircraft on the ground gives the pilot permission to taxi.",
+      "id": "pal-mc-0076"
+    },
+    {
+      "correctAnswer": 0,
+      "options": [
+        "500 feet.",
+        "1,000 feet.",
+        "1,500 feet.",
+        "2,000 feet."
+      ],
+      "explanation": "The Rule of the Air (the 500ft rule) states that an aircraft shall not fly closer than 500ft to any person, vessel, vehicle or structure.",
+      "type": "multiple_choice",
+      "question": "Outside of take-off and landing, what is the minimum distance an aircraft may fly from any person, vessel, vehicle or structure?",
+      "id": "pal-mc-0077"
+    },
+    {
+      "question": "When two power-driven aircraft are converging at approximately the same altitude, which one must give way?",
+      "type": "multiple_choice",
+      "explanation": "SERA rules state that when two aircraft are on converging courses at approximately the same level, the aircraft that has the other on its right shall give way.",
+      "options": [
+        "The faster aircraft always has right of way.",
+        "The lower aircraft always has right of way.",
+        "The aircraft that has the other on its left shall give way.",
+        "The aircraft that has the other on its right shall give way."
+      ],
+      "correctAnswer": 3,
+      "id": "pal-mc-0078"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "How many days notice is normally given for significant changes to aeronautical data via the AIRAC system?",
+      "correctAnswer": 2,
+      "options": [
+        "7 days.",
+        "14 days.",
+        "28 days.",
+        "56 days."
+      ],
+      "explanation": "AIRAC (Aeronautical Information Regulation and Control) cycles ensure that changes to aeronautical data are distributed at least 28 days before they become effective.",
+      "id": "pal-mc-0079"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What does a red square with a single yellow diagonal mean when displayed in an aerodrome signal square?",
+      "options": [
+        "The aerodrome is closed to all traffic.",
+        "Landings are prohibited and the prohibition is likely to be prolonged.",
+        "Special precautions must be taken due to the bad state of the manoeuvring area.",
+        "Glider flying is in progress."
+      ],
+      "correctAnswer": 1,
+      "explanation": "A red square horizontal signal with a yellow diagonal indicates that the state of the manoeuvring area is poor and care must be taken during landing.",
+      "id": "pal-mc-0080"
+    },
+    {
+      "correctAnswer": 2,
+      "options": [
+        "A first aid station is located nearby.",
+        "The area is reserved for helicopters only.",
+        "The section of the runway or taxiway is unfit for the movement of aircraft.",
+        "The area is used for glider launching."
+      ],
+      "explanation": "A cross of a single colour (usually white or yellow) displayed horizontally on runways or taxiways indicates that they are unfit for the movement of aircraft.",
+      "type": "multiple_choice",
+      "question": "What is the meaning of a large white or yellow 'X' marked on a runway or taxiway?",
+      "id": "pal-mc-0081"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "In which type of UK airspace is an ATC clearance mandatory for VFR flight?",
+      "correctAnswer": 0,
+      "options": [
+        "Class D.",
+        "Class G.",
+        "Class F.",
+        "Class E."
+      ],
+      "explanation": "Class D is a controlled airspace where VFR flights require an ATC clearance and must follow ATC instructions, but they are not separated from other VFR flights.",
+      "id": "pal-mc-0082"
+    },
+    {
+      "explanation": "Under the Rules of the Air, powered aircraft must give way to airships, gliders, and balloons. Gliders must give way to balloons.",
+      "correctAnswer": 1,
+      "options": [
+        "A balloon gives way to a glider.",
+        "A powered aircraft gives way to a glider.",
+        "A glider gives way to a powered aircraft.",
+        "An airship gives way to a powered aircraft."
+      ],
+      "question": "According to the right-of-way rules, which of the following is correct?",
+      "type": "multiple_choice",
+      "id": "pal-mc-0083"
+    },
+    {
+      "explanation": "A red pyrotechnic (flare) fired from the ground, regardless of whether it was directed at the aircraft or not, means 'Do not land for the time being'.",
+      "options": [
+        "You are cleared to land immediately.",
+        "Your aircraft is on fire; land at once.",
+        "Notwithstanding any previous instruction, do not land for the time being.",
+        "Give way to other aircraft in the circuit."
+      ],
+      "correctAnswer": 2,
+      "question": "What is the meaning of a red pyrotechnic light fired from the ground to an aircraft in flight?",
+      "type": "multiple_choice",
+      "id": "pal-mc-0084"
+    },
+    {
+      "correctAnswer": 1,
+      "options": [
+        "The owner of the aircraft",
+        "The commander of the aircraft",
+        "The Air Traffic Controller on duty",
+        "The Chief Flying Instructor of the flight school"
+      ],
+      "type": "multiple_choice",
+      "explanation": "The commander is responsible for the safety of the aircraft and its occupants and has final authority over the disposition of the aircraft.",
+      "question": "Who is responsible for the safe operation of an aircraft in accordance with the Rules of the Air?",
+      "id": "pal-mc-0085"
+    },
+    {
+      "options": [
+        "The aerodrome is unsafe, do not land",
+        "Give way to other aircraft and continue circling",
+        "An aircraft in flight is cleared to land",
+        "The aircraft may return to the start point on the ground"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "question": "What is the meaning of a green pyrotechnic light signal from the ground to an aircraft in flight?",
+      "explanation": "A green pyrotechnic means permission is granted to land, specifically confirming clearance to an aircraft in flight.",
+      "id": "pal-mc-0086"
+    },
+    {
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "options": [
+        "No limit, as long as the pilot feels fit to fly",
+        "4 hours before the flight",
+        "8 hours before the flight",
+        "24 hours before the flight"
+      ],
+      "explanation": "SERA requires pilots to maintain an 8-hour gap between alcohol consumption and flight for safety.",
+      "question": "According to the Standardised European Rules of the Air (SERA), what is the minimum time recommended or required between consuming alcohol and operating an aircraft?",
+      "id": "pal-mc-0087"
+    },
+    {
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "options": [
+        "NOTAM (Notice to Airmen)",
+        "AIC (Aeronautical Information Circular)",
+        "AIRAC Supplement",
+        "Permanent Amendment to the AIP"
+      ],
+      "explanation": "NOTAMs provide temporary or urgent information that is not contained in the AIP or permanent supplements.",
+      "question": "Temporary information that is of short duration or contains information regarding hazardous conditions is published via which method?",
+      "id": "pal-mc-0088"
+    },
+    {
+      "question": "What currency requirement must a PPL holder meet to carry passengers by day?",
+      "explanation": "A pilot must have performed at least 3 take-offs and 3 landings in the same type or class within the previous 90 days to carry passengers.",
+      "options": [
+        "3 take-offs and landings in the preceding 30 days",
+        "5 take-offs and landings in the preceding 90 days house",
+        "3 take-offs and landings in the preceding 90 days",
+        "10 hours of flight time in the preceding 6 months"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "id": "pal-mc-0089"
+    },
+    {
+      "question": "Which transponder code should be used to indicate a state of emergency (Distress)?",
+      "explanation": "The 7700 code warns controllers that an aircraft is in a serious or imminent danger and requires immediate assistance.",
+      "type": "multiple_choice",
+      "options": [
+        "7600",
+        "7700",
+        "7500",
+        "7000"
+      ],
+      "correctAnswer": 1,
+      "id": "pal-mc-0090"
+    },
+    {
+      "explanation": "In Class D airspace, VFR flights are separated from IFR flights and are required to maintain a continuous radio watch.",
+      "question": "Which of the following describes the service provided to VFR aircraft in Class D airspace?",
+      "correctAnswer": 3,
+      "options": [
+        "Separation is provided between all VFR flights",
+        "ATC clearance is not required for entry",
+        "VFR aircraft are only separated from other VFR aircraft",
+        "VFR flights are separated from IFR flights and receive traffic information on other VFR flights"
+      ],
+      "type": "multiple_choice",
+      "id": "pal-mc-0091"
+    },
+    {
+      "question": "What is the correct spoken prefix for a distress radio call?",
+      "explanation": "The 'Mayday' call is repeated three times to signify a distress situation involving immediate danger.",
+      "options": [
+        "MAYDAY, MAYDAY, MAYDAY",
+        "PAN-PAN, PAN-PAN, PAN-PAN",
+        "EMERGENCY, EMERGENCY, EMERGENCY",
+        "HELP, HELP, HELP"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "id": "pal-mc-0092"
+    },
+    {
+      "correctAnswer": 1,
+      "options": [
+        "Parachute jumping is in progress",
+        "Glider flying is in progress",
+        "The aerodrome is closed to all traffic",
+        "Special VFR rules are in effect"
+      ],
+      "type": "multiple_choice",
+      "explanation": "Two red balls shown on a mast or pole at an aerodrome signify that gliding is currently taking place.",
+      "question": "What does two red balls hoisted upon a mast at an aerodrome signal square indicate?",
+      "id": "pal-mc-0093"
+    },
+    {
+      "explanation": "The SERA rules define night as the time between the end of evening civil twilight and the beginning of morning civil twilight.",
+      "question": "For the purpose of flight logging and lighting, how is 'Night' defined in the UK?",
+      "correctAnswer": 2,
+      "options": [
+        "Sunset to sunrise",
+        "30 minutes after sunset to 30 minutes before sunrise",
+        "The end of evening civil twilight to the beginning of morning civil twilight",
+        "One hour after sunset to one hour before sunrise"
+      ],
+      "type": "multiple_choice",
+      "id": "pal-mc-0094"
+    },
+    {
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "options": [
+        "Land with caution",
+        "Special VFR is in force",
+        "Glider activity only",
+        "Landings are prohibited and the aerodrome is closed"
+      ],
+      "explanation": "A red signal with a yellow cross in the signal square means the aerodrome is closed and all landings are prohibited.",
+      "question": "What does a red square with a yellow cross (diagonal lines forming an X) mean when displayed in an aerodrome signal square?",
+      "id": "pal-mc-0095"
+    },
+    {
+      "question": "When two or more aircraft are approaching an aerodrome for the purpose of landing, which aircraft has right of way?",
+      "explanation": "Aircraft approaching to land or on final approach have the highest priority of aircraft in flight.",
+      "type": "multiple_choice",
+      "options": [
+        "The aircraft at the lower altitude has right of way",
+        "The aircraft at the higher altitude has right of way",
+        "The faster aircraft has right of way",
+        "The aircraft that called 'final' first has right of way"
+      ],
+      "correctAnswer": 0,
+      "id": "pal-mc-0096"
     }
   ],
   "mocks": []
