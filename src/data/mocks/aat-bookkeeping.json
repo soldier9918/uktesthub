@@ -627,6 +627,162 @@
         "Trade discounts village"
       ],
       "id": "ab-mc-0048"
+    },
+    {
+      "question": "A customer returns goods that were previously bought on credit. In which book of prime entry should this transaction be recorded?",
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "explanation": "The Sales Returns Day Book records goods returned by customers, which reduces the amount they owe the business.",
+      "options": [
+        "Cash Book (Receipts)",
+        "Sales Returns Day Book",
+        "Purchase Returns Day Book",
+        "Sales Day Book"
+      ],
+      "id": "ab-mc-0049"
+    },
+    {
+      "question": "A credit sale to J. Smith is correctly recorded in the Sales Day Book but is posted to the account of J. Smythe in the Sales Ledger. What type of error is this?",
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "explanation": "An error of commission occurs when a transaction is posted to the correct type of account but the wrong personal account.",
+      "options": [
+        "Error of commission",
+        "Error of principle",
+        "Error of omission",
+        "Error of original entry"
+      ],
+      "id": "ab-mc-0050"
+    },
+    {
+      "options": [
+        "£72.00",
+        "£300.00",
+        "£60.00",
+        "£432.00"
+      ],
+      "explanation": "Standard rate VAT is 20%. To find the VAT from a gross figure, multiply by 1/6 (or divide by 1.2 then multiply by 0.2). £360 / 6 = £60.",
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "question": "A business receives a VAT invoice for stationery totaling £360.00, which includes VAT at the standard rate of 20%. What is the VAT element of this invoice?",
+      "id": "ab-mc-0051"
+    },
+    {
+      "explanation": "The Petty Cash book is part of the double entry system (representing the petty cash asset) and serves as a book of prime entry.",
+      "options": [
+        "Sales Day Book",
+        "Purchase Day Book",
+        "The Journal",
+        "Petty Cash Book"
+      ],
+      "question": "Which of the following books of prime entry also functions as a ledger account within the double entry system?",
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "id": "ab-mc-0052"
+    },
+    {
+      "question": "In the general ledger, what does a debit balance on the Bank account represent?",
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "explanation": "A debit balance on the bank account in the general ledger represents an asset (money in the bank).",
+      "options": [
+        "A liability (overdraft)",
+        "An asset (cash in hand)",
+        "An expense",
+        "Income"
+      ],
+      "id": "ab-mc-0053"
+    },
+    {
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "question": "A business sells an old piece of machinery on credit. Which book of prime entry is used to record this transaction?",
+      "options": [
+        "The Journal",
+        "Sales Day Book",
+        "Cash Book",
+        "Purchase Day Book"
+      ],
+      "explanation": "The Journal is used to record non-routine transactions such as the purchase or sale of non-current assets on credit.",
+      "id": "ab-mc-0054"
+    },
+    {
+      "explanation": "Debit entries increase assets and expenses; credit entries increase liabilities, equity, and income. Sales is income, so it is credited.",
+      "options": [
+        "Debit Sales, Credit Bank",
+        "Debit Bank, Credit Trade Receivables",
+        "Debit Bank, Credit Sales",
+        "Debit Trade Receivables, Credit Sales"
+      ],
+      "question": "Which transaction correctly records a cash sale?",
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "id": "ab-mc-0055"
+    },
+    {
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "question": "What is the main purpose of a Trial Balance?",
+      "options": [
+        "To calculate the profit for the year",
+        "To check if total debits equal total credits",
+        "To list all the assets of the business",
+        "To verify the bank balance against the bank statement"
+      ],
+      "explanation": "The Trial Balance checks the mathematical accuracy of the double-entry postings by ensuring total debits equal total credits.",
+      "id": "ab-mc-0056"
+    },
+    {
+      "question": "What is the correct double entry to record a payment made to a credit supplier?",
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "explanation": "Payment to a credit supplier reduces the liability (Debit SLCA) and reduces the bank asset (Credit Bank).",
+      "options": [
+        "Debit Bank, Credit Purchase Ledger Control Account",
+        "Debit Purchases, Credit Bank",
+        "Debit Bank, Credit Sales Ledger Control Account",
+        "Debit Purchase Ledger Control Account, Credit Bank"
+      ],
+      "id": "ab-mc-0057"
+    },
+    {
+      "question": "In petty cash management, what is meant by the term 'imprest'?",
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "explanation": "Imprest is the fixed amount (float) a business keeps for small expenses; the petty cashier is reimbursed for the exact amount spent to restore the float.",
+      "options": [
+        "The fixed amount of cash held in the petty cash float",
+        "The amount of interest earned on a bank account",
+        "A discount given for bulk purchases",
+        "The total of the Sales Day Book"
+      ],
+      "id": "ab-mc-0058"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "question": "What is an 'outstanding lodgement' in the context of a bank reconciliation?",
+      "options": [
+        "A cheque issued by the business but not yet cleared by the bank",
+        "A bank error in favor of the business",
+        "Money paid into the bank but not yet appearing on the bank statement",
+        "An automated payment such as a Standing Order"
+      ],
+      "explanation": "Outstanding lodgements are receipts recorded in the cash book but not yet cleared/shown on the bank statement.",
+      "id": "ab-mc-0059"
+    },
+    {
+      "question": "An invoice shows a list price of £1,000. A trade discount of 10% is offered. VAT is charged at 20%. What is the total amount payable on the invoice?",
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "explanation": "Trade discount is applied first (£1,000 - 10% = £900). VAT is then calculated on the discounted price (£900 x 20% = £180). £900 + £180 = £1,080.",
+      "options": [
+        "£1,200",
+        "£1,080",
+        "£1,100",
+        "£900"
+      ],
+      "id": "ab-mc-0060"
     }
   ],
   "mocks": []
