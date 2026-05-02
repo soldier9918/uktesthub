@@ -17,8 +17,7 @@
     "categoryLabel": "Driving",
     "title": "Hazard Perception Test",
     "weights": {
-      "image_question": 0.65,
-      "multiple_choice": 0.25,
+      "multiple_choice": 0.9,
       "true_false": 0.1
     },
     "totalMocks": 45,
@@ -30,8 +29,7 @@
     "categoryLabel": "Driving",
     "title": "Road Signs Test",
     "weights": {
-      "image_question": 0.7,
-      "multiple_choice": 0.2,
+      "multiple_choice": 0.9,
       "true_false": 0.1
     },
     "totalMocks": 45,
@@ -43,8 +41,7 @@
     "categoryLabel": "Driving",
     "title": "Motorcycle Theory Test",
     "weights": {
-      "multiple_choice": 0.65,
-      "image_question": 0.2,
+      "multiple_choice": 0.85,
       "true_false": 0.15
     },
     "totalMocks": 45,
@@ -265,9 +262,8 @@
     "categoryLabel": "Professional",
     "title": "Food Hygiene Level 2",
     "weights": {
-      "multiple_choice": 0.65,
-      "true_false": 0.2,
-      "image_question": 0.15
+      "multiple_choice": 0.8,
+      "true_false": 0.2
     },
     "totalMocks": 45,
     "questionsPerMock": 24,
@@ -278,8 +274,7 @@
     "categoryLabel": "Professional",
     "title": "First Aid Theory",
     "weights": {
-      "multiple_choice": 0.6,
-      "image_question": 0.25,
+      "multiple_choice": 0.85,
       "true_false": 0.15
     },
     "totalMocks": 45,
@@ -291,8 +286,7 @@
     "categoryLabel": "Professional",
     "title": "Fire Safety Awareness",
     "weights": {
-      "multiple_choice": 0.6,
-      "image_question": 0.25,
+      "multiple_choice": 0.85,
       "true_false": 0.15
     },
     "totalMocks": 45,
@@ -304,8 +298,7 @@
     "categoryLabel": "Professional",
     "title": "Manual Handling Awareness",
     "weights": {
-      "multiple_choice": 0.65,
-      "image_question": 0.2,
+      "multiple_choice": 0.85,
       "true_false": 0.15
     },
     "totalMocks": 45,
@@ -317,8 +310,7 @@
     "categoryLabel": "Professional",
     "title": "Health & Safety Awareness",
     "weights": {
-      "multiple_choice": 0.65,
-      "image_question": 0.2,
+      "multiple_choice": 0.85,
       "true_false": 0.15
     },
     "totalMocks": 45,
@@ -408,8 +400,7 @@
     "categoryLabel": "Taxi & Private Hire",
     "title": "Topographical Assessment Practice",
     "weights": {
-      "image_question": 0.7,
-      "multiple_choice": 0.3
+      "multiple_choice": 1.0
     },
     "totalMocks": 45,
     "questionsPerMock": 24,
@@ -524,9 +515,8 @@
     "categoryLabel": "Taxi & Private Hire",
     "title": "Private Hire Driver Badge Rules Quiz",
     "weights": {
-      "multiple_choice": 0.65,
-      "true_false": 0.2,
-      "image_question": 0.15
+      "multiple_choice": 0.8,
+      "true_false": 0.2
     },
     "totalMocks": 45,
     "questionsPerMock": 24,
@@ -601,8 +591,7 @@
     "categoryLabel": "Security",
     "title": "SIA CCTV Operator Test",
     "weights": {
-      "multiple_choice": 0.6,
-      "image_question": 0.25,
+      "multiple_choice": 0.85,
       "true_false": 0.15
     },
     "totalMocks": 45,
@@ -653,9 +642,8 @@
     "categoryLabel": "Hospitality",
     "title": "Allergen Awareness Test",
     "weights": {
-      "multiple_choice": 0.65,
-      "true_false": 0.2,
-      "image_question": 0.15
+      "multiple_choice": 0.8,
+      "true_false": 0.2
     },
     "totalMocks": 45,
     "questionsPerMock": 24,
@@ -692,8 +680,7 @@
     "categoryLabel": "Construction",
     "title": "CSCS Operative Test",
     "weights": {
-      "multiple_choice": 0.6,
-      "image_question": 0.25,
+      "multiple_choice": 0.85,
       "true_false": 0.15
     },
     "totalMocks": 45,
@@ -718,8 +705,7 @@
     "categoryLabel": "Construction",
     "title": "CITB Health, Safety & Environment Test",
     "weights": {
-      "multiple_choice": 0.6,
-      "image_question": 0.25,
+      "multiple_choice": 0.85,
       "true_false": 0.15
     },
     "totalMocks": 45,
@@ -731,8 +717,7 @@
     "categoryLabel": "Construction",
     "title": "IPAF / PASMA Working at Height Test",
     "weights": {
-      "multiple_choice": 0.6,
-      "image_question": 0.25,
+      "multiple_choice": 0.85,
       "true_false": 0.15
     },
     "totalMocks": 45,
@@ -793,8 +778,7 @@
     "categoryLabel": "IT & Tech",
     "title": "CompTIA A+ Practice",
     "weights": {
-      "multiple_choice": 0.6,
-      "image_question": 0.25,
+      "multiple_choice": 0.85,
       "true_false": 0.15
     },
     "totalMocks": 45,
@@ -818,8 +802,7 @@
     "categoryLabel": "IT & Tech",
     "title": "Microsoft Fundamentals (MS-900 / AZ-900)",
     "weights": {
-      "multiple_choice": 0.6,
-      "image_question": 0.25,
+      "multiple_choice": 0.85,
       "true_false": 0.15
     },
     "totalMocks": 45,
@@ -831,9 +814,8 @@
     "categoryLabel": "IT & Tech",
     "title": "Cyber Security Awareness",
     "weights": {
-      "multiple_choice": 0.65,
-      "true_false": 0.2,
-      "image_question": 0.15
+      "multiple_choice": 0.8,
+      "true_false": 0.2
     },
     "totalMocks": 45,
     "questionsPerMock": 24,
@@ -857,9 +839,8 @@
     "categoryLabel": "Healthcare Entry",
     "title": "BMAT Practice",
     "weights": {
-      "multiple_choice": 0.5,
-      "numeric_entry": 0.35,
-      "image_question": 0.15
+      "multiple_choice": 0.65,
+      "numeric_entry": 0.35
     },
     "totalMocks": 45,
     "questionsPerMock": 24,
@@ -1025,9 +1006,7 @@
     "categoryLabel": "Military & Emergency",
     "title": "Police SEARCH Assessment",
     "weights": {
-      "multiple_choice": 0.45,
-      "image_question": 0.35,
-      "hot_spot": 0.2
+      "multiple_choice": 1.0
     },
     "totalMocks": 45,
     "questionsPerMock": 24,
@@ -1038,9 +1017,8 @@
     "categoryLabel": "Military & Emergency",
     "title": "Firefighter NFSAT",
     "weights": {
-      "multiple_choice": 0.5,
-      "numeric_entry": 0.3,
-      "image_question": 0.2
+      "multiple_choice": 0.7,
+      "numeric_entry": 0.3
     },
     "totalMocks": 45,
     "questionsPerMock": 24,
@@ -1051,9 +1029,8 @@
     "categoryLabel": "Maritime & Aviation",
     "title": "PPL Air Law",
     "weights": {
-      "multiple_choice": 0.65,
-      "true_false": 0.2,
-      "image_question": 0.15
+      "multiple_choice": 0.8,
+      "true_false": 0.2
     },
     "totalMocks": 45,
     "questionsPerMock": 24,
@@ -1064,8 +1041,7 @@
     "categoryLabel": "Maritime & Aviation",
     "title": "PPL Meteorology",
     "weights": {
-      "multiple_choice": 0.55,
-      "image_question": 0.3,
+      "multiple_choice": 0.85,
       "true_false": 0.15
     },
     "totalMocks": 45,
@@ -1077,9 +1053,7 @@
     "categoryLabel": "Maritime & Aviation",
     "title": "RYA Day Skipper Theory",
     "weights": {
-      "multiple_choice": 0.45,
-      "image_question": 0.35,
-      "hot_spot": 0.2
+      "multiple_choice": 1.0
     },
     "totalMocks": 45,
     "questionsPerMock": 24,
@@ -1090,9 +1064,8 @@
     "categoryLabel": "Maritime & Aviation",
     "title": "ATPL Basics Practice",
     "weights": {
-      "multiple_choice": 0.55,
-      "numeric_entry": 0.3,
-      "image_question": 0.15
+      "multiple_choice": 0.7,
+      "numeric_entry": 0.3
     },
     "totalMocks": 45,
     "questionsPerMock": 24,
@@ -1141,10 +1114,9 @@
     "categoryLabel": "Government",
     "title": "Border Force Recruitment Test",
     "weights": {
-      "multiple_choice": 0.5,
+      "multiple_choice": 0.6,
       "multiple_response": 0.25,
-      "true_false": 0.15,
-      "image_question": 0.1
+      "true_false": 0.15
     },
     "totalMocks": 45,
     "questionsPerMock": 24,

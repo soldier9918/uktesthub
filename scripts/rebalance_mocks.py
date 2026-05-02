@@ -24,11 +24,20 @@ REQ_PATH = ROOT / "scripts" / "topic-requirements.json"
 
 REQ = json.loads(REQ_PATH.read_text())
 
-# Topics that the audit flagged as non-compliant.
+# Topics that the audit flagged as non-compliant — extended after image-question rewrite.
 TARGET_TOPICS = [
     "grammar", "nhs-literacy", "toefl", "uk-geography", "uk-laws-rights",
     "ph-hmrc-tax-check", "ph-london-regulations", "ph-passenger-safety",
     "esol", "verbal", "logical",
+    # Topics whose image_question questions were rewritten into multiple_choice
+    # and whose weights were updated accordingly. They must be re-balanced now.
+    "allergen-awareness", "atpl-basics", "bmat", "border-force", "citb-hse",
+    "comptia-a-plus", "cscs-operative", "cyber-awareness", "fire-safety",
+    "firefighter-nfsat", "first-aid", "food-hygiene", "hazard-perception",
+    "health-safety-awareness", "ipaf-pasma", "manual-handling",
+    "microsoft-fundamentals", "motorcycle-theory", "oet", "ph-badge-rules",
+    "police-search", "ppl-air-law", "ppl-meteorology", "road-signs",
+    "rya-day-skipper", "sia-cctv", "topographical",
 ]
 
 QUESTIONS_PER_MOCK = 24
