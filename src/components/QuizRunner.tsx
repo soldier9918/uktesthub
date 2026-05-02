@@ -720,7 +720,7 @@ function FillBlanksQuestionView({
       <h2 className="font-display text-lg font-semibold leading-snug md:text-xl">
         {q.prompt ?? "Select the words from the dropdowns to complete the sentence."}
       </h2>
-      <p className="mt-6 text-base leading-[2.4] md:text-lg md:leading-[2.6]">
+      <div className="mt-6 text-base leading-[2.4] md:text-lg md:leading-[2.6]">
         {parts.map((p, idx) => {
           if (p.kind === "text") return <span key={idx}>{p.text}</span>;
           const blank = q.blanks[p.index];
@@ -740,7 +740,8 @@ function FillBlanksQuestionView({
               value={value}
               disabled={revealed}
               onChange={(e) => setValue(p.index, parseInt(e.target.value, 10))}
-              className={`mx-1 inline-block rounded-md border-2 bg-background px-2 py-1 text-sm font-medium align-baseline focus:outline-none focus:ring-2 focus:ring-offset-1 disabled:cursor-not-allowed ${borderClass}`}
+              style={{ width: "auto", display: "inline-block" }}
+              className={`mx-1 rounded-md border-2 bg-background px-2 py-1 text-sm font-medium align-middle focus:outline-none focus:ring-2 focus:ring-offset-1 disabled:cursor-not-allowed ${borderClass}`}
             >
               <option value={-1}>—</option>
               {blank.options.map((opt, i) => (
@@ -751,7 +752,7 @@ function FillBlanksQuestionView({
             </select>
           );
         })}
-      </p>
+      </div>
       {revealed && <BlankResults q={q} values={values} />}
     </>
   );

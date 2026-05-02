@@ -85,7 +85,7 @@ function QuizPage() {
       <SiteHeader />
 
       <main className="mx-auto max-w-7xl px-3 py-2 md:px-6 md:py-3">
-        <QuizRunner quiz={quiz} />
+        <QuizRunner key={quiz.slug} quiz={quiz} />
 
         <AdSlot size="leaderboard" className="mt-8" />
 
