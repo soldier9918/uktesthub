@@ -451,6 +451,12 @@ def cmd_bank(args):
 
     subject = TOPIC_SUBJECTS.get(args.topic, title)
 
+    added_this_run = 0
+    failed_batches = 0
+    batch_size = int(getattr(args, "batch_size", BATCH_SIZE) or BATCH_SIZE)
+    max_added = int(getattr(args, "max_added", 0) or 0)
+    max_failures = int(getattr(args, "max_failures", 0) or 0)
+
     for qtype, target in quotas.items():
         have = len(by_type[qtype])
         need = target - have
@@ -460,7 +466,10 @@ def cmd_bank(args):
         print(f"   → {qtype}: need {need} more (have {have}/{target})")
 
         while need > 0:
-            batch = min(BATCH_SIZE, need)
+            if max_added and added_this_run >= max_added:
+                print(f"   ↳ stopping after --max-added={max_added}; bank now has {len(bank)} questions")
+                return
+            batch = min(batch_size, need, max_added - added_this_run if max_added else need)
             tool = build_tool_for(qtype, batch)
             system = (
                 f"You are an expert exam writer for {subject}. "
@@ -500,6 +509,10 @@ def cmd_bank(args):
                 qs = json.loads(tcs[0]["function"]["arguments"]).get("questions") or []
             except Exception as e:  # noqa: BLE001
                 print(f"     × batch failed: {e}", file=sys.stderr)
+                failed_batches += 1
+                if max_failures and failed_batches >= max_failures:
+                    print(f"   ↳ stopping after --max-failures={max_failures}; bank still has {len(bank)} questions")
+                    return
                 time.sleep(5)
                 continue
 
@@ -514,6 +527,7 @@ def cmd_bank(args):
                 bank.append(q)
                 by_type[qtype].append(q)
                 added += 1
+                added_this_run += 1
                 need -= 1
                 if need <= 0:
                     break
@@ -841,6 +855,9 @@ def main():
     p_bank = sub.add_parser("bank", help="Fill the per-type question bank for a topic")
     p_bank.add_argument("--topic", required=True)
     p_bank.add_argument("--delay", type=float, default=1.0)
+    p_bank.add_argument("--batch-size", type=int, default=BATCH_SIZE)
+    p_bank.add_argument("--max-added", type=int, default=0, help="Stop after adding this many questions")
+    p_bank.add_argument("--max-failures", type=int, default=0, help="Stop after this many failed AI batches")
     p_bank.set_defaults(func=cmd_bank)
 
     p_asm = sub.add_parser("assemble", help="Assemble 45 mocks from the bank (no AI)")
