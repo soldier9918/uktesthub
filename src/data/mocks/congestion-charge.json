@@ -1199,6 +1199,162 @@
       ],
       "type": "multiple_choice",
       "id": "cc-mc-0092"
+    },
+    {
+      "question": "What is the percentage discount offered to residents living within the Congestion Charge zone who apply for the Resident' discount?",
+      "correctAnswer": 2,
+      "explanation": "Residents within the zone can receive a 90% discount on the daily charge, provided they remain eligible and registered.",
+      "options": [
+        "50% discount",
+        "75% discount",
+        "90% discount",
+        "100% discount"
+      ],
+      "type": "multiple_choice",
+      "id": "cc-mc-0093"
+    },
+    {
+      "correctAnswer": 0,
+      "question": "In terms of time, how does the Ultra Low Emission Zone (ULEZ) differ from the Congestion Charge?",
+      "type": "multiple_choice",
+      "explanation": "The Ultra Low Emission Zone (ULEZ) operates 24 hours a day, every day of the year except Christmas Day.",
+      "options": [
+        "24 hours a day, 365 days a year (except Christmas Day)",
+        "07:00 to 22:00 daily",
+        "The same hours as the Congestion Charge",
+        "Weekdays only from midnight to midnight"
+      ],
+      "id": "cc-mc-0094"
+    },
+    {
+      "explanation": "While other types require registration fees, accredited breakdown vehicles receive a 100% discount.",
+      "options": [
+        "Private hire vehicles",
+        "Electric cars",
+        "Motorbikes",
+        "Accredited breakdown vehicles"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "question": "Which of the following vehicle types is eligible for a 100% discount from the Congestion Charge?",
+      "id": "cc-mc-0095"
+    },
+    {
+      "question": "How does the Congestion Charge scheme apply to Blue Badge holders?",
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "options": [
+        "They pay a reduced rate of £1.00",
+        "They get 100% discount after a £10 registration fee",
+        "They are automatically exempt with no registration required",
+        "They pay the full daily charge but skip the ULEZ fee"
+      ],
+      "explanation": "While the standard charge applies to most, Blue Badge holders are eligible for a 100% discount after a one-off registration.",
+      "id": "cc-mc-0096"
+    },
+    {
+      "options": [
+        "On the same day only",
+        "Up to 24 hours after travel",
+        "Up to three days after travel",
+        "Up to seven days after travel"
+      ],
+      "explanation": "TfL allows payments to be made up to three days after the day of travel, though the price is higher than paying in advance.",
+      "type": "multiple_choice",
+      "question": "How many days after travelling in the zone do you have to pay the charge before it becomes a penalty?",
+      "correctAnswer": 2,
+      "id": "cc-mc-0097"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "The 'Cleaner Vehicle Discount' is currently only available to battery electric or hydrogen fuel cell vehicles.",
+      "options": [
+        "Hybrid vehicles",
+        "Battery electric or hydrogen fuel cell vehicles",
+        "Euro 6 diesel vehicles",
+        "Petrol vehicles registered after 2020"
+      ],
+      "question": "Which criteria must a car meet to qualify for the 'Cleaner Vehicle Discount' as of 2024?",
+      "correctAnswer": 1,
+      "id": "cc-mc-0098"
+    },
+    {
+      "correctAnswer": 0,
+      "question": "What is the current standard daily cost for the Congestion Charge if paid in advance or on the day of travel?",
+      "options": [
+        "£15.00",
+        "£17.50",
+        "£10.00 black friday deal",
+        "£20.00"
+      ],
+      "explanation": "The 'Pay Next Day' feature was replaced; the current standard daily charge is £15 if paid in advance or on the day.",
+      "type": "multiple_choice",
+      "id": "cc-mc-0099"
+    },
+    {
+      "question": "What is the full cost of a Penalty Charge Notice (PCN) for the Congestion Charge if not paid early?",
+      "correctAnswer": 2,
+      "options": [
+        "£80",
+        "£130",
+        "£180",
+        "£240"
+      ],
+      "explanation": "A Penalty Charge Notice (PCN) is currently set at £180, though this is reduced by 50% if paid within 14 days.",
+      "type": "multiple_choice",
+      "id": "cc-mc-0100"
+    },
+    {
+      "question": "Which of these vehicles is completely exempt from the Congestion Charge without needing to pay a registration fee?",
+      "correctAnswer": 3,
+      "explanation": "Motorcycles, mopeds, and bicycles are exempt from the Congestion Charge and do not need to register.",
+      "options": [
+        "Small cars under 1 litre engine size",
+        "Hackney Carriages (Black Cabs) only",
+        "Vehicles driven by pensioners",
+        "Two-wheeled motorcycles and mopeds"
+      ],
+      "type": "multiple_choice",
+      "id": "cc-mc-0101"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "GPS tracking tags in windscreens",
+        "Automatic Number Plate Recognition (ANPR) cameras",
+        "Manual checkpoints at every entry road",
+        "Satellite surveillance from the Met Office"
+      ],
+      "explanation": "TfL uses a network of fixed and mobile cameras to read Number Plates (ANR) to check against the database of paid vehicles.",
+      "question": "What technology is primarily used to monitor vehicles entering and exiting the Congestion Charge zone?",
+      "correctAnswer": 1,
+      "id": "cc-mc-0102"
+    },
+    {
+      "question": "Which of the following areas is generally considered to be within the London Congestion Charge zone?",
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "explanation": "Paddington and Marylebone are within or on the boundary of the zone, whereas zones like Canary Wharf or Heathrow are not.",
+      "options": [
+        "Marylebone and Euston",
+        "Richmond and Wimbledon",
+        "Stratford and Greenwich",
+        "Brixton and Clapham"
+      ],
+      "id": "cc-mc-0103"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "Auto Pay is the easiest way to manage payments; it bills the user automatically and lowers the risk of receiving fines.",
+      "options": [
+        "It makes the daily charge 50% cheaper",
+        "It allows you to pay at the end of every month by cheque",
+        "It removes the need to pay the ULEZ charge as well",
+        "It automatically bills the user for the days they drive in the zone"
+      ],
+      "question": "What is the primary benefit of the 'Congestion Charge Auto Pay' system for a regular driver?",
+      "correctAnswer": 3,
+      "id": "cc-mc-0104"
     }
   ],
   "mocks": []

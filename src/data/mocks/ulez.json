@@ -1199,6 +1199,162 @@
       "correctAnswer": 2,
       "question": "Which of the following organisations can apply for a 'grace period' for non-compliant minibuses used for community transport?",
       "id": "u-mc-0092"
+    },
+    {
+      "correctAnswer": 1,
+      "question": "What is the minimum Euro emission standard for most diesel cars to be ULEZ compliant?",
+      "type": "multiple_choice",
+      "explanation": "While petrol cars generally need to be Euro 4 (around 2005), diesel cars must meet the much stricter Euro 6 standard (generally 2015 onwards) to avoid the charge.",
+      "options": [
+        "Euro 4",
+        "Euro 6",
+        "Euro 5",
+        "Euro 3"
+      ],
+      "id": "u-mc-0093"
+    },
+    {
+      "explanation": "The ULEZ operates 24 hours a day, every day of the year except for Christmas Day (25th December).",
+      "options": [
+        "24 hours a day",
+        "07:00 to 18:00 only",
+        "06:00 to midnight only",
+        "Weekdays only"
+      ],
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "question": "What are the daily hours of operation for the Ultra Low Emission Zone?",
+      "id": "u-mc-0094"
+    },
+    {
+      "explanation": "The Scrappage Scheme was expanded by the Mayor of London in August 2023 to offer grants to all Londoners with non-compliant cars or motorcycles.",
+      "options": [
+        "Only health workers",
+        "Only those on means-tested benefits",
+        "Every London resident",
+        "Only small business owners"
+      ],
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "question": "As of August 2023, who is eligible to apply for the ULEZ Scrappage Scheme?",
+      "id": "u-mc-0095"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Following the 2023 expansion, which area does the ULEZ now cover?",
+      "correctAnswer": 3,
+      "options": [
+        "Central London only",
+        "The area between the North and South Circular roads",
+        "Only East and West London boroughs",
+        "All London boroughs and the City of London"
+      ],
+      "explanation": "The ULEZ boundary was expanded on 29 August 2023 to include all 32 London boroughs and the City of London.",
+      "id": "u-mc-0096"
+    },
+    {
+      "options": [
+        "£60",
+        "£90",
+        "£120",
+        "£80"
+      ],
+      "explanation": "If a PCN is paid within 14 days of the date of service, the fine is reduced by 50% from £180 down to £90.",
+      "type": "multiple_choice",
+      "question": "If you receive a Penalty Charge Notice (PCN) for ULEZ, how much is the fine if paid within 14 days?",
+      "correctAnswer": 1,
+      "id": "u-mc-0097"
+    },
+    {
+      "explanation": "Specialist agricultural vehicles, such as tractors and sprayers, are generally exempt from the ULEZ charge.",
+      "options": [
+        "Tractors used for agriculture",
+        "Delivery mopeds",
+        "Private ambulances over 10 years old",
+        "Refrigerated lorries"
+      ],
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "question": "Which of the following specialist vehicle types is exempt from the ULEZ charge?",
+      "id": "u-mc-0098"
+    },
+    {
+      "options": [
+        "It offers a 50% discount on the daily charge",
+        "It allows you to pay for a whole year upfront at a discount",
+        "It automatically bills you to avoid Penalty Charge Notices (PCNs)",
+        "It allows you to drive non-compliant cars for free once a month"
+      ],
+      "explanation": "Auto Pay automatically bills drivers for the number of charging days their vehicle is detected within the zone, preventing missed payments and fines.",
+      "type": "multiple_choice",
+      "question": "What is a primary benefit of registering for TfL's 'Auto Pay' system?",
+      "correctAnswer": 2,
+      "id": "u-mc-0099"
+    },
+    {
+      "explanation": "The M25 motorway itself is outside the expanded ULEZ zone, though some approach roads towards London may be inside.",
+      "options": [
+        "The North Circular (A406)",
+        "The M25 motorway",
+        "The South Circular (A205)",
+        "The A10 into North London"
+      ],
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "question": "Which of these major roads is NOT included within the Ultra Low Emission Zone?",
+      "id": "u-mc-0100"
+    },
+    {
+      "explanation": "Nitrogen Dioxide (NO2) is the primary pollutant the ULEZ aims to reduce, alongside particulate matter, to improve public health.",
+      "options": [
+        "Carbon Monoxide (CO)",
+        "Sulfur Dioxide (SO2)",
+        "Nitrogen Dioxide (NO2)",
+        "Methane (CH4)"
+      ],
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "question": "What is the main harmful pollutant that the ULEZ scheme aims to reduce in London's air?",
+      "id": "u-mc-0101"
+    },
+    {
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "question": "In which year did the Euro 4 standard become mandatory for all new petrol cars, making most of them ULEZ compliant?",
+      "explanation": "While most petrol cars from 2005 onwards are Euro 4, some manufacturers met the standard as early as 2001. Owners should check their V5C or the TfL checker.",
+      "options": [
+        "2005",
+        "2010",
+        "2001",
+        "2015"
+      ],
+      "id": "u-mc-0102"
+    },
+    {
+      "explanation": "Showman's vehicles that have been specially modified are eligible for a 100% discount from the daily ULEZ charge.",
+      "options": [
+        "10% discount",
+        "50% discount village rate",
+        "100% discount (Exempt)",
+        "Standard charge applies"
+      ],
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "question": "What ULEZ discount is available for specially modified vehicles used by Circus and Showman's Guild members?",
+      "id": "u-mc-0103"
+    },
+    {
+      "explanation": "Pure electric vehicles produce zero tailpipe emissions and are therefore exempt from the ULEZ charge.",
+      "options": [
+        "Hybrid cars with CO2 under 75g/km petrol",
+        "All-electric vehicles",
+        "Diesel cars with Euro 5 engines",
+        "LPG converted vans from before 2001"
+      ],
+      "correctAnswer": 1,
+      "question": "Which of the following vehicle types is automatically exempt from ULEZ because it produces zero tailpipe emissions?",
+      "type": "multiple_choice",
+      "id": "u-mc-0104"
     }
   ],
   "mocks": []
