@@ -107,6 +107,942 @@
       "explanation": "TfL provides a free online vehicle compliance checker.",
       "type": "multiple_choice",
       "id": "u-mc-0008"
+    },
+    {
+      "options": [
+        "Easter Sunday",
+        "New Year's Day",
+        "Christmas Day (25 December)",
+        "Bank Holiday Mondays"
+      ],
+      "question": "On which day of the year is the ULEZ charge suspended?",
+      "explanation": "The ULEZ charge applies 24 hours a day, 7 days a week, every day of the year except for Christmas Day (25 December).",
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "id": "u-mc-0009"
+    },
+    {
+      "options": [
+        "One payment covers both schemes automatically",
+        "The ULEZ and Congestion Charge are separate and both may need to be paid",
+        "Paying the ULEZ charge exempts you from the Congestion Charge",
+        "The Congestion Charge has been replaced by ULEZ"
+      ],
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "explanation": "While both schemes aim to reduce traffic and pollution, they are separate charges; you may have to pay both if you enter the Congestion Charge zone in Central London.",
+      "question": "What is the relationship between the ULEZ charge and the Congestion Charge?",
+      "id": "u-mc-0010"
+    },
+    {
+      "question": "What is the daily charge for a non-compliant car to drive within the ULEZ?",
+      "explanation": "For non-compliant cars, motorcycles, and small vans, the standard daily ULEZ charge is £12.50.",
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "options": [
+        "£12.50",
+        "£15.00",
+        "£8.50",
+        "£20.00"
+      ],
+      "id": "u-mc-0011"
+    },
+    {
+      "question": "What is the full cost of a Penalty Charge Notice (PCN) for a non-compliant car that does not pay the daily charge?",
+      "type": "multiple_choice",
+      "explanation": "If you fail to pay the ULEZ charge on time, the Penalty Charge Notice (PCN) for a car is £180, though it is reduced to £90 if paid within 14 days.",
+      "correctAnswer": 3,
+      "options": [
+        "£60",
+        "£100",
+        "£120",
+        "£180"
+      ],
+      "id": "u-mc-0012"
+    },
+    {
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "explanation": "For diesel vans to be ULEZ-compliant without a charge, they generally must meet the Euro 6 emission standard.",
+      "question": "To avoid the ULEZ charge, most diesel vans must meet which minimum Euro emission standard?",
+      "options": [
+        "Euro 4",
+        "Euro 6",
+        "Euro 5",
+        "Euro 3"
+      ],
+      "id": "u-mc-0013"
+    },
+    {
+      "options": [
+        "The M25 motorway boundary",
+        "Only the North and South Circular roads",
+        "Only the City of London and Westminster",
+        "All London boroughs and the City of London"
+      ],
+      "question": "As of August 2023, what geographical area does the ULEZ cover?",
+      "correctAnswer": 3,
+      "explanation": "The ULEZ expansion on 29 August 2023 brought all 32 London boroughs, including the outer edges of the city, into the zone.",
+      "type": "multiple_choice",
+      "id": "u-mc-0014"
+    },
+    {
+      "options": [
+        "Auto Pay",
+        "Direct Debit London",
+        "FastTrack ULEZ",
+        "London Rover"
+      ],
+      "correctAnswer": 0,
+      "explanation": "TfL's 'Auto Pay' system automatically bills registered drivers for the number of charging days their vehicle travels within the zone.",
+      "type": "multiple_choice",
+      "question": "What is the name of the TfL service that automatically bills drivers for ULEZ and Congestion charges?",
+      "id": "u-mc-0015"
+    },
+    {
+      "options": [
+        "10 years old",
+        "25 years old",
+        "40 years old",
+        "50 years old"
+      ],
+      "type": "multiple_choice",
+      "explanation": "Since 2021, most historic vehicles built more than 40 years ago are exempt from the ULEZ charge if they are registered in the 'historic' tax class.",
+      "correctAnswer": 2,
+      "question": "Generally, how old must a 'historic' vehicle be to qualify for a permanent ULEZ exemption?",
+      "id": "u-mc-0016"
+    },
+    {
+      "question": "Most motorcycles and mopeds must meet which minimum Euro standard to be ULEZ-compliant?",
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "explanation": "Motorcycles must usually meet Euro 3 emission standards for NOx to be compliant; most bikes registered after July 2007 meet this.",
+      "options": [
+        "Euro 1",
+        "Euro 5",
+        "Euro 4",
+        "Euro 3"
+      ],
+      "id": "u-mc-0017"
+    },
+    {
+      "options": [
+        "The London Buy-Back Scheme",
+        "The Scrappage Scheme",
+        "The ULEZ Grant Fund",
+        "The Green Upgrade Program"
+      ],
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "explanation": "TfL provides a scrappage scheme to help eligible Londoners, small businesses, and charities replace non-compliant vehicles with greener alternatives.",
+      "question": "What is the name of the financial assistance scheme provided to help eligible Londoners replace non-compliant vehicles?",
+      "id": "u-mc-0018"
+    },
+    {
+      "options": [
+        "Nitrogen Dioxide (NO2)",
+        "Helium Gas",
+        "Carbon Monoxide (CO)",
+        "Methane (CH4)"
+      ],
+      "explanation": "The primary pollutant ULEZ aims to reduce to improve health is Nitrogen Dioxide (NO2), alongside particulate matter.",
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "question": "Which harmful pollutant is the primary target for reduction under the ULEZ scheme?",
+      "id": "u-mc-0019"
+    },
+    {
+      "options": [
+        "All hybrid vehicles are automatically exempt",
+        "Only London residents get a 50% discount",
+        "They must meet the same Euro standards as standard petrol or diesel cars",
+        "Hybrids only pay on weekdays"
+      ],
+      "question": "Which of the following is true for hybrid cars regarding the ULEZ?",
+      "type": "multiple_choice",
+      "explanation": "While there are specific grace periods for certain NHS patients and disabled tax class vehicles, standard private hybrids must still meet Euro 4 (petrol) or Euro 6 (diesel) standards.",
+      "correctAnswer": 2,
+      "id": "u-mc-0020"
+    },
+    {
+      "correctAnswer": 1,
+      "question": "What is the daily charge for heavy vehicles (over 3.5 tonnes) that do not meet the London-wide Low Emission Zone (LEZ) standards?",
+      "options": [
+        "£12.50",
+        "£100",
+        "£50",
+        "£250"
+      ],
+      "type": "multiple_choice",
+      "explanation": "While cars pay £12.50, heavy vehicles like lorries and coaches must pay £100 if they do not meet the separate LEZ standards.",
+      "id": "u-mc-0021"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "TfL allows drivers to pay the charge up to three days after the journey, but missing this window results in a Penalty Charge Notice.",
+      "correctAnswer": 0,
+      "options": [
+        "Midnight on the third day following the journey",
+        "Midnight on the same day as the journey",
+        "7 days after the journey",
+        "The end of the calendar month"
+      ],
+      "question": "What is the absolute deadline to pay the ULEZ charge after driving into the zone?",
+      "id": "u-mc-0022"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "The ULEZ is a 24-hour scheme that applies every single day of the year except for Christmas Day.",
+      "question": "On which specific days of the week does the ULEZ operate?",
+      "options": [
+        "Monday to Friday only",
+        "Weekends only",
+        "Every day except Christmas Day",
+        "Only during peak rush hour times"
+      ],
+      "correctAnswer": 2,
+      "id": "u-mc-0023"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "While Blue Badge holders originally had a grace period, it is not a permanent exemption. Disabled passenger vehicles have a specific 'sunset period' ending in 2027.",
+      "correctAnswer": 3,
+      "options": [
+        "Agricultural vehicles",
+        "London licensed taxis",
+        "Military vehicles",
+        "Standard Blue Badge holders"
+      ],
+      "question": "Which of these vehicle types is NOT automatically exempt from the ULEZ charge forever?",
+      "id": "u-mc-0024"
+    },
+    {
+      "correctAnswer": 0,
+      "question": "What are the ULEZ requirements for vehicles registered outside of the United Kingdom?",
+      "options": [
+        "They must meet ULEZ standards or pay the daily charge",
+        "They are automatically exempt as they are from abroad",
+        "They only have to pay the Congestion Charge",
+        "They are only charged if they stay for more than a week"
+      ],
+      "type": "multiple_choice",
+      "explanation": "Non-UK registered vehicles must also meet the emission standards or pay the charge; they often need to register with TfL's partner, EPC plc.",
+      "id": "u-mc-0025"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "Euro 4 became mandatory for all new petrol cars in 2005, which is why most petrol cars made after this date are compliant.",
+      "options": [
+        "1992",
+        "1996",
+        "2001",
+        "2005"
+      ],
+      "question": "In what year did the Euro 4 petrol standard (the ULEZ requirement for petrol cars) generally become mandatory for new cars?",
+      "correctAnswer": 3,
+      "id": "u-mc-0026"
+    },
+    {
+      "options": [
+        "Carbon Dioxide (CO2)",
+        "Particulate Matter (PM2.5)",
+        "Methane",
+        "Sulphur Dioxide"
+      ],
+      "question": "Besides Nitrogen Dioxide, which other major pollutant is the ULEZ specifically designed to reduce?",
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "explanation": "The ULEZ aims to reduce nitrogen dioxide (NO2) by around 30% and particulate matter (PM2.5) by nearly 40% across London.",
+      "id": "u-mc-0027"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "Residents within the zone have no discount or exemption and must pay the full daily charge if their vehicle is non-compliant.",
+      "correctAnswer": 2,
+      "options": [
+        "90% discount",
+        "Flat fee of £1 per day",
+        "No discount (must pay the full charge)",
+        "Free for the first two years"
+      ],
+      "question": "What discount are residents living within the ULEZ entitled to for their non-compliant vehicles?",
+      "id": "u-mc-0028"
+    },
+    {
+      "question": "What technology is used to monitor and enforce the ULEZ across London?",
+      "options": [
+        "Automatic Number Plate Recognition (ANPR) cameras",
+        "Manual checks by police officers",
+        "Physical toll booths on major roads",
+        "GPS tracking devices inside the car"
+      ],
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "explanation": "The ULEZ operates through a vast network of Automatic Number Plate Recognition (ANPR) cameras located throughout the Greater London area.",
+      "id": "u-mc-0029"
+    },
+    {
+      "explanation": "If you pay within 14 days, the PCN is reduced by 50% (to £90), otherwise the full amount of £180 applies.",
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "question": "How many days do you have to pay a ULEZ Penalty Charge Notice (PCN) at a discounted rate?",
+      "options": [
+        "7 days",
+        "10 days",
+        "14 days",
+        "21 days"
+      ],
+      "id": "u-mc-0030"
+    },
+    {
+      "question": "Which of the following vehicles is generally exempt from the ULEZ?",
+      "options": [
+        "Delivery vans over 10 years old",
+        "Tractors and agricultural machinery",
+        "Private hire vehicles (PHVs)",
+        "Classic cars from the early 1990s"
+      ],
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "explanation": "Specialist agricultural vehicles, like tractors, are typically exempt from the ULEZ charge.",
+      "id": "u-mc-0031"
+    },
+    {
+      "options": [
+        "Builders' vans",
+        "Showmans' vehicles (funfairs/circuses)",
+        "Supercars used for exhibitions",
+        "Any vehicle used for charity work"
+      ],
+      "question": "Which specific group can apply for a temporary 100% discount if their vehicle is used for travelling funfairs?",
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "explanation": "Showman's vehicles that have been specially modified and are used for travelling circuses or fairs may qualify for a 100% discount.",
+      "id": "u-mc-0032"
+    },
+    {
+      "question": "The ULEZ operates every day of the year except for which specific day?",
+      "explanation": "The ULEZ operates 24 hours a day, every day of the year, except for Christmas Day (25 December).",
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "options": [
+        "New Year's Day",
+        "Christmas Day",
+        "Easter Sunday",
+        "Bank Holiday Monday"
+      ],
+      "id": "u-mc-0033"
+    },
+    {
+      "question": "What are the minimum Euro emission standards for petrol and diesel cars to avoid the ULEZ charge?",
+      "explanation": "Petrol cars must generally meet Euro 4 standards to be compliant, whereas diesel cars must meet the stricter Euro 6 standards.",
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "options": [
+        "Euro 4 for both",
+        "Euro 6 for both",
+        "Euro 6 for petrol and Euro 4 for diesel",
+        "Euro 4 for petrol and Euro 6 for diesel"
+      ],
+      "id": "u-mc-0034"
+    },
+    {
+      "options": [
+        "£12.50",
+        "£15.00",
+        "£17.50",
+        "£20.00"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "explanation": "The standard daily charge for most non-compliant vehicles, including cars and motorcycles, is £12.50.",
+      "question": "What is the standard daily charge for a non-compliant car or motorcycle entering the ULEZ?",
+      "id": "u-mc-0035"
+    },
+    {
+      "options": [
+        "Physical toll booths",
+        "Satellite tracking devices",
+        "Automatic Number Plate Recognition (ANPR) cameras",
+        "Windscreen stickers (vignettes)"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "explanation": "TfL uses an extensive network of Automatic Number Plate Recognition (ANPR) cameras to track vehicles in the zone.",
+      "question": "How is the ULEZ charge primarily enforced by Transport for London?",
+      "id": "u-mc-0036"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "6:00 AM to 6:00 PM",
+        "7:00 AM to 10:00 PM",
+        "Midnight to midnight",
+        "Midday to midday"
+      ],
+      "correctAnswer": 2,
+      "explanation": "A ULEZ day runs from midnight to midnight; if you drive across that time period, you are liable for two daily charges.",
+      "question": "For the purpose of the ULEZ charge, how is a single 'day' defined?",
+      "id": "u-mc-0037"
+    },
+    {
+      "options": [
+        "Tractors and agricultural vehicles",
+        "Classic cars from the 1990s",
+        "All vehicles owned by NHS staff",
+        "Uber and private hire vehicles"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "explanation": "Agricultural vehicles, such as tractors, are generally exempt from the ULEZ charge if they are used for their intended purpose.",
+      "question": "Which of the following vehicle types is generally exempt from the ULEZ?",
+      "id": "u-mc-0038"
+    },
+    {
+      "correctAnswer": 1,
+      "options": [
+        "£130",
+        "£180",
+        "£250",
+        "£500"
+      ],
+      "type": "multiple_choice",
+      "question": "What is the full cost of a Penalty Charge Notice (PCN) for failing to pay the ULEZ charge?",
+      "explanation": "If you do not pay the daily charge, the standard PCN is £180, though it is halved to £90 if paid within 14 days.",
+      "id": "u-mc-0039"
+    },
+    {
+      "question": "Which type of vehicle is currently 100% exempt from the ULEZ charge due to producing zero tailpipe emissions?",
+      "explanation": "While electric cars are exempt from ULEZ, they are no longer exempt from the separate Congestion Charge (as of December 2025).",
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "options": [
+        "Hybrid cars (Petrol/Electric)",
+        "LPG converted cars",
+        "Hydrogen fuel cell cars",
+        "Fully electric cars"
+      ],
+      "id": "u-mc-0040"
+    },
+    {
+      "options": [
+        "School buses",
+        "Showmans' vehicles",
+        "Delivery mopeds",
+        "Armed Forces vehicles"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "explanation": "Showmans' vehicles that are specially modified and used for travelling funfairs can qualify for a 100% discount.",
+      "question": "Which specific category of vehicle can apply for a special discount if it is used for a travelling funfair?",
+      "id": "u-mc-0041"
+    },
+    {
+      "explanation": "Blue Badge holders must pay the ULEZ charge unless their vehicle is specifically registered with the DVLA as having a 'disabled' tax class.",
+      "question": "Are Blue Badge holders automatically exempt from the ULEZ charge regardless of the vehicle they drive?",
+      "type": "multiple_choice",
+      "options": [
+        "Generally no, they must pay unless the vehicle has a 'disabled' tax class",
+        "Yes, they are always exempt in any vehicle",
+        "Yes, if they are London residents only",
+        "Yes, but only during weekends"
+      ],
+      "correctAnswer": 0,
+      "id": "u-mc-0042"
+    },
+    {
+      "correctAnswer": 2,
+      "options": [
+        "Your car is parked on the street within the zone but not driven",
+        "You drive across the ULEZ boundary once",
+        "You drive within the zone but only for 5 minutes",
+        "You drive a non-compliant vehicle to a hospital appointment"
+      ],
+      "type": "multiple_choice",
+      "question": "In which of the following scenarios would you NOT be required to pay the ULEZ charge?",
+      "explanation": "Even if you are only parked within the zone and do not drive on a specific day, you do not pay. The charge applies to driving.",
+      "id": "u-mc-0043"
+    },
+    {
+      "options": [
+        "2010",
+        "2015",
+        "2018",
+        "2021"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "explanation": "Standard diesel cars usually had to meet Euro 6 standards starting from September 2015 to be sold in the UK.",
+      "question": "In which year did the Euro 6 standard for diesel cars (required for ULEZ compliance) mostly become mandatory for new registrations?",
+      "id": "u-mc-0044"
+    },
+    {
+      "correctAnswer": 2,
+      "question": "As of August 2023, which areas are covered by the Ultra Low Emission Zone (ULEZ)?",
+      "options": [
+        "Central London only",
+        "Inner London only",
+        "All London boroughs",
+        "South London only"
+      ],
+      "explanation": "The Ultra Low Emission Zone was expanded on 29 August 2023 to include all London boroughs, covering the entire city.",
+      "type": "multiple_choice",
+      "id": "u-mc-0045"
+    },
+    {
+      "correctAnswer": 0,
+      "question": "What is a primary difference between the Low Emission Zone (LEZ) and the Ultra Low Emission Zone (ULEZ)?",
+      "options": [
+        "The LEZ applies to heavy diesel vehicles, while ULEZ applies to most vehicle types.",
+        "The LEZ is only for petrol cars, while ULEZ is for diesel cars.",
+        "The LEZ operates 24/7, while the ULEZ only operates during peak hours.",
+        "There is no difference; they are two names for the same zone."
+      ],
+      "explanation": "The LEZ focuses on heavy diesel vehicles like lorries and coaches, whereas the ULEZ covers smaller vehicles like cars and motorcycles.",
+      "type": "multiple_choice",
+      "id": "u-mc-0046"
+    },
+    {
+      "question": "Within what time frame must you pay the ULEZ charge after driving a non-compliant vehicle into the zone?",
+      "options": [
+        "24 hours",
+        "48 hours",
+        "End of the current month",
+        "Midnight on the third day after travel"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Motorists must pay by midnight on the third day following their journey in the ULEZ to avoid a penalty.",
+      "type": "multiple_choice",
+      "id": "u-mc-0047"
+    },
+    {
+      "options": [
+        "25 years",
+        "40 years",
+        "50 years",
+        "10 years"
+      ],
+      "question": "How old must a vehicle generally be to qualify for the 'historic vehicle' exemption from the ULEZ?",
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "explanation": "Historic vehicles built more than 40 years ago are generally eligible for the 'historic vehicle' tax class and are ULEZ exempt.",
+      "id": "u-mc-0048"
+    },
+    {
+      "explanation": "If you do not pay the PCN within the 28-day window, the fine increases to £270 via a Charge Certificate.",
+      "type": "multiple_choice",
+      "options": [
+        "£180",
+        "£270",
+        "£500",
+        "£1,000"
+      ],
+      "question": "If a ULEZ Penalty Charge Notice (PCN) is not paid within 28 days, what does the fine increase to?",
+      "correctAnswer": 1,
+      "id": "u-mc-0049"
+    },
+    {
+      "correctAnswer": 2,
+      "options": [
+        "Euro 1",
+        "Euro 2",
+        "Euro 3",
+        "Euro 6"
+      ],
+      "question": "What is the minimum Euro emission standard for a motorcycle or moped to be ULEZ compliant?",
+      "explanation": "Euro 3 is the standard for most motorcycles, which usually applies to those registered with the DVLA after July 2003.",
+      "type": "multiple_choice",
+      "id": "u-mc-0050"
+    },
+    {
+      "correctAnswer": 0,
+      "options": [
+        "It automatically bills the driver for any ULEZ or Congestion Charges incurred.",
+        "It provides a 50% discount on all daily charges.",
+        "It makes non-compliant vehicles exempt from the charge.",
+        "It allows drivers to pay only once per week regardless of usage."
+      ],
+      "question": "What is the benefit of signing up for 'Auto Pay' with Transport for London (TfL)?",
+      "explanation": "Auto Pay automatically bills drivers for the days they enter the zone, removing the risk of forgetting to pay and getting a fine.",
+      "type": "multiple_choice",
+      "id": "u-mc-0051"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "While some light vans are covered by ULEZ, heavy vehicles over 3.5 tonnes (HGVs) are covered by the Low Emission Zone (LEZ) standards.",
+      "options": [
+        "Motorcycles",
+        "Standard Saloon Cars",
+        "Horseboxes under 3.5 tonnes",
+        "Heavy Goods Vehicles (HGVs) over 3.5 tonnes"
+      ],
+      "question": "Which of the following vehicles is typically subject to the LEZ (Low Emission Zone) standards rather than the ULEZ?",
+      "correctAnswer": 3,
+      "id": "u-mc-0052"
+    },
+    {
+      "question": "Until when is the current 'grace period' for London-licensed wheelchair accessible private hire vehicles?",
+      "options": [
+        "January 2025",
+        "October 2027",
+        "December 2030Array",
+        "June 2024"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Vehicles with a disabled taxation class or those specifically adapted for wheelchair users may be eligible for a grace period until 2027.",
+      "type": "multiple_choice",
+      "id": "u-mc-0053"
+    },
+    {
+      "correctAnswer": 2,
+      "question": "What is the main purpose of the Mayor of London’s Scrappage Scheme?",
+      "options": [
+        "To provide free petrol to Londoners.",
+        "To repair older engines so they become compliant.",
+        "To provide financial assistance for replacing non-compliant vehicles.",
+        "To build more cycle lanes in Central London."
+      ],
+      "explanation": "The scrappage scheme was introduced to help residents and small businesses replace non-compliant vehicles with cleaner alternatives.",
+      "type": "multiple_choice",
+      "id": "u-mc-0054"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "Euro 4 became mandatory for all new cars in January 2006, though some compliant cars were available earlier.",
+      "correctAnswer": 0,
+      "options": [
+        "January 2006",
+        "January 2010Array",
+        "September 2015Array",
+        "September 2001Array],question:"
+      ],
+      "question": "In which year did the Euro 4 standard for petrol cars become mandatory for all new car registrations?",
+      "id": "u-mc-0055"
+    },
+    {
+      "options": [
+        "The vehicle is over 40 years old.",
+        "The vehicle is used for commercial purposes (e.g. as a catering van).",
+        "The vehicle is registered in the 'historic' tax class.",
+        "The vehicle was built before 1973."
+      ],
+      "question": "A vehicle might be exempt as a 'historic vehicle' UNLESS which of the following is true?",
+      "correctAnswer": 1,
+      "explanation": "Classic vehicles used for purely commercial purposes (such as food trucks) are not eligible for the historic vehicle exemption.",
+      "type": "multiple_choice",
+      "id": "u-mc-0056"
+    },
+    {
+      "question": "If you forget to pay the ULEZ charge on the day you travel, how much longer do you have to pay it before a fine is issued?",
+      "options": [
+        "On the same day only",
+        "Up to three days after the journey",
+        "At the end of the calendar month",
+        "Up to 14 days after the journey"
+      ],
+      "type": "multiple_choice",
+      "explanation": "Drivers can pay the ULEZ charge up to three days after their journey, or in advance up to 90 days before.",
+      "correctAnswer": 1,
+      "id": "u-mc-0057"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "The ULEZ operates 24 hours a day, 7 days a week, every day of the year except for Christmas Day (25 December).",
+      "question": "The ULEZ operates every day of the year except for which single day?",
+      "options": [
+        "New Year's Day",
+        "Easter Sunday",
+        "Christmas Day",
+        "Bank Holiday Mondays"
+      ],
+      "correctAnswer": 2,
+      "id": "u-mc-0058"
+    },
+    {
+      "correctAnswer": 0,
+      "options": [
+        "Specialist agricultural vehicles (e.g. tractors)",
+        "Courier delivery vans (Euro 5 diesel)",
+        "Private horseboxes over 3.5 tonnes",
+        "Standard petrol cars built in 2003"
+      ],
+      "question": "Which of the following vehicle types is specifically listed as exempt from the ULEZ?",
+      "explanation": "While most vans must meet Euro 6 diesel or Euro 4 petrol standards, specialist agricultural vehicles like tractors are generally exempt.",
+      "type": "multiple_choice",
+      "id": "u-mc-0059"
+    },
+    {
+      "explanation": "To meet ULEZ standards without paying the daily charge, diesel cars must generally meet the Euro 6 standard.",
+      "type": "multiple_choice",
+      "options": [
+        "Euro 3",
+        "Euro 4",
+        "Euro 5",
+        "Euro 6"
+      ],
+      "question": "What is the minimum Euro emission standard for a diesel car to be ULEZ compliant?",
+      "correctAnswer": 3,
+      "id": "u-mc-0060"
+    },
+    {
+      "correctAnswer": 1,
+      "explanation": "The daily ULEZ charge for motorbikes, cars, and small vans that do not meet the emissions standards is £12.50.",
+      "type": "multiple_choice",
+      "options": [
+        "£8.50",
+        "£12.50",
+        "£15.00",
+        "£17.50"
+      ],
+      "question": "What is the standard daily charge for a non-compliant car or motorcycle to enter the ULEZ?",
+      "id": "u-mc-0061"
+    },
+    {
+      "explanation": "TfL uses a network of ANPR (Automatic Number Plate Recognition) cameras to monitor vehicles entering and driving within the zone.",
+      "type": "multiple_choice",
+      "options": [
+        "Automatic Number Plate Recognition (ANPR) cameras",
+        "Windscreen stickers (vignettes)",
+        "Mandatory GPS trackers in all vehicles",
+        "Physical toll booths at entry points"
+      ],
+      "question": "How does Transport for London (TfL) primarily monitor which vehicles enter the Ultra Low Emission Zone?",
+      "correctAnswer": 0,
+      "id": "u-mc-0062"
+    },
+    {
+      "question": "Which specific pollutant's emission levels are the primary focus of the ULEZ standards?",
+      "options": [
+        "Carbon Monoxide (CO)",
+        "Sulphur Dioxide (SO2)",
+        "Nitrogen Oxides (NOx)",
+        "Methane (CH4)"
+      ],
+      "type": "multiple_choice",
+      "explanation": "NOx is the primary pollutant targeted by ULEZ standards because it contributes significantly to poor air quality in London.",
+      "correctAnswer": 2,
+      "id": "u-mc-0063"
+    },
+    {
+      "correctAnswer": 2,
+      "explanation": "The ULEZ was first introduced on 8 April 2019, initially covering only the same central London area as the Congestion Charge.",
+      "type": "multiple_choice",
+      "question": "In which year was the Ultra Low Emission Zone (ULEZ) first launched in Central London?",
+      "options": [
+        "2017",
+        "2018",
+        "2019",
+        "2021"
+      ],
+      "id": "u-mc-0064"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "If you pay your Penalty Charge Notice (PCN) within 14 days, the standard cost is reduced by 50% from £180 to £90.",
+      "options": [
+        "£60",
+        "£90",
+        "£100",
+        "£120"
+      ],
+      "question": "If you receive a ULEZ Penalty Charge Notice (PCN), by what amount is the fine reduced if paid within 14 days?",
+      "correctAnswer": 1,
+      "id": "u-mc-0065"
+    },
+    {
+      "options": [
+        "They are all exempt because they have batteries",
+        "They must be Plug-in Hybrids (PHEV) only",
+        "They must have an electric-only range of 50 miles",
+        "They must meet the same Euro standards as standard petrol or diesel engines"
+      ],
+      "question": "What is the rule regarding hybrid cars and the ULEZ charge?",
+      "explanation": "While most hybrids are compliant, they must specifically meet Euro 4 (petrol) or Euro 6 (diesel) standards to avoid the charge.",
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "id": "u-mc-0066"
+    },
+    {
+      "explanation": "The LEZ focuses on heavy diesel vehicles like lorries and buses across most of Greater London, whereas the ULEZ applies to almost all vehicle types.",
+      "type": "multiple_choice",
+      "question": "The Low Emission Zone (LEZ) is a separate scheme that primarily targets which type of vehicles?",
+      "options": [
+        "Heavy diesel vehicles like lorries and coaches",
+        "Electric cars registered before 2020",
+        "Private petrol cars built after 2006",
+        "Motorcycles under 125cc"
+      ],
+      "correctAnswer": 0,
+      "id": "u-mc-0067"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "NHS patients who are clinically assessed as too ill to travel by public transport may be able to claim a refund on their ULEZ charge.",
+      "options": [
+        "Commuters earning under £20,000 a year",
+        "NHS patients attending a hospital appointment",
+        "Parents driving children to school inside the zone",
+        "Residents who have lived in the zone for over 20 years"
+      ],
+      "question": "Which group of people may be eligible for a reimbursement of the ULEZ charge for certain journeys?",
+      "correctAnswer": 1,
+      "id": "u-mc-0068"
+    },
+    {
+      "question": "As of which month and year did the ULEZ expand to cover all London boroughs?",
+      "options": [
+        "October 2021",
+        "August 2023",
+        "January 2024",
+        "April 2019"
+      ],
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "explanation": "The Greater London Authority expanded the ULEZ to include all 32 London boroughs, plus the City of London, on 29 August 2023.",
+      "id": "u-mc-0069"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "While most petrol cars from 2006 onwards are compliant, the Euro 4 standard became mandatory for all new petrol cars in January 2006.",
+      "options": [
+        "Euro 4",
+        "Euro 6",
+        "Euro 5",
+        "Euro 3"
+      ],
+      "correctAnswer": 0,
+      "question": "What is the minimum Euro emission standard for a petrol car to avoid the ULEZ daily charge?",
+      "id": "u-mc-0070"
+    },
+    {
+      "correctAnswer": 3,
+      "options": [
+        "January 2012",
+        "April 2014",
+        "September 2010",
+        "September 2015"
+      ],
+      "question": "From which year were most new diesel cars manufactured to meet the Euro 6 standard required for ULEZ compliance?",
+      "explanation": "Most Euro 6 diesel engines were produced after September 2015, making them generally compliant with the ULEZ.",
+      "type": "multiple_choice",
+      "id": "u-mc-0071"
+    },
+    {
+      "explanation": "TfL's 'Auto Pay' system carries a £10 annual registration fee per vehicle to link your vehicle to a payment method.",
+      "type": "multiple_choice",
+      "question": "What is the annual registration fee per vehicle to sign up for TfL Auto Pay?",
+      "correctAnswer": 2,
+      "options": [
+        "It is completely free to register",
+        "£5 per year",
+        "£10 per year",
+        "£20 per year"
+      ],
+      "id": "u-mc-0072"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "The daily ULEZ charge runs from midnight to midnight. If you drive across both days, you must pay two daily charges.",
+      "question": "What is the specific time window for a single daily ULEZ charge?",
+      "options": [
+        "Midnight to midnight",
+        "6:00 AM to 6:00 PM",
+        "7:00 AM to 10:00 PM",
+        "Midnight to 6:00 AM the following morning"
+      ],
+      "correctAnswer": 0,
+      "id": "u-mc-0073"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "Specialist agricultural vehicles are typically exempt from the ULEZ, whereas standard delivery vans must meet Euro 6 diesel or Euro 4 petrol standards.",
+      "question": "Which of the following vehicle categories is generally exempt from the ULEZ charge?",
+      "options": [
+        "Private hire vehicles (PHVs)",
+        "Courier vans under 3.5 tonnes",
+        "Specialist agricultural vehicles",
+        "Fleet cars owned by small businesses"
+      ],
+      "correctAnswer": 2,
+      "id": "u-mc-0074"
+    },
+    {
+      "options": [
+        "90% discount",
+        "No resident discount exists",
+        "50% discount",
+        "100% discount for the first year"
+      ],
+      "correctAnswer": 1,
+      "question": "What discount are residents who live within the ULEZ zone eligible for if they drive a non-compliant vehicle?",
+      "type": "multiple_choice",
+      "explanation": "Residents living within the ULEZ do not get a discount; if their vehicle is non-compliant, they must pay the full charge or replace the vehicle.",
+      "id": "u-mc-0075"
+    },
+    {
+      "options": [
+        "Any patient with an appointment",
+        "Patients assessed as too ill to use public transport",
+        "Patients who live more than 10 miles from the hospital",
+        "Elderly patients over the age of 70 only"
+      ],
+      "correctAnswer": 1,
+      "question": "Under what specific condition can NHS patients claim a reimbursement for the ULEZ charge?",
+      "type": "multiple_choice",
+      "explanation": "NHS patients who are clinically assessed as too ill to travel by public transport may be able to claim back the ULEZ charge for hospital appointments.",
+      "id": "u-mc-0076"
+    },
+    {
+      "options": [
+        "December 2024",
+        "October 2025",
+        "August 2026",
+        "October 2027"
+      ],
+      "correctAnswer": 3,
+      "question": "Until which year is the 'grace period' for London-licensed vehicles with a 'disabled' tax class currently set to last?",
+      "type": "multiple_choice",
+      "explanation": "Vehicles in the 'disabled' or 'disabled passenger vehicle' tax class have a grace period (exemption) until 24 October 2027.",
+      "id": "u-mc-0077"
+    },
+    {
+      "options": [
+        "Euro 4",
+        "Euro 6",
+        "Euro 5",
+        "Euro 3"
+      ],
+      "correctAnswer": 0,
+      "question": "What is the minimum Euro emission standard for a small petrol van (not exceeding 1.205 tonnes unladen) to be ULEZ compliant?",
+      "type": "multiple_choice",
+      "explanation": "Modern petrol vans must meet the Euro 4 standard to be compliant, similar to petrol cars.",
+      "id": "u-mc-0078"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "The ULEZ covers all 32 London boroughs but does not extend past the Greater London boundary into the home counties.",
+      "question": "Which geographic area is currently covered by the Ultra Low Emission Zone?",
+      "options": [
+        "Up to the M25 motorway boundary",
+        "Only the area between the North and South Circular roads",
+        "The entire Greater London area including all 32 boroughs",
+        "The Congestion Charge zone only"
+      ],
+      "correctAnswer": 2,
+      "id": "u-mc-0079"
+    },
+    {
+      "explanation": "The ULEZ charge is a separate daily fee that must be paid in addition to the Congestion Charge if you drive a non-compliant vehicle in Central London.",
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "options": [
+        "The ULEZ charge replaces the Congestion Charge",
+        "You must pay both if your vehicle is non-compliant",
+        "Paying the ULEZ charge gives you a 50% discount on the Congestion Charge",
+        "The ULEZ charge is included in the Congestion Charge fee"
+      ],
+      "question": "How does the ULEZ charge interact with the Congestion Charge if you drive in Central London?",
+      "id": "u-mc-0080"
     }
   ],
   "mocks": []

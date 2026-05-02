@@ -107,6 +107,942 @@
       "explanation": "Plate cloning is a serious criminal offence.",
       "type": "multiple_choice",
       "id": "cc-mc-0008"
+    },
+    {
+      "correctAnswer": 1,
+      "explanation": "Blue Badge holders can receive a 100% discount on the Congestion Charge after registering with Transport for London and paying a small administration fee.",
+      "question": "What discount are Blue Badge holders eligible for regarding the Congestion Charge?",
+      "options": [
+        "A 50% reduction in the daily fee",
+        "A 100% discount after successful registration",
+        "Free entry only on weekends",
+        "Priority access to parking but full charge payment"
+      ],
+      "type": "multiple_choice",
+      "id": "cc-mc-0009"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "12:00 (midday) to 18:00",
+        "07:00 to 22:00",
+        "09:00 to 17:00",
+        "Operates 24 hours a day"
+      ],
+      "question": "What are the operating hours for the Congestion Charge on Saturdays, Sundays, and Bank Holidays?",
+      "explanation": "The Congestion Charge is currently in operation from 07:00 to 18:00 on weekdays and 12:00 to 18:00 on weekends and bank holidays.",
+      "correctAnswer": 0,
+      "id": "cc-mc-0010"
+    },
+    {
+      "explanation": "To qualify for the Cleaner Vehicle Discount, vehicles must generally be battery electric or hydrogen fuel cell powered.",
+      "correctAnswer": 2,
+      "question": "Which type of vehicle is currently eligible for the 'Cleaner Vehicle Discount'?",
+      "type": "multiple_choice",
+      "options": [
+        "Any hybrid vehicle purchased after 2021",
+        "Diesel vehicles that meet Euro 6 standards",
+        "Battery electric or hydrogen fuel cell vehicles",
+        "Small petrol cars with engines under 1.0 litre"
+      ],
+      "id": "cc-mc-0011"
+    },
+    {
+      "question": "How long do you have to pay the Congestion Charge after driving into the zone before a Penalty Charge Notice is issued?",
+      "type": "multiple_choice",
+      "options": [
+        "24 hours after travel",
+        "Midnight on the third day after travel",
+        "Seven working days after travel",
+        "The end of the calendar month"
+      ],
+      "explanation": "Drivers have until midnight on the third day after travel to pay the charge, though the cost is higher than paying in advance or on the day of travel.",
+      "correctAnswer": 1,
+      "id": "cc-mc-0012"
+    },
+    {
+      "options": [
+        "Easter Sunday",
+        "The August Bank Holiday",
+        "Every Sunday morning",
+        "Christmas Day to New Year's Day bank holiday inclusive"
+      ],
+      "type": "multiple_choice",
+      "question": "During which annual period is the Congestion Charge suspended?",
+      "correctAnswer": 3,
+      "explanation": "There is no charge specifically for the Congestion Charge between Christmas Day and New Year's Day bank holiday (inclusive).",
+      "id": "cc-mc-0013"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "50% discount",
+        "75% discount",
+        "90% discount",
+        "100% discount"
+      ],
+      "question": "How much of a discount do registered residents living within the Congestion Charge zone receive?",
+      "explanation": "Residents who live within the zone and are registered with TfL receive a 90% discount to help them use their vehicles near their homes.",
+      "correctAnswer": 2,
+      "id": "cc-mc-0014"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Automatic Number Plate Recognition (ANPR) cameras",
+        "Physical toll booths with barriers",
+        "GPS tracking devices required in every car",
+        "Traffic Wardens manually recording plates at every junction"
+      ],
+      "question": "What technology is primarily used to identify vehicles that enter the Congestion Charge zone?",
+      "explanation": "The Congestion Charge is enforced using a network of Automatic Number Plate Recognition (ANPR) cameras that record vehicle registrations entering and exiting the zone.",
+      "correctAnswer": 0,
+      "id": "cc-mc-0015"
+    },
+    {
+      "explanation": "If you pay a Penalty Charge Notice (PCN) within 14 days of the date of service, the fine is reduced by 50%.",
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "options": [
+        "It stays the same for 30 days",
+        "It is reduced by 25%",
+        "It is reduced by 50%",
+        "It is waived for first-time offenders"
+      ],
+      "question": "What happens to the cost of a Congestion Charge Penalty Charge Notice (PCN) if it is paid within 14 days?",
+      "id": "cc-mc-0016"
+    },
+    {
+      "explanation": "Roadside signs for the Congestion Charge are marked with a white letter 'C' inside a red circle.",
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "options": [
+        "A green 'E' in a black square",
+        "A white 'C' in a red circle",
+        "A blue 'P' with a pound sign",
+        "A yellow triangle with a car symbol"
+      ],
+      "question": "Which symbol is displayed on road signs to indicate you are entering the Congestion Charge zone?",
+      "id": "cc-mc-0017"
+    },
+    {
+      "explanation": "Two-wheeled motorcycles, mopeds, and bicycles are exempt from the Congestion Charge.",
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "options": [
+        "All delivery vans",
+        "All-wheel drive SUVs",
+        "Vintage cars over 20 years old",
+        "Two-wheeled motorcycles and mopeds"
+      ],
+      "question": "Which of these vehicle types is exempt from the Congestion Charge?",
+      "id": "cc-mc-0018"
+    },
+    {
+      "explanation": "The Congestion Charge applies to the central London area, which includes the City of London and the West End.",
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "options": [
+        "The City of London and the West End",
+        "Everything inside the M25 motorway",
+        "The area including Heathrow and Gatwick airports",
+        "Only the South Bank and Greenwich"
+      ],
+      "question": "Which specific areas of London are covered by the Congestion Charge zone?",
+      "id": "cc-mc-0019"
+    },
+    {
+      "question": "What is a requirement for maintaining a Congestion Charge Auto Pay account?",
+      "type": "multiple_choice",
+      "options": [
+        "It is completely free to register",
+        "An annual administrative fee per vehicle",
+        "A one-off lifetime payment of £100",
+        "A monthly subscription fee of £5"
+      ],
+      "explanation": "Congestion Charge Auto Pay accounts are subject to an annual registration fee for each vehicle added to the account.",
+      "correctAnswer": 1,
+      "id": "cc-mc-0020"
+    },
+    {
+      "explanation": "The Congestion Charge applies from 07:00 to 18:00 on weekdays, and from 12:00 to 18:00 on weekends and bank holidays.",
+      "options": [
+        "06:00 to 19:00",
+        "07:00 to 18:00",
+        "08:00 to 20:00",
+        "09:30 to 17:30"
+      ],
+      "type": "multiple_choice",
+      "question": "On a typical Monday, between what hours is the Congestion Charge active?",
+      "correctAnswer": 1,
+      "id": "cc-mc-0021"
+    },
+    {
+      "explanation": "If you do not pay by midnight on the third day after travel, you will be issued a Penalty Charge Notice (PCN).",
+      "options": [
+        "By midnight on the day of travel",
+        "By midnight the following day",
+        "By midnight on the third day after travel",
+        "Within 28 days of travel"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "question": "What is the final deadline to pay the Congestion Charge online after driving into the zone?",
+      "id": "cc-mc-0022"
+    },
+    {
+      "options": [
+        "They are eligible for a 100% discount if registered with TfL",
+        "They are automatically exempt with no registration required",
+        "They must pay the full daily charge regardless of their work",
+        "They only pay on weekends and bank holidays"
+      ],
+      "explanation": "Accredited breakdown recovery vehicles must be registered with TfL to be eligible for a 100% discount.",
+      "question": "How are accredited breakdown recovery vehicles treated regarding the Congestion Charge?",
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "id": "cc-mc-0023"
+    },
+    {
+      "correctAnswer": 3,
+      "question": "How much is the annual registration fee for the Residents' Congestion Charge discount?",
+      "type": "multiple_choice",
+      "options": [
+        "£100.00",
+        "Free of charge",
+        "£25.00",
+        "£10.00"
+      ],
+      "explanation": "The Re-registration fee is an annual administrative cost for residents to maintain their 90% discount eligibility.",
+      "id": "cc-mc-0024"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "question": "Which of the following vehicle types is exempt from paying the Congestion Charge?",
+      "explanation": "The Congestion Charge applies to most vehicles; however, motorcycles and mopeds are currently exempt from the charge.",
+      "options": [
+        "Motorcycles and mopeds",
+        "All diesel-engine cars",
+        "Any vehicle with only one passenger",
+        "Vehicles less than 3 years old"
+      ],
+      "id": "cc-mc-0025"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is the minimum number of seats required for a vehicle to be eligible for the 'Bus Discount'?",
+      "correctAnswer": 2,
+      "explanation": "Vehicles with 9 or more seats that are registered with TfL are eligible for a 100% discount.",
+      "options": [
+        "Vehicles with 5 or more seats",
+        "Vehicles with 7 or more seats village",
+        "Vehicles with 9 or more seats",
+        "Vehicles with 12 or more seats"
+      ],
+      "id": "cc-mc-0026"
+    },
+    {
+      "question": "If you drive into the Congestion Charge zone for only five minutes during active hours, how much must you pay?",
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "options": [
+        "You only pay half the charge",
+        "You must pay the full daily charge",
+        "Short trips are free of charge",
+        "You are charged per mile driven"
+      ],
+      "explanation": "Even if you only drive for a few minutes or a very short distance within the zone during active hours, you must pay the full daily charge.",
+      "id": "cc-mc-0027"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "question": "Who may be eligible for a reimbursement of the Congestion Charge under the NHS patient scheme?",
+      "explanation": "The NHS patient reimbursement scheme allows vulnerable patients to claim back the charge if they are clinically assessed as unable to use public transport.",
+      "options": [
+        "Staff members who drive to work",
+        "Anyone visiting a patient in a hospital",
+        "Patients who are late for their appointments",
+        "Patients assessed as too ill to travel by public transport"
+      ],
+      "id": "cc-mc-0028"
+    },
+    {
+      "question": "How many vehicles can a Blue Badge holder register for their Congestion Charge discount?",
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "options": [
+        "One vehicle only",
+        "Up to two vehicles",
+        "Up to five vehicles",
+        "Any vehicle they happen to be in that day"
+      ],
+      "explanation": "Blue Badge holders can register up to two vehicles that they normally use to travel in the zone for a 100% discount.",
+      "id": "cc-mc-0029"
+    },
+    {
+      "correctAnswer": 0,
+      "question": "What is the primary stated aim of the London Congestion Charge?",
+      "type": "multiple_choice",
+      "options": [
+        "To reduce traffic and congestion",
+        "To replace the UK road tax",
+        "To pay for new motorway construction outside London",
+        "To encourage people to buy more diesel cars"
+      ],
+      "explanation": "The primary purpose of the Congestion Charge is to reduce traffic and congestion in the busiest parts of London.",
+      "id": "cc-mc-0030"
+    },
+    {
+      "correctAnswer": 2,
+      "question": "How are London Fire Brigade vehicles handled regarding the Congestion Charge?",
+      "type": "multiple_choice",
+      "options": [
+        "They pay a flat annual fee of £500",
+        "They pay the same as private cars",
+        "They are eligible for a 100% discount",
+        "They only pay when using sirens"
+      ],
+      "explanation": "Emergency service vehicles, such as those used by the London Fire Brigade, are eligible for a 100% discount.",
+      "id": "cc-mc-0031"
+    },
+    {
+      "explanation": "If you fail to pay a PCN and an Order for Recovery is served, the debt is registered at the Traffic Enforcement Centre, adding a registration fee.",
+      "options": [
+        "The High Court",
+        "The local Magistrates' Court",
+        "The Driver and Vehicle Licensing Agency (DVLA)",
+        "The Traffic Enforcement Centre (TEC)"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "question": "Where are unpaid Congestion Charge Penalty Charge Notices registered if they remain unpaid after a Charge Certificate?",
+      "id": "cc-mc-0032"
+    },
+    {
+      "correctAnswer": 2,
+      "explanation": "The daily Congestion Charge is currently £15.00 if you pay in advance or on the same day as your journey.",
+      "type": "multiple_choice",
+      "question": "What is the standard daily fee for the Congestion Charge if paid on the day of travel?",
+      "options": [
+        "£8.00",
+        "£12.50",
+        "£15.00",
+        "£17.50"
+      ],
+      "id": "cc-mc-0033"
+    },
+    {
+      "options": [
+        "100% discount",
+        "90% discount",
+        "50% discount",
+        "75% discount"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Blue Badge holders are eligible for a 100% discount after paying a one-off £10 registration fee.",
+      "type": "multiple_choice",
+      "question": "What percentage discount are Blue Badge holders eligible for when registered with TfL?",
+      "id": "cc-mc-0034"
+    },
+    {
+      "question": "What are the active hours for the Congestion Charge on a UK bank holiday?",
+      "explanation": "The Congestion Charge applies 12:00-18:00 on bank holidays and the period between Christmas and New Year.",
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "options": [
+        "The charge is suspended entirely",
+        "07:00 - 18:00",
+        "10:00 - 20:00",
+        "12:00 - 18:00"
+      ],
+      "id": "cc-mc-0035"
+    },
+    {
+      "options": [
+        "Hybrid petrol/electric vehicles",
+        "Fully electric or hydrogen fuel cell vehicles",
+        "Euro 6 diesel vehicles",
+        "Motorcycles over 125cc"
+      ],
+      "question": "Which type of vehicle currently qualifies for the 'Cleaner Vehicle Discount' (100% discount)?",
+      "correctAnswer": 1,
+      "explanation": "Since 2021, only battery electric or hydrogen fuel cell vehicles qualify for the Cleaner Vehicle Discount.",
+      "type": "multiple_choice",
+      "id": "cc-mc-0036"
+    },
+    {
+      "options": [
+        "£1.00 reduction per day",
+        "15% discount for each trip",
+        "There is no longer a discount for using Auto Pay",
+        "£2.00 reduction per day"
+      ],
+      "question": "How much of a discount do customers receive on the daily fee if they use Congestion Charge Auto Pay?",
+      "type": "multiple_choice",
+      "explanation": "Auto Pay users receive no monetary discount on the £15 daily fee, but it prevents them from receiving fines.",
+      "correctAnswer": 2,
+      "id": "cc-mc-0037"
+    },
+    {
+      "correctAnswer": 1,
+      "explanation": "If you do not pay by midnight on the third day after travel, you will be issued a Penalty Charge Notice (PCN).",
+      "type": "multiple_choice",
+      "question": "What is the standard cost of a Congestion Charge Penalty Charge Notice (PCN) before any discounts are applied?",
+      "options": [
+        "£130",
+        "£160",
+        "£80",
+        "£200"
+      ],
+      "id": "cc-mc-0038"
+    },
+    {
+      "correctAnswer": 3,
+      "explanation": "Eligible residents must have their vehicle registered at their home address within the zone to receive the discount.",
+      "type": "multiple_choice",
+      "question": "Which of these is a requirement for a resident to be eligible for the 90% discount?",
+      "options": [
+        "Having a London postcode (e.g., N, E, SE, SW, W, NW)",
+        "Owning a business in the zone",
+        "Working in the zone for more than 30 hours a week",
+        "Living at a residential address within the zone or a buffer zone"
+      ],
+      "id": "cc-mc-0039"
+    },
+    {
+      "question": "Which of these vehicles is automatically exempt from the charge and does not require registration?",
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "explanation": "Motorcycles, mopeds, and bicycles are exempt from the Congestion Charge and do not need to register.",
+      "options": [
+        "Two-wheeled motorcycles and mopeds",
+        "Vehicles with a 1.0L engine or smaller",
+        "Estate cars with 7 seats",
+        "Classic cars over 25 years old"
+      ],
+      "id": "cc-mc-0040"
+    },
+    {
+      "options": [
+        "7 days",
+        "30 days",
+        "90 days",
+        "1 year"
+      ],
+      "explanation": "Drivers can pay up to 90 days in advance of their journey into the Congestion Charge zone.",
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "question": "How far in advance can you pay the Congestion Charge?",
+      "id": "cc-mc-0041"
+    },
+    {
+      "question": "How many vehicles must a business have to register for a 'Fleet Auto Pay' account?",
+      "correctAnswer": 1,
+      "explanation": "The 'Fleet Auto Pay' system allows businesses with 5 or more vehicles to manage charges automatically.",
+      "type": "multiple_choice",
+      "options": [
+        "3 or more vehicles",
+        "5 or more vehicles",
+        "10 or more vehicles",
+        "25 or more vehicles"
+      ],
+      "id": "cc-mc-0042"
+    },
+    {
+      "explanation": "Since 2021, private hire vehicles (minicabs) must pay the charge unless they are designated wheelchair accessible.",
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "question": "How does the Congestion Charge apply to Private Hire Vehicles (like minicabs)?",
+      "options": [
+        "They are all exempt from the charge",
+        "Only those with a 'Green' license plate are exempt",
+        "Only black cabs are charged; minicabs are free",
+        "They must pay the charge unless they are wheelchair accessible"
+      ],
+      "id": "cc-mc-0043"
+    },
+    {
+      "options": [
+        "07:00 - 18:00",
+        "08:00 - 19:00",
+        "07:00 - 22:00",
+        "06:00 - 20:00"
+      ],
+      "question": "What are the active hours for the Congestion Charge on a standard Wednesday?",
+      "type": "multiple_choice",
+      "explanation": "The Congestion Charge is active from 07:00 to 18:00 on Mondays through Fridays.",
+      "correctAnswer": 0,
+      "id": "cc-mc-0044"
+    },
+    {
+      "options": [
+        "The same day only",
+        "The next day by midnight",
+        "Within three days after travel",
+        "Within seven days after travel"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "explanation": "Drivers have until midnight on the third day following their journey to pay the charge, though the cost is higher than paying in advance or on the day.",
+      "question": "What is the deadline for paying the London Congestion Charge after you have driven into the zone?",
+      "id": "cc-mc-0045"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Christmas Day to New Year's Day inclusive",
+        "Christmas Day and Boxing Day only",
+        "Christmas Eve to Boxing Day only",
+        "There is no Christmas closure; it applies every day"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The Congestion Charge does not apply between Christmas Day and the New Year's Day bank holiday inclusive.",
+      "question": "During which period of the year is the Congestion Charge suspended for the holiday season?",
+      "id": "cc-mc-0046"
+    },
+    {
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "options": [
+        "The Congestion Charge zone is larger",
+        "The ULEZ is significantly larger",
+        "They cover the exact same area",
+        "The ULEZ only covers the City of London financial district"
+      ],
+      "question": "How does the size of the Congestion Charge zone compare to the Ultra Low Emission Zone (ULEZ)?",
+      "explanation": "The Congestion Charge zone covers the primary central London area, whereas the ULEZ is significantly larger, extending to the North and South Circular roads.",
+      "id": "cc-mc-0047"
+    },
+    {
+      "question": "What is the annual registration fee for a Blue Badge holder to maintain their 100% discount?",
+      "explanation": "There is a non-refundable £10 annual registration fee per vehicle for Blue Badge holders to receive the 100% discount.",
+      "correctAnswer": 3,
+      "options": [
+        "Free of charge",
+        "£1.50 annual fee",
+        "£5.00 annual fee",
+        "£10.00 annual fee"
+      ],
+      "type": "multiple_choice",
+      "id": "cc-mc-0048"
+    },
+    {
+      "explanation": "Vehicles with more than 8 seats (9 or more including the driver) can register for the 100% discount, provided they meet specific criteria.",
+      "question": "To qualify for the '9 or more seats' discount, what is the minimum number of seats a vehicle must have including the driver?",
+      "type": "multiple_choice",
+      "options": [
+        "9 or more seats",
+        "6 or more seats",
+        "12 or more seats",
+        "20 or more seats"
+      ],
+      "correctAnswer": 0,
+      "id": "cc-mc-0049"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "7 days",
+        "10 days",
+        "14 days",
+        "21 days"
+      ],
+      "correctAnswer": 2,
+      "explanation": "If you pay a Penalty Charge Notice (PCN) within 14 days of the date of service, the amount is reduced by 50%.",
+      "question": "How many days do you have to pay a Penalty Charge Notice (PCN) at the discounted rate?",
+      "id": "cc-mc-0050"
+    },
+    {
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "options": [
+        "Physical toll booths",
+        "GPS tracking in all cars",
+        "Radio Frequency ID (RFID) stickers",
+        "Automatic Number Plate Recognition (ANPR) cameras"
+      ],
+      "question": "Which technology is primarily used to monitor vehicles entering the Congestion Charge zone?",
+      "explanation": "TfL uses a network of Automatic Number Plate Recognition (ANPR) cameras to record vehicle movements in and out of the zone.",
+      "id": "cc-mc-0051"
+    },
+    {
+      "question": "What are the charging hours for the Congestion Charge on a Sunday?",
+      "explanation": "On Saturdays, Sundays, and bank holidays, the Congestion Charge hours are reduced, operating from 12:00 to 18:00.",
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "options": [
+        "07:00 – 18:00",
+        "12:00 – 18:00",
+        "07:00 – 22:00",
+        "The charge does not apply on Sundays"
+      ],
+      "id": "cc-mc-0052"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Cars under 1.0L engine size",
+        "Electric scooters (private)",
+        "Motorbikes and mopeds",
+        "Hybrid SUVs"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Motorbikes, mopeds, and bicycles are exempt from the Congestion Charge and do not need to be registered for a discount.",
+      "question": "Which of these vehicle types is completely exempt from the Congestion Charge?",
+      "id": "cc-mc-0053"
+    },
+    {
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "options": [
+        "Unlimited entries for that day only",
+        "One entry and one exit only",
+        "Two entries and two exits only",
+        "A maximum of four hours total driving time"
+      ],
+      "question": "How many times can you enter and exit the Congestion Charge zone in a single day after paying the daily fee?",
+      "explanation": "Payments for the Congestion Charge are strictly per charging day. Once paid, you can enter and exit the zone as many times as needed on that specific day.",
+      "id": "cc-mc-0054"
+    },
+    {
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "options": [
+        "A yellow square with a black 'C'",
+        "A blue circle with a white 'C'",
+        "A green triangle with a black 'C'",
+        "A red circle with a white 'C'"
+      ],
+      "question": "What does the signage look like at the entry points of the Congestion Charge zone?",
+      "explanation": "Roadside signs marking the entry to the zone feature a distinctive white 'C' inside a red circle.",
+      "id": "cc-mc-0055"
+    },
+    {
+      "correctAnswer": 1,
+      "options": [
+        "All flat-bed trucks",
+        "Accredited breakdown recovery vehicles",
+        "Vehicles owned by residents of Greater London",
+        "Any car over 25 years old"
+      ],
+      "type": "multiple_choice",
+      "question": "Which of the following specialist vehicle types may qualify for a 100% Congestion Charge discount?",
+      "explanation": "Recovery vehicles may be eligible for a 100% discount, but only if they are being used for recovery purposes and are registered as such with the DVLA.",
+      "id": "cc-mc-0056"
+    },
+    {
+      "explanation": "The Congestion Charge is currently £15.00 per day if paid in advance or on the day of travel.",
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "question": "What is the current standard daily charge for driving within the Congestion Charge zone?",
+      "options": [
+        "£12.50",
+        "£15.00",
+        "£17.50",
+        "£20.00"
+      ],
+      "id": "cc-mc-0057"
+    },
+    {
+      "options": [
+        "£17.50",
+        "£21.50",
+        "£25.00",
+        "£30.00"
+      ],
+      "question": "If you do not pay by midnight on the third day after travel, what is the cost of the daily charge if paid on that final 'pay late' day?",
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "explanation": "If you miss the initial payment deadlines, you can still pay up to three days after the day of travel, but the fee increases to £17.50.",
+      "id": "cc-mc-0058"
+    },
+    {
+      "question": "Which of these vehicle categories is exempt from the Congestion Charge?",
+      "correctAnswer": 2,
+      "options": [
+        "Double-decker buses only",
+        "Any vehicle with a roof rack",
+        "Emergency service vehicles",
+        "Vehicles over 10 years old"
+      ],
+      "type": "multiple_choice",
+      "explanation": "Emergency vehicles such as police cars, ambulances, and fire engines are exempt from the Congestion Charge when on duty.",
+      "id": "cc-mc-0059"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "The Congestion Charge zone covers Central London, including areas like the City, Westminster, Marylebone, and parts of Lambeth and Southwark.",
+      "options": [
+        "Inside the M25 motorway",
+        "The entire Greater London area",
+        "Only the Square Mile in the City of London",
+        "Central London areas including Westminster and the City"
+      ],
+      "correctAnswer": 3,
+      "question": "In which specific part of London does the Congestion Charge operate?",
+      "id": "cc-mc-0060"
+    },
+    {
+      "explanation": "While the charge applies on weekends, it starts later at 12:00 (midday) and ends at 18:00.",
+      "type": "multiple_choice",
+      "question": "What are the operating hours for the Congestion Charge on Saturdays?",
+      "correctAnswer": 1,
+      "options": [
+        "07:00 to 22:00",
+        "12:00 to 18:00",
+        "08:00 to 20:00",
+        "24 hours a day"
+      ],
+      "id": "cc-mc-0061"
+    },
+    {
+      "options": [
+        "0% (Full price)",
+        "50% discount",
+        "90% discount",
+        "100% discount"
+      ],
+      "question": "What level of discount do registered Blue Badge holders receive for the Congestion Charge?",
+      "correctAnswer": 3,
+      "explanation": "Blue Badge holders are entitled to a 100% discount, but they must register their vehicle(s) with TfL and pay a small registration fee first.",
+      "type": "multiple_choice",
+      "id": "cc-mc-0062"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "The Cleaner Vehicle Discount is now only available to Battery Electric or Hydrogen Fuel Cell vehicles; hybrids are no longer eligible.",
+      "options": [
+        "Only Battery Electric or Hydrogen Fuel Cell vehicles",
+        "Any vehicle with CO2 emissions below 75g/km",
+        "All hybrid vehicles",
+        "Euro 6 diesel vehicles"
+      ],
+      "question": "Which type of vehicle currently qualifies for the 'Cleaner Vehicle Discount' (100% discount)?",
+      "correctAnswer": 0,
+      "id": "cc-mc-0063"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "The Congestion Charge applies to most vehicles, including motorbikes and mopeds that are not electric, though some specific exemptions apply via registration.",
+      "correctAnswer": 2,
+      "question": "How does the Congestion Charge apply to petrol-powered motorcycles?",
+      "options": [
+        "They are always free",
+        "They only pay on weekdays",
+        "They are subject to the charge unless they are electric",
+        "They pay 50% of the car rate"
+      ],
+      "id": "cc-mc-0064"
+    },
+    {
+      "correctAnswer": 1,
+      "question": "Which organization is responsible for issuing Penalty Charge Notices (PCNs) for the Congestion Charge?",
+      "options": [
+        "The DVLA (Driver and Vehicle Licensing Agency)",
+        "TfL (Transport for London)",
+        "The Metropolitan Police",
+        "The local borough council"
+      ],
+      "type": "multiple_choice",
+      "explanation": "TfL will send a PCN to the registered keeper if the vehicle is seen in the zone by cameras and no payment or discount is found.",
+      "id": "cc-mc-0065"
+    },
+    {
+      "explanation": "The Congestion Charge ends earlier on weekdays (18:00) compared to the ULEZ, which operates 24 hours a day.",
+      "type": "multiple_choice",
+      "options": [
+        "18:00 (6 PM)",
+        "20:00 (8 PM)",
+        "22:00 (10 PM)",
+        "Midnight"
+      ],
+      "correctAnswer": 0,
+      "question": "At what time does the Congestion Charge end on a standard Monday?",
+      "id": "cc-mc-0066"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "To be eligible for the 90% Residents' Discount, you must live within the Congestion Charge zone or a designated adjacent buffer area.",
+      "options": [
+        "Anyone living in a London Borough",
+        "Anyone with a London postcode (e.g., N, S, E, W)",
+        "Those living within the zone or specific buffer areas",
+        "Only those who work but do not live in the zone"
+      ],
+      "question": "Which residency criteria must you meet to apply for the Residents' Discount?",
+      "correctAnswer": 2,
+      "id": "cc-mc-0067"
+    },
+    {
+      "options": [
+        "The Congestion Charge replaces the ULEZ charge",
+        "If you pay ULEZ, the Congestion Charge is free",
+        "Payments are combined into a single £20 fee",
+        "You must pay both charges if your vehicle does not meet ULEZ standards"
+      ],
+      "question": "How does the Congestion Charge interact with the Ultra Low Emission Zone (ULEZ) charge?",
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "explanation": "The Congestion Charge is a separate scheme to ULEZ; if your vehicle is non-compliant and you drive in Central London, you must pay both.",
+      "id": "cc-mc-0068"
+    },
+    {
+      "explanation": "The Congestion Charge does not apply on Christmas Day (25 December) and the period through to New Year's Day bank holiday inclusive.",
+      "correctAnswer": 2,
+      "options": [
+        "Easter Sunday",
+        "Good Friday",
+        "Christmas Day",
+        "May Day Bank Holiday"
+      ],
+      "type": "multiple_choice",
+      "question": "On which of the following public holidays is the Congestion Charge officially suspended?",
+      "id": "cc-mc-0069"
+    },
+    {
+      "options": [
+        "10 seats",
+        "14 seats",
+        "18 seats",
+        "20 seats"
+      ],
+      "type": "multiple_choice",
+      "question": "What is the maximum number of passenger seats a vehicle can have to qualify for the '9 or more seats' discount?",
+      "explanation": "The '9 or more seats' discount is for vehicles with 9 to 14 seats; vehicles with 15 or more seats are considered buses and are automatically exempt.",
+      "correctAnswer": 1,
+      "id": "cc-mc-0070"
+    },
+    {
+      "question": "What is the main purpose of the 'Auto Pay' system for the Congestion Charge?",
+      "options": [
+        "To automatically bill the driver for days they enter the zone",
+        "To provide a 50% discount on every journey",
+        "To allow drivers to enter the zone for free on weekends",
+        "To notify the driver with a text message every time they cross a camera"
+      ],
+      "type": "multiple_choice",
+      "explanation": "The 'Auto Pay' system tracks your travel and bills you monthly, offering a more convenient way to ensure charges are paid on time.",
+      "correctAnswer": 0,
+      "id": "cc-mc-0071"
+    },
+    {
+      "question": "What is the percentage discount offered to registered residents living within the Congestion Charge zone?",
+      "type": "multiple_choice",
+      "options": [
+        "50% discount",
+        "75% discount",
+        "100% discount",
+        "90% discount"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Residents living within or very close to the zone can apply for a 90% discount on the daily charge to help with local travel.",
+      "id": "cc-mc-0072"
+    },
+    {
+      "correctAnswer": 1,
+      "explanation": "As of December 2021, the hours on weekdays are 07:00 to 18:00 to help manage traffic and improve air quality.",
+      "type": "multiple_choice",
+      "options": [
+        "06:00 to 18:30",
+        "07:00 to 18:00",
+        "08:00 to 20:00",
+        "07:00 to 22:00"
+      ],
+      "question": "What are the standard operating hours for the Congestion Charge on a Monday?",
+      "id": "cc-mc-0073"
+    },
+    {
+      "explanation": "Drivers have up to three days after the day of travel to pay the charge, though the price increases if not paid by midnight on the day of travel.",
+      "correctAnswer": 0,
+      "question": "What is the final deadline to pay the Congestion Charge after traveling through the zone to avoid a penalty?",
+      "options": [
+        "Midnight on the third day after travel",
+        "Midnight on the day of travel",
+        "7 days after the journey",
+        "28 days after the journey"
+      ],
+      "type": "multiple_choice",
+      "id": "cc-mc-0074"
+    },
+    {
+      "question": "Which of these specific transport types is eligible for a 100% discount after paying an annual registration fee?",
+      "type": "multiple_choice",
+      "options": [
+        "Delivery vans over 3.5 tonnes",
+        "Private hire vehicles (minicabs)",
+        "Accredited breakdown recovery vehicles",
+        "Electric vehicles registered before 2010"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Registered breakdown recovery vehicles used for towing or recovering other vehicles are eligible for a 100% discount.",
+      "id": "cc-mc-0075"
+    },
+    {
+      "options": [
+        "£80",
+        "£160",
+        "£200",
+        "£240"
+      ],
+      "type": "multiple_choice",
+      "question": "What is the maximum amount a Penalty Charge Notice (PCN) can rise to if it is not paid or challenged within 28 days?",
+      "explanation": "If you fail to pay the daily charge or the PCN within the 28-day period, the fine can increase to £240 via a Charge Certificate.",
+      "correctAnswer": 3,
+      "id": "cc-mc-0076"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Hybrid electric vehicles",
+        "Battery electric vehicles",
+        "Bio-fuel powered vehicles",
+        "Euro 6 diesel vehicles"
+      ],
+      "question": "Which type of vehicle propulsion currently meets the criteria for the 'Cleaner Vehicle Discount'?",
+      "correctAnswer": 1,
+      "explanation": "A vehicle must be a Battery Electric or Hydrogen Fuel Cell vehicle to qualify for the Cleaner Vehicle Discount.",
+      "id": "cc-mc-0077"
+    },
+    {
+      "correctAnswer": 0,
+      "explanation": "The 'Fleet Auto Pay' scheme is designed for businesses that operate six or more vehicles within the charging zone.",
+      "question": "What is the minimum number of vehicles required for a business to register for the 'Fleet Auto Pay' scheme?",
+      "type": "multiple_choice",
+      "options": [
+        "6 vehicles",
+        "10 vehicles",
+        "2 vehicles",
+        "25 vehicles"
+      ],
+      "id": "cc-mc-0078"
+    },
+    {
+      "options": [
+        "A blue square with a white 'C'",
+        "A red triangle with a black 'C'",
+        "A red circle with a white 'C'",
+        "A green circle with a white 'C'"
+      ],
+      "type": "multiple_choice",
+      "question": "What is the standard road sign symbol used to indicate the boundary of the Congestion Charge zone?",
+      "explanation": "The CC zone symbol is a white 'C' inside a red circle, usually displayed on road signs and painted on the road surface.",
+      "correctAnswer": 2,
+      "id": "cc-mc-0079"
+    },
+    {
+      "explanation": "General healthcare workers do not get a blanket discount, but an NHS reimbursement scheme exists for specific staff on official duties.",
+      "correctAnswer": 1,
+      "question": "Which of the following groups is NOT automatically eligible for a discount or exemption?",
+      "options": [
+        "Blue Badge holders",
+        "NHS employees on a standard commute",
+        "Residents living in the zone",
+        "Accredited breakdown recovery vehicles"
+      ],
+      "type": "multiple_choice",
+      "id": "cc-mc-0080"
     }
   ],
   "mocks": []
