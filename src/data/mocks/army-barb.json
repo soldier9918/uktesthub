@@ -1,0 +1,1257 @@
+{
+  "version": 2,
+  "topic": "army-barb",
+  "title": "Army BARB Test",
+  "category": "military-emergency",
+  "bank": [
+    {
+      "question": "Which letter comes next in the following sequence: R, S, T, U, ...?",
+      "correctAnswer": 1,
+      "options": [
+        "W",
+        "V",
+        "X",
+        "U"
+      ],
+      "explanation": "This is an alphabetical reasoning task. S follows R, T follows S, and U follows T. Therefore, V follows U.",
+      "type": "multiple_choice",
+      "id": "ab-mc-0001"
+    },
+    {
+      "options": [
+        "£57",
+        "£60",
+        "£62",
+        "£65"
+      ],
+      "explanation": "To find the total, add the costs together: 45 + 12 = 57. Then 57 + 5 = 62.",
+      "type": "multiple_choice",
+      "question": "A soldier buys a boots for £45, socks for £12, and a water bottle for £5. What is the total cost?",
+      "correctAnswer": 2,
+      "id": "ab-mc-0002"
+    },
+    {
+      "correctAnswer": 0,
+      "question": "If an arrow is pointing North and it is rotated 90 degrees clockwise, which direction is it now pointing?",
+      "type": "multiple_choice",
+      "options": [
+        "East",
+        "South",
+        "West",
+        "North-West"
+      ],
+      "explanation": "This is a 'Symbol Rotation' style question. A 90-degree clockwise turn moves the top point to the right side.",
+      "id": "ab-mc-0003"
+    },
+    {
+      "correctAnswer": 3,
+      "question": "What is the next number in the sequence: 10, 7, 8, 5, 6, ...?",
+      "type": "multiple_choice",
+      "options": [
+        "7",
+        "5",
+        "4",
+        "3"
+      ],
+      "explanation": "The sequence follows a pattern of 'subtract 3, then add 1'. 10-3=7, 7+1=8, 8-3=5, 5+1=6. Next is 6-3=3.",
+      "id": "ab-mc-0004"
+    },
+    {
+      "correctAnswer": 1,
+      "question": "All Sergeants are soldiers. Smith is a Sergeant. Therefore:",
+      "type": "multiple_choice",
+      "options": [
+        "Smith is an Officer",
+        "Smith is a soldier",
+        "Smith is a recruit",
+        "Smith is a pilot"
+      ],
+      "explanation": "In basic logic, if all A are B, and X is an A, then X must be a B. Since all Sergeants are soldiers, Smith must be a soldier.",
+      "id": "ab-mc-0005"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "3 mph",
+        "4 mph",
+        "5 mph",
+        "6 mph"
+      ],
+      "explanation": "Speed = Distance divided by Time. 15 miles divided by 3 hours equals 5 miles per hour.",
+      "correctAnswer": 2,
+      "question": "A recruit marches 15 miles in 3 hours. What is their average speed in miles per hour?",
+      "id": "ab-mc-0006"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "This tests speed of identification. 'Believe' is the only word in the list spelled correctly according to standard UK English rules.",
+      "options": [
+        "Believe",
+        "Beleive",
+        "Belive",
+        "Bellieve"
+      ],
+      "correctAnswer": 0,
+      "question": "Which of the following words is spelled correctly?",
+      "id": "ab-mc-0007"
+    },
+    {
+      "question": "What number comes next in the sequence: 3, 6, 12, 24, ...?",
+      "correctAnswer": 3,
+      "explanation": "The sequence doubles each time: 3x2=6, 6x2=12, 12x2=24. Therefore, 24x2=48.",
+      "options": [
+        "30",
+        "36",
+        "42",
+        "48"
+      ],
+      "type": "multiple_choice",
+      "id": "ab-mc-0008"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "There are 60 minutes in an hour. 2.5 hours is 60 + 60 + 30 = 150 minutes.",
+      "options": [
+        "120 minutes",
+        "150 minutes",
+        "180 minutes",
+        "250 minutes"
+      ],
+      "correctAnswer": 1,
+      "question": "How many minutes are there in 2.5 hours?",
+      "id": "ab-mc-0009"
+    },
+    {
+      "correctAnswer": 2,
+      "question": "If the word 'POT' is viewed in a mirror, what is the order of the letters from left to right?",
+      "type": "multiple_choice",
+      "explanation": "This tests basic mirror reasoning. When 'POT' is reflected, the P (now on the right) faces left, and the T stays the same on the left.",
+      "options": [
+        "POT",
+        "TOP",
+        "TOP (reversed letters)",
+        "PTO"
+      ],
+      "id": "ab-mc-0010"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "50",
+        "250",
+        "100",
+        "75"
+      ],
+      "explanation": "A 'quarter' means dividing by 4. 200 divided by 4 is 50.",
+      "correctAnswer": 0,
+      "question": "What is a quarter of 200?",
+      "id": "ab-mc-0011"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Enter",
+        "Leave",
+        "Stay",
+        "Build"
+      ],
+      "explanation": "This tests linguistic synonyms. To 'evacuate' means to leave or empty a place for safety.",
+      "correctAnswer": 1,
+      "question": "Which word means the same as 'EVACUATE'?",
+      "id": "ab-mc-0012"
+    },
+    {
+      "question": "An officer is facing North and turns 180 degrees clockwise. Which direction are they facing now?",
+      "explanation": "Moving clockwise from North, the sequence is East, South, West. 180 degrees is exactly half a rotation.",
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "options": [
+        "East",
+        "South",
+        "West",
+        "North-West"
+      ],
+      "id": "ab-mc-0013"
+    },
+    {
+      "question": "What number comes next in the sequence: 10, 14, 12, 16, 14, ...?",
+      "explanation": "The pattern alternates between adding 4 and subtracting 2. 12 + 4 = 16.",
+      "correctAnswer": 3,
+      "options": [
+        "11",
+        "10",
+        "14",
+        "16"
+      ],
+      "type": "multiple_choice",
+      "id": "ab-mc-0014"
+    },
+    {
+      "question": "All officers are leaders. Captain Miller is an officer. Based on this, which of the following must be true?",
+      "explanation": "According to the first statement, all officers are leaders. Since Captain Miller is an officer, he must be a leader.",
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "options": [
+        "Captain Miller is a leader",
+        "Captain Miller is a Corporal",
+        "Leaders are not officers",
+        "All leaders are captains"
+      ],
+      "id": "ab-mc-0015"
+    },
+    {
+      "question": "A recruit buys a pen for £1.20, a notebook for £3.50, and a ruler for 80p. If they pay with a £10 note, how much change do they receive?",
+      "explanation": "To find the total, add the costs: £1.20 + £3.50 + £0.80 = £5.50. Subtract this from £10.00 to get £4.50 change.",
+      "correctAnswer": 2,
+      "options": [
+        "£5.50",
+        "£6.50",
+        "£4.50",
+        "£4.00"
+      ],
+      "type": "multiple_choice",
+      "id": "ab-mc-0016"
+    },
+    {
+      "explanation": "To find 15% of 80, multiply 80 by 0.15 (or find 10% which is 8, and half of that which is 4, then add them: 8 + 4 = 12).",
+      "options": [
+        "12",
+        "15",
+        "10",
+        "18"
+      ],
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "question": "A platoon of 80 soldiers has 15% on leave. How many soldiers are on leave?",
+      "id": "ab-mc-0017"
+    },
+    {
+      "question": "Which of the following words is spelled correctly?",
+      "explanation": "The word 'Accommodate' requires a double 'c' and a double 'm'.",
+      "type": "multiple_choice",
+      "options": [
+        "Acommodate",
+        "Accomodate",
+        "Accommodate",
+        "Acomodate"
+      ],
+      "correctAnswer": 2,
+      "id": "ab-mc-0018"
+    },
+    {
+      "options": [
+        "50 km/h",
+        "60 km/h",
+        "70 km/h",
+        "80 km/h"
+      ],
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "explanation": "Speed = Distance / Time. 120 km divided by 2 hours equals 60 km/h.",
+      "question": "A Land Rover travels 120 kilometres in 2 hours. What is its average speed?",
+      "id": "ab-mc-0019"
+    },
+    {
+      "question": "Which word means the same as 'PRECISE'?",
+      "explanation": "'Precise' means being exact or accurate. 'Vague' is the opposite, and 'Rough' is an approximation.",
+      "options": [
+        "Vague",
+        "Exact",
+        "Fasts",
+        "Rough"
+      ],
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "id": "ab-mc-0020"
+    },
+    {
+      "explanation": "The sequence moves forward by skipping two letters: A (bc) D (ef) G (hi) J.",
+      "correctAnswer": 3,
+      "options": [
+        "K",
+        "L",
+        "I",
+        "J"
+      ],
+      "type": "multiple_choice",
+      "question": "What is the next letter in the sequence: A, D, G, ...?",
+      "id": "ab-mc-0021"
+    },
+    {
+      "explanation": "The word 'REAR' means the back. In a mirror, the letters flip and their order reverses, starting with the R at the end.",
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "options": [
+        "REAR",
+        "RAER",
+        "RAER (reversed letters)",
+        "AERR"
+      ],
+      "question": "When looking at the word 'REAR' in a mirror, which letter appears on the far left? (Note: assume standard mirror reflection)",
+      "id": "ab-mc-0022"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "options": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Sunday"
+      ],
+      "explanation": "If the 4th is Monday, adding 7 days makes the 11th a Monday. Adding another 7 days makes the 18th a Monday. Therefore, the 19th is Tuesday.",
+      "question": "If the 4th day of the month is a Monday, what day of the week is the 19th?",
+      "id": "ab-mc-0023"
+    },
+    {
+      "question": "What is one-eighth of 360?",
+      "explanation": "Divide 360 by 8. 360 / 8 = 45. Alternatively, half of 360 is 180, half of 180 is 90, and half of 90 is 45.",
+      "correctAnswer": 0,
+      "options": [
+        "45",
+        "40",
+        "50",
+        "60"
+      ],
+      "type": "multiple_choice",
+      "id": "ab-mc-0024"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "question": "What is 51 minus 17 minus 9?",
+      "explanation": "Subtracting 17 from 51 leaves 34. Subtracting a further 9 leaves 25.",
+      "options": [
+        "34",
+        "25",
+        "27",
+        "31"
+      ],
+      "id": "ab-mc-0025"
+    },
+    {
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "explanation": "The sequence alternates between adding 5 and subtracting 2. 18 minus 2 is 16.",
+      "options": [
+        "17",
+        "23",
+        "21",
+        "16"
+      ],
+      "question": "What is the next number in the sequence: 10, 15, 13, 18, ...?",
+      "id": "ab-mc-0026"
+    },
+    {
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "explanation": "The rule 'All A are B' means if it is an A, it must be B. Therefore, if Jack is a Corporal, he must be a soldier.",
+      "options": [
+        "Jack is a soldier.",
+        "Jack is an officer.",
+        "Only Corporals are soldiers.",
+        "Jack is not a soldier."
+      ],
+      "question": "All Corporals are soldiers. Jack is a Corporal. Based on this statement, which must be true?",
+      "id": "ab-mc-0027"
+    },
+    {
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "options": [
+        "Vigilent",
+        "Vigallant",
+        "Vigilant",
+        "Vigillant"
+      ],
+      "explanation": "'Vigilant' correctly uses the '-ant' suffix and single 'l'.",
+      "question": "Which of the following words is spelled correctly?",
+      "id": "ab-mc-0028"
+    },
+    {
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "options": [
+        "10",
+        "12",
+        "15",
+        "18"
+      ],
+      "explanation": "To find 20%, divide by 10 then multiply by 2 (60 / 10 = 6; 6 x 2 = 12).",
+      "question": "20% of 60 soldiers are selected for a duty. How many soldiers are selected?",
+      "id": "ab-mc-0029"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "question": "A soldier runs at a constant speed of 12 mph for 30 minutes. How far do they travel?",
+      "options": [
+        "4 miles",
+        "8 miles",
+        "10 miles",
+        "6 miles"
+      ],
+      "explanation": "To find the distance, multiply speed by time (12 mph x 0.5 hours = 6 miles).",
+      "id": "ab-mc-0030"
+    },
+    {
+      "options": [
+        "TIEX",
+        "EXIT",
+        "TIXE",
+        "ETIX"
+      ],
+      "explanation": "The mirror reverses the order and orientation of individual characters. 'EXIT' becomes 'TIXE' with letters reversed.",
+      "question": "If the word 'EXIT' is viewed in a mirror, what is the order of the letters from left to right?",
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "id": "ab-mc-0031"
+    },
+    {
+      "question": "Which word means the same as 'PROMPT'?",
+      "explanation": "'Prompt' means acting without delay, which is the definition of 'immediate'.",
+      "options": [
+        "Immediate",
+        "Slow",
+        "Delayed",
+        "Careful"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "id": "ab-mc-0032"
+    },
+    {
+      "options": [
+        "North-East",
+        "South-East均衡",
+        "North-West均衡",
+        "East均衡"
+      ],
+      "explanation": "90 degrees clockwise from South is West; another 45 degrees reaches North-West.",
+      "question": "A soldier is facing South. They turn 135 degrees clockwise. Which direction are they facing? (Note: A full circle is 360 degrees).",
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "id": "ab-mc-0033"
+    },
+    {
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "options": [
+        "J",
+        "K",
+        "L",
+        "M"
+      ],
+      "explanation": "B is 2, D is 4, G is 7 (+2, +3). The next step is +4, which is 11, the 11th letter is K.",
+      "question": "What is the next letter in the sequence: B, D, G, ...?",
+      "id": "ab-mc-0034"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "question": "If 3 packs of rations cost £6.00, what is the cost of 7 packs?",
+      "options": [
+        "£12",
+        "£18均衡",
+        "£15",
+        "£14均衡"
+      ],
+      "explanation": "Each pack costs £2 (6 / 3 = 2). Seven packs would cost £14 (7 x 2 = 14).",
+      "id": "ab-mc-0035"
+    },
+    {
+      "question": "Look at these two statements: 1. Everyone on the range is a recruit. 2. Everyone who is a recruit is on the range. If statement 1 is true, statement 2 is:",
+      "explanation": "The logic does not state that *only* recruits are on the range; others might be there too. Therefore, the second statement is false.",
+      "options": [
+        "False",
+        "True",
+        "Cannot tell",
+        "Both versions are true"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "id": "ab-mc-0036"
+    },
+    {
+      "explanation": "To find the percentage, divide 9 by 60 and multiply by 100. 9/60 is 0.15, which equals 15%.",
+      "question": "In a section of 60 soldiers, 9 are qualified medics. What percentage of the section are medics?",
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "options": [
+        "10%",
+        "12%",
+        "15%",
+        "20%"
+      ],
+      "id": "ab-mc-0037"
+    },
+    {
+      "explanation": "'Occurred' requires a double 'c' and a double 'r'.",
+      "correctAnswer": 0,
+      "question": "Which of the following words is spelled correctly?",
+      "options": [
+        "Occurred",
+        "Ocured",
+        "Occured",
+        "Ocurred"
+      ],
+      "type": "multiple_choice",
+      "id": "ab-mc-0038"
+    },
+    {
+      "options": [
+        "M",
+        "N",
+        "O",
+        "Q"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "question": "What is the next letter in the sequence: B, D, H, L, ...?",
+      "explanation": "The sequence skips one letter (C), then two (F, G), then three (I, J, K), so the next jump must skip four (M, N, O, P), leading to Q.",
+      "id": "ab-mc-0039"
+    },
+    {
+      "options": [
+        "Paul is older than Sarah",
+        "Sarah is older than Paul",
+        "Mark is the oldest",
+        "Sarah is the youngest"
+      ],
+      "type": "multiple_choice",
+      "explanation": "If Sarah is older than Mark, and Mark is older than Paul, it follows logically that Sarah must be older than Paul.",
+      "correctAnswer": 1,
+      "question": "Sarah is older than Mark. Mark is older than Paul. Therefore, which of the following must be true?",
+      "id": "ab-mc-0040"
+    },
+    {
+      "question": "A military vehicle travels at a constant speed of 40 mph. How far will it travel in 15 minutes?",
+      "correctAnswer": 3,
+      "explanation": "15 minutes is one quarter (1/4) of an hour. 40 divided by 4 equals 10 miles.",
+      "type": "multiple_choice",
+      "options": [
+        "5 miles",
+        "4 miles",
+        "8 miles",
+        "10 miles"
+      ],
+      "id": "ab-mc-0041"
+    },
+    {
+      "question": "Which word means the same as 'ADHERE'?",
+      "correctAnswer": 2,
+      "explanation": "The word 'ADHERE' means to stick to or follow a rule closely. 'Stick' is the most accurate synonym.",
+      "type": "multiple_choice",
+      "options": [
+        "Break",
+        "Ignore",
+        "Stick",
+        "Fasten"
+      ],
+      "id": "ab-mc-0042"
+    },
+    {
+      "correctAnswer": 1,
+      "question": "If the 5th of the month is a Tuesday, what day is the 20th?",
+      "explanation": "There are 7 days in a week. Two weeks (14 days) after the 5th is the 19th. One more day makes the 20th a Wednesday.",
+      "options": [
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "type": "multiple_choice",
+      "id": "ab-mc-0043"
+    },
+    {
+      "options": [
+        "16",
+        "20",
+        "28",
+        "32"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "question": "What is the next number in the sequence: 2, 4, 6, 12, 14, ...?",
+      "explanation": "The pattern alternates between multiplying by 2 and adding 2. 2x2=4, 4+2=6, 6x2=12, 12+2=14. The next step is 14x2=28.",
+      "id": "ab-mc-0044"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Worsen",
+        "Improve",
+        "Maintain",
+        "Fix"
+      ],
+      "explanation": "'Deteriorate' means to become progressively worse. 'Worsen' is the correct match.",
+      "question": "Which word means the opposite of 'IMPROVE'?",
+      "correctAnswer": 0,
+      "id": "ab-mc-0045"
+    },
+    {
+      "question": "A soldier is facing North-West. They turn 90 degrees clockwise. Which direction are they facing?",
+      "correctAnswer": 0,
+      "explanation": "North-West is 45 degrees counter-clockwise from North. Moving 90 degrees clockwise from North-West leads to North-East.",
+      "type": "multiple_choice",
+      "options": [
+        "North-East",
+        "South-East",
+        "East",
+        "South-West"
+      ],
+      "id": "ab-mc-0046"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "£24.00",
+        "£27.00",
+        "£30.00",
+        "£36.00"
+      ],
+      "explanation": "First, divide £12 by 4 to find the unit cost (£3). Then multiply £3 by 9 to get £27.",
+      "question": "If 4 empty fuel cans cost £12.00, how much would 9 empty fuel cans cost?",
+      "correctAnswer": 1,
+      "id": "ab-mc-0047"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "12",
+        "14",
+        "16",
+        "18"
+      ],
+      "explanation": "60 - 14 = 46. 46 - 22 = 24. 24 - 8 = 16.",
+      "question": "What is 60 minus 14, minus 22, minus 8?",
+      "correctAnswer": 2,
+      "id": "ab-mc-0048"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "To find the average, add the weights (70 + 85 + 73 = 228) and divide by the number of soldiers (228 ÷ 3 = 76).",
+      "correctAnswer": 1,
+      "question": "Three soldiers weigh 70kg, 85kg, and 73kg. What is their average weight?",
+      "options": [
+        "74kg",
+        "76kg",
+        "78kg",
+        "80kg"
+      ],
+      "id": "ab-mc-0049"
+    },
+    {
+      "options": [
+        "31",
+        "30",
+        "33",
+        "29"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "explanation": "The sequence follows a pattern of adding 3, then adding 5, then adding 7, then adding 9. Thus, 22 + 9 = 31.",
+      "question": "What is the next number in the sequence: 7, 10, 15, 22, ...?",
+      "id": "ab-mc-0050"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "The word 'Vast' means very great in size or amount, which is a synonym for 'Immense'.",
+      "correctAnswer": 2,
+      "question": "Which word means the same as 'IMMENSE'?",
+      "options": [
+        "Tiny",
+        "Empty",
+        "Vast",
+        "Quick"
+      ],
+      "id": "ab-mc-0051"
+    },
+    {
+      "correctAnswer": 3,
+      "explanation": "Working backwards: 60 - 5 = 55. Then 55 ÷ 5 = 11. 11 original apples.",
+      "type": "multiple_choice",
+      "question": "A soldier starts with a bag of apples. After multiplying the count by 5 and adding 5, they have 60. How many did they start with?",
+      "options": [
+        "10",
+        "12",
+        "13",
+        "11"
+      ],
+      "id": "ab-mc-0052"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "60 minutes in an hour, so 90 minutes is 1.5 hours. 4mph multiplied by 1.5 hours equals 6 miles.",
+      "correctAnswer": 3,
+      "question": "A soldier patrols at a speed of 4 mph for 90 minutes. How far do they travel?",
+      "options": [
+        "4 miles",
+        "5 miles",
+        "8 miles",
+        "6 miles"
+      ],
+      "id": "ab-mc-0053"
+    },
+    {
+      "options": [
+        "L",
+        "M",
+        "N",
+        "K"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The sequence moves forward by 1 letter, then 2, then 3. C(+1)=D, D(+2)=F, F(+3)=I. I(+4)=M.",
+      "type": "multiple_choice",
+      "question": "What is the next letter in the sequence: C, D, F, I, ...?",
+      "id": "ab-mc-0054"
+    },
+    {
+      "question": "A pair of boots costs £40.00 but is on sale with a 15% discount. What is the new price?",
+      "explanation": "15% of £40 is (15/100) * 40, which equals £6. Subtracting the discount from the original price: £40 - £6 = £34.",
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "options": [
+        "£34.00",
+        "£35.00",
+        "£36.00",
+        "£32.50"
+      ],
+      "id": "ab-mc-0055"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "'Antagonize' is spelled with one 'n', one 't', and ends in 'ize' (or 'ise' in UK English, but the other options are clearly incorrect).",
+      "correctAnswer": 2,
+      "question": "Which of the following is the correct spelling?",
+      "options": [
+        "Antaggonize",
+        "Antagonisea",
+        "Antagonize",
+        "Antagoniseing"
+      ],
+      "id": "ab-mc-0056"
+    },
+    {
+      "question": "In a box of 32 pens, 1/8 are red and the rest are blue. How many blue pens are there?",
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "explanation": "One eighth of 32 is 4 (32/8). If 4 are red, the remaining 28 (32 - 4) must be blue.",
+      "options": [
+        "4",
+        "24",
+        "28",
+        "30"
+      ],
+      "id": "ab-mc-0057"
+    },
+    {
+      "question": "A soldier is facing West. They turn 270 degrees clockwise. Which direction are they facing?",
+      "type": "multiple_choice",
+      "explanation": "A full circle is 360 degrees. 270 degrees clockwise is the same as 90 degrees anti-clockwise. West to South is 90 degrees anti-clockwise.",
+      "correctAnswer": 2,
+      "options": [
+        "North",
+        "East",
+        "South",
+        "South-East"
+      ],
+      "id": "ab-mc-0058"
+    },
+    {
+      "options": [
+        "Unwilling",
+        "Eager",
+        "Rapid",
+        "Certain"
+      ],
+      "explanation": "The word 'Reluctant' means feeling or showing hesitation or an unwillingness to do something.",
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "question": "Which word means the same as 'RELUCTANT'?",
+      "id": "ab-mc-0059"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "explanation": "Two weeks is 14 days. If the 2nd is a Monday, the 9th and 16th are also Mondays. Therefore, the 17th is a Tuesday.",
+      "question": "If the 2nd of the month is a Monday, what day is the 17th?",
+      "options": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Sunday"
+      ],
+      "id": "ab-mc-0060"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "A truck travels at a constant speed of 45 mph. How far will it travel in 20 minutes?",
+      "options": [
+        "5 miles",
+        "10 miles",
+        "15 miles",
+        "20 miles"
+      ],
+      "explanation": "There are 60 minutes in an hour, so 20 minutes is 1/3 of an hour. 1/3 of 45 miles is 15 miles.",
+      "correctAnswer": 2,
+      "id": "ab-mc-0061"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "To 'Verify' something means to check, confirm, or establish the truth or accuracy of it.",
+      "question": "Which word means the same as 'VERIFY'?",
+      "options": [
+        "Confirm",
+        "Reject",
+        "Ignore",
+        "Challenge"
+      ],
+      "correctAnswer": 0,
+      "id": "ab-mc-0062"
+    },
+    {
+      "correctAnswer": 3,
+      "options": [
+        "16",
+        "17",
+        "18",
+        "19"
+      ],
+      "question": "What is the next number in the sequence: 3, 5, 9, 11, 15, ...?",
+      "explanation": "The sequence adds 2, then adds 4, then adds 2, then adds 4. 15 + 4 = 19.",
+      "type": "multiple_choice",
+      "id": "ab-mc-0063"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "explanation": "Seven days from Wednesday is the 21st (Wednesday). One day before that (the 20th) is Tuesday.",
+      "question": "If the 14th of the month is a Wednesday, what day is the 20th?",
+      "options": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday"
+      ],
+      "id": "ab-mc-0064"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "explanation": "To 'Diminish' means to make or become less. The opposite is to 'Increase'.",
+      "options": [
+        "Shrink",
+        "Fade",
+        "Increase",
+        "Divide"
+      ],
+      "question": "Which word means the opposite of 'DIMINISH'?",
+      "id": "ab-mc-0065"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "North-West",
+        "North-East",
+        "South-West",
+        "East"
+      ],
+      "question": "A soldier is facing South-East. They turn 90 degrees anti-clockwise. Which direction are they facing?",
+      "explanation": "South-East is 45 degrees between South and East. Turning 90 degrees anti-clockwise moves you to North-East.",
+      "correctAnswer": 1,
+      "id": "ab-mc-0066"
+    },
+    {
+      "question": "If 5 supply crates cost £200, how much would 7 supply crates cost?",
+      "options": [
+        "£280",
+        "£240",
+        "£320",
+        "£300"
+      ],
+      "explanation": "One crate costs £40 (£200 / 5). Therefore, 7 crates cost £280 (7 x £40).",
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "id": "ab-mc-0067"
+    },
+    {
+      "correctAnswer": 2,
+      "explanation": "1/5 of 200 is 40. 200 - 40 = 160. Half of 160 is 80.",
+      "options": [
+        "100",
+        "120",
+        "80",
+        "60"
+      ],
+      "question": "A unit has 200 rations. They use 1/5 of them, then distribute half of the remainder. How many rations are left?",
+      "type": "multiple_choice",
+      "id": "ab-mc-0068"
+    },
+    {
+      "explanation": "60 - 15 = 45. 45 - 19 = 26. 26 - 7 = 19.",
+      "options": [
+        "24",
+        "21",
+        "20",
+        "19"
+      ],
+      "question": "What is 60 minus 15, minus 19, minus 7?",
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "id": "ab-mc-0069"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "The gaps between numbers are +2, +3, +4, +5. The next gap is +6. 18 + 6 = 24.",
+      "question": "What is the next number in the sequence: 4, 6, 9, 13, 18, ...?",
+      "options": [
+        "24",
+        "23",
+        "22",
+        "25"
+      ],
+      "correctAnswer": 0,
+      "id": "ab-mc-0070"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "question": "A jacket costs £120 but is offered with a 25% discount. What is the final price?",
+      "options": [
+        "£85",
+        "£90",
+        "£95",
+        "£100"
+      ],
+      "explanation": "25% of £120 is £30 (£120 divided by 4). £120 - £30 = £90.",
+      "id": "ab-mc-0071"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Acomodation",
+        "Accomodation",
+        "Accommodation",
+        "Acommodation"
+      ],
+      "question": "Which of the following is the correct spelling?",
+      "explanation": "'Accommodation' is the standard UK spelling, requiring double 'c' and double 'm'.",
+      "correctAnswer": 2,
+      "id": "ab-mc-0072"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "16",
+        "17",
+        "18",
+        "20"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Adding 3 to each number gives the next term (14 + 3 = 17).",
+      "question": "What is the next number in the sequence: 2, 5, 8, 11, 14, ...?",
+      "id": "ab-mc-0073"
+    },
+    {
+      "question": "Which of the following is the correct spelling?",
+      "explanation": "'Courageous' is the correct spelling for showing bravery.",
+      "type": "multiple_choice",
+      "options": [
+        "Courageus",
+        "Curageous",
+        "Courageous",
+        "Couragous"
+      ],
+      "correctAnswer": 2,
+      "id": "ab-mc-0074"
+    },
+    {
+      "explanation": "60 minutes is one hour. At 60 mph, the vehicle covers 60 miles in 60 minutes, which is 1 mile per minute. Therefore, 10 minutes equals 10 miles.",
+      "type": "multiple_choice",
+      "options": [
+        "10 miles",
+        "15 miles",
+        "20 miles",
+        "6 miles"
+      ],
+      "correctAnswer": 0,
+      "question": "A vehicle travels at a constant speed of 60 mph. How far will it travel in 10 minutes?",
+      "id": "ab-mc-0075"
+    },
+    {
+      "question": "A rucksack originally priced at £80.00 is reduced by 20% in a sale. What is the new price?",
+      "correctAnswer": 3,
+      "options": [
+        "£72.00",
+        "£60.00",
+        "£58.00",
+        "£64.00"
+      ],
+      "type": "multiple_choice",
+      "explanation": "To find 20%, divide by 10 and multiply by 2 (£80 / 10 = £8; £8 x 2 = £16). £80 - £16 = £64.",
+      "id": "ab-mc-0076"
+    },
+    {
+      "question": "Which word means the same as 'DILIGENT'?",
+      "type": "multiple_choice",
+      "options": [
+        "Hard-working",
+        "Lazy",
+        "Fast",
+        "Occasional"
+      ],
+      "correctAnswer": 0,
+      "explanation": "'Diligent' means showing care and conscientiousness in one's work or duties.",
+      "id": "ab-mc-0077"
+    },
+    {
+      "correctAnswer": 2,
+      "options": [
+        "East",
+        "West",
+        "South",
+        "North-East"
+      ],
+      "type": "multiple_choice",
+      "explanation": "A full circle is 360 degrees. Facing North and turning 180 degrees results in facing the opposite direction, which is South.",
+      "question": "A soldier is facing North. They turn 180 degrees clockwise. Which direction are they facing?",
+      "id": "ab-mc-0078"
+    },
+    {
+      "explanation": "1/4 of 48 is 12. Subtracting 12 from 48 leaves 36 personnel.",
+      "options": [
+        "40",
+        "36",
+        "34",
+        "24"
+      ],
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "question": "A platoon of 48 personnel has 1/4 of its members on leave. How many personnel are remaining?",
+      "id": "ab-mc-0079"
+    },
+    {
+      "explanation": "To 'augment' something is to make it larger or better by adding to it, so the opposite is to decrease it.",
+      "correctAnswer": 3,
+      "options": [
+        "Increase",
+        "Improve",
+        "Support",
+        "Decrease"
+      ],
+      "type": "multiple_choice",
+      "question": "Which word means the opposite of 'AUGMENT'?",
+      "id": "ab-mc-0080"
+    },
+    {
+      "question": "What is the next number in the sequence: 2, 4, 8, 10, 14, ...?",
+      "options": [
+        "18",
+        "20",
+        "16",
+        "15"
+      ],
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "explanation": "The pattern alternates between adding 2 and adding 4 (2+2=4, 4+4=8, 8+2=10, 10+4=14). The next step is adding 2 to 14.",
+      "id": "ab-mc-0081"
+    },
+    {
+      "question": "If the 5th of the month is a Tuesday, what day of the week is the 19th?",
+      "explanation": "7 days after the 5th is the 12th, and 7 days after that is the 19th. Since both are Tuesdays, the 19th is a Tuesday.",
+      "correctAnswer": 0,
+      "options": [
+        "Tuesday",
+        "Wednesday",
+        "Monday",
+        "Thursday"
+      ],
+      "type": "multiple_choice",
+      "id": "ab-mc-0082"
+    },
+    {
+      "question": "If 3 equipment crates cost £150.00, what is the cost of 8 crates?",
+      "options": [
+        "£450.00",
+        "£400.00",
+        "£350.00",
+        "£375.00"
+      ],
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "explanation": "First, find the cost of one crate (£150 / 3 = £50). Then multiply by 8 (£50 x 8 = £400).",
+      "id": "ab-mc-0083"
+    },
+    {
+      "explanation": "'Occurred' requires a double 'c' and a double 'r'.",
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "options": [
+        "Ocured",
+        "Occured",
+        "Occurred",
+        "Ocuredd"
+      ],
+      "question": "Which of the following is the correct spelling?",
+      "id": "ab-mc-0084"
+    },
+    {
+      "explanation": "To find the average, add the weights (75+80+85=240) and divide by the number of soldiers (240 / 3 = 80).",
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "options": [
+        "78kg",
+        "80kg",
+        "82kg",
+        "85kg"
+      ],
+      "question": "Three soldiers weigh 75kg, 80kg, and 85kg respectively. What is their average weight?",
+      "id": "ab-mc-0085"
+    },
+    {
+      "correctAnswer": 0,
+      "explanation": "The word 'Conscious' is spelled with an 'sc' in the middle and ends in 'ious'.",
+      "options": [
+        "Conscious",
+        "Consious",
+        "Conshus",
+        "Consciouse"
+      ],
+      "type": "multiple_choice",
+      "question": "Which of the following is the correct spelling?",
+      "id": "ab-mc-0086"
+    },
+    {
+      "question": "If a soldier is facing North-West and turns 45 degrees clockwise, which direction are they facing?",
+      "type": "multiple_choice",
+      "options": [
+        "West",
+        "North-East",
+        "North",
+        "East"
+      ],
+      "explanation": "Turning 45 degrees clockwise from North-West points you directly North.",
+      "correctAnswer": 2,
+      "id": "ab-mc-0087"
+    },
+    {
+      "explanation": "'Vague' means uncertain or unclear, which is the direct opposite of 'precise'.",
+      "correctAnswer": 2,
+      "question": "Which word means the opposite of 'PRECISE'?",
+      "type": "multiple_choice",
+      "options": [
+        "Careful",
+        "Detailed",
+        "Vague",
+        "Strict"
+      ],
+      "id": "ab-mc-0088"
+    },
+    {
+      "options": [
+        "26",
+        "29",
+        "30",
+        "31"
+      ],
+      "type": "multiple_choice",
+      "question": "What is the next number in the sequence: 1, 3, 7, 13, 21, ...?",
+      "correctAnswer": 3,
+      "explanation": "The sequence adds 2, then 4, then 6, then 8. The next step is to add 10 (21 + 10 = 31).",
+      "id": "ab-mc-0089"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "3 hours",
+        "4 hours",
+        "5 hours",
+        "6 hours"
+      ],
+      "question": "How long will it take a truck to travel 180 miles at a constant speed of 45 mph?",
+      "explanation": "Divide the total distance by the speed: 180 miles / 45 mph = 4 hours.",
+      "correctAnswer": 1,
+      "id": "ab-mc-0090"
+    },
+    {
+      "options": [
+        "Accommodate",
+        "Acomodate",
+        "Accomodate",
+        "Acommodate"
+      ],
+      "type": "multiple_choice",
+      "question": "Which of the following is the correct spelling?",
+      "correctAnswer": 0,
+      "explanation": "The word 'Accommodate' is spelled with a double 'c' and a double 'm'.",
+      "id": "ab-mc-0091"
+    },
+    {
+      "question": "If the 5th of the month is a Tuesday, what day of the week is the 14th?",
+      "options": [
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "explanation": "The 12th is 7 days after the 5th (Tuesday), so it is a Tuesday. Two days later (the 14th) is a Thursday.",
+      "id": "ab-mc-0092"
+    },
+    {
+      "explanation": "'Courageous' means brave, which is a synonym for 'valiant'.",
+      "correctAnswer": 1,
+      "question": "Which word means the same as 'VALIANT'?",
+      "type": "multiple_choice",
+      "options": [
+        "Fearful",
+        "Courageous",
+        "Aggressive",
+        "Cheerful"
+      ],
+      "id": "ab-mc-0093"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "£100",
+        "£84",
+        "£90.60",
+        "£96"
+      ],
+      "question": "A pair of boots costing £120 is reduced by 20% in a sale. What is the new price?",
+      "explanation": "First, find 10% (£12), then double it for 20% (£24). Subtract this from the original: £120 - £24 = £96.",
+      "correctAnswer": 3,
+      "id": "ab-mc-0094"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "27",
+        "28",
+        "29",
+        "26"
+      ],
+      "question": "What is the next number in the sequence: 40, 37, 35, 32, 30, ...?",
+      "explanation": "The sequence follows a pattern of subtracting 3, then 2, then 3, then 2. Subtracting 3 from 30 gives 27.",
+      "correctAnswer": 0,
+      "id": "ab-mc-0095"
+    },
+    {
+      "options": [
+        "65 litres",
+        "55 litres",
+        "45 litres",
+        "53 litres"
+      ],
+      "type": "multiple_choice",
+      "question": "A fuel tank contains 100 litres. Three vehicles use 12, 25, and 8 litres respectively. How much fuel is left?",
+      "correctAnswer": 1,
+      "explanation": "Subtract the used amounts from the total: 100 - 12 = 88; 88 - 25 = 63; 63 - 8 = 55.",
+      "id": "ab-mc-0096"
+    }
+  ],
+  "mocks": []
+}
