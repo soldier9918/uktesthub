@@ -1563,6 +1563,3082 @@
       "question": "In a class of 28 pupils, one-quarter are left-handed. How many pupils are right-handed?",
       "type": "multiple_choice",
       "id": "qn-mc-0120"
+    },
+    {
+      "question": "A school uniform supplier sells blazers for £80.00 excluding tax. If the tax rate is 17.5%, what is the total price for a blazer including tax?",
+      "type": "multiple_choice",
+      "explanation": "To calculate 17.5% of £80, first find 10% (£8), 5% (£4), and 2.5% (£2). Adding these gives £14.00 tax. Total: £80 + £14 = £94.",
+      "correctAnswer": 1,
+      "options": [
+        "£92.00",
+        "£94.00",
+        "£96.50",
+        "£97.50"
+      ],
+      "id": "qn-mc-0121"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Five pupils score 6, 8, 4, 9, and 8 in a weekly quiz. What is the mean score?",
+      "options": [
+        "7.0",
+        "7.5",
+        "8.0",
+        "6.5"
+      ],
+      "correctAnswer": 0,
+      "explanation": "To find the mean, add the scores (6+8+4+9+8) to get 35, then divide by the total number of pupils (5). 35 ÷ 5 = 7.",
+      "id": "qn-mc-0122"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "In a class of 28 pupils, one half choose swimming and one quarter choose badminton for PE. The rest choose tennis. How many pupils choose tennis?",
+      "correctAnswer": 2,
+      "options": [
+        "14",
+        "10",
+        "7 dreams",
+        "4"
+      ],
+      "explanation": "One half is 14 pupils. One quarter of the remaining 14 is 3.5; since we need whole pupils, 1/4 of total (28/4) is 7. 14 (swimming) + 7 (badminton) = 21. 28 - 21 = 7.",
+      "id": "qn-mc-0123"
+    },
+    {
+      "question": "To make a fruit punch for a class party, a teacher mixes apple juice and orange juice in a ratio of 4:1. If she makes 450ml of punch, how much orange juice is used?",
+      "type": "multiple_choice",
+      "explanation": "Combine the parts of the ratio: 4 + 1 = 5. Divide the total by the parts: 450 ÷ 5 = 90. One part (orange) is 90ml.",
+      "correctAnswer": 3,
+      "options": [
+        "360ml",
+        "100ml",
+        "112.5ml",
+        "90ml"
+      ],
+      "id": "qn-mc-0124"
+    },
+    {
+      "explanation": "Using 8km = 5 miles, 24km is three times the distance (24 ÷ 8 = 3). Multiply 5 miles by 3 to get 15 miles.",
+      "correctAnswer": 2,
+      "options": [
+        "12 miles",
+        "18 miles",
+        "15 miles",
+        "20 miles"
+      ],
+      "question": "A primary school is 24 kilometres away from a museum. Using the conversion 8 kilometres ≈ 5 miles, what is this distance in miles?",
+      "type": "multiple_choice",
+      "id": "qn-mc-0125"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "In a science experiment, the temperatures recorded are: 15°C, 24°C, 11°C, 19°C, and 21°C. What is the range of these temperatures?",
+      "options": [
+        "13",
+        "11",
+        "24",
+        "12"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The range is the difference between the highest (24) and lowest (11) values. 24 - 11 = 13.",
+      "id": "qn-mc-0126"
+    },
+    {
+      "correctAnswer": 1,
+      "options": [
+        "6 tests",
+        "8 tests",
+        "10 tests",
+        "12 tests"
+      ],
+      "explanation": "Convert 2 hours to 120 minutes. 120 minutes ÷ 15 minutes per test = 8 tests.",
+      "type": "multiple_choice",
+      "question": "A teacher allows 15 minutes to mark one spelling test. How many tests can the teacher mark in 2 hours?",
+      "id": "qn-mc-0127"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "The price of a school lunch increases by 25%. If the original price was £1.20, what is the new price?",
+      "correctAnswer": 3,
+      "options": [
+        "£1.45",
+        "£1.40",
+        "£1.55",
+        "£1.50"
+      ],
+      "explanation": "First, find 10% of £1.20, which is 12p. Multiply by 2.5 to get 25% (12p + 12p + 6p = 30p). New price: £1.20 + £0.30 = £1.50.",
+      "id": "qn-mc-0128"
+    },
+    {
+      "correctAnswer": 2,
+      "options": [
+        "3:1",
+        "2:3",
+        "3:2",
+        "5:2"
+      ],
+      "explanation": "60% of 25 is 15 pupils (25 x 0.6). The remaining pupils are 25 - 15 = 10. The ratio 15 to 10 simplifies to 3:2.",
+      "type": "multiple_choice",
+      "question": "In a class of 25 pupils, 60% are girls. What is the ratio of girls to boys in its simplest form?",
+      "id": "qn-mc-0129"
+    },
+    {
+      "question": "A school coach travels at an average speed of 45 km/h for 40 minutes. What distance does the coach travel?",
+      "type": "multiple_choice",
+      "explanation": "Distance = Speed × Time. 40 minutes is 2/3 of an hour. 45 km/h × (2/3) h = 30 km.",
+      "options": [
+        "25 km",
+        "30 km",
+        "35 km",
+        "40 km"
+      ],
+      "correctAnswer": 1,
+      "id": "qn-mc-0130"
+    },
+    {
+      "options": [
+        "12:30",
+        "12:15",
+        "12:45",
+        "12:20"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Total time = 10 mins (intro) + 50 mins (main) + 15 mins (plenary) = 75 minutes (1 hour 15 mins). 11:15 + 1:15 = 12:30.",
+      "type": "multiple_choice",
+      "question": "A lesson starts at 11:15. It has a 10-minute introduction, a 50-minute main activity, and a 15-minute plenary. At what time does the lesson end?",
+      "id": "qn-mc-0131"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "In a class of 30 pupils, one-sixth went home early due to illness. How many pupils remained in school for the whole day?",
+      "options": [
+        "20",
+        "24",
+        "25",
+        "26"
+      ],
+      "correctAnswer": 2,
+      "explanation": "One sixth of 30 is 5 pupils (30 ÷ 6). 30 - 5 = 25 pupils stayed for the whole day.",
+      "id": "qn-mc-0132"
+    },
+    {
+      "correctAnswer": 2,
+      "question": "A pack of textbooks originally costs £30.00. A school receives a 15% discount for a bulk order. What is the final price of the textbooks?",
+      "explanation": "The 15% discount is calculated as 0.15 x £30 = £4.50. Subtracting this from the original price (£30.00 - £4.50) gives £25.50.",
+      "type": "multiple_choice",
+      "options": [
+        "£24.50",
+        "£27.50",
+        "£25.50",
+        "£26.50"
+      ],
+      "id": "qn-mc-0133"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "240ml",
+        "360ml",
+        "400ml",
+        "450ml"
+      ],
+      "correctAnswer": 1,
+      "explanation": "There are 5 units in the ratio (2+3=5). Each unit represents 600ml / 5 = 120ml. Therefore, the paint used is 3 x 120ml = 360ml.",
+      "question": "To create a specific shade of green, a teacher mixes yellow and blue paint in a ratio of 2:3. If the teacher makes 600ml of green paint, how much blue paint is used?",
+      "id": "qn-mc-0134"
+    },
+    {
+      "correctAnswer": 0,
+      "explanation": "The mean is calculated by adding the scores (14+18+15+21+12=80) and dividing by the number of pupils (80 / 5 = 16).",
+      "question": "In a spelling test, five pupils score 14, 18, 15, 21, and 12. What is the mean score?",
+      "type": "multiple_choice",
+      "options": [
+        "16.0",
+        "15.5",
+        "16.25",
+        "17.0"
+      ],
+      "id": "qn-mc-0135"
+    },
+    {
+      "correctAnswer": 3,
+      "explanation": "1.5 litres is 1500ml. Dividing 1500ml by the 125ml beaker size (1500 / 125) gives exactly 12 full beakers.",
+      "question": "A teacher has a 1.5 litre jug of water for a science experiment. How many 125ml beakers can be filled completely from the jug?",
+      "type": "multiple_choice",
+      "options": [
+        "10 beakers",
+        "8 beakers",
+        "15 beakers",
+        "12 beakers"
+      ],
+      "id": "qn-mc-0136"
+    },
+    {
+      "question": "An afternoon assembly begins at 13:45. It includes a 25-minute presentation, 50 minutes of rehearsals, and a 15-minute pack-down. What time does the assembly end?",
+      "explanation": "The total time is 25 + 50 + 15 = 90 minutes (or 1 hour 30 minutes). Adding 1 hour 30 minutes to 13:45 results in 15:15.",
+      "correctAnswer": 1,
+      "options": [
+        "15:05",
+        "15:15",
+        "15:10",
+        "15:25"
+      ],
+      "type": "multiple_choice",
+      "id": "qn-mc-0137"
+    },
+    {
+      "question": "The percentage marks of a group of students in a test are: 22%, 14%, 31%, 25%, and 28%. What is the range of these marks?",
+      "explanation": "The range is the difference between the highest and lowest values. 31% - 14% = 17%.",
+      "correctAnswer": 2,
+      "options": [
+        "16%",
+        "14%",
+        "17%",
+        "15%"
+      ],
+      "type": "multiple_choice",
+      "id": "qn-mc-0138"
+    },
+    {
+      "explanation": "If 20% are absent, 80% are present. 80% of 30 pupils is calculated as 0.8 x 30 = 24 pupils.",
+      "question": "On a snowy day, 20% of the 30 pupils in a class are absent. How many pupils are present?",
+      "correctAnswer": 3,
+      "options": [
+        "20 pupils",
+        "22 pupils",
+        "26 pupils",
+        "24 pupils"
+      ],
+      "type": "multiple_choice",
+      "id": "qn-mc-0139"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "£7.00",
+        "£8.00",
+        "£6.20",
+        "£9.30"
+      ],
+      "correctAnswer": 0,
+      "explanation": "First, find the total cost: 15 pupils x £6.20 = £93.00. Then, £100.00 - £93.00 = £7.00 change.",
+      "question": "A teacher takes 15 pupils to a local museum. The entry cost is £6.20 per pupil. How much change will the teacher receive from £100.00?",
+      "id": "qn-mc-0140"
+    },
+    {
+      "explanation": "Each mile is 1.6km (8 / 5 = 1.6). Therefore, 10 miles is 10 x 1.6 = 16 kilometres.",
+      "question": "A school is 10 miles away from the nearest leisure centre. Using the conversion 5 miles ≈ 8 kilometres, what is this distance in kilometres?",
+      "correctAnswer": 1,
+      "options": [
+        "14 km",
+        "16 km",
+        "18 km",
+        "15 km"
+      ],
+      "type": "multiple_choice",
+      "id": "qn-mc-0141"
+    },
+    {
+      "correctAnswer": 2,
+      "question": "In a class of 24 pupils, 6 pupils have a pet dog. What percentage of the class has a pet dog?",
+      "explanation": "To find the percentage, divide the number of pupils by the total and multiply by 100: (6 / 24) x 100 = 0.25 x 100 = 25%.",
+      "type": "multiple_choice",
+      "options": [
+        "20%",
+        "30%",
+        "25%",
+        "15%"
+      ],
+      "id": "qn-mc-0142"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "14 tests",
+        "12 tests",
+        "15 tests",
+        "16 tests"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The teacher marks at a rate of 4 tests per hour (60 / 15). Therefore, in 3.5 hours, the teacher marks 4 x 3.5 = 14 tests.",
+      "question": "A teacher estimates it takes 15 minutes to mark one pupil's essay. How many essays can be marked in 3 and a half hours?",
+      "id": "qn-mc-0143"
+    },
+    {
+      "correctAnswer": 1,
+      "explanation": "If 2/3 have a packed lunch, 1/3 buy a hot meal. 1/3 of 180 is 180 / 3 = 60 pupils.",
+      "question": "There are 180 pupils in a year group. Two-thirds of the pupils have a packed lunch. How many pupils buy a hot meal from the canteen?",
+      "type": "multiple_choice",
+      "options": [
+        "120 pupils",
+        "60 pupils",
+        "90 pupils",
+        "40 pupils"
+      ],
+      "id": "qn-mc-0144"
+    },
+    {
+      "correctAnswer": 1,
+      "question": "A teacher has a 2.5 litre bottle of squash. How many 200ml cups can be filled completely from this bottle?",
+      "options": [
+        "10",
+        "12",
+        "13",
+        "15"
+      ],
+      "type": "multiple_choice",
+      "explanation": "Convert 2.5 litres to 2500ml, then divide by 200ml (2500 / 200 = 12.5). The teacher can fill 12 full cups.",
+      "id": "qn-mc-0145"
+    },
+    {
+      "explanation": "The total number of parts in the ratio is 5 (2 + 3). One part is 4 pupils (20 / 5), so there are 8 girls (2 parts) and 12 boys (3 parts).",
+      "type": "multiple_choice",
+      "options": [
+        "6 girls, 14 boys",
+        "10 girls, 10 boys",
+        "8 girls, 12 boys",
+        "12 girls, 8 boys"
+      ],
+      "question": "A school gardening club has 20 pupils. The ratio of girls to boys is 2:3. How many girls and boys are in the club?",
+      "correctAnswer": 2,
+      "id": "qn-mc-0146"
+    },
+    {
+      "explanation": "20% of £25 is £5.00 (£25 / 5). Subtracting the discount from the original price gives the sale price (£25.00 - £5.00 = £20.00).",
+      "options": [
+        "£20.00",
+        "£21.25",
+        "£18.75",
+        "£22.50"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "question": "A box of 500 sheets of paper costs £25.00. A stationery supplier offers a 20% discount for schools. What is the discounted price?",
+      "id": "qn-mc-0147"
+    },
+    {
+      "correctAnswer": 3,
+      "question": "In a mental maths quiz, four pupils score 15, 19, 14, and 20. What is their mean score?",
+      "options": [
+        "15.5",
+        "16",
+        "18.5",
+        "17"
+      ],
+      "type": "multiple_choice",
+      "explanation": "To find the mean, sum the scores (15 + 19 + 14 + 20 = 68) and divide by the number of pupils (68 / 4 = 17).",
+      "id": "qn-mc-0148"
+    },
+    {
+      "question": "A school sports day starts at 09:30. It consists of 20 minutes of warm-ups, 75 minutes of races, and a 20-minute medal ceremony. At what time does it finish?",
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "options": [
+        "11:15",
+        "11:35",
+        "11:25",
+        "10:55"
+      ],
+      "explanation": "The total time is 115 minutes (20 + 75 + 20). 115 minutes is 1 hour and 55 minutes. Adding this to 09:30 results in 11:25.",
+      "id": "qn-mc-0149"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "18",
+        "12",
+        "15",
+        "20"
+      ],
+      "explanation": "Two-fifths of 30 is 12 (30 / 5 = 6; 6 * 2 = 12). Subtract 12 from 30 to find the number of pupils who did not walk (30 - 12 = 18).",
+      "question": "In a class of 30 pupils, two-fifths walked to school. How many pupils did NOT walk to school?",
+      "correctAnswer": 0,
+      "id": "qn-mc-0150"
+    },
+    {
+      "question": "A school bus travels at an average speed of 48 km/h. How far does the bus travel in 20 minutes?",
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "options": [
+        "12 km",
+        "16 km",
+        "24 km",
+        "9.6 km"
+      ],
+      "explanation": "Distance = Speed x Time. 20 minutes is 1/3 of an hour. 48 km/h / 3 = 16 kilometres.",
+      "id": "qn-mc-0151"
+    },
+    {
+      "correctAnswer": 3,
+      "question": "A teacher has 0.4 kg of flour for a baking activity. Each small cake requires 50g of flour. How many cakes can be made?",
+      "options": [
+        "4 cakes",
+        "6 cakes",
+        "10 cakes",
+        "8 cakes"
+      ],
+      "type": "multiple_choice",
+      "explanation": "0.4 kg is 400g. If each cake requires 50g, divide 400 by 50 to get 8 cakes.",
+      "id": "qn-mc-0152"
+    },
+    {
+      "correctAnswer": 2,
+      "question": "The percentage scores in a geography test are: 24%, 15%, 32%, 9%, and 27%. What is the range of these scores?",
+      "explanation": "The range is the difference between the highest and lowest values. 32% - 9% = 23%.",
+      "options": [
+        "19%",
+        "21%",
+        "23%",
+        "25%"
+      ],
+      "type": "multiple_choice",
+      "id": "qn-mc-0153"
+    },
+    {
+      "question": "In a class of 28 pupils, 75% passed their swimming test. How many pupils passed?",
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "options": [
+        "21",
+        "18",
+        "14",
+        "24"
+      ],
+      "explanation": "75% is the same as 3/4. 3/4 of 28 is 21 (28 / 4 = 7; 7 * 3 = 21).",
+      "id": "qn-mc-0154"
+    },
+    {
+      "correctAnswer": 1,
+      "question": "A teacher takes 30 pupils to the cinema. Tickets cost £4.50 each. How much change is left from £150.00?",
+      "explanation": "Multiply the number of pupils by the cost per ticket (30 * £4.50 = £135.00). Subtract this from the total given (£150.00 - £135.00 = £15.00).",
+      "options": [
+        "£5.00",
+        "£15.00",
+        "£25.00",
+        "£10.00"
+      ],
+      "type": "multiple_choice",
+      "id": "qn-mc-0155"
+    },
+    {
+      "explanation": "The total number of staff is 40. To find the percentage, divide the number of teachers by the total and multiply by 100 ((32 / 40) * 100 = 80%).",
+      "options": [
+        "70%",
+        "75%",
+        "80%",
+        "85%"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "question": "A school has 40 staff members in total. If 32 of them are teachers, what percentage are teachers?",
+      "id": "qn-mc-0156"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "15:15",
+        "15:20",
+        "15:25",
+        "14:55"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The total time is 45 + 10 + 60 = 115 minutes, which is 1 hour and 55 minutes. 13:30 plus 1 hour 55 minutes is 15:25.",
+      "question": "A school drama rehearsal starts at 13:30. It includes 45 minutes of acting, a 10-minute break, and 1 hour of set design. At what time does the rehearsal finish?",
+      "id": "qn-mc-0157"
+    },
+    {
+      "explanation": "Add the scores (12+17+15+18+13 = 75) and divide by the number of pupils (5). 75 ÷ 5 = 15.",
+      "question": "Five pupils score 12, 17, 15, 18, and 13 in a spelling test. What is their mean score?",
+      "correctAnswer": 1,
+      "options": [
+        "14",
+        "15",
+        "16",
+        "13.5"
+      ],
+      "type": "multiple_choice",
+      "id": "qn-mc-0158"
+    },
+    {
+      "correctAnswer": 0,
+      "options": [
+        "28",
+        "24",
+        "26",
+        "30"
+      ],
+      "type": "multiple_choice",
+      "question": "In a class of 32 pupils, one-eighth are absent due to a school trip. How many pupils are present in class?",
+      "explanation": "One-eighth of 32 is 4 pupils (32 ÷ 8). Therefore, 32 - 4 = 28 pupils are present.",
+      "id": "qn-mc-0159"
+    },
+    {
+      "correctAnswer": 3,
+      "options": [
+        "£36.00",
+        "£34.50",
+        "£32.00",
+        "£34.00"
+      ],
+      "type": "multiple_choice",
+      "question": "A teacher wants to buy a set of books costing £40.00. The bookshop offers a 15% discount for teachers. What is the final price after the discount?",
+      "explanation": "15% of £40 is £6 (0.15 x 40). Subtracting the discount from the original price: £40 - £6 = £34.",
+      "id": "qn-mc-0160"
+    },
+    {
+      "options": [
+        "20 km",
+        "25 km",
+        "24 km",
+        "16 km"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "question": "A school cross-country route is 15 miles long. Using the conversion 5 miles ≈ 8 kilometres, what is this distance in kilometres?",
+      "explanation": "15 miles is 3 lots of 5 miles. Since 5 miles ≈ 8 km, then 15 miles ≈ 3 × 8 km = 24 km.",
+      "id": "qn-mc-0161"
+    },
+    {
+      "options": [
+        "12 pupils",
+        "15 pupils",
+        "10 pupils",
+        "18 pupils"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "explanation": "1 hour 30 mins is 90 minutes. 90 minutes ÷ 6 minutes per pupil = 15 pupils.",
+      "question": "A teacher allocates 6 minutes to provide feedback to each pupil. How many pupils can the teacher see in 1 hour and 30 minutes?",
+      "id": "qn-mc-0162"
+    },
+    {
+      "correctAnswer": 3,
+      "options": [
+        "12 boys",
+        "14 boys",
+        "15 boys",
+        "16 boys"
+      ],
+      "type": "multiple_choice",
+      "explanation": "The total parts in the ratio 3:4 is 7 (3 + 4). One part is 28 ÷ 7 = 4 pupils. There are 4 parts of boys: 4 × 4 = 16 boys.",
+      "question": "A school chess club has 28 members. The ratio of girls to boys is 3:4. How many boys are in the club?",
+      "id": "qn-mc-0163"
+    },
+    {
+      "correctAnswer": 0,
+      "options": [
+        "8 bags",
+        "7 bags",
+        "9 bags",
+        "10 bags"
+      ],
+      "type": "multiple_choice",
+      "question": "A teacher has 3.2 kg of pebbles for a science project. If each group requires 400g of pebbles, how many groups can be supplied?",
+      "explanation": "3.2 kilograms is 3200 grams. 3200g ÷ 400g = 8 bags.",
+      "id": "qn-mc-0164"
+    },
+    {
+      "explanation": "The sum of 15 + 12 + 18 + 15 = 60. 60 ÷ 75 is 0.8. Multiplying by 100 gives 80%.",
+      "question": "A pupil scores the following marks in four mini-tests: 15, 12, 18, and 15. Each test was out of 20. What is the total percentage score across all four tests? (Total marks out of 80).",
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "options": [
+        "75%",
+        "60%",
+        "80%",
+        "85%"
+      ],
+      "id": "qn-mc-0165"
+    },
+    {
+      "explanation": "The highest score is 42 and the lowest is 19. 42 - 19 = 23.",
+      "question": "In a key stage assessment, the marks for a group are: 28, 42, 19, 31, and 25. What is the range of these marks?",
+      "options": [
+        "21",
+        "23",
+        "25",
+        "22"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "id": "qn-mc-0166"
+    },
+    {
+      "explanation": "30 students × £7.50 = £225.00. The change from £250.00 is £25.00.",
+      "question": "A teacher books a trip for 30 students at a cost of £7.50 per student. How much change will be received from £250.00?",
+      "options": [
+        "£35.00",
+        "£15.00",
+        "£20.00",
+        "£25.00"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "id": "qn-mc-0167"
+    },
+    {
+      "explanation": "20 minutes is 1/3 of an hour. Distance = Speed × Time, so 90 km/h × (1/3) hour = 30 km.",
+      "question": "A coach travels at a constant speed of 90 km/h on the motorway. How far does the coach travel in 20 minutes?",
+      "type": "multiple_choice",
+      "options": [
+        "45 km",
+        "30 km",
+        "25 km,",
+        "20 km"
+      ],
+      "correctAnswer": 1,
+      "id": "qn-mc-0168"
+    },
+    {
+      "options": [
+        "8",
+        "24",
+        "16",
+        "20"
+      ],
+      "type": "multiple_choice",
+      "explanation": "One-quarter of 32 is 8. Subtracting 8 from 32 leaves 24 pupils who did NOT order a hot meal.",
+      "question": "In a class of 32 pupils, one-quarter ordered a hot school meal. How many pupils did NOT order a hot meal?",
+      "correctAnswer": 1,
+      "id": "qn-mc-0169"
+    },
+    {
+      "explanation": "Total marks = 18 + 15 + 17 + 22 + 18 = 90. To find the mean, divide the total (90) by the number of scores (5), which equals 18.",
+      "question": "Five pupils score 18, 15, 17, 22, and 18 in a mathematics quiz. What is their mean score?",
+      "correctAnswer": 2,
+      "options": [
+        "17",
+        "20",
+        "18",
+        "15"
+      ],
+      "type": "multiple_choice",
+      "id": "qn-mc-0170"
+    },
+    {
+      "options": [
+        "10",
+        "15",
+        "50",
+        "12.5"
+      ],
+      "type": "multiple_choice",
+      "explanation": "3:2 ratio means 5 parts total (3+2). 25 divided by 5 is 5 pupils per part. 2 parts for girls is 10 pupils.",
+      "question": "A school gardening club has 25 members. The ratio of boys to girls is 3:2. How many girls are in the club?",
+      "correctAnswer": 0,
+      "id": "qn-mc-0171"
+    },
+    {
+      "correctAnswer": 3,
+      "explanation": "Total time is 2 hours and 30 minutes (150 minutes). 150 divided by 6 minutes per pupil equals 25 pupils.",
+      "question": "A teacher allocates 6 minutes per pupil for parent-teacher consultations. How many pupils can the teacher see in a 2 hour and 30 minute session?",
+      "type": "multiple_choice",
+      "options": [
+        "15",
+        "20",
+        "18",
+        "25"
+      ],
+      "id": "qn-mc-0172"
+    },
+    {
+      "explanation": "60% of 30 is 18 (0.6 * 30). Subtracting 18 from 30 leaves 12 pupils who did not bring a packed lunch.",
+      "question": "In a class of 30 pupils, 60% brought a packed lunch. How many pupils did NOT bring a packed lunch?",
+      "correctAnswer": 1,
+      "options": [
+        "18",
+        "12",
+        "10",
+        "15"
+      ],
+      "type": "multiple_choice",
+      "id": "qn-mc-0173"
+    },
+    {
+      "correctAnswer": 2,
+      "question": "A teacher has 3.5 kg of clay for an art project. If each pupil needs 250g, how many pupils can be supplied?",
+      "explanation": "3.5 kg is 3500g. 3500 divided by 250 equals 14.",
+      "type": "multiple_choice",
+      "options": [
+        "12",
+        "1000",
+        "14",
+        "15"
+      ],
+      "id": "qn-mc-0174"
+    },
+    {
+      "explanation": "12 miles divided by 3 is 4. 4 multiplied by 5 km is 20 km.",
+      "question": "A school fun run is 12 miles long. Given that 3 miles ≈ 5 kilometres, what is the distance in kilometres?",
+      "correctAnswer": 0,
+      "options": [
+        "20 km",
+        "18 km",
+        "7.2 km",
+        "30 km"
+      ],
+      "type": "multiple_choice",
+      "id": "qn-mc-0175"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "11:30",
+        "12:05",
+        "11:45",
+        "11:50"
+      ],
+      "correctAnswer": 3,
+      "explanation": "45 + 15 + 35 = 95 minutes (1 hour 35 minutes). Adding this to 10:15 results in 11:50.",
+      "question": "A morning workshop starts at 10:15. It includes a 45-minute talk, a 15-minute break, and a 35-minute activity. At what time does it end?",
+      "id": "qn-mc-0176"
+    },
+    {
+      "explanation": "90 km in 60 minutes means 1.5 km per minute. 1.5 km multiplied by 40 minutes is 60 km.",
+      "question": "A school coach travels at an average speed of 90 km/h. How far does it travel in 40 minutes?",
+      "correctAnswer": 1,
+      "options": [
+        "45 km",
+        "60 km",
+        "30 km",
+        "80 km"
+      ],
+      "type": "multiple_choice",
+      "id": "qn-mc-0177"
+    },
+    {
+      "correctAnswer": 2,
+      "explanation": "20 books at £6.50 each costs £130.00. £150.00 minus £130.00 leaves £20.00 change.",
+      "question": "A teacher buys 20 reading books costing £6.50 each. How much change is left from £150.00?",
+      "type": "multiple_choice",
+      "options": [
+        "£30.00",
+        "£15.00",
+        "£20.00",
+        "£13.50"
+      ],
+      "id": "qn-mc-0178"
+    },
+    {
+      "correctAnswer": 0,
+      "question": "In a staff meeting of 30 people, 24 are teachers. What percentage are teachers?",
+      "explanation": "24 out of 30 as a fraction is 24/30, which simplifies to 4/5. 4/5 is equivalent to 80%.",
+      "type": "multiple_choice",
+      "options": [
+        "80%",
+        "75%",
+        "60%",
+        "24%"
+      ],
+      "id": "qn-mc-0179"
+    },
+    {
+      "correctAnswer": 2,
+      "explanation": "The highest score is 43 and the lowest is 14. 43 minus 14 equals a range of 29.",
+      "question": "In a science test, the scores were: 22, 14, 38, 43, and 25. What is the range of these scores?",
+      "type": "multiple_choice",
+      "options": [
+        "30",
+        "15.5",
+        "29",
+        "57"
+      ],
+      "id": "qn-mc-0180"
+    },
+    {
+      "options": [
+        "4 hours 15 minutes",
+        "5 hours 00 minutes",
+        "4 hours 30 minutes",
+        "3 hours 45 minutes"
+      ],
+      "correctAnswer": 2,
+      "question": "Each lesson at a secondary school lasts three-quarters of an hour. How many hours and minutes are spent in lessons if a pupil has 6 lessons in one day?",
+      "explanation": "A three-quarter hour lesson is 45 minutes. Six lessons equal 270 minutes. 270 divided by 60 is 4.5 hours, or 4 hours 30 minutes.",
+      "type": "multiple_choice",
+      "id": "qn-mc-0181"
+    },
+    {
+      "options": [
+        "£34.50",
+        "£34.00",
+        "£36.00",
+        "£33.50"
+      ],
+      "type": "multiple_choice",
+      "question": "A teacher buys a box of stationery originally priced at £40.00. The shop offers a 15% discount for schools. What is the final price of the stationery?",
+      "correctAnswer": 1,
+      "explanation": "A 15% discount on £40 is £6 (0.15 x 40). £40 - £6 = £34.",
+      "id": "qn-mc-0182"
+    },
+    {
+      "explanation": "Total parts = 2 + 3 = 5. One part = 35 / 5 = 7. Boys = 2 parts = 2 * 7 = 14. Girls = 3 parts = 3 * 7 = 21. 21 - 14 = 7.",
+      "correctAnswer": 0,
+      "question": "In a school choir of 35 pupils, the ratio of boys to girls is 2:3. How many more girls are there than boys?",
+      "type": "multiple_choice",
+      "options": [
+        "7",
+        "5",
+        "14",
+        "21"
+      ],
+      "id": "qn-mc-0183"
+    },
+    {
+      "explanation": "3.6 km = 3600 metres. 3600 divided by 90 is 40.",
+      "correctAnswer": 3,
+      "question": "A primary school playground is being resurfaced. A worker marks out a 3.6 km running track. If each stride they take is 90 cm, how many strides do they take to cover the distance?",
+      "type": "multiple_choice",
+      "options": [
+        "30",
+        "360",
+        "4",
+        "40"
+      ],
+      "id": "qn-mc-0184"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "question": "Seven pupils scored the following marks in a spelling test: 12, 17, 13, 23, 4, 16, 19. What was the median score?",
+      "explanation": "The scores in order are: 4, 12, 13, 16, 17, 19, 23. The middle value (4th) is 16.",
+      "options": [
+        "13",
+        "15",
+        "16",
+        "17"
+      ],
+      "id": "qn-mc-0185"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "Total pupils = 13 + 12 + 15 = 40. Percentage of Year 4 = (12 / 40) * 100 = 30%.",
+      "correctAnswer": 0,
+      "question": "On a school bus, there are 13 pupils from Year 3, 12 pupils from Year 4, and 15 pupils from Year 5. What percentage of the pupils on the bus are from Year 4?",
+      "options": [
+        "30%",
+        "12%",
+        "40%",
+        "25%"
+      ],
+      "id": "qn-mc-0186"
+    },
+    {
+      "options": [
+        "85 minutes",
+        "95 minutes",
+        "75 minutes",
+        "105 minutes"
+      ],
+      "type": "multiple_choice",
+      "explanation": "14:40 to 15:00 is 20 minutes. 15:00 to 16:15 is 1 hour 15 minutes. Total = 1 hour 35 minutes, which is 95 minutes.",
+      "correctAnswer": 1,
+      "question": "A staff meeting starts at 14:40 and finishes at 16:15. What is the total duration of the meeting in minutes?",
+      "id": "qn-mc-0187"
+    },
+    {
+      "options": [
+        "£4.20",
+        "£3.60",
+        "£4.50",
+        "£3.00"
+      ],
+      "explanation": "Each packet costs £1.20 / 8 = 15p. 30 packets cost 30 * 15p = £4.50.",
+      "question": "A teacher buys 8 packets of pencils for £1.20. At this same rate, how much would it cost to buy 30 packets?",
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "id": "qn-mc-0188"
+    },
+    {
+      "correctAnswer": 3,
+      "question": "A pupil sits three tests, each out of 25 marks. They score 18, 16, and 20. What is their overall percentage across the three tests?",
+      "explanation": "Total marks = 18 + 16 + 20 = 54. Total possible = 25 * 3 = 75. (54 / 75) = (18 / 25) = (72 / 100) = 72%.",
+      "type": "multiple_choice",
+      "options": [
+        "68%",
+        "75%",
+        "54%",
+        "72%"
+      ],
+      "id": "qn-mc-0189"
+    },
+    {
+      "explanation": "1 litre = 1000ml. Total squash = 500ml + 3500ml = 4000ml. 4000ml / 200ml = 20 cups.",
+      "correctAnswer": 1,
+      "question": "For a sports day, a teacher mixes 500ml of squash concentrate with 3.5 litres of water. If each cup holds 200ml, how many full cups can be poured?",
+      "type": "multiple_choice",
+      "options": [
+        "15 cups",
+        "20 cups",
+        "25 cups",
+        "18 cups"
+      ],
+      "id": "qn-mc-0190"
+    },
+    {
+      "options": [
+        "48",
+        "72",
+        "60",
+        "80"
+      ],
+      "type": "multiple_choice",
+      "question": "In a Year 6 cohort of 120 pupils, 3/5 of the pupils walk to school. How many pupils do NOT walk to school?",
+      "correctAnswer": 0,
+      "explanation": "3/5 of 120 = (120 / 5) * 3 = 24 * 3 = 72. 120 - 72 = 48.",
+      "id": "qn-mc-0191"
+    },
+    {
+      "options": [
+        "48 minutes",
+        "30 minutes",
+        "40 minutes",
+        "25 minutes"
+      ],
+      "correctAnswer": 1,
+      "question": "A teacher drives 40 km to a training venue at an average speed of 50 mph. Using the conversion 8 kilometres ≈ 5 miles, how many minutes does the journey take?",
+      "explanation": "Using 8km ≈ 5 miles, 40km is 5 times 8km, so it is 5 times 5 miles = 25 miles. Time = 25 miles / 50 mph = 0.5 hours = 30 minutes.",
+      "type": "multiple_choice",
+      "id": "qn-mc-0192"
+    },
+    {
+      "correctAnswer": 1,
+      "options": [
+        "17",
+        "19",
+        "21",
+        "23"
+      ],
+      "question": "A small group of five pupils achieved the following marks in a mental maths test: 14, 19, 21, 25, 16. What is the mean score?",
+      "explanation": "To find the mean, add the scores (14+19+21+25+16=95) and divide by the number of values (95/5 = 19).",
+      "type": "multiple_choice",
+      "id": "qn-mc-0193"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "The total score is 27 out of 45. To find the percentage, divide 27 by 45 and multiply by 100: (27/45) = 0.6, which is 60%.",
+      "question": "A pupil scored 27 marks out of a possible 45 in a history assignment. What was the pupil's score as a percentage?",
+      "options": [
+        "55%",
+        "58%",
+        "60%",
+        "65%"
+      ],
+      "correctAnswer": 2,
+      "id": "qn-mc-0194"
+    },
+    {
+      "question": "The ratio of boys to girls in Year 6 is 4:5. If there are 72 pupils in total in Year 6, how many girls are there?",
+      "type": "multiple_choice",
+      "explanation": "The total number of parts in the ratio is 4 + 5 = 9. One part equals 72 / 9 = 8. There are 5 parts for girls, so 5 x 8 = 40 girls.",
+      "correctAnswer": 0,
+      "options": [
+        "40",
+        "32",
+        "45",
+        "36"
+      ],
+      "id": "qn-mc-0195"
+    },
+    {
+      "correctAnswer": 3,
+      "options": [
+        "£216.00",
+        "£200.00",
+        "£188.00",
+        "£192.00"
+      ],
+      "question": "A school orders laptops costing £240 each. The supplier offers a 20% discount for bulk orders. What is the discounted price per laptop?",
+      "type": "multiple_choice",
+      "explanation": "10% of £240 is £24, so 20% is £48. Subtracting £48 from £240 leaves £192.",
+      "id": "qn-mc-0196"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "At 45 mph, the coach travels 0.75 miles per minute. In 20 minutes, it travels 0.75 x 20 = 15 miles.",
+      "question": "A school coach travels at a constant speed of 45 mph. How many miles does it cover in 20 minutes?",
+      "options": [
+        "12 miles",
+        "15 miles",
+        "18 miles",
+        "20 miles"
+      ],
+      "correctAnswer": 1,
+      "id": "qn-mc-0197"
+    },
+    {
+      "options": [
+        "24 litres",
+        "25.5 litres",
+        "27 litres",
+        "30 litres"
+      ],
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "explanation": "1 gallon = 4.5 litres. So, 6 gallons = 6 x 4.5 = 27 litres.",
+      "question": "A teacher is told there are 6 gallons of water in a tank. Using the conversion 1 gallon ≈ 4.5 litres, how many litres are in the tank?",
+      "id": "qn-mc-0198"
+    },
+    {
+      "correctAnswer": 0,
+      "options": [
+        "11:05",
+        "11:15",
+        "10:55",
+        "11:20"
+      ],
+      "question": "An assembly begins at 09:15. It consists of a 45-minute presentation, a 15-minute performance, and a 50-minute workshop. At what time does it finish?",
+      "type": "multiple_choice",
+      "explanation": "The total time is 45 + 15 + 50 = 110 minutes. 110 minutes is 1 hour and 50 minutes. Adding this to 09:15 gives 11:05.",
+      "id": "qn-mc-0199"
+    },
+    {
+      "correctAnswer": 1,
+      "options": [
+        "12",
+        "16",
+        "18",
+        "20"
+      ],
+      "question": "In a class of 24 pupils, one third of the class brought sandwiches. The rest have a hot school meal. How many pupils have a hot school meal?",
+      "explanation": "One third of 24 is 8. If 8 have sandwiches, then the remaining 16 pupils (24 - 8) have hot meals.",
+      "type": "multiple_choice",
+      "id": "qn-mc-0200"
+    },
+    {
+      "correctAnswer": 3,
+      "options": [
+        "£0.75",
+        "£0.80",
+        "£0.95",
+        "£0.85"
+      ],
+      "question": "A teacher buys 12 packs of highlighters for a total cost of £10.20. What is the cost of a single pack?",
+      "explanation": "Divide the total cost by the number of packs to find the unit price: £10.20 / 12 = £0.85 per pack.",
+      "type": "multiple_choice",
+      "id": "qn-mc-0201"
+    },
+    {
+      "question": "A primary school currently has 450 pupils. It is predicted that the number of pupils will increase by 10% next year. How many pupils will there be next year?",
+      "explanation": "The current year is 450 pupils. A 10% increase is 45 pupils. So, next year will be 450 + 45 = 495 pupils.",
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "options": [
+        "475",
+        "500",
+        "495",
+        "480"
+      ],
+      "id": "qn-mc-0202"
+    },
+    {
+      "question": "A school cook has 2.4 kg of pasta. If each portion served is 80g, how many portions can be made from the pasta?",
+      "explanation": "There are 1000g in 1kg, so 2.4kg = 2400g. Divide 2400g by 80g to get 30 portions.",
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "options": [
+        "30",
+        "240",
+        "3",
+        "300"
+      ],
+      "id": "qn-mc-0203"
+    },
+    {
+      "question": "In a year group of 200 pupils, three-fifths are girls. How many boys are in the year group?",
+      "explanation": "3/5 of 200 is 120 (since 1/5 is 40). If 120 pupils are girls, then 200 - 120 = 80 pupils are boys.",
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "options": [
+        "60 boys",
+        "120 boys",
+        "80 boys",
+        "100 boys"
+      ],
+      "id": "qn-mc-0204"
+    },
+    {
+      "correctAnswer": 2,
+      "options": [
+        "19 years",
+        "15 years",
+        "21 years",
+        "24 years"
+      ],
+      "question": "In a staff room, the ages of six teachers are 24, 33, 12, 18, 29, and 23. What is the range of their ages?",
+      "type": "multiple_choice",
+      "explanation": "To find the range, subtract the lowest value (12) from the highest value (33). 33 - 12 = 21.",
+      "id": "qn-mc-0205"
+    },
+    {
+      "correctAnswer": 1,
+      "options": [
+        "£12.50",
+        "£12.00",
+        "£11.50",
+        "£13.00"
+      ],
+      "question": "A textbook originally costs £15.00. A bookstore offers a 20% discount for trainee teachers. What is the sale price of the book?",
+      "type": "multiple_choice",
+      "explanation": "20% of £15 is £3. Subtract the discount from the original price: £15 - £3 = £12.",
+      "id": "qn-mc-0206"
+    },
+    {
+      "options": [
+        "12 pupils",
+        "10 pupils",
+        "15 pupils",
+        "18 pupils"
+      ],
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "question": "In a class of 30 pupils, 2/5 of the children play a musical instrument. How many pupils play an instrument?",
+      "explanation": "One fifth of 30 is 6 (30 ÷ 5 = 6). Two fifths is double that, which is 12.",
+      "id": "qn-mc-0207"
+    },
+    {
+      "explanation": "1.5 litres is 1500ml. Divide the total volume by the bottle size: 1500 ÷ 250 = 6.",
+      "correctAnswer": 3,
+      "options": [
+        "4 bottles",
+        "5 bottles",
+        "8 bottles",
+        "6 bottles"
+      ],
+      "question": "A teacher has a 1.5 litre bottle of juice. How many 250ml bottles can be filled completely from this juice?",
+      "type": "multiple_choice",
+      "id": "qn-mc-0208"
+    },
+    {
+      "options": [
+        "80%",
+        "75%",
+        "85%",
+        "70%"
+      ],
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "question": "A pupil scores 16 out of 20 in a spelling test. What is this score as a percentage?",
+      "explanation": "16 divided by 20 is 0.8. Multiplying by 100 gives 80%.",
+      "id": "qn-mc-0209"
+    },
+    {
+      "explanation": "If the ratio is 2:3, there are 5 parts in total. Each part is 30 ÷ 5 = 6 pupils. The number of girls is 3 parts: 3 × 6 = 18.",
+      "options": [
+        "12 girls",
+        "20 girls",
+        "18 girls",
+        "15 girls"
+      ],
+      "correctAnswer": 2,
+      "question": "The ratio of boys to girls in a school club is 2:3. If there are 30 pupils in total, how many girls are there?",
+      "type": "multiple_choice",
+      "id": "qn-mc-0210"
+    },
+    {
+      "question": "A school kitchen has 4.2 kg of rice. If each portion is 60g, how many portions can be served?",
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "options": [
+        "60 portions",
+        "70 portions",
+        "80 portions",
+        "42 portions"
+      ],
+      "explanation": "Since 1 kg = 1000g, 4.2 kg is 4200g. Divide 4200 by 60 to get 70 portions.",
+      "id": "qn-mc-0211"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "A teacher cycles at a constant speed of 12 km/h. How many kilometres do they cover in 20 minutes?",
+      "options": [
+        "3 km",
+        "6 km",
+        "5 km",
+        "4 km"
+      ],
+      "correctAnswer": 3,
+      "explanation": "20 minutes is 1/3 of an hour (60 ÷ 20 = 3). Divide the hourly speed by 3: 12 km ÷ 3 = 4 km.",
+      "id": "qn-mc-0212"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "A teacher travels 24 kilometres to a school. Using the conversion 8 kilometres ≈ 5 miles, what is this distance in miles?",
+      "correctAnswer": 1,
+      "options": [
+        "12 miles",
+        "15 miles",
+        "18 miles",
+        "20 miles"
+      ],
+      "explanation": "8 kilometres equals 5 miles. Therefore, 16 kilometres equals 10 miles (double). 16 + 8 = 24 km, and 10 + 5 = 15 miles.",
+      "id": "qn-mc-0213"
+    },
+    {
+      "explanation": "Add the three lengths: 25cm + 40cm + 35cm = 100cm. 100cm is equal to exactly 1.0 metre.",
+      "question": "Three pieces of ribbon measure 25cm, 40cm, and 35cm. What is their total length in metres?",
+      "type": "multiple_choice",
+      "options": [
+        "1.0 m",
+        "1.1 m",
+        "0.9 m",
+        "1.2 m"
+      ],
+      "correctAnswer": 0,
+      "id": "qn-mc-0214"
+    },
+    {
+      "correctAnswer": 3,
+      "options": [
+        "75 minutes",
+        "65 minutes",
+        "95 minutes",
+        "85 minutes"
+      ],
+      "type": "multiple_choice",
+      "question": "A teacher starts marking at 07:45 and finishes at 09:10. How many minutes did they spend marking?",
+      "explanation": "7:45 to 8:00 is 15 mins. 8:00 to 9:10 is 1 hour 10 mins. Total time is 1 hour 25 mins, which is 60 + 25 = 85 minutes.",
+      "id": "qn-mc-0215"
+    },
+    {
+      "explanation": "10% of 40 is 4. So, 5% is 2. 15% is 4 + 2 = 6 pupils. Alternatively, 0.15 × 40 = 6.",
+      "question": "In a year group of 40 pupils, 15% are left-handed. How many pupils are left-handed?",
+      "type": "multiple_choice",
+      "options": [
+        "4 pupils",
+        "8 pupils",
+        "6 pupils",
+        "10 pupils"
+      ],
+      "correctAnswer": 2,
+      "id": "qn-mc-0216"
+    },
+    {
+      "correctAnswer": 1,
+      "options": [
+        "£40.20",
+        "£40.80",
+        "£41.40",
+        "£42.00"
+      ],
+      "explanation": "To find 15% of £48, first find 10% (£4.80) and 5% (£2.40). Adding these gives a £7.20 reduction. £48.00 - £7.20 = £40.80.",
+      "type": "multiple_choice",
+      "question": "A set of textbooks costs £48.00. A school receives a 15% discount for a bulk order. What is the final price after the discount?",
+      "id": "qn-mc-0217"
+    },
+    {
+      "correctAnswer": 2,
+      "options": [
+        "24",
+        "25",
+        "26",
+        "28"
+      ],
+      "explanation": "To convert 6.5 metres to centimetres, multiply by 100 to get 650 cm. Divide 650 by 25 to find the number of strips (650 / 25 = 26).",
+      "type": "multiple_choice",
+      "question": "A teacher has a roll of display border that is 6.5 metres long. They need to cut it into strips of 25 cm each. How many strips can be cut?",
+      "id": "qn-mc-0218"
+    },
+    {
+      "explanation": "The total ratio parts are 3 + 5 = 8. One part is 40 ÷ 8 = 5. There are 3 parts of fruit (3 x 5 = 15) and 5 parts of water (5 x 5 = 25).",
+      "correctAnswer": 0,
+      "options": [
+        "15 litres",
+        "20 litres",
+        "25 litres",
+        "30 litres"
+      ],
+      "question": "A school kitchen makes a fruit drink by mixing fruit juice and water in the ratio 3:5. To make 40 litres of the drink, how much fruit juice is needed?",
+      "type": "multiple_choice",
+      "id": "qn-mc-0219"
+    },
+    {
+      "explanation": "Find the total score by adding 18, 15, 17, 19, and 16 to get 85. Divide the total by the number of pupils (85 / 5 = 17).",
+      "correctAnswer": 3,
+      "options": [
+        "15.5",
+        "16.00",
+        "16.5",
+        "17.00"
+      ],
+      "question": "In a small group intervention, five pupils scored 18, 15, 17, 19, and 16 in a mental maths test. What is the mean score of the group?",
+      "type": "multiple_choice",
+      "id": "qn-mc-0220"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "A school trip leaves at 08:50 and arrives at the museum at 10:30. How many minutes did the journey take?",
+      "correctAnswer": 1,
+      "options": [
+        "90 minutes",
+        "100 minutes",
+        "110 minutes",
+        "120 minutes"
+      ],
+      "explanation": "From 08:50 to 10:30 is 1 hour and 40 minutes. 1 hour is 60 minutes, so 60 + 40 = 100 minutes.",
+      "id": "qn-mc-0221"
+    },
+    {
+      "correctAnswer": 2,
+      "options": [
+        "4",
+        "6",
+        "8",
+        "12"
+      ],
+      "explanation": "Three quarters of 32 is 24 (32 / 4 = 8; 8 x 3 = 24). The remaining pupils are 32 - 24 = 8.",
+      "type": "multiple_choice",
+      "question": "In a class of 32 pupils, three quarters of the children have permission to go on a trip. How many pupils do not yet have permission?",
+      "id": "qn-mc-0222"
+    },
+    {
+      "question": "A teacher buys 2.5 kg of clay for £4.50. At this rate, how much would 4 kg of clay cost?",
+      "type": "multiple_choice",
+      "explanation": "If 2.5 kg costs £4.50, then 1 kg costs £4.50 / 2.5 = £1.80. Therefore, 4 kg costs 4 x £1.80 = £7.20.",
+      "correctAnswer": 0,
+      "options": [
+        "£7.20",
+        "£7.50",
+        "£8.10",
+        "£8.40"
+      ],
+      "id": "qn-mc-0223"
+    },
+    {
+      "question": "A teacher lives 17.5 miles from school. Using the conversion 5 miles ≈ 8 kilometres, what is this distance in kilometres?",
+      "type": "multiple_choice",
+      "explanation": "To convert 17.5 miles to km, divide by 5 to find one 'unit' (17.5 / 5 = 3.5), then multiply by 8 (3.5 x 8 = 28 km).",
+      "correctAnswer": 3,
+      "options": [
+        "24 km",
+        "25.5 km",
+        "27 km",
+        "28 km"
+      ],
+      "id": "qn-mc-0224"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "A Year 6 cohort has 120 pupils. The local authority predicts an increase of 15% for the next intake. How many pupils are expected in the next intake?",
+      "options": [
+        "135",
+        "138",
+        "142",
+        "150"
+      ],
+      "correctAnswer": 1,
+      "explanation": "15% of 120 is 18 (10% is 12, 5% is 6). Adding the 18 pupils to the original 120 gives 138 pupils.",
+      "id": "qn-mc-0225"
+    },
+    {
+      "correctAnswer": 2,
+      "options": [
+        "£4.10",
+        "£4.90",
+        "£5.10",
+        "£5.90"
+      ],
+      "explanation": "The total cost is (2 x £1.25) + (3 x £0.80) = £2.50 + £2.40 = £4.90. The change from £10 is £10.00 - £4.90 = £5.10.",
+      "type": "multiple_choice",
+      "question": "A teacher buys 2 packs of pens at £1.25 each and 3 packs of paper at 80p each. How much change would they receive from a £10.00 note?",
+      "id": "qn-mc-0226"
+    },
+    {
+      "explanation": "To calculate the percentage, divide the score by the total and multiply by 100: (42 / 60) x 100 = 0.7 x 100 = 70%.",
+      "options": [
+        "70%",
+        "72%",
+        "75%",
+        "80%"
+      ],
+      "correctAnswer": 0,
+      "question": "In a science test, a pupil scores 42 marks out of a possible 60. What is their score as a percentage?",
+      "type": "multiple_choice",
+      "id": "qn-mc-0227"
+    },
+    {
+      "question": "A school caterer has 3.6 kg of cheese. Each portion of cheese for a salad is 45g. How many portions can be served?",
+      "type": "multiple_choice",
+      "explanation": "Divide 3.6 kg (3600g) by 45g. 3600 / 45 = 80 portions.",
+      "correctAnswer": 2,
+      "options": [
+        "70",
+        "75",
+        "80",
+        "85"
+      ],
+      "id": "qn-mc-0228"
+    },
+    {
+      "correctAnswer": 2,
+      "question": "In a survey of 120 pupils, the ratio of those who walk to school to those who take the bus is 2:3. How many pupils walk to school?",
+      "explanation": "Divide 120 by 5 to find one part (24), then multiply by 2 for the number of pupils who walked (48).",
+      "options": [
+        "24",
+        "40",
+        "48",
+        "72"
+      ],
+      "type": "multiple_choice",
+      "id": "qn-mc-0229"
+    },
+    {
+      "options": [
+        "10 cups",
+        "12 cups",
+        "15 cups",
+        "20 cups"
+      ],
+      "type": "multiple_choice",
+      "explanation": "A 1.5-litre bottle contains 1500ml. Dividing 1500 by 125 gives 12 full cups.",
+      "correctAnswer": 1,
+      "question": "A teacher has a 1.5-litre bottle of squash. How many 125ml cups can be filled from this bottle?",
+      "id": "qn-mc-0230"
+    },
+    {
+      "explanation": "A 15% discount on £12 is £1.80 (£12.00 - £1.80 = £10.20). Adding £2.50 postage gives £12.70.",
+      "type": "multiple_choice",
+      "options": [
+        "£11.50",
+        "£12.30",
+        "£12.50",
+        "£12.70"
+      ],
+      "question": "A textbook costs £12.00. A school gets a 15% discount but must pay £2.50 for postage per book. What is the total cost for one book?",
+      "correctAnswer": 3,
+      "id": "qn-mc-0231"
+    },
+    {
+      "question": "A morning SATs session begins at 09:35 and ends at 11:10. What was the total duration of the session in minutes?",
+      "correctAnswer": 0,
+      "explanation": "From 09:35 to 11:10 is 1 hour and 35 minutes, which equals 95 minutes.",
+      "type": "multiple_choice",
+      "options": [
+        "95 minutes",
+        "105 minutes",
+        "115 minutes",
+        "135 minutes"
+      ],
+      "id": "qn-mc-0232"
+    },
+    {
+      "question": "Four pupils score 14, 19, 15, and 24 in a reading challenge. What is the mean score of these pupils?",
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "options": [
+        "16.5",
+        "17.0",
+        "18.0",
+        "19.0"
+      ],
+      "explanation": "To find the mean, sum the scores (14+19+15+24=72) and divide by the number of pupils (72 ÷ 4 = 18).",
+      "id": "qn-mc-0233"
+    },
+    {
+      "correctAnswer": 1,
+      "question": "A teacher walks at an average speed of 4 km/h. How long will it take them to walk a distance of 10 kilometres?",
+      "options": [
+        "2 hours 15 minutes",
+        "2 hours 30 minutes",
+        "2 hours 40 minutes",
+        "2 hours 50 minutes"
+      ],
+      "type": "multiple_choice",
+      "explanation": "Divide the total distance by speed: 10 ÷ 4 = 2.5 hours. 0.5 hours is 30 minutes, so total time is 2 hours 30 minutes.",
+      "id": "qn-mc-0234"
+    },
+    {
+      "explanation": "12 (Maths) + 8 (English) + 10 (Science) = 30. The fraction for Science is 10/30, which simplifies to 1/3.",
+      "type": "multiple_choice",
+      "options": [
+        "1/5",
+        "1/4",
+        "2/5",
+        "1/3"
+      ],
+      "question": "In a staff meeting, 12 teachers represent Maths, 8 represent English, and 10 represent Science. What fraction of the teachers represent Science?",
+      "correctAnswer": 3,
+      "id": "qn-mc-0235"
+    },
+    {
+      "explanation": "10% of £240 is £24. 5% is £12. So 15% is £36. £240 - £36 = £204.",
+      "options": [
+        "£196",
+        "£200_math",
+        "£204",
+        "£214_math"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "question": "A laptop originally priced at £240 is reduced by 15% in a sale. What is the sale price of the laptop?",
+      "id": "qn-mc-0236"
+    },
+    {
+      "explanation": "30cm is 0.3m. Multiply 0.3m by 25 strips to get 7.5 metres.",
+      "options": [
+        "7.5m",
+        "75m",
+        "750cm_math",
+        "0.75m_math"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "question": "A teacher needs 25 strips of paper for a display. Each strip must be 30cm long. What is the total length of paper needed in metres?",
+      "id": "qn-mc-0237"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "5.9 kg",
+        "6.1 kg",
+        "6.2 kg",
+        "6.3 kg"
+      ],
+      "explanation": "Multiply 14 by 0.45: 14 x 0.4 = 5.6; 14 x 0.05 = 0.7. 5.6 + 0.7 = 6.3 kg.",
+      "question": "One bag of sugar weighs 450g. What is the total weight of 14 bags in kilograms?",
+      "correctAnswer": 3,
+      "id": "qn-mc-0238"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "42 pupils",
+        "48 pupils",
+        "50 pupils",
+        "54 pupils"
+      ],
+      "explanation": "100% - 20% = 80%. 0.8 x 60 = 48 pupils. Alternatively, 10% is 6, so 20% is 12. 60 - 12 = 48.",
+      "question": "Out of 60 pupils, 20% do not have a library card. How many pupils do have a library card?",
+      "correctAnswer": 1,
+      "id": "qn-mc-0239"
+    },
+    {
+      "question": "A school uses the exchange rate 8 miles ≈ 20 km. How many kilometres are equivalent to 5 miles?",
+      "correctAnswer": 2,
+      "explanation": "Divide 20 by 8 to find the value of 1 mile in km (2.5 km). Multiply 2.5 by 5 to get 12.5 km.",
+      "type": "multiple_choice",
+      "options": [
+        "10.5 km",
+        "11.25 km",
+        "12.5 km",
+        "13.0 km"
+      ],
+      "id": "qn-mc-0240"
+    },
+    {
+      "options": [
+        "£216.00",
+        "£204.00",
+        "£205.50",
+        "£192.00"
+      ],
+      "question": "A tablet computer costs £240.00 excluding VAT. A school receives a 15% discount on this price. What is the discounted price of the tablet?",
+      "correctAnswer": 1,
+      "explanation": "Divide 240 by 12 to find 10% (24), then halve that to find 5% (12). Subtract 24 and 12 from 240.",
+      "type": "multiple_choice",
+      "id": "qn-mc-0241"
+    },
+    {
+      "explanation": "Sum the scores (56) and divide by the number of pupils (8) to find the mean.",
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "options": [
+        "6.5",
+        "6.0",
+        "7.0",
+        "8.0"
+      ],
+      "question": "In a spelling test, eight pupils scored: 5, 8, 4, 10, 9, 7, 6, and 7. What was the mean score?",
+      "id": "qn-mc-0242"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "Add the lengths (1.2m + 0.85m + 1.45m = 3.5m). Subtract this from the total length: 5m - 3.5m = 1.5m.",
+      "correctAnswer": 0,
+      "question": "A teacher has a 5-metre roll of ribbon. She cuts lengths of 1.2m, 85cm, and 1.45m for a display. How much ribbon is left?",
+      "options": [
+        "1.50m",
+        "1.40m",
+        "1.65m",
+        "2.50m"
+      ],
+      "id": "qn-mc-0243"
+    },
+    {
+      "explanation": "Total parts = 3 + 2 = 5. One part = 150 / 5 = 30. Girls = 2 parts = 30 x 2 = 60.",
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "options": [
+        "30",
+        "90",
+        "60",
+        "45"
+      ],
+      "question": "The ratio of boys to girls in Year 4 is 3:2. If there are 150 pupils in total, how many girls are there?",
+      "id": "qn-mc-0244"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "explanation": "4/5 of 30 is 24. 2/3 of those 24 pupils is 16 (24 divided by 3, then multiplied by 2).",
+      "question": "In a class of 30 pupils, four-fifths have a pet. Of those with a pet, two-thirds have a dog. How many pupils have a dog?",
+      "options": [
+        "20",
+        "16",
+        "12",
+        "18"
+      ],
+      "id": "qn-mc-0245"
+    },
+    {
+      "options": [
+        "15",
+        "18",
+        "25",
+        "20"
+      ],
+      "question": "A box of 500 sheets of paper costs £1.75. How many boxes can a teacher buy with a budget of £35.00?",
+      "correctAnswer": 3,
+      "explanation": "Convert £1.75 to 175p. 3500 divided by 175 is the same as 3500 divided by 1.75, which equals 20.",
+      "type": "multiple_choice",
+      "id": "qn-mc-0246"
+    },
+    {
+      "explanation": "Find 1% of 300 (3), then multiply by 17.5. 10% = 30, 5% = 15, 2.5% = 7.5. 30 + 15 + 7.5 = 52.5.",
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "options": [
+        "52.50m",
+        "51.50m",
+        "53.25m",
+        "50.00m"
+      ],
+      "question": "A school playing field is 300 metres long. During a race, a student completes 17.5% of the length before stopping. How many metres did they run?",
+      "id": "qn-mc-0247"
+    },
+    {
+      "explanation": "Divide 15 by 20 to get 0.75, then multiply by 100 to get 75%.",
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "options": [
+        "15%",
+        "75%",
+        "80%",
+        "60%"
+      ],
+      "question": "A teacher marks a set of 20 essays. She manages to mark 15 of them before her break. What percentage of the essays has she marked?",
+      "id": "qn-mc-0248"
+    },
+    {
+      "options": [
+        "405 minutes",
+        "385 minutes",
+        "375 minutes",
+        "395 minutes"
+      ],
+      "question": "The school day starts at 08:45 and finishes at 15:20. How many minutes long is the school day?",
+      "explanation": "08:45 to 15:20. 8:45 to 14:45 is 6 hours (360 mins). 14:45 to 15:20 is 35 mins. Total = 395 mins.",
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "id": "qn-mc-0249"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "35 students x £4.20 = £147.00. Adding the £25.00 transport cost gives £172.00.",
+      "correctAnswer": 2,
+      "question": "A school trip costs £4.20 per student for entry plus a flat fee of £25.00 for the bus. What is the total cost for 35 students?",
+      "options": [
+        "£147.00",
+        "£162.00",
+        "£172.00",
+        "£170.00"
+      ],
+      "id": "qn-mc-0250"
+    },
+    {
+      "correctAnswer": 0,
+      "explanation": "1 gallon = 4.5 litres. 12 gallons = 12 x 4.5 = 54 litres.",
+      "type": "multiple_choice",
+      "options": [
+        "54 litres",
+        "48 litres",
+        "50 litres",
+        "60 litres"
+      ],
+      "question": "A school minibus uses approximately 1 gallon of fuel for every 4.5 litres. If the tank holds 12 gallons, what is its capacity in litres?",
+      "id": "qn-mc-0251"
+    },
+    {
+      "question": "In a Year 3 class of 25 pupils, 40% are boys. How many girls are in the class?",
+      "options": [
+        "10",
+        "15",
+        "20",
+        "12.5"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "explanation": "40% of 25 is 10. 25 minus 10 equals 15.",
+      "id": "qn-mc-0252"
+    },
+    {
+      "explanation": "25% of 28 is 7. Multiply 7 by 3 to find three-quarters, which equals 21.",
+      "type": "multiple_choice",
+      "question": "In a class of 28 pupils, three-quarters are going on a school trip. How many pupils are going on the trip?",
+      "correctAnswer": 1,
+      "options": [
+        "18",
+        "21",
+        "24",
+        "25"
+      ],
+      "id": "qn-mc-0253"
+    },
+    {
+      "explanation": "To find the mean, add the scores (6+9+10+12+8=45) and divide by the number of scores (45 ÷ 5 = 9).",
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "question": "Five pupils achieved the following scores in a maths quiz: 6, 9, 10, 12, and 8. What was their mean score?",
+      "options": [
+        "9.00",
+        "8.00",
+        "8.50",
+        "9.50"
+      ],
+      "id": "qn-mc-0254"
+    },
+    {
+      "explanation": "Total parts = 5 + 4 = 9. One part = 180 / 9 = 20. Girls = 4 parts, so 4 x 20 = 80.",
+      "type": "multiple_choice",
+      "options": [
+        "100",
+        "90",
+        "120",
+        "80"
+      ],
+      "question": "The ratio of boys to girls in a school year group is 5:4. If there are 180 pupils in total, how many girls are there?",
+      "correctAnswer": 3,
+      "id": "qn-mc-0255"
+    },
+    {
+      "explanation": "10% of £2.50 is £0.25. 20% is £0.50. £2.50 - £0.50 = £2.00.",
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "question": "A workbook normally costs £2.50. A school receives a 20% discount for bulk buying. What is the discounted price per book?",
+      "options": [
+        "£2.25",
+        "£2.10",
+        "£2.00",
+        "£1.95"
+      ],
+      "id": "qn-mc-0256"
+    },
+    {
+      "options": [
+        "65 minutes",
+        "75 minutes",
+        "85 minutes",
+        "55 minutes"
+      ],
+      "question": "An English lesson starts at 09:05 and ends at 10:20. How many minutes does the lesson last?",
+      "correctAnswer": 1,
+      "explanation": "9:05 to 10:05 is 1 hour. 10:05 to 10:20 is 15 minutes. Total = 75 minutes.",
+      "type": "multiple_choice",
+      "id": "qn-mc-0257"
+    },
+    {
+      "explanation": "Total length = 18 x 40cm = 720cm. Conversion: 720 / 100 = 7.2 metres.",
+      "type": "multiple_choice",
+      "question": "A teacher needs 18 pieces of string, each 40cm long. What is the total length of string required in metres?",
+      "correctAnswer": 0,
+      "options": [
+        "7.2m",
+        "7.25m",
+        "0.72m",
+        "72m"
+      ],
+      "id": "qn-mc-0258"
+    },
+    {
+      "options": [
+        "12",
+        "14",
+        "16",
+        "18"
+      ],
+      "question": "Two-thirds of a class of 30 pupils take part in an after-school club. Of these, 20% are in the choir. How many pupils are in the club but NOT in the choir?",
+      "correctAnswer": 2,
+      "explanation": "One-third of 30 is 10. Two-thirds is 20. 20% of 20 is 4 (1/5 of 20). 20 - 4 = 16.",
+      "type": "multiple_choice",
+      "id": "qn-mc-0259"
+    },
+    {
+      "options": [
+        "£1.80",
+        "£2.10",
+        "£1.85",
+        "£1.90"
+      ],
+      "correctAnswer": 3,
+      "question": "A pack of 8 glue sticks costs £15.20. What is the cost of a single glue stick?",
+      "explanation": "Divide total cost by number of glue sticks: £15.20 / 8 = £1.90.",
+      "type": "multiple_choice",
+      "id": "qn-mc-0260"
+    },
+    {
+      "question": "In a class of 30, 24 pupils passed their swimming test. What percentage of the class passed?",
+      "correctAnswer": 1,
+      "options": [
+        "75%",
+        "80%",
+        "85%",
+        "90%"
+      ],
+      "explanation": "24 out of 30 is 24/30. Simplify by dividing both by 6 to get 4/5. 4/5 is equivalent to 80%.",
+      "type": "multiple_choice",
+      "id": "qn-mc-0261"
+    },
+    {
+      "options": [
+        "60cm",
+        "70cm",
+        "80cm",
+        "90cm"
+      ],
+      "question": "A teacher has a 3-metre roll of border paper. She uses 45cm, 1.2m, and 65cm. How much paper is left on the roll?",
+      "correctAnswer": 1,
+      "explanation": "Add the spent amounts: 45cm + 1.2m (120cm) + 65cm = 230cm. 3m = 300cm. 300 - 230 = 70cm.",
+      "type": "multiple_choice",
+      "id": "qn-mc-0262"
+    },
+    {
+      "options": [
+        "£138.00",
+        "£141.50",
+        "£146.00",
+        "£144.00"
+      ],
+      "correctAnswer": 3,
+      "question": "A class of 32 pupils visits a museum. Entry costs £4.50 per pupil. What is the total entry cost for the class?",
+      "explanation": "Multiply the number of pupils by the cost per pupil: 32 x £4.50. (32 x 4 = 128) + (32 x 0.50 = 16) = £144.",
+      "type": "multiple_choice",
+      "id": "qn-mc-0263"
+    },
+    {
+      "correctAnswer": 2,
+      "question": "A recipe for a school cake requires 4 pints of milk. If 1 pint is approximately 568ml, how many litres of milk are needed (to 1 decimal place)?",
+      "options": [
+        "2.1 litres",
+        "2.2 litres",
+        "2.3 litres",
+        "2.4 litres"
+      ],
+      "explanation": "1 pint is 568ml. 568ml x 4 = 2272ml. Divide by 1000 to get 2.272 litres. Rounded to one decimal place is 2.3.",
+      "type": "multiple_choice",
+      "id": "qn-mc-0264"
+    },
+    {
+      "question": "A staff meeting starts at 13:45 and finishes at 15:05. How many minutes long was the meeting?",
+      "explanation": "Subtract the start time from the end time. 1 hour (60 mins) from 13:45 to 14:45, plus another 20 minutes to reach 15:05 equals 80 minutes.",
+      "correctAnswer": 2,
+      "options": [
+        "65 minutes",
+        "75 minutes",
+        "80 minutes",
+        "85 minutes"
+      ],
+      "type": "multiple_choice",
+      "id": "qn-mc-0265"
+    },
+    {
+      "options": [
+        "£32.00",
+        "£34.00",
+        "£35.00",
+        "£38.00"
+      ],
+      "type": "multiple_choice",
+      "question": "A set of textbooks originally cost £40.00 but is now offered with a 15% discount. What is the new price?",
+      "explanation": "5% of £40 is £2. Multiplying this by 3 gives 15%, which is £6. Subtracting £6 from £40 leaves £34.",
+      "correctAnswer": 1,
+      "id": "qn-mc-0266"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "12 litres",
+        "15 litres",
+        "18 litres",
+        "20 litres"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Total parts in the ratio 3:2 is 5. One part is 30 ÷ 5 = 6. There are 2 parts of lime, so 2 × 6 = 12.",
+      "question": "A teacher mixes 30 litres of paint using a ratio of 3 parts white to 2 parts lime. How many litres of lime paint are used?",
+      "id": "qn-mc-0267"
+    },
+    {
+      "question": "In a spelling test, four pupils scored 15, 18, 22, and 17. What was the mean score of these pupils?",
+      "explanation": "The total score is 15 + 18 + 22 + 17 = 72. Dividing the total 72 by the 4 students gives a mean of 18.",
+      "correctAnswer": 3,
+      "options": [
+        "17.00",
+        "17.50",
+        "17.75",
+        "18.00"
+      ],
+      "type": "multiple_choice",
+      "id": "qn-mc-0268"
+    },
+    {
+      "options": [
+        "8%",
+        "12.5%",
+        "15%",
+        "25%"
+      ],
+      "type": "multiple_choice",
+      "question": "In a class of 32 pupils, 4 children were absent. What percentage of the class was absent?",
+      "explanation": "Divide 100 by 8. 100 ÷ 8 = 12.5. Therefore, 12.5% is the correct percentage.",
+      "correctAnswer": 1,
+      "id": "qn-mc-0269"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "8 laps",
+        "9 laps",
+        "10 laps",
+        "12 laps"
+      ],
+      "correctAnswer": 1,
+      "question": "A student runs 3.6km for charity. If one lap of the school field is 400 metres, how many laps did the student run?",
+      "explanation": "To convert 3.6 kilometres to metres, multiply by 1,000 to get 3,600m. Dividing 3,600 by 400 equals 9 laps.",
+      "id": "qn-mc-0270"
+    },
+    {
+      "explanation": "Four-sevenths of 28 is (28 ÷ 7) × 4 = 16. Subtracting the 16 boys from the total 28 pupils leaves 12 girls.",
+      "question": "In a Year 6 class of 28 children, four-sevenths are boys. How many girls are in the class?",
+      "correctAnswer": 2,
+      "options": [
+        "8 girls",
+        "10 girls",
+        "12 girls",
+        "16 girls"
+      ],
+      "type": "multiple_choice",
+      "id": "qn-mc-0271"
+    },
+    {
+      "correctAnswer": 1,
+      "question": "A school workshop costs £15.00 to book, plus £1.50 per student for materials. What is the total cost for 24 students?",
+      "explanation": "The total cost is (24 × £1.50) + £15.00. 24 × 1.5 = £36. £36 + £15 = £51.",
+      "type": "multiple_choice",
+      "options": [
+        "£49.00",
+        "£51.00",
+        "£52.50",
+        "£55.00"
+      ],
+      "id": "qn-mc-0272"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "42 pupils",
+        "45 pupils",
+        "48 pupils",
+        "50 pupils"
+      ],
+      "correctAnswer": 0,
+      "question": "In a school of 120 Year 11 pupils, one-quarter study Geography and 10% study History. How many pupils in total study these two subjects?",
+      "explanation": "1/4 of 120 is 30. 10% (1/10) of 120 is 12. 30 + 12 = 42 pupils.",
+      "id": "qn-mc-0273"
+    },
+    {
+      "correctAnswer": 2,
+      "question": "A pack of 12 pens costs £4.80. How much would it cost to buy 30 individual pens at the same rate?",
+      "explanation": "Each pen costs £4.80 ÷ 12 = £0.40 (40p). Multiply 40p by 30 to get the total: 30 × 0.4 = £12.00.",
+      "type": "multiple_choice",
+      "options": [
+        "£10.00",
+        "£11.20",
+        "£12.00",
+        "£14.40"
+      ],
+      "id": "qn-mc-0274"
+    },
+    {
+      "options": [
+        "3 bottles",
+        "4 bottles",
+        "5 bottles",
+        "6 bottles"
+      ],
+      "type": "multiple_choice",
+      "explanation": "1.5 litres is 1500ml. Use 1500 ÷ 250 = 6. Each bottle fills 6 cups. 36 ÷ 6 = 6 bottles required.",
+      "question": "A teacher needs to provide 36 cups of water, each 250ml. If water comes in 1.5 litre bottles, how many bottles are needed?",
+      "correctAnswer": 3,
+      "id": "qn-mc-0275"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "2.0",
+        "2.5",
+        "3.0",
+        "3.5"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Multiply the frequency by the score: (1x1)+(2x2)+(3x3)+(4x4) = 1+4+9+16 = 30. Total number of pupils is 1+2+3+4 = 10. Mean is 30 ÷ 10 = 3.0.",
+      "question": "In a quiz, 1 pupil scored 1 mark, 2 pupils scored 2, 3 pupils scored 3, and 4 pupils scored 4. What was the mean score?",
+      "id": "qn-mc-0276"
+    },
+    {
+      "correctAnswer": 1,
+      "options": [
+        "14",
+        "16",
+        "17.5",
+        "18"
+      ],
+      "type": "multiple_choice",
+      "question": "In a small group session, five pupils scored 12, 17, 16, 14, and 21 in a mental maths test. What was their mean score?",
+      "explanation": "Calculate the mean by adding the scores (12+17+16+14+21 = 80) and dividing by the number of pupils (5). 80 ÷ 5 = 16.",
+      "id": "qn-mc-0277"
+    },
+    {
+      "explanation": "First, find the total cost of the books (25 × £7.20 = £180). Then, calculate 10% of £180, which is £18.00.",
+      "question": "A teacher buys 25 reading books at £7.20 each. The school receives a 10% loyalty discount on the total price. How much is the discount?",
+      "type": "multiple_choice",
+      "options": [
+        "£15.50",
+        "£16.20",
+        "£18.00",
+        "£20.25"
+      ],
+      "correctAnswer": 2,
+      "id": "qn-mc-0278"
+    },
+    {
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "options": [
+        "18",
+        "12",
+        "15",
+        "20"
+      ],
+      "question": "In a Year 4 class of 30 pupils, two-fifths are boys. How many girls are in the class?",
+      "explanation": "If 2/5 are boys, then 3/5 are girls. 3/5 of 30 is calculated as (30 ÷ 5) × 3 = 18.",
+      "id": "qn-mc-0279"
+    },
+    {
+      "question": "On a Tuesday, a teacher spends 15 minutes on registration, 45 minutes on Literacy, and 50 minutes on PE. What is the total time spent on these activities?",
+      "explanation": "Add the times: 15 + 45 + 50 = 110 minutes. Convert to hours and minutes: 110 minutes = 1 hour and 50 minutes.",
+      "correctAnswer": 3,
+      "options": [
+        "1 hour 30 minutes",
+        "1 hour 40 minutes",
+        "1 hour 45 minutes",
+        "1 hour 50 minutes"
+      ],
+      "type": "multiple_choice",
+      "id": "qn-mc-0280"
+    },
+    {
+      "question": "In a class of 30 pupils, 9 pupils play a musical instrument. What percentage of the class is this?",
+      "explanation": "To find the percentage, divide the number of pupils by the total and multiply by 100: (9 ÷ 30) × 100 = 0.3 × 100 = 30%.",
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "options": [
+        "25%",
+        "30%",
+        "33%",
+        "40%"
+      ],
+      "id": "qn-mc-0281"
+    },
+    {
+      "question": "For a charity event, a pupil runs 3.5km. If each lap of the playground is 250 metres, how many laps does the pupil run?",
+      "explanation": "3.5 kilometres is 3,500 metres. Divide the total distance by the length of one lap: 3,500 ÷ 250 = 14 laps.",
+      "correctAnswer": 2,
+      "options": [
+        "10 laps",
+        "12 laps",
+        "14 laps",
+        "16 laps"
+      ],
+      "type": "multiple_choice",
+      "id": "qn-mc-0282"
+    },
+    {
+      "question": "A teacher mixes orange squash and water in a ratio of 1:4. If she makes 40 litres of the drink in total, how many litres of water are used?",
+      "explanation": "Total parts = 4 + 1 = 5. One part is 40 ÷ 5 = 8 litres. The volume of water (4 parts) is 4 × 8 = 32 litres.",
+      "correctAnswer": 0,
+      "options": [
+        "32 litres",
+        "24 litres",
+        "8 litres",
+        "10 litres"
+      ],
+      "type": "multiple_choice",
+      "id": "qn-mc-0283"
+    },
+    {
+      "question": "A school trip costs £4.00 per pupil and £6.00 per accompanying adult. What is the total cost for 30 pupils and 4 adults?",
+      "explanation": "Calculate the total for pupils (30 × £4 = £120) and adults (4 × £6 = £24). The total cost is £120 + £24 = £144.",
+      "correctAnswer": 3,
+      "options": [
+        "£134",
+        "£140",
+        "£150",
+        "£144"
+      ],
+      "type": "multiple_choice",
+      "id": "qn-mc-0284"
+    },
+    {
+      "question": "A teacher needs to provide 150ml of juice for each of the 30 pupils in her class. How many litres of juice does she need in total?",
+      "explanation": "First, find the total amount needed: 30 × 150ml = 4,500ml. Since 1 litre = 1,000ml, 4,500ml is 4.5 litres.",
+      "correctAnswer": 1,
+      "options": [
+        "3.5 litres",
+        "4.5 litres",
+        "5.5 litres",
+        "6.0 litres"
+      ],
+      "type": "multiple_choice",
+      "id": "qn-mc-0285"
+    },
+    {
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "options": [
+        "£8.00",
+        "£8.50",
+        "£9.00",
+        "£9.50"
+      ],
+      "question": "A box of 500 sheets of paper usually costs £12.00. It is on sale with a 25% discount. What is the sale price?",
+      "explanation": "Find 25% of £12.00 (1/4 of 12 is £3.00). Subtract the discount from the original price: £12.00 - £3.00 = £9.00.",
+      "id": "qn-mc-0286"
+    },
+    {
+      "question": "A teacher has a 5-metre roll of ribbon. She cuts off one piece of 1.2m and another piece of 80cm. How many metres of ribbon are left?",
+      "explanation": "Convert the total length to cm: 5m = 500cm. Subtract the lengths used: 500 - 120 - 80 = 300cm. Convert back to metres: 300cm = 3m.",
+      "correctAnswer": 0,
+      "options": [
+        "3.0m",
+        "3.2m",
+        "2.8m",
+        "3.5m"
+      ],
+      "type": "multiple_choice",
+      "id": "qn-mc-0287"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "9 lbs",
+        "11 lbs",
+        "13 lbs",
+        "15 lbs"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Using 1kg ≈ 2.2 lbs, 5kg is approximately 5 × 2.2 = 11 lbs. Then, 11 + 4 = 15 lbs. Alternatively, 4 lbs is ~1.8kg, 5+1.8 = 6.8kg which is ~15 lbs.",
+      "question": "A school orders 5kg of clay plus an extra 4 lbs (pounds). If 1kg is approximately 2.2 lbs, what is the approximate total weight in lbs?",
+      "id": "qn-mc-0288"
+    },
+    {
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "options": [
+        "£320",
+        "£440",
+        "£480",
+        "£520"
+      ],
+      "explanation": "To find 15% of £3,200, first find 10% (£320) and 5% (£160). Adding these gives a total discount of £480.",
+      "question": "A school receives a 15% discount on a bulk order of laptops originally costing £3,200. How much is the discount in pounds?",
+      "id": "qn-mc-0289"
+    },
+    {
+      "question": "A teacher prepares 25 painting pots for an art lesson. Each pot contains 600ml of water. How many litres of water are used in total?",
+      "explanation": "600ml is 0.6 litres. Multiply 0.6 by 25 to get 15.0 litres in total.",
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "options": [
+        "15 litres",
+        "12.5 litres",
+        "18 litres",
+        "150 litres"
+      ],
+      "id": "qn-mc-0290"
+    },
+    {
+      "options": [
+        "2:3",
+        "3:2",
+        "5:2",
+        "3:5"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "question": "In a class of 35 pupils, 14 are boys. What is the ratio of girls to boys in its simplest form?",
+      "explanation": "Subtract the number of boys (14) from the total (35) to find 21 girls. The ratio of girls to boys is 21:14, which simplifies to 3:2.",
+      "id": "qn-mc-0291"
+    },
+    {
+      "options": [
+        "2 hours 20 minutes",
+        "3 hours 00 minutes",
+        "2 hours 30 minutes",
+        "2 hours 40 minutes"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "question": "A teacher spends 55 minutes marking Literacy, 1 hour 5 minutes marking Numeracy, and 40 minutes on administration. What is the total time spent in hours and minutes?",
+      "explanation": "Add the three times together: 55 + 65 + 40 = 160 minutes. 160 minutes is 2 hours and 40 minutes.",
+      "id": "qn-mc-0292"
+    },
+    {
+      "explanation": "The total of the five scores is 14 + 18 + 15 + 20 + 13 = 80. Divide the total by the number of pupils (80 ÷ 5 = 16).",
+      "question": "In a spelling test, five pupils scored 14, 18, 15, 20, and 13. What was the mean score?",
+      "correctAnswer": 2,
+      "options": [
+        "15.5",
+        "15",
+        "16",
+        "17"
+      ],
+      "type": "multiple_choice",
+      "id": "qn-mc-0293"
+    },
+    {
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "options": [
+        "10 portions",
+        "12 portions",
+        "15 portions",
+        "8 portions"
+      ],
+      "question": "A food technology teacher has 1.5kg of flour. Each pupil needs a 125g portion. How many portions can the teacher provide?",
+      "explanation": "1.5kg is 1,500g. Divide 1,500 by 125 to find the number of portions (1,500 ÷ 125 = 12).",
+      "id": "qn-mc-0294"
+    },
+    {
+      "correctAnswer": 0,
+      "options": [
+        "12 pupils",
+        "18 pupils",
+        "15 pupils",
+        "20 pupils"
+      ],
+      "type": "multiple_choice",
+      "question": "In a class of 30 pupils, three-fifths of the children have a school dinner. How many children bring a packed lunch?",
+      "explanation": "Three-fifths of 30 is 18 (30 ÷ 5 = 6; 6 × 3 = 18). 18 pupils have a school dinner, so 12 (30 - 18) bring a packed lunch.",
+      "id": "qn-mc-0295"
+    },
+    {
+      "explanation": "Calculate 20% of £15.00, which is £3.00. Subtract the discount from the original price (£15.00 - £3.00 = £12.00).",
+      "question": "A textbook originally costs £15.00 but is reduced by 20% in a sale. What is the new price of the textbook?",
+      "correctAnswer": 2,
+      "options": [
+        "£11.50",
+        "£13.00",
+        "£12.00",
+        "£12.50"
+      ],
+      "type": "multiple_choice",
+      "id": "qn-mc-0296"
+    },
+    {
+      "options": [
+        "24 adults",
+        "15 adults Peterson",
+        "25 adults",
+        "20 adults"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "explanation": "A 1:5 ratio has 6 parts in total (1 + 5 = 6). One part is 120 ÷ 6 = 20. There are 20 adults (1 part) and 100 pupils (5 parts).",
+      "question": "On a school trip, the ratio of adults to pupils is 1:5. If there are 120 people on the trip in total, how many adults are there?",
+      "id": "qn-mc-0297"
+    },
+    {
+      "explanation": "30 miles × 1.6 = 48 kilometres. Alternatively, use the ratio 5 miles ≈ 8km (30 ÷ 5 = 6; 6 × 8 = 48).",
+      "question": "A teacher drives 30 miles to a training centre. Given that 5 miles is approximately 8 kilometres, what is this distance in kilometres?",
+      "type": "multiple_choice",
+      "options": [
+        "40 km",
+        "48 km",
+        "52 km",
+        "45 km"
+      ],
+      "correctAnswer": 1,
+      "id": "qn-mc-0298"
+    },
+    {
+      "options": [
+        "£102.00",
+        "£132.00 Peterson",
+        "£117.00 Peterson",
+        "£127.00 Peterson],question:"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "question": "A school trip costs a flat booking fee of £25, plus £8.50 per student. What is the total cost for 12 students?",
+      "explanation": "First, find the total cost: 12 students × £8.50 = £102. Then add the £25 booking fee to get £127.",
+      "id": "qn-mc-0299"
+    },
+    {
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "options": [
+        "70% Peterson,",
+        "65% Peterson,",
+        "75% Peterson,",
+        "60% Peterson,"
+      ],
+      "explanation": "14 out of 20 is 70 out of 100 (14/20 = 7/10 = 70/100). This equals 70%.",
+      "question": "In a mental maths test, a pupil scores 14 out of 20. What is this score as a percentage?",
+      "id": "qn-mc-0300"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "£37.00",
+        "£35.50",
+        "£34.00",
+        "£29.00"
+      ],
+      "correctAnswer": 2,
+      "explanation": "A 15% discount on £40 is £6 (£40 x 0.15). Subtracting £6 from £40 gives a sale price of £34.",
+      "question": "A textbook usually costs £40.00. In a clearance sale, it is reduced by 15%. What is the new price of the textbook?",
+      "id": "qn-mc-0301"
+    },
+    {
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "options": [
+        "16",
+        "15.5",
+        "15",
+        "17"
+      ],
+      "question": "In a small group, five pupils scored 12, 15, 15, 18, and 20 in a mental arithmetic test. What was the mean score of the group?",
+      "explanation": "To find the mean, add the scores (12+15+15+18+20 = 80) and divide by the number of pupils (80 / 5 = 16).",
+      "id": "qn-mc-0302"
+    },
+    {
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "options": [
+        "4 jugs",
+        "6 jugs",
+        "7 jugs",
+        "8 jugs"
+      ],
+      "question": "A teacher has a 3.2-litre bottle of water. They need to fill several jugs, each holding 400ml. How many jugs can be completely filled?",
+      "explanation": "3.2 litres is 3200ml. Dividing 3200ml by 400ml per jug equals 8 jugs.",
+      "id": "qn-mc-0303"
+    },
+    {
+      "explanation": "20% of 28 is 5.6. To find the new number, add the increase to the original: 28 + 5.6 = 33.6, which is approximately 34 pupils.",
+      "question": "A school sports club has 28 members. Next term, the number of members is expected to increase by 20%. What will be the approximate new total of members?",
+      "type": "multiple_choice",
+      "options": [
+        "31 pupils",
+        "34 pupils",
+        "35 pupils",
+        "32 pupils"
+      ],
+      "correctAnswer": 1,
+      "id": "qn-mc-0304"
+    },
+    {
+      "question": "A science experiment requires a solution of chemical and water in the ratio 1:6. If a teacher makes 350ml of the solution, how many millilitres of water are used?",
+      "explanation": "Total parts in the ratio is 1 + 6 = 7. Each part is 350 / 7 = 50ml. The water is 6 parts, so 6 x 50ml = 300ml.",
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "options": [
+        "50ml",
+        "250ml",
+        "300ml",
+        "320ml"
+      ],
+      "id": "qn-mc-0305"
+    },
+    {
+      "question": "A pupil runs 4.5km for a charity challenge. If each lap of the school field is 300 metres, how many laps does the pupil run?",
+      "explanation": "First, convert 4.5km to metres (4,500m). Then divide by the length of one lap: 4,500 / 300 = 15 laps.",
+      "correctAnswer": 3,
+      "options": [
+        "12 laps",
+        "13 laps",
+        "14 laps",
+        "15 laps"
+      ],
+      "type": "multiple_choice",
+      "id": "qn-mc-0306"
+    },
+    {
+      "question": "A teacher travels 45 miles to attend a regional conference. Using the approximation that 5 miles is 8 kilometres, what is this distance in kilometres?",
+      "explanation": "If 5 miles = 8km, then 1 mile = 1.6km. Therefore, 45 miles = 45 x 1.6 = 72km.",
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "options": [
+        "72 km",
+        "68 km",
+        "75 km",
+        "80 km"
+      ],
+      "id": "qn-mc-0307"
+    },
+    {
+      "explanation": "The total time is 45 + 50 + 15 = 110 minutes. 110 minutes is equal to 1 hour and 50 minutes.",
+      "question": "A teacher spends 45 minutes marking books, 50 minutes planning a lesson, and 15 minutes on a phone call to a parent. What is the total time spent on these tasks?",
+      "options": [
+        "1 hour 40 minutes",
+        "1 hour 50 minutes",
+        "2 hours 10 minutes",
+        "2 hours 15 minutes"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "id": "qn-mc-0308"
+    },
+    {
+      "question": "The entry fee for a local museum is £3.50 per pupil and £5.00 per adult. What is the total cost for 25 pupils and 3 adults?",
+      "explanation": "Total cost is (25 x £3.50) + (3 x £5.00) = £87.50 + £15.00 = £102.50.",
+      "correctAnswer": 2,
+      "options": [
+        "£97.50",
+        "£112.50",
+        "£102.50",
+        "£105.00"
+      ],
+      "type": "multiple_choice",
+      "id": "qn-mc-0309"
+    },
+    {
+      "explanation": "If 5/8 are girls, then 3/8 are boys. Convert the fraction to a percentage: (3 / 8) x 100 = 37.5%.",
+      "question": "In a Year 6 class, five-eighths of the pupils are girls. What percentage of the class are boys?",
+      "options": [
+        "37.5%",
+        "32.5%",
+        "62.5%",
+        "40.5%"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "id": "qn-mc-0310"
+    },
+    {
+      "correctAnswer": 3,
+      "options": [
+        "5kg",
+        "6kg",
+        "6.5kg",
+        "7kg"
+      ],
+      "type": "multiple_choice",
+      "question": "A teacher buys a 2kg bag of sand and an additional 11 lbs of loose sand. Using the approximation 1kg = 2.2 lbs, what is the total mass of sand in kilograms?",
+      "explanation": "Total mass is 2kg + (11 / 2.2)kg = 2kg + 5kg = 7kg.",
+      "id": "qn-mc-0311"
+    },
+    {
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "options": [
+        "£124.00",
+        "£144.00",
+        "£140.00",
+        "£132.00"
+      ],
+      "question": "A primary school orders equipment costing £120.00 excluding VAT. If VAT is charged at 20%, what is the total cost including VAT?",
+      "explanation": "Total price was £120. VAT calculation: £120 x 0.20 = £24. Total cost: £120 + £24 = £144.",
+      "id": "qn-mc-0312"
+    },
+    {
+      "options": [
+        "10.5",
+        "20",
+        "19",
+        "18"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "question": "In a history quiz, the scores for a small group of pupils were: 14, 1, 18, 20, 9, 11, and 15. What was the range of these scores?",
+      "explanation": "To find the range, subtract the lowest score (1) from the highest score (20). 20 - 1 = 19.",
+      "id": "qn-mc-0313"
+    },
+    {
+      "options": [
+        "100",
+        "20",
+        "80",
+        "60"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "question": "A secondary school has 120 students in Year 11. One-sixth of them are absent for a mock exam. How many students are present?",
+      "explanation": "One-sixth of 120 is 20. Subtracting 20 from 120 leaves 100 students.",
+      "id": "qn-mc-0314"
+    },
+    {
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "options": [
+        "17:35",
+        "17:45",
+        "17:55",
+        "18:00"
+      ],
+      "question": "A teacher starts marking at 15:45. They spend 1 hour 50 minutes marking and then take a 25-minute break. What time do they finish their break?",
+      "explanation": "Total minutes: 110 + 25 = 135 minutes. 135 minutes is 2 hours and 15 minutes. 15:45 + 2 hours 15 mins = 18:00.",
+      "id": "qn-mc-0315"
+    },
+    {
+      "options": [
+        "£20",
+        "£40",
+        "£140",
+        "£90"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "explanation": "The ratio 2:7 has 9 parts in total. 180 / 9 = 20. The primary school (2 parts) receives 2 x 20 = £40.",
+      "question": "A grant of £180 is shared between a primary school and a nursery in the ratio 2:7. How much does the primary school receive?",
+      "id": "qn-mc-0316"
+    },
+    {
+      "question": "The price of school milk increases by 15%. If the original price was £1.20, what is the new price?",
+      "explanation": "10% of £1.20 is £0.12. 5% is £0.06. Total increase is £0.12 + £0.06 = £0.18. New price: £1.20 + £0.18 = £1.38.",
+      "type": "multiple_choice",
+      "options": [
+        "£1.32",
+        "£1.35",
+        "£1.38",
+        "£1.40"
+      ],
+      "correctAnswer": 2,
+      "id": "qn-mc-0317"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "2.0",
+        "1.5",
+        "2.5",
+        "3.0"
+      ],
+      "correctAnswer": 0,
+      "question": "A teacher wants a class mean of 18 in a test. The actual scores of 5 pupils were 12, 17, 16, 15, and 20. By how much did the actual mean fall short of the target?",
+      "explanation": "First, calculate the mean: (12+17+16+15+20)/5 = 80/5 = 16. Subtract this from the target: 18 - 16 = 2.",
+      "id": "qn-mc-0318"
+    },
+    {
+      "options": [
+        "12",
+        "1350",
+        "150",
+        "15"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "question": "A teacher has a 4.5-metre length of ribbon. They need to cut it into pieces that are each 30cm long. How many pieces can they cut?",
+      "explanation": "30 cm is 0.3 metres. Divide the total length by the length of one piece: 4.5 / 0.3 = 15.",
+      "id": "qn-mc-0319"
+    },
+    {
+      "explanation": "Total cost = (15 tickets * £4.20) + (2 tickets * £6.00) = £63.00 + £12.00 = £75.00.",
+      "question": "A school play charges £4.20 for a child ticket and £6.00 for an adult ticket. What is the total cost for 15 children and 2 adults?",
+      "options": [
+        "£63.00",
+        "£75.00",
+        "£81.00",
+        "£69.00"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "id": "qn-mc-0320"
+    },
+    {
+      "question": "In a class of 30 pupils, 60% are girls. How many boys are in the class?",
+      "explanation": "60% as a fraction is 60/100, which simplifies to 6/10 and then 3/5. 2/5 of the class are boys. 2/5 of 30 is (30/5)*2 = 12.",
+      "type": "multiple_choice",
+      "options": [
+        "12",
+        "18",
+        "20",
+        "15"
+      ],
+      "correctAnswer": 0,
+      "id": "qn-mc-0321"
+    },
+    {
+      "question": "A plant grew for 3.5 days. For 2 hours of that time, it was under a specialized grow light. Approximately what percentage of the total time was it under the light? (Round to 1 decimal place).",
+      "explanation": "3.5 days is (3 * 24) + 12 = 84 hours. 84 / 2 = 42. So, 2 hours is 1/42 of the total time. 100 / 42 is approximately 2.38%.",
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "options": [
+        "1.5%",
+        "5.0%",
+        "2.4%",
+        "0.2%"
+      ],
+      "id": "qn-mc-0322"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "1.25 litres",
+        "1.50 litres",
+        "1.55 litres",
+        "1.60 litres"
+      ],
+      "correctAnswer": 1,
+      "question": "A science beaker contains 1.75 litres of water. After a pupil uses 250ml for an experiment, how much water is left in the beaker?",
+      "explanation": "1.75 litres = 1750 ml. Subtract the used amount: 1750 - 250 = 1500 ml. 1500 ml = 1.5 litres.",
+      "id": "qn-mc-0323"
+    },
+    {
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "options": [
+        "3.2kg",
+        "3.6kg",
+        "3.0kg",
+        "3.4kg"
+      ],
+      "explanation": "To get 1/5, divide 4.25 by 5. 4.25 / 5 = 0.85. Then multiply by 4 to get 4/5: 0.85 * 4 = 3.4.",
+      "question": "A bag of clay weighs 4.25kg. A student uses four-fifths of the bag for a sculpture. How many kilograms of clay did the student use?",
+      "id": "qn-mc-0324"
+    },
+    {
+      "options": [
+        "45p",
+        "60p",
+        "75p",
+        "80p"
+      ],
+      "type": "multiple_choice",
+      "question": "A teacher buys 8 packs of whiteboard pens for a total cost of £4.80. What is the cost of a single pack of pens?",
+      "explanation": "Dividing the total cost (£4.80) by the number of packs (8) gives a cost of £0.60 (60p) per pack.",
+      "correctAnswer": 1,
+      "id": "qn-mc-0325"
+    },
+    {
+      "tolerance": 0,
+      "question": "In a series of spelling tests, a pupil scores 10, 12, 9, 15, 11, 13, 8, and 13. What is the pupil's mean score? Give your answer to one decimal place.",
+      "correctAnswer": 11.4,
+      "explanation": "Add the eight scores (10+12+9+15+11+13+8+13 = 91) and divide by 8 to find the mean.",
+      "type": "numeric_entry",
+      "unit": "marks",
+      "id": "qn-ne-0001"
+    },
+    {
+      "type": "numeric_entry",
+      "unit": "pounds",
+      "explanation": "Calculate 20% of 130 (26) and add it to the original amount (130 + 26 = 156).",
+      "correctAnswer": 156,
+      "question": "A school spent £130 on stationery last term. This term, the spend increased by 20%. How much did the school spend on stationery this term?",
+      "tolerance": 0,
+      "id": "qn-ne-0002"
+    },
+    {
+      "correctAnswer": 0.45,
+      "explanation": "There are 20 boys out of 44 pupils; 44 minus 20 equals 24 girls. The fraction is 20/44, which is 0.4545... rounded to two decimal places.",
+      "type": "numeric_entry",
+      "tolerance": 0.01,
+      "question": "In a Year 6 cohort of 44 pupils, 24 are girls. What is the proportion of boys in the cohort? Give your answer as a decimal to two decimal places.",
+      "id": "qn-ne-0003"
+    },
+    {
+      "type": "numeric_entry",
+      "unit": "coaches",
+      "explanation": "Divide the total number of pupils (400) by the ratio parts (5+3=8) to find one part (50). Multiply 50 by 3 to find boys (150). 150 divided by 11 is 13.63, so 14 coaches are needed.",
+      "correctAnswer": 14,
+      "question": "A school has 400 pupils. The ratio of girls to boys is 5:3. If all the boys go on a trip in coaches that seat 11 people, how many coaches are required?",
+      "tolerance": 0,
+      "id": "qn-ne-0004"
+    },
+    {
+      "explanation": "Multiply the total time (7 hours) by the percentage spent teaching (0.75) to get 5.25 hours, then multiply by 10 to find the total for 10 days.",
+      "correctAnswer": 52.5,
+      "unit": "hours",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "question": "A teacher spends 75% of their 7-hour workday teaching. How many hours do they spend teaching over a 10-day period?",
+      "id": "qn-ne-0005"
+    },
+    {
+      "explanation": "Calculate 24 divided by 1.2 to find the distance (20km), then divide 20km by 5.5 hours to find the speed. Alternately, 24 / 6.7 total time units. Correct calculation: 24 divided by 6 hours 40 mins (6.66) = 3.6.",
+      "correctAnswer": 3.6,
+      "unit": "km/h",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "question": "A school walking trip covers 24 kilometres in 6 hours and 40 minutes. What is the average speed of the group in kilometres per hour?",
+      "id": "qn-ne-0006"
+    },
+    {
+      "type": "numeric_entry",
+      "unit": "pupils",
+      "explanation": "Divide 340 by 5 to find one part (68), then multiply by 4 to find the number of Key Stage 2 pupils.",
+      "correctAnswer": 272,
+      "question": "In a primary school of 340 pupils, the ratio of Key Stage 1 to Key Stage 2 pupils is 1:4. How many pupils are in Key Stage 2?",
+      "tolerance": 0,
+      "id": "qn-ne-0007"
+    },
+    {
+      "type": "numeric_entry",
+      "unit": "pounds",
+      "correctAnswer": 13.2,
+      "explanation": "Add the values (12.50 + 14.10 + 13.00) to get 39.60, then divide by 3.",
+      "question": "The science department budget for three months was £12.50, £14.10 and £13.00 per pupil. What was the average (mean) budget per pupil over these three months?",
+      "tolerance": 0,
+      "id": "qn-ne-0008"
+    },
+    {
+      "question": "During a sports day, 150 pupils participated. If 15% of the pupils won a medal, how many pupils won a medal?",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "unit": "pupils",
+      "correctAnswer": 22.5,
+      "explanation": "Find 15% of 150 by multiplying 150 by 0.15.",
+      "id": "qn-ne-0009"
+    },
+    {
+      "type": "numeric_entry",
+      "unit": "pounds",
+      "correctAnswer": 56,
+      "explanation": "Divide 350 by 25 to find the number of packs required (14), then multiply by 4.",
+      "question": "Exercise books are sold in packs of 25. Each pack costs £4.00. How much will it cost to buy 350 exercise books?",
+      "tolerance": 0,
+      "id": "qn-ne-0010"
+    },
+    {
+      "unit": "marks",
+      "type": "numeric_entry",
+      "explanation": "Convert 65% to a decimal (0.65) and multiply by 8.",
+      "correctAnswer": 5.2,
+      "question": "A student scored 65% on a test with a maximum of 8 marks. How many marks did the student receive?",
+      "tolerance": 0,
+      "id": "qn-ne-0011"
+    },
+    {
+      "question": "A teacher buys a box of 25 identical rulers for £43.75. What is the cost of a single ruler?",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "unit": "pounds",
+      "explanation": "Divide the total cost (£43.75) by the number of books (25).",
+      "correctAnswer": 1.75,
+      "id": "qn-ne-0012"
+    },
+    {
+      "correctAnswer": 21,
+      "question": "In a mental maths test, the scores for ten pupils were: 12, 15, 8, 22, 29, 14, 18, 11, 25, and 16. What is the range of these scores?",
+      "explanation": "The range is the difference between the highest and lowest scores: 29 - 8 = 21.",
+      "type": "numeric_entry",
+      "id": "qn-ne-0013"
+    },
+    {
+      "unit": "£",
+      "correctAnswer": 1.35,
+      "question": "A teacher buys a box of 12 packs of highlighters for a total cost of £16.20. What is the cost per pack in pounds?",
+      "explanation": "Divide the total cost by the number of packs: £16.20 / 12 = £1.35.",
+      "type": "numeric_entry",
+      "id": "qn-ne-0014"
+    },
+    {
+      "question": "In a class of 32 pupils, 20 pupils are present. What percentage of the class is present? Give your answer to one decimal place.",
+      "correctAnswer": 62.5,
+      "unit": "%",
+      "type": "numeric_entry",
+      "explanation": "To convert a fraction to a percentage, divide the numerator by the denominator and multiply by 100: (5 / 8) * 100 = 62.5%.",
+      "id": "qn-ne-0015"
+    },
+    {
+      "type": "numeric_entry",
+      "explanation": "First, find the value of one part: 45 / (2 + 3) = 9. Then, multiply by the number of 'boys' parts: 9 * 2 = 18.",
+      "correctAnswer": 18,
+      "question": "A nursery has 45 children. The ratio of boys to girls is 2:3. How many boys are there in the nursery?",
+      "id": "qn-ne-0016"
+    },
+    {
+      "explanation": "Calculate 12% of 30: (12 / 100) * 30 = 3.6.",
+      "type": "numeric_entry",
+      "question": "In a school of 30 staff members, 12% are part-time. How many staff members work part-time?",
+      "correctAnswer": 3.6,
+      "id": "qn-ne-0017"
+    },
+    {
+      "type": "numeric_entry",
+      "explanation": "Divide the distance by the time: 10 kilometres / 0.9 hours (54 mins) = 11.11... rounds to 11.1.",
+      "question": "A school minibus travels 10 kilometres in 54 minutes. What is its average speed in kilometres per hour? Give your answer to one decimal place.",
+      "correctAnswer": 11.1,
+      "unit": "km/h",
+      "id": "qn-ne-0018"
+    },
+    {
+      "correctAnswer": 30,
+      "question": "A year group of 90 pupils is split into two groups for an activity in the ratio 1:2. How many pupils are in the smaller group?",
+      "explanation": "The total ratio parts are 1+2=3. Divide the total by 3: 90 / 3 = 30 pupils.",
+      "type": "numeric_entry",
+      "id": "qn-ne-0019"
+    },
+    {
+      "type": "numeric_entry",
+      "explanation": "First, find the 15% increase: 0.15 * 120 = 18. Then add to the original: 120 + 18 = 138. Then subtract 36: 138 - 36 = 102.",
+      "correctAnswer": 102,
+      "question": "A school library has 120 books. Over summer, the stock increases by 15%, but then 36 books are discarded. How many books are now in the library?",
+      "id": "qn-ne-0020"
+    },
+    {
+      "question": "In a tutor group of 20 students, 13 students passed their music exam. What proportion of the group passed? Give your answer as a decimal.",
+      "correctAnswer": 0.65,
+      "explanation": "Divide the number of pupils who passed by the total: 13 / 20 = 0.65.",
+      "type": "numeric_entry",
+      "id": "qn-ne-0021"
+    },
+    {
+      "question": "An assistant spends 1 hour and 30 minutes each day on playground duty. How many hours do they spend on duty over a 10-day school period?",
+      "correctAnswer": 15,
+      "explanation": "Multiply the daily time by the number of days: 1.5 hours * 10 days = 15 hours.",
+      "type": "numeric_entry",
+      "id": "qn-ne-0022"
+    },
+    {
+      "correctAnswer": 16.85,
+      "question": "A teacher buys three items for a science project costing £4.50, £5.25 and £7.10. What is the total cost?",
+      "unit": "£",
+      "type": "numeric_entry",
+      "explanation": "Sum the three costs: 4.50 + 5.25 + 7.10 = 16.85.",
+      "id": "qn-ne-0023"
+    },
+    {
+      "explanation": "Total pupils = 250. 250 / 24 = 10.41. Since you cannot have a partial coach, you need 11 coaches.",
+      "type": "numeric_entry",
+      "correctAnswer": 11,
+      "question": "A primary school plans a trip for 250 pupils. Each coach seats 24 people. How many coaches are needed to transport all the pupils?",
+      "id": "qn-ne-0024"
+    },
+    {
+      "unit": "marks",
+      "correctAnswer": 11.2,
+      "question": "In a spelling test, five pupils scored 12, 9, 15, 13, and 7. What was the mean score?",
+      "type": "numeric_entry",
+      "explanation": "To calculate the mean, add the five scores (12+9+15+13+7 = 56) and divide by the number of scores (56 ÷ 5 = 11.2).",
+      "tolerance": 0,
+      "id": "qn-ne-0025"
+    },
+    {
+      "question": "There are 400 students in a secondary school. If 75% of the students walk to school, how many students walk to school?",
+      "correctAnswer": 300,
+      "unit": "students",
+      "tolerance": 0,
+      "explanation": "First find 10% of 400 (40), then multiply by 7 to get 70% (280), and add 5% (20) to find 75%, which is 300.",
+      "type": "numeric_entry",
+      "id": "qn-ne-0026"
+    },
+    {
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "explanation": "Divide the number of girls (9) by the total number of pupils (20) to get 0.45.",
+      "question": "In a science set of 20 pupils, 11 are boys and 9 are girls. What is the proportion of girls expressed as a decimal?",
+      "correctAnswer": 0.45,
+      "unit": "decimal",
+      "id": "qn-ne-0027"
+    },
+    {
+      "correctAnswer": 480,
+      "question": "A department lead orders 12 boxes of ballpoint pens. Each box contains 40 pens. How many pens are ordered in total?",
+      "unit": "pens",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "explanation": "To find the total, multiply the number of packs (12) by the number of pens per pack (40), which equals 480.",
+      "id": "qn-ne-0028"
+    },
+    {
+      "tolerance": 0,
+      "explanation": "The ratio 2:3 has 5 parts in total. One part is 50 divided by 5 (10). Three parts (the girls) is 3 multiplied by 10, which is 30. Then add the 5 new girls (30 + 5).",
+      "type": "numeric_entry",
+      "question": "A drama club has 50 members with a boy to girl ratio of 2:3. If 5 more girls join the club, how many girls are there now?",
+      "correctAnswer": 35,
+      "unit": "girls",
+      "id": "qn-ne-0029"
+    },
+    {
+      "correctAnswer": 18,
+      "question": "In a mental arithmetic test, the scores were: 15, 22, 10, 28, 19, and 21. What is the range of these scores?",
+      "unit": "marks",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "explanation": "The range is the difference between the highest score (28) and the lowest score (10), which is 18.",
+      "id": "qn-ne-0030"
+    },
+    {
+      "tolerance": 0,
+      "explanation": "Divide the total cost (£31.25) by the number of glue sticks (25) to find the unit price.",
+      "type": "numeric_entry",
+      "correctAnswer": 1.25,
+      "question": "A teacher buys a pack of 25 glue sticks for £31.25. What is the cost of one glue stick in pounds?",
+      "unit": "£",
+      "id": "qn-ne-0031"
+    },
+    {
+      "tolerance": 0,
+      "explanation": "60% of 120 is 0.6 multiplied by 120, which equals 72.",
+      "type": "numeric_entry",
+      "correctAnswer": 72,
+      "question": "Out of 120 Year 11 students, 60% stayed for an after-school revision session. How many students attended the session?",
+      "unit": "students",
+      "id": "qn-ne-0032"
+    },
+    {
+      "tolerance": 0,
+      "explanation": "The area is length multiplied by width (12m x 5.5m = 66 square metres). Multiply the area by the cost per square metre (66 x £2.10 = £138.60). Then add the £5.40 delivery fee.",
+      "type": "numeric_entry",
+      "correctAnswer": 144,
+      "question": "A school needs to carpet a classroom measuring 12m by 5.5m. The carpet costs £2.10 per square metre, plus a fixed £5.40 delivery charge. What is the total cost?",
+      "unit": "£",
+      "id": "qn-ne-0033"
+    },
+    {
+      "explanation": "3.75 hours is 225 minutes. 225 minutes divided by 20 pupils is 11.25 minutes per pupil.",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "unit": "minutes",
+      "correctAnswer": 11.25,
+      "question": "A teacher spends 3 hours and 45 minutes marking 20 essays. What is the average time spent marking each essay in minutes?",
+      "id": "qn-ne-0034"
+    },
+    {
+      "unit": "hours",
+      "question": "A teaching assistant works with two groups. Group A (15 pupils) requires 45 minutes of support each. Group B (15 pupils) requires 2 hours each. What is the total number of support hours provided?",
+      "correctAnswer": 41.25,
+      "explanation": "Half of the group (15) takes 45 minutes (11.25 hours total). The other half (15) takes 1 hour and 15 mins (1.25 hours or 18.75 hours total). Adding them gives 30 total hours. Correcting logic: 15 * 0.75 = 11.25. 15 * 2 = 30. Total = 41.25.",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "id": "qn-ne-0035"
+    },
+    {
+      "tolerance": 0,
+      "explanation": "Divide 180 by 28 (6.42). Since you cannot have a partial coach, you must round up to the nearest whole number to accommodate all pupils.",
+      "type": "numeric_entry",
+      "question": "A school is planning a trip for 180 pupils. Each coach can carry 28 pupils. How many coaches must be booked to ensure every pupil has a seat?",
+      "correctAnswer": 7,
+      "unit": "coaches",
+      "id": "qn-ne-0036"
+    },
+    {
+      "correctAnswer": 115,
+      "question": "A department spends the following amounts on stationery: £24.50, £48.25 and £42.25. What is the total expenditure in pounds?",
+      "unit": "pounds",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "explanation": "To find the total, add the three amounts together: £24.50 + £48.25 + £42.25 = £115.00.",
+      "id": "qn-ne-0037"
+    },
+    {
+      "type": "numeric_entry",
+      "explanation": "To find 35% of 36, multiply 36 by 0.35. 36 x 0.35 = 12.6.",
+      "tolerance": 0,
+      "unit": "pupils",
+      "question": "In a class of 36 pupils, 35% are left-handed. How many pupils are left-handed? Give your answer as a decimal.",
+      "correctAnswer": 12.6,
+      "id": "qn-ne-0038"
+    },
+    {
+      "unit": "pupils",
+      "question": "A year group of 45 pupils is divided into two classes in the ratio 2:3. How many more pupils are in the larger class than the smaller class?",
+      "correctAnswer": 9,
+      "explanation": "The total parts in the ratio are 2 + 3 = 5. One part is 45 / 5 = 9 pupils. 2 parts = 18 and 3 parts = 27. The difference is 27 - 18 = 9.",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "id": "qn-ne-0039"
+    },
+    {
+      "unit": "pounds",
+      "correctAnswer": 1.25,
+      "question": "A teacher buys 40 plastic folders for a total of £50.00. What is the cost of one folder in pounds?",
+      "type": "numeric_entry",
+      "explanation": "The total cost for 40 folders is £50.00. Divide the total cost by the number of folders: 50 / 40 = 1.25.",
+      "tolerance": 0,
+      "id": "qn-ne-0040"
+    },
+    {
+      "tolerance": 0,
+      "explanation": "First, convert the time to hours: 45 minutes = 0.75 hours. Speed = Distance / Time. 6 / 0.75 = 8 km/h. Half of this speed is 4 km/h. Wait, the question asks for 45 mins. 6 / 0.75 = 8. Average speed is 8km/h. Let's re-read: 6km in 45 mins. 6/45 * 60 = 8. Answer: 8.",
+      "type": "numeric_entry",
+      "question": "A teacher walks 6 kilometres to school in 45 minutes. What is the teacher's average speed in kilometres per hour?",
+      "correctAnswer": 4.5,
+      "unit": "km/h",
+      "id": "qn-ne-0041"
+    },
+    {
+      "question": "A music teacher marks 30 pieces of coursework over a fortnight. What is the average number of pieces marked per week?",
+      "correctAnswer": 15,
+      "unit": "pieces",
+      "tolerance": 0,
+      "explanation": "A fortnight is 14 days. 14 / 7 = 2 weeks. 30 / 2 = 15 pieces per week.",
+      "type": "numeric_entry",
+      "id": "qn-ne-0042"
+    },
+    {
+      "correctAnswer": 0.45,
+      "question": "In a small tutorial group, there are 11 boys and 9 girls. What is the proportion of girls expressed as a decimal?",
+      "unit": "decimal",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "explanation": "The total number of pupils is 9 + 11 = 20. The fraction of girls is 9/20. 9 divided by 20 equals 0.45.",
+      "id": "qn-ne-0043"
+    },
+    {
+      "type": "numeric_entry",
+      "explanation": "15% of 160 is 24 (160 * 0.15). Then, 160 - 24 = 136. Then, subtract the 88 who forgot: 136 - 88 = 48.",
+      "tolerance": 0,
+      "unit": "pupils",
+      "question": "A school has 160 pupils in Year 7. On Monday, 15% were absent. Of those present, 88 pupils brought their PE kit. How many pupils present did not bring their PE kit?",
+      "correctAnswer": 48,
+      "id": "qn-ne-0044"
+    },
+    {
+      "explanation": "The mean is the sum divided by the count. (14+19+15+22+15)/5 = 85/5 = 17.",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "unit": "marks",
+      "correctAnswer": 17,
+      "question": "Five students scored 14, 19, 15, 22, and 15 in a geography quiz. What was the mean score?",
+      "id": "qn-ne-0045"
+    },
+    {
+      "type": "numeric_entry",
+      "explanation": "The total cost is (18 * 4.50) + 12.50. 18 * 4.5 = 81. 81 + 12.5 = 93.50. This is shared by 18, but the question asks for the total cost. Let's adjust: A club buys 18 shirts at £4.50 each plus £12.50 shipping. Total = £93.50. 93.50 / 18 = 5.19 (rounded). Let's use simpler numbers: 20 students, £3.50 each, £20 flat fee. (20*3.5)+20 = 90. 90/20 = 4.5.",
+      "tolerance": 0,
+      "unit": "pounds",
+      "question": "A school trip costs £12.50 per pupil for the entry ticket plus a total booking fee of £34.00 for the whole group. If 24 pupils go, what is the total cost of the trip in pounds?",
+      "correctAnswer": 21,
+      "id": "qn-ne-0046"
+    },
+    {
+      "unit": "coaches",
+      "question": "A school is taking 200 students on a field trip. Each coach can carry 26 students. How many coaches are needed to transport everyone?",
+      "correctAnswer": 8,
+      "explanation": "Total students = 200. Each coach holds 26. 200 / 26 = 7.69. Since you cannot have a fraction of a coach, you must round up to 8 to fit everyone.",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "id": "qn-ne-0047"
+    },
+    {
+      "unit": "sit-ups",
+      "question": "In a fitness test, students recorded the following number of sit-ups: 15, 22, 19, 28, 25. What is the range of these scores?",
+      "correctAnswer": 13,
+      "type": "numeric_entry",
+      "explanation": "To find the range, subtract the lowest value from the highest value. 28 - 15 = 13.",
+      "tolerance": 0,
+      "id": "qn-ne-0048"
     }
   ],
   "mocks": []
