@@ -4747,6 +4747,111 @@
       "type": "numeric_entry",
       "unit": "absences",
       "id": "qn-ne-0060"
+    },
+    {
+      "tolerance": 0,
+      "question": "A teacher orders 15 boxes of glue sticks. Each box weighs 0.76kg. What is the total weight of the order in kilograms?",
+      "explanation": "Multiply the number of boxes by the weight per box: 15 × 0.76 = 11.4kg.",
+      "correctAnswer": 11.4,
+      "unit": "kg",
+      "type": "numeric_entry",
+      "id": "qn-ne-0061"
+    },
+    {
+      "question": "In a cohort of 54 students, one third are choosing to study History. How many students are NOT studying History?",
+      "tolerance": 0,
+      "unit": "students",
+      "type": "numeric_entry",
+      "correctAnswer": 36,
+      "explanation": "One third of 54 is 18 (54 ÷ 3). Subtracting 18 from 54 leaves 36 students.",
+      "id": "qn-ne-0062"
+    },
+    {
+      "type": "numeric_entry",
+      "unit": "hours",
+      "correctAnswer": 1.35,
+      "explanation": "Divide 162 total minutes by 120 minutes (2 hours) to get 1.35.",
+      "question": "A teacher spends 162 minutes in staff meetings over a week. What is this time expressed in hours as a decimal?",
+      "tolerance": 0,
+      "id": "qn-ne-0063"
+    },
+    {
+      "unit": "£",
+      "type": "numeric_entry",
+      "correctAnswer": 13.2,
+      "explanation": "10% of £12 is £1.20. Therefore, 110% (the new price) is £12 + £1.20 = £13.20.",
+      "question": "The cost of a textbook is £12.00. Next term, the price will increase by 10%. What will be the new price of the textbook in pounds?",
+      "tolerance": 0,
+      "id": "qn-ne-0064"
+    },
+    {
+      "type": "numeric_entry",
+      "correctAnswer": 13,
+      "explanation": "Sum the scores (56 + 72 + 64 + 68 + 75 = 335) then divide by 5 to get 67. The range is 75 - 56 = 19. The difference is 67 - 19 = 48. Wait, simpler version: Median (68) - Mean (67) = 1. Let's use: What is the range? 75 - 56 = 19. Change question: Five pupils scored 12, 15, 12, 18, and 23. What is the range of these scores? (23-12=11). Let's use: What is the median of 12, 15, 12, 18, 23? Sorted: 12, 12, 15, 18, 23. Median is 15. Change to: A teacher marks 5 tests with scores: 12, 17, 13, 25, 13. What is the median score?",
+      "question": "An English teacher marks 5 essays with the following scores: 12, 17, 13, 25, 13. What is the median score?",
+      "tolerance": 0,
+      "id": "qn-ne-0065"
+    },
+    {
+      "explanation": "The ratio has 5 parts (2 + 3 = 5). One part is 800 / 5 = 160. Three parts for girls is 3 × 160 = 480.",
+      "correctAnswer": 480,
+      "unit": "girls",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "question": "A secondary school has 800 pupils. The ratio of boys to girls is 2:3. How many girls are there in the school?",
+      "id": "qn-ne-0066"
+    },
+    {
+      "type": "numeric_entry",
+      "unit": "litres",
+      "explanation": "Calculate 40% of 28 (0.4 × 28 = 11.2). Subtract this from the total (28 - 11.2 = 16.8).",
+      "correctAnswer": 16.8,
+      "question": "A teacher has 28 litres of water for a field trip. If the students consume 40% of the water by lunchtime, how many litres are left?",
+      "tolerance": 0,
+      "id": "qn-ne-0067"
+    },
+    {
+      "question": "A school trip costs £1,300 for coach travel and £500 for insurance. If 90 pupils go on the trip, what is the cost per pupil in pounds?",
+      "tolerance": 0,
+      "unit": "£",
+      "type": "numeric_entry",
+      "correctAnswer": 20,
+      "explanation": "Total cost is £1,300 + £500 = £1,800. Divide £1,800 by 90 students to get £20 per pupil.",
+      "id": "qn-ne-0068"
+    },
+    {
+      "explanation": "11:55 to 12:40 is 45 minutes. (11:55 + 5 mins = 12:00, then + 40 mins).",
+      "correctAnswer": 1240,
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "question": "A lesson starts at 11:55 and lasts for 45 minutes. At what time, using the 24-hour clock, does the lesson finish?",
+      "id": "qn-ne-0069"
+    },
+    {
+      "question": "In a Year 10 GCSE group, there are 13 boys and 7 girls. What is the proportion of boys in the group, expressed as a decimal?",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "correctAnswer": 0.65,
+      "explanation": "Total students = 13 + 7 = 20. Proportion of boys = 13 / 20. 13 ÷ 20 = 0.65.",
+      "id": "qn-ne-0070"
+    },
+    {
+      "correctAnswer": 102,
+      "explanation": "15% of 120 is 18 (0.15 × 120). Subtract 18 from 120 to find the number of pupils who passed (120 - 18 = 102).",
+      "unit": "pupils",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "question": "In a year group of 120 pupils, 15% failed a practice exam. How many pupils passed the exam?",
+      "id": "qn-ne-0071"
+    },
+    {
+      "explanation": "Calculate 7/8 of 16. 16 divided by 8 is 2. 2 multiplied by 7 is 14.",
+      "correctAnswer": 14,
+      "unit": "metres",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "question": "A teacher has 16 metres of display ribbon. She uses seven-eighths of it for a wall display. How many metres of ribbon were used?",
+      "id": "qn-ne-0072"
     }
   ],
   "mocks": []
