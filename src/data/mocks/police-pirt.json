@@ -6033,6 +6033,772 @@
       "correctAnswer": 2.4,
       "tolerance": 0,
       "id": "pp-ne-0156"
+    },
+    {
+      "type": "numeric_entry",
+      "explanation": "Add the three totals together: 45 + 38 + 32 = 115.",
+      "correctAnswer": 115,
+      "tolerance": 0,
+      "unit": "calls",
+      "question": "A response team receives 45 calls on Friday, 38 on Saturday, and 32 on Sunday. What is the total number of calls received over the weekend?",
+      "id": "pp-ne-0157"
+    },
+    {
+      "unit": "vehicles",
+      "question": "Out of 300 vehicles stopped during a road safety operation, 5% were found to have no insurance. How many vehicles were uninsured?",
+      "correctAnswer": 15,
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "explanation": "5% of 300 is calculated as (300 / 100) * 5 = 15.",
+      "id": "pp-ne-0158"
+    },
+    {
+      "correctAnswer": 102,
+      "tolerance": 0,
+      "unit": "minutes",
+      "question": "An officer works an 8-hour shift (480 minutes). If they spend 6 hours and 18 minutes on patrol, how many minutes are spent on administrative tasks?",
+      "type": "numeric_entry",
+      "explanation": "Subtract the time spent on administrative tasks from the total shift: 480 - 102 = 378. 378 minutes / 60 = 6.3 hours. Wait, the question asks for minutes: 480 - 378 = 102.",
+      "id": "pp-ne-0159"
+    },
+    {
+      "type": "numeric_entry",
+      "explanation": "Using the ratio 3:5, there are 8 parts in total (3+5). 128 / 8 = 16. Sergeants = 3 parts * 16 = 48.",
+      "unit": "Sergeants",
+      "question": "A police division has 128 personnel. The ratio of Sergeants to Constables is 3:5. How many Sergeants are in the division?",
+      "correctAnswer": 48,
+      "tolerance": 0,
+      "id": "pp-ne-0160"
+    },
+    {
+      "type": "numeric_entry",
+      "explanation": "Divide the total distance by the distance per set: 450 / 25 = 18.",
+      "unit": "pairs",
+      "question": "A search team must cover 450 metres of woodland. If each pair of officers can search 25 metres, how many pairs of officers are needed to cover the area?",
+      "correctAnswer": 18,
+      "tolerance": 0,
+      "id": "pp-ne-0161"
+    },
+    {
+      "explanation": "2.5 hours is 150 minutes. 150 minutes - 30 minutes for the break = 120 minutes.",
+      "type": "numeric_entry",
+      "correctAnswer": 120,
+      "tolerance": 0,
+      "unit": "minutes",
+      "question": "A CCTV operator monitors a screen for 2.5 hours. If they take one 30-minute break during this time, how many minutes did they spend actively monitoring?",
+      "id": "pp-ne-0162"
+    },
+    {
+      "correctAnswer": 855,
+      "tolerance": 0,
+      "unit": "pounds",
+      "question": "A station buys new body-worn cameras for a total of £950. The supplier gives a 10% discount for bulk buying. What is the final price paid?",
+      "type": "numeric_entry",
+      "explanation": "10% of £950 is £95. Subtract the discount from the total: £950 - £95 = £855.",
+      "id": "pp-ne-0163"
+    },
+    {
+      "correctAnswer": 16,
+      "tolerance": 0,
+      "unit": "items",
+      "question": "A forensics team processes four crime scenes, collecting 14, 18, 22, and 10 pieces of evidence respectively. What is the mean number of items collected per scene?",
+      "explanation": "Total items = 14 + 18 + 22 + 10 = 64. Mean = 64 / 4 = 16.",
+      "type": "numeric_entry",
+      "id": "pp-ne-0164"
+    },
+    {
+      "type": "numeric_entry",
+      "explanation": "To find 30% of 70: (70 / 10) * 3 = 21.",
+      "question": "In a town with 70 police officers, 30% are trained in advanced driving. How many officers have this advanced training?",
+      "unit": "officers",
+      "tolerance": 0,
+      "correctAnswer": 21,
+      "id": "pp-ne-0165"
+    },
+    {
+      "type": "numeric_entry",
+      "explanation": "Calculate time per house: 210 minutes / 5 houses = 42 minutes per house.",
+      "unit": "minutes",
+      "question": "A digital forensics officer spent 3 hours and 30 minutes analysing 5 computers. On average, how many minutes did they spend on each computer?",
+      "correctAnswer": 42,
+      "tolerance": 0,
+      "id": "pp-ne-0166"
+    },
+    {
+      "correctAnswer": 45,
+      "tolerance": 0,
+      "unit": "mph",
+      "question": "A police car travels 30 miles to a scene in 40 minutes. What was the average speed of the vehicle in miles per hour (mph)?",
+      "type": "numeric_entry",
+      "explanation": "Speed = Distance / Time. Time = 40 minutes = 2/3 of an hour. 30 miles / (2/3) hours = 45 mph.",
+      "id": "pp-ne-0167"
+    },
+    {
+      "explanation": "Total distance = 1.4km * 8 = 11.2km.",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "correctAnswer": 11.2,
+      "question": "A foot patrol officer completes a circuit of a shopping centre that is 1.4km long. If they walk the circuit 8 times in a shift, what is the total distance covered?",
+      "unit": "km",
+      "id": "pp-ne-0168"
+    },
+    {
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "correctAnswer": 18,
+      "question": "During a month, 9% of 200 emergency calls were found to be accidental. How many calls were accidental?",
+      "explanation": "First, find 10% of 200 (20) and 1% (2). 9% is 20 minus 2, which equals 18.",
+      "id": "pp-ne-0169"
+    },
+    {
+      "correctAnswer": 55,
+      "unit": "officers",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "explanation": "Add all the numbers (10 + 13 + 12 = 35) and subtract from the goal (90 - 35 = 55).",
+      "question": "A recruitment target is 90 new officers per quarter. In month one, 10 were hired; in month two, 13; and in month three, 12. How many more officers are needed to reach the target?",
+      "id": "pp-ne-0170"
+    },
+    {
+      "correctAnswer": 300,
+      "unit": "pouches",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "explanation": "Divide the total weight by the weight of a single bag (15 / 0.05 = 300).",
+      "question": "A forensic team recovers a large bag of evidence weighing 15kg. Each individual evidence pouch inside weighs 0.05kg. How many pouches are in the bag?",
+      "id": "pp-ne-0171"
+    },
+    {
+      "explanation": "Multiply the total hours by the hourly rate (8 x 1.40). 8 x 1 = 8, and 8 x 0.40 = 3.20. 8 + 3.20 = 11.20.",
+      "question": "An officer is entitled to a fuel allowance of £1.40 for every hour of specialist vehicle use. If they use the vehicle for 8 hours, what is the total allowance in pounds?",
+      "correctAnswer": 11.2,
+      "unit": "£",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "id": "pp-ne-0172"
+    },
+    {
+      "explanation": "A speed of 10 miles in 12 minutes is 5/6 of a mile per minute. Multiply 5/6 by 60 minutes to get 50 mph.",
+      "question": "An officer travels 10 miles to a scene, which takes 12 minutes. What was the average speed in miles per hour (mph)?",
+      "unit": "mph",
+      "correctAnswer": 50,
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "id": "pp-ne-0173"
+    },
+    {
+      "question": "A dispatch team of 128 staff has a ratio of 3 supervisors to 5 operators. What is the value of one 'part' of this ratio?",
+      "explanation": "The ratio 3:5 has 8 parts in total (3+5). Divide 128 by 8 to get 16. Unit size is 16. 1 portion of the ratio is 16.",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "correctAnswer": 16,
+      "id": "pp-ne-0174"
+    },
+    {
+      "question": "An officer begins a crime scene guard at 15:20 and is relieved at 19:50. How many total minutes were they on the guard?",
+      "explanation": "3:20pm to 7:50pm is 4 hours and 30 minutes. (4 x 60) + 30 = 270 minutes.",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "correctAnswer": 270,
+      "unit": "minutes",
+      "id": "pp-ne-0175"
+    },
+    {
+      "correctAnswer": 112,
+      "unit": "sets",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "explanation": "Calculate 20% of 140 (140 / 5 = 28). Subtract 28 from 140 to find the remaining amount (140 - 28 = 112).",
+      "question": "A station has 140 sets of body armour. If 20% are sent for repair, how many sets remain at the station?",
+      "id": "pp-ne-0176"
+    },
+    {
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "unit": "£",
+      "correctAnswer": 220,
+      "question": "A piece of police equipment costs £264 including 20% VAT. What was the cost of the equipment before VAT was added?",
+      "explanation": "The price including VAT is 120% of the original. £264 / 1.2 = £220.",
+      "id": "pp-ne-0177"
+    },
+    {
+      "unit": "crimes",
+      "correctAnswer": 98,
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "explanation": "Add all the crimes together: 24 + 31 + 18 + 25 = 98.",
+      "question": "A local ward records the following crimes in a week: 24 thefts, 31 assaults, 18 burglaries, and 25 incidents of criminal damage. What is the total number of crimes?",
+      "id": "pp-ne-0178"
+    },
+    {
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "correctAnswer": 30,
+      "unit": "minutes",
+      "question": "Six officers each walk a 1.5km perimeter search. If they move at a combined average speed of 18km/h, how many minutes does the total distance take to cover?",
+      "explanation": "Calculate the total distance (6 officers x 1.5km = 9km). Divide total distance by speed (9 / 18 = 0.5 hours). 0.5 hours is 30 minutes.",
+      "id": "pp-ne-0179"
+    },
+    {
+      "question": "A team has a budget of £340. They spend £125 on stationary and files. How much money in pounds is left in the budget?",
+      "explanation": "Calculate the 10% reduction (340 / 10 = 34). Subtract this from the total (340 - 34 = 306). Divide by the number of officers (306 / 3 = 102). Wait, calculation check: 340 - 125 spent = 215 remaining.",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "unit": "£",
+      "correctAnswer": 215,
+      "id": "pp-ne-0180"
+    },
+    {
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "unit": "minutes",
+      "correctAnswer": 115,
+      "question": "A Special Constable is assigned a 2-hour foot patrol. They take one 15-minute break during this shift. How many minutes do they spend actively patrolling?",
+      "explanation": "Subtract the 15-minute break from the 2-hour shift (120 minutes) to find the active patrol time.",
+      "id": "pp-ne-0181"
+    },
+    {
+      "correctAnswer": 48,
+      "unit": "pieces",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "explanation": "Divide the total pieces of evidence (240) by the number of scenes (5) to find the average.",
+      "question": "A forensics team processes five different scenes and collects a total of 240 pieces of evidence. What was the average number of pieces collected per scene?",
+      "id": "pp-ne-0182"
+    },
+    {
+      "question": "A team of 3 officers is allocated a 120-litre fuel quota for the week, but the quota is reduced by 10%. If the remaining amount is split equally, how many litres does each officer get?",
+      "explanation": "First, find 10% of 120 (12), then subtract that from 120 (108). Divide 108 by the 3 officers to get 36.",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "correctAnswer": 36,
+      "unit": "litres",
+      "id": "pp-ne-0183"
+    },
+    {
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "correctAnswer": 21,
+      "unit": "officers",
+      "question": "A police station has 140 officers on staff. If 15% of the staff are trained to use a TASER, how many officers have this training?",
+      "explanation": "Multiply the total number of officers (140) by 0.15 (15%) to find the number of taser-trained officers.",
+      "id": "pp-ne-0184"
+    },
+    {
+      "correctAnswer": 220,
+      "unit": "pounds",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "explanation": "Add the individual costs (£35 + £165 + £20) to find the total expenditure.",
+      "question": "An officer submits an expenses claim for £35 for parking, £165 for a train ticket, and £20 for a meal. What is the total value of the claim in pounds?",
+      "id": "pp-ne-0185"
+    },
+    {
+      "explanation": "Calculate the speed by dividing distance (30) by time in hours (40/60 = 0.666). 30 / 0.666 = 45 mph.",
+      "question": "A response vehicle travels 30 miles to a rural incident. The journey takes 40 minutes. What was the average speed of the vehicle in miles per hour (mph)?",
+      "unit": "mph",
+      "correctAnswer": 45,
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "id": "pp-ne-0186"
+    },
+    {
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "correctAnswer": 14,
+      "unit": "sergeants",
+      "question": "The ratio of constables to sergeants in a task force is 3:1. If there are 56 personnel in total, how many are sergeants?",
+      "explanation": "First, find the total parts in the ratio (3 + 1 = 4). Divide the total officers (56) by 4 to find the number of sergeants.",
+      "id": "pp-ne-0187"
+    },
+    {
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "unit": "officers",
+      "correctAnswer": 20,
+      "question": "A 1.2km stretch of road needs to be searched for evidence. If each officer is assigned a 60-metre section, how many officers are required to cover the whole distance?",
+      "explanation": "Divide the total distance (1.2km or 1200m) by the distance per officer (60m) to get 20 officers.",
+      "id": "pp-ne-0188"
+    },
+    {
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "unit": "pounds",
+      "correctAnswer": 17.5,
+      "question": "A police dog handler is entitled to an allowance of £3.50 per hour for kennel maintenance. If they spend 5 hours on maintenance in a week, what is the total allowance in pounds?",
+      "explanation": "Multiply the total duration (5 hours) by the rate per hour (£3.50). 5 x 3.5 = 17.5.",
+      "id": "pp-ne-0189"
+    },
+    {
+      "unit": "thefts",
+      "correctAnswer": 32,
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "explanation": "Add the current crimes together (14+8+12 = 34). Subtract this from the target (66) to find the remaining amount.",
+      "question": "A local station aims for no more than 66 reported thefts a month. So far, there have been 14 in week one, 8 in week two, and 12 in week three. How many more thefts can occur before the target is exceeded?",
+      "id": "pp-ne-0190"
+    },
+    {
+      "question": "A CCTV system records 165 minutes of high-definition footage every hour. How many total minutes of footage are recorded during a night shift from 22:00 to 06:00?",
+      "explanation": "First calculate the duration (22:00 to 06:00 is 8 hours). 8 hours x 165 minutes = 1320 minutes.",
+      "type": "numeric_entry",
+      "tolerance": 0,
+      "correctAnswer": 1320,
+      "unit": "minutes",
+      "id": "pp-ne-0191"
+    },
+    {
+      "question": "A custody officer can process an average of 4 witness interviews every hour. How many interviews can they complete in a 3 hour and 30 minute period?",
+      "explanation": "Multiply the total hours (3.5) by the number of interviews per hour (4). 3.5 x 4 = 14.",
+      "tolerance": 0,
+      "type": "numeric_entry",
+      "correctAnswer": 14,
+      "unit": "interviews",
+      "id": "pp-ne-0192"
+    },
+    {
+      "explanation": "First, find the total cost of the vests: 18 x £450 = £8100. Then, divide the total cost by the remaining budget: £8100 / £9477 = 0.854... which is 85.5% rounded. (Alternative: £156 - £39 = £117) Subtract the 25% discount (£39) from the original price (£156).",
+      "type": "numeric_entry",
+      "unit": "pounds",
+      "correctAnswer": 117,
+      "question": "A specialist police jacket originally costs £156. If a supplier offers the force a 25% discount for a bulk order, what is the new price of a single jacket in pounds?",
+      "id": "pp-ne-0193"
+    },
+    {
+      "explanation": "First, add the five daily totals: 18 + 12 + 15 + 23 + 14 = 82. Then, subtract this from the weekly limit: 108.5 - 82 = 26.5. (Wait, recalculating based on the prompt's logic): 15.5 average x 7 days = 108.5 total.",
+      "type": "numeric_entry",
+      "unit": "hours",
+      "question": "A police team sets a target to limit overtime to an average of 15.5 hours per day across a full 7-day week. What is the maximum total number of overtime hours the team can work in that week?",
+      "correctAnswer": 108.5,
+      "id": "pp-ne-0194"
+    },
+    {
+      "unit": "officers",
+      "correctAnswer": 42,
+      "question": "A station has 98 officers split between Response and Neighbourhood teams in a ratio of 4:3. How many officers are assigned to the Neighbourhood team?",
+      "explanation": "The total ratio parts are 5 + 2 = 7. Divide the total officers by the parts: 98 / 7 = 14. Multiply the value of one part by the number of Response parts: 14 x 3 = 42.",
+      "type": "numeric_entry",
+      "id": "pp-ne-0195"
+    },
+    {
+      "question": "A police officer has the power to search a person in a public place if they have reasonable grounds to suspect they are in possession of stolen goods.",
+      "type": "true_false",
+      "explanation": "Under the Police and Criminal Evidence Act 1984 (PACE), a constable may search any person or vehicle for stolen or prohibited articles in a public place.",
+      "correctAnswer": true,
+      "id": "pp-tf-0001"
+    },
+    {
+      "explanation": "The standard of proof in a criminal trial is 'beyond reasonable doubt', whereas 'balance of probabilities' is used in civil cases.",
+      "type": "true_false",
+      "question": "To secure a conviction in a UK criminal court, the jury must be satisfied of the defendant's guilt on the 'balance of probabilities'.",
+      "correctAnswer": false,
+      "id": "pp-tf-0002"
+    },
+    {
+      "correctAnswer": false,
+      "type": "true_false",
+      "question": "Police officers are only bound by the Code of Ethics during their scheduled working hours.",
+      "explanation": "While off-duty, officers are still expected to maintain high standards of conduct and can be subject to disciplinary action for private behavior.",
+      "id": "pp-tf-0003"
+    },
+    {
+      "correctAnswer": true,
+      "explanation": "Victims have a legal right to be kept informed about the progress of the investigation and any court proceedings involving their case.",
+      "question": "Under the Victims' Code, victims of crime are entitled to receive updates on the status of the investigation into their case.",
+      "type": "true_false",
+      "id": "pp-tf-0004"
+    },
+    {
+      "correctAnswer": false,
+      "question": "In the UK, the police have the final authority to decide whether to charge a suspect in every single type of criminal case.",
+      "type": "true_false",
+      "explanation": "The decision to charge is usually made by the Crown Prosecution Service (CPS), though the police can charge for some minor offences.",
+      "id": "pp-tf-0005"
+    },
+    {
+      "explanation": "Section 17 of PACE allows an officer to enter premises without a warrant to save a life, prevent injury, or prevent serious damage to property.",
+      "type": "true_false",
+      "question": "An officer can legally enter a private dwelling without a warrant if they believe it is necessary to save a life.",
+      "correctAnswer": true,
+      "id": "pp-tf-0006"
+    },
+    {
+      "question": "A crime motivated by hostility towards a person's religion is classified as a hate crime in England and Wales.",
+      "type": "true_false",
+      "explanation": "Incidents where someone is targeted because of their actual or perceived religious belief are classified as hate crimes.",
+      "correctAnswer": true,
+      "id": "pp-tf-0007"
+    },
+    {
+      "explanation": "If a suspect asks for legal advice, the interview must normally be delayed until they have spoken with a solicitor.",
+      "type": "true_false",
+      "question": "A police officer can continue to interview a suspect even if the suspect has requested legal advice but the solicitor has not yet arrived.",
+      "correctAnswer": false,
+      "id": "pp-tf-0008"
+    },
+    {
+      "type": "true_false",
+      "question": "Whenever a police officer uses physical force, they must be able to justify it as being 'proportionate' and 'necessary'.",
+      "explanation": "All use of force must be shown to be necessary and proportionate to the threat or situation faced by the officer.",
+      "correctAnswer": true,
+      "id": "pp-tf-0009"
+    },
+    {
+      "explanation": "A person 'At Risk' (Vulnerable Adult) or a child (under 18) must have an Appropriate Adult present during their detention and interview.",
+      "type": "true_false",
+      "question": "An 'Appropriate Adult' is only required during a police interview if the suspect is under the age of 16.",
+      "correctAnswer": false,
+      "id": "pp-tf-0010"
+    },
+    {
+      "correctAnswer": true,
+      "explanation": "This caution informs the suspect that their silence may later be interpreted negatively in court if they rely on a defense they didn't mention at the time.",
+      "question": "The standard police caution includes the phrase: 'It may harm your defence if you do not mention when questioned something which you later rely on in court'.",
+      "type": "true_false",
+      "id": "pp-tf-0011"
+    },
+    {
+      "explanation": "Body-worn video should be turned on whenever an officer is exercising a power or attending an incident, not just during arrests.",
+      "question": "Body-worn video cameras should only be activated by an officer at the exact moment an arrest is being made.",
+      "type": "true_false",
+      "correctAnswer": false,
+      "id": "pp-tf-0012"
+    },
+    {
+      "type": "true_false",
+      "explanation": "Under Section 1 of PACE, officers can stop and search individuals for stolen goods or prohibited items like offensive weapons based on reasonable suspicion.",
+      "question": "A police officer can search an individual in public if they have reasonable grounds to suspect the person is carrying an offensive weapon.",
+      "correctAnswer": true,
+      "id": "pp-tf-0013"
+    },
+    {
+      "type": "true_false",
+      "explanation": "In UK criminal trials, the prosecution must prove the defendant's guilt 'beyond reasonable doubt' (or so the jury is sure), not just on the balance of probabilities.",
+      "correctAnswer": false,
+      "question": "The burden of proof required for a criminal conviction in the UK is the 'balance of probabilities'.",
+      "id": "pp-tf-0014"
+    },
+    {
+      "correctAnswer": true,
+      "question": "The police Code of Ethics applies to an officer's conduct both on and off duty.",
+      "explanation": "The Code of Ethics sets out that officers must maintain high standards of behavior at all times, including when off-duty, to uphold public confidence.",
+      "type": "true_false",
+      "id": "pp-tf-0015"
+    },
+    {
+      "question": "A police officer has an automatic right to enter any private home to search for evidence without a warrant, regardless of the circumstances.",
+      "correctAnswer": false,
+      "explanation": "While the police can search a person after arrest under Section 32 of PACE, they must have a legal basis (such as a warrant or Section 17) to enter a dwelling to search for evidence before an arrest.",
+      "type": "true_false",
+      "id": "pp-tf-0016"
+    },
+    {
+      "type": "true_false",
+      "explanation": "Under the Equality Act 2010, age is one of the nine protected characteristics that the police and other public bodies must protect from discrimination.",
+      "question": "Age is considered a protected characteristic under the Equality Act 2010.",
+      "correctAnswer": true,
+      "id": "pp-tf-0017"
+    },
+    {
+      "question": "An 'Appropriate Adult' must be present during the interview of a 17-year-old suspect.",
+      "correctAnswer": true,
+      "explanation": "An Appropriate Adult is required for any suspect under 18, or for adults who are considered vulnerable or have mental health conditions.",
+      "type": "true_false",
+      "id": "pp-tf-0018"
+    },
+    {
+      "explanation": "The CPS (Crown Prosecution Service) is responsible for prosecuting criminal cases, while the police are responsible for investigating them.",
+      "type": "true_false",
+      "correctAnswer": false,
+      "question": "The police are the primary body responsible for prosecuting criminal cases in a UK court.",
+      "id": "pp-tf-0019"
+    },
+    {
+      "explanation": "The Right of Silence means a suspect does not have to answer questions, though they are cautioned that their silence might be held against them in court.",
+      "type": "true_false",
+      "correctAnswer": true,
+      "question": "A suspect has the legal right to remain silent during a police interview.",
+      "id": "pp-tf-0020"
+    },
+    {
+      "correctAnswer": false,
+      "question": "The standard maximum time a suspect can be detained by police without being charged is 48 hours.",
+      "explanation": "In the UK, the maximum time a person can usually be held without charge is 24 hours, though this can be extended to 36 or 96 hours for serious crimes with authorization.",
+      "type": "true_false",
+      "id": "pp-tf-0021"
+    },
+    {
+      "explanation": "The Common Law power to prevent a Breach of the Peace allows officers to arrest someone if they reasonably believe a breach is imminent or occurring.",
+      "type": "true_false",
+      "question": "A police officer can arrest someone to prevent a 'Breach of the Peace' even if no other specific criminal offence has been committed yet.",
+      "correctAnswer": true,
+      "id": "pp-tf-0022"
+    },
+    {
+      "explanation": "The caution must be given at the start of any interview or upon arrest to ensure the suspect understands their rights regarding their answers.",
+      "type": "true_false",
+      "correctAnswer": false,
+      "question": "The police caution must only be delivered after a suspect has been officially charged with a crime.",
+      "id": "pp-tf-0023"
+    },
+    {
+      "question": "It is a breach of police policy to share confidential information from a police database with a family member who is not involved in the case.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "explanation": "Data protection laws and police policy strictly prohibit the sharing of sensitive information with anyone who does not have a professional 'need to know'.",
+      "id": "pp-tf-0024"
+    },
+    {
+      "explanation": "Under Section 1 of the Police and Criminal Evidence Act 1984, officers can search for stolen goods or prohibited items if they have reasonable suspicion.",
+      "type": "true_false",
+      "question": "A police officer has the power to stop and search a person in a public place if they suspect the person is in possession of stolen goods.",
+      "correctAnswer": true,
+      "id": "pp-tf-0025"
+    },
+    {
+      "explanation": "While suspects have the right to silence, the court may draw an 'adverse inference' if they later rely on a fact they failed to mention during the police interview.",
+      "type": "true_false",
+      "question": "There are no legal consequences if a suspect refuses to answer any questions during a police interview.",
+      "correctAnswer": false,
+      "id": "pp-tf-0026"
+    },
+    {
+      "correctAnswer": true,
+      "explanation": "The GOWISELY acronym covers the legal requirements for a search, including the officer's name, station, and the legal grounds for the search.",
+      "type": "true_false",
+      "question": "Before conducting a stop and search, an officer must provide the individual with their name and the station where they are based.",
+      "id": "pp-tf-0027"
+    },
+    {
+      "type": "true_false",
+      "question": "If a police officer has reasonable grounds to suspect someone has committed a crime, they must always arrest them immediately.",
+      "explanation": "Under Section 24 of PACE, an arrest is only lawful if it is necessary for one of the 'necessity' criteria, such as to protect a child or prevent a disappearance.",
+      "correctAnswer": false,
+      "id": "pp-tf-0028"
+    },
+    {
+      "explanation": "The Equality Act 2010 lists nine protected characteristics, and sexual orientation is one of them, protecting individuals from discrimination.",
+      "question": "Sexual orientation is legally defined as a protected characteristic under the Equality Act 2010.",
+      "type": "true_false",
+      "correctAnswer": true,
+      "id": "pp-tf-0029"
+    },
+    {
+      "correctAnswer": false,
+      "type": "true_false",
+      "question": "The basic statutory time limit for detaining a person without charge for any summary offence is 36 hours.",
+      "explanation": "In the UK, the standard period is 24 hours (with extensions possible for serious offences), not 36 hours as a default.",
+      "id": "pp-tf-0030"
+    },
+    {
+      "correctAnswer": true,
+      "explanation": "Victims' rights are set out in the Victims' Code, ensuring they are kept informed about the progress of their case and court dates.",
+      "question": "The police have a legal duty to provide regular updates to victims about the progress of a criminal investigation.",
+      "type": "true_false",
+      "id": "pp-tf-0031"
+    },
+    {
+      "correctAnswer": false,
+      "type": "true_false",
+      "question": "A police officer always requires a written warrant signed by a Magistrate to enter a private home to stop a breach of the peace.",
+      "explanation": "Common law allows an officer to enter a premises to deal with or stop a Breach of the Peace, even without a written warrant.",
+      "id": "pp-tf-0032"
+    },
+    {
+      "correctAnswer": true,
+      "explanation": "The Code of Ethics explicitly includes 'honesty and integrity' as one of the primary standards by which all police personnel are measured.",
+      "question": "Honesty and Integrity is one of the key standards of professional behaviour listed in the Police Code of Ethics.",
+      "type": "true_false",
+      "id": "pp-tf-0033"
+    },
+    {
+      "correctAnswer": false,
+      "explanation": "In the UK, the 'beyond reasonable doubt' (or 'sure') standard is for criminal trials, while 'balance of probabilities' is for civil cases.",
+      "question": "In a UK criminal court, a jury must be satisfied of a defendant's guilt on the 'balance of probabilities'.",
+      "type": "true_false",
+      "id": "pp-tf-0034"
+    },
+    {
+      "correctAnswer": true,
+      "type": "true_false",
+      "question": "An officer may enter a property without a warrant to arrest a person they believe is inside for an indictable offence.",
+      "explanation": "Section 17 of PACE allows an officer to enter a property to arrest a person for an indictable (more serious) offence.",
+      "id": "pp-tf-0035"
+    },
+    {
+      "explanation": "Misconduct can occur through any action or omission that breaches the Standards of Professional Behaviour, regardless of whether it is a criminal act.",
+      "type": "true_false",
+      "question": "A police officer can only be found guilty of misconduct if they have committed a specific criminal offence.",
+      "correctAnswer": false,
+      "id": "pp-tf-0036"
+    },
+    {
+      "question": "Under the Data Protection Act 2018, police must only process personal data for specific, lawful purposes.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "explanation": "The Data Protection Act 2018 requires law enforcement to process personal data fairly and only for specific, lawful purposes.",
+      "id": "pp-tf-0037"
+    },
+    {
+      "explanation": "The Standard of Proof in criminal cases is 'beyond reasonable doubt', while the 'balance of probabilities' is used in civil cases.",
+      "correctAnswer": false,
+      "type": "true_false",
+      "question": "In a criminal court in the UK, the prosecution must prove the defendant's guilt on the 'balance of probabilities'.",
+      "id": "pp-tf-0038"
+    },
+    {
+      "explanation": "An officer may use reasonable force if it is necessary and proportionate to perform their duty, such as making a lawful arrest.",
+      "question": "A police officer is never legally permitted to use physical force against a member of the public.",
+      "type": "true_false",
+      "correctAnswer": false,
+      "id": "pp-tf-0039"
+    },
+    {
+      "question": "Disability is legally defined as a 'protected characteristic' under the Equality Act 2010.",
+      "type": "true_false",
+      "correctAnswer": true,
+      "explanation": "Under the Equality Act 2010, disability is one of the nine protected characteristics that prevent discrimination.",
+      "id": "pp-tf-0040"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": true,
+      "question": "When cautioned, a suspect is warned that silence in an interview may later harm their defence in court.",
+      "explanation": "The PACE 'caution' warns suspects that failing to mention something they later rely on in court may harm their defence.",
+      "id": "pp-tf-0041"
+    },
+    {
+      "correctAnswer": false,
+      "type": "true_false",
+      "question": "It is acceptable for a police officer to accept a small cash gift from a victim as a thank you for solving a crime.",
+      "explanation": "Police Officers are required to maintain a professional distance and must not engage in any conduct that could be perceived as a conflict of interest.",
+      "id": "pp-tf-0042"
+    },
+    {
+      "explanation": "Under PACE Code A, an officer must state the legal power they are using and the grounds for the search before it begins.",
+      "question": "Before a stop and search, an officer must explain the legal grounds and the object they are looking for.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "id": "pp-tf-0043"
+    },
+    {
+      "correctAnswer": false,
+      "type": "true_false",
+      "question": "The police have the final authority to decide whether to prosecute a suspect in a serious criminal trial.",
+      "explanation": "The Crown Prosecution Service (CPS) is the independent body responsible for making the final decision on whether to prosecute most cases.",
+      "id": "pp-tf-0044"
+    },
+    {
+      "question": "A police officer may enter a private dwelling without a warrant to save a person's life.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "explanation": "Section 17 of PACE allows officers to enter premises without a warrant to save life or limb or prevent serious damage to property.",
+      "id": "pp-tf-0045"
+    },
+    {
+      "explanation": "Police officers must challenge or report the conduct of colleagues which falls below the Standards of Professional Behaviour.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "question": "Police officers have a professional duty to report any wrongdoing or misconduct by their colleagues.",
+      "id": "pp-tf-0046"
+    },
+    {
+      "explanation": "Vulnerable adults, including those with mental health issues or learning disabilities, must have an Appropriate Adult present.",
+      "question": "The requirement for an 'Appropriate Adult' only applies to suspects who are under the age of 18.",
+      "correctAnswer": false,
+      "type": "true_false",
+      "id": "pp-tf-0047"
+    },
+    {
+      "explanation": "Under PACE, the initial period of detention for a serious (indictable) offence is 24 hours, which can be extended to 36 hours by a Superintendent.",
+      "question": "The initial maximum period of detention for a person arrested for an indictable offence is 12 hours.",
+      "correctAnswer": false,
+      "type": "true_false",
+      "id": "pp-tf-0048"
+    },
+    {
+      "question": "Following a lawful arrest for an indictable offence, a police officer may search the suspect for evidence at the scene of the arrest.",
+      "type": "true_false",
+      "correctAnswer": true,
+      "explanation": "Under Section 32 of PACE, an officer may search a person at a place other than a police station if they have been arrested for an indictable offence and the officer has reasonable grounds to believe they have evidence.",
+      "id": "pp-tf-0049"
+    },
+    {
+      "correctAnswer": false,
+      "question": "It is standard procedure to allow multiple witnesses to discuss their evidence together before giving formal statements to the police.",
+      "type": "true_false",
+      "explanation": "Witnesses are generally expected to provide their own reliable account and are discouraged from discussing the details with other witnesses to prevent memory contamination.",
+      "id": "pp-tf-0050"
+    },
+    {
+      "correctAnswer": false,
+      "question": "In a UK criminal trial, the defendant is responsible for proving their innocence beyond a reasonable doubt.",
+      "type": "true_false",
+      "explanation": "The Burden of Proof in criminal cases lies with the prosecution, and the standard is 'beyond reasonable doubt' (the jury must be sure), not 'balance of probabilities'.",
+      "id": "pp-tf-0051"
+    },
+    {
+      "explanation": "The Public Sector Equality Duty (PSED) requires public authorities like the police to work towards eliminating discrimination and fostering good relations between different groups.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "question": "Police forces have a legal duty to proactively promote equality of opportunity between people who share a protected characteristic and those who do not.",
+      "id": "pp-tf-0052"
+    },
+    {
+      "explanation": "PACE Code C states that an independent Appropriate Adult must be present to support a 'vulnerable adult' (someone with mental health issues or learning disabilities) during police procedures.",
+      "type": "true_false",
+      "question": "An 'Appropriate Adult' must be present during the interview of a suspect who has a recognized mental health condition, regardless of their age.",
+      "correctAnswer": true,
+      "id": "pp-tf-0053"
+    },
+    {
+      "correctAnswer": false,
+      "type": "true_false",
+      "question": "Police officers are permitted to use their warrant card to obtain personal discounts at local shops as long as they are off duty.",
+      "explanation": "The Code of Ethics explicitly states that officers should not use their police identification or position to gain any personal financial advantage or discount.",
+      "id": "pp-tf-0054"
+    },
+    {
+      "correctAnswer": true,
+      "type": "true_false",
+      "question": "Before conducting a Stop and Search under Section 1 of PACE, an officer must inform the individual which police station the officer is based at.",
+      "explanation": "The G.O.W.I.S.E. acronym includes 'Station', meaning officers must tell the person which station they are based at before conducting a search.",
+      "id": "pp-tf-0055"
+    },
+    {
+      "type": "true_false",
+      "question": "A police officer is only legally allowed to use force if they are under direct physical attack from a suspect.",
+      "correctAnswer": false,
+      "explanation": "Reasonable force may be used for various purposes, including self-defence, preventing crime, or effecting a lawful arrest, even if the person is not actively attacking the officer.",
+      "id": "pp-tf-0056"
+    },
+    {
+      "question": "Police officers have a professional responsibility to ensure they are physically and mentally fit to perform their duties before starting a shift.",
+      "type": "true_false",
+      "correctAnswer": true,
+      "explanation": "Under the Code of Ethics, 'Fitness for Work' means officers must ensure they are mentally and physically fit to carry out their duties safely.",
+      "id": "pp-tf-0057"
+    },
+    {
+      "explanation": "Age is one of the nine protected characteristics listed under the Equality Act 2010.",
+      "question": "Under the Equality Act 2010, 'Age' is not considered a protected characteristic.",
+      "type": "true_false",
+      "correctAnswer": false,
+      "id": "pp-tf-0058"
+    },
+    {
+      "question": "An officer may enter a private premises without a warrant to prevent a breach of the peace that is currently occurring or is imminent.",
+      "type": "true_false",
+      "correctAnswer": true,
+      "explanation": "Common Law allows any person (including police) to enter property without a warrant to stop or prevent an immediate breach of the peace.",
+      "id": "pp-tf-0059"
+    },
+    {
+      "question": "A police officer is legally permitted to stop and search a person solely because they have a 'bad feeling' about that individual.",
+      "type": "true_false",
+      "correctAnswer": false,
+      "explanation": "A person can only be lawfully stopped and searched if the officer has 'reasonable grounds' for suspicion, not based on intuition or a 'hunch'.",
+      "id": "pp-tf-0060"
     }
   ],
   "mocks": []
