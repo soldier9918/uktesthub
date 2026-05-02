@@ -1875,6 +1875,162 @@
       "question": "Under the Microsoft Shared Responsibility Model, which task remains the responsibility of the customer even when using a Software as a Service (SaaS) product?",
       "type": "multiple_choice",
       "id": "mf-mc-0144"
+    },
+    {
+      "options": [
+        "Public Cloud",
+        "Community Cloud",
+        "Private Cloud",
+        "Hybrid Cloud"
+      ],
+      "type": "multiple_choice",
+      "question": "A London-based financial firm requires exclusive use of physical hardware to host its applications for regulatory reasons. Which cloud deployment model should they use?",
+      "explanation": "In a Private Cloud, the organisation uses dedicated hardware located in their own data centre or with a provider, offering full control and privacy.",
+      "correctAnswer": 2,
+      "id": "mf-mc-0145"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Microsoft Purview Compliance Manager",
+        "Azure Advisor",
+        "Microsoft Defender for Cloud",
+        "Microsoft Entra ID"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Microsoft Purview (formerly Compliance Manager) provides a score that reflects your organisation's progress in completing actions that reduce risks around data protection.",
+      "question": "Which tool provides a 'Compliance Score' to help organisations track their progress in meeting regulatory requirements and data protection standards?",
+      "id": "mf-mc-0146"
+    },
+    {
+      "correctAnswer": 1,
+      "question": "An e-commerce company expects a surge in traffic during a bank holiday sale. They plan to add more virtual machines to their web tier. What is this process called?",
+      "explanation": "Horizontal scaling, or scaling out, involves adding more instances (like virtual machines) to your fleet to distribute the workload.",
+      "type": "multiple_choice",
+      "options": [
+        "Scaling up",
+        "Scaling out (Horizontal scaling)",
+        "Vertical scaling",
+        "Resource pooling"
+      ],
+      "id": "mf-mc-0147"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Azure Monitor",
+        "Microsoft Sentinel",
+        "Resource Health",
+        "Azure Service Health"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Azure Service Health notifies you about service outages, planned maintenance, and other advisories that specifically affect the resources you are using.",
+      "question": "Which Azure service provides personalised alerts and guidance when Azure service issues affect your specific subscriptions and resources?",
+      "id": "mf-mc-0148"
+    },
+    {
+      "correctAnswer": 0,
+      "question": "Which cloud service model requires the least amount of management by the customer, as the vendor manages the application, data, and infrastructure?",
+      "explanation": "In SaaS, the provider manages everything including the underlying infrastructure, middleware, and the application software itself (e.g., Microsoft 365).",
+      "type": "multiple_choice",
+      "options": [
+        "Software as a Service (SaaS)",
+        "Infrastructure as a Service (IaaS)",
+        "Platform as a Service (PaaS)",
+        "On-premises"
+      ],
+      "id": "mf-mc-0149"
+    },
+    {
+      "explanation": "Azure Blueprints allows cloud architects to define a repeatable set of Azure resources that implement and adhere to an organisation's standards and requirements.",
+      "question": "A UK healthcare provider wants to deploy a standardised environment including resource groups, policies, and role-based access controls across several subscriptions. Which tool should they use?",
+      "correctAnswer": 2,
+      "options": [
+        "Azure Resource Groups",
+        "Azure Policy",
+        "Azure Blueprints",
+        "Management Groups"
+      ],
+      "type": "multiple_choice",
+      "id": "mf-mc-0150"
+    },
+    {
+      "options": [
+        "Microsoft Planner",
+        "Microsoft Viva",
+        "Microsoft Stream",
+        "Microsoft Loop"
+      ],
+      "type": "multiple_choice",
+      "question": "Which Microsoft 365 platform is specifically designed to enhance employee experience by bringing together communications, knowledge, and learning into the flow of work?",
+      "explanation": "Microsoft Viva is an employee experience platform that focuses on communication, knowledge, learning, and insights within Microsoft Teams.",
+      "correctAnswer": 1,
+      "id": "mf-mc-0151"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Agility",
+        "High Availability",
+        "Scalability",
+        "Fault Tolerance"
+      ],
+      "correctAnswer": 0,
+      "question": "Which cloud characteristic describes the ability to rapidly allocate and de-allocate resources to meet changing business requirements and speed up time-to-market?",
+      "explanation": "Agility is the ability to quickly develop, test, and launch applications, allowing businesses to respond rapidly to changes in the market.",
+      "id": "mf-mc-0152"
+    },
+    {
+      "question": "A data scientist needs to run a non-urgent batch processing job that can be interrupted. Which Azure compute option offers the lowest cost for this scenario?",
+      "explanation": "Azure Spot Virtual Machines allow you to use unused Azure capacity at a significant discount, but they can be evicted if Azure needs the capacity back.",
+      "correctAnswer": 2,
+      "options": [
+        "Reserved Instances",
+        "Pay-as-you-go instances",
+        "Azure Spot Virtual Machines",
+        "Dedicated Hosts"
+      ],
+      "type": "multiple_choice",
+      "id": "mf-mc-0153"
+    },
+    {
+      "options": [
+        "Azure Blueprints",
+        "Azure Policy",
+        "Role-Based Access Control (RBAC)",
+        "Azure Locks"
+      ],
+      "type": "multiple_choice",
+      "explanation": "Azure Policy is primarily used to enforce rules over your resources to ensure they stay compliant with corporate standards and SLAs.",
+      "question": "Which Azure service is used to enforce rules and effects over your resources, such as preventing the creation of unencrypted storage accounts?",
+      "correctAnswer": 1,
+      "id": "mf-mc-0154"
+    },
+    {
+      "explanation": "Windows 365 is a cloud-based service that automatically creates a new type of Windows virtual machine (Cloud PC) for your end users.",
+      "question": "Which service provides a complete, personalised Windows desktop experience hosted in the cloud and accessible from any device, often referred to as a 'Cloud PC'?",
+      "correctAnswer": 3,
+      "options": [
+        "Windows Server Azure Edition",
+        "Azure Virtual Desktop",
+        "Microsoft Intune",
+        "Windows 365"
+      ],
+      "type": "multiple_choice",
+      "id": "mf-mc-0155"
+    },
+    {
+      "options": [
+        "Microsoft 365 Admin Center",
+        "Azure Portal",
+        "Microsoft Defender portal",
+        "Microsoft Entra ID portal"
+      ],
+      "type": "multiple_choice",
+      "explanation": "The Microsoft 365 Admin Center is the central hub for managing user accounts, assigning licences, and configuring service settings for the entire tenant.",
+      "question": "Where should an administrator go to reset a user's password or assign a Microsoft 365 Business Premium licence to a new employee?",
+      "correctAnswer": 0,
+      "id": "mf-mc-0156"
     }
   ],
   "mocks": []
