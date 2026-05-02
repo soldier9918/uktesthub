@@ -1095,6 +1095,162 @@
       ],
       "question": "Which of the following is the correct spelling?",
       "id": "ab-mc-0084"
+    },
+    {
+      "explanation": "To find the average, add the weights (75+80+85=240) and divide by the number of soldiers (240 / 3 = 80).",
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "options": [
+        "78kg",
+        "80kg",
+        "82kg",
+        "85kg"
+      ],
+      "question": "Three soldiers weigh 75kg, 80kg, and 85kg respectively. What is their average weight?",
+      "id": "ab-mc-0085"
+    },
+    {
+      "correctAnswer": 0,
+      "explanation": "The word 'Conscious' is spelled with an 'sc' in the middle and ends in 'ious'.",
+      "options": [
+        "Conscious",
+        "Consious",
+        "Conshus",
+        "Consciouse"
+      ],
+      "type": "multiple_choice",
+      "question": "Which of the following is the correct spelling?",
+      "id": "ab-mc-0086"
+    },
+    {
+      "question": "If a soldier is facing North-West and turns 45 degrees clockwise, which direction are they facing?",
+      "type": "multiple_choice",
+      "options": [
+        "West",
+        "North-East",
+        "North",
+        "East"
+      ],
+      "explanation": "Turning 45 degrees clockwise from North-West points you directly North.",
+      "correctAnswer": 2,
+      "id": "ab-mc-0087"
+    },
+    {
+      "explanation": "'Vague' means uncertain or unclear, which is the direct opposite of 'precise'.",
+      "correctAnswer": 2,
+      "question": "Which word means the opposite of 'PRECISE'?",
+      "type": "multiple_choice",
+      "options": [
+        "Careful",
+        "Detailed",
+        "Vague",
+        "Strict"
+      ],
+      "id": "ab-mc-0088"
+    },
+    {
+      "options": [
+        "26",
+        "29",
+        "30",
+        "31"
+      ],
+      "type": "multiple_choice",
+      "question": "What is the next number in the sequence: 1, 3, 7, 13, 21, ...?",
+      "correctAnswer": 3,
+      "explanation": "The sequence adds 2, then 4, then 6, then 8. The next step is to add 10 (21 + 10 = 31).",
+      "id": "ab-mc-0089"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "3 hours",
+        "4 hours",
+        "5 hours",
+        "6 hours"
+      ],
+      "question": "How long will it take a truck to travel 180 miles at a constant speed of 45 mph?",
+      "explanation": "Divide the total distance by the speed: 180 miles / 45 mph = 4 hours.",
+      "correctAnswer": 1,
+      "id": "ab-mc-0090"
+    },
+    {
+      "options": [
+        "Accommodate",
+        "Acomodate",
+        "Accomodate",
+        "Acommodate"
+      ],
+      "type": "multiple_choice",
+      "question": "Which of the following is the correct spelling?",
+      "correctAnswer": 0,
+      "explanation": "The word 'Accommodate' is spelled with a double 'c' and a double 'm'.",
+      "id": "ab-mc-0091"
+    },
+    {
+      "question": "If the 5th of the month is a Tuesday, what day of the week is the 14th?",
+      "options": [
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "explanation": "The 12th is 7 days after the 5th (Tuesday), so it is a Tuesday. Two days later (the 14th) is a Thursday.",
+      "id": "ab-mc-0092"
+    },
+    {
+      "explanation": "'Courageous' means brave, which is a synonym for 'valiant'.",
+      "correctAnswer": 1,
+      "question": "Which word means the same as 'VALIANT'?",
+      "type": "multiple_choice",
+      "options": [
+        "Fearful",
+        "Courageous",
+        "Aggressive",
+        "Cheerful"
+      ],
+      "id": "ab-mc-0093"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "£100",
+        "£84",
+        "£90.60",
+        "£96"
+      ],
+      "question": "A pair of boots costing £120 is reduced by 20% in a sale. What is the new price?",
+      "explanation": "First, find 10% (£12), then double it for 20% (£24). Subtract this from the original: £120 - £24 = £96.",
+      "correctAnswer": 3,
+      "id": "ab-mc-0094"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "27",
+        "28",
+        "29",
+        "26"
+      ],
+      "question": "What is the next number in the sequence: 40, 37, 35, 32, 30, ...?",
+      "explanation": "The sequence follows a pattern of subtracting 3, then 2, then 3, then 2. Subtracting 3 from 30 gives 27.",
+      "correctAnswer": 0,
+      "id": "ab-mc-0095"
+    },
+    {
+      "options": [
+        "65 litres",
+        "55 litres",
+        "45 litres",
+        "53 litres"
+      ],
+      "type": "multiple_choice",
+      "question": "A fuel tank contains 100 litres. Three vehicles use 12, 25, and 8 litres respectively. How much fuel is left?",
+      "correctAnswer": 1,
+      "explanation": "Subtract the used amounts from the total: 100 - 12 = 88; 88 - 25 = 63; 63 - 8 = 55.",
+      "id": "ab-mc-0096"
     }
   ],
   "mocks": []
