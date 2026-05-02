@@ -7053,7 +7053,2494 @@
       "type": "image_question",
       "correctAnswer": 3,
       "id": "ip-im-0132"
+    },
+    {
+      "explanation": "The image shows the machine's base plate resting on soft, uneven soil. Stable, level ground or spreader plates are required to prevent sinking or tipping.",
+      "type": "image_question",
+      "question": "What is the primary safety concern regarding the base setup shown in this image?",
+      "imageAlt": "A MEWP outrigger foot sinking into soft mud.",
+      "imageDescription": "Close-up shot of a hydraulic outrigger foot of a cherry picker resting directly on soft, wet soil without a spreader plate, showing the foot beginning to sink into the ground.",
+      "options": [
+        "The outrigger is fully extended",
+        "The ground conditions are unstable",
+        "The machine is too heavy for the pads",
+        "The hydraulic fluid is leaking"
+      ],
+      "correctAnswer": 1,
+      "id": "ip-im-0133"
+    },
+    {
+      "imageDescription": "Side view of an operative in a scissor lift platform who has climbed onto the mid-rail to reach a higher light fixture, rather than raising the platform further.",
+      "options": [
+        "Standing on the guardrails",
+        "Working without a hi-vis vest",
+        "Failure to use a spirit level",
+        "Overloading the platform capacity"
+      ],
+      "imageAlt": "An operator standing on the handrails of a scissor lift.",
+      "correctAnswer": 0,
+      "type": "image_question",
+      "explanation": "The image shows an operative standing on the mid-rails. You must always keep both feet on the platform floor.",
+      "question": "What unsafe act is being committed by the operator in this image?",
+      "id": "ip-im-0134"
+    },
+    {
+      "explanation": "The image shows a person's hands gripping the rungs. Safe egress requires maintaining three points of contact (two hands and one foot, or two feet and one hand).",
+      "type": "image_question",
+      "question": "When using the internal access shown in this image, what safety rule is being broken?",
+      "imageAlt": "A person climbing a tower ladder with both hands on the side frames.",
+      "imageDescription": "View from above looking down at an operative climbing the internal ladder of a mobile tower, holding a tool bag in one hand and only one hand on the rung.",
+      "options": [
+        "Using the wrong ladder type",
+        "Climbing too quickly",
+        "Failure to maintain three points of contact",
+        "Wearing the wrong type of gloves"
+      ],
+      "correctAnswer": 2,
+      "id": "ip-im-0135"
+    },
+    {
+      "options": [
+        "IPAF Category 1b",
+        "IPAF Category 3b",
+        "IPAF Category 3a",
+        "IPAF Category PAV"
+      ],
+      "imageDescription": "A high-quality photo of a self-propelled telescopic boom lift (cherry picker) extended in an open yard. The machine has controls in the basket and a diesel engine base.",
+      "imageAlt": "A self-propelled telescopic boom lift.",
+      "correctAnswer": 1,
+      "type": "image_question",
+      "explanation": "The image shows the '3b' (Mobile Boom) category. 3b refers to self-propelled booms which can be driven while elevated.",
+      "question": "To operate the machine shown in this image, which IPAF category must be on your PAL card?",
+      "id": "ip-im-0136"
+    },
+    {
+      "imageAlt": "A worker walking directly on corrugated roof sheets.",
+      "options": [
+        "The worker is walking too fast",
+        "The roof pitch is too steep",
+        "The worker is wearing incorrect footwear",
+        "The risk of falling through a fragile surface"
+      ],
+      "imageDescription": "An operative walking directly across a corrugated asbestos-cement roof without any crawling boards or fall mitigation measures in place.",
+      "correctAnswer": 3,
+      "explanation": "The image shows 'point loading' on a fragile roof. Roof crawling boards or staging should be used to spread the weight.",
+      "type": "image_question",
+      "question": "What is the most significant hazard illustrated in this roof-work image?",
+      "id": "ip-im-0137"
+    },
+    {
+      "type": "image_question",
+      "explanation": "The image shows the '3a' (Mobile Vertical) category. This includes scissor lifts that can be driven while in the elevated position.",
+      "question": "What is the correct IPAF classification for the equipment shown in this image?",
+      "options": [
+        "IPAF Category 1a",
+        "IPAF Category 1b",
+        "IPAF Category 3a",
+        "IPAF Category 3b"
+      ],
+      "imageDescription": "A standard electric scissor lift with the platform partially raised. The wheels are visible, indicating it is a mobile unit.",
+      "imageAlt": "A self-propelled scissor lift.",
+      "correctAnswer": 2,
+      "id": "ip-im-0138"
+    },
+    {
+      "imageAlt": "A mobile tower castor wheel with the brake lever in the up position.",
+      "options": [
+        "The wheel brake is not engaged",
+        "The castor is the wrong diameter",
+        "The adjustable leg is bent",
+        "The wheel is making contact with a pebble"
+      ],
+      "imageDescription": "Close-up of a mobile access tower castor wheel. The brake pedal is in the raised (unlocked) position while an operative is visible on the platform above.",
+      "correctAnswer": 0,
+      "explanation": "The image shows the castor wheel brake in the 'up' position. Castors must be locked whenever the tower is in use.",
+      "type": "image_question",
+      "question": "What is the critical safety error visible at the base of this tower?",
+      "id": "ip-im-0139"
+    },
+    {
+      "question": "What is the primary danger of handling the material shown in this image?",
+      "explanation": "The image shows 'wind-sail' effect where large panels act like a sail, potentially pushing the MEWP over in high winds.",
+      "type": "image_question",
+      "correctAnswer": 1,
+      "imageAlt": "A MEWP operator carrying a large plywood sheet in high winds.",
+      "imageDescription": "An operative in a boom lift platform attempting to hold a large 8x4 sheet of plywood. The background shows trees bending in the wind.",
+      "options": [
+        "The panel is too heavy for the floor",
+        "The panel acts as a sail and may tip the machine",
+        "The panel is blocking the emergency stop",
+        "The operative is not wearing gloves"
+      ],
+      "id": "ip-im-0140"
+    },
+    {
+      "explanation": "The image shows a PASMA-standard tower. Toeboards are missing, which are required to prevent tools or materials from falling.",
+      "type": "image_question",
+      "question": "Regarding the platform safety components, what is missing from this tower setup?",
+      "imageAlt": "A mobile tower platform with guardrails but no bottom boards.",
+      "imageDescription": "A view of the working platform of a mobile tower. The top and mid-rails are present, but there is a gap between the platform deck and the mid-rail where the toeboards should be.",
+      "options": [
+        "Toeboards are missing",
+        "The trapdoor is locked open",
+        "The mid-rails are too high",
+        "The platform deck is upside down"
+      ],
+      "correctAnswer": 0,
+      "id": "ip-im-0141"
+    },
+    {
+      "question": "What stability defect is shown in this image of a mobile access tower?",
+      "explanation": "The image shows the stabilizer 'foot' hovering off the ground. All stabilizers must be firmly deployed as per the manufacturer’s instructions before ascending.",
+      "type": "image_question",
+      "correctAnswer": 2,
+      "imageAlt": "A mobile tower stabilizer not touching the ground.",
+      "options": [
+        "The stabilizer is too short",
+        "The stabilizer is pointing the wrong way直",
+        "The stabilizer is not making contact with the ground",
+        "The stabilizer coupler is loose"
+      ],
+      "imageDescription": "A wide shot of a mobile access tower where one of the four outrigger/stabilizer legs is clearly not touching the pavement, leaving a visible gap.",
+      "id": "ip-im-0142"
+    },
+    {
+      "correctAnswer": 3,
+      "imageDescription": "Close-up of the threaded adjustable leg of a mobile tower. The leg is wound out to its maximum extent, showing a large amount of thread and a 'stopped' warning mark.",
+      "options": [
+        "The thread is dirty",
+        "The leg is not locked with a pin直",
+        "The wheel is missing a tyre",
+        "The adjustable leg is over-extended"
+      ],
+      "imageAlt": "A tower adjustable leg extended to its maximum limit.",
+      "question": "What is the safety issue regarding the adjustable leg shown in this image?",
+      "type": "image_question",
+      "explanation": "The image shows an adjustable leg extended over 125mm without checking the manufacturer’s manual. Excessive extension reduces the strength of the leg.",
+      "id": "ip-im-0143"
+    },
+    {
+      "explanation": "The image shows an operative in a boom lift. For all boom-type platforms, a full-body harness with a short restrained lanyard is mandatory.",
+      "type": "image_question",
+      "question": "Which Personal Protective Equipment (PPE) violation is shown in this image?",
+      "imageAlt": "An operative in a cherry picker wearing only a waist belt.",
+      "options": [
+        "A hard hat is missing",
+        "A full-body harness is not being used",
+        "The lanyard is too long",
+        "The anchor point is on the wrong side"
+      ],
+      "imageDescription": "An operative working from a boom lift (3b) wearing a simple waist belt tethered to the cage instead of a full-body fall arrest or restraint harness.",
+      "correctAnswer": 1,
+      "id": "ip-im-0144"
+    },
+    {
+      "correctAnswer": 1,
+      "options": [
+        "Every 12 months",
+        "Every 6 months",
+        "Every 24 months",
+        "Only when it looks damaged"
+      ],
+      "imageDescription": "A high-detail photograph of a fabric inspection tag attached to a safety harness, showing columns for date of inspection and next due date.",
+      "question": "According to health and safety best practices, how often should the safety equipment shown in this image be formally inspected?",
+      "type": "image_question",
+      "imageAlt": "A close-up of a safety harness inspection label with various dates.",
+      "explanation": "Harnesses and lanyards used for work at height must be inspected by a competent person every 6 months to ensure safety.",
+      "id": "ip-im-0145"
+    },
+    {
+      "options": [
+        "3-point contact rule",
+        "The balance method",
+        "The rapid ascent rule快速 ascent rule",
+        "Stability control method"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The 3-point contact rule requires at least two hands and one foot, or two feet and one hand, to be in contact with the equipment during ascent or descent.",
+      "imageAlt": "An operative climbing the ladder of an access tower using both hands.",
+      "type": "image_question",
+      "question": "Which safety principle for climbing is the operative in this image demonstrating?",
+      "imageDescription": "A side view of a worker in high-visibility clothing climbing an internal ladder of a mobile tower, with both hands firmly on the rungs and one foot on a step.",
+      "id": "ip-im-0146"
+    },
+    {
+      "options": [
+        "Use of a fall arrest lanyard",
+        "Lowering the speed limit",
+        "Traffic management and high-visibility clothing",
+        "Working only at night"
+      ],
+      "correctAnswer": 2,
+      "imageAlt": "A MEWP boom extended over a public road with traffic nearby.",
+      "explanation": "When working in a boom-type MEWP near a road, high-visibility clothing and traffic management (like cones) are essential to prevent collisions.",
+      "imageDescription": "An aerial platform extended over a sidewalk and partially over a road lane, with cars passing by and a worker inside the basket.",
+      "type": "image_question",
+      "question": "What is the most important site control required for the task shown in this image to protect against vehicular collision?",
+      "id": "ip-im-0147"
+    },
+    {
+      "options": [
+        "The operative is not wearing gloves",
+        "The bucket is too small for the job",
+        "The safety gate is open",
+        "Using the tower guardrail as a lifting point or anchor"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Standard mobile access towers must never be used as a point to anchor a fall arrest system or for lifting heavy loads from the ground.",
+      "imageAlt": "A worker using a rope and pulley attached to the top rail of a tower to lift a heavy bucket.",
+      "type": "image_question",
+      "question": "What serious safety violation is being shown in this image involving the tower structure?",
+      "imageDescription": "A mobile tower where a worker has tied a rope to the top guardrail and is pulling up a heavy cement bucket from the ground.",
+      "id": "ip-im-0148"
+    },
+    {
+      "imageAlt": "A MEWP outrigger foot resting directly on soft, uneven grass.",
+      "explanation": "Spreader pads should be used under outriggers to distribute the load over a larger area, preventing the machine from sinking or tipping on soft ground.",
+      "imageDescription": "A close-up of a heavy-duty hydraulic outrigger foot placed directly onto soft soil and grass without any support underneath.",
+      "type": "image_question",
+      "question": "What is the main stability concern with the outrigger setup shown in this image?",
+      "correctAnswer": 0,
+      "options": [
+        "Lack of spreader pads/mats",
+        "The leg is not extended far enough",
+        "The foot is the wrong colour",
+        "There is no safety pin visible"
+      ],
+      "id": "ip-im-0149"
+    },
+    {
+      "correctAnswer": 2,
+      "options": [
+        "The worker is standing on the mid-rail",
+        "The worker isn't wearing a hard hat",
+        "Excessive horizontal force being applied to the tower",
+        "The platform is too high for the worker"
+      ],
+      "imageAlt": "A worker on top of a tower pushing hard against a wall to align a window frame.",
+      "explanation": "Standard mobile towers are designed for vertical loads; pushing against a building or structure can cause the tower to overturn due to horizontal forces.",
+      "imageDescription": "An operative on a mobile access tower leaning out and using significant physical force to push against a brick wall.",
+      "question": "What hazard is being created by the operative's actions in this image?",
+      "type": "image_question",
+      "id": "ip-im-0150"
+    },
+    {
+      "correctAnswer": 1,
+      "options": [
+        "The wheel is the wrong diameter",
+        "The castor brake is not engaged",
+        "The tyre surface is worn down",
+        "The adjustable leg is at maximum extension"
+      ],
+      "question": "Which safety feature is incorrectly set on the tower base shown in this image?",
+      "type": "image_question",
+      "imageDescription": "A macro shot of a castor wheel at the base of an alloy tower, showing the locking lever in the unlocked, raised position while a worker is visible on the platform above.",
+      "explanation": "Wheels on a mobile tower must be locked (braked) at all times while the tower is in use to prevent unexpected movement.",
+      "imageAlt": "A close-up of a tower castor wheel with the brake lever in the 'up' position.",
+      "id": "ip-im-0151"
+    },
+    {
+      "imageDescription": "A handheld wind speed meter (anemometer) displaying 35 km/h, held by a worker in the basket of a high-reaching cherry picker.",
+      "question": "Based on the device reading in this image, what hazard must the operator consider?",
+      "type": "image_question",
+      "imageAlt": "An anemometer showing a high wind speed reading next to a MEWP platform.",
+      "explanation": "Wind speeds above the manufacturer's limit (usually 17mph or 28km/h) require work to stop and the MEWP to be lowered to prevent instability.",
+      "options": [
+        "The humidity is too high to work",
+        "The temperature will affect the hydraulics",
+        "The battery will drain faster in wind",
+        "The wind speed exceeds safe operating limits"
+      ],
+      "correctAnswer": 3,
+      "id": "ip-im-0152"
+    },
+    {
+      "correctAnswer": 1,
+      "options": [
+        "Climbing too slowly",
+        "Climbing the outside of the tower structure",
+        "Not using a fall-arrest block",
+        "Wearing the wrong type of boots"
+      ],
+      "explanation": "Towers must be accessed from the inside using the built-in ladder system to maintain stability and prevent falls.",
+      "imageAlt": "A person climbing up the outside of the tower frames.",
+      "question": "What unsafe access method is being demonstrated in this image?",
+      "type": "image_question",
+      "imageDescription": "A worker wearing a harness climbing up the external horizontal rungs of an alloy tower frame instead of using the internal ladder.",
+      "id": "ip-im-0153"
+    },
+    {
+      "imageDescription": "A high-reach platform where an operative is holding a 4x8 foot sheet of plywood vertically while the wind is visibly blowing their clothing.",
+      "type": "image_question",
+      "question": "What is the primary danger of handling the large flat material shown in this image while at height?",
+      "imageAlt": "A worker in a MEWP basket holding a large, flat sheet of plywood in windy conditions.",
+      "explanation": "Wind sailing occurs when materials like plywood or signage act as a sail, catching the wind and potentially tipping the MEWP or tower over.",
+      "options": [
+        "The 'wind sailing' effect causing instability",
+        "The weight of the wood is too heavy",
+        "Splinters from the wood damaging the controls",
+        "The wood blocking the operator's view of the ground"
+      ],
+      "correctAnswer": 0,
+      "id": "ip-im-0154"
+    },
+    {
+      "correctAnswer": 2,
+      "options": [
+        "The wrong type of boards are used",
+        "The tower is not painted correctly",
+        "Stabilisers are missing for this height of tower极高",
+        "The ladder is on the wrong side"
+      ],
+      "imageDescription": "A 6-metre high mobile access tower standing on its four wheels without any diagonal stabilisers (outriggers) attached to the corners.",
+      "type": "image_question",
+      "question": "What critical component is missing from this tower setup to ensure it does not overturn?",
+      "imageAlt": "A very tall, narrow tower without any stabiliser legs attached.",
+      "explanation": "Stabilisers or outriggers must be deployed according to the manufacturer's instructions, especially as the tower height increases.",
+      "id": "ip-im-0155"
+    },
+    {
+      "options": [
+        "The cables might snap if touched",
+        "Electrocution via arcing or contact",
+        "The magnetic field interfering with the MEWP controls",
+        "The wires obstructing the operator's view of the ground"
+      ],
+      "correctAnswer": 1,
+      "imageAlt": "A MEWP boom positioned very close to overhead electric cables.",
+      "explanation": "Overhead power lines are a major electrocution hazard; MEWPs must maintain a safe distance (exclusion zone) from them at all times.",
+      "imageDescription": "A telescopic boom lift extended upwards, with the basket positioned approximately 2 metres away from high-voltage overhead power lines.",
+      "type": "image_question",
+      "question": "What is the most lethal hazard shown in this image of a MEWP operating near utility lines?",
+      "id": "ip-im-0156"
+    },
+    {
+      "question": "What is the critical safety violation shown in this image of an operative in a boom-type MEWP?",
+      "type": "image_question",
+      "imageDescription": "An operative is standing in the basket of a telescopic boom lift (cherry picker) at height. They are wearing a hard hat and high-vis vest, but there is no lanyard attached to the anchor point and no harness visible on their torso.",
+      "options": [
+        "The operative is too tall for the basket",
+        "The operative is not wearing a fall-restraint harness",
+        "The hydraulic arm is overextended",
+        "No ground seeker is present"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A harness must be worn in a boom-type MEWP to prevent the operator from being catapulted out if the platform jolts.",
+      "imageAlt": "An operative in a cherry picker boom lift without a harness.",
+      "id": "ip-im-0157"
+    },
+    {
+      "question": "Regarding the stability of this mobile tower, what is the main error shown?",
+      "options": [
+        "Incorrect colour of the frames",
+        "The castors are not locked",
+        "The stabilisers are not deployed in the correct position",
+        "The ladder is on the wrong side"
+      ],
+      "imageDescription": "A mobile access tower is built to four metres. The four stabilisers (outriggers) are attached to the legs but are swung inward parallel to the frames rather than being extended outwards.",
+      "type": "image_question",
+      "imageAlt": "A mobile tower with outriggers tucked in against the frames.",
+      "explanation": "Outriggers must be deployed according to the manufacturer’s instructions to provide the necessary footprint for stability.",
+      "correctAnswer": 3,
+      "id": "ip-im-0158"
+    },
+    {
+      "question": "Based on the reading shown on this device, what action should the operator take?",
+      "imageDescription": "A close-up shot of a digital anemometer being held up at height. The screen shows a wind speed reading of 15.0 m/s. In the background, trees are visible swaying significantly.",
+      "options": [
+        "The wind speed exceeds the safe operating limit for most MEWPs",
+        "The battery on the device is low",
+        "The temperature is too low for hydraulic fluid",
+        "The humidity will cause the tower to rust"
+      ],
+      "type": "image_question",
+      "imageAlt": "A handheld anemometer showing a high digital reading.",
+      "explanation": "The Beaufort Scale is used to estimate wind speed; work on MEWPs or towers should usually stop if wind speeds exceed 12.5m/s (28mph).",
+      "correctAnswer": 0,
+      "id": "ip-im-0159"
+    },
+    {
+      "question": "What is the specific fall hazard visible on the platform in this image?",
+      "type": "image_question",
+      "imageDescription": "An operative is working on the top platform of a PASMA tower. The trapdoor in the platform floor is flipped open, leaving a significant hole right next to the operative's feet.",
+      "options": [
+        "The operative is working alone",
+        "The guardrails are too low",
+        "The trapdoor has been left open while working",
+        "The platform is overloaded with tools"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Platform trapdoors must be kept closed at all times, except when accessing or leaving the platform, to prevent falls.",
+      "imageAlt": "A tower platform with an open trapdoor while a worker is standing on it.",
+      "id": "ip-im-0160"
+    },
+    {
+      "correctAnswer": 1,
+      "explanation": "The '3b' category covers self-propelled boom lifts (cherry pickers) where the machine can be driven at height.",
+      "imageAlt": "A self-propelled cherry picker (boom lift).",
+      "question": "What is the correct IPAF category for the MEWP shown in this image?",
+      "type": "image_question",
+      "imageDescription": "A photo of a self-propelled, diesel-powered telescopic boom lift (cherry picker) parked on a construction site. It has four wheels and a rotating turntable.",
+      "options": [
+        "1b (Static Boom)",
+        "3b (Mobile Boom)",
+        "3a (Mobile Vertical)",
+        "PAV (Push Around Vertical)"
+      ],
+      "id": "ip-im-0161"
+    },
+    {
+      "question": "Which essential component is missing from the edge protection on this platform?",
+      "options": [
+        "The toe boards are missing",
+        "The platform is made of the wrong material",
+        "The guardrails are not horizontal",
+        "There is no non-slip surface"
+      ],
+      "imageDescription": "A view of the top working platform of a mobile tower. It has double guardrails (mid-rail and top-rail) but the solid boards around the base of the platform floor are missing.",
+      "type": "image_question",
+      "explanation": "Toe boards are an essential component of the guardrail system used to prevent tools or materials from being kicked off the edge.",
+      "correctAnswer": 0,
+      "imageAlt": "The base of a tower platform missing the wooden or metal kick plates.",
+      "id": "ip-im-0162"
+    },
+    {
+      "explanation": "The ground must be checked to ensure it can support the weight of the machine and its load, including the use of spreader plates if necessary.",
+      "type": "true_false",
+      "question": "Before setting up a MEWP, the ground conditions must be checked to ensure they are firm and level.",
+      "correctAnswer": true,
+      "id": "ip-tf-0001"
+    },
+    {
+      "question": "If the wind speed is low at ground level, it is guaranteed to be safe to operate a MEWP at its full working height.",
+      "correctAnswer": false,
+      "explanation": "Wind speeds can increase significantly at height due to the 'wind tunnel' effect between buildings; ground speed is not a reliable indicator.",
+      "type": "true_false",
+      "id": "ip-tf-0002"
+    },
+    {
+      "type": "true_false",
+      "explanation": "Lanyards should be as short as possible to prevent the operator from being ejected from the basket in the event of a sudden movement.",
+      "correctAnswer": true,
+      "question": "When using a boom-type MEWP, it is a legal requirement to wear a full-body harness with a short restrained lanyard attached to a certified anchor point.",
+      "id": "ip-tf-0003"
+    },
+    {
+      "explanation": "Towers must never be moved while personnel or materials are on the platform, as this can lead to instability and overturning.",
+      "type": "true_false",
+      "question": "A mobile access tower can be moved while a person is still standing on the platform, provided the move is less than two metres.",
+      "correctAnswer": false,
+      "id": "ip-tf-0004"
+    },
+    {
+      "type": "true_false",
+      "explanation": "Under the Work at Height Regulations 2005, work at height should be avoided if the task can be safely carried out from the ground.",
+      "correctAnswer": true,
+      "question": "The first priority in the hierarchy of control for working at height is to avoid the need to work at height altogether.",
+      "id": "ip-tf-0005"
+    },
+    {
+      "type": "true_false",
+      "explanation": "Internal ladder remains the only safe way to climb a tower; climbing the outside can cause the tower to tip over.",
+      "correctAnswer": false,
+      "question": "It is acceptable to climb the outside of a PASMA-approved mobile tower as long as you are wearing a safety harness.",
+      "id": "ip-tf-0006"
+    },
+    {
+      "question": "The '3T' method is an approved technique used to minimize the risk of a fall during the assembly of a mobile access tower.",
+      "correctAnswer": true,
+      "explanation": "The 3T method (Through The Trapdoor) ensures the operator is always protected by guardrails before they step onto the platform.",
+      "type": "true_false",
+      "id": "ip-tf-0007"
+    },
+    {
+      "explanation": "Safety components should never be improvised. Only the manufacturer's specified components should be used to ensure structural integrity.",
+      "type": "true_false",
+      "question": "If a stabilizer foot is missing, it is acceptable to use a wooden block or brick as a substitute to level a mobile tower.",
+      "correctAnswer": false,
+      "id": "ip-tf-0008"
+    },
+    {
+      "type": "true_false",
+      "explanation": "Sole responsibility for safety lies with the employer, the supervisor, and the operator themselves to ensure safe working practices.",
+      "correctAnswer": false,
+      "question": "The site manager is the only person responsible for the safety of a MEWP operator while they are working at height.",
+      "id": "ip-tf-0009"
+    },
+    {
+      "type": "true_false",
+      "explanation": "High-voltage lines can arc (jump) across a gap; operators must maintain a safe distance as specified by the HSE (usually at least 15 metres).",
+      "correctAnswer": true,
+      "question": "A MEWP does not have to touch an overhead power line for the operator to be electrocuted.",
+      "id": "ip-tf-0010"
+    },
+    {
+      "question": "Castor wheels on a mobile tower should be left unlocked when working on a slight slope to allow for natural adjustment.",
+      "correctAnswer": false,
+      "explanation": "Castors must be locked whenever the tower is in use to prevent unexpected movement and instability.",
+      "type": "true_false",
+      "id": "ip-tf-0011"
+    },
+    {
+      "question": "Toe boards must be fitted to all working platforms to prevent items from falling onto people below.",
+      "correctAnswer": true,
+      "explanation": "Toe boards are essential to prevent tools or debris from falling over the edge and injuring people below.",
+      "type": "true_false",
+      "id": "ip-tf-0012"
+    },
+    {
+      "explanation": "Only persons who have been specifically trained and authorized (e.g., holding a valid PAL card) are permitted to operate MEWPs.",
+      "type": "true_false",
+      "question": "Any site worker is permitted to operate a MEWP as long as they are being supervised by a competent person from the ground.",
+      "correctAnswer": false,
+      "id": "ip-tf-0013"
+    },
+    {
+      "correctAnswer": true,
+      "type": "true_false",
+      "question": "Advanced Guard Rail (AGR) systems are a recognized alternative to the '3T' method for the safe assembly of mobile towers.",
+      "explanation": "The through-the-trapdoor (3T) and AGR systems are the two recognized safe methods for assembling or dismantling a tower safely.",
+      "id": "ip-tf-0014"
+    },
+    {
+      "correctAnswer": false,
+      "explanation": "The safe wind speed limit is usually 12.5 m/s (approx. 28 mph), but operators must always check the machine's specific data plate for its unique limit.",
+      "question": "The maximum wind speed for safe outdoor MEWP operation is the same for every machine, regardless of make or model.",
+      "type": "true_false",
+      "id": "ip-tf-0015"
+    },
+    {
+      "explanation": "Standard mobile towers (like PASMA-standard) are designed for vertical use only; using them to support heavy falling loads or as an anchor for a zip line is prohibited.",
+      "question": "It is safe to use a standard mobile access tower as an anchor point for a safety line when working on a nearby roof.",
+      "type": "true_false",
+      "correctAnswer": false,
+      "id": "ip-tf-0016"
+    },
+    {
+      "explanation": "Under the Work at Height Regulations 2005, the primary duty of an employer is to ensure that work is properly planned, supervised, and carried out safely.",
+      "question": "Employers are legally required to ensure that a risk assessment is carried out before any work at height commences.",
+      "type": "true_false",
+      "correctAnswer": true,
+      "id": "ip-tf-0017"
+    },
+    {
+      "explanation": "A scissor lift is a vertical lift (Group A); falling from it may cause the machine to tip. Harness use depends on a specific site risk assessment.",
+      "type": "true_false",
+      "question": "The law requires all operators of scissor lifts to wear a fall-arrest harness with a long shock-absorbing lanyard at all times.",
+      "correctAnswer": false,
+      "id": "ip-tf-0018"
+    },
+    {
+      "correctAnswer": true,
+      "question": "A MEWP operator must check for underground services and voids, as these can affect ground stability even if the surface appears firm.",
+      "type": "true_false",
+      "explanation": "Even if the ground looks solid, underground voids, cellars, or weak drainage pipes can collapse under the concentrated weight of outriggers.",
+      "id": "ip-tf-0019"
+    },
+    {
+      "question": "The maximum permissible gap between the mid-rail and the toe board on a working platform is 600mm.",
+      "type": "true_false",
+      "explanation": "Guardrails must be at least 950mm high, and the gap between any two rails must not exceed 470mm to prevent someone from slipping through.",
+      "correctAnswer": false,
+      "id": "ip-tf-0020"
+    },
+    {
+      "question": "When working from a MEWP basket, you should keep your feet firmly on the floor and avoid overreaching outside the handrails.",
+      "type": "true_false",
+      "explanation": "Overreaching can shift the centre of gravity and lead to the machine tipping or the operator falling; the machine should be repositioned instead.",
+      "correctAnswer": true,
+      "id": "ip-tf-0021"
+    },
+    {
+      "explanation": "A Pre-Use Inspection must be conducted at the start of every shift and recorded to ensure the equipment remains in a safe condition.",
+      "question": "If a MEWP was inspected on a Monday, it does not need another pre-use check until the following Monday.",
+      "type": "true_false",
+      "correctAnswer": false,
+      "id": "ip-tf-0022"
+    },
+    {
+      "correctAnswer": true,
+      "explanation": "Under the Health and Safety at Work Act, employees have a legal duty to cooperate with their employer and look after their own safety and that of others.",
+      "question": "An operator has a legal right to refuse to operate a piece of access equipment if they believe it is unsafe.",
+      "type": "true_false",
+      "id": "ip-tf-0023"
+    },
+    {
+      "explanation": "The 'Working Height' is typically 2 metres above the platform height (the height a person can reach), not the level of the floor where they stand.",
+      "question": "In MEWP specifications, the 'Platform Height' and the 'Working Height' refer to the exact same measurement.",
+      "type": "true_false",
+      "correctAnswer": false,
+      "id": "ip-tf-0024"
+    },
+    {
+      "explanation": "According to the Hierarchy of Control, if work at height cannot be avoided, collective measures (like guardrails) must take priority over personal measures (like harnesses).",
+      "question": "When selecting equipment, collective protection measures must always take priority over personal protection measures.",
+      "type": "true_false",
+      "correctAnswer": true,
+      "id": "ip-tf-0025"
+    },
+    {
+      "correctAnswer": false,
+      "question": "It is safe to operate a MEWP on soft ground without spreader plates as long as the outriggers are fully extended.",
+      "type": "true_false",
+      "explanation": "MEWPs must be positioned on firm, level ground. If the ground is soft, spreader plates must be used to distribute the load and prevent the machine from tipping.",
+      "id": "ip-tf-0026"
+    },
+    {
+      "correctAnswer": true,
+      "question": "Under UK law, a MEWP must undergo a thorough examination by a competent person at least every six months.",
+      "type": "true_false",
+      "explanation": "The LOLER (Lifting Operations and Lifting Equipment Regulations) require a thorough examination of lifting equipment by a competent person at least every 6 months.",
+      "id": "ip-tf-0027"
+    },
+    {
+      "question": "It is permissible to exceed the Safe Working Load (SWL) of a mobile tower for a short period if the wind is calm.",
+      "type": "true_false",
+      "explanation": "The SWL is a strict limit. Exceeding it can cause the tower to collapse or tip, regardless of how briefly the extra weight is applied.",
+      "correctAnswer": false,
+      "id": "ip-tf-0028"
+    },
+    {
+      "question": "A safety harness should never be used to help you lean further out of a MEWP basket to reach a task.",
+      "type": "true_false",
+      "explanation": "A harness is for safety only. Using a harness as a positioning tool when it isn't designed for it can cause equipment failure or lead to a fall.",
+      "correctAnswer": true,
+      "id": "ip-tf-0029"
+    },
+    {
+      "correctAnswer": false,
+      "explanation": "Mobile towers must always be moved from the base. Pushing or pulling from the top of the tower can cause it to become unstable and overturn.",
+      "type": "true_false",
+      "question": "When moving a mobile tower to a new position, it is safer to pull it from the top platform to maintain better control.",
+      "id": "ip-tf-0030"
+    },
+    {
+      "type": "true_false",
+      "question": "A ground rescue plan must be in place and a competent person available on site whenever a MEWP is in use.",
+      "explanation": "Even if the operator is at height, a trained person must be on the ground to operate the emergency lowering controls if the operator becomes incapacitated.",
+      "correctAnswer": true,
+      "id": "ip-tf-0031"
+    },
+    {
+      "question": "Standard mobile access towers are suitable for use as a platform for heavy demolition work.",
+      "type": "true_false",
+      "explanation": "Unless specifically designed for the task, mobile towers are not stable enough to withstand the horizontal forces required for heavy-duty demolition.",
+      "correctAnswer": false,
+      "id": "ip-tf-0032"
+    },
+    {
+      "explanation": "Outriggers/stabilizers are essential for the machine's stability. Using a MEWP with them incorrectly deployed can lead to the machine tipping over.",
+      "question": "If a MEWP is fitted with outriggers, they must be deployed according to the manufacturer's instructions before the platform is raised.",
+      "type": "true_false",
+      "correctAnswer": true,
+      "id": "ip-tf-0033"
+    },
+    {
+      "type": "true_false",
+      "question": "Wind speed only needs to be checked if the tower is over 8 metres tall.",
+      "explanation": "Wind speed is a critical factor for tower stability. On-site checks with an anemometer are necessary because ground-level wind is often slower than wind at higher altitudes.",
+      "correctAnswer": false,
+      "id": "ip-tf-0034"
+    },
+    {
+      "type": "true_false",
+      "question": "Power cables running to a MEWP or tower must be managed to prevent them from becoming a trip hazard or being crushed.",
+      "explanation": "Trailing cables are a major trip hazard and can become snagged or damaged. They must be managed carefully to keep the work area and access route safe.",
+      "correctAnswer": true,
+      "id": "ip-tf-0035"
+    },
+    {
+      "type": "true_false",
+      "question": "The Work at Height Regulations 2005 only apply to jobs where the person is working at least 2 metres above the ground.",
+      "explanation": "Working at height is defined as any place where, if precautions were not taken, a person could fall a distance liable to cause personal injury. There is no minimum height.",
+      "correctAnswer": false,
+      "id": "ip-tf-0036"
+    },
+    {
+      "explanation": "A pre-use inspection is mandatory every time an operator takes control of a MEWP, regardless of previous checks during that 24-hour period.",
+      "correctAnswer": true,
+      "question": "A MEWP must have a pre-use inspection completed at the start of every shift, even if the machine was used by another operator earlier that day.",
+      "type": "true_false",
+      "id": "ip-tf-0037"
+    },
+    {
+      "type": "true_false",
+      "question": "A ladder is the preferred choice of equipment for tasks at height lasting longer than two hours, provided the ladder is tied off.",
+      "explanation": "Equipment must be selected based on the risk assessment; a ladder is only acceptable for low-risk, short-duration tasks (usually defined as less than 30 minutes).",
+      "correctAnswer": false,
+      "id": "ip-tf-0038"
+    },
+    {
+      "explanation": "Any damage to a component can compromise the structural integrity and stability of the entire tower, making it unsafe for use.",
+      "correctAnswer": true,
+      "question": "On a mobile access tower, any component that is bent, creased, or has cracked welds must be immediately removed from service.",
+      "type": "true_false",
+      "id": "ip-tf-0039"
+    },
+    {
+      "type": "true_false",
+      "question": "It is acceptable to remove diagonal bracing from a mobile tower if it obstructs your view while working, as long as the plan braces remain.",
+      "correctAnswer": false,
+      "explanation": "Diagonal bracing is essential for the structural rigidity of the tower; omitting it can lead to collapse or excessive swaying.",
+      "id": "ip-tf-0040"
+    },
+    {
+      "type": "true_false",
+      "question": "If you use spreader plates under outriggers, you do not need to check the ground for hidden cellars or sewers because the plates prevent all sinking.",
+      "explanation": "While they offer more stability, spreader plates do not eliminate the risk. Ground must be confirmed as capable of supporting the point loads.",
+      "correctAnswer": false,
+      "id": "ip-tf-0041"
+    },
+    {
+      "explanation": "High wind can cause 'sail' effects, destabilise equipment, or blow materials off platforms, potentially exceeding the manufacturer's safe limits.",
+      "correctAnswer": true,
+      "question": "Wind speed should be measured at the height where the work is taking place, as wind is often stronger higher up than it is at ground level.",
+      "type": "true_false",
+      "id": "ip-tf-0042"
+    },
+    {
+      "question": "The daily pre-use check performed by the operator counts as a 'Thorough Examination' under LOLER regulations.",
+      "type": "true_false",
+      "correctAnswer": false,
+      "explanation": "A 'Thorough Examination' is a legal statutory requirement under LOLER and is separate from the daily routine checks performed by the operator.",
+      "id": "ip-tf-0043"
+    },
+    {
+      "question": "Adjustable legs on a mobile tower should only be used to level the tower, never to gain extra height beyond the manufacturer's limit.",
+      "type": "true_false",
+      "correctAnswer": true,
+      "explanation": "Adjustable legs on a mobile tower are designed to level the platform on sloped ground, but the tower must never be used to provide an incline.",
+      "id": "ip-tf-0044"
+    },
+    {
+      "question": "If you cannot reach a task from the MEWP basket, it is standard practice to stand on the mid-rails to gain the extra height needed.",
+      "type": "true_false",
+      "correctAnswer": false,
+      "explanation": "Overreaching can cause a MEWP to tip or the operator to fall; the machine must be repositioned to maintain a safe working position.",
+      "id": "ip-tf-0045"
+    },
+    {
+      "question": "Intermixing components from different manufacturers of mobile access towers is generally prohibited unless explicitly authorised by the manufacturers.",
+      "type": "true_false",
+      "correctAnswer": true,
+      "explanation": "All components must be from the same manufacturer and system to ensure they fit correctly and maintain the structural integrity of the tower.",
+      "id": "ip-tf-0046"
+    },
+    {
+      "type": "true_false",
+      "question": "The 'Through The Trap' (3T) method of tower assembly is primarily used to help transport tools up the tower.",
+      "correctAnswer": false,
+      "explanation": "The '3T' method stands for 'Through The Trap' and is a specific safe assembly sequence designed to protect the user from falls during build.",
+      "id": "ip-tf-0047"
+    },
+    {
+      "question": "Employees have a legal duty to follow the safety instructions provided by their employer and to use access equipment correctly.",
+      "type": "true_false",
+      "explanation": "Under the Health and Safety at Work Act, employees must cooperate with their employer on safety matters and not misuse equipment.",
+      "correctAnswer": true,
+      "id": "ip-tf-0048"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": true,
+      "question": "According to the UK Work at Height Regulations hierarchy, the first priority is to avoid work at height altogether.",
+      "explanation": "The primary goal of the Work at Height Regulations hierarchy is to avoid working at height entirely whenever possible.",
+      "id": "ip-tf-0049"
+    },
+    {
+      "explanation": "Towers must be moved by pushing the base at or near the bottom to prevent the structure from overbalancing.",
+      "question": "When moving a mobile access tower, it is acceptable to push the tower from the middle of the structure to gain more leverage.",
+      "correctAnswer": false,
+      "type": "true_false",
+      "id": "ip-tf-0050"
+    },
+    {
+      "explanation": "MEWP operators must keep both feet on the floor of the platform; standing on the guardrails is extremely dangerous and prohibited.",
+      "question": "An operator is permitted to stand on the guardrails of a MEWP if they are wearing a short lanyard and a full-body harness.",
+      "correctAnswer": false,
+      "type": "true_false",
+      "id": "ip-tf-0051"
+    },
+    {
+      "type": "true_false",
+      "question": "Correct tyre pressure or condition is a critical safety item that must be checked during a MEWP pre-use inspection.",
+      "correctAnswer": true,
+      "explanation": "Tyres provide the physical interface with the ground; any loss of integrity can lead to instability or tipping.",
+      "id": "ip-tf-0052"
+    },
+    {
+      "question": "The 'Through The Trap' (3T) method of assembly is only required if the tower is being used outside in windy conditions.",
+      "correctAnswer": false,
+      "explanation": "The 3T method ensures the operative is seated in a protected position within the trapdoor before installing or removing guardrails.",
+      "type": "true_false",
+      "id": "ip-tf-0053"
+    },
+    {
+      "type": "true_false",
+      "question": "All castors on a mobile access tower must be locked before any person climbs the structure.",
+      "correctAnswer": true,
+      "explanation": "Castors should be locked at all times while the tower is in use to prevent unintentional movement or rolling.",
+      "id": "ip-tf-0054"
+    },
+    {
+      "correctAnswer": true,
+      "question": "If the wind speed exceeds the manufacturer's limit, the mobile access tower must be dismantled or secured to a permanent structure.",
+      "explanation": "Towers have a maximum wind speed rating (usually 17mph/27kph); exceeding this makes the tower liable to blow over.",
+      "type": "true_false",
+      "id": "ip-tf-0055"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": false,
+      "question": "A fall restraint system is designed to catch a person after they have fallen from a platform.",
+      "explanation": "A fall arrest system stops a fall in progress, whereas a fall restraint system prevents the person from reaching the edge where a fall could occur.",
+      "id": "ip-tf-0056"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": false,
+      "question": "The Work at Height Regulations 2005 do not apply if the work is being carried out from a low-level work platform under 1 metre.",
+      "explanation": "Even if the height is low, if a person could fall a distance liable to cause injury, the Work at Height Regulations apply.",
+      "id": "ip-tf-0057"
+    },
+    {
+      "explanation": "The lift capacity is based on total weight; exceeding this can cause the machine to fail or tip over.",
+      "correctAnswer": true,
+      "question": "The Safe Working Load (SWL) of a MEWP includes the weight of the operator, their tools, and all materials in the basket.",
+      "type": "true_false",
+      "id": "ip-tf-0058"
+    },
+    {
+      "type": "true_false",
+      "explanation": "Stabilisers and outriggers provide the necessary base width to prevent the tower or MEWP from tipping during use.",
+      "correctAnswer": true,
+      "question": "Stabilisers or outriggers must be deployed if required by the manufacturer, even if the work platform is only slightly raised.",
+      "id": "ip-tf-0059"
+    },
+    {
+      "explanation": "If a fault is found, the machine must be isolated, tagged 'Do Not Use', and reported to a supervisor immediately.",
+      "correctAnswer": false,
+      "question": "If a minor hydraulic leak is found during a pre-use check, the operator can continue working as long as they top up the fluid.",
+      "type": "true_false",
+      "id": "ip-tf-0060"
+    },
+    {
+      "explanation": "The IPAF PAL card is valid for five years before the operator must undergo retraining and reassessment.",
+      "question": "An IPAF PAL (Powered Access Licence) card is generally valid for a period of five years from the date of the test.",
+      "type": "true_false",
+      "correctAnswer": true,
+      "id": "ip-tf-0061"
+    },
+    {
+      "explanation": "A MEWP should never be used as a jack or prop to support a structure, as this could lead to mechanical failure or overturning.",
+      "correctAnswer": false,
+      "type": "true_false",
+      "question": "A MEWP can be used as a jack or support to hold up a heavy beam while it is being secured into place.",
+      "id": "ip-tf-0062"
+    },
+    {
+      "question": "When using the 3T method, the operator must be seated in the trapdoor opening while installing guardrails for the level above.",
+      "type": "true_false",
+      "correctAnswer": true,
+      "explanation": "The 3T (Through The Trap) method ensures the operator is protected by guardrails while they are sitting on the platform before standing up.",
+      "id": "ip-tf-0063"
+    },
+    {
+      "question": "A site-specific risk assessment must be carried out before any work at height begins.",
+      "type": "true_false",
+      "correctAnswer": true,
+      "explanation": "A site-specific risk assessment is a legal requirement to identify hazards like overhead power lines, ground conditions, and traffic.",
+      "id": "ip-tf-0064"
+    },
+    {
+      "question": "The Work at Height Regulations 2005 only apply to work that is 2 metres or more above ground level.",
+      "type": "true_false",
+      "correctAnswer": false,
+      "explanation": "Work at height is defined as work in any place where, if precautions were not taken, a person could fall a distance liable to cause personal injury.",
+      "id": "ip-tf-0065"
+    },
+    {
+      "explanation": "Even if not required for stability on a certain tower height, some manufacturers require outriggers whenever the tower is in use for safety.",
+      "question": "Stabilisers or outriggers should always be fitted if the manufacturer’s instruction manual specifies they are required for that height.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "id": "ip-tf-0066"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": false,
+      "question": "It is acceptable for one person to stay on the platform of a mobile tower to provide directions while others push it to a new location.",
+      "explanation": "Mobile towers should only be moved by pushing nearby the base; they must NEVER be moved while anyone is on the tower.",
+      "id": "ip-tf-0067"
+    },
+    {
+      "explanation": "Overreaching can shift the centre of gravity and cause the tower or MEWP to become unstable and tip.",
+      "question": "Operators should always keep their belt buckle (navel) within the guardrails to avoid overreaching.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "id": "ip-tf-0068"
+    },
+    {
+      "type": "true_false",
+      "correctAnswer": false,
+      "question": "It is a legal requirement to wear a full-body harness with a short restraint lanyard in all types of scissor lifts.",
+      "explanation": "Harnesses are mandatory in boom-type MEWPs (cherry pickers) but are generally not required in vertical lifts (scissor lifts) unless a specific risk assessment dictates otherwise.",
+      "id": "ip-tf-0069"
+    },
+    {
+      "explanation": "The Safe Working Load (SWL) must never be exceeded. If the load is too heavy, a larger machine or different method must be used.",
+      "question": "If a MEWP’s Safe Working Load (SWL) is exceeded by 10%, it is still safe to operate as most machines have a built-in safety factor.",
+      "correctAnswer": false,
+      "type": "true_false",
+      "id": "ip-tf-0070"
+    },
+    {
+      "explanation": "In the UK, LOLER regulations require that all lifting equipment is thoroughly examined by a competent person at least every six months.",
+      "question": "MEWPs must undergo a 'Thorough Examination' by a competent person at least every six months.",
+      "correctAnswer": true,
+      "type": "true_false",
+      "id": "ip-tf-0071"
+    },
+    {
+      "correctAnswer": true,
+      "type": "true_false",
+      "question": "The total weight of people, tools, and materials on a tower must not exceed the Safe Working Load of the entire structure.",
+      "explanation": "Towers have different SWLs for the individual platforms and for the total structure; both limits must be strictly observed.",
+      "id": "ip-tf-0072"
+    },
+    {
+      "correctAnswer": true,
+      "question": "An emergency rescue plan must be in place and understood by the team before any work at height begins.",
+      "type": "true_false",
+      "explanation": "A rescue plan is a legal requirement under the Work at Height Regulations 2005 to ensure anyone suspended in a harness or stranded can be safely recovered.",
+      "id": "ip-tf-0073"
+    },
+    {
+      "explanation": "The 3T (Through The Trap) and AGR (Advance Guardrail) methods are the only two approved methods for safe assembly and dismantling.",
+      "type": "true_false",
+      "question": "It is acceptable to stand on an unprotected platform of a tower to install guardrails if you are working quickly.",
+      "correctAnswer": false,
+      "id": "ip-tf-0074"
+    },
+    {
+      "question": "When locking castors on a mobile tower, they should be turned outwards to ensure the largest possible footprint for stability.",
+      "type": "true_false",
+      "explanation": "To ensure stability, the castor wheels should be rotated outwards (away from the center) and then locked before the tower is climbed.",
+      "correctAnswer": true,
+      "id": "ip-tf-0075"
+    },
+    {
+      "correctAnswer": false,
+      "explanation": "Guardrails are mandatory for all working platforms where there is a risk of a fall liable to cause personal injury.",
+      "question": "Guardrails are not required on a mobile access tower if the platform height is less than 2 metres above the ground.",
+      "type": "true_false",
+      "id": "ip-tf-0076"
+    },
+    {
+      "question": "Anti-entrapment devices are specifically designed to reduce the risk of an operator being crushed against overhead obstructions.",
+      "type": "true_false",
+      "explanation": "Secondary guarding (like pressure sensing bars or ultrasonic sensors) is designed to stop the machine to prevent crush injuries to the occupant.",
+      "correctAnswer": true,
+      "id": "ip-tf-0077"
+    },
+    {
+      "explanation": "A harness is mandatory in boom-type MEWPs but generally not required in scissor lifts unless a specific risk assessment dictates otherwise.",
+      "type": "true_false",
+      "question": "A safety harness and lanyard must be worn at all times when working from a scissor lift.",
+      "correctAnswer": false,
+      "id": "ip-tf-0078"
+    },
+    {
+      "explanation": "Exceeding the gradient limits can lead to the machine tipping over, even if the ground appears firm.",
+      "question": "A MEWP must not be operated on a slope that exceeds the maximum gradient specified by the manufacturer.",
+      "type": "true_false",
+      "correctAnswer": true,
+      "id": "ip-tf-0079"
+    },
+    {
+      "correctAnswer": false,
+      "explanation": "Standard mobile towers are designed as access and work platforms, not as anchor points for external lifting equipment.",
+      "type": "true_false",
+      "question": "A mobile access tower can be used as a support for a pulley system to hoist heavy materials to the roof.",
+      "id": "ip-tf-0080"
+    },
+    {
+      "correctAnswer": true,
+      "explanation": "The Beaufort Scale is the standard measurement used to judge if wind speeds are safe for operating at height.",
+      "type": "true_false",
+      "question": "The Beaufort Scale is a common method used to estimate wind speed when using a MEWP or tower outdoors.",
+      "id": "ip-tf-0081"
+    },
+    {
+      "type": "true_false",
+      "question": "It is safe to step from the basket of a MEWP onto a roof as long as you remain attached by your lanyard.",
+      "explanation": "Entering or exiting at height is forbidden unless the machine is specifically designed for it and a rigorous risk assessment is completed.",
+      "correctAnswer": false,
+      "id": "ip-tf-0082"
+    },
+    {
+      "correctAnswer": true,
+      "question": "Spreader plates should be used under outrigger feet if the ground is soft or its load-bearing capacity is unknown.",
+      "type": "true_false",
+      "explanation": "Ground conditions must be assessed to ensure the soil or surface can support the combined weight of the machine and its load.",
+      "id": "ip-tf-0083"
+    },
+    {
+      "explanation": "The platform must be cleared of all personnel, tools, and materials before any height adjustment or movement of the tower occurs.",
+      "question": "You can remain on a mobile access tower while it is being raised or lowered using adjustable legs.",
+      "type": "true_false",
+      "correctAnswer": false,
+      "id": "ip-tf-0084"
+    },
+    {
+      "type": "true_false",
+      "explanation": "According to the Work at Height Regulations 2005, the first step in the hierarchy of control is to avoid work at height altogether if the task can be completed from ground level.",
+      "correctAnswer": true,
+      "question": "The primary legal requirement under the hierarchy of control is to avoid working at height whenever it is reasonably practicable.",
+      "id": "ip-tf-0085"
+    },
+    {
+      "correctAnswer": false,
+      "question": "It is safe to use a site vehicle, such as a forklift, to carefully push or pull a mobile access tower to a new location.",
+      "type": "true_false",
+      "explanation": "Towers must only be moved by manual effort applied at or near the base; using a vehicle to pull or push a mobile tower can cause it to overturn or collapse.",
+      "id": "ip-tf-0086"
+    },
+    {
+      "question": "The '3Ts' method is a way of assembling a mobile tower that involves sitting on the edge of the platform to install the next set of braces.",
+      "correctAnswer": false,
+      "explanation": "The 3Ts (Through The Trapdoor) and AGR (Advanced Guardrail) systems are the only approved methods for erecting towers without exposing the worker to an unprotected edge.",
+      "type": "true_false",
+      "id": "ip-tf-0087"
+    },
+    {
+      "type": "true_false",
+      "explanation": "Overhead power lines are a major hazard; if ignored, the machine or tower could conduct electricity, leading to fatal electric shocks or arcing.",
+      "correctAnswer": true,
+      "question": "A pre-use site assessment must include a check for overhead power lines and other service cables.",
+      "id": "ip-tf-0088"
+    },
+    {
+      "correctAnswer": false,
+      "question": "It is safe to carry large sheets of plywood in a MEWP basket during windy conditions as long as you hold them tightly.",
+      "type": "true_false",
+      "explanation": "Wind creates 'sail' effects and side loading; materials like plywood act as sails and can cause the MEWP or tower to blow over even in moderate winds.",
+      "id": "ip-tf-0089"
+    },
+    {
+      "type": "true_false",
+      "explanation": "This is a critical safety check to ensure the machine hasn't been modified or repaired incorrectly and that all decals match the operator's manual.",
+      "correctAnswer": true,
+      "question": "Before using a MEWP, the operator must ensure that the serial number on the machine matches the one on the Declaration of Conformity or LOLER certificate.",
+      "id": "ip-tf-0090"
+    },
+    {
+      "correctAnswer": false,
+      "question": "Adjustable legs on a mobile access tower can be used to increase the overall working height of the platform by up to 1 metre.",
+      "type": "true_false",
+      "explanation": "Adjustable legs are designed only to level the structure on uneven ground; using them to gain extra working height is dangerous and unstable.",
+      "id": "ip-tf-0091"
+    },
+    {
+      "explanation": "The 'Point of Use' or 'Last Minute' risk assessment ensures that any immediate changes in the environment, such as new obstacles or pedestrians, are managed.",
+      "type": "true_false",
+      "question": "A dynamic risk assessment should be performed immediately before the work starts, even if a formal written assessment was done days earlier.",
+      "correctAnswer": true,
+      "id": "ip-tf-0092"
+    },
+    {
+      "type": "true_false",
+      "explanation": "The ground must be firm and level; if the ground is uneven, the tower must be levelled using the adjustable legs while checking with a spirit level.",
+      "correctAnswer": false,
+      "question": "A mobile access tower can be safely erected on a slope of up to 10 degrees without the need for levelling devices.",
+      "id": "ip-tf-0093"
+    },
+    {
+      "correctAnswer": true,
+      "question": "A short-stay lanyard used in a boom-type MEWP is intended to prevent the operator from being ejected from the basket.",
+      "type": "true_false",
+      "explanation": "In boom-type MEWPs (cherry pickers), 'catapult effect' can occur if the boom bounces or the wheels hit a kerb, potentially throwing an unattached person out.",
+      "id": "ip-tf-0094"
+    },
+    {
+      "type": "true_false",
+      "explanation": "All components, including braces, stabilizers, and platforms, must be present and correctly fitted as per the manufacturer's instruction manual.",
+      "correctAnswer": false,
+      "question": "If a specific brace is missing from a tower kit, it is acceptable to use a similar-looking brace from a different manufacturer.",
+      "id": "ip-tf-0095"
+    },
+    {
+      "type": "true_false",
+      "explanation": "Standard mobile towers are not designed for this; side-loading forces from drilling or pushing against a wall can exceed the tower's stability limits and cause it to overturn.",
+      "correctAnswer": false,
+      "question": "A mobile access tower is specifically designed to withstand high horizontal forces, such as heavy-duty drilling into a concrete wall.",
+      "id": "ip-tf-0096"
+    },
+    {
+      "correctAnswer": true,
+      "question": "When using the 3T method of tower assembly, the operator must be seated within the trapdoor opening while installing the next set of guardrails.",
+      "explanation": "The Through The Trap (3T) method ensures the operator is protected by guardrails before they step onto the platform, reducing the risk of a fall during assembly.",
+      "type": "true_false",
+      "id": "ip-tf-0097"
+    },
+    {
+      "question": "It is acceptable to use the underside of a MEWP basket as an anchor point to lift heavy equipment from the ground using a rope.",
+      "correctAnswer": false,
+      "type": "true_false",
+      "explanation": "MEWPs are designed for lifting people and their tools; they are not cranes and using them to suspend loads can affect stability and cause structural damage.",
+      "id": "ip-tf-0098"
     }
   ],
-  "mocks": []
+  "mocks": [
+    {
+      "mockNumber": 1,
+      "title": "IPAF / PASMA Working at Height Test Test 1",
+      "questionIds": [
+        "ip-mc-0357",
+        "ip-im-0002",
+        "ip-mc-0341",
+        "ip-tf-0027",
+        "ip-im-0150",
+        "ip-im-0091",
+        "ip-tf-0042",
+        "ip-mc-0076",
+        "ip-mc-0246",
+        "ip-im-0078",
+        "ip-mc-0189",
+        "ip-mc-0098",
+        "ip-tf-0073",
+        "ip-mc-0382",
+        "ip-mc-0086",
+        "ip-mc-0345",
+        "ip-im-0016",
+        "ip-tf-0046",
+        "ip-mc-0241",
+        "ip-mc-0152",
+        "ip-im-0055",
+        "ip-mc-0073",
+        "ip-mc-0255",
+        "ip-mc-0307"
+      ]
+    },
+    {
+      "mockNumber": 2,
+      "title": "IPAF / PASMA Working at Height Test Test 2",
+      "questionIds": [
+        "ip-mc-0128",
+        "ip-mc-0056",
+        "ip-im-0041",
+        "ip-tf-0068",
+        "ip-im-0074",
+        "ip-mc-0054",
+        "ip-im-0089",
+        "ip-mc-0287",
+        "ip-mc-0218",
+        "ip-mc-0222",
+        "ip-tf-0022",
+        "ip-im-0161",
+        "ip-tf-0067",
+        "ip-mc-0035",
+        "ip-tf-0041",
+        "ip-mc-0069",
+        "ip-mc-0311",
+        "ip-mc-0121",
+        "ip-mc-0124",
+        "ip-mc-0239",
+        "ip-mc-0329",
+        "ip-im-0129",
+        "ip-im-0098",
+        "ip-mc-0092"
+      ]
+    },
+    {
+      "mockNumber": 3,
+      "title": "IPAF / PASMA Working at Height Test Test 3",
+      "questionIds": [
+        "ip-tf-0075",
+        "ip-mc-0224",
+        "ip-mc-0367",
+        "ip-im-0085",
+        "ip-mc-0300",
+        "ip-tf-0093",
+        "ip-im-0151",
+        "ip-im-0048",
+        "ip-tf-0051",
+        "ip-mc-0290",
+        "ip-mc-0330",
+        "ip-mc-0265",
+        "ip-mc-0289",
+        "ip-im-0050",
+        "ip-mc-0242",
+        "ip-im-0084",
+        "ip-mc-0231",
+        "ip-mc-0282",
+        "ip-mc-0030",
+        "ip-mc-0238",
+        "ip-tf-0007",
+        "ip-im-0070",
+        "ip-mc-0343",
+        "ip-mc-0044"
+      ]
+    },
+    {
+      "mockNumber": 4,
+      "title": "IPAF / PASMA Working at Height Test Test 4",
+      "questionIds": [
+        "ip-mc-0003",
+        "ip-mc-0178",
+        "ip-mc-0155",
+        "ip-mc-0260",
+        "ip-mc-0095",
+        "ip-im-0058",
+        "ip-im-0145",
+        "ip-tf-0069",
+        "ip-mc-0199",
+        "ip-im-0019",
+        "ip-mc-0027",
+        "ip-mc-0320",
+        "ip-tf-0090",
+        "ip-im-0062",
+        "ip-mc-0094",
+        "ip-tf-0058",
+        "ip-mc-0191",
+        "ip-im-0006",
+        "ip-mc-0157",
+        "ip-tf-0002",
+        "ip-im-0113",
+        "ip-mc-0348",
+        "ip-mc-0244",
+        "ip-mc-0315"
+      ]
+    },
+    {
+      "mockNumber": 5,
+      "title": "IPAF / PASMA Working at Height Test Test 5",
+      "questionIds": [
+        "ip-mc-0159",
+        "ip-tf-0005",
+        "ip-im-0121",
+        "ip-mc-0101",
+        "ip-mc-0140",
+        "ip-mc-0221",
+        "ip-tf-0020",
+        "ip-tf-0094",
+        "ip-mc-0089",
+        "ip-im-0007",
+        "ip-tf-0013",
+        "ip-im-0063",
+        "ip-mc-0039",
+        "ip-mc-0067",
+        "ip-mc-0181",
+        "ip-mc-0011",
+        "ip-mc-0107",
+        "ip-mc-0163",
+        "ip-im-0137",
+        "ip-im-0162",
+        "ip-im-0018",
+        "ip-mc-0066",
+        "ip-mc-0297",
+        "ip-mc-0284"
+      ]
+    },
+    {
+      "mockNumber": 6,
+      "title": "IPAF / PASMA Working at Height Test Test 6",
+      "questionIds": [
+        "ip-im-0135",
+        "ip-mc-0078",
+        "ip-im-0057",
+        "ip-mc-0075",
+        "ip-mc-0270",
+        "ip-tf-0049",
+        "ip-im-0119",
+        "ip-mc-0324",
+        "ip-mc-0065",
+        "ip-mc-0211",
+        "ip-mc-0281",
+        "ip-tf-0024",
+        "ip-mc-0100",
+        "ip-im-0076",
+        "ip-mc-0267",
+        "ip-mc-0366",
+        "ip-mc-0114",
+        "ip-im-0127",
+        "ip-mc-0251",
+        "ip-tf-0096",
+        "ip-tf-0047",
+        "ip-mc-0192",
+        "ip-mc-0123",
+        "ip-im-0077"
+      ]
+    },
+    {
+      "mockNumber": 7,
+      "title": "IPAF / PASMA Working at Height Test Test 7",
+      "questionIds": [
+        "ip-im-0153",
+        "ip-mc-0165",
+        "ip-im-0060",
+        "ip-mc-0158",
+        "ip-tf-0076",
+        "ip-im-0064",
+        "ip-mc-0090",
+        "ip-tf-0038",
+        "ip-mc-0312",
+        "ip-mc-0038",
+        "ip-mc-0232",
+        "ip-tf-0072",
+        "ip-mc-0250",
+        "ip-tf-0078",
+        "ip-mc-0227",
+        "ip-im-0093",
+        "ip-mc-0145",
+        "ip-im-0022",
+        "ip-im-0075",
+        "ip-mc-0226",
+        "ip-mc-0325",
+        "ip-mc-0131",
+        "ip-mc-0160",
+        "ip-mc-0020"
+      ]
+    },
+    {
+      "mockNumber": 8,
+      "title": "IPAF / PASMA Working at Height Test Test 8",
+      "questionIds": [
+        "ip-im-0102",
+        "ip-mc-0349",
+        "ip-mc-0362",
+        "ip-mc-0229",
+        "ip-im-0149",
+        "ip-mc-0314",
+        "ip-mc-0070",
+        "ip-mc-0097",
+        "ip-tf-0015",
+        "ip-mc-0150",
+        "ip-im-0044",
+        "ip-mc-0008",
+        "ip-tf-0063",
+        "ip-im-0067",
+        "ip-mc-0134",
+        "ip-im-0097",
+        "ip-mc-0316",
+        "ip-mc-0012",
+        "ip-tf-0035",
+        "ip-mc-0212",
+        "ip-tf-0003",
+        "ip-mc-0202",
+        "ip-mc-0180",
+        "ip-im-0120"
+      ]
+    },
+    {
+      "mockNumber": 9,
+      "title": "IPAF / PASMA Working at Height Test Test 9",
+      "questionIds": [
+        "ip-mc-0007",
+        "ip-mc-0248",
+        "ip-mc-0110",
+        "ip-mc-0308",
+        "ip-mc-0363",
+        "ip-mc-0388",
+        "ip-mc-0277",
+        "ip-mc-0119",
+        "ip-tf-0070",
+        "ip-mc-0372",
+        "ip-im-0156",
+        "ip-im-0122",
+        "ip-mc-0032",
+        "ip-im-0013",
+        "ip-tf-0056",
+        "ip-mc-0060",
+        "ip-mc-0010",
+        "ip-tf-0018",
+        "ip-im-0037",
+        "ip-tf-0017",
+        "ip-mc-0144",
+        "ip-im-0017",
+        "ip-im-0141",
+        "ip-mc-0170"
+      ]
+    },
+    {
+      "mockNumber": 10,
+      "title": "IPAF / PASMA Working at Height Test Test 10",
+      "questionIds": [
+        "ip-tf-0089",
+        "ip-im-0082",
+        "ip-mc-0166",
+        "ip-im-0115",
+        "ip-im-0138",
+        "ip-tf-0092",
+        "ip-mc-0384",
+        "ip-im-0028",
+        "ip-mc-0104",
+        "ip-mc-0327",
+        "ip-mc-0243",
+        "ip-tf-0044",
+        "ip-mc-0390",
+        "ip-mc-0179",
+        "ip-mc-0368",
+        "ip-mc-0346",
+        "ip-mc-0153",
+        "ip-tf-0097",
+        "ip-mc-0323",
+        "ip-mc-0026",
+        "ip-im-0008",
+        "ip-im-0133",
+        "ip-mc-0350",
+        "ip-mc-0176"
+      ]
+    },
+    {
+      "mockNumber": 11,
+      "title": "IPAF / PASMA Working at Height Test Test 11",
+      "questionIds": [
+        "ip-mc-0063",
+        "ip-im-0056",
+        "ip-tf-0033",
+        "ip-mc-0351",
+        "ip-mc-0219",
+        "ip-mc-0105",
+        "ip-mc-0171",
+        "ip-mc-0201",
+        "ip-im-0157",
+        "ip-mc-0214",
+        "ip-mc-0147",
+        "ip-mc-0273",
+        "ip-mc-0091",
+        "ip-tf-0088",
+        "ip-mc-0295",
+        "ip-mc-0106",
+        "ip-tf-0028",
+        "ip-mc-0148",
+        "ip-tf-0048",
+        "ip-im-0047",
+        "ip-im-0146",
+        "ip-im-0051",
+        "ip-mc-0049",
+        "ip-im-0128"
+      ]
+    },
+    {
+      "mockNumber": 12,
+      "title": "IPAF / PASMA Working at Height Test Test 12",
+      "questionIds": [
+        "ip-im-0083",
+        "ip-mc-0337",
+        "ip-mc-0210",
+        "ip-mc-0009",
+        "ip-mc-0019",
+        "ip-tf-0057",
+        "ip-tf-0021",
+        "ip-im-0147",
+        "ip-mc-0193",
+        "ip-mc-0279",
+        "ip-mc-0285",
+        "ip-mc-0168",
+        "ip-mc-0374",
+        "ip-tf-0065",
+        "ip-mc-0132",
+        "ip-tf-0039",
+        "ip-mc-0085",
+        "ip-mc-0292",
+        "ip-im-0116",
+        "ip-im-0105",
+        "ip-mc-0208",
+        "ip-im-0015",
+        "ip-im-0073",
+        "ip-mc-0061"
+      ]
+    },
+    {
+      "mockNumber": 13,
+      "title": "IPAF / PASMA Working at Height Test Test 13",
+      "questionIds": [
+        "ip-tf-0091",
+        "ip-mc-0272",
+        "ip-mc-0133",
+        "ip-mc-0002",
+        "ip-mc-0262",
+        "ip-im-0131",
+        "ip-im-0066",
+        "ip-mc-0116",
+        "ip-im-0087",
+        "ip-tf-0053",
+        "ip-mc-0299",
+        "ip-mc-0087",
+        "ip-mc-0338",
+        "ip-im-0081",
+        "ip-im-0069",
+        "ip-mc-0031",
+        "ip-im-0009",
+        "ip-tf-0060",
+        "ip-mc-0258",
+        "ip-tf-0009",
+        "ip-mc-0370",
+        "ip-mc-0142",
+        "ip-mc-0263",
+        "ip-mc-0174"
+      ]
+    },
+    {
+      "mockNumber": 14,
+      "title": "IPAF / PASMA Working at Height Test Test 14",
+      "questionIds": [
+        "ip-mc-0364",
+        "ip-mc-0344",
+        "ip-mc-0359",
+        "ip-tf-0008",
+        "ip-mc-0055",
+        "ip-mc-0293",
+        "ip-mc-0183",
+        "ip-tf-0095",
+        "ip-mc-0172",
+        "ip-mc-0103",
+        "ip-im-0099",
+        "ip-im-0036",
+        "ip-im-0106",
+        "ip-mc-0352",
+        "ip-mc-0319",
+        "ip-mc-0365",
+        "ip-mc-0340",
+        "ip-tf-0016",
+        "ip-mc-0318",
+        "ip-im-0052",
+        "ip-tf-0077",
+        "ip-im-0143",
+        "ip-mc-0278",
+        "ip-im-0025"
+      ]
+    },
+    {
+      "mockNumber": 15,
+      "title": "IPAF / PASMA Working at Height Test Test 15",
+      "questionIds": [
+        "ip-im-0030",
+        "ip-tf-0034",
+        "ip-mc-0335",
+        "ip-tf-0083",
+        "ip-mc-0209",
+        "ip-tf-0030",
+        "ip-mc-0386",
+        "ip-mc-0169",
+        "ip-mc-0197",
+        "ip-mc-0043",
+        "ip-tf-0036",
+        "ip-mc-0125",
+        "ip-im-0059",
+        "ip-mc-0204",
+        "ip-mc-0122",
+        "ip-im-0040",
+        "ip-mc-0306",
+        "ip-im-0045",
+        "ip-mc-0268",
+        "ip-mc-0228",
+        "ip-im-0140",
+        "ip-im-0026",
+        "ip-mc-0018",
+        "ip-mc-0249"
+      ]
+    },
+    {
+      "mockNumber": 16,
+      "title": "IPAF / PASMA Working at Height Test Test 16",
+      "questionIds": [
+        "ip-mc-0021",
+        "ip-mc-0146",
+        "ip-tf-0023",
+        "ip-im-0049",
+        "ip-mc-0188",
+        "ip-mc-0093",
+        "ip-mc-0207",
+        "ip-mc-0301",
+        "ip-im-0123",
+        "ip-mc-0213",
+        "ip-mc-0271",
+        "ip-mc-0369",
+        "ip-im-0005",
+        "ip-mc-0269",
+        "ip-mc-0015",
+        "ip-mc-0005",
+        "ip-im-0061",
+        "ip-im-0118",
+        "ip-mc-0022",
+        "ip-tf-0062",
+        "ip-tf-0045",
+        "ip-tf-0071",
+        "ip-mc-0062",
+        "ip-im-0090"
+      ]
+    },
+    {
+      "mockNumber": 17,
+      "title": "IPAF / PASMA Working at Height Test Test 17",
+      "questionIds": [
+        "ip-mc-0304",
+        "ip-im-0125",
+        "ip-mc-0156",
+        "ip-mc-0154",
+        "ip-mc-0051",
+        "ip-im-0124",
+        "ip-mc-0305",
+        "ip-tf-0014",
+        "ip-im-0107",
+        "ip-mc-0096",
+        "ip-mc-0339",
+        "ip-mc-0042",
+        "ip-tf-0001",
+        "ip-mc-0164",
+        "ip-tf-0055",
+        "ip-im-0152",
+        "ip-im-0101",
+        "ip-mc-0040",
+        "ip-mc-0200",
+        "ip-mc-0083",
+        "ip-im-0035",
+        "ip-tf-0086",
+        "ip-mc-0254",
+        "ip-mc-0247"
+      ]
+    },
+    {
+      "mockNumber": 18,
+      "title": "IPAF / PASMA Working at Height Test Test 18",
+      "questionIds": [
+        "ip-mc-0234",
+        "ip-tf-0084",
+        "ip-im-0023",
+        "ip-mc-0257",
+        "ip-tf-0081",
+        "ip-mc-0252",
+        "ip-mc-0185",
+        "ip-mc-0130",
+        "ip-tf-0052",
+        "ip-mc-0161",
+        "ip-im-0004",
+        "ip-mc-0077",
+        "ip-mc-0225",
+        "ip-mc-0216",
+        "ip-im-0108",
+        "ip-mc-0068",
+        "ip-im-0043",
+        "ip-im-0136",
+        "ip-mc-0046",
+        "ip-mc-0266",
+        "ip-mc-0028",
+        "ip-im-0117",
+        "ip-tf-0064",
+        "ip-mc-0264"
+      ]
+    },
+    {
+      "mockNumber": 19,
+      "title": "IPAF / PASMA Working at Height Test Test 19",
+      "questionIds": [
+        "ip-mc-0240",
+        "ip-mc-0081",
+        "ip-mc-0313",
+        "ip-mc-0129",
+        "ip-mc-0223",
+        "ip-im-0021",
+        "ip-tf-0025",
+        "ip-im-0031",
+        "ip-mc-0326",
+        "ip-mc-0196",
+        "ip-mc-0354",
+        "ip-tf-0050",
+        "ip-mc-0001",
+        "ip-im-0104",
+        "ip-tf-0074",
+        "ip-tf-0054",
+        "ip-mc-0245",
+        "ip-im-0139",
+        "ip-mc-0059",
+        "ip-mc-0006",
+        "ip-mc-0389",
+        "ip-im-0134",
+        "ip-mc-0334",
+        "ip-im-0103"
+      ]
+    },
+    {
+      "mockNumber": 20,
+      "title": "IPAF / PASMA Working at Height Test Test 20",
+      "questionIds": [
+        "ip-tf-0061",
+        "ip-im-0080",
+        "ip-mc-0025",
+        "ip-im-0112",
+        "ip-mc-0253",
+        "ip-mc-0331",
+        "ip-mc-0356",
+        "ip-tf-0059",
+        "ip-mc-0205",
+        "ip-mc-0033",
+        "ip-im-0072",
+        "ip-mc-0071",
+        "ip-mc-0079",
+        "ip-mc-0198",
+        "ip-tf-0010",
+        "ip-im-0159",
+        "ip-tf-0079",
+        "ip-mc-0377",
+        "ip-mc-0261",
+        "ip-im-0096",
+        "ip-mc-0047",
+        "ip-mc-0355",
+        "ip-mc-0057",
+        "ip-im-0144"
+      ]
+    },
+    {
+      "mockNumber": 21,
+      "title": "IPAF / PASMA Working at Height Test Test 21",
+      "questionIds": [
+        "ip-tf-0006",
+        "ip-tf-0032",
+        "ip-mc-0235",
+        "ip-mc-0074",
+        "ip-im-0160",
+        "ip-mc-0298",
+        "ip-mc-0342",
+        "ip-mc-0109",
+        "ip-mc-0220",
+        "ip-im-0148",
+        "ip-tf-0004",
+        "ip-mc-0135",
+        "ip-mc-0383",
+        "ip-mc-0127",
+        "ip-mc-0294",
+        "ip-im-0154",
+        "ip-im-0032",
+        "ip-mc-0291",
+        "ip-mc-0276",
+        "ip-im-0046",
+        "ip-mc-0203",
+        "ip-mc-0256",
+        "ip-tf-0019",
+        "ip-im-0100"
+      ]
+    },
+    {
+      "mockNumber": 22,
+      "title": "IPAF / PASMA Working at Height Test Test 22",
+      "questionIds": [
+        "ip-mc-0286",
+        "ip-mc-0167",
+        "ip-mc-0118",
+        "ip-mc-0375",
+        "ip-im-0079",
+        "ip-tf-0087",
+        "ip-im-0027",
+        "ip-im-0132",
+        "ip-mc-0138",
+        "ip-mc-0206",
+        "ip-mc-0332",
+        "ip-tf-0040",
+        "ip-mc-0139",
+        "ip-tf-0029",
+        "ip-mc-0321",
+        "ip-mc-0361",
+        "ip-mc-0029",
+        "ip-mc-0034",
+        "ip-im-0094",
+        "ip-mc-0237",
+        "ip-im-0011",
+        "ip-tf-0026",
+        "ip-mc-0162",
+        "ip-im-0092"
+      ]
+    },
+    {
+      "mockNumber": 23,
+      "title": "IPAF / PASMA Working at Height Test Test 23",
+      "questionIds": [
+        "ip-mc-0353",
+        "ip-mc-0137",
+        "ip-tf-0080",
+        "ip-mc-0385",
+        "ip-mc-0387",
+        "ip-tf-0012",
+        "ip-mc-0088",
+        "ip-im-0039",
+        "ip-im-0111",
+        "ip-mc-0274",
+        "ip-mc-0037",
+        "ip-mc-0182",
+        "ip-mc-0233",
+        "ip-mc-0108",
+        "ip-mc-0084",
+        "ip-im-0095",
+        "ip-tf-0031",
+        "ip-im-0010",
+        "ip-im-0033",
+        "ip-mc-0190",
+        "ip-im-0038",
+        "ip-tf-0043",
+        "ip-mc-0187",
+        "ip-mc-0052"
+      ]
+    },
+    {
+      "mockNumber": 24,
+      "title": "IPAF / PASMA Working at Height Test Test 24",
+      "questionIds": [
+        "ip-mc-0322",
+        "ip-mc-0024",
+        "ip-mc-0283",
+        "ip-mc-0371",
+        "ip-im-0003",
+        "ip-tf-0098",
+        "ip-im-0142",
+        "ip-mc-0099",
+        "ip-mc-0151",
+        "ip-mc-0036",
+        "ip-mc-0336",
+        "ip-im-0114",
+        "ip-im-0110",
+        "ip-tf-0082",
+        "ip-tf-0037",
+        "ip-im-0029",
+        "ip-mc-0117",
+        "ip-mc-0186",
+        "ip-tf-0066",
+        "ip-im-0020",
+        "ip-mc-0296",
+        "ip-mc-0041",
+        "ip-mc-0317",
+        "ip-mc-0149"
+      ]
+    },
+    {
+      "mockNumber": 25,
+      "title": "IPAF / PASMA Working at Height Test Test 25",
+      "questionIds": [
+        "ip-im-0034",
+        "ip-mc-0136",
+        "ip-mc-0050",
+        "ip-mc-0177",
+        "ip-mc-0310",
+        "ip-im-0086",
+        "ip-mc-0064",
+        "ip-mc-0373",
+        "ip-mc-0023",
+        "ip-tf-0027",
+        "ip-mc-0381",
+        "ip-mc-0194",
+        "ip-mc-0195",
+        "ip-tf-0046",
+        "ip-tf-0011",
+        "ip-im-0001",
+        "ip-im-0158",
+        "ip-im-0012",
+        "ip-mc-0184",
+        "ip-tf-0085",
+        "ip-im-0042",
+        "ip-mc-0173",
+        "ip-mc-0236",
+        "ip-mc-0275"
+      ]
+    },
+    {
+      "mockNumber": 26,
+      "title": "IPAF / PASMA Working at Height Test Test 26",
+      "questionIds": [
+        "ip-tf-0073",
+        "ip-mc-0080",
+        "ip-mc-0379",
+        "ip-mc-0004",
+        "ip-mc-0111",
+        "ip-mc-0230",
+        "ip-tf-0041",
+        "ip-mc-0358",
+        "ip-tf-0042",
+        "ip-mc-0302",
+        "ip-im-0014",
+        "ip-mc-0082",
+        "ip-mc-0113",
+        "ip-mc-0215",
+        "ip-mc-0376",
+        "ip-im-0109",
+        "ip-mc-0360",
+        "ip-mc-0143",
+        "ip-im-0065",
+        "ip-im-0126",
+        "ip-mc-0175",
+        "ip-im-0024",
+        "ip-im-0071",
+        "ip-tf-0068"
+      ]
+    },
+    {
+      "mockNumber": 27,
+      "title": "IPAF / PASMA Working at Height Test Test 27",
+      "questionIds": [
+        "ip-mc-0309",
+        "ip-im-0155",
+        "ip-im-0068",
+        "ip-mc-0333",
+        "ip-mc-0303",
+        "ip-tf-0093",
+        "ip-tf-0075",
+        "ip-im-0054",
+        "ip-im-0088",
+        "ip-tf-0067",
+        "ip-mc-0048",
+        "ip-mc-0112",
+        "ip-mc-0016",
+        "ip-mc-0120",
+        "ip-im-0053",
+        "ip-im-0130",
+        "ip-mc-0045",
+        "ip-mc-0017",
+        "ip-mc-0217",
+        "ip-mc-0288",
+        "ip-mc-0259",
+        "ip-mc-0014",
+        "ip-mc-0102",
+        "ip-tf-0022"
+      ]
+    },
+    {
+      "mockNumber": 28,
+      "title": "IPAF / PASMA Working at Height Test Test 28",
+      "questionIds": [
+        "ip-mc-0380",
+        "ip-mc-0141",
+        "ip-mc-0280",
+        "ip-im-0091",
+        "ip-mc-0307",
+        "ip-mc-0053",
+        "ip-tf-0002",
+        "ip-mc-0115",
+        "ip-mc-0347",
+        "ip-tf-0051",
+        "ip-im-0078",
+        "ip-mc-0345",
+        "ip-im-0016",
+        "ip-im-0002",
+        "ip-mc-0328",
+        "ip-mc-0126",
+        "ip-im-0150",
+        "ip-tf-0058",
+        "ip-mc-0058",
+        "ip-mc-0072",
+        "ip-tf-0007",
+        "ip-im-0055",
+        "ip-mc-0013",
+        "ip-mc-0378"
+      ]
+    },
+    {
+      "mockNumber": 29,
+      "title": "IPAF / PASMA Working at Height Test Test 29",
+      "questionIds": [
+        "ip-im-0041",
+        "ip-mc-0246",
+        "ip-mc-0255",
+        "ip-im-0161",
+        "ip-mc-0241",
+        "ip-tf-0094",
+        "ip-im-0129",
+        "ip-mc-0341",
+        "ip-mc-0069",
+        "ip-mc-0035",
+        "ip-im-0074",
+        "ip-mc-0152",
+        "ip-tf-0090",
+        "ip-tf-0013",
+        "ip-mc-0098",
+        "ip-mc-0073",
+        "ip-tf-0069",
+        "ip-mc-0086",
+        "ip-mc-0382",
+        "ip-mc-0076",
+        "ip-mc-0357",
+        "ip-im-0089",
+        "ip-im-0098",
+        "ip-mc-0189"
+      ]
+    },
+    {
+      "mockNumber": 30,
+      "title": "IPAF / PASMA Working at Height Test Test 30",
+      "questionIds": [
+        "ip-mc-0289",
+        "ip-mc-0329",
+        "ip-im-0050",
+        "ip-tf-0005",
+        "ip-mc-0231",
+        "ip-mc-0056",
+        "ip-tf-0096",
+        "ip-im-0085",
+        "ip-mc-0311",
+        "ip-im-0151",
+        "ip-mc-0222",
+        "ip-im-0070",
+        "ip-tf-0049",
+        "ip-mc-0218",
+        "ip-mc-0239",
+        "ip-mc-0124",
+        "ip-mc-0054",
+        "ip-mc-0128",
+        "ip-tf-0020",
+        "ip-im-0048",
+        "ip-mc-0092",
+        "ip-mc-0121",
+        "ip-im-0084",
+        "ip-mc-0287"
+      ]
+    },
+    {
+      "mockNumber": 31,
+      "title": "IPAF / PASMA Working at Height Test Test 31",
+      "questionIds": [
+        "ip-mc-0300",
+        "ip-mc-0348",
+        "ip-mc-0343",
+        "ip-im-0058",
+        "ip-tf-0047",
+        "ip-mc-0330",
+        "ip-tf-0024",
+        "ip-mc-0238",
+        "ip-mc-0224",
+        "ip-im-0145",
+        "ip-tf-0038",
+        "ip-mc-0094",
+        "ip-tf-0076",
+        "ip-mc-0044",
+        "ip-mc-0030",
+        "ip-mc-0265",
+        "ip-mc-0290",
+        "ip-im-0019",
+        "ip-mc-0242",
+        "ip-im-0113",
+        "ip-im-0062",
+        "ip-im-0006",
+        "ip-mc-0367",
+        "ip-mc-0282"
+      ]
+    },
+    {
+      "mockNumber": 32,
+      "title": "IPAF / PASMA Working at Height Test Test 32",
+      "questionIds": [
+        "ip-im-0162",
+        "ip-tf-0015",
+        "ip-im-0018",
+        "ip-mc-0315",
+        "ip-im-0137",
+        "ip-tf-0003",
+        "ip-tf-0078",
+        "ip-mc-0191",
+        "ip-im-0007",
+        "ip-mc-0095",
+        "ip-mc-0027",
+        "ip-mc-0089",
+        "ip-mc-0039",
+        "ip-mc-0199",
+        "ip-mc-0155",
+        "ip-mc-0003",
+        "ip-mc-0178",
+        "ip-mc-0157",
+        "ip-mc-0260",
+        "ip-tf-0072",
+        "ip-mc-0244",
+        "ip-mc-0320",
+        "ip-im-0121",
+        "ip-im-0063"
+      ]
+    },
+    {
+      "mockNumber": 33,
+      "title": "IPAF / PASMA Working at Height Test Test 33",
+      "questionIds": [
+        "ip-mc-0107",
+        "ip-mc-0297",
+        "ip-tf-0035",
+        "ip-mc-0140",
+        "ip-im-0077",
+        "ip-mc-0163",
+        "ip-mc-0284",
+        "ip-mc-0078",
+        "ip-mc-0067",
+        "ip-mc-0011",
+        "ip-mc-0181",
+        "ip-im-0119",
+        "ip-mc-0101",
+        "ip-tf-0070",
+        "ip-tf-0063",
+        "ip-mc-0159",
+        "ip-mc-0066",
+        "ip-im-0135",
+        "ip-im-0127",
+        "ip-mc-0221",
+        "ip-tf-0018",
+        "ip-mc-0281",
+        "ip-im-0057",
+        "ip-im-0076"
+      ]
+    },
+    {
+      "mockNumber": 34,
+      "title": "IPAF / PASMA Working at Height Test Test 34",
+      "questionIds": [
+        "ip-mc-0123",
+        "ip-tf-0056",
+        "ip-mc-0100",
+        "ip-mc-0267",
+        "ip-tf-0089",
+        "ip-mc-0192",
+        "ip-im-0060",
+        "ip-tf-0044",
+        "ip-mc-0211",
+        "ip-im-0093",
+        "ip-mc-0270",
+        "ip-im-0075",
+        "ip-im-0022",
+        "ip-tf-0017",
+        "ip-mc-0114",
+        "ip-im-0153",
+        "ip-mc-0251",
+        "ip-mc-0145",
+        "ip-mc-0065",
+        "ip-mc-0075",
+        "ip-mc-0324",
+        "ip-mc-0038",
+        "ip-im-0064",
+        "ip-mc-0366"
+      ]
+    },
+    {
+      "mockNumber": 35,
+      "title": "IPAF / PASMA Working at Height Test Test 35",
+      "questionIds": [
+        "ip-im-0044",
+        "ip-mc-0232",
+        "ip-im-0102",
+        "ip-mc-0131",
+        "ip-mc-0325",
+        "ip-im-0067",
+        "ip-im-0149",
+        "ip-im-0097",
+        "ip-mc-0090",
+        "ip-mc-0020",
+        "ip-mc-0008",
+        "ip-mc-0229",
+        "ip-tf-0048",
+        "ip-tf-0028",
+        "ip-mc-0250",
+        "ip-tf-0097",
+        "ip-im-0120",
+        "ip-mc-0160",
+        "ip-mc-0158",
+        "ip-tf-0092",
+        "ip-mc-0165",
+        "ip-mc-0312",
+        "ip-mc-0227",
+        "ip-mc-0226"
+      ]
+    },
+    {
+      "mockNumber": 36,
+      "title": "IPAF / PASMA Working at Height Test Test 36",
+      "questionIds": [
+        "ip-im-0013",
+        "ip-tf-0088",
+        "ip-im-0017",
+        "ip-mc-0212",
+        "ip-im-0037",
+        "ip-mc-0314",
+        "ip-im-0141",
+        "ip-mc-0362",
+        "ip-tf-0065",
+        "ip-mc-0316",
+        "ip-tf-0033",
+        "ip-im-0122",
+        "ip-mc-0097",
+        "ip-mc-0070",
+        "ip-im-0156",
+        "ip-tf-0021",
+        "ip-mc-0308",
+        "ip-mc-0349",
+        "ip-mc-0134",
+        "ip-mc-0007",
+        "ip-mc-0012",
+        "ip-mc-0202",
+        "ip-mc-0150",
+        "ip-mc-0180"
+      ]
+    },
+    {
+      "mockNumber": 37,
+      "title": "IPAF / PASMA Working at Height Test Test 37",
+      "questionIds": [
+        "ip-mc-0372",
+        "ip-mc-0350",
+        "ip-mc-0060",
+        "ip-mc-0327",
+        "ip-mc-0032",
+        "ip-mc-0010",
+        "ip-tf-0057",
+        "ip-mc-0110",
+        "ip-im-0133",
+        "ip-im-0138",
+        "ip-tf-0060",
+        "ip-mc-0144",
+        "ip-mc-0388",
+        "ip-tf-0039",
+        "ip-mc-0277",
+        "ip-tf-0091",
+        "ip-im-0008",
+        "ip-im-0028",
+        "ip-mc-0119",
+        "ip-mc-0170",
+        "ip-im-0115",
+        "ip-mc-0248",
+        "ip-im-0082",
+        "ip-mc-0363"
+      ]
+    },
+    {
+      "mockNumber": 38,
+      "title": "IPAF / PASMA Working at Height Test Test 38",
+      "questionIds": [
+        "ip-mc-0153",
+        "ip-mc-0243",
+        "ip-mc-0368",
+        "ip-tf-0053",
+        "ip-mc-0179",
+        "ip-mc-0104",
+        "ip-mc-0384",
+        "ip-im-0047",
+        "ip-im-0051",
+        "ip-mc-0026",
+        "ip-mc-0346",
+        "ip-mc-0176",
+        "ip-im-0146",
+        "ip-tf-0008",
+        "ip-mc-0390",
+        "ip-im-0157",
+        "ip-tf-0077",
+        "ip-tf-0009",
+        "ip-im-0128",
+        "ip-mc-0323",
+        "ip-mc-0219",
+        "ip-im-0056",
+        "ip-mc-0106",
+        "ip-mc-0166"
+      ]
+    },
+    {
+      "mockNumber": 39,
+      "title": "IPAF / PASMA Working at Height Test Test 39",
+      "questionIds": [
+        "ip-mc-0337",
+        "ip-mc-0201",
+        "ip-mc-0273",
+        "ip-im-0083",
+        "ip-mc-0171",
+        "ip-tf-0036",
+        "ip-mc-0351",
+        "ip-mc-0295",
+        "ip-mc-0049",
+        "ip-im-0116",
+        "ip-tf-0083",
+        "ip-mc-0148",
+        "ip-tf-0016",
+        "ip-mc-0063",
+        "ip-mc-0214",
+        "ip-mc-0105",
+        "ip-mc-0091",
+        "ip-im-0105",
+        "ip-mc-0193",
+        "ip-tf-0095",
+        "ip-im-0015",
+        "ip-mc-0147",
+        "ip-im-0073",
+        "ip-im-0147"
+      ]
+    },
+    {
+      "mockNumber": 40,
+      "title": "IPAF / PASMA Working at Height Test Test 40",
+      "questionIds": [
+        "ip-mc-0002",
+        "ip-tf-0034",
+        "ip-mc-0019",
+        "ip-mc-0272",
+        "ip-im-0069",
+        "ip-mc-0292",
+        "ip-mc-0210",
+        "ip-mc-0061",
+        "ip-im-0087",
+        "ip-tf-0062",
+        "ip-mc-0132",
+        "ip-tf-0045",
+        "ip-tf-0030",
+        "ip-mc-0208",
+        "ip-mc-0009",
+        "ip-mc-0285",
+        "ip-im-0131",
+        "ip-mc-0279",
+        "ip-im-0009",
+        "ip-mc-0085",
+        "ip-mc-0374",
+        "ip-im-0066",
+        "ip-im-0081",
+        "ip-mc-0168"
+      ]
+    },
+    {
+      "mockNumber": 41,
+      "title": "IPAF / PASMA Working at Height Test Test 41",
+      "questionIds": [
+        "ip-mc-0031",
+        "ip-mc-0133",
+        "ip-mc-0116",
+        "ip-mc-0338",
+        "ip-mc-0258",
+        "ip-im-0099",
+        "ip-mc-0370",
+        "ip-mc-0319",
+        "ip-mc-0087",
+        "ip-tf-0086",
+        "ip-tf-0055",
+        "ip-mc-0174",
+        "ip-im-0025",
+        "ip-tf-0071",
+        "ip-tf-0023",
+        "ip-im-0052",
+        "ip-mc-0299",
+        "ip-im-0106",
+        "ip-mc-0262",
+        "ip-mc-0278",
+        "ip-mc-0263",
+        "ip-mc-0142",
+        "ip-im-0036",
+        "ip-im-0143"
+      ]
+    },
+    {
+      "mockNumber": 42,
+      "title": "IPAF / PASMA Working at Height Test Test 42",
+      "questionIds": [
+        "ip-tf-0001",
+        "ip-im-0140",
+        "ip-im-0026",
+        "ip-mc-0228",
+        "ip-im-0059",
+        "ip-mc-0352",
+        "ip-tf-0014",
+        "ip-mc-0183",
+        "ip-mc-0103",
+        "ip-tf-0084",
+        "ip-mc-0365",
+        "ip-mc-0340",
+        "ip-mc-0364",
+        "ip-mc-0249",
+        "ip-mc-0318",
+        "ip-im-0030",
+        "ip-mc-0344",
+        "ip-mc-0293",
+        "ip-im-0045",
+        "ip-mc-0359",
+        "ip-im-0040",
+        "ip-mc-0172",
+        "ip-mc-0055",
+        "ip-tf-0081"
+      ]
+    },
+    {
+      "mockNumber": 43,
+      "title": "IPAF / PASMA Working at Height Test Test 43",
+      "questionIds": [
+        "ip-mc-0386",
+        "ip-mc-0268",
+        "ip-mc-0122",
+        "ip-im-0005",
+        "ip-mc-0043",
+        "ip-im-0049",
+        "ip-mc-0204",
+        "ip-im-0123",
+        "ip-mc-0022",
+        "ip-mc-0188",
+        "ip-mc-0306",
+        "ip-im-0090",
+        "ip-tf-0064",
+        "ip-tf-0052",
+        "ip-mc-0018",
+        "ip-mc-0125",
+        "ip-im-0061",
+        "ip-mc-0335",
+        "ip-tf-0025",
+        "ip-mc-0209",
+        "ip-mc-0169",
+        "ip-im-0118",
+        "ip-tf-0050",
+        "ip-mc-0197"
+      ]
+    },
+    {
+      "mockNumber": 44,
+      "title": "IPAF / PASMA Working at Height Test Test 44",
+      "questionIds": [
+        "ip-mc-0062",
+        "ip-mc-0271",
+        "ip-tf-0059",
+        "ip-tf-0054",
+        "ip-im-0107",
+        "ip-im-0101",
+        "ip-mc-0369",
+        "ip-im-0125",
+        "ip-tf-0074",
+        "ip-mc-0213",
+        "ip-mc-0207",
+        "ip-mc-0146",
+        "ip-mc-0093",
+        "ip-mc-0154",
+        "ip-im-0035",
+        "ip-mc-0015",
+        "ip-mc-0083",
+        "ip-mc-0301",
+        "ip-im-0152",
+        "ip-mc-0269",
+        "ip-tf-0010",
+        "ip-mc-0005",
+        "ip-im-0124",
+        "ip-mc-0021"
+      ]
+    },
+    {
+      "mockNumber": 45,
+      "title": "IPAF / PASMA Working at Height Test Test 45",
+      "questionIds": [
+        "ip-mc-0164",
+        "ip-im-0136",
+        "ip-mc-0216",
+        "ip-mc-0200",
+        "ip-im-0023",
+        "ip-mc-0077",
+        "ip-im-0108",
+        "ip-mc-0156",
+        "ip-mc-0040",
+        "ip-mc-0304",
+        "ip-tf-0032",
+        "ip-tf-0006",
+        "ip-mc-0254",
+        "ip-mc-0247",
+        "ip-im-0043",
+        "ip-tf-0079",
+        "ip-im-0117",
+        "ip-tf-0061",
+        "ip-mc-0339",
+        "ip-mc-0051",
+        "ip-mc-0305",
+        "ip-im-0004",
+        "ip-mc-0096",
+        "ip-mc-0042"
+      ]
+    }
+  ]
 }

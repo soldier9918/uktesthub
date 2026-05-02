@@ -1,0 +1,1881 @@
+{
+  "version": 2,
+  "topic": "microsoft-fundamentals",
+  "title": "Microsoft Fundamentals (MS-900 / AZ-900)",
+  "category": "it-tech",
+  "bank": [
+    {
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "options": [
+        "Infrastructure as a Service (IaaS)",
+        "Platform as a Service (PaaS)",
+        "Software as a Service (SaaS)",
+        "Function as a Service (FaaS)"
+      ],
+      "question": "A company wants to develop and host a web application but doesn't want to manage the underlying operating system or hardware. Which cloud service model is most suitable?",
+      "explanation": "PaaS provides a framework that allows developers to build, customise, and deploy cloud-based applications without managing the underlying servers.",
+      "id": "mf-mc-0001"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "The customer",
+        "Microsoft",
+        "The third-party network provider",
+        "Shared equally between Microsoft and the customer"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The Shared Responsibility Model states that the customer is always responsible for the security and management of their data, regardless of the cloud model used.",
+      "question": "In the Microsoft Shared Responsibility Model, who is responsible for the security of data stored in the cloud?",
+      "id": "mf-mc-0002"
+    },
+    {
+      "explanation": "Economies of scale describe the ability of large cloud providers to purchase hardware in bulk at lower costs, passing these savings on to customers.",
+      "question": "What term describes the ability of a cloud provider to lower operating costs by sharing hardware across thousands of customers?",
+      "type": "multiple_choice",
+      "options": [
+        "Capital Expenditure (CapEx) benefit",
+        "Agility",
+        "Economies of scale",
+        "High availability"
+      ],
+      "correctAnswer": 2,
+      "id": "mf-mc-0003"
+    },
+    {
+      "explanation": "Azure Advisor provides personalised recommendations based on best practices to optimise performance, security, and cost.",
+      "question": "Which Azure tool provides personalised recommendations to reduce costs and improve the security of your cloud environment?",
+      "options": [
+        "Azure Monitor",
+        "Azure Service Health",
+        "Azure PolicyBase",
+        "Azure Advisor"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "id": "mf-mc-0004"
+    },
+    {
+      "explanation": "Microsoft Defender for Cloud provides unified security management and advanced threat protection across hybrid and multi-cloud workloads.",
+      "question": "Which service provides a central dashboard for monitoring the security status of Azure resources and offers recommendations for hardening them?",
+      "type": "multiple_choice",
+      "options": [
+        "Azure Bastion",
+        "Microsoft Defender for Cloud",
+        "Azure Active Directory Domain Services",
+        "Microsoft Intune"
+      ],
+      "correctAnswer": 1,
+      "id": "mf-mc-0005"
+    },
+    {
+      "correctAnswer": 0,
+      "options": [
+        "5",
+        "1",
+        "Unlimited",
+        "10"
+      ],
+      "type": "multiple_choice",
+      "question": "Under a standard Microsoft 365 subscription, what is the maximum number of PCs or Macs a single user can install the Office desktop apps on?",
+      "explanation": "The Microsoft 365 Apps for business and enterprise plans allow users to install the Office desktop applications on up to five computers.",
+      "id": "mf-mc-0006"
+    },
+    {
+      "explanation": "Vertical scaling (scaling up) involves adding more power (CPU, RAM) to an existing virtual machine rather than adding more machines.",
+      "question": "If an IT administrator increases the RAM and CPU of an existing Azure Virtual Machine to handle a higher load, what type of scaling is being used?",
+      "options": [
+        "Scaling out",
+        "Scaling in",
+        "Scaling up",
+        "Horizontal scaling"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "id": "mf-mc-0007"
+    },
+    {
+      "question": "Which Microsoft service is primarily used to manage user identities and provide single sign-on (SSO) for cloud applications?",
+      "explanation": "Azure Active Directory (now part of Microsoft Entra) is the primary identity and access management service used for M365 and Azure applications.",
+      "correctAnswer": 1,
+      "options": [
+        "Microsoft Endpoint Manager",
+        "Azure Active Directory (Microsoft Entra ID)",
+        "Azure Information Protection (AIP)",
+        "Microsoft Power Automate"
+      ],
+      "type": "multiple_choice",
+      "id": "mf-mc-0008"
+    },
+    {
+      "question": "Where should a business look to find information about upcoming features and retirement dates for Microsoft 365 services?",
+      "explanation": "The Microsoft 365 Roadmap provides public information regarding upcoming updates, features currently in development, and recently launched services.",
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "options": [
+        "Microsoft 365 Roadmap",
+        "Azure Service Health",
+        "Microsoft Trust Center village",
+        "The Compliance Manager"
+      ],
+      "id": "mf-mc-0009"
+    },
+    {
+      "explanation": "Conditional Access allows administrators to implement automated access control decisions based on conditions like location, device health, or user risk.",
+      "question": "Which feature allows an administrator to block logins to Microsoft 365 based specifically on the user's geographical location?",
+      "type": "multiple_choice",
+      "options": [
+        "Role-Based Access Control (RBAC)",
+        "Multi-Factor Authentication (MFA)",
+        "Conditional Access",
+        "Just-In-Time (JIT) access"
+      ],
+      "correctAnswer": 2,
+      "id": "mf-mc-0010"
+    },
+    {
+      "question": "Which cloud concept refers to the speed and flexibility with which a company can deploy new applications and services to meet business demands?",
+      "explanation": "Agility is the ability to rapidly develop, test, and launch software applications in response to business changes.",
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "options": [
+        "Elasticity",
+        "Fault Tolerance",
+        "Scalability village",
+        "Agility"
+      ],
+      "id": "mf-mc-0011"
+    },
+    {
+      "options": [
+        "Microsoft Planner",
+        "Microsoft Viva",
+        "Microsoft Yammer (Viva Engage)",
+        "Microsoft SharePoint"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "explanation": "Microsoft Viva is an employee experience platform that focuses on communication, knowledge, learning, and insights within Teams.",
+      "question": "Which Microsoft 365 service is designed as an 'employee experience platform' to support wellbeing and knowledge sharing within a remote workforce?",
+      "id": "mf-mc-0012"
+    },
+    {
+      "question": "In a Public Cloud environment, who is responsible for the physical security of the data centre hardware?",
+      "type": "multiple_choice",
+      "explanation": "Under the Shared Responsibility Model, the cloud provider always manages the physical security of the data centres in every cloud model.",
+      "options": [
+        "The Customer",
+        "The Cloud Provider",
+        "A third-party auditor",
+        "Both the Customer and Cloud Provider equally"
+      ],
+      "correctAnswer": 1,
+      "id": "mf-mc-0013"
+    },
+    {
+      "question": "Which Azure service allows an administrator to prevent certain virtual machine sizes from being deployed within a specific subscription?",
+      "type": "multiple_choice",
+      "explanation": "Azure Policy helps enforce organisational standards and assess compliance at scale by preventing the creation of non-compliant resources.",
+      "options": [
+        "Azure Policy",
+        "Azure Resource Manager",
+        "Azure Blueprints",
+        "Azure Monitor"
+      ],
+      "correctAnswer": 0,
+      "id": "mf-mc-0014"
+    },
+    {
+      "explanation": "Capital Expenditure (CapEx) involves spending money on physical infrastructure upfront, while OpEx is the ongoing cost for a service.",
+      "options": [
+        "The ability to pay for resources only when they are used",
+        "The reduction of costs through high-volume hardware purchasing",
+        "The upfront spending of money on physical infrastructure and hardware",
+        "The ongoing cost for a service or product on a month-to-month basis"
+      ],
+      "correctAnswer": 2,
+      "question": "Which of the following best describes the term 'Capital Expenditure' (CapEx) in relation to cloud computing?",
+      "type": "multiple_choice",
+      "id": "mf-mc-0015"
+    },
+    {
+      "question": "Which feature of Microsoft Entra ID (formerly Azure AD) uses 'if-then' statements to grant or block access based on signals?",
+      "type": "multiple_choice",
+      "explanation": "Conditional Access allows administrators to implement automated access control decisions based on conditions like group membership or device health.",
+      "correctAnswer": 0,
+      "options": [
+        "Conditional Access",
+        "Role-Based Access Control (RBAC)",
+        "Privileged Identity Management (PIM)",
+        "Multi-Factor Authentication (MFA)"
+      ],
+      "id": "mf-mc-0016"
+    },
+    {
+      "question": "Which Microsoft 365 service provides a unified data governance solution to help manage and protect your data across your entire estate?",
+      "type": "multiple_choice",
+      "explanation": "Microsoft Purview is the unified data governance service that helps manage and govern your on-premises, multi-cloud, and SaaS data.",
+      "correctAnswer": 3,
+      "options": [
+        "Microsoft Sway",
+        "Microsoft Planner",
+        "Microsoft Sentinel",
+        "Microsoft Purview"
+      ],
+      "id": "mf-mc-0017"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What are the three guiding principles of the Microsoft 'Zero Trust' security model?",
+      "correctAnswer": 1,
+      "options": [
+        "Always Trust, Never Verify",
+        "Verify Explicitly, Use Least Privilege Access, Assume Breach",
+        "Network Perimeter Security, Shared Responsibility, High Availability",
+        "Encryption, Decryption, Hashing"
+      ],
+      "explanation": "Zero Trust assumes every request is a breach and verifies each request as though it originates from an open network.",
+      "id": "mf-mc-0018"
+    },
+    {
+      "question": "Which cloud service model provides the highest level of control and management over the operating system and virtual machines?",
+      "type": "multiple_choice",
+      "explanation": "Infrastructure as a Service (IaaS) gives the customer the most control over the software stack, including the OS.",
+      "options": [
+        "Software as a Service (SaaS)",
+        "Platform as a Service (PaaS)",
+        "Infrastructure as a Service (IaaS)",
+        "Function as a Service (FaaS)"
+      ],
+      "correctAnswer": 2,
+      "id": "mf-mc-0019"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which Azure feature involves physically separate locations within an Azure region that are designed to protect against data centre failures?",
+      "options": [
+        "Azure Regions",
+        "Resource Groups",
+        "Availability Zones",
+        "Fault Domains"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Availability Zones are physically separate data centres within an Azure region, designed to protect against data centre failures.",
+      "id": "mf-mc-0020"
+    },
+    {
+      "explanation": "The Microsoft Trust Center provides documentation on compliance, privacy, and security standards for Microsoft cloud services.",
+      "correctAnswer": 0,
+      "options": [
+        "Microsoft Trust Center",
+        "Azure Service Health",
+        "Microsoft Lifecycle Policy",
+        "The Privacy Act 2018 Portal"
+      ],
+      "question": "Where can a user find detailed information regarding how Microsoft cloud services comply with regulatory standards like GDPR or HIPAA?",
+      "type": "multiple_choice",
+      "id": "mf-mc-0021"
+    },
+    {
+      "explanation": "Microsoft Intune is the cloud-based service that focuses on mobile device management (MDM) and mobile application management (MAM).",
+      "correctAnswer": 3,
+      "options": [
+        "Microsoft Defender for Cloud",
+        "Windows Autopilot",
+        "Azure Information Protection",
+        "Microsoft Intune"
+      ],
+      "question": "Which Microsoft 365 service is used to manage mobile devices and applications used by employees to access corporate data?",
+      "type": "multiple_choice",
+      "id": "mf-mc-0022"
+    },
+    {
+      "explanation": "Hybrid cloud is a computing environment that combines a public cloud and a private cloud by allowing data and applications to be shared between them.",
+      "options": [
+        "Public cloud only",
+        "Hybrid cloud",
+        "Private cloud only",
+        "Multi-cloud environment"
+      ],
+      "correctAnswer": 1,
+      "question": "A company wants to keep sensitive data on-premises while moving its web servers to the public cloud. Which cloud deployment model are they using?",
+      "type": "multiple_choice",
+      "id": "mf-mc-0023"
+    },
+    {
+      "options": [
+        "Sovereign Geography",
+        "Region Pairings",
+        "Global Transit Mesh",
+        "Azure Geofencing"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Azure regions are always paired with another region within the same geography (at least 300 miles away) to protect against regional disasters.",
+      "type": "multiple_choice",
+      "question": "What is the name for the Azure concept where two regions are linked together within the same geography to ensure business continuity?",
+      "id": "mf-mc-0024"
+    },
+    {
+      "correctAnswer": 1,
+      "question": "In a Software as a Service (SaaS) model, which of the following is the primary responsibility of the customer?",
+      "options": [
+        "Patching the underlying operating system.",
+        "Configuring data access and identities.",
+        "Maintaining the physical server hardware.",
+        "Installing updates to the application code."
+      ],
+      "type": "multiple_choice",
+      "explanation": "In a SaaS model, the provider manages the physical infrastructure, OS, and application software; the customer is only responsible for their data and users.",
+      "id": "mf-mc-0025"
+    },
+    {
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "explanation": "Azure Advisor provides personalised best practices for cost, security, reliability, operational excellence, and performance.",
+      "question": "Which Azure tool provides recommendations on how to reduce costs and improve the performance of your cloud resources?",
+      "options": [
+        "Azure Policy",
+        "Resource Groups Explorer",
+        "Azure Service Health",
+        "Azure Advisor"
+      ],
+      "id": "mf-mc-0026"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "Viva Insights provides data-driven recommendations to help employees improve productivity and wellbeing, such as suggesting 'focus time'.",
+      "question": "Which Microsoft Viva module is specifically designed to help employees manage their time and improve their wellbeing through actionable insights?",
+      "options": [
+        "Viva Insights",
+        "Viva Learning",
+        "Viva Topics",
+        "Viva Connections"
+      ],
+      "correctAnswer": 0,
+      "id": "mf-mc-0027"
+    },
+    {
+      "options": [
+        "The Privacy Statement",
+        "The Online Services Terms (OST)",
+        "The Service Level Agreement (SLA)",
+        "The Trust Center"
+      ],
+      "question": "Where can an organisation find a formal guarantee of the minimum 'uptime' for a specific Microsoft cloud service?",
+      "type": "multiple_choice",
+      "explanation": "The Service Level Agreement (SLA) is the formal document that outlines the performance standards and uptime guarantees provided by Microsoft.",
+      "correctAnswer": 2,
+      "id": "mf-mc-0028"
+    },
+    {
+      "options": [
+        "Availability Zones",
+        "Availability Sets",
+        "Region Pairs",
+        "Resource Groups"
+      ],
+      "question": "Which Azure feature protects against hardware failure within a single data centre by grouping VMs together to ensure they rotate across different physical racks?",
+      "explanation": "Availability Sets protect against hardware failure within a data centre by distributing VMs across different hardware racks (fault domains).",
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "id": "mf-mc-0029"
+    },
+    {
+      "options": [
+        "Security groups",
+        "Microsoft 365 groups",
+        "Distribution groups",
+        "Mail-enabled security groups village"
+      ],
+      "question": "Which type of group in Microsoft 365 is primarily used to manage access to shared resources and assign permissions to a set of users?",
+      "explanation": "Security groups are used for granting access to resources like SharePoint sites or for applying policies to a group of users.",
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "id": "mf-mc-0030"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "The Total Cost of Ownership (TCO) calculator is the specific tool used to compare the costs of keeping workloads on-premises versus moving them to Azure.",
+      "question": "Which tool should a company use to estimate the potential cost savings of migrating their on-premises workloads to Azure over a period of time?",
+      "options": [
+        "Azure Pricing Calculator",
+        "Azure Cost Management",
+        "Azure Policy Center",
+        "Total Cost of Ownership (TCO) Calculator"
+      ],
+      "correctAnswer": 3,
+      "id": "mf-mc-0031"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "A CSP allows businesses to purchase Microsoft cloud services through a local partner who provides additional support and billing management.",
+      "question": "Which licensing model allows an organisation to purchase Microsoft 365 licences from a third-party partner who also provides support and billing?",
+      "options": [
+        "Microsoft Online Services Agreement (MOSA)",
+        "Enterprise Agreement (EA) village",
+        "Cloud Solution Provider (CSP)",
+        "Microsoft Customer Agreement (MCA)"
+      ],
+      "correctAnswer": 2,
+      "id": "mf-mc-0032"
+    },
+    {
+      "explanation": "Conditional Access allows you to require MFA based on factors like the user's location or the risk level of the sign-in.",
+      "type": "multiple_choice",
+      "question": "Which Microsoft Entra ID feature can require a user to perform Multi-Factor Authentication (MFA) only when they are logging in from an unrecognised device?",
+      "options": [
+        "Self-Service Password Reset (SSPR)",
+        "Conditional Access",
+        "Azure Bastion",
+        "Privileged Identity Management (PIM)"
+      ],
+      "correctAnswer": 1,
+      "id": "mf-mc-0033"
+    },
+    {
+      "explanation": "Azure Files offers fully managed file shares in the cloud that are accessible via the industry-standard SMB protocol, similar to a traditional file server.",
+      "type": "multiple_choice",
+      "question": "A company needs a cloud-based storage solution that can be mounted as a network drive on Windows, Linux, and macOS. Which service should they use?",
+      "options": [
+        "Azure Files",
+        "Azure Blob Storage village",
+        "Azure Disks",
+        "Azure Table Storage"
+      ],
+      "correctAnswer": 0,
+      "id": "mf-mc-0034"
+    },
+    {
+      "correctAnswer": 2,
+      "options": [
+        "Retention policies",
+        "Data loss prevention (DLP) policies",
+        "Sensitivity labels",
+        "eDiscovery cases"
+      ],
+      "question": "Which Microsoft Purview feature allows you to 'stamp' documents with a classification (e.g., 'Highly Confidential') to apply encryption automatically?",
+      "explanation": "Sensitivity labels are used to classify and protect data by adding watermarks, encryption, or headers to documents and emails.",
+      "type": "multiple_choice",
+      "id": "mf-mc-0035"
+    },
+    {
+      "explanation": "Resource Locks (specifically 'CanNotDelete' or 'ReadOnly') prevent accidental deletion or modification of critical Azure resources.",
+      "type": "multiple_choice",
+      "options": [
+        "Azure Policy",
+        "Role-Based Access Control (RBAC) village",
+        "Azure Blueprints",
+        "Resource Locks"
+      ],
+      "question": "Which Azure feature ensures that a critical Virtual Machine cannot be accidentally deleted by an administrator, regardless of their permission level?",
+      "correctAnswer": 3,
+      "id": "mf-mc-0036"
+    },
+    {
+      "explanation": "CapEx involves upfront spending on physical infrastructure, whereas OpEx (Cloud) is based on a consumption or subscription model.",
+      "question": "Which of the following is a primary benefit of moving to a public cloud model such as Azure?",
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "options": [
+        "Higher capital expenditure (CapEx) costs than on-premises solutions",
+        "The ability to scale resources based on demand (Elasticity)",
+        "Full control over the physical data centre hardware and security",
+        "A guarantee of 100% uptime for all services in any circumstance"
+      ],
+      "id": "mf-mc-0037"
+    },
+    {
+      "explanation": "PaaS provides the platform for developers to build applications without managing the underlying operating system or hardware.",
+      "type": "multiple_choice",
+      "question": "Which cloud service model provides a managed environment for developing, testing, and deploying software applications?",
+      "correctAnswer": 2,
+      "options": [
+        "Infrastructure as a Service (IaaS)",
+        "Software as a Service (SaaS)",
+        "Platform as a Service (PaaS)",
+        "Desktop as a Service (DaaS)"
+      ],
+      "id": "mf-mc-0038"
+    },
+    {
+      "correctAnswer": 0,
+      "options": [
+        "Microsoft 365 Admin Center",
+        "Azure Portal",
+        "Microsoft Purview compliance portal",
+        "Microsoft Endpoint Manager"
+      ],
+      "type": "multiple_choice",
+      "question": "Which admin portal should you use to assign a Microsoft 365 E5 licence to a new employee?",
+      "explanation": "The Microsoft 365 Admin Center is the primary hub for managing subscriptions, licences, and user accounts.",
+      "id": "mf-mc-0039"
+    },
+    {
+      "options": [
+        "The physical security of the data centre",
+        "The maintenance of the host server hardware",
+        "The patching of the underlying physical network infrastructure",
+        "The security and governance of the data stored in the cloud"
+      ],
+      "correctAnswer": 3,
+      "question": "Under the Microsoft Shared Responsibility Model, which task remains the responsibility of the customer regardless of the cloud model?",
+      "type": "multiple_choice",
+      "explanation": "In the shared responsibility model, the customer is always responsible for the security and management of their own data.",
+      "id": "mf-mc-0040"
+    },
+    {
+      "explanation": "Azure Policy is used to enforce rules over your resources to ensure they stay compliant with corporate standards.",
+      "options": [
+        "Azure Blueprints",
+        "Azure Policy",
+        "Azure Monitor",
+        "Azure Service Health"
+      ],
+      "correctAnswer": 1,
+      "question": "Which Azure service allows you to create, assign, and manage policies that enforce different rules over your resource configurations?",
+      "type": "multiple_choice",
+      "id": "mf-mc-0041"
+    },
+    {
+      "explanation": "Exchange Online is the cloud-based version of Microsoft's email and calendaring server.",
+      "options": [
+        "Microsoft SharePoint Online",
+        "Microsoft Teams",
+        "Microsoft Exchange Online",
+        "Microsoft Viva Engage"
+      ],
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "question": "Which Microsoft 365 service provides the core functionality for business-class email, shared calendars, and task management?",
+      "id": "mf-mc-0042"
+    },
+    {
+      "question": "What is the name of the cloud-based identity and access management service used by both Microsoft 365 and Azure?",
+      "type": "multiple_choice",
+      "options": [
+        "Microsoft Entra ID",
+        "Azure Key Vault",
+        "Azure Information Protection",
+        "Windows Server Active Directory"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Microsoft Entra ID (formerly Azure AD) is the primary cloud-based identity and access management service.",
+      "id": "mf-mc-0043"
+    },
+    {
+      "explanation": "A Tenant is a dedicated instance of Microsoft Entra ID that an organisation receives when they sign up for a cloud service.",
+      "correctAnswer": 2,
+      "options": [
+        "A Subscription",
+        "A Resource Group",
+        "A Tenant",
+        "A Management Group"
+      ],
+      "type": "multiple_choice",
+      "question": "In the context of Microsoft 365, what term describes a dedicated instance of the services and your organisation's data?",
+      "id": "mf-mc-0044"
+    },
+    {
+      "options": [
+        "Azure Virtual Desktop (AVD)",
+        "Windows 365",
+        "Microsoft Intune",
+        "Azure DevTest Labs"
+      ],
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "question": "A company wants a simplified, 'fixed-price' way to provide employees with a Cloud PC that keeps their settings and apps across devices. Which service should they use?",
+      "explanation": "Windows 365 is a SaaS solution that provides a complete, personalised Windows desktop (Cloud PC) accessible from any device.",
+      "id": "mf-mc-0045"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which Microsoft Purview feature allows you to apply persistent encryption and watermarks to sensitive documents?",
+      "options": [
+        "Retention Policies",
+        "Data Loss Prevention (DLP)",
+        "eDiscovery",
+        "Sensitivity Labels"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Sensitivity labels are used to classify and protect data by adding watermarks, encryption, or access restrictions.",
+      "id": "mf-mc-0046"
+    },
+    {
+      "explanation": "Total Cost of Ownership (TCO) helps identify long-term savings by comparing the costs of on-premises versus cloud deployment.",
+      "question": "Which tool is used to estimate the cost savings of migrating your existing on-premises data centre to Azure over a period of time?",
+      "type": "multiple_choice",
+      "options": [
+        "Total Cost of Ownership (TCO) Calculator",
+        "Azure Pricing Calculator",
+        "Azure Cost Management",
+        "Azure Advisor"
+      ],
+      "correctAnswer": 0,
+      "id": "mf-mc-0047"
+    },
+    {
+      "correctAnswer": 2,
+      "options": [
+        "Viva Insights",
+        "Viva Learning",
+        "Viva Topics",
+        "Viva Connections"
+      ],
+      "question": "Which Microsoft Viva module uses artificial intelligence to automatically organise content and expertise into related categories like 'projects' or 'customers'?",
+      "type": "multiple_choice",
+      "explanation": "Microsoft Viva Topics uses AI to automatically organise content and expertise across your organisation into related categories.",
+      "id": "mf-mc-0048"
+    },
+    {
+      "explanation": "Spot Instances provide access to unused Azure capacity at a deep discount, but they can be evicted if Azure needs the capacity back.",
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "options": [
+        "Reserved Instances",
+        "Azure Spot Instances",
+        "Pay-as-you-go Instances",
+        "Dedicated Hosts"
+      ],
+      "question": "A company wants to run a non-urgent background task that can be interrupted. Which Azure VM pricing option offers the lowest cost by using unused capacity?",
+      "id": "mf-mc-0049"
+    },
+    {
+      "question": "According to the Shared Responsibility Model, what is the customer always responsible for when using a Software as a Service (SaaS) application?",
+      "options": [
+        "The underlying physical servers",
+        "The operating system updates",
+        "The data and information stored within the app",
+        "The physical network security"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "explanation": "In a SaaS model, most of the infrastructure and application software is managed by the provider, but the customer remains responsible for their data.",
+      "id": "mf-mc-0050"
+    },
+    {
+      "explanation": "Azure Resource Groups serve as logical containers for grouping related resources for easier management and billing.",
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "options": [
+        "Resource Groups",
+        "Management Groups",
+        "Subscriptions",
+        "Availability Sets"
+      ],
+      "question": "Which Azure feature allows you to group resources such as databases, web apps, and virtual machines together for simplified management?",
+      "id": "mf-mc-0051"
+    },
+    {
+      "question": "Which service is used to manage and secure mobile devices and applications across a UK-based organisation?",
+      "options": [
+        "Microsoft Sentinel",
+        "Microsoft Intune",
+        "Azure Bastion",
+        "Windows Autopilot"
+      ],
+      "type": "multiple_choice",
+      "explanation": "Microsoft Intune is a cloud-based service that focuses on mobile device management (MDM) and mobile application management (MAM).",
+      "correctAnswer": 1,
+      "id": "mf-mc-0052"
+    },
+    {
+      "explanation": "PaaS provides the platform for developers to build applications without having to manage the underlying operating system or hardware.",
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "options": [
+        "IaaS (Infrastructure as a Service)",
+        "SaaS (Software as a Service)",
+        "Public Cloud",
+        "PaaS (Platform as a Service)"
+      ],
+      "question": "Which cloud service model is most suitable for a developer who needs to build and deploy a website without managing the underlying operating system?",
+      "id": "mf-mc-0053"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "Azure Peering allows traffic to be routed between virtual networks privately using the Microsoft backbone network.",
+      "correctAnswer": 0,
+      "question": "Which Azure networking service connects two Virtual Networks (VNets) together so that resources can communicate privately?",
+      "options": [
+        "VNet Peering",
+        "Azure ExpressRoute",
+        "VPN Gateway",
+        "Azure Front Door"
+      ],
+      "id": "mf-mc-0054"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "Data Residency refers to the physical or geographic location where an organisation's data is stored at rest.",
+      "correctAnswer": 2,
+      "question": "What term describes the physical or geographical location where an organisation's data is stored?",
+      "options": [
+        "Data Sovereignty",
+        "Data Privacy",
+        "Data Residency",
+        "Data Compliance"
+      ],
+      "id": "mf-mc-0055"
+    },
+    {
+      "explanation": "Azure Cosmos DB is a globally distributed, multi-model database service designed for high availability and low latency.",
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "options": [
+        "Azure SQL Database",
+        "Azure Cosmos DB",
+        "Azure Blob Storage",
+        "Azure Table Storage"
+      ],
+      "question": "Which Azure database service is designed for globally distributed, 'NoSQL' data with low-latency access?",
+      "id": "mf-mc-0056"
+    },
+    {
+      "options": [
+        "Viva Insights",
+        "Viva Learning",
+        "Viva Topics",
+        "Viva Connections"
+      ],
+      "question": "Which Microsoft Viva module provides a personalised gateway for employees to access internal communications and resources within Microsoft Teams?",
+      "correctAnswer": 3,
+      "explanation": "Microsoft Viva Connections provides a branded, company-branded app in Teams that serves as a gateway to the modern employee experience.",
+      "type": "multiple_choice",
+      "id": "mf-mc-0057"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "explanation": "Cloud computing allows you to scale resources instantly to meet demand (elasticity) and only pay for what you use (OpEx).",
+      "question": "Which of the following best describes the key benefits of public cloud computing?",
+      "options": [
+        "High elasticity and OpEx pricing",
+        "Low agility and CapEx pricing",
+        "Fixed capacity and OpEx pricing",
+        "High elasticity and CapEx pricing"
+      ],
+      "id": "mf-mc-0058"
+    },
+    {
+      "explanation": "Azure Advisor provides personalised recommendations based on your usage to improve security, performance, and cost-effectiveness.",
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "options": [
+        "Azure Monitor建设",
+        "Azure Service Health建设",
+        "Azure Advisor建设",
+        "Azure Blueprints建设"
+      ],
+      "question": "Which tool provides recommendations on how to reduce your Azure spend and improve the security of your deployed resources?",
+      "id": "mf-mc-0059"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "Microsoft Purview eDiscovery is used to search for, preserve, and export data for legal cases or internal investigations.",
+      "correctAnswer": 1,
+      "question": "Which Microsoft Purview tool should a legal department use to identify, hold, and export electronic information for a legal case?",
+      "options": [
+        "Sensitivity Labels",
+        "eDiscovery (Premium)",
+        "Data Loss Prevention (DLP)",
+        "Insider Risk Management"
+      ],
+      "id": "mf-mc-0060"
+    },
+    {
+      "explanation": "In a Public Cloud, the cloud provider owns the hardware and remains responsible for maintenance and updates.",
+      "correctAnswer": 2,
+      "options": [
+        "The customer organisation",
+        "The local government data centre",
+        "The cloud service provider (e.g., Microsoft)",
+        "A third-party hardware insurance company"
+      ],
+      "type": "multiple_choice",
+      "question": "In a Public Cloud model, who is responsible for the maintenance and management of the underlying physical hardware?",
+      "id": "mf-mc-0061"
+    },
+    {
+      "question": "A UK startup wants to avoid the large upfront costs of buying servers and instead pay monthly based on usage. What is this financial model called?",
+      "type": "multiple_choice",
+      "explanation": "Operational Expenditure (OpEx) refers to spending money on services or products now and being billed for them as you go.",
+      "options": [
+        "Operational Expenditure (OpEx)",
+        "Capital Expenditure (CapEx)",
+        "Fixed Asset Depreciation",
+        "Pre-paid Investment"
+      ],
+      "correctAnswer": 0,
+      "id": "mf-mc-0062"
+    },
+    {
+      "question": "An organisation wants to ensure that users can only access Microsoft 365 apps if their device is compliant with security policies. Which service should they use?",
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "options": [
+        "Microsoft Purview Data Loss Prevention",
+        "Microsoft Entra Conditional Access",
+        "Azure Role-Based Access Control (RBAC)",
+        "Windows Hello for Business"
+      ],
+      "explanation": "Conditional Access is the tool used to allow or block access based on specific signals like location or device state.",
+      "id": "mf-mc-0063"
+    },
+    {
+      "question": "Which cloud concept describes the ability of a system to remain operational even if a hardware or software component fails?",
+      "type": "multiple_choice",
+      "explanation": "Fault Tolerance is the ability of a system to continue operating without interruption even if a specific component fails.",
+      "options": [
+        "Scalability",
+        "Elasticity",
+        "Agility",
+        "Fault Tolerance"
+      ],
+      "correctAnswer": 3,
+      "id": "mf-mc-0064"
+    },
+    {
+      "explanation": "Microsoft 365 Lighthouse is designed for MSPs to manage multiple small-to-medium business tenants from a single portal.",
+      "correctAnswer": 1,
+      "options": [
+        "Microsoft 365 Admin Center",
+        "Microsoft 365 Lighthouse",
+        "Azure Lighthouse",
+        "Microsoft Defender for Cloud"
+      ],
+      "question": "A UK-based Managed Service Provider (MSP) needs a central portal to manage security and devices for 50 different small business clients. Which tool is designed for this?",
+      "type": "multiple_choice",
+      "id": "mf-mc-0065"
+    },
+    {
+      "explanation": "Azure Logic Apps is a low-code/no-code service used to automate workflows and integrate various applications.",
+      "correctAnswer": 0,
+      "options": [
+        "Azure Logic Apps",
+        "Azure Functions唯",
+        "Azure Virtual Machine Scale Sets唯",
+        "Azure DevOps唯"
+      ],
+      "question": "Which Azure service provides a platform for serverless workflow orchestration to integrate apps and data without writing code?",
+      "type": "multiple_choice",
+      "id": "mf-mc-0066"
+    },
+    {
+      "correctAnswer": 2,
+      "options": [
+        "Resource Groups唯",
+        "Management Groups唯",
+        "Availability Zones唯",
+        "Edge Zones唯"
+      ],
+      "explanation": "Availability Zones are unique physical locations within an Azure region that provide protection against entire data centre failures.",
+      "type": "multiple_choice",
+      "question": "To protect an application from a data centre power failure in a specific region, where should you deploy the redundant Virtual Machines?",
+      "id": "mf-mc-0067"
+    },
+    {
+      "explanation": "Compliance Manager provides a score and actionable insights to help organisations meet regulatory requirements like GDPR.",
+      "correctAnswer": 1,
+      "options": [
+        "Azure Blueprints唯",
+        "Microsoft Purview Compliance Manager唯,",
+        "Microsoft Defender for Endpoint唯",
+        "Azure Policy唯"
+      ],
+      "type": "multiple_choice",
+      "question": "A council needs to track its progress against the UK GDPR requirements. Which tool provides a 'Compliance Score' and specific improvement actions?",
+      "id": "mf-mc-0068"
+    },
+    {
+      "question": "Which security principle operates on the assumption that every access request is a potential breach and must be 'verified explicitly'?",
+      "type": "multiple_choice",
+      "options": [
+        "Defence in Depth唯",
+        "The Perimeter Model唯,",
+        "Single Sign-On (SSO)唯",
+        "Zero Trust唯"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Zero Trust assumes all requests are breaches and requires explicit verification for every access attempt.",
+      "id": "mf-mc-0069"
+    },
+    {
+      "question": "A small business with 20 employees only needs the desktop versions of Word, Excel, and PowerPoint. Which license is the most cost-effective?",
+      "type": "multiple_choice",
+      "options": [
+        "Microsoft 365 Apps for business唯",
+        "Microsoft 365 Business Basic唯",
+        "Microsoft 365 Enterprise E5唯",
+        "Microsoft 365 Business Standard唯"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Microsoft 365 Apps for business is the specific license for Desktop apps for up to 300 users, excluding advanced email features.",
+      "id": "mf-mc-0070"
+    },
+    {
+      "correctAnswer": 2,
+      "options": [
+        "Azure Resource Manager (ARM) templates唯",
+        "Azure Advisor唯",
+        "Azure Blueprints唯",
+        "Azure Monitor唯"
+      ],
+      "explanation": "Azure Blueprints allow cloud architects to define a repeatable set of Azure resources that implement an organisation's standards.",
+      "question": "Which service allows you to define a repeatable set of Azure resources and configurations to ensure new subscriptions meet corporate standards?",
+      "type": "multiple_choice",
+      "id": "mf-mc-0071"
+    },
+    {
+      "correctAnswer": 1,
+      "options": [
+        "Microsoft Delve唯",
+        "Microsoft Search唯",
+        "Microsoft Viva Insights唯",
+        "Bing for Business唯"
+      ],
+      "explanation": "Microsoft Search provides a unified search experience across Microsoft 365, including SharePoint, OneDrive, and Teams.",
+      "type": "multiple_choice",
+      "question": "What is the name of the intelligent service that allows employees to find people, files, and internal sites across the whole Microsoft 365 ecosystem?",
+      "id": "mf-mc-0072"
+    },
+    {
+      "question": "Which cloud service model provides the most user control and management responsibility for operating systems and middleware?",
+      "type": "multiple_choice",
+      "explanation": "IaaS provides the highest level of control as the user is responsible for managing the operating system, middleware, and applications.",
+      "correctAnswer": 1,
+      "options": [
+        "SaaS (Software as a Service)",
+        "IaaS (Infrastructure as a Service)",
+        "PaaS (Platform as a Service)",
+        "Serverless Computing"
+      ],
+      "id": "mf-mc-0073"
+    },
+    {
+      "question": "What is the term for a geographical area that contains at least one, but potentially multiple, data centres?",
+      "options": [
+        "A Resource Group",
+        "An Availability Set",
+        "A Management Group",
+        "An Azure Region"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Azure Regions are made up of one or more data centres connected through a dedicated low-latency network.",
+      "type": "multiple_choice",
+      "id": "mf-mc-0074"
+    },
+    {
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "explanation": "CAPEX involves upfront costs for hardware, whereas OPEX allows businesses to pay as they go for cloud services.",
+      "options": [
+        "Capital Expenditure (CapEx) to Operational Expenditure (OpEx)",
+        "Operational Expenditure (OpEx) to Capital Expenditure (CapEx)",
+        "Variable cost to Fixed cost",
+        "Private cloud to On-premises cloud"
+      ],
+      "question": "Moving from an on-premises data centre to a public cloud model generally shifts costs from which category to another?",
+      "id": "mf-mc-0075"
+    },
+    {
+      "question": "A UK firm wants to remotely wipe data from a lost company mobile phone. Which Microsoft 365 service should they use?",
+      "type": "multiple_choice",
+      "explanation": "Microsoft Intune is the cloud-based service used specifically for managing mobile devices and applications.",
+      "correctAnswer": 2,
+      "options": [
+        "Azure Active Directory (Microsoft Entra ID)",
+        "Microsoft Sentinel",
+        "Microsoft Intune",
+        "Microsoft Defender for Cloud"
+      ],
+      "id": "mf-mc-0076"
+    },
+    {
+      "options": [
+        "Microsoft 365 F3",
+        "Microsoft 365 E5",
+        "Microsoft 365 Business Premium",
+        "Microsoft 365 Apps for Enterprise"
+      ],
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "explanation": "Microsoft 365 F1 and F3 plans are specifically tailored for firstline workers who do not typically sit at a desk.",
+      "question": "Which Microsoft 365 subscription is specifically designed for 'Frontline Workers' such as retail staff or factory workers?",
+      "id": "mf-mc-0077"
+    },
+    {
+      "question": "Where can an organisation find third-party audit reports and documentation regarding how Microsoft cloud services meet UK GDPR requirements?",
+      "options": [
+        "Azure Policy",
+        "Compliance Manager",
+        "Service Trust Portal",
+        "Azure Blueprints"
+      ],
+      "explanation": "The Service Trust Portal is the public location for all Microsoft's compliance audit reports and regulatory information.",
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "id": "mf-mc-0078"
+    },
+    {
+      "options": [
+        "Elasticity",
+        "Economies of Scale",
+        "High Availability",
+        "Agility"
+      ],
+      "explanation": "Economies of scale allow cloud providers to buy in bulk and pass savings to customers, reducing the cost per unit of resource.",
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "question": "What term describes the ability of a major provider like Microsoft to provide services at a lower cost because they operate at a massive scale?",
+      "id": "mf-mc-0079"
+    },
+    {
+      "question": "Which cloud pricing model allows you to pay only for the resources you use, such as the duration a Virtual Machine is running?",
+      "type": "multiple_choice",
+      "explanation": "Cloud computing allows for 'pay-as-you-go' or consumption-based pricing, removing the need for fixed long-term infrastructure costs.",
+      "correctAnswer": 3,
+      "options": [
+        "Fixed-price billing",
+        "Upfront billing only",
+        "Flat-rate billing",
+        "Consumption-based billing"
+      ],
+      "id": "mf-mc-0080"
+    },
+    {
+      "question": "In Microsoft Teams, which feature allows you to collaborate with external partners in a single channel without switching your organisation's tenant?",
+      "options": [
+        "Shared Channels (Teams Connect)",
+        "Private Channels",
+        "Standard Channels",
+        "Guest Access Mode"
+      ],
+      "type": "multiple_choice",
+      "explanation": "Shared channels allow people from different organisations to collaborate in a single channel without having to switch tenants.",
+      "correctAnswer": 0,
+      "id": "mf-mc-0081"
+    },
+    {
+      "question": "Which Azure service provides a comprehensive solution for collecting, analysing, and acting on telemetry from your cloud and on-premises environments?",
+      "options": [
+        "Azure Advisor",
+        "Azure Monitor",
+        "Azure Service Health",
+        "Azure Bastion"
+      ],
+      "explanation": "Azure Monitor is the centralised tool for collecting and analysing telemetry from cloud and on-premises environments.",
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "id": "mf-mc-0082"
+    },
+    {
+      "question": "Under the Shared Responsibility Model, what is the customer always responsible for, regardless of the cloud service model (IaaS, PaaS, or SaaS)?",
+      "options": [
+        "The Operating System",
+        "The Physical Servers",
+        "The Data and Identities",
+        "The Virtualisation Layer"
+      ],
+      "correctAnswer": 2,
+      "explanation": "In SaaS, the provider manages everything including the application; the consumer is only responsible for their data and users.",
+      "type": "multiple_choice",
+      "id": "mf-mc-0083"
+    },
+    {
+      "question": "Which Microsoft 365 tool uses AI to provide a unified search experience across web, SharePoint, and Office apps?",
+      "options": [
+        "Microsoft Search",
+        "Power BI",
+        "Microsoft Graph",
+        "Delve"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Microsoft Search is the integrated technology that allows users to find content across all Microsoft 365 apps and data.",
+      "type": "multiple_choice",
+      "id": "mf-mc-0084"
+    },
+    {
+      "options": [
+        "Microsoft Viva Connections",
+        "Microsoft Viva Topics",
+        "Microsoft Viva Insights",
+        "Microsoft Viva Learning"
+      ],
+      "type": "multiple_choice",
+      "explanation": "Viva Insights focuses on employee well-being and productivity by analysing work habits such as meeting time and focus hours.",
+      "question": "A UK law firm wants to improve employee well-being by providing data-driven insights into how staff spend their time and preventing burnout. Which Microsoft Viva module should they use?",
+      "correctAnswer": 2,
+      "id": "mf-mc-0085"
+    },
+    {
+      "correctAnswer": 1,
+      "question": "A government department requires complete control over its hardware and data for security reasons, choosing to host its infrastructure on its own dedicated servers. Which cloud model are they using?",
+      "options": [
+        "Public Cloud",
+        "Private Cloud",
+        "Hybrid Cloud",
+        "Community Cloud"
+      ],
+      "type": "multiple_choice",
+      "explanation": "Private Clouds are dedicated to a single organisation and are often used when strict data privacy or regulatory requirements demand a more controlled environment.",
+      "id": "mf-mc-0086"
+    },
+    {
+      "explanation": "Conditional Access allows admins to set granular policies that grant or block access based on signals like user location, device state, or login risk.",
+      "options": [
+        "Conditional Access",
+        "Multi-Factor Authentication (MFA) only",
+        "Privileged Identity Management (PIM)",
+        "Role-Based Access Control (RBAC)"
+      ],
+      "type": "multiple_choice",
+      "question": "Which Microsoft Entra ID feature allows an admin to block login attempts if they originate from a country where the company does not have a presence?",
+      "correctAnswer": 0,
+      "id": "mf-mc-0087"
+    },
+    {
+      "question": "A finance company needs to ensure that its developers can only create resources within the UK South or UK West regions to comply with data residency. Which service should they use?",
+      "correctAnswer": 3,
+      "options": [
+        "Azure Cost Management",
+        "Azure Advisor",
+        "Azure Resource Groups",
+        "Azure Policy"
+      ],
+      "type": "multiple_choice",
+      "explanation": "Governance in Azure is managed through policies that enforce rules on resources, such as restricting which regions or VM sizes can be used.",
+      "id": "mf-mc-0088"
+    },
+    {
+      "question": "Which cloud service model is being used when a school uses Microsoft 365 apps like Outlook and Word online without managing any underlying servers or software updates?",
+      "correctAnswer": 1,
+      "explanation": "In a SaaS model (like Microsoft 365), Microsoft manages the infrastructure, OS, and applications, while the customer manages their data and users.",
+      "options": [
+        "Infrastructure as a Service (IaaS)",
+        "Software as a Service (SaaS)",
+        "Platform as a Service (PaaS)",
+        "Desktop as a Service (DaaS)"
+      ],
+      "type": "multiple_choice",
+      "id": "mf-mc-0089"
+    },
+    {
+      "explanation": "Fault Tolerance refers to a system's ability to remain operational even if a critical component fails, typically through redundancy.",
+      "options": [
+        "Scalability",
+        "Agility",
+        "Fault Tolerance",
+        "Elasticity"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "question": "Which cloud concept describes the ability of a system to remain operational during an infrastructure failure by having redundant components take over immediately?",
+      "id": "mf-mc-0090"
+    },
+    {
+      "options": [
+        "Azure Log Analytics",
+        "Azure Service Health",
+        "Azure Resource Health",
+        "Azure Blueprints"
+      ],
+      "type": "multiple_choice",
+      "explanation": "Azure Monitor Logs (Log Analytics) is used to store and query log data from Azure resources to troubleshoot issues.",
+      "correctAnswer": 0,
+      "question": "A developer needs to query resource logs to identify why a specific application recently crashed. Which tool should they use to run these queries?",
+      "id": "mf-mc-0091"
+    },
+    {
+      "correctAnswer": 2,
+      "question": "A software house wants to build a custom web application. They want Microsoft to manage the operating system and web server so they can focus on coding. Which model is this?",
+      "type": "multiple_choice",
+      "options": [
+        "Software as a Service (SaaS)",
+        "Infrastructure as a Service (IaaS)",
+        "Platform as a Service (PaaS)",
+        "On-premises"
+      ],
+      "explanation": "PaaS is ideal for developers who want to focus on writing and deploying code without the overhead of managing the underlying operating system or web server.",
+      "id": "mf-mc-0092"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Microsoft 365 Enterprise E3",
+        "Microsoft 365 Apps for business",
+        "Microsoft 365 Business Basic",
+        "Microsoft 365 Education A1"
+      ],
+      "explanation": "Microsoft 365 Apps for business is the standard choice for small to medium businesses needing local Office installations for up to 300 users.",
+      "question": "A small UK retail chain with 40 employees needs the desktop version of Office apps and OneDrive storage, but they do not need advanced security or Teams. Which license is best?",
+      "correctAnswer": 1,
+      "id": "mf-mc-0093"
+    },
+    {
+      "question": "Which Microsoft Purview feature allows an organisation to classify and protect emails and documents by applying visible watermarks or encryption?",
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "options": [
+        "Data Loss Prevention (DLP)",
+        "eDiscovery",
+        "Insider Risk Management",
+        "Sensitivity Labels"
+      ],
+      "explanation": "Sensitivity labels in Microsoft Purview allow organisations to classify data (e.g., 'Highly Confidential') and apply protections like encryption or watermarks.",
+      "id": "mf-mc-0094"
+    },
+    {
+      "explanation": "Azure Advisor provides proactive best-practice recommendations for performance, security, reliability, and cost reduction.",
+      "type": "multiple_choice",
+      "options": [
+        "Azure Advisor",
+        "Azure Monitor",
+        "Azure Security Center",
+        "Azure TCO Calculator"
+      ],
+      "question": "An IT manager wants a single tool that provides recommendations on how to reduce cloud spending and improve the security posture of their Azure environment. What should they use?",
+      "correctAnswer": 0,
+      "id": "mf-mc-0095"
+    },
+    {
+      "question": "According to the Shared Responsibility Model, which task remains the responsibility of the customer even when using a Software as a Service (SaaS) solution?",
+      "correctAnswer": 1,
+      "explanation": "Identity protection remains a critical shared responsibility where the customer must manage accounts and authentication security.",
+      "options": [
+        "The physical security of data centres",
+        "Protecting the identity of users",
+        "Patching the underlying hardware host",
+        "Maintaining the network cabling"
+      ],
+      "type": "multiple_choice",
+      "id": "mf-mc-0096"
+    },
+    {
+      "question": "Which cloud deployment model is characterised by multi-tenant environments where resources are shared between different organisations and managed by a third-party provider?",
+      "type": "multiple_choice",
+      "explanation": "In a Public Cloud, all hardware, software, and other supporting infrastructure are owned and managed by the cloud provider.",
+      "correctAnswer": 1,
+      "options": [
+        "Private Cloud",
+        "Public Cloud",
+        "Hybrid Cloud",
+        "On-premises storage"
+      ],
+      "id": "mf-mc-0097"
+    },
+    {
+      "question": "A UK start-up chooses to use a cloud subscription instead of buying physical servers to avoid large upfront costs. Which financial model does this represent?",
+      "type": "multiple_choice",
+      "explanation": "Operational Expenditure (OpEx) refers to day-to-day costs, such as cloud subscriptions, where you pay as you go.",
+      "options": [
+        "Operational Expenditure (OpEx)",
+        "Capital Expenditure (CapEx)",
+        "Fixed Assets expenditure",
+        "Legacy investment model"
+      ],
+      "correctAnswer": 0,
+      "id": "mf-mc-0098"
+    },
+    {
+      "explanation": "Scalability refers to the ability to increase or decrease resources to handle changes in demand or workload.",
+      "options": [
+        "High Availability",
+        "Fault Tolerance",
+        "Scalability",
+        "Disaster Recovery"
+      ],
+      "correctAnswer": 2,
+      "question": "Which cloud concept describes the ability to increase or decrease the capacity of a service to meet changing demand?",
+      "type": "multiple_choice",
+      "id": "mf-mc-0099"
+    },
+    {
+      "options": [
+        "Microsoft 365 Admin Center",
+        "Microsoft Entra ID Premium P2",
+        "Microsoft Purview compliance portal",
+        "Microsoft 365 Lighthouse"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Microsoft 365 Lighthouse is specifically designed for MSPs to manage their small-to-medium business customers at scale.",
+      "type": "multiple_choice",
+      "question": "A Managed Service Provider (MSP) needs to manage security and devices for multiple small business customers in a single portal. Which tool should they use?",
+      "id": "mf-mc-0100"
+    },
+    {
+      "explanation": "In an IaaS model, the customer is responsible for maintaining the operating system, including security patches and updates.",
+      "options": [
+        "Cloud Provider (Microsoft)",
+        "The Customer",
+        "Hardware Manufacturer",
+        "The Internet Service Provider (ISP)"
+      ],
+      "correctAnswer": 1,
+      "question": "According to the Shared Responsibility Model, who is responsible for patching the guest operating system on an Azure Virtual Machine (IaaS)?",
+      "type": "multiple_choice",
+      "id": "mf-mc-0101"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which security principle operates on the assumption that every request is a potential breach and must be verified as if it originated from an open network?",
+      "correctAnswer": 0,
+      "options": [
+        "Zero Trust",
+        "Defence in Depth突破",
+        "Conditional Access policy",
+        "Role-Based Access Control (RBAC)"
+      ],
+      "explanation": "Zero Trust is a security model that requires every access request to be fully authenticated, authorised, and encrypted regardless of origin.",
+      "id": "mf-mc-0102"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which document describes the specific terms regarding the uptime and connectivity guarantees for Microsoft cloud services?",
+      "options": [
+        "Microsoft Privacy Statement",
+        "Online Services Terms (OST)",
+        "Service Level Agreement (SLA)",
+        "Subscription Lifecycle Policy"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The Service Level Agreement (SLA) outlines Microsoft's commitment to service uptime and the remedies available if those standards are not met.",
+      "id": "mf-mc-0103"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "A London-based employee loses their work smartphone. Which Microsoft 365 service allows the IT team to remotely wipe the company data from the device?",
+      "options": [
+        "Microsoft Entra ID",
+        "Microsoft Intune",
+        "Microsoft Defender for Office 365",
+        "Azure Information Protection"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Microsoft Endpoint Manager (Intune) provides the tools necessary to remotely wipe corporate data from lost or stolen mobile devices.",
+      "id": "mf-mc-0104"
+    },
+    {
+      "correctAnswer": 3,
+      "options": [
+        "Power BI",
+        "SharePoint Online",
+        "Microsoft Teams Premium",
+        "Microsoft Viva"
+      ],
+      "explanation": "Microsoft Viva is an employee experience platform that focuses on communication, knowledge, learning, and well-being.",
+      "type": "multiple_choice",
+      "question": "Which platform within Microsoft 365 is designed to improve employee experience, culture, and well-being through apps like Insights and Learning?",
+      "id": "mf-mc-0105"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which feature of Microsoft Entra ID provides 'just-in-time' (JIT) administrative access to reduce the risk of excessive permissions?",
+      "options": [
+        "Privileged Identity Management (PIM)",
+        "Multi-Factor Authentication (MFA)",
+        "Single Sign-On (SSO)",
+        "Security Defaults"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Privileged Identity Management (PIM) provides 'just-in-time' access to increase security by limiting the duration of administrative permissions.",
+      "id": "mf-mc-0106"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "At what stage of the Microsoft service lifecycle is a feature considered fully supported and ready for production use by all customers?",
+      "correctAnswer": 2,
+      "options": [
+        "Private Preview",
+        "Public Preview",
+        "General Availability (GA)",
+        "Retired phase"
+      ],
+      "explanation": "In the General Availability (GA) phase, services are fully supported, covered by SLAs, and ready for production use by all customers.",
+      "id": "mf-mc-0107"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which term refers to the physical location (such as the UK North region) where data is stored within the Microsoft cloud?",
+      "options": [
+        "Data Sovereignty",
+        "Data Residency",
+        "Data Governance",
+        "Data Privacy"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Data Residency refers to the physical or geographic location where an organisation's data is stored and processed.",
+      "id": "mf-mc-0108"
+    },
+    {
+      "options": [
+        "Private Cloud",
+        "Public Cloud",
+        "Hybrid Cloud",
+        "Community Cloud"
+      ],
+      "explanation": "The Public Cloud provides the highest level of scalability and cost-efficiency as resources are shared across multiple tenants.",
+      "type": "multiple_choice",
+      "question": "A UK-based non-profit wants to move to the cloud to reduce infrastructure costs and allow for rapid scaling during donation drives. Which deployment model is most suitable?",
+      "correctAnswer": 1,
+      "id": "mf-mc-0109"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Information and data",
+        "Physical hardware security",
+        "Infrastructure maintenance",
+        "Virtualisation layer security"
+      ],
+      "explanation": "Under the Shared Responsibility Model, the customer is always responsible for protecting and managing their own data, regardless of the service type.",
+      "correctAnswer": 0,
+      "question": "When using a Platform as a Service (PaaS) solution, which of the following is always the responsibility of the customer?",
+      "id": "mf-mc-0110"
+    },
+    {
+      "correctAnswer": 2,
+      "question": "A company wants to ensure that its web application remains accessible if a single data centre in the UK South region experiences a power outage. Which concept does this describe?",
+      "type": "multiple_choice",
+      "explanation": "High Availability ensures that services remain operational with minimal downtime, even if a component or server fails.",
+      "options": [
+        "Scalability",
+        "Agility",
+        "High Availability",
+        "Elasticity"
+      ],
+      "id": "mf-mc-0111"
+    },
+    {
+      "options": [
+        "Microsoft 365 E5",
+        "Microsoft 365 Business Premium",
+        "Microsoft 365 E3",
+        "Microsoft 365 F3"
+      ],
+      "explanation": "Microsoft 365 F3 is specifically designed for 'firstline' or frontline workers who often do not have a dedicated desk or PC.",
+      "type": "multiple_choice",
+      "question": "Which Microsoft 365 subscription plan is most cost-effective for 'frontline workers' who only need access to mobile apps and basic web services?",
+      "correctAnswer": 3,
+      "id": "mf-mc-0112"
+    },
+    {
+      "explanation": "Conditional Access evaluates signals like location, device health, and user risk to decide whether to allow, block, or require MFA for a login.",
+      "options": [
+        "Conditional Access",
+        "Azure Blueprints",
+        "Resource Groups",
+        "Single Sign-On (SSO)"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "question": "An organisation wants to block all login attempts to its Microsoft 365 tenant if the request originates from outside the UK. Which feature should they use?",
+      "id": "mf-mc-0113"
+    },
+    {
+      "question": "Which tool provides a 'compliance score' and actionable recommendations to help a company meet UK GDPR requirements?",
+      "correctAnswer": 1,
+      "explanation": "Compliance Manager provides a dashboard and score to help organisations track their progress in meeting regulatory and industry standards.",
+      "options": [
+        "Azure Policy",
+        "Compliance Manager",
+        "Microsoft Defender for Identity",
+        "Privileged Identity Management (PIM)"
+      ],
+      "type": "multiple_choice",
+      "id": "mf-mc-0114"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Data Loss Prevention (DLP)",
+        "Retention policies",
+        "Sensitivity labels",
+        "eDiscovery"
+      ],
+      "explanation": "Sensitivity labels are used to classify and protect data; they can trigger encryption or watermarking based on the label applied.",
+      "correctAnswer": 2,
+      "question": "A law firm needs to ensure that any document marked as 'Highly Confidential' is automatically encrypted. Which Microsoft Purview feature should they use?",
+      "id": "mf-mc-0115"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Azure Pricing Calculator",
+        "Azure Cost Management",
+        "Total Cost of Ownership (TCO) Calculator",
+        "Budgets and Alerts"
+      ],
+      "explanation": "Total Cost of Ownership (TCO) calculators are used to compare the costs of keeping workloads on-premises versus migrating them to the cloud.",
+      "question": "A finance director wants to estimate the potential cost savings of moving their on-premises server room to Azure over a 5-year period. Which tool should they use?",
+      "correctAnswer": 2,
+      "id": "mf-mc-0116"
+    },
+    {
+      "correctAnswer": 0,
+      "question": "Which service is used to manage and secure mobile devices, laptops, and the applications that run on them across a corporate fleet?",
+      "type": "multiple_choice",
+      "explanation": "Microsoft Intune is the primary cloud-based service for Mobile Device Management (MDM) and Mobile Application Management (MAM).",
+      "options": [
+        "Microsoft Intune",
+        "Azure Bastion",
+        "Microsoft Entra ID",
+        "Microsoft Defender for Cloud"
+      ],
+      "id": "mf-mc-0117"
+    },
+    {
+      "question": "What are the physically separate locations within an Azure region that have their own power, cooling, and networking called?",
+      "correctAnswer": 2,
+      "options": [
+        "Resource Groups Availability",
+        "Management Groups",
+        "Availability Zones",
+        "Paired Regions"
+      ],
+      "explanation": "Availability Zones are physically separate data centres within an Azure region, providing protection against data centre failures.",
+      "type": "multiple_choice",
+      "id": "mf-mc-0118"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "Microsoft Viva is the specific platform focused on employee engagement, learning, and integration within the workflow of Teams.",
+      "options": [
+        "Microsoft SharePoint Online",
+        "Microsoft Viva",
+        "Microsoft Planner",
+        "Microsoft Yammer (Viva Engage)"
+      ],
+      "correctAnswer": 1,
+      "question": "Which product is designed as an 'employee experience platform' to help staff find company news, learning resources, and wellness insights within Microsoft Teams?",
+      "id": "mf-mc-0119"
+    },
+    {
+      "options": [
+        "Private Preview",
+        "General Availability (GA)",
+        "Release Candidate",
+        "Public Preview"
+      ],
+      "explanation": "Public Preview is the phase where all customers can test a feature, but it is not yet recommended for production use and may have limited support.",
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "question": "In the Microsoft service lifecycle, what is the name for a phase where a service is available to all customers for evaluation but is not yet meant for production workloads?",
+      "id": "mf-mc-0120"
+    },
+    {
+      "correctAnswer": 1,
+      "explanation": "In a SaaS model, the provider manages the underlying infrastructure, OS, and software, leaving only data and access to the user.",
+      "question": "A UK retailer uses Microsoft Outlook on the web to manage staff emails. Which cloud computing model does this represent?",
+      "type": "multiple_choice",
+      "options": [
+        "Infrastructure as a Service (IaaS)",
+        "Software as a Service (SaaS)",
+        "Platform as a Service (PaaS)",
+        "On-premises deployment"
+      ],
+      "id": "mf-mc-0121"
+    },
+    {
+      "options": [
+        "Economy of Scale",
+        "Capital Expenditure (CapEx)",
+        "Vertical Scaling",
+        "High Availability"
+      ],
+      "explanation": "The Economy of Scale refers to the ability to operate more efficiently and cheaply when operating at a large scale, which providers pass on to customers.",
+      "correctAnswer": 0,
+      "question": "Which cloud concept allows Microsoft to offer lower resource costs to customers by purchasing hardware in massive volumes?",
+      "type": "multiple_choice",
+      "id": "mf-mc-0122"
+    },
+    {
+      "question": "To ensure a web application survives a data centre power failure in the UK South region, which feature should you use?",
+      "type": "multiple_choice",
+      "explanation": "Availability Zones are physically separate locations within an Azure region, providing protection against data centre failures.",
+      "correctAnswer": 2,
+      "options": [
+        "Resource Groups快速",
+        "Azure Regions",
+        "Availability Zones快速",
+        "Management Groups快速"
+      ],
+      "id": "mf-mc-0123"
+    },
+    {
+      "options": [
+        "The customer has total control over the physical hardware.",
+        "It is typically the most expensive option for small businesses.",
+        "It requires significant Capital Expenditure (CapEx).",
+        "It offers high scalability and rapid deployment."
+      ],
+      "question": "What is a primary advantage of using a public cloud like Microsoft Azure compared to an on-premises data centre?",
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "explanation": "Public cloud providers like Azure offer high scalability and agility without the requirement for large upfront hardware purchases.",
+      "id": "mf-mc-0124"
+    },
+    {
+      "options": [
+        "Azure Service Health",
+        "Microsoft Trust Center",
+        "Compliance Manager",
+        "Azure Advisor"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The Trust Center provides comprehensive information about Microsoft's security, privacy, and compliance practices.",
+      "question": "Which resource provides a one-stop-shop for information on how Microsoft protects your data and complies with UK GDPR?",
+      "type": "multiple_choice",
+      "id": "mf-mc-0125"
+    },
+    {
+      "correctAnswer": 0,
+      "explanation": "In any cloud model (IaaS, PaaS, or SaaS), the customer is always responsible for the security and management of their own data.",
+      "question": "Under the Microsoft Shared Responsibility Model, who is responsible for the security of data stored in the cloud?",
+      "type": "multiple_choice",
+      "options": [
+        "The customer",
+        "Microsoft",
+        "The Internet Service Provider (ISP)",
+        "The Hardware Manufacturer"
+      ],
+      "id": "mf-mc-0126"
+    },
+    {
+      "correctAnswer": 3,
+      "explanation": "Azure Policy allows organisations to enforce rules, such as restricting which geographical regions resources can be deployed in.",
+      "question": "A UK government agency needs to ensure that IT staff can only create resources within the UK West or UK South regions. Which tool should they use?",
+      "type": "multiple_choice",
+      "options": [
+        "Azure Blueprints快速",
+        "Azure Monitor",
+        "Azure Information Protection",
+        "Azure Policy快速"
+      ],
+      "id": "mf-mc-0127"
+    },
+    {
+      "correctAnswer": 2,
+      "explanation": "Total Cost of Ownership (TCO) calculators help compare the long-term costs of on-premises vs cloud environments.",
+      "question": "Which tool helps a company calculate the potential cost savings over five years by migrating its on-premises workloads to Azure?",
+      "type": "multiple_choice",
+      "options": [
+        "Azure Pricing Calculator",
+        "Azure Advisor",
+        "Total Cost of Ownership (TCO) Calculator",
+        "Azure Cost Management"
+      ],
+      "id": "mf-mc-0128"
+    },
+    {
+      "options": [
+        "Multi-Factor Authentication (MFA)",
+        "Conditional Access快速",
+        "Privileged Identity Management (PIM)",
+        "Role-Based Access Control (RBAC)"
+      ],
+      "question": "Which Microsoft Entra ID feature allows you to grant access based on specific signals, such as the user's IP address or device state?",
+      "type": "multiple_choice",
+      "explanation": "Conditional Access allows administrators to set specific criteria (like location or device health) for granting access to apps.",
+      "correctAnswer": 1,
+      "id": "mf-mc-0129"
+    },
+    {
+      "question": "Which Microsoft 365 feature can automatically apply a 'Confidential' watermark to all documents containing sensitive financial data?",
+      "type": "multiple_choice",
+      "explanation": "Sensitivity labels are used to classify and protect data by adding watermarks or encryption based on the content's importance.",
+      "correctAnswer": 0,
+      "options": [
+        "Sensitivity labels快速",
+        "Retention policies",
+        "Data loss prevention (DLP)",
+        "Resource tags快速"
+      ],
+      "id": "mf-mc-0130"
+    },
+    {
+      "explanation": "Public Preview allows all customers to test a feature and provide feedback before it becomes generally available.",
+      "correctAnswer": 2,
+      "question": "What is the name of the phase where a new Microsoft 365 feature is released to all customers for testing purposes before it is fully supported?",
+      "type": "multiple_choice",
+      "options": [
+        "Private Preview",
+        "General Availability (GA)",
+        "Public Preview快速",
+        "Alpha Testing快速"
+      ],
+      "id": "mf-mc-0131"
+    },
+    {
+      "question": "A Manchester-based startup wants to find out if they are overspending on unused Azure virtual machines. Which tool provides these recommendations?",
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "explanation": "Azure Advisor provides proactive, personalised recommendations to improve security, performance, and cost-effectiveness.",
+      "options": [
+        "Azure Advisor快速",
+        "Azure Service Health",
+        "Azure Monitor",
+        "Microsoft Defender for Cloud快速"
+      ],
+      "id": "mf-mc-0132"
+    },
+    {
+      "correctAnswer": 1,
+      "question": "A company plans to migrate a predictable, steady-state workload to Azure. Which option provides significant cost savings for long-term resource commitment?",
+      "options": [
+        "Spend limits",
+        "Azure Reserved Instances",
+        "Azure Policy tags",
+        "Management Groups"
+      ],
+      "explanation": "Azure Reserved Instances allow you to commit to one or three years of resource usage in exchange for significant discounts compared to pay-as-you-go pricing.",
+      "type": "multiple_choice",
+      "id": "mf-mc-0133"
+    },
+    {
+      "correctAnswer": 0,
+      "explanation": "PaaS allows developers to focus on building and deploying applications while Microsoft manages the underlying hardware, operating systems, and middleware.",
+      "options": [
+        "Platform as a Service (PaaS)",
+        "Infrastructure as a Service (IaaS)",
+        "Software as a Service (Sass)",
+        "On-premises data centre"
+      ],
+      "question": "Which cloud service model is most appropriate for a developer who wants to build a web application without managing the underlying operating system or server hardware?",
+      "type": "multiple_choice",
+      "id": "mf-mc-0134"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which Azure service provides a managed, cloud-based network security service that protects your virtual network resources?",
+      "options": [
+        "Azure Monitor",
+        "Azure Blueprints",
+        "Azure Firewall",
+        "Azure Load Balancer"
+      ],
+      "explanation": "Azure Firewall is a managed, cloud-based network security service that protects your Azure Virtual Network resources by filtering traffic.",
+      "correctAnswer": 2,
+      "id": "mf-mc-0135"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which security concept is based on the principle of 'never trust, always verify' regardless of whether a request originates from inside or outside the network?",
+      "options": [
+        "Multi-Factor Authentication (MFA) only",
+        "Perimeter-based security",
+        "Hybrid Cloud management",
+        "Zero Trust model"
+      ],
+      "explanation": "Zero Trust assumes everything is an open network and verifies every access request based on the principles of explicit verification, least privilege, and assuming breach.",
+      "correctAnswer": 3,
+      "id": "mf-mc-0136"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "explanation": "Microsoft Purview Information Protection (formerly MIP) allows you to discover, classify, and protect sensitive information across your enterprise.",
+      "options": [
+        "Microsoft Purview Information Protection",
+        "Microsoft Defender for Endpoint",
+        "Microsoft Entra ID Protection",
+        "Microsoft Viva Insights"
+      ],
+      "question": "A legal firm needs to classify and protect sensitive documents by applying labels that restrict how the data can be shared. Which service should they use?",
+      "id": "mf-mc-0137"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "explanation": "CapEx relates to upfront spending on physical infrastructure, while OpEx (Operating Expenditure) is the ongoing cost for using services like the cloud.",
+      "question": "Which term refers to the upfront spending of money on physical infrastructure, such as buying servers and storage for an on-premises data centre?",
+      "options": [
+        "Operational Expenditure (OpEx)",
+        "Capital Expenditure (CapEx)",
+        "Variable Expenditure",
+        "Consumption-based Expenditure"
+      ],
+      "id": "mf-mc-0138"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "explanation": "Azure Resource Groups serve as a logical container for related resources, allowing you to manage, monitor, and apply access control to them as a single entity.",
+      "question": "You need to organise Azure resources so that you can manage them as a single entity for a specific marketing campaign. Which logical container should you use?",
+      "options": [
+        "Management Groups",
+        "Azure Regions",
+        "Resource Groups",
+        "Availability Zones"
+      ],
+      "id": "mf-mc-0139"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "explanation": "Vertical scaling (scaling up) involves adding more power (CPU, RAM) to an existing resource, whereas horizontal scaling (scaling out) adds more instances.",
+      "question": "If a company increases the RAM and CPU of an existing virtual machine to handle a heavier workload, what type of scaling are they using?",
+      "options": [
+        "Horizontal scaling",
+        "Vertical scaling",
+        "Elasticity",
+        "High Availability"
+      ],
+      "id": "mf-mc-0140"
+    },
+    {
+      "explanation": "Microsoft 365 Lighthouse is specifically designed for MSPs to manage their small and medium-sized business customers at scale.",
+      "question": "Which tool is designed for Managed Service Providers (MSPs) to manage security and devices for multiple Microsoft 365 customers from a single dashboard?",
+      "options": [
+        "Microsoft Admin Center on-premises",
+        "Azure Lighthouse",
+        "Microsoft Defender for Cloud",
+        "Microsoft 365 Lighthouse"
+      ],
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "id": "mf-mc-0141"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "question": "When a Microsoft service is fully released to all customers and is supported by a Service Level Agreement (SLA), what lifecycle stage is it in?",
+      "options": [
+        "General Availability (GA)",
+        "Private Preview",
+        "Public Preview",
+        "Beta Phase"
+      ],
+      "explanation": "General Availability (GA) is the final stage where a service is fully supported, covered by SLAs, and ready for production use by all customers.",
+      "id": "mf-mc-0142"
+    },
+    {
+      "correctAnswer": 2,
+      "explanation": "Microsoft Intune is a cloud-based service that focuses on mobile device management (MDM) and mobile application management (MAM).",
+      "options": [
+        "Azure Active Directory Connect",
+        "Microsoft Defender for Identity",
+        "Microsoft Intune",
+        "Power Automate Desktop"
+      ],
+      "question": "A university needs to wipe all data from a student's tablet if it is reported stolen. Which Microsoft 365 service provides this remote wipe capability?",
+      "type": "multiple_choice",
+      "id": "mf-mc-0143"
+    },
+    {
+      "correctAnswer": 1,
+      "explanation": "In a SaaS model (like Microsoft 365), the provider handles almost everything except the customer's data, devices, and user accounts.",
+      "options": [
+        "Operating System updates",
+        "Data and identity management",
+        "Physical server maintenance",
+        "Network hardware configuration"
+      ],
+      "question": "Under the Microsoft Shared Responsibility Model, which task remains the responsibility of the customer even when using a Software as a Service (SaaS) product?",
+      "type": "multiple_choice",
+      "id": "mf-mc-0144"
+    }
+  ],
+  "mocks": []
+}

@@ -1563,6 +1563,2346 @@
       "question": "What is a workaround in the context of problem management?",
       "explanation": "Workarounds are temporary fixes used when a full resolution is not yet available, reducing the impact of the problem or incident.",
       "id": "i4-mc-0120"
+    },
+    {
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "explanation": "The 'information and technology' dimension includes the information and knowledge necessary for the management of services, as well as the technologies required.",
+      "options": [
+        "Organisations and people",
+        "Partners and suppliers",
+        "Information and technology",
+        "Value streams and processes"
+      ],
+      "question": "Which dimension of service management concerns the knowledge and information needed to deliver services, as well as the protection of information assets?",
+      "id": "i4-mc-0121"
+    },
+    {
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "explanation": "A service consumer is a generic role that can include customers (who define requirements), users (who use the service), and sponsors (who authorise budgets).",
+      "options": [
+        "Customer, user and sponsor",
+        "Service provider, supplier and customer",
+        "User, owner and stakeholder",
+        "Sponsor, partner and supplier"
+      ],
+      "question": "Which three roles are considered generic types of service consumers?",
+      "id": "i4-mc-0122"
+    },
+    {
+      "question": "Which ITIL guiding principle suggests that work should be broken down into manageable sections that can be executed and completed in a timely manner?",
+      "options": [
+        "Start where you are",
+        "Progress iteratively with feedback",
+        "Collaborate and promote visibility",
+        "Keep it simple and practical"
+      ],
+      "type": "multiple_choice",
+      "explanation": "The guiding principle 'Progress iteratively with feedback' recommends breaking work into smaller components that can be executed and managed more easily.",
+      "correctAnswer": 1,
+      "id": "i4-mc-0123"
+    },
+    {
+      "correctAnswer": 3,
+      "question": "How does ITIL 4 define a 'known error'?",
+      "options": [
+        "A change that has been implemented successfully",
+        "An incident that has been resolved by the service desk",
+        "A risk that has been identified but not yet assessed",
+        "A problem that has been analysed and has not yet been resolved"
+      ],
+      "explanation": "A known error is a problem that has been analysed but has not yet been resolved, often having an associated workaround.",
+      "type": "multiple_choice",
+      "id": "i4-mc-0124"
+    },
+    {
+      "question": "Which practice's purpose is to systematically observe services and service components, and record and report selected changes of state?",
+      "options": [
+        "Monitoring and event management",
+        "Incident management",
+        "Service level management",
+        "Change enablement"
+      ],
+      "explanation": "Monitoring and event management is the practice that systematically observes services and service components to record and report selected changes of state.",
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "id": "i4-mc-0125"
+    },
+    {
+      "options": [
+        "Normal change",
+        "Emergency change",
+        "Standard change",
+        "Urgent change"
+      ],
+      "question": "Which type of change is considered low-risk, pre-authorised, and follows a well-established procedure?",
+      "type": "multiple_choice",
+      "explanation": "Standard changes are low-risk, pre-authorised, and frequently performed, meaning they do not require a new assessment each time.",
+      "correctAnswer": 2,
+      "id": "i4-mc-0126"
+    },
+    {
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "explanation": "The 'improve' activity of the service value chain ensures the continual improvement of products, services, and practices across all value chain activities.",
+      "options": [
+        "Plan",
+        "Improve",
+        "Engage",
+        "Deliver and support"
+      ],
+      "question": "Which service value chain activity focuses on ensuring that services meet stakeholder expectations for quality, efficiency, and cost?",
+      "id": "i4-mc-0127"
+    },
+    {
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "explanation": "A configuration item (CI) is any component that needs to be managed in order to deliver an IT service.",
+      "options": [
+        "An incident that hasn't been resolved",
+        "A service level agreement document",
+        "The cost of providing a service",
+        "Any component that needs to be managed in order to deliver an IT service"
+      ],
+      "question": "What is the definition of a configuration item (CI)?",
+      "id": "i4-mc-0128"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "The 'Keep it simple and practical' principle warns that if a process or resource does not provide value or produce a useful outcome, it should be eliminated.",
+      "question": "Which guiding principle suggests that if a process, service, action, or resource fails to provide value or produce a useful outcome, it should be eliminated?",
+      "options": [
+        "Focus on value",
+        "Start where you are",
+        "Keep it simple and practical",
+        "Think and work holistically"
+      ],
+      "correctAnswer": 2,
+      "id": "i4-mc-0129"
+    },
+    {
+      "correctAnswer": 0,
+      "explanation": "The 'Engage' activity provides a good understanding of stakeholder needs, transparency, and fosters good relationships with all stakeholders.",
+      "type": "multiple_choice",
+      "options": [
+        "Engage",
+        "Plan",
+        "Design and transition",
+        "Obtain/build"
+      ],
+      "question": "Which service value chain activity has the purpose of providing a good understanding of stakeholder needs and fostering good relationships?",
+      "id": "i4-mc-0130"
+    },
+    {
+      "correctAnswer": 1,
+      "explanation": "The 'Focus on value' principle requires that all activities should link back, directly or indirectly, to value for the service consumer and other stakeholders.",
+      "type": "multiple_choice",
+      "options": [
+        "Collaborate and promote visibility",
+        "Focus on value",
+        "Keep it simple and practical",
+        "Progress iteratively with feedback"
+      ],
+      "question": "Which guiding principle is primarily concerned with understanding who the service consumer is and what they perceive as valuable?",
+      "id": "i4-mc-0131"
+    },
+    {
+      "correctAnswer": 3,
+      "options": [
+        "Incident management",
+        "Problem management",
+        "Change enablement",
+        "Service request management"
+      ],
+      "question": "Which practice handles the fulfillment of pre-defined, user-initiated requests for service actions?",
+      "explanation": "The service request management practice handles pre-defined, user-initiated service actions, such as requesting information or access to a resource.",
+      "type": "multiple_choice",
+      "id": "i4-mc-0132"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "A set of specialized organisational capabilities for enabling value to customers.",
+        "A tangible product that is delivered to a customer to meet their specific needs.",
+        "A means of enabling value co-creation by facilitating outcomes that customers want to achieve.",
+        "The formal agreement between a service provider and a customer regarding service levels."
+      ],
+      "correctAnswer": 2,
+      "explanation": "A service is a means of enabling value co-creation by facilitating outcomes that customers want to achieve, without the customer having to manage specific costs and risks.",
+      "question": "How does ITIL 4 define a 'service'?",
+      "id": "i4-mc-0133"
+    },
+    {
+      "question": "What is the primary purpose of the 'plan' service value chain activity?",
+      "explanation": "The purpose of the 'plan' activity is to ensure a shared understanding of the vision, current status, and improvement direction for all four dimensions and all products and services.",
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "options": [
+        "To ensure a shared understanding of the vision and improvement direction for all four dimensions.",
+        "To provide a good understanding of stakeholder needs and transparency.",
+        "To ensure that service components are available when and where they are needed.",
+        "To make new and changed services and features available for use."
+      ],
+      "id": "i4-mc-0134"
+    },
+    {
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "options": [
+        "Service value chain",
+        "Continual improvement",
+        "Practices",
+        "Governance"
+      ],
+      "question": "Which component of the ITIL service value system provides the means by which an organisation is directed and controlled?",
+      "explanation": "Governance is the means by which an organisation is directed and controlled; it is one of the five components of the ITIL service value system.",
+      "id": "i4-mc-0135"
+    },
+    {
+      "explanation": "The 'Focus on value' principle requires that all activities conducted by the organisation should link back, directly or indirectly, to value for itself and its stakeholders.",
+      "question": "Which guiding principle stresses that everything the organisation does should link back, directly or indirectly, to value?",
+      "type": "multiple_choice",
+      "options": [
+        "Start where you are",
+        "Focus on value",
+        "Keep it simple and practical",
+        "Think and work holistically"
+      ],
+      "correctAnswer": 1,
+      "id": "i4-mc-0136"
+    },
+    {
+      "explanation": "Warranty is the assurance that a product or service will meet agreed requirements, often described as 'how the service performs' regarding availability, capacity, and security.",
+      "question": "Which term refers to the assurance that a product or service will meet agreed requirements?",
+      "type": "multiple_choice",
+      "options": [
+        "Warranty",
+        "Utility",
+        "Value",
+        "Service level management"
+      ],
+      "correctAnswer": 0,
+      "id": "i4-mc-0137"
+    },
+    {
+      "question": "Which dimension of service management includes the use of tools such as inventory management systems and communication technology?",
+      "explanation": "Configuration Management Systems (CMS) are part of the 'Information and technology' dimension, which includes the knowledge, tools, and data needed for service management.",
+      "correctAnswer": 2,
+      "options": [
+        "Organisations and people",
+        "Partners and suppliers",
+        "Information and technology",
+        "Value streams and processes"
+      ],
+      "type": "multiple_choice",
+      "id": "i4-mc-0138"
+    },
+    {
+      "explanation": "The purpose of 'service desk' is to provide a point of communication, but 'service level management' specifically sets clear business-based targets for service levels.",
+      "question": "Which practice has the purpose of setting clear business-based targets for service levels?",
+      "type": "multiple_choice",
+      "options": [
+        "Service request management",
+        "Incident management",
+        "Change enablement",
+        "Service level management"
+      ],
+      "correctAnswer": 3,
+      "id": "i4-mc-0139"
+    },
+    {
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "options": [
+        "Value",
+        "Demand",
+        "Outcomes",
+        "Products"
+      ],
+      "question": "In the service value system, what term is used to describe the internal and external input that triggers activity within the value chain?",
+      "explanation": "Inputs to the service value chain, such as customer requirements or new technology opportunities, are categorised as 'demand'.",
+      "id": "i4-mc-0140"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Start where you are",
+        "Collaborate and promote visibility",
+        "Optimise and automate",
+        "Keep it simple and practical"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The 'Start where you are' principle advises against starting over without first considering what is already available to be reused or leveraged.",
+      "question": "Which guiding principle warns that 'nothing should be built from scratch without considering what is already available'?",
+      "id": "i4-mc-0141"
+    },
+    {
+      "explanation": "An incident is an unplanned interruption to a service or reduction in the quality of a service.",
+      "question": "What is the definition of an 'incident' in ITIL 4?",
+      "options": [
+        "A cause of one or more incidents.",
+        "An unplanned interruption to a service or reduction in the quality of a service.",
+        "A change of state that has significance for the management of a service.",
+        "An addition or modification that could have an effect on services."
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "id": "i4-mc-0142"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Engage",
+        "Deliver and support",
+        "Design and transition",
+        "Obtain/build"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The 'Design and transition' activity ensures that products and services continually meet stakeholder expectations for quality, costs, and time to market.",
+      "question": "Which service value chain activity involves creating new or changed services and ensuring they meet stakeholder expectations?",
+      "id": "i4-mc-0143"
+    },
+    {
+      "correctAnswer": 0,
+      "options": [
+        "Continual Improvement Register (CIR)",
+        "Service Level Agreement (SLA)",
+        "Change Schedule",
+        "Configuration Management Database (CMDB)"
+      ],
+      "type": "multiple_choice",
+      "question": "What is the name of the tool used to track and manage improvement ideas from identification to final action?",
+      "explanation": "The 'Continual Improvement Register' (CIR) is a database or structured document used to track and manage improvement ideas from identification through to final action.",
+      "id": "i4-mc-0144"
+    },
+    {
+      "explanation": "The 'change enablement' practice ensures that risks are properly assessed, authorising changes to proceed, and managing the change schedule.",
+      "correctAnswer": 2,
+      "options": [
+        "Incident management",
+        "Service desk",
+        "Change enablement",
+        "Service level management"
+      ],
+      "type": "multiple_choice",
+      "question": "Which practice has the purpose of maximising the number of successful IT changes by ensuring that risks are properly assessed?",
+      "id": "i4-mc-0145"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which component of the service value system (SVS) ensures that the organisation is continually aligned with its stakeholders' objectives?",
+      "correctAnswer": 0,
+      "options": [
+        "Governance",
+        "The service value chain",
+        "Practices",
+        "Continual improvement"
+      ],
+      "explanation": "Governance is the system by which an organisation is directed and controlled, ensuring that the SVS aligns with the organisation's strategy.",
+      "id": "i4-mc-0146"
+    },
+    {
+      "question": "Which of the four dimensions of service management considers the security and compliance requirements of the organisation's data?",
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "options": [
+        "Service level management",
+        "Value streams and processes",
+        "Partners and suppliers",
+        "Information and technology"
+      ],
+      "explanation": "Information and technology, along with organisations and people, partners and suppliers, and value streams and processes, form the four dimensions.",
+      "id": "i4-mc-0147"
+    },
+    {
+      "explanation": "The 'design and transition' activity ensures that products and services continually meet stakeholder expectations for quality, costs, and time to market.",
+      "correctAnswer": 1,
+      "options": [
+        "Engage",
+        "Design and transition",
+        "Deliver and support",
+        "Obtain/build"
+      ],
+      "type": "multiple_choice",
+      "question": "Which service value chain activity involves ensuring that services meet stakeholder expectations for quality and costs?",
+      "id": "i4-mc-0148"
+    },
+    {
+      "correctAnswer": 0,
+      "options": [
+        "Workaround",
+        "Standard change",
+        "Service request",
+        "Emergency change"
+      ],
+      "question": "What term is used to describe a solution that reduces or eliminates the impact of an incident for which a full resolution is not yet available?",
+      "type": "multiple_choice",
+      "explanation": "A 'workaround' is a solution that reduces or eliminates the impact of an incident or problem for which a full resolution is not yet available.",
+      "id": "i4-mc-0149"
+    },
+    {
+      "question": "Which guiding principle recommends that organisations avoid working in silos and instead share information and agendas?",
+      "type": "multiple_choice",
+      "options": [
+        "Focus on value",
+        "Start where you are",
+        "Collaborate and promote visibility",
+        "Keep it simple and practical"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The 'collaborate and promote visibility' principle emphasises that work and its results should be made visible across the organisation.",
+      "id": "i4-mc-0150"
+    },
+    {
+      "question": "Which practice provides a communication point for users to report issues, ask questions, and request help?",
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "options": [
+        "Relationship management",
+        "Service desk",
+        "Incident management",
+        "Service configuration management"
+      ],
+      "explanation": "The 'service desk' practice provides the entry point and single point of contact for the entire service provider organisation for all users.",
+      "id": "i4-mc-0151"
+    },
+    {
+      "explanation": "An 'output' is a tangible or intangible deliverable of an activity, such as a report or a software update.",
+      "correctAnswer": 3,
+      "options": [
+        "Outcome",
+        "Utility",
+        "Warranty",
+        "Output"
+      ],
+      "type": "multiple_choice",
+      "question": "What ITIL term describes a tangible or intangible deliverable of an activity?",
+      "id": "i4-mc-0152"
+    },
+    {
+      "options": [
+        "Continual improvement",
+        "Problem management",
+        "Service level management",
+        "Change enablement"
+      ],
+      "correctAnswer": 0,
+      "question": "Which practice's purpose is to align the organisation’s practices and services with changing business needs?",
+      "type": "multiple_choice",
+      "explanation": "The 'continual improvement' practice includes the development of improvement-related methods and techniques and the propagation of a culture of improvement.",
+      "id": "i4-mc-0153"
+    },
+    {
+      "explanation": "A 'problem' is defined specifically as the cause, or potential cause, of one or more incidents.",
+      "type": "multiple_choice",
+      "question": "What is the definition of a 'problem' in ITIL 4?",
+      "options": [
+        "An incident",
+        "A service request",
+        "A problem",
+        "A configuration item"
+      ],
+      "correctAnswer": 2,
+      "id": "i4-mc-0154"
+    },
+    {
+      "correctAnswer": 1,
+      "options": [
+        "Focus on value",
+        "Think and work holistically",
+        "Progress iteratively with feedback",
+        "Keep it simple and practical"
+      ],
+      "type": "multiple_choice",
+      "question": "Which guiding principle states that no service, practice, process, department, or supplier stands alone?",
+      "explanation": "The 'think and work holistically' principle suggests that no service or component stands alone; all parts must work together.",
+      "id": "i4-mc-0155"
+    },
+    {
+      "explanation": "Warranty is the assurance that a product or service will meet agreed requirements, often described as 'how the service performs'.",
+      "question": "Which term describes the assurance that a product or service will meet agreed requirements, often relating to availability and capacity?",
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "options": [
+        "Service level agreement",
+        "Utility",
+        "Value",
+        "Warranty"
+      ],
+      "id": "i4-mc-0156"
+    },
+    {
+      "question": "Which dimension of service management includes the management of workflow management systems and knowledge bases?",
+      "explanation": "The 'information and technology' dimension focuses on the information, knowledge, and technologies needed to manage services.",
+      "correctAnswer": 2,
+      "options": [
+        "Partners and suppliers",
+        "Value streams and processes",
+        "Information and technology",
+        "Organisations and people"
+      ],
+      "type": "multiple_choice",
+      "id": "i4-mc-0157"
+    },
+    {
+      "correctAnswer": 0,
+      "explanation": "Focus on value ensures that all activities link back, directly or indirectly, to value for stakeholders.",
+      "question": "Which guiding principle recommends that all activities within an organisation should be linked back to customer needs?",
+      "type": "multiple_choice",
+      "options": [
+        "Focus on value",
+        "Start where you are",
+        "Keep it simple and practical",
+        "Collaborate and promote visibility"
+      ],
+      "id": "i4-mc-0158"
+    },
+    {
+      "options": [
+        "Normal change",
+        "Emergency change",
+        "Urgent change",
+        "Standard change"
+      ],
+      "type": "multiple_choice",
+      "question": "What type of change is typically implemented following a pre-authorised procedure and involves low risk?",
+      "explanation": "Standard changes are low-risk, pre-authorised, and follow a well-established procedure.",
+      "correctAnswer": 3,
+      "id": "i4-mc-0159"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Service value chain",
+        "Governance",
+        "Practices",
+        "Continual improvement"
+      ],
+      "correctAnswer": 1,
+      "question": "Which component of the ITIL service value system provides the framework for directing and controlling the organisation?",
+      "explanation": "Governance is the means by which an organisation is directed and controlled.",
+      "id": "i4-mc-0160"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "An operating model for the creation, delivery, and ongoing improvement of services",
+        "A set of specialised organisational capabilities for enabling value for customers",
+        "The series of steps an organisation uses to create and deliver products and services to consumers",
+        "A description of the four dimensions of service management"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The central element of the SVS is the service value chain, an operating model which outlines the key activities required to respond to demand and facilitate value creation.",
+      "question": "What is the definition of the 'service value chain'?",
+      "id": "i4-mc-0161"
+    },
+    {
+      "options": [
+        "Plan",
+        "Improve",
+        "Deliver and support",
+        "Design and transition"
+      ],
+      "type": "multiple_choice",
+      "explanation": "The Deliver and Support activity involves ensuring that services are delivered and supported according to agreed specifications.",
+      "question": "Which service value chain activity ensures that services are delivered according to agreed specifications and stakeholders' expectations?",
+      "correctAnswer": 2,
+      "id": "i4-mc-0162"
+    },
+    {
+      "correctAnswer": 1,
+      "question": "A user wants to request access to a folder on a shared drive. Which practice is responsible for handling this?",
+      "explanation": "Service requests are managed through the service request management practice, which handles pre-defined, user-initiated actions.",
+      "type": "multiple_choice",
+      "options": [
+        "Incident management",
+        "Service request management",
+        "Service level management",
+        "Problem management"
+      ],
+      "id": "i4-mc-0163"
+    },
+    {
+      "correctAnswer": 3,
+      "explanation": "A service offering is a formal description of one or more services designed to address the needs of a target consumer group.",
+      "question": "What term describes a formal description of one or more services, designed to address the needs of a target consumer group?",
+      "type": "multiple_choice",
+      "options": [
+        "Service level agreement (SLA)",
+        "Service provision",
+        "Service consumption",
+        "Service offering"
+      ],
+      "id": "i4-mc-0164"
+    },
+    {
+      "options": [
+        "To record and report selected changes of state identified as events",
+        "To systematically observe services and service components, and record and report selected changes of state",
+        "To ensure that accurate and reliable information about the configuration of services is available",
+        "To minimise the negative impact of incidents by restoring normal service operation as quickly as possible"
+      ],
+      "type": "multiple_choice",
+      "question": "What is the purpose of the 'monitoring and event management' practice?",
+      "explanation": "The purpose of monitoring and event management is to systematically observe services and service components.",
+      "correctAnswer": 1,
+      "id": "i4-mc-0165"
+    },
+    {
+      "explanation": "Service relationship management includes the joint activities performed by a service provider and a service consumer to ensure continual value co-creation.",
+      "question": "Which term describes the joint activities performed by a service provider and a service consumer to ensure continual value co-creation?",
+      "correctAnswer": 0,
+      "options": [
+        "Service relationship management",
+        "Service provision",
+        "Service consumption",
+        "Service configuration management"
+      ],
+      "type": "multiple_choice",
+      "id": "i4-mc-0166"
+    },
+    {
+      "correctAnswer": 2,
+      "explanation": "The 'Optimise and automate' principle suggests that human intervention should only occur where it truly adds value and that resources of all types should be used to their best效能.",
+      "question": "Which guiding principle focuses on making something as effective and useful as it needs to be before using technology to perform the task?",
+      "type": "multiple_choice",
+      "options": [
+        "Collaborate and promote visibility",
+        "Keep it simple and practical",
+        "Optimise and automate",
+        "Think and work holistically"
+      ],
+      "id": "i4-mc-0167"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "IT asset management",
+        "Service request management",
+        "Service level management",
+        "Service configuration management"
+      ],
+      "correctAnswer": 3,
+      "question": "Which practice is responsible for providing information about how configuration items (CIs) are related and how they contribute to a service?",
+      "explanation": "Service configuration management ensures that accurate information about the configuration of services and the configuration items (CIs) that support them is available when and where it is needed.",
+      "id": "i4-mc-0168"
+    },
+    {
+      "explanation": "The service desk is the primary point of contact for users and provides a clear channel for users to report issues and seek help.",
+      "question": "Which ITIL practice acts as the entry point and single point of contact for the service provider with its users?",
+      "options": [
+        "The service level management practice",
+        "The incident management practice",
+        "The service desk practice",
+        "The change enablement practice"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "id": "i4-mc-0169"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "An outcome",
+        "An output",
+        "A utility",
+        "A warranty"
+      ],
+      "correctAnswer": 0,
+      "question": "What term is defined as 'a result for a stakeholder enabled by one or more outputs'?",
+      "explanation": "Outcomes are the results for stakeholders enabled by the outputs of a service, representing the value achieved.",
+      "id": "i4-mc-0170"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "A request for a new laptop",
+        "A planned maintenance window",
+        "A known error in the software code",
+        "An unplanned interruption to a service"
+      ],
+      "correctAnswer": 3,
+      "explanation": "An incident is an unplanned interruption to a service or a reduction in the quality of a service.",
+      "question": "Which of these is the correct definition of an 'incident'?",
+      "id": "i4-mc-0171"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Focus on value",
+        "Start where you are",
+        "Keep it simple and practical",
+        "Collaborate and promote visibility"
+      ],
+      "correctAnswer": 1,
+      "question": "Which guiding principle suggests that you should investigate and observe the current situation before starting a new initiative?",
+      "explanation": "This principle focuses on understanding the current state and using existing resources before deciding what to discard.",
+      "id": "i4-mc-0172"
+    },
+    {
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "options": [
+        "Governance",
+        "Service value chain",
+        "Practices",
+        "Continual improvement"
+      ],
+      "question": "In the ITIL service value system, which component describes the way an organisation is directed and controlled?",
+      "explanation": "Governance is the means by which an organisation is directed and controlled, ensuring alignment with strategic goals.",
+      "id": "i4-mc-0173"
+    },
+    {
+      "options": [
+        "Organisations and people",
+        "Information and technology",
+        "Partners and suppliers",
+        "Value streams and processes"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "question": "Which dimension of service management focuses on the relationships an organisation has with other organisations that are involved in the design, development, and delivery of services?",
+      "explanation": "The 'Partners and suppliers' dimension includes the organisation's relationships with other organisations involved in the design and delivery of services.",
+      "id": "i4-mc-0174"
+    },
+    {
+      "explanation": "Standard changes are pre-authorised, low-risk, and follow a well-known procedure, meaning they don't need a new change authority approval each time.",
+      "question": "Which type of change is pre-authorised, low risk, and follows a documented procedure?",
+      "options": [
+        "Normal change",
+        "Standard change",
+        "Emergency change",
+        "Service request change"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "id": "i4-mc-0175"
+    },
+    {
+      "explanation": "Utility is defined as the functionality offered by a product or service to meet a particular need, often described as 'what it does'.",
+      "question": "Which term refers to the functionality offered by a product or service to meet a particular need?",
+      "options": [
+        "Warranty",
+        "Output",
+        "Outcome",
+        "Utility"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "id": "i4-mc-0176"
+    },
+    {
+      "question": "Which service value chain activity ensures that the organisation continually meets stakeholder expectations for performance, costs, and time-to-market?",
+      "explanation": "The 'Improve' activity ensures continual improvement of products, services, and practices across all value chain activities.",
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "options": [
+        "Improve",
+        "Engage",
+        "Deliver and support",
+        "Plan"
+      ],
+      "id": "i4-mc-0177"
+    },
+    {
+      "options": [
+        "A workaround",
+        "A technical debt",
+        "A known error",
+        "An incident report"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "question": "What ITIL term describes a problem that has been analysed but has not yet been resolved?",
+      "explanation": "A known error is a problem that has been analysed but has not yet been resolved, often having a workaround.",
+      "id": "i4-mc-0178"
+    },
+    {
+      "correctAnswer": 1,
+      "options": [
+        "Service request management",
+        "Service level management",
+        "Service configuration management",
+        "Relationship management"
+      ],
+      "type": "multiple_choice",
+      "explanation": "Service level management provides visibility of the organisation's services by setting clear business-based targets for service levels.",
+      "question": "Which practice has a purpose that includes setting clear business-based targets for service levels?",
+      "id": "i4-mc-0179"
+    },
+    {
+      "explanation": "The 'Information and technology' dimension covers the information and knowledge necessary for management, as well as the technologies required.",
+      "question": "Which dimension covers the specific knowledge required to deliver and manage services, as well as the protection of information assets?",
+      "options": [
+        "Information and technology",
+        "Value streams and processes",
+        "Organisations and people",
+        "Partners and suppliers"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "id": "i4-mc-0180"
+    },
+    {
+      "explanation": "The 'improve' activity ensures continual improvement of products, services, and practices across all value chain activities and the four dimensions.",
+      "correctAnswer": 2,
+      "options": [
+        "Plan",
+        "Deliver and support",
+        "Improve",
+        "Engage"
+      ],
+      "question": "Which service value chain activity focuses on ensuring the continual improvement of products and services?",
+      "type": "multiple_choice",
+      "id": "i4-mc-0181"
+    },
+    {
+      "options": [
+        "Release management",
+        "Deployment management",
+        "Service request management",
+        "Change enablement"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Release management manages the transition of new/changed components to live environments, while Deployment management moves the actual bits/hardware.",
+      "type": "multiple_choice",
+      "question": "Which practice is responsible for making new and changed services and features available for use?",
+      "id": "i4-mc-0182"
+    },
+    {
+      "correctAnswer": 1,
+      "options": [
+        "Information and technology",
+        "Partners and suppliersBase",
+        "Value streams and processes",
+        "Organisations and people"
+      ],
+      "explanation": "The 'partners and suppliers' dimension includes the contracts and agreements an organisation has with its external partners.",
+      "type": "multiple_choice",
+      "question": "Which dimension of service management considers the contracts and relationships with external organisations?",
+      "id": "i4-mc-0183"
+    },
+    {
+      "question": "Which guiding principle recommends using the minimum number of steps to achieve an objective?",
+      "type": "multiple_choice",
+      "explanation": "The 'Keep it simple and practical' principle warns against over-complicating processes and suggests using the minimum steps necessary.",
+      "correctAnswer": 3,
+      "options": [
+        "Focus on valueBase",
+        "Collaborate and promote visibility",
+        "Think and work holistically",
+        "Keep it simple and practical"
+      ],
+      "id": "i4-mc-0184"
+    },
+    {
+      "question": "What is the ITIL 4 definition of 'cost'?",
+      "type": "multiple_choice",
+      "explanation": "Cost is defined as the amount of money spent on a specific activity or resource in the context of service consumption.",
+      "correctAnswer": 1,
+      "options": [
+        "A risk that is removed from the consumer",
+        "The amount of money spent on a specific activity or resource",
+        "The functionality offered by a product or service",
+        "A possible event that could cause harm or loss"
+      ],
+      "id": "i4-mc-0185"
+    },
+    {
+      "correctAnswer": 0,
+      "options": [
+        "By a separate temporary team from various functional areas",
+        "By the service desk manager alone",
+        "By the person who reported the incident to ensure accuracy",
+        "By the change authority using a standard change process"
+      ],
+      "explanation": "Major incidents often require a temporary team (the major incident team) to focus exclusively on rapid restoration.",
+      "type": "multiple_choice",
+      "question": "How should major incidents ideally be managed?",
+      "id": "i4-mc-0186"
+    },
+    {
+      "explanation": "A risk is a possible event that could cause harm or loss, or make it more difficult to achieve objectives.",
+      "options": [
+        "A person who requires a service to be delivered",
+        "A physical component of a service that must be managed",
+        "A possible event that could cause harm or loss",
+        "The assurance that a product will meet agreed requirements"
+      ],
+      "correctAnswer": 2,
+      "question": "In ITIL 4, what is the definition of 'risk'?",
+      "type": "multiple_choice",
+      "id": "i4-mc-0187"
+    },
+    {
+      "question": "Which role authorises the budget for service consumption?",
+      "type": "multiple_choice",
+      "explanation": "Sponsoring is the role that authorises the budget for service consumption.",
+      "correctAnswer": 3,
+      "options": [
+        "User",
+        "CustomerBase",
+        "Service provider",
+        "Sponsor"
+      ],
+      "id": "i4-mc-0188"
+    },
+    {
+      "question": "Which service value chain activity involves provide a good understanding of stakeholder needs?",
+      "type": "multiple_choice",
+      "explanation": "The 'Engage' activity provides a complete understanding of stakeholder needs and promotes transparency and good relationships.",
+      "options": [
+        "Design and transition",
+        "Obtain/build",
+        "Engage",
+        "Deliver and support"
+      ],
+      "correctAnswer": 2,
+      "id": "i4-mc-0189"
+    },
+    {
+      "explanation": "Workarounds are temporary solutions that reduce or eliminate the impact of an incident or problem for which a full resolution is not yet available.",
+      "options": [
+        "Workaround",
+        "Standard changeBase",
+        "Service request",
+        "Emergency change"
+      ],
+      "correctAnswer": 0,
+      "question": "What term describes a solution that reduces or eliminates the impact of an incident for which a full resolution is not yet available?",
+      "type": "multiple_choice",
+      "id": "i4-mc-0190"
+    },
+    {
+      "correctAnswer": 1,
+      "options": [
+        "Start where you areBase",
+        "Think and work holistically",
+        "Progress iteratively with feedback",
+        "Focus on valueBase"
+      ],
+      "explanation": "The 'Think and work holistically' principle emphasises that no part of an organisation or system stands alone.",
+      "type": "multiple_choice",
+      "question": "Which guiding principle emphasizes that no service, process, or department stands alone?",
+      "id": "i4-mc-0191"
+    },
+    {
+      "question": "What is the primary purpose of the 'problem management' practice?",
+      "type": "multiple_choice",
+      "explanation": "Problem management aims to reduce the likelihood and impact of incidents by identifying actual and potential causes of incidents.",
+      "options": [
+        "Respond to every incident as quickly as possible",
+        "Authorise changes to the live environment",
+        "Manage the lifecycle of all service requests",
+        "Reduce the likelihood and impact of incidents by identifying causes"
+      ],
+      "correctAnswer": 3,
+      "id": "i4-mc-0192"
+    },
+    {
+      "options": [
+        "The result for a stakeholder enabled by one or more outputs",
+        "A tangible or intangible deliverable of an activity",
+        "The functionality offered by a product to meet a need",
+        "A possible event that could cause harm or loss"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Output is a tangible or intangible deliverable of an activity, whereas outcome is the result for a stakeholder enabled by one or more outputs.",
+      "type": "multiple_choice",
+      "question": "In the context of the ITIL service relationship model, what is the definition of an 'output'?",
+      "id": "i4-mc-0193"
+    },
+    {
+      "question": "Which guiding principle recommends that the current state should be investigated and observed directly to ensure it is fully understood?",
+      "type": "multiple_choice",
+      "explanation": "The 'start where you are' principle advises against starting from scratch without first considering what is already available to be reused or improved.",
+      "correctAnswer": 0,
+      "options": [
+        "Start where you are",
+        "Focus on value",
+        "Progress iteratively with feedback",
+        "Keep it simple and practical"
+      ],
+      "id": "i4-mc-0194"
+    },
+    {
+      "correctAnswer": 2,
+      "options": [
+        "Incident management",
+        "Service level management",
+        "Service desk",
+        "Relationship management"
+      ],
+      "explanation": "The Service Desk practice acts as the entry point and single point of contact for the service provider with its users.",
+      "type": "multiple_choice",
+      "question": "Which practice provides a single point of contact for users and captures demand for incident resolution and service requests?",
+      "id": "i4-mc-0195"
+    },
+    {
+      "options": [
+        "Joint activities performed by a service provider and a service consumer",
+        "Activities performed by an organisation to provide services",
+        "Activities performed by an organisation to consume services",
+        "The formal agreement between a service provider and a customer"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Service Provision includes the management of the provider's resources, provision of access to resources, and performance of service activities.",
+      "type": "multiple_choice",
+      "question": "How is 'service provision' defined in ITIL 4?",
+      "id": "i4-mc-0196"
+    },
+    {
+      "question": "Which service value chain activity ensures that products and services meet stakeholder expectations for quality, cost, and time to market?",
+      "type": "multiple_choice",
+      "explanation": "The 'Design and transition' activity ensures that products and services continually meet stakeholder expectations for quality, cost, and time to market.",
+      "options": [
+        "Plan",
+        "Engage",
+        "Obtain/build",
+        "Design and transition"
+      ],
+      "correctAnswer": 3,
+      "id": "i4-mc-0197"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What type of change is most likely to be managed using a separate, accelerated process for approval and implementation?",
+      "correctAnswer": 2,
+      "options": [
+        "Standard change",
+        "Normal change",
+        "Emergency change",
+        "Urgent routine change"
+      ],
+      "explanation": "Emergency changes are those that must be implemented as soon as possible to resolve a major incident or implement a security patch.",
+      "id": "i4-mc-0198"
+    },
+    {
+      "explanation": "Warranty is the assurance that a product or service will meet agreed requirements, often described as 'how the service performs'.",
+      "correctAnswer": 0,
+      "options": [
+        "Warranty",
+        "Utility",
+        "Value",
+        "Feature"
+      ],
+      "question": "Which term describes the assurance that a product or service will meet agreed requirements, such as availability and capacity?",
+      "type": "multiple_choice",
+      "id": "i4-mc-0199"
+    },
+    {
+      "question": "Which service value chain activity provides a shared understanding of the vision and improvement direction for all four dimensions?",
+      "type": "multiple_choice",
+      "explanation": "The 'Plan' activity provides a shared understanding of the vision, current status, and improvement direction for all four dimensions and all products.",
+      "options": [
+        "Improve",
+        "Plan",
+        "Engage",
+        "Deliver and support"
+      ],
+      "correctAnswer": 1,
+      "id": "i4-mc-0200"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which practice's purpose is to ensure that accurate and reliable information about the configuration of services is available when and where it is needed?",
+      "options": [
+        "Change enablement",
+        "Service request management",
+        "Monitoring and event management",
+        "Service configuration management"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Configuration Management provides accurate information about the configuration of services and the CIs that support them.",
+      "id": "i4-mc-0201"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which guiding principle suggests that work should be made visible to avoid 'hidden agendas' and to foster better communication?",
+      "correctAnswer": 2,
+      "options": [
+        "Focus on value",
+        "Think and work holistically scraps",
+        "Collaborate and promote visibility",
+        "Keep it simple and practical"
+      ],
+      "explanation": "The 'Collaborate and promote visibility' principle focuses on removing silos and ensuring work/results are visible to build trust.",
+      "id": "i4-mc-0202"
+    },
+    {
+      "correctAnswer": 0,
+      "options": [
+        "Value is the perceived benefits, usefulness, and importance of something",
+        "Value is the financial profit gained from a service",
+        "Value is the functionality offered by a service to meet a need",
+        "Value is the amount of money spent on a service"
+      ],
+      "explanation": "Value is the perceived benefits, usefulness, and importance of something, and it is always defined by the consumer.",
+      "type": "multiple_choice",
+      "question": "How does ITIL 4 define 'value'?",
+      "id": "i4-mc-0203"
+    },
+    {
+      "explanation": "Monitoring and event management identifies and prioritises changes in state that are significant for the management of a CI or service.",
+      "options": [
+        "Incident management",
+        "Monitoring and event management",
+        "Problem management",
+        "Service level management"
+      ],
+      "correctAnswer": 1,
+      "question": "Which practice systematically observes services and service components and records changes of state as events?",
+      "type": "multiple_choice",
+      "id": "i4-mc-0204"
+    },
+    {
+      "correctAnswer": 1,
+      "question": "What is the ITIL 4 definition of a 'service'?",
+      "explanation": "A service is a means of enabling value co-creation by facilitating outcomes that customers want to achieve, without the customer having to manage specific costs and risks.",
+      "options": [
+        "A person or group of people that has its own functions with responsibilities, authorities, and relationships",
+        "A means of enabling value co-creation by facilitating outcomes that customers want to achieve",
+        "A tangible or intangible deliverable of an activity",
+        "The perceived benefits, usefulness, and importance of something"
+      ],
+      "type": "multiple_choice",
+      "id": "i4-mc-0205"
+    },
+    {
+      "correctAnswer": 2,
+      "question": "Which statement describes a 'standard change'?",
+      "explanation": "Standard changes are low-risk, pre-authorised changes that are well-understood and fully documented, such as a service request.",
+      "options": [
+        "A change that is needs to be implemented as soon as possible",
+        "A change that must be assessed by the change authority before implementation",
+        "A low-risk, pre-authorised change that is well-understood and documented",
+        "A change that is not part of the normal strategy of the organisation"
+      ],
+      "type": "multiple_choice",
+      "id": "i4-mc-0206"
+    },
+    {
+      "question": "Which guiding principle recommends that human intervention should only happen where it contributes value?",
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "options": [
+        "Optimise and automate",
+        "Keep it simple and practical",
+        "Focus on value",
+        "Progress iteratively with feedback"
+      ],
+      "explanation": "The 'optimise and automate' principle suggests that organisations should first make a process as effective as possible before using technology to automate it.",
+      "id": "i4-mc-0207"
+    },
+    {
+      "question": "Which service value chain activity ensures the continual improvement of products, services, and practices?",
+      "correctAnswer": 3,
+      "explanation": "The 'Improve' activity focuses on the continuous improvement of products, services, and practices across all value chain activities.",
+      "type": "multiple_choice",
+      "options": [
+        "Engage",
+        "Design and transition",
+        "Deliver and support",
+        "Improve"
+      ],
+      "id": "i4-mc-0208"
+    },
+    {
+      "explanation": "Service management is defined as a set of specialised organisational capabilities for enabling value for customers in the form of services.",
+      "options": [
+        "The collective name for the IT department and its staff",
+        "A set of specialised organisational capabilities for enabling value for customers",
+        "The management of costs and risks associated with technology infrastructure",
+        "The practice of managing incidents and service requests through a service desk"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "question": "What is the definition of 'service management'?",
+      "id": "i4-mc-0209"
+    },
+    {
+      "correctAnswer": 3,
+      "question": "Which of the four dimensions focuses on the relationships maintained with other organisations to deliver services?",
+      "options": [
+        "Information and technology",
+        "Organisations and people",
+        "Value streams and processes",
+        "Partners and suppliers"
+      ],
+      "type": "multiple_choice",
+      "explanation": "This dimension focuses on the relationships between the organisation and its partners/suppliers involved in the design and delivery of services.",
+      "id": "i4-mc-0210"
+    },
+    {
+      "correctAnswer": 2,
+      "question": "Which role is responsible for using services?",
+      "explanation": "A 'user' is the role that uses services provided by a service provider.",
+      "options": [
+        "Customer",
+        "Sponsor",
+        "User",
+        "Supplier"
+      ],
+      "type": "multiple_choice",
+      "id": "i4-mc-0211"
+    },
+    {
+      "question": "Which practice is responsible for aligning the organisation's practices and services with changing business needs?",
+      "correctAnswer": 1,
+      "explanation": "The 'continual improvement' practice focuses on aligning the organisation's practices and services with changing business needs.",
+      "type": "multiple_choice",
+      "options": [
+        "Service level management",
+        "Continual improvement",
+        "Relationship management",
+        "Change authority"
+      ],
+      "id": "i4-mc-0212"
+    },
+    {
+      "explanation": "An 'incident' is an unplanned interruption to a service or a reduction in the quality of a service.",
+      "type": "multiple_choice",
+      "options": [
+        "An unplanned interruption to a service or reduction in the quality of a service",
+        "A cause, or potential cause, of one or more incidents",
+        "A change of state that has significance for the management of a service",
+        "A request from a user for a normal service action"
+      ],
+      "question": "What is the definition of an 'incident'?",
+      "correctAnswer": 0,
+      "id": "i4-mc-0213"
+    },
+    {
+      "question": "Which service value chain activity focuses on ensuring that services meet stakeholder expectations for quality and cost?",
+      "correctAnswer": 2,
+      "explanation": "The 'Design and transition' activity is responsible for ensuring that products and services meet stakeholder expectations for quality, cost, and time to market.",
+      "type": "multiple_choice",
+      "options": [
+        "Obtain/build",
+        "Deliver and support",
+        "Design and transition",
+        "Plan"
+      ],
+      "id": "i4-mc-0214"
+    },
+    {
+      "explanation": "'Keep it simple and practical' encourages using the minimum number of steps to achieve an objective and eliminating anything that provides no value.",
+      "options": [
+        "Start where you are",
+        "Collaborate and promote visibility",
+        "Think and work holistically",
+        "Keep it simple and practical"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "question": "Which guiding principle suggests that if a process or resource fails to provide value, it should be eliminated?",
+      "id": "i4-mc-0215"
+    },
+    {
+      "question": "What are the components of the ITIL Service Value System (SVS)?",
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "options": [
+        "Guiding principles, Governance, Service Value Chain, Practices, and Continual Improvement",
+        "Plan, Improve, Engage, Design and Transition, Obtain/build, Deliver and Support",
+        "People, Information, Partners, and Processes",
+        "Focus on value, Start where you are, Keep it simple, and Collaborate"
+      ],
+      "explanation": "The Service Value System (SVS) includes Guiding Principles, Governance, Service Value Chain, Practices, and Continual Improvement.",
+      "id": "i4-mc-0216"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Deliver and support",
+        "Design and transition",
+        "Plan",
+        "Obtain/build"
+      ],
+      "explanation": "The 'design and transition' activity focuses on creating and modifying services to ensure they meet stakeholder expectations for quality, costs, and time-to-market.",
+      "correctAnswer": 1,
+      "question": "Which service value chain activity ensures that services meet stakeholder expectations for quality, costs, and time-to-market?",
+      "id": "i4-mc-0217"
+    },
+    {
+      "correctAnswer": 0,
+      "question": "What is the definition of a 'known error'?",
+      "options": [
+        "A problem that has been analysed but has not been resolved",
+        "An incident for which a resolution has been found",
+        "A risk that has been identified but not yet mitigated",
+        "A configuration item that is faulty and needs replacement"
+      ],
+      "type": "multiple_choice",
+      "explanation": "A known error is a problem that has been analysed but has not been resolved, often with a documented workaround.",
+      "id": "i4-mc-0218"
+    },
+    {
+      "options": [
+        "Partners and suppliers",
+        "Value streams and processes",
+        "Information and technology",
+        "Organisations and people"
+      ],
+      "type": "multiple_choice",
+      "explanation": "The 'information and technology' dimension includes the information and knowledge necessary for the management of services, as well as the technologies required.",
+      "correctAnswer": 2,
+      "question": "Which dimension includes the knowledge and information necessary for the management of services?",
+      "id": "i4-mc-0219"
+    },
+    {
+      "correctAnswer": 3,
+      "question": "How does ITIL 4 define an 'outcome'?",
+      "explanation": "An outcome is a result for a stakeholder enabled by one or more outputs. Outputs are the tangible or intangible deliverables.",
+      "options": [
+        "A tangible or intangible deliverable of an activity",
+        "The amount of money spent on a specific activity or resource",
+        "A description of one or more services that addresses the needs of a target consumer group",
+        "A result for a stakeholder enabled by one or more outputs"
+      ],
+      "type": "multiple_choice",
+      "id": "i4-mc-0220"
+    },
+    {
+      "question": "Which guiding principle recommends that the current state should be investigated and observed directly to ensure it is fully understood?",
+      "correctAnswer": 1,
+      "options": [
+        "Focus on value",
+        "Start where you are",
+        "Keep it simple and practical",
+        "Collaborate and promote visibility"
+      ],
+      "type": "multiple_choice",
+      "explanation": "The 'start where you are' principle advises against starting from scratch without first considering what is already available to be reused or improved.",
+      "id": "i4-mc-0221"
+    },
+    {
+      "question": "What is the primary purpose of the 'service desk' practice?",
+      "correctAnswer": 0,
+      "explanation": "The service desk's primary purpose is to capture demand for incident resolution and service requests, acting as the entry point for the service provider.",
+      "options": [
+        "To capture demand for incident resolution and service requests",
+        "To ensure that services are restored to normal as quickly as possible",
+        "To minimise the impact of incidents that cannot be prevented",
+        "To provide a single source of consistent information on all services"
+      ],
+      "type": "multiple_choice",
+      "id": "i4-mc-0222"
+    },
+    {
+      "question": "What is defined as a solution that reduces or eliminates the impact of an incident or problem for which a full resolution is not yet available?",
+      "correctAnswer": 2,
+      "explanation": "A workaround is a solution that reduces or eliminates the impact of an incident or problem for which a full resolution is not yet available.",
+      "type": "multiple_choice",
+      "options": [
+        "A permanent solution to a problem",
+        "A method of tracking the status of an incident",
+        "A solution that reduces or eliminates the impact of an incident or problem for which a full resolution is not yet available",
+        "A set of tools used to automate the resolution of frequent incidents"
+      ],
+      "id": "i4-mc-0223"
+    },
+    {
+      "explanation": "Service level management provides the end-to-end visibility of the organisation's services by setting clear business-based targets for service performance.",
+      "type": "multiple_choice",
+      "options": [
+        "Service configuration management",
+        "Service level management",
+        "Monitoring and event management",
+        "Service request management"
+      ],
+      "question": "Which practice has the purpose of setting clear business-based targets for service performance?",
+      "correctAnswer": 1,
+      "id": "i4-mc-0224"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Governance",
+        "The service value chain",
+        "Practices",
+        "Continual improvement"
+      ],
+      "explanation": "Governance is the means by which an organisation is directed and controlled, forming a key component of the Service Value System.",
+      "correctAnswer": 0,
+      "question": "What is the term for the component of the Service Value System (SVS) that describes the means by which an organisation is directed and controlled?",
+      "id": "i4-mc-0225"
+    },
+    {
+      "question": "In the context of the 'change enablement' practice, what is a 'change authority'?",
+      "correctAnswer": 2,
+      "options": [
+        "The Service Manager",
+        "The IT Director",
+        "A person or group who authorises a change",
+        "A Change Advisory Board (CAB) only"
+      ],
+      "type": "multiple_choice",
+      "explanation": "A change authority is a person or group responsible for authorising a change. This can vary depending on the type and risk of the change.",
+      "id": "i4-mc-0226"
+    },
+    {
+      "explanation": "The 'think and work holistically' principle stresses that no service or component stands alone; the entire system must be considered.",
+      "type": "multiple_choice",
+      "options": [
+        "Focus on value",
+        "Progress iteratively with feedback",
+        "Collaborate and promote visibility",
+        "Think and work holistically"
+      ],
+      "correctAnswer": 3,
+      "question": "Which guiding principle emphasises that no element of an organisation or service stands alone?",
+      "id": "i4-mc-0227"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Incident management",
+        "Problem management",
+        "Service level management",
+        "Change enablement"
+      ],
+      "explanation": "While the service desk handles simple requests, the 'problem management' practice focuses specifically on reducing the likelihood and impact of incidents by identifying causes.",
+      "correctAnswer": 1,
+      "question": "Which practice has the purpose of reducing the likelihood and impact of incidents by identifying actual and potential causes of incidents?",
+      "id": "i4-mc-0228"
+    },
+    {
+      "explanation": "A configuration item is any component that needs to be managed in order to deliver an IT service.",
+      "question": "What is the definition of a 'configuration item' (CI)?",
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "options": [
+        "A service level agreement documented in a contract",
+        "A problem that has been analysed but not yet resolved",
+        "Any component that needs to be managed in order to deliver an IT service",
+        "The set of tools used to manage the service desk"
+      ],
+      "id": "i4-mc-0229"
+    },
+    {
+      "explanation": "The 'engage' activity is responsible for providing a good understanding of stakeholder needs and maintaining transparency.",
+      "type": "multiple_choice",
+      "question": "Which service value chain activity involves provide a good understanding of stakeholder needs and transparency?",
+      "options": [
+        "Engage",
+        "Plan",
+        "Design and transition",
+        "Deliver and support"
+      ],
+      "correctAnswer": 0,
+      "id": "i4-mc-0230"
+    },
+    {
+      "explanation": "Standard changes are low-risk, pre-authorised, and follow a well-established procedure.",
+      "type": "multiple_choice",
+      "question": "In the 'change enablement' practice, what is the definition of a 'standard change'?",
+      "options": [
+        "A change that must be implemented as soon as possible to resolve an incident",
+        "A change that needs to be assessed by the change authority for every occurrence",
+        "A change that has a high risk and requires a full business case for approval",
+        "A low-risk change that is pre-authorised and follows an established procedure"
+      ],
+      "correctAnswer": 3,
+      "id": "i4-mc-0231"
+    },
+    {
+      "correctAnswer": 1,
+      "options": [
+        "The set of integrated assets required to deliver a service",
+        "The means by which an organisation is directed and controlled",
+        "A series of steps an organisation takes to create value for customers",
+        "The coordination of resources to deliver specific outputs"
+      ],
+      "explanation": "Governance is the system by which an organisation is directed and controlled at the highest level.",
+      "question": "What is the purpose of 'governance' within the service value system?",
+      "type": "multiple_choice",
+      "id": "i4-mc-0232"
+    },
+    {
+      "correctAnswer": 2,
+      "options": [
+        "Start where you are",
+        "Focus on value",
+        "Progress iteratively with feedback",
+        "Collaborate and promote visibility"
+      ],
+      "type": "multiple_choice",
+      "question": "Which guiding principle recommends that work should be broken into smaller, manageable sections that can be executed and completed in a timely manner?",
+      "explanation": "The 'Progress iteratively with feedback' principle suggests breaking work into smaller parts to maintain focus and respond to feedback.",
+      "id": "i4-mc-0233"
+    },
+    {
+      "question": "What is the definition of an 'event'?",
+      "type": "multiple_choice",
+      "explanation": "An event is a change of state that has significance for the management of a service or other configuration item.",
+      "correctAnswer": 1,
+      "options": [
+        "An unplanned interruption to a service or reduction in the quality of a service",
+        "Any change of state that has significance for the management of a service or other configuration item",
+        "A cause, or potential cause, of one or more incidents",
+        "A request from a user for information or for a standard service to be provided"
+      ],
+      "id": "i4-mc-0234"
+    },
+    {
+      "options": [
+        "In all circumstances, regardless of changes in goals or strategies",
+        "Only when implementing new technology or software developments",
+        "Specifically during the resolution of high-priority incidents",
+        "Exclusively when designing the service value chain activities"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The ITIL guiding principles should be used to guide an organisation in all circumstances, regardless of changes in its goals or management.",
+      "question": "When should the ITIL guiding principles be used by an organisation?",
+      "type": "multiple_choice",
+      "id": "i4-mc-0235"
+    },
+    {
+      "correctAnswer": 3,
+      "options": [
+        "The assurance that a service will meet agreed requirements",
+        "The ability of a service to remain functional despite failures",
+        "The amount of money spent on a specific activity or resource",
+        "The functionality offered by a product or service to meet a particular need"
+      ],
+      "type": "multiple_choice",
+      "question": "Which term refers to the functionality offered by a product or service to meet a particular need?",
+      "explanation": "Utility describes the functionality offered by a product or service to meet a particular need (fit for purpose).",
+      "id": "i4-mc-0236"
+    },
+    {
+      "explanation": "Service requests are usually formal requests for something low-risk and routine, such as a request for information.",
+      "question": "What is the primary focus of the 'service request management' practice?",
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "options": [
+        "A request from a user for a normal service action or information",
+        "An emergency fix for a server that has stopped working unexpectedly",
+        "A permanent resolution to the underlying cause of multiple incidents",
+        "The process of documenting the relationship between different assets"
+      ],
+      "id": "i4-mc-0237"
+    },
+    {
+      "correctAnswer": 2,
+      "options": [
+        "The 'incident management' practice",
+        "The 'monitoring and event management' practice",
+        "The 'service level management' practice",
+        "The 'continual improvement' practice"
+      ],
+      "question": "Which practice provides a single point of truth for all service agreements and ensures that services are performant and available?",
+      "type": "multiple_choice",
+      "explanation": "Ensuring that services are available and performant when the customer needs them is the core focus of 'service level management'.",
+      "id": "i4-mc-0238"
+    },
+    {
+      "question": "Which guiding principle requires an organisation to understand the experience of the service consumer?",
+      "type": "multiple_choice",
+      "explanation": "The 'Focus on value' principle requires understanding who the service consumer is and what they value.",
+      "correctAnswer": 1,
+      "options": [
+        "Think and work holistically",
+        "Focus on value",
+        "Keep it simple and practical",
+        "Optimise and automate"
+      ],
+      "id": "i4-mc-0239"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is the definition of 'warranty' in the context of ITIL 4?",
+      "explanation": "Warranty is defined as 'fit for use' and relates to the service meeting requirements for availability, capacity, and security.",
+      "options": [
+        "Functionality to meet a specific need (fit for purpose)",
+        "The amount of money spent on a particular activity",
+        "The perceived benefits and usefulness of a service piece",
+        "Assurance that a product or service will meet agreed requirements (fit for use)"
+      ],
+      "correctAnswer": 3,
+      "id": "i4-mc-0240"
+    },
+    {
+      "options": [
+        "Engage",
+        "Deliver and support",
+        "Design and transition",
+        "Obtain/build"
+      ],
+      "type": "multiple_choice",
+      "explanation": "The 'Design and transition' activity ensures that products and services continually meet stakeholder expectations for quality, costs, and time to market.",
+      "correctAnswer": 2,
+      "question": "Which service value chain activity ensures that products and services meet stakeholder expectations for quality, costs, and time to market?",
+      "id": "i4-mc-0241"
+    },
+    {
+      "options": [
+        "Think and work holistically",
+        "Collaborate and promote visibility",
+        "Keep it simple and practical",
+        "Start where you are"
+      ],
+      "type": "multiple_choice",
+      "explanation": "The 'Think and work holistically' principle highlights that services are delivered through a complex system of interconnected parts.",
+      "question": "Which guiding principle states that an organisation must understand how all parts of an organisation work together in an integrated way?",
+      "correctAnswer": 0,
+      "id": "i4-mc-0242"
+    },
+    {
+      "explanation": "A known error is a problem that has been analysed but has not yet been resolved, often where a workaround has been identified.",
+      "options": [
+        "A problem that has been resolved by a workaround",
+        "A problem that has been analysed and has not been resolved",
+        "An incident for which a root cause has been identified",
+        "An error that occurs during the testing of a new configuration item"
+      ],
+      "type": "multiple_choice",
+      "question": "What is the definition of a 'known error'?",
+      "correctAnswer": 1,
+      "id": "i4-mc-0243"
+    },
+    {
+      "correctAnswer": 3,
+      "question": "What is the Service Value System (SVS)?",
+      "options": [
+        "A set of specialised organisational capabilities for enabling value for customers",
+        "A description of the discrete steps an organisation takes to create value",
+        "A set of rules that ensure an organisation is governed according to national laws",
+        "A model representing how all the components and activities of an organisation work together to facilitate value creation"
+      ],
+      "type": "multiple_choice",
+      "explanation": "The Service Value System (SVS) provides a framework that describes how all the components and activities of an organisation work together as a system to enable value creation.",
+      "id": "i4-mc-0244"
+    },
+    {
+      "explanation": "Automation is a key aspect of the 'Optimise and automate' principle, where human intervention is removed for repetitive tasks.",
+      "options": [
+        "Start where you are",
+        "Focus on value",
+        "Optimise and automate",
+        "Collaborate and promote visibility"
+      ],
+      "type": "multiple_choice",
+      "question": "Which guiding principle recommends that technology should be used to perform tasks that are repetitive and manual, allowing people to focus on more complex activities?",
+      "correctAnswer": 2,
+      "id": "i4-mc-0245"
+    },
+    {
+      "question": "Which dimension of service management considers the relationship between an organisation and its various third-party vendors?",
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "options": [
+        "Partners and suppliers",
+        "Information and technology",
+        "Value streams and processes",
+        "Organisations and people"
+      ],
+      "explanation": "The 'Partners and suppliers' dimension focuses on the organisation's relationships with other organisations involved in the design and delivery of services.",
+      "id": "i4-mc-0246"
+    },
+    {
+      "correctAnswer": 1,
+      "question": "What is meant by the 'co-creation of value'?",
+      "explanation": "Co-creation of value involves a collaborative relationship where both the service provider and the consumer contribute to the outcome.",
+      "options": [
+        "The provider delivering services without consumer feedback",
+        "A collaborative relationship where providers and consumers work together to create value",
+        "The consumer defining the price of a service independently",
+        "The provider maximising profits by reducing service quality"
+      ],
+      "type": "multiple_choice",
+      "id": "i4-mc-0247"
+    },
+    {
+      "question": "Which type of change is non-routine, requires assessment and authorisation, and is typically triggered by a change request?",
+      "correctAnswer": 2,
+      "explanation": "Normal changes are those that need to be scheduled, assessed, and authorised following a standard process.",
+      "options": [
+        "Standard change",
+        "Emergency change",
+        "Normal change",
+        "Urgent change"
+      ],
+      "type": "multiple_choice",
+      "id": "i4-mc-0248"
+    },
+    {
+      "options": [
+        "Release management",
+        "Deployment management",
+        "Change enablement",
+        "Service configuration management"
+      ],
+      "type": "multiple_choice",
+      "explanation": "Deployment management is specifically concerned with moving new or changed components to live environments.",
+      "correctAnswer": 1,
+      "question": "Which practice is responsible for moving new or changed hardware, software, documentation, or any other component to live environments?",
+      "id": "i4-mc-0249"
+    },
+    {
+      "correctAnswer": 0,
+      "question": "Which practice ensures that services achieve agreed and expected performance, satisfying current and future demand in a cost-effective way?",
+      "type": "multiple_choice",
+      "options": [
+        "Capacity and performance management",
+        "Service level management",
+        "Availability management",
+        "Service continuity management"
+      ],
+      "explanation": "Capacity and performance management is the practice responsible for ensuring services reach required performance levels.",
+      "id": "i4-mc-0250"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Something that is changed by a process or activity",
+        "The results for a stakeholder enabled by one or more outputs",
+        "A report generated at the end of a service period",
+        "A tangible or intangible deliverable of an activity"
+      ],
+      "explanation": "Output is a tangible or intangible deliverable of an activity; an outcome is the result for a stakeholder.",
+      "question": "In ITIL 4, what is the definition of an 'output'?",
+      "correctAnswer": 3,
+      "id": "i4-mc-0251"
+    },
+    {
+      "options": [
+        "Improve",
+        "Plan",
+        "Engage",
+        "Design and transition"
+      ],
+      "type": "multiple_choice",
+      "explanation": "The 'Plan' activity provides a shared understanding of the vision and improvement direction for all products and services.",
+      "correctAnswer": 1,
+      "question": "Which service value chain activity ensures a shared understanding of the vision, current status, and improvement direction for all four dimensions?",
+      "id": "i4-mc-0252"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Deliver and support",
+        "Plan交付",
+        "Improve",
+        "Engage"
+      ],
+      "correctAnswer": 2,
+      "question": "Which service value chain activity is responsible for ensuring the continual improvement of products, services, and practices?",
+      "explanation": "The 'improve' activity ensures the continual improvement of products, services, and practices across all value chain activities and the four dimensions.",
+      "id": "i4-mc-0253"
+    },
+    {
+      "options": [
+        "Standard change",
+        "Normal change",
+        "Emergency change",
+        "Urgent change"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "question": "Which type of change is low-risk, pre-authorised, and follows a documented procedure?",
+      "explanation": "Standard changes are low-risk, pre-authorised, and follow a well-established procedure, often used for routine service requests.",
+      "id": "i4-mc-0254"
+    },
+    {
+      "question": "Which practice provides the point of communication for the service provider and its users?",
+      "explanation": "The service desk provides a single point of communication for users to report issues and seek help, acting as the bridge between the provider and the user.",
+      "options": [
+        "Service level management",
+        "Service desk",
+        "Incident management",
+        "Monitoring and event management"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "id": "i4-mc-0255"
+    },
+    {
+      "correctAnswer": 3,
+      "options": [
+        "A software bug that has been identified",
+        "The cost of providing a service",
+        "A request for a new computer",
+        "Any component that needs to be managed in order to deliver an IT service"
+      ],
+      "type": "multiple_choice",
+      "explanation": "A configuration item (CI) is any component that needs to be managed in order to deliver an IT service.",
+      "question": "What is the definition of a configuration item (CI)?",
+      "id": "i4-mc-0256"
+    },
+    {
+      "correctAnswer": 1,
+      "options": [
+        "Start where you are",
+        "Collaborate and promote visibility",
+        "Keep it simple and practical",
+        "Focus on value"
+      ],
+      "type": "multiple_choice",
+      "explanation": "The 'collaborate and promote visibility' principle focuses on removing silos and ensuring work is seen by all necessary stakeholders.",
+      "question": "Which guiding principle focuses on involving the right people in the right roles to ensure everyone understands the work and its goals?",
+      "id": "i4-mc-0257"
+    },
+    {
+      "question": "Which of the four dimensions of service management focuses on the information and knowledge used to deliver services?",
+      "explanation": "The 'information and technology' dimension covers the records, tools, and technical systems used to provide and manage services.",
+      "options": [
+        "Partners and suppliers",
+        "Value streams and processes",
+        "Information and technology理论",
+        "Organisations and people"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "id": "i4-mc-0258"
+    },
+    {
+      "question": "What is the definition of an 'incident'?",
+      "explanation": "An incident is an unplanned interruption to a service or a reduction in the quality of a service.",
+      "type": "multiple_choice",
+      "options": [
+        "An unplanned interruption to a service or reduction in its quality",
+        "A potential cause of one or more incidents",
+        "A change that has been implemented without authorisation",
+        "A request from a user for information or advice"
+      ],
+      "correctAnswer": 0,
+      "id": "i4-mc-0259"
+    },
+    {
+      "question": "Which service value chain activity involves formalising the requirements and specifications for a new service?",
+      "explanation": "The 'engage' activity is where the service provider interacts with service consumers to understand their needs and requirements.",
+      "options": [
+        "Design and transition",
+        "Obtain/build核心",
+        "Engage engage",
+        "Plan"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "id": "i4-mc-0260"
+    },
+    {
+      "explanation": "Problem management is responsible for reducing the likelihood and impact of incidents by identifying causes and managing workarounds.",
+      "question": "Which practice aims to reduce the likelihood and impact of incidents by identifying actual and potential causes of incidents?",
+      "correctAnswer": 3,
+      "options": [
+        "Incident management",
+        "Service level management",
+        "Change enablement",
+        "Problem management"
+      ],
+      "type": "multiple_choice",
+      "id": "i4-mc-0261"
+    },
+    {
+      "options": [
+        "A tangible or intangible deliverable of an activity",
+        "A result for a stakeholder enabled by one or more outputs",
+        "A description of one or more services that addresses needs",
+        "A person or group that has its own functions and responsibilities"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "question": "How is the term 'outcome' defined in ITIL 4?",
+      "explanation": "An outcome is the result for a stakeholder enabled by one or more outputs. Outcomes are what the customer actually wants to achieve.",
+      "id": "i4-mc-0262"
+    },
+    {
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "options": [
+        "They are applicable to every organisation and all its activities.",
+        "They should only be used in large IT departments.",
+        "They are strictly for software development projects.",
+        "They must be followed exactly as written without adaptation."
+      ],
+      "explanation": "The guiding principles are universal and applicable to any organisation, regardless of its size, structure, or industry.",
+      "question": "Which statement about the ITIL guiding principles is correct?",
+      "id": "i4-mc-0263"
+    },
+    {
+      "question": "What are the inputs to the ITIL Service Value System (SVS)?",
+      "explanation": "Opportunity/Demand represents the possibilities and requirements for value that enter the Service Value System.",
+      "options": [
+        "Governance以及",
+        "Value",
+        "Practices",
+        "Opportunity and demand"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "id": "i4-mc-0264"
+    },
+    {
+      "question": "Which guiding principle suggests that the current state should be investigated and observed directly to ensure it is fully understood?",
+      "explanation": "The 'Start where you are' principle emphasizes the importance of evaluating the current state to identify what can be reused or improved rather than starting from scratch.",
+      "options": [
+        "Focus on value",
+        "Keep it simple and practical",
+        "Start where you are",
+        "Progress iteratively with feedback"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "id": "i4-mc-0265"
+    },
+    {
+      "question": "Which dimension includes the contracts and agreements between the organisation and its external service providers?",
+      "explanation": "The 'Partners and suppliers' dimension focuses on the organisation's relationships with other organisations that are involved in the design, development, deployment, and delivery of services.",
+      "options": [
+        "Partners and suppliers",
+        "Value streams and processes",
+        "Information and technology",
+        "Organisations and people"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "id": "i4-mc-0266"
+    },
+    {
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "options": [
+        "To ensure products and services continually meet stakeholder expectations for quality",
+        "To provide a good understanding of stakeholder needs, transparency, and continual engagement",
+        "To ensure that service components are available when and where they are needed",
+        "To make new and changed services and features available for use"
+      ],
+      "explanation": "The purpose of the 'Engage' activity is to provide a good understanding of stakeholder needs, transparency, and continual engagement and good relationships with all stakeholders.",
+      "question": "What is the primary purpose of the 'Engage' value chain activity?",
+      "id": "i4-mc-0267"
+    },
+    {
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "options": [
+        "Guiding principles",
+        "Governance",
+        "Continual improvement",
+        "Value streams"
+      ],
+      "explanation": "The Service Value System (SVS) includes several components: Guiding principles, Governance, Service value chain, Practices, and Continual improvement. 'Value streams' is part of the 'Four dimensions'.",
+      "question": "Which of the following is NOT a component of the ITIL Service Value System (SVS)?",
+      "id": "i4-mc-0268"
+    },
+    {
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "options": [
+        "Standard change",
+        "Emergency change",
+        "Normal change",
+        "Routine change"
+      ],
+      "explanation": "Standard changes are low-risk, pre-authorised, and follow a procedure. Normal changes need to be scheduled, assessed, and authorised following a standard process. Emergency changes are implemented as soon as possible.",
+      "question": "Which type of change is one that needs to be scheduled, assessed, and authorised following a process?",
+      "id": "i4-mc-0269"
+    },
+    {
+      "correctAnswer": 0,
+      "options": [
+        "A problem that has been analysed but has not been resolved",
+        "An incident for which the cause is already understood",
+        "A change that has been approved for implementation",
+        "A service request that has been successfully fulfilled"
+      ],
+      "type": "multiple_choice",
+      "explanation": "A known error is a problem that has been analysed but has not been resolved. It is typically documented in a Known Error Database (KEDB).",
+      "question": "How is a 'known error' defined in the context of the problem management practice?",
+      "id": "i4-mc-0270"
+    },
+    {
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "options": [
+        "Service level management",
+        "Change enablement",
+        "Incident management",
+        "Service desk"
+      ],
+      "explanation": "The service desk practice provides the entry point and single point of contact for the service provider with all of its users. It handles incidents and service requests.",
+      "question": "Which practice has the purpose of capturing demand for incident resolution and service requests?",
+      "id": "i4-mc-0271"
+    },
+    {
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "options": [
+        "Service request management",
+        "Continual improvement",
+        "Service level management",
+        "Monitoring and event management"
+      ],
+      "explanation": "The 'Continual improvement' practice includes the use of the 'Continual improvement model', which provides a structured approach to implementing improvements.",
+      "question": "Which practice provides a structured approach to implementing improvements at all levels of the organisation?",
+      "id": "i4-mc-0272"
+    },
+    {
+      "question": "Which term describes the functionality offered by a product or service to meet a particular need?",
+      "explanation": "Utility is the functionality offered by a product or service to meet a particular need (what the service does). Warranty is the assurance that it will meet agreed requirements (how it performs).",
+      "type": "multiple_choice",
+      "options": [
+        "Utility",
+        "Warranty",
+        "Value",
+        "Outcome"
+      ],
+      "correctAnswer": 0,
+      "id": "i4-mc-0273"
+    },
+    {
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "options": [
+        "A request to fix a broken laptop screen",
+        "A request to resolve a network outage affecting the entire office",
+        "A request to propose a change to a critical business application",
+        "A request for a user to be granted access to a specific folder"
+      ],
+      "explanation": "A service request is a formal request from a user for something to be provided – e.g. a request for information, access to a resource, or a mouse. Password resets are standard service requests.",
+      "question": "Which of the following is an example of a 'service request'?",
+      "id": "i4-mc-0274"
+    },
+    {
+      "options": [
+        "Service desk",
+        "Service level management",
+        "Change enablement",
+        "Problem management"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "question": "Which practice is responsible for setting clear business-based targets for service levels?",
+      "explanation": "The 'Service level management' practice provides the end-to-end visibility of the organisation's services by setting clear business-based targets for service levels.",
+      "id": "i4-mc-0275"
+    },
+    {
+      "question": "Which service value chain activity focuses on ensuring a shared understanding of the vision and improvement direction for all products and services?",
+      "explanation": "The 'Plan' activity ensures a shared understanding of the vision, current status, and improvement direction for all four dimensions and all products and services across the organisation.",
+      "options": [
+        "Improve",
+        "Design and transition",
+        "Plan",
+        "Obtain/build"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "id": "i4-mc-0276"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "Governance is the means by which an organisation is directed and controlled, ensuring that all activities align with its goals and policies.",
+      "question": "Which component of the ITIL service value system (SVS) ensures that the organisation is directed and controlled?",
+      "options": [
+        "Service Value Chain",
+        "Governance",
+        "The Guiding Principles",
+        "Continual Improvement"
+      ],
+      "correctAnswer": 1,
+      "id": "i4-mc-0277"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "question": "How does a service provider create value for a service consumer?",
+      "options": [
+        "Removing costs from the consumer and reducing consumer risk",
+        "Adding costs to the consumer and transferring all risk to the provider",
+        "Increasing the price of the service and avoiding all technical risk",
+        "Ensuring the consumer manages the underlying technology and costs alone"
+      ],
+      "explanation": "Service providers must help consumers remove costs (e.g. staff or hardware) and mitigate risks (e.g. data loss) to provide value.",
+      "id": "i4-mc-0278"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "explanation": "The 'Obtain/build' activity is responsible for ensuring that all service components are available when and where they are needed.",
+      "question": "Which service value chain activity focuses on ensuring service components are available when and where they are needed?",
+      "options": [
+        "Improve",
+        "Design and transition",
+        "Obtain/build",
+        "Deliver and support"
+      ],
+      "id": "i4-mc-0279"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "When using the guiding principle 'Progress iteratively with feedback', what is the primary purpose of a feedback loop?",
+      "options": [
+        "To ensure that all work is completed in a single, large phase",
+        "To prevent anyone from making changes without senior management approval",
+        "To eliminate the need for any service level agreements",
+        "To understand and respond to the outcome of an action and make necessary adjustments"
+      ],
+      "explanation": "Feedback loops facilitate better understanding, increase agility, and allow for course correction before significant resources are wasted.",
+      "correctAnswer": 3,
+      "id": "i4-mc-0280"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "options": [
+        "Design and transition",
+        "Plan",
+        "Engage",
+        "Obtain/build"
+      ],
+      "question": "Which value chain activity ensures that products and services continually meet stakeholder expectations for quality and cost?",
+      "explanation": "The 'Design and transition' activity ensures products and services meet stakeholder expectations for quality, costs, and time to market.",
+      "id": "i4-mc-0281"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "Workarounds are used to restore service when a full resolution is not yet available, often recorded in the problem record.",
+      "options": [
+        "A permanent fix for a known error",
+        "A temporary way to reduce or eliminate the impact of an incident or problem",
+        "A scheduled activity to update the configuration management system",
+        "A way to bypass the change enablement process for emergency changes"
+      ],
+      "question": "What is the definition of a 'workaround'?",
+      "correctAnswer": 1,
+      "id": "i4-mc-0282"
+    },
+    {
+      "correctAnswer": 3,
+      "question": "Which dimension of service management considers the roles, responsibilities, and management structures of an organisation?",
+      "options": [
+        "Information and technology",
+        "Partners and suppliers",
+        "Value streams and processes",
+        "Organisations and people"
+      ],
+      "explanation": "While technology is an enabler, this dimension focuses explicitly on the relationship between people, teams, and their management structures.",
+      "type": "multiple_choice",
+      "id": "i4-mc-0283"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "Collaboration should be transparent and visible across the whole organisation to prevent 'silos' and improve trust.",
+      "question": "In the guiding principle 'Collaborate and promote visibility', which statement is correct?",
+      "options": [
+        "Work must be hidden until it is completely finished to prevent criticism",
+        "Working together across boundaries produces results that have greater buy-in and success",
+        "Only senior managers should be involved in making decisions about improvements",
+        "Communication should be limited to formal email reports once a month"
+      ],
+      "correctAnswer": 1,
+      "id": "i4-mc-0284"
+    },
+    {
+      "explanation": "Deployment management focuses on moving the physical or logical components to different environments, but not making the service available to users.",
+      "question": "What is the purpose of the 'deployment management' practice?",
+      "options": [
+        "Moving a service into the production environment and making it available to users",
+        "Ensuring that all service level targets are met during the transition phase",
+        "Moving new or changed hardware, software or any other component to live environments",
+        "Managing the financial budget for new infrastructure projects"
+      ],
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "id": "i4-mc-0285"
+    },
+    {
+      "options": [
+        "The service desk provides a point of communication, while problem management identifies causes of incidents",
+        "The service desk manages changes, while problem management manages service levels",
+        "The service desk is responsible for governance, while problem management is responsible for delivery",
+        "The service desk creates new services, while problem management retires old services"
+      ],
+      "question": "How does the 'service desk' practice differ from the 'problem management' practice?",
+      "explanation": "The service desk handles simple incidents and requests, whereas problem management investigates root causes.",
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "id": "i4-mc-0286"
+    },
+    {
+      "question": "Which of the following describes a 'standard change'?",
+      "options": [
+        "A change that must be implemented as soon as possible after a major incident",
+        "A change that is high-risk and requires full assessment by the change authority",
+        "A low-risk, pre-authorised change that is well-understood and fully documented",
+        "A change to the organisational structure of the IT department"
+      ],
+      "explanation": "Standard changes are low-risk, pre-authorised, and follow a clear procedure, so they do not need the Change Authority's review every time.",
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "id": "i4-mc-0287"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "Which statement best describes a key consideration for 'Optimise and automate'?",
+      "options": [
+        "Automate every task regardless of its complexity or frequency",
+        "Simplify and optimise the manual process before attempting to automate it",
+        "Only use automation for tasks that involve external third-party suppliers",
+        "Focus on automation first, then see if the process needs simplification"
+      ],
+      "explanation": "Automation is a key part of the 'Optimise and automate' principle, but should only be applied to processes that are already efficient.",
+      "correctAnswer": 1,
+      "id": "i4-mc-0288"
+    },
+    {
+      "explanation": "Outputs are the tangible or intangible deliverables of an activity, whereas outcomes are the results for stakeholders enabled by those outputs.",
+      "type": "multiple_choice",
+      "question": "What is the definition of an 'output'?",
+      "options": [
+        "The result for a stakeholder enabled by one or more outputs",
+        "A configuration item that is part of a service",
+        "A tangible or intangible deliverable of an activity",
+        "The amount of money spent on a specific activity"
+      ],
+      "correctAnswer": 2,
+      "id": "i4-mc-0289"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "Service relationship management includes the joint activities performed by service providers and consumers to ensure continual value co-creation.",
+      "question": "Which statement best describes 'service relationship management'?",
+      "options": [
+        "The joint activities performed by a service provider and a service consumer to ensure value co-creation",
+        "The set of specialised organisational capabilities for enabling value for customers",
+        "The description of one or more services that meet the needs of a target consumer group",
+        "The formal arrangement between a service provider and a service consumer"
+      ],
+      "correctAnswer": 0,
+      "id": "i4-mc-0290"
+    },
+    {
+      "explanation": "The 'Think and work holistically' principle stresses that no service or component stands alone; all parts of the organisation and its activities must be integrated.",
+      "type": "multiple_choice",
+      "options": [
+        "Focus on value",
+        "Think and work holistically",
+        "Keep it simple and practical",
+        "Start where you are"
+      ],
+      "question": "Which guiding principle recommends that no part of an organisation or service should be considered in isolation?",
+      "correctAnswer": 1,
+      "id": "i4-mc-0291"
+    },
+    {
+      "correctAnswer": 3,
+      "question": "In the context of the 'customer' role, how is a 'sponsor' defined?",
+      "options": [
+        "A person who uses services",
+        "A person who defines the requirements for a service",
+        "A person who provides a service to an organisation",
+        "A person who authorises the budget for service consumption产"
+      ],
+      "explanation": "Sponsors are the individuals or groups who authorise budgets for service consumption.",
+      "type": "multiple_choice",
+      "id": "i4-mc-0292"
+    },
+    {
+      "explanation": "This principle suggests assessing existing processes and services to see what can be reused rather than starting from scratch.",
+      "type": "multiple_choice",
+      "options": [
+        "Collaborate and promote visibility",
+        "Optimise and automate",
+        "Start where you are",
+        "Focus on value"
+      ],
+      "question": "Which guiding principle suggests using measurement to understand the current state before making changes?",
+      "correctAnswer": 2,
+      "id": "i4-mc-0293"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "Warranty is the assurance that a product or service will meet agreed requirements, often summarised as 'how the service performs'.",
+      "question": "Which term refers to the assurance that a product or service will meet agreed requirements?",
+      "options": [
+        "Warranty",
+        "Utility",
+        "Value",
+        "Outcome产"
+      ],
+      "correctAnswer": 0,
+      "id": "i4-mc-0294"
+    },
+    {
+      "question": "Which practice has the purpose of systematically observing services and service components?",
+      "options": [
+        "Problem management",
+        "Monitoring and event management",
+        "Change enablement",
+        "Incident management"
+      ],
+      "explanation": "The purpose of the 'monitoring and event management' practice is to observe services and components and record changes in state as events.",
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "id": "i4-mc-0295"
+    },
+    {
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "explanation": "Information and technology is one of the four dimensions; it covers the information, knowledge, and technologies needed for service management.",
+      "question": "The use of mobile apps, blockchain, and artificial intelligence for service delivery falls under which dimension of service management?",
+      "options": [
+        "Value streams and processes",
+        "Partners and suppliers",
+        "Organisations and people",
+        "Information and technology"
+      ],
+      "id": "i4-mc-0296"
+    },
+    {
+      "explanation": "The 'Engage' activity provides a good understanding of stakeholder needs and develops transparency and good relationships.",
+      "type": "multiple_choice",
+      "options": [
+        "Plan",
+        "Design and transition产",
+        "Engage",
+        "Obtain/build产"
+      ],
+      "question": "Which service value chain activity involves Providing a good understanding of stakeholder needs?",
+      "correctAnswer": 2,
+      "id": "i4-mc-0297"
+    },
+    {
+      "correctAnswer": 0,
+      "options": [
+        "An emergency change",
+        "A standard change产",
+        "A normal change产",
+        "A proactive change产产],question:"
+      ],
+      "question": "Which type of change is typically implemented as soon as possible to resolve a major incident?",
+      "explanation": "An emergency change is one that must be implemented as soon as possible to resolve an incident or implement a security patch.",
+      "type": "multiple_choice",
+      "id": "i4-mc-0298"
+    },
+    {
+      "correctAnswer": 1,
+      "question": "Which component of the Service Value System (SVS) represents the activities an organisation performs to deliver a valuable product or service?",
+      "options": [
+        "The guiding principles",
+        "The service value chain",
+        "Governance mechanisms",
+        "Continual improvement"
+      ],
+      "type": "multiple_choice",
+      "explanation": "The central element of the SVS is the Service Value Chain, which outlines the activities needed to respond to demand and facilitate value.",
+      "id": "i4-mc-0299"
+    },
+    {
+      "explanation": "Information security management aims to protect the information needed by the organisation to conduct its business.",
+      "type": "multiple_choice",
+      "question": "Which practice aims to ensure that the organisation's information is protected against risks to its confidentiality and integrity?",
+      "options": [
+        "IT asset management",
+        "Relationship management产产",
+        "Service configuration management产产",
+        "Information security management"
+      ],
+      "correctAnswer": 3,
+      "id": "i4-mc-0300"
     }
   ],
   "mocks": []
