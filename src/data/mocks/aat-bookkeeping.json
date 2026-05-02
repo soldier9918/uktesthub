@@ -1,0 +1,633 @@
+{
+  "version": 2,
+  "topic": "aat-bookkeeping",
+  "title": "AAT Level 2 Bookkeeping",
+  "category": "finance",
+  "bank": [
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "question": "An invoice shows a list price of £500. A trade discount of 10% is applied, followed by VAT at 20%. What is the total amount due?",
+      "explanation": "Trade discount is deducted from the list price before VAT is calculated. Settlement discount is ignored when calculating VAT.",
+      "options": [
+        "£480.00",
+        "£504.00",
+        "£432.00",
+        "£518.40"
+      ],
+      "id": "ab-mc-0001"
+    },
+    {
+      "correctAnswer": 0,
+      "question": "A business purchases a new delivery van for £20,000 and pays £500 for its initial delivery to the showroom. How should these costs be classified?",
+      "explanation": "The purchase of a non-current asset is capital expenditure, while the delivery cost to get it into use is also capitalised.",
+      "options": [
+        "Capital expenditure",
+        "Revenue expenditure",
+        "Capital income",
+        "Revenue income"
+      ],
+      "type": "multiple_choice",
+      "id": "ab-mc-0002"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Debit the customer account in the Sales Ledger",
+        "Credit the customer account in the Sales Ledger",
+        "Debit the Sales Revenue account",
+        "Credit the Purchase Ledger Control account"
+      ],
+      "explanation": "A credit note issued to a customer reduces the amount they owe, requiring a credit entry in the Sales Ledger.",
+      "correctAnswer": 1,
+      "question": "When a business issues a credit note to a customer for faulty goods returned, which entry is made in the subsidiary ledger?",
+      "id": "ab-mc-0003"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "Petty cash is an asset. To increase it (replenish), we debit the asset and credit the bank.",
+      "question": "What is the double entry to record the replenishment of the petty cash float from the main bank account?",
+      "correctAnswer": 3,
+      "options": [
+        "Debit Bank; Credit Petty Cash",
+        "Debit Expenses; Credit Petty Cash",
+        "Debit Petty Cash; Credit Expenses",
+        "Debit Petty Cash; Credit Bank"
+      ],
+      "id": "ab-mc-0004"
+    },
+    {
+      "options": [
+        "Bulk buying discount",
+        "Trade discount",
+        "Cash discount",
+        "Product discount"
+      ],
+      "explanation": "Cash discount (settlement discount) is offered to encourage customers to pay their invoices more quickly.",
+      "question": "Which type of discount is offered to a credit customer to encourage prompt payment of an invoice?",
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "id": "ab-mc-0005"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "question": "Which of the following is a fixed payment of the same amount paid at regular intervals, set up by the account holder?",
+      "explanation": "A standing order is a fixed amount paid regularly; it is an automated payment handled by the bank.",
+      "options": [
+        "Standing order",
+        "Direct debit",
+        "BACS transfer_",
+        "Cheque payment"
+      ],
+      "id": "ab-mc-0006"
+    },
+    {
+      "options": [
+        "Purchases Day Book",
+        "Petty Cash Book",
+        "Cash Book (Bank column)",
+        "Sales Day Book"
+      ],
+      "explanation": "Small cash payments for tea, coffee, or cleaning materials are typically recorded in the petty cash book.",
+      "question": "Where would a bookkeeper record a £5.00 cash payment for office milk and sugar?",
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "id": "ab-mc-0007"
+    },
+    {
+      "explanation": "The trial balance ensures that total debits equal total credits, proving the arithmetic accuracy of the double entry.",
+      "correctAnswer": 3,
+      "question": "What is the primary purpose of preparing a trial balance?",
+      "options": [
+        "To calculate the profit for the year",
+        "To list all the assets of the business",
+        "To record daily transactions",
+        "To check the mathematical accuracy of the ledger balances"
+      ],
+      "type": "multiple_choice",
+      "id": "ab-mc-0008"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Error of commission",
+        "Error of principle",
+        "Error of omission",
+        "Compensating error"
+      ],
+      "explanation": "An error of commission occurs when the correct amount is posted to the wrong personal account (e.g., J. Smith instead of A. Smith).",
+      "correctAnswer": 0,
+      "question": "A payment from a customer, J. Green, was correctly recorded in the cash book but posted to the account of J. Grant. What type of error is this?",
+      "id": "ab-mc-0009"
+    },
+    {
+      "question": "In which book of prime entry should the purchase of office equipment on credit be recorded?",
+      "correctAnswer": 2,
+      "explanation": "The journal is used for non-routine transactions like the purchase of non-current assets on credit.",
+      "options": [
+        "Cash Book",
+        "Purchases Day Book",
+        "The Journal",
+        "Sales Day Book"
+      ],
+      "type": "multiple_choice",
+      "id": "ab-mc-0010"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "In the context of VAT, what does 'input tax' refer to?",
+      "correctAnswer": 1,
+      "explanation": "Input tax is the VAT paid on purchases. Output tax is the VAT charged on sales. Small businesses claim back input tax.",
+      "options": [
+        "The VAT charged on sales to customers",
+        "The VAT paid on business purchases and expenses",
+        "The total VAT owed to HMRC",
+        "The discount given for early payment"
+      ],
+      "id": "ab-mc-0011"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Debit Bank; Credit Capital",
+        "Debit Capital; Credit Bank",
+        "Debit Bank; Credit Drawings",
+        "Debit Drawings; Credit Bank"
+      ],
+      "correctAnswer": 3,
+      "question": "What is the correct double entry to record the owner taking £500 from the business bank account for personal use?",
+      "explanation": "Drawings (money taken by the owner) is a debit entry, and the bank (money leaving) is a credit entry.",
+      "id": "ab-mc-0012"
+    },
+    {
+      "question": "Which of the following transactions is recorded in the Sales Day Book?",
+      "correctAnswer": 2,
+      "options": [
+        "Cash sales",
+        "Purchase returns",
+        "Credit sales",
+        "Bad debts written off"
+      ],
+      "explanation": "The Sales Day Book is used solely for recording sales made on credit terms. Cash sales are recorded in the Cash Book.",
+      "type": "multiple_choice",
+      "id": "ab-mc-0013"
+    },
+    {
+      "correctAnswer": 0,
+      "question": "A supplier's account in the Purchase Ledger has a credit balance. What does this represent?",
+      "type": "multiple_choice",
+      "explanation": "A credit balance on a supplier's account in the Purchase Ledger indicates that the business owes money to that supplier (a liability).",
+      "options": [
+        "The business owes money to the supplier.",
+        "The supplier owes money to the business.",
+        "The business has overpaid the supplier.",
+        "The supplier has offered a trade discount."
+      ],
+      "id": "ab-mc-0014"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "Financial statements must be prepared based on actual facts and evidence, such as invoices and receipts, to ensure they are objective.",
+      "options": [
+        "Going concern",
+        "Accruals",
+        "Objectivity",
+        "Consistency"
+      ],
+      "correctAnswer": 2,
+      "question": "Which accounting concept requires that business transactions are supported by objective evidence, such as a source document?",
+      "id": "ab-mc-0015"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "According to the DEAD CLIC rule, an increase in an asset (Machinery) is a debit, and an increase in a liability (Trade Payables) is a credit.",
+      "options": [
+        "Debit Trade Payables; Credit Machinery",
+        "Debit Machinery; Credit Trade Payables",
+        "Debit Purchases; Credit Trade Payables",
+        "Debit Machinery; Credit Bank Balance"
+      ],
+      "correctAnswer": 1,
+      "question": "A business buys a piece of machinery on credit. What is the correct double entry to record this transaction?",
+      "id": "ab-mc-0016"
+    },
+    {
+      "correctAnswer": 3,
+      "question": "Which of the following is considered both a book of prime entry and a ledger account?",
+      "type": "multiple_choice",
+      "options": [
+        "Sales Ledger",
+        "Purchase Ledger",
+        "General Journal",
+        "Petty Cash Book"
+      ],
+      "explanation": "The petty cash book acts as both a book of prime entry and a ledger account within the double entry system.",
+      "id": "ab-mc-0017"
+    },
+    {
+      "question": "An invoice shows a list price of £800. A trade discount of 10% is applied, plus VAT at 20%. What is the total amount payable?",
+      "correctAnswer": 0,
+      "explanation": "The trade discount is deducted first (£800 - £80 = £720). VAT is then calculated on the discounted amount (£720 x 20% = £144). Total = £864.",
+      "options": [
+        "£864.00",
+        "£880.00",
+        "£960.00",
+        "£816.00"
+      ],
+      "type": "multiple_choice",
+      "id": "ab-mc-0018"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "Direct debits are instructions to the bank to allow a third party to collect varying amounts from an account.",
+      "options": [
+        "Standing order",
+        "Direct debit",
+        "BACS transfer",
+        "Credit transfer"
+      ],
+      "correctAnswer": 1,
+      "question": "Which of the following is a method of payment where the payee (the person receiving the money) initiates the request for payment from the bank?",
+      "id": "ab-mc-0019"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "Returning goods bought on credit reduces the liability to the supplier (Debit) and reduces the cost of purchases (Credit).",
+      "options": [
+        "Debit Sales Returns; Credit Trade Receivables",
+        "Debit Trade Payables; Credit Bank",
+        "Debit Trade Payables; Credit Purchase Returns",
+        "Debit Purchase Returns; Credit Trade Payables"
+      ],
+      "correctAnswer": 2,
+      "question": "What is the double entry for returning goods previously bought on credit?",
+      "id": "ab-mc-0020"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "The imprest system restores the cash on hand to a specific starting amount (the float) at the end of each period.",
+      "options": [
+        "The amount of cash in the box never changes.",
+        "The float is replenished to a fixed amount at the start of each period.",
+        "The petty cashier is allowed to spend an unlimited amount.",
+        "The float is increased by the amount of VAT claimed."
+      ],
+      "correctAnswer": 1,
+      "question": "What is the main characteristic of the imprest system in petty cash?",
+      "id": "ab-mc-0021"
+    },
+    {
+      "correctAnswer": 3,
+      "question": "How is a set-off between the Sales Ledger and the Purchase Ledger recorded?",
+      "type": "multiple_choice",
+      "options": [
+        "Transposition error",
+        "Credit note entry",
+        "Customer refund",
+        "Contra entry"
+      ],
+      "explanation": "Contra entries are used to offset balances when a business is both a customer and a supplier to the same entity.",
+      "id": "ab-mc-0022"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "The VAT is calculated by dividing the gross amount by 6 (for 20% VAT): £120 / 6 = £20. Alternatively: (£120 / 120) * 20 = £20.",
+      "options": [
+        "£24.00",
+        "£18.00",
+        "£20.00",
+        "£100.00"
+      ],
+      "correctAnswer": 2,
+      "question": "A business receives a VAT invoice for £120.00 including VAT at 20%. What is the VAT element of this invoice?",
+      "id": "ab-mc-0023"
+    },
+    {
+      "question": "Where would a bookkeeper record the initial opening balances when starting a new set of accounting records?",
+      "correctAnswer": 0,
+      "explanation": "The General Journal is used for non-routine transactions that do not fit into other specialized day books, such as the opening of a new business.",
+      "options": [
+        "General Journal",
+        "Cash Book",
+        "Sales Day Book",
+        "Purchase Day Book"
+      ],
+      "type": "multiple_choice",
+      "id": "ab-mc-0024"
+    },
+    {
+      "question": "Which document should a business issue to a customer who has returned faulty goods?",
+      "options": [
+        "A sales invoice",
+        "A purchase order",
+        "A credit note",
+        "A debit note"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "explanation": "A credit note is issued to a customer to acknowledge that goods have been returned or an overcharge has occurred, reducing the amount they owe.",
+      "id": "ab-mc-0025"
+    },
+    {
+      "explanation": "The Purchase Day Book is used specifically to record all invoices for goods or services bought on credit from suppliers.",
+      "correctAnswer": 0,
+      "options": [
+        "Purchase Day Book",
+        "Sales Day Book",
+        "Cash Book",
+        "General Journal Lake"
+      ],
+      "type": "multiple_choice",
+      "question": "Which book of prime entry is used to record the receipt of a purchase invoice for goods bought on credit?",
+      "id": "ab-mc-0026"
+    },
+    {
+      "explanation": "The Sales Ledger Control Account represents the total amount owed to the business by its credit customers (trade receivables).",
+      "correctAnswer": 1,
+      "options": [
+        "Total amount owed to suppliers",
+        "Total amount owed by credit customers",
+        "Total cash sales for the period",
+        "Total value of inventory held"
+      ],
+      "type": "multiple_choice",
+      "question": "What does the balance on the Sales Ledger Control Account represent?",
+      "id": "ab-mc-0027"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Direct Debit",
+        "BACS transfer",
+        "CHAPS payment",
+        "Standing Order"
+      ],
+      "question": "Which of the following is a fixed payment of the same amount paid at regular intervals, set up by the account holder?",
+      "explanation": "A standing order is a fixed payment instructed by the account holder, whereas a direct debit allows the payee to request varying amounts.",
+      "correctAnswer": 3,
+      "id": "ab-mc-0028"
+    },
+    {
+      "explanation": "The dual aspect concept states that every transaction has two equal and opposite effects (a debit and a credit) in the accounting records.",
+      "correctAnswer": 2,
+      "options": [
+        "Business Entity concept",
+        "Accruals concept",
+        "Dual Aspect concept",
+        "Prudence concept"
+      ],
+      "type": "multiple_choice",
+      "question": "The principle that every transaction affects at least two accounts is known as the:",
+      "id": "ab-mc-0029"
+    },
+    {
+      "explanation": "Wages are an expense; increasing an expense requires a debit. Bank is an asset; decreasing an asset requires a credit.",
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "options": [
+        "Debit Wages, Credit Bank",
+        "Debit Bank, Credit Wages",
+        "Debit Wages, Credit Drawings",
+        "Debit Cash, Credit Wages"
+      ],
+      "question": "What is the correct double entry to record the payment of staff wages by bank transfer?",
+      "id": "ab-mc-0030"
+    },
+    {
+      "correctAnswer": 2,
+      "explanation": "The net amount is £360. 20% of £360 is £72. Total = £360 + £72 = £432.",
+      "question": "An invoice shows a list price of £400. A trade discount of 10% is applied, followed by VAT at 20%. What is the total amount due?",
+      "options": [
+        "£480.00",
+        "£400.00",
+        "£432.00",
+        "£384.00"
+      ],
+      "type": "multiple_choice",
+      "id": "ab-mc-0031"
+    },
+    {
+      "question": "In which book of prime entry would a business record the purchase of a delivery van on credit?",
+      "options": [
+        "Cash Book",
+        "The Journal",
+        "Sales Day Book",
+        "Petty Cash Book"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "explanation": "The journal is used for non-routine transactions that do not fit into other books of prime entry, such as the purchase of non-current assets on credit.",
+      "id": "ab-mc-0032"
+    },
+    {
+      "correctAnswer": 3,
+      "explanation": "A bank reconciliation statement is an internal document used to explain the differences between the cash book balance and the bank statement balance.",
+      "question": "Which of the following best describes a bank reconciliation statement?",
+      "type": "multiple_choice",
+      "options": [
+        "A ledger account within the nominal ledger",
+        "A document sent to the bank to correct errors",
+        "A part of the Trial Balance",
+        "An internal document to match the cash book with the bank statement"
+      ],
+      "id": "ab-mc-0033"
+    },
+    {
+      "explanation": "An error of commission occurs when the correct amount is entered into the correct type of account, but the wrong person's account (e.g., A. Smith instead of B. Smith).",
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "options": [
+        "Error of commission",
+        "Error of principle",
+        "Error of omission",
+        "Compensating error"
+      ],
+      "question": "A payment to a supplier, P. Walsh, was correctly recorded in the cash book but posted to the account of P. Welch. What type of error is this?",
+      "id": "ab-mc-0034"
+    },
+    {
+      "explanation": "To calculate the net amount from a VAT-inclusive figure (at 20%), divide by 1.2 (£150 / 1.2 = £125).",
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "options": [
+        "£120.00",
+        "£125.00",
+        "£130.00",
+        "£180.00"
+      ],
+      "question": "A business is registered for VAT. It receives a utility bill for £150.00 including VAT at 20%. What is the net (exclusive of VAT) amount?",
+      "id": "ab-mc-0035"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "The customer owes the business money",
+        "The business has made a profit on that customer",
+        "The customer has overpaid their account (an amount owed to the customer)",
+        "The customer has been given a trade discount"
+      ],
+      "question": "What does a credit balance in an individual customer’s account in the Sales Ledger usually indicate?",
+      "explanation": "A credit balance in the Sales Ledger (a customer's personal account) indicates that the business owes the customer money, which is an 'other' liability.",
+      "correctAnswer": 2,
+      "id": "ab-mc-0036"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Cash book",
+        "The journal",
+        "Sales day book",
+        "Purchase day book"
+      ],
+      "explanation": "The journal is the book of prime entry used for non-regular transactions that do not fit into other specialized books.",
+      "question": "Which book of prime entry is used to record the write-off of an irrecoverable debt?",
+      "correctAnswer": 1,
+      "id": "ab-mc-0037"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "The Journal",
+        "Purchase Day Book",
+        "Petty Cash Book",
+        "Sales Ledger"
+      ],
+      "question": "Which of the following is both a book of prime entry and part of the double entry system?",
+      "correctAnswer": 2,
+      "explanation": "The Petty Cash Book acts as a book of prime entry (recording the source document) and as a ledger account within the double entry system.",
+      "id": "ab-mc-0038"
+    },
+    {
+      "explanation": "A debit note is sent by the buyer to the seller to formally request a credit note for returned or overcharged goods.",
+      "correctAnswer": 0,
+      "question": "Which document is sent by a purchaser to a supplier to request a refund for damaged goods?",
+      "options": [
+        "Debit note",
+        "Credit note",
+        "Purchase invoice",
+        "Remittance advice"
+      ],
+      "type": "multiple_choice",
+      "id": "ab-mc-0039"
+    },
+    {
+      "options": [
+        "Standing order village",
+        "Cheque payment",
+        "Direct debit",
+        "BACS transfer village"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "question": "Which of the following is an electronic method of paying a batch of employees' salaries directly into their bank accounts?",
+      "explanation": "A BACS (Bankers' Automated Clearing System) transfer is an electronic method used to move funds directly between bank accounts.",
+      "id": "ab-mc-0040"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "The Purchase Ledger",
+        "The Cash Book",
+        "The Purchase Day Book",
+        "The Sales Day Book"
+      ],
+      "explanation": "The Cash Book records the bank and cash transactions; the Purchase Ledger only contains the individual supplier accounts.",
+      "question": "Which book of prime entry is used to record payments made to credit suppliers?",
+      "correctAnswer": 1,
+      "id": "ab-mc-0041"
+    },
+    {
+      "explanation": "Adding VAT to the net amount (£500 * 1.20) gives £600.00.",
+      "correctAnswer": 2,
+      "question": "A business buys goods for £500 (excluding VAT). If VAT is charged at the standard rate of 20%, what is the total amount due?",
+      "options": [
+        "£520.00",
+        "£510.00",
+        "£600.00",
+        "£400.00"
+      ],
+      "type": "multiple_choice",
+      "id": "ab-mc-0042"
+    },
+    {
+      "options": [
+        "A cheque written by the business but not yet processed by the bank.",
+        "A cheque received from a customer that has bounced.",
+        "A cheque received by the business but not yet taken to the bank.",
+        "An automated payment like a standing order."
+      ],
+      "type": "multiple_choice",
+      "explanation": "An unpresented cheque is one that the business has written and recorded, but the supplier has not yet deposited at their bank.",
+      "correctAnswer": 0,
+      "question": "In a bank reconciliation, what is an 'unpresented cheque'? village",
+      "id": "ab-mc-0043"
+    },
+    {
+      "explanation": "According to the DEAD CLIC rule, Dividends, Expenses, and Assets are increased by debits. Liabilities, Income, and Capital are increased by credits.",
+      "question": "Which of the following entries correctly records the receipt of a new bank loan?",
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "options": [
+        "Debit Equipment, Credit Cash",
+        "Debit Bank, Credit Sales",
+        "Debit Rent, Credit Bank",
+        "Debit Bank, Credit Loan"
+      ],
+      "id": "ab-mc-0044"
+    },
+    {
+      "explanation": "A Trial Balance checks the mathematical accuracy of the double entry by ensuring total debits equal total credits.",
+      "question": "What is the primary purpose of preparing a Trial Balance? village",
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "options": [
+        "To calculate the profit for the year.",
+        "To check that the total debits equal total credits.",
+        "To list all the assets and liabilities of the business.",
+        "To record transactions in chronological order."
+      ],
+      "id": "ab-mc-0045"
+    },
+    {
+      "options": [
+        "Revenue expense",
+        "Current liability village",
+        "Drawings village",
+        "Trade payables village"
+      ],
+      "type": "multiple_choice",
+      "explanation": "Drawings represent the owner taking value out of the business, which reduces the business's liability to the owner (Capital).",
+      "correctAnswer": 2,
+      "question": "What is the correct term for money or goods taken out of the business by the owner for personal use?",
+      "id": "ab-mc-0046"
+    },
+    {
+      "options": [
+        "Debit Van account, Credit Bank account",
+        "Debit Bank account, Credit Van account village",
+        "Debit Purchases account, Credit Bank account village",
+        "Debit Van account, Credit Sales account village"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "question": "What is the double entry for purchasing a delivery van for £12,000 in cash? village",
+      "explanation": "The purchase of a non-current asset for cash involves two asset accounts: one increases (Van) and one decreases (Bank). village",
+      "id": "ab-mc-0047"
+    },
+    {
+      "question": "Which type of discount is deducted from the list price on an invoice before the VAT is calculated? village",
+      "correctAnswer": 3,
+      "explanation": "The Sales Day Book records the list price and trade discount, which determines the 'net' value before VAT is calculated. village",
+      "type": "multiple_choice",
+      "options": [
+        "Cash discounts village",
+        "Prompt payment discounts village,",
+        "Settlement discounts village,",
+        "Trade discounts village"
+      ],
+      "id": "ab-mc-0048"
+    }
+  ],
+  "mocks": []
+}

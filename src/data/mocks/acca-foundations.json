@@ -1,0 +1,945 @@
+{
+  "version": 2,
+  "topic": "acca-foundations",
+  "title": "ACCA Foundations (FIA) Practice",
+  "category": "finance",
+  "bank": [
+    {
+      "explanation": "Capital expenditure is spent on non-current assets or improving their earning capacity, while revenue expenditure relates to day-to-day running costs.",
+      "type": "multiple_choice",
+      "options": [
+        "Repairing a broken window in the office",
+        "Purchasing fuel for delivery vans",
+        "Installing a new security system in the warehouse",
+        "Paying the annual insurance premium for the premises"
+      ],
+      "correctAnswer": 2,
+      "question": "Which of the following would be classified as capital expenditure for a retail business?",
+      "id": "af-mc-0001"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "options": [
+        "£29,500",
+        "£33,000",
+        "£36,500",
+        "£26,000"
+      ],
+      "explanation": "Net assets equals capital plus profit minus drawings ($25,000 + $8,000 - $3,500 = $29,500).",
+      "question": "A sole trader has opening capital of £25,000. During the year, they made a profit of £8,000 and withdrew £3,500 for personal use. What is the value of net assets at the end of the year?",
+      "id": "af-mc-0002"
+    },
+    {
+      "question": "According to the IASB Conceptual Framework, which of the following is an enhancing qualitative characteristic of financial information?",
+      "explanation": "Qualitative characteristics include relevance, faithful representation, comparability, verifiability, timeliness, and understandability.",
+      "correctAnswer": 3,
+      "options": [
+        "Prudence",
+        "Historical cost",
+        "Accruals",
+        "Understandability"
+      ],
+      "type": "multiple_choice",
+      "id": "af-mc-0003"
+    },
+    {
+      "question": "Which document is sent to a customer when they return goods that were previously bought on credit?",
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "options": [
+        "Purchase invoice",
+        "Credit note",
+        "Debit note",
+        "Sales order"
+      ],
+      "explanation": "A credit note is issued to a customer to acknowledge that goods have been returned and that their debt is reduced.",
+      "id": "af-mc-0004"
+    },
+    {
+      "explanation": "The Imprest system means the petty cash is topped up to a pre-set fixed amount (float) at the end of each period.",
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "options": [
+        "The petty cashier is paid a fixed salary each month.",
+        "All small cash payments must be approved by the Finance Director.",
+        "The petty cash float is topped up to a fixed amount at the end of each period.",
+        "Cash is only issued if a valid receipt is provided after the purchase."
+      ],
+      "question": "What is the primary feature of an 'imprest' system for petty cash?",
+      "id": "af-mc-0005"
+    },
+    {
+      "explanation": "The trial balance ensures that the total of all debit balances equals the total of all credit balances in the ledger.",
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "options": [
+        "To calculate the net profit for the period",
+        "To check the arithmetical accuracy of the double-entry bookkeeping",
+        "To list all the assets and liabilities of the business",
+        "To ensure that no transactions have been completely omitted from the records"
+      ],
+      "question": "What is the main purpose of preparing a trial balance?",
+      "id": "af-mc-0006"
+    },
+    {
+      "question": "How is trade discount usually treated in a business's accounting records?",
+      "explanation": "Trade discount is deducted on the invoice before the transaction is recorded; only the net amount is entered into the accounts.",
+      "type": "multiple_choice",
+      "options": [
+        "It is deducted from the list price before the invoice is recorded in the accounts.",
+        "It is recorded as an expense in the Statement of Profit or Loss.",
+        "It is shown as 'Other Income' in the accounting records.",
+        "It is only recorded if the customer pays within a specified timeframe."
+      ],
+      "correctAnswer": 0,
+      "id": "af-mc-0007"
+    },
+    {
+      "question": "Which of the following items requires an adjustment to the cash book balance before reconciling it to the bank statement?",
+      "options": [
+        "Unpresented cheques",
+        "Outstanding lodgements",
+        "Bank charges not yet recorded",
+        "An error made by the bank"
+      ],
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "explanation": "Bank charges appear on the bank statement but not in the cash book, so they must be adjusted in the cash book before reconciliation.",
+      "id": "af-mc-0008"
+    },
+    {
+      "explanation": "An error of principle occurs when an entry is made in the wrong type of account (e.g., treating capital expenditure as revenue expenditure).",
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "options": [
+        "A transaction is completely omitted from the ledger accounts.",
+        "Repair costs for a vehicle are debited to the Vehicles non-current asset account.",
+        "A sale to J. Smith is accidentally debited to the account of A. Smith.",
+        "The digits in a number are swapped (e.g. £45 written as £54) in both accounts."
+      ],
+      "question": "Which description best defines an 'error of principle' in bookkeeping?",
+      "id": "af-mc-0009"
+    },
+    {
+      "question": "A business pays an annual insurance premium of £1,200 on 1 January. Its financial year ends on 31 March. What is the insurance prepayment at the year-end?",
+      "explanation": "Under the accruals concept, the expense must match the period it relates to (£1,200 / 12 months * 3 months = £300).",
+      "options": [
+        "£300",
+        "£1,200",
+        "£900",
+        "£400"
+      ],
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "id": "af-mc-0010"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "options": [
+        "£2,500",
+        "£1,500",
+        "£2,000",
+        "£8,000"
+      ],
+      "explanation": "The straight-line method calculates depreciation as (Cost - Residual Value) / Useful Life. (£10,000 - £2,000) / 4 = £2,000.",
+      "question": "A machine costs £10,000 and is expected to have a useful life of 4 years with a residual value of £2,000. Using the straight-line method, what is the annual depreciation charge?",
+      "id": "af-mc-0011"
+    },
+    {
+      "explanation": "Inventory should be valued at the lower of cost (£5,000) and net realisable value (£6,000 - £1,500 = £4,500). Lower is £4,500.",
+      "correctAnswer": 2,
+      "options": [
+        "£5,000",
+        "£6,000",
+        "£4,500",
+        "£3,500"
+      ],
+      "type": "multiple_choice",
+      "question": "An item of inventory cost £5,000. It can be sold for £6,000, but requires £1,500 of repairs to make it saleable. At what value should it be recorded in the accounts?",
+      "id": "af-mc-0012"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "To increase the speed at which financial transactions are recorded",
+        "To reduce the risk of fraud and error occurring within the business",
+        "To guarantee that the business will make a profit every year",
+        "To ensure the bank balance always matches the cash book balance"
+      ],
+      "explanation": "Internal controls like the separation of duties are designed to reduce the risk of fraud and error by ensuring no single person handles all aspects of a transaction.",
+      "correctAnswer": 1,
+      "question": "What is the primary objective of implementing a system of internal controls in a business?",
+      "id": "af-mc-0013"
+    },
+    {
+      "question": "How should accrued income be treated in the statement of financial position?",
+      "correctAnswer": 0,
+      "explanation": "Accrued income is income earned but not yet received; it is shown as a current asset as it represents money owed to the business.",
+      "options": [
+        "As a current asset",
+        "As a current liability",
+        "As an expense in the profit and loss account",
+        "As a deduction from capital"
+      ],
+      "type": "multiple_choice",
+      "id": "af-mc-0014"
+    },
+    {
+      "question": "Which of the following transactions would NOT result in a change to the total capital (equity) of a business?",
+      "correctAnswer": 2,
+      "explanation": "Purchasing a non-current asset for cash is a 'capital' transaction; it changes the form of the assets (cash to machinery) but not the total equity.",
+      "options": [
+        "Introduction of fresh capital by the owner",
+        "Making a net profit during the financial period",
+        "Purchasing a new piece of machinery for cash",
+        "The owner withdrawing cash for personal use"
+      ],
+      "type": "multiple_choice",
+      "id": "af-mc-0015"
+    },
+    {
+      "question": "Which of the following errors would cause the totals of a trial balance to remain in agreement?",
+      "correctAnswer": 3,
+      "explanation": "An error of omission occurs when a transaction is completely left out of the accounting records; therefore, the trial balance will still balance.",
+      "options": [
+        "Extraction error",
+        "Transposition error",
+        "Casting error",
+        "Error of omission"
+      ],
+      "type": "multiple_choice",
+      "id": "af-mc-0016"
+    },
+    {
+      "question": "A business receives a bank statement showing a debit balance of £450. What does this indicate?",
+      "correctAnswer": 0,
+      "options": [
+        "The business has a bank overdraft",
+        "The business has money in the bank",
+        "The bank has made a mistake in the calculations",
+        "A customer has paid money into the business account"
+      ],
+      "explanation": "A debit balance on the bank statement indicates that the customer has an overdraft, meaning the customer owes the bank money.",
+      "type": "multiple_choice",
+      "id": "af-mc-0017"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "The business directors",
+        "The local tax authorities (HMRC)",
+        "The shareholders of the company",
+        "The finance manager of the company"
+      ],
+      "explanation": "External auditors are appointed by shareholders to provide an independent opinion on whether the financial statements show a true and fair view.",
+      "correctAnswer": 2,
+      "question": "In a limited company, to whom is the external auditor primarily responsible?",
+      "id": "af-mc-0018"
+    },
+    {
+      "correctAnswer": 1,
+      "question": "What are the two fundamental qualitative characteristics of financial information according to the IASB Conceptual Framework?",
+      "type": "multiple_choice",
+      "explanation": "According to the IASB Framework, the two fundamental qualitative characteristics are relevance and faithful representation.",
+      "options": [
+        "Comparability and Verifiability",
+        "Relevance and Faithful Representation",
+        "Timeliness and Understandability",
+        "Accruals and Going Concern"
+      ],
+      "id": "af-mc-0019"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "£4,600",
+        "£4,800",
+        "£3,200",
+        "£5,700"
+      ],
+      "explanation": "Closing inventory is £3,200 + £5,700 - £4,100 = £4,800. Net realisable value (£4,600) is lower than cost, so it must be valued at £4,600.",
+      "correctAnswer": 0,
+      "question": "A business had opening inventory of £3,200 and purchases of £5,700. Cost of goods sold was £4,100. The net realisable value of remaining inventory is £4,600. What is the value of closing inventory?",
+      "id": "af-mc-0020"
+    },
+    {
+      "correctAnswer": 2,
+      "question": "What is the main purpose of a suspense account in bookkeeping?",
+      "type": "multiple_choice",
+      "options": [
+        "To record the owner's personal drawings",
+        "To keep track of small cash expenses",
+        "To temporarily balance the trial balance when an error has occurred",
+        "To record income that has not yet been received"
+      ],
+      "explanation": "The suspense account is used as a temporary 'holding' account when the trial balance fails to balance due to a bookkeeping error.",
+      "id": "af-mc-0021"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "The company has a limited time to trade before it must close",
+        "The directors are responsible for all debts of the business personally",
+        "The company can only have a limited number of shareholders",
+        "Shareholders are only liable for the amount they invested in the company"
+      ],
+      "explanation": "Limited liability means shareholders only risk the amount they invested; their personal assets are protected from the company's creditors.",
+      "correctAnswer": 3,
+      "question": "What does the term 'limited liability' mean in the context of a limited company?",
+      "id": "af-mc-0022"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Debit Purchases, Credit Trade Payables",
+        "Debit Trade Payables, Credit Purchases",
+        "Debit Cash, Credit Purchases",
+        "Debit Sales, Credit Trade Payables"
+      ],
+      "explanation": "To increase an asset (purchases) and increase a liability (trade payables), you debit the expense/asset and credit the liability.",
+      "correctAnswer": 0,
+      "question": "What is the correct double entry to record the purchase of goods on credit?",
+      "id": "af-mc-0023"
+    },
+    {
+      "options": [
+        "Consistency",
+        "Going Concern",
+        "Materiality",
+        "Prudence"
+      ],
+      "explanation": "The 'Going Concern' concept assumes the business will continue to operate for the foreseeable future (at least 12 months).",
+      "type": "multiple_choice",
+      "question": "Which accounting concept assumes that a business will continue to operate for the foreseeable future?",
+      "correctAnswer": 1,
+      "id": "af-mc-0024"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "explanation": "The purchases day book records all credit purchases; cash purchases are recorded in the cash book.",
+      "question": "What is the primary function of the purchases day book?",
+      "options": [
+        "All purchases made by the business",
+        "Purchases of goods on credit only",
+        "Purchases of non-current assets only",
+        "Purchases of goods for cash only"
+      ],
+      "id": "af-mc-0025"
+    },
+    {
+      "options": [
+        "Gross profit minus expenses",
+        "Sales revenue minus cost of goods sold",
+        "Opening capital plus profit for the year",
+        "Total assets minus total liabilities"
+      ],
+      "question": "How is the net profit of a business calculated?",
+      "explanation": "Net profit is calculated by taking the gross profit and subtracting all other operating expenses.",
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "id": "af-mc-0026"
+    },
+    {
+      "explanation": "The bank statement balance is the starting point for a bank reconciliation; it is not part of the ledger system.",
+      "question": "Which of the following balances would NOT be included in a trial balance?",
+      "options": [
+        "Purchase ledger control account balance",
+        "Petty cash book balance",
+        "Bank statement balance",
+        "Sales ledger control account balance"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "id": "af-mc-0027"
+    },
+    {
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "question": "Which of the following is an internal source document used to initiate a transaction?",
+      "options": [
+        "Sales invoice",
+        "Credit note received",
+        "Purchase order",
+        "Bank statement"
+      ],
+      "explanation": "A bank charter is a high-level permission document, while a remittance advice is an external document sent to a supplier.",
+      "id": "af-mc-0028"
+    },
+    {
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "options": [
+        "Consistency concept",
+        "Business entity concept",
+        "Going concern concept",
+        "Accruals concept"
+      ],
+      "question": "Which accounting concept states that costs should be matched against the revenue they help to generate?",
+      "explanation": "Under the accruals concept, income and expenses are matched to the period in which they occur, not when cash is moved.",
+      "id": "af-mc-0029"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "explanation": "Depreciation is a non-cash expense that allocates the cost of an asset over its useful life.",
+      "options": [
+        "Allocation of the cost of a non-current asset over its useful life",
+        "The actual cash paid to replace a non-current asset",
+        "The decline in the market value of a non-current asset",
+        "The total amount of maintenance spent on an asset"
+      ],
+      "question": "What is the best definition of depreciation?",
+      "id": "af-mc-0030"
+    },
+    {
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "options": [
+        "Current asset",
+        "Current liability",
+        "Non-current liability",
+        "Expense in the income statement"
+      ],
+      "question": "If a business is registered for VAT, how should the VAT collected on sales be classified?",
+      "explanation": "Sales tax is a liability to the tax authorities; it is not an income or expense for the business.",
+      "id": "af-mc-0031"
+    },
+    {
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "options": [
+        "Error of principle",
+        "Error of omission",
+        "Error of commission",
+        "Compensating error"
+      ],
+      "question": "A payment to supplier A. Smith was correctly entered in the cash book but posted to the account of A. Smythe. What type of error is this?",
+      "explanation": "An error of commission occurs when an amount is posted to the correct side of the correct type of account, but the wrong personal account.",
+      "id": "af-mc-0032"
+    },
+    {
+      "explanation": "Drawings represent the owner taking value out of the business, which reduces the total equity (capital).",
+      "question": "Which of the following is the correct double entry to record the owner taking cash out of the business for personal use?",
+      "options": [
+        "Debit Drawings, Credit Cash",
+        "Debit Cash, Credit Drawings",
+        "Debit Capital, Credit Cash",
+        "Debit Expenses, Credit Cash"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "id": "af-mc-0033"
+    },
+    {
+      "options": [
+        "Discounts allowed to customers for early payment",
+        "Money owed by the business to its suppliers",
+        "Refunds given to customers for returned goods",
+        "Amounts due from customers that are considered irrecoverable"
+      ],
+      "question": "What are 'bad debts' in the context of a business's accounts?",
+      "explanation": "Bad debts are receivables that are definitely not going to be paid and are written off as an expense.",
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "id": "af-mc-0034"
+    },
+    {
+      "options": [
+        "A debit to the bank account",
+        "A credit note issued to the customer",
+        "A purchase invoice from the customer",
+        "A cheque sent to the customer"
+      ],
+      "question": "When a customer returns goods that were bought on credit, what document should the seller issue?",
+      "explanation": "A credit note is issued to a customer to cancel or reduce the amount of an original invoice due to returns or errors.",
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "id": "af-mc-0035"
+    },
+    {
+      "explanation": "Internal control systems help prevent and detect fraud/errors and ensure the business operates efficiently.",
+      "options": [
+        "To ensure the business makes a profit every year",
+        "To eliminate the need for an external audit",
+        "To safeguard assets and ensure the reliability of records",
+        "To guarantee that the bank balance is always positive"
+      ],
+      "question": "Which of the following is a key purpose of internal control procedures?",
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "id": "af-mc-0036"
+    },
+    {
+      "question": "A petty cash system has an imprest amount of £200. During the month, vouchers totaling £95 were paid. How much is needed to restore the imprest balance?",
+      "options": [
+        "£200",
+        "£95",
+        "£105",
+        "£300"
+      ],
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "explanation": "The imprest amount is the fixed balance. To restore it, the business must top up the cash box by the total of the expenses paid out (£95).",
+      "id": "af-mc-0037"
+    },
+    {
+      "question": "Under the IASB Conceptual Framework, which of the following are 'enhancing' qualitative characteristics of financial information?",
+      "explanation": "According to the IASB Conceptual Framework, the enhancing characteristics are comparability, verifiability, timeliness, and understandability.",
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "options": [
+        "Comparability, verifiability, timeliness, and understandability",
+        "Relevance, reliability, and faithful representation",
+        "Prudence, consistency, and accruals",
+        "Materiality and monetary measurement"
+      ],
+      "id": "af-mc-0038"
+    },
+    {
+      "question": "A business offers a 10% trade discount and a 5% early settlement discount. If a customer buys goods with a list price of £1,000, how much will they pay if they take the early settlement discount?",
+      "explanation": "The discount is calculated on the price after the trade discount: £1,000 - 10% = £900. Then, 5% of £900 is £45. £900 - £45 = £855.",
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "options": [
+        "£850.00",
+        "£900.00",
+        "£852.50",
+        "£855.00"
+      ],
+      "id": "af-mc-0039"
+    },
+    {
+      "correctAnswer": 1,
+      "options": [
+        "£150",
+        "£120",
+        "£30",
+        "£0"
+      ],
+      "type": "multiple_choice",
+      "explanation": "Inventory should be valued at the lower of cost and net realisable value (NRV). Damage makes the NRV (£120) lower than the cost (£150).",
+      "question": "An item of inventory cost £150. It is damaged and will cost £20 to repair, after which it can be sold for £140. At what value should it be included in the financial statements?",
+      "id": "af-mc-0040"
+    },
+    {
+      "question": "Which of the following would be classified as capital expenditure for a delivery business?",
+      "explanation": "Capital expenditure is spent on acquiring or improving long-term assets, such as the purchase price and delivery costs of a van.",
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "options": [
+        "Annual motor insurance for a delivery van",
+        "Fuel costs for a delivery van",
+        "The purchase price and delivery cost of a new van",
+        "The cost of a new tyre for an existing van"
+      ],
+      "id": "af-mc-0041"
+    },
+    {
+      "question": "What is the correct double entry to record a credit note issued to a customer for returned goods?",
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "options": [
+        "Debit Sales Returns; Credit Trade Receivables Ledger Account",
+        "Debit Trade Receivables Ledger Account; Credit Sales Returns",
+        "Debit Cash; Credit Sales Returns",
+        "Debit Sales; Credit Cash"
+      ],
+      "explanation": "A credit note is issued by the supplier to the customer to acknowledge that the amount the customer owes has been reduced.",
+      "id": "af-mc-0042"
+    },
+    {
+      "explanation": "Unpresented cheques are cheques written and sent but not yet processed by the bank; they reduce the bank balance in the ledger but not yet on the statement.",
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "options": [
+        "Cheques received by the business but not yet paid into the bank",
+        "Bank charges not yet recorded in the cash book",
+        "Cheques issued by the business but not yet cleared by the bank",
+        "Direct debits shown on the bank statement only"
+      ],
+      "question": "When performing a bank reconciliation, what are 'unpresented cheques'?",
+      "id": "af-mc-0043"
+    },
+    {
+      "question": "Which of the following is an example of an 'error of principle'?",
+      "options": [
+        "A transaction is completely omitted from the books",
+        "The purchase of a motor vehicle is debited to the motor expenses account",
+        "The wrong amount is entered in the correct accounts on both sides",
+        "A payment is debited to the wrong person's account within trade payables"
+      ],
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "explanation": "An error of principle occurs when an entry is made in the wrong class of account, such as treating a capital expense as a revenue expense.",
+      "id": "af-mc-0044"
+    },
+    {
+      "question": "If a business has total assets of £35,000 and owner's equity (capital) of £20,000, what is the value of its total liabilities?",
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "options": [
+        "£55,000",
+        "£20,000",
+        "£35,000",
+        "£15,000"
+      ],
+      "explanation": "Assets = Capital + Liabilities. Here, £35,000 = £20,000 + Liabilities. Therefore, Liabilities = £15,000.",
+      "id": "af-mc-0045"
+    },
+    {
+      "explanation": "The trial balance checks that total debits equal total credits, proving that the double entry system is mathematically balanced.",
+      "correctAnswer": 0,
+      "options": [
+        "To check the arithmetical accuracy of the double entry bookkeeping",
+        "To calculate the final profit for the year",
+        "To identify every single error made in the ledger accounts",
+        "To list all the assets and liabilities of the business"
+      ],
+      "type": "multiple_choice",
+      "question": "What is the main purpose of preparing a trial balance?",
+      "id": "af-mc-0046"
+    },
+    {
+      "question": "Which of the following accounts normally has a credit balance?",
+      "type": "multiple_choice",
+      "options": [
+        "Trade Receivables",
+        "Drawings account",
+        "Bank Overdraft",
+        "Purchases account"
+      ],
+      "correctAnswer": 2,
+      "explanation": "A bank overdraft is a liability (money owed to the bank) and therefore has a credit balance. Trade Payables and Capital also have credit balances.",
+      "id": "af-mc-0047"
+    },
+    {
+      "question": "In which book of prime entry would a business record its credit sales?",
+      "correctAnswer": 1,
+      "options": [
+        "Cash Book",
+        "Sales Day Book",
+        "Purchase Ledger",
+        "General Ledger"
+      ],
+      "type": "multiple_choice",
+      "explanation": "The Sales Day Book is a 'book of prime entry' used specifically to record the initial details of credit sales before they are posted to the ledgers.",
+      "id": "af-mc-0048"
+    },
+    {
+      "question": "Which accounting concept requires that assets should be recorded in the accounts at their original purchase price?",
+      "correctAnswer": 1,
+      "options": [
+        "Revaluation concept",
+        "Historical cost concept",
+        "Going concern concept",
+        "Prudence concept"
+      ],
+      "explanation": "The historical cost concept requires assets to be recorded at their original cost of acquisition, even if their market value increases.",
+      "type": "multiple_choice",
+      "id": "af-mc-0049"
+    },
+    {
+      "options": [
+        "A bank overdraft",
+        "A bank error in the customer's favour",
+        "A bank charge applied to the account",
+        "A positive cash balance held by the business"
+      ],
+      "explanation": "A credit balance on the bank statement indicates that the bank holds money for the customer, making it a liability for the bank but an asset for the business.",
+      "type": "multiple_choice",
+      "question": "What does a credit balance on a business's bank statement represent?",
+      "correctAnswer": 3,
+      "id": "af-mc-0050"
+    },
+    {
+      "question": "Which of the following is an example of capital expenditure?",
+      "correctAnswer": 0,
+      "options": [
+        "Installation costs of a new machine",
+        "Repairs to an existing machine",
+        "Electricity used to run a new machine",
+        "Annual insurance for a delivery van"
+      ],
+      "explanation": "Capital expenditure includes costs incurred to bring a non-current asset into use, such as installation and delivery costs.",
+      "type": "multiple_choice",
+      "id": "af-mc-0051"
+    },
+    {
+      "correctAnswer": 2,
+      "question": "How does the purchase of shop fittings on credit affect the accounting equation?",
+      "type": "multiple_choice",
+      "options": [
+        "Assets increase and cash decreases",
+        "Assets decrease and liabilities decrease",
+        "Assets increase and liabilities increase",
+        "Assets increase and capital increases"
+      ],
+      "explanation": "The purchase of shop fittings on credit increases non-current assets and increases liabilities (trade payables).",
+      "id": "af-mc-0052"
+    },
+    {
+      "explanation": "A debit note is sent by the buyer to the seller to formally request a credit note for goods returned or damaged.",
+      "options": [
+        "A buyer to a seller to request a refund or credit",
+        "A seller to a buyer to demand payment for an invoice",
+        "A bank to a customer to notify them of an overdraft",
+        "A seller to a buyer to acknowledge goods have been returned"
+      ],
+      "type": "multiple_choice",
+      "question": "What is the purpose of a debit note?",
+      "correctAnswer": 0,
+      "id": "af-mc-0053"
+    },
+    {
+      "correctAnswer": 1,
+      "question": "Recording income when it is earned rather than when the cash is received is an example of which accounting basis?",
+      "type": "multiple_choice",
+      "options": [
+        "Cash accounting",
+        "Accrual accounting",
+        "Prudence accounting",
+        "Entity accounting"
+      ],
+      "explanation": "Accrual accounting records income when earned and expenses when incurred, regardless of when the cash is actually exchanged.",
+      "id": "af-mc-0054"
+    },
+    {
+      "options": [
+        "£57,000",
+        "£15,000",
+        "£27,000",
+        "£39,000"
+      ],
+      "explanation": "Capital is calculated as Total Assets (£45,000 + £12,000) minus Total Liabilities (£18,000), which equals £39,000.",
+      "type": "multiple_choice",
+      "question": "A business has non-current assets of £45,000, current assets of £12,000, and current liabilities of £18,000. What is the owner's capital?",
+      "correctAnswer": 3,
+      "id": "af-mc-0055"
+    },
+    {
+      "question": "According to the IASB Conceptual Framework, which of the following are the two fundamental qualitative characteristics?",
+      "correctAnswer": 1,
+      "explanation": "Relevance and Faithful Representation are the two fundamental qualitative characteristics defined in the IASB Conceptual Framework.",
+      "options": [
+        "Understandability and Timeliness",
+        "Relevance and Faithful Representation",
+        "Comparability and Verifiability",
+        "Accruals and Going Concern"
+      ],
+      "type": "multiple_choice",
+      "id": "af-mc-0056"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "An error of omission occurs when a transaction is completely left out of the accounting records.",
+      "options": [
+        "An error of commission",
+        "A compensating error",
+        "An error of omission",
+        "An error of principle"
+      ],
+      "correctAnswer": 2,
+      "question": "A bookkeeper fails to record a cash sale in the cash book and the sales account. What type of error is this?",
+      "id": "af-mc-0057"
+    },
+    {
+      "options": [
+        "The General Ledger",
+        "The Purchase Day Book",
+        "The Sales Day Book",
+        "The Petty Cash Book"
+      ],
+      "explanation": "The general ledger contains the summary of all financial transactions, including those from books of prime entry like the Sales Day Book.",
+      "type": "multiple_choice",
+      "question": "Where is the 'Sales account' usually located in a manual accounting system?",
+      "correctAnswer": 0,
+      "id": "af-mc-0058"
+    },
+    {
+      "question": "Which of the following would be recorded in the Journal?",
+      "correctAnswer": 2,
+      "options": [
+        "Recording daily cash sales",
+        "Recording bulk purchases of inventory on credit",
+        "Recording the purchase of a motor vehicle on credit",
+        "Recording payments made to suppliers by cheque"
+      ],
+      "explanation": "The journal is used to record non-routine transactions such as the purchase/sale of non-current assets on credit and year-end adjustments.",
+      "type": "multiple_choice",
+      "id": "af-mc-0059"
+    },
+    {
+      "options": [
+        "£5,500",
+        "£5,000",
+        "£5,200",
+        "£4,800"
+      ],
+      "explanation": "Inventory should be valued at the lower of cost (£5,000) and net realisable value (£4,800).",
+      "type": "multiple_choice",
+      "question": "Inventory cost £5,000. It can be sold for £5,200 after incurring selling costs of £400. At what value should it be recorded?",
+      "correctAnswer": 3,
+      "id": "af-mc-0060"
+    },
+    {
+      "options": [
+        "The amount of cash in the box is always £0 at the end of the month",
+        "The petty cash is topped up to a pre-set fixed amount at regular intervals",
+        "Only bank transfers can be used to top up the petty cash box",
+        "The petty cash clerk can decide how much money to keep in the box each week"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "question": "What is the primary characteristic of a petty cash 'imprest system'?",
+      "explanation": "An imprest system maintains a fixed balance of cash by replenishing the exact amount of vouchers spent.",
+      "id": "af-mc-0061"
+    },
+    {
+      "question": "How should a business record the payment of £50 for petrol for a delivery van using a company debit card?",
+      "correctAnswer": 3,
+      "explanation": "The purchase of a van is capital expenditure (Asset), but the fuel to run it is revenue expenditure (Expense).",
+      "type": "multiple_choice",
+      "options": [
+        "An increase in Non-Current Assets and an increase in Liabilities",
+        "A decrease in Assets and a decrease in Capital",
+        "An increase in Expenses and a decrease in Assets",
+        "An increase in Liabilities and an increase in Expenses"
+      ],
+      "id": "af-mc-0062"
+    },
+    {
+      "correctAnswer": 0,
+      "question": "Which of the following transactions would be recorded in the Journal (General Journal)?",
+      "explanation": "The Journal is used for non-routine transactions that do not fit into other books of prime entry.",
+      "options": [
+        "The purchase of a non-current asset on credit",
+        "The payment of wages by bank transfer",
+        "Cash sales made to customers over the counter",
+        "Check payments made to suppliers for inventory"
+      ],
+      "type": "multiple_choice",
+      "id": "af-mc-0063"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Accruals concept",
+        "Consistency concept",
+        "Going concern concept",
+        "Materiality concept"
+      ],
+      "explanation": "The consistency concept ensures that once an accounting method is chosen, it is applied period to period to allow for comparison.",
+      "question": "Which accounting concept is being applied when a business uses the same depreciation method for its machinery every year?",
+      "correctAnswer": 1,
+      "id": "af-mc-0064"
+    },
+    {
+      "options": [
+        "£19,500",
+        "£7,500",
+        "£11,000",
+        "£4,000"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "question": "A business has the following balances: Inventory £12,000, Bank balance (debit) £3,500, Trade payables £8,000, and Loan (repayable in 5 years) £10,000. What is the net current assets (working capital) figure?",
+      "explanation": "Current assets are £15,500 (£12,000 + £3,500). Current liabilities are £8,000. £15,500 - £8,000 = £7,500.",
+      "id": "af-mc-0065"
+    },
+    {
+      "correctAnswer": 2,
+      "question": "In a business's bank reconciliation, what does a credit balance on the bank statement represent?",
+      "explanation": "A credit balance on the bank statement means the bank owes the customer money, so it is an asset for the business.",
+      "options": [
+        "An overdraft (Liability)",
+        "An expense in the Income Statement",
+        "A positive balance (Asset)",
+        "A loss for the period"
+      ],
+      "type": "multiple_choice",
+      "id": "af-mc-0066"
+    },
+    {
+      "options": [
+        "Error of principle",
+        "Error of commission",
+        "Error of original entry concepts",
+        "Complete omission"
+      ],
+      "type": "multiple_choice",
+      "explanation": "Dividing the value of a transaction by the name of an account (e.g. £100 entered as £10) results in the trial balance still balancing.",
+      "correctAnswer": 2,
+      "question": "A sales invoice for £120 was incorrectly entered into the sales day book and the ledger accounts as £102. Which type of error has occurred?",
+      "id": "af-mc-0067"
+    },
+    {
+      "explanation": "Under IAS 2, inventory must be valued at the lower of cost and net realisable value (NRV).",
+      "question": "According to IAS 2 Inventories, how should inventory be valued at the end of the accounting period?",
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "options": [
+        "Lower of cost and net realisable value",
+        "Lower of cost and replacement cost",
+        "Higher of cost and net realisable value",
+        "Lower of original cost and current market price"
+      ],
+      "id": "af-mc-0068"
+    },
+    {
+      "options": [
+        "Assets decrease, Liabilities increase",
+        "Assets increase, Capital increases",
+        "Assets decrease, Capital decreases village",
+        "Assets increase, Liabilities increase"
+      ],
+      "type": "multiple_choice",
+      "explanation": "The purchase of inventory on credit increases assets (inventory) and increases liabilities (trade payables).",
+      "correctAnswer": 3,
+      "question": "What is the effect on the accounting equation (Assets = Capital + Liabilities) when a business buys inventory on credit?",
+      "id": "af-mc-0069"
+    },
+    {
+      "correctAnswer": 0,
+      "question": "A customer returns goods to a business. What is the correct double entry to record this in the nominal ledger?",
+      "explanation": "To record the return of goods, the Sales Returns account (contra-revenue) is debited and the Trade Receivables (Asset) is credited.",
+      "options": [
+        "Debit: Sales Returns; Credit: Trade Receivables",
+        "Debit: Trade Receivables; Credit: Sales Returns",
+        "Debit: Sales; Credit: Bank",
+        "Debit: Trade Payables; Credit: Purchase Returns"
+      ],
+      "type": "multiple_choice",
+      "id": "af-mc-0070"
+    },
+    {
+      "correctAnswer": 2,
+      "question": "In which ledger would you find the individual account of a credit customer, J. Smith?",
+      "explanation": "Individual customer accounts are kept in the Sales Ledger, while the total trade receivables is in the General Ledger.",
+      "options": [
+        "General Ledger",
+        "Purchase Ledger",
+        "Sales Ledger",
+        "Cash Book"
+      ],
+      "type": "multiple_choice",
+      "id": "af-mc-0071"
+    },
+    {
+      "options": [
+        "Matching concept",
+        "Business entity concept",
+        "Prudence concept village",
+        "Materiality concept"
+      ],
+      "type": "multiple_choice",
+      "explanation": "The business entity concept states that the owner and the business are treated as separate legal or accounting entities.",
+      "correctAnswer": 1,
+      "question": "Which accounting concept states that the personal transactions of the owner should be kept separate from the transactions of the business?",
+      "id": "af-mc-0072"
+    }
+  ],
+  "mocks": []
+}
