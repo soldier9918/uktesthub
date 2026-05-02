@@ -107,7 +107,3698 @@
       "explanation": "Unlicensed operation is a criminal offence.",
       "type": "multiple_choice",
       "id": "plr-mc-0008"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Within 7 days",
+        "Within 14 days",
+        "Within 21 days",
+        "Within 28 days"
+      ],
+      "explanation": "PHV drivers must notify TfL of any relevant changes to their medical health within 21 days as it may affect their fitness to hold a licence.",
+      "question": "If you develop a medical condition that affects your driving, how many days do you have to notify TfL in writing?",
+      "correctAnswer": 2,
+      "id": "plr-mc-0009"
+    },
+    {
+      "explanation": "You must only use a mobile phone or navigation device if it is securely mounted in a holder so it does not distract you or obstruct your view.",
+      "correctAnswer": 0,
+      "question": "To use a handheld device for navigation while driving, which of the following is a legal requirement?",
+      "options": [
+        "It must be securely mounted in a cradle or holder",
+        "It can be held in your hand if you are using headphones",
+        "It can be placed on your lap while driving",
+        "It can be held if you are stopped at traffic lights"
+      ],
+      "type": "multiple_choice",
+      "id": "plr-mc-0010"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "The Equality Act 2010 makes it illegal for a PHV driver to refuse a booking for an assistance dog user or charge them extra.",
+      "question": "Under the Equality Act 2010, what must a PHV driver do when a passenger has an assistance dog?",
+      "correctAnswer": 1,
+      "options": [
+        "Refuse the booking if the dog is large",
+        "Carry the assistance dog at no extra cost to the passenger",
+        "Charge a small cleaning fee in advance",
+        "Require the dog to be placed in the boot of the vehicle"
+      ],
+      "id": "plr-mc-0011"
+    },
+    {
+      "options": [
+        "Only the driver's first name",
+        "Only the vehicle registration branch",
+        "The fare price and the driver's phone number",
+        "The driver's name, photo, and vehicle registration number"
+      ],
+      "explanation": "An operator MUST provide the driver's name, vehicle registration, and a photo of the driver to the passenger before the trip starts.",
+      "correctAnswer": 3,
+      "question": "What information must a London PHV operator provide to a passenger before their journey starts?",
+      "type": "multiple_choice",
+      "id": "plr-mc-0012"
+    },
+    {
+      "options": [
+        "Tell the passenger to call for a larger vehicle",
+        "Charge the passenger a 'loading fee' for the extra time",
+        "Provide reasonable physical assistance to help the passenger into the vehicle",
+        "Wait for a passer-by to help the passenger so you don't hurt your back"
+      ],
+      "correctAnswer": 2,
+      "question": "What is a driver's legal duty when a passenger in a wheelchair asks for assistance?",
+      "explanation": "Section 170 of the Equality Act 2010 requires drivers to provide reasonable assistance, such as helping a passenger into the vehicle.",
+      "type": "multiple_choice",
+      "id": "plr-mc-0013"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "No, unless road signs specifically state PHVs are allowed",
+        "Yes, at all times because they are licensed for hire",
+        "Yes, but only when they have a passenger onboard",
+        "No, except during the night between 10pm and 6am"
+      ],
+      "correctAnswer": 0,
+      "question": "Are London Private Hire Vehicles generally allowed to use bus lanes?",
+      "explanation": "Only licensed London Taxis (black cabs) can use bus lanes at any time. PHVs should stay out of bus lanes unless signs specifically permit them.",
+      "id": "plr-mc-0014"
+    },
+    {
+      "options": [
+        "The driver",
+        "The Private Hire Operator",
+        "The Metropolitan Police",
+        "Transport for London (TfL)"
+      ],
+      "explanation": "The licence remains the property of TfL and must be returned if the licence is suspended or revoked for any reason.",
+      "correctAnswer": 3,
+      "question": "Who technically owns the London PHV driver's badge and licence?",
+      "type": "multiple_choice",
+      "id": "plr-mc-0015"
+    },
+    {
+      "options": [
+        "Only the operator is responsible",
+        "Both the driver and the operator are responsible",
+        "Only the passenger is responsible for checking",
+        "Only Transport for London is responsible"
+      ],
+      "correctAnswer": 1,
+      "question": "Who is responsible for ensuring the driver has a valid PHV licence before a journey begins?",
+      "explanation": "The PHV driver and the operator must both ensure they hold the correct current licences for the booking to be legal.",
+      "type": "multiple_choice",
+      "id": "plr-mc-0016"
+    },
+    {
+      "explanation": "PHVs are exempt from the Congestion Charge only when carrying out a booking for a wheelchair accessible vehicle (WAV).",
+      "correctAnswer": 0,
+      "question": "When is a Private Hire Vehicle exempt from paying the London Congestion Charge?",
+      "options": [
+        "Only if the vehicle is wheelchair accessible and completing a booking",
+        "All PHVs are exempt from the Congestion Charge",
+        "Only if the vehicle is fully electric (EV)",
+        "PHVs are never exempt from the Congestion Charge"
+      ],
+      "type": "multiple_choice",
+      "id": "plr-mc-0017"
+    },
+    {
+      "question": "Where must a driver's PHV identification badge be kept when they are working?",
+      "correctAnswer": 2,
+      "explanation": "While waiting for a passenger at a terminal, the driver must always have their badge clearly displayed on their person.",
+      "options": [
+        "In the glove box for safety",
+        "On the vehicle's dashboard facing out",
+        "Worn on the driver's person where it is clearly visible",
+        "Attached to the rear-view mirror"
+      ],
+      "type": "multiple_choice",
+      "id": "plr-mc-0018"
+    },
+    {
+      "correctAnswer": 1,
+      "question": "When must a licensed PHV be kept in a clean and safe condition?",
+      "explanation": "TfL requires that PHVs are kept in a safe and clean condition at all times to ensure passenger comfort and safety.",
+      "options": [
+        "Only if the passenger complains",
+        "At all times while the vehicle is licensed",
+        "Only when going for the annual MOT or inspection",
+        "Only during daylight hours"
+      ],
+      "type": "multiple_choice",
+      "id": "plr-mc-0019"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "London PHV drivers must report any arrest, charge, or conviction for a criminal offence to TfL within 21 days.",
+      "correctAnswer": 3,
+      "question": "A PHV driver must notify TfL of any criminal convictions or charges within what timeframe?",
+      "options": [
+        "Only if they are found guilty in court",
+        "Only if the offence involves a motor vehicle",
+        "Only if they are sentenced to prison",
+        "Within 21 days of any arrest, charge, or conviction"
+      ],
+      "id": "plr-mc-0020"
+    },
+    {
+      "explanation": "While some vehicles may be exempt, the standard rule is that discs must be displayed on the high-side of both the front and rear windscreens.",
+      "type": "multiple_choice",
+      "question": "Where must the official TfL identification discs be displayed on a standard licensed PHV?",
+      "options": [
+        "Only the rear windscreen",
+        "Front and rear windscreens",
+        "The driver's side window",
+        "The dashboard only"
+      ],
+      "correctAnswer": 1,
+      "id": "plr-mc-0021"
+    },
+    {
+      "question": "If you change your home address, how many days do you have to notify TfL in writing?",
+      "options": [
+        "21 days",
+        "7 days",
+        "14 days",
+        "28 days"
+      ],
+      "correctAnswer": 0,
+      "explanation": "TfL must be notified within 21 days if you change your home address to ensure their records are accurate.",
+      "type": "multiple_choice",
+      "id": "plr-mc-0022"
+    },
+    {
+      "question": "What is a potential penalty for 'plying for hire' without a pre-booking?",
+      "options": [
+        "A verbal warning only",
+        "A fixed penalty of £50",
+        "A fine of up to £2,500 and licence revocation",
+        "There is no penalty if the journey is short"
+      ],
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "explanation": "Plying for hire (taking street hails) is an offence that can lead to a fine, points, and the loss of your PHV licence.",
+      "id": "plr-mc-0023"
+    },
+    {
+      "correctAnswer": 3,
+      "question": "How much extra can a PHV driver charge a passenger for carrying an assistance dog?",
+      "options": [
+        "£5.00 extra",
+        "A 10% surcharge",
+        "The cost of a professional valet",
+        "No extra charge is permitted"
+      ],
+      "type": "multiple_choice",
+      "explanation": "The Equality Act 2010 prohibits charging extra for carrying passengers with disabilities or their assistant animals.",
+      "id": "plr-mc-0024"
+    },
+    {
+      "correctAnswer": 1,
+      "options": [
+        "Your licensed operator",
+        "Transport for London (TfL)",
+        "The Driver and Vehicle Licensing Agency (DVLA)",
+        "The driver who paid for it"
+      ],
+      "question": "If a PHV driver's licence is revoked, who must the badge be returned to?",
+      "type": "multiple_choice",
+      "explanation": "The PHV driver's badge is the property of Transport for London (TfL) and must be returned if the licence is suspended or revoked.",
+      "id": "plr-mc-0025"
+    },
+    {
+      "correctAnswer": 2,
+      "question": "When is it unacceptable for a PHV driver to use abusive or intimidating language?",
+      "options": [
+        "Only if the passenger is present",
+        "Only if the police are called",
+        "At all times while working as a PHV driver",
+        "Only if it physically hurts someone"
+      ],
+      "type": "multiple_choice",
+      "explanation": "Aggressive behavior or language toward any person while working is a breach of safety and licensing standards.",
+      "id": "plr-mc-0026"
+    },
+    {
+      "question": "Regarding safety, what is a PHV driver's legal responsibility for passengers in the vehicle?",
+      "options": [
+        "Ensure all passengers wear their seatbelts",
+        "Only make sure children wear seatbelts",
+        "Only ensure front-seat passengers wear seatbelts",
+        "It is not the driver's responsibility"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Seatbelts are a primary safety requirement for all passengers under UK law to prevent injury.",
+      "type": "multiple_choice",
+      "id": "plr-mc-0027"
+    },
+    {
+      "explanation": "Before the journey begins, the operator must provide the driver's name, photo, and the vehicle registration mark to the passenger.",
+      "type": "multiple_choice",
+      "question": "Which of these details must a London operator give to a passenger for safety before the journey?",
+      "options": [
+        "The driver's home address",
+        "The vehicle registration mark (VRM)",
+        "The operator's bank details",
+        "The driver's personal phone number"
+      ],
+      "correctAnswer": 1,
+      "id": "plr-mc-0028"
+    },
+    {
+      "question": "When should a licensed driver notify TfL about a medical condition that may affect their driving?",
+      "options": [
+        "When your licence expires",
+        "Only if the police ask for it",
+        "At your next MOT test",
+        "As soon as the condition develops"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Any change in your medical fitness that might affect your ability to drive safely must be reported to TfL immediately.",
+      "type": "multiple_choice",
+      "id": "plr-mc-0029"
+    },
+    {
+      "explanation": "If you find property, you should follow your operator's procedure or take it to a police station and notify the operator.",
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "options": [
+        "Follow the operator's lost property procedure or take it to a police station",
+        "Keep it for 30 days then sell it",
+        "Leave it on the pavement where you found it",
+        "Keep it until the passenger calls your personal phone"
+      ],
+      "question": "What should you do if a passenger leaves an item of value in your vehicle?",
+      "id": "plr-mc-0030"
+    },
+    {
+      "explanation": "The PHV licensing process ensures all vehicles meet basic safety, insurance, and mechanical standards for public use.",
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "question": "What is the primary purpose of the TfL vehicle licensing inspection?",
+      "options": [
+        "To make the car look professional",
+        "To allow the driver to use the hard shoulder",
+        "To ensure the vehicle is safe, insured, and fits regulatory standards",
+        "To exempt the vehicle from all speed limits"
+      ],
+      "id": "plr-mc-0031"
+    },
+    {
+      "explanation": "Drivers must never use a handheld mobile phone while driving; it must be in a fixed cradle to be used for navigation.",
+      "type": "multiple_choice",
+      "question": "When is a PHV driver allowed to hold a mobile phone in their hand while driving?",
+      "options": [
+        "Only when stopped at traffic lights",
+        "Never while driving the vehicle",
+        "Only when the vehicle is moving slowly in traffic",
+        "Whenever they need to check a map"
+      ],
+      "correctAnswer": 1,
+      "id": "plr-mc-0032"
+    },
+    {
+      "options": [
+        "A licensed PHV vehicle",
+        "A licensed PHV driver",
+        "A licensed PHV operator",
+        "The local police station"
+      ],
+      "type": "multiple_choice",
+      "explanation": "Private hire journeys must be booked through a licensed operator; drivers cannot take bookings or payments directly.",
+      "question": "In London, who is legally responsible for taking a private hire booking?",
+      "correctAnswer": 2,
+      "id": "plr-mc-0033"
+    },
+    {
+      "question": "When is a London PHV driver legally allowed to refuse to carry an assistance dog?",
+      "explanation": "The Equality Act 2010 requires drivers to carry assistance dogs unless they have an official medical exemption certificate from TfL.",
+      "correctAnswer": 0,
+      "options": [
+        "Only if they have a medical exemption certificate from TfL",
+        "Only if they have a severe allergy and tell the passenger",
+        "Whenever they do not want a dog in their car",
+        "Only if they have been a driver for more than 5 years"
+      ],
+      "type": "multiple_choice",
+      "id": "plr-mc-0034"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Between midnight and 6 AM",
+        "If they are waiting for a pre-booked passenger",
+        "For a maximum of 2 minutes to drop off luggage",
+        "Under no circumstances ever"
+      ],
+      "correctAnswer": 3,
+      "question": "In what situation is a PHV driver permitted to park on a designated taxi rank?",
+      "explanation": "Private hire vehicles are not taxis; they are never allowed to park or wait on taxi ranks at any time.",
+      "id": "plr-mc-0035"
+    },
+    {
+      "options": [
+        "24 hours",
+        "72 hours (3 days)",
+        "7 days",
+        "28 days"
+      ],
+      "type": "multiple_choice",
+      "question": "If a vehicle is involved in a collision that affects its safety, within what timeframe must the owner notify TfL?",
+      "explanation": "TfL requires notification within 48 hours for any collision that might affect the vehicle's safety or appearance.",
+      "correctAnswer": 1,
+      "id": "plr-mc-0036"
+    },
+    {
+      "correctAnswer": 2,
+      "question": "What is the maximum duration a standard London PHV driver's licence is usually issued for?",
+      "explanation": "A driver's licence is valid for a maximum of three years, though it can be shorter if the driver's permissions change.",
+      "type": "multiple_choice",
+      "options": [
+        "1 year",
+        "2 years",
+        "3 years",
+        "5 years"
+      ],
+      "id": "plr-mc-0037"
+    },
+    {
+      "correctAnswer": 1,
+      "question": "How long is a licensed London operator required to keep records of every booking they take?",
+      "explanation": "Operators must keep records of every booking for at least 6 months, including the passenger's name and pick-up point.",
+      "type": "multiple_choice",
+      "options": [
+        "3 months",
+        "6 months",
+        "12 months",
+        "2 years"
+      ],
+      "id": "plr-mc-0038"
+    },
+    {
+      "correctAnswer": 0,
+      "question": "According to TfL guidelines, what is the expected standard of behaviour for a driver towards passengers?",
+      "explanation": "Drivers should always be helpful and polite, ensuring the safety and comfort of all passengers.",
+      "type": "multiple_choice",
+      "options": [
+        "Polite and helpful",
+        "Aggressive and fast",
+        "Silent and uncommunicative",
+        "Impatient and demanding"
+      ],
+      "id": "plr-mc-0039"
+    },
+    {
+      "correctAnswer": 2,
+      "explanation": "London PHVs are subject to two formal specialist inspections per year to ensure they remain roadworthy and safe.",
+      "question": "How often must a licensed London PHV undergo a mechanical safety inspection by TfL?",
+      "type": "multiple_choice",
+      "options": [
+        "Once every year",
+        "Once every two years",
+        "Twice every year",
+        "Every time the driver renews their individual licence"
+      ],
+      "id": "plr-mc-0040"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "If the windows are fully open",
+        "If the passenger gives their permission",
+        "Only if the driver is alone in the vehicle",
+        "It is never permitted even if the driver is alone"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Smoking, including the use of e-cigarettes or 'vaping', is strictly prohibited in all licensed PHVs at all times.",
+      "question": "When is a PHV driver allowed to smoke or use an e-cigarette inside their licensed vehicle?",
+      "id": "plr-mc-0041"
+    },
+    {
+      "options": [
+        "To wait for a passenger to finish shopping",
+        "To pick up or set down a passenger",
+        "To check their mobile phone for new bookings",
+        "To take a 15-minute rest break"
+      ],
+      "type": "multiple_choice",
+      "explanation": "A PHV can only wait on a double yellow line for as long as it takes for a passenger to get in or out of the car.",
+      "question": "When can a PHV driver pull over on a double yellow line?",
+      "correctAnswer": 1,
+      "id": "plr-mc-0042"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "A valid MOT certificate issued within the last 6 months",
+        "A personal driving record from the DVLA",
+        "Proof of residential address for the last 5 years",
+        "A letter of recommendation from an existing operator"
+      ],
+      "correctAnswer": 0,
+      "question": "Which of these is a requirement for a vehicle to be licensed as a London PHV?",
+      "explanation": "A current MOT must be in place if the vehicle is over 3 years old, and it must be dated within the last 6 months for a licence application.",
+      "id": "plr-mc-0043"
+    },
+    {
+      "correctAnswer": 2,
+      "explanation": "Drivers have a duty of care to check that children are properly secured using appropriate seats or seatbelts.",
+      "question": "What is the driver's responsibility regarding child passengers and seatbelts?",
+      "type": "multiple_choice",
+      "options": [
+        "It is solely the parent's responsibility",
+        "PHV drivers are exempt from all seatbelt laws",
+        "Ensuring children are using appropriate seatbelts or child seats",
+        "Asking the child if they feel safe enough to drive"
+      ],
+      "id": "plr-mc-0044"
+    },
+    {
+      "correctAnswer": 1,
+      "explanation": "Licensed PHV drivers must notify TfL's Taxi and Private Hire team in writing within 21 days if they change their home address.",
+      "type": "multiple_choice",
+      "question": "If you change your home address, within how many days must you notify TfL?",
+      "options": [
+        "7 days",
+        "21 days",
+        "28 days",
+        "60 days"
+      ],
+      "id": "plr-mc-0045"
+    },
+    {
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "explanation": "Plying for hire (picking up passengers who have not pre-booked) is illegal for PHV drivers and can lead to licence revocation.",
+      "question": "Which of the following activities is strictly prohibited for a London PHV driver?",
+      "options": [
+        "Parking on double yellow lines",
+        "Driving a vehicle older than 5 years",
+        "Picking up a passenger who hails you on the street",
+        "Using a satellite navigation system while driving"
+      ],
+      "id": "plr-mc-0046"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "Private hire vehicles are allowed to use most London bus lanes, but only when they are not restricted to just 'local' buses or cycles. Always check the signs.",
+      "options": [
+        "Only when permitted by the specific bus lane signs (not all bus lanes)",
+        "At any time of the day or night",
+        "Only when carrying a passenger",
+        "Only when returning from a booking"
+      ],
+      "question": "When is a licensed London PHV driver allowed to drive in a bus lane?",
+      "correctAnswer": 0,
+      "id": "plr-mc-0047"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "Drivers must report any arrest, charge, or conviction to TfL within 21 days regardless of the nature of the offence.",
+      "question": "If a PHV driver is arrested by the police, when must they notify TfL?",
+      "options": [
+        "At the time of licence renewal",
+        "Within 48 hours",
+        "Only if it results in a prison sentence",
+        "Within 21 days"
+      ],
+      "correctAnswer": 3,
+      "id": "plr-mc-0048"
+    },
+    {
+      "question": "What is the expected practice if a passenger asks to go a specific way to their destination?",
+      "options": [
+        "Follow the route requested by the passenger",
+        "Always take the longest route to increase the fare",
+        "Ignore the passenger's directions and use a map only",
+        "Suggest a longer route to avoid all traffic lights"
+      ],
+      "explanation": "The most common 'fair' way to treat a passenger is to follow the route they request, provided it is safe and legal to do so.",
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "id": "plr-mc-0049"
+    },
+    {
+      "correctAnswer": 2,
+      "explanation": "London PHVs must display two identification discs (windscreen and rear window) showing the vehicle is licensed.",
+      "type": "multiple_choice",
+      "question": "Where must the official TfL identification discs be displayed on a licensed PHV?",
+      "options": [
+        "On the driver's sun visor",
+        "On the side mirrors",
+        "On the front windscreen and the rear window",
+        "Only on the rear bumper"
+      ],
+      "id": "plr-mc-0050"
+    },
+    {
+      "explanation": "PHV drivers are expected to be polite and helpful to all passengers, regardless of their background or protected characteristics.",
+      "type": "multiple_choice",
+      "options": [
+        "Only talk to passengers who speak first",
+        "Professional, helpful, and polite at all times",
+        "Quiet and dismissive to ensure the journey is fast",
+        "Strict and authoritative to maintain control"
+      ],
+      "question": "How should a driver behave towards a passenger who appears nervous or confused?",
+      "correctAnswer": 1,
+      "id": "plr-mc-0051"
+    },
+    {
+      "explanation": "Discrimination based on any protected characteristic, including disability or sexual orientation, is strictly prohibited and illegal.",
+      "type": "multiple_choice",
+      "question": "If a passenger has a visible disability, what is the driver's legal obligation?",
+      "options": [
+        "Double the fare for the extra time taken",
+        "Tell them they must wait for a different car",
+        "Suggest they take a bus instead",
+        "Treat them with respect and provide the same level of service"
+      ],
+      "correctAnswer": 3,
+      "id": "plr-mc-0052"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "It is the operator's legal duty to ensure the vehicle and driver are properly licensed before dispatching a booking.",
+      "question": "Who is responsible for ensuring the driver and vehicle are correctly licensed before a booking is carried out?",
+      "options": [
+        "The local police station",
+        "The licensed PHV operator",
+        "The passenger who makes the booking",
+        "The Department for Transport"
+      ],
+      "correctAnswer": 1,
+      "id": "plr-mc-0053"
+    },
+    {
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "explanation": "If there is a dispute over the fare, you should remain calm, avoid confrontation, and contact your operator for guidance.",
+      "options": [
+        "Remain calm and contact your operator for advice",
+        "Lock the doors until the passenger pays the full amount",
+        "Drive the passenger to the nearest police station immediately",
+        "Take the passenger's luggage as a security deposit"
+      ],
+      "question": "What should a PHV driver do if a passenger refuses to pay the agreed fare at the end of a journey?",
+      "id": "plr-mc-0054"
+    },
+    {
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "explanation": "The PHV driver's badge must be worn or displayed in a way that it is clearly visible to the passenger at all times.",
+      "options": [
+        "Keep it in the glovebox for safekeeping",
+        "Only show it if the police ask to see it",
+        "Wear it or display it so it is clearly visible to the passenger",
+        "Keep it in a wallet or purse during the shift"
+      ],
+      "question": "How must a PHV driver display their ID badge during a journey?",
+      "id": "plr-mc-0055"
+    },
+    {
+      "correctAnswer": 1,
+      "question": "What should you do if a passenger tells you they feel very unwell during a journey?",
+      "options": [
+        "Speed up to get them to their destination faster",
+        "Stop the vehicle safely as soon as possible and offer help",
+        "Tell the passenger to wait until the end of the journey",
+        "Ask the passenger to get out of the car immediately"
+      ],
+      "type": "multiple_choice",
+      "explanation": "If a passenger feels unwell, pull over safely as soon as possible and offer assistance or call emergency services if needed.",
+      "id": "plr-mc-0056"
+    },
+    {
+      "options": [
+        "As much as they want, as long as it isn't on the seats",
+        "Only if the items are for sale to the passenger",
+        "Keep it free of clutter to assist passengers with visual or cognitive impairments",
+        "Store all cleaning supplies on the passenger floor for easy access"
+      ],
+      "explanation": "To help people with visual impairments or dementia, private hire drivers are required to keep the passenger area of their vehicle free from items that could cause clutter or confusion.",
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "question": "According to TfL guidelines, what is the best practice regarding the amount of personal items a driver keeps in the passenger area?",
+      "id": "plr-mc-0057"
+    },
+    {
+      "explanation": "All London private hire vehicle bookings must be made through a licensed operator. Drivers cannot take bookings directly from customers.",
+      "options": [
+        "A booking accepted through a licensed London private hire operator",
+        "A passenger waving at you on the street to pull over",
+        "A friend calling your personal mobile to ask for a lift for cash",
+        "Picking up a passenger from a designated 'Taxi' rank"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "question": "Which of the following is the only legal way for a PHV driver to accept a booking?",
+      "id": "plr-mc-0058"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "PHV drivers are legally required to carry assistance dogs (such as guide dogs) and cannot charge extra for doing so.",
+      "options": [
+        "Only if the dog is small enough to fit in the footwell",
+        "A driver must carry an assistance dog and cannot charge an extra fare for it",
+        "The driver can charge an extra £5 cleaning fee in advance",
+        "Only if the passenger provides a blanket for the dog to sit on"
+      ],
+      "question": "What is the law regarding carrying an assistance dog in a private hire vehicle?",
+      "correctAnswer": 1,
+      "id": "plr-mc-0059"
+    },
+    {
+      "explanation": "If you are disqualified from driving for any reason, your PHV driver's licence is automatically suspended or revoked, and you must inform TfL immediately.",
+      "options": [
+        "Continue driving until TfL sends you a letter in the post",
+        "Only drive during daylight hours until the ban is over",
+        "Wait until your PHV licence is due for renewal to mention it",
+        "Stop driving as a PHV driver immediately and notify TfL in writing"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "question": "If you are disqualified from driving your personal car, what must you do regarding your PHV licence?",
+      "id": "plr-mc-0060"
+    },
+    {
+      "question": "What vehicle information must a licensed operator provide to a passenger before their journey starts?",
+      "correctAnswer": 2,
+      "options": [
+        "The driver's home address and phone number",
+        "The driver's date of birth and years of experience",
+        "The vehicle registration number, make, and model",
+        "The price the operator paid to buy the vehicle"
+      ],
+      "explanation": "For safety and to ensure the passenger identifies the correct vehicle, the operator must provide the vehicle's make, model, and registration.",
+      "type": "multiple_choice",
+      "id": "plr-mc-0061"
+    },
+    {
+      "correctAnswer": 0,
+      "question": "What specific type of licence must a person hold to legally invite or accept bookings for a PHV?",
+      "options": [
+        "A Private Hire Operator's Licence",
+        "A Public Service Carriage (PSC) permit",
+        "A generic Business Trade Mark register",
+        "A Hackney Carriage Master Licence"
+      ],
+      "explanation": "Any person or company that accepts bookings for private hire vehicles in London must hold a valid Private Hire Operator's Licence issued by TfL.",
+      "type": "multiple_choice",
+      "id": "plr-mc-0062"
+    },
+    {
+      "correctAnswer": 1,
+      "question": "What is the correct procedure for a PHV driver who finds a mobile phone left in the back of their car?",
+      "type": "multiple_choice",
+      "options": [
+        "Keep it for 28 days and then sell it if no one claims it",
+        "Check the vehicle after every journey and hand it to the operator or a police station as soon as possible",
+        "Leave it in the car in case the passenger books you again the next day",
+        "Drop it off at any local charity shop nearby"
+      ],
+      "explanation": "If you find lost property, you should try to return it to the owner via the operator; if that isn't possible, it must be taken to a police station or a TfL lost property office within 24 hours.",
+      "id": "plr-mc-0063"
+    },
+    {
+      "explanation": "While drivers must be polite, they should avoid discussing potentially controversial or sensitive topics like politics or religion to ensure the passenger feels comfortable.",
+      "options": [
+        "Local traffic news and weather",
+        "The best local restaurants or hotels",
+        "Details about the passenger's destination",
+        "Personal views on sensitive topics like religion or politics"
+      ],
+      "type": "multiple_choice",
+      "question": "According to TfL's PHV Driver Handbook, which of these topics should a driver generally avoid discussing with a passenger?",
+      "correctAnswer": 3,
+      "id": "plr-mc-0064"
+    },
+    {
+      "explanation": "TfL expects all drivers to have a good working knowledge of the Highway Code to ensure the safety of all road users.",
+      "options": [
+        "It is optional for PHV drivers to follow it",
+        "Drivers must obey all rules and the Highway Code at all times",
+        "Only the rules regarding speed limits are mandatory for PHVs",
+        "The Highway Code only applies when there is a passenger in the car"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "question": "Which statement best describes a PHV driver's responsibility regarding the Highway Code?",
+      "id": "plr-mc-0065"
+    },
+    {
+      "correctAnswer": 0,
+      "question": "When is a London PHV driver allowed to park or wait on a designated 'Taxi' rank?",
+      "explanation": "PHV drivers are not permitted to use 'Taxi' ranks, as these are reserved exclusively for licensed London Hackney Carriages (Black Cabs).",
+      "options": [
+        "Never, as ranks are for the exclusive use of London taxis (black cabs)",
+        "Only between 11 PM and 5 AM when it is quiet",
+        "Only if you are picking up a pre-booked passenger who is waiting there",
+        "Only if you need to use the toilet nearby"
+      ],
+      "type": "multiple_choice",
+      "id": "plr-mc-0066"
+    },
+    {
+      "explanation": "PHV drivers should never suggest they are a 'taxi' or 'cab' as these terms are legally protected for Hackney Carriages. Use the term 'Private Hire'.",
+      "options": [
+        "'I am a taxi driver here to pick you up'",
+        "'Do you want a cab, mate?'",
+        "'I am your pre-booked private hire driver'",
+        "'I'm the London cabbie you ordered'"
+      ],
+      "type": "multiple_choice",
+      "question": "When greeting a passenger, which phrase is most appropriate for a licensed PHV driver to use?",
+      "correctAnswer": 2,
+      "id": "plr-mc-0067"
+    },
+    {
+      "question": "What is a PHV driver's specific responsibility when carrying a 'vulnerable' passenger, such as an unaccompanied minor?",
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "explanation": "Drivers have a safeguarding duty to be extra vigilant when transporting children or vulnerable adults, including ensuring they reach their destination safely.",
+      "options": [
+        "The same as any other adult passenger",
+        "A higher 'duty of care' to ensure their safety and well-being throughout the journey",
+        "None, as the parent or guardian is always responsible via the app",
+        "Only to ensure they don't make a mess in the vehicle"
+      ],
+      "id": "plr-mc-0068"
+    },
+    {
+      "explanation": "Drivers must inform TfL in writing and provide full details within 21 days if they are arrested, charged, or cautioned for any offence.",
+      "options": [
+        "Within 24 hours",
+        "Within 7 days",
+        "Within 21 days",
+        "Only when their licence is up for renewal"
+      ],
+      "question": "According to TfL regulations, how long does a PHV driver have to report a police caution or conviction?",
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "id": "plr-mc-0069"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Charge the same fare as they would for any other passenger",
+        "Add a small cleaning surcharge to the total fare",
+        "Ask the passenger to place the dog in the boot of the vehicle",
+        "Refuse the booking if the dog is a large breed"
+      ],
+      "question": "What must a PHV driver do regarding the fare when carrying a passenger with an assistance dog?",
+      "explanation": "Drivers are legally required to carry assistance dogs at no extra cost unless they have a medical exemption certificate from TfL.",
+      "correctAnswer": 0,
+      "id": "plr-mc-0070"
+    },
+    {
+      "correctAnswer": 3,
+      "question": "In London, under what circumstances can a Private Hire Vehicle use a bus lane?",
+      "options": [
+        "When they are carrying a passenger with a disability",
+        "During off-peak hours on weekends only",
+        "If they are display their PHV discs clearly",
+        "A PHV is never allowed to use a bus lane in London"
+      ],
+      "explanation": "PHVs are not allowed to use bus lanes in London, regardless of whether they are carrying passengers or are off-duty.",
+      "type": "multiple_choice",
+      "id": "plr-mc-0071"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "By law, children under 3 can travel in the rear of a PHV without a child seat or seat belt if one is not provided.",
+      "options": [
+        "The child must sit on the floor of the vehicle",
+        "The child can travel without a seat belt in the rear seat",
+        "The driver must refuse the journey if they don't have a car seat",
+        "The child must be strapped into an adult seat belt with the parent"
+      ],
+      "question": "What is the regulation for a child under the age of 3 traveling in the rear of a PHV if no child seat is available?",
+      "correctAnswer": 1,
+      "id": "plr-mc-0072"
+    },
+    {
+      "question": "Where should the paper part of a driver's PHV licence be kept while they are working for an operator?",
+      "options": [
+        "The PHV Operator",
+        "The driver's home address",
+        "TfL's central office",
+        "Inside the vehicle's glove box"
+      ],
+      "explanation": "A master copy of the driver's PHV licence remains with the operator while they are working for them.",
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "id": "plr-mc-0073"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "The driver is fully insured to do so at any time",
+        "The driver is insured only if the passenger is a friend or family member",
+        "The driver's insurance will be invalid, and they are committing an offence",
+        "The driver is insured as long as they record the journey in their own logbook"
+      ],
+      "question": "What is the insurance implication if a PHV driver accepts a 'street hail' or an unbooked fare?",
+      "explanation": "PHV drivers are only insured to carry passengers for hire and reward when the booking is made through a licensed operator.",
+      "correctAnswer": 2,
+      "id": "plr-mc-0074"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "options": [
+        "All licensed London PHVs are exempt",
+        "Only Zero Emission Capable (ZEC) vehicles are currently eligible for exemption",
+        "PHVs are exempt only when carrying a passenger",
+        "PHVs are exempt if they are less than 3 years old"
+      ],
+      "question": "Which Private Hire Vehicles are currently exempt from the London Congestion Charge?",
+      "explanation": "Congestion Charge exemptions for PHVs were mostly removed; only Zero Emission Capable (ZEC) vehicles currently qualify for specific exemptions.",
+      "id": "plr-mc-0075"
+    },
+    {
+      "options": [
+        "Within 48 hours",
+        "Within 7 days",
+        "Within 14 days",
+        "Within 21 days"
+      ],
+      "question": "If a licensed PHV driver changes their home address, how long do they have to notify TfL in writing?",
+      "explanation": "Drivers must notify TfL within 21 days of any change to their home address to ensure records remain accurate.",
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "id": "plr-mc-0076"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "options": [
+        "The licence does not stay with the vehicle; it is cancelled",
+        "The licence is automatically transferred to the new owner",
+        "The driver can transfer the licence for a small admin fee",
+        "The licence remains valid until its original expiry date for the new owner"
+      ],
+      "question": "What happens to a vehicle's PHV licence if the owner sells the car to someone else?",
+      "explanation": "PHV licences are non-transferable; if a driver sells their vehicle, the new owner must apply for a new vehicle licence.",
+      "id": "plr-mc-0077"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "To be licensed as a PHV, a vehicle must have no more than 8 passenger seats in addition to the driver's seat.",
+      "options": [
+        "4 passenger seats",
+        "6 passenger seats",
+        "8 passenger seats",
+        "12 passenger seats"
+      ],
+      "question": "What is the maximum number of passenger seats a vehicle can have to be licensed as a Private Hire Vehicle?",
+      "correctAnswer": 2,
+      "id": "plr-mc-0078"
+    },
+    {
+      "question": "What are the legal consequences for a PHV driver who picks up a passenger who has not pre-booked?",
+      "options": [
+        "The driver may receive a verbal warning from the police",
+        "The driver can be prosecuted for 'plying for hire' and lose their licence",
+        "The driver is allowed to do this if the passenger is in a hurry",
+        "The driver only needs to pay a small fine to TfL"
+      ],
+      "explanation": "Plying for hire (finding passengers on the street) is a criminal offence for PHV drivers and can lead to licence revocation.",
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "id": "plr-mc-0079"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "explanation": "Drivers must report any medical condition that might affect their ability to drive as soon as it is diagnosed.",
+      "options": [
+        "Wait until the licence is due for renewal at the 3-year mark",
+        "Tell their operator but not TfL",
+        "Wait for 30 days to see if the condition improves",
+        "Notify TfL immediately in writing"
+      ],
+      "question": "What should a PHV driver do if they develop a new medical condition that affects their driving?",
+      "id": "plr-mc-0080"
+    },
+    {
+      "question": "Where must the two official TfL identification discs be displayed on a licensed Private Hire Vehicle?",
+      "explanation": "The vehicle must display two discs, one on the front windscreen and one on the rear windscreen, to prove it is licensed.",
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "options": [
+        "On the roof and the rear bumper",
+        "On the front windscreen and the rear windscreen",
+        "Inside the glove box and on the rear window",
+        "Only on the rear windscreen"
+      ],
+      "id": "plr-mc-0081"
+    },
+    {
+      "options": [
+        "Nothing, as it is a private booking",
+        "Ask the passenger for their ID and documentation",
+        "Report it immediately to the police as it may be human trafficking",
+        "Cancel the job and tell the operator you are busy"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "explanation": "PHV drivers must be aware of 'County Lines' and other signs of exploitation; if they suspect a passenger is being trafficked, they should call 999 or 101.",
+      "question": "What should a PHV driver do if they suspect a passenger is being exploited or trafficked?",
+      "id": "plr-mc-0082"
+    },
+    {
+      "correctAnswer": 0,
+      "options": [
+        "Be polite and professional at all times",
+        "Only be polite if the passenger gives a tip",
+        "Be silent and avoid looking at the passenger",
+        "Drive as fast as possible to complete more jobs"
+      ],
+      "type": "multiple_choice",
+      "question": "According to the TfL PHV Driver Handbook, how should a driver behave towards passengers and other road users?",
+      "explanation": "PHV drivers are required to be polite and professional at all times to ensure a high standard of service and safety for the public.",
+      "id": "plr-mc-0083"
+    },
+    {
+      "explanation": "Operators must keep records of every booking, including the time, the pickup point, and the driver/vehicle details for at least 12 months.",
+      "question": "For how long must a London PHV operator keep records of a booking after it has been completed?",
+      "options": [
+        "6 months",
+        "2 years",
+        "12 months",
+        "5 years"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "id": "plr-mc-0084"
+    },
+    {
+      "correctAnswer": 1,
+      "options": [
+        "Any time they are working",
+        "Never, as PHVs are not allowed to use 'Taxi' signs or markings",
+        "Only when they have a passenger in the car",
+        "If they have a special permit from their operator"
+      ],
+      "type": "multiple_choice",
+      "question": "In what circumstances can a Private Hire Vehicle display a 'Taxi' sign on its roof?",
+      "explanation": "Only taxis (black cabs) are allowed to use 'Taxi' signs; PHVs are prohibited from using any signs or words that imply they are a taxi.",
+      "id": "plr-mc-0085"
+    },
+    {
+      "question": "How often should a PHV driver check their vehicle for any property left behind by passengers?",
+      "explanation": "Drivers must check the vehicle for lost property after every journey to ensure items can be returned to passengers quickly.",
+      "correctAnswer": 2,
+      "options": [
+        "Once at the end of every shift",
+        "Every morning before starting work",
+        "At the end of every journey",
+        "Only if the passenger calls the operator"
+      ],
+      "type": "multiple_choice",
+      "id": "plr-mc-0086"
+    },
+    {
+      "question": "Which of the following describes a 'hate crime' in the context of PHV driving and public safety?",
+      "explanation": "Hate crime includes any criminal offence perceived to be motivated by hostility or prejudice based on a person's disability, race, religion, or sexual orientation.",
+      "correctAnswer": 0,
+      "options": [
+        "A crime motivated by hostility based on race, religion, or disability",
+        "A physical assault that occurs during a traffic dispute",
+        "When a passenger refuses to pay the agreed fare",
+        "Failure to follow the driver's instructions inside the vehicle"
+      ],
+      "type": "multiple_choice",
+      "id": "plr-mc-0087"
+    },
+    {
+      "question": "What extra fee is a PHV driver allowed to charge for carrying an assistance dog?",
+      "explanation": "Under the Equality Act 2010, drivers cannot charge extra for carrying an assistance dog or for any mobility aids used by disabled passengers.",
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "options": [
+        "A small cleaning fee of £5",
+        "Double the standard fare rate",
+        "Nothing; they must charge the same as any other passenger",
+        "Only the cost of the extra fuel used"
+      ],
+      "id": "plr-mc-0088"
+    },
+    {
+      "question": "What must a PHV driver wear or display to prove to a passenger that they are licensed?",
+      "explanation": "TfL issues a photo ID badge which the driver must wear or display clearly so that the passenger can see it.",
+      "correctAnswer": 1,
+      "options": [
+        "A wristband with the operator's name",
+        "A photo ID badge issued by TfL",
+        "A high-visibility vest with their name on it",
+        "Their UK passport or birth certificate"
+      ],
+      "type": "multiple_choice",
+      "id": "plr-mc-0089"
+    },
+    {
+      "question": "Which of the following is true regarding a driver's responsibility for passenger safety?",
+      "explanation": "Drivers are responsible for ensuring that their passengers are safe and that the vehicle is roadworthy and properly insured at all times.",
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "options": [
+        "The passenger's safety is not the driver's responsibility",
+        "The driver is only responsible while the vehicle is moving",
+        "The operator is the only person responsible for safety",
+        "The driver is responsible for the safety of the passenger and the vehicle"
+      ],
+      "id": "plr-mc-0090"
+    },
+    {
+      "options": [
+        "Switch off the engine when parked or waiting for a long time",
+        "Keep the engine running to keep the heater or AC on",
+        "Drive in a low gear at all times to increase power",
+        "Speed up quickly and brake hard at every junction"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "explanation": "Drivers must drive in a way that minimises fuel consumption and emissions, such as by avoiding unnecessary idling.",
+      "question": "To help improve air quality in London, what should a PHV driver do when the vehicle is stationary?",
+      "id": "plr-mc-0091"
+    },
+    {
+      "explanation": "If a driver stops working for their current operator and moves to another, they must notify TfL of the change in their employment details.",
+      "question": "What must a licensed PHV driver do if they stop working for one operator and start working for another?",
+      "type": "multiple_choice",
+      "options": [
+        "Notify the police immediately",
+        "Return their badge to the previous operator",
+        "Tell TfL that they have changed operators",
+        "Wait until their licence expires to report it"
+      ],
+      "correctAnswer": 2,
+      "id": "plr-mc-0092"
+    },
+    {
+      "question": "In what situation is a PHV driver legally allowed to refuse to carry an assistance dog?",
+      "options": [
+        "If they have an allergy (no certificate needed)",
+        "If the dog is too large for the vehicle",
+        "Only if they have a medical exemption certificate from TfL",
+        "If the journey is longer than 5 miles"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "explanation": "PHV drivers are legally required to carry assistance dogs to ensure people with disabilities have equal access to transport.",
+      "id": "plr-mc-0093"
+    },
+    {
+      "question": "What is the primary reason why PHV drivers are prohibited from 'plying for hire' or stopping for street hails?",
+      "type": "multiple_choice",
+      "options": [
+        "To ensure all journeys are recorded by an operator before they start",
+        "To allow PHV drivers to choose their own fares",
+        "To make sure PHV drivers do not get lost in London",
+        "To prevent traffic congestion in Central London"
+      ],
+      "explanation": "The main purpose of the plying for hire law is to ensure only licensed taxis (Black Cabs) can be hailed on the street for public safety.",
+      "correctAnswer": 0,
+      "id": "plr-mc-0094"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "7 days",
+        "21 days",
+        "28 days",
+        "Immediate notification is not required until licence renewal"
+      ],
+      "question": "If a PHV driver is arrested and charged with a criminal offence, within how many days must they notify TfL?",
+      "explanation": "If a driver is charged or convicted of any offence, they must inform TfL in writing within 21 days.",
+      "correctAnswer": 1,
+      "id": "plr-mc-0095"
+    },
+    {
+      "question": "What should a PHV driver do if they notice signs that a passenger might be a victim of human trafficking?",
+      "type": "multiple_choice",
+      "options": [
+        "Ignore it as it is not the driver's business",
+        "Confront the person the passenger is meeting",
+        "Ask the passenger for their personal identification",
+        "Note the details and report it to the police or your operator"
+      ],
+      "explanation": "Reporting suspicious activity helps police and TfL identify potential modern slavery or exploitation risks.",
+      "correctAnswer": 3,
+      "id": "plr-mc-0096"
+    },
+    {
+      "question": "Which of these is a mandatory requirement for obtaining a London PHV driver's licence?",
+      "options": [
+        "The driver is over the age of 25",
+        "The driver has lived in London for 5 years",
+        "The driver meets the required English language transition requirement",
+        "The driver has a clean driving licence for at least 10 years"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "explanation": "PHV drivers must be able to understand and communicate in English to ensure passenger safety and provide good service.",
+      "id": "plr-mc-0097"
+    },
+    {
+      "question": "What information must a PHV driver provide if a passenger asks for their details or wishes to make a complaint?",
+      "options": [
+        "Provide their name and badge number",
+        "Provide their home address and phone number",
+        "Refuse to give any personal information for privacy reasons",
+        "Ask the passenger to contact TfL for that information"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "explanation": "A driver must provide his or her name and private hire driver badge number if a passenger asks for it.",
+      "id": "plr-mc-0098"
+    },
+    {
+      "correctAnswer": 1,
+      "explanation": "All PHV bookings must be made through a licensed operator to ensure a digital or written trail exists for every journey.",
+      "options": [
+        "Directly between the passenger and the driver at the roadside",
+        "Through a licensed PHV operator",
+        "By the driver using a personal mobile phone while the car is moving",
+        "At a taxi rank outside a train station"
+      ],
+      "type": "multiple_choice",
+      "question": "According to London regulations, how must every PHV journey be booked?",
+      "id": "plr-mc-0099"
+    },
+    {
+      "explanation": "Seatbelt laws are strict; drivers are responsible for ensuring minors (under 14) are safely secured.",
+      "correctAnswer": 3,
+      "question": "Who is legally responsible for ensuring that a child under the age of 14 wears a seatbelt in a PHV?",
+      "type": "multiple_choice",
+      "options": [
+        "The passenger sitting next to the child",
+        "The PHV operator who took the booking",
+        "The child themselves",
+        "The driver of the vehicle"
+      ],
+      "id": "plr-mc-0100"
+    },
+    {
+      "question": "What are the expectations for a PHV driver regarding their personal appearance and dress code?",
+      "type": "multiple_choice",
+      "options": [
+        "They are allowed to wear whatever they find most comfortable",
+        "They should wear high-visibility clothing at all times",
+        "They should dress professionally and be clean and tidy",
+        "They must wear a specific uniform provided by TfL"
+      ],
+      "explanation": "Failing to comply with the dress code or expected professional standards can lead to complaints and licensing action.",
+      "correctAnswer": 2,
+      "id": "plr-mc-0101"
+    },
+    {
+      "options": [
+        "Stop using the vehicle for PHV work until it is repaired",
+        "Continue working but avoid motorways and fast roads",
+        "Only take bookings for short distances until the next service",
+        "Use a different vehicle that is not licensed while the main car is fixed"
+      ],
+      "type": "multiple_choice",
+      "question": "What should a driver do if their licensed vehicle develops a fault that makes it unsafe to drive?",
+      "correctAnswer": 0,
+      "explanation": "If the vehicle is unsafe, it must be removed from service until it is repaired to meet TfL's strict safety standards.",
+      "id": "plr-mc-0102"
+    },
+    {
+      "explanation": "If property is not claimed, it must be handed to a police station or the operator’s lost property office within 24 hours.",
+      "correctAnswer": 2,
+      "question": "What is the correct procedure if a passenger leaves an item of value in your vehicle and you cannot return it immediately?",
+      "type": "multiple_choice",
+      "options": [
+        "Wait for the passenger to call their personal phone",
+        "Keep the item for 7 days in the car boot",
+        "Follow the operator's lost property procedure or take it to a police station",
+        "Dispose of the item if it is worth less than £10"
+      ],
+      "id": "plr-mc-0103"
+    },
+    {
+      "options": [
+        "Only if they are using it for a personal call",
+        "If they are holding the phone in their hand while the engine is running",
+        "Only if they are speeding at the same time",
+        "If the phone is mounted in a secure dashboard cradle"
+      ],
+      "type": "multiple_choice",
+      "question": "In which of these scenarios would a PHV driver be breaking the law regarding mobile phone use?",
+      "correctAnswer": 1,
+      "explanation": "It is an offence to use a mobile phone for any reason while driving, including navigating or accepting jobs, unless it is held in a cradle.",
+      "id": "plr-mc-0104"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "After 7 days",
+        "After 14 days",
+        "Within 21 days",
+        "Only when they renew their licence"
+      ],
+      "question": "How soon must a licensed PHV driver notify TfL if they change their home address?",
+      "explanation": "PHV drivers must notify TfL in writing within 21 days of any change of home address.",
+      "correctAnswer": 2,
+      "id": "plr-mc-0105"
+    },
+    {
+      "explanation": "PHV identifiers (license discs) must be clearly displayed on both the front and rear windscreens at all times.",
+      "options": [
+        "On the front and rear windscreens",
+        "Only on the rear windscreen",
+        "Stored in the glove box to show if asked",
+        "On the driver's side window"
+      ],
+      "question": "Where must a PHV's license discs be displayed to remain compliant with TfL regulations?",
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "id": "plr-mc-0106"
+    },
+    {
+      "correctAnswer": 1,
+      "options": [
+        "Drive them to the nearest pharmacy",
+        "Pull over safely and call 999",
+        "Attempt to perform medical surgery yourself",
+        "Continue to the destination as quickly as possible"
+      ],
+      "question": "What is the most appropriate action for a PHV driver to take if a passenger becomes suddenly and seriously ill?",
+      "explanation": "If a passenger has a medical emergency, the driver should call 999 immediately to seek professional help.",
+      "type": "multiple_choice",
+      "id": "plr-mc-0107"
+    },
+    {
+      "correctAnswer": 3,
+      "options": [
+        "Keep it in their wallet at all times",
+        "Leave it at home once the licence is granted",
+        "Stick it to the outside of the driver's door",
+        "Wear it or display it clearly so it is visible to passengers"
+      ],
+      "question": "How should a PHV driver display their ID badge while working?",
+      "explanation": "The driver's badge must be worn or displayed so it is clearly visible to passengers at all times.",
+      "type": "multiple_choice",
+      "id": "plr-mc-0108"
+    },
+    {
+      "question": "Which approach should a PHV driver take when dealing with a difficult or rude passenger?",
+      "options": [
+        "Maintain a professional manner and do not use offensive language",
+        "Argue back to defend your point of view",
+        "Refuse to speak to the passenger for the entire journey",
+        "Threaten to call their operator immediately to cancel the booking"
+      ],
+      "explanation": "Drivers must remain calm and professional; they should never use aggressive or offensive language, even if provoked.",
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "id": "plr-mc-0109"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "question": "Under what circumstances can a private hire vehicle (PHV) use a London bus lane?",
+      "options": [
+        "At any time if they have a passenger in the car",
+        "Only during peak rush hour times",
+        "Only when explicitly permitted by signs at that specific location",
+        "Whenever they are on a booking for a licensed operator"
+      ],
+      "explanation": "Standard PHV drivers are restricted from using most London bus lanes during their operational hours.",
+      "id": "plr-mc-0110"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "Assistance dogs are trained to sit in the footwell of the vehicle, not on the seats or in the boot.",
+      "question": "Where should a passenger's assistance dog normally sit during a journey?",
+      "options": [
+        "In the footwell of the vehicle",
+        "On the rear seat next to the passenger",
+        "In the boot of the car for safety",
+        "On the front passenger seat"
+      ],
+      "correctAnswer": 0,
+      "id": "plr-mc-0111"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "options": [
+        "Only if they were born outside the UK",
+        "Every person applying for or renewing a PHV driver licence",
+        "Only if they cannot provide a UK passport",
+        "Only if they are older than 25 years old"
+      ],
+      "question": "Who is required to demonstrate they meet the English language requirement for a PHV licence?",
+      "explanation": "All licensed PHV drivers must pass an assessment to prove they can speak, listen, read, and write in English to a specific standard.",
+      "id": "plr-mc-0112"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "question": "How is the fare for a private hire journey typically determined under London regulations?",
+      "options": [
+        "Negotiated with the driver at the end of the journey",
+        "Based on a taximeter installed in the vehicle",
+        "Fixed by the local council regardless of the journey",
+        "Agreed with the operator at the time of booking"
+      ],
+      "explanation": "Fares for PHVs must be agreed between the passenger and the operator at the time of booking.",
+      "id": "plr-mc-0113"
+    },
+    {
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "explanation": "Section 63 of the Equality Act 2010 makes it illegal for PHV drivers to charge extra for carrying a passenger in a wheelchair.",
+      "options": [
+        "The driver can charge a flat 'handling fee' of £5",
+        "The driver cannot charge any extra for carrying a wheelchair",
+        "The driver can charge double the standard mileage rate",
+        "The driver can only charge extra if the wheelchair is heavy"
+      ],
+      "question": "What is the law regarding charging extra for a passenger who uses a wheelchair?",
+      "id": "plr-mc-0114"
+    },
+    {
+      "correctAnswer": 2,
+      "explanation": "TfL requires drivers to report any change in their medical condition that might affect their ability to drive safely.",
+      "options": [
+        "After they have recovered from the condition",
+        "Only if they are off work for more than a month",
+        "As soon as possible to TfL Licensing",
+        "They only need to tell their GP, not TfL"
+      ],
+      "question": "When should a PHV driver notify TfL if they develop a new medical condition that affects their driving?",
+      "type": "multiple_choice",
+      "id": "plr-mc-0115"
+    },
+    {
+      "explanation": "Drivers must be able to use a map or GPS to find destinations and must have a good knowledge of London's geography.",
+      "question": "In the context of the topographical assessment, what must a PHV driver demonstrate?",
+      "options": [
+        "Memorising every street name in London like a taxi driver",
+        "The ability to plan a route using a map or sat-nav correctly",
+        "Holding a degree in London Geography and History",
+        "Having lived in London for at least ten years"
+      ],
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "id": "plr-mc-0116"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "If a passenger is being offensive or aggressive, drivers should remain professional, avoid escalating the situation, and not use abusive language in return.",
+      "question": "What is the recommended way to handle a passenger who is being verbally offensive or aggressive?",
+      "options": [
+        "Shout back to gain control of the situation",
+        "Stop the car and demand they get out immediately in an unsafe area",
+        "Keep calm, stay polite, and do not use abusive language in return",
+        "Lock the doors and drive to the nearest police station without speaking"
+      ],
+      "correctAnswer": 2,
+      "id": "plr-mc-0117"
+    },
+    {
+      "question": "Which organisation is responsible for issuing and regulating London Private Hire Vehicle (PHV) driver licences?",
+      "correctAnswer": 0,
+      "options": [
+        "Transport for London (TfL)",
+        "The Driver and Vehicle Licensing Agency (DVLA)",
+        "The Metropolitan Police",
+        "The Public Carriage Office (PCO) Private Contractor"
+      ],
+      "explanation": "Applications for a new licence or a renewal must be submitted to TfL before the current licence expires to continue working.",
+      "type": "multiple_choice",
+      "id": "plr-mc-0118"
+    },
+    {
+      "explanation": "A PHV driver cannot accept a booking directly; all bookings must be made through a licensed London private hire operator.",
+      "type": "multiple_choice",
+      "question": "A member of the public approaches you on the street and asks for a ride. What must you do?",
+      "correctAnswer": 1,
+      "options": [
+        "The driver can accept it as long as they record it in their logbook later",
+        "The driver must refuse and tell the person to book through a licensed operator",
+        "The driver can accept it if the passenger pays in cash upfront",
+        "The driver may accept it only if the journey is less than two miles"
+      ],
+      "id": "plr-mc-0119"
+    },
+    {
+      "options": [
+        "Charge a small 'cleaning fee' for the dog",
+        "Insist the dog is kept in the boot of the vehicle",
+        "Ask the passenger to provide a crate for the dog",
+        "Carry the passenger and their dog at no extra cost"
+      ],
+      "correctAnswer": 3,
+      "question": "Unless you have a medical exemption certificate, what is your legal obligation when a passenger with an assistance dog books a ride?",
+      "type": "multiple_choice",
+      "explanation": "Under the Equality Act 2010, drivers must not refuse a passenger or charge extra because they have an assistance dog, unless the driver has a valid medical exemption.",
+      "id": "plr-mc-0120"
+    },
+    {
+      "question": "How many days do you have to notify TfL in writing if you are arrested or charged with a motoring offence?",
+      "options": [
+        "24 hours",
+        "7 days",
+        "21 days",
+        "28 days"
+      ],
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "explanation": "Drivers must notify TfL within 21 days of any arrest or conviction for a criminal or motoring offence.",
+      "id": "plr-mc-0121"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "The PHV licence disc must be clearly visible to the public and must not be damaged or altered in any way.",
+      "options": [
+        "Inform TfL immediately and apply for a replacement disc",
+        "Write the details on a piece of paper and tape it to the window",
+        "Continue driving until the vehicle's next annual inspection",
+        "Use a disc from another vehicle you own until the replacement arrives"
+      ],
+      "correctAnswer": 0,
+      "question": "What should you do if one of the licence discs on your vehicle becomes badly faded or damaged?",
+      "id": "plr-mc-0122"
+    },
+    {
+      "question": "What should you do if you suspect a child passenger is at risk of being exploited or harmed?",
+      "correctAnswer": 1,
+      "options": [
+        "Mind your own business as it is a private matter",
+        "Report your concerns to the police or your operator's safeguarding lead",
+        "Ask the child for their phone number to check on them later",
+        "Drive the child to a different location than requested"
+      ],
+      "explanation": "It is a driver's duty to report any concerns regarding the safety or exploitation of a child or vulnerable adult to the police.",
+      "type": "multiple_choice",
+      "id": "plr-mc-0123"
+    },
+    {
+      "explanation": "The driver is legally responsible for ensuring children under 14 use the correct restraints, though taxis and PHVs have specific exemptions regarding car seats.",
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "options": [
+        "In the front seat next to the driver",
+        "In the rear seat, with their own seatbelt on",
+        "In the rear seat, using an adult seatbelt if a child seat is not available",
+        "On their parent's lap to ensure they are secure"
+      ],
+      "question": "In a PHV, where should a child under 3 years old travel if a correct child seat is not provided by the passenger?",
+      "id": "plr-mc-0124"
+    },
+    {
+      "question": "Which of the following describes the professional standard for helping passengers with luggage?",
+      "options": [
+        "Tell the passenger they should have booked a larger vehicle",
+        "Wait in the car until the passenger has finished loading their bags",
+        "Charge an extra £2 for each piece of luggage handled",
+        "Get out of the car and offer to help the passenger with their luggage"
+      ],
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "explanation": "TfL regulations state that PHV drivers must be helpful, especially to passengers with disabilities or those who need extra assistance.",
+      "id": "plr-mc-0125"
+    },
+    {
+      "correctAnswer": 0,
+      "options": [
+        "An exemption certificate issued by TfL based on medical evidence",
+        "A verbal agreement between the driver and their operator",
+        "A note from the driver's own GP kept in the glovebox",
+        "There are no circumstances where a driver is exempt from these laws"
+      ],
+      "question": "What is the only valid reason for a driver to refuse to carry an assistance dog?",
+      "explanation": "Exemption certificates are only granted by TfL if a doctor provides evidence that a driver has a physical condition that makes carrying assistance dogs or helping wheelchair users difficult.",
+      "type": "multiple_choice",
+      "id": "plr-mc-0126"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "Checking the vehicle daily for safety issues like tyre pressure and fluid levels is essential for passenger safety and maintaining the licence.",
+      "question": "How often should a PHV driver carry out basic safety checks on their vehicle, such as checking tyres and lights?",
+      "options": [
+        "Once a month during a full valet",
+        "Every day before you start working",
+        "Only when the vehicle is due for its MOT",
+        "Whenever a passenger mentions the car feels strange"
+      ],
+      "correctAnswer": 1,
+      "id": "plr-mc-0127"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "Aggressive driving and speeding increase the risk of accidents; maintaining a calm driving style is safer and more professional.",
+      "options": [
+        "Always drive at a safe speed and stay calm in traffic",
+        "Speed up if the passenger says they are in a hurry to catch a flight",
+        "Use the horn frequently to clear traffic and save time",
+        "Tailgate the car in front to prevent other cars from cutting in"
+      ],
+      "correctAnswer": 0,
+      "question": "Which of the following is a key element of 'Safe Driving' for a London PHV driver?",
+      "id": "plr-mc-0128"
+    },
+    {
+      "question": "A passenger approaches you and asks to be driven home. Under what condition can you legally take this passenger?",
+      "explanation": "All private hire journeys must be booked through a licensed operator before the journey commences to ensure they are insured and recorded.",
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "options": [
+        "Wait for a signal from the local council",
+        "Contact the local police station for a reference number",
+        "Accept the booking only if it is made through a licensed London operator",
+        "Calculate the fare yourself and agree it with the passenger before starting"
+      ],
+      "id": "plr-mc-0129"
+    },
+    {
+      "question": "Are private hire vehicles permitted to drive in London bus lanes?",
+      "explanation": "PHVs are strictly prohibited from using London bus lanes during their operational hours, regardless of whether a passenger is on board.",
+      "correctAnswer": 0,
+      "options": [
+        "No, PHVs are never allowed to use bus lanes in London during the lane's hours of operation",
+        "Yes, but only if the driver is currently carrying a fare-paying passenger",
+        "Yes, but only if the vehicle is clearly displaying TfL licence discs",
+        "Yes, provided the driver is responding to an emergency booking"
+      ],
+      "type": "multiple_choice",
+      "id": "plr-mc-0130"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Ask the passenger to find their own way into the vehicle to avoid liability",
+        "Provide reasonable assistance to help the passenger board and be secure during the trip",
+        "Refer the passenger to a specialist taxi service as PHVs are not required to help",
+        "Only help the passenger if they agree to pay a small additional service fee"
+      ],
+      "correctAnswer": 1,
+      "explanation": "PHV drivers have a legal duty to assist wheelchair users with getting in and out of the vehicle and ensuring they are safe and comfortable.",
+      "question": "What is your legal responsibility regarding a passenger who uses a wheelchair?",
+      "id": "plr-mc-0131"
+    },
+    {
+      "explanation": "TfL mandates that any changes to your home address must be updated on your record within 28 days to ensure all correspondence reaches you.",
+      "question": "If you move house, within how many days must you notify TfL of your new address?",
+      "type": "multiple_choice",
+      "options": [
+        "Within 7 days",
+        "Within 14 days",
+        "Within 21 days",
+        "Within 28 days"
+      ],
+      "correctAnswer": 3,
+      "id": "plr-mc-0132"
+    },
+    {
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "options": [
+        "The discs must be clearly displayed and not covered or obscured in any way",
+        "The discs can be kept in the glove box as long as they are available on request",
+        "The discs should only be placed in the windows during nighttime hours",
+        "The discs should be covered with tinted film to prevent them from fading in the sun"
+      ],
+      "question": "Which of the following describes the correct way to display licence discs on a PHV?",
+      "explanation": "Licence discs must be clearly visible and not blocked by any other items to ensure the vehicle is identifiable to authorities and the public.",
+      "id": "plr-mc-0133"
+    },
+    {
+      "question": "In terms of safeguarding, which of the following might be a sign of modern slavery or human trafficking?",
+      "explanation": "Modern slavery involves the exploitation of people, and PHV drivers should be vigilant for signs of people being moved against their will or for work.",
+      "correctAnswer": 2,
+      "options": [
+        "A person who prefers to sit in the front seat next to the driver",
+        "A passenger who disputes the fare at the end of a journey",
+        "A passenger who appears frightened, withdrawn, or is being controlled by someone else",
+        "A person who books a long-distance journey with multiple stops"
+      ],
+      "type": "multiple_choice",
+      "id": "plr-mc-0134"
+    },
+    {
+      "correctAnswer": 1,
+      "options": [
+        "Only if the police were called to the scene of the accident",
+        "As soon as possible, and definitely within 72 hours of the accident",
+        "Only if the vehicle's licence discs were damaged in the crash",
+        "At the time of the vehicle's next annual licensing inspection"
+      ],
+      "type": "multiple_choice",
+      "question": "How soon must you report an accident to TfL if it affects the safety or appearance of your PHV?",
+      "explanation": "If a vehicle is involved in a collision that prevents it from being driven safely or legally, it must be reported to TfL as soon as possible.",
+      "id": "plr-mc-0135"
+    },
+    {
+      "correctAnswer": 1,
+      "options": [
+        "Soliciting for business in a public place (plying for hire)",
+        "Using a GPS device to navigate to a passenger's destination",
+        "Refusing to carry more than four passengers in a four-seat vehicle",
+        "Asking a passenger to wear their seatbelt during the journey"
+      ],
+      "type": "multiple_choice",
+      "question": "Which of the following is a criminal offence for a London PHV driver?",
+      "explanation": "Plying for hire is a criminal offence for PHV drivers; bookings must be pre-arranged to maintain the legality of the service and insurance.",
+      "id": "plr-mc-0136"
+    },
+    {
+      "question": "What should you do if you find a passenger's mobile phone left in your vehicle after a trip?",
+      "explanation": "If you find lost property, you should try to return it to the owner or follow the operator's procedure, or take it to a police station/TfL if necessary.",
+      "correctAnswer": 3,
+      "options": [
+        "Keep the item for 30 days and then get rid of it if no one claims it",
+        "Leave the item in the car until the next passenger decides to take it",
+        "Sell the item if it is of high value to cover your fuel costs",
+        "Follow your operator's policy or take it to a police station or TfL's lost property office"
+      ],
+      "type": "multiple_choice",
+      "id": "plr-mc-0137"
+    },
+    {
+      "explanation": "PHV drivers have a duty of care to ensure all passengers, especially children, travel safely according to the law.",
+      "question": "If a passenger travels with a child aged 3 to 12, what is your responsibility regarding seatbelts?",
+      "options": [
+        "Remind the adult that they are responsible for ensuring the child is wearing a seatbelt",
+        "Refuse the journey unless the passenger provides a full padded car seat for the child",
+        "Allow the child to stand behind the driver's seat for a better view of the road",
+        "Tell the passenger the child must sit in the front seat for better visibility"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "id": "plr-mc-0138"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "It is only allowed if the driver has a religious exemption certificate",
+        "It is allowed if the driver feels the passengers' behaviour is inappropriate for a car",
+        "It is illegal and against TfL policy to discriminate against passengers based on sexual orientation",
+        "It is allowed if the driver believes it might lead to a complaint from other road users"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Discrimination against passengers based on protected characteristics like sexual orientation is illegal under the Equality Act 2010.",
+      "question": "Which statement is true regarding the refusal of a booking based on a passenger's sexual orientation?",
+      "id": "plr-mc-0139"
+    },
+    {
+      "explanation": "PHV drivers should always be polite and professional, as they are representatives of the London transport network.",
+      "question": "What is the best way for a PHV driver to maintain a professional standard of customer service?",
+      "options": [
+        "Only speak if spoken to and avoid making eye contact with the passenger",
+        "Be polite, helpful, and professional at all times during the journey",
+        "Discuss personal opinions on politics and religion to pass the time",
+        "Listen to loud music or your own podcasts to stay awake during long shifts"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "id": "plr-mc-0140"
+    },
+    {
+      "options": [
+        "Keep it in the glove compartment for safety",
+        "Wear it so it is clearly visible to passengers or carry it to show on request",
+        "Leave it at home and only provide the badge number if asked",
+        "Keep it in the boot of the vehicle"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "explanation": "Drivers must always carry their PHV driver's badge while working and show it to any passenger or authorized officer who asks to see it.",
+      "question": "What is the requirement for carrying your TfL driver's badge while working?",
+      "id": "plr-mc-0141"
+    },
+    {
+      "explanation": "TfL has a strict policy against any form of abusive behaviour; drivers must remain professional and calm regardless of the passenger's behaviour.",
+      "question": "If a passenger becomes verbally aggressive or uses foul language, how should you respond?",
+      "options": [
+        "Argue back to defend your reputation",
+        "Immediately pull over and force the passenger out in a dangerous location",
+        "Remain calm, professional, and report the incident to your operator",
+        "Use physical force to remove the passenger from the vehicle"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "id": "plr-mc-0142"
+    },
+    {
+      "correctAnswer": 0,
+      "options": [
+        "The licensed private hire operator",
+        "The driver of the vehicle",
+        "The vehicle owner",
+        "The passenger themselves via a paper logbook"
+      ],
+      "type": "multiple_choice",
+      "question": "Who is legally allowed to accept a booking for a private hire journey?",
+      "explanation": "A private hire operator is the only party legally allowed to take a booking; a driver cannot accept a request directly from a member of the public.",
+      "id": "plr-mc-0143"
+    },
+    {
+      "question": "What is a requirement if you choose to install CCTV in your private hire vehicle?",
+      "explanation": "Recording devices must be used in accordance with data protection laws; this includes having signs to inform passengers they are being recorded.",
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "options": [
+        "Drivers are not allowed to use CCTV in their vehicles",
+        "CCTV can be used secretly without any notification",
+        "Signs must be displayed in the vehicle to inform passengers that CCTV is in use",
+        "CCTV can only be used if the passenger gives verbal consent at the start of every trip"
+      ],
+      "id": "plr-mc-0144"
+    },
+    {
+      "question": "What are you legally required to do when picking up a passenger in a wheelchair?",
+      "explanation": "It is a legal requirement under the Equality Act to provide reasonable assistance and not to charge extra for carrying passengers with disabilities or their aids.",
+      "correctAnswer": 3,
+      "options": [
+        "Charge a 'handling fee' for loading the wheelchair",
+        "Refuse the booking if the wheelchair is manual rather than electric",
+        "Only accept the booking if the passenger is accompanied by a carer",
+        "Provide reasonable assistance to the passenger and not charge extra for it"
+      ],
+      "type": "multiple_choice",
+      "id": "plr-mc-0145"
+    },
+    {
+      "options": [
+        "Only if you are using it for navigation purposes",
+        "It is illegal to use a hand-held phone at any time while the engine is running and you are in traffic",
+        "Only when you are driving on a motorway",
+        "It is permitted if you are stopped at red traffic lights"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "explanation": "It is illegal to use a hand-held mobile phone while driving, even when stopped at traffic lights or in a queue.",
+      "question": "When is it legal for a PHV driver to use a hand-held phone while driving?",
+      "id": "plr-mc-0146"
+    },
+    {
+      "explanation": "While waiting should be avoided, if necessary, it must be done in a way that respects traffic laws and does not hinder other road users.",
+      "question": "How should a driver wait for a passenger to ensure they are being safe and professional?",
+      "options": [
+        "Double park next to other cars to be closer to the pickup point",
+        "Wait on a pedestrian crossing if it is the only space available",
+        "Turn off your lights and hide in a dark side street",
+        "Ensure you are parked legally and not causing an obstruction to other road users"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 3,
+      "id": "plr-mc-0147"
+    },
+    {
+      "options": [
+        "To improve air quality in London by reducing vehicle emissions",
+        "To increase the speed limit on residential roads",
+        "To provide more parking spaces for residents",
+        "To encourage more people to buy diesel cars"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "explanation": "TfL enforces the Ultra Low Emission Zone (ULEZ) to improve air quality; PHV drivers must ensure their vehicle meets these standards or pay the daily charge.",
+      "question": "What is the primary purpose of the Ultra Low Emission Zone (ULEZ) in London?",
+      "id": "plr-mc-0148"
+    },
+    {
+      "explanation": "Vulnerable passengers should be dropped off in a safe, well-lit area as close to their final destination as possible to ensure their safety.",
+      "question": "When dropping off a lone, vulnerable passenger late at night, what should you do?",
+      "options": [
+        "Drop them at the nearest main road to save time",
+        "Drop them off at a dark corner if they ask to save on the fare",
+        "Ensure they are dropped off in a safe, well-lit place as close to their door as possible",
+        "Tell them to walk the rest of the way if the street looks busy"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "id": "plr-mc-0149"
+    },
+    {
+      "question": "What should you do if you notice a fault with your vehicle that makes it unsafe to drive?",
+      "explanation": "If your vehicle is not roadworthy, it is your responsibility to stop using it immediately until the faults are repaired.",
+      "correctAnswer": 1,
+      "options": [
+        "Continue working but drive at a slower speed",
+        "Stop using the vehicle immediately and have the faults repaired",
+        "Wait until your next scheduled MOT to fix the issues",
+        "Only use the vehicle for short trips within your local area"
+      ],
+      "type": "multiple_choice",
+      "id": "plr-mc-0150"
+    },
+    {
+      "options": [
+        "Stand on the pavement and ask people if they need a taxi",
+        "Accept a booking through your licensed operator's app or system",
+        "Flash your lights at pedestrians who look like they are waiting for a bus",
+        "Display a 'For Hire' sign in your windscreen"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "explanation": "PHV drivers are only allowed to pick up passengers who have pre-booked through a licensed operator. Soliciting for passengers is a crime known as 'touting'.",
+      "question": "Which of the following is the only legal way to obtain a passenger for a journey?",
+      "id": "plr-mc-0151"
+    },
+    {
+      "explanation": "Any change in medical status that could impact driving safety must be reported to TfL Driver Licensing as soon as possible.",
+      "question": "What must you do if you develop a medical condition that may affect your ability to drive?",
+      "options": [
+        "Tell your operator but not TfL",
+        "Wait until you renew your licence to mention it",
+        "Inform TfL in writing as soon as the condition is diagnosed",
+        "Ignore it if you feel you can still drive safely"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "id": "plr-mc-0152"
+    },
+    {
+      "options": [
+        "Wait until they have finished their food before picking them up",
+        "Politely refuse and tell them they must book through a licensed operator",
+        "Accept the journey as long as they pay in cash",
+        "Accept the journey but record it in your personal diary later"
+      ],
+      "type": "multiple_choice",
+      "question": "If a person approaches you on the street and asks for a lift for a short distance, what should you do?",
+      "explanation": "A PHV driver cannot accept a booking directly; all journeys must be booked through a licensed operator first.",
+      "correctAnswer": 1,
+      "id": "plr-mc-0153"
+    },
+    {
+      "options": [
+        "On double yellow lines at any time",
+        "In a bus lane during its hours of operation",
+        "On white zig-zag lines near a pedestrian crossing",
+        "In a designated taxi rank"
+      ],
+      "type": "multiple_choice",
+      "explanation": "PHVs can pick up and drop off in many red routes (single or double red lines) but are strictly prohibited from stopping on red route clearways or on zig-zags.",
+      "question": "Where is a PHV driver strictly prohibited from stopping to drop off a passenger?",
+      "correctAnswer": 2,
+      "id": "plr-mc-0154"
+    },
+    {
+      "explanation": "Section 165 of the Equality Act 2010 makes it a criminal offence to charge an extra fee for carrying a person in a wheelchair.",
+      "question": "What is the law regarding charging a passenger extra for carrying their wheelchair?",
+      "correctAnswer": 0,
+      "options": [
+        "It is a criminal offence to charge any extra for carrying a wheelchair",
+        "You can charge a flat £5 fee for the extra time taken to load the chair",
+        "You can charge more only if the passenger requires help with their luggage as well",
+        "You are allowed to charge more if the trip is outside of the Congestion Charge zone"
+      ],
+      "type": "multiple_choice",
+      "id": "plr-mc-0155"
+    },
+    {
+      "options": [
+        "Within 7 days",
+        "Within 14 days",
+        "Within 28 days",
+        "Within 21 days"
+      ],
+      "type": "multiple_choice",
+      "explanation": "Drivers must notify TfL of any change of address within 21 days to ensure licensing records are kept up to date.",
+      "question": "If you move to a new house, how long do you have to notify TfL of your change of address?",
+      "correctAnswer": 3,
+      "id": "plr-mc-0156"
+    },
+    {
+      "options": [
+        "PHV Operator",
+        "Taxi or Cab",
+        "Chauffeur Service",
+        "Pre-booked only"
+      ],
+      "type": "multiple_choice",
+      "explanation": "Drivers cannot use 'Taxi' or 'Cab' on their vehicle as these terms are legally reserved for licensed Hackney Carriages (Black Cabs).",
+      "question": "Which of the following words is a PHV driver strictly forbidden from displaying on their vehicle?",
+      "correctAnswer": 1,
+      "id": "plr-mc-0157"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "Carry the assistance dog at no extra cost",
+        "Charge a small cleaning fee in case the dog sheds hair",
+        "Refuse the booking if you have a religious objection to dogs",
+        "Ask the passenger to put the dog in the boot of the car"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Assistance dogs must be carried at no extra cost unless the driver has a formal medical exemption certificate from TfL.",
+      "question": "Unless you have a medical exemption certificate, what must you do if a passenger has an assistance dog?",
+      "id": "plr-mc-0158"
+    },
+    {
+      "correctAnswer": 2,
+      "explanation": "Any change to your health that might affect your driving must be reported to TfL's licensing team immediately.",
+      "question": "If you are diagnosed with a new medical condition that could affect your driving, who should you notify first?",
+      "type": "multiple_choice",
+      "options": [
+        "Wait until your licence is up for renewal",
+        "Notify your operator and ask them to tell TfL",
+        "Tell TfL as soon as possible",
+        "Tell the DVLA only; you do not need to tell TfL"
+      ],
+      "id": "plr-mc-0159"
+    },
+    {
+      "options": [
+        "Running a red light during a trip",
+        "Failing to issue a receipt to a passenger",
+        "Accidentally overcharging a passenger due to a GPS error",
+        "Verbal abuse or threats directed at a passenger’s religion or race"
+      ],
+      "type": "multiple_choice",
+      "explanation": "Hate crimes include any criminal offence perceived to be motivated by hostility based on race, religion, sexual orientation, or disability.",
+      "question": "Which of the following would be considered a 'hate crime' in the context of private hire work?",
+      "correctAnswer": 3,
+      "id": "plr-mc-0160"
+    },
+    {
+      "question": "What are the standard operating hours for the London Congestion Charge?",
+      "explanation": "The Congestion Charge applies daily from 07:00 to 22:00, including bank holidays, but excluding the period between Christmas Day and New Year's Day.",
+      "correctAnswer": 1,
+      "options": [
+        "It applies 24 hours a day, 365 days a year",
+        "It applies between 07:00 and 22:00 every day except Christmas Day",
+        "It applies only on weekdays from 08:00 to 18:00",
+        "It applies on weekends only for PHVs"
+      ],
+      "type": "multiple_choice",
+      "id": "plr-mc-0161"
+    },
+    {
+      "explanation": "A 'county lines' operation involves gangs using children or vulnerable people to transport drugs across different areas, often using PHVs.",
+      "question": "What does the term 'county lines' refer to in the context of safeguarding?",
+      "correctAnswer": 2,
+      "options": [
+        "A journey that crosses the Greater London boundary",
+        "A regular commuter route between two different counties",
+        "The transport of drugs or money by gangs using vulnerable people and PHVs",
+        "A tour guide service operating outside of London"
+      ],
+      "type": "multiple_choice",
+      "id": "plr-mc-0162"
+    },
+    {
+      "question": "Who is legally responsible for ensuring that a child under the age of 14 wears a seatbelt in a PHV?",
+      "explanation": "It is the driver's responsibility to ensure that any child under 14 is wearing a seatbelt or using the correct child restraint.",
+      "correctAnswer": 0,
+      "options": [
+        "The driver",
+        "The child's parent or guardian",
+        "The PHV operator",
+        "The police officer who stops the vehicle"
+      ],
+      "type": "multiple_choice",
+      "id": "plr-mc-0163"
+    },
+    {
+      "correctAnswer": 2,
+      "explanation": "If you find a lost item and cannot immediately return it to the owner, you must take it to a police station or follow the operator's lost property policy within 24 hours.",
+      "question": "What should you do with an item of lost property if you cannot reach the passenger?",
+      "type": "multiple_choice",
+      "options": [
+        "Keep it for 7 days to see if the passenger contacts you personally",
+        "Leave it at the side of the road where you dropped them off",
+        "Follow your operator's policy or take it to a police station within 24 hours",
+        "Sell the item and donate the proceeds to charity"
+      ],
+      "id": "plr-mc-0164"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "TfL issues two identification discs; one must be displayed on the top left of the front windscreen and the other on the top left of the rear window.",
+      "correctAnswer": 2,
+      "question": "According to TfL rules, where must the two identification discs be displayed on a licensed PHV?",
+      "options": [
+        "On the dashboard and the rear bumper",
+        "In the glove compartment and on the rear parcel shelf",
+        "On the top left of the front windscreen and the top left of the rear window",
+        "On the driver's side door and the rear window"
+      ],
+      "id": "plr-mc-0165"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "Drivers must always wear their PHV driver's badge or have it clearly visible to the passenger at all times while working.",
+      "correctAnswer": 0,
+      "question": "What is the requirement for displaying your PHV driver's badge while you are working?",
+      "options": [
+        "It must be worn or displayed clearly so it can be seen by the passenger",
+        "It should be kept in the driver's wallet for security",
+        "It must be displayed in the boot of the vehicle",
+        "It only needs to be shown if a police officer asks for it"
+      ],
+      "id": "plr-mc-0166"
+    },
+    {
+      "question": "Under what circumstances can a PHV driver legally refuse to carry out a pre-booked journey?",
+      "options": [
+        "The passenger wants to travel a very short distance",
+        "The passenger is acting in a violent, abusive, or threatening manner",
+        "The passenger is carrying several shopping bags",
+        "The passenger has a heavy accent you find difficult to understand"
+      ],
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "explanation": "If a passenger is being violent or abusive, the driver has the right to refuse the journey to ensure their own safety and the safety of others.",
+      "id": "plr-mc-0167"
+    },
+    {
+      "correctAnswer": 3,
+      "question": "When is it acceptable for a PHV driver to park with one or more wheels on the pavement in London?",
+      "options": [
+        "Whenever the road is narrow",
+        "Only between the hours of 8 PM and 6 AM",
+        "If you are only stopping for less than two minutes",
+        "Never, unless there are signs specifically permitting it"
+      ],
+      "type": "multiple_choice",
+      "explanation": "Pavement parking is generally banned in London to ensure the safety and accessibility of pedestrians, especially those with disabilities.",
+      "id": "plr-mc-0168"
+    },
+    {
+      "options": [
+        "You will receive a verbal warning from the police",
+        "Nothing, as long as you charge the standard rate",
+        "Your insurance will be invalid and you may face prosecution",
+        "You will be allowed to continue if the passenger pays in cash"
+      ],
+      "question": "What is the main risk of picking up a passenger who has NOT pre-booked through a licensed operator?",
+      "correctAnswer": 2,
+      "explanation": "Operating a PHV without a valid booking from a licensed operator is a serious offence that invalidates your insurance and can lead to license white-listing.",
+      "type": "multiple_choice",
+      "id": "plr-mc-0169"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "As a professional driver, you must be aware of 'cuckooing,' which is when criminals take over a vulnerable person's home to use it for illegal activities.",
+      "correctAnswer": 0,
+      "question": "In the context of safeguarding, what does the term 'cuckooing' mean?",
+      "options": [
+        "Criminals taking over a vulnerable person's home to use for crime",
+        "A passenger trying to use a fake ID to book a vehicle",
+        "A driver picking up a passenger from an airport without a permit",
+        "The act of a passenger leaving a vehicle without paying the fare"
+      ],
+      "id": "plr-mc-0170"
+    },
+    {
+      "question": "How many days do you have to notify TfL if you are arrested or charged with a police offence?",
+      "options": [
+        "Within 24 hours",
+        "Only if you are convicted in court",
+        "Within 60 days",
+        "Within 21 days"
+      ],
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "explanation": "You must notify TfL within 21 days if you are arrested, charged, or cautioned for any criminal offence.",
+      "id": "plr-mc-0171"
+    },
+    {
+      "explanation": "Drivers must ensure they are well-rested; the Highway Code suggests taking a break of at least 15 minutes for every two hours of driving.",
+      "type": "multiple_choice",
+      "question": "To avoid fatigue and ensure safety, how often does the Highway Code recommend taking a break on long journeys?",
+      "options": [
+        "Every 5 hours",
+        "At least 15 minutes for every 2 hours of driving",
+        "Once per shift, regardless of the length",
+        "Only when you feel you are about to fall asleep"
+      ],
+      "correctAnswer": 1,
+      "id": "plr-mc-0172"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "Zig-zag lines near crossings are used to provide a clear view for both pedestrians and approaching motorists; stopping here is dangerous and illegal.",
+      "question": "Why is it strictly forbidden to stop on white zig-zag lines near a pedestrian crossing?",
+      "options": [
+        "To provide a clear view for pedestrians and approaching drivers",
+        "To allow PHVs to drop off elderly passengers only",
+        "To indicate where the driver should speed up",
+        "To provide extra parking for local residents at night"
+      ],
+      "correctAnswer": 0,
+      "id": "plr-mc-0173"
+    },
+    {
+      "explanation": "The PHV driver's license is valid for 3 years, after which the driver must apply for a renewal to continue working.",
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "options": [
+        "1 year",
+        "2 years",
+        "3 years",
+        "5 years"
+      ],
+      "question": "How long is a standard London PHV driver's license usually valid for?",
+      "id": "plr-mc-0174"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "Drivers are expected to be polite and helpful; if a passenger has a disability, you should ask how you can best support them.",
+      "correctAnswer": 1,
+      "options": [
+        "Assume they need no help and stay in the car",
+        "Ask them how you can best help and follow their instructions",
+        "Pick them up physically and place them in the seat",
+        "Tell them they should have booked a specialized vehicle instead"
+      ],
+      "question": "If a passenger with a physical disability requires assistance, how should a professional PHV driver respond?",
+      "id": "plr-mc-0175"
+    },
+    {
+      "type": "multiple_choice",
+      "explanation": "Section 172 of the Road Traffic Act requires the registered keeper (or driver) to provide information about who was driving a vehicle at the time of an offence.",
+      "options": [
+        "Provide the information requested to identify the driver",
+        "Refuse to answer based on privacy laws",
+        "Only provide the information if the offence was a felony",
+        "Wait for a court order before giving any details"
+      ],
+      "question": "If a PHV driver receives a 'Notice of Intended Prosecution' (NIP) for a speeding offence, what is their legal duty?",
+      "correctAnswer": 0,
+      "id": "plr-mc-0176"
+    },
+    {
+      "question": "Which of the following is the only legal way for a Private Hire driver to accept a booking?",
+      "explanation": "PHV drivers are only allowed to carry passengers who have booked their journey in advance through a licensed London private hire operator.",
+      "correctAnswer": 2,
+      "options": [
+        "At a designated taxi rank",
+        "When hailed on the street by a member of the public",
+        "Through bookings made via a licensed London private hire operator",
+        "By waiting outside a busy train station for walk-up customers"
+      ],
+      "type": "multiple_choice",
+      "id": "plr-mc-0177"
+    },
+    {
+      "options": [
+        "24 hours a day, every day of the year except Christmas Day",
+        "07:00 to 22:00, Monday to Friday",
+        "08:00 to 18:00, every day of the week",
+        "Midnight to midnight, Monday to Saturday only"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 0,
+      "explanation": "The ULEZ operates 24 hours a day, every day of the year, except for Christmas Day (25 December).",
+      "question": "What are the operating hours for the Ultra Low Emission Zone (ULEZ) in London?",
+      "id": "plr-mc-0178"
+    },
+    {
+      "correctAnswer": 1,
+      "options": [
+        "Wait until your license renewal to request a new one",
+        "Report it to the police and then contact TfL to request a replacement",
+        "Write your license number on a piece of paper and put it on the dashboard",
+        "Borrow a spare badge from a colleague or friend who is also a driver"
+      ],
+      "type": "multiple_choice",
+      "question": "What should you do if your PHV driver's badge is lost or stolen?",
+      "explanation": "If your private hire driver's badge is lost or stolen, you must report it to the police and contact TfL immediately for a replacement.",
+      "id": "plr-mc-0179"
+    },
+    {
+      "question": "Which of the following behaviours is considered a form of sexual harassment?",
+      "explanation": "Sexual harassment includes any unwelcome or suggestive comments, even if the driver considers them 'compliments' or 'friendly'.",
+      "correctAnswer": 3,
+      "options": [
+        "Asking the passenger if they have had a good day",
+        "Asking the passenger which route they would prefer to take",
+        "Checking if the passenger is comfortable with the temperature in the car",
+        "Making comments about a passenger's physical appearance or clothing"
+      ],
+      "type": "multiple_choice",
+      "id": "plr-mc-0180"
+    },
+    {
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "options": [
+        "7 days",
+        "14 days",
+        "21 days",
+        "28 days"
+      ],
+      "question": "How many days do you have to notify TfL if you change your home address?",
+      "explanation": "If you change your home address, you have a legal obligation to notify TfL in writing within 21 days.",
+      "id": "plr-mc-0181"
+    },
+    {
+      "explanation": "PHVs are generally not allowed to use bus lanes in London; they must always check signs, as most are reserved for buses and taxis (black cabs).",
+      "question": "Are London PHV drivers allowed to drive in bus lanes?",
+      "options": [
+        "Yes, at any time of the day or night",
+        "No, unless the street signs specifically state that PHVs are allowed",
+        "Yes, but only if they are carrying a passenger at the time",
+        "Only when they are trying to avoid heavy traffic or roadworks"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "id": "plr-mc-0182"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "A passenger who seems fearful and is being controlled by another person",
+        "A passenger who asks to stop at a supermarket on the way home",
+        "A passenger who is travelling to a popular tourist destination",
+        "A passenger who pays for their journey using a credit card"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Indicators of modern slavery include passengers who appear fearful, have restricted movement, or are being controlled by someone else.",
+      "question": "In the context of safeguarding, which of these is a potential sign of modern slavery or human trafficking?",
+      "id": "plr-mc-0183"
+    },
+    {
+      "question": "When should a PHV driver start the journey on their app or meter?",
+      "explanation": "You must wait for the passenger to enter the vehicle before starting the fare on the meter or app to ensure they are not overcharged.",
+      "correctAnswer": 1,
+      "options": [
+        "As soon as you receive the booking on your device",
+        "As soon as the passenger has entered the vehicle and the journey starts",
+        "Five minutes before the scheduled pick-up time",
+        "When you arrive at the pick-up location, regardless of where the passenger is"
+      ],
+      "type": "multiple_choice",
+      "id": "plr-mc-0184"
+    },
+    {
+      "question": "How often should a driver check their vehicle for lost property?",
+      "explanation": "Drivers should check the vehicle's interior for any left items after every single journey to ensure lost property is found quickly.",
+      "correctAnswer": 2,
+      "type": "multiple_choice",
+      "options": [
+        "Once at the end of their shift",
+        "Only if the passenger calls to say they lost something",
+        "After every journey once the passenger has left the vehicle",
+        "Once a week during a deep clean of the car"
+      ],
+      "id": "plr-mc-0185"
+    },
+    {
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "options": [
+        "Drivers are not allowed to stop at any time, even to pick up or drop off passengers",
+        "Drivers can stop for up to 5 minutes to wait for a passenger",
+        "Drivers can stop as long as they stay inside the vehicle",
+        "Drivers can park there if they have their hazard lights on"
+      ],
+      "question": "What are the rules for stopping on a Red Route marked with double red lines?",
+      "explanation": "Red routes are major roads where stopping is strictly controlled to keep traffic moving; double red lines mean no stopping at any time.",
+      "id": "plr-mc-0186"
+    },
+    {
+      "question": "When is it acceptable for a PHV driver to hold and use a mobile phone?",
+      "explanation": "It is illegal to use a mobile phone for any reason while driving, including reading messages, unless using a hands-free system.",
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "options": [
+        "Only if they are stopped at a red traffic light",
+        "Only if they are driving at less than 10 mph",
+        "Only to quickly check the destination on a map app",
+        "It is illegal to hold and use a mobile phone for any reason while driving"
+      ],
+      "id": "plr-mc-0187"
+    },
+    {
+      "question": "What should you do if you have a safeguarding concern about a child or vulnerable adult?",
+      "explanation": "Reporting concerns to your operator's safeguarding lead ensures that professional action is taken to protect the vulnerable person.",
+      "correctAnswer": 1,
+      "type": "multiple_choice",
+      "options": [
+        "Ignore it, as it is not the driver's business",
+        "Report your concerns to your operator's designated safeguarding lead or the police",
+        "Confront the passenger and ask them if they are being abused",
+        "Post about the situation on social media to raise awareness"
+      ],
+      "id": "plr-mc-0188"
     }
   ],
-  "mocks": []
+  "mocks": [
+    {
+      "mockNumber": 1,
+      "title": "London Private Hire Regulations Quiz Test 1",
+      "questionIds": [
+        "plr-mc-0013",
+        "plr-mc-0006",
+        "plr-mc-0185",
+        "plr-mc-0142",
+        "plr-mc-0112",
+        "plr-mc-0150",
+        "plr-mc-0031",
+        "plr-mc-0159",
+        "plr-mc-0054",
+        "plr-mc-0043",
+        "plr-mc-0154",
+        "plr-mc-0037",
+        "plr-mc-0145",
+        "plr-mc-0178",
+        "plr-mc-0074",
+        "plr-mc-0003",
+        "plr-mc-0045",
+        "plr-mc-0163",
+        "plr-mc-0184",
+        "plr-mc-0016",
+        "plr-mc-0129",
+        "plr-mc-0116",
+        "plr-mc-0014",
+        "plr-mc-0065"
+      ]
+    },
+    {
+      "mockNumber": 2,
+      "title": "London Private Hire Regulations Quiz Test 2",
+      "questionIds": [
+        "plr-mc-0053",
+        "plr-mc-0104",
+        "plr-mc-0070",
+        "plr-mc-0096",
+        "plr-mc-0081",
+        "plr-mc-0128",
+        "plr-mc-0091",
+        "plr-mc-0004",
+        "plr-mc-0033",
+        "plr-mc-0106",
+        "plr-mc-0105",
+        "plr-mc-0120",
+        "plr-mc-0077",
+        "plr-mc-0113",
+        "plr-mc-0121",
+        "plr-mc-0119",
+        "plr-mc-0061",
+        "plr-mc-0067",
+        "plr-mc-0062",
+        "plr-mc-0136",
+        "plr-mc-0038",
+        "plr-mc-0165",
+        "plr-mc-0110",
+        "plr-mc-0102"
+      ]
+    },
+    {
+      "mockNumber": 3,
+      "title": "London Private Hire Regulations Quiz Test 3",
+      "questionIds": [
+        "plr-mc-0066",
+        "plr-mc-0132",
+        "plr-mc-0183",
+        "plr-mc-0134",
+        "plr-mc-0153",
+        "plr-mc-0079",
+        "plr-mc-0177",
+        "plr-mc-0168",
+        "plr-mc-0099",
+        "plr-mc-0044",
+        "plr-mc-0114",
+        "plr-mc-0095",
+        "plr-mc-0127",
+        "plr-mc-0015",
+        "plr-mc-0148",
+        "plr-mc-0085",
+        "plr-mc-0001",
+        "plr-mc-0143",
+        "plr-mc-0039",
+        "plr-mc-0017",
+        "plr-mc-0123",
+        "plr-mc-0020",
+        "plr-mc-0011",
+        "plr-mc-0188"
+      ]
+    },
+    {
+      "mockNumber": 4,
+      "title": "London Private Hire Regulations Quiz Test 4",
+      "questionIds": [
+        "plr-mc-0101",
+        "plr-mc-0019",
+        "plr-mc-0157",
+        "plr-mc-0064",
+        "plr-mc-0135",
+        "plr-mc-0052",
+        "plr-mc-0175",
+        "plr-mc-0180",
+        "plr-mc-0126",
+        "plr-mc-0137",
+        "plr-mc-0166",
+        "plr-mc-0124",
+        "plr-mc-0030",
+        "plr-mc-0073",
+        "plr-mc-0147",
+        "plr-mc-0005",
+        "plr-mc-0100",
+        "plr-mc-0028",
+        "plr-mc-0034",
+        "plr-mc-0158",
+        "plr-mc-0103",
+        "plr-mc-0055",
+        "plr-mc-0084",
+        "plr-mc-0080"
+      ]
+    },
+    {
+      "mockNumber": 5,
+      "title": "London Private Hire Regulations Quiz Test 5",
+      "questionIds": [
+        "plr-mc-0111",
+        "plr-mc-0046",
+        "plr-mc-0010",
+        "plr-mc-0049",
+        "plr-mc-0146",
+        "plr-mc-0169",
+        "plr-mc-0161",
+        "plr-mc-0086",
+        "plr-mc-0162",
+        "plr-mc-0078",
+        "plr-mc-0035",
+        "plr-mc-0090",
+        "plr-mc-0042",
+        "plr-mc-0122",
+        "plr-mc-0117",
+        "plr-mc-0069",
+        "plr-mc-0170",
+        "plr-mc-0141",
+        "plr-mc-0156",
+        "plr-mc-0125",
+        "plr-mc-0083",
+        "plr-mc-0022",
+        "plr-mc-0187",
+        "plr-mc-0094"
+      ]
+    },
+    {
+      "mockNumber": 6,
+      "title": "London Private Hire Regulations Quiz Test 6",
+      "questionIds": [
+        "plr-mc-0050",
+        "plr-mc-0048",
+        "plr-mc-0021",
+        "plr-mc-0075",
+        "plr-mc-0133",
+        "plr-mc-0138",
+        "plr-mc-0097",
+        "plr-mc-0026",
+        "plr-mc-0107",
+        "plr-mc-0149",
+        "plr-mc-0131",
+        "plr-mc-0118",
+        "plr-mc-0059",
+        "plr-mc-0018",
+        "plr-mc-0047",
+        "plr-mc-0167",
+        "plr-mc-0182",
+        "plr-mc-0093",
+        "plr-mc-0171",
+        "plr-mc-0032",
+        "plr-mc-0012",
+        "plr-mc-0082",
+        "plr-mc-0139",
+        "plr-mc-0076"
+      ]
+    },
+    {
+      "mockNumber": 7,
+      "title": "London Private Hire Regulations Quiz Test 7",
+      "questionIds": [
+        "plr-mc-0108",
+        "plr-mc-0040",
+        "plr-mc-0072",
+        "plr-mc-0173",
+        "plr-mc-0051",
+        "plr-mc-0002",
+        "plr-mc-0181",
+        "plr-mc-0179",
+        "plr-mc-0172",
+        "plr-mc-0068",
+        "plr-mc-0087",
+        "plr-mc-0186",
+        "plr-mc-0098",
+        "plr-mc-0144",
+        "plr-mc-0176",
+        "plr-mc-0057",
+        "plr-mc-0089",
+        "plr-mc-0151",
+        "plr-mc-0115",
+        "plr-mc-0160",
+        "plr-mc-0025",
+        "plr-mc-0041",
+        "plr-mc-0088",
+        "plr-mc-0092"
+      ]
+    },
+    {
+      "mockNumber": 8,
+      "title": "London Private Hire Regulations Quiz Test 8",
+      "questionIds": [
+        "plr-mc-0058",
+        "plr-mc-0009",
+        "plr-mc-0024",
+        "plr-mc-0155",
+        "plr-mc-0164",
+        "plr-mc-0027",
+        "plr-mc-0036",
+        "plr-mc-0023",
+        "plr-mc-0065",
+        "plr-mc-0008",
+        "plr-mc-0071",
+        "plr-mc-0130",
+        "plr-mc-0013",
+        "plr-mc-0029",
+        "plr-mc-0056",
+        "plr-mc-0007",
+        "plr-mc-0060",
+        "plr-mc-0140",
+        "plr-mc-0184",
+        "plr-mc-0109",
+        "plr-mc-0003",
+        "plr-mc-0174",
+        "plr-mc-0152",
+        "plr-mc-0063"
+      ]
+    },
+    {
+      "mockNumber": 9,
+      "title": "London Private Hire Regulations Quiz Test 9",
+      "questionIds": [
+        "plr-mc-0037",
+        "plr-mc-0043",
+        "plr-mc-0074",
+        "plr-mc-0116",
+        "plr-mc-0159",
+        "plr-mc-0178",
+        "plr-mc-0185",
+        "plr-mc-0054",
+        "plr-mc-0119",
+        "plr-mc-0129",
+        "plr-mc-0006",
+        "plr-mc-0112",
+        "plr-mc-0045",
+        "plr-mc-0145",
+        "plr-mc-0106",
+        "plr-mc-0150",
+        "plr-mc-0154",
+        "plr-mc-0113",
+        "plr-mc-0031",
+        "plr-mc-0038",
+        "plr-mc-0014",
+        "plr-mc-0142",
+        "plr-mc-0163",
+        "plr-mc-0016"
+      ]
+    },
+    {
+      "mockNumber": 10,
+      "title": "London Private Hire Regulations Quiz Test 10",
+      "questionIds": [
+        "plr-mc-0127",
+        "plr-mc-0070",
+        "plr-mc-0081",
+        "plr-mc-0105",
+        "plr-mc-0096",
+        "plr-mc-0132",
+        "plr-mc-0067",
+        "plr-mc-0077",
+        "plr-mc-0102",
+        "plr-mc-0004",
+        "plr-mc-0053",
+        "plr-mc-0001",
+        "plr-mc-0128",
+        "plr-mc-0104",
+        "plr-mc-0110",
+        "plr-mc-0061",
+        "plr-mc-0033",
+        "plr-mc-0017",
+        "plr-mc-0165",
+        "plr-mc-0120",
+        "plr-mc-0091",
+        "plr-mc-0121",
+        "plr-mc-0136",
+        "plr-mc-0062"
+      ]
+    },
+    {
+      "mockNumber": 11,
+      "title": "London Private Hire Regulations Quiz Test 11",
+      "questionIds": [
+        "plr-mc-0011",
+        "plr-mc-0079",
+        "plr-mc-0080",
+        "plr-mc-0148",
+        "plr-mc-0183",
+        "plr-mc-0044",
+        "plr-mc-0114",
+        "plr-mc-0177",
+        "plr-mc-0099",
+        "plr-mc-0188",
+        "plr-mc-0015",
+        "plr-mc-0039",
+        "plr-mc-0153",
+        "plr-mc-0157",
+        "plr-mc-0168",
+        "plr-mc-0095",
+        "plr-mc-0055",
+        "plr-mc-0020",
+        "plr-mc-0147",
+        "plr-mc-0085",
+        "plr-mc-0066",
+        "plr-mc-0134",
+        "plr-mc-0143",
+        "plr-mc-0123"
+      ]
+    },
+    {
+      "mockNumber": 12,
+      "title": "London Private Hire Regulations Quiz Test 12",
+      "questionIds": [
+        "plr-mc-0030",
+        "plr-mc-0124",
+        "plr-mc-0135",
+        "plr-mc-0084",
+        "plr-mc-0175",
+        "plr-mc-0169",
+        "plr-mc-0162",
+        "plr-mc-0158",
+        "plr-mc-0100",
+        "plr-mc-0137",
+        "plr-mc-0034",
+        "plr-mc-0166",
+        "plr-mc-0073",
+        "plr-mc-0042",
+        "plr-mc-0126",
+        "plr-mc-0187",
+        "plr-mc-0064",
+        "plr-mc-0028",
+        "plr-mc-0180",
+        "plr-mc-0052",
+        "plr-mc-0101",
+        "plr-mc-0005",
+        "plr-mc-0103",
+        "plr-mc-0019"
+      ]
+    },
+    {
+      "mockNumber": 13,
+      "title": "London Private Hire Regulations Quiz Test 13",
+      "questionIds": [
+        "plr-mc-0131",
+        "plr-mc-0111",
+        "plr-mc-0083",
+        "plr-mc-0146",
+        "plr-mc-0049",
+        "plr-mc-0161",
+        "plr-mc-0035",
+        "plr-mc-0010",
+        "plr-mc-0086",
+        "plr-mc-0047",
+        "plr-mc-0069",
+        "plr-mc-0094",
+        "plr-mc-0125",
+        "plr-mc-0090",
+        "plr-mc-0156",
+        "plr-mc-0078",
+        "plr-mc-0046",
+        "plr-mc-0048",
+        "plr-mc-0122",
+        "plr-mc-0107",
+        "plr-mc-0022",
+        "plr-mc-0170",
+        "plr-mc-0141",
+        "plr-mc-0117"
+      ]
+    },
+    {
+      "mockNumber": 14,
+      "title": "London Private Hire Regulations Quiz Test 14",
+      "questionIds": [
+        "plr-mc-0018",
+        "plr-mc-0059",
+        "plr-mc-0182",
+        "plr-mc-0089",
+        "plr-mc-0050",
+        "plr-mc-0093",
+        "plr-mc-0139",
+        "plr-mc-0092",
+        "plr-mc-0149",
+        "plr-mc-0026",
+        "plr-mc-0012",
+        "plr-mc-0021",
+        "plr-mc-0118",
+        "plr-mc-0171",
+        "plr-mc-0133",
+        "plr-mc-0075",
+        "plr-mc-0076",
+        "plr-mc-0025",
+        "plr-mc-0167",
+        "plr-mc-0032",
+        "plr-mc-0068",
+        "plr-mc-0097",
+        "plr-mc-0082",
+        "plr-mc-0138"
+      ]
+    },
+    {
+      "mockNumber": 15,
+      "title": "London Private Hire Regulations Quiz Test 15",
+      "questionIds": [
+        "plr-mc-0057",
+        "plr-mc-0056",
+        "plr-mc-0041",
+        "plr-mc-0130",
+        "plr-mc-0151",
+        "plr-mc-0060",
+        "plr-mc-0087",
+        "plr-mc-0040",
+        "plr-mc-0176",
+        "plr-mc-0181",
+        "plr-mc-0155",
+        "plr-mc-0115",
+        "plr-mc-0051",
+        "plr-mc-0160",
+        "plr-mc-0172",
+        "plr-mc-0108",
+        "plr-mc-0002",
+        "plr-mc-0179",
+        "plr-mc-0088",
+        "plr-mc-0098",
+        "plr-mc-0186",
+        "plr-mc-0144",
+        "plr-mc-0072",
+        "plr-mc-0173"
+      ]
+    },
+    {
+      "mockNumber": 16,
+      "title": "London Private Hire Regulations Quiz Test 16",
+      "questionIds": [
+        "plr-mc-0009",
+        "plr-mc-0109",
+        "plr-mc-0185",
+        "plr-mc-0003",
+        "plr-mc-0024",
+        "plr-mc-0058",
+        "plr-mc-0027",
+        "plr-mc-0063",
+        "plr-mc-0065",
+        "plr-mc-0036",
+        "plr-mc-0174",
+        "plr-mc-0007",
+        "plr-mc-0164",
+        "plr-mc-0152",
+        "plr-mc-0023",
+        "plr-mc-0071",
+        "plr-mc-0029",
+        "plr-mc-0184",
+        "plr-mc-0008",
+        "plr-mc-0037",
+        "plr-mc-0116",
+        "plr-mc-0178",
+        "plr-mc-0140",
+        "plr-mc-0013"
+      ]
+    },
+    {
+      "mockNumber": 17,
+      "title": "London Private Hire Regulations Quiz Test 17",
+      "questionIds": [
+        "plr-mc-0016",
+        "plr-mc-0031",
+        "plr-mc-0112",
+        "plr-mc-0014",
+        "plr-mc-0006",
+        "plr-mc-0113",
+        "plr-mc-0054",
+        "plr-mc-0128",
+        "plr-mc-0106",
+        "plr-mc-0150",
+        "plr-mc-0163",
+        "plr-mc-0129",
+        "plr-mc-0067",
+        "plr-mc-0142",
+        "plr-mc-0136",
+        "plr-mc-0119",
+        "plr-mc-0038",
+        "plr-mc-0043",
+        "plr-mc-0154",
+        "plr-mc-0074",
+        "plr-mc-0145",
+        "plr-mc-0004",
+        "plr-mc-0159",
+        "plr-mc-0045"
+      ]
+    },
+    {
+      "mockNumber": 18,
+      "title": "London Private Hire Regulations Quiz Test 18",
+      "questionIds": [
+        "plr-mc-0102",
+        "plr-mc-0095",
+        "plr-mc-0132",
+        "plr-mc-0053",
+        "plr-mc-0183",
+        "plr-mc-0091",
+        "plr-mc-0096",
+        "plr-mc-0081",
+        "plr-mc-0153",
+        "plr-mc-0104",
+        "plr-mc-0127",
+        "plr-mc-0061",
+        "plr-mc-0121",
+        "plr-mc-0033",
+        "plr-mc-0001",
+        "plr-mc-0070",
+        "plr-mc-0077",
+        "plr-mc-0105",
+        "plr-mc-0120",
+        "plr-mc-0110",
+        "plr-mc-0062",
+        "plr-mc-0017",
+        "plr-mc-0148",
+        "plr-mc-0165"
+      ]
+    },
+    {
+      "mockNumber": 19,
+      "title": "London Private Hire Regulations Quiz Test 19",
+      "questionIds": [
+        "plr-mc-0066",
+        "plr-mc-0044",
+        "plr-mc-0015",
+        "plr-mc-0085",
+        "plr-mc-0114",
+        "plr-mc-0147",
+        "plr-mc-0124",
+        "plr-mc-0080",
+        "plr-mc-0143",
+        "plr-mc-0079",
+        "plr-mc-0020",
+        "plr-mc-0100",
+        "plr-mc-0039",
+        "plr-mc-0099",
+        "plr-mc-0135",
+        "plr-mc-0034",
+        "plr-mc-0188",
+        "plr-mc-0157",
+        "plr-mc-0168",
+        "plr-mc-0134",
+        "plr-mc-0177",
+        "plr-mc-0055",
+        "plr-mc-0011",
+        "plr-mc-0123"
+      ]
+    },
+    {
+      "mockNumber": 20,
+      "title": "London Private Hire Regulations Quiz Test 20",
+      "questionIds": [
+        "plr-mc-0049",
+        "plr-mc-0180",
+        "plr-mc-0137",
+        "plr-mc-0162",
+        "plr-mc-0028",
+        "plr-mc-0158",
+        "plr-mc-0064",
+        "plr-mc-0146",
+        "plr-mc-0005",
+        "plr-mc-0126",
+        "plr-mc-0169",
+        "plr-mc-0103",
+        "plr-mc-0084",
+        "plr-mc-0019",
+        "plr-mc-0111",
+        "plr-mc-0042",
+        "plr-mc-0117",
+        "plr-mc-0052",
+        "plr-mc-0175",
+        "plr-mc-0030",
+        "plr-mc-0073",
+        "plr-mc-0166",
+        "plr-mc-0101",
+        "plr-mc-0187"
+      ]
+    },
+    {
+      "mockNumber": 21,
+      "title": "London Private Hire Regulations Quiz Test 21",
+      "questionIds": [
+        "plr-mc-0133",
+        "plr-mc-0082",
+        "plr-mc-0078",
+        "plr-mc-0125",
+        "plr-mc-0107",
+        "plr-mc-0090",
+        "plr-mc-0022",
+        "plr-mc-0086",
+        "plr-mc-0170",
+        "plr-mc-0131",
+        "plr-mc-0182",
+        "plr-mc-0122",
+        "plr-mc-0069",
+        "plr-mc-0094",
+        "plr-mc-0156",
+        "plr-mc-0048",
+        "plr-mc-0047",
+        "plr-mc-0035",
+        "plr-mc-0141",
+        "plr-mc-0046",
+        "plr-mc-0010",
+        "plr-mc-0083",
+        "plr-mc-0149",
+        "plr-mc-0161"
+      ]
+    },
+    {
+      "mockNumber": 22,
+      "title": "London Private Hire Regulations Quiz Test 22",
+      "questionIds": [
+        "plr-mc-0076",
+        "plr-mc-0050",
+        "plr-mc-0167",
+        "plr-mc-0059",
+        "plr-mc-0092",
+        "plr-mc-0087",
+        "plr-mc-0118",
+        "plr-mc-0068",
+        "plr-mc-0171",
+        "plr-mc-0139",
+        "plr-mc-0138",
+        "plr-mc-0181",
+        "plr-mc-0021",
+        "plr-mc-0173",
+        "plr-mc-0097",
+        "plr-mc-0093",
+        "plr-mc-0018",
+        "plr-mc-0026",
+        "plr-mc-0089",
+        "plr-mc-0032",
+        "plr-mc-0025",
+        "plr-mc-0098",
+        "plr-mc-0075",
+        "plr-mc-0012"
+      ]
+    },
+    {
+      "mockNumber": 23,
+      "title": "London Private Hire Regulations Quiz Test 23",
+      "questionIds": [
+        "plr-mc-0108",
+        "plr-mc-0176",
+        "plr-mc-0109",
+        "plr-mc-0172",
+        "plr-mc-0179",
+        "plr-mc-0008",
+        "plr-mc-0160",
+        "plr-mc-0056",
+        "plr-mc-0186",
+        "plr-mc-0040",
+        "plr-mc-0088",
+        "plr-mc-0002",
+        "plr-mc-0057",
+        "plr-mc-0041",
+        "plr-mc-0151",
+        "plr-mc-0130",
+        "plr-mc-0024",
+        "plr-mc-0060",
+        "plr-mc-0144",
+        "plr-mc-0072",
+        "plr-mc-0155",
+        "plr-mc-0009",
+        "plr-mc-0115",
+        "plr-mc-0051"
+      ]
+    },
+    {
+      "mockNumber": 24,
+      "title": "London Private Hire Regulations Quiz Test 24",
+      "questionIds": [
+        "plr-mc-0029",
+        "plr-mc-0027",
+        "plr-mc-0003",
+        "plr-mc-0152",
+        "plr-mc-0116",
+        "plr-mc-0014",
+        "plr-mc-0178",
+        "plr-mc-0058",
+        "plr-mc-0164",
+        "plr-mc-0036",
+        "plr-mc-0023",
+        "plr-mc-0185",
+        "plr-mc-0037",
+        "plr-mc-0074",
+        "plr-mc-0016",
+        "plr-mc-0184",
+        "plr-mc-0174",
+        "plr-mc-0071",
+        "plr-mc-0159",
+        "plr-mc-0013",
+        "plr-mc-0063",
+        "plr-mc-0065",
+        "plr-mc-0007",
+        "plr-mc-0140"
+      ]
+    },
+    {
+      "mockNumber": 25,
+      "title": "London Private Hire Regulations Quiz Test 25",
+      "questionIds": [
+        "plr-mc-0004",
+        "plr-mc-0043",
+        "plr-mc-0142",
+        "plr-mc-0112",
+        "plr-mc-0006",
+        "plr-mc-0136",
+        "plr-mc-0054",
+        "plr-mc-0031",
+        "plr-mc-0150",
+        "plr-mc-0053",
+        "plr-mc-0119",
+        "plr-mc-0154",
+        "plr-mc-0145",
+        "plr-mc-0104",
+        "plr-mc-0033",
+        "plr-mc-0128",
+        "plr-mc-0038",
+        "plr-mc-0067",
+        "plr-mc-0163",
+        "plr-mc-0061",
+        "plr-mc-0106",
+        "plr-mc-0113",
+        "plr-mc-0045",
+        "plr-mc-0129"
+      ]
+    },
+    {
+      "mockNumber": 26,
+      "title": "London Private Hire Regulations Quiz Test 26",
+      "questionIds": [
+        "plr-mc-0188",
+        "plr-mc-0102",
+        "plr-mc-0001",
+        "plr-mc-0070",
+        "plr-mc-0062",
+        "plr-mc-0096",
+        "plr-mc-0143",
+        "plr-mc-0081",
+        "plr-mc-0039",
+        "plr-mc-0121",
+        "plr-mc-0183",
+        "plr-mc-0165",
+        "plr-mc-0077",
+        "plr-mc-0105",
+        "plr-mc-0110",
+        "plr-mc-0132",
+        "plr-mc-0127",
+        "plr-mc-0091",
+        "plr-mc-0153",
+        "plr-mc-0148",
+        "plr-mc-0120",
+        "plr-mc-0095",
+        "plr-mc-0017",
+        "plr-mc-0044"
+      ]
+    },
+    {
+      "mockNumber": 27,
+      "title": "London Private Hire Regulations Quiz Test 27",
+      "questionIds": [
+        "plr-mc-0015",
+        "plr-mc-0034",
+        "plr-mc-0157",
+        "plr-mc-0114",
+        "plr-mc-0147",
+        "plr-mc-0064",
+        "plr-mc-0166",
+        "plr-mc-0135",
+        "plr-mc-0124",
+        "plr-mc-0019",
+        "plr-mc-0066",
+        "plr-mc-0085",
+        "plr-mc-0079",
+        "plr-mc-0134",
+        "plr-mc-0100",
+        "plr-mc-0080",
+        "plr-mc-0055",
+        "plr-mc-0099",
+        "plr-mc-0123",
+        "plr-mc-0177",
+        "plr-mc-0168",
+        "plr-mc-0020",
+        "plr-mc-0011",
+        "plr-mc-0126"
+      ]
+    },
+    {
+      "mockNumber": 28,
+      "title": "London Private Hire Regulations Quiz Test 28",
+      "questionIds": [
+        "plr-mc-0158",
+        "plr-mc-0052",
+        "plr-mc-0084",
+        "plr-mc-0146",
+        "plr-mc-0162",
+        "plr-mc-0137",
+        "plr-mc-0141",
+        "plr-mc-0175",
+        "plr-mc-0101",
+        "plr-mc-0170",
+        "plr-mc-0111",
+        "plr-mc-0042",
+        "plr-mc-0169",
+        "plr-mc-0117",
+        "plr-mc-0180",
+        "plr-mc-0103",
+        "plr-mc-0049",
+        "plr-mc-0094",
+        "plr-mc-0030",
+        "plr-mc-0028",
+        "plr-mc-0122",
+        "plr-mc-0187",
+        "plr-mc-0005",
+        "plr-mc-0073"
+      ]
+    },
+    {
+      "mockNumber": 29,
+      "title": "London Private Hire Regulations Quiz Test 29",
+      "questionIds": [
+        "plr-mc-0182",
+        "plr-mc-0046",
+        "plr-mc-0090",
+        "plr-mc-0107",
+        "plr-mc-0022",
+        "plr-mc-0075",
+        "plr-mc-0133",
+        "plr-mc-0083",
+        "plr-mc-0048",
+        "plr-mc-0131",
+        "plr-mc-0047",
+        "plr-mc-0086",
+        "plr-mc-0026",
+        "plr-mc-0139",
+        "plr-mc-0078",
+        "plr-mc-0125",
+        "plr-mc-0171",
+        "plr-mc-0156",
+        "plr-mc-0010",
+        "plr-mc-0035",
+        "plr-mc-0069",
+        "plr-mc-0149",
+        "plr-mc-0082",
+        "plr-mc-0161"
+      ]
+    },
+    {
+      "mockNumber": 30,
+      "title": "London Private Hire Regulations Quiz Test 30",
+      "questionIds": [
+        "plr-mc-0089",
+        "plr-mc-0167",
+        "plr-mc-0098",
+        "plr-mc-0040",
+        "plr-mc-0068",
+        "plr-mc-0032",
+        "plr-mc-0160",
+        "plr-mc-0181",
+        "plr-mc-0097",
+        "plr-mc-0092",
+        "plr-mc-0059",
+        "plr-mc-0025",
+        "plr-mc-0088",
+        "plr-mc-0021",
+        "plr-mc-0050",
+        "plr-mc-0118",
+        "plr-mc-0093",
+        "plr-mc-0138",
+        "plr-mc-0172",
+        "plr-mc-0173",
+        "plr-mc-0012",
+        "plr-mc-0076",
+        "plr-mc-0087",
+        "plr-mc-0018"
+      ]
+    },
+    {
+      "mockNumber": 31,
+      "title": "London Private Hire Regulations Quiz Test 31",
+      "questionIds": [
+        "plr-mc-0151",
+        "plr-mc-0130",
+        "plr-mc-0186",
+        "plr-mc-0109",
+        "plr-mc-0023",
+        "plr-mc-0144",
+        "plr-mc-0152",
+        "plr-mc-0176",
+        "plr-mc-0041",
+        "plr-mc-0008",
+        "plr-mc-0140",
+        "plr-mc-0155",
+        "plr-mc-0174",
+        "plr-mc-0057",
+        "plr-mc-0108",
+        "plr-mc-0002",
+        "plr-mc-0051",
+        "plr-mc-0060",
+        "plr-mc-0115",
+        "plr-mc-0009",
+        "plr-mc-0056",
+        "plr-mc-0024",
+        "plr-mc-0072",
+        "plr-mc-0179"
+      ]
+    },
+    {
+      "mockNumber": 32,
+      "title": "London Private Hire Regulations Quiz Test 32",
+      "questionIds": [
+        "plr-mc-0178",
+        "plr-mc-0045",
+        "plr-mc-0014",
+        "plr-mc-0027",
+        "plr-mc-0159",
+        "plr-mc-0129",
+        "plr-mc-0154",
+        "plr-mc-0058",
+        "plr-mc-0185",
+        "plr-mc-0071",
+        "plr-mc-0003",
+        "plr-mc-0037",
+        "plr-mc-0116",
+        "plr-mc-0164",
+        "plr-mc-0036",
+        "plr-mc-0184",
+        "plr-mc-0029",
+        "plr-mc-0007",
+        "plr-mc-0065",
+        "plr-mc-0054",
+        "plr-mc-0013",
+        "plr-mc-0063",
+        "plr-mc-0074",
+        "plr-mc-0016"
+      ]
+    },
+    {
+      "mockNumber": 33,
+      "title": "London Private Hire Regulations Quiz Test 33",
+      "questionIds": [
+        "plr-mc-0145",
+        "plr-mc-0150",
+        "plr-mc-0102",
+        "plr-mc-0006",
+        "plr-mc-0061",
+        "plr-mc-0119",
+        "plr-mc-0113",
+        "plr-mc-0004",
+        "plr-mc-0031",
+        "plr-mc-0106",
+        "plr-mc-0163",
+        "plr-mc-0053",
+        "plr-mc-0142",
+        "plr-mc-0081",
+        "plr-mc-0062",
+        "plr-mc-0112",
+        "plr-mc-0038",
+        "plr-mc-0067",
+        "plr-mc-0033",
+        "plr-mc-0043",
+        "plr-mc-0120",
+        "plr-mc-0136",
+        "plr-mc-0104",
+        "plr-mc-0128"
+      ]
+    },
+    {
+      "mockNumber": 34,
+      "title": "London Private Hire Regulations Quiz Test 34",
+      "questionIds": [
+        "plr-mc-0001",
+        "plr-mc-0114",
+        "plr-mc-0017",
+        "plr-mc-0110",
+        "plr-mc-0020",
+        "plr-mc-0070",
+        "plr-mc-0148",
+        "plr-mc-0177",
+        "plr-mc-0096",
+        "plr-mc-0143",
+        "plr-mc-0091",
+        "plr-mc-0039",
+        "plr-mc-0188",
+        "plr-mc-0011",
+        "plr-mc-0121",
+        "plr-mc-0044",
+        "plr-mc-0105",
+        "plr-mc-0183",
+        "plr-mc-0165",
+        "plr-mc-0127",
+        "plr-mc-0077",
+        "plr-mc-0095",
+        "plr-mc-0153",
+        "plr-mc-0132"
+      ]
+    },
+    {
+      "mockNumber": 35,
+      "title": "London Private Hire Regulations Quiz Test 35",
+      "questionIds": [
+        "plr-mc-0019",
+        "plr-mc-0079",
+        "plr-mc-0135",
+        "plr-mc-0157",
+        "plr-mc-0168",
+        "plr-mc-0166",
+        "plr-mc-0064",
+        "plr-mc-0126",
+        "plr-mc-0066",
+        "plr-mc-0015",
+        "plr-mc-0124",
+        "plr-mc-0100",
+        "plr-mc-0137",
+        "plr-mc-0073",
+        "plr-mc-0134",
+        "plr-mc-0084",
+        "plr-mc-0034",
+        "plr-mc-0055",
+        "plr-mc-0085",
+        "plr-mc-0101",
+        "plr-mc-0123",
+        "plr-mc-0099",
+        "plr-mc-0080",
+        "plr-mc-0147"
+      ]
+    },
+    {
+      "mockNumber": 36,
+      "title": "London Private Hire Regulations Quiz Test 36",
+      "questionIds": [
+        "plr-mc-0141",
+        "plr-mc-0022",
+        "plr-mc-0122",
+        "plr-mc-0005",
+        "plr-mc-0094",
+        "plr-mc-0187",
+        "plr-mc-0170",
+        "plr-mc-0103",
+        "plr-mc-0125",
+        "plr-mc-0028",
+        "plr-mc-0069",
+        "plr-mc-0049",
+        "plr-mc-0180",
+        "plr-mc-0169",
+        "plr-mc-0117",
+        "plr-mc-0078",
+        "plr-mc-0146",
+        "plr-mc-0158",
+        "plr-mc-0175",
+        "plr-mc-0111",
+        "plr-mc-0042",
+        "plr-mc-0162",
+        "plr-mc-0052",
+        "plr-mc-0030"
+      ]
+    },
+    {
+      "mockNumber": 37,
+      "title": "London Private Hire Regulations Quiz Test 37",
+      "questionIds": [
+        "plr-mc-0048",
+        "plr-mc-0133",
+        "plr-mc-0047",
+        "plr-mc-0082",
+        "plr-mc-0131",
+        "plr-mc-0161",
+        "plr-mc-0167",
+        "plr-mc-0156",
+        "plr-mc-0026",
+        "plr-mc-0171",
+        "plr-mc-0018",
+        "plr-mc-0090",
+        "plr-mc-0010",
+        "plr-mc-0059",
+        "plr-mc-0083",
+        "plr-mc-0050",
+        "plr-mc-0149",
+        "plr-mc-0139",
+        "plr-mc-0046",
+        "plr-mc-0086",
+        "plr-mc-0075",
+        "plr-mc-0107",
+        "plr-mc-0182",
+        "plr-mc-0035"
+      ]
+    },
+    {
+      "mockNumber": 38,
+      "title": "London Private Hire Regulations Quiz Test 38",
+      "questionIds": [
+        "plr-mc-0021",
+        "plr-mc-0138",
+        "plr-mc-0092",
+        "plr-mc-0176",
+        "plr-mc-0032",
+        "plr-mc-0012",
+        "plr-mc-0076",
+        "plr-mc-0087",
+        "plr-mc-0181",
+        "plr-mc-0089",
+        "plr-mc-0097",
+        "plr-mc-0118",
+        "plr-mc-0172",
+        "plr-mc-0072",
+        "plr-mc-0093",
+        "plr-mc-0160",
+        "plr-mc-0002",
+        "plr-mc-0041",
+        "plr-mc-0088",
+        "plr-mc-0025",
+        "plr-mc-0173",
+        "plr-mc-0040",
+        "plr-mc-0098",
+        "plr-mc-0068"
+      ]
+    },
+    {
+      "mockNumber": 39,
+      "title": "London Private Hire Regulations Quiz Test 39",
+      "questionIds": [
+        "plr-mc-0008",
+        "plr-mc-0155",
+        "plr-mc-0108",
+        "plr-mc-0140",
+        "plr-mc-0144",
+        "plr-mc-0058",
+        "plr-mc-0115",
+        "plr-mc-0056",
+        "plr-mc-0179",
+        "plr-mc-0174",
+        "plr-mc-0063",
+        "plr-mc-0130",
+        "plr-mc-0036",
+        "plr-mc-0186",
+        "plr-mc-0057",
+        "plr-mc-0051",
+        "plr-mc-0151",
+        "plr-mc-0109",
+        "plr-mc-0024",
+        "plr-mc-0027",
+        "plr-mc-0023",
+        "plr-mc-0060",
+        "plr-mc-0009",
+        "plr-mc-0152"
+      ]
+    },
+    {
+      "mockNumber": 40,
+      "title": "London Private Hire Regulations Quiz Test 40",
+      "questionIds": [
+        "plr-mc-0074",
+        "plr-mc-0043",
+        "plr-mc-0185",
+        "plr-mc-0014",
+        "plr-mc-0159",
+        "plr-mc-0178",
+        "plr-mc-0071",
+        "plr-mc-0029",
+        "plr-mc-0054",
+        "plr-mc-0112",
+        "plr-mc-0164",
+        "plr-mc-0006",
+        "plr-mc-0150",
+        "plr-mc-0184",
+        "plr-mc-0013",
+        "plr-mc-0007",
+        "plr-mc-0129",
+        "plr-mc-0116",
+        "plr-mc-0045",
+        "plr-mc-0065",
+        "plr-mc-0037",
+        "plr-mc-0154",
+        "plr-mc-0016",
+        "plr-mc-0003"
+      ]
+    },
+    {
+      "mockNumber": 41,
+      "title": "London Private Hire Regulations Quiz Test 41",
+      "questionIds": [
+        "plr-mc-0136",
+        "plr-mc-0067",
+        "plr-mc-0128",
+        "plr-mc-0004",
+        "plr-mc-0031",
+        "plr-mc-0120",
+        "plr-mc-0038",
+        "plr-mc-0061",
+        "plr-mc-0113",
+        "plr-mc-0070",
+        "plr-mc-0091",
+        "plr-mc-0163",
+        "plr-mc-0102",
+        "plr-mc-0110",
+        "plr-mc-0165",
+        "plr-mc-0062",
+        "plr-mc-0106",
+        "plr-mc-0081",
+        "plr-mc-0142",
+        "plr-mc-0033",
+        "plr-mc-0119",
+        "plr-mc-0145",
+        "plr-mc-0104",
+        "plr-mc-0053"
+      ]
+    },
+    {
+      "mockNumber": 42,
+      "title": "London Private Hire Regulations Quiz Test 42",
+      "questionIds": [
+        "plr-mc-0168",
+        "plr-mc-0020",
+        "plr-mc-0177",
+        "plr-mc-0188",
+        "plr-mc-0011",
+        "plr-mc-0105",
+        "plr-mc-0015",
+        "plr-mc-0001",
+        "plr-mc-0077",
+        "plr-mc-0134",
+        "plr-mc-0127",
+        "plr-mc-0148",
+        "plr-mc-0095",
+        "plr-mc-0039",
+        "plr-mc-0132",
+        "plr-mc-0143",
+        "plr-mc-0017",
+        "plr-mc-0153",
+        "plr-mc-0114",
+        "plr-mc-0121",
+        "plr-mc-0044",
+        "plr-mc-0096",
+        "plr-mc-0183",
+        "plr-mc-0085"
+      ]
+    },
+    {
+      "mockNumber": 43,
+      "title": "London Private Hire Regulations Quiz Test 43",
+      "questionIds": [
+        "plr-mc-0079",
+        "plr-mc-0055",
+        "plr-mc-0099",
+        "plr-mc-0064",
+        "plr-mc-0066",
+        "plr-mc-0084",
+        "plr-mc-0147",
+        "plr-mc-0101",
+        "plr-mc-0126",
+        "plr-mc-0019",
+        "plr-mc-0100",
+        "plr-mc-0137",
+        "plr-mc-0175",
+        "plr-mc-0028",
+        "plr-mc-0124",
+        "plr-mc-0034",
+        "plr-mc-0166",
+        "plr-mc-0157",
+        "plr-mc-0052",
+        "plr-mc-0135",
+        "plr-mc-0123",
+        "plr-mc-0073",
+        "plr-mc-0103",
+        "plr-mc-0080"
+      ]
+    },
+    {
+      "mockNumber": 44,
+      "title": "London Private Hire Regulations Quiz Test 44",
+      "questionIds": [
+        "plr-mc-0042",
+        "plr-mc-0162",
+        "plr-mc-0156",
+        "plr-mc-0083",
+        "plr-mc-0125",
+        "plr-mc-0078",
+        "plr-mc-0049",
+        "plr-mc-0094",
+        "plr-mc-0010",
+        "plr-mc-0169",
+        "plr-mc-0187",
+        "plr-mc-0005",
+        "plr-mc-0146",
+        "plr-mc-0122",
+        "plr-mc-0141",
+        "plr-mc-0180",
+        "plr-mc-0170",
+        "plr-mc-0111",
+        "plr-mc-0069",
+        "plr-mc-0030",
+        "plr-mc-0090",
+        "plr-mc-0117",
+        "plr-mc-0022",
+        "plr-mc-0158"
+      ]
+    },
+    {
+      "mockNumber": 45,
+      "title": "London Private Hire Regulations Quiz Test 45",
+      "questionIds": [
+        "plr-mc-0149",
+        "plr-mc-0075",
+        "plr-mc-0026",
+        "plr-mc-0161",
+        "plr-mc-0050",
+        "plr-mc-0171",
+        "plr-mc-0059",
+        "plr-mc-0133",
+        "plr-mc-0107",
+        "plr-mc-0086",
+        "plr-mc-0021",
+        "plr-mc-0097",
+        "plr-mc-0035",
+        "plr-mc-0131",
+        "plr-mc-0139",
+        "plr-mc-0093",
+        "plr-mc-0018",
+        "plr-mc-0076",
+        "plr-mc-0182",
+        "plr-mc-0082",
+        "plr-mc-0046",
+        "plr-mc-0167",
+        "plr-mc-0047",
+        "plr-mc-0048"
+      ]
+    }
+  ]
 }
