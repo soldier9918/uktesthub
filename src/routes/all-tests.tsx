@@ -3,6 +3,7 @@ import { useMemo, useState } from "react";
 import { ArrowRight, Clock, ListChecks, Search } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
+import { BookmarkButton } from "@/components/BookmarkButton";
 import { categories } from "@/data/categories";
 import { getQuizMeta } from "@/data/quizzes";
 
