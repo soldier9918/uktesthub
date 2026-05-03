@@ -3,6 +3,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { AdminGate } from "@/components/AdminGate";
 import { listAdminUsers, type AdminUserRow } from "@/server/users.functions";
 import { Badge } from "@/components/ui/badge";
+import { supabase } from "@/integrations/supabase/client";
 
 export const Route = createFileRoute("/admin-kb20/users")({
   head: () => ({ meta: [{ title: "Users — Admin — UK Test Hub" }] }),
