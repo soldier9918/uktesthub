@@ -146,10 +146,10 @@ function HomePage() {
               <br />
               <span className="text-coral">First Time</span>
             </h1>
-            <p className="mt-6 max-w-xl text-base text-navy-foreground/85 md:text-lg">
+            <p className="mt-6 max-w-xl text-base text-navy-foreground/85 md:text-lg whitespace-pre-line">
               Real exam questions. Mock tests. Instant results.
-              <br />
-              Study anytime, anywhere.
+              {"\n"}Study anytime, anywhere. 
+              {"\n"}Over 96000+ mock questions across 110+ topics!
             </p>
 
             <div className="mt-8 flex flex-wrap gap-3">
