@@ -3,6 +3,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { AdminGate } from "@/components/AdminGate";
 import { supabase } from "@/integrations/supabase/client";
 import { Badge } from "@/components/ui/badge";
+import { getRecentServerLogs } from "@/server/diagnostics.functions";
 
 type AnyMockFile = {
   topic?: string;
