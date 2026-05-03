@@ -1,6 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { SiteHeader } from "@/components/SiteHeader";
-import { SiteFooter } from "@/components/SiteFooter";
+import { AdminGate } from "@/components/AdminGate";
 
 type AnyMockFile = {
   topic?: string;
@@ -36,36 +35,36 @@ const topics: TopicEntry[] = Object.values(modules)
 
 export const Route = createFileRoute("/admin/questions/")({
   head: () => ({ meta: [{ title: "Question Bank Browser — UK Test Hub" }] }),
-  component: TopicsIndex,
+  component: () => (
+    <AdminGate>
+      <TopicsIndex />
+    </AdminGate>
+  ),
 });
 
 function TopicsIndex() {
   return (
-    <div className="min-h-screen bg-background">
-      <SiteHeader />
-      <main className="mx-auto max-w-5xl px-4 py-8">
-        <h1 className="font-display text-2xl font-bold">Question Bank Browser</h1>
-        <p className="mt-2 text-sm text-muted-foreground">
-          Read-only view of every question across all topics ({topics.length} topics).
-        </p>
-        <ul className="mt-6 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
-          {topics.map((t) => (
-            <li key={t.topic}>
-              <Link
-                to="/admin/questions/$topic"
-                params={{ topic: t.topic }}
-                className="block rounded-xl border border-border bg-card p-4 hover:border-coral/40 hover:shadow-soft"
-              >
-                <div className="font-medium">{t.topic}</div>
-                <div className="mt-1 text-xs text-muted-foreground">
-                  {t.bankCount} questions · {t.mockCount} mocks
-                </div>
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </main>
-      <SiteFooter />
-    </div>
+    <main className="mx-auto max-w-5xl px-4 py-8">
+      <h1 className="font-display text-2xl font-bold">Question Bank Browser</h1>
+      <p className="mt-2 text-sm text-muted-foreground">
+        Browse and edit every question across all topics ({topics.length} topics).
+      </p>
+      <ul className="mt-6 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+        {topics.map((t) => (
+          <li key={t.topic}>
+            <Link
+              to="/admin/questions/$topic"
+              params={{ topic: t.topic }}
+              className="block rounded-xl border border-border bg-card p-4 hover:border-coral/40 hover:shadow-soft"
+            >
+              <div className="font-medium">{t.topic}</div>
+              <div className="mt-1 text-xs text-muted-foreground">
+                {t.bankCount} questions · {t.mockCount} mocks
+              </div>
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </main>
   );
 }
