@@ -7065,7 +7065,7 @@
       "imageAlt": "road narrows on both sides"
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 0,
       "question": "A circular sign with a red border. Inside, there is a black silhouette of a car and a black silhouette of a motorcycle above it. What does this regulatory sign mean?",
       "options": [
@@ -7075,13 +7075,11 @@
         "Route for cars and motorcycles only"
       ],
       "explanation": "This sign prohibits all motor vehicles except for solo motorcycles",
-      "id": "rs-im-0002",
-      "image": "/road-signs/parking_places_for_solo_motorcycles.png",
-      "imageAlt": "parking places for solo motorcycles"
+      "id": "rs-im-0002"
     },
     {
       "correctAnswer": 3,
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "T-junction ahead",
         "Staggered junction ahead",
@@ -7090,9 +7088,7 @@
       ],
       "explanation": "This sign warns road users that they are approaching a crossroads",
       "question": "A triangular warning sign with a red border. Inside is a black '+' symbol representing an intersection. What does the sign mean?",
-      "id": "rs-im-0004",
-      "image": "/road-signs/crossroads.png",
-      "imageAlt": "crossroads"
+      "id": "rs-im-0004"
     },
     {
       "explanation": "A red circle with a horizontal white bar means 'No Entry' for all vehicles",
@@ -7125,7 +7121,7 @@
       "imageAlt": "bend to right"
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 3,
       "question": "A circular blue sign with a white graphic of a bicycle in the middle. There are no red borders. What does the sign indicate?",
       "explanation": "A blue circle with a bicycle symbol indicates a route that is for cycles only",
@@ -7135,9 +7131,7 @@
         "Cycle path with pedestrians",
         "Route for cycles only"
       ],
-      "id": "rs-im-0008",
-      "image": "/road-signs/ahead_only.png",
-      "imageAlt": "ahead only"
+      "id": "rs-im-0008"
     },
     {
       "type": "image_question",
@@ -7164,10 +7158,8 @@
       ],
       "question": "A red-bordered triangle containing a black wedge shape representing a slope going down from left to right, with '10%' written inside the wedge. What does the sign warn you about?",
       "correctAnswer": 1,
-      "type": "image_question",
-      "id": "rs-im-0011",
-      "image": "/road-signs/bend_to_right.png",
-      "imageAlt": "bend to right"
+      "type": "multiple_choice",
+      "id": "rs-im-0011"
     },
     {
       "type": "image_question",
@@ -7194,10 +7186,8 @@
       "correctAnswer": 2,
       "question": "A UK regulatory road sign: a red ring on a white background with a silhouette of a car and a motorcycle inside. You see the sign with a red border. What restriction does it place on the road?",
       "explanation": "A circular sign with a red border containing a motorcycle and a car indicates that all motor vehicles are prohibited from entering that area",
-      "type": "image_question",
-      "id": "rs-im-0013",
-      "image": "/road-signs/no_motor_vehicle.png",
-      "imageAlt": "no motor vehicle"
+      "type": "multiple_choice",
+      "id": "rs-im-0013"
     },
     {
       "question": "A standard UK 'No Entry' sign: a solid red circle with a horizontal white bar across the centre. What is the specific meaning of this red and white circular sign?",
@@ -7226,8 +7216,8 @@
         "River bank with no barrier"
       ],
       "id": "rs-im-0019",
-      "image": "/road-signs/maximum_speed.png",
-      "imageAlt": "maximum speed"
+      "image": "/road-signs/opening_or_swing_bridge.png",
+      "imageAlt": "opening or swing bridge"
     },
     {
       "options": [
@@ -7238,11 +7228,9 @@
       ],
       "explanation": "Signs with a blue background and no red border generally provide mandatory instructions; this specific sign indicates the start of a route designated for cyclists only",
       "question": "A UK mandatory sign: a blue circle featuring a white bicycle symbol. Which of these describes the purpose of the sign?",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 1,
-      "id": "rs-im-0020",
-      "image": "/road-signs/ahead_only.png",
-      "imageAlt": "ahead only"
+      "id": "rs-im-0020"
     },
     {
       "options": [
@@ -7358,11 +7346,9 @@
         "No motorcycles allowed",
         "No motor vehicles allowed"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 3,
-      "id": "rs-im-0028",
-      "image": "/road-signs/no_motor_vehicle.png",
-      "imageAlt": "no motor vehicle"
+      "id": "rs-im-0028"
     },
     {
       "type": "image_question",
@@ -7381,7 +7367,7 @@
     },
     {
       "correctAnswer": 1,
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "A blue rectangular sign featuring a large white 'P' next to a white silhouette of a motorcycle. What is the purpose of the sign?",
       "explanation": "A blue rectangular sign with a white 'P' and a motorcycle symbol indicates a parking area reserved specifically for motorcycles",
       "options": [
@@ -7390,9 +7376,7 @@
         "Motorcycle showroom ahead",
         "Moped and bicycle lane starts here"
       ],
-      "id": "rs-im-0031",
-      "image": "/road-signs/parking_places_for_solo_motorcycles.png",
-      "imageAlt": "parking places for solo motorcycles"
+      "id": "rs-im-0031"
     },
     {
       "type": "image_question",
@@ -7449,10 +7433,8 @@
         "Turn right for a T-junction"
       ],
       "correctAnswer": 0,
-      "type": "image_question",
-      "id": "rs-im-0035",
-      "image": "/road-signs/no_through_road_for_vehicles.png",
-      "imageAlt": "no through road for vehicles"
+      "type": "multiple_choice",
+      "id": "rs-im-0035"
     },
     {
       "explanation": "This sign warns drivers that there is a risk of low-flying aircraft or sudden aircraft noise ahead",
@@ -7526,8 +7508,8 @@
       "explanation": "This sign marks the end of a motorway, meaning motorway regulations no longer apply",
       "question": "A rectangular blue sign showing the white motorway symbol (two vertical lines and a bridge), crossed through with a thick red diagonal line. What does this motorway sign indicate?",
       "id": "rs-im-0041",
-      "image": "/road-signs/no_through_road_for_vehicles.png",
-      "imageAlt": "no through road for vehicles"
+      "image": "/road-signs/opening_or_swing_bridge.png",
+      "imageAlt": "opening or swing bridge"
     },
     {
       "question": "A triangular warning sign with a red border showing a black silhouette of a car descending a slope, with '10%' written next to the slope. What hazard is the sign warning you about?",
@@ -7550,16 +7532,14 @@
         "Two-way traffic ahead",
         "No overtaking permitted"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "This regulatory sign means that overtaking is not permitted for any motor vehicle",
       "correctAnswer": 3,
       "question": "A circular sign with a red border. Inside, there is a black car on the left and a red car on the right, side-by-side. What does this prohibitory sign indicate?",
-      "id": "rs-im-0044",
-      "image": "/road-signs/no_motor_vehicle.png",
-      "imageAlt": "no motor vehicle"
+      "id": "rs-im-0044"
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 0,
       "explanation": "This sign warns that the single carriageway is coming to an end and the road becomes a dual carriageway",
       "question": "A red-bordered triangle sign featuring two black vertical lines that are joined at the top but split/diverge towards the bottom. What road change is indicated by the sign?",
@@ -7569,9 +7549,7 @@
         "Start of a two-way traffic road",
         "Lane split ahead for different directions"
       ],
-      "id": "rs-im-0045",
-      "image": "/road-signs/dual_carriageway_ends.png",
-      "imageAlt": "dual carriageway ends"
+      "id": "rs-im-0045"
     },
     {
       "options": [
@@ -7580,13 +7558,11 @@
         "No motor vehicles allowed",
         "Only motor vehicles permitted beyond this point"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "A red circle with a motorcycle over a car means that no motor vehicles are allowed in that area",
       "correctAnswer": 2,
       "question": "A circular sign with a red border containing black silhouettes of a motorcycle and a car, one above the other. What is the meaning of this restrictive sign?",
-      "id": "rs-im-0046",
-      "image": "/road-signs/no_motor_vehicle.png",
-      "imageAlt": "no motor vehicle"
+      "id": "rs-im-0046"
     },
     {
       "options": [
@@ -7597,11 +7573,9 @@
       ],
       "explanation": "A blue circular sign with a white bicycle symbol indicates a route that is for use by pedal cycles only",
       "correctAnswer": 3,
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "A mandatory circular blue sign with a white silhouette of a bicycle in the centre. What does the sign indicate?",
-      "id": "rs-im-0048",
-      "image": "/road-signs/ahead_only.png",
-      "imageAlt": "ahead only"
+      "id": "rs-im-0048"
     },
     {
       "correctAnswer": 0,
@@ -7805,12 +7779,10 @@
         "Parking for motorcycles only",
         "End of the motorway for motorcycles"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "A blue square sign with a white capital letter 'P'. Below the 'P', there is a small white or black silhouette of a motorcycle. What facility is indicated by this blue square sign?",
       "explanation": "A blue square with a white 'P' and a symbol of a motorbike indicates that the area is reserved for parking motorcycles only",
-      "id": "rs-im-0069",
-      "image": "/road-signs/parking_places_for_solo_motorcycles.png",
-      "imageAlt": "parking places for solo motorcycles"
+      "id": "rs-im-0069"
     },
     {
       "type": "image_question",
@@ -7836,11 +7808,9 @@
         "Glider field nearby",
         "Low-flying aircraft or sudden noise ahead"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 3,
-      "id": "rs-im-0071",
-      "image": "/road-signs/bend_to_right.png",
-      "imageAlt": "bend to right"
+      "id": "rs-im-0071"
     },
     {
       "options": [
@@ -8002,10 +7972,8 @@
       "explanation": "A red circle with a black '6' inside indicating '6t' (tonnes) restricts vehicles based on their maximum authorised mass",
       "correctAnswer": 0,
       "question": "A UK regulatory sign with a red border. Inside the white centre, the text '6t' is written in black, representing 6 tonnes. What restriction is imposed by this regulatory sign?",
-      "type": "image_question",
-      "id": "rs-im-0083",
-      "image": "/road-signs/maximum_speed.png",
-      "imageAlt": "maximum speed"
+      "type": "multiple_choice",
+      "id": "rs-im-0083"
     },
     {
       "question": "A UK triangular warning sign with a red border. A thick black vertical line in the middle has two thinner lines branching off: one to the left and one further up to the right. What road layout does the sign describe?",
@@ -8017,10 +7985,8 @@
         "Side road joins from the left only",
         "Dual carriageway starts ahead"
       ],
-      "type": "image_question",
-      "id": "rs-im-0084",
-      "image": "/road-signs/bend_to_right.png",
-      "imageAlt": "bend to right"
+      "type": "multiple_choice",
+      "id": "rs-im-0084"
     },
     {
       "question": "UK warning sign showing a swing or opening bridge over water. What does this triangular warning sign mean?",
@@ -8038,7 +8004,7 @@
       "imageAlt": "opening or swing bridge"
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 0,
       "options": [
         "Keep to the left-hand side",
@@ -8048,9 +8014,7 @@
       ],
       "explanation": "Blue circles with a white arrow pointing diagonally down to the left or right mean you must pass the obstacle on the indicated side",
       "question": "UK mandatory sign: keep left (blue circle, white diagonal arrow). What is the mandatory instruction shown by this blue sign?",
-      "id": "rs-im-0086",
-      "image": "/road-signs/bend_to_right.png",
-      "imageAlt": "bend to right"
+      "id": "rs-im-0086"
     },
     {
       "question": "UK 30 mph speed limit sign. What is the meaning of the sign?",
@@ -8196,7 +8160,7 @@
       "__rewritten_from_image__": true
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 1,
       "question": "A standard UK regulatory sign which is a red circle on a white background containing a black silhouette of a bicycle. What does this circular regulatory sign mean?",
       "options": [
@@ -8206,9 +8170,7 @@
         "Bicycles have priority"
       ],
       "explanation": "A white circle with a red border and a bicycle symbol indicates that all cycling is prohibited on that specific route or path",
-      "id": "rs-im-0097",
-      "image": "/road-signs/no_cycling.png",
-      "imageAlt": "no cycling"
+      "id": "rs-im-0097"
     },
     {
       "type": "image_question",
@@ -8310,10 +8272,8 @@
       ],
       "question": "A circular sign with a red outer ring and the number '30' in black on a white background. What is the meaning of this regulatory sign?",
       "correctAnswer": 2,
-      "type": "image_question",
-      "id": "rs-im-0107",
-      "image": "/road-signs/maximum_speed.png",
-      "imageAlt": "maximum speed"
+      "type": "multiple_choice",
+      "id": "rs-im-0107"
     },
     {
       "type": "image_question",
@@ -8331,7 +8291,7 @@
       "imageAlt": "one way traffic"
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 2,
       "options": [
         "No overtaking allowed",
@@ -8341,12 +8301,10 @@
       ],
       "question": "Standard UK prohibitory sign: white circle, red border, black silhouette of a car above a motorcycle. What does this regulatory sign mean?",
       "explanation": "A white circle with a red ring and a car pictured above a motorcycle means that motor vehicles are prohibited from that area",
-      "id": "rs-im-0109",
-      "image": "/road-signs/no_motor_vehicle.png",
-      "imageAlt": "no motor vehicle"
+      "id": "rs-im-0109"
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "This sign warns drivers that the road ahead narrows on both sides, requiring extra caution",
       "options": [
         "The road narrows on both sides",
@@ -8356,9 +8314,7 @@
       ],
       "question": "Standard UK warning sign: red triangle, white background, black symbol of two lines narrowing towards each other at the top. What hazard does the sign indicate?",
       "correctAnswer": 0,
-      "id": "rs-im-0110",
-      "image": "/road-signs/road_narrows_on_both_sides.png",
-      "imageAlt": "road narrows on both sides"
+      "id": "rs-im-0110"
     },
     {
       "correctAnswer": 3,
@@ -8374,7 +8330,7 @@
       "id": "rs-im-0112"
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Temporary road closure ahead",
         "No through road for vehicles",
@@ -8384,12 +8340,10 @@
       "question": "UK informative sign: blue square, white vertical line with a horizontal red bar across the top. What does this information sign tell you?",
       "explanation": "The 'T' symbol with a red bar on top indicates a dead-end road through which there is no thoroughfare for vehicles",
       "correctAnswer": 1,
-      "id": "rs-im-0113",
-      "image": "/road-signs/no_through_road_for_vehicles.png",
-      "imageAlt": "no through road for vehicles"
+      "id": "rs-im-0113"
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 0,
       "explanation": "A red circle with a black '6'-T' indicates that vehicles exceeding 6 tonnes maximum authorised mass are prohibited",
       "question": "UK regulatory sign: white circle, red border, black text '6' followed by small 't' on a horizontal line. What restriction is being shown by the sign?",
@@ -8399,9 +8353,7 @@
         "Axle weight limit of 6 tonnes",
         "Minimum weight of 6 tonnes required"
       ],
-      "id": "rs-im-0114",
-      "image": "/road-signs/maximum_speed.png",
-      "imageAlt": "maximum speed"
+      "id": "rs-im-0114"
     },
     {
       "explanation": "A yellow box with criss-cross lines means you must not enter the box unless your exit is clear, except when turning right",
@@ -8419,7 +8371,7 @@
       "imageAlt": "box junction"
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "A red triangle with a black steam locomotive silhouette warns of a level crossing without a gate or barrier",
       "question": "UK warning sign: red triangle, white background, black silhouette of an old-fashioned steam locomotive. What does the sign warn you about?",
       "options": [
@@ -8429,9 +8381,7 @@
         "Trams crossing the road ahead"
       ],
       "correctAnswer": 1,
-      "id": "rs-im-0116",
-      "image": "/road-signs/level_crossing_without_barrier_or_gate_ahead.png",
-      "imageAlt": "level crossing without barrier or gate ahead"
+      "id": "rs-im-0116"
     },
     {
       "options": [
@@ -8488,10 +8438,8 @@
       ],
       "correctAnswer": 1,
       "question": "A standard UK regulatory sign: a red outer circle on a white background containing a black silhouette of a car and a motorcycle. What does this regulatory sign mean?",
-      "type": "image_question",
-      "id": "rs-im-0121",
-      "image": "/road-signs/no_motor_vehicle.png",
-      "imageAlt": "no motor vehicle"
+      "type": "multiple_choice",
+      "id": "rs-im-0121"
     },
     {
       "options": [
@@ -8532,11 +8480,9 @@
         "No entry for vehicles"
       ],
       "correctAnswer": 1,
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "A triangular warning sign with a red border and a simple black '+' cross symbol in the centre. What does the sign indicate?",
-      "id": "rs-im-0125",
-      "image": "/road-signs/crossroads.png",
-      "imageAlt": "crossroads"
+      "id": "rs-im-0125"
     },
     {
       "options": [
@@ -8547,11 +8493,9 @@
       ],
       "explanation": "This sign indicates that the road is a clearway, meaning no stopping is permitted at any time, even for picking up or setting down passengers",
       "question": "A blue circular sign with a red outer border and two diagonal red lines forming a cross (an 'X') over the blue background. What restriction is imposed by the sign?",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 3,
-      "id": "rs-im-0127",
-      "image": "/road-signs/no_stopping_clearway.png",
-      "imageAlt": "no stopping clearway"
+      "id": "rs-im-0127"
     },
     {
       "question": "A white circular sign with a thick black diagonal stripe running from the top right to the bottom left. What does the sign mean?",
@@ -8584,7 +8528,7 @@
       "imageAlt": "opening or swing bridge"
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "A rectangular blue information sign featuring a large white 'P' and a white silhouette of a bus/coach. What does this information sign tell you?",
       "correctAnswer": 1,
       "options": [
@@ -8594,9 +8538,7 @@
         "No buses allowed"
       ],
       "explanation": "Blue signs with a white 'P' and a bus symbol indicate that there is a parking area specifically for buses or coaches",
-      "id": "rs-im-0130",
-      "image": "/road-signs/buses_and_cycle_only.png",
-      "imageAlt": "buses and cycle only"
+      "id": "rs-im-0130"
     },
     {
       "correctAnswer": 2,
@@ -8636,14 +8578,12 @@
         "Only motorcycles and cars allowed",
         "No parking for cars or motorcycles"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 1,
-      "id": "rs-im-0133",
-      "image": "/road-signs/no_motor_vehicle.png",
-      "imageAlt": "no motor vehicle"
+      "id": "rs-im-0133"
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 0,
       "question": "UK information sign: A blue rectangle containing a white letter T symbol. What does this information sign indicate to drivers?",
       "options": [
@@ -8653,12 +8593,10 @@
         "Telephone point ahead"
       ],
       "explanation": "A white 'T' shape on a blue background indicates a road that does not have a through route for vehicles",
-      "id": "rs-im-0134",
-      "image": "/road-signs/no_through_road_for_vehicles.png",
-      "imageAlt": "no through road for vehicles"
+      "id": "rs-im-0134"
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 3,
       "question": "UK temporary sign: A yellow rectangle containing a solid black square. What does this symbol on a yellow background represent?",
       "explanation": "A yellow background with a black house-like symbol (often a square, circle, or triangle) marks a temporary route for diverted traffic",
@@ -8668,9 +8606,7 @@
         "Weight restriction area",
         "Direction to a diversion route"
       ],
-      "id": "rs-im-0136",
-      "image": "/road-signs/cycle_route_ahead.png",
-      "imageAlt": "cycle route ahead"
+      "id": "rs-im-0136"
     },
     {
       "explanation": "Brown signs are used specifically to provide directions to tourist attractions or points of interest",
@@ -8703,7 +8639,7 @@
     },
     {
       "correctAnswer": 2,
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "The number inside a red circle specifies the maximum speed limit in mph that you are legally allowed to drive",
       "options": [
         "Minimum speed limit 30 mph",
@@ -8712,9 +8648,7 @@
         "End of 30 mph zone"
       ],
       "question": "UK regulatory sign: A white circle with a red border containing the black numerals 30. What is the legal requirement indicated by the sign?",
-      "id": "rs-im-0139",
-      "image": "/road-signs/maximum_speed.png",
-      "imageAlt": "maximum speed"
+      "id": "rs-im-0139"
     },
     {
       "explanation": "A blue circle with a white arrow pointing to the bottom left or right instructs drivers to stay on that side of the sign",
@@ -8747,7 +8681,7 @@
       "imageAlt": "one way traffic"
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 2,
       "question": "Regulatory sign: Red circle on a white background with a car and a motorcycle depicted in the centre. What does this regulatory sign mean?",
       "options": [
@@ -8757,13 +8691,11 @@
         "Mopeds only"
       ],
       "explanation": "A red circle with a car and a motorcycle inside indicates that all motor vehicles are prohibited from entering that area",
-      "id": "rs-im-0145",
-      "image": "/road-signs/no_motor_vehicle.png",
-      "imageAlt": "no motor vehicle"
+      "id": "rs-im-0145"
     },
     {
       "correctAnswer": 0,
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "No through road",
         "T-junction ahead",
@@ -8772,9 +8704,7 @@
       ],
       "explanation": "A white T-shape on a blue square indicates a cul-de-sac or a road that has no through access for vehicles",
       "question": "Information sign: A blue square containing a white letter 'T' symbol. What information does the sign provide to a driver?",
-      "id": "rs-im-0146",
-      "image": "/road-signs/no_through_road_for_vehicles.png",
-      "imageAlt": "no through road for vehicles"
+      "id": "rs-im-0146"
     },
     {
       "question": "Warning sign: Red triangle with a black symbol showing a road narrowing on both sides. What is the road configuration warning ?",
@@ -8822,7 +8752,7 @@
       "imageAlt": "lane specific signal 2 motorway"
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 1,
       "question": "Information sign: Blue rectangle with a white letter 'P' and a bus silhouette below it. Where would you expect to be guided by the sign?",
       "options": [
@@ -8832,9 +8762,7 @@
         "Coach parking only"
       ],
       "explanation": "A blue square with a white 'P' and a bus symbol indicates a parking area specifically designed for people to leave their cars and use public transport",
-      "id": "rs-im-0151",
-      "image": "/motorway-rules/emergency_area_motorway.png",
-      "imageAlt": "emergency area motorway"
+      "id": "rs-im-0151"
     },
     {
       "question": "Regulatory sign: Red circle with the number 40 in black on a white background. What legal limit does the sign impose?",
@@ -8845,11 +8773,9 @@
         "Maximum speed 40 mph"
       ],
       "explanation": "A red circle with a black number shows the maximum legal speed limit you are allowed to travel in that area",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 3,
-      "id": "rs-im-0152",
-      "image": "/road-signs/maximum_speed.png",
-      "imageAlt": "maximum speed"
+      "id": "rs-im-0152"
     },
     {
       "type": "multiple_choice",
@@ -8902,10 +8828,8 @@
       ],
       "question": "Regulatory sign: White circle with a thick black diagonal stripe. What does the sign represent?",
       "correctAnswer": 3,
-      "type": "image_question",
-      "id": "rs-im-0156",
-      "image": "/road-signs/maximum_speed.png",
-      "imageAlt": "maximum speed"
+      "type": "multiple_choice",
+      "id": "rs-im-0156"
     },
     {
       "explanation": "A red triangle with a car falling off a quay or river bank warns drivers of the proximity of deep water or an unprotected edge",
@@ -8960,12 +8884,10 @@
         "Exhaust fumes ahead",
         "Side winds ahead"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "A standard UK warning triangle showing a black silhouette of a windsock (often mistaken for a 'cloud' or 'smoke puff'). What road condition does the sign alert you to?",
       "correctAnswer": 3,
-      "id": "rs-im-0160",
-      "image": "/motorway-rules/lane_can_use_motorway.png",
-      "imageAlt": "lane can use motorway"
+      "id": "rs-im-0160"
     },
     {
       "explanation": "Double yellow lines along the edge of the road mean that no waiting or parking is allowed at any time",
@@ -9003,12 +8925,10 @@
         "No motor vehicles allowed",
         "Warning: fast moving traffic ahead"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "A red ring (prohibitory sign) with a white centre containing a black silhouette of a car and a black silhouette of a motorcycle. What restriction is imposed by the sign?",
       "correctAnswer": 2,
-      "id": "rs-im-0163",
-      "image": "/road-signs/no_motor_vehicle.png",
-      "imageAlt": "no motor vehicle"
+      "id": "rs-im-0163"
     },
     {
       "question": "A rectangular directional sign with a brown background, white border, and white text alongside a castle symbol. What type of information is provided by a sign with this background colour?",
@@ -9047,10 +8967,8 @@
         "No entry for all vehicular traffic",
         "One-way street ends ahead"
       ],
-      "type": "image_question",
-      "id": "rs-im-0167",
-      "image": "/road-signs/no_entry.png",
-      "imageAlt": "no entry"
+      "type": "multiple_choice",
+      "id": "rs-im-0167"
     },
     {
       "correctAnswer": 0,
@@ -9075,10 +8993,8 @@
       ],
       "question": "A UK regulatory sign: a red ring with a diagonal red slash over black silhouettes of a car and a motorcycle on a white background. Moving into a street with the sign displayed means what?",
       "correctAnswer": 0,
-      "type": "image_question",
-      "id": "rs-im-0170",
-      "image": "/road-signs/no_motor_vehicle.png",
-      "imageAlt": "no motor vehicle"
+      "type": "multiple_choice",
+      "id": "rs-im-0170"
     },
     {
       "question": "A blue circular sign featuring three white arrows in a clockwise circle, representing a mini-roundabout. How should you react to the sign at an upcoming intersection?",
@@ -9199,7 +9115,7 @@
       "imageAlt": "lane specific signal 2 motorway"
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 1,
       "question": "A blue square sign containing a white vertical bar topped with a horizontal red bar, forming a 'T' shape. If you see the sign at the entrance to a street, what should you expect?",
       "options": [
@@ -9209,9 +9125,7 @@
         "Turn left or right only"
       ],
       "explanation": "This sign means the road ahead is a dead end or no through road for vehicular traffic",
-      "id": "rs-im-0180",
-      "image": "/road-signs/no_through_road_for_vehicles.png",
-      "imageAlt": "no through road for vehicles"
+      "id": "rs-im-0180"
     },
     {
       "explanation": "T-junctions with a dynamic layout use this sign to show that the through road has priority and traffic joining from the right must yield",
@@ -9268,10 +9182,8 @@
         "No through road",
         "Waiting prohibited on this side"
       ],
-      "type": "image_question",
-      "id": "rs-im-0186",
-      "image": "/road-signs/one_way_traffic.png",
-      "imageAlt": "one way traffic"
+      "type": "multiple_choice",
+      "id": "rs-im-0186"
     },
     {
       "explanation": "On motorways, blue signs indicate the route to a service area, often showing the distance and facilities available",
@@ -9383,11 +9295,9 @@
         "Tram crossing ahead"
       ],
       "explanation": "The 'T' symbol on a blue background indicates a road that does not lead through to another road",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 1,
-      "id": "rs-im-0196",
-      "image": "/road-signs/no_through_road_for_vehicles.png",
-      "imageAlt": "no through road for vehicles"
+      "id": "rs-im-0196"
     },
     {
       "type": "image_question",
@@ -9448,7 +9358,7 @@
       "id": "rs-im-0201"
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 2,
       "question": "A circular regulatory sign with a red border. Inside, there are two black car silhouettes, but the car on the right is coloured red. What restriction is shown by the sign?",
       "options": [
@@ -9458,9 +9368,7 @@
         "Priority to oncoming traffic"
       ],
       "explanation": "A red circle with a car and a red diagonal line signifies that overtaking is not permitted",
-      "id": "rs-im-0203",
-      "image": "/road-signs/bend_to_right.png",
-      "imageAlt": "bend to right"
+      "id": "rs-im-0203"
     },
     {
       "question": "A standard UK 'No Entry' regulatory sign featuring a solid red circle with a white horizontal bar across the centre. What does this regulatory sign mean?",
@@ -9611,16 +9519,14 @@
       "question": "A standard UK regulatory sign which is circular with a red outer ring. Inside the white circle, there is a black silhouette of a car above a black silhouette of a motorcycle and rider. What does this regulatory sign mean?",
       "correctAnswer": 1,
       "explanation": "Circular signs with red borders typically convey prohibitions; this specifically bars all motor vehicles except solo motorcycles",
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "No pedestrians allowed",
         "No motor vehicles allowed",
         "Only cars and motorcycles allowed",
         "No cars allowed on weekends"
       ],
-      "id": "rs-im-0217",
-      "image": "/road-signs/parking_places_for_solo_motorcycles.png",
-      "imageAlt": "parking places for solo motorcycles"
+      "id": "rs-im-0217"
     },
     {
       "question": "A triangular warning sign with a red border. Inside, there is a black silhouette of a car on a slope pointing downwards to the right, with the text '10%' written inside the triangle. What does the sign indicate?",
@@ -9728,16 +9634,14 @@
       "explanation": "A red circle with a car and motorcycle usually means 'no motor vehicles'; however, this specific sign with a bus and cycle means no entry except for those vehicles",
       "question": "A blue rectangular sign. It contains a white silhouette of a bus above a white silhouette of a bicycle. There are no red borders. What does this blue information sign indicate?",
       "correctAnswer": 2,
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Only buses allowed ahead",
         "Bus and cycle lane ends ahead",
         "Route for buses and cycles only",
         "No buses or cycles allowed"
       ],
-      "id": "rs-im-0227",
-      "image": "/road-signs/no_motor_vehicle.png",
-      "imageAlt": "no motor vehicle"
+      "id": "rs-im-0227"
     },
     {
       "correctAnswer": 0,
@@ -9889,7 +9793,7 @@
     {
       "question": "A white circular sign containing a single bold black diagonal bar. What does this road sign indicate?",
       "explanation": "A white circle with a black diagonal stripe signifies the National Speed Limit, which is 60mph for cars on single carriageways and 70mph on dual carriageways",
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "National speed limit applies",
         "No waiting allowed",
@@ -9897,9 +9801,7 @@
         "No entry for motor vehicles"
       ],
       "correctAnswer": 0,
-      "id": "rs-im-0245",
-      "image": "/road-signs/maximum_speed.png",
-      "imageAlt": "maximum speed"
+      "id": "rs-im-0245"
     },
     {
       "explanation": "Double yellow lines along the edge of the road mean that no waiting is permitted at any time, except in rare emergencies",
@@ -9923,11 +9825,9 @@
         "Road narrows on both sides ahead",
         "Opening bridge ahead"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "A red-bordered triangular sign with a black symbol showing two vertical lines that pinch closer together at the top. What is the sign warning you about?",
-      "id": "rs-im-0247",
-      "image": "/road-signs/road_narrows_on_both_sides.png",
-      "imageAlt": "road narrows on both sides"
+      "id": "rs-im-0247"
     },
     {
       "question": "A white circular sign with a red outer ring, containing a black silhouette of a car and a black silhouette of a motorcycle. What does this regulatory sign mean?",
@@ -9938,11 +9838,9 @@
         "No overtaking of motorcycles",
         "Route for cars and motorbikes only"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "A red circle containing a symbol of a car and a motorcycle means motor vehicles are prohibited from entering that area",
-      "id": "rs-im-0249",
-      "image": "/road-signs/no_motor_vehicle.png",
-      "imageAlt": "no motor vehicle"
+      "id": "rs-im-0249"
     },
     {
       "correctAnswer": 0,
@@ -9952,12 +9850,10 @@
         "Tourist information point ahead",
         "Tramway crossing ahead"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "The blue 'T' sign indicates a no-through road, meaning you cannot exit through the other end of the street",
       "question": "A square blue sign with a white vertical line and a red horizontal bar at the top, forming a 'T' shape. What does this blue square sign communicate?",
-      "id": "rs-im-0250",
-      "image": "/road-signs/no_through_road_for_vehicles.png",
-      "imageAlt": "no through road for vehicles"
+      "id": "rs-im-0250"
     },
     {
       "type": "image_question",
@@ -9991,7 +9887,7 @@
     {
       "correctAnswer": 0,
       "question": "A circular regulatory sign with a solid red background and a single white horizontal bar in the middle. What is the meaning of this regulatory sign?",
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "No entry for vehicular traffic",
         "No stopping allowed",
@@ -9999,9 +9895,7 @@
         "Danger: Low bridge ahead"
       ],
       "explanation": "A red circle with a white horizontal bar is the universal sign for 'No Entry' for all vehicular traffic",
-      "id": "rs-im-0254",
-      "image": "/road-signs/no_entry.png",
-      "imageAlt": "no entry"
+      "id": "rs-im-0254"
     },
     {
       "type": "image_question",
@@ -10019,7 +9913,7 @@
       "imageAlt": "bend to right"
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Minimum speed limit for cars",
         "Suggested speed for heavy goods vehicles",
@@ -10029,12 +9923,10 @@
       "explanation": "Diamond-shaped signs with black numbers or symbols are specific to tram drivers and provide them with instructions or speed limits",
       "correctAnswer": 3,
       "question": "A white diamond-shaped sign with a thin black border. Inside the diamond is the number '30' in black text. Who is this diamond-shaped sign intended for?",
-      "id": "rs-im-0256",
-      "image": "/road-signs/maximum_speed.png",
-      "imageAlt": "maximum speed"
+      "id": "rs-im-0256"
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "A rectangular blue sign with a white 'P' and a picture of a bus indicates that the area is specifically a 'Park and Ride' facility",
       "options": [
         "Direction to a Park and Ride site",
@@ -10044,9 +9936,7 @@
       ],
       "correctAnswer": 0,
       "question": "A blue rectangular information sign. On the left is a white 'P' symbol, and on the right is a white silhouette of a bus. What is this information sign directing you to?",
-      "id": "rs-im-0257",
-      "image": "/road-signs/bend_to_right.png",
-      "imageAlt": "bend to right"
+      "id": "rs-im-0257"
     },
     {
       "options": [
@@ -10070,12 +9960,10 @@
         "No cars allowed",
         "No motor vehicles allowed"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "A circular regulatory sign with a red border. Inside, there is a black silhouette of a car above a black silhouette of a motorcycle. What is the instruction given by the sign?",
       "correctAnswer": 3,
-      "id": "rs-im-0260",
-      "image": "/road-signs/no_motor_vehicle.png",
-      "imageAlt": "no motor vehicle"
+      "id": "rs-im-0260"
     },
     {
       "explanation": "A white circle with a black diagonal stripe indicates the end of a previous speed limit and the start of the National Speed Limit for that road type",
@@ -10117,10 +10005,8 @@
         "Farming activity on the road"
       ],
       "explanation": "A red triangle with a black symbol of a person with a shovel warns drivers that roadworks are taking place on the carriageway ahead",
-      "type": "image_question",
-      "id": "rs-im-0263",
-      "image": "/road-signs/dual_carriageway_ends.png",
-      "imageAlt": "dual carriageway ends"
+      "type": "multiple_choice",
+      "id": "rs-im-0263"
     },
     {
       "explanation": "A circular sign with a blue background and a white arrow pointing down to the left (or right) instructs drivers to pass the obstacle on the side indicated",
@@ -10220,12 +10106,10 @@
         "Parking area for buses only"
       ],
       "correctAnswer": 3,
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "Blue rectangular signs with a white 'P' and a bus symbol indicate parking specifically reserved for buses or coaches",
       "question": "A blue rectangular information sign featuring a large white letter 'P' and a black silhouette of a bus or coach. What is this information sign notifying you of?",
-      "id": "rs-im-0272",
-      "image": "/road-signs/buses_and_cycle_only.png",
-      "imageAlt": "buses and cycle only"
+      "id": "rs-im-0272"
     },
     {
       "question": "A red-bordered upward-pointing triangle with two black lines that are wide at the bottom and narrow towards each other at the top. What does this road geometry sign warn you about?",
@@ -10302,7 +10186,7 @@
     {
       "correctAnswer": 2,
       "question": "Prohibitory sign: red circle, white background, black silhouette of a car and a motorcycle underneath it. What restriction is being shown by this prohibitory sign?",
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Cars and motorcycles only",
         "No overtaking allowed",
@@ -10310,9 +10194,7 @@
         "Traffic jam ahead"
       ],
       "explanation": "Circular signs with red borders and a car and motorcycle inside indicate that all motor vehicles are prohibited from entering that area",
-      "id": "rs-im-0279",
-      "image": "/road-signs/no_motor_vehicle.png",
-      "imageAlt": "no motor vehicle"
+      "id": "rs-im-0279"
     },
     {
       "explanation": "Zig-zag lines at a pedestrian crossing mean you must not park or stop in this area, and you must not overtake the lead vehicle",
@@ -10351,11 +10233,9 @@
       ],
       "question": "Information sign: blue rectangle, white border, large white 'P' next to a black motorcycle silhouette on a white inset. What does this information sign indicate to road users?",
       "correctAnswer": 0,
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "A rectangular blue sign with a large white 'P' and a motorcycle symbol indicates a designated parking area specifically for motorcycles",
-      "id": "rs-im-0282",
-      "image": "/road-signs/parking_places_for_solo_motorcycles.png",
-      "imageAlt": "parking places for solo motorcycles"
+      "id": "rs-im-0282"
     },
     {
       "explanation": "A red triangle with two arrows pointing in opposite directions vertically warns that the road ahead has two-way traffic",
@@ -10423,12 +10303,10 @@
         "Traffic lights out of order",
         "Turn left or right only],question"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 1,
       "question": "Informational sign: blue background, a white vertical line with a horizontal red bar at the top, resembling a 'T'. What does the sign mean?",
-      "id": "rs-im-0288",
-      "image": "/road-signs/no_through_road_for_vehicles.png",
-      "imageAlt": "no through road for vehicles"
+      "id": "rs-im-0288"
     },
     {
       "question": "A regulatory sign consisting of a red outer circle on a white background. Inside the circle, there is a black silhouette of a car above a black silhouette of a motorcycle. What does this regulatory sign mean?",
@@ -10440,10 +10318,8 @@
         "No motor vehicles allowed",
         "No entry for overtaking vehicles"
       ],
-      "type": "image_question",
-      "id": "rs-im-0289",
-      "image": "/road-signs/no_motor_vehicle.png",
-      "imageAlt": "no motor vehicle"
+      "type": "multiple_choice",
+      "id": "rs-im-0289"
     },
     {
       "explanation": "An upright triangle featuring a silhouette of a person with a shovel warns drivers that roadworks are occurring ahead",
@@ -10481,18 +10357,16 @@
         "Contra-flow bus lane",
         "Bus parking only"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "A white horizontal bar on a blue background indicates a contra-flow bus lane, allowing buses to travel in the opposite direction to traffic",
       "correctAnswer": 2,
       "question": "A blue rectangular sign showing a white bus silhouette. Below the bus is a white horizontal line/bar. Which of the following describes this blue sign?",
-      "id": "rs-im-0294",
-      "image": "/road-signs/contra_flow_bus_lane.png",
-      "imageAlt": "contra flow bus lane"
+      "id": "rs-im-0294"
     },
     {
       "correctAnswer": 3,
       "question": "A warning sign consisting of a red-bordered triangle. In the centre is a black '+' (plus) or cross shaped symbol. What does the sign indicate to the driver?",
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "No entry for cross-traffic",
         "Emergency vehicle crossing ahead",
@@ -10500,9 +10374,7 @@
         "Crossroads ahead"
       ],
       "explanation": "A red triangle with a black 'X' shape warns of an upcoming crossroads where you should be prepared for crossing traffic",
-      "id": "rs-im-0296",
-      "image": "/road-signs/crossroads.png",
-      "imageAlt": "crossroads"
+      "id": "rs-im-0296"
     },
     {
       "type": "image_question",
@@ -10531,8 +10403,8 @@
       ],
       "explanation": "A red circle with a car and a red diagonal slash over the car indicates that the previous 'No Motor Vehicles' restriction has ended",
       "id": "rs-im-0299",
-      "image": "/road-signs/no_through_road_for_vehicles.png",
-      "imageAlt": "no through road for vehicles"
+      "image": "/road-signs/level_crossing.png",
+      "imageAlt": "level crossing"
     },
     {
       "explanation": "Yellow box markings at junctions mean you must not enter the box unless your exit is clear, except when turning right",
@@ -10556,13 +10428,11 @@
         "No motorcycles allowed",
         "Route for motor vehicles only"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 0,
       "question": "A standard UK regulatory sign (Prohibitory) \u2013 a red circle with a white background containing a black silhouette of a car above a motorcycle. What does this prohibitory sign indicate?",
       "explanation": "The red ring indicates a prohibition, and the car over the motorcycle means it is closed to all motor vehicles except solo motorcycles",
-      "id": "rs-im-0301",
-      "image": "/road-signs/parking_places_for_solo_motorcycles.png",
-      "imageAlt": "parking places for solo motorcycles"
+      "id": "rs-im-0301"
     },
     {
       "type": "image_question",
@@ -10580,7 +10450,7 @@
       "imageAlt": "no through road for vehicles"
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Dual carriageway ends",
         "Road narrows on both sides",
@@ -10590,9 +10460,7 @@
       "explanation": "This warning sign alerts drivers that the road ahead narrows on both sides, requiring caution and a possible reduction in speed",
       "question": "A UK warning sign \u2013 a red-bordered triangle with a black symbol showing two vertical lines that pinch inwards at the top. What does the sign alert you to?",
       "correctAnswer": 1,
-      "id": "rs-im-0303",
-      "image": "/road-signs/road_narrows_on_both_sides.png",
-      "imageAlt": "road narrows on both sides"
+      "id": "rs-im-0303"
     },
     {
       "type": "image_question",
@@ -10662,10 +10530,8 @@
         "No cycling allowed",
         "Watch out for cyclists"
       ],
-      "type": "image_question",
-      "id": "rs-im-0311",
-      "image": "/road-signs/no_cycling.png",
-      "imageAlt": "no cycling"
+      "type": "multiple_choice",
+      "id": "rs-im-0311"
     },
     {
       "correctAnswer": 1,
@@ -10684,7 +10550,7 @@
     },
     {
       "correctAnswer": 2,
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "A standard UK prohibitory sign: a red ring on a white background with a black silhouette of a car and a motorcycle above it. What does this red-bordered circular sign signify?",
       "options": [
         "Only motorcycles are allowed",
@@ -10693,9 +10559,7 @@
         "Motorway begins ahead"
       ],
       "explanation": "A circular sign with a red border and a car above a motorcycle indicates that all motor vehicles are prohibited",
-      "id": "rs-im-0314",
-      "image": "/road-signs/no_motor_vehicle.png",
-      "imageAlt": "no motor vehicle"
+      "id": "rs-im-0314"
     },
     {
       "question": "A blue mandatory circle with a thick white arrow pointing towards the bottom-left at a 45-degree angle. What specific instruction must you follow when passing this blue sign?",
@@ -10739,8 +10603,8 @@
       "explanation": "A red cross (X) displayed on a gantry above a motorway lane means the lane is closed and you must not drive in it",
       "question": "An electronic gantry over a three-lane motorway. The left and middle lanes have green arrows, but the right-hand lane has a large red 'X'. What does the red 'X' on a motorway gantry signal mean for drivers?",
       "id": "rs-im-0317",
-      "image": "/road-signs/bend_to_right.png",
-      "imageAlt": "bend to right"
+      "image": "/motorway-rules/lane_specific_signal_2_motorway.png",
+      "imageAlt": "lane specific signal 2 motorway"
     },
     {
       "type": "image_question",
@@ -10779,11 +10643,9 @@
         "A bus and cycle lane operates during the hours shown"
       ],
       "explanation": "A square blue sign with a white bus and cycle symbol indicates a lane reserved for those vehicles during the times shown",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 3,
-      "id": "rs-im-0320",
-      "image": "/road-signs/contra_flow_bus_lane.png",
-      "imageAlt": "contra flow bus lane"
+      "id": "rs-im-0320"
     },
     {
       "type": "multiple_choice",
@@ -10854,8 +10716,8 @@
       "correctAnswer": 0,
       "explanation": "A yellow diamond with a black border indicates a 'Priority Road', where you have right of way over intersecting roads",
       "id": "rs-im-0326",
-      "image": "/road-signs/bend_to_right.png",
-      "imageAlt": "bend to right"
+      "image": "/road-signs/give_priority_to_vehicles_from_opposite_direction.png",
+      "imageAlt": "give priority to vehicles from opposite direction"
     },
     {
       "type": "image_question",
@@ -10879,13 +10741,11 @@
         "Traffic merges from the right",
         "Dead end for pedestrians only"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "A black 'T' shape with a red bar on top inside a blue square marks a road that does not have a through exit for vehicles",
       "correctAnswer": 1,
       "question": "A blue rectangular sign containing a white 'T' shape with a solid red horizontal bar at the top of the T. What is the meaning of this information sign?",
-      "id": "rs-im-0330",
-      "image": "/road-signs/no_through_road_for_vehicles.png",
-      "imageAlt": "no through road for vehicles"
+      "id": "rs-im-0330"
     },
     {
       "type": "image_question",
@@ -10931,7 +10791,7 @@
       "imageAlt": "no motor vehicle"
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "No waiting or parking allowed",
         "End of motorway restriction",
@@ -10941,12 +10801,10 @@
       "explanation": "A white horizontal bar on a red circle is the standard 'No Entry' sign for all vehicular traffic",
       "question": "A solid red circular sign featuring a thick white horizontal bar across the centre. What does the sign mean at the entrance of a street?",
       "correctAnswer": 3,
-      "id": "rs-im-0334",
-      "image": "/road-signs/no_entry.png",
-      "imageAlt": "no entry"
+      "id": "rs-im-0334"
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Parking for buses and cycles only",
         "Cycle path crosses the road ahead",
@@ -10956,9 +10814,7 @@
       "question": "A rectangular blue sign featuring a white silhouette of a bus above a white silhouette of a bicycle. What does this blue information sign indicate?",
       "correctAnswer": 2,
       "explanation": "Blue signs featuring a bus and a cycle indicate a lane reserved for those specific vehicles, often also allowing taxis",
-      "id": "rs-im-0335",
-      "image": "/road-signs/contra_flow_bus_lane.png",
-      "imageAlt": "contra flow bus lane"
+      "id": "rs-im-0335"
     },
     {
       "question": "A mandatory blue circular road sign featuring the number 30 in white text, indicating a minimum speed requirement. What does the sign indicate to drivers?",
@@ -10977,7 +10833,7 @@
     },
     {
       "explanation": "A white plate with a black car and 'crash' symbol (exploding lines) indicates a site where accidents are frequent, urging extra caution",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 0,
       "question": "A white rectangular supplementary plate showing a black silhouette of a car involved in a collision with an 'explosion' symbol, usually found under a warning triangle. What does this supplementary plate warn you about?",
       "options": [
@@ -10986,9 +10842,7 @@
         "No overtaking allowed",
         "Car testing area"
       ],
-      "id": "rs-im-0338",
-      "image": "/motorway-rules/queue_caution_message_motorway.png",
-      "imageAlt": "queue caution message motorway"
+      "id": "rs-im-0338"
     },
     {
       "options": [
@@ -11012,11 +10866,9 @@
       ],
       "question": "A triangular warning sign with a red border and a black symbol showing two vertical lines that pinch together symmetrically at the top. What hazard is shown by this triangular warning sign?",
       "correctAnswer": 3,
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "When a road narrows from both sides, this triangular warning sign is used to alert drivers to the change in road width",
-      "id": "rs-im-0340",
-      "image": "/road-signs/road_narrows_on_both_sides.png",
-      "imageAlt": "road narrows on both sides"
+      "id": "rs-im-0340"
     },
     {
       "correctAnswer": 2,
@@ -11086,12 +10938,10 @@
         "Parking area for buses and bikes"
       ],
       "question": "A blue rectangular information sign showing a white silhouette of a bus above a white silhouette of a bicycle. What does this information sign indicate?",
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "The blue sign with a white bicycle and a 'bus' symbol indicates a lane that is reserved for buses, cycles, and sometimes taxis during specified hours",
       "correctAnswer": 1,
-      "id": "rs-im-0347",
-      "image": "/road-signs/contra_flow_bus_lane.png",
-      "imageAlt": "contra flow bus lane"
+      "id": "rs-im-0347"
     },
     {
       "options": [
@@ -11109,7 +10959,7 @@
     },
     {
       "question": "A prohibitory red circle sign with a white background featuring a black silhouette of a car above a black silhouette of a motorcycle. What does this prohibitive circular sign indicate to drivers?",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 0,
       "options": [
         "No motor vehicles allowed",
@@ -11118,9 +10968,7 @@
         "Watch out for racing vehicles"
       ],
       "explanation": "Red circles are prohibitive; a circle containing a car and a motorcycle means no motor vehicles are allowed",
-      "id": "rs-im-0350",
-      "image": "/road-signs/no_motor_vehicle.png",
-      "imageAlt": "no motor vehicle"
+      "id": "rs-im-0350"
     },
     {
       "question": "An inverted triangular sign (point facing downwards) with a thick red border and a white center. What must you do when you see this triangular sign at a junction?",
@@ -11149,8 +10997,8 @@
       "correctAnswer": 0,
       "explanation": "A red speed limit circle with a white '8' and a black line through it (or similar variant) indicates the end of a specific local restriction",
       "id": "rs-im-0353",
-      "image": "/road-signs/bend_to_right.png",
-      "imageAlt": "bend to right"
+      "image": "/road-signs/level_crossing.png",
+      "imageAlt": "level crossing"
     },
     {
       "question": "An information sign with a white background, red border, and a black T-junction symbol representing a dead end. What does the sign tell you about the road ahead?",
@@ -11198,7 +11046,7 @@
     {
       "question": "A blue rectangular information sign featuring a white 'P' and a white motorcycle silhouette below it. What facility is indicated by the sign?",
       "explanation": "A blue square sign with a white 'P' and a motorcycle symbol identifies parking specifically reserved for motorcycles",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 2,
       "options": [
         "No motorcycles allowed in this area",
@@ -11206,9 +11054,7 @@
         "Parking area reserved for motorcycles only",
         "Motorcycles must use the pavement"
       ],
-      "id": "rs-im-0359",
-      "image": "/road-signs/parking_places_for_solo_motorcycles.png",
-      "imageAlt": "parking places for solo motorcycles"
+      "id": "rs-im-0359"
     },
     {
       "explanation": "A blue circle with a white '30' (or other number) signifies a minimum speed limit that you must maintain unless safety dictates otherwise",
@@ -11219,11 +11065,9 @@
         "Distance to the next service station in miles"
       ],
       "correctAnswer": 0,
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "A blue circular mandatory sign with the number '30' written in white in the centre. What is the meaning of the number on the sign?",
-      "id": "rs-im-0360",
-      "image": "/road-signs/maximum_speed.png",
-      "imageAlt": "maximum speed"
+      "id": "rs-im-0360"
     },
     {
       "correctAnswer": 1,
@@ -11287,7 +11131,7 @@
     },
     {
       "correctAnswer": 3,
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Cycle route ahead",
         "Parking for cycles only",
@@ -11296,9 +11140,7 @@
       ],
       "question": "A prohibitive sign consisting of a red outer ring and a white background with a black bicycle icon in the center. What does the sign mean?",
       "explanation": "A red circle with a bicycle icon means that cycling is prohibited in that specific area or path",
-      "id": "rs-im-0369",
-      "image": "/road-signs/no_cycling.png",
-      "imageAlt": "no cycling"
+      "id": "rs-im-0369"
     },
     {
       "options": [
@@ -11310,10 +11152,8 @@
       "question": "An information sign showing a white 'T' shape on a blue background, where the horizontal bar of the T is red. What does this information sign tell you?",
       "explanation": "The 'T' symbol warns that the road ahead is a dead end for through traffic",
       "correctAnswer": 0,
-      "type": "image_question",
-      "id": "rs-im-0370",
-      "image": "/road-signs/no_through_road_for_vehicles.png",
-      "imageAlt": "no through road for vehicles"
+      "type": "multiple_choice",
+      "id": "rs-im-0370"
     },
     {
       "correctAnswer": 2,
@@ -11338,10 +11178,8 @@
       ],
       "explanation": "A red triangle with an exclamation mark warns of a hazard that doesn't have its own specific symbol. A plate below usually explains the hazard",
       "correctAnswer": 1,
-      "type": "image_question",
-      "id": "rs-im-0372",
-      "image": "/motorway-rules/lane_specific_signal_2_motorway.png",
-      "imageAlt": "lane specific signal 2 motorway"
+      "type": "multiple_choice",
+      "id": "rs-im-0372"
     },
     {
       "options": [
@@ -11367,11 +11205,9 @@
       ],
       "question": "Regulatory sign: A white disc with a single black diagonal stripe titled from top-right to bottom-left. What is the meaning of the sign?",
       "correctAnswer": 2,
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "The 'End of restriction' sign (a white circle with a black diagonal stripe) means that the national speed limit applies for that class of vehicle and road type",
-      "id": "rs-im-0375",
-      "image": "/road-signs/bend_to_right.png",
-      "imageAlt": "bend to right"
+      "id": "rs-im-0375"
     },
     {
       "options": [
@@ -11382,11 +11218,9 @@
       ],
       "question": "Information sign: A blue rectangle containing a white capital 'P' and a white silhouette of a bus or coach below it. What does this information sign mean?",
       "correctAnswer": 3,
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "A blue square sign with a white 'P' and a bus symbol indicates a dedicated parking area specifically for buses or coaches",
-      "id": "rs-im-0376",
-      "image": "/road-signs/buses_and_cycle_only.png",
-      "imageAlt": "buses and cycle only"
+      "id": "rs-im-0376"
     },
     {
       "options": [
@@ -11463,7 +11297,7 @@
     },
     {
       "explanation": "A square blue sign with a large white 'T' and a red bar at the top indicates that the road ahead does not have a through route for vehicles",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 1,
       "question": "Information sign: A blue square containing a white vertical line topped with a red horizontal rectangle, resembling the letter T. What does the sign mean?",
       "options": [
@@ -11472,9 +11306,7 @@
         "T-junction ahead",
         "No entry for heavy vehicles"
       ],
-      "id": "rs-im-0384",
-      "image": "/road-signs/no_through_road_for_vehicles.png",
-      "imageAlt": "no through road for vehicles"
+      "id": "rs-im-0384"
     },
     {
       "explanation": "A red circle with a passenger car and a motorcycle indicates that all motor vehicles are prohibited from entering that road",
@@ -11495,16 +11327,14 @@
       "explanation": "A blue circle with white arrows pointing clockwise indicates that you must follow the direction of the roundabout",
       "question": "UK mandatory sign: A blue circle with three white arrows arranged in a circular formation. What instruction does the sign provide?",
       "correctAnswer": 1,
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Turn right ahead",
         "Mini-roundabout ahead",
         "One-way street only",
         "Circular route for lorries"
       ],
-      "id": "rs-im-0387",
-      "image": "/road-signs/give_priority_to_vehicles_from_opposite_direction.png",
-      "imageAlt": "give priority to vehicles from opposite direction"
+      "id": "rs-im-0387"
     },
     {
       "options": [
@@ -11523,7 +11353,7 @@
     },
     {
       "correctAnswer": 1,
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "No stopping allowed",
         "No entry for all vehicles",
@@ -11532,24 +11362,20 @@
       ],
       "explanation": "The 'No Entry' sign prohibits all vehicular traffic from entering a road, usually at the exit of a one-way street",
       "question": "UK prohibitory sign: A solid red circle with a horizontal white rectangle in the center. What is the purpose of this regulatory sign?",
-      "id": "rs-im-0390",
-      "image": "/road-signs/one_way_traffic.png",
-      "imageAlt": "one way traffic"
+      "id": "rs-im-0390"
     },
     {
       "explanation": "A blue sign with a white bicycle and 'Only' indicates an mandatory route exclusively for cyclists",
       "question": "UK mandatory sign: A blue circle containing a white bicycle symbol and the text 'ONLY' beneath it. What is the meaning of the sign?",
       "correctAnswer": 3,
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Watch out for cyclists crossing",
         "Cycle parking available here",
         "Pedestrians and cyclists only",
         "Route for pedal cycles only"
       ],
-      "id": "rs-im-0391",
-      "image": "/road-signs/ahead_only.png",
-      "imageAlt": "ahead only"
+      "id": "rs-im-0391"
     },
     {
       "explanation": "A yellow box with criss-cross diagonal lines means you must not enter the box unless your exit road or lane is clear",
@@ -11589,17 +11415,15 @@
         "One-way street ends",
         "End of a restricted parking zone"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "UK regulatory sign: A white circle with a thick black diagonal band across it. What is the meaning of the sign?",
       "explanation": "A white circle with a black diagonal stripe signifies the end of specific speed limits and the start of the national speed limit for that road type",
-      "id": "rs-im-0396",
-      "image": "/road-signs/maximum_speed.png",
-      "imageAlt": "maximum speed"
+      "id": "rs-im-0396"
     },
     {
       "correctAnswer": 1,
       "question": "A blue rectangular sign displaying a vertical white bar with a horizontal red bar on top, forming a letter T shape. What information does this blue rectangular sign convey to drivers?",
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Turn left ahead",
         "No through road for vehicles",
@@ -11607,9 +11431,7 @@
         "End of motorway"
       ],
       "explanation": "This sign indicates that the road ahead is a dead end for motor vehicles, although there may be access for pedestrians or cyclists",
-      "id": "rs-im-0397",
-      "image": "/road-signs/no_motor_vehicle.png",
-      "imageAlt": "no motor vehicle"
+      "id": "rs-im-0397"
     },
     {
       "question": "A white circular sign with a thick red outer border containing the number 30 in black digits. What is the legal requirement indicated by the sign?",
@@ -11621,10 +11443,8 @@
         "Recommended advisory speed",
         "Distance to the next junction"
       ],
-      "type": "image_question",
-      "id": "rs-im-0398",
-      "image": "/road-signs/maximum_speed.png",
-      "imageAlt": "maximum speed"
+      "type": "multiple_choice",
+      "id": "rs-im-0398"
     },
     {
       "question": "An upward-pointing equilateral triangle with a red border and a black silhouette of a car with curved lines beneath its tyres. What specific hazard does this triangular warning sign highlight?",
@@ -11702,7 +11522,7 @@
     {
       "correctAnswer": 1,
       "question": "A white circular sign with a red border, containing a black silhouette of a car above a black silhouette of a motorcycle. Which of these describes the restriction shown by the sign?",
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "A red circle with a car and a motorcycle indicates that all power-driven vehicles, except motorcycles without sidecars, are prohibited",
       "options": [
         "Cars and motorcycles only",
@@ -11710,9 +11530,7 @@
         "Motorway begins here",
         "Passing prohibited for small vehicles"
       ],
-      "id": "rs-im-0406",
-      "image": "/motorway-rules/all_lane_closures_motorway.png",
-      "imageAlt": "all lane closures motorway"
+      "id": "rs-im-0406"
     },
     {
       "question": "A green rectangular directional sign containing a white letter H inside a white square, with a white arrow. What facility is indicated by this green information sign?",
@@ -11724,10 +11542,8 @@
         "Housing estate entrance"
       ],
       "explanation": "A green sign with a white 'H' in a square indicates the direction to a hospital with 'Accident and Emergency' facilities",
-      "type": "image_question",
-      "id": "rs-im-0407",
-      "image": "/road-signs/give_priority_to_vehicles_from_opposite_direction.png",
-      "imageAlt": "give priority to vehicles from opposite direction"
+      "type": "multiple_choice",
+      "id": "rs-im-0407"
     },
     {
       "type": "image_question",
@@ -11799,10 +11615,8 @@
         "Clearway begins"
       ],
       "question": "UK informative sign: yellow rectangle with a black circle containing a white or black capital letter 'C'. What does the sign indicate to drivers?",
-      "type": "image_question",
-      "id": "rs-im-0415",
-      "image": "/motorway-rules/emergency_area_motorway.png",
-      "imageAlt": "emergency area motorway"
+      "type": "multiple_choice",
+      "id": "rs-im-0415"
     },
     {
       "type": "image_question",
@@ -11844,14 +11658,12 @@
         "Soft verges for 2 miles"
       ],
       "question": "Warning sign: red triangle with a black symbol of a car tipping off the edge of a quay into water. What hazard is being highlighted by the sign?",
-      "type": "image_question",
-      "id": "rs-im-0418",
-      "image": "/road-signs/quayside_or_river_bank.png",
-      "imageAlt": "quayside or river bank"
+      "type": "multiple_choice",
+      "id": "rs-im-0418"
     },
     {
       "question": "Red triangular sign with two black vertical lines that curve inwards towards each other at the top. What road change does the sign warn you of?",
-      "type": "image_question",
+      "type": "multiple_choice",
       "correctAnswer": 1,
       "options": [
         "Dual carriageway ends",
@@ -11860,9 +11672,7 @@
         "The road ahead is a dead end"
       ],
       "explanation": "This sign warns that the road narrows on both sides, requiring extra caution",
-      "id": "rs-im-0419",
-      "image": "/road-signs/road_narrows_on_both_sides.png",
-      "imageAlt": "road narrows on both sides"
+      "id": "rs-im-0419"
     },
     {
       "options": [
@@ -11878,7 +11688,7 @@
       "id": "rs-im-0420"
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "No cars allowed",
         "No motor vehicles",
@@ -11888,9 +11698,7 @@
       "correctAnswer": 1,
       "explanation": "A red circle with a car and a motorcycle indicates that all motor vehicles are prohibited from entering that area",
       "question": "UK regulatory sign: Red circle with white background, showing a black silhouette of a car above a motorcycle. What does this regulatory sign mean?",
-      "id": "rs-im-0421",
-      "image": "/road-signs/no_motor_vehicle.png",
-      "imageAlt": "no motor vehicle"
+      "id": "rs-im-0421"
     },
     {
       "explanation": "This sign warns of a staggered junction where the first side road turns off to the right",
@@ -11915,12 +11723,10 @@
         "No through road",
         "Direction to a diversion route"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "A yellow sign with a black square, circle, or triangle is used to guide drivers along a temporary diversion route",
       "question": "UK temporary sign: Yellow rectangle with a large black solid circle in the centre. What is the purpose of this symbol on a yellow background?",
-      "id": "rs-im-0424",
-      "image": "/road-signs/diversion_route.png",
-      "imageAlt": "diversion route"
+      "id": "rs-im-0424"
     },
     {
       "correctAnswer": 0,
@@ -11960,10 +11766,8 @@
         "End of all restrictions",
         "Clearway; no stopping"
       ],
-      "type": "image_question",
-      "id": "rs-im-0427",
-      "image": "/road-signs/maximum_speed.png",
-      "imageAlt": "maximum speed"
+      "type": "multiple_choice",
+      "id": "rs-im-0427"
     },
     {
       "question": "UK information sign: Blue rectangle containing a white 'P' for parking and a white symbol of a motorcycle. What does this information sign indicate?",
@@ -12003,17 +11807,15 @@
         "With-flow bus and cycle lane",
         "No entry for buses and cycles"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "Signs with a blue background and no red border generally provide mandatory instructions, such as showing a route for specific vehicles",
       "question": "UK mandatory sign: Blue rectangle with white symbols of a bus and a bicycle. What does this road sign mean?",
-      "id": "rs-im-0430",
-      "image": "/road-signs/contra_flow_bus_lane.png",
-      "imageAlt": "contra flow bus lane"
+      "id": "rs-im-0430"
     },
     {
       "question": "UK information sign: Blue square with a white vertical bar topped with a red horizontal bar, forming a 'T'. What does the sign mean?",
       "explanation": "A rectangular sign with a red and white 'T' shape indicates that the road ahead is a dead end or no through road",
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "Turn left or right ahead",
         "No through road for vehicles",
@@ -12021,9 +11823,7 @@
         "Telephone point ahead"
       ],
       "correctAnswer": 1,
-      "id": "rs-im-0431",
-      "image": "/road-signs/no_through_road_for_vehicles.png",
-      "imageAlt": "no through road for vehicles"
+      "id": "rs-im-0431"
     },
     {
       "question": "UK warning sign: Red triangle showing a black silhouette of a slope moving downwards from left to right, with '10%' written inside. What does the sign tell you?",
@@ -12035,10 +11835,8 @@
         "Steep hill upwards",
         "Steep hill downwards"
       ],
-      "type": "image_question",
-      "id": "rs-im-0432",
-      "image": "/road-signs/bend_to_right.png",
-      "imageAlt": "bend to right"
+      "type": "multiple_choice",
+      "id": "rs-im-0432"
     },
     {
       "explanation": "An upright cross symbol (like a '+' sign) on a warning triangle indicates a crossroads ahead",
@@ -12048,12 +11846,10 @@
         "Crossroads ahead",
         "Level crossing ahead"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "A UK warning triangle road sign with a red border and white background, featuring a bold black cross in the centre. You see the sign on a rural road. What does it mean?",
       "correctAnswer": 2,
-      "id": "rs-im-0433",
-      "image": "/road-signs/crossroads.png",
-      "imageAlt": "crossroads"
+      "id": "rs-im-0433"
     },
     {
       "correctAnswer": 0,
@@ -12064,11 +11860,9 @@
         "Cycle lane ahead",
         "Watch out for cyclists along this route"
       ],
-      "type": "image_question",
+      "type": "multiple_choice",
       "explanation": "A circular sign with a red border containing only a bicycle means that all cycling is prohibited at that location",
-      "id": "rs-im-0434",
-      "image": "/road-signs/no_cycling.png",
-      "imageAlt": "no cycling"
+      "id": "rs-im-0434"
     },
     {
       "explanation": "The 'No Entry' sign is a solid red circle with a horizontal white bar, used to prevent vehicles from entering a one-way street the wrong way",
@@ -12140,13 +11934,11 @@
         "Ford or water splash ahead",
         "Quayside or river bank ahead"
       ],
-      "type": "image_question",
-      "id": "rs-im-0444",
-      "image": "/road-signs/quayside_or_river_bank.png",
-      "imageAlt": "quayside or river bank"
+      "type": "multiple_choice",
+      "id": "rs-im-0444"
     },
     {
-      "type": "image_question",
+      "type": "multiple_choice",
       "options": [
         "No cars allowed",
         "No motorcycles allowed",
@@ -12156,9 +11948,7 @@
       "explanation": "A red circle with a car and a motorcycle inside indicates that no motor vehicles are allowed in that area",
       "correctAnswer": 2,
       "question": "A circular sign with a red border and a white background. Inside the circle are black silhouettes of a car above a motorcycle. What is prohibited by this regulatory sign?",
-      "id": "rs-im-0445",
-      "image": "/road-signs/no_motor_vehicle.png",
-      "imageAlt": "no motor vehicle"
+      "id": "rs-im-0445"
     },
     {
       "correctAnswer": 0,
@@ -12775,7 +12565,7 @@
     },
     {
       "id": "rs-im-0457",
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "What does this road sign mean?",
       "options": [
         "Level crossing without barrier",
@@ -12784,13 +12574,11 @@
         "Lane closures motorway"
       ],
       "correctAnswer": 1,
-      "explanation": "This sign means: Downward pointing arrows mean Get in lane.",
-      "image": "/motorway-rules/Downward_pointing_arrows_mean_Get_in_lane.png",
-      "imageAlt": "Downward pointing arrows mean Get in lane"
+      "explanation": "This sign means: Downward pointing arrows mean Get in lane."
     },
     {
       "id": "rs-im-0460",
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "What does this road sign mean?",
       "options": [
         "Large vehicle turning",
@@ -12799,13 +12587,11 @@
         "Diversion route"
       ],
       "correctAnswer": 2,
-      "explanation": "This sign means: ahead only.",
-      "image": "/road-signs/ahead_only.png",
-      "imageAlt": "ahead only"
+      "explanation": "This sign means: ahead only."
     },
     {
       "id": "rs-im-0461",
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "What does this road sign mean?",
       "options": [
         "Emergency area motorway",
@@ -12814,13 +12600,11 @@
         "Quayside or river bank"
       ],
       "correctAnswer": 1,
-      "explanation": "This sign means: all lane closures motorway.",
-      "image": "/motorway-rules/all_lane_closures_motorway.png",
-      "imageAlt": "all lane closures motorway"
+      "explanation": "This sign means: all lane closures motorway."
     },
     {
       "id": "rs-im-0462",
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "What does this road sign mean?",
       "options": [
         "Bend to right",
@@ -12829,13 +12613,11 @@
         "Turn left ahead"
       ],
       "correctAnswer": 0,
-      "explanation": "This sign means: bend to right.",
-      "image": "/road-signs/bend_to_right.png",
-      "imageAlt": "bend to right"
+      "explanation": "This sign means: bend to right."
     },
     {
       "id": "rs-im-0463",
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "What does this road sign mean?",
       "options": [
         "Countdown markers",
@@ -12844,13 +12626,11 @@
         "Box junction"
       ],
       "correctAnswer": 3,
-      "explanation": "This sign means: box junction.",
-      "image": "/road-signs/box_junction.png",
-      "imageAlt": "box junction"
+      "explanation": "This sign means: box junction."
     },
     {
       "id": "rs-im-0465",
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "What does this road sign mean?",
       "options": [
         "Clear your windscreen during fog and ice and snow and rain",
@@ -12859,13 +12639,11 @@
         "Buses and cycle only"
       ],
       "correctAnswer": 3,
-      "explanation": "This sign means: buses and cycle only.",
-      "image": "/road-signs/buses_and_cycle_only.png",
-      "imageAlt": "buses and cycle only"
+      "explanation": "This sign means: buses and cycle only."
     },
     {
       "id": "rs-im-0471",
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "What does this road sign mean?",
       "options": [
         "Hardshoulder must not use motorway",
@@ -12874,13 +12652,11 @@
         "Downward pointing arrows mean Get in lane"
       ],
       "correctAnswer": 1,
-      "explanation": "This sign means: contra flow bus lane.",
-      "image": "/road-signs/contra_flow_bus_lane.png",
-      "imageAlt": "contra flow bus lane"
+      "explanation": "This sign means: contra flow bus lane."
     },
     {
       "id": "rs-im-0472",
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "What does this road sign mean?",
       "options": [
         "Countdown markers",
@@ -12889,13 +12665,11 @@
         "Ahead only"
       ],
       "correctAnswer": 0,
-      "explanation": "This sign means: countdown markers.",
-      "image": "/motorway-rules/countdown_markers.png",
-      "imageAlt": "countdown markers"
+      "explanation": "This sign means: countdown markers."
     },
     {
       "id": "rs-im-0473",
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "What does this road sign mean?",
       "options": [
         "Move off only when safe to do so",
@@ -12904,13 +12678,11 @@
         "No cycling"
       ],
       "correctAnswer": 1,
-      "explanation": "This sign means: crossroads.",
-      "image": "/road-signs/crossroads.png",
-      "imageAlt": "crossroads"
+      "explanation": "This sign means: crossroads."
     },
     {
       "id": "rs-im-0474",
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "What does this road sign mean?",
       "options": [
         "Advanced stop lane",
@@ -12919,13 +12691,11 @@
         "Cycle route ahead"
       ],
       "correctAnswer": 3,
-      "explanation": "This sign means: cycle route ahead.",
-      "image": "/road-signs/cycle_route_ahead.png",
-      "imageAlt": "cycle route ahead"
+      "explanation": "This sign means: cycle route ahead."
     },
     {
       "id": "rs-im-0475",
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "What does this road sign mean?",
       "options": [
         "End of 20mph zone",
@@ -12934,13 +12704,11 @@
         "Diversion route"
       ],
       "correctAnswer": 3,
-      "explanation": "This sign means: diversion route.",
-      "image": "/road-signs/diversion_route.png",
-      "imageAlt": "diversion route"
+      "explanation": "This sign means: diversion route."
     },
     {
       "id": "rs-im-0478",
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "What does this road sign mean?",
       "options": [
         "Overtaking cyclists",
@@ -12949,13 +12717,11 @@
         "Dual carriageway ends"
       ],
       "correctAnswer": 3,
-      "explanation": "This sign means: dual carriageway ends.",
-      "image": "/road-signs/dual_carriageway_ends.png",
-      "imageAlt": "dual carriageway ends"
+      "explanation": "This sign means: dual carriageway ends."
     },
     {
       "id": "rs-im-0479",
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "What does this road sign mean?",
       "options": [
         "Mini roundabout",
@@ -12964,13 +12730,11 @@
         "Reversing lookout"
       ],
       "correctAnswer": 1,
-      "explanation": "This sign means: emergency area motorway.",
-      "image": "/motorway-rules/emergency_area_motorway.png",
-      "imageAlt": "emergency area motorway"
+      "explanation": "This sign means: emergency area motorway."
     },
     {
       "id": "rs-im-0480",
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "What does this road sign mean?",
       "options": [
         "Parking places for solo motorcycles",
@@ -12979,13 +12743,11 @@
         "2 second gap"
       ],
       "correctAnswer": 2,
-      "explanation": "This sign means: emergency service sign.",
-      "image": "/motorway-rules/emregency_service_sign.png",
-      "imageAlt": "emergency service sign"
+      "explanation": "This sign means: emergency service sign."
     },
     {
       "id": "rs-im-0481",
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "What does this road sign mean?",
       "options": [
         "Countdown markers",
@@ -12994,13 +12756,11 @@
         "End of 20mph zone"
       ],
       "correctAnswer": 3,
-      "explanation": "This sign means: end of 20mph zone.",
-      "image": "/road-signs/end_of_20mph_zone.png",
-      "imageAlt": "end of 20mph zone"
+      "explanation": "This sign means: end of 20mph zone."
     },
     {
       "id": "rs-im-0482",
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "What does this road sign mean?",
       "options": [
         "No stopping at any time",
@@ -13009,13 +12769,11 @@
         "End of controlled parking zone"
       ],
       "correctAnswer": 3,
-      "explanation": "This sign means: end of controlled parking zone.",
-      "image": "/road-signs/end_of_controlled_parking_zone.png",
-      "imageAlt": "end of controlled parking zone"
+      "explanation": "This sign means: end of controlled parking zone."
     },
     {
       "id": "rs-im-0483",
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "What does this road sign mean?",
       "options": [
         "Contra flow bus lane",
@@ -13024,13 +12782,11 @@
         "Cycle route ahead"
       ],
       "correctAnswer": 2,
-      "explanation": "This sign means: entry to 20mph zone.",
-      "image": "/road-signs/entry_to_20mph_zone.png",
-      "imageAlt": "entry to 20mph zone"
+      "explanation": "This sign means: entry to 20mph zone."
     },
     {
       "id": "rs-im-0486",
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "What does this road sign mean?",
       "options": [
         "Give priority to vehicles from opposite direction",
@@ -13039,13 +12795,11 @@
         "Reflective clothing for horse"
       ],
       "correctAnswer": 0,
-      "explanation": "This sign means: give priority to vehicles from opposite direction.",
-      "image": "/road-signs/give_priority_to_vehicles_from_opposite_direction.png",
-      "imageAlt": "give priority to vehicles from opposite direction"
+      "explanation": "This sign means: give priority to vehicles from opposite direction."
     },
     {
       "id": "rs-im-0488",
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "What does this road sign mean?",
       "options": [
         "No through road for vehicles",
@@ -13054,13 +12808,11 @@
         "Lane specific signal 2 motorway"
       ],
       "correctAnswer": 1,
-      "explanation": "This sign means: give way to traffic on major road.",
-      "image": "/road-signs/give_way_to_traffic_on_major_road.png",
-      "imageAlt": "give way to traffic on major road"
+      "explanation": "This sign means: give way to traffic on major road."
     },
     {
       "id": "rs-im-0489",
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "What does this road sign mean?",
       "options": [
         "No vehicles beyond point",
@@ -13069,13 +12821,11 @@
         "Level crossing without barrier or gate ahead"
       ],
       "correctAnswer": 2,
-      "explanation": "This sign means: hardshoulder must not use 2 motorway.",
-      "image": "/motorway-rules/hardshoulder_must_not_use_2_motorway.png",
-      "imageAlt": "hardshoulder must not use 2 motorway"
+      "explanation": "This sign means: hardshoulder must not use 2 motorway."
     },
     {
       "id": "rs-im-0490",
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "What does this road sign mean?",
       "options": [
         "Lane closures 3 motorway",
@@ -13084,13 +12834,11 @@
         "2 second gap"
       ],
       "correctAnswer": 2,
-      "explanation": "This sign means: hardshoulder must not use motorway.",
-      "image": "/motorway-rules/hardshoulder_must_not_use_2_motorway.png",
-      "imageAlt": "hardshoulder must not use 2 motorway"
+      "explanation": "This sign means: hardshoulder must not use motorway."
     },
     {
       "id": "rs-im-0492",
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "What does this road sign mean?",
       "options": [
         "Double roundabout",
@@ -13099,13 +12847,11 @@
         "Home zone and quiet lane"
       ],
       "correctAnswer": 3,
-      "explanation": "This sign means: home zone and quiet lane.",
-      "image": "/road-signs/home_zone_and_quiet_lane.png",
-      "imageAlt": "home zone and quiet lane"
+      "explanation": "This sign means: home zone and quiet lane."
     },
     {
       "id": "rs-im-0493",
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "What does this road sign mean?",
       "options": [
         "No stopping clearway",
@@ -13114,13 +12860,11 @@
         "Junction bend ahead"
       ],
       "correctAnswer": 3,
-      "explanation": "This sign means: junction bend ahead.",
-      "image": "/road-signs/junction_bend_ahead.png",
-      "imageAlt": "junction bend ahead"
+      "explanation": "This sign means: junction bend ahead."
     },
     {
       "id": "rs-im-0495",
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "What does this road sign mean?",
       "options": [
         "Emergency area motorway",
@@ -13129,13 +12873,11 @@
         "Ahead only"
       ],
       "correctAnswer": 1,
-      "explanation": "This sign means: lane can use motorway.",
-      "image": "/motorway-rules/lane_can_use_motorway.png",
-      "imageAlt": "lane can use motorway"
+      "explanation": "This sign means: lane can use motorway."
     },
     {
       "id": "rs-im-0496",
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "What does this road sign mean?",
       "options": [
         "Clothing for cyclists",
@@ -13144,13 +12886,11 @@
         "Marker post motorway"
       ],
       "correctAnswer": 2,
-      "explanation": "This sign means: lane closures.",
-      "image": "/motorway-rules/lane_closures.png",
-      "imageAlt": "lane closures"
+      "explanation": "This sign means: lane closures."
     },
     {
       "id": "rs-im-0497",
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "What does this road sign mean?",
       "options": [
         "Clear your windscreen during fog and ice and snow and rain",
@@ -13159,13 +12899,11 @@
         "Lane closures 2 motorway"
       ],
       "correctAnswer": 3,
-      "explanation": "This sign means: lane closures 2 motorway.",
-      "image": "/motorway-rules/lane_closures_2_motorway.png",
-      "imageAlt": "lane closures 2 motorway"
+      "explanation": "This sign means: lane closures 2 motorway."
     },
     {
       "id": "rs-im-0498",
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "What does this road sign mean?",
       "options": [
         "Lane closures 3 motorway",
@@ -13174,13 +12912,11 @@
         "Roundabout lane positioning"
       ],
       "correctAnswer": 0,
-      "explanation": "This sign means: lane closures 3 motorway.",
-      "image": "/motorway-rules/lane_closures_2_motorway.png",
-      "imageAlt": "lane closures 2 motorway"
+      "explanation": "This sign means: lane closures 3 motorway."
     },
     {
       "id": "rs-im-0499",
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "What does this road sign mean?",
       "options": [
         "No entry",
@@ -13189,13 +12925,11 @@
         "Mini roundabout"
       ],
       "correctAnswer": 1,
-      "explanation": "This sign means: lane closures motorway.",
-      "image": "/motorway-rules/lane_closures_2_motorway.png",
-      "imageAlt": "lane closures 2 motorway"
+      "explanation": "This sign means: lane closures motorway."
     },
     {
       "id": "rs-im-0500",
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "What does this road sign mean?",
       "options": [
         "Entry to 20mph zone",
@@ -13204,13 +12938,11 @@
         "Lane specific signal 2 motorway"
       ],
       "correctAnswer": 3,
-      "explanation": "This sign means: lane specific signal 2 motorway.",
-      "image": "/motorway-rules/lane_specific_signal_2_motorway.png",
-      "imageAlt": "lane specific signal 2 motorway"
+      "explanation": "This sign means: lane specific signal 2 motorway."
     },
     {
       "id": "rs-im-0501",
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "What does this road sign mean?",
       "options": [
         "No entry",
@@ -13219,13 +12951,11 @@
         "Maximum speed"
       ],
       "correctAnswer": 2,
-      "explanation": "This sign means: lane specific signal motorway.",
-      "image": "/motorway-rules/lane_specific_signal_2_motorway.png",
-      "imageAlt": "lane specific signal 2 motorway"
+      "explanation": "This sign means: lane specific signal motorway."
     },
     {
       "id": "rs-im-0503",
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "What does this road sign mean?",
       "options": [
         "Marker post motorway",
@@ -13234,13 +12964,11 @@
         "Road narrows on both sides"
       ],
       "correctAnswer": 2,
-      "explanation": "This sign means: left-side to left-side turning right-side to right-side turning.",
-      "image": "/road-signs/bend_to_right.png",
-      "imageAlt": "bend to right"
+      "explanation": "This sign means: left-side to left-side turning right-side to right-side turning."
     },
     {
       "id": "rs-im-0504",
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "What does this road sign mean?",
       "options": [
         "Countdown markers",
@@ -13249,13 +12977,11 @@
         "Level crossing"
       ],
       "correctAnswer": 3,
-      "explanation": "This sign means: level crossing.",
-      "image": "/road-signs/level_crossing.png",
-      "imageAlt": "level crossing"
+      "explanation": "This sign means: level crossing."
     },
     {
       "id": "rs-im-0505",
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "What does this road sign mean?",
       "options": [
         "Give priority to vehicles from opposite direction",
@@ -13264,13 +12990,11 @@
         "No motor vehicle"
       ],
       "correctAnswer": 1,
-      "explanation": "This sign means: level crossing without barrier.",
-      "image": "/road-signs/level_crossing_without_barrier.png",
-      "imageAlt": "level crossing without barrier"
+      "explanation": "This sign means: level crossing without barrier."
     },
     {
       "id": "rs-im-0506",
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "What does this road sign mean?",
       "options": [
         "Level crossing without barrier or gate ahead",
@@ -13279,13 +13003,11 @@
         "Child seatbelt"
       ],
       "correctAnswer": 0,
-      "explanation": "This sign means: level crossing without barrier or gate ahead.",
-      "image": "/road-signs/level_crossing_without_barrier_or_gate_ahead.png",
-      "imageAlt": "level crossing without barrier or gate ahead"
+      "explanation": "This sign means: level crossing without barrier or gate ahead."
     },
     {
       "id": "rs-im-0507",
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "What does this road sign mean?",
       "options": [
         "Marker post motorway",
@@ -13294,13 +13016,11 @@
         "Motorcyclist clothing"
       ],
       "correctAnswer": 0,
-      "explanation": "This sign means: marker post motorway.",
-      "image": "/motorway-rules/marker_post_motorway.png",
-      "imageAlt": "marker post motorway"
+      "explanation": "This sign means: marker post motorway."
     },
     {
       "id": "rs-im-0508",
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "What does this road sign mean?",
       "options": [
         "Buses and cycle only",
@@ -13309,13 +13029,11 @@
         "Diversion route"
       ],
       "correctAnswer": 1,
-      "explanation": "This sign means: maximum speed.",
-      "image": "/road-signs/maximum_speed.png",
-      "imageAlt": "maximum speed"
+      "explanation": "This sign means: maximum speed."
     },
     {
       "id": "rs-im-0509",
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "What does this road sign mean?",
       "options": [
         "Hardshoulder must not use 2 motorway",
@@ -13324,13 +13042,11 @@
         "Quayside or river bank"
       ],
       "correctAnswer": 2,
-      "explanation": "This sign means: mini roundabout.",
-      "image": "/road-signs/mini_roundabout.png",
-      "imageAlt": "mini roundabout"
+      "explanation": "This sign means: mini roundabout."
     },
     {
       "id": "rs-im-0512",
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "What does this road sign mean?",
       "options": [
         "Crossroads",
@@ -13339,13 +13055,11 @@
         "No cycling"
       ],
       "correctAnswer": 3,
-      "explanation": "This sign means: no cycling.",
-      "image": "/road-signs/no_cycling.png",
-      "imageAlt": "no cycling"
+      "explanation": "This sign means: no cycling."
     },
     {
       "id": "rs-im-0513",
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "What does this road sign mean?",
       "options": [
         "Cycle route ahead",
@@ -13354,13 +13068,11 @@
         "Box junction"
       ],
       "correctAnswer": 1,
-      "explanation": "This sign means: no entry.",
-      "image": "/road-signs/no_entry.png",
-      "imageAlt": "no entry"
+      "explanation": "This sign means: no entry."
     },
     {
       "id": "rs-im-0514",
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "What does this road sign mean?",
       "options": [
         "No left turn",
@@ -13369,13 +13081,11 @@
         "Give way to pedestrian who have started to cross"
       ],
       "correctAnswer": 0,
-      "explanation": "This sign means: no left turn.",
-      "image": "/road-signs/no_left_turn.png",
-      "imageAlt": "no left turn"
+      "explanation": "This sign means: no left turn."
     },
     {
       "id": "rs-im-0515",
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "What does this road sign mean?",
       "options": [
         "Reflective clothing for horse",
@@ -13384,13 +13094,11 @@
         "No loading at any time"
       ],
       "correctAnswer": 3,
-      "explanation": "This sign means: no loading at any time.",
-      "image": "/road-signs/no_loading_at_any_time.png",
-      "imageAlt": "no loading at any time"
+      "explanation": "This sign means: no loading at any time."
     },
     {
       "id": "rs-im-0516",
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "What does this road sign mean?",
       "options": [
         "Reversing lookout",
@@ -13399,13 +13107,11 @@
         "Roundabout"
       ],
       "correctAnswer": 2,
-      "explanation": "This sign means: no loading or unloading at the times shown.",
-      "image": "/road-signs/no_loading_or_unloading_at_the_times_shown.png",
-      "imageAlt": "no loading or unloading at the times shown"
+      "explanation": "This sign means: no loading or unloading at the times shown."
     },
     {
       "id": "rs-im-0517",
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "What does this road sign mean?",
       "options": [
         "No overtaking",
@@ -13414,13 +13120,11 @@
         "No stopping clearway"
       ],
       "correctAnswer": 2,
-      "explanation": "This sign means: no motor vehicle.",
-      "image": "/road-signs/no_motor_vehicle.png",
-      "imageAlt": "no motor vehicle"
+      "explanation": "This sign means: no motor vehicle."
     },
     {
       "id": "rs-im-0518",
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "What does this road sign mean?",
       "options": [
         "No overtaking",
@@ -13429,13 +13133,11 @@
         "Cycle route ahead"
       ],
       "correctAnswer": 0,
-      "explanation": "This sign means: no overtaking.",
-      "image": "/road-signs/no_overtaking.png",
-      "imageAlt": "no overtaking"
+      "explanation": "This sign means: no overtaking."
     },
     {
       "id": "rs-im-0519",
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "What does this road sign mean?",
       "options": [
         "Lane can use motorway",
@@ -13444,13 +13146,11 @@
         "No left turn"
       ],
       "correctAnswer": 1,
-      "explanation": "This sign means: no stopping at any time.",
-      "image": "/road-signs/no_stopping_at_any_time.png",
-      "imageAlt": "no stopping at any time"
+      "explanation": "This sign means: no stopping at any time."
     },
     {
       "id": "rs-im-0520",
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "What does this road sign mean?",
       "options": [
         "2 second gap",
@@ -13459,13 +13159,11 @@
         "No stopping during times shown on sign"
       ],
       "correctAnswer": 1,
-      "explanation": "This sign means: no stopping clearway.",
-      "image": "/road-signs/no_stopping_clearway.png",
-      "imageAlt": "no stopping clearway"
+      "explanation": "This sign means: no stopping clearway."
     },
     {
       "id": "rs-im-0521",
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "What does this road sign mean?",
       "options": [
         "Motorcyclist clothing",
@@ -13474,13 +13172,11 @@
         "Reversing lookout"
       ],
       "correctAnswer": 2,
-      "explanation": "This sign means: no stopping during times shown on sign.",
-      "image": "/road-signs/no_stopping_during_times_shown_on_sign.png",
-      "imageAlt": "no stopping during times shown on sign"
+      "explanation": "This sign means: no stopping during times shown on sign."
     },
     {
       "id": "rs-im-0522",
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "What does this road sign mean?",
       "options": [
         "Motorcyclist clothing",
@@ -13489,13 +13185,11 @@
         "Turn left"
       ],
       "correctAnswer": 1,
-      "explanation": "This sign means: no through road for vehicles.",
-      "image": "/road-signs/no_through_road_for_vehicles.png",
-      "imageAlt": "no through road for vehicles"
+      "explanation": "This sign means: no through road for vehicles."
     },
     {
       "id": "rs-im-0523",
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "What does this road sign mean?",
       "options": [
         "2 second gap",
@@ -13504,13 +13198,11 @@
         "No towed caravan"
       ],
       "correctAnswer": 3,
-      "explanation": "This sign means: no towed caravan.",
-      "image": "/road-signs/no_towed_caravan.png",
-      "imageAlt": "no towed caravan"
+      "explanation": "This sign means: no towed caravan."
     },
     {
       "id": "rs-im-0524",
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "What does this road sign mean?",
       "options": [
         "Large vehicle turning",
@@ -13519,13 +13211,11 @@
         "No u turn"
       ],
       "correctAnswer": 3,
-      "explanation": "This sign means: no u turn.",
-      "image": "/road-signs/no_u_turn.png",
-      "imageAlt": "no u turn"
+      "explanation": "This sign means: no u turn."
     },
     {
       "id": "rs-im-0525",
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "What does this road sign mean?",
       "options": [
         "Roundabout",
@@ -13534,13 +13224,11 @@
         "Find safe place to cross the road"
       ],
       "correctAnswer": 1,
-      "explanation": "This sign means: no vehicles beyond point.",
-      "image": "/road-signs/no_vehicles_beyond_point.png",
-      "imageAlt": "no vehicles beyond point"
+      "explanation": "This sign means: no vehicles beyond point."
     },
     {
       "id": "rs-im-0526",
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "What does this road sign mean?",
       "options": [
         "Maximum speed",
@@ -13549,13 +13237,11 @@
         "No waiting"
       ],
       "correctAnswer": 3,
-      "explanation": "This sign means: no waiting.",
-      "image": "/road-signs/no_waiting.png",
-      "imageAlt": "no waiting"
+      "explanation": "This sign means: no waiting."
     },
     {
       "id": "rs-im-0527",
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "What does this road sign mean?",
       "options": [
         "Reversing lookout",
@@ -13564,13 +13250,11 @@
         "No waiting at any time"
       ],
       "correctAnswer": 3,
-      "explanation": "This sign means: no waiting at any time.",
-      "image": "/road-signs/no_waiting_at_any_time.png",
-      "imageAlt": "no waiting at any time"
+      "explanation": "This sign means: no waiting at any time."
     },
     {
       "id": "rs-im-0528",
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "What does this road sign mean?",
       "options": [
         "No waiting during times shown on sign",
@@ -13579,13 +13263,11 @@
         "Emergency area motorway"
       ],
       "correctAnswer": 0,
-      "explanation": "This sign means: no waiting during times shown on sign.",
-      "image": "/road-signs/no_waiting_during_times_shown_on_sign.png",
-      "imageAlt": "no waiting during times shown on sign"
+      "explanation": "This sign means: no waiting during times shown on sign."
     },
     {
       "id": "rs-im-0529",
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "What does this road sign mean?",
       "options": [
         "Entry to 20mph zone",
@@ -13594,13 +13276,11 @@
         "Double roundabout"
       ],
       "correctAnswer": 2,
-      "explanation": "This sign means: one way traffic.",
-      "image": "/road-signs/one_way_traffic.png",
-      "imageAlt": "one way traffic"
+      "explanation": "This sign means: one way traffic."
     },
     {
       "id": "rs-im-0530",
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "What does this road sign mean?",
       "options": [
         "No through road for vehicles",
@@ -13609,13 +13289,11 @@
         "No cycling"
       ],
       "correctAnswer": 1,
-      "explanation": "This sign means: opening or swing bridge.",
-      "image": "/road-signs/opening_or_swing_bridge.png",
-      "imageAlt": "opening or swing bridge"
+      "explanation": "This sign means: opening or swing bridge."
     },
     {
       "id": "rs-im-0533",
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "What does this road sign mean?",
       "options": [
         "Dual carriageway ends",
@@ -13624,13 +13302,11 @@
         "Parking places for solo motorcycles"
       ],
       "correctAnswer": 3,
-      "explanation": "This sign means: parking places for solo motorcycles.",
-      "image": "/road-signs/parking_places_for_solo_motorcycles.png",
-      "imageAlt": "parking places for solo motorcycles"
+      "explanation": "This sign means: parking places for solo motorcycles."
     },
     {
       "id": "rs-im-0538",
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "What does this road sign mean?",
       "options": [
         "Turn left",
@@ -13639,13 +13315,11 @@
         "Mini roundabout"
       ],
       "correctAnswer": 1,
-      "explanation": "This sign means: quayside or river bank.",
-      "image": "/road-signs/quayside_or_river_bank.png",
-      "imageAlt": "quayside or river bank"
+      "explanation": "This sign means: quayside or river bank."
     },
     {
       "id": "rs-im-0539",
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "What does this road sign mean?",
       "options": [
         "No stopping clearway",
@@ -13654,13 +13328,11 @@
         "Queue caution message motorway"
       ],
       "correctAnswer": 3,
-      "explanation": "This sign means: queue caution message motorway.",
-      "image": "/motorway-rules/queue_caution_message_motorway.png",
-      "imageAlt": "queue caution message motorway"
+      "explanation": "This sign means: queue caution message motorway."
     },
     {
       "id": "rs-im-0542",
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "What does this road sign mean?",
       "options": [
         "Road narrows on both sides",
@@ -13669,13 +13341,11 @@
         "Priority to incoming oncoming vehicles"
       ],
       "correctAnswer": 0,
-      "explanation": "This sign means: road narrows on both sides.",
-      "image": "/road-signs/road_narrows_on_both_sides.png",
-      "imageAlt": "road narrows on both sides"
+      "explanation": "This sign means: road narrows on both sides."
     },
     {
       "id": "rs-im-0543",
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "What does this road sign mean?",
       "options": [
         "Reflective clothing for horse",
@@ -13684,13 +13354,11 @@
         "Road works"
       ],
       "correctAnswer": 3,
-      "explanation": "This sign means: road works.",
-      "image": "/road-signs/road_works.png",
-      "imageAlt": "road works"
+      "explanation": "This sign means: road works."
     },
     {
       "id": "rs-im-0544",
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "What does this road sign mean?",
       "options": [
         "Roundabout",
@@ -13699,13 +13367,11 @@
         "No vehicles beyond point"
       ],
       "correctAnswer": 0,
-      "explanation": "This sign means: roundabout.",
-      "image": "/road-signs/roundabout.png",
-      "imageAlt": "roundabout"
+      "explanation": "This sign means: roundabout."
     },
     {
       "id": "rs-im-0546",
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "What does this road sign mean?",
       "options": [
         "Parking places for solo motorcycles",
@@ -13714,13 +13380,11 @@
         "Left-side to left-side turning right-side to right-side turning"
       ],
       "correctAnswer": 1,
-      "explanation": "This sign means: stop and give way.",
-      "image": "/road-signs/stop_and_give_way.png",
-      "imageAlt": "stop and give way"
+      "explanation": "This sign means: stop and give way."
     },
     {
       "id": "rs-im-0547",
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "What does this road sign mean?",
       "options": [
         "Turn left",
@@ -13729,13 +13393,11 @@
         "No stopping during times shown on sign"
       ],
       "correctAnswer": 0,
-      "explanation": "This sign means: turn left.",
-      "image": "/road-signs/no_left_turn.png",
-      "imageAlt": "no left turn"
+      "explanation": "This sign means: turn left."
     },
     {
       "id": "rs-im-0548",
-      "type": "image_question",
+      "type": "multiple_choice",
       "question": "What does this road sign mean?",
       "options": [
         "Parking places for solo motorcycles",
@@ -13744,9 +13406,7 @@
         "Turn left ahead"
       ],
       "correctAnswer": 3,
-      "explanation": "This sign means: turn left ahead.",
-      "image": "/road-signs/no_left_turn.png",
-      "imageAlt": "no left turn"
+      "explanation": "This sign means: turn left ahead."
     }
   ],
   "mocks": [
