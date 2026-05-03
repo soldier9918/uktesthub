@@ -258,7 +258,7 @@ function ServerLogs() {
                 <span className="text-muted-foreground">{new Date(l.created_at).toLocaleString()}</span>
               </div>
               <div className="mt-1 font-mono">{l.message}</div>
-              {l.context && (
+              {l.context ? (
                 <pre className="mt-1 overflow-x-auto rounded bg-muted/50 p-2 text-[10px]">
                   {JSON.stringify(l.context, null, 2)}
                 </pre>
