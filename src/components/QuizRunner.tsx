@@ -24,6 +24,8 @@ import type {
 import { AdSlot } from "./AdSlot";
 import { RoadSign } from "./RoadSign";
 import { useOverrides, applyOverrides } from "@/lib/overrides";
+import { supabase } from "@/integrations/supabase/client";
+import { useAuth } from "@/lib/auth-context";
 
 type Mode = "practice" | "exam";
 // Answer shapes per question type:
