@@ -104,14 +104,9 @@ export function SiteHeader() {
               </DropdownMenuContent>
             </DropdownMenu>
           ) : (
-            <>
-              <Link to="/signin" className="hidden md:inline-flex h-10 items-center justify-center rounded-xl px-3 text-sm font-semibold text-foreground/80 hover:text-foreground">
-                Sign in
-              </Link>
-              <Link to="/signup" className="inline-flex items-center justify-center rounded-xl bg-coral px-5 py-2.5 text-sm font-semibold text-coral-foreground shadow-coral transition-transform hover:-translate-y-0.5">
-                Sign up
-              </Link>
-            </>
+            <Link to="/signin" className="inline-flex items-center justify-center rounded-xl bg-coral px-5 py-2.5 text-sm font-semibold text-coral-foreground shadow-coral transition-transform hover:-translate-y-0.5">
+              Sign in
+            </Link>
           )}
         </div>
       </div>
