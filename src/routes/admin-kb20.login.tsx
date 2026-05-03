@@ -35,7 +35,7 @@ function AdminLogin() {
       const { error } = await supabase.auth.signUp({
         email,
         password,
-        options: { emailRedirectTo: `${window.location.origin}/admin` },
+        options: { emailRedirectTo: `${window.location.origin}/admin-kb20` },
       });
       setBusy(false);
       if (error) return setError(error.message);
