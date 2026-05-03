@@ -23,6 +23,7 @@ import type {
 } from "@/data/quizzes";
 import { AdSlot } from "./AdSlot";
 import { RoadSign } from "./RoadSign";
+import { useOverrides, applyOverrides } from "@/lib/overrides";
 
 type Mode = "practice" | "exam";
 // Answer shapes per question type:
