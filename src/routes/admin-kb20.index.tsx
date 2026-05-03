@@ -29,6 +29,15 @@ export const Route = createFileRoute("/admin-kb20/")({
               Reword any question, change correct answers, upload replacement images.
             </p>
           </Link>
+          <Link
+            to="/admin-kb20/users"
+            className="rounded-xl border border-border bg-card p-5 hover:border-coral/40 hover:shadow-soft"
+          >
+            <div className="font-semibold">Users</div>
+            <p className="mt-1 text-sm text-muted-foreground">
+              See everyone who's signed up — email, sign-in history, attempts, role.
+            </p>
+          </Link>
         </div>
       </main>
     </AdminGate>
