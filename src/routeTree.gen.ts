@@ -36,16 +36,16 @@ import { Route as AccessibilityRouteImport } from './routes/accessibility'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as BlogIndexRouteImport } from './routes/blog.index'
-import { Route as AdminIndexRouteImport } from './routes/admin.index'
+import { Route as AdminKb20IndexRouteImport } from './routes/admin-kb20.index'
 import { Route as TopicSlugRouteImport } from './routes/topic.$slug'
 import { Route as QuizSlugRouteImport } from './routes/quiz.$slug'
 import { Route as GuideSlugRouteImport } from './routes/guide.$slug'
 import { Route as CategorySlugRouteImport } from './routes/category.$slug'
 import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
-import { Route as AdminLoginRouteImport } from './routes/admin.login'
-import { Route as AdminDiagnosticsRouteImport } from './routes/admin.diagnostics'
-import { Route as AdminQuestionsIndexRouteImport } from './routes/admin.questions.index'
-import { Route as AdminQuestionsTopicRouteImport } from './routes/admin.questions.$topic'
+import { Route as AdminKb20LoginRouteImport } from './routes/admin-kb20.login'
+import { Route as AdminKb20DiagnosticsRouteImport } from './routes/admin-kb20.diagnostics'
+import { Route as AdminKb20QuestionsIndexRouteImport } from './routes/admin-kb20.questions.index'
+import { Route as AdminKb20QuestionsTopicRouteImport } from './routes/admin-kb20.questions.$topic'
 
 const TermsRoute = TermsRouteImport.update({
   id: '/terms',
@@ -182,9 +182,9 @@ const BlogIndexRoute = BlogIndexRouteImport.update({
   path: '/',
   getParentRoute: () => BlogRoute,
 } as any)
-const AdminIndexRoute = AdminIndexRouteImport.update({
-  id: '/admin/',
-  path: '/admin/',
+const AdminKb20IndexRoute = AdminKb20IndexRouteImport.update({
+  id: '/admin-kb20/',
+  path: '/admin-kb20/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const TopicSlugRoute = TopicSlugRouteImport.update({
@@ -212,24 +212,24 @@ const BlogSlugRoute = BlogSlugRouteImport.update({
   path: '/$slug',
   getParentRoute: () => BlogRoute,
 } as any)
-const AdminLoginRoute = AdminLoginRouteImport.update({
-  id: '/admin/login',
-  path: '/admin/login',
+const AdminKb20LoginRoute = AdminKb20LoginRouteImport.update({
+  id: '/admin-kb20/login',
+  path: '/admin-kb20/login',
   getParentRoute: () => rootRouteImport,
 } as any)
-const AdminDiagnosticsRoute = AdminDiagnosticsRouteImport.update({
-  id: '/admin/diagnostics',
-  path: '/admin/diagnostics',
+const AdminKb20DiagnosticsRoute = AdminKb20DiagnosticsRouteImport.update({
+  id: '/admin-kb20/diagnostics',
+  path: '/admin-kb20/diagnostics',
   getParentRoute: () => rootRouteImport,
 } as any)
-const AdminQuestionsIndexRoute = AdminQuestionsIndexRouteImport.update({
-  id: '/admin/questions/',
-  path: '/admin/questions/',
+const AdminKb20QuestionsIndexRoute = AdminKb20QuestionsIndexRouteImport.update({
+  id: '/admin-kb20/questions/',
+  path: '/admin-kb20/questions/',
   getParentRoute: () => rootRouteImport,
 } as any)
-const AdminQuestionsTopicRoute = AdminQuestionsTopicRouteImport.update({
-  id: '/admin/questions/$topic',
-  path: '/admin/questions/$topic',
+const AdminKb20QuestionsTopicRoute = AdminKb20QuestionsTopicRouteImport.update({
+  id: '/admin-kb20/questions/$topic',
+  path: '/admin-kb20/questions/$topic',
   getParentRoute: () => rootRouteImport,
 } as any)
 
@@ -260,17 +260,17 @@ export interface FileRoutesByFullPath {
   '/sitemap': typeof SitemapRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms': typeof TermsRoute
-  '/admin/diagnostics': typeof AdminDiagnosticsRoute
-  '/admin/login': typeof AdminLoginRoute
+  '/admin-kb20/diagnostics': typeof AdminKb20DiagnosticsRoute
+  '/admin-kb20/login': typeof AdminKb20LoginRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/category/$slug': typeof CategorySlugRoute
   '/guide/$slug': typeof GuideSlugRoute
   '/quiz/$slug': typeof QuizSlugRoute
   '/topic/$slug': typeof TopicSlugRoute
-  '/admin/': typeof AdminIndexRoute
+  '/admin-kb20/': typeof AdminKb20IndexRoute
   '/blog/': typeof BlogIndexRoute
-  '/admin/questions/$topic': typeof AdminQuestionsTopicRoute
-  '/admin/questions/': typeof AdminQuestionsIndexRoute
+  '/admin-kb20/questions/$topic': typeof AdminKb20QuestionsTopicRoute
+  '/admin-kb20/questions/': typeof AdminKb20QuestionsIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -298,17 +298,17 @@ export interface FileRoutesByTo {
   '/sitemap': typeof SitemapRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms': typeof TermsRoute
-  '/admin/diagnostics': typeof AdminDiagnosticsRoute
-  '/admin/login': typeof AdminLoginRoute
+  '/admin-kb20/diagnostics': typeof AdminKb20DiagnosticsRoute
+  '/admin-kb20/login': typeof AdminKb20LoginRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/category/$slug': typeof CategorySlugRoute
   '/guide/$slug': typeof GuideSlugRoute
   '/quiz/$slug': typeof QuizSlugRoute
   '/topic/$slug': typeof TopicSlugRoute
-  '/admin': typeof AdminIndexRoute
+  '/admin-kb20': typeof AdminKb20IndexRoute
   '/blog': typeof BlogIndexRoute
-  '/admin/questions/$topic': typeof AdminQuestionsTopicRoute
-  '/admin/questions': typeof AdminQuestionsIndexRoute
+  '/admin-kb20/questions/$topic': typeof AdminKb20QuestionsTopicRoute
+  '/admin-kb20/questions': typeof AdminKb20QuestionsIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -338,17 +338,17 @@ export interface FileRoutesById {
   '/sitemap': typeof SitemapRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms': typeof TermsRoute
-  '/admin/diagnostics': typeof AdminDiagnosticsRoute
-  '/admin/login': typeof AdminLoginRoute
+  '/admin-kb20/diagnostics': typeof AdminKb20DiagnosticsRoute
+  '/admin-kb20/login': typeof AdminKb20LoginRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/category/$slug': typeof CategorySlugRoute
   '/guide/$slug': typeof GuideSlugRoute
   '/quiz/$slug': typeof QuizSlugRoute
   '/topic/$slug': typeof TopicSlugRoute
-  '/admin/': typeof AdminIndexRoute
+  '/admin-kb20/': typeof AdminKb20IndexRoute
   '/blog/': typeof BlogIndexRoute
-  '/admin/questions/$topic': typeof AdminQuestionsTopicRoute
-  '/admin/questions/': typeof AdminQuestionsIndexRoute
+  '/admin-kb20/questions/$topic': typeof AdminKb20QuestionsTopicRoute
+  '/admin-kb20/questions/': typeof AdminKb20QuestionsIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -379,17 +379,17 @@ export interface FileRouteTypes {
     | '/sitemap'
     | '/sitemap.xml'
     | '/terms'
-    | '/admin/diagnostics'
-    | '/admin/login'
+    | '/admin-kb20/diagnostics'
+    | '/admin-kb20/login'
     | '/blog/$slug'
     | '/category/$slug'
     | '/guide/$slug'
     | '/quiz/$slug'
     | '/topic/$slug'
-    | '/admin/'
+    | '/admin-kb20/'
     | '/blog/'
-    | '/admin/questions/$topic'
-    | '/admin/questions/'
+    | '/admin-kb20/questions/$topic'
+    | '/admin-kb20/questions/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -417,17 +417,17 @@ export interface FileRouteTypes {
     | '/sitemap'
     | '/sitemap.xml'
     | '/terms'
-    | '/admin/diagnostics'
-    | '/admin/login'
+    | '/admin-kb20/diagnostics'
+    | '/admin-kb20/login'
     | '/blog/$slug'
     | '/category/$slug'
     | '/guide/$slug'
     | '/quiz/$slug'
     | '/topic/$slug'
-    | '/admin'
+    | '/admin-kb20'
     | '/blog'
-    | '/admin/questions/$topic'
-    | '/admin/questions'
+    | '/admin-kb20/questions/$topic'
+    | '/admin-kb20/questions'
   id:
     | '__root__'
     | '/'
@@ -456,17 +456,17 @@ export interface FileRouteTypes {
     | '/sitemap'
     | '/sitemap.xml'
     | '/terms'
-    | '/admin/diagnostics'
-    | '/admin/login'
+    | '/admin-kb20/diagnostics'
+    | '/admin-kb20/login'
     | '/blog/$slug'
     | '/category/$slug'
     | '/guide/$slug'
     | '/quiz/$slug'
     | '/topic/$slug'
-    | '/admin/'
+    | '/admin-kb20/'
     | '/blog/'
-    | '/admin/questions/$topic'
-    | '/admin/questions/'
+    | '/admin-kb20/questions/$topic'
+    | '/admin-kb20/questions/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -496,15 +496,15 @@ export interface RootRouteChildren {
   SitemapRoute: typeof SitemapRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   TermsRoute: typeof TermsRoute
-  AdminDiagnosticsRoute: typeof AdminDiagnosticsRoute
-  AdminLoginRoute: typeof AdminLoginRoute
+  AdminKb20DiagnosticsRoute: typeof AdminKb20DiagnosticsRoute
+  AdminKb20LoginRoute: typeof AdminKb20LoginRoute
   CategorySlugRoute: typeof CategorySlugRoute
   GuideSlugRoute: typeof GuideSlugRoute
   QuizSlugRoute: typeof QuizSlugRoute
   TopicSlugRoute: typeof TopicSlugRoute
-  AdminIndexRoute: typeof AdminIndexRoute
-  AdminQuestionsTopicRoute: typeof AdminQuestionsTopicRoute
-  AdminQuestionsIndexRoute: typeof AdminQuestionsIndexRoute
+  AdminKb20IndexRoute: typeof AdminKb20IndexRoute
+  AdminKb20QuestionsTopicRoute: typeof AdminKb20QuestionsTopicRoute
+  AdminKb20QuestionsIndexRoute: typeof AdminKb20QuestionsIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -698,11 +698,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogIndexRouteImport
       parentRoute: typeof BlogRoute
     }
-    '/admin/': {
-      id: '/admin/'
-      path: '/admin'
-      fullPath: '/admin/'
-      preLoaderRoute: typeof AdminIndexRouteImport
+    '/admin-kb20/': {
+      id: '/admin-kb20/'
+      path: '/admin-kb20'
+      fullPath: '/admin-kb20/'
+      preLoaderRoute: typeof AdminKb20IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/topic/$slug': {
@@ -740,32 +740,32 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogSlugRouteImport
       parentRoute: typeof BlogRoute
     }
-    '/admin/login': {
-      id: '/admin/login'
-      path: '/admin/login'
-      fullPath: '/admin/login'
-      preLoaderRoute: typeof AdminLoginRouteImport
+    '/admin-kb20/login': {
+      id: '/admin-kb20/login'
+      path: '/admin-kb20/login'
+      fullPath: '/admin-kb20/login'
+      preLoaderRoute: typeof AdminKb20LoginRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/admin/diagnostics': {
-      id: '/admin/diagnostics'
-      path: '/admin/diagnostics'
-      fullPath: '/admin/diagnostics'
-      preLoaderRoute: typeof AdminDiagnosticsRouteImport
+    '/admin-kb20/diagnostics': {
+      id: '/admin-kb20/diagnostics'
+      path: '/admin-kb20/diagnostics'
+      fullPath: '/admin-kb20/diagnostics'
+      preLoaderRoute: typeof AdminKb20DiagnosticsRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/admin/questions/': {
-      id: '/admin/questions/'
-      path: '/admin/questions'
-      fullPath: '/admin/questions/'
-      preLoaderRoute: typeof AdminQuestionsIndexRouteImport
+    '/admin-kb20/questions/': {
+      id: '/admin-kb20/questions/'
+      path: '/admin-kb20/questions'
+      fullPath: '/admin-kb20/questions/'
+      preLoaderRoute: typeof AdminKb20QuestionsIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/admin/questions/$topic': {
-      id: '/admin/questions/$topic'
-      path: '/admin/questions/$topic'
-      fullPath: '/admin/questions/$topic'
-      preLoaderRoute: typeof AdminQuestionsTopicRouteImport
+    '/admin-kb20/questions/$topic': {
+      id: '/admin-kb20/questions/$topic'
+      path: '/admin-kb20/questions/$topic'
+      fullPath: '/admin-kb20/questions/$topic'
+      preLoaderRoute: typeof AdminKb20QuestionsTopicRouteImport
       parentRoute: typeof rootRouteImport
     }
   }
@@ -810,15 +810,15 @@ const rootRouteChildren: RootRouteChildren = {
   SitemapRoute: SitemapRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   TermsRoute: TermsRoute,
-  AdminDiagnosticsRoute: AdminDiagnosticsRoute,
-  AdminLoginRoute: AdminLoginRoute,
+  AdminKb20DiagnosticsRoute: AdminKb20DiagnosticsRoute,
+  AdminKb20LoginRoute: AdminKb20LoginRoute,
   CategorySlugRoute: CategorySlugRoute,
   GuideSlugRoute: GuideSlugRoute,
   QuizSlugRoute: QuizSlugRoute,
   TopicSlugRoute: TopicSlugRoute,
-  AdminIndexRoute: AdminIndexRoute,
-  AdminQuestionsTopicRoute: AdminQuestionsTopicRoute,
-  AdminQuestionsIndexRoute: AdminQuestionsIndexRoute,
+  AdminKb20IndexRoute: AdminKb20IndexRoute,
+  AdminKb20QuestionsTopicRoute: AdminKb20QuestionsTopicRoute,
+  AdminKb20QuestionsIndexRoute: AdminKb20QuestionsIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

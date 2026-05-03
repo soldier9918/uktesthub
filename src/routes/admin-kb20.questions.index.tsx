@@ -12,7 +12,7 @@ const topics: TopicEntry[] = listAllTopics()
   }))
   .sort((a, b) => a.topic.localeCompare(b.topic));
 
-export const Route = createFileRoute("/admin/questions/")({
+export const Route = createFileRoute("/admin-kb20/questions/")({
   head: () => ({ meta: [{ title: "Question Bank Browser — UK Test Hub" }] }),
   component: () => (
     <AdminGate>
@@ -32,7 +32,7 @@ function TopicsIndex() {
         {topics.map((t) => (
           <li key={t.topic}>
             <Link
-              to="/admin/questions/$topic"
+              to="/admin-kb20/questions/$topic"
               params={{ topic: t.topic }}
               className="block rounded-xl border border-border bg-card p-4 hover:border-coral/40 hover:shadow-soft"
             >

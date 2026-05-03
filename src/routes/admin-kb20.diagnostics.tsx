@@ -20,7 +20,7 @@ function fileExists(path: string, publicImages: Set<string>): boolean {
   return false;
 }
 
-export const Route = createFileRoute("/admin/diagnostics")({
+export const Route = createFileRoute("/admin-kb20/diagnostics")({
   head: () => ({ meta: [{ title: "Diagnostics — Admin — UK Test Hub" }] }),
   component: () => (
     <AdminGate>

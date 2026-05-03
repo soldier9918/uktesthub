@@ -12,7 +12,7 @@ export const Route = createFileRoute("/admin-kb20/")({
         </p>
         <div className="mt-6 grid gap-3 sm:grid-cols-2">
           <Link
-            to="/admin/diagnostics"
+            to="/admin-kb20/diagnostics"
             className="rounded-xl border border-border bg-card p-5 hover:border-coral/40 hover:shadow-soft"
           >
             <div className="font-semibold">Diagnostics panel</div>
@@ -21,7 +21,7 @@ export const Route = createFileRoute("/admin-kb20/")({
             </p>
           </Link>
           <Link
-            to="/admin/questions"
+            to="/admin-kb20/questions"
             className="rounded-xl border border-border bg-card p-5 hover:border-coral/40 hover:shadow-soft"
           >
             <div className="font-semibold">Edit questions & images</div>
