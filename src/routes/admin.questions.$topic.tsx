@@ -38,15 +38,7 @@ type V1 = {
 };
 type AnyFile = V1 | V2;
 
-const modules = import.meta.glob<AnyFile>("../data/mocks/*.json", {
-  eager: true,
-  import: "default",
-});
-
-const byTopic = new Map<string, AnyFile>();
-for (const f of Object.values(modules)) {
-  if (f && (f as AnyFile).topic) byTopic.set((f as AnyFile).topic, f);
-}
+import { loadTopicFileForAdmin } from "@/data/mocks";
 
 type FlatQuestion = {
   id: string;
