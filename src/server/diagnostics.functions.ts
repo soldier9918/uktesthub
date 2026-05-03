@@ -11,7 +11,7 @@ export type RuntimeLog = {
 
 export const getRecentServerLogs = createServerFn({ method: "GET" })
   .middleware([requireSupabaseAuth])
-  .handler(async ({ context }): Promise<{ logs: RuntimeLog[]; error: string | null }> => {
+  .handler(async ({ context }) => {
     const { supabase, userId } = context;
     const { data: isAdmin } = await supabase.rpc("has_role", {
       _user_id: userId,
