@@ -168,9 +168,9 @@ const AdminQuestionsIndexRoute = AdminQuestionsIndexRouteImport.update({
   getParentRoute: () => rootRouteImport,
 } as any)
 const AdminQuestionsTopicRoute = AdminQuestionsTopicRouteImport.update({
-  id: '/$topic',
-  path: '/$topic',
-  getParentRoute: () => AdminQuestionsRoute,
+  id: '/admin/questions/$topic',
+  path: '/admin/questions/$topic',
+  getParentRoute: () => rootRouteImport,
 } as any)
 
 export interface FileRoutesByFullPath {
@@ -373,6 +373,7 @@ export interface RootRouteChildren {
   GuideSlugRoute: typeof GuideSlugRoute
   QuizSlugRoute: typeof QuizSlugRoute
   TopicSlugRoute: typeof TopicSlugRoute
+  AdminQuestionsTopicRoute: typeof AdminQuestionsTopicRoute
   AdminQuestionsIndexRoute: typeof AdminQuestionsIndexRoute
 }
 
@@ -562,10 +563,10 @@ declare module '@tanstack/react-router' {
     }
     '/admin/questions/$topic': {
       id: '/admin/questions/$topic'
-      path: '/$topic'
+      path: '/admin/questions/$topic'
       fullPath: '/admin/questions/$topic'
       preLoaderRoute: typeof AdminQuestionsTopicRouteImport
-      parentRoute: typeof AdminQuestionsRoute
+      parentRoute: typeof rootRouteImport
     }
   }
 }
@@ -606,6 +607,7 @@ const rootRouteChildren: RootRouteChildren = {
   GuideSlugRoute: GuideSlugRoute,
   QuizSlugRoute: QuizSlugRoute,
   TopicSlugRoute: TopicSlugRoute,
+  AdminQuestionsTopicRoute: AdminQuestionsTopicRoute,
   AdminQuestionsIndexRoute: AdminQuestionsIndexRoute,
 }
 export const routeTree = rootRouteImport
