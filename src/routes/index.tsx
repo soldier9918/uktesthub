@@ -171,7 +171,7 @@ function HomePage() {
 
             <ul className="mt-10 flex flex-wrap gap-x-7 gap-y-3 text-sm text-navy-foreground/85">
               {[
-                { icon: CheckCircle2, label: "1000+ Questions" },
+                { icon: CheckCircle2, label: "96,000+ Questions" },
                 { icon: FileCheck, label: "Real Exam Format" },
                 { icon: Timer, label: "Instant Results" },
                 { icon: CalendarCheck, label: "Updated for 2026" },
