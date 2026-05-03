@@ -106,7 +106,7 @@ function CategoryPage() {
             </div>
 
             <div className="mt-6 grid grid-cols-1 gap-5 md:grid-cols-2">
-              {category.topics.flatMap((t) => {
+              {category.topics.flatMap((t: { slug: string; title: string }) => {
                 const slots = listMockSlots(t.slug);
                 const available = slots.filter((s) => s.available).length;
                 return [
@@ -279,7 +279,7 @@ function CategoryPage() {
                   Ready to start?
                 </p>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground md:text-base">
-                  {category.topics.slice(0, 3).map((t, i) => (
+                  {category.topics.slice(0, 3).map((t: { slug: string; title: string }, i: number) => (
                     <span key={t.slug}>
                       <Link
                         to="/topic/$slug"

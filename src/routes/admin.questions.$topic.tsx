@@ -5,6 +5,9 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { AdminGate } from "@/components/AdminGate";
+import { QuestionEditDialog } from "@/components/QuestionEditDialog";
+import { useOverrides, invalidateOverrides } from "@/lib/overrides";
 
 type RawQuestion = Record<string, unknown> & {
   id?: string;
@@ -141,7 +144,11 @@ export const Route = createFileRoute("/admin/questions/$topic")({
   head: ({ params }) => ({
     meta: [{ title: `Questions — ${params.topic} — UK Test Hub` }],
   }),
-  component: QuestionsBrowser,
+  component: () => (
+    <AdminGate>
+      <QuestionsBrowser />
+    </AdminGate>
+  ),
   notFoundComponent: () => (
     <div className="p-8">
       Topic not found.{" "}
@@ -160,16 +167,20 @@ function QuestionsBrowser() {
   const [type, setType] = useState<string>("all");
   const [imageFilter, setImageFilter] = useState<"all" | "with" | "without">("all");
   const [page, setPage] = useState(1);
+  const [editing, setEditing] = useState<FlatQuestion | null>(null);
+  const [bump, setBump] = useState(0);
+  const overrides = useOverrides();
+  void bump;
 
   const types = useMemo(() => {
     const s = new Set<string>();
-    questions.forEach((q) => s.add(q.type));
+    (questions as FlatQuestion[]).forEach((q: FlatQuestion) => s.add(q.type));
     return ["all", ...Array.from(s).sort()];
   }, [questions]);
 
-  const filtered = useMemo(() => {
+  const filtered = useMemo<FlatQuestion[]>(() => {
     const s = search.trim().toLowerCase();
-    return questions.filter((q) => {
+    return (questions as FlatQuestion[]).filter((q: FlatQuestion) => {
       if (type !== "all" && q.type !== type) return false;
       if (imageFilter === "with" && !q.image) return false;
       if (imageFilter === "without" && q.image) return false;
@@ -189,8 +200,8 @@ function QuestionsBrowser() {
   const visible = filtered.slice((pageSafe - 1) * PAGE_SIZE, pageSafe * PAGE_SIZE);
 
   const stats = useMemo(() => {
-    const withImg = questions.filter((q) => q.image).length;
-    const orphan = questions.filter((q) => q.usedInMocks.length === 0).length;
+    const withImg = (questions as FlatQuestion[]).filter((q: FlatQuestion) => q.image).length;
+    const orphan = (questions as FlatQuestion[]).filter((q: FlatQuestion) => q.usedInMocks.length === 0).length;
     return {
       total: questions.length,
       withImg,
@@ -261,7 +272,7 @@ function QuestionsBrowser() {
         </div>
 
         <ol className="mt-4 space-y-3">
-          {visible.map((q, idx) => (
+          {visible.map((q: FlatQuestion, idx: number) => (
             <li
               key={q.id}
               className="rounded-xl border border-border bg-card p-4"
@@ -276,6 +287,9 @@ function QuestionsBrowser() {
                     <code className="text-[10px] text-muted-foreground">
                       {q.id}
                     </code>
+                    {overrides?.has(`${topic}::${q.id}`) && (
+                      <Badge className="bg-emerald-600 text-white">edited</Badge>
+                    )}
                     {q.usedInMocks.length > 0 ? (
                       <span className="text-[10px] text-muted-foreground">
                         Mocks: {q.usedInMocks.join(", ")}
@@ -283,11 +297,19 @@ function QuestionsBrowser() {
                     ) : (
                       <Badge variant="secondary">unused</Badge>
                     )}
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      className="ml-auto h-7"
+                      onClick={() => setEditing(q)}
+                    >
+                      Edit
+                    </Button>
                   </div>
                   <p className="mt-2 font-medium">{q.question}</p>
                   {q.options && (
                     <ul className="mt-2 space-y-1 text-sm">
-                      {q.options.map((opt, i) => {
+                      {q.options.map((opt: string, i: number) => {
                         const isCorrect =
                           (typeof q.raw.correctAnswer === "number" &&
                             q.raw.correctAnswer === i) ||
@@ -369,6 +391,25 @@ function QuestionsBrowser() {
           </div>
         )}
       </main>
+      {editing && (
+        <QuestionEditDialog
+          topic={topic}
+          questionId={editing.id}
+          defaults={{
+            question: editing.question,
+            options: editing.options,
+            correctAnswer: editing.raw.correctAnswer as number | undefined,
+            explanation: editing.explanation,
+            image: editing.image,
+            imageAlt: editing.imageAlt,
+          }}
+          onClose={() => setEditing(null)}
+          onSaved={() => {
+            invalidateOverrides();
+            setBump((n) => n + 1);
+          }}
+        />
+      )}
       <SiteFooter />
     </div>
   );

@@ -29,11 +29,14 @@ import { Route as AccessibilityRouteImport } from './routes/accessibility'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as BlogIndexRouteImport } from './routes/blog.index'
+import { Route as AdminIndexRouteImport } from './routes/admin.index'
 import { Route as TopicSlugRouteImport } from './routes/topic.$slug'
 import { Route as QuizSlugRouteImport } from './routes/quiz.$slug'
 import { Route as GuideSlugRouteImport } from './routes/guide.$slug'
 import { Route as CategorySlugRouteImport } from './routes/category.$slug'
 import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
+import { Route as AdminLoginRouteImport } from './routes/admin.login'
+import { Route as AdminDiagnosticsRouteImport } from './routes/admin.diagnostics'
 import { Route as AdminQuestionsIndexRouteImport } from './routes/admin.questions.index'
 import { Route as AdminQuestionsTopicRouteImport } from './routes/admin.questions.$topic'
 
@@ -137,6 +140,11 @@ const BlogIndexRoute = BlogIndexRouteImport.update({
   path: '/',
   getParentRoute: () => BlogRoute,
 } as any)
+const AdminIndexRoute = AdminIndexRouteImport.update({
+  id: '/admin/',
+  path: '/admin/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const TopicSlugRoute = TopicSlugRouteImport.update({
   id: '/topic/$slug',
   path: '/topic/$slug',
@@ -161,6 +169,16 @@ const BlogSlugRoute = BlogSlugRouteImport.update({
   id: '/$slug',
   path: '/$slug',
   getParentRoute: () => BlogRoute,
+} as any)
+const AdminLoginRoute = AdminLoginRouteImport.update({
+  id: '/admin/login',
+  path: '/admin/login',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdminDiagnosticsRoute = AdminDiagnosticsRouteImport.update({
+  id: '/admin/diagnostics',
+  path: '/admin/diagnostics',
+  getParentRoute: () => rootRouteImport,
 } as any)
 const AdminQuestionsIndexRoute = AdminQuestionsIndexRouteImport.update({
   id: '/admin/questions/',
@@ -193,11 +211,14 @@ export interface FileRoutesByFullPath {
   '/sitemap': typeof SitemapRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms': typeof TermsRoute
+  '/admin/diagnostics': typeof AdminDiagnosticsRoute
+  '/admin/login': typeof AdminLoginRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/category/$slug': typeof CategorySlugRoute
   '/guide/$slug': typeof GuideSlugRoute
   '/quiz/$slug': typeof QuizSlugRoute
   '/topic/$slug': typeof TopicSlugRoute
+  '/admin/': typeof AdminIndexRoute
   '/blog/': typeof BlogIndexRoute
   '/admin/questions/$topic': typeof AdminQuestionsTopicRoute
   '/admin/questions/': typeof AdminQuestionsIndexRoute
@@ -221,11 +242,14 @@ export interface FileRoutesByTo {
   '/sitemap': typeof SitemapRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms': typeof TermsRoute
+  '/admin/diagnostics': typeof AdminDiagnosticsRoute
+  '/admin/login': typeof AdminLoginRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/category/$slug': typeof CategorySlugRoute
   '/guide/$slug': typeof GuideSlugRoute
   '/quiz/$slug': typeof QuizSlugRoute
   '/topic/$slug': typeof TopicSlugRoute
+  '/admin': typeof AdminIndexRoute
   '/blog': typeof BlogIndexRoute
   '/admin/questions/$topic': typeof AdminQuestionsTopicRoute
   '/admin/questions': typeof AdminQuestionsIndexRoute
@@ -251,11 +275,14 @@ export interface FileRoutesById {
   '/sitemap': typeof SitemapRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms': typeof TermsRoute
+  '/admin/diagnostics': typeof AdminDiagnosticsRoute
+  '/admin/login': typeof AdminLoginRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/category/$slug': typeof CategorySlugRoute
   '/guide/$slug': typeof GuideSlugRoute
   '/quiz/$slug': typeof QuizSlugRoute
   '/topic/$slug': typeof TopicSlugRoute
+  '/admin/': typeof AdminIndexRoute
   '/blog/': typeof BlogIndexRoute
   '/admin/questions/$topic': typeof AdminQuestionsTopicRoute
   '/admin/questions/': typeof AdminQuestionsIndexRoute
@@ -282,11 +309,14 @@ export interface FileRouteTypes {
     | '/sitemap'
     | '/sitemap.xml'
     | '/terms'
+    | '/admin/diagnostics'
+    | '/admin/login'
     | '/blog/$slug'
     | '/category/$slug'
     | '/guide/$slug'
     | '/quiz/$slug'
     | '/topic/$slug'
+    | '/admin/'
     | '/blog/'
     | '/admin/questions/$topic'
     | '/admin/questions/'
@@ -310,11 +340,14 @@ export interface FileRouteTypes {
     | '/sitemap'
     | '/sitemap.xml'
     | '/terms'
+    | '/admin/diagnostics'
+    | '/admin/login'
     | '/blog/$slug'
     | '/category/$slug'
     | '/guide/$slug'
     | '/quiz/$slug'
     | '/topic/$slug'
+    | '/admin'
     | '/blog'
     | '/admin/questions/$topic'
     | '/admin/questions'
@@ -339,11 +372,14 @@ export interface FileRouteTypes {
     | '/sitemap'
     | '/sitemap.xml'
     | '/terms'
+    | '/admin/diagnostics'
+    | '/admin/login'
     | '/blog/$slug'
     | '/category/$slug'
     | '/guide/$slug'
     | '/quiz/$slug'
     | '/topic/$slug'
+    | '/admin/'
     | '/blog/'
     | '/admin/questions/$topic'
     | '/admin/questions/'
@@ -369,10 +405,13 @@ export interface RootRouteChildren {
   SitemapRoute: typeof SitemapRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   TermsRoute: typeof TermsRoute
+  AdminDiagnosticsRoute: typeof AdminDiagnosticsRoute
+  AdminLoginRoute: typeof AdminLoginRoute
   CategorySlugRoute: typeof CategorySlugRoute
   GuideSlugRoute: typeof GuideSlugRoute
   QuizSlugRoute: typeof QuizSlugRoute
   TopicSlugRoute: typeof TopicSlugRoute
+  AdminIndexRoute: typeof AdminIndexRoute
   AdminQuestionsTopicRoute: typeof AdminQuestionsTopicRoute
   AdminQuestionsIndexRoute: typeof AdminQuestionsIndexRoute
 }
@@ -519,6 +558,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogIndexRouteImport
       parentRoute: typeof BlogRoute
     }
+    '/admin/': {
+      id: '/admin/'
+      path: '/admin'
+      fullPath: '/admin/'
+      preLoaderRoute: typeof AdminIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/topic/$slug': {
       id: '/topic/$slug'
       path: '/topic/$slug'
@@ -553,6 +599,20 @@ declare module '@tanstack/react-router' {
       fullPath: '/blog/$slug'
       preLoaderRoute: typeof BlogSlugRouteImport
       parentRoute: typeof BlogRoute
+    }
+    '/admin/login': {
+      id: '/admin/login'
+      path: '/admin/login'
+      fullPath: '/admin/login'
+      preLoaderRoute: typeof AdminLoginRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/admin/diagnostics': {
+      id: '/admin/diagnostics'
+      path: '/admin/diagnostics'
+      fullPath: '/admin/diagnostics'
+      preLoaderRoute: typeof AdminDiagnosticsRouteImport
+      parentRoute: typeof rootRouteImport
     }
     '/admin/questions/': {
       id: '/admin/questions/'
@@ -603,22 +663,16 @@ const rootRouteChildren: RootRouteChildren = {
   SitemapRoute: SitemapRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   TermsRoute: TermsRoute,
+  AdminDiagnosticsRoute: AdminDiagnosticsRoute,
+  AdminLoginRoute: AdminLoginRoute,
   CategorySlugRoute: CategorySlugRoute,
   GuideSlugRoute: GuideSlugRoute,
   QuizSlugRoute: QuizSlugRoute,
   TopicSlugRoute: TopicSlugRoute,
+  AdminIndexRoute: AdminIndexRoute,
   AdminQuestionsTopicRoute: AdminQuestionsTopicRoute,
   AdminQuestionsIndexRoute: AdminQuestionsIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { createStart } from '@tanstack/react-start'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-  }
-}
