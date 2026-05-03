@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Build-time only: scan public/mocks/*.json and emit a tiny metadata manifest
 // plus per-topic diagnostics. The full question files stay as static assets.
-import { readdirSync, readFileSync, writeFileSync, mkdirSync } from "node:fs";
+import { existsSync, readdirSync, readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -96,7 +96,7 @@ function collectImages(dir) {
     }
   }
 }
-collectImages(imageRoot);
+if (existsSync(imageRoot)) collectImages(imageRoot);
 writeFileSync(outImageInventory, JSON.stringify(imageInventory.sort()));
 const totalMocks = Object.values(manifest).reduce((n, t) => n + t.mocks.length, 0);
 console.log(
