@@ -18,7 +18,7 @@ import { AdSlot } from "@/components/AdSlot";
 import { CategoryIcon, accentClasses } from "@/components/CategoryIcon";
 import { UnionJack } from "@/components/UnionJack";
 import { categories } from "@/data/categories";
-import { getDailyQuiz, getQuiz } from "@/data/quizzes";
+import { getDailyQuiz, getQuizMeta } from "@/data/quizzes";
 import { blogPosts } from "@/data/blog";
 // (TestBadge removed)
 
