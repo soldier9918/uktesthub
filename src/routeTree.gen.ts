@@ -12,19 +12,26 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as TermsRouteImport } from './routes/terms'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as SitemapRouteImport } from './routes/sitemap'
+import { Route as SignupRouteImport } from './routes/signup'
+import { Route as SigninRouteImport } from './routes/signin'
 import { Route as SeruTflRouteImport } from './routes/seru-tfl'
 import { Route as RobotsDottxtRouteImport } from './routes/robots[.]txt'
+import { Route as ResetPasswordRouteImport } from './routes/reset-password'
 import { Route as ReportRouteImport } from './routes/report'
 import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as HelpRouteImport } from './routes/help'
+import { Route as ForgotPasswordRouteImport } from './routes/forgot-password'
 import { Route as FeedbackRouteImport } from './routes/feedback'
 import { Route as FaqRouteImport } from './routes/faq'
 import { Route as ExamUpdatesRouteImport } from './routes/exam-updates'
 import { Route as DisclaimerRouteImport } from './routes/disclaimer'
+import { Route as DashboardRouteImport } from './routes/dashboard'
 import { Route as CookiesRouteImport } from './routes/cookies'
 import { Route as ContactRouteImport } from './routes/contact'
+import { Route as BookmarksRouteImport } from './routes/bookmarks'
 import { Route as BlogRouteImport } from './routes/blog'
 import { Route as AllTestsRouteImport } from './routes/all-tests'
+import { Route as AccountRouteImport } from './routes/account'
 import { Route as AccessibilityRouteImport } from './routes/accessibility'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
@@ -55,6 +62,16 @@ const SitemapRoute = SitemapRouteImport.update({
   path: '/sitemap',
   getParentRoute: () => rootRouteImport,
 } as any)
+const SignupRoute = SignupRouteImport.update({
+  id: '/signup',
+  path: '/signup',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SigninRoute = SigninRouteImport.update({
+  id: '/signin',
+  path: '/signin',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const SeruTflRoute = SeruTflRouteImport.update({
   id: '/seru-tfl',
   path: '/seru-tfl',
@@ -63,6 +80,11 @@ const SeruTflRoute = SeruTflRouteImport.update({
 const RobotsDottxtRoute = RobotsDottxtRouteImport.update({
   id: '/robots.txt',
   path: '/robots.txt',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ResetPasswordRoute = ResetPasswordRouteImport.update({
+  id: '/reset-password',
+  path: '/reset-password',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ReportRoute = ReportRouteImport.update({
@@ -78,6 +100,11 @@ const PrivacyRoute = PrivacyRouteImport.update({
 const HelpRoute = HelpRouteImport.update({
   id: '/help',
   path: '/help',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ForgotPasswordRoute = ForgotPasswordRouteImport.update({
+  id: '/forgot-password',
+  path: '/forgot-password',
   getParentRoute: () => rootRouteImport,
 } as any)
 const FeedbackRoute = FeedbackRouteImport.update({
@@ -100,6 +127,11 @@ const DisclaimerRoute = DisclaimerRouteImport.update({
   path: '/disclaimer',
   getParentRoute: () => rootRouteImport,
 } as any)
+const DashboardRoute = DashboardRouteImport.update({
+  id: '/dashboard',
+  path: '/dashboard',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const CookiesRoute = CookiesRouteImport.update({
   id: '/cookies',
   path: '/cookies',
@@ -110,6 +142,11 @@ const ContactRoute = ContactRouteImport.update({
   path: '/contact',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BookmarksRoute = BookmarksRouteImport.update({
+  id: '/bookmarks',
+  path: '/bookmarks',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const BlogRoute = BlogRouteImport.update({
   id: '/blog',
   path: '/blog',
@@ -118,6 +155,11 @@ const BlogRoute = BlogRouteImport.update({
 const AllTestsRoute = AllTestsRouteImport.update({
   id: '/all-tests',
   path: '/all-tests',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AccountRoute = AccountRouteImport.update({
+  id: '/account',
+  path: '/account',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AccessibilityRoute = AccessibilityRouteImport.update({
@@ -195,19 +237,26 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/accessibility': typeof AccessibilityRoute
+  '/account': typeof AccountRoute
   '/all-tests': typeof AllTestsRoute
   '/blog': typeof BlogRouteWithChildren
+  '/bookmarks': typeof BookmarksRoute
   '/contact': typeof ContactRoute
   '/cookies': typeof CookiesRoute
+  '/dashboard': typeof DashboardRoute
   '/disclaimer': typeof DisclaimerRoute
   '/exam-updates': typeof ExamUpdatesRoute
   '/faq': typeof FaqRoute
   '/feedback': typeof FeedbackRoute
+  '/forgot-password': typeof ForgotPasswordRoute
   '/help': typeof HelpRoute
   '/privacy': typeof PrivacyRoute
   '/report': typeof ReportRoute
+  '/reset-password': typeof ResetPasswordRoute
   '/robots.txt': typeof RobotsDottxtRoute
   '/seru-tfl': typeof SeruTflRoute
+  '/signin': typeof SigninRoute
+  '/signup': typeof SignupRoute
   '/sitemap': typeof SitemapRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms': typeof TermsRoute
@@ -227,18 +276,25 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/accessibility': typeof AccessibilityRoute
+  '/account': typeof AccountRoute
   '/all-tests': typeof AllTestsRoute
+  '/bookmarks': typeof BookmarksRoute
   '/contact': typeof ContactRoute
   '/cookies': typeof CookiesRoute
+  '/dashboard': typeof DashboardRoute
   '/disclaimer': typeof DisclaimerRoute
   '/exam-updates': typeof ExamUpdatesRoute
   '/faq': typeof FaqRoute
   '/feedback': typeof FeedbackRoute
+  '/forgot-password': typeof ForgotPasswordRoute
   '/help': typeof HelpRoute
   '/privacy': typeof PrivacyRoute
   '/report': typeof ReportRoute
+  '/reset-password': typeof ResetPasswordRoute
   '/robots.txt': typeof RobotsDottxtRoute
   '/seru-tfl': typeof SeruTflRoute
+  '/signin': typeof SigninRoute
+  '/signup': typeof SignupRoute
   '/sitemap': typeof SitemapRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms': typeof TermsRoute
@@ -259,19 +315,26 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/accessibility': typeof AccessibilityRoute
+  '/account': typeof AccountRoute
   '/all-tests': typeof AllTestsRoute
   '/blog': typeof BlogRouteWithChildren
+  '/bookmarks': typeof BookmarksRoute
   '/contact': typeof ContactRoute
   '/cookies': typeof CookiesRoute
+  '/dashboard': typeof DashboardRoute
   '/disclaimer': typeof DisclaimerRoute
   '/exam-updates': typeof ExamUpdatesRoute
   '/faq': typeof FaqRoute
   '/feedback': typeof FeedbackRoute
+  '/forgot-password': typeof ForgotPasswordRoute
   '/help': typeof HelpRoute
   '/privacy': typeof PrivacyRoute
   '/report': typeof ReportRoute
+  '/reset-password': typeof ResetPasswordRoute
   '/robots.txt': typeof RobotsDottxtRoute
   '/seru-tfl': typeof SeruTflRoute
+  '/signin': typeof SigninRoute
+  '/signup': typeof SignupRoute
   '/sitemap': typeof SitemapRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms': typeof TermsRoute
@@ -293,19 +356,26 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/accessibility'
+    | '/account'
     | '/all-tests'
     | '/blog'
+    | '/bookmarks'
     | '/contact'
     | '/cookies'
+    | '/dashboard'
     | '/disclaimer'
     | '/exam-updates'
     | '/faq'
     | '/feedback'
+    | '/forgot-password'
     | '/help'
     | '/privacy'
     | '/report'
+    | '/reset-password'
     | '/robots.txt'
     | '/seru-tfl'
+    | '/signin'
+    | '/signup'
     | '/sitemap'
     | '/sitemap.xml'
     | '/terms'
@@ -325,18 +395,25 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/accessibility'
+    | '/account'
     | '/all-tests'
+    | '/bookmarks'
     | '/contact'
     | '/cookies'
+    | '/dashboard'
     | '/disclaimer'
     | '/exam-updates'
     | '/faq'
     | '/feedback'
+    | '/forgot-password'
     | '/help'
     | '/privacy'
     | '/report'
+    | '/reset-password'
     | '/robots.txt'
     | '/seru-tfl'
+    | '/signin'
+    | '/signup'
     | '/sitemap'
     | '/sitemap.xml'
     | '/terms'
@@ -356,19 +433,26 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/accessibility'
+    | '/account'
     | '/all-tests'
     | '/blog'
+    | '/bookmarks'
     | '/contact'
     | '/cookies'
+    | '/dashboard'
     | '/disclaimer'
     | '/exam-updates'
     | '/faq'
     | '/feedback'
+    | '/forgot-password'
     | '/help'
     | '/privacy'
     | '/report'
+    | '/reset-password'
     | '/robots.txt'
     | '/seru-tfl'
+    | '/signin'
+    | '/signup'
     | '/sitemap'
     | '/sitemap.xml'
     | '/terms'
@@ -389,19 +473,26 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
   AccessibilityRoute: typeof AccessibilityRoute
+  AccountRoute: typeof AccountRoute
   AllTestsRoute: typeof AllTestsRoute
   BlogRoute: typeof BlogRouteWithChildren
+  BookmarksRoute: typeof BookmarksRoute
   ContactRoute: typeof ContactRoute
   CookiesRoute: typeof CookiesRoute
+  DashboardRoute: typeof DashboardRoute
   DisclaimerRoute: typeof DisclaimerRoute
   ExamUpdatesRoute: typeof ExamUpdatesRoute
   FaqRoute: typeof FaqRoute
   FeedbackRoute: typeof FeedbackRoute
+  ForgotPasswordRoute: typeof ForgotPasswordRoute
   HelpRoute: typeof HelpRoute
   PrivacyRoute: typeof PrivacyRoute
   ReportRoute: typeof ReportRoute
+  ResetPasswordRoute: typeof ResetPasswordRoute
   RobotsDottxtRoute: typeof RobotsDottxtRoute
   SeruTflRoute: typeof SeruTflRoute
+  SigninRoute: typeof SigninRoute
+  SignupRoute: typeof SignupRoute
   SitemapRoute: typeof SitemapRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   TermsRoute: typeof TermsRoute
@@ -439,6 +530,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SitemapRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/signup': {
+      id: '/signup'
+      path: '/signup'
+      fullPath: '/signup'
+      preLoaderRoute: typeof SignupRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/signin': {
+      id: '/signin'
+      path: '/signin'
+      fullPath: '/signin'
+      preLoaderRoute: typeof SigninRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/seru-tfl': {
       id: '/seru-tfl'
       path: '/seru-tfl'
@@ -451,6 +556,13 @@ declare module '@tanstack/react-router' {
       path: '/robots.txt'
       fullPath: '/robots.txt'
       preLoaderRoute: typeof RobotsDottxtRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/reset-password': {
+      id: '/reset-password'
+      path: '/reset-password'
+      fullPath: '/reset-password'
+      preLoaderRoute: typeof ResetPasswordRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/report': {
@@ -472,6 +584,13 @@ declare module '@tanstack/react-router' {
       path: '/help'
       fullPath: '/help'
       preLoaderRoute: typeof HelpRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/forgot-password': {
+      id: '/forgot-password'
+      path: '/forgot-password'
+      fullPath: '/forgot-password'
+      preLoaderRoute: typeof ForgotPasswordRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/feedback': {
@@ -502,6 +621,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof DisclaimerRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/dashboard': {
+      id: '/dashboard'
+      path: '/dashboard'
+      fullPath: '/dashboard'
+      preLoaderRoute: typeof DashboardRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/cookies': {
       id: '/cookies'
       path: '/cookies'
@@ -516,6 +642,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ContactRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/bookmarks': {
+      id: '/bookmarks'
+      path: '/bookmarks'
+      fullPath: '/bookmarks'
+      preLoaderRoute: typeof BookmarksRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/blog': {
       id: '/blog'
       path: '/blog'
@@ -528,6 +661,13 @@ declare module '@tanstack/react-router' {
       path: '/all-tests'
       fullPath: '/all-tests'
       preLoaderRoute: typeof AllTestsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/account': {
+      id: '/account'
+      path: '/account'
+      fullPath: '/account'
+      preLoaderRoute: typeof AccountRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/accessibility': {
@@ -647,19 +787,26 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
   AccessibilityRoute: AccessibilityRoute,
+  AccountRoute: AccountRoute,
   AllTestsRoute: AllTestsRoute,
   BlogRoute: BlogRouteWithChildren,
+  BookmarksRoute: BookmarksRoute,
   ContactRoute: ContactRoute,
   CookiesRoute: CookiesRoute,
+  DashboardRoute: DashboardRoute,
   DisclaimerRoute: DisclaimerRoute,
   ExamUpdatesRoute: ExamUpdatesRoute,
   FaqRoute: FaqRoute,
   FeedbackRoute: FeedbackRoute,
+  ForgotPasswordRoute: ForgotPasswordRoute,
   HelpRoute: HelpRoute,
   PrivacyRoute: PrivacyRoute,
   ReportRoute: ReportRoute,
+  ResetPasswordRoute: ResetPasswordRoute,
   RobotsDottxtRoute: RobotsDottxtRoute,
   SeruTflRoute: SeruTflRoute,
+  SigninRoute: SigninRoute,
+  SignupRoute: SignupRoute,
   SitemapRoute: SitemapRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   TermsRoute: TermsRoute,
@@ -676,12 +823,3 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { createStart } from '@tanstack/react-start'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-  }
-}

@@ -24,6 +24,8 @@ import type {
 import { AdSlot } from "./AdSlot";
 import { RoadSign } from "./RoadSign";
 import { useOverrides, applyOverrides } from "@/lib/overrides";
+import { supabase } from "@/integrations/supabase/client";
+import { useAuth } from "@/lib/auth-context";
 
 type Mode = "practice" | "exam";
 // Answer shapes per question type:
@@ -143,6 +145,8 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
   const percent = Math.round((score / quiz.questions.length) * 100);
   const passed = percent >= quiz.passMark;
 
+  const { user } = useAuth();
+
   useEffect(() => {
     if (!finished) return;
     try {
@@ -152,7 +156,19 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
     } catch {
       // ignore
     }
-  }, [finished, score, quiz.slug]);
+    if (user) {
+      const total = quiz.questions.length;
+      const pct = Math.round((score / total) * 100);
+      supabase.from("quiz_attempts").insert({
+        user_id: user.id,
+        topic_slug: (quiz as { topicSlug?: string }).topicSlug ?? quiz.slug,
+        mock_slug: quiz.slug,
+        score, total, percent: pct,
+        passed: pct >= quiz.passMark,
+      }).then(() => {});
+      supabase.from("quiz_progress").delete().eq("mock_slug", quiz.slug).then(() => {});
+    }
+  }, [finished, score, quiz, user]);
 
   if (!mode) return <ModeSelect quiz={quiz} onSelect={setMode} />;
 
