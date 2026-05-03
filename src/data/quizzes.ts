@@ -1189,15 +1189,20 @@ export const quizzes: Quiz[] = [
   },
 ];
 
-import { getMockBySlug, mockToQuiz } from "@/data/mocks";
+import { loadMockBySlug, mockToQuiz } from "@/data/mocks";
 import { findTopic } from "@/data/categories";
 
-export const getQuiz = (slug: string): Quiz | undefined => {
-  // Mock-test slugs (e.g. "driving-theory-mock-7") MUST resolve to the
-  // AI-generated 24-question JSON, not any legacy 10-question stub that
-  // may share the same slug in this file.
+/**
+ * Resolve a quiz by slug. Static quizzes are returned synchronously via
+ * `getStaticQuiz`; mock-test slugs are loaded lazily from the static
+ * /mocks/<topic>.json asset.
+ */
+export const getStaticQuiz = (slug: string): Quiz | undefined =>
+  quizzes.find((q) => q.slug === slug);
+
+export const getQuiz = async (slug: string): Promise<Quiz | undefined> => {
   if (/-mock-\d+$/.test(slug)) {
-    const mock = getMockBySlug(slug);
+    const mock = await loadMockBySlug(slug);
     if (mock) {
       const found = findTopic(mock.topic);
       if (found) return mockToQuiz(found.category.slug, mock);
@@ -1205,7 +1210,7 @@ export const getQuiz = (slug: string): Quiz | undefined => {
   }
   const direct = quizzes.find((q) => q.slug === slug);
   if (direct) return direct;
-  const mock = getMockBySlug(slug);
+  const mock = await loadMockBySlug(slug);
   if (!mock) return undefined;
   const found = findTopic(mock.topic);
   return found ? mockToQuiz(found.category.slug, mock) : undefined;
