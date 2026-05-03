@@ -36,7 +36,7 @@ export function Logo({ variant = "dark", showTagline = true, size = "md" }: Prop
           </span>
         </span>
         {showTagline && (
-          <span className={`mt-1 block text-[10px] font-semibold uppercase tracking-[0.18em] ${sub}`}>
+          <span className={`mt-1 block whitespace-nowrap text-[10px] font-semibold uppercase tracking-[0.18em] ${sub}`}>
             Pass your test first time
           </span>
         )}
