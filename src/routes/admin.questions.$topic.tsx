@@ -325,11 +325,12 @@ function QuestionsBrowser() {
                   <img
                     src={q.image}
                     alt={q.imageAlt ?? ""}
-                    className="h-24 w-24 rounded-md border border-border object-contain bg-white"
+                    className="h-48 w-48 shrink-0 rounded-md border border-border object-contain bg-white p-2"
                     loading="lazy"
                     onError={(e) => {
-                      (e.currentTarget as HTMLImageElement).style.outline =
-                        "2px solid red";
+                      const el = e.currentTarget as HTMLImageElement;
+                      el.style.outline = "2px solid red";
+                      el.title = `Missing: ${q.image}`;
                     }}
                   />
                 )}
