@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
-import { Search, Moon } from "lucide-react";
+import { Search, Moon, Sun } from "lucide-react";
+import { useEffect, useState } from "react";
 import { Logo } from "./Logo";
 
 const nav: { label: string; to: string; slug?: string }[] = [
@@ -7,16 +8,32 @@ const nav: { label: string; to: string; slug?: string }[] = [
   { label: "Driving", to: "/category/$slug", slug: "driving" },
   { label: "UK Life", to: "/category/$slug", slug: "citizenship" },
   { label: "English", to: "/category/$slug", slug: "english" },
-  { label: "Education", to: "/category/$slug", slug: "education" },
+  { label: "IT & Tech", to: "/category/$slug", slug: "education" },
   { label: "Taxi & Private Hire", to: "/category/$slug", slug: "taxi-private-hire" },
   { label: "Professional", to: "/category/$slug", slug: "professional" },
   { label: "NHS", to: "/category/$slug", slug: "nhs" },
-  { label: "Blog", to: "/blog" },
+  { label: "Articles", to: "/blog" },
 ];
 
 export function SiteHeader() {
+  const [isDark, setIsDark] = useState(false);
+
+  useEffect(() => {
+    const stored = typeof window !== "undefined" ? localStorage.getItem("theme") : null;
+    const prefersDark = stored ? stored === "dark" : window.matchMedia("(prefers-color-scheme: dark)").matches;
+    setIsDark(prefersDark);
+    document.documentElement.classList.toggle("dark", prefersDark);
+  }, []);
+
+  const toggleTheme = () => {
+    const next = !isDark;
+    setIsDark(next);
+    document.documentElement.classList.toggle("dark", next);
+    try { localStorage.setItem("theme", next ? "dark" : "light"); } catch {}
+  };
+
   return (
-    <header className="sticky top-0 z-40 w-full border-b border-border/60 bg-white">
+    <header className="sticky top-0 z-40 w-full border-b border-border/60 bg-background">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-4 px-4 md:px-6">
         <Logo />
 
@@ -62,10 +79,11 @@ export function SiteHeader() {
           </button>
           <button
             type="button"
+            onClick={toggleTheme}
             aria-label="Toggle dark mode"
             className="hidden h-10 w-10 items-center justify-center rounded-xl text-foreground/70 transition-colors hover:bg-muted hover:text-foreground md:inline-flex"
           >
-            <Moon className="h-4.5 w-4.5" />
+            {isDark ? <Sun className="h-4.5 w-4.5" /> : <Moon className="h-4.5 w-4.5" />}
           </button>
           <Link
             to="/quiz/$slug"
