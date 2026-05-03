@@ -391,6 +391,25 @@ function QuestionsBrowser() {
           </div>
         )}
       </main>
+      {editing && (
+        <QuestionEditDialog
+          topic={topic}
+          questionId={editing.id}
+          defaults={{
+            question: editing.question,
+            options: editing.options,
+            correctAnswer: editing.raw.correctAnswer as number | undefined,
+            explanation: editing.explanation,
+            image: editing.image,
+            imageAlt: editing.imageAlt,
+          }}
+          onClose={() => setEditing(null)}
+          onSaved={() => {
+            invalidateOverrides();
+            setBump((n) => n + 1);
+          }}
+        />
+      )}
       <SiteFooter />
     </div>
   );
