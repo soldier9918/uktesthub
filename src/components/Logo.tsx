@@ -14,8 +14,13 @@ export function Logo({ variant = "dark", showTagline = true, size = "md" }: Prop
   const wordSize = size === "lg" ? "text-2xl md:text-3xl" : size === "sm" ? "text-base" : "text-xl";
 
   return (
-    <Link to="/" className="inline-flex items-center gap-2.5">
-      <img src={logoSrc} alt="UK Test Hub" className={`${flagSize} object-contain`} />
+    <Link
+      to="/"
+      className="group inline-flex items-center gap-3 rounded-2xl border border-border/60 bg-gradient-to-br from-background via-background to-muted/40 px-3 py-2 shadow-sm ring-1 ring-black/5 transition-all hover:-translate-y-0.5 hover:border-coral/40 hover:shadow-md dark:ring-white/5"
+    >
+      <span className="flex items-center justify-center rounded-xl bg-gradient-to-br from-navy/5 to-coral/10 p-1 ring-1 ring-border/50">
+        <img src={logoSrc} alt="UK Test Hub" className={`${flagSize} object-contain drop-shadow-sm transition-transform group-hover:scale-105`} />
+      </span>
 
       <span className="leading-none">
         <span className="flex items-center gap-1.5">
