@@ -151,20 +151,46 @@ function AllTestsPage() {
             </div>
           </div>
 
-          <div className="mt-3 flex flex-wrap gap-2">
-            <FilterChip
-              label="All"
-              active={activeCat === "all"}
-              onClick={() => setActiveCat("all")}
-            />
-            {categories.map((c) => (
+          <div className="mt-3">
+            <p className="mb-1.5 text-[10px] font-bold uppercase tracking-[0.18em] text-muted-foreground">
+              Category
+            </p>
+            <div className="flex flex-wrap gap-2">
               <FilterChip
-                key={c.slug}
-                label={c.title}
-                active={activeCat === c.slug}
-                onClick={() => setActiveCat(c.slug)}
+                label="All"
+                active={activeCat === "all"}
+                onClick={() => setActiveCat("all")}
               />
-            ))}
+              {categories.map((c) => (
+                <FilterChip
+                  key={c.slug}
+                  label={c.title}
+                  active={activeCat === c.slug}
+                  onClick={() => setActiveCat(c.slug)}
+                />
+              ))}
+            </div>
+          </div>
+
+          <div className="mt-3">
+            <p className="mb-1.5 text-[10px] font-bold uppercase tracking-[0.18em] text-muted-foreground">
+              Type
+            </p>
+            <div className="flex flex-wrap gap-2">
+              <FilterChip
+                label="All types"
+                active={activeType === "all"}
+                onClick={() => setActiveType("all")}
+              />
+              {TEST_TYPES.map((t) => (
+                <FilterChip
+                  key={t}
+                  label={t}
+                  active={activeType === t}
+                  onClick={() => setActiveType(t)}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </section>
