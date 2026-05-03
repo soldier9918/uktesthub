@@ -48,6 +48,7 @@ import { Route as AdminKb20LoginRouteImport } from './routes/admin-kb20.login'
 import { Route as AdminKb20DiagnosticsRouteImport } from './routes/admin-kb20.diagnostics'
 import { Route as AdminKb20QuestionsIndexRouteImport } from './routes/admin-kb20.questions.index'
 import { Route as AdminKb20QuestionsTopicRouteImport } from './routes/admin-kb20.questions.$topic'
+import { Route as LovableEmailQueueProcessRouteImport } from './routes/lovable/email/queue/process'
 
 const TermsRoute = TermsRouteImport.update({
   id: '/terms',
@@ -244,6 +245,12 @@ const AdminKb20QuestionsTopicRoute = AdminKb20QuestionsTopicRouteImport.update({
   path: '/admin-kb20/questions/$topic',
   getParentRoute: () => rootRouteImport,
 } as any)
+const LovableEmailQueueProcessRoute =
+  LovableEmailQueueProcessRouteImport.update({
+    id: '/lovable/email/queue/process',
+    path: '/lovable/email/queue/process',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -285,6 +292,7 @@ export interface FileRoutesByFullPath {
   '/blog/': typeof BlogIndexRoute
   '/admin-kb20/questions/$topic': typeof AdminKb20QuestionsTopicRoute
   '/admin-kb20/questions/': typeof AdminKb20QuestionsIndexRoute
+  '/lovable/email/queue/process': typeof LovableEmailQueueProcessRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -325,6 +333,7 @@ export interface FileRoutesByTo {
   '/blog': typeof BlogIndexRoute
   '/admin-kb20/questions/$topic': typeof AdminKb20QuestionsTopicRoute
   '/admin-kb20/questions': typeof AdminKb20QuestionsIndexRoute
+  '/lovable/email/queue/process': typeof LovableEmailQueueProcessRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -367,6 +376,7 @@ export interface FileRoutesById {
   '/blog/': typeof BlogIndexRoute
   '/admin-kb20/questions/$topic': typeof AdminKb20QuestionsTopicRoute
   '/admin-kb20/questions/': typeof AdminKb20QuestionsIndexRoute
+  '/lovable/email/queue/process': typeof LovableEmailQueueProcessRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -410,6 +420,7 @@ export interface FileRouteTypes {
     | '/blog/'
     | '/admin-kb20/questions/$topic'
     | '/admin-kb20/questions/'
+    | '/lovable/email/queue/process'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -450,6 +461,7 @@ export interface FileRouteTypes {
     | '/blog'
     | '/admin-kb20/questions/$topic'
     | '/admin-kb20/questions'
+    | '/lovable/email/queue/process'
   id:
     | '__root__'
     | '/'
@@ -491,6 +503,7 @@ export interface FileRouteTypes {
     | '/blog/'
     | '/admin-kb20/questions/$topic'
     | '/admin-kb20/questions/'
+    | '/lovable/email/queue/process'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -531,6 +544,7 @@ export interface RootRouteChildren {
   AdminKb20IndexRoute: typeof AdminKb20IndexRoute
   AdminKb20QuestionsTopicRoute: typeof AdminKb20QuestionsTopicRoute
   AdminKb20QuestionsIndexRoute: typeof AdminKb20QuestionsIndexRoute
+  LovableEmailQueueProcessRoute: typeof LovableEmailQueueProcessRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -808,6 +822,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AdminKb20QuestionsTopicRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/lovable/email/queue/process': {
+      id: '/lovable/email/queue/process'
+      path: '/lovable/email/queue/process'
+      fullPath: '/lovable/email/queue/process'
+      preLoaderRoute: typeof LovableEmailQueueProcessRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -861,6 +882,7 @@ const rootRouteChildren: RootRouteChildren = {
   AdminKb20IndexRoute: AdminKb20IndexRoute,
   AdminKb20QuestionsTopicRoute: AdminKb20QuestionsTopicRoute,
   AdminKb20QuestionsIndexRoute: AdminKb20QuestionsIndexRoute,
+  LovableEmailQueueProcessRoute: LovableEmailQueueProcessRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
