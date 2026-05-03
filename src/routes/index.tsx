@@ -18,7 +18,6 @@ import { AdSlot } from "@/components/AdSlot";
 import { CategoryIcon, accentClasses } from "@/components/CategoryIcon";
 import { UnionJack } from "@/components/UnionJack";
 import { categories } from "@/data/categories";
-import { getDailyQuiz, getQuizMeta } from "@/data/quizzes";
 import { blogPosts } from "@/data/blog";
 // (TestBadge removed)
 
@@ -74,16 +73,23 @@ const featured: Array<{
   slug: string;
   title: string;
   img: string;
+  questionCount: number;
+  minutes: number;
   mostPopular?: boolean;
   btn: "coral" | "royal" | "navy";
 }> = [
-  { slug: "driving-theory-mock-1", title: "Driving Theory Mock Test 1", img: featDriving, mostPopular: true, btn: "coral" },
-  { slug: "life-in-the-uk-mock-1", title: "Life in the UK Test 2026", img: featFlag, btn: "royal" },
-  { slug: "ielts-grammar-starter", title: "IELTS Listening Practice", img: featHeadphones, btn: "navy" },
-  { slug: "gcse-maths-warmup", title: "11+ Maths Practice Test", img: featCalculator, btn: "coral" },
-  { slug: "uk-geography-quick", title: "UK Geography Test", img: featTowerBridge, btn: "royal" },
-  { slug: "road-signs-essentials", title: "Road Signs Test", img: featRoadSigns, btn: "navy" },
+  { slug: "driving-theory-mock-1", title: "Driving Theory Mock Test 1", img: featDriving, questionCount: 24, minutes: 24, mostPopular: true, btn: "coral" },
+  { slug: "life-in-the-uk-mock-1", title: "Life in the UK Test 2026", img: featFlag, questionCount: 24, minutes: 24, btn: "royal" },
+  { slug: "ielts-grammar-starter", title: "IELTS Listening Practice", img: featHeadphones, questionCount: 8, minutes: 10, btn: "navy" },
+  { slug: "gcse-maths-warmup", title: "11+ Maths Practice Test", img: featCalculator, questionCount: 10, minutes: 10, btn: "coral" },
+  { slug: "uk-geography-quick", title: "UK Geography Test", img: featTowerBridge, questionCount: 10, minutes: 8, btn: "royal" },
+  { slug: "road-signs-essentials", title: "Road Signs Test", img: featRoadSigns, questionCount: 8, minutes: 8, btn: "navy" },
 ];
+
+const dailyQuizMeta = {
+  slug: "general-knowledge-daily",
+  questionCount: 10,
+};
 
 const btnClass: Record<"coral" | "royal" | "navy", string> = {
   coral: "bg-coral text-coral-foreground hover:brightness-110",
@@ -107,8 +113,6 @@ function SectionTitle({ children }: { children: React.ReactNode }) {
 }
 
 function HomePage() {
-  const daily = getDailyQuiz();
-
   return (
     <div
       className="min-h-screen bg-[#f7f5f0]"
@@ -347,8 +351,6 @@ function HomePage() {
 
           <ul className="mt-8 grid gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
             {featured.map((f) => {
-              const q = getQuizMeta(f.slug);
-              if (!q) return null;
               return (
                 <li key={f.slug}>
                   <Link
@@ -377,10 +379,10 @@ function HomePage() {
                       </h3>
                       <div className="mt-3 flex flex-wrap gap-x-3 gap-y-1 text-[11px] text-muted-foreground">
                         <span className="inline-flex items-center gap-1">
-                          <ListChecks className="h-3 w-3" /> {q.questionCount} Questions
+                          <ListChecks className="h-3 w-3" /> {f.questionCount} Questions
                         </span>
                         <span className="inline-flex items-center gap-1">
-                          <Clock className="h-3 w-3" /> {Math.round(q.timeLimit / 60)} Mins
+                          <Clock className="h-3 w-3" /> {f.minutes} Mins
                         </span>
                       </div>
                       <span
@@ -434,7 +436,7 @@ function HomePage() {
             <aside className="lg:sticky lg:top-24">
               <Link
                 to="/quiz/$slug"
-                params={{ slug: daily.slug }}
+                params={{ slug: dailyQuizMeta.slug }}
                 className="group relative block overflow-hidden rounded-3xl border border-white/15 bg-navy-deep p-6 shadow-elevated transition-transform hover:-translate-y-1 md:p-7"
               >
                 <div className="flex items-center justify-center gap-2">
@@ -450,7 +452,7 @@ function HomePage() {
                   <div className="text-sm leading-snug text-navy-foreground/90">
                     Can you score{" "}
                     <span className="font-display text-2xl font-extrabold text-navy-foreground">
-                      {daily.questions.length}/{daily.questions.length}
+                      {dailyQuizMeta.questionCount}/{dailyQuizMeta.questionCount}
                     </span>
                     <br />
                     on today&rsquo;s
