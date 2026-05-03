@@ -99,7 +99,12 @@ function isCorrect(q: Question, a: Answer): boolean {
   return false;
 }
 
-export function QuizRunner({ quiz }: { quiz: Quiz }) {
+export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
+  const overrides = useOverrides();
+  const quiz = useMemo(
+    () => (overrides ? applyOverrides(rawQuiz, overrides) : rawQuiz),
+    [rawQuiz, overrides],
+  );
   const [mode, setMode] = useState<Mode | null>(null);
   const [current, setCurrent] = useState(0);
   const [answers, setAnswers] = useState<Answer[]>(
