@@ -34,7 +34,7 @@ const topics: TopicEntry[] = Object.values(modules)
   })
   .sort((a, b) => a.topic.localeCompare(b.topic));
 
-export const Route = createFileRoute("/admin/questions")({
+export const Route = createFileRoute("/admin/questions/")({
   head: () => ({ meta: [{ title: "Question Bank Browser — UK Test Hub" }] }),
   component: TopicsIndex,
 });
