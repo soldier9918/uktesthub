@@ -34,6 +34,8 @@ import { Route as QuizSlugRouteImport } from './routes/quiz.$slug'
 import { Route as GuideSlugRouteImport } from './routes/guide.$slug'
 import { Route as CategorySlugRouteImport } from './routes/category.$slug'
 import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
+import { Route as AdminQuestionsRouteImport } from './routes/admin.questions'
+import { Route as AdminQuestionsTopicRouteImport } from './routes/admin.questions.$topic'
 
 const TermsRoute = TermsRouteImport.update({
   id: '/terms',
@@ -160,6 +162,16 @@ const BlogSlugRoute = BlogSlugRouteImport.update({
   path: '/$slug',
   getParentRoute: () => BlogRoute,
 } as any)
+const AdminQuestionsRoute = AdminQuestionsRouteImport.update({
+  id: '/admin/questions',
+  path: '/admin/questions',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdminQuestionsTopicRoute = AdminQuestionsTopicRouteImport.update({
+  id: '/$topic',
+  path: '/$topic',
+  getParentRoute: () => AdminQuestionsRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -181,12 +193,14 @@ export interface FileRoutesByFullPath {
   '/sitemap': typeof SitemapRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms': typeof TermsRoute
+  '/admin/questions': typeof AdminQuestionsRouteWithChildren
   '/blog/$slug': typeof BlogSlugRoute
   '/category/$slug': typeof CategorySlugRoute
   '/guide/$slug': typeof GuideSlugRoute
   '/quiz/$slug': typeof QuizSlugRoute
   '/topic/$slug': typeof TopicSlugRoute
   '/blog/': typeof BlogIndexRoute
+  '/admin/questions/$topic': typeof AdminQuestionsTopicRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -207,12 +221,14 @@ export interface FileRoutesByTo {
   '/sitemap': typeof SitemapRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms': typeof TermsRoute
+  '/admin/questions': typeof AdminQuestionsRouteWithChildren
   '/blog/$slug': typeof BlogSlugRoute
   '/category/$slug': typeof CategorySlugRoute
   '/guide/$slug': typeof GuideSlugRoute
   '/quiz/$slug': typeof QuizSlugRoute
   '/topic/$slug': typeof TopicSlugRoute
   '/blog': typeof BlogIndexRoute
+  '/admin/questions/$topic': typeof AdminQuestionsTopicRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -235,12 +251,14 @@ export interface FileRoutesById {
   '/sitemap': typeof SitemapRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms': typeof TermsRoute
+  '/admin/questions': typeof AdminQuestionsRouteWithChildren
   '/blog/$slug': typeof BlogSlugRoute
   '/category/$slug': typeof CategorySlugRoute
   '/guide/$slug': typeof GuideSlugRoute
   '/quiz/$slug': typeof QuizSlugRoute
   '/topic/$slug': typeof TopicSlugRoute
   '/blog/': typeof BlogIndexRoute
+  '/admin/questions/$topic': typeof AdminQuestionsTopicRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -264,12 +282,14 @@ export interface FileRouteTypes {
     | '/sitemap'
     | '/sitemap.xml'
     | '/terms'
+    | '/admin/questions'
     | '/blog/$slug'
     | '/category/$slug'
     | '/guide/$slug'
     | '/quiz/$slug'
     | '/topic/$slug'
     | '/blog/'
+    | '/admin/questions/$topic'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -290,12 +310,14 @@ export interface FileRouteTypes {
     | '/sitemap'
     | '/sitemap.xml'
     | '/terms'
+    | '/admin/questions'
     | '/blog/$slug'
     | '/category/$slug'
     | '/guide/$slug'
     | '/quiz/$slug'
     | '/topic/$slug'
     | '/blog'
+    | '/admin/questions/$topic'
   id:
     | '__root__'
     | '/'
@@ -317,12 +339,14 @@ export interface FileRouteTypes {
     | '/sitemap'
     | '/sitemap.xml'
     | '/terms'
+    | '/admin/questions'
     | '/blog/$slug'
     | '/category/$slug'
     | '/guide/$slug'
     | '/quiz/$slug'
     | '/topic/$slug'
     | '/blog/'
+    | '/admin/questions/$topic'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -345,6 +369,7 @@ export interface RootRouteChildren {
   SitemapRoute: typeof SitemapRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   TermsRoute: typeof TermsRoute
+  AdminQuestionsRoute: typeof AdminQuestionsRouteWithChildren
   CategorySlugRoute: typeof CategorySlugRoute
   GuideSlugRoute: typeof GuideSlugRoute
   QuizSlugRoute: typeof QuizSlugRoute
@@ -528,6 +553,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogSlugRouteImport
       parentRoute: typeof BlogRoute
     }
+    '/admin/questions': {
+      id: '/admin/questions'
+      path: '/admin/questions'
+      fullPath: '/admin/questions'
+      preLoaderRoute: typeof AdminQuestionsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/admin/questions/$topic': {
+      id: '/admin/questions/$topic'
+      path: '/$topic'
+      fullPath: '/admin/questions/$topic'
+      preLoaderRoute: typeof AdminQuestionsTopicRouteImport
+      parentRoute: typeof AdminQuestionsRoute
+    }
   }
 }
 
@@ -542,6 +581,18 @@ const BlogRouteChildren: BlogRouteChildren = {
 }
 
 const BlogRouteWithChildren = BlogRoute._addFileChildren(BlogRouteChildren)
+
+interface AdminQuestionsRouteChildren {
+  AdminQuestionsTopicRoute: typeof AdminQuestionsTopicRoute
+}
+
+const AdminQuestionsRouteChildren: AdminQuestionsRouteChildren = {
+  AdminQuestionsTopicRoute: AdminQuestionsTopicRoute,
+}
+
+const AdminQuestionsRouteWithChildren = AdminQuestionsRoute._addFileChildren(
+  AdminQuestionsRouteChildren,
+)
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
@@ -563,6 +614,7 @@ const rootRouteChildren: RootRouteChildren = {
   SitemapRoute: SitemapRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   TermsRoute: TermsRoute,
+  AdminQuestionsRoute: AdminQuestionsRouteWithChildren,
   CategorySlugRoute: CategorySlugRoute,
   GuideSlugRoute: GuideSlugRoute,
   QuizSlugRoute: QuizSlugRoute,

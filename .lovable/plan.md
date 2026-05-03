@@ -1,32 +1,34 @@
-## Plan
+## Add a question bank browser route
 
-### 1. Replace 3 category icons
-Regenerate the illustrated PNGs (same flat coloured silhouette style as the rest of the icon set) and overwrite in place — no code changes needed since `CategoryIcon.tsx` already imports these paths:
+Add a new route `/admin/questions/$topic` that lists every question in a topic's bank (currently `road-signs`, plus `seru` etc. as they exist in `src/data/mocks/*.json`).
 
-- `src/assets/icon-security.png` — new icon for **Security & Door Supervision** (e.g. door supervisor figure with earpiece + shield, or a stewarding badge — clearer than the current generic shield).
-- `src/assets/icon-professional.png` — new icon for **Workplace Compliance & Safety** (e.g. hard-hat + clipboard / safety checklist — currently reads as a generic tick badge).
-- `src/assets/icon-teaching.png` — new icon for **Teaching & QTS** (e.g. teacher at a chalkboard / mortarboard with pointer — currently a plain open book that overlaps with the Education category).
+### Page features
+- Topic selector at top (links to each topic that has a JSON file).
+- Summary stats: total questions, # with images, # text-only, # used across mocks vs orphaned.
+- Filter controls:
+  - Search box (matches question text / explanation).
+  - Type filter (mcq, image-question, true-false, fill-blanks, etc.).
+  - "Has image" toggle.
+- Paginated table/list, each row showing:
+  - ID
+  - Question text
+  - Type badge
+  - Thumbnail image (if any) with broken-image indicator
+  - Correct answer highlighted
+  - Explanation (collapsible)
+  - Which mock test numbers reference it
 
-### 2. Ad slot above "Featured Mock Tests"
-In `src/routes/index.tsx`, the existing `<AdSlot size="leaderboard" className="my-14" />` already sits between the categories grid and the Featured Mock Tests heading (line 322). Looking at the page, it's there but spacing reads tight. Action: confirm it renders and bump it to a more prominent leaderboard placement with clearer label so it's visually distinct as an ad break between the two sections.
+### Implementation
+- New file `src/routes/admin.questions.$topic.tsx`.
+  - Loader reads the topic's JSON via the same `import.meta.glob` pattern used in `src/data/mocks/index.ts`.
+  - Reuse the V2 bank shape directly (no need to expand into mocks).
+  - Compute the "used in mocks" map from `mocks[].questionIds`.
+- New index route `src/routes/admin.questions.tsx` listing all available topics with counts.
+- Use existing UI primitives (`Table`, `Badge`, `Input`, `Pagination`, `ScrollArea`) — already in the codebase.
+- No auth gate (matches current project — everything is public). If you want it gated, say so and I'll add a simple password env-var check.
 
-### 3. Level the "Explore" label across all category tiles
-Cause: each tile uses `flex flex-col` but the chips row has variable height (1 or 2 lines depending on chip count), pushing "Explore" down inconsistently.
+### Out of scope
+- Editing questions from the UI (read-only browser).
+- Persisting filter state in the URL (can add later if useful).
 
-Fix in `src/routes/index.tsx` (Popular Categories grid, ~line 287–315):
-- Add `mt-auto` to the "Explore" `<span>` so it pins to the bottom of the flex column.
-- Ensure the parent `<Link>` already has `h-full flex flex-col` (it does).
-
-Result: "Explore" sits on the same baseline across every tile regardless of chip wrapping.
-
-### 4. All-Exams page with category + type filters
-The page already exists at `src/routes/all-tests.tsx` with search + category filter. Extend it:
-- Add a second filter row for **Type**, with chips: All / Theory / Aptitude & Reasoning / Practical & Skills / Compliance & Safety / Language / Citizenship.
-- Derive `type` per category by mapping the existing 25 categories to one of those buckets (lookup table in the route file, no schema change).
-- Combine with existing category + search filter logic.
-- Add a footer link in `SiteFooter` if not already present (it points to `/all-tests` from the homepage browse button).
-
-### Technical notes
-- Icons are generated via `imagegen--generate_image` at 1024×1024, transparent background false, matching existing style: flat illustrated PNG, soft palette, square framing.
-- No data layer change for the type filter — bucket map lives inside `all-tests.tsx`.
-- Ad slot uses existing `<AdSlot size="leaderboard" />` component.
+After approval I'll implement the two route files.
