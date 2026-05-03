@@ -163,13 +163,13 @@ function QuestionsBrowser() {
 
   const types = useMemo(() => {
     const s = new Set<string>();
-    questions.forEach((q) => s.add(q.type));
+    (questions as FlatQuestion[]).forEach((q: FlatQuestion) => s.add(q.type));
     return ["all", ...Array.from(s).sort()];
   }, [questions]);
 
-  const filtered = useMemo(() => {
+  const filtered = useMemo<FlatQuestion[]>(() => {
     const s = search.trim().toLowerCase();
-    return questions.filter((q) => {
+    return (questions as FlatQuestion[]).filter((q: FlatQuestion) => {
       if (type !== "all" && q.type !== type) return false;
       if (imageFilter === "with" && !q.image) return false;
       if (imageFilter === "without" && q.image) return false;
