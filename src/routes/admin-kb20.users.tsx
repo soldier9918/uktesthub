@@ -21,13 +21,23 @@ function UsersAdmin() {
   const [q, setQ] = useState("");
 
   useEffect(() => {
-    listAdminUsers()
-      .then((r) => {
+    (async () => {
+      try {
+        const { data: sess } = await supabase.auth.getSession();
+        const accessToken = sess.session?.access_token;
+        if (!accessToken) {
+          setError("Not signed in");
+          return;
+        }
+        const r = await listAdminUsers({ data: { accessToken } });
         setRows(r.users);
         setError(r.error);
-      })
-      .catch((e) => setError(String(e?.message ?? e)))
-      .finally(() => setLoading(false));
+      } catch (e: unknown) {
+        setError(e instanceof Error ? e.message : String(e));
+      } finally {
+        setLoading(false);
+      }
+    })();
   }, []);
 
   const filtered = rows.filter((r) => {
