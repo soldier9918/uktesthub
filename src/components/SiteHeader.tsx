@@ -79,10 +79,11 @@ export function SiteHeader() {
           </button>
           <button
             type="button"
+            onClick={toggleTheme}
             aria-label="Toggle dark mode"
             className="hidden h-10 w-10 items-center justify-center rounded-xl text-foreground/70 transition-colors hover:bg-muted hover:text-foreground md:inline-flex"
           >
-            <Moon className="h-4.5 w-4.5" />
+            {isDark ? <Sun className="h-4.5 w-4.5" /> : <Moon className="h-4.5 w-4.5" />}
           </button>
           <Link
             to="/quiz/$slug"
