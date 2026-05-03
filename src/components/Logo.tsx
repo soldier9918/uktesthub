@@ -18,8 +18,8 @@ export function Logo({ variant = "dark", showTagline = true, size = "md" }: Prop
       to="/"
       className={
         variant === "light"
-          ? "group inline-flex items-center gap-3 px-1 py-1 transition-all hover:-translate-y-0.5"
-          : "group inline-flex items-center gap-3 border border-border/60 bg-gradient-to-br from-background via-background to-muted/40 px-3 py-2 shadow-sm ring-1 ring-black/5 transition-all hover:-translate-y-0.5 hover:border-coral/40 hover:shadow-md dark:ring-white/5"
+          ? "group inline-flex shrink-0 items-center gap-3 px-1 py-1 transition-all hover:-translate-y-0.5"
+          : "group inline-flex shrink-0 items-center gap-3 border border-border/60 bg-gradient-to-br from-background via-background to-muted/40 px-3 py-2 shadow-sm ring-1 ring-black/5 transition-all hover:-translate-y-0.5 hover:border-coral/40 hover:shadow-md dark:ring-white/5"
       }
     >
       <span className="flex items-center justify-center">
@@ -36,7 +36,7 @@ export function Logo({ variant = "dark", showTagline = true, size = "md" }: Prop
           </span>
         </span>
         {showTagline && (
-          <span className={`mt-1 block text-[10px] font-semibold uppercase tracking-[0.18em] ${sub}`}>
+          <span className={`mt-1 block whitespace-nowrap text-[10px] font-semibold uppercase tracking-[0.18em] ${sub}`}>
             Pass your test first time
           </span>
         )}
