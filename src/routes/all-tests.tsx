@@ -234,13 +234,16 @@ function AllTestsPage() {
                   {c.topics.map((t) => {
                     const quiz = getQuizMeta(t.slug);
                     return (
-                      <li key={t.slug}>
+                      <li key={t.slug} className="relative">
+                        <div className="absolute right-2 top-2 z-10">
+                          <BookmarkButton topicSlug={t.slug} />
+                        </div>
                         <Link
                           to="/topic/$slug"
                           params={{ slug: t.slug }}
                           className="group flex h-full flex-col rounded-xl border border-border bg-card p-4 shadow-soft transition-all hover:-translate-y-0.5 hover:border-coral/40 hover:shadow-elevated"
                         >
-                          <div className="min-w-0 flex-1">
+                          <div className="min-w-0 flex-1 pr-8">
                             <h3 className="font-display text-sm font-bold leading-tight text-foreground">
                               {t.title}
                             </h3>
