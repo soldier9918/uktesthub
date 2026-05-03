@@ -136,8 +136,11 @@ export function SiteFooter() {
       </div>
 
       <div className="mt-10 border-t border-white/10">
-        <div className="mx-auto flex max-w-7xl flex-col items-start justify-between gap-3 px-4 py-6 text-xs text-navy-foreground/60 md:flex-row md:items-center md:px-6">
-          <div>© 2026 UK Test Hub. All rights reserved.</div>
+        <div className="mx-auto flex max-w-7xl flex-col items-start justify-between gap-4 px-4 py-6 text-xs text-navy-foreground/60 md:flex-row md:items-center md:px-6">
+          <div className="flex items-center gap-3">
+            <img src={logoSrc} alt="UK Test Hub" className="h-10 w-10 object-contain drop-shadow-sm" />
+            <span>© 2026 UK Test Hub. All rights reserved.</span>
+          </div>
           <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
             <Link to="/privacy" className="hover:text-coral">Privacy</Link>
             <Link to="/cookies" className="hover:text-coral">Cookies</Link>
