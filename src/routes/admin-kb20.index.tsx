@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { AdminGate } from "@/components/AdminGate";
 
-export const Route = createFileRoute("/admin/")({
+export const Route = createFileRoute("/admin-kb20/")({
   head: () => ({ meta: [{ title: "Admin — UK Test Hub" }] }),
   component: () => (
     <AdminGate>
