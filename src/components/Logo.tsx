@@ -10,17 +10,13 @@ type Props = {
 export function Logo({ variant = "dark", showTagline = true, size = "md" }: Props) {
   const text = variant === "dark" ? "text-foreground" : "text-navy-foreground";
   const sub = variant === "dark" ? "text-muted-foreground" : "text-navy-foreground/70";
-  const flagSize = size === "lg" ? "h-16 w-16" : size === "sm" ? "h-10 w-10" : "h-14 w-14";
-  const wordSize = size === "lg" ? "text-2xl md:text-3xl" : size === "sm" ? "text-base" : "text-xl";
+  const flagSize = size === "lg" ? "h-16 w-16" : size === "sm" ? "h-10 w-10" : "h-12 w-12";
+  const wordSize = size === "lg" ? "text-2xl md:text-3xl" : size === "sm" ? "text-base" : "text-lg";
 
   return (
     <Link
       to="/"
-      className={
-        variant === "light"
-          ? "group inline-flex shrink-0 items-center gap-3 px-1 py-1 transition-all hover:-translate-y-0.5"
-          : "group inline-flex shrink-0 items-center gap-3 border border-border/60 bg-gradient-to-br from-background via-background to-muted/40 px-3 py-2 shadow-sm ring-1 ring-black/5 transition-all hover:-translate-y-0.5 hover:border-coral/40 hover:shadow-md dark:ring-white/5"
-      }
+      className="group inline-flex shrink-0 items-center gap-2 px-1 py-1 transition-all hover:-translate-y-0.5"
     >
       <span className="flex items-center justify-center">
         <img src={logoSrc} alt="UK Test Hub" className={`${flagSize} object-contain drop-shadow-sm transition-transform group-hover:scale-105`} />
