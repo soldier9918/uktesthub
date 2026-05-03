@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { AdminGate } from "@/components/AdminGate";
 
 export const Route = createFileRoute("/admin-kb20/")({
-  head: () => ({ meta: [{ title: "Admin — UK Test Hub" }] }),
+  head: () => ({ meta: [{ title: "Admin — UK Test Hub" }, { name: "robots", content: "noindex, nofollow, noarchive, nosnippet" }] }),
   component: () => (
     <AdminGate>
       <main className="mx-auto max-w-5xl px-4 py-8">
