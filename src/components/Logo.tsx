@@ -24,7 +24,7 @@ export function Logo({ variant = "dark", showTagline = true, size = "md" }: Prop
 
       <span className="leading-none">
         <span className="flex items-center gap-1.5">
-          <span className={`font-display font-extrabold tracking-tight ${text} ${wordSize}`}>
+          <span className={`font-display font-extrabold tracking-tight ${text} ${wordSize} font-sans`}>
             UK TEST HUB
           </span>
           <span className="rounded-md bg-coral px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-coral-foreground">
