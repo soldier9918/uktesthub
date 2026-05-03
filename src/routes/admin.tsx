@@ -1,6 +1,6 @@
-import { createFileRoute, redirect } from "@tanstack/react-router";
+import { createFileRoute, notFound } from "@tanstack/react-router";
 
-// Old admin path is now a decoy — silently redirect to homepage.
+// /admin is not a real route — return a 404 to avoid disclosing any admin surface.
 export const Route = createFileRoute("/admin")({
   head: () => ({
     meta: [
@@ -8,7 +8,7 @@ export const Route = createFileRoute("/admin")({
     ],
   }),
   beforeLoad: () => {
-    throw redirect({ to: "/" });
+    throw notFound();
   },
   component: () => null,
 });
