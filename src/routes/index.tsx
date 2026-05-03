@@ -336,7 +336,7 @@ function HomePage() {
 
         {/* FEATURED MOCK TESTS */}
         <section>
-          <div className="flex items-end justify-between gap-4">
+          <div className="flex flex-col items-center text-center">
             <SectionTitle>Featured Mock Tests</SectionTitle>
           </div>
           <div className="mt-3 text-right">
