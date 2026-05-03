@@ -1,5 +1,4 @@
 import { createServerFn } from "@tanstack/react-start";
-import { requireSupabaseAuth } from "@/integrations/supabase/auth-middleware";
 import { supabaseAdmin } from "@/integrations/supabase/client.server";
 
 export type AdminUserRow = {
@@ -17,15 +16,24 @@ export type AdminUserRow = {
   best_percent: number | null;
 };
 
-export const listAdminUsers = createServerFn({ method: "GET" })
-  .middleware([requireSupabaseAuth])
-  .handler(async ({ context }): Promise<{ users: AdminUserRow[]; error: string | null }> => {
-    const { supabase, userId } = context;
-    const { data: isAdmin } = await supabase.rpc("has_role", {
-      _user_id: userId,
-      _role: "admin",
-    });
-    if (!isAdmin) return { users: [], error: "Forbidden" };
+export const listAdminUsers = createServerFn({ method: "POST" })
+  .inputValidator((data: { accessToken: string }) => data)
+  .handler(async ({ data }): Promise<{ users: AdminUserRow[]; error: string | null }> => {
+    if (!data?.accessToken) return { users: [], error: "Unauthorized" };
+
+    // Verify the caller's token and resolve their user id
+    const { data: userRes, error: userErr } = await supabaseAdmin.auth.getUser(data.accessToken);
+    if (userErr || !userRes?.user) return { users: [], error: "Unauthorized" };
+    const userId = userRes.user.id;
+
+    // Confirm admin role
+    const { data: roleRow } = await supabaseAdmin
+      .from("user_roles")
+      .select("role")
+      .eq("user_id", userId)
+      .eq("role", "admin")
+      .maybeSingle();
+    if (!roleRow) return { users: [], error: "Forbidden" };
 
     // Fetch all auth users (paginate up to 1000 for now)
     const { data: authData, error: authErr } = await supabaseAdmin.auth.admin.listUsers({
