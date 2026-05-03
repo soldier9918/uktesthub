@@ -1,7 +1,11 @@
-import { Link } from "@tanstack/react-router";
-import { Search, Moon, Sun } from "lucide-react";
+import { Link, useNavigate } from "@tanstack/react-router";
+import { Search, Moon, Sun, User as UserIcon, LogOut, LayoutDashboard, Heart, Settings } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Logo } from "./Logo";
+import { useAuth } from "@/lib/auth-context";
+import {
+  DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 const nav: { label: string; to: string; slug?: string }[] = [
   { label: "Home", to: "/" },
@@ -17,6 +21,8 @@ const nav: { label: string; to: string; slug?: string }[] = [
 
 export function SiteHeader() {
   const [isDark, setIsDark] = useState(false);
+  const { user, signOut, loading } = useAuth();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const stored = typeof window !== "undefined" ? localStorage.getItem("theme") : null;
@@ -45,10 +51,7 @@ export function SiteHeader() {
                 to={item.to as "/category/$slug"}
                 params={{ slug: item.slug }}
                 className="relative px-3 py-2 text-sm font-semibold text-foreground/80 transition-colors hover:text-foreground"
-                activeProps={{
-                  className:
-                    "text-foreground after:absolute after:inset-x-3 after:-bottom-0.5 after:h-0.5 after:rounded-full after:bg-coral",
-                }}
+                activeProps={{ className: "text-foreground after:absolute after:inset-x-3 after:-bottom-0.5 after:h-0.5 after:rounded-full after:bg-coral" }}
               >
                 {item.label}
               </Link>
@@ -58,10 +61,7 @@ export function SiteHeader() {
                 to={item.to as "/"}
                 className="relative px-3 py-2 text-sm font-semibold text-foreground/80 transition-colors hover:text-foreground"
                 activeOptions={{ exact: true }}
-                activeProps={{
-                  className:
-                    "text-foreground after:absolute after:inset-x-3 after:-bottom-0.5 after:h-0.5 after:rounded-full after:bg-coral",
-                }}
+                activeProps={{ className: "text-foreground after:absolute after:inset-x-3 after:-bottom-0.5 after:h-0.5 after:rounded-full after:bg-coral" }}
               >
                 {item.label}
               </Link>
@@ -70,28 +70,49 @@ export function SiteHeader() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <button
-            type="button"
-            aria-label="Search"
-            className="hidden h-10 w-10 items-center justify-center rounded-xl text-foreground/70 transition-colors hover:bg-muted hover:text-foreground md:inline-flex"
-          >
+          <button type="button" aria-label="Search"
+            className="hidden h-10 w-10 items-center justify-center rounded-xl text-foreground/70 transition-colors hover:bg-muted hover:text-foreground md:inline-flex">
             <Search className="h-4.5 w-4.5" />
           </button>
-          <button
-            type="button"
-            onClick={toggleTheme}
-            aria-label="Toggle dark mode"
-            className="hidden h-10 w-10 items-center justify-center rounded-xl text-foreground/70 transition-colors hover:bg-muted hover:text-foreground md:inline-flex"
-          >
+          <button type="button" onClick={toggleTheme} aria-label="Toggle dark mode"
+            className="hidden h-10 w-10 items-center justify-center rounded-xl text-foreground/70 transition-colors hover:bg-muted hover:text-foreground md:inline-flex">
             {isDark ? <Sun className="h-4.5 w-4.5" /> : <Moon className="h-4.5 w-4.5" />}
           </button>
-          <Link
-            to="/quiz/$slug"
-            params={{ slug: "general-knowledge-daily" }}
-            className="inline-flex items-center justify-center rounded-xl bg-coral px-5 py-2.5 text-sm font-semibold text-coral-foreground shadow-coral transition-transform hover:-translate-y-0.5"
-          >
-            Sign In
-          </Link>
+
+          {loading ? null : user ? (
+            <DropdownMenu>
+              <DropdownMenuTrigger className="inline-flex h-10 items-center gap-2 rounded-xl border border-border px-3 text-sm font-semibold hover:bg-muted">
+                <UserIcon className="h-4 w-4" />
+                <span className="hidden sm:inline max-w-[120px] truncate">{user.email}</span>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="end" className="w-56">
+                <DropdownMenuLabel className="truncate">{user.email}</DropdownMenuLabel>
+                <DropdownMenuSeparator />
+                <DropdownMenuItem onClick={() => navigate({ to: "/dashboard" })}>
+                  <LayoutDashboard className="mr-2 h-4 w-4" /> Dashboard
+                </DropdownMenuItem>
+                <DropdownMenuItem onClick={() => navigate({ to: "/bookmarks" })}>
+                  <Heart className="mr-2 h-4 w-4" /> Bookmarks
+                </DropdownMenuItem>
+                <DropdownMenuItem onClick={() => navigate({ to: "/account" })}>
+                  <Settings className="mr-2 h-4 w-4" /> Account
+                </DropdownMenuItem>
+                <DropdownMenuSeparator />
+                <DropdownMenuItem onClick={async () => { await signOut(); navigate({ to: "/" }); }}>
+                  <LogOut className="mr-2 h-4 w-4" /> Sign out
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
+          ) : (
+            <>
+              <Link to="/signin" className="hidden md:inline-flex h-10 items-center justify-center rounded-xl px-3 text-sm font-semibold text-foreground/80 hover:text-foreground">
+                Sign in
+              </Link>
+              <Link to="/signup" className="inline-flex items-center justify-center rounded-xl bg-coral px-5 py-2.5 text-sm font-semibold text-coral-foreground shadow-coral transition-transform hover:-translate-y-0.5">
+                Sign up
+              </Link>
+            </>
+          )}
         </div>
       </div>
     </header>
