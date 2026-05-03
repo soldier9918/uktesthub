@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-// Build-time only: scan public/mocks/*.json and emit a tiny metadata manifest
-// plus per-topic diagnostics. The full question files stay as static assets.
+// Build-time only: scan public/mocks/*.json and emit small public diagnostics.
+// Full question files stay as static assets and no JSON is written under src/.
 import { existsSync, readdirSync, readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -8,8 +8,6 @@ import { fileURLToPath } from "node:url";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const root = join(__dirname, "..");
 const mocksDir = join(root, "public", "mocks");
-const outManifest = join(root, "src", "data", "mocks", "manifest.json");
-const outDiagnostics = join(root, "src", "data", "mocks", "diagnostics.json");
 const outPublicDiagnostics = join(root, "public", "mocks", "diagnostics.json");
 const outImageInventory = join(root, "public", "mocks", "image-inventory.json");
 
@@ -81,9 +79,7 @@ for (const file of files) {
   };
 }
 
-mkdirSync(dirname(outManifest), { recursive: true });
-writeFileSync(outManifest, JSON.stringify(manifest));
-writeFileSync(outDiagnostics, JSON.stringify(diagnostics));
+mkdirSync(dirname(outPublicDiagnostics), { recursive: true });
 writeFileSync(outPublicDiagnostics, JSON.stringify(diagnostics));
 const imageInventory = [];
 const imageRoot = join(root, "public", "quiz-images");
@@ -100,5 +96,5 @@ if (existsSync(imageRoot)) collectImages(imageRoot);
 writeFileSync(outImageInventory, JSON.stringify(imageInventory.sort()));
 const totalMocks = Object.values(manifest).reduce((n, t) => n + t.mocks.length, 0);
 console.log(
-  `[mock-manifest] wrote manifest (${Object.keys(manifest).length} topics, ${totalMocks} mocks) + diagnostics`,
+  `[mock-manifest] scanned ${Object.keys(manifest).length} topics (${totalMocks} mocks) + wrote static diagnostics`,
 );
