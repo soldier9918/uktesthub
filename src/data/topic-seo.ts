@@ -1540,7 +1540,6 @@ export const topicSeo: Record<string, TopicSeo> = {
   "cs-verbal": generic("Civil Service Verbal Reasoning", "the Civil Service Recruitment team", "the verbal reasoning test used in Civil Service Fast Stream, Fast Track and many departmental recruitment routes"),
   "cs-numerical": generic("Civil Service Numerical Reasoning", "the Civil Service Recruitment team", "the numerical reasoning test used at most Civil Service grade-7 and Fast Stream applications"),
   "border-force": generic("Border Force Recruitment Test", "Home Office Border Force", "the Border Force entry assessment — situational judgement, behavioural style and competency-based interview, sat as part of the Border Force Officer application"),
-  "border-force": generic("Border Force Recruitment Test", "Home Office Border Force", "the Border Force entry assessment — situational judgement, behavioural style and competency-based interview, sat as part of the Border Force Officer application"),
 
   // -------- HGV / LGV & LOGISTICS ------------------------------------
   "driver-cpc-module-2": generic("Driver CPC Module 2 (Case Studies)", "the DVSA", "the Driver CPC Module 2 case studies test — 7 on-screen scenarios with multiple-choice questions, required to drive professionally for a living in a lorry, bus or coach"),
