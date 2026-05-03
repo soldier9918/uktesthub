@@ -48,6 +48,9 @@ export function AdminGate({ children }: { children: ReactNode }) {
             <Link to="/admin-kb20/questions" className="hover:underline">
               Questions
             </Link>
+            <Link to="/admin-kb20/users" className="hover:underline">
+              Users
+            </Link>
           </nav>
           <div className="flex items-center gap-2 text-muted-foreground">
             <span>{user.email}</span>

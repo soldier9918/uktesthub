@@ -42,6 +42,7 @@ import { Route as QuizSlugRouteImport } from './routes/quiz.$slug'
 import { Route as GuideSlugRouteImport } from './routes/guide.$slug'
 import { Route as CategorySlugRouteImport } from './routes/category.$slug'
 import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
+import { Route as AdminKb20UsersRouteImport } from './routes/admin-kb20.users'
 import { Route as AdminKb20LoginRouteImport } from './routes/admin-kb20.login'
 import { Route as AdminKb20DiagnosticsRouteImport } from './routes/admin-kb20.diagnostics'
 import { Route as AdminKb20QuestionsIndexRouteImport } from './routes/admin-kb20.questions.index'
@@ -212,6 +213,11 @@ const BlogSlugRoute = BlogSlugRouteImport.update({
   path: '/$slug',
   getParentRoute: () => BlogRoute,
 } as any)
+const AdminKb20UsersRoute = AdminKb20UsersRouteImport.update({
+  id: '/admin-kb20/users',
+  path: '/admin-kb20/users',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AdminKb20LoginRoute = AdminKb20LoginRouteImport.update({
   id: '/admin-kb20/login',
   path: '/admin-kb20/login',
@@ -262,6 +268,7 @@ export interface FileRoutesByFullPath {
   '/terms': typeof TermsRoute
   '/admin-kb20/diagnostics': typeof AdminKb20DiagnosticsRoute
   '/admin-kb20/login': typeof AdminKb20LoginRoute
+  '/admin-kb20/users': typeof AdminKb20UsersRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/category/$slug': typeof CategorySlugRoute
   '/guide/$slug': typeof GuideSlugRoute
@@ -300,6 +307,7 @@ export interface FileRoutesByTo {
   '/terms': typeof TermsRoute
   '/admin-kb20/diagnostics': typeof AdminKb20DiagnosticsRoute
   '/admin-kb20/login': typeof AdminKb20LoginRoute
+  '/admin-kb20/users': typeof AdminKb20UsersRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/category/$slug': typeof CategorySlugRoute
   '/guide/$slug': typeof GuideSlugRoute
@@ -340,6 +348,7 @@ export interface FileRoutesById {
   '/terms': typeof TermsRoute
   '/admin-kb20/diagnostics': typeof AdminKb20DiagnosticsRoute
   '/admin-kb20/login': typeof AdminKb20LoginRoute
+  '/admin-kb20/users': typeof AdminKb20UsersRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/category/$slug': typeof CategorySlugRoute
   '/guide/$slug': typeof GuideSlugRoute
@@ -381,6 +390,7 @@ export interface FileRouteTypes {
     | '/terms'
     | '/admin-kb20/diagnostics'
     | '/admin-kb20/login'
+    | '/admin-kb20/users'
     | '/blog/$slug'
     | '/category/$slug'
     | '/guide/$slug'
@@ -419,6 +429,7 @@ export interface FileRouteTypes {
     | '/terms'
     | '/admin-kb20/diagnostics'
     | '/admin-kb20/login'
+    | '/admin-kb20/users'
     | '/blog/$slug'
     | '/category/$slug'
     | '/guide/$slug'
@@ -458,6 +469,7 @@ export interface FileRouteTypes {
     | '/terms'
     | '/admin-kb20/diagnostics'
     | '/admin-kb20/login'
+    | '/admin-kb20/users'
     | '/blog/$slug'
     | '/category/$slug'
     | '/guide/$slug'
@@ -498,6 +510,7 @@ export interface RootRouteChildren {
   TermsRoute: typeof TermsRoute
   AdminKb20DiagnosticsRoute: typeof AdminKb20DiagnosticsRoute
   AdminKb20LoginRoute: typeof AdminKb20LoginRoute
+  AdminKb20UsersRoute: typeof AdminKb20UsersRoute
   CategorySlugRoute: typeof CategorySlugRoute
   GuideSlugRoute: typeof GuideSlugRoute
   QuizSlugRoute: typeof QuizSlugRoute
@@ -740,6 +753,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogSlugRouteImport
       parentRoute: typeof BlogRoute
     }
+    '/admin-kb20/users': {
+      id: '/admin-kb20/users'
+      path: '/admin-kb20/users'
+      fullPath: '/admin-kb20/users'
+      preLoaderRoute: typeof AdminKb20UsersRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/admin-kb20/login': {
       id: '/admin-kb20/login'
       path: '/admin-kb20/login'
@@ -812,6 +832,7 @@ const rootRouteChildren: RootRouteChildren = {
   TermsRoute: TermsRoute,
   AdminKb20DiagnosticsRoute: AdminKb20DiagnosticsRoute,
   AdminKb20LoginRoute: AdminKb20LoginRoute,
+  AdminKb20UsersRoute: AdminKb20UsersRoute,
   CategorySlugRoute: CategorySlugRoute,
   GuideSlugRoute: GuideSlugRoute,
   QuizSlugRoute: QuizSlugRoute,
