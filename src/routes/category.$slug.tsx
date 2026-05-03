@@ -151,13 +151,16 @@ function CategoryPage() {
                   </Link>,
 
                   // TEST CARD (right column)
-                  <Link
-                    key={`${t.slug}-test`}
-                    to="/topic/$slug"
-                    params={{ slug: t.slug }}
-                    aria-label={`Open ${t.title} — ${TOTAL_MOCKS_PER_TOPIC} free mock tests`}
-                    className="group relative flex h-full flex-col justify-between overflow-hidden rounded-2xl border border-border bg-card p-6 shadow-soft transition-all duration-200 hover:-translate-y-0.5 hover:border-coral/40 hover:shadow-elevated"
-                  >
+                  <div key={`${t.slug}-test`} className="relative">
+                    <div className="absolute right-3 top-3 z-10">
+                      <BookmarkButton topicSlug={t.slug} />
+                    </div>
+                    <Link
+                      to="/topic/$slug"
+                      params={{ slug: t.slug }}
+                      aria-label={`Open ${t.title} — ${TOTAL_MOCKS_PER_TOPIC} free mock tests`}
+                      className="group relative flex h-full flex-col justify-between overflow-hidden rounded-2xl border border-border bg-card p-6 shadow-soft transition-all duration-200 hover:-translate-y-0.5 hover:border-coral/40 hover:shadow-elevated"
+                    >
                     <div>
                       <div className="flex items-start gap-4">
                         <span
@@ -165,7 +168,7 @@ function CategoryPage() {
                         >
                           <CategoryIcon name={category.icon} className="h-6 w-6" />
                         </span>
-                        <div className="min-w-0">
+                        <div className="min-w-0 pr-8">
                           <p className="text-[11px] font-semibold uppercase tracking-wider text-muted-foreground">
                             Practice Test
                           </p>
@@ -187,7 +190,8 @@ function CategoryPage() {
                         <ArrowRight className="h-4 w-4" />
                       </span>
                     </div>
-                  </Link>,
+                    </Link>
+                  </div>,
                 ];
               })}
             </div>
