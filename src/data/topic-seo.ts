@@ -1540,6 +1540,42 @@ export const topicSeo: Record<string, TopicSeo> = {
   "cs-verbal": generic("Civil Service Verbal Reasoning", "the Civil Service Recruitment team", "the verbal reasoning test used in Civil Service Fast Stream, Fast Track and many departmental recruitment routes"),
   "cs-numerical": generic("Civil Service Numerical Reasoning", "the Civil Service Recruitment team", "the numerical reasoning test used at most Civil Service grade-7 and Fast Stream applications"),
   "border-force": generic("Border Force Recruitment Test", "Home Office Border Force", "the Border Force entry assessment — situational judgement, behavioural style and competency-based interview, sat as part of the Border Force Officer application"),
+  "border-force": generic("Border Force Recruitment Test", "Home Office Border Force", "the Border Force entry assessment — situational judgement, behavioural style and competency-based interview, sat as part of the Border Force Officer application"),
+
+  // -------- HGV / LGV & LOGISTICS ------------------------------------
+  "driver-cpc-module-2": generic("Driver CPC Module 2 (Case Studies)", "the DVSA", "the Driver CPC Module 2 case studies test — 7 on-screen scenarios with multiple-choice questions, required to drive professionally for a living in a lorry, bus or coach"),
+  "driver-cpc-module-4": generic("Driver CPC Module 4 (Practical Demonstration Theory)", "the DVSA", "the underpinning theory for Driver CPC Module 4 — vehicle safety, securing loads, emergency procedures and the daily walkaround check"),
+  "adr-dangerous-goods": generic("ADR Dangerous Goods Awareness", "SQA / City & Guilds on behalf of the DVSA", "the ADR driver training assessment — required to carry packaged or tanker dangerous goods on UK and European roads. Covers the nine UN classes, documentation and emergency response"),
+  "forklift-theory": generic("Forklift Truck Theory (RTITB / ITSSAR)", "RTITB and ITSSAR", "the underpinning knowledge test for counterbalance and reach forklift truck operation — pre-use checks, stability triangle, load handling and HSE L117 guidance"),
+  "transport-manager-cpc": generic("Transport Manager CPC Practice", "OCR on behalf of the Traffic Commissioners", "the Transport Manager CPC (Road Haulage) — multiple-choice and case-study exam required to be the named transport manager on a UK Operator Licence"),
+
+  // -------- CARE & SOCIAL WORK --------------------------------------
+  "care-certificate": generic("Care Certificate (15 Standards)", "Skills for Care, Skills for Health and Health Education England", "the 15-standard induction framework for new health and social care workers in England — covers duty of care, safeguarding, person-centred values and infection prevention"),
+  "adult-social-care": generic("Level 2 Adult Social Care", "City & Guilds, Highfield and NCFE CACHE", "the Level 2 Diploma in Adult Care knowledge test — communication, equality and diversity, safeguarding, health and safety in care settings"),
+  "safeguarding-adults": generic("Safeguarding Adults", "Skills for Care and the Care Quality Commission (CQC)", "Level 2 / 3 safeguarding adults practice — types of abuse, the Care Act 2014, mental capacity and how to raise a safeguarding alert"),
+  "medication-awareness": generic("Medication Awareness in Care", "Skills for Care and NICE guidance NG67", "safe handling and administration of medicines in social care — the six rights, controlled drugs, MAR charts and reporting errors"),
+  "social-work-england": generic("Social Work England Readiness", "Social Work England", "a knowledge primer for newly-qualified social workers — the SWE professional standards, ASYE programme and fitness to practise framework"),
+
+  // -------- BEAUTY & WELLBEING --------------------------------------
+  "beauty-therapy-level-2": generic("Level 2 Beauty Therapy Theory", "VTCT, City & Guilds and ITEC", "the Level 2 Diploma in Beauty Therapy underpinning knowledge — anatomy and physiology, skin analysis, contraindications and salon health and safety"),
+  "barbering-level-2": generic("Barbering Level 2 Theory", "VTCT and City & Guilds", "the Level 2 Diploma in Barbering theory — consultation, cutting techniques, beard shaping, shaving and salon hygiene"),
+  "nail-technician": generic("Nail Technician Theory", "VTCT and ITEC", "the Level 2 / 3 nail services theory — nail anatomy, manicure and pedicure procedures, gel and acrylic enhancements and contraindications"),
+  "infection-control-beauty": generic("Infection Control for Beauty", "the Hair and Beauty Industry Authority (HABIA) and CIEH", "infection prevention and control for hair, beauty and aesthetics professionals — sterilisation, single-use tools, blood-spillage protocols and HTM 01-05"),
+  "hairdressing-level-2": generic("Hairdressing Level 2 Theory", "VTCT, City & Guilds and ITEC", "the Level 2 Diploma in Hairdressing theory — consultation, cutting, colouring, shampooing and salon health and safety"),
+
+  // -------- RETAIL & CUSTOMER SERVICE -------------------------------
+  "retail-level-2": generic("Retail Level 2 Knowledge", "City & Guilds and Highfield", "the Level 2 Certificate in Retail Knowledge — customer service, stock handling, loss prevention, visual merchandising and selling techniques"),
+  "abta-travel-agent": generic("ABTA Travel Agent Practice", "ABTA — The Travel Association", "knowledge tests for travel agents — Package Travel Regulations, ABTA Code of Conduct, ATOL protection and IATA basics"),
+  "customer-service-level-2": generic("Customer Service Level 2", "City & Guilds, Highfield and CIEH", "the Level 2 Certificate in Customer Service Knowledge — communication, complaint handling, service recovery and consumer rights"),
+  "visual-merchandising": generic("Visual Merchandising Basics", "City & Guilds and ABC Awards", "introductory visual merchandising knowledge — store layout, planograms, window displays, lighting and colour theory"),
+  "age-restricted-sales": generic("Age-Restricted Sales (Challenge 25)", "the Trading Standards Institute and Highfield", "Challenge 25 awareness — alcohol, tobacco, vapes, knives and fireworks. Covers acceptable ID, refusal logs and the Licensing Act 2003"),
+
+  // -------- ANIMAL CARE & VETERINARY --------------------------------
+  "rvn-pre-registration": generic("RVN Pre-Registration Theory", "the Royal College of Veterinary Surgeons (RCVS)", "the Day One Competences and Skills List for student veterinary nurses preparing for RCVS registration"),
+  "dog-grooming-theory": generic("Dog Grooming Theory", "iPET Network and City & Guilds", "the Level 2 / 3 Diploma in Professional Dog Grooming theory — coat types, breed standards, salon hygiene and handling"),
+  "animal-first-aid": generic("Animal First Aid", "iPET Network and the Canine First Aid Association", "first aid for cats and dogs — CPR, choking, bleeding, poisoning, heatstroke and when to call the vet"),
+  "canine-behaviour": generic("Canine Behaviour Basics", "the Animal Behaviour and Training Council (ABTC)", "introductory canine behaviour and training knowledge — body language, learning theory, socialisation and common problem behaviours"),
+  "equine-care": generic("Equine Care Theory", "BHS (British Horse Society) and City & Guilds", "the Level 2 Diploma in Horse Care theory — feeding, watering, grooming, tack fitting, stable management and equine first aid"),
 };
 
 export const getTopicSeo = (slug: string): TopicSeo | undefined =>
