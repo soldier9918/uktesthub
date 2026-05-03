@@ -4,7 +4,7 @@ import { ArrowRight, Clock, ListChecks, Search } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { categories } from "@/data/categories";
-import { getQuiz } from "@/data/quizzes";
+import { getQuizMeta } from "@/data/quizzes";
 
 export const Route = createFileRoute("/all-tests")({
   head: () => ({
