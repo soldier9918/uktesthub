@@ -10,6 +10,8 @@ const root = join(__dirname, "..");
 const mocksDir = join(root, "public", "mocks");
 const outManifest = join(root, "src", "data", "mocks", "manifest.json");
 const outDiagnostics = join(root, "src", "data", "mocks", "diagnostics.json");
+const outPublicDiagnostics = join(root, "public", "mocks", "diagnostics.json");
+const outImageInventory = join(root, "public", "mocks", "image-inventory.json");
 
 const files = readdirSync(mocksDir).filter((f) => f.endsWith(".json"));
 const manifest = {};
@@ -82,6 +84,20 @@ for (const file of files) {
 mkdirSync(dirname(outManifest), { recursive: true });
 writeFileSync(outManifest, JSON.stringify(manifest));
 writeFileSync(outDiagnostics, JSON.stringify(diagnostics));
+writeFileSync(outPublicDiagnostics, JSON.stringify(diagnostics));
+const imageInventory = [];
+const imageRoot = join(root, "public", "quiz-images");
+function collectImages(dir) {
+  for (const name of readdirSync(dir, { withFileTypes: true })) {
+    const full = join(dir, name.name);
+    if (name.isDirectory()) collectImages(full);
+    else if (/\.(png|jpe?g|webp|svg)$/i.test(name.name)) {
+      imageInventory.push(full.replace(join(root, "public"), "").replaceAll("\\\\", "/"));
+    }
+  }
+}
+collectImages(imageRoot);
+writeFileSync(outImageInventory, JSON.stringify(imageInventory.sort()));
 const totalMocks = Object.values(manifest).reduce((n, t) => n + t.mocks.length, 0);
 console.log(
   `[mock-manifest] wrote manifest (${Object.keys(manifest).length} topics, ${totalMocks} mocks) + diagnostics`,
