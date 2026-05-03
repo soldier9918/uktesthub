@@ -3,6 +3,7 @@ import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { AdSlot } from "@/components/AdSlot";
+import { BookmarkButton } from "@/components/BookmarkButton";
 import { CategoryIcon, accentClasses } from "@/components/CategoryIcon";
 import { findTopic } from "@/data/categories";
 import { listMockSlots, QUESTIONS_PER_MOCK } from "@/data/mocks";
