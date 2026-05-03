@@ -167,6 +167,8 @@ function QuestionsBrowser() {
   const [bump, setBump] = useState(0);
   const overrides = useOverrides();
   void bump;
+
+  const types = useMemo(() => {
     const s = new Set<string>();
     (questions as FlatQuestion[]).forEach((q: FlatQuestion) => s.add(q.type));
     return ["all", ...Array.from(s).sort()];
