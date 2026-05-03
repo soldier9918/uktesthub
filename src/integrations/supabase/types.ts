@@ -14,6 +14,54 @@ export type Database = {
   }
   public: {
     Tables: {
+      bookmarks: {
+        Row: {
+          created_at: string
+          id: string
+          topic_slug: string
+          user_id: string
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          topic_slug: string
+          user_id: string
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          topic_slug?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
+      profiles: {
+        Row: {
+          avatar_url: string | null
+          created_at: string
+          display_name: string | null
+          id: string
+          subscription_tier: string
+          updated_at: string
+        }
+        Insert: {
+          avatar_url?: string | null
+          created_at?: string
+          display_name?: string | null
+          id: string
+          subscription_tier?: string
+          updated_at?: string
+        }
+        Update: {
+          avatar_url?: string | null
+          created_at?: string
+          display_name?: string | null
+          id?: string
+          subscription_tier?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
       question_overrides: {
         Row: {
           correct_answer: Json | null
@@ -56,6 +104,78 @@ export type Database = {
           topic?: string
           updated_at?: string
           updated_by?: string | null
+        }
+        Relationships: []
+      }
+      quiz_attempts: {
+        Row: {
+          completed_at: string
+          duration_seconds: number | null
+          id: string
+          mock_slug: string
+          passed: boolean
+          percent: number
+          score: number
+          topic_slug: string
+          total: number
+          user_id: string
+        }
+        Insert: {
+          completed_at?: string
+          duration_seconds?: number | null
+          id?: string
+          mock_slug: string
+          passed?: boolean
+          percent: number
+          score: number
+          topic_slug: string
+          total: number
+          user_id: string
+        }
+        Update: {
+          completed_at?: string
+          duration_seconds?: number | null
+          id?: string
+          mock_slug?: string
+          passed?: boolean
+          percent?: number
+          score?: number
+          topic_slug?: string
+          total?: number
+          user_id?: string
+        }
+        Relationships: []
+      }
+      quiz_progress: {
+        Row: {
+          answers: Json
+          current_index: number
+          id: string
+          mock_slug: string
+          started_at: string
+          topic_slug: string | null
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          answers?: Json
+          current_index?: number
+          id?: string
+          mock_slug: string
+          started_at?: string
+          topic_slug?: string | null
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          answers?: Json
+          current_index?: number
+          id?: string
+          mock_slug?: string
+          started_at?: string
+          topic_slug?: string | null
+          updated_at?: string
+          user_id?: string
         }
         Relationships: []
       }
