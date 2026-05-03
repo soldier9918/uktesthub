@@ -5,6 +5,9 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { AdminGate } from "@/components/AdminGate";
+import { QuestionEditDialog } from "@/components/QuestionEditDialog";
+import { useOverrides, invalidateOverrides } from "@/lib/overrides";
 
 type RawQuestion = Record<string, unknown> & {
   id?: string;
