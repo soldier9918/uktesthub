@@ -336,7 +336,7 @@ function HomePage() {
 
         {/* FEATURED MOCK TESTS */}
         <section>
-          <div className="flex items-end justify-between gap-4">
+          <div className="flex flex-col items-center text-center">
             <SectionTitle>Featured Mock Tests</SectionTitle>
           </div>
           <div className="mt-3 text-right">
@@ -821,9 +821,12 @@ function HomePage() {
           </ul>
         </section>
 
+        {/* Reserved ad slot before Latest from the Blog */}
+        <AdSlot size="leaderboard" className="mt-14" />
+
         {/* LATEST FROM THE BLOG */}
         <section className="mt-20">
-          <div className="flex items-end justify-between gap-4">
+          <div className="flex flex-col items-center text-center">
             <SectionTitle>Latest from the Blog</SectionTitle>
           </div>
           <div className="mt-3 text-right">
