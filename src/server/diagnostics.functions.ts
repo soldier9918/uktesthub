@@ -1,0 +1,28 @@
+import { createServerFn } from "@tanstack/react-start";
+import { requireSupabaseAuth } from "@/integrations/supabase/auth-middleware";
+
+export type RuntimeLog = {
+  id: string;
+  level: string;
+  message: string;
+  context: unknown;
+  created_at: string;
+};
+
+export const getRecentServerLogs = createServerFn({ method: "GET" })
+  .middleware([requireSupabaseAuth])
+  .handler(async ({ context }): Promise<{ logs: RuntimeLog[]; error: string | null }> => {
+    const { supabase, userId } = context;
+    const { data: isAdmin } = await supabase.rpc("has_role", {
+      _user_id: userId,
+      _role: "admin",
+    });
+    if (!isAdmin) return { logs: [], error: "Forbidden" };
+    const { data, error } = await supabase
+      .from("runtime_logs")
+      .select("id,level,message,context,created_at")
+      .order("created_at", { ascending: false })
+      .limit(100);
+    if (error) return { logs: [], error: error.message };
+    return { logs: (data ?? []) as RuntimeLog[], error: null };
+  });
