@@ -1,0 +1,2 @@
+
+REVOKE ALL ON FUNCTION public.grant_admin_on_signup() FROM PUBLIC, anon, authenticated;
