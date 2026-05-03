@@ -40,7 +40,7 @@ export const Route = createFileRoute("/admin/diagnostics")({
 });
 
 function Diagnostics() {
-  const stats = useMemo(buildStats, []);
+  // `stats` is a module-level constant from precomputed diagnostics.json.
   const allReferenced = useMemo(() => {
     const s = new Set<string>();
     for (const t of stats) for (const p of t.imagePaths) s.add(p);
