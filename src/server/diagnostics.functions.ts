@@ -5,7 +5,7 @@ export type RuntimeLog = {
   id: string;
   level: string;
   message: string;
-  context: unknown;
+  context: Record<string, unknown> | null;
   created_at: string;
 };
 
