@@ -151,7 +151,7 @@ export const categories: Category[] = [
     short: "TfL SERU, Topographical, PHV licence, ULEZ & Congestion Charge",
     description:
       "Free practice tests for London private hire and taxi drivers — TfL SERU, Topographical Assessment, PHV licence knowledge, ULEZ, Congestion Charge, safeguarding and accessibility duties.",
-    icon: "Car",
+    icon: "Taxi",
     accent: "coral",
     heroImage: heroTaxi,
     topics: [
