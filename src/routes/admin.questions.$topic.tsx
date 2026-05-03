@@ -163,8 +163,10 @@ function QuestionsBrowser() {
   const [type, setType] = useState<string>("all");
   const [imageFilter, setImageFilter] = useState<"all" | "with" | "without">("all");
   const [page, setPage] = useState(1);
-
-  const types = useMemo(() => {
+  const [editing, setEditing] = useState<FlatQuestion | null>(null);
+  const [bump, setBump] = useState(0);
+  const overrides = useOverrides();
+  void bump;
     const s = new Set<string>();
     (questions as FlatQuestion[]).forEach((q: FlatQuestion) => s.add(q.type));
     return ["all", ...Array.from(s).sort()];
