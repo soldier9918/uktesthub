@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-// Build-time only: scan public/mocks/*.json and emit a tiny metadata manifest.
-// The manifest is bundled at runtime; the full question files stay as static assets.
+// Build-time only: scan public/mocks/*.json and emit a tiny metadata manifest
+// plus per-topic diagnostics. The full question files stay as static assets.
 import { readdirSync, readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -8,10 +8,20 @@ import { fileURLToPath } from "node:url";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const root = join(__dirname, "..");
 const mocksDir = join(root, "public", "mocks");
-const outFile = join(root, "src", "data", "mocks", "manifest.json");
+const outManifest = join(root, "src", "data", "mocks", "manifest.json");
+const outDiagnostics = join(root, "src", "data", "mocks", "diagnostics.json");
 
 const files = readdirSync(mocksDir).filter((f) => f.endsWith(".json"));
 const manifest = {};
+const diagnostics = {};
+
+function collectQuestions(data) {
+  if (data.version === 2 && Array.isArray(data.bank)) return data.bank;
+  if (Array.isArray(data.tests)) {
+    return data.tests.flatMap((t) => t.questions ?? []);
+  }
+  return [];
+}
 
 for (const file of files) {
   let data;
@@ -46,11 +56,33 @@ for (const file of files) {
 
   mocks.sort((a, b) => a.mockNumber - b.mockNumber);
   manifest[topic] = { topic, file, mocks };
+
+  // Per-topic diagnostics (no question text — just counts and image paths).
+  const qs = collectQuestions(data);
+  const byType = {};
+  const imagePaths = new Set();
+  let withImage = 0;
+  for (const q of qs) {
+    const t = (q.type || "mcq").replace(/_/g, "-");
+    byType[t] = (byType[t] || 0) + 1;
+    if (q.image) {
+      withImage++;
+      imagePaths.add(q.image);
+    }
+  }
+  diagnostics[topic] = {
+    topic,
+    total: qs.length,
+    withImage,
+    byType,
+    imagePaths: Array.from(imagePaths),
+  };
 }
 
-mkdirSync(dirname(outFile), { recursive: true });
-writeFileSync(outFile, JSON.stringify(manifest));
+mkdirSync(dirname(outManifest), { recursive: true });
+writeFileSync(outManifest, JSON.stringify(manifest));
+writeFileSync(outDiagnostics, JSON.stringify(diagnostics));
 const totalMocks = Object.values(manifest).reduce((n, t) => n + t.mocks.length, 0);
 console.log(
-  `[mock-manifest] wrote ${outFile} — ${Object.keys(manifest).length} topics, ${totalMocks} mocks`,
+  `[mock-manifest] wrote manifest (${Object.keys(manifest).length} topics, ${totalMocks} mocks) + diagnostics`,
 );
