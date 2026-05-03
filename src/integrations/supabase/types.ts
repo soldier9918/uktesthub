@@ -59,6 +59,30 @@ export type Database = {
         }
         Relationships: []
       }
+      runtime_logs: {
+        Row: {
+          context: Json | null
+          created_at: string
+          id: string
+          level: string
+          message: string
+        }
+        Insert: {
+          context?: Json | null
+          created_at?: string
+          id?: string
+          level?: string
+          message: string
+        }
+        Update: {
+          context?: Json | null
+          created_at?: string
+          id?: string
+          level?: string
+          message?: string
+        }
+        Relationships: []
+      }
       user_roles: {
         Row: {
           created_at: string
