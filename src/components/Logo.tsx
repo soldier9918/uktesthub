@@ -10,7 +10,7 @@ type Props = {
 export function Logo({ variant = "dark", showTagline = true, size = "md" }: Props) {
   const text = variant === "dark" ? "text-foreground" : "text-navy-foreground";
   const sub = variant === "dark" ? "text-muted-foreground" : "text-navy-foreground/70";
-  const flagSize = size === "lg" ? "h-12 w-12" : size === "sm" ? "h-8 w-8" : "h-10 w-10";
+  const flagSize = size === "lg" ? "h-16 w-16" : size === "sm" ? "h-10 w-10" : "h-14 w-14";
   const wordSize = size === "lg" ? "text-2xl md:text-3xl" : size === "sm" ? "text-base" : "text-xl";
 
   return (
