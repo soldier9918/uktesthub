@@ -17,6 +17,7 @@ import iconLegal from "@/assets/icon-legal.png";
 import iconMilitary from "@/assets/icon-military.png";
 import iconMaritimeAviation from "@/assets/icon-maritime-aviation.png";
 import iconGovernment from "@/assets/icon-government.png";
+import iconTaxi from "@/assets/icon-taxi.png";
 
 // `name` is the lucide icon key kept in src/data/categories.ts so we don't have
 // to migrate the data layer — we just map it to a premium illustrated PNG.
@@ -40,6 +41,7 @@ const iconMap: Record<string, string> = {
   Siren: iconMilitary,
   Plane: iconMaritimeAviation,
   Landmark: iconGovernment,
+  Taxi: iconTaxi,
 };
 
 export function CategoryIcon({
