@@ -9,11 +9,35 @@ import { listMockSlots } from "@/data/mocks";
 
 
 export const Route = createFileRoute("/quiz/$slug")({
-  loader: ({ params }) => {
-    const quiz = getQuiz(params.slug);
+  loader: async ({ params }) => {
+    const quiz = await getQuiz(params.slug);
     if (!quiz) throw notFound();
     return { quiz };
   },
+  errorComponent: ({ error }) => (
+    <div className="mx-auto max-w-xl px-4 py-16 text-center">
+      <h1 className="font-display text-2xl font-bold">
+        Couldn’t load this mock test
+      </h1>
+      <p className="mt-2 text-sm text-muted-foreground">
+        {error instanceof Error ? error.message : "Please try again in a moment."}
+      </p>
+      <Link to="/" className="mt-6 inline-block text-coral hover:underline">
+        Back to home
+      </Link>
+    </div>
+  ),
+  notFoundComponent: () => (
+    <div className="mx-auto max-w-xl px-4 py-16 text-center">
+      <h1 className="font-display text-2xl font-bold">Mock test not found</h1>
+      <p className="mt-2 text-sm text-muted-foreground">
+        It may have been moved or isn’t available yet.
+      </p>
+      <Link to="/" className="mt-6 inline-block text-coral hover:underline">
+        Back to home
+      </Link>
+    </div>
+  ),
   head: ({ loaderData, params }) => {
     const q = loaderData?.quiz;
     const slug = params?.slug ?? "";
