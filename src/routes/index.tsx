@@ -379,10 +379,10 @@ function HomePage() {
                       </h3>
                       <div className="mt-3 flex flex-wrap gap-x-3 gap-y-1 text-[11px] text-muted-foreground">
                         <span className="inline-flex items-center gap-1">
-                          <ListChecks className="h-3 w-3" /> {q.questionCount} Questions
+                          <ListChecks className="h-3 w-3" /> {f.questionCount} Questions
                         </span>
                         <span className="inline-flex items-center gap-1">
-                          <Clock className="h-3 w-3" /> {Math.round(q.timeLimit / 60)} Mins
+                          <Clock className="h-3 w-3" /> {f.minutes} Mins
                         </span>
                       </div>
                       <span
@@ -436,7 +436,7 @@ function HomePage() {
             <aside className="lg:sticky lg:top-24">
               <Link
                 to="/quiz/$slug"
-                params={{ slug: daily.slug }}
+                params={{ slug: dailyQuizMeta.slug }}
                 className="group relative block overflow-hidden rounded-3xl border border-white/15 bg-navy-deep p-6 shadow-elevated transition-transform hover:-translate-y-1 md:p-7"
               >
                 <div className="flex items-center justify-center gap-2">
@@ -452,7 +452,7 @@ function HomePage() {
                   <div className="text-sm leading-snug text-navy-foreground/90">
                     Can you score{" "}
                     <span className="font-display text-2xl font-extrabold text-navy-foreground">
-                      {daily.questions.length}/{daily.questions.length}
+                      {dailyQuizMeta.questionCount}/{dailyQuizMeta.questionCount}
                     </span>
                     <br />
                     on today&rsquo;s
