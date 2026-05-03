@@ -151,6 +151,7 @@ function TopicPage() {
             <span className="rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider backdrop-blur">
               45 Mock Tests
             </span>
+            <BookmarkButton topicSlug={topic.slug} className="bg-white/10 text-white hover:bg-white/20" />
           </div>
           <h1 className="mt-5 font-sans font-black uppercase leading-[0.95] tracking-tight text-6xl md:text-7xl lg:text-8xl">
             {topic.title}
