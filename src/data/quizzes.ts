@@ -1220,12 +1220,67 @@ export const getQuizzesByCategory = (cat: string) =>
   quizzes.filter((q) => q.category === cat);
 export const getDailyQuiz = () =>
   quizzes.find((q) => q.slug === "general-knowledge-daily")!;
-export const getFeaturedQuizzes = () =>
+
+/**
+ * Lightweight, synchronous metadata for a quiz slug. Safe for SSR/listing
+ * pages — never triggers a fetch of full question content.
+ */
+export type QuizMeta = {
+  slug: string;
+  quizTitle: string;
+  category: string;
+  topic: string;
+  questionCount: number;
+  timeLimit: number;
+  difficulty: Quiz["difficulty"];
+};
+
+import {
+  getTopicManifest,
+  listAllTopics,
+  QUESTIONS_PER_MOCK,
+} from "@/data/mocks";
+
+export const getQuizMeta = (slug: string): QuizMeta | undefined => {
+  const direct = quizzes.find((q) => q.slug === slug);
+  if (direct) {
+    return {
+      slug: direct.slug,
+      quizTitle: direct.quizTitle,
+      category: direct.category,
+      topic: direct.topic,
+      questionCount: direct.questions.length,
+      timeLimit: direct.timeLimit,
+      difficulty: direct.difficulty,
+    };
+  }
+  const m = /^(.+)-mock-(\d+)$/.exec(slug);
+  if (!m) return undefined;
+  const topic = m[1];
+  const num = parseInt(m[2], 10);
+  const entry = getTopicManifest(topic);
+  if (!entry) return undefined;
+  const mock = entry.mocks.find((x) => x.mockNumber === num);
+  if (!mock) return undefined;
+  const found = findTopic(topic);
+  return {
+    slug: mock.slug,
+    quizTitle: mock.title,
+    category: found?.category.slug ?? "",
+    topic,
+    questionCount: mock.questionCount || QUESTIONS_PER_MOCK,
+    timeLimit: (mock.questionCount || QUESTIONS_PER_MOCK) * 60,
+    difficulty: "Medium",
+  };
+};
+
+export const getFeaturedQuizzes = (): QuizMeta[] =>
   [
     "driving-theory-mock-1",
     "life-in-the-uk-mock-1",
     "gcse-maths-warmup",
     "numerical-reasoning-starter",
   ]
-    .map((s) => getQuiz(s))
-    .filter((q): q is Quiz => Boolean(q));
+    .map((s) => getQuizMeta(s))
+    .filter((q): q is QuizMeta => Boolean(q));
+
