@@ -214,11 +214,60 @@ function Diagnostics() {
         )}
       </Section>
 
-      <p className="mt-8 text-xs text-muted-foreground">
-        Note: live build/runtime server logs aren't accessible from inside the
-        app. The "Recent admin edits" feed acts as an in-app activity log.
-      </p>
+      <ServerLogs />
     </main>
+  );
+}
+
+type ServerLog = { id: string; level: string; message: string; context: unknown; created_at: string };
+
+function ServerLogs() {
+  const [logs, setLogs] = useState<ServerLog[]>([]);
+  const [err, setErr] = useState<string | null>(null);
+  const [loading, setLoading] = useState(true);
+  const refresh = () => {
+    setLoading(true);
+    getRecentServerLogs()
+      .then((r) => {
+        setLogs((r.logs as ServerLog[]) ?? []);
+        setErr(r.error);
+      })
+      .catch((e) => setErr(String(e?.message ?? e)))
+      .finally(() => setLoading(false));
+  };
+  useEffect(() => { refresh(); }, []);
+  return (
+    <Section title={`Recent server/runtime logs (${logs.length})`}>
+      <div className="mb-2 flex items-center gap-2">
+        <button
+          onClick={refresh}
+          className="rounded-md border border-border bg-background px-3 py-1 text-xs hover:bg-muted"
+        >
+          {loading ? "Refreshing…" : "Refresh"}
+        </button>
+        {err && <span className="text-xs text-destructive">{err}</span>}
+      </div>
+      {logs.length === 0 ? (
+        <Empty>No server logs captured yet.</Empty>
+      ) : (
+        <ul className="mt-2 max-h-96 divide-y divide-border overflow-auto rounded-md border border-border bg-card text-xs">
+          {logs.map((l) => (
+            <li key={l.id} className="px-3 py-2">
+              <div className="flex items-center justify-between gap-2">
+                <Badge variant={l.level === "error" ? "destructive" : "outline"}>{l.level}</Badge>
+                <span className="text-muted-foreground">{new Date(l.created_at).toLocaleString()}</span>
+              </div>
+              <div className="mt-1 font-mono">{l.message}</div>
+              {l.context && (
+                <pre className="mt-1 overflow-x-auto rounded bg-muted/50 p-2 text-[10px]">
+                  {JSON.stringify(l.context, null, 2)}
+                </pre>
+              )}
+            </li>
+          ))}
+        </ul>
+      )}
+    </Section>
   );
 }
 
