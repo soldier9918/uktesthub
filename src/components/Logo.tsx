@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { UnionJack } from "./UnionJack";
+import logoSrc from "@/assets/uktesthub-logo.png";
 
 type Props = {
   variant?: "dark" | "light";
@@ -15,9 +15,8 @@ export function Logo({ variant = "dark", showTagline = true, size = "md" }: Prop
 
   return (
     <Link to="/" className="inline-flex items-center gap-2.5">
-      <span className={`${flagSize} overflow-hidden rounded-md ring-1 ring-black/10 shadow-sm`}>
-        <UnionJack className="h-full w-full" />
-      </span>
+      <img src={logoSrc} alt="UK Test Hub" className={`${flagSize} object-contain`} />
+
       <span className="leading-none">
         <span className="flex items-center gap-1.5">
           <span className={`font-display font-extrabold tracking-tight ${text} ${wordSize}`}>
