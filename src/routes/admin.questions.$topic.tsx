@@ -189,8 +189,8 @@ function QuestionsBrowser() {
   const visible = filtered.slice((pageSafe - 1) * PAGE_SIZE, pageSafe * PAGE_SIZE);
 
   const stats = useMemo(() => {
-    const withImg = questions.filter((q) => q.image).length;
-    const orphan = questions.filter((q) => q.usedInMocks.length === 0).length;
+    const withImg = (questions as FlatQuestion[]).filter((q: FlatQuestion) => q.image).length;
+    const orphan = (questions as FlatQuestion[]).filter((q: FlatQuestion) => q.usedInMocks.length === 0).length;
     return {
       total: questions.length,
       withImg,
@@ -261,7 +261,7 @@ function QuestionsBrowser() {
         </div>
 
         <ol className="mt-4 space-y-3">
-          {visible.map((q, idx) => (
+          {visible.map((q: FlatQuestion, idx: number) => (
             <li
               key={q.id}
               className="rounded-xl border border-border bg-card p-4"
@@ -287,7 +287,7 @@ function QuestionsBrowser() {
                   <p className="mt-2 font-medium">{q.question}</p>
                   {q.options && (
                     <ul className="mt-2 space-y-1 text-sm">
-                      {q.options.map((opt, i) => {
+                      {q.options.map((opt: string, i: number) => {
                         const isCorrect =
                           (typeof q.raw.correctAnswer === "number" &&
                             q.raw.correctAnswer === i) ||

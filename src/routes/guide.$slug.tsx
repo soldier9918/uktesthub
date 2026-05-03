@@ -746,8 +746,8 @@ function GuidePage() {
               </h3>
               <ul className="mt-3 space-y-2 text-sm">
                 {category.topics
-                  .filter((t) => t.slug !== topic.slug)
-                  .map((t) => (
+                  .filter((t: { slug: string; title: string }) => t.slug !== topic.slug)
+                  .map((t: { slug: string; title: string }) => (
                     <li key={t.slug}>
                       <Link
                         to="/guide/$slug"
