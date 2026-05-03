@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
-import { Search, Moon } from "lucide-react";
+import { Search, Moon, Sun } from "lucide-react";
+import { useEffect, useState } from "react";
 import { Logo } from "./Logo";
 
 const nav: { label: string; to: string; slug?: string }[] = [
@@ -7,11 +8,11 @@ const nav: { label: string; to: string; slug?: string }[] = [
   { label: "Driving", to: "/category/$slug", slug: "driving" },
   { label: "UK Life", to: "/category/$slug", slug: "citizenship" },
   { label: "English", to: "/category/$slug", slug: "english" },
-  { label: "Education", to: "/category/$slug", slug: "education" },
+  { label: "IT & Tech", to: "/category/$slug", slug: "education" },
   { label: "Taxi & Private Hire", to: "/category/$slug", slug: "taxi-private-hire" },
   { label: "Professional", to: "/category/$slug", slug: "professional" },
   { label: "NHS", to: "/category/$slug", slug: "nhs" },
-  { label: "Blog", to: "/blog" },
+  { label: "Articles", to: "/blog" },
 ];
 
 export function SiteHeader() {
