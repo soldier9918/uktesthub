@@ -14032,7 +14032,7 @@
     },
     {
       "correctAnswer": 1,
-      "type": "multiple_choice",
+      "type": "image_question",
       "explanation": "This triangle-shaped warning sign notifies drivers that the road ahead narrows from both sides",
       "options": [
         "Road widens on both sides",
@@ -14042,7 +14042,8 @@
       ],
       "question": "A standard UK triangular warning sign with a red border. Inside, two vertical black lines converge slightly at the top, indicating the road narrows from both sides. What does the sign mean?",
       "id": "rs-im-0001",
-      "__rewritten_from_image__": true
+      "image": "/road-signs/road_narrows_on_both_sides.png",
+      "imageAlt": "road narrows on both sides"
     },
     {
       "type": "multiple_choice",
@@ -14143,7 +14144,7 @@
       "__rewritten_from_image__": true
     },
     {
-      "type": "multiple_choice",
+      "type": "image_question",
       "correctAnswer": 0,
       "question": "A circular sign with a red border. Inside, it says '2.0m' (or 6'-6\") with black arrows pointing outwards to the left and right sides. What does the sign mean?",
       "explanation": "The red circle with the '2.0m' and arrows on either side indicates a maximum width limit for vehicles",
@@ -14154,7 +14155,8 @@
         "Length restriction ahead"
       ],
       "id": "rs-im-0009",
-      "__rewritten_from_image__": true
+      "image": "/road-signs/leftside_to_leftside_turning_rightside_to_rightside_turning.png",
+      "imageAlt": "left-side to left-side turning right-side to right-side turning"
     },
     {
       "type": "multiple_choice",
@@ -14185,7 +14187,7 @@
       "__rewritten_from_image__": true
     },
     {
-      "type": "multiple_choice",
+      "type": "image_question",
       "correctAnswer": 1,
       "question": "An inverted triangle (point facing downwards) with a thick red border and a white centre. It may or may not have the words 'GIVE WAY' inside. What does the sign mean?",
       "explanation": "An inverted white triangle with a red border is the 'Give Way' sign, requiring you to yield to traffic on the main road",
@@ -14196,7 +14198,8 @@
         "Priority over oncoming vehicles"
       ],
       "id": "rs-im-0012",
-      "__rewritten_from_image__": true
+      "image": "/road-signs/give_way_to_traffic_on_major_road.png",
+      "imageAlt": "give way to traffic on major road"
     },
     {
       "options": [
@@ -14317,12 +14320,13 @@
         "National speed limit applies",
         "Maximum speed limit 30 mph"
       ],
-      "type": "multiple_choice",
+      "type": "image_question",
       "explanation": "A red circle with a black number (e.g., 30) indicates the maximum legal speed limit on that stretch of road in miles per hour",
       "question": "A UK speed limit sign: a red ring on a white disc with the number '30' printed in the centre. What does this regulatory sign tell you about the speed of your vehicle?",
       "correctAnswer": 3,
       "id": "rs-im-0021",
-      "__rewritten_from_image__": true
+      "image": "/road-signs/maximum_speed.png",
+      "imageAlt": "maximum speed"
     },
     {
       "options": [
@@ -14348,9 +14352,10 @@
       "correctAnswer": 2,
       "explanation": "Two black arrows pointing in opposite directions within a red triangle warn of a road that has two-way traffic where it might otherwise be expected to be one-way",
       "question": "A UK warning sign: a red triangle containing two vertical arrows, one pointing up and one pointing down. What should you expect after passing the sign?",
-      "type": "multiple_choice",
+      "type": "image_question",
       "id": "rs-im-0023",
-      "__rewritten_from_image__": true
+      "image": "/road-signs/one_way_traffic.png",
+      "imageAlt": "one way traffic"
     },
     {
       "options": [
@@ -14362,9 +14367,10 @@
       "correctAnswer": 1,
       "explanation": "A blue circle containing a white number 30 with a red diagonal line through it marks the end of a zone where a minimum speed limit was enforced",
       "question": "A UK road sign: a blue disc with the number '30' in white, crossed through with a red diagonal line. What does the sign with a red diagonal line signify?",
-      "type": "multiple_choice",
+      "type": "image_question",
       "id": "rs-im-0024",
-      "__rewritten_from_image__": true
+      "image": "/road-signs/end_of_20mph_zone.png",
+      "imageAlt": "end of 20mph zone"
     },
     {
       "correctAnswer": 2,
@@ -14389,10 +14395,11 @@
         "Quayside or river bank ahead",
         "Hump bridge ahead"
       ],
-      "type": "multiple_choice",
+      "type": "image_question",
       "correctAnswer": 0,
       "id": "rs-im-0026",
-      "__rewritten_from_image__": true
+      "image": "/road-signs/opening_or_swing_bridge.png",
+      "imageAlt": "opening or swing bridge"
     },
     {
       "question": "A blue circular sign with a white arrow pointing ahead and a small orange rectangle at the base of the arrow. Which road users must follow the direction indicated by the sign?",
@@ -14437,7 +14444,7 @@
       "__rewritten_from_image__": true
     },
     {
-      "type": "multiple_choice",
+      "type": "image_question",
       "correctAnswer": 2,
       "explanation": "This sign warns of a level crossing without a gate or barrier. Always look and listen for approaching trains",
       "options": [
@@ -14448,7 +14455,8 @@
       ],
       "question": "An upward-pointing red triangle with a black silhouette of an old steam locomotive train in the centre. What should you expect at the road ahead when you see the sign?",
       "id": "rs-im-0030",
-      "__rewritten_from_image__": true
+      "image": "/road-signs/level_crossing_without_barrier_or_gate_ahead.png",
+      "imageAlt": "level crossing without barrier or gate ahead"
     },
     {
       "correctAnswer": 1,
@@ -14558,9 +14566,10 @@
       "question": "A circular red sign with a solid white horizontal bar running through the centre, known as the 'No Entry' sign. What does this regulatory sign mean?",
       "explanation": "The 'no entry' sign is one of most important prohibitory signs and indicates that vehicles are forbidden from entering",
       "correctAnswer": 0,
-      "type": "multiple_choice",
+      "type": "image_question",
       "id": "rs-im-0038",
-      "__rewritten_from_image__": true
+      "image": "/road-signs/no_through_road_for_vehicles.png",
+      "imageAlt": "no through road for vehicles"
     },
     {
       "options": [
@@ -14639,15 +14648,16 @@
         "Two-way traffic ahead",
         "No overtaking permitted"
       ],
-      "type": "multiple_choice",
+      "type": "image_question",
       "explanation": "This regulatory sign means that overtaking is not permitted for any motor vehicle",
       "correctAnswer": 3,
       "question": "A circular sign with a red border. Inside, there is a black car on the left and a red car on the right, side-by-side. What does this prohibitory sign indicate?",
       "id": "rs-im-0044",
-      "__rewritten_from_image__": true
+      "image": "/road-signs/no_motor_vehicle.png",
+      "imageAlt": "no motor vehicle"
     },
     {
-      "type": "multiple_choice",
+      "type": "image_question",
       "correctAnswer": 0,
       "explanation": "This sign warns that the single carriageway is coming to an end and the road becomes a dual carriageway",
       "question": "A red-bordered triangle sign featuring two black vertical lines that are joined at the top but split/diverge towards the bottom. What road change is indicated by the sign?",
@@ -14658,7 +14668,8 @@
         "Lane split ahead for different directions"
       ],
       "id": "rs-im-0045",
-      "__rewritten_from_image__": true
+      "image": "/road-signs/dual_carriageway_ends.png",
+      "imageAlt": "dual carriageway ends"
     },
     {
       "options": [
@@ -14748,7 +14759,7 @@
       "question": "A rectangular UK white sign containing a 'No Waiting' symbol (red circle with blue background and one diagonal red line) and the words 'Controlled Zone'. What information does this rectangular sign provide as you enter a new area?",
       "explanation": "This sign tells drivers that they are entering a controlled parking zone where specific restrictions apply",
       "correctAnswer": 1,
-      "type": "multiple_choice",
+      "type": "image_question",
       "options": [
         "No parking at any time",
         "Entry to a controlled parking zone",
@@ -14756,7 +14767,8 @@
         "Local residents parking only"
       ],
       "id": "rs-im-0052",
-      "__rewritten_from_image__": true
+      "image": "/road-signs/end_of_controlled_parking_zone.png",
+      "imageAlt": "end of controlled parking zone"
     },
     {
       "correctAnswer": 2,
@@ -14830,7 +14842,7 @@
     },
     {
       "correctAnswer": 2,
-      "type": "multiple_choice",
+      "type": "image_question",
       "options": [
         "No stopping allowed",
         "Road closed ahead",
@@ -14840,7 +14852,8 @@
       "question": "The standard UK 'No Entry' sign: a solid red circle with a thick horizontal white bar in the centre. What is the mandatory meaning of the sign?",
       "explanation": "The 'No Entry' sign is a red circle with a white horizontal bar, used to stop vehicles from entering a road the wrong way",
       "id": "rs-im-0058",
-      "__rewritten_from_image__": true
+      "image": "/road-signs/stop_and_give_way.png",
+      "imageAlt": "stop and give way"
     },
     {
       "correctAnswer": 0,
@@ -14863,16 +14876,17 @@
         "Two-way traffic crosses a one-way street",
         "End of two-way traffic flow"
       ],
-      "type": "multiple_choice",
+      "type": "image_question",
       "correctAnswer": 1,
       "explanation": "This sign is placed where a road or lane is narrow, warning that oncoming vehicles have priority",
       "question": "Prohibitory red circle sign with two arrows: a black arrow pointing up and a smaller red arrow pointing down. What action should you take when faced with the sign on a narrow road?",
       "id": "rs-im-0060",
-      "__rewritten_from_image__": true
+      "image": "/road-signs/Downward_pointing_arrows_mean_Get_in_lane.png",
+      "imageAlt": "Downward pointing arrows mean Get in lane"
     },
     {
       "correctAnswer": 2,
-      "type": "multiple_choice",
+      "type": "image_question",
       "options": [
         "Crossroads ahead",
         "No through road",
@@ -14882,7 +14896,8 @@
       "question": "UK warning sign for a T-junction. A red triangle containing a black bold 'T' symbol where the vertical bar meets a horizontal bar at the top. Which type of junction does the sign alert you to?",
       "explanation": "This sign indicates a T-junction where the road you are on ends and you must turn either left or right",
       "id": "rs-im-0061",
-      "__rewritten_from_image__": true
+      "image": "/road-signs/no_left_turn.png",
+      "imageAlt": "no left turn"
     },
     {
       "options": [
@@ -15076,12 +15091,13 @@
         "Turn left ahead",
         "No left turn permitted"
       ],
-      "type": "multiple_choice",
+      "type": "image_question",
       "id": "rs-im-0075",
-      "__rewritten_from_image__": true
+      "image": "/road-signs/turn_left.png",
+      "imageAlt": "turn left"
     },
     {
-      "type": "multiple_choice",
+      "type": "image_question",
       "explanation": "A red triangle containing a picture of a gate warns of a level crossing that is protected by gates or barriers",
       "question": "A UK triangular warning sign with a red border. The black silhouette in the center is a traditional five-bar gate. What specific hazard is this triangular sign warning you of?",
       "correctAnswer": 2,
@@ -15092,7 +15108,8 @@
         "Entrance to a private estate"
       ],
       "id": "rs-im-0076",
-      "__rewritten_from_image__": true
+      "image": "/road-signs/level_crossing.png",
+      "imageAlt": "level crossing"
     },
     {
       "explanation": "A circular red sign showing both a car and a motorcycle indicates that no motor vehicles are allowed in that area",
@@ -15109,7 +15126,7 @@
       "__rewritten_from_image__": true
     },
     {
-      "type": "multiple_choice",
+      "type": "image_question",
       "explanation": "At a mini-roundabout, you must give way to traffic approaching from your immediate right and follow the arrows around the central marking",
       "question": "A blue circular mandatory sign with three white arrows following each other in a clockwise circle, representing a mini-roundabout. What is the rule when approaching a junction marked with this blue sign?",
       "correctAnswer": 0,
@@ -15120,7 +15137,8 @@
         "Circular traffic only; do not stop"
       ],
       "id": "rs-im-0078",
-      "__rewritten_from_image__": true
+      "image": "/road-signs/mini_roundabout.png",
+      "imageAlt": "mini roundabout"
     },
     {
       "options": [
@@ -15165,7 +15183,7 @@
       "__rewritten_from_image__": true
     },
     {
-      "type": "multiple_choice",
+      "type": "image_question",
       "question": "A rectangular brown directional/information sign with white silhouettes of a tent and a towed caravan. What is the purpose of a sign with this specific background colour?",
       "correctAnswer": 2,
       "explanation": "Brown signs are used specifically to provide directions to tourist attractions and points of interest",
@@ -15176,7 +15194,8 @@
         "No overnight parking allowed"
       ],
       "id": "rs-im-0082",
-      "__rewritten_from_image__": true
+      "image": "/road-signs/no_towed_caravan.png",
+      "imageAlt": "no towed caravan"
     },
     {
       "options": [
@@ -15314,9 +15333,10 @@
         "No stopping allowed (Clearway)"
       ],
       "question": "UK Clearway sign (no stopping). What does this specific sign mean for all drivers?",
-      "type": "multiple_choice",
+      "type": "image_question",
       "id": "rs-im-0092",
-      "__rewritten_from_image__": true
+      "image": "/road-signs/no_stopping_at_any_time.png",
+      "imageAlt": "no stopping at any time"
     },
     {
       "explanation": "Broken white lines across a side road indicate that you must give way to traffic on the main road",
@@ -15397,13 +15417,14 @@
         "You must slow down to 10mph when driving over these markings"
       ],
       "explanation": "Yellow zigzag lines with the words 'School Keep Clear' indicate an area where stopping or parking is prohibited to ensure children can be seen clearly",
-      "type": "multiple_choice",
+      "type": "image_question",
       "correctAnswer": 0,
       "id": "rs-im-0098",
-      "__rewritten_from_image__": true
+      "image": "/road-signs/keep_crossing_clear.png",
+      "imageAlt": "keep crossing clear"
     },
     {
-      "type": "multiple_choice",
+      "type": "image_question",
       "correctAnswer": 3,
       "question": "A triangular warning sign with a red border showing a black silhouette of a car driving off an edge into wavy water. What specific hazard does the sign alert you to?",
       "explanation": "A red triangle containing a black car falling off a quay or river bank warns of water ahead without a barrier",
@@ -15414,7 +15435,8 @@
         "Quayside or river bank ahead"
       ],
       "id": "rs-im-0099",
-      "__rewritten_from_image__": true
+      "image": "/road-signs/quayside_or_river_bank.png",
+      "imageAlt": "quayside or river bank"
     },
     {
       "type": "multiple_choice",
@@ -15440,9 +15462,10 @@
       ],
       "question": "A vertical rectangular blue sign featuring white icons of a bus and a bicycle, often seen at the start of a dedicated lane. What does this blue information sign indicate?",
       "correctAnswer": 1,
-      "type": "multiple_choice",
+      "type": "image_question",
       "id": "rs-im-0101",
-      "__rewritten_from_image__": true
+      "image": "/road-signs/no_stopping_during_times_shown_on_sign.png",
+      "imageAlt": "no stopping during times shown on sign"
     },
     {
       "options": [
@@ -15454,9 +15477,10 @@
       "explanation": "A red triangle showing a steam locomotive warns of a level crossing that is not controlled by a gate or barrier",
       "question": "A triangular warning sign with a red border and a black silhouette of an old-fashioned steam locomotive. What does the sign tell you about an upcoming railway crossing?",
       "correctAnswer": 0,
-      "type": "multiple_choice",
+      "type": "image_question",
       "id": "rs-im-0102",
-      "__rewritten_from_image__": true
+      "image": "/road-signs/level_crossing_without_barrier.png",
+      "imageAlt": "level crossing without barrier"
     },
     {
       "options": [
@@ -15636,9 +15660,10 @@
         "Speed cameras are operating in this area"
       ],
       "correctAnswer": 2,
-      "type": "multiple_choice",
+      "type": "image_question",
       "id": "rs-im-0115",
-      "__rewritten_from_image__": true
+      "image": "/road-signs/box_junction.png",
+      "imageAlt": "box junction"
     },
     {
       "type": "multiple_choice",
@@ -15740,7 +15765,7 @@
     },
     {
       "correctAnswer": 2,
-      "type": "multiple_choice",
+      "type": "image_question",
       "question": "A blue circular mandatory sign featuring a bold white arrow pointing to the left side. What is the instruction given by this circular blue sign?",
       "explanation": "A blue circle without any red border is a mandatory sign, indicating that you must follow the direction shown. In this case, you must turn left",
       "options": [
@@ -15750,7 +15775,8 @@
         "Keep left"
       ],
       "id": "rs-im-0123",
-      "__rewritten_from_image__": true
+      "image": "/road-signs/turn_left_ahead.png",
+      "imageAlt": "turn left ahead"
     },
     {
       "question": "A large rectangular green directional sign with white lettering and a yellow 'A' road number, commonly found at UK junctions. What information is provided by a sign with this background colour?",
@@ -15803,10 +15829,11 @@
       ],
       "explanation": "This sign indicates that the road is a clearway, meaning no stopping is permitted at any time, even for picking up or setting down passengers",
       "question": "A blue circular sign with a red outer border and two diagonal red lines forming a cross (an 'X') over the blue background. What restriction is imposed by the sign?",
-      "type": "multiple_choice",
+      "type": "image_question",
       "correctAnswer": 3,
       "id": "rs-im-0127",
-      "__rewritten_from_image__": true
+      "image": "/road-signs/no_loading_at_any_time.png",
+      "imageAlt": "no loading at any time"
     },
     {
       "question": "A white circular sign with a thick black diagonal stripe running from the top right to the bottom left. What does the sign mean?",
@@ -16098,9 +16125,10 @@
       "explanation": "Zig-zag markings outside schools mean you must not park or stop at any time in that area to ensure children's safety",
       "question": "Road marking: Yellow zig-zag lines on the tarmac with 'SCHOOL KEEP CLEAR' written in yellow. What do these yellow markings on the road signify?",
       "correctAnswer": 1,
-      "type": "multiple_choice",
+      "type": "image_question",
       "id": "rs-im-0148",
-      "__rewritten_from_image__": true
+      "image": "/road-signs/no_waiting_at_any_time.png",
+      "imageAlt": "no waiting at any time"
     },
     {
       "correctAnswer": 0,
@@ -16453,7 +16481,7 @@
       "__rewritten_from_image__": true
     },
     {
-      "type": "multiple_choice",
+      "type": "image_question",
       "correctAnswer": 1,
       "question": "An aerial view of a road junction with a bright yellow 'box' of criss-cross hatched lines painted on the tarmac. What do these criss-cross yellow lines on the road surface mean?",
       "explanation": "A yellow box should be kept clear. You must not enter it unless your exit is clear, except when turning right and blocked by oncoming traffic",
@@ -16464,7 +16492,8 @@
         "Area reserved for emergency vehicles only"
       ],
       "id": "rs-im-0174",
-      "__rewritten_from_image__": true
+      "image": "/road-signs/box_junction_ruling.png",
+      "imageAlt": "box junction ruling"
     },
     {
       "correctAnswer": 2,
@@ -16637,7 +16666,7 @@
     {
       "explanation": "On motorways, blue signs indicate the route to a service area, often showing the distance and facilities available",
       "question": "A blue rectangular motorway sign showing a large white letter 'P', a fuel pump symbol, and a cutlery symbol. What does this blue rectangular sign on a motorway inform you of?",
-      "type": "multiple_choice",
+      "type": "image_question",
       "options": [
         "A rest area with no facilities",
         "A police station ahead",
@@ -16646,7 +16675,8 @@
       ],
       "correctAnswer": 2,
       "id": "rs-im-0187",
-      "__rewritten_from_image__": true
+      "image": "/road-signs/emergency_area_motorway.png",
+      "imageAlt": "emergency area motorway"
     },
     {
       "correctAnswer": 1,
@@ -16775,7 +16805,7 @@
       "__rewritten_from_image__": true
     },
     {
-      "type": "multiple_choice",
+      "type": "image_question",
       "correctAnswer": 2,
       "question": "A horizontal rectangular sign with a series of white 'V' shapes (chevrons) pointing to the right on a blue background. What is the purpose of the sign often found at bends or roundabouts?",
       "options": [
@@ -16786,7 +16816,8 @@
       ],
       "explanation": "The chevron sign points in the direction of the bend to warn drivers of a sharp deviation in the route",
       "id": "rs-im-0197",
-      "__rewritten_from_image__": true
+      "image": "/road-signs/bend_to_right.png",
+      "imageAlt": "bend to right"
     },
     {
       "options": [
@@ -17162,9 +17193,10 @@
         "End of all restrictions",
         "Clearway (no stopping)"
       ],
-      "type": "multiple_choice",
+      "type": "image_question",
       "id": "rs-im-0224",
-      "__rewritten_from_image__": true
+      "image": "/road-signs/no_stopping_clearway.png",
+      "imageAlt": "no stopping clearway"
     },
     {
       "explanation": "This sign indicates that the national speed limit applies on the road beyond the sign",
@@ -17184,7 +17216,7 @@
       "explanation": "The red cross (X) above a lane on a motorway or smart motorway signifies that the lane is closed and must not be used",
       "question": "An electronic overhead gantry over a motorway. Above one specific lane, there is a large illuminated red 'X' symbol. What must you do if you see the signal on a motorway?",
       "correctAnswer": 1,
-      "type": "multiple_choice",
+      "type": "image_question",
       "options": [
         "Variable speed limit in force",
         "Lane closed ahead; do not use this lane",
@@ -17192,7 +17224,8 @@
         "Exit ahead for breakdown vehicles only"
       ],
       "id": "rs-im-0226",
-      "__rewritten_from_image__": true
+      "image": "/road-signs/lane_specific_signal_2_motorway.png",
+      "imageAlt": "lane specific signal 2 motorway"
     },
     {
       "explanation": "A red circle with a car and motorcycle usually means 'no motor vehicles'; however, this specific sign with a bus and cycle means no entry except for those vehicles",
@@ -17310,7 +17343,7 @@
       "question": "A motorway smart signal showing a red 'X' cross and four red lamps flashing in horizontal pairs. What is the mandatory instruction when you see the signal on a motorway gantry?",
       "explanation": "Red flashes on a motorway signal, often accompanied by an 'X', mean you must not drive in that lane",
       "correctAnswer": 0,
-      "type": "multiple_choice",
+      "type": "image_question",
       "options": [
         "Do not proceed in this lane",
         "Breakdown ahead in this lane",
@@ -17318,7 +17351,8 @@
         "Exit the motorway at the next junction"
       ],
       "id": "rs-im-0235",
-      "__rewritten_from_image__": true
+      "image": "/road-signs/lane_specific_signal_motorway.png",
+      "imageAlt": "lane specific signal motorway"
     },
     {
       "options": [
@@ -17995,7 +18029,7 @@
     {
       "question": "Prohibitory sign: red circle, white background, black text showing '14'-6\"' between two black arrows pointing up and down. What is the legal requirement shown by the sign?",
       "correctAnswer": 1,
-      "type": "multiple_choice",
+      "type": "image_question",
       "options": [
         "Maximum width limit",
         "Maximum height limit",
@@ -18004,7 +18038,8 @@
       ],
       "explanation": "A red circle containing a height measurement (e.g., 14' 6\") indicates a mandatory height limit beyond which vehicles cannot pass",
       "id": "rs-im-0284",
-      "__rewritten_from_image__": true
+      "image": "/road-signs/no_vehicles_beyond_point.png",
+      "imageAlt": "no vehicles beyond point"
     },
     {
       "explanation": "Double yellow lines along the edge of the road mean that no waiting is allowed at any time",
@@ -18139,12 +18174,13 @@
         "Contra-flow bus lane",
         "Bus parking only"
       ],
-      "type": "multiple_choice",
+      "type": "image_question",
       "explanation": "A white horizontal bar on a blue background indicates a contra-flow bus lane, allowing buses to travel in the opposite direction to traffic",
       "correctAnswer": 2,
       "question": "A blue rectangular sign showing a white bus silhouette. Below the bus is a white horizontal line/bar. Which of the following describes this blue sign?",
       "id": "rs-im-0294",
-      "__rewritten_from_image__": true
+      "image": "/road-signs/contra_flow_bus_lane.png",
+      "imageAlt": "contra flow bus lane"
     },
     {
       "options": [
@@ -18455,7 +18491,7 @@
       "__rewritten_from_image__": true
     },
     {
-      "type": "multiple_choice",
+      "type": "image_question",
       "correctAnswer": 2,
       "options": [
         "End of motorway restrictions",
@@ -18466,7 +18502,8 @@
       "explanation": "A red cross (X) displayed on a gantry above a motorway lane means the lane is closed and you must not drive in it",
       "question": "An electronic gantry over a three-lane motorway. The left and middle lanes have green arrows, but the right-hand lane has a large red 'X'. What does the red 'X' on a motorway gantry signal mean for drivers?",
       "id": "rs-im-0317",
-      "__rewritten_from_image__": true
+      "image": "/road-signs/lane_closures_2_motorway.png",
+      "imageAlt": "lane closures 2 motorway"
     },
     {
       "type": "multiple_choice",
@@ -18505,10 +18542,11 @@
         "A bus and cycle lane operates during the hours shown"
       ],
       "explanation": "A square blue sign with a white bus and cycle symbol indicates a lane reserved for those vehicles during the times shown",
-      "type": "multiple_choice",
+      "type": "image_question",
       "correctAnswer": 3,
       "id": "rs-im-0320",
-      "__rewritten_from_image__": true
+      "image": "/road-signs/no_waiting_during_times_shown_on_sign.png",
+      "imageAlt": "no waiting during times shown on sign"
     },
     {
       "type": "multiple_choice",
@@ -18668,7 +18706,7 @@
       "explanation": "The 'no waiting' sign (red circle with one blue diagonal) combined with a 'no loading' kerb mark (single yellow stripe) restricts both activities during the times shown",
       "question": "A blue circular sign with a red border and one red diagonal slash, positioned next to a kerb with a single yellow vertical stripe painted on it. What restriction is in place when you see the sign and kerb marking together?",
       "correctAnswer": 0,
-      "type": "multiple_choice",
+      "type": "image_question",
       "options": [
         "No waiting and no loading during the times shown",
         "No stopping at any time",
@@ -18676,7 +18714,8 @@
         "Parking available for disabled badge holders"
       ],
       "id": "rs-im-0332",
-      "__rewritten_from_image__": true
+      "image": "/road-signs/no_loading_or_unloading_at_the_times_shown.png",
+      "imageAlt": "no loading or unloading at the times shown"
     },
     {
       "type": "multiple_choice",
@@ -19114,7 +19153,7 @@
     },
     {
       "correctAnswer": 3,
-      "type": "multiple_choice",
+      "type": "image_question",
       "options": [
         "Roadworks on the hard shoulder",
         "Speed limit 10 mph",
@@ -19124,7 +19163,8 @@
       "question": "A motorway gantry signal showing a large red 'X' (Red X signal) on a black background. What does the signal mean on a motorway?",
       "explanation": "An upright white rectangle with a red 'X' on a black background means the lane is closed and you must not drive in it",
       "id": "rs-im-0364",
-      "__rewritten_from_image__": true
+      "image": "/road-signs/lane_closures_3_motorway.png",
+      "imageAlt": "lane closures 3 motorway"
     },
     {
       "question": "White zig-zag road markings painted on the asphalt at the approaches to a pedestrian crossing. What is the meaning of these white road markings near a crossing?",
@@ -19331,10 +19371,11 @@
       ],
       "correctAnswer": 2,
       "explanation": "A rectangular yellow sign with a black square, circle, or triangle is used to guide drivers along a temporary diversion route while a road is closed",
-      "type": "multiple_choice",
+      "type": "image_question",
       "question": "Direction sign: A small yellow rectangle containing a simple black square symbol. What is the purpose of this symbol on a yellow background?",
       "id": "rs-im-0379",
-      "__rewritten_from_image__": true
+      "image": "/road-signs/diversion_route.png",
+      "imageAlt": "diversion route"
     },
     {
       "question": "Warning sign: A red triangle featuring two black parallel arrows, one pointing upwards and one pointing downwards. What does the sign alert you to?",
@@ -21064,6 +21105,1401 @@
       "question": "Statement: What do yellow transverse marks (dashes) on the edge of the kerb mean \u2014 No parking for cars but motorcycles allowed.",
       "correctAnswer": false,
       "explanation": "The correct answer is: No loading or unloading at certain times. Yellow lines on the kerb (or 'kerb blips') indicate that loading and unloading are restricted at certain times"
+    },
+    {
+      "id": "rs-im-0456",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Lane specific signal 2 motorway",
+        "No motor vehicle",
+        "Check before opening door",
+        "2 second gap"
+      ],
+      "correctAnswer": 3,
+      "explanation": "This sign means: 2 second gap.",
+      "image": "/road-signs/2_second_gap.png",
+      "imageAlt": "2 second gap"
+    },
+    {
+      "id": "rs-im-0457",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Level crossing without barrier",
+        "Downward pointing arrows mean Get in lane",
+        "Advanced stop lane",
+        "Lane closures motorway"
+      ],
+      "correctAnswer": 1,
+      "explanation": "This sign means: Downward pointing arrows mean Get in lane.",
+      "image": "/road-signs/Downward_pointing_arrows_mean_Get_in_lane.png",
+      "imageAlt": "Downward pointing arrows mean Get in lane"
+    },
+    {
+      "id": "rs-im-0458",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Double roundabout",
+        "Lane specific signal motorway",
+        "Adjustments before setting off",
+        "No overtaking"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This sign means: adjustments before setting off.",
+      "image": "/road-signs/adjustments_before_setting_off.png",
+      "imageAlt": "adjustments before setting off"
+    },
+    {
+      "id": "rs-im-0459",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Downward pointing arrows mean Get in lane",
+        "Level crossing",
+        "Advanced stop lane",
+        "No stopping clearway"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This sign means: advanced stop lane.",
+      "image": "/road-signs/advanced_stop_lane.png",
+      "imageAlt": "advanced stop lane"
+    },
+    {
+      "id": "rs-im-0460",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Large vehicle turning",
+        "Find safe place to cross the road",
+        "Ahead only",
+        "Diversion route"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This sign means: ahead only.",
+      "image": "/road-signs/ahead_only.png",
+      "imageAlt": "ahead only"
+    },
+    {
+      "id": "rs-im-0461",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Emergency area motorway",
+        "All lane closures motorway",
+        "No through road for vehicles",
+        "Quayside or river bank"
+      ],
+      "correctAnswer": 1,
+      "explanation": "This sign means: all lane closures motorway.",
+      "image": "/road-signs/all_lane_closures_motorway.png",
+      "imageAlt": "all lane closures motorway"
+    },
+    {
+      "id": "rs-im-0462",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Bend to right",
+        "Keep crossing clear",
+        "No through road for vehicles",
+        "Turn left ahead"
+      ],
+      "correctAnswer": 0,
+      "explanation": "This sign means: bend to right.",
+      "image": "/road-signs/bend_to_right.png",
+      "imageAlt": "bend to right"
+    },
+    {
+      "id": "rs-im-0463",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Countdown markers",
+        "Dual carriageway ends",
+        "Roundabout",
+        "Box junction"
+      ],
+      "correctAnswer": 3,
+      "explanation": "This sign means: box junction.",
+      "image": "/road-signs/box_junction.png",
+      "imageAlt": "box junction"
+    },
+    {
+      "id": "rs-im-0464",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Box junction ruling",
+        "Lane specific signal 2 motorway",
+        "No towed caravan",
+        "No cycling"
+      ],
+      "correctAnswer": 0,
+      "explanation": "This sign means: box junction ruling.",
+      "image": "/road-signs/box_junction_ruling.png",
+      "imageAlt": "box junction ruling"
+    },
+    {
+      "id": "rs-im-0465",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Clear your windscreen during fog and ice and snow and rain",
+        "Lane closures motorway",
+        "Large vehicle turning",
+        "Buses and cycle only"
+      ],
+      "correctAnswer": 3,
+      "explanation": "This sign means: buses and cycle only.",
+      "image": "/road-signs/buses_and_cycle_only.png",
+      "imageAlt": "buses and cycle only"
+    },
+    {
+      "id": "rs-im-0466",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Level crossing",
+        "Central reservation crossing",
+        "Mini roundabout",
+        "Find safe place to cross the road"
+      ],
+      "correctAnswer": 1,
+      "explanation": "This sign means: central reservation crossing.",
+      "image": "/road-signs/central_reservation_crossing.png",
+      "imageAlt": "central reservation crossing"
+    },
+    {
+      "id": "rs-im-0467",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Lane closures 2 motorway",
+        "End of controlled parking zone",
+        "Equestrian crossing",
+        "Check before opening door"
+      ],
+      "correctAnswer": 3,
+      "explanation": "This sign means: check before opening door.",
+      "image": "/road-signs/check_before_opening_door.png",
+      "imageAlt": "check before opening door"
+    },
+    {
+      "id": "rs-im-0468",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Child seatbelt",
+        "Road works",
+        "Parking places for solo motorcycles",
+        "Entry to 20mph zone"
+      ],
+      "correctAnswer": 0,
+      "explanation": "This sign means: child seatbelt.",
+      "image": "/road-signs/child_seatbelt.png",
+      "imageAlt": "child seatbelt"
+    },
+    {
+      "id": "rs-im-0469",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Clear your windscreen during fog and ice and snow and rain",
+        "No left turn",
+        "Turn left",
+        "Stop and give way"
+      ],
+      "correctAnswer": 0,
+      "explanation": "This sign means: clear your windscreen during fog and ice and snow and rain.",
+      "image": "/road-signs/clear_your_windscreen_during_fog_and_ice_and_snow_and_rain.png",
+      "imageAlt": "clear your windscreen during fog and ice and snow and rain"
+    },
+    {
+      "id": "rs-im-0470",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Parking uphill and downhill",
+        "Clothing for cyclists",
+        "Level crossing without barrier or gate ahead",
+        "No u turn"
+      ],
+      "correctAnswer": 1,
+      "explanation": "This sign means: clothing for cyclists.",
+      "image": "/road-signs/clothing_for_cyclists.png",
+      "imageAlt": "clothing for cyclists"
+    },
+    {
+      "id": "rs-im-0471",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Hardshoulder must not use motorway",
+        "Contra flow bus lane",
+        "No stopping at any time",
+        "Downward pointing arrows mean Get in lane"
+      ],
+      "correctAnswer": 1,
+      "explanation": "This sign means: contra flow bus lane.",
+      "image": "/road-signs/contra_flow_bus_lane.png",
+      "imageAlt": "contra flow bus lane"
+    },
+    {
+      "id": "rs-im-0472",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Countdown markers",
+        "Junction bend ahead",
+        "Dual carriageway ends",
+        "Ahead only"
+      ],
+      "correctAnswer": 0,
+      "explanation": "This sign means: countdown markers.",
+      "image": "/road-signs/countdown_markers.png",
+      "imageAlt": "countdown markers"
+    },
+    {
+      "id": "rs-im-0473",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Move off only when safe to do so",
+        "Crossroads",
+        "Turn left ahead",
+        "No cycling"
+      ],
+      "correctAnswer": 1,
+      "explanation": "This sign means: crossroads.",
+      "image": "/road-signs/crossroads.png",
+      "imageAlt": "crossroads"
+    },
+    {
+      "id": "rs-im-0474",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Advanced stop lane",
+        "No stopping clearway",
+        "2 second gap",
+        "Cycle route ahead"
+      ],
+      "correctAnswer": 3,
+      "explanation": "This sign means: cycle route ahead.",
+      "image": "/road-signs/cycle_route_ahead.png",
+      "imageAlt": "cycle route ahead"
+    },
+    {
+      "id": "rs-im-0475",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "End of 20mph zone",
+        "No u turn",
+        "Priority to incoming oncoming vehicles",
+        "Diversion route"
+      ],
+      "correctAnswer": 3,
+      "explanation": "This sign means: diversion route.",
+      "image": "/road-signs/diversion_route.png",
+      "imageAlt": "diversion route"
+    },
+    {
+      "id": "rs-im-0476",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Lane can use motorway",
+        "2 second gap",
+        "Do not block access to side road",
+        "Entry to 20mph zone"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This sign means: do not block access to side road.",
+      "image": "/road-signs/do_not_block_access_to_side_road.png",
+      "imageAlt": "do not block access to side road"
+    },
+    {
+      "id": "rs-im-0477",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Keep crossing clear",
+        "Clothing for cyclists",
+        "Double roundabout",
+        "Lane closures 2 motorway"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This sign means: double roundabout.",
+      "image": "/road-signs/double_roundabout.png",
+      "imageAlt": "double roundabout"
+    },
+    {
+      "id": "rs-im-0478",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Overtaking cyclists",
+        "Give way to traffic on major road",
+        "Check before opening door",
+        "Dual carriageway ends"
+      ],
+      "correctAnswer": 3,
+      "explanation": "This sign means: dual carriageway ends.",
+      "image": "/road-signs/dual_carriageway_ends.png",
+      "imageAlt": "dual carriageway ends"
+    },
+    {
+      "id": "rs-im-0479",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Mini roundabout",
+        "Emergency area motorway",
+        "Large vehicle turning",
+        "Reversing lookout"
+      ],
+      "correctAnswer": 1,
+      "explanation": "This sign means: emergency area motorway.",
+      "image": "/road-signs/emergency_area_motorway.png",
+      "imageAlt": "emergency area motorway"
+    },
+    {
+      "id": "rs-im-0480",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Parking places for solo motorcycles",
+        "No overtaking",
+        "Emergency service sign",
+        "2 second gap"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This sign means: emergency service sign.",
+      "image": "/road-signs/emregency_service_sign.png",
+      "imageAlt": "emergency service sign"
+    },
+    {
+      "id": "rs-im-0481",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Countdown markers",
+        "Large vehicle turning",
+        "Parking places for solo motorcycles",
+        "End of 20mph zone"
+      ],
+      "correctAnswer": 3,
+      "explanation": "This sign means: end of 20mph zone.",
+      "image": "/road-signs/end_of_20mph_zone.png",
+      "imageAlt": "end of 20mph zone"
+    },
+    {
+      "id": "rs-im-0482",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "No stopping at any time",
+        "All lane closures motorway",
+        "Roundabout",
+        "End of controlled parking zone"
+      ],
+      "correctAnswer": 3,
+      "explanation": "This sign means: end of controlled parking zone.",
+      "image": "/road-signs/end_of_controlled_parking_zone.png",
+      "imageAlt": "end of controlled parking zone"
+    },
+    {
+      "id": "rs-im-0483",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Contra flow bus lane",
+        "Priority to incoming oncoming vehicles",
+        "Entry to 20mph zone",
+        "Cycle route ahead"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This sign means: entry to 20mph zone.",
+      "image": "/road-signs/entry_to_20mph_zone.png",
+      "imageAlt": "entry to 20mph zone"
+    },
+    {
+      "id": "rs-im-0484",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Entry to 20mph zone",
+        "Equestrian crossing",
+        "Lane specific signal 2 motorway",
+        "Overtaking cyclists"
+      ],
+      "correctAnswer": 1,
+      "explanation": "This sign means: equestrian crossing.",
+      "image": "/road-signs/equestrian_crossing.png",
+      "imageAlt": "equestrian crossing"
+    },
+    {
+      "id": "rs-im-0485",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Queue caution message motorway",
+        "Find safe place to cross the road",
+        "Priority to incoming oncoming vehicles",
+        "Lane can use motorway"
+      ],
+      "correctAnswer": 1,
+      "explanation": "This sign means: find safe place to cross the road.",
+      "image": "/road-signs/find_safe_place_to_cross_the_road.png",
+      "imageAlt": "find safe place to cross the road"
+    },
+    {
+      "id": "rs-im-0486",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Give priority to vehicles from opposite direction",
+        "Quayside or river bank",
+        "Home zone and quiet lane",
+        "Reflective clothing for horse"
+      ],
+      "correctAnswer": 0,
+      "explanation": "This sign means: give priority to vehicles from opposite direction.",
+      "image": "/road-signs/give_priority_to_vehicles_from_opposite_direction.png",
+      "imageAlt": "give priority to vehicles from opposite direction"
+    },
+    {
+      "id": "rs-im-0487",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "No u turn",
+        "Equestrian crossing",
+        "Give way to pedestrian who have started to cross",
+        "Parking places for solo motorcycles"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This sign means: give way to pedestrian who have started to cross.",
+      "image": "/road-signs/give_way_to_pedestrian_who_have_started_to_cross.png",
+      "imageAlt": "give way to pedestrian who have started to cross"
+    },
+    {
+      "id": "rs-im-0488",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "No through road for vehicles",
+        "Give way to traffic on major road",
+        "Downward pointing arrows mean Get in lane",
+        "Lane specific signal 2 motorway"
+      ],
+      "correctAnswer": 1,
+      "explanation": "This sign means: give way to traffic on major road.",
+      "image": "/road-signs/give_way_to_traffic_on_major_road.png",
+      "imageAlt": "give way to traffic on major road"
+    },
+    {
+      "id": "rs-im-0489",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "No vehicles beyond point",
+        "Give priority to vehicles from opposite direction",
+        "Hardshoulder must not use 2 motorway",
+        "Level crossing without barrier or gate ahead"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This sign means: hardshoulder must not use 2 motorway.",
+      "image": "/road-signs/hardshoulder_must_not_use_2_motorway.png",
+      "imageAlt": "hardshoulder must not use 2 motorway"
+    },
+    {
+      "id": "rs-im-0490",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Lane closures 3 motorway",
+        "Contra flow bus lane",
+        "Hardshoulder must not use motorway",
+        "2 second gap"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This sign means: hardshoulder must not use motorway.",
+      "image": "/road-signs/hardshoulder_must_not_use_motorway.png",
+      "imageAlt": "hardshoulder must not use motorway"
+    },
+    {
+      "id": "rs-im-0491",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Queue caution message motorway",
+        "Help other road users see you",
+        "No stopping clearway",
+        "Lane specific signal 2 motorway"
+      ],
+      "correctAnswer": 1,
+      "explanation": "This sign means: help other road users see you.",
+      "image": "/road-signs/help_other_road_users_see_you.png",
+      "imageAlt": "help other road users see you"
+    },
+    {
+      "id": "rs-im-0492",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Double roundabout",
+        "Hardshoulder must not use motorway",
+        "No loading at any time",
+        "Home zone and quiet lane"
+      ],
+      "correctAnswer": 3,
+      "explanation": "This sign means: home zone and quiet lane.",
+      "image": "/road-signs/home_zone_and_quiet_lane.png",
+      "imageAlt": "home zone and quiet lane"
+    },
+    {
+      "id": "rs-im-0493",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "No stopping clearway",
+        "Give priority to vehicles from opposite direction",
+        "Overtaking cyclists",
+        "Junction bend ahead"
+      ],
+      "correctAnswer": 3,
+      "explanation": "This sign means: junction bend ahead.",
+      "image": "/road-signs/junction_bend_ahead.png",
+      "imageAlt": "junction bend ahead"
+    },
+    {
+      "id": "rs-im-0494",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Lane closures motorway",
+        "Stop and give way",
+        "Keep crossing clear",
+        "Roundabout lane positioning"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This sign means: keep crossing clear.",
+      "image": "/road-signs/keep_crossing_clear.png",
+      "imageAlt": "keep crossing clear"
+    },
+    {
+      "id": "rs-im-0495",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Emergency area motorway",
+        "Lane can use motorway",
+        "Left-side to left-side turning right-side to right-side turning",
+        "Ahead only"
+      ],
+      "correctAnswer": 1,
+      "explanation": "This sign means: lane can use motorway.",
+      "image": "/road-signs/lane_can_use_motorway.png",
+      "imageAlt": "lane can use motorway"
+    },
+    {
+      "id": "rs-im-0496",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Clothing for cyclists",
+        "No stopping during times shown on sign",
+        "Lane closures",
+        "Marker post motorway"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This sign means: lane closures.",
+      "image": "/road-signs/lane_closures.png",
+      "imageAlt": "lane closures"
+    },
+    {
+      "id": "rs-im-0497",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Clear your windscreen during fog and ice and snow and rain",
+        "End of controlled parking zone",
+        "Give way to traffic on major road",
+        "Lane closures 2 motorway"
+      ],
+      "correctAnswer": 3,
+      "explanation": "This sign means: lane closures 2 motorway.",
+      "image": "/road-signs/lane_closures_2_motorway.png",
+      "imageAlt": "lane closures 2 motorway"
+    },
+    {
+      "id": "rs-im-0498",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Lane closures 3 motorway",
+        "Home zone and quiet lane",
+        "Clothing for cyclists",
+        "Roundabout lane positioning"
+      ],
+      "correctAnswer": 0,
+      "explanation": "This sign means: lane closures 3 motorway.",
+      "image": "/road-signs/lane_closures_3_motorway.png",
+      "imageAlt": "lane closures 3 motorway"
+    },
+    {
+      "id": "rs-im-0499",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "No entry",
+        "Lane closures motorway",
+        "Cycle route ahead",
+        "Mini roundabout"
+      ],
+      "correctAnswer": 1,
+      "explanation": "This sign means: lane closures motorway.",
+      "image": "/road-signs/lane_closures_motorway.png",
+      "imageAlt": "lane closures motorway"
+    },
+    {
+      "id": "rs-im-0500",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Entry to 20mph zone",
+        "No towed caravan",
+        "Turn left ahead",
+        "Lane specific signal 2 motorway"
+      ],
+      "correctAnswer": 3,
+      "explanation": "This sign means: lane specific signal 2 motorway.",
+      "image": "/road-signs/lane_specific_signal_2_motorway.png",
+      "imageAlt": "lane specific signal 2 motorway"
+    },
+    {
+      "id": "rs-im-0501",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "No entry",
+        "Give way to pedestrian who have started to cross",
+        "Lane specific signal motorway",
+        "Maximum speed"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This sign means: lane specific signal motorway.",
+      "image": "/road-signs/lane_specific_signal_motorway.png",
+      "imageAlt": "lane specific signal motorway"
+    },
+    {
+      "id": "rs-im-0502",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Dual carriageway ends",
+        "Large vehicle turning",
+        "Reversing lookout",
+        "Mini roundabout"
+      ],
+      "correctAnswer": 1,
+      "explanation": "This sign means: large vehicle turning.",
+      "image": "/road-signs/large_vehicle_turning.png",
+      "imageAlt": "large vehicle turning"
+    },
+    {
+      "id": "rs-im-0503",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Marker post motorway",
+        "Level crossing",
+        "Left-side to left-side turning right-side to right-side turning",
+        "Road narrows on both sides"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This sign means: left-side to left-side turning right-side to right-side turning.",
+      "image": "/road-signs/leftside_to_leftside_turning_rightside_to_rightside_turning.png",
+      "imageAlt": "left-side to left-side turning right-side to right-side turning"
+    },
+    {
+      "id": "rs-im-0504",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Countdown markers",
+        "Home zone and quiet lane",
+        "Hardshoulder must not use motorway",
+        "Level crossing"
+      ],
+      "correctAnswer": 3,
+      "explanation": "This sign means: level crossing.",
+      "image": "/road-signs/level_crossing.png",
+      "imageAlt": "level crossing"
+    },
+    {
+      "id": "rs-im-0505",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Give priority to vehicles from opposite direction",
+        "Level crossing without barrier",
+        "Road works",
+        "No motor vehicle"
+      ],
+      "correctAnswer": 1,
+      "explanation": "This sign means: level crossing without barrier.",
+      "image": "/road-signs/level_crossing_without_barrier.png",
+      "imageAlt": "level crossing without barrier"
+    },
+    {
+      "id": "rs-im-0506",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Level crossing without barrier or gate ahead",
+        "Hardshoulder must not use motorway",
+        "Downward pointing arrows mean Get in lane",
+        "Child seatbelt"
+      ],
+      "correctAnswer": 0,
+      "explanation": "This sign means: level crossing without barrier or gate ahead.",
+      "image": "/road-signs/level_crossing_without_barrier_or_gate_ahead.png",
+      "imageAlt": "level crossing without barrier or gate ahead"
+    },
+    {
+      "id": "rs-im-0507",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Marker post motorway",
+        "Pelican crossing",
+        "No entry",
+        "Motorcyclist clothing"
+      ],
+      "correctAnswer": 0,
+      "explanation": "This sign means: marker post motorway.",
+      "image": "/road-signs/marker_post_motorway.png",
+      "imageAlt": "marker post motorway"
+    },
+    {
+      "id": "rs-im-0508",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Buses and cycle only",
+        "Maximum speed",
+        "End of 20mph zone",
+        "Diversion route"
+      ],
+      "correctAnswer": 1,
+      "explanation": "This sign means: maximum speed.",
+      "image": "/road-signs/maximum_speed.png",
+      "imageAlt": "maximum speed"
+    },
+    {
+      "id": "rs-im-0509",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Hardshoulder must not use 2 motorway",
+        "Ahead only",
+        "Mini roundabout",
+        "Quayside or river bank"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This sign means: mini roundabout.",
+      "image": "/road-signs/mini_roundabout.png",
+      "imageAlt": "mini roundabout"
+    },
+    {
+      "id": "rs-im-0510",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Bend to right",
+        "Motorcyclist clothing",
+        "Contra flow bus lane",
+        "Find safe place to cross the road"
+      ],
+      "correctAnswer": 1,
+      "explanation": "This sign means: motorcyclist clothing.",
+      "image": "/road-signs/motorcylclist_clothing.png",
+      "imageAlt": "motorcyclist clothing"
+    },
+    {
+      "id": "rs-im-0511",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "No entry",
+        "Advanced stop lane",
+        "Diversion route",
+        "Move off only when safe to do so"
+      ],
+      "correctAnswer": 3,
+      "explanation": "This sign means: move off only when safe to do so.",
+      "image": "/road-signs/move_off_only_when_safe_to_do_so.png",
+      "imageAlt": "move off only when safe to do so"
+    },
+    {
+      "id": "rs-im-0512",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Crossroads",
+        "Move off only when safe to do so",
+        "Bend to right",
+        "No cycling"
+      ],
+      "correctAnswer": 3,
+      "explanation": "This sign means: no cycling.",
+      "image": "/road-signs/no_cycling.png",
+      "imageAlt": "no cycling"
+    },
+    {
+      "id": "rs-im-0513",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Cycle route ahead",
+        "No entry",
+        "Mini roundabout",
+        "Box junction"
+      ],
+      "correctAnswer": 1,
+      "explanation": "This sign means: no entry.",
+      "image": "/road-signs/no_entry.png",
+      "imageAlt": "no entry"
+    },
+    {
+      "id": "rs-im-0514",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "No left turn",
+        "Parking uphill and downhill",
+        "Lane closures 3 motorway",
+        "Give way to pedestrian who have started to cross"
+      ],
+      "correctAnswer": 0,
+      "explanation": "This sign means: no left turn.",
+      "image": "/road-signs/no_left_turn.png",
+      "imageAlt": "no left turn"
+    },
+    {
+      "id": "rs-im-0515",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Reflective clothing for horse",
+        "No motor vehicle",
+        "Adjustments before setting off",
+        "No loading at any time"
+      ],
+      "correctAnswer": 3,
+      "explanation": "This sign means: no loading at any time.",
+      "image": "/road-signs/no_loading_at_any_time.png",
+      "imageAlt": "no loading at any time"
+    },
+    {
+      "id": "rs-im-0516",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Reversing lookout",
+        "Queue caution message motorway",
+        "No loading or unloading at the times shown",
+        "Roundabout"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This sign means: no loading or unloading at the times shown.",
+      "image": "/road-signs/no_loading_or_unloading_at_the_times_shown.png",
+      "imageAlt": "no loading or unloading at the times shown"
+    },
+    {
+      "id": "rs-im-0517",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "No overtaking",
+        "One way traffic",
+        "No motor vehicle",
+        "No stopping clearway"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This sign means: no motor vehicle.",
+      "image": "/road-signs/no_motor_vehicle.png",
+      "imageAlt": "no motor vehicle"
+    },
+    {
+      "id": "rs-im-0518",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "No overtaking",
+        "Do not block access to side road",
+        "Equestrian crossing",
+        "Cycle route ahead"
+      ],
+      "correctAnswer": 0,
+      "explanation": "This sign means: no overtaking.",
+      "image": "/road-signs/no_overtaking.png",
+      "imageAlt": "no overtaking"
+    },
+    {
+      "id": "rs-im-0519",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Lane can use motorway",
+        "No stopping at any time",
+        "Hardshoulder must not use 2 motorway",
+        "No left turn"
+      ],
+      "correctAnswer": 1,
+      "explanation": "This sign means: no stopping at any time.",
+      "image": "/road-signs/no_stopping_at_any_time.png",
+      "imageAlt": "no stopping at any time"
+    },
+    {
+      "id": "rs-im-0520",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "2 second gap",
+        "No stopping clearway",
+        "No through road for vehicles",
+        "No stopping during times shown on sign"
+      ],
+      "correctAnswer": 1,
+      "explanation": "This sign means: no stopping clearway.",
+      "image": "/road-signs/no_stopping_clearway.png",
+      "imageAlt": "no stopping clearway"
+    },
+    {
+      "id": "rs-im-0521",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Motorcyclist clothing",
+        "Left-side to left-side turning right-side to right-side turning",
+        "No stopping during times shown on sign",
+        "Reversing lookout"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This sign means: no stopping during times shown on sign.",
+      "image": "/road-signs/no_stopping_during_times_shown_on_sign.png",
+      "imageAlt": "no stopping during times shown on sign"
+    },
+    {
+      "id": "rs-im-0522",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Motorcyclist clothing",
+        "No through road for vehicles",
+        "Junction bend ahead",
+        "Turn left"
+      ],
+      "correctAnswer": 1,
+      "explanation": "This sign means: no through road for vehicles.",
+      "image": "/road-signs/no_through_road_for_vehicles.png",
+      "imageAlt": "no through road for vehicles"
+    },
+    {
+      "id": "rs-im-0523",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "2 second gap",
+        "Level crossing without barrier or gate ahead",
+        "No u turn",
+        "No towed caravan"
+      ],
+      "correctAnswer": 3,
+      "explanation": "This sign means: no towed caravan.",
+      "image": "/road-signs/no_towed_caravan.png",
+      "imageAlt": "no towed caravan"
+    },
+    {
+      "id": "rs-im-0524",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Large vehicle turning",
+        "All lane closures motorway",
+        "No waiting at any time",
+        "No u turn"
+      ],
+      "correctAnswer": 3,
+      "explanation": "This sign means: no u turn.",
+      "image": "/road-signs/no_u_turn.png",
+      "imageAlt": "no u turn"
+    },
+    {
+      "id": "rs-im-0525",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Roundabout",
+        "No vehicles beyond point",
+        "Parking places for solo motorcycles",
+        "Find safe place to cross the road"
+      ],
+      "correctAnswer": 1,
+      "explanation": "This sign means: no vehicles beyond point.",
+      "image": "/road-signs/no_vehicles_beyond_point.png",
+      "imageAlt": "no vehicles beyond point"
+    },
+    {
+      "id": "rs-im-0526",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Maximum speed",
+        "Downward pointing arrows mean Get in lane",
+        "Turn left ahead",
+        "No waiting"
+      ],
+      "correctAnswer": 3,
+      "explanation": "This sign means: no waiting.",
+      "image": "/road-signs/no_waiting.png",
+      "imageAlt": "no waiting"
+    },
+    {
+      "id": "rs-im-0527",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Reversing lookout",
+        "Bend to right",
+        "Countdown markers",
+        "No waiting at any time"
+      ],
+      "correctAnswer": 3,
+      "explanation": "This sign means: no waiting at any time.",
+      "image": "/road-signs/no_waiting_at_any_time.png",
+      "imageAlt": "no waiting at any time"
+    },
+    {
+      "id": "rs-im-0528",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "No waiting during times shown on sign",
+        "Find safe place to cross the road",
+        "Roundabout lane positioning",
+        "Emergency area motorway"
+      ],
+      "correctAnswer": 0,
+      "explanation": "This sign means: no waiting during times shown on sign.",
+      "image": "/road-signs/no_waiting_during_times_shown_on_sign.png",
+      "imageAlt": "no waiting during times shown on sign"
+    },
+    {
+      "id": "rs-im-0529",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Entry to 20mph zone",
+        "Reversing lookout",
+        "One way traffic",
+        "Double roundabout"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This sign means: one way traffic.",
+      "image": "/road-signs/one_way_traffic.png",
+      "imageAlt": "one way traffic"
+    },
+    {
+      "id": "rs-im-0530",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "No through road for vehicles",
+        "Opening or swing bridge",
+        "Equestrian crossing",
+        "No cycling"
+      ],
+      "correctAnswer": 1,
+      "explanation": "This sign means: opening or swing bridge.",
+      "image": "/road-signs/opening_or_swing_bridge.png",
+      "imageAlt": "opening or swing bridge"
+    },
+    {
+      "id": "rs-im-0531",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Overtaking cyclists",
+        "Lane specific signal 2 motorway",
+        "Do not block access to side road",
+        "Clear your windscreen during fog and ice and snow and rain"
+      ],
+      "correctAnswer": 0,
+      "explanation": "This sign means: overtaking cyclists.",
+      "image": "/road-signs/overtaking_cyclists.png",
+      "imageAlt": "overtaking cyclists"
+    },
+    {
+      "id": "rs-im-0532",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Junction bend ahead",
+        "Overtaking lorry",
+        "Opening or swing bridge",
+        "Find safe place to cross the road"
+      ],
+      "correctAnswer": 1,
+      "explanation": "This sign means: overtaking lorry.",
+      "image": "/road-signs/overtaking_lorry.png",
+      "imageAlt": "overtaking lorry"
+    },
+    {
+      "id": "rs-im-0533",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Dual carriageway ends",
+        "Home zone and quiet lane",
+        "Find safe place to cross the road",
+        "Parking places for solo motorcycles"
+      ],
+      "correctAnswer": 3,
+      "explanation": "This sign means: parking places for solo motorcycles.",
+      "image": "/road-signs/parking_places_for_solo_motorcycles.png",
+      "imageAlt": "parking places for solo motorcycles"
+    },
+    {
+      "id": "rs-im-0534",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "No motor vehicle",
+        "Cycle route ahead",
+        "Parking uphill and downhill",
+        "Lane closures"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This sign means: parking uphill and downhill.",
+      "image": "/road-signs/parking_uphill_and_downhill.png",
+      "imageAlt": "parking uphill and downhill"
+    },
+    {
+      "id": "rs-im-0535",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Pedestrian traffic signal",
+        "Hardshoulder must not use motorway",
+        "No stopping during times shown on sign",
+        "Keep crossing clear"
+      ],
+      "correctAnswer": 0,
+      "explanation": "This sign means: pedestrian traffic signal.",
+      "image": "/road-signs/pedestrian_traffic_signal.png",
+      "imageAlt": "pedestrian traffic signal"
+    },
+    {
+      "id": "rs-im-0536",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "No loading at any time",
+        "Equestrian crossing",
+        "Cycle route ahead",
+        "Pelican crossing"
+      ],
+      "correctAnswer": 3,
+      "explanation": "This sign means: pelican crossing.",
+      "image": "/road-signs/pelican_crossing.png",
+      "imageAlt": "pelican crossing"
+    },
+    {
+      "id": "rs-im-0537",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Priority to incoming oncoming vehicles",
+        "Box junction",
+        "Give way to pedestrian who have started to cross",
+        "Lane can use motorway"
+      ],
+      "correctAnswer": 0,
+      "explanation": "This sign means: priority to incoming oncoming vehicles.",
+      "image": "/road-signs/priority_to_incoming_oncoming_vehicles.png",
+      "imageAlt": "priority to incoming oncoming vehicles"
+    },
+    {
+      "id": "rs-im-0538",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Turn left",
+        "Quayside or river bank",
+        "No loading at any time",
+        "Mini roundabout"
+      ],
+      "correctAnswer": 1,
+      "explanation": "This sign means: quayside or river bank.",
+      "image": "/road-signs/quayside_or_river_bank.png",
+      "imageAlt": "quayside or river bank"
+    },
+    {
+      "id": "rs-im-0539",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "No stopping clearway",
+        "Child seatbelt",
+        "No waiting during times shown on sign",
+        "Queue caution message motorway"
+      ],
+      "correctAnswer": 3,
+      "explanation": "This sign means: queue caution message motorway.",
+      "image": "/road-signs/queue_caution_message_motorway.png",
+      "imageAlt": "queue caution message motorway"
+    },
+    {
+      "id": "rs-im-0540",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Ahead only",
+        "Reflective clothing for horse",
+        "Central reservation crossing",
+        "Emergency area motorway"
+      ],
+      "correctAnswer": 1,
+      "explanation": "This sign means: reflective clothing for horse.",
+      "image": "/road-signs/reflective_clothing_for_horse.png",
+      "imageAlt": "reflective clothing for horse"
+    },
+    {
+      "id": "rs-im-0541",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Roundabout",
+        "Left-side to left-side turning right-side to right-side turning",
+        "Marker post motorway",
+        "Reversing lookout"
+      ],
+      "correctAnswer": 3,
+      "explanation": "This sign means: reversing lookout.",
+      "image": "/road-signs/reversing_lookout.png",
+      "imageAlt": "reversing lookout"
+    },
+    {
+      "id": "rs-im-0542",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Road narrows on both sides",
+        "Marker post motorway",
+        "Large vehicle turning",
+        "Priority to incoming oncoming vehicles"
+      ],
+      "correctAnswer": 0,
+      "explanation": "This sign means: road narrows on both sides.",
+      "image": "/road-signs/road_narrows_on_both_sides.png",
+      "imageAlt": "road narrows on both sides"
+    },
+    {
+      "id": "rs-im-0543",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Reflective clothing for horse",
+        "No stopping during times shown on sign",
+        "One way traffic",
+        "Road works"
+      ],
+      "correctAnswer": 3,
+      "explanation": "This sign means: road works.",
+      "image": "/road-signs/road_works.png",
+      "imageAlt": "road works"
+    },
+    {
+      "id": "rs-im-0544",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Roundabout",
+        "No left turn",
+        "Hardshoulder must not use 2 motorway",
+        "No vehicles beyond point"
+      ],
+      "correctAnswer": 0,
+      "explanation": "This sign means: roundabout.",
+      "image": "/road-signs/roundabout.png",
+      "imageAlt": "roundabout"
+    },
+    {
+      "id": "rs-im-0545",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Junction bend ahead",
+        "Overtaking lorry",
+        "Level crossing without barrier or gate ahead",
+        "Roundabout lane positioning"
+      ],
+      "correctAnswer": 3,
+      "explanation": "This sign means: roundabout lane positioning.",
+      "image": "/road-signs/roundabout_lane_positioning.png",
+      "imageAlt": "roundabout lane positioning"
+    },
+    {
+      "id": "rs-im-0546",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Parking places for solo motorcycles",
+        "Stop and give way",
+        "No u turn",
+        "Left-side to left-side turning right-side to right-side turning"
+      ],
+      "correctAnswer": 1,
+      "explanation": "This sign means: stop and give way.",
+      "image": "/road-signs/stop_and_give_way.png",
+      "imageAlt": "stop and give way"
+    },
+    {
+      "id": "rs-im-0547",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Turn left",
+        "Lane can use motorway",
+        "Road works",
+        "No stopping during times shown on sign"
+      ],
+      "correctAnswer": 0,
+      "explanation": "This sign means: turn left.",
+      "image": "/road-signs/turn_left.png",
+      "imageAlt": "turn left"
+    },
+    {
+      "id": "rs-im-0548",
+      "type": "image_question",
+      "question": "What does this road sign mean?",
+      "options": [
+        "Parking places for solo motorcycles",
+        "No overtaking",
+        "No waiting",
+        "Turn left ahead"
+      ],
+      "correctAnswer": 3,
+      "explanation": "This sign means: turn left ahead.",
+      "image": "/road-signs/turn_left_ahead.png",
+      "imageAlt": "turn left ahead"
     }
   ],
   "mocks": [
@@ -21077,14 +22513,17 @@
         "rs-mc-0134",
         "rs-mc-0680",
         "rs-tf-0042",
+        "rs-im-0531",
         "rs-mc-0214",
         "rs-mc-0447",
+        "rs-im-0489",
         "rs-tf-0062",
         "rs-mc-0514",
         "rs-im-0028",
         "rs-im-0252",
         "rs-mc-0947",
         "rs-mc-0775",
+        "rs-im-0488",
         "rs-mc-0678",
         "rs-mc-1036",
         "rs-mc-0985",
@@ -21102,6 +22541,7 @@
       "title": "Road Signs Test Test 2",
       "questionIds": [
         "rs-im-0041",
+        "rs-im-0506",
         "rs-im-0213",
         "rs-mc-0299",
         "rs-tf-0003",
@@ -21114,6 +22554,7 @@
         "rs-mc-0734",
         "rs-mc-0495",
         "rs-im-0352",
+        "rs-im-0466",
         "rs-im-0255",
         "rs-mc-0756",
         "rs-mc-0364",
@@ -21124,7 +22565,8 @@
         "rs-im-0035",
         "rs-mc-0375",
         "rs-mc-0170",
-        "rs-mc-0533"
+        "rs-mc-0533",
+        "rs-im-0492"
       ]
     },
     {
@@ -21138,11 +22580,13 @@
         "rs-mc-0355",
         "rs-mc-0590",
         "rs-mc-0386",
+        "rs-im-0511",
         "rs-im-0140",
         "rs-mc-0264",
         "rs-mc-0193",
         "rs-mc-0770",
         "rs-mc-0722",
+        "rs-im-0467",
         "rs-tf-0019",
         "rs-mc-0472",
         "rs-im-0217",
@@ -21151,6 +22595,7 @@
         "rs-mc-0476-tff11",
         "rs-im-0053",
         "rs-mc-0925",
+        "rs-im-0543",
         "rs-im-0299",
         "rs-im-0243",
         "rs-mc-0567",
@@ -21170,11 +22615,13 @@
         "rs-im-0126",
         "rs-mc-1005",
         "rs-im-0244",
+        "rs-im-0532",
         "rs-mc-0283",
         "rs-mc-0221",
         "rs-im-0324",
         "rs-mc-0425",
         "rs-mc-0289",
+        "rs-im-0474",
         "rs-im-0037",
         "rs-mc-0091",
         "rs-mc-1001",
@@ -21199,8 +22646,10 @@
         "rs-mc-1058",
         "rs-im-0016",
         "rs-im-0027",
+        "rs-im-0469",
         "rs-mc-0832",
         "rs-mc-0492",
+        "rs-im-0464",
         "rs-im-0087",
         "rs-im-0335",
         "rs-mc-0408",
@@ -21222,6 +22671,7 @@
       "title": "Road Signs Test Test 6",
       "questionIds": [
         "rs-im-0441",
+        "rs-im-0481",
         "rs-im-0395",
         "rs-mc-0815",
         "rs-mc-0033",
@@ -21238,6 +22688,7 @@
         "rs-mc-0570",
         "rs-mc-0423",
         "rs-im-0096",
+        "rs-im-0520",
         "rs-tf-0020",
         "rs-mc-0244",
         "rs-mc-0049",
@@ -21270,10 +22721,12 @@
         "rs-mc-0527",
         "rs-im-0073-tff1",
         "rs-mc-0861",
+        "rs-im-0538",
         "rs-mc-0387",
         "rs-mc-0382",
         "rs-mc-0501",
         "rs-mc-0144",
+        "rs-im-0458",
         "rs-im-0402"
       ]
     },
@@ -21283,6 +22736,7 @@
       "questionIds": [
         "rs-im-0063",
         "rs-mc-0789",
+        "rs-im-0517",
         "rs-im-0136-tf4",
         "rs-mc-0272",
         "rs-mc-0524",
@@ -21293,6 +22747,7 @@
         "rs-mc-1034",
         "rs-im-0180",
         "rs-im-0378",
+        "rs-im-0521",
         "rs-mc-0017",
         "rs-mc-0231",
         "rs-mc-0666",
@@ -21313,6 +22768,7 @@
       "questionIds": [
         "rs-tf-0028",
         "rs-tf-0063",
+        "rs-im-0465",
         "rs-im-0454",
         "rs-mc-1009",
         "rs-mc-0561",
@@ -21328,6 +22784,7 @@
         "rs-im-0141",
         "rs-mc-1046",
         "rs-mc-0559",
+        "rs-im-0472",
         "rs-mc-0646",
         "rs-mc-0720",
         "rs-mc-0932",
@@ -21360,10 +22817,12 @@
         "rs-im-0043",
         "rs-mc-0250",
         "rs-mc-0577",
+        "rs-im-0529",
         "rs-mc-0461",
         "rs-tf-0050",
         "rs-im-0122",
         "rs-mc-0908",
+        "rs-im-0502",
         "rs-mc-0258"
       ]
     },
@@ -21383,6 +22842,8 @@
         "rs-mc-0991",
         "rs-mc-1011",
         "rs-im-0194",
+        "rs-im-0539",
+        "rs-im-0510",
         "rs-mc-0712",
         "rs-tf-0037",
         "rs-mc-0534",
@@ -21403,6 +22864,7 @@
       "questionIds": [
         "rs-mc-0897",
         "rs-mc-1023",
+        "rs-im-0500",
         "rs-mc-0732",
         "rs-mc-0187",
         "rs-mc-0704",
@@ -21424,7 +22886,8 @@
         "rs-mc-0924",
         "rs-mc-0186",
         "rs-mc-0169",
-        "rs-mc-0543"
+        "rs-mc-0543",
+        "rs-im-0463"
       ]
     },
     {
@@ -21442,7 +22905,9 @@
         "rs-im-0143",
         "rs-mc-0241",
         "rs-mc-0929",
+        "rs-im-0524",
         "rs-mc-0075",
+        "rs-im-0525",
         "rs-im-0306",
         "rs-im-0006",
         "rs-mc-0234",
@@ -21469,6 +22934,7 @@
         "rs-im-0208",
         "rs-tf-0010",
         "rs-mc-0243",
+        "rs-im-0508",
         "rs-mc-0939",
         "rs-mc-1007",
         "rs-im-0292",
@@ -21479,6 +22945,7 @@
         "rs-mc-0841",
         "rs-mc-0718",
         "rs-im-0393",
+        "rs-im-0530",
         "rs-mc-1022",
         "rs-mc-0078",
         "rs-mc-1079",
@@ -21496,6 +22963,8 @@
         "rs-mc-0852",
         "rs-mc-1066",
         "rs-im-0078",
+        "rs-im-0487",
+        "rs-im-0457",
         "rs-im-0300",
         "rs-mc-0468",
         "rs-im-0384",
@@ -21528,11 +22997,13 @@
         "rs-mc-0370",
         "rs-mc-0305",
         "rs-im-0174",
+        "rs-im-0490",
         "rs-tf-0022",
         "rs-im-0061",
         "rs-im-0425",
         "rs-mc-0413",
         "rs-mc-0206",
+        "rs-im-0491",
         "rs-mc-0736",
         "rs-mc-0995",
         "rs-mc-0553",
@@ -21571,10 +23042,12 @@
         "rs-im-0374",
         "rs-im-0034",
         "rs-mc-0892",
+        "rs-im-0501",
         "rs-mc-0675",
         "rs-im-0081",
         "rs-im-0202",
-        "rs-mc-0153"
+        "rs-mc-0153",
+        "rs-im-0495"
       ]
     },
     {
@@ -21593,6 +23066,8 @@
         "rs-im-0399",
         "rs-im-0290",
         "rs-im-0001",
+        "rs-im-0483",
+        "rs-im-0478",
         "rs-mc-0903",
         "rs-mc-0833",
         "rs-mc-0061",
@@ -21613,6 +23088,8 @@
       "questionIds": [
         "rs-mc-0286",
         "rs-mc-1015",
+        "rs-im-0535",
+        "rs-im-0507",
         "rs-mc-0571",
         "rs-im-0149",
         "rs-mc-0905",
@@ -21641,6 +23118,8 @@
       "mockNumber": 20,
       "title": "Road Signs Test Test 20",
       "questionIds": [
+        "rs-im-0504",
+        "rs-im-0461",
         "rs-mc-0092",
         "rs-mc-0436",
         "rs-im-0237",
@@ -21677,6 +23156,7 @@
         "rs-mc-0099",
         "rs-im-0192",
         "rs-im-0342",
+        "rs-im-0536",
         "rs-mc-0146",
         "rs-mc-0660",
         "rs-mc-0592",
@@ -21686,6 +23166,7 @@
         "rs-mc-0758",
         "rs-mc-0098",
         "rs-mc-0290",
+        "rs-im-0519",
         "rs-mc-0817",
         "rs-im-0151",
         "rs-mc-0357",
@@ -21706,10 +23187,12 @@
         "rs-mc-0528",
         "rs-mc-0552",
         "rs-im-0048",
+        "rs-im-0468",
         "rs-mc-0182",
         "rs-im-0270",
         "rs-tf-0002",
         "rs-mc-0048",
+        "rs-im-0470",
         "rs-mc-0805",
         "rs-mc-0602-tff15",
         "rs-mc-0431",
@@ -21743,7 +23226,9 @@
         "rs-mc-1071",
         "rs-mc-0047",
         "rs-mc-0820",
+        "rs-im-0514",
         "rs-mc-0655",
+        "rs-im-0541",
         "rs-im-0271",
         "rs-im-0372",
         "rs-mc-0769",
@@ -21782,9 +23267,11 @@
         "rs-mc-0760",
         "rs-mc-0759",
         "rs-mc-0744",
+        "rs-im-0515",
         "rs-im-0110",
         "rs-mc-0291",
-        "rs-im-0301"
+        "rs-im-0301",
+        "rs-im-0533"
       ]
     },
     {
@@ -21798,11 +23285,13 @@
         "rs-im-0138",
         "rs-mc-0345",
         "rs-mc-0254",
+        "rs-im-0476",
         "rs-mc-0617",
         "rs-im-0427",
         "rs-mc-0600",
         "rs-mc-1051-tf20",
         "rs-im-0178",
+        "rs-im-0486",
         "rs-mc-0121",
         "rs-mc-0394",
         "rs-mc-1044",
@@ -21830,6 +23319,7 @@
         "rs-mc-0778",
         "rs-mc-0074",
         "rs-mc-0914",
+        "rs-im-0509",
         "rs-mc-0836",
         "rs-mc-0963",
         "rs-im-0224",
@@ -21840,6 +23330,7 @@
         "rs-im-0076",
         "rs-mc-0980",
         "rs-mc-0763",
+        "rs-im-0544",
         "rs-mc-0429",
         "rs-im-0135",
         "rs-mc-0726",
@@ -21871,6 +23362,8 @@
         "rs-im-0232",
         "rs-mc-0988",
         "rs-im-0107",
+        "rs-im-0494",
+        "rs-im-0516",
         "rs-mc-0319",
         "rs-mc-0990",
         "rs-mc-0097",
@@ -21903,8 +23396,10 @@
         "rs-mc-0526",
         "rs-im-0223",
         "rs-mc-0949",
+        "rs-im-0460",
         "rs-im-0241",
-        "rs-tf-0027"
+        "rs-tf-0027",
+        "rs-im-0523"
       ]
     },
     {
@@ -21915,6 +23410,7 @@
         "rs-mc-0927",
         "rs-mc-0360",
         "rs-im-0414",
+        "rs-im-0479",
         "rs-mc-0332",
         "rs-im-0356",
         "rs-im-0448",
@@ -21931,6 +23427,7 @@
         "rs-mc-0199",
         "rs-im-0220",
         "rs-mc-0485",
+        "rs-im-0484",
         "rs-mc-0750",
         "rs-mc-0463",
         "rs-im-0184",
@@ -21945,6 +23442,7 @@
         "rs-im-0020",
         "rs-im-0416",
         "rs-mc-0028",
+        "rs-im-0459",
         "rs-mc-0156",
         "rs-mc-0494",
         "rs-mc-0470",
@@ -21955,6 +23453,7 @@
         "rs-mc-0620",
         "rs-mc-0618",
         "rs-mc-0349",
+        "rs-im-0485",
         "rs-mc-0217",
         "rs-mc-0716",
         "rs-mc-0352",
@@ -21974,6 +23473,7 @@
         "rs-mc-0181",
         "rs-mc-1016",
         "rs-mc-0942",
+        "rs-im-0540",
         "rs-mc-0350",
         "rs-mc-0753",
         "rs-mc-0888",
@@ -21986,6 +23486,7 @@
         "rs-mc-0287",
         "rs-mc-0150",
         "rs-mc-0114",
+        "rs-im-0545",
         "rs-mc-0843",
         "rs-im-0347",
         "rs-tf-0065",
@@ -22010,6 +23511,7 @@
         "rs-tf-0045",
         "rs-im-0375",
         "rs-mc-0603",
+        "rs-im-0513",
         "rs-mc-0246",
         "rs-mc-0916",
         "rs-mc-0669",
@@ -22020,6 +23522,7 @@
         "rs-im-0142",
         "rs-mc-1013",
         "rs-im-0249",
+        "rs-im-0537",
         "rs-mc-1077",
         "rs-mc-1008",
         "rs-mc-0005",
@@ -22046,10 +23549,12 @@
         "rs-im-0238",
         "rs-mc-0969",
         "rs-im-0148",
+        "rs-im-0471",
         "rs-mc-0529",
         "rs-mc-0928",
         "rs-im-0391",
         "rs-tf-0043",
+        "rs-im-0480",
         "rs-mc-0400",
         "rs-mc-0983",
         "rs-im-0084",
@@ -22074,8 +23579,10 @@
         "rs-im-0003",
         "rs-im-0154",
         "rs-mc-0691",
+        "rs-im-0528",
         "rs-mc-0850",
         "rs-tf-0011",
+        "rs-im-0462",
         "rs-mc-0673",
         "rs-im-0200",
         "rs-mc-0354",
@@ -22093,6 +23600,7 @@
       "questionIds": [
         "rs-mc-0598",
         "rs-mc-0367",
+        "rs-im-0512",
         "rs-mc-0998",
         "rs-mc-0657",
         "rs-im-0455-tf0",
@@ -22114,6 +23622,7 @@
         "rs-mc-0994",
         "rs-im-0055",
         "rs-mc-0738",
+        "rs-im-0482",
         "rs-mc-0446"
       ]
     },
@@ -22130,6 +23639,8 @@
         "rs-im-0431",
         "rs-mc-0610",
         "rs-mc-0500",
+        "rs-im-0527",
+        "rs-im-0503",
         "rs-im-0387",
         "rs-mc-0452",
         "rs-mc-0503",
@@ -22165,6 +23676,7 @@
         "rs-mc-0612",
         "rs-im-0420",
         "rs-mc-0209",
+        "rs-im-0475",
         "rs-mc-0031",
         "rs-tf-0048",
         "rs-mc-0605",
@@ -22172,6 +23684,7 @@
         "rs-mc-0575",
         "rs-mc-0083",
         "rs-mc-0992",
+        "rs-im-0499",
         "rs-mc-1035",
         "rs-mc-0050",
         "rs-im-0158"
@@ -22194,12 +23707,14 @@
         "rs-mc-0502",
         "rs-mc-0284",
         "rs-mc-0574",
+        "rs-im-0518",
         "rs-mc-0650",
         "rs-im-0033",
         "rs-im-0320",
         "rs-mc-0515",
         "rs-mc-0608-tf14",
         "rs-mc-0041",
+        "rs-im-0526",
         "rs-mc-0566",
         "rs-im-0157",
         "rs-mc-0253",
@@ -22213,8 +23728,10 @@
       "questionIds": [
         "rs-tf-0032",
         "rs-im-0099",
+        "rs-im-0542",
         "rs-im-0156",
         "rs-im-0254",
+        "rs-im-0456",
         "rs-mc-0873",
         "rs-im-0123",
         "rs-mc-0772",
@@ -22252,6 +23769,7 @@
         "rs-mc-0733",
         "rs-mc-0847",
         "rs-im-0298",
+        "rs-im-0497",
         "rs-mc-0751",
         "rs-mc-0052",
         "rs-mc-1043",
@@ -22264,7 +23782,8 @@
         "rs-mc-0478",
         "rs-tf-0004",
         "rs-im-0214",
-        "rs-mc-0601"
+        "rs-mc-0601",
+        "rs-im-0477"
       ]
     },
     {
@@ -22286,12 +23805,14 @@
         "rs-mc-0700",
         "rs-mc-0071",
         "rs-mc-0316",
+        "rs-im-0548",
         "rs-mc-0830",
         "rs-im-0282",
         "rs-mc-0687",
         "rs-mc-0721",
         "rs-mc-0372",
         "rs-mc-0693",
+        "rs-im-0505",
         "rs-im-0321",
         "rs-tf-0016",
         "rs-mc-0810"
@@ -22304,11 +23825,13 @@
         "rs-mc-0774",
         "rs-mc-1032",
         "rs-im-0171",
+        "rs-im-0493",
         "rs-mc-0301",
         "rs-im-0172",
         "rs-im-0325",
         "rs-mc-0970",
         "rs-mc-0225",
+        "rs-im-0496",
         "rs-mc-0525",
         "rs-im-0278",
         "rs-im-0423",
@@ -22335,6 +23858,7 @@
         "rs-mc-0604",
         "rs-im-0091",
         "rs-mc-0228",
+        "rs-im-0522",
         "rs-mc-0016",
         "rs-mc-0953",
         "rs-mc-0510",
@@ -22342,6 +23866,7 @@
         "rs-mc-0886",
         "rs-mc-1025",
         "rs-im-0376",
+        "rs-im-0498",
         "rs-im-0219",
         "rs-im-0451",
         "rs-mc-0645",
@@ -22365,6 +23890,7 @@
         "rs-mc-0474",
         "rs-mc-0245",
         "rs-mc-0002",
+        "rs-im-0546",
         "rs-mc-0904",
         "rs-mc-0556",
         "rs-im-0350",
@@ -22377,6 +23903,7 @@
         "rs-mc-0554",
         "rs-im-0394",
         "rs-im-0068",
+        "rs-im-0547",
         "rs-mc-0088",
         "rs-tf-0039",
         "rs-mc-0638",
@@ -22397,6 +23924,7 @@
         "rs-mc-0668",
         "rs-mc-0415",
         "rs-im-0222",
+        "rs-im-0473",
         "rs-mc-0870",
         "rs-im-0104",
         "rs-mc-0978",
@@ -22411,6 +23939,7 @@
         "rs-mc-0881",
         "rs-im-0296",
         "rs-mc-0027",
+        "rs-im-0534",
         "rs-mc-0359",
         "rs-im-0401",
         "rs-mc-0261",
