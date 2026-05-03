@@ -1,5 +1,5 @@
 import { Link, useNavigate } from "@tanstack/react-router";
-import { Search, Moon, Sun, User as UserIcon, LogOut, LayoutDashboard, Heart, Settings } from "lucide-react";
+import { Search, Moon, Sun, User as UserIcon, LogOut, LayoutDashboard, Heart, Settings, Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Logo } from "./Logo";
 import { useAuth } from "@/lib/auth-context";
@@ -21,6 +21,7 @@ const nav: { label: string; to: string; slug?: string }[] = [
 
 export function SiteHeader() {
   const [isDark, setIsDark] = useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
   const { user, signOut, loading } = useAuth();
   const navigate = useNavigate();
 
@@ -108,8 +109,49 @@ export function SiteHeader() {
               Sign in
             </Link>
           )}
+
+          <button
+            type="button"
+            aria-label="Toggle menu"
+            onClick={() => setMobileOpen((o) => !o)}
+            className="inline-flex h-10 w-10 items-center justify-center rounded-xl text-foreground/70 transition-colors hover:bg-muted hover:text-foreground lg:hidden"
+          >
+            {mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          </button>
         </div>
       </div>
+
+      {mobileOpen && (
+        <div className="border-t border-border/60 bg-background lg:hidden">
+          <nav className="mx-auto flex max-w-7xl flex-col gap-1 px-4 py-3 md:px-6">
+            {nav.map((item) =>
+              item.slug ? (
+                <Link
+                  key={item.label}
+                  to={item.to as "/category/$slug"}
+                  params={{ slug: item.slug }}
+                  onClick={() => setMobileOpen(false)}
+                  className="rounded-lg px-3 py-2.5 text-sm font-semibold text-foreground/80 hover:bg-muted hover:text-foreground"
+                  activeProps={{ className: "bg-muted text-foreground" }}
+                >
+                  {item.label}
+                </Link>
+              ) : (
+                <Link
+                  key={item.label}
+                  to={item.to as "/"}
+                  onClick={() => setMobileOpen(false)}
+                  className="rounded-lg px-3 py-2.5 text-sm font-semibold text-foreground/80 hover:bg-muted hover:text-foreground"
+                  activeOptions={{ exact: true }}
+                  activeProps={{ className: "bg-muted text-foreground" }}
+                >
+                  {item.label}
+                </Link>
+              ),
+            )}
+          </nav>
+        </div>
+      )}
     </header>
   );
 }
