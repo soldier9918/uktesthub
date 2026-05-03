@@ -6,7 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { supabase } from "@/integrations/supabase/client";
 
 export const Route = createFileRoute("/admin-kb20/users")({
-  head: () => ({ meta: [{ title: "Users — Admin — UK Test Hub" }] }),
+  head: () => ({ meta: [{ title: "Users — Admin — UK Test Hub" }, { name: "robots", content: "noindex, nofollow, noarchive, nosnippet" }] }),
   component: () => (
     <AdminGate>
       <UsersAdmin />

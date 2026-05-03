@@ -139,7 +139,10 @@ export const Route = createFileRoute("/admin-kb20/questions/$topic")({
     </div>
   ),
   head: ({ params }) => ({
-    meta: [{ title: `Questions — ${params.topic} — UK Test Hub` }],
+    meta: [
+      { title: `Questions — ${params.topic} — UK Test Hub` },
+      { name: "robots", content: "noindex, nofollow, noarchive, nosnippet" },
+    ],
   }),
   component: () => (
     <AdminGate>

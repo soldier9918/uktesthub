@@ -8,7 +8,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 
 export const Route = createFileRoute("/admin-kb20/login")({
-  head: () => ({ meta: [{ title: "Admin Login — UK Test Hub" }] }),
+  head: () => ({ meta: [{ title: "Admin Login — UK Test Hub" }, { name: "robots", content: "noindex, nofollow, noarchive, nosnippet" }] }),
   component: AdminLogin,
 });
 

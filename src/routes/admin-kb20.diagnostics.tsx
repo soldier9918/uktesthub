@@ -21,7 +21,7 @@ function fileExists(path: string, publicImages: Set<string>): boolean {
 }
 
 export const Route = createFileRoute("/admin-kb20/diagnostics")({
-  head: () => ({ meta: [{ title: "Diagnostics — Admin — UK Test Hub" }] }),
+  head: () => ({ meta: [{ title: "Diagnostics — Admin — UK Test Hub" }, { name: "robots", content: "noindex, nofollow, noarchive, nosnippet" }] }),
   component: () => (
     <AdminGate>
       <Diagnostics />

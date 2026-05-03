@@ -13,7 +13,7 @@ const topics: TopicEntry[] = listAllTopics()
   .sort((a, b) => a.topic.localeCompare(b.topic));
 
 export const Route = createFileRoute("/admin-kb20/questions/")({
-  head: () => ({ meta: [{ title: "Question Bank Browser — UK Test Hub" }] }),
+  head: () => ({ meta: [{ title: "Question Bank Browser — UK Test Hub" }, { name: "robots", content: "noindex, nofollow, noarchive, nosnippet" }] }),
   component: () => (
     <AdminGate>
       <TopicsIndex />

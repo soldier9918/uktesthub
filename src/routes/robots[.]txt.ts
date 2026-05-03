@@ -2,6 +2,11 @@ import { createFileRoute } from "@tanstack/react-router";
 
 const robotsTxt = `User-agent: *
 Allow: /
+Disallow: /admin
+Disallow: /admin-kb20
+Disallow: /account
+Disallow: /dashboard
+Disallow: /bookmarks
 
 Sitemap: https://www.uktesthub.com/sitemap.xml`;
 

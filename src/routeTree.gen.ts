@@ -31,6 +31,7 @@ import { Route as ContactRouteImport } from './routes/contact'
 import { Route as BookmarksRouteImport } from './routes/bookmarks'
 import { Route as BlogRouteImport } from './routes/blog'
 import { Route as AllTestsRouteImport } from './routes/all-tests'
+import { Route as AdminRouteImport } from './routes/admin'
 import { Route as AccountRouteImport } from './routes/account'
 import { Route as AccessibilityRouteImport } from './routes/accessibility'
 import { Route as AboutRouteImport } from './routes/about'
@@ -158,6 +159,11 @@ const AllTestsRoute = AllTestsRouteImport.update({
   path: '/all-tests',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AdminRoute = AdminRouteImport.update({
+  id: '/admin',
+  path: '/admin',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AccountRoute = AccountRouteImport.update({
   id: '/account',
   path: '/account',
@@ -244,6 +250,7 @@ export interface FileRoutesByFullPath {
   '/about': typeof AboutRoute
   '/accessibility': typeof AccessibilityRoute
   '/account': typeof AccountRoute
+  '/admin': typeof AdminRoute
   '/all-tests': typeof AllTestsRoute
   '/blog': typeof BlogRouteWithChildren
   '/bookmarks': typeof BookmarksRoute
@@ -284,6 +291,7 @@ export interface FileRoutesByTo {
   '/about': typeof AboutRoute
   '/accessibility': typeof AccessibilityRoute
   '/account': typeof AccountRoute
+  '/admin': typeof AdminRoute
   '/all-tests': typeof AllTestsRoute
   '/bookmarks': typeof BookmarksRoute
   '/contact': typeof ContactRoute
@@ -324,6 +332,7 @@ export interface FileRoutesById {
   '/about': typeof AboutRoute
   '/accessibility': typeof AccessibilityRoute
   '/account': typeof AccountRoute
+  '/admin': typeof AdminRoute
   '/all-tests': typeof AllTestsRoute
   '/blog': typeof BlogRouteWithChildren
   '/bookmarks': typeof BookmarksRoute
@@ -366,6 +375,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/accessibility'
     | '/account'
+    | '/admin'
     | '/all-tests'
     | '/blog'
     | '/bookmarks'
@@ -406,6 +416,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/accessibility'
     | '/account'
+    | '/admin'
     | '/all-tests'
     | '/bookmarks'
     | '/contact'
@@ -445,6 +456,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/accessibility'
     | '/account'
+    | '/admin'
     | '/all-tests'
     | '/blog'
     | '/bookmarks'
@@ -486,6 +498,7 @@ export interface RootRouteChildren {
   AboutRoute: typeof AboutRoute
   AccessibilityRoute: typeof AccessibilityRoute
   AccountRoute: typeof AccountRoute
+  AdminRoute: typeof AdminRoute
   AllTestsRoute: typeof AllTestsRoute
   BlogRoute: typeof BlogRouteWithChildren
   BookmarksRoute: typeof BookmarksRoute
@@ -676,6 +689,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AllTestsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/admin': {
+      id: '/admin'
+      path: '/admin'
+      fullPath: '/admin'
+      preLoaderRoute: typeof AdminRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/account': {
       id: '/account'
       path: '/account'
@@ -808,6 +828,7 @@ const rootRouteChildren: RootRouteChildren = {
   AboutRoute: AboutRoute,
   AccessibilityRoute: AccessibilityRoute,
   AccountRoute: AccountRoute,
+  AdminRoute: AdminRoute,
   AllTestsRoute: AllTestsRoute,
   BlogRoute: BlogRouteWithChildren,
   BookmarksRoute: BookmarksRoute,
