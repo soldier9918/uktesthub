@@ -18,6 +18,11 @@ import heroLegal from "@/assets/cat-hero-legal.jpg";
 import heroMilitary from "@/assets/cat-hero-military.jpg";
 import heroMaritimeAviation from "@/assets/cat-hero-maritime-aviation.jpg";
 import heroGovernment from "@/assets/cat-hero-government.jpg";
+import heroHgvLogistics from "@/assets/cat-hero-hgv-logistics.jpg";
+import heroCareSocialWork from "@/assets/cat-hero-care-social-work.jpg";
+import heroBeautyWellbeing from "@/assets/cat-hero-beauty-wellbeing.jpg";
+import heroRetailCustomerService from "@/assets/cat-hero-retail-customer-service.jpg";
+import heroAnimalCare from "@/assets/cat-hero-animal-care.jpg";
 
 export type Category = {
   slug: string;
@@ -347,6 +352,91 @@ export const categories: Category[] = [
       { slug: "cs-verbal", title: "Civil Service Verbal Reasoning" },
       { slug: "cs-numerical", title: "Civil Service Numerical Reasoning" },
       { slug: "border-force", title: "Border Force Recruitment Test" },
+    ],
+  },
+  {
+    slug: "hgv-logistics",
+    title: "HGV / LGV & Logistics",
+    short: "Driver CPC, ADR, Forklift & Transport Manager CPC",
+    description:
+      "Free practice for UK professional driving and logistics qualifications — Driver CPC Module 2 and Module 4, ADR dangerous goods awareness, forklift truck theory and Transport Manager CPC.",
+    icon: "Truck",
+    accent: "navy",
+    heroImage: heroHgvLogistics,
+    topics: [
+      { slug: "driver-cpc-module-2", title: "Driver CPC Module 2 (Case Studies)" },
+      { slug: "driver-cpc-module-4", title: "Driver CPC Module 4 (Practical Demonstration Theory)" },
+      { slug: "adr-dangerous-goods", title: "ADR Dangerous Goods Awareness" },
+      { slug: "forklift-theory", title: "Forklift Truck Theory (RTITB / ITSSAR)" },
+      { slug: "transport-manager-cpc", title: "Transport Manager CPC Practice" },
+    ],
+  },
+  {
+    slug: "care-social-work",
+    title: "Care & Social Work",
+    short: "Care Certificate, Adult Social Care, Safeguarding & Medication",
+    description:
+      "Free practice for the UK adult social care workforce — the Care Certificate 15 standards, Level 2 Adult Social Care, Safeguarding Adults, Medication Awareness and Social Work England readiness.",
+    icon: "HandHeart",
+    accent: "coral",
+    heroImage: heroCareSocialWork,
+    topics: [
+      { slug: "care-certificate", title: "Care Certificate (15 Standards)" },
+      { slug: "adult-social-care", title: "Level 2 Adult Social Care" },
+      { slug: "safeguarding-adults", title: "Safeguarding Adults" },
+      { slug: "medication-awareness", title: "Medication Awareness in Care" },
+      { slug: "social-work-england", title: "Social Work England Readiness" },
+    ],
+  },
+  {
+    slug: "beauty-wellbeing",
+    title: "Beauty & Wellbeing",
+    short: "Beauty Therapy, Barbering, Nails, Hair & Infection Control",
+    description:
+      "Free practice for UK beauty, hair and wellbeing qualifications — Level 2 Beauty Therapy, Barbering, Nail Technician, Hairdressing theory and Infection Control for beauty professionals.",
+    icon: "Scissors",
+    accent: "gold",
+    heroImage: heroBeautyWellbeing,
+    topics: [
+      { slug: "beauty-therapy-level-2", title: "Level 2 Beauty Therapy Theory" },
+      { slug: "barbering-level-2", title: "Barbering Level 2 Theory" },
+      { slug: "nail-technician", title: "Nail Technician Theory" },
+      { slug: "infection-control-beauty", title: "Infection Control for Beauty" },
+      { slug: "hairdressing-level-2", title: "Hairdressing Level 2 Theory" },
+    ],
+  },
+  {
+    slug: "retail-customer-service",
+    title: "Retail & Customer Service",
+    short: "Retail Level 2, Travel Agent, Customer Service & Age-Restricted Sales",
+    description:
+      "Free practice for UK retail and customer-facing roles — Retail Level 2 Knowledge, ABTA travel agent practice, Customer Service Level 2, visual merchandising and age-restricted sales (Challenge 25).",
+    icon: "ShoppingBag",
+    accent: "success",
+    heroImage: heroRetailCustomerService,
+    topics: [
+      { slug: "retail-level-2", title: "Retail Level 2 Knowledge" },
+      { slug: "abta-travel-agent", title: "ABTA Travel Agent Practice" },
+      { slug: "customer-service-level-2", title: "Customer Service Level 2" },
+      { slug: "visual-merchandising", title: "Visual Merchandising Basics" },
+      { slug: "age-restricted-sales", title: "Age-Restricted Sales (Challenge 25)" },
+    ],
+  },
+  {
+    slug: "animal-care",
+    title: "Animal Care & Veterinary",
+    short: "RVN, Dog Grooming, Animal First Aid, Behaviour & Equine Care",
+    description:
+      "Free practice for UK animal care and veterinary qualifications — RVN pre-registration theory, dog grooming, animal first aid, canine behaviour basics and equine care.",
+    icon: "PawPrint",
+    accent: "success",
+    heroImage: heroAnimalCare,
+    topics: [
+      { slug: "rvn-pre-registration", title: "RVN Pre-Registration Theory" },
+      { slug: "dog-grooming-theory", title: "Dog Grooming Theory" },
+      { slug: "animal-first-aid", title: "Animal First Aid" },
+      { slug: "canine-behaviour", title: "Canine Behaviour Basics" },
+      { slug: "equine-care", title: "Equine Care Theory" },
     ],
   },
 ];

@@ -1332,4 +1332,72 @@ export const categorySeo: Record<string, CategorySeo> = {
       { q: "Are these government recruitment mocks free?", a: "Yes. CSJT, CS Verbal, CS Numerical and Border Force mocks on UK Test Hub are all free to use." },
     ],
   },
+  "hgv-logistics": {
+    title: "HGV / LGV & Logistics Practice Tests UK 2026 — Driver CPC, ADR, Forklift",
+    description: "Free UK practice tests for Driver CPC Module 2 and Module 4, ADR dangerous goods, forklift theory and Transport Manager CPC. Realistic questions with full explanations.",
+    intro: [
+      "Working professionally in road haulage means passing more than the standard car or van licence. Whether you're starting your Driver CPC, adding ADR to your card, getting a forklift ticket or stepping up to Transport Manager, every qualification has a written knowledge test and the pass marks are tight. Our free HGV / LGV & Logistics mocks cover all of them.",
+      "All mocks are written in plain UK English, mirror the real exam style, and include detailed answer explanations so you understand the reasoning — not just the right letter.",
+    ],
+    sections: [
+      { heading: "What's covered in this section", body: ["Driver CPC Module 2 (Case Studies), Driver CPC Module 4 underpinning theory, ADR Dangerous Goods Awareness, Forklift Truck theory (RTITB / ITSSAR) and Transport Manager CPC. Each topic has its own bank of questions and unlimited mock papers."] },
+      { heading: "How to use these mocks", body: ["Start with one mock to set a baseline, review every wrong answer, then take a fresh mock the next day. Spaced repetition over two to three weeks beats cramming the night before every time."] },
+    ],
+    faqs: [
+      { q: "Are these the official Driver CPC questions?", a: "No — the DVSA does not publish its live question bank. Our questions are written in the same style and difficulty so you train against realistic content." },
+      { q: "Do I need Driver CPC if I only drive a van?", a: "No — Driver CPC applies to professional drivers of vehicles over 3.5 tonnes (Category C / C+E) or buses and coaches (Category D / D+E)." },
+    ],
+  },
+  "care-social-work": {
+    title: "Care & Social Work Practice Tests UK 2026 — Care Certificate, Safeguarding",
+    description: "Free UK practice tests for the Care Certificate 15 standards, Level 2 Adult Social Care, Safeguarding Adults, Medication Awareness and Social Work England readiness.",
+    intro: [
+      "Adult social care is one of the most regulated workforces in the UK, and every new starter has to demonstrate the Care Certificate's 15 standards within their first 12 weeks. Our free Care & Social Work mocks cover the Care Certificate, Level 2 Adult Social Care, Safeguarding Adults, safe handling of medication and the Social Work England standards for newly-qualified social workers.",
+    ],
+    sections: [
+      { heading: "What's covered in this section", body: ["The Care Certificate 15 standards, Level 2 Adult Social Care, Safeguarding Adults (Care Act 2014, Mental Capacity Act, types of abuse), Medication Awareness (the six rights, MAR charts, controlled drugs) and Social Work England readiness (professional standards and ASYE)."] },
+    ],
+    faqs: [
+      { q: "Is the Care Certificate a qualification?", a: "It's not a regulated qualification but it is an expected induction standard for new health and social care workers in England, and CQC inspectors check completion records." },
+    ],
+  },
+  "beauty-wellbeing": {
+    title: "Beauty & Wellbeing Practice Tests UK 2026 — Therapy, Barbering, Nails, Hair",
+    description: "Free UK practice tests for Level 2 Beauty Therapy, Barbering, Nail Technician, Hairdressing and Infection Control. Realistic questions with full explanations.",
+    intro: [
+      "From Level 2 Beauty Therapy to Barbering, Nail Tech and Hairdressing, every professional beauty and wellbeing qualification has an underpinning knowledge exam — anatomy, contraindications, infection control and salon health and safety. Our free Beauty & Wellbeing mocks help you walk into the assessment room calm and prepared.",
+    ],
+    sections: [
+      { heading: "What's covered in this section", body: ["Level 2 Beauty Therapy theory, Barbering Level 2, Nail Technician theory, Infection Control for Beauty (HTM 01-05) and Hairdressing Level 2 theory."] },
+    ],
+    faqs: [
+      { q: "Which awarding body sets these exams?", a: "Most are set by VTCT, City & Guilds or ITEC. Check with your training provider which awarding body your specific course uses." },
+    ],
+  },
+  "retail-customer-service": {
+    title: "Retail & Customer Service Practice Tests UK 2026 — Retail L2, ABTA, Challenge 25",
+    description: "Free UK practice tests for Retail Level 2, ABTA travel agent, Customer Service Level 2, Visual Merchandising and Age-Restricted Sales (Challenge 25).",
+    intro: [
+      "Whether you're new to the shop floor, training as a travel agent, or refreshing your Challenge 25 awareness for a licensing audit, our free Retail & Customer Service mocks cover the assessments most UK retailers and travel businesses require — all updated for 2026 and written in plain English.",
+    ],
+    sections: [
+      { heading: "What's covered in this section", body: ["Retail Level 2 Knowledge, ABTA Travel Agent practice (Package Travel Regulations, ATOL, ABTA Code), Customer Service Level 2, Visual Merchandising basics and Age-Restricted Sales (Challenge 25 — alcohol, tobacco, vapes, knives, fireworks)."] },
+    ],
+    faqs: [
+      { q: "Is Challenge 25 a legal requirement?", a: "Challenge 25 itself is not a law, but it's the industry standard recommended by the Home Office and Trading Standards to help meet the legal duty not to sell age-restricted products to underage buyers." },
+    ],
+  },
+  "animal-care": {
+    title: "Animal Care & Veterinary Practice Tests UK 2026 — RVN, Grooming, First Aid",
+    description: "Free UK practice tests for RVN pre-registration, dog grooming theory, animal first aid, canine behaviour and equine care theory.",
+    intro: [
+      "From student veterinary nurses preparing for RCVS registration to professional dog groomers and equine yard staff, our free Animal Care & Veterinary mocks cover the underpinning knowledge tests for the most common UK animal care qualifications.",
+    ],
+    sections: [
+      { heading: "What's covered in this section", body: ["RVN Pre-Registration theory (RCVS Day One Competences), Dog Grooming theory (iPET / City & Guilds), Animal First Aid (CPR, choking, bleeding, poisoning), Canine Behaviour basics (ABTC) and Equine Care theory (BHS)."] },
+    ],
+    faqs: [
+      { q: "Is the RVN exam done online?", a: "The RVN OSCE is sat in person at an RCVS-approved centre. The pre-registration knowledge tests our mocks support are typically done online during your training." },
+    ],
+  },
 };
