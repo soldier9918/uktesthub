@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { AdminGate } from "@/components/AdminGate";
 
-export const Route = createFileRoute("/admin/")({
+export const Route = createFileRoute("/admin-kb20/")({
   head: () => ({ meta: [{ title: "Admin — UK Test Hub" }] }),
   component: () => (
     <AdminGate>
@@ -12,7 +12,7 @@ export const Route = createFileRoute("/admin/")({
         </p>
         <div className="mt-6 grid gap-3 sm:grid-cols-2">
           <Link
-            to="/admin/diagnostics"
+            to="/admin-kb20/diagnostics"
             className="rounded-xl border border-border bg-card p-5 hover:border-coral/40 hover:shadow-soft"
           >
             <div className="font-semibold">Diagnostics panel</div>
@@ -21,12 +21,21 @@ export const Route = createFileRoute("/admin/")({
             </p>
           </Link>
           <Link
-            to="/admin/questions"
+            to="/admin-kb20/questions"
             className="rounded-xl border border-border bg-card p-5 hover:border-coral/40 hover:shadow-soft"
           >
             <div className="font-semibold">Edit questions & images</div>
             <p className="mt-1 text-sm text-muted-foreground">
               Reword any question, change correct answers, upload replacement images.
+            </p>
+          </Link>
+          <Link
+            to="/admin-kb20/users"
+            className="rounded-xl border border-border bg-card p-5 hover:border-coral/40 hover:shadow-soft"
+          >
+            <div className="font-semibold">Users</div>
+            <p className="mt-1 text-sm text-muted-foreground">
+              See everyone who's signed up — email, sign-in history, attempts, role.
             </p>
           </Link>
         </div>

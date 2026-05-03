@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 
-export const Route = createFileRoute("/admin/login")({
+export const Route = createFileRoute("/admin-kb20/login")({
   head: () => ({ meta: [{ title: "Admin Login — UK Test Hub" }] }),
   component: AdminLogin,
 });
@@ -23,7 +23,7 @@ function AdminLogin() {
   const [info, setInfo] = useState<string | null>(null);
 
   useEffect(() => {
-    if (!loading && user && isAdmin) nav({ to: "/admin" });
+    if (!loading && user && isAdmin) nav({ to: "/admin-kb20" });
   }, [user, isAdmin, loading, nav]);
 
   const submit = async (e: React.FormEvent) => {
@@ -35,7 +35,7 @@ function AdminLogin() {
       const { error } = await supabase.auth.signUp({
         email,
         password,
-        options: { emailRedirectTo: `${window.location.origin}/admin` },
+        options: { emailRedirectTo: `${window.location.origin}/admin-kb20` },
       });
       setBusy(false);
       if (error) return setError(error.message);

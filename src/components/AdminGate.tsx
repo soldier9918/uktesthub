@@ -12,7 +12,7 @@ export function AdminGate({ children }: { children: ReactNode }) {
   const nav = useNavigate();
 
   useEffect(() => {
-    if (!loading && !user) nav({ to: "/admin/login" });
+    if (!loading && !user) nav({ to: "/admin-kb20/login" });
   }, [loading, user, nav]);
 
   if (loading) {
@@ -38,15 +38,18 @@ export function AdminGate({ children }: { children: ReactNode }) {
       <div className="border-b border-border bg-muted/40">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-2 text-xs">
           <nav className="flex items-center gap-3">
-            <Link to="/admin" className="font-semibold hover:underline">
+            <Link to="/admin-kb20" className="font-semibold hover:underline">
               Admin
             </Link>
             <span className="text-muted-foreground">/</span>
-            <Link to="/admin/diagnostics" className="hover:underline">
+            <Link to="/admin-kb20/diagnostics" className="hover:underline">
               Diagnostics
             </Link>
-            <Link to="/admin/questions" className="hover:underline">
+            <Link to="/admin-kb20/questions" className="hover:underline">
               Questions
+            </Link>
+            <Link to="/admin-kb20/users" className="hover:underline">
+              Users
             </Link>
           </nav>
           <div className="flex items-center gap-2 text-muted-foreground">

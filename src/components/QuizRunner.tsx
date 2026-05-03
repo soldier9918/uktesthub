@@ -146,6 +146,52 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
   const passed = percent >= quiz.passMark;
 
   const { user } = useAuth();
+  const [progressLoaded, setProgressLoaded] = useState(false);
+
+  // Restore in-progress quiz from DB for signed-in users
+  useEffect(() => {
+    if (!user || progressLoaded) return;
+    let cancelled = false;
+    supabase
+      .from("quiz_progress")
+      .select("current_index,answers")
+      .eq("mock_slug", quiz.slug)
+      .maybeSingle()
+      .then(({ data }) => {
+        if (cancelled) return;
+        if (data && Array.isArray((data as { answers?: unknown }).answers)) {
+          const restored = (data as { answers: Answer[] }).answers;
+          if (restored.length === quiz.questions.length) {
+            setAnswers(restored);
+            setCurrent(Math.min((data as { current_index: number }).current_index ?? 0, quiz.questions.length - 1));
+          }
+        }
+        setProgressLoaded(true);
+      });
+    return () => { cancelled = true; };
+  }, [user, quiz.slug, quiz.questions.length, progressLoaded]);
+
+  // Debounced live save while quiz is in progress
+  useEffect(() => {
+    if (!user || finished || mode === null) return;
+    const t = setTimeout(() => {
+      supabase
+        .from("quiz_progress")
+        .upsert(
+          [{
+            user_id: user.id,
+            mock_slug: quiz.slug,
+            topic_slug: (quiz as { topicSlug?: string }).topicSlug ?? quiz.slug,
+            current_index: current,
+            answers: answers as unknown as import("@/integrations/supabase/types").Json,
+            updated_at: new Date().toISOString(),
+          }],
+          { onConflict: "user_id,mock_slug" },
+        )
+        .then(() => {});
+    }, 800);
+    return () => clearTimeout(t);
+  }, [user, finished, mode, current, answers, quiz]);
 
   useEffect(() => {
     if (!finished) return;

@@ -127,7 +127,7 @@ function flatten(file: AnyFile): FlatQuestion[] {
   return out;
 }
 
-export const Route = createFileRoute("/admin/questions/$topic")({
+export const Route = createFileRoute("/admin-kb20/questions/$topic")({
   loader: async ({ params }) => {
     const file = (await loadTopicFileForAdmin(params.topic)) as AnyFile | undefined;
     if (!file) throw notFound();
@@ -149,7 +149,7 @@ export const Route = createFileRoute("/admin/questions/$topic")({
   notFoundComponent: () => (
     <div className="p-8">
       Topic not found.{" "}
-      <Link to="/admin/questions" className="underline">
+      <Link to="/admin-kb20/questions" className="underline">
         Back
       </Link>
     </div>
@@ -214,7 +214,7 @@ function QuestionsBrowser() {
         <div className="flex items-center justify-between gap-4">
           <div>
             <Link
-              to="/admin/questions"
+              to="/admin-kb20/questions"
               className="text-xs text-muted-foreground hover:underline"
             >
               ← All topics
