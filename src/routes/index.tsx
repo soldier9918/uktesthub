@@ -149,7 +149,7 @@ function HomePage() {
             <p className="mt-6 max-w-xl text-base text-navy-foreground/85 md:text-lg whitespace-pre-line">
               Real exam questions. Mock tests. Instant results.
               {"\n"}Study anytime, anywhere. 
-              {"\n"}Over 96000+ mock questions across 110+ topics!
+              {"\n"}Over <span className="font-bold text-[#d4af37]">96,000+</span> mock questions across <span className="font-bold text-[#d4af37]">110+</span> topics!
             </p>
 
             <div className="mt-8 flex flex-wrap gap-3">
