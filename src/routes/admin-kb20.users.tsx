@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import { AdminGate } from "@/components/AdminGate";
-import { listAdminUsers, type AdminUserRow } from "@/server/users.functions";
+import { listAdminUsers, type AdminUserRow } from "@/lib/server-fns/users.functions";
 import { Badge } from "@/components/ui/badge";
 import { supabase } from "@/integrations/supabase/client";
 
