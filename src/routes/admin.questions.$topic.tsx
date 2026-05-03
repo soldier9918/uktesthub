@@ -1,0 +1,374 @@
+import { useMemo, useState } from "react";
+import { createFileRoute, Link, notFound } from "@tanstack/react-router";
+import { SiteHeader } from "@/components/SiteHeader";
+import { SiteFooter } from "@/components/SiteFooter";
+import { Input } from "@/components/ui/input";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+
+type RawQuestion = Record<string, unknown> & {
+  id?: string;
+  type?: string;
+  question?: string;
+  template?: string;
+  prompt?: string;
+  explanation?: string;
+  image?: string;
+  imageAlt?: string;
+  options?: string[];
+  correctAnswer?: number | boolean;
+  correctAnswers?: number[];
+  blanks?: { options: string[]; correctIndex: number }[];
+  spots?: { id: string; label: string }[];
+  correctSpotId?: string;
+};
+
+type V2 = {
+  version: 2;
+  topic: string;
+  bank: (RawQuestion & { id: string })[];
+  mocks: { mockNumber: number; title: string; questionIds: string[] }[];
+};
+type V1 = {
+  topic: string;
+  tests: { mockNumber: number; title: string; questions: RawQuestion[] }[];
+};
+type AnyFile = V1 | V2;
+
+const modules = import.meta.glob<AnyFile>("../data/mocks/*.json", {
+  eager: true,
+  import: "default",
+});
+
+const byTopic = new Map<string, AnyFile>();
+for (const f of Object.values(modules)) {
+  if (f && (f as AnyFile).topic) byTopic.set((f as AnyFile).topic, f);
+}
+
+type FlatQuestion = {
+  id: string;
+  type: string;
+  question: string;
+  explanation: string;
+  image?: string;
+  imageAlt?: string;
+  options?: string[];
+  correctText?: string;
+  usedInMocks: number[];
+  raw: RawQuestion;
+};
+
+function normaliseType(t: string | undefined): string {
+  if (!t) return "mcq";
+  const x = t.replace(/_/g, "-");
+  return x === "multiple-choice" ? "mcq" : x;
+}
+
+function describeQuestion(r: RawQuestion): string {
+  return (r.question || r.template || r.prompt || "").toString();
+}
+
+function describeCorrect(r: RawQuestion): string | undefined {
+  const t = normaliseType(r.type);
+  if (t === "true-false") return r.correctAnswer ? "True" : "False";
+  if (t === "multiple-response" && r.options && Array.isArray(r.correctAnswers))
+    return r.correctAnswers.map((i) => r.options![i]).join(" • ");
+  if (
+    (t === "mcq" || t === "image-question") &&
+    r.options &&
+    typeof r.correctAnswer === "number"
+  )
+    return r.options[r.correctAnswer];
+  if ((t === "fill-blanks" || t === "drag-drop-blanks") && r.blanks)
+    return r.blanks.map((b) => b.options[b.correctIndex]).join(" / ");
+  if (t === "hot-spot" && r.spots && r.correctSpotId)
+    return r.spots.find((s) => s.id === r.correctSpotId)?.label;
+  if (t === "numeric-entry" && typeof r.correctAnswer === "number")
+    return String(r.correctAnswer);
+  return undefined;
+}
+
+function flatten(file: AnyFile): FlatQuestion[] {
+  if ((file as V2).version === 2 && Array.isArray((file as V2).bank)) {
+    const v2 = file as V2;
+    const usage = new Map<string, number[]>();
+    for (const m of v2.mocks)
+      for (const qid of m.questionIds) {
+        const arr = usage.get(qid) ?? [];
+        arr.push(m.mockNumber);
+        usage.set(qid, arr);
+      }
+    return v2.bank.map((q) => ({
+      id: q.id,
+      type: normaliseType(q.type),
+      question: describeQuestion(q),
+      explanation: (q.explanation || "").toString(),
+      image: q.image,
+      imageAlt: q.imageAlt,
+      options: q.options,
+      correctText: describeCorrect(q),
+      usedInMocks: usage.get(q.id) ?? [],
+      raw: q,
+    }));
+  }
+  const v1 = file as V1;
+  const out: FlatQuestion[] = [];
+  v1.tests.forEach((t) => {
+    t.questions.forEach((q, i) => {
+      out.push({
+        id: q.id ?? `${t.mockNumber}-${i + 1}`,
+        type: normaliseType(q.type),
+        question: describeQuestion(q),
+        explanation: (q.explanation || "").toString(),
+        image: q.image,
+        imageAlt: q.imageAlt,
+        options: q.options,
+        correctText: describeCorrect(q),
+        usedInMocks: [t.mockNumber],
+        raw: q,
+      });
+    });
+  });
+  return out;
+}
+
+export const Route = createFileRoute("/admin/questions/$topic")({
+  loader: ({ params }) => {
+    const file = byTopic.get(params.topic);
+    if (!file) throw notFound();
+    return { topic: params.topic, questions: flatten(file) };
+  },
+  head: ({ params }) => ({
+    meta: [{ title: `Questions — ${params.topic} — UK Test Hub` }],
+  }),
+  component: QuestionsBrowser,
+  notFoundComponent: () => (
+    <div className="p-8">
+      Topic not found.{" "}
+      <Link to="/admin/questions" className="underline">
+        Back
+      </Link>
+    </div>
+  ),
+});
+
+const PAGE_SIZE = 25;
+
+function QuestionsBrowser() {
+  const { topic, questions } = Route.useLoaderData();
+  const [search, setSearch] = useState("");
+  const [type, setType] = useState<string>("all");
+  const [imageFilter, setImageFilter] = useState<"all" | "with" | "without">("all");
+  const [page, setPage] = useState(1);
+
+  const types = useMemo(() => {
+    const s = new Set<string>();
+    questions.forEach((q) => s.add(q.type));
+    return ["all", ...Array.from(s).sort()];
+  }, [questions]);
+
+  const filtered = useMemo(() => {
+    const s = search.trim().toLowerCase();
+    return questions.filter((q) => {
+      if (type !== "all" && q.type !== type) return false;
+      if (imageFilter === "with" && !q.image) return false;
+      if (imageFilter === "without" && q.image) return false;
+      if (
+        s &&
+        !q.question.toLowerCase().includes(s) &&
+        !q.explanation.toLowerCase().includes(s) &&
+        !q.id.toLowerCase().includes(s)
+      )
+        return false;
+      return true;
+    });
+  }, [questions, search, type, imageFilter]);
+
+  const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
+  const pageSafe = Math.min(page, totalPages);
+  const visible = filtered.slice((pageSafe - 1) * PAGE_SIZE, pageSafe * PAGE_SIZE);
+
+  const stats = useMemo(() => {
+    const withImg = questions.filter((q) => q.image).length;
+    const orphan = questions.filter((q) => q.usedInMocks.length === 0).length;
+    return {
+      total: questions.length,
+      withImg,
+      withoutImg: questions.length - withImg,
+      orphan,
+    };
+  }, [questions]);
+
+  return (
+    <div className="min-h-screen bg-background">
+      <SiteHeader />
+      <main className="mx-auto max-w-6xl px-4 py-6">
+        <div className="flex items-center justify-between gap-4">
+          <div>
+            <Link
+              to="/admin/questions"
+              className="text-xs text-muted-foreground hover:underline"
+            >
+              ← All topics
+            </Link>
+            <h1 className="font-display text-2xl font-bold">{topic}</h1>
+            <p className="text-xs text-muted-foreground">
+              {stats.total} questions · {stats.withImg} with images ·{" "}
+              {stats.withoutImg} text-only · {stats.orphan} unused in mocks
+            </p>
+          </div>
+        </div>
+
+        <div className="mt-4 flex flex-wrap items-center gap-2">
+          <Input
+            placeholder="Search question, explanation or ID…"
+            value={search}
+            onChange={(e) => {
+              setSearch(e.target.value);
+              setPage(1);
+            }}
+            className="max-w-sm"
+          />
+          <select
+            value={type}
+            onChange={(e) => {
+              setType(e.target.value);
+              setPage(1);
+            }}
+            className="h-9 rounded-md border border-input bg-background px-2 text-sm"
+          >
+            {types.map((t) => (
+              <option key={t} value={t}>
+                {t}
+              </option>
+            ))}
+          </select>
+          <select
+            value={imageFilter}
+            onChange={(e) => {
+              setImageFilter(e.target.value as "all" | "with" | "without");
+              setPage(1);
+            }}
+            className="h-9 rounded-md border border-input bg-background px-2 text-sm"
+          >
+            <option value="all">All</option>
+            <option value="with">With image</option>
+            <option value="without">Text only</option>
+          </select>
+          <span className="ml-auto text-xs text-muted-foreground">
+            {filtered.length} matching
+          </span>
+        </div>
+
+        <ol className="mt-4 space-y-3">
+          {visible.map((q, idx) => (
+            <li
+              key={q.id}
+              className="rounded-xl border border-border bg-card p-4"
+            >
+              <div className="flex items-start gap-3">
+                <div className="text-xs text-muted-foreground w-12 shrink-0">
+                  #{(pageSafe - 1) * PAGE_SIZE + idx + 1}
+                </div>
+                <div className="flex-1 min-w-0">
+                  <div className="flex flex-wrap items-center gap-2">
+                    <Badge variant="outline">{q.type}</Badge>
+                    <code className="text-[10px] text-muted-foreground">
+                      {q.id}
+                    </code>
+                    {q.usedInMocks.length > 0 ? (
+                      <span className="text-[10px] text-muted-foreground">
+                        Mocks: {q.usedInMocks.join(", ")}
+                      </span>
+                    ) : (
+                      <Badge variant="secondary">unused</Badge>
+                    )}
+                  </div>
+                  <p className="mt-2 font-medium">{q.question}</p>
+                  {q.options && (
+                    <ul className="mt-2 space-y-1 text-sm">
+                      {q.options.map((opt, i) => {
+                        const isCorrect =
+                          (typeof q.raw.correctAnswer === "number" &&
+                            q.raw.correctAnswer === i) ||
+                          (Array.isArray(q.raw.correctAnswers) &&
+                            q.raw.correctAnswers.includes(i));
+                        return (
+                          <li
+                            key={i}
+                            className={
+                              isCorrect
+                                ? "text-emerald-700 dark:text-emerald-400 font-medium"
+                                : "text-muted-foreground"
+                            }
+                          >
+                            {String.fromCharCode(65 + i)}. {opt}
+                            {isCorrect && " ✓"}
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  )}
+                  {!q.options && q.correctText && (
+                    <p className="mt-2 text-sm text-emerald-700 dark:text-emerald-400">
+                      Answer: {q.correctText}
+                    </p>
+                  )}
+                  {q.explanation && (
+                    <details className="mt-2 text-sm text-muted-foreground">
+                      <summary className="cursor-pointer">Explanation</summary>
+                      <p className="mt-1">{q.explanation}</p>
+                    </details>
+                  )}
+                </div>
+                {q.image && (
+                  <img
+                    src={q.image}
+                    alt={q.imageAlt ?? ""}
+                    className="h-24 w-24 rounded-md border border-border object-contain bg-white"
+                    loading="lazy"
+                    onError={(e) => {
+                      (e.currentTarget as HTMLImageElement).style.outline =
+                        "2px solid red";
+                    }}
+                  />
+                )}
+              </div>
+            </li>
+          ))}
+        </ol>
+
+        {filtered.length === 0 && (
+          <p className="mt-8 text-center text-sm text-muted-foreground">
+            No questions match the filters.
+          </p>
+        )}
+
+        {totalPages > 1 && (
+          <div className="mt-6 flex items-center justify-center gap-2">
+            <Button
+              variant="outline"
+              size="sm"
+              disabled={pageSafe <= 1}
+              onClick={() => setPage((p) => Math.max(1, p - 1))}
+            >
+              Previous
+            </Button>
+            <span className="text-sm text-muted-foreground">
+              Page {pageSafe} of {totalPages}
+            </span>
+            <Button
+              variant="outline"
+              size="sm"
+              disabled={pageSafe >= totalPages}
+              onClick={() => setPage((p) => Math.min(totalPages, p + 1))}
+            >
+              Next
+            </Button>
+          </div>
+        )}
+      </main>
+      <SiteFooter />
+    </div>
+  );
+}
