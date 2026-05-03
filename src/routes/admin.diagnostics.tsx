@@ -229,7 +229,7 @@ function ServerLogs() {
     setLoading(true);
     getRecentServerLogs()
       .then((r) => {
-        setLogs((r.logs as ServerLog[]) ?? []);
+        setLogs(((r.logs ?? []) as unknown) as ServerLog[]);
         setErr(r.error);
       })
       .catch((e) => setErr(String(e?.message ?? e)))
