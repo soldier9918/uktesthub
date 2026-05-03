@@ -18,6 +18,11 @@ import heroLegal from "@/assets/cat-hero-legal.jpg";
 import heroMilitary from "@/assets/cat-hero-military.jpg";
 import heroMaritimeAviation from "@/assets/cat-hero-maritime-aviation.jpg";
 import heroGovernment from "@/assets/cat-hero-government.jpg";
+import heroHgvLogistics from "@/assets/cat-hero-hgv-logistics.jpg";
+import heroCareSocialWork from "@/assets/cat-hero-care-social-work.jpg";
+import heroBeautyWellbeing from "@/assets/cat-hero-beauty-wellbeing.jpg";
+import heroRetailCustomerService from "@/assets/cat-hero-retail-customer-service.jpg";
+import heroAnimalCare from "@/assets/cat-hero-animal-care.jpg";
 
 export type Category = {
   slug: string;
