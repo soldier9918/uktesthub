@@ -4,12 +4,6 @@ import { AdminGate } from "@/components/AdminGate";
 import { supabase } from "@/integrations/supabase/client";
 import { Badge } from "@/components/ui/badge";
 import { getRecentServerLogs } from "@/server/diagnostics.functions";
-import diagnosticsData from "@/data/mocks/diagnostics.json";
-
-const publicImages = import.meta.glob(
-  "/public/quiz-images/**/*.{png,jpg,jpeg,webp,svg}",
-  { eager: true, query: "?url", import: "default" },
-);
 
 type TopicStat = {
   topic: string;
@@ -19,13 +13,9 @@ type TopicStat = {
   imagePaths: string[];
 };
 
-const stats: TopicStat[] = Object.values(
-  diagnosticsData as Record<string, TopicStat>,
-).sort((a, b) => a.topic.localeCompare(b.topic));
-
-function fileExists(path: string): boolean {
-  const normalised = path.startsWith("/") ? `/public${path}` : `/public/${path}`;
-  if ((publicImages as Record<string, unknown>)[normalised]) return true;
+function fileExists(path: string, publicImages: Set<string>): boolean {
+  const normalised = path.startsWith("/") ? path : `/${path}`;
+  if (publicImages.has(normalised)) return true;
   if (/^https?:\/\//.test(path)) return true;
   return false;
 }
@@ -40,7 +30,26 @@ export const Route = createFileRoute("/admin/diagnostics")({
 });
 
 function Diagnostics() {
-  // `stats` is a module-level constant from precomputed diagnostics.json.
+  const [stats, setStats] = useState<TopicStat[]>([]);
+  const [publicImages, setPublicImages] = useState<Set<string>>(new Set());
+  const [assetError, setAssetError] = useState<string | null>(null);
+
+  useEffect(() => {
+    Promise.all([
+      fetch("/mocks/diagnostics.json").then((r) => (r.ok ? r.json() : Promise.reject(new Error("diagnostics failed")))),
+      fetch("/mocks/image-inventory.json").then((r) => (r.ok ? r.json() : Promise.reject(new Error("image inventory failed")))),
+    ])
+      .then(([diagnostics, images]) => {
+        setStats(
+          Object.values(diagnostics as Record<string, TopicStat>).sort((a, b) =>
+            a.topic.localeCompare(b.topic),
+          ),
+        );
+        setPublicImages(new Set(images as string[]));
+      })
+      .catch((e) => setAssetError(String(e?.message ?? e)));
+  }, []);
+
   const allReferenced = useMemo(() => {
     const s = new Set<string>();
     for (const t of stats) for (const p of t.imagePaths) s.add(p);
@@ -50,18 +59,17 @@ function Diagnostics() {
   const missing = useMemo(() => {
     const out: { topic: string; path: string }[] = [];
     for (const t of stats)
-      for (const p of t.imagePaths) if (!fileExists(p)) out.push({ topic: t.topic, path: p });
+      for (const p of t.imagePaths) if (!fileExists(p, publicImages)) out.push({ topic: t.topic, path: p });
     return out;
-  }, [stats]);
+  }, [stats, publicImages]);
 
   const orphans = useMemo(() => {
     const out: string[] = [];
-    for (const k of Object.keys(publicImages)) {
-      const rel = k.replace(/^\/public/, "");
+    for (const rel of publicImages) {
       if (!allReferenced.has(rel)) out.push(rel);
     }
     return out.sort();
-  }, [allReferenced]);
+  }, [allReferenced, publicImages]);
 
   const totals = useMemo(() => {
     const total = stats.reduce((n, s) => n + s.total, 0);
