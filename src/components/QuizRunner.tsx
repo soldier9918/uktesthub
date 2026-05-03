@@ -183,7 +183,7 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
             mock_slug: quiz.slug,
             topic_slug: (quiz as { topicSlug?: string }).topicSlug ?? quiz.slug,
             current_index: current,
-            answers: answers as unknown as object,
+            answers: answers as unknown as import("@/integrations/supabase/types").Json,
             updated_at: new Date().toISOString(),
           }],
           { onConflict: "user_id,mock_slug" },
