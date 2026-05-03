@@ -22,13 +22,7 @@ export function Logo({ variant = "dark", showTagline = true, size = "md" }: Prop
           : "group inline-flex items-center gap-3 border border-border/60 bg-gradient-to-br from-background via-background to-muted/40 px-3 py-2 shadow-sm ring-1 ring-black/5 transition-all hover:-translate-y-0.5 hover:border-coral/40 hover:shadow-md dark:ring-white/5"
       }
     >
-      <span
-        className={
-          variant === "light"
-            ? "flex items-center justify-center"
-            : "flex items-center justify-center bg-gradient-to-br from-navy/5 to-coral/10 p-1 ring-1 ring-border/50"
-        }
-      >
+      <span className="flex items-center justify-center">
         <img src={logoSrc} alt="UK Test Hub" className={`${flagSize} object-contain drop-shadow-sm transition-transform group-hover:scale-105`} />
       </span>
 
