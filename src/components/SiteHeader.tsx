@@ -83,7 +83,7 @@ export function SiteHeader() {
             <DropdownMenu>
               <DropdownMenuTrigger className="inline-flex h-10 items-center gap-2 rounded-xl border border-border px-3 text-sm font-semibold hover:bg-muted">
                 <UserIcon className="h-4 w-4" />
-                <span className="hidden sm:inline max-w-[120px] truncate">{user.email}</span>
+                <span className="hidden xl:inline max-w-[140px] truncate">{user.email}</span>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end" className="w-56">
                 <DropdownMenuLabel className="truncate">{user.email}</DropdownMenuLabel>
