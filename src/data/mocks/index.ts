@@ -9,7 +9,7 @@
 //   v1 (legacy):  { topic, tests: [ { slug, mockNumber, title, questions: RawQuestion[] } ] }
 //   v2 (bank):    { version: 2, topic, bank: RawQuestion[], mocks: [ { mockNumber, title, questionIds: string[] } ] }
 import type { Quiz, Question } from "@/data/quizzes";
-import manifestData from "./manifest.json";
+import { categories } from "@/data/categories";
 
 // ---------- Raw on-disk question shapes (one per supported type) ----------
 
@@ -127,17 +127,37 @@ type ManifestMock = {
   questionCount: number;
 };
 type ManifestEntry = { topic: string; file: string; mocks: ManifestMock[] };
-type Manifest = Record<string, ManifestEntry>;
 
-const manifest = manifestData as Manifest;
+const topicSlugs = new Set(
+  categories.flatMap((category) => category.topics.map((topic) => topic.slug)),
+);
+
+function buildTopicEntry(topic: string): ManifestEntry | undefined {
+  if (!topicSlugs.has(topic)) return undefined;
+  return {
+    topic,
+    file: `${topic}.json`,
+    mocks: Array.from({ length: TOTAL_MOCKS_PER_TOPIC }, (_, i) => {
+      const mockNumber = i + 1;
+      return {
+        mockNumber,
+        slug: `${topic}-mock-${mockNumber}`,
+        title: `Mock Test ${mockNumber}`,
+        questionCount: QUESTIONS_PER_MOCK,
+      };
+    }),
+  };
+}
 
 // Reverse index: slug -> topic, populated lazily on first lookup.
 let slugToTopic: Map<string, string> | null = null;
 function getSlugIndex(): Map<string, string> {
   if (slugToTopic) return slugToTopic;
   const m = new Map<string, string>();
-  for (const entry of Object.values(manifest)) {
-    for (const mock of entry.mocks) m.set(mock.slug, entry.topic);
+  for (const topic of topicSlugs) {
+    for (let i = 1; i <= TOTAL_MOCKS_PER_TOPIC; i++) {
+      m.set(`${topic}-mock-${i}`, topic);
+    }
   }
   slugToTopic = m;
   return m;
