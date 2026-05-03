@@ -144,7 +144,11 @@ export const Route = createFileRoute("/admin/questions/$topic")({
   head: ({ params }) => ({
     meta: [{ title: `Questions — ${params.topic} — UK Test Hub` }],
   }),
-  component: QuestionsBrowser,
+  component: () => (
+    <AdminGate>
+      <QuestionsBrowser />
+    </AdminGate>
+  ),
   notFoundComponent: () => (
     <div className="p-8">
       Topic not found.{" "}
@@ -283,6 +287,9 @@ function QuestionsBrowser() {
                     <code className="text-[10px] text-muted-foreground">
                       {q.id}
                     </code>
+                    {overrides?.has(`${topic}::${q.id}`) && (
+                      <Badge className="bg-emerald-600 text-white">edited</Badge>
+                    )}
                     {q.usedInMocks.length > 0 ? (
                       <span className="text-[10px] text-muted-foreground">
                         Mocks: {q.usedInMocks.join(", ")}
@@ -290,6 +297,14 @@ function QuestionsBrowser() {
                     ) : (
                       <Badge variant="secondary">unused</Badge>
                     )}
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      className="ml-auto h-7"
+                      onClick={() => setEditing(q)}
+                    >
+                      Edit
+                    </Button>
                   </div>
                   <p className="mt-2 font-medium">{q.question}</p>
                   {q.options && (
