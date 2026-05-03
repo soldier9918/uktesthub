@@ -1,36 +1,15 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { AdminGate } from "@/components/AdminGate";
-
-type AnyMockFile = {
-  topic?: string;
-  version?: number;
-  bank?: unknown[];
-  tests?: { questions: unknown[] }[];
-  mocks?: unknown[];
-};
-
-const modules = import.meta.glob<AnyMockFile>("../data/mocks/*.json", {
-  eager: true,
-  import: "default",
-});
+import { listAllTopics } from "@/data/mocks";
 
 type TopicEntry = { topic: string; bankCount: number; mockCount: number };
 
-const topics: TopicEntry[] = Object.values(modules)
-  .filter((f): f is AnyMockFile => !!f && typeof f.topic === "string")
-  .map((f) => {
-    const bankCount = Array.isArray(f.bank)
-      ? f.bank.length
-      : Array.isArray(f.tests)
-        ? f.tests.reduce((n, t) => n + (t.questions?.length ?? 0), 0)
-        : 0;
-    const mockCount = Array.isArray(f.mocks)
-      ? f.mocks.length
-      : Array.isArray(f.tests)
-        ? f.tests.length
-        : 0;
-    return { topic: f.topic!, bankCount, mockCount };
-  })
+const topics: TopicEntry[] = listAllTopics()
+  .map((t) => ({
+    topic: t.topic,
+    bankCount: t.mocks.reduce((n, m) => n + (m.questionCount ?? 0), 0),
+    mockCount: t.mocks.length,
+  }))
   .sort((a, b) => a.topic.localeCompare(b.topic));
 
 export const Route = createFileRoute("/admin/questions/")({

@@ -18,7 +18,7 @@ import { AdSlot } from "@/components/AdSlot";
 import { CategoryIcon, accentClasses } from "@/components/CategoryIcon";
 import { UnionJack } from "@/components/UnionJack";
 import { categories } from "@/data/categories";
-import { getDailyQuiz, getQuiz } from "@/data/quizzes";
+import { getDailyQuiz, getQuizMeta } from "@/data/quizzes";
 import { blogPosts } from "@/data/blog";
 // (TestBadge removed)
 
@@ -347,7 +347,7 @@ function HomePage() {
 
           <ul className="mt-8 grid gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
             {featured.map((f) => {
-              const q = getQuiz(f.slug);
+              const q = getQuizMeta(f.slug);
               if (!q) return null;
               return (
                 <li key={f.slug}>
@@ -377,7 +377,7 @@ function HomePage() {
                       </h3>
                       <div className="mt-3 flex flex-wrap gap-x-3 gap-y-1 text-[11px] text-muted-foreground">
                         <span className="inline-flex items-center gap-1">
-                          <ListChecks className="h-3 w-3" /> {q.questions.length} Questions
+                          <ListChecks className="h-3 w-3" /> {q.questionCount} Questions
                         </span>
                         <span className="inline-flex items-center gap-1">
                           <Clock className="h-3 w-3" /> {Math.round(q.timeLimit / 60)} Mins

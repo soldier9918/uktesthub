@@ -38,15 +38,7 @@ type V1 = {
 };
 type AnyFile = V1 | V2;
 
-const modules = import.meta.glob<AnyFile>("../data/mocks/*.json", {
-  eager: true,
-  import: "default",
-});
-
-const byTopic = new Map<string, AnyFile>();
-for (const f of Object.values(modules)) {
-  if (f && (f as AnyFile).topic) byTopic.set((f as AnyFile).topic, f);
-}
+import { loadTopicFileForAdmin } from "@/data/mocks";
 
 type FlatQuestion = {
   id: string;
@@ -136,11 +128,16 @@ function flatten(file: AnyFile): FlatQuestion[] {
 }
 
 export const Route = createFileRoute("/admin/questions/$topic")({
-  loader: ({ params }) => {
-    const file = byTopic.get(params.topic);
+  loader: async ({ params }) => {
+    const file = (await loadTopicFileForAdmin(params.topic)) as AnyFile | undefined;
     if (!file) throw notFound();
     return { topic: params.topic, questions: flatten(file) };
   },
+  errorComponent: ({ error }) => (
+    <div className="p-8 text-sm">
+      Failed to load topic: {error instanceof Error ? error.message : "unknown error"}
+    </div>
+  ),
   head: ({ params }) => ({
     meta: [{ title: `Questions — ${params.topic} — UK Test Hub` }],
   }),

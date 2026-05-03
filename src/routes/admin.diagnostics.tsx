@@ -4,67 +4,28 @@ import { AdminGate } from "@/components/AdminGate";
 import { supabase } from "@/integrations/supabase/client";
 import { Badge } from "@/components/ui/badge";
 import { getRecentServerLogs } from "@/server/diagnostics.functions";
+import diagnosticsData from "@/data/mocks/diagnostics.json";
 
-type AnyMockFile = {
-  topic?: string;
-  bank?: { id: string; image?: string; type?: string }[];
-  tests?: { questions: { id?: string; image?: string; type?: string }[] }[];
-};
-
-const mockModules = import.meta.glob<AnyMockFile>("../data/mocks/*.json", {
-  eager: true,
-  import: "default",
-});
-
-const publicImages = import.meta.glob("/public/quiz-images/**/*.{png,jpg,jpeg,webp,svg}", {
-  eager: true,
-  query: "?url",
-  import: "default",
-});
+const publicImages = import.meta.glob(
+  "/public/quiz-images/**/*.{png,jpg,jpeg,webp,svg}",
+  { eager: true, query: "?url", import: "default" },
+);
 
 type TopicStat = {
   topic: string;
   total: number;
   withImage: number;
   byType: Record<string, number>;
-  imagePaths: Set<string>;
+  imagePaths: string[];
 };
 
-function buildStats(): TopicStat[] {
-  const out: TopicStat[] = [];
-  for (const f of Object.values(mockModules)) {
-    if (!f?.topic) continue;
-    const qs: { id?: string; image?: string; type?: string }[] = [];
-    if (Array.isArray(f.bank)) qs.push(...f.bank);
-    else if (Array.isArray(f.tests))
-      for (const t of f.tests) qs.push(...(t.questions ?? []));
-    const byType: Record<string, number> = {};
-    let withImage = 0;
-    const imgs = new Set<string>();
-    for (const q of qs) {
-      const t = (q.type || "mcq").replace(/_/g, "-");
-      byType[t] = (byType[t] || 0) + 1;
-      if (q.image) {
-        withImage++;
-        imgs.add(q.image);
-      }
-    }
-    out.push({
-      topic: f.topic,
-      total: qs.length,
-      withImage,
-      byType,
-      imagePaths: imgs,
-    });
-  }
-  return out.sort((a, b) => a.topic.localeCompare(b.topic));
-}
+const stats: TopicStat[] = Object.values(
+  diagnosticsData as Record<string, TopicStat>,
+).sort((a, b) => a.topic.localeCompare(b.topic));
 
 function fileExists(path: string): boolean {
-  // images referenced as e.g. "/quiz-images/foo.png" → check against bundled list as "/public/quiz-images/foo.png"
   const normalised = path.startsWith("/") ? `/public${path}` : `/public/${path}`;
-  if (publicImages[normalised]) return true;
-  // Also accept absolute http(s) URLs (e.g. uploaded via storage)
+  if ((publicImages as Record<string, unknown>)[normalised]) return true;
   if (/^https?:\/\//.test(path)) return true;
   return false;
 }
@@ -79,7 +40,7 @@ export const Route = createFileRoute("/admin/diagnostics")({
 });
 
 function Diagnostics() {
-  const stats = useMemo(buildStats, []);
+  // `stats` is a module-level constant from precomputed diagnostics.json.
   const allReferenced = useMemo(() => {
     const s = new Set<string>();
     for (const t of stats) for (const p of t.imagePaths) s.add(p);

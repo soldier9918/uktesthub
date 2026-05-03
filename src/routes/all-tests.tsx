@@ -4,7 +4,7 @@ import { ArrowRight, Clock, ListChecks, Search } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { categories } from "@/data/categories";
-import { getQuiz } from "@/data/quizzes";
+import { getQuizMeta } from "@/data/quizzes";
 
 export const Route = createFileRoute("/all-tests")({
   head: () => ({
@@ -231,7 +231,7 @@ function AllTestsPage() {
 
                 <ul className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                   {c.topics.map((t) => {
-                    const quiz = getQuiz(t.slug);
+                    const quiz = getQuizMeta(t.slug);
                     return (
                       <li key={t.slug}>
                         <Link
@@ -247,7 +247,7 @@ function AllTestsPage() {
                               <div className="mt-2 flex flex-wrap gap-x-3 gap-y-1 text-[11px] text-muted-foreground">
                                 <span className="inline-flex items-center gap-1">
                                   <ListChecks className="h-3 w-3" />{" "}
-                                  {quiz.questions.length} Qs
+                                  {quiz.questionCount} Qs
                                 </span>
                                 <span className="inline-flex items-center gap-1">
                                   <Clock className="h-3 w-3" />{" "}

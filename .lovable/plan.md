@@ -1,62 +1,98 @@
-## Goal
+## Root cause
 
-Finish the admin system so:
-1. `samyhussain123@gmail.com` is granted the `admin` role.
-2. Edits made in the admin question editor appear in live mock tests / quizzes for all users.
-3. The Diagnostics panel shows real recent server runtime logs (not just client activity).
+`src/data/mocks/index.ts` uses:
 
-## 1. Grant admin role
-
-Via a one-off insert into `user_roles`:
-
-```sql
-INSERT INTO public.user_roles (user_id, role)
-SELECT id, 'admin'::app_role FROM auth.users WHERE email = 'samyhussain123@gmail.com'
-ON CONFLICT (user_id, role) DO NOTHING;
+```ts
+const modules = import.meta.glob<MockFile>("./*.json", { eager: true, import: "default" });
 ```
 
-Requires the user to have signed up at `/admin/login` first. If no row exists in `auth.users` for that email, surface a clear message asking them to sign up, then re-run.
+That eagerly bundles **all 115 JSON files (~55MB, ~96k questions)** into the Worker bundle. Every request boots the Worker, parses the giant module graph, and walks the bank/mocks expansion in `expandV2` — which trips Cloudflare error 1102. `src/routes/admin.questions.index.tsx` does the same eager glob on `../data/mocks/*.json`. `src/data/quizzes.ts` also re-exports a large static `quizzes` array, but the mock glob is the dominant cost.
 
-## 2. Wire overrides into QuizRunner
+Secondary issues:
+- `quiz.$slug.tsx`, `topic.$slug.tsx`, `category.$slug.tsx`, `guide.$slug.tsx` import from `@/data/mocks`, which transitively pulls the entire bundle in for SSR even when only metadata is needed.
+- `sitemap[.]xml.ts` is fine (uses categories + blog only), but it currently inherits the bundle through the shared module graph.
 
-Today `src/lib/overrides.ts` loads override rows from `question_overrides` but nothing applies them to live questions. Plan:
+## Goal
 
-- Add a helper `applyOverrides(quiz, map)` in `src/lib/overrides.ts` that returns a new `Quiz` with each question's `question`, `options`, `correctAnswer`, `explanation`, `image`, `imageAlt` swapped in when an override exists for `(quiz.topic, question.id)`.
-- In `src/components/QuizRunner.tsx`:
-  - Call `useOverrides()` at the top.
-  - Memoize `effectiveQuiz = useMemo(() => map ? applyOverrides(quiz, map) : quiz, [quiz, map])`.
-  - Use `effectiveQuiz` everywhere instead of the raw `quiz` prop.
-- Confirm the override row shape matches each question type (MCQ index, true/false bool, multi-response array). For types we don't yet edit in the admin UI (numeric, hot-spot, fill-blanks), only override fields that are present and leave the rest untouched.
-- After a successful save in `QuestionEditDialog`, call `invalidateOverrides()` so subsequent loads refetch.
+Move mock JSONs to `public/mocks/` so they're served as **static assets** (no Worker work). Replace the eager glob with a tiny build-time **metadata manifest** plus per-mock **lazy fetch**.
 
-## 3. Diagnostics: real server/runtime logs
+## Plan
 
-Add a TanStack server function `getRecentServerLogs` (admin-gated via `requireSupabaseAuth` + `has_role` check) in `src/server/diagnostics.functions.ts` that proxies the host's worker logs. Since we cannot directly read Cloudflare logs from inside the Worker, the practical implementation is:
+### 1. Move mock data out of the bundle
+- `git mv src/data/mocks/*.json public/mocks/` (115 files). Keep `src/data/mocks/index.ts` as the API surface only.
+- Files become reachable at `/mocks/<topic>.json` as static assets (Cloudflare serves these directly, never hits the Worker).
 
-- Maintain a lightweight `runtime_logs` table (id, level, message, context jsonb, created_at) with admin-only RLS.
-- Add a tiny `logServer(level, message, context?)` helper used inside server functions and route handlers to insert log rows for warnings and errors.
-- The server function returns the latest 100 rows, newest first.
-- The Diagnostics page replaces the current "Recent activity" client log with a tab showing these server log rows, plus the existing client-side activity log as a second tab.
+### 2. Generate a metadata manifest at build time
+- New script `scripts/build_mock_manifest.mjs`:
+  - Reads every `public/mocks/*.json` from disk (Node, build-time only).
+  - Emits `src/data/mocks/manifest.json` containing **only metadata**:
+    ```json
+    {
+      "driving-theory": {
+        "topic": "driving-theory",
+        "mocks": [
+          { "mockNumber": 1, "slug": "driving-theory-mock-1", "title": "Test 1", "questionCount": 24 }
+        ]
+      }
+    }
+    ```
+  - No question text, options, or explanations — keeps manifest small (~tens of KB total).
+- Wire into `package.json` `prebuild` and `predev` scripts so it always runs before Vite.
 
-Frontend changes:
-- `src/routes/admin.diagnostics.tsx`: add a "Server logs" section that calls `getRecentServerLogs` and renders timestamp + level + message + collapsible context.
+### 3. Refactor `src/data/mocks/index.ts`
+- Delete the `import.meta.glob` block and all the `byTopic` / `bySlug` Maps populated at module load.
+- Import `manifest.json` (small JSON, safe to bundle).
+- Export:
+  - `listMockSlots(topicSlug)` — reads from manifest only (synchronous, used by category/topic/guide pages).
+  - `TOTAL_MOCKS_PER_TOPIC`, `QUESTIONS_PER_MOCK` — unchanged.
+  - **New async** `loadMockBySlug(slug): Promise<MockTest | undefined>`:
+    - Looks up topic from manifest by slug.
+    - `fetch("/mocks/<topic>.json")` with an in-memory `Map<topic, Promise<MockFile>>` cache so the same topic file is fetched once per process/tab.
+    - Runs the existing `expandV2` / V1 normalisation **only for the requested mock**, not for the whole topic up-front (cheap — single topic file is ≤1MB worst case).
+  - Keep `mockToQuiz` and `rawToQuestion` unchanged — they already work per-mock.
+- Remove the synchronous `getMockBySlug` / `getMocksByTopic` exports (or keep them as throwing stubs for type compat then delete usages).
 
-## 4. Files
+### 4. Make quiz loading lazy
+- `src/data/quizzes.ts` `getQuiz` becomes `async getQuiz(slug)`:
+  - Static quizzes: still resolved synchronously from the in-file array (small, safe).
+  - Mock slugs: `await loadMockBySlug(slug)` → `mockToQuiz(...)`.
+- `src/routes/quiz.$slug.tsx` `loader`:
+  - `loader: async ({ params }) => { const quiz = await getQuiz(params.slug); if (!quiz) throw notFound(); return { quiz }; }`
+  - Add `errorComponent` and `notFoundComponent` (TanStack requirement when a loader exists) for graceful failure if the JSON 404s or fails to parse.
+- `QuizRunner` already accepts a `Quiz` prop; no changes needed.
 
-Created:
-- `src/server/diagnostics.functions.ts`
-- `src/server/diagnostics.server.ts` (logger helper)
-- migration: `runtime_logs` table + RLS
+### 5. Pages that only need metadata
+- `category.$slug.tsx`, `topic.$slug.tsx`, `guide.$slug.tsx`, `all-tests.tsx`, `quiz.$slug.tsx` (related-mocks block) all use `listMockSlots(...)` — that now reads from the manifest only. No change to call sites; they automatically stop pulling question content into the bundle.
 
-Edited:
-- `src/lib/overrides.ts` (add `applyOverrides`)
-- `src/components/QuizRunner.tsx` (consume overrides)
-- `src/components/QuestionEditDialog.tsx` (call `invalidateOverrides` after save)
-- `src/routes/admin.diagnostics.tsx` (server logs tab)
+### 6. Admin question browser
+- `src/routes/admin.questions.index.tsx` currently `import.meta.glob`s every JSON eagerly. Replace with manifest read (just topic + counts).
+- `src/routes/admin.questions.$topic.tsx` — change to `loader` that does `await fetch("/mocks/<topic>.json")` for the requested topic only. Add error/notFound boundaries.
 
-Migration also runs the admin role grant for `samyhussain123@gmail.com`.
+### 7. Sitemap / SEO
+- `src/routes/sitemap[.]xml.ts` already uses categories + blog only — confirmed safe. We additionally enumerate mock slugs from the **manifest** (cheap) instead of the full bank. No question text touched.
 
-## Out of scope
+### 8. Caching
+- Static mock JSONs get long-lived cache headers automatically from Cloudflare's static asset handler (immutable + filename-versioned via Vite is unnecessary because contents are stable; we'll set `Cache-Control: public, max-age=3600, stale-while-revalidate=86400` via `public/_headers`).
+- In-memory `Map<topic, Promise<MockFile>>` in `src/data/mocks/index.ts` deduplicates concurrent fetches within a single Worker invocation / browser tab.
 
-- Live build logs from the hosting platform (not accessible from inside the Worker). The `runtime_logs` table is the practical replacement.
-- Editing UI for non-MCQ question types beyond what already exists.
+### 9. Error handling
+- `loadMockBySlug` wraps fetch + JSON.parse in try/catch and returns `undefined` on failure; `quiz.$slug` loader throws `notFound()` so the route's `notFoundComponent` renders a friendly "Mock test unavailable, try another" UI with a link back to the topic page.
+
+### 10. Cleanup
+- Remove the eager `import.meta.glob` everywhere.
+- Verify no other file imports a `.json` from `src/data/mocks/` directly (none currently do besides the index).
+- Build: bundle should drop from ~55MB of JSON to a few tens of KB manifest.
+
+## Files touched
+
+- **Move**: `src/data/mocks/*.json` → `public/mocks/*.json`
+- **New**: `scripts/build_mock_manifest.mjs`, `src/data/mocks/manifest.json` (generated), `public/_headers`
+- **Edit**: `src/data/mocks/index.ts`, `src/data/quizzes.ts`, `src/routes/quiz.$slug.tsx`, `src/routes/admin.questions.index.tsx`, `src/routes/admin.questions.$topic.tsx`, `package.json` (prebuild/predev hooks)
+- **Verify** (no edits expected): `category.$slug.tsx`, `topic.$slug.tsx`, `guide.$slug.tsx`, `all-tests.tsx`, `sitemap[.]xml.ts`
+
+## Outcome
+
+- Worker boot no longer parses 55MB of JSON → fixes Error 1102.
+- Homepage / category / topic / guide pages render from a small manifest only.
+- Quiz pages fetch a single ≤1MB topic JSON on demand, cached by Cloudflare + in-memory.
+- Architecture scales linearly with topics added, not with total question count.
