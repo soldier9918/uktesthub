@@ -1,72 +1,32 @@
-## Add 5 new test categories
+## Plan
 
-Bringing the homepage from 19 → 24 cards. HGV/LGV goes in first; the other four follow in the same pass so the grid stays balanced.
+### 1. Replace 3 category icons
+Regenerate the illustrated PNGs (same flat coloured silhouette style as the rest of the icon set) and overwrite in place — no code changes needed since `CategoryIcon.tsx` already imports these paths:
 
-### New categories & topics
+- `src/assets/icon-security.png` — new icon for **Security & Door Supervision** (e.g. door supervisor figure with earpiece + shield, or a stewarding badge — clearer than the current generic shield).
+- `src/assets/icon-professional.png` — new icon for **Workplace Compliance & Safety** (e.g. hard-hat + clipboard / safety checklist — currently reads as a generic tick badge).
+- `src/assets/icon-teaching.png` — new icon for **Teaching & QTS** (e.g. teacher at a chalkboard / mortarboard with pointer — currently a plain open book that overlaps with the Education category).
 
-**1. HGV / LGV & Logistics** (`hgv-logistics`)
-- Driver CPC Module 2 (Case Studies)
-- Driver CPC Module 4 (Practical Demonstration Theory)
-- ADR Dangerous Goods Awareness
-- Forklift Truck Theory (RTITB / ITSSAR)
-- Transport Manager CPC Practice
+### 2. Ad slot above "Featured Mock Tests"
+In `src/routes/index.tsx`, the existing `<AdSlot size="leaderboard" className="my-14" />` already sits between the categories grid and the Featured Mock Tests heading (line 322). Looking at the page, it's there but spacing reads tight. Action: confirm it renders and bump it to a more prominent leaderboard placement with clearer label so it's visually distinct as an ad break between the two sections.
 
-**2. Care & Social Work** (`care-social-work`)
-- Care Certificate (15 Standards)
-- Level 2 Adult Social Care
-- Safeguarding Adults
-- Medication Awareness in Care
-- Social Work England Readiness
+### 3. Level the "Explore" label across all category tiles
+Cause: each tile uses `flex flex-col` but the chips row has variable height (1 or 2 lines depending on chip count), pushing "Explore" down inconsistently.
 
-**3. Beauty & Wellbeing** (`beauty-wellbeing`)
-- Level 2 Beauty Therapy Theory
-- Barbering Level 2 Theory
-- Nail Technician Theory
-- Infection Control for Beauty
-- Hairdressing Level 2 Theory
+Fix in `src/routes/index.tsx` (Popular Categories grid, ~line 287–315):
+- Add `mt-auto` to the "Explore" `<span>` so it pins to the bottom of the flex column.
+- Ensure the parent `<Link>` already has `h-full flex flex-col` (it does).
 
-**4. Retail & Customer Service** (`retail-customer-service`)
-- Retail Level 2 Knowledge
-- ABTA Travel Agent Practice
-- Customer Service Level 2
-- Visual Merchandising Basics
-- Age-Restricted Sales (Challenge 25)
+Result: "Explore" sits on the same baseline across every tile regardless of chip wrapping.
 
-**5. Animal Care & Veterinary** (`animal-care`)
-- RVN Pre-Registration Theory
-- Dog Grooming Theory
-- Animal First Aid
-- Canine Behaviour Basics
-- Equine Care Theory
-
-### What gets created per category
-
-For each of the 5 categories:
-- Flat illustrated PNG icon (`src/assets/icon-{slug}.png`) matching the existing premium style
-- Hero JPG (`src/assets/cat-hero-{slug}.jpg`) for the category page
-- Entry in `src/data/categories.ts` with description, topics, icon key, accent colour
-- Lucide icon key registered in `src/components/CategoryIcon.tsx`
-- Topic SEO entries in `src/data/topic-seo.ts` for each topic slug
-- Category SEO entry in `src/data/category-seo.ts`
-- Stub mock JSON files in `src/data/mocks/` so practice/exam mode loads cleanly (initially small bank — full assembly via `scripts/generate_mocks.py` follow-up)
-- Topic requirements added to `scripts/topic-requirements.json` so the mock generator knows the target counts
-
-### Order of execution
-
-1. HGV/LGV & Logistics — full build first, verified end-to-end (homepage card → category page → topic → quiz → practice/exam mode)
-2. Care & Social Work
-3. Beauty & Wellbeing
-4. Retail & Customer Service
-5. Animal Care & Veterinary
-
-### Out of scope (separate follow-up)
-
-- Filling each new mock to its full 45-mock target (handled by the existing `generate_mocks.py` pipeline once the requirements + raw question banks are in place)
-- Image-question road sign work (already in flight on a separate track)
+### 4. All-Exams page with category + type filters
+The page already exists at `src/routes/all-tests.tsx` with search + category filter. Extend it:
+- Add a second filter row for **Type**, with chips: All / Theory / Aptitude & Reasoning / Practical & Skills / Compliance & Safety / Language / Citizenship.
+- Derive `type` per category by mapping the existing 25 categories to one of those buckets (lookup table in the route file, no schema change).
+- Combine with existing category + search filter logic.
+- Add a footer link in `SiteFooter` if not already present (it points to `/all-tests` from the homepage browse button).
 
 ### Technical notes
-
-- Accents will be distributed across `coral / gold / navy / success` so adjacent cards on the grid don't clash
-- Icon keys use new lucide names (`Truck`, `HandHeart`, `Scissors`, `ShoppingBag`, `PawPrint`) added to the `iconMap` in `CategoryIcon.tsx`
-- Hero images generated at 1600×900 to match existing assets
-- Each topic gets a route automatically via the existing `/topic/$slug` and `/quiz/$slug` dynamic routes — no new route files needed
+- Icons are generated via `imagegen--generate_image` at 1024×1024, transparent background false, matching existing style: flat illustrated PNG, soft palette, square framing.
+- No data layer change for the type filter — bucket map lives inside `all-tests.tsx`.
+- Ad slot uses existing `<AdSlot size="leaderboard" />` component.
