@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Facebook, Twitter, Youtube, Instagram } from "lucide-react";
 import { Logo } from "./Logo";
+import logoSrc from "@/assets/uktesthub-logo.png";
 
 type StaticLink = { label: string; to: string };
 type CategoryLink = { label: string; to: "/category/$slug"; params: { slug: string } };
