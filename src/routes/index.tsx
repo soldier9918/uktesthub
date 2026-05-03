@@ -331,9 +331,6 @@ function HomePage() {
                 slotId="home-featured-top"
                 className="w-full"
               />
-              <span className="text-xs text-muted-foreground/60">
-                Sponsored content
-              </span>
             </div>
           </div>
         </div>
