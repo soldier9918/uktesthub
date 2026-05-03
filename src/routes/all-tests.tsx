@@ -32,9 +32,54 @@ export const Route = createFileRoute("/all-tests")({
   component: AllTestsPage,
 });
 
+type TestType =
+  | "Theory"
+  | "Aptitude & Reasoning"
+  | "Practical & Skills"
+  | "Compliance & Safety"
+  | "Language"
+  | "Citizenship";
+
+const CATEGORY_TYPE: Record<string, TestType> = {
+  driving: "Theory",
+  citizenship: "Citizenship",
+  english: "Language",
+  education: "Theory",
+  career: "Aptitude & Reasoning",
+  professional: "Compliance & Safety",
+  nhs: "Aptitude & Reasoning",
+  "taxi-private-hire": "Theory",
+  security: "Compliance & Safety",
+  hospitality: "Compliance & Safety",
+  construction: "Compliance & Safety",
+  finance: "Theory",
+  "it-tech": "Theory",
+  "healthcare-entry": "Theory",
+  teaching: "Theory",
+  legal: "Theory",
+  "military-emergency": "Aptitude & Reasoning",
+  "maritime-aviation": "Theory",
+  government: "Aptitude & Reasoning",
+  "hgv-logistics": "Practical & Skills",
+  "care-social-work": "Compliance & Safety",
+  "beauty-wellbeing": "Practical & Skills",
+  "retail-customer-service": "Compliance & Safety",
+  "animal-care": "Practical & Skills",
+};
+
+const TEST_TYPES: TestType[] = [
+  "Theory",
+  "Aptitude & Reasoning",
+  "Practical & Skills",
+  "Compliance & Safety",
+  "Language",
+  "Citizenship",
+];
+
 function AllTestsPage() {
   const [query, setQuery] = useState("");
   const [activeCat, setActiveCat] = useState<string>("all");
+  const [activeType, setActiveType] = useState<TestType | "all">("all");
 
   const totalTests = useMemo(
     () => categories.reduce((n, c) => n + c.topics.length, 0),
@@ -45,6 +90,9 @@ function AllTestsPage() {
     const q = query.trim().toLowerCase();
     return categories
       .filter((c) => activeCat === "all" || c.slug === activeCat)
+      .filter(
+        (c) => activeType === "all" || CATEGORY_TYPE[c.slug] === activeType,
+      )
       .map((c) => ({
         ...c,
         topics: c.topics.filter(
@@ -55,7 +103,7 @@ function AllTestsPage() {
         ),
       }))
       .filter((c) => c.topics.length > 0);
-  }, [query, activeCat]);
+  }, [query, activeCat, activeType]);
 
   const matchedCount = filteredCategories.reduce(
     (n, c) => n + c.topics.length,
@@ -103,20 +151,46 @@ function AllTestsPage() {
             </div>
           </div>
 
-          <div className="mt-3 flex flex-wrap gap-2">
-            <FilterChip
-              label="All"
-              active={activeCat === "all"}
-              onClick={() => setActiveCat("all")}
-            />
-            {categories.map((c) => (
+          <div className="mt-3">
+            <p className="mb-1.5 text-[10px] font-bold uppercase tracking-[0.18em] text-muted-foreground">
+              Category
+            </p>
+            <div className="flex flex-wrap gap-2">
               <FilterChip
-                key={c.slug}
-                label={c.title}
-                active={activeCat === c.slug}
-                onClick={() => setActiveCat(c.slug)}
+                label="All"
+                active={activeCat === "all"}
+                onClick={() => setActiveCat("all")}
               />
-            ))}
+              {categories.map((c) => (
+                <FilterChip
+                  key={c.slug}
+                  label={c.title}
+                  active={activeCat === c.slug}
+                  onClick={() => setActiveCat(c.slug)}
+                />
+              ))}
+            </div>
+          </div>
+
+          <div className="mt-3">
+            <p className="mb-1.5 text-[10px] font-bold uppercase tracking-[0.18em] text-muted-foreground">
+              Type
+            </p>
+            <div className="flex flex-wrap gap-2">
+              <FilterChip
+                label="All types"
+                active={activeType === "all"}
+                onClick={() => setActiveType("all")}
+              />
+              {TEST_TYPES.map((t) => (
+                <FilterChip
+                  key={t}
+                  label={t}
+                  active={activeType === t}
+                  onClick={() => setActiveType(t)}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </section>

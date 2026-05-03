@@ -307,7 +307,7 @@ function HomePage() {
                   </ul>
 
                   <span
-                    className={`mt-3 inline-flex items-center gap-1 self-start text-[11px] font-bold uppercase tracking-wider transition-transform group-hover:translate-x-0.5 ${
+                    className={`mt-auto pt-3 inline-flex items-center gap-1 self-start text-[11px] font-bold uppercase tracking-wider transition-transform group-hover:translate-x-0.5 ${
                       isCoral ? "text-coral" : "text-royal"
                     }`}
                   >
@@ -319,7 +319,21 @@ function HomePage() {
           </div>
         </section>
 
-        <AdSlot size="leaderboard" className="my-14" />
+        {/* Ad break between Popular Categories and Featured Mock Tests */}
+        <div className="my-14">
+          <div className="mx-auto max-w-5xl rounded-2xl border border-dashed border-border bg-card/60 px-4 py-3 text-center shadow-soft">
+            <p className="font-display text-[10px] font-bold uppercase tracking-[0.25em] text-muted-foreground">
+              Advertisement
+            </p>
+            <div className="mt-2 flex min-h-[90px] items-center justify-center md:min-h-[110px]">
+              <AdSlot
+                size="leaderboard"
+                slotId="home-featured-top"
+                className="w-full"
+              />
+            </div>
+          </div>
+        </div>
 
         {/* FEATURED MOCK TESTS */}
         <section>
