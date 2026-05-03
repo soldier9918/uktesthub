@@ -176,7 +176,7 @@ function isV2(file: MockFile): file is V2File {
 }
 
 async function loadTopicFile(topic: string): Promise<MockFile | undefined> {
-  const entry = manifest[topic];
+  const entry = buildTopicEntry(topic);
   if (!entry) return undefined;
   const cached = fileCache.get(topic);
   if (cached) return cached;
@@ -252,15 +252,17 @@ export async function loadTopicFileForAdmin(
  * for use in route loaders, sitemaps and category/topic pages.
  */
 export function getTopicManifest(topic: string): ManifestEntry | undefined {
-  return manifest[topic];
+  return buildTopicEntry(topic);
 }
 
 export function listAllTopics(): ManifestEntry[] {
-  return Object.values(manifest);
+  return Array.from(topicSlugs)
+    .map((topic) => buildTopicEntry(topic))
+    .filter((entry): entry is ManifestEntry => Boolean(entry));
 }
 
 export function listMockSlots(topicSlug: string) {
-  const entry = manifest[topicSlug];
+  const entry = buildTopicEntry(topicSlug);
   const realByNum = new Map((entry?.mocks ?? []).map((m) => [m.mockNumber, m]));
   return Array.from({ length: TOTAL_MOCKS_PER_TOPIC }, (_, i) => {
     const n = i + 1;
