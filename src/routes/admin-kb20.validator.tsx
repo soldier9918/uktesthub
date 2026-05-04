@@ -623,13 +623,18 @@ function Validator() {
               </div>
             </summary>
             <ul className="mt-3 space-y-2 text-sm">
-              {list.map((f, i) => (
-                <FindingRow
-                  key={i}
-                  finding={f}
-                  usage={usageByTopic.get(f.topic)}
-                />
-              ))}
+              {list.map((f, i) => {
+                const sig = findingSig(f);
+                return (
+                  <FindingRow
+                    key={i}
+                    finding={f}
+                    usage={usageByTopic.get(f.topic)}
+                    ignored={ignored.has(sig)}
+                    onToggleIgnore={() => toggleIgnore(sig)}
+                  />
+                );
+              })}
             </ul>
           </details>
           );
