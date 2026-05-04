@@ -37,7 +37,7 @@ export async function trackEvent(input: EventInput) {
   if (typeof window === "undefined") return;
   try {
     const { data: u } = await supabase.auth.getUser();
-    await supabase.from("quiz_events").insert({
+    await supabase.from("quiz_events").insert([{
       event_type: input.event_type,
       topic_slug: input.topic_slug ?? null,
       mock_slug: input.mock_slug ?? null,
@@ -45,8 +45,8 @@ export async function trackEvent(input: EventInput) {
       path: input.path ?? window.location.pathname,
       session_id: getSessionId(),
       user_id: u?.user?.id ?? null,
-      metadata: input.metadata ?? null,
-    });
+      metadata: (input.metadata ?? null) as never,
+    }]);
   } catch {
     // ignore
   }
