@@ -1,5 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { X } from "lucide-react";
+import { useAdSlot } from "@/lib/admin/ad-slots";
+import { useAdminSettings } from "@/lib/admin/settings";
 
 /**
  * AdSense configuration.
@@ -34,8 +36,10 @@ type Props = {
   label?: string;
   /** Reserved size hint — used only when an ad is actually rendered */
   size?: AdSize;
-  /** AdSense ad slot ID (data-ad-slot). Required for live ads. */
+  /** AdSense ad slot ID (data-ad-slot). Required for live ads if slotKey is not used. */
   slotId?: string;
+  /** Look up enabled state and ad slot ID from the admin ad_slots table by key. */
+  slotKey?: string;
   /** Display format: auto (responsive) by default */
   format?: "auto" | "rectangle" | "horizontal" | "vertical";
   /** Whether the ad is responsive */
@@ -81,6 +85,7 @@ export function AdSlot({
   label = "Advertisement",
   size = "leaderboard",
   slotId,
+  slotKey,
   format = "auto",
   responsive = true,
   lazy = true,
@@ -89,6 +94,10 @@ export function AdSlot({
   const ref = useRef<HTMLDivElement | null>(null);
   const [visible, setVisible] = useState(!lazy);
   const [filled, setFilled] = useState(false);
+  const settings = useAdminSettings();
+  const slotRow = useAdSlot(slotKey ?? "");
+  const effectiveSlotId = slotRow?.ad_slot_id || slotId;
+  const slotEnabled = slotKey ? slotRow?.enabled === true : true;
 
   // Lazy-load via IntersectionObserver
   useEffect(() => {
