@@ -487,6 +487,26 @@ function Validator() {
             Clear results
           </button>
         )}
+        {ignored.size > 0 && (
+          <>
+            <button
+              type="button"
+              onClick={() => setShowIgnored((v) => !v)}
+              className="rounded-xl border border-border bg-background px-3 py-2 text-xs font-semibold hover:bg-muted"
+            >
+              {showIgnored ? "Hide ignored" : `Show ignored (${ignored.size})`}
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                if (window.confirm(`Un-ignore all ${ignored.size} finding(s)?`)) clearIgnored();
+              }}
+              className="rounded-xl border border-border bg-background px-3 py-2 text-xs font-semibold text-muted-foreground hover:bg-muted"
+            >
+              Reset ignored
+            </button>
+          </>
+        )}
         {findings.length > 0 && (
           <span className="text-sm text-muted-foreground">
             {filtered.length} of {findings.length} findings · {grouped.length} topics
