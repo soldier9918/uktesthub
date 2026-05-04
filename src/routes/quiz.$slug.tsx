@@ -1,9 +1,10 @@
+import { useEffect, useState } from "react";
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { AdSlot } from "@/components/AdSlot";
 import { QuizRunner } from "@/components/QuizRunner";
-import { getQuiz, getQuizzesByCategory } from "@/data/quizzes";
+import { getQuiz, getQuizzesByCategory, type Quiz } from "@/data/quizzes";
 import { getCategory } from "@/data/categories";
 import { listMockSlots } from "@/data/mocks";
 import { captureMockBaseUrl } from "@/server/mock-base-url";
@@ -14,8 +15,14 @@ export const Route = createFileRoute("/quiz/$slug")({
     // During SSR, set the absolute base URL used for fetching public/mocks/*.json
     captureMockBaseUrl();
     const quiz = await getQuiz(params.slug);
-    if (!quiz) throw notFound();
-    return { quiz };
+    if (!quiz) {
+      // Some published runtimes can serve /mocks/*.json to browsers while not
+      // allowing SSR to fetch those same static assets. Let the browser load
+      // real mock tests instead of returning a false 404 from the server.
+      if (/-mock-\d+$/.test(params.slug)) return { quiz: null, slug: params.slug };
+      throw notFound();
+    }
+    return { quiz, slug: params.slug };
   },
   errorComponent: ({ error }) => (
     <div className="mx-auto max-w-xl px-4 py-16 text-center">
