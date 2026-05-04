@@ -130,12 +130,13 @@ function flatten(file: AnyFile): FlatQuestion[] {
   return out;
 }
 
-type EditorSearch = { q?: string; from?: "validator" };
+type EditorSearch = { q?: string; from?: "validator" | "reports"; edit?: string };
 
 export const Route = createFileRoute("/admin-kb20/questions/$topic")({
   validateSearch: (raw: Record<string, unknown>): EditorSearch => ({
     q: typeof raw.q === "string" && raw.q.length > 0 ? raw.q : undefined,
-    from: raw.from === "validator" ? "validator" : undefined,
+    from: raw.from === "validator" ? "validator" : raw.from === "reports" ? "reports" : undefined,
+    edit: typeof raw.edit === "string" && raw.edit.length > 0 ? raw.edit : undefined,
   }),
   loader: async ({ params }) => {
     const file = (await loadTopicFileForAdmin(params.topic)) as AnyFile | undefined;
@@ -172,7 +173,7 @@ const PAGE_SIZE = 25;
 
 function QuestionsBrowser() {
   const { topic, questions } = Route.useLoaderData();
-  const { q: initialQ, from } = Route.useSearch();
+  const { q: initialQ, from, edit: editId } = Route.useSearch();
   const initialSearch = initialQ ?? "";
   const [search, setSearch] = useState(initialSearch);
   const [type, setType] = useState<string>("all");
@@ -213,6 +214,13 @@ function QuestionsBrowser() {
     }, 60);
     return () => window.clearTimeout(t);
   }, [highlightId]);
+
+  // Auto-open the edit dialog when ?edit=<questionId> is present (e.g. from Reports).
+  useEffect(() => {
+    if (!editId) return;
+    const target = effectiveQuestions.find((q) => q.id === editId);
+    if (target) setEditing(target);
+  }, [editId, effectiveQuestions]);
 
   const types = useMemo(() => {
     const s = new Set<string>();

@@ -113,12 +113,14 @@ function Reports() {
                   </td>
                   <td className="px-3 py-2 text-xs">{r.topic_slug}</td>
                   <td className="px-3 py-2 text-xs">
-                    <a
-                      href={`/admin-kb20/questions/${r.topic_slug}#q-${encodeURIComponent(r.question_id)}`}
+                    <Link
+                      to="/admin-kb20/questions/$topic"
+                      params={{ topic: r.topic_slug }}
+                      search={{ q: r.question_id, edit: r.question_id }}
                       className="font-mono text-coral hover:underline"
                     >
                       {r.question_id}
-                    </a>
+                    </Link>
                     {r.mock_slug && (
                       <div className="mt-1">
                         <Link
