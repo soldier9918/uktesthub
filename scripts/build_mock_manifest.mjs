@@ -81,8 +81,18 @@ for (const file of files) {
 
 mkdirSync(dirname(outPublicDiagnostics), { recursive: true });
 writeFileSync(outPublicDiagnostics, JSON.stringify(diagnostics));
+
+// Build a usage-count map: image path -> number of questions referencing it.
+const imageUsage = {};
+for (const t of Object.values(diagnostics)) {
+  for (const p of t.imagePaths || []) {
+    imageUsage[p] = (imageUsage[p] || 0) + 1;
+  }
+}
+
+// Walk all image-bearing folders under public/.
 const imageInventory = [];
-const imageRoot = join(root, "public", "quiz-images");
+const imageDirs = ["quiz-images", "road-signs", "road-markings", "motorway-rules"];
 function collectImages(dir) {
   for (const name of readdirSync(dir, { withFileTypes: true })) {
     const full = join(dir, name.name);
@@ -92,8 +102,15 @@ function collectImages(dir) {
     }
   }
 }
-if (existsSync(imageRoot)) collectImages(imageRoot);
+for (const d of imageDirs) {
+  const full = join(root, "public", d);
+  if (existsSync(full)) collectImages(full);
+}
 writeFileSync(outImageInventory, JSON.stringify(imageInventory.sort()));
+writeFileSync(
+  join(root, "public", "mocks", "image-usage.json"),
+  JSON.stringify(imageUsage),
+);
 const totalMocks = Object.values(manifest).reduce((n, t) => n + t.mocks.length, 0);
 console.log(
   `[mock-manifest] scanned ${Object.keys(manifest).length} topics (${totalMocks} mocks) + wrote static diagnostics`,
