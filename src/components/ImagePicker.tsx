@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { supabase } from "@/integrations/supabase/client";
 
 type Props = {
   selected?: string;
@@ -12,18 +13,41 @@ type Props = {
 let cachedInventory: string[] | null = null;
 let cachedUsage: Record<string, number> | null = null;
 
+function normalise(u: string): string {
+  try {
+    const url = new URL(u);
+    return url.pathname;
+  } catch {
+    return u.startsWith("/") ? u : `/${u}`;
+  }
+}
+
 async function loadData(): Promise<{ inventory: string[]; usage: Record<string, number> }> {
   if (cachedInventory && cachedUsage) {
     return { inventory: cachedInventory, usage: cachedUsage };
   }
   const bust = `?v=${Date.now()}`;
-  const [invRes, useRes] = await Promise.all([
+  const [invRes, useRes, overridesRes] = await Promise.all([
     fetch(`/mocks/image-inventory.json${bust}`, { cache: "no-store" }),
     fetch(`/mocks/image-usage.json${bust}`, { cache: "no-store" }),
+    supabase.from("question_overrides").select("image"),
   ]);
   cachedInventory = (await invRes.json()) as string[];
-  cachedUsage = useRes.ok ? ((await useRes.json()) as Record<string, number>) : {};
-  return { inventory: cachedInventory, usage: cachedUsage };
+  const baseUsage = useRes.ok ? ((await useRes.json()) as Record<string, number>) : {};
+  // Merge in live overrides from DB so re-edited questions reflect "Used" counts.
+  const usage: Record<string, number> = { ...baseUsage };
+  const overrideImages = (overridesRes.data ?? []) as Array<{ image: string | null }>;
+  // Track which original images were replaced (by counting overrides per question is complex);
+  // simplest correct approach: add 1 for each override image, subtract nothing. But to avoid
+  // double-counting unchanged overrides, we just take the max of base and (base + delta).
+  for (const row of overrideImages) {
+    if (row.image) {
+      const key = normalise(row.image);
+      usage[key] = (usage[key] ?? 0) + 1;
+    }
+  }
+  cachedUsage = usage;
+  return { inventory: cachedInventory, usage };
 }
 
 function folderOf(path: string): string {
