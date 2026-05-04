@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { AdminGate } from "@/components/AdminGate";
 import { categories } from "@/data/categories";
 import { loadTopicFileForAdmin } from "@/data/mocks";
@@ -22,6 +22,22 @@ export const Route = createFileRoute("/admin-kb20/validator")({
 
 type AnyQ = Record<string, unknown> & { id?: string; type?: string };
 
+// Heuristic: rank topic slugs against a question id so we probe the most
+// likely topic file first when looking an id up. Higher = more likely.
+function scoreGuess(topicSlug: string, id: string): number {
+  const lid = id.toLowerCase();
+  const lts = topicSlug.toLowerCase();
+  if (lid.startsWith(`${lts}-`)) return 100;
+  const firstSeg = lid.split("-")[0];
+  if (!firstSeg) return 0;
+  if (lts === firstSeg) return 80;
+  if (lts.startsWith(firstSeg)) return 40;
+  // Initials match: e.g. "sa" matches "safe-awareness".
+  const initials = lts.split(/[-_]/).map((p) => p[0]).join("");
+  if (initials === firstSeg) return 60;
+  return 0;
+}
+
 const RULE_LABEL: Record<Finding["rule"], string> = {
   "duplicate-id": "Duplicate ID",
   "duplicate-text": "Duplicate text",
@@ -43,6 +59,10 @@ function Validator() {
   const [publicImages, setPublicImages] = useState<Set<string>>(new Set());
   const [ruleFilter, setRuleFilter] = useState<Finding["rule"] | "all">("all");
   const [lastRunAt, setLastRunAt] = useState<string | null>(null);
+  const [lookupId, setLookupId] = useState("");
+  const [lookupBusy, setLookupBusy] = useState(false);
+  const [lookupError, setLookupError] = useState<string | null>(null);
+  const navigate = useNavigate();
 
   const CACHE_KEY = "admin-validator-results-v1";
 
@@ -111,6 +131,47 @@ function Validator() {
     setFindings([]);
     setScanned(0);
     setLastRunAt(null);
+  };
+
+  // Resolve any question id (e.g. "sa-mc-0017") to its topic and jump to the editor.
+  // First tries to match the id prefix against known topic slugs (fast path),
+  // then falls back to scanning all topic files until a match is found.
+  const lookupById = async () => {
+    const raw = lookupId.trim();
+    if (!raw) return;
+    setLookupBusy(true);
+    setLookupError(null);
+    try {
+      // Fast path: id prefix matches a topic slug or its first segment.
+      const guesses = allTopics
+        .map((t) => ({ topic: t, score: scoreGuess(t, raw) }))
+        .filter((g) => g.score > 0)
+        .sort((a, b) => b.score - a.score)
+        .map((g) => g.topic);
+      const ordered = [...new Set([...guesses, ...allTopics])];
+
+      for (const topic of ordered) {
+        const file = await loadTopicFileForAdmin(topic);
+        if (!file) continue;
+        const bank: AnyQ[] =
+          (file as { version?: number }).version === 2
+            ? ((file as { bank: AnyQ[] }).bank ?? [])
+            : ((file as { tests: { questions: AnyQ[] }[] }).tests ?? []).flatMap(
+                (t) => t.questions ?? [],
+              );
+        if (bank.some((q) => q.id === raw)) {
+          await navigate({
+            to: "/admin-kb20/questions/$topic",
+            params: { topic },
+            search: { q: raw, from: "validator" },
+          });
+          return;
+        }
+      }
+      setLookupError(`No question found with id "${raw}".`);
+    } finally {
+      setLookupBusy(false);
+    }
   };
 
   const ruleCounts = useMemo(() => {
@@ -192,6 +253,44 @@ function Validator() {
               <> · last run {new Date(lastRunAt).toLocaleTimeString()}</>
             )}
           </span>
+        )}
+      </div>
+
+      <div className="mt-4 rounded-xl border border-border bg-card/50 p-3">
+        <form
+          onSubmit={(e) => {
+            e.preventDefault();
+            void lookupById();
+          }}
+          className="flex flex-wrap items-center gap-2"
+        >
+          <label htmlFor="id-lookup" className="text-sm font-semibold">
+            Find by ID
+          </label>
+          <input
+            id="id-lookup"
+            type="text"
+            value={lookupId}
+            onChange={(e) => {
+              setLookupId(e.target.value);
+              if (lookupError) setLookupError(null);
+            }}
+            placeholder="e.g. sa-mc-0017"
+            className="min-w-[220px] flex-1 rounded-md border border-border bg-background px-3 py-1.5 font-mono text-sm"
+          />
+          <button
+            type="submit"
+            disabled={lookupBusy || !lookupId.trim()}
+            className="rounded-md bg-foreground px-3 py-1.5 text-sm font-semibold text-background disabled:opacity-50"
+          >
+            {lookupBusy ? "Searching…" : "Open"}
+          </button>
+          <span className="text-xs text-muted-foreground">
+            Paste any question id to jump straight to it in the editor.
+          </span>
+        </form>
+        {lookupError && (
+          <p className="mt-2 text-xs text-destructive">{lookupError}</p>
         )}
       </div>
 
