@@ -413,9 +413,17 @@ function Validator() {
     return m;
   }, [findings]);
 
+  const findingSig = (f: Finding) =>
+    `${f.topic}|${f.rule}|${f.questionId ?? ""}|${f.field ?? ""}|${(f.relatedIds ?? []).join(",")}`;
+
+  const visibleFindings = useMemo(
+    () => (showIgnored ? findings : findings.filter((f) => !ignored.has(findingSig(f)))),
+    [findings, ignored, showIgnored],
+  );
+
   const filtered = useMemo(
-    () => (ruleFilter === "all" ? findings : findings.filter((f) => f.rule === ruleFilter)),
-    [findings, ruleFilter],
+    () => (ruleFilter === "all" ? visibleFindings : visibleFindings.filter((f) => f.rule === ruleFilter)),
+    [visibleFindings, ruleFilter],
   );
 
   const grouped = useMemo(() => {
