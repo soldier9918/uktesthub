@@ -22,6 +22,22 @@ export const Route = createFileRoute("/admin-kb20/validator")({
 
 type AnyQ = Record<string, unknown> & { id?: string; type?: string };
 
+// Heuristic: rank topic slugs against a question id so we probe the most
+// likely topic file first when looking an id up. Higher = more likely.
+function scoreGuess(topicSlug: string, id: string): number {
+  const lid = id.toLowerCase();
+  const lts = topicSlug.toLowerCase();
+  if (lid.startsWith(`${lts}-`)) return 100;
+  const firstSeg = lid.split("-")[0];
+  if (!firstSeg) return 0;
+  if (lts === firstSeg) return 80;
+  if (lts.startsWith(firstSeg)) return 40;
+  // Initials match: e.g. "sa" matches "safe-awareness".
+  const initials = lts.split(/[-_]/).map((p) => p[0]).join("");
+  if (initials === firstSeg) return 60;
+  return 0;
+}
+
 const RULE_LABEL: Record<Finding["rule"], string> = {
   "duplicate-id": "Duplicate ID",
   "duplicate-text": "Duplicate text",
