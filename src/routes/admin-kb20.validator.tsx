@@ -568,7 +568,8 @@ function Validator() {
               ))}
             </ul>
           </details>
-        ))}
+          );
+        })}
         {!running && findings.length === 0 && scanned > 0 && (
           <p className="rounded-xl border border-success/40 bg-success/10 p-4 text-sm text-success">
             All clean — no validation findings.
