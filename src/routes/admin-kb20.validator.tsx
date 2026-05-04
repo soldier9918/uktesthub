@@ -164,15 +164,8 @@ function Validator() {
   // current findings no longer reflect the database.
   useEffect(() => {
     const onInvalidate = () => {
-      try {
-        sessionStorage.removeItem(CACHE_KEY);
-        sessionStorage.removeItem("admin-validator-results-v1");
-        sessionStorage.removeItem("admin-validator-results-v2");
-      } catch {
-        /* ignore */
-      }
-      setFindings([]);
-      setUsageByTopic(new Map());
+      // Keep previous results visible so the user can continue working through
+      // the list after editing a question. Just flag them as stale.
       setStaleNotice(true);
     };
     window.addEventListener("question-overrides-invalidated", onInvalidate);
