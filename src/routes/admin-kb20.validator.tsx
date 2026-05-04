@@ -147,9 +147,19 @@ function Validator() {
     const at = new Date().toISOString();
     setLastRunAt(at);
     try {
+      const usageJson: Record<string, Record<string, number[]>> = {};
+      for (const [topic, m] of usage.entries()) {
+        usageJson[topic] = Object.fromEntries(m);
+      }
       sessionStorage.setItem(
         CACHE_KEY,
-        JSON.stringify({ findings: out, scanned: allTopics.length, ruleFilter, at }),
+        JSON.stringify({
+          findings: out,
+          scanned: allTopics.length,
+          ruleFilter,
+          at,
+          usage: usageJson,
+        }),
       );
     } catch {
       /* ignore quota errors */
@@ -160,6 +170,7 @@ function Validator() {
     sessionStorage.removeItem(CACHE_KEY);
     setFindings([]);
     setScanned(0);
+    setUsageByTopic(new Map());
     setLastRunAt(null);
   };
 
