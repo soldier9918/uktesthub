@@ -76,11 +76,19 @@ function Validator() {
           scanned: number;
           ruleFilter?: Finding["rule"] | "all";
           at?: string;
+          usage?: Record<string, Record<string, number[]>>;
         };
         setFindings(parsed.findings ?? []);
         setScanned(parsed.scanned ?? 0);
         if (parsed.ruleFilter) setRuleFilter(parsed.ruleFilter);
         if (parsed.at) setLastRunAt(parsed.at);
+        if (parsed.usage) {
+          const m = new Map<string, Map<string, number[]>>();
+          for (const [topic, ids] of Object.entries(parsed.usage)) {
+            m.set(topic, new Map(Object.entries(ids)));
+          }
+          setUsageByTopic(m);
+        }
       }
     } catch {
       /* ignore */
