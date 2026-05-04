@@ -161,7 +161,11 @@ function Validator() {
           disabled={running}
           className="rounded-xl bg-gradient-coral px-4 py-2 text-sm font-semibold text-coral-foreground disabled:opacity-50"
         >
-          {running ? `Scanning… ${scanned}/${allTopics.length}` : "Run validation"}
+          {running
+            ? `Scanning… ${scanned}/${allTopics.length}`
+            : findings.length > 0
+              ? "Re-run validation"
+              : "Run validation"}
         </button>
         {findings.length > 0 && (
           <button
@@ -173,8 +177,20 @@ function Validator() {
           </button>
         )}
         {findings.length > 0 && (
+          <button
+            type="button"
+            onClick={clearCache}
+            className="rounded-xl border border-border bg-background px-3 py-2 text-xs font-semibold text-muted-foreground hover:bg-muted"
+          >
+            Clear results
+          </button>
+        )}
+        {findings.length > 0 && (
           <span className="text-sm text-muted-foreground">
             {filtered.length} of {findings.length} findings · {grouped.length} topics
+            {lastRunAt && (
+              <> · last run {new Date(lastRunAt).toLocaleTimeString()}</>
+            )}
           </span>
         )}
       </div>
