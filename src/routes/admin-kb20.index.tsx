@@ -15,6 +15,8 @@ export const Route = createFileRoute("/admin-kb20/")({
           Content
         </h2>
         <div className="mt-2 grid gap-3 sm:grid-cols-2">
+          <Tile to="/admin-kb20/categories" title="Categories & Questions"
+            desc="Browse every category, expand to see sub-topics with question counts, types and image stats." />
           <Tile to="/admin-kb20/mocks" title="Mock Test Manager"
             desc="Browse all topics and 45 mocks per topic. Disable or enable individual mocks." />
           <Tile to="/admin-kb20/validator" title="Question Bank Validator"
