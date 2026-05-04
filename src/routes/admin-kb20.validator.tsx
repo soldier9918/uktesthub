@@ -87,6 +87,11 @@ function Validator() {
     }
   }, []);
 
+  // topic -> (questionId -> mockNumbers[])
+  const [usageByTopic, setUsageByTopic] = useState<Map<string, Map<string, number[]>>>(
+    new Map(),
+  );
+
   useEffect(() => {
     fetch("/mocks/image-inventory.json")
       .then((r) => r.json())
