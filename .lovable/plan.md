@@ -1,53 +1,52 @@
-I checked the current validator and bulk editor logic. The main issue is that the validator restores cached results from `sessionStorage`, but it does not reliably invalidate/re-run after overrides change, and its suspicious-character rule only catches non-Latin/control characters. It does not catch JSON/code fragments like `],question`, so those can stay on the validator page even after bulk edits or appear as a separate class of anomaly.
+## Goal
+Let you wipe "weird characters" (CJK like 快速, zero-width, control chars, smart-quote noise, etc.) across an entire topic in one click — both from the **Bulk Edit** page and directly from the **Validator** results.
 
-I also verified the database currently has clean overrides for the recently fixed driving-theory items, while the original static files still contain artifacts. So the validator must validate the effective text after overrides and must force fresh results when overrides are updated.
+## What gets cleaned
+Reuse the existing `src/lib/admin/text-cleanup.ts` utility and add a `stripSuspicious(text)` helper that removes:
+- CJK ranges (Hiragana, Katakana, Han, Hangul) — e.g. `快速`, `カナ`
+- Zero-width / BOM chars (`\u200B-\u200D`, `\uFEFF`)
+- Control chars (`\u0000-\u001F` except `\n\t`)
+- Replacement char `\uFFFD`
+- Collapses any double spaces left behind and trims
 
-Plan:
+The validator already detects these under "Suspicious characters", so the same regex set is the source of truth — no risk of fix/detect drift.
 
-1. Make validator re-run truly fresh
-   - Clear both old validator cache keys before every validation run.
-   - Invalidate and reload the overrides cache before scanning, so it does not use stale in-memory override data.
-   - Add a listener for `question-overrides-invalidated` on the validator page that clears the displayed findings and cached results, so fixed items do not remain on screen after admin edits or bulk edits.
-   - Add clearer status text such as “Results cleared after edits — run validation again” instead of showing old findings.
+## UI changes
 
-2. Add validator detection for JSON/code artifacts
-   - Extend `src/lib/admin/validator.ts` with a new rule, likely `json-code-artifact`, for text fragments like:
-     - `],question`
-     - `], question`
-     - `Array],question`
-     - trailing `],`, `"},`, or leaked JSON field names such as `options`, `question`, `explanation`, `correctAnswer`
-   - Check `question`, `options`, `explanation`, and `imageAlt`, the same fields the existing suspicious-character scanner checks.
-   - Keep this separate from “Suspicious characters” so the admin page shows exactly what needs the “Strip JSON/code artifacts” bulk tool.
+### 1. Bulk Edit page (`/admin-kb20/bulk-edit`)
+Add a new button next to "Strip JSON/code artifacts":
+- **"Strip suspicious characters (CJK, zero-width, control)"**
+- Scans `question`, `options[]`, `explanation` for the selected topic
+- Shows a diff preview (before → after) per question
+- "Apply" writes overrides to Supabase, fires `question-overrides-invalidated`
 
-3. Share the cleanup logic between bulk editor and validator
-   - Move the artifact regex/cleaning logic out of `admin-kb20.bulk-edit.tsx` into a shared helper, e.g. `src/lib/admin/text-cleanup.ts`.
-   - Use that helper in both:
-     - bulk edit preview/apply
-     - validator detection
-   - This prevents the validator and bulk edit feature from disagreeing about what is “fixed”.
+### 2. Validator page (`/admin-kb20/validator`)
+On each topic group header (e.g. `dog-grooming-theory · 74`), add a small action:
+- **"Bulk-clean suspicious chars in this topic"**
+- Same logic, scoped only to questions currently flagged in that group
+- Same preview + apply flow, then auto re-runs validation so cleaned items disappear
 
-4. Fix bulk apply cache handling
-   - After bulk apply, clear validator cache and dispatch override invalidation as it does now, but also reload the current topic from the fresh effective bank so pressing the cleanup button again shows zero changes if the overrides are clean.
-   - Ensure bulk edits merge with existing overrides without reintroducing old dirty static values.
+## Technical details
+- New helper in `src/lib/admin/text-cleanup.ts`:
+  ```ts
+  export const SUSPICIOUS_PATTERNS: RegExp[] = [
+    /[\u3040-\u30FF\u31F0-\u31FF\u4E00-\u9FFF\uAC00-\uD7AF]/g, // CJK
+    /[\u200B-\u200D\uFEFF]/g,                                   // zero-width
+    /[\u0000-\u0008\u000B-\u001F\u007F]/g,                      // control
+    /\uFFFD/g,                                                   // replacement
+  ];
+  export function stripSuspicious(input: string): string { ... }
+  export function cleanAll(input: string): string { // artifact + suspicious }
+  ```
+- Bulk action in `admin-kb20.bulk-edit.tsx` mirrors the existing artifact-stripper, just calling `stripSuspicious`.
+- Validator gets a `bulkCleanGroup(topic)` handler that walks `findings.filter(f => f.topic === topic && f.rule === 'suspicious-chars')`, builds an override per question, batch-saves, then calls `run()`.
+- Saves go through the existing `saveOverride` path so RLS, change events, and history all keep working.
 
-5. Improve the validator page controls
-   - Keep “Run validation” / “Re-run validation”, but make the button always start from a clean cache.
-   - Add a small “cache cleared after edits” message when relevant.
-   - Ensure finding keys are stable enough that React does not keep stale rows visually after a re-run.
+## Files to edit
+- `src/lib/admin/text-cleanup.ts` (add patterns + helpers)
+- `src/routes/admin-kb20.bulk-edit.tsx` (new button + action)
+- `src/routes/admin-kb20.validator.tsx` (per-topic bulk-clean button)
 
-6. Optional direct data cleanup pass, if approved
-   - Since a read-only scan found many static source files still contain `],question` artifacts across multiple topics, I can also update the source mock JSON files directly so the base files are clean, not only overridden in the database.
-   - This would reduce reliance on overrides and stop the validator from finding the same raw-file artifacts again if overrides are cleared.
-
-Files expected to change:
-- `src/lib/admin/validator.ts`
-- `src/routes/admin-kb20.validator.tsx`
-- `src/routes/admin-kb20.bulk-edit.tsx`
-- new shared helper such as `src/lib/admin/text-cleanup.ts`
-- optionally affected `public/mocks/*.json` files if we clean the source data too
-
-Outcome:
-- “Re-run validation” will actually refresh from current overrides.
-- Fixed/bulk-fixed questions will be removed from the validator results after re-run.
-- Weird answer artifacts like `],question` will be detected and bulk-fixable consistently.
-- The validator page will stop showing stale results after fixes.
+## Out of scope
+- Auto-translating CJK back to English (we just delete — your screenshot shows the English answer is already correct, the CJK is junk appended to it).
+- Editing the source JSON in `public/mocks/`; everything stays as overrides like today.
