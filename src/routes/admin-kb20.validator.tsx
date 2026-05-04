@@ -630,6 +630,17 @@ function Validator() {
                       : `Bulk-clean ${cleanableCount}`}
                   </button>
                 )}
+                <button
+                  type="button"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    ignoreAllInTopic(topic);
+                  }}
+                  className="rounded-md border border-border bg-background px-2 py-1 text-xs font-semibold text-muted-foreground hover:bg-muted"
+                  title="Mark every finding in this topic as a false positive and hide them"
+                >
+                  Ignore all {list.length}
+                </button>
                 <Badge variant="destructive">{list.length}</Badge>
               </div>
             </summary>
