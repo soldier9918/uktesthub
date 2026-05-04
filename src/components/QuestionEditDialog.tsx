@@ -91,6 +91,8 @@ export function QuestionEditDialog({ topic, questionId, defaults, liveLink, onCl
     setBusy(false);
     if (error) return setErr(error.message);
     invalidateOverrides();
+    sessionStorage.removeItem("admin-validator-results-v1");
+    sessionStorage.removeItem("admin-validator-results-v2");
     setSavedOk(true);
     onSaved();
   };
@@ -106,6 +108,8 @@ export function QuestionEditDialog({ topic, questionId, defaults, liveLink, onCl
     setBusy(false);
     if (error) return setErr(error.message);
     invalidateOverrides();
+    sessionStorage.removeItem("admin-validator-results-v1");
+    sessionStorage.removeItem("admin-validator-results-v2");
     onSaved();
     onClose();
   };

@@ -42,9 +42,38 @@ export async function loadOverrides(): Promise<Map<string, QuestionOverride>> {
 export function invalidateOverrides() {
   cache = null;
   inflight = null;
+  if (typeof window !== "undefined") {
+    window.dispatchEvent(new Event("question-overrides-invalidated"));
+  }
 }
 
 type AnyQuiz = { topic: string; questions: Array<Record<string, unknown> & { id: number | string }> };
+
+export function applyOverrideToQuestionRecord<T extends Record<string, unknown>>(
+  question: T,
+  override: QuestionOverride | undefined,
+): T {
+  if (!override) return question;
+  const next: Record<string, unknown> = { ...question };
+  if (override.question != null) {
+    if ("template" in next && !("question" in next)) next.template = override.question;
+    else if ("prompt" in next && !("question" in next)) next.prompt = override.question;
+    else next.question = override.question;
+  }
+  if (Array.isArray(override.options)) next.options = override.options;
+  if (override.correct_answer != null) {
+    const t = next.type;
+    if ((t === "multiple-response" || t === "multiple_response") && Array.isArray(override.correct_answer)) {
+      next.correctAnswers = override.correct_answer;
+    } else {
+      next.correctAnswer = override.correct_answer;
+    }
+  }
+  if (override.explanation != null) next.explanation = override.explanation;
+  if (override.image != null) next.image = override.image;
+  if (override.image_alt != null) next.imageAlt = override.image_alt;
+  return next as T;
+}
 
 export function applyOverrides<T extends AnyQuiz>(quiz: T, map: Map<string, QuestionOverride>): T {
   let mutated = false;
@@ -57,24 +86,7 @@ export function applyOverrides<T extends AnyQuiz>(quiz: T, map: Map<string, Ques
       map.get(key(quiz.topic, String(q.id)));
     if (!o) return q;
     mutated = true;
-    const next: Record<string, unknown> = { ...q };
-    if (o.question != null) next.question = o.question;
-    if (Array.isArray(o.options)) next.options = o.options;
-    if (o.correct_answer != null) {
-      // Map to the right field based on question type
-      const t = (q as { type?: string }).type;
-      if (t === "true-false" && typeof o.correct_answer === "boolean") {
-        next.correctAnswer = o.correct_answer;
-      } else if (t === "multiple-response" && Array.isArray(o.correct_answer)) {
-        next.correctAnswers = o.correct_answer;
-      } else if (typeof o.correct_answer === "number") {
-        next.correctAnswer = o.correct_answer;
-      }
-    }
-    if (o.explanation != null) next.explanation = o.explanation;
-    if (o.image != null) next.image = o.image;
-    if (o.image_alt != null) next.imageAlt = o.image_alt;
-    return next;
+    return applyOverrideToQuestionRecord(q, o);
   });
   if (!mutated) return quiz;
   return { ...quiz, questions: nextQuestions } as T;
@@ -84,11 +96,14 @@ export function useOverrides() {
   const [map, setMap] = useState<Map<string, QuestionOverride> | null>(cache);
   useEffect(() => {
     let mounted = true;
-    loadOverrides().then((m) => {
+    const refresh = () => loadOverrides().then((m) => {
       if (mounted) setMap(m);
     });
+    refresh();
+    window.addEventListener("question-overrides-invalidated", refresh);
     return () => {
       mounted = false;
+      window.removeEventListener("question-overrides-invalidated", refresh);
     };
   }, []);
   return map;
