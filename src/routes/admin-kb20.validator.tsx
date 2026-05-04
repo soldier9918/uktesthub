@@ -104,20 +104,37 @@ function Validator() {
     setFindings([]);
     setScanned(0);
     const out: Finding[] = [];
+    const usage = new Map<string, Map<string, number[]>>();
     for (const topic of allTopics) {
       const file = await loadTopicFileForAdmin(topic);
       if (file) {
-        const bank: AnyQ[] =
-          (file as { version?: number }).version === 2
-            ? ((file as { bank: AnyQ[] }).bank ?? [])
-            : ((file as { tests: { questions: AnyQ[] }[] }).tests ?? []).flatMap(
-                (t) => t.questions ?? [],
-              );
+        const isV2 = (file as { version?: number }).version === 2;
+        const bank: AnyQ[] = isV2
+          ? ((file as { bank: AnyQ[] }).bank ?? [])
+          : ((file as { tests: { questions: AnyQ[] }[] }).tests ?? []).flatMap(
+              (t) => t.questions ?? [],
+            );
         out.push(...validateTopicBank(topic, bank, publicImages));
+
+        // Build id -> [mockNumbers] for this topic.
+        const topicUsage = new Map<string, number[]>();
+        if (isV2) {
+          const mocks =
+            (file as { mocks?: { mockNumber: number; questionIds: string[] }[] }).mocks ?? [];
+          for (const m of mocks) {
+            for (const qid of m.questionIds) {
+              const arr = topicUsage.get(qid) ?? [];
+              arr.push(m.mockNumber);
+              topicUsage.set(qid, arr);
+            }
+          }
+        }
+        usage.set(topic, topicUsage);
       }
       setScanned((n) => n + 1);
     }
     setFindings(out);
+    setUsageByTopic(usage);
     setRunning(false);
     const at = new Date().toISOString();
     setLastRunAt(at);
