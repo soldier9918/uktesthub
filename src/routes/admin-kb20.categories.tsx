@@ -217,7 +217,6 @@ function CategoriesBrowser() {
                                   <Link
                                     to="/admin-kb20/questions/$topic"
                                     params={{ topic: t.slug }}
-                                    search={{ q: undefined, from: undefined, edit: undefined }}
                                     className="ml-1 text-coral underline"
                                   >
                                     View images →
