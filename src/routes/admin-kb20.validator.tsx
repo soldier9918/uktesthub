@@ -83,9 +83,21 @@ function Validator() {
         if (parsed.ruleFilter) setRuleFilter(parsed.ruleFilter);
         if (parsed.at) setLastRunAt(parsed.at);
         if (parsed.usage) {
-          const m = new Map<string, Map<string, number[]>>();
+          const m = new Map<string, Map<string, UsageEntry[]>>();
           for (const [topic, ids] of Object.entries(parsed.usage)) {
-            m.set(topic, new Map(Object.entries(ids)));
+            // Back-compat: older cache stored number[] (mock numbers only).
+            const inner = new Map<string, UsageEntry[]>();
+            for (const [qid, val] of Object.entries(ids as Record<string, unknown>)) {
+              if (Array.isArray(val) && val.length > 0 && typeof val[0] === "number") {
+                inner.set(
+                  qid,
+                  (val as number[]).map((mockNumber) => ({ mockNumber, slot: 0 })),
+                );
+              } else {
+                inner.set(qid, val as UsageEntry[]);
+              }
+            }
+            m.set(topic, inner);
           }
           setUsageByTopic(m);
         }
@@ -95,8 +107,8 @@ function Validator() {
     }
   }, []);
 
-  // topic -> (questionId -> mockNumbers[])
-  const [usageByTopic, setUsageByTopic] = useState<Map<string, Map<string, number[]>>>(
+  // topic -> (questionId -> [{mockNumber, slot}])
+  const [usageByTopic, setUsageByTopic] = useState<Map<string, Map<string, UsageEntry[]>>>(
     new Map(),
   );
 
@@ -112,7 +124,7 @@ function Validator() {
     setFindings([]);
     setScanned(0);
     const out: Finding[] = [];
-    const usage = new Map<string, Map<string, number[]>>();
+    const usage = new Map<string, Map<string, UsageEntry[]>>();
     for (const topic of allTopics) {
       const file = await loadTopicFileForAdmin(topic);
       if (file) {
@@ -124,17 +136,18 @@ function Validator() {
             );
         out.push(...validateTopicBank(topic, bank, publicImages));
 
-        // Build id -> [mockNumbers] for this topic.
-        const topicUsage = new Map<string, number[]>();
+        // Build id -> [{mockNumber, slot}] for this topic. `slot` is 1-indexed
+        // and matches "Question N of M" shown in the live quiz UI.
+        const topicUsage = new Map<string, UsageEntry[]>();
         if (isV2) {
           const mocks =
             (file as { mocks?: { mockNumber: number; questionIds: string[] }[] }).mocks ?? [];
           for (const m of mocks) {
-            for (const qid of m.questionIds) {
+            m.questionIds.forEach((qid, idx) => {
               const arr = topicUsage.get(qid) ?? [];
-              arr.push(m.mockNumber);
+              arr.push({ mockNumber: m.mockNumber, slot: idx + 1 });
               topicUsage.set(qid, arr);
-            }
+            });
           }
         }
         usage.set(topic, topicUsage);
@@ -147,7 +160,7 @@ function Validator() {
     const at = new Date().toISOString();
     setLastRunAt(at);
     try {
-      const usageJson: Record<string, Record<string, number[]>> = {};
+      const usageJson: Record<string, Record<string, UsageEntry[]>> = {};
       for (const [topic, m] of usage.entries()) {
         usageJson[topic] = Object.fromEntries(m);
       }
