@@ -175,12 +175,29 @@ function isV2(file: MockFile): file is V2File {
   return (file as V2File).version === 2 && Array.isArray((file as V2File).bank);
 }
 
+/**
+ * Resolve `/mocks/foo.json` to an absolute URL during SSR (Cloudflare Worker
+ * runtime requires absolute URLs for `fetch`). On the client, relative paths
+ * resolve against window.location naturally.
+ */
+function resolveMockUrl(path: string): string {
+  if (typeof window !== "undefined") return path;
+  // Server: try the in-flight request origin (set by the SSR entry), then
+  // fall back to env-configured site URL, then a hard-coded production URL.
+  const g = globalThis as { __MOCK_BASE_URL__?: string };
+  const base =
+    g.__MOCK_BASE_URL__ ||
+    (typeof process !== "undefined" && process.env?.SITE_URL) ||
+    "https://www.uktesthub.com";
+  return new URL(path, base).toString();
+}
+
 async function loadTopicFile(topic: string): Promise<MockFile | undefined> {
   const entry = buildTopicEntry(topic);
   if (!entry) return undefined;
   const cached = fileCache.get(topic);
   if (cached) return cached;
-  const url = `/mocks/${entry.file}`;
+  const url = resolveMockUrl(`/mocks/${entry.file}`);
   const promise = (async () => {
     try {
       const res = await fetch(url);
