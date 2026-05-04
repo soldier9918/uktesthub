@@ -49,7 +49,12 @@ type AnyQuiz = { topic: string; questions: Array<Record<string, unknown> & { id:
 export function applyOverrides<T extends AnyQuiz>(quiz: T, map: Map<string, QuestionOverride>): T {
   let mutated = false;
   const nextQuestions = quiz.questions.map((q) => {
-    const o = map.get(key(quiz.topic, String(q.id)));
+    // Bank id (e.g. "sa-mc-0017") is the canonical override key; fall back to
+    // the runtime numeric id for backward compatibility.
+    const srcId = (q as { sourceId?: string }).sourceId;
+    const o =
+      (srcId ? map.get(key(quiz.topic, srcId)) : undefined) ??
+      map.get(key(quiz.topic, String(q.id)));
     if (!o) return q;
     mutated = true;
     const next: Record<string, unknown> = { ...q };
