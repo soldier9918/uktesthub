@@ -294,7 +294,8 @@ function QuestionsBrowser() {
           {visible.map((q: FlatQuestion, idx: number) => (
             <li
               key={q.id}
-              className="rounded-xl border border-border bg-card p-4"
+              data-qid={q.id}
+              className={`rounded-xl border bg-card p-4 ${q.id === highlightId ? "border-coral ring-2 ring-coral/30" : "border-border"}`}
             >
               <div className="flex items-start gap-3">
                 <div className="text-xs text-muted-foreground w-12 shrink-0">
