@@ -267,6 +267,102 @@ function Validator() {
     }
   };
 
+  // Bulk-clean: for every finding in `topic` whose rule is suspicious-characters
+  // or json-code-artifact, reload the source question, strip the dirty bits from
+  // question/options/explanation, and upsert an override. Then re-run validation.
+  const bulkCleanTopic = async (topic: string) => {
+    const targets = findings.filter(
+      (f) =>
+        f.topic === topic &&
+        (f.rule === "suspicious-characters" || f.rule === "json-code-artifact"),
+    );
+    if (targets.length === 0) return;
+    if (
+      !window.confirm(
+        `Strip suspicious characters and JSON artifacts from ${targets.length} question(s) in "${topic}"?\n\nThis writes per-question overrides and updates the live site immediately.`,
+      )
+    )
+      return;
+
+    setBulkBusyTopic(topic);
+    setBulkMessage(null);
+    try {
+      const file = await loadTopicFileForAdmin(topic);
+      if (!file) throw new Error("Could not load topic file");
+      const isV2 = (file as { version?: number }).version === 2;
+      const rawBank: AnyQ[] = isV2
+        ? ((file as { bank: AnyQ[] }).bank ?? [])
+        : ((file as { tests: { questions: AnyQ[] }[] }).tests ?? []).flatMap(
+            (t) => t.questions ?? [],
+          );
+      const overrides = await loadOverrides();
+      const merged = rawBank.map((q) =>
+        q.id ? applyOverrideToQuestionRecord(q, overrides.get(`${topic}::${q.id}`)) : q,
+      );
+      const byId = new Map<string, AnyQ>();
+      for (const q of merged) if (q.id) byId.set(q.id as string, q);
+
+      const ids = Array.from(new Set(targets.map((t) => t.questionId).filter(Boolean) as string[]));
+      const clean = (s: unknown): string | undefined => {
+        if (typeof s !== "string") return undefined;
+        let out = s;
+        if (hasArtifacts(out)) out = stripArtifacts(out);
+        if (hasWeirdChars(out)) out = stripWeird(out);
+        return out;
+      };
+
+      const rows: Record<string, unknown>[] = [];
+      for (const id of ids) {
+        const q = byId.get(id);
+        if (!q) continue;
+        const prev = overrides.get(`${topic}::${id}`);
+        const qText =
+          (q.question as string | undefined) ??
+          (q.template as string | undefined) ??
+          (q.prompt as string | undefined);
+        const newQ = clean(qText);
+        const opts = q.options as unknown[] | undefined;
+        const newOpts = Array.isArray(opts)
+          ? opts.map((o) => (typeof o === "string" ? clean(o) ?? o : o))
+          : undefined;
+        const newExp = clean(q.explanation);
+
+        rows.push({
+          topic,
+          question_id: id,
+          question: newQ ?? prev?.question ?? qText ?? null,
+          options: newOpts ?? prev?.options ?? opts ?? null,
+          correct_answer: prev?.correct_answer ?? null,
+          explanation: newExp ?? prev?.explanation ?? (q.explanation as string | undefined) ?? null,
+          image: prev?.image ?? null,
+          image_alt: prev?.image_alt ?? null,
+          updated_by: user?.id ?? null,
+        });
+      }
+
+      let written = 0;
+      for (let i = 0; i < rows.length; i += 50) {
+        const batch = rows.slice(i, i + 50);
+        const { error } = await supabase
+          .from("question_overrides")
+          .upsert(batch, { onConflict: "topic,question_id" });
+        if (error) throw error;
+        written += batch.length;
+      }
+      invalidateOverrides();
+      setBulkMessage(`Cleaned ${written} question(s) in "${topic}". Re-running validation…`);
+      // Re-run a full scan so the cleaned items disappear from the list.
+      await run();
+      setBulkMessage(`Cleaned ${written} question(s) in "${topic}". Findings refreshed.`);
+    } catch (e) {
+      setBulkMessage(
+        `Bulk-clean failed for "${topic}": ${e instanceof Error ? e.message : "Unknown error"}`,
+      );
+    } finally {
+      setBulkBusyTopic(null);
+    }
+  };
+
   const ruleCounts = useMemo(() => {
     const m = new Map<Finding["rule"], number>();
     for (const f of findings) m.set(f.rule, (m.get(f.rule) ?? 0) + 1);
