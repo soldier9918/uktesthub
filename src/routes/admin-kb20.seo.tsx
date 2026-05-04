@@ -8,6 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import { logAdminAction } from "@/lib/admin/audit";
 import { invalidateAdminSettings, loadAdminSettings, type AdminSettings } from "@/lib/admin/settings";
 import { toast } from "sonner";
+import { getAllPosts } from "@/data/blog";
 
 type SeoRow = {
   path: string;
@@ -37,7 +38,10 @@ function SeoManager() {
   const [settings, setSettings] = useState<AdminSettings | null>(null);
   const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState("");
+  const [articleSearch, setArticleSearch] = useState("");
   const [editing, setEditing] = useState<SeoRow | null>(null);
+
+  const posts = useMemo(() => getAllPosts(), []);
 
   const load = async () => {
     setLoading(true);
@@ -124,6 +128,88 @@ function SeoManager() {
             </Field>
           </div>
         )}
+      </section>
+
+      <section className="mt-6 rounded-xl border border-border bg-card p-4">
+        <div className="flex flex-wrap items-center gap-2">
+          <h2 className="font-semibold">Articles (Blog)</h2>
+          <Badge variant="secondary">{posts.length} posts</Badge>
+          <Input
+            placeholder="Filter title or slug…"
+            value={articleSearch}
+            onChange={(e) => setArticleSearch(e.target.value)}
+            className="ml-auto max-w-xs"
+          />
+        </div>
+        <p className="mt-1 text-xs text-muted-foreground">
+          Click Edit SEO to override a post's title, description, or OG image. The override
+          beats the page's built-in metadata.
+        </p>
+        <ul className="mt-3 divide-y divide-border">
+          {posts
+            .filter((p) => {
+              const q = articleSearch.trim().toLowerCase();
+              if (!q) return true;
+              return (
+                p.title.toLowerCase().includes(q) ||
+                p.slug.toLowerCase().includes(q) ||
+                p.category.toLowerCase().includes(q)
+              );
+            })
+            .map((p) => {
+              const path = `/blog/${p.slug}`;
+              const override = rows.find((r) => r.path === path);
+              return (
+                <li key={p.slug} className="flex items-start gap-3 py-2.5">
+                  <div className="min-w-0 flex-1">
+                    <div className="flex flex-wrap items-center gap-2">
+                      <code className="font-mono text-xs text-muted-foreground">{path}</code>
+                      {override && <Badge variant="secondary">override</Badge>}
+                      {override?.noindex && <Badge variant="destructive">noindex</Badge>}
+                      <Badge variant="outline" className="text-[10px]">
+                        {p.category}
+                      </Badge>
+                    </div>
+                    <div className="mt-1 text-sm font-medium">{override?.title || p.title}</div>
+                    <div className="line-clamp-2 text-xs text-muted-foreground">
+                      {override?.description || p.description}
+                    </div>
+                  </div>
+                  <div className="flex shrink-0 flex-col gap-1.5">
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      onClick={() =>
+                        setEditing(
+                          override ?? {
+                            path,
+                            title: p.title,
+                            description: p.description,
+                            og_image: typeof p.hero === "string" ? p.hero : "",
+                            noindex: false,
+                            updated_at: new Date().toISOString(),
+                          },
+                        )
+                      }
+                    >
+                      Edit SEO
+                    </Button>
+                    <a
+                      href={path}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-center text-xs text-muted-foreground hover:underline"
+                    >
+                      View ↗
+                    </a>
+                  </div>
+                </li>
+              );
+            })}
+          {posts.length === 0 && (
+            <li className="py-6 text-center text-sm text-muted-foreground">No articles found.</li>
+          )}
+        </ul>
       </section>
 
       <section className="mt-6 rounded-xl border border-border bg-card p-4">
@@ -215,13 +301,16 @@ function SeoEditor({
       return;
     }
     setSaving(true);
-    const { error } = await supabase.from("page_seo_overrides").upsert([{
-      path,
-      title: title || null,
-      description: description || null,
-      og_image: ogImage || null,
-      noindex,
-    }]);
+    const { error } = await supabase.from("page_seo_overrides").upsert(
+      [{
+        path,
+        title: title || null,
+        description: description || null,
+        og_image: ogImage || null,
+        noindex,
+      }],
+      { onConflict: "path" },
+    );
     setSaving(false);
     if (error) {
       toast.error(error.message);
