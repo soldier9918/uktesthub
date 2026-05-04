@@ -42,6 +42,9 @@ export async function loadOverrides(): Promise<Map<string, QuestionOverride>> {
 export function invalidateOverrides() {
   cache = null;
   inflight = null;
+  if (typeof window !== "undefined") {
+    window.dispatchEvent(new Event("question-overrides-invalidated"));
+  }
 }
 
 type AnyQuiz = { topic: string; questions: Array<Record<string, unknown> & { id: number | string }> };
@@ -93,11 +96,14 @@ export function useOverrides() {
   const [map, setMap] = useState<Map<string, QuestionOverride> | null>(cache);
   useEffect(() => {
     let mounted = true;
-    loadOverrides().then((m) => {
+    const refresh = () => loadOverrides().then((m) => {
       if (mounted) setMap(m);
     });
+    refresh();
+    window.addEventListener("question-overrides-invalidated", refresh);
     return () => {
       mounted = false;
+      window.removeEventListener("question-overrides-invalidated", refresh);
     };
   }, []);
   return map;
