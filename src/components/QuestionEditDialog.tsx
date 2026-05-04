@@ -245,6 +245,13 @@ export function QuestionEditDialog({ topic, questionId, defaults, liveLink, onCl
           </div>
         </div>
       </div>
+      {pickerOpen && (
+        <ImagePicker
+          selected={image}
+          onSelect={(p) => setImage(p)}
+          onClose={() => setPickerOpen(false)}
+        />
+      )}
     </div>
   );
 }
