@@ -409,9 +409,9 @@ function Validator() {
 
   const ruleCounts = useMemo(() => {
     const m = new Map<Finding["rule"], number>();
-    for (const f of findings) m.set(f.rule, (m.get(f.rule) ?? 0) + 1);
+    for (const f of visibleFindings) m.set(f.rule, (m.get(f.rule) ?? 0) + 1);
     return m;
-  }, [findings]);
+  }, [visibleFindings]);
 
   const findingSig = (f: Finding) =>
     `${f.topic}|${f.rule}|${f.questionId ?? ""}|${f.field ?? ""}|${(f.relatedIds ?? []).join(",")}`;
