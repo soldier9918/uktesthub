@@ -236,12 +236,21 @@ function QuestionsBrowser() {
       <main className="mx-auto max-w-6xl px-4 py-6">
         <div className="flex items-center justify-between gap-4">
           <div>
-            <Link
-              to="/admin-kb20/questions"
-              className="text-xs text-muted-foreground hover:underline"
-            >
-              ← All topics
-            </Link>
+            {from === "validator" ? (
+              <Link
+                to="/admin-kb20/validator"
+                className="inline-flex items-center gap-1 text-xs font-semibold text-coral hover:underline"
+              >
+                ← Back to validator
+              </Link>
+            ) : (
+              <Link
+                to="/admin-kb20/questions"
+                className="text-xs text-muted-foreground hover:underline"
+              >
+                ← All topics
+              </Link>
+            )}
             <h1 className="font-display text-2xl font-bold">{topic}</h1>
             <p className="text-xs text-muted-foreground">
               {stats.total} questions · {stats.withImg} with images ·{" "}
