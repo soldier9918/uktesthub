@@ -463,6 +463,11 @@ function Validator() {
           Question overrides changed since the last scan — previous results have been cleared. Click <strong>Run validation</strong> to refresh.
         </p>
       )}
+      {bulkMessage && (
+        <p className="mt-3 rounded-md border border-coral/40 bg-coral/5 p-2 text-xs text-coral">
+          {bulkMessage}
+        </p>
+      )}
 
       <div className="mt-4 rounded-xl border border-border bg-card/50 p-3">
         <form
