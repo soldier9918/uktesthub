@@ -6,6 +6,9 @@ import { loadTopicFileForAdmin } from "@/data/mocks";
 import { validateTopicBank, type Finding } from "@/lib/admin/validator";
 import { applyOverrideToQuestionRecord, invalidateOverrides, loadOverrides } from "@/lib/overrides";
 import { Badge } from "@/components/ui/badge";
+import { supabase } from "@/integrations/supabase/client";
+import { useAuth } from "@/lib/auth-context";
+import { hasArtifacts, hasWeirdChars, stripArtifacts, stripWeird } from "@/lib/admin/text-cleanup";
 
 export const Route = createFileRoute("/admin-kb20/validator")({
   head: () => ({
