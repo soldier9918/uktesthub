@@ -76,16 +76,29 @@ function Validator() {
           scanned: number;
           ruleFilter?: Finding["rule"] | "all";
           at?: string;
+          usage?: Record<string, Record<string, number[]>>;
         };
         setFindings(parsed.findings ?? []);
         setScanned(parsed.scanned ?? 0);
         if (parsed.ruleFilter) setRuleFilter(parsed.ruleFilter);
         if (parsed.at) setLastRunAt(parsed.at);
+        if (parsed.usage) {
+          const m = new Map<string, Map<string, number[]>>();
+          for (const [topic, ids] of Object.entries(parsed.usage)) {
+            m.set(topic, new Map(Object.entries(ids)));
+          }
+          setUsageByTopic(m);
+        }
       }
     } catch {
       /* ignore */
     }
   }, []);
+
+  // topic -> (questionId -> mockNumbers[])
+  const [usageByTopic, setUsageByTopic] = useState<Map<string, Map<string, number[]>>>(
+    new Map(),
+  );
 
   useEffect(() => {
     fetch("/mocks/image-inventory.json")
@@ -99,27 +112,54 @@ function Validator() {
     setFindings([]);
     setScanned(0);
     const out: Finding[] = [];
+    const usage = new Map<string, Map<string, number[]>>();
     for (const topic of allTopics) {
       const file = await loadTopicFileForAdmin(topic);
       if (file) {
-        const bank: AnyQ[] =
-          (file as { version?: number }).version === 2
-            ? ((file as { bank: AnyQ[] }).bank ?? [])
-            : ((file as { tests: { questions: AnyQ[] }[] }).tests ?? []).flatMap(
-                (t) => t.questions ?? [],
-              );
+        const isV2 = (file as { version?: number }).version === 2;
+        const bank: AnyQ[] = isV2
+          ? ((file as { bank: AnyQ[] }).bank ?? [])
+          : ((file as { tests: { questions: AnyQ[] }[] }).tests ?? []).flatMap(
+              (t) => t.questions ?? [],
+            );
         out.push(...validateTopicBank(topic, bank, publicImages));
+
+        // Build id -> [mockNumbers] for this topic.
+        const topicUsage = new Map<string, number[]>();
+        if (isV2) {
+          const mocks =
+            (file as { mocks?: { mockNumber: number; questionIds: string[] }[] }).mocks ?? [];
+          for (const m of mocks) {
+            for (const qid of m.questionIds) {
+              const arr = topicUsage.get(qid) ?? [];
+              arr.push(m.mockNumber);
+              topicUsage.set(qid, arr);
+            }
+          }
+        }
+        usage.set(topic, topicUsage);
       }
       setScanned((n) => n + 1);
     }
     setFindings(out);
+    setUsageByTopic(usage);
     setRunning(false);
     const at = new Date().toISOString();
     setLastRunAt(at);
     try {
+      const usageJson: Record<string, Record<string, number[]>> = {};
+      for (const [topic, m] of usage.entries()) {
+        usageJson[topic] = Object.fromEntries(m);
+      }
       sessionStorage.setItem(
         CACHE_KEY,
-        JSON.stringify({ findings: out, scanned: allTopics.length, ruleFilter, at }),
+        JSON.stringify({
+          findings: out,
+          scanned: allTopics.length,
+          ruleFilter,
+          at,
+          usage: usageJson,
+        }),
       );
     } catch {
       /* ignore quota errors */
@@ -130,6 +170,7 @@ function Validator() {
     sessionStorage.removeItem(CACHE_KEY);
     setFindings([]);
     setScanned(0);
+    setUsageByTopic(new Map());
     setLastRunAt(null);
   };
 
@@ -330,7 +371,11 @@ function Validator() {
             </summary>
             <ul className="mt-3 space-y-2 text-sm">
               {list.map((f, i) => (
-                <FindingRow key={i} finding={f} />
+                <FindingRow
+                  key={i}
+                  finding={f}
+                  usage={usageByTopic.get(f.topic)}
+                />
               ))}
             </ul>
           </details>
@@ -369,8 +414,16 @@ function FilterChip({
   );
 }
 
-function FindingRow({ finding }: { finding: Finding }) {
+function FindingRow({
+  finding,
+  usage,
+}: {
+  finding: Finding;
+  usage?: Map<string, number[]>;
+}) {
   const isDuplicate = finding.rule === "duplicate-id" || finding.rule === "duplicate-text";
+  const mocks =
+    finding.questionId && usage ? (usage.get(finding.questionId) ?? []) : [];
   return (
     <li className="rounded-md border border-border/60 bg-background/50 p-3">
       <div className="flex flex-wrap items-center gap-2">
@@ -387,6 +440,29 @@ function FindingRow({ finding }: { finding: Finding }) {
         )}
         <span className="text-xs text-muted-foreground">{finding.message}</span>
       </div>
+      {finding.questionId && (
+        <div className="mt-1.5 flex flex-wrap items-center gap-1 text-[10px] text-muted-foreground">
+          {mocks.length === 0 ? (
+            <span className="italic">Not used in any mock test (orphan)</span>
+          ) : (
+            <>
+              <span>Live in:</span>
+              {mocks.map((n) => (
+                <a
+                  key={n}
+                  href={`/quiz/${finding.topic}-mock-${n}`}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="rounded border border-border bg-card px-1.5 py-0.5 font-mono text-coral hover:border-coral hover:bg-coral/5"
+                  title={`Open ${finding.topic} Mock Test ${n} on the live site (new tab)`}
+                >
+                  Mock {n}
+                </a>
+              ))}
+            </>
+          )}
+        </div>
+      )}
       {finding.questionText && (
         <p className="mt-2 text-sm text-foreground">{finding.questionText}</p>
       )}

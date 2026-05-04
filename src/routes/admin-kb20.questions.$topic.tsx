@@ -321,11 +321,23 @@ function QuestionsBrowser() {
                       <Badge className="bg-emerald-600 text-white">edited</Badge>
                     )}
                     {q.usedInMocks.length > 0 ? (
-                      <span className="text-[10px] text-muted-foreground">
-                        Mocks: {q.usedInMocks.join(", ")}
+                      <span className="flex flex-wrap items-center gap-1 text-[10px] text-muted-foreground">
+                        Live in:
+                        {q.usedInMocks.map((n) => (
+                          <a
+                            key={n}
+                            href={`/quiz/${topic}-mock-${n}`}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="rounded border border-border bg-background px-1.5 py-0.5 font-mono text-[10px] text-coral hover:border-coral hover:bg-coral/5"
+                            title={`Open Mock Test ${n} on the live site (new tab)`}
+                          >
+                            Mock {n}
+                          </a>
+                        ))}
                       </span>
                     ) : (
-                      <Badge variant="secondary">unused</Badge>
+                      <Badge variant="secondary">unused — not in any mock</Badge>
                     )}
                     <Button
                       size="sm"
