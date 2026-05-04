@@ -223,7 +223,7 @@ function FindingRow({ finding }: { finding: Finding }) {
           <Link
             to="/admin-kb20/questions/$topic"
             params={{ topic: finding.topic }}
-            search={{ q: finding.questionId }}
+            search={{ q: finding.questionId, from: "validator" }}
             className="font-mono text-xs text-coral hover:underline"
           >
             {finding.questionId} →
