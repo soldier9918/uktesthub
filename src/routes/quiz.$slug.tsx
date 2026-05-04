@@ -10,6 +10,19 @@ import { listMockSlots } from "@/data/mocks";
 
 export const Route = createFileRoute("/quiz/$slug")({
   loader: async ({ params }) => {
+    // During SSR, set the absolute base URL used for fetching public/mocks/*.json
+    if (typeof window === "undefined") {
+      try {
+        const { getRequest } = await import("@tanstack/react-start/server");
+        const req = getRequest();
+        if (req?.url) {
+          (globalThis as { __MOCK_BASE_URL__?: string }).__MOCK_BASE_URL__ =
+            new URL(req.url).origin;
+        }
+      } catch {
+        // ignore — falls back to env or hard-coded origin in resolveMockUrl
+      }
+    }
     const quiz = await getQuiz(params.slug);
     if (!quiz) throw notFound();
     return { quiz };
