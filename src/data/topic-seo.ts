@@ -26,7 +26,7 @@ const generic = (
   tagline: `Everything you need to know about the ${topicTitle} before you book.`,
   intro: [
     `The ${topicTitle} is ${context}. This guide walks you through the format, what's actually tested, the most common mistakes candidates make, and how to use practice tests to pass first time.`,
-    `When you're ready, jump into our free mock papers — each one mirrors the real exam style with full answer explanations so you learn the reasoning, not just the letter.`,
+    `When you're ready, jump into our free mock papers — each one is designed to reflect the exam format with full answer explanations so you learn the reasoning, not just the letter.`,
   ],
   sections: [
     {
@@ -54,7 +54,7 @@ const generic = (
     {
       heading: "Common mistakes to avoid",
       body: [
-        `The biggest pitfall is treating the practice tests as a memorisation exercise. The real exam pulls from a much larger question bank — if you only memorise our wording, you'll be lost when the real paper rephrases the same concept.`,
+        `The biggest pitfall is treating the practice tests as a memorisation exercise. The official exam pulls from a much larger question bank — if you only memorise our wording, you'll be lost when the real paper rephrases the same concept.`,
         `Other common mistakes: skim-reading questions, second-guessing correct first instincts, and panicking in the last 10 minutes. Trust your preparation and use every minute available.`,
       ],
     },
