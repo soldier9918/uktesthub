@@ -127,6 +127,16 @@ export function validateTopicBank(
           message: `Non-Latin / suspicious chars in ${f.name}: ${found.scripts.join(", ")}`,
         });
       }
+      if (hasArtifacts(f.value)) {
+        const cleaned = stripArtifacts(f.value);
+        findings.push({
+          topic, questionId: id, questionIndex: idx, questionText: snippet(qText),
+          rule: "json-code-artifact",
+          field: f.name,
+          sample: `"${f.value}" → "${cleaned}"`,
+          message: `JSON/code artifact in ${f.name} (use bulk "Strip JSON/code artifacts")`,
+        });
+      }
     }
   };
 
