@@ -13,8 +13,12 @@ export type Finding = {
     | "missing-explanation"
     | "invalid-correct-answer"
     | "missing-image"
-    | "unknown-type";
+    | "unknown-type"
+    | "suspicious-characters";
   message: string;
+  /** For suspicious-characters: which field, sample, and detected scripts. */
+  field?: string;
+  sample?: string;
 };
 
 const KNOWN_TYPES = new Set([
@@ -55,6 +59,74 @@ export function validateTopicBank(
 
   const snippet = (s: string | undefined, n = 140) =>
     s ? (s.length > n ? `${s.slice(0, n)}…` : s) : undefined;
+
+  // Detect non-Latin scripts and other suspicious characters.
+  // Allowed: basic Latin + Latin-1 Supplement + Latin Extended (covers UK English,
+  // accented names, £, €, °, etc.), common punctuation, symbols, whitespace.
+  const SCRIPT_RANGES: { name: string; re: RegExp }[] = [
+    { name: "Arabic", re: /[\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF\uFB50-\uFDFF\uFE70-\uFEFF]/ },
+    { name: "Hebrew", re: /[\u0590-\u05FF]/ },
+    { name: "Cyrillic", re: /[\u0400-\u04FF\u0500-\u052F]/ },
+    { name: "Greek", re: /[\u0370-\u03FF]/ },
+    { name: "CJK", re: /[\u3000-\u303F\u3040-\u309F\u30A0-\u30FF\u3400-\u4DBF\u4E00-\u9FFF\uAC00-\uD7AF]/ },
+    { name: "Devanagari", re: /[\u0900-\u097F]/ },
+    { name: "Thai", re: /[\u0E00-\u0E7F]/ },
+    { name: "Armenian", re: /[\u0530-\u058F]/ },
+    { name: "Georgian", re: /[\u10A0-\u10FF]/ },
+  ];
+  const REPLACEMENT_CHAR = /\uFFFD/;
+  const ZERO_WIDTH = /[\u200B-\u200F\u202A-\u202E\u2060-\u206F\uFEFF]/;
+  const PRIVATE_USE = /[\uE000-\uF8FF]/;
+
+  const detectSuspicious = (s: string | undefined): { scripts: string[]; sample: string } | null => {
+    if (!s) return null;
+    const hits: string[] = [];
+    for (const { name, re } of SCRIPT_RANGES) if (re.test(s)) hits.push(name);
+    if (REPLACEMENT_CHAR.test(s)) hits.push("Replacement char (�)");
+    if (ZERO_WIDTH.test(s)) hits.push("Zero-width / bidi");
+    if (PRIVATE_USE.test(s)) hits.push("Private-use");
+    if (hits.length === 0) return null;
+    // Surface a window around the first offending char.
+    const allRe = new RegExp(
+      [
+        ...SCRIPT_RANGES.map((r) => r.re.source),
+        REPLACEMENT_CHAR.source,
+        ZERO_WIDTH.source,
+        PRIVATE_USE.source,
+      ].join("|"),
+    );
+    const m = allRe.exec(s);
+    const i = m ? m.index : 0;
+    const start = Math.max(0, i - 30);
+    const end = Math.min(s.length, i + 30);
+    const sample = (start > 0 ? "…" : "") + s.slice(start, end) + (end < s.length ? "…" : "");
+    return { scripts: hits, sample };
+  };
+
+  const checkSuspicious = (q: AnyQ, id: string | undefined, idx: number, qText: string | undefined) => {
+    const fields: { name: string; value: unknown }[] = [
+      { name: "question", value: textOf(q) },
+      { name: "explanation", value: q.explanation },
+      { name: "imageAlt", value: (q as Record<string, unknown>).imageAlt },
+    ];
+    const opts = q.options as unknown[] | undefined;
+    if (Array.isArray(opts)) {
+      opts.forEach((o, i) => fields.push({ name: `option[${i}]`, value: o }));
+    }
+    for (const f of fields) {
+      if (typeof f.value !== "string") continue;
+      const found = detectSuspicious(f.value);
+      if (found) {
+        findings.push({
+          topic, questionId: id, questionIndex: idx, questionText: snippet(qText),
+          rule: "suspicious-characters",
+          field: f.name,
+          sample: found.sample,
+          message: `Non-Latin / suspicious chars in ${f.name}: ${found.scripts.join(", ")}`,
+        });
+      }
+    }
+  };
 
   bank.forEach((q, idx) => {
     const id = q.id;
@@ -132,6 +204,8 @@ export function validateTopicBank(
         });
       }
     }
+
+    checkSuspicious(q, id, idx, qText);
   });
 
   // Build per-id occurrence list (need actual ids, but idsByValue stored same id repeated).
