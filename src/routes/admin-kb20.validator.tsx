@@ -74,7 +74,38 @@ function Validator() {
   const navigate = useNavigate();
 
   const CACHE_KEY = "admin-validator-results-v3";
+  const IGNORE_KEY = "admin-validator-ignored-v1";
   const [staleNotice, setStaleNotice] = useState(false);
+  const [ignored, setIgnored] = useState<Set<string>>(new Set());
+  const [showIgnored, setShowIgnored] = useState(false);
+
+  // Load ignored signatures
+  useEffect(() => {
+    try {
+      const raw = localStorage.getItem(IGNORE_KEY);
+      if (raw) setIgnored(new Set(JSON.parse(raw) as string[]));
+    } catch {
+      /* ignore */
+    }
+  }, []);
+
+  const persistIgnored = (next: Set<string>) => {
+    setIgnored(new Set(next));
+    try {
+      localStorage.setItem(IGNORE_KEY, JSON.stringify(Array.from(next)));
+    } catch {
+      /* ignore */
+    }
+  };
+
+  const toggleIgnore = (sig: string) => {
+    const next = new Set(ignored);
+    if (next.has(sig)) next.delete(sig);
+    else next.add(sig);
+    persistIgnored(next);
+  };
+
+  const clearIgnored = () => persistIgnored(new Set());
 
   // Restore previous results on mount.
   useEffect(() => {
