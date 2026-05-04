@@ -195,6 +195,24 @@ export function QuestionEditDialog({ topic, questionId, defaults, liveLink, onCl
           </div>
 
           {err && <p className="text-sm text-destructive">{err}</p>}
+          {savedOk && (
+            <div className="rounded-lg border border-emerald-200 bg-emerald-50 p-3 text-sm">
+              <p className="font-semibold text-emerald-800">Override saved.</p>
+              <p className="mt-1 text-emerald-700">
+                Browser/CDN caches may take a minute. Hard-refresh the live page to see the change.
+              </p>
+              {liveLink && (
+                <a
+                  href={liveLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-2 inline-block font-semibold text-emerald-800 underline"
+                >
+                  Verify on live site →
+                </a>
+              )}
+            </div>
+          )}
         </div>
 
         <div className="mt-6 flex items-center justify-between gap-2">
@@ -202,8 +220,12 @@ export function QuestionEditDialog({ topic, questionId, defaults, liveLink, onCl
             Reset to original
           </Button>
           <div className="flex gap-2">
-            <Button variant="outline" onClick={onClose} disabled={busy}>Cancel</Button>
-            <Button onClick={save} disabled={busy}>{busy ? "Saving…" : "Save override"}</Button>
+            <Button variant="outline" onClick={onClose} disabled={busy}>
+              {savedOk ? "Close" : "Cancel"}
+            </Button>
+            {!savedOk && (
+              <Button onClick={save} disabled={busy}>{busy ? "Saving…" : "Save override"}</Button>
+            )}
           </div>
         </div>
       </div>
