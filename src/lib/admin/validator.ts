@@ -4,6 +4,9 @@ export type Finding = {
   topic: string;
   questionId?: string;
   questionIndex?: number;
+  questionText?: string;
+  /** For duplicate-id / duplicate-text: list of all question IDs sharing the value. */
+  relatedIds?: string[];
   rule:
     | "duplicate-id"
     | "duplicate-text"
