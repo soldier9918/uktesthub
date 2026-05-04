@@ -91,8 +91,9 @@ export function QuestionEditDialog({ topic, questionId, defaults, liveLink, onCl
     setBusy(false);
     if (error) return setErr(error.message);
     invalidateOverrides();
-    sessionStorage.removeItem("admin-validator-results-v1");
-    sessionStorage.removeItem("admin-validator-results-v2");
+    // Note: do NOT clear validator results cache — we want the back button to
+    // return to the existing results list. Validator listens for the
+    // "question-overrides-invalidated" event and shows a stale notice instead.
     setSavedOk(true);
     onSaved();
   };
