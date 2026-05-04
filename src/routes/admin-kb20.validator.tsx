@@ -117,6 +117,47 @@ function Validator() {
     setLastRunAt(null);
   };
 
+  // Resolve any question id (e.g. "sa-mc-0017") to its topic and jump to the editor.
+  // First tries to match the id prefix against known topic slugs (fast path),
+  // then falls back to scanning all topic files until a match is found.
+  const lookupById = async () => {
+    const raw = lookupId.trim();
+    if (!raw) return;
+    setLookupBusy(true);
+    setLookupError(null);
+    try {
+      // Fast path: id prefix matches a topic slug or its first segment.
+      const guesses = allTopics
+        .map((t) => ({ topic: t, score: scoreGuess(t, raw) }))
+        .filter((g) => g.score > 0)
+        .sort((a, b) => b.score - a.score)
+        .map((g) => g.topic);
+      const ordered = [...new Set([...guesses, ...allTopics])];
+
+      for (const topic of ordered) {
+        const file = await loadTopicFileForAdmin(topic);
+        if (!file) continue;
+        const bank: AnyQ[] =
+          (file as { version?: number }).version === 2
+            ? ((file as { bank: AnyQ[] }).bank ?? [])
+            : ((file as { tests: { questions: AnyQ[] }[] }).tests ?? []).flatMap(
+                (t) => t.questions ?? [],
+              );
+        if (bank.some((q) => q.id === raw)) {
+          await navigate({
+            to: "/admin-kb20/questions/$topic",
+            params: { topic },
+            search: { q: raw, from: "validator" },
+          });
+          return;
+        }
+      }
+      setLookupError(`No question found with id "${raw}".`);
+    } finally {
+      setLookupBusy(false);
+    }
+  };
+
   const ruleCounts = useMemo(() => {
     const m = new Map<Finding["rule"], number>();
     for (const f of findings) m.set(f.rule, (m.get(f.rule) ?? 0) + 1);
