@@ -21,6 +21,7 @@ export const Route = createFileRoute("/admin-kb20/validator")({
 });
 
 type AnyQ = Record<string, unknown> & { id?: string; type?: string };
+type UsageEntry = { mockNumber: number; slot: number };
 
 // Heuristic: rank topic slugs against a question id so we probe the most
 // likely topic file first when looking an id up. Higher = more likely.
