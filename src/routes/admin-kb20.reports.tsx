@@ -138,7 +138,7 @@ function Reports() {
                   <td className="px-3 py-2 text-xs">
                     <Link
                       to="/admin-kb20/questions/$topic"
-                      params={{ topic: r.topic_slug }}
+                      params={{ topic: r.editTopicSlug }}
                       search={{ q: r.editQuestionId, edit: r.editQuestionId, from: "reports" }}
                       className="font-mono text-coral hover:underline"
                     >
@@ -171,7 +171,7 @@ function Reports() {
                   <td className="px-3 py-2 text-right whitespace-nowrap">
                     <Link
                       to="/admin-kb20/questions/$topic"
-                      params={{ topic: r.topic_slug }}
+                      params={{ topic: r.editTopicSlug }}
                       search={{ q: r.editQuestionId, edit: r.editQuestionId, from: "reports" }}
                       className="mr-2 inline-flex rounded-lg border border-coral bg-coral/10 px-2 py-1 text-xs font-semibold text-coral hover:bg-coral/15"
                     >
