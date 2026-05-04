@@ -311,7 +311,17 @@ function Validator() {
         return out;
       };
 
-      const rows: Record<string, unknown>[] = [];
+      const rows: {
+        topic: string;
+        question_id: string;
+        question: string | null;
+        options: unknown;
+        correct_answer: unknown;
+        explanation: string | null;
+        image: string | null;
+        image_alt: string | null;
+        updated_by: string | null;
+      }[] = [];
       for (const id of ids) {
         const q = byId.get(id);
         if (!q) continue;
