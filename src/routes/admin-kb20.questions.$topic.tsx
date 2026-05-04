@@ -215,6 +215,13 @@ function QuestionsBrowser() {
     return () => window.clearTimeout(t);
   }, [highlightId]);
 
+  // Auto-open the edit dialog when ?edit=<questionId> is present (e.g. from Reports).
+  useEffect(() => {
+    if (!editId) return;
+    const target = effectiveQuestions.find((q) => q.id === editId);
+    if (target) setEditing(target);
+  }, [editId, effectiveQuestions]);
+
   const types = useMemo(() => {
     const s = new Set<string>();
     effectiveQuestions.forEach((q: FlatQuestion) => s.add(q.type));
