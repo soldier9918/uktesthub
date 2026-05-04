@@ -240,6 +240,44 @@ function Validator() {
         )}
       </div>
 
+      <div className="mt-4 rounded-xl border border-border bg-card/50 p-3">
+        <form
+          onSubmit={(e) => {
+            e.preventDefault();
+            void lookupById();
+          }}
+          className="flex flex-wrap items-center gap-2"
+        >
+          <label htmlFor="id-lookup" className="text-sm font-semibold">
+            Find by ID
+          </label>
+          <input
+            id="id-lookup"
+            type="text"
+            value={lookupId}
+            onChange={(e) => {
+              setLookupId(e.target.value);
+              if (lookupError) setLookupError(null);
+            }}
+            placeholder="e.g. sa-mc-0017"
+            className="min-w-[220px] flex-1 rounded-md border border-border bg-background px-3 py-1.5 font-mono text-sm"
+          />
+          <button
+            type="submit"
+            disabled={lookupBusy || !lookupId.trim()}
+            className="rounded-md bg-foreground px-3 py-1.5 text-sm font-semibold text-background disabled:opacity-50"
+          >
+            {lookupBusy ? "Searching…" : "Open"}
+          </button>
+          <span className="text-xs text-muted-foreground">
+            Paste any question id to jump straight to it in the editor.
+          </span>
+        </form>
+        {lookupError && (
+          <p className="mt-2 text-xs text-destructive">{lookupError}</p>
+        )}
+      </div>
+
       {findings.length > 0 && (
         <div className="mt-4 flex flex-wrap gap-2">
           <FilterChip active={ruleFilter === "all"} onClick={() => setRuleFilter("all")}>
