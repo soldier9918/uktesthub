@@ -31,7 +31,7 @@ function PrivacyPage() {
       <p>
         UK Test Hub ("we", "us", "our") operates this website. We are the data
         controller for personal data collected through this site. Contact:{" "}
-        <a href="mailto:privacy@uktesthub.co.uk">privacy@uktesthub.co.uk</a>.
+        <a href="mailto:support@uktesthub.com">support@uktesthub.com</a>.
       </p>
 
       <h2>2. What data we collect</h2>

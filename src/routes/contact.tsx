@@ -29,7 +29,7 @@ function ContactPage() {
     >
       <h2>General enquiries</h2>
       <p>
-        Email: <a href="mailto:hello@uktesthub.co.uk">hello@uktesthub.co.uk</a>
+        Email: <a href="mailto:support@uktesthub.com">support@uktesthub.com</a>
       </p>
 
       <h2>Report an issue with a question</h2>
@@ -41,7 +41,7 @@ function ContactPage() {
       <h2>Press &amp; partnerships</h2>
       <p>
         For media or partnership opportunities, email{" "}
-        <a href="mailto:partners@uktesthub.co.uk">partners@uktesthub.co.uk</a>.
+        <a href="mailto:support@uktesthub.com">support@uktesthub.com</a>.
       </p>
 
       <h2>Response times</h2>

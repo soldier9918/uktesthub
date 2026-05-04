@@ -30,7 +30,7 @@ function FeedbackPage() {
       <h2>Send us your thoughts</h2>
       <p>
         Email{" "}
-        <a href="mailto:feedback@uktesthub.co.uk">feedback@uktesthub.co.uk</a>
+        <a href="mailto:support@uktesthub.com">support@uktesthub.com</a>
         . Useful things to include:
       </p>
       <ul>
@@ -54,8 +54,8 @@ function FeedbackPage() {
           <Link to="/report">Report a Question</Link> instead.
         </li>
         <li>
-          Accessibility barriers — please email
-          accessibility@uktesthub.co.uk so we can prioritise a fix.
+          Accessibility barriers — please email{" "}
+          <a href="mailto:support@uktesthub.com">support@uktesthub.com</a> so we can prioritise a fix.
         </li>
         <li>
           Press or partnership enquiries —{" "}

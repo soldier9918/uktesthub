@@ -38,7 +38,7 @@ function ReportPage() {
       <h2>How to report</h2>
       <p>
         Email{" "}
-        <a href="mailto:reports@uktesthub.co.uk">reports@uktesthub.co.uk</a>{" "}
+        <a href="mailto:support@uktesthub.com">support@uktesthub.com</a>{" "}
         with the following details:
       </p>
       <ul>
