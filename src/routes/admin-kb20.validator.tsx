@@ -352,7 +352,11 @@ function Validator() {
             </summary>
             <ul className="mt-3 space-y-2 text-sm">
               {list.map((f, i) => (
-                <FindingRow key={i} finding={f} />
+                <FindingRow
+                  key={i}
+                  finding={f}
+                  usage={usageByTopic.get(f.topic)}
+                />
               ))}
             </ul>
           </details>
