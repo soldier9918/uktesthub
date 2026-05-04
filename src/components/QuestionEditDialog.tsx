@@ -17,11 +17,13 @@ type Props = {
     image?: string;
     imageAlt?: string;
   };
+  /** Optional deep link to verify on the live site (e.g. /quiz/foo-mock-25#q5). */
+  liveLink?: string;
   onClose: () => void;
   onSaved: () => void;
 };
 
-export function QuestionEditDialog({ topic, questionId, defaults, onClose, onSaved }: Props) {
+export function QuestionEditDialog({ topic, questionId, defaults, liveLink, onClose, onSaved }: Props) {
   const { user } = useAuth();
   const [existing, setExisting] = useState<QuestionOverride | null>(null);
   const [question, setQuestion] = useState(defaults.question);
