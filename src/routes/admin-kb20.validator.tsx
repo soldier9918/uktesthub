@@ -234,6 +234,14 @@ function FindingRow({ finding }: { finding: Finding }) {
       {finding.questionText && (
         <p className="mt-2 text-sm text-foreground">{finding.questionText}</p>
       )}
+      {finding.sample && (
+        <div className="mt-2 rounded border border-amber-500/40 bg-amber-500/10 p-2">
+          <div className="text-[10px] uppercase tracking-wide text-amber-700 dark:text-amber-400">
+            Offending snippet{finding.field ? ` · ${finding.field}` : ""}
+          </div>
+          <p className="mt-1 break-all font-mono text-xs">{finding.sample}</p>
+        </div>
+      )}
       {isDuplicate && finding.relatedIds && finding.relatedIds.length > 0 && (
         <div className="mt-2">
           <div className="text-[10px] uppercase tracking-wide text-muted-foreground">
