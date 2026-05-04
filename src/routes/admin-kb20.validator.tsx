@@ -395,8 +395,16 @@ function FilterChip({
   );
 }
 
-function FindingRow({ finding }: { finding: Finding }) {
+function FindingRow({
+  finding,
+  usage,
+}: {
+  finding: Finding;
+  usage?: Map<string, number[]>;
+}) {
   const isDuplicate = finding.rule === "duplicate-id" || finding.rule === "duplicate-text";
+  const mocks =
+    finding.questionId && usage ? (usage.get(finding.questionId) ?? []) : [];
   return (
     <li className="rounded-md border border-border/60 bg-background/50 p-3">
       <div className="flex flex-wrap items-center gap-2">
@@ -413,6 +421,29 @@ function FindingRow({ finding }: { finding: Finding }) {
         )}
         <span className="text-xs text-muted-foreground">{finding.message}</span>
       </div>
+      {finding.questionId && (
+        <div className="mt-1.5 flex flex-wrap items-center gap-1 text-[10px] text-muted-foreground">
+          {mocks.length === 0 ? (
+            <span className="italic">Not used in any mock test (orphan)</span>
+          ) : (
+            <>
+              <span>Live in:</span>
+              {mocks.map((n) => (
+                <a
+                  key={n}
+                  href={`/quiz/${finding.topic}-mock-${n}`}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="rounded border border-border bg-card px-1.5 py-0.5 font-mono text-coral hover:border-coral hover:bg-coral/5"
+                  title={`Open ${finding.topic} Mock Test ${n} on the live site (new tab)`}
+                >
+                  Mock {n}
+                </a>
+              ))}
+            </>
+          )}
+        </div>
+      )}
       {finding.questionText && (
         <p className="mt-2 text-sm text-foreground">{finding.questionText}</p>
       )}
