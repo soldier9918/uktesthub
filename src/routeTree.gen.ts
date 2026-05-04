@@ -54,6 +54,7 @@ import { Route as AdminKb20LoginRouteImport } from './routes/admin-kb20.login'
 import { Route as AdminKb20ImportExportRouteImport } from './routes/admin-kb20.import-export'
 import { Route as AdminKb20ImagesRouteImport } from './routes/admin-kb20.images'
 import { Route as AdminKb20DiagnosticsRouteImport } from './routes/admin-kb20.diagnostics'
+import { Route as AdminKb20BulkEditRouteImport } from './routes/admin-kb20.bulk-edit'
 import { Route as AdminKb20AnalyticsRouteImport } from './routes/admin-kb20.analytics'
 import { Route as AdminKb20AdsRouteImport } from './routes/admin-kb20.ads'
 import { Route as AdminKb20QuestionsIndexRouteImport } from './routes/admin-kb20.questions.index'
@@ -285,6 +286,11 @@ const AdminKb20DiagnosticsRoute = AdminKb20DiagnosticsRouteImport.update({
   path: '/admin-kb20/diagnostics',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AdminKb20BulkEditRoute = AdminKb20BulkEditRouteImport.update({
+  id: '/admin-kb20/bulk-edit',
+  path: '/admin-kb20/bulk-edit',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AdminKb20AnalyticsRoute = AdminKb20AnalyticsRouteImport.update({
   id: '/admin-kb20/analytics',
   path: '/admin-kb20/analytics',
@@ -342,6 +348,7 @@ export interface FileRoutesByFullPath {
   '/terms': typeof TermsRoute
   '/admin-kb20/ads': typeof AdminKb20AdsRoute
   '/admin-kb20/analytics': typeof AdminKb20AnalyticsRoute
+  '/admin-kb20/bulk-edit': typeof AdminKb20BulkEditRoute
   '/admin-kb20/diagnostics': typeof AdminKb20DiagnosticsRoute
   '/admin-kb20/images': typeof AdminKb20ImagesRoute
   '/admin-kb20/import-export': typeof AdminKb20ImportExportRoute
@@ -393,6 +400,7 @@ export interface FileRoutesByTo {
   '/terms': typeof TermsRoute
   '/admin-kb20/ads': typeof AdminKb20AdsRoute
   '/admin-kb20/analytics': typeof AdminKb20AnalyticsRoute
+  '/admin-kb20/bulk-edit': typeof AdminKb20BulkEditRoute
   '/admin-kb20/diagnostics': typeof AdminKb20DiagnosticsRoute
   '/admin-kb20/images': typeof AdminKb20ImagesRoute
   '/admin-kb20/import-export': typeof AdminKb20ImportExportRoute
@@ -446,6 +454,7 @@ export interface FileRoutesById {
   '/terms': typeof TermsRoute
   '/admin-kb20/ads': typeof AdminKb20AdsRoute
   '/admin-kb20/analytics': typeof AdminKb20AnalyticsRoute
+  '/admin-kb20/bulk-edit': typeof AdminKb20BulkEditRoute
   '/admin-kb20/diagnostics': typeof AdminKb20DiagnosticsRoute
   '/admin-kb20/images': typeof AdminKb20ImagesRoute
   '/admin-kb20/import-export': typeof AdminKb20ImportExportRoute
@@ -500,6 +509,7 @@ export interface FileRouteTypes {
     | '/terms'
     | '/admin-kb20/ads'
     | '/admin-kb20/analytics'
+    | '/admin-kb20/bulk-edit'
     | '/admin-kb20/diagnostics'
     | '/admin-kb20/images'
     | '/admin-kb20/import-export'
@@ -551,6 +561,7 @@ export interface FileRouteTypes {
     | '/terms'
     | '/admin-kb20/ads'
     | '/admin-kb20/analytics'
+    | '/admin-kb20/bulk-edit'
     | '/admin-kb20/diagnostics'
     | '/admin-kb20/images'
     | '/admin-kb20/import-export'
@@ -603,6 +614,7 @@ export interface FileRouteTypes {
     | '/terms'
     | '/admin-kb20/ads'
     | '/admin-kb20/analytics'
+    | '/admin-kb20/bulk-edit'
     | '/admin-kb20/diagnostics'
     | '/admin-kb20/images'
     | '/admin-kb20/import-export'
@@ -656,6 +668,7 @@ export interface RootRouteChildren {
   TermsRoute: typeof TermsRoute
   AdminKb20AdsRoute: typeof AdminKb20AdsRoute
   AdminKb20AnalyticsRoute: typeof AdminKb20AnalyticsRoute
+  AdminKb20BulkEditRoute: typeof AdminKb20BulkEditRoute
   AdminKb20DiagnosticsRoute: typeof AdminKb20DiagnosticsRoute
   AdminKb20ImagesRoute: typeof AdminKb20ImagesRoute
   AdminKb20ImportExportRoute: typeof AdminKb20ImportExportRoute
@@ -994,6 +1007,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AdminKb20DiagnosticsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/admin-kb20/bulk-edit': {
+      id: '/admin-kb20/bulk-edit'
+      path: '/admin-kb20/bulk-edit'
+      fullPath: '/admin-kb20/bulk-edit'
+      preLoaderRoute: typeof AdminKb20BulkEditRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/admin-kb20/analytics': {
       id: '/admin-kb20/analytics'
       path: '/admin-kb20/analytics'
@@ -1074,6 +1094,7 @@ const rootRouteChildren: RootRouteChildren = {
   TermsRoute: TermsRoute,
   AdminKb20AdsRoute: AdminKb20AdsRoute,
   AdminKb20AnalyticsRoute: AdminKb20AnalyticsRoute,
+  AdminKb20BulkEditRoute: AdminKb20BulkEditRoute,
   AdminKb20DiagnosticsRoute: AdminKb20DiagnosticsRoute,
   AdminKb20ImagesRoute: AdminKb20ImagesRoute,
   AdminKb20ImportExportRoute: AdminKb20ImportExportRoute,

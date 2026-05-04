@@ -17,11 +17,13 @@ type Props = {
     image?: string;
     imageAlt?: string;
   };
+  /** Optional deep link to verify on the live site (e.g. /quiz/foo-mock-25#q5). */
+  liveLink?: string;
   onClose: () => void;
   onSaved: () => void;
 };
 
-export function QuestionEditDialog({ topic, questionId, defaults, onClose, onSaved }: Props) {
+export function QuestionEditDialog({ topic, questionId, defaults, liveLink, onClose, onSaved }: Props) {
   const { user } = useAuth();
   const [existing, setExisting] = useState<QuestionOverride | null>(null);
   const [question, setQuestion] = useState(defaults.question);
@@ -34,6 +36,7 @@ export function QuestionEditDialog({ topic, questionId, defaults, onClose, onSav
   const [imageAlt, setImageAlt] = useState<string>(defaults.imageAlt ?? "");
   const [busy, setBusy] = useState(false);
   const [err, setErr] = useState<string | null>(null);
+  const [savedOk, setSavedOk] = useState(false);
   const fileRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
@@ -88,8 +91,8 @@ export function QuestionEditDialog({ topic, questionId, defaults, onClose, onSav
     setBusy(false);
     if (error) return setErr(error.message);
     invalidateOverrides();
+    setSavedOk(true);
     onSaved();
-    onClose();
   };
 
   const reset = async () => {
@@ -192,6 +195,24 @@ export function QuestionEditDialog({ topic, questionId, defaults, onClose, onSav
           </div>
 
           {err && <p className="text-sm text-destructive">{err}</p>}
+          {savedOk && (
+            <div className="rounded-lg border border-emerald-200 bg-emerald-50 p-3 text-sm">
+              <p className="font-semibold text-emerald-800">Override saved.</p>
+              <p className="mt-1 text-emerald-700">
+                Browser/CDN caches may take a minute. Hard-refresh the live page to see the change.
+              </p>
+              {liveLink && (
+                <a
+                  href={liveLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-2 inline-block font-semibold text-emerald-800 underline"
+                >
+                  Verify on live site →
+                </a>
+              )}
+            </div>
+          )}
         </div>
 
         <div className="mt-6 flex items-center justify-between gap-2">
@@ -199,8 +220,12 @@ export function QuestionEditDialog({ topic, questionId, defaults, onClose, onSav
             Reset to original
           </Button>
           <div className="flex gap-2">
-            <Button variant="outline" onClick={onClose} disabled={busy}>Cancel</Button>
-            <Button onClick={save} disabled={busy}>{busy ? "Saving…" : "Save override"}</Button>
+            <Button variant="outline" onClick={onClose} disabled={busy}>
+              {savedOk ? "Close" : "Cancel"}
+            </Button>
+            {!savedOk && (
+              <Button onClick={save} disabled={busy}>{busy ? "Saving…" : "Save override"}</Button>
+            )}
           </div>
         </div>
       </div>

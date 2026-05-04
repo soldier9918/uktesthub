@@ -1,106 +1,88 @@
+## Problem
 
-# Admin Panel — Phase 1
+Edits saved in the admin panel never appear on the live site. Root cause confirmed:
 
-Build the 5 highest-impact modules now. Modules 3, 4, 5, 6 (partial), 7 (partial), 10, 12 are deferred to a later phase and tracked in the admin home as "Coming next".
+- Overrides in the DB are keyed by the **bank ID** (e.g. `sa-mc-0017`).
+- But `src/data/mocks/index.ts` → `rawToQuestion(raw, idx)` builds the runtime `Question` with `id: idx + 1` (a number 1..24), **dropping the original bank id**.
+- At runtime `applyOverrides` looks up `topic::1`, `topic::2`, ... and never matches `topic::sa-mc-0017`. So the strange `控制` character (and any other admin edit) keeps showing on the live mock.
 
-Existing admin lives at `/admin-kb20` and is gated by `AdminGate` + `has_role(admin)`. We extend that, not replace it.
+RLS on `question_overrides` is correct (anon read allowed), so this is purely a data-mapping bug.
 
-## What gets built
+## Plan
 
-### 1. Mock Test Manager — `/admin-kb20/mocks`
-- Lists all categories → topics (from `src/data/categories.ts`) with mock count and per-mock question count, sourced from the existing `public/mocks/diagnostics.json` + per-topic JSON.
-- Per-mock row: title, question count, status badge, "Disable / Enable" toggle.
-- Disabled state stored in new `mock_overrides` table (`topic_slug`, `mock_slug`, `disabled bool`). Quiz routes already filter via a small helper — we add a check against this table.
+### 1. Fix override application (the real bug)
 
-### 8. Reported Questions — `/admin-kb20/reports`
-- New `question_reports` table: `id, question_id, topic_slug, mock_slug, reason, details, status (open|fixed|dismissed), reporter_user_id (nullable), created_at, resolved_at, resolved_by`.
-- Add a "Report this question" button inside the quiz UI (`src/routes/quiz.$slug.tsx`) → modal with reason dropdown (wrong answer / typo / broken image / other) + free text. Logged-in users tracked; anonymous allowed.
-- Admin queue: list with filters (open/all/fixed), each row links to `/admin-kb20/questions/{topic}?focus={questionId}` for one-click edit, plus "Mark fixed" / "Dismiss" actions.
+**`src/data/mocks/index.ts`**
+- In `rawToQuestion`, also carry the source bank id onto the runtime question:
+  - Add `sourceId: (raw as { id?: string }).id` to every returned question shape (extra field, doesn't break the `Question` union since consumers ignore unknown fields).
+- For v1 files where raw questions have no `id`, fall back to a deterministic synthesised id (e.g. the topic prefix + slot number) so we still have a stable key.
 
-### 2. Question Bank Validator — `/admin-kb20/validator`
-- Client-side scan over the same mock JSON the diagnostics page already loads. Flags:
-  - Duplicate question IDs and duplicate question text within a topic.
-  - Missing/empty `explanation`.
-  - Invalid `correctAnswer` index (out of range / wrong type for question type).
-  - Image referenced but missing from `image-inventory.json`.
-  - Type field missing or unrecognised.
-- Grouped by topic with counts; each row links to the question editor.
-- "Download report" button → JSON file of all findings (feeds module 9).
+**`src/lib/overrides.ts`**
+- In `applyOverrides`, look up by `sourceId` first, then fall back to numeric `id` for backward compatibility:
+  ```ts
+  const srcId = (q as { sourceId?: string }).sourceId;
+  const o = (srcId && map.get(key(quiz.topic, srcId))) || map.get(key(quiz.topic, String(q.id)));
+  ```
 
-### 9. Import / Export — `/admin-kb20/import-export`
-- Export: pick a topic → download the merged JSON (bank + mocks) currently served. Also "Download validation report" button (reuses validator output).
-- Import: upload a JSON file matching the v2 bank shape. Validate against the same rules as the validator before accepting; on success, write entries to `question_overrides` so changes apply immediately without redeploy. Show a dry-run diff (added / changed / unchanged) before committing.
+### 2. Verification helper in admin
 
-### 11. System Health — `/admin-kb20/system`
-- Build version: read `import.meta.env.VITE_BUILD_SHA` (set via Vite define) + build timestamp baked at build time.
-- Last deploy time: same source.
-- Worker errors: last 50 entries from existing `runtime_logs` table where level in (error, warn).
-- Sitemap status: HEAD `/sitemap.xml` and `/robots.txt`, show status code + last-modified.
-- Broken routes: hits the existing missing-image diagnostics + a small static list of expected top-level routes pinged via `fetch(..., { method: 'HEAD' })`.
+In `QuestionEditDialog` after a successful save, show a green confirmation line with the live deep link (`/quiz/<topic>-mock-<n>#q<slot>`) for the **first** mock the question is used in, plus a "View on live site" button. This gives an immediate one-click verification that the edit took effect.
 
-### Admin home update
-Update `/admin-kb20` to surface the new sections plus a "Phase 2 (planned)" list naming the deferred modules so nothing looks missing.
+### 3. Bulk edit feature
 
-## Database changes (one migration)
+**New route: `src/routes/admin-kb20.bulk-edit.tsx`** (linked from `admin-kb20.questions.$topic.tsx`)
 
-```sql
-create table public.mock_overrides (
-  id uuid primary key default gen_random_uuid(),
-  topic_slug text not null,
-  mock_slug text not null,
-  disabled boolean not null default false,
-  updated_by uuid,
-  updated_at timestamptz not null default now(),
-  unique (topic_slug, mock_slug)
-);
-alter table public.mock_overrides enable row level security;
-create policy "Anyone can read mock overrides" on public.mock_overrides
-  for select using (true);
-create policy "Admins can write mock overrides" on public.mock_overrides
-  for all to authenticated
-  using (has_role(auth.uid(), 'admin')) with check (has_role(auth.uid(), 'admin'));
+Workflow:
+1. Pick a topic (dropdown of all topics).
+2. Loads the topic file and runs the same flatten step used by the topic editor.
+3. **Find & replace panel**:
+   - "Find" text input
+   - "Replace with" text input
+   - Scope checkboxes: question text, options, explanation
+   - "Match case" toggle, "Whole word" toggle
+   - "Preview matches" button — lists every question that would change with a side-by-side diff (before → after).
+   - "Apply to N questions" button — upserts one `question_overrides` row per affected question (using the bank id we now preserve from step 1) in batches of 50.
+4. **Specific character cleanup quick-action**: a one-click button "Strip non-Latin / control chars" that scans options + question text for any character outside the printable ASCII + common punctuation set and proposes removals (this directly fixes the `控制` style issue across the whole bank).
+5. Result toast shows how many overrides were written and a link back to the validator.
 
-create table public.question_reports (
-  id uuid primary key default gen_random_uuid(),
-  question_id text not null,
-  topic_slug text not null,
-  mock_slug text,
-  reason text not null,
-  details text,
-  status text not null default 'open',  -- open | fixed | dismissed
-  reporter_user_id uuid,
-  created_at timestamptz not null default now(),
-  resolved_at timestamptz,
-  resolved_by uuid
-);
-alter table public.question_reports enable row level security;
-create policy "Anyone can file a report" on public.question_reports
-  for insert with check (true);
-create policy "Admins read reports" on public.question_reports
-  for select to authenticated using (has_role(auth.uid(), 'admin'));
-create policy "Admins update reports" on public.question_reports
-  for update to authenticated
-  using (has_role(auth.uid(), 'admin')) with check (has_role(auth.uid(), 'admin'));
-create index on public.question_reports (status, created_at desc);
-```
+Saves invalidate the overrides cache so the next live page load reflects the change.
 
-A status-trigger sets `resolved_at` / `resolved_by` automatically when an admin moves a report out of `open`.
+### 4. Remove Lovable references from product code
 
-## Files (new)
+Strip every user-facing or non-essential mention of "Lovable" from app code. Files touched:
+
+- `src/integrations/supabase/client.ts`, `src/integrations/supabase/client.server.ts`, `src/integrations/supabase/auth-middleware.ts` — change error message `"Connect Supabase in Lovable Cloud."` → `"Backend is not configured."`.
+- `src/routes/signup.tsx`, `src/routes/signin.tsx` — these import `lovable` from `@/integrations/lovable` for Google OAuth. Replace with `supabase.auth.signInWithOAuth({ provider: "google" })` directly so no `lovable` import is needed in product routes.
+- `src/integrations/lovable/index.ts` — leave the file in place (it's auto-generated and used by the platform) but remove all imports of it from product code.
+- `src/routes/lovable/email/queue/process.ts` — internal queue processor; rename references in comments/strings only where they are user-visible. The package import `@lovable.dev/email-js` stays (it's the email SDK), but UI strings like log labels are scrubbed.
+- `src/routeTree.gen.ts` — auto-generated, not edited.
+
+Will also grep the whole `src/` tree one more time during implementation to catch anything missed.
+
+### 5. Republish reminder
+
+Steps 1, 2, 4 are frontend changes — the user must click **Publish → Update** for them to appear on `uktesthub.com`. Step 3 (admin route) is also frontend. No DB migrations needed.
+
+## Technical notes
 
 ```text
-src/routes/admin-kb20.mocks.tsx
-src/routes/admin-kb20.reports.tsx
-src/routes/admin-kb20.validator.tsx
-src/routes/admin-kb20.import-export.tsx
-src/routes/admin-kb20.system.tsx
-src/components/ReportQuestionButton.tsx     // shown on quiz pages
-src/lib/admin/validator.ts                  // shared scan logic
-src/lib/admin/mock-status.ts                // reads mock_overrides for runtime gate
+runtime question shape after fix
+─────────────────────────────────
+{ id: 5,                  // slot in this mock (1..24)
+  sourceId: "sa-mc-0017", // ← new: stable bank id used by overrides
+  type: "mcq", ... }
+
+override lookup
+─────────────────────────────────
+1. try map.get("safeguarding-adults::sa-mc-0017")  ← matches
+2. else map.get("safeguarding-adults::5")          ← legacy fallback
 ```
 
-Touched: `src/routes/admin-kb20.index.tsx` (new tiles + planned list), `src/routes/quiz.$slug.tsx` (Report button), `vite.config.ts` (inject build SHA/time), one new migration.
-
-## Out of scope (Phase 2 — call out on admin home only)
-
-3 Image Asset Manager · 4 SEO Manager · 5 Blog Manager · 6 Analytics Dashboard (needs `quiz_events` table — confirmed) · 7 User Progress Dashboard · 10 AdSense Manager · 12 Security Settings (allowlist + path stays as-is per your answer).
+Files to create/edit:
+- edit `src/data/mocks/index.ts`
+- edit `src/lib/overrides.ts`
+- edit `src/components/QuestionEditDialog.tsx`
+- create `src/routes/admin-kb20.bulk-edit.tsx`
+- edit `src/routes/admin-kb20.index.tsx` (add nav link to bulk edit)
+- edit `src/routes/signin.tsx`, `src/routes/signup.tsx`
+- edit `src/integrations/supabase/client.ts`, `client.server.ts`, `auth-middleware.ts`

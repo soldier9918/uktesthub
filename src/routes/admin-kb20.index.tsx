@@ -23,6 +23,8 @@ export const Route = createFileRoute("/admin-kb20/")({
             desc="Review user-reported issues, mark fixed, jump to the question editor." />
           <Tile to="/admin-kb20/questions" title="Edit questions & images"
             desc="Reword any question, change correct answers, upload replacement images." />
+          <Tile to="/admin-kb20/bulk-edit" title="Bulk find & replace"
+            desc="Run find-and-replace across an entire topic, or strip non-Latin / control characters in one click." />
           <Tile to="/admin-kb20/import-export" title="Import / Export"
             desc="Export topic JSON or download a validation report. Upload bank files to apply overrides." />
           <Tile to="/admin-kb20/images" title="Image Asset Manager"
