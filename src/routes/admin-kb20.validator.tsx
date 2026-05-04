@@ -311,17 +311,18 @@ function Validator() {
         return out;
       };
 
-      const rows: {
+      type Row = {
         topic: string;
         question_id: string;
         question: string | null;
-        options: unknown;
-        correct_answer: unknown;
+        options: string[] | null;
+        correct_answer: number | number[] | boolean | null;
         explanation: string | null;
         image: string | null;
         image_alt: string | null;
         updated_by: string | null;
-      }[] = [];
+      };
+      const rows: Row[] = [];
       for (const id of ids) {
         const q = byId.get(id);
         if (!q) continue;
