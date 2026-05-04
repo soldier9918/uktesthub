@@ -127,11 +127,12 @@ function flatten(file: AnyFile): FlatQuestion[] {
   return out;
 }
 
-type EditorSearch = { q?: string };
+type EditorSearch = { q?: string; from?: "validator" };
 
 export const Route = createFileRoute("/admin-kb20/questions/$topic")({
   validateSearch: (raw: Record<string, unknown>): EditorSearch => ({
     q: typeof raw.q === "string" && raw.q.length > 0 ? raw.q : undefined,
+    from: raw.from === "validator" ? "validator" : undefined,
   }),
   loader: async ({ params }) => {
     const file = (await loadTopicFileForAdmin(params.topic)) as AnyFile | undefined;
@@ -168,7 +169,8 @@ const PAGE_SIZE = 25;
 
 function QuestionsBrowser() {
   const { topic, questions } = Route.useLoaderData();
-  const initialSearch = Route.useSearch().q ?? "";
+  const { q: initialQ, from } = Route.useSearch();
+  const initialSearch = initialQ ?? "";
   const [search, setSearch] = useState(initialSearch);
   const [type, setType] = useState<string>("all");
   const [imageFilter, setImageFilter] = useState<"all" | "with" | "without">("all");
@@ -234,12 +236,21 @@ function QuestionsBrowser() {
       <main className="mx-auto max-w-6xl px-4 py-6">
         <div className="flex items-center justify-between gap-4">
           <div>
-            <Link
-              to="/admin-kb20/questions"
-              className="text-xs text-muted-foreground hover:underline"
-            >
-              ← All topics
-            </Link>
+            {from === "validator" ? (
+              <Link
+                to="/admin-kb20/validator"
+                className="inline-flex items-center gap-1 text-xs font-semibold text-coral hover:underline"
+              >
+                ← Back to validator
+              </Link>
+            ) : (
+              <Link
+                to="/admin-kb20/questions"
+                className="text-xs text-muted-foreground hover:underline"
+              >
+                ← All topics
+              </Link>
+            )}
             <h1 className="font-display text-2xl font-bold">{topic}</h1>
             <p className="text-xs text-muted-foreground">
               {stats.total} questions · {stats.withImg} with images ·{" "}
