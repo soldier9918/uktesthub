@@ -122,14 +122,15 @@ export function AdSlot({
 
   // Push to AdSense queue once visible
   useEffect(() => {
-    if (!ADSENSE_ENABLED || !visible || !slotId) return;
+    if (!ADSENSE_ENABLED || !visible || !effectiveSlotId) return;
+    if (settings?.hide_ads_globally || settings?.preview_without_ads) return;
+    if (slotKey && !slotEnabled) return;
     loadAdsenseScript();
     try {
       (window.adsbygoogle = window.adsbygoogle || []).push({});
     } catch {
       // ignore
     }
-    // Detect fill — if AdSense fills the slot it sets data-ad-status
     const node = ref.current?.querySelector("ins.adsbygoogle") as
       | HTMLElement
       | null;
@@ -146,17 +147,19 @@ export function AdSlot({
       mo.disconnect();
       window.clearTimeout(t);
     };
-  }, [visible, slotId]);
+  }, [visible, effectiveSlotId, settings, slotKey, slotEnabled]);
 
-  // No AdSense configured → render nothing so unfilled slots don't create
-  // empty whitespace that misaligns the surrounding layout. Once AdSense is
-  // enabled and ads start filling, real reserved space returns.
+  // Admin kill-switches
+  if (settings?.hide_ads_globally) return null;
+  if (settings?.preview_without_ads) return null;
+  // Slot-level disable
+  if (slotKey && !slotEnabled) return null;
+
   if (!ADSENSE_ENABLED) {
     return null;
   }
 
-  // Missing slotId in production → render nothing
-  if (!slotId) return null;
+  if (!effectiveSlotId) return null;
 
   return (
     <div
@@ -171,7 +174,7 @@ export function AdSlot({
           className="adsbygoogle"
           style={{ display: "block" }}
           data-ad-client={ADSENSE_CLIENT_ID}
-          data-ad-slot={slotId}
+          data-ad-slot={effectiveSlotId}
           data-ad-format={format}
           data-full-width-responsive={responsive ? "true" : "false"}
         />
