@@ -8,13 +8,13 @@ export async function logAdminAction(
 ) {
   try {
     const { data: u } = await supabase.auth.getUser();
-    await supabase.from("admin_audit_log").insert({
+    await supabase.from("admin_audit_log").insert([{
       actor_user_id: u?.user?.id ?? null,
       actor_email: u?.user?.email ?? null,
       action,
       target: target ?? null,
-      detail: detail ?? null,
-    });
+      detail: (detail ?? null) as never,
+    }]);
   } catch {
     // ignore
   }
