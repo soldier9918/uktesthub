@@ -407,12 +407,6 @@ function Validator() {
     }
   };
 
-  const ruleCounts = useMemo(() => {
-    const m = new Map<Finding["rule"], number>();
-    for (const f of visibleFindings) m.set(f.rule, (m.get(f.rule) ?? 0) + 1);
-    return m;
-  }, [visibleFindings]);
-
   const findingSig = (f: Finding) =>
     `${f.topic}|${f.rule}|${f.questionId ?? ""}|${f.field ?? ""}|${(f.relatedIds ?? []).join(",")}`;
 
@@ -420,6 +414,12 @@ function Validator() {
     () => (showIgnored ? findings : findings.filter((f) => !ignored.has(findingSig(f)))),
     [findings, ignored, showIgnored],
   );
+
+  const ruleCounts = useMemo(() => {
+    const m = new Map<Finding["rule"], number>();
+    for (const f of visibleFindings) m.set(f.rule, (m.get(f.rule) ?? 0) + 1);
+    return m;
+  }, [visibleFindings]);
 
   const filtered = useMemo(
     () => (ruleFilter === "all" ? visibleFindings : visibleFindings.filter((f) => f.rule === ruleFilter)),
