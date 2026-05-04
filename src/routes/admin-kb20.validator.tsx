@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { AdminGate } from "@/components/AdminGate";
 import { categories } from "@/data/categories";
 import { loadTopicFileForAdmin } from "@/data/mocks";
