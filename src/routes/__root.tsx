@@ -4,6 +4,7 @@ import appCss from "../styles.css?url";
 import { organizationSchema, websiteSchema, SITE_URL } from "@/lib/seo";
 import { StickyAdSlot } from "@/components/AdSlot";
 import { AuthProvider } from "@/lib/auth-context";
+import { PageViewTracker } from "@/components/PageViewTracker";
 
 function NotFoundComponent() {
   return (
@@ -88,6 +89,7 @@ function RootShell({ children }: { children: React.ReactNode }) {
 function RootComponent() {
   return (
     <AuthProvider>
+      <PageViewTracker />
       <Outlet />
       <StickyAdSlot />
     </AuthProvider>
