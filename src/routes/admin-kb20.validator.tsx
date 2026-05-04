@@ -6,6 +6,9 @@ import { loadTopicFileForAdmin } from "@/data/mocks";
 import { validateTopicBank, type Finding } from "@/lib/admin/validator";
 import { applyOverrideToQuestionRecord, invalidateOverrides, loadOverrides } from "@/lib/overrides";
 import { Badge } from "@/components/ui/badge";
+import { supabase } from "@/integrations/supabase/client";
+import { useAuth } from "@/lib/auth-context";
+import { hasArtifacts, hasWeirdChars, stripArtifacts, stripWeird } from "@/lib/admin/text-cleanup";
 
 export const Route = createFileRoute("/admin-kb20/validator")({
   head: () => ({
@@ -52,6 +55,9 @@ const RULE_LABEL: Record<Finding["rule"], string> = {
 };
 
 function Validator() {
+  const { user } = useAuth();
+  const [bulkBusyTopic, setBulkBusyTopic] = useState<string | null>(null);
+  const [bulkMessage, setBulkMessage] = useState<string | null>(null);
   const allTopics = useMemo(
     () => categories.flatMap((c) => c.topics.map((t) => t.slug)),
     [],
@@ -261,6 +267,115 @@ function Validator() {
     }
   };
 
+  // Bulk-clean: for every finding in `topic` whose rule is suspicious-characters
+  // or json-code-artifact, reload the source question, strip the dirty bits from
+  // question/options/explanation, and upsert an override. Then re-run validation.
+  const bulkCleanTopic = async (topic: string) => {
+    const targets = findings.filter(
+      (f) =>
+        f.topic === topic &&
+        (f.rule === "suspicious-characters" || f.rule === "json-code-artifact"),
+    );
+    if (targets.length === 0) return;
+    if (
+      !window.confirm(
+        `Strip suspicious characters and JSON artifacts from ${targets.length} question(s) in "${topic}"?\n\nThis writes per-question overrides and updates the live site immediately.`,
+      )
+    )
+      return;
+
+    setBulkBusyTopic(topic);
+    setBulkMessage(null);
+    try {
+      const file = await loadTopicFileForAdmin(topic);
+      if (!file) throw new Error("Could not load topic file");
+      const isV2 = (file as { version?: number }).version === 2;
+      const rawBank: AnyQ[] = isV2
+        ? ((file as { bank: AnyQ[] }).bank ?? [])
+        : ((file as { tests: { questions: AnyQ[] }[] }).tests ?? []).flatMap(
+            (t) => t.questions ?? [],
+          );
+      const overrides = await loadOverrides();
+      const merged = rawBank.map((q) =>
+        q.id ? applyOverrideToQuestionRecord(q, overrides.get(`${topic}::${q.id}`)) : q,
+      );
+      const byId = new Map<string, AnyQ>();
+      for (const q of merged) if (q.id) byId.set(q.id as string, q);
+
+      const ids = Array.from(new Set(targets.map((t) => t.questionId).filter(Boolean) as string[]));
+      const clean = (s: unknown): string | undefined => {
+        if (typeof s !== "string") return undefined;
+        let out = s;
+        if (hasArtifacts(out)) out = stripArtifacts(out);
+        if (hasWeirdChars(out)) out = stripWeird(out);
+        return out;
+      };
+
+      type Row = {
+        topic: string;
+        question_id: string;
+        question: string | null;
+        options: string[] | null;
+        correct_answer: number | number[] | boolean | null;
+        explanation: string | null;
+        image: string | null;
+        image_alt: string | null;
+        updated_by: string | null;
+      };
+      const rows: Row[] = [];
+      for (const id of ids) {
+        const q = byId.get(id);
+        if (!q) continue;
+        const prev = overrides.get(`${topic}::${id}`);
+        const qText =
+          (q.question as string | undefined) ??
+          (q.template as string | undefined) ??
+          (q.prompt as string | undefined);
+        const newQ = clean(qText);
+        const opts = q.options as unknown[] | undefined;
+        const newOpts: string[] | null = Array.isArray(opts)
+          ? opts.map((o) => (typeof o === "string" ? clean(o) ?? o : String(o)))
+          : Array.isArray(prev?.options)
+            ? (prev?.options as string[])
+            : null;
+        const newExp = clean(q.explanation);
+
+        rows.push({
+          topic,
+          question_id: id,
+          question: newQ ?? prev?.question ?? qText ?? null,
+          options: newOpts,
+          correct_answer: prev?.correct_answer ?? null,
+          explanation: newExp ?? prev?.explanation ?? (q.explanation as string | undefined) ?? null,
+          image: prev?.image ?? null,
+          image_alt: prev?.image_alt ?? null,
+          updated_by: user?.id ?? null,
+        });
+      }
+
+      let written = 0;
+      for (let i = 0; i < rows.length; i += 50) {
+        const batch = rows.slice(i, i + 50);
+        const { error } = await supabase
+          .from("question_overrides")
+          .upsert(batch, { onConflict: "topic,question_id" });
+        if (error) throw error;
+        written += batch.length;
+      }
+      invalidateOverrides();
+      setBulkMessage(`Cleaned ${written} question(s) in "${topic}". Re-running validation…`);
+      // Re-run a full scan so the cleaned items disappear from the list.
+      await run();
+      setBulkMessage(`Cleaned ${written} question(s) in "${topic}". Findings refreshed.`);
+    } catch (e) {
+      setBulkMessage(
+        `Bulk-clean failed for "${topic}": ${e instanceof Error ? e.message : "Unknown error"}`,
+      );
+    } finally {
+      setBulkBusyTopic(null);
+    }
+  };
+
   const ruleCounts = useMemo(() => {
     const m = new Map<Finding["rule"], number>();
     for (const f of findings) m.set(f.rule, (m.get(f.rule) ?? 0) + 1);
@@ -348,6 +463,11 @@ function Validator() {
           Question overrides changed since the last scan — previous results have been cleared. Click <strong>Run validation</strong> to refresh.
         </p>
       )}
+      {bulkMessage && (
+        <p className="mt-3 rounded-md border border-coral/40 bg-coral/5 p-2 text-xs text-coral">
+          {bulkMessage}
+        </p>
+      )}
 
       <div className="mt-4 rounded-xl border border-border bg-card/50 p-3">
         <form
@@ -409,7 +529,11 @@ function Validator() {
       )}
 
       <div className="mt-6 space-y-3">
-        {grouped.map(([topic, list]) => (
+        {grouped.map(([topic, list]) => {
+          const cleanableCount = list.filter(
+            (f) => f.rule === "suspicious-characters" || f.rule === "json-code-artifact",
+          ).length;
+          return (
           <details key={topic} className="rounded-xl border border-border bg-card p-4" open>
             <summary className="flex cursor-pointer items-center justify-between gap-3">
               <Link
@@ -419,7 +543,25 @@ function Validator() {
               >
                 {topic}
               </Link>
-              <Badge variant="destructive">{list.length}</Badge>
+              <div className="flex items-center gap-2">
+                {cleanableCount > 0 && (
+                  <button
+                    type="button"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      void bulkCleanTopic(topic);
+                    }}
+                    disabled={bulkBusyTopic === topic || running}
+                    className="rounded-md border border-coral/40 bg-coral/5 px-2 py-1 text-xs font-semibold text-coral hover:bg-coral/10 disabled:opacity-50"
+                    title="Strip suspicious characters and JSON artifacts from every flagged question in this topic"
+                  >
+                    {bulkBusyTopic === topic
+                      ? "Cleaning…"
+                      : `Bulk-clean ${cleanableCount}`}
+                  </button>
+                )}
+                <Badge variant="destructive">{list.length}</Badge>
+              </div>
             </summary>
             <ul className="mt-3 space-y-2 text-sm">
               {list.map((f, i) => (
@@ -431,7 +573,8 @@ function Validator() {
               ))}
             </ul>
           </details>
-        ))}
+          );
+        })}
         {!running && findings.length === 0 && scanned > 0 && (
           <p className="rounded-xl border border-success/40 bg-success/10 p-4 text-sm text-success">
             All clean — no validation findings.
