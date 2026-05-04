@@ -1,84 +1,86 @@
 ## Goal
-Build real user authentication (Option 2) plus saved progress, history, bookmarks and a personal dashboard (Option 3). Designed so Option 4 (paid tier) can later slot in via a `subscriptions` table without rework.
+Make UK Test Hub consistent, trustworthy and AdSense-ready. Single sweep across emails, branding, claim language, sitemap, and content.
 
-## 1. Database (Lovable Cloud migrations)
+## 1. Email + domain consistency
+Replace every `@uktesthub.co.uk` address with the single canonical `support@uktesthub.com`.
 
-- `profiles` table — `id` (FK auth.users, cascade), `display_name`, `avatar_url`, `created_at`, `updated_at`. RLS: user reads/updates own row only.
-- Trigger `handle_new_user()` on `auth.users` insert → auto-creates profile row.
-- `quiz_attempts` table — `id`, `user_id`, `topic_slug`, `mock_slug`, `score`, `total`, `percent`, `duration_seconds`, `passed` (bool), `completed_at`. RLS: user reads/inserts own rows only.
-- `quiz_progress` table — `id`, `user_id`, `mock_slug`, `current_index`, `answers` (jsonb), `started_at`, `updated_at`, unique `(user_id, mock_slug)`. RLS: user own only. Used to "resume later".
-- `bookmarks` table — `id`, `user_id`, `topic_slug`, `created_at`, unique `(user_id, topic_slug)`. RLS: user own only.
+Files to update:
+- `src/routes/contact.tsx` — `hello@`, `partners@` → `support@uktesthub.com` (collapse to one address)
+- `src/routes/privacy.tsx` — `privacy@` → `support@`
+- `src/routes/accessibility.tsx` — `accessibility@` (×2) → `support@`
+- `src/routes/feedback.tsx` — `feedback@`, `accessibility@` → `support@`
+- `src/routes/report.tsx` — `reports@` → `support@`
 
-## 2. Auth flow
+## 2. Remove "Pro" branding
+- `src/components/Logo.tsx` — remove the coral "Pro" badge span entirely. Keep "UK TEST HUB" wordmark.
+- Grep confirmed no other UI/meta uses "Pro" branding.
 
-- `src/lib/auth-context.tsx` already exists for admin — extend so the same provider is used for normal users (just exposes `user`, `session`, `loading`, `signOut`). No change to admin role logic.
-- New routes:
-  - `/signin` — email/password sign-in + Google OAuth button + "Forgot password?" link.
-  - `/signup` — email/password sign-up + Google OAuth. Sets `emailRedirectTo: window.location.origin`.
-  - `/forgot-password` — sends reset email via `resetPasswordForEmail` with `redirectTo: /reset-password`.
-  - `/reset-password` — handles `type=recovery` hash, lets user set new password.
-  - `/account` — protected; edit display name + avatar, sign out.
-  - `/dashboard` — protected; user's stats and recent attempts (see §4).
-- Configure Google OAuth provider in Lovable Cloud auth settings.
+## 3. Safer claim language + global disclaimer
+Tone down marketing claims so we don't imply official status:
+- `src/routes/index.tsx` hero (line 150): "Real exam questions" → "Practice-style questions"; feature chip "Real Exam Format" → "Realistic Exam Format"
+- `src/data/topic-seo.ts` line 29: "mirrors the real exam style" → "reflects the exam format"
+- Audit other "real exam" / "official" / "aligned with" phrasing in topic-seo and category-seo and soften where it implies endorsement (keep neutral references to DVSA/NHS as the body that runs the real test — that's factual).
+- Add a one-line disclaimer line under the hero subtext on the homepage and ensure footer disclaimer (already present) reads:
+  > "UK Test Hub is not affiliated with any official exam body. All questions are for practice purposes only."
+  Update `src/components/SiteFooter.tsx` disclaimer block to lead with this exact sentence.
 
-## 3. Header changes (`SiteHeader.tsx`)
+## 4. Homepage mock-test question count
+The featured grid in `src/routes/index.tsx` (lines 80–87) currently mixes counts (24, 8, 10). Per request, normalise the **mock tests** to 24 questions:
+- Driving Theory Mock 1 — already 24 ✓
+- Life in the UK Test 2026 — already 24 ✓
+- IELTS Listening Practice — 8 → 24
+- 11+ Maths Practice Test — 10 → 24
+- UK Geography Test — 10 → 24
+- Road Signs Test — 8 → 24
 
-- Replace fake "Sign In" CTA with auth-aware control:
-  - Logged out → "Sign in" link (to `/signin`) + smaller "Sign up" outline button.
-  - Logged in → avatar dropdown: My Dashboard, My Account, Bookmarks, Sign out.
-- Mobile menu mirrors the same.
+Update the matching `minutes` to 24 too so card metadata is consistent. (Note: this only changes the displayed count on the homepage tile; the underlying quiz length is set elsewhere and unchanged.)
 
-## 4. Quiz integration
+If you'd prefer to only change the labels for tiles that are genuinely "mock tests" (Driving + Life in UK) and leave the shorter practice tiles as-is, say the word and I'll restrict the change.
 
-- `QuizRunner.tsx`: when user is signed in,
-  - On every answer, debounce-upsert into `quiz_progress` (so they can resume).
-  - On finish, insert a row into `quiz_attempts` and delete the `quiz_progress` row.
-  - Show "Resume" banner on quiz start if `quiz_progress` exists for that mock.
-- Anonymous users keep the existing localStorage-only behaviour (no breakage).
+## 5. Homepage cleanup (UX + AdSense)
+- Add vertical breathing room between major sections (consistent `py-16 md:py-20`).
+- Ensure no two `<AdSlot>` components sit back-to-back without 200px+ of original content between them (AdSense policy).
+- Tighten the hero stat row spacing on mobile.
+- Verify mobile (416px) layout: cards stack cleanly, no horizontal overflow.
 
-## 5. Bookmarks
+## 6 + 7. Sitemap + robots cleanup
+Remove admin / dashboard / account / auth routes from indexable surfaces.
 
-- Heart/star icon on topic cards (`/category/$slug`, `/all-tests`, `/topic/$slug`).
-  - Logged out → tooltip "Sign in to save".
-  - Logged in → toggles row in `bookmarks`.
-- New `/bookmarks` route lists saved topics.
+- `src/routes/sitemap[.]xml.ts` — keep only: `/`, all `/category/*`, `/all-tests`, `/blog`, `/blog/*`, all `/topic/*` and `/guide/*`, plus core info pages (`/about`, `/contact`, `/faq`, `/privacy`, `/cookies`, `/terms`, `/disclaimer`, `/accessibility`, `/sitemap`). Remove any account/dashboard/admin entries (none currently listed, but I'll re-audit and explicitly skip them).
+- `public/sitemap.xml` — same treatment (this static one is shipped). Will be regenerated to match the dynamic version (and we'll keep the dynamic `/sitemap.xml` as the source of truth referenced in robots).
+- `src/routes/sitemap.tsx` (HTML sitemap page) — remove any account/dashboard/admin links if present (currently it doesn't list them — confirm and leave as is).
+- `public/robots.txt` and `src/routes/robots[.]txt.ts` — add explicit `Disallow:` rules:
+  ```
+  Disallow: /account
+  Disallow: /dashboard
+  Disallow: /bookmarks
+  Disallow: /signin
+  Disallow: /signup
+  Disallow: /forgot-password
+  Disallow: /reset-password
+  Disallow: /admin-kb20
+  Disallow: /admin
+  ```
+- Add `noindex` head meta to `src/routes/account.tsx`, `dashboard.tsx`, `bookmarks.tsx`, `signin.tsx`, `signup.tsx`, `forgot-password.tsx`, `reset-password.tsx` so even direct hits are excluded.
 
-## 6. Dashboard (`/dashboard`)
+## 8. Content quality boost (AdSense)
+- **Category pages** (`src/routes/category.$slug.tsx` + `src/data/category-seo.ts`): audit each entry; ensure 300+ words of unique intro/body content per category. Top up the shortest entries with extra paragraphs covering: who the tests are for, how to prepare, common pitfalls, and a "what's included" list.
+- **Topic pages** (`src/routes/topic.$slug.tsx` + `src/data/topic-seo.ts`): ensure each topic has the three sections requested — *Explanation of the test*, *Who it's for*, *Tips*. Most longform entries already have FAQ + tips; the `generic(...)` topics in `topic-seo.ts` (NHS, ADR, etc.) are thin and will be expanded with a small standardised template (3 short paragraphs + 3 tips) so no topic page is under ~300 words.
 
-- Welcome row with display name.
-- Stat cards: total attempts, average %, pass rate, current streak (consecutive days with ≥1 attempt).
-- Recent attempts table (last 20) with topic, score, date, "retake" link.
-- Per-topic progress bars (best % per topic).
-- "In progress" section listing `quiz_progress` rows with Resume buttons.
-- Bookmarks shortcut.
+This is the largest chunk of work — I'll do it in one pass per file rather than per topic to keep the edit clean.
 
-## 7. Account page (`/account`)
+## 9. Trust signals
+- `src/routes/about.tsx` — verify it states mission + ownership clearly. If thin, add a short "Who runs UK Test Hub" paragraph and a contact line pointing to `support@uktesthub.com`.
+- `src/routes/contact.tsx` — already covered in step 1; keep a single clear `support@uktesthub.com` address and a short response-time note.
 
-- Edit display name, upload avatar (Lovable Cloud storage, new `avatars` bucket, public read, owner write).
-- Change password (re-auth then `updateUser`).
-- Sign out button.
+## 10. Final checks
+- Re-run grep for `co.uk`, `Pro` branding, `real exam`, `official exam` to confirm zero stragglers.
+- Visually scan homepage at 416px (current viewport) and at desktop for spacing/AdSlot density.
+- Confirm no console errors after edits.
+- All `<Link>` targets verified against existing routes (no broken links introduced).
 
-## 8. Server functions (TanStack `createServerFn`)
+## Out of scope
+- Sending real email from `support@uktesthub.com` (requires email infrastructure setup — separate task; let me know if you want me to wire up Lovable Cloud email + DNS now).
+- Any pricing / paid-tier work (deferred until the real Pro product is ready).
 
-- `getDashboardData` — protected by `requireSupabaseAuth`; returns aggregated stats + recent attempts in one call.
-- `recordAttempt` — validates payload with Zod, inserts into `quiz_attempts`.
-- `upsertProgress` / `clearProgress` — debounced from client.
-- `toggleBookmark`, `listBookmarks`.
-- All use the auth-middleware client so RLS enforces ownership.
-
-## 9. Future-proofing for Option 4
-
-- Add `subscription_tier` column on `profiles` defaulting to `'free'` (used later by paid tier; harmless now).
-- All "premium" gates can later read `profile.subscription_tier`.
-
-## 10. Out of scope for this round
-- Stripe / paid plans (Option 4 — later).
-- Social providers other than Google.
-- Leaderboards, friends, sharing.
-
-## Technical notes
-- Use `onAuthStateChange` listener set up BEFORE `getSession()` (already correct in current `auth-context`).
-- All forms validated with Zod (email format, password ≥ 8, display name ≤ 50).
-- Avatars: max 2 MB, jpg/png/webp only, validated client + server.
-- Add `/signin`, `/signup`, `/forgot-password`, `/reset-password`, `/account`, `/dashboard`, `/bookmarks` to sitemap exclusion (no SEO value).
-- Will ship in two passes inside the same build: (a) DB migration + auth pages + header, (b) dashboard + bookmarks + quiz integration.
+Ready to implement on approval.
