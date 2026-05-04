@@ -646,7 +646,7 @@ function MultipleResponseView({
             else if (isSelected) stateClass = "border-destructive bg-destructive/10";
             else stateClass = "border-border opacity-70";
           } else if (isSelected) {
-            stateClass = "border-coral bg-accent/60";
+            stateClass = "border-navy bg-navy/10";
           }
           return (
             <button
