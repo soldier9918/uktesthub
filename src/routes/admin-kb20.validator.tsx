@@ -67,7 +67,8 @@ function Validator() {
   const [lookupError, setLookupError] = useState<string | null>(null);
   const navigate = useNavigate();
 
-  const CACHE_KEY = "admin-validator-results-v2";
+  const CACHE_KEY = "admin-validator-results-v3";
+  const [staleNotice, setStaleNotice] = useState(false);
 
   // Restore previous results on mount.
   useEffect(() => {
