@@ -42,6 +42,30 @@ function Validator() {
   const [running, setRunning] = useState(false);
   const [publicImages, setPublicImages] = useState<Set<string>>(new Set());
   const [ruleFilter, setRuleFilter] = useState<Finding["rule"] | "all">("all");
+  const [lastRunAt, setLastRunAt] = useState<string | null>(null);
+
+  const CACHE_KEY = "admin-validator-results-v1";
+
+  // Restore previous results on mount.
+  useEffect(() => {
+    try {
+      const raw = sessionStorage.getItem(CACHE_KEY);
+      if (raw) {
+        const parsed = JSON.parse(raw) as {
+          findings: Finding[];
+          scanned: number;
+          ruleFilter?: Finding["rule"] | "all";
+          at?: string;
+        };
+        setFindings(parsed.findings ?? []);
+        setScanned(parsed.scanned ?? 0);
+        if (parsed.ruleFilter) setRuleFilter(parsed.ruleFilter);
+        if (parsed.at) setLastRunAt(parsed.at);
+      }
+    } catch {
+      /* ignore */
+    }
+  }, []);
 
   useEffect(() => {
     fetch("/mocks/image-inventory.json")
@@ -70,6 +94,23 @@ function Validator() {
     }
     setFindings(out);
     setRunning(false);
+    const at = new Date().toISOString();
+    setLastRunAt(at);
+    try {
+      sessionStorage.setItem(
+        CACHE_KEY,
+        JSON.stringify({ findings: out, scanned: allTopics.length, ruleFilter, at }),
+      );
+    } catch {
+      /* ignore quota errors */
+    }
+  };
+
+  const clearCache = () => {
+    sessionStorage.removeItem(CACHE_KEY);
+    setFindings([]);
+    setScanned(0);
+    setLastRunAt(null);
   };
 
   const ruleCounts = useMemo(() => {
@@ -120,7 +161,11 @@ function Validator() {
           disabled={running}
           className="rounded-xl bg-gradient-coral px-4 py-2 text-sm font-semibold text-coral-foreground disabled:opacity-50"
         >
-          {running ? `Scanning… ${scanned}/${allTopics.length}` : "Run validation"}
+          {running
+            ? `Scanning… ${scanned}/${allTopics.length}`
+            : findings.length > 0
+              ? "Re-run validation"
+              : "Run validation"}
         </button>
         {findings.length > 0 && (
           <button
@@ -132,8 +177,20 @@ function Validator() {
           </button>
         )}
         {findings.length > 0 && (
+          <button
+            type="button"
+            onClick={clearCache}
+            className="rounded-xl border border-border bg-background px-3 py-2 text-xs font-semibold text-muted-foreground hover:bg-muted"
+          >
+            Clear results
+          </button>
+        )}
+        {findings.length > 0 && (
           <span className="text-sm text-muted-foreground">
             {filtered.length} of {findings.length} findings · {grouped.length} topics
+            {lastRunAt && (
+              <> · last run {new Date(lastRunAt).toLocaleTimeString()}</>
+            )}
           </span>
         )}
       </div>
