@@ -167,11 +167,21 @@ export function QuestionEditDialog({ topic, questionId, defaults, liveLink, onCl
                 <img src={image} alt="" className="h-24 w-24 rounded-md border border-border object-contain bg-white p-1" />
               )}
               <div className="flex-1 space-y-2">
-                <Input
-                  value={image}
-                  onChange={(e) => setImage(e.target.value)}
-                  placeholder="Image URL or upload below"
-                />
+                <div className="flex gap-2">
+                  <Input
+                    value={image}
+                    onChange={(e) => setImage(e.target.value)}
+                    placeholder="Image URL or browse/upload below"
+                  />
+                  <Button
+                    type="button"
+                    variant="outline"
+                    size="sm"
+                    onClick={() => setPickerOpen(true)}
+                  >
+                    Browse images
+                  </Button>
+                </div>
                 <Input
                   value={imageAlt}
                   onChange={(e) => setImageAlt(e.target.value)}
