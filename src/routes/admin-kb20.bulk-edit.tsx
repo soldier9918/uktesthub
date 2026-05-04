@@ -327,6 +327,12 @@ function BulkEditPage() {
     setPreview(applyStripWeird(items));
   };
 
+  const runStripArtifacts = () => {
+    setResult(null);
+    setErr(null);
+    setPreview(applyStripArtifacts(items));
+  };
+
   const apply = async () => {
     if (preview.length === 0) return;
     setApplying(true);
