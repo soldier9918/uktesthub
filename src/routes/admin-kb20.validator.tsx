@@ -676,17 +676,22 @@ function FilterChip({
 function FindingRow({
   finding,
   usage,
+  ignored,
+  onToggleIgnore,
 }: {
   finding: Finding;
   usage?: Map<string, UsageEntry[]>;
+  ignored: boolean;
+  onToggleIgnore: () => void;
 }) {
   const isDuplicate = finding.rule === "duplicate-id" || finding.rule === "duplicate-text";
   const mocks =
     finding.questionId && usage ? (usage.get(finding.questionId) ?? []) : [];
   return (
-    <li className="rounded-md border border-border/60 bg-background/50 p-3">
+    <li className={`rounded-md border border-border/60 bg-background/50 p-3 ${ignored ? "opacity-60" : ""}`}>
       <div className="flex flex-wrap items-center gap-2">
         <Badge variant="secondary">{RULE_LABEL[finding.rule]}</Badge>
+        {ignored && <Badge variant="outline">Ignored</Badge>
         {finding.questionId && (
           <Link
             to="/admin-kb20/questions/$topic"
