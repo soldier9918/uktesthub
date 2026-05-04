@@ -127,11 +127,14 @@ export function SiteFooter() {
 
         <div className="mt-14 rounded-2xl border border-white/10 bg-white/5 p-5 text-xs leading-relaxed text-navy-foreground/65">
           <strong className="font-semibold text-navy-foreground">Disclaimer:</strong>{" "}
-          UK Test Hub is an independent practice platform. We are{" "}
+          UK Test Hub is not affiliated with any official exam body. All questions
+          are for practice purposes only. We are{" "}
           <strong className="font-semibold text-navy-foreground">not affiliated with</strong>{" "}
           DVSA, TfL, the UK Government, IELTS, ESOL, CSCS, SIA, the NHS or any
           examination board unless explicitly stated. All trademarks and brand
           names belong to their respective owners and are used for reference only.
+          For support, contact{" "}
+          <a href="mailto:support@uktesthub.com" className="underline hover:text-coral">support@uktesthub.com</a>.
         </div>
       </div>
 

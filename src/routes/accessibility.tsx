@@ -75,9 +75,7 @@ function AccessibilityPage() {
       <h2>Reporting accessibility problems</h2>
       <p>
         If you experience any accessibility issues, please email{" "}
-        <a href="mailto:accessibility@uktesthub.co.uk">
-          accessibility@uktesthub.co.uk
-        </a>
+        <a href="mailto:support@uktesthub.com">support@uktesthub.com</a>
         . We aim to respond within 5 working days and to fix high-impact
         issues as a priority.
       </p>

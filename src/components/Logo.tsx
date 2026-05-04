@@ -27,9 +27,6 @@ export function Logo({ variant = "dark", showTagline = true, size = "md" }: Prop
           <span className={`font-display font-extrabold tracking-tight whitespace-nowrap ${text} ${wordSize} font-sans`}>
             UK TEST HUB
           </span>
-          <span className="rounded-md bg-coral px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-coral-foreground">
-            Pro
-          </span>
         </span>
         {showTagline && (
           <span className={`mt-1 block whitespace-nowrap text-[10px] font-semibold uppercase tracking-[0.18em] ${sub}`}>

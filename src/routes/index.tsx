@@ -80,10 +80,10 @@ const featured: Array<{
 }> = [
   { slug: "driving-theory-mock-1", title: "Driving Theory Mock Test 1", img: featDriving, questionCount: 24, minutes: 24, mostPopular: true, btn: "coral" },
   { slug: "life-in-the-uk-mock-1", title: "Life in the UK Test 2026", img: featFlag, questionCount: 24, minutes: 24, btn: "royal" },
-  { slug: "ielts-grammar-starter", title: "IELTS Listening Practice", img: featHeadphones, questionCount: 8, minutes: 10, btn: "navy" },
-  { slug: "gcse-maths-warmup", title: "11+ Maths Practice Test", img: featCalculator, questionCount: 10, minutes: 10, btn: "coral" },
-  { slug: "uk-geography-quick", title: "UK Geography Test", img: featTowerBridge, questionCount: 10, minutes: 8, btn: "royal" },
-  { slug: "road-signs-essentials", title: "Road Signs Test", img: featRoadSigns, questionCount: 8, minutes: 8, btn: "navy" },
+  { slug: "ielts-grammar-starter", title: "IELTS Listening Practice", img: featHeadphones, questionCount: 24, minutes: 24, btn: "navy" },
+  { slug: "gcse-maths-warmup", title: "11+ Maths Practice Test", img: featCalculator, questionCount: 24, minutes: 24, btn: "coral" },
+  { slug: "uk-geography-quick", title: "UK Geography Test", img: featTowerBridge, questionCount: 24, minutes: 24, btn: "royal" },
+  { slug: "road-signs-essentials", title: "Road Signs Test", img: featRoadSigns, questionCount: 24, minutes: 24, btn: "navy" },
 ];
 
 const dailyQuizMeta = {
@@ -147,7 +147,7 @@ function HomePage() {
               <span className="text-coral">First Time</span>
             </h1>
             <p className="mt-6 max-w-xl text-base text-navy-foreground/85 md:text-lg whitespace-pre-line">
-              Real exam questions. Mock tests. Instant results.
+              Practice-style questions. Mock tests. Instant results.
               {"\n"}Study anytime, anywhere. 
               {"\n"}Over <span className="font-bold text-[#d4af37]">96,000+</span> mock questions across <span className="font-bold text-[#d4af37]">110+</span> topics!
             </p>
@@ -172,7 +172,7 @@ function HomePage() {
             <ul className="mt-10 flex flex-wrap gap-x-7 gap-y-3 text-sm text-navy-foreground/85">
               {[
                 { icon: CheckCircle2, label: "96,000+ Questions" },
-                { icon: FileCheck, label: "Real Exam Format" },
+                { icon: FileCheck, label: "Realistic Exam Format" },
                 { icon: Timer, label: "Instant Results" },
                 { icon: CalendarCheck, label: "Updated for 2026" },
               ].map((s) => (
