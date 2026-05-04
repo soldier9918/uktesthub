@@ -124,6 +124,24 @@ export function SiteHeader() {
       {mobileOpen && (
         <div className="border-t border-border/60 bg-background lg:hidden">
           <nav className="mx-auto flex max-w-7xl flex-col gap-1 px-4 py-3 md:px-6">
+            <div className="mb-2 flex items-center gap-2 border-b border-border/60 pb-2">
+              <button
+                type="button"
+                aria-label="Search"
+                className="inline-flex h-10 flex-1 items-center justify-center gap-2 rounded-lg text-sm font-semibold text-foreground/80 hover:bg-muted hover:text-foreground"
+              >
+                <Search className="h-4 w-4" /> Search
+              </button>
+              <button
+                type="button"
+                onClick={toggleTheme}
+                aria-label="Toggle dark mode"
+                className="inline-flex h-10 flex-1 items-center justify-center gap-2 rounded-lg text-sm font-semibold text-foreground/80 hover:bg-muted hover:text-foreground"
+              >
+                {isDark ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
+                {isDark ? "Light mode" : "Dark mode"}
+              </button>
+            </div>
             {nav.map((item) =>
               item.slug ? (
                 <Link
