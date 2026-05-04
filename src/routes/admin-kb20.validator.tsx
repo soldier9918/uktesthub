@@ -433,7 +433,7 @@ function FindingRow({
   usage,
 }: {
   finding: Finding;
-  usage?: Map<string, number[]>;
+  usage?: Map<string, UsageEntry[]>;
 }) {
   const isDuplicate = finding.rule === "duplicate-id" || finding.rule === "duplicate-text";
   const mocks =
@@ -461,16 +461,20 @@ function FindingRow({
           ) : (
             <>
               <span>Live in:</span>
-              {mocks.map((n) => (
+              {mocks.map(({ mockNumber, slot }) => (
                 <a
-                  key={n}
-                  href={`/quiz/${finding.topic}-mock-${n}`}
+                  key={`${mockNumber}-${slot}`}
+                  href={`/quiz/${finding.topic}-mock-${mockNumber}${slot ? `#q${slot}` : ""}`}
                   target="_blank"
                   rel="noreferrer"
                   className="rounded border border-border bg-card px-1.5 py-0.5 font-mono text-coral hover:border-coral hover:bg-coral/5"
-                  title={`Open ${finding.topic} Mock Test ${n} on the live site (new tab)`}
+                  title={
+                    slot
+                      ? `Open Mock Test ${mockNumber}, Question ${slot} on the live site (new tab)`
+                      : `Open Mock Test ${mockNumber} on the live site (new tab)`
+                  }
                 >
-                  Mock {n}
+                  Mock {mockNumber}{slot ? ` · Q${slot}` : ""}
                 </a>
               ))}
             </>
