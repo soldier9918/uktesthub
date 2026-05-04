@@ -305,6 +305,9 @@ function normaliseType(raw: RawQuestion): string {
 
 function rawToQuestion(raw: RawQuestion, idx: number): Question {
   const id = idx + 1;
+  // Carry the original bank id (e.g. "sa-mc-0017") onto the runtime question
+  // so admin overrides — keyed by bank id — can be matched at render time.
+  const sourceId = (raw as { id?: string }).id;
   const t = normaliseType(raw);
 
   switch (t) {
