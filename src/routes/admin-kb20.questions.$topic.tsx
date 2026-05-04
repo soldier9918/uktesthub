@@ -440,25 +440,32 @@ function QuestionsBrowser() {
           </div>
         )}
       </main>
-      {editing && (
-        <QuestionEditDialog
-          topic={topic}
-          questionId={editing.id}
-          defaults={{
-            question: editing.question,
-            options: editing.options,
-            correctAnswer: editing.raw.correctAnswer as number | undefined,
-            explanation: editing.explanation,
-            image: editing.image,
-            imageAlt: editing.imageAlt,
-          }}
-          onClose={() => setEditing(null)}
-          onSaved={() => {
-            invalidateOverrides();
-            setBump((n) => n + 1);
-          }}
-        />
-      )}
+      {editing && (() => {
+        const first = editing.usedInMocks[0];
+        const liveLink = first
+          ? `https://www.uktesthub.com/quiz/${topic}-mock-${first.mockNumber}#q${first.slot}`
+          : undefined;
+        return (
+          <QuestionEditDialog
+            topic={topic}
+            questionId={editing.id}
+            defaults={{
+              question: editing.question,
+              options: editing.options,
+              correctAnswer: editing.raw.correctAnswer as number | undefined,
+              explanation: editing.explanation,
+              image: editing.image,
+              imageAlt: editing.imageAlt,
+            }}
+            liveLink={liveLink}
+            onClose={() => setEditing(null)}
+            onSaved={() => {
+              invalidateOverrides();
+              setBump((n) => n + 1);
+            }}
+          />
+        );
+      })()}
       <SiteFooter />
     </div>
   );
