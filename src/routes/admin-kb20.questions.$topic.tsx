@@ -88,13 +88,14 @@ function describeCorrect(r: RawQuestion): string | undefined {
 function flatten(file: AnyFile): FlatQuestion[] {
   if ((file as V2).version === 2 && Array.isArray((file as V2).bank)) {
     const v2 = file as V2;
-    const usage = new Map<string, number[]>();
-    for (const m of v2.mocks)
-      for (const qid of m.questionIds) {
+    const usage = new Map<string, MockUsage[]>();
+    for (const m of v2.mocks) {
+      m.questionIds.forEach((qid, idx) => {
         const arr = usage.get(qid) ?? [];
-        arr.push(m.mockNumber);
+        arr.push({ mockNumber: m.mockNumber, slot: idx + 1 });
         usage.set(qid, arr);
-      }
+      });
+    }
     return v2.bank.map((q) => ({
       id: q.id,
       type: normaliseType(q.type),
@@ -121,7 +122,7 @@ function flatten(file: AnyFile): FlatQuestion[] {
         imageAlt: q.imageAlt,
         options: q.options,
         correctText: describeCorrect(q),
-        usedInMocks: [t.mockNumber],
+        usedInMocks: [{ mockNumber: t.mockNumber, slot: i + 1 }],
         raw: q,
       });
     });
