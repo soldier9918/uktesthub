@@ -20,23 +20,23 @@ type Report = {
 };
 
 type ReportRow = Report & {
+  editTopicSlug: string;
   editQuestionId: string;
-  reportedQuestionNumber?: number;
 };
 
 async function resolveEditQuestionId(report: Report): Promise<ReportRow> {
+  const mock = report.mock_slug ? await loadMockBySlug(report.mock_slug) : undefined;
   const numericQuestion = Number(report.question_id);
-  if (!report.mock_slug || !Number.isInteger(numericQuestion) || numericQuestion < 1) {
-    return { ...report, editQuestionId: report.question_id };
+  if (!Number.isInteger(numericQuestion) || numericQuestion < 1) {
+    return { ...report, editTopicSlug: mock?.topic ?? report.topic_slug, editQuestionId: report.question_id };
   }
 
-  const mock = await loadMockBySlug(report.mock_slug);
   const raw = mock?.questions[numericQuestion - 1] as { id?: string } | undefined;
 
   return {
     ...report,
+    editTopicSlug: mock?.topic ?? report.topic_slug,
     editQuestionId: raw?.id ?? report.question_id,
-    reportedQuestionNumber: numericQuestion,
   };
 }
 
