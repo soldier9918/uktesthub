@@ -204,6 +204,8 @@ export function validateTopicBank(
         });
       }
     }
+
+    checkSuspicious(q, id, idx, qText);
   });
 
   // Build per-id occurrence list (need actual ids, but idsByValue stored same id repeated).
