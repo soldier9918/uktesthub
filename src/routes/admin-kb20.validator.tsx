@@ -48,6 +48,7 @@ const RULE_LABEL: Record<Finding["rule"], string> = {
   "missing-image": "Missing image",
   "unknown-type": "Unknown type",
   "suspicious-characters": "Suspicious characters",
+  "json-code-artifact": "JSON/code artifact",
 };
 
 function Validator() {
