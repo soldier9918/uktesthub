@@ -74,7 +74,38 @@ function Validator() {
   const navigate = useNavigate();
 
   const CACHE_KEY = "admin-validator-results-v3";
+  const IGNORE_KEY = "admin-validator-ignored-v1";
   const [staleNotice, setStaleNotice] = useState(false);
+  const [ignored, setIgnored] = useState<Set<string>>(new Set());
+  const [showIgnored, setShowIgnored] = useState(false);
+
+  // Load ignored signatures
+  useEffect(() => {
+    try {
+      const raw = localStorage.getItem(IGNORE_KEY);
+      if (raw) setIgnored(new Set(JSON.parse(raw) as string[]));
+    } catch {
+      /* ignore */
+    }
+  }, []);
+
+  const persistIgnored = (next: Set<string>) => {
+    setIgnored(new Set(next));
+    try {
+      localStorage.setItem(IGNORE_KEY, JSON.stringify(Array.from(next)));
+    } catch {
+      /* ignore */
+    }
+  };
+
+  const toggleIgnore = (sig: string) => {
+    const next = new Set(ignored);
+    if (next.has(sig)) next.delete(sig);
+    else next.add(sig);
+    persistIgnored(next);
+  };
+
+  const clearIgnored = () => persistIgnored(new Set());
 
   // Restore previous results on mount.
   useEffect(() => {
@@ -376,15 +407,23 @@ function Validator() {
     }
   };
 
+  const findingSig = (f: Finding) =>
+    `${f.topic}|${f.rule}|${f.questionId ?? ""}|${f.field ?? ""}|${(f.relatedIds ?? []).join(",")}`;
+
+  const visibleFindings = useMemo(
+    () => (showIgnored ? findings : findings.filter((f) => !ignored.has(findingSig(f)))),
+    [findings, ignored, showIgnored],
+  );
+
   const ruleCounts = useMemo(() => {
     const m = new Map<Finding["rule"], number>();
-    for (const f of findings) m.set(f.rule, (m.get(f.rule) ?? 0) + 1);
+    for (const f of visibleFindings) m.set(f.rule, (m.get(f.rule) ?? 0) + 1);
     return m;
-  }, [findings]);
+  }, [visibleFindings]);
 
   const filtered = useMemo(
-    () => (ruleFilter === "all" ? findings : findings.filter((f) => f.rule === ruleFilter)),
-    [findings, ruleFilter],
+    () => (ruleFilter === "all" ? visibleFindings : visibleFindings.filter((f) => f.rule === ruleFilter)),
+    [visibleFindings, ruleFilter],
   );
 
   const grouped = useMemo(() => {
@@ -447,6 +486,26 @@ function Validator() {
           >
             Clear results
           </button>
+        )}
+        {ignored.size > 0 && (
+          <>
+            <button
+              type="button"
+              onClick={() => setShowIgnored((v) => !v)}
+              className="rounded-xl border border-border bg-background px-3 py-2 text-xs font-semibold hover:bg-muted"
+            >
+              {showIgnored ? "Hide ignored" : `Show ignored (${ignored.size})`}
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                if (window.confirm(`Un-ignore all ${ignored.size} finding(s)?`)) clearIgnored();
+              }}
+              className="rounded-xl border border-border bg-background px-3 py-2 text-xs font-semibold text-muted-foreground hover:bg-muted"
+            >
+              Reset ignored
+            </button>
+          </>
         )}
         {findings.length > 0 && (
           <span className="text-sm text-muted-foreground">
@@ -564,13 +623,18 @@ function Validator() {
               </div>
             </summary>
             <ul className="mt-3 space-y-2 text-sm">
-              {list.map((f, i) => (
-                <FindingRow
-                  key={i}
-                  finding={f}
-                  usage={usageByTopic.get(f.topic)}
-                />
-              ))}
+              {list.map((f, i) => {
+                const sig = findingSig(f);
+                return (
+                  <FindingRow
+                    key={i}
+                    finding={f}
+                    usage={usageByTopic.get(f.topic)}
+                    ignored={ignored.has(sig)}
+                    onToggleIgnore={() => toggleIgnore(sig)}
+                  />
+                );
+              })}
             </ul>
           </details>
           );
@@ -612,17 +676,22 @@ function FilterChip({
 function FindingRow({
   finding,
   usage,
+  ignored,
+  onToggleIgnore,
 }: {
   finding: Finding;
   usage?: Map<string, UsageEntry[]>;
+  ignored: boolean;
+  onToggleIgnore: () => void;
 }) {
   const isDuplicate = finding.rule === "duplicate-id" || finding.rule === "duplicate-text";
   const mocks =
     finding.questionId && usage ? (usage.get(finding.questionId) ?? []) : [];
   return (
-    <li className="rounded-md border border-border/60 bg-background/50 p-3">
+    <li className={`rounded-md border border-border/60 bg-background/50 p-3 ${ignored ? "opacity-60" : ""}`}>
       <div className="flex flex-wrap items-center gap-2">
         <Badge variant="secondary">{RULE_LABEL[finding.rule]}</Badge>
+        {ignored && <Badge variant="outline">Ignored</Badge>}
         {finding.questionId && (
           <Link
             to="/admin-kb20/questions/$topic"
@@ -634,6 +703,14 @@ function FindingRow({
           </Link>
         )}
         <span className="text-xs text-muted-foreground">{finding.message}</span>
+        <button
+          type="button"
+          onClick={onToggleIgnore}
+          className="ml-auto rounded border border-border bg-background px-2 py-0.5 text-[11px] font-semibold text-muted-foreground hover:bg-muted"
+          title={ignored ? "Restore this finding to the active list" : "Mark as false positive — hide from results"}
+        >
+          {ignored ? "Un-ignore" : "Ignore"}
+        </button>
       </div>
       {finding.questionId && (
         <div className="mt-1.5 flex flex-wrap items-center gap-1 text-[10px] text-muted-foreground">
