@@ -1,4 +1,5 @@
 // Shared question-bank validator used by /admin-kb20/validator and import/export.
+import { hasArtifacts, stripArtifacts } from "@/lib/admin/text-cleanup";
 
 export type Finding = {
   topic: string;
@@ -14,9 +15,10 @@ export type Finding = {
     | "invalid-correct-answer"
     | "missing-image"
     | "unknown-type"
-    | "suspicious-characters";
+    | "suspicious-characters"
+    | "json-code-artifact";
   message: string;
-  /** For suspicious-characters: which field, sample, and detected scripts. */
+  /** For suspicious-characters / json-code-artifact: which field, sample, and detected scripts. */
   field?: string;
   sample?: string;
 };
