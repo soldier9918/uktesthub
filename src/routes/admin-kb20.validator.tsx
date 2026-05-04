@@ -4,6 +4,7 @@ import { AdminGate } from "@/components/AdminGate";
 import { categories } from "@/data/categories";
 import { loadTopicFileForAdmin } from "@/data/mocks";
 import { validateTopicBank, type Finding } from "@/lib/admin/validator";
+import { applyOverrideToQuestionRecord, loadOverrides } from "@/lib/overrides";
 import { Badge } from "@/components/ui/badge";
 
 export const Route = createFileRoute("/admin-kb20/validator")({
@@ -65,7 +66,7 @@ function Validator() {
   const [lookupError, setLookupError] = useState<string | null>(null);
   const navigate = useNavigate();
 
-  const CACHE_KEY = "admin-validator-results-v1";
+  const CACHE_KEY = "admin-validator-results-v2";
 
   // Restore previous results on mount.
   useEffect(() => {
@@ -126,15 +127,20 @@ function Validator() {
     setScanned(0);
     const out: Finding[] = [];
     const usage = new Map<string, Map<string, UsageEntry[]>>();
+    const overrides = await loadOverrides();
     for (const topic of allTopics) {
       const file = await loadTopicFileForAdmin(topic);
       if (file) {
         const isV2 = (file as { version?: number }).version === 2;
-        const bank: AnyQ[] = isV2
+        const rawBank: AnyQ[] = isV2
           ? ((file as { bank: AnyQ[] }).bank ?? [])
           : ((file as { tests: { questions: AnyQ[] }[] }).tests ?? []).flatMap(
               (t) => t.questions ?? [],
             );
+        const bank = rawBank.map((q) => {
+          const id = q.id;
+          return id ? applyOverrideToQuestionRecord(q, overrides.get(`${topic}::${id}`)) : q;
+        });
         out.push(...validateTopicBank(topic, bank, publicImages));
 
         // Build id -> [{mockNumber, slot}] for this topic. `slot` is 1-indexed
