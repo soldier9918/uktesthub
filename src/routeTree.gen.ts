@@ -44,6 +44,8 @@ import { Route as GuideSlugRouteImport } from './routes/guide.$slug'
 import { Route as CategorySlugRouteImport } from './routes/category.$slug'
 import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
 import { Route as AdminKb20UsersRouteImport } from './routes/admin-kb20.users'
+import { Route as AdminKb20ReportsRouteImport } from './routes/admin-kb20.reports'
+import { Route as AdminKb20MocksRouteImport } from './routes/admin-kb20.mocks'
 import { Route as AdminKb20LoginRouteImport } from './routes/admin-kb20.login'
 import { Route as AdminKb20DiagnosticsRouteImport } from './routes/admin-kb20.diagnostics'
 import { Route as AdminKb20QuestionsIndexRouteImport } from './routes/admin-kb20.questions.index'
@@ -225,6 +227,16 @@ const AdminKb20UsersRoute = AdminKb20UsersRouteImport.update({
   path: '/admin-kb20/users',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AdminKb20ReportsRoute = AdminKb20ReportsRouteImport.update({
+  id: '/admin-kb20/reports',
+  path: '/admin-kb20/reports',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdminKb20MocksRoute = AdminKb20MocksRouteImport.update({
+  id: '/admin-kb20/mocks',
+  path: '/admin-kb20/mocks',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AdminKb20LoginRoute = AdminKb20LoginRouteImport.update({
   id: '/admin-kb20/login',
   path: '/admin-kb20/login',
@@ -282,6 +294,8 @@ export interface FileRoutesByFullPath {
   '/terms': typeof TermsRoute
   '/admin-kb20/diagnostics': typeof AdminKb20DiagnosticsRoute
   '/admin-kb20/login': typeof AdminKb20LoginRoute
+  '/admin-kb20/mocks': typeof AdminKb20MocksRoute
+  '/admin-kb20/reports': typeof AdminKb20ReportsRoute
   '/admin-kb20/users': typeof AdminKb20UsersRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/category/$slug': typeof CategorySlugRoute
@@ -323,6 +337,8 @@ export interface FileRoutesByTo {
   '/terms': typeof TermsRoute
   '/admin-kb20/diagnostics': typeof AdminKb20DiagnosticsRoute
   '/admin-kb20/login': typeof AdminKb20LoginRoute
+  '/admin-kb20/mocks': typeof AdminKb20MocksRoute
+  '/admin-kb20/reports': typeof AdminKb20ReportsRoute
   '/admin-kb20/users': typeof AdminKb20UsersRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/category/$slug': typeof CategorySlugRoute
@@ -366,6 +382,8 @@ export interface FileRoutesById {
   '/terms': typeof TermsRoute
   '/admin-kb20/diagnostics': typeof AdminKb20DiagnosticsRoute
   '/admin-kb20/login': typeof AdminKb20LoginRoute
+  '/admin-kb20/mocks': typeof AdminKb20MocksRoute
+  '/admin-kb20/reports': typeof AdminKb20ReportsRoute
   '/admin-kb20/users': typeof AdminKb20UsersRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/category/$slug': typeof CategorySlugRoute
@@ -410,6 +428,8 @@ export interface FileRouteTypes {
     | '/terms'
     | '/admin-kb20/diagnostics'
     | '/admin-kb20/login'
+    | '/admin-kb20/mocks'
+    | '/admin-kb20/reports'
     | '/admin-kb20/users'
     | '/blog/$slug'
     | '/category/$slug'
@@ -451,6 +471,8 @@ export interface FileRouteTypes {
     | '/terms'
     | '/admin-kb20/diagnostics'
     | '/admin-kb20/login'
+    | '/admin-kb20/mocks'
+    | '/admin-kb20/reports'
     | '/admin-kb20/users'
     | '/blog/$slug'
     | '/category/$slug'
@@ -493,6 +515,8 @@ export interface FileRouteTypes {
     | '/terms'
     | '/admin-kb20/diagnostics'
     | '/admin-kb20/login'
+    | '/admin-kb20/mocks'
+    | '/admin-kb20/reports'
     | '/admin-kb20/users'
     | '/blog/$slug'
     | '/category/$slug'
@@ -536,6 +560,8 @@ export interface RootRouteChildren {
   TermsRoute: typeof TermsRoute
   AdminKb20DiagnosticsRoute: typeof AdminKb20DiagnosticsRoute
   AdminKb20LoginRoute: typeof AdminKb20LoginRoute
+  AdminKb20MocksRoute: typeof AdminKb20MocksRoute
+  AdminKb20ReportsRoute: typeof AdminKb20ReportsRoute
   AdminKb20UsersRoute: typeof AdminKb20UsersRoute
   CategorySlugRoute: typeof CategorySlugRoute
   GuideSlugRoute: typeof GuideSlugRoute
@@ -794,6 +820,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AdminKb20UsersRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/admin-kb20/reports': {
+      id: '/admin-kb20/reports'
+      path: '/admin-kb20/reports'
+      fullPath: '/admin-kb20/reports'
+      preLoaderRoute: typeof AdminKb20ReportsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/admin-kb20/mocks': {
+      id: '/admin-kb20/mocks'
+      path: '/admin-kb20/mocks'
+      fullPath: '/admin-kb20/mocks'
+      preLoaderRoute: typeof AdminKb20MocksRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/admin-kb20/login': {
       id: '/admin-kb20/login'
       path: '/admin-kb20/login'
@@ -874,6 +914,8 @@ const rootRouteChildren: RootRouteChildren = {
   TermsRoute: TermsRoute,
   AdminKb20DiagnosticsRoute: AdminKb20DiagnosticsRoute,
   AdminKb20LoginRoute: AdminKb20LoginRoute,
+  AdminKb20MocksRoute: AdminKb20MocksRoute,
+  AdminKb20ReportsRoute: AdminKb20ReportsRoute,
   AdminKb20UsersRoute: AdminKb20UsersRoute,
   CategorySlugRoute: CategorySlugRoute,
   GuideSlugRoute: GuideSlugRoute,
