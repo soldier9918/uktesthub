@@ -8,6 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import { logAdminAction } from "@/lib/admin/audit";
 import { invalidateAdminSettings, loadAdminSettings, type AdminSettings } from "@/lib/admin/settings";
 import { toast } from "sonner";
+import { getAllPosts } from "@/data/blog";
 
 type SeoRow = {
   path: string;
