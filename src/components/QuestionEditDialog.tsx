@@ -36,6 +36,7 @@ export function QuestionEditDialog({ topic, questionId, defaults, liveLink, onCl
   const [imageAlt, setImageAlt] = useState<string>(defaults.imageAlt ?? "");
   const [busy, setBusy] = useState(false);
   const [err, setErr] = useState<string | null>(null);
+  const [savedOk, setSavedOk] = useState(false);
   const fileRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
@@ -90,8 +91,8 @@ export function QuestionEditDialog({ topic, questionId, defaults, liveLink, onCl
     setBusy(false);
     if (error) return setErr(error.message);
     invalidateOverrides();
+    setSavedOk(true);
     onSaved();
-    onClose();
   };
 
   const reset = async () => {
