@@ -1,4 +1,5 @@
 // Shared question-bank validator used by /admin-kb20/validator and import/export.
+import { hasArtifacts, stripArtifacts } from "@/lib/admin/text-cleanup";
 
 export type Finding = {
   topic: string;
@@ -14,9 +15,10 @@ export type Finding = {
     | "invalid-correct-answer"
     | "missing-image"
     | "unknown-type"
-    | "suspicious-characters";
+    | "suspicious-characters"
+    | "json-code-artifact";
   message: string;
-  /** For suspicious-characters: which field, sample, and detected scripts. */
+  /** For suspicious-characters / json-code-artifact: which field, sample, and detected scripts. */
   field?: string;
   sample?: string;
 };
@@ -123,6 +125,16 @@ export function validateTopicBank(
           field: f.name,
           sample: found.sample,
           message: `Non-Latin / suspicious chars in ${f.name}: ${found.scripts.join(", ")}`,
+        });
+      }
+      if (hasArtifacts(f.value)) {
+        const cleaned = stripArtifacts(f.value);
+        findings.push({
+          topic, questionId: id, questionIndex: idx, questionText: snippet(qText),
+          rule: "json-code-artifact",
+          field: f.name,
+          sample: `"${f.value}" → "${cleaned}"`,
+          message: `JSON/code artifact in ${f.name} (use bulk "Strip JSON/code artifacts")`,
         });
       }
     }

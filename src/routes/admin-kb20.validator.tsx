@@ -4,7 +4,7 @@ import { AdminGate } from "@/components/AdminGate";
 import { categories } from "@/data/categories";
 import { loadTopicFileForAdmin } from "@/data/mocks";
 import { validateTopicBank, type Finding } from "@/lib/admin/validator";
-import { applyOverrideToQuestionRecord, loadOverrides } from "@/lib/overrides";
+import { applyOverrideToQuestionRecord, invalidateOverrides, loadOverrides } from "@/lib/overrides";
 import { Badge } from "@/components/ui/badge";
 
 export const Route = createFileRoute("/admin-kb20/validator")({
@@ -48,6 +48,7 @@ const RULE_LABEL: Record<Finding["rule"], string> = {
   "missing-image": "Missing image",
   "unknown-type": "Unknown type",
   "suspicious-characters": "Suspicious characters",
+  "json-code-artifact": "JSON/code artifact",
 };
 
 function Validator() {
@@ -66,7 +67,8 @@ function Validator() {
   const [lookupError, setLookupError] = useState<string | null>(null);
   const navigate = useNavigate();
 
-  const CACHE_KEY = "admin-validator-results-v2";
+  const CACHE_KEY = "admin-validator-results-v3";
+  const [staleNotice, setStaleNotice] = useState(false);
 
   // Restore previous results on mount.
   useEffect(() => {
@@ -109,6 +111,26 @@ function Validator() {
     }
   }, []);
 
+  // Mark stale and clear cached results whenever overrides change elsewhere
+  // (admin edit dialog save, bulk edit apply, etc.) so the user knows the
+  // current findings no longer reflect the database.
+  useEffect(() => {
+    const onInvalidate = () => {
+      try {
+        sessionStorage.removeItem(CACHE_KEY);
+        sessionStorage.removeItem("admin-validator-results-v1");
+        sessionStorage.removeItem("admin-validator-results-v2");
+      } catch {
+        /* ignore */
+      }
+      setFindings([]);
+      setUsageByTopic(new Map());
+      setStaleNotice(true);
+    };
+    window.addEventListener("question-overrides-invalidated", onInvalidate);
+    return () => window.removeEventListener("question-overrides-invalidated", onInvalidate);
+  }, []);
+
   // topic -> (questionId -> [{mockNumber, slot}])
   const [usageByTopic, setUsageByTopic] = useState<Map<string, Map<string, UsageEntry[]>>>(
     new Map(),
@@ -125,6 +147,10 @@ function Validator() {
     setRunning(true);
     setFindings([]);
     setScanned(0);
+    setStaleNotice(false);
+    // Always re-fetch overrides from the DB at the start of every run so a
+    // re-run actually reflects the latest admin edits / bulk fixes.
+    invalidateOverrides();
     const out: Finding[] = [];
     const usage = new Map<string, Map<string, UsageEntry[]>>();
     const overrides = await loadOverrides();
@@ -316,6 +342,12 @@ function Validator() {
           </span>
         )}
       </div>
+
+      {staleNotice && (
+        <p className="mt-3 rounded-md border border-amber-300 bg-amber-50 p-2 text-xs text-amber-800">
+          Question overrides changed since the last scan — previous results have been cleared. Click <strong>Run validation</strong> to refresh.
+        </p>
+      )}
 
       <div className="mt-4 rounded-xl border border-border bg-card/50 p-3">
         <form
