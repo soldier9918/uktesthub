@@ -94,20 +94,12 @@ const ALL_TOPICS = categories.flatMap((c) =>
   c.topics.map((t) => ({ slug: t.slug, title: `${c.title} — ${t.title}` })),
 );
 
-// Allowed character set: printable ASCII (incl. punctuation) plus a few common
-// extended Latin / typographic punctuation marks. Anything else is "weird".
-const ALLOWED_RE =
-  /^[\u0020-\u007E\u00A0-\u017F\u2010-\u2015\u2018-\u201D\u2026\u20AC\n\r\t]*$/;
-function hasWeirdChars(s: string): boolean {
-  return !ALLOWED_RE.test(s);
-}
-function stripWeird(s: string): string {
-  return Array.from(s)
-    .filter((ch) => ALLOWED_RE.test(ch))
-    .join("")
-    .replace(/\s+/g, " ")
-    .trim();
-}
+import {
+  hasArtifacts,
+  hasWeirdChars,
+  stripArtifacts,
+  stripWeird,
+} from "@/lib/admin/text-cleanup";
 
 type Change = {
   id: string;
@@ -182,33 +174,6 @@ function applyFindReplace(
     }
   }
   return changes;
-}
-
-// Strip JSON/code artifacts that leak in from generation, e.g.
-//   "Higher speed limits],question"  -> "Higher speed limits"
-//   'Foo"," bar' -> 'Foo, bar'
-//   trailing ", ", '],', '"]', '"},', '],"question"', etc.
-const ARTIFACT_PATTERNS: RegExp[] = [
-  /\s*\][^\]]*?(?:question|options?|explanation|answer|correctAnswer)\b.*$/i,
-  /\s*[\]}"',]+\s*(?:question|options?|explanation|answer|correctAnswer)\b.*$/i,
-  /\s*[\]}"]+\s*,\s*$/,
-  /\s*[\]}]+\s*$/,
-  /\s*",\s*"$/,
-  /\s*",$/,
-  /^\s*"+/,
-  /"+\s*$/,
-];
-function stripArtifacts(s: string): string {
-  let out = s;
-  let prev: string;
-  do {
-    prev = out;
-    for (const re of ARTIFACT_PATTERNS) out = out.replace(re, "");
-  } while (out !== prev);
-  return out.trim();
-}
-function hasArtifacts(s: string): boolean {
-  return stripArtifacts(s) !== s.trim();
 }
 
 function applyStripArtifacts(items: FlatBankItem[]): Change[] {
