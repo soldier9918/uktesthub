@@ -283,7 +283,7 @@ function SearchPage() {
                     <Link
                       to="/admin-kb20/questions/$topic"
                       params={{ topic: h.topic }}
-                      search={{ q: h.id, from: "search" }}
+                      search={{ q: h.id, from: "validator" }}
                       className="ml-auto text-xs font-semibold text-coral hover:underline"
                     >
                       Open in editor →

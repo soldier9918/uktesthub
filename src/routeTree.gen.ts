@@ -48,6 +48,7 @@ import { Route as AdminKb20UsersRouteImport } from './routes/admin-kb20.users'
 import { Route as AdminKb20SystemRouteImport } from './routes/admin-kb20.system'
 import { Route as AdminKb20SeoRouteImport } from './routes/admin-kb20.seo'
 import { Route as AdminKb20SecurityRouteImport } from './routes/admin-kb20.security'
+import { Route as AdminKb20SearchRouteImport } from './routes/admin-kb20.search'
 import { Route as AdminKb20ReportsRouteImport } from './routes/admin-kb20.reports'
 import { Route as AdminKb20MocksRouteImport } from './routes/admin-kb20.mocks'
 import { Route as AdminKb20LoginRouteImport } from './routes/admin-kb20.login'
@@ -256,6 +257,11 @@ const AdminKb20SecurityRoute = AdminKb20SecurityRouteImport.update({
   path: '/admin-kb20/security',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AdminKb20SearchRoute = AdminKb20SearchRouteImport.update({
+  id: '/admin-kb20/search',
+  path: '/admin-kb20/search',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AdminKb20ReportsRoute = AdminKb20ReportsRouteImport.update({
   id: '/admin-kb20/reports',
   path: '/admin-kb20/reports',
@@ -355,6 +361,7 @@ export interface FileRoutesByFullPath {
   '/admin-kb20/login': typeof AdminKb20LoginRoute
   '/admin-kb20/mocks': typeof AdminKb20MocksRoute
   '/admin-kb20/reports': typeof AdminKb20ReportsRoute
+  '/admin-kb20/search': typeof AdminKb20SearchRoute
   '/admin-kb20/security': typeof AdminKb20SecurityRoute
   '/admin-kb20/seo': typeof AdminKb20SeoRoute
   '/admin-kb20/system': typeof AdminKb20SystemRoute
@@ -407,6 +414,7 @@ export interface FileRoutesByTo {
   '/admin-kb20/login': typeof AdminKb20LoginRoute
   '/admin-kb20/mocks': typeof AdminKb20MocksRoute
   '/admin-kb20/reports': typeof AdminKb20ReportsRoute
+  '/admin-kb20/search': typeof AdminKb20SearchRoute
   '/admin-kb20/security': typeof AdminKb20SecurityRoute
   '/admin-kb20/seo': typeof AdminKb20SeoRoute
   '/admin-kb20/system': typeof AdminKb20SystemRoute
@@ -461,6 +469,7 @@ export interface FileRoutesById {
   '/admin-kb20/login': typeof AdminKb20LoginRoute
   '/admin-kb20/mocks': typeof AdminKb20MocksRoute
   '/admin-kb20/reports': typeof AdminKb20ReportsRoute
+  '/admin-kb20/search': typeof AdminKb20SearchRoute
   '/admin-kb20/security': typeof AdminKb20SecurityRoute
   '/admin-kb20/seo': typeof AdminKb20SeoRoute
   '/admin-kb20/system': typeof AdminKb20SystemRoute
@@ -516,6 +525,7 @@ export interface FileRouteTypes {
     | '/admin-kb20/login'
     | '/admin-kb20/mocks'
     | '/admin-kb20/reports'
+    | '/admin-kb20/search'
     | '/admin-kb20/security'
     | '/admin-kb20/seo'
     | '/admin-kb20/system'
@@ -568,6 +578,7 @@ export interface FileRouteTypes {
     | '/admin-kb20/login'
     | '/admin-kb20/mocks'
     | '/admin-kb20/reports'
+    | '/admin-kb20/search'
     | '/admin-kb20/security'
     | '/admin-kb20/seo'
     | '/admin-kb20/system'
@@ -621,6 +632,7 @@ export interface FileRouteTypes {
     | '/admin-kb20/login'
     | '/admin-kb20/mocks'
     | '/admin-kb20/reports'
+    | '/admin-kb20/search'
     | '/admin-kb20/security'
     | '/admin-kb20/seo'
     | '/admin-kb20/system'
@@ -675,6 +687,7 @@ export interface RootRouteChildren {
   AdminKb20LoginRoute: typeof AdminKb20LoginRoute
   AdminKb20MocksRoute: typeof AdminKb20MocksRoute
   AdminKb20ReportsRoute: typeof AdminKb20ReportsRoute
+  AdminKb20SearchRoute: typeof AdminKb20SearchRoute
   AdminKb20SecurityRoute: typeof AdminKb20SecurityRoute
   AdminKb20SeoRoute: typeof AdminKb20SeoRoute
   AdminKb20SystemRoute: typeof AdminKb20SystemRoute
@@ -965,6 +978,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AdminKb20SecurityRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/admin-kb20/search': {
+      id: '/admin-kb20/search'
+      path: '/admin-kb20/search'
+      fullPath: '/admin-kb20/search'
+      preLoaderRoute: typeof AdminKb20SearchRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/admin-kb20/reports': {
       id: '/admin-kb20/reports'
       path: '/admin-kb20/reports'
@@ -1101,6 +1121,7 @@ const rootRouteChildren: RootRouteChildren = {
   AdminKb20LoginRoute: AdminKb20LoginRoute,
   AdminKb20MocksRoute: AdminKb20MocksRoute,
   AdminKb20ReportsRoute: AdminKb20ReportsRoute,
+  AdminKb20SearchRoute: AdminKb20SearchRoute,
   AdminKb20SecurityRoute: AdminKb20SecurityRoute,
   AdminKb20SeoRoute: AdminKb20SeoRoute,
   AdminKb20SystemRoute: AdminKb20SystemRoute,
