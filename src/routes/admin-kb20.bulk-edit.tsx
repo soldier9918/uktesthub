@@ -8,7 +8,7 @@ import { Input } from "@/components/ui/input";
 import { categories } from "@/data/categories";
 import { loadTopicFileForAdmin } from "@/data/mocks";
 import { supabase } from "@/integrations/supabase/client";
-import { invalidateOverrides, loadOverrides } from "@/lib/overrides";
+import { applyOverrideToQuestionRecord, invalidateOverrides, loadOverrides } from "@/lib/overrides";
 import { useAuth } from "@/lib/auth-context";
 
 export const Route = createFileRoute("/admin-kb20/bulk-edit")({
@@ -58,25 +58,32 @@ type FlatBankItem = {
   explanation?: string;
 };
 
-function flatten(file: AnyFile): FlatBankItem[] {
+function flatten(file: AnyFile, overrides = new Map<string, import("@/lib/overrides").QuestionOverride>()): FlatBankItem[] {
+  const withOverride = <T extends RawQ & { id: string }>(q: T) =>
+    applyOverrideToQuestionRecord(q, overrides.get(`${file.topic}::${q.id}`));
   if ((file as V2).version === 2 && Array.isArray((file as V2).bank)) {
-    return (file as V2).bank.map((q) => ({
-      id: q.id,
-      question: (q.question || q.template || q.prompt || "") as string,
-      options: q.options,
-      explanation: q.explanation,
-    }));
+    return (file as V2).bank.map((raw) => {
+      const q = withOverride(raw);
+      return {
+        id: q.id,
+        question: (q.question || q.template || q.prompt || "") as string,
+        options: q.options,
+        explanation: q.explanation,
+      };
+    });
   }
   // v1 fallback — synthesise an id matching the runtime sourceId fallback
   const v1 = file as V1;
   const out: FlatBankItem[] = [];
   v1.tests.forEach((t) => {
     t.questions.forEach((q, i) => {
+      const id = q.id ?? `${file.topic}-mock-${t.mockNumber}-q${i + 1}`;
+      const merged = withOverride({ ...q, id });
       out.push({
-        id: q.id ?? `${file.topic}-mock-${t.mockNumber}-q${i + 1}`,
-        question: (q.question || q.template || q.prompt || "") as string,
-        options: q.options,
-        explanation: q.explanation,
+        id,
+        question: (merged.question || merged.template || merged.prompt || "") as string,
+        options: merged.options,
+        explanation: merged.explanation,
       });
     });
   });
@@ -235,7 +242,7 @@ function BulkEditPage() {
         setErr("Could not load topic file.");
         return;
       }
-      setItems(flatten(file));
+      setItems(flatten(file, await loadOverrides()));
     } finally {
       setLoadingTopic(false);
     }
