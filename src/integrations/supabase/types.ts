@@ -122,6 +122,33 @@ export type Database = {
         }
         Relationships: []
       }
+      mock_overrides: {
+        Row: {
+          disabled: boolean
+          id: string
+          mock_slug: string
+          topic_slug: string
+          updated_at: string
+          updated_by: string | null
+        }
+        Insert: {
+          disabled?: boolean
+          id?: string
+          mock_slug: string
+          topic_slug: string
+          updated_at?: string
+          updated_by?: string | null
+        }
+        Update: {
+          disabled?: boolean
+          id?: string
+          mock_slug?: string
+          topic_slug?: string
+          updated_at?: string
+          updated_by?: string | null
+        }
+        Relationships: []
+      }
       profiles: {
         Row: {
           avatar_url: string | null
@@ -191,6 +218,48 @@ export type Database = {
           topic?: string
           updated_at?: string
           updated_by?: string | null
+        }
+        Relationships: []
+      }
+      question_reports: {
+        Row: {
+          created_at: string
+          details: string | null
+          id: string
+          mock_slug: string | null
+          question_id: string
+          reason: string
+          reporter_user_id: string | null
+          resolved_at: string | null
+          resolved_by: string | null
+          status: string
+          topic_slug: string
+        }
+        Insert: {
+          created_at?: string
+          details?: string | null
+          id?: string
+          mock_slug?: string | null
+          question_id: string
+          reason: string
+          reporter_user_id?: string | null
+          resolved_at?: string | null
+          resolved_by?: string | null
+          status?: string
+          topic_slug: string
+        }
+        Update: {
+          created_at?: string
+          details?: string | null
+          id?: string
+          mock_slug?: string | null
+          question_id?: string
+          reason?: string
+          reporter_user_id?: string | null
+          resolved_at?: string | null
+          resolved_by?: string | null
+          status?: string
+          topic_slug?: string
         }
         Relationships: []
       }

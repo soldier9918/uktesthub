@@ -1,86 +1,106 @@
-## Goal
-Make UK Test Hub consistent, trustworthy and AdSense-ready. Single sweep across emails, branding, claim language, sitemap, and content.
 
-## 1. Email + domain consistency
-Replace every `@uktesthub.co.uk` address with the single canonical `support@uktesthub.com`.
+# Admin Panel — Phase 1
 
-Files to update:
-- `src/routes/contact.tsx` — `hello@`, `partners@` → `support@uktesthub.com` (collapse to one address)
-- `src/routes/privacy.tsx` — `privacy@` → `support@`
-- `src/routes/accessibility.tsx` — `accessibility@` (×2) → `support@`
-- `src/routes/feedback.tsx` — `feedback@`, `accessibility@` → `support@`
-- `src/routes/report.tsx` — `reports@` → `support@`
+Build the 5 highest-impact modules now. Modules 3, 4, 5, 6 (partial), 7 (partial), 10, 12 are deferred to a later phase and tracked in the admin home as "Coming next".
 
-## 2. Remove "Pro" branding
-- `src/components/Logo.tsx` — remove the coral "Pro" badge span entirely. Keep "UK TEST HUB" wordmark.
-- Grep confirmed no other UI/meta uses "Pro" branding.
+Existing admin lives at `/admin-kb20` and is gated by `AdminGate` + `has_role(admin)`. We extend that, not replace it.
 
-## 3. Safer claim language + global disclaimer
-Tone down marketing claims so we don't imply official status:
-- `src/routes/index.tsx` hero (line 150): "Real exam questions" → "Practice-style questions"; feature chip "Real Exam Format" → "Realistic Exam Format"
-- `src/data/topic-seo.ts` line 29: "mirrors the real exam style" → "reflects the exam format"
-- Audit other "real exam" / "official" / "aligned with" phrasing in topic-seo and category-seo and soften where it implies endorsement (keep neutral references to DVSA/NHS as the body that runs the real test — that's factual).
-- Add a one-line disclaimer line under the hero subtext on the homepage and ensure footer disclaimer (already present) reads:
-  > "UK Test Hub is not affiliated with any official exam body. All questions are for practice purposes only."
-  Update `src/components/SiteFooter.tsx` disclaimer block to lead with this exact sentence.
+## What gets built
 
-## 4. Homepage mock-test question count
-The featured grid in `src/routes/index.tsx` (lines 80–87) currently mixes counts (24, 8, 10). Per request, normalise the **mock tests** to 24 questions:
-- Driving Theory Mock 1 — already 24 ✓
-- Life in the UK Test 2026 — already 24 ✓
-- IELTS Listening Practice — 8 → 24
-- 11+ Maths Practice Test — 10 → 24
-- UK Geography Test — 10 → 24
-- Road Signs Test — 8 → 24
+### 1. Mock Test Manager — `/admin-kb20/mocks`
+- Lists all categories → topics (from `src/data/categories.ts`) with mock count and per-mock question count, sourced from the existing `public/mocks/diagnostics.json` + per-topic JSON.
+- Per-mock row: title, question count, status badge, "Disable / Enable" toggle.
+- Disabled state stored in new `mock_overrides` table (`topic_slug`, `mock_slug`, `disabled bool`). Quiz routes already filter via a small helper — we add a check against this table.
 
-Update the matching `minutes` to 24 too so card metadata is consistent. (Note: this only changes the displayed count on the homepage tile; the underlying quiz length is set elsewhere and unchanged.)
+### 8. Reported Questions — `/admin-kb20/reports`
+- New `question_reports` table: `id, question_id, topic_slug, mock_slug, reason, details, status (open|fixed|dismissed), reporter_user_id (nullable), created_at, resolved_at, resolved_by`.
+- Add a "Report this question" button inside the quiz UI (`src/routes/quiz.$slug.tsx`) → modal with reason dropdown (wrong answer / typo / broken image / other) + free text. Logged-in users tracked; anonymous allowed.
+- Admin queue: list with filters (open/all/fixed), each row links to `/admin-kb20/questions/{topic}?focus={questionId}` for one-click edit, plus "Mark fixed" / "Dismiss" actions.
 
-If you'd prefer to only change the labels for tiles that are genuinely "mock tests" (Driving + Life in UK) and leave the shorter practice tiles as-is, say the word and I'll restrict the change.
+### 2. Question Bank Validator — `/admin-kb20/validator`
+- Client-side scan over the same mock JSON the diagnostics page already loads. Flags:
+  - Duplicate question IDs and duplicate question text within a topic.
+  - Missing/empty `explanation`.
+  - Invalid `correctAnswer` index (out of range / wrong type for question type).
+  - Image referenced but missing from `image-inventory.json`.
+  - Type field missing or unrecognised.
+- Grouped by topic with counts; each row links to the question editor.
+- "Download report" button → JSON file of all findings (feeds module 9).
 
-## 5. Homepage cleanup (UX + AdSense)
-- Add vertical breathing room between major sections (consistent `py-16 md:py-20`).
-- Ensure no two `<AdSlot>` components sit back-to-back without 200px+ of original content between them (AdSense policy).
-- Tighten the hero stat row spacing on mobile.
-- Verify mobile (416px) layout: cards stack cleanly, no horizontal overflow.
+### 9. Import / Export — `/admin-kb20/import-export`
+- Export: pick a topic → download the merged JSON (bank + mocks) currently served. Also "Download validation report" button (reuses validator output).
+- Import: upload a JSON file matching the v2 bank shape. Validate against the same rules as the validator before accepting; on success, write entries to `question_overrides` so changes apply immediately without redeploy. Show a dry-run diff (added / changed / unchanged) before committing.
 
-## 6 + 7. Sitemap + robots cleanup
-Remove admin / dashboard / account / auth routes from indexable surfaces.
+### 11. System Health — `/admin-kb20/system`
+- Build version: read `import.meta.env.VITE_BUILD_SHA` (set via Vite define) + build timestamp baked at build time.
+- Last deploy time: same source.
+- Worker errors: last 50 entries from existing `runtime_logs` table where level in (error, warn).
+- Sitemap status: HEAD `/sitemap.xml` and `/robots.txt`, show status code + last-modified.
+- Broken routes: hits the existing missing-image diagnostics + a small static list of expected top-level routes pinged via `fetch(..., { method: 'HEAD' })`.
 
-- `src/routes/sitemap[.]xml.ts` — keep only: `/`, all `/category/*`, `/all-tests`, `/blog`, `/blog/*`, all `/topic/*` and `/guide/*`, plus core info pages (`/about`, `/contact`, `/faq`, `/privacy`, `/cookies`, `/terms`, `/disclaimer`, `/accessibility`, `/sitemap`). Remove any account/dashboard/admin entries (none currently listed, but I'll re-audit and explicitly skip them).
-- `public/sitemap.xml` — same treatment (this static one is shipped). Will be regenerated to match the dynamic version (and we'll keep the dynamic `/sitemap.xml` as the source of truth referenced in robots).
-- `src/routes/sitemap.tsx` (HTML sitemap page) — remove any account/dashboard/admin links if present (currently it doesn't list them — confirm and leave as is).
-- `public/robots.txt` and `src/routes/robots[.]txt.ts` — add explicit `Disallow:` rules:
-  ```
-  Disallow: /account
-  Disallow: /dashboard
-  Disallow: /bookmarks
-  Disallow: /signin
-  Disallow: /signup
-  Disallow: /forgot-password
-  Disallow: /reset-password
-  Disallow: /admin-kb20
-  Disallow: /admin
-  ```
-- Add `noindex` head meta to `src/routes/account.tsx`, `dashboard.tsx`, `bookmarks.tsx`, `signin.tsx`, `signup.tsx`, `forgot-password.tsx`, `reset-password.tsx` so even direct hits are excluded.
+### Admin home update
+Update `/admin-kb20` to surface the new sections plus a "Phase 2 (planned)" list naming the deferred modules so nothing looks missing.
 
-## 8. Content quality boost (AdSense)
-- **Category pages** (`src/routes/category.$slug.tsx` + `src/data/category-seo.ts`): audit each entry; ensure 300+ words of unique intro/body content per category. Top up the shortest entries with extra paragraphs covering: who the tests are for, how to prepare, common pitfalls, and a "what's included" list.
-- **Topic pages** (`src/routes/topic.$slug.tsx` + `src/data/topic-seo.ts`): ensure each topic has the three sections requested — *Explanation of the test*, *Who it's for*, *Tips*. Most longform entries already have FAQ + tips; the `generic(...)` topics in `topic-seo.ts` (NHS, ADR, etc.) are thin and will be expanded with a small standardised template (3 short paragraphs + 3 tips) so no topic page is under ~300 words.
+## Database changes (one migration)
 
-This is the largest chunk of work — I'll do it in one pass per file rather than per topic to keep the edit clean.
+```sql
+create table public.mock_overrides (
+  id uuid primary key default gen_random_uuid(),
+  topic_slug text not null,
+  mock_slug text not null,
+  disabled boolean not null default false,
+  updated_by uuid,
+  updated_at timestamptz not null default now(),
+  unique (topic_slug, mock_slug)
+);
+alter table public.mock_overrides enable row level security;
+create policy "Anyone can read mock overrides" on public.mock_overrides
+  for select using (true);
+create policy "Admins can write mock overrides" on public.mock_overrides
+  for all to authenticated
+  using (has_role(auth.uid(), 'admin')) with check (has_role(auth.uid(), 'admin'));
 
-## 9. Trust signals
-- `src/routes/about.tsx` — verify it states mission + ownership clearly. If thin, add a short "Who runs UK Test Hub" paragraph and a contact line pointing to `support@uktesthub.com`.
-- `src/routes/contact.tsx` — already covered in step 1; keep a single clear `support@uktesthub.com` address and a short response-time note.
+create table public.question_reports (
+  id uuid primary key default gen_random_uuid(),
+  question_id text not null,
+  topic_slug text not null,
+  mock_slug text,
+  reason text not null,
+  details text,
+  status text not null default 'open',  -- open | fixed | dismissed
+  reporter_user_id uuid,
+  created_at timestamptz not null default now(),
+  resolved_at timestamptz,
+  resolved_by uuid
+);
+alter table public.question_reports enable row level security;
+create policy "Anyone can file a report" on public.question_reports
+  for insert with check (true);
+create policy "Admins read reports" on public.question_reports
+  for select to authenticated using (has_role(auth.uid(), 'admin'));
+create policy "Admins update reports" on public.question_reports
+  for update to authenticated
+  using (has_role(auth.uid(), 'admin')) with check (has_role(auth.uid(), 'admin'));
+create index on public.question_reports (status, created_at desc);
+```
 
-## 10. Final checks
-- Re-run grep for `co.uk`, `Pro` branding, `real exam`, `official exam` to confirm zero stragglers.
-- Visually scan homepage at 416px (current viewport) and at desktop for spacing/AdSlot density.
-- Confirm no console errors after edits.
-- All `<Link>` targets verified against existing routes (no broken links introduced).
+A status-trigger sets `resolved_at` / `resolved_by` automatically when an admin moves a report out of `open`.
 
-## Out of scope
-- Sending real email from `support@uktesthub.com` (requires email infrastructure setup — separate task; let me know if you want me to wire up Lovable Cloud email + DNS now).
-- Any pricing / paid-tier work (deferred until the real Pro product is ready).
+## Files (new)
 
-Ready to implement on approval.
+```text
+src/routes/admin-kb20.mocks.tsx
+src/routes/admin-kb20.reports.tsx
+src/routes/admin-kb20.validator.tsx
+src/routes/admin-kb20.import-export.tsx
+src/routes/admin-kb20.system.tsx
+src/components/ReportQuestionButton.tsx     // shown on quiz pages
+src/lib/admin/validator.ts                  // shared scan logic
+src/lib/admin/mock-status.ts                // reads mock_overrides for runtime gate
+```
+
+Touched: `src/routes/admin-kb20.index.tsx` (new tiles + planned list), `src/routes/quiz.$slug.tsx` (Report button), `vite.config.ts` (inject build SHA/time), one new migration.
+
+## Out of scope (Phase 2 — call out on admin home only)
+
+3 Image Asset Manager · 4 SEO Manager · 5 Blog Manager · 6 Analytics Dashboard (needs `quiz_events` table — confirmed) · 7 User Progress Dashboard · 10 AdSense Manager · 12 Security Settings (allowlist + path stays as-is per your answer).

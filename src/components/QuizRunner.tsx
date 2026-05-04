@@ -23,6 +23,7 @@ import type {
 } from "@/data/quizzes";
 import { AdSlot } from "./AdSlot";
 import { RoadSign } from "./RoadSign";
+import { ReportQuestionButton } from "./ReportQuestionButton";
 import { useOverrides, applyOverrides } from "@/lib/overrides";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/lib/auth-context";
@@ -277,17 +278,24 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
           Question <span className="font-semibold text-foreground">{current + 1}</span> of{" "}
           {quiz.questions.length}
         </div>
-        {mode === "exam" && (
-          <div className="flex items-center gap-2 rounded-full bg-navy px-3 py-1 text-sm font-semibold text-navy-foreground">
-            <Clock className="h-4 w-4" />
-            {formatTime(timeLeft)}
-          </div>
-        )}
-        {mode === "practice" && (
-          <span className="rounded-full bg-success/15 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-success">
-            Practice mode
-          </span>
-        )}
+        <div className="flex items-center gap-3">
+          <ReportQuestionButton
+            questionId={String(q.id)}
+            topicSlug={(quiz as { topicSlug?: string }).topicSlug ?? quiz.slug}
+            mockSlug={quiz.slug}
+          />
+          {mode === "exam" && (
+            <div className="flex items-center gap-2 rounded-full bg-navy px-3 py-1 text-sm font-semibold text-navy-foreground">
+              <Clock className="h-4 w-4" />
+              {formatTime(timeLeft)}
+            </div>
+          )}
+          {mode === "practice" && (
+            <span className="rounded-full bg-success/15 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-success">
+              Practice mode
+            </span>
+          )}
+        </div>
       </div>
 
       {showAdBreak && <AdSlot size="in-feed" className="mb-3" />}

@@ -43,8 +43,13 @@ import { Route as QuizSlugRouteImport } from './routes/quiz.$slug'
 import { Route as GuideSlugRouteImport } from './routes/guide.$slug'
 import { Route as CategorySlugRouteImport } from './routes/category.$slug'
 import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
+import { Route as AdminKb20ValidatorRouteImport } from './routes/admin-kb20.validator'
 import { Route as AdminKb20UsersRouteImport } from './routes/admin-kb20.users'
+import { Route as AdminKb20SystemRouteImport } from './routes/admin-kb20.system'
+import { Route as AdminKb20ReportsRouteImport } from './routes/admin-kb20.reports'
+import { Route as AdminKb20MocksRouteImport } from './routes/admin-kb20.mocks'
 import { Route as AdminKb20LoginRouteImport } from './routes/admin-kb20.login'
+import { Route as AdminKb20ImportExportRouteImport } from './routes/admin-kb20.import-export'
 import { Route as AdminKb20DiagnosticsRouteImport } from './routes/admin-kb20.diagnostics'
 import { Route as AdminKb20QuestionsIndexRouteImport } from './routes/admin-kb20.questions.index'
 import { Route as AdminKb20QuestionsTopicRouteImport } from './routes/admin-kb20.questions.$topic'
@@ -220,14 +225,39 @@ const BlogSlugRoute = BlogSlugRouteImport.update({
   path: '/$slug',
   getParentRoute: () => BlogRoute,
 } as any)
+const AdminKb20ValidatorRoute = AdminKb20ValidatorRouteImport.update({
+  id: '/admin-kb20/validator',
+  path: '/admin-kb20/validator',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AdminKb20UsersRoute = AdminKb20UsersRouteImport.update({
   id: '/admin-kb20/users',
   path: '/admin-kb20/users',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AdminKb20SystemRoute = AdminKb20SystemRouteImport.update({
+  id: '/admin-kb20/system',
+  path: '/admin-kb20/system',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdminKb20ReportsRoute = AdminKb20ReportsRouteImport.update({
+  id: '/admin-kb20/reports',
+  path: '/admin-kb20/reports',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdminKb20MocksRoute = AdminKb20MocksRouteImport.update({
+  id: '/admin-kb20/mocks',
+  path: '/admin-kb20/mocks',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AdminKb20LoginRoute = AdminKb20LoginRouteImport.update({
   id: '/admin-kb20/login',
   path: '/admin-kb20/login',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdminKb20ImportExportRoute = AdminKb20ImportExportRouteImport.update({
+  id: '/admin-kb20/import-export',
+  path: '/admin-kb20/import-export',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AdminKb20DiagnosticsRoute = AdminKb20DiagnosticsRouteImport.update({
@@ -281,8 +311,13 @@ export interface FileRoutesByFullPath {
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms': typeof TermsRoute
   '/admin-kb20/diagnostics': typeof AdminKb20DiagnosticsRoute
+  '/admin-kb20/import-export': typeof AdminKb20ImportExportRoute
   '/admin-kb20/login': typeof AdminKb20LoginRoute
+  '/admin-kb20/mocks': typeof AdminKb20MocksRoute
+  '/admin-kb20/reports': typeof AdminKb20ReportsRoute
+  '/admin-kb20/system': typeof AdminKb20SystemRoute
   '/admin-kb20/users': typeof AdminKb20UsersRoute
+  '/admin-kb20/validator': typeof AdminKb20ValidatorRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/category/$slug': typeof CategorySlugRoute
   '/guide/$slug': typeof GuideSlugRoute
@@ -322,8 +357,13 @@ export interface FileRoutesByTo {
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms': typeof TermsRoute
   '/admin-kb20/diagnostics': typeof AdminKb20DiagnosticsRoute
+  '/admin-kb20/import-export': typeof AdminKb20ImportExportRoute
   '/admin-kb20/login': typeof AdminKb20LoginRoute
+  '/admin-kb20/mocks': typeof AdminKb20MocksRoute
+  '/admin-kb20/reports': typeof AdminKb20ReportsRoute
+  '/admin-kb20/system': typeof AdminKb20SystemRoute
   '/admin-kb20/users': typeof AdminKb20UsersRoute
+  '/admin-kb20/validator': typeof AdminKb20ValidatorRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/category/$slug': typeof CategorySlugRoute
   '/guide/$slug': typeof GuideSlugRoute
@@ -365,8 +405,13 @@ export interface FileRoutesById {
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms': typeof TermsRoute
   '/admin-kb20/diagnostics': typeof AdminKb20DiagnosticsRoute
+  '/admin-kb20/import-export': typeof AdminKb20ImportExportRoute
   '/admin-kb20/login': typeof AdminKb20LoginRoute
+  '/admin-kb20/mocks': typeof AdminKb20MocksRoute
+  '/admin-kb20/reports': typeof AdminKb20ReportsRoute
+  '/admin-kb20/system': typeof AdminKb20SystemRoute
   '/admin-kb20/users': typeof AdminKb20UsersRoute
+  '/admin-kb20/validator': typeof AdminKb20ValidatorRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/category/$slug': typeof CategorySlugRoute
   '/guide/$slug': typeof GuideSlugRoute
@@ -409,8 +454,13 @@ export interface FileRouteTypes {
     | '/sitemap.xml'
     | '/terms'
     | '/admin-kb20/diagnostics'
+    | '/admin-kb20/import-export'
     | '/admin-kb20/login'
+    | '/admin-kb20/mocks'
+    | '/admin-kb20/reports'
+    | '/admin-kb20/system'
     | '/admin-kb20/users'
+    | '/admin-kb20/validator'
     | '/blog/$slug'
     | '/category/$slug'
     | '/guide/$slug'
@@ -450,8 +500,13 @@ export interface FileRouteTypes {
     | '/sitemap.xml'
     | '/terms'
     | '/admin-kb20/diagnostics'
+    | '/admin-kb20/import-export'
     | '/admin-kb20/login'
+    | '/admin-kb20/mocks'
+    | '/admin-kb20/reports'
+    | '/admin-kb20/system'
     | '/admin-kb20/users'
+    | '/admin-kb20/validator'
     | '/blog/$slug'
     | '/category/$slug'
     | '/guide/$slug'
@@ -492,8 +547,13 @@ export interface FileRouteTypes {
     | '/sitemap.xml'
     | '/terms'
     | '/admin-kb20/diagnostics'
+    | '/admin-kb20/import-export'
     | '/admin-kb20/login'
+    | '/admin-kb20/mocks'
+    | '/admin-kb20/reports'
+    | '/admin-kb20/system'
     | '/admin-kb20/users'
+    | '/admin-kb20/validator'
     | '/blog/$slug'
     | '/category/$slug'
     | '/guide/$slug'
@@ -535,8 +595,13 @@ export interface RootRouteChildren {
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   TermsRoute: typeof TermsRoute
   AdminKb20DiagnosticsRoute: typeof AdminKb20DiagnosticsRoute
+  AdminKb20ImportExportRoute: typeof AdminKb20ImportExportRoute
   AdminKb20LoginRoute: typeof AdminKb20LoginRoute
+  AdminKb20MocksRoute: typeof AdminKb20MocksRoute
+  AdminKb20ReportsRoute: typeof AdminKb20ReportsRoute
+  AdminKb20SystemRoute: typeof AdminKb20SystemRoute
   AdminKb20UsersRoute: typeof AdminKb20UsersRoute
+  AdminKb20ValidatorRoute: typeof AdminKb20ValidatorRoute
   CategorySlugRoute: typeof CategorySlugRoute
   GuideSlugRoute: typeof GuideSlugRoute
   QuizSlugRoute: typeof QuizSlugRoute
@@ -787,6 +852,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogSlugRouteImport
       parentRoute: typeof BlogRoute
     }
+    '/admin-kb20/validator': {
+      id: '/admin-kb20/validator'
+      path: '/admin-kb20/validator'
+      fullPath: '/admin-kb20/validator'
+      preLoaderRoute: typeof AdminKb20ValidatorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/admin-kb20/users': {
       id: '/admin-kb20/users'
       path: '/admin-kb20/users'
@@ -794,11 +866,39 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AdminKb20UsersRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/admin-kb20/system': {
+      id: '/admin-kb20/system'
+      path: '/admin-kb20/system'
+      fullPath: '/admin-kb20/system'
+      preLoaderRoute: typeof AdminKb20SystemRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/admin-kb20/reports': {
+      id: '/admin-kb20/reports'
+      path: '/admin-kb20/reports'
+      fullPath: '/admin-kb20/reports'
+      preLoaderRoute: typeof AdminKb20ReportsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/admin-kb20/mocks': {
+      id: '/admin-kb20/mocks'
+      path: '/admin-kb20/mocks'
+      fullPath: '/admin-kb20/mocks'
+      preLoaderRoute: typeof AdminKb20MocksRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/admin-kb20/login': {
       id: '/admin-kb20/login'
       path: '/admin-kb20/login'
       fullPath: '/admin-kb20/login'
       preLoaderRoute: typeof AdminKb20LoginRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/admin-kb20/import-export': {
+      id: '/admin-kb20/import-export'
+      path: '/admin-kb20/import-export'
+      fullPath: '/admin-kb20/import-export'
+      preLoaderRoute: typeof AdminKb20ImportExportRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/admin-kb20/diagnostics': {
@@ -873,8 +973,13 @@ const rootRouteChildren: RootRouteChildren = {
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   TermsRoute: TermsRoute,
   AdminKb20DiagnosticsRoute: AdminKb20DiagnosticsRoute,
+  AdminKb20ImportExportRoute: AdminKb20ImportExportRoute,
   AdminKb20LoginRoute: AdminKb20LoginRoute,
+  AdminKb20MocksRoute: AdminKb20MocksRoute,
+  AdminKb20ReportsRoute: AdminKb20ReportsRoute,
+  AdminKb20SystemRoute: AdminKb20SystemRoute,
   AdminKb20UsersRoute: AdminKb20UsersRoute,
+  AdminKb20ValidatorRoute: AdminKb20ValidatorRoute,
   CategorySlugRoute: CategorySlugRoute,
   GuideSlugRoute: GuideSlugRoute,
   QuizSlugRoute: QuizSlugRoute,
