@@ -4,6 +4,7 @@ import { AdminGate } from "@/components/AdminGate";
 import { supabase } from "@/integrations/supabase/client";
 import { Badge } from "@/components/ui/badge";
 import { useAuth } from "@/lib/auth-context";
+import { loadMockBySlug } from "@/data/mocks";
 
 type Report = {
   id: string;
@@ -17,6 +18,27 @@ type Report = {
   created_at: string;
   resolved_at: string | null;
 };
+
+type ReportRow = Report & {
+  editQuestionId: string;
+  reportedQuestionNumber?: number;
+};
+
+async function resolveEditQuestionId(report: Report): Promise<ReportRow> {
+  const numericQuestion = Number(report.question_id);
+  if (!report.mock_slug || !Number.isInteger(numericQuestion) || numericQuestion < 1) {
+    return { ...report, editQuestionId: report.question_id };
+  }
+
+  const mock = await loadMockBySlug(report.mock_slug);
+  const raw = mock?.questions[numericQuestion - 1] as { id?: string } | undefined;
+
+  return {
+    ...report,
+    editQuestionId: raw?.id ?? report.question_id,
+    reportedQuestionNumber: numericQuestion,
+  };
+}
 
 export const Route = createFileRoute("/admin-kb20/reports")({
   head: () => ({
@@ -35,7 +57,7 @@ export const Route = createFileRoute("/admin-kb20/reports")({
 function Reports() {
   const { user } = useAuth();
   const [filter, setFilter] = useState<"open" | "all" | "fixed" | "dismissed">("open");
-  const [rows, setRows] = useState<Report[]>([]);
+  const [rows, setRows] = useState<ReportRow[]>([]);
   const [loading, setLoading] = useState(true);
 
   const load = async () => {
@@ -43,7 +65,8 @@ function Reports() {
     let q = supabase.from("question_reports").select("*").order("created_at", { ascending: false }).limit(200);
     if (filter !== "all") q = q.eq("status", filter);
     const { data } = await q;
-    setRows((data ?? []) as Report[]);
+    const reports = (data ?? []) as Report[];
+    setRows(await Promise.all(reports.map(resolveEditQuestionId)));
     setLoading(false);
   };
 
