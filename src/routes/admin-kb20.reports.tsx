@@ -4,6 +4,7 @@ import { AdminGate } from "@/components/AdminGate";
 import { supabase } from "@/integrations/supabase/client";
 import { Badge } from "@/components/ui/badge";
 import { useAuth } from "@/lib/auth-context";
+import { loadMockBySlug } from "@/data/mocks";
 
 type Report = {
   id: string;
@@ -17,6 +18,27 @@ type Report = {
   created_at: string;
   resolved_at: string | null;
 };
+
+type ReportRow = Report & {
+  editTopicSlug: string;
+  editQuestionId: string;
+};
+
+async function resolveEditQuestionId(report: Report): Promise<ReportRow> {
+  const mock = report.mock_slug ? await loadMockBySlug(report.mock_slug) : undefined;
+  const numericQuestion = Number(report.question_id);
+  if (!Number.isInteger(numericQuestion) || numericQuestion < 1) {
+    return { ...report, editTopicSlug: mock?.topic ?? report.topic_slug, editQuestionId: report.question_id };
+  }
+
+  const raw = mock?.questions[numericQuestion - 1] as { id?: string } | undefined;
+
+  return {
+    ...report,
+    editTopicSlug: mock?.topic ?? report.topic_slug,
+    editQuestionId: raw?.id ?? report.question_id,
+  };
+}
 
 export const Route = createFileRoute("/admin-kb20/reports")({
   head: () => ({
@@ -35,7 +57,7 @@ export const Route = createFileRoute("/admin-kb20/reports")({
 function Reports() {
   const { user } = useAuth();
   const [filter, setFilter] = useState<"open" | "all" | "fixed" | "dismissed">("open");
-  const [rows, setRows] = useState<Report[]>([]);
+  const [rows, setRows] = useState<ReportRow[]>([]);
   const [loading, setLoading] = useState(true);
 
   const load = async () => {
@@ -43,7 +65,8 @@ function Reports() {
     let q = supabase.from("question_reports").select("*").order("created_at", { ascending: false }).limit(200);
     if (filter !== "all") q = q.eq("status", filter);
     const { data } = await q;
-    setRows((data ?? []) as Report[]);
+    const reports = (data ?? []) as Report[];
+    setRows(await Promise.all(reports.map(resolveEditQuestionId)));
     setLoading(false);
   };
 
@@ -115,12 +138,17 @@ function Reports() {
                   <td className="px-3 py-2 text-xs">
                     <Link
                       to="/admin-kb20/questions/$topic"
-                      params={{ topic: r.topic_slug }}
-                      search={{ q: r.question_id, edit: r.question_id }}
+                      params={{ topic: r.editTopicSlug }}
+                      search={{ q: r.editQuestionId, edit: r.editQuestionId, from: "reports" }}
                       className="font-mono text-coral hover:underline"
                     >
                       {r.question_id}
                     </Link>
+                    {r.editQuestionId !== r.question_id && (
+                      <div className="mt-1 text-[10px] text-muted-foreground">
+                        Opens bank ID <code>{r.editQuestionId}</code>
+                      </div>
+                    )}
                     {r.mock_slug && (
                       <div className="mt-1">
                         <Link
@@ -141,6 +169,14 @@ function Reports() {
                     </Badge>
                   </td>
                   <td className="px-3 py-2 text-right whitespace-nowrap">
+                    <Link
+                      to="/admin-kb20/questions/$topic"
+                      params={{ topic: r.editTopicSlug }}
+                      search={{ q: r.editQuestionId, edit: r.editQuestionId, from: "reports" }}
+                      className="mr-2 inline-flex rounded-lg border border-coral bg-coral/10 px-2 py-1 text-xs font-semibold text-coral hover:bg-coral/15"
+                    >
+                      Edit question
+                    </Link>
                     {r.status !== "fixed" && (
                       <button
                         onClick={() => setStatus(r.id, "fixed")}
