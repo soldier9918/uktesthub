@@ -691,7 +691,7 @@ function FindingRow({
     <li className={`rounded-md border border-border/60 bg-background/50 p-3 ${ignored ? "opacity-60" : ""}`}>
       <div className="flex flex-wrap items-center gap-2">
         <Badge variant="secondary">{RULE_LABEL[finding.rule]}</Badge>
-        {ignored && <Badge variant="outline">Ignored</Badge>
+        {ignored && <Badge variant="outline">Ignored</Badge>}
         {finding.questionId && (
           <Link
             to="/admin-kb20/questions/$topic"
@@ -703,6 +703,14 @@ function FindingRow({
           </Link>
         )}
         <span className="text-xs text-muted-foreground">{finding.message}</span>
+        <button
+          type="button"
+          onClick={onToggleIgnore}
+          className="ml-auto rounded border border-border bg-background px-2 py-0.5 text-[11px] font-semibold text-muted-foreground hover:bg-muted"
+          title={ignored ? "Restore this finding to the active list" : "Mark as false positive — hide from results"}
+        >
+          {ignored ? "Un-ignore" : "Ignore"}
+        </button>
       </div>
       {finding.questionId && (
         <div className="mt-1.5 flex flex-wrap items-center gap-1 text-[10px] text-muted-foreground">
