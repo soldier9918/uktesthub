@@ -38,7 +38,10 @@ function SeoManager() {
   const [settings, setSettings] = useState<AdminSettings | null>(null);
   const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState("");
+  const [articleSearch, setArticleSearch] = useState("");
   const [editing, setEditing] = useState<SeoRow | null>(null);
+
+  const posts = useMemo(() => getAllPosts(), []);
 
   const load = async () => {
     setLoading(true);
