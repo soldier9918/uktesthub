@@ -524,7 +524,11 @@ function Validator() {
       )}
 
       <div className="mt-6 space-y-3">
-        {grouped.map(([topic, list]) => (
+        {grouped.map(([topic, list]) => {
+          const cleanableCount = list.filter(
+            (f) => f.rule === "suspicious-characters" || f.rule === "json-code-artifact",
+          ).length;
+          return (
           <details key={topic} className="rounded-xl border border-border bg-card p-4" open>
             <summary className="flex cursor-pointer items-center justify-between gap-3">
               <Link
@@ -534,7 +538,25 @@ function Validator() {
               >
                 {topic}
               </Link>
-              <Badge variant="destructive">{list.length}</Badge>
+              <div className="flex items-center gap-2">
+                {cleanableCount > 0 && (
+                  <button
+                    type="button"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      void bulkCleanTopic(topic);
+                    }}
+                    disabled={bulkBusyTopic === topic || running}
+                    className="rounded-md border border-coral/40 bg-coral/5 px-2 py-1 text-xs font-semibold text-coral hover:bg-coral/10 disabled:opacity-50"
+                    title="Strip suspicious characters and JSON artifacts from every flagged question in this topic"
+                  >
+                    {bulkBusyTopic === topic
+                      ? "Cleaning…"
+                      : `Bulk-clean ${cleanableCount}`}
+                  </button>
+                )}
+                <Badge variant="destructive">{list.length}</Badge>
+              </div>
             </summary>
             <ul className="mt-3 space-y-2 text-sm">
               {list.map((f, i) => (
