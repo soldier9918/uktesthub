@@ -13,8 +13,12 @@ export type Finding = {
     | "missing-explanation"
     | "invalid-correct-answer"
     | "missing-image"
-    | "unknown-type";
+    | "unknown-type"
+    | "suspicious-characters";
   message: string;
+  /** For suspicious-characters: which field, sample, and detected scripts. */
+  field?: string;
+  sample?: string;
 };
 
 const KNOWN_TYPES = new Set([
