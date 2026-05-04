@@ -29,6 +29,7 @@ const RULE_LABEL: Record<Finding["rule"], string> = {
   "invalid-correct-answer": "Bad correct answer",
   "missing-image": "Missing image",
   "unknown-type": "Unknown type",
+  "suspicious-characters": "Suspicious characters",
 };
 
 function Validator() {
