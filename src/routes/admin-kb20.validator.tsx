@@ -147,6 +147,10 @@ function Validator() {
     setRunning(true);
     setFindings([]);
     setScanned(0);
+    setStaleNotice(false);
+    // Always re-fetch overrides from the DB at the start of every run so a
+    // re-run actually reflects the latest admin edits / bulk fixes.
+    invalidateOverrides();
     const out: Finding[] = [];
     const usage = new Map<string, Map<string, UsageEntry[]>>();
     const overrides = await loadOverrides();
