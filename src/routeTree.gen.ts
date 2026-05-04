@@ -46,11 +46,16 @@ import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
 import { Route as AdminKb20ValidatorRouteImport } from './routes/admin-kb20.validator'
 import { Route as AdminKb20UsersRouteImport } from './routes/admin-kb20.users'
 import { Route as AdminKb20SystemRouteImport } from './routes/admin-kb20.system'
+import { Route as AdminKb20SeoRouteImport } from './routes/admin-kb20.seo'
+import { Route as AdminKb20SecurityRouteImport } from './routes/admin-kb20.security'
 import { Route as AdminKb20ReportsRouteImport } from './routes/admin-kb20.reports'
 import { Route as AdminKb20MocksRouteImport } from './routes/admin-kb20.mocks'
 import { Route as AdminKb20LoginRouteImport } from './routes/admin-kb20.login'
 import { Route as AdminKb20ImportExportRouteImport } from './routes/admin-kb20.import-export'
+import { Route as AdminKb20ImagesRouteImport } from './routes/admin-kb20.images'
 import { Route as AdminKb20DiagnosticsRouteImport } from './routes/admin-kb20.diagnostics'
+import { Route as AdminKb20AnalyticsRouteImport } from './routes/admin-kb20.analytics'
+import { Route as AdminKb20AdsRouteImport } from './routes/admin-kb20.ads'
 import { Route as AdminKb20QuestionsIndexRouteImport } from './routes/admin-kb20.questions.index'
 import { Route as AdminKb20QuestionsTopicRouteImport } from './routes/admin-kb20.questions.$topic'
 import { Route as LovableEmailQueueProcessRouteImport } from './routes/lovable/email/queue/process'
@@ -240,6 +245,16 @@ const AdminKb20SystemRoute = AdminKb20SystemRouteImport.update({
   path: '/admin-kb20/system',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AdminKb20SeoRoute = AdminKb20SeoRouteImport.update({
+  id: '/admin-kb20/seo',
+  path: '/admin-kb20/seo',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdminKb20SecurityRoute = AdminKb20SecurityRouteImport.update({
+  id: '/admin-kb20/security',
+  path: '/admin-kb20/security',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AdminKb20ReportsRoute = AdminKb20ReportsRouteImport.update({
   id: '/admin-kb20/reports',
   path: '/admin-kb20/reports',
@@ -260,9 +275,24 @@ const AdminKb20ImportExportRoute = AdminKb20ImportExportRouteImport.update({
   path: '/admin-kb20/import-export',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AdminKb20ImagesRoute = AdminKb20ImagesRouteImport.update({
+  id: '/admin-kb20/images',
+  path: '/admin-kb20/images',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AdminKb20DiagnosticsRoute = AdminKb20DiagnosticsRouteImport.update({
   id: '/admin-kb20/diagnostics',
   path: '/admin-kb20/diagnostics',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdminKb20AnalyticsRoute = AdminKb20AnalyticsRouteImport.update({
+  id: '/admin-kb20/analytics',
+  path: '/admin-kb20/analytics',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdminKb20AdsRoute = AdminKb20AdsRouteImport.update({
+  id: '/admin-kb20/ads',
+  path: '/admin-kb20/ads',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AdminKb20QuestionsIndexRoute = AdminKb20QuestionsIndexRouteImport.update({
@@ -310,11 +340,16 @@ export interface FileRoutesByFullPath {
   '/sitemap': typeof SitemapRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms': typeof TermsRoute
+  '/admin-kb20/ads': typeof AdminKb20AdsRoute
+  '/admin-kb20/analytics': typeof AdminKb20AnalyticsRoute
   '/admin-kb20/diagnostics': typeof AdminKb20DiagnosticsRoute
+  '/admin-kb20/images': typeof AdminKb20ImagesRoute
   '/admin-kb20/import-export': typeof AdminKb20ImportExportRoute
   '/admin-kb20/login': typeof AdminKb20LoginRoute
   '/admin-kb20/mocks': typeof AdminKb20MocksRoute
   '/admin-kb20/reports': typeof AdminKb20ReportsRoute
+  '/admin-kb20/security': typeof AdminKb20SecurityRoute
+  '/admin-kb20/seo': typeof AdminKb20SeoRoute
   '/admin-kb20/system': typeof AdminKb20SystemRoute
   '/admin-kb20/users': typeof AdminKb20UsersRoute
   '/admin-kb20/validator': typeof AdminKb20ValidatorRoute
@@ -356,11 +391,16 @@ export interface FileRoutesByTo {
   '/sitemap': typeof SitemapRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms': typeof TermsRoute
+  '/admin-kb20/ads': typeof AdminKb20AdsRoute
+  '/admin-kb20/analytics': typeof AdminKb20AnalyticsRoute
   '/admin-kb20/diagnostics': typeof AdminKb20DiagnosticsRoute
+  '/admin-kb20/images': typeof AdminKb20ImagesRoute
   '/admin-kb20/import-export': typeof AdminKb20ImportExportRoute
   '/admin-kb20/login': typeof AdminKb20LoginRoute
   '/admin-kb20/mocks': typeof AdminKb20MocksRoute
   '/admin-kb20/reports': typeof AdminKb20ReportsRoute
+  '/admin-kb20/security': typeof AdminKb20SecurityRoute
+  '/admin-kb20/seo': typeof AdminKb20SeoRoute
   '/admin-kb20/system': typeof AdminKb20SystemRoute
   '/admin-kb20/users': typeof AdminKb20UsersRoute
   '/admin-kb20/validator': typeof AdminKb20ValidatorRoute
@@ -404,11 +444,16 @@ export interface FileRoutesById {
   '/sitemap': typeof SitemapRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms': typeof TermsRoute
+  '/admin-kb20/ads': typeof AdminKb20AdsRoute
+  '/admin-kb20/analytics': typeof AdminKb20AnalyticsRoute
   '/admin-kb20/diagnostics': typeof AdminKb20DiagnosticsRoute
+  '/admin-kb20/images': typeof AdminKb20ImagesRoute
   '/admin-kb20/import-export': typeof AdminKb20ImportExportRoute
   '/admin-kb20/login': typeof AdminKb20LoginRoute
   '/admin-kb20/mocks': typeof AdminKb20MocksRoute
   '/admin-kb20/reports': typeof AdminKb20ReportsRoute
+  '/admin-kb20/security': typeof AdminKb20SecurityRoute
+  '/admin-kb20/seo': typeof AdminKb20SeoRoute
   '/admin-kb20/system': typeof AdminKb20SystemRoute
   '/admin-kb20/users': typeof AdminKb20UsersRoute
   '/admin-kb20/validator': typeof AdminKb20ValidatorRoute
@@ -453,11 +498,16 @@ export interface FileRouteTypes {
     | '/sitemap'
     | '/sitemap.xml'
     | '/terms'
+    | '/admin-kb20/ads'
+    | '/admin-kb20/analytics'
     | '/admin-kb20/diagnostics'
+    | '/admin-kb20/images'
     | '/admin-kb20/import-export'
     | '/admin-kb20/login'
     | '/admin-kb20/mocks'
     | '/admin-kb20/reports'
+    | '/admin-kb20/security'
+    | '/admin-kb20/seo'
     | '/admin-kb20/system'
     | '/admin-kb20/users'
     | '/admin-kb20/validator'
@@ -499,11 +549,16 @@ export interface FileRouteTypes {
     | '/sitemap'
     | '/sitemap.xml'
     | '/terms'
+    | '/admin-kb20/ads'
+    | '/admin-kb20/analytics'
     | '/admin-kb20/diagnostics'
+    | '/admin-kb20/images'
     | '/admin-kb20/import-export'
     | '/admin-kb20/login'
     | '/admin-kb20/mocks'
     | '/admin-kb20/reports'
+    | '/admin-kb20/security'
+    | '/admin-kb20/seo'
     | '/admin-kb20/system'
     | '/admin-kb20/users'
     | '/admin-kb20/validator'
@@ -546,11 +601,16 @@ export interface FileRouteTypes {
     | '/sitemap'
     | '/sitemap.xml'
     | '/terms'
+    | '/admin-kb20/ads'
+    | '/admin-kb20/analytics'
     | '/admin-kb20/diagnostics'
+    | '/admin-kb20/images'
     | '/admin-kb20/import-export'
     | '/admin-kb20/login'
     | '/admin-kb20/mocks'
     | '/admin-kb20/reports'
+    | '/admin-kb20/security'
+    | '/admin-kb20/seo'
     | '/admin-kb20/system'
     | '/admin-kb20/users'
     | '/admin-kb20/validator'
@@ -594,11 +654,16 @@ export interface RootRouteChildren {
   SitemapRoute: typeof SitemapRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   TermsRoute: typeof TermsRoute
+  AdminKb20AdsRoute: typeof AdminKb20AdsRoute
+  AdminKb20AnalyticsRoute: typeof AdminKb20AnalyticsRoute
   AdminKb20DiagnosticsRoute: typeof AdminKb20DiagnosticsRoute
+  AdminKb20ImagesRoute: typeof AdminKb20ImagesRoute
   AdminKb20ImportExportRoute: typeof AdminKb20ImportExportRoute
   AdminKb20LoginRoute: typeof AdminKb20LoginRoute
   AdminKb20MocksRoute: typeof AdminKb20MocksRoute
   AdminKb20ReportsRoute: typeof AdminKb20ReportsRoute
+  AdminKb20SecurityRoute: typeof AdminKb20SecurityRoute
+  AdminKb20SeoRoute: typeof AdminKb20SeoRoute
   AdminKb20SystemRoute: typeof AdminKb20SystemRoute
   AdminKb20UsersRoute: typeof AdminKb20UsersRoute
   AdminKb20ValidatorRoute: typeof AdminKb20ValidatorRoute
@@ -873,6 +938,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AdminKb20SystemRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/admin-kb20/seo': {
+      id: '/admin-kb20/seo'
+      path: '/admin-kb20/seo'
+      fullPath: '/admin-kb20/seo'
+      preLoaderRoute: typeof AdminKb20SeoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/admin-kb20/security': {
+      id: '/admin-kb20/security'
+      path: '/admin-kb20/security'
+      fullPath: '/admin-kb20/security'
+      preLoaderRoute: typeof AdminKb20SecurityRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/admin-kb20/reports': {
       id: '/admin-kb20/reports'
       path: '/admin-kb20/reports'
@@ -901,11 +980,32 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AdminKb20ImportExportRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/admin-kb20/images': {
+      id: '/admin-kb20/images'
+      path: '/admin-kb20/images'
+      fullPath: '/admin-kb20/images'
+      preLoaderRoute: typeof AdminKb20ImagesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/admin-kb20/diagnostics': {
       id: '/admin-kb20/diagnostics'
       path: '/admin-kb20/diagnostics'
       fullPath: '/admin-kb20/diagnostics'
       preLoaderRoute: typeof AdminKb20DiagnosticsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/admin-kb20/analytics': {
+      id: '/admin-kb20/analytics'
+      path: '/admin-kb20/analytics'
+      fullPath: '/admin-kb20/analytics'
+      preLoaderRoute: typeof AdminKb20AnalyticsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/admin-kb20/ads': {
+      id: '/admin-kb20/ads'
+      path: '/admin-kb20/ads'
+      fullPath: '/admin-kb20/ads'
+      preLoaderRoute: typeof AdminKb20AdsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/admin-kb20/questions/': {
@@ -972,11 +1072,16 @@ const rootRouteChildren: RootRouteChildren = {
   SitemapRoute: SitemapRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   TermsRoute: TermsRoute,
+  AdminKb20AdsRoute: AdminKb20AdsRoute,
+  AdminKb20AnalyticsRoute: AdminKb20AnalyticsRoute,
   AdminKb20DiagnosticsRoute: AdminKb20DiagnosticsRoute,
+  AdminKb20ImagesRoute: AdminKb20ImagesRoute,
   AdminKb20ImportExportRoute: AdminKb20ImportExportRoute,
   AdminKb20LoginRoute: AdminKb20LoginRoute,
   AdminKb20MocksRoute: AdminKb20MocksRoute,
   AdminKb20ReportsRoute: AdminKb20ReportsRoute,
+  AdminKb20SecurityRoute: AdminKb20SecurityRoute,
+  AdminKb20SeoRoute: AdminKb20SeoRoute,
   AdminKb20SystemRoute: AdminKb20SystemRoute,
   AdminKb20UsersRoute: AdminKb20UsersRoute,
   AdminKb20ValidatorRoute: AdminKb20ValidatorRoute,

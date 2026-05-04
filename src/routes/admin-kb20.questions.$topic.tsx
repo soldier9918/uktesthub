@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
@@ -127,7 +127,12 @@ function flatten(file: AnyFile): FlatQuestion[] {
   return out;
 }
 
+type EditorSearch = { q?: string };
+
 export const Route = createFileRoute("/admin-kb20/questions/$topic")({
+  validateSearch: (raw: Record<string, unknown>): EditorSearch => ({
+    q: typeof raw.q === "string" && raw.q.length > 0 ? raw.q : undefined,
+  }),
   loader: async ({ params }) => {
     const file = (await loadTopicFileForAdmin(params.topic)) as AnyFile | undefined;
     if (!file) throw notFound();
@@ -163,7 +168,8 @@ const PAGE_SIZE = 25;
 
 function QuestionsBrowser() {
   const { topic, questions } = Route.useLoaderData();
-  const [search, setSearch] = useState("");
+  const initialSearch = Route.useSearch().q ?? "";
+  const [search, setSearch] = useState(initialSearch);
   const [type, setType] = useState<string>("all");
   const [imageFilter, setImageFilter] = useState<"all" | "with" | "without">("all");
   const [page, setPage] = useState(1);
@@ -171,6 +177,19 @@ function QuestionsBrowser() {
   const [bump, setBump] = useState(0);
   const overrides = useOverrides();
   void bump;
+  const highlightId = initialSearch;
+
+  // Scroll to and highlight the deep-linked question once.
+  useEffect(() => {
+    if (!highlightId) return;
+    const t = window.setTimeout(() => {
+      const el = document.querySelector(`[data-qid="${CSS.escape(highlightId)}"]`);
+      if (el && "scrollIntoView" in el) {
+        (el as HTMLElement).scrollIntoView({ behavior: "smooth", block: "center" });
+      }
+    }, 60);
+    return () => window.clearTimeout(t);
+  }, [highlightId]);
 
   const types = useMemo(() => {
     const s = new Set<string>();
@@ -275,7 +294,8 @@ function QuestionsBrowser() {
           {visible.map((q: FlatQuestion, idx: number) => (
             <li
               key={q.id}
-              className="rounded-xl border border-border bg-card p-4"
+              data-qid={q.id}
+              className={`rounded-xl border bg-card p-4 ${q.id === highlightId ? "border-coral ring-2 ring-coral/30" : "border-border"}`}
             >
               <div className="flex items-start gap-3">
                 <div className="text-xs text-muted-foreground w-12 shrink-0">

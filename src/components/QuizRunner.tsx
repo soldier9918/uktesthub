@@ -27,6 +27,7 @@ import { ReportQuestionButton } from "./ReportQuestionButton";
 import { useOverrides, applyOverrides } from "@/lib/overrides";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/lib/auth-context";
+import { trackEvent } from "@/lib/analytics";
 
 type Mode = "practice" | "exam";
 // Answer shapes per question type:
@@ -119,6 +120,16 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
   const [timeLeft, setTimeLeft] = useState(quiz.timeLimit);
   const [finished, setFinished] = useState(false);
 
+  // Track quiz_start when the user picks a mode for the first time.
+  useEffect(() => {
+    if (!mode) return;
+    void trackEvent({
+      event_type: "quiz_start",
+      topic_slug: (quiz as { topicSlug?: string }).topicSlug ?? null,
+      mock_slug: quiz.slug,
+      metadata: { mode },
+    });
+  }, [mode, quiz]);
   useEffect(() => {
     if (mode !== "exam" || finished) return;
     if (timeLeft <= 0) {
@@ -196,6 +207,12 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
 
   useEffect(() => {
     if (!finished) return;
+    void trackEvent({
+      event_type: "quiz_complete",
+      topic_slug: (quiz as { topicSlug?: string }).topicSlug ?? null,
+      mock_slug: quiz.slug,
+      metadata: { score, total: quiz.questions.length, percent },
+    });
     try {
       const key = `uk-test-hub:best:${quiz.slug}`;
       const prev = parseInt(localStorage.getItem(key) ?? "0", 10) || 0;

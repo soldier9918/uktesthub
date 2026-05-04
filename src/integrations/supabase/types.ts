@@ -14,6 +14,117 @@ export type Database = {
   }
   public: {
     Tables: {
+      ad_slots: {
+        Row: {
+          ad_slot_id: string | null
+          enabled: boolean
+          id: string
+          label: string
+          placement: string
+          size: string | null
+          slot_key: string
+          updated_at: string
+          updated_by: string | null
+        }
+        Insert: {
+          ad_slot_id?: string | null
+          enabled?: boolean
+          id?: string
+          label: string
+          placement: string
+          size?: string | null
+          slot_key: string
+          updated_at?: string
+          updated_by?: string | null
+        }
+        Update: {
+          ad_slot_id?: string | null
+          enabled?: boolean
+          id?: string
+          label?: string
+          placement?: string
+          size?: string | null
+          slot_key?: string
+          updated_at?: string
+          updated_by?: string | null
+        }
+        Relationships: []
+      }
+      admin_allowlist: {
+        Row: {
+          created_at: string
+          created_by: string | null
+          email: string
+          id: string
+          note: string | null
+        }
+        Insert: {
+          created_at?: string
+          created_by?: string | null
+          email: string
+          id?: string
+          note?: string | null
+        }
+        Update: {
+          created_at?: string
+          created_by?: string | null
+          email?: string
+          id?: string
+          note?: string | null
+        }
+        Relationships: []
+      }
+      admin_audit_log: {
+        Row: {
+          action: string
+          actor_email: string | null
+          actor_user_id: string | null
+          created_at: string
+          detail: Json | null
+          id: string
+          target: string | null
+        }
+        Insert: {
+          action: string
+          actor_email?: string | null
+          actor_user_id?: string | null
+          created_at?: string
+          detail?: Json | null
+          id?: string
+          target?: string | null
+        }
+        Update: {
+          action?: string
+          actor_email?: string | null
+          actor_user_id?: string | null
+          created_at?: string
+          detail?: Json | null
+          id?: string
+          target?: string | null
+        }
+        Relationships: []
+      }
+      admin_settings: {
+        Row: {
+          key: string
+          updated_at: string
+          updated_by: string | null
+          value: Json
+        }
+        Insert: {
+          key: string
+          updated_at?: string
+          updated_by?: string | null
+          value: Json
+        }
+        Update: {
+          key?: string
+          updated_at?: string
+          updated_by?: string | null
+          value?: Json
+        }
+        Relationships: []
+      }
       bookmarks: {
         Row: {
           created_at: string
@@ -144,6 +255,36 @@ export type Database = {
           id?: string
           mock_slug?: string
           topic_slug?: string
+          updated_at?: string
+          updated_by?: string | null
+        }
+        Relationships: []
+      }
+      page_seo_overrides: {
+        Row: {
+          description: string | null
+          noindex: boolean
+          og_image: string | null
+          path: string
+          title: string | null
+          updated_at: string
+          updated_by: string | null
+        }
+        Insert: {
+          description?: string | null
+          noindex?: boolean
+          og_image?: string | null
+          path: string
+          title?: string | null
+          updated_at?: string
+          updated_by?: string | null
+        }
+        Update: {
+          description?: string | null
+          noindex?: boolean
+          og_image?: string | null
+          path?: string
+          title?: string | null
           updated_at?: string
           updated_by?: string | null
         }
@@ -299,6 +440,45 @@ export type Database = {
           topic_slug?: string
           total?: number
           user_id?: string
+        }
+        Relationships: []
+      }
+      quiz_events: {
+        Row: {
+          created_at: string
+          event_type: string
+          id: string
+          metadata: Json | null
+          mock_slug: string | null
+          path: string | null
+          question_id: string | null
+          session_id: string | null
+          topic_slug: string | null
+          user_id: string | null
+        }
+        Insert: {
+          created_at?: string
+          event_type: string
+          id?: string
+          metadata?: Json | null
+          mock_slug?: string | null
+          path?: string | null
+          question_id?: string | null
+          session_id?: string | null
+          topic_slug?: string | null
+          user_id?: string | null
+        }
+        Update: {
+          created_at?: string
+          event_type?: string
+          id?: string
+          metadata?: Json | null
+          mock_slug?: string | null
+          path?: string | null
+          question_id?: string | null
+          session_id?: string | null
+          topic_slug?: string | null
+          user_id?: string | null
         }
         Relationships: []
       }
