@@ -464,6 +464,15 @@ export function mockToQuiz(category: string, mock: MockTest): Quiz {
     timeLimit: mock.questions.length * 60,
     difficulty: "Medium",
     passMark: 75,
-    questions: mock.questions.map((raw, idx) => rawToQuestion(raw, idx)),
+    questions: mock.questions.map((raw, idx) => {
+      const q = rawToQuestion(raw, idx);
+      // Attach the original bank id (e.g. "sa-mc-0017") so admin overrides —
+      // keyed by bank id — can be matched at render time. Falls back to a
+      // deterministic synthetic id for legacy v1 files without bank ids.
+      const sourceId =
+        (raw as { id?: string }).id ?? `${mock.slug}-q${idx + 1}`;
+      (q as unknown as { sourceId: string }).sourceId = sourceId;
+      return q;
+    }),
   };
 }
