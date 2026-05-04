@@ -472,6 +472,9 @@ function BulkEditPage() {
             <Button onClick={runStripWeird} variant="outline" disabled={items.length === 0}>
               Strip non-Latin / control characters
             </Button>
+            <Button onClick={runStripArtifacts} variant="outline" disabled={items.length === 0}>
+              Strip JSON/code artifacts (e.g. "],question")
+            </Button>
           </div>
         </div>
 
