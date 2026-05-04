@@ -127,7 +127,12 @@ function flatten(file: AnyFile): FlatQuestion[] {
   return out;
 }
 
+type EditorSearch = { q?: string };
+
 export const Route = createFileRoute("/admin-kb20/questions/$topic")({
+  validateSearch: (raw: Record<string, unknown>): EditorSearch => ({
+    q: typeof raw.q === "string" && raw.q.length > 0 ? raw.q : undefined,
+  }),
   loader: async ({ params }) => {
     const file = (await loadTopicFileForAdmin(params.topic)) as AnyFile | undefined;
     if (!file) throw notFound();
