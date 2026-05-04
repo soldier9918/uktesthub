@@ -107,6 +107,17 @@ function Validator() {
 
   const clearIgnored = () => persistIgnored(new Set());
 
+  const ignoreAllInTopic = (topic: string) => {
+    const sigs = findings
+      .filter((f) => f.topic === topic && !ignored.has(findingSig(f)))
+      .map((f) => findingSig(f));
+    if (sigs.length === 0) return;
+    if (!window.confirm(`Ignore all ${sigs.length} finding(s) in "${topic}"? They will be hidden as false positives.`)) return;
+    const next = new Set(ignored);
+    for (const s of sigs) next.add(s);
+    persistIgnored(next);
+  };
+
   // Restore previous results on mount.
   useEffect(() => {
     try {
@@ -619,6 +630,17 @@ function Validator() {
                       : `Bulk-clean ${cleanableCount}`}
                   </button>
                 )}
+                <button
+                  type="button"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    ignoreAllInTopic(topic);
+                  }}
+                  className="rounded-md border border-border bg-background px-2 py-1 text-xs font-semibold text-muted-foreground hover:bg-muted"
+                  title="Mark every finding in this topic as a false positive and hide them"
+                >
+                  Ignore all {list.length}
+                </button>
                 <Badge variant="destructive">{list.length}</Badge>
               </div>
             </summary>
