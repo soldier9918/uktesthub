@@ -43,6 +43,10 @@ function Validator() {
   const [publicImages, setPublicImages] = useState<Set<string>>(new Set());
   const [ruleFilter, setRuleFilter] = useState<Finding["rule"] | "all">("all");
   const [lastRunAt, setLastRunAt] = useState<string | null>(null);
+  const [lookupId, setLookupId] = useState("");
+  const [lookupBusy, setLookupBusy] = useState(false);
+  const [lookupError, setLookupError] = useState<string | null>(null);
+  const navigate = useNavigate();
 
   const CACHE_KEY = "admin-validator-results-v1";
 
