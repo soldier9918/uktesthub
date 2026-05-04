@@ -333,16 +333,18 @@ function Validator() {
           (q.prompt as string | undefined);
         const newQ = clean(qText);
         const opts = q.options as unknown[] | undefined;
-        const newOpts = Array.isArray(opts)
-          ? opts.map((o) => (typeof o === "string" ? clean(o) ?? o : o))
-          : undefined;
+        const newOpts: string[] | null = Array.isArray(opts)
+          ? opts.map((o) => (typeof o === "string" ? clean(o) ?? o : String(o)))
+          : Array.isArray(prev?.options)
+            ? (prev?.options as string[])
+            : null;
         const newExp = clean(q.explanation);
 
         rows.push({
           topic,
           question_id: id,
           question: newQ ?? prev?.question ?? qText ?? null,
-          options: newOpts ?? prev?.options ?? opts ?? null,
+          options: newOpts,
           correct_answer: prev?.correct_answer ?? null,
           explanation: newExp ?? prev?.explanation ?? (q.explanation as string | undefined) ?? null,
           image: prev?.image ?? null,
