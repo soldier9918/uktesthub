@@ -169,7 +169,8 @@ const PAGE_SIZE = 25;
 
 function QuestionsBrowser() {
   const { topic, questions } = Route.useLoaderData();
-  const initialSearch = Route.useSearch().q ?? "";
+  const { q: initialQ, from } = Route.useSearch();
+  const initialSearch = initialQ ?? "";
   const [search, setSearch] = useState(initialSearch);
   const [type, setType] = useState<string>("all");
   const [imageFilter, setImageFilter] = useState<"all" | "with" | "without">("all");
