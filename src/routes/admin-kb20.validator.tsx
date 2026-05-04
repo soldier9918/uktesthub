@@ -4,7 +4,7 @@ import { AdminGate } from "@/components/AdminGate";
 import { categories } from "@/data/categories";
 import { loadTopicFileForAdmin } from "@/data/mocks";
 import { validateTopicBank, type Finding } from "@/lib/admin/validator";
-import { applyOverrideToQuestionRecord, loadOverrides } from "@/lib/overrides";
+import { applyOverrideToQuestionRecord, invalidateOverrides, loadOverrides } from "@/lib/overrides";
 import { Badge } from "@/components/ui/badge";
 
 export const Route = createFileRoute("/admin-kb20/validator")({
