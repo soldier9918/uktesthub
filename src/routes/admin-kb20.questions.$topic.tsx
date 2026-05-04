@@ -130,12 +130,13 @@ function flatten(file: AnyFile): FlatQuestion[] {
   return out;
 }
 
-type EditorSearch = { q?: string; from?: "validator" };
+type EditorSearch = { q?: string; from?: "validator" | "reports"; edit?: string };
 
 export const Route = createFileRoute("/admin-kb20/questions/$topic")({
   validateSearch: (raw: Record<string, unknown>): EditorSearch => ({
     q: typeof raw.q === "string" && raw.q.length > 0 ? raw.q : undefined,
-    from: raw.from === "validator" ? "validator" : undefined,
+    from: raw.from === "validator" ? "validator" : raw.from === "reports" ? "reports" : undefined,
+    edit: typeof raw.edit === "string" && raw.edit.length > 0 ? raw.edit : undefined,
   }),
   loader: async ({ params }) => {
     const file = (await loadTopicFileForAdmin(params.topic)) as AnyFile | undefined;
