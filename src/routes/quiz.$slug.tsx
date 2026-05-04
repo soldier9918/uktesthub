@@ -7,7 +7,7 @@ import { QuizRunner } from "@/components/QuizRunner";
 import { getQuiz, getQuizzesByCategory, type Quiz } from "@/data/quizzes";
 import { getCategory } from "@/data/categories";
 import { listMockSlots } from "@/data/mocks";
-import { captureMockBaseUrl } from "@/server/mock-base-url";
+import { captureMockBaseUrl } from "@/lib/mock-base-url";
 
 
 export const Route = createFileRoute("/quiz/$slug")({
