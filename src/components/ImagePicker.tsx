@@ -16,9 +16,10 @@ async function loadData(): Promise<{ inventory: string[]; usage: Record<string, 
   if (cachedInventory && cachedUsage) {
     return { inventory: cachedInventory, usage: cachedUsage };
   }
+  const bust = `?v=${Date.now()}`;
   const [invRes, useRes] = await Promise.all([
-    fetch("/mocks/image-inventory.json"),
-    fetch("/mocks/image-usage.json"),
+    fetch(`/mocks/image-inventory.json${bust}`, { cache: "no-store" }),
+    fetch(`/mocks/image-usage.json${bust}`, { cache: "no-store" }),
   ]);
   cachedInventory = (await invRes.json()) as string[];
   cachedUsage = useRes.ok ? ((await useRes.json()) as Record<string, number>) : {};
