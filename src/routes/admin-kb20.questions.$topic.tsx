@@ -168,7 +168,8 @@ const PAGE_SIZE = 25;
 
 function QuestionsBrowser() {
   const { topic, questions } = Route.useLoaderData();
-  const [search, setSearch] = useState("");
+  const initialSearch = Route.useSearch().q ?? "";
+  const [search, setSearch] = useState(initialSearch);
   const [type, setType] = useState<string>("all");
   const [imageFilter, setImageFilter] = useState<"all" | "with" | "without">("all");
   const [page, setPage] = useState(1);
@@ -176,6 +177,19 @@ function QuestionsBrowser() {
   const [bump, setBump] = useState(0);
   const overrides = useOverrides();
   void bump;
+  const highlightId = initialSearch;
+
+  // Scroll to and highlight the deep-linked question once.
+  useEffect(() => {
+    if (!highlightId) return;
+    const t = window.setTimeout(() => {
+      const el = document.querySelector(`[data-qid="${CSS.escape(highlightId)}"]`);
+      if (el && "scrollIntoView" in el) {
+        (el as HTMLElement).scrollIntoView({ behavior: "smooth", block: "center" });
+      }
+    }, 60);
+    return () => window.clearTimeout(t);
+  }, [highlightId]);
 
   const types = useMemo(() => {
     const s = new Set<string>();
