@@ -23,6 +23,7 @@ import type {
 } from "@/data/quizzes";
 import { AdSlot } from "./AdSlot";
 import { RoadSign } from "./RoadSign";
+import { ReportQuestionButton } from "./ReportQuestionButton";
 import { useOverrides, applyOverrides } from "@/lib/overrides";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/lib/auth-context";
