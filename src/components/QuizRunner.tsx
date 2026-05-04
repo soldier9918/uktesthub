@@ -207,6 +207,12 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
 
   useEffect(() => {
     if (!finished) return;
+    void trackEvent({
+      event_type: "quiz_complete",
+      topic_slug: (quiz as { topicSlug?: string }).topicSlug ?? null,
+      mock_slug: quiz.slug,
+      metadata: { score, total: quiz.questions.length, percent },
+    });
     try {
       const key = `uk-test-hub:best:${quiz.slug}`;
       const prev = parseInt(localStorage.getItem(key) ?? "0", 10) || 0;
