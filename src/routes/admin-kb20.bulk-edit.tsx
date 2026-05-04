@@ -184,6 +184,59 @@ function applyFindReplace(
   return changes;
 }
 
+// Strip JSON/code artifacts that leak in from generation, e.g.
+//   "Higher speed limits],question"  -> "Higher speed limits"
+//   'Foo"," bar' -> 'Foo, bar'
+//   trailing ", ", '],', '"]', '"},', '],"question"', etc.
+const ARTIFACT_PATTERNS: RegExp[] = [
+  /\s*\][^\]]*?(?:question|options?|explanation|answer|correctAnswer)\b.*$/i,
+  /\s*[\]}"',]+\s*(?:question|options?|explanation|answer|correctAnswer)\b.*$/i,
+  /\s*[\]}"]+\s*,\s*$/,
+  /\s*[\]}]+\s*$/,
+  /\s*",\s*"$/,
+  /\s*",$/,
+  /^\s*"+/,
+  /"+\s*$/,
+];
+function stripArtifacts(s: string): string {
+  let out = s;
+  let prev: string;
+  do {
+    prev = out;
+    for (const re of ARTIFACT_PATTERNS) out = out.replace(re, "");
+  } while (out !== prev);
+  return out.trim();
+}
+function hasArtifacts(s: string): boolean {
+  return stripArtifacts(s) !== s.trim();
+}
+
+function applyStripArtifacts(items: FlatBankItem[]): Change[] {
+  const changes: Change[] = [];
+  for (const it of items) {
+    const qDirty = hasArtifacts(it.question);
+    const oDirty = (it.options ?? []).some(hasArtifacts);
+    const eDirty = it.explanation ? hasArtifacts(it.explanation) : false;
+    if (!qDirty && !oDirty && !eDirty) continue;
+    const qNew = qDirty ? stripArtifacts(it.question) : it.question;
+    const oNew = it.options
+      ? it.options.map((o) => (hasArtifacts(o) ? stripArtifacts(o) : o))
+      : undefined;
+    const eNew = eDirty && it.explanation ? stripArtifacts(it.explanation) : it.explanation;
+    changes.push({
+      id: it.id,
+      field: "question",
+      before: JSON.stringify({ q: it.question, o: it.options, e: it.explanation }),
+      after: JSON.stringify({ q: qNew, o: oNew, e: eNew }),
+      newQuestion: qDirty ? qNew : undefined,
+      newOptions:
+        oNew && JSON.stringify(oNew) !== JSON.stringify(it.options) ? oNew : undefined,
+      newExplanation: eDirty ? eNew : undefined,
+    });
+  }
+  return changes;
+}
+
 function applyStripWeird(items: FlatBankItem[]): Change[] {
   const changes: Change[] = [];
   for (const it of items) {
@@ -272,6 +325,12 @@ function BulkEditPage() {
     setResult(null);
     setErr(null);
     setPreview(applyStripWeird(items));
+  };
+
+  const runStripArtifacts = () => {
+    setResult(null);
+    setErr(null);
+    setPreview(applyStripArtifacts(items));
   };
 
   const apply = async () => {
@@ -412,6 +471,9 @@ function BulkEditPage() {
             </Button>
             <Button onClick={runStripWeird} variant="outline" disabled={items.length === 0}>
               Strip non-Latin / control characters
+            </Button>
+            <Button onClick={runStripArtifacts} variant="outline" disabled={items.length === 0}>
+              Strip JSON/code artifacts (e.g. "],question")
             </Button>
           </div>
         </div>
