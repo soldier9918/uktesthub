@@ -38,6 +38,7 @@ export function QuestionEditDialog({ topic, questionId, defaults, liveLink, onCl
   const [busy, setBusy] = useState(false);
   const [err, setErr] = useState<string | null>(null);
   const [savedOk, setSavedOk] = useState(false);
+  const [pickerOpen, setPickerOpen] = useState(false);
   const fileRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
