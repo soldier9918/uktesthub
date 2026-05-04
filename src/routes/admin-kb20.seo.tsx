@@ -301,13 +301,16 @@ function SeoEditor({
       return;
     }
     setSaving(true);
-    const { error } = await supabase.from("page_seo_overrides").upsert([{
-      path,
-      title: title || null,
-      description: description || null,
-      og_image: ogImage || null,
-      noindex,
-    }]);
+    const { error } = await supabase.from("page_seo_overrides").upsert(
+      [{
+        path,
+        title: title || null,
+        description: description || null,
+        og_image: ogImage || null,
+        noindex,
+      }],
+      { onConflict: "path" },
+    );
     setSaving(false);
     if (error) {
       toast.error(error.message);
