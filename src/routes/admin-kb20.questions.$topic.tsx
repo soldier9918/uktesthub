@@ -326,16 +326,20 @@ function QuestionsBrowser() {
                     {q.usedInMocks.length > 0 ? (
                       <span className="flex flex-wrap items-center gap-1 text-[10px] text-muted-foreground">
                         Live in:
-                        {q.usedInMocks.map((n) => (
+                        {q.usedInMocks.map(({ mockNumber, slot }) => (
                           <a
-                            key={n}
-                            href={`/quiz/${topic}-mock-${n}`}
+                            key={`${mockNumber}-${slot}`}
+                            href={`/quiz/${topic}-mock-${mockNumber}${slot ? `#q${slot}` : ""}`}
                             target="_blank"
                             rel="noreferrer"
                             className="rounded border border-border bg-background px-1.5 py-0.5 font-mono text-[10px] text-coral hover:border-coral hover:bg-coral/5"
-                            title={`Open Mock Test ${n} on the live site (new tab)`}
+                            title={
+                              slot
+                                ? `Open Mock Test ${mockNumber}, Question ${slot} on the live site (new tab)`
+                                : `Open Mock Test ${mockNumber} on the live site (new tab)`
+                            }
                           >
-                            Mock {n}
+                            Mock {mockNumber}{slot ? ` · Q${slot}` : ""}
                           </a>
                         ))}
                       </span>
