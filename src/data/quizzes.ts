@@ -1202,6 +1202,8 @@ export const getStaticQuiz = (slug: string): Quiz | undefined =>
 
 export const getQuiz = async (slug: string): Promise<Quiz | undefined> => {
   if (/-mock-\d+$/.test(slug)) {
+    const { isMockDisabled } = await import("@/lib/admin/mock-status");
+    if (await isMockDisabled(slug)) return undefined;
     const mock = await loadMockBySlug(slug);
     if (mock) {
       const found = findTopic(mock.topic);
