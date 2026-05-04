@@ -40,6 +40,8 @@ type AnyFile = V1 | V2;
 
 import { loadTopicFileForAdmin } from "@/data/mocks";
 
+type MockUsage = { mockNumber: number; slot: number };
+
 type FlatQuestion = {
   id: string;
   type: string;
@@ -49,7 +51,7 @@ type FlatQuestion = {
   imageAlt?: string;
   options?: string[];
   correctText?: string;
-  usedInMocks: number[];
+  usedInMocks: MockUsage[];
   raw: RawQuestion;
 };
 
