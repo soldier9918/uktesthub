@@ -310,6 +310,8 @@ function BulkEditPage() {
         written += batch.length;
       }
       invalidateOverrides();
+      sessionStorage.removeItem("admin-validator-results-v1");
+      sessionStorage.removeItem("admin-validator-results-v2");
       setResult(`Wrote ${written} override${written === 1 ? "" : "s"}.`);
       setPreview([]);
     } catch (e) {
