@@ -111,6 +111,26 @@ function Validator() {
     }
   }, []);
 
+  // Mark stale and clear cached results whenever overrides change elsewhere
+  // (admin edit dialog save, bulk edit apply, etc.) so the user knows the
+  // current findings no longer reflect the database.
+  useEffect(() => {
+    const onInvalidate = () => {
+      try {
+        sessionStorage.removeItem(CACHE_KEY);
+        sessionStorage.removeItem("admin-validator-results-v1");
+        sessionStorage.removeItem("admin-validator-results-v2");
+      } catch {
+        /* ignore */
+      }
+      setFindings([]);
+      setUsageByTopic(new Map());
+      setStaleNotice(true);
+    };
+    window.addEventListener("question-overrides-invalidated", onInvalidate);
+    return () => window.removeEventListener("question-overrides-invalidated", onInvalidate);
+  }, []);
+
   // topic -> (questionId -> [{mockNumber, slot}])
   const [usageByTopic, setUsageByTopic] = useState<Map<string, Map<string, UsageEntry[]>>>(
     new Map(),
