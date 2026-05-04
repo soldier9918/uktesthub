@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useAuth } from "@/lib/auth-context";
+import { ImagePicker } from "@/components/ImagePicker";
 
 type Props = {
   topic: string;
@@ -37,6 +38,7 @@ export function QuestionEditDialog({ topic, questionId, defaults, liveLink, onCl
   const [busy, setBusy] = useState(false);
   const [err, setErr] = useState<string | null>(null);
   const [savedOk, setSavedOk] = useState(false);
+  const [pickerOpen, setPickerOpen] = useState(false);
   const fileRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
@@ -165,11 +167,21 @@ export function QuestionEditDialog({ topic, questionId, defaults, liveLink, onCl
                 <img src={image} alt="" className="h-24 w-24 rounded-md border border-border object-contain bg-white p-1" />
               )}
               <div className="flex-1 space-y-2">
-                <Input
-                  value={image}
-                  onChange={(e) => setImage(e.target.value)}
-                  placeholder="Image URL or upload below"
-                />
+                <div className="flex gap-2">
+                  <Input
+                    value={image}
+                    onChange={(e) => setImage(e.target.value)}
+                    placeholder="Image URL or browse/upload below"
+                  />
+                  <Button
+                    type="button"
+                    variant="outline"
+                    size="sm"
+                    onClick={() => setPickerOpen(true)}
+                  >
+                    Browse images
+                  </Button>
+                </div>
                 <Input
                   value={imageAlt}
                   onChange={(e) => setImageAlt(e.target.value)}
@@ -233,6 +245,13 @@ export function QuestionEditDialog({ topic, questionId, defaults, liveLink, onCl
           </div>
         </div>
       </div>
+      {pickerOpen && (
+        <ImagePicker
+          selected={image}
+          onSelect={(p) => setImage(p)}
+          onClose={() => setPickerOpen(false)}
+        />
+      )}
     </div>
   );
 }

@@ -1,52 +1,41 @@
-## Goal
-Let you wipe "weird characters" (CJK like 快速, zero-width, control chars, smart-quote noise, etc.) across an entire topic in one click — both from the **Bulk Edit** page and directly from the **Validator** results.
+## Image Picker for Question Editor
 
-## What gets cleaned
-Reuse the existing `src/lib/admin/text-cleanup.ts` utility and add a `stripSuspicious(text)` helper that removes:
-- CJK ranges (Hiragana, Katakana, Han, Hangul) — e.g. `快速`, `カナ`
-- Zero-width / BOM chars (`\u200B-\u200D`, `\uFEFF`)
-- Control chars (`\u0000-\u001F` except `\n\t`)
-- Replacement char `\uFFFD`
-- Collapses any double spaces left behind and trims
+Adds a "Browse images" button to the Edit Question dialog that opens a searchable grid of every image file in the repo's `public/` folder. Each thumbnail shows how many questions currently reference it.
 
-The validator already detects these under "Suspicious characters", so the same regex set is the source of truth — no risk of fix/detect drift.
+### What you'll see
 
-## UI changes
+In the **Edit question** dialog, next to the Image URL field, a new **Browse images** button. Clicking it opens a modal with:
 
-### 1. Bulk Edit page (`/admin-kb20/bulk-edit`)
-Add a new button next to "Strip JSON/code artifacts":
-- **"Strip suspicious characters (CJK, zero-width, control)"**
-- Scans `question`, `options[]`, `explanation` for the selected topic
-- Shows a diff preview (before → after) per question
-- "Apply" writes overrides to Supabase, fires `question-overrides-invalidated`
+- **Search box** — filter by filename (e.g. type "width" to find width-limit signs)
+- **Folder filter chips** — All · Road Signs · Road Markings · Driving Theory · Motorway Rules · Quiz Images (auto-derived from inventory)
+- **Thumbnail grid** — every image in the repo, with filename and a small badge `Used by N` underneath
+- Click a thumbnail → image path auto-fills the field, picker closes
+- Currently-selected image is highlighted with a coloured ring
 
-### 2. Validator page (`/admin-kb20/validator`)
-On each topic group header (e.g. `dog-grooming-theory · 74`), add a small action:
-- **"Bulk-clean suspicious chars in this topic"**
-- Same logic, scoped only to questions currently flagged in that group
-- Same preview + apply flow, then auto re-runs validation so cleaned items disappear
+### How it works
 
-## Technical details
-- New helper in `src/lib/admin/text-cleanup.ts`:
-  ```ts
-  export const SUSPICIOUS_PATTERNS: RegExp[] = [
-    /[\u3040-\u30FF\u31F0-\u31FF\u4E00-\u9FFF\uAC00-\uD7AF]/g, // CJK
-    /[\u200B-\u200D\uFEFF]/g,                                   // zero-width
-    /[\u0000-\u0008\u000B-\u001F\u007F]/g,                      // control
-    /\uFFFD/g,                                                   // replacement
-  ];
-  export function stripSuspicious(input: string): string { ... }
-  export function cleanAll(input: string): string { // artifact + suspicious }
-  ```
-- Bulk action in `admin-kb20.bulk-edit.tsx` mirrors the existing artifact-stripper, just calling `stripSuspicious`.
-- Validator gets a `bulkCleanGroup(topic)` handler that walks `findings.filter(f => f.topic === topic && f.rule === 'suspicious-chars')`, builds an override per question, batch-saves, then calls `run()`.
-- Saves go through the existing `saveOverride` path so RLS, change events, and history all keep working.
+1. **Extend the build script** `scripts/build_mock_manifest.mjs` to:
+   - Walk **all image-bearing folders** under `public/` (currently only `public/quiz-images/` — will add `road-signs`, `road-markings`, `motorway-rules`)
+   - Emit a new `public/mocks/image-usage.json` file mapping each image path to the count of questions that use it (built from the `imagePaths` already collected per topic)
 
-## Files to edit
-- `src/lib/admin/text-cleanup.ts` (add patterns + helpers)
-- `src/routes/admin-kb20.bulk-edit.tsx` (new button + action)
-- `src/routes/admin-kb20.validator.tsx` (per-topic bulk-clean button)
+2. **New component** `src/components/ImagePicker.tsx`:
+   - Fetches `/mocks/image-inventory.json` and `/mocks/image-usage.json` once (cached)
+   - Groups by top-level folder for filter chips
+   - Renders a responsive grid of thumbnails with usage badges
+   - Calls `onSelect(path)` when a thumbnail is clicked
 
-## Out of scope
-- Auto-translating CJK back to English (we just delete — your screenshot shows the English answer is already correct, the CJK is junk appended to it).
-- Editing the source JSON in `public/mocks/`; everything stays as overrides like today.
+3. **Edit** `src/components/QuestionEditDialog.tsx`:
+   - Add a **Browse images** button next to the Image URL input
+   - On open, render `<ImagePicker selected={image} onSelect={setImage} onClose={...} />`
+
+### Files
+
+- **Edit:** `scripts/build_mock_manifest.mjs` — broaden image walk + emit usage map
+- **New:** `src/components/ImagePicker.tsx` — modal grid component
+- **Edit:** `src/components/QuestionEditDialog.tsx` — add Browse images button + picker integration
+
+### Notes
+
+- The picker reads static JSON files served from the CDN, so it's instant after first load.
+- The usage badge refreshes on every deploy (regenerated by the build script).
+- Uploaded cloud-storage images are still supported via the existing **Choose file** input below the picker — picker covers repo files only, as you asked.
