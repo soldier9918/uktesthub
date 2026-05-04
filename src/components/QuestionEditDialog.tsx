@@ -109,8 +109,7 @@ export function QuestionEditDialog({ topic, questionId, defaults, liveLink, onCl
     setBusy(false);
     if (error) return setErr(error.message);
     invalidateOverrides();
-    sessionStorage.removeItem("admin-validator-results-v1");
-    sessionStorage.removeItem("admin-validator-results-v2");
+    // Keep validator results cache so back navigation returns to the list.
     onSaved();
     onClose();
   };
