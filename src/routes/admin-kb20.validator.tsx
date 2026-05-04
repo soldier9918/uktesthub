@@ -42,6 +42,30 @@ function Validator() {
   const [running, setRunning] = useState(false);
   const [publicImages, setPublicImages] = useState<Set<string>>(new Set());
   const [ruleFilter, setRuleFilter] = useState<Finding["rule"] | "all">("all");
+  const [lastRunAt, setLastRunAt] = useState<string | null>(null);
+
+  const CACHE_KEY = "admin-validator-results-v1";
+
+  // Restore previous results on mount.
+  useEffect(() => {
+    try {
+      const raw = sessionStorage.getItem(CACHE_KEY);
+      if (raw) {
+        const parsed = JSON.parse(raw) as {
+          findings: Finding[];
+          scanned: number;
+          ruleFilter?: Finding["rule"] | "all";
+          at?: string;
+        };
+        setFindings(parsed.findings ?? []);
+        setScanned(parsed.scanned ?? 0);
+        if (parsed.ruleFilter) setRuleFilter(parsed.ruleFilter);
+        if (parsed.at) setLastRunAt(parsed.at);
+      }
+    } catch {
+      /* ignore */
+    }
+  }, []);
 
   useEffect(() => {
     fetch("/mocks/image-inventory.json")
@@ -70,6 +94,23 @@ function Validator() {
     }
     setFindings(out);
     setRunning(false);
+    const at = new Date().toISOString();
+    setLastRunAt(at);
+    try {
+      sessionStorage.setItem(
+        CACHE_KEY,
+        JSON.stringify({ findings: out, scanned: allTopics.length, ruleFilter, at }),
+      );
+    } catch {
+      /* ignore quota errors */
+    }
+  };
+
+  const clearCache = () => {
+    sessionStorage.removeItem(CACHE_KEY);
+    setFindings([]);
+    setScanned(0);
+    setLastRunAt(null);
   };
 
   const ruleCounts = useMemo(() => {
