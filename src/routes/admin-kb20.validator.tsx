@@ -55,6 +55,9 @@ const RULE_LABEL: Record<Finding["rule"], string> = {
 };
 
 function Validator() {
+  const { user } = useAuth();
+  const [bulkBusyTopic, setBulkBusyTopic] = useState<string | null>(null);
+  const [bulkMessage, setBulkMessage] = useState<string | null>(null);
   const allTopics = useMemo(
     () => categories.flatMap((c) => c.topics.map((t) => t.slug)),
     [],
