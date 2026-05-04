@@ -253,7 +253,7 @@ function FindingRow({ finding }: { finding: Finding }) {
                 key={`${id}-${i}`}
                 to="/admin-kb20/questions/$topic"
                 params={{ topic: finding.topic }}
-                search={{ q: id }}
+                search={{ q: id, from: "validator" }}
                 className="rounded border border-border bg-card px-2 py-0.5 font-mono text-[11px] hover:border-coral hover:text-coral"
               >
                 {id}
