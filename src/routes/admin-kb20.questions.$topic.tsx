@@ -7,7 +7,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { AdminGate } from "@/components/AdminGate";
 import { QuestionEditDialog } from "@/components/QuestionEditDialog";
-import { useOverrides, invalidateOverrides } from "@/lib/overrides";
+import { applyOverrideToQuestionRecord, useOverrides, invalidateOverrides } from "@/lib/overrides";
 
 type RawQuestion = Record<string, unknown> & {
   id?: string;
@@ -183,6 +183,24 @@ function QuestionsBrowser() {
   const overrides = useOverrides();
   void bump;
   const highlightId = initialSearch;
+  const effectiveQuestions = useMemo<FlatQuestion[]>(() => {
+    if (!overrides) return questions as FlatQuestion[];
+    return (questions as FlatQuestion[]).map((q) => {
+      const override = overrides.get(`${topic}::${q.id}`);
+      if (!override) return q;
+      const raw = applyOverrideToQuestionRecord(q.raw, override);
+      return {
+        ...q,
+        raw,
+        question: describeQuestion(raw),
+        explanation: (raw.explanation || "").toString(),
+        image: raw.image,
+        imageAlt: raw.imageAlt,
+        options: raw.options,
+        correctText: describeCorrect(raw),
+      };
+    });
+  }, [overrides, questions, topic]);
 
   // Scroll to and highlight the deep-linked question once.
   useEffect(() => {
@@ -198,13 +216,13 @@ function QuestionsBrowser() {
 
   const types = useMemo(() => {
     const s = new Set<string>();
-    (questions as FlatQuestion[]).forEach((q: FlatQuestion) => s.add(q.type));
+    effectiveQuestions.forEach((q: FlatQuestion) => s.add(q.type));
     return ["all", ...Array.from(s).sort()];
-  }, [questions]);
+  }, [effectiveQuestions]);
 
   const filtered = useMemo<FlatQuestion[]>(() => {
     const s = search.trim().toLowerCase();
-    return (questions as FlatQuestion[]).filter((q: FlatQuestion) => {
+    return effectiveQuestions.filter((q: FlatQuestion) => {
       if (type !== "all" && q.type !== type) return false;
       if (imageFilter === "with" && !q.image) return false;
       if (imageFilter === "without" && q.image) return false;
@@ -217,22 +235,22 @@ function QuestionsBrowser() {
         return false;
       return true;
     });
-  }, [questions, search, type, imageFilter]);
+  }, [effectiveQuestions, search, type, imageFilter]);
 
   const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
   const pageSafe = Math.min(page, totalPages);
   const visible = filtered.slice((pageSafe - 1) * PAGE_SIZE, pageSafe * PAGE_SIZE);
 
   const stats = useMemo(() => {
-    const withImg = (questions as FlatQuestion[]).filter((q: FlatQuestion) => q.image).length;
-    const orphan = (questions as FlatQuestion[]).filter((q: FlatQuestion) => q.usedInMocks.length === 0).length;
+    const withImg = effectiveQuestions.filter((q: FlatQuestion) => q.image).length;
+    const orphan = effectiveQuestions.filter((q: FlatQuestion) => q.usedInMocks.length === 0).length;
     return {
-      total: questions.length,
+      total: effectiveQuestions.length,
       withImg,
-      withoutImg: questions.length - withImg,
+      withoutImg: effectiveQuestions.length - withImg,
       orphan,
     };
-  }, [questions]);
+  }, [effectiveQuestions]);
 
   return (
     <div className="min-h-screen bg-background">
