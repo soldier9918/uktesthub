@@ -312,6 +312,18 @@ function BulkEditPage() {
       invalidateOverrides();
       sessionStorage.removeItem("admin-validator-results-v1");
       sessionStorage.removeItem("admin-validator-results-v2");
+      setItems((current) =>
+        current.map((item) => {
+          const change = preview.find((c) => c.id === item.id);
+          if (!change) return item;
+          return {
+            ...item,
+            question: change.newQuestion ?? item.question,
+            options: change.newOptions ?? item.options,
+            explanation: change.newExplanation ?? item.explanation,
+          };
+        }),
+      );
       setResult(`Wrote ${written} override${written === 1 ? "" : "s"}.`);
       setPreview([]);
     } catch (e) {
