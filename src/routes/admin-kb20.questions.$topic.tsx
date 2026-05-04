@@ -173,7 +173,7 @@ const PAGE_SIZE = 25;
 
 function QuestionsBrowser() {
   const { topic, questions } = Route.useLoaderData();
-  const { q: initialQ, from } = Route.useSearch();
+  const { q: initialQ, from, edit: editId } = Route.useSearch();
   const initialSearch = initialQ ?? "";
   const [search, setSearch] = useState(initialSearch);
   const [type, setType] = useState<string>("all");
