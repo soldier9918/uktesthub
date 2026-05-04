@@ -109,17 +109,17 @@ function ImportExport() {
       .map((q) => ({
         topic: parsed.topic,
         question_id: String(q.id),
-        question: (q.question as string | undefined) ?? null,
-        options: (q.options as unknown) ?? null,
+        question: ((q.question as string | undefined) ?? null) as string | null,
+        options: (q.options as unknown) as import("@/integrations/supabase/types").Json,
         correct_answer:
-          q.correctAnswer !== undefined
-            ? (q.correctAnswer as unknown)
+          (q.correctAnswer !== undefined
+            ? q.correctAnswer
             : q.correctAnswers !== undefined
-              ? (q.correctAnswers as unknown)
-              : null,
-        explanation: (q.explanation as string | undefined) ?? null,
-        image: (q.image as string | undefined) ?? null,
-        image_alt: (q.imageAlt as string | undefined) ?? null,
+              ? q.correctAnswers
+              : null) as import("@/integrations/supabase/types").Json,
+        explanation: ((q.explanation as string | undefined) ?? null) as string | null,
+        image: ((q.image as string | undefined) ?? null) as string | null,
+        image_alt: ((q.imageAlt as string | undefined) ?? null) as string | null,
         updated_by: user?.id ?? null,
       }));
     // Chunk to avoid payload limits
