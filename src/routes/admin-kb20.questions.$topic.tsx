@@ -40,6 +40,8 @@ type AnyFile = V1 | V2;
 
 import { loadTopicFileForAdmin } from "@/data/mocks";
 
+type MockUsage = { mockNumber: number; slot: number };
+
 type FlatQuestion = {
   id: string;
   type: string;
@@ -49,7 +51,7 @@ type FlatQuestion = {
   imageAlt?: string;
   options?: string[];
   correctText?: string;
-  usedInMocks: number[];
+  usedInMocks: MockUsage[];
   raw: RawQuestion;
 };
 
@@ -86,13 +88,14 @@ function describeCorrect(r: RawQuestion): string | undefined {
 function flatten(file: AnyFile): FlatQuestion[] {
   if ((file as V2).version === 2 && Array.isArray((file as V2).bank)) {
     const v2 = file as V2;
-    const usage = new Map<string, number[]>();
-    for (const m of v2.mocks)
-      for (const qid of m.questionIds) {
+    const usage = new Map<string, MockUsage[]>();
+    for (const m of v2.mocks) {
+      m.questionIds.forEach((qid, idx) => {
         const arr = usage.get(qid) ?? [];
-        arr.push(m.mockNumber);
+        arr.push({ mockNumber: m.mockNumber, slot: idx + 1 });
         usage.set(qid, arr);
-      }
+      });
+    }
     return v2.bank.map((q) => ({
       id: q.id,
       type: normaliseType(q.type),
@@ -119,7 +122,7 @@ function flatten(file: AnyFile): FlatQuestion[] {
         imageAlt: q.imageAlt,
         options: q.options,
         correctText: describeCorrect(q),
-        usedInMocks: [t.mockNumber],
+        usedInMocks: [{ mockNumber: t.mockNumber, slot: i + 1 }],
         raw: q,
       });
     });
@@ -323,16 +326,20 @@ function QuestionsBrowser() {
                     {q.usedInMocks.length > 0 ? (
                       <span className="flex flex-wrap items-center gap-1 text-[10px] text-muted-foreground">
                         Live in:
-                        {q.usedInMocks.map((n) => (
+                        {q.usedInMocks.map(({ mockNumber, slot }) => (
                           <a
-                            key={n}
-                            href={`/quiz/${topic}-mock-${n}`}
+                            key={`${mockNumber}-${slot}`}
+                            href={`/quiz/${topic}-mock-${mockNumber}${slot ? `#q${slot}` : ""}`}
                             target="_blank"
                             rel="noreferrer"
                             className="rounded border border-border bg-background px-1.5 py-0.5 font-mono text-[10px] text-coral hover:border-coral hover:bg-coral/5"
-                            title={`Open Mock Test ${n} on the live site (new tab)`}
+                            title={
+                              slot
+                                ? `Open Mock Test ${mockNumber}, Question ${slot} on the live site (new tab)`
+                                : `Open Mock Test ${mockNumber} on the live site (new tab)`
+                            }
                           >
-                            Mock {n}
+                            Mock {mockNumber}{slot ? ` · Q${slot}` : ""}
                           </a>
                         ))}
                       </span>

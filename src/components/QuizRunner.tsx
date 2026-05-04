@@ -120,6 +120,20 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
   const [timeLeft, setTimeLeft] = useState(quiz.timeLimit);
   const [finished, setFinished] = useState(false);
 
+  // Deep-link support: /quiz/<slug>#q5 jumps straight to question 5 in
+  // practice mode. Used by the admin to verify a specific bank question.
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const m = /^#q(\d+)$/i.exec(window.location.hash);
+    if (!m) return;
+    const slot = parseInt(m[1], 10);
+    if (!Number.isFinite(slot)) return;
+    const idx = Math.max(0, Math.min(quiz.questions.length - 1, slot - 1));
+    setCurrent(idx);
+    setMode((prev) => prev ?? "practice");
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   // Track quiz_start when the user picks a mode for the first time.
   useEffect(() => {
     if (!mode) return;
