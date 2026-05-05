@@ -488,7 +488,19 @@ function QuestionsBrowser() {
               imageAlt: editing.imageAlt,
             }}
             liveLink={liveLink}
-            onClose={() => setEditing(null)}
+            onClose={() => {
+              const editedId = editing.id;
+              setEditing(null);
+              requestAnimationFrame(() => {
+                const el = document.querySelector(`[data-qid="${CSS.escape(editedId)}"]`);
+                if (el && "scrollIntoView" in el) {
+                  (el as HTMLElement).scrollIntoView({ behavior: "auto", block: "center" });
+                } else if (scrollRestoreRef.current != null) {
+                  window.scrollTo({ top: scrollRestoreRef.current, behavior: "auto" });
+                }
+                scrollRestoreRef.current = null;
+              });
+            }}
             onSaved={() => {
               invalidateOverrides();
               setBump((n) => n + 1);
