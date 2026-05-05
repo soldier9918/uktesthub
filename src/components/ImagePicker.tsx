@@ -72,12 +72,28 @@ export function ImagePicker({ selected, onSelect, onClose }: Props) {
   const [query, setQuery] = useState("");
 
   useEffect(() => {
-    loadData()
-      .then(({ inventory, usage }) => {
-        setInventory(inventory);
-        setUsage(usage);
-      })
-      .finally(() => setLoading(false));
+    let cancelled = false;
+    const refresh = () => {
+      loadData()
+        .then(({ inventory, usage }) => {
+          if (cancelled) return;
+          setInventory(inventory);
+          setUsage(usage);
+        })
+        .finally(() => {
+          if (!cancelled) setLoading(false);
+        });
+    };
+    refresh();
+    if (import.meta.hot) {
+      import.meta.hot.on("image-inventory:updated", refresh);
+    }
+    return () => {
+      cancelled = true;
+      if (import.meta.hot) {
+        import.meta.hot.off("image-inventory:updated", refresh);
+      }
+    };
   }, []);
 
   const folders = useMemo(() => {
