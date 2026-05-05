@@ -115,6 +115,8 @@ export function ImagePicker({ selected, onSelect, onClose }: Props) {
   const [refreshing, setRefreshing] = useState(false);
   const [folder, setFolder] = useState<string>("all");
   const [query, setQuery] = useState("");
+  const [page, setPage] = useState(1);
+  const PAGE_SIZE = 50;
 
   const refresh = useCallback(async (initial = false) => {
     if (initial) setLoading(true);
