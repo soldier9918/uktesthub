@@ -232,7 +232,7 @@ export function ImagePicker({ selected, onSelect, onClose }: Props) {
             <p className="p-6 text-center text-sm text-muted-foreground">No images match.</p>
           ) : (
             <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
-              {filtered.map((it) => {
+              {paginated.map((it) => {
                 const isSel = it.path === selected;
                 const usageKey = it.source === "storage" ? normalise(it.path) : it.path;
                 const count = usage[usageKey] ?? 0;
