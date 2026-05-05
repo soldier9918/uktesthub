@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useMemo, useState } from "react";
-import { ArrowRight, Clock, ListChecks, Search } from "lucide-react";
+import { ArrowRight, Clock, ListChecks, Search, ChevronDown, SlidersHorizontal } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { BookmarkButton } from "@/components/BookmarkButton";
@@ -81,6 +81,9 @@ function AllTestsPage() {
   const [query, setQuery] = useState("");
   const [activeCat, setActiveCat] = useState<string>("all");
   const [activeType, setActiveType] = useState<TestType | "all">("all");
+  const [filtersOpen, setFiltersOpen] = useState(false);
+  const activeFilterCount =
+    (activeCat !== "all" ? 1 : 0) + (activeType !== "all" ? 1 : 0);
 
   const totalTests = useMemo(
     () => categories.reduce((n, c) => n + c.topics.length, 0),
@@ -150,49 +153,65 @@ function AllTestsPage() {
             <div className="text-xs font-semibold text-muted-foreground md:whitespace-nowrap">
               {matchedCount} of {totalTests} tests
             </div>
+            <button
+              type="button"
+              onClick={() => setFiltersOpen((o) => !o)}
+              aria-expanded={filtersOpen}
+              className="inline-flex items-center justify-center gap-2 rounded-lg border border-border bg-card px-3 py-2.5 text-xs font-semibold text-foreground hover:bg-muted md:whitespace-nowrap"
+            >
+              <SlidersHorizontal className="h-3.5 w-3.5" />
+              Filters{activeFilterCount > 0 ? ` (${activeFilterCount})` : ""}
+              <ChevronDown
+                className={`h-3.5 w-3.5 transition-transform ${filtersOpen ? "rotate-180" : ""}`}
+              />
+            </button>
           </div>
 
-          <div className="mt-3">
-            <p className="mb-1.5 text-[10px] font-bold uppercase tracking-[0.18em] text-muted-foreground">
-              Category
-            </p>
-            <div className="flex flex-wrap gap-2">
-              <FilterChip
-                label="All"
-                active={activeCat === "all"}
-                onClick={() => setActiveCat("all")}
-              />
-              {categories.map((c) => (
-                <FilterChip
-                  key={c.slug}
-                  label={c.title}
-                  active={activeCat === c.slug}
-                  onClick={() => setActiveCat(c.slug)}
-                />
-              ))}
-            </div>
-          </div>
+          {filtersOpen && (
+            <>
+              <div className="mt-3">
+                <p className="mb-1.5 text-[10px] font-bold uppercase tracking-[0.18em] text-muted-foreground">
+                  Category
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <FilterChip
+                    label="All"
+                    active={activeCat === "all"}
+                    onClick={() => setActiveCat("all")}
+                  />
+                  {categories.map((c) => (
+                    <FilterChip
+                      key={c.slug}
+                      label={c.title}
+                      active={activeCat === c.slug}
+                      onClick={() => setActiveCat(c.slug)}
+                    />
+                  ))}
+                </div>
+              </div>
 
-          <div className="mt-3">
-            <p className="mb-1.5 text-[10px] font-bold uppercase tracking-[0.18em] text-muted-foreground">
-              Type
-            </p>
-            <div className="flex flex-wrap gap-2">
-              <FilterChip
-                label="All types"
-                active={activeType === "all"}
-                onClick={() => setActiveType("all")}
-              />
-              {TEST_TYPES.map((t) => (
-                <FilterChip
-                  key={t}
-                  label={t}
-                  active={activeType === t}
-                  onClick={() => setActiveType(t)}
-                />
-              ))}
-            </div>
-          </div>
+              <div className="mt-3">
+                <p className="mb-1.5 text-[10px] font-bold uppercase tracking-[0.18em] text-muted-foreground">
+                  Type
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <FilterChip
+                    label="All types"
+                    active={activeType === "all"}
+                    onClick={() => setActiveType("all")}
+                  />
+                  {TEST_TYPES.map((t) => (
+                    <FilterChip
+                      key={t}
+                      label={t}
+                      active={activeType === t}
+                      onClick={() => setActiveType(t)}
+                    />
+                  ))}
+                </div>
+              </div>
+            </>
+          )}
         </div>
       </section>
 
