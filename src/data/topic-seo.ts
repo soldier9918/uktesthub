@@ -245,7 +245,57 @@ export const topicSeo: Record<string, TopicSeo> = {
     intro: [
       "Road signs make up roughly 15% of the DVSA Driving Theory Test, and they're the easiest marks to lose if you've never learned the shape-and-colour code. Once you know that triangles warn, circles order and rectangles inform, you can decode signs you've never seen before.",
     ],
-    sections: [],
+    sections: [
+      {
+        heading: "What this test involves",
+        body: [
+          "There isn't a standalone DVSA 'Road Signs Test' — sign questions sit inside the standard Driving Theory Test (50 multiple-choice questions in 57 minutes, 43 needed to pass) plus the 14-clip hazard perception section. Roughly 7–10 of the multiple-choice questions show a sign, a road marking, or a junction layout and ask what it means or what action you should take.",
+          "Our focused Road Signs mock papers pull only the sign-and-marking questions from the official DVSA-style bank so you can drill the topic in short sittings instead of waiting for them to appear in a full mock.",
+        ],
+      },
+      {
+        heading: "What's covered in the syllabus",
+        body: [
+          "Warning signs (red triangles), order signs (red and blue circles), information and direction signs (rectangles), motorway-specific signs (blue), primary route signs (green), and temporary works signs (yellow). You'll also be tested on road markings — give-way lines, stop lines, lane arrows, box junctions, hatched areas and yellow box rules.",
+          "Expect questions on traffic-light sequences, level crossings, zebra and pelican crossings, school-warning patrols, and the supplementary plates that sit underneath signs (distance, time, vehicle type).",
+        ],
+      },
+      {
+        heading: "How to pass the test",
+        body: [
+          "Learn the shape-and-colour code first: triangles warn, circles order (red = prohibition, blue = mandatory), rectangles inform. Once that's locked in you can decode unfamiliar signs by shape alone, which covers about 80% of the bank without rote memorisation.",
+          "Then drill the high-frequency exceptions — the octagonal STOP sign, the inverted triangle GIVE WAY, the diagonal end-of-restriction signs, and the blue-and-red 'no entry' sign that breaks the colour rule. These are the ones examiners reuse repeatedly.",
+        ],
+      },
+      {
+        heading: "Recommended study plan",
+        body: [
+          "Week 1: read Highway Code pages 102–138 once and learn the shape rules. Week 2: take one Road Signs mock per day, reviewing every miss against the official sign in our gallery (linked from the full reference article). Week 3: combine signs with road markings and traffic-light sequences. Week 4: sit timed full theory mocks so signs appear mixed in with hazards, alertness and vehicle handling questions.",
+          "Most learners need 6–10 hours of sign-specific study spread across 3–4 weeks. Cramming the night before is the single biggest cause of avoidable losses on this topic.",
+        ],
+      },
+      {
+        heading: "Common mistakes to avoid",
+        body: [
+          "Confusing 'no overtaking' (red car + black car in a red circle) with 'end of overtaking restriction' (the same image with a diagonal line through it). Misreading the national speed limit sign (white circle with a black diagonal) as 'derestricted' — it's 60 mph on single carriageways and 70 mph on dual carriageways and motorways for cars.",
+          "Confusing the red-bordered triangle 'children crossing' warning with the circular school-crossing-patrol order. Forgetting that a yellow box junction means you cannot enter unless your exit is clear, even when the lights are green.",
+        ],
+      },
+      {
+        heading: "Who this test is for",
+        body: [
+          "Anyone preparing for the car, motorcycle, LGV, PCV or ADI theory test — every category uses the same sign bank, with a small number of additions for larger vehicles. Pedestrians, cyclists and approved-driving-instructor candidates also benefit because the rules are the same on the road.",
+          "It's especially useful for drivers who passed years ago and want a refresher before towing, hiring abroad, or taking a Pass Plus / advanced course.",
+        ],
+      },
+      {
+        heading: "Why it matters",
+        body: [
+          "Signs and markings are the single largest topic in the multiple-choice section, and they're the easiest marks to bank because every answer is unambiguous — the sign means exactly one thing. Losing four or five sign questions through guesswork is the most common reason candidates fall just below the 43/50 pass mark.",
+          "Beyond the test, fluent sign reading is what lets you drive smoothly in unfamiliar areas, react to roadworks safely, and avoid the £100 + 3-point penalties that come with ignoring mandatory signs.",
+        ],
+      },
+    ],
     faqs: [
       { q: "How many road signs are tested in the DVSA exam?", a: "Around 7–10 of the 50 multiple-choice questions involve signs or road markings." },
       { q: "Are road signs tested in hazard perception?", a: "Indirectly — you need to read signs in the clips to anticipate hazards (e.g. a school sign tells you children may be present)." },
