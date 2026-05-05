@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useMemo, useState } from "react";
-import { ArrowRight, Clock, ListChecks, Search } from "lucide-react";
+import { ArrowRight, Clock, ListChecks, Search, ChevronDown, SlidersHorizontal } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { BookmarkButton } from "@/components/BookmarkButton";
