@@ -180,6 +180,7 @@ function QuestionsBrowser() {
   const [imageFilter, setImageFilter] = useState<"all" | "with" | "without">("all");
   const [page, setPage] = useState(1);
   const [editing, setEditing] = useState<FlatQuestion | null>(null);
+  const scrollRestoreRef = useRef<number | null>(null);
   const [bump, setBump] = useState(0);
   const overrides = useOverrides();
   void bump;
