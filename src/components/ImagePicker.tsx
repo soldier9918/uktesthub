@@ -175,7 +175,7 @@ export function ImagePicker({ selected, onSelect, onClose }: Props) {
           <div>
             <h3 className="font-display text-lg font-semibold">Browse images</h3>
             <p className="text-xs text-muted-foreground">
-              {loading ? "Loading…" : `${filtered.length} of ${items.length} images`}
+              {loading ? "Loading…" : `${filtered.length} of ${items.length} images · page ${currentPage}/${totalPages}`}
             </p>
           </div>
           <button
