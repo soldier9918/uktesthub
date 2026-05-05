@@ -1,76 +1,51 @@
 ## Goal
 
-On `/guide/road-signs`, keep only the opening paragraph of the article. Everything from the second intro line "This guide covers the full sign system…" through to the end of section 8 of the Highway Code motorway rules ("…sharp bends, so slow down.") moves into a brand-new long-form blog post under `/blog`. The rest of the guide page (hero, breadcrumb, FAQs, sidebar, mock-test CTA, ad slots, footer) stays exactly as it is.
+Make newly uploaded images appear in the Admin "Browse" picker reliably:
+- Images committed to `public/road-signs/` (etc.) via GitHub appear after the next deploy.
+- Images uploaded via Admin → Supabase Storage (`question-images` bucket) appear **instantly**.
+- Add a manual "Refresh" button and an explanatory notice.
 
-## Scope of content being moved
+## Why it doesn't work today
 
-Currently the road-signs guide renders, in order:
+The picker reads `/mocks/image-inventory.json`, which is generated **only at build time** by `scripts/build_mock_manifest.mjs`. There is no live watcher in production, and the picker doesn't read the Supabase Storage bucket at all. So pushing an image to GitHub does nothing visible until a new build runs, and even then a stale cached JSON can hide it.
 
-1. Lead intro paragraphs from `topic-seo.ts` → `road-signs.intro` (2 paragraphs).
-2. "The signing system" panel — shapes primer + colour rules (guide.$slug.tsx lines 163–331).
-3. "Sign shapes explained" — circular / triangular / rectangular write-ups (lines 333–429).
-4. "Every UK road sign — Highway Code reference" gallery using `ROAD_SIGN_PAGES` (lines 431–483).
-5. The numbered SEO sections (`topic-seo.ts` → `road-signs.sections`, 9 sections including "The shape-and-colour code", "The signs that catch people out", "Road markings as signs", "Motorway and direction signs", "Study tips", "Warning signs", "Order signs", "Information signs", "Road markings to learn alongside the signs").
-6. Inline Highway Code motorway-rules sub-article that renders after the "Motorway and direction signs" section (lines 510–669, sections 1–8).
-7. Road-markings reference gallery using `ROAD_MARKING_PAGES` (lines 671–695).
+## Changes
 
-Items 2–7 plus intro paragraph #2 will be relocated.
+### 1. Ensure manifest builds on every deploy
+- Verify `scripts/build_mock_manifest.mjs` runs as part of the build pipeline (check `package.json` `build` script — add it to a `prebuild` hook if missing).
+- Output `public/mocks/image-inventory.json` is regenerated for every deploy.
 
-## What stays on `/guide/road-signs`
+### 2. Make the Image Picker merge two sources
+Update `src/components/ImagePicker.tsx` to load and merge:
 
-- Hero, breadcrumb, "About this exam" header, reading-time stamp.
-- Only the first intro paragraph: "Road signs make up roughly 15% of the DVSA Driving Theory Test…"
-- A short link/CTA pointing at the new blog article (e.g. "Read the full visual guide → The Complete UK Road Signs Reference").
-- The existing FAQ block, sidebar, ad slots, and "Ready to start?" mocks CTA.
+1. **Static manifest**: `/mocks/image-inventory.json` (existing) — covers `public/` images.
+2. **Live Supabase Storage**: list all files in the `question-images` bucket via `supabase.storage.from('question-images').list('', { limit: 1000 })` and convert each to its public URL using `getPublicUrl`.
 
-## What changes
+Combine both lists, dedupe by path, and tag each item with its source ("public" or "storage") shown as a small badge in the tile so admins can tell where an image lives.
 
-### 1. `src/data/topic-seo.ts`
-- `road-signs.intro`: drop the second sentence ("This guide covers the full sign system…").
-- `road-signs.sections`: empty the array (or remove it). All numbered section content moves to the blog post.
-- FAQs untouched.
+### 3. Add a "Refresh" button
+- Small button in the picker header next to the search input.
+- Re-runs the loader (manifest fetch with cache-buster + storage list) and updates the grid.
+- Already cache-busts the manifest with `?v=Date.now()`, so refresh will see the latest deployed manifest.
 
-### 2. `src/routes/guide.$slug.tsx`
-- Remove the four `topic.slug === "road-signs"` blocks that render the signing system, sign shapes, official sign gallery, motorway rules, and road markings gallery (lines 163–331, 333–429, 431–483, 510–669, 671–695).
-- Drop the now-unused imports `ROAD_SIGN_PAGES` and `ROAD_MARKING_PAGES`.
-- Just below the lead intro, add a small in-page CTA card visible only when `topic.slug === "road-signs"`, linking to the new blog post slug.
+### 4. Add an explanatory notice in the picker
+A subtle one-liner under the title:
 
-### 3. New blog article
-Add a new entry at the **top** of `blogPosts` in `src/data/blog.tsx`:
+> Images uploaded through Admin appear instantly. Images committed via GitHub appear after the next deploy.
 
-- `slug`: `complete-uk-road-signs-reference`
-- `title`: "The Complete UK Road Signs Reference (2026)"
-- `description`: ~155-char SEO summary covering shapes, colours, official Highway Code plates, motorway rules and road markings.
-- `excerpt`: one short hook line.
-- `category`: "Driving"
-- `tags`: ["road signs", "highway code", "driving theory", "motorway"]
-- `hero`: existing `heroDriving` import (already in the file).
-- `body`: a `() => ReactNode` that contains, in order:
-  1. The dropped second intro paragraph as the opening line.
-  2. "The signing system" — same shape-primer SVGs and colour-rule blocks (ported from the guide JSX as-is, restyled lightly to fit the blog article CSS).
-  3. "Sign shapes explained" — circular/triangular/rectangular sub-sections.
-  4. "Every UK road sign — Highway Code reference" — iterates `ROAD_SIGN_PAGES` (import moved to `blog.tsx`).
-  5. The 9 numbered sections from `topic-seo.ts` rewritten as `<h2>` / `<p>` blocks inline in the JSX.
-  6. After the "Motorway and direction signs" heading, embed the full Highway Code motorway-rules block (sections 1–8 with their images), exactly the data array currently in `guide.$slug.tsx`.
-  7. After "Road markings as signs", iterate `ROAD_MARKING_PAGES`.
-  8. Closing paragraph linking back to `<T slug="road-signs">free Road Signs practice tests</T>`.
+### 5. Folder filter
+Add a "Storage (uploaded)" virtual folder so admins can quickly filter to only Supabase-uploaded files.
 
-`getAllPosts` already sorts by `datePublished` desc, so set `datePublished` to today's date (2026-05-05) so the new post appears first on `/blog`.
+## Files to edit
 
-### 4. No other route or sitemap changes required
-- The blog index (`/blog`) auto-lists from `getAllPosts()`.
-- The blog detail route (`/blog/$slug`) already renders any slug returned by `getPostBySlug`.
-- `routeTree.gen.ts` is auto-generated — no manual edits.
-
-## Technical details
-
-- All image paths (`/road-signs/page-*.png`, `/road-markings/...`, `/motorway-rules/...`) keep working from the blog article because they resolve from `public/`.
-- SVG shape primers (circle/triangle/rectangle/STOP/give-way) are pure inline JSX, port over with no logic changes.
-- The motorway-rules block uses a local data array + `.map(...)`; that array moves into the blog post's `body()` function unchanged.
-- No new dependencies, no DB changes, no edge functions.
-- Build-time guarantee: import `ROAD_SIGN_PAGES` and `ROAD_MARKING_PAGES` in `blog.tsx`; remove them from `guide.$slug.tsx`. Both files already exist under `src/data/`.
+- `src/components/ImagePicker.tsx` — merge storage + manifest, refresh button, notice, source badge, new folder filter.
+- `package.json` — ensure `node scripts/build_mock_manifest.mjs` runs in `prebuild` (or equivalent) so every deploy regenerates the inventory.
 
 ## Out of scope
 
-- No changes to `/topic/road-signs`, mock tests, the admin panel, or any other guide page.
-- No SEO redirect needed — the guide URL still works and now links into the blog post.
+- Moving existing `public/road-signs/*` images into Supabase Storage (can do later if you want fully instant updates without redeploys).
+- Changing how `QuestionEditDialog` saves the chosen path (paths and public URLs both already work).
+
+## After approval
+
+I'll implement the above and you'll need to **publish** once so the updated picker (and the regenerated manifest build step) goes live.
