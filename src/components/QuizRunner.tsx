@@ -174,9 +174,14 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
   const { user } = useAuth();
   const [progressLoaded, setProgressLoaded] = useState(false);
 
-  // Restore in-progress quiz from DB for signed-in users
+  // Restore in-progress quiz from DB for signed-in users.
+  // If the URL has a #qN deep-link, honour it instead of the saved index
+  // (used by admins to verify a specific question).
   useEffect(() => {
     if (!user || progressLoaded) return;
+    const hasHashJump =
+      typeof window !== "undefined" &&
+      /^#q\d+$/i.test(window.location.hash);
     let cancelled = false;
     supabase
       .from("quiz_progress")
@@ -189,7 +194,9 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
           const restored = (data as { answers: Answer[] }).answers;
           if (restored.length === quiz.questions.length) {
             setAnswers(restored);
-            setCurrent(Math.min((data as { current_index: number }).current_index ?? 0, quiz.questions.length - 1));
+            if (!hasHashJump) {
+              setCurrent(Math.min((data as { current_index: number }).current_index ?? 0, quiz.questions.length - 1));
+            }
           }
         }
         setProgressLoaded(true);
