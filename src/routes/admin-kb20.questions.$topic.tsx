@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
@@ -180,6 +180,7 @@ function QuestionsBrowser() {
   const [imageFilter, setImageFilter] = useState<"all" | "with" | "without">("all");
   const [page, setPage] = useState(1);
   const [editing, setEditing] = useState<FlatQuestion | null>(null);
+  const scrollRestoreRef = useRef<number | null>(null);
   const [bump, setBump] = useState(0);
   const overrides = useOverrides();
   void bump;
@@ -376,7 +377,10 @@ function QuestionsBrowser() {
                       size="sm"
                       variant="outline"
                       className="ml-auto h-7"
-                      onClick={() => setEditing(q)}
+                      onClick={() => {
+                        scrollRestoreRef.current = window.scrollY;
+                        setEditing(q);
+                      }}
                     >
                       Edit
                     </Button>
@@ -484,7 +488,19 @@ function QuestionsBrowser() {
               imageAlt: editing.imageAlt,
             }}
             liveLink={liveLink}
-            onClose={() => setEditing(null)}
+            onClose={() => {
+              const editedId = editing.id;
+              setEditing(null);
+              requestAnimationFrame(() => {
+                const el = document.querySelector(`[data-qid="${CSS.escape(editedId)}"]`);
+                if (el && "scrollIntoView" in el) {
+                  (el as HTMLElement).scrollIntoView({ behavior: "auto", block: "center" });
+                } else if (scrollRestoreRef.current != null) {
+                  window.scrollTo({ top: scrollRestoreRef.current, behavior: "auto" });
+                }
+                scrollRestoreRef.current = null;
+              });
+            }}
             onSaved={() => {
               invalidateOverrides();
               setBump((n) => n + 1);
