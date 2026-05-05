@@ -376,7 +376,10 @@ function QuestionsBrowser() {
                       size="sm"
                       variant="outline"
                       className="ml-auto h-7"
-                      onClick={() => setEditing(q)}
+                      onClick={() => {
+                        scrollRestoreRef.current = window.scrollY;
+                        setEditing(q);
+                      }}
                     >
                       Edit
                     </Button>
