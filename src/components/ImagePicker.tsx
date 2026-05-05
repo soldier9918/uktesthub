@@ -281,7 +281,28 @@ export function ImagePicker({ selected, onSelect, onClose }: Props) {
           )}
         </div>
 
-        <div className="mt-4 flex justify-end">
+        <div className="mt-4 flex items-center justify-between gap-2">
+          <div className="flex items-center gap-2">
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={() => setPage((p) => Math.max(1, p - 1))}
+              disabled={currentPage <= 1}
+            >
+              Previous
+            </Button>
+            <span className="text-xs text-muted-foreground">
+              Page {currentPage} of {totalPages}
+            </span>
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={() => setPage((p) => Math.min(totalPages, p + 1))}
+              disabled={currentPage >= totalPages}
+            >
+              Next
+            </Button>
+          </div>
           <Button variant="outline" onClick={onClose}>
             Close
           </Button>
