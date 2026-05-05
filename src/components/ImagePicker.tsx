@@ -10,6 +10,9 @@ type Props = {
   onClose: () => void;
 };
 
+let cachedInventory: string[] | null = null;
+let cachedUsage: Record<string, number> | null = null;
+
 function normalise(u: string): string {
   try {
     const url = new URL(u);
@@ -20,13 +23,16 @@ function normalise(u: string): string {
 }
 
 async function loadData(): Promise<{ inventory: string[]; usage: Record<string, number> }> {
+  if (cachedInventory && cachedUsage) {
+    return { inventory: cachedInventory, usage: cachedUsage };
+  }
   const bust = `?v=${Date.now()}`;
   const [invRes, useRes, overridesRes] = await Promise.all([
     fetch(`/mocks/image-inventory.json${bust}`, { cache: "no-store" }),
     fetch(`/mocks/image-usage.json${bust}`, { cache: "no-store" }),
     supabase.from("question_overrides").select("image"),
   ]);
-  const inventory = (await invRes.json()) as string[];
+  cachedInventory = (await invRes.json()) as string[];
   const baseUsage = useRes.ok ? ((await useRes.json()) as Record<string, number>) : {};
   // Merge in live overrides from DB so re-edited questions reflect "Used" counts.
   const usage: Record<string, number> = { ...baseUsage };
@@ -40,7 +46,8 @@ async function loadData(): Promise<{ inventory: string[]; usage: Record<string, 
       usage[key] = (usage[key] ?? 0) + 1;
     }
   }
-  return { inventory, usage };
+  cachedUsage = usage;
+  return { inventory: cachedInventory, usage };
 }
 
 function folderOf(path: string): string {
