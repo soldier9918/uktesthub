@@ -157,6 +157,17 @@ export function ImagePicker({ selected, onSelect, onClose }: Props) {
     });
   }, [items, folder, query]);
 
+  useEffect(() => {
+    setPage(1);
+  }, [folder, query, items]);
+
+  const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
+  const currentPage = Math.min(page, totalPages);
+  const paginated = useMemo(
+    () => filtered.slice((currentPage - 1) * PAGE_SIZE, currentPage * PAGE_SIZE),
+    [filtered, currentPage],
+  );
+
   return (
     <div className="fixed inset-0 z-[60] flex items-start justify-center overflow-auto bg-black/60 p-4">
       <div className="w-full max-w-5xl rounded-xl bg-card p-5 shadow-xl">
