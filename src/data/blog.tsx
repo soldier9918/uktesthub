@@ -46,6 +46,22 @@ const B = ({ slug, children }: { slug: string; children: ReactNode }) => (
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "complete-uk-road-signs-reference",
+    title: "The Complete UK Road Signs Reference (2026)",
+    description:
+      "The full UK road sign system — shapes, colours, every official Highway Code plate, motorway rules and road markings. Free visual reference for the DVSA theory test.",
+    excerpt:
+      "Every UK road sign in one place — shapes, colours, the official Highway Code plates, motorway rules and road markings.",
+    datePublished: "2026-05-05",
+    author: "UK Test Hub Team",
+    readingMinutes: 18,
+    category: "Driving",
+    tags: ["road signs", "highway code", "driving theory", "motorway"],
+    hero: heroDriving,
+    body: () => <RoadSignsReferenceBody />,
+  },
+
+  {
     slug: "how-to-pass-driving-theory-test",
     title: "How to Pass the UK Driving Theory Test First Time (2026 Guide)",
     description:
