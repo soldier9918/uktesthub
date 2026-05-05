@@ -115,6 +115,8 @@ export function ImagePicker({ selected, onSelect, onClose }: Props) {
   const [refreshing, setRefreshing] = useState(false);
   const [folder, setFolder] = useState<string>("all");
   const [query, setQuery] = useState("");
+  const [page, setPage] = useState(1);
+  const PAGE_SIZE = 50;
 
   const refresh = useCallback(async (initial = false) => {
     if (initial) setLoading(true);
@@ -155,6 +157,17 @@ export function ImagePicker({ selected, onSelect, onClose }: Props) {
     });
   }, [items, folder, query]);
 
+  useEffect(() => {
+    setPage(1);
+  }, [folder, query, items]);
+
+  const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
+  const currentPage = Math.min(page, totalPages);
+  const paginated = useMemo(
+    () => filtered.slice((currentPage - 1) * PAGE_SIZE, currentPage * PAGE_SIZE),
+    [filtered, currentPage],
+  );
+
   return (
     <div className="fixed inset-0 z-[60] flex items-start justify-center overflow-auto bg-black/60 p-4">
       <div className="w-full max-w-5xl rounded-xl bg-card p-5 shadow-xl">
@@ -162,7 +175,7 @@ export function ImagePicker({ selected, onSelect, onClose }: Props) {
           <div>
             <h3 className="font-display text-lg font-semibold">Browse images</h3>
             <p className="text-xs text-muted-foreground">
-              {loading ? "Loading…" : `${filtered.length} of ${items.length} images`}
+              {loading ? "Loading…" : `${filtered.length} of ${items.length} images · page ${currentPage}/${totalPages}`}
             </p>
           </div>
           <button
@@ -219,7 +232,7 @@ export function ImagePicker({ selected, onSelect, onClose }: Props) {
             <p className="p-6 text-center text-sm text-muted-foreground">No images match.</p>
           ) : (
             <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
-              {filtered.map((it) => {
+              {paginated.map((it) => {
                 const isSel = it.path === selected;
                 const usageKey = it.source === "storage" ? normalise(it.path) : it.path;
                 const count = usage[usageKey] ?? 0;
@@ -268,7 +281,28 @@ export function ImagePicker({ selected, onSelect, onClose }: Props) {
           )}
         </div>
 
-        <div className="mt-4 flex justify-end">
+        <div className="mt-4 flex items-center justify-between gap-2">
+          <div className="flex items-center gap-2">
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={() => setPage((p) => Math.max(1, p - 1))}
+              disabled={currentPage <= 1}
+            >
+              Previous
+            </Button>
+            <span className="text-xs text-muted-foreground">
+              Page {currentPage} of {totalPages}
+            </span>
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={() => setPage((p) => Math.min(totalPages, p + 1))}
+              disabled={currentPage >= totalPages}
+            >
+              Next
+            </Button>
+          </div>
           <Button variant="outline" onClick={onClose}>
             Close
           </Button>
