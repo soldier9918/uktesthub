@@ -81,6 +81,9 @@ function AllTestsPage() {
   const [query, setQuery] = useState("");
   const [activeCat, setActiveCat] = useState<string>("all");
   const [activeType, setActiveType] = useState<TestType | "all">("all");
+  const [filtersOpen, setFiltersOpen] = useState(false);
+  const activeFilterCount =
+    (activeCat !== "all" ? 1 : 0) + (activeType !== "all" ? 1 : 0);
 
   const totalTests = useMemo(
     () => categories.reduce((n, c) => n + c.topics.length, 0),
