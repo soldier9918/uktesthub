@@ -8,8 +8,6 @@ import { getTopicSeo } from "@/data/topic-seo";
 import { listMockSlots, TOTAL_MOCKS_PER_TOPIC, QUESTIONS_PER_MOCK } from "@/data/mocks";
 import { Home, ChevronRight, ArrowRight, BookOpen } from "lucide-react";
 import { pageMeta, faqSchema, breadcrumbSchema } from "@/lib/seo";
-import { ROAD_SIGN_PAGES } from "@/data/road-sign-gallery";
-import { ROAD_MARKING_PAGES } from "@/data/road-markings-gallery";
 
 // Render simple inline markdown-style links: [text](/url)
 function renderInlineLinks(text: string) {
