@@ -244,74 +244,8 @@ export const topicSeo: Record<string, TopicSeo> = {
     tagline: "The shape-and-colour shortcut to learning every UK road sign.",
     intro: [
       "Road signs make up roughly 15% of the DVSA Driving Theory Test, and they're the easiest marks to lose if you've never learned the shape-and-colour code. Once you know that triangles warn, circles order and rectangles inform, you can decode signs you've never seen before.",
-      "This guide covers the full sign system and the 100 signs the DVSA tests most often. Every mock test on UK Test Hub draws from this same bank.",
     ],
-    sections: [
-      {
-        heading: "The shape-and-colour code",
-        body: [
-          "Triangular signs warn — they tell you something is ahead. Circular signs order — they give you a command you must obey. Rectangular signs inform — speed limits, route information, parking rules.",
-          "Red borders mean prohibition (you must not). Blue circles mean compulsion (you must). Green rectangles mean primary route information. Brown rectangles indicate tourist destinations.",
-        ],
-      },
-      {
-        heading: "The signs that catch people out",
-        body: [
-          "The 'no entry' sign (red circle with white horizontal bar) versus 'no vehicles' (red circle, blank white centre). The national speed limit sign (white circle with diagonal black line) — many candidates think this means 'end of speed limit'.",
-          "Octagonal STOP signs are the only octagonal signs on UK roads — and the only signs you must legally come to a complete stop at, even if the road is clear.",
-        ],
-      },
-      {
-        heading: "Road markings as signs",
-        body: [
-          "Markings on the road are also tested. White lines down the centre: short broken = hazard ahead, long broken = warning of hazard, double white = no overtaking unless one line is broken on your side.",
-          "Yellow lines at the kerb: single = restricted parking (times on a sign), double = no parking at any time. Zigzag yellow lines outside a school = no parking or stopping.",
-        ],
-      },
-      {
-        heading: "Motorway and direction signs",
-        body: [
-          "Blue background = motorway. Green background = primary A-road route. White background = non-primary routes. Brown = tourist. The colour tells you the road class without reading the destination.",
-          "Motorway lane signs and matrix signs: red X means lane closed (do not enter); amber speed limit means temporary mandatory limit; arrow with red ring means leave this lane.",
-        ],
-      },
-      {
-        heading: "Study tips",
-        body: [
-          "Don't try to memorise individual signs. Learn the system first (shape + colour = meaning) then drill the specific signs that don't follow the rule (STOP, give way, no entry, national speed limit).",
-          "Use free flashcard apps for the 30 most-tested signs in the final week. Then take three full mocks under timed conditions to lock everything in.",
-        ],
-      },
-      {
-        heading: "Warning signs to know cold",
-        body: [
-          "Triangular warning signs cover most of the marks. The most-tested examples: 'school crossing patrol' (children walking, sometimes with the lollipop-stick variant), 'T-junction', 'staggered junction', 'roundabout ahead', 'level crossing with barrier', 'level crossing without barrier or gate', 'crossroads', 'two-way traffic', 'risk of grounding' (humpback bridge or steep ramp), and 'falling rocks'.",
-          "Memorise these as a set: every triangular sign points up; the only triangle that points down is the give-way sign, which is in a class of its own. If you see a triangle, slow down, scan and prepare to react.",
-        ],
-      },
-      {
-        heading: "Order signs and prohibitions",
-        body: [
-          "Circular signs with red borders prohibit. Common examples: 'no entry' (red circle, white horizontal bar), 'no overtaking' (two cars, red one on the right), 'no motor vehicles', 'no vehicles over X tonnes', 'no waiting', 'no stopping' (clearway — solid red disc with blue cross).",
-          "Blue circles compel. 'Turn left ahead', 'mini roundabout', 'pedestrian zone', 'cycle route only', 'tram route'. The Highway Code wording 'must' indicates a legal order, while 'should' is advisory — only signs in red and blue circles carry legal force.",
-        ],
-      },
-      {
-        heading: "Information, motorway and temporary signs",
-        body: [
-          "Rectangular signs inform. White with black border: regulations on parking. Green: primary route information. Blue: motorway information including service distances and lane closures. Brown: tourist destinations.",
-          "Temporary signs at roadworks use yellow backgrounds with black borders — they override permanent signs while the works are in place. Variable matrix signs above motorway lanes show real-time speed limits and lane closures (red X = lane closed; do not enter).",
-        ],
-      },
-      {
-        heading: "Road markings to learn alongside the signs",
-        body: [
-          "Road markings are tested with the same weight as signs. Across the carriageway: a single broken white line = give way (slow down and prepare to stop); double broken white lines = give way at a junction; a solid white STOP line = legal stop required.",
-          "Along the carriageway: short broken centre line = hazard ahead; long broken = warning of hazard; double white line with a solid line on your side = no overtaking unless safe and the broken line is on your side.",
-          "Yellow lines at the kerb: single = restricted parking (check the times on the nearby plate); double = no waiting at any time; double red = no stopping at any time on a Red Route. Zigzag yellow lines outside a school zone forbid stopping or parking even briefly.",
-        ],
-      },
-    ],
+    sections: [],
     faqs: [
       { q: "How many road signs are tested in the DVSA exam?", a: "Around 7–10 of the 50 multiple-choice questions involve signs or road markings." },
       { q: "Are road signs tested in hazard perception?", a: "Indirectly — you need to read signs in the clips to anticipate hazards (e.g. a school sign tells you children may be present)." },
