@@ -747,6 +747,7 @@ function SimilarPage() {
                     partners={dupInfo.partners.get(`${p.b.topic}::${p.b.id}`) ?? []}
                     onRegenerate={() => void regenerate(p, "b")}
                     onCompleteRegenerate={() => void completeRegenerate(p, "b")}
+                    qType={typeMap.get(`${p.b.topic}::${p.b.id}`)}
                     onRevert={() => void revert(`${p.b.topic}::${p.b.id}`)}
                   />
                 </div>
