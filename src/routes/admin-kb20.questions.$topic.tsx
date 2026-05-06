@@ -182,6 +182,8 @@ function QuestionsBrowser() {
   const [type, setType] = useState<string>("all");
   const [imageFilter, setImageFilter] = useState<"all" | "with" | "without">("all");
   const [usageFilter, setUsageFilter] = useState<"all" | "used" | "unused">("all");
+  const [statusFilter, setStatusFilter] = useState<"all" | "enabled" | "disabled">("all");
+  const [togglingId, setTogglingId] = useState<string | null>(null);
   const [page, setPage] = useState(1);
   const [editing, setEditing] = useState<FlatQuestion | null>(null);
   const scrollRestoreRef = useRef<number | null>(null);
