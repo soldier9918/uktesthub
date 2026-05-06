@@ -542,6 +542,7 @@ export const completeRegenerateQuestion = createServerFn({ method: "POST" })
       accessToken: string;
       topic: string;
       topicTitle: string;
+      category?: string;
       categoryTitle: string;
       source: SourceQuestion;
       categoryBlobs: string[]; // normalised question texts across the WHOLE category
