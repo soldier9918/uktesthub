@@ -623,6 +623,27 @@ function SimilarPage() {
         </div>
       )}
 
+      {scanned && clusters.length > 0 && (
+        <div className="mt-3 flex flex-wrap items-center gap-2 rounded-md border border-border bg-card p-3">
+          <span className="text-xs font-semibold">Bulk fix all clusters:</span>
+          <Button size="sm" disabled={bulkRunning || totalBulkCount === 0} onClick={() => confirmAndRunAll("rewrite")}>
+            Fix all (unique) — {totalBulkCount}
+          </Button>
+          <Button size="sm" variant="secondary" disabled={bulkRunning || totalBulkCount === 0} onClick={() => confirmAndRunAll("complete")}>
+            Fix all (complete) — {totalBulkCount}
+          </Button>
+          {bulkRunning && (
+            <Button size="sm" variant="outline" onClick={() => (bulkCancelRef.current = true)}>
+              Cancel
+            </Button>
+          )}
+          {bulkProgress && <span className="text-xs text-muted-foreground">{bulkProgress}</span>}
+          <span className="ml-auto text-xs text-muted-foreground">
+            One keeper preserved per cluster · sequential to respect rate limits
+          </span>
+        </div>
+      )}
+
       {scanned && view === "pairs" && (
         <div className="mt-4 space-y-3">
           {sortedPairs.map((p) => {
