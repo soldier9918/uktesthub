@@ -362,6 +362,48 @@ export type Database = {
         }
         Relationships: []
       }
+      question_regenerations: {
+        Row: {
+          attempts: number
+          created_at: string
+          created_by: string | null
+          generated_question: Json
+          id: string
+          model: string | null
+          needs_review: boolean
+          question_id: string
+          similarity_max: number | null
+          source_question: Json
+          topic: string
+        }
+        Insert: {
+          attempts?: number
+          created_at?: string
+          created_by?: string | null
+          generated_question: Json
+          id?: string
+          model?: string | null
+          needs_review?: boolean
+          question_id: string
+          similarity_max?: number | null
+          source_question: Json
+          topic: string
+        }
+        Update: {
+          attempts?: number
+          created_at?: string
+          created_by?: string | null
+          generated_question?: Json
+          id?: string
+          model?: string | null
+          needs_review?: boolean
+          question_id?: string
+          similarity_max?: number | null
+          source_question?: Json
+          topic?: string
+        }
+        Relationships: []
+      }
       question_reports: {
         Row: {
           created_at: string
@@ -536,6 +578,39 @@ export type Database = {
           id?: string
           level?: string
           message?: string
+        }
+        Relationships: []
+      }
+      similarity_suppressions: {
+        Row: {
+          created_at: string
+          created_by: string | null
+          id: string
+          pair_key: string | null
+          qid_a: string
+          qid_b: string
+          topic_a: string
+          topic_b: string
+        }
+        Insert: {
+          created_at?: string
+          created_by?: string | null
+          id?: string
+          pair_key?: string | null
+          qid_a: string
+          qid_b: string
+          topic_a: string
+          topic_b: string
+        }
+        Update: {
+          created_at?: string
+          created_by?: string | null
+          id?: string
+          pair_key?: string | null
+          qid_a?: string
+          qid_b?: string
+          topic_a?: string
+          topic_b?: string
         }
         Relationships: []
       }

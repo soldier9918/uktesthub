@@ -23,6 +23,8 @@ export const Route = createFileRoute("/admin-kb20/")({
             desc="Find duplicates, missing explanations, broken correct answers, missing images. Click any finding to jump to the question." />
           <Tile to="/admin-kb20/search" title="Search Questions"
             desc="Find every question containing a word or phrase. Filter by category and topic, click to reveal answers." />
+          <Tile to="/admin-kb20/similar" title="Similar Questions"
+            desc="Find duplicate or near-duplicate questions and regenerate any of them as a brand-new unique question with AI." />
           <Tile to="/admin-kb20/reports" title="Reported Questions"
             desc="Review user-reported issues, mark fixed, jump to the question editor." />
           <Tile to="/admin-kb20/questions" title="Edit questions & images"
