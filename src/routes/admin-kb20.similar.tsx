@@ -770,6 +770,23 @@ function PairSide({
           </Button>
         )}
       </div>
+      {showPartners && partners.length > 0 && (
+        <ul className="mt-2 space-y-1 rounded bg-muted/30 p-2 text-xs">
+          {partners.map((pr, i) => (
+            <li key={i} className="flex gap-2">
+              <Link
+                to="/admin-kb20/questions/$topic"
+                params={{ topic: pr.topic }}
+                search={{ q: pr.id, from: "validator" }}
+                className="font-mono text-muted-foreground hover:underline shrink-0"
+              >
+                {pr.topic}/{pr.id}
+              </Link>
+              <span className="line-clamp-1">{pr.text}</span>
+            </li>
+          ))}
+        </ul>
+      )}
       {diff && (
         <div className="mt-2 rounded bg-muted/40 p-2 text-xs">
           <div className="flex flex-wrap items-center gap-2">
