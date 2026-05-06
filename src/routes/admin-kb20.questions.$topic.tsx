@@ -8,6 +8,8 @@ import { Button } from "@/components/ui/button";
 import { AdminGate } from "@/components/AdminGate";
 import { QuestionEditDialog } from "@/components/QuestionEditDialog";
 import { applyOverrideToQuestionRecord, useOverrides, invalidateOverrides } from "@/lib/overrides";
+import { supabase } from "@/integrations/supabase/client";
+import { useAuth } from "@/lib/auth-context";
 
 type RawQuestion = Record<string, unknown> & {
   id?: string;
