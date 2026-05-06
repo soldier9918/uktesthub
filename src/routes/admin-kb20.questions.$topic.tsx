@@ -596,11 +596,15 @@ function QuestionsBrowser() {
         </div>
 
         <ol className="mt-4 space-y-3">
-          {visible.map((q: FlatQuestion, idx: number) => (
+          {visible.map((q: FlatQuestion, idx: number) => {
+            const ov = overrides?.get(`${topic}::${q.id}`);
+            const isDisabled = !!ov?.disabled;
+            const isToggling = togglingId === q.id;
+            return (
             <li
               key={q.id}
               data-qid={q.id}
-              className={`rounded-xl border bg-card p-4 ${q.id === highlightId ? "border-coral ring-2 ring-coral/30" : "border-border"}`}
+              className={`rounded-xl border bg-card p-4 ${q.id === highlightId ? "border-coral ring-2 ring-coral/30" : "border-border"} ${isDisabled ? "opacity-60" : ""}`}
             >
               <div className="flex items-start gap-3">
                 <div className="text-xs text-muted-foreground w-12 shrink-0">
@@ -612,8 +616,11 @@ function QuestionsBrowser() {
                     <code className="text-[10px] text-muted-foreground">
                       {q.id}
                     </code>
-                    {overrides?.has(`${topic}::${q.id}`) && (
+                    {ov && !ov.disabled && (
                       <Badge className="bg-emerald-600 text-white">edited</Badge>
+                    )}
+                    {isDisabled && (
+                      <Badge className="bg-destructive text-destructive-foreground">disabled</Badge>
                     )}
                     {q.usedInMocks.length > 0 ? (
                       <span className="flex flex-wrap items-center gap-1 text-[10px] text-muted-foreground">
