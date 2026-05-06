@@ -186,9 +186,136 @@ function Diagnostics() {
         )}
       </Section>
 
+      <IncompleteQuestions />
       <ServerLogs />
     </main>
   );
+}
+
+type Incomplete = { topic: string; id: string; type: string; question: string; reason: string };
+
+function IncompleteQuestions() {
+  const [rows, setRows] = useState<Incomplete[] | null>(null);
+  const [scanning, setScanning] = useState(false);
+  const [err, setErr] = useState<string | null>(null);
+
+  const scan = async () => {
+    setScanning(true);
+    setErr(null);
+    try {
+      const overrides = await loadOverrides();
+      const topics = listAllTopics();
+      const out: Incomplete[] = [];
+      for (const t of topics) {
+        const file = await loadTopicFileForAdmin(t.topic);
+        if (!file) continue;
+        const bank = (file as { bank?: Record<string, unknown>[]; tests?: { questions: Record<string, unknown>[] }[] }).bank
+          ?? (file as { tests?: { questions: Record<string, unknown>[] }[] }).tests?.flatMap((x) => x.questions)
+          ?? [];
+        for (const rawQ of bank) {
+          const id = String((rawQ as { id?: string }).id ?? "");
+          if (!id) continue;
+          const ov = overrides.get(`${t.topic}::${id}`);
+          if (ov?.disabled) continue;
+          const q = applyOverrideToQuestionRecord(rawQ, ov) as Record<string, unknown>;
+          const type = String(q.type ?? "");
+          const reason = checkIncomplete(type, q);
+          if (reason) {
+            out.push({
+              topic: t.topic,
+              id,
+              type,
+              question: String(q.question ?? q.template ?? q.prompt ?? "").slice(0, 140),
+              reason,
+            });
+          }
+        }
+      }
+      setRows(out);
+    } catch (e) {
+      setErr(String(e instanceof Error ? e.message : e));
+    } finally {
+      setScanning(false);
+    }
+  };
+
+  return (
+    <Section title={`Incomplete questions${rows ? ` (${rows.length})` : ""}`}>
+      <p className="mt-1 text-xs text-muted-foreground">
+        Scans every question (with overrides applied) for missing answers, options, blanks or hot-spot data.
+      </p>
+      <div className="mt-2 flex items-center gap-2">
+        <Button size="sm" onClick={scan} disabled={scanning}>
+          {scanning ? "Scanning…" : rows ? "Re-scan" : "Scan all topics"}
+        </Button>
+        {err && <span className="text-xs text-destructive">{err}</span>}
+      </div>
+      {rows && rows.length === 0 && <Empty>No incomplete questions found.</Empty>}
+      {rows && rows.length > 0 && (
+        <ul className="mt-3 max-h-[28rem] divide-y divide-border overflow-auto rounded-md border border-border bg-card text-sm">
+          {rows.map((r) => (
+            <li key={`${r.topic}::${r.id}`} className="px-3 py-2">
+              <div className="flex flex-wrap items-center gap-2">
+                <Badge variant="outline">{r.topic}</Badge>
+                <code className="text-[10px] text-muted-foreground">{r.id}</code>
+                <Badge variant="secondary">{r.type}</Badge>
+                <Badge variant="destructive">{r.reason}</Badge>
+                <Link
+                  to="/admin-kb20/questions/$topic"
+                  params={{ topic: r.topic }}
+                  search={{ edit: r.id }}
+                  className="ml-auto text-xs font-semibold text-coral hover:underline"
+                >
+                  Fix →
+                </Link>
+              </div>
+              <p className="mt-1 text-xs text-muted-foreground">{r.question}</p>
+            </li>
+          ))}
+        </ul>
+      )}
+    </Section>
+  );
+}
+
+function checkIncomplete(type: string, q: Record<string, unknown>): string | null {
+  const t = type.replace(/_/g, "-");
+  const opts = q.options as unknown[] | undefined;
+  const ca = q.correctAnswer;
+  const cas = q.correctAnswers as unknown[] | undefined;
+  if (t === "true-false") {
+    if (typeof ca !== "boolean") return "no answer";
+    return null;
+  }
+  if (t === "multiple-response") {
+    if (!Array.isArray(opts) || opts.length < 2) return "missing options";
+    if (!Array.isArray(cas) || cas.length === 0) return "no answer";
+    return null;
+  }
+  if (t === "numeric-entry") {
+    if (typeof ca !== "number") return "no answer";
+    return null;
+  }
+  if (t === "fill-blanks" || t === "drag-drop-blanks" || t === "dropdown-blanks") {
+    const blanks = q.blanks as { options?: unknown[]; correctIndex?: number }[] | undefined;
+    if (!Array.isArray(blanks) || blanks.length === 0) return "no blanks";
+    for (const b of blanks) {
+      if (!Array.isArray(b.options) || b.options.length < 2) return "blank missing options";
+      if (typeof b.correctIndex !== "number") return "blank missing answer";
+    }
+    return null;
+  }
+  if (t === "hot-spot") {
+    const spots = q.spots as { id?: string }[] | undefined;
+    if (!Array.isArray(spots) || spots.length === 0) return "no spots";
+    if (!q.correctSpotId) return "no answer";
+    return null;
+  }
+  // mcq, image-question, multiple-choice, default
+  if (!Array.isArray(opts) || opts.length < 2) return "missing options";
+  if (typeof ca !== "number") return "no answer";
+  if (ca < 0 || ca >= opts.length) return "answer out of range";
+  return null;
 }
 
 type ServerLog = { id: string; level: string; message: string; context: unknown; created_at: string };
