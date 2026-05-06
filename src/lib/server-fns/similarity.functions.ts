@@ -537,15 +537,17 @@ export const completeRegenerateQuestion = createServerFn({ method: "POST" })
         const angle = SCENARIO_ANGLES[(attempt - 1) % SCENARIO_ANGLES.length];
 
         const sysPrompt = `You write UK exam practice questions for "${data.categoryTitle} — ${data.topicTitle}".
-You are creating a BRAND-NEW question on the concept: "${concept}".
-You have NOT seen the original question. Do not attempt to reproduce it.
+You are creating a BRAND-NEW question that tests a DIFFERENT piece of knowledge from anything in the AVOID list.
+The new question must be on the concept: "${concept}" — which is a different sub-topic from the existing questions.
+You have NOT seen any original question. Do not attempt to reproduce one.
 Rules:
+- The new question must test DIFFERENT factual knowledge — not the same fact reworded.
 - Use UK English and UK-specific context (£, miles, MOT, NHS, DVSA where relevant).
 - Match this question type: "${type}".
 - For MCQ-style: provide exactly 4 plausible options with one correct answer.
 - Distractors must be realistic but clearly wrong to a knowledgeable test-taker.
 - Provide a unique explanation (1-3 sentences).
-- Do NOT reuse phrases, scenarios, numbers, or distinctive wording from the AVOID list below.
+- Do NOT reuse phrases, scenarios, numbers, subject matter, or distinctive wording from the AVOID list below.
 - Frame the scenario around: ${angle}.`;
 
         const userPrompt = `Concept: ${concept}
