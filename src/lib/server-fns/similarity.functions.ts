@@ -405,16 +405,136 @@ ${JSON.stringify(
 
 // ---------- Complete Regeneration (brand-new question, hides source from AI) ----------
 
-const SCENARIO_ANGLES = [
-  "urban street with parked cars",
-  "rural country lane",
-  "motorway in heavy traffic",
-  "night-time driving in poor visibility",
-  "wet weather and slippery roads",
-  "approaching a busy junction",
-  "near a school or pedestrian area",
-  "with a learner driver or new licence holder",
+const GENERIC_ANGLES = [
+  "everyday real-world scenario",
+  "common misconception people get wrong",
+  "edge case the textbook glosses over",
+  "practical application in daily life",
+  "workplace or community context",
+  "exam-style scenario testing recall",
+  "decision-making under time pressure",
+  "comparing two similar concepts",
 ];
+
+const SCENARIO_ANGLES_BY_CATEGORY: Record<string, string[]> = {
+  driving: [
+    "urban street with parked cars",
+    "rural country lane",
+    "motorway in heavy traffic",
+    "night-time driving in poor visibility",
+    "wet weather and slippery roads",
+    "approaching a busy junction",
+    "near a school or pedestrian area",
+    "with a learner driver or new licence holder",
+  ],
+  "taxi-private-hire": [
+    "picking up a passenger in central London",
+    "late-night fare with a vulnerable passenger",
+    "airport transfer with luggage",
+    "wheelchair-accessible vehicle scenario",
+    "dispute over fare or route",
+    "ULEZ or congestion charge situation",
+  ],
+  citizenship: [
+    "everyday life in modern UK",
+    "interacting with public services",
+    "historical event shaping UK today",
+    "rights and responsibilities at work",
+    "voting or civic participation",
+    "UK geography or cultural tradition",
+  ],
+  english: [
+    "spoken conversation in a shop or office",
+    "writing a short formal message",
+    "understanding a public notice",
+    "grammar choice in a sentence",
+    "vocabulary in everyday context",
+    "listening for key information",
+  ],
+  nhs: [
+    "ward handover scenario",
+    "patient safety incident",
+    "infection control in clinical setting",
+    "consent and capacity scenario",
+    "safeguarding concern",
+    "communication with a distressed family",
+  ],
+  security: [
+    "venue entry search scenario",
+    "conflict de-escalation with an aggressive customer",
+    "lone working incident",
+    "fire or evacuation event",
+    "suspect package or hostile reconnaissance",
+    "handover and incident reporting",
+  ],
+  hospitality: [
+    "busy service with an unhappy guest",
+    "allergen disclosure at the table",
+    "cash handling and till discrepancy",
+    "stock rotation and food safety",
+    "team handover at shift change",
+  ],
+  construction: [
+    "working at height scenario",
+    "manual handling on site",
+    "PPE check before a task",
+    "near-miss reporting",
+    "site induction for a new worker",
+  ],
+  finance: [
+    "client risk profile scenario",
+    "AML or KYC red flag",
+    "regulatory disclosure obligation",
+    "calculation of fees or interest",
+    "ethical conflict of interest",
+  ],
+  "it-tech": [
+    "incident triage scenario",
+    "secure password or access scenario",
+    "data backup and recovery",
+    "phishing email evaluation",
+    "code or config review choice",
+  ],
+  "healthcare-entry": [
+    "personal care scenario with a service user",
+    "moving and handling situation",
+    "infection control basics",
+    "safeguarding observation",
+    "documentation at end of shift",
+  ],
+  teaching: [
+    "managing a disruptive class",
+    "differentiation for mixed ability",
+    "safeguarding disclosure",
+    "parent communication scenario",
+    "assessment for learning moment",
+  ],
+  legal: [
+    "client interview scenario",
+    "ethical duty conflict",
+    "court etiquette situation",
+    "drafting choice in a contract clause",
+    "evidence handling decision",
+  ],
+  "military-emergency": [
+    "incident response under pressure",
+    "team leadership in the field",
+    "first aid casualty scenario",
+    "communications protocol decision",
+  ],
+  "maritime-aviation": [
+    "pre-departure safety check",
+    "weather-related decision",
+    "emergency procedure scenario",
+    "navigation or routing choice",
+  ],
+  government: [
+    "policy interpretation scenario",
+    "FOI or data protection request",
+    "stakeholder consultation situation",
+    "procurement compliance choice",
+  ],
+};
 
 export const completeRegenerateQuestion = createServerFn({ method: "POST" })
   .inputValidator(
@@ -422,6 +542,7 @@ export const completeRegenerateQuestion = createServerFn({ method: "POST" })
       accessToken: string;
       topic: string;
       topicTitle: string;
+      category?: string;
       categoryTitle: string;
       source: SourceQuestion;
       categoryBlobs: string[]; // normalised question texts across the WHOLE category
@@ -532,17 +653,21 @@ export const completeRegenerateQuestion = createServerFn({ method: "POST" })
       let attempts = 0;
       let lastError: string | null = null;
 
+      const angles = (data.category && SCENARIO_ANGLES_BY_CATEGORY[data.category]) || GENERIC_ANGLES;
+      const isDriving = data.category === "driving";
       for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
         attempts = attempt;
-        const angle = SCENARIO_ANGLES[(attempt - 1) % SCENARIO_ANGLES.length];
+        const angle = angles[(attempt - 1) % angles.length];
 
         const sysPrompt = `You write UK exam practice questions for "${data.categoryTitle} — ${data.topicTitle}".
 You are creating a BRAND-NEW question that tests a DIFFERENT piece of knowledge from anything in the AVOID list.
 The new question must be on the concept: "${concept}" — which is a different sub-topic from the existing questions.
 You have NOT seen any original question. Do not attempt to reproduce one.
 Rules:
+- The new question MUST stay strictly within the topic "${data.topicTitle}" (category "${data.categoryTitle}").${isDriving ? "" : `
+- Do NOT introduce driving, vehicles, road signs, motorways, learner drivers, or road scenarios — this topic is NOT about driving.`}
 - The new question must test DIFFERENT factual knowledge — not the same fact reworded.
-- Use UK English and UK-specific context (£, miles, MOT, NHS, DVSA where relevant).
+- Use UK English and UK-specific context (£, miles, MOT, NHS, DVSA where relevant to this topic).
 - Match this question type: "${type}".
 - For MCQ-style: provide exactly 4 plausible options with one correct answer.
 - Distractors must be realistic but clearly wrong to a knowledgeable test-taker.
