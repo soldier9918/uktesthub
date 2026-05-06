@@ -15,7 +15,11 @@ import {
   type SimItem,
   type SimPair,
 } from "@/lib/admin/similarity";
-import { aiVerdictPairs, regenerateUniqueQuestion } from "@/lib/server-fns/similarity.functions";
+import {
+  aiVerdictPairs,
+  completeRegenerateQuestion,
+  regenerateUniqueQuestion,
+} from "@/lib/server-fns/similarity.functions";
 
 export const Route = createFileRoute("/admin-kb20/similar")({
   head: () => ({
