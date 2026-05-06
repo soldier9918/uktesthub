@@ -77,6 +77,7 @@ function SimilarPage() {
   const [scanned, setScanned] = useState(false);
   const [busyKey, setBusyKey] = useState<string | null>(null);
   const [diffs, setDiffs] = useState<Record<string, { topic: string; id: string; before: AnyQ; after: AnyQ; sim: number; needsReview: boolean; mode?: "rewrite" | "complete"; concept?: string }>>({});
+  const [view, setView] = useState<"pairs" | "clusters">("pairs");
   const cancelRef = useRef(false);
 
   const topicsForCategory = useMemo(() => {
@@ -378,6 +379,78 @@ function SimilarPage() {
 
   const visiblePairs = pairs.filter((p) => !p.hidden);
 
+  // Compute duplicate counts and partners per question
+  const dupInfo = useMemo(() => {
+    const count = new Map<string, number>();
+    const partners = new Map<string, Array<{ topic: string; id: string; text: string }>>();
+    for (const p of visiblePairs) {
+      const ka = `${p.a.topic}::${p.a.id}`;
+      const kb = `${p.b.topic}::${p.b.id}`;
+      count.set(ka, (count.get(ka) ?? 0) + 1);
+      count.set(kb, (count.get(kb) ?? 0) + 1);
+      if (!partners.has(ka)) partners.set(ka, []);
+      if (!partners.has(kb)) partners.set(kb, []);
+      partners.get(ka)!.push({ topic: p.b.topic, id: p.b.id, text: p.b.text });
+      partners.get(kb)!.push({ topic: p.a.topic, id: p.a.id, text: p.a.text });
+    }
+    return { count, partners };
+  }, [visiblePairs]);
+
+  // Union-find clusters
+  const clusters = useMemo(() => {
+    const parent = new Map<string, string>();
+    const find = (x: string): string => {
+      const p = parent.get(x);
+      if (!p || p === x) {
+        parent.set(x, x);
+        return x;
+      }
+      const r = find(p);
+      parent.set(x, r);
+      return r;
+    };
+    const union = (a: string, b: string) => {
+      const ra = find(a);
+      const rb = find(b);
+      if (ra !== rb) parent.set(ra, rb);
+    };
+    for (const p of visiblePairs) {
+      const ka = `${p.a.topic}::${p.a.id}`;
+      const kb = `${p.b.topic}::${p.b.id}`;
+      find(ka);
+      find(kb);
+      union(ka, kb);
+    }
+    const groups = new Map<string, { members: Set<string>; pairs: EnrichedPair[] }>();
+    for (const p of visiblePairs) {
+      const root = find(`${p.a.topic}::${p.a.id}`);
+      if (!groups.has(root)) groups.set(root, { members: new Set(), pairs: [] });
+      const g = groups.get(root)!;
+      g.members.add(`${p.a.topic}::${p.a.id}`);
+      g.members.add(`${p.b.topic}::${p.b.id}`);
+      g.pairs.push(p);
+    }
+    return Array.from(groups.values()).sort((a, b) => b.members.size - a.members.size);
+  }, [visiblePairs]);
+
+  const uniqueQuestions = dupInfo.count.size;
+  const bigClusters = clusters.filter((c) => c.members.size >= 3).length;
+
+  // Sort visible pairs so high-duplicate questions surface first
+  const sortedPairs = useMemo(() => {
+    return [...visiblePairs].sort((a, b) => {
+      const sa = Math.max(
+        dupInfo.count.get(`${a.a.topic}::${a.a.id}`) ?? 0,
+        dupInfo.count.get(`${a.b.topic}::${a.b.id}`) ?? 0,
+      );
+      const sb = Math.max(
+        dupInfo.count.get(`${b.a.topic}::${b.a.id}`) ?? 0,
+        dupInfo.count.get(`${b.b.topic}::${b.b.id}`) ?? 0,
+      );
+      return sb - sa;
+    });
+  }, [visiblePairs, dupInfo]);
+
   return (
     <main className="mx-auto max-w-6xl px-4 py-8">
       <Link to="/admin-kb20" className="text-sm text-muted-foreground hover:underline">
@@ -465,74 +538,169 @@ function SimilarPage() {
       )}
 
       {scanned && visiblePairs.length > 0 && (
-        <div className="mt-6 flex items-center gap-2">
+        <div className="mt-6 flex flex-wrap items-center gap-2">
           <Badge variant="secondary" className="text-sm">
             {visiblePairs.length} similar pair{visiblePairs.length === 1 ? "" : "s"} remaining
           </Badge>
+          <Badge variant="outline" className="text-xs">
+            {uniqueQuestions} unique question{uniqueQuestions === 1 ? "" : "s"}
+          </Badge>
+          {bigClusters > 0 && (
+            <Badge variant="destructive" className="text-xs">
+              {bigClusters} cluster{bigClusters === 1 ? "" : "s"} with 3+ duplicates
+            </Badge>
+          )}
           {pairs.length !== visiblePairs.length && (
             <span className="text-xs text-muted-foreground">
               ({pairs.length - visiblePairs.length} marked not duplicate)
             </span>
           )}
+          <div className="ml-auto flex items-center gap-1 rounded-md border border-border p-0.5">
+            <button
+              type="button"
+              onClick={() => setView("pairs")}
+              className={`rounded px-2 py-1 text-xs ${view === "pairs" ? "bg-primary text-primary-foreground" : "text-muted-foreground"}`}
+            >
+              Pairs
+            </button>
+            <button
+              type="button"
+              onClick={() => setView("clusters")}
+              className={`rounded px-2 py-1 text-xs ${view === "clusters" ? "bg-primary text-primary-foreground" : "text-muted-foreground"}`}
+            >
+              Clusters ({clusters.length})
+            </button>
+          </div>
         </div>
       )}
 
-      <div className="mt-4 space-y-3">
-        {visiblePairs.map((p) => {
-          const k = pairKey(p);
-          const diffA = diffs[`${p.a.topic}::${p.a.id}`];
-          const diffB = diffs[`${p.b.topic}::${p.b.id}`];
-          const verdictColor =
-            p.verdict === "duplicate"
-              ? "bg-destructive/15 text-destructive"
-              : p.verdict === "near-duplicate"
-              ? "bg-amber-500/15 text-amber-700"
-              : "bg-muted text-muted-foreground";
-          return (
-            <div key={k} className="rounded-md border border-border bg-card p-3">
-              <div className="flex flex-wrap items-center gap-2 text-xs">
-                <Badge variant="secondary">Lexical {(p.score * 100).toFixed(0)}%</Badge>
-                {p.verdict && (
-                  <span className={`rounded px-2 py-0.5 ${verdictColor}`}>
-                    AI: {p.verdict}
-                    {typeof p.confidence === "number" && ` (${(p.confidence * 100).toFixed(0)}%)`}
+      {scanned && view === "pairs" && (
+        <div className="mt-4 space-y-3">
+          {sortedPairs.map((p) => {
+            const k = pairKey(p);
+            const diffA = diffs[`${p.a.topic}::${p.a.id}`];
+            const diffB = diffs[`${p.b.topic}::${p.b.id}`];
+            const verdictColor =
+              p.verdict === "duplicate"
+                ? "bg-destructive/15 text-destructive"
+                : p.verdict === "near-duplicate"
+                ? "bg-amber-500/15 text-amber-700"
+                : "bg-muted text-muted-foreground";
+            return (
+              <div key={k} className="rounded-md border border-border bg-card p-3">
+                <div className="flex flex-wrap items-center gap-2 text-xs">
+                  <Badge variant="secondary">Lexical {(p.score * 100).toFixed(0)}%</Badge>
+                  {p.verdict && (
+                    <span className={`rounded px-2 py-0.5 ${verdictColor}`}>
+                      AI: {p.verdict}
+                      {typeof p.confidence === "number" && ` (${(p.confidence * 100).toFixed(0)}%)`}
+                    </span>
+                  )}
+                  <span className="ml-auto text-muted-foreground">{p.reason}</span>
+                </div>
+                <div className="mt-2 grid gap-3 sm:grid-cols-2">
+                  <PairSide
+                    side="A"
+                    topic={p.a.topic}
+                    id={p.a.id}
+                    text={p.a.text}
+                    diff={diffA}
+                    busy={busyKey === `${p.a.topic}::${p.a.id}`}
+                    dupCount={dupInfo.count.get(`${p.a.topic}::${p.a.id}`) ?? 0}
+                    partners={dupInfo.partners.get(`${p.a.topic}::${p.a.id}`) ?? []}
+                    onRegenerate={() => void regenerate(p, "a")}
+                    onCompleteRegenerate={() => void completeRegenerate(p, "a")}
+                    onRevert={() => void revert(`${p.a.topic}::${p.a.id}`)}
+                  />
+                  <PairSide
+                    side="B"
+                    topic={p.b.topic}
+                    id={p.b.id}
+                    text={p.b.text}
+                    diff={diffB}
+                    busy={busyKey === `${p.b.topic}::${p.b.id}`}
+                    dupCount={dupInfo.count.get(`${p.b.topic}::${p.b.id}`) ?? 0}
+                    partners={dupInfo.partners.get(`${p.b.topic}::${p.b.id}`) ?? []}
+                    onRegenerate={() => void regenerate(p, "b")}
+                    onCompleteRegenerate={() => void completeRegenerate(p, "b")}
+                    onRevert={() => void revert(`${p.b.topic}::${p.b.id}`)}
+                  />
+                </div>
+                <div className="mt-2 flex items-center gap-2">
+                  <Button size="sm" variant="outline" onClick={() => void markNotDuplicate(p)}>
+                    Mark as not duplicate
+                  </Button>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      )}
+
+      {scanned && view === "clusters" && (
+        <div className="mt-4 space-y-3">
+          {clusters.map((cluster, ci) => {
+            const memberKeys = Array.from(cluster.members);
+            const sevClass =
+              cluster.members.size >= 4
+                ? "border-destructive/60"
+                : cluster.members.size === 3
+                ? "border-amber-500/60"
+                : "border-border";
+            return (
+              <div key={ci} className={`rounded-md border-2 bg-card p-3 ${sevClass}`}>
+                <div className="flex flex-wrap items-center gap-2 text-xs">
+                  <Badge variant={cluster.members.size >= 3 ? "destructive" : "secondary"}>
+                    Cluster of {cluster.members.size} questions
+                  </Badge>
+                  <span className="text-muted-foreground">
+                    {cluster.pairs.length} pair{cluster.pairs.length === 1 ? "" : "s"}
                   </span>
-                )}
-                <span className="ml-auto text-muted-foreground">{p.reason}</span>
+                </div>
+                <ul className="mt-2 space-y-2">
+                  {memberKeys.map((mk) => {
+                    const [topic, id] = mk.split("::");
+                    const partners = dupInfo.partners.get(mk) ?? [];
+                    const sample = partners[0]?.text ?? "";
+                    const text =
+                      cluster.pairs.find((p) => `${p.a.topic}::${p.a.id}` === mk)?.a.text ??
+                      cluster.pairs.find((p) => `${p.b.topic}::${p.b.id}` === mk)?.b.text ??
+                      sample;
+                    const dupCount = dupInfo.count.get(mk) ?? 0;
+                    const diff = diffs[mk];
+                    return (
+                      <li key={mk} className="rounded border border-border bg-background/50 p-2">
+                        <div className="flex flex-wrap items-center gap-2 text-xs text-muted-foreground">
+                          <Badge variant={dupCount >= 3 ? "destructive" : dupCount === 2 ? "secondary" : "outline"}>
+                            {dupCount} duplicate{dupCount === 1 ? "" : "s"}
+                          </Badge>
+                          <Link
+                            to="/admin-kb20/questions/$topic"
+                            params={{ topic }}
+                            search={{ q: id, from: "validator" }}
+                            className="font-mono hover:underline"
+                          >
+                            {topic} / {id}
+                          </Link>
+                        </div>
+                        <p className="mt-1 line-clamp-2 text-sm">{text}</p>
+                        {diff && (
+                          <p className="mt-1 text-xs text-success">
+                            ✓ regenerated (sim {(diff.sim * 100).toFixed(0)}%)
+                          </p>
+                        )}
+                      </li>
+                    );
+                  })}
+                </ul>
+                <p className="mt-2 text-xs text-muted-foreground">
+                  Switch to Pairs view to regenerate or mark individual pairs as not duplicate.
+                </p>
               </div>
-              <div className="mt-2 grid gap-3 sm:grid-cols-2">
-                <PairSide
-                  side="A"
-                  topic={p.a.topic}
-                  id={p.a.id}
-                  text={p.a.text}
-                  diff={diffA}
-                  busy={busyKey === `${p.a.topic}::${p.a.id}`}
-                  onRegenerate={() => void regenerate(p, "a")}
-                  onCompleteRegenerate={() => void completeRegenerate(p, "a")}
-                  onRevert={() => void revert(`${p.a.topic}::${p.a.id}`)}
-                />
-                <PairSide
-                  side="B"
-                  topic={p.b.topic}
-                  id={p.b.id}
-                  text={p.b.text}
-                  diff={diffB}
-                  busy={busyKey === `${p.b.topic}::${p.b.id}`}
-                  onRegenerate={() => void regenerate(p, "b")}
-                  onCompleteRegenerate={() => void completeRegenerate(p, "b")}
-                  onRevert={() => void revert(`${p.b.topic}::${p.b.id}`)}
-                />
-              </div>
-              <div className="mt-2 flex items-center gap-2">
-                <Button size="sm" variant="outline" onClick={() => void markNotDuplicate(p)}>
-                  Mark as not duplicate
-                </Button>
-              </div>
-            </div>
-          );
-        })}
-      </div>
+            );
+          })}
+        </div>
+      )}
     </main>
   );
 }
@@ -544,6 +712,8 @@ function PairSide({
   text,
   diff,
   busy,
+  dupCount,
+  partners,
   onRegenerate,
   onCompleteRegenerate,
   onRevert,
@@ -554,14 +724,29 @@ function PairSide({
   text: string;
   diff?: { before: AnyQ; after: AnyQ; sim: number; needsReview: boolean; mode?: "rewrite" | "complete"; concept?: string };
   busy: boolean;
+  dupCount: number;
+  partners: Array<{ topic: string; id: string; text: string }>;
   onRegenerate: () => void;
   onCompleteRegenerate: () => void;
   onRevert: () => void;
 }) {
+  const [showPartners, setShowPartners] = useState(false);
   return (
     <div className="rounded border border-border bg-background/50 p-2">
-      <div className="flex items-center gap-2 text-xs text-muted-foreground">
+      <div className="flex flex-wrap items-center gap-2 text-xs text-muted-foreground">
         <Badge variant="outline">{side}</Badge>
+        {dupCount >= 2 && (
+          <button
+            type="button"
+            onClick={() => setShowPartners((v) => !v)}
+            className={`rounded px-1.5 py-0.5 text-xs font-semibold ${
+              dupCount >= 3 ? "bg-destructive/15 text-destructive" : "bg-amber-500/15 text-amber-700"
+            }`}
+            title="Click to see all duplicates"
+          >
+            {dupCount} duplicates {showPartners ? "▴" : "▾"}
+          </button>
+        )}
         <Link
           to="/admin-kb20/questions/$topic"
           params={{ topic }}
@@ -585,6 +770,23 @@ function PairSide({
           </Button>
         )}
       </div>
+      {showPartners && partners.length > 0 && (
+        <ul className="mt-2 space-y-1 rounded bg-muted/30 p-2 text-xs">
+          {partners.map((pr, i) => (
+            <li key={i} className="flex gap-2">
+              <Link
+                to="/admin-kb20/questions/$topic"
+                params={{ topic: pr.topic }}
+                search={{ q: pr.id, from: "validator" }}
+                className="font-mono text-muted-foreground hover:underline shrink-0"
+              >
+                {pr.topic}/{pr.id}
+              </Link>
+              <span className="line-clamp-1">{pr.text}</span>
+            </li>
+          ))}
+        </ul>
+      )}
       {diff && (
         <div className="mt-2 rounded bg-muted/40 p-2 text-xs">
           <div className="flex flex-wrap items-center gap-2">

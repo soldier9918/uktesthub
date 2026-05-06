@@ -1,55 +1,33 @@
 ## Goal
+Make it obvious on the **Similar Questions** admin page when a single question is part of more than one duplicate pair (i.e. belongs to a cluster of 3+).
 
-Add a second action button **"Complete Regeneration"** next to the existing **"Regenerate as unique"** on the Similar Questions page. It should:
+## Current behavior
+- `findSimilarPairs` returns flat A↔B pairs.
+- Each pair renders as its own card. A question that matches 3 others appears in 3 separate cards with no cross-reference.
+- Nothing tells the admin "this question has N duplicates".
 
-1. Generate a **completely new** question on the same concept — without showing the source to the AI (so it's not a reword).
-2. Check uniqueness against **every question in the whole category** (all sibling topics), not just the current topic.
-3. Save as an override + audit log, same persistence as today.
+## Proposed UI changes (frontend only, in `src/routes/admin-kb20.similar.tsx`)
 
-The existing "Regenerate as unique" button stays unchanged (rewrite-style, topic-scoped check).
+1. **Compute duplicate counts per question** from `visiblePairs`:
+   - Build a `Map<topic::id, number>` counting how many visible pairs each question appears in.
+   - Build a `Map<topic::id, Array<{topic,id,text}>>` of all its partners for the expandable list.
 
-## Behaviour comparison
+2. **Add a "duplicate count" badge on each PairSide**:
+   - Next to the A/B label, show e.g. `3 duplicates` (red if ≥3, amber if =2, hidden if =1).
+   - Clicking the badge expands a small list of all the OTHER questions it's similar to, with quick links to each.
 
-| | Regenerate as unique (existing) | Complete Regeneration (new) |
-|---|---|---|
-| AI sees source? | Yes, told "don't paraphrase" | No — only concept label + avoid-list |
-| Uniqueness check | Same topic only | Whole category (all topics in category) |
-| Reject threshold | Jaccard ≥ 0.80 | Jaccard ≥ 0.65 (stricter) |
-| Max attempts | 3 | 5 |
-| Output | Override + audit row | Override + audit row (mode = "complete") |
+3. **Add a "Cluster view" toggle** at the top of the results (next to the remaining-count badge):
+   - **Pairs view** (default, current): one card per pair.
+   - **Cluster view**: group all pairs that share a question into a single card. The card shows the "hub" question once, then lists all its duplicates underneath with regenerate/mark-not-dup buttons per partner. Uses a simple union-find over visible pairs.
 
-## Implementation outline
+4. **Add a summary line** under the remaining-count badge:
+   - e.g. `12 pairs · 8 unique questions · 2 clusters with 3+ duplicates`.
 
-### 1. Server function — new `completeRegenerateQuestion`
-
-`src/lib/server-fns/similarity.functions.ts`:
-- Accepts: `accessToken`, `topic`, `topicTitle`, `categoryTitle`, `source`, `categoryBlobs[]` (replaces `existingBlobs`).
-- Step A — extract concept: quick `gemini-2.5-flash` call returning a 3–8 word concept label from the source.
-- Step B — generate fresh: `gemini-2.5-pro` prompt that **only** receives the concept label + category/topic + a small "avoid" list (the 15 most lexically similar existing question stems in the category). Source question/options/explanation are NOT in the prompt.
-- Step C — uniqueness gate: Jaccard against all `categoryBlobs`; reject ≥ 0.65; rotate scenario angle (urban/rural/motorway/night/weather/learner/etc.) per attempt; up to 5 attempts.
-- Step D — save override + insert audit row with `mode = "complete"`.
-
-### 2. Client — new button + category loader
-
-`src/routes/admin-kb20.similar.tsx`:
-- Add **"Complete Regeneration"** button (variant `secondary`) next to existing button on each pair row.
-- Before calling, build `categoryBlobs` by loading every topic file in the same category (reuse the same loader the page already uses for the current topic, iterating over `category.topics`).
-- Show progress toast ("Scanning {N} questions across category…") while building blobs.
-- On success: show diff, Approve / Revert (same UX as existing).
-
-### 3. DB — small migration
-
-Add to `question_regenerations`:
-- `mode text default 'rewrite'` — values: `rewrite` | `complete`
-- `concept text` — extracted concept label, useful for audit/diff display
-- `scope text default 'topic'` — values: `topic` | `category`
-
-### 4. Audit display
-
-Show mode + concept + scope on the post-regenerate diff so you can confirm it stayed on-topic.
+5. **Sort order**: in both views, push questions/clusters with the highest duplicate count to the top so the worst offenders surface first.
 
 ## Out of scope
+- No changes to similarity detection, regeneration logic, or DB.
+- No changes to `similarity.functions.ts` or migrations.
 
-- Cross-category uniqueness (would need to load entire bank).
-- Embedding-based similarity (still trigram Jaccard).
-- Bulk "Complete Regenerate" across many pairs at once.
+## Files to edit
+- `src/routes/admin-kb20.similar.tsx` (only file touched)
