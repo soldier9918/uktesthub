@@ -351,15 +351,9 @@ function SimilarPage() {
 
   const availableTypes = useMemo(() => {
     const s = new Set<string>();
-    for (const p of pairs) {
-      if (p.hidden) continue;
-      const ta = typeMap.get(`${p.a.topic}::${p.a.id}`);
-      const tb = typeMap.get(`${p.b.topic}::${p.b.id}`);
-      if (ta) s.add(ta);
-      if (tb) s.add(tb);
-    }
+    for (const t of typeMap.values()) if (t) s.add(t);
     return Array.from(s).sort();
-  }, [pairs, typeMap]);
+  }, [typeMap]);
 
   const visiblePairs = pairs.filter((p) => {
     if (p.hidden) return false;
