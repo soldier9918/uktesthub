@@ -113,6 +113,7 @@ function SimilarPage() {
 
     const overrides = await loadOverrides();
     const items: SimItem[] = [];
+    const tmap = new Map<string, string>();
     for (let ti = 0; ti < targetTopics.length; ti++) {
       const topic = targetTopics[ti];
       setProgress(`Loading ${topic} (${ti + 1}/${targetTopics.length})…`);
@@ -128,6 +129,8 @@ function SimilarPage() {
         const q = applyOverrideToQuestionRecord(raw, overrides.get(`${topic}::${id}`));
         const blob = buildBlob(q as Parameters<typeof buildBlob>[0]);
         items.push({ topic, id: String(id), blob, trigrams: trigrams(blob) });
+        const t = (q as { type?: string }).type;
+        if (t) tmap.set(`${topic}::${String(id)}`, t);
       }
       if (cancelRef.current) {
         setRunning(false);
