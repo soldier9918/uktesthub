@@ -735,6 +735,24 @@ function SimilarPage() {
                     onCompleteRegenerate={() => void completeRegenerate(p, "a")}
                     qType={typeMap.get(`${p.a.topic}::${p.a.id}`)}
                     onRevert={() => void revert(`${p.a.topic}::${p.a.id}`)}
+                    bulkRunning={bulkRunning}
+                    onRegenerateDuplicates={(mode) => {
+                      const partners = dupInfo.partners.get(`${p.a.topic}::${p.a.id}`) ?? [];
+                      const seen = new Set<string>();
+                      const targets = partners
+                        .filter((pr) => {
+                          const k = `${pr.topic}::${pr.id}`;
+                          if (seen.has(k)) return false;
+                          seen.add(k);
+                          return true;
+                        })
+                        .map((pr) => ({ topic: pr.topic, id: pr.id }));
+                      if (targets.length === 0) return;
+                      const label = mode === "rewrite" ? "Regenerate duplicates (unique)" : "Regenerate duplicates (complete)";
+                      const mins = Math.ceil((targets.length * 15) / 60);
+                      if (!window.confirm(`${label}: regenerate ${targets.length} duplicate${targets.length === 1 ? "" : "s"} of ${p.a.topic}/${p.a.id} (this question kept). ~${mins} min. Continue?`)) return;
+                      void runBulk(targets, mode, label);
+                    }}
                   />
                   <PairSide
                     side="B"
@@ -749,6 +767,24 @@ function SimilarPage() {
                     onCompleteRegenerate={() => void completeRegenerate(p, "b")}
                     qType={typeMap.get(`${p.b.topic}::${p.b.id}`)}
                     onRevert={() => void revert(`${p.b.topic}::${p.b.id}`)}
+                    bulkRunning={bulkRunning}
+                    onRegenerateDuplicates={(mode) => {
+                      const partners = dupInfo.partners.get(`${p.b.topic}::${p.b.id}`) ?? [];
+                      const seen = new Set<string>();
+                      const targets = partners
+                        .filter((pr) => {
+                          const k = `${pr.topic}::${pr.id}`;
+                          if (seen.has(k)) return false;
+                          seen.add(k);
+                          return true;
+                        })
+                        .map((pr) => ({ topic: pr.topic, id: pr.id }));
+                      if (targets.length === 0) return;
+                      const label = mode === "rewrite" ? "Regenerate duplicates (unique)" : "Regenerate duplicates (complete)";
+                      const mins = Math.ceil((targets.length * 15) / 60);
+                      if (!window.confirm(`${label}: regenerate ${targets.length} duplicate${targets.length === 1 ? "" : "s"} of ${p.b.topic}/${p.b.id} (this question kept). ~${mins} min. Continue?`)) return;
+                      void runBulk(targets, mode, label);
+                    }}
                   />
                 </div>
                 <div className="mt-2 flex items-center gap-2">
@@ -867,6 +903,8 @@ function PairSide({
   onCompleteRegenerate,
   onRevert,
   qType,
+  bulkRunning,
+  onRegenerateDuplicates,
 }: {
   side: "A" | "B";
   topic: string;
@@ -880,6 +918,8 @@ function PairSide({
   onCompleteRegenerate: () => void;
   onRevert: () => void;
   qType?: string;
+  bulkRunning?: boolean;
+  onRegenerateDuplicates?: (mode: "rewrite" | "complete") => void;
 }) {
   const [showPartners, setShowPartners] = useState(false);
   return (
@@ -916,6 +956,28 @@ function PairSide({
         <Button size="sm" variant="secondary" onClick={onCompleteRegenerate} disabled={busy} title="Generate a brand-new question and check uniqueness across the whole category">
           {busy ? "Working…" : "Complete Regeneration"}
         </Button>
+        {dupCount >= 2 && onRegenerateDuplicates && (
+          <>
+            <Button
+              size="sm"
+              variant="outline"
+              disabled={bulkRunning}
+              onClick={() => onRegenerateDuplicates("rewrite")}
+              title="Keep this question; regenerate all its duplicates as unique"
+            >
+              Fix {dupCount} duplicates (unique)
+            </Button>
+            <Button
+              size="sm"
+              variant="outline"
+              disabled={bulkRunning}
+              onClick={() => onRegenerateDuplicates("complete")}
+              title="Keep this question; complete-regenerate all its duplicates"
+            >
+              Fix {dupCount} (complete)
+            </Button>
+          </>
+        )}
         {diff && (
           <Button size="sm" variant="outline" onClick={onRevert}>
             Revert
