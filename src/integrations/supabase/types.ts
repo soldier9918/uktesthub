@@ -321,6 +321,7 @@ export type Database = {
         Row: {
           correct_answer: Json | null
           created_at: string
+          disabled: boolean
           explanation: string | null
           id: string
           image: string | null
@@ -335,6 +336,7 @@ export type Database = {
         Insert: {
           correct_answer?: Json | null
           created_at?: string
+          disabled?: boolean
           explanation?: string | null
           id?: string
           image?: string | null
@@ -349,6 +351,7 @@ export type Database = {
         Update: {
           correct_answer?: Json | null
           created_at?: string
+          disabled?: boolean
           explanation?: string | null
           id?: string
           image?: string | null
