@@ -246,6 +246,9 @@ function QuestionsBrowser() {
       if (imageFilter === "without" && q.image) return false;
       if (usageFilter === "used" && q.usedInMocks.length === 0) return false;
       if (usageFilter === "unused" && q.usedInMocks.length > 0) return false;
+      const isDisabled = !!overrides?.get(`${topic}::${q.id}`)?.disabled;
+      if (statusFilter === "enabled" && isDisabled) return false;
+      if (statusFilter === "disabled" && !isDisabled) return false;
       if (
         s &&
         !q.question.toLowerCase().includes(s) &&
