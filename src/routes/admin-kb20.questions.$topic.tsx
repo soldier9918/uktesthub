@@ -267,6 +267,181 @@ function QuestionsBrowser() {
     };
   }, [effectiveQuestions]);
 
+  const exportData = (format: "json" | "csv") => {
+    const rows = filtered.map((q) => ({
+      id: q.id,
+      type: q.type,
+      question: q.question,
+      options: q.options ?? [],
+      correctAnswer: q.raw.correctAnswer ?? null,
+      correctAnswers: q.raw.correctAnswers ?? null,
+      explanation: q.explanation,
+      image: q.image ?? "",
+      imageAlt: q.imageAlt ?? "",
+    }));
+    const stamp = new Date().toISOString().slice(0, 10);
+    if (format === "json") {
+      const blob = new Blob([JSON.stringify({ topic, exportedAt: new Date().toISOString(), count: rows.length, questions: rows }, null, 2)], { type: "application/json" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `${topic}-questions-${stamp}.json`;
+      a.click();
+      URL.revokeObjectURL(url);
+    } else {
+      const esc = (v: unknown) => {
+        const s = v == null ? "" : typeof v === "string" ? v : JSON.stringify(v);
+        return `"${s.replace(/"/g, '""')}"`;
+      };
+      const headers = ["id", "type", "question", "optionA", "optionB", "optionC", "optionD", "correctAnswer", "correctAnswers", "explanation", "image", "imageAlt"];
+      const lines = [headers.join(",")];
+      for (const r of rows) {
+        const opts = r.options;
+        lines.push([
+          esc(r.id), esc(r.type), esc(r.question),
+          esc(opts[0] ?? ""), esc(opts[1] ?? ""), esc(opts[2] ?? ""), esc(opts[3] ?? ""),
+          esc(r.correctAnswer), esc(r.correctAnswers),
+          esc(r.explanation), esc(r.image), esc(r.imageAlt),
+        ].join(","));
+      }
+      const blob = new Blob([lines.join("\n")], { type: "text/csv" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `${topic}-questions-${stamp}.csv`;
+      a.click();
+      URL.revokeObjectURL(url);
+    }
+  };
+
+  // Minimal CSV parser (handles quoted fields with embedded quotes & commas)
+  const parseCsv = (text: string): string[][] => {
+    const rows: string[][] = [];
+    let row: string[] = [];
+    let field = "";
+    let inQ = false;
+    for (let i = 0; i < text.length; i++) {
+      const c = text[i];
+      if (inQ) {
+        if (c === '"') {
+          if (text[i + 1] === '"') { field += '"'; i++; }
+          else inQ = false;
+        } else field += c;
+      } else {
+        if (c === '"') inQ = true;
+        else if (c === ",") { row.push(field); field = ""; }
+        else if (c === "\n") { row.push(field); rows.push(row); row = []; field = ""; }
+        else if (c === "\r") { /* skip */ }
+        else field += c;
+      }
+    }
+    if (field.length > 0 || row.length > 0) { row.push(field); rows.push(row); }
+    return rows.filter((r) => r.length > 1 || (r[0] ?? "").length > 0);
+  };
+
+  const handleImportFile = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    setImportMsg(null);
+    const file = e.target.files?.[0];
+    if (!file) return;
+    setImporting(true);
+    try {
+      const text = await file.text();
+      type ImportRow = { id: string; question?: string; options?: string[]; correctAnswer?: number | boolean | null; correctAnswers?: number[] | null; explanation?: string; image?: string; imageAlt?: string };
+      let parsed: ImportRow[] = [];
+      if (file.name.toLowerCase().endsWith(".json")) {
+        const json = JSON.parse(text);
+        const arr = Array.isArray(json) ? json : (json.questions ?? json.bank ?? []);
+        parsed = arr.map((r: Record<string, unknown>) => ({
+          id: String(r.id),
+          question: r.question as string | undefined,
+          options: Array.isArray(r.options) ? (r.options as string[]) : undefined,
+          correctAnswer: (r.correctAnswer as number | boolean | null | undefined) ?? null,
+          correctAnswers: (r.correctAnswers as number[] | null | undefined) ?? null,
+          explanation: r.explanation as string | undefined,
+          image: r.image as string | undefined,
+          imageAlt: r.imageAlt as string | undefined,
+        }));
+      } else {
+        const rows = parseCsv(text);
+        if (rows.length < 2) throw new Error("CSV is empty");
+        const header = rows[0].map((h) => h.trim());
+        const idx = (name: string) => header.indexOf(name);
+        const iId = idx("id"), iQ = idx("question"),
+              iA = idx("optionA"), iB = idx("optionB"), iC = idx("optionC"), iD = idx("optionD"),
+              iCA = idx("correctAnswer"), iCAs = idx("correctAnswers"),
+              iE = idx("explanation"), iImg = idx("image"), iAlt = idx("imageAlt");
+        if (iId < 0) throw new Error("CSV missing 'id' column");
+        for (let r = 1; r < rows.length; r++) {
+          const row = rows[r];
+          if (!row[iId]) continue;
+          const opts = [iA, iB, iC, iD].map((j) => (j >= 0 ? row[j] : "")).filter((v, i, a) => i < a.length);
+          const hasOpts = opts.some((o) => o && o.length > 0);
+          const ca = iCA >= 0 ? row[iCA] : "";
+          const cas = iCAs >= 0 ? row[iCAs] : "";
+          let correctAnswer: number | boolean | null = null;
+          let correctAnswers: number[] | null = null;
+          if (ca && ca !== "null") {
+            const n = Number(ca);
+            if (!Number.isNaN(n)) correctAnswer = n;
+            else if (ca === "true") correctAnswer = true;
+            else if (ca === "false") correctAnswer = false;
+          }
+          if (cas && cas !== "null" && cas !== "[]") {
+            try { correctAnswers = JSON.parse(cas); } catch { /* ignore */ }
+          }
+          parsed.push({
+            id: row[iId],
+            question: iQ >= 0 ? row[iQ] : undefined,
+            options: hasOpts ? opts : undefined,
+            correctAnswer,
+            correctAnswers,
+            explanation: iE >= 0 ? row[iE] : undefined,
+            image: iImg >= 0 ? row[iImg] : undefined,
+            imageAlt: iAlt >= 0 ? row[iAlt] : undefined,
+          });
+        }
+      }
+      if (parsed.length === 0) throw new Error("No rows found");
+
+      // Build a set of valid IDs in this topic to skip strangers
+      const validIds = new Set(effectiveQuestions.map((q) => q.id));
+      const usable = parsed.filter((r) => validIds.has(r.id));
+      const skipped = parsed.length - usable.length;
+
+      const upsertRows = usable.map((r) => ({
+        topic,
+        question_id: r.id,
+        question: r.question ?? null,
+        options: (r.options ?? null) as unknown as import("@/integrations/supabase/types").Json,
+        correct_answer: (r.correctAnswers && r.correctAnswers.length > 0
+          ? r.correctAnswers
+          : r.correctAnswer) as unknown as import("@/integrations/supabase/types").Json,
+        explanation: r.explanation ?? null,
+        image: r.image && r.image.length > 0 ? r.image : null,
+        image_alt: r.imageAlt && r.imageAlt.length > 0 ? r.imageAlt : null,
+        updated_by: user?.id ?? null,
+      }));
+
+      let written = 0;
+      for (let i = 0; i < upsertRows.length; i += 100) {
+        const batch = upsertRows.slice(i, i + 100);
+        const { error } = await supabase
+          .from("question_overrides")
+          .upsert(batch, { onConflict: "topic,question_id" });
+        if (error) throw error;
+        written += batch.length;
+      }
+      invalidateOverrides();
+      setBump((n) => n + 1);
+      setImportMsg(`Imported ${written} question${written === 1 ? "" : "s"}.${skipped > 0 ? ` Skipped ${skipped} unknown ID${skipped === 1 ? "" : "s"}.` : ""}`);
+    } catch (err) {
+      setImportMsg(`Import failed: ${err instanceof Error ? err.message : "Unknown error"}`);
+    } finally {
+      setImporting(false);
+      if (fileInputRef.current) fileInputRef.current.value = "";
+    }
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <main className="mx-auto max-w-6xl px-4 py-6">
