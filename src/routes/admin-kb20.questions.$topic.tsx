@@ -656,6 +656,16 @@ function QuestionsBrowser() {
                     >
                       Edit
                     </Button>
+                    <Button
+                      size="sm"
+                      variant={isDisabled ? "default" : "outline"}
+                      className="h-7"
+                      disabled={isToggling}
+                      onClick={() => toggleDisabled(q)}
+                      title={isDisabled ? "Re-enable this question (will appear in mocks again)" : "Disable this question (hidden from live mocks)"}
+                    >
+                      {isToggling ? "…" : isDisabled ? "Enable" : "Disable"}
+                    </Button>
                   </div>
                   <p className="mt-2 font-medium">{q.question}</p>
                   {q.options && (
