@@ -368,8 +368,12 @@ ${JSON.stringify(
         };
       }
 
-      const { data: auditRow, error: audErr } = await supabaseAdmin
-        .from("question_regenerations")
+      const { data: auditRow, error: audErr } = await (supabaseAdmin
+        .from("question_regenerations" as never) as unknown as {
+          insert: (row: Record<string, unknown>) => {
+            select: (cols: string) => { maybeSingle: () => Promise<{ data: { id: string } | null; error: { message: string } | null }> };
+          };
+        })
         .insert({
           topic: data.topic,
           question_id: source.id,
