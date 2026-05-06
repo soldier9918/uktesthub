@@ -1,33 +1,38 @@
 ## Goal
-Make it obvious on the **Similar Questions** admin page when a single question is part of more than one duplicate pair (i.e. belongs to a cluster of 3+).
+Add bulk "Regenerate as unique" and "Complete Regeneration" actions so the admin can fix entire clusters (or all detected duplicates) in one click instead of going question-by-question.
 
-## Current behavior
-- `findSimilarPairs` returns flat A↔B pairs.
-- Each pair renders as its own card. A question that matches 3 others appears in 3 separate cards with no cross-reference.
-- Nothing tells the admin "this question has N duplicates".
+## Strategy
+For each cluster of N duplicate questions, we only need to regenerate **N − 1** of them — leaving one "keeper" makes the rest unique against it. This avoids unnecessary AI calls and preserves one original per cluster.
 
-## Proposed UI changes (frontend only, in `src/routes/admin-kb20.similar.tsx`)
+## UI changes (`src/routes/admin-kb20.similar.tsx`)
 
-1. **Compute duplicate counts per question** from `visiblePairs`:
-   - Build a `Map<topic::id, number>` counting how many visible pairs each question appears in.
-   - Build a `Map<topic::id, Array<{topic,id,text}>>` of all its partners for the expandable list.
+### 1. Per-cluster bulk buttons (Clusters view)
+Each cluster card gets two new buttons in its header:
+- **"Regenerate cluster as unique"** — runs `regenerateUniqueQuestion` on every member except the first (keeper).
+- **"Complete-regenerate cluster"** — runs `completeRegenerateQuestion` on every member except the first.
 
-2. **Add a "duplicate count" badge on each PairSide**:
-   - Next to the A/B label, show e.g. `3 duplicates` (red if ≥3, amber if =2, hidden if =1).
-   - Clicking the badge expands a small list of all the OTHER questions it's similar to, with quick links to each.
+Show inline progress: `Regenerating 2/4…`. Disable both buttons while running. Mark the keeper member with a "keeper" badge.
 
-3. **Add a "Cluster view" toggle** at the top of the results (next to the remaining-count badge):
-   - **Pairs view** (default, current): one card per pair.
-   - **Cluster view**: group all pairs that share a question into a single card. The card shows the "hub" question once, then lists all its duplicates underneath with regenerate/mark-not-dup buttons per partner. Uses a simple union-find over visible pairs.
+### 2. Global bulk buttons (top of results, both views)
+Two buttons next to the view toggle:
+- **"Fix all clusters (unique)"** — runs unique-regen across every cluster, skipping one keeper per cluster.
+- **"Fix all clusters (complete)"** — same with complete-regeneration.
 
-4. **Add a summary line** under the remaining-count badge:
-   - e.g. `12 pairs · 8 unique questions · 2 clusters with 3+ duplicates`.
+Confirmation dialog showing the total question count to be regenerated and rough time estimate (~10–20s per question). Live progress: `Regenerating 5/12 across 4 clusters…`. Cancel button to stop after the current question finishes.
 
-5. **Sort order**: in both views, push questions/clusters with the highest duplicate count to the top so the worst offenders surface first.
+### 3. Execution behavior
+- Process **sequentially** (one question at a time) to respect AI gateway rate limits and avoid 429s.
+- After each successful regeneration: call `invalidateOverrides()`, update the local `diffs` state so the user sees results stream in.
+- On any single failure: log the error in the progress line, skip that question, continue with the rest. Show a final summary: `Done — 10 succeeded, 2 need review, 1 failed`.
+- Re-use the existing `regenerate(p, side)` and `completeRegenerate(p, side)` logic by extracting the core into a reusable helper that takes `(topic, id)` directly instead of a pair + side.
+
+### 4. Keeper selection
+For each cluster, the keeper is the member with the **lowest duplicate count** (least connected — least likely to still clash after others are rewritten). Tie-break by `topic::id` ascending so it's deterministic.
 
 ## Out of scope
-- No changes to similarity detection, regeneration logic, or DB.
-- No changes to `similarity.functions.ts` or migrations.
+- No changes to `similarity.functions.ts` server logic or the database.
+- No re-scan after bulk regen — the user can click "Run scan" again to verify.
+- No parallel/concurrent AI calls (sequential only, to stay under rate limits).
 
 ## Files to edit
 - `src/routes/admin-kb20.similar.tsx` (only file touched)
