@@ -818,6 +818,9 @@ function SimilarPage() {
                           <Badge variant={dupCount >= 3 ? "destructive" : dupCount === 2 ? "secondary" : "outline"}>
                             {dupCount} duplicate{dupCount === 1 ? "" : "s"}
                           </Badge>
+                          {typeMap.get(mk) && (
+                            <Badge variant="outline" className="text-[10px]">{typeMap.get(mk)}</Badge>
+                          )}
                           <Link
                             to="/admin-kb20/questions/$topic"
                             params={{ topic }}
