@@ -719,7 +719,8 @@ function QuestionsBrowser() {
                 )}
               </div>
             </li>
-          ))}
+            );
+          })}
         </ol>
 
         {filtered.length === 0 && (
