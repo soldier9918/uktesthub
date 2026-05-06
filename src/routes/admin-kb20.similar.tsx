@@ -574,10 +574,12 @@ function PairSide({
       </div>
       {diff && (
         <div className="mt-2 rounded bg-muted/40 p-2 text-xs">
-          <div className="flex items-center gap-2">
+          <div className="flex flex-wrap items-center gap-2">
             <Badge variant={diff.needsReview ? "destructive" : "secondary"}>
               new · sim {(diff.sim * 100).toFixed(0)}%{diff.needsReview ? " · needs review" : ""}
             </Badge>
+            {diff.mode === "complete" && <Badge variant="outline">complete · category-wide</Badge>}
+            {diff.concept && <span className="text-muted-foreground">concept: {diff.concept}</span>}
           </div>
           <p className="mt-1 font-semibold">{String(diff.after.question ?? "")}</p>
           {Array.isArray(diff.after.options) && (
