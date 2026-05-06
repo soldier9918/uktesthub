@@ -570,6 +570,22 @@ function SimilarPage() {
           </select>
         </label>
         <label className="text-sm">
+          <span className="block font-semibold">Question type</span>
+          <select
+            value={typeFilter}
+            onChange={(e) => setTypeFilter(e.target.value)}
+            className="mt-1 w-full rounded-md border border-border bg-background px-3 py-1.5 text-sm"
+            disabled={!scanned || availableTypes.length === 0}
+          >
+            <option value="__all__">All types{scanned ? "" : " (run scan first)"}</option>
+            {availableTypes.map((t) => (
+              <option key={t} value={t}>
+                {t}
+              </option>
+            ))}
+          </select>
+        </label>
+        <label className="text-sm">
           <span className="block font-semibold">
             Lexical threshold: {threshold.toFixed(2)}
           </span>
