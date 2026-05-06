@@ -1,38 +1,44 @@
 ## Goal
-Add bulk "Regenerate as unique" and "Complete Regeneration" actions so the admin can fix entire clusters (or all detected duplicates) in one click instead of going question-by-question.
+Add a **question type filter** to the Similar Questions admin page so you can narrow the clusters/pairs view to a single question type (e.g. `multiple_choice`, `true_false`, `image_question`) and run bulk regeneration only within that subset.
 
-## Strategy
-For each cluster of N duplicate questions, we only need to regenerate **N − 1** of them — leaving one "keeper" makes the rest unique against it. This avoids unnecessary AI calls and preserves one original per cluster.
+## UI changes (`src/routes/admin-kb20.similar.tsx` only)
 
-## UI changes (`src/routes/admin-kb20.similar.tsx`)
+### 1. New "Type" filter dropdown
+Add a `<select>` in the existing filter toolbar (next to Category/Topic), with options:
+- **All types** (default)
+- One option per detected type, populated dynamically from the loaded questions (so we don't hard-code and miss types). Detected so far in the data: `multiple_choice`, `true_false`, `multiple_response`, `image_question`, `hot_spot`, `numeric_entry`, `drag_drop_blanks`, `dropdown_blanks`.
 
-### 1. Per-cluster bulk buttons (Clusters view)
-Each cluster card gets two new buttons in its header:
-- **"Regenerate cluster as unique"** — runs `regenerateUniqueQuestion` on every member except the first (keeper).
-- **"Complete-regenerate cluster"** — runs `completeRegenerateQuestion` on every member except the first.
+State: `const [typeFilter, setTypeFilter] = useState<string>("__all__")`.
 
-Show inline progress: `Regenerating 2/4…`. Disable both buttons while running. Mark the keeper member with a "keeper" badge.
+### 2. Capture `type` on each item during scan
+In the scan loop where `SimItem`s are built, also store the question's `type` field (already accessed elsewhere as `source.type`). Either:
+- extend the local items array with `type`, OR
+- build a `Map<string, string>` keyed by `topic::id` → `type` so we don't have to change the shared `SimItem` type in `src/lib/admin/similarity.ts`.
 
-### 2. Global bulk buttons (top of results, both views)
-Two buttons next to the view toggle:
-- **"Fix all clusters (unique)"** — runs unique-regen across every cluster, skipping one keeper per cluster.
-- **"Fix all clusters (complete)"** — same with complete-regeneration.
+Preferred: **side map** to keep `similarity.ts` untouched.
 
-Confirmation dialog showing the total question count to be regenerated and rough time estimate (~10–20s per question). Live progress: `Regenerating 5/12 across 4 clusters…`. Cancel button to stop after the current question finishes.
+### 3. Apply the filter to displayed pairs and clusters
+After scan completes, derive `visiblePairs` from `pairs` by:
+- If `typeFilter === "__all__"` → show all.
+- Else → keep only pairs where **both** `a` and `b` have `type === typeFilter` (so a cluster you act on is homogeneous and bulk regen stays safe).
 
-### 3. Execution behavior
-- Process **sequentially** (one question at a time) to respect AI gateway rate limits and avoid 429s.
-- After each successful regeneration: call `invalidateOverrides()`, update the local `diffs` state so the user sees results stream in.
-- On any single failure: log the error in the progress line, skip that question, continue with the rest. Show a final summary: `Done — 10 succeeded, 2 need review, 1 failed`.
-- Re-use the existing `regenerate(p, side)` and `completeRegenerate(p, side)` logic by extracting the core into a reusable helper that takes `(topic, id)` directly instead of a pair + side.
+Re-derive clusters from `visiblePairs` (the existing cluster builder already works off a pair list — just feed it the filtered list).
 
-### 4. Keeper selection
-For each cluster, the keeper is the member with the **lowest duplicate count** (least connected — least likely to still clash after others are rewritten). Tie-break by `topic::id` ascending so it's deterministic.
+### 4. Bulk actions respect the filter automatically
+Because the global "Fix all clusters" and per-cluster bulk buttons operate on the currently-rendered clusters, filtering the pair list naturally scopes bulk regeneration to the chosen type. Confirmation dialog will show the filtered count, e.g. *"This will regenerate 14 questions across 5 clusters (type: multiple_choice)."*
+
+### 5. Visible counts
+Update the results header to show both totals when a filter is active:
+- `42 similar pairs found · showing 14 (type: multiple_choice)`
+- Cluster count line gets the same treatment.
+
+### 6. Type badge on each pair/cluster row
+Small muted badge next to each question id showing its type, so the filter result is visually obvious and mixed-type clusters (when filter = All) are easy to spot.
 
 ## Out of scope
-- No changes to `similarity.functions.ts` server logic or the database.
-- No re-scan after bulk regen — the user can click "Run scan" again to verify.
-- No parallel/concurrent AI calls (sequential only, to stay under rate limits).
+- No changes to `similarity.functions.ts`, `similarity.ts`, or the database.
+- Filter does not change which topics are scanned — the scan still uses the Category/Topic selectors as today; type filter only narrows what you see and act on after the scan.
+- No persistence of the filter across reloads.
 
 ## Files to edit
 - `src/routes/admin-kb20.similar.tsx` (only file touched)
