@@ -363,6 +363,8 @@ function SimilarPage() {
       setBusyKey(null);
     }
   };
+
+  const revert = async (k: string) => {
     const d = diffs[k];
     if (!d) return;
     await supabase.from("question_overrides").delete().eq("topic", d.topic).eq("question_id", d.id);
