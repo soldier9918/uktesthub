@@ -46,6 +46,7 @@ import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
 import { Route as AdminKb20ValidatorRouteImport } from './routes/admin-kb20.validator'
 import { Route as AdminKb20UsersRouteImport } from './routes/admin-kb20.users'
 import { Route as AdminKb20SystemRouteImport } from './routes/admin-kb20.system'
+import { Route as AdminKb20SimilarRouteImport } from './routes/admin-kb20.similar'
 import { Route as AdminKb20SeoRouteImport } from './routes/admin-kb20.seo'
 import { Route as AdminKb20SecurityRouteImport } from './routes/admin-kb20.security'
 import { Route as AdminKb20SearchRouteImport } from './routes/admin-kb20.search'
@@ -248,6 +249,11 @@ const AdminKb20SystemRoute = AdminKb20SystemRouteImport.update({
   path: '/admin-kb20/system',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AdminKb20SimilarRoute = AdminKb20SimilarRouteImport.update({
+  id: '/admin-kb20/similar',
+  path: '/admin-kb20/similar',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AdminKb20SeoRoute = AdminKb20SeoRouteImport.update({
   id: '/admin-kb20/seo',
   path: '/admin-kb20/seo',
@@ -371,6 +377,7 @@ export interface FileRoutesByFullPath {
   '/admin-kb20/search': typeof AdminKb20SearchRoute
   '/admin-kb20/security': typeof AdminKb20SecurityRoute
   '/admin-kb20/seo': typeof AdminKb20SeoRoute
+  '/admin-kb20/similar': typeof AdminKb20SimilarRoute
   '/admin-kb20/system': typeof AdminKb20SystemRoute
   '/admin-kb20/users': typeof AdminKb20UsersRoute
   '/admin-kb20/validator': typeof AdminKb20ValidatorRoute
@@ -425,6 +432,7 @@ export interface FileRoutesByTo {
   '/admin-kb20/search': typeof AdminKb20SearchRoute
   '/admin-kb20/security': typeof AdminKb20SecurityRoute
   '/admin-kb20/seo': typeof AdminKb20SeoRoute
+  '/admin-kb20/similar': typeof AdminKb20SimilarRoute
   '/admin-kb20/system': typeof AdminKb20SystemRoute
   '/admin-kb20/users': typeof AdminKb20UsersRoute
   '/admin-kb20/validator': typeof AdminKb20ValidatorRoute
@@ -481,6 +489,7 @@ export interface FileRoutesById {
   '/admin-kb20/search': typeof AdminKb20SearchRoute
   '/admin-kb20/security': typeof AdminKb20SecurityRoute
   '/admin-kb20/seo': typeof AdminKb20SeoRoute
+  '/admin-kb20/similar': typeof AdminKb20SimilarRoute
   '/admin-kb20/system': typeof AdminKb20SystemRoute
   '/admin-kb20/users': typeof AdminKb20UsersRoute
   '/admin-kb20/validator': typeof AdminKb20ValidatorRoute
@@ -538,6 +547,7 @@ export interface FileRouteTypes {
     | '/admin-kb20/search'
     | '/admin-kb20/security'
     | '/admin-kb20/seo'
+    | '/admin-kb20/similar'
     | '/admin-kb20/system'
     | '/admin-kb20/users'
     | '/admin-kb20/validator'
@@ -592,6 +602,7 @@ export interface FileRouteTypes {
     | '/admin-kb20/search'
     | '/admin-kb20/security'
     | '/admin-kb20/seo'
+    | '/admin-kb20/similar'
     | '/admin-kb20/system'
     | '/admin-kb20/users'
     | '/admin-kb20/validator'
@@ -647,6 +658,7 @@ export interface FileRouteTypes {
     | '/admin-kb20/search'
     | '/admin-kb20/security'
     | '/admin-kb20/seo'
+    | '/admin-kb20/similar'
     | '/admin-kb20/system'
     | '/admin-kb20/users'
     | '/admin-kb20/validator'
@@ -703,6 +715,7 @@ export interface RootRouteChildren {
   AdminKb20SearchRoute: typeof AdminKb20SearchRoute
   AdminKb20SecurityRoute: typeof AdminKb20SecurityRoute
   AdminKb20SeoRoute: typeof AdminKb20SeoRoute
+  AdminKb20SimilarRoute: typeof AdminKb20SimilarRoute
   AdminKb20SystemRoute: typeof AdminKb20SystemRoute
   AdminKb20UsersRoute: typeof AdminKb20UsersRoute
   AdminKb20ValidatorRoute: typeof AdminKb20ValidatorRoute
@@ -977,6 +990,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AdminKb20SystemRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/admin-kb20/similar': {
+      id: '/admin-kb20/similar'
+      path: '/admin-kb20/similar'
+      fullPath: '/admin-kb20/similar'
+      preLoaderRoute: typeof AdminKb20SimilarRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/admin-kb20/seo': {
       id: '/admin-kb20/seo'
       path: '/admin-kb20/seo'
@@ -1145,6 +1165,7 @@ const rootRouteChildren: RootRouteChildren = {
   AdminKb20SearchRoute: AdminKb20SearchRoute,
   AdminKb20SecurityRoute: AdminKb20SecurityRoute,
   AdminKb20SeoRoute: AdminKb20SeoRoute,
+  AdminKb20SimilarRoute: AdminKb20SimilarRoute,
   AdminKb20SystemRoute: AdminKb20SystemRoute,
   AdminKb20UsersRoute: AdminKb20UsersRoute,
   AdminKb20ValidatorRoute: AdminKb20ValidatorRoute,
