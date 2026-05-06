@@ -450,6 +450,32 @@ function QuestionsBrowser() {
     }
   };
 
+  const toggleDisabled = async (q: FlatQuestion) => {
+    setTogglingId(q.id);
+    try {
+      const existing = overrides?.get(`${topic}::${q.id}`);
+      const nextDisabled = !(existing?.disabled);
+      const { error } = await supabase
+        .from("question_overrides")
+        .upsert(
+          {
+            topic,
+            question_id: q.id,
+            disabled: nextDisabled,
+            updated_by: user?.id ?? null,
+          },
+          { onConflict: "topic,question_id" },
+        );
+      if (error) throw error;
+      invalidateOverrides();
+      setBump((n) => n + 1);
+    } catch (err) {
+      setImportMsg(`Toggle failed: ${err instanceof Error ? err.message : "Unknown error"}`);
+    } finally {
+      setTogglingId(null);
+    }
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <main className="mx-auto max-w-6xl px-4 py-6">
