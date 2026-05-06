@@ -225,6 +225,7 @@ function SimilarPage() {
         accessToken,
         topic,
         topicTitle: meta?.title ?? topic,
+        category: meta?.catSlug,
         categoryTitle: meta?.cat ?? "",
         source: {
           id,
