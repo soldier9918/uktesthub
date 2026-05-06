@@ -843,6 +843,7 @@ function SimilarPage() {
                     const dupCount = dupInfo.count.get(mk) ?? 0;
                     const diff = diffs[mk];
                     const isKeeper = mk === keeper;
+                    const memberBusy = busyKey === mk;
                     return (
                       <li key={mk} className={`rounded border bg-background/50 p-2 ${isKeeper ? "border-success/60" : "border-border"}`}>
                         <div className="flex flex-wrap items-center gap-2 text-xs text-muted-foreground">
@@ -865,6 +866,43 @@ function SimilarPage() {
                         <p className="mt-1 line-clamp-2 text-sm text-muted-foreground">
                           <span className="font-semibold text-foreground/70">Original: </span>{text}
                         </p>
+                        <div className="mt-2 flex flex-wrap items-center gap-2">
+                          <Button
+                            size="sm"
+                            disabled={memberBusy || bulkRunning}
+                            onClick={async () => {
+                              setBusyKey(mk);
+                              try {
+                                const r = await regenerateOne(topic, id);
+                                if (!r.ok) setProgress(`Regeneration failed: ${r.error}`);
+                              } finally { setBusyKey(null); }
+                            }}
+                            title={diff ? "Try again — generate another unique rewrite" : "Regenerate as unique"}
+                          >
+                            {memberBusy ? "Working…" : diff ? "Regenerate again (unique)" : "Regenerate as unique"}
+                          </Button>
+                          <Button
+                            size="sm"
+                            variant="secondary"
+                            disabled={memberBusy || bulkRunning}
+                            onClick={async () => {
+                              setBusyKey(mk);
+                              try {
+                                const r = await completeRegenerateOne(topic, id);
+                                if (!r.ok) setProgress(`Complete regeneration failed: ${r.error}`);
+                                else setProgress(`Fresh question created.`);
+                              } finally { setBusyKey(null); }
+                            }}
+                            title={diff ? "Try again — generate a brand-new question on a different sub-topic" : "Complete Regeneration"}
+                          >
+                            {memberBusy ? "Working…" : diff ? "Try a different new question" : "Complete Regeneration"}
+                          </Button>
+                          {diff && (
+                            <Button size="sm" variant="outline" disabled={memberBusy} onClick={() => void revert(mk)}>
+                              Revert
+                            </Button>
+                          )}
+                        </div>
                         {diff && (
                           <div className="mt-2 rounded bg-muted/40 p-2 text-xs">
                             <div className="flex flex-wrap items-center gap-2">
