@@ -689,6 +689,13 @@ function SimilarPage() {
             >
               Clusters ({clusters.length})
             </button>
+            <button
+              type="button"
+              onClick={() => setView("images")}
+              className={`rounded px-2 py-1 text-xs ${view === "images" ? "bg-primary text-primary-foreground" : "text-muted-foreground"}`}
+            >
+              Same image ({imageClusters.length})
+            </button>
           </div>
         </div>
       )}
