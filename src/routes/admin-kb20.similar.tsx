@@ -78,6 +78,8 @@ function SimilarPage() {
   const [busyKey, setBusyKey] = useState<string | null>(null);
   const [diffs, setDiffs] = useState<Record<string, { topic: string; id: string; before: AnyQ; after: AnyQ; sim: number; needsReview: boolean; mode?: "rewrite" | "complete"; concept?: string }>>({});
   const [view, setView] = useState<"pairs" | "clusters">("pairs");
+  const [typeMap, setTypeMap] = useState<Map<string, string>>(new Map());
+  const [typeFilter, setTypeFilter] = useState<string>("__all__");
   const [bulkRunning, setBulkRunning] = useState(false);
   const [bulkProgress, setBulkProgress] = useState("");
   const bulkCancelRef = useRef(false);
