@@ -418,6 +418,90 @@ function SimilarPage() {
   }, [visiblePairs, dupInfo]);
 
   return (
+  // Keeper = least connected member (lowest dup count, lex tie-break).
+  const pickKeeper = (members: Set<string>): string => {
+    const arr = Array.from(members);
+    arr.sort((a, b) => {
+      const ca = dupInfo.count.get(a) ?? 0;
+      const cb = dupInfo.count.get(b) ?? 0;
+      if (ca !== cb) return ca - cb;
+      return a < b ? -1 : 1;
+    });
+    return arr[0];
+  };
+
+  const runBulk = async (
+    targets: Array<{ topic: string; id: string }>,
+    mode: "rewrite" | "complete",
+    label: string,
+  ) => {
+    setBulkRunning(true);
+    bulkCancelRef.current = false;
+    let ok = 0;
+    let needsReview = 0;
+    let failed = 0;
+    for (let i = 0; i < targets.length; i++) {
+      if (bulkCancelRef.current) {
+        setBulkProgress(`Cancelled at ${i}/${targets.length}. ${ok} ok, ${needsReview} need review, ${failed} failed.`);
+        setBulkRunning(false);
+        return;
+      }
+      const t = targets[i];
+      setBulkProgress(`${label}: ${i + 1}/${targets.length} (${t.topic}/${t.id})…`);
+      try {
+        const r = mode === "rewrite"
+          ? await regenerateOne(t.topic, t.id)
+          : await completeRegenerateOne(t.topic, t.id);
+        if (r.ok) {
+          ok++;
+          if (r.needsReview) needsReview++;
+        } else {
+          failed++;
+        }
+      } catch {
+        failed++;
+      }
+    }
+    setBulkProgress(`Done — ${ok} succeeded${needsReview ? ` (${needsReview} need review)` : ""}${failed ? `, ${failed} failed` : ""}.`);
+    setBulkRunning(false);
+  };
+
+  const bulkAllTargets = (): Array<{ topic: string; id: string }> => {
+    const out: Array<{ topic: string; id: string }> = [];
+    for (const cluster of clusters) {
+      const keeper = pickKeeper(cluster.members);
+      for (const m of cluster.members) {
+        if (m === keeper) continue;
+        const [topic, id] = m.split("::");
+        out.push({ topic, id });
+      }
+    }
+    return out;
+  };
+
+  const clusterTargets = (cluster: { members: Set<string> }): Array<{ topic: string; id: string }> => {
+    const keeper = pickKeeper(cluster.members);
+    const out: Array<{ topic: string; id: string }> = [];
+    for (const m of cluster.members) {
+      if (m === keeper) continue;
+      const [topic, id] = m.split("::");
+      out.push({ topic, id });
+    }
+    return out;
+  };
+
+  const totalBulkCount = clusters.reduce((s, c) => s + Math.max(0, c.members.size - 1), 0);
+
+  const confirmAndRunAll = (mode: "rewrite" | "complete") => {
+    const targets = bulkAllTargets();
+    if (targets.length === 0) return;
+    const label = mode === "rewrite" ? "Fix all (unique)" : "Fix all (complete)";
+    const mins = Math.ceil((targets.length * 15) / 60);
+    if (!window.confirm(`${label}: regenerate ${targets.length} questions across ${clusters.length} cluster${clusters.length === 1 ? "" : "s"} (one keeper preserved per cluster). Estimated ~${mins} min. Continue?`)) return;
+    void runBulk(targets, mode, label);
+  };
+
+  return (
     <main className="mx-auto max-w-6xl px-4 py-8">
       <Link to="/admin-kb20" className="text-sm text-muted-foreground hover:underline">
         ← Admin
