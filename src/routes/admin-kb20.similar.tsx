@@ -712,6 +712,8 @@ function PairSide({
   text,
   diff,
   busy,
+  dupCount,
+  partners,
   onRegenerate,
   onCompleteRegenerate,
   onRevert,
@@ -722,14 +724,29 @@ function PairSide({
   text: string;
   diff?: { before: AnyQ; after: AnyQ; sim: number; needsReview: boolean; mode?: "rewrite" | "complete"; concept?: string };
   busy: boolean;
+  dupCount: number;
+  partners: Array<{ topic: string; id: string; text: string }>;
   onRegenerate: () => void;
   onCompleteRegenerate: () => void;
   onRevert: () => void;
 }) {
+  const [showPartners, setShowPartners] = useState(false);
   return (
     <div className="rounded border border-border bg-background/50 p-2">
-      <div className="flex items-center gap-2 text-xs text-muted-foreground">
+      <div className="flex flex-wrap items-center gap-2 text-xs text-muted-foreground">
         <Badge variant="outline">{side}</Badge>
+        {dupCount >= 2 && (
+          <button
+            type="button"
+            onClick={() => setShowPartners((v) => !v)}
+            className={`rounded px-1.5 py-0.5 text-xs font-semibold ${
+              dupCount >= 3 ? "bg-destructive/15 text-destructive" : "bg-amber-500/15 text-amber-700"
+            }`}
+            title="Click to see all duplicates"
+          >
+            {dupCount} duplicates {showPartners ? "▴" : "▾"}
+          </button>
+        )}
         <Link
           to="/admin-kb20/questions/$topic"
           params={{ topic }}
