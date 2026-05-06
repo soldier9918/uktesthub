@@ -977,6 +977,152 @@ function SimilarPage() {
           })}
         </div>
       )}
+
+      {scanned && view === "images" && (
+        <div className="mt-4 space-y-3">
+          {imageClusters.length === 0 && (
+            <p className="text-sm text-muted-foreground">
+              No image questions share the same image{typeFilter !== "__all__" ? ` for type "${typeFilter}"` : ""}.
+            </p>
+          )}
+          {imageClusters.map((g, gi) => {
+            const targets = g.members.slice(1).map((m) => ({ topic: m.topic, id: m.id }));
+            return (
+              <div key={gi} className="rounded-md border-2 border-amber-500/60 bg-card p-3">
+                <div className="flex flex-wrap items-start gap-3">
+                  <img src={g.image} alt="" className="h-24 w-24 rounded border border-border bg-white object-contain p-1" />
+                  <div className="flex-1 min-w-0">
+                    <div className="flex flex-wrap items-center gap-2 text-xs">
+                      <Badge variant={g.members.length >= 3 ? "destructive" : "secondary"}>
+                        {g.members.length} questions share this image
+                      </Badge>
+                      <span className="font-mono text-muted-foreground truncate max-w-md" title={g.image}>{g.image}</span>
+                      <div className="ml-auto flex flex-wrap gap-2">
+                        <Button
+                          size="sm"
+                          disabled={bulkRunning || targets.length === 0}
+                          onClick={() => {
+                            const label = `Image cluster ${gi + 1} (unique)`;
+                            if (!window.confirm(`Regenerate ${targets.length} duplicate question${targets.length === 1 ? "" : "s"} sharing this image (first kept). Continue?`)) return;
+                            void runBulk(targets, "rewrite", label);
+                          }}
+                        >
+                          Regenerate {targets.length} as unique
+                        </Button>
+                        <Button
+                          size="sm"
+                          variant="secondary"
+                          disabled={bulkRunning || targets.length === 0}
+                          onClick={() => {
+                            const label = `Image cluster ${gi + 1} (complete)`;
+                            if (!window.confirm(`Complete-regenerate ${targets.length} question${targets.length === 1 ? "" : "s"} sharing this image (first kept). Continue?`)) return;
+                            void runBulk(targets, "complete", label);
+                          }}
+                        >
+                          Complete-regenerate {targets.length}
+                        </Button>
+                      </div>
+                    </div>
+                    <ul className="mt-2 space-y-2">
+                      {g.members.map((m, mi) => {
+                        const mk = `${m.topic}::${m.id}`;
+                        const diff = diffs[mk];
+                        const memberBusy = busyKey === mk;
+                        const isKeeper = mi === 0;
+                        return (
+                          <li key={mk} className={`rounded border bg-background/50 p-2 ${isKeeper ? "border-success/60" : "border-border"}`}>
+                            <div className="flex flex-wrap items-center gap-2 text-xs text-muted-foreground">
+                              {isKeeper && <Badge variant="outline" className="border-success text-success">keeper</Badge>}
+                              {m.type && <Badge variant="outline" className="text-[10px]">{m.type}</Badge>}
+                              <Link
+                                to="/admin-kb20/questions/$topic"
+                                params={{ topic: m.topic }}
+                                search={{ q: m.id, from: "validator" }}
+                                className="font-mono hover:underline"
+                              >
+                                {m.topic} / {m.id}
+                              </Link>
+                            </div>
+                            <p className="mt-1 line-clamp-2 text-sm text-muted-foreground">
+                              <span className="font-semibold text-foreground/70">Original: </span>{m.text}
+                            </p>
+                            <div className="mt-2 flex flex-wrap items-center gap-2">
+                              <Button
+                                size="sm"
+                                disabled={memberBusy || bulkRunning}
+                                onClick={async () => {
+                                  setBusyKey(mk);
+                                  try {
+                                    const r = await regenerateOne(m.topic, m.id);
+                                    if (!r.ok) setProgress(`Regeneration failed: ${r.error}`);
+                                  } finally { setBusyKey(null); }
+                                }}
+                              >
+                                {memberBusy ? "Working…" : diff ? "Regenerate again (unique)" : "Regenerate as unique"}
+                              </Button>
+                              <Button
+                                size="sm"
+                                variant="secondary"
+                                disabled={memberBusy || bulkRunning}
+                                onClick={async () => {
+                                  setBusyKey(mk);
+                                  try {
+                                    const r = await completeRegenerateOne(m.topic, m.id);
+                                    if (!r.ok) setProgress(`Complete regeneration failed: ${r.error}`);
+                                  } finally { setBusyKey(null); }
+                                }}
+                              >
+                                {memberBusy ? "Working…" : diff ? "Try a different new question" : "Complete Regeneration"}
+                              </Button>
+                              {diff && (
+                                <Button size="sm" variant="outline" disabled={memberBusy} onClick={() => void revert(mk)}>
+                                  Revert
+                                </Button>
+                              )}
+                            </div>
+                            {diff && (
+                              <div className="mt-2 rounded bg-muted/40 p-2 text-xs">
+                                <div className="flex flex-wrap items-center gap-2">
+                                  <Badge variant={diff.needsReview ? "destructive" : "secondary"}>
+                                    new · sim {(diff.sim * 100).toFixed(0)}%{diff.needsReview ? " · needs review" : ""}
+                                  </Badge>
+                                  {diff.mode === "complete" && <Badge variant="outline">complete · category-wide</Badge>}
+                                  {diff.concept && <span className="text-muted-foreground">concept: {diff.concept}</span>}
+                                </div>
+                                <p className="mt-1 font-semibold">{String(diff.after.question ?? "")}</p>
+                                {Array.isArray(diff.after.options) && (
+                                  <ol className="mt-1 list-decimal pl-4">
+                                    {(diff.after.options as string[]).map((o, i) => (
+                                      <li
+                                        key={i}
+                                        className={
+                                          (typeof diff.after.correctAnswer === "number" && diff.after.correctAnswer === i) ||
+                                          (Array.isArray(diff.after.correctAnswers) && (diff.after.correctAnswers as number[]).includes(i))
+                                            ? "font-semibold text-success"
+                                            : ""
+                                        }
+                                      >
+                                        {o}
+                                      </li>
+                                    ))}
+                                  </ol>
+                                )}
+                                {diff.after.explanation ? (
+                                  <p className="mt-1 text-muted-foreground">{String(diff.after.explanation)}</p>
+                                ) : null}
+                              </div>
+                            )}
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      )}
     </main>
   );
 }
