@@ -717,6 +717,8 @@ function SimilarPage() {
                 : cluster.members.size === 3
                 ? "border-amber-500/60"
                 : "border-border";
+            const keeper = pickKeeper(cluster.members);
+            const targets = clusterTargets(cluster);
             return (
               <div key={ci} className={`rounded-md border-2 bg-card p-3 ${sevClass}`}>
                 <div className="flex flex-wrap items-center gap-2 text-xs">
@@ -726,6 +728,23 @@ function SimilarPage() {
                   <span className="text-muted-foreground">
                     {cluster.pairs.length} pair{cluster.pairs.length === 1 ? "" : "s"}
                   </span>
+                  <div className="ml-auto flex flex-wrap items-center gap-2">
+                    <Button
+                      size="sm"
+                      disabled={bulkRunning || targets.length === 0}
+                      onClick={() => void runBulk(targets, "rewrite", `Cluster ${ci + 1} (unique)`)}
+                    >
+                      Regenerate cluster ({targets.length}) as unique
+                    </Button>
+                    <Button
+                      size="sm"
+                      variant="secondary"
+                      disabled={bulkRunning || targets.length === 0}
+                      onClick={() => void runBulk(targets, "complete", `Cluster ${ci + 1} (complete)`)}
+                    >
+                      Complete-regenerate cluster ({targets.length})
+                    </Button>
+                  </div>
                 </div>
                 <ul className="mt-2 space-y-2">
                   {memberKeys.map((mk) => {
@@ -738,9 +757,11 @@ function SimilarPage() {
                       sample;
                     const dupCount = dupInfo.count.get(mk) ?? 0;
                     const diff = diffs[mk];
+                    const isKeeper = mk === keeper;
                     return (
-                      <li key={mk} className="rounded border border-border bg-background/50 p-2">
+                      <li key={mk} className={`rounded border bg-background/50 p-2 ${isKeeper ? "border-success/60" : "border-border"}`}>
                         <div className="flex flex-wrap items-center gap-2 text-xs text-muted-foreground">
+                          {isKeeper && <Badge variant="outline" className="border-success text-success">keeper</Badge>}
                           <Badge variant={dupCount >= 3 ? "destructive" : dupCount === 2 ? "secondary" : "outline"}>
                             {dupCount} duplicate{dupCount === 1 ? "" : "s"}
                           </Badge>
@@ -764,7 +785,7 @@ function SimilarPage() {
                   })}
                 </ul>
                 <p className="mt-2 text-xs text-muted-foreground">
-                  Switch to Pairs view to regenerate or mark individual pairs as not duplicate.
+                  Keeper is preserved; the other {targets.length} will be regenerated. Switch to Pairs view for individual control.
                 </p>
               </div>
             );
