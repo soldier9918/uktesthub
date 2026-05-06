@@ -668,8 +668,8 @@ You are creating a BRAND-NEW question that tests a DIFFERENT piece of knowledge 
 The new question must be on the concept: "${concept}" — which is a different sub-topic from the existing questions.
 You have NOT seen any original question. Do not attempt to reproduce one.
 Rules:
-- The new question MUST stay strictly within the topic "${data.topicTitle}" (category "${data.categoryTitle}").${isDriving ? "" : `
-- Do NOT introduce driving, vehicles, road signs, motorways, learner drivers, or road scenarios — this topic is NOT about driving.`}
+- The new question MUST stay strictly within the topic "${data.topicTitle}" (category "${data.categoryTitle}"). Do NOT cross over into another subject.${isDriving ? "" : `
+- Do NOT introduce driving, vehicles, cars, car parks, parked cars, road signs, motorways, learner drivers, or road scenarios — this topic is NOT about driving.`}
 - The new question must test DIFFERENT factual knowledge — not the same fact reworded.
 - Use UK English and UK-specific context (£, miles, MOT, NHS, DVSA where relevant to this topic).
 - Match this question type: "${type}".
