@@ -417,7 +417,6 @@ function SimilarPage() {
     });
   }, [visiblePairs, dupInfo]);
 
-  return (
   // Keeper = least connected member (lowest dup count, lex tie-break).
   const pickKeeper = (members: Set<string>): string => {
     const arr = Array.from(members);
