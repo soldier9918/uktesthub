@@ -365,39 +365,48 @@ export type Database = {
       question_regenerations: {
         Row: {
           attempts: number
+          concept: string | null
           created_at: string
           created_by: string | null
           generated_question: Json
           id: string
+          mode: string
           model: string | null
           needs_review: boolean
           question_id: string
+          scope: string
           similarity_max: number | null
           source_question: Json
           topic: string
         }
         Insert: {
           attempts?: number
+          concept?: string | null
           created_at?: string
           created_by?: string | null
           generated_question: Json
           id?: string
+          mode?: string
           model?: string | null
           needs_review?: boolean
           question_id: string
+          scope?: string
           similarity_max?: number | null
           source_question: Json
           topic: string
         }
         Update: {
           attempts?: number
+          concept?: string | null
           created_at?: string
           created_by?: string | null
           generated_question?: Json
           id?: string
+          mode?: string
           model?: string | null
           needs_review?: boolean
           question_id?: string
+          scope?: string
           similarity_max?: number | null
           source_question?: Json
           topic?: string
