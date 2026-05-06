@@ -208,6 +208,7 @@ function SearchPage() {
           accessToken,
           topic: hit.topic,
           topicTitle: meta.title,
+          category: meta.catSlug,
           categoryTitle: meta.cat,
           source: sourcePayload,
           existingBlobs,
