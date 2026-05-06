@@ -78,6 +78,9 @@ function SimilarPage() {
   const [busyKey, setBusyKey] = useState<string | null>(null);
   const [diffs, setDiffs] = useState<Record<string, { topic: string; id: string; before: AnyQ; after: AnyQ; sim: number; needsReview: boolean; mode?: "rewrite" | "complete"; concept?: string }>>({});
   const [view, setView] = useState<"pairs" | "clusters">("pairs");
+  const [bulkRunning, setBulkRunning] = useState(false);
+  const [bulkProgress, setBulkProgress] = useState("");
+  const bulkCancelRef = useRef(false);
   const cancelRef = useRef(false);
 
   const topicsForCategory = useMemo(() => {
