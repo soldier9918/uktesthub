@@ -496,6 +496,7 @@ function SimilarPage() {
                   diff={diffA}
                   busy={busyKey === `${p.a.topic}::${p.a.id}`}
                   onRegenerate={() => void regenerate(p, "a")}
+                  onCompleteRegenerate={() => void completeRegenerate(p, "a")}
                   onRevert={() => void revert(`${p.a.topic}::${p.a.id}`)}
                 />
                 <PairSide
@@ -506,6 +507,7 @@ function SimilarPage() {
                   diff={diffB}
                   busy={busyKey === `${p.b.topic}::${p.b.id}`}
                   onRegenerate={() => void regenerate(p, "b")}
+                  onCompleteRegenerate={() => void completeRegenerate(p, "b")}
                   onRevert={() => void revert(`${p.b.topic}::${p.b.id}`)}
                 />
               </div>
