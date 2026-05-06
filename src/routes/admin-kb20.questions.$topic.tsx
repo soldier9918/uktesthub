@@ -258,7 +258,7 @@ function QuestionsBrowser() {
         return false;
       return true;
     });
-  }, [effectiveQuestions, search, type, imageFilter, usageFilter]);
+  }, [effectiveQuestions, search, type, imageFilter, usageFilter, statusFilter, overrides, topic]);
 
   const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
   const pageSafe = Math.min(page, totalPages);
