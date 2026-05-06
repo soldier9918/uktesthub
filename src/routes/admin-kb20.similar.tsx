@@ -290,6 +290,7 @@ function SimilarPage() {
         accessToken,
         topic,
         topicTitle: meta.title,
+        category: meta.catSlug,
         categoryTitle: meta.cat,
         source: {
           id,
