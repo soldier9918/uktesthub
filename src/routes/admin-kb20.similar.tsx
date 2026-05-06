@@ -532,15 +532,17 @@ function PairSide({
   diff,
   busy,
   onRegenerate,
+  onCompleteRegenerate,
   onRevert,
 }: {
   side: "A" | "B";
   topic: string;
   id: string;
   text: string;
-  diff?: { before: AnyQ; after: AnyQ; sim: number; needsReview: boolean };
+  diff?: { before: AnyQ; after: AnyQ; sim: number; needsReview: boolean; mode?: "rewrite" | "complete"; concept?: string };
   busy: boolean;
   onRegenerate: () => void;
+  onCompleteRegenerate: () => void;
   onRevert: () => void;
 }) {
   return (
@@ -557,9 +559,12 @@ function PairSide({
         </Link>
       </div>
       <p className="mt-1 line-clamp-3 text-sm">{text}</p>
-      <div className="mt-2 flex items-center gap-2">
+      <div className="mt-2 flex flex-wrap items-center gap-2">
         <Button size="sm" onClick={onRegenerate} disabled={busy}>
-          {busy ? "Regenerating…" : "Regenerate as unique"}
+          {busy ? "Working…" : "Regenerate as unique"}
+        </Button>
+        <Button size="sm" variant="secondary" onClick={onCompleteRegenerate} disabled={busy} title="Generate a brand-new question and check uniqueness across the whole category">
+          {busy ? "Working…" : "Complete Regeneration"}
         </Button>
         {diff && (
           <Button size="sm" variant="outline" onClick={onRevert}>
