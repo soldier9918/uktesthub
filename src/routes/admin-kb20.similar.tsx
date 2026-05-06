@@ -639,9 +639,22 @@ function SimilarPage() {
               {bigClusters} cluster{bigClusters === 1 ? "" : "s"} with 3+ duplicates
             </Badge>
           )}
+          {typeFilter !== "__all__" && (
+            <Badge variant="outline" className="text-xs">
+              type: {typeFilter}
+              <button
+                type="button"
+                onClick={() => setTypeFilter("__all__")}
+                className="ml-1 text-muted-foreground hover:text-foreground"
+                aria-label="Clear type filter"
+              >
+                ×
+              </button>
+            </Badge>
+          )}
           {pairs.length !== visiblePairs.length && (
             <span className="text-xs text-muted-foreground">
-              ({pairs.length - visiblePairs.length} marked not duplicate)
+              ({pairs.filter((p) => !p.hidden).length - visiblePairs.length} hidden by filter, {pairs.length - pairs.filter((p) => !p.hidden).length} marked not duplicate)
             </span>
           )}
           <div className="ml-auto flex items-center gap-1 rounded-md border border-border p-0.5">
