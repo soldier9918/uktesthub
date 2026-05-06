@@ -868,11 +868,40 @@ function SimilarPage() {
                             {topic} / {id}
                           </Link>
                         </div>
-                        <p className="mt-1 line-clamp-2 text-sm">{text}</p>
+                        <p className="mt-1 line-clamp-2 text-sm text-muted-foreground">
+                          <span className="font-semibold text-foreground/70">Original: </span>{text}
+                        </p>
                         {diff && (
-                          <p className="mt-1 text-xs text-success">
-                            ✓ regenerated (sim {(diff.sim * 100).toFixed(0)}%)
-                          </p>
+                          <div className="mt-2 rounded bg-muted/40 p-2 text-xs">
+                            <div className="flex flex-wrap items-center gap-2">
+                              <Badge variant={diff.needsReview ? "destructive" : "secondary"}>
+                                new · sim {(diff.sim * 100).toFixed(0)}%{diff.needsReview ? " · needs review" : ""}
+                              </Badge>
+                              {diff.mode === "complete" && <Badge variant="outline">complete · category-wide</Badge>}
+                              {diff.concept && <span className="text-muted-foreground">concept: {diff.concept}</span>}
+                            </div>
+                            <p className="mt-1 font-semibold">{String(diff.after.question ?? "")}</p>
+                            {Array.isArray(diff.after.options) && (
+                              <ol className="mt-1 list-decimal pl-4">
+                                {(diff.after.options as string[]).map((o, i) => (
+                                  <li
+                                    key={i}
+                                    className={
+                                      (typeof diff.after.correctAnswer === "number" && diff.after.correctAnswer === i) ||
+                                      (Array.isArray(diff.after.correctAnswers) && (diff.after.correctAnswers as number[]).includes(i))
+                                        ? "font-semibold text-success"
+                                        : ""
+                                    }
+                                  >
+                                    {o}
+                                  </li>
+                                ))}
+                              </ol>
+                            )}
+                            {diff.after.explanation ? (
+                              <p className="mt-1 text-muted-foreground">{String(diff.after.explanation)}</p>
+                            ) : null}
+                          </div>
                         )}
                       </li>
                     );
