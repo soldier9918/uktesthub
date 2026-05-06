@@ -10,7 +10,7 @@ const STOPWORDS = new Set([
   "no","yes","but","if","then","than","so","such","may","can","could","should",
   "would","will","shall","must","might","also","into","over","under","about",
   "before","after","between","through","during","without","within","while",
-];
+]);
 
 export function normalizeForSimilarity(s: string): string {
   return (s ?? "")
