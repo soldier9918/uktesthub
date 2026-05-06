@@ -378,6 +378,78 @@ function SimilarPage() {
 
   const visiblePairs = pairs.filter((p) => !p.hidden);
 
+  // Compute duplicate counts and partners per question
+  const dupInfo = useMemo(() => {
+    const count = new Map<string, number>();
+    const partners = new Map<string, Array<{ topic: string; id: string; text: string }>>();
+    for (const p of visiblePairs) {
+      const ka = `${p.a.topic}::${p.a.id}`;
+      const kb = `${p.b.topic}::${p.b.id}`;
+      count.set(ka, (count.get(ka) ?? 0) + 1);
+      count.set(kb, (count.get(kb) ?? 0) + 1);
+      if (!partners.has(ka)) partners.set(ka, []);
+      if (!partners.has(kb)) partners.set(kb, []);
+      partners.get(ka)!.push({ topic: p.b.topic, id: p.b.id, text: p.b.text });
+      partners.get(kb)!.push({ topic: p.a.topic, id: p.a.id, text: p.a.text });
+    }
+    return { count, partners };
+  }, [visiblePairs]);
+
+  // Union-find clusters
+  const clusters = useMemo(() => {
+    const parent = new Map<string, string>();
+    const find = (x: string): string => {
+      const p = parent.get(x);
+      if (!p || p === x) {
+        parent.set(x, x);
+        return x;
+      }
+      const r = find(p);
+      parent.set(x, r);
+      return r;
+    };
+    const union = (a: string, b: string) => {
+      const ra = find(a);
+      const rb = find(b);
+      if (ra !== rb) parent.set(ra, rb);
+    };
+    for (const p of visiblePairs) {
+      const ka = `${p.a.topic}::${p.a.id}`;
+      const kb = `${p.b.topic}::${p.b.id}`;
+      find(ka);
+      find(kb);
+      union(ka, kb);
+    }
+    const groups = new Map<string, { members: Set<string>; pairs: EnrichedPair[] }>();
+    for (const p of visiblePairs) {
+      const root = find(`${p.a.topic}::${p.a.id}`);
+      if (!groups.has(root)) groups.set(root, { members: new Set(), pairs: [] });
+      const g = groups.get(root)!;
+      g.members.add(`${p.a.topic}::${p.a.id}`);
+      g.members.add(`${p.b.topic}::${p.b.id}`);
+      g.pairs.push(p);
+    }
+    return Array.from(groups.values()).sort((a, b) => b.members.size - a.members.size);
+  }, [visiblePairs]);
+
+  const uniqueQuestions = dupInfo.count.size;
+  const bigClusters = clusters.filter((c) => c.members.size >= 3).length;
+
+  // Sort visible pairs so high-duplicate questions surface first
+  const sortedPairs = useMemo(() => {
+    return [...visiblePairs].sort((a, b) => {
+      const sa = Math.max(
+        dupInfo.count.get(`${a.a.topic}::${a.a.id}`) ?? 0,
+        dupInfo.count.get(`${a.b.topic}::${a.b.id}`) ?? 0,
+      );
+      const sb = Math.max(
+        dupInfo.count.get(`${b.a.topic}::${b.a.id}`) ?? 0,
+        dupInfo.count.get(`${b.b.topic}::${b.b.id}`) ?? 0,
+      );
+      return sb - sa;
+    });
+  }, [visiblePairs, dupInfo]);
+
   return (
     <main className="mx-auto max-w-6xl px-4 py-8">
       <Link to="/admin-kb20" className="text-sm text-muted-foreground hover:underline">
