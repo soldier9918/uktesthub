@@ -10,6 +10,7 @@ export type QuestionOverride = {
   explanation: string | null;
   image: string | null;
   image_alt: string | null;
+  disabled?: boolean | null;
 };
 
 let cache: Map<string, QuestionOverride> | null = null;
@@ -25,7 +26,7 @@ export async function loadOverrides(): Promise<Map<string, QuestionOverride>> {
   inflight = (async () => {
     const { data, error } = await supabase
       .from("question_overrides")
-      .select("topic,question_id,question,options,correct_answer,explanation,image,image_alt");
+      .select("topic,question_id,question,options,correct_answer,explanation,image,image_alt,disabled");
     const map = new Map<string, QuestionOverride>();
     if (!error && data) {
       for (const row of data) {
@@ -77,17 +78,23 @@ export function applyOverrideToQuestionRecord<T extends Record<string, unknown>>
 
 export function applyOverrides<T extends AnyQuiz>(quiz: T, map: Map<string, QuestionOverride>): T {
   let mutated = false;
-  const nextQuestions = quiz.questions.map((q) => {
-    // Bank id (e.g. "sa-mc-0017") is the canonical override key; fall back to
-    // the runtime numeric id for backward compatibility.
+  const nextQuestions: typeof quiz.questions = [];
+  for (const q of quiz.questions) {
     const srcId = (q as { sourceId?: string }).sourceId;
     const o =
       (srcId ? map.get(key(quiz.topic, srcId)) : undefined) ??
       map.get(key(quiz.topic, String(q.id)));
-    if (!o) return q;
+    if (!o) {
+      nextQuestions.push(q);
+      continue;
+    }
+    if (o.disabled) {
+      mutated = true;
+      continue; // skip disabled question entirely from live quiz
+    }
     mutated = true;
-    return applyOverrideToQuestionRecord(q, o);
-  });
+    nextQuestions.push(applyOverrideToQuestionRecord(q, o));
+  }
   if (!mutated) return quiz;
   return { ...quiz, questions: nextQuestions } as T;
 }

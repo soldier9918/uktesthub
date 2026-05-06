@@ -182,6 +182,8 @@ function QuestionsBrowser() {
   const [type, setType] = useState<string>("all");
   const [imageFilter, setImageFilter] = useState<"all" | "with" | "without">("all");
   const [usageFilter, setUsageFilter] = useState<"all" | "used" | "unused">("all");
+  const [statusFilter, setStatusFilter] = useState<"all" | "enabled" | "disabled">("all");
+  const [togglingId, setTogglingId] = useState<string | null>(null);
   const [page, setPage] = useState(1);
   const [editing, setEditing] = useState<FlatQuestion | null>(null);
   const scrollRestoreRef = useRef<number | null>(null);
@@ -244,6 +246,9 @@ function QuestionsBrowser() {
       if (imageFilter === "without" && q.image) return false;
       if (usageFilter === "used" && q.usedInMocks.length === 0) return false;
       if (usageFilter === "unused" && q.usedInMocks.length > 0) return false;
+      const isDisabled = !!overrides?.get(`${topic}::${q.id}`)?.disabled;
+      if (statusFilter === "enabled" && isDisabled) return false;
+      if (statusFilter === "disabled" && !isDisabled) return false;
       if (
         s &&
         !q.question.toLowerCase().includes(s) &&
@@ -253,7 +258,7 @@ function QuestionsBrowser() {
         return false;
       return true;
     });
-  }, [effectiveQuestions, search, type, imageFilter, usageFilter]);
+  }, [effectiveQuestions, search, type, imageFilter, usageFilter, statusFilter, overrides, topic]);
 
   const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
   const pageSafe = Math.min(page, totalPages);
@@ -445,6 +450,32 @@ function QuestionsBrowser() {
     }
   };
 
+  const toggleDisabled = async (q: FlatQuestion) => {
+    setTogglingId(q.id);
+    try {
+      const existing = overrides?.get(`${topic}::${q.id}`);
+      const nextDisabled = !(existing?.disabled);
+      const { error } = await supabase
+        .from("question_overrides")
+        .upsert(
+          {
+            topic,
+            question_id: q.id,
+            disabled: nextDisabled,
+            updated_by: user?.id ?? null,
+          },
+          { onConflict: "topic,question_id" },
+        );
+      if (error) throw error;
+      invalidateOverrides();
+      setBump((n) => n + 1);
+    } catch (err) {
+      setImportMsg(`Toggle failed: ${err instanceof Error ? err.message : "Unknown error"}`);
+    } finally {
+      setTogglingId(null);
+    }
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <main className="mx-auto max-w-6xl px-4 py-6">
@@ -521,6 +552,18 @@ function QuestionsBrowser() {
             <option value="used">Used in mocks</option>
             <option value="unused">Unused in mocks</option>
           </select>
+          <select
+            value={statusFilter}
+            onChange={(e) => {
+              setStatusFilter(e.target.value as "all" | "enabled" | "disabled");
+              setPage(1);
+            }}
+            className="h-9 rounded-md border border-input bg-background px-2 text-sm"
+          >
+            <option value="all">All status</option>
+            <option value="enabled">Enabled only</option>
+            <option value="disabled">Disabled only</option>
+          </select>
           <span className="ml-auto text-xs text-muted-foreground">
             {filtered.length} matching
           </span>
@@ -553,11 +596,15 @@ function QuestionsBrowser() {
         </div>
 
         <ol className="mt-4 space-y-3">
-          {visible.map((q: FlatQuestion, idx: number) => (
+          {visible.map((q: FlatQuestion, idx: number) => {
+            const ov = overrides?.get(`${topic}::${q.id}`);
+            const isDisabled = !!ov?.disabled;
+            const isToggling = togglingId === q.id;
+            return (
             <li
               key={q.id}
               data-qid={q.id}
-              className={`rounded-xl border bg-card p-4 ${q.id === highlightId ? "border-coral ring-2 ring-coral/30" : "border-border"}`}
+              className={`rounded-xl border bg-card p-4 ${q.id === highlightId ? "border-coral ring-2 ring-coral/30" : "border-border"} ${isDisabled ? "opacity-60" : ""}`}
             >
               <div className="flex items-start gap-3">
                 <div className="text-xs text-muted-foreground w-12 shrink-0">
@@ -569,8 +616,11 @@ function QuestionsBrowser() {
                     <code className="text-[10px] text-muted-foreground">
                       {q.id}
                     </code>
-                    {overrides?.has(`${topic}::${q.id}`) && (
+                    {ov && !ov.disabled && (
                       <Badge className="bg-emerald-600 text-white">edited</Badge>
+                    )}
+                    {isDisabled && (
+                      <Badge className="bg-destructive text-destructive-foreground">disabled</Badge>
                     )}
                     {q.usedInMocks.length > 0 ? (
                       <span className="flex flex-wrap items-center gap-1 text-[10px] text-muted-foreground">
@@ -605,6 +655,16 @@ function QuestionsBrowser() {
                       }}
                     >
                       Edit
+                    </Button>
+                    <Button
+                      size="sm"
+                      variant={isDisabled ? "default" : "outline"}
+                      className="h-7"
+                      disabled={isToggling}
+                      onClick={() => toggleDisabled(q)}
+                      title={isDisabled ? "Re-enable this question (will appear in mocks again)" : "Disable this question (hidden from live mocks)"}
+                    >
+                      {isToggling ? "…" : isDisabled ? "Enable" : "Disable"}
                     </Button>
                   </div>
                   <p className="mt-2 font-medium">{q.question}</p>
@@ -659,7 +719,8 @@ function QuestionsBrowser() {
                 )}
               </div>
             </li>
-          ))}
+            );
+          })}
         </ol>
 
         {filtered.length === 0 && (
