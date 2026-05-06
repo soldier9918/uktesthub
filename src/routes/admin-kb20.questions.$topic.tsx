@@ -176,6 +176,7 @@ const PAGE_SIZE = 25;
 function QuestionsBrowser() {
   const { topic, questions } = Route.useLoaderData();
   const { q: initialQ, from, edit: editId } = Route.useSearch();
+  const { user } = useAuth();
   const initialSearch = initialQ ?? "";
   const [search, setSearch] = useState(initialSearch);
   const [type, setType] = useState<string>("all");
@@ -184,6 +185,9 @@ function QuestionsBrowser() {
   const [editing, setEditing] = useState<FlatQuestion | null>(null);
   const scrollRestoreRef = useRef<number | null>(null);
   const [bump, setBump] = useState(0);
+  const [importMsg, setImportMsg] = useState<string | null>(null);
+  const [importing, setImporting] = useState(false);
+  const fileInputRef = useRef<HTMLInputElement>(null);
   const overrides = useOverrides();
   void bump;
   const highlightId = initialSearch;
