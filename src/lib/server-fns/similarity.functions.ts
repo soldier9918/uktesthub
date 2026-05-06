@@ -398,12 +398,3 @@ ${JSON.stringify(
     },
   );
 
-// Type-only helper so we can reference the verdict shape above without circular imports.
-declare const _typeHelper: {
-  verdicts: Array<{ verdict: "duplicate" | "near-duplicate" | "distinct"; confidence: number; reason: string }>;
-};
-// eslint-disable-next-line @typescript-eslint/no-namespace
-export namespace aiVerdictPairs {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  export const _returnType: typeof _typeHelper = _typeHelper;
-}
