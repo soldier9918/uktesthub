@@ -402,3 +402,316 @@ ${JSON.stringify(
     },
   );
 
+
+// ---------- Complete Regeneration (brand-new question, hides source from AI) ----------
+
+const SCENARIO_ANGLES = [
+  "urban street with parked cars",
+  "rural country lane",
+  "motorway in heavy traffic",
+  "night-time driving in poor visibility",
+  "wet weather and slippery roads",
+  "approaching a busy junction",
+  "near a school or pedestrian area",
+  "with a learner driver or new licence holder",
+];
+
+export const completeRegenerateQuestion = createServerFn({ method: "POST" })
+  .inputValidator(
+    (d: {
+      accessToken: string;
+      topic: string;
+      topicTitle: string;
+      categoryTitle: string;
+      source: SourceQuestion;
+      categoryBlobs: string[]; // normalised question texts across the WHOLE category
+    }) => d,
+  )
+  .handler(
+    async ({
+      data,
+    }): Promise<{
+      generated: SourceQuestion | null;
+      similarityMax: number;
+      attempts: number;
+      needsReview: boolean;
+      auditId: string | null;
+      concept: string | null;
+      error: string | null;
+    }> => {
+      const userId = await verifyAdmin(data.accessToken);
+      if (!userId) {
+        return { generated: null, similarityMax: 0, attempts: 0, needsReview: false, auditId: null, concept: null, error: "Unauthorized" };
+      }
+      const apiKey = process.env.LOVABLE_API_KEY;
+      if (!apiKey) {
+        return { generated: null, similarityMax: 0, attempts: 0, needsReview: false, auditId: null, concept: null, error: "LOVABLE_API_KEY not configured" };
+      }
+
+      const { source } = data;
+      const type = (source.type ?? "mcq").replace(/_/g, "-");
+      const supportsMulti = type === "multiple-response";
+
+      const { trigrams, jaccard } = await import("@/lib/admin/similarity");
+      const categoryTri = data.categoryBlobs.map((b) => trigrams(b));
+
+      // ---- Step A: extract concept label ----
+      let concept = "";
+      try {
+        const conceptResp = await fetch(AI_URL, {
+          method: "POST",
+          headers: { Authorization: `Bearer ${apiKey}`, "Content-Type": "application/json" },
+          body: JSON.stringify({
+            model: "google/gemini-2.5-flash",
+            messages: [
+              { role: "system", content: "Extract the underlying concept being tested in a single 3-8 word label. Return ONLY the label, no punctuation, no quotes." },
+              { role: "user", content: `${source.question ?? source.template ?? source.prompt ?? ""}\n\nCorrect answer context: ${source.explanation ?? ""}` },
+            ],
+          }),
+        });
+        if (conceptResp.ok) {
+          const cj = (await conceptResp.json()) as { choices?: Array<{ message?: { content?: string } }> };
+          concept = (cj.choices?.[0]?.message?.content ?? "").trim().replace(/^["']|["']$/g, "").slice(0, 120);
+        }
+      } catch {
+        // non-fatal; carry on with empty concept
+      }
+      if (!concept) concept = `${data.topicTitle} concept`;
+
+      // ---- Build avoid-list: 15 most lexically-similar existing stems ----
+      const sourceBlob =
+        (source.question ?? source.template ?? source.prompt ?? "") +
+        " | " +
+        (source.options ?? []).join(" | ") +
+        " | " +
+        (source.explanation ?? "");
+      const sourceTri = trigrams(sourceBlob);
+      const ranked = data.categoryBlobs
+        .map((b, i) => ({ b, score: jaccard(sourceTri, categoryTri[i]) }))
+        .sort((a, b) => b.score - a.score)
+        .slice(0, 15)
+        .map((x) => x.b.slice(0, 220));
+      const avoidList = ranked.length
+        ? ranked.map((s, i) => `${i + 1}. ${s}`).join("\n")
+        : "(no similar questions in bank yet)";
+
+      // ---- Step B: generate fresh question ----
+      const tool = {
+        type: "function" as const,
+        function: {
+          name: "emit_question",
+          description: "Emit one new question.",
+          parameters: {
+            type: "object",
+            properties: {
+              question: { type: "string" },
+              options: { type: "array", items: { type: "string" } },
+              correctAnswer: { type: "number" },
+              correctAnswers: { type: "array", items: { type: "number" } },
+              explanation: { type: "string" },
+            },
+            required: ["question", "options", "explanation"],
+            additionalProperties: false,
+          },
+        },
+      };
+
+      const SIM_REJECT = 0.65;
+      const MAX_ATTEMPTS = 5;
+      let best: { gen: SourceQuestion; sim: number } | null = null;
+      let attempts = 0;
+      let lastError: string | null = null;
+
+      for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
+        attempts = attempt;
+        const angle = SCENARIO_ANGLES[(attempt - 1) % SCENARIO_ANGLES.length];
+
+        const sysPrompt = `You write UK exam practice questions for "${data.categoryTitle} — ${data.topicTitle}".
+You are creating a BRAND-NEW question on the concept: "${concept}".
+You have NOT seen the original question. Do not attempt to reproduce it.
+Rules:
+- Use UK English and UK-specific context (£, miles, MOT, NHS, DVSA where relevant).
+- Match this question type: "${type}".
+- For MCQ-style: provide exactly 4 plausible options with one correct answer.
+- Distractors must be realistic but clearly wrong to a knowledgeable test-taker.
+- Provide a unique explanation (1-3 sentences).
+- Do NOT reuse phrases, scenarios, numbers, or distinctive wording from the AVOID list below.
+- Frame the scenario around: ${angle}.`;
+
+        const userPrompt = `Concept: ${concept}
+Topic: ${data.topicTitle}
+Category: ${data.categoryTitle}
+Scenario angle: ${angle}
+
+AVOID list (existing questions in this category — do NOT replicate their wording, scenarios, or numbers):
+${avoidList}
+
+Now write a completely fresh question.`;
+
+        const resp = await fetch(AI_URL, {
+          method: "POST",
+          headers: { Authorization: `Bearer ${apiKey}`, "Content-Type": "application/json" },
+          body: JSON.stringify({
+            model: "google/gemini-2.5-pro",
+            messages: [
+              { role: "system", content: sysPrompt },
+              { role: "user", content: userPrompt },
+              ...(attempt > 1 && best
+                ? [{ role: "user", content: `Previous attempt was too similar to existing content (Jaccard ${best.sim.toFixed(2)}). Pick a different scenario, different numbers, different framing.` }]
+                : []),
+            ],
+            tools: [tool],
+            tool_choice: { type: "function", function: { name: "emit_question" } },
+          }),
+        });
+        if (!resp.ok) {
+          const txt = await resp.text();
+          lastError = `AI gateway ${resp.status}: ${txt.slice(0, 200)}`;
+          if (resp.status === 429 || resp.status === 402) break;
+          continue;
+        }
+        const json = (await resp.json()) as {
+          choices?: Array<{ message?: { tool_calls?: Array<{ function?: { arguments?: string } }> } }>;
+        };
+        const argsStr = json.choices?.[0]?.message?.tool_calls?.[0]?.function?.arguments;
+        if (!argsStr) {
+          lastError = "No tool call in response";
+          continue;
+        }
+        let parsed: {
+          question: string;
+          options: string[];
+          correctAnswer?: number;
+          correctAnswers?: number[];
+          explanation: string;
+        };
+        try {
+          parsed = JSON.parse(argsStr);
+        } catch (e) {
+          lastError = `Parse error: ${(e as Error).message}`;
+          continue;
+        }
+
+        // Randomise correct-answer position for single-correct types.
+        let options = [...(parsed.options ?? [])];
+        let correctAnswer = parsed.correctAnswer;
+        const correctAnswers = parsed.correctAnswers;
+        if (!supportsMulti && typeof correctAnswer === "number" && options[correctAnswer]) {
+          const correctText = options[correctAnswer];
+          for (let k = options.length - 1; k > 0; k--) {
+            const j = Math.floor(Math.random() * (k + 1));
+            [options[k], options[j]] = [options[j], options[k]];
+          }
+          correctAnswer = options.indexOf(correctText);
+        }
+
+        const gen: SourceQuestion = {
+          id: source.id,
+          type: source.type,
+          question: parsed.question,
+          options,
+          correctAnswer: supportsMulti ? undefined : correctAnswer,
+          correctAnswers: supportsMulti ? correctAnswers : undefined,
+          explanation: parsed.explanation,
+          image: source.image,
+          imageAlt: source.imageAlt,
+        };
+
+        // Similarity vs whole category + source
+        const candBlob =
+          (gen.question ?? "") +
+          " | " +
+          (gen.options ?? []).join(" | ") +
+          " | " +
+          (gen.explanation ?? "");
+        const candTri = trigrams(candBlob);
+        let maxSim = 0;
+        for (const t of categoryTri) {
+          const s = jaccard(candTri, t);
+          if (s > maxSim) maxSim = s;
+        }
+        const srcSim = jaccard(candTri, sourceTri);
+        if (srcSim > maxSim) maxSim = srcSim;
+
+        if (!best || maxSim < best.sim) best = { gen, sim: maxSim };
+        if (maxSim < SIM_REJECT) break;
+        lastError = `similarity ${maxSim.toFixed(2)} too high`;
+      }
+
+      if (!best) {
+        return {
+          generated: null,
+          similarityMax: 0,
+          attempts,
+          needsReview: false,
+          auditId: null,
+          concept,
+          error: lastError ?? "Generation failed",
+        };
+      }
+
+      const needsReview = best.sim >= SIM_REJECT;
+
+      const overridePayload = {
+        topic: data.topic,
+        question_id: source.id,
+        question: best.gen.question ?? null,
+        options: best.gen.options ?? null,
+        correct_answer:
+          best.gen.correctAnswers !== undefined
+            ? best.gen.correctAnswers
+            : best.gen.correctAnswer ?? null,
+        explanation: best.gen.explanation ?? null,
+        image: null,
+        image_alt: null,
+        updated_by: userId,
+      };
+      const { error: upErr } = await supabaseAdmin
+        .from("question_overrides")
+        .upsert(overridePayload, { onConflict: "topic,question_id" });
+      if (upErr) {
+        return {
+          generated: best.gen,
+          similarityMax: best.sim,
+          attempts,
+          needsReview,
+          auditId: null,
+          concept,
+          error: `Save failed: ${upErr.message}`,
+        };
+      }
+
+      const { data: auditRow, error: audErr } = await (supabaseAdmin
+        .from("question_regenerations" as never) as unknown as {
+          insert: (row: Record<string, unknown>) => {
+            select: (cols: string) => { maybeSingle: () => Promise<{ data: { id: string } | null; error: { message: string } | null }> };
+          };
+        })
+        .insert({
+          topic: data.topic,
+          question_id: source.id,
+          source_question: source as unknown as Record<string, unknown>,
+          generated_question: best.gen as unknown as Record<string, unknown>,
+          similarity_max: best.sim,
+          attempts,
+          needs_review: needsReview,
+          model: "google/gemini-2.5-pro",
+          created_by: userId,
+          mode: "complete",
+          concept,
+          scope: "category",
+        })
+        .select("id")
+        .maybeSingle();
+
+      return {
+        generated: best.gen,
+        similarityMax: best.sim,
+        attempts,
+        needsReview,
+        auditId: auditRow?.id ?? null,
+        concept,
+        error: audErr?.message ?? null,
+      };
+    },
+  );

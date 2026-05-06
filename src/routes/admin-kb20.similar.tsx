@@ -15,7 +15,11 @@ import {
   type SimItem,
   type SimPair,
 } from "@/lib/admin/similarity";
-import { aiVerdictPairs, regenerateUniqueQuestion } from "@/lib/server-fns/similarity.functions";
+import {
+  aiVerdictPairs,
+  completeRegenerateQuestion,
+  regenerateUniqueQuestion,
+} from "@/lib/server-fns/similarity.functions";
 
 export const Route = createFileRoute("/admin-kb20/similar")({
   head: () => ({
@@ -72,7 +76,7 @@ function SimilarPage() {
   const [pairs, setPairs] = useState<EnrichedPair[]>([]);
   const [scanned, setScanned] = useState(false);
   const [busyKey, setBusyKey] = useState<string | null>(null);
-  const [diffs, setDiffs] = useState<Record<string, { topic: string; id: string; before: AnyQ; after: AnyQ; sim: number; needsReview: boolean }>>({});
+  const [diffs, setDiffs] = useState<Record<string, { topic: string; id: string; before: AnyQ; after: AnyQ; sim: number; needsReview: boolean; mode?: "rewrite" | "complete"; concept?: string }>>({});
   const cancelRef = useRef(false);
 
   const topicsForCategory = useMemo(() => {
@@ -255,6 +259,111 @@ function SimilarPage() {
     }
   };
 
+  const completeRegenerate = async (p: EnrichedPair, side: "a" | "b") => {
+    const target = side === "a" ? p.a : p.b;
+    const k = `${target.topic}::${target.id}`;
+    setBusyKey(k);
+    try {
+      const meta = topicTitleMap.get(target.topic);
+      if (!meta) {
+        setBusyKey(null);
+        return;
+      }
+      const cat = categories.find((c) => c.slug === meta.catSlug);
+      if (!cat) {
+        setBusyKey(null);
+        return;
+      }
+      setProgress(`Loading category "${meta.cat}" (${cat.topics.length} topic${cat.topics.length === 1 ? "" : "s"})…`);
+      const overrides = await loadOverrides();
+
+      // Load source from its topic
+      const sourceFile = await loadTopicFileForAdmin(target.topic);
+      if (!sourceFile) {
+        setBusyKey(null);
+        return;
+      }
+      const isV2Src = (sourceFile as { version?: number }).version === 2;
+      const sourceBank: AnyQ[] = isV2Src
+        ? ((sourceFile as { bank: AnyQ[] }).bank ?? [])
+        : ((sourceFile as { tests: { questions: AnyQ[] }[] }).tests ?? []).flatMap((t) => t.questions ?? []);
+      const sourceRaw = sourceBank.find((q) => String(q.id) === target.id);
+      if (!sourceRaw) {
+        setBusyKey(null);
+        return;
+      }
+      const source = applyOverrideToQuestionRecord(sourceRaw, overrides.get(k));
+
+      // Build category-wide blob list (excluding the target itself)
+      const categoryBlobs: string[] = [];
+      for (const t of cat.topics) {
+        const f = await loadTopicFileForAdmin(t.slug);
+        if (!f) continue;
+        const isV2 = (f as { version?: number }).version === 2;
+        const bank: AnyQ[] = isV2
+          ? ((f as { bank: AnyQ[] }).bank ?? [])
+          : ((f as { tests: { questions: AnyQ[] }[] }).tests ?? []).flatMap((tt) => tt.questions ?? []);
+        for (const raw of bank) {
+          if (!raw.id) continue;
+          if (t.slug === target.topic && String(raw.id) === target.id) continue;
+          const q = applyOverrideToQuestionRecord(raw, overrides.get(`${t.slug}::${raw.id}`));
+          categoryBlobs.push(buildBlob(q as Parameters<typeof buildBlob>[0]));
+        }
+      }
+      setProgress(`Generating fresh question (checking against ${categoryBlobs.length} questions in category)…`);
+
+      const { data: sess } = await supabase.auth.getSession();
+      const accessToken = sess.session?.access_token ?? "";
+
+      const res = await completeRegenerateQuestion({
+        data: {
+          accessToken,
+          topic: target.topic,
+          topicTitle: meta.title,
+          categoryTitle: meta.cat,
+          source: {
+            id: target.id,
+            type: source.type as string | undefined,
+            question: source.question as string | undefined,
+            template: source.template as string | undefined,
+            prompt: source.prompt as string | undefined,
+            options: source.options as string[] | undefined,
+            correctAnswer: source.correctAnswer as number | boolean | undefined,
+            correctAnswers: source.correctAnswers as number[] | undefined,
+            explanation: source.explanation as string | undefined,
+            image: source.image as string | undefined,
+            imageAlt: source.imageAlt as string | undefined,
+          },
+          categoryBlobs,
+        },
+      });
+
+      if (res.error || !res.generated) {
+        setProgress(`Complete regeneration failed: ${res.error ?? "unknown error"}`);
+        setBusyKey(null);
+        return;
+      }
+
+      invalidateOverrides();
+      setDiffs((prev) => ({
+        ...prev,
+        [k]: {
+          topic: target.topic,
+          id: target.id,
+          before: source as AnyQ,
+          after: res.generated as AnyQ,
+          sim: res.similarityMax,
+          needsReview: res.needsReview,
+          mode: "complete",
+          concept: res.concept ?? undefined,
+        },
+      }));
+      setProgress(`Fresh question created (similarity ${(res.similarityMax * 100).toFixed(0)}% across category).`);
+    } finally {
+      setBusyKey(null);
+    }
+  };
+
   const revert = async (k: string) => {
     const d = diffs[k];
     if (!d) return;
@@ -387,6 +496,7 @@ function SimilarPage() {
                   diff={diffA}
                   busy={busyKey === `${p.a.topic}::${p.a.id}`}
                   onRegenerate={() => void regenerate(p, "a")}
+                  onCompleteRegenerate={() => void completeRegenerate(p, "a")}
                   onRevert={() => void revert(`${p.a.topic}::${p.a.id}`)}
                 />
                 <PairSide
@@ -397,6 +507,7 @@ function SimilarPage() {
                   diff={diffB}
                   busy={busyKey === `${p.b.topic}::${p.b.id}`}
                   onRegenerate={() => void regenerate(p, "b")}
+                  onCompleteRegenerate={() => void completeRegenerate(p, "b")}
                   onRevert={() => void revert(`${p.b.topic}::${p.b.id}`)}
                 />
               </div>
@@ -421,15 +532,17 @@ function PairSide({
   diff,
   busy,
   onRegenerate,
+  onCompleteRegenerate,
   onRevert,
 }: {
   side: "A" | "B";
   topic: string;
   id: string;
   text: string;
-  diff?: { before: AnyQ; after: AnyQ; sim: number; needsReview: boolean };
+  diff?: { before: AnyQ; after: AnyQ; sim: number; needsReview: boolean; mode?: "rewrite" | "complete"; concept?: string };
   busy: boolean;
   onRegenerate: () => void;
+  onCompleteRegenerate: () => void;
   onRevert: () => void;
 }) {
   return (
@@ -446,9 +559,12 @@ function PairSide({
         </Link>
       </div>
       <p className="mt-1 line-clamp-3 text-sm">{text}</p>
-      <div className="mt-2 flex items-center gap-2">
+      <div className="mt-2 flex flex-wrap items-center gap-2">
         <Button size="sm" onClick={onRegenerate} disabled={busy}>
-          {busy ? "Regenerating…" : "Regenerate as unique"}
+          {busy ? "Working…" : "Regenerate as unique"}
+        </Button>
+        <Button size="sm" variant="secondary" onClick={onCompleteRegenerate} disabled={busy} title="Generate a brand-new question and check uniqueness across the whole category">
+          {busy ? "Working…" : "Complete Regeneration"}
         </Button>
         {diff && (
           <Button size="sm" variant="outline" onClick={onRevert}>
@@ -458,10 +574,12 @@ function PairSide({
       </div>
       {diff && (
         <div className="mt-2 rounded bg-muted/40 p-2 text-xs">
-          <div className="flex items-center gap-2">
+          <div className="flex flex-wrap items-center gap-2">
             <Badge variant={diff.needsReview ? "destructive" : "secondary"}>
               new · sim {(diff.sim * 100).toFixed(0)}%{diff.needsReview ? " · needs review" : ""}
             </Badge>
+            {diff.mode === "complete" && <Badge variant="outline">complete · category-wide</Badge>}
+            {diff.concept && <span className="text-muted-foreground">concept: {diff.concept}</span>}
           </div>
           <p className="mt-1 font-semibold">{String(diff.after.question ?? "")}</p>
           {Array.isArray(diff.after.options) && (
