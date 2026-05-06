@@ -115,6 +115,7 @@ function SimilarPage() {
     const overrides = await loadOverrides();
     const items: SimItem[] = [];
     const tmap = new Map<string, string>();
+    const imap = new Map<string, { image: string; text: string; type?: string }>();
     for (let ti = 0; ti < targetTopics.length; ti++) {
       const topic = targetTopics[ti];
       setProgress(`Loading ${topic} (${ti + 1}/${targetTopics.length})…`);
@@ -132,6 +133,10 @@ function SimilarPage() {
         items.push({ topic, id: String(id), blob, trigrams: trigrams(blob) });
         const t = (q as { type?: string }).type;
         if (t) tmap.set(`${topic}::${String(id)}`, t);
+        const img = (q as { image?: string }).image;
+        if (img && typeof img === "string") {
+          imap.set(`${topic}::${String(id)}`, { image: img, text: blob, type: t });
+        }
       }
       if (cancelRef.current) {
         setRunning(false);
