@@ -349,7 +349,25 @@ function SimilarPage() {
     });
   };
 
-  const visiblePairs = pairs.filter((p) => !p.hidden);
+  const availableTypes = useMemo(() => {
+    const s = new Set<string>();
+    for (const p of pairs) {
+      if (p.hidden) continue;
+      const ta = typeMap.get(`${p.a.topic}::${p.a.id}`);
+      const tb = typeMap.get(`${p.b.topic}::${p.b.id}`);
+      if (ta) s.add(ta);
+      if (tb) s.add(tb);
+    }
+    return Array.from(s).sort();
+  }, [pairs, typeMap]);
+
+  const visiblePairs = pairs.filter((p) => {
+    if (p.hidden) return false;
+    if (typeFilter === "__all__") return true;
+    const ta = typeMap.get(`${p.a.topic}::${p.a.id}`);
+    const tb = typeMap.get(`${p.b.topic}::${p.b.id}`);
+    return ta === typeFilter && tb === typeFilter;
+  });
 
   // Compute duplicate counts and partners per question
   const dupInfo = useMemo(() => {
