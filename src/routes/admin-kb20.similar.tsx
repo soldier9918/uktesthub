@@ -464,7 +464,20 @@ function SimilarPage() {
         <p className="mt-6 text-sm text-muted-foreground">No similar pairs found at this threshold.</p>
       )}
 
-      <div className="mt-6 space-y-3">
+      {scanned && visiblePairs.length > 0 && (
+        <div className="mt-6 flex items-center gap-2">
+          <Badge variant="secondary" className="text-sm">
+            {visiblePairs.length} similar pair{visiblePairs.length === 1 ? "" : "s"} remaining
+          </Badge>
+          {pairs.length !== visiblePairs.length && (
+            <span className="text-xs text-muted-foreground">
+              ({pairs.length - visiblePairs.length} marked not duplicate)
+            </span>
+          )}
+        </div>
+      )}
+
+      <div className="mt-4 space-y-3">
         {visiblePairs.map((p) => {
           const k = pairKey(p);
           const diffA = diffs[`${p.a.topic}::${p.a.id}`];
