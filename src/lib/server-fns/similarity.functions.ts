@@ -139,6 +139,7 @@ export const regenerateUniqueQuestion = createServerFn({ method: "POST" })
       accessToken: string;
       topic: string;
       topicTitle: string;
+      category?: string;
       categoryTitle: string;
       source: SourceQuestion;
       existingBlobs: string[]; // normalised question texts in same topic for similarity check
@@ -172,11 +173,14 @@ export const regenerateUniqueQuestion = createServerFn({ method: "POST" })
       const { trigrams, jaccard, normalizeForSimilarity } = await import("@/lib/admin/similarity");
       const existingTri = data.existingBlobs.map((b) => trigrams(b));
 
+      const isDriving = data.category === "driving" || data.category === "taxi-private-hire";
       const sysPrompt = `You write UK exam practice questions for "${data.categoryTitle} — ${data.topicTitle}".
 Rules:
 - Generate a COMPLETELY NEW question on the same underlying concept as the source.
 - Do NOT paraphrase. New wording, new structure, new example/scenario.
 - Use UK English and UK-specific context (e.g. £, miles, MOT, NHS, DVSA where relevant).
+- The new question MUST stay strictly within the topic "${data.topicTitle}" (category "${data.categoryTitle}"). Do NOT cross over into another subject.${isDriving ? "" : `
+- Do NOT introduce driving, vehicles, cars, car parks, road signs, motorways, learner drivers, or road scenarios — this topic is NOT about driving.`}
 - Match this question type: "${type}".
 - Preserve approximate difficulty.
 - Provide a unique explanation (1–3 sentences) of why the correct answer is right.
