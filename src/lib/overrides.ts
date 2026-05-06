@@ -26,7 +26,7 @@ export async function loadOverrides(): Promise<Map<string, QuestionOverride>> {
   inflight = (async () => {
     const { data, error } = await supabase
       .from("question_overrides")
-      .select("topic,question_id,question,options,correct_answer,explanation,image,image_alt");
+      .select("topic,question_id,question,options,correct_answer,explanation,image,image_alt,disabled");
     const map = new Map<string, QuestionOverride>();
     if (!error && data) {
       for (const row of data) {
