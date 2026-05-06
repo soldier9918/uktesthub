@@ -22,6 +22,8 @@ async function verifyAdmin(accessToken: string): Promise<string | null> {
 
 type Pair = { aText: string; bText: string };
 
+type Verdict = { verdict: "duplicate" | "near-duplicate" | "distinct"; confidence: number; reason: string };
+
 export const aiVerdictPairs = createServerFn({ method: "POST" })
   .inputValidator((d: { accessToken: string; pairs: Pair[] }) => d)
   .handler(
