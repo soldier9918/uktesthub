@@ -10,6 +10,7 @@ export type QuestionOverride = {
   explanation: string | null;
   image: string | null;
   image_alt: string | null;
+  disabled?: boolean | null;
 };
 
 let cache: Map<string, QuestionOverride> | null = null;
