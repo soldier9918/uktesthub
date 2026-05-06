@@ -242,6 +242,8 @@ function QuestionsBrowser() {
       if (type !== "all" && q.type !== type) return false;
       if (imageFilter === "with" && !q.image) return false;
       if (imageFilter === "without" && q.image) return false;
+      if (usageFilter === "used" && q.usedInMocks.length === 0) return false;
+      if (usageFilter === "unused" && q.usedInMocks.length > 0) return false;
       if (
         s &&
         !q.question.toLowerCase().includes(s) &&
@@ -251,7 +253,7 @@ function QuestionsBrowser() {
         return false;
       return true;
     });
-  }, [effectiveQuestions, search, type, imageFilter]);
+  }, [effectiveQuestions, search, type, imageFilter, usageFilter]);
 
   const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
   const pageSafe = Math.min(page, totalPages);
