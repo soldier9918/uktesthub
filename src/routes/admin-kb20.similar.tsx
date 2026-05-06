@@ -78,6 +78,9 @@ function SimilarPage() {
   const [busyKey, setBusyKey] = useState<string | null>(null);
   const [diffs, setDiffs] = useState<Record<string, { topic: string; id: string; before: AnyQ; after: AnyQ; sim: number; needsReview: boolean; mode?: "rewrite" | "complete"; concept?: string }>>({});
   const [view, setView] = useState<"pairs" | "clusters">("pairs");
+  const [bulkRunning, setBulkRunning] = useState(false);
+  const [bulkProgress, setBulkProgress] = useState("");
+  const bulkCancelRef = useRef(false);
   const cancelRef = useRef(false);
 
   const topicsForCategory = useMemo(() => {
@@ -182,79 +185,134 @@ function SimilarPage() {
     setPairs((prev) => prev.map((x) => (pairKey(x) === pairKey(p) ? { ...x, hidden: true } : x)));
   };
 
+  // Core regenerate-as-unique for a single (topic, id). Returns true on success.
+  const regenerateOne = async (topic: string, id: string): Promise<{ ok: boolean; needsReview?: boolean; error?: string }> => {
+    const k = `${topic}::${id}`;
+    const overrides = await loadOverrides();
+    const file = await loadTopicFileForAdmin(topic);
+    if (!file) return { ok: false, error: "topic file missing" };
+    const isV2 = (file as { version?: number }).version === 2;
+    const rawBank: AnyQ[] = isV2
+      ? ((file as { bank: AnyQ[] }).bank ?? [])
+      : ((file as { tests: { questions: AnyQ[] }[] }).tests ?? []).flatMap((t) => t.questions ?? []);
+    const sourceRaw = rawBank.find((q) => String(q.id) === id);
+    if (!sourceRaw) return { ok: false, error: "source not found" };
+    const source = applyOverrideToQuestionRecord(sourceRaw, overrides.get(k));
+    const existingBlobs = rawBank
+      .filter((q) => String(q.id) !== id)
+      .map((raw) => {
+        const q = applyOverrideToQuestionRecord(raw, overrides.get(`${topic}::${raw.id}`));
+        return buildBlob(q as Parameters<typeof buildBlob>[0]);
+      });
+    const meta = topicTitleMap.get(topic);
+    const { data: sess } = await supabase.auth.getSession();
+    const accessToken = sess.session?.access_token ?? "";
+    const res = await regenerateUniqueQuestion({
+      data: {
+        accessToken,
+        topic,
+        topicTitle: meta?.title ?? topic,
+        categoryTitle: meta?.cat ?? "",
+        source: {
+          id,
+          type: source.type as string | undefined,
+          question: source.question as string | undefined,
+          template: source.template as string | undefined,
+          prompt: source.prompt as string | undefined,
+          options: source.options as string[] | undefined,
+          correctAnswer: source.correctAnswer as number | boolean | undefined,
+          correctAnswers: source.correctAnswers as number[] | undefined,
+          explanation: source.explanation as string | undefined,
+          image: source.image as string | undefined,
+          imageAlt: source.imageAlt as string | undefined,
+        },
+        existingBlobs,
+      },
+    });
+    if (res.error || !res.generated) return { ok: false, error: res.error ?? "unknown error" };
+    invalidateOverrides();
+    setDiffs((prev) => ({
+      ...prev,
+      [k]: { topic, id, before: source as AnyQ, after: res.generated as AnyQ, sim: res.similarityMax, needsReview: res.needsReview },
+    }));
+    return { ok: true, needsReview: res.needsReview };
+  };
+
+  // Core complete-regenerate for a single (topic, id).
+  const completeRegenerateOne = async (topic: string, id: string): Promise<{ ok: boolean; needsReview?: boolean; error?: string }> => {
+    const k = `${topic}::${id}`;
+    const meta = topicTitleMap.get(topic);
+    if (!meta) return { ok: false, error: "topic meta missing" };
+    const cat = categories.find((c) => c.slug === meta.catSlug);
+    if (!cat) return { ok: false, error: "category missing" };
+    const overrides = await loadOverrides();
+    const sourceFile = await loadTopicFileForAdmin(topic);
+    if (!sourceFile) return { ok: false, error: "topic file missing" };
+    const isV2Src = (sourceFile as { version?: number }).version === 2;
+    const sourceBank: AnyQ[] = isV2Src
+      ? ((sourceFile as { bank: AnyQ[] }).bank ?? [])
+      : ((sourceFile as { tests: { questions: AnyQ[] }[] }).tests ?? []).flatMap((t) => t.questions ?? []);
+    const sourceRaw = sourceBank.find((q) => String(q.id) === id);
+    if (!sourceRaw) return { ok: false, error: "source not found" };
+    const source = applyOverrideToQuestionRecord(sourceRaw, overrides.get(k));
+    const categoryBlobs: string[] = [];
+    for (const t of cat.topics) {
+      const f = await loadTopicFileForAdmin(t.slug);
+      if (!f) continue;
+      const isV2 = (f as { version?: number }).version === 2;
+      const bank: AnyQ[] = isV2
+        ? ((f as { bank: AnyQ[] }).bank ?? [])
+        : ((f as { tests: { questions: AnyQ[] }[] }).tests ?? []).flatMap((tt) => tt.questions ?? []);
+      for (const raw of bank) {
+        if (!raw.id) continue;
+        if (t.slug === topic && String(raw.id) === id) continue;
+        const q = applyOverrideToQuestionRecord(raw, overrides.get(`${t.slug}::${raw.id}`));
+        categoryBlobs.push(buildBlob(q as Parameters<typeof buildBlob>[0]));
+      }
+    }
+    const { data: sess } = await supabase.auth.getSession();
+    const accessToken = sess.session?.access_token ?? "";
+    const res = await completeRegenerateQuestion({
+      data: {
+        accessToken,
+        topic,
+        topicTitle: meta.title,
+        categoryTitle: meta.cat,
+        source: {
+          id,
+          type: source.type as string | undefined,
+          question: source.question as string | undefined,
+          template: source.template as string | undefined,
+          prompt: source.prompt as string | undefined,
+          options: source.options as string[] | undefined,
+          correctAnswer: source.correctAnswer as number | boolean | undefined,
+          correctAnswers: source.correctAnswers as number[] | undefined,
+          explanation: source.explanation as string | undefined,
+          image: source.image as string | undefined,
+          imageAlt: source.imageAlt as string | undefined,
+        },
+        categoryBlobs,
+      },
+    });
+    if (res.error || !res.generated) return { ok: false, error: res.error ?? "unknown error" };
+    invalidateOverrides();
+    setDiffs((prev) => ({
+      ...prev,
+      [k]: {
+        topic, id, before: source as AnyQ, after: res.generated as AnyQ, sim: res.similarityMax,
+        needsReview: res.needsReview, mode: "complete", concept: res.concept ?? undefined,
+      },
+    }));
+    return { ok: true, needsReview: res.needsReview };
+  };
+
   const regenerate = async (p: EnrichedPair, side: "a" | "b") => {
     const target = side === "a" ? p.a : p.b;
     const k = `${target.topic}::${target.id}`;
     setBusyKey(k);
     try {
-      const overrides = await loadOverrides();
-      const file = await loadTopicFileForAdmin(target.topic);
-      if (!file) {
-        setBusyKey(null);
-        return;
-      }
-      const isV2 = (file as { version?: number }).version === 2;
-      const rawBank: AnyQ[] = isV2
-        ? ((file as { bank: AnyQ[] }).bank ?? [])
-        : ((file as { tests: { questions: AnyQ[] }[] }).tests ?? []).flatMap((t) => t.questions ?? []);
-      const sourceRaw = rawBank.find((q) => String(q.id) === target.id);
-      if (!sourceRaw) {
-        setBusyKey(null);
-        return;
-      }
-      const source = applyOverrideToQuestionRecord(sourceRaw, overrides.get(k));
-      const existingBlobs = rawBank
-        .filter((q) => String(q.id) !== target.id)
-        .map((raw) => {
-          const q = applyOverrideToQuestionRecord(raw, overrides.get(`${target.topic}::${raw.id}`));
-          return buildBlob(q as Parameters<typeof buildBlob>[0]);
-        });
-
-      const meta = topicTitleMap.get(target.topic);
-      const { data: sess } = await supabase.auth.getSession();
-      const accessToken = sess.session?.access_token ?? "";
-
-      const res = await regenerateUniqueQuestion({
-        data: {
-          accessToken,
-          topic: target.topic,
-          topicTitle: meta?.title ?? target.topic,
-          categoryTitle: meta?.cat ?? "",
-          source: {
-            id: target.id,
-            type: source.type as string | undefined,
-            question: source.question as string | undefined,
-            template: source.template as string | undefined,
-            prompt: source.prompt as string | undefined,
-            options: source.options as string[] | undefined,
-            correctAnswer: source.correctAnswer as number | boolean | undefined,
-            correctAnswers: source.correctAnswers as number[] | undefined,
-            explanation: source.explanation as string | undefined,
-            image: source.image as string | undefined,
-            imageAlt: source.imageAlt as string | undefined,
-          },
-          existingBlobs,
-        },
-      });
-
-      if (res.error || !res.generated) {
-        setProgress(`Regeneration failed: ${res.error ?? "unknown error"}`);
-        setBusyKey(null);
-        return;
-      }
-
-      invalidateOverrides();
-      setDiffs((prev) => ({
-        ...prev,
-        [k]: {
-          topic: target.topic,
-          id: target.id,
-          before: source as AnyQ,
-          after: res.generated as AnyQ,
-          sim: res.similarityMax,
-          needsReview: res.needsReview,
-        },
-      }));
+      const r = await regenerateOne(target.topic, target.id);
+      if (!r.ok) setProgress(`Regeneration failed: ${r.error}`);
     } finally {
       setBusyKey(null);
     }
@@ -265,101 +323,9 @@ function SimilarPage() {
     const k = `${target.topic}::${target.id}`;
     setBusyKey(k);
     try {
-      const meta = topicTitleMap.get(target.topic);
-      if (!meta) {
-        setBusyKey(null);
-        return;
-      }
-      const cat = categories.find((c) => c.slug === meta.catSlug);
-      if (!cat) {
-        setBusyKey(null);
-        return;
-      }
-      setProgress(`Loading category "${meta.cat}" (${cat.topics.length} topic${cat.topics.length === 1 ? "" : "s"})…`);
-      const overrides = await loadOverrides();
-
-      // Load source from its topic
-      const sourceFile = await loadTopicFileForAdmin(target.topic);
-      if (!sourceFile) {
-        setBusyKey(null);
-        return;
-      }
-      const isV2Src = (sourceFile as { version?: number }).version === 2;
-      const sourceBank: AnyQ[] = isV2Src
-        ? ((sourceFile as { bank: AnyQ[] }).bank ?? [])
-        : ((sourceFile as { tests: { questions: AnyQ[] }[] }).tests ?? []).flatMap((t) => t.questions ?? []);
-      const sourceRaw = sourceBank.find((q) => String(q.id) === target.id);
-      if (!sourceRaw) {
-        setBusyKey(null);
-        return;
-      }
-      const source = applyOverrideToQuestionRecord(sourceRaw, overrides.get(k));
-
-      // Build category-wide blob list (excluding the target itself)
-      const categoryBlobs: string[] = [];
-      for (const t of cat.topics) {
-        const f = await loadTopicFileForAdmin(t.slug);
-        if (!f) continue;
-        const isV2 = (f as { version?: number }).version === 2;
-        const bank: AnyQ[] = isV2
-          ? ((f as { bank: AnyQ[] }).bank ?? [])
-          : ((f as { tests: { questions: AnyQ[] }[] }).tests ?? []).flatMap((tt) => tt.questions ?? []);
-        for (const raw of bank) {
-          if (!raw.id) continue;
-          if (t.slug === target.topic && String(raw.id) === target.id) continue;
-          const q = applyOverrideToQuestionRecord(raw, overrides.get(`${t.slug}::${raw.id}`));
-          categoryBlobs.push(buildBlob(q as Parameters<typeof buildBlob>[0]));
-        }
-      }
-      setProgress(`Generating fresh question (checking against ${categoryBlobs.length} questions in category)…`);
-
-      const { data: sess } = await supabase.auth.getSession();
-      const accessToken = sess.session?.access_token ?? "";
-
-      const res = await completeRegenerateQuestion({
-        data: {
-          accessToken,
-          topic: target.topic,
-          topicTitle: meta.title,
-          categoryTitle: meta.cat,
-          source: {
-            id: target.id,
-            type: source.type as string | undefined,
-            question: source.question as string | undefined,
-            template: source.template as string | undefined,
-            prompt: source.prompt as string | undefined,
-            options: source.options as string[] | undefined,
-            correctAnswer: source.correctAnswer as number | boolean | undefined,
-            correctAnswers: source.correctAnswers as number[] | undefined,
-            explanation: source.explanation as string | undefined,
-            image: source.image as string | undefined,
-            imageAlt: source.imageAlt as string | undefined,
-          },
-          categoryBlobs,
-        },
-      });
-
-      if (res.error || !res.generated) {
-        setProgress(`Complete regeneration failed: ${res.error ?? "unknown error"}`);
-        setBusyKey(null);
-        return;
-      }
-
-      invalidateOverrides();
-      setDiffs((prev) => ({
-        ...prev,
-        [k]: {
-          topic: target.topic,
-          id: target.id,
-          before: source as AnyQ,
-          after: res.generated as AnyQ,
-          sim: res.similarityMax,
-          needsReview: res.needsReview,
-          mode: "complete",
-          concept: res.concept ?? undefined,
-        },
-      }));
-      setProgress(`Fresh question created (similarity ${(res.similarityMax * 100).toFixed(0)}% across category).`);
+      const r = await completeRegenerateOne(target.topic, target.id);
+      if (!r.ok) setProgress(`Complete regeneration failed: ${r.error}`);
+      else setProgress(`Fresh question created.`);
     } finally {
       setBusyKey(null);
     }
@@ -450,6 +416,89 @@ function SimilarPage() {
       return sb - sa;
     });
   }, [visiblePairs, dupInfo]);
+
+  // Keeper = least connected member (lowest dup count, lex tie-break).
+  const pickKeeper = (members: Set<string>): string => {
+    const arr = Array.from(members);
+    arr.sort((a, b) => {
+      const ca = dupInfo.count.get(a) ?? 0;
+      const cb = dupInfo.count.get(b) ?? 0;
+      if (ca !== cb) return ca - cb;
+      return a < b ? -1 : 1;
+    });
+    return arr[0];
+  };
+
+  const runBulk = async (
+    targets: Array<{ topic: string; id: string }>,
+    mode: "rewrite" | "complete",
+    label: string,
+  ) => {
+    setBulkRunning(true);
+    bulkCancelRef.current = false;
+    let ok = 0;
+    let needsReview = 0;
+    let failed = 0;
+    for (let i = 0; i < targets.length; i++) {
+      if (bulkCancelRef.current) {
+        setBulkProgress(`Cancelled at ${i}/${targets.length}. ${ok} ok, ${needsReview} need review, ${failed} failed.`);
+        setBulkRunning(false);
+        return;
+      }
+      const t = targets[i];
+      setBulkProgress(`${label}: ${i + 1}/${targets.length} (${t.topic}/${t.id})…`);
+      try {
+        const r = mode === "rewrite"
+          ? await regenerateOne(t.topic, t.id)
+          : await completeRegenerateOne(t.topic, t.id);
+        if (r.ok) {
+          ok++;
+          if (r.needsReview) needsReview++;
+        } else {
+          failed++;
+        }
+      } catch {
+        failed++;
+      }
+    }
+    setBulkProgress(`Done — ${ok} succeeded${needsReview ? ` (${needsReview} need review)` : ""}${failed ? `, ${failed} failed` : ""}.`);
+    setBulkRunning(false);
+  };
+
+  const bulkAllTargets = (): Array<{ topic: string; id: string }> => {
+    const out: Array<{ topic: string; id: string }> = [];
+    for (const cluster of clusters) {
+      const keeper = pickKeeper(cluster.members);
+      for (const m of cluster.members) {
+        if (m === keeper) continue;
+        const [topic, id] = m.split("::");
+        out.push({ topic, id });
+      }
+    }
+    return out;
+  };
+
+  const clusterTargets = (cluster: { members: Set<string> }): Array<{ topic: string; id: string }> => {
+    const keeper = pickKeeper(cluster.members);
+    const out: Array<{ topic: string; id: string }> = [];
+    for (const m of cluster.members) {
+      if (m === keeper) continue;
+      const [topic, id] = m.split("::");
+      out.push({ topic, id });
+    }
+    return out;
+  };
+
+  const totalBulkCount = clusters.reduce((s, c) => s + Math.max(0, c.members.size - 1), 0);
+
+  const confirmAndRunAll = (mode: "rewrite" | "complete") => {
+    const targets = bulkAllTargets();
+    if (targets.length === 0) return;
+    const label = mode === "rewrite" ? "Fix all (unique)" : "Fix all (complete)";
+    const mins = Math.ceil((targets.length * 15) / 60);
+    if (!window.confirm(`${label}: regenerate ${targets.length} questions across ${clusters.length} cluster${clusters.length === 1 ? "" : "s"} (one keeper preserved per cluster). Estimated ~${mins} min. Continue?`)) return;
+    void runBulk(targets, mode, label);
+  };
 
   return (
     <main className="mx-auto max-w-6xl px-4 py-8">
@@ -574,6 +623,27 @@ function SimilarPage() {
         </div>
       )}
 
+      {scanned && clusters.length > 0 && (
+        <div className="mt-3 flex flex-wrap items-center gap-2 rounded-md border border-border bg-card p-3">
+          <span className="text-xs font-semibold">Bulk fix all clusters:</span>
+          <Button size="sm" disabled={bulkRunning || totalBulkCount === 0} onClick={() => confirmAndRunAll("rewrite")}>
+            Fix all (unique) — {totalBulkCount}
+          </Button>
+          <Button size="sm" variant="secondary" disabled={bulkRunning || totalBulkCount === 0} onClick={() => confirmAndRunAll("complete")}>
+            Fix all (complete) — {totalBulkCount}
+          </Button>
+          {bulkRunning && (
+            <Button size="sm" variant="outline" onClick={() => (bulkCancelRef.current = true)}>
+              Cancel
+            </Button>
+          )}
+          {bulkProgress && <span className="text-xs text-muted-foreground">{bulkProgress}</span>}
+          <span className="ml-auto text-xs text-muted-foreground">
+            One keeper preserved per cluster · sequential to respect rate limits
+          </span>
+        </div>
+      )}
+
       {scanned && view === "pairs" && (
         <div className="mt-4 space-y-3">
           {sortedPairs.map((p) => {
@@ -647,6 +717,8 @@ function SimilarPage() {
                 : cluster.members.size === 3
                 ? "border-amber-500/60"
                 : "border-border";
+            const keeper = pickKeeper(cluster.members);
+            const targets = clusterTargets(cluster);
             return (
               <div key={ci} className={`rounded-md border-2 bg-card p-3 ${sevClass}`}>
                 <div className="flex flex-wrap items-center gap-2 text-xs">
@@ -656,6 +728,23 @@ function SimilarPage() {
                   <span className="text-muted-foreground">
                     {cluster.pairs.length} pair{cluster.pairs.length === 1 ? "" : "s"}
                   </span>
+                  <div className="ml-auto flex flex-wrap items-center gap-2">
+                    <Button
+                      size="sm"
+                      disabled={bulkRunning || targets.length === 0}
+                      onClick={() => void runBulk(targets, "rewrite", `Cluster ${ci + 1} (unique)`)}
+                    >
+                      Regenerate cluster ({targets.length}) as unique
+                    </Button>
+                    <Button
+                      size="sm"
+                      variant="secondary"
+                      disabled={bulkRunning || targets.length === 0}
+                      onClick={() => void runBulk(targets, "complete", `Cluster ${ci + 1} (complete)`)}
+                    >
+                      Complete-regenerate cluster ({targets.length})
+                    </Button>
+                  </div>
                 </div>
                 <ul className="mt-2 space-y-2">
                   {memberKeys.map((mk) => {
@@ -668,9 +757,11 @@ function SimilarPage() {
                       sample;
                     const dupCount = dupInfo.count.get(mk) ?? 0;
                     const diff = diffs[mk];
+                    const isKeeper = mk === keeper;
                     return (
-                      <li key={mk} className="rounded border border-border bg-background/50 p-2">
+                      <li key={mk} className={`rounded border bg-background/50 p-2 ${isKeeper ? "border-success/60" : "border-border"}`}>
                         <div className="flex flex-wrap items-center gap-2 text-xs text-muted-foreground">
+                          {isKeeper && <Badge variant="outline" className="border-success text-success">keeper</Badge>}
                           <Badge variant={dupCount >= 3 ? "destructive" : dupCount === 2 ? "secondary" : "outline"}>
                             {dupCount} duplicate{dupCount === 1 ? "" : "s"}
                           </Badge>
@@ -694,7 +785,7 @@ function SimilarPage() {
                   })}
                 </ul>
                 <p className="mt-2 text-xs text-muted-foreground">
-                  Switch to Pairs view to regenerate or mark individual pairs as not duplicate.
+                  Keeper is preserved; the other {targets.length} will be regenerated. Switch to Pairs view for individual control.
                 </p>
               </div>
             );
