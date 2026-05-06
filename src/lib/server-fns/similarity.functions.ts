@@ -109,7 +109,7 @@ export const aiVerdictPairs = createServerFn({ method: "POST" })
       const argsStr = json.choices?.[0]?.message?.tool_calls?.[0]?.function?.arguments;
       if (!argsStr) return { verdicts: [], error: "No tool call in response" };
       try {
-        const parsed = JSON.parse(argsStr) as { verdicts: typeof aiVerdictPairs._returnType.verdicts };
+        const parsed = JSON.parse(argsStr) as { verdicts: Verdict[] };
         return { verdicts: parsed.verdicts ?? [], error: null };
       } catch (e) {
         return { verdicts: [], error: `Parse error: ${(e as Error).message}` };
