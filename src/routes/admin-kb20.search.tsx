@@ -3,8 +3,14 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { AdminGate } from "@/components/AdminGate";
 import { categories } from "@/data/categories";
 import { loadTopicFileForAdmin } from "@/data/mocks";
-import { applyOverrideToQuestionRecord, loadOverrides } from "@/lib/overrides";
+import { applyOverrideToQuestionRecord, invalidateOverrides, loadOverrides } from "@/lib/overrides";
 import { Badge } from "@/components/ui/badge";
+import { supabase } from "@/integrations/supabase/client";
+import { buildBlob } from "@/lib/admin/similarity";
+import {
+  completeRegenerateQuestion,
+  regenerateUniqueQuestion,
+} from "@/lib/server-fns/similarity.functions";
 
 export const Route = createFileRoute("/admin-kb20/search")({
   head: () => ({
@@ -30,6 +36,14 @@ type Hit = {
   explanation?: string;
   matchedIn: string[];
 };
+type RegenResult = {
+  before: AnyQ;
+  after: AnyQ;
+  sim: number;
+  needsReview: boolean;
+  mode: "rewrite" | "complete";
+  concept?: string;
+};
 
 function textOf(q: AnyQ): string {
   return (
@@ -51,14 +65,25 @@ function SearchPage() {
   const [hits, setHits] = useState<Hit[]>([]);
   const [openIds, setOpenIds] = useState<Set<string>>(new Set());
   const [searched, setSearched] = useState(false);
+  const [busyKey, setBusyKey] = useState<string | null>(null);
+  const [regenErr, setRegenErr] = useState<Record<string, string>>({});
+  const [regenResults, setRegenResults] = useState<Record<string, RegenResult>>({});
+  const [bulkRunning, setBulkRunning] = useState(false);
+  const [bulkProgress, setBulkProgress] = useState("");
 
   const topicsForCategory = useMemo(() => {
     if (categorySlug === "__all__") {
-      return categories.flatMap((c) => c.topics.map((t) => ({ ...t, cat: c.title })));
+      return categories.flatMap((c) => c.topics.map((t) => ({ ...t, cat: c.title, catSlug: c.slug })));
     }
     const cat = categories.find((c) => c.slug === categorySlug);
-    return cat ? cat.topics.map((t) => ({ ...t, cat: cat.title })) : [];
+    return cat ? cat.topics.map((t) => ({ ...t, cat: cat.title, catSlug: cat.slug })) : [];
   }, [categorySlug]);
+
+  const topicMeta = useMemo(() => {
+    const m = new Map<string, { title: string; cat: string; catSlug: string }>();
+    for (const c of categories) for (const t of c.topics) m.set(t.slug, { title: t.title, cat: c.title, catSlug: c.slug });
+    return m;
+  }, []);
 
   const targetTopics = useMemo(() => {
     if (topicSlug !== "__all__") return [topicSlug];
@@ -82,6 +107,8 @@ function SearchPage() {
     setProgress(0);
     setSearched(true);
     setOpenIds(new Set());
+    setRegenResults({});
+    setRegenErr({});
 
     const escaped = q.replace(/[.*+?^${}()|[\]\\]/g, "\\$1");
     const pattern = wholeWord ? `\\b${escaped}\\b` : escaped;
@@ -137,6 +164,143 @@ function SearchPage() {
     setRunning(false);
   };
 
+  // Regenerate a single hit. mode "rewrite" = topic-only reword; "complete" = brand-new question on a fresh sub-topic.
+  const regenerateHit = async (hit: Hit, mode: "rewrite" | "complete"): Promise<{ ok: boolean; error?: string }> => {
+    const meta = topicMeta.get(hit.topic);
+    if (!meta) return { ok: false, error: "topic meta missing" };
+    const overrides = await loadOverrides();
+    const file = await loadTopicFileForAdmin(hit.topic);
+    if (!file) return { ok: false, error: "topic file missing" };
+    const isV2 = (file as { version?: number }).version === 2;
+    const rawBank: AnyQ[] = isV2
+      ? ((file as { bank: AnyQ[] }).bank ?? [])
+      : ((file as { tests: { questions: AnyQ[] }[] }).tests ?? []).flatMap((t) => t.questions ?? []);
+    const sourceRaw = rawBank.find((q) => String(q.id) === hit.id);
+    if (!sourceRaw) return { ok: false, error: "source not found" };
+    const source = applyOverrideToQuestionRecord(sourceRaw, overrides.get(`${hit.topic}::${hit.id}`));
+
+    const { data: sess } = await supabase.auth.getSession();
+    const accessToken = sess.session?.access_token ?? "";
+
+    const sourcePayload = {
+      id: hit.id,
+      type: source.type as string | undefined,
+      question: source.question as string | undefined,
+      template: source.template as string | undefined,
+      prompt: source.prompt as string | undefined,
+      options: source.options as string[] | undefined,
+      correctAnswer: source.correctAnswer as number | boolean | undefined,
+      correctAnswers: source.correctAnswers as number[] | undefined,
+      explanation: source.explanation as string | undefined,
+      image: source.image as string | undefined,
+      imageAlt: source.imageAlt as string | undefined,
+    };
+
+    if (mode === "rewrite") {
+      const existingBlobs = rawBank
+        .filter((q) => String(q.id) !== hit.id)
+        .map((raw) => {
+          const q = applyOverrideToQuestionRecord(raw, overrides.get(`${hit.topic}::${raw.id}`));
+          return buildBlob(q as Parameters<typeof buildBlob>[0]);
+        });
+      const res = await regenerateUniqueQuestion({
+        data: {
+          accessToken,
+          topic: hit.topic,
+          topicTitle: meta.title,
+          categoryTitle: meta.cat,
+          source: sourcePayload,
+          existingBlobs,
+        },
+      });
+      if (res.error || !res.generated) return { ok: false, error: res.error ?? "unknown error" };
+      invalidateOverrides();
+      setRegenResults((prev) => ({
+        ...prev,
+        [`${hit.topic}::${hit.id}`]: {
+          before: source as AnyQ,
+          after: res.generated as AnyQ,
+          sim: res.similarityMax,
+          needsReview: res.needsReview,
+          mode: "rewrite",
+        },
+      }));
+      return { ok: true };
+    }
+
+    // complete: build category-wide blobs
+    const cat = categories.find((c) => c.slug === meta.catSlug);
+    if (!cat) return { ok: false, error: "category missing" };
+    const categoryBlobs: string[] = [];
+    for (const t of cat.topics) {
+      const f = await loadTopicFileForAdmin(t.slug);
+      if (!f) continue;
+      const v2 = (f as { version?: number }).version === 2;
+      const bank: AnyQ[] = v2
+        ? ((f as { bank: AnyQ[] }).bank ?? [])
+        : ((f as { tests: { questions: AnyQ[] }[] }).tests ?? []).flatMap((tt) => tt.questions ?? []);
+      for (const raw of bank) {
+        if (!raw.id) continue;
+        if (t.slug === hit.topic && String(raw.id) === hit.id) continue;
+        const q = applyOverrideToQuestionRecord(raw, overrides.get(`${t.slug}::${raw.id}`));
+        categoryBlobs.push(buildBlob(q as Parameters<typeof buildBlob>[0]));
+      }
+    }
+    const res = await completeRegenerateQuestion({
+      data: {
+        accessToken,
+        topic: hit.topic,
+        topicTitle: meta.title,
+        category: meta.catSlug,
+        categoryTitle: meta.cat,
+        source: sourcePayload,
+        categoryBlobs,
+      },
+    });
+    if (res.error || !res.generated) return { ok: false, error: res.error ?? "unknown error" };
+    invalidateOverrides();
+    setRegenResults((prev) => ({
+      ...prev,
+      [`${hit.topic}::${hit.id}`]: {
+        before: source as AnyQ,
+        after: res.generated as AnyQ,
+        sim: res.similarityMax,
+        needsReview: res.needsReview,
+        mode: "complete",
+        concept: res.concept ?? undefined,
+      },
+    }));
+    return { ok: true };
+  };
+
+  const onRegen = async (hit: Hit, mode: "rewrite" | "complete") => {
+    const k = `${hit.topic}::${hit.id}`;
+    setBusyKey(k);
+    setRegenErr((prev) => ({ ...prev, [k]: "" }));
+    setOpenIds((prev) => new Set(prev).add(k));
+    const r = await regenerateHit(hit, mode);
+    if (!r.ok) setRegenErr((prev) => ({ ...prev, [k]: r.error ?? "failed" }));
+    setBusyKey(null);
+  };
+
+  const onBulk = async (mode: "rewrite" | "complete") => {
+    if (!hits.length) return;
+    if (!confirm(`Regenerate ${hits.length} matched question(s) using "${mode === "rewrite" ? "Reword" : "Complete regenerate"}"? This rewrites them via AI.`)) return;
+    setBulkRunning(true);
+    let i = 0;
+    for (const h of hits) {
+      i++;
+      setBulkProgress(`${i}/${hits.length} — ${h.topic} ${h.id}`);
+      const k = `${h.topic}::${h.id}`;
+      setBusyKey(k);
+      const r = await regenerateHit(h, mode);
+      if (!r.ok) setRegenErr((prev) => ({ ...prev, [k]: r.error ?? "failed" }));
+    }
+    setBusyKey(null);
+    setBulkRunning(false);
+    setBulkProgress("");
+  };
+
   const highlight = (text: string): React.ReactNode => {
     const q = query.trim();
     if (!q) return text;
@@ -169,7 +333,9 @@ function SearchPage() {
       <h1 className="mt-2 font-display text-2xl font-bold">Search Questions</h1>
       <p className="mt-1 text-sm text-muted-foreground">
         Find every question containing a word or phrase. Scope it to a category and/or topic, then
-        click any result to reveal the answer choices and the correct answer.
+        click any result to reveal the answer choices and the correct answer. Use the per-result
+        Reword / Regenerate buttons to fix questions where the keyword is off-topic (e.g. driving
+        scenarios in non-driving topics).
       </p>
 
       <div className="mt-4 grid gap-3 rounded-xl border border-border bg-card p-4 sm:grid-cols-2">
@@ -247,19 +413,49 @@ function SearchPage() {
       </div>
 
       {searched && !running && (
-        <p className="mt-4 text-sm text-muted-foreground">
-          {hits.length === 0
-            ? "No matches."
-            : `${hits.length} match${hits.length === 1 ? "" : "es"} across ${
-                new Set(hits.map((h) => h.topic)).size
-              } topic(s).`}
-        </p>
+        <div className="mt-4 flex flex-wrap items-center gap-3">
+          <p className="text-sm text-muted-foreground">
+            {hits.length === 0
+              ? "No matches."
+              : `${hits.length} match${hits.length === 1 ? "" : "es"} across ${
+                  new Set(hits.map((h) => h.topic)).size
+                } topic(s).`}
+          </p>
+          {hits.length > 0 && (
+            <div className="ml-auto flex flex-wrap items-center gap-2">
+              {bulkRunning && (
+                <span className="text-xs text-muted-foreground">{bulkProgress}</span>
+              )}
+              <button
+                type="button"
+                onClick={() => void onBulk("rewrite")}
+                disabled={bulkRunning}
+                className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold hover:bg-muted disabled:opacity-50"
+                title="Rewrite each matched question, keeping it on the same topic"
+              >
+                Reword all ({hits.length})
+              </button>
+              <button
+                type="button"
+                onClick={() => void onBulk("complete")}
+                disabled={bulkRunning}
+                className="rounded-xl bg-gradient-coral px-3 py-1.5 text-xs font-semibold text-coral-foreground disabled:opacity-50"
+                title="Replace each matched question with a brand-new question on the topic"
+              >
+                Regenerate all ({hits.length})
+              </button>
+            </div>
+          )}
+        </div>
       )}
 
       <div className="mt-4 space-y-2">
         {hits.map((h) => {
           const key = `${h.topic}::${h.id}`;
           const open = openIds.has(key);
+          const result = regenResults[key];
+          const err = regenErr[key];
+          const busy = busyKey === key;
           return (
             <div key={key} className="rounded-md border border-border bg-card">
               <button
@@ -278,8 +474,26 @@ function SearchPage() {
               </button>
               {open && (
                 <div className="space-y-2 border-t border-border px-3 py-3 text-sm">
-                  <div className="flex items-center gap-2">
+                  <div className="flex flex-wrap items-center gap-2">
                     <span className="font-mono text-[11px] text-muted-foreground">{h.id}</span>
+                    <button
+                      type="button"
+                      onClick={() => void onRegen(h, "rewrite")}
+                      disabled={busy || bulkRunning}
+                      className="rounded-md border border-border bg-card px-2 py-1 text-xs font-semibold hover:bg-muted disabled:opacity-50"
+                      title="Rewrite this question, keeping it on the same topic"
+                    >
+                      {busy && result?.mode !== "complete" ? "Rewording…" : "Reword"}
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => void onRegen(h, "complete")}
+                      disabled={busy || bulkRunning}
+                      className="rounded-xl bg-gradient-coral px-2 py-1 text-xs font-semibold text-coral-foreground disabled:opacity-50"
+                      title="Replace with a brand-new question on this topic"
+                    >
+                      {busy && !result ? "Regenerating…" : "Regenerate"}
+                    </button>
                     <Link
                       to="/admin-kb20/questions/$topic"
                       params={{ topic: h.topic }}
@@ -289,6 +503,7 @@ function SearchPage() {
                       Open in editor →
                     </Link>
                   </div>
+                  {err && <p className="text-xs text-destructive">Error: {err}</p>}
                   {h.options.length > 0 && (
                     <ol className="list-decimal space-y-1 pl-5">
                       {h.options.map((opt, i) => (
@@ -317,6 +532,52 @@ function SearchPage() {
                     <div className="rounded bg-muted/50 p-2 text-xs">
                       <span className="font-semibold">Explanation: </span>
                       {highlight(h.explanation)}
+                    </div>
+                  )}
+                  {result && (
+                    <div className="mt-2 rounded-md border border-success/40 bg-success/5 p-3 text-xs">
+                      <div className="flex flex-wrap items-center gap-2">
+                        <Badge variant="default">
+                          {result.mode === "complete" ? "New question" : "Reworded"}
+                        </Badge>
+                        {result.concept && (
+                          <span className="text-muted-foreground">concept: {result.concept}</span>
+                        )}
+                        <span className="ml-auto text-muted-foreground">
+                          similarity to source: {result.sim.toFixed(2)}
+                          {result.needsReview && " — needs review"}
+                        </span>
+                      </div>
+                      <p className="mt-2 font-semibold">
+                        {String(result.after.question ?? result.after.template ?? result.after.prompt ?? "")}
+                      </p>
+                      {Array.isArray(result.after.options) && (
+                        <ol className="mt-1 list-decimal space-y-0.5 pl-5">
+                          {(result.after.options as string[]).map((opt, i) => {
+                            const ca = result.after.correctAnswer;
+                            const cas = result.after.correctAnswers as number[] | undefined;
+                            const correct =
+                              (typeof ca === "number" && ca === i) ||
+                              (Array.isArray(cas) && cas.includes(i));
+                            return (
+                              <li key={i} className={correct ? "font-semibold text-success" : ""}>
+                                {opt}
+                                {correct && <span className="ml-1 text-[10px] uppercase">✓</span>}
+                              </li>
+                            );
+                          })}
+                        </ol>
+                      )}
+                      {typeof result.after.correctAnswer === "boolean" && (
+                        <p className="mt-1">
+                          Correct: <strong>{result.after.correctAnswer ? "True" : "False"}</strong>
+                        </p>
+                      )}
+                      {result.after.explanation ? (
+                        <p className="mt-1 text-muted-foreground">
+                          {String(result.after.explanation)}
+                        </p>
+                      ) : null}
                     </div>
                   )}
                 </div>
