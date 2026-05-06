@@ -181,6 +181,7 @@ function QuestionsBrowser() {
   const [search, setSearch] = useState(initialSearch);
   const [type, setType] = useState<string>("all");
   const [imageFilter, setImageFilter] = useState<"all" | "with" | "without">("all");
+  const [usageFilter, setUsageFilter] = useState<"all" | "used" | "unused">("all");
   const [page, setPage] = useState(1);
   const [editing, setEditing] = useState<FlatQuestion | null>(null);
   const scrollRestoreRef = useRef<number | null>(null);
@@ -241,6 +242,8 @@ function QuestionsBrowser() {
       if (type !== "all" && q.type !== type) return false;
       if (imageFilter === "with" && !q.image) return false;
       if (imageFilter === "without" && q.image) return false;
+      if (usageFilter === "used" && q.usedInMocks.length === 0) return false;
+      if (usageFilter === "unused" && q.usedInMocks.length > 0) return false;
       if (
         s &&
         !q.question.toLowerCase().includes(s) &&
@@ -250,7 +253,7 @@ function QuestionsBrowser() {
         return false;
       return true;
     });
-  }, [effectiveQuestions, search, type, imageFilter]);
+  }, [effectiveQuestions, search, type, imageFilter, usageFilter]);
 
   const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
   const pageSafe = Math.min(page, totalPages);
@@ -505,6 +508,18 @@ function QuestionsBrowser() {
             <option value="all">All</option>
             <option value="with">With image</option>
             <option value="without">Text only</option>
+          </select>
+          <select
+            value={usageFilter}
+            onChange={(e) => {
+              setUsageFilter(e.target.value as "all" | "used" | "unused");
+              setPage(1);
+            }}
+            className="h-9 rounded-md border border-input bg-background px-2 text-sm"
+          >
+            <option value="all">All usage</option>
+            <option value="used">Used in mocks</option>
+            <option value="unused">Unused in mocks</option>
           </select>
           <span className="ml-auto text-xs text-muted-foreground">
             {filtered.length} matching
