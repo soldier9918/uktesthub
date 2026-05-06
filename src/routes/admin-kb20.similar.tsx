@@ -903,6 +903,8 @@ function PairSide({
   onCompleteRegenerate,
   onRevert,
   qType,
+  bulkRunning,
+  onRegenerateDuplicates,
 }: {
   side: "A" | "B";
   topic: string;
@@ -916,6 +918,8 @@ function PairSide({
   onCompleteRegenerate: () => void;
   onRevert: () => void;
   qType?: string;
+  bulkRunning?: boolean;
+  onRegenerateDuplicates?: (mode: "rewrite" | "complete") => void;
 }) {
   const [showPartners, setShowPartners] = useState(false);
   return (
@@ -952,6 +956,28 @@ function PairSide({
         <Button size="sm" variant="secondary" onClick={onCompleteRegenerate} disabled={busy} title="Generate a brand-new question and check uniqueness across the whole category">
           {busy ? "Working…" : "Complete Regeneration"}
         </Button>
+        {dupCount >= 2 && onRegenerateDuplicates && (
+          <>
+            <Button
+              size="sm"
+              variant="outline"
+              disabled={bulkRunning}
+              onClick={() => onRegenerateDuplicates("rewrite")}
+              title="Keep this question; regenerate all its duplicates as unique"
+            >
+              Fix {dupCount} duplicates (unique)
+            </Button>
+            <Button
+              size="sm"
+              variant="outline"
+              disabled={bulkRunning}
+              onClick={() => onRegenerateDuplicates("complete")}
+              title="Keep this question; complete-regenerate all its duplicates"
+            >
+              Fix {dupCount} (complete)
+            </Button>
+          </>
+        )}
         {diff && (
           <Button size="sm" variant="outline" onClick={onRevert}>
             Revert
