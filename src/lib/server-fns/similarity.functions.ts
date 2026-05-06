@@ -455,30 +455,7 @@ export const completeRegenerateQuestion = createServerFn({ method: "POST" })
       const { trigrams, jaccard } = await import("@/lib/admin/similarity");
       const categoryTri = data.categoryBlobs.map((b) => trigrams(b));
 
-      // ---- Step A: extract concept label ----
-      let concept = "";
-      try {
-        const conceptResp = await fetch(AI_URL, {
-          method: "POST",
-          headers: { Authorization: `Bearer ${apiKey}`, "Content-Type": "application/json" },
-          body: JSON.stringify({
-            model: "google/gemini-2.5-flash",
-            messages: [
-              { role: "system", content: "Extract the underlying concept being tested in a single 3-8 word label. Return ONLY the label, no punctuation, no quotes." },
-              { role: "user", content: `${source.question ?? source.template ?? source.prompt ?? ""}\n\nCorrect answer context: ${source.explanation ?? ""}` },
-            ],
-          }),
-        });
-        if (conceptResp.ok) {
-          const cj = (await conceptResp.json()) as { choices?: Array<{ message?: { content?: string } }> };
-          concept = (cj.choices?.[0]?.message?.content ?? "").trim().replace(/^["']|["']$/g, "").slice(0, 120);
-        }
-      } catch {
-        // non-fatal; carry on with empty concept
-      }
-      if (!concept) concept = `${data.topicTitle} concept`;
-
-      // ---- Build avoid-list: 15 most lexically-similar existing stems ----
+      // ---- Build avoid-list from WHOLE category (top 20 most similar stems) ----
       const sourceBlob =
         (source.question ?? source.template ?? source.prompt ?? "") +
         " | " +
@@ -489,11 +466,44 @@ export const completeRegenerateQuestion = createServerFn({ method: "POST" })
       const ranked = data.categoryBlobs
         .map((b, i) => ({ b, score: jaccard(sourceTri, categoryTri[i]) }))
         .sort((a, b) => b.score - a.score)
-        .slice(0, 15)
+        .slice(0, 20)
         .map((x) => x.b.slice(0, 220));
       const avoidList = ranked.length
         ? ranked.map((s, i) => `${i + 1}. ${s}`).join("\n")
         : "(no similar questions in bank yet)";
+
+      // ---- Step A: pick a DIFFERENT concept within the topic ----
+      // We deliberately do NOT extract the source question's concept. Instead
+      // we ask the model to propose a fresh sub-topic that still belongs to
+      // the topic but is NOT already covered by existing questions.
+      let concept = "";
+      try {
+        const conceptResp = await fetch(AI_URL, {
+          method: "POST",
+          headers: { Authorization: `Bearer ${apiKey}`, "Content-Type": "application/json" },
+          body: JSON.stringify({
+            model: "google/gemini-2.5-flash",
+            messages: [
+              {
+                role: "system",
+                content:
+                  "You propose UK exam question sub-topics. Return ONLY a 3-8 word concept label (no punctuation, no quotes). The concept MUST be different from every already-covered sub-topic listed, but still belong to the given topic.",
+              },
+              {
+                role: "user",
+                content: `Topic: ${data.topicTitle}\nCategory: ${data.categoryTitle}\n\nAlready-covered questions (pick a DIFFERENT sub-topic from these):\n${avoidList}\n\nReturn one fresh concept label.`,
+              },
+            ],
+          }),
+        });
+        if (conceptResp.ok) {
+          const cj = (await conceptResp.json()) as { choices?: Array<{ message?: { content?: string } }> };
+          concept = (cj.choices?.[0]?.message?.content ?? "").trim().replace(/^["']|["']$/g, "").slice(0, 120);
+        }
+      } catch {
+        // non-fatal
+      }
+      if (!concept) concept = `${data.topicTitle} — fresh angle`;
 
       // ---- Step B: generate fresh question ----
       const tool = {
