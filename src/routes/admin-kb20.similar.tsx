@@ -76,7 +76,7 @@ function SimilarPage() {
   const [pairs, setPairs] = useState<EnrichedPair[]>([]);
   const [scanned, setScanned] = useState(false);
   const [busyKey, setBusyKey] = useState<string | null>(null);
-  const [diffs, setDiffs] = useState<Record<string, { topic: string; id: string; before: AnyQ; after: AnyQ; sim: number; needsReview: boolean }>>({});
+  const [diffs, setDiffs] = useState<Record<string, { topic: string; id: string; before: AnyQ; after: AnyQ; sim: number; needsReview: boolean; mode?: "rewrite" | "complete"; concept?: string }>>({});
   const cancelRef = useRef(false);
 
   const topicsForCategory = useMemo(() => {
