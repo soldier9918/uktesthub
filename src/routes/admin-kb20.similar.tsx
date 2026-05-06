@@ -866,6 +866,7 @@ function PairSide({
   onRegenerate,
   onCompleteRegenerate,
   onRevert,
+  qType,
 }: {
   side: "A" | "B";
   topic: string;
@@ -878,12 +879,14 @@ function PairSide({
   onRegenerate: () => void;
   onCompleteRegenerate: () => void;
   onRevert: () => void;
+  qType?: string;
 }) {
   const [showPartners, setShowPartners] = useState(false);
   return (
     <div className="rounded border border-border bg-background/50 p-2">
       <div className="flex flex-wrap items-center gap-2 text-xs text-muted-foreground">
         <Badge variant="outline">{side}</Badge>
+        {qType && <Badge variant="outline" className="text-[10px]">{qType}</Badge>}
         {dupCount >= 2 && (
           <button
             type="button"
