@@ -511,6 +511,32 @@ function QuestionsBrowser() {
           </span>
         </div>
 
+        <div className="mt-3 flex flex-wrap items-center gap-2 rounded-lg border border-dashed border-border bg-muted/20 p-3">
+          <span className="text-xs font-semibold uppercase text-muted-foreground">Bulk export / import</span>
+          <Button size="sm" variant="outline" onClick={() => exportData("csv")} disabled={filtered.length === 0}>
+            Export CSV ({filtered.length})
+          </Button>
+          <Button size="sm" variant="outline" onClick={() => exportData("json")} disabled={filtered.length === 0}>
+            Export JSON ({filtered.length})
+          </Button>
+          <input
+            ref={fileInputRef}
+            type="file"
+            accept=".csv,.json,application/json,text/csv"
+            className="hidden"
+            onChange={handleImportFile}
+          />
+          <Button size="sm" onClick={() => fileInputRef.current?.click()} disabled={importing}>
+            {importing ? "Importing…" : "Import CSV / JSON"}
+          </Button>
+          <span className="text-xs text-muted-foreground">
+            Edit the exported file and re-upload — matching IDs are saved as overrides.
+          </span>
+          {importMsg && (
+            <span className="basis-full text-xs font-medium">{importMsg}</span>
+          )}
+        </div>
+
         <ol className="mt-4 space-y-3">
           {visible.map((q: FlatQuestion, idx: number) => (
             <li
