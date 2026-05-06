@@ -538,74 +538,169 @@ function SimilarPage() {
       )}
 
       {scanned && visiblePairs.length > 0 && (
-        <div className="mt-6 flex items-center gap-2">
+        <div className="mt-6 flex flex-wrap items-center gap-2">
           <Badge variant="secondary" className="text-sm">
             {visiblePairs.length} similar pair{visiblePairs.length === 1 ? "" : "s"} remaining
           </Badge>
+          <Badge variant="outline" className="text-xs">
+            {uniqueQuestions} unique question{uniqueQuestions === 1 ? "" : "s"}
+          </Badge>
+          {bigClusters > 0 && (
+            <Badge variant="destructive" className="text-xs">
+              {bigClusters} cluster{bigClusters === 1 ? "" : "s"} with 3+ duplicates
+            </Badge>
+          )}
           {pairs.length !== visiblePairs.length && (
             <span className="text-xs text-muted-foreground">
               ({pairs.length - visiblePairs.length} marked not duplicate)
             </span>
           )}
+          <div className="ml-auto flex items-center gap-1 rounded-md border border-border p-0.5">
+            <button
+              type="button"
+              onClick={() => setView("pairs")}
+              className={`rounded px-2 py-1 text-xs ${view === "pairs" ? "bg-primary text-primary-foreground" : "text-muted-foreground"}`}
+            >
+              Pairs
+            </button>
+            <button
+              type="button"
+              onClick={() => setView("clusters")}
+              className={`rounded px-2 py-1 text-xs ${view === "clusters" ? "bg-primary text-primary-foreground" : "text-muted-foreground"}`}
+            >
+              Clusters ({clusters.length})
+            </button>
+          </div>
         </div>
       )}
 
-      <div className="mt-4 space-y-3">
-        {visiblePairs.map((p) => {
-          const k = pairKey(p);
-          const diffA = diffs[`${p.a.topic}::${p.a.id}`];
-          const diffB = diffs[`${p.b.topic}::${p.b.id}`];
-          const verdictColor =
-            p.verdict === "duplicate"
-              ? "bg-destructive/15 text-destructive"
-              : p.verdict === "near-duplicate"
-              ? "bg-amber-500/15 text-amber-700"
-              : "bg-muted text-muted-foreground";
-          return (
-            <div key={k} className="rounded-md border border-border bg-card p-3">
-              <div className="flex flex-wrap items-center gap-2 text-xs">
-                <Badge variant="secondary">Lexical {(p.score * 100).toFixed(0)}%</Badge>
-                {p.verdict && (
-                  <span className={`rounded px-2 py-0.5 ${verdictColor}`}>
-                    AI: {p.verdict}
-                    {typeof p.confidence === "number" && ` (${(p.confidence * 100).toFixed(0)}%)`}
+      {scanned && view === "pairs" && (
+        <div className="mt-4 space-y-3">
+          {sortedPairs.map((p) => {
+            const k = pairKey(p);
+            const diffA = diffs[`${p.a.topic}::${p.a.id}`];
+            const diffB = diffs[`${p.b.topic}::${p.b.id}`];
+            const verdictColor =
+              p.verdict === "duplicate"
+                ? "bg-destructive/15 text-destructive"
+                : p.verdict === "near-duplicate"
+                ? "bg-amber-500/15 text-amber-700"
+                : "bg-muted text-muted-foreground";
+            return (
+              <div key={k} className="rounded-md border border-border bg-card p-3">
+                <div className="flex flex-wrap items-center gap-2 text-xs">
+                  <Badge variant="secondary">Lexical {(p.score * 100).toFixed(0)}%</Badge>
+                  {p.verdict && (
+                    <span className={`rounded px-2 py-0.5 ${verdictColor}`}>
+                      AI: {p.verdict}
+                      {typeof p.confidence === "number" && ` (${(p.confidence * 100).toFixed(0)}%)`}
+                    </span>
+                  )}
+                  <span className="ml-auto text-muted-foreground">{p.reason}</span>
+                </div>
+                <div className="mt-2 grid gap-3 sm:grid-cols-2">
+                  <PairSide
+                    side="A"
+                    topic={p.a.topic}
+                    id={p.a.id}
+                    text={p.a.text}
+                    diff={diffA}
+                    busy={busyKey === `${p.a.topic}::${p.a.id}`}
+                    dupCount={dupInfo.count.get(`${p.a.topic}::${p.a.id}`) ?? 0}
+                    partners={dupInfo.partners.get(`${p.a.topic}::${p.a.id}`) ?? []}
+                    onRegenerate={() => void regenerate(p, "a")}
+                    onCompleteRegenerate={() => void completeRegenerate(p, "a")}
+                    onRevert={() => void revert(`${p.a.topic}::${p.a.id}`)}
+                  />
+                  <PairSide
+                    side="B"
+                    topic={p.b.topic}
+                    id={p.b.id}
+                    text={p.b.text}
+                    diff={diffB}
+                    busy={busyKey === `${p.b.topic}::${p.b.id}`}
+                    dupCount={dupInfo.count.get(`${p.b.topic}::${p.b.id}`) ?? 0}
+                    partners={dupInfo.partners.get(`${p.b.topic}::${p.b.id}`) ?? []}
+                    onRegenerate={() => void regenerate(p, "b")}
+                    onCompleteRegenerate={() => void completeRegenerate(p, "b")}
+                    onRevert={() => void revert(`${p.b.topic}::${p.b.id}`)}
+                  />
+                </div>
+                <div className="mt-2 flex items-center gap-2">
+                  <Button size="sm" variant="outline" onClick={() => void markNotDuplicate(p)}>
+                    Mark as not duplicate
+                  </Button>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      )}
+
+      {scanned && view === "clusters" && (
+        <div className="mt-4 space-y-3">
+          {clusters.map((cluster, ci) => {
+            const memberKeys = Array.from(cluster.members);
+            const sevClass =
+              cluster.members.size >= 4
+                ? "border-destructive/60"
+                : cluster.members.size === 3
+                ? "border-amber-500/60"
+                : "border-border";
+            return (
+              <div key={ci} className={`rounded-md border-2 bg-card p-3 ${sevClass}`}>
+                <div className="flex flex-wrap items-center gap-2 text-xs">
+                  <Badge variant={cluster.members.size >= 3 ? "destructive" : "secondary"}>
+                    Cluster of {cluster.members.size} questions
+                  </Badge>
+                  <span className="text-muted-foreground">
+                    {cluster.pairs.length} pair{cluster.pairs.length === 1 ? "" : "s"}
                   </span>
-                )}
-                <span className="ml-auto text-muted-foreground">{p.reason}</span>
+                </div>
+                <ul className="mt-2 space-y-2">
+                  {memberKeys.map((mk) => {
+                    const [topic, id] = mk.split("::");
+                    const partners = dupInfo.partners.get(mk) ?? [];
+                    const sample = partners[0]?.text ?? "";
+                    const text =
+                      cluster.pairs.find((p) => `${p.a.topic}::${p.a.id}` === mk)?.a.text ??
+                      cluster.pairs.find((p) => `${p.b.topic}::${p.b.id}` === mk)?.b.text ??
+                      sample;
+                    const dupCount = dupInfo.count.get(mk) ?? 0;
+                    const diff = diffs[mk];
+                    return (
+                      <li key={mk} className="rounded border border-border bg-background/50 p-2">
+                        <div className="flex flex-wrap items-center gap-2 text-xs text-muted-foreground">
+                          <Badge variant={dupCount >= 3 ? "destructive" : dupCount === 2 ? "secondary" : "outline"}>
+                            {dupCount} duplicate{dupCount === 1 ? "" : "s"}
+                          </Badge>
+                          <Link
+                            to="/admin-kb20/questions/$topic"
+                            params={{ topic }}
+                            search={{ q: id, from: "validator" }}
+                            className="font-mono hover:underline"
+                          >
+                            {topic} / {id}
+                          </Link>
+                        </div>
+                        <p className="mt-1 line-clamp-2 text-sm">{text}</p>
+                        {diff && (
+                          <p className="mt-1 text-xs text-success">
+                            ✓ regenerated (sim {(diff.sim * 100).toFixed(0)}%)
+                          </p>
+                        )}
+                      </li>
+                    );
+                  })}
+                </ul>
+                <p className="mt-2 text-xs text-muted-foreground">
+                  Switch to Pairs view to regenerate or mark individual pairs as not duplicate.
+                </p>
               </div>
-              <div className="mt-2 grid gap-3 sm:grid-cols-2">
-                <PairSide
-                  side="A"
-                  topic={p.a.topic}
-                  id={p.a.id}
-                  text={p.a.text}
-                  diff={diffA}
-                  busy={busyKey === `${p.a.topic}::${p.a.id}`}
-                  onRegenerate={() => void regenerate(p, "a")}
-                  onCompleteRegenerate={() => void completeRegenerate(p, "a")}
-                  onRevert={() => void revert(`${p.a.topic}::${p.a.id}`)}
-                />
-                <PairSide
-                  side="B"
-                  topic={p.b.topic}
-                  id={p.b.id}
-                  text={p.b.text}
-                  diff={diffB}
-                  busy={busyKey === `${p.b.topic}::${p.b.id}`}
-                  onRegenerate={() => void regenerate(p, "b")}
-                  onCompleteRegenerate={() => void completeRegenerate(p, "b")}
-                  onRevert={() => void revert(`${p.b.topic}::${p.b.id}`)}
-                />
-              </div>
-              <div className="mt-2 flex items-center gap-2">
-                <Button size="sm" variant="outline" onClick={() => void markNotDuplicate(p)}>
-                  Mark as not duplicate
-                </Button>
-              </div>
-            </div>
-          );
-        })}
-      </div>
+            );
+          })}
+        </div>
+      )}
     </main>
   );
 }
