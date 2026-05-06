@@ -259,7 +259,110 @@ function SimilarPage() {
     }
   };
 
-  const revert = async (k: string) => {
+  const completeRegenerate = async (p: EnrichedPair, side: "a" | "b") => {
+    const target = side === "a" ? p.a : p.b;
+    const k = `${target.topic}::${target.id}`;
+    setBusyKey(k);
+    try {
+      const meta = topicTitleMap.get(target.topic);
+      if (!meta) {
+        setBusyKey(null);
+        return;
+      }
+      const cat = categories.find((c) => c.slug === meta.catSlug);
+      if (!cat) {
+        setBusyKey(null);
+        return;
+      }
+      setProgress(`Loading category "${meta.cat}" (${cat.topics.length} topic${cat.topics.length === 1 ? "" : "s"})…`);
+      const overrides = await loadOverrides();
+
+      // Load source from its topic
+      const sourceFile = await loadTopicFileForAdmin(target.topic);
+      if (!sourceFile) {
+        setBusyKey(null);
+        return;
+      }
+      const isV2Src = (sourceFile as { version?: number }).version === 2;
+      const sourceBank: AnyQ[] = isV2Src
+        ? ((sourceFile as { bank: AnyQ[] }).bank ?? [])
+        : ((sourceFile as { tests: { questions: AnyQ[] }[] }).tests ?? []).flatMap((t) => t.questions ?? []);
+      const sourceRaw = sourceBank.find((q) => String(q.id) === target.id);
+      if (!sourceRaw) {
+        setBusyKey(null);
+        return;
+      }
+      const source = applyOverrideToQuestionRecord(sourceRaw, overrides.get(k));
+
+      // Build category-wide blob list (excluding the target itself)
+      const categoryBlobs: string[] = [];
+      for (const t of cat.topics) {
+        const f = await loadTopicFileForAdmin(t.slug);
+        if (!f) continue;
+        const isV2 = (f as { version?: number }).version === 2;
+        const bank: AnyQ[] = isV2
+          ? ((f as { bank: AnyQ[] }).bank ?? [])
+          : ((f as { tests: { questions: AnyQ[] }[] }).tests ?? []).flatMap((tt) => tt.questions ?? []);
+        for (const raw of bank) {
+          if (!raw.id) continue;
+          if (t.slug === target.topic && String(raw.id) === target.id) continue;
+          const q = applyOverrideToQuestionRecord(raw, overrides.get(`${t.slug}::${raw.id}`));
+          categoryBlobs.push(buildBlob(q as Parameters<typeof buildBlob>[0]));
+        }
+      }
+      setProgress(`Generating fresh question (checking against ${categoryBlobs.length} questions in category)…`);
+
+      const { data: sess } = await supabase.auth.getSession();
+      const accessToken = sess.session?.access_token ?? "";
+
+      const res = await completeRegenerateQuestion({
+        data: {
+          accessToken,
+          topic: target.topic,
+          topicTitle: meta.title,
+          categoryTitle: meta.cat,
+          source: {
+            id: target.id,
+            type: source.type as string | undefined,
+            question: source.question as string | undefined,
+            template: source.template as string | undefined,
+            prompt: source.prompt as string | undefined,
+            options: source.options as string[] | undefined,
+            correctAnswer: source.correctAnswer as number | boolean | undefined,
+            correctAnswers: source.correctAnswers as number[] | undefined,
+            explanation: source.explanation as string | undefined,
+            image: source.image as string | undefined,
+            imageAlt: source.imageAlt as string | undefined,
+          },
+          categoryBlobs,
+        },
+      });
+
+      if (res.error || !res.generated) {
+        setProgress(`Complete regeneration failed: ${res.error ?? "unknown error"}`);
+        setBusyKey(null);
+        return;
+      }
+
+      invalidateOverrides();
+      setDiffs((prev) => ({
+        ...prev,
+        [k]: {
+          topic: target.topic,
+          id: target.id,
+          before: source as AnyQ,
+          after: res.generated as AnyQ,
+          sim: res.similarityMax,
+          needsReview: res.needsReview,
+          mode: "complete",
+          concept: res.concept ?? undefined,
+        },
+      }));
+      setProgress(`Fresh question created (similarity ${(res.similarityMax * 100).toFixed(0)}% across category).`);
+    } finally {
+      setBusyKey(null);
+    }
+  };
     const d = diffs[k];
     if (!d) return;
     await supabase.from("question_overrides").delete().eq("topic", d.topic).eq("question_id", d.id);
