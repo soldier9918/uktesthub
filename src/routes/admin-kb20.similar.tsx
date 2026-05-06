@@ -424,6 +424,22 @@ function SimilarPage() {
     return Array.from(groups.values()).sort((a, b) => b.members.size - a.members.size);
   }, [visiblePairs]);
 
+  // Group questions by identical image URL (filtered by type if active)
+  const imageClusters = useMemo(() => {
+    const groups = new Map<string, Array<{ topic: string; id: string; text: string; type?: string }>>();
+    for (const [k, v] of imageMap.entries()) {
+      if (typeFilter !== "__all__" && v.type !== typeFilter) continue;
+      const [topic, id] = k.split("::");
+      const arr = groups.get(v.image) ?? [];
+      arr.push({ topic, id, text: v.text, type: v.type });
+      groups.set(v.image, arr);
+    }
+    return Array.from(groups.entries())
+      .filter(([, arr]) => arr.length >= 2)
+      .map(([image, members]) => ({ image, members }))
+      .sort((a, b) => b.members.length - a.members.length);
+  }, [imageMap, typeFilter]);
+
   const uniqueQuestions = dupInfo.count.size;
   const bigClusters = clusters.filter((c) => c.members.size >= 3).length;
 
