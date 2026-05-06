@@ -552,6 +552,18 @@ function QuestionsBrowser() {
             <option value="used">Used in mocks</option>
             <option value="unused">Unused in mocks</option>
           </select>
+          <select
+            value={statusFilter}
+            onChange={(e) => {
+              setStatusFilter(e.target.value as "all" | "enabled" | "disabled");
+              setPage(1);
+            }}
+            className="h-9 rounded-md border border-input bg-background px-2 text-sm"
+          >
+            <option value="all">All status</option>
+            <option value="enabled">Enabled only</option>
+            <option value="disabled">Disabled only</option>
+          </select>
           <span className="ml-auto text-xs text-muted-foreground">
             {filtered.length} matching
           </span>
