@@ -183,6 +183,7 @@ function SimilarPage() {
     setPairs(filtered);
     setScanned(true);
     setTypeMap(tmap);
+    setImageMap(imap);
     setRunning(false);
     setProgress(`${filtered.length} similar pair${filtered.length === 1 ? "" : "s"} found.`);
   };
