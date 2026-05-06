@@ -639,11 +639,11 @@ function SimilarPage() {
         </div>
       </div>
 
-      {scanned && visiblePairs.length === 0 && (
-        <p className="mt-6 text-sm text-muted-foreground">No similar pairs found at this threshold.</p>
+      {scanned && visiblePairs.length === 0 && imageClusters.length === 0 && (
+        <p className="mt-6 text-sm text-muted-foreground">No similar pairs or duplicate images found at this threshold.</p>
       )}
 
-      {scanned && visiblePairs.length > 0 && (
+      {scanned && (visiblePairs.length > 0 || imageClusters.length > 0) && (
         <div className="mt-6 flex flex-wrap items-center gap-2">
           <Badge variant="secondary" className="text-sm">
             {visiblePairs.length} similar pair{visiblePairs.length === 1 ? "" : "s"} remaining
