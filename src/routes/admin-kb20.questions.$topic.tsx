@@ -509,6 +509,18 @@ function QuestionsBrowser() {
             <option value="with">With image</option>
             <option value="without">Text only</option>
           </select>
+          <select
+            value={usageFilter}
+            onChange={(e) => {
+              setUsageFilter(e.target.value as "all" | "used" | "unused");
+              setPage(1);
+            }}
+            className="h-9 rounded-md border border-input bg-background px-2 text-sm"
+          >
+            <option value="all">All usage</option>
+            <option value="used">Used in mocks</option>
+            <option value="unused">Unused in mocks</option>
+          </select>
           <span className="ml-auto text-xs text-muted-foreground">
             {filtered.length} matching
           </span>
