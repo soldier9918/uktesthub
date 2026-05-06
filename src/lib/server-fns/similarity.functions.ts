@@ -653,17 +653,21 @@ export const completeRegenerateQuestion = createServerFn({ method: "POST" })
       let attempts = 0;
       let lastError: string | null = null;
 
+      const angles = (data.category && SCENARIO_ANGLES_BY_CATEGORY[data.category]) || GENERIC_ANGLES;
+      const isDriving = data.category === "driving";
       for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
         attempts = attempt;
-        const angle = SCENARIO_ANGLES[(attempt - 1) % SCENARIO_ANGLES.length];
+        const angle = angles[(attempt - 1) % angles.length];
 
         const sysPrompt = `You write UK exam practice questions for "${data.categoryTitle} — ${data.topicTitle}".
 You are creating a BRAND-NEW question that tests a DIFFERENT piece of knowledge from anything in the AVOID list.
 The new question must be on the concept: "${concept}" — which is a different sub-topic from the existing questions.
 You have NOT seen any original question. Do not attempt to reproduce one.
 Rules:
+- The new question MUST stay strictly within the topic "${data.topicTitle}" (category "${data.categoryTitle}").${isDriving ? "" : `
+- Do NOT introduce driving, vehicles, road signs, motorways, learner drivers, or road scenarios — this topic is NOT about driving.`}
 - The new question must test DIFFERENT factual knowledge — not the same fact reworded.
-- Use UK English and UK-specific context (£, miles, MOT, NHS, DVSA where relevant).
+- Use UK English and UK-specific context (£, miles, MOT, NHS, DVSA where relevant to this topic).
 - Match this question type: "${type}".
 - For MCQ-style: provide exactly 4 plausible options with one correct answer.
 - Distractors must be realistic but clearly wrong to a knowledgeable test-taker.
