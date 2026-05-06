@@ -78,6 +78,8 @@ function SimilarPage() {
   const [busyKey, setBusyKey] = useState<string | null>(null);
   const [diffs, setDiffs] = useState<Record<string, { topic: string; id: string; before: AnyQ; after: AnyQ; sim: number; needsReview: boolean; mode?: "rewrite" | "complete"; concept?: string }>>({});
   const [view, setView] = useState<"pairs" | "clusters">("pairs");
+  const [typeMap, setTypeMap] = useState<Map<string, string>>(new Map());
+  const [typeFilter, setTypeFilter] = useState<string>("__all__");
   const [bulkRunning, setBulkRunning] = useState(false);
   const [bulkProgress, setBulkProgress] = useState("");
   const bulkCancelRef = useRef(false);
@@ -111,6 +113,7 @@ function SimilarPage() {
 
     const overrides = await loadOverrides();
     const items: SimItem[] = [];
+    const tmap = new Map<string, string>();
     for (let ti = 0; ti < targetTopics.length; ti++) {
       const topic = targetTopics[ti];
       setProgress(`Loading ${topic} (${ti + 1}/${targetTopics.length})…`);
@@ -126,6 +129,8 @@ function SimilarPage() {
         const q = applyOverrideToQuestionRecord(raw, overrides.get(`${topic}::${id}`));
         const blob = buildBlob(q as Parameters<typeof buildBlob>[0]);
         items.push({ topic, id: String(id), blob, trigrams: trigrams(blob) });
+        const t = (q as { type?: string }).type;
+        if (t) tmap.set(`${topic}::${String(id)}`, t);
       }
       if (cancelRef.current) {
         setRunning(false);
@@ -171,6 +176,7 @@ function SimilarPage() {
 
     setPairs(filtered);
     setScanned(true);
+    setTypeMap(tmap);
     setRunning(false);
     setProgress(`${filtered.length} similar pair${filtered.length === 1 ? "" : "s"} found.`);
   };
@@ -343,7 +349,25 @@ function SimilarPage() {
     });
   };
 
-  const visiblePairs = pairs.filter((p) => !p.hidden);
+  const availableTypes = useMemo(() => {
+    const s = new Set<string>();
+    for (const p of pairs) {
+      if (p.hidden) continue;
+      const ta = typeMap.get(`${p.a.topic}::${p.a.id}`);
+      const tb = typeMap.get(`${p.b.topic}::${p.b.id}`);
+      if (ta) s.add(ta);
+      if (tb) s.add(tb);
+    }
+    return Array.from(s).sort();
+  }, [pairs, typeMap]);
+
+  const visiblePairs = pairs.filter((p) => {
+    if (p.hidden) return false;
+    if (typeFilter === "__all__") return true;
+    const ta = typeMap.get(`${p.a.topic}::${p.a.id}`);
+    const tb = typeMap.get(`${p.b.topic}::${p.b.id}`);
+    return ta === typeFilter && tb === typeFilter;
+  });
 
   // Compute duplicate counts and partners per question
   const dupInfo = useMemo(() => {
@@ -546,6 +570,22 @@ function SimilarPage() {
           </select>
         </label>
         <label className="text-sm">
+          <span className="block font-semibold">Question type</span>
+          <select
+            value={typeFilter}
+            onChange={(e) => setTypeFilter(e.target.value)}
+            className="mt-1 w-full rounded-md border border-border bg-background px-3 py-1.5 text-sm"
+            disabled={!scanned || availableTypes.length === 0}
+          >
+            <option value="__all__">All types{scanned ? "" : " (run scan first)"}</option>
+            {availableTypes.map((t) => (
+              <option key={t} value={t}>
+                {t}
+              </option>
+            ))}
+          </select>
+        </label>
+        <label className="text-sm">
           <span className="block font-semibold">
             Lexical threshold: {threshold.toFixed(2)}
           </span>
@@ -599,9 +639,22 @@ function SimilarPage() {
               {bigClusters} cluster{bigClusters === 1 ? "" : "s"} with 3+ duplicates
             </Badge>
           )}
+          {typeFilter !== "__all__" && (
+            <Badge variant="outline" className="text-xs">
+              type: {typeFilter}
+              <button
+                type="button"
+                onClick={() => setTypeFilter("__all__")}
+                className="ml-1 text-muted-foreground hover:text-foreground"
+                aria-label="Clear type filter"
+              >
+                ×
+              </button>
+            </Badge>
+          )}
           {pairs.length !== visiblePairs.length && (
             <span className="text-xs text-muted-foreground">
-              ({pairs.length - visiblePairs.length} marked not duplicate)
+              ({pairs.filter((p) => !p.hidden).length - visiblePairs.length} hidden by filter, {pairs.length - pairs.filter((p) => !p.hidden).length} marked not duplicate)
             </span>
           )}
           <div className="ml-auto flex items-center gap-1 rounded-md border border-border p-0.5">
@@ -680,6 +733,7 @@ function SimilarPage() {
                     partners={dupInfo.partners.get(`${p.a.topic}::${p.a.id}`) ?? []}
                     onRegenerate={() => void regenerate(p, "a")}
                     onCompleteRegenerate={() => void completeRegenerate(p, "a")}
+                    qType={typeMap.get(`${p.a.topic}::${p.a.id}`)}
                     onRevert={() => void revert(`${p.a.topic}::${p.a.id}`)}
                   />
                   <PairSide
@@ -693,6 +747,7 @@ function SimilarPage() {
                     partners={dupInfo.partners.get(`${p.b.topic}::${p.b.id}`) ?? []}
                     onRegenerate={() => void regenerate(p, "b")}
                     onCompleteRegenerate={() => void completeRegenerate(p, "b")}
+                    qType={typeMap.get(`${p.b.topic}::${p.b.id}`)}
                     onRevert={() => void revert(`${p.b.topic}::${p.b.id}`)}
                   />
                 </div>
@@ -765,6 +820,9 @@ function SimilarPage() {
                           <Badge variant={dupCount >= 3 ? "destructive" : dupCount === 2 ? "secondary" : "outline"}>
                             {dupCount} duplicate{dupCount === 1 ? "" : "s"}
                           </Badge>
+                          {typeMap.get(mk) && (
+                            <Badge variant="outline" className="text-[10px]">{typeMap.get(mk)}</Badge>
+                          )}
                           <Link
                             to="/admin-kb20/questions/$topic"
                             params={{ topic }}
@@ -808,6 +866,7 @@ function PairSide({
   onRegenerate,
   onCompleteRegenerate,
   onRevert,
+  qType,
 }: {
   side: "A" | "B";
   topic: string;
@@ -820,12 +879,14 @@ function PairSide({
   onRegenerate: () => void;
   onCompleteRegenerate: () => void;
   onRevert: () => void;
+  qType?: string;
 }) {
   const [showPartners, setShowPartners] = useState(false);
   return (
     <div className="rounded border border-border bg-background/50 p-2">
       <div className="flex flex-wrap items-center gap-2 text-xs text-muted-foreground">
         <Badge variant="outline">{side}</Badge>
+        {qType && <Badge variant="outline" className="text-[10px]">{qType}</Badge>}
         {dupCount >= 2 && (
           <button
             type="button"
