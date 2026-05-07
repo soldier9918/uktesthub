@@ -65,6 +65,11 @@ export function applyOverrideToQuestionRecord<T extends Record<string, unknown>>
 ): T {
   if (!override) return question;
   const next: Record<string, unknown> = { ...question };
+  const hasContentOverride =
+    override.question != null ||
+    Array.isArray(override.options) ||
+    override.correct_answer != null ||
+    override.explanation != null;
   if (override.question != null) {
     if ("template" in next && !("question" in next)) next.template = override.question;
     else if ("prompt" in next && !("question" in next)) next.prompt = override.question;
@@ -80,8 +85,14 @@ export function applyOverrideToQuestionRecord<T extends Record<string, unknown>>
     }
   }
   if (override.explanation != null) next.explanation = override.explanation;
-  if (override.image != null) next.image = override.image;
+  if (override.image != null) {
+    next.image = override.image;
+  } else if (hasContentOverride) {
+    delete next.image;
+    if (next.type === "image_question" || next.type === "image-question") next.type = "mcq";
+  }
   if (override.image_alt != null) next.imageAlt = override.image_alt;
+  else if (hasContentOverride && override.image == null) delete next.imageAlt;
   return next as T;
 }
 
