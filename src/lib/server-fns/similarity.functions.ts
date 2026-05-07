@@ -22,7 +22,11 @@ async function verifyAdmin(accessToken: string): Promise<string | null> {
 
 type Pair = { aText: string; bText: string };
 
-type Verdict = { verdict: "duplicate" | "near-duplicate" | "distinct"; confidence: number; reason: string };
+type Verdict = {
+  verdict: "duplicate" | "near-duplicate" | "distinct";
+  confidence: number;
+  reason: string;
+};
 
 export const aiVerdictPairs = createServerFn({ method: "POST" })
   .inputValidator((d: { accessToken: string; pairs: Pair[] }) => d)
@@ -30,7 +34,11 @@ export const aiVerdictPairs = createServerFn({ method: "POST" })
     async ({
       data,
     }): Promise<{
-      verdicts: Array<{ verdict: "duplicate" | "near-duplicate" | "distinct"; confidence: number; reason: string }>;
+      verdicts: Array<{
+        verdict: "duplicate" | "near-duplicate" | "distinct";
+        confidence: number;
+        reason: string;
+      }>;
       error: string | null;
     }> => {
       const userId = await verifyAdmin(data.accessToken);
@@ -40,10 +48,7 @@ export const aiVerdictPairs = createServerFn({ method: "POST" })
       if (!data.pairs?.length) return { verdicts: [], error: null };
 
       const numbered = data.pairs
-        .map(
-          (p, i) =>
-            `Pair ${i + 1}:\nA: ${p.aText.slice(0, 800)}\nB: ${p.bText.slice(0, 800)}`,
-        )
+        .map((p, i) => `Pair ${i + 1}:\nA: ${p.aText.slice(0, 800)}\nB: ${p.bText.slice(0, 800)}`)
         .join("\n\n");
 
       const body = {
@@ -104,7 +109,9 @@ export const aiVerdictPairs = createServerFn({ method: "POST" })
         return { verdicts: [], error: `AI gateway ${resp.status}: ${txt.slice(0, 200)}` };
       }
       const json = (await resp.json()) as {
-        choices?: Array<{ message?: { tool_calls?: Array<{ function?: { arguments?: string } }> } }>;
+        choices?: Array<{
+          message?: { tool_calls?: Array<{ function?: { arguments?: string } }> };
+        }>;
       };
       const argsStr = json.choices?.[0]?.message?.tool_calls?.[0]?.function?.arguments;
       if (!argsStr) return { verdicts: [], error: "No tool call in response" };
@@ -157,7 +164,12 @@ async function loadSavedOverrideBlobs(): Promise<string[]> {
       .select("question,options,explanation,disabled")
       .range(from, from + PAGE - 1);
     if (error || !data) break;
-    for (const row of data as Array<{ question: string | null; options: string[] | null; explanation: string | null; disabled?: boolean | null }>) {
+    for (const row of data as Array<{
+      question: string | null;
+      options: string[] | null;
+      explanation: string | null;
+      disabled?: boolean | null;
+    }>) {
       if (row.disabled || !row.question) continue;
       out.push(`${row.question} | ${(row.options ?? []).join(" | ")} | ${row.explanation ?? ""}`);
     }
@@ -215,11 +227,25 @@ export const regenerateUniqueQuestion = createServerFn({ method: "POST" })
     }> => {
       const userId = await verifyAdmin(data.accessToken);
       if (!userId) {
-        return { generated: null, similarityMax: 0, attempts: 0, needsReview: false, auditId: null, error: "Unauthorized" };
+        return {
+          generated: null,
+          similarityMax: 0,
+          attempts: 0,
+          needsReview: false,
+          auditId: null,
+          error: "Unauthorized",
+        };
       }
       const apiKey = process.env.LOVABLE_API_KEY;
       if (!apiKey) {
-        return { generated: null, similarityMax: 0, attempts: 0, needsReview: false, auditId: null, error: "LOVABLE_API_KEY not configured" };
+        return {
+          generated: null,
+          similarityMax: 0,
+          attempts: 0,
+          needsReview: false,
+          auditId: null,
+          error: "LOVABLE_API_KEY not configured",
+        };
       }
 
       const { source } = data;
@@ -231,7 +257,9 @@ export const regenerateUniqueQuestion = createServerFn({ method: "POST" })
       const allSavedOverrideBlobs = await loadSavedOverrideBlobs();
       const comparisonBlobs = [...data.existingBlobs, ...allSavedOverrideBlobs];
       const existingTri = comparisonBlobs.map((b) => trigrams(b));
-      const repeatedOpenings = Array.from(new Set(comparisonBlobs.map((b) => openingSlice(b, 14)).filter(Boolean)))
+      const repeatedOpenings = Array.from(
+        new Set(comparisonBlobs.map((b) => openingSlice(b, 14)).filter(Boolean)),
+      )
         .slice(0, 60)
         .map((s, i) => `${i + 1}. ${s}`)
         .join("\n");
@@ -242,8 +270,12 @@ Rules:
 - Generate a COMPLETELY NEW question on the same underlying concept as the source.
 - Do NOT paraphrase. New wording, new structure, new example/scenario.
 - Use UK English and UK-specific context (e.g. £, miles, MOT, NHS, DVSA where relevant).
-- The new question MUST stay strictly within the topic "${data.topicTitle}" (category "${data.categoryTitle}"). Do NOT cross over into another subject.${isDriving ? "" : `
-- Do NOT introduce driving, vehicles, cars, car parks, road signs, motorways, learner drivers, or road scenarios — this topic is NOT about driving.`}
+- The new question MUST stay strictly within the topic "${data.topicTitle}" (category "${data.categoryTitle}"). Do NOT cross over into another subject.${
+        isDriving
+          ? ""
+          : `
+- Do NOT introduce driving, vehicles, cars, car parks, road signs, motorways, learner drivers, or road scenarios — this topic is NOT about driving.`
+      }
 - Match this question type: "${type}".
 - Preserve approximate difficulty.
 - Provide a unique explanation (1–3 sentences) of why the correct answer is right.
@@ -256,16 +288,16 @@ Rules:
 
       const userPrompt = `Source question (DO NOT REUSE WORDING):
 ${JSON.stringify(
-        {
-          question: source.question ?? source.template ?? source.prompt,
-          options: source.options,
-          correctAnswer: source.correctAnswer,
-          correctAnswers: source.correctAnswers,
-          explanation: source.explanation,
-        },
-        null,
-        2,
-      )}`;
+  {
+    question: source.question ?? source.template ?? source.prompt,
+    options: source.options,
+    correctAnswer: source.correctAnswer,
+    correctAnswers: source.correctAnswers,
+    explanation: source.explanation,
+  },
+  null,
+  2,
+)}`;
 
       const openingAvoidancePrompt = repeatedOpenings
         ? `\n\nExisting question openings across the bank. Your new question must NOT sound like these openings:\n${repeatedOpenings}`
@@ -308,7 +340,12 @@ ${JSON.stringify(
               { role: "system", content: sysPrompt },
               { role: "user", content: `${userPrompt}${openingAvoidancePrompt}` },
               ...(attempt > 1
-                ? [{ role: "user", content: `Previous attempt was too similar to an existing question (Jaccard ${best?.sim.toFixed(2)}). Try again with a completely different opening, sentence structure, wording, and example.` }]
+                ? [
+                    {
+                      role: "user",
+                      content: `Previous attempt was too similar to an existing question (Jaccard ${best?.sim.toFixed(2)}). Try again with a completely different opening, sentence structure, wording, and example.`,
+                    },
+                  ]
                 : []),
             ],
             tools: [tool],
@@ -322,7 +359,9 @@ ${JSON.stringify(
           continue;
         }
         const json = (await resp.json()) as {
-          choices?: Array<{ message?: { tool_calls?: Array<{ function?: { arguments?: string } }> } }>;
+          choices?: Array<{
+            message?: { tool_calls?: Array<{ function?: { arguments?: string } }> };
+          }>;
         };
         const argsStr = json.choices?.[0]?.message?.tool_calls?.[0]?.function?.arguments;
         if (!argsStr) {
@@ -391,7 +430,12 @@ ${JSON.stringify(
         const srcSim = jaccard(candTri, trigrams(srcBlob));
         if (srcSim > maxSim) maxSim = srcSim;
 
-        const openingCheck = hasRepeatedOpening(gen.question ?? "", comparisonBlobs, trigrams, jaccard);
+        const openingCheck = hasRepeatedOpening(
+          gen.question ?? "",
+          comparisonBlobs,
+          trigrams,
+          jaccard,
+        );
 
         if (!best || maxSim < best.sim) best = { gen, sim: maxSim };
         if (maxSim < SIM_REJECT && !openingCheck.repeated) {
@@ -425,7 +469,7 @@ ${JSON.stringify(
         correct_answer:
           best.gen.correctAnswers !== undefined
             ? best.gen.correctAnswers
-            : best.gen.correctAnswer ?? null,
+            : (best.gen.correctAnswer ?? null),
         explanation: best.gen.explanation ?? null,
         image: null,
         image_alt: null,
@@ -445,12 +489,18 @@ ${JSON.stringify(
         };
       }
 
-      const { data: auditRow, error: audErr } = await (supabaseAdmin
-        .from("question_regenerations" as never) as unknown as {
+      const { data: auditRow, error: audErr } = await (
+        supabaseAdmin.from("question_regenerations" as never) as unknown as {
           insert: (row: Record<string, unknown>) => {
-            select: (cols: string) => { maybeSingle: () => Promise<{ data: { id: string } | null; error: { message: string } | null }> };
+            select: (cols: string) => {
+              maybeSingle: () => Promise<{
+                data: { id: string } | null;
+                error: { message: string } | null;
+              }>;
+            };
           };
-        })
+        }
+      )
         .insert({
           topic: data.topic,
           question_id: source.id,
@@ -478,7 +528,6 @@ ${JSON.stringify(
       };
     },
   );
-
 
 // ---------- Complete Regeneration (brand-new question, hides source from AI) ----------
 
@@ -639,11 +688,27 @@ export const completeRegenerateQuestion = createServerFn({ method: "POST" })
     }> => {
       const userId = await verifyAdmin(data.accessToken);
       if (!userId) {
-        return { generated: null, similarityMax: 0, attempts: 0, needsReview: false, auditId: null, concept: null, error: "Unauthorized" };
+        return {
+          generated: null,
+          similarityMax: 0,
+          attempts: 0,
+          needsReview: false,
+          auditId: null,
+          concept: null,
+          error: "Unauthorized",
+        };
       }
       const apiKey = process.env.LOVABLE_API_KEY;
       if (!apiKey) {
-        return { generated: null, similarityMax: 0, attempts: 0, needsReview: false, auditId: null, concept: null, error: "LOVABLE_API_KEY not configured" };
+        return {
+          generated: null,
+          similarityMax: 0,
+          attempts: 0,
+          needsReview: false,
+          auditId: null,
+          concept: null,
+          error: "LOVABLE_API_KEY not configured",
+        };
       }
 
       const { source } = data;
@@ -654,7 +719,9 @@ export const completeRegenerateQuestion = createServerFn({ method: "POST" })
       const allSavedOverrideBlobs = await loadSavedOverrideBlobs();
       const comparisonBlobs = [...data.categoryBlobs, ...allSavedOverrideBlobs];
       const categoryTri = comparisonBlobs.map((b) => trigrams(b));
-      const repeatedOpenings = Array.from(new Set(comparisonBlobs.map((b) => openingSlice(b, 14)).filter(Boolean)))
+      const repeatedOpenings = Array.from(
+        new Set(comparisonBlobs.map((b) => openingSlice(b, 14)).filter(Boolean)),
+      )
         .slice(0, 80)
         .map((s, i) => `${i + 1}. ${s}`)
         .join("\n");
@@ -701,8 +768,13 @@ export const completeRegenerateQuestion = createServerFn({ method: "POST" })
           }),
         });
         if (conceptResp.ok) {
-          const cj = (await conceptResp.json()) as { choices?: Array<{ message?: { content?: string } }> };
-          concept = (cj.choices?.[0]?.message?.content ?? "").trim().replace(/^["']|["']$/g, "").slice(0, 120);
+          const cj = (await conceptResp.json()) as {
+            choices?: Array<{ message?: { content?: string } }>;
+          };
+          concept = (cj.choices?.[0]?.message?.content ?? "")
+            .trim()
+            .replace(/^["']|["']$/g, "")
+            .slice(0, 120);
         }
       } catch {
         // non-fatal
@@ -736,7 +808,8 @@ export const completeRegenerateQuestion = createServerFn({ method: "POST" })
       let attempts = 0;
       let lastError: string | null = null;
 
-      const angles = (data.category && SCENARIO_ANGLES_BY_CATEGORY[data.category]) || GENERIC_ANGLES;
+      const angles =
+        (data.category && SCENARIO_ANGLES_BY_CATEGORY[data.category]) || GENERIC_ANGLES;
       const isDriving = data.category === "driving";
       for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
         attempts = attempt;
@@ -747,8 +820,12 @@ You are creating a BRAND-NEW question that tests a DIFFERENT piece of knowledge 
 The new question must be on the concept: "${concept}" — which is a different sub-topic from the existing questions.
 You have NOT seen any original question. Do not attempt to reproduce one.
 Rules:
-- The new question MUST stay strictly within the topic "${data.topicTitle}" (category "${data.categoryTitle}"). Do NOT cross over into another subject.${isDriving ? "" : `
-- Do NOT introduce driving, vehicles, cars, car parks, parked cars, road signs, motorways, learner drivers, or road scenarios — this topic is NOT about driving.`}
+- The new question MUST stay strictly within the topic "${data.topicTitle}" (category "${data.categoryTitle}"). Do NOT cross over into another subject.${
+          isDriving
+            ? ""
+            : `
+- Do NOT introduce driving, vehicles, cars, car parks, parked cars, road signs, motorways, learner drivers, or road scenarios — this topic is NOT about driving.`
+        }
 - The new question must test DIFFERENT factual knowledge — not the same fact reworded.
 - Use UK English and UK-specific context (£, miles, MOT, NHS, DVSA where relevant to this topic).
 - Match this question type: "${type}".
@@ -782,7 +859,12 @@ Now write a completely fresh question.`;
               { role: "system", content: sysPrompt },
               { role: "user", content: userPrompt },
               ...(attempt > 1 && best
-                ? [{ role: "user", content: `Previous attempt was too similar to existing content (Jaccard ${best.sim.toFixed(2)}). Pick a different opening, sentence structure, scenario, numbers, and framing.` }]
+                ? [
+                    {
+                      role: "user",
+                      content: `Previous attempt was too similar to existing content (Jaccard ${best.sim.toFixed(2)}). Pick a different opening, sentence structure, scenario, numbers, and framing.`,
+                    },
+                  ]
                 : []),
             ],
             tools: [tool],
@@ -796,7 +878,9 @@ Now write a completely fresh question.`;
           continue;
         }
         const json = (await resp.json()) as {
-          choices?: Array<{ message?: { tool_calls?: Array<{ function?: { arguments?: string } }> } }>;
+          choices?: Array<{
+            message?: { tool_calls?: Array<{ function?: { arguments?: string } }> };
+          }>;
         };
         const argsStr = json.choices?.[0]?.message?.tool_calls?.[0]?.function?.arguments;
         if (!argsStr) {
@@ -858,7 +942,12 @@ Now write a completely fresh question.`;
         const srcSim = jaccard(candTri, sourceTri);
         if (srcSim > maxSim) maxSim = srcSim;
 
-        const openingCheck = hasRepeatedOpening(gen.question ?? "", comparisonBlobs, trigrams, jaccard);
+        const openingCheck = hasRepeatedOpening(
+          gen.question ?? "",
+          comparisonBlobs,
+          trigrams,
+          jaccard,
+        );
 
         if (!best || maxSim < best.sim) best = { gen, sim: maxSim };
         if (maxSim < SIM_REJECT && !openingCheck.repeated) break;
@@ -889,7 +978,7 @@ Now write a completely fresh question.`;
         correct_answer:
           best.gen.correctAnswers !== undefined
             ? best.gen.correctAnswers
-            : best.gen.correctAnswer ?? null,
+            : (best.gen.correctAnswer ?? null),
         explanation: best.gen.explanation ?? null,
         image: null,
         image_alt: null,
@@ -910,12 +999,18 @@ Now write a completely fresh question.`;
         };
       }
 
-      const { data: auditRow, error: audErr } = await (supabaseAdmin
-        .from("question_regenerations" as never) as unknown as {
+      const { data: auditRow, error: audErr } = await (
+        supabaseAdmin.from("question_regenerations" as never) as unknown as {
           insert: (row: Record<string, unknown>) => {
-            select: (cols: string) => { maybeSingle: () => Promise<{ data: { id: string } | null; error: { message: string } | null }> };
+            select: (cols: string) => {
+              maybeSingle: () => Promise<{
+                data: { id: string } | null;
+                error: { message: string } | null;
+              }>;
+            };
           };
-        })
+        }
+      )
         .insert({
           topic: data.topic,
           question_id: source.id,
