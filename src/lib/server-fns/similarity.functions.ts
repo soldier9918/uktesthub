@@ -651,7 +651,13 @@ export const completeRegenerateQuestion = createServerFn({ method: "POST" })
       const supportsMulti = type === "multiple-response";
 
       const { trigrams, jaccard } = await import("@/lib/admin/similarity");
-      const categoryTri = data.categoryBlobs.map((b) => trigrams(b));
+      const allSavedOverrideBlobs = await loadSavedOverrideBlobs();
+      const comparisonBlobs = [...data.categoryBlobs, ...allSavedOverrideBlobs];
+      const categoryTri = comparisonBlobs.map((b) => trigrams(b));
+      const repeatedOpenings = Array.from(new Set(comparisonBlobs.map((b) => openingSlice(b, 14)).filter(Boolean)))
+        .slice(0, 80)
+        .map((s, i) => `${i + 1}. ${s}`)
+        .join("\n");
 
       // ---- Build avoid-list from WHOLE category (top 20 most similar stems) ----
       const sourceBlob =
@@ -661,7 +667,7 @@ export const completeRegenerateQuestion = createServerFn({ method: "POST" })
         " | " +
         (source.explanation ?? "");
       const sourceTri = trigrams(sourceBlob);
-      const ranked = data.categoryBlobs
+      const ranked = comparisonBlobs
         .map((b, i) => ({ b, score: jaccard(sourceTri, categoryTri[i]) }))
         .sort((a, b) => b.score - a.score)
         .slice(0, 20)
@@ -750,6 +756,8 @@ Rules:
 - Distractors must be realistic but clearly wrong to a knowledgeable test-taker.
 - Provide a unique explanation (1-3 sentences).
 - Do NOT reuse phrases, scenarios, numbers, subject matter, or distinctive wording from the AVOID list below.
+- Do NOT use repeated stock openings or formulaic setups from the OPENING AVOID list. Avoid patterns like "While driving...", "You are driving along...", "You are driving away from...", "You are on... and see...", and equivalent templates in every category.
+- Make the first 12-18 words structurally unique compared with existing questions: vary sentence length, grammar, perspective, and whether it starts with the rule, object, consequence, person, document, calculation, or scenario.
 - Frame the scenario around: ${angle}.`;
 
         const userPrompt = `Concept: ${concept}
@@ -759,6 +767,9 @@ Scenario angle: ${angle}
 
 AVOID list (existing questions in this category — do NOT replicate their wording, scenarios, or numbers):
 ${avoidList}
+
+OPENING AVOID list (do not make the start of the new question sound like these):
+${repeatedOpenings || "(none)"}
 
 Now write a completely fresh question.`;
 
@@ -771,7 +782,7 @@ Now write a completely fresh question.`;
               { role: "system", content: sysPrompt },
               { role: "user", content: userPrompt },
               ...(attempt > 1 && best
-                ? [{ role: "user", content: `Previous attempt was too similar to existing content (Jaccard ${best.sim.toFixed(2)}). Pick a different scenario, different numbers, different framing.` }]
+                ? [{ role: "user", content: `Previous attempt was too similar to existing content (Jaccard ${best.sim.toFixed(2)}). Pick a different opening, sentence structure, scenario, numbers, and framing.` }]
                 : []),
             ],
             tools: [tool],
@@ -847,9 +858,13 @@ Now write a completely fresh question.`;
         const srcSim = jaccard(candTri, sourceTri);
         if (srcSim > maxSim) maxSim = srcSim;
 
+        const openingCheck = hasRepeatedOpening(gen.question ?? "", comparisonBlobs, trigrams, jaccard);
+
         if (!best || maxSim < best.sim) best = { gen, sim: maxSim };
-        if (maxSim < SIM_REJECT) break;
-        lastError = `similarity ${maxSim.toFixed(2)} too high`;
+        if (maxSim < SIM_REJECT && !openingCheck.repeated) break;
+        lastError = openingCheck.repeated
+          ? `opening too similar (${openingCheck.score.toFixed(2)}): ${openingCheck.matchedOpening}`
+          : `similarity ${maxSim.toFixed(2)} too high`;
       }
 
       if (!best) {
