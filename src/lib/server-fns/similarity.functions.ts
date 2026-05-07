@@ -144,6 +144,23 @@ function questionTextOnly(blobOrQuestion: string): string {
   return (blobOrQuestion ?? "").split("|")[0]?.trim() ?? "";
 }
 
+/**
+ * Strip stray image markers/descriptions the model sometimes hallucinates,
+ * e.g. "...at this junction? [IMAGE] An inverted triangle with a red border..."
+ * We remove [IMAGE]/[image]/[picture]/[diagram] tokens and drop any trailing
+ * sentence that follows such a marker (it is always a description, not part
+ * of the actual question).
+ */
+function sanitizeGeneratedQuestion(text: string): string {
+  if (!text) return text;
+  let t = text;
+  // Cut anything from a bracketed image marker onwards.
+  t = t.replace(/\s*[\[\(]\s*(image|picture|diagram|photo|sign shown|figure)[^\]\)]*[\]\)].*$/i, "");
+  // Also handle bare markers like "IMAGE:" or "[IMAGE]" without trailing text.
+  t = t.replace(/\s*\b(image|picture|diagram)\s*:.*$/i, "");
+  return t.trim();
+}
+
 function openingSlice(blobOrQuestion: string, words = 18): string {
   return questionTextOnly(blobOrQuestion)
     .toLowerCase()
@@ -284,6 +301,7 @@ Rules:
 - Keep the same answer count as the source where possible.
 - Do NOT reuse phrases or distinctive wording from the source.
 - The opening sentence MUST have a different rhythm and setup from existing regenerated questions. Do NOT start with repeated stock setups such as "While driving...", "You are driving along...", "You are driving away from...", or any similar "You are [verb] ... and see..." formula.
+- Output ONLY the question text. Do NOT include image placeholders like "[IMAGE]", "[picture]", "[diagram]", "(image:...)", or any description of an image, sign, or figure. The question must read naturally without referring to an embedded image.
 - Vary perspective and structure: sometimes ask directly about a rule, a consequence, a sign meaning, a responsibility, a calculation, or a short realistic case. Never rely on the same scenario template twice.`;
 
       const userPrompt = `Source question (DO NOT REUSE WORDING):
@@ -398,7 +416,7 @@ ${JSON.stringify(
         const gen: SourceQuestion = {
           id: source.id,
           type: source.type,
-          question: parsed.question,
+          question: sanitizeGeneratedQuestion(parsed.question),
           options,
           correctAnswer: supportsMulti ? undefined : correctAnswer,
           correctAnswers: supportsMulti ? correctAnswers : undefined,
@@ -835,6 +853,7 @@ Rules:
 - Do NOT reuse phrases, scenarios, numbers, subject matter, or distinctive wording from the AVOID list below.
 - Do NOT use repeated stock openings or formulaic setups from the OPENING AVOID list. Avoid patterns like "While driving...", "You are driving along...", "You are driving away from...", "You are on... and see...", and equivalent templates in every category.
 - Make the first 12-18 words structurally unique compared with existing questions: vary sentence length, grammar, perspective, and whether it starts with the rule, object, consequence, person, document, calculation, or scenario.
+- Output ONLY the question text. Do NOT include image placeholders like "[IMAGE]", "[picture]", "[diagram]", "(image:...)", or any description of an image, sign, or figure. The question must read naturally without referring to an embedded image.
 - Frame the scenario around: ${angle}.`;
 
         const userPrompt = `Concept: ${concept}
@@ -917,7 +936,7 @@ Now write a completely fresh question.`;
         const gen: SourceQuestion = {
           id: source.id,
           type: source.type,
-          question: parsed.question,
+          question: sanitizeGeneratedQuestion(parsed.question),
           options,
           correctAnswer: supportsMulti ? undefined : correctAnswer,
           correctAnswers: supportsMulti ? correctAnswers : undefined,
