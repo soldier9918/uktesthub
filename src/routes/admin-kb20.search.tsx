@@ -492,23 +492,60 @@ function SearchPage() {
               {bulkRunning && (
                 <span className="text-xs text-muted-foreground">{bulkProgress}</span>
               )}
+              <span className="text-xs text-muted-foreground">
+                {selected.size > 0 ? `${selected.size} selected` : "no selection (acts on all)"}
+              </span>
+              <button
+                type="button"
+                onClick={selectAll}
+                disabled={bulkRunning}
+                className="rounded-md border border-border bg-card px-2 py-1 text-xs hover:bg-muted disabled:opacity-50"
+              >
+                Select all
+              </button>
+              <button
+                type="button"
+                onClick={clearSelected}
+                disabled={bulkRunning || selected.size === 0}
+                className="rounded-md border border-border bg-card px-2 py-1 text-xs hover:bg-muted disabled:opacity-50"
+              >
+                Clear
+              </button>
               <button
                 type="button"
                 onClick={() => void onBulk("rewrite")}
                 disabled={bulkRunning}
                 className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold hover:bg-muted disabled:opacity-50"
-                title="Rewrite each matched question, keeping it on the same topic"
+                title="Rewrite each (selected or all) question, keeping it on the same topic"
               >
-                Reword all ({hits.length})
+                Reword {selected.size > 0 ? `selected (${selected.size})` : `all (${hits.length})`}
               </button>
               <button
                 type="button"
                 onClick={() => void onBulk("complete")}
                 disabled={bulkRunning}
                 className="rounded-xl bg-gradient-coral px-3 py-1.5 text-xs font-semibold text-coral-foreground disabled:opacity-50"
-                title="Replace each matched question with a brand-new question on the topic"
+                title="Replace each (selected or all) question with a brand-new question on the topic"
               >
-                Regenerate all ({hits.length})
+                Regenerate {selected.size > 0 ? `selected (${selected.size})` : `all (${hits.length})`}
+              </button>
+              <button
+                type="button"
+                onClick={() => void onBulkResetOverride()}
+                disabled={bulkRunning}
+                className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold hover:bg-muted disabled:opacity-50"
+                title="Delete the AI override and restore the original bank text"
+              >
+                Reset to original
+              </button>
+              <button
+                type="button"
+                onClick={() => void onBulkDisable()}
+                disabled={bulkRunning}
+                className="rounded-md border border-destructive/50 bg-destructive/10 px-3 py-1.5 text-xs font-semibold text-destructive hover:bg-destructive/20 disabled:opacity-50"
+                title="Hide these questions from live quizzes"
+              >
+                Disable
               </button>
             </div>
           )}
