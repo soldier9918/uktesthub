@@ -490,6 +490,24 @@ function CategoryCheckPage() {
               </button>
               <button
                 type="button"
+                onClick={() => void onBulkRegen("rewrite")}
+                disabled={bulkRunning}
+                className="rounded-md border border-coral/50 bg-coral/10 px-3 py-1.5 text-xs font-semibold text-coral hover:bg-coral/20 disabled:opacity-50"
+                title="AI rewrites each on-topic, keeping the same underlying concept"
+              >
+                Reword (AI)
+              </button>
+              <button
+                type="button"
+                onClick={() => void onBulkRegen("complete")}
+                disabled={bulkRunning}
+                className="rounded-xl bg-gradient-coral px-3 py-1.5 text-xs font-semibold text-coral-foreground disabled:opacity-50"
+                title="AI generates a brand-new on-topic question on a fresh sub-topic"
+              >
+                Regenerate (AI)
+              </button>
+              <button
+                type="button"
                 onClick={() => void onBulkReset()}
                 disabled={bulkRunning}
                 className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold hover:bg-muted disabled:opacity-50"
@@ -506,6 +524,7 @@ function CategoryCheckPage() {
               >
                 Disable
               </button>
+
             </div>
           )}
         </div>
