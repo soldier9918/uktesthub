@@ -56,6 +56,7 @@ import { Route as AdminKb20LoginRouteImport } from './routes/admin-kb20.login'
 import { Route as AdminKb20ImportExportRouteImport } from './routes/admin-kb20.import-export'
 import { Route as AdminKb20ImagesRouteImport } from './routes/admin-kb20.images'
 import { Route as AdminKb20DiagnosticsRouteImport } from './routes/admin-kb20.diagnostics'
+import { Route as AdminKb20CategoryCheckRouteImport } from './routes/admin-kb20.category-check'
 import { Route as AdminKb20CategoriesRouteImport } from './routes/admin-kb20.categories'
 import { Route as AdminKb20BulkEditRouteImport } from './routes/admin-kb20.bulk-edit'
 import { Route as AdminKb20AnalyticsRouteImport } from './routes/admin-kb20.analytics'
@@ -299,6 +300,11 @@ const AdminKb20DiagnosticsRoute = AdminKb20DiagnosticsRouteImport.update({
   path: '/admin-kb20/diagnostics',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AdminKb20CategoryCheckRoute = AdminKb20CategoryCheckRouteImport.update({
+  id: '/admin-kb20/category-check',
+  path: '/admin-kb20/category-check',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AdminKb20CategoriesRoute = AdminKb20CategoriesRouteImport.update({
   id: '/admin-kb20/categories',
   path: '/admin-kb20/categories',
@@ -368,6 +374,7 @@ export interface FileRoutesByFullPath {
   '/admin-kb20/analytics': typeof AdminKb20AnalyticsRoute
   '/admin-kb20/bulk-edit': typeof AdminKb20BulkEditRoute
   '/admin-kb20/categories': typeof AdminKb20CategoriesRoute
+  '/admin-kb20/category-check': typeof AdminKb20CategoryCheckRoute
   '/admin-kb20/diagnostics': typeof AdminKb20DiagnosticsRoute
   '/admin-kb20/images': typeof AdminKb20ImagesRoute
   '/admin-kb20/import-export': typeof AdminKb20ImportExportRoute
@@ -423,6 +430,7 @@ export interface FileRoutesByTo {
   '/admin-kb20/analytics': typeof AdminKb20AnalyticsRoute
   '/admin-kb20/bulk-edit': typeof AdminKb20BulkEditRoute
   '/admin-kb20/categories': typeof AdminKb20CategoriesRoute
+  '/admin-kb20/category-check': typeof AdminKb20CategoryCheckRoute
   '/admin-kb20/diagnostics': typeof AdminKb20DiagnosticsRoute
   '/admin-kb20/images': typeof AdminKb20ImagesRoute
   '/admin-kb20/import-export': typeof AdminKb20ImportExportRoute
@@ -480,6 +488,7 @@ export interface FileRoutesById {
   '/admin-kb20/analytics': typeof AdminKb20AnalyticsRoute
   '/admin-kb20/bulk-edit': typeof AdminKb20BulkEditRoute
   '/admin-kb20/categories': typeof AdminKb20CategoriesRoute
+  '/admin-kb20/category-check': typeof AdminKb20CategoryCheckRoute
   '/admin-kb20/diagnostics': typeof AdminKb20DiagnosticsRoute
   '/admin-kb20/images': typeof AdminKb20ImagesRoute
   '/admin-kb20/import-export': typeof AdminKb20ImportExportRoute
@@ -538,6 +547,7 @@ export interface FileRouteTypes {
     | '/admin-kb20/analytics'
     | '/admin-kb20/bulk-edit'
     | '/admin-kb20/categories'
+    | '/admin-kb20/category-check'
     | '/admin-kb20/diagnostics'
     | '/admin-kb20/images'
     | '/admin-kb20/import-export'
@@ -593,6 +603,7 @@ export interface FileRouteTypes {
     | '/admin-kb20/analytics'
     | '/admin-kb20/bulk-edit'
     | '/admin-kb20/categories'
+    | '/admin-kb20/category-check'
     | '/admin-kb20/diagnostics'
     | '/admin-kb20/images'
     | '/admin-kb20/import-export'
@@ -649,6 +660,7 @@ export interface FileRouteTypes {
     | '/admin-kb20/analytics'
     | '/admin-kb20/bulk-edit'
     | '/admin-kb20/categories'
+    | '/admin-kb20/category-check'
     | '/admin-kb20/diagnostics'
     | '/admin-kb20/images'
     | '/admin-kb20/import-export'
@@ -706,6 +718,7 @@ export interface RootRouteChildren {
   AdminKb20AnalyticsRoute: typeof AdminKb20AnalyticsRoute
   AdminKb20BulkEditRoute: typeof AdminKb20BulkEditRoute
   AdminKb20CategoriesRoute: typeof AdminKb20CategoriesRoute
+  AdminKb20CategoryCheckRoute: typeof AdminKb20CategoryCheckRoute
   AdminKb20DiagnosticsRoute: typeof AdminKb20DiagnosticsRoute
   AdminKb20ImagesRoute: typeof AdminKb20ImagesRoute
   AdminKb20ImportExportRoute: typeof AdminKb20ImportExportRoute
@@ -1060,6 +1073,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AdminKb20DiagnosticsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/admin-kb20/category-check': {
+      id: '/admin-kb20/category-check'
+      path: '/admin-kb20/category-check'
+      fullPath: '/admin-kb20/category-check'
+      preLoaderRoute: typeof AdminKb20CategoryCheckRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/admin-kb20/categories': {
       id: '/admin-kb20/categories'
       path: '/admin-kb20/categories'
@@ -1156,6 +1176,7 @@ const rootRouteChildren: RootRouteChildren = {
   AdminKb20AnalyticsRoute: AdminKb20AnalyticsRoute,
   AdminKb20BulkEditRoute: AdminKb20BulkEditRoute,
   AdminKb20CategoriesRoute: AdminKb20CategoriesRoute,
+  AdminKb20CategoryCheckRoute: AdminKb20CategoryCheckRoute,
   AdminKb20DiagnosticsRoute: AdminKb20DiagnosticsRoute,
   AdminKb20ImagesRoute: AdminKb20ImagesRoute,
   AdminKb20ImportExportRoute: AdminKb20ImportExportRoute,
