@@ -415,7 +415,7 @@ ${JSON.stringify(
         const gen: SourceQuestion = {
           id: source.id,
           type: source.type,
-          question: parsed.question,
+          question: sanitizeGeneratedQuestion(parsed.question),
           options,
           correctAnswer: supportsMulti ? undefined : correctAnswer,
           correctAnswers: supportsMulti ? correctAnswers : undefined,
@@ -934,7 +934,7 @@ Now write a completely fresh question.`;
         const gen: SourceQuestion = {
           id: source.id,
           type: source.type,
-          question: parsed.question,
+          question: sanitizeGeneratedQuestion(parsed.question),
           options,
           correctAnswer: supportsMulti ? undefined : correctAnswer,
           correctAnswers: supportsMulti ? correctAnswers : undefined,
