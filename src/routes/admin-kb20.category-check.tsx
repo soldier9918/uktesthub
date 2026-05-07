@@ -564,20 +564,35 @@ function CategoryCheckPage() {
                         <span className="text-[10px] uppercase text-muted-foreground">
                           in {f.matchedIn.join(", ")}
                         </span>
-                        <Link
-                          to="/admin-kb20/questions/$topic"
-                          params={{ topic: f.topic }}
-                          search={{ q: f.id, from: "validator" }}
-                          className="ml-auto text-xs font-semibold text-coral hover:underline"
-                        >
-                          Open in editor →
-                        </Link>
-                        <Link
-                          to="/admin-kb20/search"
-                          className="text-xs font-semibold text-muted-foreground hover:underline"
-                        >
-                          Bulk-fix in Search →
-                        </Link>
+                        <div className="ml-auto flex flex-wrap items-center gap-2">
+                          <button
+                            type="button"
+                            onClick={() => void onSingleRegen(f, "rewrite")}
+                            disabled={busy || bulkRunning}
+                            className="rounded-md border border-coral/50 bg-coral/10 px-2 py-1 text-[11px] font-semibold text-coral hover:bg-coral/20 disabled:opacity-50"
+                            title="AI rewrites this question on-topic, keeping the underlying concept"
+                          >
+                            {busy ? "Working…" : "Reword"}
+                          </button>
+                          <button
+                            type="button"
+                            onClick={() => void onSingleRegen(f, "complete")}
+                            disabled={busy || bulkRunning}
+                            className="rounded-md bg-gradient-coral px-2 py-1 text-[11px] font-semibold text-coral-foreground disabled:opacity-50"
+                            title="AI generates a brand-new on-topic question"
+                          >
+                            Regenerate
+                          </button>
+                          <Link
+                            to="/admin-kb20/questions/$topic"
+                            params={{ topic: f.topic }}
+                            search={{ q: f.id, from: "validator" }}
+                            className="text-xs font-semibold text-muted-foreground hover:underline"
+                          >
+                            Open in editor →
+                          </Link>
+                        </div>
+
                       </div>
                       <p>{f.question}</p>
                       {f.options.length > 0 && (
