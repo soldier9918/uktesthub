@@ -70,6 +70,18 @@ function SearchPage() {
   const [regenResults, setRegenResults] = useState<Record<string, RegenResult>>({});
   const [bulkRunning, setBulkRunning] = useState(false);
   const [bulkProgress, setBulkProgress] = useState("");
+  const [selected, setSelected] = useState<Set<string>>(new Set());
+
+  const toggleSelected = (key: string) => {
+    setSelected((prev) => {
+      const n = new Set(prev);
+      if (n.has(key)) n.delete(key);
+      else n.add(key);
+      return n;
+    });
+  };
+  const selectAll = () => setSelected(new Set(hits.map((h) => `${h.topic}::${h.id}`)));
+  const clearSelected = () => setSelected(new Set());
 
   const topicsForCategory = useMemo(() => {
     if (categorySlug === "__all__") {
@@ -284,14 +296,20 @@ function SearchPage() {
     setBusyKey(null);
   };
 
+  const targetHits = (): Hit[] => {
+    if (selected.size === 0) return hits;
+    return hits.filter((h) => selected.has(`${h.topic}::${h.id}`));
+  };
+
   const onBulk = async (mode: "rewrite" | "complete") => {
-    if (!hits.length) return;
-    if (!confirm(`Regenerate ${hits.length} matched question(s) using "${mode === "rewrite" ? "Reword" : "Complete regenerate"}"? This rewrites them via AI.`)) return;
+    const list = targetHits();
+    if (!list.length) return;
+    if (!confirm(`Regenerate ${list.length} question(s) using "${mode === "rewrite" ? "Reword" : "Complete regenerate"}"? This rewrites them via AI.`)) return;
     setBulkRunning(true);
     let i = 0;
-    for (const h of hits) {
+    for (const h of list) {
       i++;
-      setBulkProgress(`${i}/${hits.length} — ${h.topic} ${h.id}`);
+      setBulkProgress(`${i}/${list.length} — ${h.topic} ${h.id}`);
       const k = `${h.topic}::${h.id}`;
       setBusyKey(k);
       const r = await regenerateHit(h, mode);
@@ -300,6 +318,53 @@ function SearchPage() {
     setBusyKey(null);
     setBulkRunning(false);
     setBulkProgress("");
+  };
+
+  const onBulkDisable = async () => {
+    const list = targetHits();
+    if (!list.length) return;
+    if (!confirm(`Disable ${list.length} question(s)? They will be hidden from live quizzes (you can re-enable later in the topic editor).`)) return;
+    setBulkRunning(true);
+    let i = 0;
+    let failed = 0;
+    for (const h of list) {
+      i++;
+      setBulkProgress(`Disabling ${i}/${list.length} — ${h.topic} ${h.id}`);
+      const { error } = await supabase
+        .from("question_overrides")
+        .upsert(
+          { topic: h.topic, question_id: h.id, disabled: true },
+          { onConflict: "topic,question_id" },
+        );
+      if (error) failed++;
+    }
+    invalidateOverrides();
+    setBulkRunning(false);
+    setBulkProgress("");
+    alert(failed === 0 ? `Disabled ${list.length} question(s).` : `Disabled with ${failed} failure(s).`);
+  };
+
+  const onBulkResetOverride = async () => {
+    const list = targetHits();
+    if (!list.length) return;
+    if (!confirm(`Reset ${list.length} question(s) to original? This deletes any AI-generated override and restores the original bank text.`)) return;
+    setBulkRunning(true);
+    let failed = 0;
+    let i = 0;
+    for (const h of list) {
+      i++;
+      setBulkProgress(`Resetting ${i}/${list.length} — ${h.topic} ${h.id}`);
+      const { error } = await supabase
+        .from("question_overrides")
+        .delete()
+        .eq("topic", h.topic)
+        .eq("question_id", h.id);
+      if (error) failed++;
+    }
+    invalidateOverrides();
+    setBulkRunning(false);
+    setBulkProgress("");
+    alert(failed === 0 ? `Reset ${list.length} question(s) to original.` : `Reset with ${failed} failure(s). Re-run search to confirm.`);
   };
 
   const highlight = (text: string): React.ReactNode => {
@@ -427,23 +492,60 @@ function SearchPage() {
               {bulkRunning && (
                 <span className="text-xs text-muted-foreground">{bulkProgress}</span>
               )}
+              <span className="text-xs text-muted-foreground">
+                {selected.size > 0 ? `${selected.size} selected` : "no selection (acts on all)"}
+              </span>
+              <button
+                type="button"
+                onClick={selectAll}
+                disabled={bulkRunning}
+                className="rounded-md border border-border bg-card px-2 py-1 text-xs hover:bg-muted disabled:opacity-50"
+              >
+                Select all
+              </button>
+              <button
+                type="button"
+                onClick={clearSelected}
+                disabled={bulkRunning || selected.size === 0}
+                className="rounded-md border border-border bg-card px-2 py-1 text-xs hover:bg-muted disabled:opacity-50"
+              >
+                Clear
+              </button>
               <button
                 type="button"
                 onClick={() => void onBulk("rewrite")}
                 disabled={bulkRunning}
                 className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold hover:bg-muted disabled:opacity-50"
-                title="Rewrite each matched question, keeping it on the same topic"
+                title="Rewrite each (selected or all) question, keeping it on the same topic"
               >
-                Reword all ({hits.length})
+                Reword {selected.size > 0 ? `selected (${selected.size})` : `all (${hits.length})`}
               </button>
               <button
                 type="button"
                 onClick={() => void onBulk("complete")}
                 disabled={bulkRunning}
                 className="rounded-xl bg-gradient-coral px-3 py-1.5 text-xs font-semibold text-coral-foreground disabled:opacity-50"
-                title="Replace each matched question with a brand-new question on the topic"
+                title="Replace each (selected or all) question with a brand-new question on the topic"
               >
-                Regenerate all ({hits.length})
+                Regenerate {selected.size > 0 ? `selected (${selected.size})` : `all (${hits.length})`}
+              </button>
+              <button
+                type="button"
+                onClick={() => void onBulkResetOverride()}
+                disabled={bulkRunning}
+                className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold hover:bg-muted disabled:opacity-50"
+                title="Delete the AI override and restore the original bank text"
+              >
+                Reset to original
+              </button>
+              <button
+                type="button"
+                onClick={() => void onBulkDisable()}
+                disabled={bulkRunning}
+                className="rounded-md border border-destructive/50 bg-destructive/10 px-3 py-1.5 text-xs font-semibold text-destructive hover:bg-destructive/20 disabled:opacity-50"
+                title="Hide these questions from live quizzes"
+              >
+                Disable
               </button>
             </div>
           )}
@@ -459,20 +561,29 @@ function SearchPage() {
           const busy = busyKey === key;
           return (
             <div key={key} className="rounded-md border border-border bg-card">
-              <button
-                type="button"
-                onClick={() => toggleOpen(key)}
-                className="flex w-full items-start gap-3 px-3 py-2 text-left hover:bg-muted/50"
-              >
-                <Badge variant="secondary" className="shrink-0 font-mono text-[10px]">
-                  {h.topic}
-                </Badge>
-                <span className="flex-1 text-sm">{highlight(h.question)}</span>
-                <span className="shrink-0 text-[10px] uppercase tracking-wide text-muted-foreground">
-                  {h.matchedIn.join(", ")}
-                </span>
-                <span className="shrink-0 text-xs text-coral">{open ? "Hide" : "Show"}</span>
-              </button>
+              <div className="flex items-start gap-2 px-3 py-2 hover:bg-muted/50">
+                <input
+                  type="checkbox"
+                  checked={selected.has(key)}
+                  onChange={() => toggleSelected(key)}
+                  className="mt-1 shrink-0"
+                  aria-label="Select for bulk action"
+                />
+                <button
+                  type="button"
+                  onClick={() => toggleOpen(key)}
+                  className="flex flex-1 items-start gap-3 text-left"
+                >
+                  <Badge variant="secondary" className="shrink-0 font-mono text-[10px]">
+                    {h.topic}
+                  </Badge>
+                  <span className="flex-1 text-sm">{highlight(h.question)}</span>
+                  <span className="shrink-0 text-[10px] uppercase tracking-wide text-muted-foreground">
+                    {h.matchedIn.join(", ")}
+                  </span>
+                  <span className="shrink-0 text-xs text-coral">{open ? "Hide" : "Show"}</span>
+                </button>
+              </div>
               {open && (
                 <div className="space-y-2 border-t border-border px-3 py-3 text-sm">
                   <div className="flex flex-wrap items-center gap-2">
