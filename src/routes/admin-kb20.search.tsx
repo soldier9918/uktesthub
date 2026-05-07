@@ -561,20 +561,29 @@ function SearchPage() {
           const busy = busyKey === key;
           return (
             <div key={key} className="rounded-md border border-border bg-card">
-              <button
-                type="button"
-                onClick={() => toggleOpen(key)}
-                className="flex w-full items-start gap-3 px-3 py-2 text-left hover:bg-muted/50"
-              >
-                <Badge variant="secondary" className="shrink-0 font-mono text-[10px]">
-                  {h.topic}
-                </Badge>
-                <span className="flex-1 text-sm">{highlight(h.question)}</span>
-                <span className="shrink-0 text-[10px] uppercase tracking-wide text-muted-foreground">
-                  {h.matchedIn.join(", ")}
-                </span>
-                <span className="shrink-0 text-xs text-coral">{open ? "Hide" : "Show"}</span>
-              </button>
+              <div className="flex items-start gap-2 px-3 py-2 hover:bg-muted/50">
+                <input
+                  type="checkbox"
+                  checked={selected.has(key)}
+                  onChange={() => toggleSelected(key)}
+                  className="mt-1 shrink-0"
+                  aria-label="Select for bulk action"
+                />
+                <button
+                  type="button"
+                  onClick={() => toggleOpen(key)}
+                  className="flex flex-1 items-start gap-3 text-left"
+                >
+                  <Badge variant="secondary" className="shrink-0 font-mono text-[10px]">
+                    {h.topic}
+                  </Badge>
+                  <span className="flex-1 text-sm">{highlight(h.question)}</span>
+                  <span className="shrink-0 text-[10px] uppercase tracking-wide text-muted-foreground">
+                    {h.matchedIn.join(", ")}
+                  </span>
+                  <span className="shrink-0 text-xs text-coral">{open ? "Hide" : "Show"}</span>
+                </button>
+              </div>
               {open && (
                 <div className="space-y-2 border-t border-border px-3 py-3 text-sm">
                   <div className="flex flex-wrap items-center gap-2">
