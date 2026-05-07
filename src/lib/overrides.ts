@@ -24,14 +24,23 @@ export async function loadOverrides(): Promise<Map<string, QuestionOverride>> {
   if (cache) return cache;
   if (inflight) return inflight;
   inflight = (async () => {
-    const { data, error } = await supabase
-      .from("question_overrides")
-      .select("topic,question_id,question,options,correct_answer,explanation,image,image_alt,disabled");
     const map = new Map<string, QuestionOverride>();
-    if (!error && data) {
+    const PAGE = 1000;
+    let from = 0;
+    // Paginate to bypass Supabase's default 1000-row cap.
+    while (true) {
+      const { data, error } = await supabase
+        .from("question_overrides")
+        .select("topic,question_id,question,options,correct_answer,explanation,image,image_alt,disabled")
+        .order("topic", { ascending: true })
+        .order("question_id", { ascending: true })
+        .range(from, from + PAGE - 1);
+      if (error || !data) break;
       for (const row of data) {
         map.set(key(row.topic, row.question_id), row as unknown as QuestionOverride);
       }
+      if (data.length < PAGE) break;
+      from += PAGE;
     }
     cache = map;
     inflight = null;
