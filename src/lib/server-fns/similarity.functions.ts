@@ -133,6 +133,63 @@ type SourceQuestion = {
   imageAlt?: string;
 };
 
+function questionTextOnly(blobOrQuestion: string): string {
+  return (blobOrQuestion ?? "").split("|")[0]?.trim() ?? "";
+}
+
+function openingSlice(blobOrQuestion: string, words = 18): string {
+  return questionTextOnly(blobOrQuestion)
+    .toLowerCase()
+    .replace(/[^a-z0-9\s]+/g, " ")
+    .split(/\s+/)
+    .filter(Boolean)
+    .slice(0, words)
+    .join(" ");
+}
+
+async function loadSavedOverrideBlobs(): Promise<string[]> {
+  const out: string[] = [];
+  const PAGE = 1000;
+  let from = 0;
+  while (true) {
+    const { data, error } = await supabaseAdmin
+      .from("question_overrides")
+      .select("question,options,explanation,disabled")
+      .range(from, from + PAGE - 1);
+    if (error || !data) break;
+    for (const row of data as Array<{ question: string | null; options: string[] | null; explanation: string | null; disabled?: boolean | null }>) {
+      if (row.disabled || !row.question) continue;
+      out.push(`${row.question} | ${(row.options ?? []).join(" | ")} | ${row.explanation ?? ""}`);
+    }
+    if (data.length < PAGE) break;
+    from += PAGE;
+  }
+  return out;
+}
+
+function hasRepeatedOpening(
+  candidateQuestion: string,
+  comparisonBlobs: string[],
+  trigramsFn: (s: string) => Set<string>,
+  jaccardFn: (a: Set<string>, b: Set<string>) => number,
+): { repeated: boolean; score: number; matchedOpening: string } {
+  const candidateOpening = openingSlice(candidateQuestion);
+  if (!candidateOpening) return { repeated: false, score: 0, matchedOpening: "" };
+  const candidateTri = trigramsFn(candidateOpening);
+  let score = 0;
+  let matchedOpening = "";
+  for (const blob of comparisonBlobs) {
+    const opening = openingSlice(blob);
+    if (!opening || opening === candidateOpening) continue;
+    const s = jaccardFn(candidateTri, trigramsFn(opening));
+    if (s > score) {
+      score = s;
+      matchedOpening = opening;
+    }
+  }
+  return { repeated: score >= 0.48, score, matchedOpening };
+}
+
 export const regenerateUniqueQuestion = createServerFn({ method: "POST" })
   .inputValidator(
     (d: {
