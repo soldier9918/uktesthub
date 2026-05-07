@@ -296,14 +296,20 @@ function SearchPage() {
     setBusyKey(null);
   };
 
+  const targetHits = (): Hit[] => {
+    if (selected.size === 0) return hits;
+    return hits.filter((h) => selected.has(`${h.topic}::${h.id}`));
+  };
+
   const onBulk = async (mode: "rewrite" | "complete") => {
-    if (!hits.length) return;
-    if (!confirm(`Regenerate ${hits.length} matched question(s) using "${mode === "rewrite" ? "Reword" : "Complete regenerate"}"? This rewrites them via AI.`)) return;
+    const list = targetHits();
+    if (!list.length) return;
+    if (!confirm(`Regenerate ${list.length} question(s) using "${mode === "rewrite" ? "Reword" : "Complete regenerate"}"? This rewrites them via AI.`)) return;
     setBulkRunning(true);
     let i = 0;
-    for (const h of hits) {
+    for (const h of list) {
       i++;
-      setBulkProgress(`${i}/${hits.length} — ${h.topic} ${h.id}`);
+      setBulkProgress(`${i}/${list.length} — ${h.topic} ${h.id}`);
       const k = `${h.topic}::${h.id}`;
       setBusyKey(k);
       const r = await regenerateHit(h, mode);
@@ -312,6 +318,53 @@ function SearchPage() {
     setBusyKey(null);
     setBulkRunning(false);
     setBulkProgress("");
+  };
+
+  const onBulkDisable = async () => {
+    const list = targetHits();
+    if (!list.length) return;
+    if (!confirm(`Disable ${list.length} question(s)? They will be hidden from live quizzes (you can re-enable later in the topic editor).`)) return;
+    setBulkRunning(true);
+    let i = 0;
+    let failed = 0;
+    for (const h of list) {
+      i++;
+      setBulkProgress(`Disabling ${i}/${list.length} — ${h.topic} ${h.id}`);
+      const { error } = await supabase
+        .from("question_overrides")
+        .upsert(
+          { topic: h.topic, question_id: h.id, disabled: true },
+          { onConflict: "topic,question_id" },
+        );
+      if (error) failed++;
+    }
+    invalidateOverrides();
+    setBulkRunning(false);
+    setBulkProgress("");
+    alert(failed === 0 ? `Disabled ${list.length} question(s).` : `Disabled with ${failed} failure(s).`);
+  };
+
+  const onBulkResetOverride = async () => {
+    const list = targetHits();
+    if (!list.length) return;
+    if (!confirm(`Reset ${list.length} question(s) to original? This deletes any AI-generated override and restores the original bank text.`)) return;
+    setBulkRunning(true);
+    let failed = 0;
+    let i = 0;
+    for (const h of list) {
+      i++;
+      setBulkProgress(`Resetting ${i}/${list.length} — ${h.topic} ${h.id}`);
+      const { error } = await supabase
+        .from("question_overrides")
+        .delete()
+        .eq("topic", h.topic)
+        .eq("question_id", h.id);
+      if (error) failed++;
+    }
+    invalidateOverrides();
+    setBulkRunning(false);
+    setBulkProgress("");
+    alert(failed === 0 ? `Reset ${list.length} question(s) to original.` : `Reset with ${failed} failure(s). Re-run search to confirm.`);
   };
 
   const highlight = (text: string): React.ReactNode => {
