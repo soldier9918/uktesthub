@@ -228,7 +228,13 @@ export const regenerateUniqueQuestion = createServerFn({ method: "POST" })
 
       // Lazy import similarity to keep this server-only.
       const { trigrams, jaccard, normalizeForSimilarity } = await import("@/lib/admin/similarity");
-      const existingTri = data.existingBlobs.map((b) => trigrams(b));
+      const allSavedOverrideBlobs = await loadSavedOverrideBlobs();
+      const comparisonBlobs = [...data.existingBlobs, ...allSavedOverrideBlobs];
+      const existingTri = comparisonBlobs.map((b) => trigrams(b));
+      const repeatedOpenings = Array.from(new Set(comparisonBlobs.map((b) => openingSlice(b, 14)).filter(Boolean)))
+        .slice(0, 60)
+        .map((s, i) => `${i + 1}. ${s}`)
+        .join("\n");
 
       const isDriving = data.category === "driving" || data.category === "taxi-private-hire";
       const sysPrompt = `You write UK exam practice questions for "${data.categoryTitle} — ${data.topicTitle}".
@@ -244,7 +250,9 @@ Rules:
 - Exactly one correct answer unless the type is "multiple-response".
 - For MCQ-style: 4 plausible options, distractors must be realistic but clearly wrong.
 - Keep the same answer count as the source where possible.
-- Do NOT reuse phrases or distinctive wording from the source.`;
+- Do NOT reuse phrases or distinctive wording from the source.
+- The opening sentence MUST have a different rhythm and setup from existing regenerated questions. Do NOT start with repeated stock setups such as "While driving...", "You are driving along...", "You are driving away from...", or any similar "You are [verb] ... and see..." formula.
+- Vary perspective and structure: sometimes ask directly about a rule, a consequence, a sign meaning, a responsibility, a calculation, or a short realistic case. Never rely on the same scenario template twice.`;
 
       const userPrompt = `Source question (DO NOT REUSE WORDING):
 ${JSON.stringify(
@@ -258,6 +266,10 @@ ${JSON.stringify(
         null,
         2,
       )}`;
+
+      const openingAvoidancePrompt = repeatedOpenings
+        ? `\n\nExisting question openings across the bank. Your new question must NOT sound like these openings:\n${repeatedOpenings}`
+        : "";
 
       const tool = {
         type: "function" as const,
@@ -294,9 +306,9 @@ ${JSON.stringify(
             model: "google/gemini-2.5-pro",
             messages: [
               { role: "system", content: sysPrompt },
-              { role: "user", content: userPrompt },
+              { role: "user", content: `${userPrompt}${openingAvoidancePrompt}` },
               ...(attempt > 1
-                ? [{ role: "user", content: `Previous attempt was too similar to an existing question (Jaccard ${best?.sim.toFixed(2)}). Try again with completely different wording, structure, and example.` }]
+                ? [{ role: "user", content: `Previous attempt was too similar to an existing question (Jaccard ${best?.sim.toFixed(2)}). Try again with a completely different opening, sentence structure, wording, and example.` }]
                 : []),
             ],
             tools: [tool],
@@ -379,12 +391,16 @@ ${JSON.stringify(
         const srcSim = jaccard(candTri, trigrams(srcBlob));
         if (srcSim > maxSim) maxSim = srcSim;
 
+        const openingCheck = hasRepeatedOpening(gen.question ?? "", comparisonBlobs, trigrams, jaccard);
+
         if (!best || maxSim < best.sim) best = { gen, sim: maxSim };
-        if (maxSim < SIM_REJECT) {
+        if (maxSim < SIM_REJECT && !openingCheck.repeated) {
           break;
         }
         // else loop and retry
-        lastError = `similarity ${maxSim.toFixed(2)} too high`;
+        lastError = openingCheck.repeated
+          ? `opening too similar (${openingCheck.score.toFixed(2)}): ${openingCheck.matchedOpening}`
+          : `similarity ${maxSim.toFixed(2)} too high`;
       }
 
       if (!best) {
