@@ -896,7 +896,10 @@ function SimilarPage() {
                           </Link>
                         </div>
                         <p className="mt-1 line-clamp-2 text-sm text-muted-foreground">
-                          <span className="font-semibold text-foreground/70">Original: </span>{text}
+                          <span className="font-semibold text-foreground/70">
+                            {diff ? "Updated: " : "Original: "}
+                          </span>
+                          {diff ? String(diff.after.question ?? diff.after.template ?? diff.after.prompt ?? text) : text}
                         </p>
                         <div className="mt-2 flex flex-wrap items-center gap-2">
                           <Button
@@ -1046,7 +1049,10 @@ function SimilarPage() {
                               </Link>
                             </div>
                             <p className="mt-1 line-clamp-2 text-sm text-muted-foreground">
-                              <span className="font-semibold text-foreground/70">Original: </span>{m.text}
+                              <span className="font-semibold text-foreground/70">
+                                {diff ? "Updated: " : "Original: "}
+                              </span>
+                              {diff ? String(diff.after.question ?? diff.after.template ?? diff.after.prompt ?? m.text) : m.text}
                             </p>
                             <div className="mt-2 flex flex-wrap items-center gap-2">
                               <Button
