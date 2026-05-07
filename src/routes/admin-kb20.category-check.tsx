@@ -309,19 +309,37 @@ function CategoryCheckPage() {
     setBulkRunning(true);
     let i = 0;
     let failed = 0;
+    const errors: string[] = [];
     const fixed: { topic: string; id: string }[] = [];
     for (const f of list) {
       i++;
       setBulkMsg(`${label} ${i}/${list.length} — ${f.topic} ${f.id}`);
-      const r = await regenerateFlag(f, mode);
-      if (!r.ok) failed++;
-      else fixed.push({ topic: f.topic, id: f.id });
+      let r: { ok: boolean; error?: string };
+      try {
+        r = await regenerateFlag(f, mode);
+      } catch (e) {
+        r = { ok: false, error: (e as Error)?.message ?? String(e) };
+      }
+      if (!r.ok) {
+        failed++;
+        errors.push(`${f.topic} ${f.id}: ${r.error ?? "unknown"}`);
+        console.error(`[category-check] ${label} failed for ${f.topic} ${f.id}:`, r.error);
+      } else {
+        fixed.push({ topic: f.topic, id: f.id });
+      }
     }
     setBulkRunning(false);
     setBulkMsg("");
     setFlags((prev) => prev.filter((x) => !fixed.some((y) => y.topic === x.topic && y.id === x.id)));
     setSelected(new Set());
-    alert(failed === 0 ? `${label}: ${list.length} done.` : `${label}: ${list.length - failed} done, ${failed} failed.`);
+    if (failed === 0) {
+      alert(`${label}: ${list.length} done.`);
+    } else {
+      alert(
+        `${label}: ${list.length - failed} done, ${failed} failed.\n\nFirst errors:\n${errors.slice(0, 5).join("\n")}`,
+      );
+    }
+
   };
 
   const onBulkDisable = async () => {
