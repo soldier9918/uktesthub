@@ -6,6 +6,11 @@ import { loadTopicFileForAdmin } from "@/data/mocks";
 import { applyOverrideToQuestionRecord, invalidateOverrides, loadOverrides } from "@/lib/overrides";
 import { Badge } from "@/components/ui/badge";
 import { supabase } from "@/integrations/supabase/client";
+import { buildBlob } from "@/lib/admin/similarity";
+import {
+  completeRegenerateQuestion,
+  regenerateUniqueQuestion,
+} from "@/lib/server-fns/similarity.functions";
 
 export const Route = createFileRoute("/admin-kb20/category-check")({
   head: () => ({
@@ -196,7 +201,131 @@ function CategoryCheckPage() {
     return flags.filter((f) => selected.has(`${f.topic}::${f.id}`));
   };
 
+  // Regenerate a single flagged question via AI (category-aware prompt).
+  // mode "rewrite" = topic-only reword; "complete" = brand-new question on a fresh sub-topic.
+  const regenerateFlag = async (f: Flag, mode: "rewrite" | "complete"): Promise<{ ok: boolean; error?: string }> => {
+    const overrides = await loadOverrides();
+    const file = await loadTopicFileForAdmin(f.topic);
+    if (!file) return { ok: false, error: "topic file missing" };
+    const isV2 = (file as { version?: number }).version === 2;
+    const rawBank: AnyQ[] = isV2
+      ? ((file as { bank: AnyQ[] }).bank ?? [])
+      : ((file as { tests: { questions: AnyQ[] }[] }).tests ?? []).flatMap((t) => t.questions ?? []);
+    const sourceRaw = rawBank.find((q) => String(q.id) === f.id);
+    if (!sourceRaw) return { ok: false, error: "source not found" };
+    const source = applyOverrideToQuestionRecord(sourceRaw, overrides.get(`${f.topic}::${f.id}`));
+
+    const { data: sess } = await supabase.auth.getSession();
+    const accessToken = sess.session?.access_token ?? "";
+
+    const sourcePayload = {
+      id: f.id,
+      type: source.type as string | undefined,
+      question: source.question as string | undefined,
+      template: source.template as string | undefined,
+      prompt: source.prompt as string | undefined,
+      options: source.options as string[] | undefined,
+      correctAnswer: source.correctAnswer as number | boolean | undefined,
+      correctAnswers: source.correctAnswers as number[] | undefined,
+      explanation: source.explanation as string | undefined,
+      image: source.image as string | undefined,
+      imageAlt: source.imageAlt as string | undefined,
+    };
+
+    if (mode === "rewrite") {
+      const existingBlobs = rawBank
+        .filter((q) => String(q.id) !== f.id)
+        .map((raw) => {
+          const q = applyOverrideToQuestionRecord(raw, overrides.get(`${f.topic}::${raw.id}`));
+          return buildBlob(q as Parameters<typeof buildBlob>[0]);
+        });
+      const res = await regenerateUniqueQuestion({
+        data: {
+          accessToken,
+          topic: f.topic,
+          topicTitle: f.topicTitle,
+          category: f.catSlug,
+          categoryTitle: f.catTitle,
+          source: sourcePayload,
+          existingBlobs,
+        },
+      });
+      if (res.error || !res.generated) return { ok: false, error: res.error ?? "unknown error" };
+      invalidateOverrides();
+      return { ok: true };
+    }
+
+    const cat = categories.find((c) => c.slug === f.catSlug);
+    if (!cat) return { ok: false, error: "category missing" };
+    const categoryBlobs: string[] = [];
+    for (const t of cat.topics) {
+      const fileT = await loadTopicFileForAdmin(t.slug);
+      if (!fileT) continue;
+      const v2 = (fileT as { version?: number }).version === 2;
+      const bank: AnyQ[] = v2
+        ? ((fileT as { bank: AnyQ[] }).bank ?? [])
+        : ((fileT as { tests: { questions: AnyQ[] }[] }).tests ?? []).flatMap((tt) => tt.questions ?? []);
+      for (const raw of bank) {
+        if (!raw.id) continue;
+        if (t.slug === f.topic && String(raw.id) === f.id) continue;
+        const q = applyOverrideToQuestionRecord(raw, overrides.get(`${t.slug}::${raw.id}`));
+        categoryBlobs.push(buildBlob(q as Parameters<typeof buildBlob>[0]));
+      }
+    }
+    const res = await completeRegenerateQuestion({
+      data: {
+        accessToken,
+        topic: f.topic,
+        topicTitle: f.topicTitle,
+        category: f.catSlug,
+        categoryTitle: f.catTitle,
+        source: sourcePayload,
+        categoryBlobs,
+      },
+    });
+    if (res.error || !res.generated) return { ok: false, error: res.error ?? "unknown error" };
+    invalidateOverrides();
+    return { ok: true };
+  };
+
+  const onSingleRegen = async (f: Flag, mode: "rewrite" | "complete") => {
+    const k = `${f.topic}::${f.id}`;
+    setBusyKey(k);
+    const r = await regenerateFlag(f, mode);
+    setBusyKey(null);
+    if (!r.ok) {
+      alert(`Failed: ${r.error}`);
+      return;
+    }
+    // Remove from flag list — it's been rewritten on-topic.
+    setFlags((prev) => prev.filter((x) => !(x.topic === f.topic && x.id === f.id)));
+  };
+
+  const onBulkRegen = async (mode: "rewrite" | "complete") => {
+    const list = targetFlags();
+    if (!list.length) return;
+    const label = mode === "rewrite" ? "Reword" : "Complete regenerate";
+    if (!confirm(`${label} ${list.length} flagged question(s) with a category-aware prompt? This may take a while.`)) return;
+    setBulkRunning(true);
+    let i = 0;
+    let failed = 0;
+    const fixed: { topic: string; id: string }[] = [];
+    for (const f of list) {
+      i++;
+      setBulkMsg(`${label} ${i}/${list.length} — ${f.topic} ${f.id}`);
+      const r = await regenerateFlag(f, mode);
+      if (!r.ok) failed++;
+      else fixed.push({ topic: f.topic, id: f.id });
+    }
+    setBulkRunning(false);
+    setBulkMsg("");
+    setFlags((prev) => prev.filter((x) => !fixed.some((y) => y.topic === x.topic && y.id === x.id)));
+    setSelected(new Set());
+    alert(failed === 0 ? `${label}: ${list.length} done.` : `${label}: ${list.length - failed} done, ${failed} failed.`);
+  };
+
   const onBulkDisable = async () => {
+
     const list = targetFlags();
     if (!list.length) return;
     if (!confirm(`Disable ${list.length} flagged question(s)? They will be hidden from live quizzes.`)) return;
@@ -361,6 +490,24 @@ function CategoryCheckPage() {
               </button>
               <button
                 type="button"
+                onClick={() => void onBulkRegen("rewrite")}
+                disabled={bulkRunning}
+                className="rounded-md border border-coral/50 bg-coral/10 px-3 py-1.5 text-xs font-semibold text-coral hover:bg-coral/20 disabled:opacity-50"
+                title="AI rewrites each on-topic, keeping the same underlying concept"
+              >
+                Reword (AI)
+              </button>
+              <button
+                type="button"
+                onClick={() => void onBulkRegen("complete")}
+                disabled={bulkRunning}
+                className="rounded-xl bg-gradient-coral px-3 py-1.5 text-xs font-semibold text-coral-foreground disabled:opacity-50"
+                title="AI generates a brand-new on-topic question on a fresh sub-topic"
+              >
+                Regenerate (AI)
+              </button>
+              <button
+                type="button"
                 onClick={() => void onBulkReset()}
                 disabled={bulkRunning}
                 className="rounded-md border border-border bg-card px-3 py-1.5 text-xs font-semibold hover:bg-muted disabled:opacity-50"
@@ -377,6 +524,7 @@ function CategoryCheckPage() {
               >
                 Disable
               </button>
+
             </div>
           )}
         </div>
@@ -416,20 +564,35 @@ function CategoryCheckPage() {
                         <span className="text-[10px] uppercase text-muted-foreground">
                           in {f.matchedIn.join(", ")}
                         </span>
-                        <Link
-                          to="/admin-kb20/questions/$topic"
-                          params={{ topic: f.topic }}
-                          search={{ q: f.id, from: "validator" }}
-                          className="ml-auto text-xs font-semibold text-coral hover:underline"
-                        >
-                          Open in editor →
-                        </Link>
-                        <Link
-                          to="/admin-kb20/search"
-                          className="text-xs font-semibold text-muted-foreground hover:underline"
-                        >
-                          Bulk-fix in Search →
-                        </Link>
+                        <div className="ml-auto flex flex-wrap items-center gap-2">
+                          <button
+                            type="button"
+                            onClick={() => void onSingleRegen(f, "rewrite")}
+                            disabled={busy || bulkRunning}
+                            className="rounded-md border border-coral/50 bg-coral/10 px-2 py-1 text-[11px] font-semibold text-coral hover:bg-coral/20 disabled:opacity-50"
+                            title="AI rewrites this question on-topic, keeping the underlying concept"
+                          >
+                            {busy ? "Working…" : "Reword"}
+                          </button>
+                          <button
+                            type="button"
+                            onClick={() => void onSingleRegen(f, "complete")}
+                            disabled={busy || bulkRunning}
+                            className="rounded-md bg-gradient-coral px-2 py-1 text-[11px] font-semibold text-coral-foreground disabled:opacity-50"
+                            title="AI generates a brand-new on-topic question"
+                          >
+                            Regenerate
+                          </button>
+                          <Link
+                            to="/admin-kb20/questions/$topic"
+                            params={{ topic: f.topic }}
+                            search={{ q: f.id, from: "validator" }}
+                            className="text-xs font-semibold text-muted-foreground hover:underline"
+                          >
+                            Open in editor →
+                          </Link>
+                        </div>
+
                       </div>
                       <p>{f.question}</p>
                       {f.options.length > 0 && (
