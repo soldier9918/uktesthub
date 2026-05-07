@@ -124,8 +124,12 @@ export function useOverrides() {
   useEffect(() => {
     let mounted = true;
     const refresh = () => loadOverrides().then((m) => {
-      if (mounted) setMap(m);
+      if (mounted) setMap(new Map(m));
     });
+    // Always force a fresh DB fetch on mount so other tabs / external edits
+    // can't leave the page showing a stale module-level cache.
+    cache = null;
+    inflight = null;
     refresh();
     window.addEventListener("question-overrides-invalidated", refresh);
     return () => {
