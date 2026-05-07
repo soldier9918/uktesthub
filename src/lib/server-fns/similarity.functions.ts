@@ -383,9 +383,9 @@ ${JSON.stringify(
         }
 
         // Randomise correct-answer position (mcq / image-question only).
-        let options = [...(parsed.options ?? [])];
+        const options = [...(parsed.options ?? [])];
         let correctAnswer = parsed.correctAnswer;
-        let correctAnswers = parsed.correctAnswers;
+        const correctAnswers = parsed.correctAnswers;
         if (!supportsMulti && typeof correctAnswer === "number" && options[correctAnswer]) {
           const correctText = options[correctAnswer];
           for (let k = options.length - 1; k > 0; k--) {
@@ -902,7 +902,7 @@ Now write a completely fresh question.`;
         }
 
         // Randomise correct-answer position for single-correct types.
-        let options = [...(parsed.options ?? [])];
+        const options = [...(parsed.options ?? [])];
         let correctAnswer = parsed.correctAnswer;
         const correctAnswers = parsed.correctAnswers;
         if (!supportsMulti && typeof correctAnswer === "number" && options[correctAnswer]) {
