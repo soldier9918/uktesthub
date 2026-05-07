@@ -144,6 +144,23 @@ function questionTextOnly(blobOrQuestion: string): string {
   return (blobOrQuestion ?? "").split("|")[0]?.trim() ?? "";
 }
 
+/**
+ * Strip stray image markers/descriptions the model sometimes hallucinates,
+ * e.g. "...at this junction? [IMAGE] An inverted triangle with a red border..."
+ * We remove [IMAGE]/[image]/[picture]/[diagram] tokens and drop any trailing
+ * sentence that follows such a marker (it is always a description, not part
+ * of the actual question).
+ */
+function sanitizeGeneratedQuestion(text: string): string {
+  if (!text) return text;
+  let t = text;
+  // Cut anything from a bracketed image marker onwards.
+  t = t.replace(/\s*[\[\(]\s*(image|picture|diagram|photo|sign shown|figure)[^\]\)]*[\]\)].*$/i, "");
+  // Also handle bare markers like "IMAGE:" or "[IMAGE]" without trailing text.
+  t = t.replace(/\s*\b(image|picture|diagram)\s*:.*$/i, "");
+  return t.trim();
+}
+
 function openingSlice(blobOrQuestion: string, words = 18): string {
   return questionTextOnly(blobOrQuestion)
     .toLowerCase()
