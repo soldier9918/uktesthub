@@ -6,6 +6,11 @@ import { loadTopicFileForAdmin } from "@/data/mocks";
 import { applyOverrideToQuestionRecord, invalidateOverrides, loadOverrides } from "@/lib/overrides";
 import { Badge } from "@/components/ui/badge";
 import { supabase } from "@/integrations/supabase/client";
+import { buildBlob } from "@/lib/admin/similarity";
+import {
+  completeRegenerateQuestion,
+  regenerateUniqueQuestion,
+} from "@/lib/server-fns/similarity.functions";
 
 export const Route = createFileRoute("/admin-kb20/category-check")({
   head: () => ({
