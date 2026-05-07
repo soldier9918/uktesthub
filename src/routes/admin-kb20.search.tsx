@@ -70,6 +70,18 @@ function SearchPage() {
   const [regenResults, setRegenResults] = useState<Record<string, RegenResult>>({});
   const [bulkRunning, setBulkRunning] = useState(false);
   const [bulkProgress, setBulkProgress] = useState("");
+  const [selected, setSelected] = useState<Set<string>>(new Set());
+
+  const toggleSelected = (key: string) => {
+    setSelected((prev) => {
+      const n = new Set(prev);
+      if (n.has(key)) n.delete(key);
+      else n.add(key);
+      return n;
+    });
+  };
+  const selectAll = () => setSelected(new Set(hits.map((h) => `${h.topic}::${h.id}`)));
+  const clearSelected = () => setSelected(new Set());
 
   const topicsForCategory = useMemo(() => {
     if (categorySlug === "__all__") {
