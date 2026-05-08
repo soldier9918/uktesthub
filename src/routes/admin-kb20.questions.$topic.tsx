@@ -209,9 +209,8 @@ function QuestionsBrowser() {
   void bump;
   const highlightId = initialSearch;
   const effectiveQuestions = useMemo<FlatQuestion[]>(() => {
-    if (!overrides) return questions as FlatQuestion[];
-    return (questions as FlatQuestion[]).map((q) => {
-      const override = overrides.get(`${topic}::${q.id}`);
+    const base = (questions as FlatQuestion[]).map((q) => {
+      const override = overrides?.get(`${topic}::${q.id}`);
       if (!override) return q;
       const raw = applyOverrideToQuestionRecord(q.raw, override);
       return {
@@ -224,6 +223,32 @@ function QuestionsBrowser() {
         options: raw.options,
         correctText: describeCorrect(raw),
       };
+    });
+    // Group slots across the topic by content fingerprint so duplicated
+    // questions (same content, different ids via bulk-duplicate) all show
+    // the full set of mocks they appear in.
+    const groups = new Map<string, MockUsage[]>();
+    for (const q of base) {
+      const fp = fingerprintQuestion(q.raw);
+      const arr = groups.get(fp) ?? [];
+      for (const u of q.usedInMocks) {
+        arr.push({ mockNumber: u.mockNumber, slot: u.slot, sourceQid: q.id });
+      }
+      groups.set(fp, arr);
+    }
+    return base.map((q) => {
+      const fp = fingerprintQuestion(q.raw);
+      const merged = groups.get(fp) ?? q.usedInMocks;
+      const seen = new Set<string>();
+      const dedup: MockUsage[] = [];
+      for (const u of merged) {
+        const k = `${u.mockNumber}:${u.slot}`;
+        if (seen.has(k)) continue;
+        seen.add(k);
+        dedup.push(u);
+      }
+      dedup.sort((a, b) => a.mockNumber - b.mockNumber || a.slot - b.slot);
+      return { ...q, usedInMocks: dedup };
     });
   }, [overrides, questions, topic]);
 
