@@ -1,7 +1,64 @@
 import { createServerFn } from "@tanstack/react-start";
+import { z } from "zod";
 import { supabaseAdmin } from "@/integrations/supabase/client.server";
 
 const AI_URL = "https://ai.gateway.lovable.dev/v1/chat/completions";
+
+// Strip control chars and cap each blob entry; cap array length.
+const Blob = z
+  .string()
+  .max(2000)
+  .transform((s) => s.replace(/[\u0000-\u0008\u000B-\u001F\u007F]/g, ""));
+const BlobArray = z.array(Blob).max(800);
+const AccessToken = z.string().min(20).max(4096);
+
+const PairsSchema = z.object({
+  accessToken: AccessToken,
+  pairs: z
+    .array(
+      z.object({
+        aText: z.string().max(4000),
+        bText: z.string().max(4000),
+      }),
+    )
+    .max(50),
+});
+
+const SourceQuestionSchema = z
+  .object({
+    id: z.string().max(200),
+    type: z.string().max(60).optional(),
+    question: z.string().max(4000).optional(),
+    template: z.string().max(4000).optional(),
+    prompt: z.string().max(4000).optional(),
+    options: z.array(z.string().max(1000)).max(10).optional(),
+    correctAnswer: z.union([z.number(), z.boolean()]).optional(),
+    correctAnswers: z.array(z.number()).max(10).optional(),
+    explanation: z.string().max(4000).optional(),
+    image: z.string().max(500).optional(),
+    imageAlt: z.string().max(500).optional(),
+  })
+  .strip();
+
+const RegenerateSchema = z.object({
+  accessToken: AccessToken,
+  topic: z.string().max(120),
+  topicTitle: z.string().max(200),
+  category: z.string().max(120).optional(),
+  categoryTitle: z.string().max(200),
+  source: SourceQuestionSchema,
+  existingBlobs: BlobArray,
+});
+
+const CompleteRegenerateSchema = z.object({
+  accessToken: AccessToken,
+  topic: z.string().max(120),
+  topicTitle: z.string().max(200),
+  category: z.string().max(120).optional(),
+  categoryTitle: z.string().max(200),
+  source: SourceQuestionSchema,
+  categoryBlobs: BlobArray,
+});
 
 async function verifyAdmin(accessToken: string): Promise<string | null> {
   if (!accessToken) return null;
