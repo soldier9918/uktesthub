@@ -157,7 +157,7 @@ export const Route = createFileRoute("/admin-kb20/questions/$topic")({
   loader: async ({ params }) => {
     const file = (await loadTopicFileForAdmin(params.topic)) as AnyFile | undefined;
     if (!file) throw notFound();
-    return { topic: params.topic, questions: flatten(file) };
+    return { topic: params.topic, questions: flatten(file), file };
   },
   errorComponent: ({ error }) => (
     <div className="p-8 text-sm">
