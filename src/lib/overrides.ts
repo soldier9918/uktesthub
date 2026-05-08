@@ -10,6 +10,7 @@ export type QuestionOverride = {
   explanation: string | null;
   image: string | null;
   image_alt: string | null;
+  type?: string | null;
   disabled?: boolean | null;
 };
 
@@ -31,7 +32,7 @@ export async function loadOverrides(): Promise<Map<string, QuestionOverride>> {
     while (true) {
       const { data, error } = await supabase
         .from("question_overrides")
-        .select("topic,question_id,question,options,correct_answer,explanation,image,image_alt,disabled")
+        .select("topic,question_id,question,options,correct_answer,explanation,image,image_alt,type,disabled")
         .order("topic", { ascending: true })
         .order("question_id", { ascending: true })
         .range(from, from + PAGE - 1);
