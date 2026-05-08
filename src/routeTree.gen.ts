@@ -62,6 +62,7 @@ import { Route as AdminKb20BulkEditRouteImport } from './routes/admin-kb20.bulk-
 import { Route as AdminKb20AnalyticsRouteImport } from './routes/admin-kb20.analytics'
 import { Route as AdminKb20AdsRouteImport } from './routes/admin-kb20.ads'
 import { Route as AdminKb20QuestionsIndexRouteImport } from './routes/admin-kb20.questions.index'
+import { Route as AdminKb20QuestionsBulkDuplicateRouteImport } from './routes/admin-kb20.questions.bulk-duplicate'
 import { Route as AdminKb20QuestionsTopicRouteImport } from './routes/admin-kb20.questions.$topic'
 import { Route as LovableEmailQueueProcessRouteImport } from './routes/lovable/email/queue/process'
 
@@ -330,6 +331,12 @@ const AdminKb20QuestionsIndexRoute = AdminKb20QuestionsIndexRouteImport.update({
   path: '/admin-kb20/questions/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AdminKb20QuestionsBulkDuplicateRoute =
+  AdminKb20QuestionsBulkDuplicateRouteImport.update({
+    id: '/admin-kb20/questions/bulk-duplicate',
+    path: '/admin-kb20/questions/bulk-duplicate',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const AdminKb20QuestionsTopicRoute = AdminKb20QuestionsTopicRouteImport.update({
   id: '/admin-kb20/questions/$topic',
   path: '/admin-kb20/questions/$topic',
@@ -396,6 +403,7 @@ export interface FileRoutesByFullPath {
   '/admin-kb20/': typeof AdminKb20IndexRoute
   '/blog/': typeof BlogIndexRoute
   '/admin-kb20/questions/$topic': typeof AdminKb20QuestionsTopicRoute
+  '/admin-kb20/questions/bulk-duplicate': typeof AdminKb20QuestionsBulkDuplicateRoute
   '/admin-kb20/questions/': typeof AdminKb20QuestionsIndexRoute
   '/lovable/email/queue/process': typeof LovableEmailQueueProcessRoute
 }
@@ -452,6 +460,7 @@ export interface FileRoutesByTo {
   '/admin-kb20': typeof AdminKb20IndexRoute
   '/blog': typeof BlogIndexRoute
   '/admin-kb20/questions/$topic': typeof AdminKb20QuestionsTopicRoute
+  '/admin-kb20/questions/bulk-duplicate': typeof AdminKb20QuestionsBulkDuplicateRoute
   '/admin-kb20/questions': typeof AdminKb20QuestionsIndexRoute
   '/lovable/email/queue/process': typeof LovableEmailQueueProcessRoute
 }
@@ -510,6 +519,7 @@ export interface FileRoutesById {
   '/admin-kb20/': typeof AdminKb20IndexRoute
   '/blog/': typeof BlogIndexRoute
   '/admin-kb20/questions/$topic': typeof AdminKb20QuestionsTopicRoute
+  '/admin-kb20/questions/bulk-duplicate': typeof AdminKb20QuestionsBulkDuplicateRoute
   '/admin-kb20/questions/': typeof AdminKb20QuestionsIndexRoute
   '/lovable/email/queue/process': typeof LovableEmailQueueProcessRoute
 }
@@ -569,6 +579,7 @@ export interface FileRouteTypes {
     | '/admin-kb20/'
     | '/blog/'
     | '/admin-kb20/questions/$topic'
+    | '/admin-kb20/questions/bulk-duplicate'
     | '/admin-kb20/questions/'
     | '/lovable/email/queue/process'
   fileRoutesByTo: FileRoutesByTo
@@ -625,6 +636,7 @@ export interface FileRouteTypes {
     | '/admin-kb20'
     | '/blog'
     | '/admin-kb20/questions/$topic'
+    | '/admin-kb20/questions/bulk-duplicate'
     | '/admin-kb20/questions'
     | '/lovable/email/queue/process'
   id:
@@ -682,6 +694,7 @@ export interface FileRouteTypes {
     | '/admin-kb20/'
     | '/blog/'
     | '/admin-kb20/questions/$topic'
+    | '/admin-kb20/questions/bulk-duplicate'
     | '/admin-kb20/questions/'
     | '/lovable/email/queue/process'
   fileRoutesById: FileRoutesById
@@ -738,6 +751,7 @@ export interface RootRouteChildren {
   TopicSlugRoute: typeof TopicSlugRoute
   AdminKb20IndexRoute: typeof AdminKb20IndexRoute
   AdminKb20QuestionsTopicRoute: typeof AdminKb20QuestionsTopicRoute
+  AdminKb20QuestionsBulkDuplicateRoute: typeof AdminKb20QuestionsBulkDuplicateRoute
   AdminKb20QuestionsIndexRoute: typeof AdminKb20QuestionsIndexRoute
   LovableEmailQueueProcessRoute: typeof LovableEmailQueueProcessRoute
 }
@@ -1115,6 +1129,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AdminKb20QuestionsIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/admin-kb20/questions/bulk-duplicate': {
+      id: '/admin-kb20/questions/bulk-duplicate'
+      path: '/admin-kb20/questions/bulk-duplicate'
+      fullPath: '/admin-kb20/questions/bulk-duplicate'
+      preLoaderRoute: typeof AdminKb20QuestionsBulkDuplicateRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/admin-kb20/questions/$topic': {
       id: '/admin-kb20/questions/$topic'
       path: '/admin-kb20/questions/$topic'
@@ -1196,6 +1217,7 @@ const rootRouteChildren: RootRouteChildren = {
   TopicSlugRoute: TopicSlugRoute,
   AdminKb20IndexRoute: AdminKb20IndexRoute,
   AdminKb20QuestionsTopicRoute: AdminKb20QuestionsTopicRoute,
+  AdminKb20QuestionsBulkDuplicateRoute: AdminKb20QuestionsBulkDuplicateRoute,
   AdminKb20QuestionsIndexRoute: AdminKb20QuestionsIndexRoute,
   LovableEmailQueueProcessRoute: LovableEmailQueueProcessRoute,
 }

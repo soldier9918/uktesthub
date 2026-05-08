@@ -28,6 +28,14 @@ function TopicsIndex() {
       <p className="mt-2 text-sm text-muted-foreground">
         Browse and edit every question across all topics ({topics.length} topics).
       </p>
+      <div className="mt-4 flex flex-wrap gap-2">
+        <Link
+          to="/admin-kb20/questions/bulk-duplicate"
+          className="inline-flex items-center rounded-lg border border-coral/40 bg-coral/10 px-3 py-2 text-sm font-semibold text-coral hover:bg-coral/15"
+        >
+          Bulk duplicate questions →
+        </Link>
+      </div>
       <ul className="mt-6 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
         {topics.map((t) => (
           <li key={t.topic}>
