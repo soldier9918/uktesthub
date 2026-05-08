@@ -101,6 +101,22 @@ function describeCorrect(r: RawQuestion): string | undefined {
   return undefined;
 }
 
+function hasBrokenAnswers(r: RawQuestion): boolean {
+  const t = normaliseType(r.type);
+  if (t === "mcq" || t === "image-question") {
+    if (!Array.isArray(r.options) || r.options.length < 2) return true;
+    if (typeof r.correctAnswer !== "number" || r.correctAnswer < 0 || r.correctAnswer >= r.options.length) return true;
+    return false;
+  }
+  if (t === "true-false") return typeof r.correctAnswer !== "boolean";
+  if (t === "multiple-response") {
+    if (!Array.isArray(r.options) || r.options.length < 2) return true;
+    if (!Array.isArray(r.correctAnswers) || r.correctAnswers.length === 0) return true;
+    return false;
+  }
+  return false;
+}
+
 function flatten(file: AnyFile): FlatQuestion[] {
   if ((file as V2).version === 2 && Array.isArray((file as V2).bank)) {
     const v2 = file as V2;
