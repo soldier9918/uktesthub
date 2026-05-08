@@ -807,9 +807,11 @@ function QuestionsBrowser() {
             topic={topic}
             questionId={editing.id}
             defaults={{
+              type: editing.type,
               question: editing.question,
               options: editing.options,
-              correctAnswer: editing.raw.correctAnswer as number | undefined,
+              correctAnswer: editing.raw.correctAnswer as number | boolean | undefined,
+              correctAnswers: editing.raw.correctAnswers,
               explanation: editing.explanation,
               image: editing.image,
               imageAlt: editing.imageAlt,
