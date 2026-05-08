@@ -621,6 +621,18 @@ function QuestionsBrowser() {
             <option value="enabled">Enabled only</option>
             <option value="disabled">Disabled only</option>
           </select>
+          <select
+            value={healthFilter}
+            onChange={(e) => {
+              setHealthFilter(e.target.value as "all" | "broken");
+              setPage(1);
+            }}
+            className="h-9 rounded-md border border-input bg-background px-2 text-sm"
+            title="Show only questions that are missing answer options"
+          >
+            <option value="all">All health</option>
+            <option value="broken">Needs answers</option>
+          </select>
           <span className="ml-auto text-xs text-muted-foreground">
             {filtered.length} matching
           </span>
