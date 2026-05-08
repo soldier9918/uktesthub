@@ -86,7 +86,7 @@ type Verdict = {
 };
 
 export const aiVerdictPairs = createServerFn({ method: "POST" })
-  .inputValidator((d: { accessToken: string; pairs: Pair[] }) => d)
+  .inputValidator((d: unknown) => PairsSchema.parse(d))
   .handler(
     async ({
       data,
@@ -277,17 +277,15 @@ function hasRepeatedOpening(
 }
 
 export const regenerateUniqueQuestion = createServerFn({ method: "POST" })
-  .inputValidator(
-    (d: {
-      accessToken: string;
-      topic: string;
-      topicTitle: string;
-      category?: string;
-      categoryTitle: string;
-      source: SourceQuestion;
-      existingBlobs: string[]; // normalised question texts in same topic for similarity check
-    }) => d,
-  )
+  .inputValidator((d: unknown) => RegenerateSchema.parse(d) as unknown as {
+    accessToken: string;
+    topic: string;
+    topicTitle: string;
+    category?: string;
+    categoryTitle: string;
+    source: SourceQuestion;
+    existingBlobs: string[];
+  })
   .handler(
     async ({
       data,
@@ -738,17 +736,15 @@ const SCENARIO_ANGLES_BY_CATEGORY: Record<string, string[]> = {
 };
 
 export const completeRegenerateQuestion = createServerFn({ method: "POST" })
-  .inputValidator(
-    (d: {
-      accessToken: string;
-      topic: string;
-      topicTitle: string;
-      category?: string;
-      categoryTitle: string;
-      source: SourceQuestion;
-      categoryBlobs: string[]; // normalised question texts across the WHOLE category
-    }) => d,
-  )
+  .inputValidator((d: unknown) => CompleteRegenerateSchema.parse(d) as unknown as {
+    accessToken: string;
+    topic: string;
+    topicTitle: string;
+    category?: string;
+    categoryTitle: string;
+    source: SourceQuestion;
+    categoryBlobs: string[];
+  })
   .handler(
     async ({
       data,
