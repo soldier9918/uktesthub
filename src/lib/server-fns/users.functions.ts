@@ -1,5 +1,10 @@
 import { createServerFn } from "@tanstack/react-start";
+import { z } from "zod";
 import { supabaseAdmin } from "@/integrations/supabase/client.server";
+
+const ListAdminUsersSchema = z.object({
+  accessToken: z.string().min(20).max(4096),
+});
 
 export type AdminUserRow = {
   id: string;
@@ -17,7 +22,7 @@ export type AdminUserRow = {
 };
 
 export const listAdminUsers = createServerFn({ method: "POST" })
-  .inputValidator((data: { accessToken: string }) => data)
+  .inputValidator((data: unknown) => ListAdminUsersSchema.parse(data))
   .handler(async ({ data }): Promise<{ users: AdminUserRow[]; error: string | null }> => {
     if (!data?.accessToken) return { users: [], error: "Unauthorized" };
 
