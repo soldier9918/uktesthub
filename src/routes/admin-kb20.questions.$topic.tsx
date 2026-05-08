@@ -691,6 +691,11 @@ function QuestionsBrowser() {
                     {isDisabled && (
                       <Badge className="bg-destructive text-destructive-foreground">disabled</Badge>
                     )}
+                    {hasBrokenAnswers(q.raw) && (
+                      <Badge className="bg-amber-500 text-white" title="This question is missing valid answer options">
+                        no answers
+                      </Badge>
+                    )}
                     {q.usedInMocks.length > 0 ? (
                       <span className="flex flex-wrap items-center gap-1 text-[10px] text-muted-foreground">
                         Live in ({q.usedInMocks.length}):
