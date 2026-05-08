@@ -1,58 +1,68 @@
-## Problem
+## Security hardening plan
 
-Some questions in the bank (e.g. `rs-im-0331-tf6`) have **no options array** and a malformed shape — for example `type: "image_question"` with `correctAnswer: true` (boolean) and zero answer choices. The runtime can't render answers for them, and the current admin editor (`QuestionEditDialog`) only shows the options block when `options.length > 0`, so there's no way to add answers from the UI. The editor also hides the question type, so admins can't tell what's wrong or convert between types.
+Based on the scan + your answers (lock down profiles fully, no client listing of buckets), here's the implementation order.
 
-## Fix (admin-only, frontend changes)
+### 1. Database migration (single migration)
 
-Upgrade `src/components/QuestionEditDialog.tsx` so any broken question can be repaired without touching JSON.
+**Profiles — owner-only access**
+```sql
+DROP POLICY "Profiles are viewable by everyone" ON public.profiles;
+CREATE POLICY "Users view own profile" ON public.profiles
+  FOR SELECT TO authenticated USING (auth.uid() = id);
+```
 
-### 1. Show + change question type
+**question_reports — require auth, bind reporter**
+```sql
+DROP POLICY "Anyone can file a report" ON public.question_reports;
+CREATE POLICY "Authed users file reports" ON public.question_reports
+  FOR INSERT TO authenticated
+  WITH CHECK (reporter_user_id = auth.uid());
+```
 
-Add a small **Type** select at the top of the dialog with these options:
-- Multiple choice (`mcq`)
-- Image question (`image_question`)
-- True / False (`true_false`)
-- Multiple response (`multiple_response`)
+**quiz_events — bind user_id to caller (allow anon w/ null user_id)**
+```sql
+DROP POLICY "Anyone can record events" ON public.quiz_events;
+CREATE POLICY "Users record own events" ON public.quiz_events
+  FOR INSERT TO public
+  WITH CHECK (user_id IS NULL OR user_id = auth.uid());
+```
 
-Default to the question's existing `type` (passed through from the topic page). When the user changes type, adapt local state:
-- → `true_false`: clear options, set `correctAnswer` to a boolean (default `true`)
-- → `mcq`/`image_question`: ensure at least 2 empty option rows, numeric `correctAnswer`
-- → `multiple_response`: same, but `correctAnswers` is `number[]`
+**Storage buckets — remove list, keep direct URL fetch**
+Drop any broad SELECT policy on `storage.objects` for `question-images` / `avatars`. Public buckets still serve direct URLs without a SELECT policy when accessed via the public CDN path; only `list` requires a policy. Keep upload policies scoped to admins / owners as today.
 
-### 2. Always allow editing answers (banner when missing)
+**Lock down pgmq wrapper SECURITY DEFINER fns**
+```sql
+REVOKE EXECUTE ON FUNCTION public.read_email_batch(text,int,int),
+  public.delete_email(text,bigint),
+  public.enqueue_email(text,jsonb),
+  public.move_to_dlq(text,text,bigint,jsonb),
+  public.stamp_question_report_resolution()
+  FROM anon, authenticated;
+```
 
-Remove the `options.length > 0` gate. Instead:
-- If the question is MCQ/image and has 0 options, show an amber banner **"This question has no answers — add at least 2 options below"** plus an **Add option** button that seeds 4 empty rows.
-- Each option row gets an **Add** / **Remove** control (min 2, max 6). The radio still picks the correct one.
-- For `true_false`, render a **True / False** radio pair instead of options.
-- For `multiple_response`, swap the radio for a checkbox per option, storing `correctAnswers` as `number[]`.
+**Set search_path on remaining mutable fns**
+```sql
+ALTER FUNCTION public.read_email_batch(text,int,int) SET search_path = public;
+ALTER FUNCTION public.delete_email(text,bigint) SET search_path = public;
+ALTER FUNCTION public.enqueue_email(text,jsonb) SET search_path = public;
+ALTER FUNCTION public.move_to_dlq(text,text,bigint,jsonb) SET search_path = public;
+```
 
-### 3. Persist type + answer fields
+### 2. Code changes after migration approves
 
-Extend the upsert payload in `save()` to also write the new `type` and the appropriate answer field:
-- `correct_answer` for `mcq`/`image_question` (number) and `true_false` (boolean)
-- `correct_answers` (jsonb `number[]`) for `multiple_response`
+- **`src/lib/auth-context.tsx`** — profile reads only run for the signed-in owner; no change needed (already filters by own id). Verify any other public profile reads (e.g. report pages, leaderboards) — if found, fix or remove.
+- **Audit `from("profiles").select`** across the codebase; ensure none expect cross-user reads. If any do, switch to a SECURITY DEFINER function returning narrowed fields.
+- **`src/lib/server-fns/users.functions.ts` + `similarity.functions.ts`** — refactor each `createServerFn` to use `.middleware([requireSupabaseAuth])`, remove `accessToken` from input + client callsites, derive `userId` from `context`.
+- **Add Zod input validation** on `regenerateUniqueQuestion`, `completeRegenerateQuestion`, `aiVerdictPairs` (cap blob lengths/counts, strip control chars).
+- **Sanitize error responses**:
+  - `similarity.functions.ts`: `console.error` raw, return `"AI service unavailable"` / `"Unexpected AI response format"`.
+  - `src/integrations/supabase/auth-middleware.ts`: log details server-side, return `"Internal server error"` body.
+- **Quiz reporting / event recording client code** — ensure callers attach `reporter_user_id` / `user_id` from `auth.uid()`; gate report form behind sign-in.
 
-If `question_overrides` doesn't yet have a `type` or `correct_answers` column, add a small migration that introduces them as nullable. The runtime override merge already falls through to original fields when null, so existing rows stay safe.
+### 3. Update `@security-memory`
 
-### 4. Surface broken questions in the topic list
+Document accepted public-read tables (`ad_slots`, `mock_overrides`, `page_seo_overrides`, `similarity_suppressions`, `question_overrides`) as intentional, and confirm: profiles are owner-only, buckets are direct-URL only.
 
-In `src/routes/admin-kb20.questions.$topic.tsx`, add a red **"No answers"** badge next to any flat question where:
-- `type` is `mcq`/`image_question` and `options` is missing/empty, OR
-- `type` is `mcq`/`image_question` and `correctAnswer` isn't a valid index, OR
-- `type` is `true_false` and `correctAnswer` isn't a boolean.
+### Question before I implement
 
-Add a "Needs answers" filter chip above the list so admins can jump straight to the broken ones.
-
-### Out of scope
-
-- No bulk-fix flow (the existing **Bulk duplicate questions** page already covers replacing many at once if needed).
-- No changes to mock JSON files or the validator rules — the validator already flags these as `invalid-correct-answer`.
-- No quiz runtime changes.
-
-### Files touched
-
-- `src/components/QuestionEditDialog.tsx` — type selector, dynamic options editor, true/false + multi-response support, save payload.
-- `src/routes/admin-kb20.questions.$topic.tsx` — "No answers" badge + filter, pass `type` into the dialog defaults.
-- `supabase/migrations/<new>.sql` — add `type text` and `correct_answers jsonb` to `question_overrides` if they don't exist.
-- `src/lib/overrides.ts` — extend the merge to apply overridden `type` / `correct_answers`.
+Are there any **public pages that show another user's display name or avatar** today (comments, public attempt pages, shared bookmark pages)? If yes I need to know which routes so they don't break when profiles becomes owner-only.

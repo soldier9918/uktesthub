@@ -1,7 +1,64 @@
 import { createServerFn } from "@tanstack/react-start";
+import { z } from "zod";
 import { supabaseAdmin } from "@/integrations/supabase/client.server";
 
 const AI_URL = "https://ai.gateway.lovable.dev/v1/chat/completions";
+
+// Strip control chars and cap each blob entry; cap array length.
+const Blob = z
+  .string()
+  .max(2000)
+  .transform((s) => s.replace(/[\u0000-\u0008\u000B-\u001F\u007F]/g, ""));
+const BlobArray = z.array(Blob).max(800);
+const AccessToken = z.string().min(20).max(4096);
+
+const PairsSchema = z.object({
+  accessToken: AccessToken,
+  pairs: z
+    .array(
+      z.object({
+        aText: z.string().max(4000),
+        bText: z.string().max(4000),
+      }),
+    )
+    .max(50),
+});
+
+const SourceQuestionSchema = z
+  .object({
+    id: z.string().max(200),
+    type: z.string().max(60).optional(),
+    question: z.string().max(4000).optional(),
+    template: z.string().max(4000).optional(),
+    prompt: z.string().max(4000).optional(),
+    options: z.array(z.string().max(1000)).max(10).optional(),
+    correctAnswer: z.union([z.number(), z.boolean()]).optional(),
+    correctAnswers: z.array(z.number()).max(10).optional(),
+    explanation: z.string().max(4000).optional(),
+    image: z.string().max(500).optional(),
+    imageAlt: z.string().max(500).optional(),
+  })
+  .strip();
+
+const RegenerateSchema = z.object({
+  accessToken: AccessToken,
+  topic: z.string().max(120),
+  topicTitle: z.string().max(200),
+  category: z.string().max(120).optional(),
+  categoryTitle: z.string().max(200),
+  source: SourceQuestionSchema,
+  existingBlobs: BlobArray,
+});
+
+const CompleteRegenerateSchema = z.object({
+  accessToken: AccessToken,
+  topic: z.string().max(120),
+  topicTitle: z.string().max(200),
+  category: z.string().max(120).optional(),
+  categoryTitle: z.string().max(200),
+  source: SourceQuestionSchema,
+  categoryBlobs: BlobArray,
+});
 
 async function verifyAdmin(accessToken: string): Promise<string | null> {
   if (!accessToken) return null;
@@ -29,7 +86,7 @@ type Verdict = {
 };
 
 export const aiVerdictPairs = createServerFn({ method: "POST" })
-  .inputValidator((d: { accessToken: string; pairs: Pair[] }) => d)
+  .inputValidator((d: unknown) => PairsSchema.parse(d))
   .handler(
     async ({
       data,
@@ -106,7 +163,7 @@ export const aiVerdictPairs = createServerFn({ method: "POST" })
       });
       if (!resp.ok) {
         const txt = await resp.text();
-        return { verdicts: [], error: `AI gateway ${resp.status}: ${txt.slice(0, 200)}` };
+        console.error(`[ai] verdicts gateway ${resp.status}:`, txt.slice(0,500)); return { verdicts: [], error: "AI service unavailable, please retry" };
       }
       const json = (await resp.json()) as {
         choices?: Array<{
@@ -119,7 +176,7 @@ export const aiVerdictPairs = createServerFn({ method: "POST" })
         const parsed = JSON.parse(argsStr) as { verdicts: Verdict[] };
         return { verdicts: parsed.verdicts ?? [], error: null };
       } catch (e) {
-        return { verdicts: [], error: `Parse error: ${(e as Error).message}` };
+        console.error("[ai] verdicts parse error:", e); return { verdicts: [], error: "Unexpected AI response format" };
       }
     },
   );
@@ -220,17 +277,15 @@ function hasRepeatedOpening(
 }
 
 export const regenerateUniqueQuestion = createServerFn({ method: "POST" })
-  .inputValidator(
-    (d: {
-      accessToken: string;
-      topic: string;
-      topicTitle: string;
-      category?: string;
-      categoryTitle: string;
-      source: SourceQuestion;
-      existingBlobs: string[]; // normalised question texts in same topic for similarity check
-    }) => d,
-  )
+  .inputValidator((d: unknown) => RegenerateSchema.parse(d) as unknown as {
+    accessToken: string;
+    topic: string;
+    topicTitle: string;
+    category?: string;
+    categoryTitle: string;
+    source: SourceQuestion;
+    existingBlobs: string[];
+  })
   .handler(
     async ({
       data,
@@ -372,7 +427,7 @@ ${JSON.stringify(
         });
         if (!resp.ok) {
           const txt = await resp.text();
-          lastError = `AI gateway ${resp.status}: ${txt.slice(0, 200)}`;
+          console.error(`[ai] gateway ${resp.status}:`, txt.slice(0,500)); lastError = "AI service unavailable, please retry";
           if (resp.status === 429 || resp.status === 402) break;
           continue;
         }
@@ -396,7 +451,7 @@ ${JSON.stringify(
         try {
           parsed = JSON.parse(argsStr);
         } catch (e) {
-          lastError = `Parse error: ${(e as Error).message}`;
+          console.error("[ai] parse error:", e); lastError = "Unexpected AI response format";
           continue;
         }
 
@@ -681,17 +736,15 @@ const SCENARIO_ANGLES_BY_CATEGORY: Record<string, string[]> = {
 };
 
 export const completeRegenerateQuestion = createServerFn({ method: "POST" })
-  .inputValidator(
-    (d: {
-      accessToken: string;
-      topic: string;
-      topicTitle: string;
-      category?: string;
-      categoryTitle: string;
-      source: SourceQuestion;
-      categoryBlobs: string[]; // normalised question texts across the WHOLE category
-    }) => d,
-  )
+  .inputValidator((d: unknown) => CompleteRegenerateSchema.parse(d) as unknown as {
+    accessToken: string;
+    topic: string;
+    topicTitle: string;
+    category?: string;
+    categoryTitle: string;
+    source: SourceQuestion;
+    categoryBlobs: string[];
+  })
   .handler(
     async ({
       data,
@@ -892,7 +945,7 @@ Now write a completely fresh question.`;
         });
         if (!resp.ok) {
           const txt = await resp.text();
-          lastError = `AI gateway ${resp.status}: ${txt.slice(0, 200)}`;
+          console.error(`[ai] gateway ${resp.status}:`, txt.slice(0,500)); lastError = "AI service unavailable, please retry";
           if (resp.status === 429 || resp.status === 402) break;
           continue;
         }
@@ -916,7 +969,7 @@ Now write a completely fresh question.`;
         try {
           parsed = JSON.parse(argsStr);
         } catch (e) {
-          lastError = `Parse error: ${(e as Error).message}`;
+          console.error("[ai] parse error:", e); lastError = "Unexpected AI response format";
           continue;
         }
 

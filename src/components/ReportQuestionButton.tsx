@@ -27,6 +27,10 @@ export function ReportQuestionButton({ questionId, topicSlug, mockSlug }: Props)
   const [error, setError] = useState<string | null>(null);
 
   const submit = async () => {
+    if (!user?.id) {
+      setError("Please sign in to report a question.");
+      return;
+    }
     setSubmitting(true);
     setError(null);
     const { error: err } = await supabase.from("question_reports").insert({
@@ -35,7 +39,7 @@ export function ReportQuestionButton({ questionId, topicSlug, mockSlug }: Props)
       mock_slug: mockSlug ?? null,
       reason,
       details: details.trim() || null,
-      reporter_user_id: user?.id ?? null,
+      reporter_user_id: user.id,
     });
     setSubmitting(false);
     if (err) {
