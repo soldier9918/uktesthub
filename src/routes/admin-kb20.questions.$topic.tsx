@@ -42,7 +42,21 @@ type AnyFile = V1 | V2;
 
 import { loadTopicFileForAdmin } from "@/data/mocks";
 
-type MockUsage = { mockNumber: number; slot: number };
+type MockUsage = { mockNumber: number; slot: number; sourceQid?: string };
+
+function fingerprintQuestion(r: RawQuestion): string {
+  const norm = (s: unknown) =>
+    (s == null ? "" : String(s)).replace(/\s+/g, " ").trim().toLowerCase();
+  const q = norm(r.question || r.template || r.prompt);
+  const opts = Array.isArray(r.options) ? r.options.map(norm).join("|") : "";
+  const ca = Array.isArray(r.correctAnswers)
+    ? r.correctAnswers.slice().sort().join(",")
+    : r.correctAnswer != null
+      ? String(r.correctAnswer)
+      : "";
+  const img = norm(r.image);
+  return `${q}::${opts}::${ca}::${img}`;
+}
 
 type FlatQuestion = {
   id: string;
