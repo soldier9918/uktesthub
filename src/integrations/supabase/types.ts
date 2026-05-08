@@ -330,6 +330,7 @@ export type Database = {
           question: string | null
           question_id: string
           topic: string
+          type: string | null
           updated_at: string
           updated_by: string | null
         }
@@ -345,6 +346,7 @@ export type Database = {
           question?: string | null
           question_id: string
           topic: string
+          type?: string | null
           updated_at?: string
           updated_by?: string | null
         }
@@ -360,6 +362,7 @@ export type Database = {
           question?: string | null
           question_id?: string
           topic?: string
+          type?: string | null
           updated_at?: string
           updated_by?: string | null
         }
