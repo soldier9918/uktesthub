@@ -1,42 +1,58 @@
 ## Problem
 
-On the admin questions page, each question's "Live in: Mock X · Q Y" pills only list mock slots that reference that question's exact `id`. When you use **Bulk duplicate questions** to push the same content/answers/image into other question IDs, those target slots render identical content at runtime — but the source question's "Live in" list still shows only the original 2 (or however many) IDs that literally match.
+Some questions in the bank (e.g. `rs-im-0331-tf6`) have **no options array** and a malformed shape — for example `type: "image_question"` with `correctAnswer: true` (boolean) and zero answer choices. The runtime can't render answers for them, and the current admin editor (`QuestionEditDialog`) only shows the options block when `options.length > 0`, so there's no way to add answers from the UI. The editor also hides the question type, so admins can't tell what's wrong or convert between types.
 
-So a question that visually appears in, say, 6 mocks looks like it only lives in 2.
+## Fix (admin-only, frontend changes)
 
-## Fix
+Upgrade `src/components/QuestionEditDialog.tsx` so any broken question can be repaired without touching JSON.
 
-Change the `flatten()` logic in `src/routes/admin-kb20.questions.$topic.tsx` so "Live in" is computed from **effective content** (after overrides) instead of only by `question_id`.
+### 1. Show + change question type
 
-### Approach
+Add a small **Type** select at the top of the dialog with these options:
+- Multiple choice (`mcq`)
+- Image question (`image_question`)
+- True / False (`true_false`)
+- Multiple response (`multiple_response`)
 
-1. Load `question_overrides` for the current topic (already available via `useOverrides()` in the page).
-2. Build a **content fingerprint** for every question in the bank, after applying its override:
-   - normalized question text + options (joined) + correct answer + image path
-   - hash to a short stable key
-3. Build a map: `fingerprint -> [{ mockNumber, slot, sourceQid }]` by walking every mock slot, looking up the question it references, applying its override, computing its fingerprint, and pushing the slot.
-4. For each `FlatQuestion`, set `usedInMocks` to the union of:
-   - slots whose `question_id` literally equals this question's id (existing behavior — keeps unused/disabled IDs honest), AND
-   - slots whose effective fingerprint matches this question's fingerprint.
-5. De-duplicate by `mockNumber + slot`.
+Default to the question's existing `type` (passed through from the topic page). When the user changes type, adapt local state:
+- → `true_false`: clear options, set `correctAnswer` to a boolean (default `true`)
+- → `mcq`/`image_question`: ensure at least 2 empty option rows, numeric `correctAnswer`
+- → `multiple_response`: same, but `correctAnswers` is `number[]`
 
-### UI tweaks (small)
+### 2. Always allow editing answers (banner when missing)
 
-- When a slot is "live" because of content match (different underlying qid), keep the same pill style but add a subtle title tooltip: `"Mock 7 · Q12 — duplicate content (id: dt-0421)"`.
-- Add a small count next to "Live in:" e.g. `Live in (6):` so it's obvious at a glance.
+Remove the `options.length > 0` gate. Instead:
+- If the question is MCQ/image and has 0 options, show an amber banner **"This question has no answers — add at least 2 options below"** plus an **Add option** button that seeds 4 empty rows.
+- Each option row gets an **Add** / **Remove** control (min 2, max 6). The radio still picks the correct one.
+- For `true_false`, render a **True / False** radio pair instead of options.
+- For `multiple_response`, swap the radio for a checkbox per option, storing `correctAnswers` as `number[]`.
+
+### 3. Persist type + answer fields
+
+Extend the upsert payload in `save()` to also write the new `type` and the appropriate answer field:
+- `correct_answer` for `mcq`/`image_question` (number) and `true_false` (boolean)
+- `correct_answers` (jsonb `number[]`) for `multiple_response`
+
+If `question_overrides` doesn't yet have a `type` or `correct_answers` column, add a small migration that introduces them as nullable. The runtime override merge already falls through to original fields when null, so existing rows stay safe.
+
+### 4. Surface broken questions in the topic list
+
+In `src/routes/admin-kb20.questions.$topic.tsx`, add a red **"No answers"** badge next to any flat question where:
+- `type` is `mcq`/`image_question` and `options` is missing/empty, OR
+- `type` is `mcq`/`image_question` and `correctAnswer` isn't a valid index, OR
+- `type` is `true_false` and `correctAnswer` isn't a boolean.
+
+Add a "Needs answers" filter chip above the list so admins can jump straight to the broken ones.
 
 ### Out of scope
 
-- No schema changes.
-- No changes to bulk-duplicate flow or to mock JSON files.
-- "Unused — not in any mock" badge logic stays the same (based on real id usage), so genuinely orphaned bank entries still surface.
-
-### Why this works
-
-Bulk-duplicate writes override rows for target `(topic, question_id)` pairs with identical content. After this change, the admin UI groups slots by what the user *actually sees* on the live site, so the count matches reality.
+- No bulk-fix flow (the existing **Bulk duplicate questions** page already covers replacing many at once if needed).
+- No changes to mock JSON files or the validator rules — the validator already flags these as `invalid-correct-answer`.
+- No quiz runtime changes.
 
 ### Files touched
 
-- `src/routes/admin-kb20.questions.$topic.tsx` — extend `flatten()` to accept the overrides map and compute fingerprint-based usage; update the "Live in" render to show count + tooltip.
-
-No other files, no DB migration, no edge function work.
+- `src/components/QuestionEditDialog.tsx` — type selector, dynamic options editor, true/false + multi-response support, save payload.
+- `src/routes/admin-kb20.questions.$topic.tsx` — "No answers" badge + filter, pass `type` into the dialog defaults.
+- `supabase/migrations/<new>.sql` — add `type text` and `correct_answers jsonb` to `question_overrides` if they don't exist.
+- `src/lib/overrides.ts` — extend the merge to apply overridden `type` / `correct_answers`.
