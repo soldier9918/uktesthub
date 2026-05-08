@@ -663,23 +663,28 @@ function QuestionsBrowser() {
                     )}
                     {q.usedInMocks.length > 0 ? (
                       <span className="flex flex-wrap items-center gap-1 text-[10px] text-muted-foreground">
-                        Live in:
-                        {q.usedInMocks.map(({ mockNumber, slot }) => (
+                        Live in ({q.usedInMocks.length}):
+                        {q.usedInMocks.map(({ mockNumber, slot, sourceQid }) => {
+                          const isDup = sourceQid && sourceQid !== q.id;
+                          return (
                           <a
-                            key={`${mockNumber}-${slot}`}
+                            key={`${mockNumber}-${slot}-${sourceQid ?? q.id}`}
                             href={`/quiz/${topic}-mock-${mockNumber}${slot ? `#q${slot}` : ""}`}
                             target="_blank"
                             rel="noreferrer"
-                            className="rounded border border-border bg-background px-1.5 py-0.5 font-mono text-[10px] text-coral hover:border-coral hover:bg-coral/5"
+                            className={`rounded border px-1.5 py-0.5 font-mono text-[10px] hover:border-coral hover:bg-coral/5 ${isDup ? "border-dashed border-coral/40 bg-coral/5 text-coral" : "border-border bg-background text-coral"}`}
                             title={
-                              slot
+                              isDup
+                                ? `Mock ${mockNumber} · Q${slot} — duplicate content (id: ${sourceQid})`
+                                : slot
                                 ? `Open Mock Test ${mockNumber}, Question ${slot} on the live site (new tab)`
                                 : `Open Mock Test ${mockNumber} on the live site (new tab)`
                             }
                           >
-                            Mock {mockNumber}{slot ? ` · Q${slot}` : ""}
+                            Mock {mockNumber}{slot ? ` · Q${slot}` : ""}{isDup ? "*" : ""}
                           </a>
-                        ))}
+                          );
+                        })}
                       </span>
                     ) : (
                       <Badge variant="secondary">unused — not in any mock</Badge>
