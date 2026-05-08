@@ -42,7 +42,21 @@ type AnyFile = V1 | V2;
 
 import { loadTopicFileForAdmin } from "@/data/mocks";
 
-type MockUsage = { mockNumber: number; slot: number };
+type MockUsage = { mockNumber: number; slot: number; sourceQid?: string };
+
+function fingerprintQuestion(r: RawQuestion): string {
+  const norm = (s: unknown) =>
+    (s == null ? "" : String(s)).replace(/\s+/g, " ").trim().toLowerCase();
+  const q = norm(r.question || r.template || r.prompt);
+  const opts = Array.isArray(r.options) ? r.options.map(norm).join("|") : "";
+  const ca = Array.isArray(r.correctAnswers)
+    ? r.correctAnswers.slice().sort().join(",")
+    : r.correctAnswer != null
+      ? String(r.correctAnswer)
+      : "";
+  const img = norm(r.image);
+  return `${q}::${opts}::${ca}::${img}`;
+}
 
 type FlatQuestion = {
   id: string;
@@ -195,9 +209,8 @@ function QuestionsBrowser() {
   void bump;
   const highlightId = initialSearch;
   const effectiveQuestions = useMemo<FlatQuestion[]>(() => {
-    if (!overrides) return questions as FlatQuestion[];
-    return (questions as FlatQuestion[]).map((q) => {
-      const override = overrides.get(`${topic}::${q.id}`);
+    const base = (questions as FlatQuestion[]).map((q) => {
+      const override = overrides?.get(`${topic}::${q.id}`);
       if (!override) return q;
       const raw = applyOverrideToQuestionRecord(q.raw, override);
       return {
@@ -210,6 +223,32 @@ function QuestionsBrowser() {
         options: raw.options,
         correctText: describeCorrect(raw),
       };
+    });
+    // Group slots across the topic by content fingerprint so duplicated
+    // questions (same content, different ids via bulk-duplicate) all show
+    // the full set of mocks they appear in.
+    const groups = new Map<string, MockUsage[]>();
+    for (const q of base) {
+      const fp = fingerprintQuestion(q.raw);
+      const arr = groups.get(fp) ?? [];
+      for (const u of q.usedInMocks) {
+        arr.push({ mockNumber: u.mockNumber, slot: u.slot, sourceQid: q.id });
+      }
+      groups.set(fp, arr);
+    }
+    return base.map((q) => {
+      const fp = fingerprintQuestion(q.raw);
+      const merged = groups.get(fp) ?? q.usedInMocks;
+      const seen = new Set<string>();
+      const dedup: MockUsage[] = [];
+      for (const u of merged) {
+        const k = `${u.mockNumber}:${u.slot}`;
+        if (seen.has(k)) continue;
+        seen.add(k);
+        dedup.push(u);
+      }
+      dedup.sort((a, b) => a.mockNumber - b.mockNumber || a.slot - b.slot);
+      return { ...q, usedInMocks: dedup };
     });
   }, [overrides, questions, topic]);
 
@@ -624,23 +663,28 @@ function QuestionsBrowser() {
                     )}
                     {q.usedInMocks.length > 0 ? (
                       <span className="flex flex-wrap items-center gap-1 text-[10px] text-muted-foreground">
-                        Live in:
-                        {q.usedInMocks.map(({ mockNumber, slot }) => (
+                        Live in ({q.usedInMocks.length}):
+                        {q.usedInMocks.map(({ mockNumber, slot, sourceQid }) => {
+                          const isDup = sourceQid && sourceQid !== q.id;
+                          return (
                           <a
-                            key={`${mockNumber}-${slot}`}
+                            key={`${mockNumber}-${slot}-${sourceQid ?? q.id}`}
                             href={`/quiz/${topic}-mock-${mockNumber}${slot ? `#q${slot}` : ""}`}
                             target="_blank"
                             rel="noreferrer"
-                            className="rounded border border-border bg-background px-1.5 py-0.5 font-mono text-[10px] text-coral hover:border-coral hover:bg-coral/5"
+                            className={`rounded border px-1.5 py-0.5 font-mono text-[10px] hover:border-coral hover:bg-coral/5 ${isDup ? "border-dashed border-coral/40 bg-coral/5 text-coral" : "border-border bg-background text-coral"}`}
                             title={
-                              slot
+                              isDup
+                                ? `Mock ${mockNumber} · Q${slot} — duplicate content (id: ${sourceQid})`
+                                : slot
                                 ? `Open Mock Test ${mockNumber}, Question ${slot} on the live site (new tab)`
                                 : `Open Mock Test ${mockNumber} on the live site (new tab)`
                             }
                           >
-                            Mock {mockNumber}{slot ? ` · Q${slot}` : ""}
+                            Mock {mockNumber}{slot ? ` · Q${slot}` : ""}{isDup ? "*" : ""}
                           </a>
-                        ))}
+                          );
+                        })}
                       </span>
                     ) : (
                       <Badge variant="secondary">unused — not in any mock</Badge>
