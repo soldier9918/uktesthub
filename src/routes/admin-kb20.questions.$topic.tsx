@@ -305,6 +305,7 @@ function QuestionsBrowser() {
       const isDisabled = !!overrides?.get(`${topic}::${q.id}`)?.disabled;
       if (statusFilter === "enabled" && isDisabled) return false;
       if (statusFilter === "disabled" && !isDisabled) return false;
+      if (healthFilter === "broken" && !hasBrokenAnswers(q.raw)) return false;
       if (
         s &&
         !q.question.toLowerCase().includes(s) &&
@@ -314,7 +315,7 @@ function QuestionsBrowser() {
         return false;
       return true;
     });
-  }, [effectiveQuestions, search, type, imageFilter, usageFilter, statusFilter, overrides, topic]);
+  }, [effectiveQuestions, search, type, imageFilter, usageFilter, statusFilter, healthFilter, overrides, topic]);
 
   const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
   const pageSafe = Math.min(page, totalPages);
