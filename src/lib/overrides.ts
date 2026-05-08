@@ -70,7 +70,9 @@ export function applyOverrideToQuestionRecord<T extends Record<string, unknown>>
     override.question != null ||
     Array.isArray(override.options) ||
     override.correct_answer != null ||
-    override.explanation != null;
+    override.explanation != null ||
+    override.type != null;
+  if (override.type != null) next.type = override.type;
   if (override.question != null) {
     if ("template" in next && !("question" in next)) next.template = override.question;
     else if ("prompt" in next && !("question" in next)) next.prompt = override.question;
@@ -81,8 +83,10 @@ export function applyOverrideToQuestionRecord<T extends Record<string, unknown>>
     const t = next.type;
     if ((t === "multiple-response" || t === "multiple_response") && Array.isArray(override.correct_answer)) {
       next.correctAnswers = override.correct_answer;
+      delete next.correctAnswer;
     } else {
       next.correctAnswer = override.correct_answer;
+      if (!Array.isArray(override.correct_answer)) delete next.correctAnswers;
     }
   }
   if (override.explanation != null) next.explanation = override.explanation;
