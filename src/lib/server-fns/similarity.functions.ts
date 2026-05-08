@@ -106,7 +106,7 @@ export const aiVerdictPairs = createServerFn({ method: "POST" })
       });
       if (!resp.ok) {
         const txt = await resp.text();
-        return { verdicts: [], error: `AI gateway ${resp.status}: ${txt.slice(0, 200)}` };
+        console.error(`[ai] verdicts gateway ${resp.status}:`, txt.slice(0,500)); return { verdicts: [], error: "AI service unavailable, please retry" };
       }
       const json = (await resp.json()) as {
         choices?: Array<{
@@ -119,7 +119,7 @@ export const aiVerdictPairs = createServerFn({ method: "POST" })
         const parsed = JSON.parse(argsStr) as { verdicts: Verdict[] };
         return { verdicts: parsed.verdicts ?? [], error: null };
       } catch (e) {
-        return { verdicts: [], error: `Parse error: ${(e as Error).message}` };
+        console.error("[ai] verdicts parse error:", e); return { verdicts: [], error: "Unexpected AI response format" };
       }
     },
   );
@@ -372,7 +372,7 @@ ${JSON.stringify(
         });
         if (!resp.ok) {
           const txt = await resp.text();
-          lastError = `AI gateway ${resp.status}: ${txt.slice(0, 200)}`;
+          console.error(`[ai] gateway ${resp.status}:`, txt.slice(0,500)); lastError = "AI service unavailable, please retry";
           if (resp.status === 429 || resp.status === 402) break;
           continue;
         }
@@ -396,7 +396,7 @@ ${JSON.stringify(
         try {
           parsed = JSON.parse(argsStr);
         } catch (e) {
-          lastError = `Parse error: ${(e as Error).message}`;
+          console.error("[ai] parse error:", e); lastError = "Unexpected AI response format";
           continue;
         }
 
@@ -892,7 +892,7 @@ Now write a completely fresh question.`;
         });
         if (!resp.ok) {
           const txt = await resp.text();
-          lastError = `AI gateway ${resp.status}: ${txt.slice(0, 200)}`;
+          console.error(`[ai] gateway ${resp.status}:`, txt.slice(0,500)); lastError = "AI service unavailable, please retry";
           if (resp.status === 429 || resp.status === 402) break;
           continue;
         }
@@ -916,7 +916,7 @@ Now write a completely fresh question.`;
         try {
           parsed = JSON.parse(argsStr);
         } catch (e) {
-          lastError = `Parse error: ${(e as Error).message}`;
+          console.error("[ai] parse error:", e); lastError = "Unexpected AI response format";
           continue;
         }
 
