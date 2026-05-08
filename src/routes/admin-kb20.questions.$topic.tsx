@@ -101,6 +101,22 @@ function describeCorrect(r: RawQuestion): string | undefined {
   return undefined;
 }
 
+function hasBrokenAnswers(r: RawQuestion): boolean {
+  const t = normaliseType(r.type);
+  if (t === "mcq" || t === "image-question") {
+    if (!Array.isArray(r.options) || r.options.length < 2) return true;
+    if (typeof r.correctAnswer !== "number" || r.correctAnswer < 0 || r.correctAnswer >= r.options.length) return true;
+    return false;
+  }
+  if (t === "true-false") return typeof r.correctAnswer !== "boolean";
+  if (t === "multiple-response") {
+    if (!Array.isArray(r.options) || r.options.length < 2) return true;
+    if (!Array.isArray(r.correctAnswers) || r.correctAnswers.length === 0) return true;
+    return false;
+  }
+  return false;
+}
+
 function flatten(file: AnyFile): FlatQuestion[] {
   if ((file as V2).version === 2 && Array.isArray((file as V2).bank)) {
     const v2 = file as V2;
@@ -197,6 +213,7 @@ function QuestionsBrowser() {
   const [imageFilter, setImageFilter] = useState<"all" | "with" | "without">("all");
   const [usageFilter, setUsageFilter] = useState<"all" | "used" | "unused">("all");
   const [statusFilter, setStatusFilter] = useState<"all" | "enabled" | "disabled">("all");
+  const [healthFilter, setHealthFilter] = useState<"all" | "broken">("all");
   const [togglingId, setTogglingId] = useState<string | null>(null);
   const [page, setPage] = useState(1);
   const [editing, setEditing] = useState<FlatQuestion | null>(null);
@@ -288,6 +305,7 @@ function QuestionsBrowser() {
       const isDisabled = !!overrides?.get(`${topic}::${q.id}`)?.disabled;
       if (statusFilter === "enabled" && isDisabled) return false;
       if (statusFilter === "disabled" && !isDisabled) return false;
+      if (healthFilter === "broken" && !hasBrokenAnswers(q.raw)) return false;
       if (
         s &&
         !q.question.toLowerCase().includes(s) &&
@@ -297,7 +315,7 @@ function QuestionsBrowser() {
         return false;
       return true;
     });
-  }, [effectiveQuestions, search, type, imageFilter, usageFilter, statusFilter, overrides, topic]);
+  }, [effectiveQuestions, search, type, imageFilter, usageFilter, statusFilter, healthFilter, overrides, topic]);
 
   const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
   const pageSafe = Math.min(page, totalPages);
@@ -603,6 +621,18 @@ function QuestionsBrowser() {
             <option value="enabled">Enabled only</option>
             <option value="disabled">Disabled only</option>
           </select>
+          <select
+            value={healthFilter}
+            onChange={(e) => {
+              setHealthFilter(e.target.value as "all" | "broken");
+              setPage(1);
+            }}
+            className="h-9 rounded-md border border-input bg-background px-2 text-sm"
+            title="Show only questions that are missing answer options"
+          >
+            <option value="all">All health</option>
+            <option value="broken">Needs answers</option>
+          </select>
           <span className="ml-auto text-xs text-muted-foreground">
             {filtered.length} matching
           </span>
@@ -660,6 +690,11 @@ function QuestionsBrowser() {
                     )}
                     {isDisabled && (
                       <Badge className="bg-destructive text-destructive-foreground">disabled</Badge>
+                    )}
+                    {hasBrokenAnswers(q.raw) && (
+                      <Badge className="bg-amber-500 text-white" title="This question is missing valid answer options">
+                        no answers
+                      </Badge>
                     )}
                     {q.usedInMocks.length > 0 ? (
                       <span className="flex flex-wrap items-center gap-1 text-[10px] text-muted-foreground">
@@ -807,9 +842,11 @@ function QuestionsBrowser() {
             topic={topic}
             questionId={editing.id}
             defaults={{
+              type: editing.type,
               question: editing.question,
               options: editing.options,
-              correctAnswer: editing.raw.correctAnswer as number | undefined,
+              correctAnswer: editing.raw.correctAnswer as number | boolean | undefined,
+              correctAnswers: editing.raw.correctAnswers,
               explanation: editing.explanation,
               image: editing.image,
               imageAlt: editing.imageAlt,

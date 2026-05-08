@@ -1,0 +1,1 @@
+ALTER TABLE public.question_overrides ADD COLUMN IF NOT EXISTS type text;
