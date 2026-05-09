@@ -222,6 +222,7 @@ function QuestionsBrowser() {
   const [bump, setBump] = useState(0);
   const [importMsg, setImportMsg] = useState<string | null>(null);
   const [importing, setImporting] = useState(false);
+  const [cleaning, setCleaning] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
   const overrides = useOverrides();
   void bump;
