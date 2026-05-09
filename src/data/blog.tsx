@@ -1,14 +1,56 @@
 import type { ReactNode } from "react";
 import { Link } from "@tanstack/react-router";
-import heroDriving from "@/assets/cat-hero-driving.jpg";
-import heroCitizenship from "@/assets/cat-hero-citizenship.jpg";
-import heroEnglish from "@/assets/cat-hero-english.jpg";
-import heroEducation from "@/assets/cat-hero-education.jpg";
-import heroCareer from "@/assets/cat-hero-career.jpg";
-import heroProfessional from "@/assets/cat-hero-professional.jpg";
-import heroNhs from "@/assets/cat-hero-nhs.jpg";
-import heroFun from "@/assets/cat-hero-fun.jpg";
-import heroTaxi from "@/assets/cat-hero-taxi-private-hire.jpg";
+import h_CompleteUkRoadSignsReference from "@/assets/blog/complete-uk-road-signs-reference.jpg";
+import h_HowToPassDrivingTheoryTest from "@/assets/blog/how-to-pass-driving-theory-test.jpg";
+import h_LifeInTheUkTestGuide from "@/assets/blog/life-in-the-uk-test-guide.jpg";
+import h_TopUkRoadSignsExplained from "@/assets/blog/top-uk-road-signs-explained.jpg";
+import h_IeltsTipsForBeginners from "@/assets/blog/ielts-tips-for-beginners.jpg";
+import h_GcseMathsRevisionGuide from "@/assets/blog/gcse-maths-revision-guide.jpg";
+import h_CscsTestPracticeGuide from "@/assets/blog/cscs-test-practice-guide.jpg";
+import h_SeruTflTestGuide from "@/assets/blog/seru-tfl-test-guide.jpg";
+import h_NhsNumeracyTestTips from "@/assets/blog/nhs-numeracy-test-tips.jpg";
+import h_UkGeneralKnowledgeQuizGuide from "@/assets/blog/uk-general-knowledge-quiz-guide.jpg";
+import h_HowToStudyForExamsFast from "@/assets/blog/how-to-study-for-exams-fast.jpg";
+import h_UkDrivingTheoryQuestions2026 from "@/assets/blog/uk-driving-theory-questions-2026.jpg";
+import h_50UkRoadSignsYouMustKnow from "@/assets/blog/50-uk-road-signs-you-must-know.jpg";
+import h_DrivingTheoryTestUkCompleteGuide from "@/assets/blog/driving-theory-test-uk-complete-guide.jpg";
+import h_HardestUkDrivingTheoryQuestions from "@/assets/blog/hardest-uk-driving-theory-questions.jpg";
+import h_UkHazardPerceptionTestTips from "@/assets/blog/uk-hazard-perception-test-tips.jpg";
+import h_DrivingTheoryMockTestUk from "@/assets/blog/driving-theory-mock-test-uk.jpg";
+import h_UkRoadSignsQuiz100Percent from "@/assets/blog/uk-road-signs-quiz-100-percent.jpg";
+import h_MostCommonDrivingTheoryMistakes from "@/assets/blog/most-common-driving-theory-mistakes.jpg";
+import h_UkDrivingTheoryPassMarkExplained from "@/assets/blog/uk-driving-theory-pass-mark-explained.jpg";
+import h_FreeDrivingTheoryPracticeTestUk from "@/assets/blog/free-driving-theory-practice-test-uk.jpg";
+import h_LifeInTheUkTestQuestionsAndAnswers2026 from "@/assets/blog/life-in-the-uk-test-questions-and-answers-2026.jpg";
+import h_50LifeInTheUkQuestionsYouMustKnow from "@/assets/blog/50-life-in-the-uk-questions-you-must-know.jpg";
+import h_HardestLifeInTheUkTestQuestions from "@/assets/blog/hardest-life-in-the-uk-test-questions.jpg";
+import h_LifeInTheUkTestPracticeFree from "@/assets/blog/life-in-the-uk-test-practice-free.jpg";
+import h_UkCitizenshipTestGuidePassFirstTime from "@/assets/blog/uk-citizenship-test-guide-pass-first-time.jpg";
+import h_LifeInTheUkTestPassMarkExplained from "@/assets/blog/life-in-the-uk-test-pass-mark-explained.jpg";
+import h_BritishCitizenshipTestQuestions2026 from "@/assets/blog/british-citizenship-test-questions-2026.jpg";
+import h_HowToPassLifeInTheUkTestQuickly from "@/assets/blog/how-to-pass-life-in-the-uk-test-quickly.jpg";
+import h_LifeInTheUkMockTest2026Edition from "@/assets/blog/life-in-the-uk-mock-test-2026-edition.jpg";
+import h_CommonLifeInTheUkTestMistakesToAvoid from "@/assets/blog/common-life-in-the-uk-test-mistakes-to-avoid.jpg";
+import h_CscsTestQuestionsAndAnswers2026 from "@/assets/blog/cscs-test-questions-and-answers-2026.jpg";
+import h_CscsMockTestFreeUk from "@/assets/blog/cscs-mock-test-free-uk.jpg";
+import h_HowToPassCscsTestFirstTime from "@/assets/blog/how-to-pass-cscs-test-first-time.jpg";
+import h_MostCommonCscsTestQuestionsExplained from "@/assets/blog/most-common-cscs-test-questions-explained.jpg";
+import h_CscsCardTestPracticeQuestionsUk from "@/assets/blog/cscs-card-test-practice-questions-uk.jpg";
+import h_NhsNumeracyTestQuestionsAndAnswers from "@/assets/blog/nhs-numeracy-test-questions-and-answers.jpg";
+import h_NhsInterviewQuestionsAndAnswersUkGuide from "@/assets/blog/nhs-interview-questions-and-answers-uk-guide.jpg";
+import h_NhsLiteracyTestPracticeWithAnswers from "@/assets/blog/nhs-literacy-test-practice-with-answers.jpg";
+import h_IeltsListeningPracticeTestFree from "@/assets/blog/ielts-listening-practice-test-free.jpg";
+import h_IeltsGrammarTestQuestionsBeginnerToAdvanced from "@/assets/blog/ielts-grammar-test-questions-beginner-to-advanced.jpg";
+import h_TflPrivateHireDriverLicenceGuide from "@/assets/blog/tfl-private-hire-driver-licence-guide.jpg";
+import h_SeruAssessmentGuide from "@/assets/blog/seru-assessment-guide.jpg";
+import h_TopographicalAssessmentGuide from "@/assets/blog/topographical-assessment-guide.jpg";
+import h_PrivateHireEnglishLanguageRequirement from "@/assets/blog/private-hire-english-language-requirement.jpg";
+import h_CongestionChargePrivateHireDrivers from "@/assets/blog/congestion-charge-private-hire-drivers.jpg";
+import h_UlezPrivateHireDrivers from "@/assets/blog/ulez-private-hire-drivers.jpg";
+import h_DbsCheckPrivateHireDriver from "@/assets/blog/dbs-check-private-hire-driver.jpg";
+import h_SafeguardingAwarenessPrivateHire from "@/assets/blog/safeguarding-awareness-private-hire.jpg";
+import h_PrivateHireDriverBadgeRules from "@/assets/blog/private-hire-driver-badge-rules.jpg";
+import h_HowToBecomeAPrivateHireDriverLondon from "@/assets/blog/how-to-become-a-private-hire-driver-london.jpg";
 import { RoadSignsReferenceBody } from "./blog-content/road-signs-reference";
 
 export type BlogPost = {
@@ -57,7 +99,7 @@ export const blogPosts: BlogPost[] = [
     readingMinutes: 18,
     category: "Driving",
     tags: ["road signs", "highway code", "driving theory", "motorway"],
-    hero: heroDriving,
+    hero: h_CompleteUkRoadSignsReference,
     body: () => <RoadSignsReferenceBody />,
   },
 
@@ -73,7 +115,7 @@ export const blogPosts: BlogPost[] = [
     readingMinutes: 9,
     category: "Driving",
     tags: ["driving theory", "DVSA", "hazard perception"],
-    hero: heroDriving,
+    hero: h_HowToPassDrivingTheoryTest,
     body: () => (
       <>
         <p>
@@ -189,7 +231,7 @@ export const blogPosts: BlogPost[] = [
     readingMinutes: 11,
     category: "Citizenship",
     tags: ["life in the uk", "citizenship", "ILR"],
-    hero: heroCitizenship,
+    hero: h_LifeInTheUkTestGuide,
     body: () => (
       <>
         <p>
@@ -289,7 +331,7 @@ export const blogPosts: BlogPost[] = [
     readingMinutes: 8,
     category: "Driving",
     tags: ["road signs", "highway code", "driving theory"],
-    hero: heroDriving,
+    hero: h_TopUkRoadSignsExplained,
     body: () => (
       <>
         <p>
@@ -379,7 +421,7 @@ export const blogPosts: BlogPost[] = [
     readingMinutes: 12,
     category: "English",
     tags: ["IELTS", "english", "language learning"],
-    hero: heroEnglish,
+    hero: h_IeltsTipsForBeginners,
     body: () => (
       <>
         <p>
@@ -495,7 +537,7 @@ export const blogPosts: BlogPost[] = [
     readingMinutes: 10,
     category: "Education",
     tags: ["GCSE", "maths", "revision"],
-    hero: heroEducation,
+    hero: h_GcseMathsRevisionGuide,
     body: () => (
       <>
         <p>
@@ -587,7 +629,7 @@ export const blogPosts: BlogPost[] = [
     readingMinutes: 9,
     category: "Professional",
     tags: ["CSCS", "construction", "health and safety"],
-    hero: heroProfessional,
+    hero: h_CscsTestPracticeGuide,
     body: () => (
       <>
         <p>
@@ -683,7 +725,7 @@ export const blogPosts: BlogPost[] = [
     readingMinutes: 10,
     category: "Professional",
     tags: ["SERU", "TfL", "private hire", "London"],
-    hero: heroProfessional,
+    hero: h_SeruTflTestGuide,
     body: () => (
       <>
         <p>
@@ -772,7 +814,7 @@ export const blogPosts: BlogPost[] = [
     readingMinutes: 8,
     category: "NHS",
     tags: ["NHS", "numeracy", "drug calculations"],
-    hero: heroNhs,
+    hero: h_NhsNumeracyTestTips,
     body: () => (
       <>
         <p>
@@ -868,7 +910,7 @@ export const blogPosts: BlogPost[] = [
     readingMinutes: 8,
     category: "Fun",
     tags: ["general knowledge", "trivia", "uk culture"],
-    hero: heroFun,
+    hero: h_UkGeneralKnowledgeQuizGuide,
     body: () => (
       <>
         <p>
@@ -952,7 +994,7 @@ export const blogPosts: BlogPost[] = [
     readingMinutes: 10,
     category: "Education",
     tags: ["study tips", "revision", "exam preparation"],
-    hero: heroEducation,
+    hero: h_HowToStudyForExamsFast,
     body: () => (
       <>
         <p>
@@ -1055,7 +1097,7 @@ export const blogPosts: BlogPost[] = [
     readingMinutes: 8,
     category: "Driving",
     tags: ["driving theory", "DVSA", "2026", "practice test"],
-    hero: heroDriving,
+    hero: h_UkDrivingTheoryQuestions2026,
     body: () => (
       <>
         <p>The UK Driving Theory Test changed very little for 2026, but the bar to pass remains the same: 43 out of 50 multiple-choice questions and 44 out of 75 on hazard perception. Below are 12 fresh practice questions written in the exact DVSA style for 2026, covering road signs, stopping distances, vulnerable road users, motorway rules and the Highway Code updates you need to know. Read each question carefully, decide your answer before scrolling, then check the worked explanation. When you're done, take a full free mock test to see where you stand.</p>
@@ -1136,7 +1178,7 @@ export const blogPosts: BlogPost[] = [
     readingMinutes: 9,
     category: "Driving",
     tags: ["road signs", "highway code", "driving theory"],
-    hero: heroDriving,
+    hero: h_50UkRoadSignsYouMustKnow,
     body: () => (
       <>
         <p>UK road signs are organised by shape and colour: red triangles warn, red circles prohibit, blue circles instruct, blue rectangles inform on motorways, green rectangles inform on primary routes, and brown rectangles point to tourist attractions. Memorise the families and you can decode 90% of signs you've never seen before. Below are the 12 most-tested signs in the 2026 DVSA bank — practise these and you'll handle every road-sign question on your theory exam.</p>
@@ -1216,7 +1258,7 @@ export const blogPosts: BlogPost[] = [
     readingMinutes: 9,
     category: "Driving",
     tags: ["driving theory", "guide", "DVSA"],
-    hero: heroDriving,
+    hero: h_DrivingTheoryTestUkCompleteGuide,
     body: () => (
       <>
         <p>Around half of UK learners fail the Driving Theory Test on their first attempt — almost always by one or two marks, and almost always because they under-prepared rather than because they didn't know the material. This complete guide walks you through the test format, the pass marks, how to book, what to bring on the day, a 30-day revision plan that actually works, and 10 practice questions to benchmark where you are right now.</p>
@@ -1292,7 +1334,7 @@ export const blogPosts: BlogPost[] = [
     readingMinutes: 8,
     category: "Driving",
     tags: ["hardest", "driving theory", "tricky questions"],
-    hero: heroDriving,
+    hero: h_HardestUkDrivingTheoryQuestions,
     body: () => (
       <>
         <p>DVSA data shows certain question types trip up learners again and again — stopping distances, dual-carriageway rules, environment, and edge-case Highway Code rules around vulnerable road users. Below are 12 of the toughest questions in the 2026 bank, each followed by the explanation that turns a guess into a confident answer.</p>
@@ -1372,7 +1414,7 @@ export const blogPosts: BlogPost[] = [
     readingMinutes: 7,
     category: "Driving",
     tags: ["hazard perception", "driving theory", "DVSA"],
-    hero: heroDriving,
+    hero: h_UkHazardPerceptionTestTips,
     body: () => (
       <>
         <p>The hazard perception section uses 14 video clips containing 15 developing hazards (one clip has two). Each hazard scores 0–5 based on how early you click — the earlier you spot a true developing hazard, the higher your score. Click too early and you score nothing for that hazard; click in a rapid pattern and the system zeroes the entire clip. Below are 10 practice scenarios and the smart way to handle each, followed by the tips that take learners from 38/75 to 60/75.</p>
@@ -1449,7 +1491,7 @@ export const blogPosts: BlogPost[] = [
     readingMinutes: 7,
     category: "Driving",
     tags: ["mock test", "driving theory", "DVSA"],
-    hero: heroDriving,
+    hero: h_DrivingTheoryMockTestUk,
     body: () => (
       <>
         <p>There's no substitute for sitting full mocks under exam conditions. Below is a 12-question warm-up drawn from the same topic distribution as the real DVSA test: alertness, attitude, safety, safety margins, hazard awareness, vulnerable road users, other types of vehicle, vehicle handling, motorway rules, rules of the road, road and traffic signs, documents, accidents, and vehicle loading.</p>
@@ -1529,7 +1571,7 @@ export const blogPosts: BlogPost[] = [
     readingMinutes: 6,
     category: "Driving",
     tags: ["road signs", "quiz", "highway code"],
-    hero: heroDriving,
+    hero: h_UkRoadSignsQuiz100Percent,
     body: () => (
       <>
         <p>Road signs make up roughly 10–15% of the multiple-choice section of the Driving Theory Test. They're also one of the easiest sections to ace — once you know the shape and colour rules. Below is a 12-question road signs quiz drawn from across all four sign families. Be honest, don't peek at the answers, and aim for a perfect 12/12.</p>
@@ -1608,7 +1650,7 @@ export const blogPosts: BlogPost[] = [
     readingMinutes: 7,
     category: "Driving",
     tags: ["driving theory", "mistakes", "tips"],
-    hero: heroDriving,
+    hero: h_MostCommonDrivingTheoryMistakes,
     body: () => (
       <>
         <p>DVSA pass-rate data shows a clear pattern: the learners who fail the Driving Theory Test almost always fail for the same reasons — rushing, ignoring hazard perception, weak knowledge of stopping distances, and confusing "must" with "should". Here are 10 questions built around those exact pitfalls, with answers that double as a mini-revision sheet.</p>
@@ -1684,7 +1726,7 @@ export const blogPosts: BlogPost[] = [
     readingMinutes: 6,
     category: "Driving",
     tags: ["pass mark", "driving theory", "DVSA"],
-    hero: heroDriving,
+    hero: h_UkDrivingTheoryPassMarkExplained,
     body: () => (
       <>
         <p>Two pass marks, one test. To pass the UK Driving Theory Test you need 43 out of 50 (86%) on the multiple choice AND 44 out of 75 (about 59%) on hazard perception, both at the same sitting. Fail either one and you re-sit both. The 2026 update brought no change to the pass marks but did refresh question wording and add a handful of new road signs. Below: 10 questions on the exact format and pass-mark logic, followed by tips for hitting both marks comfortably.</p>
@@ -1760,7 +1802,7 @@ export const blogPosts: BlogPost[] = [
     readingMinutes: 6,
     category: "Driving",
     tags: ["free", "practice test", "driving theory"],
-    hero: heroDriving,
+    hero: h_FreeDrivingTheoryPracticeTestUk,
     body: () => (
       <>
         <p>If you're booking the UK Driving Theory Test in 2026, the cheapest and most effective preparation is also the most boring: hammer free practice tests until 47/50 feels routine. UK Test Hub has unlimited free mocks with no account required, instant marking and full DVSA-style explanations. Below are 10 starter questions to warm up — then click through to a full free mock to keep going.</p>
@@ -1836,7 +1878,7 @@ export const blogPosts: BlogPost[] = [
     readingMinutes: 8,
     category: "Citizenship",
     tags: ["life in the uk", "2026", "citizenship"],
-    hero: heroCitizenship,
+    hero: h_LifeInTheUkTestQuestionsAndAnswers2026,
     body: () => (
       <>
         <p>The Life in the UK Test asks 24 questions in 45 minutes, all drawn directly from the official handbook "Life in the United Kingdom: A Guide for New Residents". The pass mark is 75% — at least 18 correct. Below are 12 fresh practice questions in the exact format used at official test centres, with full explanations after each answer so you understand WHY each is correct.</p>
@@ -1916,7 +1958,7 @@ export const blogPosts: BlogPost[] = [
     readingMinutes: 9,
     category: "Citizenship",
     tags: ["life in the uk", "must know", "citizenship"],
-    hero: heroCitizenship,
+    hero: h_50LifeInTheUkQuestionsYouMustKnow,
     body: () => (
       <>
         <p>Some Life in the UK Test questions appear so often that knowing them is the difference between passing and failing. Below are 12 of the must-know questions — covering the chapters and dates that come up almost every sitting. Practise these until they're automatic, then attack a full mock.</p>
@@ -1996,7 +2038,7 @@ export const blogPosts: BlogPost[] = [
     readingMinutes: 8,
     category: "Citizenship",
     tags: ["hardest", "life in the uk", "tricky"],
-    hero: heroCitizenship,
+    hero: h_HardestLifeInTheUkTestQuestions,
     body: () => (
       <>
         <p>Pass-rate analysis shows certain Life in the UK questions trip up candidates far more often than others — usually obscure dates, lesser-known monarchs, and details about devolved administrations. Below are 12 of the hardest questions in the 2026 bank with explanations to lock them in.</p>
@@ -2076,7 +2118,7 @@ export const blogPosts: BlogPost[] = [
     readingMinutes: 7,
     category: "Citizenship",
     tags: ["free", "practice", "life in the uk"],
-    hero: heroCitizenship,
+    hero: h_LifeInTheUkTestPracticeFree,
     body: () => (
       <>
         <p>The official Life in the UK Test costs £50 every time you take it — so practising for free until you're confident is essential. Below is a 12-question warm-up in the same multiple-choice format used at the test centre. The full mock matches the real exam exactly: 24 questions in 45 minutes, with the same 18/24 pass mark.</p>
@@ -2156,7 +2198,7 @@ export const blogPosts: BlogPost[] = [
     readingMinutes: 9,
     category: "Citizenship",
     tags: ["citizenship", "guide", "ILR"],
-    hero: heroCitizenship,
+    hero: h_UkCitizenshipTestGuidePassFirstTime,
     body: () => (
       <>
         <p>Becoming a British citizen typically requires: ILR for at least 12 months, the Life in the UK Test, an English language qualification at CEFR B1+ (or higher), the AN application form, biometrics and a citizenship ceremony. Below are 10 questions on the process itself plus tips on hitting each milestone in the right order.</p>
@@ -2232,7 +2274,7 @@ export const blogPosts: BlogPost[] = [
     readingMinutes: 6,
     category: "Citizenship",
     tags: ["pass mark", "life in the uk", "citizenship"],
-    hero: heroCitizenship,
+    hero: h_LifeInTheUkTestPassMarkExplained,
     body: () => (
       <>
         <p>The Life in the UK Test pass mark is 75% — at least 18 correct out of 24 questions. You have 45 minutes, which means almost 2 minutes per question. Most candidates finish in 20 minutes; resist the urge to leave early. Below are 10 questions on the test format and pass-mark logic, then tips for hitting 22+ consistently in practice.</p>
@@ -2308,7 +2350,7 @@ export const blogPosts: BlogPost[] = [
     readingMinutes: 7,
     category: "Citizenship",
     tags: ["british citizenship", "2026", "free"],
-    hero: heroCitizenship,
+    hero: h_BritishCitizenshipTestQuestions2026,
     body: () => (
       <>
         <p>The British citizenship test is officially called the Life in the UK Test. It's the same exam whether you're applying for ILR or naturalisation — 24 questions, 45 minutes, 75% pass. Below are 12 fresh 2026-aligned questions with full explanations.</p>
@@ -2388,7 +2430,7 @@ export const blogPosts: BlogPost[] = [
     readingMinutes: 7,
     category: "Citizenship",
     tags: ["fast", "life in the uk", "study plan"],
-    hero: heroCitizenship,
+    hero: h_HowToPassLifeInTheUkTestQuickly,
     body: () => (
       <>
         <p>Most candidates over-study the Life in the UK Test. The handbook is around 180 pages and the test only draws from a defined question bank — so two focused weeks is enough for most people. Below is the 14-day plan, plus a 10-question warm-up to gauge where you are right now.</p>
@@ -2465,7 +2507,7 @@ export const blogPosts: BlogPost[] = [
     readingMinutes: 7,
     category: "Citizenship",
     tags: ["mock test", "2026", "life in the uk"],
-    hero: heroCitizenship,
+    hero: h_LifeInTheUkMockTest2026Edition,
     body: () => (
       <>
         <p>Mock tests are the single best predictor of your real Life in the UK Test result. Here's a 12-question 2026-edition mock to warm up. Time yourself — aim for under 4 minutes — then jump straight to the full 24-question mock.</p>
@@ -2545,7 +2587,7 @@ export const blogPosts: BlogPost[] = [
     readingMinutes: 7,
     category: "Citizenship",
     tags: ["mistakes", "life in the uk", "tips"],
-    hero: heroCitizenship,
+    hero: h_CommonLifeInTheUkTestMistakesToAvoid,
     body: () => (
       <>
         <p>After thousands of test results, certain mistakes appear over and over. Below are the 10 traps to avoid, framed as practice questions so you can recognise the patterns at a glance.</p>
@@ -2621,7 +2663,7 @@ export const blogPosts: BlogPost[] = [
     readingMinutes: 8,
     category: "Professional",
     tags: ["CSCS", "2026", "construction"],
-    hero: heroProfessional,
+    hero: h_CscsTestQuestionsAndAnswers2026,
     body: () => (
       <>
         <p>The CSCS Health, Safety & Environment Test is required for nearly every construction site in the UK. It's 50 questions in 45 minutes, with 12 case study questions and 38 knowledge questions. Pass mark is 47/50. Below are 12 practice questions written in the exact CITB style for 2026.</p>
@@ -2701,7 +2743,7 @@ export const blogPosts: BlogPost[] = [
     readingMinutes: 7,
     category: "Professional",
     tags: ["CSCS", "mock test", "free"],
-    hero: heroProfessional,
+    hero: h_CscsMockTestFreeUk,
     body: () => (
       <>
         <p>If you're booking your CSCS Health, Safety & Environment Test soon, run multiple mocks first. The pass mark is high (47/50) and the questions span topics most candidates haven't touched since induction. Below are 10 sample questions to warm up — then click for the full mock.</p>
@@ -2777,7 +2819,7 @@ export const blogPosts: BlogPost[] = [
     readingMinutes: 8,
     category: "Professional",
     tags: ["CSCS", "guide", "first time"],
-    hero: heroProfessional,
+    hero: h_HowToPassCscsTestFirstTime,
     body: () => (
       <>
         <p>The CSCS card is the gateway to working on a UK construction site, and the Health, Safety & Environment Test is the gateway to the card. Here's the complete plan: format, pass mark, booking, what to bring, the topics that come up most, and 10 warm-up questions.</p>
@@ -2853,7 +2895,7 @@ export const blogPosts: BlogPost[] = [
     readingMinutes: 7,
     category: "Professional",
     tags: ["CSCS", "common questions", "explained"],
-    hero: heroProfessional,
+    hero: h_MostCommonCscsTestQuestionsExplained,
     body: () => (
       <>
         <p>Some CSCS questions appear on virtually every sitting because they cover the most important on-site safety principles. Below are 12 of the most-repeated questions with full worked answers.</p>
@@ -2933,7 +2975,7 @@ export const blogPosts: BlogPost[] = [
     readingMinutes: 7,
     category: "Professional",
     tags: ["CSCS card", "practice", "construction"],
-    hero: heroProfessional,
+    hero: h_CscsCardTestPracticeQuestionsUk,
     body: () => (
       <>
         <p>Whether you're applying for a Green Labourer card or upgrading to Gold Skilled, you'll need to pass a CSCS Health, Safety & Environment Test. Below are 12 practice questions in real exam format, covering high-risk activities, environmental responsibilities and behavioural safety.</p>
@@ -3013,7 +3055,7 @@ export const blogPosts: BlogPost[] = [
     readingMinutes: 7,
     category: "NHS",
     tags: ["NHS", "numeracy", "drug calculations"],
-    hero: heroNhs,
+    hero: h_NhsNumeracyTestQuestionsAndAnswers,
     body: () => (
       <>
         <p>NHS numeracy tests appear in nursing recruitment, healthcare apprenticeships and many band 2–6 NHS roles. They focus on practical maths: drug calculations, fluid balance, percentages, ratios and conversions. Below are 10 worked examples in real NHS format.</p>
@@ -3089,7 +3131,7 @@ export const blogPosts: BlogPost[] = [
     readingMinutes: 8,
     category: "NHS",
     tags: ["NHS", "interview", "STAR"],
-    hero: heroNhs,
+    hero: h_NhsInterviewQuestionsAndAnswersUkGuide,
     body: () => (
       <>
         <p>NHS interviews are usually values-based, mapped to the NHS Constitution: respect, dignity, commitment to quality, compassion, working together and improving lives. The best answers use the STAR framework (Situation, Task, Action, Result). Below are 10 of the most common NHS interview questions with strong-answer pointers.</p>
@@ -3165,7 +3207,7 @@ export const blogPosts: BlogPost[] = [
     readingMinutes: 6,
     category: "NHS",
     tags: ["NHS", "literacy", "comprehension"],
-    hero: heroNhs,
+    hero: h_NhsLiteracyTestPracticeWithAnswers,
     body: () => (
       <>
         <p>NHS literacy tests assess your ability to read, understand and respond to written information — vital for accurate notes, handovers and patient safety. Below are 12 practice items spanning comprehension, spelling and grammar.</p>
@@ -3245,7 +3287,7 @@ export const blogPosts: BlogPost[] = [
     readingMinutes: 8,
     category: "English",
     tags: ["IELTS", "listening", "free"],
-    hero: heroEnglish,
+    hero: h_IeltsListeningPracticeTestFree,
     body: () => (
       <>
         <p>The IELTS Listening test is 30 minutes (plus 10 minutes transfer time on paper IELTS) with 40 questions across 4 sections that get progressively harder. Below are 10 sample-style questions modelled on each section, with answer pointers and the most common traps.</p>
@@ -3321,7 +3363,7 @@ export const blogPosts: BlogPost[] = [
     readingMinutes: 7,
     category: "English",
     tags: ["IELTS", "grammar", "english"],
-    hero: heroEnglish,
+    hero: h_IeltsGrammarTestQuestionsBeginnerToAdvanced,
     body: () => (
       <>
         <p>Strong grammar lifts your IELTS Writing and Speaking band scores. Below are 12 questions spanning beginner to advanced — focus on getting the harder ones right and your overall band will improve quickly.</p>
@@ -3404,7 +3446,7 @@ export const blogPosts: BlogPost[] = [
     readingMinutes: 12,
     category: "Taxi & Private Hire",
     tags: ["TfL", "private hire", "PHV licence"],
-    hero: heroTaxi,
+    hero: h_TflPrivateHireDriverLicenceGuide,
     body: () => (
       <>
         <p>
@@ -3485,7 +3527,7 @@ export const blogPosts: BlogPost[] = [
     readingMinutes: 11,
     category: "Taxi & Private Hire",
     tags: ["SERU", "TfL", "private hire"],
-    hero: heroTaxi,
+    hero: h_SeruAssessmentGuide,
     body: () => (
       <>
         <p>
@@ -3563,7 +3605,7 @@ export const blogPosts: BlogPost[] = [
     readingMinutes: 9,
     category: "Taxi & Private Hire",
     tags: ["topographical", "TfL", "private hire"],
-    hero: heroTaxi,
+    hero: h_TopographicalAssessmentGuide,
     body: () => (
       <>
         <p>
@@ -3632,7 +3674,7 @@ export const blogPosts: BlogPost[] = [
     readingMinutes: 8,
     category: "Taxi & Private Hire",
     tags: ["English", "B1", "TfL"],
-    hero: heroTaxi,
+    hero: h_PrivateHireEnglishLanguageRequirement,
     body: () => (
       <>
         <p>
@@ -3699,7 +3741,7 @@ export const blogPosts: BlogPost[] = [
     readingMinutes: 7,
     category: "Taxi & Private Hire",
     tags: ["Congestion Charge", "London", "private hire"],
-    hero: heroTaxi,
+    hero: h_CongestionChargePrivateHireDrivers,
     body: () => (
       <>
         <p>
@@ -3763,7 +3805,7 @@ export const blogPosts: BlogPost[] = [
     readingMinutes: 7,
     category: "Taxi & Private Hire",
     tags: ["ULEZ", "London", "private hire"],
-    hero: heroTaxi,
+    hero: h_UlezPrivateHireDrivers,
     body: () => (
       <>
         <p>
@@ -3819,7 +3861,7 @@ export const blogPosts: BlogPost[] = [
     readingMinutes: 8,
     category: "Taxi & Private Hire",
     tags: ["DBS", "TfL", "private hire"],
-    hero: heroTaxi,
+    hero: h_DbsCheckPrivateHireDriver,
     body: () => (
       <>
         <p>
@@ -3883,7 +3925,7 @@ export const blogPosts: BlogPost[] = [
     readingMinutes: 9,
     category: "Taxi & Private Hire",
     tags: ["safeguarding", "TfL", "private hire"],
-    hero: heroTaxi,
+    hero: h_SafeguardingAwarenessPrivateHire,
     body: () => (
       <>
         <p>
@@ -3953,7 +3995,7 @@ export const blogPosts: BlogPost[] = [
     readingMinutes: 7,
     category: "Taxi & Private Hire",
     tags: ["badge", "TfL", "private hire"],
-    hero: heroTaxi,
+    hero: h_PrivateHireDriverBadgeRules,
     body: () => (
       <>
         <p>
@@ -4010,7 +4052,7 @@ export const blogPosts: BlogPost[] = [
     readingMinutes: 12,
     category: "Taxi & Private Hire",
     tags: ["TfL", "private hire", "career"],
-    hero: heroTaxi,
+    hero: h_HowToBecomeAPrivateHireDriverLondon,
     body: () => (
       <>
         <p>
