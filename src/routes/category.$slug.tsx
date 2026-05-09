@@ -117,31 +117,31 @@ function CategoryPage() {
                     to="/guide/$slug"
                     params={{ slug: t.slug }}
                     aria-label={`Read the ${t.title} guide`}
-                    className="group relative flex h-full flex-col justify-between overflow-hidden rounded-2xl border border-[#0b1f3a] bg-[#0b1f3a] p-6 text-white shadow-soft transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#0e2750] hover:shadow-elevated"
+                    className="group relative flex h-full flex-col justify-between overflow-hidden rounded-2xl border border-border bg-card p-6 shadow-soft transition-all duration-200 hover:-translate-y-0.5 hover:border-coral/40 hover:shadow-elevated"
                   >
                     <div>
                       <div className="flex items-start gap-4">
-                        <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-white/15 text-white">
+                        <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-coral/10 text-coral">
                           <BookOpen className="h-6 w-6" />
                         </span>
                         <div className="min-w-0">
-                          <p className="text-[11px] font-semibold uppercase tracking-wider text-white/70">
+                          <p className="text-[11px] font-semibold uppercase tracking-wider text-muted-foreground">
                             Test Guide
                           </p>
-                          <h3 className="mt-0.5 font-display text-lg font-bold leading-tight text-white">
+                          <h3 className="mt-0.5 font-display text-lg font-bold leading-tight text-foreground">
                             {t.title} Guide
                           </h3>
-                          <p className="mt-1 text-xs text-white/75">
+                          <p className="mt-1 text-xs text-muted-foreground">
                             Format, tips and how to pass first time
                           </p>
                         </div>
                       </div>
                     </div>
-                    <div className="mt-6 flex items-center justify-between border-t border-white/15 pt-4">
-                      <span className="text-xs font-semibold uppercase tracking-wider text-white/70">
+                    <div className="mt-6 flex items-center justify-between border-t border-border pt-4">
+                      <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
                         ~7 min read
                       </span>
-                      <span className="inline-flex items-center gap-1 text-sm font-semibold text-white group-hover:gap-2 transition-all">
+                      <span className="inline-flex items-center gap-1 text-sm font-semibold text-coral group-hover:gap-2 transition-all">
                         Read the guide
                         <ArrowRight className="h-4 w-4" />
                       </span>
@@ -157,31 +157,31 @@ function CategoryPage() {
                       to="/topic/$slug"
                       params={{ slug: t.slug }}
                       aria-label={`Open ${t.title} — ${TOTAL_MOCKS_PER_TOPIC} free mock tests`}
-                      className="group relative flex h-full flex-col justify-between overflow-hidden rounded-2xl border border-[#7a1f1f] bg-[#7a1f1f] p-6 text-white shadow-soft transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#902626] hover:shadow-elevated"
+                      className="group relative flex h-full flex-col justify-between overflow-hidden rounded-2xl border border-border bg-card p-6 shadow-soft transition-all duration-200 hover:-translate-y-0.5 hover:border-coral/40 hover:shadow-elevated"
                     >
                     <div>
                       <div className="flex items-start gap-4">
-                        <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-white/15 text-white">
+                        <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-coral/10 text-coral">
                           <CategoryIcon name={category.icon} className="h-6 w-6" />
                         </span>
                         <div className="min-w-0 pr-8">
-                          <p className="text-[11px] font-semibold uppercase tracking-wider text-white/70">
+                          <p className="text-[11px] font-semibold uppercase tracking-wider text-muted-foreground">
                             Practice Test
                           </p>
-                          <h3 className="mt-0.5 font-display text-lg font-bold leading-tight text-white">
+                          <h3 className="mt-0.5 font-display text-lg font-bold leading-tight text-foreground">
                             {t.title}
                           </h3>
-                          <p className="mt-1 text-xs text-white/75">
+                          <p className="mt-1 text-xs text-muted-foreground">
                             {TOTAL_MOCKS_PER_TOPIC} mock tests · {QUESTIONS_PER_MOCK} questions each
                           </p>
                         </div>
                       </div>
                     </div>
-                    <div className="mt-6 flex items-center justify-between border-t border-white/15 pt-4">
-                      <span className="text-xs font-semibold tabular-nums text-white/70">
+                    <div className="mt-6 flex items-center justify-between border-t border-border pt-4">
+                      <span className="text-xs font-semibold tabular-nums text-muted-foreground">
                         {available} of {TOTAL_MOCKS_PER_TOPIC} ready
                       </span>
-                      <span className="inline-flex items-center gap-1 text-sm font-semibold text-white group-hover:gap-2 transition-all">
+                      <span className="inline-flex items-center gap-1 text-sm font-semibold text-coral group-hover:gap-2 transition-all">
                         Start {t.title}
                         <ArrowRight className="h-4 w-4" />
                       </span>
