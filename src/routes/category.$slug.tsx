@@ -157,7 +157,7 @@ function CategoryPage() {
                       to="/topic/$slug"
                       params={{ slug: t.slug }}
                       aria-label={`Open ${t.title} — ${TOTAL_MOCKS_PER_TOPIC} free mock tests`}
-                      className="group relative flex h-full flex-col justify-between overflow-hidden rounded-2xl border border-[#7a1f1f] bg-[#7a1f1f] p-6 text-white shadow-soft transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#902626] hover:shadow-elevated"
+                      className="group relative flex h-full flex-col justify-between overflow-hidden rounded-2xl border border-coral bg-coral p-6 text-coral-foreground shadow-soft transition-all duration-200 hover:-translate-y-0.5 hover:brightness-110 hover:shadow-elevated"
                     >
                     <div>
                       <div className="flex items-start gap-4">
