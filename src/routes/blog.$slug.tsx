@@ -62,7 +62,7 @@ function BlogPostPage() {
               <Home className="h-3.5 w-3.5" /> Home
             </Link>
             <ChevronRight className="h-3.5 w-3.5" />
-            <Link to="/blog" className="hover:text-coral">Blog</Link>
+            <Link to="/blog" className="hover:text-coral">Study Guides</Link>
             <ChevronRight className="h-3.5 w-3.5" />
             <span className="text-navy-foreground">{post.category}</span>
           </nav>
