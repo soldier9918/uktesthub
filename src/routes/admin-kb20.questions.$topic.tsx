@@ -214,6 +214,7 @@ function QuestionsBrowser() {
   const [usageFilter, setUsageFilter] = useState<"all" | "used" | "unused">("all");
   const [statusFilter, setStatusFilter] = useState<"all" | "enabled" | "disabled">("all");
   const [healthFilter, setHealthFilter] = useState<"all" | "broken">("all");
+  const [mockFilter, setMockFilter] = useState<string>("all");
   const [togglingId, setTogglingId] = useState<string | null>(null);
   const [page, setPage] = useState(1);
   const [editing, setEditing] = useState<FlatQuestion | null>(null);
