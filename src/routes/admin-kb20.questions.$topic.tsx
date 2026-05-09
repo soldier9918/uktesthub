@@ -101,14 +101,29 @@ function describeCorrect(r: RawQuestion): string | undefined {
   return undefined;
 }
 
+function matchesOptionLabel(ans: unknown, options: unknown): boolean {
+  if (typeof ans !== "string" || !ans.trim() || !Array.isArray(options)) return false;
+  const a = ans.trim().toLowerCase();
+  return options.some((o) => typeof o === "string" && o.trim().toLowerCase() === a);
+}
+
 function hasBrokenAnswers(r: RawQuestion): boolean {
   const t = normaliseType(r.type);
   if (t === "mcq" || t === "image-question") {
     if (!Array.isArray(r.options) || r.options.length < 2) return true;
-    if (typeof r.correctAnswer !== "number" || r.correctAnswer < 0 || r.correctAnswer >= r.options.length) return true;
-    return false;
+    if (typeof r.correctAnswer === "number" && r.correctAnswer >= 0 && r.correctAnswer < r.options.length) return false;
+    if (matchesOptionLabel(r.correctAnswer, r.options)) return false;
+    return true;
   }
-  if (t === "true-false") return typeof r.correctAnswer !== "boolean";
+  if (t === "true-false") {
+    if (typeof r.correctAnswer === "boolean") return false;
+    if (typeof r.correctAnswer === "string") {
+      const s = r.correctAnswer.trim().toLowerCase();
+      if (s === "true" || s === "false") return false;
+      if (matchesOptionLabel(r.correctAnswer, r.options)) return false;
+    }
+    return true;
+  }
   if (t === "multiple-response") {
     if (!Array.isArray(r.options) || r.options.length < 2) return true;
     if (!Array.isArray(r.correctAnswers) || r.correctAnswers.length === 0) return true;

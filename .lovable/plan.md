@@ -1,49 +1,52 @@
-## Why answers come up blank after a CSV re-upload
+## Goal
 
-I traced the bug to the CSV import handler in `src/routes/admin-kb20.questions.$topic.tsx` (lines ~424–525) combined with how overrides are applied in `src/lib/overrides.ts`.
+Stop the admin from falsely flagging True/False (and string-answer image) questions as "no answers" / "invalid-correct-answer" when their `correctAnswer` is stored as a string label that matches an option, instead of an index/boolean.
 
-### What's happening
+## Background
 
-1. You export to CSV, edit some rows in Excel/Sheets, save, re-upload.
-2. Excel happily writes empty cells as empty strings (`""`) for any column you didn't touch — especially `optionA..D`, `correctAnswer`, `correctAnswers`, `explanation`, `image`, `imageAlt`.
-3. The importer currently does:
-   - `question: r.question ?? null` → an empty cell becomes `""`, not `null`.
-   - `options: hasOpts ? opts : undefined` → if all 4 option columns are blank, options goes through as `undefined`/`null` (this part is OK), but if even one option cell has whitespace it falls through with the other 3 as empty strings.
-   - `correct_answer` is built from `correctAnswer`/`correctAnswers`. If both cells are empty/`null`/`[]`, it writes `null`.
-4. Then in `applyOverrideToQuestionRecord` (overrides.ts):
-   - `if (override.question != null)` — empty string passes this check, so the live question text becomes `""` → blank.
-   - For options, the array `["", "", "", ""]` (or partial) overwrites the real options → blank answer choices.
-   - There's also a side effect: when ANY content override is present and `image` is null, the importer strips the original image and forces `type: "mcq"`. So an image-only edit elsewhere can wipe the picture from a question that originally had one.
+Live quiz already accepts these forms — they render correctly. Only the admin validators reject them.
 
-That matches your screenshot: question 15 in mock 16 renders the shell but the question/answers area is empty because the override row stored empty strings on top of the real content.
+Two validators flag the same shape:
 
-### The fix (one file)
+1. `hasBrokenAnswers` in `src/routes/admin-kb20.questions.$topic.tsx` (drives the orange "no answers" badge).
+2. `validateTopicBank` in `src/lib/admin/validator.ts` (drives the validation report and the import blocker).
 
-Edit only `src/routes/admin-kb20.questions.$topic.tsx`, in `handleImportFile`:
+Both currently demand:
+- `mcq` / `image-question` → numeric `correctAnswer` index
+- `true-false` → boolean `correctAnswer`
+- `multiple-response` → numeric `correctAnswers[]`
 
-1. **Treat empty CSV cells as "no change", not "blank it out"**. Helper:
-   ```ts
-   const cell = (j: number) => (j >= 0 ? (rows[r][j] ?? "").trim() : "");
-   const orUndef = (s: string) => (s.length > 0 ? s : undefined);
-   ```
-   Use `orUndef(cell(iQ))` for `question`, `explanation`, `image`, `imageAlt`.
+But real data also stores:
+- `true-false` with `correctAnswer: "True"` / `"False"` (string)
+- `mcq` / `image-question` with `correctAnswer: "<option label text>"` (string matching one of the options)
 
-2. **Options**: only include them if at least one option cell is non-empty AND keep the original count. If all four are empty → `options: undefined` (don't touch). If some are empty but others aren't, send all four as-is (that's an intentional edit). Today's `.filter((v, i, a) => i < a.length)` is a no-op and can be removed.
+## Changes
 
-3. **correctAnswer / correctAnswers**: if the cell is empty, leave as `undefined` instead of `null`. Also accept string answers (some image questions store the option label, not an index) — fall back to the raw string when `Number(ca)` is `NaN` and it isn't `true`/`false`.
+### 1. `src/routes/admin-kb20.questions.$topic.tsx` — `hasBrokenAnswers`
 
-4. **Upsert payload**: change every line from `?? null` to `?? undefined` for the content fields so Supabase doesn't overwrite existing override values with `null`. (`question`, `options`, `correct_answer`, `explanation`, `image`, `image_alt` should only be sent when the CSV actually had a value.)
+Treat as VALID when:
+- `mcq` / `image-question`: `correctAnswer` is a string that case-insensitively equals one of `options`.
+- `true-false`: `correctAnswer` is a string equal (case-insensitive) to `"true"` or `"false"`, OR equals one of the options.
 
-5. **JSON branch**: apply the same "empty → undefined" rule so a JSON re-upload behaves the same.
+Existing numeric/boolean checks stay as the primary path; string match is an additional fallback.
 
-6. **Small UX add**: after import, show a second line in `importMsg` like "X rows had no editable changes and were left untouched." so it's obvious nothing got nuked.
+### 2. `src/lib/admin/validator.ts` — `invalid-correct-answer` rule
 
-### What this does NOT change
+Mirror the same fallback in the three branches (mcq/image-question, true-false, multiple-response stays index-only). Only emit the finding when neither numeric/boolean form NOR a matching string label is present.
 
-- Export format stays identical, so any CSV you've already downloaded still works.
-- No DB schema change, no other files touched.
-- Existing override rows that were already blanked by the previous import are still blank — you'll need to either (a) delete those override rows for the affected questions, or (b) re-upload the CSV with the correct text in those cells. I can add a "Reset to original" button per question in a follow-up if you want.
+### 3. No data migration
 
-### Optional follow-up (ask me if you want it)
+Leave existing rows alone. This is a pure validator fix — no DB writes, no CSV/export changes, no live-quiz changes.
 
-Add a one-click "Clear bad overrides" tool that deletes any `question_overrides` row where `question = ''` or `options` is an array of empty strings — that would un-blank already-affected questions in one shot.
+## Out of scope
+
+- Normalizing string answers to indices on export/import.
+- Changing the editor UI (it already works for the canonical numeric/boolean form).
+- Other validator rules (missing-explanation, missing-image, duplicate-id, etc.).
+
+## Verification
+
+After change:
+- Question shown in screenshot (Mock 17 · Q16, true-false with `correctAnswer: "False"`) no longer shows the orange "no answers" badge.
+- Validation report no longer lists `invalid-correct-answer` for true-false rows whose answer is the string `"True"`/`"False"`, or for mcq rows whose answer matches an option label exactly.
+- Genuinely broken rows (e.g. `correctAnswer: ""`, or a string that matches no option) still get flagged.
