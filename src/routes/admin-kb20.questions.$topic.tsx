@@ -428,21 +428,46 @@ function QuestionsBrowser() {
     setImporting(true);
     try {
       const text = await file.text();
-      type ImportRow = { id: string; question?: string; options?: string[]; correctAnswer?: number | boolean | null; correctAnswers?: number[] | null; explanation?: string; image?: string; imageAlt?: string };
+      type ImportRow = {
+        id: string;
+        question?: string;
+        options?: string[];
+        correctAnswer?: number | boolean | string;
+        correctAnswers?: number[];
+        explanation?: string;
+        image?: string;
+        imageAlt?: string;
+      };
+      const orUndef = (s: string | undefined | null): string | undefined => {
+        if (s == null) return undefined;
+        const t = String(s).trim();
+        return t.length > 0 ? t : undefined;
+      };
       let parsed: ImportRow[] = [];
       if (file.name.toLowerCase().endsWith(".json")) {
         const json = JSON.parse(text);
         const arr = Array.isArray(json) ? json : (json.questions ?? json.bank ?? []);
-        parsed = arr.map((r: Record<string, unknown>) => ({
-          id: String(r.id),
-          question: r.question as string | undefined,
-          options: Array.isArray(r.options) ? (r.options as string[]) : undefined,
-          correctAnswer: (r.correctAnswer as number | boolean | null | undefined) ?? null,
-          correctAnswers: (r.correctAnswers as number[] | null | undefined) ?? null,
-          explanation: r.explanation as string | undefined,
-          image: r.image as string | undefined,
-          imageAlt: r.imageAlt as string | undefined,
-        }));
+        parsed = arr.map((r: Record<string, unknown>) => {
+          const row: ImportRow = { id: String(r.id) };
+          const q = orUndef(r.question as string | undefined);
+          if (q !== undefined) row.question = q;
+          if (Array.isArray(r.options) && (r.options as string[]).some((o) => orUndef(o) !== undefined)) {
+            row.options = r.options as string[];
+          }
+          if (r.correctAnswer != null && r.correctAnswer !== "") {
+            row.correctAnswer = r.correctAnswer as number | boolean | string;
+          }
+          if (Array.isArray(r.correctAnswers) && (r.correctAnswers as number[]).length > 0) {
+            row.correctAnswers = r.correctAnswers as number[];
+          }
+          const e = orUndef(r.explanation as string | undefined);
+          if (e !== undefined) row.explanation = e;
+          const im = orUndef(r.image as string | undefined);
+          if (im !== undefined) row.image = im;
+          const al = orUndef(r.imageAlt as string | undefined);
+          if (al !== undefined) row.imageAlt = al;
+          return row;
+        });
       } else {
         const rows = parseCsv(text);
         if (rows.length < 2) throw new Error("CSV is empty");
@@ -456,31 +481,35 @@ function QuestionsBrowser() {
         for (let r = 1; r < rows.length; r++) {
           const row = rows[r];
           if (!row[iId]) continue;
-          const opts = [iA, iB, iC, iD].map((j) => (j >= 0 ? row[j] : "")).filter((v, i, a) => i < a.length);
-          const hasOpts = opts.some((o) => o && o.length > 0);
-          const ca = iCA >= 0 ? row[iCA] : "";
-          const cas = iCAs >= 0 ? row[iCAs] : "";
-          let correctAnswer: number | boolean | null = null;
-          let correctAnswers: number[] | null = null;
+          const cell = (j: number) => (j >= 0 ? (row[j] ?? "") : "");
+          const optsRaw = [cell(iA), cell(iB), cell(iC), cell(iD)];
+          const hasOpts = optsRaw.some((o) => orUndef(o) !== undefined);
+          const ca = cell(iCA).trim();
+          const cas = cell(iCAs).trim();
+          const out: ImportRow = { id: row[iId] };
+          const q = orUndef(cell(iQ));
+          if (q !== undefined) out.question = q;
+          if (hasOpts) out.options = optsRaw;
           if (ca && ca !== "null") {
             const n = Number(ca);
-            if (!Number.isNaN(n)) correctAnswer = n;
-            else if (ca === "true") correctAnswer = true;
-            else if (ca === "false") correctAnswer = false;
+            if (!Number.isNaN(n) && ca !== "") out.correctAnswer = n;
+            else if (ca === "true") out.correctAnswer = true;
+            else if (ca === "false") out.correctAnswer = false;
+            else out.correctAnswer = ca; // string answer (e.g. image-question label)
           }
           if (cas && cas !== "null" && cas !== "[]") {
-            try { correctAnswers = JSON.parse(cas); } catch { /* ignore */ }
+            try {
+              const arr = JSON.parse(cas);
+              if (Array.isArray(arr) && arr.length > 0) out.correctAnswers = arr;
+            } catch { /* ignore */ }
           }
-          parsed.push({
-            id: row[iId],
-            question: iQ >= 0 ? row[iQ] : undefined,
-            options: hasOpts ? opts : undefined,
-            correctAnswer,
-            correctAnswers,
-            explanation: iE >= 0 ? row[iE] : undefined,
-            image: iImg >= 0 ? row[iImg] : undefined,
-            imageAlt: iAlt >= 0 ? row[iAlt] : undefined,
-          });
+          const e = orUndef(cell(iE));
+          if (e !== undefined) out.explanation = e;
+          const im = orUndef(cell(iImg));
+          if (im !== undefined) out.image = im;
+          const al = orUndef(cell(iAlt));
+          if (al !== undefined) out.imageAlt = al;
+          parsed.push(out);
         }
       }
       if (parsed.length === 0) throw new Error("No rows found");
@@ -490,19 +519,44 @@ function QuestionsBrowser() {
       const usable = parsed.filter((r) => validIds.has(r.id));
       const skipped = parsed.length - usable.length;
 
-      const upsertRows = usable.map((r) => ({
-        topic,
-        question_id: r.id,
-        question: r.question ?? null,
-        options: (r.options ?? null) as unknown as import("@/integrations/supabase/types").Json,
-        correct_answer: (r.correctAnswers && r.correctAnswers.length > 0
-          ? r.correctAnswers
-          : r.correctAnswer) as unknown as import("@/integrations/supabase/types").Json,
-        explanation: r.explanation ?? null,
-        image: r.image && r.image.length > 0 ? r.image : null,
-        image_alt: r.imageAlt && r.imageAlt.length > 0 ? r.imageAlt : null,
-        updated_by: user?.id ?? null,
-      }));
+      // Only include fields that the CSV/JSON actually provided so we never
+      // overwrite real content with empty strings on a partial re-upload.
+      type Json = import("@/integrations/supabase/types").Json;
+      type UpsertRow = {
+        topic: string;
+        question_id: string;
+        updated_by: string | null;
+        question?: string;
+        options?: Json;
+        correct_answer?: Json;
+        explanation?: string;
+        image?: string;
+        image_alt?: string;
+      };
+      let untouched = 0;
+      const upsertRows: UpsertRow[] = [];
+      for (const r of usable) {
+        const row: UpsertRow = {
+          topic,
+          question_id: r.id,
+          updated_by: user?.id ?? null,
+        };
+        let hasChange = false;
+        if (r.question !== undefined) { row.question = r.question; hasChange = true; }
+        if (r.options !== undefined) { row.options = r.options as unknown as Json; hasChange = true; }
+        if (r.correctAnswers !== undefined) {
+          row.correct_answer = r.correctAnswers as unknown as Json;
+          hasChange = true;
+        } else if (r.correctAnswer !== undefined) {
+          row.correct_answer = r.correctAnswer as unknown as Json;
+          hasChange = true;
+        }
+        if (r.explanation !== undefined) { row.explanation = r.explanation; hasChange = true; }
+        if (r.image !== undefined) { row.image = r.image; hasChange = true; }
+        if (r.imageAlt !== undefined) { row.image_alt = r.imageAlt; hasChange = true; }
+        if (!hasChange) { untouched++; continue; }
+        upsertRows.push(row);
+      }
 
       let written = 0;
       for (let i = 0; i < upsertRows.length; i += 100) {
