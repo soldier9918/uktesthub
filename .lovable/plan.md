@@ -1,52 +1,35 @@
 ## Goal
+Reposition the /blog section as "UK Test Hub Study Guides" — feels educational, not a casual blog — with unique hero imagery on the index.
 
-Stop the admin from falsely flagging True/False (and string-answer image) questions as "no answers" / "invalid-correct-answer" when their `correctAnswer` is stored as a string label that matches an option, instead of an index/boolean.
+## 1. Branding & copy (small, low-risk edits)
 
-## Background
+- **Navbar** (`src/components/SiteHeader.tsx`): change the `Articles` nav item label to `Study Guides`. Keep `to: "/blog"`.
+- **Blog index** (`src/routes/blog.index.tsx`):
+  - H1: `UK Test Hub Study Guides`
+  - Subtitle: `Free guides, tips and study plans for UK tests, licences and exams.`
+  - Breadcrumb label: `Study Guides` (currently `Blog`)
+  - SEO `head()`: title `Study Guides — UK Test Hub | Free UK Exam Guides & Study Plans`; description updated to match new framing.
+- **Blog post page** (`src/routes/blog.$slug.tsx`): breadcrumb link text `Blog` → `Study Guides` (URL still `/blog`). Article schema is already `Article`-typed via `articleSchema()` in `src/lib/seo.ts` — no change needed.
+- URL stays `/blog`. No route renames, no redirects needed.
 
-Live quiz already accepts these forms — they render correctly. Only the admin validators reject them.
+## 2. Unique hero image per post (52 posts)
 
-Two validators flag the same shape:
+Currently `src/data/blog.tsx` reuses 9 shared category hero images across all 52 posts (e.g. every Driving post uses `cat-hero-driving.jpg`). The articles index grid therefore looks repetitive.
 
-1. `hasBrokenAnswers` in `src/routes/admin-kb20.questions.$topic.tsx` (drives the orange "no answers" badge).
-2. `validateTopicBank` in `src/lib/admin/validator.ts` (drives the validation report and the import blocker).
+Approach:
+- Generate **52 unique hero images**, one per post, using `imagegen` (`fast` tier, 1280×720, JPG) saved under `src/assets/blog/<slug>.jpg`.
+- Each prompt is derived from the post's title + category so imagery is topical (e.g. road-signs post → UK road signs scene; SERU post → London private-hire driver; NHS numeracy → clinical drug calculation desk).
+- Maintain a consistent visual style across all 52 so the grid feels cohesive: editorial photography, soft natural light, UK setting, no on-image text, 16:9 — matches the existing card aesthetic.
+- Update `src/data/blog.tsx`: replace the 9 `import heroX from "@/assets/cat-hero-*.jpg"` with 52 per-post imports, and set each post's `hero:` to its own image. Drop the now-unused category hero imports.
 
-Both currently demand:
-- `mcq` / `image-question` → numeric `correctAnswer` index
-- `true-false` → boolean `correctAnswer`
-- `multiple-response` → numeric `correctAnswers[]`
-
-But real data also stores:
-- `true-false` with `correctAnswer: "True"` / `"False"` (string)
-- `mcq` / `image-question` with `correctAnswer: "<option label text>"` (string matching one of the options)
-
-## Changes
-
-### 1. `src/routes/admin-kb20.questions.$topic.tsx` — `hasBrokenAnswers`
-
-Treat as VALID when:
-- `mcq` / `image-question`: `correctAnswer` is a string that case-insensitively equals one of `options`.
-- `true-false`: `correctAnswer` is a string equal (case-insensitive) to `"true"` or `"false"`, OR equals one of the options.
-
-Existing numeric/boolean checks stay as the primary path; string match is an additional fallback.
-
-### 2. `src/lib/admin/validator.ts` — `invalid-correct-answer` rule
-
-Mirror the same fallback in the three branches (mcq/image-question, true-false, multiple-response stays index-only). Only emit the finding when neither numeric/boolean form NOR a matching string label is present.
-
-### 3. No data migration
-
-Leave existing rows alone. This is a pure validator fix — no DB writes, no CSV/export changes, no live-quiz changes.
+This only changes the displayed/og image per post; copy, schema, and routing stay intact.
 
 ## Out of scope
+- Renaming the URL from `/blog` to `/study-guides` (explicitly kept).
+- Restructuring post content, categories, or related-posts logic.
+- Changing the per-post Article schema (already correct).
 
-- Normalizing string answers to indices on export/import.
-- Changing the editor UI (it already works for the canonical numeric/boolean form).
-- Other validator rules (missing-explanation, missing-image, duplicate-id, etc.).
-
-## Verification
-
-After change:
-- Question shown in screenshot (Mock 17 · Q16, true-false with `correctAnswer: "False"`) no longer shows the orange "no answers" badge.
-- Validation report no longer lists `invalid-correct-answer` for true-false rows whose answer is the string `"True"`/`"False"`, or for mcq rows whose answer matches an option label exactly.
-- Genuinely broken rows (e.g. `correctAnswer: ""`, or a string that matches no option) still get flagged.
+## Technical notes
+- 52 image generations will be issued in parallel batches via `imagegen--generate_image`.
+- Files placed in `src/assets/blog/` so Vite fingerprints them and they ship through the normal asset pipeline (same as today's category heroes).
+- No DB, no server-fn, no migrations.
