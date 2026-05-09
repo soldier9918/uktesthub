@@ -583,6 +583,103 @@ function QuestionsBrowser() {
     }
   };
 
+  const cleanBadOverrides = async () => {
+    const ok = typeof window === "undefined"
+      ? true
+      : window.confirm(
+          `Scan "${topic}" override rows and delete any with blank question text or empty answer options? Disabled flags and other override fields are preserved by re-saving the cleaned subset.`,
+        );
+    if (!ok) return;
+    setCleaning(true);
+    setImportMsg(null);
+    try {
+      const PAGE = 1000;
+      let from = 0;
+      type Row = {
+        id: string;
+        question_id: string;
+        question: string | null;
+        options: unknown;
+        explanation: string | null;
+        image: string | null;
+        image_alt: string | null;
+        correct_answer: unknown;
+        disabled: boolean | null;
+        type: string | null;
+      };
+      const all: Row[] = [];
+      while (true) {
+        const { data, error } = await supabase
+          .from("question_overrides")
+          .select("id,question_id,question,options,explanation,image,image_alt,correct_answer,disabled,type")
+          .eq("topic", topic)
+          .range(from, from + PAGE - 1);
+        if (error) throw error;
+        if (!data || data.length === 0) break;
+        all.push(...(data as Row[]));
+        if (data.length < PAGE) break;
+        from += PAGE;
+      }
+      const isBlankStr = (s: unknown) => typeof s === "string" && s.trim().length === 0;
+      const isBlankOpts = (o: unknown) =>
+        Array.isArray(o) && (o.length === 0 || o.every((v) => v == null || (typeof v === "string" && v.trim().length === 0)));
+      const bad = all.filter((r) => isBlankStr(r.question) || isBlankOpts(r.options));
+      if (bad.length === 0) {
+        setImportMsg("No bad overrides found in this topic.");
+        return;
+      }
+      // Decide between deleting the whole row vs clearing only the bad fields:
+      // if the row also carries useful state (disabled flag, real explanation,
+      // image, type, or correct_answer override), keep it and just null out the
+      // blank columns so we don't lose the user's other edits.
+      const toDelete: string[] = [];
+      const toClear: { id: string; question?: null; options?: null }[] = [];
+      for (const r of bad) {
+        const hasOtherSignal =
+          r.disabled === true ||
+          (typeof r.explanation === "string" && r.explanation.trim().length > 0) ||
+          (typeof r.image === "string" && r.image.trim().length > 0) ||
+          (typeof r.image_alt === "string" && r.image_alt.trim().length > 0) ||
+          (typeof r.type === "string" && r.type.trim().length > 0) ||
+          r.correct_answer != null;
+        if (hasOtherSignal) {
+          const patch: { id: string; question?: null; options?: null } = { id: r.id };
+          if (isBlankStr(r.question)) patch.question = null;
+          if (isBlankOpts(r.options)) patch.options = null;
+          toClear.push(patch);
+        } else {
+          toDelete.push(r.id);
+        }
+      }
+      let cleared = 0;
+      for (const patch of toClear) {
+        const { id, ...fields } = patch;
+        const { error } = await supabase
+          .from("question_overrides")
+          .update({ ...fields, updated_by: user?.id ?? null })
+          .eq("id", id);
+        if (error) throw error;
+        cleared++;
+      }
+      let deleted = 0;
+      for (let i = 0; i < toDelete.length; i += 200) {
+        const slice = toDelete.slice(i, i + 200);
+        const { error } = await supabase.from("question_overrides").delete().in("id", slice);
+        if (error) throw error;
+        deleted += slice.length;
+      }
+      invalidateOverrides();
+      setBump((n) => n + 1);
+      setImportMsg(
+        `Cleaned ${bad.length} bad override${bad.length === 1 ? "" : "s"}: deleted ${deleted}, cleared blank fields on ${cleared}.`,
+      );
+    } catch (err) {
+      setImportMsg(`Cleanup failed: ${err instanceof Error ? err.message : "Unknown error"}`);
+    } finally {
+      setCleaning(false);
+    }
+  };
+
   const toggleDisabled = async (q: FlatQuestion) => {
     setTogglingId(q.id);
     try {
