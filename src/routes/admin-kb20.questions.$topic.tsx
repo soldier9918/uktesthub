@@ -650,6 +650,22 @@ function QuestionsBrowser() {
             <option value="all">All health</option>
             <option value="broken">Needs answers</option>
           </select>
+          <select
+            value={mockFilter}
+            onChange={(e) => {
+              setMockFilter(e.target.value);
+              setPage(1);
+            }}
+            className="h-9 rounded-md border border-input bg-background px-2 text-sm"
+            title="Show only questions used in a specific mock test (sorted by question slot)"
+          >
+            <option value="all">All mocks</option>
+            {availableMocks.map((n) => (
+              <option key={n} value={String(n)}>
+                Mock {n}
+              </option>
+            ))}
+          </select>
           <span className="ml-auto text-xs text-muted-foreground">
             {filtered.length} matching
           </span>
