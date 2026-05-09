@@ -153,19 +153,26 @@ function HomePage() {
             </p>
 
             <div className="mt-8 flex flex-wrap gap-3">
-              <Link
-                to="/category/$slug"
-                params={{ slug: "driving" }}
+              <a
+                href="#popular-categories"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document
+                    .getElementById("popular-categories")
+                    ?.scrollIntoView({ behavior: "smooth", block: "start" });
+                  if (typeof history !== "undefined") {
+                    history.replaceState(null, "", "#popular-categories");
+                  }
+                }}
                 className="inline-flex items-center gap-2 rounded-xl bg-coral px-7 py-4 text-sm font-bold uppercase tracking-wider text-coral-foreground shadow-coral transition-transform hover:-translate-y-0.5"
               >
                 Start Practice <ArrowRight className="h-4 w-4" />
-              </Link>
+              </a>
               <Link
-                to="/quiz/$slug"
-                params={{ slug: "driving-theory-mock-1" }}
+                to="/all-tests"
                 className="inline-flex items-center gap-2 rounded-xl border-2 border-white/40 bg-white/5 px-7 py-4 text-sm font-bold uppercase tracking-wider text-navy-foreground backdrop-blur transition-colors hover:bg-white/15"
               >
-                Take a Mock Test
+                Browse All Tests
               </Link>
             </div>
 
@@ -238,7 +245,7 @@ function HomePage() {
         <AdSlot size="leaderboard" className="mt-10" />
 
         {/* POPULAR CATEGORIES */}
-        <section className="mt-16">
+        <section id="popular-categories" className="mt-16 scroll-mt-24">
           <SectionTitle>Popular Categories</SectionTitle>
 
           <div className="mt-10 grid gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
