@@ -116,11 +116,12 @@ function hasBrokenAnswers(r: RawQuestion): boolean {
     return true;
   }
   if (t === "true-false") {
-    if (typeof r.correctAnswer === "boolean") return false;
-    if (typeof r.correctAnswer === "string") {
-      const s = r.correctAnswer.trim().toLowerCase();
+    const ca: unknown = r.correctAnswer;
+    if (typeof ca === "boolean") return false;
+    if (typeof ca === "string") {
+      const s = ca.trim().toLowerCase();
       if (s === "true" || s === "false") return false;
-      if (matchesOptionLabel(r.correctAnswer, r.options)) return false;
+      if (matchesOptionLabel(ca, r.options)) return false;
     }
     return true;
   }
