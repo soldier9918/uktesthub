@@ -1,35 +1,33 @@
 ## Goal
-Reposition the /blog section as "UK Test Hub Study Guides" — feels educational, not a casual blog — with unique hero imagery on the index.
+Reorganize `/blog` (Study Guides) so posts are grouped under category headings, and add a search bar to filter guides.
 
-## 1. Branding & copy (small, low-risk edits)
+## Scope
+Single file: `src/routes/blog.index.tsx`. No data, route, or backend changes.
 
-- **Navbar** (`src/components/SiteHeader.tsx`): change the `Articles` nav item label to `Study Guides`. Keep `to: "/blog"`.
-- **Blog index** (`src/routes/blog.index.tsx`):
-  - H1: `UK Test Hub Study Guides`
-  - Subtitle: `Free guides, tips and study plans for UK tests, licences and exams.`
-  - Breadcrumb label: `Study Guides` (currently `Blog`)
-  - SEO `head()`: title `Study Guides — UK Test Hub | Free UK Exam Guides & Study Plans`; description updated to match new framing.
-- **Blog post page** (`src/routes/blog.$slug.tsx`): breadcrumb link text `Blog` → `Study Guides` (URL still `/blog`). Article schema is already `Article`-typed via `articleSchema()` in `src/lib/seo.ts` — no change needed.
-- URL stays `/blog`. No route renames, no redirects needed.
+Note: the existing post categories are **Driving**, **Citizenship**, **English**, **Education**, **Professional**, **NHS**, **Fun**, **Taxi & Private Hire**. There are currently no Finance posts, so I'll group by these real categories (mapped to friendly section titles). If you want a different grouping (e.g. merge Driving + Taxi into "Driving & Transport"), tell me.
 
-## 2. Unique hero image per post (52 posts)
+## Category → Section heading mapping (proposed)
+- Driving → **Driving & Transport**
+- Taxi & Private Hire → **Taxi & Private Hire (TfL/SERU)**
+- Citizenship → **Life in the UK & Citizenship**
+- English → **English & IELTS**
+- Education → **Education & Exams**
+- Professional → **Professional & Trade (CSCS)**
+- NHS → **NHS & Healthcare**
+- Fun → **General Knowledge & Fun**
 
-Currently `src/data/blog.tsx` reuses 9 shared category hero images across all 52 posts (e.g. every Driving post uses `cat-hero-driving.jpg`). The articles index grid therefore looks repetitive.
+Sections render in this order; empty sections are hidden.
 
-Approach:
-- Generate **52 unique hero images**, one per post, using `imagegen` (`fast` tier, 1280×720, JPG) saved under `src/assets/blog/<slug>.jpg`.
-- Each prompt is derived from the post's title + category so imagery is topical (e.g. road-signs post → UK road signs scene; SERU post → London private-hire driver; NHS numeracy → clinical drug calculation desk).
-- Maintain a consistent visual style across all 52 so the grid feels cohesive: editorial photography, soft natural light, UK setting, no on-image text, 16:9 — matches the existing card aesthetic.
-- Update `src/data/blog.tsx`: replace the 9 `import heroX from "@/assets/cat-hero-*.jpg"` with 52 per-post imports, and set each post's `hero:` to its own image. Drop the now-unused category hero imports.
-
-This only changes the displayed/og image per post; copy, schema, and routing stay intact.
+## Changes to `src/routes/blog.index.tsx`
+1. Add a client search bar (controlled `useState`, `<input>` with search icon) above the grid. Filters by title, excerpt, and category (case-insensitive).
+2. Group `posts` by `category` using the mapping above.
+3. Render each non-empty group as a `<section>` with:
+   - An `<h2>` heading (display font, coral underline accent, post count badge).
+   - The same card grid as today (3 cols desktop / 2 tablet / 1 mobile), so card design and unique hero images are preserved.
+4. When search is active: hide section headings and show a single flat "Results" grid with a count + "Clear" button. If no matches, show an empty state.
+5. Add an in-page anchor nav (sticky chip row) listing the category sections so users can jump to one — hidden while searching.
+6. Keep hero, breadcrumb, AdSlot, SEO head, and footer unchanged.
 
 ## Out of scope
-- Renaming the URL from `/blog` to `/study-guides` (explicitly kept).
-- Restructuring post content, categories, or related-posts logic.
-- Changing the per-post Article schema (already correct).
-
-## Technical notes
-- 52 image generations will be issued in parallel batches via `imagegen--generate_image`.
-- Files placed in `src/assets/blog/` so Vite fingerprints them and they ship through the normal asset pipeline (same as today's category heroes).
-- No DB, no server-fn, no migrations.
+- Renaming the route, changing post data/categories, server-side search, or new image generation.
+- Adding new categories (e.g. Finance) — none exist in the data.
