@@ -245,7 +245,7 @@ function HomePage() {
         <AdSlot size="leaderboard" className="mt-10" />
 
         {/* POPULAR CATEGORIES */}
-        <section className="mt-16">
+        <section id="popular-categories" className="mt-16 scroll-mt-24">
           <SectionTitle>Popular Categories</SectionTitle>
 
           <div className="mt-10 grid gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
