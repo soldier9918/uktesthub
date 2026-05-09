@@ -569,7 +569,11 @@ function QuestionsBrowser() {
       }
       invalidateOverrides();
       setBump((n) => n + 1);
-      setImportMsg(`Imported ${written} question${written === 1 ? "" : "s"}.${skipped > 0 ? ` Skipped ${skipped} unknown ID${skipped === 1 ? "" : "s"}.` : ""}`);
+      setImportMsg(
+        `Imported ${written} question${written === 1 ? "" : "s"}.` +
+          (untouched > 0 ? ` Left ${untouched} row${untouched === 1 ? "" : "s"} untouched (no editable values).` : "") +
+          (skipped > 0 ? ` Skipped ${skipped} unknown ID${skipped === 1 ? "" : "s"}.` : ""),
+      );
     } catch (err) {
       setImportMsg(`Import failed: ${err instanceof Error ? err.message : "Unknown error"}`);
     } finally {
