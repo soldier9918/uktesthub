@@ -148,8 +148,8 @@ function HomePage() {
             </h1>
             <p className="mt-6 max-w-xl text-base text-navy-foreground/85 md:text-lg whitespace-pre-line">
               Practice-style questions. Mock tests. Instant results.
-              {"\n"}Study anytime, anywhere. 
               {"\n"}Over <span className="font-bold text-[#d4af37]">96,000+</span> mock questions across <span className="font-bold text-[#d4af37]">110+</span> topics!
+              {"\n"}Study anytime, anywhere.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-3">
