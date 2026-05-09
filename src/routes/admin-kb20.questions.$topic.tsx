@@ -295,14 +295,24 @@ function QuestionsBrowser() {
     return ["all", ...Array.from(s).sort()];
   }, [effectiveQuestions]);
 
+  const availableMocks = useMemo(() => {
+    const s = new Set<number>();
+    effectiveQuestions.forEach((q: FlatQuestion) =>
+      q.usedInMocks.forEach((u) => s.add(u.mockNumber)),
+    );
+    return Array.from(s).sort((a, b) => a - b);
+  }, [effectiveQuestions]);
+
   const filtered = useMemo<FlatQuestion[]>(() => {
     const s = search.trim().toLowerCase();
-    return effectiveQuestions.filter((q: FlatQuestion) => {
+    const mockNum = mockFilter === "all" ? null : Number(mockFilter);
+    const list = effectiveQuestions.filter((q: FlatQuestion) => {
       if (type !== "all" && q.type !== type) return false;
       if (imageFilter === "with" && !q.image) return false;
       if (imageFilter === "without" && q.image) return false;
       if (usageFilter === "used" && q.usedInMocks.length === 0) return false;
       if (usageFilter === "unused" && q.usedInMocks.length > 0) return false;
+      if (mockNum !== null && !q.usedInMocks.some((u) => u.mockNumber === mockNum)) return false;
       const isDisabled = !!overrides?.get(`${topic}::${q.id}`)?.disabled;
       if (statusFilter === "enabled" && isDisabled) return false;
       if (statusFilter === "disabled" && !isDisabled) return false;
@@ -316,7 +326,13 @@ function QuestionsBrowser() {
         return false;
       return true;
     });
-  }, [effectiveQuestions, search, type, imageFilter, usageFilter, statusFilter, healthFilter, overrides, topic]);
+    if (mockNum !== null) {
+      const slotOf = (q: FlatQuestion) =>
+        q.usedInMocks.find((u) => u.mockNumber === mockNum)?.slot ?? 9999;
+      list.sort((a, b) => slotOf(a) - slotOf(b));
+    }
+    return list;
+  }, [effectiveQuestions, search, type, imageFilter, usageFilter, mockFilter, statusFilter, healthFilter, overrides, topic]);
 
   const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
   const pageSafe = Math.min(page, totalPages);
