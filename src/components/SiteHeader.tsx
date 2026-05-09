@@ -16,7 +16,7 @@ const nav: { label: string; to: string; slug?: string }[] = [
   { label: "Taxi & Private Hire", to: "/category/$slug", slug: "taxi-private-hire" },
   { label: "Professional", to: "/category/$slug", slug: "professional" },
   { label: "NHS", to: "/category/$slug", slug: "nhs" },
-  { label: "Articles", to: "/blog" },
+  { label: "Study Guides", to: "/blog" },
 ];
 
 export function SiteHeader() {
