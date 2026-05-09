@@ -9,9 +9,9 @@ import { Home, ChevronRight, ArrowRight, Clock } from "lucide-react";
 export const Route = createFileRoute("/blog/")({
   head: () =>
     pageMeta({
-      title: "Blog — UK Test Hub | Free UK Exam Guides & Study Tips",
+      title: "Study Guides — UK Test Hub | Free UK Exam Guides & Study Plans",
       description:
-        "Free guides, tips and study plans for UK exams: Driving Theory, Life in the UK, IELTS, GCSE, CSCS, NHS, SERU TfL and more. Updated for 2026.",
+        "Free guides, tips and study plans for UK tests, licences and exams: Driving Theory, Life in the UK, IELTS, GCSE, CSCS, NHS, SERU TfL and more. Updated for 2026.",
       path: "/blog",
     }),
   component: BlogIndex,
