@@ -29,14 +29,14 @@ function BlogIndex() {
               <Home className="h-3.5 w-3.5" /> Home
             </Link>
             <ChevronRight className="h-3.5 w-3.5" />
-            <span className="text-navy-foreground">Blog</span>
+            <span className="text-navy-foreground">Study Guides</span>
           </nav>
           <h1 className="mt-5 font-sans font-black uppercase leading-[0.95] tracking-tight text-6xl md:text-7xl lg:text-8xl">
-            UK Test Hub Blog
+            UK Test Hub Study Guides
           </h1>
           <div className="mt-3 h-1 w-16 rounded-full bg-coral" />
           <p className="mt-4 max-w-2xl text-base text-navy-foreground/85 md:text-lg">
-            Free guides, tips and study plans for every UK test we cover.
+            Free guides, tips and study plans for UK tests, licences and exams.
           </p>
         </div>
       </section>
