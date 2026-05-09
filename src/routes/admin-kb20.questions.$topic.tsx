@@ -845,6 +845,15 @@ function QuestionsBrowser() {
           <Button size="sm" onClick={() => fileInputRef.current?.click()} disabled={importing}>
             {importing ? "Importing…" : "Import CSV / JSON"}
           </Button>
+          <Button
+            size="sm"
+            variant="outline"
+            onClick={cleanBadOverrides}
+            disabled={cleaning}
+            title="Delete or clear override rows where the question text or answer options are blank — fixes questions that show empty after a bad CSV upload."
+          >
+            {cleaning ? "Cleaning…" : "Clear bad overrides"}
+          </Button>
           <span className="text-xs text-muted-foreground">
             Edit the exported file and re-upload — matching IDs are saved as overrides.
           </span>
