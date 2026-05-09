@@ -7,8 +7,20 @@ import { CategoryIcon, accentClasses } from "@/components/CategoryIcon";
 import { getCategory, categories } from "@/data/categories";
 import { categorySeo } from "@/data/category-seo";
 import { TOTAL_MOCKS_PER_TOPIC, QUESTIONS_PER_MOCK, listMockSlots } from "@/data/mocks";
-import { Home, ChevronRight, ArrowRight, BookOpen } from "lucide-react";
+import { Home, ChevronRight, ArrowRight, BookOpen, Clock, CheckCircle2, ClipboardCheck } from "lucide-react";
 import { pageMeta, faqSchema, breadcrumbSchema } from "@/lib/seo";
+
+import imgDrivingTheory from "@/assets/blog/driving-theory-test-uk-complete-guide.jpg";
+import imgHazard from "@/assets/blog/uk-hazard-perception-test-tips.jpg";
+import imgRoadSigns from "@/assets/blog/top-uk-road-signs-explained.jpg";
+import imgMotorcycle from "@/assets/blog/motorcycle-theory-test-uk.jpg";
+
+const topicImages: Record<string, string> = {
+  "driving-theory": imgDrivingTheory,
+  "hazard-perception": imgHazard,
+  "road-signs": imgRoadSigns,
+  "motorcycle-theory": imgMotorcycle,
+};
 
 export const Route = createFileRoute("/category/$slug")({
   loader: ({ params }) => {
