@@ -174,10 +174,17 @@ export function validateTopicBank(
       });
     }
 
+    const matchesLabel = (ans: unknown, opts: unknown): boolean => {
+      if (typeof ans !== "string" || !ans.trim() || !Array.isArray(opts)) return false;
+      const a = ans.trim().toLowerCase();
+      return opts.some((o) => typeof o === "string" && o.trim().toLowerCase() === a);
+    };
+
     if (type === "mcq" || type === "multiple_choice" || type === "image-question" || type === "image_question") {
       const opts = q.options as unknown[] | undefined;
-      const ans = q.correctAnswer as number | undefined;
-      if (!Array.isArray(opts) || typeof ans !== "number" || ans < 0 || ans >= opts.length) {
+      const ans = q.correctAnswer as unknown;
+      const validIndex = Array.isArray(opts) && typeof ans === "number" && ans >= 0 && ans < opts.length;
+      if (!validIndex && !matchesLabel(ans, opts)) {
         findings.push({
           topic, questionId: id, questionIndex: idx, questionText: snippet(qText),
           rule: "invalid-correct-answer",
@@ -185,7 +192,13 @@ export function validateTopicBank(
         });
       }
     } else if (type === "true-false" || type === "true_false") {
-      if (typeof q.correctAnswer !== "boolean") {
+      const ans = q.correctAnswer as unknown;
+      let ok = typeof ans === "boolean";
+      if (!ok && typeof ans === "string") {
+        const s = ans.trim().toLowerCase();
+        ok = s === "true" || s === "false" || matchesLabel(ans, q.options);
+      }
+      if (!ok) {
         findings.push({
           topic, questionId: id, questionIndex: idx, questionText: snippet(qText),
           rule: "invalid-correct-answer",
