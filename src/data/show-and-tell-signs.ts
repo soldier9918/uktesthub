@@ -31,4 +31,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Plate sign found just after a ford or water splash: test your brakes gently to dry them out before continuing at normal speed.",
   },
+  {
+    id: "05",
+    image: "/road-signs/show-and-tell/sign-05.png",
+    name: "Risk of ice",
+    meaning:
+      "Warning: the road ahead may be icy or slippery. Drive smoothly at low speed — avoid harsh braking, steering or acceleration.",
+  },
+  {
+    id: "06",
+    image: "/road-signs/show-and-tell/sign-06.png",
+    name: "Quayside or river bank",
+    meaning:
+      "Warning: the road runs alongside a quay, dock or river bank with no barrier. Drive slowly and keep well clear of the edge.",
+  },
+  {
+    id: "07",
+    image: "/road-signs/show-and-tell/sign-07.png",
+    name: "Risk of flooding",
+    meaning:
+      "Warning: the road ahead is liable to flooding, often after heavy rain or near rivers. Slow down and be ready to stop or turn back.",
+  },
+  {
+    id: "08",
+    image: "/road-signs/show-and-tell/sign-08.png",
+    name: "Uneven road",
+    meaning:
+      "Warning: the road surface ahead is uneven with bumps or dips. Reduce speed to keep control and avoid jolting the vehicle.",
+  },
 ];
