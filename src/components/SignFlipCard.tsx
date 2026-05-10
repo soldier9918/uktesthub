@@ -57,7 +57,7 @@ export function SignFlipCard({ sign }: { sign: SignFlipCardData }) {
           <p className="mt-1 text-[10.5px] leading-[1.15] text-black">
             {sign.meaning}
           </p>
-          <span className="mt-auto inline-flex items-center gap-1 pt-1 text-[9px] font-semibold uppercase tracking-wider leading-none text-black/60">
+          <span className="mt-1 inline-flex items-center gap-1 text-[9px] font-semibold uppercase tracking-wider leading-none text-black/60">
             <RotateCw className="h-3 w-3" /> Tap to flip back
           </span>
         </span>
