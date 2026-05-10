@@ -38,7 +38,7 @@ export function SignFlipCard({ sign }: { sign: SignFlipCardData }) {
 
         {/* BACK */}
         <span
-          className="absolute inset-0 flex flex-col items-center rounded-2xl border border-border bg-white px-4 py-3 text-center text-black shadow-elevated [backface-visibility:hidden]"
+          className="absolute inset-0 flex flex-col items-center rounded-2xl border border-border bg-white px-4 pt-3 pb-1 text-center text-black shadow-elevated [backface-visibility:hidden]"
           style={{ transform: "rotateY(180deg)" }}
         >
           {/* TITLE AREA */}
@@ -72,7 +72,7 @@ export function SignFlipCard({ sign }: { sign: SignFlipCardData }) {
           </p>
 
           {/* FOOTER */}
-          <span className="mt-auto inline-flex items-center gap-1 pt-2 text-[9px] font-semibold uppercase tracking-wider leading-none text-black/60">
+          <span className="mt-auto inline-flex items-center gap-1 text-[9px] font-semibold uppercase tracking-wider leading-none text-black/60">
             <RotateCw className="h-3 w-3" /> Tap to flip back
           </span>
         </span>
