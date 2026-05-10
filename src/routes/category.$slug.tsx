@@ -128,7 +128,7 @@ function CategoryPage() {
                         loading="lazy"
                         className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                       />
-                      <div aria-hidden className="absolute inset-0 bg-gradient-to-r from-white from-40% via-white/90 via-65% to-white/0" />
+                      <div aria-hidden className="absolute inset-0 bg-[linear-gradient(to_right,white_0%,white_55%,rgba(255,255,255,0.85)_72%,rgba(255,255,255,0)_100%)]" />
                       <div className="relative flex flex-1 items-start gap-4 p-5">
                         <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-white text-coral shadow-soft ring-1 ring-foreground/5">
                           <BookOpen className="h-6 w-6" />
@@ -171,7 +171,7 @@ function CategoryPage() {
                           loading="lazy"
                           className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                         />
-                        <div aria-hidden className="absolute inset-0 bg-gradient-to-r from-white from-40% via-white/90 via-65% to-white/0" />
+                        <div aria-hidden className="absolute inset-0 bg-[linear-gradient(to_right,white_0%,white_55%,rgba(255,255,255,0.85)_72%,rgba(255,255,255,0)_100%)]" />
                         <div className="relative flex flex-1 items-start gap-4 p-5">
                           <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-white text-coral shadow-soft ring-1 ring-foreground/5">
                             <ClipboardCheck className="h-6 w-6" />
