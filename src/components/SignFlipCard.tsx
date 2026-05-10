@@ -63,9 +63,9 @@ export function SignFlipCard({ sign }: { sign: SignFlipCardData }) {
           <p
             className="text-black"
             style={{
-              marginTop: "18px",
-              fontSize: "14px",
-              lineHeight: "1.15",
+              marginTop: "10px",
+              fontSize: "11px",
+              lineHeight: "1.2",
             }}
           >
             {sign.meaning}
