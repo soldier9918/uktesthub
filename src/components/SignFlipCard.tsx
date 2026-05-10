@@ -51,7 +51,7 @@ export function SignFlipCard({ sign }: { sign: SignFlipCardData }) {
           <span className="text-[10px] font-semibold uppercase tracking-wider text-coral">
             What it means
           </span>
-          <h3 className="mt-1.5 font-display text-sm font-extrabold leading-tight text-black">
+          <h3 className="mt-1 font-display text-[13px] font-bold leading-none text-black">
             {sign.name}
           </h3>
           <div className="mt-1.5 h-0.5 w-6 rounded-full bg-coral" />
