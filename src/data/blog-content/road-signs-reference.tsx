@@ -119,7 +119,27 @@ export function RoadSignsReferenceBody() {
         for the fastest route to a confident pass.
       </p>
 
-      {/* THE SIGNING SYSTEM */}
+      <div className="not-prose my-6 flex flex-col gap-3 rounded-2xl border border-coral/30 bg-coral/5 p-5 sm:flex-row sm:items-center sm:justify-between">
+        <div>
+          <p className="text-[11px] font-semibold uppercase tracking-wider text-coral">
+            New · Interactive
+          </p>
+          <p className="mt-1 font-display text-base font-bold text-foreground">
+            Try the Show &amp; Tell road signs board
+          </p>
+          <p className="mt-1 text-sm text-muted-foreground">
+            Tap any sign — the card flips to reveal what it means.
+          </p>
+        </div>
+        <Link
+          to="/blog/$slug"
+          params={{ slug: "show-and-tell-road-signs" }}
+          className="inline-flex shrink-0 items-center justify-center rounded-full bg-coral px-5 py-2.5 text-sm font-semibold text-coral-foreground shadow-soft transition hover:opacity-90"
+        >
+          Open the board →
+        </Link>
+      </div>
+
       <h2>The signing system</h2>
       <p>
         There are three basic types of traffic sign: signs that give orders,
