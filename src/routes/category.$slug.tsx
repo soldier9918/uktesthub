@@ -10,6 +10,26 @@ import { TOTAL_MOCKS_PER_TOPIC, QUESTIONS_PER_MOCK, listMockSlots } from "@/data
 import { Home, ChevronRight, ArrowRight, BookOpen } from "lucide-react";
 import { pageMeta, faqSchema, breadcrumbSchema } from "@/lib/seo";
 
+// Topic-specific background images (falls back to category hero when no entry).
+import imgLifeUk from "@/assets/blog/50-life-in-the-uk-questions-you-must-know.jpg";
+import imgBritCit from "@/assets/blog/british-citizenship-test-questions-2026.jpg";
+import imgUkCit from "@/assets/blog/uk-citizenship-test-guide-pass-first-time.jpg";
+import imgUkGen from "@/assets/blog/uk-general-knowledge-quiz-guide.jpg";
+import imgDriving from "@/assets/blog/driving-theory-test-uk-complete-guide.jpg";
+import imgRoadSigns from "@/assets/blog/complete-uk-road-signs-reference.jpg";
+import imgHazard from "@/assets/blog/uk-hazard-perception-test-tips.jpg";
+
+const topicImage: Record<string, string> = {
+  "life-in-the-uk": imgLifeUk,
+  "british-citizenship": imgBritCit,
+  "uk-laws-rights": imgUkCit,
+  "uk-geography": imgUkGen,
+  "driving-theory": imgDriving,
+  "road-signs": imgRoadSigns,
+  "hazard-perception": imgHazard,
+  "motorcycle-theory": imgDriving,
+};
+
 export const Route = createFileRoute("/category/$slug")({
   loader: ({ params }) => {
     const category = getCategory(params.slug);
