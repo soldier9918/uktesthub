@@ -59,4 +59,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Warning: the road surface ahead is uneven with bumps or dips. Reduce speed to keep control and avoid jolting the vehicle.",
   },
+  {
+    id: "09",
+    image: "/road-signs/show-and-tell/sign-09.png",
+    name: "Soft verges",
+    meaning:
+      "Warning: the verges at the side of the road are soft and may give way under a vehicle's weight. Avoid pulling onto them, especially in wet weather.",
+  },
+  {
+    id: "10",
+    image: "/road-signs/show-and-tell/sign-10.png",
+    name: "Slippery road",
+    meaning:
+      "Warning: the road surface ahead may be slippery. Reduce speed and avoid harsh braking, steering or acceleration.",
+  },
+  {
+    id: "11",
+    image: "/road-signs/show-and-tell/sign-11.png",
+    name: "Road hump",
+    meaning:
+      "Warning: a road hump or series of humps ahead, used to slow traffic. Reduce speed before reaching them to keep control and comfort.",
+  },
+  {
+    id: "12",
+    image: "/road-signs/show-and-tell/sign-12.png",
+    name: "Low-flying aircraft",
+    meaning:
+      "Warning: low-flying aircraft or sudden aircraft noise ahead, usually near an airfield. Stay alert as the noise can be startling.",
+  },
 ];
