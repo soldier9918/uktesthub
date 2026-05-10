@@ -45,22 +45,20 @@ export function SignFlipCard({ sign }: { sign: SignFlipCardData }) {
 
         {/* BACK */}
         <span
-          className="absolute inset-0 flex flex-col items-center justify-between overflow-hidden rounded-2xl border border-border bg-white p-3 text-center text-black shadow-elevated [backface-visibility:hidden]"
+          className="absolute inset-0 flex flex-col items-center overflow-hidden rounded-2xl border border-border bg-white p-3 text-center text-black shadow-elevated [backface-visibility:hidden]"
           style={{ transform: "rotateY(180deg)" }}
         >
           <span className="text-[10px] font-semibold uppercase tracking-wider text-coral">
             What it means
           </span>
-          <div className="flex flex-1 flex-col items-center justify-center gap-1.5 px-1">
-            <h3 className="font-display text-sm font-extrabold leading-tight text-black">
-              {sign.name}
-            </h3>
-            <div className="h-0.5 w-6 rounded-full bg-coral" />
-            <p className="text-[11px] leading-snug text-black">
-              {sign.meaning}
-            </p>
-          </div>
-          <span className="inline-flex items-center gap-1 text-[10px] font-semibold uppercase tracking-wider text-black/60">
+          <h3 className="mt-1.5 font-display text-sm font-extrabold leading-tight text-black">
+            {sign.name}
+          </h3>
+          <div className="mt-1.5 h-0.5 w-6 rounded-full bg-coral" />
+          <p className="mt-1.5 text-[11px] leading-snug text-black">
+            {sign.meaning}
+          </p>
+          <span className="mt-auto inline-flex items-center gap-1 text-[10px] font-semibold uppercase tracking-wider text-black/60">
             <RotateCw className="h-3 w-3" /> Tap to flip back
           </span>
         </span>
