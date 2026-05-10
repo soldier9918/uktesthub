@@ -107,9 +107,89 @@ function CategoryPage() {
             </div>
 
             <div className="mt-6 grid grid-cols-1 gap-5 md:grid-cols-2">
-              {category.topics.flatMap((t: { slug: string; title: string }) => {
+              {category.topics.flatMap((t: { slug: string; title: string; tileImage?: string }) => {
                 const slots = listMockSlots(t.slug);
                 const available = slots.filter((s) => s.available).length;
+                const bg = t.tileImage;
+
+                if (bg) {
+                  // IMAGE-BACKGROUND TILES (driving + life in the UK style)
+                  return [
+                    <Link
+                      key={`${t.slug}-guide`}
+                      to="/guide/$slug"
+                      params={{ slug: t.slug }}
+                      aria-label={`Read the ${t.title} guide`}
+                      className="group relative flex aspect-[16/7] flex-col justify-between overflow-hidden rounded-2xl border border-border shadow-soft transition-all duration-200 hover:-translate-y-0.5 hover:shadow-elevated"
+                    >
+                      <img
+                        src={bg}
+                        alt=""
+                        loading="lazy"
+                        className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      />
+                      <div aria-hidden className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/70 to-transparent" />
+                      <div className="relative flex items-start justify-between p-4">
+                        <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-white text-coral shadow-soft">
+                          <BookOpen className="h-5 w-5" />
+                        </span>
+                      </div>
+                      <div className="relative flex items-end justify-between gap-3 p-4 pt-0">
+                        <div className="min-w-0">
+                          <p className="text-[10px] font-semibold uppercase tracking-wider text-foreground/70">Test Guide</p>
+                          <h3 className="mt-0.5 font-display text-base font-bold leading-tight text-foreground drop-shadow-sm">
+                            {t.title} Guide
+                          </h3>
+                        </div>
+                        <span className="inline-flex items-center gap-1 rounded-full bg-white px-4 py-2 text-xs font-bold uppercase tracking-wider text-foreground shadow-soft transition-all group-hover:gap-2">
+                          Read
+                          <ArrowRight className="h-3.5 w-3.5" />
+                        </span>
+                      </div>
+                    </Link>,
+
+                    <div key={`${t.slug}-test`} className="relative">
+                      <div className="absolute right-3 top-3 z-20">
+                        <BookmarkButton topicSlug={t.slug} />
+                      </div>
+                      <Link
+                        to="/topic/$slug"
+                        params={{ slug: t.slug }}
+                        aria-label={`Open ${t.title} — ${TOTAL_MOCKS_PER_TOPIC} free mock tests`}
+                        className="group relative flex aspect-[16/7] flex-col justify-between overflow-hidden rounded-2xl border border-border shadow-soft transition-all duration-200 hover:-translate-y-0.5 hover:shadow-elevated"
+                      >
+                        <img
+                          src={bg}
+                          alt=""
+                          loading="lazy"
+                          className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                        />
+                        <div aria-hidden className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/65 to-transparent" />
+                        <div className="relative flex items-start justify-between p-4">
+                          <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-white text-coral shadow-soft">
+                            <CategoryIcon name={category.icon} className="h-5 w-5" />
+                          </span>
+                        </div>
+                        <div className="relative flex items-end justify-between gap-3 p-4 pt-0">
+                          <div className="min-w-0">
+                            <p className="text-[10px] font-semibold uppercase tracking-wider text-foreground/70">Practice Test</p>
+                            <h3 className="mt-0.5 font-display text-base font-bold leading-tight text-foreground drop-shadow-sm">
+                              {t.title}
+                            </h3>
+                            <p className="mt-0.5 text-[11px] font-semibold tabular-nums text-foreground/70">
+                              {available} of {TOTAL_MOCKS_PER_TOPIC} ready
+                            </p>
+                          </div>
+                          <span className="inline-flex items-center gap-1 rounded-full bg-coral px-4 py-2 text-xs font-bold uppercase tracking-wider text-coral-foreground shadow-soft transition-all group-hover:gap-2">
+                            Start
+                            <ArrowRight className="h-3.5 w-3.5" />
+                          </span>
+                        </div>
+                      </Link>
+                    </div>,
+                  ];
+                }
+
                 return [
                   // GUIDE CARD (left column)
                   <Link
