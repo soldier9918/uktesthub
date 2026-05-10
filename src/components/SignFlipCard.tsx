@@ -28,7 +28,9 @@ export function SignFlipCard({ sign }: { sign: SignFlipCardData }) {
           <span className="text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">
             Tap to reveal
           </span>
+
           <img src={sign.image} alt="" loading="lazy" className="max-h-[70%] w-auto max-w-[85%] object-contain" />
+
           <span className="inline-flex items-center gap-1 text-[10px] font-semibold uppercase tracking-wider text-coral">
             <RotateCw className="h-3 w-3" /> Flip
           </span>
@@ -42,8 +44,20 @@ export function SignFlipCard({ sign }: { sign: SignFlipCardData }) {
           <span className="text-[9px] font-semibold uppercase tracking-wider leading-none text-coral">
             What it means
           </span>
-          <h3 className="m-0 mt-1 text-[11px] font-bold leading-none text-black">{sign.name}</h3>
-          <p className="mt-1 text-[10.5px] leading-[1.15] text-black">{sign.meaning}</p>
+
+          <span
+            className="block font-bold leading-none text-black"
+            style={{
+              marginTop: "2px",
+              fontSize: "24px",
+              lineHeight: "1",
+            }}
+          >
+            {sign.name}
+          </span>
+
+          <p className="mt-4 text-[10.5px] leading-[1.15] text-black">{sign.meaning}</p>
+
           <span className="mt-auto inline-flex items-center gap-1 pt-1 text-[9px] font-semibold uppercase tracking-wider leading-none text-black/60">
             <RotateCw className="h-3 w-3" /> Tap to flip back
           </span>
