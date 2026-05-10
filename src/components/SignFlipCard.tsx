@@ -45,7 +45,7 @@ export function SignFlipCard({ sign }: { sign: SignFlipCardData }) {
 
         {/* BACK */}
         <span
-          className="absolute inset-0 flex flex-col items-center overflow-hidden rounded-2xl border border-border bg-white px-2 py-2 text-center text-black shadow-elevated [backface-visibility:hidden]"
+          className="absolute inset-0 flex flex-col items-center overflow-hidden rounded-2xl border border-border bg-white px-2 pt-1 pb-1 text-center text-black shadow-elevated [backface-visibility:hidden]"
           style={{ transform: "rotateY(180deg)" }}
         >
           <span className="text-[9px] font-semibold uppercase tracking-wider leading-none text-coral">
