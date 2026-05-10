@@ -38,27 +38,41 @@ export function SignFlipCard({ sign }: { sign: SignFlipCardData }) {
 
         {/* BACK */}
         <span
-          className="absolute inset-0 flex flex-col items-center overflow-hidden rounded-2xl border border-border bg-white px-2 py-2 text-center text-black shadow-elevated [backface-visibility:hidden]"
+          className="absolute inset-0 flex flex-col items-center rounded-2xl border border-border bg-white px-4 py-3 text-center text-black shadow-elevated [backface-visibility:hidden]"
           style={{ transform: "rotateY(180deg)" }}
         >
-          <span className="text-[9px] font-semibold uppercase tracking-wider leading-none text-coral">
-            What it means
+          {/* TITLE AREA */}
+          <span className="flex flex-col items-center gap-0">
+            <span className="text-[9px] font-semibold uppercase tracking-wider leading-none text-coral">
+              What it means
+            </span>
+
+            <span
+              className="block font-bold text-black"
+              style={{
+                marginTop: "4px",
+                fontSize: "25px",
+                lineHeight: "1.15",
+              }}
+            >
+              {sign.name}
+            </span>
           </span>
 
-          <span
-            className="block font-bold leading-none text-black"
+          {/* MEANING */}
+          <p
+            className="text-black"
             style={{
-              marginTop: "2px",
-              fontSize: "24px",
-              lineHeight: "1",
+              marginTop: "18px",
+              fontSize: "14px",
+              lineHeight: "1.15",
             }}
           >
-            {sign.name}
-          </span>
+            {sign.meaning}
+          </p>
 
-          <p className="mt-4 text-[10.5px] leading-[1.15] text-black">{sign.meaning}</p>
-
-          <span className="mt-auto inline-flex items-center gap-1 pt-1 text-[9px] font-semibold uppercase tracking-wider leading-none text-black/60">
+          {/* FOOTER */}
+          <span className="mt-auto inline-flex items-center gap-1 pt-2 text-[9px] font-semibold uppercase tracking-wider leading-none text-black/60">
             <RotateCw className="h-3 w-3" /> Tap to flip back
           </span>
         </span>
