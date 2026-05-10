@@ -1,33 +1,46 @@
-## 1. Fix strange Study Guides images
-AI-generated images frequently contain garbled fake text and distorted humans. Rather than auditing each of the 51 images one-by-one, I'll **regenerate all 51** with stricter prompts that ban both:
-- "no text, words, letters, numbers, signage, posters, captions, watermarks, or writing of any kind"
-- "no people, no faces, no hands, no human figures"
+## Show and Tell — Interactive Road Signs
 
-Each post gets a topic-specific scene built from **objects / environments only** (e.g. NHS numeracy → calculator, syringe, IV drip, blank notepad on a clinical desk; Driving theory → steering wheel, gear stick, dashboard close-up; Life in the UK → Union Jack fabric, vintage map, stamps, teacup; CSCS → hard hat, hi-vis vest, blueprints; SERU → London cab badge mockup with no text, A-Z map, route plotter; IELTS → blank notebook, pen, headphones, globe). Style stays consistent: editorial photography, soft natural light, shallow depth of field, 16:9, UK setting.
+A new study guide page where each road sign is a 3D flip card. Click → card flips → reveals the sign name and meaning.
 
-- Output: overwrite the existing 51 files in `src/assets/blog/` (same filenames so `src/data/blog.tsx` imports keep working — no code changes needed).
-- Run in parallel batches via `imagegen--generate_image` (fast tier).
-- After generation, do a visual QA spot-check on a sample (~6 images covering each category) and regenerate any that still show text or people.
+### 1. New route
+- Create `src/routes/blog.show-and-tell-road-signs.tsx` (lives under the existing blog/study-guides system, same shell as other guides like `complete-uk-road-signs-reference`).
+- Slug: `/blog/show-and-tell-road-signs`.
+- Title: **Show and Tell — UK Road Signs (Interactive)**.
+- SEO meta + breadcrumb + ItemList JSON-LD for the 19 signs.
 
-If you'd rather I only regenerate a specific list of bad ones (please share the slugs), say so — otherwise I'll do all 51 to guarantee a clean set.
+### 2. Page layout
+- Hero strip with title, short intro ("Tap any sign to reveal what it means"), and a "Reset all" button.
+- Responsive grid: 2 cols mobile / 3 tablet / 4 desktop.
+- 19 `<SignFlipCard>` tiles.
+- Below the grid: short FAQ + CTA linking to the Driving Theory practice tests.
 
-## 2. "Browse All Categories" button under Popular Categories
-Edit `src/routes/index.tsx` only. After the categories grid closes (line 330, before `</section>` on 331), insert a centered CTA block:
+### 3. The flip card component
+- New file: `src/components/SignFlipCard.tsx`.
+- 3D flip on click using Tailwind `[transform-style:preserve-3d]` + `[backface-visibility:hidden]` + `rotate-y-180` utilities (added as small inline style; no Tailwind config changes needed).
+- Front: white card, the sign image centered, subtle shadow, "Tap to reveal" hint.
+- Back: dark navy card, large bold sign name, 1–2 sentence meaning, small "Tap to flip back" hint.
+- Keyboard accessible (button element, Enter/Space toggles, `aria-pressed`, `aria-label` describing the sign).
+- ~600ms ease-out flip animation.
 
-```tsx
-<div className="mt-12 flex justify-center">
-  <a
-    href="https://www.uktesthub.com/all-tests"
-    className="group inline-flex items-center gap-3 rounded-2xl bg-coral px-10 py-5 font-display text-base font-bold uppercase tracking-[0.18em] text-coral-foreground shadow-coral transition-transform hover:-translate-y-0.5 md:text-lg"
-  >
-    Browse All Categories
-    <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
-  </a>
-</div>
-```
+### 4. Data
+- New file: `src/data/show-and-tell-signs.ts` exporting an array of 19 entries:
+  ```ts
+  { id, image, name, meaning, category }
+  ```
+- Images live in `public/road-signs/show-and-tell/sign-01.png` … `sign-19.png` (added as you upload them in batches of 5).
+- I will populate `name` + `meaning` for each sign you send, using official UK Highway Code wording.
 
-Note: you specified the absolute URL `https://www.uktesthub.com/all-tests`, so it'll be a plain `<a href>` (external-style). The internal `/all-tests` route already exists, but I'll honor the URL you gave. If you'd prefer an internal `<Link to="/all-tests">` for instant client-side nav and preloading, tell me and I'll switch it.
+### 5. Linking it in
+- Add a tile under **Study Guides** on the homepage (`src/routes/index.tsx`) pointing to the new page.
+- Add a prominent callout inside the existing **Road Signs Reference** guide (`src/data/blog-content/road-signs-reference.tsx`) — a card near the top saying "Try the interactive Show & Tell board →".
 
-## Out of scope
-- Changing post content, slugs, categories, or the Study Guides page layout.
-- Touching the existing `/all-tests` route.
+### 6. Build process (so you can upload in batches)
+1. I implement the page shell, flip card, data file (empty array), homepage tile, and road-signs-guide callout — all working with placeholder cards.
+2. You upload batch 1 (5 images) → I save them to `public/road-signs/show-and-tell/`, write names + meanings, push them into the data array.
+3. Repeat for batches 2, 3, 4 (4 images in the last batch) until all 19 are live.
+
+### Technical notes
+- Pure frontend, no backend/DB needed.
+- No new dependencies — flip uses Tailwind transforms + CSS only.
+- Uses existing design tokens (navy/coral/cream) so it matches the rest of the site.
+- Images served from `/public` (already how `road-signs/page-1.png` etc. work).
