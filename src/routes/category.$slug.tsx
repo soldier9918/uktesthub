@@ -7,7 +7,7 @@ import { CategoryIcon, accentClasses } from "@/components/CategoryIcon";
 import { getCategory, categories } from "@/data/categories";
 import { categorySeo } from "@/data/category-seo";
 import { TOTAL_MOCKS_PER_TOPIC, QUESTIONS_PER_MOCK, listMockSlots } from "@/data/mocks";
-import { Home, ChevronRight, ArrowRight, BookOpen, ClipboardCheck, Clock, CheckCircle2 } from "lucide-react";
+import { Home, ChevronRight, ArrowRight, BookOpen } from "lucide-react";
 import { pageMeta, faqSchema, breadcrumbSchema } from "@/lib/seo";
 
 export const Route = createFileRoute("/category/$slug")({
@@ -107,100 +107,9 @@ function CategoryPage() {
             </div>
 
             <div className="mt-6 grid grid-cols-1 gap-5 md:grid-cols-2">
-              {category.topics.flatMap((t: { slug: string; title: string; tileImage?: string }) => {
+              {category.topics.flatMap((t: { slug: string; title: string }) => {
                 const slots = listMockSlots(t.slug);
                 const available = slots.filter((s) => s.available).length;
-                const bg = t.tileImage;
-
-                if (bg) {
-                  // IMAGE-BACKGROUND TILES (mockup style)
-                  return [
-                    <Link
-                      key={`${t.slug}-guide`}
-                      to="/guide/$slug"
-                      params={{ slug: t.slug }}
-                      aria-label={`Read the ${t.title} guide`}
-                      className="group relative flex min-h-[200px] flex-col overflow-hidden rounded-2xl border border-border bg-white shadow-soft transition-all duration-200 hover:-translate-y-0.5 hover:shadow-elevated"
-                    >
-                      <img
-                        src={bg}
-                        alt=""
-                        loading="lazy"
-                        className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                      />
-                      <div aria-hidden className="absolute inset-0 bg-[linear-gradient(to_right,white_0%,white_60%,rgba(255,255,255,0)_92%)]" />
-                      <div className="relative flex flex-1 items-start gap-4 p-5">
-                        <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-white text-coral shadow-soft ring-1 ring-foreground/5">
-                          <BookOpen className="h-6 w-6" />
-                        </span>
-                        <div className="min-w-0 max-w-[55%] pt-0.5">
-                          <p className="text-[11px] font-bold uppercase tracking-[0.12em] text-coral">Test Guide</p>
-                          <h3 className="mt-1 font-display text-base font-extrabold leading-tight text-foreground md:text-lg">
-                            {t.title} Guide
-                          </h3>
-                          <p className="mt-1 text-xs text-foreground/70">
-                            Format, tips and how to pass first time
-                          </p>
-                        </div>
-                      </div>
-                      <div className="relative mx-5 border-t border-foreground/10" />
-                      <div className="relative flex items-center justify-between gap-3 px-5 py-3">
-                        <span className="inline-flex items-center gap-1.5 text-[11px] font-semibold uppercase tracking-wider text-foreground/60">
-                          <Clock className="h-3.5 w-3.5" /> ~7 min read
-                        </span>
-                        <span className="inline-flex items-center gap-1.5 rounded-full bg-white px-4 py-2 text-xs font-bold text-coral shadow-soft ring-1 ring-foreground/5 transition-all group-hover:gap-2">
-                          Read guide
-                          <ArrowRight className="h-3.5 w-3.5" />
-                        </span>
-                      </div>
-                    </Link>,
-
-                    <div key={`${t.slug}-test`} className="relative">
-                      <div className="absolute right-3 top-3 z-20 rounded-full bg-white/95 shadow-soft ring-1 ring-foreground/5 backdrop-blur">
-                        <BookmarkButton topicSlug={t.slug} />
-                      </div>
-                      <Link
-                        to="/topic/$slug"
-                        params={{ slug: t.slug }}
-                        aria-label={`Open ${t.title} — ${TOTAL_MOCKS_PER_TOPIC} free mock tests`}
-                        className="group relative flex min-h-[200px] flex-col overflow-hidden rounded-2xl border border-border bg-white shadow-soft transition-all duration-200 hover:-translate-y-0.5 hover:shadow-elevated"
-                      >
-                        <img
-                          src={bg}
-                          alt=""
-                          loading="lazy"
-                          className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                        />
-                        <div aria-hidden className="absolute inset-0 bg-[linear-gradient(to_right,white_0%,white_60%,rgba(255,255,255,0)_92%)]" />
-                        <div className="relative flex flex-1 items-start gap-4 p-5">
-                          <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-white text-coral shadow-soft ring-1 ring-foreground/5">
-                            <ClipboardCheck className="h-6 w-6" />
-                          </span>
-                          <div className="min-w-0 max-w-[52%] pr-2 pt-0.5">
-                            <p className="text-[11px] font-bold uppercase tracking-[0.12em] text-coral">Practice Test</p>
-                            <h3 className="mt-1 font-display text-base font-extrabold leading-tight text-foreground md:text-lg">
-                              {t.title}
-                            </h3>
-                            <p className="mt-1 text-xs text-foreground/70">
-                              {TOTAL_MOCKS_PER_TOPIC} mocks · {QUESTIONS_PER_MOCK} questions
-                            </p>
-                          </div>
-                        </div>
-                        <div className="relative mx-5 border-t border-foreground/10" />
-                        <div className="relative flex items-center justify-between gap-3 px-5 py-3">
-                          <span className="inline-flex items-center gap-1.5 text-[11px] font-semibold tabular-nums text-foreground/60">
-                            <CheckCircle2 className="h-3.5 w-3.5" /> {available} of {TOTAL_MOCKS_PER_TOPIC} ready
-                          </span>
-                          <span className="inline-flex shrink-0 items-center gap-1.5 rounded-full bg-coral px-4 py-2 text-xs font-bold text-coral-foreground shadow-soft transition-all group-hover:gap-2">
-                            Start test
-                            <ArrowRight className="h-3.5 w-3.5" />
-                          </span>
-                        </div>
-                      </Link>
-                    </div>,
-                  ];
-                }
-
                 return [
                   // GUIDE CARD (left column)
                   <Link

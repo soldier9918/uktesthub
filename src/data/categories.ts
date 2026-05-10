@@ -24,15 +24,6 @@ import heroBeautyWellbeing from "@/assets/cat-hero-beauty-wellbeing.jpg";
 import heroRetailCustomerService from "@/assets/cat-hero-retail-customer-service.jpg";
 import heroAnimalCare from "@/assets/cat-hero-animal-care.jpg";
 
-import tileDrivingTheory from "@/assets/tiles/driving-theory.jpg";
-import tileHazardPerception from "@/assets/tiles/hazard-perception.jpg";
-import tileRoadSigns from "@/assets/tiles/road-signs.jpg";
-import tileMotorcycleTheory from "@/assets/tiles/motorcycle-theory.jpg";
-import tileLifeInTheUk from "@/assets/tiles/life-in-the-uk.jpg";
-import tileBritishCitizenship from "@/assets/tiles/british-citizenship.jpg";
-import tileUkLawsRights from "@/assets/tiles/uk-laws-rights.jpg";
-import tileUkGeography from "@/assets/tiles/uk-geography.jpg";
-
 export type Category = {
   slug: string;
   title: string;
@@ -41,7 +32,7 @@ export type Category = {
   icon: string;
   accent: "coral" | "gold" | "navy" | "success";
   heroImage: string;
-  topics: { slug: string; title: string; tileImage?: string }[];
+  topics: { slug: string; title: string }[];
 };
 
 export const categories: Category[] = [
@@ -55,10 +46,10 @@ export const categories: Category[] = [
     accent: "coral",
     heroImage: heroDriving,
     topics: [
-      { slug: "driving-theory", title: "Driving Theory Test", tileImage: tileDrivingTheory },
-      { slug: "hazard-perception", title: "Hazard Perception Test", tileImage: tileHazardPerception },
-      { slug: "road-signs", title: "Road Signs Test", tileImage: tileRoadSigns },
-      { slug: "motorcycle-theory", title: "Motorcycle Theory Test", tileImage: tileMotorcycleTheory },
+      { slug: "driving-theory", title: "Driving Theory Test" },
+      { slug: "hazard-perception", title: "Hazard Perception Test" },
+      { slug: "road-signs", title: "Road Signs Test" },
+      { slug: "motorcycle-theory", title: "Motorcycle Theory Test" },
     ],
   },
   {
@@ -71,10 +62,10 @@ export const categories: Category[] = [
     accent: "gold",
     heroImage: heroCitizenship,
     topics: [
-      { slug: "life-in-the-uk", title: "Life in the UK Test", tileImage: tileLifeInTheUk },
-      { slug: "british-citizenship", title: "British Citizenship Practice", tileImage: tileBritishCitizenship },
-      { slug: "uk-laws-rights", title: "UK Laws & Rights Quiz", tileImage: tileUkLawsRights },
-      { slug: "uk-geography", title: "UK Geography Test", tileImage: tileUkGeography },
+      { slug: "life-in-the-uk", title: "Life in the UK Test" },
+      { slug: "british-citizenship", title: "British Citizenship Practice" },
+      { slug: "uk-laws-rights", title: "UK Laws & Rights Quiz" },
+      { slug: "uk-geography", title: "UK Geography Test" },
     ],
   },
   {
