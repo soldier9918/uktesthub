@@ -51,10 +51,10 @@ export function SignFlipCard({ sign }: { sign: SignFlipCardData }) {
           <span className="text-[9px] font-semibold uppercase tracking-wider leading-none text-coral">
             What it means
           </span>
-          <h3 className="mt-0.5 text-[11px] font-bold leading-none text-black">
+          <h3 className="text-[11px] font-bold leading-none text-black">
             {sign.name}
           </h3>
-          <p className="mt-1 text-[10.5px] leading-[1.15] text-black">
+          <p className="text-[10.5px] leading-[1.15] text-black">
             {sign.meaning}
           </p>
           <span className="mt-1 inline-flex items-center gap-1 text-[9px] font-semibold uppercase tracking-wider leading-none text-black/60">
