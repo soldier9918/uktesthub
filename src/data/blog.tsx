@@ -52,6 +52,7 @@ import h_SafeguardingAwarenessPrivateHire from "@/assets/blog/safeguarding-aware
 import h_PrivateHireDriverBadgeRules from "@/assets/blog/private-hire-driver-badge-rules.jpg";
 import h_HowToBecomeAPrivateHireDriverLondon from "@/assets/blog/how-to-become-a-private-hire-driver-london.jpg";
 import { RoadSignsReferenceBody } from "./blog-content/road-signs-reference";
+import { ShowAndTellRoadSignsBody } from "./blog-content/show-and-tell-road-signs";
 
 export type BlogPost = {
   slug: string;
