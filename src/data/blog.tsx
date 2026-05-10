@@ -4116,6 +4116,22 @@ export const blogPosts: BlogPost[] = [
     ),
   },
 
+  {
+    slug: "show-and-tell-road-signs",
+    title: "Show & Tell — Interactive UK Road Signs Board",
+    description:
+      "Tap any UK road sign and the card flips to reveal its name and meaning. A free interactive flashcard board for the DVSA driving theory test.",
+    excerpt:
+      "An interactive flashcard board — tap a road sign and the card flips to show what it means. The fastest way to drill UK road signs.",
+    datePublished: "2026-05-10",
+    author: "UK Test Hub Team",
+    readingMinutes: 5,
+    category: "Driving",
+    tags: ["road signs", "interactive", "driving theory", "flashcards"],
+    hero: h_CompleteUkRoadSignsReference,
+    body: () => <ShowAndTellRoadSignsBody />,
+  },
+
 ];
 
 export const getPostBySlug = (slug: string) => blogPosts.find((p) => p.slug === slug);
