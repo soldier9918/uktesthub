@@ -52,6 +52,7 @@ import h_SafeguardingAwarenessPrivateHire from "@/assets/blog/safeguarding-aware
 import h_PrivateHireDriverBadgeRules from "@/assets/blog/private-hire-driver-badge-rules.jpg";
 import h_HowToBecomeAPrivateHireDriverLondon from "@/assets/blog/how-to-become-a-private-hire-driver-london.jpg";
 import { RoadSignsReferenceBody } from "./blog-content/road-signs-reference";
+import { ShowAndTellRoadSignsBody } from "./blog-content/show-and-tell-road-signs";
 
 export type BlogPost = {
   slug: string;
@@ -4113,6 +4114,22 @@ export const blogPosts: BlogPost[] = [
         </p>
       </>
     ),
+  },
+
+  {
+    slug: "show-and-tell-road-signs",
+    title: "Show & Tell — Interactive UK Road Signs Board",
+    description:
+      "Tap any UK road sign and the card flips to reveal its name and meaning. A free interactive flashcard board for the DVSA driving theory test.",
+    excerpt:
+      "An interactive flashcard board — tap a road sign and the card flips to show what it means. The fastest way to drill UK road signs.",
+    datePublished: "2026-05-10",
+    author: "UK Test Hub Team",
+    readingMinutes: 5,
+    category: "Driving",
+    tags: ["road signs", "interactive", "driving theory", "flashcards"],
+    hero: h_CompleteUkRoadSignsReference,
+    body: () => <ShowAndTellRoadSignsBody />,
   },
 
 ];
