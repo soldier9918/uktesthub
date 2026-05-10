@@ -87,4 +87,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Warning: low-flying aircraft or sudden aircraft noise ahead, usually near an airfield. Stay alert as the noise can be startling.",
   },
+  {
+    id: "13",
+    image: "/road-signs/show-and-tell/sign-13.png",
+    name: "Low-flying helicopters",
+    meaning:
+      "Warning: low-flying helicopters or sudden helicopter noise ahead. Be ready for unexpected noise that could distract you or other road users.",
+  },
+  {
+    id: "14",
+    image: "/road-signs/show-and-tell/sign-14.png",
+    name: "Falling or fallen rocks",
+    meaning:
+      "Warning: risk of rocks falling onto the road, or fallen rocks already on the carriageway. Reduce speed and watch the road surface ahead.",
+  },
+  {
+    id: "15",
+    image: "/road-signs/show-and-tell/sign-15.png",
+    name: "No vehicles",
+    meaning:
+      "Prohibition: no vehicles of any kind allowed (except pedal cycles being pushed). Often used for pedestrian-only areas.",
+  },
+  {
+    id: "16",
+    image: "/road-signs/show-and-tell/sign-16.png",
+    name: "Other danger",
+    meaning:
+      "Warning: a hazard ahead not covered by other signs. A plate beneath usually describes the danger — slow down and be ready to react.",
+  },
 ];
