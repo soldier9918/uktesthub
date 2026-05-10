@@ -45,20 +45,19 @@ export function SignFlipCard({ sign }: { sign: SignFlipCardData }) {
 
         {/* BACK */}
         <span
-          className="absolute inset-0 flex flex-col items-center overflow-hidden rounded-2xl border border-border bg-white p-3 text-center text-black shadow-elevated [backface-visibility:hidden]"
+          className="absolute inset-0 flex flex-col items-center overflow-hidden rounded-2xl border border-border bg-white px-2 py-2 text-center text-black shadow-elevated [backface-visibility:hidden]"
           style={{ transform: "rotateY(180deg)" }}
         >
-          <span className="text-[10px] font-semibold uppercase tracking-wider text-coral">
+          <span className="text-[9px] font-semibold uppercase tracking-wider leading-none text-coral">
             What it means
           </span>
-          <h3 className="mt-1 font-display text-[13px] font-bold leading-none text-black">
+          <h3 className="mt-0.5 text-[11px] font-bold leading-none text-black">
             {sign.name}
           </h3>
-          <div className="mt-1.5 h-0.5 w-6 rounded-full bg-coral" />
-          <p className="mt-1.5 text-[11px] leading-snug text-black">
+          <p className="mt-1 text-[10.5px] leading-[1.15] text-black">
             {sign.meaning}
           </p>
-          <span className="mt-auto inline-flex items-center gap-1 text-[10px] font-semibold uppercase tracking-wider text-black/60">
+          <span className="mt-auto inline-flex items-center gap-1 pt-1 text-[9px] font-semibold uppercase tracking-wider leading-none text-black/60">
             <RotateCw className="h-3 w-3" /> Tap to flip back
           </span>
         </span>
