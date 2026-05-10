@@ -115,4 +115,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Warning: a hazard ahead not covered by other signs. A plate beneath usually describes the danger — slow down and be ready to react.",
   },
+  {
+    id: "17",
+    image: "/road-signs/show-and-tell/sign-17.png",
+    name: "Fire station ahead",
+    meaning:
+      "Plate with red lights at a fire station: stop when the lights show, as fire engines may be leaving to attend an emergency.",
+  },
+  {
+    id: "18",
+    image: "/road-signs/show-and-tell/sign-18.png",
+    name: "Side winds",
+    meaning:
+      "Warning: strong crosswinds likely on the road ahead, often on exposed bridges or open country. Grip the wheel firmly and reduce speed.",
+  },
+  {
+    id: "19",
+    image: "/road-signs/show-and-tell/sign-19.png",
+    name: "Military vehicles",
+    meaning:
+      "Warning: slow-moving military vehicles, such as tanks, may be on or crossing the road ahead. Be ready to slow down or stop.",
+  },
+  {
+    id: "20",
+    image: "/road-signs/show-and-tell/sign-20.png",
+    name: "Steep hill downwards",
+    meaning:
+      "Warning: steep descent ahead. Select a low gear before the hill to control speed and avoid overusing the brakes.",
+  },
 ];
