@@ -2411,4 +2411,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Brake lights show that the driver is braking. Keep a safe distance behind so you can react if the vehicle slows or stops.",
   },
+  {
+    id: "345",
+    image: "/road-signs/show-and-tell/sign-345.png",
+    name: "Flashing amber lights",
+    meaning:
+      "Flashing amber lights warn of a hazard ahead. Examples: Belisha beacons at a zebra crossing or amber lights flashing on a school bus or hazard sign.",
+  },
+  {
+    id: "346",
+    image: "/road-signs/show-and-tell/sign-346.png",
+    name: "Flashing amber lights with hazard sign (cattle)",
+    meaning:
+      "Flashing amber lights mounted above a warning sign (e.g. cattle crossing) — they activate when the hazard is present. Slow down and be ready to stop.",
+  },
+  {
+    id: "347",
+    image: "/road-signs/show-and-tell/sign-347.png",
+    name: "Pedestrian signal — red",
+    meaning:
+      "Red figure at a pedestrian crossing — do not start to cross. Wait for the green figure to show.",
+  },
+  {
+    id: "348",
+    image: "/road-signs/show-and-tell/sign-348.png",
+    name: "Crossroads ahead",
+    meaning:
+      "Warning of a crossroads ahead. Watch for traffic emerging from or turning into the side roads.",
+  },
 ];
