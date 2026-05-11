@@ -1347,4 +1347,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Diamond placard for class 7 radioactive substances. Displayed on vehicles carrying radioactive materials.",
   },
+  {
+    id: "193",
+    image: "/road-signs/show-and-tell/sign-193.png",
+    name: "Compressed gas",
+    meaning:
+      "Diamond placard for class 2 compressed gases. Displayed on vehicles carrying gases under pressure, which may be flammable, toxic or asphyxiating.",
+  },
+  {
+    id: "194",
+    image: "/road-signs/show-and-tell/sign-194.png",
+    name: "Corrosive",
+    meaning:
+      "Diamond placard for class 8 corrosive substances. Displayed on vehicles carrying materials that can damage skin, metal or other surfaces on contact.",
+  },
+  {
+    id: "195",
+    image: "/road-signs/show-and-tell/sign-195.png",
+    name: "Oxidizing agent",
+    meaning:
+      "Diamond placard for class 5.1 oxidizing substances. Displayed on vehicles carrying materials that can intensify a fire by releasing oxygen.",
+  },
+  {
+    id: "196",
+    image: "/road-signs/show-and-tell/sign-196.png",
+    name: "Projection markers",
+    meaning:
+      "Red and white striped end markers fitted to vehicles carrying loads that project beyond the front or rear, to make the projecting load more visible to other road users.",
+  },
 ];
