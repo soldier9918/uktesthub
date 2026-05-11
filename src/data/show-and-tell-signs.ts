@@ -1879,4 +1879,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Hand-held 'STOP/WORKS' sign used by a road worker to control traffic at road works. When the STOP face is shown you must stop until the sign is turned to allow you to proceed.",
   },
+  {
+    id: "269",
+    image: "/road-signs/show-and-tell/sign-269.png",
+    name: "New speed limit ahead",
+    meaning:
+      "Temporary plate warning that a new speed limit (e.g. 30 mph) is now in force on this road. Adjust your speed to comply with the new limit.",
+  },
+  {
+    id: "270",
+    image: "/road-signs/show-and-tell/sign-270.png",
+    name: "Traffic cone",
+    meaning:
+      "Red and white traffic cone used to mark off lanes, road works or hazards. Do not drive over or between cones unless directed.",
+  },
+  {
+    id: "271",
+    image: "/road-signs/show-and-tell/sign-271.png",
+    name: "Traffic delineator post",
+    meaning:
+      "Red and white delineator (bollard) used to separate lanes or guide traffic around hazards and road works. Keep to your side of the post.",
+  },
+  {
+    id: "272",
+    image: "/road-signs/show-and-tell/sign-272.png",
+    name: "Sharp deviation of route (chevrons)",
+    meaning:
+      "Red and white chevron arrows indicate a sharp change in road direction — follow the direction of the arrows around the bend or hazard.",
+  },
 ];
