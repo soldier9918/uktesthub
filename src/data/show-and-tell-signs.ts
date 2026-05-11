@@ -2131,4 +2131,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Advance warning that a new roundabout has been built on this road. Be ready to slow down and give way to traffic from the right.",
   },
+  {
+    id: "305",
+    image: "/road-signs/show-and-tell/sign-305.png",
+    name: "Crossing not in use",
+    meaning:
+      "Indicates that a pedestrian crossing is temporarily out of use, often during road works. Pedestrians should use an alternative crossing point.",
+  },
+  {
+    id: "306",
+    image: "/road-signs/show-and-tell/sign-306.png",
+    name: "Pedestrians look left",
+    meaning:
+      "Reminds pedestrians to look left for approaching traffic before crossing — used where the normal direction of traffic flow has been altered.",
+  },
+  {
+    id: "307",
+    image: "/road-signs/show-and-tell/sign-307.png",
+    name: "Pedestrians — direction to crossing",
+    meaning:
+      "Directs pedestrians to a temporary crossing point or footway in the direction of the arrow, typically around road works.",
+  },
+  {
+    id: "308",
+    image: "/road-signs/show-and-tell/sign-308.png",
+    name: "Traffic under signal control",
+    meaning:
+      "Warns that traffic in both directions is being controlled by temporary traffic signals. Obey the signals and be ready to stop.",
+  },
 ];
