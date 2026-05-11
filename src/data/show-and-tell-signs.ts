@@ -1235,4 +1235,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "No vehicles taller than the height shown (here 14 ft 6 in) permitted beyond this sign — check overall height including any load.",
   },
+  {
+    id: "177",
+    image: "/road-signs/show-and-tell/sign-177.png",
+    name: "No overtaking",
+    meaning:
+      "Overtaking is prohibited beyond this sign until the restriction ends. You must not pass another moving motor vehicle.",
+  },
+  {
+    id: "178",
+    image: "/road-signs/show-and-tell/sign-178.png",
+    name: "Stop — police",
+    meaning:
+      "Manually operated temporary STOP sign used by the police. You must stop when shown this sign and only proceed when directed.",
+  },
+  {
+    id: "179",
+    image: "/road-signs/show-and-tell/sign-179.png",
+    name: "School crossing patrol",
+    meaning:
+      "Manually operated STOP sign used by a school crossing patrol. You must stop when shown this sign and wait until the patrol has cleared the crossing.",
+  },
+  {
+    id: "180",
+    image: "/road-signs/show-and-tell/sign-180.png",
+    name: "No stopping (clearway)",
+    meaning:
+      "Clearway — no stopping at any time, even briefly to set down or pick up passengers, except in an emergency.",
+  },
 ];
