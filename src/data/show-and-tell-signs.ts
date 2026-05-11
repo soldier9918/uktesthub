@@ -1123,4 +1123,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Pedestrian zone with no motor vehicles except for loading. The yellow plate shows additional no-waiting restrictions (here at any time).",
   },
+  {
+    id: "161",
+    image: "/road-signs/show-and-tell/sign-161.png",
+    name: "End of pedestrian zone",
+    meaning:
+      "End of the pedestrian zone — the vehicle restrictions of the pedestrian zone you are leaving no longer apply beyond this sign.",
+  },
+  {
+    id: "162",
+    image: "/road-signs/show-and-tell/sign-162.png",
+    name: "No motor vehicles",
+    meaning:
+      "No motor vehicles permitted beyond this sign. Pedal cycles and other non-motorised users may still pass.",
+  },
+  {
+    id: "163",
+    image: "/road-signs/show-and-tell/sign-163.png",
+    name: "No cars",
+    meaning:
+      "No cars permitted beyond this sign. Other vehicles such as motorcycles, buses or goods vehicles may still pass unless restricted by other signs.",
+  },
+  {
+    id: "164",
+    image: "/road-signs/show-and-tell/sign-164.png",
+    name: "No motorcycles",
+    meaning:
+      "No solo motorcycles permitted beyond this sign. Other vehicles may still pass unless restricted by other signs.",
+  },
 ];
