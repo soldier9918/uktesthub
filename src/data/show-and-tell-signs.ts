@@ -143,28 +143,4 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Warning: steep descent ahead. Select a low gear before the hill to control speed and avoid overusing the brakes.",
   },
-  {
-    id: "21",
-    image: "/road-signs/show-and-tell/sign-21.png",
-    name: "Primary route direction sign",
-    meaning: "",
-  },
-  {
-    id: "22",
-    image: "/road-signs/show-and-tell/sign-22.png",
-    name: "Advance direction sign (primary route)",
-    meaning: "",
-  },
-  {
-    id: "23",
-    image: "/road-signs/show-and-tell/sign-23.png",
-    name: "Motorway junction sign",
-    meaning: "",
-  },
-  {
-    id: "24",
-    image: "/road-signs/show-and-tell/sign-24.png",
-    name: "Primary route roundabout sign",
-    meaning: "",
-  },
 ];
