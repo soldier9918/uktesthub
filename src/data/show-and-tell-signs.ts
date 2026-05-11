@@ -2495,4 +2495,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Warning of a roundabout ahead. Slow down, look for traffic coming from the right, and be ready to give way.",
   },
+  {
+    id: "357",
+    image: "/road-signs/show-and-tell/sign-357.png",
+    name: "Sharp bend to the right",
+    meaning:
+      "Warning of a sharp bend to the right ahead. Reduce speed before the bend and stay well to the left.",
+  },
+  {
+    id: "358",
+    image: "/road-signs/show-and-tell/sign-358.png",
+    name: "Double bend, first to the right",
+    meaning:
+      "Warning of two bends ahead, the first to the right. Reduce speed and be ready for the second bend immediately after.",
+  },
+  {
+    id: "359",
+    image: "/road-signs/show-and-tell/sign-359.png",
+    name: "Reduce speed now",
+    meaning:
+      "Plate used with a hazard warning sign telling you to reduce your speed straight away because of a hazard close ahead.",
+  },
+  {
+    id: "360",
+    image: "/road-signs/show-and-tell/sign-360.png",
+    name: "Bend to the right",
+    meaning:
+      "Warning of a bend to the right ahead. Adjust your speed to take the bend safely.",
+  },
 ];
