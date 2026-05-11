@@ -2271,4 +2271,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "At a level crossing, drivers of long or low vehicles must phone the signal operator from the railway telephone before crossing to check it is safe.",
   },
+  {
+    id: "325",
+    image: "/road-signs/show-and-tell/sign-325.png",
+    name: "Drivers of large or slow vehicles — phone for permission",
+    meaning:
+      "At a level crossing, drivers of large or slow vehicles must phone the signaller and get permission to cross. Large means over 61'6\" long, 9'6\" wide or 44 tonnes; slow means 5 mph or less.",
+  },
+  {
+    id: "326",
+    image: "/road-signs/show-and-tell/sign-326.png",
+    name: "Railway telephone",
+    meaning:
+      "Indicates the position of a railway telephone at a level crossing — used to contact the signal operator before crossing or in an emergency.",
+  },
+  {
+    id: "327",
+    image: "/road-signs/show-and-tell/sign-327.png",
+    name: "Countdown markers to level crossing",
+    meaning:
+      "Countdown markers (three, two, one bar) showing the distance to a level crossing ahead.",
+  },
+  {
+    id: "328",
+    image: "/road-signs/show-and-tell/sign-328.png",
+    name: "New level crossing control ahead",
+    meaning:
+      "Warning that the type of control at a level crossing ahead has been changed — be alert for new signals, barriers or signs.",
+  },
 ];
