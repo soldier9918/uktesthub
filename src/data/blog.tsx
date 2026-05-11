@@ -4129,7 +4129,7 @@ export const blogPosts: BlogPost[] = [
     readingMinutes: 5,
     category: "Driving",
     tags: ["road signs", "interactive", "driving theory", "flashcards"],
-    hero: h_CompleteUkRoadSignsReference,
+    hero: h_ShowAndTellRoadSigns,
     body: () => <ShowAndTellRoadSignsBody />,
   },
 
