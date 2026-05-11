@@ -147,28 +147,24 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     id: "21",
     image: "/road-signs/show-and-tell/sign-21.png",
     name: "Primary route direction sign",
-    meaning:
-      "Green direction sign used on primary routes (non-motorway A-roads). Place names in white, route numbers in yellow, motorway numbers in white on a blue patch.",
+    meaning: "",
   },
   {
     id: "22",
     image: "/road-signs/show-and-tell/sign-22.png",
     name: "Advance direction sign (primary route)",
-    meaning:
-      "Green map-type sign giving advance warning of a junction on a primary route. Shows the layout of the road ahead and which exits lead where.",
+    meaning: "",
   },
   {
     id: "23",
     image: "/road-signs/show-and-tell/sign-23.png",
     name: "Motorway junction sign",
-    meaning:
-      "Blue motorway sign giving advance notice of a junction. Motorway route numbers are shown in white on the blue background.",
+    meaning: "",
   },
   {
     id: "24",
     image: "/road-signs/show-and-tell/sign-24.png",
     name: "Primary route roundabout sign",
-    meaning:
-      "Green advance sign showing the layout of a roundabout on a primary route, with the destinations and route numbers reached by each exit.",
+    meaning: "",
   },
 ];
