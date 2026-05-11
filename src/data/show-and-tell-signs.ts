@@ -1403,4 +1403,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Yellow criss-cross road marking at a junction. You must not enter the box unless your exit is clear, except when turning right and only blocked by oncoming traffic or other right-turning vehicles.",
   },
+  {
+    id: "201",
+    image: "/road-signs/show-and-tell/sign-201.png",
+    name: "Lane line",
+    meaning:
+      "Short broken white line across the carriageway dividing traffic lanes travelling in the same direction. You may cross it when safe to change lanes.",
+  },
+  {
+    id: "202",
+    image: "/road-signs/show-and-tell/sign-202.png",
+    name: "Double white lines (both solid)",
+    meaning:
+      "Two solid white lines along the centre of the road. You must not cross or straddle them except to turn into a side road or property, pass a stationary vehicle, or overtake a pedal cycle, horse or road maintenance vehicle travelling at 10 mph or less.",
+  },
+  {
+    id: "203",
+    image: "/road-signs/show-and-tell/sign-203.png",
+    name: "Lane change arrows",
+    meaning:
+      "Road marking with arrows indicating that traffic must move into the lane shown — used where lanes merge or a lane is closed ahead. Move over in good time.",
+  },
+  {
+    id: "204",
+    image: "/road-signs/show-and-tell/sign-204.png",
+    name: "Edge of carriageway line",
+    meaning:
+      "Continuous solid white line marking the edge of the carriageway. It helps you judge the road's edge in poor visibility and should not normally be crossed.",
+  },
 ];
