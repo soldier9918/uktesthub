@@ -1207,4 +1207,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Pedestrians are prohibited beyond this sign — typically used at the entrance to motorways, tunnels and other roads where walking is not permitted.",
   },
+  {
+    id: "173",
+    image: "/road-signs/show-and-tell/sign-173.png",
+    name: "Weak bridge",
+    meaning:
+      "Weak bridge ahead — vehicles over the maximum gross weight shown (here 18 tonnes mgw) must not cross.",
+  },
+  {
+    id: "174",
+    image: "/road-signs/show-and-tell/sign-174.png",
+    name: "Maximum vehicle width",
+    meaning:
+      "No vehicles wider than the width shown (here 6 ft 6 in) permitted beyond this sign.",
+  },
+  {
+    id: "175",
+    image: "/road-signs/show-and-tell/sign-175.png",
+    name: "Maximum vehicle length",
+    meaning:
+      "No vehicles longer than the length shown (here 32 ft 6 in) permitted beyond this sign.",
+  },
+  {
+    id: "176",
+    image: "/road-signs/show-and-tell/sign-176.png",
+    name: "Maximum vehicle height",
+    meaning:
+      "No vehicles taller than the height shown (here 14 ft 6 in) permitted beyond this sign — check overall height including any load.",
+  },
 ];
