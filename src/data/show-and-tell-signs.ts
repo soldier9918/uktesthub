@@ -1851,4 +1851,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Red triangular warning sign showing a workman digging — road works ahead. Slow down, watch for workers and obey any temporary signs or speed limits.",
   },
+  {
+    id: "265",
+    image: "/road-signs/show-and-tell/sign-265.png",
+    name: "Loose chippings",
+    meaning:
+      "Warning: loose chippings on the road surface ahead. Reduce speed to avoid throwing stones at other vehicles or losing grip, especially on bends.",
+  },
+  {
+    id: "266",
+    image: "/road-signs/show-and-tell/sign-266.png",
+    name: "Traffic signals not in use",
+    meaning:
+      "Traffic light symbol with a diagonal line through it. The signals ahead are out of order — proceed with caution and treat the junction as an unmarked one, giving way as needed.",
+  },
+  {
+    id: "267",
+    image: "/road-signs/show-and-tell/sign-267.png",
+    name: "Sign not in use",
+    meaning:
+      "A 'SIGN NOT IN USE' plate covers or accompanies a sign that is temporarily not applicable, often during road works. Ignore the covered sign until the plate is removed.",
+  },
+  {
+    id: "268",
+    image: "/road-signs/show-and-tell/sign-268.png",
+    name: "Stop / Works (manually operated)",
+    meaning:
+      "Hand-held 'STOP/WORKS' sign used by a road worker to control traffic at road works. When the STOP face is shown you must stop until the sign is turned to allow you to proceed.",
+  },
 ];
