@@ -1291,4 +1291,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Motor vehicles, cyclists, animals and pedestrians are prohibited from using the mown verge — keep to the carriageway or footway.",
   },
+  {
+    id: "185",
+    image: "/road-signs/show-and-tell/sign-185.png",
+    name: "No cycling",
+    meaning:
+      "No pedal cycles permitted beyond this sign. Cyclists must dismount or take an alternative route.",
+  },
+  {
+    id: "186",
+    image: "/road-signs/show-and-tell/sign-186.png",
+    name: "No buses",
+    meaning:
+      "No buses (vehicles with more than 8 passenger seats) permitted beyond this sign.",
+  },
+  {
+    id: "187",
+    image: "/road-signs/show-and-tell/sign-187.png",
+    name: "Long vehicle markings",
+    meaning:
+      "Rear markings shown on long vehicles to make them more visible. The red and yellow chevrons are fitted to vehicles over 13 metres long, with 'LONG VEHICLE' plates required on certain combinations.",
+  },
+  {
+    id: "188",
+    image: "/road-signs/show-and-tell/sign-188.png",
+    name: "Hazard warning plate (HazChem)",
+    meaning:
+      "Plate displayed on vehicles carrying dangerous goods. The codes show the substance, emergency action required and a contact number for the emergency services.",
+  },
 ];
