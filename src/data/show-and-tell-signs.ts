@@ -2019,4 +2019,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "While being led by the convoy (pilot) vehicle through road works, you must not overtake it or any vehicle in the convoy.",
   },
+  {
+    id: "289",
+    image: "/road-signs/show-and-tell/sign-289.png",
+    name: "Narrow lanes ahead with width restriction",
+    meaning:
+      "Advance sign warning of narrow lanes through road works, with a width limit applying to one lane (e.g. 6'6\"). Wider vehicles must use the other lane(s) and follow the route shown.",
+  },
+  {
+    id: "290",
+    image: "/road-signs/show-and-tell/sign-290.png",
+    name: "Lane closed ahead",
+    meaning:
+      "Diagram showing that a lane is closed ahead (red bars). Move into an open lane in good time before the closure.",
+  },
+  {
+    id: "291",
+    image: "/road-signs/show-and-tell/sign-291.png",
+    name: "Lane crossover ahead",
+    meaning:
+      "Warning that traffic is being diverted across to the opposite carriageway through a contraflow. Reduce speed and follow the lane markings carefully.",
+  },
+  {
+    id: "292",
+    image: "/road-signs/show-and-tell/sign-292.png",
+    name: "Move to adjacent lane",
+    meaning:
+      "Instruction to move from your current lane into the adjacent lane shown by the arrow because of road works ahead.",
+  },
 ];
