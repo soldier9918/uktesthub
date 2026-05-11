@@ -535,4 +535,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Direction sign to a hospital that does not have an Accident and Emergency department.",
   },
+  {
+    id: "77",
+    image: "/road-signs/show-and-tell/sign-77.png",
+    name: "Hospital with A&E (not 24 hrs)",
+    meaning:
+      "Direction sign to a hospital with an Accident and Emergency department that is not open 24 hours a day.",
+  },
+  {
+    id: "78",
+    image: "/road-signs/show-and-tell/sign-78.png",
+    name: "Police speed check area",
+    meaning:
+      "Warning that police speed-check equipment is in use in the area ahead. Check your speed and keep within the limit.",
+  },
+  {
+    id: "79",
+    image: "/road-signs/show-and-tell/sign-79.png",
+    name: "Entrance (IN)",
+    meaning:
+      "Entrance to a car park or other facility — vehicles enter here.",
+  },
+  {
+    id: "80",
+    image: "/road-signs/show-and-tell/sign-80.png",
+    name: "Exit (OUT)",
+    meaning:
+      "Exit from a car park or other facility — vehicles leave here.",
+  },
 ];
