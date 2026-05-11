@@ -255,4 +255,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Parking direction sign showing the routes to long-stay and short-stay car parks.",
   },
+  {
+    id: "37",
+    image: "/road-signs/show-and-tell/sign-37.png",
+    name: "Lane open (green arrow)",
+    meaning:
+      "Overhead lane signal: green downward arrow means the lane below is open and you may use it.",
+  },
+  {
+    id: "38",
+    image: "/road-signs/show-and-tell/sign-38.png",
+    name: "Lane closed (red X)",
+    meaning:
+      "Overhead lane signal: red X means the lane below is closed. Move out of it as soon as it is safe.",
+  },
+  {
+    id: "39",
+    image: "/road-signs/show-and-tell/sign-39.png",
+    name: "Move to adjacent lane",
+    meaning:
+      "Overhead signal: move into the lane indicated by the diagonal white arrow because the current lane is closing ahead.",
+  },
+  {
+    id: "40",
+    image: "/road-signs/show-and-tell/sign-40.png",
+    name: "Lorry route",
+    meaning:
+      "Direction sign showing the route lorries should follow to reach numbered roads (here A33 and M1).",
+  },
 ];
