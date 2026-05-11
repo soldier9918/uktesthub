@@ -1011,4 +1011,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "End of the goods vehicle restricted zone — the loading restrictions for vehicles over the stated weight no longer apply beyond this sign.",
   },
+  {
+    id: "145",
+    image: "/road-signs/show-and-tell/sign-145.png",
+    name: "Parking partly on verge or footway",
+    meaning:
+      "Vehicles may park partly on the verge or footway in the area shown. Take care not to obstruct pedestrians.",
+  },
+  {
+    id: "146",
+    image: "/road-signs/show-and-tell/sign-146.png",
+    name: "End of partly on verge parking",
+    meaning:
+      "End of the area where vehicles may park partly on the verge or footway. Beyond this point parking partly on the verge is not permitted.",
+  },
+  {
+    id: "147",
+    image: "/road-signs/show-and-tell/sign-147.png",
+    name: "Parking wholly on verge or footway",
+    meaning:
+      "Vehicles may park wholly on the verge or footway in the area shown. Avoid blocking pedestrian access.",
+  },
+  {
+    id: "148",
+    image: "/road-signs/show-and-tell/sign-148.png",
+    name: "End of wholly on verge parking",
+    meaning:
+      "End of the area where vehicles may park wholly on the verge or footway. Beyond this point parking on the verge or footway is not permitted.",
+  },
 ];
