@@ -2439,4 +2439,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Warning of a crossroads ahead. Watch for traffic emerging from or turning into the side roads.",
   },
+  {
+    id: "349",
+    image: "/road-signs/show-and-tell/sign-349.png",
+    name: "T-junction with priority over vehicles from the right",
+    meaning:
+      "Warning of a T-junction ahead where the side road joins from the left. The black bar shows the priority road.",
+  },
+  {
+    id: "350",
+    image: "/road-signs/show-and-tell/sign-350.png",
+    name: "Stop ahead",
+    meaning:
+      "Advance warning that a STOP sign and stop line are ahead at the distance shown. Be ready to stop and give way.",
+  },
+  {
+    id: "351",
+    image: "/road-signs/show-and-tell/sign-351.png",
+    name: "Give way ahead",
+    meaning:
+      "Advance warning that a GIVE WAY sign is ahead at the distance shown. Be ready to give way to traffic on the major road.",
+  },
+  {
+    id: "352",
+    image: "/road-signs/show-and-tell/sign-352.png",
+    name: "Side road on the right",
+    meaning:
+      "Warning of a side road joining the main road on the right. Watch for traffic emerging or turning across your path.",
+  },
 ];
