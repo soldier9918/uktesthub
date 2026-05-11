@@ -1543,4 +1543,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "A broken white box marked on a Red Route shows where parking is permitted. The accompanying sign states the days, times and maximum stay allowed.",
   },
+  {
+    id: "221",
+    image: "/road-signs/show-and-tell/sign-221.png",
+    name: "Red route loading bay",
+    meaning:
+      "A broken red box on a Red Route marks a bay where loading and unloading is allowed during the times shown on the sign. No other stopping is permitted.",
+  },
+  {
+    id: "222",
+    image: "/road-signs/show-and-tell/sign-222.png",
+    name: "Bus stop clearway",
+    meaning:
+      "Yellow 'BUS STOP' road marking inside a bus stop box. Other vehicles must not stop within the marked area during its hours of operation.",
+  },
+  {
+    id: "223",
+    image: "/road-signs/show-and-tell/sign-223.png",
+    name: "Keep clear markings at side road",
+    meaning:
+      "White 'keep clear' markings across a side-road entrance show that you must not stop or park on this area, keeping the access free for turning vehicles.",
+  },
+  {
+    id: "224",
+    image: "/road-signs/show-and-tell/sign-224.png",
+    name: "Centre island / hazard marker",
+    meaning:
+      "Vertical yellow markings on a kerb or refuge highlight a traffic island or central hazard in the road. Pass with care, keeping to the correct side.",
+  },
 ];
