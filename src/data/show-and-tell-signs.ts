@@ -731,4 +731,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "The road ahead becomes a dual carriageway with a central reservation separating the two directions of traffic.",
   },
+  {
+    id: "105",
+    image: "/road-signs/show-and-tell/sign-105.png",
+    name: "Dual carriageway for ½ mile",
+    meaning:
+      "Advance information that a dual carriageway begins in half a mile — be ready for two lanes in your direction with a central reservation.",
+  },
+  {
+    id: "106",
+    image: "/road-signs/show-and-tell/sign-106.png",
+    name: "Single track road with passing places",
+    meaning:
+      "The road ahead is single track. Use the marked passing places to let oncoming vehicles through or to allow following traffic to overtake.",
+  },
+  {
+    id: "107",
+    image: "/road-signs/show-and-tell/sign-107.png",
+    name: "Lane gained on the left",
+    meaning:
+      "An additional lane is added on the left ahead — traffic in your lane continues; the new lane provides extra capacity.",
+  },
+  {
+    id: "108",
+    image: "/road-signs/show-and-tell/sign-108.png",
+    name: "Lane closed ahead (right-hand lane)",
+    meaning:
+      "The right-hand lane is closed ahead. Move into one of the open lanes in good time.",
+  },
 ];
