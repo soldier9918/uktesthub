@@ -2663,4 +2663,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Warning of a school crossing patrol ahead. Slow down and be ready to stop when the patrol shows the STOP sign.",
   },
+  {
+    id: "381",
+    image: "/road-signs/show-and-tell/sign-381.png",
+    name: "Cattle",
+    meaning:
+      "Warning that cattle may be on or crossing the road ahead. Slow down and be ready to stop — do not sound your horn or rev your engine.",
+  },
+  {
+    id: "382",
+    image: "/road-signs/show-and-tell/sign-382.png",
+    name: "Sheep",
+    meaning:
+      "Warning that sheep may be on or crossing the road ahead. Slow down and be ready to stop, especially in open countryside.",
+  },
+  {
+    id: "383",
+    image: "/road-signs/show-and-tell/sign-383.png",
+    name: "Wild horses or ponies",
+    meaning:
+      "Warning that wild horses or ponies may be on or crossing the road ahead. Slow down and pass with care.",
+  },
+  {
+    id: "384",
+    image: "/road-signs/show-and-tell/sign-384.png",
+    name: "Accompanied horses or ponies",
+    meaning:
+      "Warning of accompanied horses or ponies on the road ahead. Slow down, pass slowly and give them plenty of room.",
+  },
 ];
