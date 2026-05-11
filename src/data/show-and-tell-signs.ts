@@ -1515,4 +1515,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Double yellow lines along the kerb mean no waiting at any time. You may stop only briefly to set down or pick up passengers, unless additional kerb marks ban loading.",
   },
+  {
+    id: "217",
+    image: "/road-signs/show-and-tell/sign-217.png",
+    name: "Edge of carriageway marking",
+    meaning:
+      "A short yellow mark on the kerb or edge of the carriageway indicates loading restrictions in force at the times shown on nearby plates.",
+  },
+  {
+    id: "218",
+    image: "/road-signs/show-and-tell/sign-218.png",
+    name: "Red route — double red lines",
+    meaning:
+      "Double red lines along a Red Route mean no stopping at any time, for any reason — not even to pick up or set down passengers, except for licensed taxis or Blue Badge holders where signed.",
+  },
+  {
+    id: "219",
+    image: "/road-signs/show-and-tell/sign-219.png",
+    name: "Red route — single red line",
+    meaning:
+      "A single red line along a Red Route means no stopping during the times shown on nearby signs. Outside those hours normal parking rules apply.",
+  },
+  {
+    id: "220",
+    image: "/road-signs/show-and-tell/sign-220.png",
+    name: "Red route parking bay",
+    meaning:
+      "A broken white box marked on a Red Route shows where parking is permitted. The accompanying sign states the days, times and maximum stay allowed.",
+  },
 ];
