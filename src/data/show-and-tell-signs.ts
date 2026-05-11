@@ -1991,4 +1991,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Warning that traffic ahead is being led through road works in a convoy behind a pilot vehicle. Be ready to stop and wait, then follow the convoy at the controlled speed.",
   },
+  {
+    id: "285",
+    image: "/road-signs/show-and-tell/sign-285.png",
+    name: "Convoy system to protect workforce",
+    meaning:
+      "Explains that a convoy system is being used to protect road workers. Follow the pilot vehicle and obey signals — do not overtake.",
+  },
+  {
+    id: "286",
+    image: "/road-signs/show-and-tell/sign-286.png",
+    name: "When red light shows, wait here for convoy vehicle",
+    meaning:
+      "Stop at this point when the red light is showing and wait for the convoy (pilot) vehicle to lead you through the works.",
+  },
+  {
+    id: "287",
+    image: "/road-signs/show-and-tell/sign-287.png",
+    name: "When green light shows, follow convoy vehicle",
+    meaning:
+      "When the green light shows, move off and follow the convoy (pilot) vehicle through the road works at the speed it sets.",
+  },
+  {
+    id: "288",
+    image: "/road-signs/show-and-tell/sign-288.png",
+    name: "Convoy vehicle — no overtaking",
+    meaning:
+      "While being led by the convoy (pilot) vehicle through road works, you must not overtake it or any vehicle in the convoy.",
+  },
 ];
