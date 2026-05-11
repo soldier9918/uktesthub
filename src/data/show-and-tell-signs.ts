@@ -563,4 +563,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Exit from a car park or other facility — vehicles leave here.",
   },
+  {
+    id: "81",
+    image: "/road-signs/show-and-tell/sign-81.png",
+    name: "No exit",
+    meaning:
+      "There is no exit from the road or area beyond this sign — used to warn drivers that the route is a dead end.",
+  },
+  {
+    id: "82",
+    image: "/road-signs/show-and-tell/sign-82.png",
+    name: "No entry (information)",
+    meaning:
+      "Informational sign indicating that there is no entry from this point — vehicles should not enter.",
+  },
+  {
+    id: "83",
+    image: "/road-signs/show-and-tell/sign-83.png",
+    name: "Tourist information point",
+    meaning:
+      "Direction sign to a tourist information point where visitors can get maps, leaflets and local advice.",
+  },
+  {
+    id: "84",
+    image: "/road-signs/show-and-tell/sign-84.png",
+    name: "Vehicle testing station",
+    meaning:
+      "Direction sign to a vehicle testing (MOT) station authorised to test vehicles for roadworthiness.",
+  },
 ];
