@@ -1179,4 +1179,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Horse-drawn vehicles are prohibited beyond this sign.",
   },
+  {
+    id: "169",
+    image: "/road-signs/show-and-tell/sign-169.png",
+    name: "No ridden or accompanied horses",
+    meaning:
+      "Ridden or accompanied horses are prohibited beyond this sign.",
+  },
+  {
+    id: "170",
+    image: "/road-signs/show-and-tell/sign-170.png",
+    name: "No vehicles towing a caravan or trailer",
+    meaning:
+      "Vehicles towing a caravan or trailer are prohibited beyond this sign.",
+  },
+  {
+    id: "171",
+    image: "/road-signs/show-and-tell/sign-171.png",
+    name: "No vehicles carrying explosives",
+    meaning:
+      "Vehicles carrying explosives are prohibited beyond this sign.",
+  },
+  {
+    id: "172",
+    image: "/road-signs/show-and-tell/sign-172.png",
+    name: "No pedestrians",
+    meaning:
+      "Pedestrians are prohibited beyond this sign — typically used at the entrance to motorways, tunnels and other roads where walking is not permitted.",
+  },
 ];
