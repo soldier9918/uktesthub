@@ -703,4 +703,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Road narrows ahead with two-way traffic. You must give priority to oncoming vehicles (red arrow) before proceeding.",
   },
+  {
+    id: "101",
+    image: "/road-signs/show-and-tell/sign-101.png",
+    name: "No through road",
+    meaning:
+      "The road ahead is a dead end (cul-de-sac) with no exit for vehicles. You'll need to turn around to leave.",
+  },
+  {
+    id: "102",
+    image: "/road-signs/show-and-tell/sign-102.png",
+    name: "No through road on side road",
+    meaning:
+      "The side road branching off ahead is a dead end with no through route for vehicles.",
+  },
+  {
+    id: "103",
+    image: "/road-signs/show-and-tell/sign-103.png",
+    name: "Escape lane ahead",
+    meaning:
+      "An escape lane (with a gravel or sand arrester bed) is ahead — for vehicles that have lost their brakes on a steep downhill.",
+  },
+  {
+    id: "104",
+    image: "/road-signs/show-and-tell/sign-104.png",
+    name: "Dual carriageway ahead",
+    meaning:
+      "The road ahead becomes a dual carriageway with a central reservation separating the two directions of traffic.",
+  },
 ];
