@@ -983,4 +983,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Entry to a controlled parking zone — waiting restrictions apply during the times shown. Parking is only permitted in marked bays.",
   },
+  {
+    id: "141",
+    image: "/road-signs/show-and-tell/sign-141.png",
+    name: "Voucher parking zone",
+    meaning:
+      "Entry to a voucher parking zone — during the times shown (Mon–Sat 9 am–6 pm) parking is permitted only with a valid voucher displayed, with a 2 hour maximum stay.",
+  },
+  {
+    id: "142",
+    image: "/road-signs/show-and-tell/sign-142.png",
+    name: "End of controlled parking zone",
+    meaning:
+      "End of the controlled parking zone — the waiting restrictions of the zone you are leaving no longer apply beyond this sign.",
+  },
+  {
+    id: "143",
+    image: "/road-signs/show-and-tell/sign-143.png",
+    name: "Goods vehicle restricted zone",
+    meaning:
+      "Entry to a zone where goods vehicles over the weight shown (here 5 tonnes) must not load or unload during the times indicated.",
+  },
+  {
+    id: "144",
+    image: "/road-signs/show-and-tell/sign-144.png",
+    name: "End of goods vehicle zone",
+    meaning:
+      "End of the goods vehicle restricted zone — the loading restrictions for vehicles over the stated weight no longer apply beyond this sign.",
+  },
 ];
