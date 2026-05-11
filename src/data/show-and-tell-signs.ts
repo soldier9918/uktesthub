@@ -227,4 +227,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Brown tourist sign pointing to a nearby visitor attraction — here a steam railway 300 yards ahead.",
   },
+  {
+    id: "33",
+    image: "/road-signs/show-and-tell/sign-33.png",
+    name: "Lorry parking with toilets",
+    meaning:
+      "Direction sign to a lorry park with toilet facilities, 1 mile ahead. The arrow shows the route to follow.",
+  },
+  {
+    id: "34",
+    image: "/road-signs/show-and-tell/sign-34.png",
+    name: "Park and Ride 300 yds",
+    meaning:
+      "Advance direction sign to a Park and Ride site 300 yards ahead — leave your car and continue into town by bus.",
+  },
+  {
+    id: "35",
+    image: "/road-signs/show-and-tell/sign-35.png",
+    name: "Park and Ride direction",
+    meaning:
+      "Direction sign pointing the way to a Park and Ride car park served by a bus link into the town centre.",
+  },
+  {
+    id: "36",
+    image: "/road-signs/show-and-tell/sign-36.png",
+    name: "Long stay / short stay parking",
+    meaning:
+      "Parking direction sign showing the routes to long-stay and short-stay car parks.",
+  },
 ];
