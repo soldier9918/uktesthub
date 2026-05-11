@@ -1935,4 +1935,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Direction sign for works traffic, with an arrow showing the route site vehicles should follow into or through road works.",
   },
+  {
+    id: "277",
+    image: "/road-signs/show-and-tell/sign-277.png",
+    name: "Works traffic — turn left",
+    meaning:
+      "Rectangular direction plate showing site vehicles to turn left into the works access. Watch for slow lorries turning across your path.",
+  },
+  {
+    id: "278",
+    image: "/road-signs/show-and-tell/sign-278.png",
+    name: "Works traffic — bear left (flag)",
+    meaning:
+      "Flag-shaped direction sign pointing works traffic to the left along a temporary route. Be alert for site vehicles entering or crossing the road.",
+  },
+  {
+    id: "279",
+    image: "/road-signs/show-and-tell/sign-279.png",
+    name: "Works traffic merging ahead",
+    meaning:
+      "Warning that works traffic will be merging with the main carriageway in the distance shown (e.g. 200 yds). Be ready to give way and adjust speed.",
+  },
+  {
+    id: "280",
+    image: "/road-signs/show-and-tell/sign-280.png",
+    name: "Delays possible until (date)",
+    meaning:
+      "Advance information sign warning of likely delays due to road works over a given distance and until a stated date. Allow extra time or consider an alternative route.",
+  },
 ];
