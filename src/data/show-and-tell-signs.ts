@@ -2383,4 +2383,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Right arm extended horizontally from the window — tells other road users you intend to move out to the right or turn right.",
   },
+  {
+    id: "341",
+    image: "/road-signs/show-and-tell/sign-341.png",
+    name: "Direction indicator — left",
+    meaning:
+      "Flashing left indicator shown by a car or motorcycle — the driver intends to move in to the left or turn left.",
+  },
+  {
+    id: "342",
+    image: "/road-signs/show-and-tell/sign-342.png",
+    name: "Direction indicator — right",
+    meaning:
+      "Flashing right indicator shown by a car or motorcycle — the driver intends to move out to the right or turn right.",
+  },
+  {
+    id: "343",
+    image: "/road-signs/show-and-tell/sign-343.png",
+    name: "Hazard warning lights",
+    meaning:
+      "All four indicators flashing together — used to warn other road users that the vehicle is a temporary hazard, e.g. broken down or slowing rapidly.",
+  },
+  {
+    id: "344",
+    image: "/road-signs/show-and-tell/sign-344.png",
+    name: "Brake lights",
+    meaning:
+      "Brake lights show that the driver is braking. Keep a safe distance behind so you can react if the vehicle slows or stops.",
+  },
 ];
