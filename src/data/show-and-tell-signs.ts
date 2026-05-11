@@ -955,4 +955,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Voucher parking only during the times shown (here Mon–Sat 9 am–6 pm), with a 2 hour maximum stay. Display a valid parking voucher.",
   },
+  {
+    id: "137",
+    image: "/road-signs/show-and-tell/sign-137.png",
+    name: "Disabled badge holders only",
+    meaning:
+      "Parking reserved for vehicles displaying a valid Blue Badge. Other vehicles must not park here.",
+  },
+  {
+    id: "138",
+    image: "/road-signs/show-and-tell/sign-138.png",
+    name: "Have you paid and displayed?",
+    meaning:
+      "Reminder in pay-and-display parking areas to buy a ticket and display it clearly inside the windscreen before leaving the vehicle.",
+  },
+  {
+    id: "139",
+    image: "/road-signs/show-and-tell/sign-139.png",
+    name: "Disc zone parking",
+    meaning:
+      "Parking disc zone — during the times shown (Mon–Sat 8 am–6 pm) you may park for 30 minutes maximum with a parking disc displayed. No return within 1 hour.",
+  },
+  {
+    id: "140",
+    image: "/road-signs/show-and-tell/sign-140.png",
+    name: "Controlled parking zone",
+    meaning:
+      "Entry to a controlled parking zone — waiting restrictions apply during the times shown. Parking is only permitted in marked bays.",
+  },
 ];
