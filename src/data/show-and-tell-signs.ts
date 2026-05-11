@@ -1627,4 +1627,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Solid white line marking the edge of the main carriageway on a motorway, separating it from the hard shoulder. Do not drive on the hard shoulder except in an emergency or when directed.",
   },
+  {
+    id: "233",
+    image: "/road-signs/show-and-tell/sign-233.png",
+    name: "Amber reflective road studs",
+    meaning:
+      "Amber reflective studs mark the right-hand edge of the carriageway on a motorway or dual carriageway, separating it from the central reservation.",
+  },
+  {
+    id: "234",
+    image: "/road-signs/show-and-tell/sign-234.png",
+    name: "Double white lines (both solid)",
+    meaning:
+      "Two solid white lines along the centre of the road. You must not cross or straddle them except in limited circumstances such as turning into a property or passing a slow-moving vehicle travelling at 10 mph or less.",
+  },
+  {
+    id: "235",
+    image: "/road-signs/show-and-tell/sign-235.png",
+    name: "Centre line",
+    meaning:
+      "Broken white centre line with short marks and long gaps separating opposing flows of traffic. You may cross it to overtake when it is safe to do so.",
+  },
+  {
+    id: "236",
+    image: "/road-signs/show-and-tell/sign-236.png",
+    name: "Hazard warning line",
+    meaning:
+      "Broken white centre line with longer marks and shorter gaps. It warns of a hazard ahead such as a bend or junction — do not cross unless you can see the road is clear.",
+  },
 ];
