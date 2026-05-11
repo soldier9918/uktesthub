@@ -1767,4 +1767,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Curved arrows painted on the carriageway tell you to move into the lane indicated. Change lanes early and smoothly — do not leave it until the last moment.",
   },
+  {
+    id: "253",
+    image: "/road-signs/show-and-tell/sign-253.png",
+    name: "Two-way priority arrow",
+    meaning:
+      "Two arrows pointing in opposite directions painted on the carriageway. Used at narrow sections to show that traffic flows in both directions — give way to oncoming vehicles where indicated.",
+  },
+  {
+    id: "254",
+    image: "/road-signs/show-and-tell/sign-254.png",
+    name: "NO ENTRY road marking",
+    meaning:
+      "'NO ENTRY' painted on the carriageway reinforces a no-entry sign. You must not drive past this point — the road is closed to traffic in this direction.",
+  },
+  {
+    id: "255",
+    image: "/road-signs/show-and-tell/sign-255.png",
+    name: "BUS LANE road marking",
+    meaning:
+      "'BUS LANE' painted on the carriageway shows a lane reserved for buses (and usually cycles and taxis) during the times shown on nearby signs. Other vehicles must keep out during those hours.",
+  },
+  {
+    id: "256",
+    image: "/road-signs/show-and-tell/sign-256.png",
+    name: "Lane merge arrows",
+    meaning:
+      "Arrows painted on the carriageway showing two lanes joining into one. Merge in turn with traffic in the adjoining lane and adjust your speed to fit in safely.",
+  },
 ];
