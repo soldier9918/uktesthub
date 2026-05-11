@@ -2607,4 +2607,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Warning of a tunnel ahead. Switch on dipped headlights, remove sunglasses and keep a safe distance from the vehicle in front.",
   },
+  {
+    id: "373",
+    image: "/road-signs/show-and-tell/sign-373.png",
+    name: "Available headroom",
+    meaning:
+      "Warning of restricted headroom ahead. The plate shows the available height in imperial (14′ 6″) and metric (4.4 m) — do not proceed if your vehicle is taller.",
+  },
+  {
+    id: "374",
+    image: "/road-signs/show-and-tell/sign-374.png",
+    name: "Road works hazard markers",
+    meaning:
+      "Yellow and black chevron markers used at road works or temporary obstructions to highlight a hazard. Pass slowly and with care.",
+  },
+  {
+    id: "375",
+    image: "/road-signs/show-and-tell/sign-375.png",
+    name: "Hump bridge with height limit",
+    meaning:
+      "Warning of a hump bridge ahead with limited headroom (12′ 6″ / 3.8 m). Slow down and do not proceed if your vehicle exceeds the height shown.",
+  },
+  {
+    id: "376",
+    image: "/road-signs/show-and-tell/sign-376.png",
+    name: "Traffic signals ahead",
+    meaning:
+      "Warning of traffic signals ahead. Be ready to stop — signals may be on a junction, pedestrian crossing or temporary at road works.",
+  },
 ];
