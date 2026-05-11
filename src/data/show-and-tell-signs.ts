@@ -1683,4 +1683,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "The word 'STOP' painted on the carriageway, used with a stop line and STOP sign. You must stop completely behind the line and only move off when it is safe.",
   },
+  {
+    id: "241",
+    image: "/road-signs/show-and-tell/sign-241.png",
+    name: "Give way triangle (road marking)",
+    meaning:
+      "Inverted white triangle painted on the carriageway warning that you must give way to traffic on the major road ahead.",
+  },
+  {
+    id: "242",
+    image: "/road-signs/show-and-tell/sign-242.png",
+    name: "SLOW road marking",
+    meaning:
+      "The word 'SLOW' painted on the carriageway warns you to reduce speed because of a hazard ahead such as a bend, junction or change in road conditions.",
+  },
+  {
+    id: "243",
+    image: "/road-signs/show-and-tell/sign-243.png",
+    name: "HIGH VEHS road marking",
+    meaning:
+      "'HIGH VEHS' painted on the road warns drivers of high vehicles of a low bridge or overhead obstruction ahead. Tall vehicles should follow the indicated route or reduce height where appropriate.",
+  },
+  {
+    id: "244",
+    image: "/road-signs/show-and-tell/sign-244.png",
+    name: "KEEP CLEAR road marking",
+    meaning:
+      "'KEEP CLEAR' painted on the road, often outside school entrances or junctions. You must not stop or park on this area so the access remains clear at all times.",
+  },
 ];
