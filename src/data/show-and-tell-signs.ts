@@ -2299,4 +2299,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Warning that the type of control at a level crossing ahead has been changed — be alert for new signals, barriers or signs.",
   },
+  {
+    id: "329",
+    image: "/road-signs/show-and-tell/sign-329.png",
+    name: "Tram driver signals (direction arrows)",
+    meaning:
+      "Special signals for tram drivers — illuminated white arrows show the direction the tram may take. Other road users should ignore these signals.",
+  },
+  {
+    id: "330",
+    image: "/road-signs/show-and-tell/sign-330.png",
+    name: "Tram signal — proceed",
+    meaning:
+      "White 'proceed' signal for trams (a white asterisk on a black disc). Only applies to tram drivers; other road users follow normal traffic signals.",
+  },
+  {
+    id: "331",
+    image: "/road-signs/show-and-tell/sign-331.png",
+    name: "Level crossing light signals",
+    meaning:
+      "Red/amber light signals at a level crossing. When the amber light shows you must stop unless it is unsafe to do so; flashing red lights mean stop and wait.",
+  },
+  {
+    id: "332",
+    image: "/road-signs/show-and-tell/sign-332.png",
+    name: "School crossing patrol",
+    meaning:
+      "School crossing patrol (lollipop person) signalling traffic to stop. You must stop and wait until the patrol leaves the road.",
+  },
 ];
