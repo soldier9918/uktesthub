@@ -479,4 +479,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Tourist coaches may stop here briefly between 10 am and 4 pm to allow passengers to take photographs.",
   },
+  {
+    id: "69",
+    image: "/road-signs/show-and-tell/sign-69.png",
+    name: "Goods vehicle check point",
+    meaning:
+      "Lane-direction sign: lorries must keep to the left lane for a goods vehicle check point ½ mile ahead. Other vehicles use the right lane.",
+  },
+  {
+    id: "70",
+    image: "/road-signs/show-and-tell/sign-70.png",
+    name: "Restricted entry ahead",
+    meaning:
+      "Advance warning that entry to the road named (here High Street) is restricted ½ mile ahead.",
+  },
+  {
+    id: "71",
+    image: "/road-signs/show-and-tell/sign-71.png",
+    name: "Low bridge ahead",
+    meaning:
+      "Advance warning of a low bridge with a maximum headroom (here 4.4 m / 14′ 6″) 2 miles ahead.",
+  },
+  {
+    id: "72",
+    image: "/road-signs/show-and-tell/sign-72.png",
+    name: "Weight limit with diversion",
+    meaning:
+      "Advance warning of a weight limit on a road ahead, with a suggested alternative route for vehicles over the limit.",
+  },
 ];
