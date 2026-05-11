@@ -2159,4 +2159,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Warns that traffic in both directions is being controlled by temporary traffic signals. Obey the signals and be ready to stop.",
   },
+  {
+    id: "309",
+    image: "/road-signs/show-and-tell/sign-309.png",
+    name: "Joining traffic not signal controlled",
+    meaning:
+      "Warns that traffic joining from a side road or works access is not controlled by the temporary signals. Watch for vehicles pulling out.",
+  },
+  {
+    id: "310",
+    image: "/road-signs/show-and-tell/sign-310.png",
+    name: "Stop (manually operated)",
+    meaning:
+      "Hand-held STOP face used by a road worker to control traffic at road works. You must stop and wait until the sign is turned to GO.",
+  },
+  {
+    id: "311",
+    image: "/road-signs/show-and-tell/sign-311.png",
+    name: "Go (manually operated)",
+    meaning:
+      "Hand-held GO face shown by a road worker — you may now proceed past the works at a safe speed.",
+  },
+  {
+    id: "312",
+    image: "/road-signs/show-and-tell/sign-312.png",
+    name: "Portable (temporary) traffic signals",
+    meaning:
+      "Portable traffic signals used to control traffic at road works. Obey the signals as you would any normal traffic light.",
+  },
 ];
