@@ -1459,4 +1459,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Broken white centre line with longer marks and shorter gaps. It warns of a hazard ahead such as a bend, junction or change in road layout — do not cross unless you can see the road is clear.",
   },
+  {
+    id: "209",
+    image: "/road-signs/show-and-tell/sign-209.png",
+    name: "Double white lines (one solid, one broken)",
+    meaning:
+      "Centre lines with one solid and one broken white line. If the line nearest you is broken you may cross to overtake when safe; if the line nearest you is solid you must not cross or straddle it except in limited circumstances.",
+  },
+  {
+    id: "210",
+    image: "/road-signs/show-and-tell/sign-210.png",
+    name: "Areas of white diagonal stripes or chevrons",
+    meaning:
+      "Hatched road markings used to separate traffic streams or protect turning traffic. If bordered by a broken line do not enter unless necessary; if bordered by a solid white line you must not enter except in an emergency.",
+  },
+  {
+    id: "211",
+    image: "/road-signs/show-and-tell/sign-211.png",
+    name: "Give way lines",
+    meaning:
+      "Two broken white lines across the road at a junction marking a give way. Slow down and give way to traffic on the major road before emerging.",
+  },
+  {
+    id: "212",
+    image: "/road-signs/show-and-tell/sign-212.png",
+    name: "Chevron markings between lanes",
+    meaning:
+      "Diagonal chevron markings bordered by solid white lines separating opposing traffic flows. You must not enter the chevron area except in an emergency.",
+  },
 ];
