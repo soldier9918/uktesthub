@@ -1151,4 +1151,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "No solo motorcycles permitted beyond this sign. Other vehicles may still pass unless restricted by other signs.",
   },
+  {
+    id: "165",
+    image: "/road-signs/show-and-tell/sign-165.png",
+    name: "No goods vehicles over maximum gross weight shown",
+    meaning:
+      "Goods vehicles over the maximum gross weight shown (here 7.5 tonnes) are prohibited beyond this sign.",
+  },
+  {
+    id: "166",
+    image: "/road-signs/show-and-tell/sign-166.png",
+    name: "End of goods vehicle restriction",
+    meaning:
+      "End of the restriction on goods vehicles. The weight limit shown previously no longer applies beyond this sign.",
+  },
+  {
+    id: "167",
+    image: "/road-signs/show-and-tell/sign-167.png",
+    name: "No articulated vehicles",
+    meaning:
+      "Articulated vehicles are prohibited beyond this sign. Other vehicles may still pass unless restricted by other signs.",
+  },
+  {
+    id: "168",
+    image: "/road-signs/show-and-tell/sign-168.png",
+    name: "No horse-drawn vehicles",
+    meaning:
+      "Horse-drawn vehicles are prohibited beyond this sign.",
+  },
 ];
