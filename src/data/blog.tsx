@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import { Link } from "@tanstack/react-router";
 import h_CompleteUkRoadSignsReference from "@/assets/blog/complete-uk-road-signs-reference.jpg";
+import h_ShowAndTellRoadSigns from "@/assets/blog/show-and-tell-road-signs.png";
 import h_HowToPassDrivingTheoryTest from "@/assets/blog/how-to-pass-driving-theory-test.jpg";
 import h_LifeInTheUkTestGuide from "@/assets/blog/life-in-the-uk-test-guide.jpg";
 import h_TopUkRoadSignsExplained from "@/assets/blog/top-uk-road-signs-explained.jpg";
