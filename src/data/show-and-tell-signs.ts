@@ -395,4 +395,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Start of a with-flow cycle lane reserved for pedal cycles. Other vehicles must not enter the lane during its hours of operation.",
   },
+  {
+    id: "57",
+    image: "/road-signs/show-and-tell/sign-57.png",
+    name: "Lane reserved for bus, cycles and taxis",
+    meaning:
+      "Nearside lane ahead is reserved for local buses, pedal cycles and taxis during its hours of operation.",
+  },
+  {
+    id: "58",
+    image: "/road-signs/show-and-tell/sign-58.png",
+    name: "Lane reserved for cycles",
+    meaning:
+      "Nearside lane ahead is reserved for pedal cycles during its hours of operation.",
+  },
+  {
+    id: "59",
+    image: "/road-signs/show-and-tell/sign-59.png",
+    name: "Contraflow bus lane",
+    meaning:
+      "Buses travel in the opposite direction in the lane shown — be aware of buses approaching from ahead.",
+  },
+  {
+    id: "60",
+    image: "/road-signs/show-and-tell/sign-60.png",
+    name: "Contraflow cycle lane",
+    meaning:
+      "Pedal cycles travel in the opposite direction in the lane shown — be aware of cyclists approaching from ahead.",
+  },
 ];
