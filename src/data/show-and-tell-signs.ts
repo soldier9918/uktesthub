@@ -2047,4 +2047,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Instruction to move from your current lane into the adjacent lane shown by the arrow because of road works ahead.",
   },
+  {
+    id: "293",
+    image: "/road-signs/show-and-tell/sign-293.png",
+    name: "Temporary hazard warning",
+    meaning:
+      "Yellow temporary plate carrying a hazard sign on a flexible backing — used at road works to warn of a hazard such as a closure or obstruction ahead.",
+  },
+  {
+    id: "294",
+    image: "/road-signs/show-and-tell/sign-294.png",
+    name: "Free recovery — await rescue",
+    meaning:
+      "If you break down in road works on a motorway or major road, free recovery is available. Stay with your vehicle in a safe place and await rescue.",
+  },
+  {
+    id: "295",
+    image: "/road-signs/show-and-tell/sign-295.png",
+    name: "Maximum speed (advisory)",
+    meaning:
+      "Advisory maximum speed (e.g. 30 mph) through road works. Drive at or below this speed for the safety of road workers and other traffic.",
+  },
+  {
+    id: "296",
+    image: "/road-signs/show-and-tell/sign-296.png",
+    name: "Speed limit ahead",
+    meaning:
+      "Advance warning that a mandatory speed limit (e.g. 50 mph) begins in the distance shown. Be ready to slow down to that limit.",
+  },
 ];
