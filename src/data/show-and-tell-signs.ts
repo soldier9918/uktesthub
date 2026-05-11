@@ -451,4 +451,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Warning that vehicles parked illegally in the area may be removed (towed away).",
   },
+  {
+    id: "65",
+    image: "/road-signs/show-and-tell/sign-65.png",
+    name: "Motorcycles plate",
+    meaning:
+      "Plate used with another sign to show that it applies to solo motorcycles.",
+  },
+  {
+    id: "66",
+    image: "/road-signs/show-and-tell/sign-66.png",
+    name: "Cycle parking",
+    meaning:
+      "Parking place reserved for pedal cycles.",
+  },
+  {
+    id: "67",
+    image: "/road-signs/show-and-tell/sign-67.png",
+    name: "Coach parking",
+    meaning:
+      "Parking place reserved for coaches and buses.",
+  },
+  {
+    id: "68",
+    image: "/road-signs/show-and-tell/sign-68.png",
+    name: "Coach photostop",
+    meaning:
+      "Tourist coaches may stop here briefly between 10 am and 4 pm to allow passengers to take photographs.",
+  },
 ];
