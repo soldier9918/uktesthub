@@ -423,4 +423,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Pedal cycles travel in the opposite direction in the lane shown — be aware of cyclists approaching from ahead.",
   },
+  {
+    id: "61",
+    image: "/road-signs/show-and-tell/sign-61.png",
+    name: "Parking",
+    meaning:
+      "Parking place. Used on its own or with a plate showing restrictions or the type of vehicle that may park.",
+  },
+  {
+    id: "62",
+    image: "/road-signs/show-and-tell/sign-62.png",
+    name: "Goods vehicles plate",
+    meaning:
+      "Plate used with another sign to show that it applies to goods vehicles (lorries).",
+  },
+  {
+    id: "63",
+    image: "/road-signs/show-and-tell/sign-63.png",
+    name: "Cars plate",
+    meaning:
+      "Plate used with another sign to show that it applies to cars (and similar light vehicles).",
+  },
+  {
+    id: "64",
+    image: "/road-signs/show-and-tell/sign-64.png",
+    name: "Vehicles being towed away",
+    meaning:
+      "Warning that vehicles parked illegally in the area may be removed (towed away).",
+  },
 ];
