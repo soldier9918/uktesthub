@@ -2355,4 +2355,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Police officer beckoning with a sweeping arm movement to signal traffic to come on from the front.",
   },
+  {
+    id: "337",
+    image: "/road-signs/show-and-tell/sign-337.png",
+    name: "DVSA / traffic officer signal",
+    meaning:
+      "DVSA officer or traffic officer signalling you to pull in or stop. You must obey their signals just as you would a police officer's.",
+  },
+  {
+    id: "338",
+    image: "/road-signs/show-and-tell/sign-338.png",
+    name: "Arm signal — I intend to slow down or stop",
+    meaning:
+      "Right arm extended from the window with the palm down, moved slowly up and down — tells other road users you intend to slow down or stop.",
+  },
+  {
+    id: "339",
+    image: "/road-signs/show-and-tell/sign-339.png",
+    name: "Arm signal — I intend to move in to the left or turn left",
+    meaning:
+      "Right arm rotated in an anticlockwise circular motion — tells other road users you intend to move in to the left or turn left.",
+  },
+  {
+    id: "340",
+    image: "/road-signs/show-and-tell/sign-340.png",
+    name: "Arm signal — I intend to move out to the right or turn right",
+    meaning:
+      "Right arm extended horizontally from the window — tells other road users you intend to move out to the right or turn right.",
+  },
 ];
