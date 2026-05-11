@@ -1091,8 +1091,8 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
   {
     id: "156",
     image: "/road-signs/show-and-tell/sign-156.png",
-    name: "Priority over oncoming vehicles",
+    name: "Give priority to oncoming vehicles",
     meaning:
-      "You have priority over oncoming vehicles at the narrow section ahead. The black arrow shows your direction; the red arrow shows oncoming traffic that must give way.",
+      "Give priority to vehicles coming from the opposite direction at the narrow section ahead. The red arrow shows oncoming traffic with right of way; you must wait until the road is clear.",
   },
 ];
