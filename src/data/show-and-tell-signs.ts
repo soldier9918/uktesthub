@@ -1431,4 +1431,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Continuous solid white line marking the edge of the carriageway. It helps you judge the road's edge in poor visibility and should not normally be crossed.",
   },
+  {
+    id: "205",
+    image: "/road-signs/show-and-tell/sign-205.png",
+    name: "Road with no centre markings",
+    meaning:
+      "An unmarked single carriageway with no centre line. Drive with extra care — assume oncoming vehicles may be close to the middle and keep well to the left.",
+  },
+  {
+    id: "206",
+    image: "/road-signs/show-and-tell/sign-206.png",
+    name: "Lane line",
+    meaning:
+      "Short broken white lines separating lanes of traffic travelling in the same direction. You may cross the line to change lanes when it is safe.",
+  },
+  {
+    id: "207",
+    image: "/road-signs/show-and-tell/sign-207.png",
+    name: "Centre line",
+    meaning:
+      "Broken white line down the centre of the road with short marks and long gaps, separating opposing flows of traffic. You may cross it to overtake when safe.",
+  },
+  {
+    id: "208",
+    image: "/road-signs/show-and-tell/sign-208.png",
+    name: "Hazard warning line",
+    meaning:
+      "Broken white centre line with longer marks and shorter gaps. It warns of a hazard ahead such as a bend, junction or change in road layout — do not cross unless you can see the road is clear.",
+  },
 ];
