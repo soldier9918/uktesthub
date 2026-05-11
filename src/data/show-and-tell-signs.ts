@@ -1039,4 +1039,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "End of the area where vehicles may park wholly on the verge or footway. Beyond this point parking on the verge or footway is not permitted.",
   },
+  {
+    id: "149",
+    image: "/road-signs/show-and-tell/sign-149.png",
+    name: "No stopping except buses",
+    meaning:
+      "No stopping during the times shown (here 7 am–7 pm) except for buses. Other vehicles must not stop, even briefly.",
+  },
+  {
+    id: "150",
+    image: "/road-signs/show-and-tell/sign-150.png",
+    name: "Bus stand — no stopping",
+    meaning:
+      "Bus stand: no stopping during the times shown (here 7 am–7 pm) except for buses using the stand. Other vehicles must not stop here.",
+  },
+  {
+    id: "151",
+    image: "/road-signs/show-and-tell/sign-151.png",
+    name: "STOP",
+    meaning:
+      "You must stop completely at the line and give way to traffic on the major road. Only move off when it is safe to do so.",
+  },
+  {
+    id: "152",
+    image: "/road-signs/show-and-tell/sign-152.png",
+    name: "Give way",
+    meaning:
+      "Give way to traffic on the major road. Slow down and be prepared to stop if necessary; only proceed when there is a safe gap.",
+  },
 ];
