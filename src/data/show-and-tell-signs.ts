@@ -2523,4 +2523,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Warning of a bend to the right ahead. Adjust your speed to take the bend safely.",
   },
+  {
+    id: "361",
+    image: "/road-signs/show-and-tell/sign-361.png",
+    name: "Double bend, first to the left",
+    meaning:
+      "Warning of two bends ahead, the first to the left. Reduce speed and be ready for the second bend immediately after.",
+  },
+  {
+    id: "362",
+    image: "/road-signs/show-and-tell/sign-362.png",
+    name: "Sharp deviation of route to the left",
+    meaning:
+      "Black and white chevron arrows showing a sharp change of road direction to the left. Follow the direction of the arrows around the bend or hazard.",
+  },
+  {
+    id: "363",
+    image: "/road-signs/show-and-tell/sign-363.png",
+    name: "Road narrows on both sides",
+    meaning:
+      "Warning that the road narrows on both sides ahead. Be ready to slow down and give way as appropriate.",
+  },
+  {
+    id: "364",
+    image: "/road-signs/show-and-tell/sign-364.png",
+    name: "Road narrows on the right",
+    meaning:
+      "Warning that the road narrows on the right side ahead — for example, where a hard shoulder or extra lane ends.",
+  },
 ];
