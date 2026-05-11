@@ -1711,4 +1711,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "'KEEP CLEAR' painted on the road, often outside school entrances or junctions. You must not stop or park on this area so the access remains clear at all times.",
   },
+  {
+    id: "245",
+    image: "/road-signs/show-and-tell/sign-245.png",
+    name: "With-flow bus and cycle lane diagram",
+    meaning:
+      "Diagram of a road with a with-flow bus lane on the nearside. Buses, cycles and taxis use the bus lane during its hours of operation; other traffic uses the remaining lanes.",
+  },
+  {
+    id: "246",
+    image: "/road-signs/show-and-tell/sign-246.png",
+    name: "Diagonal hatched markings",
+    meaning:
+      "Areas of diagonal white stripes used to separate traffic streams or protect turning vehicles. If bordered by a broken line do not enter unless necessary; if bordered by a solid line do not enter except in an emergency.",
+  },
+  {
+    id: "247",
+    image: "/road-signs/show-and-tell/sign-247.png",
+    name: "Lane destination markings",
+    meaning:
+      "Arrows and place names painted on the carriageway show where each lane leads. Get into the correct lane in good time for your destination.",
+  },
+  {
+    id: "248",
+    image: "/road-signs/show-and-tell/sign-248.png",
+    name: "Turn left arrows in lanes",
+    meaning:
+      "'TURN LEFT' arrows painted in the lanes mean traffic in those lanes must turn left at the junction ahead. Move into the correct lane early.",
+  },
 ];
