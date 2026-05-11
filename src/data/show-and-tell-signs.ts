@@ -1823,4 +1823,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Arrows painted in the lanes show the permitted directions of travel — turn left from the left lane, continue straight ahead from the right lane. Choose your lane in good time.",
   },
+  {
+    id: "261",
+    image: "/road-signs/show-and-tell/sign-261.png",
+    name: "Sign shapes — circles and squares",
+    meaning:
+      "Sign shapes carry meaning at a glance: circles give orders (red bordered = prohibition, blue = mandatory), and rectangles give information.",
+  },
+  {
+    id: "262",
+    image: "/road-signs/show-and-tell/sign-262.png",
+    name: "Give way arrow",
+    meaning:
+      "A large white arrow chevron painted on the carriageway. It indicates that you must give way to oncoming traffic at the narrow section ahead.",
+  },
+  {
+    id: "263",
+    image: "/road-signs/show-and-tell/sign-263.png",
+    name: "Speed limit roundels",
+    meaning:
+      "Speed-limit roundels (e.g. '30') painted on the carriageway remind you of the limit in force on that road. Reduce or maintain your speed accordingly.",
+  },
+  {
+    id: "264",
+    image: "/road-signs/show-and-tell/sign-264.png",
+    name: "Road works",
+    meaning:
+      "Red triangular warning sign showing a workman digging — road works ahead. Slow down, watch for workers and obey any temporary signs or speed limits.",
+  },
 ];
