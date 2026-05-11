@@ -1655,4 +1655,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Broken white centre line with longer marks and shorter gaps. It warns of a hazard ahead such as a bend or junction — do not cross unless you can see the road is clear.",
   },
+  {
+    id: "237",
+    image: "/road-signs/show-and-tell/sign-237.png",
+    name: "Lane line",
+    meaning:
+      "Short broken white line separating lanes of traffic travelling in the same direction. You may cross it to change lanes when it is safe.",
+  },
+  {
+    id: "238",
+    image: "/road-signs/show-and-tell/sign-238.png",
+    name: "Dual carriageway with road studs",
+    meaning:
+      "A dual carriageway with reflective road studs marking lane and edge lines. White studs separate lanes, red mark the left edge, amber the right edge alongside the central reservation.",
+  },
+  {
+    id: "239",
+    image: "/road-signs/show-and-tell/sign-239.png",
+    name: "Give way triangle (road marking)",
+    meaning:
+      "Large white triangle painted on the road pointing towards you. It warns that you must give way to traffic on the major road ahead.",
+  },
+  {
+    id: "240",
+    image: "/road-signs/show-and-tell/sign-240.png",
+    name: "STOP road marking",
+    meaning:
+      "The word 'STOP' painted on the carriageway, used with a stop line and STOP sign. You must stop completely behind the line and only move off when it is safe.",
+  },
 ];
