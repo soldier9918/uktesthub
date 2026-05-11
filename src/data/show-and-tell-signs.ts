@@ -1963,4 +1963,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Advance information sign warning of likely delays due to road works over a given distance and until a stated date. Allow extra time or consider an alternative route.",
   },
+  {
+    id: "281",
+    image: "/road-signs/show-and-tell/sign-281.png",
+    name: "Highways Agency scheme information",
+    meaning:
+      "Information sign giving the road number, name of a Highways Agency improvement scheme and its expected opening date.",
+  },
+  {
+    id: "282",
+    image: "/road-signs/show-and-tell/sign-282.png",
+    name: "Utility works information",
+    meaning:
+      "Information sign from a utility company (e.g. water main renewal) giving the contractor, completion date and an emergency contact number.",
+  },
+  {
+    id: "283",
+    image: "/road-signs/show-and-tell/sign-283.png",
+    name: "No hard shoulder for distance",
+    meaning:
+      "Warning that the hard shoulder is closed or unavailable for the stated distance — typically because of road works. Do not use it except in a genuine emergency.",
+  },
+  {
+    id: "284",
+    image: "/road-signs/show-and-tell/sign-284.png",
+    name: "Convoy system in operation ahead",
+    meaning:
+      "Warning that traffic ahead is being led through road works in a convoy behind a pilot vehicle. Be ready to stop and wait, then follow the convoy at the controlled speed.",
+  },
 ];
