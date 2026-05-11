@@ -1067,4 +1067,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Give way to traffic on the major road. Slow down and be prepared to stop if necessary; only proceed when there is a safe gap.",
   },
+  {
+    id: "153",
+    image: "/road-signs/show-and-tell/sign-153.png",
+    name: "No right turn",
+    meaning:
+      "Right turn prohibited. You must not turn right at the junction or entrance ahead.",
+  },
+  {
+    id: "154",
+    image: "/road-signs/show-and-tell/sign-154.png",
+    name: "No left turn",
+    meaning:
+      "Left turn prohibited. You must not turn left at the junction or entrance ahead.",
+  },
+  {
+    id: "155",
+    image: "/road-signs/show-and-tell/sign-155.png",
+    name: "No U-turns",
+    meaning:
+      "U-turns are not permitted. You must not turn the vehicle around to face the opposite direction at this point.",
+  },
+  {
+    id: "156",
+    image: "/road-signs/show-and-tell/sign-156.png",
+    name: "Priority over oncoming vehicles",
+    meaning:
+      "You have priority over oncoming vehicles at the narrow section ahead. The black arrow shows your direction; the red arrow shows oncoming traffic that must give way.",
+  },
 ];
