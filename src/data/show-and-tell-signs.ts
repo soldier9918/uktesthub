@@ -787,4 +787,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "At the junction ahead, the left lane is for turning left or going ahead and the right lane is for turning right.",
   },
+  {
+    id: "113",
+    image: "/road-signs/show-and-tell/sign-113.png",
+    name: "Bus lane on road at junction",
+    meaning:
+      "There is a bus lane on the road being joined at the junction ahead. The arrow shows the direction of bus traffic.",
+  },
+  {
+    id: "114",
+    image: "/road-signs/show-and-tell/sign-114.png",
+    name: "Cycle lane on road at junction",
+    meaning:
+      "There is a cycle lane on the road being joined at the junction ahead. The arrow shows the direction of cycle traffic.",
+  },
+  {
+    id: "115",
+    image: "/road-signs/show-and-tell/sign-115.png",
+    name: "Bus and cycle lane",
+    meaning:
+      "There is a lane reserved for buses and pedal cycles on the road being joined at the junction ahead.",
+  },
+  {
+    id: "116",
+    image: "/road-signs/show-and-tell/sign-116.png",
+    name: "Congestion charging zone",
+    meaning:
+      "Entering a congestion charging zone — drivers must pay a daily charge to drive within the zone during operating hours.",
+  },
 ];
