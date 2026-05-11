@@ -283,4 +283,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Direction sign showing the route lorries should follow to reach numbered roads (here A33 and M1).",
   },
+  {
+    id: "41",
+    image: "/road-signs/show-and-tell/sign-41.png",
+    name: "Taxi rank",
+    meaning:
+      "Taxi rank — parking reserved for the indicated number of taxis (here 3). Other vehicles must not stop here.",
+  },
+  {
+    id: "42",
+    image: "/road-signs/show-and-tell/sign-42.png",
+    name: "Shared route — pedestrians and cyclists",
+    meaning:
+      "Route shared by pedestrians and cyclists with no separation. Cyclists must give way to pedestrians.",
+  },
+  {
+    id: "43",
+    image: "/road-signs/show-and-tell/sign-43.png",
+    name: "Segregated route — pedestrians and cyclists",
+    meaning:
+      "Separate paths for pedestrians and cyclists, divided by a white line. Keep to the side shown for your mode.",
+  },
+  {
+    id: "44",
+    image: "/road-signs/show-and-tell/sign-44.png",
+    name: "Tramway — look both ways",
+    meaning:
+      "Warning at a tramway crossing: trams can approach from either direction — look both ways before crossing.",
+  },
 ];
