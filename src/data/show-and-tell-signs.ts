@@ -619,4 +619,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Entry to a Home Zone — a residential area where pedestrians and cyclists have priority. Drive very slowly and give way to people on foot.",
   },
+  {
+    id: "89",
+    image: "/road-signs/show-and-tell/sign-89.png",
+    name: "Home zone ends",
+    meaning:
+      "End of a Home Zone — normal driving conditions resume and pedestrians no longer have priority over vehicles.",
+  },
+  {
+    id: "90",
+    image: "/road-signs/show-and-tell/sign-90.png",
+    name: "Traffic calmed area",
+    meaning:
+      "Entry to a traffic-calmed area where traffic-calming features such as humps, chicanes or narrowings are in use.",
+  },
+  {
+    id: "91",
+    image: "/road-signs/show-and-tell/sign-91.png",
+    name: "Route for buses and cycles only",
+    meaning:
+      "Route reserved for use by local buses and pedal cycles only. Other vehicles must not enter.",
+  },
+  {
+    id: "92",
+    image: "/road-signs/show-and-tell/sign-92.png",
+    name: "Route for trams only",
+    meaning:
+      "Route reserved for trams only. Other vehicles must not enter.",
+  },
 ];
