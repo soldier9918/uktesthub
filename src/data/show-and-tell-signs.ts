@@ -2327,4 +2327,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "School crossing patrol (lollipop person) signalling traffic to stop. You must stop and wait until the patrol leaves the road.",
   },
+  {
+    id: "333",
+    image: "/road-signs/show-and-tell/sign-333.png",
+    name: "Police signal — stop traffic approaching from the front",
+    meaning:
+      "Police officer facing you with one arm raised — you must stop. Used to halt traffic approaching from the front.",
+  },
+  {
+    id: "334",
+    image: "/road-signs/show-and-tell/sign-334.png",
+    name: "Police signal — stop traffic approaching from behind",
+    meaning:
+      "Police officer with back to traffic and arm extended sideways — used to stop traffic approaching from behind.",
+  },
+  {
+    id: "335",
+    image: "/road-signs/show-and-tell/sign-335.png",
+    name: "Police signal — stop traffic from both front and behind",
+    meaning:
+      "Police officer with one arm raised and the other extended — used to stop traffic approaching from both directions.",
+  },
+  {
+    id: "336",
+    image: "/road-signs/show-and-tell/sign-336.png",
+    name: "Police signal — beckoning on from the front",
+    meaning:
+      "Police officer beckoning with a sweeping arm movement to signal traffic to come on from the front.",
+  },
 ];
