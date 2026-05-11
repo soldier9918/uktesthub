@@ -843,4 +843,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Vehicles must pass to the left of the sign — typically used at islands, bollards or refuges.",
   },
+  {
+    id: "121",
+    image: "/road-signs/show-and-tell/sign-121.png",
+    name: "Vehicles may pass either side",
+    meaning:
+      "Vehicles may pass either side of the sign to reach the same destination — typically used at islands or obstructions.",
+  },
+  {
+    id: "122",
+    image: "/road-signs/show-and-tell/sign-122.png",
+    name: "Mini-roundabout",
+    meaning:
+      "Mini-roundabout ahead — give way to traffic from the immediate right and proceed around the central marking in a clockwise direction.",
+  },
+  {
+    id: "123",
+    image: "/road-signs/show-and-tell/sign-123.png",
+    name: "One-way traffic",
+    meaning:
+      "Traffic on this road flows in one direction only, in the direction of the arrow.",
+  },
+  {
+    id: "124",
+    image: "/road-signs/show-and-tell/sign-124.png",
+    name: "Maximum speed limit",
+    meaning:
+      "Mandatory maximum speed limit in miles per hour (here 40 mph). You must not exceed this speed.",
+  },
 ];
