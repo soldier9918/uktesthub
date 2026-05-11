@@ -1795,4 +1795,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Arrows painted on the carriageway showing two lanes joining into one. Merge in turn with traffic in the adjoining lane and adjust your speed to fit in safely.",
   },
+  {
+    id: "257",
+    image: "/road-signs/show-and-tell/sign-257.png",
+    name: "Cycle road marking",
+    meaning:
+      "A bicycle symbol painted on the carriageway indicating a cycle lane or cycle route. Other vehicles must not drive or park in the lane during its hours of operation.",
+  },
+  {
+    id: "258",
+    image: "/road-signs/show-and-tell/sign-258.png",
+    name: "END road marking",
+    meaning:
+      "The word 'END' painted on the carriageway shows the end of a special lane or restriction such as a bus lane or cycle lane. Normal road rules resume from this point.",
+  },
+  {
+    id: "259",
+    image: "/road-signs/show-and-tell/sign-259.png",
+    name: "SLOW road marking",
+    meaning:
+      "The word 'SLOW' painted on the carriageway warns you to reduce speed because of a hazard ahead such as a bend, junction or change in road conditions.",
+  },
+  {
+    id: "260",
+    image: "/road-signs/show-and-tell/sign-260.png",
+    name: "Lane direction arrows (left and ahead)",
+    meaning:
+      "Arrows painted in the lanes show the permitted directions of travel — turn left from the left lane, continue straight ahead from the right lane. Choose your lane in good time.",
+  },
 ];
