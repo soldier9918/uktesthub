@@ -507,4 +507,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Advance warning of a weight limit on a road ahead, with a suggested alternative route for vehicles over the limit.",
   },
+  {
+    id: "73",
+    image: "/road-signs/show-and-tell/sign-73.png",
+    name: "Unsuitable for motor vehicles",
+    meaning:
+      "The road or route ahead is unsuitable for motor vehicles — typically a narrow lane or unmade track.",
+  },
+  {
+    id: "74",
+    image: "/road-signs/show-and-tell/sign-74.png",
+    name: "Countdown markers",
+    meaning:
+      "Countdown markers at the exit from a motorway or primary route. Each bar represents 100 yards to the start of the slip road.",
+  },
+  {
+    id: "75",
+    image: "/road-signs/show-and-tell/sign-75.png",
+    name: "Depth gauge",
+    meaning:
+      "Depth gauge at a ford or flooded section of road, showing the depth of water in feet and metres.",
+  },
+  {
+    id: "76",
+    image: "/road-signs/show-and-tell/sign-76.png",
+    name: "Hospital — no A&E",
+    meaning:
+      "Direction sign to a hospital that does not have an Accident and Emergency department.",
+  },
 ];
