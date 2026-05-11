@@ -2215,4 +2215,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Used at level crossings, swing bridges, fire and ambulance stations: you must stop when the red lights flash and not proceed until they go out.",
   },
+  {
+    id: "317",
+    image: "/road-signs/show-and-tell/sign-317.png",
+    name: "Level crossing without barrier",
+    meaning:
+      "St Andrew's cross marker placed at the stop line of a level crossing without a barrier or gate. Stop here when the lights show.",
+  },
+  {
+    id: "318",
+    image: "/road-signs/show-and-tell/sign-318.png",
+    name: "Another train coming",
+    meaning:
+      "At a level crossing, this sign warns that even though one train has just passed, another train is coming. Do not cross until the lights stop flashing.",
+  },
+  {
+    id: "319",
+    image: "/road-signs/show-and-tell/sign-319.png",
+    name: "Railway level crossing (symbol)",
+    meaning:
+      "Symbol used to indicate a railway level crossing, often on map-type signs or as a route marker.",
+  },
+  {
+    id: "320",
+    image: "/road-signs/show-and-tell/sign-320.png",
+    name: "Tramway (symbol)",
+    meaning:
+      "Symbol used to indicate a tramway or tram crossing, often on map-type signs or route markers.",
+  },
 ];
