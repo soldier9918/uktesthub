@@ -143,4 +143,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Warning: steep descent ahead. Select a low gear before the hill to control speed and avoid overusing the brakes.",
   },
+  {
+    id: "21",
+    image: "/road-signs/show-and-tell/sign-21.png",
+    name: "Services",
+    meaning:
+      "Direction sign to motorway service area or roadside services. Blue arrow points the way to fuel, food and rest facilities.",
+  },
+  {
+    id: "22",
+    image: "/road-signs/show-and-tell/sign-22.png",
+    name: "Keep apart 2 chevrons",
+    meaning:
+      "Keep at least a two-chevron gap from the vehicle in front. Helps drivers judge a safe following distance on high-speed roads.",
+  },
+  {
+    id: "23",
+    image: "/road-signs/show-and-tell/sign-23.png",
+    name: "Check your distance",
+    meaning:
+      "Reminder plate, often used with chevron markings, to check the gap from the vehicle ahead and drop back if too close.",
+  },
+  {
+    id: "24",
+    image: "/road-signs/show-and-tell/sign-24.png",
+    name: "Variable speed limit (50 mph)",
+    meaning:
+      "Electronic sign showing a temporary mandatory speed limit (here 50 mph), often used for congestion or roadworks on motorways.",
+  },
 ];
