@@ -675,4 +675,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Symbol indicating a tourist information point or office where visitors can get advice and leaflets.",
   },
+  {
+    id: "97",
+    image: "/road-signs/show-and-tell/sign-97.png",
+    name: "Tourist attraction",
+    meaning:
+      "Brown sign with a white symbol (here a castle) directing you to a tourist attraction or place of historic interest.",
+  },
+  {
+    id: "98",
+    image: "/road-signs/show-and-tell/sign-98.png",
+    name: "Lane control ahead",
+    meaning:
+      "Advance warning that overhead lane control signals are in use ahead — watch for signals showing which lanes are open or closed.",
+  },
+  {
+    id: "99",
+    image: "/road-signs/show-and-tell/sign-99.png",
+    name: "One way",
+    meaning:
+      "Traffic on this road flows in one direction only, in the direction of the arrow. Do not drive against the arrow.",
+  },
+  {
+    id: "100",
+    image: "/road-signs/show-and-tell/sign-100.png",
+    name: "Two-way traffic — give priority to oncoming vehicles",
+    meaning:
+      "Road narrows ahead with two-way traffic. You must give priority to oncoming vehicles (red arrow) before proceeding.",
+  },
 ];
