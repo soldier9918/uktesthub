@@ -927,4 +927,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "End of a designated loading area. Loading and unloading restrictions of the zone you are leaving no longer apply beyond this sign.",
   },
+  {
+    id: "133",
+    image: "/road-signs/show-and-tell/sign-133.png",
+    name: "Permit holders only parking",
+    meaning:
+      "Parking reserved exclusively for vehicles displaying a valid permit. Other vehicles must not park here.",
+  },
+  {
+    id: "134",
+    image: "/road-signs/show-and-tell/sign-134.png",
+    name: "Resident permit holders only",
+    meaning:
+      "Parking restricted to residents holding the permit zones shown (e.g. A, B, C). Vehicles without the correct resident permit must not park here.",
+  },
+  {
+    id: "135",
+    image: "/road-signs/show-and-tell/sign-135.png",
+    name: "Loading only",
+    meaning:
+      "Bay reserved for loading and unloading goods only. Vehicles must not wait beyond the time needed to load or unload.",
+  },
+  {
+    id: "136",
+    image: "/road-signs/show-and-tell/sign-136.png",
+    name: "Voucher parking",
+    meaning:
+      "Voucher parking only during the times shown (here Mon–Sat 9 am–6 pm), with a 2 hour maximum stay. Display a valid parking voucher.",
+  },
 ];
