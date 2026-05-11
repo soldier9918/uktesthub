@@ -1487,4 +1487,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Diagonal chevron markings bordered by solid white lines separating opposing traffic flows. You must not enter the chevron area except in an emergency.",
   },
+  {
+    id: "213",
+    image: "/road-signs/show-and-tell/sign-213.png",
+    name: "Warning lines along the edge",
+    meaning:
+      "Diagonal stripes painted along the side of the carriageway warning of a hazard or narrowing road. Stay within your lane and do not cross the solid border.",
+  },
+  {
+    id: "214",
+    image: "/road-signs/show-and-tell/sign-214.png",
+    name: "Lane closure arrow",
+    meaning:
+      "Large curved white arrow on the carriageway directing you to move into the lane indicated. The lane ahead is closing — change lanes in good time.",
+  },
+  {
+    id: "215",
+    image: "/road-signs/show-and-tell/sign-215.png",
+    name: "Single yellow line",
+    meaning:
+      "A single yellow line along the kerb means waiting is restricted during the times shown on nearby signs. Loading and unloading may be allowed unless kerb marks indicate otherwise.",
+  },
+  {
+    id: "216",
+    image: "/road-signs/show-and-tell/sign-216.png",
+    name: "Double yellow lines",
+    meaning:
+      "Double yellow lines along the kerb mean no waiting at any time. You may stop only briefly to set down or pick up passengers, unless additional kerb marks ban loading.",
+  },
 ];
