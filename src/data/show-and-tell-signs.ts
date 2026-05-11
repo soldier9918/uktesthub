@@ -2467,4 +2467,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Warning of a side road joining the main road on the right. Watch for traffic emerging or turning across your path.",
   },
+  {
+    id: "353",
+    image: "/road-signs/show-and-tell/sign-353.png",
+    name: "Staggered junction",
+    meaning:
+      "Warning of a staggered junction ahead — side roads join from opposite sides of the main road, but not directly opposite each other.",
+  },
+  {
+    id: "354",
+    image: "/road-signs/show-and-tell/sign-354.png",
+    name: "Traffic merges from the left",
+    meaning:
+      "Warning that traffic from a slip road or minor road will be merging with the main road from the left.",
+  },
+  {
+    id: "355",
+    image: "/road-signs/show-and-tell/sign-355.png",
+    name: "Sharp deviation of route to the right",
+    meaning:
+      "Warning of a sharp change of road direction to the right ahead. Reduce speed and follow the bend carefully.",
+  },
+  {
+    id: "356",
+    image: "/road-signs/show-and-tell/sign-356.png",
+    name: "Roundabout ahead",
+    meaning:
+      "Warning of a roundabout ahead. Slow down, look for traffic coming from the right, and be ready to give way.",
+  },
 ];
