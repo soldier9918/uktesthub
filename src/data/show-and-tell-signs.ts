@@ -1375,4 +1375,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Red and white striped end markers fitted to vehicles carrying loads that project beyond the front or rear, to make the projecting load more visible to other road users.",
   },
+  {
+    id: "197",
+    image: "/road-signs/show-and-tell/sign-197.png",
+    name: "Cycle lane road marking",
+    meaning:
+      "Road marking showing a cycle lane reserved for pedal cycles, indicated by a bicycle symbol painted on the carriageway.",
+  },
+  {
+    id: "198",
+    image: "/road-signs/show-and-tell/sign-198.png",
+    name: "Mini-roundabout road marking",
+    meaning:
+      "Circular road marking with arrows indicating a mini-roundabout. Give way to traffic from the right and proceed clockwise around the marking.",
+  },
+  {
+    id: "199",
+    image: "/road-signs/show-and-tell/sign-199.png",
+    name: "Box junction at side roads",
+    meaning:
+      "Yellow criss-cross road markings at side road junctions. You must not enter the box unless your exit is clear, except when turning right and only blocked by oncoming traffic.",
+  },
+  {
+    id: "200",
+    image: "/road-signs/show-and-tell/sign-200.png",
+    name: "Box junction",
+    meaning:
+      "Yellow criss-cross road marking at a junction. You must not enter the box unless your exit is clear, except when turning right and only blocked by oncoming traffic or other right-turning vehicles.",
+  },
 ];
