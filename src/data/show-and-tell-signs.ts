@@ -1095,4 +1095,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Give priority to vehicles coming from the opposite direction at the narrow section ahead. The red arrow shows oncoming traffic with right of way; you must wait until the road is clear.",
   },
+  {
+    id: "157",
+    image: "/road-signs/show-and-tell/sign-157.png",
+    name: "No entry for vehicular traffic",
+    meaning:
+      "No entry for vehicular traffic. You must not drive past this sign — it usually marks the wrong-way end of a one-way street.",
+  },
+  {
+    id: "158",
+    image: "/road-signs/show-and-tell/sign-158.png",
+    name: "No vehicles",
+    meaning:
+      "No vehicles of any kind permitted beyond this sign (except pedal cycles being pushed). Often used at the entrance to pedestrian areas.",
+  },
+  {
+    id: "159",
+    image: "/road-signs/show-and-tell/sign-159.png",
+    name: "Pedestrian zone — no vehicles except for loading",
+    meaning:
+      "Entry to a pedestrian zone. No vehicles permitted except goods vehicles loading or unloading at the times shown on the plate.",
+  },
+  {
+    id: "160",
+    image: "/road-signs/show-and-tell/sign-160.png",
+    name: "Pedestrian zone — loading restrictions",
+    meaning:
+      "Pedestrian zone with no motor vehicles except for loading. The yellow plate shows additional no-waiting restrictions (here at any time).",
+  },
 ];
