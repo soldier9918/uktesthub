@@ -339,4 +339,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "End of a bus lane — the lane is no longer reserved for buses and may be used by all traffic.",
   },
+  {
+    id: "49",
+    image: "/road-signs/show-and-tell/sign-49.png",
+    name: "End of cycle route",
+    meaning:
+      "End of a cycle route or facility. Cyclists should rejoin the main carriageway or follow other signs.",
+  },
+  {
+    id: "50",
+    image: "/road-signs/show-and-tell/sign-50.png",
+    name: "Cycle route",
+    meaning:
+      "Route recommended for pedal cycles. Other vehicles are usually prohibited.",
+  },
+  {
+    id: "51",
+    image: "/road-signs/show-and-tell/sign-51.png",
+    name: "Bus stop",
+    meaning:
+      "Marks a bus stop. Do not park here — buses need clear access for passengers boarding and alighting.",
+  },
+  {
+    id: "52",
+    image: "/road-signs/show-and-tell/sign-52.png",
+    name: "Tram stop",
+    meaning:
+      "Marks a tram stop. Be aware of trams and passengers crossing the road to reach or leave the stop.",
+  },
 ];
