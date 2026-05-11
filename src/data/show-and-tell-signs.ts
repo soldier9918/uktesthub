@@ -2635,4 +2635,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Warning of traffic signals ahead. Be ready to stop — signals may be on a junction, pedestrian crossing or temporary at road works.",
   },
+  {
+    id: "377",
+    image: "/road-signs/show-and-tell/sign-377.png",
+    name: "Pedestrians in road ahead",
+    meaning:
+      "Warning that pedestrians may be walking in the road ahead, often where there is no pavement. Slow down and be ready to give way.",
+  },
+  {
+    id: "378",
+    image: "/road-signs/show-and-tell/sign-378.png",
+    name: "Pedestrians likely to cross",
+    meaning:
+      "Warning that pedestrians, including children, are likely to cross the road ahead. Reduce speed and watch carefully.",
+  },
+  {
+    id: "379",
+    image: "/road-signs/show-and-tell/sign-379.png",
+    name: "Frail or disabled pedestrians",
+    meaning:
+      "Warning of frail, elderly or disabled pedestrians likely to cross the road ahead. Slow down and give them plenty of time.",
+  },
+  {
+    id: "380",
+    image: "/road-signs/show-and-tell/sign-380.png",
+    name: "School crossing patrol",
+    meaning:
+      "Warning of a school crossing patrol ahead. Slow down and be ready to stop when the patrol shows the STOP sign.",
+  },
 ];
