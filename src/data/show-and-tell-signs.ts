@@ -2551,4 +2551,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Warning that the road narrows on the right side ahead — for example, where a hard shoulder or extra lane ends.",
   },
+  {
+    id: "365",
+    image: "/road-signs/show-and-tell/sign-365.png",
+    name: "Road narrows on the left",
+    meaning:
+      "Warning that the road narrows on the left side ahead. Adjust your position and be ready to give way.",
+  },
+  {
+    id: "366",
+    image: "/road-signs/show-and-tell/sign-366.png",
+    name: "Two-way traffic straight ahead",
+    meaning:
+      "Warning that two-way traffic is on the road ahead, often after a one-way section. Keep to the left and watch for oncoming vehicles.",
+  },
+  {
+    id: "367",
+    image: "/road-signs/show-and-tell/sign-367.png",
+    name: "Two-way traffic crosses one-way road",
+    meaning:
+      "Warning that a one-way road ahead is crossed by a two-way road. Watch for traffic coming from both directions.",
+  },
+  {
+    id: "368",
+    image: "/road-signs/show-and-tell/sign-368.png",
+    name: "Steep descent",
+    meaning:
+      "Warning of a steep downhill gradient ahead (e.g. 10%). Use a low gear and brake gently to control your speed.",
+  },
 ];
