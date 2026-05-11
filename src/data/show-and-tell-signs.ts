@@ -311,4 +311,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Warning at a tramway crossing: trams can approach from either direction — look both ways before crossing.",
   },
+  {
+    id: "45",
+    image: "/road-signs/show-and-tell/sign-45.png",
+    name: "Bus lane — look right",
+    meaning:
+      "Warning at a contraflow bus lane: buses may be approaching from the right, against the normal traffic flow.",
+  },
+  {
+    id: "46",
+    image: "/road-signs/show-and-tell/sign-46.png",
+    name: "Start of motorway",
+    meaning:
+      "Start of a motorway (here the M62) and its regulations. Certain vehicles and road users are prohibited.",
+  },
+  {
+    id: "47",
+    image: "/road-signs/show-and-tell/sign-47.png",
+    name: "End of motorway",
+    meaning:
+      "End of motorway regulations. Motorway rules no longer apply beyond this point.",
+  },
+  {
+    id: "48",
+    image: "/road-signs/show-and-tell/sign-48.png",
+    name: "End of bus lane",
+    meaning:
+      "End of a bus lane — the lane is no longer reserved for buses and may be used by all traffic.",
+  },
 ];
