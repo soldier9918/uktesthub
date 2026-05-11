@@ -2579,4 +2579,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Warning of a steep downhill gradient ahead (e.g. 10%). Use a low gear and brake gently to control your speed.",
   },
+  {
+    id: "369",
+    image: "/road-signs/show-and-tell/sign-369.png",
+    name: "Steep ascent",
+    meaning:
+      "Warning of a steep uphill gradient ahead (e.g. 20%). Change to a lower gear in good time to keep momentum.",
+  },
+  {
+    id: "370",
+    image: "/road-signs/show-and-tell/sign-370.png",
+    name: "Hump bridge",
+    meaning:
+      "Warning of a hump bridge ahead. Slow down — your view of oncoming traffic is restricted and the crest may unsettle the vehicle.",
+  },
+  {
+    id: "371",
+    image: "/road-signs/show-and-tell/sign-371.png",
+    name: "Traffic calming hazard markers",
+    meaning:
+      "Yellow and black hazard markers used to highlight traffic calming features such as islands or bollards. Pass with care.",
+  },
+  {
+    id: "372",
+    image: "/road-signs/show-and-tell/sign-372.png",
+    name: "Tunnel ahead",
+    meaning:
+      "Warning of a tunnel ahead. Switch on dipped headlights, remove sunglasses and keep a safe distance from the vehicle in front.",
+  },
 ];
