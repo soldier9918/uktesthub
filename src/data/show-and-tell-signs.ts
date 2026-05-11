@@ -759,4 +759,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "The right-hand lane is closed ahead. Move into one of the open lanes in good time.",
   },
+  {
+    id: "109",
+    image: "/road-signs/show-and-tell/sign-109.png",
+    name: "Lane closed (merge in turn)",
+    meaning:
+      "The left-hand lane is closed ahead — merge in turn with traffic in the open lanes in good time.",
+  },
+  {
+    id: "110",
+    image: "/road-signs/show-and-tell/sign-110.png",
+    name: "Lane destinations with bus exception",
+    meaning:
+      "Shows which lanes lead to which destinations at the junction ahead. The 'Except buses' plate means the left-turn restriction does not apply to buses.",
+  },
+  {
+    id: "111",
+    image: "/road-signs/show-and-tell/sign-111.png",
+    name: "Lane destinations — ahead or right",
+    meaning:
+      "At the junction ahead, the left lane is for traffic going straight on and the right lane is for turning right.",
+  },
+  {
+    id: "112",
+    image: "/road-signs/show-and-tell/sign-112.png",
+    name: "Lane destinations — left or right",
+    meaning:
+      "At the junction ahead, the left lane is for turning left or going ahead and the right lane is for turning right.",
+  },
 ];
