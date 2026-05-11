@@ -367,4 +367,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Marks a tram stop. Be aware of trams and passengers crossing the road to reach or leave the stop.",
   },
+  {
+    id: "53",
+    image: "/road-signs/show-and-tell/sign-53.png",
+    name: "London bus stop",
+    meaning:
+      "Marks a London bus stop. Buses stop here automatically — do not park or wait in the marked area.",
+  },
+  {
+    id: "54",
+    image: "/road-signs/show-and-tell/sign-54.png",
+    name: "Request bus stop",
+    meaning:
+      "Buses only stop here if signalled by passengers waiting at the stop or by passengers on board.",
+  },
+  {
+    id: "55",
+    image: "/road-signs/show-and-tell/sign-55.png",
+    name: "With-flow bus lane",
+    meaning:
+      "Start of a with-flow bus lane that may also be used by local buses, taxis and pedal cycles during its hours of operation.",
+  },
+  {
+    id: "56",
+    image: "/road-signs/show-and-tell/sign-56.png",
+    name: "With-flow cycle lane",
+    meaning:
+      "Start of a with-flow cycle lane reserved for pedal cycles. Other vehicles must not enter the lane during its hours of operation.",
+  },
 ];
