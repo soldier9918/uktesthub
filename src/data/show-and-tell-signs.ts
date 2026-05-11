@@ -1739,4 +1739,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "'TURN LEFT' arrows painted in the lanes mean traffic in those lanes must turn left at the junction ahead. Move into the correct lane early.",
   },
+  {
+    id: "249",
+    image: "/road-signs/show-and-tell/sign-249.png",
+    name: "Ahead only arrows in lanes",
+    meaning:
+      "'AHEAD ONLY' arrows painted in the lanes mean traffic in those lanes must continue straight on. Do not turn left or right from these lanes.",
+  },
+  {
+    id: "250",
+    image: "/road-signs/show-and-tell/sign-250.png",
+    name: "Turn right arrows in lanes",
+    meaning:
+      "'TURN RIGHT' arrows painted in the lanes mean traffic in those lanes must turn right at the junction ahead. Move into the correct lane early.",
+  },
+  {
+    id: "251",
+    image: "/road-signs/show-and-tell/sign-251.png",
+    name: "Lane direction arrows at junction",
+    meaning:
+      "Arrows painted in each lane indicate the permitted direction of travel at the junction ahead — left, ahead or right. Choose your lane in good time according to where you are going.",
+  },
+  {
+    id: "252",
+    image: "/road-signs/show-and-tell/sign-252.png",
+    name: "Get-in-lane arrows",
+    meaning:
+      "Curved arrows painted on the carriageway tell you to move into the lane indicated. Change lanes early and smoothly — do not leave it until the last moment.",
+  },
 ];
