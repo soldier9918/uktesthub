@@ -647,4 +647,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Route reserved for trams only. Other vehicles must not enter.",
   },
+  {
+    id: "93",
+    image: "/road-signs/show-and-tell/sign-93.png",
+    name: "Route for pedal cycles only",
+    meaning:
+      "Route reserved for pedal cycles only. Other vehicles must not enter.",
+  },
+  {
+    id: "94",
+    image: "/road-signs/show-and-tell/sign-94.png",
+    name: "Cyclists dismount",
+    meaning:
+      "Plate advising cyclists to dismount and push their bicycles, usually at the end of a cycle route or at a hazard.",
+  },
+  {
+    id: "95",
+    image: "/road-signs/show-and-tell/sign-95.png",
+    name: "Tram speed limit",
+    meaning:
+      "Mandatory maximum speed limit for trams (here 30 mph). Diamond-shaped signs apply to trams only.",
+  },
+  {
+    id: "96",
+    image: "/road-signs/show-and-tell/sign-96.png",
+    name: "Tourist information",
+    meaning:
+      "Symbol indicating a tourist information point or office where visitors can get advice and leaflets.",
+  },
 ];
