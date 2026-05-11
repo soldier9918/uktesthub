@@ -2103,4 +2103,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Sign displayed on or near highway maintenance vehicles and works to identify the activity. Pass with care and follow any directions given by workers.",
   },
+  {
+    id: "301",
+    image: "/road-signs/show-and-tell/sign-301.png",
+    name: "Slow — wet tar",
+    meaning:
+      "Warning of freshly laid tar or surface dressing on the road. Slow down to avoid skidding and to prevent stones being thrown up.",
+  },
+  {
+    id: "302",
+    image: "/road-signs/show-and-tell/sign-302.png",
+    name: "When red light shows, wait here",
+    meaning:
+      "Stop at this point when the red light is showing at temporary traffic signals at road works. Wait until the light turns green before proceeding.",
+  },
+  {
+    id: "303",
+    image: "/road-signs/show-and-tell/sign-303.png",
+    name: "No road markings for distance",
+    meaning:
+      "Warning that road markings (lane lines, centre lines) are absent for the stated distance, often after resurfacing. Take extra care positioning your vehicle.",
+  },
+  {
+    id: "304",
+    image: "/road-signs/show-and-tell/sign-304.png",
+    name: "New roundabout ahead",
+    meaning:
+      "Advance warning that a new roundabout has been built on this road. Be ready to slow down and give way to traffic from the right.",
+  },
 ];
