@@ -1571,4 +1571,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Vertical yellow markings on a kerb or refuge highlight a traffic island or central hazard in the road. Pass with care, keeping to the correct side.",
   },
+  {
+    id: "225",
+    image: "/road-signs/show-and-tell/sign-225.png",
+    name: "Taxi rank",
+    meaning:
+      "Yellow 'TAXI' road markings within a bay reserve the area for licensed taxis. Other vehicles must not stop or wait in the rank.",
+  },
+  {
+    id: "226",
+    image: "/road-signs/show-and-tell/sign-226.png",
+    name: "Bus lane road marking",
+    meaning:
+      "'BUS LANE' painted on the carriageway shows a lane reserved for buses (and usually cycles and taxis) during the times shown on nearby signs. Other vehicles must keep out during those hours.",
+  },
+  {
+    id: "227",
+    image: "/road-signs/show-and-tell/sign-227.png",
+    name: "Bus stop / cycle area markings",
+    meaning:
+      "Road markings showing dedicated areas for buses or cycles at a stop. Do not stop or park within these markings — they must be kept clear for the vehicles they serve.",
+  },
+  {
+    id: "228",
+    image: "/road-signs/show-and-tell/sign-228.png",
+    name: "Loading only bay",
+    meaning:
+      "A marked bay reserved for goods vehicles loading and unloading, shown by 'Loading only' kerb signage. Other vehicles must not park here during the times indicated.",
+  },
 ];
