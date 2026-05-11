@@ -2075,4 +2075,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Advance warning that a mandatory speed limit (e.g. 50 mph) begins in the distance shown. Be ready to slow down to that limit.",
   },
+  {
+    id: "297",
+    image: "/road-signs/show-and-tell/sign-297.png",
+    name: "Works access only",
+    meaning:
+      "Marks a side road or entrance reserved for site vehicles accessing road works. Other traffic must not enter.",
+  },
+  {
+    id: "298",
+    image: "/road-signs/show-and-tell/sign-298.png",
+    name: "Lane available — works traffic crossing",
+    meaning:
+      "Lane diagram with distance plate showing that lanes remain open but works traffic will be crossing or joining ahead. Be alert for slow site vehicles.",
+  },
+  {
+    id: "299",
+    image: "/road-signs/show-and-tell/sign-299.png",
+    name: "Keep left / right (temporary)",
+    meaning:
+      "Temporary 'keep left' or 'keep right' bollards/signs at road works. Pass on the side indicated by the arrow.",
+  },
+  {
+    id: "300",
+    image: "/road-signs/show-and-tell/sign-300.png",
+    name: "Highway maintenance",
+    meaning:
+      "Sign displayed on or near highway maintenance vehicles and works to identify the activity. Pass with care and follow any directions given by workers.",
+  },
 ];
