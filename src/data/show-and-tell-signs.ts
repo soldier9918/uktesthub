@@ -2187,4 +2187,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Portable traffic signals used to control traffic at road works. Obey the signals as you would any normal traffic light.",
   },
+  {
+    id: "313",
+    image: "/road-signs/show-and-tell/sign-313.png",
+    name: "Level crossing with barrier or gate ahead",
+    meaning:
+      "Warning of a level crossing ahead that has a gate or barrier. Be ready to stop if the barriers begin to lower or lights show.",
+  },
+  {
+    id: "314",
+    image: "/road-signs/show-and-tell/sign-314.png",
+    name: "Level crossing without barrier or gate ahead",
+    meaning:
+      "Warning of an unprotected level crossing ahead — no gate or barrier. Look and listen for trains and only cross when it is safe.",
+  },
+  {
+    id: "315",
+    image: "/road-signs/show-and-tell/sign-315.png",
+    name: "Trams crossing ahead",
+    meaning:
+      "Warning that trams cross or run along the road ahead. Take extra care — trams cannot stop or steer to avoid you.",
+  },
+  {
+    id: "316",
+    image: "/road-signs/show-and-tell/sign-316.png",
+    name: "Stop when lights show",
+    meaning:
+      "Used at level crossings, swing bridges, fire and ambulance stations: you must stop when the red lights flash and not proceed until they go out.",
+  },
 ];
