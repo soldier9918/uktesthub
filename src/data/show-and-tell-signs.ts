@@ -1907,4 +1907,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Red and white chevron arrows indicate a sharp change in road direction — follow the direction of the arrows around the bend or hazard.",
   },
+  {
+    id: "273",
+    image: "/road-signs/show-and-tell/sign-273.png",
+    name: "Road humps",
+    meaning:
+      "Plate showing the profile of road humps ahead, used to slow traffic. Reduce speed and drive over them carefully.",
+  },
+  {
+    id: "274",
+    image: "/road-signs/show-and-tell/sign-274.png",
+    name: "Works access",
+    meaning:
+      "Marks the entrance used by site vehicles entering road works. Watch for slow-moving works traffic turning in.",
+  },
+  {
+    id: "275",
+    image: "/road-signs/show-and-tell/sign-275.png",
+    name: "Works exit",
+    meaning:
+      "Marks the point where site vehicles leave road works and rejoin the road. Be ready for slow lorries pulling out.",
+  },
+  {
+    id: "276",
+    image: "/road-signs/show-and-tell/sign-276.png",
+    name: "Works traffic — direction",
+    meaning:
+      "Direction sign for works traffic, with an arrow showing the route site vehicles should follow into or through road works.",
+  },
 ];
