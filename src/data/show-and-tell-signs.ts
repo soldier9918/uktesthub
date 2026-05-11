@@ -199,4 +199,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Red X on an overhead gantry: the lane below is closed. Move out of it as soon as it is safe — do not drive under a red X.",
   },
+  {
+    id: "29",
+    image: "/road-signs/show-and-tell/sign-29.png",
+    name: "Fog warning",
+    meaning:
+      "Matrix sign warning of fog ahead. Reduce speed, switch on dipped headlights and use fog lights if visibility drops below 100 m.",
+  },
+  {
+    id: "30",
+    image: "/road-signs/show-and-tell/sign-30.png",
+    name: "End",
+    meaning:
+      "End of a previously displayed message or restriction (such as a temporary speed limit) on a matrix sign.",
+  },
+  {
+    id: "31",
+    image: "/road-signs/show-and-tell/sign-31.png",
+    name: "Hazardous goods route (HR)",
+    meaning:
+      "Plate indicating a route to be used by vehicles carrying hazardous goods. Other vehicles may also use it.",
+  },
+  {
+    id: "32",
+    image: "/road-signs/show-and-tell/sign-32.png",
+    name: "Tourist attraction (steam railway)",
+    meaning:
+      "Brown tourist sign pointing to a nearby visitor attraction — here a steam railway 300 yards ahead.",
+  },
 ];
