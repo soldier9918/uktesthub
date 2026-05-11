@@ -171,4 +171,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Electronic sign showing a temporary mandatory speed limit (here 50 mph), often used for congestion or roadworks on motorways.",
   },
+  {
+    id: "25",
+    image: "/road-signs/show-and-tell/sign-25.png",
+    name: "Lane diversion arrow",
+    meaning:
+      "Matrix sign on a motorway gantry: move from your lane in the direction of the arrow because the lane ahead is closed.",
+  },
+  {
+    id: "26",
+    image: "/road-signs/show-and-tell/sign-26.png",
+    name: "Lanes available",
+    meaning:
+      "Matrix sign showing which lanes are open ahead. Vertical lines indicate lanes you may continue to use.",
+  },
+  {
+    id: "27",
+    image: "/road-signs/show-and-tell/sign-27.png",
+    name: "Leave the motorway",
+    meaning:
+      "Red flashing matrix sign: leave the motorway at the next exit because of an incident or closure ahead.",
+  },
+  {
+    id: "28",
+    image: "/road-signs/show-and-tell/sign-28.png",
+    name: "Lane closed (red X)",
+    meaning:
+      "Red X on an overhead gantry: the lane below is closed. Move out of it as soon as it is safe — do not drive under a red X.",
+  },
 ];
