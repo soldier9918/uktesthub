@@ -591,4 +591,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Direction sign to a vehicle testing (MOT) station authorised to test vehicles for roadworthiness.",
   },
+  {
+    id: "85",
+    image: "/road-signs/show-and-tell/sign-85.png",
+    name: "Motorcycle test centre",
+    meaning:
+      "Direction sign to a motorcycle test centre where the practical motorcycle test is carried out.",
+  },
+  {
+    id: "86",
+    image: "/road-signs/show-and-tell/sign-86.png",
+    name: "Traffic enforcement camera",
+    meaning:
+      "Traffic enforcement cameras are in use in the area — they may detect speeding, red-light or bus-lane offences.",
+  },
+  {
+    id: "87",
+    image: "/road-signs/show-and-tell/sign-87.png",
+    name: "Speed camera with limit",
+    meaning:
+      "Speed cameras are in use to enforce the speed limit shown (here 30 mph). Keep within the limit.",
+  },
+  {
+    id: "88",
+    image: "/road-signs/show-and-tell/sign-88.png",
+    name: "Home zone entry",
+    meaning:
+      "Entry to a Home Zone — a residential area where pedestrians and cyclists have priority. Drive very slowly and give way to people on foot.",
+  },
 ];
