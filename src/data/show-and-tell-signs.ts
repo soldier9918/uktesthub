@@ -899,4 +899,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Entry to a 20 mph zone — a 20 mph speed limit applies throughout the area, usually with traffic-calming measures such as humps or chicanes.",
   },
+  {
+    id: "129",
+    image: "/road-signs/show-and-tell/sign-129.png",
+    name: "End of 30 mph zone",
+    meaning:
+      "End of the 30 mph speed limit zone. The previous speed restriction no longer applies — the national speed limit or next posted limit takes over.",
+  },
+  {
+    id: "130",
+    image: "/road-signs/show-and-tell/sign-130.png",
+    name: "Speed camera area",
+    meaning:
+      "Warning of speed camera enforcement of the posted limit (here 50 mph). Orange dots indicate camera markings — keep within the limit.",
+  },
+  {
+    id: "131",
+    image: "/road-signs/show-and-tell/sign-131.png",
+    name: "No waiting",
+    meaning:
+      "No waiting at any time. You must not stop to wait or park, though you may stop briefly to set down or pick up passengers.",
+  },
+  {
+    id: "132",
+    image: "/road-signs/show-and-tell/sign-132.png",
+    name: "End of loading area",
+    meaning:
+      "End of a designated loading area. Loading and unloading restrictions of the zone you are leaving no longer apply beyond this sign.",
+  },
 ];
