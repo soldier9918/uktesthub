@@ -815,4 +815,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Entering a congestion charging zone — drivers must pay a daily charge to drive within the zone during operating hours.",
   },
+  {
+    id: "117",
+    image: "/road-signs/show-and-tell/sign-117.png",
+    name: "Ahead only",
+    meaning:
+      "Mandatory instruction to proceed straight ahead. You must not turn left or right.",
+  },
+  {
+    id: "118",
+    image: "/road-signs/show-and-tell/sign-118.png",
+    name: "Turn left",
+    meaning:
+      "Mandatory instruction to turn left ahead. You must follow the direction shown by the arrow.",
+  },
+  {
+    id: "119",
+    image: "/road-signs/show-and-tell/sign-119.png",
+    name: "Turn left ahead",
+    meaning:
+      "Mandatory instruction that you must turn left at the junction ahead.",
+  },
+  {
+    id: "120",
+    image: "/road-signs/show-and-tell/sign-120.png",
+    name: "Keep left",
+    meaning:
+      "Vehicles must pass to the left of the sign — typically used at islands, bollards or refuges.",
+  },
 ];
