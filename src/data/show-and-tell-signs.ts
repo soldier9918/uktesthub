@@ -1263,4 +1263,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Clearway — no stopping at any time, even briefly to set down or pick up passengers, except in an emergency.",
   },
+  {
+    id: "181",
+    image: "/road-signs/show-and-tell/sign-181.png",
+    name: "Red Route — no stopping except buses",
+    meaning:
+      "Red Route: no stopping at any time, including to set down or pick up passengers — except for buses. Strict penalties apply.",
+  },
+  {
+    id: "182",
+    image: "/road-signs/show-and-tell/sign-182.png",
+    name: "Urban clearway — times of operation",
+    meaning:
+      "Urban clearway in operation during the times shown (here Mon–Fri am 8.00–9.30 and pm 4.30–6.30). You may only stop to pick up or set down passengers.",
+  },
+  {
+    id: "183",
+    image: "/road-signs/show-and-tell/sign-183.png",
+    name: "End of urban clearway",
+    meaning:
+      "End of the urban clearway restrictions. The no-stopping rules of the urban clearway no longer apply beyond this sign.",
+  },
+  {
+    id: "184",
+    image: "/road-signs/show-and-tell/sign-184.png",
+    name: "No motor vehicles, cycles, animals or pedestrians on mown verge",
+    meaning:
+      "Motor vehicles, cyclists, animals and pedestrians are prohibited from using the mown verge — keep to the carriageway or footway.",
+  },
 ];
