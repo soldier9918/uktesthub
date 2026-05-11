@@ -1599,4 +1599,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "A marked bay reserved for goods vehicles loading and unloading, shown by 'Loading only' kerb signage. Other vehicles must not park here during the times indicated.",
   },
+  {
+    id: "229",
+    image: "/road-signs/show-and-tell/sign-229.png",
+    name: "Parking bays",
+    meaning:
+      "White rectangles marked along the kerb show designated parking bays. Park wholly within a bay and follow any time limit or permit conditions on nearby signs.",
+  },
+  {
+    id: "230",
+    image: "/road-signs/show-and-tell/sign-230.png",
+    name: "Stop line and give way triangle",
+    meaning:
+      "A solid white stop line with a 'give way' triangle painted on the road. Slow down and give way to traffic on the major road; stop behind the line if necessary.",
+  },
+  {
+    id: "231",
+    image: "/road-signs/show-and-tell/sign-231.png",
+    name: "Chevron distance markings",
+    meaning:
+      "White chevrons painted on the carriageway. Keep at least two chevrons between you and the vehicle in front to maintain a safe separation distance.",
+  },
+  {
+    id: "232",
+    image: "/road-signs/show-and-tell/sign-232.png",
+    name: "Hard shoulder edge line",
+    meaning:
+      "Solid white line marking the edge of the main carriageway on a motorway, separating it from the hard shoulder. Do not drive on the hard shoulder except in an emergency or when directed.",
+  },
 ];
