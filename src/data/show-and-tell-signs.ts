@@ -2243,4 +2243,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Symbol used to indicate a tramway or tram crossing, often on map-type signs or route markers.",
   },
+  {
+    id: "321",
+    image: "/road-signs/show-and-tell/sign-321.png",
+    name: "Overhead electric cable",
+    meaning:
+      "Warning of an overhead electric cable ahead — a plate normally states the maximum safe height for vehicles passing beneath.",
+  },
+  {
+    id: "322",
+    image: "/road-signs/show-and-tell/sign-322.png",
+    name: "Level crossing with barrier",
+    meaning:
+      "Marker showing a level crossing with a barrier or gate. Stop when the lights flash and wait until the barrier lifts.",
+  },
+  {
+    id: "323",
+    image: "/road-signs/show-and-tell/sign-323.png",
+    name: "Risk of grounding",
+    meaning:
+      "Warning of a hump bridge, ramp or change of slope where long, low vehicles risk grounding (hitting the road surface) underneath.",
+  },
+  {
+    id: "324",
+    image: "/road-signs/show-and-tell/sign-324.png",
+    name: "Drivers of long low vehicles — phone before crossing",
+    meaning:
+      "At a level crossing, drivers of long or low vehicles must phone the signal operator from the railway telephone before crossing to check it is safe.",
+  },
 ];
