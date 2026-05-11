@@ -1319,4 +1319,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Plate displayed on vehicles carrying dangerous goods. The codes show the substance, emergency action required and a contact number for the emergency services.",
   },
+  {
+    id: "189",
+    image: "/road-signs/show-and-tell/sign-189.png",
+    name: "Plain orange plate",
+    meaning:
+      "Plain orange plate displayed on vehicles carrying dangerous goods in bulk where a specific hazard code is not required. Indicates a hazardous load is on board.",
+  },
+  {
+    id: "190",
+    image: "/road-signs/show-and-tell/sign-190.png",
+    name: "Toxic substances",
+    meaning:
+      "Diamond placard for class 6 toxic substances. Displayed on vehicles carrying poisonous materials that can cause harm if swallowed, inhaled or absorbed.",
+  },
+  {
+    id: "191",
+    image: "/road-signs/show-and-tell/sign-191.png",
+    name: "Spontaneously combustible",
+    meaning:
+      "Diamond placard for class 4 spontaneously combustible substances. Displayed on vehicles carrying materials that can ignite without an external source.",
+  },
+  {
+    id: "192",
+    image: "/road-signs/show-and-tell/sign-192.png",
+    name: "Radioactive",
+    meaning:
+      "Diamond placard for class 7 radioactive substances. Displayed on vehicles carrying radioactive materials.",
+  },
 ];
