@@ -871,4 +871,32 @@ export const SHOW_AND_TELL_SIGNS: SignFlipCardData[] = [
     meaning:
       "Mandatory maximum speed limit in miles per hour (here 40 mph). You must not exceed this speed.",
   },
+  {
+    id: "125",
+    image: "/road-signs/show-and-tell/sign-125.png",
+    name: "National speed limit applies",
+    meaning:
+      "The national speed limit applies on this road — 60 mph for cars on single carriageways and 70 mph on dual carriageways and motorways (lower limits for some vehicles).",
+  },
+  {
+    id: "126",
+    image: "/road-signs/show-and-tell/sign-126.png",
+    name: "Minimum speed",
+    meaning:
+      "Mandatory minimum speed limit (here 30 mph). You must not drive slower than this speed unless it is unsafe to do so.",
+  },
+  {
+    id: "127",
+    image: "/road-signs/show-and-tell/sign-127.png",
+    name: "End of minimum speed",
+    meaning:
+      "End of the minimum speed limit shown. The minimum speed restriction no longer applies.",
+  },
+  {
+    id: "128",
+    image: "/road-signs/show-and-tell/sign-128.png",
+    name: "20 mph zone",
+    meaning:
+      "Entry to a 20 mph zone — a 20 mph speed limit applies throughout the area, usually with traffic-calming measures such as humps or chicanes.",
+  },
 ];
