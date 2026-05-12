@@ -1809,32 +1809,48 @@ export const blogPosts: BlogPost[] = [
       <>
         <p>If you're booking the UK Driving Theory Test in 2026, the cheapest and most effective preparation is also the most boring: hammer free practice tests until 47/50 feels routine. UK Test Hub has unlimited free mocks with no account required, instant marking and full DVSA-style explanations. Below are 10 starter questions to warm up — then click through to a full free mock to keep going.</p>
 
-        <h2>Practice Questions</h2>
+        <h2>Practice Questions &amp; Answers</h2>
         <ol>
-          <li><strong>Q1.</strong> How long is your provisional licence valid?</li>
-          <li><strong>Q2.</strong> Cost of a UK Driving Theory Test in 2026?</li>
-          <li><strong>Q3.</strong> What documents do you need to book?</li>
-          <li><strong>Q4.</strong> Can you wear a smartwatch into the test?</li>
-          <li><strong>Q5.</strong> What if you're late to your appointment?</li>
-          <li><strong>Q6.</strong> Do you get scrap paper at the test centre?</li>
-          <li><strong>Q7.</strong> How is your result delivered?</li>
-          <li><strong>Q8.</strong> Can you appeal your result?</li>
-          <li><strong>Q9.</strong> If you cancel, how much notice do you need for a refund?</li>
-          <li><strong>Q10.</strong> How do you book a re-sit after a fail?</li>
-        </ol>
-
-        <h2>Answers &amp; Explanations</h2>
-        <ol>
-          <li><strong>A1.</strong> Until your 70th birthday or you upgrade to a full licence.</li>
-          <li><strong>A2.</strong> £23 (subject to government review).</li>
-          <li><strong>A3.</strong> Provisional driving licence number, debit/credit card and email address.</li>
-          <li><strong>A4.</strong> No — all electronics must be left in the locker.</li>
-          <li><strong>A5.</strong> You'll likely lose your fee — arrive 20 minutes early.</li>
-          <li><strong>A6.</strong> No, but the screen has a built-in highlight/flag tool.</li>
-          <li><strong>A7.</strong> On screen and via printed letter at the centre.</li>
-          <li><strong>A8.</strong> Only if there was a fault with the test itself, not based on score.</li>
-          <li><strong>A9.</strong> At least 3 clear working days for a full refund.</li>
-          <li><strong>A10.</strong> Online via gov.uk after the 3-working-day cooling-off period.</li>
+          <li>
+            <p><strong>Q1.</strong> How long is your provisional licence valid?</p>
+            <p><strong>A1.</strong> Until your 70th birthday or you upgrade to a full licence.</p>
+          </li>
+          <li>
+            <p><strong>Q2.</strong> Cost of a UK Driving Theory Test in 2026?</p>
+            <p><strong>A2.</strong> £23 (subject to government review).</p>
+          </li>
+          <li>
+            <p><strong>Q3.</strong> What documents do you need to book?</p>
+            <p><strong>A3.</strong> Provisional driving licence number, debit/credit card and email address.</p>
+          </li>
+          <li>
+            <p><strong>Q4.</strong> Can you wear a smartwatch into the test?</p>
+            <p><strong>A4.</strong> No — all electronics must be left in the locker.</p>
+          </li>
+          <li>
+            <p><strong>Q5.</strong> What if you're late to your appointment?</p>
+            <p><strong>A5.</strong> You'll likely lose your fee — arrive 20 minutes early.</p>
+          </li>
+          <li>
+            <p><strong>Q6.</strong> Do you get scrap paper at the test centre?</p>
+            <p><strong>A6.</strong> No, but the screen has a built-in highlight/flag tool.</p>
+          </li>
+          <li>
+            <p><strong>Q7.</strong> How is your result delivered?</p>
+            <p><strong>A7.</strong> On screen and via printed letter at the centre.</p>
+          </li>
+          <li>
+            <p><strong>Q8.</strong> Can you appeal your result?</p>
+            <p><strong>A8.</strong> Only if there was a fault with the test itself, not based on score.</p>
+          </li>
+          <li>
+            <p><strong>Q9.</strong> If you cancel, how much notice do you need for a refund?</p>
+            <p><strong>A9.</strong> At least 3 clear working days for a full refund.</p>
+          </li>
+          <li>
+            <p><strong>Q10.</strong> How do you book a re-sit after a fail?</p>
+            <p><strong>A10.</strong> Online via gov.uk after the 3-working-day cooling-off period.</p>
+          </li>
         </ol>
 
         <h2>Tips to Pass</h2>
