@@ -1,60 +1,78 @@
-## AdSense Approval Cleanup Plan
+## 1. Expand all Study Guides to ~1200 words and add mock-1 CTAs
 
-### 1. Remove "Pro" branding
-- Audit & strip "UK Test Hub Pro" / "Pro" badges across: `SiteHeader.tsx`, `SiteFooter.tsx`, `routes/about.tsx`, `routes/contact.tsx`, `routes/privacy.tsx`, `routes/terms.tsx`, `routes/disclaimer.tsx`, `routes/cookies.tsx`, `routes/index.tsx`, plus any auth/transactional email templates under `src/lib/email-templates/` (if present) and `src/routes/lovable/email/...`.
-- Replace with plain "UK Test Hub". No premium/paid implication anywhere.
+**Scope:** Every post in `src/data/blog.tsx` (~46 posts). Current word counts range 700–900. Target ~1200 words per post (range 1150–1300), reading naturally — not padded.
 
-### 2. Email/domain cleanup
-- Global find/replace: any `*@uktesthub.co.uk` (hello, partners, privacy, etc.) → `support@uktesthub.com`.
-- Affected pages: Contact, Privacy, Terms, Cookies, Disclaimer, Help, Footer, About, FAQ, Report, Feedback, email templates.
+**Per-post additions:**
+- Add 2–3 new prose sections (e.g. "Why this test matters", "How to study smart in 2026", "Common myths", "What to do on test day") tailored to the topic. No keyword stuffing.
+- Ensure every post contains exactly one prominent **"Start Mock Test 1"** CTA card linking to mock 1 of its category. Most Driving/Citizenship/CSCS/NHS posts already have this — audit and add where missing (notably the older posts before line ~1000 and the Taxi & Private Hire posts).
+- Bump `readingMinutes` to match new length (≈6 min).
 
-### 3. Soften official-sounding wording
-Run targeted rewrites across `src/data/category-seo.ts`, `src/data/topic-seo.ts`, `src/data/blog.tsx`, `src/data/quizzes.ts`, `src/data/categories.ts`, `src/components/SeoLanding.tsx`, `src/routes/index.tsx`, and the 8 `/blog/*` SEO landing pages:
+**Category → mock-1 slug map:**
 
-| From | To |
+| Blog category | Mock-1 slug |
 |---|---|
-| official UK exams | UK tests and assessments |
-| real exam questions | practice-style questions |
-| mirror the real exam format | designed to reflect common exam formats |
-| same number of questions | similar question structure where appropriate |
-| official pass mark | typical pass mark (or "published pass mark where applicable") |
-| mapped to official DVSA learning outcomes | based on publicly available guidance |
-| same format used by the Home Office | designed to reflect common Life in the UK test structure |
-| real DVSA-style | DVSA-style practice |
+| Driving | `driving-theory-mock-1` |
+| Citizenship | `life-in-the-uk-mock-1` |
+| Professional (CSCS) | `cscs-mock-1` |
+| NHS | `nhs-numeracy-mock-1` |
+| English (IELTS) | `ielts-listening-mock-1` |
+| Taxi & Private Hire | `seru-tfl-mock-1` |
+| Education | `gcse-maths-warmup` (closest existing mock) |
+| Fun | `general-knowledge-daily` |
+| Security (new) | `sia-door-supervisor-mock-1` |
+| IT & Tech (new) | `comptia-a-plus-mock-1` |
 
-Also remove implied affiliation language with DVSA, TfL, Home Office, NHS, SIA, CSCS, IELTS, ESOL, NMC, UCAT, BMAT, PLAB.
+## 2. Add Security & IT & Tech Study Guides
 
-### 4. Visible disclaimer
-- Update `SiteFooter.tsx` disclaimer block + the disclaimer line on Privacy/Terms/Disclaimer/About to the exact wording:
-  > "UK Test Hub is an independent practice platform. We are not affiliated with any official exam body, government department, regulator or test provider. All questions are for practice and revision purposes only."
+Create **3 posts per missing category** (6 new posts total) added to `src/data/blog.tsx` with new hero images via `imagegen` into `src/assets/blog/`, and add the two new sections to `CATEGORY_SECTIONS` in `src/routes/blog.index.tsx`.
 
-### 5. Rename Blog labels (URLs stay /blog)
-In `src/routes/index.tsx`, `SiteFooter.tsx`, `routes/blog.index.tsx`, `routes/blog.$slug.tsx`, `SiteHeader.tsx`:
-- "Blog" → "Study Guides"
-- "Latest from the Blog" → "Latest Study Guides"
-- "View all articles" → "View all study guides"
-- "Read revision tips on the blog" → "Read revision tips in our study guides"
-- Footer Company link "Blog" → "Study Guides"
+**Security & Door Supervision** (`category: "Security"`):
+1. `sia-door-supervisor-test-guide-2026` — full SIA DS overview, syllabus, pass criteria, how to revise.
+2. `sia-door-supervisor-mock-questions-explained` — sample question types with worked answers.
+3. `how-to-pass-sia-door-supervisor-first-time` — study plan + exam-day tips.
 
-### 6. Homepage category trimming
-In `src/routes/index.tsx`, render only these 8 priority categories in the main grid (in order):
-`driving`, `citizenship`, `taxi-private-hire`, `construction`, `nhs`, `security`, `english`, `it-tech`.
-Add a "Browse All Categories" CTA below linking to `/all-tests` (or a categories index). All categories remain reachable, just not on the homepage hero grid.
+**IT & Tech** (`category: "IT & Tech"`):
+1. `comptia-a-plus-uk-study-guide` — exam structure, domains, revision plan.
+2. `cyber-security-awareness-test-guide` — what UK employers test, common topics.
+3. `itil-4-foundation-practice-guide` — syllabus, sample questions, study tips.
 
-### 7. Footer subscription form
-Hide the subscribe form in `SiteFooter.tsx` (comment out or gate behind a flag) since no real mailing list / consent flow is wired. Keep the social icons and disclaimer.
+Each new post: ~1200 words, FAQ block, JSON-LD via existing `articleSchema`, mock-1 CTA, hero image. Add the two new category section entries to `CATEGORY_SECTIONS` and to the footer "Popular Tests" list if appropriate (no — keep footer untouched unless asked).
 
-### 8. Final QA pass
-- `rg "uktesthub\.co\.uk"` → 0 results
-- `rg -i "\bPro\b"` in components/routes → 0 brand hits (ignore unrelated words like "Profile")
-- `public/robots.txt` and sitemap (server route + static) contain no `/admin*` URLs (already true; reconfirm)
-- Spot-check 3 SEO blog pages + homepage on mobile width 375px for layout
-- No empty `AdSlot` placeholders rendering visible boxes when ad disabled
+## 3. UK GDPR / PECR cookie consent system
 
-### Files to touch (approx)
-- Components: `SiteHeader.tsx`, `SiteFooter.tsx`, `SeoLanding.tsx`, `AdSlot.tsx` (verify hidden when empty)
-- Routes: `index.tsx`, `about.tsx`, `contact.tsx`, `privacy.tsx`, `terms.tsx`, `cookies.tsx`, `disclaimer.tsx`, `help.tsx`, `faq.tsx`, `report.tsx`, `feedback.tsx`, `blog.index.tsx`, `blog.$slug.tsx`, the 8 `blog.<seo-slug>.tsx`
-- Data: `categories.ts`, `category-seo.ts`, `topic-seo.ts`, `blog.tsx`, `quizzes.ts`
-- Email templates if present under `src/routes/lovable/email/` or `src/lib/email-templates/`
+### 3a. New components
+- `src/lib/consent.ts` — typed consent store with helpers: `getConsent()`, `setConsent(partial)`, `subscribe(cb)`, `clearConsent()`, constant `CONSENT_VERSION = 1`, localStorage key `uktesthub_cookie_consent`. Schema:
+  ```ts
+  { acceptedAt: string; analytics: boolean; advertising: boolean; functional: boolean; version: 1 }
+  ```
+- `src/components/CookieConsent.tsx` — banner + manage-choices modal in one component. Reads/writes via `consent.ts`. Pre-ticked = false for all optional categories. Buttons "Accept all", "Reject non-essential", "Manage choices" given equal visual weight (same size, same variant). Modal uses shadcn `Dialog` + `Switch`. Mounted once in `__root.tsx` next to `PageViewTracker`.
+- `src/lib/analytics-ga.ts` — lazy GA4 loader. Exports `loadGA()` (injects gtag with measurement ID `G-P2CME6M6GE`, only once) and `trackGAEvent(name, params)`. Subscribes to consent changes; if analytics revoked, sets `window['ga-disable-G-P2CME6M6GE'] = true`.
+- Update `src/components/PageViewTracker.tsx` to additionally call `trackGAEvent('page_view', {...})` only when analytics consent is granted.
+- Update `src/components/QuizRunner.tsx` (and any quiz_start/quiz_complete trackers) to also dispatch GA events guarded by consent.
 
-No schema, auth, or routing changes. Pure content + presentation cleanup.
+### 3b. Footer integration
+- Add a "Cookie Settings" link in `SiteFooter.tsx` legal column; clicking dispatches a `window.dispatchEvent(new Event('open-cookie-settings'))`. The `CookieConsent` component listens and opens the manage-choices modal.
+
+### 3c. Page content updates
+- Rewrite `src/routes/cookies.tsx` to describe the four categories (strictly necessary, analytics, advertising, functional), how to change choices via "Cookie Settings", and `support@uktesthub.com`.
+- Append paragraphs to `src/routes/privacy.tsx` clarifying that GA only runs after analytics consent and AdSense will only run after advertising consent; users can change preferences any time.
+
+### 3d. AdSense readiness
+- No AdSense script is currently loaded — keep that. Add a guarded helper `loadAdsense()` in `src/lib/ads.ts` that does nothing today but is structured to be activated when consent.advertising is true.
+
+### 3e. Admin & route exclusions
+- Banner is suppressed on routes starting with `/admin-kb20`.
+
+## Technical notes
+
+- Consent store is SSR-safe (guards `typeof window`). Initial state on the server = "no banner rendered" until hydration to avoid layout shift.
+- All optional toggles default OFF; banner shows on missing consent or when `version !== CONSENT_VERSION`.
+- No GA, no AdSense, no third-party script loads at module top-level — all gated behind consent.
+- Tailwind tokens only; banner uses `bg-card`, `border-border`, `text-foreground`, coral primary; bottom-anchored sticky with safe-area padding.
+- No changes to admin routes, robots.txt, sitemap, or auth flows.
+
+## Out of scope
+
+- Rewriting question banks for new SIA/IT mocks (mocks already exist in `public/mocks/`).
+- Real AdSense activation — wiring only.
+- Consent Mode v2 advanced flags beyond the GA4 disable toggle.
