@@ -249,20 +249,7 @@ function HomePage() {
           <SectionTitle>Popular Categories</SectionTitle>
 
           <div className="mt-10 grid gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-            {(() => {
-              const PRIORITY = [
-                "driving",
-                "citizenship",
-                "taxi-private-hire",
-                "construction",
-                "nhs",
-                "security",
-                "english",
-                "it-tech",
-              ] as const;
-              const bySlug = new Map(categories.map((c) => [c.slug, c]));
-              return PRIORITY.map((s) => bySlug.get(s)).filter(Boolean) as typeof categories;
-            })().map((c) => {
+            {categories.map((c) => {
               const isCoral = c.accent === "coral";
               const CHIP_LIMIT = 3;
               const chips = c.topics
