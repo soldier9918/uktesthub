@@ -8438,7 +8438,10 @@ export const blogPosts: BlogPost[] = [
         </p>
         <p>
           Related reading: <B slug="ielts-tips-for-beginners">IELTS Tips for Beginners</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
 
   // ==================== TAXI & PRIVATE HIRE PILLAR ====================
 
@@ -10742,7 +10745,10 @@ export const blogPosts: BlogPost[] = [
         <p>
           Related reading: <B slug="sia-door-supervisor-test-guide-2026">the complete 2026 SIA Door Supervisor guide</B>{" "}
           and <B slug="sia-door-supervisor-mock-questions-explained">SIA mock questions explained</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
 
   // ===== IT & Tech =====
   {
@@ -11408,7 +11414,10 @@ export const blogPosts: BlogPost[] = [
           Visit the <C slug="it-tech">IT & Tech practice hub</C> for more free mocks. Related reading:{" "}
           <B slug="comptia-a-plus-uk-study-guide">our CompTIA A+ UK study guide</B> and{" "}
           <B slug="cyber-security-awareness-test-guide">cyber security awareness test guide</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
 
 ];
 
