@@ -21,6 +21,8 @@ import type {
   HotSpotQuestion,
   DragDropBlanksQuestion,
 } from "@/data/quizzes";
+import { getCategory } from "@/data/categories";
+import { TOTAL_MOCKS_PER_TOPIC } from "@/data/mocks";
 import { AdSlot } from "./AdSlot";
 import { RoadSign } from "./RoadSign";
 import { ReportQuestionButton } from "./ReportQuestionButton";
@@ -1088,22 +1090,10 @@ function Results({
           <Stat label="Percentage" value={`${percent}%`} />
           <Stat label="Pass mark" value={`${quiz.passMark}%`} />
         </div>
-        <div className="mt-7 flex flex-wrap justify-center gap-3">
-          <button
-            onClick={onRetry}
-            className="inline-flex items-center gap-2 rounded-xl bg-gradient-coral px-5 py-2.5 text-sm font-semibold text-coral-foreground shadow-coral"
-          >
-            <RotateCcw className="h-4 w-4" /> Retry test
-          </button>
-          <Link
-            to="/category/$slug"
-            params={{ slug: quiz.category }}
-            className="inline-flex items-center gap-2 rounded-xl border border-border bg-background px-5 py-2.5 text-sm font-semibold hover:bg-muted"
-          >
-            More tests <ArrowRight className="h-4 w-4" />
-          </Link>
-        </div>
+        <ResultsCtas quiz={quiz} onRetry={onRetry} />
       </div>
+
+      <NextStepsPanel quiz={quiz} />
 
       <div className="rounded-3xl border border-border bg-card p-6 shadow-soft md:p-8">
         <h3 className="font-display text-xl font-semibold">Review your answers</h3>
@@ -1157,4 +1147,117 @@ function formatTime(s: number) {
   const m = Math.floor(s / 60);
   const r = s % 60;
   return `${m}:${r.toString().padStart(2, "0")}`;
+}
+
+function parseMockNumber(slug: string): { topicSlug: string; mockNumber: number | null } {
+  const match = /-mock-(\d+)$/.exec(slug);
+  if (!match) return { topicSlug: slug, mockNumber: null };
+  return {
+    topicSlug: slug.replace(/-mock-\d+$/, ""),
+    mockNumber: parseInt(match[1], 10),
+  };
+}
+
+function ResultsCtas({ quiz, onRetry }: { quiz: Quiz; onRetry: () => void }) {
+  const fallbackTopic =
+    (quiz as { topic?: string }).topic ?? parseMockNumber(quiz.slug).topicSlug;
+  const { mockNumber } = parseMockNumber(quiz.slug);
+  const nextNum =
+    mockNumber && mockNumber < TOTAL_MOCKS_PER_TOPIC ? mockNumber + 1 : null;
+  const nextSlug = nextNum ? `${fallbackTopic}-mock-${nextNum}` : null;
+
+  return (
+    <div className="mt-7 flex flex-wrap justify-center gap-3">
+      <button
+        onClick={onRetry}
+        className="inline-flex items-center gap-2 rounded-xl border border-border bg-background px-5 py-2.5 text-sm font-semibold hover:bg-muted"
+      >
+        <RotateCcw className="h-4 w-4" /> Retake test
+      </button>
+      {nextSlug ? (
+        <Link
+          to="/quiz/$slug"
+          params={{ slug: nextSlug }}
+          className="inline-flex items-center gap-2 rounded-xl bg-gradient-coral px-5 py-2.5 text-sm font-semibold text-coral-foreground shadow-coral"
+        >
+          Next mock test (Mock {nextNum}) <ArrowRight className="h-4 w-4" />
+        </Link>
+      ) : (
+        <Link
+          to="/topic/$slug"
+          params={{ slug: fallbackTopic }}
+          className="inline-flex items-center gap-2 rounded-xl bg-gradient-coral px-5 py-2.5 text-sm font-semibold text-coral-foreground shadow-coral"
+        >
+          Browse all mock tests <ArrowRight className="h-4 w-4" />
+        </Link>
+      )}
+    </div>
+  );
+}
+
+function NextStepsPanel({ quiz }: { quiz: Quiz }) {
+  const fallbackTopic =
+    (quiz as { topic?: string }).topic ?? parseMockNumber(quiz.slug).topicSlug;
+  const category = getCategory(quiz.category);
+  const related =
+    category?.topics.filter((t) => t.slug !== fallbackTopic).slice(0, 6) ?? [];
+
+  return (
+    <div className="grid gap-4 md:grid-cols-2">
+      <div className="rounded-3xl border border-border bg-card p-6 shadow-soft">
+        <h3 className="font-display text-lg font-semibold">Keep going</h3>
+        <p className="mt-1 text-sm text-muted-foreground">
+          Lock in what you've learned with the topic guide and the next mock.
+        </p>
+        <div className="mt-4 flex flex-col gap-2">
+          <Link
+            to="/guide/$slug"
+            params={{ slug: fallbackTopic }}
+            className="inline-flex items-center justify-between rounded-xl border border-border bg-background px-4 py-2.5 text-sm font-semibold hover:bg-muted"
+          >
+            Read the study guide <ArrowRight className="h-4 w-4" />
+          </Link>
+          <Link
+            to="/topic/$slug"
+            params={{ slug: fallbackTopic }}
+            className="inline-flex items-center justify-between rounded-xl border border-border bg-background px-4 py-2.5 text-sm font-semibold hover:bg-muted"
+          >
+            All 45 mocks for this topic <ArrowRight className="h-4 w-4" />
+          </Link>
+          {category && (
+            <Link
+              to="/category/$slug"
+              params={{ slug: category.slug }}
+              className="inline-flex items-center justify-between rounded-xl border border-border bg-background px-4 py-2.5 text-sm font-semibold hover:bg-muted"
+            >
+              {category.title} category <ArrowRight className="h-4 w-4" />
+            </Link>
+          )}
+        </div>
+      </div>
+
+      {related.length > 0 && (
+        <div className="rounded-3xl border border-border bg-card p-6 shadow-soft">
+          <h3 className="font-display text-lg font-semibold">Related practice tests</h3>
+          <p className="mt-1 text-sm text-muted-foreground">
+            Other tests in {category?.title ?? "this category"} students often try next.
+          </p>
+          <ul className="mt-4 space-y-2">
+            {related.map((t) => (
+              <li key={t.slug}>
+                <Link
+                  to="/topic/$slug"
+                  params={{ slug: t.slug }}
+                  className="flex items-center justify-between rounded-xl border border-border bg-background px-4 py-2.5 text-sm font-medium hover:bg-muted"
+                >
+                  <span>{t.title}</span>
+                  <ArrowRight className="h-4 w-4 text-muted-foreground" />
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </div>
+  );
 }
