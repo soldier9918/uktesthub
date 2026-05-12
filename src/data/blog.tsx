@@ -2298,7 +2298,11 @@ export const blogPosts: BlogPost[] = [
           <C slug="english">IELTS</C>, <C slug="career">aptitude tests</C>, and{" "}
           <C slug="nhs">NHS recruitment</C>. Pick your exam, take a baseline mock today, and start applying the
           rhythm above tomorrow. You'll be amazed how much faster you progress.
-        </p>,
+        </p>
+      </>
+    ),
+  },
+
   {
     slug: "uk-driving-theory-questions-2026",
     title: "UK Driving Theory Questions 2026 (Free Practice Test)",
@@ -2508,7 +2512,11 @@ export const blogPosts: BlogPost[] = [
         </p>
         <p>
           Related reading: <B slug="how-to-pass-driving-theory-test">How to Pass the UK Driving Theory Test First Time</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
+
   {
     slug: "50-uk-road-signs-you-must-know",
     title: "50 UK Road Signs You Must Know (With Meanings)",
@@ -2716,7 +2724,11 @@ export const blogPosts: BlogPost[] = [
         </p>
         <p>
           Related reading: <B slug="top-uk-road-signs-explained">Top UK Road Signs Explained</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
+
   {
     slug: "driving-theory-test-uk-complete-guide",
     title: "Driving Theory Test UK: Complete Guide to Pass First Time",
@@ -2908,7 +2920,11 @@ export const blogPosts: BlogPost[] = [
         </p>
         <p>
           Related reading: <B slug="how-to-pass-driving-theory-test">How to Pass the UK Driving Theory Test First Time</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
+
   {
     slug: "hardest-uk-driving-theory-questions",
     title: "Hardest UK Driving Theory Questions (With Answers)",
@@ -3116,7 +3132,11 @@ export const blogPosts: BlogPost[] = [
         </p>
         <p>
           Related reading: <B slug="most-common-driving-theory-mistakes">Most Common Driving Theory Mistakes</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
+
   {
     slug: "uk-hazard-perception-test-tips",
     title: "UK Hazard Perception Test Tips to Pass Easily",
@@ -3310,7 +3330,11 @@ export const blogPosts: BlogPost[] = [
         </p>
         <p>
           Related reading: <B slug="how-to-pass-driving-theory-test">How to Pass the UK Driving Theory Test First Time</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
+
   {
     slug: "driving-theory-mock-test-uk",
     title: "Driving Theory Mock Test UK (Practice-Style Questions)",
@@ -3518,7 +3542,11 @@ export const blogPosts: BlogPost[] = [
         </p>
         <p>
           Related reading: <B slug="free-driving-theory-practice-test-uk">Free Driving Theory Practice Test UK (2026)</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
+
   {
     slug: "uk-road-signs-quiz-100-percent",
     title: "UK Road Signs Quiz: Can You Get 100%?",
@@ -3724,7 +3752,11 @@ export const blogPosts: BlogPost[] = [
         </p>
         <p>
           Related reading: <B slug="50-uk-road-signs-you-must-know">50 UK Road Signs You Must Know</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
+
   {
     slug: "most-common-driving-theory-mistakes",
     title: "Most Common Driving Theory Mistakes (UK Learners)",
@@ -3916,7 +3948,11 @@ export const blogPosts: BlogPost[] = [
         </p>
         <p>
           Related reading: <B slug="hardest-uk-driving-theory-questions">Hardest UK Driving Theory Questions</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
+
   {
     slug: "uk-driving-theory-pass-mark-explained",
     title: "UK Driving Theory Pass Mark Explained (2026 Update)",
@@ -4108,7 +4144,11 @@ export const blogPosts: BlogPost[] = [
         </p>
         <p>
           Related reading: <B slug="driving-theory-test-uk-complete-guide">Driving Theory Test UK: Complete Guide</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
+
   {
     slug: "free-driving-theory-practice-test-uk",
     title: "Free Driving Theory Practice Test UK (Updated 2026)",
@@ -4300,7 +4340,11 @@ export const blogPosts: BlogPost[] = [
         </p>
         <p>
           Related reading: <B slug="driving-theory-mock-test-uk">Driving Theory Mock Test UK</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
+
   {
     slug: "life-in-the-uk-test-questions-and-answers-2026",
     title: "Life in the UK Test Questions and Answers 2026",
@@ -4508,7 +4552,11 @@ export const blogPosts: BlogPost[] = [
         </p>
         <p>
           Related reading: <B slug="life-in-the-uk-test-guide">The Life in the UK Test: Complete Guide</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
+
   {
     slug: "50-life-in-the-uk-questions-you-must-know",
     title: "50 Life in the UK Questions You Must Know",
@@ -4716,7 +4764,11 @@ export const blogPosts: BlogPost[] = [
         </p>
         <p>
           Related reading: <B slug="life-in-the-uk-test-questions-and-answers-2026">Life in the UK Questions and Answers 2026</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
+
   {
     slug: "hardest-life-in-the-uk-test-questions",
     title: "Hardest Life in the UK Test Questions (With Answers)",
@@ -4924,7 +4976,11 @@ export const blogPosts: BlogPost[] = [
         </p>
         <p>
           Related reading: <B slug="common-life-in-the-uk-test-mistakes-to-avoid">Common Life in the UK Test Mistakes</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
+
   {
     slug: "life-in-the-uk-test-practice-free",
     title: "Life in the UK Test Practice Free (Real Exam Style)",
@@ -5132,7 +5188,11 @@ export const blogPosts: BlogPost[] = [
         </p>
         <p>
           Related reading: <B slug="life-in-the-uk-test-guide">The Life in the UK Test: Complete Guide</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
+
   {
     slug: "uk-citizenship-test-guide-pass-first-time",
     title: "UK Citizenship Test Guide: Pass First Time",
@@ -5324,7 +5384,11 @@ export const blogPosts: BlogPost[] = [
         </p>
         <p>
           Related reading: <B slug="life-in-the-uk-test-guide">The Life in the UK Test: Complete Guide</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
+
   {
     slug: "life-in-the-uk-test-pass-mark-explained",
     title: "Life in the UK Test Pass Mark Explained",
@@ -5516,7 +5580,11 @@ export const blogPosts: BlogPost[] = [
         </p>
         <p>
           Related reading: <B slug="life-in-the-uk-test-questions-and-answers-2026">Life in the UK Questions and Answers 2026</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
+
   {
     slug: "british-citizenship-test-questions-2026",
     title: "British Citizenship Test Questions 2026 (Free)",
@@ -5724,7 +5792,11 @@ export const blogPosts: BlogPost[] = [
         </p>
         <p>
           Related reading: <B slug="uk-citizenship-test-guide-pass-first-time">UK Citizenship Test Guide</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
+
   {
     slug: "how-to-pass-life-in-the-uk-test-quickly",
     title: "How to Pass Life in the UK Test Quickly",
@@ -5918,7 +5990,11 @@ export const blogPosts: BlogPost[] = [
         </p>
         <p>
           Related reading: <B slug="life-in-the-uk-test-guide">The Life in the UK Test: Complete Guide</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
+
   {
     slug: "life-in-the-uk-mock-test-2026-edition",
     title: "Life in the UK Mock Test (2026 Edition)",
@@ -6126,7 +6202,11 @@ export const blogPosts: BlogPost[] = [
         </p>
         <p>
           Related reading: <B slug="life-in-the-uk-test-practice-free">Life in the UK Test Practice Free</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
+
   {
     slug: "common-life-in-the-uk-test-mistakes-to-avoid",
     title: "Common Life in the UK Test Mistakes to Avoid",
@@ -6318,7 +6398,11 @@ export const blogPosts: BlogPost[] = [
         </p>
         <p>
           Related reading: <B slug="hardest-life-in-the-uk-test-questions">Hardest Life in the UK Test Questions</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
+
   {
     slug: "cscs-test-questions-and-answers-2026",
     title: "CSCS Test Questions and Answers 2026 (Free Practice)",
@@ -6526,7 +6610,11 @@ export const blogPosts: BlogPost[] = [
         </p>
         <p>
           Related reading: <B slug="cscs-test-practice-guide">CSCS Test Practice Guide</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
+
   {
     slug: "cscs-mock-test-free-uk",
     title: "CSCS Mock Test Free UK (Practice-Style Questions)",
@@ -6718,7 +6806,11 @@ export const blogPosts: BlogPost[] = [
         </p>
         <p>
           Related reading: <B slug="cscs-test-questions-and-answers-2026">CSCS Test Questions and Answers 2026</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
+
   {
     slug: "how-to-pass-cscs-test-first-time",
     title: "How to Pass CSCS Test First Time (Full Guide)",
@@ -6910,7 +7002,11 @@ export const blogPosts: BlogPost[] = [
         </p>
         <p>
           Related reading: <B slug="cscs-test-practice-guide">CSCS Test Practice Guide</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
+
   {
     slug: "most-common-cscs-test-questions-explained",
     title: "Most Common CSCS Test Questions Explained",
@@ -7118,7 +7214,11 @@ export const blogPosts: BlogPost[] = [
         </p>
         <p>
           Related reading: <B slug="how-to-pass-cscs-test-first-time">How to Pass CSCS Test First Time</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
+
   {
     slug: "cscs-card-test-practice-questions-uk",
     title: "CSCS Card Test Practice Questions (UK)",
@@ -7326,7 +7426,11 @@ export const blogPosts: BlogPost[] = [
         </p>
         <p>
           Related reading: <B slug="cscs-mock-test-free-uk">CSCS Mock Test Free UK</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
+
   {
     slug: "nhs-numeracy-test-questions-and-answers",
     title: "NHS Numeracy Test Questions and Answers (Free Practice)",
@@ -7518,7 +7622,11 @@ export const blogPosts: BlogPost[] = [
         </p>
         <p>
           Related reading: <B slug="nhs-numeracy-test-tips">NHS Numeracy Test Tips</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
+
   {
     slug: "nhs-interview-questions-and-answers-uk-guide",
     title: "NHS Interview Questions and Answers (UK Guide)",
@@ -7710,7 +7818,11 @@ export const blogPosts: BlogPost[] = [
         </p>
         <p>
           Related reading: <B slug="nhs-numeracy-test-tips">NHS Numeracy Test Tips</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
+
   {
     slug: "nhs-literacy-test-practice-with-answers",
     title: "NHS Literacy Test Practice (With Answers)",
@@ -7918,7 +8030,11 @@ export const blogPosts: BlogPost[] = [
         </p>
         <p>
           Related reading: <B slug="nhs-numeracy-test-tips">NHS Numeracy Test Tips</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
+
   {
     slug: "ielts-listening-practice-test-free",
     title: "IELTS Listening Practice Test (Free With Answers)",
@@ -8110,7 +8226,11 @@ export const blogPosts: BlogPost[] = [
         </p>
         <p>
           Related reading: <B slug="ielts-tips-for-beginners">IELTS Tips for Beginners</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
+
   {
     slug: "ielts-grammar-test-questions-beginner-to-advanced",
     title: "IELTS Grammar Test Questions (Beginner to Advanced)",
