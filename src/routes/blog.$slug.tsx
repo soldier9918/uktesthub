@@ -28,7 +28,7 @@ export const Route = createFileRoute("/blog/$slug")({
       scripts: [
         breadcrumbSchema([
           { name: "Home", url: "/" },
-          { name: "Blog", url: "/blog" },
+          { name: "Study Guides", url: "/blog" },
           { name: post.title, url: `/blog/${slug}` },
         ]),
         articleSchema({ ...post, image: post.hero }),

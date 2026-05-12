@@ -249,7 +249,20 @@ function HomePage() {
           <SectionTitle>Popular Categories</SectionTitle>
 
           <div className="mt-10 grid gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-            {categories.map((c) => {
+            {(() => {
+              const PRIORITY = [
+                "driving",
+                "citizenship",
+                "taxi-private-hire",
+                "construction",
+                "nhs",
+                "security",
+                "english",
+                "it-tech",
+              ] as const;
+              const bySlug = new Map(categories.map((c) => [c.slug, c]));
+              return PRIORITY.map((s) => bySlug.get(s)).filter(Boolean) as typeof categories;
+            })().map((c) => {
               const isCoral = c.accent === "coral";
               const CHIP_LIMIT = 3;
               const chips = c.topics
@@ -498,17 +511,17 @@ function HomePage() {
                 What is UK Test Hub?
               </h2>
               <p className="mt-5 text-base leading-relaxed text-muted-foreground md:text-lg">
-                UK Test Hub is a free practice platform built to help learners
-                across Britain pass official UK exams first time — no accounts,
-                no paywalls, no surprises.
+                UK Test Hub is a free, independent practice platform built to
+                help learners across Britain prepare for UK tests and
+                assessments — no accounts, no paywalls, no surprises.
               </p>
 
               <div className="mt-8 space-y-5 text-base leading-relaxed text-muted-foreground">
                 <p>
                   We bring together every major test a person living, working
                   or studying in the UK is likely to sit, and rebuild each one
-                  as a series of free, browser-based mock papers that mirror
-                  the real exam format. Whether you're seventeen and revising
+                  as a series of free, browser-based mock papers designed to
+                  reflect common exam formats. Whether you're seventeen and revising
                   for the{" "}
                   <Link
                     to="/category/$slug"
@@ -539,9 +552,9 @@ function HomePage() {
                   covers the DVSA car theory test, motorcycle theory, hazard
                   perception clips and the practical show-me / tell-me
                   questions, plus dedicated banks for LGV and PCV candidates.
-                  Every question is mapped to the official DVSA learning
-                  outcomes and uses the same multiple-choice and case-study
-                  formats you'll see at the test centre.
+                  Every question is based on publicly available guidance and
+                  uses multiple-choice and case-study style formats similar to
+                  what you'll see at the test centre.
                 </p>
                 <p>
                   The{" "}
@@ -553,11 +566,12 @@ function HomePage() {
                     Life in the UK
                   </Link>{" "}
                   bank takes you through the full handbook — British history,
-                  values and principles, government, law and everyday life — in
-                  the same 24-question, 45-minute format used by the Home
-                  Office. It's the test most people sit to settle (ILR) or
-                  naturalise as a British citizen, and we keep it aligned with
-                  the current edition of the official handbook.
+                  values and principles, government, law and everyday life —
+                  designed to reflect common Life in the UK test structure
+                  (24 questions, 45 minutes). It's the test most people sit to
+                  settle (ILR) or naturalise as a British citizen, and we keep
+                  our content aligned with the current edition of the published
+                  handbook.
                 </p>
                 <p>
                   For{" "}
@@ -626,17 +640,17 @@ function HomePage() {
               </h3>
               <div className="mt-4 space-y-5 text-base leading-relaxed text-muted-foreground">
                 <p>
-                  Every mock on the site is built to match the real exam as
-                  closely as possible — the same number of questions, the same
-                  style of wording, the same difficulty curve and, where
-                  relevant, the same time limit. You can sit a full paper end
-                  to end, or dip into shorter topic-specific sets when you
-                  want to drill a single weak area in fifteen or twenty
-                  minutes.
+                  Every mock on the site is designed to reflect common exam
+                  formats — a similar question structure where appropriate, a
+                  similar style of wording, a comparable difficulty curve and,
+                  where relevant, a comparable time limit. You can sit a full
+                  paper end to end, or dip into shorter topic-specific sets
+                  when you want to drill a single weak area in fifteen or
+                  twenty minutes.
                 </p>
                 <p>
                   Tests are marked instantly the moment you finish. You see
-                  your score, your pass / fail status against the official
+                  your score, your pass / fail status against the typical
                   pass mark, and a question-by-question breakdown with a
                   written explanation for every answer — including the wrong
                   ones, so you understand why a distractor is wrong as well
@@ -680,9 +694,8 @@ function HomePage() {
                   has strong colour contrast, scales properly on small
                   screens, and avoids the cluttered pop-ups and forced
                   sign-ups that make so many revision sites painful to use.
-                  And it's free — genuinely free, forever, supported by
-                  unobtrusive advertising rather than locked-down premium
-                  tiers.
+                  And it's free — genuinely free, supported by unobtrusive
+                  advertising rather than locked-down paid tiers.
                 </p>
               </div>
 
@@ -792,7 +805,7 @@ function HomePage() {
                 to="/blog"
                 className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-coral hover:underline"
               >
-                Read revision tips on the blog
+                Read revision tips in our study guides
                 <ArrowRight className="h-4 w-4" />
               </Link>
             </aside>
@@ -841,20 +854,20 @@ function HomePage() {
           </ul>
         </section>
 
-        {/* Reserved ad slot before Latest from the Blog */}
+        {/* Reserved ad slot before Latest Study Guides */}
         <AdSlot size="leaderboard" className="mt-14" />
 
-        {/* LATEST FROM THE BLOG */}
+        {/* LATEST STUDY GUIDES */}
         <section className="mt-20">
           <div className="flex flex-col items-center text-center">
-            <SectionTitle>Latest from the Blog</SectionTitle>
+            <SectionTitle>Latest Study Guides</SectionTitle>
           </div>
           <div className="mt-3 text-right">
             <Link
               to="/blog"
               className="inline-flex items-center gap-1 text-sm font-semibold text-coral hover:underline"
             >
-              View all articles <ArrowRight className="h-4 w-4" />
+              View all study guides <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
           <ul className="mt-8 grid gap-5 md:grid-cols-3">

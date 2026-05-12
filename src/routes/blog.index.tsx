@@ -60,7 +60,7 @@ function PostCard({ p }: { p: Post }) {
             <Clock className="h-3 w-3" /> {p.readingMinutes} min read
           </span>
           <span className="inline-flex items-center gap-1 font-semibold text-coral">
-            Read article <ArrowRight className="h-3 w-3" />
+            Read guide <ArrowRight className="h-3 w-3" />
           </span>
         </div>
       </div>

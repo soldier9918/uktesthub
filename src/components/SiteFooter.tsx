@@ -22,7 +22,7 @@ const popularTests: FooterLink[] = [
 const company: StaticLink[] = [
   { label: "About Us", to: "/about" },
   { label: "All Tests", to: "/all-tests" },
-  { label: "Blog", to: "/blog" },
+  { label: "Study Guides", to: "/blog" },
   { label: "Contact Us", to: "/contact" },
   { label: "FAQ", to: "/faq" },
   { label: "Sitemap", to: "/sitemap" },
@@ -92,24 +92,9 @@ export function SiteFooter() {
           <div className="lg:col-span-5">
             <Logo variant="light" />
             <p className="mt-5 text-sm text-navy-foreground/70">
-              Subscribe for exam updates and tips
+              Free, independent UK practice tests with instant feedback —
+              no account required.
             </p>
-            <form
-              className="mt-3 flex max-w-md gap-2"
-              onSubmit={(e) => e.preventDefault()}
-            >
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="flex-1 rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-navy-foreground placeholder:text-navy-foreground/40 focus:border-coral focus:outline-none"
-              />
-              <button
-                type="submit"
-                className="rounded-xl bg-coral px-5 py-3 text-sm font-semibold text-coral-foreground shadow-coral transition-transform hover:-translate-y-0.5"
-              >
-                Subscribe
-              </button>
-            </form>
             <div className="mt-6 flex gap-2">
               {[Facebook, Twitter, Youtube, Instagram].map((Icon, i) => (
                 <a
@@ -127,13 +112,14 @@ export function SiteFooter() {
 
         <div className="mt-14 rounded-2xl border border-white/10 bg-white/5 p-5 text-xs leading-relaxed text-navy-foreground/65">
           <strong className="font-semibold text-navy-foreground">Disclaimer:</strong>{" "}
-          UK Test Hub is not affiliated with any official exam body. All questions
-          are for practice purposes only. We are{" "}
-          <strong className="font-semibold text-navy-foreground">not affiliated with</strong>{" "}
-          DVSA, TfL, the UK Government, IELTS, ESOL, CSCS, SIA, the NHS or any
-          examination board unless explicitly stated. All trademarks and brand
-          names belong to their respective owners and are used for reference only.
-          For support, contact{" "}
+          UK Test Hub is an independent practice platform. We are{" "}
+          <strong className="font-semibold text-navy-foreground">not affiliated</strong>{" "}
+          with any official exam body, government department, regulator or
+          test provider — including the DVSA, TfL, the UK Government, the
+          Home Office, IELTS, ESOL, CSCS, SIA, the NHS or any examination
+          board. All trademarks and brand names belong to their respective
+          owners and are used for reference only. All questions are for
+          practice and revision purposes only. For support, contact{" "}
           <a href="mailto:support@uktesthub.com" className="underline hover:text-coral">support@uktesthub.com</a>.
         </div>
       </div>
