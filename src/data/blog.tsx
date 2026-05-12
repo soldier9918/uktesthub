@@ -1091,9 +1091,9 @@ export const blogPosts: BlogPost[] = [
     slug: "uk-driving-theory-questions-2026",
     title: "UK Driving Theory Questions 2026 (Free Practice Test)",
     description:
-      "Free 2026 UK Driving Theory practice questions with answers and explanations. Real DVSA-style multiple choice — pass first time with confident revision.",
+      "Free 2026 UK Driving Theory practice questions with answers and explanations. DVSA-style practice multiple choice — pass first time with confident revision.",
     excerpt:
-      "Real DVSA-style driving theory questions for 2026 — with worked answers and a free full mock test at the end.",
+      "DVSA-style practice driving theory questions for 2026 — with worked answers and a free full mock test at the end.",
     datePublished: "2026-04-20",
     author: "UK Test Hub Team",
     readingMinutes: 8,
@@ -1487,7 +1487,7 @@ export const blogPosts: BlogPost[] = [
     description:
       "Free UK Driving Theory mock test with real exam-style questions for 2026. Instant marking, full explanations and unlimited retries.",
     excerpt:
-      "Real DVSA-style mock — 12 sample questions here, plus a full free mock test linked at the end.",
+      "DVSA-style practice mock — 12 sample questions here, plus a full free mock test linked at the end.",
     datePublished: "2026-04-25",
     author: "UK Test Hub Team",
     readingMinutes: 7,
@@ -1796,7 +1796,7 @@ export const blogPosts: BlogPost[] = [
     slug: "free-driving-theory-practice-test-uk",
     title: "Free Driving Theory Practice Test UK (Updated 2026)",
     description:
-      "Free UK Driving Theory practice tests updated for 2026. Real DVSA-style multiple choice, instant marking, no sign-up. Start your mock now.",
+      "Free UK Driving Theory practice tests updated for 2026. DVSA-style practice multiple choice, instant marking, no sign-up. Start your mock now.",
     excerpt:
       "No sign-up, no paywall — free DVSA-style practice updated for 2026. Start your mock test in 30 seconds.",
     datePublished: "2026-04-29",

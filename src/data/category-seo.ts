@@ -19,7 +19,7 @@ export const categorySeo: Record<string, CategorySeo> = {
     description:
       "Free UK Driving Theory practice tests for 2026. Realistic DVSA-style questions, hazard perception, road signs and motorcycle theory with full explanations.",
     intro: [
-      "Passing the UK Driving Theory Test on the first attempt takes more than memorising answers. The DVSA exam is split into 50 multiple-choice questions and a hazard perception clip section, and you need to do well on both to walk away with a provisional pass certificate. Our free Driving Theory practice tests mirror the real exam format so you can train under realistic conditions, build pace, and learn the reasoning behind every answer rather than just the letter.",
+      "Passing the UK Driving Theory Test on the first attempt takes more than memorising answers. The DVSA exam is split into 50 multiple-choice questions and a hazard perception clip section, and you need to do well on both to walk away with a provisional pass certificate. Our free Driving Theory practice tests designed to reflect common exam formats so you can train under realistic conditions, build pace, and learn the reasoning behind every answer rather than just the letter.",
       "Whether you're booking your first test, retaking after a near miss, or preparing for the Motorcycle Theory or Road Signs Test, you'll find unlimited mock exams, instant scoring and detailed explanations. All questions are updated for 2026 and reflect the latest Highway Code revisions, including the changes to the hierarchy of road users and the new rules on overtaking cyclists and horse riders.",
     ],
     sections: [
@@ -59,7 +59,7 @@ export const categorySeo: Record<string, CategorySeo> = {
         heading: "Why active practice testing works",
         body: [
           "Active recall — testing yourself rather than re-reading notes — is one of the most evidence-backed study techniques in cognitive science. Repeated mock papers expose gaps you didn't know you had, and the instant feedback after each question rewires your memory faster than passive revision ever can.",
-          "Mocks also dismantle exam anxiety. The first time you see a real DVSA-style question shouldn't be at the test centre. By the time you've completed five to ten mocks, the format feels familiar and you can focus your mental energy on the content rather than the interface. Candidates who finish 10+ free mocks before sitting the real test pass at noticeably higher rates than those who only read the Highway Code.",
+          "Mocks also dismantle exam anxiety. The first time you see a DVSA-style practice question shouldn't be at the test centre. By the time you've completed five to ten mocks, the format feels familiar and you can focus your mental energy on the content rather than the interface. Candidates who finish 10+ free mocks before sitting the real test pass at noticeably higher rates than those who only read the Highway Code.",
           "There's also a simple cost argument. The DVSA fee is £23 per attempt, plus the time off work and the stress of rebooking. If 10 hours of free practice raises your first-time pass probability from 50% to 75%, the expected saving is real money and several weeks of waiting list. Treat practice as a financial decision, not just an academic one.",
         ],
       },
@@ -1337,7 +1337,7 @@ export const categorySeo: Record<string, CategorySeo> = {
     description: "Free UK practice tests for Driver CPC Module 2 and Module 4, ADR dangerous goods, forklift theory and Transport Manager CPC. Realistic questions with full explanations.",
     intro: [
       "Working professionally in road haulage means passing more than the standard car or van licence. Whether you're starting your Driver CPC, adding ADR to your card, getting a forklift ticket or stepping up to Transport Manager, every qualification has a written knowledge test and the pass marks are tight. Our free HGV / LGV & Logistics mocks cover all of them.",
-      "All mocks are written in plain UK English, mirror the real exam style, and include detailed answer explanations so you understand the reasoning — not just the right letter.",
+      "All mocks are written in plain UK English, designed to reflect common exam formats, and include detailed answer explanations so you understand the reasoning — not just the right letter.",
     ],
     sections: [
       { heading: "What's covered in this section", body: ["Driver CPC Module 2 (Case Studies), Driver CPC Module 4 underpinning theory, ADR Dangerous Goods Awareness, Forklift Truck theory (RTITB / ITSSAR) and Transport Manager CPC. Each topic has its own bank of questions and unlimited mock papers."] },
