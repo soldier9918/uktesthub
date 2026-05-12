@@ -6,7 +6,7 @@ import {
   type FaqItem,
 } from "@/components/SeoLanding";
 
-const PATH = "/nhs-numeracy-test-practice";
+const PATH = "/blog/nhs-numeracy-test-practice";
 const TITLE = "NHS Numeracy Test Practice — Free Mock Questions with Answers";
 const DESCRIPTION =
   "Free NHS numeracy test practice with exam-style drug calculation, conversion and percentage questions. Instant explanations and a full revision guide.";
@@ -38,7 +38,7 @@ const faqs: FaqItem[] = [
   },
 ];
 
-export const Route = createFileRoute("/nhs-numeracy-test-practice")({
+export const Route = createFileRoute("/blog/nhs-numeracy-test-practice")({
   head: () => ({
     ...buildSeoMeta({ title: TITLE, description: DESCRIPTION, path: PATH }),
     scripts: buildFaqAndArticleSchemas({

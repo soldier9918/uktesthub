@@ -6,7 +6,7 @@ import {
   type FaqItem,
 } from "@/components/SeoLanding";
 
-const PATH = "/seru-test-practice";
+const PATH = "/blog/seru-test-practice";
 const TITLE = "SERU Test Practice — Free Mock Questions for TfL Drivers";
 const DESCRIPTION =
   "Free SERU test practice for London private hire drivers. Practice-style questions on safeguarding, the Equality Act, TfL rules and passenger safety with full explanations.";

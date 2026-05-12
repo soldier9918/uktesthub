@@ -6,7 +6,7 @@ import {
   type FaqItem,
 } from "@/components/SeoLanding";
 
-const PATH = "/sia-door-supervisor-mock-test";
+const PATH = "/blog/sia-door-supervisor-mock-test";
 const TITLE = "SIA Door Supervisor Mock Test — Free Practice Questions";
 const DESCRIPTION =
   "Free SIA Door Supervisor mock test with practice-style questions on conflict management, physical intervention, the law and licensing. Instant explanations.";
@@ -38,7 +38,7 @@ const faqs: FaqItem[] = [
   },
 ];
 
-export const Route = createFileRoute("/sia-door-supervisor-mock-test")({
+export const Route = createFileRoute("/blog/sia-door-supervisor-mock-test")({
   head: () => ({
     ...buildSeoMeta({ title: TITLE, description: DESCRIPTION, path: PATH }),
     scripts: buildFaqAndArticleSchemas({

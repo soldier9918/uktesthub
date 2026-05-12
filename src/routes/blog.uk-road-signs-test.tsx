@@ -6,7 +6,7 @@ import {
   type FaqItem,
 } from "@/components/SeoLanding";
 
-const PATH = "/uk-road-signs-test";
+const PATH = "/blog/uk-road-signs-test";
 const TITLE = "UK Road Signs Test — Free Practice Quiz with Answers";
 const DESCRIPTION =
   "Free UK road signs test with practice-style questions and explanations. Learn warning, regulatory, informational and road marking signs ready for your driving theory test.";
@@ -38,7 +38,7 @@ const faqs: FaqItem[] = [
   },
 ];
 
-export const Route = createFileRoute("/uk-road-signs-test")({
+export const Route = createFileRoute("/blog/uk-road-signs-test")({
   head: () => ({
     ...buildSeoMeta({ title: TITLE, description: DESCRIPTION, path: PATH }),
     scripts: buildFaqAndArticleSchemas({

@@ -6,7 +6,7 @@ import {
   type FaqItem,
 } from "@/components/SeoLanding";
 
-const PATH = "/topographical-test-london";
+const PATH = "/blog/topographical-test-london";
 const TITLE = "Topographical Test London — Free Practice Questions & Routes";
 const DESCRIPTION =
   "Free Topographical Assessment practice for London private hire drivers. Practice-style map reading, route planning and place-finding questions with explanations.";
@@ -38,7 +38,7 @@ const faqs: FaqItem[] = [
   },
 ];
 
-export const Route = createFileRoute("/topographical-test-london")({
+export const Route = createFileRoute("/blog/topographical-test-london")({
   head: () => ({
     ...buildSeoMeta({ title: TITLE, description: DESCRIPTION, path: PATH }),
     scripts: buildFaqAndArticleSchemas({
