@@ -580,7 +580,10 @@ export const blogPosts: BlogPost[] = [
           Visit the <C slug="citizenship">UK Citizenship & Life practice hub</C> for unlimited free Life in the UK
           mock tests, plus quizzes on UK laws, geography and citizenship rights. If you're also working on your
           English, our <B slug="ielts-tips-for-beginners">IELTS guide</B> covers the most popular B1 route.
-        </p>,
+        </p>
+      </>
+    ),
+  },
 
   {
     slug: "top-uk-road-signs-explained",
@@ -780,7 +783,10 @@ export const blogPosts: BlogPost[] = [
           Don't memorise signs in isolation. When you next walk or drive somewhere, name every sign you pass.
           Real-world reps build pattern recognition far faster than flashcards. By the time you sit your theory
           test, the signs should feel familiar — not like a quiz.
-        </p>,
+        </p>
+      </>
+    ),
+  },
 
   {
     slug: "ielts-tips-for-beginners",
@@ -1032,7 +1038,10 @@ export const blogPosts: BlogPost[] = [
           different exam, the <C slug="english">English Language Tests hub</C> covers TOEFL, ESOL and grammar
           drills too. Pair this with our <B slug="how-to-study-for-exams-fast">study tips guide</B> for a complete
           plan.
-        </p>,
+        </p>
+      </>
+    ),
+  },
 
   {
     slug: "gcse-maths-revision-guide",
@@ -1236,7 +1245,10 @@ export const blogPosts: BlogPost[] = [
           Get started with our <T slug="gcse-maths">free GCSE Maths practice tests</T>, or browse the full{" "}
           <C slug="education">Education & School hub</C> for 11+, GCSE English and SATs practice. Pair this with
           our <B slug="how-to-study-for-exams-fast">how to study fast</B> guide for the techniques top students use.
-        </p>,
+        </p>
+      </>
+    ),
+  },
 
   {
     slug: "cscs-test-practice-guide",
@@ -1448,7 +1460,10 @@ export const blogPosts: BlogPost[] = [
           professional certifications including SIA, SERU TfL and Food Hygiene, head to the{" "}
           <C slug="professional">Professional Certification hub</C>. If you're a TfL driver, our{" "}
           <B slug="seru-tfl-test-guide">SERU TfL guide</B> walks you through that exam too.
-        </p>,
+        </p>
+      </>
+    ),
+  },
 
   {
     slug: "seru-tfl-test-guide",
@@ -1646,7 +1661,10 @@ export const blogPosts: BlogPost[] = [
           Take a free <T slug="seru">SERU TfL practice test</T> now, and explore the full{" "}
           <C slug="professional">Professional Certification hub</C> for related exams like CSCS and SIA. If you
           drive other vehicles too, our <B slug="how-to-pass-driving-theory-test">Driving Theory guide</B> may help.
-        </p>,
+        </p>
+      </>
+    ),
+  },
 
   {
     slug: "nhs-numeracy-test-tips",
@@ -1858,7 +1876,10 @@ export const blogPosts: BlogPost[] = [
           Take our <T slug="nhs-numeracy">free NHS Numeracy practice test</T> now to baseline your score. The full{" "}
           <C slug="nhs">NHS & Healthcare hub</C> also covers literacy, values-based recruitment and the NMC CBT
           for overseas nurses.
-        </p>,
+        </p>
+      </>
+    ),
+  },
 
   {
     slug: "uk-general-knowledge-quiz-guide",
@@ -2046,7 +2067,10 @@ export const blogPosts: BlogPost[] = [
           24 hours. For more lighthearted fun, try the <T slug="how-british">How British Are You?</T> quiz, or
           browse the full <C slug="fun">Fun & Viral Quizzes hub</C>. If trivia leads you towards taking the real
           citizenship exam, our <B slug="life-in-the-uk-test-guide">Life in the UK guide</B> walks you through it.
-        </p>,
+        </p>
+      </>
+    ),
+  },
 
   {
     slug: "how-to-study-for-exams-fast",
@@ -8478,7 +8502,10 @@ export const blogPosts: BlogPost[] = [
 
         <p className="text-xs italic text-muted-foreground">
           Disclaimer: UK Test Hub is independent and not affiliated with Transport for London. Always confirm fees, formats and rules on tfl.gov.uk.
-        </p>,
+        </p>
+      </>
+    ),
+  },
 
   {
     slug: "seru-assessment-guide",
@@ -8654,7 +8681,10 @@ export const blogPosts: BlogPost[] = [
 
         <p className="text-xs italic text-muted-foreground">
           Disclaimer: UK Test Hub is independent and not affiliated with Transport for London. Always confirm the official format on tfl.gov.uk before booking.
-        </p>,
+        </p>
+      </>
+    ),
+  },
 
   {
     slug: "topographical-assessment-guide",
@@ -8812,7 +8842,10 @@ export const blogPosts: BlogPost[] = [
 
         <p className="text-xs italic text-muted-foreground">
           Disclaimer: UK Test Hub is independent and not affiliated with Transport for London.
-        </p>,
+        </p>
+      </>
+    ),
+  },
 
   {
     slug: "private-hire-english-language-requirement",
@@ -8966,7 +8999,10 @@ export const blogPosts: BlogPost[] = [
 
         <p className="text-xs italic text-muted-foreground">
           Disclaimer: UK Test Hub is independent and not affiliated with TfL or any SELT provider.
-        </p>,
+        </p>
+      </>
+    ),
+  },
 
   {
     slug: "congestion-charge-private-hire-drivers",
@@ -9114,7 +9150,10 @@ export const blogPosts: BlogPost[] = [
 
         <p className="text-xs italic text-muted-foreground">
           Disclaimer: UK Test Hub is independent and not affiliated with TfL. Confirm fees and rules on tfl.gov.uk.
-        </p>,
+        </p>
+      </>
+    ),
+  },
 
   {
     slug: "ulez-private-hire-drivers",
@@ -9246,7 +9285,10 @@ export const blogPosts: BlogPost[] = [
 
         <p className="text-xs italic text-muted-foreground">
           Disclaimer: UK Test Hub is independent and not affiliated with TfL. Always confirm vehicle compliance on tfl.gov.uk.
-        </p>,
+        </p>
+      </>
+    ),
+  },
 
   {
     slug: "dbs-check-private-hire-driver",
@@ -9394,7 +9436,10 @@ export const blogPosts: BlogPost[] = [
 
         <p className="text-xs italic text-muted-foreground">
           Disclaimer: UK Test Hub is independent and not affiliated with TfL or the DBS.
-        </p>,
+        </p>
+      </>
+    ),
+  },
 
   {
     slug: "safeguarding-awareness-private-hire",
@@ -9554,7 +9599,10 @@ export const blogPosts: BlogPost[] = [
 
         <p className="text-xs italic text-muted-foreground">
           Disclaimer: UK Test Hub is independent and not affiliated with TfL or any safeguarding agency. In an emergency call 999.
-        </p>,
+        </p>
+      </>
+    ),
+  },
 
   {
     slug: "private-hire-driver-badge-rules",
@@ -9688,7 +9736,10 @@ export const blogPosts: BlogPost[] = [
 
         <p className="text-xs italic text-muted-foreground">
           Disclaimer: UK Test Hub is independent and not affiliated with TfL.
-        </p>,
+        </p>
+      </>
+    ),
+  },
 
   {
     slug: "how-to-become-a-private-hire-driver-london",
@@ -9858,7 +9909,10 @@ export const blogPosts: BlogPost[] = [
 
         <p className="text-xs italic text-muted-foreground">
           Disclaimer: UK Test Hub is independent and not affiliated with Transport for London. Always confirm fees, formats and rules on tfl.gov.uk.
-        </p>,
+        </p>
+      </>
+    ),
+  },
 
   {
     slug: "show-and-tell-road-signs",
@@ -10110,7 +10164,10 @@ export const blogPosts: BlogPost[] = [
         <p className="text-xs italic text-muted-foreground">
           Disclaimer: UK Test Hub is independent and not affiliated with the Security Industry Authority. Always
           confirm fees and licence rules on sia.homeoffice.gov.uk.
-        </p>,
+        </p>
+      </>
+    ),
+  },
 
   {
     slug: "sia-door-supervisor-mock-questions-explained",
@@ -10357,7 +10414,10 @@ export const blogPosts: BlogPost[] = [
           Visit the <C slug="security">Security & Door Supervision practice hub</C> for more free mocks. Related
           reading: <B slug="sia-door-supervisor-test-guide-2026">our complete 2026 SIA Door Supervisor guide</B> and{" "}
           <B slug="how-to-pass-sia-door-supervisor-first-time">how to pass the SIA Door Supervisor exam first time</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
 
   {
     slug: "how-to-pass-sia-door-supervisor-first-time",
@@ -10792,7 +10852,10 @@ export const blogPosts: BlogPost[] = [
           Visit the <C slug="it-tech">IT & Tech practice hub</C> for free mocks across CompTIA A+, ITIL 4 and Cyber
           Security Awareness. Related reading: <B slug="cyber-security-awareness-test-guide">our cyber security
           awareness guide</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
 
   {
     slug: "cyber-security-awareness-test-guide",
@@ -11007,7 +11070,10 @@ export const blogPosts: BlogPost[] = [
           Visit the <C slug="it-tech">IT & Tech practice hub</C> for more free mocks. Related reading:{" "}
           <B slug="comptia-a-plus-uk-study-guide">our CompTIA A+ UK study guide</B> and{" "}
           <B slug="itil-4-foundation-practice-guide">ITIL 4 Foundation practice guide</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
 
   {
     slug: "itil-4-foundation-practice-guide",
