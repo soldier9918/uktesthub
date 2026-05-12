@@ -1,77 +1,131 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { blogPosts } from "@/data/blog";
 import { categories } from "@/data/categories";
+import mockIndex from "@/data/mocks/mock-index.json";
 
-const staticUrls = [
-  ["/", "daily", "1.0"],
-  ["/category/driving", "weekly", "0.9"],
-  ["/category/citizenship", "weekly", "0.9"],
-  ["/category/english", "weekly", "0.9"],
-  ["/category/education", "weekly", "0.9"],
-  ["/category/career", "weekly", "0.9"],
-  ["/category/professional", "weekly", "0.9"],
-  ["/category/nhs", "weekly", "0.9"],
-  ["/category/fun", "weekly", "0.9"],
-  ["/category/taxi-private-hire", "weekly", "1.0"],
-  ["/category/security", "weekly", "0.9"],
-  ["/category/hospitality", "weekly", "0.8"],
-  ["/category/construction", "weekly", "0.9"],
-  ["/category/finance", "weekly", "0.8"],
-  ["/category/it-tech", "weekly", "0.8"],
-  ["/category/healthcare-entry", "weekly", "0.8"],
-  ["/category/teaching", "weekly", "0.8"],
-  ["/category/legal", "weekly", "0.8"],
-  ["/category/military-emergency", "weekly", "0.8"],
-  ["/category/maritime-aviation", "weekly", "0.7"],
-  ["/category/government", "weekly", "0.8"],
-  ["/blog", "weekly", "0.8"],
-  ["/all-tests", "weekly", "0.9"],
-  ["/blog/seru-test-practice", "weekly", "0.9"],
-  ["/blog/topographical-test-london", "weekly", "0.9"],
-  ["/blog/sia-door-supervisor-mock-test", "weekly", "0.9"],
-  ["/blog/cscs-mock-test-free", "weekly", "0.9"],
-  ["/blog/driving-theory-test-questions", "weekly", "0.9"],
-  ["/blog/life-in-the-uk-test-practice", "weekly", "0.9"],
-  ["/blog/uk-road-signs-test", "weekly", "0.9"],
-  ["/blog/nhs-numeracy-test-practice", "weekly", "0.9"],
-  ["/about", "monthly", "0.6"],
-  ["/contact", "monthly", "0.6"],
-  ["/faq", "monthly", "0.6"],
-  ["/privacy", "yearly", "0.3"],
-  ["/cookies", "yearly", "0.3"],
-  ["/terms", "yearly", "0.3"],
-  ["/disclaimer", "yearly", "0.3"],
-  ["/accessibility", "yearly", "0.3"],
-  ["/sitemap", "monthly", "0.4"],
-  ["/help", "monthly", "0.5"],
-  ["/report", "monthly", "0.4"],
-  ["/feedback", "monthly", "0.4"],
-  ["/exam-updates", "weekly", "0.6"],
-] as const;
+const BASE = "https://www.uktesthub.com";
 
-const topicUrls = categories.flatMap((c) =>
-  c.topics.flatMap((t) => [
-    `  <url><loc>https://www.uktesthub.com/topic/${t.slug}</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>`,
-    `  <url><loc>https://www.uktesthub.com/guide/${t.slug}</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>`,
+type Freq =
+  | "always"
+  | "hourly"
+  | "daily"
+  | "weekly"
+  | "monthly"
+  | "yearly"
+  | "never";
+
+interface Entry {
+  path: string;
+  changefreq?: Freq;
+  priority?: string;
+  lastmod?: string;
+}
+
+// Static, hand-curated indexable pages. Excludes admin, auth, account,
+// dashboard, bookmarks, report, feedback, robots.txt and sitemap.xml itself.
+const staticEntries: Entry[] = [
+  { path: "/", changefreq: "daily", priority: "1.0" },
+  { path: "/all-tests", changefreq: "weekly", priority: "0.9" },
+  { path: "/blog", changefreq: "weekly", priority: "0.9" },
+  { path: "/about", changefreq: "monthly", priority: "0.6" },
+  { path: "/contact", changefreq: "monthly", priority: "0.6" },
+  { path: "/faq", changefreq: "monthly", priority: "0.6" },
+  { path: "/help", changefreq: "monthly", priority: "0.5" },
+  { path: "/exam-updates", changefreq: "weekly", priority: "0.6" },
+  { path: "/sitemap", changefreq: "monthly", priority: "0.4" },
+  { path: "/privacy", changefreq: "yearly", priority: "0.3" },
+  { path: "/cookies", changefreq: "yearly", priority: "0.3" },
+  { path: "/terms", changefreq: "yearly", priority: "0.3" },
+  { path: "/disclaimer", changefreq: "yearly", priority: "0.3" },
+  { path: "/accessibility", changefreq: "yearly", priority: "0.3" },
+];
+
+// Per-topic SEO landing pages that exist as their own routes.
+const seoLandings: Entry[] = [
+  "/seru-test-practice",
+  "/seru-tfl",
+  "/topographical-test-london",
+  "/sia-door-supervisor-mock-test",
+  "/cscs-mock-test-free",
+  "/driving-theory-test-questions",
+  "/life-in-the-uk-test-practice",
+  "/uk-road-signs-test",
+  "/nhs-numeracy-test-practice",
+].map((path) => ({ path, changefreq: "weekly" as Freq, priority: "0.9" }));
+
+const categoryEntries: Entry[] = categories.map((c) => ({
+  path: `/category/${c.slug}`,
+  changefreq: "weekly",
+  priority: "0.9",
+}));
+
+const topicEntries: Entry[] = categories.flatMap((c) =>
+  c.topics.flatMap<Entry>((t) => [
+    { path: `/topic/${t.slug}`, changefreq: "weekly", priority: "0.7" },
+    { path: `/guide/${t.slug}`, changefreq: "monthly", priority: "0.7" },
   ]),
 );
 
-const urls = [
-  ...staticUrls.map(
-    ([p, cf, pr]) =>
-      `  <url><loc>https://www.uktesthub.com${p}</loc><changefreq>${cf}</changefreq><priority>${pr}</priority></url>`,
-  ),
-  ...topicUrls,
-  ...blogPosts.map(
-    (post) =>
-      `  <url><loc>https://www.uktesthub.com/blog/${post.slug}</loc><lastmod>${post.dateModified ?? post.datePublished}</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>`,
-  ),
-].join("\n");
+const blogEntries: Entry[] = blogPosts.map((p) => ({
+  path: `/blog/${p.slug}`,
+  changefreq: "monthly",
+  priority: "0.7",
+  lastmod: p.dateModified ?? p.datePublished,
+}));
 
-const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${urls}
-</urlset>`;
+// Whitelist of money-topic quizzes — only these get every /quiz/{slug} URL
+// indexed. The other ~5,000 quiz mocks stay out of the sitemap until each
+// page has unique title/meta/content.
+const QUIZ_WHITELIST = [
+  "driving-theory",
+  "road-signs",
+  "life-in-the-uk",
+  "british-citizenship",
+  "uk-laws-rights",
+  "seru",
+  "topographical",
+  "cscs-operative",
+  "sia-door-supervisor",
+  "nhs-numeracy",
+  "ielts",
+];
+
+const mocks = mockIndex as Record<string, number[]>;
+const quizEntries: Entry[] = QUIZ_WHITELIST.flatMap((topic) =>
+  (mocks[topic] ?? []).map<Entry>((n) => ({
+    path: `/quiz/${topic}-mock-${n}`,
+    changefreq: "monthly",
+    priority: "0.6",
+  })),
+);
+
+const allEntries: Entry[] = [
+  ...staticEntries,
+  ...seoLandings,
+  ...categoryEntries,
+  ...topicEntries,
+  ...blogEntries,
+  ...quizEntries,
+];
+
+const renderUrl = (e: Entry) =>
+  [
+    "  <url>",
+    `    <loc>${BASE}${e.path}</loc>`,
+    e.lastmod ? `    <lastmod>${e.lastmod}</lastmod>` : null,
+    e.changefreq ? `    <changefreq>${e.changefreq}</changefreq>` : null,
+    e.priority ? `    <priority>${e.priority}</priority>` : null,
+    "  </url>",
+  ]
+    .filter(Boolean)
+    .join("\n");
+
+const sitemapXml = [
+  '<?xml version="1.0" encoding="UTF-8"?>',
+  '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+  ...allEntries.map(renderUrl),
+  "</urlset>",
+].join("\n");
 
 export const Route = createFileRoute("/sitemap.xml")({
   server: {
