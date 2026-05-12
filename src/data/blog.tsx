@@ -357,7 +357,10 @@ export const blogPosts: BlogPost[] = [
           <C slug="driving">UK Driving & Transport practice hub</C>. Every mock is free, scored instantly and
           comes with full explanations. Good luck — and remember, the people who pass first time are usually the
           ones who treat the theory test with the same seriousness as the practical.
-        </p>,
+        </p>
+      </>
+    ),
+  },
 
   {
     slug: "life-in-the-uk-test-guide",
