@@ -47,8 +47,6 @@ function SitemapPage() {
       <h2>Support</h2>
       <ul>
         <li><Link to="/help">Help Centre</Link></li>
-        <li><Link to="/report">Report a Question</Link></li>
-        <li><Link to="/feedback">Feedback</Link></li>
         <li><Link to="/exam-updates">Exam Updates</Link></li>
       </ul>
 
