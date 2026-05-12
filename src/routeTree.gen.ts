@@ -9,23 +9,31 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as UkRoadSignsTestRouteImport } from './routes/uk-road-signs-test'
+import { Route as TopographicalTestLondonRouteImport } from './routes/topographical-test-london'
 import { Route as TermsRouteImport } from './routes/terms'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as SitemapRouteImport } from './routes/sitemap'
 import { Route as SignupRouteImport } from './routes/signup'
 import { Route as SigninRouteImport } from './routes/signin'
+import { Route as SiaDoorSupervisorMockTestRouteImport } from './routes/sia-door-supervisor-mock-test'
 import { Route as SeruTflRouteImport } from './routes/seru-tfl'
+import { Route as SeruTestPracticeRouteImport } from './routes/seru-test-practice'
 import { Route as RobotsDottxtRouteImport } from './routes/robots[.]txt'
 import { Route as ResetPasswordRouteImport } from './routes/reset-password'
 import { Route as ReportRouteImport } from './routes/report'
 import { Route as PrivacyRouteImport } from './routes/privacy'
+import { Route as NhsNumeracyTestPracticeRouteImport } from './routes/nhs-numeracy-test-practice'
+import { Route as LifeInTheUkTestPracticeRouteImport } from './routes/life-in-the-uk-test-practice'
 import { Route as HelpRouteImport } from './routes/help'
 import { Route as ForgotPasswordRouteImport } from './routes/forgot-password'
 import { Route as FeedbackRouteImport } from './routes/feedback'
 import { Route as FaqRouteImport } from './routes/faq'
 import { Route as ExamUpdatesRouteImport } from './routes/exam-updates'
+import { Route as DrivingTheoryTestQuestionsRouteImport } from './routes/driving-theory-test-questions'
 import { Route as DisclaimerRouteImport } from './routes/disclaimer'
 import { Route as DashboardRouteImport } from './routes/dashboard'
+import { Route as CscsMockTestFreeRouteImport } from './routes/cscs-mock-test-free'
 import { Route as CookiesRouteImport } from './routes/cookies'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as BookmarksRouteImport } from './routes/bookmarks'
@@ -66,6 +74,16 @@ import { Route as AdminKb20QuestionsBulkDuplicateRouteImport } from './routes/ad
 import { Route as AdminKb20QuestionsTopicRouteImport } from './routes/admin-kb20.questions.$topic'
 import { Route as LovableEmailQueueProcessRouteImport } from './routes/lovable/email/queue/process'
 
+const UkRoadSignsTestRoute = UkRoadSignsTestRouteImport.update({
+  id: '/uk-road-signs-test',
+  path: '/uk-road-signs-test',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TopographicalTestLondonRoute = TopographicalTestLondonRouteImport.update({
+  id: '/topographical-test-london',
+  path: '/topographical-test-london',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const TermsRoute = TermsRouteImport.update({
   id: '/terms',
   path: '/terms',
@@ -91,9 +109,20 @@ const SigninRoute = SigninRouteImport.update({
   path: '/signin',
   getParentRoute: () => rootRouteImport,
 } as any)
+const SiaDoorSupervisorMockTestRoute =
+  SiaDoorSupervisorMockTestRouteImport.update({
+    id: '/sia-door-supervisor-mock-test',
+    path: '/sia-door-supervisor-mock-test',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const SeruTflRoute = SeruTflRouteImport.update({
   id: '/seru-tfl',
   path: '/seru-tfl',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SeruTestPracticeRoute = SeruTestPracticeRouteImport.update({
+  id: '/seru-test-practice',
+  path: '/seru-test-practice',
   getParentRoute: () => rootRouteImport,
 } as any)
 const RobotsDottxtRoute = RobotsDottxtRouteImport.update({
@@ -114,6 +143,16 @@ const ReportRoute = ReportRouteImport.update({
 const PrivacyRoute = PrivacyRouteImport.update({
   id: '/privacy',
   path: '/privacy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const NhsNumeracyTestPracticeRoute = NhsNumeracyTestPracticeRouteImport.update({
+  id: '/nhs-numeracy-test-practice',
+  path: '/nhs-numeracy-test-practice',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LifeInTheUkTestPracticeRoute = LifeInTheUkTestPracticeRouteImport.update({
+  id: '/life-in-the-uk-test-practice',
+  path: '/life-in-the-uk-test-practice',
   getParentRoute: () => rootRouteImport,
 } as any)
 const HelpRoute = HelpRouteImport.update({
@@ -141,6 +180,12 @@ const ExamUpdatesRoute = ExamUpdatesRouteImport.update({
   path: '/exam-updates',
   getParentRoute: () => rootRouteImport,
 } as any)
+const DrivingTheoryTestQuestionsRoute =
+  DrivingTheoryTestQuestionsRouteImport.update({
+    id: '/driving-theory-test-questions',
+    path: '/driving-theory-test-questions',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const DisclaimerRoute = DisclaimerRouteImport.update({
   id: '/disclaimer',
   path: '/disclaimer',
@@ -149,6 +194,11 @@ const DisclaimerRoute = DisclaimerRouteImport.update({
 const DashboardRoute = DashboardRouteImport.update({
   id: '/dashboard',
   path: '/dashboard',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CscsMockTestFreeRoute = CscsMockTestFreeRouteImport.update({
+  id: '/cscs-mock-test-free',
+  path: '/cscs-mock-test-free',
   getParentRoute: () => rootRouteImport,
 } as any)
 const CookiesRoute = CookiesRouteImport.update({
@@ -360,23 +410,31 @@ export interface FileRoutesByFullPath {
   '/bookmarks': typeof BookmarksRoute
   '/contact': typeof ContactRoute
   '/cookies': typeof CookiesRoute
+  '/cscs-mock-test-free': typeof CscsMockTestFreeRoute
   '/dashboard': typeof DashboardRoute
   '/disclaimer': typeof DisclaimerRoute
+  '/driving-theory-test-questions': typeof DrivingTheoryTestQuestionsRoute
   '/exam-updates': typeof ExamUpdatesRoute
   '/faq': typeof FaqRoute
   '/feedback': typeof FeedbackRoute
   '/forgot-password': typeof ForgotPasswordRoute
   '/help': typeof HelpRoute
+  '/life-in-the-uk-test-practice': typeof LifeInTheUkTestPracticeRoute
+  '/nhs-numeracy-test-practice': typeof NhsNumeracyTestPracticeRoute
   '/privacy': typeof PrivacyRoute
   '/report': typeof ReportRoute
   '/reset-password': typeof ResetPasswordRoute
   '/robots.txt': typeof RobotsDottxtRoute
+  '/seru-test-practice': typeof SeruTestPracticeRoute
   '/seru-tfl': typeof SeruTflRoute
+  '/sia-door-supervisor-mock-test': typeof SiaDoorSupervisorMockTestRoute
   '/signin': typeof SigninRoute
   '/signup': typeof SignupRoute
   '/sitemap': typeof SitemapRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms': typeof TermsRoute
+  '/topographical-test-london': typeof TopographicalTestLondonRoute
+  '/uk-road-signs-test': typeof UkRoadSignsTestRoute
   '/admin-kb20/ads': typeof AdminKb20AdsRoute
   '/admin-kb20/analytics': typeof AdminKb20AnalyticsRoute
   '/admin-kb20/bulk-edit': typeof AdminKb20BulkEditRoute
@@ -417,23 +475,31 @@ export interface FileRoutesByTo {
   '/bookmarks': typeof BookmarksRoute
   '/contact': typeof ContactRoute
   '/cookies': typeof CookiesRoute
+  '/cscs-mock-test-free': typeof CscsMockTestFreeRoute
   '/dashboard': typeof DashboardRoute
   '/disclaimer': typeof DisclaimerRoute
+  '/driving-theory-test-questions': typeof DrivingTheoryTestQuestionsRoute
   '/exam-updates': typeof ExamUpdatesRoute
   '/faq': typeof FaqRoute
   '/feedback': typeof FeedbackRoute
   '/forgot-password': typeof ForgotPasswordRoute
   '/help': typeof HelpRoute
+  '/life-in-the-uk-test-practice': typeof LifeInTheUkTestPracticeRoute
+  '/nhs-numeracy-test-practice': typeof NhsNumeracyTestPracticeRoute
   '/privacy': typeof PrivacyRoute
   '/report': typeof ReportRoute
   '/reset-password': typeof ResetPasswordRoute
   '/robots.txt': typeof RobotsDottxtRoute
+  '/seru-test-practice': typeof SeruTestPracticeRoute
   '/seru-tfl': typeof SeruTflRoute
+  '/sia-door-supervisor-mock-test': typeof SiaDoorSupervisorMockTestRoute
   '/signin': typeof SigninRoute
   '/signup': typeof SignupRoute
   '/sitemap': typeof SitemapRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms': typeof TermsRoute
+  '/topographical-test-london': typeof TopographicalTestLondonRoute
+  '/uk-road-signs-test': typeof UkRoadSignsTestRoute
   '/admin-kb20/ads': typeof AdminKb20AdsRoute
   '/admin-kb20/analytics': typeof AdminKb20AnalyticsRoute
   '/admin-kb20/bulk-edit': typeof AdminKb20BulkEditRoute
@@ -476,23 +542,31 @@ export interface FileRoutesById {
   '/bookmarks': typeof BookmarksRoute
   '/contact': typeof ContactRoute
   '/cookies': typeof CookiesRoute
+  '/cscs-mock-test-free': typeof CscsMockTestFreeRoute
   '/dashboard': typeof DashboardRoute
   '/disclaimer': typeof DisclaimerRoute
+  '/driving-theory-test-questions': typeof DrivingTheoryTestQuestionsRoute
   '/exam-updates': typeof ExamUpdatesRoute
   '/faq': typeof FaqRoute
   '/feedback': typeof FeedbackRoute
   '/forgot-password': typeof ForgotPasswordRoute
   '/help': typeof HelpRoute
+  '/life-in-the-uk-test-practice': typeof LifeInTheUkTestPracticeRoute
+  '/nhs-numeracy-test-practice': typeof NhsNumeracyTestPracticeRoute
   '/privacy': typeof PrivacyRoute
   '/report': typeof ReportRoute
   '/reset-password': typeof ResetPasswordRoute
   '/robots.txt': typeof RobotsDottxtRoute
+  '/seru-test-practice': typeof SeruTestPracticeRoute
   '/seru-tfl': typeof SeruTflRoute
+  '/sia-door-supervisor-mock-test': typeof SiaDoorSupervisorMockTestRoute
   '/signin': typeof SigninRoute
   '/signup': typeof SignupRoute
   '/sitemap': typeof SitemapRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms': typeof TermsRoute
+  '/topographical-test-london': typeof TopographicalTestLondonRoute
+  '/uk-road-signs-test': typeof UkRoadSignsTestRoute
   '/admin-kb20/ads': typeof AdminKb20AdsRoute
   '/admin-kb20/analytics': typeof AdminKb20AnalyticsRoute
   '/admin-kb20/bulk-edit': typeof AdminKb20BulkEditRoute
@@ -536,23 +610,31 @@ export interface FileRouteTypes {
     | '/bookmarks'
     | '/contact'
     | '/cookies'
+    | '/cscs-mock-test-free'
     | '/dashboard'
     | '/disclaimer'
+    | '/driving-theory-test-questions'
     | '/exam-updates'
     | '/faq'
     | '/feedback'
     | '/forgot-password'
     | '/help'
+    | '/life-in-the-uk-test-practice'
+    | '/nhs-numeracy-test-practice'
     | '/privacy'
     | '/report'
     | '/reset-password'
     | '/robots.txt'
+    | '/seru-test-practice'
     | '/seru-tfl'
+    | '/sia-door-supervisor-mock-test'
     | '/signin'
     | '/signup'
     | '/sitemap'
     | '/sitemap.xml'
     | '/terms'
+    | '/topographical-test-london'
+    | '/uk-road-signs-test'
     | '/admin-kb20/ads'
     | '/admin-kb20/analytics'
     | '/admin-kb20/bulk-edit'
@@ -593,23 +675,31 @@ export interface FileRouteTypes {
     | '/bookmarks'
     | '/contact'
     | '/cookies'
+    | '/cscs-mock-test-free'
     | '/dashboard'
     | '/disclaimer'
+    | '/driving-theory-test-questions'
     | '/exam-updates'
     | '/faq'
     | '/feedback'
     | '/forgot-password'
     | '/help'
+    | '/life-in-the-uk-test-practice'
+    | '/nhs-numeracy-test-practice'
     | '/privacy'
     | '/report'
     | '/reset-password'
     | '/robots.txt'
+    | '/seru-test-practice'
     | '/seru-tfl'
+    | '/sia-door-supervisor-mock-test'
     | '/signin'
     | '/signup'
     | '/sitemap'
     | '/sitemap.xml'
     | '/terms'
+    | '/topographical-test-london'
+    | '/uk-road-signs-test'
     | '/admin-kb20/ads'
     | '/admin-kb20/analytics'
     | '/admin-kb20/bulk-edit'
@@ -651,23 +741,31 @@ export interface FileRouteTypes {
     | '/bookmarks'
     | '/contact'
     | '/cookies'
+    | '/cscs-mock-test-free'
     | '/dashboard'
     | '/disclaimer'
+    | '/driving-theory-test-questions'
     | '/exam-updates'
     | '/faq'
     | '/feedback'
     | '/forgot-password'
     | '/help'
+    | '/life-in-the-uk-test-practice'
+    | '/nhs-numeracy-test-practice'
     | '/privacy'
     | '/report'
     | '/reset-password'
     | '/robots.txt'
+    | '/seru-test-practice'
     | '/seru-tfl'
+    | '/sia-door-supervisor-mock-test'
     | '/signin'
     | '/signup'
     | '/sitemap'
     | '/sitemap.xml'
     | '/terms'
+    | '/topographical-test-london'
+    | '/uk-road-signs-test'
     | '/admin-kb20/ads'
     | '/admin-kb20/analytics'
     | '/admin-kb20/bulk-edit'
@@ -710,23 +808,31 @@ export interface RootRouteChildren {
   BookmarksRoute: typeof BookmarksRoute
   ContactRoute: typeof ContactRoute
   CookiesRoute: typeof CookiesRoute
+  CscsMockTestFreeRoute: typeof CscsMockTestFreeRoute
   DashboardRoute: typeof DashboardRoute
   DisclaimerRoute: typeof DisclaimerRoute
+  DrivingTheoryTestQuestionsRoute: typeof DrivingTheoryTestQuestionsRoute
   ExamUpdatesRoute: typeof ExamUpdatesRoute
   FaqRoute: typeof FaqRoute
   FeedbackRoute: typeof FeedbackRoute
   ForgotPasswordRoute: typeof ForgotPasswordRoute
   HelpRoute: typeof HelpRoute
+  LifeInTheUkTestPracticeRoute: typeof LifeInTheUkTestPracticeRoute
+  NhsNumeracyTestPracticeRoute: typeof NhsNumeracyTestPracticeRoute
   PrivacyRoute: typeof PrivacyRoute
   ReportRoute: typeof ReportRoute
   ResetPasswordRoute: typeof ResetPasswordRoute
   RobotsDottxtRoute: typeof RobotsDottxtRoute
+  SeruTestPracticeRoute: typeof SeruTestPracticeRoute
   SeruTflRoute: typeof SeruTflRoute
+  SiaDoorSupervisorMockTestRoute: typeof SiaDoorSupervisorMockTestRoute
   SigninRoute: typeof SigninRoute
   SignupRoute: typeof SignupRoute
   SitemapRoute: typeof SitemapRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   TermsRoute: typeof TermsRoute
+  TopographicalTestLondonRoute: typeof TopographicalTestLondonRoute
+  UkRoadSignsTestRoute: typeof UkRoadSignsTestRoute
   AdminKb20AdsRoute: typeof AdminKb20AdsRoute
   AdminKb20AnalyticsRoute: typeof AdminKb20AnalyticsRoute
   AdminKb20BulkEditRoute: typeof AdminKb20BulkEditRoute
@@ -758,6 +864,20 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/uk-road-signs-test': {
+      id: '/uk-road-signs-test'
+      path: '/uk-road-signs-test'
+      fullPath: '/uk-road-signs-test'
+      preLoaderRoute: typeof UkRoadSignsTestRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/topographical-test-london': {
+      id: '/topographical-test-london'
+      path: '/topographical-test-london'
+      fullPath: '/topographical-test-london'
+      preLoaderRoute: typeof TopographicalTestLondonRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/terms': {
       id: '/terms'
       path: '/terms'
@@ -793,11 +913,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SigninRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/sia-door-supervisor-mock-test': {
+      id: '/sia-door-supervisor-mock-test'
+      path: '/sia-door-supervisor-mock-test'
+      fullPath: '/sia-door-supervisor-mock-test'
+      preLoaderRoute: typeof SiaDoorSupervisorMockTestRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/seru-tfl': {
       id: '/seru-tfl'
       path: '/seru-tfl'
       fullPath: '/seru-tfl'
       preLoaderRoute: typeof SeruTflRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/seru-test-practice': {
+      id: '/seru-test-practice'
+      path: '/seru-test-practice'
+      fullPath: '/seru-test-practice'
+      preLoaderRoute: typeof SeruTestPracticeRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/robots.txt': {
@@ -826,6 +960,20 @@ declare module '@tanstack/react-router' {
       path: '/privacy'
       fullPath: '/privacy'
       preLoaderRoute: typeof PrivacyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/nhs-numeracy-test-practice': {
+      id: '/nhs-numeracy-test-practice'
+      path: '/nhs-numeracy-test-practice'
+      fullPath: '/nhs-numeracy-test-practice'
+      preLoaderRoute: typeof NhsNumeracyTestPracticeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/life-in-the-uk-test-practice': {
+      id: '/life-in-the-uk-test-practice'
+      path: '/life-in-the-uk-test-practice'
+      fullPath: '/life-in-the-uk-test-practice'
+      preLoaderRoute: typeof LifeInTheUkTestPracticeRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/help': {
@@ -863,6 +1011,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ExamUpdatesRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/driving-theory-test-questions': {
+      id: '/driving-theory-test-questions'
+      path: '/driving-theory-test-questions'
+      fullPath: '/driving-theory-test-questions'
+      preLoaderRoute: typeof DrivingTheoryTestQuestionsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/disclaimer': {
       id: '/disclaimer'
       path: '/disclaimer'
@@ -875,6 +1030,13 @@ declare module '@tanstack/react-router' {
       path: '/dashboard'
       fullPath: '/dashboard'
       preLoaderRoute: typeof DashboardRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cscs-mock-test-free': {
+      id: '/cscs-mock-test-free'
+      path: '/cscs-mock-test-free'
+      fullPath: '/cscs-mock-test-free'
+      preLoaderRoute: typeof CscsMockTestFreeRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/cookies': {
@@ -1176,23 +1338,31 @@ const rootRouteChildren: RootRouteChildren = {
   BookmarksRoute: BookmarksRoute,
   ContactRoute: ContactRoute,
   CookiesRoute: CookiesRoute,
+  CscsMockTestFreeRoute: CscsMockTestFreeRoute,
   DashboardRoute: DashboardRoute,
   DisclaimerRoute: DisclaimerRoute,
+  DrivingTheoryTestQuestionsRoute: DrivingTheoryTestQuestionsRoute,
   ExamUpdatesRoute: ExamUpdatesRoute,
   FaqRoute: FaqRoute,
   FeedbackRoute: FeedbackRoute,
   ForgotPasswordRoute: ForgotPasswordRoute,
   HelpRoute: HelpRoute,
+  LifeInTheUkTestPracticeRoute: LifeInTheUkTestPracticeRoute,
+  NhsNumeracyTestPracticeRoute: NhsNumeracyTestPracticeRoute,
   PrivacyRoute: PrivacyRoute,
   ReportRoute: ReportRoute,
   ResetPasswordRoute: ResetPasswordRoute,
   RobotsDottxtRoute: RobotsDottxtRoute,
+  SeruTestPracticeRoute: SeruTestPracticeRoute,
   SeruTflRoute: SeruTflRoute,
+  SiaDoorSupervisorMockTestRoute: SiaDoorSupervisorMockTestRoute,
   SigninRoute: SigninRoute,
   SignupRoute: SignupRoute,
   SitemapRoute: SitemapRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   TermsRoute: TermsRoute,
+  TopographicalTestLondonRoute: TopographicalTestLondonRoute,
+  UkRoadSignsTestRoute: UkRoadSignsTestRoute,
   AdminKb20AdsRoute: AdminKb20AdsRoute,
   AdminKb20AnalyticsRoute: AdminKb20AnalyticsRoute,
   AdminKb20BulkEditRoute: AdminKb20BulkEditRoute,
