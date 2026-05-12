@@ -4,8 +4,7 @@ import { createFileRoute, redirect } from "@tanstack/react-router";
 export const Route = createFileRoute("/topographical-test-london")({
   beforeLoad: () => {
     throw redirect({
-      to: "/blog/$slug",
-      params: { slug: "topographical-test-london" },
+      to: "/blog/topographical-test-london",
       statusCode: 301,
     });
   },
