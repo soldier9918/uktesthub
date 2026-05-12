@@ -50,6 +50,14 @@ import { Route as TopicSlugRouteImport } from './routes/topic.$slug'
 import { Route as QuizSlugRouteImport } from './routes/quiz.$slug'
 import { Route as GuideSlugRouteImport } from './routes/guide.$slug'
 import { Route as CategorySlugRouteImport } from './routes/category.$slug'
+import { Route as BlogUkRoadSignsTestRouteImport } from './routes/blog.uk-road-signs-test'
+import { Route as BlogTopographicalTestLondonRouteImport } from './routes/blog.topographical-test-london'
+import { Route as BlogSiaDoorSupervisorMockTestRouteImport } from './routes/blog.sia-door-supervisor-mock-test'
+import { Route as BlogSeruTestPracticeRouteImport } from './routes/blog.seru-test-practice'
+import { Route as BlogNhsNumeracyTestPracticeRouteImport } from './routes/blog.nhs-numeracy-test-practice'
+import { Route as BlogLifeInTheUkTestPracticeRouteImport } from './routes/blog.life-in-the-uk-test-practice'
+import { Route as BlogDrivingTheoryTestQuestionsRouteImport } from './routes/blog.driving-theory-test-questions'
+import { Route as BlogCscsMockTestFreeRouteImport } from './routes/blog.cscs-mock-test-free'
 import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
 import { Route as AdminKb20ValidatorRouteImport } from './routes/admin-kb20.validator'
 import { Route as AdminKb20UsersRouteImport } from './routes/admin-kb20.users'
@@ -281,6 +289,51 @@ const CategorySlugRoute = CategorySlugRouteImport.update({
   path: '/category/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BlogUkRoadSignsTestRoute = BlogUkRoadSignsTestRouteImport.update({
+  id: '/uk-road-signs-test',
+  path: '/uk-road-signs-test',
+  getParentRoute: () => BlogRoute,
+} as any)
+const BlogTopographicalTestLondonRoute =
+  BlogTopographicalTestLondonRouteImport.update({
+    id: '/topographical-test-london',
+    path: '/topographical-test-london',
+    getParentRoute: () => BlogRoute,
+  } as any)
+const BlogSiaDoorSupervisorMockTestRoute =
+  BlogSiaDoorSupervisorMockTestRouteImport.update({
+    id: '/sia-door-supervisor-mock-test',
+    path: '/sia-door-supervisor-mock-test',
+    getParentRoute: () => BlogRoute,
+  } as any)
+const BlogSeruTestPracticeRoute = BlogSeruTestPracticeRouteImport.update({
+  id: '/seru-test-practice',
+  path: '/seru-test-practice',
+  getParentRoute: () => BlogRoute,
+} as any)
+const BlogNhsNumeracyTestPracticeRoute =
+  BlogNhsNumeracyTestPracticeRouteImport.update({
+    id: '/nhs-numeracy-test-practice',
+    path: '/nhs-numeracy-test-practice',
+    getParentRoute: () => BlogRoute,
+  } as any)
+const BlogLifeInTheUkTestPracticeRoute =
+  BlogLifeInTheUkTestPracticeRouteImport.update({
+    id: '/life-in-the-uk-test-practice',
+    path: '/life-in-the-uk-test-practice',
+    getParentRoute: () => BlogRoute,
+  } as any)
+const BlogDrivingTheoryTestQuestionsRoute =
+  BlogDrivingTheoryTestQuestionsRouteImport.update({
+    id: '/driving-theory-test-questions',
+    path: '/driving-theory-test-questions',
+    getParentRoute: () => BlogRoute,
+  } as any)
+const BlogCscsMockTestFreeRoute = BlogCscsMockTestFreeRouteImport.update({
+  id: '/cscs-mock-test-free',
+  path: '/cscs-mock-test-free',
+  getParentRoute: () => BlogRoute,
+} as any)
 const BlogSlugRoute = BlogSlugRouteImport.update({
   id: '/$slug',
   path: '/$slug',
@@ -454,6 +507,14 @@ export interface FileRoutesByFullPath {
   '/admin-kb20/users': typeof AdminKb20UsersRoute
   '/admin-kb20/validator': typeof AdminKb20ValidatorRoute
   '/blog/$slug': typeof BlogSlugRoute
+  '/blog/cscs-mock-test-free': typeof BlogCscsMockTestFreeRoute
+  '/blog/driving-theory-test-questions': typeof BlogDrivingTheoryTestQuestionsRoute
+  '/blog/life-in-the-uk-test-practice': typeof BlogLifeInTheUkTestPracticeRoute
+  '/blog/nhs-numeracy-test-practice': typeof BlogNhsNumeracyTestPracticeRoute
+  '/blog/seru-test-practice': typeof BlogSeruTestPracticeRoute
+  '/blog/sia-door-supervisor-mock-test': typeof BlogSiaDoorSupervisorMockTestRoute
+  '/blog/topographical-test-london': typeof BlogTopographicalTestLondonRoute
+  '/blog/uk-road-signs-test': typeof BlogUkRoadSignsTestRoute
   '/category/$slug': typeof CategorySlugRoute
   '/guide/$slug': typeof GuideSlugRoute
   '/quiz/$slug': typeof QuizSlugRoute
@@ -519,6 +580,14 @@ export interface FileRoutesByTo {
   '/admin-kb20/users': typeof AdminKb20UsersRoute
   '/admin-kb20/validator': typeof AdminKb20ValidatorRoute
   '/blog/$slug': typeof BlogSlugRoute
+  '/blog/cscs-mock-test-free': typeof BlogCscsMockTestFreeRoute
+  '/blog/driving-theory-test-questions': typeof BlogDrivingTheoryTestQuestionsRoute
+  '/blog/life-in-the-uk-test-practice': typeof BlogLifeInTheUkTestPracticeRoute
+  '/blog/nhs-numeracy-test-practice': typeof BlogNhsNumeracyTestPracticeRoute
+  '/blog/seru-test-practice': typeof BlogSeruTestPracticeRoute
+  '/blog/sia-door-supervisor-mock-test': typeof BlogSiaDoorSupervisorMockTestRoute
+  '/blog/topographical-test-london': typeof BlogTopographicalTestLondonRoute
+  '/blog/uk-road-signs-test': typeof BlogUkRoadSignsTestRoute
   '/category/$slug': typeof CategorySlugRoute
   '/guide/$slug': typeof GuideSlugRoute
   '/quiz/$slug': typeof QuizSlugRoute
@@ -586,6 +655,14 @@ export interface FileRoutesById {
   '/admin-kb20/users': typeof AdminKb20UsersRoute
   '/admin-kb20/validator': typeof AdminKb20ValidatorRoute
   '/blog/$slug': typeof BlogSlugRoute
+  '/blog/cscs-mock-test-free': typeof BlogCscsMockTestFreeRoute
+  '/blog/driving-theory-test-questions': typeof BlogDrivingTheoryTestQuestionsRoute
+  '/blog/life-in-the-uk-test-practice': typeof BlogLifeInTheUkTestPracticeRoute
+  '/blog/nhs-numeracy-test-practice': typeof BlogNhsNumeracyTestPracticeRoute
+  '/blog/seru-test-practice': typeof BlogSeruTestPracticeRoute
+  '/blog/sia-door-supervisor-mock-test': typeof BlogSiaDoorSupervisorMockTestRoute
+  '/blog/topographical-test-london': typeof BlogTopographicalTestLondonRoute
+  '/blog/uk-road-signs-test': typeof BlogUkRoadSignsTestRoute
   '/category/$slug': typeof CategorySlugRoute
   '/guide/$slug': typeof GuideSlugRoute
   '/quiz/$slug': typeof QuizSlugRoute
@@ -654,6 +731,14 @@ export interface FileRouteTypes {
     | '/admin-kb20/users'
     | '/admin-kb20/validator'
     | '/blog/$slug'
+    | '/blog/cscs-mock-test-free'
+    | '/blog/driving-theory-test-questions'
+    | '/blog/life-in-the-uk-test-practice'
+    | '/blog/nhs-numeracy-test-practice'
+    | '/blog/seru-test-practice'
+    | '/blog/sia-door-supervisor-mock-test'
+    | '/blog/topographical-test-london'
+    | '/blog/uk-road-signs-test'
     | '/category/$slug'
     | '/guide/$slug'
     | '/quiz/$slug'
@@ -719,6 +804,14 @@ export interface FileRouteTypes {
     | '/admin-kb20/users'
     | '/admin-kb20/validator'
     | '/blog/$slug'
+    | '/blog/cscs-mock-test-free'
+    | '/blog/driving-theory-test-questions'
+    | '/blog/life-in-the-uk-test-practice'
+    | '/blog/nhs-numeracy-test-practice'
+    | '/blog/seru-test-practice'
+    | '/blog/sia-door-supervisor-mock-test'
+    | '/blog/topographical-test-london'
+    | '/blog/uk-road-signs-test'
     | '/category/$slug'
     | '/guide/$slug'
     | '/quiz/$slug'
@@ -785,6 +878,14 @@ export interface FileRouteTypes {
     | '/admin-kb20/users'
     | '/admin-kb20/validator'
     | '/blog/$slug'
+    | '/blog/cscs-mock-test-free'
+    | '/blog/driving-theory-test-questions'
+    | '/blog/life-in-the-uk-test-practice'
+    | '/blog/nhs-numeracy-test-practice'
+    | '/blog/seru-test-practice'
+    | '/blog/sia-door-supervisor-mock-test'
+    | '/blog/topographical-test-london'
+    | '/blog/uk-road-signs-test'
     | '/category/$slug'
     | '/guide/$slug'
     | '/quiz/$slug'
@@ -1151,6 +1252,62 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof CategorySlugRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/blog/uk-road-signs-test': {
+      id: '/blog/uk-road-signs-test'
+      path: '/uk-road-signs-test'
+      fullPath: '/blog/uk-road-signs-test'
+      preLoaderRoute: typeof BlogUkRoadSignsTestRouteImport
+      parentRoute: typeof BlogRoute
+    }
+    '/blog/topographical-test-london': {
+      id: '/blog/topographical-test-london'
+      path: '/topographical-test-london'
+      fullPath: '/blog/topographical-test-london'
+      preLoaderRoute: typeof BlogTopographicalTestLondonRouteImport
+      parentRoute: typeof BlogRoute
+    }
+    '/blog/sia-door-supervisor-mock-test': {
+      id: '/blog/sia-door-supervisor-mock-test'
+      path: '/sia-door-supervisor-mock-test'
+      fullPath: '/blog/sia-door-supervisor-mock-test'
+      preLoaderRoute: typeof BlogSiaDoorSupervisorMockTestRouteImport
+      parentRoute: typeof BlogRoute
+    }
+    '/blog/seru-test-practice': {
+      id: '/blog/seru-test-practice'
+      path: '/seru-test-practice'
+      fullPath: '/blog/seru-test-practice'
+      preLoaderRoute: typeof BlogSeruTestPracticeRouteImport
+      parentRoute: typeof BlogRoute
+    }
+    '/blog/nhs-numeracy-test-practice': {
+      id: '/blog/nhs-numeracy-test-practice'
+      path: '/nhs-numeracy-test-practice'
+      fullPath: '/blog/nhs-numeracy-test-practice'
+      preLoaderRoute: typeof BlogNhsNumeracyTestPracticeRouteImport
+      parentRoute: typeof BlogRoute
+    }
+    '/blog/life-in-the-uk-test-practice': {
+      id: '/blog/life-in-the-uk-test-practice'
+      path: '/life-in-the-uk-test-practice'
+      fullPath: '/blog/life-in-the-uk-test-practice'
+      preLoaderRoute: typeof BlogLifeInTheUkTestPracticeRouteImport
+      parentRoute: typeof BlogRoute
+    }
+    '/blog/driving-theory-test-questions': {
+      id: '/blog/driving-theory-test-questions'
+      path: '/driving-theory-test-questions'
+      fullPath: '/blog/driving-theory-test-questions'
+      preLoaderRoute: typeof BlogDrivingTheoryTestQuestionsRouteImport
+      parentRoute: typeof BlogRoute
+    }
+    '/blog/cscs-mock-test-free': {
+      id: '/blog/cscs-mock-test-free'
+      path: '/cscs-mock-test-free'
+      fullPath: '/blog/cscs-mock-test-free'
+      preLoaderRoute: typeof BlogCscsMockTestFreeRouteImport
+      parentRoute: typeof BlogRoute
+    }
     '/blog/$slug': {
       id: '/blog/$slug'
       path: '/$slug'
@@ -1317,11 +1474,27 @@ declare module '@tanstack/react-router' {
 
 interface BlogRouteChildren {
   BlogSlugRoute: typeof BlogSlugRoute
+  BlogCscsMockTestFreeRoute: typeof BlogCscsMockTestFreeRoute
+  BlogDrivingTheoryTestQuestionsRoute: typeof BlogDrivingTheoryTestQuestionsRoute
+  BlogLifeInTheUkTestPracticeRoute: typeof BlogLifeInTheUkTestPracticeRoute
+  BlogNhsNumeracyTestPracticeRoute: typeof BlogNhsNumeracyTestPracticeRoute
+  BlogSeruTestPracticeRoute: typeof BlogSeruTestPracticeRoute
+  BlogSiaDoorSupervisorMockTestRoute: typeof BlogSiaDoorSupervisorMockTestRoute
+  BlogTopographicalTestLondonRoute: typeof BlogTopographicalTestLondonRoute
+  BlogUkRoadSignsTestRoute: typeof BlogUkRoadSignsTestRoute
   BlogIndexRoute: typeof BlogIndexRoute
 }
 
 const BlogRouteChildren: BlogRouteChildren = {
   BlogSlugRoute: BlogSlugRoute,
+  BlogCscsMockTestFreeRoute: BlogCscsMockTestFreeRoute,
+  BlogDrivingTheoryTestQuestionsRoute: BlogDrivingTheoryTestQuestionsRoute,
+  BlogLifeInTheUkTestPracticeRoute: BlogLifeInTheUkTestPracticeRoute,
+  BlogNhsNumeracyTestPracticeRoute: BlogNhsNumeracyTestPracticeRoute,
+  BlogSeruTestPracticeRoute: BlogSeruTestPracticeRoute,
+  BlogSiaDoorSupervisorMockTestRoute: BlogSiaDoorSupervisorMockTestRoute,
+  BlogTopographicalTestLondonRoute: BlogTopographicalTestLondonRoute,
+  BlogUkRoadSignsTestRoute: BlogUkRoadSignsTestRoute,
   BlogIndexRoute: BlogIndexRoute,
 }
 
