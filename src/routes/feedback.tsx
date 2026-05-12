@@ -10,6 +10,7 @@ export const Route = createFileRoute("/feedback")({
         content:
           "Share your feedback, ideas and feature requests with the UK Test Hub team.",
       },
+      { name: "robots", content: "noindex,nofollow" },
       { property: "og:title", content: "Feedback — UK Test Hub" },
       {
         property: "og:description",

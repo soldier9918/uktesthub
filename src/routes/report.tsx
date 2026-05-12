@@ -10,6 +10,7 @@ export const Route = createFileRoute("/report")({
         content:
           "Spotted an incorrect answer or unclear question? Report it to UK Test Hub and we'll review it.",
       },
+      { name: "robots", content: "noindex,nofollow" },
       { property: "og:title", content: "Report a Question — UK Test Hub" },
       {
         property: "og:description",
