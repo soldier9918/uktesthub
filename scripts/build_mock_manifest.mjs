@@ -111,6 +111,16 @@ writeFileSync(
   join(root, "public", "mocks", "image-usage.json"),
   JSON.stringify(imageUsage),
 );
+
+// Tiny topic -> [mockNumbers] map, bundled into the Worker for the sitemap.
+const mockIndex = {};
+for (const [topic, info] of Object.entries(manifest)) {
+  mockIndex[topic] = info.mocks.map((m) => m.mockNumber);
+}
+const mockIndexOut = join(root, "src", "data", "mocks", "mock-index.json");
+mkdirSync(dirname(mockIndexOut), { recursive: true });
+writeFileSync(mockIndexOut, JSON.stringify(mockIndex));
+
 const totalMocks = Object.values(manifest).reduce((n, t) => n + t.mocks.length, 0);
 console.log(
   `[mock-manifest] scanned ${Object.keys(manifest).length} topics (${totalMocks} mocks) + wrote static diagnostics`,
