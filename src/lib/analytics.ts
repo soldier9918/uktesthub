@@ -1,4 +1,5 @@
 import { supabase } from "@/integrations/supabase/client";
+import { trackGAEvent } from "./analytics-ga";
 
 const SESSION_KEY = "uk-test-hub:session-id";
 
@@ -35,6 +36,14 @@ type EventInput = {
 /** Records an event. Best-effort, fire-and-forget. */
 export async function trackEvent(input: EventInput) {
   if (typeof window === "undefined") return;
+  // Mirror to GA4 (no-op when analytics consent is not granted).
+  if (input.event_type !== "page_view") {
+    trackGAEvent(input.event_type, {
+      topic_slug: input.topic_slug ?? undefined,
+      mock_slug: input.mock_slug ?? undefined,
+      path: input.path ?? window.location.pathname,
+    });
+  }
   try {
     const { data: u } = await supabase.auth.getUser();
     await supabase.from("quiz_events").insert([{

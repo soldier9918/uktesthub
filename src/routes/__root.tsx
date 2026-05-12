@@ -5,6 +5,7 @@ import { organizationSchema, websiteSchema, SITE_URL } from "@/lib/seo";
 import { StickyAdSlot } from "@/components/AdSlot";
 import { AuthProvider } from "@/lib/auth-context";
 import { PageViewTracker } from "@/components/PageViewTracker";
+import { CookieConsent } from "@/components/CookieConsent";
 
 function NotFoundComponent() {
   return (
@@ -92,6 +93,7 @@ function RootComponent() {
       <PageViewTracker />
       <Outlet />
       <StickyAdSlot />
+      <CookieConsent />
     </AuthProvider>
   );
 }

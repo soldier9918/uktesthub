@@ -133,6 +133,13 @@ export function SiteFooter() {
           <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
             <Link to="/privacy" className="hover:text-coral">Privacy</Link>
             <Link to="/cookies" className="hover:text-coral">Cookies</Link>
+            <button
+              type="button"
+              onClick={() => window.dispatchEvent(new Event("uktesthub:open-cookie-settings"))}
+              className="hover:text-coral"
+            >
+              Cookie Settings
+            </button>
             <Link to="/terms" className="hover:text-coral">Terms</Link>
             <Link to="/sitemap" className="hover:text-coral">Sitemap</Link>
           </div>

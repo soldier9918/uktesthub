@@ -26,6 +26,8 @@ const CATEGORY_SECTIONS: { key: string; title: string; slug: string }[] = [
   { key: "English", title: "English & IELTS", slug: "english-ielts" },
   { key: "Education", title: "Education & Exams", slug: "education-exams" },
   { key: "Professional", title: "Professional & Trade (CSCS)", slug: "professional-trade" },
+  { key: "Security", title: "Security & Door Supervision", slug: "security-door-supervision" },
+  { key: "IT & Tech", title: "IT & Tech", slug: "it-tech" },
   { key: "NHS", title: "NHS & Healthcare", slug: "nhs-healthcare" },
   { key: "Fun", title: "General Knowledge & Fun", slug: "general-knowledge" },
 ];
