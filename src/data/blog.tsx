@@ -1483,7 +1483,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "driving-theory-mock-test-uk",
-    title: "Driving Theory Mock Test UK (Real Exam Questions)",
+    title: "Driving Theory Mock Test UK (Practice-Style Questions)",
     description:
       "Free UK Driving Theory mock test with real exam-style questions for 2026. Instant marking, full explanations and unlimited retries.",
     excerpt:
@@ -2735,7 +2735,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "cscs-mock-test-free-uk",
-    title: "CSCS Mock Test Free UK (Real Exam Questions)",
+    title: "CSCS Mock Test Free UK (Practice-Style Questions)",
     description:
       "Free CSCS mock test for the UK Health, Safety & Environment exam. Real exam-style questions, instant marking, no sign-up.",
     excerpt:
