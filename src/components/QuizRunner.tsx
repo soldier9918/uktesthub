@@ -1090,22 +1090,10 @@ function Results({
           <Stat label="Percentage" value={`${percent}%`} />
           <Stat label="Pass mark" value={`${quiz.passMark}%`} />
         </div>
-        <div className="mt-7 flex flex-wrap justify-center gap-3">
-          <button
-            onClick={onRetry}
-            className="inline-flex items-center gap-2 rounded-xl bg-gradient-coral px-5 py-2.5 text-sm font-semibold text-coral-foreground shadow-coral"
-          >
-            <RotateCcw className="h-4 w-4" /> Retry test
-          </button>
-          <Link
-            to="/category/$slug"
-            params={{ slug: quiz.category }}
-            className="inline-flex items-center gap-2 rounded-xl border border-border bg-background px-5 py-2.5 text-sm font-semibold hover:bg-muted"
-          >
-            More tests <ArrowRight className="h-4 w-4" />
-          </Link>
-        </div>
+        <ResultsCtas quiz={quiz} onRetry={onRetry} />
       </div>
+
+      <NextStepsPanel quiz={quiz} />
 
       <div className="rounded-3xl border border-border bg-card p-6 shadow-soft md:p-8">
         <h3 className="font-display text-xl font-semibold">Review your answers</h3>
