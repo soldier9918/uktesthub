@@ -357,7 +357,10 @@ export const blogPosts: BlogPost[] = [
           <C slug="driving">UK Driving & Transport practice hub</C>. Every mock is free, scored instantly and
           comes with full explanations. Good luck — and remember, the people who pass first time are usually the
           ones who treat the theory test with the same seriousness as the practical.
-        </p>,
+        </p>
+      </>
+    ),
+  },
 
   {
     slug: "life-in-the-uk-test-guide",
@@ -577,7 +580,10 @@ export const blogPosts: BlogPost[] = [
           Visit the <C slug="citizenship">UK Citizenship & Life practice hub</C> for unlimited free Life in the UK
           mock tests, plus quizzes on UK laws, geography and citizenship rights. If you're also working on your
           English, our <B slug="ielts-tips-for-beginners">IELTS guide</B> covers the most popular B1 route.
-        </p>,
+        </p>
+      </>
+    ),
+  },
 
   {
     slug: "top-uk-road-signs-explained",
@@ -777,7 +783,10 @@ export const blogPosts: BlogPost[] = [
           Don't memorise signs in isolation. When you next walk or drive somewhere, name every sign you pass.
           Real-world reps build pattern recognition far faster than flashcards. By the time you sit your theory
           test, the signs should feel familiar — not like a quiz.
-        </p>,
+        </p>
+      </>
+    ),
+  },
 
   {
     slug: "ielts-tips-for-beginners",
@@ -1029,7 +1038,10 @@ export const blogPosts: BlogPost[] = [
           different exam, the <C slug="english">English Language Tests hub</C> covers TOEFL, ESOL and grammar
           drills too. Pair this with our <B slug="how-to-study-for-exams-fast">study tips guide</B> for a complete
           plan.
-        </p>,
+        </p>
+      </>
+    ),
+  },
 
   {
     slug: "gcse-maths-revision-guide",
@@ -1233,7 +1245,10 @@ export const blogPosts: BlogPost[] = [
           Get started with our <T slug="gcse-maths">free GCSE Maths practice tests</T>, or browse the full{" "}
           <C slug="education">Education & School hub</C> for 11+, GCSE English and SATs practice. Pair this with
           our <B slug="how-to-study-for-exams-fast">how to study fast</B> guide for the techniques top students use.
-        </p>,
+        </p>
+      </>
+    ),
+  },
 
   {
     slug: "cscs-test-practice-guide",
@@ -1445,7 +1460,10 @@ export const blogPosts: BlogPost[] = [
           professional certifications including SIA, SERU TfL and Food Hygiene, head to the{" "}
           <C slug="professional">Professional Certification hub</C>. If you're a TfL driver, our{" "}
           <B slug="seru-tfl-test-guide">SERU TfL guide</B> walks you through that exam too.
-        </p>,
+        </p>
+      </>
+    ),
+  },
 
   {
     slug: "seru-tfl-test-guide",
@@ -1643,7 +1661,10 @@ export const blogPosts: BlogPost[] = [
           Take a free <T slug="seru">SERU TfL practice test</T> now, and explore the full{" "}
           <C slug="professional">Professional Certification hub</C> for related exams like CSCS and SIA. If you
           drive other vehicles too, our <B slug="how-to-pass-driving-theory-test">Driving Theory guide</B> may help.
-        </p>,
+        </p>
+      </>
+    ),
+  },
 
   {
     slug: "nhs-numeracy-test-tips",
@@ -1855,7 +1876,10 @@ export const blogPosts: BlogPost[] = [
           Take our <T slug="nhs-numeracy">free NHS Numeracy practice test</T> now to baseline your score. The full{" "}
           <C slug="nhs">NHS & Healthcare hub</C> also covers literacy, values-based recruitment and the NMC CBT
           for overseas nurses.
-        </p>,
+        </p>
+      </>
+    ),
+  },
 
   {
     slug: "uk-general-knowledge-quiz-guide",
@@ -2043,7 +2067,10 @@ export const blogPosts: BlogPost[] = [
           24 hours. For more lighthearted fun, try the <T slug="how-british">How British Are You?</T> quiz, or
           browse the full <C slug="fun">Fun & Viral Quizzes hub</C>. If trivia leads you towards taking the real
           citizenship exam, our <B slug="life-in-the-uk-test-guide">Life in the UK guide</B> walks you through it.
-        </p>,
+        </p>
+      </>
+    ),
+  },
 
   {
     slug: "how-to-study-for-exams-fast",
@@ -2271,7 +2298,11 @@ export const blogPosts: BlogPost[] = [
           <C slug="english">IELTS</C>, <C slug="career">aptitude tests</C>, and{" "}
           <C slug="nhs">NHS recruitment</C>. Pick your exam, take a baseline mock today, and start applying the
           rhythm above tomorrow. You'll be amazed how much faster you progress.
-        </p>,
+        </p>
+      </>
+    ),
+  },
+
   {
     slug: "uk-driving-theory-questions-2026",
     title: "UK Driving Theory Questions 2026 (Free Practice Test)",
@@ -2481,7 +2512,11 @@ export const blogPosts: BlogPost[] = [
         </p>
         <p>
           Related reading: <B slug="how-to-pass-driving-theory-test">How to Pass the UK Driving Theory Test First Time</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
+
   {
     slug: "50-uk-road-signs-you-must-know",
     title: "50 UK Road Signs You Must Know (With Meanings)",
@@ -2689,7 +2724,11 @@ export const blogPosts: BlogPost[] = [
         </p>
         <p>
           Related reading: <B slug="top-uk-road-signs-explained">Top UK Road Signs Explained</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
+
   {
     slug: "driving-theory-test-uk-complete-guide",
     title: "Driving Theory Test UK: Complete Guide to Pass First Time",
@@ -2881,7 +2920,11 @@ export const blogPosts: BlogPost[] = [
         </p>
         <p>
           Related reading: <B slug="how-to-pass-driving-theory-test">How to Pass the UK Driving Theory Test First Time</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
+
   {
     slug: "hardest-uk-driving-theory-questions",
     title: "Hardest UK Driving Theory Questions (With Answers)",
@@ -3089,7 +3132,11 @@ export const blogPosts: BlogPost[] = [
         </p>
         <p>
           Related reading: <B slug="most-common-driving-theory-mistakes">Most Common Driving Theory Mistakes</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
+
   {
     slug: "uk-hazard-perception-test-tips",
     title: "UK Hazard Perception Test Tips to Pass Easily",
@@ -3283,7 +3330,11 @@ export const blogPosts: BlogPost[] = [
         </p>
         <p>
           Related reading: <B slug="how-to-pass-driving-theory-test">How to Pass the UK Driving Theory Test First Time</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
+
   {
     slug: "driving-theory-mock-test-uk",
     title: "Driving Theory Mock Test UK (Practice-Style Questions)",
@@ -3491,7 +3542,11 @@ export const blogPosts: BlogPost[] = [
         </p>
         <p>
           Related reading: <B slug="free-driving-theory-practice-test-uk">Free Driving Theory Practice Test UK (2026)</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
+
   {
     slug: "uk-road-signs-quiz-100-percent",
     title: "UK Road Signs Quiz: Can You Get 100%?",
@@ -3697,7 +3752,11 @@ export const blogPosts: BlogPost[] = [
         </p>
         <p>
           Related reading: <B slug="50-uk-road-signs-you-must-know">50 UK Road Signs You Must Know</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
+
   {
     slug: "most-common-driving-theory-mistakes",
     title: "Most Common Driving Theory Mistakes (UK Learners)",
@@ -3889,7 +3948,11 @@ export const blogPosts: BlogPost[] = [
         </p>
         <p>
           Related reading: <B slug="hardest-uk-driving-theory-questions">Hardest UK Driving Theory Questions</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
+
   {
     slug: "uk-driving-theory-pass-mark-explained",
     title: "UK Driving Theory Pass Mark Explained (2026 Update)",
@@ -4081,7 +4144,11 @@ export const blogPosts: BlogPost[] = [
         </p>
         <p>
           Related reading: <B slug="driving-theory-test-uk-complete-guide">Driving Theory Test UK: Complete Guide</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
+
   {
     slug: "free-driving-theory-practice-test-uk",
     title: "Free Driving Theory Practice Test UK (Updated 2026)",
@@ -4273,7 +4340,11 @@ export const blogPosts: BlogPost[] = [
         </p>
         <p>
           Related reading: <B slug="driving-theory-mock-test-uk">Driving Theory Mock Test UK</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
+
   {
     slug: "life-in-the-uk-test-questions-and-answers-2026",
     title: "Life in the UK Test Questions and Answers 2026",
@@ -4481,7 +4552,11 @@ export const blogPosts: BlogPost[] = [
         </p>
         <p>
           Related reading: <B slug="life-in-the-uk-test-guide">The Life in the UK Test: Complete Guide</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
+
   {
     slug: "50-life-in-the-uk-questions-you-must-know",
     title: "50 Life in the UK Questions You Must Know",
@@ -4689,7 +4764,11 @@ export const blogPosts: BlogPost[] = [
         </p>
         <p>
           Related reading: <B slug="life-in-the-uk-test-questions-and-answers-2026">Life in the UK Questions and Answers 2026</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
+
   {
     slug: "hardest-life-in-the-uk-test-questions",
     title: "Hardest Life in the UK Test Questions (With Answers)",
@@ -4897,7 +4976,11 @@ export const blogPosts: BlogPost[] = [
         </p>
         <p>
           Related reading: <B slug="common-life-in-the-uk-test-mistakes-to-avoid">Common Life in the UK Test Mistakes</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
+
   {
     slug: "life-in-the-uk-test-practice-free",
     title: "Life in the UK Test Practice Free (Real Exam Style)",
@@ -5105,7 +5188,11 @@ export const blogPosts: BlogPost[] = [
         </p>
         <p>
           Related reading: <B slug="life-in-the-uk-test-guide">The Life in the UK Test: Complete Guide</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
+
   {
     slug: "uk-citizenship-test-guide-pass-first-time",
     title: "UK Citizenship Test Guide: Pass First Time",
@@ -5297,7 +5384,11 @@ export const blogPosts: BlogPost[] = [
         </p>
         <p>
           Related reading: <B slug="life-in-the-uk-test-guide">The Life in the UK Test: Complete Guide</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
+
   {
     slug: "life-in-the-uk-test-pass-mark-explained",
     title: "Life in the UK Test Pass Mark Explained",
@@ -5489,7 +5580,11 @@ export const blogPosts: BlogPost[] = [
         </p>
         <p>
           Related reading: <B slug="life-in-the-uk-test-questions-and-answers-2026">Life in the UK Questions and Answers 2026</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
+
   {
     slug: "british-citizenship-test-questions-2026",
     title: "British Citizenship Test Questions 2026 (Free)",
@@ -5697,7 +5792,11 @@ export const blogPosts: BlogPost[] = [
         </p>
         <p>
           Related reading: <B slug="uk-citizenship-test-guide-pass-first-time">UK Citizenship Test Guide</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
+
   {
     slug: "how-to-pass-life-in-the-uk-test-quickly",
     title: "How to Pass Life in the UK Test Quickly",
@@ -5891,7 +5990,11 @@ export const blogPosts: BlogPost[] = [
         </p>
         <p>
           Related reading: <B slug="life-in-the-uk-test-guide">The Life in the UK Test: Complete Guide</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
+
   {
     slug: "life-in-the-uk-mock-test-2026-edition",
     title: "Life in the UK Mock Test (2026 Edition)",
@@ -6099,7 +6202,11 @@ export const blogPosts: BlogPost[] = [
         </p>
         <p>
           Related reading: <B slug="life-in-the-uk-test-practice-free">Life in the UK Test Practice Free</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
+
   {
     slug: "common-life-in-the-uk-test-mistakes-to-avoid",
     title: "Common Life in the UK Test Mistakes to Avoid",
@@ -6291,7 +6398,11 @@ export const blogPosts: BlogPost[] = [
         </p>
         <p>
           Related reading: <B slug="hardest-life-in-the-uk-test-questions">Hardest Life in the UK Test Questions</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
+
   {
     slug: "cscs-test-questions-and-answers-2026",
     title: "CSCS Test Questions and Answers 2026 (Free Practice)",
@@ -6499,7 +6610,11 @@ export const blogPosts: BlogPost[] = [
         </p>
         <p>
           Related reading: <B slug="cscs-test-practice-guide">CSCS Test Practice Guide</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
+
   {
     slug: "cscs-mock-test-free-uk",
     title: "CSCS Mock Test Free UK (Practice-Style Questions)",
@@ -6691,7 +6806,11 @@ export const blogPosts: BlogPost[] = [
         </p>
         <p>
           Related reading: <B slug="cscs-test-questions-and-answers-2026">CSCS Test Questions and Answers 2026</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
+
   {
     slug: "how-to-pass-cscs-test-first-time",
     title: "How to Pass CSCS Test First Time (Full Guide)",
@@ -6883,7 +7002,11 @@ export const blogPosts: BlogPost[] = [
         </p>
         <p>
           Related reading: <B slug="cscs-test-practice-guide">CSCS Test Practice Guide</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
+
   {
     slug: "most-common-cscs-test-questions-explained",
     title: "Most Common CSCS Test Questions Explained",
@@ -7091,7 +7214,11 @@ export const blogPosts: BlogPost[] = [
         </p>
         <p>
           Related reading: <B slug="how-to-pass-cscs-test-first-time">How to Pass CSCS Test First Time</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
+
   {
     slug: "cscs-card-test-practice-questions-uk",
     title: "CSCS Card Test Practice Questions (UK)",
@@ -7299,7 +7426,11 @@ export const blogPosts: BlogPost[] = [
         </p>
         <p>
           Related reading: <B slug="cscs-mock-test-free-uk">CSCS Mock Test Free UK</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
+
   {
     slug: "nhs-numeracy-test-questions-and-answers",
     title: "NHS Numeracy Test Questions and Answers (Free Practice)",
@@ -7491,7 +7622,11 @@ export const blogPosts: BlogPost[] = [
         </p>
         <p>
           Related reading: <B slug="nhs-numeracy-test-tips">NHS Numeracy Test Tips</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
+
   {
     slug: "nhs-interview-questions-and-answers-uk-guide",
     title: "NHS Interview Questions and Answers (UK Guide)",
@@ -7683,7 +7818,11 @@ export const blogPosts: BlogPost[] = [
         </p>
         <p>
           Related reading: <B slug="nhs-numeracy-test-tips">NHS Numeracy Test Tips</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
+
   {
     slug: "nhs-literacy-test-practice-with-answers",
     title: "NHS Literacy Test Practice (With Answers)",
@@ -7891,7 +8030,11 @@ export const blogPosts: BlogPost[] = [
         </p>
         <p>
           Related reading: <B slug="nhs-numeracy-test-tips">NHS Numeracy Test Tips</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
+
   {
     slug: "ielts-listening-practice-test-free",
     title: "IELTS Listening Practice Test (Free With Answers)",
@@ -8083,7 +8226,11 @@ export const blogPosts: BlogPost[] = [
         </p>
         <p>
           Related reading: <B slug="ielts-tips-for-beginners">IELTS Tips for Beginners</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
+
   {
     slug: "ielts-grammar-test-questions-beginner-to-advanced",
     title: "IELTS Grammar Test Questions (Beginner to Advanced)",
@@ -8291,7 +8438,10 @@ export const blogPosts: BlogPost[] = [
         </p>
         <p>
           Related reading: <B slug="ielts-tips-for-beginners">IELTS Tips for Beginners</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
 
   // ==================== TAXI & PRIVATE HIRE PILLAR ====================
 
@@ -8475,7 +8625,10 @@ export const blogPosts: BlogPost[] = [
 
         <p className="text-xs italic text-muted-foreground">
           Disclaimer: UK Test Hub is independent and not affiliated with Transport for London. Always confirm fees, formats and rules on tfl.gov.uk.
-        </p>,
+        </p>
+      </>
+    ),
+  },
 
   {
     slug: "seru-assessment-guide",
@@ -8651,7 +8804,10 @@ export const blogPosts: BlogPost[] = [
 
         <p className="text-xs italic text-muted-foreground">
           Disclaimer: UK Test Hub is independent and not affiliated with Transport for London. Always confirm the official format on tfl.gov.uk before booking.
-        </p>,
+        </p>
+      </>
+    ),
+  },
 
   {
     slug: "topographical-assessment-guide",
@@ -8809,7 +8965,10 @@ export const blogPosts: BlogPost[] = [
 
         <p className="text-xs italic text-muted-foreground">
           Disclaimer: UK Test Hub is independent and not affiliated with Transport for London.
-        </p>,
+        </p>
+      </>
+    ),
+  },
 
   {
     slug: "private-hire-english-language-requirement",
@@ -8963,7 +9122,10 @@ export const blogPosts: BlogPost[] = [
 
         <p className="text-xs italic text-muted-foreground">
           Disclaimer: UK Test Hub is independent and not affiliated with TfL or any SELT provider.
-        </p>,
+        </p>
+      </>
+    ),
+  },
 
   {
     slug: "congestion-charge-private-hire-drivers",
@@ -9111,7 +9273,10 @@ export const blogPosts: BlogPost[] = [
 
         <p className="text-xs italic text-muted-foreground">
           Disclaimer: UK Test Hub is independent and not affiliated with TfL. Confirm fees and rules on tfl.gov.uk.
-        </p>,
+        </p>
+      </>
+    ),
+  },
 
   {
     slug: "ulez-private-hire-drivers",
@@ -9243,7 +9408,10 @@ export const blogPosts: BlogPost[] = [
 
         <p className="text-xs italic text-muted-foreground">
           Disclaimer: UK Test Hub is independent and not affiliated with TfL. Always confirm vehicle compliance on tfl.gov.uk.
-        </p>,
+        </p>
+      </>
+    ),
+  },
 
   {
     slug: "dbs-check-private-hire-driver",
@@ -9391,7 +9559,10 @@ export const blogPosts: BlogPost[] = [
 
         <p className="text-xs italic text-muted-foreground">
           Disclaimer: UK Test Hub is independent and not affiliated with TfL or the DBS.
-        </p>,
+        </p>
+      </>
+    ),
+  },
 
   {
     slug: "safeguarding-awareness-private-hire",
@@ -9551,7 +9722,10 @@ export const blogPosts: BlogPost[] = [
 
         <p className="text-xs italic text-muted-foreground">
           Disclaimer: UK Test Hub is independent and not affiliated with TfL or any safeguarding agency. In an emergency call 999.
-        </p>,
+        </p>
+      </>
+    ),
+  },
 
   {
     slug: "private-hire-driver-badge-rules",
@@ -9685,7 +9859,10 @@ export const blogPosts: BlogPost[] = [
 
         <p className="text-xs italic text-muted-foreground">
           Disclaimer: UK Test Hub is independent and not affiliated with TfL.
-        </p>,
+        </p>
+      </>
+    ),
+  },
 
   {
     slug: "how-to-become-a-private-hire-driver-london",
@@ -9855,7 +10032,10 @@ export const blogPosts: BlogPost[] = [
 
         <p className="text-xs italic text-muted-foreground">
           Disclaimer: UK Test Hub is independent and not affiliated with Transport for London. Always confirm fees, formats and rules on tfl.gov.uk.
-        </p>,
+        </p>
+      </>
+    ),
+  },
 
   {
     slug: "show-and-tell-road-signs",
@@ -10107,7 +10287,10 @@ export const blogPosts: BlogPost[] = [
         <p className="text-xs italic text-muted-foreground">
           Disclaimer: UK Test Hub is independent and not affiliated with the Security Industry Authority. Always
           confirm fees and licence rules on sia.homeoffice.gov.uk.
-        </p>,
+        </p>
+      </>
+    ),
+  },
 
   {
     slug: "sia-door-supervisor-mock-questions-explained",
@@ -10354,7 +10537,10 @@ export const blogPosts: BlogPost[] = [
           Visit the <C slug="security">Security & Door Supervision practice hub</C> for more free mocks. Related
           reading: <B slug="sia-door-supervisor-test-guide-2026">our complete 2026 SIA Door Supervisor guide</B> and{" "}
           <B slug="how-to-pass-sia-door-supervisor-first-time">how to pass the SIA Door Supervisor exam first time</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
 
   {
     slug: "how-to-pass-sia-door-supervisor-first-time",
@@ -10559,7 +10745,10 @@ export const blogPosts: BlogPost[] = [
         <p>
           Related reading: <B slug="sia-door-supervisor-test-guide-2026">the complete 2026 SIA Door Supervisor guide</B>{" "}
           and <B slug="sia-door-supervisor-mock-questions-explained">SIA mock questions explained</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
 
   // ===== IT & Tech =====
   {
@@ -10789,7 +10978,10 @@ export const blogPosts: BlogPost[] = [
           Visit the <C slug="it-tech">IT & Tech practice hub</C> for free mocks across CompTIA A+, ITIL 4 and Cyber
           Security Awareness. Related reading: <B slug="cyber-security-awareness-test-guide">our cyber security
           awareness guide</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
 
   {
     slug: "cyber-security-awareness-test-guide",
@@ -11004,7 +11196,10 @@ export const blogPosts: BlogPost[] = [
           Visit the <C slug="it-tech">IT & Tech practice hub</C> for more free mocks. Related reading:{" "}
           <B slug="comptia-a-plus-uk-study-guide">our CompTIA A+ UK study guide</B> and{" "}
           <B slug="itil-4-foundation-practice-guide">ITIL 4 Foundation practice guide</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
 
   {
     slug: "itil-4-foundation-practice-guide",
@@ -11219,7 +11414,10 @@ export const blogPosts: BlogPost[] = [
           Visit the <C slug="it-tech">IT & Tech practice hub</C> for more free mocks. Related reading:{" "}
           <B slug="comptia-a-plus-uk-study-guide">our CompTIA A+ UK study guide</B> and{" "}
           <B slug="cyber-security-awareness-test-guide">cyber security awareness test guide</B>.
-        </p>,
+        </p>
+      </>
+    ),
+  },
 
 ];
 
