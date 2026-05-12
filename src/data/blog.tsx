@@ -4679,6 +4679,660 @@ export const blogPosts: BlogPost[] = [
     body: () => <ShowAndTellRoadSignsBody />,
   },
 
+  // ===== Security & Door Supervision =====
+  {
+    slug: "sia-door-supervisor-test-guide-2026",
+    title: "SIA Door Supervisor Test: The Complete 2026 Guide",
+    description:
+      "A clear 2026 guide to the SIA Door Supervisor qualification — units, exam format, pass marks, costs and a free practice mock to get you started.",
+    excerpt:
+      "Everything you need to know about the SIA Door Supervisor qualification in 2026 — units, exam structure, costs and study tips.",
+    datePublished: "2026-05-12",
+    author: "UK Test Hub Team",
+    readingMinutes: 6,
+    category: "Security",
+    tags: ["SIA", "door supervisor", "security"],
+    hero: h_SiaDoorSupervisorGuide,
+    body: () => (
+      <>
+        <p>
+          A Door Supervisor licence is the most common route into the UK private security industry. Issued by the
+          Security Industry Authority (SIA), it allows you to work the door at pubs, clubs, festivals, retail stores
+          and corporate venues across England and Wales. The qualification you need before applying for the licence
+          is the Level 2 Award for Working as a Door Supervisor — and like most regulated qualifications, it is
+          examined under timed conditions. This guide walks through what's actually tested, how the assessments are
+          structured, what they cost, and how to plan a few weeks of focused revision so you pass on your first sitting.
+          UK Test Hub is independent and not affiliated with the SIA.
+        </p>
+
+        <h2>Who needs an SIA Door Supervisor licence?</h2>
+        <p>
+          You need a Door Supervisor licence if you carry out manned guarding duties on licensed premises — meaning
+          venues that sell alcohol or provide regulated entertainment. The licence covers more activities than a
+          security guard licence, which is why most new entrants choose it first. Doormen, festival stewards,
+          shopping centre security and event staff all rely on it.
+        </p>
+
+        <h2>What's in the qualification?</h2>
+        <p>
+          The Level 2 Award is delivered over four full days of classroom training plus a separate first-aid day. It
+          covers four units: working in the private security industry, working as a door supervisor, conflict
+          management and physical intervention skills. The first three units are assessed by multiple-choice exam;
+          the physical intervention unit is assessed practically.
+        </p>
+
+        <h2>Exam format and pass marks</h2>
+        <ul>
+          <li><strong>Unit 1 — Working in the Private Security Industry:</strong> 40 multiple-choice questions, 60 minutes, pass mark typically 28/40.</li>
+          <li><strong>Unit 2 — Working as a Door Supervisor:</strong> 60 multiple-choice questions, 90 minutes, pass mark typically 42/60.</li>
+          <li><strong>Unit 3 — Conflict Management:</strong> 20 multiple-choice questions, 30 minutes, pass mark typically 14/20.</li>
+          <li><strong>Unit 4 — Physical Intervention:</strong> practical assessment with no written exam.</li>
+        </ul>
+        <p>
+          Pass marks vary slightly by awarding body (Highfield, Pearson, NCFE), but the structure is the same.
+          You must pass every unit to be awarded the qualification — there is no compensating between papers.
+        </p>
+
+        <h2>What does it cost?</h2>
+        <p>
+          Budget around £220–£320 for the training course, then £190 for the SIA licence itself, plus a £6 UK
+          Postal Identity Service fee. Resits with your training provider are typically £25–£45 per paper. Total
+          investment to your first shift is usually £450–£550 depending on where you live.
+        </p>
+
+        <h2>How to revise for the multiple-choice papers</h2>
+        <p>
+          The biggest mistake candidates make is treating the course handbook as optional reading. The SIA workbook
+          is dense, but every multiple-choice question maps directly back to it. Read it cover-to-cover before your
+          training week so the trainer can clarify the parts you find hardest, then practise full mocks under exam
+          conditions. Aim to score 90% or better on three consecutive mocks before sitting the official paper.
+        </p>
+        <p>
+          Use our <T slug="sia-door-supervisor">SIA Door Supervisor practice questions</T> to drill the topics you
+          find weakest — particularly conflict management, drug awareness, and licensing law. The questions are
+          worded in the same neutral, scenario-based style the awarding bodies use.
+        </p>
+
+        <div className="my-8 rounded-2xl border border-border bg-card p-6 shadow-soft">
+          <p className="text-xs font-semibold uppercase tracking-wider text-coral">Free practice</p>
+          <p className="mt-2 font-display text-xl font-bold text-foreground">Start SIA Door Supervisor Mock Test 1</p>
+          <p className="mt-1 text-sm text-muted-foreground">45 questions, instant marking, full explanations.</p>
+          <Link
+            to="/quiz/$slug"
+            params={{ slug: "sia-door-supervisor-mock-1" }}
+            className="mt-4 inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground shadow-soft transition-colors hover:bg-primary/90"
+          >
+            Start mock test 1
+          </Link>
+        </div>
+
+        <h2>Common mistakes to avoid</h2>
+        <p>
+          Three issues come up again and again: rushing Unit 2 because it's the longest paper, confusing the powers
+          of a door supervisor with those of a police officer, and underestimating the conflict management theory.
+          Most failed papers are by 1–3 marks — well within reach with a few extra hours of practice.
+        </p>
+
+        <h2>What happens after you pass?</h2>
+        <p>
+          Once your training provider issues your certificate, apply for your SIA licence online and pay the
+          standard fee. Approval usually takes 5–10 working days if your documents are clean. Your licence lasts
+          three years and renewals require a top-up training course.
+        </p>
+
+        <h2>Where to practise</h2>
+        <p>
+          Visit the <C slug="security">Security & Door Supervision practice hub</C> for free mocks across all four
+          units. Every quiz is free, marked instantly and comes with full written explanations.
+        </p>
+
+        <p className="text-xs italic text-muted-foreground">
+          Disclaimer: UK Test Hub is independent and not affiliated with the Security Industry Authority. Always
+          confirm fees and licence rules on sia.homeoffice.gov.uk.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    slug: "sia-door-supervisor-mock-questions-explained",
+    title: "SIA Door Supervisor Mock Questions Explained (2026)",
+    description:
+      "Sample SIA Door Supervisor exam questions worked through step-by-step. Learn how the Level 2 Award is marked and try a free 2026 mock test.",
+    excerpt:
+      "Worked SIA Door Supervisor sample questions covering the law, conflict management and physical intervention units.",
+    datePublished: "2026-05-11",
+    author: "UK Test Hub Team",
+    readingMinutes: 6,
+    category: "Security",
+    tags: ["SIA", "door supervisor", "mock questions"],
+    hero: h_SiaDoorSupervisorGuide,
+    body: () => (
+      <>
+        <p>
+          The SIA Door Supervisor multiple-choice papers look deceptively simple. Four answer options per question,
+          one correct answer, no negative marking. What candidates discover too late is that two of the four options
+          are usually almost right — they're worded just enough to mislead anyone who relies on memorisation rather
+          than understanding. This article walks through example questions in the style used by the major awarding
+          bodies and shows how to think through them confidently. You can then try the full <strong>free SIA Door
+          Supervisor mock test 1</strong> at the end.
+        </p>
+
+        <h2>How the questions are written</h2>
+        <p>
+          Awarding bodies (Highfield, Pearson, NCFE) write to a published syllabus called the SIA Specification for
+          Learning and Qualifications. Every multiple-choice question maps to a specific learning outcome. The
+          examiner's job is to test whether you can apply the rule, not just recall it — so most questions are
+          framed as short scenarios rather than facts.
+        </p>
+
+        <h2>Worked question 1 — Powers of arrest</h2>
+        <p>
+          <em>"A door supervisor sees a customer pick up another customer's phone from a table and walk towards the
+          exit. Under section 24A of the Police and Criminal Evidence Act 1984, the door supervisor may:"</em>
+        </p>
+        <ul>
+          <li>A. Detain the suspect and search them for the phone.</li>
+          <li>B. Arrest the suspect and hand them to the police as soon as is reasonably practicable.</li>
+          <li>C. Issue a banning order from the venue.</li>
+          <li>D. Confiscate the phone and return it to the owner.</li>
+        </ul>
+        <p>
+          The correct answer is <strong>B</strong>. PACE section 24A gives any person — not just police — the
+          power to arrest where an indictable offence is being committed and where it is not reasonably practicable
+          for a police officer to do so. Searching (A) and confiscating (D) are powers door supervisors do not have.
+          A banning order (C) is a venue policy decision, not a legal arrest power.
+        </p>
+
+        <h2>Worked question 2 — Conflict management</h2>
+        <p>
+          <em>"Which behaviour is most likely to escalate a conflict?"</em>
+        </p>
+        <ul>
+          <li>A. Standing at a 45-degree angle to the customer.</li>
+          <li>B. Maintaining steady eye contact and a calm tone.</li>
+          <li>C. Pointing at the customer while speaking.</li>
+          <li>D. Using the customer's first name.</li>
+        </ul>
+        <p>
+          The correct answer is <strong>C</strong>. Pointing is interpreted as aggressive non-verbal behaviour and
+          is consistently identified in SIA training as an escalator. The other options are de-escalation techniques.
+        </p>
+
+        <h2>Worked question 3 — Drug awareness</h2>
+        <p>
+          <em>"A customer's pupils are very dilated, they are sweating heavily and they appear hyperactive. Which
+          class of drug are they most likely to have taken?"</em>
+        </p>
+        <ul>
+          <li>A. Depressant.</li>
+          <li>B. Stimulant.</li>
+          <li>C. Hallucinogen.</li>
+          <li>D. Opioid.</li>
+        </ul>
+        <p>
+          The correct answer is <strong>B</strong>. Stimulants such as cocaine and MDMA cause dilated pupils,
+          sweating and hyperactivity. Depressants and opioids generally cause the opposite — drowsiness and
+          constricted pupils.
+        </p>
+
+        <h2>How marking works</h2>
+        <p>
+          Each unit is marked out of its total questions with a fixed pass mark — there is no scaling and no
+          compensation between units. If you fail one paper, you only re-sit that paper, usually within 28 days,
+          for an admin fee of around £25–£45 with your training provider.
+        </p>
+
+        <div className="my-8 rounded-2xl border border-border bg-card p-6 shadow-soft">
+          <p className="text-xs font-semibold uppercase tracking-wider text-coral">Free practice</p>
+          <p className="mt-2 font-display text-xl font-bold text-foreground">Start SIA Door Supervisor Mock Test 1</p>
+          <p className="mt-1 text-sm text-muted-foreground">45 mixed-unit questions, instant marking, full explanations.</p>
+          <Link
+            to="/quiz/$slug"
+            params={{ slug: "sia-door-supervisor-mock-1" }}
+            className="mt-4 inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground shadow-soft transition-colors hover:bg-primary/90"
+          >
+            Start mock test 1
+          </Link>
+        </div>
+
+        <h2>Tips for tackling MCQs</h2>
+        <ul>
+          <li>Read the stem twice before reading the options. Many candidates pick the first plausible answer and miss a qualifier.</li>
+          <li>Look for absolute words such as <em>always</em> and <em>never</em> — they often signal an incorrect option.</li>
+          <li>Eliminate the two clearly wrong answers first, then choose between the remaining two on the basis of policy or law, not gut feeling.</li>
+          <li>Flag and revisit any question you take more than 60 seconds on. Don't lose easy marks by running out of time.</li>
+        </ul>
+
+        <h2>Where to keep practising</h2>
+        <p>
+          Visit the <C slug="security">Security & Door Supervision practice hub</C> for more free mocks. Related
+          reading: <B slug="sia-door-supervisor-test-guide-2026">our complete 2026 SIA Door Supervisor guide</B> and{" "}
+          <B slug="how-to-pass-sia-door-supervisor-first-time">how to pass the SIA Door Supervisor exam first time</B>.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    slug: "how-to-pass-sia-door-supervisor-first-time",
+    title: "How to Pass the SIA Door Supervisor Exam First Time (2026)",
+    description:
+      "A practical 2026 study plan for passing the SIA Door Supervisor multiple-choice papers first time. Includes free practice mocks and exam-day tips.",
+    excerpt:
+      "A focused two-week revision plan for the SIA Door Supervisor exams — what to study, when, and how to walk in confident.",
+    datePublished: "2026-05-10",
+    author: "UK Test Hub Team",
+    readingMinutes: 6,
+    category: "Security",
+    tags: ["SIA", "door supervisor", "study plan"],
+    hero: h_SiaDoorSupervisorGuide,
+    body: () => (
+      <>
+        <p>
+          Roughly one in three candidates fails at least one of the SIA Door Supervisor multiple-choice papers on
+          first sitting. Almost every one of those failures is avoidable. The qualification doesn't test you on
+          obscure case law or physical strength — it tests whether you've understood the workbook and can apply it
+          calmly under timed conditions. This guide gives you a two-week plan for a typical evening or weekend
+          learner who already has the course booked.
+        </p>
+
+        <h2>Two weeks before your course</h2>
+        <p>
+          Most training providers send you the SIA workbook before classroom week begins. Read Units 1, 2 and 3
+          straight through — yes, all of it — before you arrive. Spend roughly 6–8 hours over the fortnight,
+          highlighting anything you don't understand. Don't try to memorise yet; the goal is familiarity. You'll
+          retain twice as much in class because you already have a mental scaffold.
+        </p>
+
+        <h2>During classroom week</h2>
+        <p>
+          Sit at the front, ask every question you have, and write notes in your own words rather than copying the
+          slides. Trainers see thousands of candidates a year and know exactly which questions trip people up — pay
+          extra attention whenever they say <em>"this comes up in the exam"</em>. After each day, spend 30 minutes
+          going through that day's quick-check questions in the workbook.
+        </p>
+
+        <h2>The 48 hours before the exam</h2>
+        <p>
+          Stop reading the workbook and switch to active practice. Take a full mock under timed conditions for each
+          unit you have left to sit. Mark it ruthlessly, read every explanation — including the questions you got
+          right by guessing — and write down any rules you didn't actually know. Do this twice and you'll usually
+          gain 5–10 marks on the real paper.
+        </p>
+
+        <div className="my-8 rounded-2xl border border-border bg-card p-6 shadow-soft">
+          <p className="text-xs font-semibold uppercase tracking-wider text-coral">Free practice</p>
+          <p className="mt-2 font-display text-xl font-bold text-foreground">Start SIA Door Supervisor Mock Test 1</p>
+          <p className="mt-1 text-sm text-muted-foreground">45 questions, instant marking, full explanations.</p>
+          <Link
+            to="/quiz/$slug"
+            params={{ slug: "sia-door-supervisor-mock-1" }}
+            className="mt-4 inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground shadow-soft transition-colors hover:bg-primary/90"
+          >
+            Start mock test 1
+          </Link>
+        </div>
+
+        <h2>The high-yield topics</h2>
+        <ul>
+          <li><strong>Powers of search and arrest</strong> — what a door supervisor can and cannot do legally.</li>
+          <li><strong>Licensing law</strong> — Licensing Act 2003 objectives, condition breaches, and the role of the Designated Premises Supervisor.</li>
+          <li><strong>Conflict management</strong> — escalation triggers, de-escalation techniques, the conflict resolution model.</li>
+          <li><strong>Drug awareness</strong> — common substances, signs of intoxication, and refusal of entry.</li>
+          <li><strong>Emergency procedures</strong> — fire safety, evacuation, terror response (ACT principles).</li>
+          <li><strong>Equality and diversity</strong> — the Equality Act 2010 and protected characteristics.</li>
+        </ul>
+
+        <h2>On exam day</h2>
+        <p>
+          Arrive 20 minutes early with a valid photo ID — usually a passport or driving licence. Read every question
+          twice before answering. Use the flag function to mark anything you're unsure of and come back to it. Never
+          leave a blank — there is no negative marking, so a guess is always better than a zero.
+        </p>
+
+        <h2>What to do if you fail a unit</h2>
+        <p>
+          You can normally re-sit a failed paper within 28 days for £25–£45. Do it as soon as possible while the
+          material is still fresh. Use the time to drill the unit you failed using free mocks, not to re-read the
+          whole workbook.
+        </p>
+
+        <h2>After you pass</h2>
+        <p>
+          Apply for your SIA licence the day your certificate arrives. Approval typically takes 5–10 working days
+          if your DBS check is clean. While you wait, brush up on venue-specific topics with our other{" "}
+          <C slug="security">Security & Door Supervision practice mocks</C>.
+        </p>
+
+        <p>
+          Related reading: <B slug="sia-door-supervisor-test-guide-2026">the complete 2026 SIA Door Supervisor guide</B>{" "}
+          and <B slug="sia-door-supervisor-mock-questions-explained">SIA mock questions explained</B>.
+        </p>
+      </>
+    ),
+  },
+
+  // ===== IT & Tech =====
+  {
+    slug: "comptia-a-plus-uk-study-guide",
+    title: "CompTIA A+ in the UK: 2026 Study Guide & Free Practice",
+    description:
+      "Pass CompTIA A+ in 2026 with this UK study guide. Exam structure (Core 1 & Core 2), domain weightings, costs, and a free practice mock to get you started.",
+    excerpt:
+      "Everything UK candidates need to know about CompTIA A+ in 2026 — domains, costs, study order and how to plan your revision.",
+    datePublished: "2026-05-12",
+    author: "UK Test Hub Team",
+    readingMinutes: 6,
+    category: "IT & Tech",
+    tags: ["CompTIA", "A+", "IT certification"],
+    hero: h_ItTechStudyGuide,
+    body: () => (
+      <>
+        <p>
+          CompTIA A+ is the most widely recognised entry-level IT certification in the UK. Most help-desk and
+          first-line support job adverts list it either as essential or as a strong nice-to-have, and unlike many
+          vendor-specific qualifications it stays useful as you move into networking, security or cloud roles. This
+          guide covers what's actually tested in the 2026 exams (Core 1 — 220-1101 and Core 2 — 220-1102), how to
+          plan your study time, what it costs in the UK, and how to use free practice mocks to know when you're
+          ready to book. UK Test Hub is independent and not affiliated with CompTIA.
+        </p>
+
+        <h2>Two exams, one certification</h2>
+        <p>
+          You must pass both Core 1 and Core 2 — typically taken a few weeks apart — to be awarded CompTIA A+. Each
+          exam is up to 90 questions in 90 minutes, and each is scored on a scale of 100 to 900 with a pass mark of
+          675 for Core 1 and 700 for Core 2. Question types include traditional multiple choice, drag-and-drop and
+          performance-based items where you complete a task in a simulated environment.
+        </p>
+
+        <h2>Domain weightings (220-1101)</h2>
+        <ul>
+          <li>Mobile devices — 15%</li>
+          <li>Networking — 20%</li>
+          <li>Hardware — 25%</li>
+          <li>Virtualisation and cloud computing — 11%</li>
+          <li>Hardware and network troubleshooting — 29%</li>
+        </ul>
+
+        <h2>Domain weightings (220-1102)</h2>
+        <ul>
+          <li>Operating systems — 31%</li>
+          <li>Security — 25%</li>
+          <li>Software troubleshooting — 22%</li>
+          <li>Operational procedures — 22%</li>
+        </ul>
+
+        <h2>Realistic UK costs</h2>
+        <p>
+          Each exam voucher is around £230 at full price; CompTIA frequently sells discounted bundles that include
+          both vouchers, an official study guide and access to the CertMaster Practice question bank for £400–£550.
+          Pearson VUE testing centres exist in every major UK city, and online proctored sittings are available 24/7
+          if your home setup meets the requirements.
+        </p>
+
+        <h2>How long does it take?</h2>
+        <p>
+          Most candidates without prior IT experience need 200–250 hours total — roughly 12–16 weeks of focused
+          evening study. Candidates already working a service desk role typically halve that. The most efficient
+          order is to study and pass Core 1 first, then move straight to Core 2 while the troubleshooting habits are
+          still fresh.
+        </p>
+
+        <h2>Study materials worth paying for</h2>
+        <ul>
+          <li><strong>The official CompTIA A+ Study Guide</strong> — the spine of your revision.</li>
+          <li><strong>Professor Messer's free video series</strong> — the unofficial standard for visual learners.</li>
+          <li><strong>CertMaster Labs or TestOut LabSim</strong> — practical hands-on labs for the performance-based questions.</li>
+          <li><strong>UK Test Hub mocks</strong> — to verify readiness in exam-style timed conditions.</li>
+        </ul>
+
+        <div className="my-8 rounded-2xl border border-border bg-card p-6 shadow-soft">
+          <p className="text-xs font-semibold uppercase tracking-wider text-coral">Free practice</p>
+          <p className="mt-2 font-display text-xl font-bold text-foreground">Start CompTIA A+ Mock Test 1</p>
+          <p className="mt-1 text-sm text-muted-foreground">45 questions covering Core 1 and Core 2 topics, with full explanations.</p>
+          <Link
+            to="/quiz/$slug"
+            params={{ slug: "comptia-a-plus-mock-1" }}
+            className="mt-4 inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground shadow-soft transition-colors hover:bg-primary/90"
+          >
+            Start mock test 1
+          </Link>
+        </div>
+
+        <h2>How to know when you're ready</h2>
+        <p>
+          Aim to score 85% or better on three different practice mocks in a row before booking the real exam. If
+          you can hit that consistently — including on the troubleshooting domains — you have a comfortable margin
+          above the pass mark. Don't rush to book just to "get it over with"; a £230 fail costs you more than a
+          fortnight of extra study.
+        </p>
+
+        <h2>What's tested most often</h2>
+        <p>
+          The exam authors love networking commands (ipconfig, ping, tracert, nslookup), Wi-Fi standards (802.11
+          a/b/g/n/ac/ax), Windows OS troubleshooting, mobile device security and the basics of virtualisation. If
+          you're confident on those topics you're already over half-way to a pass.
+        </p>
+
+        <h2>Where to keep practising</h2>
+        <p>
+          Visit the <C slug="it-tech">IT & Tech practice hub</C> for free mocks across CompTIA A+, ITIL 4 and Cyber
+          Security Awareness. Related reading: <B slug="cyber-security-awareness-test-guide">our cyber security
+          awareness guide</B>.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    slug: "cyber-security-awareness-test-guide",
+    title: "UK Cyber Security Awareness Tests: 2026 Guide & Free Practice",
+    description:
+      "What UK employers test in cyber security awareness assessments — phishing, passwords, GDPR and incident response. Plus a free 2026 mock test.",
+    excerpt:
+      "What UK employers actually test in cyber security awareness assessments, and how to prepare in a few short evenings.",
+    datePublished: "2026-05-11",
+    author: "UK Test Hub Team",
+    readingMinutes: 6,
+    category: "IT & Tech",
+    tags: ["cyber security", "awareness", "GDPR"],
+    hero: h_ItTechStudyGuide,
+    body: () => (
+      <>
+        <p>
+          More UK organisations now run cyber security awareness tests as part of onboarding or annual compliance
+          training. They're not as deep as professional certifications such as CompTIA Security+ or ISACA CISM, but
+          they are graded — and a low score can hold up your start date or trigger a remedial training requirement.
+          This guide covers what's actually assessed, the topics worth focusing on, and how to revise efficiently
+          in a few short evenings using a free practice mock.
+        </p>
+
+        <h2>Why employers test cyber awareness</h2>
+        <p>
+          The majority of cyber breaches reported to the Information Commissioner's Office still start with a person
+          rather than a machine — usually a phishing email opened by a busy employee. The UK Cyber Essentials
+          scheme, ISO 27001 and most insurance policies now require employers to demonstrate that staff have been
+          trained and tested. The result: short multiple-choice quizzes that you'll see in induction packs at NHS
+          trusts, government departments, large retailers and almost every financial firm.
+        </p>
+
+        <h2>Common topics</h2>
+        <ul>
+          <li>Recognising phishing, smishing and vishing attempts.</li>
+          <li>Password hygiene — length, uniqueness and the case for password managers.</li>
+          <li>Multi-factor authentication and why SMS codes are weaker than authenticator apps.</li>
+          <li>Safe handling of personal data under UK GDPR and the Data Protection Act 2018.</li>
+          <li>Reporting and escalation — what to do when you suspect an incident.</li>
+          <li>Working securely from home — VPNs, public Wi-Fi, screen privacy.</li>
+          <li>Removable media risks (USB, external drives) and clean-desk policies.</li>
+        </ul>
+
+        <h2>Question style</h2>
+        <p>
+          Most awareness tests use short scenarios. You'll see something like <em>"You receive an email from your
+          CEO asking you to buy and send gift card codes urgently — what should you do?"</em> The right answer is
+          almost never the most convenient one. Examiners want to see that you'd verify the request through a
+          separate channel, report it to IT, and avoid acting on the email.
+        </p>
+
+        <div className="my-8 rounded-2xl border border-border bg-card p-6 shadow-soft">
+          <p className="text-xs font-semibold uppercase tracking-wider text-coral">Free practice</p>
+          <p className="mt-2 font-display text-xl font-bold text-foreground">Start Cyber Awareness Mock Test 1</p>
+          <p className="mt-1 text-sm text-muted-foreground">45 scenario-based questions, marked instantly with explanations.</p>
+          <Link
+            to="/quiz/$slug"
+            params={{ slug: "cyber-awareness-mock-1" }}
+            className="mt-4 inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground shadow-soft transition-colors hover:bg-primary/90"
+          >
+            Start mock test 1
+          </Link>
+        </div>
+
+        <h2>Three rules that cover most questions</h2>
+        <p>
+          <strong>Verify, don't trust.</strong> If a request feels unusual — payments, password changes, urgent
+          favours — verify it through a separate channel before acting.
+        </p>
+        <p>
+          <strong>Report early, even if you're unsure.</strong> Security teams much prefer ten false reports a week
+          to one missed real incident. Reporting fast shrinks the impact of an attack dramatically.
+        </p>
+        <p>
+          <strong>Treat data like cash.</strong> If you wouldn't leave £500 on a train, don't leave a USB stick or
+          unlocked laptop unattended. UK GDPR fines for personal-data breaches start in the tens of thousands.
+        </p>
+
+        <h2>How to revise efficiently</h2>
+        <p>
+          Two evenings is usually enough. Read the National Cyber Security Centre's <em>Cyber Aware</em> pages,
+          watch a 30-minute phishing-awareness video on YouTube, then take the practice mock above. Whatever you
+          get wrong, read the explanation carefully and try the mock again the next day. By the second attempt most
+          candidates score 90% or higher.
+        </p>
+
+        <h2>What about more advanced certifications?</h2>
+        <p>
+          If you want to move into cyber security professionally, the natural next step after awareness is
+          <strong> CompTIA Security+</strong> or the UK government's <strong>NCSC Certified Cyber Professional</strong>{" "}
+          scheme. Both expect a working understanding of TCP/IP, Active Directory and basic incident response —
+          well beyond the scope of an employer awareness test.
+        </p>
+
+        <h2>Where to keep practising</h2>
+        <p>
+          Visit the <C slug="it-tech">IT & Tech practice hub</C> for more free mocks. Related reading:{" "}
+          <B slug="comptia-a-plus-uk-study-guide">our CompTIA A+ UK study guide</B> and{" "}
+          <B slug="itil-4-foundation-practice-guide">ITIL 4 Foundation practice guide</B>.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    slug: "itil-4-foundation-practice-guide",
+    title: "ITIL 4 Foundation Practice Guide (UK 2026)",
+    description:
+      "A practical 2026 guide to the ITIL 4 Foundation exam — service value system, four dimensions, key practices and a free UK practice mock test.",
+    excerpt:
+      "What the ITIL 4 Foundation exam actually tests in 2026, and how to prepare in two focused weeks of revision.",
+    datePublished: "2026-05-10",
+    author: "UK Test Hub Team",
+    readingMinutes: 6,
+    category: "IT & Tech",
+    tags: ["ITIL 4", "service management", "PeopleCert"],
+    hero: h_ItTechStudyGuide,
+    body: () => (
+      <>
+        <p>
+          ITIL 4 Foundation is the entry-level certification in the world's most widely used IT service management
+          framework. Originally developed for the UK government in the 1980s and now stewarded by PeopleCert, ITIL
+          is on the job description of nearly every UK IT operations, service desk and change management role. The
+          Foundation exam is a single, closed-book multiple-choice paper that's well within reach with two weeks of
+          focused revision. This guide explains what's tested, how the exam is marked, and how to know when you're
+          ready to book.
+        </p>
+
+        <h2>Exam format and pass mark</h2>
+        <p>
+          The exam is 60 minutes long with 40 multiple-choice questions. The pass mark is 26 out of 40 (65%). It's
+          taken online via PeopleCert's proctored testing platform or in person at an Approved Training Organisation.
+          The voucher costs around £270–£320 in the UK and usually includes one free re-sit if you fail by a small
+          margin.
+        </p>
+
+        <h2>What the syllabus covers</h2>
+        <ul>
+          <li><strong>Key concepts of service management</strong> — value, services, products, outcomes, costs and risks.</li>
+          <li><strong>The Four Dimensions</strong> — organisations and people, information and technology, partners and suppliers, value streams and processes.</li>
+          <li><strong>The ITIL Service Value System (SVS)</strong> — guiding principles, governance, the Service Value Chain, practices and continual improvement.</li>
+          <li><strong>The Seven Guiding Principles</strong> — focus on value, start where you are, progress iteratively with feedback, collaborate and promote visibility, think and work holistically, keep it simple and practical, and optimise and automate.</li>
+          <li><strong>The Service Value Chain</strong> — plan, improve, engage, design and transition, obtain and build, deliver and support.</li>
+          <li><strong>15 ITIL practices in detail</strong> — including incident management, change enablement, service request management, problem management and the service desk.</li>
+        </ul>
+
+        <h2>The two-week revision plan</h2>
+        <p>
+          <strong>Week 1:</strong> read the official ITIL 4 Foundation book end-to-end (it's about 200 pages). Take
+          notes in your own words. By the end of the week you should be able to recite the seven guiding principles
+          and the six Service Value Chain activities without looking.
+        </p>
+        <p>
+          <strong>Week 2:</strong> shift to active practice. Take one full mock per evening, mark it ruthlessly, and
+          read every explanation. Pay extra attention to the practices — the exam draws disproportionately from
+          incident management, change enablement and the service desk.
+        </p>
+
+        <div className="my-8 rounded-2xl border border-border bg-card p-6 shadow-soft">
+          <p className="text-xs font-semibold uppercase tracking-wider text-coral">Free practice</p>
+          <p className="mt-2 font-display text-xl font-bold text-foreground">Start ITIL 4 Foundation Mock Test 1</p>
+          <p className="mt-1 text-sm text-muted-foreground">45 questions in the official multiple-choice style, marked instantly.</p>
+          <Link
+            to="/quiz/$slug"
+            params={{ slug: "itil-4-mock-1" }}
+            className="mt-4 inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground shadow-soft transition-colors hover:bg-primary/90"
+          >
+            Start mock test 1
+          </Link>
+        </div>
+
+        <h2>Common traps</h2>
+        <p>
+          The biggest pitfall is confusing similar-sounding practices. Incident management restores normal service
+          as quickly as possible; problem management investigates the underlying cause. Change enablement assesses
+          and authorises changes; release management deploys them. Examiners deliberately write distractors that
+          play on these overlaps.
+        </p>
+        <p>
+          The other common trap is over-thinking the guiding principles. They aren't ranked, they're complementary,
+          and they're meant to be applied together. If a question asks which principle most applies in a given
+          scenario, look for the keyword the principle name itself uses — "value", "iteratively", "holistically".
+        </p>
+
+        <h2>How to know when you're ready</h2>
+        <p>
+          Aim to score 85% or higher on three different mocks in a row before booking the exam. If you can do that
+          comfortably you'll have a 20-mark buffer above the pass mark, which more than covers the inevitable
+          curveballs PeopleCert throws into the live paper.
+        </p>
+
+        <h2>What comes after Foundation?</h2>
+        <p>
+          The natural progression is ITIL 4 Specialist or Strategist modules, leading to the ITIL 4 Managing
+          Professional or Strategic Leader designations. Most UK employers don't require anything beyond Foundation
+          unless you move into a service management leadership role.
+        </p>
+
+        <h2>Where to keep practising</h2>
+        <p>
+          Visit the <C slug="it-tech">IT & Tech practice hub</C> for more free mocks. Related reading:{" "}
+          <B slug="comptia-a-plus-uk-study-guide">our CompTIA A+ UK study guide</B> and{" "}
+          <B slug="cyber-security-awareness-test-guide">cyber security awareness test guide</B>.
+        </p>
+      </>
+    ),
+  },
+
 ];
 
 export const getPostBySlug = (slug: string) => blogPosts.find((p) => p.slug === slug);
