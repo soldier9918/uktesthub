@@ -71,6 +71,16 @@ function PrivacyPage() {
         personal data.
       </p>
 
+      <h2>5a. Cookies and consent</h2>
+      <p>
+        Google Analytics only runs if you accept analytics cookies, and advertising
+        cookies will only be used if you accept advertising cookies. No third-party
+        analytics or advertising scripts are loaded before you make a choice. You
+        can change your cookie preferences at any time using <strong>Cookie
+        Settings</strong> in the footer. See our <a href="/cookies">Cookie Policy</a>
+        for full details.
+      </p>
+
       <h2>6. Data retention</h2>
       <p>
         We retain enquiry emails for up to 24 months. Anonymised analytics data
