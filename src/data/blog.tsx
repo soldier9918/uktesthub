@@ -1104,36 +1104,56 @@ export const blogPosts: BlogPost[] = [
       <>
         <p>The UK Driving Theory Test changed very little for 2026, but the bar to pass remains the same: 43 out of 50 multiple-choice questions and 44 out of 75 on hazard perception. Below are 12 fresh practice questions written in the exact DVSA style for 2026, covering road signs, stopping distances, vulnerable road users, motorway rules and the Highway Code updates you need to know. Read each question carefully, decide your answer before scrolling, then check the worked explanation. When you're done, take a full free mock test to see where you stand.</p>
 
-        <h2>Practice Questions</h2>
+        <h2>Practice Questions &amp; Answers</h2>
         <ol>
-          <li><strong>Q1.</strong> What is the national speed limit for a car on a single carriageway?</li>
-          <li><strong>Q2.</strong> You see a triangular sign with a red border showing two children. What does it mean?</li>
-          <li><strong>Q3.</strong> What is the typical overall stopping distance at 50 mph in good conditions?</li>
-          <li><strong>Q4.</strong> When may you use the hard shoulder of a motorway?</li>
-          <li><strong>Q5.</strong> You're approaching a zebra crossing and a pedestrian is waiting. What should you do?</li>
-          <li><strong>Q6.</strong> What does a single broken yellow line at the kerb mean?</li>
-          <li><strong>Q7.</strong> When MUST you use dipped headlights during the day?</li>
-          <li><strong>Q8.</strong> What's the minimum tyre tread depth for a car in the UK?</li>
-          <li><strong>Q9.</strong> Who has priority at a mini-roundabout?</li>
-          <li><strong>Q10.</strong> You see a flashing amber light at a pelican crossing. What should you do?</li>
-          <li><strong>Q11.</strong> What's the maximum penalty points for using a handheld mobile while driving (first offence)?</li>
-          <li><strong>Q12.</strong> A blue circular sign with a white arrow pointing left means…</li>
-        </ol>
-
-        <h2>Answers &amp; Explanations</h2>
-        <ol>
-          <li><strong>A1.</strong> 60 mph. The national limit on a single carriageway is 60 mph for cars and motorcycles unless signs say otherwise.</li>
-          <li><strong>A2.</strong> Children crossing or a school nearby. Red triangles always warn — this one tells you to slow down and look out for children.</li>
-          <li><strong>A3.</strong> 53 metres (about 175 ft) — 15 m thinking + 38 m braking. Memorise: stopping distance roughly doubles every 10 mph above 20.</li>
-          <li><strong>A4.</strong> Only in an emergency or breakdown, unless signs above the lane indicate it is open as a running lane (smart motorway).</li>
-          <li><strong>A5.</strong> Slow down, be ready to stop and give way. You must give way to anyone waiting to cross at a zebra crossing.</li>
-          <li><strong>A6.</strong> Loading/unloading restrictions apply. Times will be shown on a nearby plate — never assume you can stop here.</li>
-          <li><strong>A7.</strong> When visibility is seriously reduced — generally less than 100 m. Heavy rain, fog and falling snow all qualify.</li>
-          <li><strong>A8.</strong> 1.6 mm across the central three-quarters of the tread, around the entire circumference. Anything less is illegal.</li>
-          <li><strong>A9.</strong> Vehicles already on the roundabout, but treat all approaches with caution — there's no marked priority on the circle itself.</li>
-          <li><strong>A10.</strong> Give way to pedestrians on the crossing, but you may proceed if it is clear.</li>
-          <li><strong>A11.</strong> 6 points and a £200 fine. New drivers (within 2 years of passing) lose their licence at 6 points.</li>
-          <li><strong>A12.</strong> Turn left ahead. Blue circles give a positive instruction; red circles prohibit.</li>
+          <li>
+            <p><strong>Q1.</strong> What is the national speed limit for a car on a single carriageway?</p>
+            <p><strong>A1.</strong> 60 mph. The national limit on a single carriageway is 60 mph for cars and motorcycles unless signs say otherwise.</p>
+          </li>
+          <li>
+            <p><strong>Q2.</strong> You see a triangular sign with a red border showing two children. What does it mean?</p>
+            <p><strong>A2.</strong> Children crossing or a school nearby. Red triangles always warn — this one tells you to slow down and look out for children.</p>
+          </li>
+          <li>
+            <p><strong>Q3.</strong> What is the typical overall stopping distance at 50 mph in good conditions?</p>
+            <p><strong>A3.</strong> 53 metres (about 175 ft) — 15 m thinking + 38 m braking. Memorise: stopping distance roughly doubles every 10 mph above 20.</p>
+          </li>
+          <li>
+            <p><strong>Q4.</strong> When may you use the hard shoulder of a motorway?</p>
+            <p><strong>A4.</strong> Only in an emergency or breakdown, unless signs above the lane indicate it is open as a running lane (smart motorway).</p>
+          </li>
+          <li>
+            <p><strong>Q5.</strong> You're approaching a zebra crossing and a pedestrian is waiting. What should you do?</p>
+            <p><strong>A5.</strong> Slow down, be ready to stop and give way. You must give way to anyone waiting to cross at a zebra crossing.</p>
+          </li>
+          <li>
+            <p><strong>Q6.</strong> What does a single broken yellow line at the kerb mean?</p>
+            <p><strong>A6.</strong> Loading/unloading restrictions apply. Times will be shown on a nearby plate — never assume you can stop here.</p>
+          </li>
+          <li>
+            <p><strong>Q7.</strong> When MUST you use dipped headlights during the day?</p>
+            <p><strong>A7.</strong> When visibility is seriously reduced — generally less than 100 m. Heavy rain, fog and falling snow all qualify.</p>
+          </li>
+          <li>
+            <p><strong>Q8.</strong> What's the minimum tyre tread depth for a car in the UK?</p>
+            <p><strong>A8.</strong> 1.6 mm across the central three-quarters of the tread, around the entire circumference. Anything less is illegal.</p>
+          </li>
+          <li>
+            <p><strong>Q9.</strong> Who has priority at a mini-roundabout?</p>
+            <p><strong>A9.</strong> Vehicles already on the roundabout, but treat all approaches with caution — there's no marked priority on the circle itself.</p>
+          </li>
+          <li>
+            <p><strong>Q10.</strong> You see a flashing amber light at a pelican crossing. What should you do?</p>
+            <p><strong>A10.</strong> Give way to pedestrians on the crossing, but you may proceed if it is clear.</p>
+          </li>
+          <li>
+            <p><strong>Q11.</strong> What's the maximum penalty points for using a handheld mobile while driving (first offence)?</p>
+            <p><strong>A11.</strong> 6 points and a £200 fine. New drivers (within 2 years of passing) lose their licence at 6 points.</p>
+          </li>
+          <li>
+            <p><strong>Q12.</strong> A blue circular sign with a white arrow pointing left means…</p>
+            <p><strong>A12.</strong> Turn left ahead. Blue circles give a positive instruction; red circles prohibit.</p>
+          </li>
         </ol>
 
         <h2>Tips to Pass</h2>
@@ -1185,36 +1205,56 @@ export const blogPosts: BlogPost[] = [
       <>
         <p>UK road signs are organised by shape and colour: red triangles warn, red circles prohibit, blue circles instruct, blue rectangles inform on motorways, green rectangles inform on primary routes, and brown rectangles point to tourist attractions. Memorise the families and you can decode 90% of signs you've never seen before. Below are the 12 most-tested signs in the 2026 DVSA bank — practise these and you'll handle every road-sign question on your theory exam.</p>
 
-        <h2>Practice Questions</h2>
+        <h2>Practice Questions &amp; Answers</h2>
         <ol>
-          <li><strong>Q1.</strong> What does an inverted red triangle mean?</li>
-          <li><strong>Q2.</strong> What shape and colour is the only octagonal sign in the UK?</li>
-          <li><strong>Q3.</strong> A red circle with the number 30 inside means…</li>
-          <li><strong>Q4.</strong> A blue circle with a white arrow turning right means…</li>
-          <li><strong>Q5.</strong> What does a red circle with a single diagonal red line mean?</li>
-          <li><strong>Q6.</strong> A red triangle showing a deer means…</li>
-          <li><strong>Q7.</strong> What does a blue rectangular sign with white text indicate?</li>
-          <li><strong>Q8.</strong> What does a green rectangular sign indicate?</li>
-          <li><strong>Q9.</strong> A brown sign with a castle symbol points to…</li>
-          <li><strong>Q10.</strong> What does a circular sign with red border and a black motorbike mean?</li>
-          <li><strong>Q11.</strong> Two arrows on a triangular sign pointing in opposite directions means…</li>
-          <li><strong>Q12.</strong> What does a yellow box junction tell drivers?</li>
-        </ol>
-
-        <h2>Answers &amp; Explanations</h2>
-        <ol>
-          <li><strong>A1.</strong> Give Way — you must slow down and give priority to traffic on the major road.</li>
-          <li><strong>A2.</strong> Red octagon — STOP. The only octagonal sign; you must stop completely at the line.</li>
-          <li><strong>A3.</strong> Maximum speed limit 30 mph. Red circles are always restrictions.</li>
-          <li><strong>A4.</strong> Turn right ahead — a positive instruction (blue circle = you must).</li>
-          <li><strong>A5.</strong> No overtaking. Diagonal red bars on a circle mean prohibition of the depicted activity.</li>
-          <li><strong>A6.</strong> Wild animals likely in the road. A warning, not a prohibition.</li>
-          <li><strong>A7.</strong> Information on a motorway, e.g. junction numbers and destinations.</li>
-          <li><strong>A8.</strong> Information on a primary route (A-road).</li>
-          <li><strong>A9.</strong> A historic site or castle — tourist attraction.</li>
-          <li><strong>A10.</strong> No motorcycles allowed.</li>
-          <li><strong>A11.</strong> Two-way traffic crosses a one-way road — be ready for vehicles from both directions.</li>
-          <li><strong>A12.</strong> Don't enter unless your exit is clear — you must not block the box.</li>
+          <li>
+            <p><strong>Q1.</strong> What does an inverted red triangle mean?</p>
+            <p><strong>A1.</strong> Give Way — you must slow down and give priority to traffic on the major road.</p>
+          </li>
+          <li>
+            <p><strong>Q2.</strong> What shape and colour is the only octagonal sign in the UK?</p>
+            <p><strong>A2.</strong> Red octagon — STOP. The only octagonal sign; you must stop completely at the line.</p>
+          </li>
+          <li>
+            <p><strong>Q3.</strong> A red circle with the number 30 inside means…</p>
+            <p><strong>A3.</strong> Maximum speed limit 30 mph. Red circles are always restrictions.</p>
+          </li>
+          <li>
+            <p><strong>Q4.</strong> A blue circle with a white arrow turning right means…</p>
+            <p><strong>A4.</strong> Turn right ahead — a positive instruction (blue circle = you must).</p>
+          </li>
+          <li>
+            <p><strong>Q5.</strong> What does a red circle with a single diagonal red line mean?</p>
+            <p><strong>A5.</strong> No overtaking. Diagonal red bars on a circle mean prohibition of the depicted activity.</p>
+          </li>
+          <li>
+            <p><strong>Q6.</strong> A red triangle showing a deer means…</p>
+            <p><strong>A6.</strong> Wild animals likely in the road. A warning, not a prohibition.</p>
+          </li>
+          <li>
+            <p><strong>Q7.</strong> What does a blue rectangular sign with white text indicate?</p>
+            <p><strong>A7.</strong> Information on a motorway, e.g. junction numbers and destinations.</p>
+          </li>
+          <li>
+            <p><strong>Q8.</strong> What does a green rectangular sign indicate?</p>
+            <p><strong>A8.</strong> Information on a primary route (A-road).</p>
+          </li>
+          <li>
+            <p><strong>Q9.</strong> A brown sign with a castle symbol points to…</p>
+            <p><strong>A9.</strong> A historic site or castle — tourist attraction.</p>
+          </li>
+          <li>
+            <p><strong>Q10.</strong> What does a circular sign with red border and a black motorbike mean?</p>
+            <p><strong>A10.</strong> No motorcycles allowed.</p>
+          </li>
+          <li>
+            <p><strong>Q11.</strong> Two arrows on a triangular sign pointing in opposite directions means…</p>
+            <p><strong>A11.</strong> Two-way traffic crosses a one-way road — be ready for vehicles from both directions.</p>
+          </li>
+          <li>
+            <p><strong>Q12.</strong> What does a yellow box junction tell drivers?</p>
+            <p><strong>A12.</strong> Don't enter unless your exit is clear — you must not block the box.</p>
+          </li>
         </ol>
 
         <h2>Tips to Pass</h2>
@@ -1265,32 +1305,48 @@ export const blogPosts: BlogPost[] = [
       <>
         <p>Around half of UK learners fail the Driving Theory Test on their first attempt — almost always by one or two marks, and almost always because they under-prepared rather than because they didn't know the material. This complete guide walks you through the test format, the pass marks, how to book, what to bring on the day, a 30-day revision plan that actually works, and 10 practice questions to benchmark where you are right now.</p>
 
-        <h2>Practice Questions</h2>
+        <h2>Practice Questions &amp; Answers</h2>
         <ol>
-          <li><strong>Q1.</strong> How many multiple-choice questions are on the test?</li>
-          <li><strong>Q2.</strong> What is the pass mark for multiple choice?</li>
-          <li><strong>Q3.</strong> How many hazard perception clips are there?</li>
-          <li><strong>Q4.</strong> How many developing hazards across those clips?</li>
-          <li><strong>Q5.</strong> What's the maximum score per hazard perception clip?</li>
-          <li><strong>Q6.</strong> Which document MUST you bring on the day?</li>
-          <li><strong>Q7.</strong> How long is your theory pass certificate valid?</li>
-          <li><strong>Q8.</strong> If you fail, how soon can you re-sit?</li>
-          <li><strong>Q9.</strong> Roughly how long does the whole appointment take?</li>
-          <li><strong>Q10.</strong> Where do you book the official test?</li>
-        </ol>
-
-        <h2>Answers &amp; Explanations</h2>
-        <ol>
-          <li><strong>A1.</strong> 50 questions in 57 minutes.</li>
-          <li><strong>A2.</strong> 43 out of 50 (86%).</li>
-          <li><strong>A3.</strong> 14 video clips.</li>
-          <li><strong>A4.</strong> 15 — one clip contains two developing hazards.</li>
-          <li><strong>A5.</strong> 5 marks (so 75 max). Pass mark is 44.</li>
-          <li><strong>A6.</strong> Your photocard provisional driving licence.</li>
-          <li><strong>A7.</strong> 2 years from the date you pass.</li>
-          <li><strong>A8.</strong> After 3 working days.</li>
-          <li><strong>A9.</strong> Around 90 minutes including check-in and the post-test break.</li>
-          <li><strong>A10.</strong> Only on gov.uk — never use third-party booking sites.</li>
+          <li>
+            <p><strong>Q1.</strong> How many multiple-choice questions are on the test?</p>
+            <p><strong>A1.</strong> 50 questions in 57 minutes.</p>
+          </li>
+          <li>
+            <p><strong>Q2.</strong> What is the pass mark for multiple choice?</p>
+            <p><strong>A2.</strong> 43 out of 50 (86%).</p>
+          </li>
+          <li>
+            <p><strong>Q3.</strong> How many hazard perception clips are there?</p>
+            <p><strong>A3.</strong> 14 video clips.</p>
+          </li>
+          <li>
+            <p><strong>Q4.</strong> How many developing hazards across those clips?</p>
+            <p><strong>A4.</strong> 15 — one clip contains two developing hazards.</p>
+          </li>
+          <li>
+            <p><strong>Q5.</strong> What's the maximum score per hazard perception clip?</p>
+            <p><strong>A5.</strong> 5 marks (so 75 max). Pass mark is 44.</p>
+          </li>
+          <li>
+            <p><strong>Q6.</strong> Which document MUST you bring on the day?</p>
+            <p><strong>A6.</strong> Your photocard provisional driving licence.</p>
+          </li>
+          <li>
+            <p><strong>Q7.</strong> How long is your theory pass certificate valid?</p>
+            <p><strong>A7.</strong> 2 years from the date you pass.</p>
+          </li>
+          <li>
+            <p><strong>Q8.</strong> If you fail, how soon can you re-sit?</p>
+            <p><strong>A8.</strong> After 3 working days.</p>
+          </li>
+          <li>
+            <p><strong>Q9.</strong> Roughly how long does the whole appointment take?</p>
+            <p><strong>A9.</strong> Around 90 minutes including check-in and the post-test break.</p>
+          </li>
+          <li>
+            <p><strong>Q10.</strong> Where do you book the official test?</p>
+            <p><strong>A10.</strong> Only on gov.uk — never use third-party booking sites.</p>
+          </li>
         </ol>
 
         <h2>Tips to Pass</h2>
@@ -1341,36 +1397,56 @@ export const blogPosts: BlogPost[] = [
       <>
         <p>DVSA data shows certain question types trip up learners again and again — stopping distances, dual-carriageway rules, environment, and edge-case Highway Code rules around vulnerable road users. Below are 12 of the toughest questions in the 2026 bank, each followed by the explanation that turns a guess into a confident answer.</p>
 
-        <h2>Practice Questions</h2>
+        <h2>Practice Questions &amp; Answers</h2>
         <ol>
-          <li><strong>Q1.</strong> What is the overall stopping distance at 70 mph in dry conditions?</li>
-          <li><strong>Q2.</strong> On a wet road your stopping distance is at least…</li>
-          <li><strong>Q3.</strong> On icy roads stopping distance can be up to…</li>
-          <li><strong>Q4.</strong> Maximum speed limit for a car towing a trailer on a motorway?</li>
-          <li><strong>Q5.</strong> Minimum gap behind a vehicle in good dry conditions (rule of thumb)?</li>
-          <li><strong>Q6.</strong> When can you overtake on the left?</li>
-          <li><strong>Q7.</strong> What's the alcohol limit in mg of alcohol per 100 ml of breath in England?</li>
-          <li><strong>Q8.</strong> A flashing amber arrow at traffic lights means…</li>
-          <li><strong>Q9.</strong> Mini-roundabout: when should you signal?</li>
-          <li><strong>Q10.</strong> Cyclist filtering on your inside in slow traffic — what should you do?</li>
-          <li><strong>Q11.</strong> Approaching horses being ridden, you should…</li>
-          <li><strong>Q12.</strong> When MUST you not use the right-hand lane of a 3-lane motorway?</li>
-        </ol>
-
-        <h2>Answers &amp; Explanations</h2>
-        <ol>
-          <li><strong>A1.</strong> 96 m (about 24 car lengths). Thinking 21 m + braking 75 m.</li>
-          <li><strong>A2.</strong> Twice the dry-condition distance. Wet roads = double everything.</li>
-          <li><strong>A3.</strong> Ten times the dry distance. Black ice is the worst-case scenario.</li>
-          <li><strong>A4.</strong> 60 mph (and you cannot use the right-hand lane of a 3-lane motorway).</li>
-          <li><strong>A5.</strong> The 2-second rule (4 seconds in wet, 20 seconds on ice).</li>
-          <li><strong>A6.</strong> When the vehicle ahead is signalling right, in slow-moving lanes of traffic, or on a one-way street.</li>
-          <li><strong>A7.</strong> 35 µg per 100 ml. (Or 80 mg per 100 ml of blood.) Scotland is lower at 22 µg / 50 mg.</li>
-          <li><strong>A8.</strong> You may filter past in the direction of the arrow if the road is clear.</li>
-          <li><strong>A9.</strong> Signal right on approach if turning right; signal left only just before exiting.</li>
-          <li><strong>A10.</strong> Check your mirrors and leave space — never squeeze them against the kerb or change direction.</li>
-          <li><strong>A11.</strong> Slow down to walking pace, give them at least 2 metres and don't rev the engine.</li>
-          <li><strong>A12.</strong> If you are towing a trailer, driving a goods vehicle over 7.5 t, or a coach over 12 m.</li>
+          <li>
+            <p><strong>Q1.</strong> What is the overall stopping distance at 70 mph in dry conditions?</p>
+            <p><strong>A1.</strong> 96 m (about 24 car lengths). Thinking 21 m + braking 75 m.</p>
+          </li>
+          <li>
+            <p><strong>Q2.</strong> On a wet road your stopping distance is at least…</p>
+            <p><strong>A2.</strong> Twice the dry-condition distance. Wet roads = double everything.</p>
+          </li>
+          <li>
+            <p><strong>Q3.</strong> On icy roads stopping distance can be up to…</p>
+            <p><strong>A3.</strong> Ten times the dry distance. Black ice is the worst-case scenario.</p>
+          </li>
+          <li>
+            <p><strong>Q4.</strong> Maximum speed limit for a car towing a trailer on a motorway?</p>
+            <p><strong>A4.</strong> 60 mph (and you cannot use the right-hand lane of a 3-lane motorway).</p>
+          </li>
+          <li>
+            <p><strong>Q5.</strong> Minimum gap behind a vehicle in good dry conditions (rule of thumb)?</p>
+            <p><strong>A5.</strong> The 2-second rule (4 seconds in wet, 20 seconds on ice).</p>
+          </li>
+          <li>
+            <p><strong>Q6.</strong> When can you overtake on the left?</p>
+            <p><strong>A6.</strong> When the vehicle ahead is signalling right, in slow-moving lanes of traffic, or on a one-way street.</p>
+          </li>
+          <li>
+            <p><strong>Q7.</strong> What's the alcohol limit in mg of alcohol per 100 ml of breath in England?</p>
+            <p><strong>A7.</strong> 35 µg per 100 ml. (Or 80 mg per 100 ml of blood.) Scotland is lower at 22 µg / 50 mg.</p>
+          </li>
+          <li>
+            <p><strong>Q8.</strong> A flashing amber arrow at traffic lights means…</p>
+            <p><strong>A8.</strong> You may filter past in the direction of the arrow if the road is clear.</p>
+          </li>
+          <li>
+            <p><strong>Q9.</strong> Mini-roundabout: when should you signal?</p>
+            <p><strong>A9.</strong> Signal right on approach if turning right; signal left only just before exiting.</p>
+          </li>
+          <li>
+            <p><strong>Q10.</strong> Cyclist filtering on your inside in slow traffic — what should you do?</p>
+            <p><strong>A10.</strong> Check your mirrors and leave space — never squeeze them against the kerb or change direction.</p>
+          </li>
+          <li>
+            <p><strong>Q11.</strong> Approaching horses being ridden, you should…</p>
+            <p><strong>A11.</strong> Slow down to walking pace, give them at least 2 metres and don't rev the engine.</p>
+          </li>
+          <li>
+            <p><strong>Q12.</strong> When MUST you not use the right-hand lane of a 3-lane motorway?</p>
+            <p><strong>A12.</strong> If you are towing a trailer, driving a goods vehicle over 7.5 t, or a coach over 12 m.</p>
+          </li>
         </ol>
 
         <h2>Tips to Pass</h2>
@@ -1421,32 +1497,48 @@ export const blogPosts: BlogPost[] = [
       <>
         <p>The hazard perception section uses 14 video clips containing 15 developing hazards (one clip has two). Each hazard scores 0–5 based on how early you click — the earlier you spot a true developing hazard, the higher your score. Click too early and you score nothing for that hazard; click in a rapid pattern and the system zeroes the entire clip. Below are 10 practice scenarios and the smart way to handle each, followed by the tips that take learners from 38/75 to 60/75.</p>
 
-        <h2>Practice Questions</h2>
+        <h2>Practice Questions &amp; Answers</h2>
         <ol>
-          <li><strong>Q1.</strong> When does a hazard become "developing"?</li>
-          <li><strong>Q2.</strong> Should you click as soon as you see a parked car?</li>
-          <li><strong>Q3.</strong> How many times can you click per clip?</li>
-          <li><strong>Q4.</strong> What happens if you click in a rapid pattern?</li>
-          <li><strong>Q5.</strong> If you double-click on a hazard, what's the best timing?</li>
-          <li><strong>Q6.</strong> Pedestrian on the pavement looking down at a phone — click?</li>
-          <li><strong>Q7.</strong> Brake lights on the car ahead light up — click?</li>
-          <li><strong>Q8.</strong> A child's ball rolls into the road — click?</li>
-          <li><strong>Q9.</strong> A cyclist is wobbling in front of you — click?</li>
-          <li><strong>Q10.</strong> You see a cat run across 200 m ahead — click?</li>
-        </ol>
-
-        <h2>Answers &amp; Explanations</h2>
-        <ol>
-          <li><strong>A1.</strong> When something forces you to change speed or direction. Until then it's a potential hazard, not a developing one.</li>
-          <li><strong>A2.</strong> No — parked cars are static. Click when one starts to pull out, opens a door, or a pedestrian emerges from behind it.</li>
-          <li><strong>A3.</strong> As many as you like, but rapid patterns cause a zero-score warning.</li>
-          <li><strong>A4.</strong> The clip is voided — you score 0 for that hazard. Always click deliberately.</li>
-          <li><strong>A5.</strong> First click as the hazard begins to develop, second click as it becomes more serious.</li>
-          <li><strong>A6.</strong> Click on the second look — they may step into the road. Don't click on the initial sighting.</li>
-          <li><strong>A7.</strong> Yes, immediately — brake lights are a confirmed developing hazard.</li>
-          <li><strong>A8.</strong> Yes, immediately. Children often follow balls.</li>
-          <li><strong>A9.</strong> Yes — wobble = unpredictable = developing.</li>
-          <li><strong>A10.</strong> No — too far ahead to require any action from you. Wait until something closer develops.</li>
+          <li>
+            <p><strong>Q1.</strong> When does a hazard become "developing"?</p>
+            <p><strong>A1.</strong> When something forces you to change speed or direction. Until then it's a potential hazard, not a developing one.</p>
+          </li>
+          <li>
+            <p><strong>Q2.</strong> Should you click as soon as you see a parked car?</p>
+            <p><strong>A2.</strong> No — parked cars are static. Click when one starts to pull out, opens a door, or a pedestrian emerges from behind it.</p>
+          </li>
+          <li>
+            <p><strong>Q3.</strong> How many times can you click per clip?</p>
+            <p><strong>A3.</strong> As many as you like, but rapid patterns cause a zero-score warning.</p>
+          </li>
+          <li>
+            <p><strong>Q4.</strong> What happens if you click in a rapid pattern?</p>
+            <p><strong>A4.</strong> The clip is voided — you score 0 for that hazard. Always click deliberately.</p>
+          </li>
+          <li>
+            <p><strong>Q5.</strong> If you double-click on a hazard, what's the best timing?</p>
+            <p><strong>A5.</strong> First click as the hazard begins to develop, second click as it becomes more serious.</p>
+          </li>
+          <li>
+            <p><strong>Q6.</strong> Pedestrian on the pavement looking down at a phone — click?</p>
+            <p><strong>A6.</strong> Click on the second look — they may step into the road. Don't click on the initial sighting.</p>
+          </li>
+          <li>
+            <p><strong>Q7.</strong> Brake lights on the car ahead light up — click?</p>
+            <p><strong>A7.</strong> Yes, immediately — brake lights are a confirmed developing hazard.</p>
+          </li>
+          <li>
+            <p><strong>Q8.</strong> A child's ball rolls into the road — click?</p>
+            <p><strong>A8.</strong> Yes, immediately. Children often follow balls.</p>
+          </li>
+          <li>
+            <p><strong>Q9.</strong> A cyclist is wobbling in front of you — click?</p>
+            <p><strong>A9.</strong> Yes — wobble = unpredictable = developing.</p>
+          </li>
+          <li>
+            <p><strong>Q10.</strong> You see a cat run across 200 m ahead — click?</p>
+            <p><strong>A10.</strong> No — too far ahead to require any action from you. Wait until something closer develops.</p>
+          </li>
         </ol>
 
         <h2>Tips to Pass</h2>
@@ -1498,36 +1590,56 @@ export const blogPosts: BlogPost[] = [
       <>
         <p>There's no substitute for sitting full mocks under exam conditions. Below is a 12-question warm-up drawn from the same topic distribution as the real DVSA test: alertness, attitude, safety, safety margins, hazard awareness, vulnerable road users, other types of vehicle, vehicle handling, motorway rules, rules of the road, road and traffic signs, documents, accidents, and vehicle loading.</p>
 
-        <h2>Practice Questions</h2>
+        <h2>Practice Questions &amp; Answers</h2>
         <ol>
-          <li><strong>Q1.</strong> The vehicle ahead is being driven by a learner. You should…</li>
-          <li><strong>Q2.</strong> When approaching a roundabout you see a cyclist signalling right. You should…</li>
-          <li><strong>Q3.</strong> What does the term "tailgating" mean?</li>
-          <li><strong>Q4.</strong> You're driving on a motorway in heavy rain. Spray makes it hard to see. You should…</li>
-          <li><strong>Q5.</strong> A bus is signalling to pull out from a stop. You should…</li>
-          <li><strong>Q6.</strong> You're parking on a hill facing uphill. You should…</li>
-          <li><strong>Q7.</strong> When can you sound your horn in a built-up area at night?</li>
-          <li><strong>Q8.</strong> Why are amber studs used between lanes on a motorway?</li>
-          <li><strong>Q9.</strong> Your insurance has an "excess of £100". What does this mean?</li>
-          <li><strong>Q10.</strong> The MSM routine stands for…</li>
-          <li><strong>Q11.</strong> After overtaking on a dual carriageway you should…</li>
-          <li><strong>Q12.</strong> What's the minimum age to supervise a learner driver?</li>
-        </ol>
-
-        <h2>Answers &amp; Explanations</h2>
-        <ol>
-          <li><strong>A1.</strong> Be patient — show no irritation and allow extra space.</li>
-          <li><strong>A2.</strong> Allow plenty of room — the cyclist may stay in the left-hand lane to circle right.</li>
-          <li><strong>A3.</strong> Driving too closely behind another vehicle.</li>
-          <li><strong>A4.</strong> Use dipped headlights and increase your following distance.</li>
-          <li><strong>A5.</strong> Give way if it's safe to do so.</li>
-          <li><strong>A6.</strong> Leave it in first gear with the handbrake firmly on, wheels turned away from the kerb.</li>
-          <li><strong>A7.</strong> Only in an emergency.</li>
-          <li><strong>A8.</strong> They mark the right-hand edge of the carriageway (between lanes 1 & 2 and the right side).</li>
-          <li><strong>A9.</strong> You pay the first £100 of any claim.</li>
-          <li><strong>A10.</strong> Mirrors – Signal – Manoeuvre.</li>
-          <li><strong>A11.</strong> Move back to the left-hand lane when safe and signal left.</li>
-          <li><strong>A12.</strong> 21 years old, full UK licence held for at least 3 years.</li>
+          <li>
+            <p><strong>Q1.</strong> The vehicle ahead is being driven by a learner. You should…</p>
+            <p><strong>A1.</strong> Be patient — show no irritation and allow extra space.</p>
+          </li>
+          <li>
+            <p><strong>Q2.</strong> When approaching a roundabout you see a cyclist signalling right. You should…</p>
+            <p><strong>A2.</strong> Allow plenty of room — the cyclist may stay in the left-hand lane to circle right.</p>
+          </li>
+          <li>
+            <p><strong>Q3.</strong> What does the term "tailgating" mean?</p>
+            <p><strong>A3.</strong> Driving too closely behind another vehicle.</p>
+          </li>
+          <li>
+            <p><strong>Q4.</strong> You're driving on a motorway in heavy rain. Spray makes it hard to see. You should…</p>
+            <p><strong>A4.</strong> Use dipped headlights and increase your following distance.</p>
+          </li>
+          <li>
+            <p><strong>Q5.</strong> A bus is signalling to pull out from a stop. You should…</p>
+            <p><strong>A5.</strong> Give way if it's safe to do so.</p>
+          </li>
+          <li>
+            <p><strong>Q6.</strong> You're parking on a hill facing uphill. You should…</p>
+            <p><strong>A6.</strong> Leave it in first gear with the handbrake firmly on, wheels turned away from the kerb.</p>
+          </li>
+          <li>
+            <p><strong>Q7.</strong> When can you sound your horn in a built-up area at night?</p>
+            <p><strong>A7.</strong> Only in an emergency.</p>
+          </li>
+          <li>
+            <p><strong>Q8.</strong> Why are amber studs used between lanes on a motorway?</p>
+            <p><strong>A8.</strong> They mark the right-hand edge of the carriageway (between lanes 1 & 2 and the right side).</p>
+          </li>
+          <li>
+            <p><strong>Q9.</strong> Your insurance has an "excess of £100". What does this mean?</p>
+            <p><strong>A9.</strong> You pay the first £100 of any claim.</p>
+          </li>
+          <li>
+            <p><strong>Q10.</strong> The MSM routine stands for…</p>
+            <p><strong>A10.</strong> Mirrors – Signal – Manoeuvre.</p>
+          </li>
+          <li>
+            <p><strong>Q11.</strong> After overtaking on a dual carriageway you should…</p>
+            <p><strong>A11.</strong> Move back to the left-hand lane when safe and signal left.</p>
+          </li>
+          <li>
+            <p><strong>Q12.</strong> What's the minimum age to supervise a learner driver?</p>
+            <p><strong>A12.</strong> 21 years old, full UK licence held for at least 3 years.</p>
+          </li>
         </ol>
 
         <h2>Tips to Pass</h2>
@@ -1578,36 +1690,56 @@ export const blogPosts: BlogPost[] = [
       <>
         <p>Road signs make up roughly 10–15% of the multiple-choice section of the Driving Theory Test. They're also one of the easiest sections to ace — once you know the shape and colour rules. Below is a 12-question road signs quiz drawn from across all four sign families. Be honest, don't peek at the answers, and aim for a perfect 12/12.</p>
 
-        <h2>Practice Questions</h2>
+        <h2>Practice Questions &amp; Answers</h2>
         <ol>
-          <li><strong>Q1.</strong> What does a circular sign with a red border and "30" inside mean?</li>
-          <li><strong>Q2.</strong> What does a triangular sign with a person digging mean?</li>
-          <li><strong>Q3.</strong> What does an inverted triangular sign with no symbol mean?</li>
-          <li><strong>Q4.</strong> What does a blue circular sign with a white "P" mean?</li>
-          <li><strong>Q5.</strong> What does a red circle with a horn symbol crossed out mean?</li>
-          <li><strong>Q6.</strong> What colour are direction signs on motorways?</li>
-          <li><strong>Q7.</strong> What colour are direction signs on primary routes?</li>
-          <li><strong>Q8.</strong> What does a triangular sign with a falling rocks symbol mean?</li>
-          <li><strong>Q9.</strong> What does a blue rectangular sign with a white "H" mean?</li>
-          <li><strong>Q10.</strong> What does a green rectangular sign with white text indicate?</li>
-          <li><strong>Q11.</strong> What does a yellow flashing beacon at a crossing mean?</li>
-          <li><strong>Q12.</strong> What does a brown rectangular sign with a footprint mean?</li>
-        </ol>
-
-        <h2>Answers &amp; Explanations</h2>
-        <ol>
-          <li><strong>A1.</strong> Maximum speed limit 30 mph.</li>
-          <li><strong>A2.</strong> Roadworks ahead — slow down and look out for workers.</li>
-          <li><strong>A3.</strong> Give way to traffic on the major road.</li>
-          <li><strong>A4.</strong> Parking permitted (often with extra info beneath).</li>
-          <li><strong>A5.</strong> Use of horn prohibited.</li>
-          <li><strong>A6.</strong> Blue background, white text.</li>
-          <li><strong>A7.</strong> Green background, white text.</li>
-          <li><strong>A8.</strong> Falling or fallen rocks — possible debris in the road.</li>
-          <li><strong>A9.</strong> Hospital ahead.</li>
-          <li><strong>A10.</strong> Direction on a primary route.</li>
-          <li><strong>A11.</strong> Belisha beacon — pedestrian zebra crossing ahead.</li>
-          <li><strong>A12.</strong> Walking trail or tourist footpath.</li>
+          <li>
+            <p><strong>Q1.</strong> What does a circular sign with a red border and "30" inside mean?</p>
+            <p><strong>A1.</strong> Maximum speed limit 30 mph.</p>
+          </li>
+          <li>
+            <p><strong>Q2.</strong> What does a triangular sign with a person digging mean?</p>
+            <p><strong>A2.</strong> Roadworks ahead — slow down and look out for workers.</p>
+          </li>
+          <li>
+            <p><strong>Q3.</strong> What does an inverted triangular sign with no symbol mean?</p>
+            <p><strong>A3.</strong> Give way to traffic on the major road.</p>
+          </li>
+          <li>
+            <p><strong>Q4.</strong> What does a blue circular sign with a white "P" mean?</p>
+            <p><strong>A4.</strong> Parking permitted (often with extra info beneath).</p>
+          </li>
+          <li>
+            <p><strong>Q5.</strong> What does a red circle with a horn symbol crossed out mean?</p>
+            <p><strong>A5.</strong> Use of horn prohibited.</p>
+          </li>
+          <li>
+            <p><strong>Q6.</strong> What colour are direction signs on motorways?</p>
+            <p><strong>A6.</strong> Blue background, white text.</p>
+          </li>
+          <li>
+            <p><strong>Q7.</strong> What colour are direction signs on primary routes?</p>
+            <p><strong>A7.</strong> Green background, white text.</p>
+          </li>
+          <li>
+            <p><strong>Q8.</strong> What does a triangular sign with a falling rocks symbol mean?</p>
+            <p><strong>A8.</strong> Falling or fallen rocks — possible debris in the road.</p>
+          </li>
+          <li>
+            <p><strong>Q9.</strong> What does a blue rectangular sign with a white "H" mean?</p>
+            <p><strong>A9.</strong> Hospital ahead.</p>
+          </li>
+          <li>
+            <p><strong>Q10.</strong> What does a green rectangular sign with white text indicate?</p>
+            <p><strong>A10.</strong> Direction on a primary route.</p>
+          </li>
+          <li>
+            <p><strong>Q11.</strong> What does a yellow flashing beacon at a crossing mean?</p>
+            <p><strong>A11.</strong> Belisha beacon — pedestrian zebra crossing ahead.</p>
+          </li>
+          <li>
+            <p><strong>Q12.</strong> What does a brown rectangular sign with a footprint mean?</p>
+            <p><strong>A12.</strong> Walking trail or tourist footpath.</p>
+          </li>
         </ol>
 
         <h2>Tips to Pass</h2>
@@ -1657,32 +1789,48 @@ export const blogPosts: BlogPost[] = [
       <>
         <p>DVSA pass-rate data shows a clear pattern: the learners who fail the Driving Theory Test almost always fail for the same reasons — rushing, ignoring hazard perception, weak knowledge of stopping distances, and confusing "must" with "should". Here are 10 questions built around those exact pitfalls, with answers that double as a mini-revision sheet.</p>
 
-        <h2>Practice Questions</h2>
+        <h2>Practice Questions &amp; Answers</h2>
         <ol>
-          <li><strong>Q1.</strong> Why do most learners fail the multiple choice by 1–2 marks?</li>
-          <li><strong>Q2.</strong> What's the difference between "MUST" and "SHOULD" in DVSA wording?</li>
-          <li><strong>Q3.</strong> Why do learners often score badly on hazard perception?</li>
-          <li><strong>Q4.</strong> Common myth: you can revise everything from the official app alone — true?</li>
-          <li><strong>Q5.</strong> Stopping distance at 30 mph in dry conditions?</li>
-          <li><strong>Q6.</strong> Stopping distance at 60 mph in dry conditions?</li>
-          <li><strong>Q7.</strong> Speed limit on a single carriageway with a trailer?</li>
-          <li><strong>Q8.</strong> Speed limit on a dual carriageway with a trailer?</li>
-          <li><strong>Q9.</strong> Many learners think a green light means "go" — what's the correct rule?</li>
-          <li><strong>Q10.</strong> When can you cross a solid white centre line?</li>
-        </ol>
-
-        <h2>Answers &amp; Explanations</h2>
-        <ol>
-          <li><strong>A1.</strong> They rush, finish in 30 minutes, and misread 2–3 questions.</li>
-          <li><strong>A2.</strong> MUST = legal requirement (Highway Code rule with legal backing). SHOULD = best practice.</li>
-          <li><strong>A3.</strong> It's the only test of its kind they'll ever take, so they have no reference point.</li>
-          <li><strong>A4.</strong> The app helps, but reading the Highway Code cover to cover is essential — it's where every question originates.</li>
-          <li><strong>A5.</strong> 23 m (12 thinking + 11 braking).</li>
-          <li><strong>A6.</strong> 73 m (18 thinking + 55 braking).</li>
-          <li><strong>A7.</strong> 50 mph (single carriageway when towing).</li>
-          <li><strong>A8.</strong> 60 mph (dual carriageway when towing).</li>
-          <li><strong>A9.</strong> Proceed only if it's safe and the way is clear.</li>
-          <li><strong>A10.</strong> To pass a parked vehicle, a pedal cycle or horse moving below 10 mph, to enter a side road, or in an emergency.</li>
+          <li>
+            <p><strong>Q1.</strong> Why do most learners fail the multiple choice by 1–2 marks?</p>
+            <p><strong>A1.</strong> They rush, finish in 30 minutes, and misread 2–3 questions.</p>
+          </li>
+          <li>
+            <p><strong>Q2.</strong> What's the difference between "MUST" and "SHOULD" in DVSA wording?</p>
+            <p><strong>A2.</strong> MUST = legal requirement (Highway Code rule with legal backing). SHOULD = best practice.</p>
+          </li>
+          <li>
+            <p><strong>Q3.</strong> Why do learners often score badly on hazard perception?</p>
+            <p><strong>A3.</strong> It's the only test of its kind they'll ever take, so they have no reference point.</p>
+          </li>
+          <li>
+            <p><strong>Q4.</strong> Common myth: you can revise everything from the official app alone — true?</p>
+            <p><strong>A4.</strong> The app helps, but reading the Highway Code cover to cover is essential — it's where every question originates.</p>
+          </li>
+          <li>
+            <p><strong>Q5.</strong> Stopping distance at 30 mph in dry conditions?</p>
+            <p><strong>A5.</strong> 23 m (12 thinking + 11 braking).</p>
+          </li>
+          <li>
+            <p><strong>Q6.</strong> Stopping distance at 60 mph in dry conditions?</p>
+            <p><strong>A6.</strong> 73 m (18 thinking + 55 braking).</p>
+          </li>
+          <li>
+            <p><strong>Q7.</strong> Speed limit on a single carriageway with a trailer?</p>
+            <p><strong>A7.</strong> 50 mph (single carriageway when towing).</p>
+          </li>
+          <li>
+            <p><strong>Q8.</strong> Speed limit on a dual carriageway with a trailer?</p>
+            <p><strong>A8.</strong> 60 mph (dual carriageway when towing).</p>
+          </li>
+          <li>
+            <p><strong>Q9.</strong> Many learners think a green light means "go" — what's the correct rule?</p>
+            <p><strong>A9.</strong> Proceed only if it's safe and the way is clear.</p>
+          </li>
+          <li>
+            <p><strong>Q10.</strong> When can you cross a solid white centre line?</p>
+            <p><strong>A10.</strong> To pass a parked vehicle, a pedal cycle or horse moving below 10 mph, to enter a side road, or in an emergency.</p>
+          </li>
         </ol>
 
         <h2>Tips to Pass</h2>
@@ -1733,32 +1881,48 @@ export const blogPosts: BlogPost[] = [
       <>
         <p>Two pass marks, one test. To pass the UK Driving Theory Test you need 43 out of 50 (86%) on the multiple choice AND 44 out of 75 (about 59%) on hazard perception, both at the same sitting. Fail either one and you re-sit both. The 2026 update brought no change to the pass marks but did refresh question wording and add a handful of new road signs. Below: 10 questions on the exact format and pass-mark logic, followed by tips for hitting both marks comfortably.</p>
 
-        <h2>Practice Questions</h2>
+        <h2>Practice Questions &amp; Answers</h2>
         <ol>
-          <li><strong>Q1.</strong> What's the multiple-choice pass mark?</li>
-          <li><strong>Q2.</strong> What's the hazard perception pass mark?</li>
-          <li><strong>Q3.</strong> How long is the multiple-choice section?</li>
-          <li><strong>Q4.</strong> Can you skip questions and come back?</li>
-          <li><strong>Q5.</strong> How many topic areas are tested in multiple choice?</li>
-          <li><strong>Q6.</strong> Can you take a break between sections?</li>
-          <li><strong>Q7.</strong> If you ace MCQ but fail hazard, what happens?</li>
-          <li><strong>Q8.</strong> How soon can you re-sit after a fail?</li>
-          <li><strong>Q9.</strong> What does each clip score out of?</li>
-          <li><strong>Q10.</strong> How does the 2026 update affect study material?</li>
-        </ol>
-
-        <h2>Answers &amp; Explanations</h2>
-        <ol>
-          <li><strong>A1.</strong> 43 out of 50.</li>
-          <li><strong>A2.</strong> 44 out of 75.</li>
-          <li><strong>A3.</strong> 57 minutes.</li>
-          <li><strong>A4.</strong> Yes — flag and review.</li>
-          <li><strong>A5.</strong> 14.</li>
-          <li><strong>A6.</strong> Up to 3 minutes between the multiple choice and hazard perception.</li>
-          <li><strong>A7.</strong> You re-sit both sections, not just hazard.</li>
-          <li><strong>A8.</strong> After 3 working days.</li>
-          <li><strong>A9.</strong> 0–5 marks.</li>
-          <li><strong>A10.</strong> Wording on some MCQs has changed and 7 new road sign questions have been added — make sure your study material is dated 2026.</li>
+          <li>
+            <p><strong>Q1.</strong> What's the multiple-choice pass mark?</p>
+            <p><strong>A1.</strong> 43 out of 50.</p>
+          </li>
+          <li>
+            <p><strong>Q2.</strong> What's the hazard perception pass mark?</p>
+            <p><strong>A2.</strong> 44 out of 75.</p>
+          </li>
+          <li>
+            <p><strong>Q3.</strong> How long is the multiple-choice section?</p>
+            <p><strong>A3.</strong> 57 minutes.</p>
+          </li>
+          <li>
+            <p><strong>Q4.</strong> Can you skip questions and come back?</p>
+            <p><strong>A4.</strong> Yes — flag and review.</p>
+          </li>
+          <li>
+            <p><strong>Q5.</strong> How many topic areas are tested in multiple choice?</p>
+            <p><strong>A5.</strong> 14.</p>
+          </li>
+          <li>
+            <p><strong>Q6.</strong> Can you take a break between sections?</p>
+            <p><strong>A6.</strong> Up to 3 minutes between the multiple choice and hazard perception.</p>
+          </li>
+          <li>
+            <p><strong>Q7.</strong> If you ace MCQ but fail hazard, what happens?</p>
+            <p><strong>A7.</strong> You re-sit both sections, not just hazard.</p>
+          </li>
+          <li>
+            <p><strong>Q8.</strong> How soon can you re-sit after a fail?</p>
+            <p><strong>A8.</strong> After 3 working days.</p>
+          </li>
+          <li>
+            <p><strong>Q9.</strong> What does each clip score out of?</p>
+            <p><strong>A9.</strong> 0–5 marks.</p>
+          </li>
+          <li>
+            <p><strong>Q10.</strong> How does the 2026 update affect study material?</p>
+            <p><strong>A10.</strong> Wording on some MCQs has changed and 7 new road sign questions have been added — make sure your study material is dated 2026.</p>
+          </li>
         </ol>
 
         <h2>Tips to Pass</h2>
@@ -1901,36 +2065,56 @@ export const blogPosts: BlogPost[] = [
       <>
         <p>The Life in the UK Test asks 24 questions in 45 minutes, all drawn directly from the official handbook "Life in the United Kingdom: A Guide for New Residents". The pass mark is 75% — at least 18 correct. Below are 12 fresh practice questions in the exact format used at official test centres, with full explanations after each answer so you understand WHY each is correct.</p>
 
-        <h2>Practice Questions</h2>
+        <h2>Practice Questions &amp; Answers</h2>
         <ol>
-          <li><strong>Q1.</strong> Which of these is a value of British society?</li>
-          <li><strong>Q2.</strong> How many countries make up the United Kingdom?</li>
-          <li><strong>Q3.</strong> Which of the following is a Crown dependency?</li>
-          <li><strong>Q4.</strong> Who is the head of the Church of England?</li>
-          <li><strong>Q5.</strong> When was the Magna Carta signed?</li>
-          <li><strong>Q6.</strong> What is the capital of Wales?</li>
-          <li><strong>Q7.</strong> How often are general elections held by law (maximum)?</li>
-          <li><strong>Q8.</strong> Who appoints the Prime Minister?</li>
-          <li><strong>Q9.</strong> Which two houses make up Parliament?</li>
-          <li><strong>Q10.</strong> What is the name of the UK national anthem?</li>
-          <li><strong>Q11.</strong> When was the NHS founded?</li>
-          <li><strong>Q12.</strong> Which two of these are British inventors? (Choose two)</li>
-        </ol>
-
-        <h2>Answers &amp; Explanations</h2>
-        <ol>
-          <li><strong>A1.</strong> The rule of law. Other British values include democracy, individual liberty, tolerance and respect.</li>
-          <li><strong>A2.</strong> Four — England, Scotland, Wales and Northern Ireland.</li>
-          <li><strong>A3.</strong> The Isle of Man (also Jersey and Guernsey). Crown dependencies are not part of the UK but are linked to the Crown.</li>
-          <li><strong>A4.</strong> The Monarch — currently King Charles III.</li>
-          <li><strong>A5.</strong> 1215 at Runnymede.</li>
-          <li><strong>A6.</strong> Cardiff.</li>
-          <li><strong>A7.</strong> Every 5 years.</li>
-          <li><strong>A8.</strong> The Monarch — but by convention always the leader of the party with the most MPs.</li>
-          <li><strong>A9.</strong> The House of Commons and the House of Lords.</li>
-          <li><strong>A10.</strong> "God Save the King" (King when the Monarch is male, Queen when female).</li>
-          <li><strong>A11.</strong> 1948.</li>
-          <li><strong>A12.</strong> Sir Isaac Newton and Sir Tim Berners-Lee (the World Wide Web).</li>
+          <li>
+            <p><strong>Q1.</strong> Which of these is a value of British society?</p>
+            <p><strong>A1.</strong> The rule of law. Other British values include democracy, individual liberty, tolerance and respect.</p>
+          </li>
+          <li>
+            <p><strong>Q2.</strong> How many countries make up the United Kingdom?</p>
+            <p><strong>A2.</strong> Four — England, Scotland, Wales and Northern Ireland.</p>
+          </li>
+          <li>
+            <p><strong>Q3.</strong> Which of the following is a Crown dependency?</p>
+            <p><strong>A3.</strong> The Isle of Man (also Jersey and Guernsey). Crown dependencies are not part of the UK but are linked to the Crown.</p>
+          </li>
+          <li>
+            <p><strong>Q4.</strong> Who is the head of the Church of England?</p>
+            <p><strong>A4.</strong> The Monarch — currently King Charles III.</p>
+          </li>
+          <li>
+            <p><strong>Q5.</strong> When was the Magna Carta signed?</p>
+            <p><strong>A5.</strong> 1215 at Runnymede.</p>
+          </li>
+          <li>
+            <p><strong>Q6.</strong> What is the capital of Wales?</p>
+            <p><strong>A6.</strong> Cardiff.</p>
+          </li>
+          <li>
+            <p><strong>Q7.</strong> How often are general elections held by law (maximum)?</p>
+            <p><strong>A7.</strong> Every 5 years.</p>
+          </li>
+          <li>
+            <p><strong>Q8.</strong> Who appoints the Prime Minister?</p>
+            <p><strong>A8.</strong> The Monarch — but by convention always the leader of the party with the most MPs.</p>
+          </li>
+          <li>
+            <p><strong>Q9.</strong> Which two houses make up Parliament?</p>
+            <p><strong>A9.</strong> The House of Commons and the House of Lords.</p>
+          </li>
+          <li>
+            <p><strong>Q10.</strong> What is the name of the UK national anthem?</p>
+            <p><strong>A10.</strong> "God Save the King" (King when the Monarch is male, Queen when female).</p>
+          </li>
+          <li>
+            <p><strong>Q11.</strong> When was the NHS founded?</p>
+            <p><strong>A11.</strong> 1948.</p>
+          </li>
+          <li>
+            <p><strong>Q12.</strong> Which two of these are British inventors? (Choose two)</p>
+            <p><strong>A12.</strong> Sir Isaac Newton and Sir Tim Berners-Lee (the World Wide Web).</p>
+          </li>
         </ol>
 
         <h2>Tips to Pass</h2>
@@ -1981,36 +2165,56 @@ export const blogPosts: BlogPost[] = [
       <>
         <p>Some Life in the UK Test questions appear so often that knowing them is the difference between passing and failing. Below are 12 of the must-know questions — covering the chapters and dates that come up almost every sitting. Practise these until they're automatic, then attack a full mock.</p>
 
-        <h2>Practice Questions</h2>
+        <h2>Practice Questions &amp; Answers</h2>
         <ol>
-          <li><strong>Q1.</strong> What event in 1066 is considered a turning point in British history?</li>
-          <li><strong>Q2.</strong> Who was the first Prime Minister of Great Britain?</li>
-          <li><strong>Q3.</strong> Which century was the Industrial Revolution in?</li>
-          <li><strong>Q4.</strong> What is the patron saint of Scotland and what date is celebrated?</li>
-          <li><strong>Q5.</strong> What is the name of Wales' patron saint?</li>
-          <li><strong>Q6.</strong> What flower is associated with England?</li>
-          <li><strong>Q7.</strong> What is the longest-running soap opera in the UK?</li>
-          <li><strong>Q8.</strong> When did women in the UK get equal voting rights to men?</li>
-          <li><strong>Q9.</strong> What is the minimum age to serve on a jury in England?</li>
-          <li><strong>Q10.</strong> Where is the seat of the Scottish Parliament?</li>
-          <li><strong>Q11.</strong> What is the official residence of the Prime Minister?</li>
-          <li><strong>Q12.</strong> What does "the rule of law" mean?</li>
-        </ol>
-
-        <h2>Answers &amp; Explanations</h2>
-        <ol>
-          <li><strong>A1.</strong> The Battle of Hastings — Norman conquest under William the Conqueror.</li>
-          <li><strong>A2.</strong> Sir Robert Walpole.</li>
-          <li><strong>A3.</strong> The 18th and 19th centuries (it began around 1750).</li>
-          <li><strong>A4.</strong> St Andrew, celebrated on 30 November.</li>
-          <li><strong>A5.</strong> St David, celebrated on 1 March.</li>
-          <li><strong>A6.</strong> The rose.</li>
-          <li><strong>A7.</strong> Coronation Street (since 1960).</li>
-          <li><strong>A8.</strong> 1928 — equal voting rights at age 21+.</li>
-          <li><strong>A9.</strong> 18 (and a maximum of 75).</li>
-          <li><strong>A10.</strong> Holyrood, Edinburgh.</li>
-          <li><strong>A11.</strong> 10 Downing Street, London.</li>
-          <li><strong>A12.</strong> All people, including those in government, are subject to the law.</li>
+          <li>
+            <p><strong>Q1.</strong> What event in 1066 is considered a turning point in British history?</p>
+            <p><strong>A1.</strong> The Battle of Hastings — Norman conquest under William the Conqueror.</p>
+          </li>
+          <li>
+            <p><strong>Q2.</strong> Who was the first Prime Minister of Great Britain?</p>
+            <p><strong>A2.</strong> Sir Robert Walpole.</p>
+          </li>
+          <li>
+            <p><strong>Q3.</strong> Which century was the Industrial Revolution in?</p>
+            <p><strong>A3.</strong> The 18th and 19th centuries (it began around 1750).</p>
+          </li>
+          <li>
+            <p><strong>Q4.</strong> What is the patron saint of Scotland and what date is celebrated?</p>
+            <p><strong>A4.</strong> St Andrew, celebrated on 30 November.</p>
+          </li>
+          <li>
+            <p><strong>Q5.</strong> What is the name of Wales' patron saint?</p>
+            <p><strong>A5.</strong> St David, celebrated on 1 March.</p>
+          </li>
+          <li>
+            <p><strong>Q6.</strong> What flower is associated with England?</p>
+            <p><strong>A6.</strong> The rose.</p>
+          </li>
+          <li>
+            <p><strong>Q7.</strong> What is the longest-running soap opera in the UK?</p>
+            <p><strong>A7.</strong> Coronation Street (since 1960).</p>
+          </li>
+          <li>
+            <p><strong>Q8.</strong> When did women in the UK get equal voting rights to men?</p>
+            <p><strong>A8.</strong> 1928 — equal voting rights at age 21+.</p>
+          </li>
+          <li>
+            <p><strong>Q9.</strong> What is the minimum age to serve on a jury in England?</p>
+            <p><strong>A9.</strong> 18 (and a maximum of 75).</p>
+          </li>
+          <li>
+            <p><strong>Q10.</strong> Where is the seat of the Scottish Parliament?</p>
+            <p><strong>A10.</strong> Holyrood, Edinburgh.</p>
+          </li>
+          <li>
+            <p><strong>Q11.</strong> What is the official residence of the Prime Minister?</p>
+            <p><strong>A11.</strong> 10 Downing Street, London.</p>
+          </li>
+          <li>
+            <p><strong>Q12.</strong> What does "the rule of law" mean?</p>
+            <p><strong>A12.</strong> All people, including those in government, are subject to the law.</p>
+          </li>
         </ol>
 
         <h2>Tips to Pass</h2>
@@ -2061,36 +2265,56 @@ export const blogPosts: BlogPost[] = [
       <>
         <p>Pass-rate analysis shows certain Life in the UK questions trip up candidates far more often than others — usually obscure dates, lesser-known monarchs, and details about devolved administrations. Below are 12 of the hardest questions in the 2026 bank with explanations to lock them in.</p>
 
-        <h2>Practice Questions</h2>
+        <h2>Practice Questions &amp; Answers</h2>
         <ol>
-          <li><strong>Q1.</strong> When did the Acts of Union join England, Wales and Scotland?</li>
-          <li><strong>Q2.</strong> Who wrote the play "Hamlet"?</li>
-          <li><strong>Q3.</strong> When did the Falklands War take place?</li>
-          <li><strong>Q4.</strong> What is the Privy Council?</li>
-          <li><strong>Q5.</strong> When was the Bill of Rights passed?</li>
-          <li><strong>Q6.</strong> Who was the first British female Prime Minister?</li>
-          <li><strong>Q7.</strong> Which English king was beheaded in 1649?</li>
-          <li><strong>Q8.</strong> When did the UK formally leave the EU?</li>
-          <li><strong>Q9.</strong> How many constituencies are there in the UK House of Commons?</li>
-          <li><strong>Q10.</strong> Who was Florence Nightingale?</li>
-          <li><strong>Q11.</strong> What does the abbreviation "OBE" stand for?</li>
-          <li><strong>Q12.</strong> When was the State Pension first introduced?</li>
-        </ol>
-
-        <h2>Answers &amp; Explanations</h2>
-        <ol>
-          <li><strong>A1.</strong> 1707 — the Acts of Union created the Kingdom of Great Britain.</li>
-          <li><strong>A2.</strong> William Shakespeare.</li>
-          <li><strong>A3.</strong> 1982 — between the UK and Argentina.</li>
-          <li><strong>A4.</strong> A formal body of advisers to the Sovereign.</li>
-          <li><strong>A5.</strong> 1689 — it limited the powers of the monarch.</li>
-          <li><strong>A6.</strong> Margaret Thatcher (1979–1990).</li>
-          <li><strong>A7.</strong> Charles I.</li>
-          <li><strong>A8.</strong> 31 January 2020.</li>
-          <li><strong>A9.</strong> 650 — each constituency elects one Member of Parliament.</li>
-          <li><strong>A10.</strong> A nurse who founded modern nursing during the Crimean War.</li>
-          <li><strong>A11.</strong> Officer of the Order of the British Empire.</li>
-          <li><strong>A12.</strong> 1908.</li>
+          <li>
+            <p><strong>Q1.</strong> When did the Acts of Union join England, Wales and Scotland?</p>
+            <p><strong>A1.</strong> 1707 — the Acts of Union created the Kingdom of Great Britain.</p>
+          </li>
+          <li>
+            <p><strong>Q2.</strong> Who wrote the play "Hamlet"?</p>
+            <p><strong>A2.</strong> William Shakespeare.</p>
+          </li>
+          <li>
+            <p><strong>Q3.</strong> When did the Falklands War take place?</p>
+            <p><strong>A3.</strong> 1982 — between the UK and Argentina.</p>
+          </li>
+          <li>
+            <p><strong>Q4.</strong> What is the Privy Council?</p>
+            <p><strong>A4.</strong> A formal body of advisers to the Sovereign.</p>
+          </li>
+          <li>
+            <p><strong>Q5.</strong> When was the Bill of Rights passed?</p>
+            <p><strong>A5.</strong> 1689 — it limited the powers of the monarch.</p>
+          </li>
+          <li>
+            <p><strong>Q6.</strong> Who was the first British female Prime Minister?</p>
+            <p><strong>A6.</strong> Margaret Thatcher (1979–1990).</p>
+          </li>
+          <li>
+            <p><strong>Q7.</strong> Which English king was beheaded in 1649?</p>
+            <p><strong>A7.</strong> Charles I.</p>
+          </li>
+          <li>
+            <p><strong>Q8.</strong> When did the UK formally leave the EU?</p>
+            <p><strong>A8.</strong> 31 January 2020.</p>
+          </li>
+          <li>
+            <p><strong>Q9.</strong> How many constituencies are there in the UK House of Commons?</p>
+            <p><strong>A9.</strong> 650 — each constituency elects one Member of Parliament.</p>
+          </li>
+          <li>
+            <p><strong>Q10.</strong> Who was Florence Nightingale?</p>
+            <p><strong>A10.</strong> A nurse who founded modern nursing during the Crimean War.</p>
+          </li>
+          <li>
+            <p><strong>Q11.</strong> What does the abbreviation "OBE" stand for?</p>
+            <p><strong>A11.</strong> Officer of the Order of the British Empire.</p>
+          </li>
+          <li>
+            <p><strong>Q12.</strong> When was the State Pension first introduced?</p>
+            <p><strong>A12.</strong> 1908.</p>
+          </li>
         </ol>
 
         <h2>Tips to Pass</h2>
@@ -2141,36 +2365,56 @@ export const blogPosts: BlogPost[] = [
       <>
         <p>The official Life in the UK Test costs £50 every time you take it — so practising for free until you're confident is essential. Below is a 12-question warm-up in the same multiple-choice format used at the test centre. The full mock matches the real exam exactly: 24 questions in 45 minutes, with the same 18/24 pass mark.</p>
 
-        <h2>Practice Questions</h2>
+        <h2>Practice Questions &amp; Answers</h2>
         <ol>
-          <li><strong>Q1.</strong> What is the second-largest party in Parliament called?</li>
-          <li><strong>Q2.</strong> Who has the right to vote in UK general elections?</li>
-          <li><strong>Q3.</strong> What is the role of the Speaker?</li>
-          <li><strong>Q4.</strong> Who can stand as an MP?</li>
-          <li><strong>Q5.</strong> How often does Prime Minister's Questions take place?</li>
-          <li><strong>Q6.</strong> What does "devolution" mean?</li>
-          <li><strong>Q7.</strong> Where does the UK Supreme Court sit?</li>
-          <li><strong>Q8.</strong> What is the minimum age to vote in the UK?</li>
-          <li><strong>Q9.</strong> When are local council elections held?</li>
-          <li><strong>Q10.</strong> What does the Cabinet do?</li>
-          <li><strong>Q11.</strong> What's the role of the Civil Service?</li>
-          <li><strong>Q12.</strong> How is the Northern Ireland Assembly elected?</li>
-        </ol>
-
-        <h2>Answers &amp; Explanations</h2>
-        <ol>
-          <li><strong>A1.</strong> The Official Opposition.</li>
-          <li><strong>A2.</strong> Adults aged 18+ on the electoral register, with limited exceptions.</li>
-          <li><strong>A3.</strong> To chair debates in the Commons impartially.</li>
-          <li><strong>A4.</strong> British, Commonwealth or Irish citizens aged 18+ (with some exceptions).</li>
-          <li><strong>A5.</strong> Weekly when Parliament is sitting (usually Wednesdays).</li>
-          <li><strong>A6.</strong> Transferring power from central government to devolved administrations.</li>
-          <li><strong>A7.</strong> London — Parliament Square.</li>
-          <li><strong>A8.</strong> 18 (16 in Scotland and Wales for devolved elections).</li>
-          <li><strong>A9.</strong> Usually in May.</li>
-          <li><strong>A10.</strong> Senior ministers run government departments and decide policy.</li>
-          <li><strong>A11.</strong> To deliver government policy, politically neutral.</li>
-          <li><strong>A12.</strong> By Single Transferable Vote (STV).</li>
+          <li>
+            <p><strong>Q1.</strong> What is the second-largest party in Parliament called?</p>
+            <p><strong>A1.</strong> The Official Opposition.</p>
+          </li>
+          <li>
+            <p><strong>Q2.</strong> Who has the right to vote in UK general elections?</p>
+            <p><strong>A2.</strong> Adults aged 18+ on the electoral register, with limited exceptions.</p>
+          </li>
+          <li>
+            <p><strong>Q3.</strong> What is the role of the Speaker?</p>
+            <p><strong>A3.</strong> To chair debates in the Commons impartially.</p>
+          </li>
+          <li>
+            <p><strong>Q4.</strong> Who can stand as an MP?</p>
+            <p><strong>A4.</strong> British, Commonwealth or Irish citizens aged 18+ (with some exceptions).</p>
+          </li>
+          <li>
+            <p><strong>Q5.</strong> How often does Prime Minister's Questions take place?</p>
+            <p><strong>A5.</strong> Weekly when Parliament is sitting (usually Wednesdays).</p>
+          </li>
+          <li>
+            <p><strong>Q6.</strong> What does "devolution" mean?</p>
+            <p><strong>A6.</strong> Transferring power from central government to devolved administrations.</p>
+          </li>
+          <li>
+            <p><strong>Q7.</strong> Where does the UK Supreme Court sit?</p>
+            <p><strong>A7.</strong> London — Parliament Square.</p>
+          </li>
+          <li>
+            <p><strong>Q8.</strong> What is the minimum age to vote in the UK?</p>
+            <p><strong>A8.</strong> 18 (16 in Scotland and Wales for devolved elections).</p>
+          </li>
+          <li>
+            <p><strong>Q9.</strong> When are local council elections held?</p>
+            <p><strong>A9.</strong> Usually in May.</p>
+          </li>
+          <li>
+            <p><strong>Q10.</strong> What does the Cabinet do?</p>
+            <p><strong>A10.</strong> Senior ministers run government departments and decide policy.</p>
+          </li>
+          <li>
+            <p><strong>Q11.</strong> What's the role of the Civil Service?</p>
+            <p><strong>A11.</strong> To deliver government policy, politically neutral.</p>
+          </li>
+          <li>
+            <p><strong>Q12.</strong> How is the Northern Ireland Assembly elected?</p>
+            <p><strong>A12.</strong> By Single Transferable Vote (STV).</p>
+          </li>
         </ol>
 
         <h2>Tips to Pass</h2>
@@ -2221,32 +2465,48 @@ export const blogPosts: BlogPost[] = [
       <>
         <p>Becoming a British citizen typically requires: ILR for at least 12 months, the Life in the UK Test, an English language qualification at CEFR B1+ (or higher), the AN application form, biometrics and a citizenship ceremony. Below are 10 questions on the process itself plus tips on hitting each milestone in the right order.</p>
 
-        <h2>Practice Questions</h2>
+        <h2>Practice Questions &amp; Answers</h2>
         <ol>
-          <li><strong>Q1.</strong> What's the minimum residency period for naturalisation?</li>
-          <li><strong>Q2.</strong> Do you need ILR before applying?</li>
-          <li><strong>Q3.</strong> What English level is required?</li>
-          <li><strong>Q4.</strong> What's the cost of the AN application (2026)?</li>
-          <li><strong>Q5.</strong> How long does the Life in the UK Test certificate last?</li>
-          <li><strong>Q6.</strong> What's the maximum time you can spend outside the UK in the 5 years before applying?</li>
-          <li><strong>Q7.</strong> Do you need to attend a ceremony?</li>
-          <li><strong>Q8.</strong> Can you hold dual nationality?</li>
-          <li><strong>Q9.</strong> What's a referee for the application?</li>
-          <li><strong>Q10.</strong> How long does the application typically take?</li>
-        </ol>
-
-        <h2>Answers &amp; Explanations</h2>
-        <ol>
-          <li><strong>A1.</strong> 5 years (3 years if married to a British citizen).</li>
-          <li><strong>A2.</strong> Yes — for at least 12 months (waived if married to a British citizen).</li>
-          <li><strong>A3.</strong> CEFR B1 or above, in speaking and listening.</li>
-          <li><strong>A4.</strong> Approximately £1,630 (subject to Home Office updates) plus ceremony fee.</li>
-          <li><strong>A5.</strong> Indefinitely — once passed it never expires.</li>
-          <li><strong>A6.</strong> 450 days (90 days in the final year).</li>
-          <li><strong>A7.</strong> Yes — within 90 days of approval.</li>
-          <li><strong>A8.</strong> The UK allows dual nationality, but check your country of origin's rules.</li>
-          <li><strong>A9.</strong> Two professional referees who can vouch for your identity.</li>
-          <li><strong>A10.</strong> Around 6 months on average.</li>
+          <li>
+            <p><strong>Q1.</strong> What's the minimum residency period for naturalisation?</p>
+            <p><strong>A1.</strong> 5 years (3 years if married to a British citizen).</p>
+          </li>
+          <li>
+            <p><strong>Q2.</strong> Do you need ILR before applying?</p>
+            <p><strong>A2.</strong> Yes — for at least 12 months (waived if married to a British citizen).</p>
+          </li>
+          <li>
+            <p><strong>Q3.</strong> What English level is required?</p>
+            <p><strong>A3.</strong> CEFR B1 or above, in speaking and listening.</p>
+          </li>
+          <li>
+            <p><strong>Q4.</strong> What's the cost of the AN application (2026)?</p>
+            <p><strong>A4.</strong> Approximately £1,630 (subject to Home Office updates) plus ceremony fee.</p>
+          </li>
+          <li>
+            <p><strong>Q5.</strong> How long does the Life in the UK Test certificate last?</p>
+            <p><strong>A5.</strong> Indefinitely — once passed it never expires.</p>
+          </li>
+          <li>
+            <p><strong>Q6.</strong> What's the maximum time you can spend outside the UK in the 5 years before applying?</p>
+            <p><strong>A6.</strong> 450 days (90 days in the final year).</p>
+          </li>
+          <li>
+            <p><strong>Q7.</strong> Do you need to attend a ceremony?</p>
+            <p><strong>A7.</strong> Yes — within 90 days of approval.</p>
+          </li>
+          <li>
+            <p><strong>Q8.</strong> Can you hold dual nationality?</p>
+            <p><strong>A8.</strong> The UK allows dual nationality, but check your country of origin's rules.</p>
+          </li>
+          <li>
+            <p><strong>Q9.</strong> What's a referee for the application?</p>
+            <p><strong>A9.</strong> Two professional referees who can vouch for your identity.</p>
+          </li>
+          <li>
+            <p><strong>Q10.</strong> How long does the application typically take?</p>
+            <p><strong>A10.</strong> Around 6 months on average.</p>
+          </li>
         </ol>
 
         <h2>Tips to Pass</h2>
@@ -2297,32 +2557,48 @@ export const blogPosts: BlogPost[] = [
       <>
         <p>The Life in the UK Test pass mark is 75% — at least 18 correct out of 24 questions. You have 45 minutes, which means almost 2 minutes per question. Most candidates finish in 20 minutes; resist the urge to leave early. Below are 10 questions on the test format and pass-mark logic, then tips for hitting 22+ consistently in practice.</p>
 
-        <h2>Practice Questions</h2>
+        <h2>Practice Questions &amp; Answers</h2>
         <ol>
-          <li><strong>Q1.</strong> How many questions on the test?</li>
-          <li><strong>Q2.</strong> What's the pass mark?</li>
-          <li><strong>Q3.</strong> How many minutes do you have?</li>
-          <li><strong>Q4.</strong> How are answers entered?</li>
-          <li><strong>Q5.</strong> What types of questions appear?</li>
-          <li><strong>Q6.</strong> Can you go back to previous questions?</li>
-          <li><strong>Q7.</strong> What ID do you need?</li>
-          <li><strong>Q8.</strong> Cost of the test in 2026?</li>
-          <li><strong>Q9.</strong> When do you find out your result?</li>
-          <li><strong>Q10.</strong> If you fail, when can you re-sit?</li>
-        </ol>
-
-        <h2>Answers &amp; Explanations</h2>
-        <ol>
-          <li><strong>A1.</strong> 24.</li>
-          <li><strong>A2.</strong> 18 out of 24 (75%).</li>
-          <li><strong>A3.</strong> 45 minutes.</li>
-          <li><strong>A4.</strong> On a touchscreen at the test centre.</li>
-          <li><strong>A5.</strong> Multiple choice (4 options) and true/false.</li>
-          <li><strong>A6.</strong> Yes — flag and review.</li>
-          <li><strong>A7.</strong> Photo ID and proof of address (less than 3 months old).</li>
-          <li><strong>A8.</strong> £50.</li>
-          <li><strong>A9.</strong> On the day, immediately after the test.</li>
-          <li><strong>A10.</strong> After at least 7 days.</li>
+          <li>
+            <p><strong>Q1.</strong> How many questions on the test?</p>
+            <p><strong>A1.</strong> 24.</p>
+          </li>
+          <li>
+            <p><strong>Q2.</strong> What's the pass mark?</p>
+            <p><strong>A2.</strong> 18 out of 24 (75%).</p>
+          </li>
+          <li>
+            <p><strong>Q3.</strong> How many minutes do you have?</p>
+            <p><strong>A3.</strong> 45 minutes.</p>
+          </li>
+          <li>
+            <p><strong>Q4.</strong> How are answers entered?</p>
+            <p><strong>A4.</strong> On a touchscreen at the test centre.</p>
+          </li>
+          <li>
+            <p><strong>Q5.</strong> What types of questions appear?</p>
+            <p><strong>A5.</strong> Multiple choice (4 options) and true/false.</p>
+          </li>
+          <li>
+            <p><strong>Q6.</strong> Can you go back to previous questions?</p>
+            <p><strong>A6.</strong> Yes — flag and review.</p>
+          </li>
+          <li>
+            <p><strong>Q7.</strong> What ID do you need?</p>
+            <p><strong>A7.</strong> Photo ID and proof of address (less than 3 months old).</p>
+          </li>
+          <li>
+            <p><strong>Q8.</strong> Cost of the test in 2026?</p>
+            <p><strong>A8.</strong> £50.</p>
+          </li>
+          <li>
+            <p><strong>Q9.</strong> When do you find out your result?</p>
+            <p><strong>A9.</strong> On the day, immediately after the test.</p>
+          </li>
+          <li>
+            <p><strong>Q10.</strong> If you fail, when can you re-sit?</p>
+            <p><strong>A10.</strong> After at least 7 days.</p>
+          </li>
         </ol>
 
         <h2>Tips to Pass</h2>
@@ -2373,36 +2649,56 @@ export const blogPosts: BlogPost[] = [
       <>
         <p>The British citizenship test is officially called the Life in the UK Test. It's the same exam whether you're applying for ILR or naturalisation — 24 questions, 45 minutes, 75% pass. Below are 12 fresh 2026-aligned questions with full explanations.</p>
 
-        <h2>Practice Questions</h2>
+        <h2>Practice Questions &amp; Answers</h2>
         <ol>
-          <li><strong>Q1.</strong> What is the patron saint of England?</li>
-          <li><strong>Q2.</strong> What date is St George's Day?</li>
-          <li><strong>Q3.</strong> Who is the current Monarch?</li>
-          <li><strong>Q4.</strong> What is Bonfire Night and when is it celebrated?</li>
-          <li><strong>Q5.</strong> Where is the official residence of the Monarch in London?</li>
-          <li><strong>Q6.</strong> What is the Commonwealth?</li>
-          <li><strong>Q7.</strong> How many member states does the Commonwealth have?</li>
-          <li><strong>Q8.</strong> What is the name of the UK Parliament's lower house?</li>
-          <li><strong>Q9.</strong> What is a constituency?</li>
-          <li><strong>Q10.</strong> What does "first past the post" mean?</li>
-          <li><strong>Q11.</strong> Who is the head of the Cabinet?</li>
-          <li><strong>Q12.</strong> When was the United Kingdom of Great Britain and Ireland formed?</li>
-        </ol>
-
-        <h2>Answers &amp; Explanations</h2>
-        <ol>
-          <li><strong>A1.</strong> St George.</li>
-          <li><strong>A2.</strong> 23 April.</li>
-          <li><strong>A3.</strong> King Charles III.</li>
-          <li><strong>A4.</strong> Commemorates the failed Gunpowder Plot of 1605, celebrated 5 November.</li>
-          <li><strong>A5.</strong> Buckingham Palace.</li>
-          <li><strong>A6.</strong> An association of 56 countries, mostly former British territories.</li>
-          <li><strong>A7.</strong> 56 (as of 2026).</li>
-          <li><strong>A8.</strong> The House of Commons.</li>
-          <li><strong>A9.</strong> An area represented by one MP.</li>
-          <li><strong>A10.</strong> The candidate with the most votes in a constituency wins.</li>
-          <li><strong>A11.</strong> The Prime Minister.</li>
-          <li><strong>A12.</strong> 1801.</li>
+          <li>
+            <p><strong>Q1.</strong> What is the patron saint of England?</p>
+            <p><strong>A1.</strong> St George.</p>
+          </li>
+          <li>
+            <p><strong>Q2.</strong> What date is St George's Day?</p>
+            <p><strong>A2.</strong> 23 April.</p>
+          </li>
+          <li>
+            <p><strong>Q3.</strong> Who is the current Monarch?</p>
+            <p><strong>A3.</strong> King Charles III.</p>
+          </li>
+          <li>
+            <p><strong>Q4.</strong> What is Bonfire Night and when is it celebrated?</p>
+            <p><strong>A4.</strong> Commemorates the failed Gunpowder Plot of 1605, celebrated 5 November.</p>
+          </li>
+          <li>
+            <p><strong>Q5.</strong> Where is the official residence of the Monarch in London?</p>
+            <p><strong>A5.</strong> Buckingham Palace.</p>
+          </li>
+          <li>
+            <p><strong>Q6.</strong> What is the Commonwealth?</p>
+            <p><strong>A6.</strong> An association of 56 countries, mostly former British territories.</p>
+          </li>
+          <li>
+            <p><strong>Q7.</strong> How many member states does the Commonwealth have?</p>
+            <p><strong>A7.</strong> 56 (as of 2026).</p>
+          </li>
+          <li>
+            <p><strong>Q8.</strong> What is the name of the UK Parliament's lower house?</p>
+            <p><strong>A8.</strong> The House of Commons.</p>
+          </li>
+          <li>
+            <p><strong>Q9.</strong> What is a constituency?</p>
+            <p><strong>A9.</strong> An area represented by one MP.</p>
+          </li>
+          <li>
+            <p><strong>Q10.</strong> What does "first past the post" mean?</p>
+            <p><strong>A10.</strong> The candidate with the most votes in a constituency wins.</p>
+          </li>
+          <li>
+            <p><strong>Q11.</strong> Who is the head of the Cabinet?</p>
+            <p><strong>A11.</strong> The Prime Minister.</p>
+          </li>
+          <li>
+            <p><strong>Q12.</strong> When was the United Kingdom of Great Britain and Ireland formed?</p>
+            <p><strong>A12.</strong> 1801.</p>
+          </li>
         </ol>
 
         <h2>Tips to Pass</h2>
@@ -2453,32 +2749,48 @@ export const blogPosts: BlogPost[] = [
       <>
         <p>Most candidates over-study the Life in the UK Test. The handbook is around 180 pages and the test only draws from a defined question bank — so two focused weeks is enough for most people. Below is the 14-day plan, plus a 10-question warm-up to gauge where you are right now.</p>
 
-        <h2>Practice Questions</h2>
+        <h2>Practice Questions &amp; Answers</h2>
         <ol>
-          <li><strong>Q1.</strong> How many monarchs were in the House of Tudor?</li>
-          <li><strong>Q2.</strong> When did the Roman Empire leave Britain?</li>
-          <li><strong>Q3.</strong> What was the Domesday Book?</li>
-          <li><strong>Q4.</strong> Who designed St Paul's Cathedral?</li>
-          <li><strong>Q5.</strong> What year did World War II end?</li>
-          <li><strong>Q6.</strong> Who was Winston Churchill?</li>
-          <li><strong>Q7.</strong> What was the Black Death?</li>
-          <li><strong>Q8.</strong> What was the result of the 1707 Acts of Union?</li>
-          <li><strong>Q9.</strong> Who wrote "Pride and Prejudice"?</li>
-          <li><strong>Q10.</strong> What is the Hadrian's Wall?</li>
-        </ol>
-
-        <h2>Answers &amp; Explanations</h2>
-        <ol>
-          <li><strong>A1.</strong> Five.</li>
-          <li><strong>A2.</strong> Around 410 AD.</li>
-          <li><strong>A3.</strong> A survey of England commissioned by William the Conqueror in 1086.</li>
-          <li><strong>A4.</strong> Sir Christopher Wren.</li>
-          <li><strong>A5.</strong> 1945.</li>
-          <li><strong>A6.</strong> Prime Minister during much of WWII.</li>
-          <li><strong>A7.</strong> A devastating plague that killed roughly a third of Britain's population in the 14th century.</li>
-          <li><strong>A8.</strong> Created the Kingdom of Great Britain.</li>
-          <li><strong>A9.</strong> Jane Austen.</li>
-          <li><strong>A10.</strong> A Roman fortification across northern England, built around 122 AD.</li>
+          <li>
+            <p><strong>Q1.</strong> How many monarchs were in the House of Tudor?</p>
+            <p><strong>A1.</strong> Five.</p>
+          </li>
+          <li>
+            <p><strong>Q2.</strong> When did the Roman Empire leave Britain?</p>
+            <p><strong>A2.</strong> Around 410 AD.</p>
+          </li>
+          <li>
+            <p><strong>Q3.</strong> What was the Domesday Book?</p>
+            <p><strong>A3.</strong> A survey of England commissioned by William the Conqueror in 1086.</p>
+          </li>
+          <li>
+            <p><strong>Q4.</strong> Who designed St Paul's Cathedral?</p>
+            <p><strong>A4.</strong> Sir Christopher Wren.</p>
+          </li>
+          <li>
+            <p><strong>Q5.</strong> What year did World War II end?</p>
+            <p><strong>A5.</strong> 1945.</p>
+          </li>
+          <li>
+            <p><strong>Q6.</strong> Who was Winston Churchill?</p>
+            <p><strong>A6.</strong> Prime Minister during much of WWII.</p>
+          </li>
+          <li>
+            <p><strong>Q7.</strong> What was the Black Death?</p>
+            <p><strong>A7.</strong> A devastating plague that killed roughly a third of Britain's population in the 14th century.</p>
+          </li>
+          <li>
+            <p><strong>Q8.</strong> What was the result of the 1707 Acts of Union?</p>
+            <p><strong>A8.</strong> Created the Kingdom of Great Britain.</p>
+          </li>
+          <li>
+            <p><strong>Q9.</strong> Who wrote "Pride and Prejudice"?</p>
+            <p><strong>A9.</strong> Jane Austen.</p>
+          </li>
+          <li>
+            <p><strong>Q10.</strong> What is the Hadrian's Wall?</p>
+            <p><strong>A10.</strong> A Roman fortification across northern England, built around 122 AD.</p>
+          </li>
         </ol>
 
         <h2>Tips to Pass</h2>
@@ -2530,36 +2842,56 @@ export const blogPosts: BlogPost[] = [
       <>
         <p>Mock tests are the single best predictor of your real Life in the UK Test result. Here's a 12-question 2026-edition mock to warm up. Time yourself — aim for under 4 minutes — then jump straight to the full 24-question mock.</p>
 
-        <h2>Practice Questions</h2>
+        <h2>Practice Questions &amp; Answers</h2>
         <ol>
-          <li><strong>Q1.</strong> What is Remembrance Day and when is it held?</li>
-          <li><strong>Q2.</strong> What is the most popular sport in the UK?</li>
-          <li><strong>Q3.</strong> Who composed "The Planets" suite?</li>
-          <li><strong>Q4.</strong> Where is the National Eisteddfod held?</li>
-          <li><strong>Q5.</strong> What's the symbol of Northern Ireland?</li>
-          <li><strong>Q6.</strong> Who is the patron saint of Northern Ireland?</li>
-          <li><strong>Q7.</strong> What is St Patrick's Day and when is it?</li>
-          <li><strong>Q8.</strong> What's the highest mountain in Scotland?</li>
-          <li><strong>Q9.</strong> Where is the Houses of Parliament located?</li>
-          <li><strong>Q10.</strong> Who built Stonehenge?</li>
-          <li><strong>Q11.</strong> What's the name of the UK's national flag?</li>
-          <li><strong>Q12.</strong> What language is Welsh derived from?</li>
-        </ol>
-
-        <h2>Answers &amp; Explanations</h2>
-        <ol>
-          <li><strong>A1.</strong> Honours those who died in war, 11 November.</li>
-          <li><strong>A2.</strong> Football.</li>
-          <li><strong>A3.</strong> Gustav Holst.</li>
-          <li><strong>A4.</strong> Wales (rotates between locations).</li>
-          <li><strong>A5.</strong> The shamrock.</li>
-          <li><strong>A6.</strong> St Patrick.</li>
-          <li><strong>A7.</strong> Celebrates Northern Ireland's patron saint, 17 March.</li>
-          <li><strong>A8.</strong> Ben Nevis.</li>
-          <li><strong>A9.</strong> Westminster, London.</li>
-          <li><strong>A10.</strong> Built around 3000–2000 BC; the builders are unknown.</li>
-          <li><strong>A11.</strong> The Union Jack (or Union Flag).</li>
-          <li><strong>A12.</strong> Celtic.</li>
+          <li>
+            <p><strong>Q1.</strong> What is Remembrance Day and when is it held?</p>
+            <p><strong>A1.</strong> Honours those who died in war, 11 November.</p>
+          </li>
+          <li>
+            <p><strong>Q2.</strong> What is the most popular sport in the UK?</p>
+            <p><strong>A2.</strong> Football.</p>
+          </li>
+          <li>
+            <p><strong>Q3.</strong> Who composed "The Planets" suite?</p>
+            <p><strong>A3.</strong> Gustav Holst.</p>
+          </li>
+          <li>
+            <p><strong>Q4.</strong> Where is the National Eisteddfod held?</p>
+            <p><strong>A4.</strong> Wales (rotates between locations).</p>
+          </li>
+          <li>
+            <p><strong>Q5.</strong> What's the symbol of Northern Ireland?</p>
+            <p><strong>A5.</strong> The shamrock.</p>
+          </li>
+          <li>
+            <p><strong>Q6.</strong> Who is the patron saint of Northern Ireland?</p>
+            <p><strong>A6.</strong> St Patrick.</p>
+          </li>
+          <li>
+            <p><strong>Q7.</strong> What is St Patrick's Day and when is it?</p>
+            <p><strong>A7.</strong> Celebrates Northern Ireland's patron saint, 17 March.</p>
+          </li>
+          <li>
+            <p><strong>Q8.</strong> What's the highest mountain in Scotland?</p>
+            <p><strong>A8.</strong> Ben Nevis.</p>
+          </li>
+          <li>
+            <p><strong>Q9.</strong> Where is the Houses of Parliament located?</p>
+            <p><strong>A9.</strong> Westminster, London.</p>
+          </li>
+          <li>
+            <p><strong>Q10.</strong> Who built Stonehenge?</p>
+            <p><strong>A10.</strong> Built around 3000–2000 BC; the builders are unknown.</p>
+          </li>
+          <li>
+            <p><strong>Q11.</strong> What's the name of the UK's national flag?</p>
+            <p><strong>A11.</strong> The Union Jack (or Union Flag).</p>
+          </li>
+          <li>
+            <p><strong>Q12.</strong> What language is Welsh derived from?</p>
+            <p><strong>A12.</strong> Celtic.</p>
+          </li>
         </ol>
 
         <h2>Tips to Pass</h2>
@@ -2610,32 +2942,48 @@ export const blogPosts: BlogPost[] = [
       <>
         <p>After thousands of test results, certain mistakes appear over and over. Below are the 10 traps to avoid, framed as practice questions so you can recognise the patterns at a glance.</p>
 
-        <h2>Practice Questions</h2>
+        <h2>Practice Questions &amp; Answers</h2>
         <ol>
-          <li><strong>Q1.</strong> Why is using outdated study material a problem?</li>
-          <li><strong>Q2.</strong> What's the danger of memorising answers without understanding?</li>
-          <li><strong>Q3.</strong> Why is rushing the test a top failure cause?</li>
-          <li><strong>Q4.</strong> Why is the History chapter a common weak point?</li>
-          <li><strong>Q5.</strong> Why should you never skip the Values & Principles chapter?</li>
-          <li><strong>Q6.</strong> What ID error trips up many candidates?</li>
-          <li><strong>Q7.</strong> What's the typical mistake when interpreting "first past the post"?</li>
-          <li><strong>Q8.</strong> Why do candidates confuse devolved governments?</li>
-          <li><strong>Q9.</strong> Common mistake about the Monarch's role?</li>
-          <li><strong>Q10.</strong> Why ignoring the official handbook is risky?</li>
-        </ol>
-
-        <h2>Answers &amp; Explanations</h2>
-        <ol>
-          <li><strong>A1.</strong> The handbook and questions update; old material misses recent changes.</li>
-          <li><strong>A2.</strong> Wording differs across mocks; understanding beats memorisation.</li>
-          <li><strong>A3.</strong> Most failures come from misreading questions, not lack of knowledge.</li>
-          <li><strong>A4.</strong> There are many dates to learn; without a system they blur together.</li>
-          <li><strong>A5.</strong> Several questions every test come from this chapter.</li>
-          <li><strong>A6.</strong> Bringing only one ID — you need photo ID AND proof of address.</li>
-          <li><strong>A7.</strong> It's a constituency-level system, not national. The party with most MPs governs.</li>
-          <li><strong>A8.</strong> Each devolved nation has different powers; learn them separately.</li>
-          <li><strong>A9.</strong> Believing the Monarch makes laws — they sign them, but Parliament makes them.</li>
-          <li><strong>A10.</strong> Every question comes from it — no other source is reliable.</li>
+          <li>
+            <p><strong>Q1.</strong> Why is using outdated study material a problem?</p>
+            <p><strong>A1.</strong> The handbook and questions update; old material misses recent changes.</p>
+          </li>
+          <li>
+            <p><strong>Q2.</strong> What's the danger of memorising answers without understanding?</p>
+            <p><strong>A2.</strong> Wording differs across mocks; understanding beats memorisation.</p>
+          </li>
+          <li>
+            <p><strong>Q3.</strong> Why is rushing the test a top failure cause?</p>
+            <p><strong>A3.</strong> Most failures come from misreading questions, not lack of knowledge.</p>
+          </li>
+          <li>
+            <p><strong>Q4.</strong> Why is the History chapter a common weak point?</p>
+            <p><strong>A4.</strong> There are many dates to learn; without a system they blur together.</p>
+          </li>
+          <li>
+            <p><strong>Q5.</strong> Why should you never skip the Values & Principles chapter?</p>
+            <p><strong>A5.</strong> Several questions every test come from this chapter.</p>
+          </li>
+          <li>
+            <p><strong>Q6.</strong> What ID error trips up many candidates?</p>
+            <p><strong>A6.</strong> Bringing only one ID — you need photo ID AND proof of address.</p>
+          </li>
+          <li>
+            <p><strong>Q7.</strong> What's the typical mistake when interpreting "first past the post"?</p>
+            <p><strong>A7.</strong> It's a constituency-level system, not national. The party with most MPs governs.</p>
+          </li>
+          <li>
+            <p><strong>Q8.</strong> Why do candidates confuse devolved governments?</p>
+            <p><strong>A8.</strong> Each devolved nation has different powers; learn them separately.</p>
+          </li>
+          <li>
+            <p><strong>Q9.</strong> Common mistake about the Monarch's role?</p>
+            <p><strong>A9.</strong> Believing the Monarch makes laws — they sign them, but Parliament makes them.</p>
+          </li>
+          <li>
+            <p><strong>Q10.</strong> Why ignoring the official handbook is risky?</p>
+            <p><strong>A10.</strong> Every question comes from it — no other source is reliable.</p>
+          </li>
         </ol>
 
         <h2>Tips to Pass</h2>
@@ -2686,36 +3034,56 @@ export const blogPosts: BlogPost[] = [
       <>
         <p>The CSCS Health, Safety & Environment Test is required for nearly every construction site in the UK. It's 50 questions in 45 minutes, with 12 case study questions and 38 knowledge questions. Pass mark is 47/50. Below are 12 practice questions written in the exact CITB style for 2026.</p>
 
-        <h2>Practice Questions</h2>
+        <h2>Practice Questions &amp; Answers</h2>
         <ol>
-          <li><strong>Q1.</strong> What does PPE stand for?</li>
-          <li><strong>Q2.</strong> What is the minimum width for a single-person scaffold platform?</li>
-          <li><strong>Q3.</strong> When should you carry out a daily check on your harness?</li>
-          <li><strong>Q4.</strong> What's the safe lifting weight a fit adult can lift unaided?</li>
-          <li><strong>Q5.</strong> Who has overall responsibility for site safety?</li>
-          <li><strong>Q6.</strong> What does a yellow safety sign indicate?</li>
-          <li><strong>Q7.</strong> When MUST you wear a hi-vis vest?</li>
-          <li><strong>Q8.</strong> What's the recommended action if you discover damaged scaffolding?</li>
-          <li><strong>Q9.</strong> What is COSHH?</li>
-          <li><strong>Q10.</strong> What should you do before using a power tool?</li>
-          <li><strong>Q11.</strong> What's the legal noise exposure limit (daily)?</li>
-          <li><strong>Q12.</strong> What does a blue safety sign indicate?</li>
-        </ol>
-
-        <h2>Answers &amp; Explanations</h2>
-        <ol>
-          <li><strong>A1.</strong> Personal Protective Equipment.</li>
-          <li><strong>A2.</strong> 600 mm.</li>
-          <li><strong>A3.</strong> Before every use.</li>
-          <li><strong>A4.</strong> Around 25 kg, but always assess the load and use mechanical aids when possible.</li>
-          <li><strong>A5.</strong> The Principal Contractor under CDM 2015.</li>
-          <li><strong>A6.</strong> Caution / warning of risk.</li>
-          <li><strong>A7.</strong> Whenever working on or near moving plant or vehicles.</li>
-          <li><strong>A8.</strong> Stop work, isolate the area and report it immediately.</li>
-          <li><strong>A9.</strong> Control of Substances Hazardous to Health.</li>
-          <li><strong>A10.</strong> Carry out a pre-use check and ensure PAT testing is in date.</li>
-          <li><strong>A11.</strong> 85 dB(A) — above this, hearing protection is mandatory.</li>
-          <li><strong>A12.</strong> A mandatory action (e.g. wear gloves).</li>
+          <li>
+            <p><strong>Q1.</strong> What does PPE stand for?</p>
+            <p><strong>A1.</strong> Personal Protective Equipment.</p>
+          </li>
+          <li>
+            <p><strong>Q2.</strong> What is the minimum width for a single-person scaffold platform?</p>
+            <p><strong>A2.</strong> 600 mm.</p>
+          </li>
+          <li>
+            <p><strong>Q3.</strong> When should you carry out a daily check on your harness?</p>
+            <p><strong>A3.</strong> Before every use.</p>
+          </li>
+          <li>
+            <p><strong>Q4.</strong> What's the safe lifting weight a fit adult can lift unaided?</p>
+            <p><strong>A4.</strong> Around 25 kg, but always assess the load and use mechanical aids when possible.</p>
+          </li>
+          <li>
+            <p><strong>Q5.</strong> Who has overall responsibility for site safety?</p>
+            <p><strong>A5.</strong> The Principal Contractor under CDM 2015.</p>
+          </li>
+          <li>
+            <p><strong>Q6.</strong> What does a yellow safety sign indicate?</p>
+            <p><strong>A6.</strong> Caution / warning of risk.</p>
+          </li>
+          <li>
+            <p><strong>Q7.</strong> When MUST you wear a hi-vis vest?</p>
+            <p><strong>A7.</strong> Whenever working on or near moving plant or vehicles.</p>
+          </li>
+          <li>
+            <p><strong>Q8.</strong> What's the recommended action if you discover damaged scaffolding?</p>
+            <p><strong>A8.</strong> Stop work, isolate the area and report it immediately.</p>
+          </li>
+          <li>
+            <p><strong>Q9.</strong> What is COSHH?</p>
+            <p><strong>A9.</strong> Control of Substances Hazardous to Health.</p>
+          </li>
+          <li>
+            <p><strong>Q10.</strong> What should you do before using a power tool?</p>
+            <p><strong>A10.</strong> Carry out a pre-use check and ensure PAT testing is in date.</p>
+          </li>
+          <li>
+            <p><strong>Q11.</strong> What's the legal noise exposure limit (daily)?</p>
+            <p><strong>A11.</strong> 85 dB(A) — above this, hearing protection is mandatory.</p>
+          </li>
+          <li>
+            <p><strong>Q12.</strong> What does a blue safety sign indicate?</p>
+            <p><strong>A12.</strong> A mandatory action (e.g. wear gloves).</p>
+          </li>
         </ol>
 
         <h2>Tips to Pass</h2>
@@ -2766,32 +3134,48 @@ export const blogPosts: BlogPost[] = [
       <>
         <p>If you're booking your CSCS Health, Safety & Environment Test soon, run multiple mocks first. The pass mark is high (47/50) and the questions span topics most candidates haven't touched since induction. Below are 10 sample questions to warm up — then click for the full mock.</p>
 
-        <h2>Practice Questions</h2>
+        <h2>Practice Questions &amp; Answers</h2>
         <ol>
-          <li><strong>Q1.</strong> What's the first action if a colleague suffers an electric shock?</li>
-          <li><strong>Q2.</strong> What's the minimum age to operate construction plant?</li>
-          <li><strong>Q3.</strong> When working at height, the priority should be to…</li>
-          <li><strong>Q4.</strong> Where should fire extinguishers be located on site?</li>
-          <li><strong>Q5.</strong> What does RIDDOR cover?</li>
-          <li><strong>Q6.</strong> What's a permit-to-work?</li>
-          <li><strong>Q7.</strong> What action when finding asbestos suspected material?</li>
-          <li><strong>Q8.</strong> How often should fire alarms be tested on site?</li>
-          <li><strong>Q9.</strong> Who carries out a site induction?</li>
-          <li><strong>Q10.</strong> What does a green safety sign indicate?</li>
-        </ol>
-
-        <h2>Answers &amp; Explanations</h2>
-        <ol>
-          <li><strong>A1.</strong> Switch off the power if safe to do so, then call for medical help.</li>
-          <li><strong>A2.</strong> 18 (16 with formal training in some cases).</li>
-          <li><strong>A3.</strong> Avoid working at height where possible — use elimination first.</li>
-          <li><strong>A4.</strong> On every escape route and at fire points.</li>
-          <li><strong>A5.</strong> Reporting of Injuries, Diseases and Dangerous Occurrences Regulations.</li>
-          <li><strong>A6.</strong> A formal authorisation to undertake high-risk work.</li>
-          <li><strong>A7.</strong> Stop work, do not disturb, report to your supervisor.</li>
-          <li><strong>A8.</strong> Weekly.</li>
-          <li><strong>A9.</strong> The site supervisor or health & safety officer.</li>
-          <li><strong>A10.</strong> Safe condition (e.g. emergency exit).</li>
+          <li>
+            <p><strong>Q1.</strong> What's the first action if a colleague suffers an electric shock?</p>
+            <p><strong>A1.</strong> Switch off the power if safe to do so, then call for medical help.</p>
+          </li>
+          <li>
+            <p><strong>Q2.</strong> What's the minimum age to operate construction plant?</p>
+            <p><strong>A2.</strong> 18 (16 with formal training in some cases).</p>
+          </li>
+          <li>
+            <p><strong>Q3.</strong> When working at height, the priority should be to…</p>
+            <p><strong>A3.</strong> Avoid working at height where possible — use elimination first.</p>
+          </li>
+          <li>
+            <p><strong>Q4.</strong> Where should fire extinguishers be located on site?</p>
+            <p><strong>A4.</strong> On every escape route and at fire points.</p>
+          </li>
+          <li>
+            <p><strong>Q5.</strong> What does RIDDOR cover?</p>
+            <p><strong>A5.</strong> Reporting of Injuries, Diseases and Dangerous Occurrences Regulations.</p>
+          </li>
+          <li>
+            <p><strong>Q6.</strong> What's a permit-to-work?</p>
+            <p><strong>A6.</strong> A formal authorisation to undertake high-risk work.</p>
+          </li>
+          <li>
+            <p><strong>Q7.</strong> What action when finding asbestos suspected material?</p>
+            <p><strong>A7.</strong> Stop work, do not disturb, report to your supervisor.</p>
+          </li>
+          <li>
+            <p><strong>Q8.</strong> How often should fire alarms be tested on site?</p>
+            <p><strong>A8.</strong> Weekly.</p>
+          </li>
+          <li>
+            <p><strong>Q9.</strong> Who carries out a site induction?</p>
+            <p><strong>A9.</strong> The site supervisor or health & safety officer.</p>
+          </li>
+          <li>
+            <p><strong>Q10.</strong> What does a green safety sign indicate?</p>
+            <p><strong>A10.</strong> Safe condition (e.g. emergency exit).</p>
+          </li>
         </ol>
 
         <h2>Tips to Pass</h2>
@@ -2842,32 +3226,48 @@ export const blogPosts: BlogPost[] = [
       <>
         <p>The CSCS card is the gateway to working on a UK construction site, and the Health, Safety & Environment Test is the gateway to the card. Here's the complete plan: format, pass mark, booking, what to bring, the topics that come up most, and 10 warm-up questions.</p>
 
-        <h2>Practice Questions</h2>
+        <h2>Practice Questions &amp; Answers</h2>
         <ol>
-          <li><strong>Q1.</strong> How is the test structured?</li>
-          <li><strong>Q2.</strong> What's the pass mark?</li>
-          <li><strong>Q3.</strong> Cost of the test in 2026?</li>
-          <li><strong>Q4.</strong> Where do you book?</li>
-          <li><strong>Q5.</strong> What ID do you need?</li>
-          <li><strong>Q6.</strong> How long does the test take?</li>
-          <li><strong>Q7.</strong> Can you re-take if you fail?</li>
-          <li><strong>Q8.</strong> What's the most common failure cause?</li>
-          <li><strong>Q9.</strong> How long does your card last?</li>
-          <li><strong>Q10.</strong> Difference between Operative and Specialist tests?</li>
-        </ol>
-
-        <h2>Answers &amp; Explanations</h2>
-        <ol>
-          <li><strong>A1.</strong> 50 questions in 45 minutes — 12 case study + 38 knowledge.</li>
-          <li><strong>A2.</strong> 47 out of 50.</li>
-          <li><strong>A3.</strong> £22.50.</li>
-          <li><strong>A4.</strong> Pearson VUE test centres.</li>
-          <li><strong>A5.</strong> Photo ID and a second proof of identity.</li>
-          <li><strong>A6.</strong> About an hour including check-in.</li>
-          <li><strong>A7.</strong> Yes — minimum 24-hour wait.</li>
-          <li><strong>A8.</strong> Underestimating it; treat it like a real exam.</li>
-          <li><strong>A9.</strong> Most cards are valid for 5 years.</li>
-          <li><strong>A10.</strong> Operative covers core trades; Specialist covers specific roles (e.g. plumbing, demolition).</li>
+          <li>
+            <p><strong>Q1.</strong> How is the test structured?</p>
+            <p><strong>A1.</strong> 50 questions in 45 minutes — 12 case study + 38 knowledge.</p>
+          </li>
+          <li>
+            <p><strong>Q2.</strong> What's the pass mark?</p>
+            <p><strong>A2.</strong> 47 out of 50.</p>
+          </li>
+          <li>
+            <p><strong>Q3.</strong> Cost of the test in 2026?</p>
+            <p><strong>A3.</strong> £22.50.</p>
+          </li>
+          <li>
+            <p><strong>Q4.</strong> Where do you book?</p>
+            <p><strong>A4.</strong> Pearson VUE test centres.</p>
+          </li>
+          <li>
+            <p><strong>Q5.</strong> What ID do you need?</p>
+            <p><strong>A5.</strong> Photo ID and a second proof of identity.</p>
+          </li>
+          <li>
+            <p><strong>Q6.</strong> How long does the test take?</p>
+            <p><strong>A6.</strong> About an hour including check-in.</p>
+          </li>
+          <li>
+            <p><strong>Q7.</strong> Can you re-take if you fail?</p>
+            <p><strong>A7.</strong> Yes — minimum 24-hour wait.</p>
+          </li>
+          <li>
+            <p><strong>Q8.</strong> What's the most common failure cause?</p>
+            <p><strong>A8.</strong> Underestimating it; treat it like a real exam.</p>
+          </li>
+          <li>
+            <p><strong>Q9.</strong> How long does your card last?</p>
+            <p><strong>A9.</strong> Most cards are valid for 5 years.</p>
+          </li>
+          <li>
+            <p><strong>Q10.</strong> Difference between Operative and Specialist tests?</p>
+            <p><strong>A10.</strong> Operative covers core trades; Specialist covers specific roles (e.g. plumbing, demolition).</p>
+          </li>
         </ol>
 
         <h2>Tips to Pass</h2>
@@ -2918,36 +3318,56 @@ export const blogPosts: BlogPost[] = [
       <>
         <p>Some CSCS questions appear on virtually every sitting because they cover the most important on-site safety principles. Below are 12 of the most-repeated questions with full worked answers.</p>
 
-        <h2>Practice Questions</h2>
+        <h2>Practice Questions &amp; Answers</h2>
         <ol>
-          <li><strong>Q1.</strong> What's the safe minimum distance from overhead power lines for plant?</li>
-          <li><strong>Q2.</strong> What does the term "competent person" mean?</li>
-          <li><strong>Q3.</strong> When is a method statement required?</li>
-          <li><strong>Q4.</strong> What's the maximum length of working day under WTR?</li>
-          <li><strong>Q5.</strong> What's the legal action for a slip hazard you discover?</li>
-          <li><strong>Q6.</strong> What's the role of a banksman?</li>
-          <li><strong>Q7.</strong> How often should a HAVS assessment be done?</li>
-          <li><strong>Q8.</strong> What's the safe distance to position a fire extinguisher from a fuel store?</li>
-          <li><strong>Q9.</strong> What's the rule about lone working in confined spaces?</li>
-          <li><strong>Q10.</strong> What does a red safety sign indicate?</li>
-          <li><strong>Q11.</strong> What is an emergency stop button used for?</li>
-          <li><strong>Q12.</strong> What's the guideline for taking breaks under HSE?</li>
-        </ol>
-
-        <h2>Answers &amp; Explanations</h2>
-        <ol>
-          <li><strong>A1.</strong> Defined by the cable's voltage; check the permit.</li>
-          <li><strong>A2.</strong> Someone with the training, knowledge and experience to do a task safely.</li>
-          <li><strong>A3.</strong> Whenever a task carries significant risk.</li>
-          <li><strong>A4.</strong> 48 hours/week average over 17 weeks (workers can opt out).</li>
-          <li><strong>A5.</strong> Cordon, sign and report immediately.</li>
-          <li><strong>A6.</strong> Guides plant operators safely around personnel and structures.</li>
-          <li><strong>A7.</strong> Annually as a minimum, more often if symptoms appear.</li>
-          <li><strong>A8.</strong> At least 6 metres.</li>
-          <li><strong>A9.</strong> Generally not allowed; if essential, with continuous communication and a permit.</li>
-          <li><strong>A10.</strong> Prohibition (do not).</li>
-          <li><strong>A11.</strong> Stop machinery in an emergency only.</li>
-          <li><strong>A12.</strong> 20-min rest after 6 hours' work.</li>
+          <li>
+            <p><strong>Q1.</strong> What's the safe minimum distance from overhead power lines for plant?</p>
+            <p><strong>A1.</strong> Defined by the cable's voltage; check the permit.</p>
+          </li>
+          <li>
+            <p><strong>Q2.</strong> What does the term "competent person" mean?</p>
+            <p><strong>A2.</strong> Someone with the training, knowledge and experience to do a task safely.</p>
+          </li>
+          <li>
+            <p><strong>Q3.</strong> When is a method statement required?</p>
+            <p><strong>A3.</strong> Whenever a task carries significant risk.</p>
+          </li>
+          <li>
+            <p><strong>Q4.</strong> What's the maximum length of working day under WTR?</p>
+            <p><strong>A4.</strong> 48 hours/week average over 17 weeks (workers can opt out).</p>
+          </li>
+          <li>
+            <p><strong>Q5.</strong> What's the legal action for a slip hazard you discover?</p>
+            <p><strong>A5.</strong> Cordon, sign and report immediately.</p>
+          </li>
+          <li>
+            <p><strong>Q6.</strong> What's the role of a banksman?</p>
+            <p><strong>A6.</strong> Guides plant operators safely around personnel and structures.</p>
+          </li>
+          <li>
+            <p><strong>Q7.</strong> How often should a HAVS assessment be done?</p>
+            <p><strong>A7.</strong> Annually as a minimum, more often if symptoms appear.</p>
+          </li>
+          <li>
+            <p><strong>Q8.</strong> What's the safe distance to position a fire extinguisher from a fuel store?</p>
+            <p><strong>A8.</strong> At least 6 metres.</p>
+          </li>
+          <li>
+            <p><strong>Q9.</strong> What's the rule about lone working in confined spaces?</p>
+            <p><strong>A9.</strong> Generally not allowed; if essential, with continuous communication and a permit.</p>
+          </li>
+          <li>
+            <p><strong>Q10.</strong> What does a red safety sign indicate?</p>
+            <p><strong>A10.</strong> Prohibition (do not).</p>
+          </li>
+          <li>
+            <p><strong>Q11.</strong> What is an emergency stop button used for?</p>
+            <p><strong>A11.</strong> Stop machinery in an emergency only.</p>
+          </li>
+          <li>
+            <p><strong>Q12.</strong> What's the guideline for taking breaks under HSE?</p>
+            <p><strong>A12.</strong> 20-min rest after 6 hours' work.</p>
+          </li>
         </ol>
 
         <h2>Tips to Pass</h2>
@@ -2998,36 +3418,56 @@ export const blogPosts: BlogPost[] = [
       <>
         <p>Whether you're applying for a Green Labourer card or upgrading to Gold Skilled, you'll need to pass a CSCS Health, Safety & Environment Test. Below are 12 practice questions in real exam format, covering high-risk activities, environmental responsibilities and behavioural safety.</p>
 
-        <h2>Practice Questions</h2>
+        <h2>Practice Questions &amp; Answers</h2>
         <ol>
-          <li><strong>Q1.</strong> What is HAVS?</li>
-          <li><strong>Q2.</strong> What is the recommended max single-person lift?</li>
-          <li><strong>Q3.</strong> When working in a confined space, what is the priority?</li>
-          <li><strong>Q4.</strong> Who must report a near miss?</li>
-          <li><strong>Q5.</strong> What does a hard hat protect against?</li>
-          <li><strong>Q6.</strong> When should ear defenders be worn?</li>
-          <li><strong>Q7.</strong> What is a toolbox talk?</li>
-          <li><strong>Q8.</strong> What's the safe approach to manual handling of awkward loads?</li>
-          <li><strong>Q9.</strong> How should waste be segregated on site?</li>
-          <li><strong>Q10.</strong> What's the action for an unmarked exposed cable?</li>
-          <li><strong>Q11.</strong> When should a risk assessment be reviewed?</li>
-          <li><strong>Q12.</strong> What's the minimum age to use abrasive wheels?</li>
-        </ol>
-
-        <h2>Answers &amp; Explanations</h2>
-        <ol>
-          <li><strong>A1.</strong> Hand-Arm Vibration Syndrome — caused by prolonged use of vibrating tools.</li>
-          <li><strong>A2.</strong> Around 25 kg (with assessment).</li>
-          <li><strong>A3.</strong> Eliminate the need to enter; if entry essential, use a permit-to-work and rescue plan.</li>
-          <li><strong>A4.</strong> Anyone — "see something, say something".</li>
-          <li><strong>A5.</strong> Falling objects and impact injuries.</li>
-          <li><strong>A6.</strong> When noise reaches 85 dB(A) or above.</li>
-          <li><strong>A7.</strong> A short safety briefing before starting work.</li>
-          <li><strong>A8.</strong> Use mechanical aids and team lifts; never lift alone if the load is awkward.</li>
-          <li><strong>A9.</strong> By type — wood, metal, hazardous, general — using clearly labelled bins.</li>
-          <li><strong>A10.</strong> Stop work, isolate area, call electrician/supervisor.</li>
-          <li><strong>A11.</strong> Whenever conditions or methods change.</li>
-          <li><strong>A12.</strong> 18, with formal training.</li>
+          <li>
+            <p><strong>Q1.</strong> What is HAVS?</p>
+            <p><strong>A1.</strong> Hand-Arm Vibration Syndrome — caused by prolonged use of vibrating tools.</p>
+          </li>
+          <li>
+            <p><strong>Q2.</strong> What is the recommended max single-person lift?</p>
+            <p><strong>A2.</strong> Around 25 kg (with assessment).</p>
+          </li>
+          <li>
+            <p><strong>Q3.</strong> When working in a confined space, what is the priority?</p>
+            <p><strong>A3.</strong> Eliminate the need to enter; if entry essential, use a permit-to-work and rescue plan.</p>
+          </li>
+          <li>
+            <p><strong>Q4.</strong> Who must report a near miss?</p>
+            <p><strong>A4.</strong> Anyone — "see something, say something".</p>
+          </li>
+          <li>
+            <p><strong>Q5.</strong> What does a hard hat protect against?</p>
+            <p><strong>A5.</strong> Falling objects and impact injuries.</p>
+          </li>
+          <li>
+            <p><strong>Q6.</strong> When should ear defenders be worn?</p>
+            <p><strong>A6.</strong> When noise reaches 85 dB(A) or above.</p>
+          </li>
+          <li>
+            <p><strong>Q7.</strong> What is a toolbox talk?</p>
+            <p><strong>A7.</strong> A short safety briefing before starting work.</p>
+          </li>
+          <li>
+            <p><strong>Q8.</strong> What's the safe approach to manual handling of awkward loads?</p>
+            <p><strong>A8.</strong> Use mechanical aids and team lifts; never lift alone if the load is awkward.</p>
+          </li>
+          <li>
+            <p><strong>Q9.</strong> How should waste be segregated on site?</p>
+            <p><strong>A9.</strong> By type — wood, metal, hazardous, general — using clearly labelled bins.</p>
+          </li>
+          <li>
+            <p><strong>Q10.</strong> What's the action for an unmarked exposed cable?</p>
+            <p><strong>A10.</strong> Stop work, isolate area, call electrician/supervisor.</p>
+          </li>
+          <li>
+            <p><strong>Q11.</strong> When should a risk assessment be reviewed?</p>
+            <p><strong>A11.</strong> Whenever conditions or methods change.</p>
+          </li>
+          <li>
+            <p><strong>Q12.</strong> What's the minimum age to use abrasive wheels?</p>
+            <p><strong>A12.</strong> 18, with formal training.</p>
+          </li>
         </ol>
 
         <h2>Tips to Pass</h2>
@@ -3078,32 +3518,48 @@ export const blogPosts: BlogPost[] = [
       <>
         <p>NHS numeracy tests appear in nursing recruitment, healthcare apprenticeships and many band 2–6 NHS roles. They focus on practical maths: drug calculations, fluid balance, percentages, ratios and conversions. Below are 10 worked examples in real NHS format.</p>
 
-        <h2>Practice Questions</h2>
+        <h2>Practice Questions &amp; Answers</h2>
         <ol>
-          <li><strong>Q1.</strong> Convert 1.5 litres into millilitres.</li>
-          <li><strong>Q2.</strong> A patient needs 250 mg of a drug. Tablets are 125 mg. How many do you give?</li>
-          <li><strong>Q3.</strong> An infusion runs at 50 ml/hr. How much in 4 hours?</li>
-          <li><strong>Q4.</strong> Convert 0.25 mg to micrograms.</li>
-          <li><strong>Q5.</strong> What's 30% of 240?</li>
-          <li><strong>Q6.</strong> A 500 ml bag is to run over 8 hours. What's the rate per hour?</li>
-          <li><strong>Q7.</strong> Express 3:5 as a percentage.</li>
-          <li><strong>Q8.</strong> How many millilitres in 0.05 litres?</li>
-          <li><strong>Q9.</strong> If a syringe contains 10 mg in 5 ml, what volume gives 4 mg?</li>
-          <li><strong>Q10.</strong> Convert 750 mg into grams.</li>
-        </ol>
-
-        <h2>Answers &amp; Explanations</h2>
-        <ol>
-          <li><strong>A1.</strong> 1500 ml.</li>
-          <li><strong>A2.</strong> 2 tablets.</li>
-          <li><strong>A3.</strong> 200 ml.</li>
-          <li><strong>A4.</strong> 250 micrograms.</li>
-          <li><strong>A5.</strong> 72.</li>
-          <li><strong>A6.</strong> 62.5 ml/hr.</li>
-          <li><strong>A7.</strong> 37.5%.</li>
-          <li><strong>A8.</strong> 50 ml.</li>
-          <li><strong>A9.</strong> 2 ml.</li>
-          <li><strong>A10.</strong> 0.75 g.</li>
+          <li>
+            <p><strong>Q1.</strong> Convert 1.5 litres into millilitres.</p>
+            <p><strong>A1.</strong> 1500 ml.</p>
+          </li>
+          <li>
+            <p><strong>Q2.</strong> A patient needs 250 mg of a drug. Tablets are 125 mg. How many do you give?</p>
+            <p><strong>A2.</strong> 2 tablets.</p>
+          </li>
+          <li>
+            <p><strong>Q3.</strong> An infusion runs at 50 ml/hr. How much in 4 hours?</p>
+            <p><strong>A3.</strong> 200 ml.</p>
+          </li>
+          <li>
+            <p><strong>Q4.</strong> Convert 0.25 mg to micrograms.</p>
+            <p><strong>A4.</strong> 250 micrograms.</p>
+          </li>
+          <li>
+            <p><strong>Q5.</strong> What's 30% of 240?</p>
+            <p><strong>A5.</strong> 72.</p>
+          </li>
+          <li>
+            <p><strong>Q6.</strong> A 500 ml bag is to run over 8 hours. What's the rate per hour?</p>
+            <p><strong>A6.</strong> 62.5 ml/hr.</p>
+          </li>
+          <li>
+            <p><strong>Q7.</strong> Express 3:5 as a percentage.</p>
+            <p><strong>A7.</strong> 37.5%.</p>
+          </li>
+          <li>
+            <p><strong>Q8.</strong> How many millilitres in 0.05 litres?</p>
+            <p><strong>A8.</strong> 50 ml.</p>
+          </li>
+          <li>
+            <p><strong>Q9.</strong> If a syringe contains 10 mg in 5 ml, what volume gives 4 mg?</p>
+            <p><strong>A9.</strong> 2 ml.</p>
+          </li>
+          <li>
+            <p><strong>Q10.</strong> Convert 750 mg into grams.</p>
+            <p><strong>A10.</strong> 0.75 g.</p>
+          </li>
         </ol>
 
         <h2>Tips to Pass</h2>
@@ -3154,32 +3610,48 @@ export const blogPosts: BlogPost[] = [
       <>
         <p>NHS interviews are usually values-based, mapped to the NHS Constitution: respect, dignity, commitment to quality, compassion, working together and improving lives. The best answers use the STAR framework (Situation, Task, Action, Result). Below are 10 of the most common NHS interview questions with strong-answer pointers.</p>
 
-        <h2>Practice Questions</h2>
+        <h2>Practice Questions &amp; Answers</h2>
         <ol>
-          <li><strong>Q1.</strong> Why do you want to work for the NHS?</li>
-          <li><strong>Q2.</strong> Tell me about a time you handled a difficult patient or customer.</li>
-          <li><strong>Q3.</strong> How do you cope with stress?</li>
-          <li><strong>Q4.</strong> Give an example of teamwork in a healthcare setting.</li>
-          <li><strong>Q5.</strong> How would you handle a colleague who isn't pulling their weight?</li>
-          <li><strong>Q6.</strong> Describe a time you went above and beyond for someone.</li>
-          <li><strong>Q7.</strong> How do you stay updated in your field?</li>
-          <li><strong>Q8.</strong> Tell me about a time you made a mistake.</li>
-          <li><strong>Q9.</strong> How would you respond to a complaint?</li>
-          <li><strong>Q10.</strong> Why this trust specifically?</li>
-        </ol>
-
-        <h2>Answers &amp; Explanations</h2>
-        <ol>
-          <li><strong>A1.</strong> Tie to NHS values, name a personal driver, mention a specific service area.</li>
-          <li><strong>A2.</strong> Use STAR — focus on the calm, respectful Action and a positive Result.</li>
-          <li><strong>A3.</strong> Show insight: brief, specific coping strategies + when to ask for help.</li>
-          <li><strong>A4.</strong> Pick a real example showing communication, role clarity and outcome.</li>
-          <li><strong>A5.</strong> Show emotional intelligence — talk first, escalate only if needed.</li>
-          <li><strong>A6.</strong> Make it patient-focused, not heroic.</li>
-          <li><strong>A7.</strong> Mention CPD, nice.org.uk, journals or professional networks.</li>
-          <li><strong>A8.</strong> Be honest, focus on what you learned and changed.</li>
-          <li><strong>A9.</strong> Use the Trust's complaint policy framework: listen, apologise, act, learn.</li>
-          <li><strong>A10.</strong> Reference its values, services, recent CQC report, or strategic priorities.</li>
+          <li>
+            <p><strong>Q1.</strong> Why do you want to work for the NHS?</p>
+            <p><strong>A1.</strong> Tie to NHS values, name a personal driver, mention a specific service area.</p>
+          </li>
+          <li>
+            <p><strong>Q2.</strong> Tell me about a time you handled a difficult patient or customer.</p>
+            <p><strong>A2.</strong> Use STAR — focus on the calm, respectful Action and a positive Result.</p>
+          </li>
+          <li>
+            <p><strong>Q3.</strong> How do you cope with stress?</p>
+            <p><strong>A3.</strong> Show insight: brief, specific coping strategies + when to ask for help.</p>
+          </li>
+          <li>
+            <p><strong>Q4.</strong> Give an example of teamwork in a healthcare setting.</p>
+            <p><strong>A4.</strong> Pick a real example showing communication, role clarity and outcome.</p>
+          </li>
+          <li>
+            <p><strong>Q5.</strong> How would you handle a colleague who isn't pulling their weight?</p>
+            <p><strong>A5.</strong> Show emotional intelligence — talk first, escalate only if needed.</p>
+          </li>
+          <li>
+            <p><strong>Q6.</strong> Describe a time you went above and beyond for someone.</p>
+            <p><strong>A6.</strong> Make it patient-focused, not heroic.</p>
+          </li>
+          <li>
+            <p><strong>Q7.</strong> How do you stay updated in your field?</p>
+            <p><strong>A7.</strong> Mention CPD, nice.org.uk, journals or professional networks.</p>
+          </li>
+          <li>
+            <p><strong>Q8.</strong> Tell me about a time you made a mistake.</p>
+            <p><strong>A8.</strong> Be honest, focus on what you learned and changed.</p>
+          </li>
+          <li>
+            <p><strong>Q9.</strong> How would you respond to a complaint?</p>
+            <p><strong>A9.</strong> Use the Trust's complaint policy framework: listen, apologise, act, learn.</p>
+          </li>
+          <li>
+            <p><strong>Q10.</strong> Why this trust specifically?</p>
+            <p><strong>A10.</strong> Reference its values, services, recent CQC report, or strategic priorities.</p>
+          </li>
         </ol>
 
         <h2>Tips to Pass</h2>
@@ -3230,36 +3702,56 @@ export const blogPosts: BlogPost[] = [
       <>
         <p>NHS literacy tests assess your ability to read, understand and respond to written information — vital for accurate notes, handovers and patient safety. Below are 12 practice items spanning comprehension, spelling and grammar.</p>
 
-        <h2>Practice Questions</h2>
+        <h2>Practice Questions &amp; Answers</h2>
         <ol>
-          <li><strong>Q1.</strong> Choose the correctly spelled word: a) recieve b) receive c) recive</li>
-          <li><strong>Q2.</strong> Which is the correct sentence? a) The patient have arrived. b) The patient has arrived.</li>
-          <li><strong>Q3.</strong> Pick the correct synonym for "frequent": a) rare b) often c) sudden</li>
-          <li><strong>Q4.</strong> Choose the correct word: "The medication had no … on the patient." a) affect b) effect</li>
-          <li><strong>Q5.</strong> Which word is misspelled? "medecine, history, examine"</li>
-          <li><strong>Q6.</strong> Which is plural? a) datum b) data c) dattas</li>
-          <li><strong>Q7.</strong> Identify the verb: "The nurse documented the observations."</li>
-          <li><strong>Q8.</strong> Choose the correct: a) less patients b) fewer patients</li>
-          <li><strong>Q9.</strong> Which sentence is grammatically correct? a) Me and Sarah completed it. b) Sarah and I completed it.</li>
-          <li><strong>Q10.</strong> Choose the antonym of "acute": a) chronic b) intense c) urgent</li>
-          <li><strong>Q11.</strong> Pick the correct apostrophe use: a) the patients records b) the patient's records</li>
-          <li><strong>Q12.</strong> Choose the correctly punctuated: a) Stop! He's allergic. b) Stop, he's allergic.</li>
-        </ol>
-
-        <h2>Answers &amp; Explanations</h2>
-        <ol>
-          <li><strong>A1.</strong> b) receive.</li>
-          <li><strong>A2.</strong> b) The patient has arrived.</li>
-          <li><strong>A3.</strong> b) often.</li>
-          <li><strong>A4.</strong> b) effect (a noun here).</li>
-          <li><strong>A5.</strong> "medecine" — should be "medicine".</li>
-          <li><strong>A6.</strong> b) data.</li>
-          <li><strong>A7.</strong> documented.</li>
-          <li><strong>A8.</strong> b) fewer patients (countable nouns use "fewer").</li>
-          <li><strong>A9.</strong> b) Sarah and I completed it.</li>
-          <li><strong>A10.</strong> a) chronic.</li>
-          <li><strong>A11.</strong> b) the patient's records.</li>
-          <li><strong>A12.</strong> a) Stop! He's allergic.</li>
+          <li>
+            <p><strong>Q1.</strong> Choose the correctly spelled word: a) recieve b) receive c) recive</p>
+            <p><strong>A1.</strong> b) receive.</p>
+          </li>
+          <li>
+            <p><strong>Q2.</strong> Which is the correct sentence? a) The patient have arrived. b) The patient has arrived.</p>
+            <p><strong>A2.</strong> b) The patient has arrived.</p>
+          </li>
+          <li>
+            <p><strong>Q3.</strong> Pick the correct synonym for "frequent": a) rare b) often c) sudden</p>
+            <p><strong>A3.</strong> b) often.</p>
+          </li>
+          <li>
+            <p><strong>Q4.</strong> Choose the correct word: "The medication had no … on the patient." a) affect b) effect</p>
+            <p><strong>A4.</strong> b) effect (a noun here).</p>
+          </li>
+          <li>
+            <p><strong>Q5.</strong> Which word is misspelled? "medecine, history, examine"</p>
+            <p><strong>A5.</strong> "medecine" — should be "medicine".</p>
+          </li>
+          <li>
+            <p><strong>Q6.</strong> Which is plural? a) datum b) data c) dattas</p>
+            <p><strong>A6.</strong> b) data.</p>
+          </li>
+          <li>
+            <p><strong>Q7.</strong> Identify the verb: "The nurse documented the observations."</p>
+            <p><strong>A7.</strong> documented.</p>
+          </li>
+          <li>
+            <p><strong>Q8.</strong> Choose the correct: a) less patients b) fewer patients</p>
+            <p><strong>A8.</strong> b) fewer patients (countable nouns use "fewer").</p>
+          </li>
+          <li>
+            <p><strong>Q9.</strong> Which sentence is grammatically correct? a) Me and Sarah completed it. b) Sarah and I completed it.</p>
+            <p><strong>A9.</strong> b) Sarah and I completed it.</p>
+          </li>
+          <li>
+            <p><strong>Q10.</strong> Choose the antonym of "acute": a) chronic b) intense c) urgent</p>
+            <p><strong>A10.</strong> a) chronic.</p>
+          </li>
+          <li>
+            <p><strong>Q11.</strong> Pick the correct apostrophe use: a) the patients records b) the patient's records</p>
+            <p><strong>A11.</strong> b) the patient's records.</p>
+          </li>
+          <li>
+            <p><strong>Q12.</strong> Choose the correctly punctuated: a) Stop! He's allergic. b) Stop, he's allergic.</p>
+            <p><strong>A12.</strong> a) Stop! He's allergic.</p>
+          </li>
         </ol>
 
         <h2>Tips to Pass</h2>
@@ -3310,32 +3802,48 @@ export const blogPosts: BlogPost[] = [
       <>
         <p>The IELTS Listening test is 30 minutes (plus 10 minutes transfer time on paper IELTS) with 40 questions across 4 sections that get progressively harder. Below are 10 sample-style questions modelled on each section, with answer pointers and the most common traps.</p>
 
-        <h2>Practice Questions</h2>
+        <h2>Practice Questions &amp; Answers</h2>
         <ol>
-          <li><strong>Q1.</strong> Section 1 typically involves a conversation about: a) academic life b) everyday transactions c) lectures</li>
-          <li><strong>Q2.</strong> Section 4 typically involves: a) phone enquiry b) academic monologue c) social chat</li>
-          <li><strong>Q3.</strong> If asked for "no more than two words and/or a number", what's the limit?</li>
-          <li><strong>Q4.</strong> If the speaker says "twelve fifteen" — what time is it?</li>
-          <li><strong>Q5.</strong> Tip: should you fill answers as you hear them or wait?</li>
-          <li><strong>Q6.</strong> What's a common spelling pitfall?</li>
-          <li><strong>Q7.</strong> If you miss a question, what should you do?</li>
-          <li><strong>Q8.</strong> How is your final score reported?</li>
-          <li><strong>Q9.</strong> Can you go back to previous sections?</li>
-          <li><strong>Q10.</strong> How long do you get for transfer (paper IELTS)?</li>
-        </ol>
-
-        <h2>Answers &amp; Explanations</h2>
-        <ol>
-          <li><strong>A1.</strong> b) everyday transactions.</li>
-          <li><strong>A2.</strong> b) academic monologue.</li>
-          <li><strong>A3.</strong> Two words and a number maximum.</li>
-          <li><strong>A4.</strong> 12:15 (quarter past twelve).</li>
-          <li><strong>A5.</strong> Fill as you hear them — answers don't repeat.</li>
-          <li><strong>A6.</strong> British vs American spelling — IELTS accepts both, but be consistent.</li>
-          <li><strong>A7.</strong> Skip and move on; never let one question break your focus.</li>
-          <li><strong>A8.</strong> On a 0–9 band scale, in 0.5 increments.</li>
-          <li><strong>A9.</strong> No — once a section ends, it's gone.</li>
-          <li><strong>A10.</strong> 10 minutes.</li>
+          <li>
+            <p><strong>Q1.</strong> Section 1 typically involves a conversation about: a) academic life b) everyday transactions c) lectures</p>
+            <p><strong>A1.</strong> b) everyday transactions.</p>
+          </li>
+          <li>
+            <p><strong>Q2.</strong> Section 4 typically involves: a) phone enquiry b) academic monologue c) social chat</p>
+            <p><strong>A2.</strong> b) academic monologue.</p>
+          </li>
+          <li>
+            <p><strong>Q3.</strong> If asked for "no more than two words and/or a number", what's the limit?</p>
+            <p><strong>A3.</strong> Two words and a number maximum.</p>
+          </li>
+          <li>
+            <p><strong>Q4.</strong> If the speaker says "twelve fifteen" — what time is it?</p>
+            <p><strong>A4.</strong> 12:15 (quarter past twelve).</p>
+          </li>
+          <li>
+            <p><strong>Q5.</strong> Tip: should you fill answers as you hear them or wait?</p>
+            <p><strong>A5.</strong> Fill as you hear them — answers don't repeat.</p>
+          </li>
+          <li>
+            <p><strong>Q6.</strong> What's a common spelling pitfall?</p>
+            <p><strong>A6.</strong> British vs American spelling — IELTS accepts both, but be consistent.</p>
+          </li>
+          <li>
+            <p><strong>Q7.</strong> If you miss a question, what should you do?</p>
+            <p><strong>A7.</strong> Skip and move on; never let one question break your focus.</p>
+          </li>
+          <li>
+            <p><strong>Q8.</strong> How is your final score reported?</p>
+            <p><strong>A8.</strong> On a 0–9 band scale, in 0.5 increments.</p>
+          </li>
+          <li>
+            <p><strong>Q9.</strong> Can you go back to previous sections?</p>
+            <p><strong>A9.</strong> No — once a section ends, it's gone.</p>
+          </li>
+          <li>
+            <p><strong>Q10.</strong> How long do you get for transfer (paper IELTS)?</p>
+            <p><strong>A10.</strong> 10 minutes.</p>
+          </li>
         </ol>
 
         <h2>Tips to Pass</h2>
@@ -3386,36 +3894,56 @@ export const blogPosts: BlogPost[] = [
       <>
         <p>Strong grammar lifts your IELTS Writing and Speaking band scores. Below are 12 questions spanning beginner to advanced — focus on getting the harder ones right and your overall band will improve quickly.</p>
 
-        <h2>Practice Questions</h2>
+        <h2>Practice Questions &amp; Answers</h2>
         <ol>
-          <li><strong>Q1.</strong> Choose: She … to London every summer. (go / goes)</li>
-          <li><strong>Q2.</strong> Pick the past simple of "buy".</li>
-          <li><strong>Q3.</strong> Choose: If I … you, I would apply. (am / were)</li>
-          <li><strong>Q4.</strong> Identify the article: "… apple a day keeps the doctor away."</li>
-          <li><strong>Q5.</strong> Choose: He has lived here … 2010. (since / for)</li>
-          <li><strong>Q6.</strong> Pick the present perfect: "I … just finished." (have / am)</li>
-          <li><strong>Q7.</strong> Choose: Neither of the answers … correct. (is / are)</li>
-          <li><strong>Q8.</strong> Choose the passive: "The book … by millions." (read / is read)</li>
-          <li><strong>Q9.</strong> Identify the conditional type: "If she had studied, she would have passed."</li>
-          <li><strong>Q10.</strong> Choose: Despite … tired, he carried on. (be / being)</li>
-          <li><strong>Q11.</strong> Choose: He's the man … helped me. (which / who)</li>
-          <li><strong>Q12.</strong> Pick the correct tag: "You're coming, …?"</li>
-        </ol>
-
-        <h2>Answers &amp; Explanations</h2>
-        <ol>
-          <li><strong>A1.</strong> goes.</li>
-          <li><strong>A2.</strong> bought.</li>
-          <li><strong>A3.</strong> were (subjunctive).</li>
-          <li><strong>A4.</strong> An — vowel sound.</li>
-          <li><strong>A5.</strong> since (a point in time).</li>
-          <li><strong>A6.</strong> have.</li>
-          <li><strong>A7.</strong> is (singular subject).</li>
-          <li><strong>A8.</strong> is read.</li>
-          <li><strong>A9.</strong> Third conditional (past unreal).</li>
-          <li><strong>A10.</strong> being.</li>
-          <li><strong>A11.</strong> who (people).</li>
-          <li><strong>A12.</strong> aren't you?</li>
+          <li>
+            <p><strong>Q1.</strong> Choose: She … to London every summer. (go / goes)</p>
+            <p><strong>A1.</strong> goes.</p>
+          </li>
+          <li>
+            <p><strong>Q2.</strong> Pick the past simple of "buy".</p>
+            <p><strong>A2.</strong> bought.</p>
+          </li>
+          <li>
+            <p><strong>Q3.</strong> Choose: If I … you, I would apply. (am / were)</p>
+            <p><strong>A3.</strong> were (subjunctive).</p>
+          </li>
+          <li>
+            <p><strong>Q4.</strong> Identify the article: "… apple a day keeps the doctor away."</p>
+            <p><strong>A4.</strong> An — vowel sound.</p>
+          </li>
+          <li>
+            <p><strong>Q5.</strong> Choose: He has lived here … 2010. (since / for)</p>
+            <p><strong>A5.</strong> since (a point in time).</p>
+          </li>
+          <li>
+            <p><strong>Q6.</strong> Pick the present perfect: "I … just finished." (have / am)</p>
+            <p><strong>A6.</strong> have.</p>
+          </li>
+          <li>
+            <p><strong>Q7.</strong> Choose: Neither of the answers … correct. (is / are)</p>
+            <p><strong>A7.</strong> is (singular subject).</p>
+          </li>
+          <li>
+            <p><strong>Q8.</strong> Choose the passive: "The book … by millions." (read / is read)</p>
+            <p><strong>A8.</strong> is read.</p>
+          </li>
+          <li>
+            <p><strong>Q9.</strong> Identify the conditional type: "If she had studied, she would have passed."</p>
+            <p><strong>A9.</strong> Third conditional (past unreal).</p>
+          </li>
+          <li>
+            <p><strong>Q10.</strong> Choose: Despite … tired, he carried on. (be / being)</p>
+            <p><strong>A10.</strong> being.</p>
+          </li>
+          <li>
+            <p><strong>Q11.</strong> Choose: He's the man … helped me. (which / who)</p>
+            <p><strong>A11.</strong> who (people).</p>
+          </li>
+          <li>
+            <p><strong>Q12.</strong> Pick the correct tag: "You're coming, …?"</p>
+            <p><strong>A12.</strong> aren't you?</p>
+          </li>
         </ol>
 
         <h2>Tips to Pass</h2>
