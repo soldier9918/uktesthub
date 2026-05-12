@@ -52,6 +52,8 @@ import h_DbsCheckPrivateHireDriver from "@/assets/blog/dbs-check-private-hire-dr
 import h_SafeguardingAwarenessPrivateHire from "@/assets/blog/safeguarding-awareness-private-hire.jpg";
 import h_PrivateHireDriverBadgeRules from "@/assets/blog/private-hire-driver-badge-rules.jpg";
 import h_HowToBecomeAPrivateHireDriverLondon from "@/assets/blog/how-to-become-a-private-hire-driver-london.jpg";
+import h_SiaDoorSupervisorGuide from "@/assets/blog/sia-door-supervisor-guide.jpg";
+import h_ItTechStudyGuide from "@/assets/blog/it-tech-study-guide.jpg";
 import { RoadSignsReferenceBody } from "./blog-content/road-signs-reference";
 import { ShowAndTellRoadSignsBody } from "./blog-content/show-and-tell-road-signs";
 
