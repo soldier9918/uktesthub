@@ -30,6 +30,11 @@ export const organizationSchema = (): LdScript =>
     sameAs: [],
     description:
       "Free UK practice tests for Driving Theory, Life in the UK, IELTS, GCSE, CSCS, NHS, SERU TfL and more.",
+    contactPoint: {
+      "@type": "ContactPoint",
+      contactType: "customer support",
+      email: "support@uktesthub.com",
+    },
   });
 
 export const websiteSchema = (): LdScript =>

@@ -5,9 +5,10 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { AdSlot } from "@/components/AdSlot";
 import { QuizRunner } from "@/components/QuizRunner";
 import { getQuiz, getQuizzesByCategory, type Quiz } from "@/data/quizzes";
-import { getCategory } from "@/data/categories";
+import { getCategory, findTopic } from "@/data/categories";
 import { listMockSlots } from "@/data/mocks";
 import { captureMockBaseUrl } from "@/lib/mock-base-url";
+import { breadcrumbSchema } from "@/lib/seo";
 
 
 export const Route = createFileRoute("/quiz/$slug")({
@@ -55,6 +56,31 @@ export const Route = createFileRoute("/quiz/$slug")({
     const title = `${q.quizTitle} — Free Practice — UK Test Hub`;
     const description = q.description;
     const url = `https://www.uktesthub.com/quiz/${slug}`;
+    const topicSlug = slug.replace(/-mock-\d+$/, "");
+    const found = topicSlug !== slug ? findTopic(topicSlug) : null;
+    const scripts: Array<{ type: "application/ld+json"; children: string }> = [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Quiz",
+          name: q.quizTitle,
+          about: q.description,
+          educationalLevel: q.difficulty,
+          numberOfQuestions: q.questions.length,
+        }),
+      },
+    ];
+    if (found) {
+      scripts.push(
+        breadcrumbSchema([
+          { name: "Home", url: "/" },
+          { name: found.category.title, url: `/category/${found.category.slug}` },
+          { name: found.topic.title, url: `/topic/${found.topic.slug}` },
+          { name: q.quizTitle, url: `/quiz/${slug}` },
+        ]),
+      );
+    }
     return {
       meta: [
         { title },
@@ -65,19 +91,7 @@ export const Route = createFileRoute("/quiz/$slug")({
         { name: "twitter:card", content: "summary_large_image" },
       ],
       links: [{ rel: "canonical", href: url }],
-      scripts: [
-        {
-          type: "application/ld+json",
-          children: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Quiz",
-            name: q.quizTitle,
-            about: q.description,
-            educationalLevel: q.difficulty,
-            numberOfQuestions: q.questions.length,
-          }),
-        },
-      ],
+      scripts,
     };
   },
   component: QuizPage,

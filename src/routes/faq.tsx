@@ -1,23 +1,48 @@
+import { Children, isValidElement, type ReactNode } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageLayout } from "@/components/PageLayout";
+import { faqSchema, breadcrumbSchema } from "@/lib/seo";
+
+function nodeToText(node: ReactNode): string {
+  if (node == null || typeof node === "boolean") return "";
+  if (typeof node === "string" || typeof node === "number") return String(node);
+  if (Array.isArray(node)) return node.map(nodeToText).join("");
+  if (isValidElement(node)) {
+    const props = node.props as { children?: ReactNode };
+    return nodeToText(props.children);
+  }
+  return Children.toArray(node).map(nodeToText).join("");
+}
 
 export const Route = createFileRoute("/faq")({
-  head: () => ({
-    meta: [
-      { title: "FAQ — Frequently Asked Questions | UK Test Hub" },
-      {
-        name: "description",
-        content:
-          "Answers to common questions about UK Test Hub's mock exams, practice mode, accounts, fees and exam coverage.",
-      },
-      { property: "og:title", content: "UK Test Hub — FAQ" },
-      {
-        property: "og:description",
-        content: "Common questions about using UK Test Hub for exam practice.",
-      },
-    ],
-  links: [{ rel: "canonical", href: "https://www.uktesthub.com/faq" }],
-  }),
+  head: () => {
+    const flat = groups.flatMap((g) =>
+      g.items.map((it) => ({ q: it.q, a: nodeToText(it.a).replace(/\s+/g, " ").trim() })),
+    );
+    return {
+      meta: [
+        { title: "FAQ — Frequently Asked Questions | UK Test Hub" },
+        {
+          name: "description",
+          content:
+            "Answers to common questions about UK Test Hub's mock exams, practice mode, accounts, fees and exam coverage.",
+        },
+        { property: "og:title", content: "UK Test Hub — FAQ" },
+        {
+          property: "og:description",
+          content: "Common questions about using UK Test Hub for exam practice.",
+        },
+      ],
+      links: [{ rel: "canonical", href: "https://www.uktesthub.com/faq" }],
+      scripts: [
+        faqSchema(flat),
+        breadcrumbSchema([
+          { name: "Home", url: "/" },
+          { name: "FAQ", url: "/faq" },
+        ]),
+      ],
+    };
+  },
   component: FaqPage,
 });
 

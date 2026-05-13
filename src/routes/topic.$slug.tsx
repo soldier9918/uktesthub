@@ -8,6 +8,7 @@ import { CategoryIcon, accentClasses } from "@/components/CategoryIcon";
 import { findTopic } from "@/data/categories";
 import { listMockSlots, QUESTIONS_PER_MOCK } from "@/data/mocks";
 import { Home, ChevronRight } from "lucide-react";
+import { breadcrumbSchema } from "@/lib/seo";
 
 export const Route = createFileRoute("/topic/$slug")({
   loader: ({ params }) => {
@@ -32,6 +33,13 @@ export const Route = createFileRoute("/topic/$slug")({
         { name: "twitter:card", content: "summary_large_image" },
       ],
       links: [{ rel: "canonical", href: `https://www.uktesthub.com/topic/${slug}` }],
+      scripts: [
+        breadcrumbSchema([
+          { name: "Home", url: "/" },
+          { name: category.title, url: `/category/${category.slug}` },
+          { name: topic.title, url: `/topic/${slug}` },
+        ]),
+      ],
     };
   },
   component: TopicPage,

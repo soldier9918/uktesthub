@@ -1,24 +1,47 @@
-## Goal
-Keep robots.txt minimal (no private URL disclosure) and ensure private/auth/system pages are excluded from search via per-page `noindex,nofollow` meta + removed from the HTML sitemap.
+## Current state (verified by reading files)
 
-## Current state
-- `robots.txt` (both `public/robots.txt` and `/robots.txt` route) already match the requested exact contents. **No change needed.**
-- XML sitemap (`src/routes/sitemap[.]xml.ts`) already excludes admin/auth/account/dashboard/bookmarks/report/feedback. **No change needed.**
-- Admin routes are already gated via `AdminGate` (login route exists separately) and `/admin` itself returns 404 with `noindex,nofollow`. **No change needed.**
-- Pages already carrying `noindex` meta: `/admin`, all `/admin-kb20/*`, `/signin`, `/signup`, `/account`, `/dashboard`, `/bookmarks`, `/forgot-password`, `/reset-password`. **No change needed.**
+Most schema is already in place — I'll only add what's missing:
 
-## Changes needed
-1. **`src/routes/report.tsx`** — add `{ name: "robots", content: "noindex,nofollow" }` to `head().meta`.
-2. **`src/routes/feedback.tsx`** — same noindex,nofollow meta.
-3. **`src/routes/sitemap.tsx`** (HTML sitemap) — remove the `<li>` links to `/report` and `/feedback` from the Support section so the public HTML sitemap matches the XML sitemap exclusions. Keep `/help` and `/exam-updates`.
+| Schema | Page | Status |
+|---|---|---|
+| Organization + WebSite | sitewide via `__root.tsx` | ✅ already present (need to add `contactPoint`) |
+| BreadcrumbList | `/category/*` | ✅ present |
+| BreadcrumbList + FAQPage | `/guide/*` | ✅ present |
+| BreadcrumbList + Article | `/blog/*` | ✅ present |
+| Quiz | `/quiz/*` | ✅ present, ❌ no breadcrumb |
+| Breadcrumb | `/topic/*` | ❌ missing |
+| FAQPage | `/faq` | ❌ missing |
 
-## Out of scope (per user instruction)
-- Do not edit `public/robots.txt` or `src/routes/robots[.]txt.ts`.
-- Do not add admin paths anywhere public.
-- Do not touch the XML sitemap.
+## Changes
 
-## Validation
-- `rg "noindex" src/routes/{report,feedback}.tsx` → both match.
-- Visit `/sitemap` → no `/report` or `/feedback` links.
-- `curl /robots.txt` → unchanged.
-- `curl /sitemap.xml` → unchanged.
+### 1. `src/routes/faq.tsx`
+Add `scripts` to `head()` with a `FAQPage` JSON-LD built from the visible `groups` array. Flatten Q/A across all 6 groups; for ReactNode answers (the ones containing `<Link>`), extract plain text by walking the children — answers stay 1:1 with what's visible. Also add a `BreadcrumbList` (Home › FAQ).
+
+### 2. `src/routes/topic.$slug.tsx`
+Switch from hand-rolled `meta`/`links` to use `pageMeta()` from `@/lib/seo` (matches the other routes) and add `scripts` with a `BreadcrumbList`:
+Home › {category.title} › {topic.title}
+
+### 3. `src/routes/quiz.$slug.tsx`
+Resolve the parent topic from the quiz slug (strip trailing `-mock-N`, look up via `findTopic`) and add a `BreadcrumbList` next to the existing Quiz schema:
+Home › {category.title} › {topic.title} › {q.quizTitle}
+Skip if topic can't be resolved (defensive — keeps existing Quiz schema intact).
+
+### 4. `src/lib/seo.ts` — `organizationSchema()`
+Add `contactPoint`:
+```
+contactPoint: {
+  "@type": "ContactPoint",
+  contactType: "customer support",
+  email: "support@uktesthub.com"
+}
+```
+Logo already wired to `/favicon.png`.
+
+### 5. Safety rules honored
+- No schema added to admin/auth pages (admin-kb20.*, signin, signup, account, dashboard, reset/forgot-password) — leaving them untouched.
+- No "official provider" wording, no affiliation claims — schema stays factual (name, breadcrumb, FAQ text from the page).
+- Sitemap admin URLs: not touched.
+- All FAQ entries mirror visible page content exactly; no hidden Q&As.
+
+## Out of scope
+No visible UI changes. No content rewrites. Existing canonical/OG meta untouched on routes that already work.
