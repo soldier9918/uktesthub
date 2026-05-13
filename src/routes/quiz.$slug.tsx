@@ -66,19 +66,42 @@ export const Route = createFileRoute("/quiz/$slug")({
         { name: "twitter:card", content: "summary_large_image" },
       ],
       links: [{ rel: "canonical", href: url }],
-      scripts: [
-        {
-          type: "application/ld+json",
-          children: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Quiz",
-            name: q.quizTitle,
-            about: q.description,
-            educationalLevel: q.difficulty,
-            numberOfQuestions: q.questions.length,
-          }),
-        },
+    const topicSlug = slug.replace(/-mock-\d+$/, "");
+    const found = topicSlug !== slug ? findTopic(topicSlug) : null;
+    const scripts: Array<{ type: "application/ld+json"; children: string }> = [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Quiz",
+          name: q.quizTitle,
+          about: q.description,
+          educationalLevel: q.difficulty,
+          numberOfQuestions: q.questions.length,
+        }),
+      },
+    ];
+    if (found) {
+      scripts.push(
+        breadcrumbSchema([
+          { name: "Home", url: "/" },
+          { name: found.category.title, url: `/category/${found.category.slug}` },
+          { name: found.topic.title, url: `/topic/${found.topic.slug}` },
+          { name: q.quizTitle, url: `/quiz/${slug}` },
+        ]),
+      );
+    }
+    return {
+      meta: [
+        { title },
+        { name: "description", content: description },
+        { property: "og:title", content: title },
+        { property: "og:description", content: description },
+        { property: "og:url", content: url },
+        { name: "twitter:card", content: "summary_large_image" },
       ],
+      links: [{ rel: "canonical", href: url }],
+      scripts,
     };
   },
   component: QuizPage,
