@@ -34,6 +34,18 @@ function loadGAScript() {
   };
   window.gtag("js", new Date());
   window.gtag("config", GA_ID, { send_page_view: false });
+  if (import.meta.env.DEV) console.log("GA4 loaded: G-P2CME6M6GE");
+}
+
+let initialPageViewSent = false;
+function sendInitialPageView() {
+  if (initialPageViewSent || typeof window === "undefined") return;
+  initialPageViewSent = true;
+  window.gtag?.("event", "page_view", {
+    page_path: window.location.pathname + window.location.search,
+    page_location: window.location.href,
+    page_title: typeof document !== "undefined" ? document.title : undefined,
+  });
 }
 
 /** Initialise the consent listener exactly once on the client. */
