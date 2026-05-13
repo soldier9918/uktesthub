@@ -71,6 +71,7 @@ import { Route as AdminKb20MocksRouteImport } from './routes/admin-kb20.mocks'
 import { Route as AdminKb20LoginRouteImport } from './routes/admin-kb20.login'
 import { Route as AdminKb20ImportExportRouteImport } from './routes/admin-kb20.import-export'
 import { Route as AdminKb20ImagesRouteImport } from './routes/admin-kb20.images'
+import { Route as AdminKb20GaAnalyticsRouteImport } from './routes/admin-kb20.ga-analytics'
 import { Route as AdminKb20DiagnosticsRouteImport } from './routes/admin-kb20.diagnostics'
 import { Route as AdminKb20CategoryCheckRouteImport } from './routes/admin-kb20.category-check'
 import { Route as AdminKb20CategoriesRouteImport } from './routes/admin-kb20.categories'
@@ -399,6 +400,11 @@ const AdminKb20ImagesRoute = AdminKb20ImagesRouteImport.update({
   path: '/admin-kb20/images',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AdminKb20GaAnalyticsRoute = AdminKb20GaAnalyticsRouteImport.update({
+  id: '/admin-kb20/ga-analytics',
+  path: '/admin-kb20/ga-analytics',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AdminKb20DiagnosticsRoute = AdminKb20DiagnosticsRouteImport.update({
   id: '/admin-kb20/diagnostics',
   path: '/admin-kb20/diagnostics',
@@ -494,6 +500,7 @@ export interface FileRoutesByFullPath {
   '/admin-kb20/categories': typeof AdminKb20CategoriesRoute
   '/admin-kb20/category-check': typeof AdminKb20CategoryCheckRoute
   '/admin-kb20/diagnostics': typeof AdminKb20DiagnosticsRoute
+  '/admin-kb20/ga-analytics': typeof AdminKb20GaAnalyticsRoute
   '/admin-kb20/images': typeof AdminKb20ImagesRoute
   '/admin-kb20/import-export': typeof AdminKb20ImportExportRoute
   '/admin-kb20/login': typeof AdminKb20LoginRoute
@@ -567,6 +574,7 @@ export interface FileRoutesByTo {
   '/admin-kb20/categories': typeof AdminKb20CategoriesRoute
   '/admin-kb20/category-check': typeof AdminKb20CategoryCheckRoute
   '/admin-kb20/diagnostics': typeof AdminKb20DiagnosticsRoute
+  '/admin-kb20/ga-analytics': typeof AdminKb20GaAnalyticsRoute
   '/admin-kb20/images': typeof AdminKb20ImagesRoute
   '/admin-kb20/import-export': typeof AdminKb20ImportExportRoute
   '/admin-kb20/login': typeof AdminKb20LoginRoute
@@ -642,6 +650,7 @@ export interface FileRoutesById {
   '/admin-kb20/categories': typeof AdminKb20CategoriesRoute
   '/admin-kb20/category-check': typeof AdminKb20CategoryCheckRoute
   '/admin-kb20/diagnostics': typeof AdminKb20DiagnosticsRoute
+  '/admin-kb20/ga-analytics': typeof AdminKb20GaAnalyticsRoute
   '/admin-kb20/images': typeof AdminKb20ImagesRoute
   '/admin-kb20/import-export': typeof AdminKb20ImportExportRoute
   '/admin-kb20/login': typeof AdminKb20LoginRoute
@@ -718,6 +727,7 @@ export interface FileRouteTypes {
     | '/admin-kb20/categories'
     | '/admin-kb20/category-check'
     | '/admin-kb20/diagnostics'
+    | '/admin-kb20/ga-analytics'
     | '/admin-kb20/images'
     | '/admin-kb20/import-export'
     | '/admin-kb20/login'
@@ -791,6 +801,7 @@ export interface FileRouteTypes {
     | '/admin-kb20/categories'
     | '/admin-kb20/category-check'
     | '/admin-kb20/diagnostics'
+    | '/admin-kb20/ga-analytics'
     | '/admin-kb20/images'
     | '/admin-kb20/import-export'
     | '/admin-kb20/login'
@@ -865,6 +876,7 @@ export interface FileRouteTypes {
     | '/admin-kb20/categories'
     | '/admin-kb20/category-check'
     | '/admin-kb20/diagnostics'
+    | '/admin-kb20/ga-analytics'
     | '/admin-kb20/images'
     | '/admin-kb20/import-export'
     | '/admin-kb20/login'
@@ -940,6 +952,7 @@ export interface RootRouteChildren {
   AdminKb20CategoriesRoute: typeof AdminKb20CategoriesRoute
   AdminKb20CategoryCheckRoute: typeof AdminKb20CategoryCheckRoute
   AdminKb20DiagnosticsRoute: typeof AdminKb20DiagnosticsRoute
+  AdminKb20GaAnalyticsRoute: typeof AdminKb20GaAnalyticsRoute
   AdminKb20ImagesRoute: typeof AdminKb20ImagesRoute
   AdminKb20ImportExportRoute: typeof AdminKb20ImportExportRoute
   AdminKb20LoginRoute: typeof AdminKb20LoginRoute
@@ -1399,6 +1412,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AdminKb20ImagesRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/admin-kb20/ga-analytics': {
+      id: '/admin-kb20/ga-analytics'
+      path: '/admin-kb20/ga-analytics'
+      fullPath: '/admin-kb20/ga-analytics'
+      preLoaderRoute: typeof AdminKb20GaAnalyticsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/admin-kb20/diagnostics': {
       id: '/admin-kb20/diagnostics'
       path: '/admin-kb20/diagnostics'
@@ -1542,6 +1562,7 @@ const rootRouteChildren: RootRouteChildren = {
   AdminKb20CategoriesRoute: AdminKb20CategoriesRoute,
   AdminKb20CategoryCheckRoute: AdminKb20CategoryCheckRoute,
   AdminKb20DiagnosticsRoute: AdminKb20DiagnosticsRoute,
+  AdminKb20GaAnalyticsRoute: AdminKb20GaAnalyticsRoute,
   AdminKb20ImagesRoute: AdminKb20ImagesRoute,
   AdminKb20ImportExportRoute: AdminKb20ImportExportRoute,
   AdminKb20LoginRoute: AdminKb20LoginRoute,
