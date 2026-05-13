@@ -41,6 +41,7 @@ export const Route = createRootRoute({
           "Free UK practice tests: Driving Theory, Life in the UK, IELTS, GCSE, CSCS, NHS, SERU TfL and more. Realistic mock exams with instant results and explanations.",
       },
       { name: "author", content: "UK Test Hub" },
+      { name: "google-site-verification", content: "5MXOtpExyGc2s5q9kWcw8S2VkkU15G4xIogsw8LoICk" },
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: "UK Test Hub" },
       { property: "og:url", content: SITE_URL + "/" },
