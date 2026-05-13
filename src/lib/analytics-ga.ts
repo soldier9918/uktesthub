@@ -59,16 +59,16 @@ function loadGAScript() {
   if (gaLoaded || typeof window === "undefined") return;
   gaLoaded = true;
   disableGA(false);
-  const s = document.createElement("script");
-  s.async = true;
-  s.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
-  document.head.appendChild(s);
   window.dataLayer = window.dataLayer || [];
   window.gtag = function gtag(...args: unknown[]) {
     window.dataLayer!.push(args);
   };
   window.gtag("js", new Date());
   window.gtag("config", GA_ID, { send_page_view: false });
+  const s = document.createElement("script");
+  s.async = true;
+  s.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
+  document.head.appendChild(s);
   console.log("GA4 loaded: G-P2CME6M6GE");
 }
 
