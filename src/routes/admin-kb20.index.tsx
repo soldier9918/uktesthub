@@ -47,6 +47,8 @@ export const Route = createFileRoute("/admin-kb20/")({
             desc="Override per-page title, description, OG image. Configure sitewide defaults." />
           <Tile to="/admin-kb20/analytics" title="Analytics Dashboard"
             desc="Page views, quiz starts and completions, top pages and drop-off rates." />
+          <Tile to="/admin-kb20/ga-analytics" title="GA4 Analytics (Live)"
+            desc="Live realtime active users, pageviews, 24h and 30d trends pulled directly from Google Analytics 4." />
           <Tile to="/admin-kb20/ads" title="AdSense Manager"
             desc="Toggle ad slots, set AdSense slot IDs, hide ads sitewide for review mode." />
         </div>
