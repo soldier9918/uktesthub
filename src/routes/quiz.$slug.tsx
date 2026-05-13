@@ -5,9 +5,10 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { AdSlot } from "@/components/AdSlot";
 import { QuizRunner } from "@/components/QuizRunner";
 import { getQuiz, getQuizzesByCategory, type Quiz } from "@/data/quizzes";
-import { getCategory } from "@/data/categories";
+import { getCategory, findTopic } from "@/data/categories";
 import { listMockSlots } from "@/data/mocks";
 import { captureMockBaseUrl } from "@/lib/mock-base-url";
+import { breadcrumbSchema } from "@/lib/seo";
 
 
 export const Route = createFileRoute("/quiz/$slug")({
