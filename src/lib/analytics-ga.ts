@@ -57,6 +57,7 @@ export function initGA() {
     if (c?.analytics) {
       disableGA(false);
       loadGAScript();
+      sendInitialPageView();
     } else {
       disableGA(true);
     }
