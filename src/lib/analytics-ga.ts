@@ -52,9 +52,7 @@ function sendCollectPageView(path: string, href: string, title?: string) {
     _p: String(Date.now()),
   });
   const url = `${GA_COLLECT_URL}?${params.toString()}`;
-  if (!navigator.sendBeacon?.(url)) {
-    void fetch(url, { mode: "no-cors", keepalive: true });
-  }
+  void fetch(url, { mode: "no-cors", keepalive: true });
 }
 
 function loadGAScript() {
