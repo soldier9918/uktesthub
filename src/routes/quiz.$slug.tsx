@@ -56,16 +56,6 @@ export const Route = createFileRoute("/quiz/$slug")({
     const title = `${q.quizTitle} — Free Practice — UK Test Hub`;
     const description = q.description;
     const url = `https://www.uktesthub.com/quiz/${slug}`;
-    return {
-      meta: [
-        { title },
-        { name: "description", content: description },
-        { property: "og:title", content: title },
-        { property: "og:description", content: description },
-        { property: "og:url", content: url },
-        { name: "twitter:card", content: "summary_large_image" },
-      ],
-      links: [{ rel: "canonical", href: url }],
     const topicSlug = slug.replace(/-mock-\d+$/, "");
     const found = topicSlug !== slug ? findTopic(topicSlug) : null;
     const scripts: Array<{ type: "application/ld+json"; children: string }> = [
