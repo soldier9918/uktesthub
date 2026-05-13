@@ -426,9 +426,9 @@ function HomePage() {
                 Jump straight into a specific topic. Every link below is its own
                 page, updated with fresh questions.
               </p>
-              <div className="mt-8 grid gap-8 sm:grid-cols-2">
+              <div className="mt-8 gap-x-8 sm:columns-2 [column-fill:_balance]">
                 {categories.map((c) => (
-                  <div key={c.slug}>
+                  <div key={c.slug} className="mb-8 break-inside-avoid">
                     <h3 className="font-display text-sm font-semibold uppercase tracking-wider text-coral">
                       {c.title}
                     </h3>
