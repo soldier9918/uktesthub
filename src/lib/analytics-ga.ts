@@ -1,12 +1,9 @@
-/**
- * Lazy Google Analytics 4 loader, gated by user consent.
- * No script is injected until analytics consent is granted.
- */
-import { getConsent, subscribe } from "./consent";
+/** Google Analytics 4 loader. */
 
 const GA_ID = "G-P2CME6M6GE";
 let gaLoaded = false;
 let initialised = false;
+let initialPageViewSent = false;
 
 declare global {
   interface Window {
@@ -21,9 +18,14 @@ function disableGA(disable: boolean) {
   window[`ga-disable-${GA_ID}`] = disable;
 }
 
+function isAdminPath(pathname = typeof window !== "undefined" ? window.location.pathname : "") {
+  return pathname.startsWith("/admin-kb20");
+}
+
 function loadGAScript() {
   if (gaLoaded || typeof window === "undefined") return;
   gaLoaded = true;
+  disableGA(false);
   const s = document.createElement("script");
   s.async = true;
   s.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
@@ -34,43 +36,37 @@ function loadGAScript() {
   };
   window.gtag("js", new Date());
   window.gtag("config", GA_ID, { send_page_view: false });
-  if (import.meta.env.DEV) console.log("GA4 loaded: G-P2CME6M6GE");
+  console.log("GA4 loaded: G-P2CME6M6GE");
 }
 
-let initialPageViewSent = false;
 function sendInitialPageView() {
-  if (initialPageViewSent || typeof window === "undefined") return;
+  if (initialPageViewSent || typeof window === "undefined" || isAdminPath()) return;
   initialPageViewSent = true;
   window.gtag?.("event", "page_view", {
     page_path: window.location.pathname + window.location.search,
     page_location: window.location.href,
     page_title: typeof document !== "undefined" ? document.title : undefined,
   });
+  console.log("GA4 initial page_view sent");
 }
 
 /** Initialise the consent listener exactly once on the client. */
 export function initGA() {
   if (initialised || typeof window === "undefined") return;
   initialised = true;
-  const apply = () => {
-    const c = getConsent();
-    if (c?.analytics) {
-      disableGA(false);
-      loadGAScript();
-      sendInitialPageView();
-    } else {
-      disableGA(true);
-    }
-  };
-  apply();
-  subscribe(apply);
+  if (isAdminPath()) return;
+  loadGAScript();
+  sendInitialPageView();
 }
 
-/** Send a GA event only if analytics consent is granted. */
+/** Send a GA event. */
 export function trackGAEvent(event: string, params: Record<string, unknown> = {}) {
   if (typeof window === "undefined") return;
-  const c = getConsent();
-  if (!c?.analytics) return;
+  if (isAdminPath()) return;
   loadGAScript();
   window.gtag?.("event", event, params);
+  if (event === "page_view") {
+    const path = typeof params.page_path === "string" ? params.page_path : window.location.pathname;
+    console.log(`GA4 route page_view sent: ${path}`);
+  }
 }
