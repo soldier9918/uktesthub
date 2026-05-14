@@ -1,109 +1,58 @@
-# English Language Tests — drill-down restructure
+## Idea: show users their estimated English level
 
-## New URL structure
+When a user finishes an English mock test, we already know three things: which **CEFR level** they were practising at (A1–C2), how many of the 24 questions they got right, and which **skill** (listening / reading / writing / speaking / four-skills / speaking-listening). We can turn that into a friendly competency readout instead of just a raw score.
 
-```
-/category/english                                        Main English hub
-/english-language-tests/{test}                           Test overview + 4 skill cards
-/english-language-tests/{test}/{skill}                   6 CEFR level cards
-/english-language-tests/{test}/{skill}/{level}           45 mock test cards
-/english-language-tests/{test}/{skill}/{level}/mock-test-{n}   Quiz runner
-```
+### 1. End-of-test "Your English level" result card
 
-- `test`: `ielts | esol | toefl | selt`
-- IELTS/ESOL/TOEFL skills: `listening | reading | writing | speaking`
-- SELT skills: `speaking-listening` (levels A1/A2/B1) and `four-skills` (levels B1/B2/C1/C2)
-- `level`: `a1 | a2 | b1 | b2 | c1 | c2` (restricted per test/skill where appropriate)
-- `n`: 1–45
+When a user finishes an English mock, replace (or augment) the generic results screen with a **CEFR result card** that shows:
 
-## File-based routes (TanStack flat naming)
+- A big estimated level badge (e.g. **B1 — Intermediate**) with the same contrast colours used on the level picker (A1 red → C2 deep purple).
+- The score (e.g. 19 / 24 = 79 %) and a short plain-English description ("You can handle most everyday situations and express opinions on familiar topics").
+- A "next step" CTA:
+  - **≥ 85 %** → "You're ready to try **{nextLevel}**" with a Link to the next CEFR level's mock list.
+  - **60–84 %** → "Keep practising at **{thisLevel}** — try Mock {n+1}".
+  - **< 60 %** → "Try **{prevLevel}** first to build confidence" (or "Start at A1" if already A1).
+- A small per-question-type breakdown (MCQ x/8, True/False x/2, Fill blanks x/6, Dropdown x/4, Multiple response x/4) so users see *which question style* tripped them up.
 
-New:
-- `src/routes/category.english.tsx` — 4 test-type cards (IELTS / ESOL / TOEFL / SELT)
-- `src/routes/english-language-tests.$test.tsx` — overview + skill cards (replaces today's mixed page)
-- `src/routes/english-language-tests.$test.$skill.tsx` — CEFR level cards
-- `src/routes/english-language-tests.$test.$skill.$level.tsx` — 45 mock cards
-- `src/routes/english-language-tests.$test.$skill.$level.mock-test-$num.tsx` — quiz runner
+Scoring rule for the estimate (simple, transparent):
 
-Removed/retired:
-- `src/routes/english-language-tests.$category.tsx` (mixed page)
-- `src/routes/english-language-tests.$category.mock-test-$num.tsx` (old flat mock route)
-
-`category.$slug.tsx` will redirect `slug === "english"` to `/category/english` for consistency (or we just rely on the new dedicated file — it takes precedence over the dynamic `$slug` for the literal `english` segment via TanStack matching).
-
-The `/english-language-tests` index hub stays but is rewritten to show 4 test-type cards (drops the flat CEFR/skill/topic grids).
-
-## Data model
-
-Rewrite `src/data/english/categories.ts` into a structured catalogue:
-
-```ts
-type TestType = "ielts" | "esol" | "toefl" | "selt";
-type Skill = "listening" | "reading" | "writing" | "speaking"
-           | "speaking-listening" | "four-skills";
-type Level = "a1" | "a2" | "b1" | "b2" | "c1" | "c2";
-
-type TestConfig = {
-  slug: TestType;
-  title: string;            // "IELTS-style Practice"
-  shortTitle: string;       // "IELTS"
-  description: string;
-  studyGuideSlug?: string;
-  skills: SkillConfig[];
-};
-type SkillConfig = { slug: Skill; title: string; description: string; levels: Level[] };
+```text
+this level achieved      score ≥ 85% on the level they sat
+this level partial       60% ≤ score < 85%
+below this level         score < 60%   → suggest level - 1
+above this level         score ≥ 85% AND user has passed 3 mocks at this level
+                          → suggest level + 1
 ```
 
-- IELTS/ESOL/TOEFL: 4 skills × 6 levels = **24 level banks** per test
-- SELT: `speaking-listening` (A1/A2/B1) + `four-skills` (B1/B2/C1/C2) = **7 level banks**
+This is purely a frontend/presentation change inside `QuizRunner` (or a small wrapper that detects English mocks via the quiz id prefix `{test}-{skill}-{level}-…`). No backend work required for the basic version.
 
-Bank file path becomes:
-```
-public/english-mocks/{test}/{skill}/{level}.json
-```
-(79 files total. Old flat `public/english-mocks/ielts.json` is removed.)
+### 2. Optional: a persistent "My English level" panel
 
-Loader (`src/data/english/mocks.ts`) is updated to fetch by `(test, skill, level)` triple. Same v2 file shape; same `loadEnglishMockBySlug` API but signature changes to `(test, skill, level, mockNumber)`.
+For signed-in users we can persist results so the level estimate isn't lost when they close the tab.
 
-## Question generation
+- New table `english_level_attempts` (user_id, test, skill, level, mock_num, score, total, taken_at) with RLS so users only see their own rows.
+- After each mock, insert a row (only when `useAuth()` returns a user — anon users still see the result card, just nothing is stored).
+- On `/category/english` (and on each test/skill page) show a small **"Your estimated level: B1"** chip per skill, computed as: highest level where the user has ≥ 2 mocks scored ≥ 70 %.
+- Optional later: a tiny "Level progress" bar on the level picker showing how many of the 45 mocks at each level the user has cleared.
 
-Extend `scripts/generate_english_mocks.py` so each invocation generates one
-`{test}/{skill}/{level}.json` file. Strategy:
+This is a clean additive feature — no changes to existing routes' behaviour.
 
-- Reuse the existing combinatorial pools (vocabulary, grammar frames, sentence templates).
-- Tag each pool item with CEFR levels it suits; filter by `level` when picking.
-- Slant content by `skill`: listening = transcript snippets ("You hear…"), reading = short passages, writing = pick-best-sentence/grammar, speaking = "natural spoken reply".
-- Same per-mock mix (10 MCQ + 6 fill / 4 dropdown / 4 multi-response = 24).
-- Uniqueness enforced **within the file** (test+skill+level). Cross-file overlap is acceptable since the requirement is "no duplicate questions in the same test type + skill + level".
+### 3. Optional later polish (only if you want it)
 
-Run script across all 79 combinations in one batch (`for test in ...; for skill in ...; for level in ...; python ...`).
+- A **"Take a 10-minute placement test"** entry point on `/category/english` that pulls 2 questions from each of A1, A2, B1, B2, C1, C2 of a chosen skill and recommends a starting level — better first-time UX than asking "which level am I?".
+- A shareable / printable **"CEFR level certificate"** (just an HTML card the user can screenshot) — light touch, no real accreditation claims, with a clear disclaimer that it's a self-assessment estimate, not an official CEFR certificate.
 
-### Honest scope note
+### Recommended scope for the first pass
 
-Generating 79 banks × 1,080 questions = **~85k questions** deterministically is feasible but the pools must be large enough to satisfy uniqueness per bank (1,080 unique items each). The existing IELTS generator already produces 1,080 unique items per call by stride-sampling from much larger pools — I'll keep that approach and add `(skill, level)` parameters that bias which slice of the pool is used. The text style per skill will be templated, not bespoke per question.
+Do **#1 only** first — it's the highest-value change, fits in `QuizRunner`'s results screen, needs zero schema work, and immediately answers "what level am I?" for every user including anonymous ones. We can layer #2 and #3 on later if you like the result.
 
-## Page content (high level)
+### Technical notes (for the implementation pass)
 
-- **Test page** (`/english-language-tests/ielts`): overview, study-guide button, 4 skill cards, disclaimer. No CEFR/topic/mock grids.
-- **Skill page** (`/ielts/listening`): "IELTS Listening Practice" title, intro, 6 CEFR level cards.
-- **Level page** (`/ielts/listening/b1`): "IELTS Listening Practice — B1 Level" title, 45 mock cards with ready/coming-soon state (using `countReadyEnglishMocks` adapted to the new tuple).
-- **Mock page**: unchanged quiz runner; back link goes to the level page; "Next mock" links to mock-test-(n+1) on the same level.
-- All pages keep the independent-practice disclaimer.
+- Detect English mocks by quiz id prefix (`ielts-`, `esol-`, `toefl-`, `selt-`) so other categories' results screens are untouched.
+- Reuse the level palette already defined for the level picker so the result badge matches the picker colours.
+- Per-type breakdown comes from iterating `quiz.questions` with the existing `isCorrect()` helper grouped by `q.type`.
+- Disclaimer line under the badge: *"Estimated level based on this mock — not an official CEFR assessment."*
 
-## Sitemap & redirects
+### Question for you
 
-- Update `src/routes/sitemap[.]xml.ts` to emit the new URL tree (test, skill, level, mock pages).
-- `src/routes/topic.$slug.tsx` already redirects IELTS/ESOL/TOEFL/SELT topic slugs → `/english-language-tests/{slug}`. Keep it.
-- Old `/english-language-tests/ielts/mock-test-1` style URLs become 404 (the new file route doesn't match). Acceptable since this section was only just shipped.
-
-## Wording / disclaimer
-
-- Replace "IELTS Practice" titles with "IELTS-style Practice" copy on body text (slug stays `ielts`).
-- SELT page adds the explicit GOV.UK reminder.
-- Site-wide footer disclaimer text stays unchanged.
-
-## Out of scope for this turn
-
-- Per-skill bespoke audio/passage assets (we keep templated text).
-- Authoring 85k human-quality unique questions; the generator produces templated but unique items as the existing IELTS bank does today.
-- Custom CEFR-graded vocabulary lists beyond what already exists in the script.
+Want me to build **#1 (end-of-test CEFR result card)** now, or do you also want **#2 (persisted "My English level" per skill on the dashboard / English landing page)** in the same pass?
