@@ -46,18 +46,19 @@ export function CookieConsent() {
   useEffect(() => {
     setMounted(true);
     const c = getConsent();
+    console.log(
+      `Consent state on load: ${c === null ? "no decision" : JSON.stringify({ analytics: c.analytics, advertising: c.advertising, functional: c.functional })}`,
+    );
     setHasConsent(c !== null);
     setShowBanner(c === null);
     if (c) setToggles({ analytics: c.analytics, advertising: c.advertising, functional: c.functional });
     setAnalyticsConsent(c?.analytics === true);
-    if (c?.analytics) initGA();
     const unsub = subscribe((next) => {
       setHasConsent(next !== null);
       if (next) {
         setToggles({ analytics: next.analytics, advertising: next.advertising, functional: next.functional });
       }
       setAnalyticsConsent(next?.analytics === true);
-      if (next?.analytics) initGA();
     });
     return unsub;
   }, []);
