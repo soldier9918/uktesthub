@@ -64,11 +64,13 @@ export function SiteHeader() {
         </nav>
 
         <div className="flex items-center gap-2">
-          {loading ? null : user ? (
+          {loading ? (
+            <div className="h-7 w-[88px] animate-pulse rounded bg-white/10" aria-hidden />
+          ) : user ? (
             <DropdownMenu>
-              <DropdownMenuTrigger className="inline-flex h-10 items-center gap-2 border border-white/15 bg-white/5 px-3 text-sm font-semibold text-white hover:bg-white/10">
-                <UserIcon className="h-4 w-4" />
-                <span className="hidden xl:inline max-w-[140px] truncate">{user.email}</span>
+              <DropdownMenuTrigger className="inline-flex h-7 items-center gap-1.5 rounded border border-white/15 bg-white/5 px-2.5 text-xs font-semibold text-white hover:bg-white/10 max-w-[140px]">
+                <UserIcon className="h-3.5 w-3.5 shrink-0" />
+                <span className="truncate">{user.email?.split("@")[0]}</span>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end" className="w-56">
                 <DropdownMenuLabel className="truncate">{user.email}</DropdownMenuLabel>
