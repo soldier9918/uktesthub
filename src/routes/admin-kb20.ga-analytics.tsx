@@ -135,20 +135,32 @@ function GaAnalytics() {
           </p>
         </div>
         <div className="flex items-center gap-4">
-          <div className="flex items-center gap-2 text-sm">
-            <Switch checked={autoRefresh} onCheckedChange={setAutoRefresh} id="auto" />
-            <label htmlFor="auto" className="cursor-pointer text-muted-foreground">
-              Auto-refresh 60s
-            </label>
-          </div>
-          <Button onClick={() => load()} disabled={refreshing} size="sm">
-            {refreshing ? "Refreshing…" : "Refresh"}
-          </Button>
+          {connected && (
+            <>
+              <div className="flex items-center gap-2 text-sm">
+                <Switch checked={autoRefresh} onCheckedChange={setAutoRefresh} id="auto" />
+                <label htmlFor="auto" className="cursor-pointer text-muted-foreground">
+                  Auto-refresh 60s
+                </label>
+              </div>
+              <Button onClick={() => load()} disabled={refreshing} size="sm">
+                {refreshing ? "Refreshing…" : "Refresh"}
+              </Button>
+              <Button onClick={handleDisconnect} variant="outline" size="sm">
+                Disconnect
+              </Button>
+            </>
+          )}
         </div>
       </div>
 
-      {data && (
+      {connected && googleEmail && (
         <p className="mt-2 text-xs text-muted-foreground">
+          Connected as <span className="font-medium">{googleEmail}</span>
+        </p>
+      )}
+      {data && (
+        <p className="mt-1 text-xs text-muted-foreground">
           Last updated {new Date(data.fetchedAt).toLocaleTimeString()}
         </p>
       )}
@@ -159,10 +171,22 @@ function GaAnalytics() {
         </div>
       )}
 
-      {loading && !data ? (
+      {connected === false ? (
+        <Card className="mt-8 p-8 text-center">
+          <h2 className="text-lg font-semibold">Connect Google Analytics</h2>
+          <p className="mx-auto mt-2 max-w-md text-sm text-muted-foreground">
+            Sign in with the Google account that has access to GA4 property{" "}
+            <span className="font-mono">466514625</span> to authorize read-only analytics access.
+          </p>
+          <Button className="mt-4" onClick={handleConnect} disabled={connecting}>
+            {connecting ? "Redirecting…" : "Connect Google Analytics"}
+          </Button>
+        </Card>
+      ) : loading && !data ? (
         <div className="mt-8 text-sm text-muted-foreground">Loading GA4 data…</div>
       ) : data ? (
         <>
+
           <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
             <Kpi label="Active users (30 min)" value={data.realtime.activeUsers} live />
             <Kpi label="Pageviews (30 min)" value={data.realtime.pageviews} live />
