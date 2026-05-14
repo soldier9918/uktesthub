@@ -89,7 +89,7 @@ export function SiteHeader() {
               </DropdownMenuContent>
             </DropdownMenu>
           ) : (
-            <Link to="/signin" className="inline-flex items-center justify-center whitespace-nowrap bg-gradient-to-br from-[#ff5a5f] to-[#c81e2c] px-5 py-2.5 text-sm font-semibold uppercase tracking-wider text-white shadow-[0_8px_20px_-8px_rgba(255,90,95,0.7)] ring-1 ring-white/20 transition-transform hover:-translate-y-0.5">
+            <Link to="/signin" className="inline-flex items-center justify-center whitespace-nowrap bg-gradient-to-br from-[#ff5a5f] to-[#c81e2c] px-3 py-1.5 text-xs font-semibold uppercase tracking-wider text-white shadow-[0_6px_14px_-6px_rgba(255,90,95,0.7)] ring-1 ring-white/20 transition-transform hover:-translate-y-0.5">
               Sign in
             </Link>
           )}
