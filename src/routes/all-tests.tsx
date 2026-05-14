@@ -10,10 +10,7 @@ import { getQuizMeta } from "@/data/quizzes";
 export const Route = createFileRoute("/all-tests")({
   head: () => ({
     meta: [
-      {
-        title:
-          "All UK Mock Tests — Free Practice for DVSA, TfL, IELTS, CSCS, NMC & more | UK Test Hub",
-      },
+      { title: "All UK Mock Tests | UK Test Hub" },
       {
         name: "description",
         content:
