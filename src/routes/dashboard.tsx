@@ -25,7 +25,7 @@ type Progress = {
 };
 
 export const Route = createFileRoute("/dashboard")({
-  head: () => ({ meta: [{ title: "My dashboard — UK Test Hub" }, { name: "robots", content: "noindex" },
+  head: () => ({ meta: [{ title: "My dashboard — UK Test Hub" }, { name: "robots", content: "noindex, nofollow" },
       { property: "og:url", content: "https://www.uktesthub.com/dashboard" }
     ] , links: [{ rel: "canonical", href: "https://www.uktesthub.com/dashboard" }] }),
   component: () => (
