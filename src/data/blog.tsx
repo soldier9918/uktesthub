@@ -10072,7 +10072,7 @@ export const blogPosts: BlogPost[] = [
     readingMinutes: 6,
     category: "Security",
     tags: ["SIA", "door supervisor", "security"],
-    __SIA_PLACEHOLDER__
+    hero: h_SiaDoorSupervisorTestGuide2026,
     body: () => (
       <>
         <p>
@@ -10310,7 +10310,7 @@ export const blogPosts: BlogPost[] = [
     readingMinutes: 6,
     category: "Security",
     tags: ["SIA", "door supervisor", "mock questions"],
-    __SIA_PLACEHOLDER__
+    hero: h_SiaDoorSupervisorMockQuestionsExplained,
     body: () => (
       <>
         <p>
@@ -10560,7 +10560,7 @@ export const blogPosts: BlogPost[] = [
     readingMinutes: 6,
     category: "Security",
     tags: ["SIA", "door supervisor", "study plan"],
-    __SIA_PLACEHOLDER__
+    hero: h_HowToPassSiaDoorSupervisorFirstTime,
     body: () => (
       <>
         <p>
@@ -10769,7 +10769,7 @@ export const blogPosts: BlogPost[] = [
     readingMinutes: 6,
     category: "IT & Tech",
     tags: ["CompTIA", "A+", "IT certification"],
-    __IT_PLACEHOLDER__
+    hero: h_ComptiaAPlusUkStudyGuide,
     body: () => (
       <>
         <p>
@@ -11001,7 +11001,7 @@ export const blogPosts: BlogPost[] = [
     readingMinutes: 6,
     category: "IT & Tech",
     tags: ["cyber security", "awareness", "GDPR"],
-    __IT_PLACEHOLDER__
+    hero: h_CyberSecurityAwarenessTestGuide,
     body: () => (
       <>
         <p>
@@ -11219,7 +11219,7 @@ export const blogPosts: BlogPost[] = [
     readingMinutes: 6,
     category: "IT & Tech",
     tags: ["ITIL 4", "service management", "PeopleCert"],
-    __IT_PLACEHOLDER__
+    hero: h_Itil4FoundationPracticeGuide,
     body: () => (
       <>
         <p>
