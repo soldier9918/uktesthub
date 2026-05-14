@@ -9,7 +9,14 @@ import {
   subscribe,
   type ConsentState,
 } from "@/lib/consent";
-import { initGA } from "@/lib/analytics-ga";
+import { initGA, setAnalyticsConsent } from "@/lib/analytics-ga";
+
+/**
+ * TODO (certified CMP swap): When integrating a Google-certified IAB TCF v2.2
+ * CMP (e.g. Google Funding Choices), inject its loader script in
+ * src/routes/__root.tsx and replace the local consent reads here with the
+ * CMP's TCF API (__tcfapi). The banner UI below is the in-house fallback.
+ */
 import {
   Dialog,
   DialogContent,
@@ -38,16 +45,19 @@ export function CookieConsent() {
   // Initial mount — read consent client-side only.
   useEffect(() => {
     setMounted(true);
-    initGA();
     const c = getConsent();
     setHasConsent(c !== null);
     setShowBanner(c === null);
     if (c) setToggles({ analytics: c.analytics, advertising: c.advertising, functional: c.functional });
+    setAnalyticsConsent(c?.analytics === true);
+    if (c?.analytics) initGA();
     const unsub = subscribe((next) => {
       setHasConsent(next !== null);
       if (next) {
         setToggles({ analytics: next.analytics, advertising: next.advertising, functional: next.functional });
       }
+      setAnalyticsConsent(next?.analytics === true);
+      if (next?.analytics) initGA();
     });
     return unsub;
   }, []);

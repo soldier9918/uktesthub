@@ -2,19 +2,26 @@ import { useEffect, useRef, useState } from "react";
 import { X } from "lucide-react";
 import { useAdSlot } from "@/lib/admin/ad-slots";
 import { useAdminSettings } from "@/lib/admin/settings";
+import { getConsent } from "@/lib/consent";
 
 /**
- * AdSense configuration.
+ * AdSense central configuration.
  *
- * When AdSense is approved, set these via Vite env vars:
+ * Single source of truth for enabling Google AdSense:
+ *   VITE_ADSENSE_ENABLED   = "true"  (default: false)
  *   VITE_ADSENSE_CLIENT_ID = "ca-pub-XXXXXXXXXXXXXXXX"
- *   VITE_ADSENSE_ENABLED   = "true"
  *
- * Until then, AdSlot renders nothing in production (collapses cleanly,
- * no empty grey boxes, no layout shift since slots are display:none).
+ * Admin-side kill switches (admin_settings table):
+ *   hide_ads_globally     — force-hide every ad slot site-wide
+ *   preview_without_ads   — temporarily disable ads in preview
  *
- * In dev mode, a subtle dashed outline is shown so layout placement
- * can be verified without polluting the live UI.
+ * Behaviour guarantees (AdSense approval / UK GDPR / PECR):
+ *   • If AdSense is not enabled → AdSlot returns null. No script loads,
+ *     no empty boxes, no "Ad goes here" placeholders, no layout gaps.
+ *   • If the user has not granted "advertising" consent → AdSlot returns
+ *     null and no AdSense script or cookie is loaded.
+ *   • Only when (enabled AND client ID AND slot ID AND advertising consent)
+ *     is the adsbygoogle.js script injected and a real <ins> rendered.
  */
 const ADSENSE_CLIENT_ID =
   (import.meta as any).env?.VITE_ADSENSE_CLIENT_ID ?? "";
@@ -125,6 +132,7 @@ export function AdSlot({
     if (!ADSENSE_ENABLED || !visible || !effectiveSlotId) return;
     if (settings?.hide_ads_globally || settings?.preview_without_ads) return;
     if (slotKey && !slotEnabled) return;
+    if (!getConsent()?.advertising) return;
     loadAdsenseScript();
     try {
       (window.adsbygoogle = window.adsbygoogle || []).push({});
@@ -160,6 +168,9 @@ export function AdSlot({
   }
 
   if (!effectiveSlotId) return null;
+
+  // Hard gate on advertising consent (UK GDPR / PECR).
+  if (!getConsent()?.advertising) return null;
 
   return (
     <div
@@ -202,6 +213,7 @@ export function StickyAdSlot({ slotId }: { slotId?: string } = {}) {
 
   if (dismissed) return null;
   if (!ADSENSE_ENABLED || !slotId) return null;
+  if (!getConsent()?.advertising) return null;
 
   return (
     <div
@@ -227,6 +239,54 @@ export function StickyAdSlot({ slotId }: { slotId?: string } = {}) {
           <X className="h-4 w-4" />
         </button>
       </div>
+    </div>
+  );
+}
+
+/**
+ * Semantic ad placement wrappers. Each renders nothing until AdSense is
+ * approved, configured (env vars), advertising consent has been granted,
+ * AND the matching slot is enabled in the admin UI. Safe to drop into
+ * pages today — they will stay invisible until everything lines up.
+ *
+ * Placement rules baked in:
+ *   • Use `InContentAd` between content blocks on guides/articles only.
+ *   • Use `SidebarAd` in desktop sidebars only (≥ lg).
+ *   • Use `BottomAd` before the footer / FAQ / related-tests block.
+ *   • Use `MobileAd` for in-content rectangles on mobile.
+ * Never place these inside quiz answer lists, near Start/Submit/Next
+ * buttons, or between a question and its options.
+ */
+type WrapProps = { slotKey?: string; slotId?: string; className?: string };
+
+export function InContentAd(props: WrapProps) {
+  return (
+    <div className="my-8 flex justify-center">
+      <AdSlot size="leaderboard" format="auto" {...props} />
+    </div>
+  );
+}
+
+export function SidebarAd(props: WrapProps) {
+  return (
+    <aside className="hidden lg:block">
+      <AdSlot size="sidebar" format="vertical" {...props} />
+    </aside>
+  );
+}
+
+export function BottomAd(props: WrapProps) {
+  return (
+    <div className="my-10 flex justify-center">
+      <AdSlot size="leaderboard" format="horizontal" {...props} />
+    </div>
+  );
+}
+
+export function MobileAd(props: WrapProps) {
+  return (
+    <div className="my-6 flex justify-center md:hidden">
+      <AdSlot size="rectangle" format="rectangle" {...props} />
     </div>
   );
 }

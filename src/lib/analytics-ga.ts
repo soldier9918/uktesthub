@@ -6,6 +6,21 @@ const CLIENT_ID_KEY = "uktesthub_ga_client_id";
 let gaLoaded = false;
 let initialised = false;
 let initialPageViewSent = false;
+let consentGranted = false;
+
+/**
+ * Called by the consent layer (CookieConsent.tsx) whenever the user's
+ * analytics consent changes. GA does nothing until this is true.
+ */
+export function setAnalyticsConsent(granted: boolean) {
+  consentGranted = granted;
+  if (typeof window === "undefined") return;
+  disableGA(!granted);
+  if (granted && initialised && !gaLoaded) {
+    loadGAScript();
+    sendInitialPageView();
+  }
+}
 
 declare global {
   interface Window {
@@ -57,6 +72,7 @@ function sendCollectPageView(path: string, href: string, title?: string) {
 
 function loadGAScript() {
   if (gaLoaded || typeof window === "undefined") return;
+  if (!consentGranted) return;
   gaLoaded = true;
   disableGA(false);
   window.dataLayer = window.dataLayer || [];
@@ -74,6 +90,7 @@ function loadGAScript() {
 
 function sendInitialPageView() {
   if (initialPageViewSent || typeof window === "undefined" || isAdminPath()) return;
+  if (!consentGranted) return;
   initialPageViewSent = true;
   const path = window.location.pathname + window.location.search;
   const href = window.location.href;
@@ -93,6 +110,7 @@ export function initGA() {
   if (initialised || typeof window === "undefined") return;
   initialised = true;
   if (isAdminPath()) return;
+  if (!consentGranted) return;
   loadGAScript();
   sendInitialPageView();
 }
@@ -101,6 +119,7 @@ export function initGA() {
 export function trackGAEvent(event: string, params: Record<string, unknown> = {}) {
   if (typeof window === "undefined") return;
   if (isAdminPath()) return;
+  if (!consentGranted) return;
   loadGAScript();
   const eventParams = event === "page_view" ? { send_to: GA_ID, ...params } : params;
   window.gtag?.("event", event, eventParams);
