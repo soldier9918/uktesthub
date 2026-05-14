@@ -21,11 +21,36 @@ const ICONS: Record<string, LucideIcon> = {
   ShieldCheck,
 };
 
-const ACCENT: Record<TestConfig["colourTheme"], string> = {
-  coral: "bg-coral/10 text-coral border-coral/20",
-  navy: "bg-navy/10 text-navy border-navy/20",
-  gold: "bg-gold/10 text-gold border-gold/20",
-  success: "bg-success/10 text-success border-success/20",
+type Theme = TestConfig["colourTheme"];
+
+// Premium gradient cards — one bespoke palette per test, white text.
+const CARD_BG: Record<Theme, string> = {
+  // IELTS — deep crimson / British red
+  coral:
+    "bg-[linear-gradient(140deg,oklch(0.42_0.19_27)_0%,oklch(0.32_0.16_25)_55%,oklch(0.22_0.12_22)_100%)] border-white/10",
+  // ESOL — deep navy / royal
+  navy:
+    "bg-[linear-gradient(140deg,oklch(0.28_0.11_265)_0%,oklch(0.20_0.09_265)_55%,oklch(0.13_0.07_265)_100%)] border-white/10",
+  // TOEFL — emerald / forest
+  gold:
+    "bg-[linear-gradient(140deg,oklch(0.38_0.13_165)_0%,oklch(0.28_0.10_160)_55%,oklch(0.18_0.07_160)_100%)] border-white/10",
+  // SELT — deep plum / aubergine
+  success:
+    "bg-[linear-gradient(140deg,oklch(0.36_0.14_315)_0%,oklch(0.26_0.11_310)_55%,oklch(0.17_0.08_305)_100%)] border-white/10",
+};
+
+const ICON_TILE: Record<Theme, string> = {
+  coral: "bg-white/10 text-white ring-1 ring-white/15",
+  navy: "bg-white/10 text-white ring-1 ring-white/15",
+  gold: "bg-white/10 text-white ring-1 ring-white/15",
+  success: "bg-white/10 text-white ring-1 ring-white/15",
+};
+
+const ACCENT_TEXT: Record<Theme, string> = {
+  coral: "text-[oklch(0.88_0.10_45)]",
+  navy: "text-[oklch(0.85_0.10_240)]",
+  gold: "text-[oklch(0.88_0.12_150)]",
+  success: "text-[oklch(0.88_0.10_320)]",
 };
 
 const TITLE =
