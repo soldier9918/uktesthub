@@ -60,6 +60,7 @@ import h_Itil4FoundationPracticeGuide from "@/assets/blog/itil-4-foundation-prac
 import h_SiaDoorSupervisorTestGuide2026 from "@/assets/blog/sia-door-supervisor-test-guide-2026.jpg";
 import h_SiaDoorSupervisorMockQuestionsExplained from "@/assets/blog/sia-door-supervisor-mock-questions-explained.jpg";
 import h_HowToPassSiaDoorSupervisorFirstTime from "@/assets/blog/how-to-pass-sia-door-supervisor-first-time.jpg";
+import h_EnglishLanguageTestsExplained from "@/assets/blog/english-language-tests-explained.jpg";
 import { RoadSignsReferenceBody } from "./blog-content/road-signs-reference";
 import { ShowAndTellRoadSignsBody } from "./blog-content/show-and-tell-road-signs";
 
