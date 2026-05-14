@@ -1519,6 +1519,7 @@ def build_bank(slug: str) -> Dict[str, Any]:
     mr_seed = list(IELTS_MR) + FLAVOUR_MR.get(slug, [])
 
     mcq_pool = _dedupe(build_mcq_pool(prefix, vocab), key=lambda x: (x["question"], tuple(x["options"])))
+    tf_pool = _dedupe(build_tf_pool(prefix, vocab), key=lambda x: x["question"])
     blanks = build_blanks_pools(prefix, GRAMMAR_FILL)
     fill_pool = blanks["fill"]
     drop_pool = blanks["drop"]
@@ -1526,15 +1527,14 @@ def build_bank(slug: str) -> Dict[str, Any]:
 
     # Expand to required totals
     mcq_pool = _take(mcq_pool, NEEDED["mcq"], "mcq")
+    tf_pool = _take(tf_pool, NEEDED["true-false"], "true-false")
     fill_pool = expand_blanks(fill_pool, NEEDED["fill-blanks"], prefix, "fill")
     drop_pool = expand_blanks(drop_pool, NEEDED["dropdown-blanks"], prefix, "drop")
     mr_pool = expand_mr_with_paraphrase(mr_pool, NEEDED["multiple-response"], prefix)
 
-    # Assemble 45 mocks. For each mock N (1..45), take items at offsets
-    # i*MIX_SIZE + (N-1) so each mock contains a distinct slice from each
-    # type pool.
     bank: List[Dict[str, Any]] = []
     bank.extend(mcq_pool)
+    bank.extend(tf_pool)
     bank.extend(fill_pool)
     bank.extend(drop_pool)
     bank.extend(mr_pool)
@@ -1548,6 +1548,7 @@ def build_bank(slug: str) -> Dict[str, Any]:
         idx = mock_num - 1
         ids_for_mock: List[str] = []
         ids_for_mock += [mcq_pool[i * TOTAL_MOCKS + idx]["id"] for i in range(MIX["mcq"])]
+        ids_for_mock += [tf_pool[i * TOTAL_MOCKS + idx]["id"] for i in range(MIX["true-false"])]
         ids_for_mock += [fill_pool[i * TOTAL_MOCKS + idx]["id"] for i in range(MIX["fill-blanks"])]
         ids_for_mock += [drop_pool[i * TOTAL_MOCKS + idx]["id"] for i in range(MIX["dropdown-blanks"])]
         ids_for_mock += [mr_pool[i * TOTAL_MOCKS + idx]["id"] for i in range(MIX["multiple-response"])]
