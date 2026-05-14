@@ -119,6 +119,10 @@ function EnglishCategoryPage() {
           ))}
         </ul>
 
+        <HowMockTestsWork />
+
+        <YourEnglishLevelSection />
+
         <div className="mt-12 rounded-2xl border border-border bg-muted/30 p-5 text-sm text-muted-foreground">
           <strong className="text-foreground">Independent practice:</strong>{" "}
           UK Test Hub is an independent practice and study website. Always
@@ -128,6 +132,205 @@ function EnglishCategoryPage() {
       </main>
       <SiteFooter />
     </div>
+  );
+}
+
+function HowMockTestsWork() {
+  const types = [
+    {
+      icon: ListChecks,
+      title: "Multiple choice",
+      body: "Pick the single best answer. Click an option — in practice mode it reveals the correct answer and an explanation right away.",
+    },
+    {
+      icon: CheckCircle2,
+      title: "True / False",
+      body: "Decide whether the statement is true or false. One click to answer.",
+    },
+    {
+      icon: TypeIcon,
+      title: "Fill the blanks",
+      body: "Choose the right word for each gap from a small list. Tap the option for each blank — you can change your mind before checking.",
+    },
+    {
+      icon: MousePointerClick,
+      title: "Dropdown blanks",
+      body: "Same idea as fill the blanks, but each gap has a dropdown menu. Open the menu and pick the best word.",
+    },
+    {
+      icon: ListChecks,
+      title: "Multiple response",
+      body: "More than one answer can be correct. Tick every option you think is right, then press Check.",
+    },
+  ];
+  return (
+    <section className="mt-12 rounded-3xl border border-border bg-card p-6 shadow-soft md:p-8">
+      <p className="text-xs font-semibold uppercase tracking-wider text-coral">
+        How it works
+      </p>
+      <h2 className="mt-1 font-display text-2xl font-bold md:text-3xl">
+        How to take the mock tests
+      </h2>
+      <p className="mt-2 max-w-3xl text-sm text-muted-foreground md:text-base">
+        Each mock has 24 questions and a mix of question styles. You can take
+        every mock in two ways:
+      </p>
+
+      <div className="mt-5 grid gap-4 sm:grid-cols-2">
+        <div className="rounded-2xl border border-border bg-muted/30 p-4">
+          <h3 className="font-display text-base font-bold">Practice mode</h3>
+          <p className="mt-1 text-sm text-muted-foreground">
+            No timer. Answer a question, then reveal the correct answer and a
+            short explanation before moving on. Best for learning.
+          </p>
+        </div>
+        <div className="rounded-2xl border border-border bg-muted/30 p-4">
+          <h3 className="font-display text-base font-bold">Exam mode</h3>
+          <p className="mt-1 text-sm text-muted-foreground">
+            Timed run-through, one minute per question. Answers are revealed
+            only at the end — closest to a real exam feel.
+          </p>
+        </div>
+      </div>
+
+      <h3 className="mt-7 font-display text-lg font-bold">
+        The question types you’ll see
+      </h3>
+      <ul className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+        {types.map((t) => {
+          const Icon = t.icon;
+          return (
+            <li
+              key={t.title}
+              className="rounded-2xl border border-border bg-background p-4"
+            >
+              <div className="flex items-center gap-2">
+                <span className="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-coral/10 text-coral">
+                  <Icon className="h-4 w-4" />
+                </span>
+                <span className="font-display text-sm font-bold">{t.title}</span>
+              </div>
+              <p className="mt-2 text-sm text-muted-foreground">{t.body}</p>
+            </li>
+          );
+        })}
+      </ul>
+
+      <div className="mt-6 rounded-2xl border border-dashed border-border bg-muted/20 p-4 text-sm text-muted-foreground">
+        <strong className="text-foreground">Tip:</strong> Use the{" "}
+        <em>Previous</em> and <em>Next</em> buttons to move between questions.
+        In practice mode, the <em>Reveal</em> / <em>Check answer</em> button
+        shows you the correct answer for the current question. The pass mark
+        is 75% — but treat the score as a learning signal, not a verdict.
+      </div>
+    </section>
+  );
+}
+
+function YourEnglishLevelSection() {
+  const levels: Array<{ code: string; name: string; bg: string; blurb: string }> = [
+    {
+      code: "A1",
+      name: "Beginner",
+      bg: "bg-[linear-gradient(140deg,oklch(0.68_0.14_220)_0%,oklch(0.48_0.14_225)_55%,oklch(0.28_0.11_230)_100%)]",
+      blurb: "Simple, everyday words and phrases.",
+    },
+    {
+      code: "A2",
+      name: "Elementary",
+      bg: "bg-[linear-gradient(140deg,oklch(0.38_0.18_260)_0%,oklch(0.25_0.15_262)_55%,oklch(0.14_0.10_265)_100%)]",
+      blurb: "Short, routine exchanges on familiar topics.",
+    },
+    {
+      code: "B1",
+      name: "Intermediate",
+      bg: "bg-[linear-gradient(140deg,oklch(0.42_0.20_320)_0%,oklch(0.30_0.17_330)_55%,oklch(0.20_0.13_345)_100%)]",
+      blurb: "Most situations on familiar matters; opinions.",
+    },
+    {
+      code: "B2",
+      name: "Upper-Intermediate",
+      bg: "bg-[linear-gradient(140deg,oklch(0.72_0.17_75)_0%,oklch(0.55_0.17_60)_55%,oklch(0.36_0.14_50)_100%)]",
+      blurb: "Fluent interaction and clear, detailed text.",
+    },
+    {
+      code: "C1",
+      name: "Advanced",
+      bg: "bg-[linear-gradient(140deg,oklch(0.56_0.20_45)_0%,oklch(0.40_0.18_38)_55%,oklch(0.24_0.13_32)_100%)]",
+      blurb: "Flexible English for academic and work contexts.",
+    },
+    {
+      code: "C2",
+      name: "Proficient",
+      bg: "bg-[linear-gradient(140deg,oklch(0.34_0.20_22)_0%,oklch(0.22_0.16_18)_55%,oklch(0.12_0.11_15)_100%)]",
+      blurb: "Understand virtually everything; precise expression.",
+    },
+  ];
+
+  return (
+    <section className="mt-12 rounded-3xl border border-border bg-card p-6 shadow-soft md:p-8">
+      <div className="flex items-start gap-3">
+        <span className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-coral/10 text-coral">
+          <Sparkles className="h-5 w-5" />
+        </span>
+        <div>
+          <p className="text-xs font-semibold uppercase tracking-wider text-coral">
+            New
+          </p>
+          <h2 className="font-display text-2xl font-bold md:text-3xl">
+            Your English level
+          </h2>
+        </div>
+      </div>
+
+      <p className="mt-3 max-w-3xl text-sm text-muted-foreground md:text-base">
+        At the end of every English mock test we show you an{" "}
+        <strong className="text-foreground">estimated CEFR level</strong> based
+        on how you scored — A1 (Beginner) all the way to C2 (Proficient). You
+        also get a per-question-type breakdown so you can see which styles
+        tripped you up.
+      </p>
+
+      <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+        {levels.map((l) => (
+          <div
+            key={l.code}
+            className={`rounded-2xl border border-white/10 p-4 text-white shadow-soft ${l.bg}`}
+          >
+            <div className="flex items-baseline gap-2">
+              <span className="font-display text-2xl font-bold">{l.code}</span>
+              <span className="text-sm text-white/85">{l.name}</span>
+            </div>
+            <p className="mt-1 text-xs text-white/85">{l.blurb}</p>
+          </div>
+        ))}
+      </div>
+
+      <h3 className="mt-7 font-display text-lg font-bold">
+        How the estimate is calculated
+      </h3>
+      <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
+        <li>
+          <strong className="text-foreground">85% or higher</strong> on the
+          level you sat — you’re ready to try the next CEFR level up.
+        </li>
+        <li>
+          <strong className="text-foreground">60% to 84%</strong> — keep
+          practising at the same level to lock it in. We’ll suggest the next
+          mock.
+        </li>
+        <li>
+          <strong className="text-foreground">Below 60%</strong> — try the
+          level below first to build confidence, then come back.
+        </li>
+      </ul>
+
+      <div className="mt-5 rounded-2xl border border-dashed border-border bg-muted/20 p-4 text-xs text-muted-foreground">
+        Estimated level is based on your score in a single mock test — it’s a
+        helpful learning signal, not an official CEFR assessment. Take a few
+        mocks at different levels to get a clearer picture of where you sit.
+      </div>
+    </section>
   );
 }
 
