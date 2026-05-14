@@ -151,6 +151,16 @@ function rawToQuestion(raw: RawBankItem, idx: number): Question {
     };
     return q;
   }
+  if (raw.type === "true-false") {
+    const q: TrueFalseQuestion = {
+      type: "true-false",
+      id,
+      question: raw.question,
+      correctAnswer: raw.correctAnswer,
+      explanation: raw.explanation,
+    };
+    return q;
+  }
   if (raw.type === "fill-blanks" || raw.type === "dropdown-blanks") {
     const q: FillBlanksQuestion = {
       type: "fill-blanks",
