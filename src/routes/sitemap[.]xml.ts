@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { blogPosts } from "@/data/blog";
 import { categories } from "@/data/categories";
+import { englishCategories } from "@/data/english/categories";
 import mockIndex from "@/data/mocks/mock-index.json";
 
 const BASE = "https://www.uktesthub.com";
@@ -99,6 +100,15 @@ const quizEntries: Entry[] = QUIZ_WHITELIST.flatMap((topic) =>
   })),
 );
 
+const englishEntries: Entry[] = [
+  { path: "/english-language-tests", changefreq: "weekly", priority: "0.9" },
+  ...englishCategories.map<Entry>((c) => ({
+    path: `/english-language-tests/${c.slug}`,
+    changefreq: "weekly",
+    priority: "0.7",
+  })),
+];
+
 const allEntries: Entry[] = [
   ...staticEntries,
   ...seoLandings,
@@ -106,6 +116,7 @@ const allEntries: Entry[] = [
   ...topicEntries,
   ...blogEntries,
   ...quizEntries,
+  ...englishEntries,
 ];
 
 const renderUrl = (e: Entry) =>
