@@ -26,7 +26,7 @@ export const Route = createFileRoute(
     if (!skill) throw notFound();
     if (!hasLevel(skill, params.level)) throw notFound();
     const level = params.level as LevelSlug;
-    const num = parseInt(params.num, 10);
+    const num = parseInt(params.num ?? "", 10);
     if (!Number.isFinite(num) || num < 1 || num > 45) throw notFound();
     const quiz = await loadEnglishMock(test.slug, skill.slug, level, num);
     return { test, skill, level, num, quiz: quiz ?? null };
