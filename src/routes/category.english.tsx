@@ -65,8 +65,7 @@ const ACCENT_TEXT: Record<Theme, string> = {
   success: "text-[oklch(0.88_0.10_320)]",
 };
 
-const TITLE =
-  "English Language Tests | IELTS, ESOL, TOEFL & SELT Practice | UK Test Hub";
+const TITLE = "English Language Tests | UK Test Hub";
 const DESC =
   "Free English language practice — IELTS, ESOL, TOEFL and SELT mock tests with study guides and CEFR level practice.";
 const URL = "https://www.uktesthub.com/category/english";

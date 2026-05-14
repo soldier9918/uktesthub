@@ -38,11 +38,10 @@ import bandSkyline from "@/assets/band-skyline.png";
 
 export const Route = createFileRoute("/")({
   head: () => {
-    const TITLE = "UK Test Hub - Free UK Mock Tests and Study Guides";
+    const TITLE = "Free UK Mock Tests | UK Test Hub";
     const DESC =
-      "Practise free UK mock tests for Driving Theory, Life in the UK, English, NHS, CSCS, Taxi and more. Study guides, instant results and explanations.";
-    const TWITTER_DESC =
-      "Practise free UK mock tests for Driving Theory, Life in the UK, English, NHS, CSCS, Taxi and more.";
+      "Practise free UK mock tests for Driving Theory, Life in the UK, English, NHS, CSCS, Taxi and more with instant results.";
+    const TWITTER_DESC = DESC;
     const OG_IMAGE = "https://www.uktesthub.com/og-uk-test-hub.jpg";
     return {
       meta: [
