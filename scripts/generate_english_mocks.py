@@ -30,7 +30,8 @@ PER_MOCK = 24
 
 # Per-mock distribution
 MIX = {
-    "mcq": 10,
+    "mcq": 8,
+    "true-false": 2,
     "fill-blanks": 6,
     "dropdown-blanks": 4,
     "multiple-response": 4,
