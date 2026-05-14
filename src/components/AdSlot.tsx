@@ -241,3 +241,51 @@ export function StickyAdSlot({ slotId }: { slotId?: string } = {}) {
     </div>
   );
 }
+
+/**
+ * Semantic ad placement wrappers. Each renders nothing until AdSense is
+ * approved, configured (env vars), advertising consent has been granted,
+ * AND the matching slot is enabled in the admin UI. Safe to drop into
+ * pages today — they will stay invisible until everything lines up.
+ *
+ * Placement rules baked in:
+ *   • Use `InContentAd` between content blocks on guides/articles only.
+ *   • Use `SidebarAd` in desktop sidebars only (≥ lg).
+ *   • Use `BottomAd` before the footer / FAQ / related-tests block.
+ *   • Use `MobileAd` for in-content rectangles on mobile.
+ * Never place these inside quiz answer lists, near Start/Submit/Next
+ * buttons, or between a question and its options.
+ */
+type WrapProps = { slotKey?: string; slotId?: string; className?: string };
+
+export function InContentAd(props: WrapProps) {
+  return (
+    <div className="my-8 flex justify-center">
+      <AdSlot size="leaderboard" format="auto" {...props} />
+    </div>
+  );
+}
+
+export function SidebarAd(props: WrapProps) {
+  return (
+    <aside className="hidden lg:block">
+      <AdSlot size="sidebar" format="vertical" {...props} />
+    </aside>
+  );
+}
+
+export function BottomAd(props: WrapProps) {
+  return (
+    <div className="my-10 flex justify-center">
+      <AdSlot size="leaderboard" format="horizontal" {...props} />
+    </div>
+  );
+}
+
+export function MobileAd(props: WrapProps) {
+  return (
+    <div className="my-6 flex justify-center md:hidden">
+      <AdSlot size="rectangle" format="rectangle" {...props} />
+    </div>
+  );
+}
