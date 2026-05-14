@@ -16,27 +16,27 @@ import { breadcrumbSchema } from "@/lib/seo";
 
 // Blue → Red premium gradient blend across CEFR levels (A1 easiest → C2 hardest).
 const LEVEL_BG: Record<LevelSlug, string> = {
-  // A1 — bright sky / cyan blue
-  a1: "bg-[linear-gradient(140deg,oklch(0.55_0.15_230)_0%,oklch(0.38_0.13_225)_55%,oklch(0.22_0.10_220)_100%)] border-white/10",
-  // A2 — deep royal indigo
-  a2: "bg-[linear-gradient(140deg,oklch(0.36_0.18_275)_0%,oklch(0.24_0.14_272)_55%,oklch(0.15_0.10_270)_100%)] border-white/10",
-  // B1 — teal / orangey-blue transition
-  b1: "bg-[linear-gradient(140deg,oklch(0.50_0.13_185)_0%,oklch(0.34_0.11_170)_55%,oklch(0.22_0.10_140)_100%)] border-white/10",
-  // B2 — warm amber / orange
-  b2: "bg-[linear-gradient(140deg,oklch(0.62_0.16_80)_0%,oklch(0.42_0.15_60)_55%,oklch(0.26_0.12_50)_100%)] border-white/10",
-  // C1 — vivid burnt orange
-  c1: "bg-[linear-gradient(140deg,oklch(0.60_0.19_55)_0%,oklch(0.42_0.17_45)_55%,oklch(0.26_0.13_38)_100%)] border-white/10",
-  // C2 — deep crimson red
-  c2: "bg-[linear-gradient(140deg,oklch(0.40_0.22_22)_0%,oklch(0.26_0.18_18)_55%,oklch(0.15_0.13_15)_100%)] border-white/10",
+  // A1 — bright cyan / sky blue (lightest)
+  a1: "bg-[linear-gradient(140deg,oklch(0.68_0.14_220)_0%,oklch(0.48_0.14_225)_55%,oklch(0.28_0.11_230)_100%)] border-white/10",
+  // A2 — deep royal / navy blue (darker, truer blue)
+  a2: "bg-[linear-gradient(140deg,oklch(0.38_0.18_260)_0%,oklch(0.25_0.15_262)_55%,oklch(0.14_0.10_265)_100%)] border-white/10",
+  // B1 — violet / magenta (blue→warm transition, no green)
+  b1: "bg-[linear-gradient(140deg,oklch(0.42_0.20_320)_0%,oklch(0.30_0.17_330)_55%,oklch(0.20_0.13_345)_100%)] border-white/10",
+  // B2 — bright warm orange (lightest of the warm row)
+  b2: "bg-[linear-gradient(140deg,oklch(0.72_0.17_75)_0%,oklch(0.55_0.17_60)_55%,oklch(0.36_0.14_50)_100%)] border-white/10",
+  // C1 — vivid burnt orange / rust (mid lightness)
+  c1: "bg-[linear-gradient(140deg,oklch(0.56_0.20_45)_0%,oklch(0.40_0.18_38)_55%,oklch(0.24_0.13_32)_100%)] border-white/10",
+  // C2 — dark blood red (darkest)
+  c2: "bg-[linear-gradient(140deg,oklch(0.34_0.20_22)_0%,oklch(0.22_0.16_18)_55%,oklch(0.12_0.11_15)_100%)] border-white/10",
 };
 
 const LEVEL_ACCENT: Record<LevelSlug, string> = {
-  a1: "text-[oklch(0.92_0.10_225)]",
-  a2: "text-[oklch(0.85_0.12_280)]",
-  b1: "text-[oklch(0.90_0.11_180)]",
-  b2: "text-[oklch(0.92_0.13_80)]",
+  a1: "text-[oklch(0.95_0.08_215)]",
+  a2: "text-[oklch(0.85_0.12_265)]",
+  b1: "text-[oklch(0.88_0.12_325)]",
+  b2: "text-[oklch(0.95_0.13_80)]",
   c1: "text-[oklch(0.88_0.14_45)]",
-  c2: "text-[oklch(0.86_0.15_25)]",
+  c2: "text-[oklch(0.82_0.16_22)]",
 };
 
 export const Route = createFileRoute(
