@@ -24,10 +24,10 @@ const LEVEL_BG: Record<LevelSlug, string> = {
   b1: "bg-[linear-gradient(140deg,oklch(0.50_0.13_185)_0%,oklch(0.34_0.11_170)_55%,oklch(0.22_0.10_140)_100%)] border-white/10",
   // B2 — warm amber / orange
   b2: "bg-[linear-gradient(140deg,oklch(0.62_0.16_80)_0%,oklch(0.42_0.15_60)_55%,oklch(0.26_0.12_50)_100%)] border-white/10",
-  // C1 — dark orange / ember
-  c1: "bg-[linear-gradient(140deg,oklch(0.50_0.19_45)_0%,oklch(0.34_0.16_38)_55%,oklch(0.22_0.13_32)_100%)] border-white/10",
+  // C1 — vivid burnt orange
+  c1: "bg-[linear-gradient(140deg,oklch(0.60_0.19_55)_0%,oklch(0.42_0.17_45)_55%,oklch(0.26_0.13_38)_100%)] border-white/10",
   // C2 — deep crimson red
-  c2: "bg-[linear-gradient(140deg,oklch(0.42_0.22_25)_0%,oklch(0.28_0.18_22)_55%,oklch(0.17_0.13_20)_100%)] border-white/10",
+  c2: "bg-[linear-gradient(140deg,oklch(0.40_0.22_22)_0%,oklch(0.26_0.18_18)_55%,oklch(0.15_0.13_15)_100%)] border-white/10",
 };
 
 const LEVEL_ACCENT: Record<LevelSlug, string> = {
