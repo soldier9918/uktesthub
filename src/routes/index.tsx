@@ -411,7 +411,7 @@ function HomePage() {
         </section>
 
         {/* TOPIC PRACTICE */}
-        <section className="mt-20 rounded-3xl border border-border bg-gradient-card p-6 md:p-10">
+        <section className="mt-20 rounded-3xl border border-border bg-card p-6 shadow-soft md:p-10">
           <div className="grid gap-10 lg:grid-cols-[1fr_320px] lg:items-start">
             <div>
               <h2 className="font-display text-2xl font-bold md:text-3xl">
