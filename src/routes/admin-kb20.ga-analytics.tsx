@@ -7,6 +7,11 @@ import { Switch } from "@/components/ui/switch";
 import { supabase } from "@/integrations/supabase/client";
 import { getGaDashboard, type GaDashboard } from "@/lib/server-fns/ga-analytics.functions";
 import {
+  getGaConnectionStatus,
+  getGaOAuthStartUrl,
+  disconnectGaOAuth,
+} from "@/lib/server-fns/ga-oauth.functions";
+import {
   ResponsiveContainer,
   LineChart,
   Line,

@@ -82,6 +82,7 @@ import { Route as AdminKb20QuestionsIndexRouteImport } from './routes/admin-kb20
 import { Route as AdminKb20QuestionsBulkDuplicateRouteImport } from './routes/admin-kb20.questions.bulk-duplicate'
 import { Route as AdminKb20QuestionsTopicRouteImport } from './routes/admin-kb20.questions.$topic'
 import { Route as LovableEmailQueueProcessRouteImport } from './routes/lovable/email/queue/process'
+import { Route as ApiAdminGaOauthCallbackRouteImport } from './routes/api/admin/ga-oauth/callback'
 
 const UkRoadSignsTestRoute = UkRoadSignsTestRouteImport.update({
   id: '/uk-road-signs-test',
@@ -457,6 +458,11 @@ const LovableEmailQueueProcessRoute =
     path: '/lovable/email/queue/process',
     getParentRoute: () => rootRouteImport,
   } as any)
+const ApiAdminGaOauthCallbackRoute = ApiAdminGaOauthCallbackRouteImport.update({
+  id: '/api/admin/ga-oauth/callback',
+  path: '/api/admin/ga-oauth/callback',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -531,6 +537,7 @@ export interface FileRoutesByFullPath {
   '/admin-kb20/questions/$topic': typeof AdminKb20QuestionsTopicRoute
   '/admin-kb20/questions/bulk-duplicate': typeof AdminKb20QuestionsBulkDuplicateRoute
   '/admin-kb20/questions/': typeof AdminKb20QuestionsIndexRoute
+  '/api/admin/ga-oauth/callback': typeof ApiAdminGaOauthCallbackRoute
   '/lovable/email/queue/process': typeof LovableEmailQueueProcessRoute
 }
 export interface FileRoutesByTo {
@@ -605,6 +612,7 @@ export interface FileRoutesByTo {
   '/admin-kb20/questions/$topic': typeof AdminKb20QuestionsTopicRoute
   '/admin-kb20/questions/bulk-duplicate': typeof AdminKb20QuestionsBulkDuplicateRoute
   '/admin-kb20/questions': typeof AdminKb20QuestionsIndexRoute
+  '/api/admin/ga-oauth/callback': typeof ApiAdminGaOauthCallbackRoute
   '/lovable/email/queue/process': typeof LovableEmailQueueProcessRoute
 }
 export interface FileRoutesById {
@@ -681,6 +689,7 @@ export interface FileRoutesById {
   '/admin-kb20/questions/$topic': typeof AdminKb20QuestionsTopicRoute
   '/admin-kb20/questions/bulk-duplicate': typeof AdminKb20QuestionsBulkDuplicateRoute
   '/admin-kb20/questions/': typeof AdminKb20QuestionsIndexRoute
+  '/api/admin/ga-oauth/callback': typeof ApiAdminGaOauthCallbackRoute
   '/lovable/email/queue/process': typeof LovableEmailQueueProcessRoute
 }
 export interface FileRouteTypes {
@@ -758,6 +767,7 @@ export interface FileRouteTypes {
     | '/admin-kb20/questions/$topic'
     | '/admin-kb20/questions/bulk-duplicate'
     | '/admin-kb20/questions/'
+    | '/api/admin/ga-oauth/callback'
     | '/lovable/email/queue/process'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -832,6 +842,7 @@ export interface FileRouteTypes {
     | '/admin-kb20/questions/$topic'
     | '/admin-kb20/questions/bulk-duplicate'
     | '/admin-kb20/questions'
+    | '/api/admin/ga-oauth/callback'
     | '/lovable/email/queue/process'
   id:
     | '__root__'
@@ -907,6 +918,7 @@ export interface FileRouteTypes {
     | '/admin-kb20/questions/$topic'
     | '/admin-kb20/questions/bulk-duplicate'
     | '/admin-kb20/questions/'
+    | '/api/admin/ga-oauth/callback'
     | '/lovable/email/queue/process'
   fileRoutesById: FileRoutesById
 }
@@ -973,6 +985,7 @@ export interface RootRouteChildren {
   AdminKb20QuestionsTopicRoute: typeof AdminKb20QuestionsTopicRoute
   AdminKb20QuestionsBulkDuplicateRoute: typeof AdminKb20QuestionsBulkDuplicateRoute
   AdminKb20QuestionsIndexRoute: typeof AdminKb20QuestionsIndexRoute
+  ApiAdminGaOauthCallbackRoute: typeof ApiAdminGaOauthCallbackRoute
   LovableEmailQueueProcessRoute: typeof LovableEmailQueueProcessRoute
 }
 
@@ -1489,6 +1502,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LovableEmailQueueProcessRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/api/admin/ga-oauth/callback': {
+      id: '/api/admin/ga-oauth/callback'
+      path: '/api/admin/ga-oauth/callback'
+      fullPath: '/api/admin/ga-oauth/callback'
+      preLoaderRoute: typeof ApiAdminGaOauthCallbackRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -1583,6 +1603,7 @@ const rootRouteChildren: RootRouteChildren = {
   AdminKb20QuestionsTopicRoute: AdminKb20QuestionsTopicRoute,
   AdminKb20QuestionsBulkDuplicateRoute: AdminKb20QuestionsBulkDuplicateRoute,
   AdminKb20QuestionsIndexRoute: AdminKb20QuestionsIndexRoute,
+  ApiAdminGaOauthCallbackRoute: ApiAdminGaOauthCallbackRoute,
   LovableEmailQueueProcessRoute: LovableEmailQueueProcessRoute,
 }
 export const routeTree = rootRouteImport
