@@ -1410,6 +1410,41 @@ def build_mr_pool(prefix: str, mr_pool: List[Dict[str, Any]]) -> List[Dict[str, 
     return items
 
 
+def build_tf_pool(prefix: str, vocab_pool: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    """Build true/false items from vocabulary frames.
+
+    For each vocab item we alternate between TRUE statements (correct word in
+    the sentence) and FALSE statements (a distractor swapped in). Output is
+    deterministic and unique because each (vocab, frame, polarity) is distinct.
+    """
+    items: List[Dict[str, Any]] = []
+    for w in vocab_pool:
+        word = w["word"]
+        distractors = w["distractors"]
+        for fi, frame in enumerate(w["frames"]):
+            polarity = (fi % 2 == 0)  # alternate true/false
+            if polarity:
+                sentence = frame.format(word)
+                explanation = (
+                    f"True. '{word}' means '{w['definition']}', which fits the sentence."
+                )
+            else:
+                wrong = distractors[fi % len(distractors)]
+                sentence = frame.format(wrong)
+                explanation = (
+                    f"False. '{wrong}' does not fit here — the natural choice is "
+                    f"'{word}' ('{w['definition']}')."
+                )
+            items.append({
+                "id": f"{prefix}-tf-{len(items) + 1:04d}",
+                "type": "true-false",
+                "question": f"Is the underlined word used correctly? \u201c{sentence}\u201d",
+                "correctAnswer": polarity,
+                "explanation": explanation,
+            })
+    return items
+
+
 def expand_mr_with_paraphrase(mr_items: List[Dict[str, Any]], target: int, prefix: str) -> List[Dict[str, Any]]:
     """Generate additional unique MR items by re-ordering option lists.
 
