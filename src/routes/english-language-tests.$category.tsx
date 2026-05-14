@@ -100,7 +100,7 @@ function CategoryPage() {
         {/* Header */}
         <header className="mt-4">
           <p className="text-xs font-semibold uppercase tracking-wider text-coral">
-            {ENGLISH_TYPE_LABELS[cat.type]}
+            {ENGLISH_TYPE_LABELS[cat.type as keyof typeof ENGLISH_TYPE_LABELS]}
           </p>
           <h1 className="mt-1 font-display text-3xl font-bold md:text-4xl">{cat.title}</h1>
           <p className="mt-3 max-w-3xl text-base text-muted-foreground">{cat.description}</p>
