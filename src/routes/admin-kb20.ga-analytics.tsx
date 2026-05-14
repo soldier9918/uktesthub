@@ -43,13 +43,32 @@ function GaAnalytics() {
   const [loading, setLoading] = useState(true);
   const [autoRefresh, setAutoRefresh] = useState(true);
   const [refreshing, setRefreshing] = useState(false);
+  const [connected, setConnected] = useState<boolean | null>(null);
+  const [googleEmail, setGoogleEmail] = useState<string | null>(null);
+  const [connecting, setConnecting] = useState(false);
+
+  const getToken = async () => {
+    const { data: sess } = await supabase.auth.getSession();
+    return sess.session?.access_token ?? null;
+  };
+
+  const checkStatus = useMemo(
+    () => async () => {
+      const accessToken = await getToken();
+      if (!accessToken) return;
+      const s = await getGaConnectionStatus({ data: { accessToken } });
+      setConnected(s.connected);
+      setGoogleEmail(s.email);
+      return s.connected;
+    },
+    [],
+  );
 
   const load = useMemo(
     () => async () => {
       setRefreshing(true);
       try {
-        const { data: sess } = await supabase.auth.getSession();
-        const accessToken = sess.session?.access_token;
+        const accessToken = await getToken();
         if (!accessToken) {
           setError("Not signed in");
           return;
@@ -69,14 +88,42 @@ function GaAnalytics() {
   );
 
   useEffect(() => {
-    load();
-  }, [load]);
+    (async () => {
+      const isConnected = await checkStatus();
+      if (isConnected) load();
+      else setLoading(false);
+    })();
+  }, [checkStatus, load]);
 
   useEffect(() => {
-    if (!autoRefresh) return;
+    if (!autoRefresh || !connected) return;
     const id = setInterval(() => load(), 60_000);
     return () => clearInterval(id);
-  }, [autoRefresh, load]);
+  }, [autoRefresh, connected, load]);
+
+  const handleConnect = async () => {
+    setConnecting(true);
+    try {
+      const accessToken = await getToken();
+      if (!accessToken) return;
+      const { url } = await getGaOAuthStartUrl({
+        data: { accessToken, origin: window.location.origin },
+      });
+      window.location.href = url;
+    } catch (e) {
+      setError(e instanceof Error ? e.message : String(e));
+      setConnecting(false);
+    }
+  };
+
+  const handleDisconnect = async () => {
+    const accessToken = await getToken();
+    if (!accessToken) return;
+    await disconnectGaOAuth({ data: { accessToken } });
+    setConnected(false);
+    setGoogleEmail(null);
+    setData(null);
+  };
 
   return (
     <main className="mx-auto max-w-6xl px-4 py-8">
