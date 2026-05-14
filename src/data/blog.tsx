@@ -11427,6 +11427,252 @@ export const blogPosts: BlogPost[] = [
     ),
   },
 
+  {
+    slug: "english-language-tests-explained",
+    title: "English Language Tests Explained: ESOL, IELTS, TOEFL, SELT, A1, A2, B1 and More",
+    description:
+      "Confused by ESOL, IELTS, TOEFL, SELT and English levels like A1, A2, B1 and B2? This simple UK Test Hub guide explains the main English tests and levels in plain English.",
+    excerpt:
+      "Understand ESOL, IELTS, TOEFL, SELT and CEFR English levels (A1, A2, B1, B2, C1, C2) in simple, friendly UK English.",
+    datePublished: "2026-05-14",
+    author: "UK Test Hub Team",
+    readingMinutes: 11,
+    category: "English",
+    tags: ["english", "ESOL", "IELTS", "TOEFL", "SELT", "CEFR"],
+    hero: h_EnglishLanguageTestsExplained,
+    faqs: [
+      { q: "Is ESOL the same as IELTS?", a: "No. ESOL is usually for general English learning, often in the UK. IELTS is an international English test often used for university, work and migration." },
+      { q: "Is TOEFL the same as IELTS?", a: "No. They are different English tests, but both can be used to prove English ability for study or other purposes. Some universities accept both, but you should always check the exact requirement." },
+      { q: "What does B1 English mean?", a: "B1 is an intermediate English level. It means you can usually handle everyday situations, understand common topics and explain simple opinions." },
+      { q: "What is the easiest English level?", a: "A1 is the beginner level. It is the first main CEFR level." },
+      { q: "What is the highest English level?", a: "C2 is the highest CEFR level. It means a very advanced or proficient level of English." },
+      { q: "What English test is needed for UK citizenship?", a: "Many UK citizenship and settlement routes require proof of English, often at B1 level or above, through an approved test or qualification. Always check the latest official UK government guidance." },
+      { q: "Is SELT a test provider?", a: "No. SELT means Secure English Language Test. It describes a type of approved English test used for certain UK immigration purposes. The actual test is taken through an approved provider." },
+      { q: "Can I practise English tests online?", a: "Yes. UK Test Hub provides mock tests and study guides to help learners practise English, Life in the UK, driving theory and other UK-based tests." },
+    ],
+    body: () => (
+      <>
+        <p>
+          There are many different English language tests and qualifications, and the names can be confusing.
+          Some are used for studying abroad, some are used for UK visas or citizenship, and some are used for
+          general English learning. This simple guide explains the main types so you know what each one means.
+        </p>
+
+        <h2>Quick summary table</h2>
+        <div className="my-6 overflow-x-auto rounded-2xl border border-border">
+          <table className="w-full text-left text-sm">
+            <thead className="bg-muted/60 text-xs uppercase tracking-wider text-muted-foreground">
+              <tr>
+                <th className="px-4 py-3">Name</th>
+                <th className="px-4 py-3">What it means</th>
+                <th className="px-4 py-3">Mainly used for</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-border">
+              <tr><td className="px-4 py-3 font-semibold">ESOL</td><td className="px-4 py-3">English for Speakers of Other Languages</td><td className="px-4 py-3">General English learning, UK adult education, work, everyday life and immigration-style English practice</td></tr>
+              <tr><td className="px-4 py-3 font-semibold">IELTS</td><td className="px-4 py-3">International English Language Testing System</td><td className="px-4 py-3">University, work, migration and visa-related English proof</td></tr>
+              <tr><td className="px-4 py-3 font-semibold">TOEFL</td><td className="px-4 py-3">Test of English as a Foreign Language</td><td className="px-4 py-3">University admission, especially for international study such as the USA, Canada and other countries</td></tr>
+              <tr><td className="px-4 py-3 font-semibold">SELT</td><td className="px-4 py-3">Secure English Language Test</td><td className="px-4 py-3">UK visa, settlement and citizenship requirements</td></tr>
+              <tr><td className="px-4 py-3 font-semibold">CEFR</td><td className="px-4 py-3">Common European Framework of Reference for Languages</td><td className="px-4 py-3">The level system used to describe English ability: A1, A2, B1, B2, C1 and C2</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>What is CEFR?</h2>
+        <p>
+          CEFR is <strong>not one test</strong>. It is a level system used to describe how good someone's English is.
+        </p>
+        <div className="my-6 overflow-x-auto rounded-2xl border border-border">
+          <table className="w-full text-left text-sm">
+            <thead className="bg-muted/60 text-xs uppercase tracking-wider text-muted-foreground">
+              <tr><th className="px-4 py-3">Level</th><th className="px-4 py-3">What it means</th></tr>
+            </thead>
+            <tbody className="divide-y divide-border">
+              <tr><td className="px-4 py-3 font-semibold">A1 — Beginner</td><td className="px-4 py-3">Very basic English. Can understand and use simple everyday phrases.</td></tr>
+              <tr><td className="px-4 py-3 font-semibold">A2 — Elementary</td><td className="px-4 py-3">Can understand common sentences and simple everyday conversations.</td></tr>
+              <tr><td className="px-4 py-3 font-semibold">B1 — Intermediate</td><td className="px-4 py-3">Can handle normal daily situations, explain simple opinions and understand everyday English.</td></tr>
+              <tr><td className="px-4 py-3 font-semibold">B2 — Upper-intermediate</td><td className="px-4 py-3">Can communicate more confidently, understand detailed texts and use English for work or study.</td></tr>
+              <tr><td className="px-4 py-3 font-semibold">C1 — Advanced</td><td className="px-4 py-3">Strong English for professional, academic and complex situations.</td></tr>
+              <tr><td className="px-4 py-3 font-semibold">C2 — Proficient</td><td className="px-4 py-3">Very high level of English, close to native-level understanding and expression.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          Many English tests and qualifications are linked to CEFR levels. For example, people often search for
+          "B1 English test" because B1 is commonly required for certain UK visa, settlement or citizenship routes.
+        </p>
+
+        <h2>What is ESOL?</h2>
+        <p>
+          ESOL stands for <strong>English for Speakers of Other Languages</strong>. It is commonly used in the UK
+          for people who are learning English for everyday life, work, study or integration.
+        </p>
+        <ul>
+          <li>ESOL can include reading, writing, speaking and listening.</li>
+          <li>It is often used by adult learners in colleges, training centres and community learning.</li>
+          <li>ESOL levels are often linked to CEFR levels.</li>
+        </ul>
+        <p>Rough level comparison:</p>
+        <ul>
+          <li>Entry 1 = around A1</li>
+          <li>Entry 2 = around A2</li>
+          <li>Entry 3 = around B1</li>
+          <li>Level 1 = around B2</li>
+          <li>Level 2 = around C1</li>
+        </ul>
+        <p className="text-sm text-muted-foreground">
+          This is a simple guide only. Exact requirements can depend on the test provider, course, visa type or organisation.
+        </p>
+
+        <h2>What is IELTS?</h2>
+        <p>
+          IELTS stands for <strong>International English Language Testing System</strong>. It is one of the most
+          recognised English tests in the world. IELTS is commonly used for university, work, professional
+          registration, migration and visa-related purposes.
+        </p>
+        <p>IELTS tests four skills:</p>
+        <ul>
+          <li>Listening</li>
+          <li>Reading</li>
+          <li>Writing</li>
+          <li>Speaking</li>
+        </ul>
+        <p>IELTS usually gives a band score from 0 to 9. Rough comparisons:</p>
+        <ul>
+          <li>IELTS 4.0 to 5.0 may be around B1 level</li>
+          <li>IELTS 5.5 to 6.5 may be around B2 level</li>
+          <li>IELTS 7.0 to 8.0 may be around C1 level</li>
+        </ul>
+        <p className="text-sm text-muted-foreground">
+          These are only approximate comparisons. Always check the official requirement for your course, visa,
+          employer or organisation.
+        </p>
+
+        <h2>What is TOEFL?</h2>
+        <p>
+          TOEFL stands for <strong>Test of English as a Foreign Language</strong>. It is often used for
+          university admission and international study, especially in the USA, Canada and other international
+          universities.
+        </p>
+        <p>TOEFL tests:</p>
+        <ul>
+          <li>Reading</li>
+          <li>Listening</li>
+          <li>Speaking</li>
+          <li>Writing</li>
+        </ul>
+        <p>The TOEFL iBT test is scored out of 120. TOEFL is mainly linked with academic English, so it is often used by students applying to universities.</p>
+
+        <h2>What is SELT?</h2>
+        <p>
+          SELT stands for <strong>Secure English Language Test</strong>. SELT is used when someone needs to prove
+          their English for certain UK visa, settlement or citizenship applications.
+        </p>
+        <ul>
+          <li>SELT tests must usually be taken with an approved test provider.</li>
+          <li>The required level depends on the type of application.</li>
+        </ul>
+        <p>Examples:</p>
+        <ul>
+          <li>A1 may be needed for some partner or family visa routes.</li>
+          <li>A2 may be needed for some visa extension routes.</li>
+          <li>B1 is commonly associated with settlement and citizenship-style English requirements.</li>
+        </ul>
+        <p className="text-sm text-muted-foreground">
+          Requirements can change, so always check the latest official UK government guidance before booking a test.
+        </p>
+
+        <h2>The difference between ESOL, IELTS, TOEFL and SELT</h2>
+        <ul>
+          <li><strong>ESOL:</strong> Best for general English learning and UK adult education.</li>
+          <li><strong>IELTS:</strong> Best for university, work, migration and international English proof.</li>
+          <li><strong>TOEFL:</strong> Best for international university applications, especially where TOEFL is accepted.</li>
+          <li><strong>SELT:</strong> Best for UK visa, settlement and citizenship requirements.</li>
+          <li><strong>CEFR:</strong> Not a test. It is the level scale used to describe English ability.</li>
+        </ul>
+
+        <h2>Which English test do I need?</h2>
+        <div className="my-6 grid gap-4 sm:grid-cols-2">
+          <div className="rounded-2xl border border-border bg-card p-5 shadow-soft">
+            <p className="text-xs font-semibold uppercase tracking-wider text-coral">Everyday English</p>
+            <p className="mt-2 font-display text-lg font-bold">Learning for daily life</p>
+            <p className="mt-1 text-sm text-muted-foreground">You may need ESOL practice.</p>
+          </div>
+          <div className="rounded-2xl border border-border bg-card p-5 shadow-soft">
+            <p className="text-xs font-semibold uppercase tracking-wider text-coral">UK Visa &amp; Citizenship</p>
+            <p className="mt-2 font-display text-lg font-bold">Visa, settlement or citizenship</p>
+            <p className="mt-1 text-sm text-muted-foreground">You may need a SELT test at the correct CEFR level.</p>
+          </div>
+          <div className="rounded-2xl border border-border bg-card p-5 shadow-soft">
+            <p className="text-xs font-semibold uppercase tracking-wider text-coral">University</p>
+            <p className="mt-2 font-display text-lg font-bold">Applying to university</p>
+            <p className="mt-1 text-sm text-muted-foreground">You may need IELTS or TOEFL.</p>
+          </div>
+          <div className="rounded-2xl border border-border bg-card p-5 shadow-soft">
+            <p className="text-xs font-semibold uppercase tracking-wider text-coral">Self-check</p>
+            <p className="mt-2 font-display text-lg font-bold">Just want to check your level?</p>
+            <p className="mt-1 text-sm text-muted-foreground">Start with A1, A2, B1 or B2 practice tests.</p>
+          </div>
+        </div>
+
+        <h2>Recommended practice areas on UK Test Hub</h2>
+        <div className="my-6 grid gap-3 sm:grid-cols-2">
+          <Link to="/all-tests" className="rounded-xl border border-border bg-card p-4 font-semibold shadow-soft hover:border-coral hover:text-coral">A1 English Test Practice →</Link>
+          <Link to="/all-tests" className="rounded-xl border border-border bg-card p-4 font-semibold shadow-soft hover:border-coral hover:text-coral">A2 English Test Practice →</Link>
+          <Link to="/all-tests" className="rounded-xl border border-border bg-card p-4 font-semibold shadow-soft hover:border-coral hover:text-coral">B1 English Test Practice →</Link>
+          <Link to="/all-tests" className="rounded-xl border border-border bg-card p-4 font-semibold shadow-soft hover:border-coral hover:text-coral">B2 English Test Practice →</Link>
+          <Link to="/topic/$slug" params={{ slug: "ielts" }} className="rounded-xl border border-border bg-card p-4 font-semibold shadow-soft hover:border-coral hover:text-coral">IELTS Practice →</Link>
+          <Link to="/topic/$slug" params={{ slug: "toefl" }} className="rounded-xl border border-border bg-card p-4 font-semibold shadow-soft hover:border-coral hover:text-coral">TOEFL Practice →</Link>
+          <Link to="/topic/$slug" params={{ slug: "esol" }} className="rounded-xl border border-border bg-card p-4 font-semibold shadow-soft hover:border-coral hover:text-coral">ESOL Practice →</Link>
+          <Link to="/all-tests" className="rounded-xl border border-border bg-card p-4 font-semibold shadow-soft hover:border-coral hover:text-coral">English Listening Practice →</Link>
+          <Link to="/all-tests" className="rounded-xl border border-border bg-card p-4 font-semibold shadow-soft hover:border-coral hover:text-coral">English Reading Practice →</Link>
+          <Link to="/all-tests" className="rounded-xl border border-border bg-card p-4 font-semibold shadow-soft hover:border-coral hover:text-coral">English Speaking Practice →</Link>
+          <Link to="/all-tests" className="rounded-xl border border-border bg-card p-4 font-semibold shadow-soft hover:border-coral hover:text-coral">English Writing Practice →</Link>
+        </div>
+
+        <h2>Frequently asked questions</h2>
+        <div className="my-6 divide-y divide-border rounded-2xl border border-border bg-card">
+          {[
+            { q: "Is ESOL the same as IELTS?", a: "No. ESOL is usually for general English learning, often in the UK. IELTS is an international English test often used for university, work and migration." },
+            { q: "Is TOEFL the same as IELTS?", a: "No. They are different English tests, but both can be used to prove English ability for study or other purposes. Some universities accept both, but you should always check the exact requirement." },
+            { q: "What does B1 English mean?", a: "B1 is an intermediate English level. It means you can usually handle everyday situations, understand common topics and explain simple opinions." },
+            { q: "What is the easiest English level?", a: "A1 is the beginner level. It is the first main CEFR level." },
+            { q: "What is the highest English level?", a: "C2 is the highest CEFR level. It means a very advanced or proficient level of English." },
+            { q: "What English test is needed for UK citizenship?", a: "Many UK citizenship and settlement routes require proof of English, often at B1 level or above, through an approved test or qualification. Always check the latest official UK government guidance." },
+            { q: "Is SELT a test provider?", a: "No. SELT means Secure English Language Test. It describes a type of approved English test used for certain UK immigration purposes. The actual test is taken through an approved provider." },
+            { q: "Can I practise English tests online?", a: "Yes. UK Test Hub provides mock tests and study guides to help learners practise English, Life in the UK, driving theory and other UK-based tests." },
+          ].map((f) => (
+            <details key={f.q} className="group p-5">
+              <summary className="cursor-pointer list-none font-display text-base font-bold text-foreground marker:hidden flex items-start justify-between gap-4">
+                <span>{f.q}</span>
+                <span aria-hidden className="mt-1 text-coral transition-transform group-open:rotate-45">+</span>
+              </summary>
+              <p className="mt-3 text-sm text-muted-foreground">{f.a}</p>
+            </details>
+          ))}
+        </div>
+
+        <p className="mt-8 rounded-2xl border border-border bg-muted/40 p-5 text-sm text-muted-foreground">
+          UK Test Hub is an independent practice and study website. Always check official test provider or
+          government guidance before booking a real exam or using a qualification for an application.
+        </p>
+
+        <div className="my-8 rounded-2xl border border-border bg-card p-6 text-center shadow-soft">
+          <p className="font-display text-xl font-bold text-foreground">Ready to practise?</p>
+          <p className="mt-1 text-sm text-muted-foreground">
+            Explore our English practice tests and UK mock tests to build your confidence step by step.
+          </p>
+          <Link
+            to="/all-tests"
+            className="mt-4 inline-flex items-center justify-center rounded-md bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground shadow-soft transition-colors hover:bg-primary/90"
+          >
+            Explore All Tests
+          </Link>
+        </div>
+      </>
+    ),
+  },
+
 ];
 
 export const getPostBySlug = (slug: string) => blogPosts.find((p) => p.slug === slug);
