@@ -1582,8 +1582,10 @@ def build_bank(slug: str) -> Dict[str, Any]:
         slotted: List[tuple] = []
         for type_rank, (tname, pool) in enumerate(type_order):
             count = MIX[tname]
+            shifts = TYPE_BLOCK_SHIFTS[tname]
             for i in range(count):
-                qid = pool[i * TOTAL_MOCKS + idx]["id"]
+                shifted_idx = (idx + shifts[i]) % TOTAL_MOCKS
+                qid = pool[i * TOTAL_MOCKS + shifted_idx]["id"]
                 slot = (i + 0.5) * PER_MOCK / count
                 slotted.append((slot, type_rank, qid))
         slotted.sort(key=lambda x: (x[0], x[1]))
