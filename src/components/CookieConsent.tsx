@@ -9,7 +9,7 @@ import {
   subscribe,
   type ConsentState,
 } from "@/lib/consent";
-import { initGA, setAnalyticsConsent } from "@/lib/analytics-ga";
+import { setAnalyticsConsent } from "@/lib/analytics-ga";
 
 /**
  * TODO (certified CMP swap): When integrating a Google-certified IAB TCF v2.2
