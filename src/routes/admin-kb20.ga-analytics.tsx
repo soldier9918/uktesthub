@@ -196,6 +196,29 @@ function GaAnalytics() {
           </div>
 
           <Card className="mt-6 p-4">
+            <h2 className="text-sm font-semibold">
+              Debug: raw GA4 runRealtimeReport responses
+            </h2>
+            <p className="mt-1 text-xs text-muted-foreground">
+              Live cards above are derived strictly from these two responses.
+            </p>
+            <div className="mt-3 grid gap-3 md:grid-cols-2">
+              <div>
+                <div className="text-xs font-medium">activeUsers</div>
+                <pre className="mt-1 max-h-64 overflow-auto rounded bg-muted p-2 text-[11px]">
+                  {JSON.stringify(JSON.parse(data.realtimeRaw.activeUsersResponse), null, 2)}
+                </pre>
+              </div>
+              <div>
+                <div className="text-xs font-medium">screenPageViews</div>
+                <pre className="mt-1 max-h-64 overflow-auto rounded bg-muted p-2 text-[11px]">
+                  {JSON.stringify(JSON.parse(data.realtimeRaw.pageviewsResponse), null, 2)}
+                </pre>
+              </div>
+            </div>
+          </Card>
+
+          <Card className="mt-6 p-4">
             <h2 className="text-sm font-semibold">Pageviews — last 24 hours</h2>
             <div className="mt-3 h-64">
               <ResponsiveContainer width="100%" height="100%">
