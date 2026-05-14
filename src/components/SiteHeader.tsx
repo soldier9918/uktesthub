@@ -126,13 +126,13 @@ export function SiteHeader() {
       </div>
 
       {mobileOpen && (
-        <div className="border-t border-border/60 bg-background lg:hidden">
+        <div className="border-t border-white/10 bg-[#06172e] lg:hidden">
           <nav className="mx-auto flex max-w-7xl flex-col gap-1 px-4 py-3 md:px-6">
-            <div className="mb-2 flex items-center gap-2 border-b border-border/60 pb-2">
+            <div className="mb-2 flex items-center gap-2 border-b border-white/10 pb-2">
               <button
                 type="button"
                 aria-label="Search"
-                className="inline-flex h-10 flex-1 items-center justify-center gap-2 rounded-lg text-sm font-semibold text-foreground/80 hover:bg-muted hover:text-foreground"
+                className="inline-flex h-10 flex-1 items-center justify-center gap-2 text-sm font-semibold text-white/80 hover:bg-white/10 hover:text-white"
               >
                 <Search className="h-4 w-4" /> Search
               </button>
@@ -140,7 +140,7 @@ export function SiteHeader() {
                 type="button"
                 onClick={toggleTheme}
                 aria-label="Toggle dark mode"
-                className="inline-flex h-10 flex-1 items-center justify-center gap-2 rounded-lg text-sm font-semibold text-foreground/80 hover:bg-muted hover:text-foreground"
+                className="inline-flex h-10 flex-1 items-center justify-center gap-2 text-sm font-semibold text-white/80 hover:bg-white/10 hover:text-white"
               >
                 {isDark ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
                 {isDark ? "Light mode" : "Dark mode"}
@@ -153,8 +153,8 @@ export function SiteHeader() {
                   to={item.to as "/category/$slug"}
                   params={{ slug: item.slug }}
                   onClick={() => setMobileOpen(false)}
-                  className="rounded-lg px-3 py-2.5 text-sm font-semibold text-foreground/80 hover:bg-muted hover:text-foreground"
-                  activeProps={{ className: "bg-muted text-foreground" }}
+                  className="px-3 py-2.5 text-sm font-semibold uppercase tracking-wider text-white/80 hover:bg-white/10 hover:text-white"
+                  activeProps={{ className: "bg-white/10 text-white" }}
                 >
                   {item.label}
                 </Link>
@@ -163,9 +163,9 @@ export function SiteHeader() {
                   key={item.label}
                   to={item.to as "/"}
                   onClick={() => setMobileOpen(false)}
-                  className="rounded-lg px-3 py-2.5 text-sm font-semibold text-foreground/80 hover:bg-muted hover:text-foreground"
+                  className="px-3 py-2.5 text-sm font-semibold uppercase tracking-wider text-white/80 hover:bg-white/10 hover:text-white"
                   activeOptions={{ exact: true }}
-                  activeProps={{ className: "bg-muted text-foreground" }}
+                  activeProps={{ className: "bg-white/10 text-white" }}
                 >
                   {item.label}
                 </Link>
