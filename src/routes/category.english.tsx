@@ -395,3 +395,59 @@ function TestCard({ test }: { test: TestConfig }) {
   );
 }
 
+
+function EnglishSeoContent() {
+  const seo = categorySeo.english;
+  if (!seo) return null;
+  return (
+    <section className="mt-12 rounded-3xl border border-border bg-card p-6 shadow-soft md:p-8">
+      <p className="text-xs font-semibold uppercase tracking-wider text-coral">
+        Background
+      </p>
+      <h2 className="mt-1 font-display text-2xl font-bold md:text-3xl">
+        About English language tests in the UK
+      </h2>
+
+      <div className="mt-4 space-y-3 text-sm leading-relaxed text-muted-foreground md:text-base">
+        {seo.intro.map((p, i) => (
+          <p key={i}>{p}</p>
+        ))}
+      </div>
+
+      <div className="mt-8 space-y-7">
+        {seo.sections.map((s) => (
+          <article key={s.heading}>
+            <h3 className="font-display text-lg font-bold text-foreground md:text-xl">
+              {s.heading}
+            </h3>
+            <div className="mt-2 space-y-3 text-sm leading-relaxed text-muted-foreground md:text-base">
+              {s.body.map((p, i) => (
+                <p key={i}>{p}</p>
+              ))}
+            </div>
+          </article>
+        ))}
+      </div>
+
+      {seo.faqs.length > 0 && (
+        <>
+          <h3 className="mt-8 font-display text-lg font-bold text-foreground md:text-xl">
+            Frequently asked questions
+          </h3>
+          <Accordion type="single" collapsible className="mt-3">
+            {seo.faqs.map((f, i) => (
+              <AccordionItem key={i} value={`faq-${i}`}>
+                <AccordionTrigger className="text-left text-sm font-semibold md:text-base">
+                  {f.q}
+                </AccordionTrigger>
+                <AccordionContent className="text-sm text-muted-foreground md:text-base">
+                  {f.a}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
+        </>
+      )}
+    </section>
+  );
+}
