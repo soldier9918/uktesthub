@@ -41,6 +41,14 @@ type RawMultipleResponse = {
   explanation: string;
 };
 
+type RawTrueFalse = {
+  id: string;
+  type: "true-false";
+  question: string;
+  correctAnswer: boolean;
+  explanation: string;
+};
+
 type RawBlanks = {
   id: string;
   type: "fill-blanks" | "dropdown-blanks";
@@ -50,7 +58,7 @@ type RawBlanks = {
   explanation: string;
 };
 
-type RawBankItem = RawMcq | RawMultipleResponse | RawBlanks;
+type RawBankItem = RawMcq | RawMultipleResponse | RawTrueFalse | RawBlanks;
 
 type V2File = {
   version: 2;
