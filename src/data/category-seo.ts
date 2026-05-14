@@ -15,7 +15,7 @@ export type CategorySeo = {
 
 export const categorySeo: Record<string, CategorySeo> = {
   driving: {
-    title: "Driving Theory Practice Test UK 2026 | Mock Exams & Questions",
+    title: "Driving Mock Tests | UK Test Hub",
     description:
       "Free UK Driving Theory practice tests for 2026. Realistic DVSA-style questions, hazard perception, road signs and motorcycle theory with full explanations.",
     intro: [
@@ -85,7 +85,7 @@ export const categorySeo: Record<string, CategorySeo> = {
   },
 
   citizenship: {
-    title: "Life in the UK Test Practice 2026 | Free Mock Exams & Questions",
+    title: "Life in the UK Tests | UK Test Hub",
     description:
       "Free Life in the UK Test practice for 2026. Official handbook coverage, British history, traditions and government with realistic 24-question mocks.",
     intro: [
@@ -154,7 +154,7 @@ export const categorySeo: Record<string, CategorySeo> = {
   },
 
   english: {
-    title: "Free IELTS, TOEFL & ESOL Practice Tests UK 2026 | UK Test Hub",
+    title: "English Language Tests | UK Test Hub",
     description:
       "Free IELTS, TOEFL, ESOL and English grammar practice tests. Realistic listening, reading and writing exercises with instant marking and explanations.",
     intro: [
@@ -223,7 +223,7 @@ export const categorySeo: Record<string, CategorySeo> = {
   },
 
   education: {
-    title: "11+, GCSE & SATs Practice Tests 2026 | Free UK School Mocks",
+    title: "11+, GCSE & SATs Mock Tests | UK Test Hub",
     description:
       "Free 11+ Exam, GCSE Maths, GCSE English and KS1/KS2 SATs practice tests. UK curriculum-aligned questions with instant marking and worked solutions.",
     intro: [
@@ -293,7 +293,7 @@ export const categorySeo: Record<string, CategorySeo> = {
   },
 
   career: {
-    title: "Aptitude & Psychometric Test Practice 2026 | Free UK Job Mocks",
+    title: "Aptitude & Psychometric Tests | UK Test Hub",
     description:
       "Free numerical, verbal, logical reasoning and Situational Judgement Test practice. Prepare for graduate schemes, civil service and corporate UK assessments.",
     intro: [
@@ -362,7 +362,7 @@ export const categorySeo: Record<string, CategorySeo> = {
   },
 
   professional: {
-    title: "Workplace Compliance & Safety Test Practice 2026 | Free Mocks",
+    title: "Workplace Compliance Tests | UK Test Hub",
     description:
       "Free practice for the workplace compliance certifications UK employers expect — Food Hygiene, First Aid, Fire Safety, Manual Handling, Health & Safety Awareness and GDPR / Data Protection.",
     intro: [
@@ -421,7 +421,7 @@ export const categorySeo: Record<string, CategorySeo> = {
   },
 
   nhs: {
-    title: "NHS & NMC CBT Practice Tests 2026 | Free Numeracy & Literacy Mocks",
+    title: "NHS Mock Tests | UK Test Hub",
     description:
       "Free NHS numeracy, literacy, values-based recruitment and NMC CBT practice tests for nurses. Realistic UK healthcare assessment questions with explanations.",
     intro: [
@@ -490,7 +490,7 @@ export const categorySeo: Record<string, CategorySeo> = {
   },
 
   fun: {
-    title: "Fun UK Quizzes 2026 | How British Are You? & UK Slang Tests",
+    title: "Fun UK Quizzes | UK Test Hub",
     description:
       "Light-hearted UK quizzes: How British Are You, UK slang quiz and a fresh general knowledge daily quiz. Test your UK culture knowledge for free.",
     intro: [
@@ -546,7 +546,7 @@ export const categorySeo: Record<string, CategorySeo> = {
   },
 
   "taxi-private-hire": {
-    title: "TfL Taxi & Private Hire Practice 2026 | SERU, Topographical, ULEZ",
+    title: "Taxi & Private Hire Tests | UK Test Hub",
     description:
       "Free practice tests for London PHV and taxi drivers — TfL SERU, Topographical Assessment, PHV licence, ULEZ, Congestion Charge, safeguarding, English and accessibility.",
     intro: [
@@ -613,7 +613,7 @@ export const categorySeo: Record<string, CategorySeo> = {
   },
 
   security: {
-    title: "SIA Licence Practice Tests 2026 | Door Supervisor, CCTV & Close Protection",
+    title: "SIA Licence Tests | UK Test Hub",
     description:
       "Free SIA mock tests for 2026 — Door Supervisor, CCTV Operator, Close Protection and the Door Supervisor Top-Up. Realistic UK questions with explanations.",
     intro: [
@@ -683,7 +683,7 @@ export const categorySeo: Record<string, CategorySeo> = {
   },
 
   hospitality: {
-    title: "Hospitality Test Practice 2026 | APLH, Allergens, HACCP & Customer Service",
+    title: "Hospitality Tests | UK Test Hub",
     description:
       "Free practice tests for hospitality professionals — Personal Licence (APLH), Allergen Awareness, HACCP Level 2 and customer service. Realistic UK questions with explanations.",
     intro: [
@@ -742,7 +742,7 @@ export const categorySeo: Record<string, CategorySeo> = {
   },
 
   construction: {
-    title: "CSCS & CITB Practice Tests 2026 | Operative, Gold, HSE & Working at Height",
+    title: "CSCS & CITB Tests | UK Test Hub",
     description:
       "Free CSCS and CITB practice tests — CSCS Operative, CSCS Gold (Supervisor), CITB Health, Safety & Environment and IPAF / PASMA Working at Height mocks for UK sites.",
     intro: [
@@ -810,7 +810,7 @@ export const categorySeo: Record<string, CategorySeo> = {
   },
 
   finance: {
-    title: "Finance & Accounting Practice Tests 2026 | AAT, ACCA, CFA & Awareness",
+    title: "Finance & Accounting Tests | UK Test Hub",
     description:
       "Free practice tests for AAT Level 2 Bookkeeping, ACCA Foundations (FIA), CFA-style aptitude and general financial awareness. Realistic UK exam-style questions with explanations.",
     intro: [
@@ -876,7 +876,7 @@ export const categorySeo: Record<string, CategorySeo> = {
   },
 
   "it-tech": {
-    title: "IT & Tech Certification Practice 2026 | CompTIA A+, ITIL 4 & Microsoft",
+    title: "IT & Tech Certification Tests | UK Test Hub",
     description:
       "Free practice tests for CompTIA A+, ITIL 4 Foundation, Microsoft Fundamentals (MS-900 / AZ-900) and Cyber Security Awareness. Realistic exam-style questions with explanations.",
     intro: [
@@ -945,7 +945,7 @@ export const categorySeo: Record<string, CategorySeo> = {
   },
 
   "healthcare-entry": {
-    title: "UCAT, BMAT, OET & PLAB 1 Practice 2026 | Free Healthcare Entry Mocks",
+    title: "UCAT, BMAT & PLAB Tests | UK Test Hub",
     description:
       "Free UCAT, BMAT, OET and PLAB 1 practice tests for medical school applicants and overseas-trained doctors. UK exam-style questions with full explanations.",
     intro: [
@@ -1011,7 +1011,7 @@ export const categorySeo: Record<string, CategorySeo> = {
   },
 
   teaching: {
-    title: "Teaching Practice Tests 2026 | QTS Numeracy, Literacy & Safeguarding",
+    title: "Teaching Practice Tests | UK Test Hub",
     description:
       "Free practice for the QTS Numeracy and Literacy Skills tests, Professional Skills for Teachers and Safeguarding in Schools. Realistic UK exam-style questions with explanations.",
     intro: [
@@ -1073,7 +1073,7 @@ export const categorySeo: Record<string, CategorySeo> = {
   },
 
   legal: {
-    title: "SQE & LNAT Practice Tests 2026 | Free FLK1, FLK2, LNAT & UK Legal Mocks",
+    title: "SQE & LNAT Practice Tests | UK Test Hub",
     description:
       "Free practice for SQE1 FLK1 and FLK2, the LNAT multiple-choice section and a UK Legal System knowledge quiz. Realistic single-best-answer questions with explanations.",
     intro: [
@@ -1142,7 +1142,7 @@ export const categorySeo: Record<string, CategorySeo> = {
   },
 
   "military-emergency": {
-    title: "Army, Police & Firefighter Test Practice 2026 | BARB, PIRT, SEARCH, NFSAT",
+    title: "Army, Police & Fire Tests | UK Test Hub",
     description:
       "Free practice for the Army BARB, Police PIRT (Initial Recruitment), Police SEARCH Assessment and Firefighter NFSAT. Realistic UK uniformed-service questions with explanations.",
     intro: [
@@ -1204,7 +1204,7 @@ export const categorySeo: Record<string, CategorySeo> = {
   },
 
   "maritime-aviation": {
-    title: "PPL, ATPL & RYA Practice Tests 2026 | Free Aviation & Maritime Theory",
+    title: "PPL, ATPL & RYA Tests | UK Test Hub",
     description:
       "Free practice for PPL Air Law, PPL Meteorology, ATPL basics and the RYA Day Skipper theory. Realistic UK / EASA aviation and RYA maritime questions with explanations.",
     intro: [
@@ -1265,7 +1265,7 @@ export const categorySeo: Record<string, CategorySeo> = {
   },
 
   government: {
-    title: "Civil Service & Border Force Test Practice 2026 | CSJT, CS Reasoning",
+    title: "Civil Service Tests | UK Test Hub",
     description:
       "Free practice for the Civil Service Judgement Test (CSJT), Civil Service Verbal and Numerical Reasoning, and the Border Force Recruitment Test. UK exam-style questions with explanations.",
     intro: [
@@ -1333,7 +1333,7 @@ export const categorySeo: Record<string, CategorySeo> = {
     ],
   },
   "hgv-logistics": {
-    title: "HGV / LGV & Logistics Practice Tests UK 2026 — Driver CPC, ADR, Forklift",
+    title: "HGV & Logistics Tests | UK Test Hub",
     description: "Free UK practice tests for Driver CPC Module 2 and Module 4, ADR dangerous goods, forklift theory and Transport Manager CPC. Realistic questions with full explanations.",
     intro: [
       "Working professionally in road haulage means passing more than the standard car or van licence. Whether you're starting your Driver CPC, adding ADR to your card, getting a forklift ticket or stepping up to Transport Manager, every qualification has a written knowledge test and the pass marks are tight. Our free HGV / LGV & Logistics mocks cover all of them.",
@@ -1349,7 +1349,7 @@ export const categorySeo: Record<string, CategorySeo> = {
     ],
   },
   "care-social-work": {
-    title: "Care & Social Work Practice Tests UK 2026 — Care Certificate, Safeguarding",
+    title: "Care & Social Work Tests | UK Test Hub",
     description: "Free UK practice tests for the Care Certificate 15 standards, Level 2 Adult Social Care, Safeguarding Adults, Medication Awareness and Social Work England readiness.",
     intro: [
       "Adult social care is one of the most regulated workforces in the UK, and every new starter has to demonstrate the Care Certificate's 15 standards within their first 12 weeks. Our free Care & Social Work mocks cover the Care Certificate, Level 2 Adult Social Care, Safeguarding Adults, safe handling of medication and the Social Work England standards for newly-qualified social workers.",
@@ -1362,7 +1362,7 @@ export const categorySeo: Record<string, CategorySeo> = {
     ],
   },
   "beauty-wellbeing": {
-    title: "Beauty & Wellbeing Practice Tests UK 2026 — Therapy, Barbering, Nails, Hair",
+    title: "Beauty & Wellbeing Tests | UK Test Hub",
     description: "Free UK practice tests for Level 2 Beauty Therapy, Barbering, Nail Technician, Hairdressing and Infection Control. Realistic questions with full explanations.",
     intro: [
       "From Level 2 Beauty Therapy to Barbering, Nail Tech and Hairdressing, every professional beauty and wellbeing qualification has an underpinning knowledge exam — anatomy, contraindications, infection control and salon health and safety. Our free Beauty & Wellbeing mocks help you walk into the assessment room calm and prepared.",
@@ -1375,7 +1375,7 @@ export const categorySeo: Record<string, CategorySeo> = {
     ],
   },
   "retail-customer-service": {
-    title: "Retail & Customer Service Practice Tests UK 2026 — Retail L2, ABTA, Challenge 25",
+    title: "Retail & Customer Service Tests | UK Test Hub",
     description: "Free UK practice tests for Retail Level 2, ABTA travel agent, Customer Service Level 2, Visual Merchandising and Age-Restricted Sales (Challenge 25).",
     intro: [
       "Whether you're new to the shop floor, training as a travel agent, or refreshing your Challenge 25 awareness for a licensing audit, our free Retail & Customer Service mocks cover the assessments most UK retailers and travel businesses require — all updated for 2026 and written in plain English.",
@@ -1388,7 +1388,7 @@ export const categorySeo: Record<string, CategorySeo> = {
     ],
   },
   "animal-care": {
-    title: "Animal Care & Veterinary Practice Tests UK 2026 — RVN, Grooming, First Aid",
+    title: "Animal Care Tests | UK Test Hub",
     description: "Free UK practice tests for RVN pre-registration, dog grooming theory, animal first aid, canine behaviour and equine care theory.",
     intro: [
       "From student veterinary nurses preparing for RCVS registration to professional dog groomers and equine yard staff, our free Animal Care & Veterinary mocks cover the underpinning knowledge tests for the most common UK animal care qualifications.",

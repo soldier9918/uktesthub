@@ -21,7 +21,7 @@ const generic = (
   awarder: string,
   context: string,
 ): TopicSeo => ({
-  title: `${topicTitle} Guide — Tips, Format & How to Pass — UK Test Hub`,
+  title: `${topicTitle} Guide | UK Test Hub`,
   description: `Free study guide for the ${topicTitle}. Format, syllabus, study tips, common mistakes and FAQs, plus unlimited mock tests.`,
   tagline: `Everything you need to know about the ${topicTitle} before you book.`,
   intro: [
@@ -92,7 +92,7 @@ const generic = (
 export const topicSeo: Record<string, TopicSeo> = {
   // -------- DRIVING ---------------------------------------------------
   "driving-theory": {
-    title: "Driving Theory Test Guide 2026 — Format, Pass Mark & Tips — UK Test Hub",
+    title: "Driving Theory Test Guide 2026 | UK Test Hub",
     description:
       "Complete UK Driving Theory Test guide for 2026. DVSA format, 50-question pass mark, hazard perception, study plan and common mistakes — with free mock tests.",
     tagline: "Everything you need to pass the DVSA Driving Theory Test first time.",
@@ -163,7 +163,7 @@ export const topicSeo: Record<string, TopicSeo> = {
     ],
   },
   "hazard-perception": {
-    title: "Hazard Perception Test Guide 2026 — Scoring, Clips & Tips — UK Test Hub",
+    title: "Hazard Perception Test Guide 2026 | UK Test Hub",
     description:
       "Free Hazard Perception Test guide. Learn how the DVSA scoring works, how to spot developing hazards early, and avoid the cheat-flag — with practice clips.",
     tagline: "Master the DVSA hazard perception scoring window before test day.",
@@ -238,7 +238,7 @@ export const topicSeo: Record<string, TopicSeo> = {
     ],
   },
   "road-signs": {
-    title: "UK Road Signs Test Guide — Shapes, Meanings & Practice — UK Test Hub",
+    title: "UK Road Signs Test Guide | UK Test Hub",
     description:
       "Master UK road signs for the DVSA theory test. Learn the shape and colour rules, the 100 most-tested signs, and take free mock tests with answer explanations.",
     tagline: "The shape-and-colour shortcut to learning every UK road sign.",
@@ -304,7 +304,7 @@ export const topicSeo: Record<string, TopicSeo> = {
     ],
   },
   "motorcycle-theory": {
-    title: "Motorcycle Theory Test Guide 2026 — Module 1 & 2 — UK Test Hub",
+    title: "Motorcycle Theory Test Guide 2026 | UK Test Hub",
     description:
       "Free Motorcycle Theory Test guide for 2026. Format, syllabus, CBT context, hazard perception and study plan — with unlimited mock papers.",
     tagline: "Pass the DVSA Motorcycle Theory Test before your Module 1 booking.",
@@ -395,7 +395,7 @@ export const topicSeo: Record<string, TopicSeo> = {
 
   // -------- CITIZENSHIP -----------------------------------------------
   "life-in-the-uk": {
-    title: "Life in the UK Test Guide 2026 — Format, Pass Mark & Tips",
+    title: "Life in the UK Test Guide 2026 | UK Test Hub",
     description:
       "Complete Life in the UK Test guide for 2026. Home Office format, 24-question pass mark, study handbook, history and government topics — with free mocks.",
     tagline: "The official Home Office test for ILR and British citizenship — explained.",
@@ -475,7 +475,7 @@ export const topicSeo: Record<string, TopicSeo> = {
     ],
   },
   "british-citizenship": {
-    title: "British Citizenship Test Guide 2026 — Naturalisation, Ceremony & Oath",
+    title: "British Citizenship Test Guide | UK Test Hub",
     description:
       "Free British Citizenship guide for 2026. Naturalisation rules, residency requirements, the Life in the UK Test, the citizenship ceremony and oath — with practice questions.",
     tagline: "From ILR to British passport — the naturalisation route explained.",
@@ -553,7 +553,7 @@ export const topicSeo: Record<string, TopicSeo> = {
     ],
   },
   "uk-laws-rights": {
-    title: "UK Laws & Rights Quiz Guide — Everyday Law for Residents",
+    title: "UK Laws & Rights Quiz Guide | UK Test Hub",
     description:
       "Free guide to UK everyday laws and rights. Equality Act, employment rights, consumer protection, criminal vs civil law, police powers — with practice questions.",
     tagline: "The laws every UK resident is expected to know — explained simply.",
@@ -632,7 +632,7 @@ export const topicSeo: Record<string, TopicSeo> = {
     ],
   },
   "uk-geography": {
-    title: "UK Geography Test Guide — Nations, Capitals, Rivers & Landmarks",
+    title: "UK Geography Test Guide | UK Test Hub",
     description:
       "Free UK Geography quiz guide. Four nations, capital cities, mountains, rivers, regions and landmarks — perfect alongside the Life in the UK Test.",
     tagline: "The places, regions and landmarks every UK resident should recognise.",
@@ -711,7 +711,7 @@ export const topicSeo: Record<string, TopicSeo> = {
 
   // -------- ENGLISH ---------------------------------------------------
   ielts: {
-    title: "IELTS Practice Guide — Listening, Reading, Writing & Speaking",
+    title: "IELTS Practice Guide | UK Test Hub",
     description:
       "Free IELTS practice guide. Academic vs General Training, band scoring, the four sections explained, and study plan — with unlimited practice questions.",
     tagline: "The four-skill English test used for UK visas, university and PR worldwide.",
@@ -799,7 +799,7 @@ export const topicSeo: Record<string, TopicSeo> = {
     ],
   },
   esol: {
-    title: "ESOL Practice Guide — A1, A2, B1, B2, C1 & C2 Levels Explained",
+    title: "ESOL Practice Guide | UK Test Hub",
     description:
       "Free ESOL guide. Trinity, City & Guilds and LanguageCert tests for UK visas, settlement and citizenship. Levels, format and study tips with practice questions.",
     tagline: "The regulated English test route for visas, ILR and citizenship.",
@@ -882,7 +882,7 @@ export const topicSeo: Record<string, TopicSeo> = {
     ],
   },
   toefl: {
-    title: "TOEFL iBT Guide — Format, Scoring & Study Plan",
+    title: "TOEFL iBT Test Guide | UK Test Hub",
     description:
       "Free TOEFL iBT guide. Reading, Listening, Speaking and Writing format, 0–120 scoring, university requirements and study tips with practice questions.",
     tagline: "The internet-based English test for university admission worldwide.",
@@ -969,7 +969,7 @@ export const topicSeo: Record<string, TopicSeo> = {
     ],
   },
   grammar: {
-    title: "English Grammar & Vocabulary Guide — Tenses, Articles & Prepositions",
+    title: "English Grammar & Vocab Guide | UK Test Hub",
     description:
       "Free English grammar and vocabulary practice guide. Tenses, articles, prepositions, collocations and academic vocab — perfect warm-up for IELTS, TOEFL and ESOL.",
     tagline: "Tighten the grammar gaps that cost easy marks on every English test.",
@@ -1045,7 +1045,7 @@ export const topicSeo: Record<string, TopicSeo> = {
 
   // -------- EDUCATION -------------------------------------------------
   "eleven-plus": {
-    title: "11+ Exam Guide — Verbal, Non-Verbal, Maths & English",
+    title: "11+ Exam Guide | UK Test Hub",
     description:
       "Free 11+ exam guide for UK grammar schools. GL Assessment vs CEM, the four sections, study plan and tips for parents — with practice questions.",
     tagline: "The grammar school entrance exam — what to study and when to start.",
@@ -1122,7 +1122,7 @@ export const topicSeo: Record<string, TopicSeo> = {
     ],
   },
   "gcse-maths": {
-    title: "GCSE Maths Guide — Foundation vs Higher, Grades 1–9",
+    title: "GCSE Maths Guide | UK Test Hub",
     description:
       "Free GCSE Maths guide. AQA, Edexcel and OCR format, Foundation vs Higher tier, the new 1–9 grading and study tips — with practice questions.",
     tagline: "Pass GCSE Maths first time — the tier choice that decides your grade ceiling.",
@@ -1200,7 +1200,7 @@ export const topicSeo: Record<string, TopicSeo> = {
     ],
   },
   "gcse-english": {
-    title: "GCSE English Guide — Language, Literature & the 1–9 Grades",
+    title: "GCSE English Guide | UK Test Hub",
     description:
       "Free GCSE English guide. AQA, Edexcel and OCR format, English Language vs Literature, set texts and study plan — with practice questions.",
     tagline: "Pass GCSE English Language and unlock sixth form, apprenticeships and most UK jobs.",
@@ -1286,7 +1286,7 @@ export const topicSeo: Record<string, TopicSeo> = {
     ],
   },
   sats: {
-    title: "SATs Guide — KS1 and KS2 National Curriculum Tests",
+    title: "SATs Guide | UK Test Hub",
     description:
       "Free SATs guide for parents. KS1 (Year 2) and KS2 (Year 6) format, what's tested, study tips and practice questions for reading, grammar and maths.",
     tagline: "What KS1 and KS2 SATs really test — and how parents can help.",
@@ -1383,7 +1383,7 @@ export const topicSeo: Record<string, TopicSeo> = {
 
   // -------- TAXI / PRIVATE HIRE ---------------------------------------
   seru: {
-    title: "SERU TfL Mock Test Guide — Private Hire Driver Test — UK Test Hub",
+    title: "SERU TfL Mock Test Guide | UK Test Hub",
     description:
       "Complete TfL SERU assessment guide. Format, pass mark, the 10 syllabus areas and study tips — with free mock tests reflecting the real TfL exam.",
     tagline: "The TfL Safety, Equality and Regulatory Understanding test for London PHV drivers.",
