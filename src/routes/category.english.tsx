@@ -16,7 +16,14 @@ import {
 } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 import { englishTests, type TestConfig } from "@/data/english/categories";
+import { categorySeo } from "@/data/category-seo";
 import { breadcrumbSchema } from "@/lib/seo";
 
 const ICONS: Record<string, LucideIcon> = {
