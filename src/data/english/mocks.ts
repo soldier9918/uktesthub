@@ -144,15 +144,39 @@ export async function categoryHasBank(categorySlug: string): Promise<boolean> {
   return Boolean(file && file.bank.length > 0);
 }
 
-function rawToMcq(raw: RawMcq, idx: number): MCQQuestion {
-  return {
+function rawToQuestion(raw: RawBankItem, idx: number): Question {
+  const id = idx + 1;
+  if (raw.type === "multiple-response") {
+    const q: MultipleResponseQuestion = {
+      type: "multiple-response",
+      id,
+      question: raw.question,
+      options: raw.options,
+      correctAnswers: raw.correctAnswers,
+      explanation: raw.explanation,
+    };
+    return q;
+  }
+  if (raw.type === "fill-blanks" || raw.type === "dropdown-blanks") {
+    const q: FillBlanksQuestion = {
+      type: "fill-blanks",
+      id,
+      template: raw.template,
+      prompt: raw.prompt,
+      blanks: raw.blanks,
+      explanation: raw.explanation,
+    };
+    return q;
+  }
+  const q: MCQQuestion = {
     type: "mcq",
-    id: idx + 1,
+    id,
     question: raw.question,
     options: raw.options,
     correctAnswer: raw.correctAnswer,
     explanation: raw.explanation,
   };
+  return q;
 }
 
 /**
