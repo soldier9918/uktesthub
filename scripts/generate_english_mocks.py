@@ -1424,21 +1424,25 @@ def build_tf_pool(prefix: str, vocab_pool: List[Dict[str, Any]]) -> List[Dict[st
         for fi, frame in enumerate(w["frames"]):
             polarity = (fi % 2 == 0)  # alternate true/false
             if polarity:
+                shown = word
                 sentence = frame.format(word)
                 explanation = (
                     f"True. '{word}' means '{w['definition']}', which fits the sentence."
                 )
             else:
-                wrong = distractors[fi % len(distractors)]
-                sentence = frame.format(wrong)
+                shown = distractors[fi % len(distractors)]
+                sentence = frame.format(shown)
                 explanation = (
-                    f"False. '{wrong}' does not fit here — the natural choice is "
+                    f"False. '{shown}' does not fit here — the natural choice is "
                     f"'{word}' ('{w['definition']}')."
                 )
             items.append({
                 "id": f"{prefix}-tf-{len(items) + 1:04d}",
                 "type": "true-false",
-                "question": f"Is the underlined word used correctly? \u201c{sentence}\u201d",
+                "question": (
+                    f"Is the word \u201c{shown}\u201d used correctly in this sentence? "
+                    f"\u201c{sentence}\u201d"
+                ),
                 "correctAnswer": polarity,
                 "explanation": explanation,
             })
