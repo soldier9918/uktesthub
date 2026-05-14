@@ -130,6 +130,8 @@ function EnglishCategoryPage() {
 
         <YourEnglishLevelSection />
 
+        <EnglishSeoContent />
+
         <div className="mt-12 rounded-2xl border border-border bg-muted/30 p-5 text-sm text-muted-foreground">
           <strong className="text-foreground">Independent practice:</strong>{" "}
           UK Test Hub is an independent practice and study website. Always
