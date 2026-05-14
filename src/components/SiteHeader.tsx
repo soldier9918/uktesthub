@@ -44,9 +44,7 @@ export function SiteHeader() {
       <div aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/25 to-transparent" />
       <div aria-hidden className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-amber-300/40 to-transparent" />
       <div className="relative mx-auto flex h-20 max-w-7xl items-center justify-between gap-4 px-4 md:px-6">
-        <div className="[&_*]:!text-white">
-          <Logo />
-        </div>
+        <Logo variant="light" />
 
         <nav className="hidden items-center gap-1 lg:flex">
           {nav.map((item) =>
