@@ -109,6 +109,9 @@ function CategoryPage() {
   const { cat } = Route.useLoaderData();
   const slots = listEnglishMockSlots(cat.slug);
   const [readyCount, setReadyCount] = useState<number | null>(null);
+  const skillCategories = englishCategories.filter((c) => c.type === "skill");
+  const levelCategories = englishCategories.filter((c) => c.type === "cefr-level");
+  const topicCategories = englishCategories.filter((c) => c.type === "topic");
 
   useEffect(() => {
     let active = true;
@@ -165,9 +168,28 @@ function CategoryPage() {
           </Link>
         )}
 
+        {/* Practice categories */}
+        <section className="mt-8 space-y-8" aria-labelledby="practice-categories">
+          <div>
+            <h2 id="practice-categories" className="font-display text-xl font-bold">
+              Choose a practice category
+            </h2>
+            <p className="mt-1 text-sm text-muted-foreground">
+              Start with a skill area first, or jump straight into the full {cat.shortTitle} mock tests below.
+            </p>
+          </div>
+
+          <CategoryGroup
+            title={`${cat.shortTitle} skills`}
+            items={skillCategories}
+          />
+          <CategoryGroup title="CEFR levels" items={levelCategories} compact />
+          <CategoryGroup title="English topics" items={topicCategories} compact />
+        </section>
+
         {/* Mock cards */}
         <section className="mt-8">
-          <h2 className="font-display text-xl font-bold">Mock tests</h2>
+          <h2 className="font-display text-xl font-bold">Full {cat.shortTitle} mock tests</h2>
           <ul className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {slots.map((s, i) => {
               const isReady = readyCount !== null && i < ready;
