@@ -1093,6 +1093,8 @@ function Results({
         <ResultsCtas quiz={quiz} onRetry={onRetry} />
       </div>
 
+      <EnglishCefrCard quiz={quiz} answers={answers} score={score} percent={percent} />
+
       <NextStepsPanel quiz={quiz} />
 
       <div className="rounded-3xl border border-border bg-card p-6 shadow-soft md:p-8">
@@ -1259,5 +1261,206 @@ function NextStepsPanel({ quiz }: { quiz: Quiz }) {
         </div>
       )}
     </div>
+  );
+}
+
+// ============================================================
+// English CEFR result card — shown after English mock tests
+// ============================================================
+
+const CEFR_ORDER = ["a1", "a2", "b1", "b2", "c1", "c2"] as const;
+type CefrLevel = (typeof CEFR_ORDER)[number];
+
+const CEFR_GRADIENT: Record<CefrLevel, string> = {
+  a1: "bg-[linear-gradient(140deg,oklch(0.68_0.14_220)_0%,oklch(0.48_0.14_225)_55%,oklch(0.28_0.11_230)_100%)]",
+  a2: "bg-[linear-gradient(140deg,oklch(0.38_0.18_260)_0%,oklch(0.25_0.15_262)_55%,oklch(0.14_0.10_265)_100%)]",
+  b1: "bg-[linear-gradient(140deg,oklch(0.42_0.20_320)_0%,oklch(0.30_0.17_330)_55%,oklch(0.20_0.13_345)_100%)]",
+  b2: "bg-[linear-gradient(140deg,oklch(0.72_0.17_75)_0%,oklch(0.55_0.17_60)_55%,oklch(0.36_0.14_50)_100%)]",
+  c1: "bg-[linear-gradient(140deg,oklch(0.56_0.20_45)_0%,oklch(0.40_0.18_38)_55%,oklch(0.24_0.13_32)_100%)]",
+  c2: "bg-[linear-gradient(140deg,oklch(0.34_0.20_22)_0%,oklch(0.22_0.16_18)_55%,oklch(0.12_0.11_15)_100%)]",
+};
+
+const CEFR_LABEL: Record<CefrLevel, string> = {
+  a1: "A1 — Beginner",
+  a2: "A2 — Elementary",
+  b1: "B1 — Intermediate",
+  b2: "B2 — Upper-Intermediate",
+  c1: "C1 — Advanced",
+  c2: "C2 — Proficient",
+};
+
+const CEFR_BLURB: Record<CefrLevel, string> = {
+  a1: "You can understand and use simple, everyday words and phrases.",
+  a2: "You can handle short, routine exchanges about familiar topics.",
+  b1: "You can deal with most situations on familiar matters and express opinions.",
+  b2: "You can interact fluently and write clear, detailed text on a wide range of topics.",
+  c1: "You can use English flexibly and effectively for academic, social and professional purposes.",
+  c2: "You can understand virtually everything you read or hear and express yourself precisely.",
+};
+
+const TYPE_LABEL: Record<string, string> = {
+  mcq: "Multiple choice",
+  "true-false": "True / False",
+  "fill-blanks": "Fill the blanks",
+  "dropdown-blanks": "Dropdown blanks",
+  "multiple-response": "Multiple response",
+};
+
+function parseEnglishSlug(
+  slug: string,
+): { test: string; skill: string; level: CefrLevel; mockNumber: number } | null {
+  // english-{test}-{skill}-{level}-mock-{n}
+  const m = /^english-([a-z]+)-([a-z-]+)-(a1|a2|b1|b2|c1|c2)-mock-(\d+)$/.exec(slug);
+  if (!m) return null;
+  return {
+    test: m[1],
+    skill: m[2],
+    level: m[3] as CefrLevel,
+    mockNumber: parseInt(m[4], 10),
+  };
+}
+
+function EnglishCefrCard({
+  quiz,
+  answers,
+  score,
+  percent,
+}: {
+  quiz: Quiz;
+  answers: Answer[];
+  score: number;
+  percent: number;
+}) {
+  const parsed = parseEnglishSlug(quiz.slug);
+  if (!parsed) return null;
+  const { test, skill, level, mockNumber } = parsed;
+
+  // Per-type breakdown
+  const breakdown = new Map<string, { correct: number; total: number }>();
+  quiz.questions.forEach((q, i) => {
+    const t = q.type ?? "mcq";
+    const cur = breakdown.get(t) ?? { correct: 0, total: 0 };
+    cur.total += 1;
+    if (isCorrect(q, answers[i])) cur.correct += 1;
+    breakdown.set(t, cur);
+  });
+
+  // Estimate level
+  const idx = CEFR_ORDER.indexOf(level);
+  let estimated: CefrLevel = level;
+  let nextStepLabel = "";
+  let nextLevelForLink: CefrLevel | null = null;
+
+  if (percent >= 85 && idx < CEFR_ORDER.length - 1) {
+    estimated = CEFR_ORDER[idx + 1];
+    nextLevelForLink = CEFR_ORDER[idx + 1];
+    nextStepLabel = `Strong result — you're ready to try ${CEFR_LABEL[nextLevelForLink].split(" — ")[0]}.`;
+  } else if (percent >= 60) {
+    estimated = level;
+    nextStepLabel = `Solid effort — keep practising at ${CEFR_LABEL[level].split(" — ")[0]} to lock it in.`;
+  } else if (idx > 0) {
+    estimated = CEFR_ORDER[idx - 1];
+    nextLevelForLink = CEFR_ORDER[idx - 1];
+    nextStepLabel = `Try ${CEFR_LABEL[nextLevelForLink].split(" — ")[0]} first to build confidence.`;
+  } else {
+    estimated = level;
+    nextStepLabel = "Keep practising at A1 — small steps every day make a big difference.";
+  }
+
+  const nextMockNum = mockNumber < 45 ? mockNumber + 1 : null;
+
+  return (
+    <section
+      className={`overflow-hidden rounded-3xl border border-white/10 p-6 text-white shadow-elevated md:p-8 ${CEFR_GRADIENT[estimated]}`}
+      aria-label="Estimated English level"
+    >
+      <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+        <div>
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-white/70">
+            Your estimated English level
+          </p>
+          <h3 className="mt-2 font-display text-4xl font-bold md:text-5xl">
+            {CEFR_LABEL[estimated]}
+          </h3>
+          <p className="mt-2 max-w-xl text-sm text-white/85 md:text-base">
+            {CEFR_BLURB[estimated]}
+          </p>
+        </div>
+        <div className="rounded-2xl bg-white/15 px-5 py-4 text-center backdrop-blur-sm">
+          <div className="text-xs font-semibold uppercase tracking-wider text-white/75">
+            This mock
+          </div>
+          <div className="mt-1 font-display text-3xl font-bold">
+            {score} / {quiz.questions.length}
+          </div>
+          <div className="text-sm text-white/80">{percent}%</div>
+        </div>
+      </div>
+
+      <p className="mt-5 text-sm font-medium text-white/90">{nextStepLabel}</p>
+
+      {breakdown.size > 0 && (
+        <div className="mt-6 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+          {Array.from(breakdown.entries()).map(([type, v]) => {
+            const pct = Math.round((v.correct / v.total) * 100);
+            return (
+              <div
+                key={type}
+                className="rounded-xl border border-white/15 bg-white/10 px-3 py-2 text-sm backdrop-blur-sm"
+              >
+                <div className="flex items-center justify-between gap-2">
+                  <span className="font-semibold text-white">
+                    {TYPE_LABEL[type] ?? type}
+                  </span>
+                  <span className="text-white/85">
+                    {v.correct}/{v.total}
+                  </span>
+                </div>
+                <div className="mt-1.5 h-1.5 overflow-hidden rounded-full bg-white/20">
+                  <div
+                    className="h-full rounded-full bg-white"
+                    style={{ width: `${pct}%` }}
+                  />
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      )}
+
+      <div className="mt-6 flex flex-wrap gap-3">
+        {nextLevelForLink && (
+          <Link
+            to="/english-language-tests/$test/$skill/$level"
+            params={{ test, skill, level: nextLevelForLink }}
+            className="inline-flex items-center gap-2 rounded-lg bg-white px-4 py-2 text-sm font-semibold text-foreground shadow hover:bg-white/90"
+          >
+            Practise {CEFR_LABEL[nextLevelForLink].split(" — ")[0]}
+            <ArrowRight className="h-4 w-4" />
+          </Link>
+        )}
+        {nextMockNum && (
+          <Link
+            to="/english-language-tests/$test/$skill/$level/mock-test{-$num}"
+            params={{ test, skill, level, num: String(nextMockNum) }}
+            className="inline-flex items-center gap-2 rounded-lg border border-white/40 bg-white/10 px-4 py-2 text-sm font-semibold text-white hover:bg-white/20"
+          >
+            Try Mock {nextMockNum}
+            <ArrowRight className="h-4 w-4" />
+          </Link>
+        )}
+        <Link
+          to="/english-language-tests/$test/$skill/$level"
+          params={{ test, skill, level }}
+          className="inline-flex items-center gap-2 rounded-lg border border-white/40 bg-transparent px-4 py-2 text-sm font-semibold text-white hover:bg-white/10"
+        >
+          All {CEFR_LABEL[level].split(" — ")[0]} mocks
+        </Link>
+      </div>
+
+      <p className="mt-5 text-xs text-white/65">
+        Estimated level based on this mock — not an official CEFR assessment.
+      </p>
+    </section>
   );
 }
