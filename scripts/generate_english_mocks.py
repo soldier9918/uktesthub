@@ -76,6 +76,40 @@ def _take(items: List[Dict[str, Any]], n: int, label: str) -> List[Dict[str, Any
     return items[:n]
 
 
+def _id_number(qid: str) -> int:
+    return int(qid.rsplit("-", 1)[1])
+
+
+def _source_family(q: Dict[str, Any]) -> str:
+    """Group questions that are effectively the same prompt.
+
+    IDs stay unique, but source families must not repeat inside one mock.
+    MCQ and true/false pools share vocabulary frames; fill/dropdown pools share
+    grammar templates; multiple-response expansions share the same stem.
+    """
+    qtype = q["type"]
+    if qtype in {"mcq", "true-false"}:
+        return f"vocab-frame:{_id_number(q['id'])}"
+    if qtype in {"fill-blanks", "dropdown-blanks"}:
+        return f"grammar-template:{q['template']}"
+    if qtype == "multiple-response":
+        return f"multiple-response:{q['question']}"
+    return q["id"]
+
+
+def _assert_mock_source_uniqueness(bank: List[Dict[str, Any]], mocks: List[Dict[str, Any]]) -> None:
+    by_id = {q["id"]: q for q in bank}
+    for mock in mocks:
+        seen: Dict[str, str] = {}
+        for qid in mock["questionIds"]:
+            family = _source_family(by_id[qid])
+            if family in seen:
+                raise AssertionError(
+                    f"similar source repeated in mock {mock['mockNumber']}: {seen[family]} and {qid}"
+                )
+            seen[family] = qid
+
+
 # ---------------------------------------------------------------------------
 # IELTS content pools
 # ---------------------------------------------------------------------------
