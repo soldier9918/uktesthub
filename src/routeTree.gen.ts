@@ -92,7 +92,7 @@ import { Route as LovableEmailQueueProcessRouteImport } from './routes/lovable/e
 import { Route as EnglishLanguageTestsTestSkillLevelRouteImport } from './routes/english-language-tests.$test.$skill.$level'
 import { Route as ApiAdminGaOauthCallbackRouteImport } from './routes/api/admin/ga-oauth/callback'
 import { Route as EnglishLanguageTestsTestSkillLevelIndexRouteImport } from './routes/english-language-tests.$test.$skill.$level.index'
-import { Route as EnglishLanguageTestsTestSkillLevelMockTestNumRouteImport } from './routes/english-language-tests.$test.$skill.$level.mock-test-$num'
+import { Route as EnglishLanguageTestsTestSkillLevelMockTestChar123NumChar125RouteImport } from './routes/english-language-tests.$test.$skill.$level.mock-test{-$num}'
 
 const UkRoadSignsTestRoute = UkRoadSignsTestRouteImport.update({
   id: '/uk-road-signs-test',
@@ -525,12 +525,14 @@ const EnglishLanguageTestsTestSkillLevelIndexRoute =
     path: '/',
     getParentRoute: () => EnglishLanguageTestsTestSkillLevelRoute,
   } as any)
-const EnglishLanguageTestsTestSkillLevelMockTestNumRoute =
-  EnglishLanguageTestsTestSkillLevelMockTestNumRouteImport.update({
-    id: '/mock-test-$num',
-    path: '/mock-test-$num',
-    getParentRoute: () => EnglishLanguageTestsTestSkillLevelRoute,
-  } as any)
+const EnglishLanguageTestsTestSkillLevelMockTestChar123NumChar125Route =
+  EnglishLanguageTestsTestSkillLevelMockTestChar123NumChar125RouteImport.update(
+    {
+      id: '/mock-test{-$num}',
+      path: '/mock-test{-$num}',
+      getParentRoute: () => EnglishLanguageTestsTestSkillLevelRoute,
+    } as any,
+  )
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -615,7 +617,7 @@ export interface FileRoutesByFullPath {
   '/english-language-tests/$test/$skill/$level': typeof EnglishLanguageTestsTestSkillLevelRouteWithChildren
   '/lovable/email/queue/process': typeof LovableEmailQueueProcessRoute
   '/english-language-tests/$test/$skill/': typeof EnglishLanguageTestsTestSkillIndexRoute
-  '/english-language-tests/$test/$skill/$level/mock-test-$num': typeof EnglishLanguageTestsTestSkillLevelMockTestNumRoute
+  '/english-language-tests/$test/$skill/$level/mock-test{-$num}': typeof EnglishLanguageTestsTestSkillLevelMockTestChar123NumChar125Route
   '/english-language-tests/$test/$skill/$level/': typeof EnglishLanguageTestsTestSkillLevelIndexRoute
 }
 export interface FileRoutesByTo {
@@ -696,7 +698,7 @@ export interface FileRoutesByTo {
   '/api/admin/ga-oauth/callback': typeof ApiAdminGaOauthCallbackRoute
   '/lovable/email/queue/process': typeof LovableEmailQueueProcessRoute
   '/english-language-tests/$test/$skill': typeof EnglishLanguageTestsTestSkillIndexRoute
-  '/english-language-tests/$test/$skill/$level/mock-test-$num': typeof EnglishLanguageTestsTestSkillLevelMockTestNumRoute
+  '/english-language-tests/$test/$skill/$level/mock-test{-$num}': typeof EnglishLanguageTestsTestSkillLevelMockTestChar123NumChar125Route
   '/english-language-tests/$test/$skill/$level': typeof EnglishLanguageTestsTestSkillLevelIndexRoute
 }
 export interface FileRoutesById {
@@ -783,7 +785,7 @@ export interface FileRoutesById {
   '/english-language-tests/$test/$skill/$level': typeof EnglishLanguageTestsTestSkillLevelRouteWithChildren
   '/lovable/email/queue/process': typeof LovableEmailQueueProcessRoute
   '/english-language-tests/$test/$skill/': typeof EnglishLanguageTestsTestSkillIndexRoute
-  '/english-language-tests/$test/$skill/$level/mock-test-$num': typeof EnglishLanguageTestsTestSkillLevelMockTestNumRoute
+  '/english-language-tests/$test/$skill/$level/mock-test{-$num}': typeof EnglishLanguageTestsTestSkillLevelMockTestChar123NumChar125Route
   '/english-language-tests/$test/$skill/$level/': typeof EnglishLanguageTestsTestSkillLevelIndexRoute
 }
 export interface FileRouteTypes {
@@ -871,7 +873,7 @@ export interface FileRouteTypes {
     | '/english-language-tests/$test/$skill/$level'
     | '/lovable/email/queue/process'
     | '/english-language-tests/$test/$skill/'
-    | '/english-language-tests/$test/$skill/$level/mock-test-$num'
+    | '/english-language-tests/$test/$skill/$level/mock-test{-$num}'
     | '/english-language-tests/$test/$skill/$level/'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -952,7 +954,7 @@ export interface FileRouteTypes {
     | '/api/admin/ga-oauth/callback'
     | '/lovable/email/queue/process'
     | '/english-language-tests/$test/$skill'
-    | '/english-language-tests/$test/$skill/$level/mock-test-$num'
+    | '/english-language-tests/$test/$skill/$level/mock-test{-$num}'
     | '/english-language-tests/$test/$skill/$level'
   id:
     | '__root__'
@@ -1038,7 +1040,7 @@ export interface FileRouteTypes {
     | '/english-language-tests/$test/$skill/$level'
     | '/lovable/email/queue/process'
     | '/english-language-tests/$test/$skill/'
-    | '/english-language-tests/$test/$skill/$level/mock-test-$num'
+    | '/english-language-tests/$test/$skill/$level/mock-test{-$num}'
     | '/english-language-tests/$test/$skill/$level/'
   fileRoutesById: FileRoutesById
 }
@@ -1694,11 +1696,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof EnglishLanguageTestsTestSkillLevelIndexRouteImport
       parentRoute: typeof EnglishLanguageTestsTestSkillLevelRoute
     }
-    '/english-language-tests/$test/$skill/$level/mock-test-$num': {
-      id: '/english-language-tests/$test/$skill/$level/mock-test-$num'
-      path: '/mock-test-$num'
-      fullPath: '/english-language-tests/$test/$skill/$level/mock-test-$num'
-      preLoaderRoute: typeof EnglishLanguageTestsTestSkillLevelMockTestNumRouteImport
+    '/english-language-tests/$test/$skill/$level/mock-test{-$num}': {
+      id: '/english-language-tests/$test/$skill/$level/mock-test{-$num}'
+      path: '/mock-test{-$num}'
+      fullPath: '/english-language-tests/$test/$skill/$level/mock-test{-$num}'
+      preLoaderRoute: typeof EnglishLanguageTestsTestSkillLevelMockTestChar123NumChar125RouteImport
       parentRoute: typeof EnglishLanguageTestsTestSkillLevelRoute
     }
   }
@@ -1733,14 +1735,14 @@ const BlogRouteChildren: BlogRouteChildren = {
 const BlogRouteWithChildren = BlogRoute._addFileChildren(BlogRouteChildren)
 
 interface EnglishLanguageTestsTestSkillLevelRouteChildren {
-  EnglishLanguageTestsTestSkillLevelMockTestNumRoute: typeof EnglishLanguageTestsTestSkillLevelMockTestNumRoute
+  EnglishLanguageTestsTestSkillLevelMockTestChar123NumChar125Route: typeof EnglishLanguageTestsTestSkillLevelMockTestChar123NumChar125Route
   EnglishLanguageTestsTestSkillLevelIndexRoute: typeof EnglishLanguageTestsTestSkillLevelIndexRoute
 }
 
 const EnglishLanguageTestsTestSkillLevelRouteChildren: EnglishLanguageTestsTestSkillLevelRouteChildren =
   {
-    EnglishLanguageTestsTestSkillLevelMockTestNumRoute:
-      EnglishLanguageTestsTestSkillLevelMockTestNumRoute,
+    EnglishLanguageTestsTestSkillLevelMockTestChar123NumChar125Route:
+      EnglishLanguageTestsTestSkillLevelMockTestChar123NumChar125Route,
     EnglishLanguageTestsTestSkillLevelIndexRoute:
       EnglishLanguageTestsTestSkillLevelIndexRoute,
   }
@@ -1869,3 +1871,12 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { createStart } from '@tanstack/react-start'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+  }
+}

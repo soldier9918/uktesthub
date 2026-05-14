@@ -16,7 +16,7 @@ import type { Quiz } from "@/data/quizzes";
 import { breadcrumbSchema } from "@/lib/seo";
 
 export const Route = createFileRoute(
-  "/english-language-tests/$test/$skill/$level/mock-test-$num",
+  "/english-language-tests/$test/$skill/$level/mock-test{-$num}",
 )({
   loader: async ({ params }) => {
     captureMockBaseUrl();
@@ -129,7 +129,7 @@ function EnglishMockPage() {
             </Link>
             {num < 45 && (
               <Link
-                to="/english-language-tests/$test/$skill/$level/mock-test-$num"
+                to="/english-language-tests/$test/$skill/$level/mock-test{-$num}"
                 params={{
                   test: test.slug,
                   skill: skill.slug,
