@@ -1,0 +1,163 @@
+import { createFileRoute, Link, notFound } from "@tanstack/react-router";
+import { ArrowRight, ChevronRight, Home } from "lucide-react";
+import { SiteHeader } from "@/components/SiteHeader";
+import { SiteFooter } from "@/components/SiteFooter";
+import {
+  getSkill,
+  getTest,
+  LEVEL_DESCRIPTION,
+  LEVEL_LABEL,
+  LEVEL_SHORT,
+  type LevelSlug,
+  type SkillConfig,
+  type TestConfig,
+} from "@/data/english/categories";
+import { breadcrumbSchema } from "@/lib/seo";
+
+export const Route = createFileRoute(
+  "/english-language-tests/$test/$skill/",
+)({
+  loader: ({ params }) => {
+    const test = getTest(params.test);
+    if (!test) throw notFound();
+    const skill = getSkill(test, params.skill);
+    if (!skill) throw notFound();
+    return { test, skill };
+  },
+  head: ({ loaderData, params }) => {
+    const test = loaderData?.test;
+    const skill = loaderData?.skill;
+    if (!test || !skill) return { meta: [{ title: "English Practice" }] };
+    const title = `${test.shortTitle} ${skill.title} | Free ${test.shortTitle}-style Practice | UK Test Hub`;
+    const description = `${test.shortTitle}-style ${skill.shortTitle.toLowerCase()} practice across ${skill.levels.length} CEFR levels. 45 mock tests × 24 questions each.`;
+    const url = `https://www.uktesthub.com/english-language-tests/${params.test}/${params.skill}`;
+    return {
+      meta: [
+        { title },
+        { name: "description", content: description },
+        { property: "og:title", content: title },
+        { property: "og:description", content: description },
+        { property: "og:url", content: url },
+      ],
+      links: [{ rel: "canonical", href: url }],
+      scripts: [
+        breadcrumbSchema([
+          { name: "Home", url: "/" },
+          { name: "English Language Tests", url: "/category/english" },
+          { name: test.tagline, url: `/english-language-tests/${test.slug}` },
+          {
+            name: `${test.shortTitle} ${skill.shortTitle}`,
+            url: `/english-language-tests/${test.slug}/${skill.slug}`,
+          },
+        ]),
+      ],
+    };
+  },
+  notFoundComponent: () => (
+    <div className="mx-auto max-w-xl px-4 py-16 text-center">
+      <h1 className="font-display text-2xl font-bold">Skill not found</h1>
+      <Link to="/category/english" className="mt-4 inline-block text-coral hover:underline">
+        Back to English Language Tests
+      </Link>
+    </div>
+  ),
+  component: SkillPage,
+});
+
+function SkillPage() {
+  const { test, skill } = Route.useLoaderData();
+  return (
+    <div className="min-h-screen bg-background">
+      <SiteHeader />
+      <main className="mx-auto max-w-6xl px-4 py-8 md:py-12">
+        <nav className="flex items-center gap-1.5 text-xs text-muted-foreground" aria-label="Breadcrumb">
+          <Link to="/" className="inline-flex items-center gap-1 hover:text-foreground">
+            <Home className="h-3.5 w-3.5" /> Home
+          </Link>
+          <ChevronRight className="h-3.5 w-3.5" />
+          <Link to="/category/english" className="hover:text-foreground">
+            English Language Tests
+          </Link>
+          <ChevronRight className="h-3.5 w-3.5" />
+          <Link
+            to="/english-language-tests/$test"
+            params={{ test: test.slug }}
+            className="hover:text-foreground"
+          >
+            {test.shortTitle}
+          </Link>
+          <ChevronRight className="h-3.5 w-3.5" />
+          <span className="text-foreground">{skill.shortTitle}</span>
+        </nav>
+
+        <header className="mt-4">
+          <p className="text-xs font-semibold uppercase tracking-wider text-coral">
+            {test.shortTitle} · {skill.shortTitle}
+          </p>
+          <h1 className="mt-1 font-display text-3xl font-bold md:text-4xl">
+            {test.shortTitle} {skill.title}
+          </h1>
+          <p className="mt-3 max-w-3xl text-base text-muted-foreground">
+            {skill.description} Choose a CEFR level to start the {skill.levels.length === 1 ? "level" : "levels"}.
+          </p>
+        </header>
+
+        <section className="mt-8">
+          <h2 className="font-display text-xl font-bold">Choose a CEFR level</h2>
+          <ul className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {skill.levels.map((l) => (
+              <li key={l}>
+                <LevelCard test={test} skill={skill} level={l} />
+              </li>
+            ))}
+          </ul>
+        </section>
+
+        <div className="mt-12 rounded-2xl border border-border bg-muted/30 p-5 text-sm text-muted-foreground">
+          <strong className="text-foreground">Independent practice:</strong>{" "}
+          UK Test Hub is an independent practice and study website. This is{" "}
+          {test.shortTitle}-style practice, not an official {test.shortTitle} exam.
+          Always check the official test provider or GOV.UK guidance before
+          booking a real exam.
+        </div>
+      </main>
+      <SiteFooter />
+    </div>
+  );
+}
+
+function LevelCard({
+  test,
+  skill,
+  level,
+}: {
+  test: TestConfig;
+  skill: SkillConfig;
+  level: LevelSlug;
+}) {
+  return (
+    <Link
+      to="/english-language-tests/$test/$skill/$level"
+      params={{ test: test.slug, skill: skill.slug, level }}
+      className="group flex h-full flex-col rounded-2xl border border-border bg-card p-4 shadow-soft transition-all hover:-translate-y-0.5 hover:border-coral/40 hover:shadow-elevated"
+    >
+      <div className="flex items-center justify-between">
+        <span className="rounded-lg bg-coral/10 px-2 py-0.5 text-xs font-bold uppercase text-coral">
+          {LEVEL_SHORT[level]}
+        </span>
+        <span className="text-[10px] uppercase tracking-wide text-muted-foreground">
+          45 mocks
+        </span>
+      </div>
+      <h3 className="mt-2 font-display text-base font-bold leading-tight group-hover:text-coral">
+        {LEVEL_LABEL[level]}
+      </h3>
+      <p className="mt-1 line-clamp-3 text-xs text-muted-foreground">
+        {LEVEL_DESCRIPTION[level]}
+      </p>
+      <span className="mt-auto inline-flex items-center gap-1.5 pt-3 text-xs font-semibold text-coral">
+        Open level <ArrowRight className="h-3.5 w-3.5" />
+      </span>
+    </Link>
+  );
+}
