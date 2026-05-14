@@ -233,6 +233,33 @@ export type Database = {
         }
         Relationships: []
       }
+      ga_oauth_tokens: {
+        Row: {
+          google_email: string | null
+          id: number
+          refresh_token: string
+          scope: string | null
+          updated_at: string
+          updated_by: string | null
+        }
+        Insert: {
+          google_email?: string | null
+          id?: number
+          refresh_token: string
+          scope?: string | null
+          updated_at?: string
+          updated_by?: string | null
+        }
+        Update: {
+          google_email?: string | null
+          id?: number
+          refresh_token?: string
+          scope?: string | null
+          updated_at?: string
+          updated_by?: string | null
+        }
+        Relationships: []
+      }
       mock_overrides: {
         Row: {
           disabled: boolean
