@@ -14,6 +14,31 @@ import {
 } from "@/data/english/categories";
 import { breadcrumbSchema } from "@/lib/seo";
 
+// Blue → Red premium gradient blend across CEFR levels (A1 easiest → C2 hardest).
+const LEVEL_BG: Record<LevelSlug, string> = {
+  // A1 — deep blue
+  a1: "bg-[linear-gradient(140deg,oklch(0.42_0.16_255)_0%,oklch(0.28_0.12_255)_55%,oklch(0.18_0.08_255)_100%)] border-white/10",
+  // A2 — blue with a touch of violet
+  a2: "bg-[linear-gradient(140deg,oklch(0.40_0.16_240)_0%,oklch(0.26_0.12_235)_55%,oklch(0.17_0.08_230)_100%)] border-white/10",
+  // B1 — teal / orangey-blue transition
+  b1: "bg-[linear-gradient(140deg,oklch(0.44_0.13_200)_0%,oklch(0.30_0.10_180)_55%,oklch(0.20_0.09_120)_100%)] border-white/10",
+  // B2 — warm orange
+  b2: "bg-[linear-gradient(140deg,oklch(0.52_0.16_70)_0%,oklch(0.36_0.14_55)_55%,oklch(0.22_0.11_45)_100%)] border-white/10",
+  // C1 — dark orange / ember
+  c1: "bg-[linear-gradient(140deg,oklch(0.46_0.18_45)_0%,oklch(0.32_0.15_38)_55%,oklch(0.20_0.12_32)_100%)] border-white/10",
+  // C2 — deep red
+  c2: "bg-[linear-gradient(140deg,oklch(0.42_0.20_28)_0%,oklch(0.30_0.17_25)_55%,oklch(0.19_0.13_22)_100%)] border-white/10",
+};
+
+const LEVEL_ACCENT: Record<LevelSlug, string> = {
+  a1: "text-[oklch(0.88_0.10_250)]",
+  a2: "text-[oklch(0.87_0.10_235)]",
+  b1: "text-[oklch(0.88_0.10_190)]",
+  b2: "text-[oklch(0.90_0.12_75)]",
+  c1: "text-[oklch(0.88_0.13_50)]",
+  c2: "text-[oklch(0.87_0.13_28)]",
+};
+
 export const Route = createFileRoute(
   "/english-language-tests/$test/$skill/",
 )({
