@@ -1,5 +1,5 @@
 import { Link, useNavigate } from "@tanstack/react-router";
-import { Search, Moon, Sun, User as UserIcon, LogOut, LayoutDashboard, Heart, Settings, Menu, X } from "lucide-react";
+import { Search, User as UserIcon, LogOut, LayoutDashboard, Heart, Settings, Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Logo } from "./Logo";
 import { useAuth } from "@/lib/auth-context";
@@ -54,7 +54,7 @@ export function SiteHeader() {
                 to={item.to as "/category/$slug"}
                 params={{ slug: item.slug }}
                 className="relative px-3 py-2 text-sm font-semibold uppercase tracking-wider text-white/75 transition-colors hover:text-white"
-                activeProps={{ className: "!text-white after:absolute after:inset-x-3 after:-bottom-0.5 after:h-0.5 after:bg-gradient-to-r after:from-amber-300 after:via-coral after:to-amber-300" }}
+                activeProps={{ className: "!text-white after:absolute after:inset-x-3 after:-bottom-0.5 after:h-0.5 after:bg-coral" }}
               >
                 {item.label}
               </Link>
@@ -64,7 +64,7 @@ export function SiteHeader() {
                 to={item.to as "/"}
                 className="relative px-3 py-2 text-sm font-semibold uppercase tracking-wider text-white/75 transition-colors hover:text-white"
                 activeOptions={{ exact: true }}
-                activeProps={{ className: "!text-white after:absolute after:inset-x-3 after:-bottom-0.5 after:h-0.5 after:bg-gradient-to-r after:from-amber-300 after:via-coral after:to-amber-300" }}
+                activeProps={{ className: "!text-white after:absolute after:inset-x-3 after:-bottom-0.5 after:h-0.5 after:bg-coral" }}
               >
                 {item.label}
               </Link>
