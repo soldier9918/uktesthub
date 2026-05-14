@@ -333,7 +333,7 @@ function HomePage() {
           <div className="mt-12 flex justify-center">
             <a
               href="https://www.uktesthub.com/all-tests"
-              className="group inline-flex items-center gap-3 rounded-2xl bg-coral px-10 py-5 font-display text-base font-bold uppercase tracking-[0.18em] text-coral-foreground shadow-coral transition-transform hover:-translate-y-0.5 md:text-lg"
+              className="group inline-flex items-center justify-center gap-3 whitespace-nowrap bg-gradient-to-br from-[#ff5a5f] to-[#c81e2c] px-10 py-5 font-display text-base font-bold uppercase tracking-[0.18em] text-white shadow-[0_12px_28px_-10px_rgba(255,90,95,0.75)] ring-1 ring-white/20 transition-transform hover:-translate-y-0.5 md:text-lg"
             >
               Browse All Categories
               <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
