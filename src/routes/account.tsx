@@ -9,7 +9,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 
 export const Route = createFileRoute("/account")({
-  head: () => ({ meta: [{ title: "Account — UK Test Hub" }, { name: "robots", content: "noindex" },
+  head: () => ({ meta: [{ title: "Account — UK Test Hub" }, { name: "robots", content: "noindex, nofollow" },
       { property: "og:url", content: "https://www.uktesthub.com/account" }
     ] , links: [{ rel: "canonical", href: "https://www.uktesthub.com/account" }] }),
   component: () => (

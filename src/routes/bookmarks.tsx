@@ -8,7 +8,7 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { Button } from "@/components/ui/button";
 
 export const Route = createFileRoute("/bookmarks")({
-  head: () => ({ meta: [{ title: "Bookmarks — UK Test Hub" }, { name: "robots", content: "noindex" },
+  head: () => ({ meta: [{ title: "Bookmarks — UK Test Hub" }, { name: "robots", content: "noindex, nofollow" },
       { property: "og:url", content: "https://www.uktesthub.com/bookmarks" }
     ] , links: [{ rel: "canonical", href: "https://www.uktesthub.com/bookmarks" }] }),
   component: () => (

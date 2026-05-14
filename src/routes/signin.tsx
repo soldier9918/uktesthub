@@ -15,7 +15,7 @@ const schema = z.object({
 });
 
 export const Route = createFileRoute("/signin")({
-  head: () => ({ meta: [{ title: "Sign in — UK Test Hub" }, { name: "robots", content: "noindex" },
+  head: () => ({ meta: [{ title: "Sign in — UK Test Hub" }, { name: "robots", content: "noindex, nofollow" },
       { property: "og:url", content: "https://www.uktesthub.com/signin" }
     ] , links: [{ rel: "canonical", href: "https://www.uktesthub.com/signin" }] }),
   component: SignInPage,

@@ -7,7 +7,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 
 export const Route = createFileRoute("/reset-password")({
-  head: () => ({ meta: [{ title: "Set new password — UK Test Hub" }, { name: "robots", content: "noindex" },
+  head: () => ({ meta: [{ title: "Set new password — UK Test Hub" }, { name: "robots", content: "noindex, nofollow" },
       { property: "og:url", content: "https://www.uktesthub.com/reset-password" }
     ] , links: [{ rel: "canonical", href: "https://www.uktesthub.com/reset-password" }] }),
   component: ResetPage,

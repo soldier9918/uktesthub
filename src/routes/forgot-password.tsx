@@ -10,7 +10,7 @@ import { SiteFooter } from "@/components/SiteFooter";
 const schema = z.string().trim().email("Enter a valid email").max(255);
 
 export const Route = createFileRoute("/forgot-password")({
-  head: () => ({ meta: [{ title: "Reset password — UK Test Hub" }, { name: "robots", content: "noindex" },
+  head: () => ({ meta: [{ title: "Reset password — UK Test Hub" }, { name: "robots", content: "noindex, nofollow" },
       { property: "og:url", content: "https://www.uktesthub.com/forgot-password" }
     ] , links: [{ rel: "canonical", href: "https://www.uktesthub.com/forgot-password" }] }),
   component: ForgotPage,
