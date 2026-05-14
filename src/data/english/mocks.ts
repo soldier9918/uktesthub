@@ -7,7 +7,13 @@
 // `categoryHasBank` and `loadEnglishMockBySlug` resolve to undefined
 // without throwing.
 
-import type { Quiz, Question, MCQQuestion } from "@/data/quizzes";
+import type {
+  Quiz,
+  Question,
+  MCQQuestion,
+  FillBlanksQuestion,
+  MultipleResponseQuestion,
+} from "@/data/quizzes";
 import {
   englishCategories,
   ENGLISH_QUESTIONS_PER_MOCK,
@@ -24,10 +30,30 @@ type RawMcq = {
   explanation: string;
 };
 
+type RawMultipleResponse = {
+  id: string;
+  type: "multiple-response";
+  question: string;
+  options: string[];
+  correctAnswers: number[];
+  explanation: string;
+};
+
+type RawBlanks = {
+  id: string;
+  type: "fill-blanks" | "dropdown-blanks";
+  template: string;
+  prompt?: string;
+  blanks: { options: string[]; correctIndex: number }[];
+  explanation: string;
+};
+
+type RawBankItem = RawMcq | RawMultipleResponse | RawBlanks;
+
 type V2File = {
   version: 2;
   category: string; // slug
-  bank: RawMcq[];
+  bank: RawBankItem[];
   mocks: { mockNumber: number; title: string; questionIds: string[] }[];
 };
 
