@@ -14,6 +14,31 @@ import {
 } from "@/data/english/categories";
 import { breadcrumbSchema } from "@/lib/seo";
 
+// Blue → Red premium gradient blend across CEFR levels (A1 easiest → C2 hardest).
+const LEVEL_BG: Record<LevelSlug, string> = {
+  // A1 — deep blue
+  a1: "bg-[linear-gradient(140deg,oklch(0.42_0.16_255)_0%,oklch(0.28_0.12_255)_55%,oklch(0.18_0.08_255)_100%)] border-white/10",
+  // A2 — blue with a touch of violet
+  a2: "bg-[linear-gradient(140deg,oklch(0.40_0.16_240)_0%,oklch(0.26_0.12_235)_55%,oklch(0.17_0.08_230)_100%)] border-white/10",
+  // B1 — teal / orangey-blue transition
+  b1: "bg-[linear-gradient(140deg,oklch(0.44_0.13_200)_0%,oklch(0.30_0.10_180)_55%,oklch(0.20_0.09_120)_100%)] border-white/10",
+  // B2 — warm orange
+  b2: "bg-[linear-gradient(140deg,oklch(0.52_0.16_70)_0%,oklch(0.36_0.14_55)_55%,oklch(0.22_0.11_45)_100%)] border-white/10",
+  // C1 — dark orange / ember
+  c1: "bg-[linear-gradient(140deg,oklch(0.46_0.18_45)_0%,oklch(0.32_0.15_38)_55%,oklch(0.20_0.12_32)_100%)] border-white/10",
+  // C2 — deep red
+  c2: "bg-[linear-gradient(140deg,oklch(0.42_0.20_28)_0%,oklch(0.30_0.17_25)_55%,oklch(0.19_0.13_22)_100%)] border-white/10",
+};
+
+const LEVEL_ACCENT: Record<LevelSlug, string> = {
+  a1: "text-[oklch(0.88_0.10_250)]",
+  a2: "text-[oklch(0.87_0.10_235)]",
+  b1: "text-[oklch(0.88_0.10_190)]",
+  b2: "text-[oklch(0.90_0.12_75)]",
+  c1: "text-[oklch(0.88_0.13_50)]",
+  c2: "text-[oklch(0.87_0.13_28)]",
+};
+
 export const Route = createFileRoute(
   "/english-language-tests/$test/$skill/",
 )({
@@ -139,25 +164,40 @@ function LevelCard({
     <Link
       to="/english-language-tests/$test/$skill/$level"
       params={{ test: test.slug, skill: skill.slug, level }}
-      className="group flex h-full flex-col rounded-2xl border border-border bg-card p-4 shadow-soft transition-all hover:-translate-y-0.5 hover:border-coral/40 hover:shadow-elevated"
+      className={`group relative flex h-full flex-col overflow-hidden rounded-2xl border p-5 text-white shadow-elevated transition-all hover:-translate-y-1 hover:shadow-2xl ${LEVEL_BG[level]}`}
     >
-      <div className="flex items-center justify-between">
-        <span className="rounded-lg bg-coral/10 px-2 py-0.5 text-xs font-bold uppercase text-coral">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 opacity-70 bg-[radial-gradient(120%_60%_at_0%_0%,rgba(255,255,255,0.18),transparent_55%)]"
+      />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute -right-14 -bottom-14 h-48 w-48 rounded-full bg-white/5 blur-2xl"
+      />
+
+      <div className="relative flex items-center justify-between">
+        <span className="inline-flex items-center justify-center rounded-lg bg-white/15 px-2.5 py-1 text-xs font-bold uppercase tracking-wider text-white ring-1 ring-white/15">
           {LEVEL_SHORT[level]}
         </span>
-        <span className="text-[10px] uppercase tracking-wide text-muted-foreground">
+        <span className={`text-[10px] font-semibold uppercase tracking-[0.16em] ${LEVEL_ACCENT[level]}`}>
           45 mocks
         </span>
       </div>
-      <h3 className="mt-2 font-display text-base font-bold leading-tight group-hover:text-coral">
+
+      <h3 className="relative mt-3 font-display text-lg font-bold leading-tight text-white">
         {LEVEL_LABEL[level]}
       </h3>
-      <p className="mt-1 line-clamp-3 text-xs text-muted-foreground">
+      <p className="relative mt-1 line-clamp-3 text-xs leading-relaxed text-white/75">
         {LEVEL_DESCRIPTION[level]}
       </p>
-      <span className="mt-auto inline-flex items-center gap-1.5 pt-3 text-xs font-semibold text-coral">
-        Open level <ArrowRight className="h-3.5 w-3.5" />
-      </span>
+
+      <div className="relative mt-auto flex items-center justify-end pt-4">
+        <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-white transition-transform group-hover:translate-x-0.5">
+          Open level <ArrowRight className="h-4 w-4" />
+        </span>
+      </div>
+
+      <div aria-hidden className="pointer-events-none absolute left-5 right-5 top-[60%] h-px bg-white/10" />
     </Link>
   );
 }

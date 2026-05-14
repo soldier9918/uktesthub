@@ -15,6 +15,7 @@ import { SiteFooter } from "@/components/SiteFooter";
 import {
   getTest,
   type SkillConfig,
+  type SkillSlug,
   type TestConfig,
 } from "@/data/english/categories";
 import { breadcrumbSchema } from "@/lib/seo";
@@ -24,6 +25,37 @@ const ICONS: Record<string, LucideIcon> = {
   BookOpen,
   PenLine,
   Mic,
+};
+
+// Premium dark gradient per skill — distinct hue per skill area.
+const SKILL_BG: Record<SkillSlug, string> = {
+  // Listening — indigo / violet
+  listening:
+    "bg-[linear-gradient(140deg,oklch(0.34_0.15_280)_0%,oklch(0.24_0.12_278)_55%,oklch(0.16_0.08_275)_100%)] border-white/10",
+  // Reading — emerald / teal
+  reading:
+    "bg-[linear-gradient(140deg,oklch(0.38_0.13_175)_0%,oklch(0.27_0.10_170)_55%,oklch(0.17_0.07_168)_100%)] border-white/10",
+  // Writing — amber / gold
+  writing:
+    "bg-[linear-gradient(140deg,oklch(0.46_0.15_70)_0%,oklch(0.34_0.13_60)_55%,oklch(0.22_0.10_50)_100%)] border-white/10",
+  // Speaking — rose / magenta
+  speaking:
+    "bg-[linear-gradient(140deg,oklch(0.42_0.18_15)_0%,oklch(0.30_0.15_10)_55%,oklch(0.20_0.11_8)_100%)] border-white/10",
+  // SELT Speaking & Listening — rose-violet blend
+  "speaking-listening":
+    "bg-[linear-gradient(140deg,oklch(0.40_0.16_340)_0%,oklch(0.28_0.13_335)_55%,oklch(0.18_0.09_330)_100%)] border-white/10",
+  // SELT Four Skills — deep indigo
+  "four-skills":
+    "bg-[linear-gradient(140deg,oklch(0.34_0.14_260)_0%,oklch(0.23_0.11_258)_55%,oklch(0.15_0.08_255)_100%)] border-white/10",
+};
+
+const SKILL_ACCENT: Record<SkillSlug, string> = {
+  listening: "text-[oklch(0.85_0.10_290)]",
+  reading: "text-[oklch(0.86_0.11_165)]",
+  writing: "text-[oklch(0.88_0.12_75)]",
+  speaking: "text-[oklch(0.86_0.10_20)]",
+  "speaking-listening": "text-[oklch(0.86_0.10_340)]",
+  "four-skills": "text-[oklch(0.85_0.10_260)]",
 };
 
 export const Route = createFileRoute("/english-language-tests/$test/")({
@@ -165,25 +197,43 @@ function SkillCard({ test, skill }: { test: TestConfig; skill: SkillConfig }) {
     <Link
       to="/english-language-tests/$test/$skill"
       params={{ test: test.slug, skill: skill.slug }}
-      className="group flex h-full flex-col rounded-2xl border border-border bg-card p-5 shadow-soft transition-all hover:-translate-y-0.5 hover:border-coral/40 hover:shadow-elevated"
+      className={`group relative flex h-full flex-col overflow-hidden rounded-2xl border p-5 text-white shadow-elevated transition-all hover:-translate-y-1 hover:shadow-2xl ${SKILL_BG[skill.slug]}`}
     >
-      <div className="flex items-start gap-3">
-        <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-coral/20 bg-coral/10 text-coral">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 opacity-70 bg-[radial-gradient(120%_60%_at_0%_0%,rgba(255,255,255,0.18),transparent_55%)]"
+      />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute -right-16 -bottom-16 h-56 w-56 rounded-full bg-white/5 blur-2xl"
+      />
+
+      <div className="relative flex items-start gap-3">
+        <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white/10 text-white ring-1 ring-white/15">
           <Icon className="h-5 w-5" />
         </div>
         <div className="min-w-0">
-          <h3 className="font-display text-base font-bold leading-tight group-hover:text-coral">
+          <p className={`text-[10px] font-semibold uppercase tracking-[0.18em] ${SKILL_ACCENT[skill.slug]}`}>
+            {test.shortTitle} Skill
+          </p>
+          <h3 className="mt-0.5 font-display text-lg font-bold leading-tight text-white">
             {test.shortTitle} {skill.title}
           </h3>
-          <p className="mt-0.5 text-xs text-muted-foreground">
+          <p className="mt-0.5 text-xs text-white/70">
             {skill.levels.length} CEFR level{skill.levels.length === 1 ? "" : "s"} · 45 mocks × 24 questions
           </p>
         </div>
       </div>
-      <p className="mt-3 text-sm text-muted-foreground">{skill.description}</p>
-      <span className="mt-auto inline-flex items-center gap-1.5 pt-4 text-sm font-semibold text-coral">
-        Choose level <ArrowRight className="h-4 w-4" />
-      </span>
+
+      <p className="relative mt-3 text-sm leading-relaxed text-white/80">{skill.description}</p>
+
+      <div className="relative mt-auto flex items-center justify-end pt-4">
+        <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-white transition-transform group-hover:translate-x-0.5">
+          Choose level <ArrowRight className="h-4 w-4" />
+        </span>
+      </div>
+
+      <div aria-hidden className="pointer-events-none absolute left-5 right-5 top-[58%] h-px bg-white/10" />
     </Link>
   );
 }
