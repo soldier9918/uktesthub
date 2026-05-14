@@ -76,6 +76,7 @@ export type BlogPost = {
   category: string;
   tags: string[];
   hero: string;
+  faqs?: { q: string; a: string }[];
   // Render function so we can include typed <Link> components.
   body: () => ReactNode;
 };
