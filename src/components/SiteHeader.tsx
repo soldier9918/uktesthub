@@ -34,18 +34,18 @@ export function SiteHeader() {
     <header className="sticky top-0 z-40 w-full border-b border-white/10 bg-gradient-to-r from-[#06172e] via-[#0a2540] to-[#06172e] text-white shadow-[0_8px_24px_-12px_rgba(0,0,0,0.6)]">
       <div aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/25 to-transparent" />
       <div aria-hidden className="pointer-events-none absolute inset-x-0 -bottom-1 h-1 bg-coral shadow-[0_2px_8px_rgba(239,68,68,0.5)]" />
-      <div className="relative mx-auto flex h-20 max-w-7xl items-center justify-between gap-4 px-4 md:px-6">
+      <div className="relative mx-auto flex h-20 max-w-7xl items-center justify-between gap-3 px-4 md:px-6">
         <Logo variant="light" showTagline={false} />
 
-        <nav className="hidden items-center gap-1 lg:flex">
+        <nav className="hidden min-w-0 flex-1 items-center justify-center gap-0 xl:flex">
           {nav.map((item) =>
             item.slug ? (
               <Link
                 key={item.label}
                 to={item.to as "/category/$slug"}
                 params={{ slug: item.slug }}
-                className="relative px-3 py-2 text-sm font-semibold uppercase tracking-wider text-white/75 transition-colors hover:text-white"
-                activeProps={{ className: "!text-white after:absolute after:inset-x-3 after:-bottom-0.5 after:h-0.5 after:bg-coral" }}
+                className="relative whitespace-nowrap px-2.5 py-2 text-[13px] font-semibold uppercase leading-none tracking-wider text-white/75 transition-colors hover:text-white 2xl:px-3 2xl:text-sm"
+                activeProps={{ className: "!text-white after:absolute after:inset-x-2.5 after:-bottom-1 after:h-0.5 after:bg-coral 2xl:after:inset-x-3" }}
               >
                 {item.label}
               </Link>
@@ -53,9 +53,9 @@ export function SiteHeader() {
               <Link
                 key={item.label}
                 to={item.to as "/"}
-                className="relative px-3 py-2 text-sm font-semibold uppercase tracking-wider text-white/75 transition-colors hover:text-white"
+                className="relative whitespace-nowrap px-2.5 py-2 text-[13px] font-semibold uppercase leading-none tracking-wider text-white/75 transition-colors hover:text-white 2xl:px-3 2xl:text-sm"
                 activeOptions={{ exact: true }}
-                activeProps={{ className: "!text-white after:absolute after:inset-x-3 after:-bottom-0.5 after:h-0.5 after:bg-coral" }}
+                activeProps={{ className: "!text-white after:absolute after:inset-x-2.5 after:-bottom-1 after:h-0.5 after:bg-coral 2xl:after:inset-x-3" }}
               >
                 {item.label}
               </Link>
@@ -63,12 +63,12 @@ export function SiteHeader() {
           )}
         </nav>
 
-        <div className="flex items-center gap-2">
+        <div className="flex shrink-0 items-center justify-end gap-2 xl:w-[116px] 2xl:w-[148px]">
           {loading ? (
-            <div className="h-7 w-[88px] animate-pulse rounded bg-white/10" aria-hidden />
+            <div className="h-7 w-[72px] animate-pulse rounded bg-white/10" aria-hidden />
           ) : user ? (
             <DropdownMenu>
-              <DropdownMenuTrigger className="inline-flex h-7 items-center gap-1.5 rounded border border-white/15 bg-white/5 px-2.5 text-xs font-semibold text-white hover:bg-white/10 max-w-[140px]">
+              <DropdownMenuTrigger className="inline-flex h-7 max-w-[98px] items-center gap-1.5 overflow-hidden rounded border border-white/15 bg-white/5 px-2 text-[11px] font-semibold text-white hover:bg-white/10 2xl:max-w-[128px] 2xl:text-xs">
                 <UserIcon className="h-3.5 w-3.5 shrink-0" />
                 <span className="truncate">{user.email?.split("@")[0]}</span>
               </DropdownMenuTrigger>
@@ -91,7 +91,7 @@ export function SiteHeader() {
               </DropdownMenuContent>
             </DropdownMenu>
           ) : (
-            <Link to="/signin" className="inline-flex items-center justify-center whitespace-nowrap bg-gradient-to-br from-[#ff5a5f] to-[#c81e2c] px-3 py-1.5 text-xs font-semibold uppercase tracking-wider text-white shadow-[0_6px_14px_-6px_rgba(255,90,95,0.7)] ring-1 ring-white/20 transition-transform hover:-translate-y-0.5">
+              <Link to="/signin" className="inline-flex h-7 items-center justify-center whitespace-nowrap bg-gradient-to-br from-[#ff5a5f] to-[#c81e2c] px-3 text-xs font-semibold uppercase tracking-wider text-white shadow-[0_6px_14px_-6px_rgba(255,90,95,0.7)] ring-1 ring-white/20 transition-transform hover:-translate-y-0.5">
               Sign in
             </Link>
           )}
@@ -100,7 +100,7 @@ export function SiteHeader() {
             type="button"
             aria-label="Toggle menu"
             onClick={() => setMobileOpen((o) => !o)}
-            className="inline-flex h-10 w-10 items-center justify-center text-white/80 transition-colors hover:bg-white/10 hover:text-white lg:hidden"
+            className="inline-flex h-10 w-10 items-center justify-center text-white/80 transition-colors hover:bg-white/10 hover:text-white xl:hidden"
           >
             {mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           </button>
@@ -108,7 +108,7 @@ export function SiteHeader() {
       </div>
 
       {mobileOpen && (
-        <div className="border-t border-white/10 bg-[#06172e] lg:hidden">
+        <div className="border-t border-white/10 bg-[#06172e] xl:hidden">
           <nav className="mx-auto flex max-w-7xl flex-col gap-1 px-4 py-3 md:px-6">
             {nav.map((item) =>
               item.slug ? (
