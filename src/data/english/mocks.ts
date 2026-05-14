@@ -168,13 +168,14 @@ function rawToQuestion(raw: RawBankItem, idx: number): Question {
     };
     return q;
   }
+  const m = raw as RawMcq;
   const q: MCQQuestion = {
     type: "mcq",
     id,
-    question: raw.question,
-    options: raw.options,
-    correctAnswer: raw.correctAnswer,
-    explanation: raw.explanation,
+    question: m.question,
+    options: m.options,
+    correctAnswer: m.correctAnswer,
+    explanation: m.explanation,
   };
   return q;
 }
