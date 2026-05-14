@@ -164,25 +164,40 @@ function LevelCard({
     <Link
       to="/english-language-tests/$test/$skill/$level"
       params={{ test: test.slug, skill: skill.slug, level }}
-      className="group flex h-full flex-col rounded-2xl border border-border bg-card p-4 shadow-soft transition-all hover:-translate-y-0.5 hover:border-coral/40 hover:shadow-elevated"
+      className={`group relative flex h-full flex-col overflow-hidden rounded-2xl border p-5 text-white shadow-elevated transition-all hover:-translate-y-1 hover:shadow-2xl ${LEVEL_BG[level]}`}
     >
-      <div className="flex items-center justify-between">
-        <span className="rounded-lg bg-coral/10 px-2 py-0.5 text-xs font-bold uppercase text-coral">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 opacity-70 bg-[radial-gradient(120%_60%_at_0%_0%,rgba(255,255,255,0.18),transparent_55%)]"
+      />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute -right-14 -bottom-14 h-48 w-48 rounded-full bg-white/5 blur-2xl"
+      />
+
+      <div className="relative flex items-center justify-between">
+        <span className="inline-flex items-center justify-center rounded-lg bg-white/15 px-2.5 py-1 text-xs font-bold uppercase tracking-wider text-white ring-1 ring-white/15">
           {LEVEL_SHORT[level]}
         </span>
-        <span className="text-[10px] uppercase tracking-wide text-muted-foreground">
+        <span className={`text-[10px] font-semibold uppercase tracking-[0.16em] ${LEVEL_ACCENT[level]}`}>
           45 mocks
         </span>
       </div>
-      <h3 className="mt-2 font-display text-base font-bold leading-tight group-hover:text-coral">
+
+      <h3 className="relative mt-3 font-display text-lg font-bold leading-tight text-white">
         {LEVEL_LABEL[level]}
       </h3>
-      <p className="mt-1 line-clamp-3 text-xs text-muted-foreground">
+      <p className="relative mt-1 line-clamp-3 text-xs leading-relaxed text-white/75">
         {LEVEL_DESCRIPTION[level]}
       </p>
-      <span className="mt-auto inline-flex items-center gap-1.5 pt-3 text-xs font-semibold text-coral">
-        Open level <ArrowRight className="h-3.5 w-3.5" />
-      </span>
+
+      <div className="relative mt-auto flex items-center justify-end pt-4">
+        <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-white transition-transform group-hover:translate-x-0.5">
+          Open level <ArrowRight className="h-4 w-4" />
+        </span>
+      </div>
+
+      <div aria-hidden className="pointer-events-none absolute left-5 right-5 top-[60%] h-px bg-white/10" />
     </Link>
   );
 }
