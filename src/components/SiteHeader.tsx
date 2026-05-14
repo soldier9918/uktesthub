@@ -20,29 +20,20 @@ const nav: { label: string; to: string; slug?: string }[] = [
 ];
 
 export function SiteHeader() {
-  const [isDark, setIsDark] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const { user, signOut, loading } = useAuth();
   const navigate = useNavigate();
 
+  // Force light mode site-wide (dark mode is not designed for this layout).
   useEffect(() => {
-    const stored = typeof window !== "undefined" ? localStorage.getItem("theme") : null;
-    const prefersDark = stored ? stored === "dark" : window.matchMedia("(prefers-color-scheme: dark)").matches;
-    setIsDark(prefersDark);
-    document.documentElement.classList.toggle("dark", prefersDark);
+    document.documentElement.classList.remove("dark");
+    try { localStorage.setItem("theme", "light"); } catch {}
   }, []);
-
-  const toggleTheme = () => {
-    const next = !isDark;
-    setIsDark(next);
-    document.documentElement.classList.toggle("dark", next);
-    try { localStorage.setItem("theme", next ? "dark" : "light"); } catch {}
-  };
 
   return (
     <header className="sticky top-0 z-40 w-full border-b border-white/10 bg-gradient-to-r from-[#06172e] via-[#0a2540] to-[#06172e] text-white shadow-[0_8px_24px_-12px_rgba(0,0,0,0.6)]">
       <div aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/25 to-transparent" />
-      <div aria-hidden className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-amber-300/40 to-transparent" />
+      <div aria-hidden className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-coral/60 to-transparent" />
       <div className="relative mx-auto flex h-20 max-w-7xl items-center justify-between gap-4 px-4 md:px-6">
         <Logo variant="light" />
 
