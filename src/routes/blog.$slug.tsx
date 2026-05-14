@@ -3,7 +3,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { AdSlot } from "@/components/AdSlot";
 import { getPostBySlug, getRelatedPosts } from "@/data/blog";
-import { pageMeta, articleSchema, breadcrumbSchema } from "@/lib/seo";
+import { pageMeta, articleSchema, breadcrumbSchema, faqSchema } from "@/lib/seo";
 import { Home, ChevronRight, Clock, ArrowRight } from "lucide-react";
 
 export const Route = createFileRoute("/blog/$slug")({
@@ -23,17 +23,16 @@ export const Route = createFileRoute("/blog/$slug")({
       image: post.hero,
       type: "article",
     });
-    return {
-      ...base,
-      scripts: [
-        breadcrumbSchema([
-          { name: "Home", url: "/" },
-          { name: "Study Guides", url: "/blog" },
-          { name: post.title, url: `/blog/${slug}` },
-        ]),
-        articleSchema({ ...post, image: post.hero }),
-      ],
-    };
+    const scripts = [
+      breadcrumbSchema([
+        { name: "Home", url: "/" },
+        { name: "Study Guides", url: "/blog" },
+        { name: post.title, url: `/blog/${slug}` },
+      ]),
+      articleSchema({ ...post, image: post.hero }),
+    ];
+    if (post.faqs?.length) scripts.push(faqSchema(post.faqs));
+    return { ...base, scripts };
   },
   component: BlogPostPage,
 });
