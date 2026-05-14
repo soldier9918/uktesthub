@@ -124,7 +124,7 @@ function CategoryPage() {
                     <div className="relative">
                       <div className="flex items-start gap-4">
                         <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-none bg-gradient-to-br from-[#3b82f6] to-[#1d4ed8] text-white shadow-[0_6px_16px_-6px_rgba(59,130,246,0.8)] ring-1 ring-white/20">
-                          <BookOpen className="h-6 w-6" />
+                          <BookOpen className="h-9 w-9" strokeWidth={2.25} />
                         </span>
                         <div className="min-w-0">
                           <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#7dd3fc]">
@@ -166,7 +166,7 @@ function CategoryPage() {
                       <div className="relative">
                         <div className="flex items-start gap-4">
                           <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-none bg-gradient-to-br from-[#ff5a5f] to-[#c81e2c] text-white shadow-[0_6px_16px_-6px_rgba(255,90,95,0.8)] ring-1 ring-white/20">
-                            <CategoryIcon name={category.icon} className="h-6 w-6" />
+                            <CategoryIcon name={category.icon} className="h-10 w-10" />
                           </span>
                           <div className="min-w-0 pr-8">
                             <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#fecaca]">
