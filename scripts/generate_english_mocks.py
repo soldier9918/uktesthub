@@ -1505,17 +1505,18 @@ def expand_blanks(items: List[Dict[str, Any]], target: int, prefix: str, kind: s
                 "explanation": src["explanation"],
             })
         else:
-            # For typed fill-blanks, append a short prompt suffix to make the
-            # question stem distinct (e.g. "(present perfect)") so the same
-            # template appearing in two mocks looks intentionally varied.
-            tag = ["(check the tense)", "(grammar)", "(prepositions)", "(collocation)", "(article use)", "(modal verb)"]
-            t = tag[(i // base) % len(tag)]
+            # Fill-blanks variant: rotate option order so the correct answer
+            # appears in a different dropdown position than the seed item.
+            opts = src["blanks"][0]["options"]
+            rot = (i // base + 1) % len(opts)
+            new_opts = opts[rot:] + opts[:rot]
+            ci = new_opts.index(opts[src["blanks"][0]["correctIndex"]])
             out.append({
                 "id": f"{prefix}-fill-{len(out) + 1:04d}",
                 "type": "fill-blanks",
                 "template": src["template"],
-                "prompt": f"{src['prompt']} {t}",
-                "blanks": src["blanks"],
+                "prompt": src["prompt"],
+                "blanks": [{"options": new_opts, "correctIndex": ci}],
                 "explanation": src["explanation"],
             })
         i += 1
