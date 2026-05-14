@@ -2,10 +2,15 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import {
   ArrowRight,
   BookOpen,
+  CheckCircle2,
   ChevronRight,
   GraduationCap,
   Home,
+  ListChecks,
+  MousePointerClick,
   ShieldCheck,
+  Sparkles,
+  Type as TypeIcon,
   Users,
   type LucideIcon,
 } from "lucide-react";
