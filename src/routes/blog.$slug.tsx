@@ -3,7 +3,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { AdSlot } from "@/components/AdSlot";
 import { getPostBySlug, getRelatedPosts } from "@/data/blog";
-import { pageMeta, articleSchema, breadcrumbSchema } from "@/lib/seo";
+import { pageMeta, articleSchema, breadcrumbSchema, faqSchema } from "@/lib/seo";
 import { Home, ChevronRight, Clock, ArrowRight } from "lucide-react";
 
 export const Route = createFileRoute("/blog/$slug")({
