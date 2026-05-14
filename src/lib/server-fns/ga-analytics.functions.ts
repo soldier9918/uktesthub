@@ -12,6 +12,7 @@ const InputSchema = z.object({
 
 export type GaDashboard = {
   realtime: { activeUsers: number; pageviews: number };
+  realtimeRaw: { activeUsersResponse: string; pageviewsResponse: string };
   pageviews30d: number;
   pageviews24h: number;
   visitors24h: number;
@@ -58,12 +59,11 @@ export const getGaDashboard = createServerFn({ method: "POST" })
     try {
       const token = await getGoogleAccessToken(SCOPE);
 
-      const [realtime, daily30, hourlyViews, hourlyUsers] = await Promise.all([
-        gaFetch(
-          "runRealtimeReport",
-          { metrics: [{ name: "activeUsers" }, { name: "screenPageViews" }] },
-          token,
-        ),
+      // Realtime: TWO separate runRealtimeReport calls (one per metric) per spec.
+      // No caching, no runReport fallback for live cards.
+      const [activeUsersRt, pageviewsRt, daily30, hourlyViews, hourlyUsers] = await Promise.all([
+        gaFetch("runRealtimeReport", { metrics: [{ name: "activeUsers" }] }, token),
+        gaFetch("runRealtimeReport", { metrics: [{ name: "screenPageViews" }] }, token),
         gaFetch(
           "runReport",
           {
@@ -99,11 +99,14 @@ export const getGaDashboard = createServerFn({ method: "POST" })
         ),
       ]);
 
-      // Realtime totals
-      const rtRow = realtime.rows?.[0];
+      // Realtime totals — strictly from runRealtimeReport responses
       const realtimeData = {
-        activeUsers: Number(rtRow?.metricValues?.[0]?.value ?? 0),
-        pageviews: Number(rtRow?.metricValues?.[1]?.value ?? 0),
+        activeUsers: Number(activeUsersRt.rows?.[0]?.metricValues?.[0]?.value ?? 0),
+        pageviews: Number(pageviewsRt.rows?.[0]?.metricValues?.[0]?.value ?? 0),
+      };
+      const realtimeRaw = {
+        activeUsersResponse: JSON.stringify(activeUsersRt),
+        pageviewsResponse: JSON.stringify(pageviewsRt),
       };
 
       // Daily (30 days)
@@ -147,6 +150,7 @@ export const getGaDashboard = createServerFn({ method: "POST" })
       return {
         data: {
           realtime: realtimeData,
+          realtimeRaw,
           pageviews30d,
           pageviews24h,
           visitors24h,
