@@ -1371,13 +1371,18 @@ def build_blanks_pools(prefix: str, grammar_pool: List[Dict[str, Any]]) -> Dict[
     fill: List[Dict[str, Any]] = []
     drop: List[Dict[str, Any]] = []
     for it in grammar_pool:
-        # Typed fill-blanks: single correct token
+        # Fill-blanks: select correct word from a dropdown of options
+        # (rotated so the correct answer is not always in the same position).
+        fill_opts = [it["a"]] + it["d"]
+        rot_f = len(fill) % len(fill_opts)
+        fill_opts = fill_opts[rot_f:] + fill_opts[:rot_f]
+        ci_f = fill_opts.index(it["a"])
         fill.append({
             "id": f"{prefix}-fill-{len(fill) + 1:04d}",
             "type": "fill-blanks",
             "template": it["t"],
-            "prompt": "Type the missing word(s).",
-            "blanks": [{"options": [it["a"]], "correctIndex": 0}],
+            "prompt": "Select the missing word from the dropdown.",
+            "blanks": [{"options": fill_opts, "correctIndex": ci_f}],
             "explanation": it["exp"],
         })
         # Dropdown blanks: 3 options, first is correct (we rotate position)
