@@ -105,7 +105,7 @@ function SkillPage() {
         <section className="mt-8">
           <h2 className="font-display text-xl font-bold">Choose a CEFR level</h2>
           <ul className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            {skill.levels.map((l) => (
+            {skill.levels.map((l: LevelSlug) => (
               <li key={l}>
                 <LevelCard test={test} skill={skill} level={l} />
               </li>

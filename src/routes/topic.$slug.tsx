@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { createFileRoute, Link, notFound, redirect } from "@tanstack/react-router";
-import { getEnglishCategory } from "@/data/english/categories";
+import { getTest } from "@/data/english/categories";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { AdSlot } from "@/components/AdSlot";
@@ -13,10 +13,10 @@ import { breadcrumbSchema } from "@/lib/seo";
 
 export const Route = createFileRoute("/topic/$slug")({
   loader: ({ params }) => {
-    if (getEnglishCategory(params.slug)) {
+    if (getTest(params.slug)) {
       throw redirect({
-        to: "/english-language-tests/$category",
-        params: { category: params.slug },
+        to: "/english-language-tests/$test",
+        params: { test: params.slug },
       });
     }
     const found = findTopic(params.slug);

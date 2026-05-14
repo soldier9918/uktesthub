@@ -118,7 +118,7 @@ function TestOverviewPage() {
             Pick a skill to see the available CEFR levels.
           </p>
           <ul className="mt-5 grid gap-4 sm:grid-cols-2">
-            {test.skills.map((s) => (
+            {test.skills.map((s: SkillConfig) => (
               <li key={s.slug}>
                 <SkillCard test={test} skill={s} />
               </li>
