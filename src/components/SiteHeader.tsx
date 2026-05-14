@@ -1,5 +1,5 @@
 import { Link, useNavigate } from "@tanstack/react-router";
-import { Search, User as UserIcon, LogOut, LayoutDashboard, Heart, Settings, Menu, X } from "lucide-react";
+import { User as UserIcon, LogOut, LayoutDashboard, Heart, Settings, Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Logo } from "./Logo";
 import { useAuth } from "@/lib/auth-context";
@@ -64,11 +64,6 @@ export function SiteHeader() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <button type="button" aria-label="Search"
-            className="hidden h-10 w-10 items-center justify-center text-white/70 transition-colors hover:bg-white/10 hover:text-white md:inline-flex">
-            <Search className="h-4.5 w-4.5" />
-          </button>
-
           {loading ? null : user ? (
             <DropdownMenu>
               <DropdownMenuTrigger className="inline-flex h-10 items-center gap-2 border border-white/15 bg-white/5 px-3 text-sm font-semibold text-white hover:bg-white/10">
@@ -113,15 +108,6 @@ export function SiteHeader() {
       {mobileOpen && (
         <div className="border-t border-white/10 bg-[#06172e] lg:hidden">
           <nav className="mx-auto flex max-w-7xl flex-col gap-1 px-4 py-3 md:px-6">
-            <div className="mb-2 flex items-center gap-2 border-b border-white/10 pb-2">
-              <button
-                type="button"
-                aria-label="Search"
-                className="inline-flex h-10 flex-1 items-center justify-center gap-2 text-sm font-semibold text-white/80 hover:bg-white/10 hover:text-white"
-              >
-                <Search className="h-4 w-4" /> Search
-              </button>
-            </div>
             {nav.map((item) =>
               item.slug ? (
                 <Link
