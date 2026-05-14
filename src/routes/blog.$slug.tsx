@@ -16,8 +16,10 @@ export const Route = createFileRoute("/blog/$slug")({
     const slug = params?.slug ?? "";
     const post = getPostBySlug(slug);
     if (!post) return { meta: [{ title: "Article — UK Test Hub" }] };
+    const withSuffix = `${post.title} | UK Test Hub`;
+    const title = withSuffix.length <= 60 ? withSuffix : post.title;
     const base = pageMeta({
-      title: `${post.title} — UK Test Hub`,
+      title,
       description: post.description,
       path: `/blog/${slug}`,
       image: post.hero,

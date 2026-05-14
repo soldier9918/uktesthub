@@ -27,8 +27,9 @@ export const Route = createFileRoute("/topic/$slug")({
     if (!loaderData) return { meta: [{ title: "Topic — UK Test Hub" }] };
     const { category, topic } = loaderData;
     const slug = params?.slug ?? topic.slug;
-    const title = `${topic.title} — 45 Free Mock Tests — UK Test Hub`;
-    const description = `Practice the ${topic.title} with 45 free mock tests, each containing ${QUESTIONS_PER_MOCK} questions with explanations.`;
+    const withSuffix = `${topic.title} Practice Test | UK Test Hub`;
+    const title = withSuffix.length <= 60 ? withSuffix : `${topic.title} | UK Test Hub`;
+    const description = `Practise ${topic.title} with free mock tests — ${QUESTIONS_PER_MOCK} questions per mock with instant results and explanations.`;
     return {
       meta: [
         { title },

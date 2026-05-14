@@ -53,7 +53,8 @@ export const Route = createFileRoute("/quiz/$slug")({
     const q = loaderData?.quiz;
     const slug = params?.slug ?? "";
     if (!q) return { meta: [{ title: "Quiz — UK Test Hub" }] };
-    const title = `${q.quizTitle} — Free Practice — UK Test Hub`;
+    const withSuffix = `${q.quizTitle} | UK Test Hub`;
+    const title = withSuffix.length <= 60 ? withSuffix : q.quizTitle;
     const description = q.description;
     const url = `https://www.uktesthub.com/quiz/${slug}`;
     const topicSlug = slug.replace(/-mock-\d+$/, "");

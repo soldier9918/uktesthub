@@ -14,16 +14,16 @@ export const Route = createFileRoute("/all-tests")({
       {
         name: "description",
         content:
-          "Browse every free UK mock test on UK Test Hub: Driving Theory, Life in the UK, IELTS, CSCS, SERU TfL, NMC CBT, SIA, ESOL, Numerical, Food Hygiene, First Aid and many more.",
+          "Browse free UK mock tests across driving, English, Life in the UK, NHS, CSCS, taxi, professional and more.",
       },
       {
         property: "og:title",
-        content: "All UK Mock Tests — UK Test Hub",
+        content: "All UK Mock Tests | UK Test Hub",
       },
       {
         property: "og:description",
         content:
-          "The full directory of UK practice tests in one place — DVSA, TfL, Home Office, IELTS, CSCS, NMC, SIA and more.",
+          "Browse free UK mock tests across driving, English, Life in the UK, NHS, CSCS, taxi, professional and more.",
       }, { property: "og:url", content: "https://www.uktesthub.com/all-tests" }
     ],
     links: [{ rel: "canonical", href: "https://www.uktesthub.com/all-tests" }],
