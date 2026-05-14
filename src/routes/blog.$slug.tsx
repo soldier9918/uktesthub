@@ -23,17 +23,16 @@ export const Route = createFileRoute("/blog/$slug")({
       image: post.hero,
       type: "article",
     });
-    return {
-      ...base,
-      scripts: [
-        breadcrumbSchema([
-          { name: "Home", url: "/" },
-          { name: "Study Guides", url: "/blog" },
-          { name: post.title, url: `/blog/${slug}` },
-        ]),
-        articleSchema({ ...post, image: post.hero }),
-      ],
-    };
+    const scripts = [
+      breadcrumbSchema([
+        { name: "Home", url: "/" },
+        { name: "Study Guides", url: "/blog" },
+        { name: post.title, url: `/blog/${slug}` },
+      ]),
+      articleSchema({ ...post, image: post.hero }),
+    ];
+    if (post.faqs?.length) scripts.push(faqSchema(post.faqs));
+    return { ...base, scripts };
   },
   component: BlogPostPage,
 });
