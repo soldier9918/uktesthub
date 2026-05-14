@@ -67,7 +67,7 @@ def flavour_bank(bank: list, skill: str, level: str) -> None:
             if prefix and not q["question"].startswith(prefix):
                 q["question"] = prefix + q["question"]
             q["question"] = q["question"] + lvl_tag
-        elif q["type"] == "multiple-response":
+        elif q["type"] in ("multiple-response", "true-false"):
             q["question"] = q["question"] + lvl_tag
 
 
