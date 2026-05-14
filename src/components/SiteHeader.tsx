@@ -130,15 +130,6 @@ export function SiteHeader() {
               >
                 <Search className="h-4 w-4" /> Search
               </button>
-              <button
-                type="button"
-                onClick={toggleTheme}
-                aria-label="Toggle dark mode"
-                className="inline-flex h-10 flex-1 items-center justify-center gap-2 text-sm font-semibold text-white/80 hover:bg-white/10 hover:text-white"
-              >
-                {isDark ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
-                {isDark ? "Light mode" : "Dark mode"}
-              </button>
             </div>
             {nav.map((item) =>
               item.slug ? (
