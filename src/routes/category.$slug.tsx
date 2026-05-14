@@ -7,7 +7,7 @@ import { CategoryIcon, accentClasses } from "@/components/CategoryIcon";
 import { getCategory, categories } from "@/data/categories";
 import { categorySeo } from "@/data/category-seo";
 import { TOTAL_MOCKS_PER_TOPIC, QUESTIONS_PER_MOCK, listMockSlots } from "@/data/mocks";
-import { Home, ChevronRight, ArrowRight, BookOpen, Clock, ClipboardCheck } from "lucide-react";
+import { Home, ChevronRight, ArrowRight, BookOpen } from "lucide-react";
 import { pageMeta, faqSchema, breadcrumbSchema } from "@/lib/seo";
 
 export const Route = createFileRoute("/category/$slug")({
@@ -117,82 +117,75 @@ function CategoryPage() {
                     to="/guide/$slug"
                     params={{ slug: t.slug }}
                     aria-label={`Read the ${t.title} guide`}
-                    className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-slate-200/70 bg-white shadow-[0_1px_3px_rgba(0,0,0,0.04),0_10px_40px_-15px_rgba(15,23,42,0.12)] transition-all duration-500 hover:-translate-y-0.5 hover:shadow-[0_1px_3px_rgba(0,0,0,0.05),0_24px_60px_-18px_rgba(15,23,42,0.22)]"
+                    className="group relative flex h-full flex-col justify-between overflow-hidden rounded-2xl border border-border bg-card p-6 shadow-soft transition-all duration-200 hover:-translate-y-0.5 hover:border-coral/40 hover:shadow-elevated"
                   >
-                    <div
-                      aria-hidden
-                      className="pointer-events-none absolute inset-0 opacity-[0.04] [background-image:radial-gradient(#0f172a_0.5px,transparent_0.5px)] [background-size:22px_22px]"
-                    />
-                    <div className="h-1.5 w-full bg-gradient-to-r from-[#0f172a] via-[#1e3a8a] to-[#2563eb]" />
-                    <div className="relative z-10 flex h-full flex-col p-7">
-                      <div className="flex items-start justify-between">
-                        <div className="flex h-12 w-12 items-center justify-center rounded-xl border border-slate-200 bg-slate-50 text-slate-700 transition-colors duration-300 group-hover:bg-slate-900 group-hover:text-white">
-                          <BookOpen className="h-5 w-5" strokeWidth={1.6} />
+                    <div>
+                      <div className="flex items-start gap-4">
+                        <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-coral/10 text-coral">
+                          <BookOpen className="h-6 w-6" />
+                        </span>
+                        <div className="min-w-0">
+                          <p className="text-[11px] font-semibold uppercase tracking-wider text-muted-foreground">
+                            Test Guide
+                          </p>
+                          <h3 className="mt-0.5 font-display text-lg font-bold leading-tight text-foreground">
+                            {t.title} Guide
+                          </h3>
+                          <p className="mt-1 text-xs text-muted-foreground">
+                            Format, tips and how to pass first time
+                          </p>
                         </div>
-                        <span className="rounded-full bg-slate-100 px-2.5 py-1 text-[10px] font-bold uppercase tracking-[0.18em] text-slate-700">
-                          Test Guide
-                        </span>
                       </div>
-                      <h3 className="mt-6 font-serif text-[1.5rem] font-semibold leading-[1.2] tracking-tight text-slate-900">
-                        {t.title} Guide
-                      </h3>
-                      <p className="mt-2 text-sm leading-relaxed text-slate-500">
-                        Format, tips and proven strategies to pass first time.
-                      </p>
-                      <div className="mt-auto flex items-center justify-between border-t border-slate-100 pt-5">
-                        <span className="inline-flex items-center gap-1.5 text-[11px] font-semibold uppercase tracking-wider text-slate-400">
-                          <Clock className="h-3.5 w-3.5" /> ~7 min read
-                        </span>
-                        <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-slate-900 transition-all group-hover:gap-2.5">
-                          Read guide
-                          <ArrowRight className="h-4 w-4" />
-                        </span>
-                      </div>
+                    </div>
+                    <div className="mt-6 flex items-center justify-between border-t border-border pt-4">
+                      <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+                        ~7 min read
+                      </span>
+                      <span className="inline-flex items-center gap-1 text-sm font-semibold text-coral group-hover:gap-2 transition-all">
+                        Read the guide
+                        <ArrowRight className="h-4 w-4" />
+                      </span>
                     </div>
                   </Link>,
 
-                  // PRACTICE TEST CARD
+                  // TEST CARD (right column)
                   <div key={`${t.slug}-test`} className="relative">
-                    <div className="absolute right-4 top-4 z-20">
+                    <div className="absolute right-3 top-3 z-10">
                       <BookmarkButton topicSlug={t.slug} />
                     </div>
                     <Link
                       to="/topic/$slug"
                       params={{ slug: t.slug }}
                       aria-label={`Open ${t.title} — ${TOTAL_MOCKS_PER_TOPIC} free mock tests`}
-                      className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-rose-100 bg-white shadow-[0_1px_3px_rgba(0,0,0,0.04),0_10px_40px_-15px_rgba(244,63,94,0.18)] transition-all duration-500 hover:-translate-y-0.5 hover:shadow-[0_1px_3px_rgba(0,0,0,0.05),0_24px_60px_-18px_rgba(244,63,94,0.28)]"
+                      className="group relative flex h-full flex-col justify-between overflow-hidden rounded-2xl border border-border bg-card p-6 shadow-soft transition-all duration-200 hover:-translate-y-0.5 hover:border-coral/40 hover:shadow-elevated"
                     >
-                      <div
-                        aria-hidden
-                        className="pointer-events-none absolute inset-0 opacity-[0.05] [background-image:radial-gradient(#e11d48_0.5px,transparent_0.5px)] [background-size:22px_22px]"
-                      />
-                      <div className="h-1.5 w-full bg-gradient-to-r from-[#e11d48] via-[#f43f5e] to-[#fb7185]" />
-                      <div className="relative z-10 flex h-full flex-col p-7">
-                        <div className="flex items-start justify-between pr-10">
-                          <div className="flex h-12 w-12 items-center justify-center rounded-xl border border-rose-100 bg-rose-50 text-rose-600 transition-colors duration-300 group-hover:bg-rose-600 group-hover:text-white">
-                            <ClipboardCheck className="h-5 w-5" strokeWidth={1.6} />
-                          </div>
-                          <span className="rounded-full bg-rose-50 px-2.5 py-1 text-[10px] font-bold uppercase tracking-[0.18em] text-rose-700">
+                    <div>
+                      <div className="flex items-start gap-4">
+                        <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-coral/10 text-coral">
+                          <CategoryIcon name={category.icon} className="h-6 w-6" />
+                        </span>
+                        <div className="min-w-0 pr-8">
+                          <p className="text-[11px] font-semibold uppercase tracking-wider text-muted-foreground">
                             Practice Test
-                          </span>
-                        </div>
-                        <h3 className="mt-6 font-serif text-[1.5rem] font-semibold leading-[1.2] tracking-tight text-slate-900">
-                          {t.title}
-                        </h3>
-                        <p className="mt-2 text-sm leading-relaxed text-slate-500">
-                          {TOTAL_MOCKS_PER_TOPIC} mock papers · {QUESTIONS_PER_MOCK} questions each, with explanations.
-                        </p>
-                        <div className="mt-auto flex items-center justify-between border-t border-rose-100/70 pt-5">
-                          <span className="inline-flex items-center gap-2 rounded-md bg-rose-50 px-2.5 py-1 text-[11px] font-semibold tabular-nums text-rose-700">
-                            <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-rose-500" />
-                            {available}/{TOTAL_MOCKS_PER_TOPIC} ready
-                          </span>
-                          <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-rose-600 transition-all group-hover:gap-2.5">
-                            Start test
-                            <ArrowRight className="h-4 w-4" />
-                          </span>
+                          </p>
+                          <h3 className="mt-0.5 font-display text-lg font-bold leading-tight text-foreground">
+                            {t.title}
+                          </h3>
+                          <p className="mt-1 text-xs text-muted-foreground">
+                            {TOTAL_MOCKS_PER_TOPIC} mock tests · {QUESTIONS_PER_MOCK} questions each
+                          </p>
                         </div>
                       </div>
+                    </div>
+                    <div className="mt-6 flex items-center justify-between border-t border-border pt-4">
+                      <span className="text-xs font-semibold tabular-nums text-muted-foreground">
+                        {available} of {TOTAL_MOCKS_PER_TOPIC} ready
+                      </span>
+                      <span className="inline-flex items-center gap-1 text-sm font-semibold text-coral group-hover:gap-2 transition-all">
+                        Start {t.title}
+                        <ArrowRight className="h-4 w-4" />
+                      </span>
+                    </div>
                     </Link>
                   </div>,
                 ];
