@@ -77,10 +77,6 @@ export function SiteHeader() {
             className="hidden h-10 w-10 items-center justify-center text-white/70 transition-colors hover:bg-white/10 hover:text-white md:inline-flex">
             <Search className="h-4.5 w-4.5" />
           </button>
-          <button type="button" onClick={toggleTheme} aria-label="Toggle dark mode"
-            className="hidden h-10 w-10 items-center justify-center text-white/70 transition-colors hover:bg-white/10 hover:text-white md:inline-flex">
-            {isDark ? <Sun className="h-4.5 w-4.5" /> : <Moon className="h-4.5 w-4.5" />}
-          </button>
 
           {loading ? null : user ? (
             <DropdownMenu>
