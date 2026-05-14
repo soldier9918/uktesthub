@@ -117,18 +117,18 @@ function CategoryPage() {
                     to="/guide/$slug"
                     params={{ slug: t.slug }}
                     aria-label={`Read the ${t.title} guide`}
-                    className="group relative flex h-full flex-col justify-between overflow-hidden rounded-2xl border border-border bg-card p-6 shadow-soft transition-all duration-200 hover:-translate-y-0.5 hover:border-coral/40 hover:shadow-elevated"
+                    className="group relative flex h-full flex-col justify-between overflow-hidden rounded-2xl border-l-4 border-l-blue-600 border-y border-r border-y-border border-r-border bg-blue-50/40 p-6 shadow-soft transition-all duration-200 hover:-translate-y-0.5 hover:border-l-blue-700 hover:bg-blue-50/70 hover:shadow-elevated"
                   >
                     <div>
                       <div className="flex items-start gap-4">
-                        <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-coral/10 text-coral">
+                        <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-blue-600/10 text-blue-700">
                           <BookOpen className="h-6 w-6" />
                         </span>
                         <div className="min-w-0">
-                          <p className="text-[11px] font-semibold uppercase tracking-wider text-muted-foreground">
+                          <span className="inline-flex items-center rounded-full bg-blue-600 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-white">
                             Test Guide
-                          </p>
-                          <h3 className="mt-0.5 font-display text-lg font-bold leading-tight text-foreground">
+                          </span>
+                          <h3 className="mt-1.5 font-display text-lg font-bold leading-tight text-foreground">
                             {t.title} Guide
                           </h3>
                           <p className="mt-1 text-xs text-muted-foreground">
@@ -137,11 +137,11 @@ function CategoryPage() {
                         </div>
                       </div>
                     </div>
-                    <div className="mt-6 flex items-center justify-between border-t border-border pt-4">
+                    <div className="mt-6 flex items-center justify-between border-t border-blue-600/20 pt-4">
                       <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
                         ~7 min read
                       </span>
-                      <span className="inline-flex items-center gap-1 text-sm font-semibold text-coral group-hover:gap-2 transition-all">
+                      <span className="inline-flex items-center gap-1 text-sm font-semibold text-blue-700 group-hover:gap-2 transition-all">
                         Read the guide
                         <ArrowRight className="h-4 w-4" />
                       </span>
@@ -157,18 +157,18 @@ function CategoryPage() {
                       to="/topic/$slug"
                       params={{ slug: t.slug }}
                       aria-label={`Open ${t.title} — ${TOTAL_MOCKS_PER_TOPIC} free mock tests`}
-                      className="group relative flex h-full flex-col justify-between overflow-hidden rounded-2xl border border-border bg-card p-6 shadow-soft transition-all duration-200 hover:-translate-y-0.5 hover:border-coral/40 hover:shadow-elevated"
+                      className="group relative flex h-full flex-col justify-between overflow-hidden rounded-2xl border-l-4 border-l-red-600 border-y border-r border-y-border border-r-border bg-red-50/40 p-6 shadow-soft transition-all duration-200 hover:-translate-y-0.5 hover:border-l-red-700 hover:bg-red-50/70 hover:shadow-elevated"
                     >
                     <div>
                       <div className="flex items-start gap-4">
-                        <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-coral/10 text-coral">
+                        <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-red-600/10 text-red-700">
                           <CategoryIcon name={category.icon} className="h-6 w-6" />
                         </span>
                         <div className="min-w-0 pr-8">
-                          <p className="text-[11px] font-semibold uppercase tracking-wider text-muted-foreground">
+                          <span className="inline-flex items-center rounded-full bg-red-600 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-white">
                             Practice Test
-                          </p>
-                          <h3 className="mt-0.5 font-display text-lg font-bold leading-tight text-foreground">
+                          </span>
+                          <h3 className="mt-1.5 font-display text-lg font-bold leading-tight text-foreground">
                             {t.title}
                           </h3>
                           <p className="mt-1 text-xs text-muted-foreground">
@@ -177,11 +177,11 @@ function CategoryPage() {
                         </div>
                       </div>
                     </div>
-                    <div className="mt-6 flex items-center justify-between border-t border-border pt-4">
+                    <div className="mt-6 flex items-center justify-between border-t border-red-600/20 pt-4">
                       <span className="text-xs font-semibold tabular-nums text-muted-foreground">
                         {available} of {TOTAL_MOCKS_PER_TOPIC} ready
                       </span>
-                      <span className="inline-flex items-center gap-1 text-sm font-semibold text-coral group-hover:gap-2 transition-all">
+                      <span className="inline-flex items-center gap-1 text-sm font-semibold text-red-700 group-hover:gap-2 transition-all">
                         Start {t.title}
                         <ArrowRight className="h-4 w-4" />
                       </span>
