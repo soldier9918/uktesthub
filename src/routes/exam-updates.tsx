@@ -14,9 +14,7 @@ export const Route = createFileRoute("/exam-updates")({
       {
         property: "og:description",
         content: "Stay informed about the latest changes to UK exams.",
-      },
-    ,
-      { property: "og:url", content: "https://www.uktesthub.com/exam-updates" }
+      }, { property: "og:url", content: "https://www.uktesthub.com/exam-updates" }
     ],
   links: [{ rel: "canonical", href: "https://www.uktesthub.com/exam-updates" }],
   }),

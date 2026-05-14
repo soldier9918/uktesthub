@@ -14,9 +14,7 @@ export const Route = createFileRoute("/terms")({
       {
         property: "og:description",
         content: "Terms governing your use of UK Test Hub.",
-      },
-    ,
-      { property: "og:url", content: "https://www.uktesthub.com/terms" }
+      }, { property: "og:url", content: "https://www.uktesthub.com/terms" }
     ],
   links: [{ rel: "canonical", href: "https://www.uktesthub.com/terms" }],
   }),

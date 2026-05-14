@@ -14,9 +14,7 @@ export const Route = createFileRoute("/cookies")({
       {
         property: "og:description",
         content: "Details on the cookies we use and how to control them.",
-      },
-    ,
-      { property: "og:url", content: "https://www.uktesthub.com/cookies" }
+      }, { property: "og:url", content: "https://www.uktesthub.com/cookies" }
     ],
     links: [{ rel: "canonical", href: "https://www.uktesthub.com/cookies" }],
   }),

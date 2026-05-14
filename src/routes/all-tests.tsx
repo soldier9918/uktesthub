@@ -27,9 +27,7 @@ export const Route = createFileRoute("/all-tests")({
         property: "og:description",
         content:
           "The full directory of UK practice tests in one place — DVSA, TfL, Home Office, IELTS, CSCS, NMC, SIA and more.",
-      },
-    ,
-      { property: "og:url", content: "https://www.uktesthub.com/all-tests" }
+      }, { property: "og:url", content: "https://www.uktesthub.com/all-tests" }
     ],
   }),
   component: AllTestsPage,
