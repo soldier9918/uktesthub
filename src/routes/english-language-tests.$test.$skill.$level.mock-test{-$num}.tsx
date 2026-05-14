@@ -129,7 +129,7 @@ function EnglishMockPage() {
             </Link>
             {num < 45 && (
               <Link
-                to="/english-language-tests/$test/$skill/$level/mock-test-$num"
+                to="/english-language-tests/$test/$skill/$level/mock-test{-$num}"
                 params={{
                   test: test.slug,
                   skill: skill.slug,

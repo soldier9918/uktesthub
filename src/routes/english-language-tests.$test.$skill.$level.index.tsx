@@ -218,7 +218,7 @@ function MockCard({
   if (state !== "ready") return inner;
   return (
     <Link
-      to="/english-language-tests/$test/$skill/$level/mock-test-$num"
+      to="/english-language-tests/$test/$skill/$level/mock-test{-$num}"
       params={{
         test: testSlug,
         skill: skillSlug,
