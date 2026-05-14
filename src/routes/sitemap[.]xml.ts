@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { blogPosts } from "@/data/blog";
 import { categories } from "@/data/categories";
-import { englishCategories } from "@/data/english/categories";
+import { englishTests, allEnglishLevelTriples } from "@/data/english/categories";
 import mockIndex from "@/data/mocks/mock-index.json";
 
 const BASE = "https://www.uktesthub.com";
@@ -102,10 +102,23 @@ const quizEntries: Entry[] = QUIZ_WHITELIST.flatMap((topic) =>
 
 const englishEntries: Entry[] = [
   { path: "/english-language-tests", changefreq: "weekly", priority: "0.9" },
-  ...englishCategories.map<Entry>((c) => ({
-    path: `/english-language-tests/${c.slug}`,
+  { path: "/category/english", changefreq: "weekly", priority: "0.9" },
+  ...englishTests.map<Entry>((t) => ({
+    path: `/english-language-tests/${t.slug}`,
     changefreq: "weekly",
-    priority: "0.7",
+    priority: "0.8",
+  })),
+  ...englishTests.flatMap<Entry>((t) =>
+    t.skills.map<Entry>((s) => ({
+      path: `/english-language-tests/${t.slug}/${s.slug}`,
+      changefreq: "weekly",
+      priority: "0.7",
+    })),
+  ),
+  ...allEnglishLevelTriples().map<Entry>(({ test, skill, level }) => ({
+    path: `/english-language-tests/${test}/${skill}/${level}`,
+    changefreq: "weekly",
+    priority: "0.6",
   })),
 ];
 
