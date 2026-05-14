@@ -13,6 +13,12 @@ import { breadcrumbSchema } from "@/lib/seo";
 
 export const Route = createFileRoute("/topic/$slug")({
   loader: ({ params }) => {
+    if (getEnglishCategory(params.slug)) {
+      throw redirect({
+        to: "/english-language-tests/$category",
+        params: { category: params.slug },
+      });
+    }
     const found = findTopic(params.slug);
     if (!found) throw notFound();
     return { category: found.category, topic: found.topic };
