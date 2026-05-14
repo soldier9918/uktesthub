@@ -1,55 +1,72 @@
-## English Language Tests — granular category system
+## Goal
+Generate real questions for the English Language Tests section in priority order — IELTS → ESOL → SELT → TOEFL — with a balanced mix of question types and zero duplicates within each category (45 mocks × 24 questions = **1,080 unique questions per category**, **4,320 total** for the four priority categories).
 
-Building a full English Language Tests section with 20 categories (4 test types + 6 CEFR levels + 4 skills + 6 topics), each with 45 mock tests × 24 questions, mirroring the existing UK Test Hub mock-test architecture.
+## Question type mix (per mock, per category)
 
-### Scope & realism note
+Each 24-question mock will use this fixed distribution so the experience feels varied:
 
-20 categories × 45 mocks × 24 questions = **21,600 questions**. Even the "priority 6" subset is ~6,480 questions. Generating that volume of genuinely unique, high-quality, hand-written questions in a single chat turn is not feasible — and template-stamping them ("Question 1: Choose the correct word…") would just create junk that hurts SEO and user trust.
+| Type                  | Per mock | % of mock |
+|-----------------------|---------:|----------:|
+| Multiple choice       | 10       | ~42%      |
+| Fill-in-the-blank     | 6        | 25%       |
+| Dropdown blanks       | 4        | ~17%      |
+| Multiple response     | 4        | ~17%      |
 
-I'll therefore split the work into two phases. Phase 1 (this turn) builds the full structure, routing, UI, SEO, sitemap, and a working data pipeline so every page is live and clickable. Phase 2 (subsequent turns) generates real question content category by category — same pattern your existing `/mocks/*.json` files use.
+(Maps to existing QuizRunner types: `mcq`, `fill-blanks` (typed), `fill-blanks` (dropdown variant), `multiple-response`. `dropdown_blanks` and `fill-in-the-blank` both use the existing `fill-blanks` renderer — dropdown variant uses 3 options per blank; typed variant uses a single correct string with the input rendered as a free-text-style chip.)
 
-### Phase 1 — structure, routes, UI (this turn)
+## Bank shape (extend `public/english-mocks/<slug>.json`)
 
-**Data layer** (`src/data/english/`)
-- `categories.ts` — the 20 `EnglishTestCategory` records (id, slug, title, description, type, icon, colourTheme, studyGuideSlug, totalMockTests: 45, questionsPerMockTest: 24).
-- `manifest.ts` — synchronous metadata helpers (mirrors `src/data/mocks/index.ts`): `listEnglishCategories()`, `listEnglishMockSlots(slug)`, `loadEnglishMockBySlug(slug)`. Lazy-fetches per-category JSON from `/english-mocks/<slug>.json` (static asset, never bundled).
-- Per-category JSON files in `public/english-mocks/<slug>.json` — same v2 bank shape as existing topics. Phase 1 ships **placeholder files with `coming-soon: true`** for all 20 categories so routes resolve.
+The current v2 schema only stores MCQs. Extend the `bank` union to support all four types (no breaking change — `type: "mcq"` remains the default):
 
-**Routes** (TanStack file-based, flat dot convention)
-- `src/routes/english-language-tests.tsx` — layout (Outlet).
-- `src/routes/english-language-tests.index.tsx` — main landing, hero, tabs (All / Test Types / CEFR / Skills / Topics), search, grouped cards.
-- `src/routes/english-language-tests.$category.tsx` — category page: title, description, study-guide link (when present), 45 mock cards with availability state.
-- `src/routes/english-language-tests.$category.mock-test-$num.tsx` — mock runner. Reuses the existing `QuizRunner` component + `mockToQuiz` adapter so it gets question-by-question UI, progress bar, explanations, score screen, retry, next-mock, back-to-category for free.
+```ts
+type RawBankItem =
+  | { id: string; type: "mcq"; question: string; options: string[]; correctAnswer: number; explanation: string }
+  | { id: string; type: "multiple-response"; question: string; options: string[]; correctAnswers: number[]; explanation: string }
+  | { id: string; type: "fill-blanks"; template: string; prompt?: string; blanks: { options: string[]; correctIndex: number }[]; explanation: string }
+  | { id: string; type: "dropdown-blanks"; template: string; prompt?: string; blanks: { options: string[]; correctIndex: number }[]; explanation: string };
+```
 
-**SEO**
-- Per-route `head()` with unique title/description, canonical, og tags.
-- Add all 20 category pages + 45 mock pages each (when available) to `src/routes/sitemap[.]xml.ts`.
-- BreadcrumbList JSON-LD on category and mock pages.
+`mocks.ts` will be updated to map each variant onto the matching `Question` type (`dropdown-blanks` → `fill-blanks`).
 
-**Disclaimer**
-- Shown on the main landing page and each category page footer.
+## Generation approach (deterministic, template-driven)
 
-**Existing IELTS/ESOL/TOEFL surfaces**
-- Old broad cards on `/all-tests` (or wherever they appear) updated to link into the new `/english-language-tests/<slug>` pages. Old `/topic/ielts`, `/topic/esol`, `/topic/toefl` left in place to avoid breaking links — the new section becomes the canonical home for English practice.
+A one-off Node script `scripts/generate_english_mocks.ts` will produce the JSON. For each category it composes questions from large curated content pools — no AI calls, fully deterministic, reviewable in source:
 
-### Phase 2 — question generation (separate turns, 1 category at a time)
+- **IELTS** — academic vocabulary, Academic Reading-style sentence completion, Listening-style "what does the speaker mean", grammar in academic register.
+- **ESOL** — UK everyday life: GP, council, post office, transport, shops; SfL-style functional English.
+- **SELT** — A1/A2/B1 visa-style speaking + listening prompts, polite requests, short conversational responses.
+- **TOEFL** — campus life, lecture vocabulary, paraphrase choice, academic register.
 
-Generated server-side via `scripts/generate_english_mocks.py` (mirrors `scripts/generate_mocks.py`). Each run produces one category's `<slug>.json` with 1,080 unique questions following the per-category content rules you specified (IELTS / ESOL / SELT / CEFR-level / skill / topic).
+Per category, the script holds **content pools** large enough to emit 1,080 unique items:
+- ~400 sentence stems for fill-blanks / dropdown-blanks across grammar slots (tense, prep, article, modal, collocation).
+- ~400 MCQ stems (vocabulary in context, paraphrase, gist, inference).
+- ~280 multiple-response stems ("which TWO sentences are formal?", "select all true statements about the passage").
 
-Priority order you gave: B1 → IELTS → ESOL → SELT → Listening → Reading. After Phase 1 ships, tell me which category to generate first and I'll run the script for that one.
+Uniqueness is enforced by hashing the `(template + correct-answer + distractors)` tuple and rejecting collisions while building the bank.
 
-### What you'll see after this turn
+Each mock is then assembled by walking the bank in stride (mock N takes items at indices `N, N+45, N+90, …`) so every mock contains the full type mix and no two mocks share a question.
 
-- `/english-language-tests` live with hero, filter tabs, search, all 20 cards.
-- Every category page reachable, showing 45 mock cards.
-- Each mock card opens the runner; placeholder categories show a clear "Questions coming soon" state instead of an empty quiz.
-- All pages indexable, in sitemap, with unique SEO.
-- Disclaimer present.
-- Ready for me to fill in real questions one category at a time.
+## Scope of THIS turn
 
-### Technical notes
+Building all 4 categories in one turn is too large to land safely. This turn ships:
 
-- Mock data served as static `/english-mocks/*.json` assets (not bundled into the Worker) — same pattern as `public/mocks/*.json`, keeps the bundle small and pages fast.
-- `QuizRunner` is reused, no new quiz UI code.
-- No question text is hardcoded into route components.
-- SSR-safe: lazy fetch uses `resolveMockUrl` pattern from `src/data/mocks/index.ts`.
+1. **Bank schema + loader extension** — `mocks.ts` maps the 4 new types onto QuizRunner's `Question` union; legacy `mcq`-only bank files keep working.
+2. **Generator script** — `scripts/generate_english_mocks.ts` with the IELTS content pool fully populated. Produces `public/english-mocks/ielts.json` (1,080 questions, 45 mocks, mix verified, uniqueness verified).
+3. **IELTS goes live** — `/english-language-tests/ielts` shows "45 of 45 ready" and every mock runs end-to-end.
+4. **Plan file note** for follow-up turns: ESOL → SELT → TOEFL using the same generator, one category per turn, so each lands with a reviewable diff.
+
+## Files
+
+- edit `src/data/english/mocks.ts` — extend bank type, add mappers for `multiple-response`, `fill-blanks`, `dropdown-blanks`.
+- create `scripts/generate_english_mocks.ts` — content pools + emitter, runnable with `bun scripts/generate_english_mocks.ts ielts`.
+- create `public/english-mocks/ielts.json` — output of the script (committed).
+- edit `.lovable/plan.md` — record the per-category rollout order.
+
+## Disclaimers / compliance
+
+No copy on the new pages claims UK Test Hub is an official IELTS / ESOL / SELT / TOEFL provider. The existing site-wide disclaimer on the English landing page already covers this; no copy changes needed.
+
+## Out of scope this turn
+
+- ESOL, SELT, TOEFL JSON files (next 3 turns).
+- The 16 remaining categories (CEFR, skills, topics) — still "coming soon".

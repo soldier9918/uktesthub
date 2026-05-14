@@ -7,7 +7,13 @@
 // `categoryHasBank` and `loadEnglishMockBySlug` resolve to undefined
 // without throwing.
 
-import type { Quiz, Question, MCQQuestion } from "@/data/quizzes";
+import type {
+  Quiz,
+  Question,
+  MCQQuestion,
+  FillBlanksQuestion,
+  MultipleResponseQuestion,
+} from "@/data/quizzes";
 import {
   englishCategories,
   ENGLISH_QUESTIONS_PER_MOCK,
@@ -24,10 +30,30 @@ type RawMcq = {
   explanation: string;
 };
 
+type RawMultipleResponse = {
+  id: string;
+  type: "multiple-response";
+  question: string;
+  options: string[];
+  correctAnswers: number[];
+  explanation: string;
+};
+
+type RawBlanks = {
+  id: string;
+  type: "fill-blanks" | "dropdown-blanks";
+  template: string;
+  prompt?: string;
+  blanks: { options: string[]; correctIndex: number }[];
+  explanation: string;
+};
+
+type RawBankItem = RawMcq | RawMultipleResponse | RawBlanks;
+
 type V2File = {
   version: 2;
   category: string; // slug
-  bank: RawMcq[];
+  bank: RawBankItem[];
   mocks: { mockNumber: number; title: string; questionIds: string[] }[];
 };
 
@@ -118,15 +144,40 @@ export async function categoryHasBank(categorySlug: string): Promise<boolean> {
   return Boolean(file && file.bank.length > 0);
 }
 
-function rawToMcq(raw: RawMcq, idx: number): MCQQuestion {
-  return {
+function rawToQuestion(raw: RawBankItem, idx: number): Question {
+  const id = idx + 1;
+  if (raw.type === "multiple-response") {
+    const q: MultipleResponseQuestion = {
+      type: "multiple-response",
+      id,
+      question: raw.question,
+      options: raw.options,
+      correctAnswers: raw.correctAnswers,
+      explanation: raw.explanation,
+    };
+    return q;
+  }
+  if (raw.type === "fill-blanks" || raw.type === "dropdown-blanks") {
+    const q: FillBlanksQuestion = {
+      type: "fill-blanks",
+      id,
+      template: raw.template,
+      prompt: raw.prompt,
+      blanks: raw.blanks,
+      explanation: raw.explanation,
+    };
+    return q;
+  }
+  const m = raw as RawMcq;
+  const q: MCQQuestion = {
     type: "mcq",
-    id: idx + 1,
-    question: raw.question,
-    options: raw.options,
-    correctAnswer: raw.correctAnswer,
-    explanation: raw.explanation,
+    id,
+    question: m.question,
+    options: m.options,
+    correctAnswer: m.correctAnswer,
+    explanation: m.explanation,
   };
+  return q;
 }
 
 /**
@@ -149,7 +200,7 @@ export async function loadEnglishMockBySlug(
   const questions: Question[] = [];
   for (const qid of m.questionIds) {
     const q = bankById.get(qid);
-    if (q) questions.push(rawToMcq(q, questions.length));
+    if (q) questions.push(rawToQuestion(q, questions.length));
   }
   if (questions.length === 0) return undefined;
   return {
