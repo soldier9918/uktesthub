@@ -1,7 +1,7 @@
 import { Outlet, Link, createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
 
 import appCss from "../styles.css?url";
-import { organizationSchema, websiteSchema, SITE_URL } from "@/lib/seo";
+import { organizationSchema, websiteSchema } from "@/lib/seo";
 import { StickyAdSlot } from "@/components/AdSlot";
 import { AuthProvider } from "@/lib/auth-context";
 import { PageViewTracker } from "@/components/PageViewTracker";
@@ -35,24 +35,11 @@ export const Route = createRootRoute({
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "UK Test Hub" },
-      {
-        name: "description",
-        content:
-          "Free UK practice tests: Driving Theory, Life in the UK, IELTS, GCSE, CSCS, NHS, SERU TfL and more. Realistic mock exams with instant results and explanations.",
-      },
       { name: "author", content: "UK Test Hub" },
       { name: "google-site-verification", content: "5MXOtpExyGc2s5q9kWcw8S2VkkU15G4xIogsw8LoICk" },
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: "UK Test Hub" },
-      { property: "og:url", content: SITE_URL + "/" },
       { name: "twitter:card", content: "summary_large_image" },
-      { property: "og:title", content: "UK Test Hub" },
-      { name: "twitter:title", content: "UK Test Hub" },
-      { property: "og:image", content: "https://www.uktesthub.com/og-uk-test-hub.jpg" },
-      { property: "og:image:width", content: "1200" },
-      { property: "og:image:height", content: "630" },
-      { property: "og:image:alt", content: "UK Test Hub free mock tests and study guides" },
-      { name: "twitter:image", content: "https://www.uktesthub.com/og-uk-test-hub.jpg" },
     ],
     links: [
       {
