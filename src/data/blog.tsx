@@ -54,6 +54,12 @@ import h_PrivateHireDriverBadgeRules from "@/assets/blog/private-hire-driver-bad
 import h_HowToBecomeAPrivateHireDriverLondon from "@/assets/blog/how-to-become-a-private-hire-driver-london.jpg";
 import h_SiaDoorSupervisorGuide from "@/assets/blog/sia-door-supervisor-guide.jpg";
 import h_ItTechStudyGuide from "@/assets/blog/it-tech-study-guide.jpg";
+import h_ComptiaAPlusUkStudyGuide from "@/assets/blog/comptia-a-plus-uk-study-guide.jpg";
+import h_CyberSecurityAwarenessTestGuide from "@/assets/blog/cyber-security-awareness-test-guide.jpg";
+import h_Itil4FoundationPracticeGuide from "@/assets/blog/itil-4-foundation-practice-guide.jpg";
+import h_SiaDoorSupervisorTestGuide2026 from "@/assets/blog/sia-door-supervisor-test-guide-2026.jpg";
+import h_SiaDoorSupervisorMockQuestionsExplained from "@/assets/blog/sia-door-supervisor-mock-questions-explained.jpg";
+import h_HowToPassSiaDoorSupervisorFirstTime from "@/assets/blog/how-to-pass-sia-door-supervisor-first-time.jpg";
 import { RoadSignsReferenceBody } from "./blog-content/road-signs-reference";
 import { ShowAndTellRoadSignsBody } from "./blog-content/show-and-tell-road-signs";
 
@@ -10066,7 +10072,7 @@ export const blogPosts: BlogPost[] = [
     readingMinutes: 6,
     category: "Security",
     tags: ["SIA", "door supervisor", "security"],
-    hero: h_SiaDoorSupervisorGuide,
+    hero: h_SiaDoorSupervisorTestGuide2026,
     body: () => (
       <>
         <p>
@@ -10304,7 +10310,7 @@ export const blogPosts: BlogPost[] = [
     readingMinutes: 6,
     category: "Security",
     tags: ["SIA", "door supervisor", "mock questions"],
-    hero: h_SiaDoorSupervisorGuide,
+    hero: h_SiaDoorSupervisorMockQuestionsExplained,
     body: () => (
       <>
         <p>
@@ -10554,7 +10560,7 @@ export const blogPosts: BlogPost[] = [
     readingMinutes: 6,
     category: "Security",
     tags: ["SIA", "door supervisor", "study plan"],
-    hero: h_SiaDoorSupervisorGuide,
+    hero: h_HowToPassSiaDoorSupervisorFirstTime,
     body: () => (
       <>
         <p>
@@ -10763,7 +10769,7 @@ export const blogPosts: BlogPost[] = [
     readingMinutes: 6,
     category: "IT & Tech",
     tags: ["CompTIA", "A+", "IT certification"],
-    hero: h_ItTechStudyGuide,
+    hero: h_ComptiaAPlusUkStudyGuide,
     body: () => (
       <>
         <p>
@@ -10995,7 +11001,7 @@ export const blogPosts: BlogPost[] = [
     readingMinutes: 6,
     category: "IT & Tech",
     tags: ["cyber security", "awareness", "GDPR"],
-    hero: h_ItTechStudyGuide,
+    hero: h_CyberSecurityAwarenessTestGuide,
     body: () => (
       <>
         <p>
@@ -11213,7 +11219,7 @@ export const blogPosts: BlogPost[] = [
     readingMinutes: 6,
     category: "IT & Tech",
     tags: ["ITIL 4", "service management", "PeopleCert"],
-    hero: h_ItTechStudyGuide,
+    hero: h_Itil4FoundationPracticeGuide,
     body: () => (
       <>
         <p>
