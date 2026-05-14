@@ -222,6 +222,60 @@ function CategoryPage() {
   );
 }
 
+function CategoryGroup({
+  title,
+  items,
+  compact = false,
+}: {
+  title: string;
+  items: EnglishCategory[];
+  compact?: boolean;
+}) {
+  return (
+    <div>
+      <h3 className="font-display text-base font-bold">{title}</h3>
+      <ul className={`mt-3 grid gap-3 ${compact ? "sm:grid-cols-2 lg:grid-cols-3" : "sm:grid-cols-2 lg:grid-cols-4"}`}>
+        {items.map((item) => (
+          <li key={item.slug}>
+            <PracticeCategoryCard cat={item} />
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+function PracticeCategoryCard({ cat }: { cat: EnglishCategory }) {
+  const Icon = ICONS[cat.icon] ?? BookOpen;
+  const title = cat.slug === "listening" ? "Listening / Hearing Practice" : cat.title;
+
+  return (
+    <Link
+      to="/english-language-tests/$category"
+      params={{ category: cat.slug }}
+      className="group flex h-full flex-col rounded-2xl border border-border bg-card p-4 shadow-soft transition-all hover:-translate-y-0.5 hover:border-coral/40 hover:shadow-elevated"
+    >
+      <div className="flex items-start gap-3">
+        <div className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border ${ACCENT[cat.colourTheme]}`}>
+          <Icon className="h-5 w-5" />
+        </div>
+        <div className="min-w-0">
+          <h4 className="font-display text-sm font-bold leading-tight text-foreground group-hover:text-coral">
+            {title}
+          </h4>
+          <p className="mt-0.5 text-xs text-muted-foreground">
+            {cat.totalMockTests} mocks · {cat.questionsPerMockTest} questions each
+          </p>
+        </div>
+      </div>
+      <p className="mt-3 line-clamp-2 text-xs text-muted-foreground">{cat.description}</p>
+      <span className="mt-auto inline-flex items-center gap-1.5 pt-3 text-xs font-semibold text-coral">
+        Open category <ArrowRight className="h-3.5 w-3.5" />
+      </span>
+    </Link>
+  );
+}
+
 function MockCard({
   categorySlug,
   mockNumber,
