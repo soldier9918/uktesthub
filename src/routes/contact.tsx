@@ -14,7 +14,7 @@ export const Route = createFileRoute("/contact")({
       {
         property: "og:description",
         content: "Reach the UK Test Hub team — we read every message.",
-      },
+      }, { property: "og:url", content: "https://www.uktesthub.com/contact" }
     ],
   links: [{ rel: "canonical", href: "https://www.uktesthub.com/contact" }],
   }),

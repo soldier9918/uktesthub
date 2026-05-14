@@ -15,7 +15,7 @@ export const Route = createFileRoute("/sitemap")({
       {
         property: "og:description",
         content: "All pages and test categories on UK Test Hub.",
-      },
+      }, { property: "og:url", content: "https://www.uktesthub.com/sitemap" }
     ],
   links: [{ rel: "canonical", href: "https://www.uktesthub.com/sitemap" }],
   }),

@@ -25,7 +25,9 @@ type Progress = {
 };
 
 export const Route = createFileRoute("/dashboard")({
-  head: () => ({ meta: [{ title: "My dashboard — UK Test Hub" }, { name: "robots", content: "noindex" }] }),
+  head: () => ({ meta: [{ title: "My dashboard — UK Test Hub" }, { name: "robots", content: "noindex" },
+      { property: "og:url", content: "https://www.uktesthub.com/dashboard" }
+    ] }),
   component: () => (
     <div className="min-h-screen bg-background">
       <SiteHeader />

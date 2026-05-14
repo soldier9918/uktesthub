@@ -14,7 +14,7 @@ export const Route = createFileRoute("/help")({
       {
         property: "og:description",
         content: "Guides and support for using UK Test Hub.",
-      },
+      }, { property: "og:url", content: "https://www.uktesthub.com/help" }
     ],
   links: [{ rel: "canonical", href: "https://www.uktesthub.com/help" }],
   }),

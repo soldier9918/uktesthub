@@ -16,7 +16,9 @@ const schema = z.object({
 });
 
 export const Route = createFileRoute("/signup")({
-  head: () => ({ meta: [{ title: "Create account — UK Test Hub" }, { name: "robots", content: "noindex" }] }),
+  head: () => ({ meta: [{ title: "Create account — UK Test Hub" }, { name: "robots", content: "noindex" },
+      { property: "og:url", content: "https://www.uktesthub.com/signup" }
+    ] }),
   component: SignUpPage,
 });
 
