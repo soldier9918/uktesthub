@@ -1636,6 +1636,7 @@ def build_bank(slug: str) -> Dict[str, Any]:
     # Cross-mock uniqueness: every ID appears in exactly one mock
     used = [qid for m in mocks for qid in m["questionIds"]]
     assert len(used) == len(set(used)), "ID reused across mocks"
+    _assert_mock_source_uniqueness(bank, mocks)
 
     return {
         "version": 2,
