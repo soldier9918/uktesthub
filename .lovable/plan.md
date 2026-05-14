@@ -1,71 +1,62 @@
-## Goal
+## What's broken
 
-Get UK Test Hub to a clean AdSense-approval state without showing any ad placeholders before approval, while making consent + analytics fully compliant with UK GDPR / PECR.
+**1. Duplicate `<title>` / `<meta>` tags from the root route**
+`src/routes/__root.tsx` declares page-level meta (`title`, `description`, `og:title`, `og:description`, `og:image`, `og:image:width/height/alt`, `twitter:title`, `twitter:description`, `twitter:image`, `og:url`). Pages that use the `pageMeta()` helper or inline meta override the same keys, but TanStack Router's `<title>` rendering and `links` array are not always reliably deduped — and even where dedupe works, the root-level page-content tags are wrong by design (they're not sitewide defaults).
 
-## Findings (current state)
+**2. `og:image:alt` ends in "— UK Test Hub — UK Test Hub"**
+`src/lib/seo.ts` `pageMeta()` builds the default alt as `` `${title} — ${SITE_NAME}` ``. Titles already end in `| UK Test Hub`, so the alt becomes `"… | UK Test Hub — UK Test Hub"`.
 
-- `src/components/CookieConsent.tsx` already implements a 4-category banner (necessary / analytics / advertising / functional) with Accept all, Reject non-essential, Manage choices, links to Privacy + Cookie Policy, and a footer "Cookie Settings" trigger. **Bug**: it calls `initGA()` on mount unconditionally, so GA loads before/regardless of consent.
-- `src/lib/analytics-ga.ts` loads GA4 immediately when `initGA()` runs and has no consent gate (ignores `analytics` choice).
-- `src/components/AdSlot.tsx` is already safe: returns `null` unless `VITE_ADSENSE_ENABLED=true` + a client ID + slot ID. No empty boxes in production. But it does **not** check advertising consent before pushing to `adsbygoogle`, and there are no semantic wrappers (`InContentAd`, `SidebarAd`, `BottomAd`, `MobileAd`).
-- `src/routes/privacy.tsx` mentions AdSense only briefly. No dedicated "Advertising and Google AdSense" section, no personalised vs non-personalised ads explanation.
-- `src/routes/cookies.tsx` has the right structure but the AdSense section is one paragraph — needs a proper Google AdSense subsection per the request.
-- Footer already has all required legal links + Cookie Settings.
-- All required pages exist (`/about`, `/contact`, `/privacy`, `/cookies`, `/terms`, `/disclaimer`, `/accessibility`, `/sitemap`).
+**3. `/guide/road-signs` (and siblings) title still verbose**
+Current: `UK Road Signs Test Guide | UK Test Hub`. User wants `Road Signs Test Guide | UK Test Hub`. Same simplification pattern should apply to every entry in `src/data/topic-seo.ts` (the source of all `/guide/*` titles).
 
-## Plan
+**4. Footer placeholder social icons**
+`src/components/SiteFooter.tsx` renders Facebook/Twitter/Youtube/Instagram icons all linking to `href="#"`. No real accounts exist.
 
-### 1. Gate GA on analytics consent (`src/lib/analytics-ga.ts` + `CookieConsent.tsx` + `PageViewTracker.tsx`)
+## Changes
 
-- Add an internal `consentGranted` flag in `analytics-ga.ts`. Export `setAnalyticsConsent(granted: boolean)`.
-- `initGA()` becomes a no-op until `setAnalyticsConsent(true)` has been called. `trackGAEvent` short-circuits when consent is not granted.
-- In `CookieConsent.tsx`, replace the unconditional `initGA()` with: read consent on mount, call `setAnalyticsConsent(c?.analytics === true)`, and re-call it inside the `subscribe` listener whenever consent changes. So GA only loads after the user accepts analytics, and stops firing if they later reject.
-- No change needed to `PageViewTracker` — `trackGAEvent` will self-gate.
+### A. Strip page-content meta from `__root.tsx`
+Keep only true sitewide defaults:
+- `charSet`, `viewport`, `author`, `google-site-verification`
+- `og:type: website`, `og:site_name: UK Test Hub`, `twitter:card: summary_large_image`
+- A single fallback `title: "UK Test Hub"` (TanStack treats `title` specially and the child route's title wins via dedupe — but this fallback covers the rare unmatched route)
+- Keep `links` (stylesheet, fonts, icons) and `scripts` (organizationSchema + websiteSchema)
 
-### 2. AdSense loader + consent gate (`src/components/AdSlot.tsx`)
+Remove from root:
+- `description`, `og:title`, `og:description`, `og:url`
+- `og:image`, `og:image:width`, `og:image:height`, `og:image:alt`
+- `twitter:title`, `twitter:image`
 
-- Add a `getConsent().advertising` check before `loadAdsenseScript()` and before `(window.adsbygoogle).push({})`. If advertising consent is missing, render `null`.
-- Keep the existing `VITE_ADSENSE_ENABLED` + `VITE_ADSENSE_CLIENT_ID` env switch and admin kill-switches.
-- Add a top-of-file comment block documenting the central AdSense config (env vars, how to enable, that no script loads when disabled, that ads respect advertising consent).
-- Add thin semantic wrappers exported from the same file (zero new layout, just preset sizes + safe spacing classes):
-  - `InContentAd` — `size="leaderboard"`, used between content blocks on guides.
-  - `SidebarAd` — `size="sidebar"`, used in desktop sidebars.
-  - `BottomAd` — `size="leaderboard"`, used before footer / FAQ.
-  - `MobileAd` — `size="rectangle"`, mobile in-content.
-- All wrappers inherit the existing "render nothing when not enabled / no consent" behaviour, so no blank boxes appear pre-approval.
+Rationale: every public route already provides its own page-specific values (verified across prior turns — homepage, all-tests, category.english inline; everything else uses `pageMeta()`; the 21 utility/legal routes all have their own head with `og:url` + canonical). After this change, each page emits exactly one of each tag.
 
-### 3. Privacy Policy expansion (`src/routes/privacy.tsx`)
+### B. Fix `pageMeta()` `og:image:alt` default
+In `src/lib/seo.ts`, change the default from `` `${title} — ${SITE_NAME}` `` to just `title` (titles already include the site name, so no extra suffix is needed). Callers can still pass an explicit `imageAlt` override.
 
-- Replace section 5a with a dedicated **"Advertising and Google AdSense"** section using the wording in the brief (Google AdSense, third-party vendors, advertising cookies, personalised vs non-personalised ads, link to Cookie Policy, link to Cookie Settings button that dispatches `uktesthub:open-cookie-settings`).
-- Keep existing sections; add cross-links to `/cookies` and the Cookie Settings opener.
+### C. Shorten guide titles further in `src/data/topic-seo.ts`
+Rename to drop noisy prefixes/suffixes and standardise on `[Keyword] Guide | UK Test Hub`:
+- `"UK Road Signs Test Guide | UK Test Hub"` → `"Road Signs Test Guide | UK Test Hub"`
+- `"British Citizenship Test Guide | UK Test Hub"` → keep (already short)
+- `"UK Laws & Rights Quiz Guide | UK Test Hub"` → `"UK Laws & Rights Guide | UK Test Hub"`
+- `"UK Geography Test Guide | UK Test Hub"` → keep
+- `"English Grammar & Vocab Guide | UK Test Hub"` → keep
+- All other entries already match the pattern and are under 60 chars — leave alone.
 
-### 4. Cookie Policy expansion (`src/routes/cookies.tsx`)
+Also update `road-signs` description to the user's suggested copy:
+`"Learn UK road signs for the theory test, including shapes, colours, markings and common exam questions. Practise free mock tests."`
 
-- Restructure to the 10-section layout in the brief: What are cookies / How we use them / Necessary / Analytics / Advertising / Google Analytics / Google AdSense / Managing preferences / Browser controls / Contact.
-- Google AdSense subsection covers: third-party vendor cookies, personalised ads (consent), non-personalised ads still using cookies for fraud prevention / frequency capping / reporting, link to Cookie Settings.
+### D. Hide footer social icons
+In `src/components/SiteFooter.tsx`, remove the `<div className="mt-6 flex gap-2">…</div>` block and the now-unused `lucide-react` icon imports (`Facebook`, `Twitter`, `Youtube`, `Instagram`). Leave the rest of the footer (logo, blurb, legal links, disclaimer) untouched. This keeps the design clean and makes it trivial to re-introduce icons once real URLs exist.
 
-### 5. AdSense central config
+## Verification
 
-- Document the single source of truth in code comments at the top of `AdSlot.tsx`: `VITE_ADSENSE_ENABLED`, `VITE_ADSENSE_CLIENT_ID`, plus admin DB switches `hide_ads_globally` and `preview_without_ads`. No new env file needed (project uses Vite env).
-- Add a TODO comment block in `CookieConsent.tsx` marking the spot where a Google-certified IAB TCF CMP script (e.g. Funding Choices) can be inserted later, without ripping out the current banner.
+After the edits, view-source on three pages and confirm exactly one of each tag:
+1. `/` — title `Free UK Mock Tests | UK Test Hub`, single canonical, single og:url
+2. `/guide/road-signs` — title `Road Signs Test Guide | UK Test Hub`, og:image:alt has no doubled site name
+3. `/all-tests` — title `All UK Mock Tests | UK Test Hub`
 
-### 6. No-touch areas
-
-- Footer — already complete.
-- Existing `/about`, `/contact`, `/disclaimer`, `/accessibility`, `/terms` — leave content as-is unless review finds gaps after the privacy + cookies edits.
-- Quiz / category / topic / guide pages — **no ad insertions yet**. Wrappers are created so they can be dropped in after AdSense approval; placing them now would just render `null` everywhere.
-- Sitemap, robots, SEO copy on category/guide pages — not in scope of this pass (existing content is already substantial; user can flag specific thin pages separately).
-
-## Technical notes
-
-- GA gating uses a module-level `consentGranted` boolean; `loadGAScript` early-returns when false. When consent flips off after grant, set `window['ga-disable-G-P2CME6M6GE'] = true` via the existing `disableGA()` helper.
-- AdSlot consent check imports `getConsent` from `@/lib/consent` (already used by the banner). Subscribing to consent changes inside AdSlot is unnecessary since it only mounts where ads might render and re-evaluates on each render via React state in the parent flow.
-- No DB migration, no new routes, no new dependencies.
-- A future certified CMP swap is a one-file change: delete the in-house banner, drop the CMP loader script in `__root.tsx`, replace `getConsent()` reads with the CMP's TCF API. The plan keeps this clean by isolating consent reads to `consent.ts` + `CookieConsent.tsx`.
+No public page is noindexed; canonicals and og:url remain self-referencing on every leaf.
 
 ## Files touched
-
-- `src/lib/analytics-ga.ts` — add consent gate
-- `src/components/CookieConsent.tsx` — wire consent → `setAnalyticsConsent`, add CMP-swap TODO comment
-- `src/components/AdSlot.tsx` — add advertising-consent gate, add `InContentAd` / `SidebarAd` / `BottomAd` / `MobileAd` wrappers, expand config doc comment
-- `src/routes/privacy.tsx` — add "Advertising and Google AdSense" section
-- `src/routes/cookies.tsx` — restructure to 10-section layout
+- `src/routes/__root.tsx` — remove page-content meta, keep sitewide defaults
+- `src/lib/seo.ts` — fix default `og:image:alt`
+- `src/data/topic-seo.ts` — rename `road-signs` + `uk-laws-rights` titles; update road-signs description
+- `src/components/SiteFooter.tsx` — remove placeholder social icons + unused icon imports

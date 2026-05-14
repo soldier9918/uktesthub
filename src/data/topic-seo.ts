@@ -238,9 +238,9 @@ export const topicSeo: Record<string, TopicSeo> = {
     ],
   },
   "road-signs": {
-    title: "UK Road Signs Test Guide | UK Test Hub",
+    title: "Road Signs Test Guide | UK Test Hub",
     description:
-      "Master UK road signs for the DVSA theory test. Learn the shape and colour rules, the 100 most-tested signs, and take free mock tests with answer explanations.",
+      "Learn UK road signs for the theory test, including shapes, colours, markings and common exam questions. Practise free mock tests.",
     tagline: "The shape-and-colour shortcut to learning every UK road sign.",
     intro: [
       "Road signs make up roughly 15% of the DVSA Driving Theory Test, and they're the easiest marks to lose if you've never learned the shape-and-colour code. Once you know that triangles warn, circles order and rectangles inform, you can decode signs you've never seen before.",
@@ -553,7 +553,7 @@ export const topicSeo: Record<string, TopicSeo> = {
     ],
   },
   "uk-laws-rights": {
-    title: "UK Laws & Rights Quiz Guide | UK Test Hub",
+    title: "UK Laws & Rights Guide | UK Test Hub",
     description:
       "Free guide to UK everyday laws and rights. Equality Act, employment rights, consumer protection, criminal vs civil law, police powers — with practice questions.",
     tagline: "The laws every UK resident is expected to know — explained simply.",

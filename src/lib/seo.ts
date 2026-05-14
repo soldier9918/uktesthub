@@ -126,7 +126,7 @@ export const pageMeta = (opts: {
   const { title, description, path, image, imageAlt, type = "website" } = opts;
   const url = canonical(path);
   const ogImage = absoluteImageUrl(image);
-  const ogImageAlt = imageAlt ?? `${title} — ${SITE_NAME}`;
+  const ogImageAlt = imageAlt ?? title;
   return {
     meta: [
       { title },

@@ -1,5 +1,4 @@
 import { Link } from "@tanstack/react-router";
-import { Facebook, Twitter, Youtube, Instagram } from "lucide-react";
 import { Logo } from "./Logo";
 import logoSrc from "@/assets/uktesthub-logo.png";
 
@@ -95,18 +94,6 @@ export function SiteFooter() {
               Free, independent UK practice tests with instant feedback —
               no account required.
             </p>
-            <div className="mt-6 flex gap-2">
-              {[Facebook, Twitter, Youtube, Instagram].map((Icon, i) => (
-                <a
-                  key={i}
-                  href="#"
-                  aria-label="Social link"
-                  className="flex h-10 w-10 items-center justify-center rounded-full bg-white/5 text-navy-foreground/80 transition-colors hover:bg-coral hover:text-coral-foreground"
-                >
-                  <Icon className="h-4 w-4" />
-                </a>
-              ))}
-            </div>
           </div>
         </div>
 
