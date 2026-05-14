@@ -248,85 +248,80 @@ function HomePage() {
         <section id="popular-categories" className="mt-16 scroll-mt-24">
           <SectionTitle>Popular Categories</SectionTitle>
 
-          <div className="mt-10 grid gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-            {categories.map((c) => {
-              const isCoral = c.accent === "coral";
+          <div className="mt-10 grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+            {(() => {
+              const themes: Record<string, { grad: string; ring: string; glow: string; iconGrad: string; eyebrow: string; chipBg: string; chipText: string; cta: string }> = {
+                coral:   { grad: "from-[#7a0f1a] via-[#a01425] to-[#5b0812]", ring: "ring-white/10",  glow: "bg-[#ff6b6b]/30", iconGrad: "from-[#ff5a5f] to-[#c81e2c]", eyebrow: "text-[#fecaca]", chipBg: "bg-white/10 border-white/15", chipText: "text-white/85", cta: "text-[#fecaca]" },
+                navy:    { grad: "from-[#0a2540] via-[#0d2c4f] to-[#061a30]", ring: "ring-white/10",  glow: "bg-[#3b82f6]/30", iconGrad: "from-[#3b82f6] to-[#1d4ed8]", eyebrow: "text-[#7dd3fc]", chipBg: "bg-white/10 border-white/15", chipText: "text-white/85", cta: "text-[#7dd3fc]" },
+                gold:    { grad: "from-[#3a2a08] via-[#5a3f0d] to-[#2a1d05]", ring: "ring-amber-300/15", glow: "bg-amber-300/30", iconGrad: "from-[#fbbf24] to-[#b45309]", eyebrow: "text-amber-200", chipBg: "bg-white/10 border-white/15", chipText: "text-white/85", cta: "text-amber-200" },
+                success: { grad: "from-[#06371f] via-[#0a4a2c] to-[#042818]", ring: "ring-emerald-300/15", glow: "bg-emerald-400/30", iconGrad: "from-[#34d399] to-[#047857]", eyebrow: "text-emerald-200", chipBg: "bg-white/10 border-white/15", chipText: "text-white/85", cta: "text-emerald-200" },
+              };
               const CHIP_LIMIT = 3;
-              const chips = c.topics
-                .slice(0, CHIP_LIMIT)
-                .map((t) =>
-                  t.title
-                    .replace(/ Test$| Practice$| Quiz$| Exam$| Assessment$/i, "")
-                    .replace(/^GCSE /, "GCSE ")
-                    .trim(),
-                );
-              const extraChips = Math.max(0, c.topics.length - CHIP_LIMIT);
-              return (
-                <Link
-                  key={c.slug}
-                  to="/category/$slug"
-                  params={{ slug: c.slug }}
-                  className="group relative flex h-full flex-col rounded-xl border border-border/70 bg-card p-4 shadow-soft transition-all duration-300 hover:-translate-y-0.5 hover:border-coral/50 hover:shadow-elevated"
-                >
-                  {/* top accent bar */}
-                  <span
-                    aria-hidden
-                    className={`absolute inset-x-4 top-0 h-px ${isCoral ? "bg-gradient-to-r from-transparent via-coral/60 to-transparent" : "bg-gradient-to-r from-transparent via-royal/60 to-transparent"}`}
-                  />
-                  <div className="flex items-start gap-3">
-                    <span
-                      className={`flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-lg ${
-                        isCoral ? "bg-coral/10" : "bg-royal/10"
-                      }`}
-                    >
-                      <CategoryIcon
-                        name={c.icon}
-                        alt={c.title}
-                        className="h-full w-full object-cover"
-                      />
-                    </span>
-                    <div className="min-w-0 flex-1">
-                      <h3 className="font-display text-base font-extrabold leading-tight text-foreground md:text-lg">
-                        {c.title}
-                      </h3>
-                      <p className="mt-1 line-clamp-2 text-[11px] leading-snug text-muted-foreground">
-                        {c.short}
-                      </p>
-                    </div>
-                  </div>
-
-                  <ul className="mt-3 flex flex-wrap gap-1">
-                    {chips.map((label) => (
-                      <li
-                        key={label}
-                        className="rounded-md border border-border/70 bg-muted/40 px-1.5 py-0.5 text-[10px] font-semibold text-foreground/75"
-                      >
-                        {label}
-                      </li>
-                    ))}
-                    {extraChips > 0 && (
-                      <li
-                        className={`rounded-md px-1.5 py-0.5 text-[10px] font-semibold ${
-                          isCoral
-                            ? "bg-coral/10 text-coral"
-                            : "bg-royal/10 text-royal"
-                        }`}
-                      >
-                        +{extraChips}
-                      </li>
-                    )}
-                  </ul>
-
-                  <span
-                    className={`mt-auto pt-3 inline-flex items-center gap-1 self-start text-[11px] font-bold uppercase tracking-wider transition-transform group-hover:translate-x-0.5 ${
-                      isCoral ? "text-coral" : "text-royal"
-                    }`}
+              return categories.map((c) => {
+                const th = themes[c.accent] ?? themes.coral;
+                const chips = c.topics
+                  .slice(0, CHIP_LIMIT)
+                  .map((t) =>
+                    t.title
+                      .replace(/ Test$| Practice$| Quiz$| Exam$| Assessment$/i, "")
+                      .replace(/^GCSE /, "GCSE ")
+                      .trim(),
+                  );
+                const extraChips = Math.max(0, c.topics.length - CHIP_LIMIT);
+                return (
+                  <Link
+                    key={c.slug}
+                    to="/category/$slug"
+                    params={{ slug: c.slug }}
+                    className={`group relative flex h-full flex-col overflow-hidden border border-white/5 bg-gradient-to-br ${th.grad} p-5 text-white shadow-[0_10px_30px_-12px_rgba(0,0,0,0.55)] ring-1 ${th.ring} transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_22px_50px_-15px_rgba(0,0,0,0.7)]`}
                   >
-                    Explore <ArrowRight className="h-3 w-3" />
-                  </span>
-                </Link>
-              );
-            })}
+                    <div aria-hidden className={`pointer-events-none absolute -right-14 -top-14 h-40 w-40 rounded-full ${th.glow} blur-3xl transition-opacity duration-300 group-hover:opacity-80`} />
+                    <div aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/30 to-transparent" />
+
+                    <div className="relative flex items-start gap-3">
+                      <span className={`flex h-12 w-12 shrink-0 items-center justify-center bg-gradient-to-br ${th.iconGrad} text-white shadow-[0_6px_16px_-6px_rgba(0,0,0,0.55)] ring-1 ring-white/20`}>
+                        <CategoryIcon
+                          name={c.icon}
+                          alt={c.title}
+                          className="h-9 w-9 object-contain"
+                        />
+                      </span>
+                      <div className="min-w-0 flex-1">
+                        <p className={`text-[10px] font-semibold uppercase tracking-[0.18em] ${th.eyebrow}`}>
+                          Category
+                        </p>
+                        <h3 className="mt-0.5 font-display text-base font-extrabold leading-tight text-white md:text-lg">
+                          {c.title}
+                        </h3>
+                        <p className="mt-1 line-clamp-2 text-[11px] leading-snug text-white/65">
+                          {c.short}
+                        </p>
+                      </div>
+                    </div>
+
+                    <ul className="relative mt-4 flex flex-wrap gap-1.5">
+                      {chips.map((label) => (
+                        <li
+                          key={label}
+                          className={`border ${th.chipBg} px-2 py-0.5 text-[10px] font-semibold ${th.chipText} backdrop-blur-sm`}
+                        >
+                          {label}
+                        </li>
+                      ))}
+                      {extraChips > 0 && (
+                        <li className={`border border-white/20 bg-white/15 px-2 py-0.5 text-[10px] font-semibold ${th.eyebrow}`}>
+                          +{extraChips}
+                        </li>
+                      )}
+                    </ul>
+
+                    <span className={`relative mt-auto pt-4 inline-flex items-center gap-1 self-start text-[11px] font-bold uppercase tracking-[0.18em] transition-all group-hover:gap-2 group-hover:text-white ${th.cta}`}>
+                      Explore <ArrowRight className="h-3.5 w-3.5" />
+                    </span>
+                  </Link>
+                );
+              });
+            })()}
           </div>
 
           <div className="mt-12 flex justify-center">
