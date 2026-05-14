@@ -9,6 +9,7 @@ import type {
   MCQQuestion,
   FillBlanksQuestion,
   MultipleResponseQuestion,
+  TrueFalseQuestion,
 } from "@/data/quizzes";
 import {
   ENGLISH_QUESTIONS_PER_MOCK,
