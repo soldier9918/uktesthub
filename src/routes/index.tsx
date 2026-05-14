@@ -37,35 +37,34 @@ import bandPostbox from "@/assets/band-postbox.png";
 import bandSkyline from "@/assets/band-skyline.png";
 
 export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "UK Test Hub — Pass Your UK Tests First Time" },
-      {
-        name: "description",
-        content:
-          "Free UK practice tests: Driving Theory, Life in the UK, IELTS, GCSE, CSCS, NHS, SERU TfL and more. Realistic mock exams with instant results and explanations.",
-      },
-      { property: "og:title", content: "UK Test Hub — Pass Your UK Tests First Time" },
-      {
-        property: "og:description",
-        content:
-          "Free mock tests for UK Driving Theory, Life in the UK, IELTS, GCSE, CSCS, NHS & more. Realistic exams with instant results.",
-      },
-      { property: "og:image", content: "/og-uk-test-hub.jpg" },
-      { property: "og:image:width", content: "1536" },
-      { property: "og:image:height", content: "800" },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "UK Test Hub — Pass Your UK Tests First Time" },
-      {
-        name: "twitter:description",
-        content:
-          "Free mock tests for UK Driving Theory, Life in the UK, IELTS, GCSE, CSCS, NHS & more.",
-      },
-      { name: "twitter:image", content: "/og-uk-test-hub.jpg" },
-    ],
-    links: [{ rel: "canonical", href: "https://www.uktesthub.com/" }],
-  }),
+  head: () => {
+    const TITLE = "UK Test Hub - Free UK Mock Tests and Study Guides";
+    const DESC =
+      "Practise free UK mock tests for Driving Theory, Life in the UK, English, NHS, CSCS, Taxi and more. Study guides, instant results and explanations.";
+    const TWITTER_DESC =
+      "Practise free UK mock tests for Driving Theory, Life in the UK, English, NHS, CSCS, Taxi and more.";
+    const OG_IMAGE = "https://www.uktesthub.com/og-uk-test-hub.jpg";
+    return {
+      meta: [
+        { title: TITLE },
+        { name: "description", content: DESC },
+        { property: "og:site_name", content: "UK Test Hub" },
+        { property: "og:title", content: TITLE },
+        { property: "og:description", content: DESC },
+        { property: "og:type", content: "website" },
+        { property: "og:url", content: "https://www.uktesthub.com/" },
+        { property: "og:image", content: OG_IMAGE },
+        { property: "og:image:width", content: "1200" },
+        { property: "og:image:height", content: "630" },
+        { property: "og:image:alt", content: "UK Test Hub free mock tests and study guides" },
+        { name: "twitter:card", content: "summary_large_image" },
+        { name: "twitter:title", content: TITLE },
+        { name: "twitter:description", content: TWITTER_DESC },
+        { name: "twitter:image", content: OG_IMAGE },
+      ],
+      links: [{ rel: "canonical", href: "https://www.uktesthub.com/" }],
+    };
+  },
   component: HomePage,
 });
 

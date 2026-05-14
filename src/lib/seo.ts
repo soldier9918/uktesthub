@@ -102,33 +102,48 @@ export const articleSchema = (post: {
     url: canonical(`/blog/${post.slug}`),
   });
 
+// Default fallback OG image (must always be an absolute URL).
+export const DEFAULT_OG_IMAGE = `${SITE_URL}/og-uk-test-hub.jpg`;
+
+// Resolve any image reference to an absolute URL on the canonical domain.
+// Accepts absolute URLs (returned as-is), root-relative paths ("/foo.jpg"),
+// or Vite asset URLs ("/assets/foo-abc.jpg") and returns a full https URL.
+export const absoluteImageUrl = (image?: string): string => {
+  if (!image) return DEFAULT_OG_IMAGE;
+  if (/^https?:\/\//i.test(image)) return image;
+  return `${SITE_URL}${image.startsWith("/") ? image : `/${image}`}`;
+};
+
 // Convenience to build the meta+canonical scaffold for any page.
 export const pageMeta = (opts: {
   title: string;
   description: string;
   path: string;
   image?: string;
+  imageAlt?: string;
   type?: "website" | "article";
 }) => {
-  const { title, description, path, image, type = "website" } = opts;
+  const { title, description, path, image, imageAlt, type = "website" } = opts;
   const url = canonical(path);
+  const ogImage = absoluteImageUrl(image);
+  const ogImageAlt = imageAlt ?? `${title} — ${SITE_NAME}`;
   return {
     meta: [
       { title },
       { name: "description", content: description },
+      { property: "og:site_name", content: SITE_NAME },
       { property: "og:title", content: title },
       { property: "og:description", content: description },
       { property: "og:type", content: type },
       { property: "og:url", content: url },
-      ...(image
-        ? [
-            { property: "og:image", content: image },
-            { name: "twitter:image", content: image },
-          ]
-        : []),
+      { property: "og:image", content: ogImage },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
+      { property: "og:image:alt", content: ogImageAlt },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: title },
       { name: "twitter:description", content: description },
+      { name: "twitter:image", content: ogImage },
     ],
     links: [{ rel: "canonical", href: url }],
   };

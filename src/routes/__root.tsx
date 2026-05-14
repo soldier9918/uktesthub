@@ -48,8 +48,11 @@ export const Route = createRootRoute({
       { name: "twitter:card", content: "summary_large_image" },
       { property: "og:title", content: "UK Test Hub" },
       { name: "twitter:title", content: "UK Test Hub" },
-      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/60rsF7o22RT0wrreDJWyLhTs1UL2/social-images/social-1777326990566-76124a84-9ddf-45ab-8599-9bc2e87067d0.webp" },
-      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/60rsF7o22RT0wrreDJWyLhTs1UL2/social-images/social-1777326990566-76124a84-9ddf-45ab-8599-9bc2e87067d0.webp" },
+      { property: "og:image", content: "https://www.uktesthub.com/og-uk-test-hub.jpg" },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
+      { property: "og:image:alt", content: "UK Test Hub free mock tests and study guides" },
+      { name: "twitter:image", content: "https://www.uktesthub.com/og-uk-test-hub.jpg" },
     ],
     links: [
       {
