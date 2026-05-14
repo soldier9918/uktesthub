@@ -1,9 +1,30 @@
 import { useEffect, useState } from "react";
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
-import { ArrowRight, BookText, ChevronRight, Home, Clock, Lock } from "lucide-react";
+import {
+  ArrowRight,
+  Award,
+  BookA,
+  BookOpen,
+  BookText,
+  Brackets,
+  Briefcase,
+  ChevronRight,
+  Clock,
+  Coffee,
+  Headphones,
+  Home,
+  Landmark,
+  Lock,
+  Mic,
+  PenLine,
+  Sparkles,
+  TrendingUp,
+} from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import {
+  englishCategories,
+  type EnglishCategory,
   getEnglishCategory,
   ENGLISH_TYPE_LABELS,
 } from "@/data/english/categories";
@@ -12,6 +33,28 @@ import {
   listEnglishMockSlots,
 } from "@/data/english/mocks";
 import { breadcrumbSchema } from "@/lib/seo";
+
+const ICONS: Record<string, React.ComponentType<{ className?: string }>> = {
+  Award,
+  BookA,
+  BookOpen,
+  Brackets,
+  Briefcase,
+  Coffee,
+  Headphones,
+  Landmark,
+  Mic,
+  PenLine,
+  Sparkles,
+  TrendingUp,
+};
+
+const ACCENT: Record<EnglishCategory["colourTheme"], string> = {
+  coral: "bg-coral/10 text-coral border-coral/20",
+  navy: "bg-navy/10 text-navy border-navy/20",
+  gold: "bg-gold/10 text-gold border-gold/20",
+  success: "bg-success/10 text-success border-success/20",
+};
 
 export const Route = createFileRoute("/english-language-tests/$category")({
   loader: ({ params }) => {
