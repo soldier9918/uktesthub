@@ -38,7 +38,14 @@ function ReportPage() {
 
       <h2>How to report</h2>
       <p>
-        Email{" "}
+        The fastest way is the <strong>flag (🏳) button</strong> shown next to
+        every question while you're taking a quiz or mock test. Click it,
+        choose the reason (incorrect answer, unclear wording, typo, broken
+        image, out of date), add an optional note, and submit — the report
+        is sent to our editors with the question ID attached automatically.
+      </p>
+      <p>
+        Prefer email? Write to{" "}
         <a href="mailto:support@uktesthub.com">support@uktesthub.com</a>{" "}
         with the following details:
       </p>
