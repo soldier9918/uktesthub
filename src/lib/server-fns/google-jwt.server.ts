@@ -84,7 +84,7 @@ export async function verifyOAuthState(state: string): Promise<{ userId: string 
   const ok = await crypto.subtle.verify(
     "HMAC",
     key,
-    b64urlDecode(sigB64),
+    b64urlDecode(sigB64).buffer as ArrayBuffer,
     new TextEncoder().encode(payload),
   );
   if (!ok) return null;
