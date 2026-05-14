@@ -16,6 +16,8 @@ export const Route = createFileRoute("/feedback")({
         property: "og:description",
         content: "Tell us what's working and what we can improve.",
       },
+    ,
+      { property: "og:url", content: "https://www.uktesthub.com/feedback" }
     ],
   links: [{ rel: "canonical", href: "https://www.uktesthub.com/feedback" }],
   }),

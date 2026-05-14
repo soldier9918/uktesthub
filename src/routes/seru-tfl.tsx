@@ -16,6 +16,8 @@ export const Route = createFileRoute("/seru-tfl")({
         content:
           "Prepare for the TfL SERU assessment with realistic mock questions.",
       },
+    ,
+      { property: "og:url", content: "https://www.uktesthub.com/seru-tfl" }
     ],
   links: [{ rel: "canonical", href: "https://www.uktesthub.com/seru-tfl" }],
   }),

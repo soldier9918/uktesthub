@@ -16,6 +16,8 @@ export const Route = createFileRoute("/disclaimer")({
         content:
           "Important information about UK Test Hub's independence and the limits of our content.",
       },
+    ,
+      { property: "og:url", content: "https://www.uktesthub.com/disclaimer" }
     ],
   links: [{ rel: "canonical", href: "https://www.uktesthub.com/disclaimer" }],
   }),
