@@ -1547,15 +1547,29 @@ def build_bank(slug: str) -> Dict[str, Any]:
     ids = [q["id"] for q in bank]
     assert len(ids) == len(set(ids)), "duplicate IDs in bank"
 
+    # Build per-type lists for the mock, then interleave so question types
+    # don't appear in big blocks (mcq×8, tf×2, fill×6 ...). We assign each
+    # picked question an evenly-spaced slot in [0, PER_MOCK) based on its
+    # rank within its type, then sort by slot. Stable, deterministic.
+    type_order = [
+        ("mcq", mcq_pool),
+        ("true-false", tf_pool),
+        ("fill-blanks", fill_pool),
+        ("dropdown-blanks", drop_pool),
+        ("multiple-response", mr_pool),
+    ]
     mocks = []
     for mock_num in range(1, TOTAL_MOCKS + 1):
         idx = mock_num - 1
-        ids_for_mock: List[str] = []
-        ids_for_mock += [mcq_pool[i * TOTAL_MOCKS + idx]["id"] for i in range(MIX["mcq"])]
-        ids_for_mock += [tf_pool[i * TOTAL_MOCKS + idx]["id"] for i in range(MIX["true-false"])]
-        ids_for_mock += [fill_pool[i * TOTAL_MOCKS + idx]["id"] for i in range(MIX["fill-blanks"])]
-        ids_for_mock += [drop_pool[i * TOTAL_MOCKS + idx]["id"] for i in range(MIX["dropdown-blanks"])]
-        ids_for_mock += [mr_pool[i * TOTAL_MOCKS + idx]["id"] for i in range(MIX["multiple-response"])]
+        slotted: List[tuple] = []
+        for type_rank, (tname, pool) in enumerate(type_order):
+            count = MIX[tname]
+            for i in range(count):
+                qid = pool[i * TOTAL_MOCKS + idx]["id"]
+                slot = (i + 0.5) * PER_MOCK / count
+                slotted.append((slot, type_rank, qid))
+        slotted.sort(key=lambda x: (x[0], x[1]))
+        ids_for_mock = [qid for _, _, qid in slotted]
         # Sanity: 24 unique IDs per mock
         assert len(ids_for_mock) == PER_MOCK
         assert len(set(ids_for_mock)) == PER_MOCK
