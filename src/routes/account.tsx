@@ -11,7 +11,7 @@ import { SiteFooter } from "@/components/SiteFooter";
 export const Route = createFileRoute("/account")({
   head: () => ({ meta: [{ title: "Account — UK Test Hub" }, { name: "robots", content: "noindex" },
       { property: "og:url", content: "https://www.uktesthub.com/account" }
-    ] }),
+    ] , links: [{ rel: "canonical", href: "https://www.uktesthub.com/account" }] }),
   component: () => (
     <div className="min-h-screen bg-background">
       <SiteHeader />

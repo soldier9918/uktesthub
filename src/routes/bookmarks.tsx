@@ -10,7 +10,7 @@ import { Button } from "@/components/ui/button";
 export const Route = createFileRoute("/bookmarks")({
   head: () => ({ meta: [{ title: "Bookmarks — UK Test Hub" }, { name: "robots", content: "noindex" },
       { property: "og:url", content: "https://www.uktesthub.com/bookmarks" }
-    ] }),
+    ] , links: [{ rel: "canonical", href: "https://www.uktesthub.com/bookmarks" }] }),
   component: () => (
     <div className="min-h-screen bg-background">
       <SiteHeader />
