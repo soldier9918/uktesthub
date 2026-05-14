@@ -200,7 +200,7 @@ export async function loadEnglishMockBySlug(
   const questions: Question[] = [];
   for (const qid of m.questionIds) {
     const q = bankById.get(qid);
-    if (q) questions.push(rawToMcq(q, questions.length));
+    if (q) questions.push(rawToQuestion(q, questions.length));
   }
   if (questions.length === 0) return undefined;
   return {
