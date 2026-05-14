@@ -1093,6 +1093,8 @@ function Results({
         <ResultsCtas quiz={quiz} onRetry={onRetry} />
       </div>
 
+      <EnglishCefrCard quiz={quiz} answers={answers} score={score} percent={percent} />
+
       <NextStepsPanel quiz={quiz} />
 
       <div className="rounded-3xl border border-border bg-card p-6 shadow-soft md:p-8">
