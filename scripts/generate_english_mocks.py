@@ -10,7 +10,7 @@ Usage:
 
 Each call writes public/english-mocks/<slug>.json containing 45 mocks of
 24 unique questions, balanced as:
-    10 multiple choice + 6 typed fill-in-the-blank
+    8 multiple choice + 2 true/false + 6 select-the-word blanks
     + 4 dropdown blanks + 4 multiple response = 24 per mock.
 
 All questions are deterministic — re-running produces the same output.
@@ -40,6 +40,18 @@ assert sum(MIX.values()) == PER_MOCK
 
 NEEDED = {k: v * TOTAL_MOCKS for k, v in MIX.items()}  # 450/270/180/180
 
+# Shift same-family blocks between question types that share source material.
+# This prevents a mock from containing, for example, the same grammar sentence
+# once as a fill blank and once as a dropdown, or the same vocabulary sentence
+# once as MCQ and once as true/false.
+TYPE_BLOCK_SHIFTS = {
+    "mcq": [0, 0, 0, 0, 0, 0, 0, 0],
+    "true-false": [11, 23],
+    "fill-blanks": [0, 0, 0, 0, 0, 0],
+    "dropdown-blanks": [7, 17, 29, 41],
+    "multiple-response": [0, 0, 0, 0],
+}
+
 # ---------------------------------------------------------------------------
 # Generic helpers
 # ---------------------------------------------------------------------------
@@ -62,6 +74,40 @@ def _take(items: List[Dict[str, Any]], n: int, label: str) -> List[Dict[str, Any
             f"Not enough '{label}' items: need {n}, have {len(items)}"
         )
     return items[:n]
+
+
+def _id_number(qid: str) -> int:
+    return int(qid.rsplit("-", 1)[1])
+
+
+def _source_family(q: Dict[str, Any]) -> str:
+    """Group questions that are effectively the same prompt.
+
+    IDs stay unique, but source families must not repeat inside one mock.
+    MCQ and true/false pools share vocabulary frames; fill/dropdown pools share
+    grammar templates; multiple-response expansions share the same stem.
+    """
+    qtype = q["type"]
+    if qtype in {"mcq", "true-false"}:
+        return f"vocab-frame:{_id_number(q['id'])}"
+    if qtype in {"fill-blanks", "dropdown-blanks"}:
+        return f"grammar-template:{q['template']}"
+    if qtype == "multiple-response":
+        return f"multiple-response:{q['question']}"
+    return q["id"]
+
+
+def _assert_mock_source_uniqueness(bank: List[Dict[str, Any]], mocks: List[Dict[str, Any]]) -> None:
+    by_id = {q["id"]: q for q in bank}
+    for mock in mocks:
+        seen: Dict[str, str] = {}
+        for qid in mock["questionIds"]:
+            family = _source_family(by_id[qid])
+            if family in seen:
+                raise AssertionError(
+                    f"similar source repeated in mock {mock['mockNumber']}: {seen[family]} and {qid}"
+                )
+            seen[family] = qid
 
 
 # ---------------------------------------------------------------------------
@@ -1570,8 +1616,10 @@ def build_bank(slug: str) -> Dict[str, Any]:
         slotted: List[tuple] = []
         for type_rank, (tname, pool) in enumerate(type_order):
             count = MIX[tname]
+            shifts = TYPE_BLOCK_SHIFTS[tname]
             for i in range(count):
-                qid = pool[i * TOTAL_MOCKS + idx]["id"]
+                shifted_idx = (idx + shifts[i]) % TOTAL_MOCKS
+                qid = pool[i * TOTAL_MOCKS + shifted_idx]["id"]
                 slot = (i + 0.5) * PER_MOCK / count
                 slotted.append((slot, type_rank, qid))
         slotted.sort(key=lambda x: (x[0], x[1]))
@@ -1588,6 +1636,7 @@ def build_bank(slug: str) -> Dict[str, Any]:
     # Cross-mock uniqueness: every ID appears in exactly one mock
     used = [qid for m in mocks for qid in m["questionIds"]]
     assert len(used) == len(set(used)), "ID reused across mocks"
+    _assert_mock_source_uniqueness(bank, mocks)
 
     return {
         "version": 2,
