@@ -1,72 +1,109 @@
-## Goal
-Generate real questions for the English Language Tests section in priority order — IELTS → ESOL → SELT → TOEFL — with a balanced mix of question types and zero duplicates within each category (45 mocks × 24 questions = **1,080 unique questions per category**, **4,320 total** for the four priority categories).
+# English Language Tests — drill-down restructure
 
-## Question type mix (per mock, per category)
+## New URL structure
 
-Each 24-question mock will use this fixed distribution so the experience feels varied:
-
-| Type                  | Per mock | % of mock |
-|-----------------------|---------:|----------:|
-| Multiple choice       | 10       | ~42%      |
-| Fill-in-the-blank     | 6        | 25%       |
-| Dropdown blanks       | 4        | ~17%      |
-| Multiple response     | 4        | ~17%      |
-
-(Maps to existing QuizRunner types: `mcq`, `fill-blanks` (typed), `fill-blanks` (dropdown variant), `multiple-response`. `dropdown_blanks` and `fill-in-the-blank` both use the existing `fill-blanks` renderer — dropdown variant uses 3 options per blank; typed variant uses a single correct string with the input rendered as a free-text-style chip.)
-
-## Bank shape (extend `public/english-mocks/<slug>.json`)
-
-The current v2 schema only stores MCQs. Extend the `bank` union to support all four types (no breaking change — `type: "mcq"` remains the default):
-
-```ts
-type RawBankItem =
-  | { id: string; type: "mcq"; question: string; options: string[]; correctAnswer: number; explanation: string }
-  | { id: string; type: "multiple-response"; question: string; options: string[]; correctAnswers: number[]; explanation: string }
-  | { id: string; type: "fill-blanks"; template: string; prompt?: string; blanks: { options: string[]; correctIndex: number }[]; explanation: string }
-  | { id: string; type: "dropdown-blanks"; template: string; prompt?: string; blanks: { options: string[]; correctIndex: number }[]; explanation: string };
+```
+/category/english                                        Main English hub
+/english-language-tests/{test}                           Test overview + 4 skill cards
+/english-language-tests/{test}/{skill}                   6 CEFR level cards
+/english-language-tests/{test}/{skill}/{level}           45 mock test cards
+/english-language-tests/{test}/{skill}/{level}/mock-test-{n}   Quiz runner
 ```
 
-`mocks.ts` will be updated to map each variant onto the matching `Question` type (`dropdown-blanks` → `fill-blanks`).
+- `test`: `ielts | esol | toefl | selt`
+- IELTS/ESOL/TOEFL skills: `listening | reading | writing | speaking`
+- SELT skills: `speaking-listening` (levels A1/A2/B1) and `four-skills` (levels B1/B2/C1/C2)
+- `level`: `a1 | a2 | b1 | b2 | c1 | c2` (restricted per test/skill where appropriate)
+- `n`: 1–45
 
-## Generation approach (deterministic, template-driven)
+## File-based routes (TanStack flat naming)
 
-A one-off Node script `scripts/generate_english_mocks.ts` will produce the JSON. For each category it composes questions from large curated content pools — no AI calls, fully deterministic, reviewable in source:
+New:
+- `src/routes/category.english.tsx` — 4 test-type cards (IELTS / ESOL / TOEFL / SELT)
+- `src/routes/english-language-tests.$test.tsx` — overview + skill cards (replaces today's mixed page)
+- `src/routes/english-language-tests.$test.$skill.tsx` — CEFR level cards
+- `src/routes/english-language-tests.$test.$skill.$level.tsx` — 45 mock cards
+- `src/routes/english-language-tests.$test.$skill.$level.mock-test-$num.tsx` — quiz runner
 
-- **IELTS** — academic vocabulary, Academic Reading-style sentence completion, Listening-style "what does the speaker mean", grammar in academic register.
-- **ESOL** — UK everyday life: GP, council, post office, transport, shops; SfL-style functional English.
-- **SELT** — A1/A2/B1 visa-style speaking + listening prompts, polite requests, short conversational responses.
-- **TOEFL** — campus life, lecture vocabulary, paraphrase choice, academic register.
+Removed/retired:
+- `src/routes/english-language-tests.$category.tsx` (mixed page)
+- `src/routes/english-language-tests.$category.mock-test-$num.tsx` (old flat mock route)
 
-Per category, the script holds **content pools** large enough to emit 1,080 unique items:
-- ~400 sentence stems for fill-blanks / dropdown-blanks across grammar slots (tense, prep, article, modal, collocation).
-- ~400 MCQ stems (vocabulary in context, paraphrase, gist, inference).
-- ~280 multiple-response stems ("which TWO sentences are formal?", "select all true statements about the passage").
+`category.$slug.tsx` will redirect `slug === "english"` to `/category/english` for consistency (or we just rely on the new dedicated file — it takes precedence over the dynamic `$slug` for the literal `english` segment via TanStack matching).
 
-Uniqueness is enforced by hashing the `(template + correct-answer + distractors)` tuple and rejecting collisions while building the bank.
+The `/english-language-tests` index hub stays but is rewritten to show 4 test-type cards (drops the flat CEFR/skill/topic grids).
 
-Each mock is then assembled by walking the bank in stride (mock N takes items at indices `N, N+45, N+90, …`) so every mock contains the full type mix and no two mocks share a question.
+## Data model
 
-## Scope of THIS turn
+Rewrite `src/data/english/categories.ts` into a structured catalogue:
 
-Building all 4 categories in one turn is too large to land safely. This turn ships:
+```ts
+type TestType = "ielts" | "esol" | "toefl" | "selt";
+type Skill = "listening" | "reading" | "writing" | "speaking"
+           | "speaking-listening" | "four-skills";
+type Level = "a1" | "a2" | "b1" | "b2" | "c1" | "c2";
 
-1. **Bank schema + loader extension** — `mocks.ts` maps the 4 new types onto QuizRunner's `Question` union; legacy `mcq`-only bank files keep working.
-2. **Generator script** — `scripts/generate_english_mocks.ts` with the IELTS content pool fully populated. Produces `public/english-mocks/ielts.json` (1,080 questions, 45 mocks, mix verified, uniqueness verified).
-3. **IELTS goes live** — `/english-language-tests/ielts` shows "45 of 45 ready" and every mock runs end-to-end.
-4. **Plan file note** for follow-up turns: ESOL → SELT → TOEFL using the same generator, one category per turn, so each lands with a reviewable diff.
+type TestConfig = {
+  slug: TestType;
+  title: string;            // "IELTS-style Practice"
+  shortTitle: string;       // "IELTS"
+  description: string;
+  studyGuideSlug?: string;
+  skills: SkillConfig[];
+};
+type SkillConfig = { slug: Skill; title: string; description: string; levels: Level[] };
+```
 
-## Files
+- IELTS/ESOL/TOEFL: 4 skills × 6 levels = **24 level banks** per test
+- SELT: `speaking-listening` (A1/A2/B1) + `four-skills` (B1/B2/C1/C2) = **7 level banks**
 
-- edit `src/data/english/mocks.ts` — extend bank type, add mappers for `multiple-response`, `fill-blanks`, `dropdown-blanks`.
-- create `scripts/generate_english_mocks.ts` — content pools + emitter, runnable with `bun scripts/generate_english_mocks.ts ielts`.
-- create `public/english-mocks/ielts.json` — output of the script (committed).
-- edit `.lovable/plan.md` — record the per-category rollout order.
+Bank file path becomes:
+```
+public/english-mocks/{test}/{skill}/{level}.json
+```
+(79 files total. Old flat `public/english-mocks/ielts.json` is removed.)
 
-## Disclaimers / compliance
+Loader (`src/data/english/mocks.ts`) is updated to fetch by `(test, skill, level)` triple. Same v2 file shape; same `loadEnglishMockBySlug` API but signature changes to `(test, skill, level, mockNumber)`.
 
-No copy on the new pages claims UK Test Hub is an official IELTS / ESOL / SELT / TOEFL provider. The existing site-wide disclaimer on the English landing page already covers this; no copy changes needed.
+## Question generation
 
-## Out of scope this turn
+Extend `scripts/generate_english_mocks.py` so each invocation generates one
+`{test}/{skill}/{level}.json` file. Strategy:
 
-- ESOL, SELT, TOEFL JSON files (next 3 turns).
-- The 16 remaining categories (CEFR, skills, topics) — still "coming soon".
+- Reuse the existing combinatorial pools (vocabulary, grammar frames, sentence templates).
+- Tag each pool item with CEFR levels it suits; filter by `level` when picking.
+- Slant content by `skill`: listening = transcript snippets ("You hear…"), reading = short passages, writing = pick-best-sentence/grammar, speaking = "natural spoken reply".
+- Same per-mock mix (10 MCQ + 6 fill / 4 dropdown / 4 multi-response = 24).
+- Uniqueness enforced **within the file** (test+skill+level). Cross-file overlap is acceptable since the requirement is "no duplicate questions in the same test type + skill + level".
+
+Run script across all 79 combinations in one batch (`for test in ...; for skill in ...; for level in ...; python ...`).
+
+### Honest scope note
+
+Generating 79 banks × 1,080 questions = **~85k questions** deterministically is feasible but the pools must be large enough to satisfy uniqueness per bank (1,080 unique items each). The existing IELTS generator already produces 1,080 unique items per call by stride-sampling from much larger pools — I'll keep that approach and add `(skill, level)` parameters that bias which slice of the pool is used. The text style per skill will be templated, not bespoke per question.
+
+## Page content (high level)
+
+- **Test page** (`/english-language-tests/ielts`): overview, study-guide button, 4 skill cards, disclaimer. No CEFR/topic/mock grids.
+- **Skill page** (`/ielts/listening`): "IELTS Listening Practice" title, intro, 6 CEFR level cards.
+- **Level page** (`/ielts/listening/b1`): "IELTS Listening Practice — B1 Level" title, 45 mock cards with ready/coming-soon state (using `countReadyEnglishMocks` adapted to the new tuple).
+- **Mock page**: unchanged quiz runner; back link goes to the level page; "Next mock" links to mock-test-(n+1) on the same level.
+- All pages keep the independent-practice disclaimer.
+
+## Sitemap & redirects
+
+- Update `src/routes/sitemap[.]xml.ts` to emit the new URL tree (test, skill, level, mock pages).
+- `src/routes/topic.$slug.tsx` already redirects IELTS/ESOL/TOEFL/SELT topic slugs → `/english-language-tests/{slug}`. Keep it.
+- Old `/english-language-tests/ielts/mock-test-1` style URLs become 404 (the new file route doesn't match). Acceptable since this section was only just shipped.
+
+## Wording / disclaimer
+
+- Replace "IELTS Practice" titles with "IELTS-style Practice" copy on body text (slug stays `ielts`).
+- SELT page adds the explicit GOV.UK reminder.
+- Site-wide footer disclaimer text stays unchanged.
+
+## Out of scope for this turn
+
+- Per-skill bespoke audio/passage assets (we keep templated text).
+- Authoring 85k human-quality unique questions; the generator produces templated but unique items as the existing IELTS bank does today.
+- Custom CEFR-graded vocabulary lists beyond what already exists in the script.
