@@ -117,13 +117,13 @@ function CategoryPage() {
                     to="/guide/$slug"
                     params={{ slug: t.slug }}
                     aria-label={`Read the ${t.title} guide`}
-                    className="group relative flex h-full flex-col justify-between overflow-hidden rounded-2xl border border-[#0a2540]/10 bg-gradient-to-br from-[#0a2540] via-[#0d2c4f] to-[#0a2540] p-6 text-white shadow-[0_10px_30px_-12px_rgba(10,37,64,0.55)] ring-1 ring-white/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_50px_-15px_rgba(10,37,64,0.7)]"
+                    className="group relative flex h-full flex-col justify-between overflow-hidden rounded-none border border-[#0a2540]/10 bg-gradient-to-br from-[#0a2540] via-[#0d2c4f] to-[#0a2540] p-6 text-white shadow-[0_10px_30px_-12px_rgba(10,37,64,0.55)] ring-1 ring-white/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_50px_-15px_rgba(10,37,64,0.7)]"
                   >
                     <div aria-hidden className="pointer-events-none absolute -right-16 -top-16 h-44 w-44 rounded-full bg-[#3b82f6]/25 blur-3xl transition-opacity duration-300 group-hover:opacity-80" />
                     <div aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/30 to-transparent" />
                     <div className="relative">
                       <div className="flex items-start gap-4">
-                        <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-[#3b82f6] to-[#1d4ed8] text-white shadow-[0_6px_16px_-6px_rgba(59,130,246,0.8)] ring-1 ring-white/20">
+                        <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-none bg-gradient-to-br from-[#3b82f6] to-[#1d4ed8] text-white shadow-[0_6px_16px_-6px_rgba(59,130,246,0.8)] ring-1 ring-white/20">
                           <BookOpen className="h-6 w-6" />
                         </span>
                         <div className="min-w-0">
@@ -159,13 +159,13 @@ function CategoryPage() {
                       to="/topic/$slug"
                       params={{ slug: t.slug }}
                       aria-label={`Open ${t.title} — ${TOTAL_MOCKS_PER_TOPIC} free mock tests`}
-                      className="group relative flex h-full flex-col justify-between overflow-hidden rounded-2xl border border-[#7a0f1a]/20 bg-gradient-to-br from-[#8b0f1d] via-[#a01425] to-[#6b0815] p-6 text-white shadow-[0_10px_30px_-12px_rgba(139,15,29,0.55)] ring-1 ring-white/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_50px_-15px_rgba(139,15,29,0.7)]"
+                      className="group relative flex h-full flex-col justify-between overflow-hidden rounded-none border border-[#7a0f1a]/20 bg-gradient-to-br from-[#8b0f1d] via-[#a01425] to-[#6b0815] p-6 text-white shadow-[0_10px_30px_-12px_rgba(139,15,29,0.55)] ring-1 ring-white/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_50px_-15px_rgba(139,15,29,0.7)]"
                     >
                       <div aria-hidden className="pointer-events-none absolute -right-16 -top-16 h-44 w-44 rounded-full bg-[#ff6b6b]/25 blur-3xl transition-opacity duration-300 group-hover:opacity-80" />
                       <div aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/30 to-transparent" />
                       <div className="relative">
                         <div className="flex items-start gap-4">
-                          <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-[#ff5a5f] to-[#c81e2c] text-white shadow-[0_6px_16px_-6px_rgba(255,90,95,0.8)] ring-1 ring-white/20">
+                          <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-none bg-gradient-to-br from-[#ff5a5f] to-[#c81e2c] text-white shadow-[0_6px_16px_-6px_rgba(255,90,95,0.8)] ring-1 ring-white/20">
                             <CategoryIcon name={category.icon} className="h-6 w-6" />
                           </span>
                           <div className="min-w-0 pr-8">
