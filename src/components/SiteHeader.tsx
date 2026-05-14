@@ -1,5 +1,5 @@
 import { Link, useNavigate } from "@tanstack/react-router";
-import { Search, Moon, Sun, User as UserIcon, LogOut, LayoutDashboard, Heart, Settings, Menu, X } from "lucide-react";
+import { Search, User as UserIcon, LogOut, LayoutDashboard, Heart, Settings, Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Logo } from "./Logo";
 import { useAuth } from "@/lib/auth-context";
@@ -20,29 +20,20 @@ const nav: { label: string; to: string; slug?: string }[] = [
 ];
 
 export function SiteHeader() {
-  const [isDark, setIsDark] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const { user, signOut, loading } = useAuth();
   const navigate = useNavigate();
 
+  // Force light mode site-wide (dark mode is not designed for this layout).
   useEffect(() => {
-    const stored = typeof window !== "undefined" ? localStorage.getItem("theme") : null;
-    const prefersDark = stored ? stored === "dark" : window.matchMedia("(prefers-color-scheme: dark)").matches;
-    setIsDark(prefersDark);
-    document.documentElement.classList.toggle("dark", prefersDark);
+    document.documentElement.classList.remove("dark");
+    try { localStorage.setItem("theme", "light"); } catch {}
   }, []);
-
-  const toggleTheme = () => {
-    const next = !isDark;
-    setIsDark(next);
-    document.documentElement.classList.toggle("dark", next);
-    try { localStorage.setItem("theme", next ? "dark" : "light"); } catch {}
-  };
 
   return (
     <header className="sticky top-0 z-40 w-full border-b border-white/10 bg-gradient-to-r from-[#06172e] via-[#0a2540] to-[#06172e] text-white shadow-[0_8px_24px_-12px_rgba(0,0,0,0.6)]">
       <div aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/25 to-transparent" />
-      <div aria-hidden className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-amber-300/40 to-transparent" />
+      <div aria-hidden className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-coral/60 to-transparent" />
       <div className="relative mx-auto flex h-20 max-w-7xl items-center justify-between gap-4 px-4 md:px-6">
         <Logo variant="light" />
 
@@ -54,7 +45,7 @@ export function SiteHeader() {
                 to={item.to as "/category/$slug"}
                 params={{ slug: item.slug }}
                 className="relative px-3 py-2 text-sm font-semibold uppercase tracking-wider text-white/75 transition-colors hover:text-white"
-                activeProps={{ className: "!text-white after:absolute after:inset-x-3 after:-bottom-0.5 after:h-0.5 after:bg-gradient-to-r after:from-amber-300 after:via-coral after:to-amber-300" }}
+                activeProps={{ className: "!text-white after:absolute after:inset-x-3 after:-bottom-0.5 after:h-0.5 after:bg-coral" }}
               >
                 {item.label}
               </Link>
@@ -64,7 +55,7 @@ export function SiteHeader() {
                 to={item.to as "/"}
                 className="relative px-3 py-2 text-sm font-semibold uppercase tracking-wider text-white/75 transition-colors hover:text-white"
                 activeOptions={{ exact: true }}
-                activeProps={{ className: "!text-white after:absolute after:inset-x-3 after:-bottom-0.5 after:h-0.5 after:bg-gradient-to-r after:from-amber-300 after:via-coral after:to-amber-300" }}
+                activeProps={{ className: "!text-white after:absolute after:inset-x-3 after:-bottom-0.5 after:h-0.5 after:bg-coral" }}
               >
                 {item.label}
               </Link>
@@ -76,10 +67,6 @@ export function SiteHeader() {
           <button type="button" aria-label="Search"
             className="hidden h-10 w-10 items-center justify-center text-white/70 transition-colors hover:bg-white/10 hover:text-white md:inline-flex">
             <Search className="h-4.5 w-4.5" />
-          </button>
-          <button type="button" onClick={toggleTheme} aria-label="Toggle dark mode"
-            className="hidden h-10 w-10 items-center justify-center text-white/70 transition-colors hover:bg-white/10 hover:text-white md:inline-flex">
-            {isDark ? <Sun className="h-4.5 w-4.5" /> : <Moon className="h-4.5 w-4.5" />}
           </button>
 
           {loading ? null : user ? (
@@ -133,15 +120,6 @@ export function SiteHeader() {
                 className="inline-flex h-10 flex-1 items-center justify-center gap-2 text-sm font-semibold text-white/80 hover:bg-white/10 hover:text-white"
               >
                 <Search className="h-4 w-4" /> Search
-              </button>
-              <button
-                type="button"
-                onClick={toggleTheme}
-                aria-label="Toggle dark mode"
-                className="inline-flex h-10 flex-1 items-center justify-center gap-2 text-sm font-semibold text-white/80 hover:bg-white/10 hover:text-white"
-              >
-                {isDark ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
-                {isDark ? "Light mode" : "Dark mode"}
               </button>
             </div>
             {nav.map((item) =>
