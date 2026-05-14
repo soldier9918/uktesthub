@@ -9,6 +9,7 @@ import type {
   MCQQuestion,
   FillBlanksQuestion,
   MultipleResponseQuestion,
+  TrueFalseQuestion,
 } from "@/data/quizzes";
 import {
   ENGLISH_QUESTIONS_PER_MOCK,
@@ -40,6 +41,14 @@ type RawMultipleResponse = {
   explanation: string;
 };
 
+type RawTrueFalse = {
+  id: string;
+  type: "true-false";
+  question: string;
+  correctAnswer: boolean;
+  explanation: string;
+};
+
 type RawBlanks = {
   id: string;
   type: "fill-blanks" | "dropdown-blanks";
@@ -49,7 +58,7 @@ type RawBlanks = {
   explanation: string;
 };
 
-type RawBankItem = RawMcq | RawMultipleResponse | RawBlanks;
+type RawBankItem = RawMcq | RawMultipleResponse | RawTrueFalse | RawBlanks;
 
 type V2File = {
   version: 2;
@@ -138,6 +147,16 @@ function rawToQuestion(raw: RawBankItem, idx: number): Question {
       question: raw.question,
       options: raw.options,
       correctAnswers: raw.correctAnswers,
+      explanation: raw.explanation,
+    };
+    return q;
+  }
+  if (raw.type === "true-false") {
+    const q: TrueFalseQuestion = {
+      type: "true-false",
+      id,
+      question: raw.question,
+      correctAnswer: raw.correctAnswer,
       explanation: raw.explanation,
     };
     return q;

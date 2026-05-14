@@ -30,7 +30,8 @@ PER_MOCK = 24
 
 # Per-mock distribution
 MIX = {
-    "mcq": 10,
+    "mcq": 8,
+    "true-false": 2,
     "fill-blanks": 6,
     "dropdown-blanks": 4,
     "multiple-response": 4,
@@ -1409,6 +1410,41 @@ def build_mr_pool(prefix: str, mr_pool: List[Dict[str, Any]]) -> List[Dict[str, 
     return items
 
 
+def build_tf_pool(prefix: str, vocab_pool: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    """Build true/false items from vocabulary frames.
+
+    For each vocab item we alternate between TRUE statements (correct word in
+    the sentence) and FALSE statements (a distractor swapped in). Output is
+    deterministic and unique because each (vocab, frame, polarity) is distinct.
+    """
+    items: List[Dict[str, Any]] = []
+    for w in vocab_pool:
+        word = w["word"]
+        distractors = w["distractors"]
+        for fi, frame in enumerate(w["frames"]):
+            polarity = (fi % 2 == 0)  # alternate true/false
+            if polarity:
+                sentence = frame.format(word)
+                explanation = (
+                    f"True. '{word}' means '{w['definition']}', which fits the sentence."
+                )
+            else:
+                wrong = distractors[fi % len(distractors)]
+                sentence = frame.format(wrong)
+                explanation = (
+                    f"False. '{wrong}' does not fit here — the natural choice is "
+                    f"'{word}' ('{w['definition']}')."
+                )
+            items.append({
+                "id": f"{prefix}-tf-{len(items) + 1:04d}",
+                "type": "true-false",
+                "question": f"Is the underlined word used correctly? \u201c{sentence}\u201d",
+                "correctAnswer": polarity,
+                "explanation": explanation,
+            })
+    return items
+
+
 def expand_mr_with_paraphrase(mr_items: List[Dict[str, Any]], target: int, prefix: str) -> List[Dict[str, Any]]:
     """Generate additional unique MR items by re-ordering option lists.
 
@@ -1483,6 +1519,7 @@ def build_bank(slug: str) -> Dict[str, Any]:
     mr_seed = list(IELTS_MR) + FLAVOUR_MR.get(slug, [])
 
     mcq_pool = _dedupe(build_mcq_pool(prefix, vocab), key=lambda x: (x["question"], tuple(x["options"])))
+    tf_pool = _dedupe(build_tf_pool(prefix, vocab), key=lambda x: x["question"])
     blanks = build_blanks_pools(prefix, GRAMMAR_FILL)
     fill_pool = blanks["fill"]
     drop_pool = blanks["drop"]
@@ -1490,15 +1527,14 @@ def build_bank(slug: str) -> Dict[str, Any]:
 
     # Expand to required totals
     mcq_pool = _take(mcq_pool, NEEDED["mcq"], "mcq")
+    tf_pool = _take(tf_pool, NEEDED["true-false"], "true-false")
     fill_pool = expand_blanks(fill_pool, NEEDED["fill-blanks"], prefix, "fill")
     drop_pool = expand_blanks(drop_pool, NEEDED["dropdown-blanks"], prefix, "drop")
     mr_pool = expand_mr_with_paraphrase(mr_pool, NEEDED["multiple-response"], prefix)
 
-    # Assemble 45 mocks. For each mock N (1..45), take items at offsets
-    # i*MIX_SIZE + (N-1) so each mock contains a distinct slice from each
-    # type pool.
     bank: List[Dict[str, Any]] = []
     bank.extend(mcq_pool)
+    bank.extend(tf_pool)
     bank.extend(fill_pool)
     bank.extend(drop_pool)
     bank.extend(mr_pool)
@@ -1512,6 +1548,7 @@ def build_bank(slug: str) -> Dict[str, Any]:
         idx = mock_num - 1
         ids_for_mock: List[str] = []
         ids_for_mock += [mcq_pool[i * TOTAL_MOCKS + idx]["id"] for i in range(MIX["mcq"])]
+        ids_for_mock += [tf_pool[i * TOTAL_MOCKS + idx]["id"] for i in range(MIX["true-false"])]
         ids_for_mock += [fill_pool[i * TOTAL_MOCKS + idx]["id"] for i in range(MIX["fill-blanks"])]
         ids_for_mock += [drop_pool[i * TOTAL_MOCKS + idx]["id"] for i in range(MIX["dropdown-blanks"])]
         ids_for_mock += [mr_pool[i * TOTAL_MOCKS + idx]["id"] for i in range(MIX["multiple-response"])]
