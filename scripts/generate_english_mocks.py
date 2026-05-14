@@ -10,7 +10,7 @@ Usage:
 
 Each call writes public/english-mocks/<slug>.json containing 45 mocks of
 24 unique questions, balanced as:
-    10 multiple choice + 6 typed fill-in-the-blank
+    8 multiple choice + 2 true/false + 6 select-the-word blanks
     + 4 dropdown blanks + 4 multiple response = 24 per mock.
 
 All questions are deterministic — re-running produces the same output.
@@ -39,6 +39,18 @@ MIX = {
 assert sum(MIX.values()) == PER_MOCK
 
 NEEDED = {k: v * TOTAL_MOCKS for k, v in MIX.items()}  # 450/270/180/180
+
+# Shift same-family blocks between question types that share source material.
+# This prevents a mock from containing, for example, the same grammar sentence
+# once as a fill blank and once as a dropdown, or the same vocabulary sentence
+# once as MCQ and once as true/false.
+TYPE_BLOCK_SHIFTS = {
+    "mcq": [0, 0, 0, 0, 0, 0, 0, 0],
+    "true-false": [11, 23],
+    "fill-blanks": [0, 0, 0, 0, 0, 0],
+    "dropdown-blanks": [7, 17, 29, 41],
+    "multiple-response": [0, 0, 0, 0],
+}
 
 # ---------------------------------------------------------------------------
 # Generic helpers
