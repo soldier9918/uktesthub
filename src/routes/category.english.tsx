@@ -72,22 +72,35 @@ const DESC =
 const URL = "https://www.uktesthub.com/category/english";
 
 export const Route = createFileRoute("/category/english")({
-  head: () => ({
-    meta: [
-      { title: TITLE },
-      { name: "description", content: DESC },
-      { property: "og:title", content: TITLE },
-      { property: "og:description", content: DESC },
-      { property: "og:url", content: URL },
-    ],
-    links: [{ rel: "canonical", href: URL }],
-    scripts: [
-      breadcrumbSchema([
-        { name: "Home", url: "/" },
-        { name: "English Language Tests", url: "/category/english" },
-      ]),
-    ],
-  }),
+  head: () => {
+    const OG_IMAGE = "https://www.uktesthub.com/og-uk-test-hub.jpg";
+    return {
+      meta: [
+        { title: TITLE },
+        { name: "description", content: DESC },
+        { property: "og:site_name", content: "UK Test Hub" },
+        { property: "og:title", content: TITLE },
+        { property: "og:description", content: DESC },
+        { property: "og:type", content: "website" },
+        { property: "og:url", content: URL },
+        { property: "og:image", content: OG_IMAGE },
+        { property: "og:image:width", content: "1200" },
+        { property: "og:image:height", content: "630" },
+        { property: "og:image:alt", content: "UK Test Hub English language practice tests" },
+        { name: "twitter:card", content: "summary_large_image" },
+        { name: "twitter:title", content: TITLE },
+        { name: "twitter:description", content: DESC },
+        { name: "twitter:image", content: OG_IMAGE },
+      ],
+      links: [{ rel: "canonical", href: URL }],
+      scripts: [
+        breadcrumbSchema([
+          { name: "Home", url: "/" },
+          { name: "English Language Tests", url: "/category/english" },
+        ]),
+      ],
+    };
+  },
   component: EnglishCategoryPage,
 });
 
