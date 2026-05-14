@@ -1,9 +1,30 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, type ComponentType } from "react";
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
-import { ArrowRight, BookText, ChevronRight, Home, Clock, Lock } from "lucide-react";
+import {
+  ArrowRight,
+  Award,
+  BookA,
+  BookOpen,
+  BookText,
+  Brackets,
+  Briefcase,
+  ChevronRight,
+  Clock,
+  Coffee,
+  Headphones,
+  Home,
+  Landmark,
+  Lock,
+  Mic,
+  PenLine,
+  Sparkles,
+  TrendingUp,
+} from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import {
+  englishCategories,
+  type EnglishCategory,
   getEnglishCategory,
   ENGLISH_TYPE_LABELS,
 } from "@/data/english/categories";
@@ -12,6 +33,28 @@ import {
   listEnglishMockSlots,
 } from "@/data/english/mocks";
 import { breadcrumbSchema } from "@/lib/seo";
+
+const ICONS: Record<string, ComponentType<{ className?: string }>> = {
+  Award,
+  BookA,
+  BookOpen,
+  Brackets,
+  Briefcase,
+  Coffee,
+  Headphones,
+  Landmark,
+  Mic,
+  PenLine,
+  Sparkles,
+  TrendingUp,
+};
+
+const ACCENT: Record<EnglishCategory["colourTheme"], string> = {
+  coral: "bg-coral/10 text-coral border-coral/20",
+  navy: "bg-navy/10 text-navy border-navy/20",
+  gold: "bg-gold/10 text-gold border-gold/20",
+  success: "bg-success/10 text-success border-success/20",
+};
 
 export const Route = createFileRoute("/english-language-tests/$category")({
   loader: ({ params }) => {
@@ -66,6 +109,9 @@ function CategoryPage() {
   const { cat } = Route.useLoaderData();
   const slots = listEnglishMockSlots(cat.slug);
   const [readyCount, setReadyCount] = useState<number | null>(null);
+  const skillCategories = englishCategories.filter((c) => c.type === "skill");
+  const levelCategories = englishCategories.filter((c) => c.type === "cefr-level");
+  const topicCategories = englishCategories.filter((c) => c.type === "topic");
 
   useEffect(() => {
     let active = true;
@@ -122,9 +168,28 @@ function CategoryPage() {
           </Link>
         )}
 
+        {/* Practice categories */}
+        <section className="mt-8 space-y-8" aria-labelledby="practice-categories">
+          <div>
+            <h2 id="practice-categories" className="font-display text-xl font-bold">
+              Choose a practice category
+            </h2>
+            <p className="mt-1 text-sm text-muted-foreground">
+              Start with a skill area first, or jump straight into the full {cat.shortTitle} mock tests below.
+            </p>
+          </div>
+
+          <CategoryGroup
+            title={`${cat.shortTitle} skills`}
+            items={skillCategories}
+          />
+          <CategoryGroup title="CEFR levels" items={levelCategories} compact />
+          <CategoryGroup title="English topics" items={topicCategories} compact />
+        </section>
+
         {/* Mock cards */}
         <section className="mt-8">
-          <h2 className="font-display text-xl font-bold">Mock tests</h2>
+          <h2 className="font-display text-xl font-bold">Full {cat.shortTitle} mock tests</h2>
           <ul className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {slots.map((s, i) => {
               const isReady = readyCount !== null && i < ready;
@@ -154,6 +219,60 @@ function CategoryPage() {
 
       <SiteFooter />
     </div>
+  );
+}
+
+function CategoryGroup({
+  title,
+  items,
+  compact = false,
+}: {
+  title: string;
+  items: EnglishCategory[];
+  compact?: boolean;
+}) {
+  return (
+    <div>
+      <h3 className="font-display text-base font-bold">{title}</h3>
+      <ul className={`mt-3 grid gap-3 ${compact ? "sm:grid-cols-2 lg:grid-cols-3" : "sm:grid-cols-2 lg:grid-cols-4"}`}>
+        {items.map((item) => (
+          <li key={item.slug}>
+            <PracticeCategoryCard cat={item} />
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+function PracticeCategoryCard({ cat }: { cat: EnglishCategory }) {
+  const Icon = ICONS[cat.icon] ?? BookOpen;
+  const title = cat.slug === "listening" ? "Listening / Hearing Practice" : cat.title;
+
+  return (
+    <Link
+      to="/english-language-tests/$category"
+      params={{ category: cat.slug }}
+      className="group flex h-full flex-col rounded-2xl border border-border bg-card p-4 shadow-soft transition-all hover:-translate-y-0.5 hover:border-coral/40 hover:shadow-elevated"
+    >
+      <div className="flex items-start gap-3">
+        <div className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border ${ACCENT[cat.colourTheme]}`}>
+          <Icon className="h-5 w-5" />
+        </div>
+        <div className="min-w-0">
+          <h4 className="font-display text-sm font-bold leading-tight text-foreground group-hover:text-coral">
+            {title}
+          </h4>
+          <p className="mt-0.5 text-xs text-muted-foreground">
+            {cat.totalMockTests} mocks · {cat.questionsPerMockTest} questions each
+          </p>
+        </div>
+      </div>
+      <p className="mt-3 line-clamp-2 text-xs text-muted-foreground">{cat.description}</p>
+      <span className="mt-auto inline-flex items-center gap-1.5 pt-3 text-xs font-semibold text-coral">
+        Open category <ArrowRight className="h-3.5 w-3.5" />
+      </span>
+    </Link>
   );
 }
 
