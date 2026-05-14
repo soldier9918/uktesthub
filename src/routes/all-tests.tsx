@@ -10,10 +10,7 @@ import { getQuizMeta } from "@/data/quizzes";
 export const Route = createFileRoute("/all-tests")({
   head: () => ({
     meta: [
-      {
-        title:
-          "All UK Mock Tests — Free Practice for DVSA, TfL, IELTS, CSCS, NMC & more | UK Test Hub",
-      },
+      { title: "All UK Mock Tests | UK Test Hub" },
       {
         name: "description",
         content:
@@ -29,6 +26,7 @@ export const Route = createFileRoute("/all-tests")({
           "The full directory of UK practice tests in one place — DVSA, TfL, Home Office, IELTS, CSCS, NMC, SIA and more.",
       }, { property: "og:url", content: "https://www.uktesthub.com/all-tests" }
     ],
+    links: [{ rel: "canonical", href: "https://www.uktesthub.com/all-tests" }],
   }),
   component: AllTestsPage,
 });
