@@ -7,6 +7,11 @@ import { Switch } from "@/components/ui/switch";
 import { supabase } from "@/integrations/supabase/client";
 import { getGaDashboard, type GaDashboard } from "@/lib/server-fns/ga-analytics.functions";
 import {
+  getGaConnectionStatus,
+  getGaOAuthStartUrl,
+  disconnectGaOAuth,
+} from "@/lib/server-fns/ga-oauth.functions";
+import {
   ResponsiveContainer,
   LineChart,
   Line,
@@ -38,13 +43,32 @@ function GaAnalytics() {
   const [loading, setLoading] = useState(true);
   const [autoRefresh, setAutoRefresh] = useState(true);
   const [refreshing, setRefreshing] = useState(false);
+  const [connected, setConnected] = useState<boolean | null>(null);
+  const [googleEmail, setGoogleEmail] = useState<string | null>(null);
+  const [connecting, setConnecting] = useState(false);
+
+  const getToken = async () => {
+    const { data: sess } = await supabase.auth.getSession();
+    return sess.session?.access_token ?? null;
+  };
+
+  const checkStatus = useMemo(
+    () => async () => {
+      const accessToken = await getToken();
+      if (!accessToken) return;
+      const s = await getGaConnectionStatus({ data: { accessToken } });
+      setConnected(s.connected);
+      setGoogleEmail(s.email);
+      return s.connected;
+    },
+    [],
+  );
 
   const load = useMemo(
     () => async () => {
       setRefreshing(true);
       try {
-        const { data: sess } = await supabase.auth.getSession();
-        const accessToken = sess.session?.access_token;
+        const accessToken = await getToken();
         if (!accessToken) {
           setError("Not signed in");
           return;
@@ -64,14 +88,42 @@ function GaAnalytics() {
   );
 
   useEffect(() => {
-    load();
-  }, [load]);
+    (async () => {
+      const isConnected = await checkStatus();
+      if (isConnected) load();
+      else setLoading(false);
+    })();
+  }, [checkStatus, load]);
 
   useEffect(() => {
-    if (!autoRefresh) return;
+    if (!autoRefresh || !connected) return;
     const id = setInterval(() => load(), 60_000);
     return () => clearInterval(id);
-  }, [autoRefresh, load]);
+  }, [autoRefresh, connected, load]);
+
+  const handleConnect = async () => {
+    setConnecting(true);
+    try {
+      const accessToken = await getToken();
+      if (!accessToken) return;
+      const { url } = await getGaOAuthStartUrl({
+        data: { accessToken, origin: window.location.origin },
+      });
+      window.location.href = url;
+    } catch (e) {
+      setError(e instanceof Error ? e.message : String(e));
+      setConnecting(false);
+    }
+  };
+
+  const handleDisconnect = async () => {
+    const accessToken = await getToken();
+    if (!accessToken) return;
+    await disconnectGaOAuth({ data: { accessToken } });
+    setConnected(false);
+    setGoogleEmail(null);
+    setData(null);
+  };
 
   return (
     <main className="mx-auto max-w-6xl px-4 py-8">
@@ -83,20 +135,32 @@ function GaAnalytics() {
           </p>
         </div>
         <div className="flex items-center gap-4">
-          <div className="flex items-center gap-2 text-sm">
-            <Switch checked={autoRefresh} onCheckedChange={setAutoRefresh} id="auto" />
-            <label htmlFor="auto" className="cursor-pointer text-muted-foreground">
-              Auto-refresh 60s
-            </label>
-          </div>
-          <Button onClick={() => load()} disabled={refreshing} size="sm">
-            {refreshing ? "Refreshing…" : "Refresh"}
-          </Button>
+          {connected && (
+            <>
+              <div className="flex items-center gap-2 text-sm">
+                <Switch checked={autoRefresh} onCheckedChange={setAutoRefresh} id="auto" />
+                <label htmlFor="auto" className="cursor-pointer text-muted-foreground">
+                  Auto-refresh 60s
+                </label>
+              </div>
+              <Button onClick={() => load()} disabled={refreshing} size="sm">
+                {refreshing ? "Refreshing…" : "Refresh"}
+              </Button>
+              <Button onClick={handleDisconnect} variant="outline" size="sm">
+                Disconnect
+              </Button>
+            </>
+          )}
         </div>
       </div>
 
-      {data && (
+      {connected && googleEmail && (
         <p className="mt-2 text-xs text-muted-foreground">
+          Connected as <span className="font-medium">{googleEmail}</span>
+        </p>
+      )}
+      {data && (
+        <p className="mt-1 text-xs text-muted-foreground">
           Last updated {new Date(data.fetchedAt).toLocaleTimeString()}
         </p>
       )}
@@ -107,10 +171,22 @@ function GaAnalytics() {
         </div>
       )}
 
-      {loading && !data ? (
+      {connected === false ? (
+        <Card className="mt-8 p-8 text-center">
+          <h2 className="text-lg font-semibold">Connect Google Analytics</h2>
+          <p className="mx-auto mt-2 max-w-md text-sm text-muted-foreground">
+            Sign in with the Google account that has access to GA4 property{" "}
+            <span className="font-mono">466514625</span> to authorize read-only analytics access.
+          </p>
+          <Button className="mt-4" onClick={handleConnect} disabled={connecting}>
+            {connecting ? "Redirecting…" : "Connect Google Analytics"}
+          </Button>
+        </Card>
+      ) : loading && !data ? (
         <div className="mt-8 text-sm text-muted-foreground">Loading GA4 data…</div>
       ) : data ? (
         <>
+
           <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
             <Kpi label="Active users (30 min)" value={data.realtime.activeUsers} live />
             <Kpi label="Pageviews (30 min)" value={data.realtime.pageviews} live />
