@@ -4,10 +4,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { QuizRunner } from "@/components/QuizRunner";
 import { getEnglishCategory } from "@/data/english/categories";
-import {
-  loadEnglishMockBySlug,
-  ENGLISH_TOTAL_MOCKS,
-} from "@/data/english/mocks";
+import { loadEnglishMockBySlug } from "@/data/english/mocks";
 import { captureMockBaseUrl } from "@/lib/mock-base-url";
 import type { Quiz } from "@/data/quizzes";
 import { breadcrumbSchema } from "@/lib/seo";
@@ -154,5 +151,3 @@ function EnglishMockPage() {
   );
 }
 
-// Suppress unused import warning for ENGLISH_TOTAL_MOCKS; kept for future use.
-void ENGLISH_TOTAL_MOCKS;

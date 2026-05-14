@@ -30,6 +30,7 @@ import { Route as ForgotPasswordRouteImport } from './routes/forgot-password'
 import { Route as FeedbackRouteImport } from './routes/feedback'
 import { Route as FaqRouteImport } from './routes/faq'
 import { Route as ExamUpdatesRouteImport } from './routes/exam-updates'
+import { Route as EnglishLanguageTestsRouteImport } from './routes/english-language-tests'
 import { Route as DrivingTheoryTestQuestionsRouteImport } from './routes/driving-theory-test-questions'
 import { Route as DisclaimerRouteImport } from './routes/disclaimer'
 import { Route as DashboardRouteImport } from './routes/dashboard'
@@ -44,11 +45,13 @@ import { Route as AccountRouteImport } from './routes/account'
 import { Route as AccessibilityRouteImport } from './routes/accessibility'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as EnglishLanguageTestsIndexRouteImport } from './routes/english-language-tests.index'
 import { Route as BlogIndexRouteImport } from './routes/blog.index'
 import { Route as AdminKb20IndexRouteImport } from './routes/admin-kb20.index'
 import { Route as TopicSlugRouteImport } from './routes/topic.$slug'
 import { Route as QuizSlugRouteImport } from './routes/quiz.$slug'
 import { Route as GuideSlugRouteImport } from './routes/guide.$slug'
+import { Route as EnglishLanguageTestsCategoryRouteImport } from './routes/english-language-tests.$category'
 import { Route as CategorySlugRouteImport } from './routes/category.$slug'
 import { Route as BlogUkRoadSignsTestRouteImport } from './routes/blog.uk-road-signs-test'
 import { Route as BlogTopographicalTestLondonRouteImport } from './routes/blog.topographical-test-london'
@@ -79,6 +82,7 @@ import { Route as AdminKb20BulkEditRouteImport } from './routes/admin-kb20.bulk-
 import { Route as AdminKb20AnalyticsRouteImport } from './routes/admin-kb20.analytics'
 import { Route as AdminKb20AdsRouteImport } from './routes/admin-kb20.ads'
 import { Route as AdminKb20QuestionsIndexRouteImport } from './routes/admin-kb20.questions.index'
+import { Route as EnglishLanguageTestsCategoryMockTestNumRouteImport } from './routes/english-language-tests.$category.mock-test-$num'
 import { Route as AdminKb20QuestionsBulkDuplicateRouteImport } from './routes/admin-kb20.questions.bulk-duplicate'
 import { Route as AdminKb20QuestionsTopicRouteImport } from './routes/admin-kb20.questions.$topic'
 import { Route as LovableEmailQueueProcessRouteImport } from './routes/lovable/email/queue/process'
@@ -190,6 +194,11 @@ const ExamUpdatesRoute = ExamUpdatesRouteImport.update({
   path: '/exam-updates',
   getParentRoute: () => rootRouteImport,
 } as any)
+const EnglishLanguageTestsRoute = EnglishLanguageTestsRouteImport.update({
+  id: '/english-language-tests',
+  path: '/english-language-tests',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const DrivingTheoryTestQuestionsRoute =
   DrivingTheoryTestQuestionsRouteImport.update({
     id: '/driving-theory-test-questions',
@@ -261,6 +270,12 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const EnglishLanguageTestsIndexRoute =
+  EnglishLanguageTestsIndexRouteImport.update({
+    id: '/',
+    path: '/',
+    getParentRoute: () => EnglishLanguageTestsRoute,
+  } as any)
 const BlogIndexRoute = BlogIndexRouteImport.update({
   id: '/',
   path: '/',
@@ -286,6 +301,12 @@ const GuideSlugRoute = GuideSlugRouteImport.update({
   path: '/guide/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
+const EnglishLanguageTestsCategoryRoute =
+  EnglishLanguageTestsCategoryRouteImport.update({
+    id: '/$category',
+    path: '/$category',
+    getParentRoute: () => EnglishLanguageTestsRoute,
+  } as any)
 const CategorySlugRoute = CategorySlugRouteImport.update({
   id: '/category/$slug',
   path: '/category/$slug',
@@ -441,6 +462,12 @@ const AdminKb20QuestionsIndexRoute = AdminKb20QuestionsIndexRouteImport.update({
   path: '/admin-kb20/questions/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const EnglishLanguageTestsCategoryMockTestNumRoute =
+  EnglishLanguageTestsCategoryMockTestNumRouteImport.update({
+    id: '/mock-test-$num',
+    path: '/mock-test-$num',
+    getParentRoute: () => EnglishLanguageTestsCategoryRoute,
+  } as any)
 const AdminKb20QuestionsBulkDuplicateRoute =
   AdminKb20QuestionsBulkDuplicateRouteImport.update({
     id: '/admin-kb20/questions/bulk-duplicate',
@@ -479,6 +506,7 @@ export interface FileRoutesByFullPath {
   '/dashboard': typeof DashboardRoute
   '/disclaimer': typeof DisclaimerRoute
   '/driving-theory-test-questions': typeof DrivingTheoryTestQuestionsRoute
+  '/english-language-tests': typeof EnglishLanguageTestsRouteWithChildren
   '/exam-updates': typeof ExamUpdatesRoute
   '/faq': typeof FaqRoute
   '/feedback': typeof FeedbackRoute
@@ -529,13 +557,16 @@ export interface FileRoutesByFullPath {
   '/blog/topographical-test-london': typeof BlogTopographicalTestLondonRoute
   '/blog/uk-road-signs-test': typeof BlogUkRoadSignsTestRoute
   '/category/$slug': typeof CategorySlugRoute
+  '/english-language-tests/$category': typeof EnglishLanguageTestsCategoryRouteWithChildren
   '/guide/$slug': typeof GuideSlugRoute
   '/quiz/$slug': typeof QuizSlugRoute
   '/topic/$slug': typeof TopicSlugRoute
   '/admin-kb20/': typeof AdminKb20IndexRoute
   '/blog/': typeof BlogIndexRoute
+  '/english-language-tests/': typeof EnglishLanguageTestsIndexRoute
   '/admin-kb20/questions/$topic': typeof AdminKb20QuestionsTopicRoute
   '/admin-kb20/questions/bulk-duplicate': typeof AdminKb20QuestionsBulkDuplicateRoute
+  '/english-language-tests/$category/mock-test-$num': typeof EnglishLanguageTestsCategoryMockTestNumRoute
   '/admin-kb20/questions/': typeof AdminKb20QuestionsIndexRoute
   '/api/admin/ga-oauth/callback': typeof ApiAdminGaOauthCallbackRoute
   '/lovable/email/queue/process': typeof LovableEmailQueueProcessRoute
@@ -604,13 +635,16 @@ export interface FileRoutesByTo {
   '/blog/topographical-test-london': typeof BlogTopographicalTestLondonRoute
   '/blog/uk-road-signs-test': typeof BlogUkRoadSignsTestRoute
   '/category/$slug': typeof CategorySlugRoute
+  '/english-language-tests/$category': typeof EnglishLanguageTestsCategoryRouteWithChildren
   '/guide/$slug': typeof GuideSlugRoute
   '/quiz/$slug': typeof QuizSlugRoute
   '/topic/$slug': typeof TopicSlugRoute
   '/admin-kb20': typeof AdminKb20IndexRoute
   '/blog': typeof BlogIndexRoute
+  '/english-language-tests': typeof EnglishLanguageTestsIndexRoute
   '/admin-kb20/questions/$topic': typeof AdminKb20QuestionsTopicRoute
   '/admin-kb20/questions/bulk-duplicate': typeof AdminKb20QuestionsBulkDuplicateRoute
+  '/english-language-tests/$category/mock-test-$num': typeof EnglishLanguageTestsCategoryMockTestNumRoute
   '/admin-kb20/questions': typeof AdminKb20QuestionsIndexRoute
   '/api/admin/ga-oauth/callback': typeof ApiAdminGaOauthCallbackRoute
   '/lovable/email/queue/process': typeof LovableEmailQueueProcessRoute
@@ -631,6 +665,7 @@ export interface FileRoutesById {
   '/dashboard': typeof DashboardRoute
   '/disclaimer': typeof DisclaimerRoute
   '/driving-theory-test-questions': typeof DrivingTheoryTestQuestionsRoute
+  '/english-language-tests': typeof EnglishLanguageTestsRouteWithChildren
   '/exam-updates': typeof ExamUpdatesRoute
   '/faq': typeof FaqRoute
   '/feedback': typeof FeedbackRoute
@@ -681,13 +716,16 @@ export interface FileRoutesById {
   '/blog/topographical-test-london': typeof BlogTopographicalTestLondonRoute
   '/blog/uk-road-signs-test': typeof BlogUkRoadSignsTestRoute
   '/category/$slug': typeof CategorySlugRoute
+  '/english-language-tests/$category': typeof EnglishLanguageTestsCategoryRouteWithChildren
   '/guide/$slug': typeof GuideSlugRoute
   '/quiz/$slug': typeof QuizSlugRoute
   '/topic/$slug': typeof TopicSlugRoute
   '/admin-kb20/': typeof AdminKb20IndexRoute
   '/blog/': typeof BlogIndexRoute
+  '/english-language-tests/': typeof EnglishLanguageTestsIndexRoute
   '/admin-kb20/questions/$topic': typeof AdminKb20QuestionsTopicRoute
   '/admin-kb20/questions/bulk-duplicate': typeof AdminKb20QuestionsBulkDuplicateRoute
+  '/english-language-tests/$category/mock-test-$num': typeof EnglishLanguageTestsCategoryMockTestNumRoute
   '/admin-kb20/questions/': typeof AdminKb20QuestionsIndexRoute
   '/api/admin/ga-oauth/callback': typeof ApiAdminGaOauthCallbackRoute
   '/lovable/email/queue/process': typeof LovableEmailQueueProcessRoute
@@ -709,6 +747,7 @@ export interface FileRouteTypes {
     | '/dashboard'
     | '/disclaimer'
     | '/driving-theory-test-questions'
+    | '/english-language-tests'
     | '/exam-updates'
     | '/faq'
     | '/feedback'
@@ -759,13 +798,16 @@ export interface FileRouteTypes {
     | '/blog/topographical-test-london'
     | '/blog/uk-road-signs-test'
     | '/category/$slug'
+    | '/english-language-tests/$category'
     | '/guide/$slug'
     | '/quiz/$slug'
     | '/topic/$slug'
     | '/admin-kb20/'
     | '/blog/'
+    | '/english-language-tests/'
     | '/admin-kb20/questions/$topic'
     | '/admin-kb20/questions/bulk-duplicate'
+    | '/english-language-tests/$category/mock-test-$num'
     | '/admin-kb20/questions/'
     | '/api/admin/ga-oauth/callback'
     | '/lovable/email/queue/process'
@@ -834,13 +876,16 @@ export interface FileRouteTypes {
     | '/blog/topographical-test-london'
     | '/blog/uk-road-signs-test'
     | '/category/$slug'
+    | '/english-language-tests/$category'
     | '/guide/$slug'
     | '/quiz/$slug'
     | '/topic/$slug'
     | '/admin-kb20'
     | '/blog'
+    | '/english-language-tests'
     | '/admin-kb20/questions/$topic'
     | '/admin-kb20/questions/bulk-duplicate'
+    | '/english-language-tests/$category/mock-test-$num'
     | '/admin-kb20/questions'
     | '/api/admin/ga-oauth/callback'
     | '/lovable/email/queue/process'
@@ -860,6 +905,7 @@ export interface FileRouteTypes {
     | '/dashboard'
     | '/disclaimer'
     | '/driving-theory-test-questions'
+    | '/english-language-tests'
     | '/exam-updates'
     | '/faq'
     | '/feedback'
@@ -910,13 +956,16 @@ export interface FileRouteTypes {
     | '/blog/topographical-test-london'
     | '/blog/uk-road-signs-test'
     | '/category/$slug'
+    | '/english-language-tests/$category'
     | '/guide/$slug'
     | '/quiz/$slug'
     | '/topic/$slug'
     | '/admin-kb20/'
     | '/blog/'
+    | '/english-language-tests/'
     | '/admin-kb20/questions/$topic'
     | '/admin-kb20/questions/bulk-duplicate'
+    | '/english-language-tests/$category/mock-test-$num'
     | '/admin-kb20/questions/'
     | '/api/admin/ga-oauth/callback'
     | '/lovable/email/queue/process'
@@ -937,6 +986,7 @@ export interface RootRouteChildren {
   DashboardRoute: typeof DashboardRoute
   DisclaimerRoute: typeof DisclaimerRoute
   DrivingTheoryTestQuestionsRoute: typeof DrivingTheoryTestQuestionsRoute
+  EnglishLanguageTestsRoute: typeof EnglishLanguageTestsRouteWithChildren
   ExamUpdatesRoute: typeof ExamUpdatesRoute
   FaqRoute: typeof FaqRoute
   FeedbackRoute: typeof FeedbackRoute
@@ -1138,6 +1188,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ExamUpdatesRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/english-language-tests': {
+      id: '/english-language-tests'
+      path: '/english-language-tests'
+      fullPath: '/english-language-tests'
+      preLoaderRoute: typeof EnglishLanguageTestsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/driving-theory-test-questions': {
       id: '/driving-theory-test-questions'
       path: '/driving-theory-test-questions'
@@ -1236,6 +1293,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/english-language-tests/': {
+      id: '/english-language-tests/'
+      path: '/'
+      fullPath: '/english-language-tests/'
+      preLoaderRoute: typeof EnglishLanguageTestsIndexRouteImport
+      parentRoute: typeof EnglishLanguageTestsRoute
+    }
     '/blog/': {
       id: '/blog/'
       path: '/'
@@ -1270,6 +1334,13 @@ declare module '@tanstack/react-router' {
       fullPath: '/guide/$slug'
       preLoaderRoute: typeof GuideSlugRouteImport
       parentRoute: typeof rootRouteImport
+    }
+    '/english-language-tests/$category': {
+      id: '/english-language-tests/$category'
+      path: '/$category'
+      fullPath: '/english-language-tests/$category'
+      preLoaderRoute: typeof EnglishLanguageTestsCategoryRouteImport
+      parentRoute: typeof EnglishLanguageTestsRoute
     }
     '/category/$slug': {
       id: '/category/$slug'
@@ -1481,6 +1552,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AdminKb20QuestionsIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/english-language-tests/$category/mock-test-$num': {
+      id: '/english-language-tests/$category/mock-test-$num'
+      path: '/mock-test-$num'
+      fullPath: '/english-language-tests/$category/mock-test-$num'
+      preLoaderRoute: typeof EnglishLanguageTestsCategoryMockTestNumRouteImport
+      parentRoute: typeof EnglishLanguageTestsCategoryRoute
+    }
     '/admin-kb20/questions/bulk-duplicate': {
       id: '/admin-kb20/questions/bulk-duplicate'
       path: '/admin-kb20/questions/bulk-duplicate'
@@ -1540,6 +1618,35 @@ const BlogRouteChildren: BlogRouteChildren = {
 
 const BlogRouteWithChildren = BlogRoute._addFileChildren(BlogRouteChildren)
 
+interface EnglishLanguageTestsCategoryRouteChildren {
+  EnglishLanguageTestsCategoryMockTestNumRoute: typeof EnglishLanguageTestsCategoryMockTestNumRoute
+}
+
+const EnglishLanguageTestsCategoryRouteChildren: EnglishLanguageTestsCategoryRouteChildren =
+  {
+    EnglishLanguageTestsCategoryMockTestNumRoute:
+      EnglishLanguageTestsCategoryMockTestNumRoute,
+  }
+
+const EnglishLanguageTestsCategoryRouteWithChildren =
+  EnglishLanguageTestsCategoryRoute._addFileChildren(
+    EnglishLanguageTestsCategoryRouteChildren,
+  )
+
+interface EnglishLanguageTestsRouteChildren {
+  EnglishLanguageTestsCategoryRoute: typeof EnglishLanguageTestsCategoryRouteWithChildren
+  EnglishLanguageTestsIndexRoute: typeof EnglishLanguageTestsIndexRoute
+}
+
+const EnglishLanguageTestsRouteChildren: EnglishLanguageTestsRouteChildren = {
+  EnglishLanguageTestsCategoryRoute:
+    EnglishLanguageTestsCategoryRouteWithChildren,
+  EnglishLanguageTestsIndexRoute: EnglishLanguageTestsIndexRoute,
+}
+
+const EnglishLanguageTestsRouteWithChildren =
+  EnglishLanguageTestsRoute._addFileChildren(EnglishLanguageTestsRouteChildren)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
@@ -1555,6 +1662,7 @@ const rootRouteChildren: RootRouteChildren = {
   DashboardRoute: DashboardRoute,
   DisclaimerRoute: DisclaimerRoute,
   DrivingTheoryTestQuestionsRoute: DrivingTheoryTestQuestionsRoute,
+  EnglishLanguageTestsRoute: EnglishLanguageTestsRouteWithChildren,
   ExamUpdatesRoute: ExamUpdatesRoute,
   FaqRoute: FaqRoute,
   FeedbackRoute: FeedbackRoute,
