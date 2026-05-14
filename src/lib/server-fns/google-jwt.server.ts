@@ -35,8 +35,14 @@ export async function getGoogleAccessToken(scope: string): Promise<string> {
   if (!email || !rawKey) {
     throw new Error("Missing GA_SERVICE_ACCOUNT_EMAIL or GA_SERVICE_ACCOUNT_PRIVATE_KEY");
   }
-  // Secret may have literal "\n" sequences instead of real newlines
-  const privateKeyPem = rawKey.replace(/\\n/g, "\n");
+  // Secret may have:
+  //  - literal "\n" sequences instead of real newlines (env var encoding)
+  //  - surrounding double/single quotes (copied from JSON)
+  //  - leading/trailing whitespace
+  const privateKeyPem = rawKey
+    .trim()
+    .replace(/^['"]|['"]$/g, "")
+    .replace(/\\n/g, "\n");
 
   const header = { alg: "RS256", typ: "JWT" };
   const payload = {
