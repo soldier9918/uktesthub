@@ -12,6 +12,7 @@ const InputSchema = z.object({
 
 export type GaDashboard = {
   realtime: { activeUsers: number; pageviews: number };
+  realtimeRaw: { activeUsersResponse: unknown; pageviewsResponse: unknown };
   pageviews30d: number;
   pageviews24h: number;
   visitors24h: number;
