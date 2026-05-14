@@ -47,7 +47,7 @@ export type TestConfig = {
 
 const ALL_LEVELS: LevelSlug[] = ["a1", "a2", "b1", "b2", "c1", "c2"];
 
-export const LEVEL_LABEL: Record<LevelSlug, string> = {
+export const LEVEL_LABEL: Record<string, string> = {
   a1: "A1 (Beginner)",
   a2: "A2 (Elementary)",
   b1: "B1 (Intermediate)",
@@ -56,7 +56,7 @@ export const LEVEL_LABEL: Record<LevelSlug, string> = {
   c2: "C2 (Proficient)",
 };
 
-export const LEVEL_SHORT: Record<LevelSlug, string> = {
+export const LEVEL_SHORT: Record<string, string> = {
   a1: "A1",
   a2: "A2",
   b1: "B1",
@@ -65,7 +65,7 @@ export const LEVEL_SHORT: Record<LevelSlug, string> = {
   c2: "C2",
 };
 
-export const LEVEL_DESCRIPTION: Record<LevelSlug, string> = {
+export const LEVEL_DESCRIPTION: Record<string, string> = {
   a1: "Beginner — simple words, short sentences, everyday objects, numbers and introductions.",
   a2: "Elementary — shopping, travel, work, family, weather, directions and short notices.",
   b1: "Intermediate — opinions, explanations, workplace situations and common grammar.",
