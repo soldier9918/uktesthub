@@ -150,6 +150,7 @@ export const getGaDashboard = createServerFn({ method: "POST" })
       return {
         data: {
           realtime: realtimeData,
+          realtimeRaw,
           pageviews30d,
           pageviews24h,
           visitors24h,
