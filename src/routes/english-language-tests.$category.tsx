@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, type ComponentType } from "react";
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import {
   ArrowRight,
@@ -34,7 +34,7 @@ import {
 } from "@/data/english/mocks";
 import { breadcrumbSchema } from "@/lib/seo";
 
-const ICONS: Record<string, React.ComponentType<{ className?: string }>> = {
+const ICONS: Record<string, ComponentType<{ className?: string }>> = {
   Award,
   BookA,
   BookOpen,
