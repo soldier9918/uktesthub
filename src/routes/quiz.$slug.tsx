@@ -81,8 +81,9 @@ export const Route = createFileRoute("/quiz/$slug")({
       };
     }
 
-    const scripts: Array<{ type: "application/ld+json"; children: string }> = [
-      {
+    const scripts: Array<{ type: "application/ld+json"; children: string }> = [];
+    if (q) {
+      scripts.push({
         type: "application/ld+json",
         children: JSON.stringify({
           "@context": "https://schema.org",
@@ -92,18 +93,19 @@ export const Route = createFileRoute("/quiz/$slug")({
           educationalLevel: q.difficulty,
           numberOfQuestions: q.questions.length,
         }),
-      },
-    ];
+      });
+    }
     if (found) {
       scripts.push(
         breadcrumbSchema([
           { name: "Home", url: "/" },
           { name: found.category.title, url: `/category/${found.category.slug}` },
           { name: found.topic.title, url: `/topic/${found.topic.slug}` },
-          { name: q.quizTitle, url: `/quiz/${slug}` },
+          { name: q?.quizTitle ?? title, url: `/quiz/${slug}` },
         ]),
       );
     }
+
     return {
       meta: [
         { title },
