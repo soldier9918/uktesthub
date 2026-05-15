@@ -254,7 +254,7 @@ export const categories: Category[] = [
     topics: [
       { slug: "comptia-a-plus", title: "CompTIA A+ Practice" },
       { slug: "itil-4", title: "ITIL 4 Foundation Practice" },
-      { slug: "microsoft-fundamentals", title: "Microsoft Fundamentals (MS-900 / AZ-900)" },
+      { slug: "microsoft-fundamentals", title: "Microsoft Azure & 365 Fundamentals (AZ-900 / MS-900)" },
       { slug: "cyber-awareness", title: "Cyber Security Awareness" },
     ],
   },
