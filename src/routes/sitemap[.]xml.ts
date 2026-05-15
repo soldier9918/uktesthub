@@ -74,26 +74,12 @@ const blogEntries: Entry[] = blogPosts.map((p) => ({
   lastmod: p.dateModified ?? p.datePublished,
 }));
 
-// Whitelist of money-topic quizzes — only these get every /quiz/{slug} URL
-// indexed. The other ~5,000 quiz mocks stay out of the sitemap until each
-// page has unique title/meta/content.
-const QUIZ_WHITELIST = [
-  "driving-theory",
-  "road-signs",
-  "life-in-the-uk",
-  "british-citizenship",
-  "uk-laws-rights",
-  "seru",
-  "topographical",
-  "cscs-operative",
-  "sia-door-supervisor",
-  "nhs-numeracy",
-  "ielts",
-];
-
+// All quiz mocks across every topic. Each /quiz/{slug}-mock-{n} now renders
+// a topic-specific title, description and self-canonical (see quiz.$slug.tsx),
+// so all 5,130 are safe to include for indexing.
 const mocks = mockIndex as Record<string, number[]>;
-const quizEntries: Entry[] = QUIZ_WHITELIST.flatMap((topic) =>
-  (mocks[topic] ?? []).map<Entry>((n) => ({
+const quizEntries: Entry[] = Object.entries(mocks).flatMap(([topic, nums]) =>
+  nums.map<Entry>((n) => ({
     path: `/quiz/${topic}-mock-${n}`,
     changefreq: "monthly",
     priority: "0.6",
@@ -122,6 +108,17 @@ const englishEntries: Entry[] = [
   })),
 ];
 
+// Every English mock test page (45 per level triple).
+const englishMockEntries: Entry[] = allEnglishLevelTriples().flatMap(
+  ({ test, skill, level }) =>
+    Array.from({ length: 45 }, (_, i) => i + 1).map<Entry>((n) => ({
+      path: `/english-language-tests/${test}/${skill}/${level}/mock-test-${n}`,
+      changefreq: "monthly",
+      priority: "0.5",
+    })),
+);
+
+
 const allEntries: Entry[] = [
   ...staticEntries,
   ...seoLandings,
@@ -130,7 +127,9 @@ const allEntries: Entry[] = [
   ...blogEntries,
   ...quizEntries,
   ...englishEntries,
+  ...englishMockEntries,
 ];
+
 
 const renderUrl = (e: Entry) =>
   [

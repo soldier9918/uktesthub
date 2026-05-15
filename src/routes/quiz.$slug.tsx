@@ -52,15 +52,38 @@ export const Route = createFileRoute("/quiz/$slug")({
   head: ({ loaderData, params }) => {
     const q = loaderData?.quiz;
     const slug = params?.slug ?? "";
-    if (!q) return { meta: [{ title: "Quiz — UK Test Hub" }] };
-    const withSuffix = `${q.quizTitle} | UK Test Hub`;
-    const title = withSuffix.length <= 60 ? withSuffix : q.quizTitle;
-    const description = q.description;
     const url = `https://www.uktesthub.com/quiz/${slug}`;
-    const topicSlug = slug.replace(/-mock-\d+$/, "");
-    const found = topicSlug !== slug ? findTopic(topicSlug) : null;
-    const scripts: Array<{ type: "application/ld+json"; children: string }> = [
-      {
+    const mockMatch = /-mock-(\d+)$/.exec(slug);
+    const topicSlug = mockMatch ? slug.slice(0, mockMatch.index) : slug;
+    const found = mockMatch ? findTopic(topicSlug) : null;
+
+    // Mock test page — derive SEO from topic + mock number even if loaderData
+    // hasn't resolved yet (browser-side fallback for SSR-skipped mocks).
+    let title: string;
+    let description: string;
+    if (mockMatch && found) {
+      const n = mockMatch[1];
+      const topicTitle = found.topic.title;
+      const withSuffix = `${topicTitle} Mock Test ${n} | UK Test Hub`;
+      title =
+        withSuffix.length <= 60
+          ? withSuffix
+          : `${topicTitle} Mock Test ${n}`;
+      description = `Practise ${topicTitle} Mock Test ${n} with 24 questions, instant results and clear answer explanations.`;
+    } else if (q) {
+      const withSuffix = `${q.quizTitle} | UK Test Hub`;
+      title = withSuffix.length <= 60 ? withSuffix : q.quizTitle;
+      description = q.description;
+    } else {
+      return {
+        meta: [{ title: "Quiz — UK Test Hub" }],
+        links: [{ rel: "canonical", href: url }],
+      };
+    }
+
+    const scripts: Array<{ type: "application/ld+json"; children: string }> = [];
+    if (q) {
+      scripts.push({
         type: "application/ld+json",
         children: JSON.stringify({
           "@context": "https://schema.org",
@@ -70,18 +93,19 @@ export const Route = createFileRoute("/quiz/$slug")({
           educationalLevel: q.difficulty,
           numberOfQuestions: q.questions.length,
         }),
-      },
-    ];
+      });
+    }
     if (found) {
       scripts.push(
         breadcrumbSchema([
           { name: "Home", url: "/" },
           { name: found.category.title, url: `/category/${found.category.slug}` },
           { name: found.topic.title, url: `/topic/${found.topic.slug}` },
-          { name: q.quizTitle, url: `/quiz/${slug}` },
+          { name: q?.quizTitle ?? title, url: `/quiz/${slug}` },
         ]),
       );
     }
+
     return {
       meta: [
         { title },
