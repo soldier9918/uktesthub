@@ -198,9 +198,9 @@ function HowMockTestsWork() {
       </p>
 
       <div className="mt-5 grid gap-4 sm:grid-cols-2">
-        <div className="rounded-2xl border border-border bg-muted/30 p-4">
+        <div className="rounded-2xl border border-[#15803d] bg-gradient-to-br from-[#22c55e] to-[#15803d] p-4 text-white shadow-[0_6px_14px_-6px_rgba(34,197,94,0.7)] ring-1 ring-white/20">
           <h3 className="font-display text-base font-bold">Practice mode</h3>
-          <p className="mt-1 text-sm text-muted-foreground">
+          <p className="mt-1 text-sm opacity-90">
             No timer. Answer a question, then reveal the correct answer and a
             short explanation before moving on. Best for learning.
           </p>

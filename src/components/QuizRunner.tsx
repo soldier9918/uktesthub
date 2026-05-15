@@ -963,13 +963,13 @@ function ModeSelect({ quiz, onSelect }: { quiz: Quiz; onSelect: (m: Mode) => voi
         <div className="mt-8 grid gap-4 md:grid-cols-2">
           <button
             onClick={() => onSelect("practice")}
-            className="group rounded-2xl border-2 border-border bg-background p-5 text-left transition-all hover:-translate-y-0.5 hover:border-success hover:shadow-soft"
+            className="group rounded-2xl border-2 border-[#15803d] bg-gradient-to-br from-[#22c55e] to-[#15803d] p-5 text-left text-white shadow-[0_6px_14px_-6px_rgba(34,197,94,0.7)] ring-1 ring-white/20 transition-all hover:-translate-y-0.5"
           >
             <div className="font-display text-lg font-semibold">Practice mode</div>
-            <p className="mt-1 text-sm text-muted-foreground">
+            <p className="mt-1 text-sm opacity-90">
               Instant feedback and explanations after every question. No timer.
             </p>
-            <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-success">
+            <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold">
               Start practice <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </span>
           </button>
