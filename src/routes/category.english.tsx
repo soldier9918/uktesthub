@@ -205,9 +205,9 @@ function HowMockTestsWork() {
             short explanation before moving on. Best for learning.
           </p>
         </div>
-        <div className="rounded-2xl border border-border bg-muted/30 p-4">
+        <div className="rounded-2xl border border-[#c81e2c] bg-gradient-to-br from-[#ff5a5f] to-[#c81e2c] p-4 text-white shadow-[0_6px_14px_-6px_rgba(255,90,95,0.7)] ring-1 ring-white/20">
           <h3 className="font-display text-base font-bold">Exam mode</h3>
-          <p className="mt-1 text-sm text-muted-foreground">
+          <p className="mt-1 text-sm opacity-90">
             Timed run-through, one minute per question. Answers are revealed
             only at the end — closest to a real exam feel.
           </p>
