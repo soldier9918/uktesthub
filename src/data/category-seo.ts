@@ -878,7 +878,7 @@ export const categorySeo: Record<string, CategorySeo> = {
   "it-tech": {
     title: "IT & Tech Certification Tests | UK Test Hub",
     description:
-      "Free practice tests for CompTIA A+, ITIL 4 Foundation, Microsoft Fundamentals (MS-900 / AZ-900) and Cyber Security Awareness. Realistic exam-style questions with explanations.",
+      "Free practice tests for CompTIA A+, ITIL 4 Foundation, Microsoft Azure Fundamentals (AZ-900), Microsoft 365 Fundamentals (MS-900) and Cyber Security Awareness. Realistic exam-style questions with explanations covering Azure cloud concepts, Azure services, Azure pricing and Microsoft 365.",
     intro: [
       "Entry-level IT certifications are the cheapest career insurance you can buy. CompTIA A+ proves you can support hardware, networking and operating systems; ITIL 4 Foundation proves you understand modern service management; Microsoft Fundamentals (MS-900 for Microsoft 365, AZ-900 for Azure) opens the door to cloud roles; and Cyber Security Awareness is the baseline that almost every UK employer now requires before granting a network login.",
       "Our free IT and tech mocks mirror the official Pearson VUE and PSI exam formats — multiple-choice, drag-and-drop and short performance-based items — using current UK and global syllabuses. Question banks are refreshed when the official objectives change, so the wording and topic mix match what you'll actually face.",
