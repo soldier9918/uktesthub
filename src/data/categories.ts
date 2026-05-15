@@ -247,7 +247,7 @@ export const categories: Category[] = [
     title: "IT & Tech Certifications",
     short: "CompTIA A+, ITIL 4, Microsoft Fundamentals & Cyber",
     description:
-      "Prepare for entry-level IT certifications — CompTIA A+, ITIL 4 Foundation, Microsoft MS-900 / AZ-900 Fundamentals and a cyber security awareness primer.",
+      "Prepare for entry-level IT certifications — CompTIA A+, ITIL 4 Foundation, Microsoft Azure Fundamentals (AZ-900) and Microsoft 365 Fundamentals (MS-900), plus a cyber security awareness primer.",
     icon: "Cpu",
     accent: "success",
     heroImage: heroItTech,
