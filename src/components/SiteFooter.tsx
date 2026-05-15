@@ -119,6 +119,20 @@ export function SiteFooter() {
               Free, independent UK practice tests with instant feedback —
               no account required.
             </p>
+            <div className="mt-6 flex flex-wrap gap-2">
+              {socialLinks.map(({ label, href, Icon }) => (
+                <a
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={label}
+                  className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-navy-foreground/80 transition-colors hover:border-coral hover:text-coral"
+                >
+                  <Icon className="h-4 w-4" />
+                </a>
+              ))}
+            </div>
           </div>
         </div>
 
