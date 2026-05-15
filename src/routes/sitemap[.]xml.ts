@@ -127,7 +127,9 @@ const allEntries: Entry[] = [
   ...blogEntries,
   ...quizEntries,
   ...englishEntries,
+  ...englishMockEntries,
 ];
+
 
 const renderUrl = (e: Entry) =>
   [
