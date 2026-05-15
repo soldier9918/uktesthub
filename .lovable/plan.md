@@ -1,62 +1,27 @@
-## What's broken
+## Goal
 
-**1. Duplicate `<title>` / `<meta>` tags from the root route**
-`src/routes/__root.tsx` declares page-level meta (`title`, `description`, `og:title`, `og:description`, `og:image`, `og:image:width/height/alt`, `twitter:title`, `twitter:description`, `twitter:image`, `og:url`). Pages that use the `pageMeta()` helper or inline meta override the same keys, but TanStack Router's `<title>` rendering and `links` array are not always reliably deduped — and even where dedupe works, the root-level page-content tags are wrong by design (they're not sitewide defaults).
+Deliver a single `.xlsx` file listing every URL on uktesthub.com, with a yellow fill on rows for URLs Google currently shows in Search Console.
 
-**2. `og:image:alt` ends in "— UK Test Hub — UK Test Hub"**
-`src/lib/seo.ts` `pageMeta()` builds the default alt as `` `${title} — ${SITE_NAME}` ``. Titles already end in `| UK Test Hub`, so the alt becomes `"… | UK Test Hub — UK Test Hub"`.
+## Decisions (defaulted since you skipped the questions)
 
-**3. `/guide/road-signs` (and siblings) title still verbose**
-Current: `UK Road Signs Test Guide | UK Test Hub`. User wants `Road Signs Test Guide | UK Test Hub`. Same simplification pattern should apply to every entry in `src/data/topic-seo.ts` (the source of all `/guide/*` titles).
+- **Detection method**: Search Analytics API — pull every URL that received ≥1 impression in the last 16 months. This is the fastest reliable proxy for "indexed and visible in search" (~1 minute, no quota issues). The URL Inspection API would be definitive but takes ~2 days at 2,000 calls/day for 4,000+ URLs. We can run that as a follow-up if you want exact statuses.
+- **Scope**: All URLs currently in `/sitemap.xml` (~4,000) — English mocks, whitelisted quizzes, topics, blog, categories, SEO landings, static pages. This matches what we actually want Google to index. The ~5,000 non-whitelisted quiz mocks are intentionally excluded from the sitemap, so flagging them as "not indexed" would be misleading.
 
-**4. Footer placeholder social icons**
-`src/components/SiteFooter.tsx` renders Facebook/Twitter/Youtube/Instagram icons all linking to `href="#"`. No real accounts exist.
+## Steps
 
-## Changes
+1. Build the URL list in Node by importing the same sources `src/routes/sitemap[.]xml.ts` uses (categories, English triples, blog posts, mock index, whitelist) — guarantees the file matches the live sitemap.
+2. Call Google Search Console Search Analytics via the connector gateway:
+   - Property: `https://www.uktesthub.com/`
+   - Dimension: `page`, range: last 16 months, rowLimit: 25,000, paginated.
+   - Build a `Set<string>` of indexed URLs (normalize trailing slashes).
+3. Generate xlsx with `openpyxl` (Python):
+   - Columns: `URL`, `Section`, `Indexed in Google?`, `Impressions (16mo)`, `Clicks (16mo)`.
+   - Yellow fill (`FFFF00`) on the entire row when `Indexed = Yes`.
+   - Frozen header row, bold header, autofilter, column widths sized for readability.
+   - Sort: section, then URL.
+4. Save to `/mnt/documents/uktesthub-urls-indexed.xlsx` and surface as a downloadable artifact.
 
-### A. Strip page-content meta from `__root.tsx`
-Keep only true sitewide defaults:
-- `charSet`, `viewport`, `author`, `google-site-verification`
-- `og:type: website`, `og:site_name: UK Test Hub`, `twitter:card: summary_large_image`
-- A single fallback `title: "UK Test Hub"` (TanStack treats `title` specially and the child route's title wins via dedupe — but this fallback covers the rare unmatched route)
-- Keep `links` (stylesheet, fonts, icons) and `scripts` (organizationSchema + websiteSchema)
+## Notes
 
-Remove from root:
-- `description`, `og:title`, `og:description`, `og:url`
-- `og:image`, `og:image:width`, `og:image:height`, `og:image:alt`
-- `twitter:title`, `twitter:image`
-
-Rationale: every public route already provides its own page-specific values (verified across prior turns — homepage, all-tests, category.english inline; everything else uses `pageMeta()`; the 21 utility/legal routes all have their own head with `og:url` + canonical). After this change, each page emits exactly one of each tag.
-
-### B. Fix `pageMeta()` `og:image:alt` default
-In `src/lib/seo.ts`, change the default from `` `${title} — ${SITE_NAME}` `` to just `title` (titles already include the site name, so no extra suffix is needed). Callers can still pass an explicit `imageAlt` override.
-
-### C. Shorten guide titles further in `src/data/topic-seo.ts`
-Rename to drop noisy prefixes/suffixes and standardise on `[Keyword] Guide | UK Test Hub`:
-- `"UK Road Signs Test Guide | UK Test Hub"` → `"Road Signs Test Guide | UK Test Hub"`
-- `"British Citizenship Test Guide | UK Test Hub"` → keep (already short)
-- `"UK Laws & Rights Quiz Guide | UK Test Hub"` → `"UK Laws & Rights Guide | UK Test Hub"`
-- `"UK Geography Test Guide | UK Test Hub"` → keep
-- `"English Grammar & Vocab Guide | UK Test Hub"` → keep
-- All other entries already match the pattern and are under 60 chars — leave alone.
-
-Also update `road-signs` description to the user's suggested copy:
-`"Learn UK road signs for the theory test, including shapes, colours, markings and common exam questions. Practise free mock tests."`
-
-### D. Hide footer social icons
-In `src/components/SiteFooter.tsx`, remove the `<div className="mt-6 flex gap-2">…</div>` block and the now-unused `lucide-react` icon imports (`Facebook`, `Twitter`, `Youtube`, `Instagram`). Leave the rest of the footer (logo, blurb, legal links, disclaimer) untouched. This keeps the design clean and makes it trivial to re-introduce icons once real URLs exist.
-
-## Verification
-
-After the edits, view-source on three pages and confirm exactly one of each tag:
-1. `/` — title `Free UK Mock Tests | UK Test Hub`, single canonical, single og:url
-2. `/guide/road-signs` — title `Road Signs Test Guide | UK Test Hub`, og:image:alt has no doubled site name
-3. `/all-tests` — title `All UK Mock Tests | UK Test Hub`
-
-No public page is noindexed; canonicals and og:url remain self-referencing on every leaf.
-
-## Files touched
-- `src/routes/__root.tsx` — remove page-content meta, keep sitewide defaults
-- `src/lib/seo.ts` — fix default `og:image:alt`
-- `src/data/topic-seo.ts` — rename `road-signs` + `uk-laws-rights` titles; update road-signs description
-- `src/components/SiteFooter.tsx` — remove placeholder social icons + unused icon imports
+- The "Indexed" column is based on having received search impressions — covers ~all genuinely indexed pages but may miss a tiny number of indexed-but-never-shown URLs. Acceptable trade-off vs. a 2-day inspection job.
+- If you'd like the definitive URL Inspection version after, I can kick that off as a follow-up and update the file.
