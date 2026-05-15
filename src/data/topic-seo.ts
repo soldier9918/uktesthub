@@ -1486,7 +1486,7 @@ export const topicSeo: Record<string, TopicSeo> = {
   // -------- IT / TECH ------------------------------------------------
   "comptia-a-plus": generic("CompTIA A+ Practice", "CompTIA", "the entry-level IT support certification — two exams (Core 1 220-1101 and Core 2 220-1102) covering hardware, networking, mobile, security and operating systems"),
   "itil-4": generic("ITIL 4 Foundation Practice", "PeopleCert on behalf of AXELOS", "the ITIL 4 Foundation exam — 40 multiple-choice questions in 60 minutes, pass mark 65% (26/40), covering the service value system and seven guiding principles"),
-  "microsoft-fundamentals": generic("Microsoft Fundamentals (MS-900 / AZ-900)", "Microsoft Learn / Pearson VUE", "the Microsoft Fundamentals certifications — MS-900 (Microsoft 365) and AZ-900 (Azure) — entry-level cloud and productivity exams scored out of 1000 with a 700 pass mark"),
+  "microsoft-fundamentals": generic("Microsoft Azure & 365 Fundamentals (AZ-900 / MS-900)", "Microsoft Learn / Pearson VUE", "the entry-level Microsoft Azure Fundamentals (AZ-900) cloud certification and the Microsoft 365 Fundamentals (MS-900) productivity certification — both Microsoft Azure and Microsoft 365 exams are scored out of 1000 with a 700 pass mark and cover Azure cloud concepts, Azure services, Azure pricing, security and compliance"),
   "cyber-awareness": generic("Cyber Security Awareness", "the National Cyber Security Centre (NCSC)", "an awareness-level practice on phishing, password hygiene, multi-factor authentication, ransomware and the NCSC Cyber Essentials controls"),
 
   // -------- HEALTHCARE ENTRY -----------------------------------------
