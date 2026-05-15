@@ -1,6 +1,31 @@
 import { Link } from "@tanstack/react-router";
+import { Facebook, Instagram, Youtube } from "lucide-react";
 import { Logo } from "./Logo";
 import logoSrc from "@/assets/uktesthub-logo.png";
+
+const socialLinks = [
+  { label: "Facebook", href: "https://www.facebook.com/", Icon: Facebook },
+  { label: "Instagram", href: "https://www.instagram.com/", Icon: Instagram },
+  { label: "YouTube", href: "https://www.youtube.com/", Icon: Youtube },
+  {
+    label: "TikTok",
+    href: "https://www.tiktok.com/",
+    Icon: (props: React.SVGProps<SVGSVGElement>) => (
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" {...props}>
+        <path d="M16.5 3a5.5 5.5 0 0 0 4.5 4.5v3a8.5 8.5 0 0 1-4.5-1.4v6.65a6.25 6.25 0 1 1-6.25-6.25c.34 0 .67.03 1 .09v3.16a3.16 3.16 0 1 0 2.25 3.03V3h3z" />
+      </svg>
+    ),
+  },
+  {
+    label: "Pinterest",
+    href: "https://www.pinterest.com/",
+    Icon: (props: React.SVGProps<SVGSVGElement>) => (
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" {...props}>
+        <path d="M12 2a10 10 0 0 0-3.64 19.32c-.09-.78-.17-1.97.04-2.82.18-.74 1.18-4.7 1.18-4.7s-.3-.6-.3-1.49c0-1.4.81-2.45 1.82-2.45.86 0 1.27.65 1.27 1.42 0 .86-.55 2.16-.84 3.36-.24 1 .51 1.82 1.5 1.82 1.8 0 3.18-1.9 3.18-4.63 0-2.42-1.74-4.11-4.22-4.11-2.88 0-4.57 2.16-4.57 4.39 0 .87.33 1.81.75 2.32.08.1.1.19.07.29-.08.34-.27 1.1-.31 1.25-.05.21-.16.25-.37.15-1.39-.65-2.26-2.68-2.26-4.31 0-3.5 2.55-6.72 7.34-6.72 3.85 0 6.85 2.74 6.85 6.41 0 3.83-2.42 6.91-5.77 6.91-1.13 0-2.19-.59-2.55-1.28l-.69 2.64c-.25.97-.93 2.18-1.39 2.92A10 10 0 1 0 12 2z" />
+      </svg>
+    ),
+  },
+];
 
 type StaticLink = { label: string; to: string };
 type CategoryLink = { label: string; to: "/category/$slug"; params: { slug: string } };
@@ -94,6 +119,20 @@ export function SiteFooter() {
               Free, independent UK practice tests with instant feedback —
               no account required.
             </p>
+            <div className="mt-6 flex flex-wrap gap-2">
+              {socialLinks.map(({ label, href, Icon }) => (
+                <a
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={label}
+                  className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-navy-foreground/80 transition-colors hover:border-coral hover:text-coral"
+                >
+                  <Icon className="h-4 w-4" />
+                </a>
+              ))}
+            </div>
           </div>
         </div>
 
