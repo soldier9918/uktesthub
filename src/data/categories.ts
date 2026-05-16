@@ -369,7 +369,6 @@ export const categories: Category[] = [
       { slug: "driver-cpc-module-4", title: "Driver CPC Module 4 (Practical Demonstration Theory)" },
       { slug: "driver-cpc", title: "Driver CPC Practice" },
       { slug: "adr-dangerous-goods", title: "ADR Dangerous Goods Awareness" },
-      { slug: "forklift-theory", title: "Forklift Truck Theory (RTITB / ITSSAR)" },
       { slug: "forklift-flt-theory-test", title: "Forklift / FLT Theory Test Practice" },
       { slug: "transport-manager-cpc", title: "Transport Manager CPC Practice" },
       { slug: "transport-manager-cpc-road-haulage", title: "Transport Manager CPC Road Haulage Practice" },
