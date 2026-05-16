@@ -1651,8 +1651,8 @@ def main() -> int:
         print(__doc__)
         return 1
     slug = sys.argv[1]
-    if slug not in {"ielts", "esol", "selt", "toefl"}:
-        print(f"Unknown category: {slug}. Use ielts | esol | selt | toefl.")
+    if slug not in {"ielts", "esol", "selt", "toefl", "pte-academic-ukvi", "duolingo-english-test"}:
+        print(f"Unknown category: {slug}.")
         return 1
     out = build_bank(slug)
     target = OUT_DIR / f"{slug}.json"
