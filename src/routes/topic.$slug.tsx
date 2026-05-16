@@ -120,6 +120,7 @@ function TopicPage() {
   return (
     <div className="min-h-screen bg-[#f7f5f0]">
       <SiteHeader />
+      <BackToAllTests />
 
       <section className="relative overflow-hidden bg-navy-deep text-navy-foreground">
         <img
