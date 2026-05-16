@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
+import { ArrowLeft } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { QuizRunner } from "@/components/QuizRunner";
@@ -121,9 +122,10 @@ function EnglishMockPage() {
           <Link
             to="/english-language-tests/$test/$skill/$level"
             params={{ test: test.slug, skill: skill.slug, level }}
-            className="mb-3 inline-flex items-center gap-1.5 text-sm font-semibold text-muted-foreground hover:text-coral"
+            className="mb-4 inline-flex items-center gap-2.5 rounded-none border-2 border-coral/30 bg-card px-5 py-2.5 text-sm font-bold text-foreground shadow-elevated transition-all hover:-translate-y-0.5 hover:border-coral hover:text-coral md:px-6 md:py-3 md:text-base"
           >
-            ← Back to {test.shortTitle} {skill.shortTitle} {LEVEL_SHORT[level]} mock tests
+            <ArrowLeft className="h-5 w-5" />
+            Back to all mock tests
           </Link>
           <QuizRunner key={`${test.slug}-${skill.slug}-${level}-${num}`} quiz={quiz} />
           <div className="mt-8 flex flex-wrap items-center gap-3">
