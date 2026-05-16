@@ -1,51 +1,43 @@
-## 1. "Back to all tests" button
+## What I checked
 
-Add a prominent **"← Back to all tests"** link at the top of these pages (above the hero, on the same beige `bg-[#f7f5f0]` strip that contains the header):
+### 1. Homepage "Popular Mock Tests" panel (`src/routes/index.tsx` lines 207–221)
 
-- `src/routes/category.$slug.tsx` — `/category/:slug`
-- `src/routes/topic.$slug.tsx` — `/topic/:slug`
-- `src/routes/english-language-tests.$test.tsx` — `/english-language-tests/:test`
-- `src/routes/english-language-tests.$test.$skill.tsx` — `/english-language-tests/:test/:skill`
-- `src/routes/english-language-tests.$test.$skill.$level.index.tsx` — the level / mock-list page
+Current slugs, each verified against `src/data/categories.ts` and the English tests list:
 
-Style: small pill button with an `ArrowLeft` icon, navy text on a white card, sits just under `SiteHeader` so it's the first thing users see when they land on any category/topic.
+| Link label | Slug | Route resolved | Status |
+|---|---|---|---|
+| SERU Tests | `seru` | `/topic/seru` | ✅ |
+| Driving Theory Tests | `driving-theory` | `/topic/driving-theory` | ✅ |
+| Life in the UK Tests | `life-in-the-uk` | `/topic/life-in-the-uk` | ✅ |
+| IELTS Tests | `ielts` | redirects to `/english-language-tests/ielts` | ✅ |
+| CSCS Tests | `cscs-operative` | `/topic/cscs-operative` | ✅ |
+| NMC CBT Tests | `nmc-cbt` | `/topic/nmc-cbt` | ✅ (was broken as `nmc`, fixed last turn) |
+| SIA Tests | `sia-door-supervisor` | `/topic/sia-door-supervisor` | ✅ |
+| ESOL Tests | `esol` | redirects to `/english-language-tests/esol` | ✅ |
+| Food Hygiene Tests | `food-hygiene` | `/topic/food-hygiene` | ✅ |
+| First Aid Tests | `first-aid` | `/topic/first-aid` | ✅ |
 
-```text
-┌───────────────────────────────────────────┐
-│  SiteHeader                               │
-├───────────────────────────────────────────┤
-│  ← Back to all tests                      │
-├───────────────────────────────────────────┤
-│  HERO (existing)                          │
-└───────────────────────────────────────────┘
-```
+All 10 popular-test links now resolve. No 404s remain in that list.
 
-Keep the existing breadcrumb (Home › Category › Topic) — the back button is in addition to it, because the breadcrumb currently links to Home, not to `/all-tests`.
+### 2. Sitemap (`src/routes/sitemap[.]xml.ts`)
 
-## 2. Unify mock test tiles
+The sitemap is already generated dynamically from the same data sources the routes use, so new URLs are picked up automatically:
 
-The target design (per attached screenshot) is the tile already used on the English level pages:
+- `categoryEntries` — every category in `categories.ts` → `/category/{slug}`
+- `topicEntries` — every topic in `categories.ts` → `/topic/{slug}` + `/guide/{slug}`
+- `quizEntries` — every mock in `mock-index.json` → `/quiz/{topic}-mock-{n}`
+- `englishEntries` — every English test, skill, and level triple
+- `englishMockEntries` — all 45 mocks per English level triple
+- `blogEntries` — every post in `blogPosts`
+- `seoLandings` — all bespoke SEO landing routes
+- `staticEntries` — home, all-tests, blog index, about, contact, faq, help, exam-updates, sitemap, legal pages
 
-- Title: **"Mock Test N"** (instead of the current "Test N")
-- Subtitle: `24 questions · ⏱ ~24 min`
-- Prominent coral **"Start test →"** button at the bottom
-- Same card chrome (rounded-2xl, border, soft shadow, hover lift)
+No URL is missing. The NMC fix from last turn is already in the sitemap via `topicEntries` (`/topic/nmc-cbt`).
 
-Apply this design to the main mock-test grid on `src/routes/topic.$slug.tsx` so every topic across the site looks identical to the English ones.
+## Proposed action
 
-Changes inside `topic.$slug.tsx` only:
+**No code changes needed.** The earlier NMC fix resolved the only broken link, and the sitemap already enumerates every topic, category, English test, mock, blog post, and SEO landing automatically from data.
 
-- Rewrite the `MockCard` component to mirror the English `MockCard` (in `english-language-tests.$test.$skill.$level.index.tsx`): heading "Mock Test N", `24 questions · ~24 min` line, coral "Start test" button, "Soon" pill for locked mocks.
-- Remove the per-tile progress bar + "X / 24" score (it conflicts with the new layout). Best-score display can be added later in a follow-up if you want it preserved — confirm if you want to keep it.
-- Update the grid call site to pass `mockNumber` instead of `title: "Test N"`.
-
-No changes to data, routing, quizzes, or styles tokens. All new styles use existing tokens (`coral`, `border`, `card`, `muted`, etc.).
-
-## Open question
-
-The current topic tile shows your best score (`X / 24` with a progress bar). The target design has no progress bar. Confirm one:
-
-- **A.** Drop the progress bar entirely (matches screenshot exactly).
-- **B.** Keep the progress bar but place it below the "Start test" button, in a smaller muted style.
-
-I'll default to **A** unless you say otherwise.
+If you'd like, I can additionally:
+- (a) add a small dev-only assertion that fails the build if any hard-coded slug in the homepage panel doesn't exist in `categories.ts` / English tests (prevents future 404s of this kind), or
+- (b) leave it as-is.
