@@ -791,10 +791,8 @@ function HomePage() {
           </div>
         </section>
 
-        {/* Reserved hidden AdSense slot before "How to Pass UK Tests First Time" */}
-        <div className="mt-14 min-h-[110px]" aria-hidden="true">
-          <AdSlot size="leaderboard" />
-        </div>
+        {/* Hidden AdSense slot before "How to Pass UK Tests First Time" */}
+        <AdSlot size="leaderboard" />
 
         {/* HOW TO PASS UK TESTS FIRST TIME */}
         <section className="mt-16">
