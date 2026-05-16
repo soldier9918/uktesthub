@@ -1,39 +1,27 @@
-## 1. Fix broken links in `/blog/uk-general-knowledge-quiz-guide`
+## 1. Replace Featured Mock Test images with premium-quality photography
 
-The blog post links to:
-- `/category/fun` (C slug="fun")
-- `/topic/daily` (T slug="daily")
-- `/topic/how-british` (T slug="how-british")
+The six current `feat-*.jpg` images look flat/stock. Regenerate each with `imagegen` at premium quality (4:3 aspect, 1024×768), keeping the same file paths so no imports change:
 
-The `fun` category was previously removed from `src/data/categories.ts`, but the quizzes (`general-knowledge-daily`, `how-british-are-you`) in `src/data/quizzes.ts` still reference `category: "fun"` with topics `daily` and `how-british`. Without the category entry, `findTopic()` returns nothing and `/topic/daily`, `/topic/how-british`, and `/category/fun` all 404.
+| File | New prompt |
+|---|---|
+| `src/assets/feat-driving.jpg` | Cinematic dusk shot of a UK motorway with red brake-light trails, soft golden sky, shallow depth of field, premium editorial photography |
+| `src/assets/feat-flag.jpg` | Crisp Union Jack flag waving against a clear blue British sky, fine fabric detail, bright natural light, premium stock photography |
+| `src/assets/feat-headphones.jpg` | Premium over-ear black studio headphones on a warm neutral linen surface, soft window light, minimalist editorial product photography |
+| `src/assets/feat-calculator.jpg` | Sleek modern calculator beside a sharpened pencil and open notepad on a clean white desk, top-down flat lay, soft natural light, premium editorial |
+| `src/assets/feat-tower-bridge.jpg` | Tower Bridge London at golden-hour sunset reflecting on the Thames, warm cinematic light, sharp architectural detail, premium travel photography |
+| `src/assets/feat-road-signs.jpg` | Cluster of real UK road signs (30mph, warning triangles, directional arrows) against a clear blue sky, sharp detail, premium documentary photography |
 
-**Fix:** Re-add a `fun` category to `src/data/categories.ts`:
+No code changes — just asset replacement. Each at quality "standard" (premium realistic photography) — premium tier only if needed for legibility.
 
-```ts
-{
-  slug: "fun",
-  title: "Fun & Viral Quizzes",
-  short: "British general knowledge & light-hearted trivia",
-  description:
-    "Light-hearted British trivia and general knowledge quizzes — perfect for pub quiz prep or a quick brain break.",
-  icon: "Sparkles",
-  accent: "coral",
-  heroImage: heroCitizenship, // reuse existing asset, no new image needed
-  topics: [
-    { slug: "daily", title: "General Knowledge Daily" },
-    { slug: "how-british", title: "How British Are You?" },
-  ],
-},
-```
+## 2. Make London skyline banner visible in "Proudly helping learners…" strip
 
-This automatically restores `/category/fun`, `/topic/daily`, `/topic/how-british`, and the sitemap entries (sitemap auto-generates from `categories`).
+In `src/routes/index.tsx` line 920, the skyline `<img>` is set to `opacity-30`, making it nearly invisible. Increase to `opacity-80` and remove the `bg-royal/10` background tint on the section (line 915) so the skyline reads cleanly. Also widen the strip slightly with extra vertical padding so the skyline silhouette has room to show.
 
-No changes needed to the existing homepage `/category/fun` link (line 607) — it'll start working again.
-
-## 2. Add space between "Browse All Categories" and "Featured Mock Tests"
-
-In `src/routes/index.tsx`, the `<AdSlot>` between the Categories section and Featured Mock Tests returns `null` while AdSense is disabled, so the two sections sit flush. Add `mt-16` to the Featured Mock Tests `<section>` (line 347) so it has breathing room regardless of whether the ad renders.
+Specifically:
+- Line 915: `bg-royal/10` → `bg-gradient-to-b from-sky-100 to-sky-50` (or similar light sky tone) so the skyline sits against sky, not lavender
+- Line 920: `opacity-30` → `opacity-80`
+- Line 922: `py-10` → `py-14 md:py-16`
 
 ## Files touched
-- `src/data/categories.ts` — add Fun category entry
-- `src/routes/index.tsx` — add `className="mt-16"` to Featured Mock Tests section
+- `src/assets/feat-driving.jpg`, `feat-flag.jpg`, `feat-headphones.jpg`, `feat-calculator.jpg`, `feat-tower-bridge.jpg`, `feat-road-signs.jpg` (regenerated)
+- `src/routes/index.tsx` (skyline visibility)
