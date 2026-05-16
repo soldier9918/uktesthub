@@ -909,13 +909,13 @@ function HomePage() {
       </section>
 
       {/* UK PRIDE STRIP */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-sky-100 to-sky-50 pb-40 md:pb-56 lg:pb-64">
+      <section className="relative overflow-hidden bg-gradient-to-b from-sky-100 to-sky-50">
         <img
           src={bandSkyline}
           alt="London skyline"
-          className="pointer-events-none absolute inset-x-0 bottom-0 w-full h-auto object-contain object-bottom select-none"
+          className="pointer-events-none absolute inset-x-0 bottom-0 z-0 w-full select-none object-contain object-bottom"
         />
-        <div className="relative mx-auto flex max-w-5xl items-center gap-5 px-4 py-14 md:px-6 md:py-16">
+        <div className="relative z-10 mx-auto flex max-w-5xl items-center gap-5 px-4 pb-32 pt-12 md:px-6 md:pb-44 md:pt-14 lg:pb-52">
           <span className="flex h-12 w-12 shrink-0 overflow-hidden rounded-full ring-2 ring-white">
             <UnionJack className="h-full w-full" />
           </span>
