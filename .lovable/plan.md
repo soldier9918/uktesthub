@@ -1,51 +1,30 @@
-# Quiz: extra navigation button + sounds
+# Add "Back to all mock tests" link while taking a quiz
 
-## 1. "Back to all mock tests" button on results screen
+Right now, once a user opens a mock test there's no way to return to the list of 45 mocks for that category without finishing the quiz or using the browser back button. The existing "All mock tests" button only appears on the results screen.
 
-In `src/components/QuizRunner.tsx` → `ResultsCtas` (lines 1166–1201), add a third button alongside **Retake test** and **Next mock test**.
+## Change
 
-- Label: **All mock tests**
-- Style: same outline look as Retake (neutral, not coral) so the coral "Next mock test" stays the primary CTA
-- Icon: `List` (lucide-react)
-- Link: `<Link to="/topic/$slug" params={{ slug: fallbackTopic }}>` — same destination as the existing fallback "Browse all mock tests", just always shown
-- Order: Retake · All mock tests · Next mock test
-- On the topic page the user lands on the existing list of mocks (the page that already shows all 45 mocks for that topic).
+Add a small back link rendered at the top of `QuizRunner`, above the question header row, visible the whole time the user is taking the test (both practice and exam modes, every question, plus the results screen).
 
-## 2. Quiz sound effects
+- Label: `← Back to all mock tests`
+- Style: subtle text link (muted foreground, hover coral), left-aligned, small — not a big CTA, so it doesn't compete with the quiz UI
+- Behaviour: standard `<Link>`, no confirm dialog (matches the user's request to simply be able to go back)
 
-Create `src/lib/quiz-sounds.ts` — a tiny WebAudio helper that synthesises short tones in-browser (no audio files needed, instant, zero network):
+## Destination
 
-- `click()` — soft 1 kHz blip, 40 ms
-- `correct()` — two-note rising chime (E5 → A5), ~180 ms
-- `wrong()` — low buzz (180 Hz square), ~200 ms
-- `next()` — neutral tick (600 Hz), 60 ms
-- `fanfare(passed: boolean)` — passed: 3-note arpeggio C5–E5–G5; failed: gentle two-note descent A4 → F4
-- Reads a `uk-test-hub:sound-muted` flag from `localStorage` and no-ops when muted
-- Lazy-creates the `AudioContext` on first user interaction (browser autoplay rules)
+`QuizRunner` is used by two route families, so the link target is computed per-quiz:
 
-### Wiring in `QuizRunner.tsx`
+1. **Standard mocks** (`/quiz/$slug` where slug ends in `-mock-N`):
+   Strip `-mock-N` and link to `/topic/$slug` — same logic already used by `ResultsCtas` (`parseMockNumber` + `fallbackTopic`).
 
-Practice mode (called "mock test" by the user — gives per-question feedback):
-- On answer select → `click()`
-- On reveal (when `revealed[current]` flips true) → `correct()` if right, `wrong()` if wrong
-- On results screen mount → `fanfare(passed)`
+2. **English language mocks** (`/english-language-tests/$test/$skill/$level/mock-test-$num`):
+   The topic slug isn't a `/topic/$slug` route. Add an optional `backTo` prop to `QuizRunner`. The English route file (`src/routes/english-language-tests.$test.$skill.$level.mock-test{-$num}.tsx`) passes `backTo={{ to: "/english-language-tests/$test/$skill/$level", params: { test, skill, level } }}`. When `backTo` is provided, `QuizRunner` uses it; otherwise it falls back to the `/topic/$slug` derivation.
 
-Exam mode:
-- On answer select → `click()`
-- On **Next/Finish** button click → `next()`
-- On results screen mount → `fanfare(passed)`
-
-### Mute toggle in the quiz header
-
-Add a small speaker icon button next to the existing timer / progress chips in the quiz header (around lines 320–340 where the mode chip and timer live):
-- Uses `Volume2` / `VolumeX` from lucide-react
-- Toggles `localStorage["uk-test-hub:sound-muted"]`
-- Hook: `useSoundMuted()` in `quiz-sounds.ts` returns `[muted, toggle]` with a `useSyncExternalStore` so the icon updates instantly
-- Preference persists across sessions and across all quizzes
+3. **Non-mock quizzes** (rare — the slug has no `-mock-N`): hide the link (nothing meaningful to go back to other than the homepage).
 
 ## Files touched
 
-- `src/components/QuizRunner.tsx` — add third button, wire sound calls, add mute toggle in header
-- `src/lib/quiz-sounds.ts` — new, ~80 lines
+- `src/components/QuizRunner.tsx` — add optional `backTo` prop on the component, render the back link at the top of the returned JSX (and keep showing it on the results screen header area). Reuse `parseMockNumber` for the default.
+- `src/routes/english-language-tests.$test.$skill.$level.mock-test{-$num}.tsx` — pass `backTo` into `<QuizRunner>`.
 
-No new dependencies. No backend changes.
+No changes to `/quiz/$slug` route file needed — the default derivation handles it. No new dependencies, no backend changes, no styling token changes.
