@@ -222,9 +222,9 @@ function QuizContent({ quiz }: { quiz: Quiz }) {
           <Link
             to="/topic/$slug"
             params={{ slug: quiz.topic }}
-            className="mb-3 inline-flex items-center gap-1.5 text-sm font-semibold text-muted-foreground hover:text-coral"
+            className="mb-4 inline-flex items-center gap-2.5 rounded-none border-2 border-coral/30 bg-card px-5 py-2.5 text-sm font-bold text-foreground shadow-elevated transition-all hover:-translate-y-0.5 hover:border-coral hover:text-coral md:px-6 md:py-3 md:text-base"
           >
-            <ArrowLeft className="h-4 w-4" />
+            <ArrowLeft className="h-5 w-5" />
             Back to all mock tests
           </Link>
         )}
