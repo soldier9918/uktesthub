@@ -916,7 +916,7 @@ function HomePage() {
           className="pointer-events-none absolute inset-x-0 bottom-0 z-0 w-full select-none object-contain object-bottom"
         />
         <div className="relative z-10 mx-auto max-w-5xl px-4 pb-40 pt-10 sm:pb-48 md:px-6 md:pb-56 md:pt-14 lg:pb-64">
-          <div className="flex items-center gap-4 rounded-2xl bg-white/80 p-4 shadow-sm ring-1 ring-white/60 backdrop-blur-sm sm:gap-5 sm:p-5">
+          <div className="flex items-center gap-4 sm:gap-5">
             <span className="flex h-11 w-11 shrink-0 overflow-hidden rounded-full ring-2 ring-white sm:h-12 sm:w-12">
               <UnionJack className="h-full w-full" />
             </span>
