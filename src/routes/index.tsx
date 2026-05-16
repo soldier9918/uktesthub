@@ -245,7 +245,7 @@ function HomePage() {
       </section>
 
       <main className="mx-auto max-w-7xl px-4 md:px-6">
-        <AdSlot size="leaderboard" className="mt-10" />
+        <AdSlot size="leaderboard" />
 
         {/* POPULAR CATEGORIES */}
         <section id="popular-categories" className="mt-16 scroll-mt-24">
@@ -338,16 +338,10 @@ function HomePage() {
           </div>
         </section>
 
-        {/* Reserved ad space between Popular Categories and Featured Mock Tests */}
-        <div className="my-14" aria-hidden="true">
-          <div className="mx-auto max-w-5xl min-h-[110px] md:min-h-[130px]">
-            <AdSlot
-              size="leaderboard"
-              slotId="home-featured-top"
-              className="w-full"
-            />
-          </div>
-        </div>
+        <AdSlot
+          size="leaderboard"
+          slotId="home-featured-top"
+        />
 
         {/* FEATURED MOCK TESTS */}
         <section>
@@ -797,10 +791,8 @@ function HomePage() {
           </div>
         </section>
 
-        {/* Reserved hidden AdSense slot before "How to Pass UK Tests First Time" */}
-        <div className="mt-14 min-h-[110px]" aria-hidden="true">
-          <AdSlot size="leaderboard" />
-        </div>
+        {/* Hidden AdSense slot before "How to Pass UK Tests First Time" */}
+        <AdSlot size="leaderboard" />
 
         {/* HOW TO PASS UK TESTS FIRST TIME */}
         <section className="mt-16">
@@ -840,7 +832,7 @@ function HomePage() {
         </section>
 
         {/* Reserved ad slot before Latest Study Guides */}
-        <AdSlot size="leaderboard" className="mt-14" />
+        <AdSlot size="leaderboard" />
 
         {/* LATEST STUDY GUIDES */}
         <section className="mt-20">
