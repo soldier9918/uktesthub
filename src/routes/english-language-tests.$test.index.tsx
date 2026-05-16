@@ -11,6 +11,7 @@ import {
   type LucideIcon,
 } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
+import { BackToAllTests } from "@/components/BackToAllTests";
 import { SiteFooter } from "@/components/SiteFooter";
 import {
   getTest,
