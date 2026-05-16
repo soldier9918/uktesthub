@@ -9,7 +9,7 @@ import { BookmarkButton } from "@/components/BookmarkButton";
 import { CategoryIcon, accentClasses } from "@/components/CategoryIcon";
 import { findTopic } from "@/data/categories";
 import { listMockSlots, QUESTIONS_PER_MOCK } from "@/data/mocks";
-import { Home, ChevronRight } from "lucide-react";
+import { Home, ChevronRight, ArrowRight, Clock } from "lucide-react";
 import { IndependentDisclaimer } from "@/components/IndependentDisclaimer";
 import { breadcrumbSchema } from "@/lib/seo";
 import { LEGACY_SLUG_REDIRECTS } from "@/data/slug-redirects";
