@@ -8,7 +8,11 @@ import {
   ChevronRight,
   RotateCcw,
   ArrowRight,
+  List,
+  Volume2,
+  VolumeX,
 } from "lucide-react";
+import { sounds, useSoundMuted } from "@/lib/quiz-sounds";
 import type {
   Quiz,
   Question,
@@ -230,6 +234,7 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
 
   useEffect(() => {
     if (!finished) return;
+    sounds.fanfare(percent >= quiz.passMark);
     void trackEvent({
       event_type: "quiz_complete",
       topic_slug: (quiz as { topicSlug?: string }).topicSlug ?? null,
@@ -288,6 +293,7 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
     const next = [...answers];
     next[current] = a;
     setAnswers(next);
+    if (mode === "exam") sounds.click();
   };
 
   const reveal = () => {
@@ -295,9 +301,12 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
     const r = [...revealed];
     r[current] = true;
     setRevealed(r);
+    if (isCorrect(q, answers[current] ?? null)) sounds.correct();
+    else sounds.wrong();
   };
 
   const goNext = () => {
+    if (mode === "exam") sounds.next();
     if (current < quiz.questions.length - 1) setCurrent((c) => c + 1);
     else setFinished(true);
   };
@@ -322,6 +331,7 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
           {getTopicDisplayTitle((quiz as { topicSlug?: string }).topicSlug ?? quiz.topic)}
         </div>
         <div className="flex items-center gap-3">
+          <MuteToggle />
           <ReportQuestionButton
             questionId={String(q.id)}
             topicSlug={(quiz as { topicSlug?: string }).topicSlug ?? quiz.slug}
@@ -1179,7 +1189,14 @@ function ResultsCtas({ quiz, onRetry }: { quiz: Quiz; onRetry: () => void }) {
       >
         <RotateCcw className="h-4 w-4" /> Retake test
       </button>
-      {nextSlug ? (
+      <Link
+        to="/topic/$slug"
+        params={{ slug: fallbackTopic }}
+        className="inline-flex items-center gap-2 rounded-xl border border-border bg-background px-5 py-2.5 text-sm font-semibold hover:bg-muted"
+      >
+        <List className="h-4 w-4" /> All mock tests
+      </Link>
+      {nextSlug && (
         <Link
           to="/quiz/$slug"
           params={{ slug: nextSlug }}
@@ -1187,16 +1204,23 @@ function ResultsCtas({ quiz, onRetry }: { quiz: Quiz; onRetry: () => void }) {
         >
           Next mock test (Mock {nextNum}) <ArrowRight className="h-4 w-4" />
         </Link>
-      ) : (
-        <Link
-          to="/topic/$slug"
-          params={{ slug: fallbackTopic }}
-          className="inline-flex items-center gap-2 rounded-xl bg-gradient-coral px-5 py-2.5 text-sm font-semibold text-coral-foreground shadow-coral"
-        >
-          Browse all mock tests <ArrowRight className="h-4 w-4" />
-        </Link>
       )}
     </div>
+  );
+}
+
+function MuteToggle() {
+  const [muted, toggle] = useSoundMuted();
+  return (
+    <button
+      type="button"
+      onClick={toggle}
+      aria-label={muted ? "Unmute sounds" : "Mute sounds"}
+      title={muted ? "Unmute sounds" : "Mute sounds"}
+      className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-border bg-background text-muted-foreground hover:bg-muted hover:text-foreground"
+    >
+      {muted ? <VolumeX className="h-4 w-4" /> : <Volume2 className="h-4 w-4" />}
+    </button>
   );
 }
 

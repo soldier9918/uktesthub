@@ -1,27 +1,51 @@
-## 1. Replace Featured Mock Test images with premium-quality photography
+# Quiz: extra navigation button + sounds
 
-The six current `feat-*.jpg` images look flat/stock. Regenerate each with `imagegen` at premium quality (4:3 aspect, 1024×768), keeping the same file paths so no imports change:
+## 1. "Back to all mock tests" button on results screen
 
-| File | New prompt |
-|---|---|
-| `src/assets/feat-driving.jpg` | Cinematic dusk shot of a UK motorway with red brake-light trails, soft golden sky, shallow depth of field, premium editorial photography |
-| `src/assets/feat-flag.jpg` | Crisp Union Jack flag waving against a clear blue British sky, fine fabric detail, bright natural light, premium stock photography |
-| `src/assets/feat-headphones.jpg` | Premium over-ear black studio headphones on a warm neutral linen surface, soft window light, minimalist editorial product photography |
-| `src/assets/feat-calculator.jpg` | Sleek modern calculator beside a sharpened pencil and open notepad on a clean white desk, top-down flat lay, soft natural light, premium editorial |
-| `src/assets/feat-tower-bridge.jpg` | Tower Bridge London at golden-hour sunset reflecting on the Thames, warm cinematic light, sharp architectural detail, premium travel photography |
-| `src/assets/feat-road-signs.jpg` | Cluster of real UK road signs (30mph, warning triangles, directional arrows) against a clear blue sky, sharp detail, premium documentary photography |
+In `src/components/QuizRunner.tsx` → `ResultsCtas` (lines 1166–1201), add a third button alongside **Retake test** and **Next mock test**.
 
-No code changes — just asset replacement. Each at quality "standard" (premium realistic photography) — premium tier only if needed for legibility.
+- Label: **All mock tests**
+- Style: same outline look as Retake (neutral, not coral) so the coral "Next mock test" stays the primary CTA
+- Icon: `List` (lucide-react)
+- Link: `<Link to="/topic/$slug" params={{ slug: fallbackTopic }}>` — same destination as the existing fallback "Browse all mock tests", just always shown
+- Order: Retake · All mock tests · Next mock test
+- On the topic page the user lands on the existing list of mocks (the page that already shows all 45 mocks for that topic).
 
-## 2. Make London skyline banner visible in "Proudly helping learners…" strip
+## 2. Quiz sound effects
 
-In `src/routes/index.tsx` line 920, the skyline `<img>` is set to `opacity-30`, making it nearly invisible. Increase to `opacity-80` and remove the `bg-royal/10` background tint on the section (line 915) so the skyline reads cleanly. Also widen the strip slightly with extra vertical padding so the skyline silhouette has room to show.
+Create `src/lib/quiz-sounds.ts` — a tiny WebAudio helper that synthesises short tones in-browser (no audio files needed, instant, zero network):
 
-Specifically:
-- Line 915: `bg-royal/10` → `bg-gradient-to-b from-sky-100 to-sky-50` (or similar light sky tone) so the skyline sits against sky, not lavender
-- Line 920: `opacity-30` → `opacity-80`
-- Line 922: `py-10` → `py-14 md:py-16`
+- `click()` — soft 1 kHz blip, 40 ms
+- `correct()` — two-note rising chime (E5 → A5), ~180 ms
+- `wrong()` — low buzz (180 Hz square), ~200 ms
+- `next()` — neutral tick (600 Hz), 60 ms
+- `fanfare(passed: boolean)` — passed: 3-note arpeggio C5–E5–G5; failed: gentle two-note descent A4 → F4
+- Reads a `uk-test-hub:sound-muted` flag from `localStorage` and no-ops when muted
+- Lazy-creates the `AudioContext` on first user interaction (browser autoplay rules)
+
+### Wiring in `QuizRunner.tsx`
+
+Practice mode (called "mock test" by the user — gives per-question feedback):
+- On answer select → `click()`
+- On reveal (when `revealed[current]` flips true) → `correct()` if right, `wrong()` if wrong
+- On results screen mount → `fanfare(passed)`
+
+Exam mode:
+- On answer select → `click()`
+- On **Next/Finish** button click → `next()`
+- On results screen mount → `fanfare(passed)`
+
+### Mute toggle in the quiz header
+
+Add a small speaker icon button next to the existing timer / progress chips in the quiz header (around lines 320–340 where the mode chip and timer live):
+- Uses `Volume2` / `VolumeX` from lucide-react
+- Toggles `localStorage["uk-test-hub:sound-muted"]`
+- Hook: `useSoundMuted()` in `quiz-sounds.ts` returns `[muted, toggle]` with a `useSyncExternalStore` so the icon updates instantly
+- Preference persists across sessions and across all quizzes
 
 ## Files touched
-- `src/assets/feat-driving.jpg`, `feat-flag.jpg`, `feat-headphones.jpg`, `feat-calculator.jpg`, `feat-tower-bridge.jpg`, `feat-road-signs.jpg` (regenerated)
-- `src/routes/index.tsx` (skyline visibility)
+
+- `src/components/QuizRunner.tsx` — add third button, wire sound calls, add mute toggle in header
+- `src/lib/quiz-sounds.ts` — new, ~80 lines
+
+No new dependencies. No backend changes.
