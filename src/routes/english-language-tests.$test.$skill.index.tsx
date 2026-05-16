@@ -1,6 +1,7 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ArrowRight, ChevronRight, Home } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
+import { BackToAllTests } from "@/components/BackToAllTests";
 import { SiteFooter } from "@/components/SiteFooter";
 import {
   getSkill,
