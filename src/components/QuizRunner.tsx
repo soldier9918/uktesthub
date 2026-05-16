@@ -1189,7 +1189,14 @@ function ResultsCtas({ quiz, onRetry }: { quiz: Quiz; onRetry: () => void }) {
       >
         <RotateCcw className="h-4 w-4" /> Retake test
       </button>
-      {nextSlug ? (
+      <Link
+        to="/topic/$slug"
+        params={{ slug: fallbackTopic }}
+        className="inline-flex items-center gap-2 rounded-xl border border-border bg-background px-5 py-2.5 text-sm font-semibold hover:bg-muted"
+      >
+        <List className="h-4 w-4" /> All mock tests
+      </Link>
+      {nextSlug && (
         <Link
           to="/quiz/$slug"
           params={{ slug: nextSlug }}
@@ -1197,16 +1204,23 @@ function ResultsCtas({ quiz, onRetry }: { quiz: Quiz; onRetry: () => void }) {
         >
           Next mock test (Mock {nextNum}) <ArrowRight className="h-4 w-4" />
         </Link>
-      ) : (
-        <Link
-          to="/topic/$slug"
-          params={{ slug: fallbackTopic }}
-          className="inline-flex items-center gap-2 rounded-xl bg-gradient-coral px-5 py-2.5 text-sm font-semibold text-coral-foreground shadow-coral"
-        >
-          Browse all mock tests <ArrowRight className="h-4 w-4" />
-        </Link>
       )}
     </div>
+  );
+}
+
+function MuteToggle() {
+  const [muted, toggle] = useSoundMuted();
+  return (
+    <button
+      type="button"
+      onClick={toggle}
+      aria-label={muted ? "Unmute sounds" : "Mute sounds"}
+      title={muted ? "Unmute sounds" : "Mute sounds"}
+      className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-border bg-background text-muted-foreground hover:bg-muted hover:text-foreground"
+    >
+      {muted ? <VolumeX className="h-4 w-4" /> : <Volume2 className="h-4 w-4" />}
+    </button>
   );
 }
 
