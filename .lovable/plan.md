@@ -1,43 +1,39 @@
-## What I checked
+## 1. Fix broken links in `/blog/uk-general-knowledge-quiz-guide`
 
-### 1. Homepage "Popular Mock Tests" panel (`src/routes/index.tsx` lines 207–221)
+The blog post links to:
+- `/category/fun` (C slug="fun")
+- `/topic/daily` (T slug="daily")
+- `/topic/how-british` (T slug="how-british")
 
-Current slugs, each verified against `src/data/categories.ts` and the English tests list:
+The `fun` category was previously removed from `src/data/categories.ts`, but the quizzes (`general-knowledge-daily`, `how-british-are-you`) in `src/data/quizzes.ts` still reference `category: "fun"` with topics `daily` and `how-british`. Without the category entry, `findTopic()` returns nothing and `/topic/daily`, `/topic/how-british`, and `/category/fun` all 404.
 
-| Link label | Slug | Route resolved | Status |
-|---|---|---|---|
-| SERU Tests | `seru` | `/topic/seru` | ✅ |
-| Driving Theory Tests | `driving-theory` | `/topic/driving-theory` | ✅ |
-| Life in the UK Tests | `life-in-the-uk` | `/topic/life-in-the-uk` | ✅ |
-| IELTS Tests | `ielts` | redirects to `/english-language-tests/ielts` | ✅ |
-| CSCS Tests | `cscs-operative` | `/topic/cscs-operative` | ✅ |
-| NMC CBT Tests | `nmc-cbt` | `/topic/nmc-cbt` | ✅ (was broken as `nmc`, fixed last turn) |
-| SIA Tests | `sia-door-supervisor` | `/topic/sia-door-supervisor` | ✅ |
-| ESOL Tests | `esol` | redirects to `/english-language-tests/esol` | ✅ |
-| Food Hygiene Tests | `food-hygiene` | `/topic/food-hygiene` | ✅ |
-| First Aid Tests | `first-aid` | `/topic/first-aid` | ✅ |
+**Fix:** Re-add a `fun` category to `src/data/categories.ts`:
 
-All 10 popular-test links now resolve. No 404s remain in that list.
+```ts
+{
+  slug: "fun",
+  title: "Fun & Viral Quizzes",
+  short: "British general knowledge & light-hearted trivia",
+  description:
+    "Light-hearted British trivia and general knowledge quizzes — perfect for pub quiz prep or a quick brain break.",
+  icon: "Sparkles",
+  accent: "coral",
+  heroImage: heroCitizenship, // reuse existing asset, no new image needed
+  topics: [
+    { slug: "daily", title: "General Knowledge Daily" },
+    { slug: "how-british", title: "How British Are You?" },
+  ],
+},
+```
 
-### 2. Sitemap (`src/routes/sitemap[.]xml.ts`)
+This automatically restores `/category/fun`, `/topic/daily`, `/topic/how-british`, and the sitemap entries (sitemap auto-generates from `categories`).
 
-The sitemap is already generated dynamically from the same data sources the routes use, so new URLs are picked up automatically:
+No changes needed to the existing homepage `/category/fun` link (line 607) — it'll start working again.
 
-- `categoryEntries` — every category in `categories.ts` → `/category/{slug}`
-- `topicEntries` — every topic in `categories.ts` → `/topic/{slug}` + `/guide/{slug}`
-- `quizEntries` — every mock in `mock-index.json` → `/quiz/{topic}-mock-{n}`
-- `englishEntries` — every English test, skill, and level triple
-- `englishMockEntries` — all 45 mocks per English level triple
-- `blogEntries` — every post in `blogPosts`
-- `seoLandings` — all bespoke SEO landing routes
-- `staticEntries` — home, all-tests, blog index, about, contact, faq, help, exam-updates, sitemap, legal pages
+## 2. Add space between "Browse All Categories" and "Featured Mock Tests"
 
-No URL is missing. The NMC fix from last turn is already in the sitemap via `topicEntries` (`/topic/nmc-cbt`).
+In `src/routes/index.tsx`, the `<AdSlot>` between the Categories section and Featured Mock Tests returns `null` while AdSense is disabled, so the two sections sit flush. Add `mt-16` to the Featured Mock Tests `<section>` (line 347) so it has breathing room regardless of whether the ad renders.
 
-## Proposed action
-
-**No code changes needed.** The earlier NMC fix resolved the only broken link, and the sitemap already enumerates every topic, category, English test, mock, blog post, and SEO landing automatically from data.
-
-If you'd like, I can additionally:
-- (a) add a small dev-only assertion that fails the build if any hard-coded slug in the homepage panel doesn't exist in `categories.ts` / English tests (prevents future 404s of this kind), or
-- (b) leave it as-is.
+## Files touched
+- `src/data/categories.ts` — add Fun category entry
+- `src/routes/index.tsx` — add `className="mt-16"` to Featured Mock Tests section
