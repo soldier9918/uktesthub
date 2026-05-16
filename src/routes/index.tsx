@@ -418,7 +418,7 @@ function HomePage() {
           </div>
           <div className="mt-10 grid gap-10 lg:grid-cols-[1fr_320px] lg:items-start">
             <div>
-              <div className="mt-8 gap-x-8 sm:columns-2 [column-fill:_balance]">
+              <div className="gap-x-8 sm:columns-2 [column-fill:_balance]">
                 {categories.map((c) => (
                   <div key={c.slug} className="mb-8 break-inside-avoid">
                     <h3 className="font-display text-sm font-semibold uppercase tracking-wider text-coral">
