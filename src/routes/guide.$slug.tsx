@@ -36,6 +36,8 @@ function renderInlineLinks(text: string) {
 
 export const Route = createFileRoute("/guide/$slug")({
   loader: ({ params }) => {
+    const canonical = LEGACY_SLUG_REDIRECTS[params.slug];
+    if (canonical) throw redirect({ to: "/guide/$slug", params: { slug: canonical } });
     const found = findTopic(params.slug);
     if (!found) throw notFound();
     return { category: found.category, topic: found.topic };
