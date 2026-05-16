@@ -386,7 +386,6 @@ export const categories: Category[] = [
       { slug: "adr-tanks-practice", title: "ADR Tanks Practice" },
       { slug: "adr-packages-practice", title: "ADR Packages Practice" },
       { slug: "forklift-flt-theory-test", title: "Forklift / FLT Theory Test Practice" },
-      { slug: "transport-manager-cpc", title: "Transport Manager CPC Practice" },
       { slug: "transport-manager-cpc-road-haulage", title: "Transport Manager CPC Road Haulage Practice" },
       { slug: "transport-manager-cpc-passenger-transport", title: "Transport Manager CPC Passenger Transport" },
       { slug: "d1-minibus-theory-test", title: "D1 Minibus Theory Test Practice" },
