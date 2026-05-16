@@ -21,7 +21,7 @@ import type {
   HotSpotQuestion,
   DragDropBlanksQuestion,
 } from "@/data/quizzes";
-import { getCategory } from "@/data/categories";
+import { getCategory, getTopicDisplayTitle } from "@/data/categories";
 import { TOTAL_MOCKS_PER_TOPIC } from "@/data/mocks";
 import { AdSlot } from "./AdSlot";
 import { RoadSign } from "./RoadSign";
