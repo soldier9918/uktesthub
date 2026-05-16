@@ -338,16 +338,10 @@ function HomePage() {
           </div>
         </section>
 
-        {/* Reserved ad space between Popular Categories and Featured Mock Tests */}
-        <div className="my-14" aria-hidden="true">
-          <div className="mx-auto max-w-5xl min-h-[110px] md:min-h-[130px]">
-            <AdSlot
-              size="leaderboard"
-              slotId="home-featured-top"
-              className="w-full"
-            />
-          </div>
-        </div>
+        <AdSlot
+          size="leaderboard"
+          slotId="home-featured-top"
+        />
 
         {/* FEATURED MOCK TESTS */}
         <section>
