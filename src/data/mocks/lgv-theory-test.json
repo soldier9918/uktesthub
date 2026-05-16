@@ -1,0 +1,321 @@
+{
+  "version": 2,
+  "topic": "lgv-theory-test",
+  "title": "LGV Theory Test",
+  "category": "hgv-logistics",
+  "bank": [
+    {
+      "question": "On a motorway, where would you expect to find red reflective studs?",
+      "type": "multiple_choice",
+      "explanation": "Red reflective studs are placed on the left-hand side of the carriageway to mark the edge of the road next to the hard shoulder or verge.",
+      "options": [
+        "Between the lanes of a motorway",
+        "Between the hard shoulder and the slip road",
+        "Between the edge of the carriageway and the left-hand verge",
+        "Between the edge of the carriageway and the central reservation"
+      ],
+      "correctAnswer": 2,
+      "id": "ltt-mc-0001"
+    },
+    {
+      "question": "What is the purpose of AdBlue in a modern vehicle’s exhaust system?",
+      "type": "multiple_choice",
+      "explanation": "AdBlue is a exhaust fluid used in modern diesel engines with Selective Catalytic Reduction (SCR) to reduce harmful nitrogen oxide emissions.",
+      "options": [
+        "To reduce exhaust emissions",
+        "To improve fuel consumption",
+        "To lubricate the gearbox",
+        "To cool the brake drums"
+      ],
+      "correctAnswer": 0,
+      "id": "ltt-mc-0002"
+    },
+    {
+      "options": [
+        "Turn on the air conditioning to cool the cab",
+        "Switch off the engine and engage the parking brake",
+        "Check the fuel level to see if there is a leak",
+        "Keep the engine running to maintain air pressure for the brakes"
+      ],
+      "explanation": "Stopping the engine prevents the intake of hot air or fuel vapours, reduces the heat source, and ensures the vehicle is secured.",
+      "correctAnswer": 1,
+      "question": "If your vehicle catches fire while driving through a tunnel, what should you do first if you can't drive it out?",
+      "type": "multiple_choice",
+      "id": "ltt-mc-0003"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "According to EU rules, what is the minimum duration of a break that must be taken after 4.5 hours of driving?",
+      "correctAnswer": 3,
+      "options": [
+        "15 minutes",
+        "30 minutes",
+        "40 minutes",
+        "45 minutes"
+      ],
+      "explanation": "Under EU Drivers’ Hours rules, after a driving period of 4.5 hours, a driver must take an uninterrupted break of at least 45 minutes.",
+      "id": "ltt-mc-0004"
+    },
+    {
+      "correctAnswer": 2,
+      "explanation": "High-sided vehicles are particularly vulnerable to 'buffeting' from side winds when passing gaps in hedges or crossing open bridges.",
+      "options": [
+        "Passing under a low bridge",
+        "Driving through a long tunnel",
+        "Passing a gap in a hedge on a windy day",
+        "Driving on a steep downhill gradient"
+      ],
+      "question": "When is your vehicle most likely to be affected by side winds?",
+      "type": "multiple_choice",
+      "id": "ltt-mc-0005"
+    },
+    {
+      "explanation": "Most modern lorries use air brakes. If the air pressure warning light comes on, it means there isn't enough pressure to operate the brakes safely.",
+      "options": [
+        "Stop immediately and safely as the brakes may fail",
+        "Keep driving but avoid using the footbrake",
+        "Continue to the next service area to top up the air reservoir",
+        "Pump the brake pedal quickly to build up pressure"
+      ],
+      "correctAnswer": 0,
+      "type": "multiple_choice",
+      "question": "What should you do if the air pressure warning device activates while you are driving?",
+      "id": "ltt-mc-0006"
+    },
+    {
+      "type": "multiple_choice",
+      "question": "What is a practical way to prevent fuel theft and spillages?",
+      "options": [
+        "Leave the fuel cap slightly loose to allow for expansion",
+        "Ensure the fuel cap is fitted with a secure, locking device and a good seal",
+        "Never fill the tank more than half full",
+        "Always park in unlit areas when the tank is full"
+      ],
+      "explanation": "To prevent fuel theft and spillages (which are a hazard to motorcyclists), you should ensure the fuel cap is securely locked and the seal is in good condition.",
+      "correctAnswer": 1,
+      "id": "ltt-mc-0007"
+    },
+    {
+      "explanation": "Standard road maps are often insufficient for LGV drivers; specialized maps show restrictions like low bridges and weight limits.",
+      "options": [
+        "The fuel efficiency of different routes",
+        "The locations of all roadside cafes",
+        "The history of the local landmarks",
+        "Bridge heights and weight-restricted routes"
+      ],
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "question": "When planning a route for a large goods vehicle, what information is most important to check on a specialist map?",
+      "id": "ltt-mc-0008"
+    },
+    {
+      "correctAnswer": 2,
+      "options": [
+        "To stop the vehicle from rolling backwards on hills",
+        "To prevent the engine from over-revving in low gears",
+        "To limit the maximum speed of the vehicle to a set level",
+        "To ensure the vehicle stays in the correct lane"
+      ],
+      "explanation": "A 'speed limiter' is a device designed to cap the maximum speed of a vehicle, primarily to improve road safety and fuel economy.",
+      "type": "multiple_choice",
+      "question": "What is the main function of a speed limiter on an LGV?",
+      "id": "ltt-mc-0009"
+    },
+    {
+      "correctAnswer": 0,
+      "explanation": "Overloading a vehicle puts excessive strain on tires and suspension, making it harder to steer and increasing the risk of a blowout.",
+      "options": [
+        "It makes the steering feel heavier and less responsive",
+        "It makes the vehicle accelerate faster up hills",
+        "It reduces the stopping distance in an emergency",
+        "It makes the vehicle more stable in high winds"
+      ],
+      "type": "multiple_choice",
+      "question": "How does overloading your vehicle affect its handling?",
+      "id": "ltt-mc-0010"
+    },
+    {
+      "correctAnswer": 1,
+      "options": [
+        "Once a week to check the oil levels",
+        "Every day before the vehicle is used for the first time",
+        "Only when the vehicle is being serviced by a mechanic",
+        "Whenever the driver changes their route"
+      ],
+      "explanation": "The 'Daily Walkaround Check' is a legal requirement to ensure the vehicle is in a roadworthy condition before it is used on a public road.",
+      "question": "When should a driver carry out a walkaround check on their vehicle?",
+      "type": "multiple_choice",
+      "id": "ltt-mc-0011"
+    },
+    {
+      "correctAnswer": 3,
+      "explanation": "Under-inflated tyres have more rolling resistance, which requires the engine to work harder and consumes more fuel.",
+      "options": [
+        "It decreases the risk of aquaplaning",
+        "It makes the steering feel lighter",
+        "It improves the vehicle's braking efficiency",
+        "It increases fuel consumption"
+      ],
+      "question": "What is a likely result of driving with under-inflated tyres?",
+      "type": "multiple_choice",
+      "id": "ltt-mc-0012"
+    },
+    {
+      "options": [
+        "The engine oil viscosity level",
+        "The security of the wheel nuts",
+        "The internal air pressure of the spare tyre",
+        "The operation of the gearbox synchromesh"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "explanation": "Checking the wheel nuts for security is a critical safety task that MUST be performed by the driver during a daily walkaround check.",
+      "question": "Other than checking for damage, what must a driver check regarding the wheels during a daily walkaround?",
+      "id": "ltt-mc-0013"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "A long load",
+        "A wider-than-average trailer",
+        "A vehicle carrying livestock",
+        "A vehicle transporting hazardous chemicals"
+      ],
+      "question": "What is being indicated if a vehicle is displaying red and white 'end-of-line' marker boards?",
+      "explanation": "End-of-line marks (often red and white) are used specifically to indicate the overhanging ends of a long load for visibility.",
+      "correctAnswer": 0,
+      "id": "ltt-mc-0014"
+    },
+    {
+      "options": [
+        "The rear wheels will track outside the front wheels",
+        "The front wheels will lose traction",
+        "The rear wheels will 'cut in' and follow a shorter path",
+        "The vehicle will automatically tilt to the right"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "question": "When turning a long articulated vehicle to the left, what should the driver be most aware of regarding the rear wheels?",
+      "explanation": "When turning left, the rear wheels of a long vehicle will 'cut in' and follow a tighter path than the front wheels, potentially hitting the kerb.",
+      "id": "ltt-mc-0015"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "To increase the top speed of the vehicle",
+        "To reduce the noise made by the engine",
+        "To improve the fuel consumption by 50%",
+        "To adjust the height of the vehicle for loading or unloading"
+      ],
+      "question": "What is a primary advantage of having air suspension on a large goods vehicle?",
+      "explanation": "Air suspension allows the driver to lower the rear of the vehicle, making it easier and safer to load or unload from a shipping bay or platform.",
+      "correctAnswer": 3,
+      "id": "ltt-mc-0016"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "The road is closed ahead",
+        "National Speed Limit applies",
+        "No overtaking is allowed",
+        "You are entering a pedestrian zone"
+      ],
+      "question": "What does a circular grey sign with a diagonal black stripe through it mean for an LGV driver?",
+      "explanation": "An'End of Restriction' sign (grey circle with a diagonal black stripe) indicates that the specific local speed limit has ended and the National Speed Limit now applies.",
+      "correctAnswer": 1,
+      "id": "ltt-mc-0017"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "9 hours",
+        "11 hours",
+        "13 hours",
+        "15 hours"
+      ],
+      "question": "According to EU Drivers' Hours rules, what is the standard daily driving limit?",
+      "explanation": "A driver must not drive for more than 9 hours in a day, though this can be increased to 10 hours twice in any fixed week.",
+      "correctAnswer": 0,
+      "id": "ltt-mc-0018"
+    },
+    {
+      "options": [
+        "When the brake pads are brand new",
+        "When the air pressure is too high",
+        "When the brakes overheat on a long descent",
+        "When the vehicle is empty and light"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 2,
+      "explanation": "Brake fade occurs when brakes overheat, leading to a loss of effectiveness. This is common on long steep descents if the driver doesn't use an endurance brake.",
+      "question": "What is the most likely cause of 'brake fade'?",
+      "id": "ltt-mc-0019"
+    },
+    {
+      "question": "How often must a digital tachograph driver card be renewed?",
+      "explanation": "A 'Driver Card' for a digital tachograph is valid for 5 years before it must be renewed.",
+      "correctAnswer": 3,
+      "type": "multiple_choice",
+      "options": [
+        "1 year",
+        "3 years",
+        "10 years",
+        "5 years"
+      ],
+      "id": "ltt-mc-0020"
+    },
+    {
+      "options": [
+        "If you need to check your route on a map",
+        "Only in an emergency or if told to by the police",
+        "If you feel tired and need a 45-minute break",
+        "To answer an important phone call"
+      ],
+      "type": "multiple_choice",
+      "correctAnswer": 1,
+      "explanation": "Stopping on the hard shoulder should only be done in a genuine emergency; for rest or mobile phone use, use a service station or lay-by.",
+      "question": "Under what circumstances are you allowed to stop on the hard shoulder of a motorway?",
+      "id": "ltt-mc-0021"
+    },
+    {
+      "correctAnswer": 0,
+      "explanation": "A high centre of gravity makes the vehicle less stable and significantly increases the risk of it tipping over when taking corners at speed.",
+      "question": "How does having a load with a high centre of gravity affect the handling of an LGV?",
+      "options": [
+        "It increases the risk of the vehicle overturning on corners",
+        "It improves the vehicle's braking efficiency",
+        "It makes the vehicle more resistant to side winds",
+        "It reduces the wear on the front tyres"
+      ],
+      "type": "multiple_choice",
+      "id": "ltt-mc-0022"
+    },
+    {
+      "correctAnswer": 2,
+      "question": "What do green reflective studs indicate on a motorway?",
+      "explanation": "Green reflective studs are used on motorways to signify the entrance or exit of slip roads or junctions.",
+      "options": [
+        "The edge of the motorway on the left",
+        "The boundary between the hard shoulder and the carriageway village",
+        "The entrance or exit of slip roads at junctions",
+        "The central reservation edge on the right"
+      ],
+      "type": "multiple_choice",
+      "id": "ltt-mc-0023"
+    },
+    {
+      "type": "multiple_choice",
+      "options": [
+        "The current day and the previous 28 days",
+        "The current day and the previous 7 days",
+        "The last 14 days only",
+        "The entire current month only"
+      ],
+      "question": "When requested by a police officer or DVSA examiner, how many days of tachograph records must a driver produce?",
+      "explanation": "Drivers must keep their tachograph records (analogue or digital) for the current day and the previous 28 calendar days to show to enforcement officers.",
+      "correctAnswer": 0,
+      "id": "ltt-mc-0024"
+    }
+  ],
+  "mocks": []
+}
