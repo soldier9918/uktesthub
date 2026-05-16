@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { createFileRoute, Link, notFound, redirect } from "@tanstack/react-router";
+import { ArrowLeft } from "lucide-react";
 import { LEGACY_SLUG_REDIRECTS } from "@/data/slug-redirects";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
