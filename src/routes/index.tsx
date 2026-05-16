@@ -481,313 +481,304 @@ function HomePage() {
 
         {/* WHAT IS UK TEST HUB */}
         <section className="mt-20">
-          <div className="grid gap-10 lg:grid-cols-[1.4fr_1fr] lg:items-start">
-            <div>
-              <span className="inline-flex items-center gap-2 rounded-full bg-coral/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.14em] text-coral">
-                About the platform
-              </span>
-              <h2 className="mt-4 border-l-4 border-coral pl-4 font-display text-3xl font-bold leading-tight text-foreground md:text-4xl">
-                What is UK Test Hub?
-              </h2>
-              <p className="mt-5 text-base leading-relaxed text-muted-foreground md:text-lg">
-                UK Test Hub is a free, independent practice platform built to
-                help learners across Britain prepare for UK tests and
-                assessments — no accounts, no paywalls, no surprises.
+          <div className="rounded-3xl border border-border bg-card p-6 shadow-soft md:p-10 lg:p-12">
+            <span className="inline-flex items-center gap-2 rounded-full bg-coral/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.14em] text-coral">
+              About the platform
+            </span>
+            <h2 className="mt-4 border-l-4 border-coral pl-4 font-display text-3xl font-bold leading-tight text-foreground md:text-4xl">
+              What is UK Test Hub?
+            </h2>
+            <p className="mt-5 text-base leading-relaxed text-muted-foreground md:text-lg">
+              UK Test Hub is a free, independent practice platform built to
+              help learners across Britain prepare for UK tests and
+              assessments — no accounts, no paywalls, no surprises.
+            </p>
+
+            <div className="mt-8 space-y-5 text-base leading-relaxed text-muted-foreground">
+              <p>
+                We bring together every major test a person living, working
+                or studying in the UK is likely to sit, and rebuild each one
+                as a series of free, browser-based mock papers designed to
+                reflect common exam formats. Whether you're seventeen and revising
+                for the{" "}
+                <Link
+                  to="/category/$slug"
+                  params={{ slug: "driving" }}
+                  className="font-medium text-coral hover:underline"
+                >
+                  DVSA Driving Theory Test
+                </Link>
+                , a parent helping a child through the 11+, or an adult
+                applying for British citizenship, you can practise here for
+                free, on any device, without ever creating an account.
               </p>
-
-              <div className="mt-8 space-y-5 text-base leading-relaxed text-muted-foreground">
-                <p>
-                  We bring together every major test a person living, working
-                  or studying in the UK is likely to sit, and rebuild each one
-                  as a series of free, browser-based mock papers designed to
-                  reflect common exam formats. Whether you're seventeen and revising
-                  for the{" "}
-                  <Link
-                    to="/category/$slug"
-                    params={{ slug: "driving" }}
-                    className="font-medium text-coral hover:underline"
-                  >
-                    DVSA Driving Theory Test
-                  </Link>
-                  , a parent helping a child through the 11+, or an adult
-                  applying for British citizenship, you can practise here for
-                  free, on any device, without ever creating an account.
-                </p>
-              </div>
-
-              <h3 className="mt-10 border-l-4 border-coral pl-4 font-display text-xl font-bold text-foreground md:text-2xl">
-                What we cover
-              </h3>
-              <div className="mt-4 space-y-5 text-base leading-relaxed text-muted-foreground">
-                <p>
-                  Our{" "}
-                  <Link
-                    to="/category/$slug"
-                    params={{ slug: "driving" }}
-                    className="font-medium text-coral hover:underline"
-                  >
-                    Driving section
-                  </Link>{" "}
-                  covers the DVSA car theory test, motorcycle theory, hazard
-                  perception clips and the practical show-me / tell-me
-                  questions, plus dedicated banks for LGV and PCV candidates.
-                  Every question is based on publicly available guidance and
-                  uses multiple-choice and case-study style formats similar to
-                  what you'll see at the test centre.
-                </p>
-                <p>
-                  The{" "}
-                  <Link
-                    to="/category/$slug"
-                    params={{ slug: "citizenship" }}
-                    className="font-medium text-coral hover:underline"
-                  >
-                    Life in the UK
-                  </Link>{" "}
-                  bank takes you through the full handbook — British history,
-                  values and principles, government, law and everyday life —
-                  designed to reflect common Life in the UK test structure
-                  (24 questions, 45 minutes). It's the test most people sit to
-                  settle (ILR) or naturalise as a British citizen, and we keep
-                  our content aligned with the current edition of the published
-                  handbook.
-                </p>
-                <p>
-                  For{" "}
-                  <Link
-                    to="/category/$slug"
-                    params={{ slug: "english" }}
-                    className="font-medium text-coral hover:underline"
-                  >
-                    IELTS, ESOL and other English language exams
-                  </Link>
-                  , we have practice for reading, listening, grammar and
-                  vocabulary across A1 through C1 levels, suitable for
-                  international students, healthcare professionals and visa
-                  applicants. Our{" "}
-                  <Link
-                    to="/category/$slug"
-                    params={{ slug: "education" }}
-                    className="font-medium text-coral hover:underline"
-                  >
-                    Education
-                  </Link>{" "}
-                  section runs from 11+ verbal and non-verbal reasoning all
-                  the way through to GCSE Maths, English and the sciences,
-                  while our{" "}
-                  <Link
-                    to="/category/$slug"
-                    params={{ slug: "career" }}
-                    className="font-medium text-coral hover:underline"
-                  >
-                    Career
-                  </Link>{" "}
-                  and{" "}
-                  <Link
-                    to="/category/$slug"
-                    params={{ slug: "professional" }}
-                    className="font-medium text-coral hover:underline"
-                  >
-                    Workplace Compliance
-                  </Link>{" "}
-                  banks cover the everyday certifications British employers
-                  ask for — Food Hygiene, First Aid, Fire Safety, Manual
-                  Handling, Health & Safety Awareness and GDPR.
-                  We also publish{" "}
-                  <Link
-                    to="/category/$slug"
-                    params={{ slug: "nhs" }}
-                    className="font-medium text-coral hover:underline"
-                  >
-                    NHS numeracy and literacy
-                  </Link>{" "}
-                  papers for healthcare candidates, and a{" "}
-                  <Link
-                    to="/category/$slug"
-                    params={{ slug: "fun" }}
-                    className="font-medium text-coral hover:underline"
-                  >
-                    Fun
-                  </Link>{" "}
-                  category of British general-knowledge quizzes for anyone
-                  who just enjoys a good test.
-                </p>
-              </div>
-
-              <h3 className="mt-10 border-l-4 border-coral pl-4 font-display text-xl font-bold text-foreground md:text-2xl">
-                How our mock tests work
-              </h3>
-              <div className="mt-4 space-y-5 text-base leading-relaxed text-muted-foreground">
-                <p>
-                  Every mock on the site is designed to reflect common exam
-                  formats — a similar question structure where appropriate, a
-                  similar style of wording, a comparable difficulty curve and,
-                  where relevant, a comparable time limit. You can sit a full
-                  paper end to end, or dip into shorter topic-specific sets
-                  when you want to drill a single weak area in fifteen or
-                  twenty minutes.
-                </p>
-                <p>
-                  Tests are marked instantly the moment you finish. You see
-                  your score, your pass / fail status against the typical
-                  pass mark, and a question-by-question breakdown with a
-                  written explanation for every answer — including the wrong
-                  ones, so you understand why a distractor is wrong as well
-                  as why the correct option is right. Your best score on
-                  each mock is saved locally on your device, so you can
-                  watch yourself improve without ever needing to register.
-                </p>
-                <p>
-                  Everything works on a phone, a tablet, a school Chromebook
-                  or a desktop. There's no app to install, no email to
-                  hand over, no trial that quietly turns into a subscription.
-                  You open the page, you take the test, you learn from it,
-                  and you come back when you're ready for the next one.
-                </p>
-              </div>
-
-              <h3 className="mt-10 border-l-4 border-coral pl-4 font-display text-xl font-bold text-foreground md:text-2xl">
-                Built for UK exams
-              </h3>
-              <div className="mt-4 space-y-5 text-base leading-relaxed text-muted-foreground">
-                <p>
-                  UK Test Hub is written in British English, uses British
-                  spellings and references British institutions — the DVSA,
-                  the Home Office, Ofqual, the NHS, the awarding bodies
-                  behind GCSE and A-level. Our questions use UK road signs,
-                  UK currency, UK measurements and UK examples, because
-                  practising on American or generic content is one of the
-                  fastest ways to pick up bad habits before a UK exam.
-                </p>
-                <p>
-                  Content is reviewed against the most recent published
-                  specifications from each examining body, and we refresh
-                  papers whenever a syllabus, handbook or code of practice
-                  is updated. When the Highway Code changes, our hazard
-                  perception and theory questions change with it. When the
-                  Life in the UK handbook gets a new edition, we re-check
-                  every question against the new chapters.
-                </p>
-                <p>
-                  Accessibility matters too. The site is keyboard-navigable,
-                  has strong colour contrast, scales properly on small
-                  screens, and avoids the cluttered pop-ups and forced
-                  sign-ups that make so many revision sites painful to use.
-                  And it's free — genuinely free, supported by unobtrusive
-                  advertising rather than locked-down paid tiers.
-                </p>
-              </div>
-
-              <h3 className="mt-10 border-l-4 border-coral pl-4 font-display text-xl font-bold text-foreground md:text-2xl">
-                Who uses UK Test Hub
-              </h3>
-              <div className="mt-4 space-y-5 text-base leading-relaxed text-muted-foreground">
-                <p>
-                  Learner drivers and cab/taxi drivers make up the largest group — teenagers
-                  preparing for their first theory test, chauffeurs and PHV drivers,
-                  trainee LGV and PCV drivers building toward a professional licence.
-                  In particular, private hire drivers preparing for the{" "}
-                  <Link
-                    to="/seru-tfl"
-                    className="font-medium text-coral hover:underline"
-                  >
-                    TfL SERU assessment
-                  </Link>{" "}
-                  are one of our largest and fastest-growing audiences, using
-                  our SERU mocks to drill safety, equality and regulatory
-                  scenarios before sitting the real thing at a TfL test centre.
-                  Alongside them, thousands of people each year use our
-                  Life in the UK papers as part of their journey to
-                  Indefinite Leave to Remain or British citizenship.
-                </p>
-                <p>
-                  We're used by international students preparing for IELTS
-                  and Cambridge English exams, by NHS candidates sitting
-                  numeracy and literacy assessments before training, and
-                  by GCSE and 11+ students who want extra timed practice
-                  beyond what their school provides. Construction workers
-                  use our Construction & Trade bank before booking their CSCS
-                  card test, security staff revise for the SIA in our
-                  Security & Door Supervision section, and care workers
-                  brush up on safeguarding and food hygiene.
-                </p>
-                <p>
-                  Teachers, tutors and parents use UK Test Hub as a free
-                  homework resource, setting topic mocks for students and
-                  reviewing the explanations together. And quite a few
-                  people simply enjoy testing themselves on British history,
-                  geography and trivia — which is exactly what our Fun
-                  category is there for.
-                </p>
-              </div>
-
-              <ul className="mt-10 grid gap-3 sm:grid-cols-2">
-                {[
-                  { label: "GCSE & 11+", slug: "education" as const },
-                  { label: "CSCS & site safety", slug: "construction" as const },
-                  { label: "NHS numeracy & literacy", slug: "nhs" as const },
-                  { label: "Workplace compliance", slug: "professional" as const },
-                ].map((item) => (
-                  <li key={item.slug}>
-                    <Link
-                      to="/category/$slug"
-                      params={{ slug: item.slug }}
-                      className="flex items-center gap-3 rounded-xl border border-border bg-card px-4 py-3 text-sm font-medium text-foreground transition-colors hover:border-coral/40 hover:bg-accent/40"
-                    >
-                      <CheckCircle2 className="h-4 w-4 shrink-0 text-coral" />
-                      <span className="flex-1">{item.label}</span>
-                      <ArrowRight className="h-4 w-4 text-muted-foreground" />
-                    </Link>
-                  </li>
-                ))}
-              </ul>
             </div>
 
-            <aside className="rounded-3xl border border-border bg-card p-6 shadow-soft md:p-8">
-              <span className="inline-flex items-center gap-2 rounded-full bg-success/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.14em] text-success">
-                Why it works
-              </span>
-              <h3 className="mt-3 border-l-4 border-coral pl-4 font-display text-xl font-bold text-foreground md:text-2xl">
-                Why Practice Tests Work
-              </h3>
-              <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+            <h3 className="mt-10 border-l-4 border-coral pl-4 font-display text-xl font-bold text-foreground md:text-2xl">
+              What we cover
+            </h3>
+            <div className="mt-4 space-y-5 text-base leading-relaxed text-muted-foreground">
+              <p>
+                Our{" "}
+                <Link
+                  to="/category/$slug"
+                  params={{ slug: "driving" }}
+                  className="font-medium text-coral hover:underline"
+                >
+                  Driving section
+                </Link>{" "}
+                covers the DVSA car theory test, motorcycle theory, hazard
+                perception clips and the practical show-me / tell-me
+                questions, plus dedicated banks for LGV and PCV candidates.
+                Every question is based on publicly available guidance and
+                uses multiple-choice and case-study style formats similar to
+                what you'll see at the test centre.
+              </p>
+              <p>
+                The{" "}
+                <Link
+                  to="/category/$slug"
+                  params={{ slug: "citizenship" }}
+                  className="font-medium text-coral hover:underline"
+                >
+                  Life in the UK
+                </Link>{" "}
+                bank takes you through the full handbook — British history,
+                values and principles, government, law and everyday life —
+                designed to reflect common Life in the UK test structure
+                (24 questions, 45 minutes). It's the test most people sit to
+                settle (ILR) or naturalise as a British citizen, and we keep
+                our content aligned with the current edition of the published
+                handbook.
+              </p>
+              <p>
+                For{" "}
+                <Link
+                  to="/category/$slug"
+                  params={{ slug: "english" }}
+                  className="font-medium text-coral hover:underline"
+                >
+                  IELTS, ESOL and other English language exams
+                </Link>
+                , we have practice for reading, listening, grammar and
+                vocabulary across A1 through C1 levels, suitable for
+                international students, healthcare professionals and visa
+                applicants. Our{" "}
+                <Link
+                  to="/category/$slug"
+                  params={{ slug: "education" }}
+                  className="font-medium text-coral hover:underline"
+                >
+                  Education
+                </Link>{" "}
+                section runs from 11+ verbal and non-verbal reasoning all
+                the way through to GCSE Maths, English and the sciences,
+                while our{" "}
+                <Link
+                  to="/category/$slug"
+                  params={{ slug: "career" }}
+                  className="font-medium text-coral hover:underline"
+                >
+                  Career
+                </Link>{" "}
+                and{" "}
+                <Link
+                  to="/category/$slug"
+                  params={{ slug: "professional" }}
+                  className="font-medium text-coral hover:underline"
+                >
+                  Workplace Compliance
+                </Link>{" "}
+                banks cover the everyday certifications British employers
+                ask for — Food Hygiene, First Aid, Fire Safety, Manual
+                Handling, Health & Safety Awareness and GDPR.
+                We also publish{" "}
+                <Link
+                  to="/category/$slug"
+                  params={{ slug: "nhs" }}
+                  className="font-medium text-coral hover:underline"
+                >
+                  NHS numeracy and literacy
+                </Link>{" "}
+                papers for healthcare candidates, and a{" "}
+                <Link
+                  to="/category/$slug"
+                  params={{ slug: "fun" }}
+                  className="font-medium text-coral hover:underline"
+                >
+                  Fun
+                </Link>{" "}
+                category of British general-knowledge quizzes for anyone
+                who just enjoys a good test.
+              </p>
+            </div>
+
+            <h3 className="mt-10 border-l-4 border-coral pl-4 font-display text-xl font-bold text-foreground md:text-2xl">
+              How our mock tests work
+            </h3>
+            <div className="mt-4 space-y-5 text-base leading-relaxed text-muted-foreground">
+              <p>
+                Every mock on the site is designed to reflect common exam
+                formats — a similar question structure where appropriate, a
+                similar style of wording, a comparable difficulty curve and,
+                where relevant, a comparable time limit. You can sit a full
+                paper end to end, or dip into shorter topic-specific sets
+                when you want to drill a single weak area in fifteen or
+                twenty minutes.
+              </p>
+              <p>
+                Tests are marked instantly the moment you finish. You see
+                your score, your pass / fail status against the typical
+                pass mark, and a question-by-question breakdown with a
+                written explanation for every answer — including the wrong
+                ones, so you understand why a distractor is wrong as well
+                as why the correct option is right. Your best score on
+                each mock is saved locally on your device, so you can
+                watch yourself improve without ever needing to register.
+              </p>
+              <p>
+                Everything works on a phone, a tablet, a school Chromebook
+                or a desktop. There's no app to install, no email to
+                hand over, no trial that quietly turns into a subscription.
+                You open the page, you take the test, you learn from it,
+                and you come back when you're ready for the next one.
+              </p>
+            </div>
+
+            <h3 className="mt-10 border-l-4 border-coral pl-4 font-display text-xl font-bold text-foreground md:text-2xl">
+              Why practice tests work
+            </h3>
+            <div className="mt-4 space-y-5 text-base leading-relaxed text-muted-foreground">
+              <p>
                 Decades of cognitive-science research show that{" "}
                 <strong className="text-foreground">retrieval practice</strong>{" "}
                 — actively recalling answers under exam-like conditions — is
                 one of the most effective ways to learn. Reading notes feels
-                productive but rarely transfers to exam day.
+                productive but rarely transfers to exam day. Mock tests
+                expose gaps in your knowledge before they cost you marks,
+                build familiarity with the question style, and reduce exam
+                anxiety through repeated low-stakes exposure.
               </p>
-              <p className="mt-3 text-base leading-relaxed text-muted-foreground">
-                Mock tests expose gaps in your knowledge before they cost you
-                marks, build familiarity with the question style, and reduce
-                exam anxiety through repeated low-stakes exposure.
-              </p>
-              <p className="mt-3 text-base leading-relaxed text-muted-foreground">
+              <p>
                 <strong className="text-foreground">Spaced repetition</strong>{" "}
                 — returning to the same weak topics across several short
                 sessions — beats one long cram the night before. Twenty
                 focused minutes a day for two weeks will almost always
                 outperform a single five-hour Sunday session, because the
                 act of forgetting and re-learning is what locks the answer
-                into long-term memory.
+                into long-term memory. Sitting timed mocks under realistic
+                conditions also matters: most people who fail a UK exam
+                don't fail because they didn't know the material — they
+                fail because they ran out of time, misread a question
+                under pressure, or panicked at the first hard item.
+                Practising the full paper end to end, with the clock
+                running, makes test day feel familiar instead of frightening.
               </p>
-              <p className="mt-3 text-base leading-relaxed text-muted-foreground">
-                Sitting timed mocks under realistic conditions also matters.
-                Most people who fail a UK exam don't fail because they
-                didn't know the material — they fail because they ran out
-                of time, misread a question under pressure, or panicked at
-                the first hard item. Practising the full paper end to end,
-                with the clock running, makes test day feel familiar
-                instead of frightening.
+            </div>
+
+            <h3 className="mt-10 border-l-4 border-coral pl-4 font-display text-xl font-bold text-foreground md:text-2xl">
+              Built for UK exams
+            </h3>
+            <div className="mt-4 space-y-5 text-base leading-relaxed text-muted-foreground">
+              <p>
+                UK Test Hub is written in British English, uses British
+                spellings and references British institutions — the DVSA,
+                the Home Office, Ofqual, the NHS, the awarding bodies
+                behind GCSE and A-level. Our questions use UK road signs,
+                UK currency, UK measurements and UK examples, because
+                practising on American or generic content is one of the
+                fastest ways to pick up bad habits before a UK exam.
               </p>
-              <Link
-                to="/blog"
-                className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-coral hover:underline"
-              >
-                Read revision tips in our study guides
-                <ArrowRight className="h-4 w-4" />
-              </Link>
-            </aside>
+              <p>
+                Content is reviewed against the most recent published
+                specifications from each examining body, and we refresh
+                papers whenever a syllabus, handbook or code of practice
+                is updated. When the Highway Code changes, our hazard
+                perception and theory questions change with it. When the
+                Life in the UK handbook gets a new edition, we re-check
+                every question against the new chapters.
+              </p>
+              <p>
+                Accessibility matters too. The site is keyboard-navigable,
+                has strong colour contrast, scales properly on small
+                screens, and avoids the cluttered pop-ups and forced
+                sign-ups that make so many revision sites painful to use.
+                And it's free — genuinely free, supported by unobtrusive
+                advertising rather than locked-down paid tiers.
+              </p>
+            </div>
+
+            <h3 className="mt-10 border-l-4 border-coral pl-4 font-display text-xl font-bold text-foreground md:text-2xl">
+              Who uses UK Test Hub
+            </h3>
+            <div className="mt-4 space-y-5 text-base leading-relaxed text-muted-foreground">
+              <p>
+                Learner drivers and cab/taxi drivers make up the largest group — teenagers
+                preparing for their first theory test, chauffeurs and PHV drivers,
+                trainee LGV and PCV drivers building toward a professional licence.
+                In particular, private hire drivers preparing for the{" "}
+                <Link
+                  to="/seru-tfl"
+                  className="font-medium text-coral hover:underline"
+                >
+                  TfL SERU assessment
+                </Link>{" "}
+                are one of our largest and fastest-growing audiences, using
+                our SERU mocks to drill safety, equality and regulatory
+                scenarios before sitting the real thing at a TfL test centre.
+                Alongside them, thousands of people each year use our
+                Life in the UK papers as part of their journey to
+                Indefinite Leave to Remain or British citizenship.
+              </p>
+              <p>
+                We're used by international students preparing for IELTS
+                and Cambridge English exams, by NHS candidates sitting
+                numeracy and literacy assessments before training, and
+                by GCSE and 11+ students who want extra timed practice
+                beyond what their school provides. Construction workers
+                use our Construction & Trade bank before booking their CSCS
+                card test, security staff revise for the SIA in our
+                Security & Door Supervision section, and care workers
+                brush up on safeguarding and food hygiene.
+              </p>
+              <p>
+                Teachers, tutors and parents use UK Test Hub as a free
+                homework resource, setting topic mocks for students and
+                reviewing the explanations together. And quite a few
+                people simply enjoy testing themselves on British history,
+                geography and trivia — which is exactly what our Fun
+                category is there for.
+              </p>
+            </div>
+
+            <ul className="mt-10 grid gap-3 sm:grid-cols-2">
+              {[
+                { label: "GCSE & 11+", slug: "education" as const },
+                { label: "CSCS & site safety", slug: "construction" as const },
+                { label: "NHS numeracy & literacy", slug: "nhs" as const },
+                { label: "Workplace compliance", slug: "professional" as const },
+              ].map((item) => (
+                <li key={item.slug}>
+                  <Link
+                    to="/category/$slug"
+                    params={{ slug: item.slug }}
+                    className="flex items-center gap-3 rounded-xl border border-border bg-background px-4 py-3 text-sm font-medium text-foreground transition-colors hover:border-coral/40 hover:bg-accent/40"
+                  >
+                    <CheckCircle2 className="h-4 w-4 shrink-0 text-coral" />
+                    <span className="flex-1">{item.label}</span>
+                    <ArrowRight className="h-4 w-4 text-muted-foreground" />
+                  </Link>
+                </li>
+              ))}
+            </ul>
+
+            <Link
+              to="/blog"
+              className="mt-8 inline-flex items-center gap-1.5 text-sm font-semibold text-coral hover:underline"
+            >
+              Read revision tips in our study guides
+              <ArrowRight className="h-4 w-4" />
+            </Link>
           </div>
         </section>
 
