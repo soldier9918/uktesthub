@@ -292,6 +292,7 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
     const next = [...answers];
     next[current] = a;
     setAnswers(next);
+    sounds.click();
   };
 
   const reveal = () => {
@@ -299,9 +300,12 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
     const r = [...revealed];
     r[current] = true;
     setRevealed(r);
+    if (isCorrect(q, answers[current] ?? null)) sounds.correct();
+    else sounds.wrong();
   };
 
   const goNext = () => {
+    if (mode === "exam") sounds.next();
     if (current < quiz.questions.length - 1) setCurrent((c) => c + 1);
     else setFinished(true);
   };
