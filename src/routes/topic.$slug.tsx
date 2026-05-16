@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { createFileRoute, Link, notFound, redirect } from "@tanstack/react-router";
 import { getTest } from "@/data/english/categories";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -68,6 +69,22 @@ function MockCard({
   mockNumber: number;
   available: boolean;
 }) {
+  const [bestScore, setBestScore] = useState<number | null>(null);
+
+  useEffect(() => {
+    if (!available) return;
+    try {
+      const raw = localStorage.getItem(`uk-test-hub:best:${slug}`);
+      const n = raw ? parseInt(raw, 10) : 0;
+      if (n > 0) setBestScore(n);
+    } catch {
+      // ignore
+    }
+  }, [slug, available]);
+
+  const percent =
+    bestScore != null ? Math.min(100, Math.round((bestScore / QUESTIONS_PER_MOCK) * 100)) : 0;
+
   const inner = (
     <div
       className={`flex h-full flex-col rounded-2xl border bg-card p-4 shadow-soft transition-all ${
@@ -90,10 +107,33 @@ function MockCard({
         {QUESTIONS_PER_MOCK} questions ·{" "}
         <Clock className="inline h-3 w-3" /> ~{QUESTIONS_PER_MOCK} min
       </p>
+
+      {available && (
+        <div className="mt-3">
+          <div className="flex items-center justify-between text-[11px] font-semibold">
+            <span className="text-muted-foreground">
+              {bestScore != null ? "Best score" : "Not attempted yet"}
+            </span>
+            {bestScore != null && (
+              <span className="text-coral">
+                {bestScore}/{QUESTIONS_PER_MOCK} · {percent}%
+              </span>
+            )}
+          </div>
+          <div className="mt-1.5 h-1.5 w-full overflow-hidden rounded-full bg-muted">
+            <div
+              className="h-full rounded-full bg-coral transition-all"
+              style={{ width: `${percent}%` }}
+            />
+          </div>
+        </div>
+      )}
+
       <div className="mt-3">
         {available ? (
           <span className="inline-flex items-center gap-1.5 rounded-lg bg-coral px-3 py-1.5 text-xs font-semibold text-white">
-            Start test <ArrowRight className="h-3.5 w-3.5" />
+            {bestScore != null ? "Retake test" : "Start test"}{" "}
+            <ArrowRight className="h-3.5 w-3.5" />
           </span>
         ) : (
           <span className="inline-flex items-center gap-1.5 rounded-lg bg-muted px-3 py-1.5 text-xs font-semibold text-muted-foreground">

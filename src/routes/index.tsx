@@ -409,16 +409,16 @@ function HomePage() {
 
         {/* TOPIC PRACTICE */}
         <section className="mt-20 rounded-3xl border border-border bg-card p-6 shadow-soft md:p-10">
-          <div className="grid gap-10 lg:grid-cols-[1fr_320px] lg:items-start">
+          <div className="flex flex-col items-center text-center">
+            <SectionTitle>Practice by Topic</SectionTitle>
+            <p className="mt-4 max-w-2xl text-muted-foreground">
+              Jump straight into a specific topic. Every link below is its own
+              page, updated with fresh questions.
+            </p>
+          </div>
+          <div className="mt-10 grid gap-10 lg:grid-cols-[1fr_320px] lg:items-start">
             <div>
-              <h2 className="font-display text-2xl font-bold md:text-3xl">
-                Practice by topic
-              </h2>
-              <p className="mt-1 max-w-2xl text-muted-foreground">
-                Jump straight into a specific topic. Every link below is its own
-                page, updated with fresh questions.
-              </p>
-              <div className="mt-8 gap-x-8 sm:columns-2 [column-fill:_balance]">
+              <div className="gap-x-8 sm:columns-2 [column-fill:_balance]">
                 {categories.map((c) => (
                   <div key={c.slug} className="mb-8 break-inside-avoid">
                     <h3 className="font-display text-sm font-semibold uppercase tracking-wider text-coral">
@@ -482,17 +482,14 @@ function HomePage() {
         {/* WHAT IS UK TEST HUB */}
         <section className="mt-20">
           <div className="rounded-3xl border border-border bg-card p-6 shadow-soft md:p-10 lg:p-12">
-            <span className="inline-flex items-center gap-2 rounded-full bg-coral/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.14em] text-coral">
-              About the platform
-            </span>
-            <h2 className="mt-4 border-l-4 border-coral pl-4 font-display text-3xl font-bold leading-tight text-foreground md:text-4xl">
-              What is UK Test Hub?
-            </h2>
-            <p className="mt-5 text-base leading-relaxed text-muted-foreground md:text-lg">
-              UK Test Hub is a free, independent practice platform built to
-              help learners across Britain prepare for UK tests and
-              assessments — no accounts, no paywalls, no surprises.
-            </p>
+            <div className="flex flex-col items-center text-center">
+              <SectionTitle>What is UK Test Hub?</SectionTitle>
+              <p className="mt-5 max-w-3xl text-base leading-relaxed text-muted-foreground md:text-lg">
+                UK Test Hub is a free, independent practice platform built to
+                help learners across Britain prepare for UK tests and
+                assessments — no accounts, no paywalls, no surprises.
+              </p>
+            </div>
 
             <div className="mt-8 space-y-5 text-base leading-relaxed text-muted-foreground">
               <p>
