@@ -50,12 +50,6 @@ export const categories: Category[] = [
       { slug: "hazard-perception", title: "Hazard Perception Test" },
       { slug: "road-signs", title: "Road Signs Test" },
       { slug: "motorcycle-theory", title: "Motorcycle Theory Test" },
-      // Professional Driving & Transport practice
-      { slug: "transport-manager-cpc-road-haulage", title: "Transport Manager CPC Road Haulage Practice" },
-      { slug: "driver-cpc", title: "Driver CPC Practice" },
-      { slug: "forklift-flt-theory-test", title: "Forklift / FLT Theory Test Practice" },
-      { slug: "d1-minibus-theory-test", title: "D1 Minibus Theory Test Practice" },
-      { slug: "adr-dangerous-goods-test", title: "ADR Dangerous Goods Test Practice" },
     ],
   },
   {
