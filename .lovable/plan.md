@@ -1,53 +1,51 @@
-## Goal
+## 1. "Back to all tests" button
 
-Finish Phase 1 mock generation by running it in **small batches** that fit within a single tool-call timeout, so each batch completes synchronously before I hand control back. You say "continue" to advance to the next batch.
+Add a prominent **"← Back to all tests"** link at the top of these pages (above the hero, on the same beige `bg-[#f7f5f0]` strip that contains the header):
 
-## Current state
+- `src/routes/category.$slug.tsx` — `/category/:slug`
+- `src/routes/topic.$slug.tsx` — `/topic/:slug`
+- `src/routes/english-language-tests.$test.tsx` — `/english-language-tests/:test`
+- `src/routes/english-language-tests.$test.$skill.tsx` — `/english-language-tests/:test/:skill`
+- `src/routes/english-language-tests.$test.$skill.$level.index.tsx` — the level / mock-list page
 
-- ✅ `hgv-theory-test` — bank + 45 mocks complete, published to `public/mocks/`.
-- ✅ English PTE + Duolingo — 48 bank files written under `public/english-mocks/`.
-- 🔄 `lgv-theory-test` — partial bank (~400/600 questions), no mocks yet.
-- ⏳ 11 topics not started: `pcv-theory-test`, `driver-cpc-module-1`, `transport-manager-cpc-passenger-transport`, `adr-core-module-practice`, `adr-tanks-practice`, `adr-packages-practice`, `nhs-situational-judgement-test`, `sssts-practice-test`, `smsts-practice-test`, `aws-cloud-practitioner`, `az-900-azure-fundamentals`.
-
-## Batch plan (12 topics remaining, 1 topic per batch)
-
-Each batch runs **one topic end-to-end** in the foreground using the existing resumable pipeline:
+Style: small pill button with an `ArrowLeft` icon, navy text on a white card, sits just under `SiteHeader` so it's the first thing users see when they land on any category/topic.
 
 ```text
-python3 scripts/generate_mocks.py bank     --topic <slug> --delay 1
-python3 scripts/generate_mocks.py assemble --topic <slug>
-python3 scripts/generate_mocks.py validate --topic <slug>
-cp src/data/mocks/<slug>.json public/mocks/<slug>.json
+┌───────────────────────────────────────────┐
+│  SiteHeader                               │
+├───────────────────────────────────────────┤
+│  ← Back to all tests                      │
+├───────────────────────────────────────────┤
+│  HERO (existing)                          │
+└───────────────────────────────────────────┘
 ```
 
-The `bank` step is the long one (~600 AI calls, ~20–25 min per topic). It's resumable, so if a single call times out at the 10-min cap I just re-invoke and it tops up where it left off — that's the "continue" you'd send.
+Keep the existing breadcrumb (Home › Category › Topic) — the back button is in addition to it, because the breadcrumb currently links to Home, not to `/all-tests`.
 
-### Proposed batch order
+## 2. Unify mock test tiles
 
-1. `lgv-theory-test` (resume — already partial)
-2. `pcv-theory-test`
-3. `driver-cpc-module-1`
-4. `transport-manager-cpc-passenger-transport`
-5. `adr-core-module-practice`
-6. `adr-tanks-practice`
-7. `adr-packages-practice`
-8. `nhs-situational-judgement-test`
-9. `sssts-practice-test`
-10. `smsts-practice-test`
-11. `aws-cloud-practitioner`
-12. `az-900-azure-fundamentals`
+The target design (per attached screenshot) is the tile already used on the English level pages:
 
-### After each batch I'll report
+- Title: **"Mock Test N"** (instead of the current "Test N")
+- Subtitle: `24 questions · ⏱ ~24 min`
+- Prominent coral **"Start test →"** button at the bottom
+- Same card chrome (rounded-2xl, border, soft shadow, hover lift)
 
-- Bank questions written (target ~600).
-- Mocks assembled (target 45 × 24).
-- Validation result.
-- Confirmation it's published to `public/mocks/`.
+Apply this design to the main mock-test grid on `src/routes/topic.$slug.tsx` so every topic across the site looks identical to the English ones.
 
-## Notes
+Changes inside `topic.$slug.tsx` only:
 
-- No source code or schema changes — just running the existing generator.
-- Mock-index and sitemap already include all 13 slugs from earlier work; no edits needed unless validation flags a gap.
-- If a single `bank` call hits the per-call timeout mid-topic, you just say "continue" and I re-run the same command (it resumes).
+- Rewrite the `MockCard` component to mirror the English `MockCard` (in `english-language-tests.$test.$skill.$level.index.tsx`): heading "Mock Test N", `24 questions · ~24 min` line, coral "Start test" button, "Soon" pill for locked mocks.
+- Remove the per-tile progress bar + "X / 24" score (it conflicts with the new layout). Best-score display can be added later in a follow-up if you want it preserved — confirm if you want to keep it.
+- Update the grid call site to pass `mockNumber` instead of `title: "Test N"`.
 
-Ready to start with batch 1 (`lgv-theory-test`) on your approval.
+No changes to data, routing, quizzes, or styles tokens. All new styles use existing tokens (`coral`, `border`, `card`, `muted`, etc.).
+
+## Open question
+
+The current topic tile shows your best score (`X / 24` with a progress bar). The target design has no progress bar. Confirm one:
+
+- **A.** Drop the progress bar entirely (matches screenshot exactly).
+- **B.** Keep the progress bar but place it below the "Start test" button, in a smaller muted style.
+
+I'll default to **A** unless you say otherwise.
