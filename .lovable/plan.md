@@ -1,74 +1,83 @@
-## Findings — current state
+# Add 11 new practice topics + new "Admissions Tests" category
 
-**Route patterns (actual, not assumed)**
-- Quiz mocks: `/quiz/{topic-slug}-mock-{n}` — NOT `/topic/{slug}/mock-test-{n}`.
-- English mocks: `/english-language-tests/{test}/{skill}/{level}/mock-test-{n}`.
+## Scope summary
 
-**True universe of public, indexable URLs**
+| # | Topic | Slug | Lives under | Mocks | Questions |
+|---|---|---|---|---|---|
+| 1 | Transport Manager CPC | `transport-manager-cpc` (already exists in `hgv-logistics`) — also expose under `driving` | driving + hgv-logistics | 45 | 1,080 |
+| 2 | Transport Manager CPC Road Haulage | `transport-manager-cpc-road-haulage` | driving | 45 | 1,080 |
+| 3 | Driver CPC | `driver-cpc` | driving | 45 | 1,080 |
+| 4 | Forklift / FLT Theory Test | `forklift-flt-theory-test` | driving | 45 | 1,080 |
+| 5 | D1 Minibus Theory | `d1-minibus-theory-test` | driving | 45 | 1,080 |
+| 6 | ADR Dangerous Goods | `adr-dangerous-goods-test` | driving | 45 | 1,080 |
+| 7 | NHS Psychometric Tests | `nhs-psychometric-tests` | nhs | 45 | 1,080 |
+| 8 | TOEFL iBT Practice | `english-language-tests/toefl-ibt` | english-language-tests (special) | English-test structure | — |
+| 9 | PTE Academic Practice | `english-language-tests/pte-academic` | english-language-tests (special) | English-test structure | — |
+| 10 | GRE Practice | `gre-practice` | new `admissions` category | 45 | 1,080 |
+| 11 | GMAT Practice | `gmat-practice` | new `admissions` category | 45 | 1,080 |
 
-| Section | Count |
-|---|---|
-| Static (home, /all-tests, /blog, /about, /contact, /faq, /help, /exam-updates, /sitemap, 5 legal) | 14 |
-| SEO landing pages (seru, seru-tfl, topographical, sia, cscs, driving-theory, life-in-uk, road-signs, nhs-numeracy) | 9 |
-| Categories (`/category/{slug}`) | 13 |
-| Topics (`/topic/{slug}`) | 114 |
-| Guides (`/guide/{slug}`) | 114 |
-| Blog posts (`/blog/{slug}`) | 59 |
-| Quiz mocks — 114 topics × 45 (`/quiz/{slug}-mock-{n}`) | **5,130** |
-| English hub + category | 2 |
-| English test pages (4) + skill pages (14) + level pages (79) | 97 |
-| English mocks — 79 triples × 45 | **3,555** |
-| **TOTAL public indexable URLs** | **~9,107** |
+**Total new standard mock questions: ~9,720** (for items 1–7, 10, 11). TOEFL iBT and PTE Academic reuse the existing English-tests skill/level pipeline.
 
-**Current sitemap.xml — 928 URLs.** It deliberately excludes:
-- 4,635 quiz mocks across 103 non-whitelisted topics (only 11 "money" topics × 45 = 495 are included today).
-- All 3,555 English mock URLs (only the 79 level landing pages are included).
+Note on item 1: `transport-manager-cpc` already exists under `hgv-logistics`. I'll surface a link to it from the new Driving "Professional Driving & Transport" section rather than create a duplicate slug. If you want a distinct driving-category copy, say so.
 
-That whitelist exists in `src/routes/sitemap[.]xml.ts` because, today, every quiz mock page renders the same templated SEO:
-- Title: literal `"Mock Test {n}"` from the bundled manifest (e.g. "Mock Test 1" — no topic name).
-- Description: `"Mock test {n} — 24 questions."` — identical wording across all topics.
+## Important: this is a content-heavy task
 
-Adding 4,635 mocks to the sitemap with that boilerplate would feed Google ~5k near-duplicate pages → soft-404 / "Crawled, not indexed" risk. So **content uniqueness must be fixed in the same change** as the sitemap expansion. English mocks already have unique titles, descriptions, and canonicals — they just need to be added to the sitemap.
+Generating ~9,720 unique, factually correct questions with explanations is **not something I can produce inline in chat** — it needs the existing `scripts/generate_mocks.py` AI pipeline (which calls Lovable AI Gateway, costs credits, and runs for hours per topic). The plan below does the full code/SEO/structure work and **kicks off bank generation as a separate step you confirm before I burn credits**.
 
-**Auth / private routes already correctly excluded** from the sitemap: `/signin`, `/signup`, `/account`, `/dashboard`, `/bookmarks`, `/admin`, `/admin-kb20`, `/reset-password`, `/forgot-password`, `/feedback`, `/report`. No change needed.
+## Implementation plan
 
-## Plan
+### 1. New category: Admissions Tests
+- Add to `src/data/categories.ts`: `{ slug: "admissions", title: "Graduate & Business Admissions Tests", topics: [gre-practice, gmat-practice] }`, with a hero image (reuse `cat-hero-education.jpg` or generate one).
+- Add corresponding entry in `src/data/category-seo.ts`.
 
-### 1. Make every quiz mock page SEO-unique
-Update `src/routes/quiz.$slug.tsx` `head()` so that when the slug matches `{topic}-mock-{n}`:
-- Title: `{Topic Title} Mock Test {n} | UK Test Hub` (truncated to ≤60 chars; fall back to `{Topic Title} Mock Test {n}` if long).
-- Description: `Practise {Topic Title} Mock Test {n} with 24 questions, instant results and clear answer explanations.` (≤160 chars).
-- Canonical: `https://www.uktesthub.com/quiz/{slug}` (already correct).
-- Single H1 already comes from QuizRunner; no noindex.
+### 2. Add topics to existing categories
+- `src/data/categories.ts` — Driving category: append the 5 new driving topics (plus surface Transport Manager CPC). NHS category: append `nhs-psychometric-tests`. English category: nothing new (TOEFL iBT and PTE Academic use the `english-language-tests` tree, not the category topic list — but I'll add visible cards on `/category/english` linking to them).
+- `src/data/topic-seo.ts` — Add entries for each new topic with the prescribed title/description/FAQs and independent-disclaimer copy.
+- `src/data/category-seo.ts` — Update Driving description to mention "Professional Driving & Transport" section.
 
-The topic title is resolved via the existing `findTopic(topicSlug)` helper, so no data work is needed.
+### 3. Category page UI tweak
+- `src/routes/category.$slug.tsx` — Add an optional `sections` grouping on the Driving page so the 5 new topics render under a "Professional Driving & Transport Tests" heading instead of mixed with the consumer driving tests.
 
-### 2. Expand the sitemap to include every indexable mock
-Edit `src/routes/sitemap[.]xml.ts`:
-- Replace the `QUIZ_WHITELIST` block with a loop over all 114 topics in `mock-index.json` → 5,130 quiz URLs.
-- Add a new `englishMockEntries` block: for every `(test, skill, level)` triple, emit 45 `/english-language-tests/{test}/{skill}/{level}/mock-test-{n}` URLs → 3,555 URLs.
+### 4. Topic + Guide + Mock pages
+- These are already fully data-driven: once a topic is in `categories.ts` and `topic-seo.ts`, `/topic/$slug`, `/guide/$slug`, and `/quiz/$slug-mock-N` work automatically. The only requirement is the topic's JSON bank in `public/mocks/{slug}.json`.
+- Add a placeholder/empty v2 bank file for each new topic so the topic page renders "coming soon" cards until the real bank is generated.
 
-### 3. Sitemap split — NOT needed
-The Google limit is 50,000 URLs / 50 MB per file. ~9,107 URLs fits comfortably in one `sitemap.xml` (~2.5 MB). Splitting into a sitemap index adds complexity for no SEO benefit at this scale, so we keep one file. (If the catalogue ever grows past ~30k URLs we can revisit.)
+### 5. TOEFL iBT and PTE Academic
+- Add `toefl-ibt` and `pte-academic` to `src/data/english/categories.ts` mirroring the existing `toefl`/`ielts` structure (skills × levels). Generate the 79-style triples via `scripts/generate_all_english_mocks.py` (extended to know the new test ids).
+- No new route files needed — existing `english-language-tests.$test.*` routes handle them.
 
-### 4. Verify and report
-After the change, fetch the deployed `/sitemap.xml` and count `<loc>` to confirm. Run a spot check that 5 random mock pages (e.g. `/quiz/road-signs-mock-7`, `/quiz/sats-mock-22`, `/quiz/cscs-operative-mock-44`) return unique title + meta description in the rendered HTML.
+### 6. SEO requirements (per topic)
+Applied via the existing `head()` in `topic.$slug.tsx`, `guide.$slug.tsx`, `quiz.$slug.tsx`:
+- Title: `{Topic} Practice Test | UK Test Hub`
+- Meta description: `Practise {Topic} questions online with UK Test Hub. Get free mock tests, instant results and clear answer explanations.`
+- Self-referencing canonical + matching `og:url` (already implemented).
+- Independent disclaimer block rendered on topic + guide + quiz pages — add a shared `<IndependentDisclaimer />` component in `src/components/` referencing GOV.UK / DVSA / DfT / SQA / ETS / Pearson / GMAC / NHS, dropped into the existing page layouts.
 
-## Final answer (after implementation)
+### 7. Sitemap
+- `src/routes/sitemap[.]xml.ts` — already iterates `mockIndex` and all topics, so new topics + their 45 mocks each are picked up automatically once added to `categories.ts`. Verify count goes from 9,118 → ~13,438 (9 topics × 45 + 2 English tests × 180 + topic/guide pages + new category page).
 
-| Metric | Before | After |
-|---|---|---|
-| Total public indexable URLs | 9,107 | 9,107 |
-| URLs in sitemap.xml | 928 | **~9,107** |
-| Quiz mocks added | — | **+4,635** (103 topics × 45) |
-| English mocks added | — | **+3,555** (79 triples × 45) |
-| Mock URL pattern (quizzes) | — | `/quiz/{topic-slug}-mock-{n}` |
-| Mock URL pattern (English) | — | `/english-language-tests/{test}/{skill}/{level}/mock-test-{n}` |
-| Sitemap split into multiple files | — | No (one file, well under 50k limit) |
+### 8. Question bank generation (separate, gated step)
+For items 1–7, 10, 11:
+1. Add 9 entries to `scripts/topic-requirements.json` (or equivalent) with type-mix weights and a subject prompt.
+2. Add 9 entries to `TOPIC_SUBJECTS` in `scripts/generate_mocks.py`.
+3. Run `python scripts/generate_mocks.py bank --topic {slug}` then `assemble --topic {slug}` for each.
+4. Validate with `validate --topic {slug}`.
 
-## Files to edit
+For TOEFL iBT / PTE Academic: extend `scripts/generate_all_english_mocks.py` to include them, then run it.
 
-1. `src/routes/quiz.$slug.tsx` — rewrite `head()` to emit topic-aware title + description for `*-mock-N` slugs.
-2. `src/routes/sitemap[.]xml.ts` — drop `QUIZ_WHITELIST`, iterate every topic in `mock-index.json`, add English mock loop.
+**I will pause before step 8 and confirm with you** — it requires `LOVABLE_API_KEY` credits and runs for an extended period.
 
-No new files, no schema changes, no auth/admin pages touched.
+## What ships in the first pass (no AI generation needed)
+
+- New `admissions` category live with GRE + GMAT topic stubs
+- All 9 new standard topics visible in their categories
+- `/topic/{slug}` and `/guide/{slug}` pages render with the requested SEO, disclaimer, FAQ, and CTAs
+- TOEFL iBT and PTE Academic listed under English Language Tests landing
+- Sitemap updated automatically
+- Topic pages show "Mock tests coming soon" until banks are generated
+
+## Open questions
+
+1. **Transport Manager CPC duplication** — keep the existing `hgv-logistics/transport-manager-cpc` as the canonical URL and link to it from Driving, or create a second `transport-manager-cpc` topic under Driving (would need a different slug)? My default: reuse existing.
+2. **Bank generation now or later?** I'd recommend shipping the structure first (so URLs/SEO go live today) and triggering generation as a follow-up since it consumes credits and takes hours per topic.
+3. **Category name for GRE/GMAT** — you wrote "Professional or Education". I'm proposing a new **"Graduate & Business Admissions Tests"** category instead, to avoid muddying the existing Professional (workplace compliance) and Education (school-level) categories. OK?

@@ -50,6 +50,12 @@ export const categories: Category[] = [
       { slug: "hazard-perception", title: "Hazard Perception Test" },
       { slug: "road-signs", title: "Road Signs Test" },
       { slug: "motorcycle-theory", title: "Motorcycle Theory Test" },
+      // Professional Driving & Transport practice
+      { slug: "transport-manager-cpc-road-haulage", title: "Transport Manager CPC Road Haulage Practice" },
+      { slug: "driver-cpc", title: "Driver CPC Practice" },
+      { slug: "forklift-flt-theory-test", title: "Forklift / FLT Theory Test Practice" },
+      { slug: "d1-minibus-theory-test", title: "D1 Minibus Theory Test Practice" },
+      { slug: "adr-dangerous-goods-test", title: "ADR Dangerous Goods Test Practice" },
     ],
   },
   {
@@ -148,6 +154,7 @@ export const categories: Category[] = [
       { slug: "nhs-literacy", title: "NHS Literacy Test" },
       { slug: "nhs-values", title: "NHS Values-Based Recruitment" },
       { slug: "nmc-cbt", title: "NMC CBT (Nurses)" },
+      { slug: "nhs-psychometric-tests", title: "NHS Psychometric Tests" },
     ],
   },
   {
@@ -437,6 +444,20 @@ export const categories: Category[] = [
       { slug: "animal-first-aid", title: "Animal First Aid" },
       { slug: "canine-behaviour", title: "Canine Behaviour Basics" },
       { slug: "equine-care", title: "Equine Care Theory" },
+    ],
+  },
+  {
+    slug: "admissions",
+    title: "Graduate & Business Admissions Tests",
+    short: "GRE, GMAT & graduate admissions practice",
+    description:
+      "Practice-style questions for graduate and business school admissions — GRE verbal, quantitative and analytical writing, plus GMAT problem solving, critical reasoning and data insights.",
+    icon: "GraduationCap",
+    accent: "navy",
+    heroImage: heroEducation,
+    topics: [
+      { slug: "gre-practice", title: "GRE Practice" },
+      { slug: "gmat-practice", title: "GMAT Practice" },
     ],
   },
 ];

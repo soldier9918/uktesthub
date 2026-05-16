@@ -1559,6 +1559,156 @@ export const topicSeo: Record<string, TopicSeo> = {
   "animal-first-aid": generic("Animal First Aid", "iPET Network and the Canine First Aid Association", "first aid for cats and dogs — CPR, choking, bleeding, poisoning, heatstroke and when to call the vet"),
   "canine-behaviour": generic("Canine Behaviour Basics", "the Animal Behaviour and Training Council (ABTC)", "introductory canine behaviour and training knowledge — body language, learning theory, socialisation and common problem behaviours"),
   "equine-care": generic("Equine Care Theory", "BHS (British Horse Society) and City & Guilds", "the Level 2 Diploma in Horse Care theory — feeding, watering, grooming, tack fitting, stable management and equine first aid"),
+
+  // -------- NEW: PROFESSIONAL DRIVING & TRANSPORT ------------------
+  "transport-manager-cpc-road-haulage": {
+    title: "Transport Manager CPC Practice Test | UK Test Hub",
+    description:
+      "Practise Transport Manager CPC Road Haulage questions online with UK Test Hub. Get free mock tests, instant results and clear answer explanations.",
+    tagline: "Independent practice-style questions for road haulage transport manager revision.",
+    intro: [
+      "Our Transport Manager CPC Road Haulage practice covers the topics most candidates revise for the OCR Certificate of Professional Competence — goods vehicle operations, operator licensing, compliance, drivers' hours, tachographs, vehicle maintenance, safety and transport regulations.",
+      "Questions are independent practice-style only. Use them alongside an OCR-approved training provider and the official syllabus, then check current rules on GOV.UK before sitting the real exam.",
+    ],
+    sections: [
+      { heading: "What revision typically covers", body: ["Operator licensing, drivers' hours and EU/AETR rules, tachograph use and records, vehicle maintenance and the daily walkaround, road traffic law, transport safety, vocational training, environmental rules and freight documentation."] },
+      { heading: "How candidates usually study", body: ["Most candidates work through an OCR-approved CPC course over 4–10 weeks, combine reading with timed practice questions, and sit the Multiple Choice and Case Study papers at a Pearson VUE test centre."] },
+    ],
+    faqs: [
+      { q: "Is this the official Transport Manager CPC?", a: "No — UK Test Hub is independent. Questions are practice-style. Book the real exam through OCR (an awarding body of the Cambridge University Press and Assessment group) via your training provider." },
+      { q: "Do I need this to be a transport manager?", a: "To hold a standard operator licence in Great Britain you must name a CPC-qualified transport manager. Check the current rules on GOV.UK and with the Traffic Commissioners' Office." },
+    ],
+  },
+  "driver-cpc": {
+    title: "Driver CPC Practice Test | UK Test Hub",
+    description:
+      "Practise Driver CPC questions online with UK Test Hub. Get free mock tests, instant results and clear answer explanations.",
+    tagline: "Independent practice-style questions for professional LGV, PCV and coach drivers.",
+    intro: [
+      "Our Driver CPC practice covers the kinds of topics professional lorry, bus and coach drivers revise — Module 2 case studies, safety, regulations, hazard awareness and professional driving responsibilities.",
+      "These are practice-style questions, not real exam content. Check the current Driver CPC requirements on GOV.UK and book official tests through the DVSA.",
+    ],
+    sections: [
+      { heading: "What revision typically covers", body: ["EU drivers' hours and tachograph use, vehicle safety and walkaround checks, defensive driving, eco-driving, securing loads, passenger safety on PCVs, fatigue management, drugs and alcohol rules, accident and incident response."] },
+      { heading: "How candidates usually prepare", body: ["Combine an approved Driver CPC training course (35 hours of periodic training every 5 years for existing holders) with revision questions and DVSA learning materials. Sit Module 2 and Module 4 at official test centres."] },
+    ],
+    faqs: [
+      { q: "Is Driver CPC set by UK Test Hub?", a: "No. Driver CPC is set and run by the DVSA. UK Test Hub provides independent practice-style revision only." },
+      { q: "How long is the Driver CPC card valid?", a: "Driver Qualification Cards last 5 years. You must complete 35 hours of approved periodic training in each 5-year cycle. Confirm the current rules on GOV.UK." },
+    ],
+  },
+  "forklift-flt-theory-test": {
+    title: "Forklift Theory Test Practice | UK Test Hub",
+    description:
+      "Practise Forklift / FLT Theory Test questions online with UK Test Hub. Get free mock tests, instant results and clear answer explanations.",
+    tagline: "Independent practice-style questions for forklift truck operator revision.",
+    intro: [
+      "Our Forklift Theory practice covers the underpinning knowledge most counterbalance and reach truck candidates revise — safety checks, load handling, stability, workplace hazards, signs, PPE, batteries, refuelling and safe operating procedures.",
+      "Questions are independent practice-style only. The real assessment is set by your accrediting body (for example RTITB, ITSSAR or AITT). Always follow HSE guidance L117 and your employer's site rules.",
+    ],
+    sections: [
+      { heading: "What revision typically covers", body: ["Pre-use inspections, stability triangle, mast and fork operation, load assessment and ratings, refuelling and battery charging, pedestrian safety, racking awareness, signs and markings, near-miss reporting."] },
+      { heading: "How candidates usually study", body: ["Most operators sit a short accredited course (typically 1–5 days depending on prior experience), combine reading with practical instruction, then take a theory and practical test at the end of the course."] },
+    ],
+    faqs: [
+      { q: "Is there one official 'FLT theory test'?", a: "No single national exam — different accrediting bodies (RTITB, ITSSAR, AITT, NPORS) issue their own assessments. Check which standard your employer or training provider uses." },
+      { q: "Does my forklift licence expire?", a: "Forklift training is generally refreshed every 3–5 years, and after any incident or change of equipment. Check current HSE guidance and your employer's policy." },
+    ],
+  },
+  "d1-minibus-theory-test": {
+    title: "D1 Minibus Theory Test Practice | UK Test Hub",
+    description:
+      "Practise D1 Minibus Theory Test questions online with UK Test Hub. Get free mock tests, instant results and clear answer explanations.",
+    tagline: "Independent practice-style questions for D1 minibus driving revision.",
+    intro: [
+      "Our D1 Minibus practice covers the kinds of topics candidates revise before sitting the DVSA D1 theory test — passenger safety, stopping distances, road signs, vehicle checks, legal responsibilities and safe driving.",
+      "Questions are independent practice-style only. Always check the current Highway Code and DVSA guidance on GOV.UK before booking the real test.",
+    ],
+    sections: [
+      { heading: "What revision typically covers", body: ["Passenger safety and supervision, vehicle daily walkaround checks, drivers' hours and tachograph basics where relevant, stopping distances when loaded, Highway Code for larger vehicles, accessibility and PSVAR awareness."] },
+      { heading: "How candidates usually study", body: ["Combine the DVSA Highway Code with the official LGV/PCV theory learning materials and timed mock papers. Sit the theory test (multiple choice plus hazard perception) at a DVSA centre before progressing to the practical."] },
+    ],
+    faqs: [
+      { q: "Do I need a D1 entitlement to drive a minibus?", a: "It depends on the vehicle weight, seating, whether driving is for hire or reward, and when you passed your car test. Check the current rules on GOV.UK." },
+      { q: "Is this the official DVSA test?", a: "No. UK Test Hub is independent. The official D1 theory test is set and run by the DVSA." },
+    ],
+  },
+  "adr-dangerous-goods-test": {
+    title: "ADR Dangerous Goods Test Practice | UK Test Hub",
+    description:
+      "Practise ADR Dangerous Goods Test questions online with UK Test Hub. Get free mock tests, instant results and clear answer explanations.",
+    tagline: "Independent practice-style questions for ADR driver training revision.",
+    intro: [
+      "Our ADR Dangerous Goods practice covers the kinds of topics drivers revise for the SQA/City & Guilds ADR driver training assessments — hazardous goods, vehicle markings, safety equipment, emergency procedures, classes of dangerous goods and road transport rules.",
+      "These are practice-style questions, not real exam content. ADR drivers must complete an SQA-approved course and sit the official assessments to carry hazardous goods on UK roads.",
+    ],
+    sections: [
+      { heading: "What revision typically covers", body: ["The nine UN classes of dangerous goods, labelling and placarding, transport documentation and instructions in writing, PPE and safety equipment, emergency response, loading and unloading, security awareness, tunnel restrictions."] },
+      { heading: "How candidates usually prepare", body: ["Attend an approved ADR course (core plus tank, packages or specific class modules), revise with practice questions, then sit the SQA assessments at the end of the course."] },
+    ],
+    faqs: [
+      { q: "How long is the ADR certificate valid?", a: "ADR Vocational Training Certificates are typically valid for 5 years; you must complete refresher training and re-sit the assessments before expiry. Confirm with SQA or your training provider." },
+      { q: "Is UK Test Hub an SQA-approved centre?", a: "No. UK Test Hub provides independent practice-style revision only. Book courses and real assessments through an SQA-approved ADR training provider." },
+    ],
+  },
+
+  // -------- NEW: NHS PSYCHOMETRIC ------------------------------------
+  "nhs-psychometric-tests": {
+    title: "NHS Psychometric Tests Practice | UK Test Hub",
+    description:
+      "Practise NHS Psychometric Tests questions online with UK Test Hub. Get free mock tests, instant results and clear answer explanations.",
+    tagline: "Independent practice-style questions for NHS recruitment assessments.",
+    intro: [
+      "Our NHS Psychometric practice covers the kinds of assessments candidates see during NHS recruitment — numerical reasoning, verbal reasoning, situational judgement, logical reasoning and workplace scenario questions.",
+      "Questions are independent practice-style only. The exact tests vary by NHS trust, role and supplier (for example SHL, Saville, Talogy). Always check the assessment information in your application invitation.",
+    ],
+    sections: [
+      { heading: "What revision typically covers", body: ["Numerical reasoning with tables and charts, verbal reasoning passages, NHS-style situational judgement scenarios mapped to the NHS People Promise, logical and inductive reasoning patterns, basic accuracy and data checking."] },
+      { heading: "How candidates usually prepare", body: ["Practise timed mock papers daily for 1–2 weeks, review every wrong answer, and read the NHS Constitution and NHS Values so situational judgement choices feel natural. The day before, focus on rest, not new questions."] },
+    ],
+    faqs: [
+      { q: "Does every NHS job involve psychometric tests?", a: "No. They're most common for graduate schemes, leadership and some clinical training routes. Your application invitation will tell you exactly which assessments to expect." },
+      { q: "Are these the real NHS tests?", a: "No. UK Test Hub is independent and not affiliated with NHS England, NHS Scotland, HSC Northern Ireland or any test supplier. Use these as practice only." },
+    ],
+  },
+
+  // -------- NEW: ADMISSIONS (GRE / GMAT) -----------------------------
+  "gre-practice": {
+    title: "GRE Practice Tests | UK Test Hub",
+    description:
+      "Practise GRE questions online with UK Test Hub. Get free mock tests, instant results and clear answer explanations.",
+    tagline: "Independent practice-style questions for GRE preparation.",
+    intro: [
+      "Our GRE practice covers the kinds of items candidates revise for the GRE General Test — verbal reasoning, quantitative reasoning and analytical writing preparation, including vocabulary, reading comprehension, text completion, maths reasoning and essay planning.",
+      "These are independent practice-style questions and are not affiliated with ETS, who own and administer the GRE. Always use official ETS materials for final preparation.",
+    ],
+    sections: [
+      { heading: "What revision typically covers", body: ["Verbal: text completion, sentence equivalence, reading comprehension. Quantitative: arithmetic, algebra, geometry, data interpretation. Analytical writing: analyse an issue and analyse an argument tasks."] },
+      { heading: "How candidates usually prepare", body: ["Build a 6–10 week plan, study high-frequency GRE vocabulary, do timed sections under exam conditions, and review every wrong answer in detail. Sit at least two full ETS-published practice tests before test day."] },
+    ],
+    faqs: [
+      { q: "Is the GRE accepted in the UK?", a: "Many UK master's and PhD programmes accept the GRE, especially in business, economics, sciences and engineering. Always check each course's specific entry requirements." },
+      { q: "Is UK Test Hub affiliated with ETS?", a: "No. UK Test Hub is independent and not affiliated with ETS, who own and administer the GRE. Our questions are practice-style only." },
+    ],
+  },
+  "gmat-practice": {
+    title: "GMAT Practice Tests | UK Test Hub",
+    description:
+      "Practise GMAT questions online with UK Test Hub. Get free mock tests, instant results and clear answer explanations.",
+    tagline: "Independent practice-style questions for GMAT preparation.",
+    intro: [
+      "Our GMAT practice covers the kinds of items candidates revise for the GMAT Focus Edition — quantitative reasoning, verbal reasoning and data insights, including problem solving, critical reasoning, reading comprehension and data interpretation.",
+      "These are independent practice-style questions and are not affiliated with GMAC, who own and administer the GMAT. Always use official GMAC materials for final preparation.",
+    ],
+    sections: [
+      { heading: "What revision typically covers", body: ["Quantitative: problem solving with arithmetic, algebra and word problems. Verbal: reading comprehension and critical reasoning. Data insights: data sufficiency, multi-source reasoning, table analysis, graphics interpretation."] },
+      { heading: "How candidates usually prepare", body: ["Build an 8–12 week plan, work through GMAC's Official Guide, do timed sections under exam conditions, and review every wrong answer. Sit at least two GMAC-published mock exams before test day."] },
+    ],
+    faqs: [
+      { q: "Is the GMAT used by UK business schools?", a: "Yes — most UK MBA programmes and many specialist master's in finance, management and analytics accept GMAT scores. Check each programme's specific entry requirements." },
+      { q: "Is UK Test Hub affiliated with GMAC?", a: "No. UK Test Hub is independent and not affiliated with GMAC, who own and administer the GMAT. Our questions are practice-style only." },
+    ],
+  },
 };
 
 export const getTopicSeo = (slug: string): TopicSeo | undefined =>
