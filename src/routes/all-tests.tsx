@@ -6,6 +6,7 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { BookmarkButton } from "@/components/BookmarkButton";
 import { categories } from "@/data/categories";
 import { getQuizMeta } from "@/data/quizzes";
+import { englishTests } from "@/data/english/categories";
 
 export const Route = createFileRoute("/all-tests")({
   head: () => ({
