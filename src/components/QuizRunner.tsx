@@ -292,7 +292,7 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
     const next = [...answers];
     next[current] = a;
     setAnswers(next);
-    sounds.click();
+    if (mode === "exam") sounds.click();
   };
 
   const reveal = () => {
