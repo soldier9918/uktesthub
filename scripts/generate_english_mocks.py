@@ -1324,10 +1324,27 @@ FLAVOUR_MR: Dict[str, List[Dict[str, Any]]] = {
          "options": ["Office hours", "Reading list", "Boot fair", "Car-boot sale"],
          "correct": [0, 1],
          "exp": "'Office hours' and 'reading list' are campus terms; the others are UK community events."},
+    "pte-academic-ukvi": [
+        {"q": "Which TWO are features of PTE Academic UKVI?",
+         "options": ["Computer-delivered test", "UKVI-approved for UK visas", "Handwritten essay only", "No speaking section"],
+         "correct": [0, 1],
+         "exp": "PTE Academic UKVI is fully computer-delivered and approved for UK visa and immigration purposes."},
+        {"q": "Which TWO skills are tested in PTE Academic UKVI?",
+         "options": ["Speaking & Writing", "Reading", "Cooking", "Driving"],
+         "correct": [0, 1],
+         "exp": "PTE covers Speaking & Writing, Reading and Listening."},
+    ],
+    "duolingo-english-test": [
+        {"q": "Which TWO are true of the Duolingo English Test?",
+         "options": ["Taken online from home", "Accepted by many UK universities", "Paper-based only", "Lasts five hours"],
+         "correct": [0, 1],
+         "exp": "The Duolingo English Test is taken online and accepted by many UK universities."},
+        {"q": "Which TWO are typical Duolingo English Test task types?",
+         "options": ["Read aloud", "Complete the sentence", "Sing a song", "Draw a picture"],
+         "correct": [0, 1],
+         "exp": "Read aloud and complete-the-sentence are common DET task types."},
     ],
 }
-
-FLAVOUR_VOCAB: Dict[str, List[Dict[str, Any]]] = {
     "esol": [
         {"word": "appointment", "definition": "scheduled meeting", "distractors": ["argument", "agreement", "advert"], "frames": [
             "I have an {} with my GP at half past nine.",
