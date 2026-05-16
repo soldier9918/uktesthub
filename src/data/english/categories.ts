@@ -11,7 +11,15 @@
 // Each (test, skill, level) bank holds 45 mocks × 24 unique questions.
 // Bank JSON lives at public/english-mocks/{test}/{skill}/{level}.json.
 
-export type TestSlug = "ielts" | "esol" | "toefl" | "selt" | "toefl-ibt" | "pte-academic";
+export type TestSlug =
+  | "ielts"
+  | "esol"
+  | "toefl"
+  | "selt"
+  | "toefl-ibt"
+  | "pte-academic"
+  | "pte-academic-ukvi"
+  | "duolingo-english-test";
 export type SkillSlug =
   | "listening"
   | "reading"
@@ -205,6 +213,30 @@ export const englishTests: TestConfig[] = [
     studyGuideSlug: SHARED_GUIDE,
     icon: "Mic",
     colourTheme: "coral",
+    skills: FOUR_SKILLS,
+  },
+  {
+    slug: "pte-academic-ukvi",
+    title: "PTE Academic UKVI Practice",
+    shortTitle: "PTE Academic UKVI",
+    tagline: "PTE Academic UKVI Practice",
+    description:
+      "Independent practice-style questions for PTE Academic UKVI — the UK Visa & Immigration version of PTE Academic. Speaking, writing, reading and listening practice across CEFR levels.",
+    studyGuideSlug: SHARED_GUIDE,
+    icon: "ShieldCheck",
+    colourTheme: "gold",
+    skills: FOUR_SKILLS,
+  },
+  {
+    slug: "duolingo-english-test",
+    title: "Duolingo English Test Practice",
+    shortTitle: "Duolingo English",
+    tagline: "Duolingo English Test Practice",
+    description:
+      "Independent practice-style questions for the Duolingo English Test — adaptive computer-delivered English assessment across reading, listening, writing and speaking.",
+    studyGuideSlug: SHARED_GUIDE,
+    icon: "BookOpen",
+    colourTheme: "success",
     skills: FOUR_SKILLS,
   },
 ];

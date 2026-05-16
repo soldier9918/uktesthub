@@ -1421,5 +1421,96 @@
     "totalMocks": 45,
     "questionsPerMock": 24,
     "poolSize": 600
+  },
+  "hgv-theory-test": {
+    "category": "hgv-logistics",
+    "categoryLabel": "HGV / LGV & Logistics",
+    "title": "HGV Theory Test",
+    "weights": { "multiple_choice": 0.85, "true_false": 0.15 },
+    "totalMocks": 45, "questionsPerMock": 24, "poolSize": 600
+  },
+  "lgv-theory-test": {
+    "category": "hgv-logistics",
+    "categoryLabel": "HGV / LGV & Logistics",
+    "title": "LGV Theory Test",
+    "weights": { "multiple_choice": 0.85, "true_false": 0.15 },
+    "totalMocks": 45, "questionsPerMock": 24, "poolSize": 600
+  },
+  "pcv-theory-test": {
+    "category": "hgv-logistics",
+    "categoryLabel": "HGV / LGV & Logistics",
+    "title": "PCV Theory Test",
+    "weights": { "multiple_choice": 0.85, "true_false": 0.15 },
+    "totalMocks": 45, "questionsPerMock": 24, "poolSize": 600
+  },
+  "driver-cpc-module-1": {
+    "category": "hgv-logistics",
+    "categoryLabel": "HGV / LGV & Logistics",
+    "title": "Driver CPC Module 1 Theory Test",
+    "weights": { "multiple_choice": 0.85, "true_false": 0.15 },
+    "totalMocks": 45, "questionsPerMock": 24, "poolSize": 600
+  },
+  "transport-manager-cpc-passenger-transport": {
+    "category": "hgv-logistics",
+    "categoryLabel": "HGV / LGV & Logistics",
+    "title": "Transport Manager CPC Passenger Transport",
+    "weights": { "multiple_choice": 0.85, "true_false": 0.15 },
+    "totalMocks": 45, "questionsPerMock": 24, "poolSize": 600
+  },
+  "adr-core-module-practice": {
+    "category": "hgv-logistics",
+    "categoryLabel": "HGV / LGV & Logistics",
+    "title": "ADR Core Module Practice",
+    "weights": { "multiple_choice": 0.85, "true_false": 0.15 },
+    "totalMocks": 45, "questionsPerMock": 24, "poolSize": 600
+  },
+  "adr-tanks-practice": {
+    "category": "hgv-logistics",
+    "categoryLabel": "HGV / LGV & Logistics",
+    "title": "ADR Tanks Practice",
+    "weights": { "multiple_choice": 0.85, "true_false": 0.15 },
+    "totalMocks": 45, "questionsPerMock": 24, "poolSize": 600
+  },
+  "adr-packages-practice": {
+    "category": "hgv-logistics",
+    "categoryLabel": "HGV / LGV & Logistics",
+    "title": "ADR Packages Practice",
+    "weights": { "multiple_choice": 0.85, "true_false": 0.15 },
+    "totalMocks": 45, "questionsPerMock": 24, "poolSize": 600
+  },
+  "nhs-situational-judgement-test": {
+    "category": "nhs",
+    "categoryLabel": "NHS",
+    "title": "NHS Situational Judgement Test",
+    "weights": { "multiple_choice": 0.85, "true_false": 0.15 },
+    "totalMocks": 45, "questionsPerMock": 24, "poolSize": 600
+  },
+  "sssts-practice-test": {
+    "category": "construction",
+    "categoryLabel": "Construction",
+    "title": "SSSTS Practice Test",
+    "weights": { "multiple_choice": 0.85, "true_false": 0.15 },
+    "totalMocks": 45, "questionsPerMock": 24, "poolSize": 600
+  },
+  "smsts-practice-test": {
+    "category": "construction",
+    "categoryLabel": "Construction",
+    "title": "SMSTS Practice Test",
+    "weights": { "multiple_choice": 0.85, "true_false": 0.15 },
+    "totalMocks": 45, "questionsPerMock": 24, "poolSize": 600
+  },
+  "aws-cloud-practitioner": {
+    "category": "it-tech",
+    "categoryLabel": "IT & Tech",
+    "title": "AWS Cloud Practitioner Practice",
+    "weights": { "multiple_choice": 0.9, "true_false": 0.1 },
+    "totalMocks": 45, "questionsPerMock": 24, "poolSize": 600
+  },
+  "az-900-azure-fundamentals": {
+    "category": "it-tech",
+    "categoryLabel": "IT & Tech",
+    "title": "AZ-900 Azure Fundamentals",
+    "weights": { "multiple_choice": 0.9, "true_false": 0.1 },
+    "totalMocks": 45, "questionsPerMock": 24, "poolSize": 600
   }
 }

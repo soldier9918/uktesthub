@@ -12,11 +12,13 @@ export function IndependentDisclaimer() {
       </p>
       <p className="mt-2">
         UK Test Hub is an independent practice and study website. We are not
-        affiliated with GOV.UK, DVSA, Department for Transport, SQA, ETS,
-        Pearson, GMAC, NHS or any official exam body. Questions are
-        practice-style only — always check the official test provider or
-        government guidance before booking a real exam or relying on a
-        qualification for an application.
+        affiliated with GOV.UK, DVSA, Department for Transport, SQA, RTITB,
+        ITSSAR, NHS, Pearson, ETS, GMAC, UCAT, LNAT, CITB, NEBOSH, IOSH, SIA,
+        CompTIA, Microsoft, AWS, Cisco, AAT, ACCA, CIMA, Cambridge Assessment
+        English or any other official exam body, training provider or awarding
+        organisation. Questions are practice-style only — always check the
+        official test provider or government guidance before booking a real
+        exam or relying on a qualification for an application.
       </p>
     </section>
   );

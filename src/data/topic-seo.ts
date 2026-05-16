@@ -1702,6 +1702,77 @@ export const topicSeo: Record<string, TopicSeo> = {
       { q: "Is UK Test Hub affiliated with GMAC?", a: "No. UK Test Hub is independent and not affiliated with GMAC, who own and administer the GMAT. Our questions are practice-style only." },
     ],
   },
+  // ------------------------------------------------------------------
+  // Phase 1 expansion (Nov 2026) — new practice topics across HGV/LGV,
+  // NHS, Construction safety and IT/Tech. Each uses the `generic()`
+  // helper for the long-form study guide; the topic page itself reads
+  // from this entry for SEO title/description.
+  // ------------------------------------------------------------------
+  "hgv-theory-test": generic(
+    "HGV Theory Test",
+    "DVSA",
+    "the UK theory test for heavy goods vehicle (LGV category C / C+E) drivers, covering hazard perception, traffic signs, vehicle safety, drivers' hours and load security",
+  ),
+  "lgv-theory-test": generic(
+    "LGV Theory Test",
+    "DVSA",
+    "the UK theory test for large goods vehicle drivers (category C and C+E), covering Highway Code, hazard perception, drivers' hours, vehicle handling and tachograph rules",
+  ),
+  "pcv-theory-test": generic(
+    "PCV Theory Test",
+    "DVSA",
+    "the UK theory test for passenger carrying vehicle drivers (categories D and D+E), covering passenger safety, accessibility, Highway Code, hazard perception and drivers' hours",
+  ),
+  "driver-cpc-module-1": generic(
+    "Driver CPC Module 1 Theory Test",
+    "DVSA",
+    "Module 1 of the Driver Certificate of Professional Competence — the two-part theory test covering multiple-choice questions and hazard perception for LGV and PCV professional drivers",
+  ),
+  "transport-manager-cpc-passenger-transport": generic(
+    "Transport Manager CPC Passenger Transport",
+    "OCR / DVSA",
+    "the Certificate of Professional Competence for transport managers operating passenger transport (PSV) operations, covering law, financial management, technical standards and road safety",
+  ),
+  "adr-core-module-practice": generic(
+    "ADR Core Module Practice",
+    "SQA / DVSA",
+    "the Core module of the ADR Driver Training Certificate for transporting dangerous goods by road — general requirements, labelling, documentation, vehicle equipment and emergency action",
+  ),
+  "adr-tanks-practice": generic(
+    "ADR Tanks Practice",
+    "SQA / DVSA",
+    "the ADR Tanks specialisation for drivers carrying dangerous goods in tank vehicles — tank construction, loading and unloading procedures, surge effects and emergency response",
+  ),
+  "adr-packages-practice": generic(
+    "ADR Packages Practice",
+    "SQA / DVSA",
+    "the ADR Packages specialisation for drivers transporting dangerous goods in packages — package marking, segregation rules, load security and emergency procedures",
+  ),
+  "nhs-situational-judgement-test": generic(
+    "NHS Situational Judgement Test",
+    "the NHS",
+    "the NHS Situational Judgement Test used for recruitment into clinical and non-clinical NHS roles — workplace scenarios testing communication, professionalism, teamwork and patient focus",
+  ),
+  "sssts-practice-test": generic(
+    "SSSTS Practice Test",
+    "CITB",
+    "the Site Supervisors' Safety Training Scheme (SSSTS) — a two-day CITB course for first-line supervisors covering legal duties, risk assessment, method statements, toolbox talks and accident reporting",
+  ),
+  "smsts-practice-test": generic(
+    "SMSTS Practice Test",
+    "CITB",
+    "the Site Management Safety Training Scheme (SMSTS) — a five-day CITB course for site managers covering CDM 2015, occupational health, working at height, confined spaces and leadership in safety",
+  ),
+  "aws-cloud-practitioner": generic(
+    "AWS Cloud Practitioner Practice",
+    "Amazon Web Services",
+    "the entry-level AWS Certified Cloud Practitioner (CLF-C02) exam — foundational understanding of AWS cloud concepts, core services, security, architecture, pricing and support",
+  ),
+  "az-900-azure-fundamentals": generic(
+    "AZ-900 Azure Fundamentals",
+    "Microsoft",
+    "the Microsoft AZ-900 Azure Fundamentals exam — cloud concepts, core Azure services, security, privacy, compliance, Azure pricing and SLAs for non-technical and entry-level candidates",
+  ),
 };
 
 export const getTopicSeo = (slug: string): TopicSeo | undefined =>
