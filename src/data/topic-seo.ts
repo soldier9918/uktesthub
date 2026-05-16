@@ -1597,24 +1597,6 @@ export const topicSeo: Record<string, TopicSeo> = {
       { q: "How long is the Driver CPC card valid?", a: "Driver Qualification Cards last 5 years. You must complete 35 hours of approved periodic training in each 5-year cycle. Confirm the current rules on GOV.UK." },
     ],
   },
-  "forklift-flt-theory-test": {
-    title: "Forklift Theory Test Practice | UK Test Hub",
-    description:
-      "Practise Forklift / FLT Theory Test questions online with UK Test Hub. Get free mock tests, instant results and clear answer explanations.",
-    tagline: "Independent practice-style questions for forklift truck operator revision.",
-    intro: [
-      "Our Forklift Theory practice covers the underpinning knowledge most counterbalance and reach truck candidates revise — safety checks, load handling, stability, workplace hazards, signs, PPE, batteries, refuelling and safe operating procedures.",
-      "Questions are independent practice-style only. The real assessment is set by your accrediting body (for example RTITB, ITSSAR or AITT). Always follow HSE guidance L117 and your employer's site rules.",
-    ],
-    sections: [
-      { heading: "What revision typically covers", body: ["Pre-use inspections, stability triangle, mast and fork operation, load assessment and ratings, refuelling and battery charging, pedestrian safety, racking awareness, signs and markings, near-miss reporting."] },
-      { heading: "How candidates usually study", body: ["Most operators sit a short accredited course (typically 1–5 days depending on prior experience), combine reading with practical instruction, then take a theory and practical test at the end of the course."] },
-    ],
-    faqs: [
-      { q: "Is there one official 'FLT theory test'?", a: "No single national exam — different accrediting bodies (RTITB, ITSSAR, AITT, NPORS) issue their own assessments. Check which standard your employer or training provider uses." },
-      { q: "Does my forklift licence expire?", a: "Forklift training is generally refreshed every 3–5 years, and after any incident or change of equipment. Check current HSE guidance and your employer's policy." },
-    ],
-  },
   "d1-minibus-theory-test": {
     title: "D1 Minibus Theory Test Practice | UK Test Hub",
     description:
@@ -1631,24 +1613,6 @@ export const topicSeo: Record<string, TopicSeo> = {
     faqs: [
       { q: "Do I need a D1 entitlement to drive a minibus?", a: "It depends on the vehicle weight, seating, whether driving is for hire or reward, and when you passed your car test. Check the current rules on GOV.UK." },
       { q: "Is this the official DVSA test?", a: "No. UK Test Hub is independent. The official D1 theory test is set and run by the DVSA." },
-    ],
-  },
-  "adr-dangerous-goods-test": {
-    title: "ADR Dangerous Goods Test Practice | UK Test Hub",
-    description:
-      "Practise ADR Dangerous Goods Test questions online with UK Test Hub. Get free mock tests, instant results and clear answer explanations.",
-    tagline: "Independent practice-style questions for ADR driver training revision.",
-    intro: [
-      "Our ADR Dangerous Goods practice covers the kinds of topics drivers revise for the SQA/City & Guilds ADR driver training assessments — hazardous goods, vehicle markings, safety equipment, emergency procedures, classes of dangerous goods and road transport rules.",
-      "These are practice-style questions, not real exam content. ADR drivers must complete an SQA-approved course and sit the official assessments to carry hazardous goods on UK roads.",
-    ],
-    sections: [
-      { heading: "What revision typically covers", body: ["The nine UN classes of dangerous goods, labelling and placarding, transport documentation and instructions in writing, PPE and safety equipment, emergency response, loading and unloading, security awareness, tunnel restrictions."] },
-      { heading: "How candidates usually prepare", body: ["Attend an approved ADR course (core plus tank, packages or specific class modules), revise with practice questions, then sit the SQA assessments at the end of the course."] },
-    ],
-    faqs: [
-      { q: "How long is the ADR certificate valid?", a: "ADR Vocational Training Certificates are typically valid for 5 years; you must complete refresher training and re-sit the assessments before expiry. Confirm with SQA or your training provider." },
-      { q: "Is UK Test Hub an SQA-approved centre?", a: "No. UK Test Hub provides independent practice-style revision only. Book courses and real assessments through an SQA-approved ADR training provider." },
     ],
   },
 

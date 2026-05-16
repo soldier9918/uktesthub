@@ -50,12 +50,6 @@ export const categories: Category[] = [
       { slug: "hazard-perception", title: "Hazard Perception Test" },
       { slug: "road-signs", title: "Road Signs Test" },
       { slug: "motorcycle-theory", title: "Motorcycle Theory Test" },
-      // Professional Driving & Transport practice
-      { slug: "transport-manager-cpc-road-haulage", title: "Transport Manager CPC Road Haulage Practice" },
-      { slug: "driver-cpc", title: "Driver CPC Practice" },
-      { slug: "forklift-flt-theory-test", title: "Forklift / FLT Theory Test Practice" },
-      { slug: "d1-minibus-theory-test", title: "D1 Minibus Theory Test Practice" },
-      { slug: "adr-dangerous-goods-test", title: "ADR Dangerous Goods Test Practice" },
     ],
   },
   {
@@ -373,9 +367,12 @@ export const categories: Category[] = [
     topics: [
       { slug: "driver-cpc-module-2", title: "Driver CPC Module 2 (Case Studies)" },
       { slug: "driver-cpc-module-4", title: "Driver CPC Module 4 (Practical Demonstration Theory)" },
+      { slug: "driver-cpc", title: "Driver CPC Practice" },
       { slug: "adr-dangerous-goods", title: "ADR Dangerous Goods Awareness" },
       { slug: "forklift-theory", title: "Forklift Truck Theory (RTITB / ITSSAR)" },
       { slug: "transport-manager-cpc", title: "Transport Manager CPC Practice" },
+      { slug: "transport-manager-cpc-road-haulage", title: "Transport Manager CPC Road Haulage Practice" },
+      { slug: "d1-minibus-theory-test", title: "D1 Minibus Theory Test Practice" },
     ],
   },
   {
