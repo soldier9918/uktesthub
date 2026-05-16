@@ -133,8 +133,6 @@ function MockCard({
 function TopicPage() {
   const { category, topic } = Route.useLoaderData();
   const slots = listMockSlots(topic.slug);
-  const slugs = slots.map((s) => s.slug);
-  const scores = useMockProgress(slugs);
   const availableCount = slots.filter((s) => s.available).length;
 
   return (
