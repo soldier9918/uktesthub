@@ -264,7 +264,6 @@ export const categories: Category[] = [
       { slug: "comptia-a-plus", title: "CompTIA A+ Practice" },
       { slug: "itil-4", title: "ITIL 4 Foundation Practice" },
       { slug: "microsoft-fundamentals", title: "Microsoft Azure & 365 Fundamentals (AZ-900 / MS-900)" },
-      { slug: "az-900-azure-fundamentals", title: "AZ-900 Azure Fundamentals" },
       { slug: "aws-cloud-practitioner", title: "AWS Cloud Practitioner Practice" },
       { slug: "cyber-awareness", title: "Cyber Security Awareness" },
     ],
@@ -387,7 +386,6 @@ export const categories: Category[] = [
       { slug: "adr-tanks-practice", title: "ADR Tanks Practice" },
       { slug: "adr-packages-practice", title: "ADR Packages Practice" },
       { slug: "forklift-flt-theory-test", title: "Forklift / FLT Theory Test Practice" },
-      { slug: "transport-manager-cpc", title: "Transport Manager CPC Practice" },
       { slug: "transport-manager-cpc-road-haulage", title: "Transport Manager CPC Road Haulage Practice" },
       { slug: "transport-manager-cpc-passenger-transport", title: "Transport Manager CPC Passenger Transport" },
       { slug: "d1-minibus-theory-test", title: "D1 Minibus Theory Test Practice" },
@@ -486,7 +484,6 @@ export const categories: Category[] = [
     heroImage: heroItTech,
     topics: [
       { slug: "aws-cloud-practitioner", title: "AWS Cloud Practitioner Practice" },
-      { slug: "az-900-azure-fundamentals", title: "AZ-900 Azure Fundamentals" },
       { slug: "microsoft-fundamentals", title: "Microsoft Azure & 365 Fundamentals (AZ-900 / MS-900)" },
       { slug: "cyber-awareness", title: "Cyber Security Awareness" },
     ],
