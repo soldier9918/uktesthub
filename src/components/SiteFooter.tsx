@@ -101,7 +101,8 @@ function FooterColumn({ title, items }: { title: string; items: FooterLink[] }) 
 
 export function SiteFooter() {
   return (
-    <footer className="bg-navy-deep text-navy-foreground">
+    <footer className="relative bg-navy-deep text-navy-foreground">
+      <div aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-1 bg-coral shadow-[0_2px_8px_rgba(239,68,68,0.5)]" />
       <div className="mx-auto max-w-7xl px-4 pt-16 md:px-6">
         <div className="grid gap-12 lg:grid-cols-12">
           <div className="lg:col-span-7">
