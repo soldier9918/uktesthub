@@ -85,7 +85,7 @@ function AllTestsPage() {
     (activeCat !== "all" ? 1 : 0) + (activeType !== "all" ? 1 : 0);
 
   const totalTests = useMemo(
-    () => categories.reduce((n, c) => n + c.topics.length, 0),
+    () => categories.reduce((n, c) => n + c.topics.length, 0) + englishTests.length,
     [],
   );
 
@@ -109,10 +109,24 @@ function AllTestsPage() {
       .filter((c) => c.topics.length > 0);
   }, [query, activeCat, activeType]);
 
+  const filteredEnglishTests = useMemo(() => {
+    const q = query.trim().toLowerCase();
+    const catOk = activeCat === "all" || activeCat === "english";
+    const typeOk = activeType === "all" || activeType === "Language";
+    if (!catOk || !typeOk) return [];
+    return englishTests.filter(
+      (t) =>
+        !q ||
+        t.title.toLowerCase().includes(q) ||
+        t.shortTitle.toLowerCase().includes(q) ||
+        "english language tests".includes(q),
+    );
+  }, [query, activeCat, activeType]);
+
   const matchedCount = filteredCategories.reduce(
     (n, c) => n + c.topics.length,
     0,
-  );
+  ) + filteredEnglishTests.length;
 
   return (
     <div className="min-h-screen bg-[#f7f5f0]">
