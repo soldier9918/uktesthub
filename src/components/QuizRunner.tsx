@@ -234,6 +234,7 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
 
   useEffect(() => {
     if (!finished) return;
+    sounds.fanfare(percent >= quiz.passMark);
     void trackEvent({
       event_type: "quiz_complete",
       topic_slug: (quiz as { topicSlug?: string }).topicSlug ?? null,
