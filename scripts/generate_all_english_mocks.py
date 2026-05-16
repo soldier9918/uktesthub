@@ -22,7 +22,7 @@ FOUR_SKILLS = ["listening", "reading", "writing", "speaking"]
 ALL_LEVELS = ["a1", "a2", "b1", "b2", "c1", "c2"]
 
 TRIPLES = []
-for test in ["ielts", "esol", "toefl"]:
+for test in ["ielts", "esol", "toefl", "pte-academic-ukvi", "duolingo-english-test"]:
     for skill in FOUR_SKILLS:
         for lvl in ALL_LEVELS:
             TRIPLES.append((test, skill, lvl))
