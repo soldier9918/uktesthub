@@ -521,6 +521,20 @@ export const categories: Category[] = [
       { slug: "ipaf-pasma", title: "IPAF / PASMA Working at Height Test" },
     ],
   },
+  {
+    slug: "fun",
+    title: "Fun & Viral Quizzes",
+    short: "British general knowledge & light-hearted trivia",
+    description:
+      "Light-hearted British trivia and general knowledge quizzes — perfect for pub quiz prep or a quick brain break.",
+    icon: "Sparkles",
+    accent: "coral",
+    heroImage: heroCitizenship,
+    topics: [
+      { slug: "daily", title: "General Knowledge Daily" },
+      { slug: "how-british", title: "How British Are You?" },
+    ],
+  },
 ];
 
 export const getCategory = (slug: string) =>
