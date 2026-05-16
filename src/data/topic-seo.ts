@@ -1529,7 +1529,7 @@ export const topicSeo: Record<string, TopicSeo> = {
   "driver-cpc-module-2": generic("Driver CPC Module 2 (Case Studies)", "the DVSA", "the Driver CPC Module 2 case studies test — 7 on-screen scenarios with multiple-choice questions, required to drive professionally for a living in a lorry, bus or coach"),
   "driver-cpc-module-4": generic("Driver CPC Module 4 (Practical Demonstration Theory)", "the DVSA", "the underpinning theory for Driver CPC Module 4 — vehicle safety, securing loads, emergency procedures and the daily walkaround check"),
   "adr-dangerous-goods": generic("ADR Dangerous Goods Awareness", "SQA / City & Guilds on behalf of the DVSA", "the ADR driver training assessment — required to carry packaged or tanker dangerous goods on UK and European roads. Covers the nine UN classes, documentation and emergency response"),
-  "forklift-theory": generic("Forklift Truck Theory (RTITB / ITSSAR)", "RTITB and ITSSAR", "the underpinning knowledge test for counterbalance and reach forklift truck operation — pre-use checks, stability triangle, load handling and HSE L117 guidance"),
+  
   "transport-manager-cpc": generic("Transport Manager CPC Practice", "OCR on behalf of the Traffic Commissioners", "the Transport Manager CPC (Road Haulage) — multiple-choice and case-study exam required to be the named transport manager on a UK Operator Licence"),
 
   // -------- CARE & SOCIAL WORK --------------------------------------
