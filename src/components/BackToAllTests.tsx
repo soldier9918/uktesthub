@@ -4,12 +4,12 @@ import { ArrowLeft } from "lucide-react";
 export function BackToAllTests() {
   return (
     <div className="border-b border-border bg-[#f7f5f0]">
-      <div className="mx-auto max-w-7xl px-4 py-3 md:px-6">
+      <div className="mx-auto max-w-7xl px-4 py-4 md:px-6 md:py-5">
         <Link
           to="/all-tests"
-          className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-3 py-1.5 text-xs font-semibold text-foreground shadow-soft transition-colors hover:border-coral/40 hover:text-coral"
+          className="inline-flex items-center gap-2.5 rounded-full border-2 border-coral/30 bg-card px-5 py-2.5 text-sm font-bold text-foreground shadow-elevated transition-all hover:-translate-y-0.5 hover:border-coral hover:text-coral md:px-6 md:py-3 md:text-base"
         >
-          <ArrowLeft className="h-3.5 w-3.5" />
+          <ArrowLeft className="h-5 w-5" />
           Back to all tests
         </Link>
       </div>
