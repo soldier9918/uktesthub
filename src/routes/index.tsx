@@ -409,15 +409,15 @@ function HomePage() {
 
         {/* TOPIC PRACTICE */}
         <section className="mt-20 rounded-3xl border border-border bg-card p-6 shadow-soft md:p-10">
-          <div className="grid gap-10 lg:grid-cols-[1fr_320px] lg:items-start">
+          <div className="flex flex-col items-center text-center">
+            <SectionTitle>Practice by Topic</SectionTitle>
+            <p className="mt-4 max-w-2xl text-muted-foreground">
+              Jump straight into a specific topic. Every link below is its own
+              page, updated with fresh questions.
+            </p>
+          </div>
+          <div className="mt-10 grid gap-10 lg:grid-cols-[1fr_320px] lg:items-start">
             <div>
-              <h2 className="font-display text-2xl font-bold md:text-3xl">
-                Practice by topic
-              </h2>
-              <p className="mt-1 max-w-2xl text-muted-foreground">
-                Jump straight into a specific topic. Every link below is its own
-                page, updated with fresh questions.
-              </p>
               <div className="mt-8 gap-x-8 sm:columns-2 [column-fill:_balance]">
                 {categories.map((c) => (
                   <div key={c.slug} className="mb-8 break-inside-avoid">
