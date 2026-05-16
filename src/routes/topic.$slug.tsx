@@ -11,9 +11,12 @@ import { listMockSlots, QUESTIONS_PER_MOCK } from "@/data/mocks";
 import { Home, ChevronRight } from "lucide-react";
 import { IndependentDisclaimer } from "@/components/IndependentDisclaimer";
 import { breadcrumbSchema } from "@/lib/seo";
+import { LEGACY_SLUG_REDIRECTS } from "@/data/slug-redirects";
 
 export const Route = createFileRoute("/topic/$slug")({
   loader: ({ params }) => {
+    const canonical = LEGACY_SLUG_REDIRECTS[params.slug];
+    if (canonical) throw redirect({ to: "/topic/$slug", params: { slug: canonical } });
     if (getTest(params.slug)) {
       throw redirect({
         to: "/english-language-tests/$test",

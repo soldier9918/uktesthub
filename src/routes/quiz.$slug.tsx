@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { createFileRoute, Link, notFound } from "@tanstack/react-router";
+import { createFileRoute, Link, notFound, redirect } from "@tanstack/react-router";
+import { LEGACY_SLUG_REDIRECTS } from "@/data/slug-redirects";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { AdSlot } from "@/components/AdSlot";
@@ -13,6 +14,13 @@ import { breadcrumbSchema } from "@/lib/seo";
 
 export const Route = createFileRoute("/quiz/$slug")({
   loader: async ({ params }) => {
+    // 301-style redirects for renamed topics, including their /…-mock-N variants.
+    for (const [oldSlug, newSlug] of Object.entries(LEGACY_SLUG_REDIRECTS)) {
+      if (params.slug === oldSlug || params.slug.startsWith(`${oldSlug}-mock-`)) {
+        const rewritten = params.slug.replace(oldSlug, newSlug);
+        throw redirect({ to: "/quiz/$slug", params: { slug: rewritten } });
+      }
+    }
     // During SSR, set the absolute base URL used for fetching public/mocks/*.json
     captureMockBaseUrl();
     const quiz = await getQuiz(params.slug);

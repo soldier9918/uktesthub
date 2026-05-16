@@ -1529,7 +1529,7 @@ export const topicSeo: Record<string, TopicSeo> = {
   "driver-cpc-module-2": generic("Driver CPC Module 2 (Case Studies)", "the DVSA", "the Driver CPC Module 2 case studies test — 7 on-screen scenarios with multiple-choice questions, required to drive professionally for a living in a lorry, bus or coach"),
   "driver-cpc-module-4": generic("Driver CPC Module 4 (Practical Demonstration Theory)", "the DVSA", "the underpinning theory for Driver CPC Module 4 — vehicle safety, securing loads, emergency procedures and the daily walkaround check"),
   "adr-dangerous-goods": generic("ADR Dangerous Goods Awareness", "SQA / City & Guilds on behalf of the DVSA", "the ADR driver training assessment — required to carry packaged or tanker dangerous goods on UK and European roads. Covers the nine UN classes, documentation and emergency response"),
-  "forklift-theory": generic("Forklift Truck Theory (RTITB / ITSSAR)", "RTITB and ITSSAR", "the underpinning knowledge test for counterbalance and reach forklift truck operation — pre-use checks, stability triangle, load handling and HSE L117 guidance"),
+  
   "transport-manager-cpc": generic("Transport Manager CPC Practice", "OCR on behalf of the Traffic Commissioners", "the Transport Manager CPC (Road Haulage) — multiple-choice and case-study exam required to be the named transport manager on a UK Operator Licence"),
 
   // -------- CARE & SOCIAL WORK --------------------------------------
@@ -1601,18 +1601,29 @@ export const topicSeo: Record<string, TopicSeo> = {
     title: "Forklift Theory Test Practice | UK Test Hub",
     description:
       "Practise forklift and FLT theory test questions online with UK Test Hub. Cover safety checks, load handling, stability, hazards and operator responsibilities.",
-    tagline: "Independent practice-style questions for forklift truck operator revision.",
+    tagline: "RTITB / ITSSAR-style practice for forklift truck and FLT operator theory revision.",
     intro: [
-      "Our Forklift / FLT Theory practice covers the underpinning knowledge most counterbalance and reach truck candidates revise — safety checks, load handling, stability, workplace hazards, signs, PPE, batteries, refuelling and safe operating procedures.",
-      "Questions are independent practice-style only. The real assessment is set by your accrediting body (for example RTITB, ITSSAR or AITT). Always follow HSE guidance L117 and your employer's site rules.",
+      "Practise forklift and FLT theory test questions with UK Test Hub. This section is designed for learners and operators preparing for forklift truck theory knowledge, including safety checks, load handling, stability, workplace hazards, PPE, signs, operator responsibilities and safe working procedures.",
+      "All questions are independent practice-style. UK Test Hub is not affiliated with RTITB, ITSSAR, AITT, NPORS, HSE or any official awarding body — always check your training provider's official requirements before taking a real assessment.",
     ],
     sections: [
-      { heading: "What revision typically covers", body: ["Pre-use inspections, stability triangle, mast and fork operation, load assessment and ratings, refuelling and battery charging, pedestrian safety, racking awareness, signs and markings, near-miss reporting."] },
-      { heading: "How candidates usually study", body: ["Most operators sit a short accredited course (typically 1–5 days depending on prior experience), combine reading with practical instruction, then take a theory and practical test at the end of the course."] },
+      { heading: "What is a Forklift / FLT theory test?", body: ["The forklift theory element is the underpinning knowledge an operator needs to work a counterbalance, reach or rough-terrain truck safely. In the UK there is no single national exam — the theory is delivered and assessed by your accredited training provider, typically working to RTITB, ITSSAR, AITT or NPORS standards. This page gives you RTITB / ITSSAR-style practice you can use alongside (not instead of) an accredited course."] },
+      { heading: "Who this practice is for", body: ["New operators preparing for a Basic course, experienced operators getting ready for refresher training, warehouse and logistics staff brushing up before a workplace assessment, and anyone revising for an FLT operator theory element. Useful whether you're training on counterbalance, reach, side-loader or pivot-steer trucks."] },
+      { heading: "Common forklift safety topics", body: ["Site rules and segregation of vehicles and pedestrians, speed limits, blind spots, refuelling and battery charging safety, working at height (cages and order pickers), lone-working risks, and the role of HSE guidance L117 (Rider-operated lift trucks: operator training and safe use)."] },
+      { heading: "Pre-use checks", body: ["Daily walkaround and pre-shift inspection: tyres, forks and heel wear, mast chains, hydraulic hoses for leaks, horn, lights and reversing beepers, seat belt, hand and foot brakes, data plate and capacity rating, battery condition or fuel level. Reporting and tagging-out defective trucks."] },
+      { heading: "Load handling and stability", body: ["The stability triangle and how the centre of gravity shifts with the load, load centre distance, residual capacity at height and reach, picking up and setting down loads correctly, tilt and side-shift use, travelling with the load tilted back and at a safe height, ramps and inclines."] },
+      { heading: "Workplace hazards", body: ["Pedestrians and other vehicles, racking damage and the safe stop reporting cycle, spills and contamination, overhead obstructions, loading bays and dock edges, weather conditions for outdoor work, recovering a tipped truck, near-miss reporting."] },
+      { heading: "PPE and safety signs", body: ["Hi-vis, safety boots, head protection in designated areas, gloves and eye protection for battery work, hearing protection where required. Recognising statutory signs (prohibition, mandatory, warning, safe condition) and site-specific markings — pedestrian walkways, racking labels, capacity plates."] },
+      { heading: "Operator responsibilities", body: ["Only operate trucks you are trained and authorised on, keep certificates and refresher training current, follow site rules and the safe system of work, report defects, never let untrained colleagues drive, and stop work if conditions become unsafe."] },
+      { heading: "Common mistakes to avoid", body: ["Travelling with the forks raised, exceeding the rated capacity for the load centre and height, sharp turns at speed, ignoring tyre or mast damage, charging batteries in unventilated areas, removing or bypassing the seat belt, and assuming a refresher isn't needed because the truck 'feels familiar'."] },
+      { heading: "FAQs", body: ["See the questions and answers below for the points learners ask most often before booking a course or refresher."] },
     ],
     faqs: [
-      { q: "Is there one official 'FLT theory test'?", a: "No single national exam — different accrediting bodies (RTITB, ITSSAR, AITT, NPORS) issue their own assessments. Check which standard your employer or training provider uses." },
-      { q: "Does my forklift licence expire?", a: "Forklift training is generally refreshed every 3–5 years, and after any incident or change of equipment. Check current HSE guidance and your employer's policy." },
+      { q: "Is there one official 'FLT theory test'?", a: "No single national exam. Different accrediting bodies (RTITB, ITSSAR, AITT, NPORS) issue their own assessments, delivered through approved training providers. Check which standard your employer or course provider uses." },
+      { q: "Does my forklift licence expire?", a: "There's no formal expiry, but HSE guidance recommends refresher training every 3–5 years, after any incident or near-miss, when you change to a different truck type, or if your duties change. Always follow your employer's policy." },
+      { q: "Can I pass an FLT test using these questions alone?", a: "No. Forklift operator certification requires accredited classroom and practical training. Use UK Test Hub for RTITB / ITSSAR-style revision alongside your official course." },
+      { q: "What is HSE guidance L117?", a: "L117 is the HSE's Approved Code of Practice on rider-operated lift trucks — it sets out the standard for operator training, supervision and safe use in UK workplaces." },
+      { q: "Is UK Test Hub affiliated with RTITB or ITSSAR?", a: "No. UK Test Hub is an independent practice and study website. We are not affiliated with RTITB, ITSSAR, AITT, NPORS, HSE or any official awarding body. Always confirm requirements with your accredited training provider." },
     ],
   },
   "d1-minibus-theory-test": {

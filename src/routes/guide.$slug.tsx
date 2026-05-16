@@ -1,4 +1,5 @@
-import { createFileRoute, Link, notFound } from "@tanstack/react-router";
+import { createFileRoute, Link, notFound, redirect } from "@tanstack/react-router";
+import { LEGACY_SLUG_REDIRECTS } from "@/data/slug-redirects";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { AdSlot } from "@/components/AdSlot";
@@ -35,6 +36,8 @@ function renderInlineLinks(text: string) {
 
 export const Route = createFileRoute("/guide/$slug")({
   loader: ({ params }) => {
+    const canonical = LEGACY_SLUG_REDIRECTS[params.slug];
+    if (canonical) throw redirect({ to: "/guide/$slug", params: { slug: canonical } });
     const found = findTopic(params.slug);
     if (!found) throw notFound();
     return { category: found.category, topic: found.topic };

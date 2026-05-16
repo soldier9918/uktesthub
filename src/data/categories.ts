@@ -360,7 +360,7 @@ export const categories: Category[] = [
     title: "HGV / LGV & Logistics",
     short: "Driver CPC, ADR, Forklift & Transport Manager CPC",
     description:
-      "Free practice for UK professional driving and logistics qualifications — Driver CPC Module 2 and Module 4, ADR dangerous goods awareness, forklift truck theory and Transport Manager CPC.",
+      "Free practice for UK professional driving and logistics qualifications — Driver CPC Module 2 and Module 4, ADR dangerous goods awareness, forklift / FLT theory and Transport Manager CPC.",
     icon: "Truck",
     accent: "navy",
     heroImage: heroHgvLogistics,
@@ -369,7 +369,6 @@ export const categories: Category[] = [
       { slug: "driver-cpc-module-4", title: "Driver CPC Module 4 (Practical Demonstration Theory)" },
       { slug: "driver-cpc", title: "Driver CPC Practice" },
       { slug: "adr-dangerous-goods", title: "ADR Dangerous Goods Awareness" },
-      { slug: "forklift-theory", title: "Forklift Truck Theory (RTITB / ITSSAR)" },
       { slug: "forklift-flt-theory-test", title: "Forklift / FLT Theory Test Practice" },
       { slug: "transport-manager-cpc", title: "Transport Manager CPC Practice" },
       { slug: "transport-manager-cpc-road-haulage", title: "Transport Manager CPC Road Haulage Practice" },
