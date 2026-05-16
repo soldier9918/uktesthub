@@ -1615,24 +1615,6 @@ export const topicSeo: Record<string, TopicSeo> = {
       { q: "Is this the official DVSA test?", a: "No. UK Test Hub is independent. The official D1 theory test is set and run by the DVSA." },
     ],
   },
-  "adr-dangerous-goods-test": {
-    title: "ADR Dangerous Goods Test Practice | UK Test Hub",
-    description:
-      "Practise ADR Dangerous Goods Test questions online with UK Test Hub. Get free mock tests, instant results and clear answer explanations.",
-    tagline: "Independent practice-style questions for ADR driver training revision.",
-    intro: [
-      "Our ADR Dangerous Goods practice covers the kinds of topics drivers revise for the SQA/City & Guilds ADR driver training assessments — hazardous goods, vehicle markings, safety equipment, emergency procedures, classes of dangerous goods and road transport rules.",
-      "These are practice-style questions, not real exam content. ADR drivers must complete an SQA-approved course and sit the official assessments to carry hazardous goods on UK roads.",
-    ],
-    sections: [
-      { heading: "What revision typically covers", body: ["The nine UN classes of dangerous goods, labelling and placarding, transport documentation and instructions in writing, PPE and safety equipment, emergency response, loading and unloading, security awareness, tunnel restrictions."] },
-      { heading: "How candidates usually prepare", body: ["Attend an approved ADR course (core plus tank, packages or specific class modules), revise with practice questions, then sit the SQA assessments at the end of the course."] },
-    ],
-    faqs: [
-      { q: "How long is the ADR certificate valid?", a: "ADR Vocational Training Certificates are typically valid for 5 years; you must complete refresher training and re-sit the assessments before expiry. Confirm with SQA or your training provider." },
-      { q: "Is UK Test Hub an SQA-approved centre?", a: "No. UK Test Hub provides independent practice-style revision only. Book courses and real assessments through an SQA-approved ADR training provider." },
-    ],
-  },
 
   // -------- NEW: NHS PSYCHOMETRIC ------------------------------------
   "nhs-psychometric-tests": {
