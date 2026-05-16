@@ -8,7 +8,11 @@ import {
   ChevronRight,
   RotateCcw,
   ArrowRight,
+  List,
+  Volume2,
+  VolumeX,
 } from "lucide-react";
+import { sounds, useSoundMuted } from "@/lib/quiz-sounds";
 import type {
   Quiz,
   Question,
