@@ -210,8 +210,7 @@ function HomePage() {
                   { slug: "life-in-the-uk", label: "Life in the UK Tests" },
                   { slug: "ielts", label: "IELTS Tests" },
                   { slug: "cscs-operative", label: "CSCS Tests" },
-                  { slug: "nmc", label: "NMC" },
-                  { slug: "nmc-cbt", label: "CBT Tests" },
+                  { slug: "nmc-cbt", label: "NMC CBT Tests" },
                   { slug: "sia-door-supervisor", label: "SIA Tests" },
                   { slug: "esol", label: "ESOL Tests" },
                   
