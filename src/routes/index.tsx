@@ -482,17 +482,14 @@ function HomePage() {
         {/* WHAT IS UK TEST HUB */}
         <section className="mt-20">
           <div className="rounded-3xl border border-border bg-card p-6 shadow-soft md:p-10 lg:p-12">
-            <span className="inline-flex items-center gap-2 rounded-full bg-coral/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.14em] text-coral">
-              About the platform
-            </span>
-            <h2 className="mt-4 border-l-4 border-coral pl-4 font-display text-3xl font-bold leading-tight text-foreground md:text-4xl">
-              What is UK Test Hub?
-            </h2>
-            <p className="mt-5 text-base leading-relaxed text-muted-foreground md:text-lg">
-              UK Test Hub is a free, independent practice platform built to
-              help learners across Britain prepare for UK tests and
-              assessments — no accounts, no paywalls, no surprises.
-            </p>
+            <div className="flex flex-col items-center text-center">
+              <SectionTitle>What is UK Test Hub?</SectionTitle>
+              <p className="mt-5 max-w-3xl text-base leading-relaxed text-muted-foreground md:text-lg">
+                UK Test Hub is a free, independent practice platform built to
+                help learners across Britain prepare for UK tests and
+                assessments — no accounts, no paywalls, no surprises.
+              </p>
+            </div>
 
             <div className="mt-8 space-y-5 text-base leading-relaxed text-muted-foreground">
               <p>
