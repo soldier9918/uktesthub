@@ -1597,6 +1597,24 @@ export const topicSeo: Record<string, TopicSeo> = {
       { q: "How long is the Driver CPC card valid?", a: "Driver Qualification Cards last 5 years. You must complete 35 hours of approved periodic training in each 5-year cycle. Confirm the current rules on GOV.UK." },
     ],
   },
+  "forklift-flt-theory-test": {
+    title: "Forklift Theory Test Practice | UK Test Hub",
+    description:
+      "Practise forklift and FLT theory test questions online with UK Test Hub. Cover safety checks, load handling, stability, hazards and operator responsibilities.",
+    tagline: "Independent practice-style questions for forklift truck operator revision.",
+    intro: [
+      "Our Forklift / FLT Theory practice covers the underpinning knowledge most counterbalance and reach truck candidates revise — safety checks, load handling, stability, workplace hazards, signs, PPE, batteries, refuelling and safe operating procedures.",
+      "Questions are independent practice-style only. The real assessment is set by your accrediting body (for example RTITB, ITSSAR or AITT). Always follow HSE guidance L117 and your employer's site rules.",
+    ],
+    sections: [
+      { heading: "What revision typically covers", body: ["Pre-use inspections, stability triangle, mast and fork operation, load assessment and ratings, refuelling and battery charging, pedestrian safety, racking awareness, signs and markings, near-miss reporting."] },
+      { heading: "How candidates usually study", body: ["Most operators sit a short accredited course (typically 1–5 days depending on prior experience), combine reading with practical instruction, then take a theory and practical test at the end of the course."] },
+    ],
+    faqs: [
+      { q: "Is there one official 'FLT theory test'?", a: "No single national exam — different accrediting bodies (RTITB, ITSSAR, AITT, NPORS) issue their own assessments. Check which standard your employer or training provider uses." },
+      { q: "Does my forklift licence expire?", a: "Forklift training is generally refreshed every 3–5 years, and after any incident or change of equipment. Check current HSE guidance and your employer's policy." },
+    ],
+  },
   "d1-minibus-theory-test": {
     title: "D1 Minibus Theory Test Practice | UK Test Hub",
     description:
