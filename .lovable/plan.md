@@ -1,42 +1,56 @@
-## Problem
+## Goal
 
-Five "professional driving" topics added recently are listed under **Driving & Transport** (car/motorcycle DVSA theory category), but **HGV/LGV & Logistics** already covers the same qualifications. Result: duplicate cards across categories and a misplaced section ("Driving & Transport" should stay focused on DVSA car/bike theory).
+Collapse the two forklift topics into a single canonical entry at `/topic/forklift-flt-theory-test`, preserving the existing 1,090-question bank (currently filed under `forklift-theory`), and 301-redirect the old URLs so no SEO equity or sitemap duplication remains.
+
+## What's in the codebase today
+
+- `forklift-theory` — populated bank (`public/mocks/forklift-theory.json`, ~1,090 MCQs), live SEO entry, card titled "Forklift Truck Theory (RTITB / ITSSAR)".
+- `forklift-flt-theory-test` — added in the last turn, currently a 24-question STUB (`public/mocks/forklift-flt-theory-test.json`) with the SEO copy you supplied.
+- Both slugs sit in HGV/LGV & Logistics → duplicate card visible on the category page.
+- `src/routes/topic.$slug.tsx` already supports redirects via `throw redirect(...)` from the loader, so the same pattern can be reused for the deprecated slug. `guide.$slug.tsx` and `quiz.$slug.tsx` need the same treatment.
 
 ## Changes
 
-### 1. `src/data/categories.ts` — Driving & Transport
-Remove the five professional topics so the category contains only:
-- `driving-theory`, `hazard-perception`, `road-signs`, `motorcycle-theory`
+### 1. Move the real question bank to the new slug
+- Overwrite `public/mocks/forklift-flt-theory-test.json` with the contents of `public/mocks/forklift-theory.json`, updating the inner `topic` field to `"forklift-flt-theory-test"` and the `title` to `"Forklift / FLT Theory Test Practice"`.
+- Delete `public/mocks/forklift-theory.json`.
+- In `src/data/mocks/mock-index.json`, remove the `"forklift-theory"` key (the `"forklift-flt-theory-test"` key already has all 45 mock slots).
 
-### 2. `src/data/categories.ts` — HGV/LGV & Logistics
-Keep the existing 5 topics, and add the genuinely new ones (deduped):
-- Keep: `driver-cpc-module-2`, `driver-cpc-module-4`, `adr-dangerous-goods`, `forklift-theory`, `transport-manager-cpc`
-- Add: `transport-manager-cpc-road-haulage` (different to base Transport Manager CPC — road haulage specialism)
-- Add: `d1-minibus-theory-test` (no existing equivalent)
-- Add: `driver-cpc` (umbrella Driver CPC practice — distinct from Module 2 / Module 4 specific banks)
+### 2. Categories
+- In `src/data/categories.ts`, remove the `{ slug: "forklift-theory", ... }` entry from HGV/LGV & Logistics. Keep `forklift-flt-theory-test` as the single card.
+- Update the HGV/LGV category `description` string — currently says "forklift truck theory"; change to "forklift / FLT theory" to match the new card.
 
-### 3. Dedupe — delete the redundant duplicate topics
-These point at the same qualification as the existing HGV entries, so remove them entirely (data, SEO entries, stub mock JSON, sitemap will follow automatically):
-- `forklift-flt-theory-test` → use existing `forklift-theory`
-- `adr-dangerous-goods-test` → use existing `adr-dangerous-goods`
+### 3. Topic SEO
+- In `src/data/topic-seo.ts`, delete the `"forklift-theory": generic(...)` line.
+- Replace the existing `"forklift-flt-theory-test"` SEO block with the user-supplied copy (title, meta description, intro, section headings 1–10, FAQ list) and append the independent disclaimer paragraph at the end. RTITB / ITSSAR are mentioned only as "-style practice" / awarding bodies in the disclaimer.
 
-Keep `driver-cpc` and `transport-manager-cpc-road-haulage` because they target distinct keywords (general "Driver CPC practice" and "Transport Manager CPC Road Haulage" specifically) — both move to HGV/LGV.
+### 4. 301 redirects for the deprecated slug
+Add a slug-rewrite step at the top of the loaders in:
+- `src/routes/topic.$slug.tsx`
+- `src/routes/guide.$slug.tsx`
+- `src/routes/quiz.$slug.tsx`
 
-### 4. Topic SEO + stub mocks
-- Remove `src/data/topic-seo.ts` entries for the two deleted slugs.
-- Delete `public/mocks/forklift-flt-theory-test.json` and `public/mocks/adr-dangerous-goods-test.json`.
-- Remove the two slugs from `src/data/mocks/mock-index.json`.
+Logic: if `params.slug === "forklift-theory"`, `throw redirect({ to: <same route>, params: { slug: "forklift-flt-theory-test" } })`. Keep it data-driven via a small `LEGACY_SLUG_REDIRECTS` map in `src/data/categories.ts` (or a new `src/data/slug-redirects.ts`) so future renames reuse the same mechanism. Mock test URLs (`/quiz/<slug>?mock=N`) inherit the same redirect via `quiz.$slug.tsx`.
 
-### 5. No other category mismatches found
-Audited remaining new topics:
-- `nhs-psychometric-tests` → NHS category ✓
-- `gre-practice`, `gmat-practice` → Admissions ✓
-- `toefl-ibt`, `pte-academic` → English Language Tests ✓
+### 5. Sitemap
+The sitemap reads from `categories` + `mock-index.json`. Once `forklift-theory` is removed from both, the old URLs disappear automatically and only `/topic/forklift-flt-theory-test`, `/guide/forklift-flt-theory-test`, and the 45 mock URLs remain. No sitemap code changes required — just verify after the data edits.
 
-## Net result
-- Driving & Transport: back to 4 clean car/bike topics.
-- HGV/LGV & Logistics: 8 topics (5 existing + 3 added).
-- 2 duplicate topics removed; sitemap drops ~92 URLs (2 topics × (1 topic + 1 guide + 45 mocks)).
+### 6. Internal links
+A grep across `src/` shows the only references to `"forklift-theory"` are in the three data files touched above (categories, topic-seo, mock-index). No hardcoded internal `<Link to="/topic/forklift-theory">` anywhere. Nothing else to update.
 
-## Question
-For `d1-minibus-theory-test` — D1 minibus is technically a licence category like car/bike, but in practice it's pursued by professional drivers (community transport, care work). I'm placing it in HGV/LGV alongside other commercial licences. Confirm or move it back to Driving & Transport?
+### 7. Diagnostics
+`public/mocks/diagnostics.json` is autogenerated by the question-generation pipeline and will refresh on the next run. Will leave the stale `forklift-theory` key in it for now (it's not user-facing and isn't sitemapped). Flag for cleanup on next regeneration.
+
+## Out of scope (flagged for confirmation)
+
+- **Question count**: you asked for "24 questions per mock × 45 mocks = 1,080 unique questions". The migrated bank has ~1,090 MCQs across all 45 mocks. The existing structure already serves 24 questions per mock, so this is satisfied. Will not regenerate.
+- **Sitewide search/admin** entries for `forklift-theory` (admin KB route): leave intact — admins should still be able to browse the historical slug; the route is noindex.
+
+## Verification after build
+
+1. `/topic/forklift-theory` → 301 → `/topic/forklift-flt-theory-test`.
+2. `/guide/forklift-theory` → 301 → `/guide/forklift-flt-theory-test`.
+3. `/quiz/forklift-theory?mock=12` → 301 → `/quiz/forklift-flt-theory-test?mock=12`.
+4. HGV/LGV category page shows ONE forklift card.
+5. `sitemap.xml` contains only the new slug (47 URLs: topic + guide + 45 mocks).
+6. Canonical on the topic page = `https://www.uktesthub.com/topic/forklift-flt-theory-test`.
