@@ -35,6 +35,11 @@ export type Category = {
   topics: { slug: string; title: string }[];
 };
 
+// NOTE: Topics may appear in more than one category. `findTopic` returns the
+// first match, so the primary (canonical) category should come first in the
+// list below. New cross-link categories (Cloud & Cyber, University Admissions,
+// Health & Safety Certifications) list existing topics for discoverability.
+
 export const categories: Category[] = [
   {
     slug: "driving",
