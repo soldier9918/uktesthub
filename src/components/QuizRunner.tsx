@@ -331,6 +331,7 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
           {getTopicDisplayTitle((quiz as { topicSlug?: string }).topicSlug ?? quiz.topic)}
         </div>
         <div className="flex items-center gap-3">
+          <MuteToggle />
           <ReportQuestionButton
             questionId={String(q.id)}
             topicSlug={(quiz as { topicSlug?: string }).topicSlug ?? quiz.slug}
