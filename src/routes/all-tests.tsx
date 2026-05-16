@@ -92,6 +92,7 @@ function AllTestsPage() {
   const filteredCategories = useMemo(() => {
     const q = query.trim().toLowerCase();
     return [...categories]
+      .filter((c) => c.slug !== "english")
       .sort((a, b) => a.title.localeCompare(b.title, "en", { sensitivity: "base" }))
       .filter((c) => activeCat === "all" || c.slug === activeCat)
       .filter(
