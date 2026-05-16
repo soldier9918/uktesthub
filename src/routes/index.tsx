@@ -832,7 +832,7 @@ function HomePage() {
         </section>
 
         {/* Reserved ad slot before Latest Study Guides */}
-        <AdSlot size="leaderboard" className="mt-14" />
+        <AdSlot size="leaderboard" />
 
         {/* LATEST STUDY GUIDES */}
         <section className="mt-20">
