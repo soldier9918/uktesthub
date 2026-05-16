@@ -6,6 +6,7 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { BookmarkButton } from "@/components/BookmarkButton";
 import { categories } from "@/data/categories";
 import { getQuizMeta } from "@/data/quizzes";
+import { englishTests } from "@/data/english/categories";
 
 export const Route = createFileRoute("/all-tests")({
   head: () => ({
@@ -84,7 +85,7 @@ function AllTestsPage() {
     (activeCat !== "all" ? 1 : 0) + (activeType !== "all" ? 1 : 0);
 
   const totalTests = useMemo(
-    () => categories.reduce((n, c) => n + c.topics.length, 0),
+    () => categories.reduce((n, c) => n + c.topics.length, 0) + englishTests.length,
     [],
   );
 
@@ -108,10 +109,24 @@ function AllTestsPage() {
       .filter((c) => c.topics.length > 0);
   }, [query, activeCat, activeType]);
 
+  const filteredEnglishTests = useMemo(() => {
+    const q = query.trim().toLowerCase();
+    const catOk = activeCat === "all" || activeCat === "english";
+    const typeOk = activeType === "all" || activeType === "Language";
+    if (!catOk || !typeOk) return [];
+    return englishTests.filter(
+      (t) =>
+        !q ||
+        t.title.toLowerCase().includes(q) ||
+        t.shortTitle.toLowerCase().includes(q) ||
+        "english language tests".includes(q),
+    );
+  }, [query, activeCat, activeType]);
+
   const matchedCount = filteredCategories.reduce(
     (n, c) => n + c.topics.length,
     0,
-  );
+  ) + filteredEnglishTests.length;
 
   return (
     <div className="min-h-screen bg-[#f7f5f0]">
@@ -216,7 +231,7 @@ function AllTestsPage() {
 
       {/* LISTING */}
       <main className="mx-auto max-w-7xl px-4 py-12 md:px-6">
-        {filteredCategories.length === 0 ? (
+        {filteredCategories.length === 0 && filteredEnglishTests.length === 0 ? (
           <div className="rounded-2xl border border-border bg-card p-10 text-center shadow-soft">
             <p className="font-display text-lg font-bold text-foreground">
               No tests match &ldquo;{query}&rdquo;
@@ -288,6 +303,52 @@ function AllTestsPage() {
                 </ul>
               </section>
             ))}
+
+            {filteredEnglishTests.length > 0 && (
+              <section>
+                <div className="flex flex-wrap items-end justify-between gap-3">
+                  <div>
+                    <h2 className="font-display text-xl font-extrabold uppercase tracking-wide text-foreground md:text-2xl">
+                      <span className="mr-3 inline-block h-1.5 w-8 rounded-full bg-coral align-middle" />
+                      English Language Tests
+                    </h2>
+                    <p className="mt-1 max-w-3xl text-sm text-muted-foreground">
+                      IELTS, TOEFL, SELT, PTE Academic, PTE UKVI, Duolingo English Test and ESOL — practice by skill and CEFR level.
+                    </p>
+                  </div>
+                  <Link
+                    to="/english-language-tests"
+                    className="inline-flex items-center gap-1 text-sm font-semibold text-coral hover:underline"
+                  >
+                    View category <ArrowRight className="h-4 w-4" />
+                  </Link>
+                </div>
+
+                <ul className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                  {filteredEnglishTests.map((t) => (
+                    <li key={t.slug} className="relative">
+                      <Link
+                        to="/english-language-tests/$test"
+                        params={{ test: t.slug }}
+                        className="group flex h-full flex-col rounded-xl border border-border bg-card p-4 shadow-soft transition-all hover:-translate-y-0.5 hover:border-coral/40 hover:shadow-elevated"
+                      >
+                        <div className="min-w-0 flex-1">
+                          <h3 className="font-display text-sm font-bold leading-tight text-foreground">
+                            {t.title}
+                          </h3>
+                          <p className="mt-1 text-[11px] text-muted-foreground line-clamp-2">
+                            {t.description}
+                          </p>
+                          <span className="mt-3 inline-flex items-center gap-1 text-xs font-bold text-coral opacity-0 transition-opacity group-hover:opacity-100">
+                            View test <ArrowRight className="h-3 w-3" />
+                          </span>
+                        </div>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            )}
           </div>
         )}
 
