@@ -8,6 +8,7 @@ import { getTopicSeo } from "@/data/topic-seo";
 import { listMockSlots, TOTAL_MOCKS_PER_TOPIC, QUESTIONS_PER_MOCK } from "@/data/mocks";
 import { Home, ChevronRight, ArrowRight, BookOpen } from "lucide-react";
 import { pageMeta, faqSchema, breadcrumbSchema } from "@/lib/seo";
+import { IndependentDisclaimer } from "@/components/IndependentDisclaimer";
 
 // Render simple inline markdown-style links: [text](/url)
 function renderInlineLinks(text: string) {
@@ -308,6 +309,8 @@ function GuidePage() {
             </div>
           </section>
         ) : null}
+
+        <IndependentDisclaimer />
       </main>
 
       <SiteFooter />

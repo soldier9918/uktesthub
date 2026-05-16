@@ -9,6 +9,7 @@ import { CategoryIcon, accentClasses } from "@/components/CategoryIcon";
 import { findTopic } from "@/data/categories";
 import { listMockSlots, QUESTIONS_PER_MOCK } from "@/data/mocks";
 import { Home, ChevronRight } from "lucide-react";
+import { IndependentDisclaimer } from "@/components/IndependentDisclaimer";
 import { breadcrumbSchema } from "@/lib/seo";
 
 export const Route = createFileRoute("/topic/$slug")({
@@ -202,6 +203,7 @@ function TopicPage() {
             />
           ))}
         </div>
+        <IndependentDisclaimer />
       </main>
 
       <SiteFooter />

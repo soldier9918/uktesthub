@@ -11,7 +11,7 @@
 // Each (test, skill, level) bank holds 45 mocks × 24 unique questions.
 // Bank JSON lives at public/english-mocks/{test}/{skill}/{level}.json.
 
-export type TestSlug = "ielts" | "esol" | "toefl" | "selt";
+export type TestSlug = "ielts" | "esol" | "toefl" | "selt" | "toefl-ibt" | "pte-academic";
 export type SkillSlug =
   | "listening"
   | "reading"
@@ -182,6 +182,30 @@ export const englishTests: TestConfig[] = [
         levels: ["b1", "b2", "c1", "c2"],
       },
     ],
+  },
+  {
+    slug: "toefl-ibt",
+    title: "TOEFL iBT Practice",
+    shortTitle: "TOEFL iBT",
+    tagline: "TOEFL iBT Practice",
+    description:
+      "Independent practice-style questions for TOEFL iBT — reading, listening, speaking and writing, including academic English, campus situations and lecture-style prompts.",
+    studyGuideSlug: SHARED_GUIDE,
+    icon: "BookOpen",
+    colourTheme: "navy",
+    skills: FOUR_SKILLS,
+  },
+  {
+    slug: "pte-academic",
+    title: "PTE Academic Practice",
+    shortTitle: "PTE Academic",
+    tagline: "PTE Academic Practice",
+    description:
+      "Independent practice-style questions for PTE Academic — speaking, writing, reading and listening, including computer-based English tasks, vocabulary, grammar and comprehension.",
+    studyGuideSlug: SHARED_GUIDE,
+    icon: "Mic",
+    colourTheme: "coral",
+    skills: FOUR_SKILLS,
   },
 ];
 
