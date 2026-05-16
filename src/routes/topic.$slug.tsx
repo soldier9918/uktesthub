@@ -1,14 +1,14 @@
-import { useEffect, useState } from "react";
 import { createFileRoute, Link, notFound, redirect } from "@tanstack/react-router";
 import { getTest } from "@/data/english/categories";
 import { SiteHeader } from "@/components/SiteHeader";
+import { BackToAllTests } from "@/components/BackToAllTests";
 import { SiteFooter } from "@/components/SiteFooter";
 import { AdSlot } from "@/components/AdSlot";
 import { BookmarkButton } from "@/components/BookmarkButton";
 import { CategoryIcon, accentClasses } from "@/components/CategoryIcon";
 import { findTopic } from "@/data/categories";
 import { listMockSlots, QUESTIONS_PER_MOCK } from "@/data/mocks";
-import { Home, ChevronRight } from "lucide-react";
+import { Home, ChevronRight, ArrowRight, Clock } from "lucide-react";
 import { IndependentDisclaimer } from "@/components/IndependentDisclaimer";
 import { breadcrumbSchema } from "@/lib/seo";
 import { LEGACY_SLUG_REDIRECTS } from "@/data/slug-redirects";
@@ -57,68 +57,56 @@ export const Route = createFileRoute("/topic/$slug")({
   component: TopicPage,
 });
 
-function useMockProgress(slugs: string[]) {
-  const [scores, setScores] = useState<Record<string, number>>({});
-  useEffect(() => {
-    const out: Record<string, number> = {};
-    for (const s of slugs) {
-      try {
-        const v = localStorage.getItem(`uk-test-hub:best:${s}`);
-        if (v != null)
-          out[s] = Math.max(0, Math.min(QUESTIONS_PER_MOCK, parseInt(v, 10) || 0));
-      } catch {
-        // ignore
-      }
-    }
-    setScores(out);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [slugs.join("|")]);
-  return scores;
-}
+
 
 function MockCard({
   slug,
-  title,
+  mockNumber,
   available,
-  best,
 }: {
   slug: string;
-  title: string;
+  mockNumber: number;
   available: boolean;
-  best: number;
 }) {
-  const pct = Math.round((best / QUESTIONS_PER_MOCK) * 100);
   const inner = (
-    <div className="flex h-full flex-col rounded-2xl border border-border bg-card px-5 py-4 shadow-soft transition-all duration-200 group-hover:-translate-y-0.5 group-hover:border-coral/40 group-hover:shadow-elevated">
-      <div className="flex items-start justify-between gap-3">
-        <h3 className="font-display text-base font-bold leading-tight text-foreground">
-          {title}
+    <div
+      className={`flex h-full flex-col rounded-2xl border bg-card p-4 shadow-soft transition-all ${
+        available
+          ? "border-coral/30 hover:-translate-y-0.5 hover:border-coral hover:shadow-elevated"
+          : "border-border opacity-75"
+      }`}
+    >
+      <div className="flex items-center justify-between">
+        <h3 className="font-display text-base font-bold text-foreground">
+          Mock Test {mockNumber}
         </h3>
         {!available && (
-          <span className="shrink-0 rounded-full bg-muted px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">
+          <span className="rounded-full bg-muted px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">
             Soon
           </span>
         )}
       </div>
-      <div className="mt-4 flex items-center gap-3">
-        <div className="h-1.5 flex-1 overflow-hidden rounded-full bg-muted">
-          <div
-            className="h-full rounded-full bg-coral transition-all"
-            style={{ width: `${pct}%` }}
-          />
-        </div>
-        <span className="shrink-0 text-xs font-semibold tabular-nums text-muted-foreground">
-          {best} / {QUESTIONS_PER_MOCK}
-        </span>
+      <p className="mt-1 text-xs text-muted-foreground">
+        {QUESTIONS_PER_MOCK} questions ·{" "}
+        <Clock className="inline h-3 w-3" /> ~{QUESTIONS_PER_MOCK} min
+      </p>
+      <div className="mt-3">
+        {available ? (
+          <span className="inline-flex items-center gap-1.5 rounded-lg bg-coral px-3 py-1.5 text-xs font-semibold text-white">
+            Start test <ArrowRight className="h-3.5 w-3.5" />
+          </span>
+        ) : (
+          <span className="inline-flex items-center gap-1.5 rounded-lg bg-muted px-3 py-1.5 text-xs font-semibold text-muted-foreground">
+            Coming soon
+          </span>
+        )}
       </div>
     </div>
   );
 
-  if (!available) {
-    return <div className="group cursor-not-allowed opacity-70">{inner}</div>;
-  }
+  if (!available) return <div className="cursor-not-allowed">{inner}</div>;
   return (
-    <Link to="/quiz/$slug" params={{ slug }} className="group block">
+    <Link to="/quiz/$slug" params={{ slug }} className="group block h-full">
       {inner}
     </Link>
   );
@@ -127,13 +115,12 @@ function MockCard({
 function TopicPage() {
   const { category, topic } = Route.useLoaderData();
   const slots = listMockSlots(topic.slug);
-  const slugs = slots.map((s) => s.slug);
-  const scores = useMockProgress(slugs);
   const availableCount = slots.filter((s) => s.available).length;
 
   return (
     <div className="min-h-screen bg-[#f7f5f0]">
       <SiteHeader />
+      <BackToAllTests />
 
       <section className="relative overflow-hidden bg-navy-deep text-navy-foreground">
         <img
@@ -200,9 +187,8 @@ function TopicPage() {
             <MockCard
               key={s.slug}
               slug={s.slug}
-              title={`Test ${s.mockNumber}`}
+              mockNumber={s.mockNumber}
               available={s.available}
-              best={scores[s.slug] ?? 0}
             />
           ))}
         </div>

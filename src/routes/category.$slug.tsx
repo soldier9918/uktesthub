@@ -1,5 +1,6 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/SiteHeader";
+import { BackToAllTests } from "@/components/BackToAllTests";
 import { SiteFooter } from "@/components/SiteFooter";
 import { AdSlot } from "@/components/AdSlot";
 import { BookmarkButton } from "@/components/BookmarkButton";
@@ -48,6 +49,7 @@ function CategoryPage() {
   return (
     <div className="min-h-screen bg-[#f7f5f0]">
       <SiteHeader />
+      <BackToAllTests />
 
       {/* HERO */}
       <section className="relative overflow-hidden bg-navy-deep text-navy-foreground">
