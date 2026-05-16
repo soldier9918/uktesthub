@@ -206,9 +206,8 @@ function TopicPage() {
             <MockCard
               key={s.slug}
               slug={s.slug}
-              title={`Test ${s.mockNumber}`}
+              mockNumber={s.mockNumber}
               available={s.available}
-              best={scores[s.slug] ?? 0}
             />
           ))}
         </div>
