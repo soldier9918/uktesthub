@@ -57,24 +57,7 @@ export const Route = createFileRoute("/topic/$slug")({
   component: TopicPage,
 });
 
-function useMockProgress(slugs: string[]) {
-  const [scores, setScores] = useState<Record<string, number>>({});
-  useEffect(() => {
-    const out: Record<string, number> = {};
-    for (const s of slugs) {
-      try {
-        const v = localStorage.getItem(`uk-test-hub:best:${s}`);
-        if (v != null)
-          out[s] = Math.max(0, Math.min(QUESTIONS_PER_MOCK, parseInt(v, 10) || 0));
-      } catch {
-        // ignore
-      }
-    }
-    setScores(out);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [slugs.join("|")]);
-  return scores;
-}
+
 
 function MockCard({
   slug,
