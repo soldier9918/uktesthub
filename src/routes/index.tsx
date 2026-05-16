@@ -245,7 +245,7 @@ function HomePage() {
       </section>
 
       <main className="mx-auto max-w-7xl px-4 md:px-6">
-        <AdSlot size="leaderboard" className="mt-10" />
+        <AdSlot size="leaderboard" />
 
         {/* POPULAR CATEGORIES */}
         <section id="popular-categories" className="mt-16 scroll-mt-24">
