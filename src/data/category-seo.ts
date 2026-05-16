@@ -1400,4 +1400,21 @@ export const categorySeo: Record<string, CategorySeo> = {
       { q: "Is the RVN exam done online?", a: "The RVN OSCE is sat in person at an RCVS-approved centre. The pre-registration knowledge tests our mocks support are typically done online during your training." },
     ],
   },
+  admissions: {
+    title: "GRE & GMAT Practice Tests | UK Test Hub",
+    description:
+      "Free practice-style questions for the GRE and GMAT — graduate and business school admissions tests. Verbal, quantitative, data insights and analytical writing revision with explanations.",
+    intro: [
+      "Applying to a graduate programme or business school usually means sitting either the GRE or the GMAT. UK Test Hub publishes independent practice-style questions for both — verbal reasoning, quantitative reasoning, data insights and analytical writing — so you can build pace and spot weak areas before booking the real exam.",
+      "These are not official questions. The GRE is set and run by ETS; the GMAT is set and run by GMAC. We're not affiliated with either. Always use official ETS or GMAC materials for your final preparation.",
+    ],
+    sections: [
+      { heading: "What's covered in this section", body: ["GRE Practice — verbal reasoning, quantitative reasoning and analytical writing. GMAT Practice — quantitative reasoning, verbal reasoning and the GMAT Focus data insights section."] },
+      { heading: "How to use these mocks", body: ["Do one timed section a day rather than long marathon sittings. Review every wrong answer before moving on. In the final two weeks before your real exam, switch to full-length timed mocks under exam conditions."] },
+    ],
+    faqs: [
+      { q: "Which is better, GRE or GMAT?", a: "It depends on the programme. Most UK MBAs accept both; specialist master's degrees vary. Check each programme's specific entry requirements." },
+      { q: "Are these the official GRE and GMAT questions?", a: "No. UK Test Hub is independent and not affiliated with ETS or GMAC. Our questions are practice-style only — always use official materials for final preparation." },
+    ],
+  },
 };
