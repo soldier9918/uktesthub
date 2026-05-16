@@ -484,7 +484,6 @@ export const categories: Category[] = [
     heroImage: heroItTech,
     topics: [
       { slug: "aws-cloud-practitioner", title: "AWS Cloud Practitioner Practice" },
-      { slug: "az-900-azure-fundamentals", title: "AZ-900 Azure Fundamentals" },
       { slug: "microsoft-fundamentals", title: "Microsoft Azure & 365 Fundamentals (AZ-900 / MS-900)" },
       { slug: "cyber-awareness", title: "Cyber Security Awareness" },
     ],
