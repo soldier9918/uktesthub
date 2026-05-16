@@ -14,6 +14,13 @@ import { breadcrumbSchema } from "@/lib/seo";
 
 export const Route = createFileRoute("/quiz/$slug")({
   loader: async ({ params }) => {
+    // 301-style redirects for renamed topics, including their /…-mock-N variants.
+    for (const [oldSlug, newSlug] of Object.entries(LEGACY_SLUG_REDIRECTS)) {
+      if (params.slug === oldSlug || params.slug.startsWith(`${oldSlug}-mock-`)) {
+        const rewritten = params.slug.replace(oldSlug, newSlug);
+        throw redirect({ to: "/quiz/$slug", params: { slug: rewritten } });
+      }
+    }
     // During SSR, set the absolute base URL used for fetching public/mocks/*.json
     captureMockBaseUrl();
     const quiz = await getQuiz(params.slug);
