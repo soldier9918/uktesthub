@@ -11,7 +11,15 @@
 // Each (test, skill, level) bank holds 45 mocks × 24 unique questions.
 // Bank JSON lives at public/english-mocks/{test}/{skill}/{level}.json.
 
-export type TestSlug = "ielts" | "esol" | "toefl" | "selt" | "toefl-ibt" | "pte-academic";
+export type TestSlug =
+  | "ielts"
+  | "esol"
+  | "toefl"
+  | "selt"
+  | "toefl-ibt"
+  | "pte-academic"
+  | "pte-academic-ukvi"
+  | "duolingo-english-test";
 export type SkillSlug =
   | "listening"
   | "reading"
