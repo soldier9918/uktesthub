@@ -472,3 +472,12 @@ export const findTopic = (topicSlug: string) => {
   }
   return null;
 };
+
+export const getTopicDisplayTitle = (topicSlug: string): string => {
+  const found = findTopic(topicSlug);
+  if (found) return found.topic.title;
+  return topicSlug
+    .split("-")
+    .map((w) => (w ? w[0].toUpperCase() + w.slice(1) : w))
+    .join(" ");
+};

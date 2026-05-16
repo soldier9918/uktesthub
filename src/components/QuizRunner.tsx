@@ -21,7 +21,7 @@ import type {
   HotSpotQuestion,
   DragDropBlanksQuestion,
 } from "@/data/quizzes";
-import { getCategory } from "@/data/categories";
+import { getCategory, getTopicDisplayTitle } from "@/data/categories";
 import { TOTAL_MOCKS_PER_TOPIC } from "@/data/mocks";
 import { AdSlot } from "./AdSlot";
 import { RoadSign } from "./RoadSign";
@@ -313,10 +313,13 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
 
   return (
     <div className="mx-auto max-w-7xl">
-      <div className="mb-2 flex items-center justify-between gap-4">
+      <div className="mb-2 flex flex-wrap items-center justify-between gap-2">
         <div className="text-sm text-muted-foreground">
           Question <span className="font-semibold text-foreground">{current + 1}</span> of{" "}
           {quiz.questions.length}
+        </div>
+        <div className="order-last w-full text-center text-sm font-bold text-foreground sm:order-none sm:w-auto sm:flex-1 sm:px-4">
+          {getTopicDisplayTitle((quiz as { topicSlug?: string }).topicSlug ?? quiz.topic)}
         </div>
         <div className="flex items-center gap-3">
           <ReportQuestionButton
