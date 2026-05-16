@@ -85,13 +85,17 @@ function AllTestsPage() {
     (activeCat !== "all" ? 1 : 0) + (activeType !== "all" ? 1 : 0);
 
   const totalTests = useMemo(
-    () => categories.reduce((n, c) => n + c.topics.length, 0) + englishTests.length,
+    () =>
+      categories
+        .filter((c) => c.slug !== "english")
+        .reduce((n, c) => n + c.topics.length, 0) + englishTests.length,
     [],
   );
 
   const filteredCategories = useMemo(() => {
     const q = query.trim().toLowerCase();
     return [...categories]
+      .filter((c) => c.slug !== "english")
       .sort((a, b) => a.title.localeCompare(b.title, "en", { sensitivity: "base" }))
       .filter((c) => activeCat === "all" || c.slug === activeCat)
       .filter(
