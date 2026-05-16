@@ -4,4 +4,8 @@
 // onto a single URL per topic.
 export const LEGACY_SLUG_REDIRECTS: Record<string, string> = {
   "forklift-theory": "forklift-flt-theory-test",
+  // Phase 1 expansion: support the alternative URLs from the topic
+  // expansion brief that map to existing canonical topics.
+  "gre-practice-test": "gre-practice",
+  "gmat-practice-test": "gmat-practice",
 };
