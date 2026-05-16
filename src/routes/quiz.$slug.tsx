@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { createFileRoute, Link, notFound, redirect } from "@tanstack/react-router";
+import { ArrowLeft } from "lucide-react";
 import { LEGACY_SLUG_REDIRECTS } from "@/data/slug-redirects";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
@@ -217,6 +218,16 @@ function QuizContent({ quiz }: { quiz: Quiz }) {
       <SiteHeader />
 
       <main className="mx-auto max-w-7xl px-3 py-2 md:px-6 md:py-3">
+        {isMock && (
+          <Link
+            to="/topic/$slug"
+            params={{ slug: quiz.topic }}
+            className="mb-3 inline-flex items-center gap-1.5 text-sm font-semibold text-muted-foreground hover:text-coral"
+          >
+            <ArrowLeft className="h-4 w-4" />
+            Back to all mock tests
+          </Link>
+        )}
         <QuizRunner key={quiz.slug} quiz={quiz} />
 
         <AdSlot size="leaderboard" className="mt-8" />

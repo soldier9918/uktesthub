@@ -118,6 +118,13 @@ function EnglishMockPage() {
       <div className="min-h-screen bg-background">
         <SiteHeader />
         <main className="mx-auto max-w-7xl px-3 py-2 md:px-6 md:py-3">
+          <Link
+            to="/english-language-tests/$test/$skill/$level"
+            params={{ test: test.slug, skill: skill.slug, level }}
+            className="mb-3 inline-flex items-center gap-1.5 text-sm font-semibold text-muted-foreground hover:text-coral"
+          >
+            ← Back to {test.shortTitle} {skill.shortTitle} {LEVEL_SHORT[level]} mock tests
+          </Link>
           <QuizRunner key={`${test.slug}-${skill.slug}-${level}-${num}`} quiz={quiz} />
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <Link
