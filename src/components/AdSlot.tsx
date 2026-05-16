@@ -260,6 +260,7 @@ export function StickyAdSlot({ slotId }: { slotId?: string } = {}) {
 type WrapProps = { slotKey?: string; slotId?: string; className?: string };
 
 export function InContentAd(props: WrapProps) {
+  if (!ADSENSE_ENABLED) return null;
   return (
     <div className="my-8 flex justify-center">
       <AdSlot size="leaderboard" format="auto" {...props} />
@@ -268,6 +269,7 @@ export function InContentAd(props: WrapProps) {
 }
 
 export function SidebarAd(props: WrapProps) {
+  if (!ADSENSE_ENABLED) return null;
   return (
     <aside className="hidden lg:block">
       <AdSlot size="sidebar" format="vertical" {...props} />
@@ -276,6 +278,7 @@ export function SidebarAd(props: WrapProps) {
 }
 
 export function BottomAd(props: WrapProps) {
+  if (!ADSENSE_ENABLED) return null;
   return (
     <div className="my-10 flex justify-center">
       <AdSlot size="leaderboard" format="horizontal" {...props} />
@@ -284,6 +287,7 @@ export function BottomAd(props: WrapProps) {
 }
 
 export function MobileAd(props: WrapProps) {
+  if (!ADSENSE_ENABLED) return null;
   return (
     <div className="my-6 flex justify-center md:hidden">
       <AdSlot size="rectangle" format="rectangle" {...props} />
