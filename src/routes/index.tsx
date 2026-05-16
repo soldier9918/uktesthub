@@ -915,17 +915,19 @@ function HomePage() {
           alt="London skyline"
           className="pointer-events-none absolute inset-x-0 bottom-0 z-0 w-full select-none object-contain object-bottom"
         />
-        <div className="relative z-10 mx-auto flex max-w-5xl items-center gap-5 px-4 pb-32 pt-12 md:px-6 md:pb-44 md:pt-14 lg:pb-52">
-          <span className="flex h-12 w-12 shrink-0 overflow-hidden rounded-full ring-2 ring-white">
-            <UnionJack className="h-full w-full" />
-          </span>
-          <div>
-            <h3 className="font-display text-lg font-bold text-foreground md:text-xl">
-              Proudly helping learners across the UK and worldwide
-            </h3>
-            <p className="mt-1 text-sm text-muted-foreground">
-              Free practice questions, mock exams, instant results and detailed explanations.
-            </p>
+        <div className="relative z-10 mx-auto max-w-5xl px-4 pb-40 pt-10 sm:pb-48 md:px-6 md:pb-56 md:pt-14 lg:pb-64">
+          <div className="flex items-center gap-4 rounded-2xl bg-white/80 p-4 shadow-sm ring-1 ring-white/60 backdrop-blur-sm sm:gap-5 sm:p-5">
+            <span className="flex h-11 w-11 shrink-0 overflow-hidden rounded-full ring-2 ring-white sm:h-12 sm:w-12">
+              <UnionJack className="h-full w-full" />
+            </span>
+            <div className="min-w-0">
+              <h3 className="font-display text-base font-bold leading-tight text-foreground sm:text-lg md:text-xl">
+                Proudly helping learners across the UK and worldwide
+              </h3>
+              <p className="mt-1 text-xs text-muted-foreground sm:text-sm">
+                Free practice questions, mock exams, instant results and detailed explanations.
+              </p>
+            </div>
           </div>
         </div>
       </section>
