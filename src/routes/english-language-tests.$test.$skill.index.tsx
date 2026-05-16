@@ -95,6 +95,7 @@ function SkillPage() {
   return (
     <div className="min-h-screen bg-background">
       <SiteHeader />
+      <BackToAllTests />
       <main className="mx-auto max-w-6xl px-4 py-8 md:py-12">
         <nav className="flex items-center gap-1.5 text-xs text-muted-foreground" aria-label="Breadcrumb">
           <Link to="/" className="inline-flex items-center gap-1 hover:text-foreground">
