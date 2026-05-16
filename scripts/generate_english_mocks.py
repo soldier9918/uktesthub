@@ -1324,6 +1324,7 @@ FLAVOUR_MR: Dict[str, List[Dict[str, Any]]] = {
          "options": ["Office hours", "Reading list", "Boot fair", "Car-boot sale"],
          "correct": [0, 1],
          "exp": "'Office hours' and 'reading list' are campus terms; the others are UK community events."},
+    ],
     "pte-academic-ukvi": [
         {"q": "Which TWO are features of PTE Academic UKVI?",
          "options": ["Computer-delivered test", "UKVI-approved for UK visas", "Handwritten essay only", "No speaking section"],
