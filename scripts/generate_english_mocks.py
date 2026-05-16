@@ -1345,6 +1345,8 @@ FLAVOUR_MR: Dict[str, List[Dict[str, Any]]] = {
          "exp": "Read aloud and complete-the-sentence are common DET task types."},
     ],
 }
+
+FLAVOUR_VOCAB: Dict[str, List[Dict[str, Any]]] = {
     "esol": [
         {"word": "appointment", "definition": "scheduled meeting", "distractors": ["argument", "agreement", "advert"], "frames": [
             "I have an {} with my GP at half past nine.",
