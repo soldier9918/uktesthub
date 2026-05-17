@@ -890,7 +890,7 @@ function HomePage() {
         />
         <div className="relative mx-auto grid max-w-5xl gap-8 px-4 py-12 sm:grid-cols-2 md:grid-cols-4 md:px-6 md:py-14">
           {[
-            { icon: ShieldCheck, t: "Real Exam Experience", d: "Questions based on real exam standards." },
+            { icon: ShieldCheck, t: "Real Exam Experience", d: "Practice-style questions based on publicly available exam guidance." },
             { icon: Timer, t: "Instant Results", d: "Get results and explanations instantly." },
             { icon: TrendingUp, t: "Track Progress", d: "Monitor your scores and improve over time." },
             { icon: Smartphone, t: "Study Anywhere", d: "Mobile friendly and responsive design." },
