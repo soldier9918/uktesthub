@@ -37,9 +37,10 @@ function AboutPage() {
         time.
       </p>
       <p>
-        Today the site covers eight major exam areas with hundreds of mock
-        tests, all free to use and continually refreshed by our small team
-        of educators and developers based in the UK.
+        Today the site covers 100+ major exam and assessment categories
+        with hundreds of mock tests, all free to use and continually
+        refreshed by our small team of educators and developers based in
+        the UK.
       </p>
 
       <h2>Our mission</h2>
