@@ -37,7 +37,6 @@ export const Route = createRootRoute({
       { title: "UK Test Hub" },
       { name: "author", content: "UK Test Hub" },
       { name: "google-site-verification", content: "5MXOtpExyGc2s5q9kWcw8S2VkkU15G4xIogsw8LoICk" },
-      { name: "google-adsense-account", content: "ca-pub-7445296424475191" },
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: "UK Test Hub" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -77,6 +76,7 @@ function RootShell({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>
+        <meta name="google-adsense-account" content="ca-pub-7445296424475191" />
         <HeadContent />
       </head>
       <body>
