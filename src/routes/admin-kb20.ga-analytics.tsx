@@ -231,7 +231,7 @@ function GaAnalytics() {
                   />
                   <YAxis fontSize={11} allowDecimals={false} />
                   <Tooltip />
-                  <Bar dataKey="pageviews" fill="hsl(var(--primary))" />
+                  <Bar dataKey="pageviews" fill="var(--primary)" />
                 </BarChart>
               </ResponsiveContainer>
             </div>

@@ -1,19 +1,12 @@
-## Goal
+## Problem
 
-Serve `ads.txt` at `https://www.uktesthub.com/ads.txt` so Google AdSense can verify the site's authorized sellers.
+On `/admin-kb20/ga-analytics`, the 24-hour bar chart and 30-day line chart render axes but no data marks. The chart components pass `fill="hsl(var(--primary))"` / `stroke="hsl(var(--primary))"`, but in this project `--primary` is already a full `oklch(...)` color (see `src/styles.css` line 103/161), not an HSL triplet. Wrapping it in `hsl(...)` produces an invalid color string, so the bars/lines paint as transparent.
 
-## Change
+## Fix
 
-Create **`public/ads.txt`** with the standard AdSense line:
+In `src/routes/admin-kb20.ga-analytics.tsx`, swap the two Recharts color props to use the CSS variable directly:
 
-```
-google.com, pub-7445296424475191, DIRECT, f08c47fec0942fa0
-```
+- `<Bar dataKey="pageviews" fill="hsl(var(--primary))" />` → `fill="var(--primary)"`
+- `<Line ... stroke="hsl(var(--primary))" ... />` → `stroke="var(--primary)"`
 
-Files in `public/` are served as-is at the site root by Vite, so this will be reachable at `/ads.txt` on every domain the project serves (including `www.uktesthub.com`).
-
-## Notes
-
-- `pub-7445296424475191` matches the AdSense client already configured in `src/routes/__root.tsx` and `src/components/AdSlot.tsx`.
-- `f08c47fec0942fa0` is Google's standard AdSense TAG ID — the same value Google instructs every publisher to use.
-- No code or route changes are needed; no rebuild of dynamic routes. After publish, AdSense's crawler will find the file within ~24h.
+No other changes; data fetching, layout, and tokens stay as-is.
