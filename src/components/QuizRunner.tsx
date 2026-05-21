@@ -313,12 +313,15 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
 
   const showAdBreak = mode === "exam" && current > 0 && current % 4 === 0;
 
-  // For multi-step types we show an explicit "Check answer" button in practice.
-  const needsExplicitCheck =
-    isFillBlanks(q) ||
-    isDragDrop(q) ||
-    isMultiResponse(q) ||
-    isNumeric(q);
+  // Auto-reveal once the current question is fully answered (practice mode).
+  useEffect(() => {
+    if (mode !== "practice") return;
+    if (revealed[current]) return;
+    if (!isAnswered(q, selected)) return;
+    reveal();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [mode, current, selected, revealed]);
+
 
   return (
     <div className="mx-auto max-w-7xl">
@@ -448,29 +451,20 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
             <ChevronLeft className="h-4 w-4" />
             Back
           </button>
-          <div className="flex gap-2">
-            {needsExplicitCheck && mode === "practice" && answered && !isRevealed && (
-              <button
-                onClick={reveal}
-                className="inline-flex items-center gap-2 rounded-xl border border-border bg-background px-4 py-2.5 text-sm font-semibold hover:bg-muted"
-              >
-                Check answer
-              </button>
-            )}
-            <button
-              onClick={goNext}
-              disabled={!answered}
-              className="inline-flex items-center gap-2 rounded-xl bg-gradient-coral px-5 py-2.5 text-sm font-semibold text-coral-foreground shadow-coral transition-transform hover:-translate-y-0.5 disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:translate-y-0"
-            >
-              {current === quiz.questions.length - 1 ? "Finish" : "Next"}
-              <ChevronRight className="h-4 w-4" />
-            </button>
-          </div>
+          <button
+            onClick={goNext}
+            disabled={!answered}
+            className="inline-flex items-center gap-2 rounded-xl bg-gradient-coral px-5 py-2.5 text-sm font-semibold text-coral-foreground shadow-coral transition-transform hover:-translate-y-0.5 disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:translate-y-0"
+          >
+            {current === quiz.questions.length - 1 ? "Finish" : "Next"}
+            <ChevronRight className="h-4 w-4" />
+          </button>
         </div>
       </div>
     </div>
   );
 }
+
 
 // ============== Renderers ==============
 

@@ -240,8 +240,9 @@ function HowMockTestsWork() {
       <div className="mt-6 rounded-2xl border border-dashed border-border bg-muted/20 p-4 text-sm text-muted-foreground">
         <strong className="text-foreground">Tip:</strong> Use the{" "}
         <em>Previous</em> and <em>Next</em> buttons to move between questions.
-        In practice mode, the <em>Reveal</em> / <em>Check answer</em> button
-        shows you the correct answer for the current question. The pass mark
+        In practice mode, the correct answer is revealed as soon as you
+        complete the question. The pass mark
+
         is 75% — but treat the score as a learning signal, not a verdict.
       </div>
     </section>
