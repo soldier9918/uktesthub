@@ -451,7 +451,6 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
             <ChevronLeft className="h-4 w-4" />
             Back
           </button>
-          <div className="flex gap-2">
           <button
             onClick={goNext}
             disabled={!answered}
@@ -463,9 +462,9 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
         </div>
       </div>
     </div>
-
   );
 }
+
 
 // ============== Renderers ==============
 
