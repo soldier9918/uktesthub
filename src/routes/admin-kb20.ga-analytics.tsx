@@ -253,7 +253,7 @@ function GaAnalytics() {
                   <Line
                     type="monotone"
                     dataKey="pageviews"
-                    stroke="hsl(var(--primary))"
+                    stroke="var(--primary)"
                     strokeWidth={2}
                     dot={false}
                   />
