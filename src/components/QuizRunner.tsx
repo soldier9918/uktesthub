@@ -11,6 +11,8 @@ import {
   List,
   Volume2,
   VolumeX,
+  AlertCircle,
+  HelpCircle,
 } from "lucide-react";
 import { sounds, useSoundMuted } from "@/lib/quiz-sounds";
 import type {
