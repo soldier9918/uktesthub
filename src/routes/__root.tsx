@@ -60,11 +60,6 @@ export const Route = createRootRoute({
     scripts: [
       organizationSchema(),
       websiteSchema(),
-      {
-        async: true,
-        src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7445296424475191",
-        crossOrigin: "anonymous",
-      },
     ],
   }),
   shellComponent: RootShell,
