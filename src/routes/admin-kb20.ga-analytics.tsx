@@ -231,7 +231,7 @@ function GaAnalytics() {
                   />
                   <YAxis fontSize={11} allowDecimals={false} />
                   <Tooltip />
-                  <Bar dataKey="pageviews" fill="hsl(var(--primary))" />
+                  <Bar dataKey="pageviews" fill="var(--primary)" />
                 </BarChart>
               </ResponsiveContainer>
             </div>
@@ -253,7 +253,7 @@ function GaAnalytics() {
                   <Line
                     type="monotone"
                     dataKey="pageviews"
-                    stroke="hsl(var(--primary))"
+                    stroke="var(--primary)"
                     strokeWidth={2}
                     dot={false}
                   />
