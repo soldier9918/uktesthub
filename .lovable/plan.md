@@ -1,54 +1,42 @@
 ## Goal
 
-Redesign the exam-mode results "Review your answers" section in `src/components/QuizRunner.tsx` so each reviewed question shows the **full question text + all original options as cards** (green = correct, red = wrong selected, neutral = others), plus a clear status message and a styled Explanation box. Scoring, pass/fail and exam flow stay untouched — this is presentation-only.
+Make the exam-mode "Review your answers" cards in `src/components/QuizRunner.tsx` visually more compact and neater, without changing functionality, logic, or any other section.
 
-## Scope
+## Changes (presentation only)
 
-Only the `Results` component's review list (around lines 1114–1148 of `src/components/QuizRunner.tsx`). Everything else (timer, scoring, `isCorrect`, practice mode inline feedback, CTAs) is left alone.
+All inside `ReviewCard`, `OptionRow`, and `FallbackReview` (lines ~1216–1417).
 
-## What changes
+1. **Outer review wrapper** (`<ol>` at line 1118): reduce row gap `space-y-5` → `space-y-3`. Outer panel padding `p-6 md:p-8` → `p-4 md:p-6`.
 
-1. **Replace the current `<li>` row** (which only shows "Correct: …" / "Your answer: …") with a richer `ReviewCard` that renders, per question:
-   - Header: `Question {i+1}` + correct/incorrect/unanswered badge with tick/cross icon.
-   - Full question text via existing `describeQuestion(q)`.
-   - All original options rendered as rounded option cards (matching quiz styling: rounded-2xl, border, A/B/C/D letter chip).
-   - Status message under the options.
-   - Explanation box: light `bg-muted/40` rounded panel labeled **Explanation**.
+2. **ReviewCard container** (line 1301):
+   - Border `border-2` → `border` (1px), padding `p-4 md:p-5` → `p-3 md:p-4`, radius `rounded-2xl` → `rounded-xl`.
 
-2. **Option coloring rules** (applied per question type):
-   - Correct option(s): `border-success bg-success/10` + green `CheckCircle2` icon on the right.
-   - User's wrong selected option(s): `border-destructive bg-destructive/10` + red `XCircle` + small "Your answer" label.
-   - User's correct selection: green styling + "Your answer" label.
-   - Everything else: neutral `border-border bg-card`.
+3. **Header row**:
+   - "Question N" label: `text-xs` → `text-[11px]`.
+   - Badge: `px-3 py-1 text-xs` → `px-2 py-0.5 text-[11px]`, icon `h-3.5 w-3.5` → `h-3 w-3`.
 
-3. **Status message** under options:
-   - Correct (single or full multi): "✅ You selected the correct answer." (or "…all correct answers." for multi-response).
-   - Wrong: "❌ Your answer was incorrect. The correct answer is highlighted in green."
-   - Partial multi: "⚠️ You missed one or more correct answers."
-   - Unanswered: "You did not answer this question. The correct answer is highlighted in green."
+4. **Question text** (line 1314): `mt-3 text-base md:text-lg font-semibold` → `mt-2 text-sm md:text-base font-semibold leading-snug`.
 
-4. **Per question-type rendering** in the new `ReviewCard`:
-   - **MCQ / Image / TrueFalse**: list `q.options` (TrueFalse uses `["True","False"]`), compare index to `q.correctAnswer` and the numeric user answer.
-   - **MultipleResponse**: list `q.options`, correct set = `q.correctAnswers` (array), user set = `a as number[]`.
-   - **Numeric**: show single "Correct answer" card (green) with `q.correctAnswer`; if user answered, show their value card (green if matches via existing tolerance logic from `isCorrect`, else red).
-   - **FillBlanks / DragDrop**: show each blank as a row: correct token green, user token red if wrong, green if right.
-   - **HotSpot**: keep existing text summary (no visual map in review) — render correct spot label as green card, user's pick as red card if wrong; "Outside any region" if `__miss__`.
+5. **Options block** (line 1318): `mt-4 space-y-2` → `mt-3 space-y-1.5`.
 
-5. **Helpers**: small local helpers inside `Results` (or just above it):
-   - `optionState(q, a, idx)` → `"correct" | "wrong-selected" | "selected-correct" | "neutral"`.
-   - `statusFor(q, a)` → `{ tone: "success"|"destructive"|"warning"|"muted", message: string }`.
+6. **OptionRow** (line 1216):
+   - Container: `gap-3 rounded-2xl border-2 p-3 md:p-4` → `gap-2.5 rounded-lg border p-2 md:p-2.5`, add `items-center`.
+   - Letter chip: `h-7 w-7 text-xs` → `h-6 w-6 text-[11px]`.
+   - Label: `text-sm md:text-base` → `text-sm leading-snug`.
+   - Right cluster: keep icon + "Your answer" on a single horizontal line (`flex-row items-center gap-2`) instead of stacked column. Icon `h-5 w-5` → `h-4 w-4`. "Your answer" pill: keep `text-[10px]` but `px-2 py-0.5` → `px-1.5 py-0`.
 
-6. **Styling tokens**: use existing semantic tokens already in the project — `success`, `destructive`, `muted`, `border`, `card`, `coral` — no new CSS variables needed. Mobile responsive via existing tailwind utilities (cards stack naturally; option rows use `flex items-start gap-3` with `text-sm md:text-base`).
+7. **Status message box** (line 1334): `mt-4 p-3 text-sm rounded-xl border` → `mt-3 px-3 py-2 text-xs md:text-sm rounded-lg border`, icon `h-4 w-4` → `h-3.5 w-3.5`.
 
-7. **Imports**: `CheckCircle2`, `XCircle` already imported; add `AlertCircle` from lucide-react for the partial/unanswered state.
+8. **Explanation panel** (line 1342): `mt-3 rounded-xl p-4` → `mt-2 rounded-lg p-3`, body `text-sm md:text-base` → `text-xs md:text-sm leading-relaxed`, header label `text-xs` → `text-[10px]`.
+
+9. **FallbackReview blank rows**: inner `space-y-2` → `space-y-1.5`, "Blank N" label `text-xs` → `text-[10px]`.
 
 ## Out of scope
 
-- Scoring / pass logic / timer / answer capture — unchanged.
-- Practice-mode per-question feedback (lines ~356–445) — unchanged.
-- `answerSummary` helper can stay for any other callers; new review code uses its own per-type rendering.
-- No new files, no design tokens added, no data-shape changes.
+- No changes to logic, scoring, status messages, colors/tokens, question types, practice mode, timer, or layout structure.
+- No changes outside `QuizRunner.tsx`.
+- No new components or files.
 
 ## Acceptance
 
-On `/quiz/customer-service-mock-1` → finish in exam mode → review section shows each question with full text, all original options as cards (green correct / red wrong-selected / neutral others), a status line, and a styled Explanation box. Works for MCQ, true/false, multi-response, fill-blanks, drag-drop, numeric, hotspot, and unanswered questions. Quiz flow, scoring, and pass/fail behave exactly as before.
+On `/quiz/customer-service-mock-2` exam-mode results: review cards are visibly more compact (less vertical space per card, smaller chips/icons/padding), the "Your answer" pill sits inline beside its icon, but all info (badge, question, options, status, explanation) still renders correctly across MCQ, true/false, multi-response, fill-blanks, drag-drop, numeric, hotspot, and unanswered states.

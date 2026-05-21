@@ -1113,9 +1113,9 @@ function Results({
 
       <NextStepsPanel quiz={quiz} />
 
-      <div className="rounded-3xl border border-border bg-card p-6 shadow-soft md:p-8">
+      <div className="rounded-3xl border border-border bg-card p-4 shadow-soft md:p-6">
         <h3 className="font-display text-xl font-semibold">Review your answers</h3>
-        <ol className="mt-5 space-y-5">
+        <ol className="mt-4 space-y-3">
           {quiz.questions.map((q, i) => (
             <li key={q.id}>
               <ReviewCard q={q} a={answers[i]} index={i} />
