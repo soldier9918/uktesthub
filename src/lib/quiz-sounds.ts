@@ -31,24 +31,67 @@ function isMutedNow(): boolean {
 function tone(
   freq: number,
   duration: number,
-  opts: { type?: OscillatorType; gain?: number; delay?: number } = {},
+  opts: {
+    type?: OscillatorType;
+    gain?: number;
+    delay?: number;
+    type2?: OscillatorType;
+    gain2?: number;
+    detune2?: number; // cents offset for second osc (default +1200 = octave up)
+    attack?: number;
+    release?: number;
+  } = {},
 ) {
   if (isMutedNow()) return;
   const c = getCtx();
   if (!c) return;
   if (c.state === "suspended") c.resume().catch(() => {});
   const start = c.currentTime + (opts.delay ?? 0);
-  const osc = c.createOscillator();
+  const attack = opts.attack ?? 0.008;
+  const peak = opts.gain ?? 0.08;
+  const release = opts.release ?? duration;
+
   const g = c.createGain();
+  g.gain.setValueAtTime(0.0001, start);
+  g.gain.exponentialRampToValueAtTime(peak, start + attack);
+  g.gain.exponentialRampToValueAtTime(0.0001, start + attack + release);
+  g.connect(c.destination);
+
+  const osc = c.createOscillator();
   osc.type = opts.type ?? "sine";
   osc.frequency.setValueAtTime(freq, start);
-  const peak = opts.gain ?? 0.08;
-  g.gain.setValueAtTime(0.0001, start);
-  g.gain.exponentialRampToValueAtTime(peak, start + 0.008);
-  g.gain.exponentialRampToValueAtTime(0.0001, start + duration);
-  osc.connect(g).connect(c.destination);
+  osc.connect(g);
   osc.start(start);
-  osc.stop(start + duration + 0.02);
+  osc.stop(start + attack + release + 0.05);
+
+  if (opts.type2) {
+    const g2 = c.createGain();
+    const peak2 = opts.gain2 ?? peak * 0.35;
+    g2.gain.setValueAtTime(0.0001, start);
+    g2.gain.exponentialRampToValueAtTime(peak2, start + attack);
+    g2.gain.exponentialRampToValueAtTime(0.0001, start + attack + release);
+    g2.connect(c.destination);
+    const osc2 = c.createOscillator();
+    osc2.type = opts.type2;
+    osc2.frequency.setValueAtTime(freq, start);
+    osc2.detune.setValueAtTime(opts.detune2 ?? 1200, start);
+    osc2.connect(g2);
+    osc2.start(start);
+    osc2.stop(start + attack + release + 0.05);
+  }
+}
+
+function chime(freq: number, delay: number, duration: number, gain = 0.09) {
+  tone(freq, duration, {
+    type: "sine",
+    gain,
+    delay,
+    type2: "triangle",
+    gain2: gain * 0.3,
+    detune2: 1200,
+    attack: 0.005,
+    release: duration,
+  });
 }
 
 export const sounds = {
@@ -59,12 +102,15 @@ export const sounds = {
     tone(600, 0.07, { type: "triangle", gain: 0.06 });
   },
   correct() {
-    tone(659.25, 0.12, { type: "sine", gain: 0.08 }); // E5
-    tone(880, 0.18, { type: "sine", gain: 0.09, delay: 0.1 }); // A5
+    // Premium rising major triad C5 - E5 - G5, bell-like with shimmer
+    chime(523.25, 0.0, 0.35);
+    chime(659.25, 0.07, 0.35);
+    chime(783.99, 0.14, 0.55, 0.1);
   },
   wrong() {
     tone(180, 0.22, { type: "square", gain: 0.05 });
   },
+
   fanfare(passed: boolean) {
     if (passed) {
       tone(523.25, 0.14, { type: "triangle", gain: 0.08 }); // C5
