@@ -469,11 +469,6 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
   );
 }
 
-      </div>
-    </div>
-  );
-}
-
 
 // ============== Renderers ==============
 
