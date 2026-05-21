@@ -360,7 +360,7 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
             revealed={isRevealed}
             onSelect={(i) => {
               setAnswer(i);
-              reveal();
+              reveal(i);
             }}
           />
         )}
@@ -371,7 +371,7 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
             revealed={isRevealed}
             onSelect={(i) => {
               setAnswer(i);
-              reveal();
+              reveal(i);
             }}
           />
         )}
@@ -382,7 +382,7 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
             revealed={isRevealed}
             onSelect={(i) => {
               setAnswer(i);
-              reveal();
+              reveal(i);
             }}
           />
         )}
@@ -425,8 +425,9 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
             revealed={isRevealed}
             onSelect={(id) => {
               setAnswer(id);
-              reveal();
+              reveal(id);
             }}
+
           />
         )}
 
