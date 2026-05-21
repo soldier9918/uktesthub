@@ -11,6 +11,8 @@ import {
   List,
   Volume2,
   VolumeX,
+  AlertCircle,
+  HelpCircle,
 } from "lucide-react";
 import { sounds, useSoundMuted } from "@/lib/quiz-sounds";
 import type {
@@ -1113,37 +1115,12 @@ function Results({
 
       <div className="rounded-3xl border border-border bg-card p-6 shadow-soft md:p-8">
         <h3 className="font-display text-xl font-semibold">Review your answers</h3>
-        <ol className="mt-5 space-y-4">
-          {quiz.questions.map((q, i) => {
-            const a = answers[i];
-            const correct = isCorrect(q, a);
-            const summary = answerSummary(q, a);
-            return (
-              <li key={q.id} className="rounded-2xl border border-border p-4">
-                <div className="flex items-start gap-3">
-                  {correct ? (
-                    <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-success" />
-                  ) : (
-                    <XCircle className="mt-0.5 h-5 w-5 shrink-0 text-destructive" />
-                  )}
-                  <div className="flex-1">
-                    <p className="font-medium">{i + 1}. {describeQuestion(q)}</p>
-                    <p className="mt-1 text-sm text-muted-foreground">
-                      <span className="font-semibold text-foreground">Correct: </span>
-                      {summary.correct}
-                      {!correct && summary.chosen && (
-                        <>
-                          {" · "}
-                          <span className="text-destructive">Your answer: {summary.chosen}</span>
-                        </>
-                      )}
-                    </p>
-                    <p className="mt-1 text-sm text-muted-foreground">{q.explanation}</p>
-                  </div>
-                </div>
-              </li>
-            );
-          })}
+        <ol className="mt-5 space-y-5">
+          {quiz.questions.map((q, i) => (
+            <li key={q.id}>
+              <ReviewCard q={q} a={answers[i]} index={i} />
+            </li>
+          ))}
         </ol>
       </div>
     </div>
@@ -1158,6 +1135,288 @@ function Stat({ label, value }: { label: string; value: string }) {
     </div>
   );
 }
+
+// ---------- Exam-mode review card ----------
+
+type ReviewOption = {
+  label: string;
+  isCorrect: boolean;
+  isSelected: boolean;
+};
+
+function buildReviewOptions(q: Question, a: Answer): ReviewOption[] | null {
+  if (isMcq(q) || isImage(q)) {
+    const sel = typeof a === "number" ? a : -1;
+    return q.options.map((label, idx) => ({
+      label,
+      isCorrect: idx === q.correctAnswer,
+      isSelected: idx === sel,
+    }));
+  }
+  if (isTrueFalse(q)) {
+    const sel = typeof a === "number" ? a : -1;
+    return ["True", "False"].map((label, idx) => ({
+      label,
+      isCorrect: (idx === 1) === q.correctAnswer,
+      isSelected: idx === sel,
+    }));
+  }
+  if (isMultiResponse(q)) {
+    const sel = Array.isArray(a) ? (a as number[]) : [];
+    const correctSet = new Set(q.correctAnswers);
+    return q.options.map((label, idx) => ({
+      label,
+      isCorrect: correctSet.has(idx),
+      isSelected: sel.includes(idx),
+    }));
+  }
+  return null;
+}
+
+function statusFor(q: Question, a: Answer): {
+  tone: "success" | "destructive" | "warning" | "muted";
+  icon: typeof CheckCircle2;
+  message: string;
+} {
+  const answered = isAnswered(q, a);
+  const correct = isCorrect(q, a);
+  if (!answered) {
+    return {
+      tone: "muted",
+      icon: HelpCircle,
+      message: "You did not answer this question. The correct answer is highlighted in green.",
+    };
+  }
+  if (correct) {
+    const msg = isMultiResponse(q)
+      ? "You selected all the correct answers."
+      : "You selected the correct answer.";
+    return { tone: "success", icon: CheckCircle2, message: msg };
+  }
+  if (isMultiResponse(q)) {
+    const sel = Array.isArray(a) ? (a as number[]) : [];
+    const correctSet = new Set(q.correctAnswers);
+    const anyCorrectPicked = sel.some((i) => correctSet.has(i));
+    const anyWrongPicked = sel.some((i) => !correctSet.has(i));
+    if (anyCorrectPicked && !anyWrongPicked) {
+      return {
+        tone: "warning",
+        icon: AlertCircle,
+        message: "You missed one or more correct answers. All correct answers are highlighted in green.",
+      };
+    }
+  }
+  return {
+    tone: "destructive",
+    icon: XCircle,
+    message: "Your answer was incorrect. The correct answer is highlighted in green.",
+  };
+}
+
+function OptionRow({
+  letter,
+  label,
+  isCorrect,
+  isSelected,
+}: {
+  letter?: string;
+  label: string;
+  isCorrect: boolean;
+  isSelected: boolean;
+}) {
+  const wrongSelected = isSelected && !isCorrect;
+  const base =
+    "flex items-start gap-3 rounded-2xl border-2 p-3 md:p-4 transition-colors";
+  const tone = isCorrect
+    ? "border-success bg-success/10"
+    : wrongSelected
+      ? "border-destructive bg-destructive/10"
+      : "border-border bg-background";
+  const chipTone = isCorrect
+    ? "bg-success text-success-foreground"
+    : wrongSelected
+      ? "bg-destructive text-destructive-foreground"
+      : "bg-muted text-muted-foreground";
+  return (
+    <div className={`${base} ${tone}`}>
+      {letter && (
+        <span
+          className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-xs font-bold ${chipTone}`}
+        >
+          {letter}
+        </span>
+      )}
+      <span className="flex-1 text-sm md:text-base">{label}</span>
+      <div className="flex shrink-0 flex-col items-end gap-1">
+        {isCorrect && <CheckCircle2 className="h-5 w-5 text-success" />}
+        {wrongSelected && <XCircle className="h-5 w-5 text-destructive" />}
+        {isSelected && (
+          <span
+            className={`rounded-full px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide ${
+              isCorrect
+                ? "bg-success/20 text-success"
+                : "bg-destructive/20 text-destructive"
+            }`}
+          >
+            Your answer
+          </span>
+        )}
+      </div>
+    </div>
+  );
+}
+
+function ReviewCard({ q, a, index }: { q: Question; a: Answer; index: number }) {
+  const answered = isAnswered(q, a);
+  const correct = isCorrect(q, a);
+  const status = statusFor(q, a);
+
+  const headerTone = !answered
+    ? "border-muted-foreground/30 bg-muted/30"
+    : correct
+      ? "border-success/30 bg-success/5"
+      : "border-destructive/30 bg-destructive/5";
+
+  const badgeTone = !answered
+    ? "bg-muted text-muted-foreground"
+    : correct
+      ? "bg-success text-success-foreground"
+      : "bg-destructive text-destructive-foreground";
+
+  const badgeText = !answered ? "Not answered" : correct ? "Correct" : "Incorrect";
+  const BadgeIcon = !answered ? HelpCircle : correct ? CheckCircle2 : XCircle;
+
+  const standardOptions = buildReviewOptions(q, a);
+
+  const statusToneClass =
+    status.tone === "success"
+      ? "border-success/30 bg-success/10 text-success"
+      : status.tone === "destructive"
+        ? "border-destructive/30 bg-destructive/10 text-destructive"
+        : status.tone === "warning"
+          ? "border-amber-500/30 bg-amber-500/10 text-amber-700 dark:text-amber-400"
+          : "border-border bg-muted/40 text-muted-foreground";
+
+  return (
+    <div className={`rounded-2xl border-2 p-4 md:p-5 ${headerTone}`}>
+      <div className="flex items-center justify-between gap-3">
+        <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+          Question {index + 1}
+        </span>
+        <span
+          className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-semibold ${badgeTone}`}
+        >
+          <BadgeIcon className="h-3.5 w-3.5" />
+          {badgeText}
+        </span>
+      </div>
+
+      <p className="mt-3 text-base font-semibold text-foreground md:text-lg">
+        {describeQuestion(q)}
+      </p>
+
+      <div className="mt-4 space-y-2">
+        {standardOptions ? (
+          standardOptions.map((opt, idx) => (
+            <OptionRow
+              key={idx}
+              letter={String.fromCharCode(65 + idx)}
+              label={opt.label}
+              isCorrect={opt.isCorrect}
+              isSelected={opt.isSelected}
+            />
+          ))
+        ) : (
+          <FallbackReview q={q} a={a} />
+        )}
+      </div>
+
+      <div
+        className={`mt-4 flex items-start gap-2 rounded-xl border p-3 text-sm font-medium ${statusToneClass}`}
+      >
+        <status.icon className="mt-0.5 h-4 w-4 shrink-0" />
+        <span>{status.message}</span>
+      </div>
+
+      {q.explanation && (
+        <div className="mt-3 rounded-xl border border-border bg-muted/40 p-4">
+          <div className="text-xs font-bold uppercase tracking-wider text-muted-foreground">
+            Explanation
+          </div>
+          <p className="mt-1 text-sm text-foreground md:text-base">{q.explanation}</p>
+        </div>
+      )}
+    </div>
+  );
+}
+
+function FallbackReview({ q, a }: { q: Question; a: Answer }) {
+  // Fill-blanks / drag-drop / numeric / hot-spot
+  if (isFillBlanks(q) || isDragDrop(q)) {
+    const userArr = Array.isArray(a) ? (a as number[]) : [];
+    return (
+      <div className="space-y-2">
+        {q.blanks.map((b, i) => {
+          const userIdx = userArr[i] ?? -1;
+          const userAnswered = userIdx >= 0;
+          const isRight = userIdx === b.correctIndex;
+          return (
+            <div key={i} className="space-y-2">
+              <div className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+                Blank {i + 1}
+              </div>
+              <OptionRow
+                label={b.options[b.correctIndex]}
+                isCorrect={true}
+                isSelected={userAnswered && isRight}
+              />
+              {userAnswered && !isRight && (
+                <OptionRow
+                  label={b.options[userIdx]}
+                  isCorrect={false}
+                  isSelected={true}
+                />
+              )}
+            </div>
+          );
+        })}
+      </div>
+    );
+  }
+  if (isNumeric(q)) {
+    const correctLabel = `${q.correctAnswer}${q.unit ? ` ${q.unit}` : ""}`;
+    const userAnswered = typeof a === "string" && a.trim() !== "";
+    const right = isCorrect(q, a);
+    return (
+      <div className="space-y-2">
+        <OptionRow label={correctLabel} isCorrect={true} isSelected={userAnswered && right} />
+        {userAnswered && !right && (
+          <OptionRow label={a as string} isCorrect={false} isSelected={true} />
+        )}
+      </div>
+    );
+  }
+  if (isHotSpot(q)) {
+    const correctSpot = q.spots.find((s) => s.id === q.correctSpotId);
+    const correctLabel = correctSpot?.label ?? q.correctSpotId;
+    const userAnswered = typeof a === "string" && a.length > 0;
+    const right = a === q.correctSpotId;
+    const userLabel = userAnswered
+      ? q.spots.find((s) => s.id === a)?.label ?? (a === "__miss__" ? "Outside any region" : (a as string))
+      : "";
+    return (
+      <div className="space-y-2">
+        <OptionRow label={correctLabel} isCorrect={true} isSelected={userAnswered && right} />
+        {userAnswered && !right && (
+          <OptionRow label={userLabel} isCorrect={false} isSelected={true} />
+        )}
+      </div>
+    );
+  }
+  return null;
+}
+
+
 
 function formatTime(s: number) {
   const m = Math.floor(s / 60);
