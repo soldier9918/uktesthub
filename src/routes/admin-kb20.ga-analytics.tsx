@@ -187,12 +187,13 @@ function GaAnalytics() {
       ) : data ? (
         <>
 
-          <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
+          <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-6">
             <Kpi label="Active users (30 min)" value={data.realtime.activeUsers} live />
             <Kpi label="Pageviews (30 min)" value={data.realtime.pageviews} live />
             <Kpi label="Pageviews (24 h)" value={data.pageviews24h} />
             <Kpi label="Visitors (24 h)" value={data.visitors24h} />
             <Kpi label="Pageviews (30 d)" value={data.pageviews30d} />
+            <Kpi label="Pageviews (YTD)" value={data.pageviewsYTD} />
           </div>
 
           <Card className="mt-6 p-4">
