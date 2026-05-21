@@ -1,4 +1,6 @@
 import { Outlet, Link, createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
+import { useEffect } from "react";
+
 
 import appCss from "../styles.css?url";
 import { organizationSchema, websiteSchema } from "@/lib/seo";
@@ -60,11 +62,6 @@ export const Route = createRootRoute({
     scripts: [
       organizationSchema(),
       websiteSchema(),
-      {
-        async: true,
-        src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7445296424475191",
-        crossOrigin: "anonymous",
-      },
     ],
   }),
   shellComponent: RootShell,
@@ -88,6 +85,15 @@ function RootShell({ children }: { children: React.ReactNode }) {
 }
 
 function RootComponent() {
+  useEffect(() => {
+    if (document.querySelector('script[data-adsense-loader]')) return;
+    const s = document.createElement('script');
+    s.async = true;
+    s.crossOrigin = 'anonymous';
+    s.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7445296424475191';
+    s.setAttribute('data-adsense-loader', '1');
+    document.head.appendChild(s);
+  }, []);
   return (
     <AuthProvider>
       <PageViewTracker />
