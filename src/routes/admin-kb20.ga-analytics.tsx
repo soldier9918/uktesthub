@@ -269,7 +269,7 @@ function GaAnalytics() {
             </h2>
             <div className="mt-3 h-64">
               <ResponsiveContainer width="100%" height="100%">
-                <BarChart data={data.monthly}>
+                <LineChart data={data.monthly}>
                   <CartesianGrid strokeDasharray="3 3" className="stroke-muted" />
                   <XAxis
                     dataKey="month"
@@ -279,11 +279,18 @@ function GaAnalytics() {
                       return names[m - 1] ?? v;
                     }}
                     fontSize={11}
+                    interval={0}
                   />
                   <YAxis fontSize={11} allowDecimals={false} />
                   <Tooltip />
-                  <Bar dataKey="pageviews" fill="var(--primary)" />
-                </BarChart>
+                  <Line
+                    type="monotone"
+                    dataKey="pageviews"
+                    stroke="var(--primary)"
+                    strokeWidth={2}
+                    dot={{ r: 3 }}
+                  />
+                </LineChart>
               </ResponsiveContainer>
             </div>
           </Card>
