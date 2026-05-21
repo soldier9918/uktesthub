@@ -445,15 +445,30 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
             <ChevronLeft className="h-4 w-4" />
             Back
           </button>
-          <button
-            onClick={goNext}
-            disabled={!answered}
-            className="inline-flex items-center gap-2 rounded-xl bg-gradient-coral px-5 py-2.5 text-sm font-semibold text-coral-foreground shadow-coral transition-transform hover:-translate-y-0.5 disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:translate-y-0"
-          >
-            {current === quiz.questions.length - 1 ? "Finish" : "Next"}
-            <ChevronRight className="h-4 w-4" />
-          </button>
+          <div className="flex gap-2">
+            {mode === "practice" && answered && !isRevealed && (
+              <button
+                onClick={reveal}
+                className="inline-flex items-center gap-2 rounded-xl border border-border bg-background px-4 py-2.5 text-sm font-semibold hover:bg-muted"
+              >
+                Check answer
+              </button>
+            )}
+            <button
+              onClick={goNext}
+              disabled={!answered}
+              className="inline-flex items-center gap-2 rounded-xl bg-gradient-coral px-5 py-2.5 text-sm font-semibold text-coral-foreground shadow-coral transition-transform hover:-translate-y-0.5 disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:translate-y-0"
+            >
+              {current === quiz.questions.length - 1 ? "Finish" : "Next"}
+              <ChevronRight className="h-4 w-4" />
+            </button>
+          </div>
         </div>
+      </div>
+    </div>
+  );
+}
+
       </div>
     </div>
   );
