@@ -162,13 +162,21 @@ export const getGaDashboard = createServerFn({ method: "POST" })
       const pageviews24h = hourly.reduce((s, x) => s + x.pageviews, 0);
       const visitors24h = hourly.reduce((s, x) => s + x.users, 0);
 
-      // Monthly (YTD)
-      const monthly = (monthlyYTD.rows ?? [])
-        .map((r) => {
-          const ym = r.dimensionValues?.[0]?.value ?? ""; // YYYYMM
-          const month = ym.length === 6 ? `${ym.slice(0, 4)}-${ym.slice(4, 6)}` : ym;
-          return { month, pageviews: Number(r.metricValues?.[0]?.value ?? 0) };
-        })
+      // Monthly (YTD) — pre-fill all 12 months of the current year with 0
+      const monthlyMap = new Map<string, number>();
+      for (let m = 1; m <= 12; m++) {
+        monthlyMap.set(`${currentYear}-${String(m).padStart(2, "0")}`, 0);
+      }
+      for (const r of monthlyYTD.rows ?? []) {
+        const ym = r.dimensionValues?.[0]?.value ?? ""; // YYYYMM
+        if (ym.length !== 6) continue;
+        const key = `${ym.slice(0, 4)}-${ym.slice(4, 6)}`;
+        if (monthlyMap.has(key)) {
+          monthlyMap.set(key, Number(r.metricValues?.[0]?.value ?? 0));
+        }
+      }
+      const monthly = Array.from(monthlyMap.entries())
+        .map(([month, pageviews]) => ({ month, pageviews }))
         .sort((a, b) => a.month.localeCompare(b.month));
       const pageviewsYTD = monthly.reduce((s, x) => s + x.pageviews, 0);
 
