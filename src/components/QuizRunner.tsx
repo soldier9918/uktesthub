@@ -1355,14 +1355,14 @@ function FallbackReview({ q, a }: { q: Question; a: Answer }) {
   if (isFillBlanks(q) || isDragDrop(q)) {
     const userArr = Array.isArray(a) ? (a as number[]) : [];
     return (
-      <div className="space-y-2">
+      <div className="space-y-1.5">
         {q.blanks.map((b, i) => {
           const userIdx = userArr[i] ?? -1;
           const userAnswered = userIdx >= 0;
           const isRight = userIdx === b.correctIndex;
           return (
-            <div key={i} className="space-y-2">
-              <div className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+            <div key={i} className="space-y-1.5">
+              <div className="text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">
                 Blank {i + 1}
               </div>
               <OptionRow
