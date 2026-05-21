@@ -1298,24 +1298,24 @@ function ReviewCard({ q, a, index }: { q: Question; a: Answer; index: number }) 
           : "border-border bg-muted/40 text-muted-foreground";
 
   return (
-    <div className={`rounded-2xl border-2 p-4 md:p-5 ${headerTone}`}>
+    <div className={`rounded-xl border p-3 md:p-4 ${headerTone}`}>
       <div className="flex items-center justify-between gap-3">
-        <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+        <span className="text-[11px] font-semibold uppercase tracking-wider text-muted-foreground">
           Question {index + 1}
         </span>
         <span
-          className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-semibold ${badgeTone}`}
+          className={`inline-flex items-center gap-1.5 rounded-full px-2 py-0.5 text-[11px] font-semibold ${badgeTone}`}
         >
-          <BadgeIcon className="h-3.5 w-3.5" />
+          <BadgeIcon className="h-3 w-3" />
           {badgeText}
         </span>
       </div>
 
-      <p className="mt-3 text-base font-semibold text-foreground md:text-lg">
+      <p className="mt-2 text-sm font-semibold leading-snug text-foreground md:text-base">
         {describeQuestion(q)}
       </p>
 
-      <div className="mt-4 space-y-2">
+      <div className="mt-3 space-y-1.5">
         {standardOptions ? (
           standardOptions.map((opt, idx) => (
             <OptionRow
@@ -1332,18 +1332,18 @@ function ReviewCard({ q, a, index }: { q: Question; a: Answer; index: number }) 
       </div>
 
       <div
-        className={`mt-4 flex items-start gap-2 rounded-xl border p-3 text-sm font-medium ${statusToneClass}`}
+        className={`mt-3 flex items-start gap-2 rounded-lg border px-3 py-2 text-xs font-medium md:text-sm ${statusToneClass}`}
       >
-        <status.icon className="mt-0.5 h-4 w-4 shrink-0" />
+        <status.icon className="mt-0.5 h-3.5 w-3.5 shrink-0" />
         <span>{status.message}</span>
       </div>
 
       {q.explanation && (
-        <div className="mt-3 rounded-xl border border-border bg-muted/40 p-4">
-          <div className="text-xs font-bold uppercase tracking-wider text-muted-foreground">
+        <div className="mt-2 rounded-lg border border-border bg-muted/40 p-3">
+          <div className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground">
             Explanation
           </div>
-          <p className="mt-1 text-sm text-foreground md:text-base">{q.explanation}</p>
+          <p className="mt-1 text-xs leading-relaxed text-foreground md:text-sm">{q.explanation}</p>
         </div>
       )}
     </div>
