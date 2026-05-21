@@ -1226,7 +1226,7 @@ function OptionRow({
 }) {
   const wrongSelected = isSelected && !isCorrect;
   const base =
-    "flex items-start gap-3 rounded-2xl border-2 p-3 md:p-4 transition-colors";
+    "flex items-center gap-2.5 rounded-lg border p-2 md:p-2.5 transition-colors";
   const tone = isCorrect
     ? "border-success bg-success/10"
     : wrongSelected
@@ -1241,18 +1241,16 @@ function OptionRow({
     <div className={`${base} ${tone}`}>
       {letter && (
         <span
-          className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-xs font-bold ${chipTone}`}
+          className={`flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-[11px] font-bold ${chipTone}`}
         >
           {letter}
         </span>
       )}
-      <span className="flex-1 text-sm md:text-base">{label}</span>
-      <div className="flex shrink-0 flex-col items-end gap-1">
-        {isCorrect && <CheckCircle2 className="h-5 w-5 text-success" />}
-        {wrongSelected && <XCircle className="h-5 w-5 text-destructive" />}
+      <span className="flex-1 text-sm leading-snug">{label}</span>
+      <div className="flex shrink-0 flex-row items-center gap-2">
         {isSelected && (
           <span
-            className={`rounded-full px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide ${
+            className={`rounded-full px-1.5 py-0 text-[10px] font-semibold uppercase tracking-wide ${
               isCorrect
                 ? "bg-success/20 text-success"
                 : "bg-destructive/20 text-destructive"
@@ -1261,6 +1259,8 @@ function OptionRow({
             Your answer
           </span>
         )}
+        {isCorrect && <CheckCircle2 className="h-4 w-4 text-success" />}
+        {wrongSelected && <XCircle className="h-4 w-4 text-destructive" />}
       </div>
     </div>
   );
