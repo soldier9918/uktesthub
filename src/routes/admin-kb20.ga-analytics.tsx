@@ -262,6 +262,31 @@ function GaAnalytics() {
               </ResponsiveContainer>
             </div>
           </Card>
+
+          <Card className="mt-4 p-4">
+            <h2 className="text-sm font-semibold">
+              Pageviews — this year ({new Date().getUTCFullYear()}) by month
+            </h2>
+            <div className="mt-3 h-64">
+              <ResponsiveContainer width="100%" height="100%">
+                <BarChart data={data.monthly}>
+                  <CartesianGrid strokeDasharray="3 3" className="stroke-muted" />
+                  <XAxis
+                    dataKey="month"
+                    tickFormatter={(v: string) => {
+                      const m = Number(v.slice(5, 7));
+                      const names = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+                      return names[m - 1] ?? v;
+                    }}
+                    fontSize={11}
+                  />
+                  <YAxis fontSize={11} allowDecimals={false} />
+                  <Tooltip />
+                  <Bar dataKey="pageviews" fill="var(--primary)" />
+                </BarChart>
+              </ResponsiveContainer>
+            </div>
+          </Card>
         </>
       ) : null}
     </main>
