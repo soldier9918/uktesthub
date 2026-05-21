@@ -262,6 +262,21 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
     }
   }, [finished, score, quiz, user]);
 
+  // Auto-reveal once the current question is fully answered (practice mode).
+  useEffect(() => {
+    if (mode !== "practice") return;
+    if (revealed[current]) return;
+    const q = quiz.questions[current];
+    const selected = answers[current];
+    if (!isAnswered(q, selected)) return;
+    const r = [...revealed];
+    r[current] = true;
+    setRevealed(r);
+    if (isCorrect(q, selected ?? null)) sounds.correct();
+    else sounds.wrong();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [mode, current, answers, revealed, quiz]);
+
   if (!mode) return <ModeSelect quiz={quiz} onSelect={setMode} />;
 
   if (finished) {
@@ -313,14 +328,7 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
 
   const showAdBreak = mode === "exam" && current > 0 && current % 4 === 0;
 
-  // Auto-reveal once the current question is fully answered (practice mode).
-  useEffect(() => {
-    if (mode !== "practice") return;
-    if (revealed[current]) return;
-    if (!isAnswered(q, selected)) return;
-    reveal();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [mode, current, selected, revealed]);
+
 
 
   return (
