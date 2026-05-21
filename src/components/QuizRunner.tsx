@@ -297,14 +297,16 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
     if (mode === "exam") sounds.click();
   };
 
-  const reveal = () => {
+  const reveal = (answerOverride?: Answer) => {
     if (mode !== "practice") return;
     const r = [...revealed];
     r[current] = true;
     setRevealed(r);
-    if (isCorrect(q, answers[current] ?? null)) sounds.correct();
+    const ans = answerOverride !== undefined ? answerOverride : answers[current] ?? null;
+    if (isCorrect(q, ans)) sounds.correct();
     else sounds.wrong();
   };
+
 
   const goNext = () => {
     if (mode === "exam") sounds.next();
