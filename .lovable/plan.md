@@ -1,39 +1,54 @@
 ## Goal
 
-Replace the current "correct answer" sound (a 2-note E5→A5 sine beep) with a **premium, satisfying success chime** — the kind of warm bell/glockenspiel "ding" used in polished apps (Duolingo, Apple Pay confirmation, iOS notification success).
+Redesign the exam-mode results "Review your answers" section in `src/components/QuizRunner.tsx` so each reviewed question shows the **full question text + all original options as cards** (green = correct, red = wrong selected, neutral = others), plus a clear status message and a styled Explanation box. Scoring, pass/fail and exam flow stay untouched — this is presentation-only.
 
-## Approach
+## Scope
 
-Keep it self-contained in `src/lib/quiz-sounds.ts` using the existing WebAudio setup — no external assets, no network, works offline, identical mute behaviour. Upgrade the `tone()` helper just enough to support a richer voice, then rewrite `sounds.correct()`.
+Only the `Results` component's review list (around lines 1114–1148 of `src/components/QuizRunner.tsx`). Everything else (timer, scoring, `isCorrect`, practice mode inline feedback, CTAs) is left alone.
 
-### 1. Extend the synthesis helper
+## What changes
 
-Add an optional second oscillator + a short attack/decay envelope so notes sound like a soft mallet/bell rather than a raw beep. New optional fields on the `opts` param:
+1. **Replace the current `<li>` row** (which only shows "Correct: …" / "Your answer: …") with a richer `ReviewCard` that renders, per question:
+   - Header: `Question {i+1}` + correct/incorrect/unanswered badge with tick/cross icon.
+   - Full question text via existing `describeQuestion(q)`.
+   - All original options rendered as rounded option cards (matching quiz styling: rounded-2xl, border, A/B/C/D letter chip).
+   - Status message under the options.
+   - Explanation box: light `bg-muted/40` rounded panel labeled **Explanation**.
 
-- `type2?: OscillatorType` — second oscillator layered an octave up at lower gain (adds shimmer)
-- `attack?: number` (default 0.005) and `release?: number` (default the duration) for a snappier, bell-like envelope using `setTargetAtTime` for natural exponential decay
-- Keep existing call sites working (defaults preserve current behaviour for `click`, `next`, `wrong`, `fanfare`).
+2. **Option coloring rules** (applied per question type):
+   - Correct option(s): `border-success bg-success/10` + green `CheckCircle2` icon on the right.
+   - User's wrong selected option(s): `border-destructive bg-destructive/10` + red `XCircle` + small "Your answer" label.
+   - User's correct selection: green styling + "Your answer" label.
+   - Everything else: neutral `border-border bg-card`.
 
-### 2. Rewrite `sounds.correct()`
+3. **Status message** under options:
+   - Correct (single or full multi): "✅ You selected the correct answer." (or "…all correct answers." for multi-response).
+   - Wrong: "❌ Your answer was incorrect. The correct answer is highlighted in green."
+   - Partial multi: "⚠️ You missed one or more correct answers."
+   - Unanswered: "You did not answer this question. The correct answer is highlighted in green."
 
-Play a clean **major arpeggio** with bell-like timbre: C5 → E5 → G5 (a confident major triad rising), each note ~180 ms, 70 ms apart, layered sine + triangle one octave higher at ~30% gain for sparkle. Slightly longer release on the final note so it "rings out".
+4. **Per question-type rendering** in the new `ReviewCard`:
+   - **MCQ / Image / TrueFalse**: list `q.options` (TrueFalse uses `["True","False"]`), compare index to `q.correctAnswer` and the numeric user answer.
+   - **MultipleResponse**: list `q.options`, correct set = `q.correctAnswers` (array), user set = `a as number[]`.
+   - **Numeric**: show single "Correct answer" card (green) with `q.correctAnswer`; if user answered, show their value card (green if matches via existing tolerance logic from `isCorrect`, else red).
+   - **FillBlanks / DragDrop**: show each blank as a row: correct token green, user token red if wrong, green if right.
+   - **HotSpot**: keep existing text summary (no visual map in review) — render correct spot label as green card, user's pick as red card if wrong; "Outside any region" if `__miss__`.
 
-Approximate shape:
+5. **Helpers**: small local helpers inside `Results` (or just above it):
+   - `optionState(q, a, idx)` → `"correct" | "wrong-selected" | "selected-correct" | "neutral"`.
+   - `statusFor(q, a)` → `{ tone: "success"|"destructive"|"warning"|"muted", message: string }`.
 
-```
-chime(523.25, delay 0.00, dur 0.35)  // C5
-chime(659.25, delay 0.07, dur 0.35)  // E5
-chime(783.99, delay 0.14, dur 0.55)  // G5, longer ring
-```
+6. **Styling tokens**: use existing semantic tokens already in the project — `success`, `destructive`, `muted`, `border`, `card`, `coral` — no new CSS variables needed. Mobile responsive via existing tailwind utilities (cards stack naturally; option rows use `flex items-start gap-3` with `text-sm md:text-base`).
 
-Where `chime(freq, delay, dur)` uses sine + triangle one octave up, gain ~0.09 / 0.03, 5 ms attack, exponential release.
+7. **Imports**: `CheckCircle2`, `XCircle` already imported; add `AlertCircle` from lucide-react for the partial/unanswered state.
 
-### 3. Leave everything else untouched
+## Out of scope
 
-`wrong`, `click`, `next`, `fanfare`, the mute toggle, and `useSoundMuted` stay exactly as they are. No other files change.
+- Scoring / pass logic / timer / answer capture — unchanged.
+- Practice-mode per-question feedback (lines ~356–445) — unchanged.
+- `answerSummary` helper can stay for any other callers; new review code uses its own per-type rendering.
+- No new files, no design tokens added, no data-shape changes.
 
-## Why not ElevenLabs / mp3 assets
+## Acceptance
 
-A synthesised chime is instant (no fetch, no decode), <1 KB of code, no API key, and matches the existing audio pipeline. ElevenLabs SFX would only be worth it if you wanted a long branded jingle — overkill for a per-question feedback sound.
-
-If you'd prefer a real recorded chime instead, say the word and I'll swap in an `<audio>` element with a bundled mp3 instead.
+On `/quiz/customer-service-mock-1` → finish in exam mode → review section shows each question with full text, all original options as cards (green correct / red wrong-selected / neutral others), a status line, and a styled Explanation box. Works for MCQ, true/false, multi-response, fill-blanks, drag-drop, numeric, hotspot, and unanswered questions. Quiz flow, scoring, and pass/fail behave exactly as before.
