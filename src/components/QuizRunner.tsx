@@ -297,14 +297,16 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
     if (mode === "exam") sounds.click();
   };
 
-  const reveal = () => {
+  const reveal = (answerOverride?: Answer) => {
     if (mode !== "practice") return;
     const r = [...revealed];
     r[current] = true;
     setRevealed(r);
-    if (isCorrect(q, answers[current] ?? null)) sounds.correct();
+    const ans = answerOverride !== undefined ? answerOverride : answers[current] ?? null;
+    if (isCorrect(q, ans)) sounds.correct();
     else sounds.wrong();
   };
+
 
   const goNext = () => {
     if (mode === "exam") sounds.next();
@@ -358,7 +360,7 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
             revealed={isRevealed}
             onSelect={(i) => {
               setAnswer(i);
-              reveal();
+              reveal(i);
             }}
           />
         )}
@@ -369,7 +371,7 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
             revealed={isRevealed}
             onSelect={(i) => {
               setAnswer(i);
-              reveal();
+              reveal(i);
             }}
           />
         )}
@@ -380,7 +382,7 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
             revealed={isRevealed}
             onSelect={(i) => {
               setAnswer(i);
-              reveal();
+              reveal(i);
             }}
           />
         )}
@@ -423,8 +425,9 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
             revealed={isRevealed}
             onSelect={(id) => {
               setAnswer(id);
-              reveal();
+              reveal(id);
             }}
+
           />
         )}
 
@@ -448,7 +451,7 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
           <div className="flex gap-2">
             {mode === "practice" && answered && !isRevealed && (
               <button
-                onClick={reveal}
+                onClick={() => reveal()}
                 className="inline-flex items-center gap-2 rounded-xl border border-border bg-background px-4 py-2.5 text-sm font-semibold hover:bg-muted"
               >
                 Check answer
