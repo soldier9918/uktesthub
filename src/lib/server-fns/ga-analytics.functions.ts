@@ -162,6 +162,16 @@ export const getGaDashboard = createServerFn({ method: "POST" })
       const pageviews24h = hourly.reduce((s, x) => s + x.pageviews, 0);
       const visitors24h = hourly.reduce((s, x) => s + x.users, 0);
 
+      // Monthly (YTD)
+      const monthly = (monthlyYTD.rows ?? [])
+        .map((r) => {
+          const ym = r.dimensionValues?.[0]?.value ?? ""; // YYYYMM
+          const month = ym.length === 6 ? `${ym.slice(0, 4)}-${ym.slice(4, 6)}` : ym;
+          return { month, pageviews: Number(r.metricValues?.[0]?.value ?? 0) };
+        })
+        .sort((a, b) => a.month.localeCompare(b.month));
+      const pageviewsYTD = monthly.reduce((s, x) => s + x.pageviews, 0);
+
       return {
         data: {
           realtime: realtimeData,
@@ -169,8 +179,10 @@ export const getGaDashboard = createServerFn({ method: "POST" })
           pageviews30d,
           pageviews24h,
           visitors24h,
+          pageviewsYTD,
           hourly,
           daily,
+          monthly,
           fetchedAt: new Date().toISOString(),
         },
         error: null,
