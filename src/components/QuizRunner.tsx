@@ -450,7 +450,7 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
           <div className="flex gap-2">
             {mode === "practice" && answered && !isRevealed && (
               <button
-                onClick={reveal}
+                onClick={() => reveal()}
                 className="inline-flex items-center gap-2 rounded-xl border border-border bg-background px-4 py-2.5 text-sm font-semibold hover:bg-muted"
               >
                 Check answer
