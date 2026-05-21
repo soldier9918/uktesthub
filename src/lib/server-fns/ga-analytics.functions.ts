@@ -16,8 +16,10 @@ export type GaDashboard = {
   pageviews30d: number;
   pageviews24h: number;
   visitors24h: number;
+  pageviewsYTD: number;
   hourly: { hour: string; pageviews: number; users: number }[];
   daily: { date: string; pageviews: number }[];
+  monthly: { month: string; pageviews: number }[];
   fetchedAt: string;
 };
 
