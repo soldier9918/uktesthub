@@ -1115,37 +1115,12 @@ function Results({
 
       <div className="rounded-3xl border border-border bg-card p-6 shadow-soft md:p-8">
         <h3 className="font-display text-xl font-semibold">Review your answers</h3>
-        <ol className="mt-5 space-y-4">
-          {quiz.questions.map((q, i) => {
-            const a = answers[i];
-            const correct = isCorrect(q, a);
-            const summary = answerSummary(q, a);
-            return (
-              <li key={q.id} className="rounded-2xl border border-border p-4">
-                <div className="flex items-start gap-3">
-                  {correct ? (
-                    <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-success" />
-                  ) : (
-                    <XCircle className="mt-0.5 h-5 w-5 shrink-0 text-destructive" />
-                  )}
-                  <div className="flex-1">
-                    <p className="font-medium">{i + 1}. {describeQuestion(q)}</p>
-                    <p className="mt-1 text-sm text-muted-foreground">
-                      <span className="font-semibold text-foreground">Correct: </span>
-                      {summary.correct}
-                      {!correct && summary.chosen && (
-                        <>
-                          {" · "}
-                          <span className="text-destructive">Your answer: {summary.chosen}</span>
-                        </>
-                      )}
-                    </p>
-                    <p className="mt-1 text-sm text-muted-foreground">{q.explanation}</p>
-                  </div>
-                </div>
-              </li>
-            );
-          })}
+        <ol className="mt-5 space-y-5">
+          {quiz.questions.map((q, i) => (
+            <li key={q.id}>
+              <ReviewCard q={q} a={answers[i]} index={i} />
+            </li>
+          ))}
         </ol>
       </div>
     </div>
