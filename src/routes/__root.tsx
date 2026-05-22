@@ -97,8 +97,9 @@ export const Route = createRootRoute({
 function RootShell({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <head>
+      <head suppressHydrationWarning>
         <script
+          suppressHydrationWarning
           data-google-cmp-bootstrap="1"
           dangerouslySetInnerHTML={{ __html: GOOGLE_CMP_BOOTSTRAP_SCRIPT }}
         />
