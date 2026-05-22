@@ -1,31 +1,23 @@
-## Goal
-On `/quiz/*` pages, FAQ answers are currently inside a Radix Accordion (collapsed by default). The answer text is not in the rendered HTML until a user clicks, so crawlers and AdSense reviewers see only the questions.
+## Problem
 
-## Change
-In `src/components/QuizRunner.tsx` (lines 1068–1084), replace the `Accordion`/`AccordionItem`/`AccordionTrigger`/`AccordionContent` block with a plain, always-rendered list:
+In `QuizRunner.tsx`, progress (current question index + answers) is saved to and restored from `quiz_progress` for any signed-in user, regardless of the selected mode. That means starting an exam picks up where the previous exam attempt left off — which defeats the point of exam mode (it should always be a fresh, timed run).
 
-```tsx
-{intro.faqs && intro.faqs.length > 0 && (
-  <div className="mt-8">
-    <h3 className="font-display text-lg font-bold md:text-xl">Frequently asked questions</h3>
-    <dl className="mt-3 space-y-4">
-      {intro.faqs.map((f) => (
-        <div key={f.q} className="border-b border-border pb-4 last:border-b-0">
-          <dt className="text-sm font-semibold text-foreground md:text-base">{f.q}</dt>
-          <dd className="mt-1 text-sm leading-relaxed text-muted-foreground md:text-base">{f.a}</dd>
-        </div>
-      ))}
-    </dl>
-  </div>
-)}
-```
+## Fix
 
-Also remove the now-unused `Accordion*` imports from the top of `QuizRunner.tsx` if they aren't used elsewhere in the file.
+Scope the resume + autosave behaviour to **practice mode only**.
 
-## Why
-- Answer text is in initial SSR HTML — visible to Googlebot and AdSense crawlers.
-- Existing `faqSchema(intro.faqs)` JSON-LD already emitted in `quiz.$slug.tsx` stays in sync.
-- No data changes; `mock-intros.ts` FAQ content is unchanged.
+In `src/components/QuizRunner.tsx`:
 
-## Files
-- `src/components/QuizRunner.tsx` — replace accordion block; clean up imports.
+1. **Restore effect (lines ~190–215)** — add `mode !== "practice"` early return so exam mode never loads saved `current_index`/`answers`. Also gate on `mode` in the dependency array so it re-evaluates once the user picks a mode.
+
+2. **Autosave effect (lines ~218–237)** — change the guard from `mode === null` to `mode !== "practice"`, so exam-mode progress is never written to `quiz_progress`.
+
+3. **On entering exam mode** — when `mode` becomes `"exam"` and the user is signed in, delete any existing `quiz_progress` row for this `mock_slug` so a stale practice-mode row can't bleed into the exam UI either. (Small new effect, runs once per mode selection.)
+
+4. Leave the existing completion-time delete (line 265) and the practice-mode behaviour untouched.
+
+## Out of scope
+
+- No DB schema changes.
+- No changes to `quiz_attempts` logging — exam results should still be recorded on finish.
+- Dashboard "Resume in progress" already only lists rows that exist in `quiz_progress`, so once exam rows stop being written it will naturally only show practice sessions.

@@ -189,6 +189,7 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
   // (used by admins to verify a specific question).
   useEffect(() => {
     if (!user || progressLoaded) return;
+    if (mode !== "practice") return;
     const hasHashJump =
       typeof window !== "undefined" &&
       /^#q\d+$/i.test(window.location.hash);
@@ -212,11 +213,18 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
         setProgressLoaded(true);
       });
     return () => { cancelled = true; };
-  }, [user, quiz.slug, quiz.questions.length, progressLoaded]);
+  }, [user, mode, quiz.slug, quiz.questions.length, progressLoaded]);
 
-  // Debounced live save while quiz is in progress
+  // Clear any prior saved progress when entering exam mode, so an exam always
+  // starts fresh (resume is intentionally practice-only).
   useEffect(() => {
-    if (!user || finished || mode === null) return;
+    if (!user || mode !== "exam") return;
+    supabase.from("quiz_progress").delete().eq("mock_slug", quiz.slug).then(() => {});
+  }, [user, mode, quiz.slug]);
+
+  // Debounced live save while quiz is in progress (practice mode only)
+  useEffect(() => {
+    if (!user || finished || mode !== "practice") return;
     const t = setTimeout(() => {
       supabase
         .from("quiz_progress")
@@ -235,6 +243,7 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
     }, 800);
     return () => clearTimeout(t);
   }, [user, finished, mode, current, answers, quiz]);
+
 
   useEffect(() => {
     if (!finished) return;
