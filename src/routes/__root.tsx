@@ -90,6 +90,12 @@ function RootComponent() {
     // for AdSense in the UK/EEA. The actual message UI is configured in the
     // AdSense > Privacy & messaging dashboard; this loader makes it appear
     // and registers window.__tcfapi.
+    //
+    // We deliberately do NOT also inject adsbygoogle.js here. The AdSense
+    // runtime auto-loads Funding Choices for the same publisher, and
+    // running both loaders causes the CMP to flash-then-disappear.
+    // adsbygoogle.js is loaded on demand by AdSlot when an ad actually
+    // renders (and only after advertising consent is granted).
     if (!document.querySelector('script[data-fc-loader]')) {
       const fc = document.createElement('script');
       fc.async = true;
@@ -99,15 +105,6 @@ function RootComponent() {
       const fcPresent = document.createElement('script');
       fcPresent.text = "(function() {function signalGooglefcPresent() {if (!window.frames['googlefcPresent']) {if (document.body) {const iframe = document.createElement('iframe');iframe.style = 'width: 0; height: 0; border: none; z-index: -1000; left: -1000px; top: -1000px;';iframe.style.display = 'none';iframe.name = 'googlefcPresent';document.body.appendChild(iframe);} else {setTimeout(signalGooglefcPresent, 0);}}}signalGooglefcPresent();})();";
       document.head.appendChild(fcPresent);
-    }
-    // AdSense loader (separate from the CMP loader).
-    if (!document.querySelector('script[data-adsense-loader]')) {
-      const s = document.createElement('script');
-      s.async = true;
-      s.crossOrigin = 'anonymous';
-      s.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7445296424475191';
-      s.setAttribute('data-adsense-loader', '1');
-      document.head.appendChild(s);
     }
   }, []);
 
