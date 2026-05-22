@@ -117,7 +117,7 @@ export function CookieConsent() {
 
   return (
     <>
-      {showBanner && !hasConsent && (
+      {showBanner && !hasConsent && !cmpPresent && (
         <div
           role="dialog"
           aria-label="Cookie consent"
