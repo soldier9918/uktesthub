@@ -75,6 +75,13 @@ let adsenseScriptLoaded = false;
 function loadAdsenseScript() {
   if (adsenseScriptLoaded || typeof window === "undefined") return;
   if (!ADSENSE_ENABLED) return;
+  const existing = document.querySelector<HTMLScriptElement>(
+    `script[src^="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT_ID}"]`,
+  );
+  if (existing) {
+    adsenseScriptLoaded = true;
+    return;
+  }
   adsenseScriptLoaded = true;
   const s = document.createElement("script");
   s.async = true;
