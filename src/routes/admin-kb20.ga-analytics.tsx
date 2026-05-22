@@ -192,7 +192,7 @@ function GaAnalytics() {
             <Kpi label="Pageviews (30 min)" value={data.realtime.pageviews} live />
             <Kpi label="Pageviews (24 h)" value={data.pageviews24h} />
             <Kpi label="Visitors (24 h)" value={data.visitors24h} />
-            <Kpi label="Pageviews (30 d)" value={data.pageviews30d} />
+            <Kpi label="Pageviews (this month)" value={data.pageviews30d} />
             <Kpi label="Pageviews (YTD)" value={data.pageviewsYTD} />
           </div>
 
