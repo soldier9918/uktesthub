@@ -55,6 +55,7 @@ export const Route = createRootRoute({
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "UK Test Hub" },
       { name: "author", content: "UK Test Hub" },
+      { name: "google-adsense-account", content: "ca-pub-7445296424475191" },
       { name: "google-site-verification", content: "5MXOtpExyGc2s5q9kWcw8S2VkkU15G4xIogsw8LoICk" },
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: "UK Test Hub" },
@@ -77,6 +78,8 @@ export const Route = createRootRoute({
       { rel: "apple-touch-icon", href: "/favicon.png?v=6" },
     ],
     scripts: [
+      { async: true, "data-fc-loader": "1", src: GOOGLE_CMP_LOADER_SRC },
+      { "data-fc-present": "1", children: GOOGLE_FC_PRESENT_SCRIPT },
       organizationSchema(),
       websiteSchema(),
     ],
@@ -90,12 +93,6 @@ function RootShell({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>
-        <meta name="google-adsense-account" content="ca-pub-7445296424475191" />
-        <script async data-fc-loader="1" src={GOOGLE_CMP_LOADER_SRC}></script>
-        <script
-          data-fc-present="1"
-          dangerouslySetInnerHTML={{ __html: GOOGLE_FC_PRESENT_SCRIPT }}
-        />
         <HeadContent />
       </head>
       <body>
