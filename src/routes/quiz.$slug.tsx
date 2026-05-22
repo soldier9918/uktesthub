@@ -118,6 +118,14 @@ export const Route = createFileRoute("/quiz/$slug")({
         ]),
       );
     }
+    if (mockMatch && found) {
+      const intro = getMockIntro(found.topic.slug, found.topic.title);
+      if (intro.faqs && intro.faqs.length > 0) {
+        scripts.push(faqSchema(intro.faqs));
+      }
+    }
+
+
 
     return {
       meta: [
