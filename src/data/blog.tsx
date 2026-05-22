@@ -10198,15 +10198,6 @@ export const blogPosts: BlogPost[] = [
           negative marking on the assessments most readers of this site sit, so a considered guess is always
           better than no answer at all.
         </p>
-        <p>
-          A Door Supervisor licence is the most common route into the UK private security industry. Issued by the
-          Security Industry Authority (SIA), it allows you to work the door at pubs, clubs, festivals, retail stores
-          and corporate venues across England and Wales. The qualification you need before applying for the licence
-          is the Level 2 Award for Working as a Door Supervisor — and like most regulated qualifications, it is
-          examined under timed conditions. This guide walks through what's actually tested, how the assessments are
-          structured, what they cost, and how to plan a few weeks of focused revision so you pass on your first sitting.
-          UK Test Hub is independent and not affiliated with the SIA.
-        </p>
 
         <h2>Who needs an SIA Door Supervisor licence?</h2>
         <p>
