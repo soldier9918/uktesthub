@@ -22,8 +22,14 @@ export const Route = createFileRoute("/quiz/$slug")({
       if (params.slug === oldSlug || params.slug.startsWith(`${oldSlug}-mock-`)) {
         const rewritten = params.slug.replace(oldSlug, newSlug);
         throw redirect({ to: "/quiz/$slug", params: { slug: rewritten } });
+    }
+    if (mockMatch && found) {
+      const intro = getMockIntro(found.topic.slug, found.topic.title);
+      if (intro.faqs && intro.faqs.length > 0) {
+        scripts.push(faqSchema(intro.faqs));
       }
     }
+
     // During SSR, set the absolute base URL used for fetching public/mocks/*.json
     captureMockBaseUrl();
     const quiz = await getQuiz(params.slug);
