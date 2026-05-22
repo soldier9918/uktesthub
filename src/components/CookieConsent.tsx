@@ -34,17 +34,19 @@ export function CookieConsent() {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
   const [mounted, setMounted] = useState(false);
   const [hasConsent, setHasConsent] = useState(false);
-  const [showBanner, setShowBanner] = useState(false);
   const [showModal, setShowModal] = useState(false);
-  const [cmpPresent, setCmpPresent] = useState(false);
   const [toggles, setToggles] = useState<Toggles>({
     analytics: false,
     advertising: false,
     functional: false,
   });
 
-
   // Initial mount — read consent client-side only.
+  // The certified Google Funding Choices CMP (loaded from __root.tsx) is the
+  // authoritative GDPR consent surface for UK/EEA visitors. This in-house
+  // banner is intentionally NOT auto-shown anymore — it would race with the
+  // Google CMP and cause the CMP to flash-then-disappear. The preferences
+  // <Dialog> below is still reachable via the footer "Cookie Settings" link.
   useEffect(() => {
     setMounted(true);
     const c = getConsent();
@@ -52,9 +54,13 @@ export function CookieConsent() {
       `Consent state on load: ${c === null ? "no decision" : JSON.stringify({ analytics: c.analytics, advertising: c.advertising, functional: c.functional })}`,
     );
     setHasConsent(c !== null);
-    setShowBanner(c === null);
-    if (c) setToggles({ analytics: c.analytics, advertising: c.advertising, functional: c.functional });
-    setAnalyticsConsent(c?.analytics === true);
+    if (c) {
+      setToggles({ analytics: c.analytics, advertising: c.advertising, functional: c.functional });
+      setAnalyticsConsent(c.analytics === true);
+    }
+    // Do NOT call setAnalyticsConsent(false) when c === null — that would
+    // log a misleading "rejected" message before the user has answered the
+    // Google CMP. GA stays inert by default until consent is explicitly set.
     const unsub = subscribe((next) => {
       setHasConsent(next !== null);
       if (next) {
@@ -76,25 +82,11 @@ export function CookieConsent() {
     return () => window.removeEventListener(OPEN_SETTINGS_EVENT, onOpen);
   }, []);
 
-  // Detect a certified IAB TCF v2.2 CMP (Google Funding Choices). If
-  // present, suppress our in-house banner — the CMP owns ad consent.
-  useEffect(() => {
-    const check = () => {
-      const w = window as unknown as { __tcfapi?: unknown; googlefc?: unknown };
-      if (w.__tcfapi || w.googlefc) setCmpPresent(true);
-    };
-    check();
-    const id = window.setInterval(check, 500);
-    const stop = window.setTimeout(() => window.clearInterval(id), 6000);
-    return () => {
-      window.clearInterval(id);
-      window.clearTimeout(stop);
-    };
-  }, []);
-
   if (!mounted) return null;
   // Don't show on admin routes.
   if (pathname.startsWith("/admin-kb20")) return null;
+  // Silence unused-var warning while preserving hasConsent for future use.
+  void hasConsent;
 
 
   const handleAcceptAll = () => {
