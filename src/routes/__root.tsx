@@ -1,5 +1,4 @@
 import { Outlet, Link, createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
-import { useEffect } from "react";
 
 
 import appCss from "../styles.css?url";
@@ -8,6 +7,24 @@ import { StickyAdSlot } from "@/components/AdSlot";
 import { AuthProvider } from "@/lib/auth-context";
 import { PageViewTracker } from "@/components/PageViewTracker";
 import { CookieConsent } from "@/components/CookieConsent";
+
+const GOOGLE_CMP_LOADER_SRC = "https://fundingchoicesmessages.google.com/i/pub-7445296424475191?ers=1";
+const GOOGLE_FC_PRESENT_SCRIPT = `(function() {
+function signalGooglefcPresent() {
+  if (!window.frames['googlefcPresent']) {
+    if (document.body) {
+      var iframe = document.createElement('iframe');
+      iframe.style = 'width: 0; height: 0; border: none; z-index: -1000; left: -1000px; top: -1000px;';
+      iframe.style.display = 'none';
+      iframe.name = 'googlefcPresent';
+      document.body.appendChild(iframe);
+    } else {
+      setTimeout(signalGooglefcPresent, 0);
+    }
+  }
+}
+signalGooglefcPresent();
+})();`;
 
 function NotFoundComponent() {
   return (
@@ -74,6 +91,11 @@ function RootShell({ children }: { children: React.ReactNode }) {
     <html lang="en">
       <head>
         <meta name="google-adsense-account" content="ca-pub-7445296424475191" />
+        <script async data-fc-loader="1" src={GOOGLE_CMP_LOADER_SRC}></script>
+        <script
+          data-fc-present="1"
+          dangerouslySetInnerHTML={{ __html: GOOGLE_FC_PRESENT_SCRIPT }}
+        />
         <HeadContent />
       </head>
       <body>
@@ -85,29 +107,6 @@ function RootShell({ children }: { children: React.ReactNode }) {
 }
 
 function RootComponent() {
-  useEffect(() => {
-    // Google Funding Choices — IAB TCF v2.2 certified consent message (CMP)
-    // for AdSense in the UK/EEA. The actual message UI is configured in the
-    // AdSense > Privacy & messaging dashboard; this loader makes it appear
-    // and registers window.__tcfapi.
-    //
-    // We deliberately do NOT also inject adsbygoogle.js here. The AdSense
-    // runtime auto-loads Funding Choices for the same publisher, and
-    // running both loaders causes the CMP to flash-then-disappear.
-    // adsbygoogle.js is loaded on demand by AdSlot when an ad actually
-    // renders (and only after advertising consent is granted).
-    if (!document.querySelector('script[data-fc-loader]')) {
-      const fc = document.createElement('script');
-      fc.async = true;
-      fc.src = 'https://fundingchoicesmessages.google.com/i/pub-7445296424475191?ers=1';
-      fc.setAttribute('data-fc-loader', '1');
-      document.head.appendChild(fc);
-      const fcPresent = document.createElement('script');
-      fcPresent.text = "(function() {function signalGooglefcPresent() {if (!window.frames['googlefcPresent']) {if (document.body) {const iframe = document.createElement('iframe');iframe.style = 'width: 0; height: 0; border: none; z-index: -1000; left: -1000px; top: -1000px;';iframe.style.display = 'none';iframe.name = 'googlefcPresent';document.body.appendChild(iframe);} else {setTimeout(signalGooglefcPresent, 0);}}}signalGooglefcPresent();})();";
-      document.head.appendChild(fcPresent);
-    }
-  }, []);
-
   return (
     <AuthProvider>
       <PageViewTracker />
