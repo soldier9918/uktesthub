@@ -239,7 +239,7 @@ function GaAnalytics() {
           </Card>
 
           <Card className="mt-4 p-4">
-            <h2 className="text-sm font-semibold">Pageviews — last 30 days</h2>
+            <h2 className="text-sm font-semibold">Pageviews — current month</h2>
             <div className="mt-3 h-64">
               <ResponsiveContainer width="100%" height="100%">
                 <LineChart data={data.daily}>
