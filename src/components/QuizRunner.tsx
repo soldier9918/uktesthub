@@ -29,6 +29,13 @@ import type {
 } from "@/data/quizzes";
 import { getCategory, getTopicDisplayTitle } from "@/data/categories";
 import { TOTAL_MOCKS_PER_TOPIC } from "@/data/mocks";
+import { getMockIntro } from "@/data/mock-intros";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 import { AdSlot } from "./AdSlot";
 import { RoadSign } from "./RoadSign";
 import { ReportQuestionButton } from "./ReportQuestionButton";
@@ -36,6 +43,7 @@ import { useOverrides, applyOverrides } from "@/lib/overrides";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/lib/auth-context";
 import { trackEvent } from "@/lib/analytics";
+
 
 type Mode = "practice" | "exam";
 // Answer shapes per question type:
