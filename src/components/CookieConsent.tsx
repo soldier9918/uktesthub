@@ -91,55 +91,21 @@ export function CookieConsent() {
 
   const handleAcceptAll = () => {
     acceptAll();
-    setShowBanner(false);
     setShowModal(false);
   };
 
   const handleRejectAll = () => {
     rejectNonEssential();
-    setShowBanner(false);
     setShowModal(false);
   };
 
   const handleSaveChoices = () => {
     setConsent(toggles);
-    setShowBanner(false);
     setShowModal(false);
   };
 
   return (
     <>
-      {showBanner && !hasConsent && !cmpPresent && (
-        <div
-          role="dialog"
-          aria-label="Cookie consent"
-          className="fixed inset-x-0 bottom-0 z-[60] border-t border-border bg-card/95 shadow-elevated backdrop-blur supports-[backdrop-filter]:bg-card/85"
-          style={{ paddingBottom: "env(safe-area-inset-bottom, 0)" }}
-        >
-          <div className="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-4 md:flex-row md:items-center md:px-6">
-            <p className="flex-1 text-sm leading-relaxed text-foreground">
-              We use cookies to improve your experience, understand how the site is used,
-              and support future advertising. You can accept all cookies, reject non-essential
-              cookies, or manage your choices. See our{" "}
-              <Link to="/cookies" className="font-semibold text-coral underline-offset-2 hover:underline">
-                Cookie Policy
-              </Link>
-              .
-            </p>
-            <div className="flex flex-wrap gap-2 md:flex-nowrap">
-              <Button variant="outline" size="sm" onClick={() => setShowModal(true)} className="flex-1 md:flex-none">
-                Manage choices
-              </Button>
-              <Button variant="outline" size="sm" onClick={handleRejectAll} className="flex-1 md:flex-none">
-                Reject non-essential
-              </Button>
-              <Button size="sm" onClick={handleAcceptAll} className="flex-1 md:flex-none">
-                Accept all
-              </Button>
-            </div>
-          </div>
-        </div>
-      )}
 
       <Dialog open={showModal} onOpenChange={setShowModal}>
         <DialogContent className="max-w-lg">
