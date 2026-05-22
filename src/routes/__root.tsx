@@ -8,22 +8,12 @@ import { AuthProvider } from "@/lib/auth-context";
 import { PageViewTracker } from "@/components/PageViewTracker";
 import { CookieConsent } from "@/components/CookieConsent";
 
-const GOOGLE_CMP_LOADER_SRC = "https://fundingchoicesmessages.google.com/i/pub-7445296424475191?ers=1";
-const GOOGLE_FC_PRESENT_SCRIPT = `(function() {
-function signalGooglefcPresent() {
-  if (!window.frames['googlefcPresent']) {
-    if (document.body) {
-      var iframe = document.createElement('iframe');
-      iframe.style = 'width: 0; height: 0; border: none; z-index: -1000; left: -1000px; top: -1000px;';
-      iframe.style.display = 'none';
-      iframe.name = 'googlefcPresent';
-      document.body.appendChild(iframe);
-    } else {
-      setTimeout(signalGooglefcPresent, 0);
-    }
-  }
-}
-signalGooglefcPresent();
+const ADSENSE_CMP_BOOTSTRAP_SRC = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7445296424475191";
+const GOOGLE_CMP_ALLOW_MESSAGING_SCRIPT = `(function() {
+  window.googlefc = window.googlefc || {};
+  window.googlefc.controlledMessagingFunction = function(message) {
+    message.proceed(true);
+  };
 })();`;
 
 function NotFoundComponent() {
@@ -78,8 +68,8 @@ export const Route = createRootRoute({
       { rel: "apple-touch-icon", href: "/favicon.png?v=6" },
     ],
     scripts: [
-      { async: true, "data-fc-loader": "1", src: GOOGLE_CMP_LOADER_SRC },
-      { "data-fc-present": "1", children: GOOGLE_FC_PRESENT_SCRIPT },
+      { "data-google-cmp-allow-messaging": "1", children: GOOGLE_CMP_ALLOW_MESSAGING_SCRIPT },
+      { async: true, crossOrigin: "anonymous", src: ADSENSE_CMP_BOOTSTRAP_SRC },
       organizationSchema(),
       websiteSchema(),
     ],
