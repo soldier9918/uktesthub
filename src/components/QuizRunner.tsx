@@ -30,12 +30,6 @@ import type {
 import { getCategory, getTopicDisplayTitle } from "@/data/categories";
 import { TOTAL_MOCKS_PER_TOPIC } from "@/data/mocks";
 import { getMockIntro } from "@/data/mock-intros";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 import { AdSlot } from "./AdSlot";
 import { RoadSign } from "./RoadSign";
 import { ReportQuestionButton } from "./ReportQuestionButton";
@@ -1068,18 +1062,14 @@ function MockStartIntro({ quiz }: { quiz: Quiz }) {
       {intro.faqs && intro.faqs.length > 0 && (
         <div className="mt-8">
           <h3 className="font-display text-lg font-bold md:text-xl">Frequently asked questions</h3>
-          <Accordion type="single" collapsible className="mt-3">
-            {intro.faqs.map((f, i) => (
-              <AccordionItem key={f.q} value={`faq-${i}`}>
-                <AccordionTrigger className="text-left text-sm font-semibold md:text-base">
-                  {f.q}
-                </AccordionTrigger>
-                <AccordionContent className="text-sm leading-relaxed text-muted-foreground md:text-base">
-                  {f.a}
-                </AccordionContent>
-              </AccordionItem>
+          <dl className="mt-3 space-y-4">
+            {intro.faqs.map((f) => (
+              <div key={f.q} className="border-b border-border pb-4 last:border-b-0">
+                <dt className="text-sm font-semibold text-foreground md:text-base">{f.q}</dt>
+                <dd className="mt-1 text-sm leading-relaxed text-muted-foreground md:text-base">{f.a}</dd>
+              </div>
             ))}
-          </Accordion>
+          </dl>
         </div>
       )}
     </section>
