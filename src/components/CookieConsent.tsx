@@ -36,11 +36,13 @@ export function CookieConsent() {
   const [hasConsent, setHasConsent] = useState(false);
   const [showBanner, setShowBanner] = useState(false);
   const [showModal, setShowModal] = useState(false);
+  const [cmpPresent, setCmpPresent] = useState(false);
   const [toggles, setToggles] = useState<Toggles>({
     analytics: false,
     advertising: false,
     functional: false,
   });
+
 
   // Initial mount — read consent client-side only.
   useEffect(() => {
