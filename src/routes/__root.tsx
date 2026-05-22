@@ -69,7 +69,7 @@ export const Route = createRootRoute({
     ],
     scripts: [
       { "data-google-cmp-allow-messaging": "1", children: GOOGLE_CMP_ALLOW_MESSAGING_SCRIPT },
-      { async: true, crossOrigin: "anonymous", "data-adsbygoogle-cmp-bootstrap": "1", src: ADSENSE_CMP_BOOTSTRAP_SRC },
+      { async: true, crossOrigin: "anonymous", src: ADSENSE_CMP_BOOTSTRAP_SRC },
       organizationSchema(),
       websiteSchema(),
     ],
