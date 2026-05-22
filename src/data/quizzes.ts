@@ -1280,7 +1280,6 @@ export const getFeaturedQuizzes = (): QuizMeta[] =>
   [
     "driving-theory-mock-1",
     "life-in-the-uk-mock-1",
-    "gcse-maths-warmup",
     "numerical-reasoning-starter",
   ]
     .map((s) => getQuizMeta(s))

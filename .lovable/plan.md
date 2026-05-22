@@ -1,60 +1,84 @@
+# Fix duplicated blog bodies + GCSE warmup quiz redirect
 
-## 1. Mock test start page — add intro + FAQ above "More mock tests"
+## Root cause (important)
 
-The mock start screen (`-mock-N` quiz pages) currently shows just the title, meta chips and the green/red Practice/Exam buttons. We'll add an "About this mock" block immediately below those buttons, and keep the existing "More mock tests" grid where it already lives.
+This is **not** a template bug. `src/routes/blog.$slug.tsx` renders `post.body()` exactly once. The duplication lives **inside the data** in `src/data/blog.tsx`: every post that has the generic CTA + revision tips block was authored as `[original body] → disclaimer → CTA card → "Quick study plan" → "Common myths to ignore" → "What to do on test day" → [ENTIRE ORIGINAL BODY PASTED AGAIN] → disclaimer`.
 
-### What appears on the start screen
+55+ posts are affected (every post containing `<h2>Common myths to ignore</h2>` — confirmed 55 matches across the file). The 5 URLs you listed are a sample; the rest of the blog has the same bug.
 
-- **Intro paragraph** (~150–250 words) — what this mock covers, written for the specific topic.
-- **3–5 bullet points** — topics included in this mock.
-- **"Who this mock is for"** — one short paragraph.
-- **"How to use Practice mode"** — one short paragraph.
-- **"How to use Exam mode"** — one short paragraph.
-- **FAQ** (4–6 Q&As) — only for major test categories (Driving Theory, Life in the UK, CSCS, SERU, SIA, NHS numeracy, CompTIA A+, English language tests, 11+). Other topics fall back to a shared generic FAQ.
+## Part 1 — Blog body deduplication
 
-The block disappears the moment the user clicks Practice or Exam, so it never interferes with the running test.
+### Approach
 
-The existing **"More mock tests"** section already renders under the quiz on `src/routes/quiz.$slug.tsx`, so it will sit naturally below the new intro block. No change to that grid.
+Write a one-off Node script (`scripts/dedupe_blog_bodies.mjs`, run once with `bun`) that edits `src/data/blog.tsx` in place. For each `body: () => ( <> ... </> )` block:
 
-### Files
+1. Locate the `<h2>What to do on test day</h2>` heading and the `</p>` that closes its paragraph (the generic "Plan to arrive 15–20 minutes early…" copy).
+2. From that point, delete everything up to **but not including** the final `<p className="text-xs italic text-muted-foreground">…Disclaimer…</p>` (or, if the post has no disclaimer, up to the closing `</>`).
+3. Leave the first disclaimer (already present after the original body, before the CTA card) untouched — it now becomes the only disclaimer.
 
-- **New: `src/data/mock-intros.ts`** — a `MOCK_INTROS: Record<topicSlug, MockIntro>` map plus a `getMockIntro(topicSlug, topicTitle)` helper that returns a sensible default if the topic isn't in the map. Seed entries for the major categories listed above; others get an auto-generated default ("This <Topic> mock test gives you 24 practice-style questions…").
-- **Edit: `src/components/QuizRunner.tsx`** — extend `ModeSelect` so that when `quiz.slug.includes("-mock-")` it renders the intro/bullets/who-for/how-to-use/FAQ block directly under the two mode buttons. Use the existing shadcn `Accordion` for the FAQ. Pull data via `getMockIntro(quiz.topic, quiz.quizTitle)`.
-- **Edit: `src/routes/quiz.$slug.tsx`** — add `FAQPage` JSON-LD to `head().scripts` for mock pages that have FAQ entries, so the new content also benefits SEO. Reuse the existing `faqSchema()` helper from `src/lib/seo.ts`.
+Net result per post:
+- Original body (once)
+- Original disclaimer
+- CTA card
+- Quick study plan
+- Common myths to ignore
+- What to do on test day
+- (duplicate body + duplicate disclaimer removed)
 
-No layout reshuffle: order on screen is Title → chips → Practice/Exam buttons → About this mock → topics covered → who it's for → how to use each mode → FAQ → leaderboard ad → "More mock tests" (unchanged).
+### Why a script, not 55 manual edits
 
-## 2. Cookie banner — current state and recommended path
+- 55 posts × ~50 lines deleted each = ~2,750 lines. A script is faster, auditable in one diff, and guarantees identical handling.
+- Posts without the duplicated block (none of the 55 matches, but defensively) are skipped because the script only triggers when both the `What to do on test day` marker **and** a second occurrence of the post's opening paragraph exist after it.
 
-### Current state
+### Verification after running
 
-`src/components/CookieConsent.tsx` is a **custom in-house cookie banner**, not a Google-certified CMP. It writes our own `consent` object to localStorage and toggles `gtag('consent', ...)` for GA, but it does **not** implement the IAB TCF v2.2 `__tcfapi` that AdSense expects in the EEA/UK. The file already has a TODO marker for swapping it out.
+1. `rg -c "Common myths to ignore" src/data/blog.tsx` → expect unchanged count (55).
+2. `rg -c "What to do on test day" src/data/blog.tsx` → expect unchanged count.
+3. `rg -c "text-xs italic text-muted-foreground" src/data/blog.tsx` → expect **halved** (each post should now have one disclaimer, not two).
+4. Spot-check 3 URLs in the preview (topographical, seru, life-in-the-uk) — confirm body renders once, no repeated H2s.
+5. `curl` each `/blog/<slug>` and grep duplicate H2s programmatically:
+   ```bash
+   for slug in topographical-assessment-guide seru-assessment-guide ...; do
+     curl -s "$PREVIEW/blog/$slug" | grep -oE '<h2[^>]*>[^<]+</h2>' | sort | uniq -d
+   done
+   ```
+   Expect empty output for every slug.
 
-For UK AdSense, Google's own guidance is to use a certified CMP — the simplest and free option is **Google's own "Privacy & messaging" consent message (Funding Choices)** inside the AdSense account, which is IAB TCF v2.2 certified.
+### Template (no change needed)
 
-### Recommended change
+`src/routes/blog.$slug.tsx` already renders the body once, followed by an `AdSlot`, related articles, and footer. No edits to the template required — the user-requested correct order is already what the template produces; only the duplicated source data is wrong.
 
-- **Enable Google's AdSense consent message** in the AdSense dashboard (user action — outside the code). Configure it for the UK/EEA, IAB TCF v2.2, with a Reject button.
-- **Inject the Funding Choices loader** in `src/routes/__root.tsx` head scripts, alongside the AdSense loader, using the publisher ID. This is what makes Google's banner appear and registers the `__tcfapi`.
-- **Hide our custom banner when a TCF CMP is present.** In `CookieConsent.tsx`, on mount detect `window.__tcfapi`; if found, skip rendering the banner (the Cookie Settings link in the footer can call the CMP's "show again" hook instead). The modal stays for users on routes where the CMP doesn't run (e.g. admin pages).
-- **Set ads to non-personalised until consent is granted.** In `src/components/AdSlot.tsx`, gate `adsbygoogle.push({})` on TCF consent if available, otherwise push `{ google_tag_params: { restrict_data_processing: true } }` style request-non-personalised-ads behaviour. This keeps us compliant if a visitor lands before the CMP has resolved.
-- **Keep our consent store for GA only.** Analytics consent remains controlled by the in-house banner/modal where the CMP isn't loaded (admin, dev), so GA toggling still works.
+## Part 2 — `/quiz/gcse-maths-warmup`
 
-This brings the setup to: Google-certified CMP for ads (covers UK/EEA legal requirement), with our existing UI as a fallback for non-CMP routes and for granular GA control.
+`src/data/quizzes.ts` defines `gcse-maths-warmup` as a normal quiz under topic `gcse-maths` (and lists it in the public quiz index at line 1283). Since you want it off the public surface, the cleanest fix is a 301 redirect to the topic hub.
 
-### Files
+### Change
 
-- **Edit: `src/routes/__root.tsx`** — add the Funding Choices script tag with the AdSense client ID.
-- **Edit: `src/components/CookieConsent.tsx`** — detect `__tcfapi` on mount; suppress banner when present; keep modal available via `OPEN_SETTINGS_EVENT`.
-- **Edit: `src/components/AdSlot.tsx`** — request non-personalised ads until TCF consent is signalled.
-- **Edit: `src/components/SiteFooter.tsx`** (if it has the "Cookie Settings" link) — when CMP is present, dispatch the CMP's reopen instead of `OPEN_SETTINGS_EVENT`. (Will confirm exact wiring when implementing.)
+In `src/routes/quiz.$slug.tsx` loader, add a one-off redirect **before** the `LEGACY_SLUG_REDIRECTS` loop:
 
-### One thing I need from you before shipping part 2
+```ts
+if (params.slug === "gcse-maths-warmup") {
+  throw redirect({ to: "/topic/$slug", params: { slug: "gcse-maths" } });
+}
+```
 
-The Funding Choices loader needs your **AdSense publisher ID** (e.g. `ca-pub-XXXXXXXXXXXXXXXX`). I can read it from the existing AdSense script if it's already in the repo — I'll grab it during implementation and only ask if it's missing.
+Also remove `"gcse-maths-warmup"` from the published quiz list at `src/data/quizzes.ts:1283` so it stops appearing on listing pages and in the sitemap.
+
+(Keeping the quiz definition itself in the file is harmless — it's just no longer linked anywhere and the URL 301s away.)
+
+### Verification
+
+- `curl -I $PREVIEW/quiz/gcse-maths-warmup` → expect 301/302 to `/topic/gcse-maths`.
+- `curl -s $PREVIEW/sitemap.xml | grep gcse-maths-warmup` → expect empty.
+
+## Files touched
+
+- `src/data/blog.tsx` (large diff: ~55 duplicate body blocks removed, via script)
+- `scripts/dedupe_blog_bodies.mjs` (new, one-off)
+- `src/routes/quiz.$slug.tsx` (add 4-line redirect)
+- `src/data/quizzes.ts` (remove one string from the public index array)
 
 ## Out of scope
 
-- No design changes to the existing Practice/Exam buttons or "More mock tests" grid.
-- No changes to quiz logic or scoring.
-- Not building a third-party CMP integration (Cookiebot, OneTrust, etc.) — Google's free certified message is the lowest-friction option and matches what you asked for.
+- No changes to the blog template, SEO helpers, or related-articles logic.
+- No changes to the CTA card, "Quick study plan", "Common myths", or "What to do on test day" generic sections — they stay exactly where they are between the (now single) article body and the related-articles section the template appends.

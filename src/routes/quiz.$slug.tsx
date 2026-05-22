@@ -17,6 +17,11 @@ import { getMockIntro } from "@/data/mock-intros";
 
 export const Route = createFileRoute("/quiz/$slug")({
   loader: async ({ params }) => {
+    // One-off retirement: hide /quiz/gcse-maths-warmup and send to the topic hub.
+    if (params.slug === "gcse-maths-warmup") {
+      throw redirect({ to: "/topic/$slug", params: { slug: "gcse-maths" } });
+    }
+
     // 301-style redirects for renamed topics, including their /…-mock-N variants.
     for (const [oldSlug, newSlug] of Object.entries(LEGACY_SLUG_REDIRECTS)) {
       if (params.slug === oldSlug || params.slug.startsWith(`${oldSlug}-mock-`)) {
