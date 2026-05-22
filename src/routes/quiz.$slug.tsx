@@ -10,7 +10,9 @@ import { getQuiz, getQuizzesByCategory, type Quiz } from "@/data/quizzes";
 import { getCategory, findTopic } from "@/data/categories";
 import { listMockSlots } from "@/data/mocks";
 import { captureMockBaseUrl } from "@/lib/mock-base-url";
-import { breadcrumbSchema } from "@/lib/seo";
+import { breadcrumbSchema, faqSchema } from "@/lib/seo";
+import { getMockIntro } from "@/data/mock-intros";
+
 
 
 export const Route = createFileRoute("/quiz/$slug")({
