@@ -15,18 +15,24 @@ const GOOGLE_CMP_BOOTSTRAP_SCRIPT = `(function() {
   window.googlefc.controlledMessagingFunction = function(message) {
     message.proceed(true);
   };
-  if (!document.querySelector('script[src^="${FUNDING_CHOICES_BOOTSTRAP_SRC}"]')) {
-    var fundingChoices = document.createElement('script');
-    fundingChoices.async = true;
-    fundingChoices.src = '${FUNDING_CHOICES_BOOTSTRAP_SRC}';
-    document.head.appendChild(fundingChoices);
-  }
-  if (!document.querySelector('script[src^="${ADSENSE_CMP_BOOTSTRAP_SRC}"]')) {
+  var loadAdsense = function() {
+    if (document.querySelector('script[src^="${ADSENSE_CMP_BOOTSTRAP_SRC}"]')) return;
     var adsense = document.createElement('script');
     adsense.async = true;
     adsense.crossOrigin = 'anonymous';
     adsense.src = '${ADSENSE_CMP_BOOTSTRAP_SRC}';
     document.head.appendChild(adsense);
+  };
+  if (!document.querySelector('script[src^="${FUNDING_CHOICES_BOOTSTRAP_SRC}"]')) {
+    var fundingChoices = document.createElement('script');
+    fundingChoices.async = true;
+    fundingChoices.src = '${FUNDING_CHOICES_BOOTSTRAP_SRC}';
+    fundingChoices.onload = loadAdsense;
+    fundingChoices.onerror = loadAdsense;
+    document.head.appendChild(fundingChoices);
+    window.setTimeout(loadAdsense, 2500);
+  } else {
+    loadAdsense();
   }
 })();`;
 
