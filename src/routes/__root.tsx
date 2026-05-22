@@ -67,12 +67,7 @@ export const Route = createRootRoute({
       { rel: "shortcut icon", type: "image/png", href: "/favicon.png?v=6" },
       { rel: "apple-touch-icon", href: "/favicon.png?v=6" },
     ],
-    scripts: [
-      { "data-google-cmp-allow-messaging": "1", children: GOOGLE_CMP_ALLOW_MESSAGING_SCRIPT },
-      { async: true, crossOrigin: "anonymous", src: ADSENSE_CMP_BOOTSTRAP_SRC },
-      organizationSchema(),
-      websiteSchema(),
-    ],
+    scripts: [organizationSchema(), websiteSchema()],
   }),
   shellComponent: RootShell,
   component: RootComponent,
@@ -83,6 +78,11 @@ function RootShell({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>
+        <script
+          data-google-cmp-allow-messaging="1"
+          dangerouslySetInnerHTML={{ __html: GOOGLE_CMP_ALLOW_MESSAGING_SCRIPT }}
+        />
+        <script async crossOrigin="anonymous" src={ADSENSE_CMP_BOOTSTRAP_SRC} />
         <HeadContent />
       </head>
       <body>
