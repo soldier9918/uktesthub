@@ -8924,9 +8924,6 @@ export const blogPosts: BlogPost[] = [
           negative marking on the assessments most readers of this site sit, so a considered guess is always
           better than no answer at all.
         </p>
-        <p>
-          The Topographical Skills Assessment is part of the licensing process for new London private hire drivers. It tests practical orientation around the capital — map reading, route planning, postcodes, landmarks and crossings — without expecting the encyclopaedic depth of the Knowledge of London required of black-cab drivers.
-        </p>
 
         <h2>What's tested</h2>
         <ul>
@@ -10201,15 +10198,6 @@ export const blogPosts: BlogPost[] = [
           negative marking on the assessments most readers of this site sit, so a considered guess is always
           better than no answer at all.
         </p>
-        <p>
-          A Door Supervisor licence is the most common route into the UK private security industry. Issued by the
-          Security Industry Authority (SIA), it allows you to work the door at pubs, clubs, festivals, retail stores
-          and corporate venues across England and Wales. The qualification you need before applying for the licence
-          is the Level 2 Award for Working as a Door Supervisor — and like most regulated qualifications, it is
-          examined under timed conditions. This guide walks through what's actually tested, how the assessments are
-          structured, what they cost, and how to plan a few weeks of focused revision so you pass on your first sitting.
-          UK Test Hub is independent and not affiliated with the SIA.
-        </p>
 
         <h2>Who needs an SIA Door Supervisor licence?</h2>
         <p>
@@ -10894,14 +10882,6 @@ export const blogPosts: BlogPost[] = [
           door. Read every question twice, flag anything you're unsure of, and never leave a blank — there's no
           negative marking on the assessments most readers of this site sit, so a considered guess is always
           better than no answer at all.
-        </p>
-        <p>
-          CompTIA A+ is the most widely recognised entry-level IT certification in the UK. Most help-desk and
-          first-line support job adverts list it either as essential or as a strong nice-to-have, and unlike many
-          vendor-specific qualifications it stays useful as you move into networking, security or cloud roles. This
-          guide covers what's actually tested in the 2026 exams (Core 1 — 220-1101 and Core 2 — 220-1102), how to
-          plan your study time, what it costs in the UK, and how to use free practice mocks to know when you're
-          ready to book. UK Test Hub is independent and not affiliated with CompTIA.
         </p>
 
         <h2>Two exams, one certification</h2>
