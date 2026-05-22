@@ -9,17 +9,24 @@ import { PageViewTracker } from "@/components/PageViewTracker";
 import { CookieConsent } from "@/components/CookieConsent";
 
 const ADSENSE_CMP_BOOTSTRAP_SRC = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7445296424475191";
+const FUNDING_CHOICES_BOOTSTRAP_SRC = "https://fundingchoicesmessages.google.com/i/pub-7445296424475191?ers=1";
 const GOOGLE_CMP_BOOTSTRAP_SCRIPT = `(function() {
   window.googlefc = window.googlefc || {};
   window.googlefc.controlledMessagingFunction = function(message) {
     message.proceed(true);
   };
+  if (!document.querySelector('script[src^="${FUNDING_CHOICES_BOOTSTRAP_SRC}"]')) {
+    var fundingChoices = document.createElement('script');
+    fundingChoices.async = true;
+    fundingChoices.src = '${FUNDING_CHOICES_BOOTSTRAP_SRC}';
+    document.head.appendChild(fundingChoices);
+  }
   if (!document.querySelector('script[src^="${ADSENSE_CMP_BOOTSTRAP_SRC}"]')) {
-    var script = document.createElement('script');
-    script.async = true;
-    script.crossOrigin = 'anonymous';
-    script.src = '${ADSENSE_CMP_BOOTSTRAP_SRC}';
-    document.head.appendChild(script);
+    var adsense = document.createElement('script');
+    adsense.async = true;
+    adsense.crossOrigin = 'anonymous';
+    adsense.src = '${ADSENSE_CMP_BOOTSTRAP_SRC}';
+    document.head.appendChild(adsense);
   }
 })();`;
 
