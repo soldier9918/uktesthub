@@ -29,6 +29,13 @@ import type {
 } from "@/data/quizzes";
 import { getCategory, getTopicDisplayTitle } from "@/data/categories";
 import { TOTAL_MOCKS_PER_TOPIC } from "@/data/mocks";
+import { getMockIntro } from "@/data/mock-intros";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 import { AdSlot } from "./AdSlot";
 import { RoadSign } from "./RoadSign";
 import { ReportQuestionButton } from "./ReportQuestionButton";
@@ -36,6 +43,7 @@ import { useOverrides, applyOverrides } from "@/lib/overrides";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/lib/auth-context";
 import { trackEvent } from "@/lib/analytics";
+
 
 type Mode = "practice" | "exam";
 // Answer shapes per question type:
@@ -1003,9 +1011,81 @@ function ModeSelect({ quiz, onSelect }: { quiz: Quiz; onSelect: (m: Mode) => voi
           </button>
         </div>
       </div>
+
+      {quiz.slug.includes("-mock-") && <MockStartIntro quiz={quiz} />}
     </div>
   );
 }
+
+function MockStartIntro({ quiz }: { quiz: Quiz }) {
+  const intro = getMockIntro(quiz.topic, quiz.quizTitle);
+  return (
+    <section className="mt-8 rounded-3xl border border-border bg-card p-6 shadow-soft md:p-10">
+      <h2 className="font-display text-xl font-bold md:text-2xl">About this mock</h2>
+      <p className="mt-3 text-sm leading-relaxed text-muted-foreground md:text-base">
+        {intro.description}
+      </p>
+
+      <div className="mt-6">
+        <h3 className="font-display text-base font-semibold">Topics included</h3>
+        <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-foreground md:text-base">
+          {intro.topics.map((t) => (
+            <li key={t}>{t}</li>
+          ))}
+        </ul>
+      </div>
+
+      <div className="mt-6">
+        <h3 className="font-display text-base font-semibold">Who this mock is for</h3>
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground md:text-base">
+          {intro.whoFor}
+        </p>
+      </div>
+
+      <div className="mt-6 grid gap-4 md:grid-cols-2">
+        <div className="rounded-2xl border border-[#15803d]/30 bg-[#15803d]/5 p-4">
+          <h3 className="font-display text-base font-semibold text-[#15803d]">
+            How to use Practice mode
+          </h3>
+          <p className="mt-2 text-sm leading-relaxed text-foreground">
+            Practice mode shows the correct answer and an explanation after every question, with
+            no timer. Use it the first time you sit a topic, when you want to learn as you go, or
+            when you're targeting a specific weak area.
+          </p>
+        </div>
+        <div className="rounded-2xl border border-[#c81e2c]/30 bg-[#c81e2c]/5 p-4">
+          <h3 className="font-display text-base font-semibold text-[#c81e2c]">
+            How to use Exam mode
+          </h3>
+          <p className="mt-2 text-sm leading-relaxed text-foreground">
+            Exam mode runs the full mock against the clock, hides explanations until the end, and
+            shows your overall score with a question-by-question review. Use it once you feel
+            confident — it's the closest thing to test-day pressure.
+          </p>
+        </div>
+      </div>
+
+      {intro.faqs && intro.faqs.length > 0 && (
+        <div className="mt-8">
+          <h3 className="font-display text-lg font-bold md:text-xl">Frequently asked questions</h3>
+          <Accordion type="single" collapsible className="mt-3">
+            {intro.faqs.map((f, i) => (
+              <AccordionItem key={f.q} value={`faq-${i}`}>
+                <AccordionTrigger className="text-left text-sm font-semibold md:text-base">
+                  {f.q}
+                </AccordionTrigger>
+                <AccordionContent className="text-sm leading-relaxed text-muted-foreground md:text-base">
+                  {f.a}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
+        </div>
+      )}
+    </section>
+  );
+}
+
 
 function describeQuestion(q: Question): string {
   if (isFillBlanks(q) || isDragDrop(q)) {

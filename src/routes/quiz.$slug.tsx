@@ -10,7 +10,9 @@ import { getQuiz, getQuizzesByCategory, type Quiz } from "@/data/quizzes";
 import { getCategory, findTopic } from "@/data/categories";
 import { listMockSlots } from "@/data/mocks";
 import { captureMockBaseUrl } from "@/lib/mock-base-url";
-import { breadcrumbSchema } from "@/lib/seo";
+import { breadcrumbSchema, faqSchema } from "@/lib/seo";
+import { getMockIntro } from "@/data/mock-intros";
+
 
 
 export const Route = createFileRoute("/quiz/$slug")({
@@ -22,6 +24,8 @@ export const Route = createFileRoute("/quiz/$slug")({
         throw redirect({ to: "/quiz/$slug", params: { slug: rewritten } });
       }
     }
+
+
     // During SSR, set the absolute base URL used for fetching public/mocks/*.json
     captureMockBaseUrl();
     const quiz = await getQuiz(params.slug);
@@ -114,6 +118,14 @@ export const Route = createFileRoute("/quiz/$slug")({
         ]),
       );
     }
+    if (mockMatch && found) {
+      const intro = getMockIntro(found.topic.slug, found.topic.title);
+      if (intro.faqs && intro.faqs.length > 0) {
+        scripts.push(faqSchema(intro.faqs));
+      }
+    }
+
+
 
     return {
       meta: [

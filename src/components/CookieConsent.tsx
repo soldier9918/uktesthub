@@ -36,11 +36,13 @@ export function CookieConsent() {
   const [hasConsent, setHasConsent] = useState(false);
   const [showBanner, setShowBanner] = useState(false);
   const [showModal, setShowModal] = useState(false);
+  const [cmpPresent, setCmpPresent] = useState(false);
   const [toggles, setToggles] = useState<Toggles>({
     analytics: false,
     advertising: false,
     functional: false,
   });
+
 
   // Initial mount — read consent client-side only.
   useEffect(() => {
@@ -74,9 +76,26 @@ export function CookieConsent() {
     return () => window.removeEventListener(OPEN_SETTINGS_EVENT, onOpen);
   }, []);
 
+  // Detect a certified IAB TCF v2.2 CMP (Google Funding Choices). If
+  // present, suppress our in-house banner — the CMP owns ad consent.
+  useEffect(() => {
+    const check = () => {
+      const w = window as unknown as { __tcfapi?: unknown; googlefc?: unknown };
+      if (w.__tcfapi || w.googlefc) setCmpPresent(true);
+    };
+    check();
+    const id = window.setInterval(check, 500);
+    const stop = window.setTimeout(() => window.clearInterval(id), 6000);
+    return () => {
+      window.clearInterval(id);
+      window.clearTimeout(stop);
+    };
+  }, []);
+
   if (!mounted) return null;
   // Don't show on admin routes.
   if (pathname.startsWith("/admin-kb20")) return null;
+
 
   const handleAcceptAll = () => {
     acceptAll();
@@ -98,7 +117,7 @@ export function CookieConsent() {
 
   return (
     <>
-      {showBanner && !hasConsent && (
+      {showBanner && !hasConsent && !cmpPresent && (
         <div
           role="dialog"
           aria-label="Cookie consent"

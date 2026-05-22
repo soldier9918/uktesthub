@@ -86,14 +86,31 @@ function RootShell({ children }: { children: React.ReactNode }) {
 
 function RootComponent() {
   useEffect(() => {
-    if (document.querySelector('script[data-adsense-loader]')) return;
-    const s = document.createElement('script');
-    s.async = true;
-    s.crossOrigin = 'anonymous';
-    s.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7445296424475191';
-    s.setAttribute('data-adsense-loader', '1');
-    document.head.appendChild(s);
+    // Google Funding Choices — IAB TCF v2.2 certified consent message (CMP)
+    // for AdSense in the UK/EEA. The actual message UI is configured in the
+    // AdSense > Privacy & messaging dashboard; this loader makes it appear
+    // and registers window.__tcfapi.
+    if (!document.querySelector('script[data-fc-loader]')) {
+      const fc = document.createElement('script');
+      fc.async = true;
+      fc.src = 'https://fundingchoicesmessages.google.com/i/pub-7445296424475191?ers=1';
+      fc.setAttribute('data-fc-loader', '1');
+      document.head.appendChild(fc);
+      const fcPresent = document.createElement('script');
+      fcPresent.text = "(function() {function signalGooglefcPresent() {if (!window.frames['googlefcPresent']) {if (document.body) {const iframe = document.createElement('iframe');iframe.style = 'width: 0; height: 0; border: none; z-index: -1000; left: -1000px; top: -1000px;';iframe.style.display = 'none';iframe.name = 'googlefcPresent';document.body.appendChild(iframe);} else {setTimeout(signalGooglefcPresent, 0);}}}signalGooglefcPresent();})();";
+      document.head.appendChild(fcPresent);
+    }
+    // AdSense loader (separate from the CMP loader).
+    if (!document.querySelector('script[data-adsense-loader]')) {
+      const s = document.createElement('script');
+      s.async = true;
+      s.crossOrigin = 'anonymous';
+      s.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7445296424475191';
+      s.setAttribute('data-adsense-loader', '1');
+      document.head.appendChild(s);
+    }
   }, []);
+
   return (
     <AuthProvider>
       <PageViewTracker />
