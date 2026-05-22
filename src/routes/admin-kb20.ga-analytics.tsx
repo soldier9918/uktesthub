@@ -192,7 +192,7 @@ function GaAnalytics() {
             <Kpi label="Pageviews (30 min)" value={data.realtime.pageviews} live />
             <Kpi label="Pageviews (24 h)" value={data.pageviews24h} />
             <Kpi label="Visitors (24 h)" value={data.visitors24h} />
-            <Kpi label="Pageviews (30 d)" value={data.pageviews30d} />
+            <Kpi label="Pageviews (this month)" value={data.pageviews30d} />
             <Kpi label="Pageviews (YTD)" value={data.pageviewsYTD} />
           </div>
 
@@ -239,7 +239,7 @@ function GaAnalytics() {
           </Card>
 
           <Card className="mt-4 p-4">
-            <h2 className="text-sm font-semibold">Pageviews — last 30 days</h2>
+            <h2 className="text-sm font-semibold">Pageviews — current month</h2>
             <div className="mt-3 h-64">
               <ResponsiveContainer width="100%" height="100%">
                 <LineChart data={data.daily}>

@@ -63,15 +63,17 @@ export const getGaDashboard = createServerFn({ method: "POST" })
 
       // Realtime: TWO separate runRealtimeReport calls (one per metric) per spec.
       // No caching, no runReport fallback for live cards.
-      const currentYear = new Date().getUTCFullYear();
+      const now = new Date();
+      const currentYear = now.getUTCFullYear();
       const yearStart = `${currentYear}-01-01`;
+      const monthStart = `${currentYear}-${String(now.getUTCMonth() + 1).padStart(2, "0")}-01`;
       const [activeUsersRt, pageviewsRt, daily30, hourlyViews, hourlyUsers, monthlyYTD] = await Promise.all([
         gaFetch("runRealtimeReport", { metrics: [{ name: "activeUsers" }] }, token),
         gaFetch("runRealtimeReport", { metrics: [{ name: "screenPageViews" }] }, token),
         gaFetch(
           "runReport",
           {
-            dateRanges: [{ startDate: "30daysAgo", endDate: "today" }],
+            dateRanges: [{ startDate: monthStart, endDate: "today" }],
             dimensions: [{ name: "date" }],
             metrics: [{ name: "screenPageViews" }],
             orderBys: [{ dimension: { dimensionName: "date" } }],
