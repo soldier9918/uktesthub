@@ -8924,9 +8924,6 @@ export const blogPosts: BlogPost[] = [
           negative marking on the assessments most readers of this site sit, so a considered guess is always
           better than no answer at all.
         </p>
-        <p>
-          The Topographical Skills Assessment is part of the licensing process for new London private hire drivers. It tests practical orientation around the capital — map reading, route planning, postcodes, landmarks and crossings — without expecting the encyclopaedic depth of the Knowledge of London required of black-cab drivers.
-        </p>
 
         <h2>What's tested</h2>
         <ul>
