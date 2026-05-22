@@ -282,13 +282,21 @@ function HomePage() {
                     <div aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/30 to-transparent" />
 
                     <div className="relative flex items-start gap-3">
-                      <span className={`flex h-12 w-12 shrink-0 items-center justify-center bg-gradient-to-br ${th.iconGrad} text-white shadow-[0_6px_16px_-6px_rgba(0,0,0,0.55)] ring-1 ring-white/20`}>
+                      {c.icon === "Car" ? (
                         <CategoryIcon
                           name={c.icon}
                           alt={c.title}
-                          className="h-9 w-9 object-contain"
+                          className="h-12 w-12 shrink-0 object-contain drop-shadow-[0_6px_12px_rgba(0,0,0,0.45)]"
                         />
-                      </span>
+                      ) : (
+                        <span className={`flex h-12 w-12 shrink-0 items-center justify-center bg-gradient-to-br ${th.iconGrad} text-white shadow-[0_6px_16px_-6px_rgba(0,0,0,0.55)] ring-1 ring-white/20`}>
+                          <CategoryIcon
+                            name={c.icon}
+                            alt={c.title}
+                            className="h-9 w-9 object-contain"
+                          />
+                        </span>
+                      )}
                       <div className="min-w-0 flex-1">
                         <p className={`text-[10px] font-semibold uppercase tracking-[0.18em] ${th.eyebrow}`}>
                           Category
