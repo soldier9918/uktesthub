@@ -73,7 +73,7 @@ export const getGaDashboard = createServerFn({ method: "POST" })
         gaFetch(
           "runReport",
           {
-            dateRanges: [{ startDate: "30daysAgo", endDate: "today" }],
+            dateRanges: [{ startDate: monthStart, endDate: "today" }],
             dimensions: [{ name: "date" }],
             metrics: [{ name: "screenPageViews" }],
             orderBys: [{ dimension: { dimensionName: "date" } }],
