@@ -30,12 +30,6 @@ import type {
 import { getCategory, getTopicDisplayTitle } from "@/data/categories";
 import { TOTAL_MOCKS_PER_TOPIC } from "@/data/mocks";
 import { getMockIntro } from "@/data/mock-intros";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 import { AdSlot } from "./AdSlot";
 import { RoadSign } from "./RoadSign";
 import { ReportQuestionButton } from "./ReportQuestionButton";
