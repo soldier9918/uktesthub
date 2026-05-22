@@ -1,58 +1,63 @@
-# Fix: Google CMP flashes then disappears on uktesthub.com
 
-## Root causes (most → least likely)
+# Fix: cookie banner missing — restore fallback, keep Google CMP as primary
 
-**1. Two competing CMP loaders racing.**
-`src/routes/__root.tsx` currently injects BOTH:
-- the Funding Choices loader (`fundingchoicesmessages.google.com/i/pub-…`)
-- the AdSense loader (`pagead2.googlesyndication.com/.../adsbygoogle.js?client=…`)
+## What I verified live on uktesthub.com
 
-The AdSense tag already auto-loads Funding Choices for the same publisher. When both run, two CMP frames mount and one immediately closes/replaces the other — exactly the "appears briefly then disappears" symptom. The browser warning `AdSense head tag doesn't support data-adsense-loader attribute` is AdSense complaining about the second tag.
+Loaded `https://www.uktesthub.com/?fc=alwaysshow&fctype=gdpr` in a clean browser session:
 
-**2. The in-house `CookieConsent` overlay can sit on top of the Google CMP.**
-`CookieConsent` shows its own bottom-sheet (`z-[60]`) whenever `getConsent() === null`. It only suppresses itself after polling and seeing `window.__tcfapi` / `window.googlefc` — that poll runs every 500 ms, so the in-house banner briefly renders over the CMP. Worse, on a fresh page the user may dismiss our banner thinking it's the CMP, and either way two consent UIs at once is what Google's CMP self-tests treat as "another script is interfering".
+- The Funding Choices loader (`fundingchoicesmessages.google.com/i/pub-7445296424475191?ers=1`) loads successfully.
+- The message config (`/f/AGSKWxX…`) is fetched.
+- Two telemetry POSTs to `/el/AGSKWxX…` fire (impression + dismiss).
+- DOM observe finds NO CMP iframe and NO consent dialog.
+- Our previous fix removed the in-house banner entirely.
 
-**3. (Verification only)** Nothing in the codebase writes a TCF string, calls `__tcfapi('setConsent', …)`, or auto-clicks a button. `PageViewTracker` only fires GA events; `AdSlot`/`StickyAdSlot` are gated on `ADSENSE_ENABLED` (env flag) and our local consent, so they don't touch the Google CMP. No route loader redirects or remounts the root.
+Net result for the user: no consent UI visible anywhere. That's a UK GDPR/PECR problem, not just a UX one.
 
-## Changes
+## Root cause of "no banner"
 
-### A. `src/routes/__root.tsx` — load exactly ONE CMP path
+The Google Funding Choices CMP is **not reliably rendering** on uktesthub.com, even with `fc=alwaysshow&fctype=gdpr`. Likely contributors:
+1. The message was published in AdSense but Google's renderer is treating the visit as a non-GDPR region or as already-consented (the second `/el/` POST is the auto-dismiss).
+2. Even when it DOES render for genuine UK visitors, the previous bug (flash-then-disappear) was never actually proven to be caused by our in-house banner — that was a hypothesis. Removing the in-house banner did not bring the CMP back.
 
-Keep the Funding Choices loader (it's the certified GDPR message you published in AdSense → Privacy & messaging). Remove the manual `adsbygoogle.js` injection from `__root` — AdSense will be loaded on demand by `AdSlot.loadAdsenseScript()` when an ad actually renders (and only after consent), which is what `src/components/AdSlot.tsx` is already designed to do.
+We can't fully fix the Google CMP from our code — its rendering is controlled server-side by Google. What we CAN do is make sure a working banner always appears.
 
-Concretely in `RootComponent`'s `useEffect`:
-- Keep the `data-fc-loader` block (FC loader + `signalGooglefcPresent` iframe).
-- Delete the `data-adsense-loader` block.
+## Plan
 
-Rationale: the `<meta name="google-adsense-account">` tag in `RootShell` is enough for AdSense to associate the domain; the runtime script only needs to load when we're actually about to fill a slot.
+### A. `src/components/CookieConsent.tsx` — restore the in-house banner as the source of truth
 
-### B. `src/components/CookieConsent.tsx` — retire the in-house banner
+Bring back the bottom-sheet banner, but with smarter gating so it doesn't race the Google CMP when the CMP does render:
 
-Since the certified Funding Choices CMP is now live and authoritative for GDPR on uktesthub.com, the in-house banner should never render. Do this without deleting the file (footer "Cookie Settings" link still opens the preferences modal):
+1. Re-introduce `showBanner` state. Initial value `false`.
+2. On mount, if `getConsent() === null`:
+   - Start a 1500 ms timer.
+   - While the timer runs, poll every 200 ms for either `window.__tcfapi` being a function OR a DOM element matching `iframe[src*="fundingchoicesmessages.google.com"]`, `.fc-consent-root`, `.fc-dialog-container`, or `[id^="googlefcPresent"]` (the Google CMP's actual rendered iframe — distinct from the `googlefcPresent` signal iframe we inject).
+   - If the CMP is detected → `setShowBanner(false)` and stop polling. Google owns this consent decision.
+   - If the timer expires with no CMP detected → `setShowBanner(true)`. Our banner is now the sole consent UI.
+3. Subscribe to consent changes (already in place) and hide the banner once any decision is recorded.
+4. The bottom-sheet UI (Accept all / Reject non-essential / Cookie settings) is the same one that was there before — buttons call `acceptAll()`, `rejectNonEssential()`, and dispatch `OPEN_SETTINGS_EVENT` to open the existing preferences modal.
+5. Keep the modal (`Dialog`) as-is for the footer "Cookie Settings" entry point.
+6. Continue suppressing on `/admin-kb20*`.
 
-1. Replace the `cmpPresent` polling + `showBanner` logic so the banner is always suppressed on production domains where the Google CMP runs. Treat the CMP as the source of truth.
-2. Keep the `<Dialog>` "Cookie preferences" modal — it stays accessible via the footer link, but it no longer auto-opens and no longer writes consent on first visit.
-3. Stop calling `setAnalyticsConsent(false)` on mount when consent is `null`. The current code logs `Consent rejected: analytics disabled` for a first-time visitor who has not yet answered the CMP — that's misleading and could be read as "we already recorded a rejection". Only react to explicit user choices made via the modal.
-4. Leave the `OPEN_SETTINGS_EVENT` listener so the footer link still works.
+This makes the in-house banner a deterministic fallback: if Google's CMP shows up in time, we step aside; otherwise we guarantee a visible, compliant consent UI.
 
-Net effect: the only consent UI a first-time UK/EEA visitor sees is Google's certified CMP. Our modal stays available for users who want to fine-tune analytics/functional cookies after the fact.
+### B. `src/routes/__root.tsx` — leave the Funding Choices loader as-is
 
-### C. `src/lib/analytics-ga.ts` — no behavioural change, but sanity-check
+No changes here. The single FC loader (and the `signalGooglefcPresent` shim) is the correct way to give Google's CMP a chance to render. We already removed the duplicate `adsbygoogle.js` injection, which is the right call regardless.
 
-GA is already strictly gated on `getConsent()?.analytics === true`, so removing the auto in-house banner does not silently enable GA. No edit required; just confirm in QA that `Consent state on load` log shows no analytics fetches until the user opts in via either the CMP (once we wire TCF → analytics) or our preferences modal.
+### C. No changes to `src/lib/consent.ts` or `src/lib/analytics-ga.ts`
 
-## Out of scope (intentional)
+GA is already strictly gated on `getConsent()?.analytics === true`. The banner controls write to consent, which the analytics layer already subscribes to.
 
-- No changes to GA wiring or to TCF-aware analytics gating. That's a follow-up once we've confirmed the CMP renders cleanly.
-- No edits to `AdSlot.tsx` — it already self-loads `adsbygoogle.js` on demand and is consent-gated.
-- No CSS/z-index changes — once the duplicate loaders and overlay banner are gone, the CMP renders in its own top-layer iframe and nothing else competes for the viewport.
+## Out of scope
+
+- No attempt to forcibly re-render Google's CMP — that's controlled by Google's servers and the AdSense Privacy & messaging dashboard. If the CMP keeps not rendering after this fix, the next step is to publish a fresh message in AdSense or remove the FC loader entirely. We'll evaluate that after confirming the in-house banner works.
+- No changes to AdSlot / advertising loading. AdSense loads on demand only after `consent.advertising === true`.
 
 ## QA checklist after implementing
 
-1. Hard reload `https://www.uktesthub.com/?fc=alwaysshow&fctype=gdpr` in incognito.
-2. The Google CMP must render and stay until the user clicks Consent / Manage options / Do not consent.
-3. No second bottom-sheet banner from our app should appear at any point.
-4. DevTools → Network: only ONE request to `fundingchoicesmessages.google.com`; no `adsbygoogle.js` request until an actual ad slot mounts.
-5. Console: the `AdSense head tag doesn't support data-adsense-loader attribute` warning is gone.
-6. After clicking "Manage options" → "Confirm choices", verify `window.__tcfapi('getTCData', 2, …)` returns a TC string and the CMP closes cleanly.
-7. Footer → "Cookie Settings" still opens our in-house preferences modal (for analytics/functional fine-tuning).
+1. Hard reload `https://www.uktesthub.com` in incognito (no `?fc=alwaysshow`). A consent banner MUST be visible within ~2 seconds. Either the Google CMP or our bottom-sheet — never neither.
+2. Click "Accept all" on the in-house banner → it disappears, and reloading the page does NOT show it again (consent persisted to `localStorage`).
+3. Click "Reject non-essential" → same persistence behaviour, and `getConsent().analytics === false`.
+4. From the footer, click "Cookie Settings" → preferences modal opens (independent of whether the banner is visible).
+5. Clear `localStorage` and load `?fc=alwaysshow&fctype=gdpr`. If Google's CMP renders, our bottom-sheet must NOT also appear. If Google's CMP does not render within 1.5 s, our bottom-sheet appears.
+6. No duplicate consent UI ever visible at the same time.

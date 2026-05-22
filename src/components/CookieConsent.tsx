@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useRouterState } from "@tanstack/react-router";
+import { Link, useRouterState } from "@tanstack/react-router";
 import {
   acceptAll,
   getConsent,
@@ -10,13 +10,6 @@ import {
   type ConsentState,
 } from "@/lib/consent";
 import { setAnalyticsConsent } from "@/lib/analytics-ga";
-
-/**
- * TODO (certified CMP swap): When integrating a Google-certified IAB TCF v2.2
- * CMP (e.g. Google Funding Choices), inject its loader script in
- * src/routes/__root.tsx and replace the local consent reads here with the
- * CMP's TCF API (__tcfapi). The banner UI below is the in-house fallback.
- */
 import {
   Dialog,
   DialogContent,
@@ -30,10 +23,29 @@ import { Button } from "@/components/ui/button";
 
 type Toggles = Pick<ConsentState, "analytics" | "advertising" | "functional">;
 
+// Selectors that indicate Google's Funding Choices CMP has actually rendered
+// its consent UI (as opposed to just the invisible `googlefcPresent` signal
+// iframe we inject ourselves).
+const CMP_RENDERED_SELECTORS = [
+  'iframe[src*="fundingchoicesmessages.google.com"]',
+  '.fc-consent-root',
+  '.fc-dialog-container',
+  '.fc-ab-dialog',
+];
+
+function isGoogleCmpRendered(): boolean {
+  if (typeof window === "undefined") return false;
+  if (typeof (window as unknown as { __tcfapi?: unknown }).__tcfapi === "function") return true;
+  for (const sel of CMP_RENDERED_SELECTORS) {
+    if (document.querySelector(sel)) return true;
+  }
+  return false;
+}
+
 export function CookieConsent() {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
   const [mounted, setMounted] = useState(false);
-  const [hasConsent, setHasConsent] = useState(false);
+  const [showBanner, setShowBanner] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [toggles, setToggles] = useState<Toggles>({
     analytics: false,
@@ -41,37 +53,56 @@ export function CookieConsent() {
     functional: false,
   });
 
-  // Initial mount — read consent client-side only.
-  // The certified Google Funding Choices CMP (loaded from __root.tsx) is the
-  // authoritative GDPR consent surface for UK/EEA visitors. This in-house
-  // banner is intentionally NOT auto-shown anymore — it would race with the
-  // Google CMP and cause the CMP to flash-then-disappear. The preferences
-  // <Dialog> below is still reachable via the footer "Cookie Settings" link.
   useEffect(() => {
     setMounted(true);
     const c = getConsent();
-    console.log(
-      `Consent state on load: ${c === null ? "no decision" : JSON.stringify({ analytics: c.analytics, advertising: c.advertising, functional: c.functional })}`,
-    );
-    setHasConsent(c !== null);
     if (c) {
       setToggles({ analytics: c.analytics, advertising: c.advertising, functional: c.functional });
       setAnalyticsConsent(c.analytics === true);
+      setShowBanner(false);
+    } else {
+      // No decision yet. Give the Google CMP up to 1.5s to render before we
+      // show our in-house fallback banner.
+      let cancelled = false;
+      const start = Date.now();
+      const tick = () => {
+        if (cancelled) return;
+        if (getConsent() !== null) return; // user decided via some other path
+        if (isGoogleCmpRendered()) {
+          setShowBanner(false);
+          return;
+        }
+        if (Date.now() - start >= 1500) {
+          setShowBanner(true);
+          return;
+        }
+        window.setTimeout(tick, 200);
+      };
+      tick();
+
+      const unsub = subscribe((next) => {
+        if (next) {
+          setToggles({ analytics: next.analytics, advertising: next.advertising, functional: next.functional });
+          setShowBanner(false);
+        }
+        setAnalyticsConsent(next?.analytics === true);
+      });
+      return () => {
+        cancelled = true;
+        unsub();
+      };
     }
-    // Do NOT call setAnalyticsConsent(false) when c === null — that would
-    // log a misleading "rejected" message before the user has answered the
-    // Google CMP. GA stays inert by default until consent is explicitly set.
+
     const unsub = subscribe((next) => {
-      setHasConsent(next !== null);
       if (next) {
         setToggles({ analytics: next.analytics, advertising: next.advertising, functional: next.functional });
+        setShowBanner(false);
       }
       setAnalyticsConsent(next?.analytics === true);
     });
     return unsub;
   }, []);
 
-  // Listen for "open settings" requests from elsewhere (footer link).
   useEffect(() => {
     const onOpen = () => {
       const c = getConsent();
@@ -83,19 +114,17 @@ export function CookieConsent() {
   }, []);
 
   if (!mounted) return null;
-  // Don't show on admin routes.
   if (pathname.startsWith("/admin-kb20")) return null;
-  // Silence unused-var warning while preserving hasConsent for future use.
-  void hasConsent;
-
 
   const handleAcceptAll = () => {
     acceptAll();
+    setShowBanner(false);
     setShowModal(false);
   };
 
   const handleRejectAll = () => {
     rejectNonEssential();
+    setShowBanner(false);
     setShowModal(false);
   };
 
@@ -104,8 +133,46 @@ export function CookieConsent() {
     setShowModal(false);
   };
 
+  const openSettings = () => {
+    const c = getConsent();
+    if (c) setToggles({ analytics: c.analytics, advertising: c.advertising, functional: c.functional });
+    setShowModal(true);
+  };
+
   return (
     <>
+      {showBanner && (
+        <div
+          role="dialog"
+          aria-label="Cookie consent"
+          className="fixed inset-x-0 bottom-0 z-[60] border-t border-border bg-background/95 px-4 py-4 shadow-2xl backdrop-blur supports-[backdrop-filter]:bg-background/80"
+        >
+          <div className="mx-auto flex max-w-5xl flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+            <p className="text-sm text-foreground">
+              We use cookies to run UK Test Hub, measure usage, and (in the future) show ads.
+              You can accept all, reject non-essential, or manage your choices. See our{" "}
+              <Link to="/privacy" className="underline underline-offset-2 hover:text-primary">
+                Privacy Policy
+              </Link>{" "}
+              and{" "}
+              <Link to="/cookies" className="underline underline-offset-2 hover:text-primary">
+                Cookie Policy
+              </Link>.
+            </p>
+            <div className="flex flex-wrap gap-2 sm:flex-nowrap">
+              <Button variant="outline" size="sm" onClick={openSettings}>
+                Cookie settings
+              </Button>
+              <Button variant="outline" size="sm" onClick={handleRejectAll}>
+                Reject non-essential
+              </Button>
+              <Button size="sm" onClick={handleAcceptAll}>
+                Accept all
+              </Button>
+            </div>
+          </div>
+        </div>
+      )}
 
       <Dialog open={showModal} onOpenChange={setShowModal}>
         <DialogContent className="max-w-lg">
