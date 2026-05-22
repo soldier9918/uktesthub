@@ -9,11 +9,31 @@ import { PageViewTracker } from "@/components/PageViewTracker";
 import { CookieConsent } from "@/components/CookieConsent";
 
 const ADSENSE_CMP_BOOTSTRAP_SRC = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7445296424475191";
-const GOOGLE_CMP_ALLOW_MESSAGING_SCRIPT = `(function() {
+const FUNDING_CHOICES_BOOTSTRAP_SRC = "https://fundingchoicesmessages.google.com/i/pub-7445296424475191?ers=1";
+const GOOGLE_CMP_BOOTSTRAP_SCRIPT = `(function() {
   window.googlefc = window.googlefc || {};
   window.googlefc.controlledMessagingFunction = function(message) {
     message.proceed(true);
   };
+  var loadAdsense = function() {
+    if (document.querySelector('script[src^="${ADSENSE_CMP_BOOTSTRAP_SRC}"]')) return;
+    var adsense = document.createElement('script');
+    adsense.async = true;
+    adsense.crossOrigin = 'anonymous';
+    adsense.src = '${ADSENSE_CMP_BOOTSTRAP_SRC}';
+    document.head.appendChild(adsense);
+  };
+  if (!document.querySelector('script[src^="${FUNDING_CHOICES_BOOTSTRAP_SRC}"]')) {
+    var fundingChoices = document.createElement('script');
+    fundingChoices.async = true;
+    fundingChoices.src = '${FUNDING_CHOICES_BOOTSTRAP_SRC}';
+    fundingChoices.onload = loadAdsense;
+    fundingChoices.onerror = loadAdsense;
+    document.head.appendChild(fundingChoices);
+    window.setTimeout(loadAdsense, 2500);
+  } else {
+    loadAdsense();
+  }
 })();`;
 
 function NotFoundComponent() {
@@ -79,10 +99,9 @@ function RootShell({ children }: { children: React.ReactNode }) {
     <html lang="en">
       <head>
         <script
-          data-google-cmp-allow-messaging="1"
-          dangerouslySetInnerHTML={{ __html: GOOGLE_CMP_ALLOW_MESSAGING_SCRIPT }}
+          data-google-cmp-bootstrap="1"
+          dangerouslySetInnerHTML={{ __html: GOOGLE_CMP_BOOTSTRAP_SCRIPT }}
         />
-        <script async crossOrigin="anonymous" src={ADSENSE_CMP_BOOTSTRAP_SRC} />
         <HeadContent />
       </head>
       <body>
