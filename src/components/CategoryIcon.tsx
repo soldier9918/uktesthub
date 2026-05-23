@@ -31,6 +31,8 @@ const iconMap: Record<string, string> = {
   Crown: iconCitizenship,
   Languages: iconEnglish,
   GraduationCap: iconEducation,
+  School: iconEducation,
+  University: iconEducation,
   Briefcase: iconCareer,
   ShieldCheck: iconProfessional,
   HeartPulse: iconNhs,

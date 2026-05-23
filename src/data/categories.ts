@@ -95,7 +95,7 @@ export const categories: Category[] = [
     short: "11+, GCSE, SATs KS1 & KS2",
     description:
       "Free practice tests for the 11+ Exam, GCSE Maths, GCSE English and Key Stage SATs.",
-    icon: "GraduationCap",
+    icon: "School",
     accent: "success",
     heroImage: heroEducation,
     topics: [
@@ -494,7 +494,7 @@ export const categories: Category[] = [
     short: "GRE, GMAT, UCAT, LNAT & medical/law admissions",
     description:
       "Independent practice for UK and international university admissions tests — GRE, GMAT, UCAT for medicine, LNAT for law and BMAT-style preparation.",
-    icon: "GraduationCap",
+    icon: "University",
     accent: "gold",
     heroImage: heroEducation,
     topics: [
