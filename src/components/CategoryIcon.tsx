@@ -2,6 +2,8 @@ import iconDriving from "@/assets/icon-driving.png";
 import iconCitizenship from "@/assets/icon-citizenship.png";
 import iconEnglish from "@/assets/icon-english.png";
 import iconEducation from "@/assets/icon-education.png";
+import iconEducationSchool from "@/assets/icon-education-school.png";
+import iconUniversityAdmissions from "@/assets/icon-university-admissions.png";
 import iconCareer from "@/assets/icon-career.png";
 import iconProfessional from "@/assets/icon-professional.png";
 import iconNhs from "@/assets/icon-nhs.png";
@@ -31,8 +33,8 @@ const iconMap: Record<string, string> = {
   Crown: iconCitizenship,
   Languages: iconEnglish,
   GraduationCap: iconEducation,
-  School: iconEducation,
-  University: iconEducation,
+  School: iconEducationSchool,
+  University: iconUniversityAdmissions,
   Briefcase: iconCareer,
   ShieldCheck: iconProfessional,
   HeartPulse: iconNhs,
