@@ -13,6 +13,7 @@ import iconHospitality from "@/assets/icon-hospitality.png";
 import iconConstruction from "@/assets/icon-construction.png";
 import iconFinance from "@/assets/icon-finance.png";
 import iconItTech from "@/assets/icon-it-tech-v2.png";
+import iconCyberSecurity from "@/assets/icon-cyber-security.png";
 import iconHealthcareEntry from "@/assets/icon-healthcare-entry.png";
 import iconTeaching from "@/assets/icon-teaching.png";
 import iconLegal from "@/assets/icon-legal.png";
