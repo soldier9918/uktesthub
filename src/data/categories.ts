@@ -494,7 +494,7 @@ export const categories: Category[] = [
     short: "GRE, GMAT, UCAT, LNAT & medical/law admissions",
     description:
       "Independent practice for UK and international university admissions tests — GRE, GMAT, UCAT for medicine, LNAT for law and BMAT-style preparation.",
-    icon: "GraduationCap",
+    icon: "University",
     accent: "gold",
     heroImage: heroEducation,
     topics: [
