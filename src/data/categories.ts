@@ -511,7 +511,7 @@ export const categories: Category[] = [
     short: "SSSTS, SMSTS, CITB HSE & site safety",
     description:
       "Independent practice for UK site supervisor and manager safety qualifications — SSSTS, SMSTS, CITB Health, Safety & Environment and IPAF / PASMA working at height.",
-    icon: "HardHat",
+    icon: "HardHatSafety",
     accent: "coral",
     heroImage: heroConstruction,
     topics: [
