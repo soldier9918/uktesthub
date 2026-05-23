@@ -2,6 +2,7 @@ import iconDriving from "@/assets/icon-driving.png";
 import iconCitizenship from "@/assets/icon-citizenship.png";
 import iconEnglish from "@/assets/icon-english.png";
 import iconEducation from "@/assets/icon-education.png";
+import iconGraduateAdmissions from "@/assets/icon-graduate-admissions.png";
 import iconEducationSchool from "@/assets/icon-education-school.png";
 import iconUniversityAdmissions from "@/assets/icon-university-admissions.png";
 import iconCareer from "@/assets/icon-career.png";
