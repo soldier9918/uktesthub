@@ -24,7 +24,7 @@ export function Logo({ variant = "dark", showTagline = true, size = "md" }: Prop
 
       <span className="leading-none">
         <span className="flex items-center gap-1.5">
-          <span className={`font-display font-extrabold tracking-tight whitespace-nowrap ${text} ${wordSize} font-sans`}>
+          <span className={`font-bold tracking-[0.08em] whitespace-nowrap ${text} ${wordSize}`} style={{ fontFamily: '"Cinzel", "Trajan Pro", Georgia, serif' }}>
             UK TEST HUB
           </span>
         </span>
