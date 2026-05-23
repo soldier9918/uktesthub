@@ -95,7 +95,7 @@ export const categories: Category[] = [
     short: "11+, GCSE, SATs KS1 & KS2",
     description:
       "Free practice tests for the 11+ Exam, GCSE Maths, GCSE English and Key Stage SATs.",
-    icon: "GraduationCap",
+    icon: "School",
     accent: "success",
     heroImage: heroEducation,
     topics: [
