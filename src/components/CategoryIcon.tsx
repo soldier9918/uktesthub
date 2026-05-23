@@ -46,7 +46,7 @@ const iconMap: Record<string, string> = {
   HardHatSafety: iconConstruction,
   Calculator: iconFinance,
   Cpu: iconItTech,
-  Cloud: iconItTech,
+  Cloud: iconCyberSecurity,
   Stethoscope: iconHealthcareEntry,
   BookOpen: iconTeaching,
   Scale: iconLegal,
