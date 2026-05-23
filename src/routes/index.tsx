@@ -282,7 +282,7 @@ function HomePage() {
                     <div aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/30 to-transparent" />
 
                     <div className="relative flex items-start gap-3">
-                      {c.icon === "Car" || c.icon === "Crown" || c.icon === "Languages" || c.icon === "GraduationCap" || c.icon === "Taxi" || c.icon === "Briefcase" || c.icon === "ShieldCheck" || c.icon === "HeartPulse" || c.icon === "ChefHat" || c.icon === "HardHat" || c.icon === "Calculator" || c.icon === "Cpu" || c.icon === "Shield" || c.icon === "Plane" || c.icon === "Stethoscope" || c.icon === "BookOpen" || c.icon === "Scale" || c.icon === "Siren" || c.icon === "Landmark" || c.icon === "Truck" || c.icon === "HandHeart" || c.icon === "Scissors" ? (
+                      {c.icon === "Car" || c.icon === "Crown" || c.icon === "Languages" || c.icon === "GraduationCap" || c.icon === "School" || c.icon === "University" || c.icon === "Taxi" || c.icon === "Briefcase" || c.icon === "ShieldCheck" || c.icon === "HeartPulse" || c.icon === "ChefHat" || c.icon === "HardHat" || c.icon === "Calculator" || c.icon === "Cpu" || c.icon === "Shield" || c.icon === "Plane" || c.icon === "Stethoscope" || c.icon === "BookOpen" || c.icon === "Scale" || c.icon === "Siren" || c.icon === "Landmark" || c.icon === "Truck" || c.icon === "HandHeart" || c.icon === "Scissors" ? (
                         <CategoryIcon
                           name={c.icon}
                           alt={c.title}
