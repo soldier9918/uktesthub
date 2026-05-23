@@ -282,7 +282,7 @@ function HomePage() {
                     <div aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/30 to-transparent" />
 
                     <div className="relative flex items-start gap-3">
-                      {c.icon === "Car" || c.icon === "Crown" || c.icon === "Languages" ? (
+                      {c.icon === "Car" || c.icon === "Crown" || c.icon === "Languages" || c.icon === "GraduationCap" ? (
                         <CategoryIcon
                           name={c.icon}
                           alt={c.title}
