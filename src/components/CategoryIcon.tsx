@@ -34,7 +34,7 @@ const iconMap: Record<string, string> = {
   Car: iconDriving,
   Crown: iconCitizenship,
   Languages: iconEnglish,
-  GraduationCap: iconEducation,
+  GraduationCap: iconGraduateAdmissions,
   School: iconEducationSchool,
   University: iconUniversityAdmissions,
   Briefcase: iconCareer,
