@@ -75,7 +75,7 @@ function CategoryPage() {
             <span
               className={`flex h-14 w-14 items-center justify-center rounded-2xl shadow-elevated ${accentClasses[category.accent]}`}
             >
-              <CategoryIcon name={category.icon} className="h-7 w-7" />
+              <CategoryIcon name={category.icon} className="h-10 w-10" />
             </span>
             <span className="rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider backdrop-blur">
               Practice Hub
@@ -168,7 +168,7 @@ function CategoryPage() {
                       <div className="relative">
                         <div className="flex items-start gap-4">
                           <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-none bg-gradient-to-br from-[#ff5a5f] to-[#c81e2c] text-white shadow-[0_6px_16px_-6px_rgba(255,90,95,0.8)] ring-1 ring-white/20">
-                            <CategoryIcon name={category.icon} className="h-10 w-10" />
+                            <CategoryIcon name={category.icon} className="h-14 w-14" />
                           </span>
                           <div className="min-w-0 pr-8">
                             <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#fecaca]">
