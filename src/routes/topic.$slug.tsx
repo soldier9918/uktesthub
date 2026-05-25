@@ -191,9 +191,9 @@ function TopicPage() {
 
           <div className="mt-6 flex items-center gap-4">
             <span
-              className={`flex h-20 w-20 items-center justify-center rounded-2xl shadow-elevated ${accentClasses[category.accent]}`}
+              className={`flex h-14 w-14 items-center justify-center rounded-2xl shadow-elevated ${accentClasses[category.accent]}`}
             >
-              <CategoryIcon name={category.icon} className="h-16 w-16" />
+              <CategoryIcon name={category.icon} className="h-10 w-10" />
             </span>
             <span className="rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider backdrop-blur">
               45 Mock Tests
