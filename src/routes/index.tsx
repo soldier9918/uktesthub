@@ -35,6 +35,7 @@ import featCalculator from "@/assets/feat-calculator.jpg";
 import bandGuard from "@/assets/band-guard.png";
 import bandPostbox from "@/assets/band-postbox.png";
 import bandSkyline from "@/assets/band-skyline.png";
+import sectionCrown from "@/assets/section-crown.png";
 
 export const Route = createFileRoute("/")({
   head: () => {
@@ -99,17 +100,11 @@ function SectionTitle({ children }: { children: React.ReactNode }) {
   return (
     <div className="text-center">
       <div className="inline-flex items-center justify-center gap-4">
-        <span className="relative inline-flex h-9 w-9 items-center justify-center bg-gradient-to-br from-amber-300 via-amber-500 to-amber-700 shadow-[0_4px_14px_-2px_rgba(180,120,20,0.55)] ring-1 ring-amber-200/60 rotate-45">
-          <Crown className="h-4 w-4 -rotate-45 text-white drop-shadow-[0_1px_1px_rgba(0,0,0,0.35)]" strokeWidth={2.5} fill="currentColor" />
-          <span aria-hidden className="pointer-events-none absolute inset-0 bg-gradient-to-br from-white/40 via-transparent to-transparent" />
-        </span>
+        <img src={sectionCrown} alt="" aria-hidden className="h-12 w-12 shrink-0 object-contain" />
         <h2 className="font-display text-2xl font-extrabold uppercase tracking-[0.18em] text-foreground md:text-3xl">
           {children}
         </h2>
-        <span className="relative inline-flex h-9 w-9 items-center justify-center bg-gradient-to-br from-amber-300 via-amber-500 to-amber-700 shadow-[0_4px_14px_-2px_rgba(180,120,20,0.55)] ring-1 ring-amber-200/60 rotate-45">
-          <Crown className="h-4 w-4 -rotate-45 text-white drop-shadow-[0_1px_1px_rgba(0,0,0,0.35)]" strokeWidth={2.5} fill="currentColor" />
-          <span aria-hidden className="pointer-events-none absolute inset-0 bg-gradient-to-br from-white/40 via-transparent to-transparent" />
-        </span>
+        <img src={sectionCrown} alt="" aria-hidden className="h-12 w-12 shrink-0 object-contain" />
       </div>
       <div className="mx-auto mt-4 h-1 w-20 rounded-full bg-coral" />
     </div>
