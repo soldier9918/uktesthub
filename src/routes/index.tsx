@@ -26,6 +26,7 @@ const latestPosts = [...blogPosts]
   .slice(0, 3);
 
 import heroUk from "@/assets/hero-uk.jpg";
+import heroUkTest from "@/assets/hero-uk-test.png";
 import featDriving from "@/assets/feat-driving.jpg";
 import featFlag from "@/assets/feat-flag.jpg";
 import featTowerBridge from "@/assets/feat-tower-bridge.jpg";
@@ -125,117 +126,12 @@ function HomePage() {
 
       {/* HERO */}
       <section className="relative overflow-hidden bg-navy-deep text-navy-foreground">
-        <img
-          src={heroUk}
-          alt="Big Ben at dusk with the Union Jack"
-          className="absolute inset-0 h-full w-full object-cover object-center opacity-90"
-        />
-        <div
-          aria-hidden
-          className="absolute inset-0 bg-gradient-to-r from-navy-deep/70 via-navy-deep/55 to-navy-deep/20"
-        />
-
-        <div className="relative mx-auto grid max-w-7xl gap-10 px-4 pb-16 pt-6 md:px-6 md:pb-24 md:pt-8 lg:grid-cols-[1fr_280px] lg:items-center">
-          <div>
-            <p className="font-display font-semibold uppercase tracking-[0.25em] text-navy-foreground/80 text-5xl">
-              Pass your
-            </p>
-            <h1 className="mt-3 font-sans text-7xl font-black uppercase leading-[0.95] tracking-tight md:text-8xl lg:text-9xl">
-              UK Tests
-              <br />
-              <span className="text-coral">First Time</span>
-            </h1>
-            <p className="mt-6 max-w-xl text-base text-navy-foreground/85 md:text-lg whitespace-pre-line">
-              Practice-style questions. Mock tests. Instant results.
-              {"\n"}Over <span className="font-bold text-[#d4af37]">96,000+</span> mock questions across <span className="font-bold text-[#d4af37]">110+</span> topics!
-              {"\n"}Study anytime, anywhere.
-            </p>
-
-            <div className="mt-8 flex flex-wrap gap-3">
-              <a
-                href="#popular-categories"
-                onClick={(e) => {
-                  e.preventDefault();
-                  document
-                    .getElementById("popular-categories")
-                    ?.scrollIntoView({ behavior: "smooth", block: "start" });
-                  if (typeof history !== "undefined") {
-                    history.replaceState(null, "", "#popular-categories");
-                  }
-                }}
-                className="inline-flex items-center gap-2 rounded-xl bg-coral px-7 py-4 text-sm font-bold uppercase tracking-wider text-coral-foreground shadow-coral transition-transform hover:-translate-y-0.5"
-              >
-                Start Practice <ArrowRight className="h-4 w-4" />
-              </a>
-              <Link
-                to="/all-tests"
-                className="inline-flex items-center gap-2 rounded-xl border-2 border-white/40 bg-white/5 px-7 py-4 text-sm font-bold uppercase tracking-wider text-navy-foreground backdrop-blur transition-colors hover:bg-white/15"
-              >
-                Browse All Tests
-              </Link>
-            </div>
-
-            <ul className="mt-10 flex flex-wrap gap-x-7 gap-y-3 text-sm text-navy-foreground/85">
-              {[
-                { icon: CheckCircle2, label: "96,000+ Questions" },
-                { icon: FileCheck, label: "Realistic Exam Format" },
-                { icon: Timer, label: "Instant Results" },
-                { icon: CalendarCheck, label: "Updated for 2026" },
-              ].map((s) => (
-                <li key={s.label} className="inline-flex items-center gap-2">
-                  <s.icon className="h-4 w-4 text-coral" />
-                  <span className="font-medium">{s.label}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Popular tests panel */}
-          <aside className="relative lg:self-start lg:-mt-6">
-            <div className="rounded-2xl border border-white/15 bg-navy-deep/40 p-5 shadow-elevated backdrop-blur-md">
-              <div className="border-b border-white/10 pb-3">
-                <span className="font-display text-sm font-bold uppercase tracking-[0.2em] text-coral">
-                  Popular Mock Tests
-                </span>
-              </div>
-              <ul className="mt-3 space-y-0.5">
-                {[
-                  { slug: "seru", label: "SERU Tests" },
-                  { slug: "driving-theory", label: "Driving Theory Tests" },
-                  { slug: "life-in-the-uk", label: "Life in the UK Tests" },
-                  { slug: "ielts", label: "IELTS Tests" },
-                  { slug: "cscs-operative", label: "CSCS Tests" },
-                  { slug: "nmc-cbt", label: "NMC CBT Tests" },
-                  { slug: "sia-door-supervisor", label: "SIA Tests" },
-                  { slug: "esol", label: "ESOL Tests" },
-                  
-                  
-                  { slug: "food-hygiene", label: "Food Hygiene Tests" },
-                  { slug: "first-aid", label: "First Aid Tests" },
-                ].map((t) => (
-                  <li key={t.label}>
-                    <Link
-                      to="/topic/$slug"
-                      params={{ slug: t.slug }}
-                      className="group flex items-center gap-3 rounded-lg px-3 py-2 text-base font-medium text-navy-foreground/90 transition-colors hover:bg-white/10 hover:text-coral"
-                    >
-                      <span className="flex-1 truncate">{t.label}</span>
-                      <ArrowRight className="h-4 w-4 shrink-0 text-coral opacity-0 transition-opacity group-hover:opacity-100" />
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-              <div className="mt-3 border-t border-white/10 pt-3">
-                <Link
-                  to="/all-tests"
-                  className="group flex items-center justify-center gap-2 rounded-lg bg-coral px-4 py-2.5 text-center font-display text-sm font-bold uppercase tracking-[0.15em] text-coral-foreground shadow-coral transition-transform hover:-translate-y-0.5"
-                >
-                  Browse all tests
-                  <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
-                </Link>
-              </div>
-            </div>
-          </aside>
+        <div className="relative mx-auto max-w-7xl px-4 py-8 md:px-6 md:py-12">
+          <img
+            src={heroUkTest}
+            alt="UK Test Hub London hero artwork"
+            className="mx-auto block h-auto w-full rounded-2xl object-contain shadow-elevated"
+          />
         </div>
       </section>
 
