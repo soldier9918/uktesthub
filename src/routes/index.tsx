@@ -284,14 +284,14 @@ function HomePage() {
                         <CategoryIcon
                           name={c.icon}
                           alt={c.title}
-                          className="h-20 w-20 shrink-0 object-contain drop-shadow-[0_6px_12px_rgba(0,0,0,0.45)] transition-transform duration-300 group-hover:animate-jump-once"
+                          className="h-16 w-16 shrink-0 object-contain drop-shadow-[0_6px_12px_rgba(0,0,0,0.45)] transition-transform duration-300 group-hover:animate-jump-once"
                         />
                       ) : (
-                        <span className={`flex h-20 w-20 shrink-0 items-center justify-center bg-gradient-to-br ${th.iconGrad} text-white shadow-[0_6px_16px_-6px_rgba(0,0,0,0.55)] ring-1 ring-white/20 transition-transform duration-300 group-hover:animate-jump-once`}>
+                        <span className={`flex h-16 w-16 shrink-0 items-center justify-center bg-gradient-to-br ${th.iconGrad} text-white shadow-[0_6px_16px_-6px_rgba(0,0,0,0.55)] ring-1 ring-white/20 transition-transform duration-300 group-hover:animate-jump-once`}>
                           <CategoryIcon
                             name={c.icon}
                             alt={c.title}
-                            className="h-16 w-16 object-contain"
+                            className="h-12 w-12 object-contain"
                           />
                         </span>
                       )}
