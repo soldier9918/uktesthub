@@ -99,14 +99,14 @@ const btnClass: Record<"coral" | "royal" | "navy", string> = {
 function SectionTitle({ children }: { children: React.ReactNode }) {
   return (
     <div className="text-center">
-      <div className="inline-flex items-center justify-center gap-4">
-        <img src={sectionCrown} alt="" aria-hidden className="h-20 w-20 shrink-0 object-contain md:h-24 md:w-24" />
-        <h2 className="font-display text-2xl font-extrabold uppercase tracking-[0.18em] text-foreground md:text-3xl">
+      <div className="inline-flex items-center justify-center gap-2 md:gap-3 lg:gap-4">
+        <img src={sectionCrown} alt="" aria-hidden className="h-10 w-10 shrink-0 object-contain drop-shadow-[0_6px_14px_rgba(234,88,12,0.35)] md:h-12 md:w-12 lg:h-14 lg:w-14" />
+        <h2 className="font-display text-xl font-extrabold uppercase tracking-[0.18em] text-foreground md:text-3xl lg:text-4xl">
           {children}
         </h2>
-        <img src={sectionCrown} alt="" aria-hidden className="h-20 w-20 shrink-0 object-contain md:h-24 md:w-24" />
+        <img src={sectionCrown} alt="" aria-hidden className="h-10 w-10 shrink-0 object-contain drop-shadow-[0_6px_14px_rgba(234,88,12,0.35)] md:h-12 md:w-12 lg:h-14 lg:w-14" />
       </div>
-      <div className="mx-auto mt-4 h-1 w-20 rounded-full bg-coral" />
+      <div className="mx-auto mt-3 h-1 w-20 rounded-full bg-coral md:mt-4" />
     </div>
   );
 }

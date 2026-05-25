@@ -1,20 +1,32 @@
 ## Goal
-Make the illustrated category icons render larger on the homepage category cards and on the category/topic detail page headers, without changing the icon images themselves or the surrounding layouts.
+Make the `SectionTitle` (crown + heading + crown) feel balanced across mobile, tablet, and desktop, shrink the crown, and add a soft shadow behind the orange diamond.
 
-## Changes
+## Changes (single file: `src/routes/index.tsx`, `SectionTitle` component, lines ~99–112)
 
-**1. `src/routes/index.tsx` — homepage category cards (~line 285–298)**
-- Illustrated-icon branch: `h-12 w-12` → `h-16 w-16` (and keep `shrink-0 object-contain` + existing drop-shadow).
-- Lucide-fallback branch: bump container `h-12 w-12` → `h-16 w-16` and inner icon `h-9 w-9` → `h-12 w-12` so both branches stay visually consistent.
+**1. Smaller, responsive crown sizing**
+Current: `h-20 w-20 md:h-24 md:w-24` (80px / 96px).
+New tiered scale so the crown reads as a flanking accent, not competing with the title:
+- mobile: `h-10 w-10` (40px)
+- tablet (`md:`): `h-12 w-12` (48px)
+- desktop (`lg:`): `h-14 w-14` (56px)
 
-**2. `src/routes/category.$slug.tsx`**
-- Header icon (line 78): `h-7 w-7` → `h-10 w-10`.
-- In-page card icon (line 171): `h-10 w-10` → `h-14 w-14`.
+**2. Tighter, responsive spacing between crown and text**
+Current: fixed `gap-4`.
+New: `gap-2 md:gap-3 lg:gap-4` so the crowns sit closer to the title on small screens.
 
-**3. `src/routes/topic.$slug.tsx`**
-- Header icon (line 196): `h-7 w-7` → `h-10 w-10`.
+**3. Responsive heading size for better balance**
+Current: `text-2xl md:text-3xl`.
+New: `text-xl md:text-3xl lg:text-4xl` — keeps mobile compact, gives desktop more presence so the crowns don't overpower it.
+
+**4. Drop shadow behind the orange diamond**
+Apply a Tailwind drop-shadow utility directly to the `<img>` so the shadow follows the diamond's transparent silhouette (not a square box):
+`drop-shadow-[0_6px_14px_rgba(234,88,12,0.35)]`
+Warm orange-tinted shadow, soft and offset downward — matches the gold/coral palette already used on the page.
+
+**5. Underline spacing tweak**
+Current: `mt-4`. Change to `mt-3 md:mt-4` so the gap under the smaller mobile title doesn't look oversized.
 
 ## Out of scope
-- `guide.$slug.tsx` only uses the icon as a tiny inline bullet (`h-3.5 w-3.5`) inside link text — leave it alone.
-- No image regeneration. No changes to `CategoryIcon.tsx` itself.
-- No layout/spacing changes beyond the size classes.
+- No changes to the crown image asset itself.
+- No changes to category tile icons or other crown usages (e.g. the `<Crown>` lucide icon on line 458).
+- No changes to colors, fonts, or section layout outside `SectionTitle`.
