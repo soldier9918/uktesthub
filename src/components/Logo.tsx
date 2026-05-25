@@ -24,7 +24,7 @@ export function Logo({ variant = "dark", showTagline = true, size = "md" }: Prop
 
       <span className="leading-none">
         <span className="flex items-center gap-1.5">
-          <span className={`tracking-[0.04em] whitespace-nowrap ${text} ${wordSize}`} style={{ fontFamily: '"Nunito", system-ui, sans-serif', fontWeight: 900 }}>
+          <span className={`font-semibold uppercase tracking-wider whitespace-nowrap ${text} ${wordSize}`}>
             UK TEST HUB
           </span>
         </span>
