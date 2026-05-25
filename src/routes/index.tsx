@@ -26,6 +26,7 @@ const latestPosts = [...blogPosts]
   .slice(0, 3);
 
 import heroUk from "@/assets/hero-uk.jpg";
+import heroUkTest from "@/assets/hero-uk-test.png";
 import featDriving from "@/assets/feat-driving.jpg";
 import featFlag from "@/assets/feat-flag.jpg";
 import featTowerBridge from "@/assets/feat-tower-bridge.jpg";
