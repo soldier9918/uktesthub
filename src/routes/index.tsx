@@ -35,6 +35,7 @@ import featCalculator from "@/assets/feat-calculator.jpg";
 import bandGuard from "@/assets/band-guard.png";
 import bandPostbox from "@/assets/band-postbox.png";
 import bandSkyline from "@/assets/band-skyline.png";
+import sectionCrown from "@/assets/section-crown.png";
 
 export const Route = createFileRoute("/")({
   head: () => {
