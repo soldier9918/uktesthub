@@ -25,7 +25,7 @@ const latestPosts = [...blogPosts]
   .sort((a, b) => (a.datePublished < b.datePublished ? 1 : -1))
   .slice(0, 3);
 
-import heroUk from "@/assets/hero-uk.jpg";
+import heroUk from "@/assets/hero-uk-neon.png";
 import featDriving from "@/assets/feat-driving.jpg";
 import featFlag from "@/assets/feat-flag.jpg";
 import featTowerBridge from "@/assets/feat-tower-bridge.jpg";
