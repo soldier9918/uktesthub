@@ -260,8 +260,10 @@ function HomePage() {
                 success: { grad: "from-[#06371f] via-[#0a4a2c] to-[#042818]", ring: "ring-emerald-300/15", glow: "bg-emerald-400/30", iconGrad: "from-[#34d399] to-[#047857]", eyebrow: "text-emerald-200", chipBg: "bg-white/10 border-white/15", chipText: "text-white/85", cta: "text-emerald-200" },
               };
               const CHIP_LIMIT = 3;
-              return categories.map((c) => {
+              return categories.map((c, idx) => {
                 const th = themes[c.accent] ?? themes.coral;
+                const isLastOrphan = idx === categories.length - 1 && categories.length % 4 === 1;
+                const isLastOrphanMd = idx === categories.length - 1 && categories.length % 3 === 1;
                 const chips = c.topics
                   .slice(0, CHIP_LIMIT)
                   .map((t) =>
@@ -276,8 +278,9 @@ function HomePage() {
                     key={c.slug}
                     to="/category/$slug"
                     params={{ slug: c.slug }}
-                    className={`group relative flex h-full flex-col overflow-hidden border border-white/5 bg-gradient-to-br ${th.grad} p-5 text-white shadow-[0_10px_30px_-12px_rgba(0,0,0,0.55)] ring-1 ${th.ring} transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_22px_50px_-15px_rgba(0,0,0,0.7)]`}
+                    className={`group relative flex h-full flex-col overflow-hidden border border-white/5 bg-gradient-to-br ${th.grad} p-5 text-white shadow-[0_10px_30px_-12px_rgba(0,0,0,0.55)] ring-1 ${th.ring} transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_22px_50px_-15px_rgba(0,0,0,0.7)] ${isLastOrphanMd ? "md:col-start-2" : ""} ${isLastOrphan ? "lg:col-start-2 lg:col-end-4" : ""}`}
                   >
+
                     <div aria-hidden className={`pointer-events-none absolute -right-14 -top-14 h-40 w-40 rounded-full ${th.glow} blur-3xl transition-opacity duration-300 group-hover:opacity-80`} />
                     <div aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/30 to-transparent" />
 
