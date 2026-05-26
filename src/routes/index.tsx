@@ -38,6 +38,7 @@ import bandSkyline from "@/assets/band-skyline.png";
 import sectionCrown from "@/assets/section-crown.png";
 import btnStartPractice from "@/assets/btn-start-practice.png";
 import btnBrowseAllTests from "@/assets/btn-browse-all-tests.png";
+import btnBrowseAllTestsSm from "@/assets/btn-browse-all-tests-sm.png";
 
 export const Route = createFileRoute("/")({
   head: () => {
@@ -229,8 +230,8 @@ function HomePage() {
           {/* Popular tests panel */}
           <aside className="relative lg:self-start lg:-mt-6">
             <div className="rounded-2xl border border-white/15 bg-navy-deep/40 p-5 shadow-elevated backdrop-blur-md">
-              <div className="border-b border-white/10 pb-3">
-                <span className="font-display text-sm font-bold uppercase tracking-[0.2em] text-coral">
+              <div className="border-b border-[#e8c07a]/25 pb-3">
+                <span className="font-display text-sm font-bold uppercase tracking-[0.2em] text-[#e8c07a]">
                   Popular Mock Tests
                 </span>
               </div>
@@ -253,21 +254,25 @@ function HomePage() {
                     <Link
                       to="/topic/$slug"
                       params={{ slug: t.slug }}
-                      className="group flex items-center gap-3 rounded-lg px-3 py-2 text-base font-medium text-navy-foreground/90 transition-colors hover:bg-white/10 hover:text-coral"
+                      className="group flex items-center gap-3 rounded-lg px-3 py-2 text-base font-medium text-navy-foreground/90 transition-colors hover:bg-white/10 hover:text-[#e8c07a]"
                     >
                       <span className="flex-1 truncate">{t.label}</span>
-                      <ArrowRight className="h-4 w-4 shrink-0 text-coral opacity-0 transition-opacity group-hover:opacity-100" />
+                      <ArrowRight className="h-4 w-4 shrink-0 text-[#e8c07a]/80 transition-transform group-hover:translate-x-0.5" />
                     </Link>
                   </li>
                 ))}
               </ul>
-              <div className="mt-3 border-t border-white/10 pt-3">
+              <div className="mt-3 border-t border-[#e8c07a]/25 pt-3">
                 <Link
                   to="/all-tests"
-                  className="group flex items-center justify-center gap-2 rounded-lg bg-coral px-4 py-2.5 text-center font-display text-sm font-bold uppercase tracking-[0.15em] text-coral-foreground shadow-coral transition-transform hover:-translate-y-0.5"
+                  aria-label="Browse all tests"
+                  className="block transition-all hover:-translate-y-0.5 hover:brightness-110"
                 >
-                  Browse all tests
-                  <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+                  <img
+                    src={btnBrowseAllTestsSm}
+                    alt="Browse all tests"
+                    className="mx-auto h-11 w-auto"
+                  />
                 </Link>
               </div>
             </div>
