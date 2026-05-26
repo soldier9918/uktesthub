@@ -141,11 +141,12 @@ function HomePage() {
 
         <div className="relative mx-auto grid max-w-7xl gap-10 px-4 pb-16 pt-10 md:px-6 md:pb-24 md:pt-14 lg:grid-cols-[1fr_280px] lg:items-center">
           <div>
-            <div className="flex items-center gap-3">
+            <div className="flex flex-wrap items-center gap-3">
               <span aria-hidden className="h-px w-10 bg-coral" />
-              <p className="font-display text-xs font-semibold uppercase tracking-[0.32em] text-[#e8c07a] md:text-sm">
+              <p className="font-display font-semibold uppercase tracking-[0.32em] text-[#e8c07a] text-sm md:text-base lg:text-lg">
                 Pass your UK tests · first time
               </p>
+              <span aria-hidden className="h-px w-10 bg-coral" />
             </div>
 
             <h1 className="mt-5 font-display font-black uppercase leading-[0.95] tracking-tight text-6xl md:text-7xl lg:text-8xl"
