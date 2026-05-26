@@ -490,7 +490,7 @@ export const categories: Category[] = [
   },
   {
     slug: "university-admissions-tests",
-    title: "University Admissions Tests",
+    title: "University Admissions",
     short: "GRE, GMAT, UCAT, LNAT & medical/law admissions",
     description:
       "Independent practice for UK and international university admissions tests — GRE, GMAT, UCAT for medicine, LNAT for law and BMAT-style preparation.",
