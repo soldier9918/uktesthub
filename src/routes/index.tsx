@@ -25,7 +25,7 @@ const latestPosts = [...blogPosts]
   .sort((a, b) => (a.datePublished < b.datePublished ? 1 : -1))
   .slice(0, 3);
 
-import heroUk from "@/assets/hero-uk.jpg";
+import heroLondon from "@/assets/hero-london-skyline.jpg";
 import featDriving from "@/assets/feat-driving.jpg";
 import featFlag from "@/assets/feat-flag.jpg";
 import featTowerBridge from "@/assets/feat-tower-bridge.jpg";
@@ -126,30 +126,51 @@ function HomePage() {
       {/* HERO */}
       <section className="relative overflow-hidden bg-navy-deep text-navy-foreground">
         <img
-          src={heroUk}
-          alt="Big Ben at dusk with the Union Jack"
-          className="absolute inset-0 h-full w-full object-cover object-center opacity-90"
+          src={heroLondon}
+          alt="London skyline with Big Ben, St Paul's, the Shard and Tower Bridge"
+          className="absolute inset-0 h-full w-full object-cover object-center opacity-95"
         />
         <div
           aria-hidden
-          className="absolute inset-0 bg-gradient-to-r from-navy-deep/70 via-navy-deep/55 to-navy-deep/20"
+          className="absolute inset-0 bg-gradient-to-r from-navy-deep/85 via-navy-deep/60 to-navy-deep/15"
+        />
+        <div
+          aria-hidden
+          className="absolute inset-0 bg-gradient-to-b from-navy-deep/40 via-transparent to-navy-deep/50"
         />
 
-        <div className="relative mx-auto grid max-w-7xl gap-10 px-4 pb-16 pt-6 md:px-6 md:pb-24 md:pt-8 lg:grid-cols-[1fr_280px] lg:items-center">
+        <div className="relative mx-auto grid max-w-7xl gap-10 px-4 pb-16 pt-10 md:px-6 md:pb-24 md:pt-14 lg:grid-cols-[1fr_280px] lg:items-center">
           <div>
-            <p className="font-display font-semibold uppercase tracking-[0.25em] text-navy-foreground/80 text-5xl">
-              Pass your
-            </p>
-            <h1 className="mt-3 font-sans text-7xl font-black uppercase leading-[0.95] tracking-tight md:text-8xl lg:text-9xl">
+            <div className="flex items-center gap-3">
+              <span aria-hidden className="h-px w-10 bg-coral" />
+              <p className="font-display text-xs font-semibold uppercase tracking-[0.32em] text-[#e8c07a] md:text-sm">
+                Pass your UK tests · first time
+              </p>
+            </div>
+
+            <h1 className="mt-5 font-display font-black uppercase leading-[0.95] tracking-tight text-6xl md:text-7xl lg:text-8xl"
+                style={{ textShadow: "0 2px 24px rgba(0,0,0,0.45)" }}>
               UK Tests
               <br />
-              <span className="text-coral">First Time</span>
+              <span className="font-serif italic font-semibold normal-case tracking-tight text-[#e8c07a]">
+                first time.
+              </span>
             </h1>
-            <p className="mt-6 max-w-xl text-base text-navy-foreground/85 md:text-lg whitespace-pre-line">
+
+            <p className="mt-6 max-w-xl text-base leading-relaxed text-navy-foreground/90 md:text-lg">
               Practice-style questions. Mock tests. Instant results.
-              {"\n"}Over <span className="font-bold text-[#d4af37]">96,000+</span> mock questions across <span className="font-bold text-[#d4af37]">110+</span> topics!
-              {"\n"}Study anytime, anywhere.
+              <span className="mx-2 text-[#e8c07a]/60">·</span>
+              Study anytime, anywhere.
             </p>
+
+            <div className="mt-5 flex flex-wrap items-center gap-2">
+              <span className="inline-flex items-center gap-1.5 rounded-full border border-[#e8c07a]/40 bg-[#e8c07a]/10 px-3 py-1 text-xs font-semibold tracking-wide text-[#e8c07a]">
+                <span className="font-bold">96,000+</span> mock questions
+              </span>
+              <span className="inline-flex items-center gap-1.5 rounded-full border border-[#e8c07a]/40 bg-[#e8c07a]/10 px-3 py-1 text-xs font-semibold tracking-wide text-[#e8c07a]">
+                <span className="font-bold">110+</span> topics
+              </span>
+            </div>
 
             <div className="mt-8 flex flex-wrap gap-3">
               <a
@@ -163,19 +184,21 @@ function HomePage() {
                     history.replaceState(null, "", "#popular-categories");
                   }
                 }}
-                className="inline-flex items-center gap-2 rounded-xl bg-coral px-7 py-4 text-sm font-bold uppercase tracking-wider text-coral-foreground shadow-coral transition-transform hover:-translate-y-0.5"
+                className="group relative inline-flex items-center gap-2 overflow-hidden rounded-xl bg-coral px-7 py-4 text-sm font-bold uppercase tracking-wider text-coral-foreground shadow-coral ring-1 ring-inset ring-white/20 transition-transform hover:-translate-y-0.5"
               >
-                Start Practice <ArrowRight className="h-4 w-4" />
+                <span aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-1/2 bg-gradient-to-b from-white/15 to-transparent" />
+                <span className="relative">Start Practice</span>
+                <ArrowRight className="relative h-4 w-4 transition-transform group-hover:translate-x-0.5" />
               </a>
               <Link
                 to="/all-tests"
-                className="inline-flex items-center gap-2 rounded-xl border-2 border-white/40 bg-white/5 px-7 py-4 text-sm font-bold uppercase tracking-wider text-navy-foreground backdrop-blur transition-colors hover:bg-white/15"
+                className="inline-flex items-center gap-2 rounded-xl border-2 border-white/40 bg-white/5 px-7 py-4 text-sm font-bold uppercase tracking-wider text-navy-foreground backdrop-blur transition-all hover:border-[#e8c07a]/70 hover:bg-white/15 hover:ring-2 hover:ring-[#e8c07a]/30"
               >
                 Browse All Tests
               </Link>
             </div>
 
-            <ul className="mt-10 flex flex-wrap gap-x-7 gap-y-3 text-sm text-navy-foreground/85">
+            <ul className="mt-10 flex flex-wrap gap-x-6 gap-y-3 text-sm text-navy-foreground/90">
               {[
                 { icon: CheckCircle2, label: "96,000+ Questions" },
                 { icon: FileCheck, label: "Realistic Exam Format" },
@@ -183,7 +206,9 @@ function HomePage() {
                 { icon: CalendarCheck, label: "Updated for 2026" },
               ].map((s) => (
                 <li key={s.label} className="inline-flex items-center gap-2">
-                  <s.icon className="h-4 w-4 text-coral" />
+                  <span className="inline-flex h-6 w-6 items-center justify-center rounded-full border border-[#e8c07a]/40 bg-navy-deep/60 text-[#e8c07a]">
+                    <s.icon className="h-3.5 w-3.5" />
+                  </span>
                   <span className="font-medium">{s.label}</span>
                 </li>
               ))}
