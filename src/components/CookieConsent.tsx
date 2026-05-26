@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useRouterState } from "@tanstack/react-router";
 import {
-  acceptAll,
+  acceptAllFallback,
   getConsent,
   OPEN_SETTINGS_EVENT,
   rejectNonEssential,
@@ -21,23 +21,62 @@ import {
 import { Switch } from "@/components/ui/switch";
 import { Button } from "@/components/ui/button";
 
-type Toggles = Pick<ConsentState, "analytics" | "advertising" | "functional">;
+type Toggles = Pick<ConsentState, "analytics" | "functional">;
 
 // Selectors that indicate Google's Funding Choices CMP has actually rendered
 // its consent UI (as opposed to just the invisible `googlefcPresent` signal
 // iframe we inject ourselves).
 const CMP_RENDERED_SELECTORS = [
   'iframe[src*="fundingchoicesmessages.google.com"]',
-  '.fc-consent-root',
-  '.fc-dialog-container',
-  '.fc-ab-dialog',
+  ".fc-consent-root",
+  ".fc-dialog-container",
+  ".fc-ab-dialog",
 ];
+
+type TcfApi = (
+  command: string,
+  version: number,
+  cb: (data: { cmpStatus?: string; eventStatus?: string } | null, success: boolean) => void,
+) => void;
 
 function isGoogleCmpRendered(): boolean {
   if (typeof window === "undefined") return false;
-  if (typeof (window as unknown as { __tcfapi?: unknown }).__tcfapi === "function") return true;
+  const w = window as unknown as { __tcfapi?: TcfApi };
+  if (typeof w.__tcfapi === "function") return true;
   for (const sel of CMP_RENDERED_SELECTORS) {
     if (document.querySelector(sel)) return true;
+  }
+  return false;
+}
+
+function tryShowGoogleRevocation(): boolean {
+  if (typeof window === "undefined") return false;
+  const w = window as unknown as {
+    googlefc?: {
+      callbackQueue?: Array<unknown>;
+      showRevocationMessage?: () => void;
+    };
+  };
+  const gfc = w.googlefc;
+  if (!gfc) return false;
+  try {
+    if (typeof gfc.showRevocationMessage === "function") {
+      gfc.showRevocationMessage();
+      return true;
+    }
+    if (Array.isArray(gfc.callbackQueue)) {
+      gfc.callbackQueue.push(() => {
+        try {
+          (window as unknown as { googlefc?: { showRevocationMessage?: () => void } })
+            .googlefc?.showRevocationMessage?.();
+        } catch {
+          // ignore
+        }
+      });
+      return true;
+    }
+  } catch {
+    // ignore
   }
   return false;
 }
@@ -49,7 +88,6 @@ export function CookieConsent() {
   const [showModal, setShowModal] = useState(false);
   const [toggles, setToggles] = useState<Toggles>({
     analytics: false,
-    advertising: false,
     functional: false,
   });
 
@@ -57,56 +95,102 @@ export function CookieConsent() {
     setMounted(true);
     const c = getConsent();
     if (c) {
-      setToggles({ analytics: c.analytics, advertising: c.advertising, functional: c.functional });
+      setToggles({ analytics: c.analytics, functional: c.functional });
       setAnalyticsConsent(c.analytics === true);
       setShowBanner(false);
-    } else {
-      // No decision yet. Give the Google CMP up to 1.5s to render before we
-      // show our in-house fallback banner.
-      let cancelled = false;
+    }
+
+    // Always keep the fallback hidden whenever Google CMP becomes available,
+    // even after we may have shown it (preview domains, late CMP load, etc.).
+    let cancelled = false;
+    const hideIfCmpAppears = () => {
+      if (cancelled) return;
+      if (isGoogleCmpRendered()) {
+        setShowBanner(false);
+        return true;
+      }
+      return false;
+    };
+
+    // MutationObserver: hide our fallback the moment Google injects its UI.
+    const observer = new MutationObserver(() => {
+      hideIfCmpAppears();
+    });
+    observer.observe(document.body, { childList: true, subtree: true });
+
+    // Subscribe to __tcfapi once available — any TCF event means Google CMP
+    // has taken over consent collection.
+    let tcfPoll: number | undefined;
+    const trySubscribeTcf = () => {
+      const w = window as unknown as { __tcfapi?: TcfApi };
+      if (typeof w.__tcfapi === "function") {
+        try {
+          w.__tcfapi!("addEventListener", 2, (data, success) => {
+            if (!success || !data) return;
+            const evt = data.eventStatus;
+            if (
+              data.cmpStatus === "loaded" ||
+              evt === "tcloaded" ||
+              evt === "useractioncomplete" ||
+              evt === "cmpuishown"
+            ) {
+              setShowBanner(false);
+            }
+          });
+        } catch {
+          // ignore
+        }
+        return true;
+      }
+      return false;
+    };
+    if (!trySubscribeTcf()) {
+      tcfPoll = window.setInterval(() => {
+        if (trySubscribeTcf()) {
+          if (tcfPoll) window.clearInterval(tcfPoll);
+          tcfPoll = undefined;
+        }
+      }, 500);
+    }
+
+    // If we have no decision yet, give Google CMP up to 1.5s before showing
+    // the in-house fallback banner.
+    if (!c) {
       const start = Date.now();
       const tick = () => {
         if (cancelled) return;
-        if (getConsent() !== null) return; // user decided via some other path
-        if (isGoogleCmpRendered()) {
-          setShowBanner(false);
-          return;
-        }
+        if (getConsent() !== null) return;
+        if (hideIfCmpAppears()) return;
         if (Date.now() - start >= 1500) {
-          setShowBanner(true);
+          // Only show fallback if Google CMP still hasn't appeared.
+          if (!isGoogleCmpRendered()) setShowBanner(true);
           return;
         }
         window.setTimeout(tick, 200);
       };
       tick();
-
-      const unsub = subscribe((next) => {
-        if (next) {
-          setToggles({ analytics: next.analytics, advertising: next.advertising, functional: next.functional });
-          setShowBanner(false);
-        }
-        setAnalyticsConsent(next?.analytics === true);
-      });
-      return () => {
-        cancelled = true;
-        unsub();
-      };
     }
 
     const unsub = subscribe((next) => {
       if (next) {
-        setToggles({ analytics: next.analytics, advertising: next.advertising, functional: next.functional });
+        setToggles({ analytics: next.analytics, functional: next.functional });
         setShowBanner(false);
       }
       setAnalyticsConsent(next?.analytics === true);
     });
-    return unsub;
+
+    return () => {
+      cancelled = true;
+      observer.disconnect();
+      if (tcfPoll) window.clearInterval(tcfPoll);
+      unsub();
+    };
   }, []);
 
   useEffect(() => {
     const onOpen = () => {
       const c = getConsent();
-      if (c) setToggles({ analytics: c.analytics, advertising: c.advertising, functional: c.functional });
+      if (c) setToggles({ analytics: c.analytics, functional: c.functional });
       setShowModal(true);
     };
     window.addEventListener(OPEN_SETTINGS_EVENT, onOpen);
@@ -117,7 +201,7 @@ export function CookieConsent() {
   if (pathname.startsWith("/admin-kb20")) return null;
 
   const handleAcceptAll = () => {
-    acceptAll();
+    acceptAllFallback();
     setShowBanner(false);
     setShowModal(false);
   };
@@ -129,14 +213,24 @@ export function CookieConsent() {
   };
 
   const handleSaveChoices = () => {
-    setConsent(toggles);
+    setConsent(
+      { analytics: toggles.analytics, functional: toggles.functional },
+      { source: "fallback" },
+    );
     setShowModal(false);
   };
 
   const openSettings = () => {
     const c = getConsent();
-    if (c) setToggles({ analytics: c.analytics, advertising: c.advertising, functional: c.functional });
+    if (c) setToggles({ analytics: c.analytics, functional: c.functional });
     setShowModal(true);
+  };
+
+  const handleManageAds = () => {
+    if (!tryShowGoogleRevocation()) {
+      // Google CMP unavailable — nothing else we can offer here. Leave the
+      // modal open so the user can still adjust analytics/functional.
+    }
   };
 
   return (
@@ -149,8 +243,10 @@ export function CookieConsent() {
         >
           <div className="mx-auto flex max-w-5xl flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
             <p className="text-sm text-foreground">
-              We use cookies to run UK Test Hub, measure usage, and (in the future) show ads.
-              You can accept all, reject non-essential, or manage your choices. See our{" "}
+              We use cookies to run UK Test Hub, measure usage, and manage your
+              choices. Advertising cookies will be controlled through Google's
+              consent system where required. You can accept all, reject
+              non-essential, or manage your choices. See our{" "}
               <Link to="/privacy" className="underline underline-offset-2 hover:text-primary">
                 Privacy Policy
               </Link>{" "}
@@ -179,8 +275,8 @@ export function CookieConsent() {
           <DialogHeader>
             <DialogTitle>Cookie preferences</DialogTitle>
             <DialogDescription>
-              Choose which optional cookies UK Test Hub may use. You can change these
-              at any time from "Cookie Settings" in the footer.
+              Choose which optional cookies UK Test Hub may use. You can change
+              these at any time from "Cookie Settings" in the footer.
             </DialogDescription>
           </DialogHeader>
 
@@ -199,17 +295,29 @@ export function CookieConsent() {
               onChange={(v) => setToggles((t) => ({ ...t, analytics: v }))}
             />
             <PrefRow
-              title="Advertising"
-              body="Reserved for future Google AdSense and ad personalisation. Currently no ads are loaded."
-              checked={toggles.advertising}
-              onChange={(v) => setToggles((t) => ({ ...t, advertising: v }))}
-            />
-            <PrefRow
               title="Functional"
               body="Remembers preferences such as theme, saved settings and progress features."
               checked={toggles.functional}
               onChange={(v) => setToggles((t) => ({ ...t, functional: v }))}
             />
+            <div className="rounded-lg border border-border p-3">
+              <p className="font-display text-sm font-semibold text-foreground">
+                Advertising
+              </p>
+              <p className="mt-1 text-xs text-muted-foreground">
+                Advertising consent is managed by Google's consent system, not
+                by this panel. If Google's consent banner is available on your
+                device, you can re-open it below.
+              </p>
+              <Button
+                variant="outline"
+                size="sm"
+                className="mt-3"
+                onClick={handleManageAds}
+              >
+                Manage advertising consent
+              </Button>
+            </div>
           </div>
 
           <DialogFooter className="mt-4 gap-2 sm:gap-2">
