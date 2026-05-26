@@ -75,7 +75,7 @@ export const categories: Category[] = [
   },
   {
     slug: "english",
-    title: "English Language Tests",
+    title: "English Language ",
     short: "IELTS, TOEFL, ESOL, grammar & vocabulary",
     description:
       "Improve your English with IELTS Listening, Reading and Writing, TOEFL practice, ESOL exercises and grammar drills.",
