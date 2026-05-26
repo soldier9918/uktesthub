@@ -8,8 +8,8 @@ type Props = {
 };
 
 export function Logo({ variant = "dark", showTagline = true, size = "md" }: Props) {
-  const text = variant === "dark" ? "text-foreground" : "text-navy-foreground";
-  const sub = variant === "dark" ? "text-muted-foreground" : "text-navy-foreground/70";
+  const text = variant === "dark" ? "text-foreground" : "text-[#e8c07a]";
+  const sub = variant === "dark" ? "text-muted-foreground" : "text-[#e8c07a]/70";
   const flagSize = size === "lg" ? "h-16 w-16" : size === "sm" ? "h-10 w-10" : "h-12 w-12";
   const wordSize = size === "lg" ? "text-2xl md:text-3xl" : size === "sm" ? "text-base" : "text-lg";
 
