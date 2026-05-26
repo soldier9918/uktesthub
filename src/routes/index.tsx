@@ -398,7 +398,7 @@ function HomePage() {
                   ctaShadow: "shadow-[0_10px_24px_-10px_rgba(251,191,36,0.75)]",
                 },
               };
-              const order = ["coral", "navy", "gold"] as const;
+              const order = ["coral", "navy"] as const;
               return featured.map((f, idx) => {
                 const th = featThemes[order[idx % order.length]];
                 return (
