@@ -967,7 +967,7 @@ function HomePage() {
         <img
           src={bandSkyline}
           alt="London skyline"
-          className="pointer-events-none absolute inset-x-0 bottom-0 z-0 w-full select-none object-contain object-bottom"
+          className="pointer-events-none absolute inset-x-0 -bottom-2 z-0 w-full translate-y-[2px] select-none object-contain object-bottom"
         />
         <div className="relative z-10 mx-auto max-w-5xl px-4 pb-40 pt-10 sm:pb-48 md:px-6 md:pb-56 md:pt-14 lg:pb-64">
           <div className="flex items-center gap-4 sm:gap-5">
