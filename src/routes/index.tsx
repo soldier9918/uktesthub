@@ -809,11 +809,15 @@ function HomePage() {
                   <Link
                     to="/category/$slug"
                     params={{ slug: item.slug }}
-                    className="flex items-center gap-3 rounded-xl border border-border bg-background px-4 py-3 text-sm font-medium text-foreground transition-colors hover:border-coral/40 hover:bg-accent/40"
+                    className="group relative flex items-center gap-3 overflow-hidden border border-white/5 bg-gradient-to-br from-[#0a2540] via-[#0d2c4f] to-[#061a30] px-5 py-4 text-sm font-semibold text-white shadow-[0_10px_30px_-12px_rgba(0,0,0,0.55)] ring-1 ring-white/10 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_18px_40px_-15px_rgba(0,0,0,0.7)]"
                   >
-                    <CheckCircle2 className="h-4 w-4 shrink-0 text-coral" />
-                    <span className="flex-1">{item.label}</span>
-                    <ArrowRight className="h-4 w-4 text-muted-foreground" />
+                    <div aria-hidden className="pointer-events-none absolute -right-12 -top-12 h-32 w-32 rounded-full bg-[#3b82f6]/30 blur-3xl transition-opacity duration-300 group-hover:opacity-90" />
+                    <div aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/30 to-transparent" />
+                    <span className="relative flex h-8 w-8 shrink-0 items-center justify-center bg-gradient-to-br from-[#fbbf24] to-[#b45309] text-[#2a1d05] shadow-[0_6px_16px_-6px_rgba(251,191,36,0.7)] ring-1 ring-white/20">
+                      <CheckCircle2 className="h-4 w-4" />
+                    </span>
+                    <span className="relative flex-1 tracking-tight">{item.label}</span>
+                    <ArrowRight className="relative h-4 w-4 text-[#7dd3fc] transition-transform group-hover:translate-x-1" />
                   </Link>
                 </li>
               ))}
