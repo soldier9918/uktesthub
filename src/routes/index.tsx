@@ -36,6 +36,8 @@ import bandGuard from "@/assets/band-guard.png";
 import bandPostbox from "@/assets/band-postbox.png";
 import bandSkyline from "@/assets/band-skyline.png";
 import sectionCrown from "@/assets/section-crown.png";
+import btnStartPractice from "@/assets/btn-start-practice.png";
+import btnBrowseAllTests from "@/assets/btn-browse-all-tests.png";
 
 export const Route = createFileRoute("/")({
   head: () => {
@@ -172,9 +174,10 @@ function HomePage() {
               </span>
             </div>
 
-            <div className="mt-8 flex flex-wrap gap-3">
+            <div className="mt-8 flex flex-wrap items-center gap-3">
               <a
                 href="#popular-categories"
+                aria-label="Start Practice"
                 onClick={(e) => {
                   e.preventDefault();
                   document
@@ -184,17 +187,24 @@ function HomePage() {
                     history.replaceState(null, "", "#popular-categories");
                   }
                 }}
-                className="group relative inline-flex items-center gap-2 overflow-hidden rounded-xl bg-coral px-7 py-4 text-sm font-bold uppercase tracking-wider text-coral-foreground shadow-coral ring-1 ring-inset ring-white/20 transition-transform hover:-translate-y-0.5"
+                className="inline-block transition-all hover:-translate-y-0.5 hover:brightness-110"
               >
-                <span aria-hidden className="pointer-events-none absolute inset-x-0 top-0 h-1/2 bg-gradient-to-b from-white/15 to-transparent" />
-                <span className="relative">Start Practice</span>
-                <ArrowRight className="relative h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+                <img
+                  src={btnStartPractice}
+                  alt="Start Practice"
+                  className="h-12 w-auto md:h-14"
+                />
               </a>
               <Link
                 to="/all-tests"
-                className="inline-flex items-center gap-2 rounded-xl border-2 border-white/40 bg-white/5 px-7 py-4 text-sm font-bold uppercase tracking-wider text-navy-foreground backdrop-blur transition-all hover:border-[#e8c07a]/70 hover:bg-white/15 hover:ring-2 hover:ring-[#e8c07a]/30"
+                aria-label="Browse all tests"
+                className="inline-block transition-all hover:-translate-y-0.5 hover:brightness-110"
               >
-                Browse All Tests
+                <img
+                  src={btnBrowseAllTests}
+                  alt="Browse all tests"
+                  className="h-12 w-auto md:h-14"
+                />
               </Link>
             </div>
 
