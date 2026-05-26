@@ -365,51 +365,95 @@ function HomePage() {
           </div>
 
           <ul className="mt-8 grid gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
-            {featured.map((f) => {
-              return (
-                <li key={f.slug}>
-                  <Link
-                    to="/quiz/$slug"
-                    params={{ slug: f.slug }}
-                    className="group flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-soft transition-all hover:-translate-y-1 hover:border-coral/40 hover:shadow-elevated"
-                  >
-                    <div className="relative aspect-[4/3] overflow-hidden bg-muted">
-                      <img
-                        src={f.img}
-                        alt={f.title}
-                        loading="lazy"
-                        width={800}
-                        height={600}
-                        className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                      />
-                      {f.mostPopular && (
-                        <span className="absolute left-3 top-3 rounded-md bg-coral px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-coral-foreground shadow-coral">
-                          Most Popular
-                        </span>
-                      )}
-                    </div>
-                    <div className="flex flex-1 flex-col p-4">
-                      <h3 className="font-display text-sm font-bold leading-tight text-foreground">
-                        {f.title}
-                      </h3>
-                      <div className="mt-3 flex flex-wrap gap-x-3 gap-y-1 text-[11px] text-muted-foreground">
-                        <span className="inline-flex items-center gap-1">
-                          <ListChecks className="h-3 w-3" /> {f.questionCount} Questions
-                        </span>
-                        <span className="inline-flex items-center gap-1">
-                          <Clock className="h-3 w-3" /> {f.minutes} Mins
+            {(() => {
+              const featThemes: Record<string, { grad: string; ring: string; glow: string; eyebrow: string; meta: string; cta: string; ctaGrad: string; ctaShadow: string }> = {
+                coral: {
+                  grad: "from-[#7a0f1a] via-[#a01425] to-[#5b0812]",
+                  ring: "ring-white/10",
+                  glow: "bg-[#ff6b6b]/30",
+                  eyebrow: "text-[#fecaca]",
+                  meta: "text-white/70",
+                  cta: "text-white",
+                  ctaGrad: "from-[#ff5a5f] to-[#c81e2c]",
+                  ctaShadow: "shadow-[0_10px_24px_-10px_rgba(255,90,95,0.75)]",
+                },
+                navy: {
+                  grad: "from-[#0a2540] via-[#0d2c4f] to-[#061a30]",
+                  ring: "ring-white/10",
+                  glow: "bg-[#3b82f6]/30",
+                  eyebrow: "text-[#7dd3fc]",
+                  meta: "text-white/70",
+                  cta: "text-white",
+                  ctaGrad: "from-[#3b82f6] to-[#1d4ed8]",
+                  ctaShadow: "shadow-[0_10px_24px_-10px_rgba(59,130,246,0.75)]",
+                },
+                gold: {
+                  grad: "from-[#3a2a08] via-[#5a3f0d] to-[#2a1d05]",
+                  ring: "ring-amber-300/15",
+                  glow: "bg-amber-300/30",
+                  eyebrow: "text-amber-200",
+                  meta: "text-white/70",
+                  cta: "text-[#2a1d05]",
+                  ctaGrad: "from-[#fbbf24] to-[#b45309]",
+                  ctaShadow: "shadow-[0_10px_24px_-10px_rgba(251,191,36,0.75)]",
+                },
+              };
+              const order = ["coral", "navy", "gold"] as const;
+              return featured.map((f, idx) => {
+                const th = featThemes[order[idx % order.length]];
+                return (
+                  <li key={f.slug}>
+                    <Link
+                      to="/quiz/$slug"
+                      params={{ slug: f.slug }}
+                      className={`group relative flex h-full flex-col overflow-hidden border border-white/5 bg-gradient-to-br ${th.grad} text-white shadow-[0_10px_30px_-12px_rgba(0,0,0,0.55)] ring-1 ${th.ring} transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_22px_50px_-15px_rgba(0,0,0,0.7)]`}
+                    >
+                      <div aria-hidden className={`pointer-events-none absolute -right-14 -top-14 z-10 h-40 w-40 rounded-full ${th.glow} blur-3xl transition-opacity duration-300 group-hover:opacity-80`} />
+                      <div aria-hidden className="pointer-events-none absolute inset-x-0 top-0 z-10 h-px bg-gradient-to-r from-transparent via-white/30 to-transparent" />
+
+                      <div className="relative aspect-[4/3] overflow-hidden">
+                        <img
+                          src={f.img}
+                          alt={f.title}
+                          loading="lazy"
+                          width={800}
+                          height={600}
+                          className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                        />
+                        <div aria-hidden className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
+                        {f.mostPopular && (
+                          <span className="absolute left-3 top-3 bg-gradient-to-br from-[#fbbf24] to-[#b45309] px-2.5 py-1 text-[10px] font-bold uppercase tracking-[0.18em] text-[#2a1d05] shadow-[0_6px_16px_-6px_rgba(251,191,36,0.75)] ring-1 ring-white/30">
+                            ★ Most Popular
+                          </span>
+                        )}
+                      </div>
+
+                      <div className="relative flex flex-1 flex-col p-4">
+                        <p className={`text-[10px] font-semibold uppercase tracking-[0.18em] ${th.eyebrow}`}>
+                          Mock Test
+                        </p>
+                        <h3 className="mt-1 font-display text-sm font-extrabold leading-tight text-white">
+                          {f.title}
+                        </h3>
+                        <div className={`mt-3 flex flex-wrap gap-x-3 gap-y-1 text-[11px] ${th.meta}`}>
+                          <span className="inline-flex items-center gap-1">
+                            <ListChecks className="h-3 w-3" /> {f.questionCount} Questions
+                          </span>
+                          <span className="inline-flex items-center gap-1">
+                            <Clock className="h-3 w-3" /> {f.minutes} Mins
+                          </span>
+                        </div>
+                        <span
+                          className={`mt-4 inline-flex w-full items-center justify-center gap-1.5 bg-gradient-to-br ${th.ctaGrad} px-3 py-2.5 text-[11px] font-bold uppercase tracking-[0.18em] ${th.cta} ${th.ctaShadow} ring-1 ring-white/20 transition-transform group-hover:-translate-y-0.5`}
+                        >
+                          Start Test <ArrowRight className="h-3.5 w-3.5" />
                         </span>
                       </div>
-                      <span
-                        className={`mt-auto inline-flex w-full items-center justify-center rounded-lg px-3 py-2 text-xs font-bold uppercase tracking-wider transition-transform group-hover:-translate-y-0.5 ${btnClass[f.btn]}`}
-                      >
-                        Start Test
-                      </span>
-                    </div>
-                  </Link>
-                </li>
-              );
-            })}
+                    </Link>
+                  </li>
+                );
+              });
+            })()}
           </ul>
         </section>
 
