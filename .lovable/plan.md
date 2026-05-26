@@ -1,30 +1,29 @@
 ## Goal
+Use your two uploaded button images (gold gradient bars) as the visuals for the hero's two CTAs on the homepage, while keeping them as real, clickable, accessible buttons.
 
-Use the uploaded London skyline image as the homepage hero, and make the hero text feel more premium.
+## What changes
 
-## Changes
+In `src/routes/index.tsx` (hero, lines ~175–199), replace the two existing CTA elements:
 
-**1. Add the new hero image**
-- Copy `user-uploads://ChatGPT_Image_May_26_2026_12_47_21_PM.png` → `src/assets/hero-london-skyline.jpg`.
+1. **"Start Practice"** (currently coral pill) → uses `start-practice.png`
+   - Links to `#popular-categories` (smooth scroll) — same behaviour as today.
+2. **"Browse All Tests"** (currently white outlined pill) → uses `browse-all-tests1.png`
+   - Links to `/all-tests` — same as today.
 
-**2. `src/routes/index.tsx` — hero section only (lines ~28, ~127–191)**
-- Replace `import heroUk from "@/assets/hero-uk.jpg"` with `import heroLondon from "@/assets/hero-london-skyline.jpg"` and use it as the `<img>` source. Update alt text to "London skyline with Big Ben, St Paul's, the Shard and Tower Bridge".
-- Adjust the dark overlay so the skyline reads clearly while text stays legible: stronger left-side scrim, lighter right side — e.g. `bg-gradient-to-r from-navy-deep/85 via-navy-deep/60 to-navy-deep/15` plus a subtle top-to-bottom `from-navy-deep/40 to-transparent` layer.
+## How it's built (so it stays clickable + responsive)
 
-**3. Premium text treatment (same hero block)**
-- Replace the oversized "Pass your" eyebrow with a refined eyebrow row: a short coral rule (`h-px w-10 bg-coral`) + small uppercase label "Pass your UK tests, first time" in tracking-[0.3em] text-xs/sm, gold-tinted.
-- Headline: keep `UK Tests / First Time` but switch to a tighter, more editorial treatment — `font-display` (Cinzel, already loaded) for "UK Tests", italic serif accent for "First Time" in a warm gold (`text-[#e8c07a]`) with subtle text-shadow for depth. Slightly reduce the desktop size from `lg:text-9xl` to `lg:text-8xl` so it breathes against the image.
-- Sub-copy: keep the three lines but tighten leading and use a thin divider dot between fragments; promote the "96,000+" and "110+" stats with a small gold pill rather than inline bold.
-- CTA buttons: keep structure; add a soft gold ring on the secondary "Browse All Tests" button on hover and a subtle inner highlight on the coral primary for a more premium finish.
-- Feature row icons: swap the flat coral ticks for small gold-on-navy circular badges to match the premium tone.
+- Copy both uploads into `src/assets/` and import them.
+- Render each as an `<a>` / `<Link>` with the image as its only child (`<img>` inside the link). The whole gold bar is the clickable target.
+- Set a fixed display height (~56px desktop, ~48px mobile) with `width: auto` so the buttons keep their proportions and don't pixelate.
+- Add `alt="Start Practice"` / `alt="Browse all tests"` for accessibility.
+- Add a subtle hover lift (`hover:-translate-y-0.5`) + slight brightness bump (`hover:brightness-110`) so they feel interactive — no separate hover image needed.
+- Keep the existing flex-wrap container so they stack nicely on mobile.
 
-**4. Out of scope**
-- No changes to the popular-tests side panel structure (just inherits the new background).
-- No changes to any other section, route, or component.
-- Old `hero-uk.jpg` asset left in place (still referenced nowhere else after this change; safe to leave).
+## What it will NOT do
+- No text/arrows rendered as HTML on top of the images — the words and arrow are already baked into your PNGs, so overlaying would double them up.
+- Other buttons elsewhere on the site (e.g. SeoLanding, category cards) are untouched.
 
-## Technical notes
+## Risk / fit check
+The two PNGs are roughly the same height and same gold treatment, so they'll sit cleanly side-by-side at ~56px tall. They'll look right on this hero (dark navy background — the gold pops). If on mobile the "BROWSE ALL TESTS" wordmark feels too small at 48px height, we can bump to 52px.
 
-- Image saved as `.jpg` even though source is `.png` — the photo has no transparency and JPEG keeps the bundle smaller.
-- All color values use existing tokens (`navy-deep`, `coral`, `navy-foreground`) plus the already-used gold hex `#d4af37` / `#e8c07a`. No new design tokens introduced.
-- Typography uses fonts already loaded in `__root.tsx` (Cinzel, DM Sans) — no new font imports.
+Approve and I'll implement.
