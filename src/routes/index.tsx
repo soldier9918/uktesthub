@@ -143,8 +143,8 @@ function HomePage() {
           <div>
             <div className="flex flex-wrap items-center gap-3">
               <span aria-hidden className="h-px w-10 bg-coral" />
-              <p className="font-display font-semibold uppercase tracking-[0.32em] text-[#e8c07a] text-sm md:text-base lg:text-lg">
-                Pass your UK tests · first time
+              <p className="font-display font-semibold uppercase tracking-[0.32em] text-[#e8c07a] md:text-base lg:text-lg text-xl">
+                PREPARE FOR YOUR TESTS WITH CONFIDENCE
               </p>
               <span aria-hidden className="h-px w-10 bg-coral" />
             </div>
