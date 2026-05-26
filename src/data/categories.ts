@@ -253,7 +253,7 @@ export const categories: Category[] = [
   },
   {
     slug: "it-tech",
-    title: "IT & Tech Certifications",
+    title: "IT & Technology",
     short: "CompTIA A+, ITIL 4, Microsoft Fundamentals & Cyber",
     description:
       "Prepare for entry-level IT certifications — CompTIA A+, ITIL 4 Foundation, Microsoft Azure Fundamentals (AZ-900) and Microsoft 365 Fundamentals (MS-900), plus a cyber security awareness primer.",
