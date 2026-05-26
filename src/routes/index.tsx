@@ -204,6 +204,7 @@ function HomePage() {
                 { icon: FileCheck, label: "Realistic Exam Format" },
                 { icon: Timer, label: "Instant Results" },
                 { icon: CalendarCheck, label: "Updated for 2026" },
+                { icon: ListChecks, label: "110+ Exam Categories" },
               ].map((s) => (
                 <li key={s.label} className="inline-flex items-center gap-2">
                   <span className="inline-flex h-6 w-6 items-center justify-center rounded-full border border-[#e8c07a]/40 bg-navy-deep/60 text-[#e8c07a]">
