@@ -141,7 +141,7 @@ export const categories: Category[] = [
   },
   {
     slug: "nhs",
-    title: "NHS & Healthcare Tests",
+    title: "NHS & Healthcare",
     short: "NHS numeracy, literacy, CBT & values-based recruitment",
     description:
       "Practice for NHS recruitment and healthcare assessments — numeracy, literacy, situational judgement, values-based interviews and the NMC CBT for nurses.",
