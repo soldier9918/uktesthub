@@ -107,7 +107,7 @@ export const categories: Category[] = [
   },
   {
     slug: "career",
-    title: "Job & Career Tests",
+    title: "Job & Careers",
     short: "Aptitude, psychometric & SJT",
     description:
       "Prepare for job assessments: numerical, verbal and logical aptitude tests, psychometric and Situational Judgement Tests.",
