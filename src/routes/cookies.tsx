@@ -68,6 +68,12 @@ function CookiePage() {
         to deliver and measure ads. Loaded only after you accept advertising
         cookies.
       </p>
+      <p>
+        Advertising consent is collected and recorded by Google's Privacy &
+        Messaging (Funding Choices) consent system, not by our in-house cookie
+        banner. Our fallback banner — shown only when Google's banner cannot
+        load — never grants advertising consent on its own.
+      </p>
 
       <h2>6. Google Analytics</h2>
       <p>
