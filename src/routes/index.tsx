@@ -160,7 +160,7 @@ function HomePage() {
 
             <p className="mt-6 max-w-xl text-base leading-relaxed text-navy-foreground/90 md:text-lg">
               Practice UK mock tests online with instant results. Prepare for Driving Theory,
-              Life in the UK, English, CSCS, NHS, SIA and professional exams across 110+ topics.
+              Life in the UK, English, CSCS, NHS, SIA and professional exams. Study anytime, anywhere across 110+ topics.
             </p>
 
             <div className="mt-5 flex flex-wrap items-center gap-2">
