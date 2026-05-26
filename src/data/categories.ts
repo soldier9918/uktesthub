@@ -507,7 +507,7 @@ export const categories: Category[] = [
   },
   {
     slug: "health-safety-certifications",
-    title: "Health & Safety Certifications",
+    title: "Health & Safety",
     short: "SSSTS, SMSTS, CITB HSE & site safety",
     description:
       "Independent practice for UK site supervisor and manager safety qualifications — SSSTS, SMSTS, CITB Health, Safety & Environment and IPAF / PASMA working at height.",
