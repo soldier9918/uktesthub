@@ -475,7 +475,7 @@ export const categories: Category[] = [
   },
   {
     slug: "cloud-cyber-certifications",
-    title: "Cloud & Cyber Certifications",
+    title: "Cloud & Cyber",
     short: "AWS, Azure & cloud security foundations",
     description:
       "Independent practice for cloud and cyber foundation certifications — AWS Cloud Practitioner, AZ-900 Azure Fundamentals, Microsoft 365 fundamentals and cyber security awareness.",
