@@ -98,56 +98,18 @@ const btnClass: Record<"coral" | "royal" | "navy", string> = {
 
 function SectionTitle({ children }: { children: React.ReactNode }) {
   return (
-    <div className="relative text-center">
-      <div className="inline-flex items-center justify-center gap-3 md:gap-5 lg:gap-6">
-        {/* Left ornamental line */}
-        <span aria-hidden className="hidden sm:flex items-center gap-2">
-          <span className="h-px w-10 bg-gradient-to-r from-transparent to-[#d4af37]/60 md:w-16 lg:w-24" />
-          <span className="h-1.5 w-1.5 rotate-45 bg-[#d4af37] shadow-[0_0_8px_rgba(212,175,55,0.6)]" />
-        </span>
-
-        <div className="relative">
-          <div aria-hidden className="absolute -inset-x-6 -inset-y-3 -z-10 rounded-full bg-[radial-gradient(ellipse_at_center,rgba(212,175,55,0.12),transparent_70%)] blur-xl" />
-          <div className="inline-flex items-center justify-center gap-2 md:gap-3 lg:gap-4">
-            <img
-              src={sectionCrown}
-              alt=""
-              aria-hidden
-              className="h-10 w-10 shrink-0 object-contain drop-shadow-[0_8px_18px_rgba(234,88,12,0.45)] md:h-12 md:w-12 lg:h-14 lg:w-14"
-            />
-            <h2 className="font-display text-xl font-extrabold uppercase tracking-[0.22em] text-foreground md:text-3xl lg:text-4xl">
-              <span className="bg-gradient-to-b from-[#0a2540] via-[#0d2c4f] to-[#061a30] bg-clip-text text-transparent">
-                {children}
-              </span>
-            </h2>
-            <img
-              src={sectionCrown}
-              alt=""
-              aria-hidden
-              className="h-10 w-10 shrink-0 object-contain drop-shadow-[0_8px_18px_rgba(234,88,12,0.45)] md:h-12 md:w-12 lg:h-14 lg:w-14"
-            />
-          </div>
-        </div>
-
-        {/* Right ornamental line */}
-        <span aria-hidden className="hidden sm:flex items-center gap-2">
-          <span className="h-1.5 w-1.5 rotate-45 bg-[#d4af37] shadow-[0_0_8px_rgba(212,175,55,0.6)]" />
-          <span className="h-px w-10 bg-gradient-to-l from-transparent to-[#d4af37]/60 md:w-16 lg:w-24" />
-        </span>
+    <div className="text-center">
+      <div className="inline-flex items-center justify-center gap-2 md:gap-3 lg:gap-4">
+        <img src={sectionCrown} alt="" aria-hidden className="h-10 w-10 shrink-0 object-contain drop-shadow-[0_6px_14px_rgba(234,88,12,0.35)] md:h-12 md:w-12 lg:h-14 lg:w-14" />
+        <h2 className="font-display text-xl font-extrabold uppercase tracking-[0.18em] text-foreground md:text-3xl lg:text-4xl">
+          {children}
+        </h2>
+        <img src={sectionCrown} alt="" aria-hidden className="h-10 w-10 shrink-0 object-contain drop-shadow-[0_6px_14px_rgba(234,88,12,0.35)] md:h-12 md:w-12 lg:h-14 lg:w-14" />
       </div>
-
-      {/* Premium underline: gold → coral → gold with diamond accent */}
-      <div className="mx-auto mt-4 flex items-center justify-center gap-2 md:mt-5">
-        <span className="h-px w-8 bg-gradient-to-r from-transparent to-[#d4af37]" />
-        <span className="h-[3px] w-16 rounded-full bg-gradient-to-r from-[#d4af37] via-coral to-[#d4af37] shadow-[0_2px_8px_rgba(200,16,46,0.35)] md:w-24" />
-        <span className="h-2 w-2 rotate-45 bg-gradient-to-br from-[#fbbf24] to-[#b45309] shadow-[0_0_10px_rgba(251,191,36,0.6)]" />
-        <span className="h-[3px] w-16 rounded-full bg-gradient-to-l from-[#d4af37] via-coral to-[#d4af37] shadow-[0_2px_8px_rgba(200,16,46,0.35)] md:w-24" />
-        <span className="h-px w-8 bg-gradient-to-l from-transparent to-[#d4af37]" />
-      </div>
+      <div className="mx-auto mt-3 h-1 w-20 rounded-full bg-coral md:mt-4" />
     </div>
   );
 }
-
 
 function HomePage() {
   return (
