@@ -111,6 +111,19 @@ function SectionTitle({ children }: { children: React.ReactNode }) {
   );
 }
 
+const POPULAR_TESTS: { slug: string; label: string }[] = [
+  { slug: "seru", label: "SERU Tests" },
+  { slug: "driving-theory", label: "Driving Theory Tests" },
+  { slug: "life-in-the-uk", label: "Life in the UK Tests" },
+  { slug: "ielts", label: "IELTS Tests" },
+  { slug: "cscs-operative", label: "CSCS Tests" },
+  { slug: "nmc-cbt", label: "NMC CBT Tests" },
+  { slug: "sia-door-supervisor", label: "SIA Tests" },
+  { slug: "esol", label: "ESOL Tests" },
+  { slug: "food-hygiene", label: "Food Hygiene Tests" },
+  { slug: "first-aid", label: "First Aid Tests" },
+];
+
 function HomePage() {
   return (
     <div
