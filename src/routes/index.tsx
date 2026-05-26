@@ -154,7 +154,7 @@ function HomePage() {
               UK Tests
               <br />
               <span className="font-serif italic font-semibold normal-case tracking-tight text-[#e8c07a]">
-                first time.
+                The Smart Way
               </span>
             </h1>
 
