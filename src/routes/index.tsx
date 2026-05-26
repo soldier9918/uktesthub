@@ -39,6 +39,7 @@ import sectionCrown from "@/assets/section-crown.png";
 import btnStartPractice from "@/assets/btn-start-practice.png";
 import btnBrowseAllTests from "@/assets/btn-browse-all-tests.png";
 import btnBrowseAllTestsSm from "@/assets/btn-browse-all-tests-sm.png";
+import btnBrowseAllCategories from "@/assets/btn-browse-all-categories.png";
 
 export const Route = createFileRoute("/")({
   head: () => {
@@ -377,10 +378,14 @@ function HomePage() {
           <div className="mt-12 flex justify-center">
             <a
               href="https://www.uktesthub.com/all-tests"
-              className="group inline-flex items-center justify-center gap-3 whitespace-nowrap bg-gradient-to-br from-[#ff5a5f] to-[#c81e2c] px-10 py-5 font-display text-base font-bold uppercase tracking-[0.18em] text-white shadow-[0_12px_28px_-10px_rgba(255,90,95,0.75)] ring-1 ring-white/20 transition-transform hover:-translate-y-0.5 md:text-lg"
+              aria-label="Browse all categories"
+              className="inline-block transition-all hover:-translate-y-0.5 hover:brightness-110"
             >
-              Browse All Categories
-              <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
+              <img
+                src={btnBrowseAllCategories}
+                alt="Browse all categories"
+                className="h-14 w-auto md:h-16"
+              />
             </a>
           </div>
         </section>
