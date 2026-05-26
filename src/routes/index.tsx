@@ -5,7 +5,9 @@ import {
   ListChecks,
   Crown,
   CheckCircle2,
+  FileCheck,
   Timer,
+  CalendarCheck,
   ShieldCheck,
   TrendingUp,
   Smartphone,
@@ -23,7 +25,7 @@ const latestPosts = [...blogPosts]
   .sort((a, b) => (a.datePublished < b.datePublished ? 1 : -1))
   .slice(0, 3);
 
-import heroUk from "@/assets/hero-uk-tests.jpg";
+import heroUk from "@/assets/hero-uk.jpg";
 import featDriving from "@/assets/feat-driving.jpg";
 import featFlag from "@/assets/feat-flag.jpg";
 import featTowerBridge from "@/assets/feat-tower-bridge.jpg";
@@ -125,46 +127,72 @@ function HomePage() {
       <section className="relative overflow-hidden bg-navy-deep text-navy-foreground">
         <img
           src={heroUk}
-          alt="Pass your UK tests first time — 96,000+ practice questions across 110+ topics, realistic exam format, instant results, updated for 2026"
-          className="absolute inset-0 h-full w-full object-cover object-center"
+          alt="Big Ben at dusk with the Union Jack"
+          className="absolute inset-0 h-full w-full object-cover object-center opacity-90"
         />
         <div
           aria-hidden
-          className="absolute inset-0 bg-gradient-to-r from-navy-deep/40 via-transparent to-transparent lg:hidden"
+          className="absolute inset-0 bg-gradient-to-r from-navy-deep/70 via-navy-deep/55 to-navy-deep/20"
         />
 
-        <h1 className="sr-only">
-          Pass your UK tests first time — practice-style questions, mock tests, instant results
-        </h1>
+        <div className="relative mx-auto grid max-w-7xl gap-10 px-4 pb-16 pt-6 md:px-6 md:pb-24 md:pt-8 lg:grid-cols-[1fr_280px] lg:items-center">
+          <div>
+            <p className="font-display font-semibold uppercase tracking-[0.25em] text-navy-foreground/80 text-5xl">
+              Pass your
+            </p>
+            <h1 className="mt-3 font-sans text-7xl font-black uppercase leading-[0.95] tracking-tight md:text-8xl lg:text-9xl">
+              UK Tests
+              <br />
+              <span className="text-coral">First Time</span>
+            </h1>
+            <p className="mt-6 max-w-xl text-base text-navy-foreground/85 md:text-lg whitespace-pre-line">
+              Practice-style questions. Mock tests. Instant results.
+              {"\n"}Over <span className="font-bold text-[#d4af37]">96,000+</span> mock questions across <span className="font-bold text-[#d4af37]">110+</span> topics!
+              {"\n"}Study anytime, anywhere.
+            </p>
 
-        <div className="relative mx-auto grid max-w-7xl gap-10 px-4 pb-10 pt-[42vw] sm:pt-[34vw] md:px-6 md:pb-14 md:pt-[28vw] lg:grid-cols-[1fr_280px] lg:items-end lg:gap-8 lg:pb-14 lg:pt-[32vw] xl:pt-[28rem]">
-          <div className="flex flex-wrap gap-3 lg:pl-2">
-            <a
-              href="#popular-categories"
-              onClick={(e) => {
-                e.preventDefault();
-                document
-                  .getElementById("popular-categories")
-                  ?.scrollIntoView({ behavior: "smooth", block: "start" });
-                if (typeof history !== "undefined") {
-                  history.replaceState(null, "", "#popular-categories");
-                }
-              }}
-              className="inline-flex items-center gap-2 rounded-xl bg-coral px-7 py-4 text-sm font-bold uppercase tracking-wider text-coral-foreground shadow-coral transition-transform hover:-translate-y-0.5"
-            >
-              Start Practice <ArrowRight className="h-4 w-4" />
-            </a>
-            <Link
-              to="/all-tests"
-              className="inline-flex items-center gap-2 rounded-xl border-2 border-white/40 bg-white/5 px-7 py-4 text-sm font-bold uppercase tracking-wider text-navy-foreground backdrop-blur transition-colors hover:bg-white/15"
-            >
-              Browse All Tests
-            </Link>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <a
+                href="#popular-categories"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document
+                    .getElementById("popular-categories")
+                    ?.scrollIntoView({ behavior: "smooth", block: "start" });
+                  if (typeof history !== "undefined") {
+                    history.replaceState(null, "", "#popular-categories");
+                  }
+                }}
+                className="inline-flex items-center gap-2 rounded-xl bg-coral px-7 py-4 text-sm font-bold uppercase tracking-wider text-coral-foreground shadow-coral transition-transform hover:-translate-y-0.5"
+              >
+                Start Practice <ArrowRight className="h-4 w-4" />
+              </a>
+              <Link
+                to="/all-tests"
+                className="inline-flex items-center gap-2 rounded-xl border-2 border-white/40 bg-white/5 px-7 py-4 text-sm font-bold uppercase tracking-wider text-navy-foreground backdrop-blur transition-colors hover:bg-white/15"
+              >
+                Browse All Tests
+              </Link>
+            </div>
+
+            <ul className="mt-10 flex flex-wrap gap-x-7 gap-y-3 text-sm text-navy-foreground/85">
+              {[
+                { icon: CheckCircle2, label: "96,000+ Questions" },
+                { icon: FileCheck, label: "Realistic Exam Format" },
+                { icon: Timer, label: "Instant Results" },
+                { icon: CalendarCheck, label: "Updated for 2026" },
+              ].map((s) => (
+                <li key={s.label} className="inline-flex items-center gap-2">
+                  <s.icon className="h-4 w-4 text-coral" />
+                  <span className="font-medium">{s.label}</span>
+                </li>
+              ))}
+            </ul>
           </div>
 
           {/* Popular tests panel */}
-          <aside className="relative lg:self-end">
-            <div className="rounded-2xl border border-white/15 bg-navy-deep/60 p-5 shadow-elevated backdrop-blur-md">
+          <aside className="relative lg:self-start lg:-mt-6">
+            <div className="rounded-2xl border border-white/15 bg-navy-deep/40 p-5 shadow-elevated backdrop-blur-md">
               <div className="border-b border-white/10 pb-3">
                 <span className="font-display text-sm font-bold uppercase tracking-[0.2em] text-coral">
                   Popular Mock Tests
@@ -180,6 +208,8 @@ function HomePage() {
                   { slug: "nmc-cbt", label: "NMC CBT Tests" },
                   { slug: "sia-door-supervisor", label: "SIA Tests" },
                   { slug: "esol", label: "ESOL Tests" },
+                  
+                  
                   { slug: "food-hygiene", label: "Food Hygiene Tests" },
                   { slug: "first-aid", label: "First Aid Tests" },
                 ].map((t) => (
@@ -208,7 +238,6 @@ function HomePage() {
           </aside>
         </div>
       </section>
-
 
       <main className="mx-auto max-w-7xl px-4 md:px-6">
         <AdSlot size="leaderboard" />
