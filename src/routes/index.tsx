@@ -256,7 +256,7 @@ function HomePage() {
               };
               const CHIP_LIMIT = 3;
               return categories.map((c, idx) => {
-                const th = themes[c.accent] ?? themes.coral;
+                const th = themes[idx % 2 === 0 ? "coral" : "navy"];
                 const isLastOrphan = idx === categories.length - 1 && categories.length % 4 === 1;
                 const isLastOrphanMd = idx === categories.length - 1 && categories.length % 3 === 1;
                 const chips = c.topics
