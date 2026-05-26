@@ -159,9 +159,8 @@ function HomePage() {
             </h1>
 
             <p className="mt-6 max-w-xl text-base leading-relaxed text-navy-foreground/90 md:text-lg">
-              Practice-style questions. Mock tests. Instant results.
-              <span className="mx-2 text-[#e8c07a]/60">·</span>
-              Study anytime, anywhere.
+              Practice-style questions, realistic mock tests and instant results for UK learners.
+              Study driving theory, Life in the UK, English, professional tests and more — all in one place.
             </p>
 
             <div className="mt-5 flex flex-wrap items-center gap-2">
