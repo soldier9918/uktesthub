@@ -143,7 +143,7 @@ function HomePage() {
           className="absolute inset-0 bg-gradient-to-b from-navy-deep/40 via-transparent to-navy-deep/50"
         />
 
-        <div className="relative mx-auto grid w-full max-w-[1600px] gap-10 px-4 pb-16 pt-10 md:px-8 md:pb-24 md:pt-14 lg:grid-cols-[1fr_320px] lg:items-center xl:px-12">
+        <div className="relative mx-auto grid max-w-7xl gap-10 px-4 pb-16 pt-10 md:px-6 md:pb-24 md:pt-14 lg:grid-cols-[1fr_280px] lg:items-center">
           <div>
             <div className="flex flex-wrap items-center gap-3">
               <span aria-hidden className="h-px w-10 bg-coral" />
