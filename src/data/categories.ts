@@ -461,7 +461,7 @@ export const categories: Category[] = [
   },
   {
     slug: "admissions",
-    title: "Graduate & Business Admissions Tests",
+    title: "Graduate & Business Admissions",
     short: "GRE, GMAT & graduate admissions practice",
     description:
       "Practice-style questions for graduate and business school admissions — GRE verbal, quantitative and analytical writing, plus GMAT problem solving, critical reasoning and data insights.",
