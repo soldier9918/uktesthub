@@ -136,8 +136,7 @@ function LevelPage() {
           <h2 className="font-display text-xl font-bold">Mock tests</h2>
           <ul className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {slots.map((s, i) => {
-              const isReady = readyCount !== null && i < ready;
-              const pending = readyCount === null;
+              const isReady = i < ready;
               return (
                 <li key={s.mockNumber}>
                   <MockCard
@@ -145,11 +144,12 @@ function LevelPage() {
                     skillSlug={skill.slug}
                     level={level}
                     mockNumber={s.mockNumber}
-                    state={pending ? "loading" : isReady ? "ready" : "soon"}
+                    state={isReady ? "ready" : "soon"}
                   />
                 </li>
               );
             })}
+
           </ul>
         </section>
 
