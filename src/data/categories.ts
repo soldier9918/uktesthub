@@ -140,6 +140,19 @@ export const categories: Category[] = [
     ],
   },
   {
+    slug: "health-safety",
+    title: "Health & Safety",
+    short: "Workplace H&S awareness practice",
+    description:
+      "Free practice for the UK Workplace Health & Safety Awareness Test — Health and Safety at Work Act 1974, risk assessment, RIDDOR, PPE, manual handling, fire safety, COSHH and accident reporting.",
+    icon: "HardHatSafety",
+    accent: "gold",
+    heroImage: heroProfessional,
+    topics: [
+      { slug: "workplace-health-safety-awareness", title: "Workplace Health & Safety Awareness Test" },
+    ],
+  },
+  {
     slug: "nhs",
     title: "NHS & Healthcare",
     short: "NHS numeracy, literacy, CBT & values-based recruitment",
