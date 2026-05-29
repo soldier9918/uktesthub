@@ -6881,22 +6881,23 @@ export const blogPosts: BlogPost[] = [
           performance-based items where you complete a task in a simulated environment.
         </p>
 
-        <h2>Domain weightings (220-1101)</h2>
+        <h2>Domain weightings (220-1201)</h2>
         <ul>
-          <li>Mobile devices — 15%</li>
-          <li>Networking — 20%</li>
+          <li>Mobile devices — 13%</li>
+          <li>Networking — 23%</li>
           <li>Hardware — 25%</li>
           <li>Virtualisation and cloud computing — 11%</li>
-          <li>Hardware and network troubleshooting — 29%</li>
+          <li>Hardware and network troubleshooting — 28%</li>
         </ul>
 
-        <h2>Domain weightings (220-1102)</h2>
+        <h2>Domain weightings (220-1202)</h2>
         <ul>
-          <li>Operating systems — 31%</li>
-          <li>Security — 25%</li>
-          <li>Software troubleshooting — 22%</li>
-          <li>Operational procedures — 22%</li>
+          <li>Operating systems — 28%</li>
+          <li>Security — 28%</li>
+          <li>Software troubleshooting — 23%</li>
+          <li>Operational procedures — 21%</li>
         </ul>
+
 
         <h2>Realistic UK costs</h2>
         <p>
