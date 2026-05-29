@@ -1,0 +1,2983 @@
+{
+  "version": 2,
+  "topic": "ucas-application-knowledge",
+  "bank": [
+    {
+      "id": "ucas-mc-0001",
+      "type": "multiple_choice",
+      "question": "What does UCAS stand for?",
+      "options": [
+        "Universities and Colleges Admissions Service",
+        "University Course Application System",
+        "United Colleges Admissions Service",
+        "University Centralised Admission Scheme"
+      ],
+      "correctAnswer": 0,
+      "explanation": "UCAS = Universities and Colleges Admissions Service, the UK central body for university applications."
+    },
+    {
+      "id": "ucas-mc-0002",
+      "type": "multiple_choice",
+      "question": "How many course choices can you list on a standard UCAS Undergraduate application?",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correctAnswer": 2,
+      "explanation": "You can apply for up to 5 courses on a standard UCAS Undergraduate application."
+    },
+    {
+      "id": "ucas-mc-0003",
+      "type": "multiple_choice",
+      "question": "What is the standard UCAS Undergraduate January equal-consideration deadline (most courses)?",
+      "options": [
+        "15 October",
+        "31 December",
+        "29 January",
+        "30 June"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The main UCAS Undergraduate equal-consideration deadline for most courses is 29 January (18:00 UK time)."
+    },
+    {
+      "id": "ucas-mc-0004",
+      "type": "multiple_choice",
+      "question": "Which deadline applies to most Oxford, Cambridge, medicine, dentistry and veterinary courses?",
+      "options": [
+        "29 January",
+        "15 October",
+        "1 September",
+        "30 June"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The 15 October deadline applies to Oxford and Cambridge and to most medicine, dentistry and veterinary medicine/science courses."
+    },
+    {
+      "id": "ucas-mc-0005",
+      "type": "multiple_choice",
+      "question": "What is 'Clearing' in UCAS?",
+      "options": [
+        "A way to apply after the main deadlines or if you have no offers",
+        "A method of withdrawing your application",
+        "A free university tuition scheme",
+        "An interview round for top universities"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Clearing matches applicants without a place to courses with vacancies, mainly from July onwards."
+    },
+    {
+      "id": "ucas-mc-0006",
+      "type": "multiple_choice",
+      "question": "What is the UCAS 'Extra' service used for?",
+      "options": [
+        "Adding more than 5 choices initially",
+        "Applying for an extra year of study",
+        "Choosing an additional course if you've used your 5 choices and have no offers",
+        "Requesting extra financial support"
+      ],
+      "correctAnswer": 2,
+      "explanation": "UCAS Extra lets you add one more course at a time, free of charge, if you've used all 5 choices and aren't holding any offers."
+    },
+    {
+      "id": "ucas-mc-0007",
+      "type": "multiple_choice",
+      "question": "What is a 'firm' choice in UCAS?",
+      "options": [
+        "Your first-choice offer that you definitely want to accept",
+        "Your backup offer",
+        "An unsuccessful application",
+        "An unconditional offer only"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Your firm choice is the offer you most want to accept and will be your main place if you meet its conditions."
+    },
+    {
+      "id": "ucas-mc-0008",
+      "type": "multiple_choice",
+      "question": "What is an 'insurance' choice?",
+      "options": [
+        "A backup offer in case you miss your firm offer's conditions",
+        "An offer that includes insurance cover",
+        "Any unconditional offer",
+        "The first offer you receive"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Your insurance choice is a backup, usually with lower entry requirements than your firm choice."
+    },
+    {
+      "id": "ucas-mc-0009",
+      "type": "multiple_choice",
+      "question": "Roughly how long can the UCAS personal statement be?",
+      "options": [
+        "1,000 characters / 30 lines",
+        "4,000 characters / 47 lines",
+        "10,000 characters / 100 lines",
+        "Unlimited"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The traditional UCAS personal statement is up to 4,000 characters or 47 lines, whichever comes first."
+    },
+    {
+      "id": "ucas-mc-0010",
+      "type": "multiple_choice",
+      "question": "How many references do you usually need on a UCAS Undergraduate application?",
+      "options": [
+        "None",
+        "One",
+        "Two",
+        "Three"
+      ],
+      "correctAnswer": 1,
+      "explanation": "You typically need one reference, usually from a teacher, tutor or employer who knows your academic ability."
+    },
+    {
+      "id": "ucas-mc-0011",
+      "type": "multiple_choice",
+      "question": "Who normally writes the UCAS reference for a school-leaver?",
+      "options": [
+        "A parent",
+        "A close friend",
+        "A teacher or tutor",
+        "The applicant themselves"
+      ],
+      "correctAnswer": 2,
+      "explanation": "School and college applicants normally have their reference written by a teacher or tutor."
+    },
+    {
+      "id": "ucas-mc-0012",
+      "type": "multiple_choice",
+      "question": "What is a 'conditional offer'?",
+      "options": [
+        "An offer with no conditions you must meet",
+        "An offer that depends on you meeting certain grades or other conditions",
+        "An offer for a conditional degree",
+        "An offer you can only accept conditionally"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A conditional offer depends on you meeting specific conditions, usually exam grades."
+    },
+    {
+      "id": "ucas-mc-0013",
+      "type": "multiple_choice",
+      "question": "What is an 'unconditional offer'?",
+      "options": [
+        "An offer that has no conditions left to meet",
+        "An offer with hidden conditions",
+        "An offer made only after results day",
+        "An offer for unconditional loans"
+      ],
+      "correctAnswer": 0,
+      "explanation": "An unconditional offer means the university will accept you regardless of upcoming exam results."
+    },
+    {
+      "id": "ucas-mc-0014",
+      "type": "multiple_choice",
+      "question": "If you miss the conditions of both your firm and insurance offers, what is your next step likely to be?",
+      "options": [
+        "You are automatically given a place",
+        "You enter Clearing",
+        "Your application is cancelled forever",
+        "You must re-take A-levels"
+      ],
+      "correctAnswer": 1,
+      "explanation": "If you don't meet either set of conditions, you'll usually enter Clearing to look for vacancies."
+    },
+    {
+      "id": "ucas-mc-0015",
+      "type": "multiple_choice",
+      "question": "What is 'Adjustment' (now replaced) historically used for?",
+      "options": [
+        "Swapping your firm choice for a higher-ranked one if you exceeded your offer",
+        "Adjusting your tuition fees",
+        "Adjusting your accommodation",
+        "Re-taking exams"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Adjustment let students who exceeded their firm offer look for an alternative place; UCAS has since replaced it with self-release into Clearing."
+    },
+    {
+      "id": "ucas-mc-0016",
+      "type": "multiple_choice",
+      "question": "Which form is used by independent (private) applicants applying through UCAS?",
+      "options": [
+        "UCAS Apply as an 'individual' applicant",
+        "UCAS Conservatoires only",
+        "Common App",
+        "SAAS"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Applicants not at a school/college register as individual applicants on UCAS and arrange their own reference."
+    },
+    {
+      "id": "ucas-mc-0017",
+      "type": "multiple_choice",
+      "question": "How many characters are reserved for the personal statement (current limit)?",
+      "options": [
+        "2,000",
+        "3,000",
+        "4,000",
+        "5,000"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The personal statement is capped at 4,000 characters (including spaces) or 47 lines."
+    },
+    {
+      "id": "ucas-mc-0018",
+      "type": "multiple_choice",
+      "question": "On the standard UCAS Undergraduate application, can you apply to both Oxford and Cambridge in the same cycle?",
+      "options": [
+        "Yes, always",
+        "No, you can apply to only one in the same cycle (with limited exceptions)",
+        "Only if you have predicted A* grades",
+        "Only via Clearing"
+      ],
+      "correctAnswer": 1,
+      "explanation": "In general you can only apply to either Oxford or Cambridge in the same cycle (limited exceptions exist, e.g. organ scholarships)."
+    },
+    {
+      "id": "ucas-mc-0019",
+      "type": "multiple_choice",
+      "question": "How many course choices can you make if you apply to medicine, dentistry, veterinary medicine or veterinary science?",
+      "options": [
+        "Up to 5, any number can be in these subjects",
+        "Up to 4 in these subjects",
+        "Up to 3 in these subjects",
+        "Only 1 in these subjects"
+      ],
+      "correctAnswer": 1,
+      "explanation": "You can apply for a maximum of 4 courses in medicine, dentistry, veterinary medicine or veterinary science; the 5th must be a different subject."
+    },
+    {
+      "id": "ucas-mc-0020",
+      "type": "multiple_choice",
+      "question": "What does 'UCAS Tariff' refer to?",
+      "options": [
+        "A points system used by some universities to compare qualifications",
+        "A tuition fee scale",
+        "A travel allowance",
+        "A loan repayment threshold"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The UCAS Tariff converts qualifications and grades into points for comparison; some universities use it for entry requirements."
+    },
+    {
+      "id": "ucas-mc-0021",
+      "type": "multiple_choice",
+      "question": "Which of these is an example of a typical A-level UCAS Tariff value for an A grade?",
+      "options": [
+        "32",
+        "40",
+        "48",
+        "60"
+      ],
+      "correctAnswer": 2,
+      "explanation": "An A at A-level is currently worth 48 UCAS Tariff points (A* = 56)."
+    },
+    {
+      "id": "ucas-mc-0022",
+      "type": "multiple_choice",
+      "question": "How many UCAS Tariff points is an A* at A-level worth?",
+      "options": [
+        "40",
+        "48",
+        "56",
+        "64"
+      ],
+      "correctAnswer": 2,
+      "explanation": "An A* at A-level is worth 56 UCAS Tariff points."
+    },
+    {
+      "id": "ucas-mc-0023",
+      "type": "multiple_choice",
+      "question": "What does 'BTEC' usually refer to?",
+      "options": [
+        "A vocational qualification recognised by UCAS",
+        "A type of student loan",
+        "A scholarship body",
+        "A foreign exam"
+      ],
+      "correctAnswer": 0,
+      "explanation": "BTECs are vocational qualifications that can carry UCAS Tariff points and are recognised by most UK universities."
+    },
+    {
+      "id": "ucas-mc-0024",
+      "type": "multiple_choice",
+      "question": "What is the UCAS application fee for a single choice (single course)?",
+      "options": [
+        "£0",
+        "around £28.50",
+        "around £100",
+        "around £250"
+      ],
+      "correctAnswer": 1,
+      "explanation": "For the 2025 cycle UCAS charged around £28.50 for one or multiple choices; check the current year's fee."
+    },
+    {
+      "id": "ucas-mc-0025",
+      "type": "multiple_choice",
+      "question": "Is the UCAS application fee higher if you apply for more than one course?",
+      "options": [
+        "Yes, by hundreds of pounds",
+        "No — one flat fee covers up to 5 choices",
+        "Only for international applicants",
+        "Only for postgraduate courses"
+      ],
+      "correctAnswer": 1,
+      "explanation": "One flat fee covers up to 5 undergraduate choices."
+    },
+    {
+      "id": "ucas-mc-0026",
+      "type": "multiple_choice",
+      "question": "Which of the following is NOT included in a UCAS Undergraduate application?",
+      "options": [
+        "Personal statement",
+        "Reference",
+        "Course choices",
+        "Original certificates"
+      ],
+      "correctAnswer": 3,
+      "explanation": "You don't upload original certificates; universities ask for proof later if needed."
+    },
+    {
+      "id": "ucas-mc-0027",
+      "type": "multiple_choice",
+      "question": "What is 'Track' (now part of the UCAS Hub) used for?",
+      "options": [
+        "Tracking parcels",
+        "Tracking your UCAS application and offers",
+        "Tracking student loans only",
+        "Tracking accommodation"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Track / the UCAS Hub is where you monitor your application status, offers, and decisions."
+    },
+    {
+      "id": "ucas-mc-0028",
+      "type": "multiple_choice",
+      "question": "By when must you usually reply to your offers if all decisions are received by early May?",
+      "options": [
+        "Within 24 hours",
+        "Within 2 weeks of the UCAS deadline given",
+        "Within 6 months",
+        "Never — replies are optional"
+      ],
+      "correctAnswer": 1,
+      "explanation": "UCAS sets a reply deadline (often early-mid June) once all your decisions are in; if you miss it, offers can be declined automatically."
+    },
+    {
+      "id": "ucas-mc-0029",
+      "type": "multiple_choice",
+      "question": "What does 'deferred entry' mean on a UCAS application?",
+      "options": [
+        "Applying to start your course one year later than the usual entry year",
+        "Deferring your fees",
+        "Postponing your A-levels",
+        "Taking a part-time route"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Deferred entry means you apply now but start the course the following academic year (e.g. for a gap year)."
+    },
+    {
+      "id": "ucas-mc-0030",
+      "type": "multiple_choice",
+      "question": "Can you change your firm choice after you have accepted it?",
+      "options": [
+        "Yes, freely at any time",
+        "Only via withdrawing and re-entering Clearing/Extra under UCAS rules",
+        "Only if your parents agree",
+        "Only after exam results"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Once accepted, switching usually requires withdrawing and using Clearing/self-release; you can't freely swap firm choices."
+    },
+    {
+      "id": "ucas-mc-0031",
+      "type": "multiple_choice",
+      "question": "Which exam is used for entry to most medical schools in the UK?",
+      "options": [
+        "UCAT",
+        "LNAT",
+        "PAT",
+        "ELAT"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Most UK medical schools use the UCAT (University Clinical Aptitude Test)."
+    },
+    {
+      "id": "ucas-mc-0032",
+      "type": "multiple_choice",
+      "question": "Which test is required for most UK law degrees at certain universities?",
+      "options": [
+        "LNAT",
+        "UCAT",
+        "PAT",
+        "MAT"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The LNAT (Law National Aptitude Test) is required by several leading UK law schools."
+    },
+    {
+      "id": "ucas-mc-0033",
+      "type": "multiple_choice",
+      "question": "Which test is used by Oxford Physics?",
+      "options": [
+        "PAT (Physics Admissions Test)",
+        "MAT",
+        "TSA",
+        "BMAT"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The Physics Admissions Test (PAT) is used by Oxford Physics."
+    },
+    {
+      "id": "ucas-mc-0034",
+      "type": "multiple_choice",
+      "question": "What does 'Open day' mean in the UCAS context?",
+      "options": [
+        "A day a university opens to visitors to showcase its facilities and courses",
+        "A free tuition day",
+        "A day off for staff",
+        "A trial exam day"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Open days let prospective students visit campus, tour facilities and meet staff before applying."
+    },
+    {
+      "id": "ucas-mc-0035",
+      "type": "multiple_choice",
+      "question": "Which of the following best describes 'predicted grades'?",
+      "options": [
+        "Your final exam grades",
+        "Grades a teacher predicts you'll achieve in your final exams",
+        "The grades the university requires",
+        "Past exam grades"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Predicted grades are forecasts made by your teachers and shared with universities via your reference."
+    },
+    {
+      "id": "ucas-mc-0036",
+      "type": "multiple_choice",
+      "question": "If your firm choice is unconditional, do you still need to take your A-levels seriously?",
+      "options": [
+        "No, results don't matter at all",
+        "Yes, results can still affect scholarships, courses and future opportunities",
+        "Only the English grade matters",
+        "Only Maths matters"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Even with an unconditional offer, your final grades may matter for scholarships, alternative courses, and future job/postgraduate prospects."
+    },
+    {
+      "id": "ucas-mc-0037",
+      "type": "multiple_choice",
+      "question": "Which of the following is true about the UCAS personal statement?",
+      "options": [
+        "It is shared with every university you apply to",
+        "Each university gets a different statement",
+        "It's optional",
+        "It's written by your school"
+      ],
+      "correctAnswer": 0,
+      "explanation": "A single personal statement is sent to all your chosen universities."
+    },
+    {
+      "id": "ucas-mc-0038",
+      "type": "multiple_choice",
+      "question": "Which UK student finance body is for English-domiciled students?",
+      "options": [
+        "Student Finance England (SFE)",
+        "SAAS",
+        "Student Finance Wales",
+        "Student Finance NI"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Student Finance England handles loans and grants for students who normally live in England."
+    },
+    {
+      "id": "ucas-mc-0039",
+      "type": "multiple_choice",
+      "question": "Which body provides student finance to Scottish-domiciled students?",
+      "options": [
+        "SAAS",
+        "Student Finance England",
+        "Student Finance Wales",
+        "Student Loans Company NI"
+      ],
+      "correctAnswer": 0,
+      "explanation": "SAAS (Student Awards Agency Scotland) administers funding for Scottish-domiciled students."
+    },
+    {
+      "id": "ucas-mc-0040",
+      "type": "multiple_choice",
+      "question": "Roughly when does the UCAS Undergraduate application normally open for the next cycle?",
+      "options": [
+        "January",
+        "March",
+        "May",
+        "September"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The UCAS Undergraduate application typically opens in May of the previous year for the next cycle."
+    },
+    {
+      "id": "ucas-mc-0041",
+      "type": "multiple_choice",
+      "question": "Roughly when does the next-cycle UCAS Undergraduate cycle open for submission of applications?",
+      "options": [
+        "May",
+        "Early September",
+        "December",
+        "March"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Applications can usually start being submitted from early September of the year before entry."
+    },
+    {
+      "id": "ucas-mc-0042",
+      "type": "multiple_choice",
+      "question": "What is the latest 'on time' UCAS Undergraduate deadline for most courses (most recent cycle)?",
+      "options": [
+        "15 October",
+        "29 January",
+        "30 June",
+        "20 September"
+      ],
+      "correctAnswer": 1,
+      "explanation": "For most courses the on-time equal-consideration deadline is 29 January."
+    },
+    {
+      "id": "ucas-mc-0043",
+      "type": "multiple_choice",
+      "question": "What happens to applications submitted after 30 June?",
+      "options": [
+        "They are automatically accepted",
+        "They are entered directly into Clearing",
+        "They are forwarded to the next cycle",
+        "They are rejected"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Applications submitted after 30 June are automatically entered into Clearing."
+    },
+    {
+      "id": "ucas-mc-0044",
+      "type": "multiple_choice",
+      "question": "What is the final Clearing deadline (roughly)?",
+      "options": [
+        "Mid-October",
+        "December",
+        "March",
+        "May"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Clearing typically closes in mid-October each year."
+    },
+    {
+      "id": "ucas-mc-0045",
+      "type": "multiple_choice",
+      "question": "Which qualification is administered by Cambridge for some degrees?",
+      "options": [
+        "TMUA / ESAT (replacing some earlier tests)",
+        "UCAT",
+        "LNAT",
+        "QTS"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Cambridge uses tests like the TMUA and (more recently) the ESAT for selected subjects."
+    },
+    {
+      "id": "ucas-mc-0046",
+      "type": "multiple_choice",
+      "question": "Which document do universities use to verify your qualifications later?",
+      "options": [
+        "Original certificates or verified results from the exam board",
+        "Your personal statement",
+        "Your reference letter",
+        "Your UCAS Hub login"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Universities require evidence of your qualifications, usually via original certificates or verified results from your exam board."
+    },
+    {
+      "id": "ucas-mc-0047",
+      "type": "multiple_choice",
+      "question": "Where is the 'employment history' section on a UCAS application?",
+      "options": [
+        "Personal statement",
+        "Reference",
+        "Education section",
+        "A dedicated 'Employment' section"
+      ],
+      "correctAnswer": 3,
+      "explanation": "UCAS has a dedicated Employment section for paid jobs; unpaid work usually goes in the personal statement."
+    },
+    {
+      "id": "ucas-mc-0048",
+      "type": "multiple_choice",
+      "question": "Which of these qualifications carries UCAS Tariff points?",
+      "options": [
+        "A-levels, BTECs, Highers, IB, EPQ and many more",
+        "Only A-levels",
+        "Only IB",
+        "Only T-levels"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Many UK and international qualifications carry UCAS Tariff points, including A-levels, BTECs, Scottish Highers, IB, EPQ and T Levels."
+    },
+    {
+      "id": "ucas-mc-0049",
+      "type": "multiple_choice",
+      "question": "Which qualification is the EPQ?",
+      "options": [
+        "Extended Project Qualification",
+        "European Programme Qualification",
+        "English Performance Qualification",
+        "Engineering Practice Qualification"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The EPQ is the Extended Project Qualification, worth UCAS Tariff points and often valued by universities."
+    },
+    {
+      "id": "ucas-mc-0050",
+      "type": "multiple_choice",
+      "question": "What does 'IB' stand for?",
+      "options": [
+        "International Baccalaureate",
+        "Intermediate Bachelor",
+        "Independent Board",
+        "International Bursary"
+      ],
+      "correctAnswer": 0,
+      "explanation": "IB stands for International Baccalaureate, an internationally recognised pre-university qualification."
+    },
+    {
+      "id": "ucas-mc-0051",
+      "type": "multiple_choice",
+      "question": "What is a 'foundation year'?",
+      "options": [
+        "An optional Year 0 before Year 1, designed to prepare students for degree-level study",
+        "A postgraduate qualification",
+        "A pre-school year",
+        "A funded gap year"
+      ],
+      "correctAnswer": 0,
+      "explanation": "A foundation year (often Year 0) prepares students who may not yet meet standard entry requirements for their chosen degree."
+    },
+    {
+      "id": "ucas-mc-0052",
+      "type": "multiple_choice",
+      "question": "Which of these is true about apprenticeships compared to UCAS Undergraduate applications?",
+      "options": [
+        "Apprenticeships are arranged with employers, not via UCAS Undergraduate",
+        "Apprenticeships are applied for only through UCAS",
+        "Apprenticeships replace all UCAS applications",
+        "Apprenticeships are only available to mature students"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Most apprenticeships are advertised by employers/providers and applied to directly, not via the UCAS Undergraduate scheme."
+    },
+    {
+      "id": "ucas-mc-0053",
+      "type": "multiple_choice",
+      "question": "How should you write your personal statement?",
+      "options": [
+        "Reuse a template from the internet word-for-word",
+        "In your own words, focused on your motivation, skills and experiences",
+        "Only in bullet points",
+        "In the third person"
+      ],
+      "correctAnswer": 1,
+      "explanation": "UCAS uses similarity-detection software; statements should be original and reflect your motivation, skills and relevant experiences."
+    },
+    {
+      "id": "ucas-mc-0054",
+      "type": "multiple_choice",
+      "question": "What does UCAS do if your personal statement is flagged for plagiarism?",
+      "options": [
+        "Nothing",
+        "Universities are notified, which can lead to rejection",
+        "Your application is deleted",
+        "You get a refund"
+      ],
+      "correctAnswer": 1,
+      "explanation": "If similarity is detected, UCAS notifies your chosen universities, which can affect their decision."
+    },
+    {
+      "id": "ucas-mc-0055",
+      "type": "multiple_choice",
+      "question": "In the UCAS application, who can act as a referee?",
+      "options": [
+        "A teacher, tutor, employer or other professional who knows your academic ability/character",
+        "A close family member",
+        "A friend the same age as you",
+        "A celebrity"
+      ],
+      "correctAnswer": 0,
+      "explanation": "References should come from a teacher, tutor, employer, or another professional — not a family member or friend."
+    },
+    {
+      "id": "ucas-mc-0056",
+      "type": "multiple_choice",
+      "question": "What is the 'UCAS Hub'?",
+      "options": [
+        "UCAS's online portal for applicants to research, apply and track decisions",
+        "A physical office in London",
+        "A magazine",
+        "A campus shop"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The UCAS Hub is the online portal used to apply and manage your application."
+    },
+    {
+      "id": "ucas-mc-0057",
+      "type": "multiple_choice",
+      "question": "If you change your mind about your course before submission, can you edit your application?",
+      "options": [
+        "Yes, until you submit it",
+        "No, never",
+        "Only after results day",
+        "Only for a fee"
+      ],
+      "correctAnswer": 0,
+      "explanation": "You can edit your application freely until it is submitted; after submission you can only make limited changes via your university or UCAS."
+    },
+    {
+      "id": "ucas-mc-0058",
+      "type": "multiple_choice",
+      "question": "Which is true about offer holder days?",
+      "options": [
+        "They're for applicants holding an offer to learn more before deciding",
+        "They're only for international applicants",
+        "They replace open days for everyone",
+        "They are paid events"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Offer holder days target applicants who already hold an offer and want to learn more before firming."
+    },
+    {
+      "id": "ucas-mc-0059",
+      "type": "multiple_choice",
+      "question": "Which is true about deferring AFTER getting an offer?",
+      "options": [
+        "You must always ask the university to defer; it is not automatic",
+        "All offers automatically allow deferral",
+        "You can defer for 5 years",
+        "You must reapply via UCAS in a new cycle"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Deferral is at the university's discretion — you need to request it and get their agreement."
+    },
+    {
+      "id": "ucas-mc-0060",
+      "type": "multiple_choice",
+      "question": "Which is true about a 'gap year'?",
+      "options": [
+        "You can take a gap year by applying for deferred entry or by applying in the gap year itself",
+        "You can't take a gap year if you go to university",
+        "UCAS does not allow gap years",
+        "Gap years cancel your offers automatically"
+      ],
+      "correctAnswer": 0,
+      "explanation": "You can either apply now for deferred entry or apply during your gap year for the next cycle."
+    },
+    {
+      "id": "ucas-mc-0061",
+      "type": "multiple_choice",
+      "question": "What is the role of admissions tutors?",
+      "options": [
+        "They assess applications and decide on offers for their department",
+        "They process loans",
+        "They run the library",
+        "They organise sports"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Admissions tutors assess academic suitability and decide on offers for their courses."
+    },
+    {
+      "id": "ucas-mc-0062",
+      "type": "multiple_choice",
+      "question": "If you are an international applicant, you must usually also show:",
+      "options": [
+        "Proof of English language proficiency (e.g. IELTS, TOEFL)",
+        "A UK driving licence",
+        "A UK National Insurance number at application",
+        "A UK passport"
+      ],
+      "correctAnswer": 0,
+      "explanation": "International applicants from non-English-speaking backgrounds usually need to evidence their English ability, often via IELTS or TOEFL."
+    },
+    {
+      "id": "ucas-mc-0063",
+      "type": "multiple_choice",
+      "question": "Which UK visa is used by most international students for full-time degree study?",
+      "options": [
+        "Student visa (formerly Tier 4)",
+        "Skilled Worker visa",
+        "Family visa",
+        "Visitor visa"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Most international students study on the UK Student visa (formerly Tier 4)."
+    },
+    {
+      "id": "ucas-mc-0064",
+      "type": "multiple_choice",
+      "question": "What is a CAS in the context of international UCAS applicants?",
+      "options": [
+        "Confirmation of Acceptance for Studies — issued by the university for visa purposes",
+        "A type of personal statement",
+        "A funding scheme",
+        "A reference letter"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The Confirmation of Acceptance for Studies (CAS) is issued by the university and required for the Student visa application."
+    },
+    {
+      "id": "ucas-mc-0065",
+      "type": "multiple_choice",
+      "question": "Roughly when do most A-level results come out in the UK?",
+      "options": [
+        "Mid-August",
+        "January",
+        "April",
+        "December"
+      ],
+      "correctAnswer": 0,
+      "explanation": "A-level results are typically released in mid-August."
+    },
+    {
+      "id": "ucas-mc-0066",
+      "type": "multiple_choice",
+      "question": "What happens on UCAS results day?",
+      "options": [
+        "Your UCAS Hub updates with confirmation of your place or invites you into Clearing",
+        "You receive an offer for the first time",
+        "You sit an extra exam",
+        "You receive your tuition fees"
+      ],
+      "correctAnswer": 0,
+      "explanation": "On results day your status updates: if you've met your offer conditions you'll be confirmed; if not you may enter Clearing."
+    },
+    {
+      "id": "ucas-mc-0067",
+      "type": "multiple_choice",
+      "question": "Which of these is NOT a typical reason to use Clearing?",
+      "options": [
+        "You missed your offer conditions",
+        "You changed your mind about your course",
+        "You applied late (after 30 June)",
+        "You wanted to upgrade to a higher-ranked university without conditions"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Clearing isn't generally used to 'upgrade' to a higher-ranked university — that's a different process (formerly called Adjustment / self-release into Clearing)."
+    },
+    {
+      "id": "ucas-mc-0068",
+      "type": "multiple_choice",
+      "question": "'Self-release' into Clearing means:",
+      "options": [
+        "You decline your firm offer to enter Clearing and look for a different course",
+        "You release your data publicly",
+        "You pay extra fees",
+        "You re-take A-levels"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Self-release lets you decline your existing firm place to search Clearing for a different course."
+    },
+    {
+      "id": "ucas-mc-0069",
+      "type": "multiple_choice",
+      "question": "Which of the following counts as a strong opening for a personal statement?",
+      "options": [
+        "A famous quotation copied without context",
+        "A specific reason or experience that drew you to the subject",
+        "A complaint about your school",
+        "A joke unrelated to the course"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A strong opening focuses on your genuine interest in the subject and is specific and original."
+    },
+    {
+      "id": "ucas-mc-0070",
+      "type": "multiple_choice",
+      "question": "How should work experience be presented in a personal statement?",
+      "options": [
+        "With reflection on what you learned and how it links to the course",
+        "Just listed with dates",
+        "Translated into another language",
+        "As an attachment"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Universities want reflection: what you learned and how it shaped your interest, not just a list."
+    },
+    {
+      "id": "ucas-mc-0071",
+      "type": "multiple_choice",
+      "question": "Which of these is good practice in writing about an extracurricular activity?",
+      "options": [
+        "Briefly link it to relevant skills (teamwork, leadership, communication)",
+        "Spend half the statement on it",
+        "Don't mention it at all",
+        "Pretend you led something you didn't"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Extracurriculars should be relevant and concise, focusing on transferable skills."
+    },
+    {
+      "id": "ucas-mc-0072",
+      "type": "multiple_choice",
+      "question": "Which is true about Oxford and Cambridge interviews?",
+      "options": [
+        "Both universities use interviews as part of their selection for most courses",
+        "Neither interviews applicants",
+        "Only Cambridge interviews",
+        "Interviews are optional and rare"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Both Oxford and Cambridge interview most shortlisted applicants as a key part of selection."
+    },
+    {
+      "id": "ucas-mc-0073",
+      "type": "multiple_choice",
+      "question": "Which UCAS service is for music, dance and drama performance courses at conservatoires?",
+      "options": [
+        "UCAS Conservatoires",
+        "UCAS Postgraduate",
+        "UCAS Apprenticeships",
+        "UCAS Hub Pro"
+      ],
+      "correctAnswer": 0,
+      "explanation": "UCAS Conservatoires is a separate service for performance-based conservatoire courses."
+    },
+    {
+      "id": "ucas-mc-0074",
+      "type": "multiple_choice",
+      "question": "Which one of these does UCAS NOT directly handle?",
+      "options": [
+        "Most UK undergraduate applications",
+        "Conservatoires applications",
+        "Some teacher training applications",
+        "Most postgraduate Master's applications"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Most taught postgraduate Master's applications are made directly to universities, not via UCAS."
+    },
+    {
+      "id": "ucas-mc-0075",
+      "type": "multiple_choice",
+      "question": "Which service handles teacher training applications in England?",
+      "options": [
+        "DfE's Apply for teacher training (via UCAS or gov.uk)",
+        "Only UCAS Undergraduate",
+        "Only Student Finance England",
+        "Only HMRC"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Teacher training applications in England are made through the DfE's Apply service, which works alongside UCAS."
+    },
+    {
+      "id": "ucas-mc-0076",
+      "type": "multiple_choice",
+      "question": "If you receive no offers from your 5 choices, what should you do first?",
+      "options": [
+        "Immediately panic",
+        "Use UCAS Extra to add another course one at a time",
+        "Quit applying altogether",
+        "Sit a new A-level"
+      ],
+      "correctAnswer": 1,
+      "explanation": "If you have no offers, UCAS Extra lets you add additional choices for free, one at a time."
+    },
+    {
+      "id": "ucas-mc-0077",
+      "type": "multiple_choice",
+      "question": "If you accept a firm offer and meet the conditions, what happens?",
+      "options": [
+        "Your place is confirmed and your insurance is automatically declined",
+        "You must accept both firm and insurance offers",
+        "You lose your place",
+        "You restart the application"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Meeting your firm offer's conditions confirms your place and automatically releases your insurance offer."
+    },
+    {
+      "id": "ucas-mc-0078",
+      "type": "multiple_choice",
+      "question": "If you meet your insurance offer but miss your firm one, what is most likely?",
+      "options": [
+        "Your insurance offer becomes your confirmed place (if conditions met)",
+        "Both offers are cancelled",
+        "You lose your application",
+        "You are charged a fee"
+      ],
+      "correctAnswer": 0,
+      "explanation": "If you miss your firm offer but meet the insurance conditions, the insurance offer becomes your confirmed place."
+    },
+    {
+      "id": "ucas-mc-0079",
+      "type": "multiple_choice",
+      "question": "Which of these is true about scholarships and bursaries?",
+      "options": [
+        "They are offered by individual universities and may need a separate application",
+        "They are all automatically awarded by UCAS",
+        "Only international students can apply",
+        "They replace your tuition fees in full for everyone"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Scholarships and bursaries are awarded by universities and often need separate applications and eligibility criteria."
+    },
+    {
+      "id": "ucas-mc-0080",
+      "type": "multiple_choice",
+      "question": "Which year of UCAS Undergraduate study is usually the first full year?",
+      "options": [
+        "Year 0",
+        "Year 1",
+        "Year 2",
+        "Year 3"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Year 1 is usually the first full year of study; Year 0 is a foundation year if needed."
+    },
+    {
+      "id": "ucas-mc-0081",
+      "type": "multiple_choice",
+      "question": "Which of the following is a key piece of advice for choosing 5 UCAS courses?",
+      "options": [
+        "Pick courses with a mix of entry requirements — some aspirational, some safer",
+        "Pick the 5 highest-ranked universities only",
+        "Pick courses you have no interest in for variety",
+        "Pick all the same university"
+      ],
+      "correctAnswer": 0,
+      "explanation": "A balanced list usually has aspirational and more realistic choices so you have options regardless of results."
+    },
+    {
+      "id": "ucas-mc-0082",
+      "type": "multiple_choice",
+      "question": "'Contextual offers' usually means:",
+      "options": [
+        "Offers that take into account a student's background and circumstances",
+        "Offers based on context-free testing",
+        "Offers that have no context",
+        "Offers only made on results day"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Contextual offers may lower or adjust entry requirements based on factors like school performance or socioeconomic background."
+    },
+    {
+      "id": "ucas-mc-0083",
+      "type": "multiple_choice",
+      "question": "Which of these is a Russell Group university?",
+      "options": [
+        "University of Manchester",
+        "There is no such group",
+        "Only Oxford and Cambridge",
+        "Only universities in London"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The Russell Group is an association of 24 leading UK research-intensive universities — for example, the University of Manchester."
+    },
+    {
+      "id": "ucas-mc-0084",
+      "type": "multiple_choice",
+      "question": "What does 'AAB' typically mean in an A-level offer?",
+      "options": [
+        "Two A grades and one B grade across three A-levels",
+        "All A grades",
+        "Three B grades",
+        "Only Maths grades"
+      ],
+      "correctAnswer": 0,
+      "explanation": "An AAB offer requires two A grades and one B in your three A-levels (or equivalent)."
+    },
+    {
+      "id": "ucas-mc-0085",
+      "type": "multiple_choice",
+      "question": "Which is a normal step BEFORE submitting a UCAS Undergraduate application?",
+      "options": [
+        "Researching courses and entry requirements",
+        "Choosing your firm offer",
+        "Applying via Clearing",
+        "Sending original certificates"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Researching courses, entry requirements and university fit comes before you actually apply."
+    },
+    {
+      "id": "ucas-mc-0086",
+      "type": "multiple_choice",
+      "question": "Which of these is NOT typically required when applying via UCAS Undergraduate?",
+      "options": [
+        "Personal statement",
+        "Reference",
+        "Course choices",
+        "Bank statements for the year"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Bank statements aren't part of a UCAS Undergraduate application; finance/visa processes handle those separately."
+    },
+    {
+      "id": "ucas-mc-0087",
+      "type": "multiple_choice",
+      "question": "If a course says 'subject to interview' on UCAS, what does this mean?",
+      "options": [
+        "You may need to attend an interview before an offer is made",
+        "Interviews are not allowed",
+        "You'll get an offer with no interview",
+        "You must attend before applying"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Some courses require an interview as part of the decision-making process."
+    },
+    {
+      "id": "ucas-mc-0088",
+      "type": "multiple_choice",
+      "question": "Which is true about portfolios for art and design courses?",
+      "options": [
+        "You usually need to submit a portfolio in addition to the UCAS application",
+        "Portfolios are never required",
+        "Portfolios are submitted only on results day",
+        "Portfolios are written in the personal statement"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Most art and design courses require a portfolio submitted directly to the university."
+    },
+    {
+      "id": "ucas-mc-0089",
+      "type": "multiple_choice",
+      "question": "Which is true about UCAS personal statement formatting?",
+      "options": [
+        "Bold, italics and bullet points are not preserved",
+        "Bold and italic formatting are preserved",
+        "You can attach images",
+        "Hyperlinks are allowed"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Special formatting (bold, italics, bullets) and images/links aren't preserved in the UCAS personal statement."
+    },
+    {
+      "id": "ucas-mc-0090",
+      "type": "multiple_choice",
+      "question": "Which fact about UCAS deadlines is true?",
+      "options": [
+        "After 29 January, universities can still consider applications but have no obligation to",
+        "After 29 January, all applications are rejected",
+        "After 29 January, the system is closed",
+        "After 29 January, you must apply on paper"
+      ],
+      "correctAnswer": 0,
+      "explanation": "After the equal-consideration deadline, universities can still consider late applications but are not required to."
+    },
+    {
+      "id": "ucas-mc-0091",
+      "type": "multiple_choice",
+      "question": "Which is true about taking a year out to retake A-levels?",
+      "options": [
+        "You can reapply via UCAS for the next cycle with new predicted/achieved grades",
+        "You can't reapply if you've already applied",
+        "You must apply through Clearing only",
+        "You must wait two years"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Resitters can reapply via UCAS the next cycle with their updated grades and a fresh application."
+    },
+    {
+      "id": "ucas-mc-0092",
+      "type": "multiple_choice",
+      "question": "Which is true about UCAS reference grades?",
+      "options": [
+        "The reference may include predicted grades and supporting comments",
+        "References never mention grades",
+        "Only employers can give grades",
+        "Predicted grades are illegal"
+      ],
+      "correctAnswer": 0,
+      "explanation": "References usually include predicted grades and context on the student's strengths and circumstances."
+    },
+    {
+      "id": "ucas-mc-0093",
+      "type": "multiple_choice",
+      "question": "Which is NOT a valid use of the UCAS personal statement?",
+      "options": [
+        "Showing motivation for the subject",
+        "Demonstrating relevant skills and experience",
+        "Listing every GCSE grade in detail",
+        "Reflecting on wider reading or work experience"
+      ],
+      "correctAnswer": 2,
+      "explanation": "GCSE grades belong in the qualifications section, not the personal statement."
+    },
+    {
+      "id": "ucas-mc-0094",
+      "type": "multiple_choice",
+      "question": "Which is good advice for the structure of a personal statement?",
+      "options": [
+        "Use the bulk of it to focus on academic interests and relevant skills",
+        "Make it 50% about hobbies",
+        "Spend half the statement on family",
+        "Use only quotations"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Most admissions teams want to see your academic motivation and relevant skills, with extracurriculars supporting rather than dominating."
+    },
+    {
+      "id": "ucas-mc-0095",
+      "type": "multiple_choice",
+      "question": "Which of these is typically true about Oxbridge applications?",
+      "options": [
+        "You must apply by 15 October and may face additional tests and interviews",
+        "The same deadlines as all other universities apply",
+        "No personal statement is required",
+        "Application is purely random"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Oxbridge has an earlier 15 October deadline and usually requires admissions tests and interviews."
+    },
+    {
+      "id": "ucas-mc-0096",
+      "type": "multiple_choice",
+      "question": "Why is it important to read each university's specific entry requirements?",
+      "options": [
+        "Requirements vary by course and may include subject prerequisites and minimum grades",
+        "All universities have identical requirements",
+        "They are decided at random",
+        "Only the personal statement matters"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Entry requirements vary widely between courses and universities, including required subjects, grades and tests."
+    },
+    {
+      "id": "ucas-mc-0097",
+      "type": "multiple_choice",
+      "question": "Which is true about 'minimum entry requirements' vs 'typical offers'?",
+      "options": [
+        "Minimum requirements are the lowest UCAS will list; typical offers may be higher in practice",
+        "They are always identical",
+        "Minimum requirements are stricter than typical offers",
+        "Typical offers don't exist"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Minimum requirements are baseline; typical or 'standard' offers can be higher depending on demand and selection."
+    },
+    {
+      "id": "ucas-mc-0098",
+      "type": "multiple_choice",
+      "question": "Which is good practice when researching universities?",
+      "options": [
+        "Visit open days, read course content, and check accommodation and city info",
+        "Pick based on logo only",
+        "Choose based on weather only",
+        "Rely on a friend's opinion alone"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Thorough research includes course content, teaching style, facilities, location and student life."
+    },
+    {
+      "id": "ucas-mc-0099",
+      "type": "multiple_choice",
+      "question": "Which is true about UCAS Conservatoires deadlines?",
+      "options": [
+        "They have their own earlier deadlines for many performance courses",
+        "They share the same deadlines as UCAS Undergraduate",
+        "They have no deadlines",
+        "They follow the postgraduate cycle"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Conservatoires applications often have earlier, course-specific deadlines."
+    },
+    {
+      "id": "ucas-mc-0100",
+      "type": "multiple_choice",
+      "question": "Which is true about the use of AI tools in writing a personal statement?",
+      "options": [
+        "UCAS guidance discourages copying AI-generated statements; similarity software may flag them",
+        "AI-written statements are encouraged",
+        "UCAS automatically writes them for you",
+        "There are no rules about it"
+      ],
+      "correctAnswer": 0,
+      "explanation": "UCAS guidance is that personal statements should be your own work; AI-generated content may trigger similarity flags."
+    },
+    {
+      "id": "ucas-mc-0101",
+      "type": "multiple_choice",
+      "question": "Which of these is true about the new UCAS personal statement format being introduced (recent updates)?",
+      "options": [
+        "UCAS has been moving to a structured set of questions instead of one open essay for some cycles",
+        "It will be removed entirely",
+        "It is being doubled to 8,000 characters",
+        "It now requires video"
+      ],
+      "correctAnswer": 0,
+      "explanation": "UCAS has announced structured personal statement formats with set questions to replace the single open essay for some cycles."
+    },
+    {
+      "id": "ucas-mc-0102",
+      "type": "multiple_choice",
+      "question": "Which body sets tuition fee caps for English universities for home undergraduate students?",
+      "options": [
+        "The UK Government / Office for Students",
+        "UCAS",
+        "Each university independently with no cap",
+        "The European Union"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The UK Government sets tuition fee caps for home undergraduates in England via legislation; the Office for Students regulates."
+    },
+    {
+      "id": "ucas-mc-0103",
+      "type": "multiple_choice",
+      "question": "What is the current standard tuition fee cap for English home undergraduates (approximate)?",
+      "options": [
+        "£0",
+        "Around £9,250 per year",
+        "Around £20,000 per year",
+        "Around £40,000 per year"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The standard tuition fee cap for English home undergraduates is around £9,250 per year (check current year)."
+    },
+    {
+      "id": "ucas-mc-0104",
+      "type": "multiple_choice",
+      "question": "Which student loan covers tuition fees for English students?",
+      "options": [
+        "Tuition Fee Loan from Student Finance England",
+        "Personal bank loan only",
+        "UCAS loan",
+        "EU bursary"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Student Finance England provides Tuition Fee Loans paid directly to the university."
+    },
+    {
+      "id": "ucas-mc-0105",
+      "type": "multiple_choice",
+      "question": "Which loan helps with living costs for English students?",
+      "options": [
+        "Maintenance Loan",
+        "Tuition Fee Loan",
+        "UCAS Tariff Loan",
+        "Bursary Loan"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The Maintenance Loan helps cover living costs (rent, food, travel) for English students."
+    },
+    {
+      "id": "ucas-mc-0106",
+      "type": "multiple_choice",
+      "question": "Which is true about Maintenance Loans?",
+      "options": [
+        "Amount depends on household income and where you study (e.g. London)",
+        "Same for everyone",
+        "Only for international students",
+        "Not means-tested"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Maintenance Loans are means-tested and vary by location (London, elsewhere, parental home)."
+    },
+    {
+      "id": "ucas-mc-0107",
+      "type": "multiple_choice",
+      "question": "When do you usually start repaying English student loans?",
+      "options": [
+        "The April after you graduate, once income is above a threshold",
+        "Immediately during study",
+        "Never",
+        "Only after age 60"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Repayments start the April after you graduate or leave the course, only when your income is above the threshold."
+    },
+    {
+      "id": "ucas-mc-0108",
+      "type": "multiple_choice",
+      "question": "Which of these is true about international (non-UK) student tuition fees?",
+      "options": [
+        "They are usually higher than home student fees and not capped by UK law",
+        "They are always free",
+        "They are always lower than home fees",
+        "They are set by UCAS"
+      ],
+      "correctAnswer": 0,
+      "explanation": "International fees are usually higher and not subject to UK home-fee caps."
+    },
+    {
+      "id": "ucas-mc-0109",
+      "type": "multiple_choice",
+      "question": "Which of these best describes 'Office for Students' (OfS)?",
+      "options": [
+        "The independent regulator of higher education in England",
+        "An admissions service",
+        "A student union",
+        "A loan provider"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The OfS regulates English higher education providers, including quality and access."
+    },
+    {
+      "id": "ucas-mc-0110",
+      "type": "multiple_choice",
+      "question": "Which of these would typically be a sensible 'insurance' choice?",
+      "options": [
+        "A course with slightly lower entry requirements than your firm choice",
+        "A course at the same offer as your firm choice",
+        "A course you have no interest in",
+        "A course you have already declined"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Insurance choices are usually courses with lower entry requirements than your firm so you have a realistic backup."
+    },
+    {
+      "id": "ucas-mc-0111",
+      "type": "multiple_choice",
+      "question": "Which of these is the best summary of the UCAS journey?",
+      "options": [
+        "Research → Apply (with personal statement and reference) → Receive decisions → Reply (firm/insurance) → Results → Confirmation/Clearing",
+        "Apply → Pay → Choose graduation hat",
+        "Sit exams → Apply later → Wait",
+        "Get a job first → Apply later"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The standard journey is research, apply with personal statement and reference, receive decisions, reply, and confirm on results day or use Clearing."
+    },
+    {
+      "id": "ucas-mc-0112",
+      "type": "multiple_choice",
+      "question": "Which is true about disabled applicants and UCAS?",
+      "options": [
+        "You can declare a disability on your application to access reasonable adjustments and DSA",
+        "You can't declare a disability",
+        "Disclosing means automatic rejection",
+        "Only physical disabilities are recognised"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Declaring a disability lets universities arrange reasonable adjustments and helps you access Disabled Students' Allowance (DSA)."
+    },
+    {
+      "id": "ucas-mc-0113",
+      "type": "multiple_choice",
+      "question": "What is DSA?",
+      "options": [
+        "Disabled Students' Allowance — extra support for students with disabilities",
+        "Degree Studies Allowance",
+        "Domestic Student Award",
+        "Department of Student Affairs"
+      ],
+      "correctAnswer": 0,
+      "explanation": "DSA = Disabled Students' Allowance, providing extra support for eligible students."
+    },
+    {
+      "id": "ucas-mc-0114",
+      "type": "multiple_choice",
+      "question": "Which is true about care-experienced applicants?",
+      "options": [
+        "UCAS lets you flag care-experienced status so universities can offer extra support",
+        "There is no support available",
+        "Care-experienced applicants are not allowed to apply",
+        "They must apply on paper"
+      ],
+      "correctAnswer": 0,
+      "explanation": "UCAS has a tick-box for care-experienced applicants so universities can offer targeted support like bursaries and accommodation guarantees."
+    },
+    {
+      "id": "ucas-mc-0115",
+      "type": "multiple_choice",
+      "question": "Which is true about applying to multiple courses at the same university?",
+      "options": [
+        "You can usually apply to more than one course at the same university (within your 5 choices)",
+        "Never allowed",
+        "Only one course per university is ever allowed",
+        "Only via Extra"
+      ],
+      "correctAnswer": 0,
+      "explanation": "You can normally apply for multiple courses at the same university within your 5-choice allocation."
+    },
+    {
+      "id": "ucas-mc-0116",
+      "type": "multiple_choice",
+      "question": "Which is true about combined / joint honours degrees on UCAS?",
+      "options": [
+        "They appear as a single course choice",
+        "They use 2 of your 5 choices",
+        "They are illegal",
+        "They are postgraduate only"
+      ],
+      "correctAnswer": 0,
+      "explanation": "A joint honours degree is one course choice on UCAS, even though you study two subjects."
+    },
+    {
+      "id": "ucas-mc-0117",
+      "type": "multiple_choice",
+      "question": "What is the UCAS 'Buzzword' used for?",
+      "options": [
+        "It identifies your school/college so the right reference is attached",
+        "It's a marketing slogan",
+        "It is a password for parents",
+        "It pays the application fee"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The buzzword is a code that links your application to your school or college so they can add the reference."
+    },
+    {
+      "id": "ucas-mc-0118",
+      "type": "multiple_choice",
+      "question": "Which is true about applying without a buzzword?",
+      "options": [
+        "You apply as an 'independent applicant' and arrange your own reference",
+        "You can't apply",
+        "UCAS gives one automatically",
+        "You must use someone else's"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Without a buzzword, you apply as an independent applicant and arrange your own reference."
+    },
+    {
+      "id": "ucas-mc-0119",
+      "type": "multiple_choice",
+      "question": "Which is true about replying to offers via the UCAS Hub?",
+      "options": [
+        "You typically choose one firm and (optionally) one insurance and decline the rest",
+        "You must accept all offers",
+        "You can hold three offers at once",
+        "You can defer all offers automatically"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Once all decisions are in, you choose one firm and (optionally) one insurance and decline the rest."
+    },
+    {
+      "id": "ucas-mc-0120",
+      "type": "multiple_choice",
+      "question": "Which is true about 'sandwich courses'?",
+      "options": [
+        "They include a year in industry as part of the degree",
+        "They are courses about food",
+        "They are part-time only",
+        "They are postgraduate"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Sandwich courses include a year (or longer) of work placement as part of the degree."
+    },
+    {
+      "id": "ucas-mc-0121",
+      "type": "multiple_choice",
+      "question": "Which is true about 'integrated Master's' degrees (e.g. MEng, MPhys)?",
+      "options": [
+        "They combine an undergraduate degree with a Master's-level final year, applied via UCAS Undergraduate",
+        "They are postgraduate-only",
+        "They cannot be applied to via UCAS",
+        "They are foundation years"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Integrated Master's degrees are 4-year undergraduate-entry programmes applied for via UCAS Undergraduate."
+    },
+    {
+      "id": "ucas-mc-0122",
+      "type": "multiple_choice",
+      "question": "Which is true about T Levels and UCAS?",
+      "options": [
+        "T Levels carry UCAS Tariff points and are accepted by many universities",
+        "T Levels are not recognised at all",
+        "T Levels are foreign qualifications",
+        "T Levels are only for apprenticeships"
+      ],
+      "correctAnswer": 0,
+      "explanation": "T Levels are technical post-16 qualifications that carry UCAS Tariff points and are accepted by many universities."
+    },
+    {
+      "id": "ucas-mc-0123",
+      "type": "multiple_choice",
+      "question": "Which is true about Access to HE Diplomas?",
+      "options": [
+        "They are designed for mature students to progress to university and carry UCAS Tariff points",
+        "They are GCSEs",
+        "They cannot be used for university entry",
+        "They are only for STEM"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Access to HE Diplomas help mature students access university and carry UCAS Tariff points."
+    },
+    {
+      "id": "ucas-mc-0124",
+      "type": "multiple_choice",
+      "question": "Which best describes 'transferring' to another university after starting?",
+      "options": [
+        "It's possible in some cases but you need to apply and discuss with both universities; not handled by UCAS Undergraduate as a transfer service",
+        "UCAS automatically transfers you",
+        "Transferring is impossible in the UK",
+        "Transferring requires re-applying via Clearing only"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Transfers are arranged directly with the new university (and sometimes the old one); UCAS Undergraduate isn't a transfer system."
+    },
+    {
+      "id": "ucas-mc-0125",
+      "type": "multiple_choice",
+      "question": "Which is the best description of UCAS overall?",
+      "options": [
+        "A central admissions service that streamlines UK university applications and matches applicants with courses and places",
+        "A loan provider",
+        "A subscription service for students",
+        "A government department"
+      ],
+      "correctAnswer": 0,
+      "explanation": "UCAS is a central admissions service used by most UK universities and colleges for undergraduate (and some other) applications."
+    }
+  ],
+  "mocks": [
+    {
+      "mockNumber": 1,
+      "title": "UCAS Application Knowledge Test 1",
+      "questionIds": [
+        "ucas-mc-0001",
+        "ucas-mc-0002",
+        "ucas-mc-0003",
+        "ucas-mc-0004",
+        "ucas-mc-0005",
+        "ucas-mc-0006",
+        "ucas-mc-0007",
+        "ucas-mc-0008",
+        "ucas-mc-0009",
+        "ucas-mc-0010",
+        "ucas-mc-0011",
+        "ucas-mc-0012",
+        "ucas-mc-0013",
+        "ucas-mc-0014",
+        "ucas-mc-0015",
+        "ucas-mc-0016",
+        "ucas-mc-0017",
+        "ucas-mc-0018",
+        "ucas-mc-0019",
+        "ucas-mc-0020",
+        "ucas-mc-0021",
+        "ucas-mc-0022",
+        "ucas-mc-0023",
+        "ucas-mc-0024"
+      ]
+    },
+    {
+      "mockNumber": 2,
+      "title": "UCAS Application Knowledge Test 2",
+      "questionIds": [
+        "ucas-mc-0025",
+        "ucas-mc-0026",
+        "ucas-mc-0027",
+        "ucas-mc-0028",
+        "ucas-mc-0029",
+        "ucas-mc-0030",
+        "ucas-mc-0031",
+        "ucas-mc-0032",
+        "ucas-mc-0033",
+        "ucas-mc-0034",
+        "ucas-mc-0035",
+        "ucas-mc-0036",
+        "ucas-mc-0037",
+        "ucas-mc-0038",
+        "ucas-mc-0039",
+        "ucas-mc-0040",
+        "ucas-mc-0041",
+        "ucas-mc-0042",
+        "ucas-mc-0043",
+        "ucas-mc-0044",
+        "ucas-mc-0045",
+        "ucas-mc-0046",
+        "ucas-mc-0047",
+        "ucas-mc-0048"
+      ]
+    },
+    {
+      "mockNumber": 3,
+      "title": "UCAS Application Knowledge Test 3",
+      "questionIds": [
+        "ucas-mc-0049",
+        "ucas-mc-0050",
+        "ucas-mc-0051",
+        "ucas-mc-0052",
+        "ucas-mc-0053",
+        "ucas-mc-0054",
+        "ucas-mc-0055",
+        "ucas-mc-0056",
+        "ucas-mc-0057",
+        "ucas-mc-0058",
+        "ucas-mc-0059",
+        "ucas-mc-0060",
+        "ucas-mc-0061",
+        "ucas-mc-0062",
+        "ucas-mc-0063",
+        "ucas-mc-0064",
+        "ucas-mc-0065",
+        "ucas-mc-0066",
+        "ucas-mc-0067",
+        "ucas-mc-0068",
+        "ucas-mc-0069",
+        "ucas-mc-0070",
+        "ucas-mc-0071",
+        "ucas-mc-0072"
+      ]
+    },
+    {
+      "mockNumber": 4,
+      "title": "UCAS Application Knowledge Test 4",
+      "questionIds": [
+        "ucas-mc-0073",
+        "ucas-mc-0074",
+        "ucas-mc-0075",
+        "ucas-mc-0076",
+        "ucas-mc-0077",
+        "ucas-mc-0078",
+        "ucas-mc-0079",
+        "ucas-mc-0080",
+        "ucas-mc-0081",
+        "ucas-mc-0082",
+        "ucas-mc-0083",
+        "ucas-mc-0084",
+        "ucas-mc-0085",
+        "ucas-mc-0086",
+        "ucas-mc-0087",
+        "ucas-mc-0088",
+        "ucas-mc-0089",
+        "ucas-mc-0090",
+        "ucas-mc-0091",
+        "ucas-mc-0092",
+        "ucas-mc-0093",
+        "ucas-mc-0094",
+        "ucas-mc-0095",
+        "ucas-mc-0096"
+      ]
+    },
+    {
+      "mockNumber": 5,
+      "title": "UCAS Application Knowledge Test 5",
+      "questionIds": [
+        "ucas-mc-0097",
+        "ucas-mc-0098",
+        "ucas-mc-0099",
+        "ucas-mc-0100",
+        "ucas-mc-0101",
+        "ucas-mc-0102",
+        "ucas-mc-0103",
+        "ucas-mc-0104",
+        "ucas-mc-0105",
+        "ucas-mc-0106",
+        "ucas-mc-0107",
+        "ucas-mc-0108",
+        "ucas-mc-0109",
+        "ucas-mc-0110",
+        "ucas-mc-0111",
+        "ucas-mc-0112",
+        "ucas-mc-0113",
+        "ucas-mc-0114",
+        "ucas-mc-0115",
+        "ucas-mc-0116",
+        "ucas-mc-0117",
+        "ucas-mc-0118",
+        "ucas-mc-0119",
+        "ucas-mc-0120"
+      ]
+    },
+    {
+      "mockNumber": 6,
+      "title": "UCAS Application Knowledge Test 6",
+      "questionIds": [
+        "ucas-mc-0121",
+        "ucas-mc-0122",
+        "ucas-mc-0123",
+        "ucas-mc-0124",
+        "ucas-mc-0125",
+        "ucas-mc-0001",
+        "ucas-mc-0002",
+        "ucas-mc-0003",
+        "ucas-mc-0004",
+        "ucas-mc-0005",
+        "ucas-mc-0006",
+        "ucas-mc-0007",
+        "ucas-mc-0008",
+        "ucas-mc-0009",
+        "ucas-mc-0010",
+        "ucas-mc-0011",
+        "ucas-mc-0012",
+        "ucas-mc-0013",
+        "ucas-mc-0014",
+        "ucas-mc-0015",
+        "ucas-mc-0016",
+        "ucas-mc-0017",
+        "ucas-mc-0018",
+        "ucas-mc-0019"
+      ]
+    },
+    {
+      "mockNumber": 7,
+      "title": "UCAS Application Knowledge Test 7",
+      "questionIds": [
+        "ucas-mc-0020",
+        "ucas-mc-0021",
+        "ucas-mc-0022",
+        "ucas-mc-0023",
+        "ucas-mc-0024",
+        "ucas-mc-0025",
+        "ucas-mc-0026",
+        "ucas-mc-0027",
+        "ucas-mc-0028",
+        "ucas-mc-0029",
+        "ucas-mc-0030",
+        "ucas-mc-0031",
+        "ucas-mc-0032",
+        "ucas-mc-0033",
+        "ucas-mc-0034",
+        "ucas-mc-0035",
+        "ucas-mc-0036",
+        "ucas-mc-0037",
+        "ucas-mc-0038",
+        "ucas-mc-0039",
+        "ucas-mc-0040",
+        "ucas-mc-0041",
+        "ucas-mc-0042",
+        "ucas-mc-0043"
+      ]
+    },
+    {
+      "mockNumber": 8,
+      "title": "UCAS Application Knowledge Test 8",
+      "questionIds": [
+        "ucas-mc-0044",
+        "ucas-mc-0045",
+        "ucas-mc-0046",
+        "ucas-mc-0047",
+        "ucas-mc-0048",
+        "ucas-mc-0049",
+        "ucas-mc-0050",
+        "ucas-mc-0051",
+        "ucas-mc-0052",
+        "ucas-mc-0053",
+        "ucas-mc-0054",
+        "ucas-mc-0055",
+        "ucas-mc-0056",
+        "ucas-mc-0057",
+        "ucas-mc-0058",
+        "ucas-mc-0059",
+        "ucas-mc-0060",
+        "ucas-mc-0061",
+        "ucas-mc-0062",
+        "ucas-mc-0063",
+        "ucas-mc-0064",
+        "ucas-mc-0065",
+        "ucas-mc-0066",
+        "ucas-mc-0067"
+      ]
+    },
+    {
+      "mockNumber": 9,
+      "title": "UCAS Application Knowledge Test 9",
+      "questionIds": [
+        "ucas-mc-0068",
+        "ucas-mc-0069",
+        "ucas-mc-0070",
+        "ucas-mc-0071",
+        "ucas-mc-0072",
+        "ucas-mc-0073",
+        "ucas-mc-0074",
+        "ucas-mc-0075",
+        "ucas-mc-0076",
+        "ucas-mc-0077",
+        "ucas-mc-0078",
+        "ucas-mc-0079",
+        "ucas-mc-0080",
+        "ucas-mc-0081",
+        "ucas-mc-0082",
+        "ucas-mc-0083",
+        "ucas-mc-0084",
+        "ucas-mc-0085",
+        "ucas-mc-0086",
+        "ucas-mc-0087",
+        "ucas-mc-0088",
+        "ucas-mc-0089",
+        "ucas-mc-0090",
+        "ucas-mc-0091"
+      ]
+    },
+    {
+      "mockNumber": 10,
+      "title": "UCAS Application Knowledge Test 10",
+      "questionIds": [
+        "ucas-mc-0092",
+        "ucas-mc-0093",
+        "ucas-mc-0094",
+        "ucas-mc-0095",
+        "ucas-mc-0096",
+        "ucas-mc-0097",
+        "ucas-mc-0098",
+        "ucas-mc-0099",
+        "ucas-mc-0100",
+        "ucas-mc-0101",
+        "ucas-mc-0102",
+        "ucas-mc-0103",
+        "ucas-mc-0104",
+        "ucas-mc-0105",
+        "ucas-mc-0106",
+        "ucas-mc-0107",
+        "ucas-mc-0108",
+        "ucas-mc-0109",
+        "ucas-mc-0110",
+        "ucas-mc-0111",
+        "ucas-mc-0112",
+        "ucas-mc-0113",
+        "ucas-mc-0114",
+        "ucas-mc-0115"
+      ]
+    },
+    {
+      "mockNumber": 11,
+      "title": "UCAS Application Knowledge Test 11",
+      "questionIds": [
+        "ucas-mc-0116",
+        "ucas-mc-0117",
+        "ucas-mc-0118",
+        "ucas-mc-0119",
+        "ucas-mc-0120",
+        "ucas-mc-0121",
+        "ucas-mc-0122",
+        "ucas-mc-0123",
+        "ucas-mc-0124",
+        "ucas-mc-0125",
+        "ucas-mc-0001",
+        "ucas-mc-0002",
+        "ucas-mc-0003",
+        "ucas-mc-0004",
+        "ucas-mc-0005",
+        "ucas-mc-0006",
+        "ucas-mc-0007",
+        "ucas-mc-0008",
+        "ucas-mc-0009",
+        "ucas-mc-0010",
+        "ucas-mc-0011",
+        "ucas-mc-0012",
+        "ucas-mc-0013",
+        "ucas-mc-0014"
+      ]
+    },
+    {
+      "mockNumber": 12,
+      "title": "UCAS Application Knowledge Test 12",
+      "questionIds": [
+        "ucas-mc-0015",
+        "ucas-mc-0016",
+        "ucas-mc-0017",
+        "ucas-mc-0018",
+        "ucas-mc-0019",
+        "ucas-mc-0020",
+        "ucas-mc-0021",
+        "ucas-mc-0022",
+        "ucas-mc-0023",
+        "ucas-mc-0024",
+        "ucas-mc-0025",
+        "ucas-mc-0026",
+        "ucas-mc-0027",
+        "ucas-mc-0028",
+        "ucas-mc-0029",
+        "ucas-mc-0030",
+        "ucas-mc-0031",
+        "ucas-mc-0032",
+        "ucas-mc-0033",
+        "ucas-mc-0034",
+        "ucas-mc-0035",
+        "ucas-mc-0036",
+        "ucas-mc-0037",
+        "ucas-mc-0038"
+      ]
+    },
+    {
+      "mockNumber": 13,
+      "title": "UCAS Application Knowledge Test 13",
+      "questionIds": [
+        "ucas-mc-0039",
+        "ucas-mc-0040",
+        "ucas-mc-0041",
+        "ucas-mc-0042",
+        "ucas-mc-0043",
+        "ucas-mc-0044",
+        "ucas-mc-0045",
+        "ucas-mc-0046",
+        "ucas-mc-0047",
+        "ucas-mc-0048",
+        "ucas-mc-0049",
+        "ucas-mc-0050",
+        "ucas-mc-0051",
+        "ucas-mc-0052",
+        "ucas-mc-0053",
+        "ucas-mc-0054",
+        "ucas-mc-0055",
+        "ucas-mc-0056",
+        "ucas-mc-0057",
+        "ucas-mc-0058",
+        "ucas-mc-0059",
+        "ucas-mc-0060",
+        "ucas-mc-0061",
+        "ucas-mc-0062"
+      ]
+    },
+    {
+      "mockNumber": 14,
+      "title": "UCAS Application Knowledge Test 14",
+      "questionIds": [
+        "ucas-mc-0063",
+        "ucas-mc-0064",
+        "ucas-mc-0065",
+        "ucas-mc-0066",
+        "ucas-mc-0067",
+        "ucas-mc-0068",
+        "ucas-mc-0069",
+        "ucas-mc-0070",
+        "ucas-mc-0071",
+        "ucas-mc-0072",
+        "ucas-mc-0073",
+        "ucas-mc-0074",
+        "ucas-mc-0075",
+        "ucas-mc-0076",
+        "ucas-mc-0077",
+        "ucas-mc-0078",
+        "ucas-mc-0079",
+        "ucas-mc-0080",
+        "ucas-mc-0081",
+        "ucas-mc-0082",
+        "ucas-mc-0083",
+        "ucas-mc-0084",
+        "ucas-mc-0085",
+        "ucas-mc-0086"
+      ]
+    },
+    {
+      "mockNumber": 15,
+      "title": "UCAS Application Knowledge Test 15",
+      "questionIds": [
+        "ucas-mc-0087",
+        "ucas-mc-0088",
+        "ucas-mc-0089",
+        "ucas-mc-0090",
+        "ucas-mc-0091",
+        "ucas-mc-0092",
+        "ucas-mc-0093",
+        "ucas-mc-0094",
+        "ucas-mc-0095",
+        "ucas-mc-0096",
+        "ucas-mc-0097",
+        "ucas-mc-0098",
+        "ucas-mc-0099",
+        "ucas-mc-0100",
+        "ucas-mc-0101",
+        "ucas-mc-0102",
+        "ucas-mc-0103",
+        "ucas-mc-0104",
+        "ucas-mc-0105",
+        "ucas-mc-0106",
+        "ucas-mc-0107",
+        "ucas-mc-0108",
+        "ucas-mc-0109",
+        "ucas-mc-0110"
+      ]
+    },
+    {
+      "mockNumber": 16,
+      "title": "UCAS Application Knowledge Test 16",
+      "questionIds": [
+        "ucas-mc-0111",
+        "ucas-mc-0112",
+        "ucas-mc-0113",
+        "ucas-mc-0114",
+        "ucas-mc-0115",
+        "ucas-mc-0116",
+        "ucas-mc-0117",
+        "ucas-mc-0118",
+        "ucas-mc-0119",
+        "ucas-mc-0120",
+        "ucas-mc-0121",
+        "ucas-mc-0122",
+        "ucas-mc-0123",
+        "ucas-mc-0124",
+        "ucas-mc-0125",
+        "ucas-mc-0001",
+        "ucas-mc-0002",
+        "ucas-mc-0003",
+        "ucas-mc-0004",
+        "ucas-mc-0005",
+        "ucas-mc-0006",
+        "ucas-mc-0007",
+        "ucas-mc-0008",
+        "ucas-mc-0009"
+      ]
+    },
+    {
+      "mockNumber": 17,
+      "title": "UCAS Application Knowledge Test 17",
+      "questionIds": [
+        "ucas-mc-0010",
+        "ucas-mc-0011",
+        "ucas-mc-0012",
+        "ucas-mc-0013",
+        "ucas-mc-0014",
+        "ucas-mc-0015",
+        "ucas-mc-0016",
+        "ucas-mc-0017",
+        "ucas-mc-0018",
+        "ucas-mc-0019",
+        "ucas-mc-0020",
+        "ucas-mc-0021",
+        "ucas-mc-0022",
+        "ucas-mc-0023",
+        "ucas-mc-0024",
+        "ucas-mc-0025",
+        "ucas-mc-0026",
+        "ucas-mc-0027",
+        "ucas-mc-0028",
+        "ucas-mc-0029",
+        "ucas-mc-0030",
+        "ucas-mc-0031",
+        "ucas-mc-0032",
+        "ucas-mc-0033"
+      ]
+    },
+    {
+      "mockNumber": 18,
+      "title": "UCAS Application Knowledge Test 18",
+      "questionIds": [
+        "ucas-mc-0034",
+        "ucas-mc-0035",
+        "ucas-mc-0036",
+        "ucas-mc-0037",
+        "ucas-mc-0038",
+        "ucas-mc-0039",
+        "ucas-mc-0040",
+        "ucas-mc-0041",
+        "ucas-mc-0042",
+        "ucas-mc-0043",
+        "ucas-mc-0044",
+        "ucas-mc-0045",
+        "ucas-mc-0046",
+        "ucas-mc-0047",
+        "ucas-mc-0048",
+        "ucas-mc-0049",
+        "ucas-mc-0050",
+        "ucas-mc-0051",
+        "ucas-mc-0052",
+        "ucas-mc-0053",
+        "ucas-mc-0054",
+        "ucas-mc-0055",
+        "ucas-mc-0056",
+        "ucas-mc-0057"
+      ]
+    },
+    {
+      "mockNumber": 19,
+      "title": "UCAS Application Knowledge Test 19",
+      "questionIds": [
+        "ucas-mc-0058",
+        "ucas-mc-0059",
+        "ucas-mc-0060",
+        "ucas-mc-0061",
+        "ucas-mc-0062",
+        "ucas-mc-0063",
+        "ucas-mc-0064",
+        "ucas-mc-0065",
+        "ucas-mc-0066",
+        "ucas-mc-0067",
+        "ucas-mc-0068",
+        "ucas-mc-0069",
+        "ucas-mc-0070",
+        "ucas-mc-0071",
+        "ucas-mc-0072",
+        "ucas-mc-0073",
+        "ucas-mc-0074",
+        "ucas-mc-0075",
+        "ucas-mc-0076",
+        "ucas-mc-0077",
+        "ucas-mc-0078",
+        "ucas-mc-0079",
+        "ucas-mc-0080",
+        "ucas-mc-0081"
+      ]
+    },
+    {
+      "mockNumber": 20,
+      "title": "UCAS Application Knowledge Test 20",
+      "questionIds": [
+        "ucas-mc-0082",
+        "ucas-mc-0083",
+        "ucas-mc-0084",
+        "ucas-mc-0085",
+        "ucas-mc-0086",
+        "ucas-mc-0087",
+        "ucas-mc-0088",
+        "ucas-mc-0089",
+        "ucas-mc-0090",
+        "ucas-mc-0091",
+        "ucas-mc-0092",
+        "ucas-mc-0093",
+        "ucas-mc-0094",
+        "ucas-mc-0095",
+        "ucas-mc-0096",
+        "ucas-mc-0097",
+        "ucas-mc-0098",
+        "ucas-mc-0099",
+        "ucas-mc-0100",
+        "ucas-mc-0101",
+        "ucas-mc-0102",
+        "ucas-mc-0103",
+        "ucas-mc-0104",
+        "ucas-mc-0105"
+      ]
+    },
+    {
+      "mockNumber": 21,
+      "title": "UCAS Application Knowledge Test 21",
+      "questionIds": [
+        "ucas-mc-0106",
+        "ucas-mc-0107",
+        "ucas-mc-0108",
+        "ucas-mc-0109",
+        "ucas-mc-0110",
+        "ucas-mc-0111",
+        "ucas-mc-0112",
+        "ucas-mc-0113",
+        "ucas-mc-0114",
+        "ucas-mc-0115",
+        "ucas-mc-0116",
+        "ucas-mc-0117",
+        "ucas-mc-0118",
+        "ucas-mc-0119",
+        "ucas-mc-0120",
+        "ucas-mc-0121",
+        "ucas-mc-0122",
+        "ucas-mc-0123",
+        "ucas-mc-0124",
+        "ucas-mc-0125",
+        "ucas-mc-0001",
+        "ucas-mc-0002",
+        "ucas-mc-0003",
+        "ucas-mc-0004"
+      ]
+    },
+    {
+      "mockNumber": 22,
+      "title": "UCAS Application Knowledge Test 22",
+      "questionIds": [
+        "ucas-mc-0005",
+        "ucas-mc-0006",
+        "ucas-mc-0007",
+        "ucas-mc-0008",
+        "ucas-mc-0009",
+        "ucas-mc-0010",
+        "ucas-mc-0011",
+        "ucas-mc-0012",
+        "ucas-mc-0013",
+        "ucas-mc-0014",
+        "ucas-mc-0015",
+        "ucas-mc-0016",
+        "ucas-mc-0017",
+        "ucas-mc-0018",
+        "ucas-mc-0019",
+        "ucas-mc-0020",
+        "ucas-mc-0021",
+        "ucas-mc-0022",
+        "ucas-mc-0023",
+        "ucas-mc-0024",
+        "ucas-mc-0025",
+        "ucas-mc-0026",
+        "ucas-mc-0027",
+        "ucas-mc-0028"
+      ]
+    },
+    {
+      "mockNumber": 23,
+      "title": "UCAS Application Knowledge Test 23",
+      "questionIds": [
+        "ucas-mc-0029",
+        "ucas-mc-0030",
+        "ucas-mc-0031",
+        "ucas-mc-0032",
+        "ucas-mc-0033",
+        "ucas-mc-0034",
+        "ucas-mc-0035",
+        "ucas-mc-0036",
+        "ucas-mc-0037",
+        "ucas-mc-0038",
+        "ucas-mc-0039",
+        "ucas-mc-0040",
+        "ucas-mc-0041",
+        "ucas-mc-0042",
+        "ucas-mc-0043",
+        "ucas-mc-0044",
+        "ucas-mc-0045",
+        "ucas-mc-0046",
+        "ucas-mc-0047",
+        "ucas-mc-0048",
+        "ucas-mc-0049",
+        "ucas-mc-0050",
+        "ucas-mc-0051",
+        "ucas-mc-0052"
+      ]
+    },
+    {
+      "mockNumber": 24,
+      "title": "UCAS Application Knowledge Test 24",
+      "questionIds": [
+        "ucas-mc-0053",
+        "ucas-mc-0054",
+        "ucas-mc-0055",
+        "ucas-mc-0056",
+        "ucas-mc-0057",
+        "ucas-mc-0058",
+        "ucas-mc-0059",
+        "ucas-mc-0060",
+        "ucas-mc-0061",
+        "ucas-mc-0062",
+        "ucas-mc-0063",
+        "ucas-mc-0064",
+        "ucas-mc-0065",
+        "ucas-mc-0066",
+        "ucas-mc-0067",
+        "ucas-mc-0068",
+        "ucas-mc-0069",
+        "ucas-mc-0070",
+        "ucas-mc-0071",
+        "ucas-mc-0072",
+        "ucas-mc-0073",
+        "ucas-mc-0074",
+        "ucas-mc-0075",
+        "ucas-mc-0076"
+      ]
+    },
+    {
+      "mockNumber": 25,
+      "title": "UCAS Application Knowledge Test 25",
+      "questionIds": [
+        "ucas-mc-0077",
+        "ucas-mc-0078",
+        "ucas-mc-0079",
+        "ucas-mc-0080",
+        "ucas-mc-0081",
+        "ucas-mc-0082",
+        "ucas-mc-0083",
+        "ucas-mc-0084",
+        "ucas-mc-0085",
+        "ucas-mc-0086",
+        "ucas-mc-0087",
+        "ucas-mc-0088",
+        "ucas-mc-0089",
+        "ucas-mc-0090",
+        "ucas-mc-0091",
+        "ucas-mc-0092",
+        "ucas-mc-0093",
+        "ucas-mc-0094",
+        "ucas-mc-0095",
+        "ucas-mc-0096",
+        "ucas-mc-0097",
+        "ucas-mc-0098",
+        "ucas-mc-0099",
+        "ucas-mc-0100"
+      ]
+    },
+    {
+      "mockNumber": 26,
+      "title": "UCAS Application Knowledge Test 26",
+      "questionIds": [
+        "ucas-mc-0101",
+        "ucas-mc-0102",
+        "ucas-mc-0103",
+        "ucas-mc-0104",
+        "ucas-mc-0105",
+        "ucas-mc-0106",
+        "ucas-mc-0107",
+        "ucas-mc-0108",
+        "ucas-mc-0109",
+        "ucas-mc-0110",
+        "ucas-mc-0111",
+        "ucas-mc-0112",
+        "ucas-mc-0113",
+        "ucas-mc-0114",
+        "ucas-mc-0115",
+        "ucas-mc-0116",
+        "ucas-mc-0117",
+        "ucas-mc-0118",
+        "ucas-mc-0119",
+        "ucas-mc-0120",
+        "ucas-mc-0121",
+        "ucas-mc-0122",
+        "ucas-mc-0123",
+        "ucas-mc-0124"
+      ]
+    },
+    {
+      "mockNumber": 27,
+      "title": "UCAS Application Knowledge Test 27",
+      "questionIds": [
+        "ucas-mc-0125",
+        "ucas-mc-0001",
+        "ucas-mc-0002",
+        "ucas-mc-0003",
+        "ucas-mc-0004",
+        "ucas-mc-0005",
+        "ucas-mc-0006",
+        "ucas-mc-0007",
+        "ucas-mc-0008",
+        "ucas-mc-0009",
+        "ucas-mc-0010",
+        "ucas-mc-0011",
+        "ucas-mc-0012",
+        "ucas-mc-0013",
+        "ucas-mc-0014",
+        "ucas-mc-0015",
+        "ucas-mc-0016",
+        "ucas-mc-0017",
+        "ucas-mc-0018",
+        "ucas-mc-0019",
+        "ucas-mc-0020",
+        "ucas-mc-0021",
+        "ucas-mc-0022",
+        "ucas-mc-0023"
+      ]
+    },
+    {
+      "mockNumber": 28,
+      "title": "UCAS Application Knowledge Test 28",
+      "questionIds": [
+        "ucas-mc-0024",
+        "ucas-mc-0025",
+        "ucas-mc-0026",
+        "ucas-mc-0027",
+        "ucas-mc-0028",
+        "ucas-mc-0029",
+        "ucas-mc-0030",
+        "ucas-mc-0031",
+        "ucas-mc-0032",
+        "ucas-mc-0033",
+        "ucas-mc-0034",
+        "ucas-mc-0035",
+        "ucas-mc-0036",
+        "ucas-mc-0037",
+        "ucas-mc-0038",
+        "ucas-mc-0039",
+        "ucas-mc-0040",
+        "ucas-mc-0041",
+        "ucas-mc-0042",
+        "ucas-mc-0043",
+        "ucas-mc-0044",
+        "ucas-mc-0045",
+        "ucas-mc-0046",
+        "ucas-mc-0047"
+      ]
+    },
+    {
+      "mockNumber": 29,
+      "title": "UCAS Application Knowledge Test 29",
+      "questionIds": [
+        "ucas-mc-0048",
+        "ucas-mc-0049",
+        "ucas-mc-0050",
+        "ucas-mc-0051",
+        "ucas-mc-0052",
+        "ucas-mc-0053",
+        "ucas-mc-0054",
+        "ucas-mc-0055",
+        "ucas-mc-0056",
+        "ucas-mc-0057",
+        "ucas-mc-0058",
+        "ucas-mc-0059",
+        "ucas-mc-0060",
+        "ucas-mc-0061",
+        "ucas-mc-0062",
+        "ucas-mc-0063",
+        "ucas-mc-0064",
+        "ucas-mc-0065",
+        "ucas-mc-0066",
+        "ucas-mc-0067",
+        "ucas-mc-0068",
+        "ucas-mc-0069",
+        "ucas-mc-0070",
+        "ucas-mc-0071"
+      ]
+    },
+    {
+      "mockNumber": 30,
+      "title": "UCAS Application Knowledge Test 30",
+      "questionIds": [
+        "ucas-mc-0072",
+        "ucas-mc-0073",
+        "ucas-mc-0074",
+        "ucas-mc-0075",
+        "ucas-mc-0076",
+        "ucas-mc-0077",
+        "ucas-mc-0078",
+        "ucas-mc-0079",
+        "ucas-mc-0080",
+        "ucas-mc-0081",
+        "ucas-mc-0082",
+        "ucas-mc-0083",
+        "ucas-mc-0084",
+        "ucas-mc-0085",
+        "ucas-mc-0086",
+        "ucas-mc-0087",
+        "ucas-mc-0088",
+        "ucas-mc-0089",
+        "ucas-mc-0090",
+        "ucas-mc-0091",
+        "ucas-mc-0092",
+        "ucas-mc-0093",
+        "ucas-mc-0094",
+        "ucas-mc-0095"
+      ]
+    },
+    {
+      "mockNumber": 31,
+      "title": "UCAS Application Knowledge Test 31",
+      "questionIds": [
+        "ucas-mc-0096",
+        "ucas-mc-0097",
+        "ucas-mc-0098",
+        "ucas-mc-0099",
+        "ucas-mc-0100",
+        "ucas-mc-0101",
+        "ucas-mc-0102",
+        "ucas-mc-0103",
+        "ucas-mc-0104",
+        "ucas-mc-0105",
+        "ucas-mc-0106",
+        "ucas-mc-0107",
+        "ucas-mc-0108",
+        "ucas-mc-0109",
+        "ucas-mc-0110",
+        "ucas-mc-0111",
+        "ucas-mc-0112",
+        "ucas-mc-0113",
+        "ucas-mc-0114",
+        "ucas-mc-0115",
+        "ucas-mc-0116",
+        "ucas-mc-0117",
+        "ucas-mc-0118",
+        "ucas-mc-0119"
+      ]
+    },
+    {
+      "mockNumber": 32,
+      "title": "UCAS Application Knowledge Test 32",
+      "questionIds": [
+        "ucas-mc-0120",
+        "ucas-mc-0121",
+        "ucas-mc-0122",
+        "ucas-mc-0123",
+        "ucas-mc-0124",
+        "ucas-mc-0125",
+        "ucas-mc-0001",
+        "ucas-mc-0002",
+        "ucas-mc-0003",
+        "ucas-mc-0004",
+        "ucas-mc-0005",
+        "ucas-mc-0006",
+        "ucas-mc-0007",
+        "ucas-mc-0008",
+        "ucas-mc-0009",
+        "ucas-mc-0010",
+        "ucas-mc-0011",
+        "ucas-mc-0012",
+        "ucas-mc-0013",
+        "ucas-mc-0014",
+        "ucas-mc-0015",
+        "ucas-mc-0016",
+        "ucas-mc-0017",
+        "ucas-mc-0018"
+      ]
+    },
+    {
+      "mockNumber": 33,
+      "title": "UCAS Application Knowledge Test 33",
+      "questionIds": [
+        "ucas-mc-0019",
+        "ucas-mc-0020",
+        "ucas-mc-0021",
+        "ucas-mc-0022",
+        "ucas-mc-0023",
+        "ucas-mc-0024",
+        "ucas-mc-0025",
+        "ucas-mc-0026",
+        "ucas-mc-0027",
+        "ucas-mc-0028",
+        "ucas-mc-0029",
+        "ucas-mc-0030",
+        "ucas-mc-0031",
+        "ucas-mc-0032",
+        "ucas-mc-0033",
+        "ucas-mc-0034",
+        "ucas-mc-0035",
+        "ucas-mc-0036",
+        "ucas-mc-0037",
+        "ucas-mc-0038",
+        "ucas-mc-0039",
+        "ucas-mc-0040",
+        "ucas-mc-0041",
+        "ucas-mc-0042"
+      ]
+    },
+    {
+      "mockNumber": 34,
+      "title": "UCAS Application Knowledge Test 34",
+      "questionIds": [
+        "ucas-mc-0043",
+        "ucas-mc-0044",
+        "ucas-mc-0045",
+        "ucas-mc-0046",
+        "ucas-mc-0047",
+        "ucas-mc-0048",
+        "ucas-mc-0049",
+        "ucas-mc-0050",
+        "ucas-mc-0051",
+        "ucas-mc-0052",
+        "ucas-mc-0053",
+        "ucas-mc-0054",
+        "ucas-mc-0055",
+        "ucas-mc-0056",
+        "ucas-mc-0057",
+        "ucas-mc-0058",
+        "ucas-mc-0059",
+        "ucas-mc-0060",
+        "ucas-mc-0061",
+        "ucas-mc-0062",
+        "ucas-mc-0063",
+        "ucas-mc-0064",
+        "ucas-mc-0065",
+        "ucas-mc-0066"
+      ]
+    },
+    {
+      "mockNumber": 35,
+      "title": "UCAS Application Knowledge Test 35",
+      "questionIds": [
+        "ucas-mc-0067",
+        "ucas-mc-0068",
+        "ucas-mc-0069",
+        "ucas-mc-0070",
+        "ucas-mc-0071",
+        "ucas-mc-0072",
+        "ucas-mc-0073",
+        "ucas-mc-0074",
+        "ucas-mc-0075",
+        "ucas-mc-0076",
+        "ucas-mc-0077",
+        "ucas-mc-0078",
+        "ucas-mc-0079",
+        "ucas-mc-0080",
+        "ucas-mc-0081",
+        "ucas-mc-0082",
+        "ucas-mc-0083",
+        "ucas-mc-0084",
+        "ucas-mc-0085",
+        "ucas-mc-0086",
+        "ucas-mc-0087",
+        "ucas-mc-0088",
+        "ucas-mc-0089",
+        "ucas-mc-0090"
+      ]
+    },
+    {
+      "mockNumber": 36,
+      "title": "UCAS Application Knowledge Test 36",
+      "questionIds": [
+        "ucas-mc-0091",
+        "ucas-mc-0092",
+        "ucas-mc-0093",
+        "ucas-mc-0094",
+        "ucas-mc-0095",
+        "ucas-mc-0096",
+        "ucas-mc-0097",
+        "ucas-mc-0098",
+        "ucas-mc-0099",
+        "ucas-mc-0100",
+        "ucas-mc-0101",
+        "ucas-mc-0102",
+        "ucas-mc-0103",
+        "ucas-mc-0104",
+        "ucas-mc-0105",
+        "ucas-mc-0106",
+        "ucas-mc-0107",
+        "ucas-mc-0108",
+        "ucas-mc-0109",
+        "ucas-mc-0110",
+        "ucas-mc-0111",
+        "ucas-mc-0112",
+        "ucas-mc-0113",
+        "ucas-mc-0114"
+      ]
+    },
+    {
+      "mockNumber": 37,
+      "title": "UCAS Application Knowledge Test 37",
+      "questionIds": [
+        "ucas-mc-0115",
+        "ucas-mc-0116",
+        "ucas-mc-0117",
+        "ucas-mc-0118",
+        "ucas-mc-0119",
+        "ucas-mc-0120",
+        "ucas-mc-0121",
+        "ucas-mc-0122",
+        "ucas-mc-0123",
+        "ucas-mc-0124",
+        "ucas-mc-0125",
+        "ucas-mc-0001",
+        "ucas-mc-0002",
+        "ucas-mc-0003",
+        "ucas-mc-0004",
+        "ucas-mc-0005",
+        "ucas-mc-0006",
+        "ucas-mc-0007",
+        "ucas-mc-0008",
+        "ucas-mc-0009",
+        "ucas-mc-0010",
+        "ucas-mc-0011",
+        "ucas-mc-0012",
+        "ucas-mc-0013"
+      ]
+    },
+    {
+      "mockNumber": 38,
+      "title": "UCAS Application Knowledge Test 38",
+      "questionIds": [
+        "ucas-mc-0014",
+        "ucas-mc-0015",
+        "ucas-mc-0016",
+        "ucas-mc-0017",
+        "ucas-mc-0018",
+        "ucas-mc-0019",
+        "ucas-mc-0020",
+        "ucas-mc-0021",
+        "ucas-mc-0022",
+        "ucas-mc-0023",
+        "ucas-mc-0024",
+        "ucas-mc-0025",
+        "ucas-mc-0026",
+        "ucas-mc-0027",
+        "ucas-mc-0028",
+        "ucas-mc-0029",
+        "ucas-mc-0030",
+        "ucas-mc-0031",
+        "ucas-mc-0032",
+        "ucas-mc-0033",
+        "ucas-mc-0034",
+        "ucas-mc-0035",
+        "ucas-mc-0036",
+        "ucas-mc-0037"
+      ]
+    },
+    {
+      "mockNumber": 39,
+      "title": "UCAS Application Knowledge Test 39",
+      "questionIds": [
+        "ucas-mc-0038",
+        "ucas-mc-0039",
+        "ucas-mc-0040",
+        "ucas-mc-0041",
+        "ucas-mc-0042",
+        "ucas-mc-0043",
+        "ucas-mc-0044",
+        "ucas-mc-0045",
+        "ucas-mc-0046",
+        "ucas-mc-0047",
+        "ucas-mc-0048",
+        "ucas-mc-0049",
+        "ucas-mc-0050",
+        "ucas-mc-0051",
+        "ucas-mc-0052",
+        "ucas-mc-0053",
+        "ucas-mc-0054",
+        "ucas-mc-0055",
+        "ucas-mc-0056",
+        "ucas-mc-0057",
+        "ucas-mc-0058",
+        "ucas-mc-0059",
+        "ucas-mc-0060",
+        "ucas-mc-0061"
+      ]
+    },
+    {
+      "mockNumber": 40,
+      "title": "UCAS Application Knowledge Test 40",
+      "questionIds": [
+        "ucas-mc-0062",
+        "ucas-mc-0063",
+        "ucas-mc-0064",
+        "ucas-mc-0065",
+        "ucas-mc-0066",
+        "ucas-mc-0067",
+        "ucas-mc-0068",
+        "ucas-mc-0069",
+        "ucas-mc-0070",
+        "ucas-mc-0071",
+        "ucas-mc-0072",
+        "ucas-mc-0073",
+        "ucas-mc-0074",
+        "ucas-mc-0075",
+        "ucas-mc-0076",
+        "ucas-mc-0077",
+        "ucas-mc-0078",
+        "ucas-mc-0079",
+        "ucas-mc-0080",
+        "ucas-mc-0081",
+        "ucas-mc-0082",
+        "ucas-mc-0083",
+        "ucas-mc-0084",
+        "ucas-mc-0085"
+      ]
+    },
+    {
+      "mockNumber": 41,
+      "title": "UCAS Application Knowledge Test 41",
+      "questionIds": [
+        "ucas-mc-0086",
+        "ucas-mc-0087",
+        "ucas-mc-0088",
+        "ucas-mc-0089",
+        "ucas-mc-0090",
+        "ucas-mc-0091",
+        "ucas-mc-0092",
+        "ucas-mc-0093",
+        "ucas-mc-0094",
+        "ucas-mc-0095",
+        "ucas-mc-0096",
+        "ucas-mc-0097",
+        "ucas-mc-0098",
+        "ucas-mc-0099",
+        "ucas-mc-0100",
+        "ucas-mc-0101",
+        "ucas-mc-0102",
+        "ucas-mc-0103",
+        "ucas-mc-0104",
+        "ucas-mc-0105",
+        "ucas-mc-0106",
+        "ucas-mc-0107",
+        "ucas-mc-0108",
+        "ucas-mc-0109"
+      ]
+    },
+    {
+      "mockNumber": 42,
+      "title": "UCAS Application Knowledge Test 42",
+      "questionIds": [
+        "ucas-mc-0110",
+        "ucas-mc-0111",
+        "ucas-mc-0112",
+        "ucas-mc-0113",
+        "ucas-mc-0114",
+        "ucas-mc-0115",
+        "ucas-mc-0116",
+        "ucas-mc-0117",
+        "ucas-mc-0118",
+        "ucas-mc-0119",
+        "ucas-mc-0120",
+        "ucas-mc-0121",
+        "ucas-mc-0122",
+        "ucas-mc-0123",
+        "ucas-mc-0124",
+        "ucas-mc-0125",
+        "ucas-mc-0001",
+        "ucas-mc-0002",
+        "ucas-mc-0003",
+        "ucas-mc-0004",
+        "ucas-mc-0005",
+        "ucas-mc-0006",
+        "ucas-mc-0007",
+        "ucas-mc-0008"
+      ]
+    },
+    {
+      "mockNumber": 43,
+      "title": "UCAS Application Knowledge Test 43",
+      "questionIds": [
+        "ucas-mc-0009",
+        "ucas-mc-0010",
+        "ucas-mc-0011",
+        "ucas-mc-0012",
+        "ucas-mc-0013",
+        "ucas-mc-0014",
+        "ucas-mc-0015",
+        "ucas-mc-0016",
+        "ucas-mc-0017",
+        "ucas-mc-0018",
+        "ucas-mc-0019",
+        "ucas-mc-0020",
+        "ucas-mc-0021",
+        "ucas-mc-0022",
+        "ucas-mc-0023",
+        "ucas-mc-0024",
+        "ucas-mc-0025",
+        "ucas-mc-0026",
+        "ucas-mc-0027",
+        "ucas-mc-0028",
+        "ucas-mc-0029",
+        "ucas-mc-0030",
+        "ucas-mc-0031",
+        "ucas-mc-0032"
+      ]
+    },
+    {
+      "mockNumber": 44,
+      "title": "UCAS Application Knowledge Test 44",
+      "questionIds": [
+        "ucas-mc-0033",
+        "ucas-mc-0034",
+        "ucas-mc-0035",
+        "ucas-mc-0036",
+        "ucas-mc-0037",
+        "ucas-mc-0038",
+        "ucas-mc-0039",
+        "ucas-mc-0040",
+        "ucas-mc-0041",
+        "ucas-mc-0042",
+        "ucas-mc-0043",
+        "ucas-mc-0044",
+        "ucas-mc-0045",
+        "ucas-mc-0046",
+        "ucas-mc-0047",
+        "ucas-mc-0048",
+        "ucas-mc-0049",
+        "ucas-mc-0050",
+        "ucas-mc-0051",
+        "ucas-mc-0052",
+        "ucas-mc-0053",
+        "ucas-mc-0054",
+        "ucas-mc-0055",
+        "ucas-mc-0056"
+      ]
+    },
+    {
+      "mockNumber": 45,
+      "title": "UCAS Application Knowledge Test 45",
+      "questionIds": [
+        "ucas-mc-0057",
+        "ucas-mc-0058",
+        "ucas-mc-0059",
+        "ucas-mc-0060",
+        "ucas-mc-0061",
+        "ucas-mc-0062",
+        "ucas-mc-0063",
+        "ucas-mc-0064",
+        "ucas-mc-0065",
+        "ucas-mc-0066",
+        "ucas-mc-0067",
+        "ucas-mc-0068",
+        "ucas-mc-0069",
+        "ucas-mc-0070",
+        "ucas-mc-0071",
+        "ucas-mc-0072",
+        "ucas-mc-0073",
+        "ucas-mc-0074",
+        "ucas-mc-0075",
+        "ucas-mc-0076",
+        "ucas-mc-0077",
+        "ucas-mc-0078",
+        "ucas-mc-0079",
+        "ucas-mc-0080"
+      ]
+    }
+  ]
+}
