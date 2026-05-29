@@ -1773,6 +1773,137 @@ export const topicSeo: Record<string, TopicSeo> = {
     "Microsoft",
     "the Microsoft AZ-900 Azure Fundamentals exam — cloud concepts, core Azure services, security, privacy, compliance, Azure pricing and SLAs for non-technical and entry-level candidates",
   ),
+  "ucas-application-knowledge": {
+    title: "UCAS Application Knowledge Test Guide | UK Test Hub",
+    description:
+      "Free study guide for the UCAS Application Knowledge Test. Deadlines, course choices, personal statements, references, offers, Clearing, student finance and 45 free mock papers.",
+    tagline:
+      "Everything you need to know about the UK UCAS application process before you submit.",
+    intro: [
+      "The UCAS Application Knowledge Test on UK Test Hub is a focused, exam-style way to make sure you understand every stage of the UK university application before you actually click 'submit'. UCAS — the Universities and Colleges Admissions Service — is the central body that processes almost every undergraduate application in the UK, and the rules around deadlines, course limits, personal statements, references and offers are surprisingly easy to get wrong. A single missed date or misunderstood term can cost you your firm choice, push you into Clearing or even invalidate your application altogether.",
+      "Each of our 45 mock papers contains 24 multiple-choice questions covering the full UCAS journey: the application timeline, course choices, personal statement rules, references, conditional and unconditional offers, replying via the UCAS Hub, Clearing, deferred entry, Tariff points, admissions tests (UCAT, LNAT, PAT, TMUA, ESAT), tuition fee caps and how Student Finance England, SAAS, Student Finance Wales and Student Finance NI actually work. Every question comes with a written explanation so you finish the mock knowing not just the right answer, but the reasoning behind it.",
+    ],
+    sections: [
+      {
+        heading: "What the UCAS Application Knowledge Test covers",
+        body: [
+          "The questions in this practice test mirror the kind of knowledge real applicants need: the UCAS application opens in May for the following autumn cycle, and you can begin submitting from early September. The headline deadlines are 15 October (Oxford, Cambridge and most medicine, dentistry and veterinary courses) and 29 January at 18:00 UK time (the equal-consideration deadline for almost every other course). After 30 June, your application automatically rolls into Clearing.",
+          "You can list up to five course choices on a standard application, with a maximum of four in medicine, dentistry or veterinary medicine/science. A single application fee covers all five choices, you can apply to multiple courses at the same university, but you generally cannot apply to both Oxford and Cambridge in the same cycle. These specific numbers, dates and limits make up around a quarter of the questions in our mocks, because admissions tutors expect you to know them cold.",
+        ],
+      },
+      {
+        heading: "Personal statement, reference and predicted grades",
+        body: [
+          "The personal statement is capped at 4,000 characters or 47 lines, whichever comes first. It is sent in identical form to every university you apply to, which is why generic statements rarely impress — admissions tutors at competitive courses read tens of thousands and can spot a template at a glance. UCAS has begun rolling out a structured set of questions in place of one open essay for some cycles, so always check the format for the year you are applying in.",
+          "Most school-leavers receive one reference from a teacher or tutor; independent applicants arrange their own from a professional who knows their academic ability or character — never a family member or friend. References usually include predicted grades, and even an unconditional offer doesn't make your final grades irrelevant: scholarships, alternative courses, postgraduate study and graduate employers all still care about what you actually achieved.",
+          "UCAS uses similarity-detection software on every personal statement. If it flags excessive overlap with another applicant or with AI-generated content, your chosen universities are notified — and that can sink an otherwise strong application. Write in your own words about your motivation, relevant reading, work or volunteering experience and the skills that make you ready for degree-level study.",
+        ],
+      },
+      {
+        heading: "Offers, replies and the firm / insurance system",
+        body: [
+          "Once your decisions are in, you reply through the UCAS Hub. You can hold at most one firm choice (the one you most want) and one insurance choice (a backup with lower entry requirements). Everything else is declined. UCAS sets a reply deadline once all your decisions arrive — miss it and the system declines your offers automatically.",
+          "A conditional offer depends on meeting specific exam results; an unconditional offer doesn't. If you meet your firm conditions on results day, that place is confirmed; if you miss them but meet your insurance, you go to your insurance. Miss both and you enter Clearing — the matching service that pairs applicants without a place to courses with vacancies. Clearing runs from early July until mid-October.",
+          "UCAS Extra is a separate service that lets you add one more course at a time, free of charge, if you have used all five choices and are not holding any offers. It runs in the spring between the January deadline and Clearing.",
+        ],
+      },
+      {
+        heading: "Tariff points, admissions tests and qualifications",
+        body: [
+          "The UCAS Tariff converts qualifications into points so universities can compare candidates across different exam systems. An A-level A* is worth 56 points, an A is 48, a B is 40 and so on. BTECs, T Levels, Scottish Highers, the International Baccalaureate, the Extended Project Qualification (EPQ) and Access to HE Diplomas all carry Tariff points, though not every university uses the Tariff — many list grade-specific entry requirements instead.",
+          "Selective courses add admissions tests on top. Most UK medical schools require the UCAT (University Clinical Aptitude Test). Several leading law schools require the LNAT (Law National Aptitude Test). Oxford Physics uses the PAT. Cambridge has moved a number of subjects to the TMUA and ESAT. International applicants from non-English-speaking backgrounds almost always need IELTS, TOEFL or an equivalent and a UK Student visa (formerly Tier 4) supported by a CAS (Confirmation of Acceptance for Studies) issued by their university.",
+        ],
+      },
+      {
+        heading: "Fees, finance and the wider application",
+        body: [
+          "For English-domiciled home students, tuition is currently capped at around £9,250 per year. Student Finance England provides Tuition Fee Loans paid directly to the university and means-tested Maintenance Loans for living costs, with higher amounts available for students studying in London or living away from the parental home. Repayments only begin in the April after you graduate, once your income passes the threshold for your loan plan.",
+          "Scottish students use SAAS (Student Awards Agency Scotland), Welsh students Student Finance Wales, and Northern Irish students Student Finance NI. International student fees are not capped and are set by individual universities.",
+          "Other practical details often missed: the UCAS Hub is where you do everything (apply, track decisions, accept/decline offers); the 'buzzword' links your application to your school or college so the reference attaches correctly; care-experienced and disabled applicants can declare their status to access targeted support, including Disabled Students' Allowance (DSA); and offer holder days let you visit campus once you have an offer to help you decide between your firm and insurance.",
+        ],
+      },
+      {
+        heading: "How to use these mocks to prepare",
+        body: [
+          "Treat the first mock as a baseline — score yourself honestly, then read every explanation before moving on. Most candidates lose marks on three areas: exact deadline dates, the difference between firm/insurance/Clearing/Extra, and the rules around personal statements and similarity detection. If those topics come up wrong, target them with two more mocks before tackling something new.",
+          "Aim to complete five to ten mocks before you start drafting your real UCAS application. By the time you open the UCAS Hub for real, the terminology should feel familiar, the timeline should be second nature, and you should be focused entirely on writing the strongest possible personal statement and choosing the right five courses — not on figuring out what 'deferred entry', 'CAS' or 'Adjustment' means.",
+        ],
+      },
+    ],
+    faqs: [
+      { q: "How many course choices can I make on UCAS?", a: "Up to five on a standard Undergraduate application, with a maximum of four in medicine, dentistry, veterinary medicine or veterinary science." },
+      { q: "What is the main UCAS deadline?", a: "29 January at 18:00 UK time for most courses (the equal-consideration deadline). 15 October applies to Oxford, Cambridge and most medicine, dentistry and veterinary courses." },
+      { q: "Can I apply to both Oxford and Cambridge?", a: "Generally no — in the same UCAS cycle you can apply to one or the other, with very limited exceptions (e.g. organ scholarships)." },
+      { q: "How long can the personal statement be?", a: "Up to 4,000 characters or 47 lines, whichever comes first. It is sent in identical form to every university you apply to." },
+      { q: "What is Clearing?", a: "A UCAS matching service that runs from early July to mid-October. It connects applicants without a place to courses with vacancies." },
+      { q: "What is the difference between a firm and insurance choice?", a: "Your firm is your first-choice offer that you want most. Your insurance is a backup, usually with lower entry requirements, in case you miss your firm's conditions." },
+      { q: "Is UK Test Hub affiliated with UCAS?", a: "No. UK Test Hub is independent. UCAS is a registered trademark of the Universities and Colleges Admissions Service. Our practice questions are not official UCAS materials." },
+    ],
+  },
+  "workplace-health-safety-awareness": {
+    title: "Workplace Health & Safety Awareness Test Guide | UK Test Hub",
+    description:
+      "Free study guide for the UK Workplace Health & Safety Awareness Test. HSWA 1974, risk assessment, RIDDOR, COSHH, PPE, manual handling, fire safety and 45 mock papers.",
+    tagline:
+      "Everything you need to know about UK workplace health and safety before you sit the test.",
+    intro: [
+      "A Workplace Health & Safety Awareness Test is the entry-level competency check most UK employers expect every new starter to pass — from offices and warehouses to construction sites, care homes and hospitality kitchens. It demonstrates that you understand the core legal framework set by the Health and Safety at Work etc. Act 1974, that you can recognise hazards and risks, and that you know what to do when something goes wrong. Passing it is rarely about memorising obscure detail; it is about showing that you genuinely think safely.",
+      "Each of our 45 free mock papers contains 24 multiple-choice questions drawn from the same syllabus that NEBOSH, IOSH, CITB, RoSPA and most online H&S awareness providers use. You will cover the Health and Safety at Work Act 1974, the Management of Health and Safety at Work Regulations 1999, RIDDOR, COSHH, PUWER, LOLER, manual handling, work at height, DSE, PPE, fire safety, first aid, asbestos, noise, vibration, electrical safety, confined spaces, lone working, workplace transport and the duties placed on employers, employees, contractors and the self-employed.",
+    ],
+    sections: [
+      {
+        heading: "The legal foundation: HSWA 1974 and key regulations",
+        body: [
+          "The Health and Safety at Work etc. Act 1974 (HSWA) is the umbrella piece of UK legislation that sits above almost every other H&S regulation. Section 2 places a duty on employers to ensure, so far as is reasonably practicable, the health, safety and welfare of their employees. Section 3 extends that duty to people who are not employees but might be affected — visitors, contractors, the public. Section 7 places a duty on every employee to take reasonable care for their own safety and that of others, and to cooperate with their employer. Both employers and employees can be prosecuted personally for serious breaches.",
+          "Underneath HSWA sit the regulations you will see again and again on the test: MHSWR 1999 (the management regulations that require risk assessment and competent persons), PUWER 1998 (work equipment), LOLER 1998 (lifting), the Manual Handling Operations Regulations 1992, the Work at Height Regulations 2005, COSHH 2002 (hazardous substances), RIDDOR 2013 (reporting), the Control of Noise at Work Regulations 2005, the Control of Vibration at Work Regulations 2005, the Regulatory Reform (Fire Safety) Order 2005 and the Health and Safety (First-Aid) Regulations 1981. You don't need to recite every section, but you should recognise what each one covers.",
+        ],
+      },
+      {
+        heading: "Hazards, risks and the hierarchy of control",
+        body: [
+          "A hazard is anything with the potential to cause harm — a trailing cable, a hot oven, a heavy box, a noisy machine, a flammable solvent. A risk is the likelihood that someone will actually be harmed combined with how serious the harm could be. A wet floor is a hazard; the risk depends on whether anyone walks across it, whether the area is signed, and whether they are carrying something or moving fast. Getting this distinction right is one of the most-tested concepts on the paper.",
+          "The HSE risk-assessment model has five steps: identify the hazards, decide who could be harmed and how, evaluate the risks and decide on controls, record the findings and implement them, and review when things change. Controls should be applied in order of effectiveness — the hierarchy of control. Eliminate the hazard if you can, substitute it with something safer, engineer controls (guards, extraction), put administrative controls in place (training, signs, safe systems of work) and only then rely on PPE. PPE is the last line of defence, not the first, and it must be provided free of charge by the employer.",
+        ],
+      },
+      {
+        heading: "Manual handling, work at height and DSE",
+        body: [
+          "The Manual Handling Operations Regulations 1992 follow a simple three-step approach: avoid the task if reasonably practicable, assess what cannot be avoided, then reduce the risk to the lowest reasonably practicable level. Lower-back injuries are the most common manual handling outcome, so technique matters: stable stance, bent knees, straight back, load close to the body, no twisting.",
+          "The Work at Height Regulations 2005 use the same logic — avoid, prevent, minimise. Falls from height remain one of the biggest causes of workplace fatalities, so any work above ground level needs planning, supervision and the right equipment. The DSE Regulations 1992 cover habitual computer users: short, frequent breaks away from the screen, suitable workstations and free eye tests on request.",
+        ],
+      },
+      {
+        heading: "Fire safety, first aid and emergency response",
+        body: [
+          "Fire needs three things — heat, fuel and oxygen — and removing any one will put it out. Different fires need different extinguishers: water on Class A solids, foam on flammable liquids, CO2 on electrical equipment, and wet chemical on cooking oils and fats. If you discover a fire, raise the alarm first, evacuate by the nearest safe exit, never use the lifts, and assemble at the designated point. Only tackle a small fire if you are trained, it is safe, and your escape is clear.",
+          "First aid arrangements are set by a workplace-specific needs assessment under the Health and Safety (First-Aid) Regulations 1981 — there is no fixed number of first aiders mandated by law. A standard first-aid kit contains plasters, sterile dressings, eye pads and disposable gloves but no medication. Adult CPR is delivered at 100 to 120 compressions per minute, an AED should be used as soon as available, and the recovery position is for an unconscious casualty who is still breathing normally. For anything life-threatening, dial 999 or 112 immediately.",
+        ],
+      },
+      {
+        heading: "Reporting, signs and the role of the HSE",
+        body: [
+          "RIDDOR 2013 — the Reporting of Injuries, Diseases and Dangerous Occurrences Regulations — requires specified injuries (such as fractures other than to fingers, thumbs or toes), over-7-day absences, dangerous occurrences and certain work-related diseases to be reported to the HSE without delay. The accident book records workplace injuries and, because the entries contain personal data, completed pages must be removed and stored securely under UK data protection law. Near misses — events that could have caused harm but didn't — should also be reported because they are a free early warning.",
+          "Safety signs follow a consistent visual language across the UK. Red circles with a diagonal bar mean prohibition (you must not). Blue circles mean mandatory (you must). Yellow triangles mean warning (be careful). Green rectangles mean safe condition (this way out, first aid here). The GHS / CLP pictograms on chemicals — flame, exclamation mark, skull, corrosion, health hazard — extend the same idea to substances.",
+          "The Health and Safety Executive (HSE) is the main GB regulator. Inspectors can enter premises without notice, take samples and require information. They can issue improvement notices, which set a deadline to fix a breach, or prohibition notices, which stop an activity immediately because it carries a risk of serious personal injury. Serious cases can lead to prosecution, unlimited fines and prison sentences for individuals.",
+        ],
+      },
+      {
+        heading: "How to pass the test first time",
+        body: [
+          "Start with one mock to see where you stand, then read every explanation — that is where the real learning happens. Pay particular attention to the things candidates routinely confuse: hazard vs risk, the order of the hierarchy of control, the difference between an improvement notice and a prohibition notice, who pays for PPE (always the employer), and which extinguisher goes on which fire. Two or three short sessions a week beats one long cram, and a final timed mock the day before the real test will confirm your pacing.",
+          "Above all, remember the message that runs through every UK H&S syllabus: health and safety is a shared responsibility. Employers must plan, assess and control. Employees must take reasonable care, cooperate, follow the safe system of work and report problems. Stop and ask if you don't know how to do a task safely — section 7 of HSWA explicitly requires it, and 'I wasn't sure' is never an acceptable answer after an accident.",
+        ],
+      },
+    ],
+    faqs: [
+      { q: "Which Act is the foundation of UK workplace health and safety law?", a: "The Health and Safety at Work etc. Act 1974 (HSWA) is the primary legislation; almost every other regulation sits underneath it." },
+      { q: "Who is responsible for workplace health and safety?", a: "Everyone. Employers have the primary duty under HSWA section 2 and section 3, but section 7 also requires employees to take reasonable care and cooperate." },
+      { q: "What does RIDDOR cover?", a: "Reporting of Injuries, Diseases and Dangerous Occurrences Regulations 2013 — specified injuries, over-7-day absences, certain work-related diseases and dangerous occurrences must be reported to HSE." },
+      { q: "Who pays for PPE at work?", a: "The employer, free of charge, under the PPE at Work Regulations 1992. PPE is the last line of defence in the hierarchy of control, not the first." },
+      { q: "What is the pass mark for the test?", a: "It varies by provider — most workplace H&S awareness tests use a pass mark of around 70 to 80 percent. Check with whoever is administering your sitting." },
+      { q: "Is UK Test Hub an accredited H&S training provider?", a: "No. UK Test Hub is an independent practice site. For accredited certificates, sit a course with an awarding body such as NEBOSH, IOSH, CITB or RoSPA. Our mocks are designed to help you prepare." },
+    ],
+  },
 };
 
 export const getTopicSeo = (slug: string): TopicSeo | undefined =>
