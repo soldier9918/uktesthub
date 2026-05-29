@@ -81,13 +81,10 @@ export const Route = createFileRoute("/quiz/$slug")({
     let description: string;
     if (mockMatch && found) {
       const n = mockMatch[1];
-      const topicTitle = found.topic.title;
-      const withSuffix = `${topicTitle} Mock Test ${n} | UK Test Hub`;
-      title =
-        withSuffix.length <= 60
-          ? withSuffix
-          : `${topicTitle} Mock Test ${n}`;
-      description = `Practise ${topicTitle} Mock Test ${n} with 24 questions, instant results and clear answer explanations.`;
+      const mockTitle = `${found.topic.title.replace(/\s+test$/i, "").trim()} Mock Test ${n}`;
+      const withSuffix = `${mockTitle} | UK Test Hub`;
+      title = withSuffix.length <= 60 ? withSuffix : mockTitle;
+      description = `Practise ${mockTitle} with 24 questions, instant results and clear answer explanations.`;
     } else if (q) {
       const withSuffix = `${q.quizTitle} | UK Test Hub`;
       title = withSuffix.length <= 60 ? withSuffix : q.quizTitle;
