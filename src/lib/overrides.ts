@@ -109,6 +109,16 @@ export function applyOverrideToQuestionRecord<T extends Record<string, unknown>>
 }
 
 export function applyOverrides<T extends AnyQuiz>(quiz: T, map: Map<string, QuestionOverride>): T {
+  // Road Signs image questions have hand-reviewed static image/question pairings.
+  // Do not apply saved overrides here, because old admin overrides can swap the
+  // image, text, or answer independently and break those fixed pairings again.
+  if (quiz.topic === "road-signs") {
+    return {
+      ...quiz,
+      questions: quiz.questions.map((q) => hideRoadSignAnswerInPrompt(quiz.topic, q)),
+    } as T;
+  }
+
   let mutated = false;
   const nextQuestions: typeof quiz.questions = [];
   for (const q of quiz.questions) {
