@@ -935,7 +935,7 @@ export const categorySeo: Record<string, CategorySeo> = {
       },
     ],
     faqs: [
-      { q: "What is the pass mark for CompTIA A+?", a: "Scaled, 675 out of 900 for Core 1 (220-1101) and 700 out of 900 for Core 2 (220-1102)." },
+      { q: "What is the pass mark for CompTIA A+?", a: "Scaled, 675 out of 900 for Core 1 (220-1201) and 700 out of 900 for Core 2 (220-1202)." },
       { q: "How much does ITIL 4 Foundation cost in 2026?", a: "Around £170–£250 depending on whether you book directly through PeopleCert or via an accredited training provider." },
       { q: "Is MS-900 worth it for non-technical staff?", a: "Yes — it's widely used by procurement, HR and operations staff who work with Microsoft 365 day to day and want a recognised credential." },
       { q: "How long are these certifications valid?", a: "CompTIA A+ is valid for three years and can be renewed via continuing education credits. ITIL 4 Foundation does not expire. Microsoft fundamentals certifications do not expire." },
