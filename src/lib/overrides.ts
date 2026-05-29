@@ -60,6 +60,13 @@ export function invalidateOverrides() {
 
 type AnyQuiz = { topic: string; questions: Array<Record<string, unknown> & { id: number | string }> };
 
+function hideRoadSignAnswerInPrompt<T extends Record<string, unknown>>(quizTopic: string, question: T): T {
+  if (quizTopic !== "road-signs") return question;
+  if (question.type !== "image-question" && question.type !== "image_question") return question;
+  if (typeof question.image !== "string" || !question.image) return question;
+  return { ...question, question: "What does this road sign mean?" };
+}
+
 export function applyOverrideToQuestionRecord<T extends Record<string, unknown>>(
   question: T,
   override: QuestionOverride | undefined,
@@ -110,7 +117,7 @@ export function applyOverrides<T extends AnyQuiz>(quiz: T, map: Map<string, Ques
       (srcId ? map.get(key(quiz.topic, srcId)) : undefined) ??
       map.get(key(quiz.topic, String(q.id)));
     if (!o) {
-      nextQuestions.push(q);
+      nextQuestions.push(hideRoadSignAnswerInPrompt(quiz.topic, q));
       continue;
     }
     if (o.disabled) {
@@ -118,7 +125,7 @@ export function applyOverrides<T extends AnyQuiz>(quiz: T, map: Map<string, Ques
       continue; // skip disabled question entirely from live quiz
     }
     mutated = true;
-    nextQuestions.push(applyOverrideToQuestionRecord(q, o));
+    nextQuestions.push(hideRoadSignAnswerInPrompt(quiz.topic, applyOverrideToQuestionRecord(q, o)));
   }
   if (!mutated) return quiz;
   return { ...quiz, questions: nextQuestions } as T;
