@@ -1268,7 +1268,7 @@ export const getQuizMeta = (slug: string): QuizMeta | undefined => {
   const found = findTopic(topic);
   return {
     slug: mock.slug,
-    quizTitle: mock.title,
+    quizTitle: smartMockTitleFromSlug(topic, num),
     category: found?.category.slug ?? "",
     topic,
     questionCount: mock.questionCount || QUESTIONS_PER_MOCK,
