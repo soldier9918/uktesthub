@@ -471,6 +471,19 @@ export const categories: Category[] = [
     ],
   },
   {
+    slug: "university-admissions",
+    title: "University Admissions",
+    short: "UCAS application knowledge & undergraduate admissions",
+    description:
+      "Free practice for the UK university admissions process — UCAS deadlines, choices, personal statements, references, offers, Clearing and student finance.",
+    icon: "GraduationCap",
+    accent: "navy",
+    heroImage: heroEducation,
+    topics: [
+      { slug: "ucas-application-knowledge", title: "UCAS Application Knowledge Test" },
+    ],
+  },
+  {
     slug: "cloud-cyber-certifications",
     title: "Cloud & Cyber",
     short: "AWS, Azure & cloud security foundations",
