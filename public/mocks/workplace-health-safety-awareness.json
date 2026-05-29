@@ -1,0 +1,2736 @@
+{
+  "version": 2,
+  "topic": "workplace-health-safety-awareness",
+  "bank": [
+    {
+      "id": "whs-mc-0001",
+      "type": "multiple_choice",
+      "question": "Which UK Act is the foundation of workplace health and safety law?",
+      "options": [
+        "Health and Safety at Work etc. Act 1974",
+        "Workplace Safety Act 1992",
+        "Employment Rights Act 1996",
+        "Factory Act 1961"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The Health and Safety at Work etc. Act 1974 (HSWA) is the primary piece of UK legislation covering workplace health and safety."
+    },
+    {
+      "id": "whs-mc-0002",
+      "type": "multiple_choice",
+      "question": "Who has a duty to ensure, so far as is reasonably practicable, the health and safety of employees at work?",
+      "options": [
+        "The employer",
+        "Only the safety officer",
+        "Only the employees",
+        "Only HSE inspectors"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Section 2 of HSWA places a duty on every employer to ensure the H&S of their employees so far as is reasonably practicable."
+    },
+    {
+      "id": "whs-mc-0003",
+      "type": "multiple_choice",
+      "question": "What does 'so far as is reasonably practicable' mean?",
+      "options": [
+        "Weighing risk against the cost, time and effort to control it",
+        "Doing nothing at all",
+        "Eliminating every risk regardless of cost",
+        "Only acting if an accident happens"
+      ],
+      "correctAnswer": 0,
+      "explanation": "It means balancing the level of risk against the resources (money, time, trouble) needed to control it."
+    },
+    {
+      "id": "whs-mc-0004",
+      "type": "multiple_choice",
+      "question": "Which body enforces health and safety law in most UK workplaces?",
+      "options": [
+        "HSE (Health and Safety Executive)",
+        "DVLA",
+        "DVSA",
+        "Ofsted"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The HSE is the main UK regulator for workplace health and safety, alongside local authorities for some sectors."
+    },
+    {
+      "id": "whs-mc-0005",
+      "type": "multiple_choice",
+      "question": "What does RIDDOR stand for?",
+      "options": [
+        "Reporting of Injuries, Diseases and Dangerous Occurrences Regulations",
+        "Regulation of Industrial Damage and Dangerous Occurrences Rules",
+        "Rapid Incident Disclosure Reporting Rules",
+        "Reporting of Injuries, Damage, Dust and Operational Risks"
+      ],
+      "correctAnswer": 0,
+      "explanation": "RIDDOR = Reporting of Injuries, Diseases and Dangerous Occurrences Regulations 2013."
+    },
+    {
+      "id": "whs-mc-0006",
+      "type": "multiple_choice",
+      "question": "Under RIDDOR, which of these must be reported?",
+      "options": [
+        "A specified injury such as a fractured arm",
+        "A paper cut",
+        "A trip with no injury",
+        "A near miss with no consequence"
+      ],
+      "correctAnswer": 0,
+      "explanation": "RIDDOR requires specified injuries (e.g. fractures other than fingers/toes), over-7-day absences and dangerous occurrences to be reported."
+    },
+    {
+      "id": "whs-mc-0007",
+      "type": "multiple_choice",
+      "question": "How long can an employee be off work due to a work-related injury before it becomes reportable under RIDDOR?",
+      "options": [
+        "More than 3 consecutive days",
+        "More than 7 consecutive days (not counting the day of the incident)",
+        "More than 14 days",
+        "More than 28 days"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Over-7-day incapacitation injuries are reportable under RIDDOR."
+    },
+    {
+      "id": "whs-mc-0008",
+      "type": "multiple_choice",
+      "question": "What does COSHH stand for?",
+      "options": [
+        "Control of Substances Hazardous to Health",
+        "Care of Safety Standards in Health",
+        "Code of Safe Health Handling",
+        "Containment of Substances and Hazardous Handling"
+      ],
+      "correctAnswer": 0,
+      "explanation": "COSHH = Control of Substances Hazardous to Health Regulations 2002."
+    },
+    {
+      "id": "whs-mc-0009",
+      "type": "multiple_choice",
+      "question": "Which is the FIRST step of a risk assessment under the Management of Health and Safety at Work Regulations 1999?",
+      "options": [
+        "Identify the hazards",
+        "Buy PPE",
+        "Write a method statement",
+        "Issue a permit to work"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Step 1 of the HSE 5-step model is to identify the hazards."
+    },
+    {
+      "id": "whs-mc-0010",
+      "type": "multiple_choice",
+      "question": "How many steps does the HSE's standard risk assessment model have?",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "7"
+      ],
+      "correctAnswer": 2,
+      "explanation": "HSE describes a 5-step model: identify hazards, decide who could be harmed, evaluate risks and controls, record findings, review."
+    },
+    {
+      "id": "whs-mc-0011",
+      "type": "multiple_choice",
+      "question": "What is the difference between a hazard and a risk?",
+      "options": [
+        "A hazard has the potential to cause harm; a risk is the likelihood and severity of that harm occurring",
+        "They are the same thing",
+        "A risk is always physical, a hazard is always chemical",
+        "A hazard is only legal terminology"
+      ],
+      "correctAnswer": 0,
+      "explanation": "A hazard is anything with potential to cause harm; risk is the likelihood combined with severity."
+    },
+    {
+      "id": "whs-mc-0012",
+      "type": "multiple_choice",
+      "question": "Which is the highest in the hierarchy of control measures?",
+      "options": [
+        "Eliminate the hazard",
+        "Use PPE",
+        "Issue safety signs",
+        "Train staff"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Elimination is the most effective control; PPE is the last line of defence."
+    },
+    {
+      "id": "whs-mc-0013",
+      "type": "multiple_choice",
+      "question": "Where does PPE sit in the hierarchy of control?",
+      "options": [
+        "At the top — used first",
+        "In the middle — equal to engineering controls",
+        "At the bottom — last resort after other controls",
+        "PPE is not part of the hierarchy"
+      ],
+      "correctAnswer": 2,
+      "explanation": "PPE is the lowest tier in the hierarchy and should be used only when higher controls cannot adequately reduce the risk."
+    },
+    {
+      "id": "whs-mc-0014",
+      "type": "multiple_choice",
+      "question": "Who pays for PPE that is required for work?",
+      "options": [
+        "The employer, free of charge to employees",
+        "The employee",
+        "The HSE",
+        "Split 50/50"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Under PPE at Work Regulations 1992, employers must provide suitable PPE free of charge."
+    },
+    {
+      "id": "whs-mc-0015",
+      "type": "multiple_choice",
+      "question": "Which Regulations cover manual handling at work?",
+      "options": [
+        "Manual Handling Operations Regulations 1992",
+        "Lifting Operations Regulations 2002",
+        "Working Time Regulations 1998",
+        "Provision of Work Equipment Regulations 1998"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Manual Handling Operations Regulations 1992 (as amended) govern manual handling tasks."
+    },
+    {
+      "id": "whs-mc-0016",
+      "type": "multiple_choice",
+      "question": "What is the FIRST consideration when there's a risk from manual handling?",
+      "options": [
+        "Avoid the manual handling task if reasonably practicable",
+        "Wear gloves",
+        "Use a back belt",
+        "Lift quickly"
+      ],
+      "correctAnswer": 0,
+      "explanation": "MHOR follows: avoid → assess → reduce — start by avoiding the task where reasonably practicable."
+    },
+    {
+      "id": "whs-mc-0017",
+      "type": "multiple_choice",
+      "question": "Which body part is most commonly injured by poor manual handling?",
+      "options": [
+        "The back, especially the lower back",
+        "The feet",
+        "The eyes",
+        "The teeth"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Lower-back injuries account for the largest share of manual handling injuries."
+    },
+    {
+      "id": "whs-mc-0018",
+      "type": "multiple_choice",
+      "question": "Which is the correct technique for lifting a load from the floor?",
+      "options": [
+        "Bend the knees, keep the back straight, hold the load close to the body",
+        "Bend the back, keep the knees straight",
+        "Twist while lifting",
+        "Lift with arms fully extended"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Good lifting technique = stable stance, knees bent, back straight, load close to the centre of the body, no twisting."
+    },
+    {
+      "id": "whs-mc-0019",
+      "type": "multiple_choice",
+      "question": "Which colour usually indicates a 'prohibition' safety sign?",
+      "options": [
+        "Red circle with diagonal bar on white background",
+        "Yellow triangle",
+        "Blue circle",
+        "Green square"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Prohibition signs are round, red and white with a diagonal bar — e.g. 'No smoking'."
+    },
+    {
+      "id": "whs-mc-0020",
+      "type": "multiple_choice",
+      "question": "Which colour and shape is used for warning safety signs?",
+      "options": [
+        "Yellow triangle with black border",
+        "Blue circle",
+        "Red circle",
+        "Green square"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Warning signs are yellow triangles with a black border."
+    },
+    {
+      "id": "whs-mc-0021",
+      "type": "multiple_choice",
+      "question": "Which colour and shape is used for mandatory safety signs (you must do)?",
+      "options": [
+        "Blue circle",
+        "Red circle",
+        "Yellow triangle",
+        "Green square"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Mandatory signs are blue circles — e.g. 'Wear ear protection'."
+    },
+    {
+      "id": "whs-mc-0022",
+      "type": "multiple_choice",
+      "question": "Which colour is used for safe condition signs (e.g. fire exit)?",
+      "options": [
+        "Green",
+        "Red",
+        "Blue",
+        "Yellow"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Safe condition signs are green and rectangular — e.g. fire exit, first aid."
+    },
+    {
+      "id": "whs-mc-0023",
+      "type": "multiple_choice",
+      "question": "What does the fire triangle consist of?",
+      "options": [
+        "Heat, fuel, oxygen",
+        "Smoke, water, dust",
+        "Wood, paper, plastic",
+        "Sparks, flames, alarms"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Fire needs heat, fuel and oxygen — remove any one to extinguish."
+    },
+    {
+      "id": "whs-mc-0024",
+      "type": "multiple_choice",
+      "question": "Which fire extinguisher class is suitable for electrical fires?",
+      "options": [
+        "CO2 (carbon dioxide)",
+        "Water",
+        "Foam",
+        "Wet chemical"
+      ],
+      "correctAnswer": 0,
+      "explanation": "CO2 is safe on live electrical equipment; water and foam conduct electricity."
+    },
+    {
+      "id": "whs-mc-0025",
+      "type": "multiple_choice",
+      "question": "Which fire extinguisher is best for cooking oil/fat fires?",
+      "options": [
+        "Wet chemical",
+        "Water",
+        "CO2",
+        "Powder"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Class F (cooking oils and fats) fires are tackled with wet chemical extinguishers."
+    },
+    {
+      "id": "whs-mc-0026",
+      "type": "multiple_choice",
+      "question": "What should you do FIRST if you discover a fire at work?",
+      "options": [
+        "Raise the alarm",
+        "Try to extinguish it before telling anyone",
+        "Finish your task",
+        "Take a photo for the report"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Always raise the alarm first so people can evacuate."
+    },
+    {
+      "id": "whs-mc-0027",
+      "type": "multiple_choice",
+      "question": "On hearing the fire alarm, you should:",
+      "options": [
+        "Leave by the nearest safe exit and go to the assembly point",
+        "Collect your belongings first",
+        "Use the lift",
+        "Hide under your desk"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Evacuate via the nearest safe exit, use stairs (not lifts) and go straight to the assembly point."
+    },
+    {
+      "id": "whs-mc-0028",
+      "type": "multiple_choice",
+      "question": "Why must you not use the lifts during a fire alarm?",
+      "options": [
+        "They can fail, fill with smoke or strand people",
+        "They are too slow",
+        "They cost too much to operate",
+        "They are reserved for managers"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Lifts can lose power, trap occupants and act as a chimney for smoke and heat."
+    },
+    {
+      "id": "whs-mc-0029",
+      "type": "multiple_choice",
+      "question": "Which Regulations cover the use of display screen equipment (DSE)?",
+      "options": [
+        "Health and Safety (Display Screen Equipment) Regulations 1992",
+        "Workplace Regulations 1992",
+        "Office Health Act 2005",
+        "DSE Act 2008"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The DSE Regulations 1992 (as amended) cover habitual computer users."
+    },
+    {
+      "id": "whs-mc-0030",
+      "type": "multiple_choice",
+      "question": "Under DSE Regulations, who is entitled to a free eye test paid for by the employer?",
+      "options": [
+        "DSE users (employees who use display screens as a significant part of their normal work)",
+        "Only office managers",
+        "Only IT staff",
+        "Anyone, regardless of role"
+      ],
+      "correctAnswer": 0,
+      "explanation": "DSE users can request an eye test paid for by the employer."
+    },
+    {
+      "id": "whs-mc-0031",
+      "type": "multiple_choice",
+      "question": "What is the recommended approach to long DSE sessions?",
+      "options": [
+        "Take short, frequent breaks away from the screen",
+        "Work non-stop for 8 hours",
+        "Use one long lunch break only",
+        "Skip breaks to finish early"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Short, frequent breaks reduce eyestrain and musculoskeletal strain — far better than one long break."
+    },
+    {
+      "id": "whs-mc-0032",
+      "type": "multiple_choice",
+      "question": "Which Regulations require workplaces to have suitable welfare facilities (toilets, drinking water, rest areas)?",
+      "options": [
+        "Workplace (Health, Safety and Welfare) Regulations 1992",
+        "Welfare Act 1968",
+        "HSWA 1974 directly",
+        "Public Health Act 1875"
+      ],
+      "correctAnswer": 0,
+      "explanation": "These regulations cover basic welfare facilities, temperature, lighting, ventilation and cleanliness."
+    },
+    {
+      "id": "whs-mc-0033",
+      "type": "multiple_choice",
+      "question": "What is the minimum recommended workplace temperature for indoor sedentary work in the UK?",
+      "options": [
+        "At least 16°C",
+        "At least 10°C",
+        "At least 25°C",
+        "There is no recommendation"
+      ],
+      "correctAnswer": 0,
+      "explanation": "HSE recommends a minimum of 16°C for sedentary indoor work (13°C for physical work)."
+    },
+    {
+      "id": "whs-mc-0034",
+      "type": "multiple_choice",
+      "question": "Who must complete the accident book entry for a workplace injury?",
+      "options": [
+        "The injured person or someone acting on their behalf",
+        "Only the HR director",
+        "Only an HSE inspector",
+        "Only the fire warden"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Entries can be made by the injured person or by someone on their behalf — and must respect data protection."
+    },
+    {
+      "id": "whs-mc-0035",
+      "type": "multiple_choice",
+      "question": "Why must accident book entries be removed and stored separately once completed?",
+      "options": [
+        "Data protection — they contain personal information",
+        "To save space",
+        "To hide them from staff",
+        "Because of fire risk"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Completed pages must be removed and stored securely to comply with UK GDPR/Data Protection."
+    },
+    {
+      "id": "whs-mc-0036",
+      "type": "multiple_choice",
+      "question": "Which document explains how a specific task should be done safely?",
+      "options": [
+        "A safe system of work / method statement",
+        "An invoice",
+        "An organisational chart",
+        "A delivery note"
+      ],
+      "correctAnswer": 0,
+      "explanation": "A safe system of work (often supported by a method statement) sets out how to do a task safely."
+    },
+    {
+      "id": "whs-mc-0037",
+      "type": "multiple_choice",
+      "question": "What is a 'near miss'?",
+      "options": [
+        "An incident that could have caused injury or damage but didn't",
+        "An injury requiring hospital treatment",
+        "A fatal accident",
+        "A reportable disease"
+      ],
+      "correctAnswer": 0,
+      "explanation": "A near miss is an unplanned event that didn't result in injury or damage but had the potential to."
+    },
+    {
+      "id": "whs-mc-0038",
+      "type": "multiple_choice",
+      "question": "Why are near misses important?",
+      "options": [
+        "They highlight underlying hazards before someone is hurt",
+        "They never need recording",
+        "They prove staff are careless",
+        "They reduce insurance premiums automatically"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Investigating near misses helps prevent future accidents — they are leading indicators."
+    },
+    {
+      "id": "whs-mc-0039",
+      "type": "multiple_choice",
+      "question": "Which of these is the correct order of priority in the fire safety hierarchy?",
+      "options": [
+        "Prevent → detect → alert → evacuate → fight (only if trained and safe)",
+        "Fight → alert → evacuate",
+        "Evacuate → ignore alarms",
+        "Detect → ignore → carry on"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Prevent ignition, detect quickly, alert occupants, evacuate, and only tackle if trained and safe."
+    },
+    {
+      "id": "whs-mc-0040",
+      "type": "multiple_choice",
+      "question": "Which Regulations cover the safe use of work equipment such as power tools and machinery?",
+      "options": [
+        "PUWER 1998 — Provision and Use of Work Equipment Regulations",
+        "WAH 2005",
+        "LOLER 1998",
+        "RIDDOR 2013"
+      ],
+      "correctAnswer": 0,
+      "explanation": "PUWER 1998 covers the safe selection, use, inspection and maintenance of work equipment."
+    },
+    {
+      "id": "whs-mc-0041",
+      "type": "multiple_choice",
+      "question": "Which Regulations cover lifting equipment and lifting operations?",
+      "options": [
+        "LOLER 1998",
+        "PUWER 1998",
+        "MHOR 1992",
+        "WAH 2005"
+      ],
+      "correctAnswer": 0,
+      "explanation": "LOLER 1998 — Lifting Operations and Lifting Equipment Regulations — covers cranes, hoists, lifts and slings."
+    },
+    {
+      "id": "whs-mc-0042",
+      "type": "multiple_choice",
+      "question": "Which Regulations cover work at height?",
+      "options": [
+        "The Work at Height Regulations 2005",
+        "HSWA 1974 only",
+        "PUWER 1998",
+        "LOLER 1998"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The Work at Height Regulations 2005 require height work to be properly planned, supervised and carried out safely."
+    },
+    {
+      "id": "whs-mc-0043",
+      "type": "multiple_choice",
+      "question": "Which is the FIRST priority when planning work at height?",
+      "options": [
+        "Avoid working at height if reasonably practicable",
+        "Buy a harness",
+        "Issue a permit",
+        "Use a ladder"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Avoid → prevent → minimise — start by avoiding the need to work at height where possible."
+    },
+    {
+      "id": "whs-mc-0044",
+      "type": "multiple_choice",
+      "question": "Which Regulations protect against the risks of asbestos?",
+      "options": [
+        "Control of Asbestos Regulations 2012",
+        "COSHH 2002 only",
+        "PUWER 1998",
+        "HSWA 1974 only"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Control of Asbestos Regulations 2012 (CAR 2012) place specific duties on duty-holders and employers."
+    },
+    {
+      "id": "whs-mc-0045",
+      "type": "multiple_choice",
+      "question": "If you suspect a material contains asbestos, you should:",
+      "options": [
+        "Stop work, leave the area undisturbed and report to your supervisor immediately",
+        "Sand it down to check",
+        "Drill into it to confirm",
+        "Throw it in the skip"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Suspected ACMs (asbestos-containing materials) must not be disturbed — stop work and report."
+    },
+    {
+      "id": "whs-mc-0046",
+      "type": "multiple_choice",
+      "question": "What is the duty under HSWA section 7 placed on employees?",
+      "options": [
+        "Take reasonable care for their own and others' health and safety, and cooperate with the employer",
+        "Pay for their own PPE",
+        "Ignore safety procedures if busy",
+        "Report only fatal incidents"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Section 7 requires employees to take reasonable care and cooperate with H&S arrangements."
+    },
+    {
+      "id": "whs-mc-0047",
+      "type": "multiple_choice",
+      "question": "Can an employee be prosecuted personally for a serious breach of health and safety law?",
+      "options": [
+        "Yes — employees can be prosecuted under sections 7 and 8 of HSWA",
+        "No — only employers can be prosecuted",
+        "Only HSE inspectors face prosecution",
+        "Only directors face prosecution"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Both employees and employers can be prosecuted for serious breaches."
+    },
+    {
+      "id": "whs-mc-0048",
+      "type": "multiple_choice",
+      "question": "Which Regulations require employers to consult employees on H&S matters?",
+      "options": [
+        "Safety Representatives and Safety Committees Regulations 1977 and the H&S (Consultation with Employees) Regulations 1996",
+        "HSWA only",
+        "PUWER only",
+        "RIDDOR only"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Either union-appointed safety representatives or directly-elected representatives of employee safety must be consulted."
+    },
+    {
+      "id": "whs-mc-0049",
+      "type": "multiple_choice",
+      "question": "What is the maximum noise exposure level (lower exposure action value) before action is required under the Control of Noise at Work Regulations 2005?",
+      "options": [
+        "80 dB(A) daily/weekly average",
+        "120 dB(A)",
+        "60 dB(A)",
+        "100 dB(A)"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Lower action value = 80 dB(A); upper action value = 85 dB(A); exposure limit = 87 dB(A)."
+    },
+    {
+      "id": "whs-mc-0050",
+      "type": "multiple_choice",
+      "question": "What is the upper exposure action value for noise under the 2005 Regulations?",
+      "options": [
+        "85 dB(A)",
+        "60 dB(A)",
+        "70 dB(A)",
+        "100 dB(A)"
+      ],
+      "correctAnswer": 0,
+      "explanation": "At 85 dB(A) employers must provide hearing protection and create hearing protection zones."
+    },
+    {
+      "id": "whs-mc-0051",
+      "type": "multiple_choice",
+      "question": "Which type of PPE protects against airborne dust and harmful particles?",
+      "options": [
+        "A correctly fitted RPE / respirator with the right filter",
+        "Latex gloves",
+        "Steel toecap boots",
+        "Hi-vis vest"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Respiratory Protective Equipment (RPE) — selected after a face-fit test for tight-fitting masks — protects the lungs."
+    },
+    {
+      "id": "whs-mc-0052",
+      "type": "multiple_choice",
+      "question": "Why is face-fit testing important for tight-fitting respirators?",
+      "options": [
+        "A poor fit lets contaminated air leak in around the seal",
+        "It's a legal formality only",
+        "It improves comfort only",
+        "It changes the mask's colour"
+      ],
+      "correctAnswer": 0,
+      "explanation": "If the seal isn't tight, contaminated air bypasses the filter — making the RPE useless."
+    },
+    {
+      "id": "whs-mc-0053",
+      "type": "multiple_choice",
+      "question": "What does a SDS (Safety Data Sheet) tell you?",
+      "options": [
+        "The hazards, safe handling, storage and emergency information for a chemical",
+        "The price of the chemical",
+        "The history of the manufacturer",
+        "The marketing slogan"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Safety Data Sheets must be supplied with hazardous chemicals and underpin COSHH assessments."
+    },
+    {
+      "id": "whs-mc-0054",
+      "type": "multiple_choice",
+      "question": "Which is the safest way to store flammable liquids on site?",
+      "options": [
+        "In a designated, ventilated and bunded flammable store, away from ignition sources",
+        "Next to the boiler",
+        "Under the kitchen sink with food",
+        "In an open bucket on the shop floor"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Flammables must be stored in suitable cabinets/stores with ventilation, segregation and away from ignition."
+    },
+    {
+      "id": "whs-mc-0055",
+      "type": "multiple_choice",
+      "question": "Which is the safest electrical safety practice?",
+      "options": [
+        "Use portable appliance testing (PAT) and visual checks; isolate before maintenance",
+        "Repair live equipment",
+        "Run cables across walkways",
+        "Overload sockets with adapters"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Visual inspections, PAT (where appropriate), proper isolation and avoiding trip hazards keep electrical work safe."
+    },
+    {
+      "id": "whs-mc-0056",
+      "type": "multiple_choice",
+      "question": "What does LOTO stand for in electrical and machinery safety?",
+      "options": [
+        "Lockout / Tagout — isolating energy sources before work",
+        "Lift Or Take Out",
+        "Load On Top Off",
+        "Low Operation Tag Out"
+      ],
+      "correctAnswer": 0,
+      "explanation": "LOTO is the procedure to isolate energy and prevent unexpected re-energisation during maintenance."
+    },
+    {
+      "id": "whs-mc-0057",
+      "type": "multiple_choice",
+      "question": "Which document allows specific high-risk work to proceed only after authorisation and controls?",
+      "options": [
+        "A permit to work",
+        "A purchase order",
+        "A timesheet",
+        "A delivery note"
+      ],
+      "correctAnswer": 0,
+      "explanation": "A permit to work is a formal authorisation used for high-risk activities (hot work, confined spaces, etc.)."
+    },
+    {
+      "id": "whs-mc-0058",
+      "type": "multiple_choice",
+      "question": "What is the safest approach to entering a confined space?",
+      "options": [
+        "Avoid entry if possible; if not, use a permit, atmosphere testing, trained personnel and rescue plan",
+        "Send one person in alone",
+        "Test the air after entering",
+        "Leave the entry hatch unattended"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Confined Spaces Regulations 1997 — avoid entry, plan, train, test atmosphere, have rescue arrangements."
+    },
+    {
+      "id": "whs-mc-0059",
+      "type": "multiple_choice",
+      "question": "Why is good housekeeping important on a worksite?",
+      "options": [
+        "It reduces slips, trips, fire load and fall hazards",
+        "It only makes the place look tidy",
+        "It is just a cosmetic concern",
+        "It is irrelevant to safety"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Poor housekeeping is one of the most common causes of workplace injuries."
+    },
+    {
+      "id": "whs-mc-0060",
+      "type": "multiple_choice",
+      "question": "Which is the leading cause of workplace injury in UK offices and shops?",
+      "options": [
+        "Slips, trips and falls on the same level",
+        "Falls from cranes",
+        "Asbestos exposure",
+        "Lightning strikes"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Slips and trips consistently cause the largest share of non-fatal workplace injuries."
+    },
+    {
+      "id": "whs-mc-0061",
+      "type": "multiple_choice",
+      "question": "What should you do if a floor is wet?",
+      "options": [
+        "Display a wet floor sign and dry/clean promptly; restrict access if necessary",
+        "Ignore it",
+        "Tell the next visitor verbally only",
+        "Cover with newspaper"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Visible warning signs and prompt cleaning are essential to manage slip risks."
+    },
+    {
+      "id": "whs-mc-0062",
+      "type": "multiple_choice",
+      "question": "Which is a typical 'specified injury' under RIDDOR?",
+      "options": [
+        "Fracture (other than to fingers, thumbs or toes)",
+        "A bruise",
+        "A common cold caught at work",
+        "Tiredness"
+      ],
+      "correctAnswer": 0,
+      "explanation": "RIDDOR specified injuries include serious fractures, amputations, serious burns and loss of consciousness."
+    },
+    {
+      "id": "whs-mc-0063",
+      "type": "multiple_choice",
+      "question": "How quickly must a dangerous occurrence be reported under RIDDOR?",
+      "options": [
+        "Without delay (usually within 10 days, online via HSE)",
+        "Within a year",
+        "Within 5 years",
+        "It never needs reporting"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Dangerous occurrences must be reported online to HSE without delay and within 10 days."
+    },
+    {
+      "id": "whs-mc-0064",
+      "type": "multiple_choice",
+      "question": "Which is a duty of an employer to non-employees (visitors, contractors, public)?",
+      "options": [
+        "Conduct undertaking so they are not exposed to H&S risks, so far as reasonably practicable (HSWA s.3)",
+        "No duty exists",
+        "Only insurance is needed",
+        "Only signage is needed"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Section 3 of HSWA extends duties to non-employees affected by the employer's undertaking."
+    },
+    {
+      "id": "whs-mc-0065",
+      "type": "multiple_choice",
+      "question": "What does HSE stand for?",
+      "options": [
+        "Health and Safety Executive",
+        "Health Sector Examinations",
+        "Hazardous Substances Enforcement",
+        "Home Safety Executive"
+      ],
+      "correctAnswer": 0,
+      "explanation": "HSE = Health and Safety Executive, the GB regulator for workplace H&S."
+    },
+    {
+      "id": "whs-mc-0066",
+      "type": "multiple_choice",
+      "question": "Which is the correct definition of an 'accident' in H&S terminology?",
+      "options": [
+        "An unplanned event that resulted in injury, ill-health or damage",
+        "Any planned activity",
+        "A meeting that ran over time",
+        "A successful project"
+      ],
+      "correctAnswer": 0,
+      "explanation": "An accident is an unplanned event causing harm; near misses are events with potential but no outcome."
+    },
+    {
+      "id": "whs-mc-0067",
+      "type": "multiple_choice",
+      "question": "Which inspection rights do HSE inspectors have under HSWA?",
+      "options": [
+        "Enter premises, take measurements/samples, require information and issue improvement or prohibition notices",
+        "Only enter with permission",
+        "Only inspect once a year",
+        "Only inspect after an accident"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Inspectors have wide powers including entry without notice, sampling, and serving improvement/prohibition notices."
+    },
+    {
+      "id": "whs-mc-0068",
+      "type": "multiple_choice",
+      "question": "What is the difference between an improvement notice and a prohibition notice?",
+      "options": [
+        "Improvement = fix a breach by a set date; prohibition = stop the activity immediately as it carries serious risk",
+        "There is no difference",
+        "Both mean the business closes",
+        "Prohibition is less serious than improvement"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Improvement notices require remedial action by a deadline; prohibition notices stop activity creating a risk of serious personal injury."
+    },
+    {
+      "id": "whs-mc-0069",
+      "type": "multiple_choice",
+      "question": "If you spot a serious hazard at work, what should you do FIRST?",
+      "options": [
+        "Make the area safe if possible and report it to your supervisor / safety representative",
+        "Ignore it — it's not your job",
+        "Take a photo and post on social media",
+        "Wait until next week's meeting"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Make it safe (or isolate) if you can do so safely, then report through the proper channels."
+    },
+    {
+      "id": "whs-mc-0070",
+      "type": "multiple_choice",
+      "question": "Why do employers need a written H&S policy?",
+      "options": [
+        "Legally required if you employ 5 or more people; sets out the policy, organisation and arrangements",
+        "Only multinationals need one",
+        "Only the public sector needs one",
+        "It is optional regardless of size"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Employers with 5 or more employees must have a written H&S policy under HSWA."
+    },
+    {
+      "id": "whs-mc-0071",
+      "type": "multiple_choice",
+      "question": "What information must be displayed on the HSE 'Health and Safety Law' poster (or equivalent leaflet)?",
+      "options": [
+        "Basic outline of H&S law and contact details for the responsible person and enforcing authority",
+        "Only the staff handbook",
+        "Only fire exit information",
+        "Only the company's profits"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The HSE Law poster (or leaflet) outlines workers' and employers' duties and must be displayed/issued."
+    },
+    {
+      "id": "whs-mc-0072",
+      "type": "multiple_choice",
+      "question": "Which symbol denotes a flammable substance under the GHS/CLP labelling system?",
+      "options": [
+        "A flame in a red diamond",
+        "A skull and crossbones",
+        "A green cross",
+        "A blue circle"
+      ],
+      "correctAnswer": 0,
+      "explanation": "GHS/CLP uses red diamond pictograms — flame indicates flammable hazards."
+    },
+    {
+      "id": "whs-mc-0073",
+      "type": "multiple_choice",
+      "question": "Which GHS pictogram indicates serious health hazards (e.g. carcinogenic, mutagenic)?",
+      "options": [
+        "Health hazard (silhouette of a person with a star burst on the chest)",
+        "Flame",
+        "Exclamation mark",
+        "Skull and crossbones"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The 'health hazard' pictogram (CHEM-MAN figure) covers carcinogens, mutagens, reproductive toxins, respiratory sensitisers and STOTs."
+    },
+    {
+      "id": "whs-mc-0074",
+      "type": "multiple_choice",
+      "question": "Which GHS pictogram indicates a corrosive substance?",
+      "options": [
+        "A test tube pouring onto a surface and a hand showing damage",
+        "A flame",
+        "A green cross",
+        "A blue circle"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The corrosion pictogram shows substances that cause skin burns, eye damage or metal corrosion."
+    },
+    {
+      "id": "whs-mc-0075",
+      "type": "multiple_choice",
+      "question": "If chemicals splash in your eye, what is the FIRST aid action?",
+      "options": [
+        "Irrigate the eye with clean water for at least 10–15 minutes and seek medical help",
+        "Rub the eye to remove the chemical",
+        "Apply ointment immediately",
+        "Wait to see if it stings"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Immediate, prolonged irrigation with clean water minimises damage; then seek medical help."
+    },
+    {
+      "id": "whs-mc-0076",
+      "type": "multiple_choice",
+      "question": "How many first aiders does a workplace need?",
+      "options": [
+        "Determined by a first-aid needs assessment considering risk, numbers, layout and travel times",
+        "Always exactly 1",
+        "Always exactly 10",
+        "Not required at all"
+      ],
+      "correctAnswer": 0,
+      "explanation": "There is no fixed number — employers must assess first-aid needs under the Health and Safety (First-Aid) Regulations 1981."
+    },
+    {
+      "id": "whs-mc-0077",
+      "type": "multiple_choice",
+      "question": "Which Regulations cover the provision of first aid at work?",
+      "options": [
+        "Health and Safety (First-Aid) Regulations 1981",
+        "HSWA only",
+        "PUWER only",
+        "LOLER only"
+      ],
+      "correctAnswer": 0,
+      "explanation": "These regulations require employers to provide adequate first-aid equipment, facilities and personnel."
+    },
+    {
+      "id": "whs-mc-0078",
+      "type": "multiple_choice",
+      "question": "Which of these is NOT typically a contents item of a workplace first-aid kit?",
+      "options": [
+        "Prescription medication",
+        "Plasters",
+        "Sterile dressings",
+        "Disposable gloves"
+      ],
+      "correctAnswer": 0,
+      "explanation": "HSE first-aid kits should not contain medication; they hold dressings, plasters, gloves, eye pads, etc."
+    },
+    {
+      "id": "whs-mc-0079",
+      "type": "multiple_choice",
+      "question": "Which is the correct compression rate for adult CPR?",
+      "options": [
+        "100 to 120 compressions per minute",
+        "30 per minute",
+        "60 per minute",
+        "200 per minute"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Adult CPR guidelines specify 100–120 compressions per minute at a depth of 5–6cm."
+    },
+    {
+      "id": "whs-mc-0080",
+      "type": "multiple_choice",
+      "question": "What does AED stand for?",
+      "options": [
+        "Automated External Defibrillator",
+        "Adult Emergency Device",
+        "Automatic Eye Dropper",
+        "Advanced Electric Diagnostic"
+      ],
+      "correctAnswer": 0,
+      "explanation": "AED = Automated External Defibrillator, used to treat cardiac arrest."
+    },
+    {
+      "id": "whs-mc-0081",
+      "type": "multiple_choice",
+      "question": "Which sign in green and white commonly indicates first aid?",
+      "options": [
+        "White cross on a green square or rectangle",
+        "Red circle",
+        "Blue triangle",
+        "Yellow diamond"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Safe condition (green) signs include first aid (white cross) and emergency exits."
+    },
+    {
+      "id": "whs-mc-0082",
+      "type": "multiple_choice",
+      "question": "What is the recovery position used for?",
+      "options": [
+        "An unconscious casualty who is breathing normally to keep their airway clear",
+        "An alert casualty who is talking",
+        "Cardiac arrest",
+        "Heavy bleeding only"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The recovery position is used for an unconscious, breathing casualty to maintain the airway."
+    },
+    {
+      "id": "whs-mc-0083",
+      "type": "multiple_choice",
+      "question": "When should you call 999 / 112 for an emergency at work?",
+      "options": [
+        "For serious injuries, breathing difficulties, suspected stroke/heart attack or any life-threatening situation",
+        "Only after the manager arrives",
+        "Never — call HR first",
+        "Only if a first aider isn't around"
+      ],
+      "correctAnswer": 0,
+      "explanation": "For life-threatening emergencies always call emergency services immediately."
+    },
+    {
+      "id": "whs-mc-0084",
+      "type": "multiple_choice",
+      "question": "Which is the safest approach to lone working?",
+      "options": [
+        "A lone-worker risk assessment with check-in systems and emergency procedures",
+        "Hope for the best",
+        "Ban communication during shifts",
+        "Lock the doors"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Lone workers must be specifically risk-assessed with effective communication and emergency arrangements."
+    },
+    {
+      "id": "whs-mc-0085",
+      "type": "multiple_choice",
+      "question": "What is workplace bullying or harassment usually addressed under?",
+      "options": [
+        "Equality Act 2010 and employer H&S duties (stress is an H&S risk)",
+        "HSWA only",
+        "Only criminal law",
+        "Only HR policy with no legal basis"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Bullying/harassment can breach the Equality Act 2010 and create H&S risks (work-related stress) under HSWA."
+    },
+    {
+      "id": "whs-mc-0086",
+      "type": "multiple_choice",
+      "question": "Which is true about work-related stress?",
+      "options": [
+        "Employers must assess and control it like any other H&S risk",
+        "It is not a workplace issue",
+        "It only applies to managers",
+        "It is only the GP's responsibility"
+      ],
+      "correctAnswer": 0,
+      "explanation": "HSE Management Standards treat stress as a workplace H&S issue requiring assessment and control."
+    },
+    {
+      "id": "whs-mc-0087",
+      "type": "multiple_choice",
+      "question": "Which type of vehicle workplace activity has its own ACOP and guidance?",
+      "options": [
+        "Workplace transport — forklifts, vans and reversing vehicles",
+        "Only HGVs on motorways",
+        "Only racing cars",
+        "Only emergency vehicles"
+      ],
+      "correctAnswer": 0,
+      "explanation": "HSE has specific guidance on workplace transport, including reversing, separation of pedestrians and FLT operations."
+    },
+    {
+      "id": "whs-mc-0088",
+      "type": "multiple_choice",
+      "question": "Why should pedestrians and vehicles be segregated on site?",
+      "options": [
+        "To prevent collisions which are a major cause of workplace fatalities",
+        "Only for aesthetics",
+        "To save fuel",
+        "To reduce car park fees"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Separating pedestrians and vehicles using barriers, marked walkways and signs reduces collision risk."
+    },
+    {
+      "id": "whs-mc-0089",
+      "type": "multiple_choice",
+      "question": "Which young person at work needs special H&S consideration?",
+      "options": [
+        "Anyone under 18 — risk assessment must take account of inexperience and immaturity",
+        "Only those under 14",
+        "Only apprentices over 21",
+        "Only volunteers"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Specific duties apply to under-18s; risk assessments must consider inexperience and competence."
+    },
+    {
+      "id": "whs-mc-0090",
+      "type": "multiple_choice",
+      "question": "Which of the following is correct about the H&S of new and expectant mothers?",
+      "options": [
+        "Employers must assess risks and adjust work or hours where necessary",
+        "Pregnancy is not a workplace consideration",
+        "No risk assessment is needed",
+        "Only the GP decides"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Specific risk assessment is required for new and expectant mothers under MHSWR 1999."
+    },
+    {
+      "id": "whs-mc-0091",
+      "type": "multiple_choice",
+      "question": "Which is true about contractors working on site?",
+      "options": [
+        "The employer must cooperate, share H&S information and ensure contractors are competent",
+        "The employer has no duties to contractors",
+        "Only the contractor's manager is responsible",
+        "Contractors can ignore site rules"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Duties of cooperation, information sharing and ensuring competence apply (CDM and HSWA)."
+    },
+    {
+      "id": "whs-mc-0092",
+      "type": "multiple_choice",
+      "question": "Which Regulations cover construction projects in the UK?",
+      "options": [
+        "Construction (Design and Management) Regulations 2015 (CDM 2015)",
+        "PUWER 1998 only",
+        "LOLER 1998 only",
+        "RIDDOR 2013 only"
+      ],
+      "correctAnswer": 0,
+      "explanation": "CDM 2015 sets duties for clients, designers, principal designers, principal contractors, contractors and workers."
+    },
+    {
+      "id": "whs-mc-0093",
+      "type": "multiple_choice",
+      "question": "What is the goal of induction training for new staff?",
+      "options": [
+        "Cover site rules, hazards, emergency procedures and reporting before work begins",
+        "Sell company merchandise",
+        "Discuss salary",
+        "Only show the canteen"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Induction must cover site-specific H&S so new starters work safely from day one."
+    },
+    {
+      "id": "whs-mc-0094",
+      "type": "multiple_choice",
+      "question": "Which is true about toolbox talks?",
+      "options": [
+        "Short, focused talks on specific H&S topics, often used on construction sites",
+        "Long lectures of an hour or more",
+        "Only for managers",
+        "Optional with no legal value"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Toolbox talks reinforce specific H&S topics and demonstrate ongoing consultation and training."
+    },
+    {
+      "id": "whs-mc-0095",
+      "type": "multiple_choice",
+      "question": "If you don't know how to do a task safely, what should you do?",
+      "options": [
+        "Stop and ask your supervisor for instruction and training",
+        "Guess and continue",
+        "Ask a member of the public",
+        "Skip the task and don't tell anyone"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Never proceed without competence; section 7 of HSWA requires employees to cooperate and not put themselves or others at risk."
+    },
+    {
+      "id": "whs-mc-0096",
+      "type": "multiple_choice",
+      "question": "Which of these is the most accurate statement about workplace H&S?",
+      "options": [
+        "Everyone in the workplace has a role in health and safety, not just managers",
+        "Only the safety officer is responsible",
+        "Only the HSE is responsible",
+        "Only the cleaners are responsible"
+      ],
+      "correctAnswer": 0,
+      "explanation": "H&S is a shared responsibility from board level to the newest employee."
+    },
+    {
+      "id": "whs-mc-0097",
+      "type": "multiple_choice",
+      "question": "Which Regulations specifically govern the safe handling of vibration risks (e.g. from power tools)?",
+      "options": [
+        "Control of Vibration at Work Regulations 2005",
+        "PUWER 1998 only",
+        "RIDDOR 2013",
+        "HSWA 1974 only"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The Control of Vibration at Work Regulations 2005 set daily exposure action and limit values for hand-arm and whole-body vibration."
+    },
+    {
+      "id": "whs-mc-0098",
+      "type": "multiple_choice",
+      "question": "What is HAVS?",
+      "options": [
+        "Hand-Arm Vibration Syndrome — a painful, sometimes disabling condition caused by prolonged exposure to vibration",
+        "Hazardous Air Ventilation System",
+        "Health and Vehicle Safety",
+        "Heavy-Asset Vibration Standard"
+      ],
+      "correctAnswer": 0,
+      "explanation": "HAVS can cause numbness, tingling, loss of grip and vibration white finger; it's preventable through controls and exposure limits."
+    },
+    {
+      "id": "whs-mc-0099",
+      "type": "multiple_choice",
+      "question": "Which legal document allows employees to refuse to undertake work they reasonably believe is unsafe?",
+      "options": [
+        "Employment Rights Act 1996 (protection from detriment) combined with HSWA principles",
+        "HSWA only",
+        "PUWER only",
+        "RIDDOR only"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Employees have legal protection from detriment for leaving or refusing to work in serious and imminent danger."
+    },
+    {
+      "id": "whs-mc-0100",
+      "type": "multiple_choice",
+      "question": "Which is true about safety committees?",
+      "options": [
+        "Required to be set up if requested in writing by two or more safety representatives",
+        "Always voluntary with no legal basis",
+        "Only for fire wardens",
+        "Only annual events"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Under the Safety Representatives and Safety Committees Regulations 1977, a committee must be set up on a written request from two or more representatives."
+    },
+    {
+      "id": "whs-mc-0101",
+      "type": "multiple_choice",
+      "question": "What is the role of a 'competent person' in H&S management?",
+      "options": [
+        "Someone with the skills, knowledge and experience to identify hazards and advise on controls",
+        "Anyone, regardless of training",
+        "Only the CEO",
+        "Only an HSE inspector"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Employers must appoint one or more competent persons to help comply with H&S law (MHSWR 1999, reg 7)."
+    },
+    {
+      "id": "whs-mc-0102",
+      "type": "multiple_choice",
+      "question": "Which is the correct attitude toward H&S 'shortcuts' on a routine task?",
+      "options": [
+        "Don't take them — most accidents happen during familiar tasks where complacency sets in",
+        "Always take them to save time",
+        "Only take them at the end of the day",
+        "Encourage them to boost productivity"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Complacency is a leading cause of accidents; following the safe system of work matters even on routine jobs."
+    },
+    {
+      "id": "whs-mc-0103",
+      "type": "multiple_choice",
+      "question": "How often should risk assessments be reviewed?",
+      "options": [
+        "Whenever circumstances change, after incidents, or at regular planned intervals",
+        "Only every 10 years",
+        "Never once written",
+        "Only if HSE asks"
+      ],
+      "correctAnswer": 0,
+      "explanation": "MHSWR 1999 requires review whenever there is reason to suspect they are no longer valid or there has been a significant change."
+    },
+    {
+      "id": "whs-mc-0104",
+      "type": "multiple_choice",
+      "question": "Which is true about safety culture?",
+      "options": [
+        "It reflects shared values, attitudes and behaviours toward safety at every level",
+        "It only matters in factories",
+        "It is the responsibility of HR alone",
+        "It is only relevant after a serious accident"
+      ],
+      "correctAnswer": 0,
+      "explanation": "A strong safety culture is associated with fewer accidents and is built through leadership, training and consultation."
+    },
+    {
+      "id": "whs-mc-0105",
+      "type": "multiple_choice",
+      "question": "Which of the following best describes 'duty of care' at work?",
+      "options": [
+        "A legal and moral duty to take reasonable steps to prevent harm to others",
+        "An optional courtesy",
+        "Only owed by employers",
+        "Only owed to customers"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Duty of care is the cornerstone of H&S — owed by employers, employees and contractors to each other and to the public."
+    },
+    {
+      "id": "whs-mc-0106",
+      "type": "multiple_choice",
+      "question": "Which of the following is the BEST summary of effective workplace H&S?",
+      "options": [
+        "Plan → Do → Check → Act — continuously improving controls based on assessment and review",
+        "Wait for accidents to happen → react",
+        "Buy PPE → assume it's enough",
+        "Train once → never review"
+      ],
+      "correctAnswer": 0,
+      "explanation": "HSE's PDCA cycle (HSG65 'Managing for health and safety') is the recognised approach to continual improvement."
+    }
+  ],
+  "mocks": [
+    {
+      "mockNumber": 1,
+      "title": "Workplace Health & Safety Awareness Test 1",
+      "questionIds": [
+        "whs-mc-0001",
+        "whs-mc-0002",
+        "whs-mc-0003",
+        "whs-mc-0004",
+        "whs-mc-0005",
+        "whs-mc-0006",
+        "whs-mc-0007",
+        "whs-mc-0008",
+        "whs-mc-0009",
+        "whs-mc-0010",
+        "whs-mc-0011",
+        "whs-mc-0012",
+        "whs-mc-0013",
+        "whs-mc-0014",
+        "whs-mc-0015",
+        "whs-mc-0016",
+        "whs-mc-0017",
+        "whs-mc-0018",
+        "whs-mc-0019",
+        "whs-mc-0020",
+        "whs-mc-0021",
+        "whs-mc-0022",
+        "whs-mc-0023",
+        "whs-mc-0024"
+      ]
+    },
+    {
+      "mockNumber": 2,
+      "title": "Workplace Health & Safety Awareness Test 2",
+      "questionIds": [
+        "whs-mc-0025",
+        "whs-mc-0026",
+        "whs-mc-0027",
+        "whs-mc-0028",
+        "whs-mc-0029",
+        "whs-mc-0030",
+        "whs-mc-0031",
+        "whs-mc-0032",
+        "whs-mc-0033",
+        "whs-mc-0034",
+        "whs-mc-0035",
+        "whs-mc-0036",
+        "whs-mc-0037",
+        "whs-mc-0038",
+        "whs-mc-0039",
+        "whs-mc-0040",
+        "whs-mc-0041",
+        "whs-mc-0042",
+        "whs-mc-0043",
+        "whs-mc-0044",
+        "whs-mc-0045",
+        "whs-mc-0046",
+        "whs-mc-0047",
+        "whs-mc-0048"
+      ]
+    },
+    {
+      "mockNumber": 3,
+      "title": "Workplace Health & Safety Awareness Test 3",
+      "questionIds": [
+        "whs-mc-0049",
+        "whs-mc-0050",
+        "whs-mc-0051",
+        "whs-mc-0052",
+        "whs-mc-0053",
+        "whs-mc-0054",
+        "whs-mc-0055",
+        "whs-mc-0056",
+        "whs-mc-0057",
+        "whs-mc-0058",
+        "whs-mc-0059",
+        "whs-mc-0060",
+        "whs-mc-0061",
+        "whs-mc-0062",
+        "whs-mc-0063",
+        "whs-mc-0064",
+        "whs-mc-0065",
+        "whs-mc-0066",
+        "whs-mc-0067",
+        "whs-mc-0068",
+        "whs-mc-0069",
+        "whs-mc-0070",
+        "whs-mc-0071",
+        "whs-mc-0072"
+      ]
+    },
+    {
+      "mockNumber": 4,
+      "title": "Workplace Health & Safety Awareness Test 4",
+      "questionIds": [
+        "whs-mc-0073",
+        "whs-mc-0074",
+        "whs-mc-0075",
+        "whs-mc-0076",
+        "whs-mc-0077",
+        "whs-mc-0078",
+        "whs-mc-0079",
+        "whs-mc-0080",
+        "whs-mc-0081",
+        "whs-mc-0082",
+        "whs-mc-0083",
+        "whs-mc-0084",
+        "whs-mc-0085",
+        "whs-mc-0086",
+        "whs-mc-0087",
+        "whs-mc-0088",
+        "whs-mc-0089",
+        "whs-mc-0090",
+        "whs-mc-0091",
+        "whs-mc-0092",
+        "whs-mc-0093",
+        "whs-mc-0094",
+        "whs-mc-0095",
+        "whs-mc-0096"
+      ]
+    },
+    {
+      "mockNumber": 5,
+      "title": "Workplace Health & Safety Awareness Test 5",
+      "questionIds": [
+        "whs-mc-0097",
+        "whs-mc-0098",
+        "whs-mc-0099",
+        "whs-mc-0100",
+        "whs-mc-0101",
+        "whs-mc-0102",
+        "whs-mc-0103",
+        "whs-mc-0104",
+        "whs-mc-0105",
+        "whs-mc-0106",
+        "whs-mc-0001",
+        "whs-mc-0002",
+        "whs-mc-0003",
+        "whs-mc-0004",
+        "whs-mc-0005",
+        "whs-mc-0006",
+        "whs-mc-0007",
+        "whs-mc-0008",
+        "whs-mc-0009",
+        "whs-mc-0010",
+        "whs-mc-0011",
+        "whs-mc-0012",
+        "whs-mc-0013",
+        "whs-mc-0014"
+      ]
+    },
+    {
+      "mockNumber": 6,
+      "title": "Workplace Health & Safety Awareness Test 6",
+      "questionIds": [
+        "whs-mc-0015",
+        "whs-mc-0016",
+        "whs-mc-0017",
+        "whs-mc-0018",
+        "whs-mc-0019",
+        "whs-mc-0020",
+        "whs-mc-0021",
+        "whs-mc-0022",
+        "whs-mc-0023",
+        "whs-mc-0024",
+        "whs-mc-0025",
+        "whs-mc-0026",
+        "whs-mc-0027",
+        "whs-mc-0028",
+        "whs-mc-0029",
+        "whs-mc-0030",
+        "whs-mc-0031",
+        "whs-mc-0032",
+        "whs-mc-0033",
+        "whs-mc-0034",
+        "whs-mc-0035",
+        "whs-mc-0036",
+        "whs-mc-0037",
+        "whs-mc-0038"
+      ]
+    },
+    {
+      "mockNumber": 7,
+      "title": "Workplace Health & Safety Awareness Test 7",
+      "questionIds": [
+        "whs-mc-0039",
+        "whs-mc-0040",
+        "whs-mc-0041",
+        "whs-mc-0042",
+        "whs-mc-0043",
+        "whs-mc-0044",
+        "whs-mc-0045",
+        "whs-mc-0046",
+        "whs-mc-0047",
+        "whs-mc-0048",
+        "whs-mc-0049",
+        "whs-mc-0050",
+        "whs-mc-0051",
+        "whs-mc-0052",
+        "whs-mc-0053",
+        "whs-mc-0054",
+        "whs-mc-0055",
+        "whs-mc-0056",
+        "whs-mc-0057",
+        "whs-mc-0058",
+        "whs-mc-0059",
+        "whs-mc-0060",
+        "whs-mc-0061",
+        "whs-mc-0062"
+      ]
+    },
+    {
+      "mockNumber": 8,
+      "title": "Workplace Health & Safety Awareness Test 8",
+      "questionIds": [
+        "whs-mc-0063",
+        "whs-mc-0064",
+        "whs-mc-0065",
+        "whs-mc-0066",
+        "whs-mc-0067",
+        "whs-mc-0068",
+        "whs-mc-0069",
+        "whs-mc-0070",
+        "whs-mc-0071",
+        "whs-mc-0072",
+        "whs-mc-0073",
+        "whs-mc-0074",
+        "whs-mc-0075",
+        "whs-mc-0076",
+        "whs-mc-0077",
+        "whs-mc-0078",
+        "whs-mc-0079",
+        "whs-mc-0080",
+        "whs-mc-0081",
+        "whs-mc-0082",
+        "whs-mc-0083",
+        "whs-mc-0084",
+        "whs-mc-0085",
+        "whs-mc-0086"
+      ]
+    },
+    {
+      "mockNumber": 9,
+      "title": "Workplace Health & Safety Awareness Test 9",
+      "questionIds": [
+        "whs-mc-0087",
+        "whs-mc-0088",
+        "whs-mc-0089",
+        "whs-mc-0090",
+        "whs-mc-0091",
+        "whs-mc-0092",
+        "whs-mc-0093",
+        "whs-mc-0094",
+        "whs-mc-0095",
+        "whs-mc-0096",
+        "whs-mc-0097",
+        "whs-mc-0098",
+        "whs-mc-0099",
+        "whs-mc-0100",
+        "whs-mc-0101",
+        "whs-mc-0102",
+        "whs-mc-0103",
+        "whs-mc-0104",
+        "whs-mc-0105",
+        "whs-mc-0106",
+        "whs-mc-0001",
+        "whs-mc-0002",
+        "whs-mc-0003",
+        "whs-mc-0004"
+      ]
+    },
+    {
+      "mockNumber": 10,
+      "title": "Workplace Health & Safety Awareness Test 10",
+      "questionIds": [
+        "whs-mc-0005",
+        "whs-mc-0006",
+        "whs-mc-0007",
+        "whs-mc-0008",
+        "whs-mc-0009",
+        "whs-mc-0010",
+        "whs-mc-0011",
+        "whs-mc-0012",
+        "whs-mc-0013",
+        "whs-mc-0014",
+        "whs-mc-0015",
+        "whs-mc-0016",
+        "whs-mc-0017",
+        "whs-mc-0018",
+        "whs-mc-0019",
+        "whs-mc-0020",
+        "whs-mc-0021",
+        "whs-mc-0022",
+        "whs-mc-0023",
+        "whs-mc-0024",
+        "whs-mc-0025",
+        "whs-mc-0026",
+        "whs-mc-0027",
+        "whs-mc-0028"
+      ]
+    },
+    {
+      "mockNumber": 11,
+      "title": "Workplace Health & Safety Awareness Test 11",
+      "questionIds": [
+        "whs-mc-0029",
+        "whs-mc-0030",
+        "whs-mc-0031",
+        "whs-mc-0032",
+        "whs-mc-0033",
+        "whs-mc-0034",
+        "whs-mc-0035",
+        "whs-mc-0036",
+        "whs-mc-0037",
+        "whs-mc-0038",
+        "whs-mc-0039",
+        "whs-mc-0040",
+        "whs-mc-0041",
+        "whs-mc-0042",
+        "whs-mc-0043",
+        "whs-mc-0044",
+        "whs-mc-0045",
+        "whs-mc-0046",
+        "whs-mc-0047",
+        "whs-mc-0048",
+        "whs-mc-0049",
+        "whs-mc-0050",
+        "whs-mc-0051",
+        "whs-mc-0052"
+      ]
+    },
+    {
+      "mockNumber": 12,
+      "title": "Workplace Health & Safety Awareness Test 12",
+      "questionIds": [
+        "whs-mc-0053",
+        "whs-mc-0054",
+        "whs-mc-0055",
+        "whs-mc-0056",
+        "whs-mc-0057",
+        "whs-mc-0058",
+        "whs-mc-0059",
+        "whs-mc-0060",
+        "whs-mc-0061",
+        "whs-mc-0062",
+        "whs-mc-0063",
+        "whs-mc-0064",
+        "whs-mc-0065",
+        "whs-mc-0066",
+        "whs-mc-0067",
+        "whs-mc-0068",
+        "whs-mc-0069",
+        "whs-mc-0070",
+        "whs-mc-0071",
+        "whs-mc-0072",
+        "whs-mc-0073",
+        "whs-mc-0074",
+        "whs-mc-0075",
+        "whs-mc-0076"
+      ]
+    },
+    {
+      "mockNumber": 13,
+      "title": "Workplace Health & Safety Awareness Test 13",
+      "questionIds": [
+        "whs-mc-0077",
+        "whs-mc-0078",
+        "whs-mc-0079",
+        "whs-mc-0080",
+        "whs-mc-0081",
+        "whs-mc-0082",
+        "whs-mc-0083",
+        "whs-mc-0084",
+        "whs-mc-0085",
+        "whs-mc-0086",
+        "whs-mc-0087",
+        "whs-mc-0088",
+        "whs-mc-0089",
+        "whs-mc-0090",
+        "whs-mc-0091",
+        "whs-mc-0092",
+        "whs-mc-0093",
+        "whs-mc-0094",
+        "whs-mc-0095",
+        "whs-mc-0096",
+        "whs-mc-0097",
+        "whs-mc-0098",
+        "whs-mc-0099",
+        "whs-mc-0100"
+      ]
+    },
+    {
+      "mockNumber": 14,
+      "title": "Workplace Health & Safety Awareness Test 14",
+      "questionIds": [
+        "whs-mc-0101",
+        "whs-mc-0102",
+        "whs-mc-0103",
+        "whs-mc-0104",
+        "whs-mc-0105",
+        "whs-mc-0106",
+        "whs-mc-0001",
+        "whs-mc-0002",
+        "whs-mc-0003",
+        "whs-mc-0004",
+        "whs-mc-0005",
+        "whs-mc-0006",
+        "whs-mc-0007",
+        "whs-mc-0008",
+        "whs-mc-0009",
+        "whs-mc-0010",
+        "whs-mc-0011",
+        "whs-mc-0012",
+        "whs-mc-0013",
+        "whs-mc-0014",
+        "whs-mc-0015",
+        "whs-mc-0016",
+        "whs-mc-0017",
+        "whs-mc-0018"
+      ]
+    },
+    {
+      "mockNumber": 15,
+      "title": "Workplace Health & Safety Awareness Test 15",
+      "questionIds": [
+        "whs-mc-0019",
+        "whs-mc-0020",
+        "whs-mc-0021",
+        "whs-mc-0022",
+        "whs-mc-0023",
+        "whs-mc-0024",
+        "whs-mc-0025",
+        "whs-mc-0026",
+        "whs-mc-0027",
+        "whs-mc-0028",
+        "whs-mc-0029",
+        "whs-mc-0030",
+        "whs-mc-0031",
+        "whs-mc-0032",
+        "whs-mc-0033",
+        "whs-mc-0034",
+        "whs-mc-0035",
+        "whs-mc-0036",
+        "whs-mc-0037",
+        "whs-mc-0038",
+        "whs-mc-0039",
+        "whs-mc-0040",
+        "whs-mc-0041",
+        "whs-mc-0042"
+      ]
+    },
+    {
+      "mockNumber": 16,
+      "title": "Workplace Health & Safety Awareness Test 16",
+      "questionIds": [
+        "whs-mc-0043",
+        "whs-mc-0044",
+        "whs-mc-0045",
+        "whs-mc-0046",
+        "whs-mc-0047",
+        "whs-mc-0048",
+        "whs-mc-0049",
+        "whs-mc-0050",
+        "whs-mc-0051",
+        "whs-mc-0052",
+        "whs-mc-0053",
+        "whs-mc-0054",
+        "whs-mc-0055",
+        "whs-mc-0056",
+        "whs-mc-0057",
+        "whs-mc-0058",
+        "whs-mc-0059",
+        "whs-mc-0060",
+        "whs-mc-0061",
+        "whs-mc-0062",
+        "whs-mc-0063",
+        "whs-mc-0064",
+        "whs-mc-0065",
+        "whs-mc-0066"
+      ]
+    },
+    {
+      "mockNumber": 17,
+      "title": "Workplace Health & Safety Awareness Test 17",
+      "questionIds": [
+        "whs-mc-0067",
+        "whs-mc-0068",
+        "whs-mc-0069",
+        "whs-mc-0070",
+        "whs-mc-0071",
+        "whs-mc-0072",
+        "whs-mc-0073",
+        "whs-mc-0074",
+        "whs-mc-0075",
+        "whs-mc-0076",
+        "whs-mc-0077",
+        "whs-mc-0078",
+        "whs-mc-0079",
+        "whs-mc-0080",
+        "whs-mc-0081",
+        "whs-mc-0082",
+        "whs-mc-0083",
+        "whs-mc-0084",
+        "whs-mc-0085",
+        "whs-mc-0086",
+        "whs-mc-0087",
+        "whs-mc-0088",
+        "whs-mc-0089",
+        "whs-mc-0090"
+      ]
+    },
+    {
+      "mockNumber": 18,
+      "title": "Workplace Health & Safety Awareness Test 18",
+      "questionIds": [
+        "whs-mc-0091",
+        "whs-mc-0092",
+        "whs-mc-0093",
+        "whs-mc-0094",
+        "whs-mc-0095",
+        "whs-mc-0096",
+        "whs-mc-0097",
+        "whs-mc-0098",
+        "whs-mc-0099",
+        "whs-mc-0100",
+        "whs-mc-0101",
+        "whs-mc-0102",
+        "whs-mc-0103",
+        "whs-mc-0104",
+        "whs-mc-0105",
+        "whs-mc-0106",
+        "whs-mc-0001",
+        "whs-mc-0002",
+        "whs-mc-0003",
+        "whs-mc-0004",
+        "whs-mc-0005",
+        "whs-mc-0006",
+        "whs-mc-0007",
+        "whs-mc-0008"
+      ]
+    },
+    {
+      "mockNumber": 19,
+      "title": "Workplace Health & Safety Awareness Test 19",
+      "questionIds": [
+        "whs-mc-0009",
+        "whs-mc-0010",
+        "whs-mc-0011",
+        "whs-mc-0012",
+        "whs-mc-0013",
+        "whs-mc-0014",
+        "whs-mc-0015",
+        "whs-mc-0016",
+        "whs-mc-0017",
+        "whs-mc-0018",
+        "whs-mc-0019",
+        "whs-mc-0020",
+        "whs-mc-0021",
+        "whs-mc-0022",
+        "whs-mc-0023",
+        "whs-mc-0024",
+        "whs-mc-0025",
+        "whs-mc-0026",
+        "whs-mc-0027",
+        "whs-mc-0028",
+        "whs-mc-0029",
+        "whs-mc-0030",
+        "whs-mc-0031",
+        "whs-mc-0032"
+      ]
+    },
+    {
+      "mockNumber": 20,
+      "title": "Workplace Health & Safety Awareness Test 20",
+      "questionIds": [
+        "whs-mc-0033",
+        "whs-mc-0034",
+        "whs-mc-0035",
+        "whs-mc-0036",
+        "whs-mc-0037",
+        "whs-mc-0038",
+        "whs-mc-0039",
+        "whs-mc-0040",
+        "whs-mc-0041",
+        "whs-mc-0042",
+        "whs-mc-0043",
+        "whs-mc-0044",
+        "whs-mc-0045",
+        "whs-mc-0046",
+        "whs-mc-0047",
+        "whs-mc-0048",
+        "whs-mc-0049",
+        "whs-mc-0050",
+        "whs-mc-0051",
+        "whs-mc-0052",
+        "whs-mc-0053",
+        "whs-mc-0054",
+        "whs-mc-0055",
+        "whs-mc-0056"
+      ]
+    },
+    {
+      "mockNumber": 21,
+      "title": "Workplace Health & Safety Awareness Test 21",
+      "questionIds": [
+        "whs-mc-0057",
+        "whs-mc-0058",
+        "whs-mc-0059",
+        "whs-mc-0060",
+        "whs-mc-0061",
+        "whs-mc-0062",
+        "whs-mc-0063",
+        "whs-mc-0064",
+        "whs-mc-0065",
+        "whs-mc-0066",
+        "whs-mc-0067",
+        "whs-mc-0068",
+        "whs-mc-0069",
+        "whs-mc-0070",
+        "whs-mc-0071",
+        "whs-mc-0072",
+        "whs-mc-0073",
+        "whs-mc-0074",
+        "whs-mc-0075",
+        "whs-mc-0076",
+        "whs-mc-0077",
+        "whs-mc-0078",
+        "whs-mc-0079",
+        "whs-mc-0080"
+      ]
+    },
+    {
+      "mockNumber": 22,
+      "title": "Workplace Health & Safety Awareness Test 22",
+      "questionIds": [
+        "whs-mc-0081",
+        "whs-mc-0082",
+        "whs-mc-0083",
+        "whs-mc-0084",
+        "whs-mc-0085",
+        "whs-mc-0086",
+        "whs-mc-0087",
+        "whs-mc-0088",
+        "whs-mc-0089",
+        "whs-mc-0090",
+        "whs-mc-0091",
+        "whs-mc-0092",
+        "whs-mc-0093",
+        "whs-mc-0094",
+        "whs-mc-0095",
+        "whs-mc-0096",
+        "whs-mc-0097",
+        "whs-mc-0098",
+        "whs-mc-0099",
+        "whs-mc-0100",
+        "whs-mc-0101",
+        "whs-mc-0102",
+        "whs-mc-0103",
+        "whs-mc-0104"
+      ]
+    },
+    {
+      "mockNumber": 23,
+      "title": "Workplace Health & Safety Awareness Test 23",
+      "questionIds": [
+        "whs-mc-0105",
+        "whs-mc-0106",
+        "whs-mc-0001",
+        "whs-mc-0002",
+        "whs-mc-0003",
+        "whs-mc-0004",
+        "whs-mc-0005",
+        "whs-mc-0006",
+        "whs-mc-0007",
+        "whs-mc-0008",
+        "whs-mc-0009",
+        "whs-mc-0010",
+        "whs-mc-0011",
+        "whs-mc-0012",
+        "whs-mc-0013",
+        "whs-mc-0014",
+        "whs-mc-0015",
+        "whs-mc-0016",
+        "whs-mc-0017",
+        "whs-mc-0018",
+        "whs-mc-0019",
+        "whs-mc-0020",
+        "whs-mc-0021",
+        "whs-mc-0022"
+      ]
+    },
+    {
+      "mockNumber": 24,
+      "title": "Workplace Health & Safety Awareness Test 24",
+      "questionIds": [
+        "whs-mc-0023",
+        "whs-mc-0024",
+        "whs-mc-0025",
+        "whs-mc-0026",
+        "whs-mc-0027",
+        "whs-mc-0028",
+        "whs-mc-0029",
+        "whs-mc-0030",
+        "whs-mc-0031",
+        "whs-mc-0032",
+        "whs-mc-0033",
+        "whs-mc-0034",
+        "whs-mc-0035",
+        "whs-mc-0036",
+        "whs-mc-0037",
+        "whs-mc-0038",
+        "whs-mc-0039",
+        "whs-mc-0040",
+        "whs-mc-0041",
+        "whs-mc-0042",
+        "whs-mc-0043",
+        "whs-mc-0044",
+        "whs-mc-0045",
+        "whs-mc-0046"
+      ]
+    },
+    {
+      "mockNumber": 25,
+      "title": "Workplace Health & Safety Awareness Test 25",
+      "questionIds": [
+        "whs-mc-0047",
+        "whs-mc-0048",
+        "whs-mc-0049",
+        "whs-mc-0050",
+        "whs-mc-0051",
+        "whs-mc-0052",
+        "whs-mc-0053",
+        "whs-mc-0054",
+        "whs-mc-0055",
+        "whs-mc-0056",
+        "whs-mc-0057",
+        "whs-mc-0058",
+        "whs-mc-0059",
+        "whs-mc-0060",
+        "whs-mc-0061",
+        "whs-mc-0062",
+        "whs-mc-0063",
+        "whs-mc-0064",
+        "whs-mc-0065",
+        "whs-mc-0066",
+        "whs-mc-0067",
+        "whs-mc-0068",
+        "whs-mc-0069",
+        "whs-mc-0070"
+      ]
+    },
+    {
+      "mockNumber": 26,
+      "title": "Workplace Health & Safety Awareness Test 26",
+      "questionIds": [
+        "whs-mc-0071",
+        "whs-mc-0072",
+        "whs-mc-0073",
+        "whs-mc-0074",
+        "whs-mc-0075",
+        "whs-mc-0076",
+        "whs-mc-0077",
+        "whs-mc-0078",
+        "whs-mc-0079",
+        "whs-mc-0080",
+        "whs-mc-0081",
+        "whs-mc-0082",
+        "whs-mc-0083",
+        "whs-mc-0084",
+        "whs-mc-0085",
+        "whs-mc-0086",
+        "whs-mc-0087",
+        "whs-mc-0088",
+        "whs-mc-0089",
+        "whs-mc-0090",
+        "whs-mc-0091",
+        "whs-mc-0092",
+        "whs-mc-0093",
+        "whs-mc-0094"
+      ]
+    },
+    {
+      "mockNumber": 27,
+      "title": "Workplace Health & Safety Awareness Test 27",
+      "questionIds": [
+        "whs-mc-0095",
+        "whs-mc-0096",
+        "whs-mc-0097",
+        "whs-mc-0098",
+        "whs-mc-0099",
+        "whs-mc-0100",
+        "whs-mc-0101",
+        "whs-mc-0102",
+        "whs-mc-0103",
+        "whs-mc-0104",
+        "whs-mc-0105",
+        "whs-mc-0106",
+        "whs-mc-0001",
+        "whs-mc-0002",
+        "whs-mc-0003",
+        "whs-mc-0004",
+        "whs-mc-0005",
+        "whs-mc-0006",
+        "whs-mc-0007",
+        "whs-mc-0008",
+        "whs-mc-0009",
+        "whs-mc-0010",
+        "whs-mc-0011",
+        "whs-mc-0012"
+      ]
+    },
+    {
+      "mockNumber": 28,
+      "title": "Workplace Health & Safety Awareness Test 28",
+      "questionIds": [
+        "whs-mc-0013",
+        "whs-mc-0014",
+        "whs-mc-0015",
+        "whs-mc-0016",
+        "whs-mc-0017",
+        "whs-mc-0018",
+        "whs-mc-0019",
+        "whs-mc-0020",
+        "whs-mc-0021",
+        "whs-mc-0022",
+        "whs-mc-0023",
+        "whs-mc-0024",
+        "whs-mc-0025",
+        "whs-mc-0026",
+        "whs-mc-0027",
+        "whs-mc-0028",
+        "whs-mc-0029",
+        "whs-mc-0030",
+        "whs-mc-0031",
+        "whs-mc-0032",
+        "whs-mc-0033",
+        "whs-mc-0034",
+        "whs-mc-0035",
+        "whs-mc-0036"
+      ]
+    },
+    {
+      "mockNumber": 29,
+      "title": "Workplace Health & Safety Awareness Test 29",
+      "questionIds": [
+        "whs-mc-0037",
+        "whs-mc-0038",
+        "whs-mc-0039",
+        "whs-mc-0040",
+        "whs-mc-0041",
+        "whs-mc-0042",
+        "whs-mc-0043",
+        "whs-mc-0044",
+        "whs-mc-0045",
+        "whs-mc-0046",
+        "whs-mc-0047",
+        "whs-mc-0048",
+        "whs-mc-0049",
+        "whs-mc-0050",
+        "whs-mc-0051",
+        "whs-mc-0052",
+        "whs-mc-0053",
+        "whs-mc-0054",
+        "whs-mc-0055",
+        "whs-mc-0056",
+        "whs-mc-0057",
+        "whs-mc-0058",
+        "whs-mc-0059",
+        "whs-mc-0060"
+      ]
+    },
+    {
+      "mockNumber": 30,
+      "title": "Workplace Health & Safety Awareness Test 30",
+      "questionIds": [
+        "whs-mc-0061",
+        "whs-mc-0062",
+        "whs-mc-0063",
+        "whs-mc-0064",
+        "whs-mc-0065",
+        "whs-mc-0066",
+        "whs-mc-0067",
+        "whs-mc-0068",
+        "whs-mc-0069",
+        "whs-mc-0070",
+        "whs-mc-0071",
+        "whs-mc-0072",
+        "whs-mc-0073",
+        "whs-mc-0074",
+        "whs-mc-0075",
+        "whs-mc-0076",
+        "whs-mc-0077",
+        "whs-mc-0078",
+        "whs-mc-0079",
+        "whs-mc-0080",
+        "whs-mc-0081",
+        "whs-mc-0082",
+        "whs-mc-0083",
+        "whs-mc-0084"
+      ]
+    },
+    {
+      "mockNumber": 31,
+      "title": "Workplace Health & Safety Awareness Test 31",
+      "questionIds": [
+        "whs-mc-0085",
+        "whs-mc-0086",
+        "whs-mc-0087",
+        "whs-mc-0088",
+        "whs-mc-0089",
+        "whs-mc-0090",
+        "whs-mc-0091",
+        "whs-mc-0092",
+        "whs-mc-0093",
+        "whs-mc-0094",
+        "whs-mc-0095",
+        "whs-mc-0096",
+        "whs-mc-0097",
+        "whs-mc-0098",
+        "whs-mc-0099",
+        "whs-mc-0100",
+        "whs-mc-0101",
+        "whs-mc-0102",
+        "whs-mc-0103",
+        "whs-mc-0104",
+        "whs-mc-0105",
+        "whs-mc-0106",
+        "whs-mc-0001",
+        "whs-mc-0002"
+      ]
+    },
+    {
+      "mockNumber": 32,
+      "title": "Workplace Health & Safety Awareness Test 32",
+      "questionIds": [
+        "whs-mc-0003",
+        "whs-mc-0004",
+        "whs-mc-0005",
+        "whs-mc-0006",
+        "whs-mc-0007",
+        "whs-mc-0008",
+        "whs-mc-0009",
+        "whs-mc-0010",
+        "whs-mc-0011",
+        "whs-mc-0012",
+        "whs-mc-0013",
+        "whs-mc-0014",
+        "whs-mc-0015",
+        "whs-mc-0016",
+        "whs-mc-0017",
+        "whs-mc-0018",
+        "whs-mc-0019",
+        "whs-mc-0020",
+        "whs-mc-0021",
+        "whs-mc-0022",
+        "whs-mc-0023",
+        "whs-mc-0024",
+        "whs-mc-0025",
+        "whs-mc-0026"
+      ]
+    },
+    {
+      "mockNumber": 33,
+      "title": "Workplace Health & Safety Awareness Test 33",
+      "questionIds": [
+        "whs-mc-0027",
+        "whs-mc-0028",
+        "whs-mc-0029",
+        "whs-mc-0030",
+        "whs-mc-0031",
+        "whs-mc-0032",
+        "whs-mc-0033",
+        "whs-mc-0034",
+        "whs-mc-0035",
+        "whs-mc-0036",
+        "whs-mc-0037",
+        "whs-mc-0038",
+        "whs-mc-0039",
+        "whs-mc-0040",
+        "whs-mc-0041",
+        "whs-mc-0042",
+        "whs-mc-0043",
+        "whs-mc-0044",
+        "whs-mc-0045",
+        "whs-mc-0046",
+        "whs-mc-0047",
+        "whs-mc-0048",
+        "whs-mc-0049",
+        "whs-mc-0050"
+      ]
+    },
+    {
+      "mockNumber": 34,
+      "title": "Workplace Health & Safety Awareness Test 34",
+      "questionIds": [
+        "whs-mc-0051",
+        "whs-mc-0052",
+        "whs-mc-0053",
+        "whs-mc-0054",
+        "whs-mc-0055",
+        "whs-mc-0056",
+        "whs-mc-0057",
+        "whs-mc-0058",
+        "whs-mc-0059",
+        "whs-mc-0060",
+        "whs-mc-0061",
+        "whs-mc-0062",
+        "whs-mc-0063",
+        "whs-mc-0064",
+        "whs-mc-0065",
+        "whs-mc-0066",
+        "whs-mc-0067",
+        "whs-mc-0068",
+        "whs-mc-0069",
+        "whs-mc-0070",
+        "whs-mc-0071",
+        "whs-mc-0072",
+        "whs-mc-0073",
+        "whs-mc-0074"
+      ]
+    },
+    {
+      "mockNumber": 35,
+      "title": "Workplace Health & Safety Awareness Test 35",
+      "questionIds": [
+        "whs-mc-0075",
+        "whs-mc-0076",
+        "whs-mc-0077",
+        "whs-mc-0078",
+        "whs-mc-0079",
+        "whs-mc-0080",
+        "whs-mc-0081",
+        "whs-mc-0082",
+        "whs-mc-0083",
+        "whs-mc-0084",
+        "whs-mc-0085",
+        "whs-mc-0086",
+        "whs-mc-0087",
+        "whs-mc-0088",
+        "whs-mc-0089",
+        "whs-mc-0090",
+        "whs-mc-0091",
+        "whs-mc-0092",
+        "whs-mc-0093",
+        "whs-mc-0094",
+        "whs-mc-0095",
+        "whs-mc-0096",
+        "whs-mc-0097",
+        "whs-mc-0098"
+      ]
+    },
+    {
+      "mockNumber": 36,
+      "title": "Workplace Health & Safety Awareness Test 36",
+      "questionIds": [
+        "whs-mc-0099",
+        "whs-mc-0100",
+        "whs-mc-0101",
+        "whs-mc-0102",
+        "whs-mc-0103",
+        "whs-mc-0104",
+        "whs-mc-0105",
+        "whs-mc-0106",
+        "whs-mc-0001",
+        "whs-mc-0002",
+        "whs-mc-0003",
+        "whs-mc-0004",
+        "whs-mc-0005",
+        "whs-mc-0006",
+        "whs-mc-0007",
+        "whs-mc-0008",
+        "whs-mc-0009",
+        "whs-mc-0010",
+        "whs-mc-0011",
+        "whs-mc-0012",
+        "whs-mc-0013",
+        "whs-mc-0014",
+        "whs-mc-0015",
+        "whs-mc-0016"
+      ]
+    },
+    {
+      "mockNumber": 37,
+      "title": "Workplace Health & Safety Awareness Test 37",
+      "questionIds": [
+        "whs-mc-0017",
+        "whs-mc-0018",
+        "whs-mc-0019",
+        "whs-mc-0020",
+        "whs-mc-0021",
+        "whs-mc-0022",
+        "whs-mc-0023",
+        "whs-mc-0024",
+        "whs-mc-0025",
+        "whs-mc-0026",
+        "whs-mc-0027",
+        "whs-mc-0028",
+        "whs-mc-0029",
+        "whs-mc-0030",
+        "whs-mc-0031",
+        "whs-mc-0032",
+        "whs-mc-0033",
+        "whs-mc-0034",
+        "whs-mc-0035",
+        "whs-mc-0036",
+        "whs-mc-0037",
+        "whs-mc-0038",
+        "whs-mc-0039",
+        "whs-mc-0040"
+      ]
+    },
+    {
+      "mockNumber": 38,
+      "title": "Workplace Health & Safety Awareness Test 38",
+      "questionIds": [
+        "whs-mc-0041",
+        "whs-mc-0042",
+        "whs-mc-0043",
+        "whs-mc-0044",
+        "whs-mc-0045",
+        "whs-mc-0046",
+        "whs-mc-0047",
+        "whs-mc-0048",
+        "whs-mc-0049",
+        "whs-mc-0050",
+        "whs-mc-0051",
+        "whs-mc-0052",
+        "whs-mc-0053",
+        "whs-mc-0054",
+        "whs-mc-0055",
+        "whs-mc-0056",
+        "whs-mc-0057",
+        "whs-mc-0058",
+        "whs-mc-0059",
+        "whs-mc-0060",
+        "whs-mc-0061",
+        "whs-mc-0062",
+        "whs-mc-0063",
+        "whs-mc-0064"
+      ]
+    },
+    {
+      "mockNumber": 39,
+      "title": "Workplace Health & Safety Awareness Test 39",
+      "questionIds": [
+        "whs-mc-0065",
+        "whs-mc-0066",
+        "whs-mc-0067",
+        "whs-mc-0068",
+        "whs-mc-0069",
+        "whs-mc-0070",
+        "whs-mc-0071",
+        "whs-mc-0072",
+        "whs-mc-0073",
+        "whs-mc-0074",
+        "whs-mc-0075",
+        "whs-mc-0076",
+        "whs-mc-0077",
+        "whs-mc-0078",
+        "whs-mc-0079",
+        "whs-mc-0080",
+        "whs-mc-0081",
+        "whs-mc-0082",
+        "whs-mc-0083",
+        "whs-mc-0084",
+        "whs-mc-0085",
+        "whs-mc-0086",
+        "whs-mc-0087",
+        "whs-mc-0088"
+      ]
+    },
+    {
+      "mockNumber": 40,
+      "title": "Workplace Health & Safety Awareness Test 40",
+      "questionIds": [
+        "whs-mc-0089",
+        "whs-mc-0090",
+        "whs-mc-0091",
+        "whs-mc-0092",
+        "whs-mc-0093",
+        "whs-mc-0094",
+        "whs-mc-0095",
+        "whs-mc-0096",
+        "whs-mc-0097",
+        "whs-mc-0098",
+        "whs-mc-0099",
+        "whs-mc-0100",
+        "whs-mc-0101",
+        "whs-mc-0102",
+        "whs-mc-0103",
+        "whs-mc-0104",
+        "whs-mc-0105",
+        "whs-mc-0106",
+        "whs-mc-0001",
+        "whs-mc-0002",
+        "whs-mc-0003",
+        "whs-mc-0004",
+        "whs-mc-0005",
+        "whs-mc-0006"
+      ]
+    },
+    {
+      "mockNumber": 41,
+      "title": "Workplace Health & Safety Awareness Test 41",
+      "questionIds": [
+        "whs-mc-0007",
+        "whs-mc-0008",
+        "whs-mc-0009",
+        "whs-mc-0010",
+        "whs-mc-0011",
+        "whs-mc-0012",
+        "whs-mc-0013",
+        "whs-mc-0014",
+        "whs-mc-0015",
+        "whs-mc-0016",
+        "whs-mc-0017",
+        "whs-mc-0018",
+        "whs-mc-0019",
+        "whs-mc-0020",
+        "whs-mc-0021",
+        "whs-mc-0022",
+        "whs-mc-0023",
+        "whs-mc-0024",
+        "whs-mc-0025",
+        "whs-mc-0026",
+        "whs-mc-0027",
+        "whs-mc-0028",
+        "whs-mc-0029",
+        "whs-mc-0030"
+      ]
+    },
+    {
+      "mockNumber": 42,
+      "title": "Workplace Health & Safety Awareness Test 42",
+      "questionIds": [
+        "whs-mc-0031",
+        "whs-mc-0032",
+        "whs-mc-0033",
+        "whs-mc-0034",
+        "whs-mc-0035",
+        "whs-mc-0036",
+        "whs-mc-0037",
+        "whs-mc-0038",
+        "whs-mc-0039",
+        "whs-mc-0040",
+        "whs-mc-0041",
+        "whs-mc-0042",
+        "whs-mc-0043",
+        "whs-mc-0044",
+        "whs-mc-0045",
+        "whs-mc-0046",
+        "whs-mc-0047",
+        "whs-mc-0048",
+        "whs-mc-0049",
+        "whs-mc-0050",
+        "whs-mc-0051",
+        "whs-mc-0052",
+        "whs-mc-0053",
+        "whs-mc-0054"
+      ]
+    },
+    {
+      "mockNumber": 43,
+      "title": "Workplace Health & Safety Awareness Test 43",
+      "questionIds": [
+        "whs-mc-0055",
+        "whs-mc-0056",
+        "whs-mc-0057",
+        "whs-mc-0058",
+        "whs-mc-0059",
+        "whs-mc-0060",
+        "whs-mc-0061",
+        "whs-mc-0062",
+        "whs-mc-0063",
+        "whs-mc-0064",
+        "whs-mc-0065",
+        "whs-mc-0066",
+        "whs-mc-0067",
+        "whs-mc-0068",
+        "whs-mc-0069",
+        "whs-mc-0070",
+        "whs-mc-0071",
+        "whs-mc-0072",
+        "whs-mc-0073",
+        "whs-mc-0074",
+        "whs-mc-0075",
+        "whs-mc-0076",
+        "whs-mc-0077",
+        "whs-mc-0078"
+      ]
+    },
+    {
+      "mockNumber": 44,
+      "title": "Workplace Health & Safety Awareness Test 44",
+      "questionIds": [
+        "whs-mc-0079",
+        "whs-mc-0080",
+        "whs-mc-0081",
+        "whs-mc-0082",
+        "whs-mc-0083",
+        "whs-mc-0084",
+        "whs-mc-0085",
+        "whs-mc-0086",
+        "whs-mc-0087",
+        "whs-mc-0088",
+        "whs-mc-0089",
+        "whs-mc-0090",
+        "whs-mc-0091",
+        "whs-mc-0092",
+        "whs-mc-0093",
+        "whs-mc-0094",
+        "whs-mc-0095",
+        "whs-mc-0096",
+        "whs-mc-0097",
+        "whs-mc-0098",
+        "whs-mc-0099",
+        "whs-mc-0100",
+        "whs-mc-0101",
+        "whs-mc-0102"
+      ]
+    },
+    {
+      "mockNumber": 45,
+      "title": "Workplace Health & Safety Awareness Test 45",
+      "questionIds": [
+        "whs-mc-0103",
+        "whs-mc-0104",
+        "whs-mc-0105",
+        "whs-mc-0106",
+        "whs-mc-0001",
+        "whs-mc-0002",
+        "whs-mc-0003",
+        "whs-mc-0004",
+        "whs-mc-0005",
+        "whs-mc-0006",
+        "whs-mc-0007",
+        "whs-mc-0008",
+        "whs-mc-0009",
+        "whs-mc-0010",
+        "whs-mc-0011",
+        "whs-mc-0012",
+        "whs-mc-0013",
+        "whs-mc-0014",
+        "whs-mc-0015",
+        "whs-mc-0016",
+        "whs-mc-0017",
+        "whs-mc-0018",
+        "whs-mc-0019",
+        "whs-mc-0020"
+      ]
+    }
+  ]
+}
