@@ -7,12 +7,12 @@
       "type": "multiple_choice",
       "question": "Which UK Act is the foundation of workplace health and safety law?",
       "options": [
-        "Health and Safety at Work etc. Act 1974",
-        "Workplace Safety Act 1992",
+        "Factory Act 1961",
         "Employment Rights Act 1996",
-        "Factory Act 1961"
+        "Health and Safety at Work etc. Act 1974",
+        "Workplace Safety Act 1992"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 2,
       "explanation": "The Health and Safety at Work etc. Act 1974 (HSWA) is the primary piece of UK legislation covering workplace health and safety."
     },
     {
@@ -20,12 +20,12 @@
       "type": "multiple_choice",
       "question": "Who has a duty to ensure, so far as is reasonably practicable, the health and safety of employees at work?",
       "options": [
-        "The employer",
-        "Only the safety officer",
+        "Only HSE inspectors",
         "Only the employees",
-        "Only HSE inspectors"
+        "Only the safety officer",
+        "The employer"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 3,
       "explanation": "Section 2 of HSWA places a duty on every employer to ensure the H&S of their employees so far as is reasonably practicable."
     },
     {
@@ -34,9 +34,9 @@
       "question": "What does 'so far as is reasonably practicable' mean?",
       "options": [
         "Weighing risk against the cost, time and effort to control it",
-        "Doing nothing at all",
+        "Only acting if an accident happens",
         "Eliminating every risk regardless of cost",
-        "Only acting if an accident happens"
+        "Doing nothing at all"
       ],
       "correctAnswer": 0,
       "explanation": "It means balancing the level of risk against the resources (money, time, trouble) needed to control it."
@@ -46,12 +46,12 @@
       "type": "multiple_choice",
       "question": "Which body enforces health and safety law in most UK workplaces?",
       "options": [
-        "HSE (Health and Safety Executive)",
         "DVLA",
         "DVSA",
-        "Ofsted"
+        "Ofsted",
+        "HSE (Health and Safety Executive)"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 3,
       "explanation": "The HSE is the main UK regulator for workplace health and safety, alongside local authorities for some sectors."
     },
     {
@@ -59,12 +59,12 @@
       "type": "multiple_choice",
       "question": "What does RIDDOR stand for?",
       "options": [
-        "Reporting of Injuries, Diseases and Dangerous Occurrences Regulations",
-        "Regulation of Industrial Damage and Dangerous Occurrences Rules",
         "Rapid Incident Disclosure Reporting Rules",
-        "Reporting of Injuries, Damage, Dust and Operational Risks"
+        "Regulation of Industrial Damage and Dangerous Occurrences Rules",
+        "Reporting of Injuries, Damage, Dust and Operational Risks",
+        "Reporting of Injuries, Diseases and Dangerous Occurrences Regulations"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 3,
       "explanation": "RIDDOR = Reporting of Injuries, Diseases and Dangerous Occurrences Regulations 2013."
     },
     {
@@ -73,8 +73,8 @@
       "question": "Under RIDDOR, which of these must be reported?",
       "options": [
         "A specified injury such as a fractured arm",
-        "A paper cut",
         "A trip with no injury",
+        "A paper cut",
         "A near miss with no consequence"
       ],
       "correctAnswer": 0,
@@ -85,9 +85,9 @@
       "type": "multiple_choice",
       "question": "How long can an employee be off work due to a work-related injury before it becomes reportable under RIDDOR?",
       "options": [
-        "More than 3 consecutive days",
-        "More than 7 consecutive days (not counting the day of the incident)",
         "More than 14 days",
+        "More than 7 consecutive days (not counting the day of the incident)",
+        "More than 3 consecutive days",
         "More than 28 days"
       ],
       "correctAnswer": 1,
@@ -98,12 +98,12 @@
       "type": "multiple_choice",
       "question": "What does COSHH stand for?",
       "options": [
-        "Control of Substances Hazardous to Health",
-        "Care of Safety Standards in Health",
         "Code of Safe Health Handling",
-        "Containment of Substances and Hazardous Handling"
+        "Containment of Substances and Hazardous Handling",
+        "Care of Safety Standards in Health",
+        "Control of Substances Hazardous to Health"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 3,
       "explanation": "COSHH = Control of Substances Hazardous to Health Regulations 2002."
     },
     {
@@ -111,12 +111,12 @@
       "type": "multiple_choice",
       "question": "Which is the FIRST step of a risk assessment under the Management of Health and Safety at Work Regulations 1999?",
       "options": [
-        "Identify the hazards",
+        "Issue a permit to work",
         "Buy PPE",
-        "Write a method statement",
-        "Issue a permit to work"
+        "Identify the hazards",
+        "Write a method statement"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 2,
       "explanation": "Step 1 of the HSE 5-step model is to identify the hazards."
     },
     {
@@ -124,12 +124,12 @@
       "type": "multiple_choice",
       "question": "How many steps does the HSE's standard risk assessment model have?",
       "options": [
-        "3",
-        "4",
         "5",
-        "7"
+        "7",
+        "3",
+        "4"
       ],
-      "correctAnswer": 2,
+      "correctAnswer": 0,
       "explanation": "HSE describes a 5-step model: identify hazards, decide who could be harmed, evaluate risks and controls, record findings, review."
     },
     {
@@ -137,12 +137,12 @@
       "type": "multiple_choice",
       "question": "What is the difference between a hazard and a risk?",
       "options": [
+        "A hazard is only legal terminology",
         "A hazard has the potential to cause harm; a risk is the likelihood and severity of that harm occurring",
         "They are the same thing",
-        "A risk is always physical, a hazard is always chemical",
-        "A hazard is only legal terminology"
+        "A risk is always physical, a hazard is always chemical"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 1,
       "explanation": "A hazard is anything with potential to cause harm; risk is the likelihood combined with severity."
     },
     {
@@ -150,12 +150,12 @@
       "type": "multiple_choice",
       "question": "Which is the highest in the hierarchy of control measures?",
       "options": [
+        "Train staff",
         "Eliminate the hazard",
         "Use PPE",
-        "Issue safety signs",
-        "Train staff"
+        "Issue safety signs"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 1,
       "explanation": "Elimination is the most effective control; PPE is the last line of defence."
     },
     {
@@ -163,12 +163,12 @@
       "type": "multiple_choice",
       "question": "Where does PPE sit in the hierarchy of control?",
       "options": [
-        "At the top — used first",
-        "In the middle — equal to engineering controls",
-        "At the bottom — last resort after other controls",
-        "PPE is not part of the hierarchy"
+        "In the middle \u2014 equal to engineering controls",
+        "PPE is not part of the hierarchy",
+        "At the top \u2014 used first",
+        "At the bottom \u2014 last resort after other controls"
       ],
-      "correctAnswer": 2,
+      "correctAnswer": 3,
       "explanation": "PPE is the lowest tier in the hierarchy and should be used only when higher controls cannot adequately reduce the risk."
     },
     {
@@ -176,12 +176,12 @@
       "type": "multiple_choice",
       "question": "Who pays for PPE that is required for work?",
       "options": [
-        "The employer, free of charge to employees",
         "The employee",
-        "The HSE",
-        "Split 50/50"
+        "Split 50/50",
+        "The employer, free of charge to employees",
+        "The HSE"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 2,
       "explanation": "Under PPE at Work Regulations 1992, employers must provide suitable PPE free of charge."
     },
     {
@@ -189,12 +189,12 @@
       "type": "multiple_choice",
       "question": "Which Regulations cover manual handling at work?",
       "options": [
-        "Manual Handling Operations Regulations 1992",
         "Lifting Operations Regulations 2002",
         "Working Time Regulations 1998",
+        "Manual Handling Operations Regulations 1992",
         "Provision of Work Equipment Regulations 1998"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 2,
       "explanation": "Manual Handling Operations Regulations 1992 (as amended) govern manual handling tasks."
     },
     {
@@ -202,25 +202,25 @@
       "type": "multiple_choice",
       "question": "What is the FIRST consideration when there's a risk from manual handling?",
       "options": [
-        "Avoid the manual handling task if reasonably practicable",
+        "Lift quickly",
         "Wear gloves",
-        "Use a back belt",
-        "Lift quickly"
+        "Avoid the manual handling task if reasonably practicable",
+        "Use a back belt"
       ],
-      "correctAnswer": 0,
-      "explanation": "MHOR follows: avoid → assess → reduce — start by avoiding the task where reasonably practicable."
+      "correctAnswer": 2,
+      "explanation": "MHOR follows: avoid \u2192 assess \u2192 reduce \u2014 start by avoiding the task where reasonably practicable."
     },
     {
       "id": "whs-mc-0017",
       "type": "multiple_choice",
       "question": "Which body part is most commonly injured by poor manual handling?",
       "options": [
-        "The back, especially the lower back",
-        "The feet",
         "The eyes",
-        "The teeth"
+        "The teeth",
+        "The feet",
+        "The back, especially the lower back"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 3,
       "explanation": "Lower-back injuries account for the largest share of manual handling injuries."
     },
     {
@@ -228,12 +228,12 @@
       "type": "multiple_choice",
       "question": "Which is the correct technique for lifting a load from the floor?",
       "options": [
-        "Bend the knees, keep the back straight, hold the load close to the body",
         "Bend the back, keep the knees straight",
-        "Twist while lifting",
-        "Lift with arms fully extended"
+        "Bend the knees, keep the back straight, hold the load close to the body",
+        "Lift with arms fully extended",
+        "Twist while lifting"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 1,
       "explanation": "Good lifting technique = stable stance, knees bent, back straight, load close to the centre of the body, no twisting."
     },
     {
@@ -241,13 +241,13 @@
       "type": "multiple_choice",
       "question": "Which colour usually indicates a 'prohibition' safety sign?",
       "options": [
-        "Red circle with diagonal bar on white background",
         "Yellow triangle",
         "Blue circle",
+        "Red circle with diagonal bar on white background",
         "Green square"
       ],
-      "correctAnswer": 0,
-      "explanation": "Prohibition signs are round, red and white with a diagonal bar — e.g. 'No smoking'."
+      "correctAnswer": 2,
+      "explanation": "Prohibition signs are round, red and white with a diagonal bar \u2014 e.g. 'No smoking'."
     },
     {
       "id": "whs-mc-0020",
@@ -255,9 +255,9 @@
       "question": "Which colour and shape is used for warning safety signs?",
       "options": [
         "Yellow triangle with black border",
-        "Blue circle",
         "Red circle",
-        "Green square"
+        "Green square",
+        "Blue circle"
       ],
       "correctAnswer": 0,
       "explanation": "Warning signs are yellow triangles with a black border."
@@ -269,49 +269,49 @@
       "options": [
         "Blue circle",
         "Red circle",
-        "Yellow triangle",
-        "Green square"
+        "Green square",
+        "Yellow triangle"
       ],
       "correctAnswer": 0,
-      "explanation": "Mandatory signs are blue circles — e.g. 'Wear ear protection'."
+      "explanation": "Mandatory signs are blue circles \u2014 e.g. 'Wear ear protection'."
     },
     {
       "id": "whs-mc-0022",
       "type": "multiple_choice",
       "question": "Which colour is used for safe condition signs (e.g. fire exit)?",
       "options": [
-        "Green",
+        "Yellow",
         "Red",
-        "Blue",
-        "Yellow"
+        "Green",
+        "Blue"
       ],
-      "correctAnswer": 0,
-      "explanation": "Safe condition signs are green and rectangular — e.g. fire exit, first aid."
+      "correctAnswer": 2,
+      "explanation": "Safe condition signs are green and rectangular \u2014 e.g. fire exit, first aid."
     },
     {
       "id": "whs-mc-0023",
       "type": "multiple_choice",
       "question": "What does the fire triangle consist of?",
       "options": [
-        "Heat, fuel, oxygen",
         "Smoke, water, dust",
         "Wood, paper, plastic",
+        "Heat, fuel, oxygen",
         "Sparks, flames, alarms"
       ],
-      "correctAnswer": 0,
-      "explanation": "Fire needs heat, fuel and oxygen — remove any one to extinguish."
+      "correctAnswer": 2,
+      "explanation": "Fire needs heat, fuel and oxygen \u2014 remove any one to extinguish."
     },
     {
       "id": "whs-mc-0024",
       "type": "multiple_choice",
       "question": "Which fire extinguisher class is suitable for electrical fires?",
       "options": [
-        "CO2 (carbon dioxide)",
-        "Water",
         "Foam",
+        "Water",
+        "CO2 (carbon dioxide)",
         "Wet chemical"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 2,
       "explanation": "CO2 is safe on live electrical equipment; water and foam conduct electricity."
     },
     {
@@ -319,12 +319,12 @@
       "type": "multiple_choice",
       "question": "Which fire extinguisher is best for cooking oil/fat fires?",
       "options": [
+        "CO2",
         "Wet chemical",
         "Water",
-        "CO2",
         "Powder"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 1,
       "explanation": "Class F (cooking oils and fats) fires are tackled with wet chemical extinguishers."
     },
     {
@@ -332,12 +332,12 @@
       "type": "multiple_choice",
       "question": "What should you do FIRST if you discover a fire at work?",
       "options": [
-        "Raise the alarm",
-        "Try to extinguish it before telling anyone",
         "Finish your task",
-        "Take a photo for the report"
+        "Raise the alarm",
+        "Take a photo for the report",
+        "Try to extinguish it before telling anyone"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 1,
       "explanation": "Always raise the alarm first so people can evacuate."
     },
     {
@@ -345,12 +345,12 @@
       "type": "multiple_choice",
       "question": "On hearing the fire alarm, you should:",
       "options": [
-        "Leave by the nearest safe exit and go to the assembly point",
         "Collect your belongings first",
         "Use the lift",
-        "Hide under your desk"
+        "Hide under your desk",
+        "Leave by the nearest safe exit and go to the assembly point"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 3,
       "explanation": "Evacuate via the nearest safe exit, use stairs (not lifts) and go straight to the assembly point."
     },
     {
@@ -358,12 +358,12 @@
       "type": "multiple_choice",
       "question": "Why must you not use the lifts during a fire alarm?",
       "options": [
-        "They can fail, fill with smoke or strand people",
         "They are too slow",
         "They cost too much to operate",
-        "They are reserved for managers"
+        "They are reserved for managers",
+        "They can fail, fill with smoke or strand people"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 3,
       "explanation": "Lifts can lose power, trap occupants and act as a chimney for smoke and heat."
     },
     {
@@ -385,9 +385,9 @@
       "question": "Under DSE Regulations, who is entitled to a free eye test paid for by the employer?",
       "options": [
         "DSE users (employees who use display screens as a significant part of their normal work)",
-        "Only office managers",
+        "Anyone, regardless of role",
         "Only IT staff",
-        "Anyone, regardless of role"
+        "Only office managers"
       ],
       "correctAnswer": 0,
       "explanation": "DSE users can request an eye test paid for by the employer."
@@ -397,25 +397,25 @@
       "type": "multiple_choice",
       "question": "What is the recommended approach to long DSE sessions?",
       "options": [
-        "Take short, frequent breaks away from the screen",
-        "Work non-stop for 8 hours",
+        "Skip breaks to finish early",
         "Use one long lunch break only",
-        "Skip breaks to finish early"
+        "Take short, frequent breaks away from the screen",
+        "Work non-stop for 8 hours"
       ],
-      "correctAnswer": 0,
-      "explanation": "Short, frequent breaks reduce eyestrain and musculoskeletal strain — far better than one long break."
+      "correctAnswer": 2,
+      "explanation": "Short, frequent breaks reduce eyestrain and musculoskeletal strain \u2014 far better than one long break."
     },
     {
       "id": "whs-mc-0032",
       "type": "multiple_choice",
       "question": "Which Regulations require workplaces to have suitable welfare facilities (toilets, drinking water, rest areas)?",
       "options": [
-        "Workplace (Health, Safety and Welfare) Regulations 1992",
         "Welfare Act 1968",
-        "HSWA 1974 directly",
-        "Public Health Act 1875"
+        "Public Health Act 1875",
+        "Workplace (Health, Safety and Welfare) Regulations 1992",
+        "HSWA 1974 directly"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 2,
       "explanation": "These regulations cover basic welfare facilities, temperature, lighting, ventilation and cleanliness."
     },
     {
@@ -423,38 +423,38 @@
       "type": "multiple_choice",
       "question": "What is the minimum recommended workplace temperature for indoor sedentary work in the UK?",
       "options": [
-        "At least 16°C",
-        "At least 10°C",
-        "At least 25°C",
-        "There is no recommendation"
+        "At least 10\u00b0C",
+        "There is no recommendation",
+        "At least 25\u00b0C",
+        "At least 16\u00b0C"
       ],
-      "correctAnswer": 0,
-      "explanation": "HSE recommends a minimum of 16°C for sedentary indoor work (13°C for physical work)."
+      "correctAnswer": 3,
+      "explanation": "HSE recommends a minimum of 16\u00b0C for sedentary indoor work (13\u00b0C for physical work)."
     },
     {
       "id": "whs-mc-0034",
       "type": "multiple_choice",
       "question": "Who must complete the accident book entry for a workplace injury?",
       "options": [
-        "The injured person or someone acting on their behalf",
         "Only the HR director",
+        "Only the fire warden",
         "Only an HSE inspector",
-        "Only the fire warden"
+        "The injured person or someone acting on their behalf"
       ],
-      "correctAnswer": 0,
-      "explanation": "Entries can be made by the injured person or by someone on their behalf — and must respect data protection."
+      "correctAnswer": 3,
+      "explanation": "Entries can be made by the injured person or by someone on their behalf \u2014 and must respect data protection."
     },
     {
       "id": "whs-mc-0035",
       "type": "multiple_choice",
       "question": "Why must accident book entries be removed and stored separately once completed?",
       "options": [
-        "Data protection — they contain personal information",
-        "To save space",
         "To hide them from staff",
+        "To save space",
+        "Data protection \u2014 they contain personal information",
         "Because of fire risk"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 2,
       "explanation": "Completed pages must be removed and stored securely to comply with UK GDPR/Data Protection."
     },
     {
@@ -462,12 +462,12 @@
       "type": "multiple_choice",
       "question": "Which document explains how a specific task should be done safely?",
       "options": [
-        "A safe system of work / method statement",
-        "An invoice",
+        "A delivery note",
         "An organisational chart",
-        "A delivery note"
+        "An invoice",
+        "A safe system of work / method statement"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 3,
       "explanation": "A safe system of work (often supported by a method statement) sets out how to do a task safely."
     },
     {
@@ -475,12 +475,12 @@
       "type": "multiple_choice",
       "question": "What is a 'near miss'?",
       "options": [
-        "An incident that could have caused injury or damage but didn't",
         "An injury requiring hospital treatment",
+        "An incident that could have caused injury or damage but didn't",
         "A fatal accident",
         "A reportable disease"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 1,
       "explanation": "A near miss is an unplanned event that didn't result in injury or damage but had the potential to."
     },
     {
@@ -489,24 +489,24 @@
       "question": "Why are near misses important?",
       "options": [
         "They highlight underlying hazards before someone is hurt",
-        "They never need recording",
         "They prove staff are careless",
+        "They never need recording",
         "They reduce insurance premiums automatically"
       ],
       "correctAnswer": 0,
-      "explanation": "Investigating near misses helps prevent future accidents — they are leading indicators."
+      "explanation": "Investigating near misses helps prevent future accidents \u2014 they are leading indicators."
     },
     {
       "id": "whs-mc-0039",
       "type": "multiple_choice",
       "question": "Which of these is the correct order of priority in the fire safety hierarchy?",
       "options": [
-        "Prevent → detect → alert → evacuate → fight (only if trained and safe)",
-        "Fight → alert → evacuate",
-        "Evacuate → ignore alarms",
-        "Detect → ignore → carry on"
+        "Fight \u2192 alert \u2192 evacuate",
+        "Detect \u2192 ignore \u2192 carry on",
+        "Evacuate \u2192 ignore alarms",
+        "Prevent \u2192 detect \u2192 alert \u2192 evacuate \u2192 fight (only if trained and safe)"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 3,
       "explanation": "Prevent ignition, detect quickly, alert occupants, evacuate, and only tackle if trained and safe."
     },
     {
@@ -514,12 +514,12 @@
       "type": "multiple_choice",
       "question": "Which Regulations cover the safe use of work equipment such as power tools and machinery?",
       "options": [
-        "PUWER 1998 — Provision and Use of Work Equipment Regulations",
         "WAH 2005",
-        "LOLER 1998",
-        "RIDDOR 2013"
+        "RIDDOR 2013",
+        "PUWER 1998 \u2014 Provision and Use of Work Equipment Regulations",
+        "LOLER 1998"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 2,
       "explanation": "PUWER 1998 covers the safe selection, use, inspection and maintenance of work equipment."
     },
     {
@@ -527,13 +527,13 @@
       "type": "multiple_choice",
       "question": "Which Regulations cover lifting equipment and lifting operations?",
       "options": [
-        "LOLER 1998",
         "PUWER 1998",
         "MHOR 1992",
-        "WAH 2005"
+        "WAH 2005",
+        "LOLER 1998"
       ],
-      "correctAnswer": 0,
-      "explanation": "LOLER 1998 — Lifting Operations and Lifting Equipment Regulations — covers cranes, hoists, lifts and slings."
+      "correctAnswer": 3,
+      "explanation": "LOLER 1998 \u2014 Lifting Operations and Lifting Equipment Regulations \u2014 covers cranes, hoists, lifts and slings."
     },
     {
       "id": "whs-mc-0042",
@@ -541,9 +541,9 @@
       "question": "Which Regulations cover work at height?",
       "options": [
         "The Work at Height Regulations 2005",
-        "HSWA 1974 only",
         "PUWER 1998",
-        "LOLER 1998"
+        "LOLER 1998",
+        "HSWA 1974 only"
       ],
       "correctAnswer": 0,
       "explanation": "The Work at Height Regulations 2005 require height work to be properly planned, supervised and carried out safely."
@@ -553,25 +553,25 @@
       "type": "multiple_choice",
       "question": "Which is the FIRST priority when planning work at height?",
       "options": [
-        "Avoid working at height if reasonably practicable",
+        "Use a ladder",
         "Buy a harness",
-        "Issue a permit",
-        "Use a ladder"
+        "Avoid working at height if reasonably practicable",
+        "Issue a permit"
       ],
-      "correctAnswer": 0,
-      "explanation": "Avoid → prevent → minimise — start by avoiding the need to work at height where possible."
+      "correctAnswer": 2,
+      "explanation": "Avoid \u2192 prevent \u2192 minimise \u2014 start by avoiding the need to work at height where possible."
     },
     {
       "id": "whs-mc-0044",
       "type": "multiple_choice",
       "question": "Which Regulations protect against the risks of asbestos?",
       "options": [
-        "Control of Asbestos Regulations 2012",
         "COSHH 2002 only",
-        "PUWER 1998",
-        "HSWA 1974 only"
+        "Control of Asbestos Regulations 2012",
+        "HSWA 1974 only",
+        "PUWER 1998"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 1,
       "explanation": "Control of Asbestos Regulations 2012 (CAR 2012) place specific duties on duty-holders and employers."
     },
     {
@@ -580,24 +580,24 @@
       "question": "If you suspect a material contains asbestos, you should:",
       "options": [
         "Stop work, leave the area undisturbed and report to your supervisor immediately",
-        "Sand it down to check",
+        "Throw it in the skip",
         "Drill into it to confirm",
-        "Throw it in the skip"
+        "Sand it down to check"
       ],
       "correctAnswer": 0,
-      "explanation": "Suspected ACMs (asbestos-containing materials) must not be disturbed — stop work and report."
+      "explanation": "Suspected ACMs (asbestos-containing materials) must not be disturbed \u2014 stop work and report."
     },
     {
       "id": "whs-mc-0046",
       "type": "multiple_choice",
       "question": "What is the duty under HSWA section 7 placed on employees?",
       "options": [
-        "Take reasonable care for their own and others' health and safety, and cooperate with the employer",
-        "Pay for their own PPE",
         "Ignore safety procedures if busy",
+        "Pay for their own PPE",
+        "Take reasonable care for their own and others' health and safety, and cooperate with the employer",
         "Report only fatal incidents"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 2,
       "explanation": "Section 7 requires employees to take reasonable care and cooperate with H&S arrangements."
     },
     {
@@ -605,12 +605,12 @@
       "type": "multiple_choice",
       "question": "Can an employee be prosecuted personally for a serious breach of health and safety law?",
       "options": [
-        "Yes — employees can be prosecuted under sections 7 and 8 of HSWA",
-        "No — only employers can be prosecuted",
         "Only HSE inspectors face prosecution",
-        "Only directors face prosecution"
+        "No \u2014 only employers can be prosecuted",
+        "Only directors face prosecution",
+        "Yes \u2014 employees can be prosecuted under sections 7 and 8 of HSWA"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 3,
       "explanation": "Both employees and employers can be prosecuted for serious breaches."
     },
     {
@@ -620,8 +620,8 @@
       "options": [
         "Safety Representatives and Safety Committees Regulations 1977 and the H&S (Consultation with Employees) Regulations 1996",
         "HSWA only",
-        "PUWER only",
-        "RIDDOR only"
+        "RIDDOR only",
+        "PUWER only"
       ],
       "correctAnswer": 0,
       "explanation": "Either union-appointed safety representatives or directly-elected representatives of employee safety must be consulted."
@@ -631,12 +631,12 @@
       "type": "multiple_choice",
       "question": "What is the maximum noise exposure level (lower exposure action value) before action is required under the Control of Noise at Work Regulations 2005?",
       "options": [
-        "80 dB(A) daily/weekly average",
         "120 dB(A)",
         "60 dB(A)",
-        "100 dB(A)"
+        "100 dB(A)",
+        "80 dB(A) daily/weekly average"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 3,
       "explanation": "Lower action value = 80 dB(A); upper action value = 85 dB(A); exposure limit = 87 dB(A)."
     },
     {
@@ -644,12 +644,12 @@
       "type": "multiple_choice",
       "question": "What is the upper exposure action value for noise under the 2005 Regulations?",
       "options": [
-        "85 dB(A)",
-        "60 dB(A)",
         "70 dB(A)",
-        "100 dB(A)"
+        "60 dB(A)",
+        "100 dB(A)",
+        "85 dB(A)"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 3,
       "explanation": "At 85 dB(A) employers must provide hearing protection and create hearing protection zones."
     },
     {
@@ -663,32 +663,32 @@
         "Hi-vis vest"
       ],
       "correctAnswer": 0,
-      "explanation": "Respiratory Protective Equipment (RPE) — selected after a face-fit test for tight-fitting masks — protects the lungs."
+      "explanation": "Respiratory Protective Equipment (RPE) \u2014 selected after a face-fit test for tight-fitting masks \u2014 protects the lungs."
     },
     {
       "id": "whs-mc-0052",
       "type": "multiple_choice",
       "question": "Why is face-fit testing important for tight-fitting respirators?",
       "options": [
-        "A poor fit lets contaminated air leak in around the seal",
-        "It's a legal formality only",
         "It improves comfort only",
-        "It changes the mask's colour"
+        "It changes the mask's colour",
+        "It's a legal formality only",
+        "A poor fit lets contaminated air leak in around the seal"
       ],
-      "correctAnswer": 0,
-      "explanation": "If the seal isn't tight, contaminated air bypasses the filter — making the RPE useless."
+      "correctAnswer": 3,
+      "explanation": "If the seal isn't tight, contaminated air bypasses the filter \u2014 making the RPE useless."
     },
     {
       "id": "whs-mc-0053",
       "type": "multiple_choice",
       "question": "What does a SDS (Safety Data Sheet) tell you?",
       "options": [
-        "The hazards, safe handling, storage and emergency information for a chemical",
-        "The price of the chemical",
         "The history of the manufacturer",
-        "The marketing slogan"
+        "The marketing slogan",
+        "The hazards, safe handling, storage and emergency information for a chemical",
+        "The price of the chemical"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 2,
       "explanation": "Safety Data Sheets must be supplied with hazardous chemicals and underpin COSHH assessments."
     },
     {
@@ -696,12 +696,12 @@
       "type": "multiple_choice",
       "question": "Which is the safest way to store flammable liquids on site?",
       "options": [
-        "In a designated, ventilated and bunded flammable store, away from ignition sources",
         "Next to the boiler",
-        "Under the kitchen sink with food",
-        "In an open bucket on the shop floor"
+        "In a designated, ventilated and bunded flammable store, away from ignition sources",
+        "In an open bucket on the shop floor",
+        "Under the kitchen sink with food"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 1,
       "explanation": "Flammables must be stored in suitable cabinets/stores with ventilation, segregation and away from ignition."
     },
     {
@@ -709,12 +709,12 @@
       "type": "multiple_choice",
       "question": "Which is the safest electrical safety practice?",
       "options": [
-        "Use portable appliance testing (PAT) and visual checks; isolate before maintenance",
-        "Repair live equipment",
         "Run cables across walkways",
-        "Overload sockets with adapters"
+        "Use portable appliance testing (PAT) and visual checks; isolate before maintenance",
+        "Overload sockets with adapters",
+        "Repair live equipment"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 1,
       "explanation": "Visual inspections, PAT (where appropriate), proper isolation and avoiding trip hazards keep electrical work safe."
     },
     {
@@ -722,12 +722,12 @@
       "type": "multiple_choice",
       "question": "What does LOTO stand for in electrical and machinery safety?",
       "options": [
-        "Lockout / Tagout — isolating energy sources before work",
-        "Lift Or Take Out",
+        "Low Operation Tag Out",
         "Load On Top Off",
-        "Low Operation Tag Out"
+        "Lift Or Take Out",
+        "Lockout / Tagout \u2014 isolating energy sources before work"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 3,
       "explanation": "LOTO is the procedure to isolate energy and prevent unexpected re-energisation during maintenance."
     },
     {
@@ -735,12 +735,12 @@
       "type": "multiple_choice",
       "question": "Which document allows specific high-risk work to proceed only after authorisation and controls?",
       "options": [
-        "A permit to work",
         "A purchase order",
-        "A timesheet",
-        "A delivery note"
+        "A delivery note",
+        "A permit to work",
+        "A timesheet"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 2,
       "explanation": "A permit to work is a formal authorisation used for high-risk activities (hot work, confined spaces, etc.)."
     },
     {
@@ -748,13 +748,13 @@
       "type": "multiple_choice",
       "question": "What is the safest approach to entering a confined space?",
       "options": [
+        "Leave the entry hatch unattended",
         "Avoid entry if possible; if not, use a permit, atmosphere testing, trained personnel and rescue plan",
-        "Send one person in alone",
         "Test the air after entering",
-        "Leave the entry hatch unattended"
+        "Send one person in alone"
       ],
-      "correctAnswer": 0,
-      "explanation": "Confined Spaces Regulations 1997 — avoid entry, plan, train, test atmosphere, have rescue arrangements."
+      "correctAnswer": 1,
+      "explanation": "Confined Spaces Regulations 1997 \u2014 avoid entry, plan, train, test atmosphere, have rescue arrangements."
     },
     {
       "id": "whs-mc-0059",
@@ -762,9 +762,9 @@
       "question": "Why is good housekeeping important on a worksite?",
       "options": [
         "It reduces slips, trips, fire load and fall hazards",
-        "It only makes the place look tidy",
         "It is just a cosmetic concern",
-        "It is irrelevant to safety"
+        "It is irrelevant to safety",
+        "It only makes the place look tidy"
       ],
       "correctAnswer": 0,
       "explanation": "Poor housekeeping is one of the most common causes of workplace injuries."
@@ -774,12 +774,12 @@
       "type": "multiple_choice",
       "question": "Which is the leading cause of workplace injury in UK offices and shops?",
       "options": [
+        "Lightning strikes",
         "Slips, trips and falls on the same level",
-        "Falls from cranes",
         "Asbestos exposure",
-        "Lightning strikes"
+        "Falls from cranes"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 1,
       "explanation": "Slips and trips consistently cause the largest share of non-fatal workplace injuries."
     },
     {
@@ -787,12 +787,12 @@
       "type": "multiple_choice",
       "question": "What should you do if a floor is wet?",
       "options": [
+        "Cover with newspaper",
         "Display a wet floor sign and dry/clean promptly; restrict access if necessary",
         "Ignore it",
-        "Tell the next visitor verbally only",
-        "Cover with newspaper"
+        "Tell the next visitor verbally only"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 1,
       "explanation": "Visible warning signs and prompt cleaning are essential to manage slip risks."
     },
     {
@@ -800,12 +800,12 @@
       "type": "multiple_choice",
       "question": "Which is a typical 'specified injury' under RIDDOR?",
       "options": [
+        "A common cold caught at work",
         "Fracture (other than to fingers, thumbs or toes)",
         "A bruise",
-        "A common cold caught at work",
         "Tiredness"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 1,
       "explanation": "RIDDOR specified injuries include serious fractures, amputations, serious burns and loss of consciousness."
     },
     {
@@ -813,12 +813,12 @@
       "type": "multiple_choice",
       "question": "How quickly must a dangerous occurrence be reported under RIDDOR?",
       "options": [
-        "Without delay (usually within 10 days, online via HSE)",
-        "Within a year",
         "Within 5 years",
-        "It never needs reporting"
+        "It never needs reporting",
+        "Within a year",
+        "Without delay (usually within 10 days, online via HSE)"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 3,
       "explanation": "Dangerous occurrences must be reported online to HSE without delay and within 10 days."
     },
     {
@@ -839,12 +839,12 @@
       "type": "multiple_choice",
       "question": "What does HSE stand for?",
       "options": [
-        "Health and Safety Executive",
         "Health Sector Examinations",
         "Hazardous Substances Enforcement",
+        "Health and Safety Executive",
         "Home Safety Executive"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 2,
       "explanation": "HSE = Health and Safety Executive, the GB regulator for workplace H&S."
     },
     {
@@ -852,12 +852,12 @@
       "type": "multiple_choice",
       "question": "Which is the correct definition of an 'accident' in H&S terminology?",
       "options": [
-        "An unplanned event that resulted in injury, ill-health or damage",
         "Any planned activity",
         "A meeting that ran over time",
-        "A successful project"
+        "A successful project",
+        "An unplanned event that resulted in injury, ill-health or damage"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 3,
       "explanation": "An accident is an unplanned event causing harm; near misses are events with potential but no outcome."
     },
     {
@@ -865,12 +865,12 @@
       "type": "multiple_choice",
       "question": "Which inspection rights do HSE inspectors have under HSWA?",
       "options": [
+        "Only inspect after an accident",
         "Enter premises, take measurements/samples, require information and issue improvement or prohibition notices",
         "Only enter with permission",
-        "Only inspect once a year",
-        "Only inspect after an accident"
+        "Only inspect once a year"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 1,
       "explanation": "Inspectors have wide powers including entry without notice, sampling, and serving improvement/prohibition notices."
     },
     {
@@ -878,12 +878,12 @@
       "type": "multiple_choice",
       "question": "What is the difference between an improvement notice and a prohibition notice?",
       "options": [
-        "Improvement = fix a breach by a set date; prohibition = stop the activity immediately as it carries serious risk",
-        "There is no difference",
         "Both mean the business closes",
-        "Prohibition is less serious than improvement"
+        "Prohibition is less serious than improvement",
+        "Improvement = fix a breach by a set date; prohibition = stop the activity immediately as it carries serious risk",
+        "There is no difference"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 2,
       "explanation": "Improvement notices require remedial action by a deadline; prohibition notices stop activity creating a risk of serious personal injury."
     },
     {
@@ -891,12 +891,12 @@
       "type": "multiple_choice",
       "question": "If you spot a serious hazard at work, what should you do FIRST?",
       "options": [
-        "Make the area safe if possible and report it to your supervisor / safety representative",
-        "Ignore it — it's not your job",
+        "Wait until next week's meeting",
         "Take a photo and post on social media",
-        "Wait until next week's meeting"
+        "Ignore it \u2014 it's not your job",
+        "Make the area safe if possible and report it to your supervisor / safety representative"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 3,
       "explanation": "Make it safe (or isolate) if you can do so safely, then report through the proper channels."
     },
     {
@@ -906,8 +906,8 @@
       "options": [
         "Legally required if you employ 5 or more people; sets out the policy, organisation and arrangements",
         "Only multinationals need one",
-        "Only the public sector needs one",
-        "It is optional regardless of size"
+        "It is optional regardless of size",
+        "Only the public sector needs one"
       ],
       "correctAnswer": 0,
       "explanation": "Employers with 5 or more employees must have a written H&S policy under HSWA."
@@ -917,12 +917,12 @@
       "type": "multiple_choice",
       "question": "What information must be displayed on the HSE 'Health and Safety Law' poster (or equivalent leaflet)?",
       "options": [
-        "Basic outline of H&S law and contact details for the responsible person and enforcing authority",
+        "Only the company's profits",
         "Only the staff handbook",
-        "Only fire exit information",
-        "Only the company's profits"
+        "Basic outline of H&S law and contact details for the responsible person and enforcing authority",
+        "Only fire exit information"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 2,
       "explanation": "The HSE Law poster (or leaflet) outlines workers' and employers' duties and must be displayed/issued."
     },
     {
@@ -930,13 +930,13 @@
       "type": "multiple_choice",
       "question": "Which symbol denotes a flammable substance under the GHS/CLP labelling system?",
       "options": [
-        "A flame in a red diamond",
+        "A blue circle",
         "A skull and crossbones",
-        "A green cross",
-        "A blue circle"
+        "A flame in a red diamond",
+        "A green cross"
       ],
-      "correctAnswer": 0,
-      "explanation": "GHS/CLP uses red diamond pictograms — flame indicates flammable hazards."
+      "correctAnswer": 2,
+      "explanation": "GHS/CLP uses red diamond pictograms \u2014 flame indicates flammable hazards."
     },
     {
       "id": "whs-mc-0073",
@@ -944,9 +944,9 @@
       "question": "Which GHS pictogram indicates serious health hazards (e.g. carcinogenic, mutagenic)?",
       "options": [
         "Health hazard (silhouette of a person with a star burst on the chest)",
-        "Flame",
+        "Skull and crossbones",
         "Exclamation mark",
-        "Skull and crossbones"
+        "Flame"
       ],
       "correctAnswer": 0,
       "explanation": "The 'health hazard' pictogram (CHEM-MAN figure) covers carcinogens, mutagens, reproductive toxins, respiratory sensitisers and STOTs."
@@ -956,12 +956,12 @@
       "type": "multiple_choice",
       "question": "Which GHS pictogram indicates a corrosive substance?",
       "options": [
-        "A test tube pouring onto a surface and a hand showing damage",
-        "A flame",
         "A green cross",
+        "A flame",
+        "A test tube pouring onto a surface and a hand showing damage",
         "A blue circle"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 2,
       "explanation": "The corrosion pictogram shows substances that cause skin burns, eye damage or metal corrosion."
     },
     {
@@ -969,12 +969,12 @@
       "type": "multiple_choice",
       "question": "If chemicals splash in your eye, what is the FIRST aid action?",
       "options": [
-        "Irrigate the eye with clean water for at least 10–15 minutes and seek medical help",
-        "Rub the eye to remove the chemical",
         "Apply ointment immediately",
-        "Wait to see if it stings"
+        "Wait to see if it stings",
+        "Rub the eye to remove the chemical",
+        "Irrigate the eye with clean water for at least 10\u201315 minutes and seek medical help"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 3,
       "explanation": "Immediate, prolonged irrigation with clean water minimises damage; then seek medical help."
     },
     {
@@ -982,25 +982,25 @@
       "type": "multiple_choice",
       "question": "How many first aiders does a workplace need?",
       "options": [
-        "Determined by a first-aid needs assessment considering risk, numbers, layout and travel times",
-        "Always exactly 1",
         "Always exactly 10",
-        "Not required at all"
+        "Not required at all",
+        "Always exactly 1",
+        "Determined by a first-aid needs assessment considering risk, numbers, layout and travel times"
       ],
-      "correctAnswer": 0,
-      "explanation": "There is no fixed number — employers must assess first-aid needs under the Health and Safety (First-Aid) Regulations 1981."
+      "correctAnswer": 3,
+      "explanation": "There is no fixed number \u2014 employers must assess first-aid needs under the Health and Safety (First-Aid) Regulations 1981."
     },
     {
       "id": "whs-mc-0077",
       "type": "multiple_choice",
       "question": "Which Regulations cover the provision of first aid at work?",
       "options": [
+        "LOLER only",
         "Health and Safety (First-Aid) Regulations 1981",
         "HSWA only",
-        "PUWER only",
-        "LOLER only"
+        "PUWER only"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 1,
       "explanation": "These regulations require employers to provide adequate first-aid equipment, facilities and personnel."
     },
     {
@@ -1008,12 +1008,12 @@
       "type": "multiple_choice",
       "question": "Which of these is NOT typically a contents item of a workplace first-aid kit?",
       "options": [
-        "Prescription medication",
         "Plasters",
         "Sterile dressings",
+        "Prescription medication",
         "Disposable gloves"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 2,
       "explanation": "HSE first-aid kits should not contain medication; they hold dressings, plasters, gloves, eye pads, etc."
     },
     {
@@ -1021,25 +1021,25 @@
       "type": "multiple_choice",
       "question": "Which is the correct compression rate for adult CPR?",
       "options": [
+        "200 per minute",
         "100 to 120 compressions per minute",
-        "30 per minute",
         "60 per minute",
-        "200 per minute"
+        "30 per minute"
       ],
-      "correctAnswer": 0,
-      "explanation": "Adult CPR guidelines specify 100–120 compressions per minute at a depth of 5–6cm."
+      "correctAnswer": 1,
+      "explanation": "Adult CPR guidelines specify 100\u2013120 compressions per minute at a depth of 5\u20136cm."
     },
     {
       "id": "whs-mc-0080",
       "type": "multiple_choice",
       "question": "What does AED stand for?",
       "options": [
-        "Automated External Defibrillator",
-        "Adult Emergency Device",
+        "Advanced Electric Diagnostic",
         "Automatic Eye Dropper",
-        "Advanced Electric Diagnostic"
+        "Automated External Defibrillator",
+        "Adult Emergency Device"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 2,
       "explanation": "AED = Automated External Defibrillator, used to treat cardiac arrest."
     },
     {
@@ -1047,12 +1047,12 @@
       "type": "multiple_choice",
       "question": "Which sign in green and white commonly indicates first aid?",
       "options": [
-        "White cross on a green square or rectangle",
         "Red circle",
         "Blue triangle",
-        "Yellow diamond"
+        "Yellow diamond",
+        "White cross on a green square or rectangle"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 3,
       "explanation": "Safe condition (green) signs include first aid (white cross) and emergency exits."
     },
     {
@@ -1060,12 +1060,12 @@
       "type": "multiple_choice",
       "question": "What is the recovery position used for?",
       "options": [
-        "An unconscious casualty who is breathing normally to keep their airway clear",
-        "An alert casualty who is talking",
         "Cardiac arrest",
-        "Heavy bleeding only"
+        "An unconscious casualty who is breathing normally to keep their airway clear",
+        "Heavy bleeding only",
+        "An alert casualty who is talking"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 1,
       "explanation": "The recovery position is used for an unconscious, breathing casualty to maintain the airway."
     },
     {
@@ -1073,12 +1073,12 @@
       "type": "multiple_choice",
       "question": "When should you call 999 / 112 for an emergency at work?",
       "options": [
-        "For serious injuries, breathing difficulties, suspected stroke/heart attack or any life-threatening situation",
+        "Only if a first aider isn't around",
         "Only after the manager arrives",
-        "Never — call HR first",
-        "Only if a first aider isn't around"
+        "Never \u2014 call HR first",
+        "For serious injuries, breathing difficulties, suspected stroke/heart attack or any life-threatening situation"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 3,
       "explanation": "For life-threatening emergencies always call emergency services immediately."
     },
     {
@@ -1099,12 +1099,12 @@
       "type": "multiple_choice",
       "question": "What is workplace bullying or harassment usually addressed under?",
       "options": [
-        "Equality Act 2010 and employer H&S duties (stress is an H&S risk)",
-        "HSWA only",
         "Only criminal law",
+        "HSWA only",
+        "Equality Act 2010 and employer H&S duties (stress is an H&S risk)",
         "Only HR policy with no legal basis"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 2,
       "explanation": "Bullying/harassment can breach the Equality Act 2010 and create H&S risks (work-related stress) under HSWA."
     },
     {
@@ -1112,12 +1112,12 @@
       "type": "multiple_choice",
       "question": "Which is true about work-related stress?",
       "options": [
-        "Employers must assess and control it like any other H&S risk",
         "It is not a workplace issue",
+        "Employers must assess and control it like any other H&S risk",
         "It only applies to managers",
         "It is only the GP's responsibility"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 1,
       "explanation": "HSE Management Standards treat stress as a workplace H&S issue requiring assessment and control."
     },
     {
@@ -1125,12 +1125,12 @@
       "type": "multiple_choice",
       "question": "Which type of vehicle workplace activity has its own ACOP and guidance?",
       "options": [
-        "Workplace transport — forklifts, vans and reversing vehicles",
         "Only HGVs on motorways",
+        "Only emergency vehicles",
         "Only racing cars",
-        "Only emergency vehicles"
+        "Workplace transport \u2014 forklifts, vans and reversing vehicles"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 3,
       "explanation": "HSE has specific guidance on workplace transport, including reversing, separation of pedestrians and FLT operations."
     },
     {
@@ -1138,12 +1138,12 @@
       "type": "multiple_choice",
       "question": "Why should pedestrians and vehicles be segregated on site?",
       "options": [
-        "To prevent collisions which are a major cause of workplace fatalities",
-        "Only for aesthetics",
         "To save fuel",
+        "Only for aesthetics",
+        "To prevent collisions which are a major cause of workplace fatalities",
         "To reduce car park fees"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 2,
       "explanation": "Separating pedestrians and vehicles using barriers, marked walkways and signs reduces collision risk."
     },
     {
@@ -1151,12 +1151,12 @@
       "type": "multiple_choice",
       "question": "Which young person at work needs special H&S consideration?",
       "options": [
-        "Anyone under 18 — risk assessment must take account of inexperience and immaturity",
-        "Only those under 14",
         "Only apprentices over 21",
+        "Only those under 14",
+        "Anyone under 18 \u2014 risk assessment must take account of inexperience and immaturity",
         "Only volunteers"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 2,
       "explanation": "Specific duties apply to under-18s; risk assessments must consider inexperience and competence."
     },
     {
@@ -1165,9 +1165,9 @@
       "question": "Which of the following is correct about the H&S of new and expectant mothers?",
       "options": [
         "Employers must assess risks and adjust work or hours where necessary",
-        "Pregnancy is not a workplace consideration",
+        "Only the GP decides",
         "No risk assessment is needed",
-        "Only the GP decides"
+        "Pregnancy is not a workplace consideration"
       ],
       "correctAnswer": 0,
       "explanation": "Specific risk assessment is required for new and expectant mothers under MHSWR 1999."
@@ -1177,12 +1177,12 @@
       "type": "multiple_choice",
       "question": "Which is true about contractors working on site?",
       "options": [
-        "The employer must cooperate, share H&S information and ensure contractors are competent",
         "The employer has no duties to contractors",
         "Only the contractor's manager is responsible",
-        "Contractors can ignore site rules"
+        "Contractors can ignore site rules",
+        "The employer must cooperate, share H&S information and ensure contractors are competent"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 3,
       "explanation": "Duties of cooperation, information sharing and ensuring competence apply (CDM and HSWA)."
     },
     {
@@ -1190,12 +1190,12 @@
       "type": "multiple_choice",
       "question": "Which Regulations cover construction projects in the UK?",
       "options": [
-        "Construction (Design and Management) Regulations 2015 (CDM 2015)",
-        "PUWER 1998 only",
         "LOLER 1998 only",
-        "RIDDOR 2013 only"
+        "RIDDOR 2013 only",
+        "PUWER 1998 only",
+        "Construction (Design and Management) Regulations 2015 (CDM 2015)"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 3,
       "explanation": "CDM 2015 sets duties for clients, designers, principal designers, principal contractors, contractors and workers."
     },
     {
@@ -1203,12 +1203,12 @@
       "type": "multiple_choice",
       "question": "What is the goal of induction training for new staff?",
       "options": [
-        "Cover site rules, hazards, emergency procedures and reporting before work begins",
         "Sell company merchandise",
+        "Cover site rules, hazards, emergency procedures and reporting before work begins",
         "Discuss salary",
         "Only show the canteen"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 1,
       "explanation": "Induction must cover site-specific H&S so new starters work safely from day one."
     },
     {
@@ -1216,12 +1216,12 @@
       "type": "multiple_choice",
       "question": "Which is true about toolbox talks?",
       "options": [
-        "Short, focused talks on specific H&S topics, often used on construction sites",
         "Long lectures of an hour or more",
+        "Optional with no legal value",
         "Only for managers",
-        "Optional with no legal value"
+        "Short, focused talks on specific H&S topics, often used on construction sites"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 3,
       "explanation": "Toolbox talks reinforce specific H&S topics and demonstrate ongoing consultation and training."
     },
     {
@@ -1229,12 +1229,12 @@
       "type": "multiple_choice",
       "question": "If you don't know how to do a task safely, what should you do?",
       "options": [
-        "Stop and ask your supervisor for instruction and training",
-        "Guess and continue",
         "Ask a member of the public",
-        "Skip the task and don't tell anyone"
+        "Stop and ask your supervisor for instruction and training",
+        "Skip the task and don't tell anyone",
+        "Guess and continue"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 1,
       "explanation": "Never proceed without competence; section 7 of HSWA requires employees to cooperate and not put themselves or others at risk."
     },
     {
@@ -1242,12 +1242,12 @@
       "type": "multiple_choice",
       "question": "Which of these is the most accurate statement about workplace H&S?",
       "options": [
+        "Only the cleaners are responsible",
         "Everyone in the workplace has a role in health and safety, not just managers",
         "Only the safety officer is responsible",
-        "Only the HSE is responsible",
-        "Only the cleaners are responsible"
+        "Only the HSE is responsible"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 1,
       "explanation": "H&S is a shared responsibility from board level to the newest employee."
     },
     {
@@ -1255,12 +1255,12 @@
       "type": "multiple_choice",
       "question": "Which Regulations specifically govern the safe handling of vibration risks (e.g. from power tools)?",
       "options": [
-        "Control of Vibration at Work Regulations 2005",
         "PUWER 1998 only",
+        "HSWA 1974 only",
         "RIDDOR 2013",
-        "HSWA 1974 only"
+        "Control of Vibration at Work Regulations 2005"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 3,
       "explanation": "The Control of Vibration at Work Regulations 2005 set daily exposure action and limit values for hand-arm and whole-body vibration."
     },
     {
@@ -1268,12 +1268,12 @@
       "type": "multiple_choice",
       "question": "What is HAVS?",
       "options": [
-        "Hand-Arm Vibration Syndrome — a painful, sometimes disabling condition caused by prolonged exposure to vibration",
-        "Hazardous Air Ventilation System",
         "Health and Vehicle Safety",
-        "Heavy-Asset Vibration Standard"
+        "Hand-Arm Vibration Syndrome \u2014 a painful, sometimes disabling condition caused by prolonged exposure to vibration",
+        "Heavy-Asset Vibration Standard",
+        "Hazardous Air Ventilation System"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 1,
       "explanation": "HAVS can cause numbness, tingling, loss of grip and vibration white finger; it's preventable through controls and exposure limits."
     },
     {
@@ -1281,12 +1281,12 @@
       "type": "multiple_choice",
       "question": "Which legal document allows employees to refuse to undertake work they reasonably believe is unsafe?",
       "options": [
+        "PUWER only",
         "Employment Rights Act 1996 (protection from detriment) combined with HSWA principles",
         "HSWA only",
-        "PUWER only",
         "RIDDOR only"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 1,
       "explanation": "Employees have legal protection from detriment for leaving or refusing to work in serious and imminent danger."
     },
     {
@@ -1296,8 +1296,8 @@
       "options": [
         "Required to be set up if requested in writing by two or more safety representatives",
         "Always voluntary with no legal basis",
-        "Only for fire wardens",
-        "Only annual events"
+        "Only annual events",
+        "Only for fire wardens"
       ],
       "correctAnswer": 0,
       "explanation": "Under the Safety Representatives and Safety Committees Regulations 1977, a committee must be set up on a written request from two or more representatives."
@@ -1307,12 +1307,12 @@
       "type": "multiple_choice",
       "question": "What is the role of a 'competent person' in H&S management?",
       "options": [
-        "Someone with the skills, knowledge and experience to identify hazards and advise on controls",
         "Anyone, regardless of training",
-        "Only the CEO",
-        "Only an HSE inspector"
+        "Only an HSE inspector",
+        "Someone with the skills, knowledge and experience to identify hazards and advise on controls",
+        "Only the CEO"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 2,
       "explanation": "Employers must appoint one or more competent persons to help comply with H&S law (MHSWR 1999, reg 7)."
     },
     {
@@ -1320,12 +1320,12 @@
       "type": "multiple_choice",
       "question": "Which is the correct attitude toward H&S 'shortcuts' on a routine task?",
       "options": [
-        "Don't take them — most accidents happen during familiar tasks where complacency sets in",
-        "Always take them to save time",
+        "Encourage them to boost productivity",
+        "Don't take them \u2014 most accidents happen during familiar tasks where complacency sets in",
         "Only take them at the end of the day",
-        "Encourage them to boost productivity"
+        "Always take them to save time"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 1,
       "explanation": "Complacency is a leading cause of accidents; following the safe system of work matters even on routine jobs."
     },
     {
@@ -1333,12 +1333,12 @@
       "type": "multiple_choice",
       "question": "How often should risk assessments be reviewed?",
       "options": [
+        "Only if HSE asks",
         "Whenever circumstances change, after incidents, or at regular planned intervals",
         "Only every 10 years",
-        "Never once written",
-        "Only if HSE asks"
+        "Never once written"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 1,
       "explanation": "MHSWR 1999 requires review whenever there is reason to suspect they are no longer valid or there has been a significant change."
     },
     {
@@ -1346,12 +1346,12 @@
       "type": "multiple_choice",
       "question": "Which is true about safety culture?",
       "options": [
+        "It is the responsibility of HR alone",
         "It reflects shared values, attitudes and behaviours toward safety at every level",
         "It only matters in factories",
-        "It is the responsibility of HR alone",
         "It is only relevant after a serious accident"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 1,
       "explanation": "A strong safety culture is associated with fewer accidents and is built through leadership, training and consultation."
     },
     {
@@ -1360,22 +1360,22 @@
       "question": "Which of the following best describes 'duty of care' at work?",
       "options": [
         "A legal and moral duty to take reasonable steps to prevent harm to others",
-        "An optional courtesy",
         "Only owed by employers",
-        "Only owed to customers"
+        "Only owed to customers",
+        "An optional courtesy"
       ],
       "correctAnswer": 0,
-      "explanation": "Duty of care is the cornerstone of H&S — owed by employers, employees and contractors to each other and to the public."
+      "explanation": "Duty of care is the cornerstone of H&S \u2014 owed by employers, employees and contractors to each other and to the public."
     },
     {
       "id": "whs-mc-0106",
       "type": "multiple_choice",
       "question": "Which of the following is the BEST summary of effective workplace H&S?",
       "options": [
-        "Plan → Do → Check → Act — continuously improving controls based on assessment and review",
-        "Wait for accidents to happen → react",
-        "Buy PPE → assume it's enough",
-        "Train once → never review"
+        "Plan \u2192 Do \u2192 Check \u2192 Act \u2014 continuously improving controls based on assessment and review",
+        "Buy PPE \u2192 assume it's enough",
+        "Train once \u2192 never review",
+        "Wait for accidents to happen \u2192 react"
       ],
       "correctAnswer": 0,
       "explanation": "HSE's PDCA cycle (HSG65 'Managing for health and safety') is the recognised approach to continual improvement."
