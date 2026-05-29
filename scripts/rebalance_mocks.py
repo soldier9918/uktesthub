@@ -36,7 +36,9 @@ TARGET_TOPICS = [
     "firefighter-nfsat", "first-aid", "food-hygiene", "hazard-perception",
     "health-safety-awareness", "ipaf-pasma", "manual-handling",
     "microsoft-fundamentals", "motorcycle-theory", "oet", "ph-badge-rules",
-    "police-search", "ppl-air-law", "ppl-meteorology", "road-signs",
+    "police-search", "ppl-air-law", "ppl-meteorology",
+    # Road Signs has hand-reviewed image/question pairings. Do not rebalance it
+    # with this synthetic script unless it is deliberately audited first.
     "rya-day-skipper", "sia-cctv", "topographical",
 ]
 
