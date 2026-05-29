@@ -265,7 +265,7 @@ export const MOCK_INTROS: Record<string, MockIntro> = {
 
   "comptia-a-plus": {
     description:
-      "This CompTIA A+ mock test helps you prepare for the 2026 exams (Core 1 — 220-1101 and Core 2 — 220-1102). The questions cover the full CompTIA A+ syllabus: mobile devices, networking, hardware, virtualisation and cloud computing, hardware and network troubleshooting, operating systems, security, software troubleshooting and operational procedures. Question styles include multiple choice, multi-response and short scenarios that mirror the performance-based items in the real exams. Use Practice mode to learn each domain as you go, or Exam mode for a timed dry run. Use these mocks to find out which Core 1 and Core 2 domains you're weakest in before booking your Pearson VUE exam.",
+      "This CompTIA A+ mock test helps you prepare for the current V15 exams (Core 1 — 220-1201 and Core 2 — 220-1202). The questions cover the full CompTIA A+ syllabus: mobile devices, networking, hardware, virtualisation and cloud computing, hardware and network troubleshooting, operating systems, security, software troubleshooting and operational procedures. Question styles include multiple choice, multi-response and short scenarios that mirror the performance-based items in the real exams. Use Practice mode to learn each domain as you go, or Exam mode for a timed dry run. Use these mocks to find out which Core 1 and Core 2 domains you're weakest in before booking your Pearson VUE exam.",
     topics: [
       "Core 1: Mobile devices, networking and hardware",
       "Core 1: Virtualisation, cloud and hardware troubleshooting",
@@ -274,11 +274,11 @@ export const MOCK_INTROS: Record<string, MockIntro> = {
       "Scenario-style questions mirroring performance-based items",
     ],
     whoFor:
-      "Aspiring IT support, help-desk and first-line technicians preparing for CompTIA A+ Core 1 (220-1101) and Core 2 (220-1102).",
+      "Aspiring IT support, help-desk and first-line technicians preparing for CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202).",
     faqs: [
       {
         q: "What is the CompTIA A+ pass mark?",
-        a: "Core 1 (220-1101): 675 out of 900. Core 2 (220-1102): 700 out of 900. You must pass both exams to be awarded the A+ certification.",
+        a: "Core 1 (220-1201): 675 out of 900. Core 2 (220-1202): 700 out of 900. You must pass both exams to be awarded the A+ certification.",
       },
       {
         q: "How much do the exams cost in the UK?",
