@@ -9,7 +9,23 @@
 //   v1 (legacy):  { topic, tests: [ { slug, mockNumber, title, questions: RawQuestion[] } ] }
 //   v2 (bank):    { version: 2, topic, bank: RawQuestion[], mocks: [ { mockNumber, title, questionIds: string[] } ] }
 import type { Quiz, Question } from "@/data/quizzes";
-import { categories } from "@/data/categories";
+import { categories, findTopic } from "@/data/categories";
+
+/**
+ * Smart, non-duplicating mock-test title.
+ *   "Driving Theory Test"          -> "Driving Theory Mock Test 1"
+ *   "Hazard Perception Test"       -> "Hazard Perception Mock Test 1"
+ *   "Private Hire Driver Licence"  -> "Private Hire Driver Licence Mock Test 1"
+ */
+export function smartMockTitle(topicTitle: string, n: number): string {
+  const base = topicTitle.replace(/\s+test$/i, "").trim();
+  return `${base} Mock Test ${n}`;
+}
+
+export function smartMockTitleFromSlug(topicSlug: string, n: number): string {
+  const t = findTopic(topicSlug)?.topic.title ?? topicSlug;
+  return smartMockTitle(t, n);
+}
 
 // ---------- Raw on-disk question shapes (one per supported type) ----------
 
@@ -459,7 +475,7 @@ export function mockToQuiz(category: string, mock: MockTest): Quiz {
     slug: mock.slug,
     category,
     topic: mock.topic,
-    quizTitle: mock.title,
+    quizTitle: smartMockTitleFromSlug(mock.topic, mock.mockNumber),
     description: `Mock test ${mock.mockNumber} — ${mock.questions.length} questions.`,
     timeLimit: mock.questions.length * 60,
     difficulty: "Medium",
