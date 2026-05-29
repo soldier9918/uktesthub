@@ -127,7 +127,7 @@ function LevelPage() {
             24 unique multiple-choice questions with explanations.
           </p>
           <p className="mt-2 text-sm text-muted-foreground">
-            <strong className="text-foreground">{ready} of 45 ready</strong> · 24 questions per test
+            <strong className="text-foreground">{`${ready} of 45 ready · 24 questions per test`}</strong>
           </p>
         </header>
 
