@@ -8,12 +8,12 @@
       "type": "multiple_choice",
       "question": "What is the maximum number of passengers a private hire vehicle can carry?",
       "options": [
-        "As stated on the vehicle licence",
         "Always four",
-        "Always six",
-        "As many as can fit safely"
+        "As stated on the vehicle licence",
+        "As many as can fit safely",
+        "Always six"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 1,
       "explanation": "The licensed passenger capacity is shown on the vehicle licence and must not be exceeded.",
       "id": "s-mc-0001"
     },
@@ -23,8 +23,8 @@
       "options": [
         "Hand it to your operator or police as soon as possible",
         "Keep it until your next shift",
-        "Throw it away if it looks cheap",
-        "Ask another passenger to take it"
+        "Ask another passenger to take it",
+        "Throw it away if it looks cheap"
       ],
       "correctAnswer": 0,
       "explanation": "Lost property should be dealt with honestly and returned through the proper operator or police process.",
@@ -34,12 +34,12 @@
       "type": "multiple_choice",
       "question": "Which of these is a protected characteristic under the Equality Act 2010?",
       "options": [
+        "Journey length",
         "Postcode",
-        "Disability",
         "Favourite football team",
-        "Journey length"
+        "Disability"
       ],
-      "correctAnswer": 1,
+      "correctAnswer": 3,
       "explanation": "Disability is a protected characteristic under the Equality Act 2010.",
       "id": "s-mc-0003"
     },
@@ -47,12 +47,12 @@
       "type": "multiple_choice",
       "question": "If a passenger asks you to break the speed limit, what should you do?",
       "options": [
-        "Politely refuse and drive legally",
         "Speed only on wide roads",
         "Ask for a higher fare",
-        "Let the passenger decide"
+        "Let the passenger decide",
+        "Politely refuse and drive legally"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 3,
       "explanation": "The driver is responsible for safe, legal driving at all times.",
       "id": "s-mc-0004"
     },
@@ -60,10 +60,10 @@
       "type": "multiple_choice",
       "question": "What should you do if your TfL PHV driver badge or vehicle disc is lost or stolen?",
       "options": [
-        "Borrow another driver's badge",
+        "Print your own copy",
         "Report it and arrange a replacement",
-        "Continue working without telling anyone",
-        "Print your own copy"
+        "Borrow another driver's badge",
+        "Continue working without telling anyone"
       ],
       "correctAnswer": 1,
       "explanation": "Lost or stolen licensing documents must be reported and replaced through the proper process.",
@@ -74,11 +74,11 @@
       "question": "A wheelchair user books your vehicle. What should you do?",
       "options": [
         "Cancel the booking",
-        "Provide reasonable assistance without extra charge",
         "Ask them to travel with someone else",
-        "Charge a wheelchair handling fee"
+        "Charge a wheelchair handling fee",
+        "Provide reasonable assistance without extra charge"
       ],
-      "correctAnswer": 1,
+      "correctAnswer": 3,
       "explanation": "Disabled passengers must receive reasonable assistance and must not be charged extra because of disability.",
       "id": "s-mc-0006"
     },
@@ -86,12 +86,12 @@
       "type": "multiple_choice",
       "question": "Who is responsible for making sure the vehicle is roadworthy before a shift?",
       "options": [
-        "The driver",
         "The last passenger",
+        "The driver",
         "Only TfL",
         "Only the booking operator"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 1,
       "explanation": "Drivers must check that their vehicle is safe and roadworthy before working.",
       "id": "s-mc-0007"
     },
@@ -99,12 +99,12 @@
       "type": "multiple_choice",
       "question": "If you witness a hate crime during work, what should you do?",
       "options": [
-        "Ignore it",
         "Report it to police",
         "Post it online only",
-        "Challenge the offender physically"
+        "Challenge the offender physically",
+        "Ignore it"
       ],
-      "correctAnswer": 1,
+      "correctAnswer": 0,
       "explanation": "Hate crime should be reported to police, using 999 in an emergency.",
       "id": "s-mc-0008"
     },
@@ -112,12 +112,12 @@
       "type": "multiple_choice",
       "question": "What should you do if a passenger appears seriously unwell during a journey?",
       "options": [
-        "Continue to the original destination whatever happens",
         "Stop safely and seek emergency help if needed",
         "Tell them to get out immediately",
-        "Ask them not to make a mess"
+        "Ask them not to make a mess",
+        "Continue to the original destination whatever happens"
       ],
-      "correctAnswer": 1,
+      "correctAnswer": 0,
       "explanation": "Passenger welfare comes first; stop safely and call emergency services when necessary.",
       "id": "s-mc-0009"
     },
@@ -125,12 +125,12 @@
       "type": "multiple_choice",
       "question": "Which document is needed for private hire work to be properly insured?",
       "options": [
+        "Travel insurance",
         "Hire and reward insurance",
         "Home contents insurance",
-        "Travel insurance",
         "Pet insurance"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 1,
       "explanation": "Private hire work requires appropriate hire and reward insurance.",
       "id": "s-mc-0010"
     },
@@ -138,12 +138,12 @@
       "type": "multiple_choice",
       "question": "What is the best response if a passenger is deaf or hard of hearing?",
       "options": [
-        "Speak clearly, face them where possible, and confirm understanding",
         "Shout aggressively",
-        "Ignore written instructions",
-        "Refuse the trip"
+        "Refuse the trip",
+        "Speak clearly, face them where possible, and confirm understanding",
+        "Ignore written instructions"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 2,
       "explanation": "Clear, patient communication helps provide an equal service.",
       "id": "s-mc-0011"
     },
@@ -151,12 +151,12 @@
       "type": "multiple_choice",
       "question": "A passenger with an assistance dog wants to travel. What is the correct action?",
       "options": [
-        "Accept the dog unless you have a valid exemption",
+        "Ask the dog to go in the boot",
         "Charge a cleaning fee",
-        "Only accept small dogs",
-        "Ask the dog to go in the boot"
+        "Accept the dog unless you have a valid exemption",
+        "Only accept small dogs"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 2,
       "explanation": "Assistance dogs must normally be accepted without extra charge unless a valid exemption applies.",
       "id": "s-mc-0012"
     },
@@ -165,9 +165,9 @@
       "question": "What should you do before moving off after a passenger enters the vehicle?",
       "options": [
         "Check doors are closed and the passenger is settled",
-        "Drive away immediately",
+        "Turn off all lights",
         "Ask for a tip",
-        "Turn off all lights"
+        "Drive away immediately"
       ],
       "correctAnswer": 0,
       "explanation": "Safe moving off includes checking the passenger is secure and doors are closed.",
@@ -179,8 +179,8 @@
       "options": [
         "It is distracting and can be illegal",
         "It makes journeys cheaper",
-        "It improves fuel use",
-        "It is required by TfL"
+        "It is required by TfL",
+        "It improves fuel use"
       ],
       "correctAnswer": 0,
       "explanation": "Mobile phone use while driving can distract the driver and may be an offence.",
@@ -191,9 +191,9 @@
       "question": "If you feel too tired to drive safely, what should you do?",
       "options": [
         "Stop working and rest",
-        "Drink alcohol to relax",
+        "Open the window and ignore it",
         "Keep driving faster",
-        "Open the window and ignore it"
+        "Drink alcohol to relax"
       ],
       "correctAnswer": 0,
       "explanation": "Fatigue seriously affects safe driving; drivers should rest before continuing.",
@@ -203,12 +203,12 @@
       "type": "multiple_choice",
       "question": "A customer complains about your service. What is the professional response?",
       "options": [
-        "Listen calmly and refer them to the operator complaints process",
         "Argue until they stop",
+        "Refuse all future disabled passengers",
         "Delete the booking record",
-        "Refuse all future disabled passengers"
+        "Listen calmly and refer them to the operator complaints process"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 3,
       "explanation": "Complaints should be handled calmly and through the proper operator process.",
       "id": "s-mc-0016"
     },
@@ -216,12 +216,12 @@
       "type": "multiple_choice",
       "question": "What should you do if you suspect a child is being exploited?",
       "options": [
+        "Post details online",
         "Report concerns through safeguarding channels or to police if urgent",
         "Ignore it because it is private",
-        "Ask the child to explain everything in public",
-        "Post details online"
+        "Ask the child to explain everything in public"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 1,
       "explanation": "Safeguarding concerns should be reported appropriately and urgently when there is immediate risk.",
       "id": "s-mc-0017"
     },
@@ -229,12 +229,12 @@
       "type": "multiple_choice",
       "question": "Which behaviour is professional when collecting a passenger?",
       "options": [
-        "Confirm the passenger name and destination before setting off",
         "Leave without checking",
+        "Refuse short journeys",
         "Pressure the passenger for personal details",
-        "Refuse short journeys"
+        "Confirm the passenger name and destination before setting off"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 3,
       "explanation": "Confirming the booking helps avoid wrong-pickup risks and improves passenger safety.",
       "id": "s-mc-0018"
     },
@@ -256,9 +256,9 @@
       "question": "Which road user should you be especially aware of when turning left?",
       "options": [
         "Cyclists and pedestrians",
-        "Only motorway traffic",
+        "Parked vehicles only",
         "Aircraft",
-        "Parked vehicles only"
+        "Only motorway traffic"
       ],
       "correctAnswer": 0,
       "explanation": "Cyclists and pedestrians can be in blind spots when a vehicle turns left.",
@@ -268,12 +268,12 @@
       "type": "multiple_choice",
       "question": "When is it acceptable to discriminate against a passenger because of race or religion?",
       "options": [
-        "Never",
+        "Only if another passenger asks",
         "Only late at night",
-        "Only for short trips",
-        "Only if another passenger asks"
+        "Never",
+        "Only for short trips"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 2,
       "explanation": "Race and religion or belief are protected characteristics; discrimination is unlawful.",
       "id": "s-mc-0021"
     },
@@ -282,8 +282,8 @@
       "question": "Why should drivers keep customer information confidential?",
       "options": [
         "To protect passengers' privacy and safety",
-        "To sell details to advertisers",
         "To share celebrities' addresses",
+        "To sell details to advertisers",
         "Because it makes routes shorter"
       ],
       "correctAnswer": 0,
@@ -295,9 +295,9 @@
       "question": "What should you do if a passenger asks to be dropped in an unsafe place?",
       "options": [
         "Explain the risk and stop at the nearest safe legal location",
-        "Stop wherever they demand",
+        "Block a bus lane",
         "Reverse into traffic",
-        "Block a bus lane"
+        "Stop wherever they demand"
       ],
       "correctAnswer": 0,
       "explanation": "Drivers must choose a safe and legal place to stop.",
@@ -307,12 +307,12 @@
       "type": "multiple_choice",
       "question": "What should you do if roadworks block the planned route?",
       "options": [
-        "Choose a safe legal alternative and communicate clearly",
+        "Increase the fare without explanation",
         "Drive through the closure",
         "Abandon the passenger",
-        "Increase the fare without explanation"
+        "Choose a safe legal alternative and communicate clearly"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 3,
       "explanation": "Professional drivers adapt routes legally and keep passengers informed.",
       "id": "s-mc-0024"
     },
@@ -320,12 +320,12 @@
       "type": "multiple_choice",
       "question": "What does ULEZ stand for?",
       "options": [
-        "Ultra Low Emission Zone",
         "Urban Lane Entry Zone",
         "United London Exit Zone",
+        "Ultra Low Emission Zone",
         "Universal Licence Examination Zone"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 2,
       "explanation": "ULEZ means Ultra Low Emission Zone.",
       "id": "s-mc-0025"
     },
@@ -333,12 +333,12 @@
       "type": "multiple_choice",
       "question": "Which charge may apply when driving in central London at certain times?",
       "options": [
-        "Congestion Charge",
-        "Coastal Charge",
         "Airport Tax only",
+        "Coastal Charge",
+        "Congestion Charge",
         "Weekend Fuel Fee"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 2,
       "explanation": "The London Congestion Charge applies in the charging zone during operating times.",
       "id": "s-mc-0026"
     },
@@ -348,8 +348,8 @@
       "options": [
         "Use simple clear language and confirm key details",
         "Speak faster",
-        "Mock their accent",
-        "Ignore questions"
+        "Ignore questions",
+        "Mock their accent"
       ],
       "correctAnswer": 0,
       "explanation": "Clear and respectful communication supports safe service for all passengers.",
@@ -359,12 +359,12 @@
       "type": "multiple_choice",
       "question": "What is the safest way to help a passenger load luggage?",
       "options": [
-        "Park safely, switch off if appropriate, and lift within your ability",
-        "Stop in live traffic",
         "Throw luggage into the road",
+        "Stop in live traffic",
+        "Park safely, switch off if appropriate, and lift within your ability",
         "Ask them to climb into the boot"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 2,
       "explanation": "Luggage assistance should not create danger for the driver, passenger or others.",
       "id": "s-mc-0028"
     },
@@ -372,12 +372,12 @@
       "type": "multiple_choice",
       "question": "If your vehicle is involved in a collision, what should you do first?",
       "options": [
+        "Blame the passenger",
         "Stop safely and check for injuries",
         "Leave quickly",
-        "Delete booking records",
-        "Blame the passenger"
+        "Delete booking records"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 1,
       "explanation": "After a collision, stop safely, check for injuries and follow legal reporting duties.",
       "id": "s-mc-0029"
     },
@@ -385,12 +385,12 @@
       "type": "multiple_choice",
       "question": "Why should you not accept a street hail as a private hire driver?",
       "options": [
+        "It is only allowed after midnight",
         "Private hire journeys must be pre-booked",
         "Street hails pay too much",
-        "It is only allowed after midnight",
         "Passengers dislike bookings"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 1,
       "explanation": "Private hire vehicles must be pre-booked through a licensed operator.",
       "id": "s-mc-0030"
     },
@@ -398,12 +398,12 @@
       "type": "multiple_choice",
       "question": "Who can lawfully take immediate street hails in London?",
       "options": [
-        "Licensed taxis",
         "Any private hire driver",
-        "Only food delivery riders",
-        "Passengers themselves"
+        "Passengers themselves",
+        "Licensed taxis",
+        "Only food delivery riders"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 2,
       "explanation": "Licensed taxis can ply for hire; private hire vehicles must be pre-booked.",
       "id": "s-mc-0031"
     },
@@ -411,12 +411,12 @@
       "type": "multiple_choice",
       "question": "What should you do with a booking made outside your licensed operator system?",
       "options": [
-        "Do not accept it as a PHV booking",
+        "Ask the passenger to hide it",
         "Accept if paid cash",
-        "Accept if the passenger is polite",
-        "Ask the passenger to hide it"
+        "Do not accept it as a PHV booking",
+        "Accept if the passenger is polite"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 2,
       "explanation": "Private hire bookings must go through a licensed operator.",
       "id": "s-mc-0032"
     },
@@ -424,12 +424,12 @@
       "type": "multiple_choice",
       "question": "Why should a driver keep their licence details up to date?",
       "options": [
-        "So the regulator and operator hold accurate records",
-        "To avoid passengers knowing the route",
         "To increase vehicle speed",
-        "So fares can be rounded up"
+        "So fares can be rounded up",
+        "To avoid passengers knowing the route",
+        "So the regulator and operator hold accurate records"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 3,
       "explanation": "Drivers must keep required licence and contact information accurate.",
       "id": "s-mc-0033"
     },
@@ -437,12 +437,12 @@
       "type": "multiple_choice",
       "question": "What should you do if a passenger is abusive but there is no immediate danger?",
       "options": [
-        "Stay calm, avoid escalation and follow operator procedure",
-        "Retaliate with abuse",
         "Drive dangerously to scare them",
-        "Lock them in the vehicle"
+        "Stay calm, avoid escalation and follow operator procedure",
+        "Lock them in the vehicle",
+        "Retaliate with abuse"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 1,
       "explanation": "Drivers should de-escalate and seek help through appropriate channels.",
       "id": "s-mc-0034"
     },
@@ -451,8 +451,8 @@
       "question": "What should you do if you are in immediate danger from a passenger?",
       "options": [
         "Stop safely and call 999 when possible",
-        "Continue quietly no matter what",
         "Drive at high speed",
+        "Continue quietly no matter what",
         "Argue until they apologise"
       ],
       "correctAnswer": 0,
@@ -463,12 +463,12 @@
       "type": "multiple_choice",
       "question": "Which statement about guide dogs is correct?",
       "options": [
-        "They are trained assistance dogs and must normally be carried",
+        "They can be refused for short trips",
         "They are ordinary pets only",
         "They must always go in the boot",
-        "They can be refused for short trips"
+        "They are trained assistance dogs and must normally be carried"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 3,
       "explanation": "Guide dogs support disabled passengers and must normally be accepted.",
       "id": "s-mc-0036"
     },
@@ -476,12 +476,12 @@
       "type": "multiple_choice",
       "question": "What is reasonable assistance for an older passenger?",
       "options": [
-        "Allow extra time and help with doors or luggage if safe",
-        "Rush them into the car",
+        "Refuse them at night",
         "Charge an age fee",
-        "Refuse them at night"
+        "Allow extra time and help with doors or luggage if safe",
+        "Rush them into the car"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 2,
       "explanation": "Reasonable assistance can include patience, clear communication and safe help with boarding.",
       "id": "s-mc-0037"
     },
@@ -491,8 +491,8 @@
       "options": [
         "Confirm the booking before the passenger enters or before setting off",
         "Invite any stranger into the vehicle",
-        "Hide your driver badge",
-        "Turn off all records"
+        "Turn off all records",
+        "Hide your driver badge"
       ],
       "correctAnswer": 0,
       "explanation": "Confirming booking details helps ensure the correct passenger is collected.",
@@ -503,8 +503,8 @@
       "question": "What should you do when approaching a zebra crossing with pedestrians waiting?",
       "options": [
         "Prepare to stop and give way when required",
-        "Accelerate",
         "Sound the horn continuously",
+        "Accelerate",
         "Stop on the crossing"
       ],
       "correctAnswer": 0,
@@ -515,12 +515,12 @@
       "type": "multiple_choice",
       "question": "Which sign of vulnerability may require safeguarding concern?",
       "options": [
-        "A child appearing controlled by an unrelated adult",
-        "A passenger checking the weather",
+        "A passenger asking for a receipt",
         "Someone paying by card",
-        "A passenger asking for a receipt"
+        "A child appearing controlled by an unrelated adult",
+        "A passenger checking the weather"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 2,
       "explanation": "Signs of coercion, control or exploitation can be safeguarding concerns.",
       "id": "s-mc-0040"
     },
@@ -528,12 +528,12 @@
       "type": "multiple_choice",
       "question": "What should you do if someone asks you to transport a child alone and the situation feels unsafe?",
       "options": [
+        "Accept only cash",
         "Follow safeguarding guidance and contact your operator or police if concerned",
         "Ignore your concern",
-        "Accept only cash",
         "Ask the child to sit in the boot"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 1,
       "explanation": "Drivers should act on safeguarding concerns and seek advice or emergency help where needed.",
       "id": "s-mc-0041"
     },
@@ -542,9 +542,9 @@
       "question": "What does professional conduct include?",
       "options": [
         "Being polite, safe, lawful and respectful",
+        "Racing to finish quickly",
         "Choosing passengers by appearance",
-        "Refusing all assistance dogs",
-        "Racing to finish quickly"
+        "Refusing all assistance dogs"
       ],
       "correctAnswer": 0,
       "explanation": "Professional conduct means safe, legal and respectful service.",
@@ -554,12 +554,12 @@
       "type": "multiple_choice",
       "question": "What should you do if a passenger asks for a receipt?",
       "options": [
+        "Take their phone",
         "Provide or arrange one through the operator if required",
-        "Refuse always",
         "Invent a higher fare",
-        "Take their phone"
+        "Refuse always"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 1,
       "explanation": "Passengers should be able to receive appropriate booking or payment records.",
       "id": "s-mc-0043"
     },
@@ -567,12 +567,12 @@
       "type": "multiple_choice",
       "question": "Which payment behaviour is unacceptable?",
       "options": [
-        "Adding unauthorised extra charges",
-        "Explaining the fare clearly",
         "Following operator procedure",
-        "Giving a receipt where available"
+        "Giving a receipt where available",
+        "Adding unauthorised extra charges",
+        "Explaining the fare clearly"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 2,
       "explanation": "Drivers must not add unauthorised or discriminatory charges.",
       "id": "s-mc-0044"
     },
@@ -580,12 +580,12 @@
       "type": "multiple_choice",
       "question": "Why should a driver know major hospitals and stations in London?",
       "options": [
-        "To plan routes and support passenger requests",
         "To avoid all disabled passengers",
+        "To charge more automatically",
         "To replace navigation entirely",
-        "To charge more automatically"
+        "To plan routes and support passenger requests"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 3,
       "explanation": "Local knowledge helps route planning and customer service.",
       "id": "s-mc-0045"
     },
@@ -593,12 +593,12 @@
       "type": "multiple_choice",
       "question": "Which place is a major London airport?",
       "options": [
-        "Heathrow",
         "Snowdon",
-        "Ben Nevis",
-        "Stonehenge"
+        "Heathrow",
+        "Stonehenge",
+        "Ben Nevis"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 1,
       "explanation": "Heathrow is a major airport serving London.",
       "id": "s-mc-0046"
     },
@@ -607,9 +607,9 @@
       "question": "Which river runs through central London?",
       "options": [
         "River Thames",
+        "River Trent",
         "River Severn",
-        "River Clyde",
-        "River Trent"
+        "River Clyde"
       ],
       "correctAnswer": 0,
       "explanation": "The River Thames runs through central London.",
@@ -632,12 +632,12 @@
       "type": "multiple_choice",
       "question": "Which station is a major London rail terminus?",
       "options": [
-        "King's Cross",
-        "Manchester Piccadilly",
         "Birmingham New Street",
-        "Leeds City"
+        "Leeds City",
+        "Manchester Piccadilly",
+        "King's Cross"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 3,
       "explanation": "King's Cross is a major London rail terminus.",
       "id": "s-mc-0049"
     },
@@ -645,12 +645,12 @@
       "type": "multiple_choice",
       "question": "Why should drivers plan routes before entering a busy area?",
       "options": [
-        "To reduce delay and avoid unsafe last-minute decisions",
         "To avoid all traffic laws",
         "To confuse passengers",
-        "To guarantee no charges ever apply"
+        "To guarantee no charges ever apply",
+        "To reduce delay and avoid unsafe last-minute decisions"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 3,
       "explanation": "Route planning supports safe, efficient and lawful journeys.",
       "id": "s-mc-0050"
     },
@@ -658,12 +658,12 @@
       "type": "multiple_choice",
       "question": "What should you do if your sat nav suggests an illegal turn?",
       "options": [
-        "Ignore it and follow road signs and the law",
         "Follow it because sat nav is always right",
-        "Reverse on the road",
-        "Ask the passenger to steer"
+        "Ask the passenger to steer",
+        "Ignore it and follow road signs and the law",
+        "Reverse on the road"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 2,
       "explanation": "Drivers must obey signs and traffic law, even if a device gives wrong directions.",
       "id": "s-mc-0051"
     },
@@ -671,12 +671,12 @@
       "type": "multiple_choice",
       "question": "Which is the correct response to a red traffic light?",
       "options": [
-        "Stop behind the stop line",
-        "Go if no one is looking",
         "Sound horn and continue",
-        "Drive on the pavement"
+        "Drive on the pavement",
+        "Go if no one is looking",
+        "Stop behind the stop line"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 3,
       "explanation": "Drivers must stop at red traffic lights.",
       "id": "s-mc-0052"
     },
@@ -684,12 +684,12 @@
       "type": "multiple_choice",
       "question": "What should you do near schools at busy times?",
       "options": [
-        "Drive slowly and watch for children",
-        "Use the horn to make children move",
+        "Stop on zig-zag markings",
         "Speed up to clear the area",
-        "Stop on zig-zag markings"
+        "Drive slowly and watch for children",
+        "Use the horn to make children move"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 2,
       "explanation": "Children can behave unpredictably; extra care is needed near schools.",
       "id": "s-mc-0053"
     },
@@ -697,12 +697,12 @@
       "type": "multiple_choice",
       "question": "What is the purpose of seat belts?",
       "options": [
-        "To reduce injury in a collision",
-        "To increase fare income",
+        "To replace careful driving",
         "To improve engine power",
-        "To replace careful driving"
+        "To increase fare income",
+        "To reduce injury in a collision"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 3,
       "explanation": "Seat belts help reduce injury in a collision.",
       "id": "s-mc-0054"
     },
@@ -710,12 +710,12 @@
       "type": "multiple_choice",
       "question": "What should you do if a passenger does not want to wear a seat belt where required?",
       "options": [
+        "Drive faster",
         "Remind them of the legal requirement politely",
         "Remove the seat belt",
-        "Drive faster",
         "Charge them extra"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 1,
       "explanation": "Drivers should remind passengers politely that seat belt law must be followed.",
       "id": "s-mc-0055"
     },
@@ -737,9 +737,9 @@
       "question": "What should you do if your tyre warning light comes on during a shift?",
       "options": [
         "Stop safely and check the vehicle",
+        "Drive faster",
         "Ignore it until next month",
-        "Cover the light",
-        "Drive faster"
+        "Cover the light"
       ],
       "correctAnswer": 0,
       "explanation": "Warning lights can indicate safety defects and should be checked promptly.",
@@ -749,12 +749,12 @@
       "type": "multiple_choice",
       "question": "Why must a vehicle be clean and safe for passengers?",
       "options": [
-        "It supports safety, comfort and professional standards",
         "It allows discrimination",
         "It makes road signs optional",
+        "It supports safety, comfort and professional standards",
         "It removes licensing duties"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 2,
       "explanation": "Clean, safe vehicles are part of professional private hire service.",
       "id": "s-mc-0058"
     },
@@ -762,12 +762,12 @@
       "type": "multiple_choice",
       "question": "What should you check before accepting a long journey?",
       "options": [
-        "Vehicle condition, fuel or charge level, and route requirements",
-        "Only music volume",
+        "Nothing at all",
         "Only the passenger's clothes",
-        "Nothing at all"
+        "Vehicle condition, fuel or charge level, and route requirements",
+        "Only music volume"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 2,
       "explanation": "Long journeys need sensible preparation so they can be completed safely.",
       "id": "s-mc-0059"
     },
@@ -776,8 +776,8 @@
       "question": "If you drive an electric PHV, what should you plan for?",
       "options": [
         "Charging needs and range",
-        "Removing number plates",
         "Ignoring road signs",
+        "Removing number plates",
         "Carrying extra passengers"
       ],
       "correctAnswer": 0,
@@ -789,8 +789,8 @@
       "question": "What should you do if a passenger requests a route that is longer but legal?",
       "options": [
         "Confirm their preference and follow it if safe and lawful",
-        "Refuse all passenger route input",
         "Drive illegally to shorten it",
+        "Refuse all passenger route input",
         "End the trip"
       ],
       "correctAnswer": 0,
@@ -801,12 +801,12 @@
       "type": "multiple_choice",
       "question": "Why is accurate pickup information important?",
       "options": [
-        "It reduces wrong pickups and improves safety",
         "It lets drivers ignore bookings",
-        "It makes insurance unnecessary",
-        "It avoids all traffic"
+        "It avoids all traffic",
+        "It reduces wrong pickups and improves safety",
+        "It makes insurance unnecessary"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 2,
       "explanation": "Accurate pickup checks protect passengers and drivers.",
       "id": "s-mc-0062"
     },
@@ -814,12 +814,12 @@
       "type": "multiple_choice",
       "question": "What should you do if another driver behaves aggressively on the road?",
       "options": [
-        "Stay calm, leave space and avoid retaliation",
         "Race them",
+        "Use your phone to argue",
         "Block them deliberately",
-        "Use your phone to argue"
+        "Stay calm, leave space and avoid retaliation"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 3,
       "explanation": "Defensive driving reduces risk when others behave badly.",
       "id": "s-mc-0063"
     },
@@ -828,8 +828,8 @@
       "question": "Which action is safest in heavy rain?",
       "options": [
         "Slow down and increase following distance",
-        "Use cruise control in all conditions",
         "Drive closer to the vehicle ahead",
+        "Use cruise control in all conditions",
         "Turn off lights at night"
       ],
       "correctAnswer": 0,
@@ -840,12 +840,12 @@
       "type": "multiple_choice",
       "question": "Which action is safest in fog?",
       "options": [
+        "Follow tail lights closely",
         "Use appropriate lights and slow down",
         "Drive on full beam only",
-        "Follow tail lights closely",
         "Stop in the middle lane"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 1,
       "explanation": "Fog reduces visibility; appropriate lights, lower speed and larger gaps are needed.",
       "id": "s-mc-0065"
     },
@@ -853,12 +853,12 @@
       "type": "multiple_choice",
       "question": "What should you do if you miss a motorway exit?",
       "options": [
-        "Continue to the next safe exit",
         "Reverse on the motorway",
+        "Stop in the live lane",
         "Make a U-turn",
-        "Stop in the live lane"
+        "Continue to the next safe exit"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 3,
       "explanation": "Never reverse or turn around on a motorway; continue to the next exit.",
       "id": "s-mc-0066"
     },
@@ -866,12 +866,12 @@
       "type": "multiple_choice",
       "question": "When may you use the hard shoulder?",
       "options": [
-        "In an emergency or where signs direct you",
-        "To overtake slow traffic",
+        "To check messages",
         "To pick up passengers",
-        "To check messages"
+        "To overtake slow traffic",
+        "In an emergency or where signs direct you"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 3,
       "explanation": "The hard shoulder is for emergencies or controlled use shown by signs.",
       "id": "s-mc-0067"
     },
@@ -892,12 +892,12 @@
       "type": "multiple_choice",
       "question": "Why should you leave a safe following distance?",
       "options": [
+        "To increase tyre wear",
         "To allow time to stop",
-        "To make passengers nervous",
         "To prevent route planning",
-        "To increase tyre wear"
+        "To make passengers nervous"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 1,
       "explanation": "A safe gap gives time to react and stop.",
       "id": "s-mc-0069"
     },
@@ -905,12 +905,12 @@
       "type": "multiple_choice",
       "question": "Which hazard is common in bus lanes?",
       "options": [
-        "Buses, cycles and taxis where permitted",
-        "Aircraft",
+        "No other road users",
         "Farm animals only",
-        "No other road users"
+        "Buses, cycles and taxis where permitted",
+        "Aircraft"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 2,
       "explanation": "Bus lanes may contain buses and other permitted users such as cycles or taxis.",
       "id": "s-mc-0070"
     },
@@ -919,9 +919,9 @@
       "question": "What should you do if signs show a bus lane is not for PHVs at that time?",
       "options": [
         "Stay out of the bus lane",
+        "Ask the passenger to decide",
         "Use it because you are working",
-        "Stop in it to wait",
-        "Ask the passenger to decide"
+        "Stop in it to wait"
       ],
       "correctAnswer": 0,
       "explanation": "Drivers must obey bus lane signs and operating times.",
@@ -931,12 +931,12 @@
       "type": "multiple_choice",
       "question": "What does a solid white line at the edge of a carriageway usually mark?",
       "options": [
-        "The edge of the road",
-        "A guaranteed parking bay",
         "A private hire rank",
-        "A cycle-only motorway"
+        "The edge of the road",
+        "A cycle-only motorway",
+        "A guaranteed parking bay"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 1,
       "explanation": "Edge lines help mark the edge of the carriageway.",
       "id": "s-mc-0072"
     },
@@ -944,12 +944,12 @@
       "type": "multiple_choice",
       "question": "What should you do if emergency vehicles approach with blue lights?",
       "options": [
-        "Make way safely without breaking the law",
         "Stop anywhere immediately",
+        "Mount the pavement automatically",
         "Race ahead of them",
-        "Mount the pavement automatically"
+        "Make way safely without breaking the law"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 3,
       "explanation": "Drivers should help emergency vehicles pass safely while avoiding dangerous or illegal manoeuvres.",
       "id": "s-mc-0073"
     },
@@ -958,9 +958,9 @@
       "question": "Why should a PHV driver not wait on taxi ranks?",
       "options": [
         "Taxi ranks are for licensed taxis",
+        "They are for loading goods",
         "They are always free parking",
-        "Only buses use them",
-        "They are for loading goods"
+        "Only buses use them"
       ],
       "correctAnswer": 0,
       "explanation": "Taxi ranks are reserved for licensed taxis, not private hire vehicles.",
@@ -970,12 +970,12 @@
       "type": "multiple_choice",
       "question": "Where should you avoid stopping to pick up or drop off?",
       "options": [
-        "On pedestrian crossings or zig-zag markings",
-        "In safe legal bays",
         "At authorised pickup points",
-        "Where stopping is permitted"
+        "Where stopping is permitted",
+        "In safe legal bays",
+        "On pedestrian crossings or zig-zag markings"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 3,
       "explanation": "Stopping on crossings or zig-zag markings is unsafe and usually prohibited.",
       "id": "s-mc-0075"
     },
@@ -983,12 +983,12 @@
       "type": "multiple_choice",
       "question": "What is the best way to deal with a route dispute?",
       "options": [
-        "Stay polite, explain the route and offer to contact the operator",
         "Argue loudly",
-        "Drive to a random place",
-        "Stop the vehicle in traffic"
+        "Stop the vehicle in traffic",
+        "Stay polite, explain the route and offer to contact the operator",
+        "Drive to a random place"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 2,
       "explanation": "Clear, calm communication helps resolve route concerns professionally.",
       "id": "s-mc-0076"
     },
@@ -996,12 +996,12 @@
       "type": "multiple_choice",
       "question": "What should you do if a passenger is intoxicated but not aggressive?",
       "options": [
-        "Consider safety, communicate calmly and follow operator guidance",
         "Drive dangerously",
         "Leave them in an unsafe place",
+        "Consider safety, communicate calmly and follow operator guidance",
         "Mock them"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 2,
       "explanation": "Drivers should manage intoxicated passengers with care, safety and operator support.",
       "id": "s-mc-0077"
     },
@@ -1009,12 +1009,12 @@
       "type": "multiple_choice",
       "question": "Which passenger may need extra time to board?",
       "options": [
-        "A passenger with reduced mobility",
         "Only passengers paying cash",
-        "Only tourists",
-        "No passenger ever"
+        "A passenger with reduced mobility",
+        "No passenger ever",
+        "Only tourists"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 1,
       "explanation": "Passengers with reduced mobility may need patience and reasonable assistance.",
       "id": "s-mc-0078"
     },
@@ -1022,12 +1022,12 @@
       "type": "multiple_choice",
       "question": "What should you do if a visually impaired passenger asks for guidance to the vehicle?",
       "options": [
-        "Offer assistance and ask how they prefer to be guided",
-        "Grab them without asking",
         "Refuse the booking",
-        "Tell them to find the car alone"
+        "Offer assistance and ask how they prefer to be guided",
+        "Tell them to find the car alone",
+        "Grab them without asking"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 1,
       "explanation": "Ask the passenger how to assist; do not assume or handle someone without consent.",
       "id": "s-mc-0079"
     },
@@ -1036,9 +1036,9 @@
       "question": "What is the safest way to confirm a destination?",
       "options": [
         "Repeat or show the destination before setting off",
+        "Let the sat nav choose",
         "Guess from the passenger's accent",
-        "Ask halfway through only",
-        "Let the sat nav choose"
+        "Ask halfway through only"
       ],
       "correctAnswer": 0,
       "explanation": "Confirming the destination reduces errors and anxiety.",
@@ -1048,12 +1048,12 @@
       "type": "multiple_choice",
       "question": "Which action supports equality for passengers?",
       "options": [
-        "Treat people fairly and make reasonable adjustments where needed",
         "Choose passengers by age",
+        "Treat people fairly and make reasonable adjustments where needed",
         "Charge more for assistance dogs",
         "Refuse non-English speakers"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 1,
       "explanation": "Equality means fair treatment and appropriate reasonable adjustments.",
       "id": "s-mc-0081"
     },
@@ -1061,12 +1061,12 @@
       "type": "multiple_choice",
       "question": "What should you do if you cannot safely assist with heavy luggage?",
       "options": [
-        "Explain politely and seek a safe alternative",
-        "Injure yourself trying",
         "Throw luggage",
-        "Cancel because the passenger asked"
+        "Injure yourself trying",
+        "Cancel because the passenger asked",
+        "Explain politely and seek a safe alternative"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 3,
       "explanation": "Drivers should assist where reasonable and safe, but must not create injury risk.",
       "id": "s-mc-0082"
     },
@@ -1076,8 +1076,8 @@
       "options": [
         "Drivers may notice signs of abuse, exploitation or neglect",
         "Drivers never have safeguarding responsibilities",
-        "Only doctors can report concerns",
-        "Safeguarding applies only to luggage"
+        "Safeguarding applies only to luggage",
+        "Only doctors can report concerns"
       ],
       "correctAnswer": 0,
       "explanation": "Drivers can encounter vulnerable people and should know how to report concerns.",
@@ -1087,12 +1087,12 @@
       "type": "multiple_choice",
       "question": "What should you do if the passenger destination is changed during the journey?",
       "options": [
+        "Charge an invented penalty",
         "Confirm the new destination and follow operator/payment procedure",
         "Ignore it",
-        "Drive to the old destination only",
-        "Charge an invented penalty"
+        "Drive to the old destination only"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 1,
       "explanation": "Changes should be confirmed clearly and handled according to the booking process.",
       "id": "s-mc-0084"
     },
@@ -1102,8 +1102,8 @@
       "options": [
         "They may be disrespectful or discriminatory",
         "They are required by law",
-        "They improve route planning",
-        "They reduce insurance"
+        "They reduce insurance",
+        "They improve route planning"
       ],
       "correctAnswer": 0,
       "explanation": "Personal comments can be inappropriate, offensive or discriminatory.",
@@ -1113,12 +1113,12 @@
       "type": "multiple_choice",
       "question": "What should you do if you find a suspicious package after a journey?",
       "options": [
-        "Do not touch it unnecessarily; follow operator and emergency guidance",
-        "Open it immediately",
+        "Hide it",
         "Give it to the next passenger",
-        "Hide it"
+        "Open it immediately",
+        "Do not touch it unnecessarily; follow operator and emergency guidance"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 3,
       "explanation": "Suspicious items should be treated carefully and reported through appropriate channels.",
       "id": "s-mc-0086"
     },
@@ -1126,12 +1126,12 @@
       "type": "multiple_choice",
       "question": "Which sign should make you consider contacting emergency services?",
       "options": [
-        "A passenger is unconscious or struggling to breathe",
         "A passenger asks for the radio off",
+        "A passenger is unconscious or struggling to breathe",
         "A passenger uses a card",
         "A passenger wears a coat"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 1,
       "explanation": "Life-threatening symptoms require urgent emergency help.",
       "id": "s-mc-0087"
     },
@@ -1139,12 +1139,12 @@
       "type": "multiple_choice",
       "question": "What should you do after a passenger vomits in the vehicle?",
       "options": [
+        "Leave waste for the next passenger",
         "Handle the situation calmly, clean safely and follow operator policy",
-        "Abuse the passenger",
         "Continue carrying passengers without cleaning",
-        "Leave waste for the next passenger"
+        "Abuse the passenger"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 1,
       "explanation": "Health and cleanliness should be managed professionally and safely.",
       "id": "s-mc-0088"
     },
@@ -1153,9 +1153,9 @@
       "question": "Which action is most likely to be discrimination?",
       "options": [
         "Refusing a booking because the passenger has an assistance dog",
-        "Taking a legal rest break",
         "Checking tyres",
-        "Following a road closure"
+        "Following a road closure",
+        "Taking a legal rest break"
       ],
       "correctAnswer": 0,
       "explanation": "Refusing assistance dogs without valid exemption is likely unlawful discrimination.",
@@ -1165,12 +1165,12 @@
       "type": "multiple_choice",
       "question": "What does 'reasonable adjustment' mean in service?",
       "options": [
-        "A practical change to help a disabled person access the service",
-        "A discount for long journeys only",
         "A way to avoid licensing",
-        "A route chosen by sat nav"
+        "A route chosen by sat nav",
+        "A practical change to help a disabled person access the service",
+        "A discount for long journeys only"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 2,
       "explanation": "Reasonable adjustments reduce barriers for disabled passengers.",
       "id": "s-mc-0090"
     },
@@ -1178,12 +1178,12 @@
       "type": "multiple_choice",
       "question": "What should you do if a passenger requests quiet because of anxiety or autism?",
       "options": [
-        "Respect the request where safe and practical",
+        "Cancel the journey",
         "Turn music up",
-        "Mock the request",
-        "Cancel the journey"
+        "Respect the request where safe and practical",
+        "Mock the request"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 2,
       "explanation": "Small reasonable adjustments can help passengers travel safely and comfortably.",
       "id": "s-mc-0091"
     },
@@ -1191,12 +1191,12 @@
       "type": "multiple_choice",
       "question": "Which is correct about smoking or vaping in a licensed vehicle?",
       "options": [
-        "It should not take place in the vehicle",
-        "It is compulsory",
         "Only drivers may smoke",
-        "Passengers must smoke if asked"
+        "Passengers must smoke if asked",
+        "It should not take place in the vehicle",
+        "It is compulsory"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 2,
       "explanation": "Licensed vehicles should provide a smoke-free environment.",
       "id": "s-mc-0092"
     },
@@ -1205,9 +1205,9 @@
       "question": "What should you do if you smell fuel strongly before starting work?",
       "options": [
         "Do not use the vehicle until it is checked",
-        "Ignore it",
         "Smoke beside it",
-        "Carry only short trips"
+        "Carry only short trips",
+        "Ignore it"
       ],
       "correctAnswer": 0,
       "explanation": "A strong fuel smell may indicate a dangerous fault and must be checked.",
@@ -1217,12 +1217,12 @@
       "type": "multiple_choice",
       "question": "Why is a daily vehicle walk-around check useful?",
       "options": [
-        "It can identify defects before they cause danger",
         "It replaces insurance",
-        "It removes the need for MOT",
-        "It increases passenger capacity"
+        "It can identify defects before they cause danger",
+        "It increases passenger capacity",
+        "It removes the need for MOT"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 1,
       "explanation": "Regular checks help keep the vehicle safe and legal.",
       "id": "s-mc-0094"
     },
@@ -1231,9 +1231,9 @@
       "question": "What should you check about tyres?",
       "options": [
         "Condition, pressure and legal tread depth",
-        "Colour only",
         "Passenger preference",
-        "Music volume"
+        "Music volume",
+        "Colour only"
       ],
       "correctAnswer": 0,
       "explanation": "Tyres must be safe, correctly inflated and have legal tread depth.",
@@ -1243,12 +1243,12 @@
       "type": "multiple_choice",
       "question": "Which lights should be working before driving at night?",
       "options": [
+        "No lights if roads are lit",
         "Headlights, brake lights, indicators and rear lights",
-        "Only interior lights",
         "Only dashboard lights",
-        "No lights if roads are lit"
+        "Only interior lights"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 1,
       "explanation": "Vehicle lights are essential for visibility and signalling.",
       "id": "s-mc-0096"
     },
@@ -1256,12 +1256,12 @@
       "type": "multiple_choice",
       "question": "What should you do if your brakes feel faulty?",
       "options": [
-        "Stop using the vehicle until checked",
+        "Ignore it if passengers are waiting",
         "Drive slower for the rest of the month",
-        "Carry fewer bags",
-        "Ignore it if passengers are waiting"
+        "Stop using the vehicle until checked",
+        "Carry fewer bags"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 2,
       "explanation": "Faulty brakes are a serious safety risk and must be repaired before work.",
       "id": "s-mc-0097"
     },
@@ -1269,12 +1269,12 @@
       "type": "multiple_choice",
       "question": "What should you do if a passenger asks you to carry more passengers than licensed?",
       "options": [
+        "Only allow children to exceed the limit",
         "Refuse politely",
-        "Allow it for a short trip",
         "Put one person in the boot",
-        "Only allow children to exceed the limit"
+        "Allow it for a short trip"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 1,
       "explanation": "The licensed passenger capacity must never be exceeded.",
       "id": "s-mc-0098"
     },
@@ -1283,8 +1283,8 @@
       "question": "What should you do if a child needs an appropriate restraint?",
       "options": [
         "Follow the legal requirements and operator guidance",
-        "Ignore all child seat rules",
         "Let the child sit on luggage",
+        "Ignore all child seat rules",
         "Drive without checking"
       ],
       "correctAnswer": 0,
@@ -1295,12 +1295,12 @@
       "type": "multiple_choice",
       "question": "What should you do if a passenger requests help with a mobility aid?",
       "options": [
-        "Ask how you can help and assist safely",
-        "Assume they cannot travel",
         "Hide the mobility aid",
-        "Charge extra automatically"
+        "Ask how you can help and assist safely",
+        "Charge extra automatically",
+        "Assume they cannot travel"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 1,
       "explanation": "Ask first and provide reasonable, safe assistance.",
       "id": "s-mc-0100"
     },
@@ -1308,12 +1308,12 @@
       "type": "multiple_choice",
       "question": "Which is a safe way to reverse?",
       "options": [
-        "Check all around and reverse slowly only when safe",
+        "Reverse into pedestrians",
         "Reverse quickly while using a phone",
         "Rely only on another passenger",
-        "Reverse into pedestrians"
+        "Check all around and reverse slowly only when safe"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 3,
       "explanation": "Reversing requires full observation and slow controlled movement.",
       "id": "s-mc-0101"
     },
@@ -1321,12 +1321,12 @@
       "type": "multiple_choice",
       "question": "Why should doors be opened carefully near cyclists?",
       "options": [
-        "Opening a door can injure passing cyclists",
         "Cyclists must always stop",
-        "Doors improve road grip",
-        "It is only about paint damage"
+        "It is only about paint damage",
+        "Opening a door can injure passing cyclists",
+        "Doors improve road grip"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 2,
       "explanation": "Dooring cyclists is dangerous; check before opening doors.",
       "id": "s-mc-0102"
     },
@@ -1334,12 +1334,12 @@
       "type": "multiple_choice",
       "question": "What should you do if a passenger behaves in a sexually inappropriate way?",
       "options": [
+        "Ignore all risk",
         "Maintain safety, end the journey safely if needed and report it",
         "Encourage it",
-        "Ignore all risk",
         "Post a video"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 1,
       "explanation": "Inappropriate behaviour should be handled safely and reported through proper channels.",
       "id": "s-mc-0103"
     },
@@ -1347,12 +1347,12 @@
       "type": "multiple_choice",
       "question": "Which is a warning sign of county lines exploitation?",
       "options": [
-        "A young person travelling with unexplained cash or appearing controlled",
+        "A passenger carrying a suitcase",
         "A tourist asking for a museum",
-        "A passenger wearing a hat",
-        "A passenger carrying a suitcase"
+        "A young person travelling with unexplained cash or appearing controlled",
+        "A passenger wearing a hat"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 2,
       "explanation": "County lines can involve young or vulnerable people being controlled to move drugs or money.",
       "id": "s-mc-0104"
     },
@@ -1362,8 +1362,8 @@
       "options": [
         "Refuse and report if appropriate",
         "Help them escape",
-        "Wait for extra cash",
-        "Turn off booking records"
+        "Turn off booking records",
+        "Wait for extra cash"
       ],
       "correctAnswer": 0,
       "explanation": "Drivers must not assist crime and should report serious concerns.",
@@ -1373,12 +1373,12 @@
       "type": "multiple_choice",
       "question": "Why should you avoid sharing your exact live location publicly while working?",
       "options": [
+        "It replaces insurance",
         "It can create personal safety and privacy risks",
         "It improves tyre condition",
-        "It replaces insurance",
         "It lowers emissions"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 1,
       "explanation": "Location information can create safety and privacy risks if shared carelessly.",
       "id": "s-mc-0106"
     },
@@ -1386,12 +1386,12 @@
       "type": "multiple_choice",
       "question": "What should you do if an operator gives an instruction that seems unsafe or illegal?",
       "options": [
-        "Do not follow unsafe or illegal instructions; seek clarification",
-        "Always obey it",
         "Hide the evidence",
-        "Ask the passenger to decide"
+        "Ask the passenger to decide",
+        "Do not follow unsafe or illegal instructions; seek clarification",
+        "Always obey it"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 2,
       "explanation": "Drivers remain responsible for lawful and safe driving.",
       "id": "s-mc-0107"
     },
@@ -1399,12 +1399,12 @@
       "type": "multiple_choice",
       "question": "Which is correct about private hire bookings?",
       "options": [
-        "They must be accepted and recorded by a licensed operator",
         "They can always be arranged directly on the street",
-        "They need no record",
-        "They can be made only by handwritten notes"
+        "They can be made only by handwritten notes",
+        "They must be accepted and recorded by a licensed operator",
+        "They need no record"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 2,
       "explanation": "Private hire journeys must be pre-booked through a licensed operator.",
       "id": "s-mc-0108"
     },
@@ -1412,12 +1412,12 @@
       "type": "multiple_choice",
       "question": "What should you do if your licence is suspended?",
       "options": [
-        "Stop working as a PHV driver",
-        "Work only at weekends",
         "Use another person's badge",
-        "Carry only friends for payment"
+        "Carry only friends for payment",
+        "Work only at weekends",
+        "Stop working as a PHV driver"
       ],
-      "correctAnswer": 0,
+      "correctAnswer": 3,
       "explanation": "A suspended licence means you must not work as a private hire driver.",
       "id": "s-mc-0109"
     },
