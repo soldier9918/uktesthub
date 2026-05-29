@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ArrowRight, ChevronRight, Clock, Home, Lock } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -21,14 +20,21 @@ import { breadcrumbSchema } from "@/lib/seo";
 export const Route = createFileRoute(
   "/english-language-tests/$test/$skill/$level/",
 )({
-  loader: ({ params }) => {
+  loader: async ({ params }) => {
     const test = getTest(params.test);
     if (!test) throw notFound();
     const skill = getSkill(test, params.skill);
     if (!skill) throw notFound();
     if (!hasLevel(skill, params.level)) throw notFound();
-    return { test, skill, level: params.level as LevelSlug };
+    const level = params.level as LevelSlug;
+    const readyCount = await countReadyEnglishMocks(
+      test.slug,
+      skill.slug,
+      level,
+    ).catch(() => 0);
+    return { test, skill, level, readyCount };
   },
+
   head: ({ loaderData, params }) => {
     const test = loaderData?.test;
     const skill = loaderData?.skill;
