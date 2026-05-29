@@ -1,29 +1,28 @@
-## Goal
-Use your two uploaded button images (gold gradient bars) as the visuals for the hero's two CTAs on the homepage, while keeping them as real, clickable, accessible buttons.
+## Problem
 
-## What changes
+`public/mocks/seru.json` only contains a 14-question bank, so every one of the 45 SERU mocks resolves to 14 questions instead of the standard 24 (the runtime drops missing IDs, so each mock silently shrinks).
 
-In `src/routes/index.tsx` (hero, lines ~175–199), replace the two existing CTA elements:
+## Fix
 
-1. **"Start Practice"** (currently coral pill) → uses `start-practice.png`
-   - Links to `#popular-categories` (smooth scroll) — same behaviour as today.
-2. **"Browse All Tests"** (currently white outlined pill) → uses `browse-all-tests1.png`
-   - Links to `/all-tests` — same as today.
+1. **Grow the SERU bank** to ~260 questions covering authentic TfL SERU topics:
+   - London geography & landmarks (English comprehension style)
+   - Safety, equality & disability awareness (Equality Act 2010, assistance dogs, wheelchair users)
+   - Customer service & professional conduct
+   - PHV licensing rules (badge/disc display, insurance, MOT, hire & reward)
+   - Route planning, congestion charge, ULEZ, bus lanes
+   - Safeguarding (children & vulnerable adults)
+   - Map reading and signage comprehension
+   - Numeracy (fares, time, distance)
+   
+   Reuse the existing question types already in the file (`dropdown_blanks`, `multiple_choice`) plus `true_false` and `multiple_response` where appropriate. Keep IDs sequential: `s-mc-0001…`, `s-db-0001…`, `s-tf-0001…`, `s-mr-0001…`.
 
-## How it's built (so it stays clickable + responsive)
+2. **Rebuild the 45 mocks** with exactly 24 questions each via round-robin sampling from the expanded bank so each mock has a balanced mix of types and no mock repeats the same question twice.
 
-- Copy both uploads into `src/assets/` and import them.
-- Render each as an `<a>` / `<Link>` with the image as its only child (`<img>` inside the link). The whole gold bar is the clickable target.
-- Set a fixed display height (~56px desktop, ~48px mobile) with `width: auto` so the buttons keep their proportions and don't pixelate.
-- Add `alt="Start Practice"` / `alt="Browse all tests"` for accessibility.
-- Add a subtle hover lift (`hover:-translate-y-0.5`) + slight brightness bump (`hover:brightness-110`) so they feel interactive — no separate hover image needed.
-- Keep the existing flex-wrap container so they stack nicely on mobile.
+3. **Verify** by re-reading the file and asserting `len(mock.questionIds) == 24` for all 45 mocks and that every referenced ID exists in the bank.
 
-## What it will NOT do
-- No text/arrows rendered as HTML on top of the images — the words and arrow are already baked into your PNGs, so overlaying would double them up.
-- Other buttons elsewhere on the site (e.g. SeoLanding, category cards) are untouched.
+## Technical notes
 
-## Risk / fit check
-The two PNGs are roughly the same height and same gold treatment, so they'll sit cleanly side-by-side at ~56px tall. They'll look right on this hero (dark navy background — the gold pops). If on mobile the "BROWSE ALL TESTS" wordmark feels too small at 48px height, we can bump to 52px.
-
-Approve and I'll implement.
+- File: `public/mocks/seru.json` (v2 shape: `{ version, topic, bank, mocks }`)
+- Loader: `src/data/mocks/index.ts` — silently skips question IDs that aren't in the bank, which is why the shortage was invisible.
+- No code changes needed; data-only fix.
+- Written via a Python script run from `scripts/` (not committed) so the JSON is deterministic.
