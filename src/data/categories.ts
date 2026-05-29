@@ -476,7 +476,7 @@ export const categories: Category[] = [
     short: "UCAS application knowledge test",
     description:
       "Free practice for the UK UCAS application process — deadlines, course choices, personal statements, references, offers, Clearing and student finance.",
-    icon: "GraduationCap",
+    icon: "University",
     accent: "navy",
     heroImage: heroEducation,
     topics: [
