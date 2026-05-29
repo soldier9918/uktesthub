@@ -8,12 +8,12 @@
       "question": "The London Congestion Charge applies on",
       "options": [
         "Weekends only",
-        "Mondays to Fridays 7am–6pm and weekends 12–6pm",
+        "Mondays to Fridays 7am\u20136pm and weekends 12\u20136pm",
         "Sundays only",
         "Bank Holidays only"
       ],
       "correctAnswer": 1,
-      "explanation": "The Congestion Charge currently runs Mon–Fri 7:00–18:00 and weekends 12:00–18:00, except certain Christmas dates",
+      "explanation": "The Congestion Charge currently runs Mon\u2013Fri 7:00\u201318:00 and weekends 12:00\u201318:00, except certain Christmas dates",
       "type": "multiple_choice",
       "id": "cc-mc-0001"
     },
@@ -257,8 +257,8 @@
       "options": [
         "It is completely free to register",
         "An annual administrative fee per vehicle",
-        "A one-off lifetime payment of £100",
-        "A monthly subscription fee of £5"
+        "A one-off lifetime payment of \u00a3100",
+        "A monthly subscription fee of \u00a35"
       ],
       "explanation": "Congestion Charge Auto Pay accounts are subject to an annual registration fee for each vehicle added to the account",
       "correctAnswer": 1,
@@ -308,10 +308,10 @@
       "question": "How much is the annual registration fee for the Residents' Congestion Charge discount?",
       "type": "multiple_choice",
       "options": [
-        "£100.00",
+        "\u00a3100.00",
         "Free of charge",
-        "£25.00",
-        "£10.00"
+        "\u00a325.00",
+        "\u00a310.00"
       ],
       "explanation": "The Re-registration fee is an annual administrative cost for residents to maintain their 90% discount eligibility",
       "id": "cc-mc-0024"
@@ -399,7 +399,7 @@
       "question": "How are London Fire Brigade vehicles handled regarding the Congestion Charge?",
       "type": "multiple_choice",
       "options": [
-        "They pay a flat annual fee of £500",
+        "They pay a flat annual fee of \u00a3500",
         "They pay the same as private cars",
         "They are eligible for a 100% discount",
         "They only pay when using sirens"
@@ -422,14 +422,14 @@
     },
     {
       "correctAnswer": 2,
-      "explanation": "The daily Congestion Charge is currently £15.00 if you pay in advance or on the same day as your journey",
+      "explanation": "The daily Congestion Charge is currently \u00a315.00 if you pay in advance or on the same day as your journey",
       "type": "multiple_choice",
       "question": "What is the standard daily fee for the Congestion Charge if paid on the day of travel?",
       "options": [
-        "£8.00",
-        "£12.50",
-        "£15.00",
-        "£17.50"
+        "\u00a38.00",
+        "\u00a312.50",
+        "\u00a315.00",
+        "\u00a317.50"
       ],
       "id": "cc-mc-0033"
     },
@@ -441,7 +441,7 @@
         "75% discount"
       ],
       "correctAnswer": 0,
-      "explanation": "Blue Badge holders are eligible for a 100% discount after paying a one-off £10 registration fee",
+      "explanation": "Blue Badge holders are eligible for a 100% discount after paying a one-off \u00a310 registration fee",
       "type": "multiple_choice",
       "question": "What percentage discount are Blue Badge holders eligible for when registered with TfL?",
       "id": "cc-mc-0034"
@@ -474,14 +474,14 @@
     },
     {
       "options": [
-        "£1.00 reduction per day",
+        "\u00a31.00 reduction per day",
         "15% discount for each trip",
         "There is no longer a discount for using Auto Pay",
-        "£2.00 reduction per day"
+        "\u00a32.00 reduction per day"
       ],
       "question": "How much of a discount do customers receive on the daily fee if they use Congestion Charge Auto Pay?",
       "type": "multiple_choice",
-      "explanation": "Auto Pay users receive no monetary discount on the £15 daily fee, but it prevents them from receiving fines",
+      "explanation": "Auto Pay users receive no monetary discount on the \u00a315 daily fee, but it prevents them from receiving fines",
       "correctAnswer": 2,
       "id": "cc-mc-0037"
     },
@@ -491,10 +491,10 @@
       "type": "multiple_choice",
       "question": "What is the standard cost of a Congestion Charge Penalty Charge Notice (PCN) before any discounts are applied?",
       "options": [
-        "£130",
-        "£160",
-        "£80",
-        "£200"
+        "\u00a3130",
+        "\u00a3160",
+        "\u00a380",
+        "\u00a3200"
       ],
       "id": "cc-mc-0038"
     },
@@ -617,13 +617,13 @@
     },
     {
       "question": "What is the annual registration fee for a Blue Badge holder to maintain their 100% discount?",
-      "explanation": "There is a non-refundable £10 annual registration fee per vehicle for Blue Badge holders to receive the 100% discount",
+      "explanation": "There is a non-refundable \u00a310 annual registration fee per vehicle for Blue Badge holders to receive the 100% discount",
       "correctAnswer": 3,
       "options": [
         "Free of charge",
-        "£1.50 annual fee",
-        "£5.00 annual fee",
-        "£10.00 annual fee"
+        "\u00a31.50 annual fee",
+        "\u00a35.00 annual fee",
+        "\u00a310.00 annual fee"
       ],
       "type": "multiple_choice",
       "id": "cc-mc-0048"
@@ -673,9 +673,9 @@
       "correctAnswer": 1,
       "type": "multiple_choice",
       "options": [
-        "07:00 – 18:00",
-        "12:00 – 18:00",
-        "07:00 – 22:00",
+        "07:00 \u2013 18:00",
+        "12:00 \u2013 18:00",
+        "07:00 \u2013 22:00",
         "The charge does not apply on Sundays"
       ],
       "id": "cc-mc-0052"
@@ -733,29 +733,29 @@
       "id": "cc-mc-0056"
     },
     {
-      "explanation": "The Congestion Charge is currently £15.00 per day if paid in advance or on the day of travel",
+      "explanation": "The Congestion Charge is currently \u00a315.00 per day if paid in advance or on the day of travel",
       "type": "multiple_choice",
       "correctAnswer": 1,
       "question": "What is the current standard daily charge for driving within the Congestion Charge zone?",
       "options": [
-        "£12.50",
-        "£15.00",
-        "£17.50",
-        "£20.00"
+        "\u00a312.50",
+        "\u00a315.00",
+        "\u00a317.50",
+        "\u00a320.00"
       ],
       "id": "cc-mc-0057"
     },
     {
       "options": [
-        "£17.50",
-        "£21.50",
-        "£25.00",
-        "£30.00"
+        "\u00a317.50",
+        "\u00a321.50",
+        "\u00a325.00",
+        "\u00a330.00"
       ],
       "question": "If you do not pay by midnight on the third day after travel, what is the cost of the daily charge if paid on that final 'pay late' day?",
       "correctAnswer": 0,
       "type": "multiple_choice",
-      "explanation": "If you miss the initial payment deadlines, you can still pay up to three days after the day of travel, but the fee increases to £17.50",
+      "explanation": "If you miss the initial payment deadlines, you can still pay up to three days after the day of travel, but the fee increases to \u00a317.50",
       "id": "cc-mc-0058"
     },
     {
@@ -879,7 +879,7 @@
       "options": [
         "The Congestion Charge replaces the ULEZ charge",
         "If you pay ULEZ, the Congestion Charge is free",
-        "Payments are combined into a single £20 fee",
+        "Payments are combined into a single \u00a320 fee",
         "You must pay both charges if your vehicle does not meet ULEZ standards"
       ],
       "question": "How does the Congestion Charge interact with the Ultra Low Emission Zone (ULEZ) charge?",
@@ -981,14 +981,14 @@
     },
     {
       "options": [
-        "£80",
-        "£160",
-        "£200",
-        "£240"
+        "\u00a380",
+        "\u00a3160",
+        "\u00a3200",
+        "\u00a3240"
       ],
       "type": "multiple_choice",
       "question": "What is the maximum amount a Penalty Charge Notice (PCN) can rise to if it is not paid or challenged within 28 days?",
-      "explanation": "If you fail to pay the daily charge or the PCN within the 28-day period, the fine can increase to £240 via a Charge Certificate",
+      "explanation": "If you fail to pay the daily charge or the PCN within the 28-day period, the fine can increase to \u00a3240 via a Charge Certificate",
       "correctAnswer": 3,
       "id": "cc-mc-0076"
     },
@@ -1048,13 +1048,13 @@
       "correctAnswer": 1,
       "question": "What is the standard daily cost for the Congestion Charge if paid on the day of travel?",
       "options": [
-        "£12.50",
-        "£15.00",
-        "£17.50",
-        "£20.00"
+        "\u00a312.50",
+        "\u00a315.00",
+        "\u00a317.50",
+        "\u00a320.00"
       ],
       "type": "multiple_choice",
-      "explanation": "The daily charge for the Congestion Charge is £15 if paid in advance or on the day of travel",
+      "explanation": "The daily charge for the Congestion Charge is \u00a315 if paid in advance or on the day of travel",
       "id": "cc-mc-0081"
     },
     {
@@ -1073,12 +1073,12 @@
     {
       "type": "multiple_choice",
       "options": [
-        "£80",
-        "£60",
-        "£100",
-        "£160"
+        "\u00a380",
+        "\u00a360",
+        "\u00a3100",
+        "\u00a3160"
       ],
-      "explanation": "If you pay a PCN within 14 days of the date of service, the fine is reduced by 50% to £80",
+      "explanation": "If you pay a PCN within 14 days of the date of service, the fine is reduced by 50% to \u00a380",
       "question": "If you receive a Penalty Charge Notice (PCN), how much is the fine if paid within 14 days?",
       "correctAnswer": 0,
       "id": "cc-mc-0083"
@@ -1123,12 +1123,12 @@
       "id": "cc-mc-0086"
     },
     {
-      "explanation": "While there is no daily fee for Auto Pay, there is a £10 annual registration fee per vehicle to maintain the account",
+      "explanation": "While there is no daily fee for Auto Pay, there is a \u00a310 annual registration fee per vehicle to maintain the account",
       "options": [
-        "£5",
-        "£10",
-        "£15",
-        "£20"
+        "\u00a35",
+        "\u00a310",
+        "\u00a315",
+        "\u00a320"
       ],
       "type": "multiple_choice",
       "correctAnswer": 1,
@@ -1244,8 +1244,8 @@
       "correctAnswer": 1,
       "type": "multiple_choice",
       "options": [
-        "They pay a reduced rate of £1.00",
-        "They get 100% discount after a £10 registration fee",
+        "They pay a reduced rate of \u00a31.00",
+        "They get 100% discount after a \u00a310 registration fee",
         "They are automatically exempt with no registration required",
         "They pay the full daily charge but skip the ULEZ fee"
       ],
@@ -1282,12 +1282,12 @@
       "correctAnswer": 0,
       "question": "What is the current standard daily cost for the Congestion Charge if paid in advance or on the day of travel?",
       "options": [
-        "£15.00",
-        "£17.50",
-        "£10.00 black friday deal",
-        "£20.00"
+        "\u00a315.00",
+        "\u00a317.50",
+        "\u00a310.00 black friday deal",
+        "\u00a320.00"
       ],
-      "explanation": "The 'Pay Next Day' feature was replaced; the current standard daily charge is £15 if paid in advance or on the day",
+      "explanation": "The 'Pay Next Day' feature was replaced; the current standard daily charge is \u00a315 if paid in advance or on the day",
       "type": "multiple_choice",
       "id": "cc-mc-0099"
     },
@@ -1295,12 +1295,12 @@
       "question": "What is the full cost of a Penalty Charge Notice (PCN) for the Congestion Charge if not paid early?",
       "correctAnswer": 2,
       "options": [
-        "£80",
-        "£130",
-        "£180",
-        "£240"
+        "\u00a380",
+        "\u00a3130",
+        "\u00a3180",
+        "\u00a3240"
       ],
-      "explanation": "A Penalty Charge Notice (PCN) is currently set at £180, though this is reduced by 50% if paid within 14 days",
+      "explanation": "A Penalty Charge Notice (PCN) is currently set at \u00a3180, though this is reduced by 50% if paid within 14 days",
       "type": "multiple_choice",
       "id": "cc-mc-0100"
     },
@@ -1398,7 +1398,7 @@
     {
       "type": "multiple_choice",
       "explanation": "Drivers who fail to pay the charge by midnight on the third day after travel will be issued a PCN",
-      "question": "If you do not pay the Congestion Charge in advance, how many days after travel do you have to pay the £17.50 daily rate?",
+      "question": "If you do not pay the Congestion Charge in advance, how many days after travel do you have to pay the \u00a317.50 daily rate?",
       "options": [
         "7 days",
         "14 days",
@@ -1476,12 +1476,12 @@
     {
       "question": "What must a Blue Badge holder pay to receive a 100% discount on the Congestion Charge?",
       "type": "multiple_choice",
-      "explanation": "Even though Blue Badge holders are exempt, they must register their vehicle with TfL and pay a £10 annual administration fee",
+      "explanation": "Even though Blue Badge holders are exempt, they must register their vehicle with TfL and pay a \u00a310 annual administration fee",
       "correctAnswer": 0,
       "options": [
-        "An annual £10 registration fee",
+        "An annual \u00a310 registration fee",
         "The full daily rate for every entry",
-        "A one-off £50 lifetime fee",
+        "A one-off \u00a350 lifetime fee",
         "Nothing, registration is free of charge"
       ],
       "id": "cc-mc-0114"
@@ -1501,7 +1501,7 @@
     },
     {
       "type": "multiple_choice",
-      "explanation": "The Fleet Auto Pay system allows businesses with six or more vehicles to manage payments automatically for a £10 annual fee per vehicle",
+      "explanation": "The Fleet Auto Pay system allows businesses with six or more vehicles to manage payments automatically for a \u00a310 annual fee per vehicle",
       "question": "What is the minimum number of vehicles required to set up a Congestion Charge 'Fleet' Auto Pay account?",
       "options": [
         "2 vehicles",
@@ -1592,12 +1592,12 @@
     },
     {
       "question": "What is the daily cost of the Congestion Charge if you pay it on the day you drive into the zone?",
-      "explanation": "The standard daily Congestion Charge is £15 if paid in advance or on the day of travel",
+      "explanation": "The standard daily Congestion Charge is \u00a315 if paid in advance or on the day of travel",
       "options": [
-        "£12.50",
-        "£15.00",
-        "£17.50",
-        "£20.00"
+        "\u00a312.50",
+        "\u00a315.00",
+        "\u00a317.50",
+        "\u00a320.00"
       ],
       "type": "multiple_choice",
       "correctAnswer": 1,
@@ -1611,7 +1611,7 @@
         "The ULEZ and Congestion Charge have the same operating hours",
         "The Congestion Charge is active 24 hours a day, 365 days a year",
         "The Congestion Charge does not apply on any UK Bank Holidays",
-        "The Congestion Charge applies 12:00–18:00 on Bank Holidays"
+        "The Congestion Charge applies 12:00\u201318:00 on Bank Holidays"
       ],
       "type": "multiple_choice",
       "id": "cc-mc-0124"
@@ -1670,10 +1670,10 @@
     },
     {
       "options": [
-        "07:00 – 18:00 every day",
-        "12:00 – 18:00",
-        "07:00 – 22:00 every day",
-        "08:00 – 20:00 every day"
+        "07:00 \u2013 18:00 every day",
+        "12:00 \u2013 18:00",
+        "07:00 \u2013 22:00 every day",
+        "08:00 \u2013 20:00 every day"
       ],
       "question": "What are the operating hours for the Congestion Charge on a Sunday?",
       "explanation": "The Congestion Charge applies from 07:00 to 18:00 on weekdays and 12:00 to 18:00 on weekends and Bank Holidays",
@@ -1690,7 +1690,7 @@
       ],
       "question": "What is the final deadline to pay the Congestion Charge after you have driven into the zone?",
       "type": "multiple_choice",
-      "explanation": "You can pay up to three days after the day of travel, but the fee increases to £17.50 if not paid on the day of travel",
+      "explanation": "You can pay up to three days after the day of travel, but the fee increases to \u00a317.50 if not paid on the day of travel",
       "correctAnswer": 2,
       "id": "cc-mc-0130"
     },
@@ -1734,14 +1734,14 @@
       "id": "cc-mc-0133"
     },
     {
-      "explanation": "Failure to pay the Congestion Charge results in a Penalty Charge Notice (PCN), which is currently £180 (reduced to £90 if paid within 14 days)",
+      "explanation": "Failure to pay the Congestion Charge results in a Penalty Charge Notice (PCN), which is currently \u00a3180 (reduced to \u00a390 if paid within 14 days)",
       "type": "multiple_choice",
       "question": "What is the standard penalty charge (PCN) amount for failing to pay the Congestion Charge on time?",
       "options": [
-        "£15",
-        "£60",
-        "£180",
-        "£500"
+        "\u00a315",
+        "\u00a360",
+        "\u00a3180",
+        "\u00a3500"
       ],
       "correctAnswer": 2,
       "id": "cc-mc-0134"
@@ -1868,12 +1868,12 @@
       "question": "What is the reduced cost of a Penalty Charge Notice (PCN) if paid within 14 days?",
       "correctAnswer": 3,
       "options": [
-        "£30",
-        "£60",
-        "£160",
-        "£90"
+        "\u00a330",
+        "\u00a360",
+        "\u00a3160",
+        "\u00a390"
       ],
-      "explanation": "If paid within 14 days of the PCN being issued, the penalty is reduced to half of the standard £180 charge",
+      "explanation": "If paid within 14 days of the PCN being issued, the penalty is reduced to half of the standard \u00a3180 charge",
       "id": "cc-mc-0144"
     },
     {
@@ -1916,15 +1916,15 @@
       "id": "cc-mc-0147"
     },
     {
-      "explanation": "There is an annual registration fee of £10 per vehicle to be on the Auto Pay system, which helps manage and automate payments",
+      "explanation": "There is an annual registration fee of \u00a310 per vehicle to be on the Auto Pay system, which helps manage and automate payments",
       "question": "What is the annual registration fee for each vehicle added to the Congestion Charge 'Auto Pay' system?",
       "type": "multiple_choice",
       "correctAnswer": 0,
       "options": [
-        "£10 per vehicle",
+        "\u00a310 per vehicle",
         "It is free to register",
-        "£50 per year",
-        "£1 per month"
+        "\u00a350 per year",
+        "\u00a31 per month"
       ],
       "id": "cc-mc-0148"
     },
@@ -2009,12 +2009,12 @@
     {
       "options": [
         "Free registration",
-        "£5 annual fee",
-        "£20 one-off fee",
-        "£10 one-off fee"
+        "\u00a35 annual fee",
+        "\u00a320 one-off fee",
+        "\u00a310 one-off fee"
       ],
       "type": "multiple_choice",
-      "explanation": "Blue Badge holders must pay a one-time £10 registration fee to receive a 100% discount on the Congestion Charge",
+      "explanation": "Blue Badge holders must pay a one-time \u00a310 registration fee to receive a 100% discount on the Congestion Charge",
       "correctAnswer": 3,
       "question": "What is the registration fee for Blue Badge holders to obtain a 100% discount?",
       "id": "cc-mc-0155"
@@ -2034,13 +2034,13 @@
     },
     {
       "options": [
-        "£15.00",
-        "£12.50",
-        "£17.50",
-        "£10.00"
+        "\u00a315.00",
+        "\u00a312.50",
+        "\u00a317.50",
+        "\u00a310.00"
       ],
       "type": "multiple_choice",
-      "explanation": "The daily Congestion Charge is currently £15.00 if paid in advance or on the day of travel",
+      "explanation": "The daily Congestion Charge is currently \u00a315.00 if paid in advance or on the day of travel",
       "correctAnswer": 0,
       "question": "As of 2024, what is the standard daily cost of the Congestion Charge if paid on the day of travel?",
       "id": "cc-mc-0157"
@@ -2194,7 +2194,7 @@
         "A 50% discount at the time of travel",
         "A reimbursement of the charge after payment",
         "Automatic exemption via number plate recognition",
-        "A fixed annual fee of £10 for unlimited travel"
+        "A fixed annual fee of \u00a310 for unlimited travel"
       ],
       "question": "What type of relief is available to NHS staff for journeys made while on official business within the zone?",
       "explanation": "NHS staff, patients, and local councils may be eligible for a reimbursement for specific essential journeys, though the charge must be paid initially",
@@ -2262,7 +2262,7 @@
         "There is no limit to the number of vehicles",
         "Up to 10 vehicles"
       ],
-      "explanation": "While there is no upper limit on the number of vehicles, each individual vehicle added to an Auto Pay account must pay the £10 annual registration fee",
+      "explanation": "While there is no upper limit on the number of vehicles, each individual vehicle added to an Auto Pay account must pay the \u00a310 annual registration fee",
       "type": "multiple_choice",
       "id": "cc-mc-0174"
     },
@@ -2281,7 +2281,7 @@
     },
     {
       "type": "multiple_choice",
-      "explanation": "If you pay up to three days after the day of travel, the cost increases from £15 to £17. 3 days is the maximum late payment window",
+      "explanation": "If you pay up to three days after the day of travel, the cost increases from \u00a315 to \u00a317. 3 days is the maximum late payment window",
       "correctAnswer": 3,
       "options": [
         "24 hours after travel",
@@ -2308,7 +2308,7 @@
     {
       "correctAnswer": 0,
       "options": [
-        "Register with TfL and pay a £10 registration fee",
+        "Register with TfL and pay a \u00a310 registration fee",
         "Simply display the badge in the windscreen while driving",
         "Nothing, the discount is applied automatically via GPS",
         "Notify the local council each time they enter the zone"
@@ -2334,13 +2334,13 @@
     {
       "correctAnswer": 3,
       "options": [
-        "£160 (no discount)",
-        "£120",
-        "£100",
-        "£80"
+        "\u00a3160 (no discount)",
+        "\u00a3120",
+        "\u00a3100",
+        "\u00a380"
       ],
       "question": "If you receive a Penalty Charge Notice (PCN), what is the discounted cost if you pay it within 14 days?",
-      "explanation": "If paid within 14 days of issue, the PCN is reduced by 50% to £80",
+      "explanation": "If paid within 14 days of issue, the PCN is reduced by 50% to \u00a380",
       "type": "multiple_choice",
       "id": "cc-mc-0180"
     },
@@ -2450,14 +2450,14 @@
     },
     {
       "question": "What is the standard daily fee for the London Congestion Charge if paid on the day of travel?",
-      "explanation": "The daily charge for driving within the zone during charging hours is £15.00 if paid in advance or on the day of travel",
+      "explanation": "The daily charge for driving within the zone during charging hours is \u00a315.00 if paid in advance or on the day of travel",
       "type": "multiple_choice",
       "correctAnswer": 1,
       "options": [
-        "£10.50",
-        "£15.00",
-        "£17.50",
-        "£20.00"
+        "\u00a310.50",
+        "\u00a315.00",
+        "\u00a317.50",
+        "\u00a320.00"
       ],
       "id": "cc-mc-0189"
     },
@@ -2478,12 +2478,12 @@
       "correctAnswer": 2,
       "options": [
         "It is free of charge",
-        "£5.00",
-        "£10.00",
-        "£15.00"
+        "\u00a35.00",
+        "\u00a310.00",
+        "\u00a315.00"
       ],
       "question": "What is the annual registration fee for each vehicle added to a Congestion Charge Auto Pay account?",
-      "explanation": "A £10 annual registration fee applies to each vehicle added to an Auto Pay account to cover administrative costs",
+      "explanation": "A \u00a310 annual registration fee applies to each vehicle added to an Auto Pay account to cover administrative costs",
       "type": "multiple_choice",
       "id": "cc-mc-0191"
     },
@@ -2516,13 +2516,13 @@
     {
       "correctAnswer": 1,
       "options": [
-        "£130.00",
-        "£180.00",
-        "£250.00",
-        "£500.00"
+        "\u00a3130.00",
+        "\u00a3180.00",
+        "\u00a3250.00",
+        "\u00a3500.00"
       ],
       "question": "What is the full cost of a Penalty Charge Notice (PCN) if it is not paid within the initial 14-day discount period?",
-      "explanation": "If you do not pay within 14 days, the fine increases to the full amount of £180. Failing to pay that leads to a Charge Certificate",
+      "explanation": "If you do not pay within 14 days, the fine increases to the full amount of \u00a3180. Failing to pay that leads to a Charge Certificate",
       "type": "multiple_choice",
       "id": "cc-mc-0194"
     },
@@ -2660,12 +2660,12 @@
       "correctAnswer": 1,
       "type": "multiple_choice",
       "options": [
-        "£60",
-        "£80",
-        "£100",
-        "£160"
+        "\u00a360",
+        "\u00a380",
+        "\u00a3100",
+        "\u00a3160"
       ],
-      "explanation": "If paid within 14 days of being issued, the Penalty Charge Notice (PCN) is reduced by 50% to £80",
+      "explanation": "If paid within 14 days of being issued, the Penalty Charge Notice (PCN) is reduced by 50% to \u00a380",
       "question": "If you receive a Penalty Charge Notice (PCN), what is the reduced amount if paid within 14 days?",
       "id": "cc-mc-0205"
     },
@@ -2709,14 +2709,14 @@
       "id": "cc-mc-0208"
     },
     {
-      "explanation": "The daily charge for those who do not use Auto Pay and pay between the day of travel and 3 days later is £17.50",
+      "explanation": "The daily charge for those who do not use Auto Pay and pay between the day of travel and 3 days later is \u00a317.50",
       "question": "What is the daily fee if you pay for the Congestion Charge up to three days after your journey?",
       "correctAnswer": 1,
       "options": [
-        "£15.00",
-        "£17.50",
-        "£20.00",
-        "£25.50"
+        "\u00a315.00",
+        "\u00a317.50",
+        "\u00a320.00",
+        "\u00a325.50"
       ],
       "type": "multiple_choice",
       "id": "cc-mc-0209"
@@ -2750,7 +2750,7 @@
     {
       "type": "multiple_choice",
       "options": [
-        "They pay a reduced fee of £1.00 per day",
+        "They pay a reduced fee of \u00a31.00 per day",
         "They are exempt and do not need to pay or register",
         "They only pay if they have a sidecar",
         "They are only exempt during weekends"
@@ -2829,12 +2829,12 @@
       "correctAnswer": 2,
       "question": "What is the annual registration fee per vehicle for setting up Auto Pay?",
       "options": [
-        "£5",
-        "£15",
-        "£10",
+        "\u00a35",
+        "\u00a315",
+        "\u00a310",
         "Free"
       ],
-      "explanation": "A £10 annual registration fee is required for each vehicle added to an Auto Pay account",
+      "explanation": "A \u00a310 annual registration fee is required for each vehicle added to an Auto Pay account",
       "type": "multiple_choice",
       "id": "cc-mc-0218"
     },
@@ -2866,14 +2866,14 @@
     },
     {
       "correctAnswer": 1,
-      "explanation": "The daily charge is £15 if paid in advance or on the day of travel",
+      "explanation": "The daily charge is \u00a315 if paid in advance or on the day of travel",
       "type": "multiple_choice",
       "question": "As of current 2024 regulations, what is the standard daily cost of the Congestion Charge if paid on the day of travel?",
       "options": [
-        "£12.50",
-        "£15.00",
-        "£17.50",
-        "£20.00"
+        "\u00a312.50",
+        "\u00a315.00",
+        "\u00a317.50",
+        "\u00a320.00"
       ],
       "id": "cc-mc-0221"
     },
@@ -2921,10 +2921,10 @@
       "explanation": "The Congestion Charge applies from 12:00 to 18:00 on Saturdays, Sundays, and Bank Holidays",
       "type": "multiple_choice",
       "options": [
-        "07:00 – 18:00",
-        "07:00 – 22:00",
-        "12:00 – 18:00",
-        "08:30 – 19:00"
+        "07:00 \u2013 18:00",
+        "07:00 \u2013 22:00",
+        "12:00 \u2013 18:00",
+        "08:30 \u2013 19:00"
       ],
       "correctAnswer": 2,
       "id": "cc-mc-0225"
@@ -3024,12 +3024,12 @@
       "correctAnswer": 1,
       "type": "multiple_choice",
       "options": [
-        "£100",
-        "£240",
-        "£500",
-        "£180"
+        "\u00a3100",
+        "\u00a3240",
+        "\u00a3500",
+        "\u00a3180"
       ],
-      "explanation": "If a PCN is not paid or successfully challenged, the fine can increase to £240 if a Charge Certificate is issued",
+      "explanation": "If a PCN is not paid or successfully challenged, the fine can increase to \u00a3240 if a Charge Certificate is issued",
       "question": "If a Penalty Charge Notice is not paid within the required timeframe, what can the fine increase to?",
       "id": "cc-mc-0233"
     },
@@ -3060,15 +3060,15 @@
       "id": "cc-mc-0235"
     },
     {
-      "explanation": "The standard daily charge is £15.00 if paid on the day or in advance",
+      "explanation": "The standard daily charge is \u00a315.00 if paid on the day or in advance",
       "question": "What is the current standard daily price of the Congestion Charge if paid on the day of travel?",
       "correctAnswer": 1,
       "type": "multiple_choice",
       "options": [
-        "£10.00",
-        "£15.00",
-        "£12.50",
-        "£20.00"
+        "\u00a310.00",
+        "\u00a315.00",
+        "\u00a312.50",
+        "\u00a320.00"
       ],
       "id": "cc-mc-0236"
     },
@@ -3141,13 +3141,13 @@
       "correctAnswer": 2,
       "type": "multiple_choice",
       "options": [
-        "£5 per vehicle",
-        "£20 per vehicle",
-        "£10 per vehicle",
+        "\u00a35 per vehicle",
+        "\u00a320 per vehicle",
+        "\u00a310 per vehicle",
         "It is free to register"
       ],
       "question": "What is the recurring annual registration fee for each vehicle added to a Congestion Charge Auto Pay account?",
-      "explanation": "Vehicle owners must pay £10 per year for each vehicle registered on an Auto Pay account",
+      "explanation": "Vehicle owners must pay \u00a310 per year for each vehicle registered on an Auto Pay account",
       "id": "cc-mc-0242"
     },
     {
@@ -3165,13 +3165,13 @@
     },
     {
       "question": "If you receive a Penalty Charge Notice (PCN), what is the 'early payment' discounted amount?",
-      "explanation": "If a PCN is paid within 14 days of issue, the cost is reduced by 50% from the standard £180",
+      "explanation": "If a PCN is paid within 14 days of issue, the cost is reduced by 50% from the standard \u00a3180",
       "correctAnswer": 3,
       "options": [
-        "£180.00",
-        "£120.00",
-        "£60.00",
-        "£90.00"
+        "\u00a3180.00",
+        "\u00a3120.00",
+        "\u00a360.00",
+        "\u00a390.00"
       ],
       "type": "multiple_choice",
       "id": "cc-mc-0244"
@@ -3194,10 +3194,10 @@
       "question": "What is the daily cost if a driver chooses to pay the Congestion Charge three days after their journey?",
       "type": "multiple_choice",
       "options": [
-        "£15.00",
-        "£17.50",
-        "£20.00",
-        "£25.00"
+        "\u00a315.00",
+        "\u00a317.50",
+        "\u00a320.00",
+        "\u00a325.00"
       ],
       "correctAnswer": 1,
       "id": "cc-mc-0246"
@@ -3217,12 +3217,12 @@
     },
     {
       "question": "How much is the initial registration fee for a Blue Badge holder to apply for their 100% Congestion Charge discount?",
-      "explanation": "Blue Badge holders must pay a one-off £10 registration fee to receive their 100% discount on the Congestion Charge",
+      "explanation": "Blue Badge holders must pay a one-off \u00a310 registration fee to receive their 100% discount on the Congestion Charge",
       "correctAnswer": 2,
       "options": [
-        "£15.00",
-        "£5.00",
-        "£10.00",
+        "\u00a315.00",
+        "\u00a35.00",
+        "\u00a310.00",
         "It is free to register"
       ],
       "type": "multiple_choice",
@@ -3296,10 +3296,10 @@
     {
       "explanation": "Motorcycles, mopeds, and bicycles are currently exempt from the Congestion Charge and do not need to register",
       "options": [
-        "£15.00 per day",
+        "\u00a315.00 per day",
         "Nothing, they are exempt",
-        "£10.00 per day",
-        "£1.00 per day if registered"
+        "\u00a310.00 per day",
+        "\u00a31.00 per day if registered"
       ],
       "correctAnswer": 1,
       "question": "What is the standard daily Congestion Charge for a two-wheeled motorcycle?",
@@ -3368,7 +3368,7 @@
         "It covers any vehicle driven by a family member",
         "It removes the ULEZ charge but not the Congestion Charge"
       ],
-      "explanation": "Blue Badge holders must pay a one-time £10 fee to register their badge with TfL to receive the 100% discount",
+      "explanation": "Blue Badge holders must pay a one-time \u00a310 fee to register their badge with TfL to receive the 100% discount",
       "id": "cc-mc-0259"
     },
     {
@@ -3400,14 +3400,14 @@
     {
       "correctAnswer": 2,
       "options": [
-        "£10.50",
-        "£12.50",
-        "£15.00",
-        "£17.50"
+        "\u00a310.50",
+        "\u00a312.50",
+        "\u00a315.00",
+        "\u00a317.50"
       ],
       "question": "What is the standard daily cost of the Congestion Charge if paid on the day of travel?",
       "type": "multiple_choice",
-      "explanation": "The daily charge is £15 if paid in advance or on the day of travel within the zone",
+      "explanation": "The daily charge is \u00a315 if paid in advance or on the day of travel within the zone",
       "id": "cc-mc-0262"
     },
     {
@@ -3424,15 +3424,15 @@
       "id": "cc-mc-0263"
     },
     {
-      "explanation": "If you fail to pay a PCN within 28 days, a Charge Certificate is issued, increasing the fine to £240",
+      "explanation": "If you fail to pay a PCN within 28 days, a Charge Certificate is issued, increasing the fine to \u00a3240",
       "type": "multiple_choice",
       "question": "What does the Penalty Charge Notice (PCN) cost increase to if it is not paid within 28 days?",
       "correctAnswer": 3,
       "options": [
-        "£160.00",
-        "£180.00",
-        "£200.00",
-        "£240.00"
+        "\u00a3160.00",
+        "\u00a3180.00",
+        "\u00a3200.00",
+        "\u00a3240.00"
       ],
       "id": "cc-mc-0264"
     },
@@ -3554,13 +3554,13 @@
       "id": "cc-mc-0273"
     },
     {
-      "explanation": "To receive the 100% discount, a Blue Badge holder must pay a one-time £10 registration fee to link their badge to up to two vehicles",
+      "explanation": "To receive the 100% discount, a Blue Badge holder must pay a one-time \u00a310 registration fee to link their badge to up to two vehicles",
       "type": "multiple_choice",
       "correctAnswer": 0,
       "options": [
-        "£10",
-        "£5",
-        "£20",
+        "\u00a310",
+        "\u00a35",
+        "\u00a320",
         "It is free to register"
       ],
       "question": "What is the one-off registration fee for a Blue Badge holder to receive a 100% discount?",
@@ -3672,13 +3672,13 @@
     },
     {
       "type": "multiple_choice",
-      "explanation": "The daily charge remains fixed at £15.00 whether you enter the zone once or multiple times within the operating hours of that day",
+      "explanation": "The daily charge remains fixed at \u00a315.00 whether you enter the zone once or multiple times within the operating hours of that day",
       "question": "What is the current standard daily fee for the Congestion Charge?",
       "options": [
-        "£10.00",
-        "£12.50",
-        "£15.00",
-        "£17.50"
+        "\u00a310.00",
+        "\u00a312.50",
+        "\u00a315.00",
+        "\u00a317.50"
       ],
       "correctAnswer": 2,
       "id": "cc-mc-0283"
@@ -3738,12 +3738,12 @@
     {
       "question": "What is the full cost of a Penalty Charge Notice (PCN) if it is not paid within the discounted 14-day period?",
       "options": [
-        "£60",
-        "£80",
-        "£130",
-        "£180"
+        "\u00a360",
+        "\u00a380",
+        "\u00a3130",
+        "\u00a3180"
       ],
-      "explanation": "Failure to pay the Congestion Charge results in a Penalty Charge Notice (PCN) of £180, though this is halved if paid quickly",
+      "explanation": "Failure to pay the Congestion Charge results in a Penalty Charge Notice (PCN) of \u00a3180, though this is halved if paid quickly",
       "correctAnswer": 3,
       "type": "multiple_choice",
       "id": "cc-mc-0288"
@@ -3829,7 +3829,7 @@
     {
       "options": [
         "Standard cars",
-        "Supercars over £100,000",
+        "Supercars over \u00a3100,000",
         "Accredited breakdown recovery vehicles",
         "All estate cars"
       ],
@@ -3854,9 +3854,9 @@
     },
     {
       "options": [
-        "It remains at £160",
-        "It increases to £240 (50% increase)",
-        "It doubles to £320",
+        "It remains at \u00a3160",
+        "It increases to \u00a3240 (50% increase)",
+        "It doubles to \u00a3320",
         "The vehicle is automatically clamped"
       ],
       "explanation": "If you fail to pay the Penalty Charge Notice (PCN) within 28 days or lose an appeal, a Charge Certificate is issued, increasing the fee by 50%",
@@ -3869,12 +3869,12 @@
       "correctAnswer": 0,
       "question": "What is the registration fee for Blue Badge holders to obtain a 100% discount on the Congestion Charge?",
       "type": "multiple_choice",
-      "explanation": "Blue Badge holders can register up to two vehicles for a 100% discount, but they must pay a £10 initial registration fee",
+      "explanation": "Blue Badge holders can register up to two vehicles for a 100% discount, but they must pay a \u00a310 initial registration fee",
       "options": [
-        "£10 (initial registration fee)",
+        "\u00a310 (initial registration fee)",
         "Nothing, it is completely free to register",
-        "£15 per year",
-        "£1 per day of travel"
+        "\u00a315 per year",
+        "\u00a31 per day of travel"
       ],
       "id": "cc-mc-0298"
     },
@@ -3937,7 +3937,7 @@
       "explanation": "Roadside signs use a white 'C' in a red circle to alert drivers that they are entering the zone. Road markings also display a large white 'C'",
       "options": [
         "A white letter 'C' inside a red circle",
-        "A green '£' sign",
+        "A green '\u00a3' sign",
         "A blue square with a white car",
         "A yellow triangle with a black 'C'"
       ],
@@ -3998,7 +3998,7 @@
     {
       "options": [
         "They are exempt if they don't stop the car",
-        "They pay a reduced 'transit fee' of £5",
+        "They pay a reduced 'transit fee' of \u00a35",
         "They must pay the full daily charge",
         "They only pay if they stay for longer than 20 minutes"
       ],
@@ -4022,12 +4022,12 @@
       "id": "cc-mc-0309"
     },
     {
-      "explanation": "The daily charge for the London Congestion Charge is £15 if paid in advance or on the day of travel",
+      "explanation": "The daily charge for the London Congestion Charge is \u00a315 if paid in advance or on the day of travel",
       "options": [
-        "£10.00",
-        "£12.50",
-        "£15.00",
-        "£17.50"
+        "\u00a310.00",
+        "\u00a312.50",
+        "\u00a315.00",
+        "\u00a317.50"
       ],
       "question": "What is the standard daily cost of the Congestion Charge if paid on the day of travel?",
       "correctAnswer": 2,
@@ -4043,7 +4043,7 @@
         "The end of the current month",
         "Seven days after travel"
       ],
-      "explanation": "Drivers have until midnight on the third day following their journey to pay the charge, though the fee increases to £17.50 for this late payment",
+      "explanation": "Drivers have until midnight on the third day following their journey to pay the charge, though the fee increases to \u00a317.50 for this late payment",
       "correctAnswer": 0,
       "id": "cc-mc-0311"
     },
@@ -4076,7 +4076,7 @@
     {
       "question": "What is the primary benefit of being registered for TfL 'Auto Pay'?",
       "options": [
-        "It gives a £5 discount every time you drive",
+        "It gives a \u00a35 discount every time you drive",
         "It allows you to pay via a coin machine in the car park",
         "It automatically bills you for the days you drive in the zone",
         "It permits free travel on weekends only"
@@ -4195,12 +4195,12 @@
       "question": "What is the annual registration fee for each vehicle added to a Congestion Charge Auto Pay account?",
       "type": "multiple_choice",
       "options": [
-        "£5 per year",
+        "\u00a35 per year",
         "It is free to register",
-        "£10 per year",
-        "£20 per year"
+        "\u00a310 per year",
+        "\u00a320 per year"
       ],
-      "explanation": "The Auto Pay system carries a £10 annual registration fee per vehicle to manage the automated billing process",
+      "explanation": "The Auto Pay system carries a \u00a310 annual registration fee per vehicle to manage the automated billing process",
       "id": "cc-mc-0323"
     },
     {
@@ -4245,10 +4245,10 @@
     {
       "explanation": "The current operating hours for the Congestion Charge on Saturdays and Sundays are 12:00 (midday) to 18:00",
       "options": [
-        "07:00 – 18:00",
-        "10:00 – 20:00",
-        "12:00 – 18:00",
-        "08:00 – 22:00"
+        "07:00 \u2013 18:00",
+        "10:00 \u2013 20:00",
+        "12:00 \u2013 18:00",
+        "08:00 \u2013 22:00"
       ],
       "type": "multiple_choice",
       "question": "What are the weekend (Saturday and Sunday) operating hours for the Congestion Charge?",
@@ -4335,13 +4335,13 @@
     },
     {
       "options": [
-        "£15.00",
-        "£12.50",
-        "£17.50",
-        "£20.00"
+        "\u00a315.00",
+        "\u00a312.50",
+        "\u00a317.50",
+        "\u00a320.00"
       ],
       "type": "multiple_choice",
-      "explanation": "If you pay in advance or on the day of travel, the Congestion Charge is currently £15",
+      "explanation": "If you pay in advance or on the day of travel, the Congestion Charge is currently \u00a315",
       "correctAnswer": 0,
       "question": "What is the daily cost of the Congestion Charge if paid on the day of travel?",
       "id": "cc-mc-0334"
@@ -4374,14 +4374,14 @@
     },
     {
       "type": "multiple_choice",
-      "explanation": "If paid within 28 days, the full penalty charge for failing to pay the Congestion Charge is £180",
+      "explanation": "If paid within 28 days, the full penalty charge for failing to pay the Congestion Charge is \u00a3180",
       "correctAnswer": 2,
       "question": "What is the full cost of a Congestion Charge Penalty Charge Notice (PCN) if it is NOT paid within 14 days?",
       "options": [
-        "£80",
-        "£130",
-        "£180",
-        "£160"
+        "\u00a380",
+        "\u00a3130",
+        "\u00a3180",
+        "\u00a3160"
       ],
       "id": "cc-mc-0337"
     },
@@ -4413,14 +4413,14 @@
     },
     {
       "options": [
-        "£20",
-        "£5",
-        "£10",
+        "\u00a320",
+        "\u00a35",
+        "\u00a310",
         "Free"
       ],
       "type": "multiple_choice",
       "correctAnswer": 2,
-      "explanation": "Residents living within the zone must pay a £10 annual fee to register for their 90% discount",
+      "explanation": "Residents living within the zone must pay a \u00a310 annual fee to register for their 90% discount",
       "question": "How much is the annual registration fee for the Residents' Discount?",
       "id": "cc-mc-0340"
     },
@@ -4452,13 +4452,13 @@
     },
     {
       "options": [
-        "£17.50",
-        "£12.50",
-        "£15.00",
-        "£10.50"
+        "\u00a317.50",
+        "\u00a312.50",
+        "\u00a315.00",
+        "\u00a310.50"
       ],
       "type": "multiple_choice",
-      "explanation": "If you pay balance-by-balance through the official app, the cost is the same as the standard daily rate (£15)",
+      "explanation": "If you pay balance-by-balance through the official app, the cost is the same as the standard daily rate (\u00a315)",
       "correctAnswer": 2,
       "question": "If you use the 'Pay to drive in London' app to pay on the day, what is the standard daily charge?",
       "id": "cc-mc-0343"
@@ -4480,7 +4480,7 @@
       "type": "multiple_choice",
       "correctAnswer": 1,
       "question": "What discount is available for Blue Badge holders when driving in the Congestion Charge zone?",
-      "explanation": "Blue Badge holders are entitled to a 100% discount, but they must register with TfL and pay a £10 fee for this to be active",
+      "explanation": "Blue Badge holders are entitled to a 100% discount, but they must register with TfL and pay a \u00a310 fee for this to be active",
       "options": [
         "0% (Full price)",
         "100% discount (with registration)",
@@ -4517,13 +4517,13 @@
     },
     {
       "options": [
-        "£80",
-        "£100",
-        "£60",
-        "£160"
+        "\u00a380",
+        "\u00a3100",
+        "\u00a360",
+        "\u00a3160"
       ],
       "type": "multiple_choice",
-      "explanation": "If you pay within 14 days of the PCN being issued, the fine is reduced by 50% to £80",
+      "explanation": "If you pay within 14 days of the PCN being issued, the fine is reduced by 50% to \u00a380",
       "question": "If you receive a Penalty Charge Notice (PCN), how much is the fine if paid within 14 days?",
       "correctAnswer": 0,
       "id": "cc-mc-0348"
@@ -4675,13 +4675,13 @@
       "question": "What does the cost of a Penalty Charge Notice (PCN) increase to if it is not paid within 28 days?",
       "correctAnswer": 3,
       "options": [
-        "£160",
-        "£180",
-        "£210",
-        "£240"
+        "\u00a3160",
+        "\u00a3180",
+        "\u00a3210",
+        "\u00a3240"
       ],
       "type": "multiple_choice",
-      "explanation": "If you fail to pay a PCN or challenge it within 28 days, a Charge Certificate is issued, increasing the fine by 50% to £240",
+      "explanation": "If you fail to pay a PCN or challenge it within 28 days, a Charge Certificate is issued, increasing the fine by 50% to \u00a3240",
       "id": "cc-mc-0360"
     },
     {
@@ -4766,13 +4766,13 @@
       "correctAnswer": 0,
       "question": "What is the annual registration fee per vehicle for accredited breakdown recovery companies to receive their discount?",
       "options": [
-        "£10",
-        "£15",
-        "£20",
-        "£5"
+        "\u00a310",
+        "\u00a315",
+        "\u00a320",
+        "\u00a35"
       ],
       "type": "multiple_choice",
-      "explanation": "Accredited breakdown vehicles must be registered with TfL and pay a £10 annual registration fee per vehicle to receive the discount",
+      "explanation": "Accredited breakdown vehicles must be registered with TfL and pay a \u00a310 annual registration fee per vehicle to receive the discount",
       "id": "cc-mc-0367"
     },
     {
@@ -4811,17 +4811,17 @@
       ],
       "correctAnswer": 3,
       "question": "Which of the following is true regarding Blue Badge holders and the Congestion Charge?",
-      "explanation": "Blue Badge holders are eligible for a 100% discount but must register with TfL and pay a £10 administrative fee",
+      "explanation": "Blue Badge holders are eligible for a 100% discount but must register with TfL and pay a \u00a310 administrative fee",
       "id": "cc-mc-0370"
     },
     {
-      "explanation": "The PCN is reduced by 50% from £180 to £90 if paid within the first 14 days of being issued",
+      "explanation": "The PCN is reduced by 50% from \u00a3180 to \u00a390 if paid within the first 14 days of being issued",
       "question": "If you receive a Penalty Charge Notice (PCN), how much is it if paid within 14 days?",
       "options": [
-        "£60.00",
-        "£90.00",
-        "£100.00",
-        "£120.00"
+        "\u00a360.00",
+        "\u00a390.00",
+        "\u00a3100.00",
+        "\u00a3120.00"
       ],
       "type": "multiple_choice",
       "correctAnswer": 1,
@@ -4946,12 +4946,12 @@
     },
     {
       "question": "What is the daily cost of the Congestion Charge if paid on the day of travel?",
-      "explanation": "The standard daily Congestion Charge is £15 if paid in advance or on the day of travel",
+      "explanation": "The standard daily Congestion Charge is \u00a315 if paid in advance or on the day of travel",
       "options": [
-        "£12.50",
-        "£15.00",
-        "£17.50",
-        "£20.00"
+        "\u00a312.50",
+        "\u00a315.00",
+        "\u00a317.50",
+        "\u00a320.00"
       ],
       "type": "multiple_choice",
       "correctAnswer": 1,
@@ -4993,20 +4993,20 @@
       "type": "multiple_choice",
       "correctAnswer": 1,
       "question": "If you do not pay in advance, what is the deadline to pay the Congestion Charge after driving into the zone?",
-      "explanation": "Drivers have until midnight on the third day after travel to pay the charge, but the cost increases to £17.50 for late payments",
+      "explanation": "Drivers have until midnight on the third day after travel to pay the charge, but the cost increases to \u00a317.50 for late payments",
       "id": "cc-mc-0384"
     },
     {
       "type": "multiple_choice",
       "options": [
-        "£10.00",
-        "£12.50",
-        "£15.00",
-        "£18.00"
+        "\u00a310.00",
+        "\u00a312.50",
+        "\u00a315.00",
+        "\u00a318.00"
       ],
       "correctAnswer": 2,
       "question": "What is the current daily rate for a vehicle registered on the Auto Pay system?",
-      "explanation": "The daily charge for an individual vehicle using the Auto Pay system is £15, exactly the same as the standard daily rate",
+      "explanation": "The daily charge for an individual vehicle using the Auto Pay system is \u00a315, exactly the same as the standard daily rate",
       "id": "cc-mc-0385"
     },
     {
@@ -5036,14 +5036,14 @@
       "id": "cc-mc-0387"
     },
     {
-      "explanation": "Eligible residents must pay a £10 annual registration fee to maintain their 90% discount on the Congestion Charge",
+      "explanation": "Eligible residents must pay a \u00a310 annual registration fee to maintain their 90% discount on the Congestion Charge",
       "question": "What is the annual registration fee for the Residents' Discount?",
       "correctAnswer": 1,
       "options": [
-        "£5",
-        "£10",
-        "£25",
-        "£50"
+        "\u00a35",
+        "\u00a310",
+        "\u00a325",
+        "\u00a350"
       ],
       "type": "multiple_choice",
       "id": "cc-mc-0388"
@@ -5053,11 +5053,11 @@
       "type": "multiple_choice",
       "options": [
         "Nothing, it is automatic",
-        "A £1 daily fee",
-        "A £10 one-off registration fee",
-        "The standard £15 rate"
+        "A \u00a31 daily fee",
+        "A \u00a310 one-off registration fee",
+        "The standard \u00a315 rate"
       ],
-      "explanation": "Blue Badge holders must register with TfL and pay a £10 one-off registration fee to receive their 100% discount",
+      "explanation": "Blue Badge holders must register with TfL and pay a \u00a310 one-off registration fee to receive their 100% discount",
       "question": "What must a Blue Badge holder pay to register for a 100% discount on the Congestion Charge?",
       "id": "cc-mc-0389"
     },
@@ -5076,12 +5076,12 @@
     },
     {
       "question": "What is the full cost of a Penalty Charge Notice (PCN) for failing to pay the Congestion Charge?",
-      "explanation": "A Penalty Charge Notice is £160, though this is reduced by 50% to £80 if paid within 14 days of issue",
+      "explanation": "A Penalty Charge Notice is \u00a3160, though this is reduced by 50% to \u00a380 if paid within 14 days of issue",
       "options": [
-        "£60",
-        "£80",
-        "£130",
-        "£160"
+        "\u00a360",
+        "\u00a380",
+        "\u00a3130",
+        "\u00a3160"
       ],
       "type": "multiple_choice",
       "correctAnswer": 3,
@@ -5180,27 +5180,27 @@
     },
     {
       "correctAnswer": 2,
-      "explanation": "If you pay within 14 days of the PCN being issued, the fine is reduced by 50% from £180 to £90",
+      "explanation": "If you pay within 14 days of the PCN being issued, the fine is reduced by 50% from \u00a3180 to \u00a390",
       "question": "What is the discounted cost of a Penalty Charge Notice (PCN) if paid within 14 days?",
       "type": "multiple_choice",
       "options": [
-        "£60",
-        "£80",
-        "£90",
-        "£100"
+        "\u00a360",
+        "\u00a380",
+        "\u00a390",
+        "\u00a3100"
       ],
       "id": "cc-mc-0399"
     },
     {
       "options": [
-        "£10",
-        "£25",
-        "£50",
+        "\u00a310",
+        "\u00a325",
+        "\u00a350",
         "It is free to register"
       ],
       "type": "multiple_choice",
       "question": "What is the annual registration fee per vehicle for an accredited breakdown company to receive a discount?",
-      "explanation": "Accredited breakdown vehicles must be registered with TfL and pay a £10 annual fee per vehicle to receive a 100% discount",
+      "explanation": "Accredited breakdown vehicles must be registered with TfL and pay a \u00a310 annual fee per vehicle to receive a 100% discount",
       "correctAnswer": 0,
       "id": "cc-mc-0400"
     },
@@ -5218,14 +5218,14 @@
       "id": "cc-mc-0401"
     },
     {
-      "question": "What happens to the £180 Penalty Charge Notice (PCN) if it is not paid within 28 days?",
-      "explanation": "If you do not pay the PCN or challenge it within 28 days, a Charge Certificate is issued, increasing the fine to £270",
+      "question": "What happens to the \u00a3180 Penalty Charge Notice (PCN) if it is not paid within 28 days?",
+      "explanation": "If you do not pay the PCN or challenge it within 28 days, a Charge Certificate is issued, increasing the fine to \u00a3270",
       "correctAnswer": 2,
       "options": [
-        "£180",
-        "£220",
-        "£270",
-        "£350"
+        "\u00a3180",
+        "\u00a3220",
+        "\u00a3270",
+        "\u00a3350"
       ],
       "type": "multiple_choice",
       "id": "cc-mc-0402"
@@ -5253,7 +5253,7 @@
         "24 hours after entering the zone"
       ],
       "question": "What is the final deadline to pay the Congestion Charge if you do not pay in advance or on the day of travel?",
-      "explanation": "Drivers have until midnight on the third day following the journey to pay the charge, though the cost increases to £17.50 for these late payments",
+      "explanation": "Drivers have until midnight on the third day following the journey to pay the charge, though the cost increases to \u00a317.50 for these late payments",
       "id": "cc-mc-0404"
     },
     {
@@ -5278,7 +5278,7 @@
         "9 or more seats"
       ],
       "correctAnswer": 3,
-      "explanation": "Vehicles with more than 9 seats that are registered with the DVLA as a 'bus' or 'coach' are eligible for a 100% discount, subject to a £10 registration fee",
+      "explanation": "Vehicles with more than 9 seats that are registered with the DVLA as a 'bus' or 'coach' are eligible for a 100% discount, subject to a \u00a310 registration fee",
       "question": "To qualify for the 100% 'Bus and Coach' discount, what is the minimum number of seats a private vehicle must have?",
       "id": "cc-mc-0406"
     },
@@ -5407,7 +5407,7 @@
         "Free entry for one vehicle",
         "75% discount"
       ],
-      "explanation": "Residents living within the zone are eligible for a 90% discount on the daily charge, provided they register with TfL and pay a £10 annual fee",
+      "explanation": "Residents living within the zone are eligible for a 90% discount on the daily charge, provided they register with TfL and pay a \u00a310 annual fee",
       "question": "What is the percentage discount offered to residents who live within the Congestion Charge zone?",
       "correctAnswer": 0,
       "id": "cc-mc-0416"
@@ -5416,11 +5416,11 @@
       "type": "multiple_choice",
       "options": [
         "It is free",
-        "£5 per year",
-        "£25 per year",
-        "£10 per year"
+        "\u00a35 per year",
+        "\u00a325 per year",
+        "\u00a310 per year"
       ],
-      "explanation": "Residents must pay a £10 annual registration fee to maintain their eligibility for the 90% discount",
+      "explanation": "Residents must pay a \u00a310 annual registration fee to maintain their eligibility for the 90% discount",
       "question": "What is the annual administration fee for a resident to register for the Congestion Charge discount?",
       "correctAnswer": 3,
       "id": "cc-mc-0417"
@@ -5455,13 +5455,13 @@
       "correctAnswer": 0,
       "question": "What is the full standard amount of a Penalty Charge Notice (PCN) for failing to pay the Congestion Charge?",
       "options": [
-        "£180",
-        "£130",
-        "£80",
-        "£200"
+        "\u00a3180",
+        "\u00a3130",
+        "\u00a380",
+        "\u00a3200"
       ],
       "type": "multiple_choice",
-      "explanation": "If you fail to pay the charge within the three-day window following travel, a Penalty Charge Notice of £180 is issued",
+      "explanation": "If you fail to pay the charge within the three-day window following travel, a Penalty Charge Notice of \u00a3180 is issued",
       "id": "cc-mc-0420"
     },
     {
@@ -5480,13 +5480,13 @@
     {
       "question": "How much is the one-off registration fee for a Blue Badge holder to receive a 100% discount?",
       "correctAnswer": 2,
-      "explanation": "While Blue Badge holders receive a 100% discount, they must pay a £10 registration fee to set up the discount on their account",
+      "explanation": "While Blue Badge holders receive a 100% discount, they must pay a \u00a310 registration fee to set up the discount on their account",
       "type": "multiple_choice",
       "options": [
         "It is free to register",
-        "£5 registration fee",
-        "£10 registration fee",
-        "£20 registration fee"
+        "\u00a35 registration fee",
+        "\u00a310 registration fee",
+        "\u00a320 registration fee"
       ],
       "id": "cc-mc-0422"
     },
@@ -5505,10 +5505,10 @@
     },
     {
       "options": [
-        "07:00 – 18:00",
-        "12:00 – 18:00",
-        "10:00 – 20:00",
-        "09:00 – 17:00"
+        "07:00 \u2013 18:00",
+        "12:00 \u2013 18:00",
+        "10:00 \u2013 20:00",
+        "09:00 \u2013 17:00"
       ],
       "type": "multiple_choice",
       "explanation": "On Saturdays, Sundays, and Bank Holidays, the charge applies between 12:00 (midday) and 18:00",
@@ -5544,14 +5544,14 @@
     },
     {
       "correctAnswer": 0,
-      "explanation": "If paid by midnight on the third day after travel (Pay Next Day), the charge increases to £17.50",
+      "explanation": "If paid by midnight on the third day after travel (Pay Next Day), the charge increases to \u00a317.50",
       "question": "What is the daily cost if you pay the Congestion Charge up to three days after the day of travel?",
       "type": "multiple_choice",
       "options": [
-        "£17.50",
-        "£20.00",
-        "£25.00",
-        "£30.00"
+        "\u00a317.50",
+        "\u00a320.00",
+        "\u00a325.00",
+        "\u00a330.00"
       ],
       "id": "cc-mc-0427"
     },
@@ -5636,14 +5636,14 @@
     {
       "type": "multiple_choice",
       "options": [
-        "£10.50",
-        "£12.50",
-        "£15.00",
-        "£17.50"
+        "\u00a310.50",
+        "\u00a312.50",
+        "\u00a315.00",
+        "\u00a317.50"
       ],
       "correctAnswer": 2,
       "question": "What is the daily cost of the Congestion Charge for a vehicle registered on 'Auto Pay'?",
-      "explanation": "The daily charge for a vehicle using Auto Pay is £15.00, the same as paying in advance or on the day",
+      "explanation": "The daily charge for a vehicle using Auto Pay is \u00a315.00, the same as paying in advance or on the day",
       "id": "cc-mc-0434"
     },
     {
@@ -5767,13 +5767,13 @@
       "question": "What is the standard daily cost of the Congestion Charge if paid on the day of travel?",
       "correctAnswer": 0,
       "options": [
-        "£15.00",
-        "£12.50",
-        "£17.50",
-        "£20.00"
+        "\u00a315.00",
+        "\u00a312.50",
+        "\u00a317.50",
+        "\u00a320.00"
       ],
       "type": "multiple_choice",
-      "explanation": "The standard daily Congestion Charge is £15 if paid in advance or on the day of travel",
+      "explanation": "The standard daily Congestion Charge is \u00a315 if paid in advance or on the day of travel",
       "id": "cc-mc-0444"
     },
     {
@@ -5786,7 +5786,7 @@
         "Up to five vehicles",
         "Up to two vehicles"
       ],
-      "explanation": "Blue Badge holders must pay a £10 one-off registration fee to be granted a 100% discount for up to two vehicles",
+      "explanation": "Blue Badge holders must pay a \u00a310 one-off registration fee to be granted a 100% discount for up to two vehicles",
       "id": "cc-mc-0445"
     },
     {
@@ -5871,13 +5871,13 @@
       "correctAnswer": 0,
       "question": "What is the annual registration cost per vehicle for most discounts, such as the Resident or Blue Badge discount?",
       "options": [
-        "£10.00",
-        "£5.00",
-        "£15.00",
-        "£2.50"
+        "\u00a310.00",
+        "\u00a35.00",
+        "\u00a315.00",
+        "\u00a32.50"
       ],
       "type": "multiple_choice",
-      "explanation": "TfL charges a non-refundable £10 annual registration fee for each vehicle added to a Blue Badge, Resident, or Cleaner Vehicle discount account",
+      "explanation": "TfL charges a non-refundable \u00a310 annual registration fee for each vehicle added to a Blue Badge, Resident, or Cleaner Vehicle discount account",
       "id": "cc-mc-0452"
     },
     {
@@ -5889,7 +5889,7 @@
         "21 days"
       ],
       "question": "If you receive a Penalty Charge Notice (PCN), how many days do you have to pay the discounted rate?",
-      "explanation": "A PCN is reduced by 50% if paid within 14 days; the current standard penalty is £180, reducing to £90",
+      "explanation": "A PCN is reduced by 50% if paid within 14 days; the current standard penalty is \u00a3180, reducing to \u00a390",
       "type": "multiple_choice",
       "id": "cc-mc-0453"
     },
@@ -5922,8 +5922,8 @@
     {
       "type": "true_false",
       "correctAnswer": true,
-      "question": "The standard daily daily Congestion Charge is £15.00",
-      "explanation": "The standard daily charge for driving within the London Congestion Charge zone is £15 if paid in advance or on the same day",
+      "question": "The standard daily daily Congestion Charge is \u00a315.00",
+      "explanation": "The standard daily charge for driving within the London Congestion Charge zone is \u00a315 if paid in advance or on the same day",
       "id": "cc-tf-0001"
     },
     {
@@ -5978,7 +5978,7 @@
     {
       "type": "true_false",
       "correctAnswer": true,
-      "explanation": "Payments can be made up to three days after the day of travel, but the fee increases to £17.50 for late payments",
+      "explanation": "Payments can be made up to three days after the day of travel, but the fee increases to \u00a317.50 for late payments",
       "question": "You can pay the Congestion Charge up to three days after your journey, though the price is higher than paying on the day",
       "id": "cc-tf-0009"
     },
@@ -6084,7 +6084,7 @@
       "correctAnswer": false,
       "question": "Registering a Blue Badge for a 100% Congestion Charge discount is completely free of charge",
       "type": "true_false",
-      "explanation": "Blue Badge holders must pay a one-off £10 registration fee to set up their 100% discount for up to two vehicles",
+      "explanation": "Blue Badge holders must pay a one-off \u00a310 registration fee to set up their 100% discount for up to two vehicles",
       "id": "cc-tf-0024"
     },
     {
@@ -6095,9 +6095,9 @@
       "id": "cc-tf-0025"
     },
     {
-      "explanation": "If you fail to pay by midnight on the third day after travel, you will be issued a PCN for £180 (reduced to £90 if paid within 14 days)",
+      "explanation": "If you fail to pay by midnight on the third day after travel, you will be issued a PCN for \u00a3180 (reduced to \u00a390 if paid within 14 days)",
       "correctAnswer": true,
-      "question": "The standard Penalty Charge Notice (PCN) for failing to pay the Congestion Charge is £180",
+      "question": "The standard Penalty Charge Notice (PCN) for failing to pay the Congestion Charge is \u00a3180",
       "type": "true_false",
       "id": "cc-tf-0026"
     },
@@ -6154,7 +6154,7 @@
       "correctAnswer": true,
       "question": "A small annual registration fee is required to maintain a Blue Badge holder's 100% discount on the TfL system",
       "type": "true_false",
-      "explanation": "There is an annual £10 registration fee per vehicle for the Blue Badge 100% discount",
+      "explanation": "There is an annual \u00a310 registration fee per vehicle for the Blue Badge 100% discount",
       "id": "cc-tf-0034"
     },
     {
@@ -6173,7 +6173,7 @@
     },
     {
       "type": "true_false",
-      "explanation": "The daily charge is discounted by £1 if you set up an Auto Pay account, which automatically bills you for the number of charging days your vehicle is detected in the zone",
+      "explanation": "The daily charge is discounted by \u00a31 if you set up an Auto Pay account, which automatically bills you for the number of charging days your vehicle is detected in the zone",
       "correctAnswer": true,
       "question": "Drivers can receive a small daily discount on the Congestion Charge by setting up an Auto Pay account with TfL",
       "id": "cc-tf-0037"
@@ -6216,7 +6216,7 @@
     {
       "question": "The cost of the Congestion Charge increases if you choose to pay it in the three days following your journey",
       "correctAnswer": true,
-      "explanation": "The three-day rule allows drivers to pay £17.50 up to three days after the day of travel; otherwise, the daily cost is £15 if paid in advance or on the day",
+      "explanation": "The three-day rule allows drivers to pay \u00a317.50 up to three days after the day of travel; otherwise, the daily cost is \u00a315 if paid in advance or on the day",
       "type": "true_false",
       "id": "cc-tf-0043"
     },
@@ -6231,13 +6231,13 @@
       "type": "true_false",
       "correctAnswer": false,
       "question": "A vehicle displaying a valid Blue Badge is automatically exempt from the charge without any prior registration",
-      "explanation": "Blue Badge holders are eligible for a 100% discount, but they must register their vehicle and badge with TfL and pay a £10 registration fee first",
+      "explanation": "Blue Badge holders are eligible for a 100% discount, but they must register their vehicle and badge with TfL and pay a \u00a310 registration fee first",
       "id": "cc-tf-0045"
     },
     {
       "correctAnswer": true,
       "question": "The cost of a Congestion Charge Penalty Charge Notice (PCN) is halved if paid within 14 days",
-      "explanation": "If a PCN is paid within 14 days of the date of service, the penalty is reduced by 50% (currently from £180 down to £90)",
+      "explanation": "If a PCN is paid within 14 days of the date of service, the penalty is reduced by 50% (currently from \u00a3180 down to \u00a390)",
       "type": "true_false",
       "id": "cc-tf-0046"
     },
@@ -6327,7 +6327,7 @@
     },
     {
       "correctAnswer": false,
-      "explanation": "There is an annual £10 registration fee to renew your Fleet Auto Pay or standard Auto Pay account registration",
+      "explanation": "There is an annual \u00a310 registration fee to renew your Fleet Auto Pay or standard Auto Pay account registration",
       "question": "There is no annual registration fee for maintaining an Auto Pay account with TfL",
       "type": "true_false",
       "id": "cc-tf-0059"
@@ -6368,7 +6368,7 @@
       "id": "cc-tf-0064"
     },
     {
-      "explanation": "Blue Badge holders must pay a £10 annual registration fee to maintain their 100% discount status",
+      "explanation": "Blue Badge holders must pay a \u00a310 annual registration fee to maintain their 100% discount status",
       "correctAnswer": false,
       "type": "true_false",
       "question": "Registration for the Blue Badge 100% discount is free of charge and does not need to be renewed",
@@ -6417,10 +6417,10 @@
       "id": "cc-tf-0071"
     },
     {
-      "explanation": "While the PCN is £180, it is reduced to £90 if paid within 14 days, not £60",
+      "explanation": "While the PCN is \u00a3180, it is reduced to \u00a390 if paid within 14 days, not \u00a360",
       "correctAnswer": false,
       "type": "true_false",
-      "question": "The standard Penalty Charge Notice (PCN) for non-payment of the Congestion Charge is £180, reduced to £60 if paid within 14 days",
+      "question": "The standard Penalty Charge Notice (PCN) for non-payment of the Congestion Charge is \u00a3180, reduced to \u00a360 if paid within 14 days",
       "id": "cc-tf-0072"
     },
     {
@@ -6445,9 +6445,9 @@
       "id": "cc-tf-0075"
     },
     {
-      "explanation": "The standard daily charge is £15 if paid in advance or on the day of travel",
+      "explanation": "The standard daily charge is \u00a315 if paid in advance or on the day of travel",
       "correctAnswer": false,
-      "question": "The standard daily cost of the Congestion Charge for a non-exempt vehicle is £12.50",
+      "question": "The standard daily cost of the Congestion Charge for a non-exempt vehicle is \u00a312.50",
       "type": "true_false",
       "id": "cc-tf-0076"
     },
@@ -6488,9 +6488,9 @@
     },
     {
       "correctAnswer": false,
-      "explanation": "The daily charge increases to £17.50 if paid on the third day after travel",
+      "explanation": "The daily charge increases to \u00a317.50 if paid on the third day after travel",
       "type": "true_false",
-      "question": "The daily charge remains £15 even if you pay three days after your journey",
+      "question": "The daily charge remains \u00a315 even if you pay three days after your journey",
       "id": "cc-tf-0082"
     },
     {
@@ -6503,7 +6503,7 @@
     {
       "type": "true_false",
       "question": "There is no cost for a Blue Badge holder to register their vehicle for the Congestion Charge discount",
-      "explanation": "Blue Badge holders must pay a £10 registration fee to set up their 100% discount account with TfL",
+      "explanation": "Blue Badge holders must pay a \u00a310 registration fee to set up their 100% discount account with TfL",
       "correctAnswer": false,
       "id": "cc-tf-0084"
     },
@@ -6557,9 +6557,9 @@
       "id": "cc-tf-0091"
     },
     {
-      "question": "If you pay the Congestion Charge two days after your journey, the price remains the standard £15.00",
+      "question": "If you pay the Congestion Charge two days after your journey, the price remains the standard \u00a315.00",
       "correctAnswer": false,
-      "explanation": "The Congestion Charge is £15 if paid in advance or on the day. If you pay up to three days after the journey, the charge increases to £17.50",
+      "explanation": "The Congestion Charge is \u00a315 if paid in advance or on the day. If you pay up to three days after the journey, the charge increases to \u00a317.50",
       "type": "true_false",
       "id": "cc-tf-0092"
     },
@@ -6572,7 +6572,7 @@
     },
     {
       "correctAnswer": false,
-      "question": "A standard two-wheeled motorcycle must pay a reduced daily rate of £1.00 to enter the zone",
+      "question": "A standard two-wheeled motorcycle must pay a reduced daily rate of \u00a31.00 to enter the zone",
       "explanation": "Two-wheeled motorbikes (and sidecars) are generally exempt from the Congestion Charge and do not need to be registered for a discount",
       "type": "true_false",
       "id": "cc-tf-0094"
@@ -6600,9 +6600,9 @@
     },
     {
       "correctAnswer": true,
-      "question": "Eligible residents must pay a £10 annual registration fee to receive the 90% discount on the Congestion Charge",
+      "question": "Eligible residents must pay a \u00a310 annual registration fee to receive the 90% discount on the Congestion Charge",
       "type": "true_false",
-      "explanation": "Residents living within the zone must pay a £10 annual registration fee to maintain their 90% discount eligibility",
+      "explanation": "Residents living within the zone must pay a \u00a310 annual registration fee to maintain their 90% discount eligibility",
       "id": "cc-tf-0098"
     },
     {
@@ -6615,7 +6615,7 @@
     {
       "explanation": "Blue Badge holders can register up to two vehicles they normally use to travel in the zone for a 100% discount",
       "type": "true_false",
-      "question": "A Blue Badge holder can nominate up to two vehicles for a 100% discount, provided they have paid a one-off £10 registration fee",
+      "question": "A Blue Badge holder can nominate up to two vehicles for a 100% discount, provided they have paid a one-off \u00a310 registration fee",
       "correctAnswer": true,
       "id": "cc-tf-0100"
     },
@@ -6628,9 +6628,9 @@
     },
     {
       "type": "true_false",
-      "explanation": "Drivers have until midnight three days after their travel to pay, but the daily charge is £15. The £17.50 rate was a previous 'Pay Next Day' fee that is no longer used for the standard £15 charge",
+      "explanation": "Drivers have until midnight three days after their travel to pay, but the daily charge is \u00a315. The \u00a317.50 rate was a previous 'Pay Next Day' fee that is no longer used for the standard \u00a315 charge",
       "correctAnswer": false,
-      "question": "The cost to pay the Congestion Charge via the official website is £17.50 if you pay on the third day after your journey",
+      "question": "The cost to pay the Congestion Charge via the official website is \u00a317.50 if you pay on the third day after your journey",
       "id": "cc-tf-0102"
     },
     {
@@ -6663,9 +6663,9 @@
     },
     {
       "type": "true_false",
-      "explanation": "Failing to pay the charge results in a PCN of £180, which is halved to £90 if paid within 14 days",
+      "explanation": "Failing to pay the charge results in a PCN of \u00a3180, which is halved to \u00a390 if paid within 14 days",
       "correctAnswer": true,
-      "question": "If you do not pay the Congestion Charge, the standard Penalty Charge Notice (PCN) is £180, reduced to £90 if paid within 14 days",
+      "question": "If you do not pay the Congestion Charge, the standard Penalty Charge Notice (PCN) is \u00a3180, reduced to \u00a390 if paid within 14 days",
       "id": "cc-tf-0107"
     },
     {
@@ -6693,7 +6693,7 @@
       "question": "All Blue Badge holders are automatically exempt from the Congestion Charge without needing to register their vehicle with TfL",
       "correctAnswer": false,
       "type": "true_false",
-      "explanation": "Blue Badge holders are eligible for a 100% discount, but they must first register with TfL and pay a £10 administration fee; it is not automatic",
+      "explanation": "Blue Badge holders are eligible for a 100% discount, but they must first register with TfL and pay a \u00a310 administration fee; it is not automatic",
       "id": "cc-tf-0111"
     },
     {
@@ -6726,8 +6726,8 @@
     },
     {
       "type": "true_false",
-      "explanation": "The daily charge is £15 if paid in advance or on the day of travel; it rises to £17.50 if paid up to three days after the day of travel",
-      "question": "If you pay the Congestion Charge on the same day you travel, the cost is £17.50",
+      "explanation": "The daily charge is \u00a315 if paid in advance or on the day of travel; it rises to \u00a317.50 if paid up to three days after the day of travel",
+      "question": "If you pay the Congestion Charge on the same day you travel, the cost is \u00a317.50",
       "correctAnswer": false,
       "id": "cc-tf-0116"
     },
@@ -6768,8 +6768,8 @@
     },
     {
       "correctAnswer": false,
-      "explanation": "The daily charge is £15 if paid in advance or on the day of travel; it increases to £17.50 if paid up to three days after the day of travel",
-      "question": "The standard daily Congestion Charge is £15, regardless of whether you pay on the day of travel or three days later",
+      "explanation": "The daily charge is \u00a315 if paid in advance or on the day of travel; it increases to \u00a317.50 if paid up to three days after the day of travel",
+      "question": "The standard daily Congestion Charge is \u00a315, regardless of whether you pay on the day of travel or three days later",
       "type": "true_false",
       "id": "cc-tf-0122"
     },
@@ -6812,13 +6812,13 @@
       "explanation": "TfL allows customers to set up an Auto Pay account which automatically bills them for the number of days they drive within the zone",
       "correctAnswer": true,
       "type": "true_false",
-      "question": "You can set up 'Auto Pay' to ensure you never forget to pay the charge, but it incurs a £10 annual registration fee per vehicle",
+      "question": "You can set up 'Auto Pay' to ensure you never forget to pay the charge, but it incurs a \u00a310 annual registration fee per vehicle",
       "id": "cc-tf-0128"
     },
     {
       "question": "Blue Badge holders are exempt from the Congestion Charge for free and do not have to pay any administrative registration fees",
       "type": "true_false",
-      "explanation": "Blue Badge holders must pay a £10 one-off registration fee to be verified by TfL before they can receive the 100% discount",
+      "explanation": "Blue Badge holders must pay a \u00a310 one-off registration fee to be verified by TfL before they can receive the 100% discount",
       "correctAnswer": false,
       "id": "cc-tf-0129"
     },
@@ -6833,15 +6833,15 @@
       "tolerance": 0,
       "correctAnswer": 15,
       "type": "numeric_entry",
-      "explanation": "The daily Congestion Charge is £15 if paid in advance or on the day of travel",
-      "question": "What is the standard daily cost in pounds (£) for the London Congestion Charge if paid on the day of travel?",
+      "explanation": "The daily Congestion Charge is \u00a315 if paid in advance or on the day of travel",
+      "question": "What is the standard daily cost in pounds (\u00a3) for the London Congestion Charge if paid on the day of travel?",
       "unit": "pounds",
       "id": "cc-ne-0001"
     },
     {
       "unit": "pounds",
-      "explanation": "If you do not pay by midnight on the third day after travel, the daily charge increases to £17.50",
-      "question": "If you pay up to three days after your journey in the zone, what is the increased daily charge in pounds (£)?",
+      "explanation": "If you do not pay by midnight on the third day after travel, the daily charge increases to \u00a317.50",
+      "question": "If you pay up to three days after your journey in the zone, what is the increased daily charge in pounds (\u00a3)?",
       "type": "numeric_entry",
       "tolerance": 0,
       "correctAnswer": 17.5,
@@ -6879,13 +6879,13 @@
       "correctAnswer": 10,
       "tolerance": 0,
       "unit": "pounds",
-      "question": "How much is the one-off registration fee in pounds (£) for Blue Badge holders to be exempt from the charge?",
-      "explanation": "Blue Badge holders must pay a one-time registration fee of £10 to receive a 100% discount",
+      "question": "How much is the one-off registration fee in pounds (\u00a3) for Blue Badge holders to be exempt from the charge?",
+      "explanation": "Blue Badge holders must pay a one-time registration fee of \u00a310 to receive a 100% discount",
       "id": "cc-ne-0006"
     },
     {
-      "question": "What is the full cost in pounds (£) of a Penalty Charge Notice (PCN) for failing to pay the Congestion Charge?",
-      "explanation": "The standard Penalty Charge Notice (PCN) for non-payment is £160, halved if paid within 14 days",
+      "question": "What is the full cost in pounds (\u00a3) of a Penalty Charge Notice (PCN) for failing to pay the Congestion Charge?",
+      "explanation": "The standard Penalty Charge Notice (PCN) for non-payment is \u00a3160, halved if paid within 14 days",
       "unit": "pounds",
       "correctAnswer": 160,
       "tolerance": 0,
@@ -6897,8 +6897,8 @@
       "tolerance": 0,
       "correctAnswer": 80,
       "unit": "pounds",
-      "explanation": "If a PCN is paid within 14 days of issue, the fine is reduced by 50% to £80",
-      "question": "How much is the discounted fine in pounds (£) if a Penalty Charge Notice is paid within 14 days?",
+      "explanation": "If a PCN is paid within 14 days of issue, the fine is reduced by 50% to \u00a380",
+      "question": "How much is the discounted fine in pounds (\u00a3) if a Penalty Charge Notice is paid within 14 days?",
       "id": "cc-ne-0008"
     },
     {
@@ -6907,7 +6907,7 @@
       "correctAnswer": 0,
       "unit": "pounds",
       "explanation": "The Congestion Charge is suspended from Christmas Day through to and including New Year's Day bank holiday",
-      "question": "How many pounds (£) does it cost to drive in the zone on Christmas Day?",
+      "question": "How many pounds (\u00a3) does it cost to drive in the zone on Christmas Day?",
       "id": "cc-ne-0009"
     },
     {
@@ -6924,8 +6924,8 @@
       "correctAnswer": 10,
       "tolerance": 0,
       "unit": "pounds",
-      "question": "What is the annual registration fee in pounds (£) for the Cleaner Vehicle Discount?",
-      "explanation": "To qualify for the Cleaner Vehicle Discount, cars must emit no more than 75g/km of CO2 and have a minimum 20-mile zero-emission range (until 2025). This registration costs £10 annually",
+      "question": "What is the annual registration fee in pounds (\u00a3) for the Cleaner Vehicle Discount?",
+      "explanation": "To qualify for the Cleaner Vehicle Discount, cars must emit no more than 75g/km of CO2 and have a minimum 20-mile zero-emission range (until 2025). This registration costs \u00a310 annually",
       "id": "cc-ne-0011"
     },
     {
@@ -6948,17 +6948,17 @@
     },
     {
       "correctAnswer": 10,
-      "question": "What is the annual administration fee in pounds (£) per vehicle for someone using the Auto Pay system?",
+      "question": "What is the annual administration fee in pounds (\u00a3) per vehicle for someone using the Auto Pay system?",
       "unit": "pounds",
-      "explanation": "The administration fee for each vehicle added to an Auto Pay account is £10 per year",
+      "explanation": "The administration fee for each vehicle added to an Auto Pay account is \u00a310 per year",
       "tolerance": 0,
       "type": "numeric_entry",
       "id": "cc-ne-0014"
     },
     {
-      "explanation": "If the fine is not paid within 28 days of the notice being issued, the charge increases to £240",
+      "explanation": "If the fine is not paid within 28 days of the notice being issued, the charge increases to \u00a3240",
       "unit": "days",
-      "question": "How many days do you have to pay a Penalty Charge Notice (PCN) before the fine increases to the full £240 rate?",
+      "question": "How many days do you have to pay a Penalty Charge Notice (PCN) before the fine increases to the full \u00a3240 rate?",
       "correctAnswer": 28,
       "tolerance": 0,
       "type": "numeric_entry",
@@ -6995,7 +6995,7 @@
       "tolerance": 0,
       "explanation": "The Congestion Charge does not apply during the period between Christmas Day and the New Year's Day bank holiday inclusive",
       "unit": "pounds",
-      "question": "How many pounds (£) does the Congestion Charge cost on Boxing Day?",
+      "question": "How many pounds (\u00a3) does the Congestion Charge cost on Boxing Day?",
       "correctAnswer": 0,
       "type": "numeric_entry",
       "id": "cc-ne-0019"
@@ -7039,17 +7039,17 @@
     {
       "type": "numeric_entry",
       "tolerance": 0,
-      "explanation": "Failure to pay the PCN or challenge it within 28 days results in a Charge Certificate, increasing the fine to £240",
+      "explanation": "Failure to pay the PCN or challenge it within 28 days results in a Charge Certificate, increasing the fine to \u00a3240",
       "unit": "pounds",
-      "question": "What is the maximum cost in pounds (£) of a Penalty Charge Notice if it remains unpaid after 28 days?",
+      "question": "What is the maximum cost in pounds (\u00a3) of a Penalty Charge Notice if it remains unpaid after 28 days?",
       "correctAnswer": 240,
       "id": "cc-ne-0024"
     },
     {
-      "question": "What is the standard daily cost in pounds (£) for the Congestion Charge if paid on the day of travel?",
+      "question": "What is the standard daily cost in pounds (\u00a3) for the Congestion Charge if paid on the day of travel?",
       "unit": "pounds",
       "type": "numeric_entry",
-      "explanation": "The standard daily Congestion Charge is £15 when paid in advance or on the day of travel",
+      "explanation": "The standard daily Congestion Charge is \u00a315 when paid in advance or on the day of travel",
       "tolerance": 0,
       "correctAnswer": 15,
       "id": "cc-ne-0025"
@@ -7073,12 +7073,12 @@
       "id": "cc-ne-0027"
     },
     {
-      "explanation": "If you do not pay on the day or in advance, you have up to three days after travel to pay a higher rate of £17.50",
+      "explanation": "If you do not pay on the day or in advance, you have up to three days after travel to pay a higher rate of \u00a317.50",
       "type": "numeric_entry",
       "correctAnswer": 17.5,
       "tolerance": 0,
       "unit": "pounds",
-      "question": "How many pounds (£) is the daily charge if paid on the third day after travel?",
+      "question": "How many pounds (\u00a3) is the daily charge if paid on the third day after travel?",
       "id": "cc-ne-0028"
     },
     {
@@ -7096,24 +7096,24 @@
       "type": "numeric_entry",
       "explanation": "There is no charge on the days between Christmas Day and New Year's Day (inclusive of Bank Holidays)",
       "unit": "pounds",
-      "question": "How many pounds (£) does a driver pay for the Congestion Charge on New Year's Day?",
+      "question": "How many pounds (\u00a3) does a driver pay for the Congestion Charge on New Year's Day?",
       "id": "cc-ne-0030"
     },
     {
-      "explanation": "Drivers have until midnight on the third day following their journey to pay the charge at the £17.50 rate",
+      "explanation": "Drivers have until midnight on the third day following their journey to pay the charge at the \u00a317.50 rate",
       "type": "numeric_entry",
       "correctAnswer": 3,
       "tolerance": 0,
-      "question": "Payment can be made up to how many days after travel, provided the increased rate of £17.50 is paid?",
+      "question": "Payment can be made up to how many days after travel, provided the increased rate of \u00a317.50 is paid?",
       "unit": "days",
       "id": "cc-ne-0031"
     },
     {
       "tolerance": 0,
       "correctAnswer": 1.5,
-      "explanation": "Residents pay 1/10th of the £15 charge, which equals £1.50 per day",
+      "explanation": "Residents pay 1/10th of the \u00a315 charge, which equals \u00a31.50 per day",
       "type": "numeric_entry",
-      "question": "How many pounds (£) does a resident pay per day if they have the 90% Residents' Discount?",
+      "question": "How many pounds (\u00a3) does a resident pay per day if they have the 90% Residents' Discount?",
       "unit": "pounds",
       "id": "cc-ne-0032"
     },
@@ -7155,10 +7155,10 @@
     },
     {
       "tolerance": 0,
-      "explanation": "Standard registrations for discounts and exemptions, such as the Blue Badge or Resident discount, must be renewed every year at a cost of £10",
+      "explanation": "Standard registrations for discounts and exemptions, such as the Blue Badge or Resident discount, must be renewed every year at a cost of \u00a310",
       "unit": "pounds",
       "correctAnswer": 10,
-      "question": "How many pounds (£) is the annual registration fee for most Congestion Charge discounts and exemptions?",
+      "question": "How many pounds (\u00a3) is the annual registration fee for most Congestion Charge discounts and exemptions?",
       "type": "numeric_entry",
       "id": "cc-ne-0037"
     },
@@ -7172,7 +7172,7 @@
       "id": "cc-ne-0038"
     },
     {
-      "question": "How many pounds (£) does the Congestion Charge cost on the 27th of December?",
+      "question": "How many pounds (\u00a3) does the Congestion Charge cost on the 27th of December?",
       "type": "numeric_entry",
       "correctAnswer": 0,
       "tolerance": 0,
@@ -7184,16 +7184,16 @@
       "question": "What is the maximum number of vehicles a private individual can register under a single 'Auto Pay' account?",
       "type": "numeric_entry",
       "tolerance": 0,
-      "explanation": "The Auto Pay system carries an annual registration fee of £10 per vehicle to automate payments and avoid fines",
+      "explanation": "The Auto Pay system carries an annual registration fee of \u00a310 per vehicle to automate payments and avoid fines",
       "unit": "vehicles",
       "correctAnswer": 5,
       "id": "cc-ne-0040"
     },
     {
       "type": "numeric_entry",
-      "question": "What is the full standard amount in pounds (£) of a Penalty Charge Notice (PCN) before any discounts for early payment are applied?",
+      "question": "What is the full standard amount in pounds (\u00a3) of a Penalty Charge Notice (PCN) before any discounts for early payment are applied?",
       "correctAnswer": 160,
-      "explanation": "A Penalty Charge Notice (PCN) is issued at £160, though this is reduced by 50% if paid within 14 days",
+      "explanation": "A Penalty Charge Notice (PCN) is issued at \u00a3160, though this is reduced by 50% if paid within 14 days",
       "unit": "pounds",
       "tolerance": 0,
       "id": "cc-ne-0041"
@@ -7258,16 +7258,16 @@
       "tolerance": 0,
       "correctAnswer": 0,
       "type": "numeric_entry",
-      "question": "How many pounds (£) does it cost to check if a specific vehicle's number plate is subject to the charge using the TfL online checker?",
+      "question": "How many pounds (\u00a3) does it cost to check if a specific vehicle's number plate is subject to the charge using the TfL online checker?",
       "id": "cc-ne-0048"
     },
     {
       "correctAnswer": 15,
       "tolerance": 0,
       "unit": "Pounds",
-      "explanation": "The standard daily Congestion Charge is £15 if paid in advance or on the day of travel",
+      "explanation": "The standard daily Congestion Charge is \u00a315 if paid in advance or on the day of travel",
       "type": "numeric_entry",
-      "question": "How many pounds (£) is the standard daily Congestion Charge if paid on the day of travel?",
+      "question": "How many pounds (\u00a3) is the standard daily Congestion Charge if paid on the day of travel?",
       "id": "cc-ne-0049"
     },
     {
@@ -7280,7 +7280,7 @@
       "id": "cc-ne-0050"
     },
     {
-      "explanation": "Drivers have until midnight on the third day after travel to pay the charge at the higher rate of £17.50",
+      "explanation": "Drivers have until midnight on the third day after travel to pay the charge at the higher rate of \u00a317.50",
       "type": "numeric_entry",
       "question": "How many days after travel does a driver have to pay the charge before it is too late and a PCN is issued?",
       "correctAnswer": 3,
@@ -7307,7 +7307,7 @@
       "id": "cc-ne-0053"
     },
     {
-      "question": "How many pounds (£) does a driver pay for the Congestion Charge on Boxing Day?",
+      "question": "How many pounds (\u00a3) does a driver pay for the Congestion Charge on Boxing Day?",
       "explanation": "The Congestion Charge does not apply on the days between Christmas Day and New Year's Day bank holiday inclusive",
       "type": "numeric_entry",
       "unit": "Pounds",
@@ -7352,8 +7352,8 @@
       "id": "cc-ne-0058"
     },
     {
-      "question": "How many pounds (£) does the Penalty Charge Notice increase to if a Charge Certificate is issued?",
-      "explanation": "If a PCN is not paid within 28 days or successfully challenged, a Charge Certificate is issued and the fine increases to £240 (standardly) or £250 in specific cycles",
+      "question": "How many pounds (\u00a3) does the Penalty Charge Notice increase to if a Charge Certificate is issued?",
+      "explanation": "If a PCN is not paid within 28 days or successfully challenged, a Charge Certificate is issued and the fine increases to \u00a3240 (standardly) or \u00a3250 in specific cycles",
       "type": "numeric_entry",
       "unit": "Pounds",
       "correctAnswer": 250,
@@ -7363,8 +7363,8 @@
     {
       "type": "numeric_entry",
       "unit": "pounds",
-      "explanation": "To help cover the costs of managing the scheme, there is a £10 annual registration fee for each vehicle added to an Auto Pay account",
-      "question": "How many pounds (£) is the annual registration fee for each vehicle added to a London Congestion Charge Auto Pay account?",
+      "explanation": "To help cover the costs of managing the scheme, there is a \u00a310 annual registration fee for each vehicle added to an Auto Pay account",
+      "question": "How many pounds (\u00a3) is the annual registration fee for each vehicle added to a London Congestion Charge Auto Pay account?",
       "correctAnswer": 10,
       "id": "cc-ne-0060"
     },
@@ -7388,7 +7388,7 @@
       "explanation": "The Congestion Charge is not in operation between Christmas Day and New Year's Day bank holiday inclusive",
       "unit": "pounds",
       "correctAnswer": 0,
-      "question": "How many pounds (£) is the daily Congestion Charge on Christmas Day?",
+      "question": "How many pounds (\u00a3) is the daily Congestion Charge on Christmas Day?",
       "type": "numeric_entry",
       "id": "cc-ne-0063"
     },
@@ -7401,10 +7401,10 @@
       "id": "cc-ne-0064"
     },
     {
-      "question": "How many pounds (£) is the standard daily Congestion Charge for a vehicle registered for the 100% Blue Badge discount?",
+      "question": "How many pounds (\u00a3) is the standard daily Congestion Charge for a vehicle registered for the 100% Blue Badge discount?",
       "correctAnswer": 6,
       "unit": "pounds",
-      "explanation": "Blue Badge holders and other discount holders must pay a £10 registration fee every 12 months (once a year) to maintain their 100% discount",
+      "explanation": "Blue Badge holders and other discount holders must pay a \u00a310 registration fee every 12 months (once a year) to maintain their 100% discount",
       "type": "numeric_entry",
       "id": "cc-ne-0065"
     }
@@ -7414,29 +7414,29 @@
       "mockNumber": 1,
       "title": "Congestion Charge Quiz Test 1",
       "questionIds": [
-        "cc-mc-0188",
-        "cc-tf-0028",
-        "cc-mc-0160",
-        "cc-tf-0042",
-        "cc-tf-0088",
-        "cc-mc-0007",
-        "cc-ne-0047",
-        "cc-mc-0042",
-        "cc-mc-0211",
-        "cc-tf-0065",
-        "cc-mc-0185",
-        "cc-mc-0170",
-        "cc-ne-0051",
-        "cc-mc-0248",
         "cc-mc-0128",
-        "cc-mc-0399",
-        "cc-mc-0089",
-        "cc-tf-0127",
-        "cc-mc-0357",
-        "cc-mc-0304",
         "cc-mc-0213",
         "cc-mc-0210",
+        "cc-tf-0042",
+        "cc-mc-0160",
+        "cc-tf-0088",
+        "cc-mc-0185",
+        "cc-ne-0047",
+        "cc-mc-0007",
         "cc-mc-0282",
+        "cc-mc-0170",
+        "cc-mc-0042",
+        "cc-mc-0399",
+        "cc-tf-0065",
+        "cc-tf-0127",
+        "cc-mc-0357",
+        "cc-mc-0188",
+        "cc-mc-0211",
+        "cc-ne-0051",
+        "cc-mc-0089",
+        "cc-tf-0028",
+        "cc-mc-0304",
+        "cc-mc-0248",
         "cc-mc-0324"
       ]
     },
@@ -7444,599 +7444,599 @@
       "mockNumber": 2,
       "title": "Congestion Charge Quiz Test 2",
       "questionIds": [
-        "cc-mc-0397",
         "cc-mc-0012",
-        "cc-tf-0039",
-        "cc-tf-0002",
-        "cc-mc-0090",
-        "cc-mc-0094",
         "cc-tf-0111",
-        "cc-mc-0269",
-        "cc-mc-0164",
-        "cc-mc-0176",
-        "cc-ne-0058",
-        "cc-mc-0005",
-        "cc-ne-0035",
-        "cc-mc-0243",
-        "cc-tf-0091",
-        "cc-mc-0262",
-        "cc-mc-0224",
-        "cc-mc-0246",
         "cc-mc-0152",
+        "cc-tf-0039",
+        "cc-mc-0397",
+        "cc-mc-0176",
+        "cc-mc-0243",
+        "cc-mc-0246",
         "cc-mc-0204",
+        "cc-mc-0269",
+        "cc-tf-0002",
         "cc-mc-0407",
-        "cc-tf-0080",
+        "cc-mc-0179",
+        "cc-mc-0094",
+        "cc-mc-0090",
+        "cc-tf-0091",
+        "cc-mc-0005",
+        "cc-mc-0164",
         "cc-mc-0008",
-        "cc-mc-0179"
+        "cc-ne-0035",
+        "cc-tf-0080",
+        "cc-ne-0058",
+        "cc-mc-0262",
+        "cc-mc-0224"
       ]
     },
     {
       "mockNumber": 3,
       "title": "Congestion Charge Quiz Test 3",
       "questionIds": [
-        "cc-tf-0109",
-        "cc-mc-0181",
-        "cc-mc-0285",
-        "cc-tf-0108",
-        "cc-mc-0329",
-        "cc-tf-0094",
-        "cc-mc-0078",
-        "cc-tf-0018",
-        "cc-ne-0048",
-        "cc-mc-0003",
-        "cc-mc-0308",
-        "cc-mc-0348",
         "cc-mc-0038",
-        "cc-mc-0394",
-        "cc-mc-0214",
-        "cc-tf-0031",
-        "cc-mc-0356",
-        "cc-mc-0156",
-        "cc-mc-0060",
+        "cc-mc-0155",
         "cc-mc-0354",
-        "cc-ne-0019",
-        "cc-mc-0402",
+        "cc-ne-0048",
+        "cc-mc-0181",
         "cc-mc-0359",
-        "cc-mc-0155"
+        "cc-mc-0394",
+        "cc-mc-0329",
+        "cc-mc-0285",
+        "cc-tf-0018",
+        "cc-tf-0109",
+        "cc-tf-0108",
+        "cc-mc-0214",
+        "cc-mc-0356",
+        "cc-mc-0060",
+        "cc-mc-0078",
+        "cc-mc-0348",
+        "cc-mc-0003",
+        "cc-tf-0094",
+        "cc-tf-0031",
+        "cc-mc-0402",
+        "cc-mc-0156",
+        "cc-ne-0019",
+        "cc-mc-0308"
       ]
     },
     {
       "mockNumber": 4,
       "title": "Congestion Charge Quiz Test 4",
       "questionIds": [
-        "cc-mc-0035",
-        "cc-mc-0022",
-        "cc-mc-0232",
-        "cc-mc-0178",
+        "cc-tf-0003",
+        "cc-mc-0161",
+        "cc-mc-0093",
+        "cc-tf-0016",
         "cc-mc-0266",
-        "cc-tf-0071",
-        "cc-tf-0010",
-        "cc-ne-0054",
+        "cc-mc-0385",
+        "cc-mc-0035",
         "cc-mc-0046",
+        "cc-mc-0097",
+        "cc-mc-0178",
+        "cc-mc-0022",
         "cc-mc-0297",
         "cc-mc-0436",
-        "cc-mc-0097",
         "cc-ne-0003",
-        "cc-mc-0107",
-        "cc-mc-0145",
-        "cc-tf-0017",
-        "cc-mc-0161",
+        "cc-ne-0054",
+        "cc-mc-0433",
+        "cc-mc-0232",
         "cc-mc-0134",
+        "cc-tf-0010",
+        "cc-tf-0017",
+        "cc-mc-0145",
         "cc-mc-0062",
-        "cc-tf-0016",
-        "cc-tf-0003",
-        "cc-mc-0385",
-        "cc-mc-0093",
-        "cc-mc-0433"
+        "cc-tf-0071",
+        "cc-mc-0107"
       ]
     },
     {
       "mockNumber": 5,
       "title": "Congestion Charge Quiz Test 5",
       "questionIds": [
-        "cc-mc-0095",
-        "cc-ne-0060",
-        "cc-mc-0392",
-        "cc-mc-0386",
+        "cc-tf-0024",
+        "cc-mc-0428",
         "cc-mc-0319",
+        "cc-mc-0209",
+        "cc-mc-0392",
+        "cc-mc-0307",
+        "cc-tf-0007",
+        "cc-ne-0060",
         "cc-mc-0146",
-        "cc-ne-0011",
+        "cc-mc-0294",
+        "cc-mc-0247",
+        "cc-mc-0101",
+        "cc-mc-0095",
         "cc-tf-0076",
+        "cc-tf-0063",
+        "cc-ne-0011",
+        "cc-mc-0386",
         "cc-mc-0298",
         "cc-mc-0442",
-        "cc-tf-0063",
-        "cc-tf-0024",
-        "cc-mc-0101",
-        "cc-mc-0428",
-        "cc-mc-0154",
-        "cc-mc-0247",
-        "cc-mc-0070",
-        "cc-mc-0294",
-        "cc-tf-0060",
+        "cc-mc-0362",
         "cc-mc-0227",
-        "cc-tf-0007",
-        "cc-mc-0209",
-        "cc-mc-0307",
-        "cc-mc-0362"
+        "cc-tf-0060",
+        "cc-mc-0154",
+        "cc-mc-0070"
       ]
     },
     {
       "mockNumber": 6,
       "title": "Congestion Charge Quiz Test 6",
       "questionIds": [
-        "cc-mc-0368",
-        "cc-mc-0370",
+        "cc-mc-0189",
+        "cc-mc-0069",
+        "cc-mc-0265",
+        "cc-mc-0420",
+        "cc-mc-0445",
+        "cc-mc-0242",
+        "cc-mc-0263",
+        "cc-tf-0011",
+        "cc-mc-0039",
+        "cc-tf-0095",
+        "cc-tf-0130",
         "cc-tf-0048",
-        "cc-mc-0199",
+        "cc-ne-0022",
+        "cc-mc-0250",
+        "cc-mc-0370",
+        "cc-mc-0368",
+        "cc-mc-0157",
         "cc-mc-0150",
         "cc-tf-0044",
-        "cc-tf-0130",
-        "cc-mc-0157",
-        "cc-mc-0069",
-        "cc-mc-0445",
-        "cc-mc-0263",
-        "cc-ne-0022",
-        "cc-mc-0229",
-        "cc-mc-0426",
-        "cc-mc-0189",
-        "cc-mc-0039",
-        "cc-mc-0265",
-        "cc-mc-0242",
-        "cc-mc-0234",
-        "cc-tf-0095",
+        "cc-mc-0199",
         "cc-ne-0044",
-        "cc-mc-0250",
-        "cc-mc-0420",
-        "cc-tf-0011"
+        "cc-mc-0426",
+        "cc-mc-0229",
+        "cc-mc-0234"
       ]
     },
     {
       "mockNumber": 7,
       "title": "Congestion Charge Quiz Test 7",
       "questionIds": [
+        "cc-mc-0255",
         "cc-tf-0046",
-        "cc-mc-0067",
-        "cc-mc-0254",
-        "cc-mc-0086",
         "cc-tf-0093",
-        "cc-mc-0011",
-        "cc-mc-0027",
-        "cc-tf-0038",
-        "cc-mc-0290",
+        "cc-mc-0245",
         "cc-mc-0051",
         "cc-mc-0216",
-        "cc-ne-0053",
+        "cc-mc-0254",
+        "cc-mc-0027",
+        "cc-mc-0067",
+        "cc-mc-0290",
+        "cc-mc-0054",
+        "cc-mc-0305",
         "cc-mc-0352",
+        "cc-mc-0086",
+        "cc-ne-0053",
+        "cc-mc-0444",
+        "cc-mc-0110",
+        "cc-mc-0202",
+        "cc-tf-0084",
+        "cc-tf-0038",
+        "cc-mc-0011",
         "cc-ne-0002",
         "cc-mc-0225",
-        "cc-tf-0084",
-        "cc-mc-0110",
-        "cc-mc-0305",
-        "cc-tf-0032",
-        "cc-mc-0255",
-        "cc-mc-0202",
-        "cc-mc-0054",
-        "cc-mc-0444",
-        "cc-mc-0245"
+        "cc-tf-0032"
       ]
     },
     {
       "mockNumber": 8,
       "title": "Congestion Charge Quiz Test 8",
       "questionIds": [
-        "cc-mc-0140",
-        "cc-mc-0238",
-        "cc-mc-0174",
-        "cc-mc-0077",
+        "cc-mc-0228",
         "cc-tf-0037",
-        "cc-mc-0021",
-        "cc-mc-0131",
-        "cc-mc-0130",
+        "cc-mc-0193",
         "cc-tf-0073",
-        "cc-mc-0121",
-        "cc-mc-0434",
-        "cc-mc-0075",
+        "cc-tf-0012",
         "cc-ne-0005",
+        "cc-mc-0032",
+        "cc-mc-0021",
+        "cc-mc-0434",
         "cc-tf-0051",
         "cc-mc-0073",
-        "cc-tf-0054",
-        "cc-mc-0032",
-        "cc-mc-0228",
-        "cc-ne-0031",
-        "cc-mc-0377",
-        "cc-tf-0012",
+        "cc-mc-0131",
         "cc-mc-0406",
-        "cc-mc-0193",
-        "cc-mc-0267"
+        "cc-mc-0238",
+        "cc-mc-0267",
+        "cc-mc-0140",
+        "cc-mc-0174",
+        "cc-tf-0054",
+        "cc-ne-0031",
+        "cc-mc-0130",
+        "cc-mc-0121",
+        "cc-mc-0075",
+        "cc-mc-0377",
+        "cc-mc-0077"
       ]
     },
     {
       "mockNumber": 9,
       "title": "Congestion Charge Quiz Test 9",
       "questionIds": [
-        "cc-mc-0270",
-        "cc-mc-0375",
-        "cc-mc-0293",
-        "cc-mc-0441",
-        "cc-mc-0335",
-        "cc-mc-0171",
-        "cc-mc-0144",
-        "cc-mc-0076",
-        "cc-tf-0100",
-        "cc-mc-0403",
-        "cc-mc-0180",
         "cc-mc-0363",
-        "cc-mc-0040",
-        "cc-tf-0013",
-        "cc-ne-0023",
-        "cc-mc-0163",
+        "cc-mc-0441",
         "cc-mc-0056",
-        "cc-tf-0019",
-        "cc-tf-0128",
-        "cc-ne-0065",
-        "cc-mc-0159",
+        "cc-ne-0023",
         "cc-tf-0122",
+        "cc-mc-0403",
+        "cc-tf-0100",
+        "cc-mc-0163",
+        "cc-tf-0013",
+        "cc-mc-0335",
+        "cc-mc-0015",
+        "cc-mc-0180",
+        "cc-mc-0171",
         "cc-mc-0381",
-        "cc-mc-0015"
+        "cc-mc-0270",
+        "cc-mc-0159",
+        "cc-ne-0065",
+        "cc-mc-0076",
+        "cc-mc-0293",
+        "cc-mc-0375",
+        "cc-tf-0128",
+        "cc-mc-0144",
+        "cc-mc-0040",
+        "cc-tf-0019"
       ]
     },
     {
       "mockNumber": 10,
       "title": "Congestion Charge Quiz Test 10",
       "questionIds": [
-        "cc-tf-0057",
-        "cc-mc-0419",
-        "cc-mc-0208",
-        "cc-tf-0058",
-        "cc-tf-0081",
-        "cc-ne-0038",
-        "cc-mc-0098",
-        "cc-tf-0068",
-        "cc-mc-0219",
-        "cc-mc-0068",
-        "cc-mc-0218",
-        "cc-tf-0027",
-        "cc-mc-0279",
-        "cc-mc-0418",
-        "cc-mc-0222",
-        "cc-mc-0191",
-        "cc-mc-0165",
         "cc-ne-0033",
         "cc-mc-0383",
-        "cc-mc-0043",
-        "cc-mc-0258",
+        "cc-mc-0418",
+        "cc-mc-0098",
+        "cc-tf-0027",
+        "cc-tf-0081",
+        "cc-mc-0268",
+        "cc-mc-0208",
+        "cc-mc-0165",
+        "cc-mc-0191",
+        "cc-mc-0279",
+        "cc-mc-0419",
+        "cc-tf-0058",
         "cc-mc-0323",
+        "cc-tf-0068",
         "cc-mc-0100",
-        "cc-mc-0268"
+        "cc-tf-0057",
+        "cc-mc-0218",
+        "cc-ne-0038",
+        "cc-mc-0222",
+        "cc-mc-0219",
+        "cc-mc-0258",
+        "cc-mc-0043",
+        "cc-mc-0068"
       ]
     },
     {
       "mockNumber": 11,
       "title": "Congestion Charge Quiz Test 11",
       "questionIds": [
-        "cc-mc-0200",
+        "cc-mc-0119",
+        "cc-mc-0281",
+        "cc-mc-0451",
         "cc-tf-0053",
         "cc-ne-0040",
+        "cc-mc-0200",
         "cc-mc-0114",
-        "cc-mc-0281",
-        "cc-mc-0226",
-        "cc-mc-0316",
-        "cc-mc-0264",
-        "cc-tf-0072",
-        "cc-mc-0020",
-        "cc-mc-0343",
-        "cc-mc-0425",
-        "cc-mc-0451",
-        "cc-ne-0055",
-        "cc-mc-0429",
-        "cc-mc-0453",
-        "cc-tf-0008",
-        "cc-mc-0449",
-        "cc-tf-0097",
-        "cc-mc-0318",
-        "cc-mc-0028",
         "cc-mc-0404",
-        "cc-mc-0119",
-        "cc-tf-0020"
+        "cc-mc-0318",
+        "cc-mc-0449",
+        "cc-ne-0055",
+        "cc-mc-0264",
+        "cc-mc-0425",
+        "cc-tf-0020",
+        "cc-mc-0316",
+        "cc-tf-0072",
+        "cc-tf-0097",
+        "cc-mc-0453",
+        "cc-mc-0429",
+        "cc-mc-0028",
+        "cc-tf-0008",
+        "cc-mc-0226",
+        "cc-mc-0343",
+        "cc-mc-0020"
       ]
     },
     {
       "mockNumber": 12,
       "title": "Congestion Charge Quiz Test 12",
       "questionIds": [
-        "cc-tf-0062",
-        "cc-mc-0197",
-        "cc-mc-0104",
-        "cc-mc-0432",
-        "cc-mc-0091",
-        "cc-ne-0006",
-        "cc-tf-0022",
-        "cc-mc-0390",
-        "cc-mc-0241",
-        "cc-mc-0447",
-        "cc-mc-0423",
-        "cc-mc-0168",
-        "cc-mc-0106",
-        "cc-tf-0121",
-        "cc-mc-0327",
-        "cc-ne-0039",
-        "cc-mc-0408",
-        "cc-mc-0289",
-        "cc-tf-0126",
         "cc-mc-0169",
-        "cc-mc-0372",
+        "cc-ne-0039",
+        "cc-mc-0091",
+        "cc-tf-0062",
         "cc-tf-0055",
+        "cc-mc-0408",
+        "cc-mc-0327",
+        "cc-tf-0022",
+        "cc-mc-0026",
+        "cc-mc-0423",
+        "cc-mc-0106",
+        "cc-mc-0197",
+        "cc-mc-0168",
+        "cc-tf-0121",
+        "cc-mc-0432",
+        "cc-mc-0447",
+        "cc-mc-0372",
+        "cc-tf-0126",
+        "cc-mc-0289",
+        "cc-mc-0241",
+        "cc-ne-0006",
         "cc-mc-0410",
-        "cc-mc-0026"
+        "cc-mc-0104",
+        "cc-mc-0390"
       ]
     },
     {
       "mockNumber": 13,
       "title": "Congestion Charge Quiz Test 13",
       "questionIds": [
-        "cc-tf-0070",
-        "cc-mc-0049",
-        "cc-mc-0351",
-        "cc-mc-0315",
-        "cc-mc-0207",
-        "cc-tf-0092",
-        "cc-mc-0334",
-        "cc-mc-0353",
         "cc-tf-0114",
-        "cc-ne-0049",
-        "cc-mc-0148",
-        "cc-mc-0122",
-        "cc-mc-0278",
-        "cc-mc-0252",
-        "cc-mc-0125",
-        "cc-mc-0342",
-        "cc-tf-0118",
+        "cc-mc-0334",
         "cc-tf-0125",
-        "cc-mc-0201",
-        "cc-ne-0018",
-        "cc-mc-0147",
+        "cc-tf-0118",
+        "cc-mc-0148",
+        "cc-mc-0278",
+        "cc-mc-0125",
+        "cc-mc-0351",
+        "cc-mc-0353",
         "cc-mc-0212",
+        "cc-tf-0070",
         "cc-mc-0063",
-        "cc-mc-0105"
+        "cc-mc-0105",
+        "cc-mc-0201",
+        "cc-mc-0147",
+        "cc-tf-0092",
+        "cc-mc-0122",
+        "cc-mc-0342",
+        "cc-mc-0207",
+        "cc-mc-0252",
+        "cc-ne-0018",
+        "cc-ne-0049",
+        "cc-mc-0049",
+        "cc-mc-0315"
       ]
     },
     {
       "mockNumber": 14,
       "title": "Congestion Charge Quiz Test 14",
       "questionIds": [
+        "cc-tf-0067",
+        "cc-mc-0009",
+        "cc-ne-0017",
+        "cc-mc-0061",
+        "cc-mc-0382",
+        "cc-mc-0132",
+        "cc-mc-0314",
         "cc-mc-0369",
-        "cc-mc-0438",
-        "cc-mc-0292",
-        "cc-tf-0079",
+        "cc-mc-0355",
+        "cc-tf-0047",
         "cc-mc-0019",
+        "cc-mc-0438",
+        "cc-mc-0422",
         "cc-mc-0340",
         "cc-mc-0018",
+        "cc-mc-0292",
         "cc-ne-0014",
-        "cc-mc-0422",
-        "cc-mc-0221",
-        "cc-tf-0067",
+        "cc-tf-0001",
         "cc-mc-0239",
         "cc-tf-0116",
-        "cc-mc-0009",
-        "cc-mc-0132",
-        "cc-mc-0355",
-        "cc-mc-0314",
-        "cc-ne-0017",
-        "cc-mc-0382",
-        "cc-mc-0142",
-        "cc-tf-0001",
         "cc-mc-0325",
-        "cc-mc-0061",
-        "cc-tf-0047"
+        "cc-mc-0221",
+        "cc-tf-0079",
+        "cc-mc-0142"
       ]
     },
     {
       "mockNumber": 15,
       "title": "Congestion Charge Quiz Test 15",
       "questionIds": [
-        "cc-mc-0337",
-        "cc-ne-0062",
-        "cc-mc-0231",
-        "cc-tf-0050",
-        "cc-mc-0349",
-        "cc-ne-0024",
-        "cc-mc-0346",
-        "cc-mc-0395",
-        "cc-mc-0133",
-        "cc-mc-0087",
-        "cc-tf-0074",
-        "cc-mc-0172",
-        "cc-tf-0006",
-        "cc-mc-0031",
-        "cc-mc-0273",
-        "cc-mc-0411",
-        "cc-mc-0320",
-        "cc-mc-0183",
         "cc-mc-0116",
-        "cc-mc-0295",
+        "cc-mc-0346",
+        "cc-mc-0301",
+        "cc-mc-0349",
+        "cc-mc-0087",
+        "cc-mc-0411",
+        "cc-tf-0006",
+        "cc-mc-0133",
+        "cc-tf-0050",
+        "cc-mc-0231",
+        "cc-mc-0395",
+        "cc-mc-0183",
+        "cc-mc-0172",
         "cc-tf-0115",
+        "cc-mc-0337",
+        "cc-mc-0273",
+        "cc-ne-0062",
+        "cc-mc-0295",
+        "cc-tf-0074",
         "cc-tf-0033",
-        "cc-mc-0096",
-        "cc-mc-0301"
+        "cc-mc-0320",
+        "cc-mc-0031",
+        "cc-ne-0024",
+        "cc-mc-0096"
       ]
     },
     {
       "mockNumber": 16,
       "title": "Congestion Charge Quiz Test 16",
       "questionIds": [
-        "cc-mc-0311",
-        "cc-mc-0331",
-        "cc-ne-0029",
-        "cc-mc-0321",
-        "cc-mc-0103",
-        "cc-mc-0044",
-        "cc-mc-0384",
-        "cc-mc-0379",
-        "cc-tf-0124",
-        "cc-mc-0249",
-        "cc-mc-0065",
-        "cc-mc-0030",
-        "cc-mc-0158",
-        "cc-mc-0085",
-        "cc-mc-0244",
-        "cc-mc-0124",
-        "cc-mc-0123",
-        "cc-tf-0078",
-        "cc-mc-0338",
         "cc-tf-0041",
-        "cc-tf-0082",
+        "cc-tf-0096",
+        "cc-mc-0338",
+        "cc-mc-0123",
+        "cc-ne-0029",
+        "cc-mc-0065",
+        "cc-mc-0311",
         "cc-ne-0020",
         "cc-mc-0066",
-        "cc-tf-0096"
+        "cc-mc-0124",
+        "cc-tf-0124",
+        "cc-mc-0085",
+        "cc-mc-0321",
+        "cc-mc-0244",
+        "cc-mc-0030",
+        "cc-mc-0384",
+        "cc-mc-0044",
+        "cc-mc-0379",
+        "cc-mc-0331",
+        "cc-tf-0078",
+        "cc-mc-0249",
+        "cc-tf-0082",
+        "cc-mc-0158",
+        "cc-mc-0103"
       ]
     },
     {
       "mockNumber": 17,
       "title": "Congestion Charge Quiz Test 17",
       "questionIds": [
-        "cc-mc-0166",
-        "cc-mc-0092",
-        "cc-mc-0287",
-        "cc-mc-0010",
-        "cc-mc-0430",
         "cc-tf-0098",
-        "cc-mc-0272",
-        "cc-ne-0021",
-        "cc-tf-0056",
-        "cc-mc-0192",
-        "cc-mc-0153",
-        "cc-mc-0277",
-        "cc-ne-0043",
-        "cc-mc-0055",
-        "cc-tf-0120",
-        "cc-mc-0257",
-        "cc-tf-0077",
-        "cc-mc-0313",
+        "cc-mc-0010",
         "cc-mc-0001",
+        "cc-mc-0257",
+        "cc-mc-0083",
         "cc-mc-0387",
-        "cc-mc-0260",
-        "cc-tf-0123",
+        "cc-mc-0430",
+        "cc-mc-0192",
+        "cc-mc-0092",
+        "cc-mc-0277",
+        "cc-ne-0021",
+        "cc-ne-0043",
         "cc-mc-0251",
-        "cc-mc-0083"
+        "cc-mc-0166",
+        "cc-tf-0120",
+        "cc-mc-0055",
+        "cc-mc-0313",
+        "cc-mc-0153",
+        "cc-mc-0287",
+        "cc-tf-0056",
+        "cc-tf-0123",
+        "cc-mc-0260",
+        "cc-tf-0077",
+        "cc-mc-0272"
       ]
     },
     {
       "mockNumber": 18,
       "title": "Congestion Charge Quiz Test 18",
       "questionIds": [
-        "cc-mc-0409",
-        "cc-tf-0034",
-        "cc-tf-0023",
         "cc-mc-0081",
-        "cc-tf-0015",
-        "cc-mc-0006",
-        "cc-mc-0129",
-        "cc-mc-0454",
-        "cc-ne-0059",
-        "cc-mc-0398",
-        "cc-tf-0089",
-        "cc-mc-0002",
-        "cc-mc-0284",
-        "cc-mc-0365",
-        "cc-mc-0401",
-        "cc-mc-0059",
-        "cc-mc-0271",
-        "cc-mc-0240",
-        "cc-mc-0417",
         "cc-mc-0366",
-        "cc-mc-0223",
-        "cc-tf-0075",
+        "cc-mc-0059",
+        "cc-ne-0059",
+        "cc-mc-0129",
+        "cc-mc-0409",
+        "cc-mc-0398",
+        "cc-mc-0271",
+        "cc-mc-0006",
         "cc-ne-0009",
-        "cc-mc-0396"
+        "cc-mc-0240",
+        "cc-mc-0401",
+        "cc-mc-0284",
+        "cc-tf-0075",
+        "cc-mc-0417",
+        "cc-tf-0023",
+        "cc-tf-0015",
+        "cc-mc-0454",
+        "cc-tf-0034",
+        "cc-mc-0223",
+        "cc-mc-0002",
+        "cc-mc-0396",
+        "cc-tf-0089",
+        "cc-mc-0365"
       ]
     },
     {
       "mockNumber": 19,
       "title": "Congestion Charge Quiz Test 19",
       "questionIds": [
-        "cc-mc-0071",
+        "cc-tf-0069",
+        "cc-tf-0107",
+        "cc-mc-0414",
+        "cc-mc-0196",
+        "cc-mc-0388",
+        "cc-mc-0299",
+        "cc-mc-0079",
+        "cc-mc-0205",
         "cc-mc-0306",
         "cc-mc-0025",
-        "cc-mc-0261",
-        "cc-mc-0414",
-        "cc-mc-0299",
         "cc-tf-0104",
-        "cc-tf-0103",
-        "cc-mc-0033",
-        "cc-mc-0364",
-        "cc-mc-0057",
-        "cc-tf-0087",
-        "cc-mc-0198",
-        "cc-mc-0388",
         "cc-ne-0050",
-        "cc-ne-0008",
-        "cc-mc-0196",
-        "cc-tf-0069",
-        "cc-mc-0047",
         "cc-mc-0253",
-        "cc-mc-0079",
-        "cc-tf-0107",
+        "cc-mc-0261",
+        "cc-mc-0033",
+        "cc-mc-0198",
+        "cc-ne-0008",
+        "cc-mc-0364",
+        "cc-mc-0071",
+        "cc-mc-0057",
+        "cc-tf-0103",
         "cc-mc-0416",
-        "cc-mc-0205"
+        "cc-mc-0047",
+        "cc-tf-0087"
       ]
     },
     {
       "mockNumber": 20,
       "title": "Congestion Charge Quiz Test 20",
       "questionIds": [
-        "cc-ne-0036",
-        "cc-mc-0345",
-        "cc-mc-0448",
-        "cc-tf-0066",
-        "cc-mc-0074",
-        "cc-mc-0256",
-        "cc-mc-0276",
+        "cc-mc-0203",
         "cc-tf-0119",
-        "cc-mc-0336",
+        "cc-mc-0074",
         "cc-mc-0300",
-        "cc-tf-0113",
-        "cc-mc-0330",
-        "cc-mc-0431",
-        "cc-mc-0220",
+        "cc-ne-0036",
         "cc-tf-0099",
+        "cc-tf-0066",
         "cc-mc-0291",
         "cc-ne-0052",
-        "cc-mc-0203",
-        "cc-mc-0235",
-        "cc-mc-0341",
-        "cc-mc-0400",
-        "cc-mc-0135",
         "cc-mc-0127",
-        "cc-tf-0083"
+        "cc-tf-0113",
+        "cc-mc-0400",
+        "cc-mc-0341",
+        "cc-mc-0431",
+        "cc-mc-0276",
+        "cc-mc-0235",
+        "cc-mc-0336",
+        "cc-mc-0220",
+        "cc-mc-0448",
+        "cc-mc-0330",
+        "cc-mc-0256",
+        "cc-tf-0083",
+        "cc-mc-0345",
+        "cc-mc-0135"
       ]
     },
     {
       "mockNumber": 21,
       "title": "Congestion Charge Quiz Test 21",
       "questionIds": [
+        "cc-ne-0063",
+        "cc-mc-0162",
+        "cc-ne-0004",
         "cc-tf-0025",
         "cc-tf-0052",
-        "cc-mc-0029",
-        "cc-mc-0118",
-        "cc-tf-0043",
-        "cc-mc-0455",
-        "cc-mc-0439",
-        "cc-mc-0376",
-        "cc-mc-0109",
-        "cc-tf-0009",
-        "cc-ne-0004",
-        "cc-mc-0034",
-        "cc-mc-0162",
-        "cc-mc-0206",
-        "cc-mc-0286",
-        "cc-mc-0450",
-        "cc-tf-0036",
         "cc-mc-0139",
-        "cc-mc-0138",
-        "cc-mc-0371",
+        "cc-mc-0286",
         "cc-mc-0167",
+        "cc-mc-0118",
+        "cc-mc-0450",
+        "cc-tf-0009",
+        "cc-mc-0439",
         "cc-mc-0424",
-        "cc-ne-0063",
+        "cc-mc-0109",
+        "cc-mc-0455",
+        "cc-mc-0371",
+        "cc-mc-0138",
+        "cc-tf-0036",
+        "cc-mc-0206",
+        "cc-mc-0034",
+        "cc-mc-0376",
+        "cc-mc-0029",
+        "cc-tf-0043",
         "cc-mc-0237"
       ]
     },
@@ -8044,180 +8044,180 @@
       "mockNumber": 22,
       "title": "Congestion Charge Quiz Test 22",
       "questionIds": [
-        "cc-mc-0344",
-        "cc-mc-0427",
-        "cc-mc-0332",
-        "cc-mc-0037",
-        "cc-tf-0004",
-        "cc-ne-0012",
-        "cc-mc-0187",
-        "cc-mc-0233",
-        "cc-mc-0088",
         "cc-mc-0373",
         "cc-mc-0084",
-        "cc-ne-0034",
-        "cc-mc-0108",
-        "cc-tf-0102",
+        "cc-mc-0326",
         "cc-mc-0182",
-        "cc-mc-0137",
-        "cc-mc-0350",
-        "cc-mc-0274",
-        "cc-tf-0085",
-        "cc-mc-0190",
-        "cc-tf-0117",
-        "cc-tf-0030",
         "cc-mc-0312",
-        "cc-mc-0326"
+        "cc-mc-0088",
+        "cc-mc-0233",
+        "cc-tf-0030",
+        "cc-mc-0137",
+        "cc-mc-0187",
+        "cc-mc-0332",
+        "cc-mc-0350",
+        "cc-tf-0004",
+        "cc-mc-0108",
+        "cc-mc-0427",
+        "cc-ne-0034",
+        "cc-tf-0117",
+        "cc-mc-0274",
+        "cc-tf-0102",
+        "cc-mc-0037",
+        "cc-mc-0190",
+        "cc-ne-0012",
+        "cc-tf-0085",
+        "cc-mc-0344"
       ]
     },
     {
       "mockNumber": 23,
       "title": "Congestion Charge Quiz Test 23",
       "questionIds": [
-        "cc-mc-0099",
-        "cc-mc-0393",
-        "cc-ne-0028",
-        "cc-mc-0412",
-        "cc-mc-0296",
-        "cc-tf-0105",
         "cc-mc-0052",
-        "cc-tf-0045",
+        "cc-mc-0339",
         "cc-mc-0322",
-        "cc-mc-0405",
-        "cc-mc-0435",
-        "cc-mc-0117",
-        "cc-mc-0361",
-        "cc-mc-0149",
-        "cc-mc-0024",
-        "cc-tf-0129",
+        "cc-mc-0151",
+        "cc-mc-0317",
         "cc-tf-0059",
         "cc-tf-0040",
-        "cc-mc-0317",
-        "cc-mc-0339",
-        "cc-mc-0151",
-        "cc-ne-0015",
+        "cc-mc-0412",
+        "cc-mc-0099",
         "cc-mc-0036",
-        "cc-mc-0186"
+        "cc-ne-0028",
+        "cc-mc-0117",
+        "cc-mc-0393",
+        "cc-ne-0015",
+        "cc-mc-0149",
+        "cc-tf-0105",
+        "cc-tf-0129",
+        "cc-mc-0024",
+        "cc-tf-0045",
+        "cc-mc-0435",
+        "cc-mc-0361",
+        "cc-mc-0186",
+        "cc-mc-0296",
+        "cc-mc-0405"
       ]
     },
     {
       "mockNumber": 24,
       "title": "Congestion Charge Quiz Test 24",
       "questionIds": [
-        "cc-mc-0177",
         "cc-mc-0275",
-        "cc-mc-0050",
-        "cc-mc-0283",
-        "cc-mc-0173",
-        "cc-tf-0005",
-        "cc-tf-0029",
-        "cc-mc-0374",
         "cc-mc-0184",
-        "cc-mc-0236",
+        "cc-mc-0177",
+        "cc-tf-0026",
+        "cc-mc-0173",
+        "cc-mc-0374",
+        "cc-ne-0007",
+        "cc-tf-0005",
         "cc-mc-0041",
         "cc-tf-0061",
-        "cc-tf-0026",
+        "cc-tf-0029",
+        "cc-mc-0446",
+        "cc-mc-0236",
         "cc-tf-0110",
         "cc-ne-0001",
-        "cc-mc-0446",
+        "cc-mc-0194",
+        "cc-mc-0050",
         "cc-mc-0064",
-        "cc-mc-0136",
-        "cc-ne-0007",
-        "cc-mc-0437",
-        "cc-mc-0023",
         "cc-mc-0195",
+        "cc-mc-0136",
+        "cc-mc-0023",
+        "cc-mc-0437",
         "cc-mc-0310",
-        "cc-mc-0194"
+        "cc-mc-0283"
       ]
     },
     {
       "mockNumber": 25,
       "title": "Congestion Charge Quiz Test 25",
       "questionIds": [
-        "cc-mc-0215",
-        "cc-mc-0440",
-        "cc-mc-0389",
-        "cc-mc-0082",
-        "cc-mc-0358",
-        "cc-tf-0112",
-        "cc-mc-0111",
-        "cc-mc-0415",
-        "cc-mc-0175",
         "cc-ne-0042",
-        "cc-mc-0143",
-        "cc-mc-0391",
-        "cc-mc-0004",
-        "cc-ne-0056",
-        "cc-tf-0090",
+        "cc-tf-0112",
         "cc-tf-0049",
-        "cc-mc-0113",
-        "cc-tf-0014",
         "cc-mc-0413",
-        "cc-tf-0101",
+        "cc-mc-0080",
+        "cc-mc-0415",
+        "cc-mc-0111",
         "cc-mc-0230",
+        "cc-tf-0090",
+        "cc-mc-0004",
+        "cc-mc-0358",
+        "cc-mc-0175",
+        "cc-tf-0101",
+        "cc-mc-0389",
+        "cc-mc-0113",
         "cc-mc-0302",
         "cc-mc-0421",
-        "cc-mc-0080"
+        "cc-mc-0391",
+        "cc-ne-0056",
+        "cc-mc-0440",
+        "cc-mc-0082",
+        "cc-mc-0215",
+        "cc-tf-0014",
+        "cc-mc-0143"
       ]
     },
     {
       "mockNumber": 26,
       "title": "Congestion Charge Quiz Test 26",
       "questionIds": [
-        "cc-tf-0106",
-        "cc-mc-0360",
-        "cc-mc-0016",
-        "cc-mc-0014",
-        "cc-mc-0443",
-        "cc-mc-0120",
-        "cc-ne-0064",
-        "cc-mc-0333",
-        "cc-tf-0086",
-        "cc-mc-0259",
-        "cc-tf-0021",
-        "cc-mc-0288",
-        "cc-mc-0112",
-        "cc-mc-0048",
-        "cc-mc-0102",
-        "cc-mc-0303",
         "cc-mc-0017",
-        "cc-mc-0309",
-        "cc-tf-0035",
-        "cc-tf-0064",
-        "cc-mc-0367",
+        "cc-mc-0443",
         "cc-mc-0045",
+        "cc-mc-0367",
+        "cc-tf-0064",
+        "cc-ne-0016",
+        "cc-mc-0014",
+        "cc-mc-0102",
+        "cc-mc-0259",
+        "cc-mc-0360",
+        "cc-mc-0288",
+        "cc-tf-0035",
+        "cc-ne-0064",
+        "cc-mc-0016",
+        "cc-mc-0303",
+        "cc-tf-0086",
+        "cc-mc-0333",
+        "cc-mc-0112",
+        "cc-mc-0120",
+        "cc-mc-0309",
+        "cc-tf-0106",
+        "cc-mc-0048",
         "cc-mc-0217",
-        "cc-ne-0016"
+        "cc-tf-0021"
       ]
     },
     {
       "mockNumber": 27,
       "title": "Congestion Charge Quiz Test 27",
       "questionIds": [
-        "cc-mc-0378",
-        "cc-tf-0088",
-        "cc-mc-0188",
-        "cc-mc-0280",
-        "cc-mc-0328",
-        "cc-ne-0032",
-        "cc-ne-0026",
-        "cc-tf-0028",
-        "cc-tf-0065",
-        "cc-tf-0127",
-        "cc-mc-0141",
-        "cc-mc-0126",
-        "cc-mc-0380",
-        "cc-mc-0115",
-        "cc-mc-0357",
-        "cc-mc-0324",
         "cc-mc-0399",
-        "cc-mc-0013",
+        "cc-tf-0042",
         "cc-mc-0058",
         "cc-mc-0347",
-        "cc-mc-0072",
-        "cc-mc-0053",
+        "cc-tf-0065",
+        "cc-tf-0028",
+        "cc-mc-0188",
+        "cc-mc-0378",
+        "cc-mc-0126",
+        "cc-mc-0141",
+        "cc-ne-0026",
+        "cc-mc-0115",
+        "cc-ne-0032",
+        "cc-mc-0357",
+        "cc-mc-0324",
+        "cc-tf-0088",
+        "cc-mc-0328",
+        "cc-mc-0380",
         "cc-mc-0452",
-        "cc-tf-0042"
+        "cc-tf-0127",
+        "cc-mc-0280",
+        "cc-mc-0053",
+        "cc-mc-0013",
+        "cc-mc-0072"
       ]
     },
     {
@@ -8225,208 +8225,208 @@
       "title": "Congestion Charge Quiz Test 28",
       "questionIds": [
         "cc-mc-0185",
-        "cc-mc-0304",
         "cc-mc-0210",
-        "cc-mc-0407",
+        "cc-mc-0128",
         "cc-mc-0262",
+        "cc-mc-0007",
+        "cc-mc-0089",
+        "cc-tf-0111",
+        "cc-tf-0002",
         "cc-mc-0248",
-        "cc-ne-0025",
+        "cc-mc-0211",
+        "cc-mc-0243",
+        "cc-mc-0407",
         "cc-mc-0282",
         "cc-mc-0170",
-        "cc-tf-0091",
-        "cc-tf-0080",
-        "cc-mc-0007",
-        "cc-mc-0176",
         "cc-tf-0039",
-        "cc-mc-0089",
-        "cc-mc-0042",
-        "cc-tf-0111",
         "cc-ne-0045",
+        "cc-mc-0304",
+        "cc-ne-0025",
         "cc-mc-0213",
-        "cc-mc-0128",
-        "cc-tf-0002",
-        "cc-mc-0243",
-        "cc-mc-0211",
-        "cc-mc-0160"
+        "cc-tf-0080",
+        "cc-mc-0160",
+        "cc-tf-0091",
+        "cc-mc-0042",
+        "cc-mc-0176"
       ]
     },
     {
       "mockNumber": 29,
       "title": "Congestion Charge Quiz Test 29",
       "questionIds": [
-        "cc-tf-0108",
-        "cc-mc-0005",
-        "cc-mc-0397",
         "cc-mc-0354",
-        "cc-mc-0204",
-        "cc-ne-0013",
-        "cc-tf-0018",
-        "cc-mc-0224",
-        "cc-mc-0008",
         "cc-mc-0356",
-        "cc-mc-0038",
-        "cc-mc-0179",
-        "cc-tf-0109",
-        "cc-ne-0046",
-        "cc-mc-0246",
-        "cc-mc-0094",
-        "cc-tf-0094",
-        "cc-mc-0012",
-        "cc-mc-0164",
-        "cc-mc-0152",
         "cc-mc-0269",
+        "cc-mc-0224",
         "cc-tf-0031",
+        "cc-mc-0038",
+        "cc-ne-0013",
+        "cc-tf-0108",
+        "cc-mc-0094",
+        "cc-ne-0046",
+        "cc-tf-0094",
+        "cc-mc-0164",
+        "cc-mc-0005",
+        "cc-mc-0179",
+        "cc-mc-0090",
+        "cc-tf-0109",
+        "cc-mc-0012",
+        "cc-mc-0246",
         "cc-mc-0181",
-        "cc-mc-0090"
+        "cc-mc-0152",
+        "cc-mc-0397",
+        "cc-tf-0018",
+        "cc-mc-0204",
+        "cc-mc-0008"
       ]
     },
     {
       "mockNumber": 30,
       "title": "Congestion Charge Quiz Test 30",
       "questionIds": [
-        "cc-mc-0145",
         "cc-mc-0285",
-        "cc-mc-0232",
-        "cc-tf-0017",
-        "cc-mc-0394",
-        "cc-mc-0308",
-        "cc-ne-0037",
-        "cc-tf-0003",
-        "cc-mc-0003",
         "cc-mc-0385",
-        "cc-mc-0348",
-        "cc-mc-0433",
-        "cc-ne-0041",
-        "cc-mc-0156",
-        "cc-mc-0214",
-        "cc-mc-0078",
-        "cc-mc-0155",
-        "cc-mc-0359",
-        "cc-tf-0016",
-        "cc-tf-0010",
-        "cc-mc-0402",
         "cc-mc-0060",
+        "cc-ne-0041",
+        "cc-mc-0329",
+        "cc-mc-0155",
+        "cc-mc-0308",
+        "cc-tf-0017",
+        "cc-tf-0010",
+        "cc-tf-0016",
+        "cc-ne-0037",
+        "cc-mc-0145",
+        "cc-mc-0359",
+        "cc-mc-0214",
+        "cc-mc-0433",
+        "cc-mc-0402",
+        "cc-tf-0003",
+        "cc-mc-0232",
+        "cc-mc-0156",
         "cc-tf-0071",
-        "cc-mc-0329"
+        "cc-mc-0394",
+        "cc-mc-0078",
+        "cc-mc-0003",
+        "cc-mc-0348"
       ]
     },
     {
       "mockNumber": 31,
       "title": "Congestion Charge Quiz Test 31",
       "questionIds": [
-        "cc-mc-0022",
+        "cc-tf-0063",
+        "cc-mc-0298",
+        "cc-mc-0035",
+        "cc-mc-0146",
+        "cc-ne-0057",
+        "cc-mc-0307",
+        "cc-ne-0027",
+        "cc-tf-0060",
+        "cc-mc-0046",
+        "cc-mc-0178",
+        "cc-mc-0097",
+        "cc-mc-0297",
+        "cc-tf-0076",
+        "cc-mc-0161",
+        "cc-mc-0093",
+        "cc-mc-0436",
+        "cc-mc-0266",
         "cc-mc-0101",
+        "cc-mc-0062",
+        "cc-tf-0007",
+        "cc-mc-0134",
         "cc-mc-0107",
         "cc-tf-0024",
-        "cc-tf-0076",
-        "cc-mc-0297",
-        "cc-tf-0063",
-        "cc-mc-0161",
-        "cc-mc-0097",
-        "cc-tf-0007",
-        "cc-ne-0057",
-        "cc-mc-0134",
-        "cc-ne-0027",
-        "cc-mc-0436",
-        "cc-mc-0178",
-        "cc-mc-0266",
-        "cc-mc-0035",
-        "cc-mc-0298",
-        "cc-mc-0046",
-        "cc-tf-0060",
-        "cc-mc-0307",
-        "cc-mc-0146",
-        "cc-mc-0062",
-        "cc-mc-0093"
+        "cc-mc-0022"
       ]
     },
     {
       "mockNumber": 32,
       "title": "Congestion Charge Quiz Test 32",
       "questionIds": [
-        "cc-mc-0263",
-        "cc-ne-0010",
         "cc-tf-0011",
-        "cc-mc-0319",
-        "cc-tf-0048",
-        "cc-ne-0030",
-        "cc-tf-0095",
-        "cc-mc-0154",
-        "cc-mc-0189",
-        "cc-mc-0070",
-        "cc-mc-0247",
-        "cc-mc-0370",
-        "cc-mc-0392",
-        "cc-mc-0362",
         "cc-mc-0095",
-        "cc-mc-0442",
-        "cc-mc-0294",
-        "cc-mc-0428",
+        "cc-mc-0154",
         "cc-mc-0209",
-        "cc-tf-0044",
-        "cc-mc-0227",
-        "cc-mc-0386",
+        "cc-ne-0010",
+        "cc-mc-0442",
+        "cc-tf-0130",
         "cc-mc-0069",
-        "cc-tf-0130"
+        "cc-mc-0392",
+        "cc-mc-0428",
+        "cc-mc-0386",
+        "cc-mc-0070",
+        "cc-mc-0370",
+        "cc-tf-0044",
+        "cc-mc-0294",
+        "cc-mc-0263",
+        "cc-ne-0030",
+        "cc-tf-0048",
+        "cc-tf-0095",
+        "cc-mc-0362",
+        "cc-mc-0189",
+        "cc-mc-0247",
+        "cc-mc-0319",
+        "cc-mc-0227"
       ]
     },
     {
       "mockNumber": 33,
       "title": "Congestion Charge Quiz Test 33",
       "questionIds": [
-        "cc-mc-0420",
-        "cc-mc-0250",
-        "cc-tf-0093",
-        "cc-mc-0265",
-        "cc-tf-0032",
-        "cc-mc-0229",
-        "cc-mc-0039",
-        "cc-mc-0242",
-        "cc-mc-0199",
-        "cc-mc-0426",
-        "cc-mc-0157",
         "cc-tf-0046",
-        "cc-mc-0234",
-        "cc-ne-0061",
-        "cc-tf-0038",
-        "cc-mc-0445",
-        "cc-mc-0368",
-        "cc-mc-0245",
-        "cc-mc-0202",
-        "cc-mc-0150",
+        "cc-tf-0093",
+        "cc-mc-0039",
+        "cc-tf-0032",
+        "cc-mc-0242",
         "cc-ne-0051",
+        "cc-mc-0110",
+        "cc-mc-0150",
+        "cc-mc-0234",
         "cc-mc-0051",
+        "cc-mc-0265",
+        "cc-mc-0202",
+        "cc-mc-0157",
         "cc-tf-0084",
-        "cc-mc-0110"
+        "cc-mc-0229",
+        "cc-mc-0199",
+        "cc-mc-0250",
+        "cc-ne-0061",
+        "cc-mc-0420",
+        "cc-mc-0245",
+        "cc-mc-0426",
+        "cc-mc-0368",
+        "cc-tf-0038",
+        "cc-mc-0445"
       ]
     },
     {
       "mockNumber": 34,
       "title": "Congestion Charge Quiz Test 34",
       "questionIds": [
-        "cc-mc-0225",
-        "cc-tf-0012",
-        "cc-mc-0011",
         "cc-mc-0352",
-        "cc-ne-0035",
-        "cc-mc-0027",
-        "cc-mc-0032",
         "cc-ne-0047",
-        "cc-mc-0067",
-        "cc-tf-0051",
-        "cc-mc-0216",
-        "cc-tf-0054",
-        "cc-mc-0073",
-        "cc-tf-0073",
         "cc-mc-0290",
-        "cc-tf-0037",
+        "cc-mc-0075",
+        "cc-mc-0054",
         "cc-mc-0444",
+        "cc-mc-0067",
+        "cc-tf-0054",
+        "cc-mc-0216",
+        "cc-mc-0073",
         "cc-mc-0077",
         "cc-mc-0086",
-        "cc-mc-0054",
-        "cc-mc-0255",
+        "cc-mc-0032",
         "cc-mc-0305",
-        "cc-mc-0075",
+        "cc-mc-0255",
+        "cc-tf-0051",
+        "cc-ne-0035",
+        "cc-tf-0037",
+        "cc-mc-0011",
+        "cc-tf-0073",
+        "cc-mc-0027",
+        "cc-tf-0012",
+        "cc-mc-0225",
         "cc-mc-0254"
       ]
     },
@@ -8434,299 +8434,299 @@
       "mockNumber": 35,
       "title": "Congestion Charge Quiz Test 35",
       "questionIds": [
-        "cc-mc-0144",
-        "cc-mc-0130",
-        "cc-mc-0270",
-        "cc-mc-0267",
-        "cc-mc-0121",
-        "cc-tf-0013",
-        "cc-tf-0128",
-        "cc-tf-0122",
-        "cc-mc-0193",
-        "cc-mc-0174",
-        "cc-mc-0441",
-        "cc-mc-0434",
-        "cc-ne-0058",
         "cc-ne-0048",
-        "cc-mc-0238",
-        "cc-tf-0100",
-        "cc-mc-0171",
-        "cc-mc-0131",
+        "cc-mc-0130",
         "cc-mc-0377",
-        "cc-tf-0019",
+        "cc-mc-0174",
+        "cc-mc-0267",
         "cc-mc-0406",
-        "cc-mc-0228",
+        "cc-mc-0121",
+        "cc-tf-0100",
+        "cc-mc-0144",
         "cc-mc-0140",
-        "cc-mc-0021"
+        "cc-mc-0270",
+        "cc-tf-0013",
+        "cc-tf-0122",
+        "cc-mc-0021",
+        "cc-mc-0238",
+        "cc-tf-0019",
+        "cc-ne-0058",
+        "cc-mc-0131",
+        "cc-mc-0434",
+        "cc-tf-0128",
+        "cc-mc-0171",
+        "cc-mc-0441",
+        "cc-mc-0193",
+        "cc-mc-0228"
       ]
     },
     {
       "mockNumber": 36,
       "title": "Congestion Charge Quiz Test 36",
       "questionIds": [
-        "cc-tf-0068",
-        "cc-tf-0057",
-        "cc-tf-0081",
-        "cc-mc-0076",
-        "cc-tf-0058",
-        "cc-mc-0180",
-        "cc-mc-0098",
-        "cc-mc-0335",
-        "cc-ne-0019",
-        "cc-mc-0293",
-        "cc-tf-0027",
-        "cc-mc-0279",
-        "cc-mc-0040",
-        "cc-mc-0363",
         "cc-mc-0100",
-        "cc-ne-0003",
-        "cc-mc-0381",
-        "cc-mc-0056",
-        "cc-mc-0159",
-        "cc-mc-0068",
-        "cc-mc-0163",
-        "cc-mc-0375",
         "cc-mc-0015",
-        "cc-mc-0403"
+        "cc-mc-0375",
+        "cc-mc-0098",
+        "cc-tf-0027",
+        "cc-mc-0076",
+        "cc-mc-0335",
+        "cc-mc-0159",
+        "cc-mc-0180",
+        "cc-mc-0293",
+        "cc-mc-0056",
+        "cc-mc-0403",
+        "cc-mc-0068",
+        "cc-ne-0019",
+        "cc-mc-0163",
+        "cc-tf-0081",
+        "cc-tf-0057",
+        "cc-mc-0279",
+        "cc-mc-0381",
+        "cc-tf-0068",
+        "cc-mc-0040",
+        "cc-tf-0058",
+        "cc-ne-0003",
+        "cc-mc-0363"
       ]
     },
     {
       "mockNumber": 37,
       "title": "Congestion Charge Quiz Test 37",
       "questionIds": [
-        "cc-mc-0222",
-        "cc-mc-0453",
-        "cc-mc-0419",
-        "cc-mc-0323",
-        "cc-mc-0383",
-        "cc-mc-0208",
-        "cc-tf-0008",
-        "cc-mc-0418",
-        "cc-mc-0114",
-        "cc-tf-0053",
         "cc-ne-0054",
-        "cc-mc-0218",
-        "cc-mc-0165",
+        "cc-mc-0258",
+        "cc-mc-0043",
+        "cc-mc-0451",
+        "cc-mc-0219",
+        "cc-mc-0281",
+        "cc-ne-0011",
+        "cc-mc-0383",
         "cc-tf-0097",
         "cc-mc-0191",
-        "cc-ne-0011",
-        "cc-mc-0451",
-        "cc-tf-0072",
-        "cc-mc-0043",
-        "cc-mc-0219",
+        "cc-mc-0165",
+        "cc-tf-0008",
+        "cc-mc-0222",
+        "cc-mc-0268",
+        "cc-mc-0453",
+        "cc-tf-0053",
+        "cc-mc-0418",
+        "cc-mc-0114",
         "cc-tf-0020",
-        "cc-mc-0258",
-        "cc-mc-0281",
-        "cc-mc-0268"
+        "cc-mc-0323",
+        "cc-mc-0208",
+        "cc-mc-0419",
+        "cc-tf-0072",
+        "cc-mc-0218"
       ]
     },
     {
       "mockNumber": 38,
       "title": "Congestion Charge Quiz Test 38",
       "questionIds": [
-        "cc-mc-0119",
-        "cc-mc-0200",
-        "cc-mc-0404",
-        "cc-tf-0121",
-        "cc-mc-0316",
-        "cc-mc-0449",
-        "cc-mc-0425",
-        "cc-mc-0104",
-        "cc-mc-0197",
-        "cc-mc-0429",
-        "cc-mc-0226",
-        "cc-mc-0264",
         "cc-mc-0423",
-        "cc-ne-0022",
-        "cc-mc-0020",
-        "cc-tf-0062",
-        "cc-ne-0060",
         "cc-tf-0022",
+        "cc-mc-0343",
+        "cc-ne-0060",
+        "cc-mc-0020",
+        "cc-mc-0425",
+        "cc-mc-0264",
         "cc-tf-0126",
-        "cc-mc-0318",
-        "cc-mc-0241",
+        "cc-mc-0429",
+        "cc-mc-0119",
+        "cc-tf-0062",
+        "cc-mc-0404",
         "cc-tf-0055",
         "cc-mc-0028",
-        "cc-mc-0343"
+        "cc-mc-0200",
+        "cc-mc-0226",
+        "cc-mc-0104",
+        "cc-mc-0197",
+        "cc-ne-0022",
+        "cc-mc-0318",
+        "cc-mc-0449",
+        "cc-mc-0241",
+        "cc-tf-0121",
+        "cc-mc-0316"
       ]
     },
     {
       "mockNumber": 39,
       "title": "Congestion Charge Quiz Test 39",
       "questionIds": [
-        "cc-mc-0315",
-        "cc-mc-0289",
-        "cc-mc-0408",
-        "cc-tf-0092",
-        "cc-mc-0447",
-        "cc-ne-0044",
-        "cc-mc-0327",
-        "cc-mc-0169",
-        "cc-mc-0432",
-        "cc-tf-0118",
-        "cc-ne-0002",
-        "cc-mc-0091",
-        "cc-tf-0070",
-        "cc-mc-0106",
-        "cc-mc-0168",
-        "cc-mc-0372",
         "cc-mc-0026",
-        "cc-mc-0105",
-        "cc-mc-0390",
+        "cc-mc-0447",
+        "cc-mc-0169",
+        "cc-mc-0091",
+        "cc-mc-0408",
         "cc-tf-0125",
-        "cc-tf-0114",
-        "cc-mc-0410",
+        "cc-mc-0168",
+        "cc-mc-0289",
+        "cc-mc-0105",
+        "cc-mc-0106",
+        "cc-tf-0070",
+        "cc-mc-0372",
+        "cc-mc-0327",
+        "cc-ne-0044",
+        "cc-mc-0432",
+        "cc-ne-0002",
         "cc-mc-0049",
-        "cc-mc-0207"
+        "cc-tf-0118",
+        "cc-mc-0207",
+        "cc-mc-0315",
+        "cc-mc-0390",
+        "cc-mc-0410",
+        "cc-tf-0092",
+        "cc-tf-0114"
       ]
     },
     {
       "mockNumber": 40,
       "title": "Congestion Charge Quiz Test 40",
       "questionIds": [
-        "cc-mc-0334",
-        "cc-tf-0079",
-        "cc-mc-0252",
-        "cc-mc-0061",
-        "cc-mc-0132",
-        "cc-mc-0125",
-        "cc-mc-0212",
-        "cc-mc-0063",
-        "cc-tf-0047",
-        "cc-ne-0005",
-        "cc-mc-0122",
-        "cc-ne-0053",
-        "cc-tf-0001",
-        "cc-mc-0342",
-        "cc-mc-0278",
-        "cc-mc-0201",
-        "cc-tf-0116",
-        "cc-mc-0353",
-        "cc-tf-0067",
-        "cc-mc-0147",
         "cc-mc-0351",
         "cc-mc-0422",
+        "cc-mc-0063",
+        "cc-mc-0342",
+        "cc-tf-0067",
+        "cc-mc-0353",
+        "cc-tf-0079",
+        "cc-mc-0148",
+        "cc-mc-0212",
+        "cc-mc-0147",
+        "cc-mc-0334",
+        "cc-ne-0005",
+        "cc-tf-0116",
+        "cc-tf-0001",
+        "cc-mc-0132",
         "cc-mc-0292",
-        "cc-mc-0148"
+        "cc-tf-0047",
+        "cc-mc-0125",
+        "cc-mc-0252",
+        "cc-mc-0061",
+        "cc-mc-0201",
+        "cc-mc-0278",
+        "cc-ne-0053",
+        "cc-mc-0122"
       ]
     },
     {
       "mockNumber": 41,
       "title": "Congestion Charge Quiz Test 41",
       "questionIds": [
-        "cc-mc-0314",
-        "cc-mc-0325",
-        "cc-mc-0239",
-        "cc-mc-0340",
-        "cc-mc-0355",
-        "cc-tf-0115",
-        "cc-mc-0019",
-        "cc-mc-0295",
-        "cc-mc-0382",
         "cc-ne-0031",
-        "cc-ne-0023",
-        "cc-mc-0221",
-        "cc-tf-0006",
-        "cc-tf-0074",
-        "cc-tf-0050",
         "cc-mc-0346",
-        "cc-mc-0369",
         "cc-tf-0033",
-        "cc-mc-0009",
+        "cc-mc-0019",
+        "cc-mc-0340",
+        "cc-mc-0295",
+        "cc-tf-0006",
         "cc-mc-0142",
+        "cc-ne-0023",
+        "cc-tf-0050",
         "cc-mc-0438",
+        "cc-mc-0239",
+        "cc-mc-0369",
         "cc-mc-0018",
+        "cc-tf-0115",
+        "cc-mc-0009",
         "cc-mc-0301",
-        "cc-mc-0087"
+        "cc-mc-0087",
+        "cc-mc-0355",
+        "cc-tf-0074",
+        "cc-mc-0221",
+        "cc-mc-0325",
+        "cc-mc-0314",
+        "cc-mc-0382"
       ]
     },
     {
       "mockNumber": 42,
       "title": "Congestion Charge Quiz Test 42",
       "questionIds": [
-        "cc-tf-0041",
-        "cc-tf-0078",
-        "cc-tf-0096",
-        "cc-mc-0183",
-        "cc-tf-0124",
-        "cc-mc-0116",
-        "cc-tf-0082",
-        "cc-mc-0133",
-        "cc-mc-0031",
-        "cc-ne-0065",
-        "cc-mc-0231",
-        "cc-mc-0411",
-        "cc-mc-0349",
-        "cc-mc-0103",
-        "cc-mc-0096",
-        "cc-mc-0338",
-        "cc-mc-0320",
         "cc-mc-0337",
+        "cc-mc-0183",
+        "cc-ne-0033",
+        "cc-mc-0103",
+        "cc-ne-0065",
         "cc-mc-0331",
-        "cc-mc-0273",
+        "cc-mc-0231",
+        "cc-tf-0096",
+        "cc-mc-0349",
+        "cc-tf-0078",
+        "cc-tf-0082",
+        "cc-mc-0320",
         "cc-mc-0311",
+        "cc-tf-0124",
         "cc-mc-0395",
+        "cc-mc-0116",
+        "cc-mc-0096",
+        "cc-tf-0041",
         "cc-mc-0172",
-        "cc-ne-0033"
+        "cc-mc-0031",
+        "cc-mc-0338",
+        "cc-mc-0411",
+        "cc-mc-0133",
+        "cc-mc-0273"
       ]
     },
     {
       "mockNumber": 43,
       "title": "Congestion Charge Quiz Test 43",
       "questionIds": [
-        "cc-mc-0244",
+        "cc-mc-0321",
+        "cc-mc-0379",
+        "cc-mc-0387",
         "cc-mc-0249",
+        "cc-mc-0244",
+        "cc-mc-0010",
+        "cc-mc-0166",
+        "cc-tf-0123",
+        "cc-mc-0044",
+        "cc-mc-0030",
+        "cc-mc-0384",
+        "cc-ne-0038",
+        "cc-tf-0098",
+        "cc-mc-0123",
+        "cc-mc-0124",
+        "cc-tf-0120",
         "cc-mc-0066",
+        "cc-mc-0065",
+        "cc-mc-0158",
+        "cc-ne-0040",
+        "cc-tf-0056",
         "cc-mc-0251",
         "cc-mc-0085",
-        "cc-mc-0166",
-        "cc-mc-0384",
-        "cc-tf-0098",
-        "cc-mc-0387",
-        "cc-mc-0321",
-        "cc-mc-0124",
-        "cc-tf-0056",
-        "cc-tf-0120",
-        "cc-tf-0123",
-        "cc-mc-0030",
-        "cc-mc-0158",
-        "cc-mc-0010",
-        "cc-mc-0379",
-        "cc-ne-0040",
-        "cc-mc-0123",
-        "cc-mc-0065",
-        "cc-tf-0077",
-        "cc-ne-0038",
-        "cc-mc-0044"
+        "cc-tf-0077"
       ]
     },
     {
       "mockNumber": 44,
       "title": "Congestion Charge Quiz Test 44",
       "questionIds": [
-        "cc-mc-0192",
         "cc-mc-0313",
-        "cc-ne-0055",
-        "cc-tf-0015",
-        "cc-tf-0075",
-        "cc-tf-0023",
-        "cc-mc-0092",
-        "cc-mc-0398",
-        "cc-tf-0034",
-        "cc-mc-0287",
-        "cc-mc-0430",
-        "cc-mc-0272",
-        "cc-mc-0153",
-        "cc-mc-0365",
-        "cc-mc-0002",
-        "cc-mc-0083",
-        "cc-mc-0257",
-        "cc-mc-0055",
-        "cc-mc-0081",
-        "cc-mc-0277",
-        "cc-ne-0039",
         "cc-mc-0260",
+        "cc-mc-0055",
+        "cc-ne-0055",
+        "cc-mc-0081",
+        "cc-mc-0092",
         "cc-tf-0089",
+        "cc-tf-0034",
+        "cc-mc-0083",
+        "cc-mc-0430",
+        "cc-mc-0002",
+        "cc-mc-0277",
+        "cc-mc-0153",
+        "cc-mc-0192",
+        "cc-tf-0075",
+        "cc-mc-0398",
+        "cc-mc-0365",
+        "cc-tf-0015",
+        "cc-mc-0257",
+        "cc-mc-0287",
+        "cc-tf-0023",
+        "cc-mc-0272",
+        "cc-ne-0039",
         "cc-mc-0001"
       ]
     },
@@ -8734,30 +8734,30 @@
       "mockNumber": 45,
       "title": "Congestion Charge Quiz Test 45",
       "questionIds": [
-        "cc-mc-0240",
         "cc-mc-0033",
-        "cc-mc-0401",
-        "cc-mc-0454",
+        "cc-tf-0107",
+        "cc-mc-0198",
+        "cc-ne-0049",
+        "cc-mc-0284",
         "cc-tf-0069",
         "cc-mc-0196",
-        "cc-mc-0306",
-        "cc-mc-0129",
-        "cc-mc-0006",
-        "cc-mc-0409",
-        "cc-ne-0006",
-        "cc-ne-0049",
-        "cc-mc-0223",
-        "cc-mc-0396",
-        "cc-mc-0198",
-        "cc-tf-0087",
-        "cc-tf-0103",
-        "cc-tf-0104",
-        "cc-mc-0271",
-        "cc-mc-0284",
-        "cc-mc-0417",
-        "cc-tf-0107",
         "cc-mc-0059",
-        "cc-mc-0366"
+        "cc-mc-0306",
+        "cc-mc-0223",
+        "cc-mc-0006",
+        "cc-mc-0417",
+        "cc-mc-0240",
+        "cc-ne-0006",
+        "cc-mc-0396",
+        "cc-mc-0366",
+        "cc-mc-0271",
+        "cc-mc-0129",
+        "cc-tf-0087",
+        "cc-tf-0104",
+        "cc-mc-0409",
+        "cc-mc-0454",
+        "cc-mc-0401",
+        "cc-tf-0103"
       ]
     }
   ]
