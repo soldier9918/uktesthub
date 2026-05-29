@@ -13,6 +13,7 @@ import {
 } from "@/data/english/categories";
 import {
   countReadyEnglishMocks,
+  getPrecomputedReadyEnglishMocks,
   listEnglishMockSlots,
 } from "@/data/english/mocks";
 import { breadcrumbSchema } from "@/lib/seo";
@@ -27,11 +28,9 @@ export const Route = createFileRoute(
     if (!skill) throw notFound();
     if (!hasLevel(skill, params.level)) throw notFound();
     const level = params.level as LevelSlug;
-    const readyCount = await countReadyEnglishMocks(
-      test.slug,
-      skill.slug,
-      level,
-    ).catch(() => 0);
+    const readyCount =
+      getPrecomputedReadyEnglishMocks(test.slug, skill.slug, level) ??
+      (await countReadyEnglishMocks(test.slug, skill.slug, level).catch(() => 0));
     return { test, skill, level, readyCount };
   },
 
@@ -177,7 +176,7 @@ function MockCard({
   skillSlug: string;
   level: LevelSlug;
   mockNumber: number;
-  state: "ready" | "soon" | "loading";
+  state: "ready" | "soon";
 }) {
   const inner = (
     <div
@@ -205,7 +204,7 @@ function MockCard({
           </span>
         ) : (
           <span className="inline-flex items-center gap-1.5 rounded-lg bg-muted px-3 py-1.5 text-xs font-semibold text-muted-foreground">
-            {state === "loading" ? "Checking…" : "Coming soon"}
+            Coming soon
           </span>
         )}
       </div>
