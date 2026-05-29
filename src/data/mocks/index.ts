@@ -475,7 +475,7 @@ export function mockToQuiz(category: string, mock: MockTest): Quiz {
     slug: mock.slug,
     category,
     topic: mock.topic,
-    quizTitle: mock.title,
+    quizTitle: smartMockTitleFromSlug(mock.topic, mock.mockNumber),
     description: `Mock test ${mock.mockNumber} — ${mock.questions.length} questions.`,
     timeLimit: mock.questions.length * 60,
     difficulty: "Medium",
