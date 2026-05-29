@@ -83,21 +83,10 @@ export const Route = createFileRoute(
 });
 
 function LevelPage() {
-  const { test, skill, level } = Route.useLoaderData();
+  const { test, skill, level, readyCount } = Route.useLoaderData();
   const slots = listEnglishMockSlots();
-  const [readyCount, setReadyCount] = useState<number | null>(null);
+  const ready = readyCount;
 
-  useEffect(() => {
-    let active = true;
-    void countReadyEnglishMocks(test.slug, skill.slug, level).then((n) => {
-      if (active) setReadyCount(n);
-    });
-    return () => {
-      active = false;
-    };
-  }, [test.slug, skill.slug, level]);
-
-  const ready = readyCount ?? 0;
 
   return (
     <div className="min-h-screen bg-background">
