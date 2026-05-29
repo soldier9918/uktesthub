@@ -263,9 +263,6 @@ export const categories: Category[] = [
     topics: [
       { slug: "comptia-a-plus", title: "CompTIA A+ Practice" },
       { slug: "itil-4", title: "ITIL 4 Foundation Practice" },
-      { slug: "microsoft-fundamentals", title: "Microsoft Azure & 365 Fundamentals (AZ-900 / MS-900)" },
-      { slug: "aws-cloud-practitioner", title: "AWS Cloud Practitioner Practice" },
-      { slug: "cyber-awareness", title: "Cyber Security Awareness" },
     ],
   },
   {
@@ -486,39 +483,6 @@ export const categories: Category[] = [
       { slug: "aws-cloud-practitioner", title: "AWS Cloud Practitioner Practice" },
       { slug: "microsoft-fundamentals", title: "Microsoft Azure & 365 Fundamentals (AZ-900 / MS-900)" },
       { slug: "cyber-awareness", title: "Cyber Security Awareness" },
-    ],
-  },
-  {
-    slug: "university-admissions-tests",
-    title: "University Admissions",
-    short: "GRE, GMAT, UCAT, LNAT & medical/law admissions",
-    description:
-      "Independent practice for UK and international university admissions tests — GRE, GMAT, UCAT for medicine, LNAT for law and BMAT-style preparation.",
-    icon: "University",
-    accent: "gold",
-    heroImage: heroEducation,
-    topics: [
-      { slug: "gre-practice", title: "GRE Practice" },
-      { slug: "gmat-practice", title: "GMAT Practice" },
-      { slug: "ucat", title: "UCAT Practice" },
-      { slug: "lnat", title: "LNAT Multiple Choice" },
-      { slug: "bmat", title: "BMAT Practice" },
-    ],
-  },
-  {
-    slug: "health-safety-certifications",
-    title: "Health & Safety",
-    short: "SSSTS, SMSTS, CITB HSE & site safety",
-    description:
-      "Independent practice for UK site supervisor and manager safety qualifications — SSSTS, SMSTS, CITB Health, Safety & Environment and IPAF / PASMA working at height.",
-    icon: "HardHatSafety",
-    accent: "coral",
-    heroImage: heroConstruction,
-    topics: [
-      { slug: "sssts-practice-test", title: "SSSTS Practice Test" },
-      { slug: "smsts-practice-test", title: "SMSTS Practice Test" },
-      { slug: "citb-hse", title: "CITB Health, Safety & Environment Test" },
-      { slug: "ipaf-pasma", title: "IPAF / PASMA Working at Height Test" },
     ],
   },
   {
