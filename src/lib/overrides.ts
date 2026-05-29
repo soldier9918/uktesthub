@@ -117,7 +117,7 @@ export function applyOverrides<T extends AnyQuiz>(quiz: T, map: Map<string, Ques
       (srcId ? map.get(key(quiz.topic, srcId)) : undefined) ??
       map.get(key(quiz.topic, String(q.id)));
     if (!o) {
-      nextQuestions.push(q);
+      nextQuestions.push(hideRoadSignAnswerInPrompt(quiz.topic, q));
       continue;
     }
     if (o.disabled) {
