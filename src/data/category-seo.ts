@@ -887,7 +887,7 @@ export const categorySeo: Record<string, CategorySeo> = {
       {
         heading: "What the tests actually involve",
         body: [
-          "CompTIA A+ is delivered as two exams (Core 1 — 220-1101 and Core 2 — 220-1102). Each runs 90 minutes with up to 90 questions, including performance-based items, and a scaled pass mark of 675–700 out of 900.",
+          "CompTIA A+ is delivered as two exams (Core 1 — 220-1201 and Core 2 — 220-1202, the current V15 series). Each runs 90 minutes with up to 90 questions, including performance-based items, and a scaled pass mark of 675–700 out of 900.",
           "ITIL 4 Foundation is a 60-minute, 40-question multiple-choice exam with a 65% pass mark (26 of 40). It can be taken online with proctoring or at a Pearson VUE centre.",
           "Microsoft MS-900 and AZ-900 are 45–60 minute exams with around 40–60 multiple-choice and case-study questions and a scaled pass mark of 700 out of 1000.",
           "Cyber Security Awareness mocks follow the format used by major UK employers' annual training tools — short multi-choice items with immediate feedback.",
@@ -935,7 +935,7 @@ export const categorySeo: Record<string, CategorySeo> = {
       },
     ],
     faqs: [
-      { q: "What is the pass mark for CompTIA A+?", a: "Scaled, 675 out of 900 for Core 1 (220-1101) and 700 out of 900 for Core 2 (220-1102)." },
+      { q: "What is the pass mark for CompTIA A+?", a: "Scaled, 675 out of 900 for Core 1 (220-1201) and 700 out of 900 for Core 2 (220-1202)." },
       { q: "How much does ITIL 4 Foundation cost in 2026?", a: "Around £170–£250 depending on whether you book directly through PeopleCert or via an accredited training provider." },
       { q: "Is MS-900 worth it for non-technical staff?", a: "Yes — it's widely used by procurement, HR and operations staff who work with Microsoft 365 day to day and want a recognised credential." },
       { q: "How long are these certifications valid?", a: "CompTIA A+ is valid for three years and can be renewed via continuing education credits. ITIL 4 Foundation does not expire. Microsoft fundamentals certifications do not expire." },

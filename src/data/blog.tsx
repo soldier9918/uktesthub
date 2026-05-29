@@ -6868,7 +6868,7 @@ export const blogPosts: BlogPost[] = [
           CompTIA A+ is the most widely recognised entry-level IT certification in the UK. Most help-desk and
           first-line support job adverts list it either as essential or as a strong nice-to-have, and unlike many
           vendor-specific qualifications it stays useful as you move into networking, security or cloud roles. This
-          guide covers what's actually tested in the 2026 exams (Core 1 — 220-1101 and Core 2 — 220-1102), how to
+          guide covers what's actually tested in the current V15 exams (Core 1 — 220-1201 and Core 2 — 220-1202), how to
           plan your study time, what it costs in the UK, and how to use free practice mocks to know when you're
           ready to book. UK Test Hub is independent and not affiliated with CompTIA.
         </p>
@@ -6881,22 +6881,23 @@ export const blogPosts: BlogPost[] = [
           performance-based items where you complete a task in a simulated environment.
         </p>
 
-        <h2>Domain weightings (220-1101)</h2>
+        <h2>Domain weightings (220-1201)</h2>
         <ul>
-          <li>Mobile devices — 15%</li>
-          <li>Networking — 20%</li>
+          <li>Mobile devices — 13%</li>
+          <li>Networking — 23%</li>
           <li>Hardware — 25%</li>
           <li>Virtualisation and cloud computing — 11%</li>
-          <li>Hardware and network troubleshooting — 29%</li>
+          <li>Hardware and network troubleshooting — 28%</li>
         </ul>
 
-        <h2>Domain weightings (220-1102)</h2>
+        <h2>Domain weightings (220-1202)</h2>
         <ul>
-          <li>Operating systems — 31%</li>
-          <li>Security — 25%</li>
-          <li>Software troubleshooting — 22%</li>
-          <li>Operational procedures — 22%</li>
+          <li>Operating systems — 28%</li>
+          <li>Security — 28%</li>
+          <li>Software troubleshooting — 23%</li>
+          <li>Operational procedures — 21%</li>
         </ul>
+
 
         <h2>Realistic UK costs</h2>
         <p>
