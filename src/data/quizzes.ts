@@ -1241,6 +1241,7 @@ import {
   getTopicManifest,
   listAllTopics,
   QUESTIONS_PER_MOCK,
+  smartMockTitleFromSlug,
 } from "@/data/mocks";
 
 export const getQuizMeta = (slug: string): QuizMeta | undefined => {
