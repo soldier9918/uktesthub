@@ -990,7 +990,7 @@ function ModeSelect({ quiz, onSelect }: { quiz: Quiz; onSelect: (m: Mode) => voi
         <div className="mt-8 grid gap-4 md:grid-cols-2">
           <button
             onClick={() => onSelect("practice")}
-            className="group rounded-2xl border-2 border-[#15803d] bg-gradient-to-br from-[#22c55e] to-[#15803d] p-5 text-left text-white shadow-[0_6px_14px_-6px_rgba(34,197,94,0.7)] ring-1 ring-white/20 transition-all hover:-translate-y-0.5"
+            className="group cursor-pointer rounded-2xl border-2 border-[#15803d] bg-gradient-to-br from-[#22c55e] to-[#15803d] p-5 text-left text-white shadow-[0_6px_14px_-6px_rgba(34,197,94,0.7)] ring-1 ring-white/20 transition-all hover:-translate-y-0.5"
           >
             <div className="font-display text-lg font-semibold">Practice mode</div>
             <p className="mt-1 text-sm opacity-90">
@@ -1002,7 +1002,7 @@ function ModeSelect({ quiz, onSelect }: { quiz: Quiz; onSelect: (m: Mode) => voi
           </button>
           <button
             onClick={() => onSelect("exam")}
-            className="group rounded-2xl border-2 border-[#c81e2c] bg-gradient-to-br from-[#ff5a5f] to-[#c81e2c] p-5 text-left text-white shadow-[0_6px_14px_-6px_rgba(255,90,95,0.7)] ring-1 ring-white/20 transition-all hover:-translate-y-0.5"
+            className="group cursor-pointer rounded-2xl border-2 border-[#c81e2c] bg-gradient-to-br from-[#ff5a5f] to-[#c81e2c] p-5 text-left text-white shadow-[0_6px_14px_-6px_rgba(255,90,95,0.7)] ring-1 ring-white/20 transition-all hover:-translate-y-0.5"
           >
             <div className="font-display text-lg font-semibold">Exam mode</div>
             <p className="mt-1 text-sm opacity-90">
