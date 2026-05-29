@@ -11,6 +11,7 @@ import type {
   MultipleResponseQuestion,
   TrueFalseQuestion,
 } from "@/data/quizzes";
+import readyCounts from "./mock-ready-counts.json";
 import {
   ENGLISH_QUESTIONS_PER_MOCK,
   ENGLISH_TOTAL_MOCKS,
@@ -85,6 +86,15 @@ function cacheKey(test: TestSlug, skill: SkillSlug, level: LevelSlug): string {
   return `${test}/${skill}/${level}`;
 }
 
+export function getPrecomputedReadyEnglishMocks(
+  test: TestSlug,
+  skill: SkillSlug,
+  level: LevelSlug,
+): number | undefined {
+  const count = (readyCounts as Record<string, number>)[cacheKey(test, skill, level)];
+  return typeof count === "number" ? count : undefined;
+}
+
 async function loadBankFile(
   test: TestSlug,
   skill: SkillSlug,
@@ -128,6 +138,8 @@ export async function countReadyEnglishMocks(
   skill: SkillSlug,
   level: LevelSlug,
 ): Promise<number> {
+  const precomputed = getPrecomputedReadyEnglishMocks(test, skill, level);
+  if (typeof precomputed === "number") return precomputed;
   const file = await loadBankFile(test, skill, level);
   if (!file) return 0;
   const bankIds = new Set(file.bank.map((q) => q.id));
