@@ -457,20 +457,29 @@ export const categories: Category[] = [
     ],
   },
   {
-    slug: "university-admissions",
-    title: "University Admissions",
-    short: "GRE, GMAT, UCAT, LNAT & medical/law admissions",
+    slug: "admissions",
+    title: "Graduate & Business Admissions",
+    short: "GRE, GMAT & graduate admissions practice",
     description:
-      "Practice for UK and graduate university admissions — GRE, GMAT, UCAT, LNAT, BMAT and the UCAS application knowledge test.",
+      "Practice-style questions for graduate and business school admissions — GRE verbal, quantitative and analytical writing, plus GMAT problem solving, critical reasoning and data insights.",
     icon: "GraduationCap",
     accent: "navy",
     heroImage: heroEducation,
     topics: [
       { slug: "gre-practice", title: "GRE Practice" },
       { slug: "gmat-practice", title: "GMAT Practice" },
-      { slug: "ucat", title: "UCAT Practice" },
-      { slug: "lnat", title: "LNAT Multiple Choice" },
-      { slug: "bmat", title: "BMAT Practice" },
+    ],
+  },
+  {
+    slug: "university-admissions",
+    title: "University Admissions",
+    short: "UCAS application knowledge test",
+    description:
+      "Free practice for the UK UCAS application process — deadlines, course choices, personal statements, references, offers, Clearing and student finance.",
+    icon: "GraduationCap",
+    accent: "navy",
+    heroImage: heroEducation,
+    topics: [
       { slug: "ucas-application-knowledge", title: "UCAS Application Knowledge Test" },
     ],
   },
