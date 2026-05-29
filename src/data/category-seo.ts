@@ -887,7 +887,7 @@ export const categorySeo: Record<string, CategorySeo> = {
       {
         heading: "What the tests actually involve",
         body: [
-          "CompTIA A+ is delivered as two exams (Core 1 — 220-1101 and Core 2 — 220-1102). Each runs 90 minutes with up to 90 questions, including performance-based items, and a scaled pass mark of 675–700 out of 900.",
+          "CompTIA A+ is delivered as two exams (Core 1 — 220-1201 and Core 2 — 220-1202, the current V15 series). Each runs 90 minutes with up to 90 questions, including performance-based items, and a scaled pass mark of 675–700 out of 900.",
           "ITIL 4 Foundation is a 60-minute, 40-question multiple-choice exam with a 65% pass mark (26 of 40). It can be taken online with proctoring or at a Pearson VUE centre.",
           "Microsoft MS-900 and AZ-900 are 45–60 minute exams with around 40–60 multiple-choice and case-study questions and a scaled pass mark of 700 out of 1000.",
           "Cyber Security Awareness mocks follow the format used by major UK employers' annual training tools — short multi-choice items with immediate feedback.",
