@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ArrowRight, ChevronRight, Clock, Home, Lock } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -21,14 +20,21 @@ import { breadcrumbSchema } from "@/lib/seo";
 export const Route = createFileRoute(
   "/english-language-tests/$test/$skill/$level/",
 )({
-  loader: ({ params }) => {
+  loader: async ({ params }) => {
     const test = getTest(params.test);
     if (!test) throw notFound();
     const skill = getSkill(test, params.skill);
     if (!skill) throw notFound();
     if (!hasLevel(skill, params.level)) throw notFound();
-    return { test, skill, level: params.level as LevelSlug };
+    const level = params.level as LevelSlug;
+    const readyCount = await countReadyEnglishMocks(
+      test.slug,
+      skill.slug,
+      level,
+    ).catch(() => 0);
+    return { test, skill, level, readyCount };
   },
+
   head: ({ loaderData, params }) => {
     const test = loaderData?.test;
     const skill = loaderData?.skill;
@@ -77,21 +83,10 @@ export const Route = createFileRoute(
 });
 
 function LevelPage() {
-  const { test, skill, level } = Route.useLoaderData();
+  const { test, skill, level, readyCount } = Route.useLoaderData();
   const slots = listEnglishMockSlots();
-  const [readyCount, setReadyCount] = useState<number | null>(null);
+  const ready = readyCount;
 
-  useEffect(() => {
-    let active = true;
-    void countReadyEnglishMocks(test.slug, skill.slug, level).then((n) => {
-      if (active) setReadyCount(n);
-    });
-    return () => {
-      active = false;
-    };
-  }, [test.slug, skill.slug, level]);
-
-  const ready = readyCount ?? 0;
 
   return (
     <div className="min-h-screen bg-background">
@@ -141,8 +136,7 @@ function LevelPage() {
           <h2 className="font-display text-xl font-bold">Mock tests</h2>
           <ul className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {slots.map((s, i) => {
-              const isReady = readyCount !== null && i < ready;
-              const pending = readyCount === null;
+              const isReady = i < ready;
               return (
                 <li key={s.mockNumber}>
                   <MockCard
@@ -150,11 +144,12 @@ function LevelPage() {
                     skillSlug={skill.slug}
                     level={level}
                     mockNumber={s.mockNumber}
-                    state={pending ? "loading" : isReady ? "ready" : "soon"}
+                    state={isReady ? "ready" : "soon"}
                   />
                 </li>
               );
             })}
+
           </ul>
         </section>
 
