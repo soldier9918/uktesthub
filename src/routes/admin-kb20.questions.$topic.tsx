@@ -18,6 +18,8 @@ import {
   rollbackImport,
   listImportHistory,
   testGithubConnection,
+  runImportSelfTest,
+  verifyLiveJson,
 } from "@/lib/admin/csv-import.functions";
 
 type RawQuestion = Record<string, unknown> & {
