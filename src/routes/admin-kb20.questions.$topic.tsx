@@ -1347,6 +1347,29 @@ function QuestionsBrowser() {
           )}
         </details>
 
+        <details className="mt-3 rounded-lg border border-amber-500/40 bg-amber-500/5 p-3 text-xs">
+          <summary className="cursor-pointer font-semibold text-amber-800">
+            Deprecated · Emergency overrides cleanup (developer-only)
+          </summary>
+          <p className="mt-2 text-amber-800">
+            <strong>Deprecated.</strong> The live quiz no longer reads <code>question_overrides</code> —
+            it serves only <code>public/mocks/{topic}.json</code>. Old override rows are kept archived for
+            audit but do not affect runtime. Use this action only as an emergency one-off cleanup if a
+            developer has identified a specific data problem in the archived overrides.
+          </p>
+          <Button
+            size="sm"
+            variant="outline"
+            className="mt-2 border-amber-500/50 text-amber-800"
+            onClick={cleanBadOverrides}
+            disabled={cleaning}
+          >
+            {cleaning ? "Cleaning…" : "Run emergency override cleanup"}
+          </Button>
+        </details>
+
+
+
 
         <ol className="mt-4 space-y-3">
           {visible.map((q: FlatQuestion, idx: number) => {
