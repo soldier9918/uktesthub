@@ -564,6 +564,32 @@ function QuestionsBrowser() {
     }
   };
 
+  const runSelfTest = async () => {
+    setSelfTesting(true);
+    setSelfTest(null);
+    try {
+      const result = await selfTestFn({ data: { topic } });
+      setSelfTest(result);
+    } catch (e) {
+      setImportMsg(`Self-test failed: ${e instanceof Error ? e.message : String(e)}`);
+    } finally {
+      setSelfTesting(false);
+    }
+  };
+
+  const runVerifyLive = async () => {
+    setLiveChecking(true);
+    setLiveCheck(null);
+    try {
+      const result = await verifyLiveFn({ data: { topic } });
+      setLiveCheck(result);
+    } catch (e) {
+      setImportMsg(`Live verify failed: ${e instanceof Error ? e.message : String(e)}`);
+    } finally {
+      setLiveChecking(false);
+    }
+  };
+
   const history = useQuery({
     queryKey: ["import-history", topic],
     queryFn: () => listFn({ data: { topic, limit: 20 } }),
