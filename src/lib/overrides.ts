@@ -27,13 +27,6 @@ export function invalidateOverrides() {
 
 type AnyQuiz = { topic: string; questions: Array<Record<string, unknown> & { id: number | string }> };
 
-function hideRoadSignAnswerInPrompt<T extends Record<string, unknown>>(quizTopic: string, question: T): T {
-  if (quizTopic !== "road-signs") return question;
-  if (question.type !== "image-question" && question.type !== "image_question") return question;
-  if (typeof question.image !== "string" || !question.image) return question;
-  return { ...question, question: "What does this road sign mean?" };
-}
-
 // Kept for backwards compatibility with any caller that still imports it.
 export function applyOverrideToQuestionRecord<T extends Record<string, unknown>>(
   question: T,
@@ -43,10 +36,8 @@ export function applyOverrideToQuestionRecord<T extends Record<string, unknown>>
 }
 
 export function applyOverrides<T extends AnyQuiz>(quiz: T, _map: Map<string, QuestionOverride>): T {
-  return {
-    ...quiz,
-    questions: quiz.questions.map((q) => hideRoadSignAnswerInPrompt(quiz.topic, q)),
-  } as T;
+  // Overrides system disabled — live quiz shows the exact stored question text from JSON/CSV.
+  return quiz;
 }
 
 export function useOverrides() {
