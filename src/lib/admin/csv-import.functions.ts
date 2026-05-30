@@ -283,6 +283,10 @@ export const commitCsvImport = createServerFn({ method: "POST" })
       if (!existing) throw new Error(`Topic file not found in repo: ${path}`);
       const oldFile = JSON.parse(existing.content) as MockFile;
       const newFile = mergeIntoFile(oldFile, rows);
+      const diff = diffBanks(bankOf(oldFile), bankOf(newFile));
+      const changedIds = diff.changed.map((c) => c.id);
+      const addedIds = diff.added.map((q) => String(q.id ?? ""));
+      const removedIds = diff.removed.map((q) => String(q.id ?? ""));
       const newContent = JSON.stringify(newFile, null, 2) + "\n";
       const { commitSha, commitUrl } = await commitFile({
         filePath: path,
@@ -300,7 +304,7 @@ export const commitCsvImport = createServerFn({ method: "POST" })
           commit_sha: commitSha,
           commit_url: commitUrl,
           row_count: rows.length,
-          validation_log: { parseErrors: errors } as never,
+          validation_log: { parseErrors: errors, changedIds, addedIds, removedIds } as never,
           status: "committed",
           created_by: userId,
         })
