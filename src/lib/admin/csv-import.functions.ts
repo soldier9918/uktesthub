@@ -618,6 +618,19 @@ function bankOf(file: MockFile): AnyQ[] {
 
 const TopicSchema = z.string().min(1).max(120).regex(/^[a-z0-9-]+$/);
 
+/** For topic === "road-signs" load directory listing once for path validation. */
+async function loadRoadSignFiles(topic: string): Promise<Set<string> | null> {
+  if (topic !== "road-signs") return null;
+  try {
+    const names = await listDir("public/road-signs");
+    return new Set((names ?? []).map((n) => n));
+  } catch (e) {
+    console.warn("loadRoadSignFiles failed:", e);
+    return null;
+  }
+}
+
+
 export const previewCsvImport = createServerFn({ method: "POST" })
   .inputValidator((input) =>
     z.object({
