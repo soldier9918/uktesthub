@@ -254,6 +254,7 @@ function QuestionsBrowser() {
   const fileInputRef = useRef<HTMLInputElement>(null);
   const [csvText, setCsvText] = useState<string>("");
   const [csvFilename, setCsvFilename] = useState<string>("");
+  const [importMode, setImportMode] = useState<"patch" | "replace">("patch");
   const [preview, setPreview] = useState<Awaited<ReturnType<typeof previewCsvImport>> | null>(null);
   const [commitResult, setCommitResult] = useState<
     | {
@@ -478,7 +479,7 @@ function QuestionsBrowser() {
   };
 
   const previewMutation = useMutation({
-    mutationFn: (vars: { text: string }) => previewFn({ data: { topic, csvText: vars.text } }),
+    mutationFn: (vars: { text: string }) => previewFn({ data: { topic, csvText: vars.text, mode: importMode } }),
     onSuccess: (data) => {
       if (data.error) {
         setImportMsg(`Preview failed: ${data.error}`);
@@ -498,7 +499,7 @@ function QuestionsBrowser() {
     mutationFn: () => {
       const expectedSha = (preview as { existingSha?: string } | null)?.existingSha;
       return commitFn({
-        data: { topic, csvText, filename: csvFilename || "upload.csv", expectedSha },
+        data: { topic, csvText, filename: csvFilename || "upload.csv", expectedSha, mode: importMode },
       });
     },
     onSuccess: (data) => {
@@ -873,6 +874,18 @@ function QuestionsBrowser() {
             >
               {previewMutation.isPending ? "Reading…" : "Import CSV"}
             </Button>
+            <label className="flex items-center gap-1 text-xs text-muted-foreground">
+              Mode:
+              <select
+                className="rounded border border-border bg-background px-1 py-0.5 text-xs"
+                value={importMode}
+                onChange={(e) => setImportMode(e.target.value as "patch" | "replace")}
+                title="Patch: blank cells preserved. Replace: blank cells delete the field. Either mode treats __CLEAR__ as an explicit delete."
+              >
+                <option value="patch">Patch (blanks preserved)</option>
+                <option value="replace">Full replacement (blanks delete)</option>
+              </select>
+            </label>
             <Button
               size="sm"
               variant="outline"

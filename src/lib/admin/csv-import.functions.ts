@@ -83,19 +83,22 @@ function emptyPreview(error: string, parseErrors: string[] = []) {
   };
 }
 
-/** Parse a CSV string into question patch rows. Supports the columns produced
- * by the topic page export (id, type, question, optionA-D, correctAnswer,
- * correctAnswers, explanation, image, imageAlt) plus aliases A/B/C/D and
- * options.A-D, and the legacy single `options` pipe-delimited column.
+/** Parse a CSV string into question patch rows.
  *
- * Each returned row is a PATCH — it contains only the keys whose column was
- * present in the CSV header AND had a non-empty value. Missing/empty cells
- * leave the existing question field untouched after merging.
+ * Modes:
+ *  - "patch"   (default): missing/blank cells are IGNORED — existing JSON values
+ *              are preserved. Use the literal cell value `__CLEAR__` to remove
+ *              a field from the JSON.
+ *  - "replace": blank cells REMOVE the corresponding field from the JSON.
+ *              `__CLEAR__` still works and is equivalent.
  */
-function parseCsv(csvText: string): {
+const CLEAR_MARKER = "__CLEAR__";
+
+function parseCsv(csvText: string, mode: "patch" | "replace" = "patch"): {
   rows: AnyQ[];
   rowLines: number[];
   presentByRow: Set<string>[];
+  clearByRow: Set<string>[];
   errors: string[];
 } {
   const out = Papa.parse<Record<string, string>>(csvText, {
@@ -106,7 +109,22 @@ function parseCsv(csvText: string): {
   const errors = out.errors.map((e) => `Row ${e.row}: ${e.message}`);
   const headers = new Set((out.meta.fields ?? []).map((h) => h.trim()));
   const has = (col: string) => headers.has(col);
-  const pickOption = (r: Record<string, string>, letter: "A" | "B" | "C" | "D"): string | null => {
+
+  type CellResult =
+    | { kind: "clear" }
+    | { kind: "blank" }
+    | { kind: "value"; value: string };
+  const readCell = (raw: string): CellResult => {
+    const trimmed = (raw ?? "").trim();
+    if (trimmed === CLEAR_MARKER) return { kind: "clear" };
+    if (trimmed === "") return { kind: "blank" };
+    return { kind: "value", value: raw };
+  };
+
+  const pickOption = (
+    r: Record<string, string>,
+    letter: "A" | "B" | "C" | "D",
+  ): CellResult | null => {
     const variants = [
       `option${letter}`,
       letter,
@@ -115,12 +133,9 @@ function parseCsv(csvText: string): {
       `option_${letter.toLowerCase()}`,
     ];
     for (const v of variants) {
-      if (has(v)) {
-        const val = (r[v] ?? "").toString();
-        return val.trim() === "" ? "" : val;
-      }
+      if (has(v)) return readCell(r[v] ?? "");
     }
-    return null; // column not in CSV
+    return null;
   };
   const optionColumnsPresent =
     has("optionA") || has("A") || has("options.A") || has("option_a") ||
@@ -131,9 +146,22 @@ function parseCsv(csvText: string): {
   const rows: AnyQ[] = [];
   const rowLines: number[] = [];
   const presentByRow: Set<string>[] = [];
+  const clearByRow: Set<string>[] = [];
+
+  const scalarFields: Array<{
+    col: string;
+    key: string;
+    transform?: (raw: string) => unknown;
+  }> = [
+    { col: "type", key: "type", transform: (s) => s.trim() },
+    { col: "question", key: "question" },
+    { col: "explanation", key: "explanation" },
+    { col: "image", key: "image", transform: (s) => s.trim() },
+    { col: "imageAlt", key: "imageAlt", transform: (s) => s.trim() },
+  ];
 
   out.data.forEach((r, i) => {
-    const csvLine = i + 2; // +1 header, +1 1-based
+    const csvLine = i + 2;
     const id = (r.id ?? "").trim();
     if (!id) {
       errors.push(`Row ${csvLine}: missing required "id" — row skipped.`);
@@ -141,54 +169,84 @@ function parseCsv(csvText: string): {
     }
     const q: AnyQ = { id };
     const present = new Set<string>(["id"]);
+    const clear = new Set<string>();
 
-    if (has("type") && (r.type ?? "").trim() !== "") {
-      q.type = r.type.trim();
-      present.add("type");
-    }
-    if (has("question") && (r.question ?? "") !== "") {
-      q.question = (r.question ?? "").toString();
-      present.add("question");
-    }
-    if (has("explanation") && (r.explanation ?? "") !== "") {
-      q.explanation = (r.explanation ?? "").toString();
-      present.add("explanation");
-    }
-    if (has("image") && (r.image ?? "").trim() !== "") {
-      q.image = r.image.trim();
-      present.add("image");
-    }
-    if (has("imageAlt") && (r.imageAlt ?? "").trim() !== "") {
-      q.imageAlt = r.imageAlt.trim();
-      present.add("imageAlt");
+    const applyCell = (
+      cell: CellResult,
+      key: string,
+      onValue: () => void,
+    ) => {
+      if (cell.kind === "clear") {
+        clear.add(key);
+        present.add(key);
+        return;
+      }
+      if (cell.kind === "blank") {
+        if (mode === "replace") {
+          clear.add(key);
+          present.add(key);
+        }
+        return;
+      }
+      onValue();
+      present.add(key);
+    };
+
+    for (const f of scalarFields) {
+      if (!has(f.col)) continue;
+      const cell = readCell(r[f.col] ?? "");
+      applyCell(cell, f.key, () => {
+        const raw = (cell as { value: string }).value;
+        q[f.key] = f.transform ? f.transform(raw) : raw;
+      });
     }
 
-    // Options — prefer per-letter columns; fall back to legacy `options` pipe list.
     if (optionColumnsPresent) {
       const opts: string[] = [];
-      
+      let anyValue = false;
+      let anyCleared = false;
+      let anyBlank = false;
       for (const L of ["A", "B", "C", "D"] as const) {
-        const v = pickOption(r, L);
-        opts.push(v ?? "");
+        const cell = pickOption(r, L);
+        if (cell === null) {
+          opts.push("");
+          continue;
+        }
+        if (cell.kind === "value") {
+          opts.push(cell.value);
+          anyValue = true;
+        } else if (cell.kind === "clear") {
+          opts.push("");
+          anyCleared = true;
+        } else {
+          opts.push("");
+          anyBlank = true;
+        }
       }
-      // Trim trailing empties so questions with <4 real options round-trip cleanly.
       while (opts.length && opts[opts.length - 1] === "") opts.pop();
       if (opts.length > 0) {
         q.options = opts;
         present.add("options");
-      }
-    } else if (has("options") && (r.options ?? "").trim() !== "") {
-      const opts = r.options.split("|").map((s) => s.trim()).filter(Boolean);
-      if (opts.length) {
-        q.options = opts;
+      } else if (anyCleared || (mode === "replace" && anyBlank && !anyValue)) {
+        clear.add("options");
         present.add("options");
       }
+    } else if (has("options")) {
+      const cell = readCell(r.options ?? "");
+      applyCell(cell, "options", () => {
+        const opts = (cell as { value: string }).value
+          .split("|")
+          .map((s) => s.trim())
+          .filter(Boolean);
+        if (opts.length) q.options = opts;
+      });
     }
 
-    // correctAnswers — accept JSON array, pipe list, or comma list.
     if (has("correctAnswers")) {
-      const raw = (r.correctAnswers ?? "").trim();
-      if (raw !== "" && raw.toLowerCase() !== "null") {
+      const cell = readCell(r.correctAnswers ?? "");
+      applyCell(cell, "correctAnswers", () => {
+        const raw = (cell as { value: string }).value.trim();
+        if (raw.toLowerCase() === "null") return;
         let arr: number[] | null = null;
         if (raw.startsWith("[")) {
           try {
@@ -196,28 +254,21 @@ function parseCsv(csvText: string): {
             if (Array.isArray(parsed)) {
               arr = parsed.map((n) => Number(n)).filter((n) => Number.isFinite(n));
             }
-          } catch {
-            /* fall through */
-          }
+          } catch { /* fall through */ }
         }
         if (!arr) {
-          arr = raw
-            .split(/[|,]/)
-            .map((s) => Number(s.trim()))
-            .filter((n) => Number.isFinite(n));
+          arr = raw.split(/[|,]/).map((s) => Number(s.trim())).filter((n) => Number.isFinite(n));
         }
-        if (arr.length > 0) {
-          q.correctAnswers = arr;
-          present.add("correctAnswers");
-        }
-      }
+        if (arr.length > 0) q.correctAnswers = arr;
+      });
     }
 
-    // correctAnswer — string/number/bool; normalization to index happens after merge.
     if (has("correctAnswer")) {
-      const raw = (r.correctAnswer ?? "").toString();
-      if (raw.trim() !== "" && raw.trim().toLowerCase() !== "null") {
+      const cell = readCell(r.correctAnswer ?? "");
+      applyCell(cell, "correctAnswer", () => {
+        const raw = (cell as { value: string }).value;
         const s = raw.trim();
+        if (s.toLowerCase() === "null") return;
         const lower = s.toLowerCase();
         if (lower === "true" || lower === "false") {
           q.correctAnswer = lower === "true";
@@ -226,16 +277,16 @@ function parseCsv(csvText: string): {
         } else {
           q.correctAnswer = s;
         }
-        present.add("correctAnswer");
-      }
+      });
     }
 
     rows.push(q);
     rowLines.push(csvLine);
     presentByRow.push(present);
+    clearByRow.push(clear);
   });
 
-  return { rows, rowLines, presentByRow, errors };
+  return { rows, rowLines, presentByRow, clearByRow, errors };
 }
 
 /* ----------------- Validation ----------------- */
@@ -581,18 +632,75 @@ function diffBanks(oldBank: AnyQ[], newRows: AnyQ[]) {
   return { added, changed, removed };
 }
 
+/** Remove fields that are incompatible with the question's effective type.
+ * Runs after every per-row merge so type changes (e.g. mcq → true_false)
+ * leave clean JSON without stale MCQ fields. */
+function applyTypeCleanup(q: AnyQ): AnyQ {
+  const t = canonType(q.type);
+  const out: AnyQ = { ...q };
+  // Strip the per-letter helper fields no matter the type — they're CSV-only.
+  delete out.optionA; delete out.optionB; delete out.optionC; delete out.optionD;
+  delete out.A; delete out.B; delete out.C; delete out.D;
+
+  if (t === "true_false") {
+    delete out.options;
+    delete out.correctAnswers;
+    if (typeof out.correctAnswer === "string") {
+      const l = out.correctAnswer.toLowerCase();
+      if (l === "true") out.correctAnswer = true;
+      else if (l === "false") out.correctAnswer = false;
+    } else if (typeof out.correctAnswer === "number") {
+      out.correctAnswer = out.correctAnswer !== 0;
+    }
+  } else if (t === "multiple_choice" || t === "image_question") {
+    delete out.correctAnswers;
+  } else if (t === "multiple_response") {
+    delete out.correctAnswer;
+  } else if (t === "numeric_entry") {
+    delete out.options;
+    delete out.correctAnswers;
+  } else if (t === "hot_spot") {
+    delete out.options;
+    delete out.correctAnswer;
+    delete out.correctAnswers;
+  } else if (t === "fill_blanks" || t === "drag_drop_blanks" || t === "dropdown_blanks") {
+    delete out.options;
+    delete out.correctAnswer;
+    delete out.correctAnswers;
+  }
+  return out;
+}
+
+/** Apply a single patch row to an existing question. CSV-present keys are
+ * merged in; keys listed in `clears` are deleted from the result. Then
+ * type-specific cleanup strips fields incompatible with the final type. */
+function applyPatch(prev: AnyQ | undefined, patch: AnyQ, clears: Set<string>): AnyQ {
+  const base: AnyQ = { ...(prev ?? {}), ...patch };
+  for (const key of clears) {
+    if (key === "id") continue;
+    delete base[key];
+  }
+  return applyTypeCleanup(base);
+}
+
 /** Merge CSV rows onto the existing bank. CSV rows REPLACE matching ids;
  * unmatched existing questions are kept as-is. New ids are appended. */
-function mergeIntoFile(file: MockFile, rows: AnyQ[]): MockFile {
+function mergeIntoFile(file: MockFile, rows: AnyQ[], clearByRow?: Set<string>[]): MockFile {
   const isV2 = (file as V2File).version === 2 && Array.isArray((file as V2File).bank);
+  const clearsById = new Map<string, Set<string>>();
+  rows.forEach((r, i) => {
+    clearsById.set(String(r.id), clearByRow?.[i] ?? new Set());
+  });
   if (isV2) {
     const v2 = file as V2File;
     const byId = new Map(v2.bank.filter((q) => q.id).map((q) => [String(q.id), q]));
-    for (const r of rows) byId.set(String(r.id), { ...byId.get(String(r.id)), ...r });
+    for (const r of rows) {
+      const id = String(r.id);
+      byId.set(id, applyPatch(byId.get(id), r, clearsById.get(id) ?? new Set()));
+    }
     const newBank = Array.from(byId.values());
     return { ...v2, bank: newBank };
   }
-  // v1: apply to every test that contains a matching id; append new ids to first test
   const v1 = file as V1File;
   const byId = new Map<string, AnyQ>();
   for (const r of rows) byId.set(String(r.id), r);
@@ -601,13 +709,16 @@ function mergeIntoFile(file: MockFile, rows: AnyQ[]): MockFile {
     ...t,
     questions: t.questions.map((q) => {
       if (q.id && byId.has(String(q.id))) {
-        matched.add(String(q.id));
-        return { ...q, ...byId.get(String(q.id))! };
+        const id = String(q.id);
+        matched.add(id);
+        return applyPatch(q, byId.get(id)!, clearsById.get(id) ?? new Set());
       }
       return q;
     }),
   }));
-  const unmatched = rows.filter((r) => !matched.has(String(r.id)));
+  const unmatched = rows
+    .filter((r) => !matched.has(String(r.id)))
+    .map((r) => applyPatch(undefined, r, clearsById.get(String(r.id)) ?? new Set()));
   if (unmatched.length && tests[0]) tests[0].questions.push(...unmatched);
   return { ...v1, tests };
 }
@@ -639,24 +750,29 @@ async function loadRoadSignFiles(topic: string): Promise<Set<string> | null> {
 }
 
 
+const ImportModeSchema = z.enum(["patch", "replace"]).optional();
+
 export const previewCsvImport = createServerFn({ method: "POST" })
   .inputValidator((input) =>
     z.object({
       topic: TopicSchema,
       csvText: z.string().min(1).max(20_000_000),
+      mode: ImportModeSchema,
     }).parse(input),
   )
   .handler(async ({ data }) => {
     try {
       const auth = await getAuthenticatedAdminClient();
       if (auth.error) return emptyPreview(auth.error);
-      const { rows, rowLines, errors } = parseCsv(data.csvText);
+      const mode = data.mode ?? "patch";
+      const { rows, rowLines, clearByRow, errors } = parseCsv(data.csvText, mode);
       const existing = await getFile(filePathFor(data.topic));
       if (!existing) return emptyPreview(`Topic file not found in repo: ${filePathFor(data.topic)}`, errors);
       const oldFile = JSON.parse(existing.content) as MockFile;
       const oldBank = bankOf(oldFile);
-      const newFile = mergeIntoFile(oldFile, rows);
+      const newFile = mergeIntoFile(oldFile, rows, clearByRow);
       const newBank = bankOf(newFile);
+
       const diff = diffBanks(oldBank, newBank);
       const mergedById = new Map(newBank.filter((q) => q.id).map((q) => [String(q.id), q]));
       const rowIds = rows.map((r) => String(r.id));
@@ -698,12 +814,14 @@ export const commitCsvImport = createServerFn({ method: "POST" })
       csvText: z.string().min(1).max(20_000_000),
       filename: z.string().min(1).max(255),
       expectedSha: z.string().min(1).max(120).optional(),
+      mode: ImportModeSchema,
     }).parse(input),
   )
   .handler(async ({ data, context }) => {
     await assertAdmin(context.supabase, context.userId);
     const { supabase, userId } = context;
-    const { rows, rowLines, errors } = parseCsv(data.csvText);
+    const mode = data.mode ?? "patch";
+    const { rows, rowLines, clearByRow, errors } = parseCsv(data.csvText, mode);
     if (rows.length === 0) throw new Error("No valid rows found in CSV");
 
     const path = filePathFor(data.topic);
@@ -719,7 +837,8 @@ export const commitCsvImport = createServerFn({ method: "POST" })
         );
       }
       const oldFile = JSON.parse(existing.content) as MockFile;
-      const newFile = mergeIntoFile(oldFile, rows);
+      const newFile = mergeIntoFile(oldFile, rows, clearByRow);
+
       const mergedById = new Map(bankOf(newFile).filter((q) => q.id).map((q) => [String(q.id), q]));
       const rowIds = rows.map((r) => String(r.id));
       const roadSignFiles = await loadRoadSignFiles(data.topic);
@@ -1094,7 +1213,7 @@ export const runImportSelfTest = createServerFn({ method: "POST" })
     if (oldFile && csvText) {
       try {
         const parsed = parseCsv(csvText);
-        const merged = mergeIntoFile(oldFile, parsed.rows);
+        const merged = mergeIntoFile(oldFile, parsed.rows, parsed.clearByRow);
         const mergedById = new Map(bankOf(merged).filter((q) => q.id).map((q) => [String(q.id), q]));
         const rowIds = parsed.rows.map((r) => String(r.id));
         const roadSignFiles = await loadRoadSignFiles(topic);
