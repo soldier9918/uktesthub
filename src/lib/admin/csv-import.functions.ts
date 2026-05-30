@@ -439,7 +439,38 @@ function validateImported(
         push(warnings, "blanks", "Fill/dropdown/drag types need a `blanks` array — edit JSON directly.");
       }
     }
+
+    // ----- Road Signs topic-specific protection -----
+    if (topic === "road-signs" && typeof q.image === "string" && q.image.trim()) {
+      const img = q.image.trim();
+      if (!img.startsWith("/road-signs/")) {
+        push(errors, "image", `Road Signs image path must start with "/road-signs/" — got "${img}".`);
+      } else if (roadSignFiles) {
+        const name = img.replace(/^\/road-signs\//, "").split("?")[0].split("#")[0];
+        if (!roadSignFiles.has(name)) {
+          push(errors, "image", `Road Signs image file not found in repo: public/road-signs/${name}.`);
+        }
+      }
+      if (!q.imageAlt || typeof q.imageAlt !== "string" || !q.imageAlt.trim()) {
+        push(warnings, "imageAlt", "Road Signs image is missing imageAlt text.");
+      }
+      // Semantic mismatch: keywords from filename should appear in question/explanation/imageAlt.
+      const kws = roadSignKeywords(img);
+      if (kws.length > 0) {
+        const haystack = [
+          q.question, q.explanation, q.imageAlt,
+          Array.isArray(q.options) ? q.options.join(" ") : "",
+          typeof q.correctAnswer === "string" ? q.correctAnswer : "",
+        ].map((s) => String(s ?? "").toLowerCase()).join(" \n ");
+        const hit = kws.some((w) => haystack.includes(w));
+        if (!hit) {
+          push(warnings, "image",
+            `Possible mismatch: image "${img}" suggests [${kws.join(", ")}] but none of those words appear in the question text, explanation, options, or imageAlt. Review before commit.`);
+        }
+      }
+    }
   });
+
 
   // JSON validity (blocking)
   try {
