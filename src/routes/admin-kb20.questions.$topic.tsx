@@ -48,7 +48,7 @@ type V1 = {
 };
 type AnyFile = V1 | V2;
 
-import { loadTopicFileForAdmin } from "@/data/mocks";
+import { invalidateTopicFileCache, loadTopicFileForAdmin } from "@/data/mocks";
 
 type MockUsage = { mockNumber: number; slot: number; sourceQid?: string };
 
@@ -473,8 +473,10 @@ function QuestionsBrowser() {
       setPreview(null);
       setCsvText("");
       setCsvFilename("");
-      setImportMsg(null);
+      invalidateTopicFileCache(topic);
+      setImportMsg("Committed. Refreshing admin questions from GitHub main…");
       qc.invalidateQueries({ queryKey: ["import-history", topic] });
+      router.invalidate();
     },
     onError: (err: Error) => setImportMsg(`Commit failed: ${err.message}`),
   });
