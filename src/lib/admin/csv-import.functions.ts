@@ -59,6 +59,18 @@ async function getAuthenticatedAdminClient() {
   return { supabase, userId: userData.user.id, error: null } as const;
 }
 
+type Issue = {
+  rowIndex: number | null; // 1-based CSV row (data row, not header). null = file-level.
+  id: string | null;
+  field: string | null;
+  message: string;
+};
+type ValidationResult = { errors: Issue[]; warnings: Issue[] };
+
+function emptyValidation(): ValidationResult {
+  return { errors: [], warnings: [] };
+}
+
 function emptyPreview(error: string, parseErrors: string[] = []) {
   return {
     error,
@@ -67,6 +79,7 @@ function emptyPreview(error: string, parseErrors: string[] = []) {
     diff: { addedCount: 0, changedCount: 0, removedCount: 0, added: [], changed: [], removed: [] },
     oldBankSize: 0,
     newBankSize: 0,
+    validation: emptyValidation(),
   };
 }
 
