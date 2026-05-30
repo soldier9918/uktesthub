@@ -973,10 +973,10 @@ function QuestionsBrowser() {
                         no answers
                       </Badge>
                     )}
-                    {q.usedInMocks.length > 0 ? (
+                    {(q.usedInMocks ?? []).length > 0 ? (
                       <span className="flex flex-wrap items-center gap-1 text-[10px] text-muted-foreground">
-                        Live in ({q.usedInMocks.length}):
-                        {q.usedInMocks.map(({ mockNumber, slot, sourceQid }) => {
+                        Live in ({(q.usedInMocks ?? []).length}):
+                        {(q.usedInMocks ?? []).map(({ mockNumber, slot, sourceQid }) => {
                           const isDup = sourceQid && sourceQid !== q.id;
                           return (
                           <a
