@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import { createFileRoute, Link, notFound } from "@tanstack/react-router";
+import { createFileRoute, Link, notFound, useRouter } from "@tanstack/react-router";
 import { useServerFn } from "@tanstack/react-start";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -255,6 +255,7 @@ function QuestionsBrowser() {
   const commitFn = useServerFn(commitCsvImport);
   const rollbackFn = useServerFn(rollbackImport);
   const listFn = useServerFn(listImportHistory);
+  const router = useRouter();
   const qc = useQueryClient();
   const overrides = useOverrides();
   void bump;
