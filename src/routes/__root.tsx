@@ -1,4 +1,6 @@
 import { Outlet, Link, createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { useState } from "react";
 
 
 import appCss from "../styles.css?url";
@@ -114,12 +116,15 @@ function RootShell({ children }: { children: React.ReactNode }) {
 }
 
 function RootComponent() {
+  const [queryClient] = useState(() => new QueryClient());
   return (
-    <AuthProvider>
-      <PageViewTracker />
-      <Outlet />
-      <StickyAdSlot />
-      <CookieConsent />
-    </AuthProvider>
+    <QueryClientProvider client={queryClient}>
+      <AuthProvider>
+        <PageViewTracker />
+        <Outlet />
+        <StickyAdSlot />
+        <CookieConsent />
+      </AuthProvider>
+    </QueryClientProvider>
   );
 }
