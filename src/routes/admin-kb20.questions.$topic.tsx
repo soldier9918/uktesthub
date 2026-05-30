@@ -929,7 +929,8 @@ function QuestionsBrowser() {
               </details>
             )}
           </div>
-        )}
+          );
+        })()}
 
         <details className="mt-3 rounded-lg border border-border bg-card p-3 text-sm">
           <summary className="cursor-pointer font-semibold">
