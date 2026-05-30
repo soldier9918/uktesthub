@@ -286,15 +286,24 @@ export const listImportHistory = createServerFn({ method: "GET" })
     }).parse(input ?? {}),
   )
   .handler(async ({ data, context }) => {
-    await assertAdmin(context.supabase, context.userId);
-    const { supabase } = context;
-    let q = supabase
-      .from("question_import_history")
-      .select("id, topic, filename, commit_sha, commit_url, row_count, status, error_log, created_at, created_by, rolled_back_at")
-      .order("created_at", { ascending: false })
-      .limit(data.limit);
-    if (data.topic) q = q.eq("topic", data.topic);
-    const { data: rows, error } = await q;
-    if (error) throw new Error(error.message);
-    return { rows: rows ?? [] };
+    try {
+      const { data: isAdmin } = await context.supabase.rpc("has_role", {
+        _user_id: context.userId,
+        _role: "admin",
+      });
+      if (!isAdmin) return { rows: [], error: "Forbidden: admin role required" };
+      const { supabase } = context;
+      let q = supabase
+        .from("question_import_history")
+        .select("id, topic, filename, commit_sha, commit_url, row_count, status, error_log, created_at, created_by, rolled_back_at")
+        .order("created_at", { ascending: false })
+        .limit(data.limit);
+      if (data.topic) q = q.eq("topic", data.topic);
+      const { data: rows, error } = await q;
+      if (error) return { rows: [], error: error.message };
+      return { rows: rows ?? [], error: null as string | null };
+    } catch (err) {
+      console.error("listImportHistory failed:", err);
+      return { rows: [], error: err instanceof Error ? err.message : "Unknown error" };
+    }
   });
