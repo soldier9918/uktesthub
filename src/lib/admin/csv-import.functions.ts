@@ -166,7 +166,7 @@ function parseCsv(csvText: string): {
     // Options — prefer per-letter columns; fall back to legacy `options` pipe list.
     if (optionColumnsPresent) {
       const opts: string[] = [];
-      let anySet = false;
+      
       for (const L of ["A", "B", "C", "D"] as const) {
         const v = pickOption(r, L);
         opts.push(v ?? "");
