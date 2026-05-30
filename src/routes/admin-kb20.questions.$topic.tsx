@@ -951,11 +951,16 @@ function QuestionsBrowser() {
                 )}
                 <Button
                   size="sm"
-                  onClick={() => commitMutation.mutate()}
+                  onClick={() => {
+                    const ok = window.confirm(
+                      `You are about to commit changes directly to main for public/mocks/${topic}.json.\n\nProceed?`,
+                    );
+                    if (ok) commitMutation.mutate();
+                  }}
                   disabled={commitMutation.isPending || blocked}
                   title={blocked ? "Fix validation errors before committing." : undefined}
                 >
-                  {commitMutation.isPending ? "Committing…" : blocked ? "Blocked by errors" : "Commit to GitHub"}
+                  {commitMutation.isPending ? "Committing…" : blocked ? "Blocked by errors" : "Commit to main"}
                 </Button>
               </div>
             </div>
