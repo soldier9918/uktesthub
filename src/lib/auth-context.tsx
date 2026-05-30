@@ -24,14 +24,32 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    let cancelled = false;
     const { data: { subscription } } = supabase.auth.onAuthStateChange((_e, s) => {
+      if (cancelled) return;
       setSession(s);
-    });
-    supabase.auth.getSession().then(({ data }) => {
-      setSession(data.session);
       setLoading(false);
     });
-    return () => subscription.unsubscribe();
+    supabase.auth
+      .getSession()
+      .then(({ data }) => {
+        if (cancelled) return;
+        setSession(data.session);
+        setLoading(false);
+      })
+      .catch(() => {
+        if (cancelled) return;
+        setLoading(false);
+      });
+    // Safety net: never let the UI hang on "Loading…" if the auth call stalls.
+    const failsafe = setTimeout(() => {
+      if (!cancelled) setLoading(false);
+    }, 4000);
+    return () => {
+      cancelled = true;
+      clearTimeout(failsafe);
+      subscription.unsubscribe();
+    };
   }, []);
 
   useEffect(() => {

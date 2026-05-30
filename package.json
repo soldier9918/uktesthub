@@ -4,9 +4,9 @@
   "sideEffects": false,
   "type": "module",
   "scripts": {
-    "predev": "node scripts/build_mock_manifest.mjs",
+    "predev": "node -e \"try{require('node:fs').accessSync('scripts/build_mock_manifest.mjs');require('node:child_process').spawnSync(process.execPath,['scripts/build_mock_manifest.mjs'],{stdio:'inherit'})}catch(e){console.warn('[predev] skipping mock manifest:',e.message)}\"",
     "dev": "vite dev",
-    "prebuild": "node scripts/build_mock_manifest.mjs",
+    "prebuild": "node -e \"try{require('node:fs').accessSync('scripts/build_mock_manifest.mjs');require('node:child_process').spawnSync(process.execPath,['scripts/build_mock_manifest.mjs'],{stdio:'inherit'})}catch(e){console.warn('[prebuild] skipping mock manifest:',e.message)}\"",
     "build": "vite build",
     "build:dev": "vite build --mode development",
     "preview": "vite preview",

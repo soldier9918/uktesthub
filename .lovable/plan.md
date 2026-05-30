@@ -1,27 +1,23 @@
-## Problem
+I found two likely causes of the preview appearing stuck:
 
-In `public/mocks/road-signs.json`, mocks 8, 21, and 34 each have only 23 entries in their `questionIds` array (expected 24). No ids are missing from the bank and no duplicates — the arrays are just short by one.
+1. The admin page can remain on `Loading…` if authentication/session resolution hangs.
+2. The dev server has previously failed when the mock-manifest predev script could not be found, so startup needs a safer fallback.
 
-The bank contains 1,027 questions; 518 of them are currently used in zero mocks, so there's plenty of unused inventory to top up from.
+Plan:
 
-## Fix
+1. **Add an auth loading timeout**
+   - Update the auth provider so `loading` cannot stay `true` forever.
+   - If session lookup fails or takes too long, it will safely clear loading and let admin routes redirect/show the correct state instead of hanging.
+   - Keep admin security unchanged: no user still redirects to the admin login; non-admin users remain blocked.
 
-For each of the three short mocks, append one additional question id chosen from the unused pool, matching the existing mock's character:
+2. **Make admin loading state self-recovering**
+   - Update `AdminGate` so if it is still loading after a short grace period it shows a retry/refresh option instead of an endless `Loading…` screen.
+   - If the auth provider recovers, the admin panel loads normally.
 
-- **Mock 8** — predominantly `rs-im-*` (image sign) questions → pick an unused `rs-im-*` id
-- **Mock 21** — mix of `rs-im-*` and `rs-mc-*` → pick an unused id from the same families
-- **Mock 34** — predominantly `rs-im-*` → pick an unused `rs-im-*` id
+3. **Harden preview startup**
+   - Replace direct `node scripts/build_mock_manifest.mjs` startup calls with a small safe script that checks the manifest builder exists before running it.
+   - This prevents the preview server from failing completely if that generated/support script is temporarily missing during workspace restore.
 
-Selection rule (deterministic):
-1. Build the set of bank ids never referenced by any mock.
-2. Filter to ids whose prefix matches the dominant family of the target mock.
-3. Pick the first id in sorted order so the change is reproducible.
-4. Append to that mock's `questionIds` array.
-
-After the edit, re-run the check to confirm every mock has exactly 24 ids and no missing/duplicate references.
-
-## Files touched
-
-- `public/mocks/road-signs.json` — append one id to `mocks[7].questionIds`, `mocks[20].questionIds`, `mocks[33].questionIds`.
-
-No code changes; the build manifest will regenerate diagnostics automatically on next build.
+4. **Verify**
+   - Restart/check the preview route `/admin-kb20` and confirm it no longer stays indefinitely on `Loading…`.
+   - Check logs for startup errors after the change.
