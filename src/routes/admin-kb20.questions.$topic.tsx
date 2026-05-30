@@ -874,6 +874,18 @@ function QuestionsBrowser() {
             >
               {previewMutation.isPending ? "Reading…" : "Import CSV"}
             </Button>
+            <label className="flex items-center gap-1 text-xs text-muted-foreground">
+              Mode:
+              <select
+                className="rounded border border-border bg-background px-1 py-0.5 text-xs"
+                value={importMode}
+                onChange={(e) => setImportMode(e.target.value as "patch" | "replace")}
+                title="Patch: blank cells preserved. Replace: blank cells delete the field. Either mode treats __CLEAR__ as an explicit delete."
+              >
+                <option value="patch">Patch (blanks preserved)</option>
+                <option value="replace">Full replacement (blanks delete)</option>
+              </select>
+            </label>
             <Button
               size="sm"
               variant="outline"
