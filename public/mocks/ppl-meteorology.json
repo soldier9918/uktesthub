@@ -120,14 +120,14 @@
       "id": "pm-mc-0009"
     },
     {
-      "explanation": "The ICAO Standard Atmosphere (ISA) assumes a sea-level pressure of 1013.25 hPa and a temperature of +15\u00b0C",
+      "explanation": "The ICAO Standard Atmosphere (ISA) assumes a sea-level pressure of 1013.25 hPa and a temperature of +15°C",
       "type": "multiple_choice",
       "correctAnswer": 2,
       "options": [
-        "1000 hPa and 0\u00b0C",
-        "1013.25 hPa and 0\u00b0C",
-        "1013.25 hPa and +15\u00b0C",
-        "1020 hPa and +15\u00b0C"
+        "1000 hPa and 0°C",
+        "1013.25 hPa and 0°C",
+        "1013.25 hPa and +15°C",
+        "1020 hPa and +15°C"
       ],
       "question": "What are the standard sea-level pressure and temperature values used in the ICAO Standard Atmosphere (ISA)?",
       "id": "pm-mc-0010"
@@ -303,14 +303,14 @@
     },
     {
       "options": [
-        "3.0\u00b0C per 1000ft",
-        "1.5\u00b0C per 1000ft",
-        "0.5\u00b0C per 1000ft",
-        "1.98\u00b0C per 1000ft"
+        "3.0°C per 1000ft",
+        "1.5°C per 1000ft",
+        "0.5°C per 1000ft",
+        "1.98°C per 1000ft"
       ],
       "correctAnswer": 1,
       "type": "multiple_choice",
-      "explanation": "The SALR is roughly 1.5\u00b0C/1000ft, which is less than the DALR (3\u00b0C/1000ft) because latent heat is released during condensation",
+      "explanation": "The SALR is roughly 1.5°C/1000ft, which is less than the DALR (3°C/1000ft) because latent heat is released during condensation",
       "question": "What is the approximate value of the Saturated Adiabatic Lapse Rate (SALR) in the lower troposphere?",
       "id": "pm-mc-0024"
     },
@@ -422,12 +422,12 @@
       "correctAnswer": 1,
       "type": "multiple_choice",
       "options": [
-        "An increase of 2\u00b0C per 1,000ft",
-        "A decrease of 1.98\u00b0C per 1,000ft",
-        "A decrease of 3\u00b0C per 1,000ft",
-        "A decrease of 1\u00b0C per 1,000ft"
+        "An increase of 2°C per 1,000ft",
+        "A decrease of 1.98°C per 1,000ft",
+        "A decrease of 3°C per 1,000ft",
+        "A decrease of 1°C per 1,000ft"
       ],
-      "explanation": "The standard lapse rate in the ICAO Standard Atmosphere is a decrease of 1.98\u00b0C (often rounded to 2\u00b0C) per 1,000ft increase in altitude",
+      "explanation": "The standard lapse rate in the ICAO Standard Atmosphere is a decrease of 1.98°C (often rounded to 2°C) per 1,000ft increase in altitude",
       "question": "What is the standard environmental lapse rate (ELR) in the troposphere according to ISA?",
       "id": "pm-mc-0033"
     },
@@ -551,12 +551,12 @@
     {
       "question": "What is the value of the Dry Adiabatic Lapse Rate (DALR)?",
       "options": [
-        "1.98\u00b0C per 1,000 feet",
-        "3.0\u00b0C per 1,000 feet",
-        "0.5\u00b0C per 1,000 feet",
-        "6.5\u00b0C per 1,000 feet"
+        "1.98°C per 1,000 feet",
+        "3.0°C per 1,000 feet",
+        "0.5°C per 1,000 feet",
+        "6.5°C per 1,000 feet"
       ],
-      "explanation": "The DALR is a constant rate of 3.0\u00b0C per 1,000 feet, whereas the SALR varies but is generally less (around 1.5\u00b0C per 1,000 feet)",
+      "explanation": "The DALR is a constant rate of 3.0°C per 1,000 feet, whereas the SALR varies but is generally less (around 1.5°C per 1,000 feet)",
       "correctAnswer": 1,
       "type": "multiple_choice",
       "id": "pm-mc-0043"
@@ -699,7 +699,7 @@
       "options": [
         "Flying through heavy rain at high altitudes",
         "Flying through supercooled water droplets in a cloud",
-        "Water vapour turning directly to ice on an airframe surface below 0\u00b0C",
+        "Water vapour turning directly to ice on an airframe surface below 0°C",
         "Melting snow refreezing on the leading edge"
       ],
       "id": "pm-mc-0054"
@@ -800,12 +800,12 @@
       "correctAnswer": 0,
       "question": "What is the standard temperature lapse rate in the ISA (International Standard Atmosphere) below the tropopause?",
       "options": [
-        "-2.0\u00b0C per 1,000 ft",
-        "-1.5\u00b0C per 1,000 ft",
-        "-3.0\u00b0C per 1,000 ft",
-        "-0.5\u00b0C per 1,000 ft"
+        "-2.0°C per 1,000 ft",
+        "-1.5°C per 1,000 ft",
+        "-3.0°C per 1,000 ft",
+        "-0.5°C per 1,000 ft"
       ],
-      "explanation": "In the International Standard Atmosphere, temperature decreases at a rate of 1.98\u00b0C (commonly rounded to 2\u00b0C) per 1000ft",
+      "explanation": "In the International Standard Atmosphere, temperature decreases at a rate of 1.98°C (commonly rounded to 2°C) per 1000ft",
       "id": "pm-mc-0062"
     },
     {
@@ -1030,16 +1030,16 @@
       "id": "pm-mc-0079"
     },
     {
-      "question": "If the surface temperature is +15\u00b0C, what is the theoretical ISA temperature at 20,000ft?",
+      "question": "If the surface temperature is +15°C, what is the theoretical ISA temperature at 20,000ft?",
       "options": [
-        "-10\u00b0C",
-        "-15\u00b0C",
-        "-25\u00b0C",
-        "-5\u00b0C"
+        "-10°C",
+        "-15°C",
+        "-25°C",
+        "-5°C"
       ],
       "correctAnswer": 2,
       "type": "multiple_choice",
-      "explanation": "In the ISA, temperature decreases by approximately 2\u00b0C for every 1,000ft increase in altitude",
+      "explanation": "In the ISA, temperature decreases by approximately 2°C for every 1,000ft increase in altitude",
       "id": "pm-mc-0080"
     },
     {
@@ -1097,14 +1097,14 @@
     {
       "correctAnswer": 1,
       "options": [
-        "+10\u00b0C",
-        "+5\u00b0C",
-        "0\u00b0C",
-        "-5\u00b0C"
+        "+10°C",
+        "+5°C",
+        "0°C",
+        "-5°C"
       ],
       "type": "multiple_choice",
-      "explanation": "The standard environmental lapse rate in the ISA is 2\u00b0C per 1,000ft. A 5,000ft climb results in a 10\u00b0C drop from the +15\u00b0C surface temperature",
-      "question": "If the surface temperature is +15\u00b0C, what is the expected temperature at 5,000ft according to the International Standard Atmosphere (ISA) lapse rate?",
+      "explanation": "The standard environmental lapse rate in the ISA is 2°C per 1,000ft. A 5,000ft climb results in a 10°C drop from the +15°C surface temperature",
+      "question": "If the surface temperature is +15°C, what is the expected temperature at 5,000ft according to the International Standard Atmosphere (ISA) lapse rate?",
       "id": "pm-mc-0085"
     },
     {
@@ -1191,7 +1191,7 @@
         "The aircraft will be lower than the altimeter indicates",
         "The aircraft will be higher than the altimeter indicates",
         "The altimeter will continue to show the correct altitude",
-        "The altimeter will automatically adjust to the new pressure],question"
+        "The altimeter will automatically adjust to the new pressure"
       ],
       "correctAnswer": 0,
       "question": "When flying towards an area of lower pressure at a constant indicated altitude (altimeter set to constant QNH), what is the effect on the aircraft's true altitude?",
@@ -1206,7 +1206,7 @@
         "Strong surface winds and heavy rain",
         "Poor visibility, layered clouds (Stratus), and steady drizzle",
         "Excellent visibility and towering Cumulus clouds",
-        "Thunderstorms and gusty winds],question"
+        "Thunderstorms and gusty winds"
       ],
       "type": "multiple_choice",
       "id": "pm-mc-0093"
@@ -1219,7 +1219,7 @@
         "A Warm Front",
         "An Anticyclone",
         "A Ridge of High Pressure",
-        "A Cold Front],question"
+        "A Cold Front"
       ],
       "type": "multiple_choice",
       "id": "pm-mc-0094"
@@ -1230,7 +1230,7 @@
         "A report of current observed weather at an aerodrome",
         "A warning of hazardous weather in a Flight Information Region",
         "A forecast of weather conditions at an aerodrome for a specific period",
-        "A map showing the location of pressure systems and fronts],question"
+        "A map showing the location of pressure systems and fronts"
       ],
       "correctAnswer": 2,
       "question": "What is a TAF?",
@@ -1244,7 +1244,7 @@
         "Vertical Visibility",
         "VFR Visibility",
         "Variable Velocity",
-        "Volcanic Vapor],question"
+        "Volcanic Vapor"
       ],
       "type": "multiple_choice",
       "correctAnswer": 0,
@@ -1316,14 +1316,14 @@
       "id": "pm-mc-0101"
     },
     {
-      "explanation": "The ISA lapse rate is approximately 2\u00b0C per 1,000ft. At 4,000ft, the temperature drop is 8\u00b0C (15 - 8 = 7)",
-      "question": "Calculate the ISA temperature at an altitude of 4,000ft, assuming a surface temperature of +15\u00b0C",
+      "explanation": "The ISA lapse rate is approximately 2°C per 1,000ft. At 4,000ft, the temperature drop is 8°C (15 - 8 = 7)",
+      "question": "Calculate the ISA temperature at an altitude of 4,000ft, assuming a surface temperature of +15°C",
       "type": "multiple_choice",
       "options": [
-        "+11\u00b0C",
-        "+4\u00b0C",
-        "+7\u00b0C",
-        "-2\u00b0C"
+        "+11°C",
+        "+4°C",
+        "+7°C",
+        "-2°C"
       ],
       "correctAnswer": 2,
       "id": "pm-mc-0102"
@@ -1350,7 +1350,7 @@
       ],
       "type": "multiple_choice",
       "correctAnswer": 1,
-      "explanation": "A small temperature/dew point spread (e.g., 2\u00b0C or less) indicates high relative humidity and a high risk of fog or low cloud",
+      "explanation": "A small temperature/dew point spread (e.g., 2°C or less) indicates high relative humidity and a high risk of fog or low cloud",
       "question": "What does a small 'Temperature/Dew Point Spread' indicate?",
       "id": "pm-mc-0104"
     },
@@ -1461,12 +1461,12 @@
     {
       "question": "What is the standard temperature lapse rate in the International Standard Atmosphere (ISA)?",
       "correctAnswer": 0,
-      "explanation": "The ISA standard lapse rate is approximately 2\u00b0C per 1,000ft of altitude gain",
+      "explanation": "The ISA standard lapse rate is approximately 2°C per 1,000ft of altitude gain",
       "options": [
-        "2\u00b0C per 1,000ft",
-        "3\u00b0C per 1,000ft",
-        "1.5\u00b0C per 1,000ft",
-        "0.5\u00b0C per 1,000ft"
+        "2°C per 1,000ft",
+        "3°C per 1,000ft",
+        "1.5°C per 1,000ft",
+        "0.5°C per 1,000ft"
       ],
       "type": "multiple_choice",
       "id": "pm-mc-0113"
@@ -1569,7 +1569,7 @@
       "type": "multiple_choice",
       "options": [
         "The impact of supercooled water droplets",
-        "Sublimation of water vapour onto a surface below 0\u00b0C",
+        "Sublimation of water vapour onto a surface below 0°C",
         "Rain falling from a warm layer into a freezing layer",
         "The freezing of dew as the air temperature drops"
       ],
@@ -1590,7 +1590,7 @@
     },
     {
       "options": [
-        "Clear skies, light winds (2\u20138 kts), and high relative humidity",
+        "Clear skies, light winds (2–8 kts), and high relative humidity",
         "Overcast skies, calm winds, and low relative humidity",
         "Strong winds, clear skies, and a large temperature-dewpoint spread",
         "Hillsides, moist air, and winds above 15 kts"
@@ -1825,12 +1825,12 @@
     {
       "question": "In which of the following conditions is structural icing most likely to be most severe?",
       "correctAnswer": 1,
-      "explanation": "Airframe icing is most likely to occur in clouds composed of supercooled water droplets when the temperature is between 0\u00b0C and -15\u00b0C",
+      "explanation": "Airframe icing is most likely to occur in clouds composed of supercooled water droplets when the temperature is between 0°C and -15°C",
       "options": [
-        "High-level Cirrus clouds at -40\u00b0C",
-        "Clouds containing supercooled water droplets below 0\u00b0C",
-        "Clear air with high relative humidity and +5\u00b0C temperature",
-        "Dry snow falling through air at -10\u00b0C"
+        "High-level Cirrus clouds at -40°C",
+        "Clouds containing supercooled water droplets below 0°C",
+        "Clear air with high relative humidity and +5°C temperature",
+        "Dry snow falling through air at -10°C"
       ],
       "type": "multiple_choice",
       "id": "pm-mc-0141"
@@ -1914,15 +1914,15 @@
       "id": "pm-mc-0147"
     },
     {
-      "explanation": "In the ISA, the temperature lapse rate is 1.98\u00b0C (essentially 2\u00b0C) per 1,000 ft up to the tropopause",
+      "explanation": "In the ISA, the temperature lapse rate is 1.98°C (essentially 2°C) per 1,000 ft up to the tropopause",
       "question": "What is the standard temperature lapse rate in the International Standard Atmosphere (ISA) below the tropopause?",
       "type": "multiple_choice",
       "correctAnswer": 2,
       "options": [
-        "0.5\u00b0C per 1,000 ft",
-        "3.0\u00b0C per 1,000 ft",
-        "2\u00b0C per 1,000 ft",
-        "1\u00b0C per 1,000 ft"
+        "0.5°C per 1,000 ft",
+        "3.0°C per 1,000 ft",
+        "2°C per 1,000 ft",
+        "1°C per 1,000 ft"
       ],
       "id": "pm-mc-0148"
     },
@@ -2247,7 +2247,7 @@
         "50 hPa",
         "100 hPa"
       ],
-      "explanation": "The standard pressure lapse rate is approximately 1 hPa per 30 feet in the lower atmosphere. (1000ft / 30ft \u2248 33 hPa)",
+      "explanation": "The standard pressure lapse rate is approximately 1 hPa per 30 feet in the lower atmosphere. (1000ft / 30ft ≈ 33 hPa)",
       "type": "multiple_choice",
       "id": "pm-mc-0173"
     },
@@ -2274,7 +2274,7 @@
       ],
       "question": "What are the ideal conditions for the formation of Radiation Fog?",
       "type": "multiple_choice",
-      "explanation": "Radiation fog requires light winds (2\u20138 knots) to mix the cooling air slightly; calm air would only result in dew",
+      "explanation": "Radiation fog requires light winds (2–8 knots) to mix the cooling air slightly; calm air would only result in dew",
       "id": "pm-mc-0175"
     },
     {
@@ -2285,7 +2285,7 @@
         "Large supercooled water droplets in convective clouds",
         "Small water droplets in stable layers of Stratus cloud",
         "Sublimation of water vapour directly onto the airframe",
-        "Flying through dry snow at temperatures below -10\u00b0C"
+        "Flying through dry snow at temperatures below -10°C"
       ],
       "correctAnswer": 0,
       "id": "pm-mc-0176"
@@ -2332,13 +2332,13 @@
     {
       "question": "What is the International Standard Atmosphere (ISA) temperature at 10,000 feet?",
       "options": [
-        "-5\u00b0C",
-        "-15\u00b0C",
-        "+5\u00b0C",
-        "0\u00b0C"
+        "-5°C",
+        "-15°C",
+        "+5°C",
+        "0°C"
       ],
       "type": "multiple_choice",
-      "explanation": "The ISA temperature at sea level is +15\u00b0C, and it decreases by 1.98\u00b0C (approx 2\u00b0C) per 1,000 feet. (+15 - (10*2) = -5)",
+      "explanation": "The ISA temperature at sea level is +15°C, and it decreases by 1.98°C (approx 2°C) per 1,000 feet. (+15 - (10*2) = -5)",
       "correctAnswer": 0,
       "id": "pm-mc-0180"
     },
@@ -2486,13 +2486,13 @@
       "id": "pm-mc-0191"
     },
     {
-      "explanation": "The standard lapse rate in the ISA troposphere is a decrease of 1.98\u00b0C (approx 2\u00b0C) per 1,000 feet",
+      "explanation": "The standard lapse rate in the ISA troposphere is a decrease of 1.98°C (approx 2°C) per 1,000 feet",
       "type": "multiple_choice",
       "options": [
-        "1\u00b0C per 1,000 feet",
-        "2\u00b0C per 1,000 feet",
-        "3\u00b0C per 1,000 feet",
-        "0.5\u00b0C per 1,000 feet"
+        "1°C per 1,000 feet",
+        "2°C per 1,000 feet",
+        "3°C per 1,000 feet",
+        "0.5°C per 1,000 feet"
       ],
       "question": "What is the standard environmental lapse rate in the International Standard Atmosphere (ISA) up to 36,000 feet?",
       "correctAnswer": 1,
@@ -2776,10 +2776,10 @@
       "question": "According to the International Standard Atmosphere (ISA), what are the standard pressure and temperature values at Mean Sea Level?",
       "correctAnswer": 2,
       "options": [
-        "1000 hPa and +15\u00b0C",
-        "1013.25 hPa and 0\u00b0C",
-        "1013.25 hPa and +15\u00b0C",
-        "1020 hPa and +10\u00b0C"
+        "1000 hPa and +15°C",
+        "1013.25 hPa and 0°C",
+        "1013.25 hPa and +15°C",
+        "1020 hPa and +10°C"
       ],
       "explanation": "ISA conditions at sea level are 1013.25 hPa and +15 degrees Celsius",
       "id": "pm-mc-0214"
@@ -2824,12 +2824,12 @@
       "id": "pm-mc-0217"
     },
     {
-      "explanation": "The DALR is a constant value of approximately 3\u00b0C per 1000ft (or 1\u00b0C per 100m) for air that is not saturated",
+      "explanation": "The DALR is a constant value of approximately 3°C per 1000ft (or 1°C per 100m) for air that is not saturated",
       "options": [
-        "3.0\u00b0C per 1000ft",
-        "1.5\u00b0C per 1000ft",
-        "1.98\u00b0C per 1000ft",
-        "0.5\u00b0C per 1000ft"
+        "3.0°C per 1000ft",
+        "1.5°C per 1000ft",
+        "1.98°C per 1000ft",
+        "0.5°C per 1000ft"
       ],
       "correctAnswer": 0,
       "question": "In the troposphere, what is the standard value of the Dry Adiabatic Lapse Rate (DALR)?",
@@ -3020,14 +3020,14 @@
     },
     {
       "correctAnswer": 1,
-      "explanation": "The ISA standard lapse rate is 2\u00b0C per 1,000 ft (or 0.65\u00b0C per 100m) throughout the troposphere up to 36,090 ft",
+      "explanation": "The ISA standard lapse rate is 2°C per 1,000 ft (or 0.65°C per 100m) throughout the troposphere up to 36,090 ft",
       "type": "multiple_choice",
       "question": "What is the standard International Standard Atmosphere (ISA) temperature lapse rate in the troposphere?",
       "options": [
-        "1.5\u00b0C per 1,000 ft",
-        "2.0\u00b0C per 1,000 ft",
-        "3.0\u00b0C per 1,000 ft",
-        "0.5\u00b0C per 1,000 ft"
+        "1.5°C per 1,000 ft",
+        "2.0°C per 1,000 ft",
+        "3.0°C per 1,000 ft",
+        "0.5°C per 1,000 ft"
       ],
       "id": "pm-mc-0233"
     },
@@ -3216,7 +3216,7 @@
     {
       "explanation": "Hoar frost forms through sublimation, where water vapour turns directly into ice crystals on a surface below freezing",
       "options": [
-        "Direct sublimation of water vapour onto a surface below 0\u00b0C",
+        "Direct sublimation of water vapour onto a surface below 0°C",
         "Supercooled water droplets freezing on impact",
         "Rain falling through a warm layer and freezing",
         "Rapid cooling of the air by a passing cold front"
@@ -3335,7 +3335,7 @@
       "options": [
         "Anabatic wind",
         "Katabatic wind",
-        "F\u00f6hn wind",
+        "Föhn wind",
         "Sea breeze"
       ],
       "correctAnswer": 1,
@@ -3347,7 +3347,7 @@
       "explanation": "Relative humidity is the ratio of water vapour present to the maximum amount the air could hold at that temperature, expressed as a percentage",
       "correctAnswer": 2,
       "options": [
-        "The actual amount of water vapour in the air in g/m\u00b3",
+        "The actual amount of water vapour in the air in g/m³",
         "The temperature at which condensation begins",
         "The amount of water vapour in the air compared to the maximum it could hold at that temperature",
         "The pressure exerted by water vapour in the atmosphere"
@@ -3417,8 +3417,8 @@
         "The leeward side is colder and more prone to heavy snow"
       ],
       "type": "multiple_choice",
-      "question": "In a 'F\u00f6hn Wind' situation, what are the typical weather conditions on the windward and leeward sides of a mountain range?",
-      "explanation": "The F\u00f6hn effect occurs when moist air rises and cools on the windward side, then descends and warms dry-adiabatically on the leeward side",
+      "question": "In a 'Föhn Wind' situation, what are the typical weather conditions on the windward and leeward sides of a mountain range?",
+      "explanation": "The Föhn effect occurs when moist air rises and cools on the windward side, then descends and warms dry-adiabatically on the leeward side",
       "id": "pm-mc-0263"
     },
     {
@@ -3461,15 +3461,15 @@
       "id": "pm-mc-0266"
     },
     {
-      "explanation": "In the ISA, temperature decreases at a rate of 1.98\u00b0C (commonly rounded to 2\u00b0C) per 1000ft up to the tropopause",
+      "explanation": "In the ISA, temperature decreases at a rate of 1.98°C (commonly rounded to 2°C) per 1000ft up to the tropopause",
       "type": "multiple_choice",
       "correctAnswer": 3,
       "question": "What is the standard temperature lapse rate in the International Standard Atmosphere (ISA) within the troposphere?",
       "options": [
-        "-1\u00b0C per 1,000 feet",
-        "-3\u00b0C per 1,000 feet",
-        "-5\u00b0C per 1,000 feet",
-        "-2\u00b0C per 1,000 feet"
+        "-1°C per 1,000 feet",
+        "-3°C per 1,000 feet",
+        "-5°C per 1,000 feet",
+        "-2°C per 1,000 feet"
       ],
       "id": "pm-mc-0267"
     },
@@ -3632,7 +3632,7 @@
     {
       "options": [
         "Cloudy skies and calm air",
-        "Clear skies and light winds (2\u20138 knots)",
+        "Clear skies and light winds (2–8 knots)",
         "Strong winds and high humidity",
         "Overcast skies and moderate winds (15+ knots)"
       ],
@@ -3853,13 +3853,13 @@
     {
       "question": "What is the standard International Standard Atmosphere (ISA) environmental lapse rate?",
       "correctAnswer": 1,
-      "explanation": "The ISA lapse rate is a decrease of 1.98\u00b0C (commonly rounded to 2\u00b0C) per 1000 feet of altitude",
+      "explanation": "The ISA lapse rate is a decrease of 1.98°C (commonly rounded to 2°C) per 1000 feet of altitude",
       "type": "multiple_choice",
       "options": [
-        "1\u00b0C per 1,000ft",
-        "2\u00b0C per 1,000ft",
-        "3\u00b0C per 1,000ft",
-        "0.5\u00b0C per 1,000ft"
+        "1°C per 1,000ft",
+        "2°C per 1,000ft",
+        "3°C per 1,000ft",
+        "0.5°C per 1,000ft"
       ],
       "id": "pm-mc-0297"
     },
@@ -4190,7 +4190,7 @@
     },
     {
       "question": "What does a small 'spread' between the ambient temperature and the dew point temperature indicate?",
-      "explanation": "A small temperature/dew point spread (e.g., 2\u00b0C or less) indicates high relative humidity and a high risk of fog or low cloud formation",
+      "explanation": "A small temperature/dew point spread (e.g., 2°C or less) indicates high relative humidity and a high risk of fog or low cloud formation",
       "correctAnswer": 1,
       "type": "multiple_choice",
       "options": [
@@ -4215,14 +4215,14 @@
       "id": "pm-mc-0324"
     },
     {
-      "explanation": "The ISA lapse rate is a constant decrease of 1.98\u00b0C (commonly rounded to 2\u00b0C) for every 1,000 feet of altitude increase in the troposphere",
+      "explanation": "The ISA lapse rate is a constant decrease of 1.98°C (commonly rounded to 2°C) for every 1,000 feet of altitude increase in the troposphere",
       "question": "What is the standard International Standard Atmosphere (ISA) temperature lapse rate in the troposphere?",
       "type": "multiple_choice",
       "options": [
-        "+2\u00b0C per 1,000ft increase",
-        "-2\u00b0C per 1,000ft increase",
-        "-1\u00b0C per 1,000ft increase",
-        "-3\u00b0C per 1,000ft increase"
+        "+2°C per 1,000ft increase",
+        "-2°C per 1,000ft increase",
+        "-1°C per 1,000ft increase",
+        "-3°C per 1,000ft increase"
       ],
       "correctAnswer": 1,
       "id": "pm-mc-0325"
@@ -4412,7 +4412,7 @@
     {
       "options": [
         "Supercooled water droplets freezing on impact with the airframe",
-        "Water vapour turning directly into ice crystals on a surface below 0\u00b0C",
+        "Water vapour turning directly into ice crystals on a surface below 0°C",
         "Rain falling through a surface inversion and freezing",
         "A thick layer of ice building up due to flying through Cumulonimbus clouds"
       ],
@@ -4569,13 +4569,13 @@
       "correctAnswer": 3,
       "type": "multiple_choice",
       "options": [
-        "1013.25 hPa and 0\u00b0C",
-        "1000.00 hPa and +15\u00b0C",
-        "1023.25 hPa and +15\u00b0C",
-        "1013.25 hPa and +15\u00b0C"
+        "1013.25 hPa and 0°C",
+        "1000.00 hPa and +15°C",
+        "1023.25 hPa and +15°C",
+        "1013.25 hPa and +15°C"
       ],
       "question": "What are the Standard Sea Level pressure and temperature values as defined by the International Standard Atmosphere (ISA)?",
-      "explanation": "ISA conditions at Sea Level are 1013.25 hPa and +15\u00b0C, with a standard lapse rate of 1.98\u00b0C (approx 2\u00b0C) per 1000ft",
+      "explanation": "ISA conditions at Sea Level are 1013.25 hPa and +15°C, with a standard lapse rate of 1.98°C (approx 2°C) per 1000ft",
       "id": "pm-mc-0352"
     },
     {
@@ -5113,7 +5113,7 @@
         "Anabatic wind",
         "Katabatic wind",
         "Sea breeze",
-        "F\u00f6hn wind"
+        "Föhn wind"
       ],
       "id": "pm-im-0033",
       "__rewritten_from_image__": true
@@ -5585,10 +5585,10 @@
       "question": "A meteorological station plot. The number 12 is in the top-left (temperature) and the number 10 is in the bottom-left. Based on this station plot, what is the dew point temperature?",
       "type": "multiple_choice",
       "options": [
-        "12\u00b0C",
-        "2\u00b0C",
-        "10\u00b0C",
-        "22\u00b0C"
+        "12°C",
+        "2°C",
+        "10°C",
+        "22°C"
       ],
       "correctAnswer": 2,
       "id": "pm-im-0067",
@@ -5637,7 +5637,7 @@
       "__rewritten_from_image__": true
     },
     {
-      "explanation": "The symbol for moderate turbulence is a single 'hat' or '\u028c' shape; severe turbulence would be indicated by two of these symbols",
+      "explanation": "The symbol for moderate turbulence is a single 'hat' or 'ʌ' shape; severe turbulence would be indicated by two of these symbols",
       "question": "A meteorological symbol used on a SIGWX chart that looks like a caret or an inverted 'V'. Which flight hazard is indicated by this symbol?",
       "options": [
         "Moderate icing",
@@ -5782,10 +5782,10 @@
       "type": "multiple_choice",
       "explanation": "On a station plot, the temperature is shown at the top-left and the dew point is shown at the bottom-left of the station circle",
       "options": [
-        "12\u00b0C",
-        "2\u00b0C (the difference)",
-        "10\u00b0C",
-        "22\u00b0C (the sum)"
+        "12°C",
+        "2°C (the difference)",
+        "10°C",
+        "22°C (the sum)"
       ],
       "id": "pm-im-0081",
       "__rewritten_from_image__": true
@@ -5904,9 +5904,9 @@
     },
     {
       "options": [
-        "8\u00b0C",
+        "8°C",
         "1012 hPa",
-        "12\u00b0C",
+        "12°C",
         "12% Humidity"
       ],
       "question": "A station plot circle. To the top left of the circle is the number 12. To the bottom left is the number 8. A wind barb is attached at the top right. Based on this station plot, what is the reported air temperature?",
@@ -5923,7 +5923,7 @@
         "Katabatic wind",
         "Anabatic wind",
         "Valley wind",
-        "F\u00f6hn wind"
+        "Föhn wind"
       ],
       "correctAnswer": 1,
       "type": "multiple_choice",
@@ -6131,7 +6131,7 @@
         "Anabatic wind",
         "Katabatic wind artist",
         "Valley breeze",
-        "F\u00f6hn wind"
+        "Föhn wind"
       ],
       "explanation": "Anabatic winds occur during the day when the sun heats the mountain slopes, causing the air in contact with them to become warmer and rise up the slope",
       "question": "A diagram of a mountain slope in bright sunlight, with arrows indicating the movement of a thin layer of air upwards along the sunlit surface. Which local wind phenomenon is illustrated in this daytime mountain diagram?",
@@ -6284,7 +6284,7 @@
       "options": [
         "Katabatic wind",
         "Anabatic wind",
-        "F\u00f6hn wind",
+        "Föhn wind",
         "Sea breeze"
       ],
       "question": "A diagram of a mountain profile at night (indicated by a moon symbol). Blue arrows indicate air flowing downwards from the peaks into the valley floor. What local wind effect is illustrated in this night-time mountain diagram?",
@@ -6468,7 +6468,7 @@
         "Continuous rain",
         "Showers",
         "Intermittent snow",
-        "Freezing rain,],question"
+        "Freezing rain"
       ],
       "explanation": "A triangle symbol (inverted) on a weather chart or METAR indicates a 'shower' of the accompanying precipitation type.",
       "question": "A meteorological symbol consisting of a single filled-in inverted triangle. In a station plot, what does this symbol indicate about the character of the precipitation?",
@@ -6481,7 +6481,7 @@
         "A convergence line",
         "A squall line",
         "An upper cold front",
-        "A trough of low pressure,],question"
+        "A trough of low pressure"
       ],
       "type": "multiple_choice",
       "explanation": "An isolated 'S' shape (looking like a horizontal 'S') indicates a sea-breeze front or convergence line.",
@@ -6496,7 +6496,7 @@
         "5 knots",
         "10 knots",
         "50 knots",
-        "100 knots,],question"
+        "100 knots"
       ],
       "type": "multiple_choice",
       "correctAnswer": 2,
@@ -6663,7 +6663,7 @@
         "Anabatic Wind (uphill)",
         "Katabatic Wind (downhill)",
         "Valley Breeze",
-        "F\u00f6hn Wind"
+        "Föhn Wind"
       ],
       "type": "multiple_choice",
       "explanation": "Katabatic winds occur at night as air on the slopes cools, becomes denser, and flows down into the valley",
@@ -6860,7 +6860,7 @@
       "question": "A meteorological surface pressure chart showing the British Isles with several curved lines labelled with values such as 1008, 1012, and 1016. A red arrow points to one of these lines. What are the lines labeled with pressure values (e.g., 1012, 1016) on this chart called?",
       "options": [
         "Isobars",
-        "Isotachs\ue814",
+        "Isotachs",
         "Isogons",
         "Isotherms"
       ],
@@ -6900,7 +6900,7 @@
       "options": [
         "Lenticular clouds (Mountain Waves)",
         "Cumulonimbus (Thunderstorm)",
-        "Stratus (Low Cloud)\ue814",
+        "Stratus (Low Cloud)",
         "Cirrus (High Cloud)"
       ],
       "correctAnswer": 0,
@@ -6929,7 +6929,7 @@
       "options": [
         "Continuous light rain",
         "Drizzle from Stratus cloud",
-        "Rain showers\u0e08\u0e32\u0e01 clouds of convective origin",
+        "Rain showers clouds of convective origin",
         "Intermittent snow flurries"
       ],
       "question": "A symbol from a UK Significant Weather (SIGWX) chart. It shows a black triangular shape (shower symbol) with a 'rain' dot above it. Specifically, it is the 'SHRA' symbol. What type of precipitation is indicated by this symbol on a SIGWX chart?",
@@ -7491,14 +7491,14 @@
       "id": "pm-mc-0009-dup8"
     },
     {
-      "explanation": "The ICAO Standard Atmosphere (ISA) assumes a sea-level pressure of 1013.25 hPa and a temperature of +15\u00b0C",
+      "explanation": "The ICAO Standard Atmosphere (ISA) assumes a sea-level pressure of 1013.25 hPa and a temperature of +15°C",
       "type": "multiple_choice",
       "correctAnswer": 2,
       "options": [
-        "1000 hPa and 0\u00b0C",
-        "1013.25 hPa and 0\u00b0C",
-        "1013.25 hPa and +15\u00b0C",
-        "1020 hPa and +15\u00b0C"
+        "1000 hPa and 0°C",
+        "1013.25 hPa and 0°C",
+        "1013.25 hPa and +15°C",
+        "1020 hPa and +15°C"
       ],
       "question": "What are the standard sea-level pressure and temperature values used in the ICAO Standard Atmosphere (ISA)?",
       "id": "pm-mc-0010-dup9"
@@ -7674,14 +7674,14 @@
     },
     {
       "options": [
-        "3.0\u00b0C per 1000ft",
-        "1.5\u00b0C per 1000ft",
-        "0.5\u00b0C per 1000ft",
-        "1.98\u00b0C per 1000ft"
+        "3.0°C per 1000ft",
+        "1.5°C per 1000ft",
+        "0.5°C per 1000ft",
+        "1.98°C per 1000ft"
       ],
       "correctAnswer": 1,
       "type": "multiple_choice",
-      "explanation": "The SALR is roughly 1.5\u00b0C/1000ft, which is less than the DALR (3\u00b0C/1000ft) because latent heat is released during condensation",
+      "explanation": "The SALR is roughly 1.5°C/1000ft, which is less than the DALR (3°C/1000ft) because latent heat is released during condensation",
       "question": "What is the approximate value of the Saturated Adiabatic Lapse Rate (SALR) in the lower troposphere?",
       "id": "pm-mc-0024-dup23"
     },
@@ -7793,12 +7793,12 @@
       "correctAnswer": 1,
       "type": "multiple_choice",
       "options": [
-        "An increase of 2\u00b0C per 1,000ft",
-        "A decrease of 1.98\u00b0C per 1,000ft",
-        "A decrease of 3\u00b0C per 1,000ft",
-        "A decrease of 1\u00b0C per 1,000ft"
+        "An increase of 2°C per 1,000ft",
+        "A decrease of 1.98°C per 1,000ft",
+        "A decrease of 3°C per 1,000ft",
+        "A decrease of 1°C per 1,000ft"
       ],
-      "explanation": "The standard lapse rate in the ICAO Standard Atmosphere is a decrease of 1.98\u00b0C (often rounded to 2\u00b0C) per 1,000ft increase in altitude",
+      "explanation": "The standard lapse rate in the ICAO Standard Atmosphere is a decrease of 1.98°C (often rounded to 2°C) per 1,000ft increase in altitude",
       "question": "What is the standard environmental lapse rate (ELR) in the troposphere according to ISA?",
       "id": "pm-mc-0033-dup32"
     },
@@ -7922,12 +7922,12 @@
     {
       "question": "What is the value of the Dry Adiabatic Lapse Rate (DALR)?",
       "options": [
-        "1.98\u00b0C per 1,000 feet",
-        "3.0\u00b0C per 1,000 feet",
-        "0.5\u00b0C per 1,000 feet",
-        "6.5\u00b0C per 1,000 feet"
+        "1.98°C per 1,000 feet",
+        "3.0°C per 1,000 feet",
+        "0.5°C per 1,000 feet",
+        "6.5°C per 1,000 feet"
       ],
-      "explanation": "The DALR is a constant rate of 3.0\u00b0C per 1,000 feet, whereas the SALR varies but is generally less (around 1.5\u00b0C per 1,000 feet)",
+      "explanation": "The DALR is a constant rate of 3.0°C per 1,000 feet, whereas the SALR varies but is generally less (around 1.5°C per 1,000 feet)",
       "correctAnswer": 1,
       "type": "multiple_choice",
       "id": "pm-mc-0043-dup42"
@@ -8070,7 +8070,7 @@
       "options": [
         "Flying through heavy rain at high altitudes",
         "Flying through supercooled water droplets in a cloud",
-        "Water vapour turning directly to ice on an airframe surface below 0\u00b0C",
+        "Water vapour turning directly to ice on an airframe surface below 0°C",
         "Melting snow refreezing on the leading edge"
       ],
       "id": "pm-mc-0054-dup53"
@@ -8171,12 +8171,12 @@
       "correctAnswer": 0,
       "question": "What is the standard temperature lapse rate in the ISA (International Standard Atmosphere) below the tropopause?",
       "options": [
-        "-2.0\u00b0C per 1,000 ft",
-        "-1.5\u00b0C per 1,000 ft",
-        "-3.0\u00b0C per 1,000 ft",
-        "-0.5\u00b0C per 1,000 ft"
+        "-2.0°C per 1,000 ft",
+        "-1.5°C per 1,000 ft",
+        "-3.0°C per 1,000 ft",
+        "-0.5°C per 1,000 ft"
       ],
-      "explanation": "In the International Standard Atmosphere, temperature decreases at a rate of 1.98\u00b0C (commonly rounded to 2\u00b0C) per 1000ft",
+      "explanation": "In the International Standard Atmosphere, temperature decreases at a rate of 1.98°C (commonly rounded to 2°C) per 1000ft",
       "id": "pm-mc-0062-dup61"
     },
     {
@@ -8401,16 +8401,16 @@
       "id": "pm-mc-0079-dup78"
     },
     {
-      "question": "If the surface temperature is +15\u00b0C, what is the theoretical ISA temperature at 20,000ft?",
+      "question": "If the surface temperature is +15°C, what is the theoretical ISA temperature at 20,000ft?",
       "options": [
-        "-10\u00b0C",
-        "-15\u00b0C",
-        "-25\u00b0C",
-        "-5\u00b0C"
+        "-10°C",
+        "-15°C",
+        "-25°C",
+        "-5°C"
       ],
       "correctAnswer": 2,
       "type": "multiple_choice",
-      "explanation": "In the ISA, temperature decreases by approximately 2\u00b0C for every 1,000ft increase in altitude",
+      "explanation": "In the ISA, temperature decreases by approximately 2°C for every 1,000ft increase in altitude",
       "id": "pm-mc-0080-dup79"
     },
     {
@@ -8468,14 +8468,14 @@
     {
       "correctAnswer": 1,
       "options": [
-        "+10\u00b0C",
-        "+5\u00b0C",
-        "0\u00b0C",
-        "-5\u00b0C"
+        "+10°C",
+        "+5°C",
+        "0°C",
+        "-5°C"
       ],
       "type": "multiple_choice",
-      "explanation": "The standard environmental lapse rate in the ISA is 2\u00b0C per 1,000ft. A 5,000ft climb results in a 10\u00b0C drop from the +15\u00b0C surface temperature",
-      "question": "If the surface temperature is +15\u00b0C, what is the expected temperature at 5,000ft according to the International Standard Atmosphere (ISA) lapse rate?",
+      "explanation": "The standard environmental lapse rate in the ISA is 2°C per 1,000ft. A 5,000ft climb results in a 10°C drop from the +15°C surface temperature",
+      "question": "If the surface temperature is +15°C, what is the expected temperature at 5,000ft according to the International Standard Atmosphere (ISA) lapse rate?",
       "id": "pm-mc-0085-dup84"
     },
     {
@@ -8562,7 +8562,7 @@
         "The aircraft will be lower than the altimeter indicates",
         "The aircraft will be higher than the altimeter indicates",
         "The altimeter will continue to show the correct altitude",
-        "The altimeter will automatically adjust to the new pressure],question"
+        "The altimeter will automatically adjust to the new pressure"
       ],
       "correctAnswer": 0,
       "question": "When flying towards an area of lower pressure at a constant indicated altitude (altimeter set to constant QNH), what is the effect on the aircraft's true altitude?",
@@ -8577,7 +8577,7 @@
         "Strong surface winds and heavy rain",
         "Poor visibility, layered clouds (Stratus), and steady drizzle",
         "Excellent visibility and towering Cumulus clouds",
-        "Thunderstorms and gusty winds],question"
+        "Thunderstorms and gusty winds"
       ],
       "type": "multiple_choice",
       "id": "pm-mc-0093-dup92"
@@ -8590,7 +8590,7 @@
         "A Warm Front",
         "An Anticyclone",
         "A Ridge of High Pressure",
-        "A Cold Front],question"
+        "A Cold Front"
       ],
       "type": "multiple_choice",
       "id": "pm-mc-0094-dup93"
@@ -8601,7 +8601,7 @@
         "A report of current observed weather at an aerodrome",
         "A warning of hazardous weather in a Flight Information Region",
         "A forecast of weather conditions at an aerodrome for a specific period",
-        "A map showing the location of pressure systems and fronts],question"
+        "A map showing the location of pressure systems and fronts"
       ],
       "correctAnswer": 2,
       "question": "What is a TAF?",
@@ -8615,7 +8615,7 @@
         "Vertical Visibility",
         "VFR Visibility",
         "Variable Velocity",
-        "Volcanic Vapor],question"
+        "Volcanic Vapor"
       ],
       "type": "multiple_choice",
       "correctAnswer": 0,
@@ -8687,14 +8687,14 @@
       "id": "pm-mc-0101-dup100"
     },
     {
-      "explanation": "The ISA lapse rate is approximately 2\u00b0C per 1,000ft. At 4,000ft, the temperature drop is 8\u00b0C (15 - 8 = 7)",
-      "question": "Calculate the ISA temperature at an altitude of 4,000ft, assuming a surface temperature of +15\u00b0C",
+      "explanation": "The ISA lapse rate is approximately 2°C per 1,000ft. At 4,000ft, the temperature drop is 8°C (15 - 8 = 7)",
+      "question": "Calculate the ISA temperature at an altitude of 4,000ft, assuming a surface temperature of +15°C",
       "type": "multiple_choice",
       "options": [
-        "+11\u00b0C",
-        "+4\u00b0C",
-        "+7\u00b0C",
-        "-2\u00b0C"
+        "+11°C",
+        "+4°C",
+        "+7°C",
+        "-2°C"
       ],
       "correctAnswer": 2,
       "id": "pm-mc-0102-dup101"
@@ -8721,7 +8721,7 @@
       ],
       "type": "multiple_choice",
       "correctAnswer": 1,
-      "explanation": "A small temperature/dew point spread (e.g., 2\u00b0C or less) indicates high relative humidity and a high risk of fog or low cloud",
+      "explanation": "A small temperature/dew point spread (e.g., 2°C or less) indicates high relative humidity and a high risk of fog or low cloud",
       "question": "What does a small 'Temperature/Dew Point Spread' indicate?",
       "id": "pm-mc-0104-dup103"
     },
@@ -8832,12 +8832,12 @@
     {
       "question": "What is the standard temperature lapse rate in the International Standard Atmosphere (ISA)?",
       "correctAnswer": 0,
-      "explanation": "The ISA standard lapse rate is approximately 2\u00b0C per 1,000ft of altitude gain",
+      "explanation": "The ISA standard lapse rate is approximately 2°C per 1,000ft of altitude gain",
       "options": [
-        "2\u00b0C per 1,000ft",
-        "3\u00b0C per 1,000ft",
-        "1.5\u00b0C per 1,000ft",
-        "0.5\u00b0C per 1,000ft"
+        "2°C per 1,000ft",
+        "3°C per 1,000ft",
+        "1.5°C per 1,000ft",
+        "0.5°C per 1,000ft"
       ],
       "type": "multiple_choice",
       "id": "pm-mc-0113-dup112"
@@ -8940,7 +8940,7 @@
       "type": "multiple_choice",
       "options": [
         "The impact of supercooled water droplets",
-        "Sublimation of water vapour onto a surface below 0\u00b0C",
+        "Sublimation of water vapour onto a surface below 0°C",
         "Rain falling from a warm layer into a freezing layer",
         "The freezing of dew as the air temperature drops"
       ],
@@ -8961,7 +8961,7 @@
     },
     {
       "options": [
-        "Clear skies, light winds (2\u20138 kts), and high relative humidity",
+        "Clear skies, light winds (2–8 kts), and high relative humidity",
         "Overcast skies, calm winds, and low relative humidity",
         "Strong winds, clear skies, and a large temperature-dewpoint spread",
         "Hillsides, moist air, and winds above 15 kts"
@@ -9196,12 +9196,12 @@
     {
       "question": "In which of the following conditions is structural icing most likely to be most severe?",
       "correctAnswer": 1,
-      "explanation": "Airframe icing is most likely to occur in clouds composed of supercooled water droplets when the temperature is between 0\u00b0C and -15\u00b0C",
+      "explanation": "Airframe icing is most likely to occur in clouds composed of supercooled water droplets when the temperature is between 0°C and -15°C",
       "options": [
-        "High-level Cirrus clouds at -40\u00b0C",
-        "Clouds containing supercooled water droplets below 0\u00b0C",
-        "Clear air with high relative humidity and +5\u00b0C temperature",
-        "Dry snow falling through air at -10\u00b0C"
+        "High-level Cirrus clouds at -40°C",
+        "Clouds containing supercooled water droplets below 0°C",
+        "Clear air with high relative humidity and +5°C temperature",
+        "Dry snow falling through air at -10°C"
       ],
       "type": "multiple_choice",
       "id": "pm-mc-0141-dup140"
@@ -9285,15 +9285,15 @@
       "id": "pm-mc-0147-dup146"
     },
     {
-      "explanation": "In the ISA, the temperature lapse rate is 1.98\u00b0C (essentially 2\u00b0C) per 1,000 ft up to the tropopause",
+      "explanation": "In the ISA, the temperature lapse rate is 1.98°C (essentially 2°C) per 1,000 ft up to the tropopause",
       "question": "What is the standard temperature lapse rate in the International Standard Atmosphere (ISA) below the tropopause?",
       "type": "multiple_choice",
       "correctAnswer": 2,
       "options": [
-        "0.5\u00b0C per 1,000 ft",
-        "3.0\u00b0C per 1,000 ft",
-        "2\u00b0C per 1,000 ft",
-        "1\u00b0C per 1,000 ft"
+        "0.5°C per 1,000 ft",
+        "3.0°C per 1,000 ft",
+        "2°C per 1,000 ft",
+        "1°C per 1,000 ft"
       ],
       "id": "pm-mc-0148-dup147"
     },
@@ -9618,7 +9618,7 @@
         "50 hPa",
         "100 hPa"
       ],
-      "explanation": "The standard pressure lapse rate is approximately 1 hPa per 30 feet in the lower atmosphere. (1000ft / 30ft \u2248 33 hPa)",
+      "explanation": "The standard pressure lapse rate is approximately 1 hPa per 30 feet in the lower atmosphere. (1000ft / 30ft ≈ 33 hPa)",
       "type": "multiple_choice",
       "id": "pm-mc-0173-dup172"
     },
@@ -9645,7 +9645,7 @@
       ],
       "question": "What are the ideal conditions for the formation of Radiation Fog?",
       "type": "multiple_choice",
-      "explanation": "Radiation fog requires light winds (2\u20138 knots) to mix the cooling air slightly; calm air would only result in dew",
+      "explanation": "Radiation fog requires light winds (2–8 knots) to mix the cooling air slightly; calm air would only result in dew",
       "id": "pm-mc-0175-dup174"
     },
     {
@@ -9656,7 +9656,7 @@
         "Large supercooled water droplets in convective clouds",
         "Small water droplets in stable layers of Stratus cloud",
         "Sublimation of water vapour directly onto the airframe",
-        "Flying through dry snow at temperatures below -10\u00b0C"
+        "Flying through dry snow at temperatures below -10°C"
       ],
       "correctAnswer": 0,
       "id": "pm-mc-0176-dup175"
@@ -9703,13 +9703,13 @@
     {
       "question": "What is the International Standard Atmosphere (ISA) temperature at 10,000 feet?",
       "options": [
-        "-5\u00b0C",
-        "-15\u00b0C",
-        "+5\u00b0C",
-        "0\u00b0C"
+        "-5°C",
+        "-15°C",
+        "+5°C",
+        "0°C"
       ],
       "type": "multiple_choice",
-      "explanation": "The ISA temperature at sea level is +15\u00b0C, and it decreases by 1.98\u00b0C (approx 2\u00b0C) per 1,000 feet. (+15 - (10*2) = -5)",
+      "explanation": "The ISA temperature at sea level is +15°C, and it decreases by 1.98°C (approx 2°C) per 1,000 feet. (+15 - (10*2) = -5)",
       "correctAnswer": 0,
       "id": "pm-mc-0180-dup179"
     },
@@ -9857,13 +9857,13 @@
       "id": "pm-mc-0191-dup190"
     },
     {
-      "explanation": "The standard lapse rate in the ISA troposphere is a decrease of 1.98\u00b0C (approx 2\u00b0C) per 1,000 feet",
+      "explanation": "The standard lapse rate in the ISA troposphere is a decrease of 1.98°C (approx 2°C) per 1,000 feet",
       "type": "multiple_choice",
       "options": [
-        "1\u00b0C per 1,000 feet",
-        "2\u00b0C per 1,000 feet",
-        "3\u00b0C per 1,000 feet",
-        "0.5\u00b0C per 1,000 feet"
+        "1°C per 1,000 feet",
+        "2°C per 1,000 feet",
+        "3°C per 1,000 feet",
+        "0.5°C per 1,000 feet"
       ],
       "question": "What is the standard environmental lapse rate in the International Standard Atmosphere (ISA) up to 36,000 feet?",
       "correctAnswer": 1,
@@ -10147,10 +10147,10 @@
       "question": "According to the International Standard Atmosphere (ISA), what are the standard pressure and temperature values at Mean Sea Level?",
       "correctAnswer": 2,
       "options": [
-        "1000 hPa and +15\u00b0C",
-        "1013.25 hPa and 0\u00b0C",
-        "1013.25 hPa and +15\u00b0C",
-        "1020 hPa and +10\u00b0C"
+        "1000 hPa and +15°C",
+        "1013.25 hPa and 0°C",
+        "1013.25 hPa and +15°C",
+        "1020 hPa and +10°C"
       ],
       "explanation": "ISA conditions at sea level are 1013.25 hPa and +15 degrees Celsius",
       "id": "pm-mc-0214-dup213"
@@ -10195,12 +10195,12 @@
       "id": "pm-mc-0217-dup216"
     },
     {
-      "explanation": "The DALR is a constant value of approximately 3\u00b0C per 1000ft (or 1\u00b0C per 100m) for air that is not saturated",
+      "explanation": "The DALR is a constant value of approximately 3°C per 1000ft (or 1°C per 100m) for air that is not saturated",
       "options": [
-        "3.0\u00b0C per 1000ft",
-        "1.5\u00b0C per 1000ft",
-        "1.98\u00b0C per 1000ft",
-        "0.5\u00b0C per 1000ft"
+        "3.0°C per 1000ft",
+        "1.5°C per 1000ft",
+        "1.98°C per 1000ft",
+        "0.5°C per 1000ft"
       ],
       "correctAnswer": 0,
       "question": "In the troposphere, what is the standard value of the Dry Adiabatic Lapse Rate (DALR)?",
@@ -10391,14 +10391,14 @@
     },
     {
       "correctAnswer": 1,
-      "explanation": "The ISA standard lapse rate is 2\u00b0C per 1,000 ft (or 0.65\u00b0C per 100m) throughout the troposphere up to 36,090 ft",
+      "explanation": "The ISA standard lapse rate is 2°C per 1,000 ft (or 0.65°C per 100m) throughout the troposphere up to 36,090 ft",
       "type": "multiple_choice",
       "question": "What is the standard International Standard Atmosphere (ISA) temperature lapse rate in the troposphere?",
       "options": [
-        "1.5\u00b0C per 1,000 ft",
-        "2.0\u00b0C per 1,000 ft",
-        "3.0\u00b0C per 1,000 ft",
-        "0.5\u00b0C per 1,000 ft"
+        "1.5°C per 1,000 ft",
+        "2.0°C per 1,000 ft",
+        "3.0°C per 1,000 ft",
+        "0.5°C per 1,000 ft"
       ],
       "id": "pm-mc-0233-dup232"
     },
@@ -10587,7 +10587,7 @@
     {
       "explanation": "Hoar frost forms through sublimation, where water vapour turns directly into ice crystals on a surface below freezing",
       "options": [
-        "Direct sublimation of water vapour onto a surface below 0\u00b0C",
+        "Direct sublimation of water vapour onto a surface below 0°C",
         "Supercooled water droplets freezing on impact",
         "Rain falling through a warm layer and freezing",
         "Rapid cooling of the air by a passing cold front"
@@ -10706,7 +10706,7 @@
       "options": [
         "Anabatic wind",
         "Katabatic wind",
-        "F\u00f6hn wind",
+        "Föhn wind",
         "Sea breeze"
       ],
       "correctAnswer": 1,
@@ -10718,7 +10718,7 @@
       "explanation": "Relative humidity is the ratio of water vapour present to the maximum amount the air could hold at that temperature, expressed as a percentage",
       "correctAnswer": 2,
       "options": [
-        "The actual amount of water vapour in the air in g/m\u00b3",
+        "The actual amount of water vapour in the air in g/m³",
         "The temperature at which condensation begins",
         "The amount of water vapour in the air compared to the maximum it could hold at that temperature",
         "The pressure exerted by water vapour in the atmosphere"
@@ -10788,8 +10788,8 @@
         "The leeward side is colder and more prone to heavy snow"
       ],
       "type": "multiple_choice",
-      "question": "In a 'F\u00f6hn Wind' situation, what are the typical weather conditions on the windward and leeward sides of a mountain range?",
-      "explanation": "The F\u00f6hn effect occurs when moist air rises and cools on the windward side, then descends and warms dry-adiabatically on the leeward side",
+      "question": "In a 'Föhn Wind' situation, what are the typical weather conditions on the windward and leeward sides of a mountain range?",
+      "explanation": "The Föhn effect occurs when moist air rises and cools on the windward side, then descends and warms dry-adiabatically on the leeward side",
       "id": "pm-mc-0263-dup262"
     },
     {
@@ -10832,15 +10832,15 @@
       "id": "pm-mc-0266-dup265"
     },
     {
-      "explanation": "In the ISA, temperature decreases at a rate of 1.98\u00b0C (commonly rounded to 2\u00b0C) per 1000ft up to the tropopause",
+      "explanation": "In the ISA, temperature decreases at a rate of 1.98°C (commonly rounded to 2°C) per 1000ft up to the tropopause",
       "type": "multiple_choice",
       "correctAnswer": 3,
       "question": "What is the standard temperature lapse rate in the International Standard Atmosphere (ISA) within the troposphere?",
       "options": [
-        "-1\u00b0C per 1,000 feet",
-        "-3\u00b0C per 1,000 feet",
-        "-5\u00b0C per 1,000 feet",
-        "-2\u00b0C per 1,000 feet"
+        "-1°C per 1,000 feet",
+        "-3°C per 1,000 feet",
+        "-5°C per 1,000 feet",
+        "-2°C per 1,000 feet"
       ],
       "id": "pm-mc-0267-dup266"
     },
@@ -11003,7 +11003,7 @@
     {
       "options": [
         "Cloudy skies and calm air",
-        "Clear skies and light winds (2\u20138 knots)",
+        "Clear skies and light winds (2–8 knots)",
         "Strong winds and high humidity",
         "Overcast skies and moderate winds (15+ knots)"
       ],
@@ -11224,13 +11224,13 @@
     {
       "question": "What is the standard International Standard Atmosphere (ISA) environmental lapse rate?",
       "correctAnswer": 1,
-      "explanation": "The ISA lapse rate is a decrease of 1.98\u00b0C (commonly rounded to 2\u00b0C) per 1000 feet of altitude",
+      "explanation": "The ISA lapse rate is a decrease of 1.98°C (commonly rounded to 2°C) per 1000 feet of altitude",
       "type": "multiple_choice",
       "options": [
-        "1\u00b0C per 1,000ft",
-        "2\u00b0C per 1,000ft",
-        "3\u00b0C per 1,000ft",
-        "0.5\u00b0C per 1,000ft"
+        "1°C per 1,000ft",
+        "2°C per 1,000ft",
+        "3°C per 1,000ft",
+        "0.5°C per 1,000ft"
       ],
       "id": "pm-mc-0297-dup296"
     },
@@ -11561,7 +11561,7 @@
     },
     {
       "question": "What does a small 'spread' between the ambient temperature and the dew point temperature indicate?",
-      "explanation": "A small temperature/dew point spread (e.g., 2\u00b0C or less) indicates high relative humidity and a high risk of fog or low cloud formation",
+      "explanation": "A small temperature/dew point spread (e.g., 2°C or less) indicates high relative humidity and a high risk of fog or low cloud formation",
       "correctAnswer": 1,
       "type": "multiple_choice",
       "options": [
@@ -11586,14 +11586,14 @@
       "id": "pm-mc-0324-dup323"
     },
     {
-      "explanation": "The ISA lapse rate is a constant decrease of 1.98\u00b0C (commonly rounded to 2\u00b0C) for every 1,000 feet of altitude increase in the troposphere",
+      "explanation": "The ISA lapse rate is a constant decrease of 1.98°C (commonly rounded to 2°C) for every 1,000 feet of altitude increase in the troposphere",
       "question": "What is the standard International Standard Atmosphere (ISA) temperature lapse rate in the troposphere?",
       "type": "multiple_choice",
       "options": [
-        "+2\u00b0C per 1,000ft increase",
-        "-2\u00b0C per 1,000ft increase",
-        "-1\u00b0C per 1,000ft increase",
-        "-3\u00b0C per 1,000ft increase"
+        "+2°C per 1,000ft increase",
+        "-2°C per 1,000ft increase",
+        "-1°C per 1,000ft increase",
+        "-3°C per 1,000ft increase"
       ],
       "correctAnswer": 1,
       "id": "pm-mc-0325-dup324"
@@ -11783,7 +11783,7 @@
     {
       "options": [
         "Supercooled water droplets freezing on impact with the airframe",
-        "Water vapour turning directly into ice crystals on a surface below 0\u00b0C",
+        "Water vapour turning directly into ice crystals on a surface below 0°C",
         "Rain falling through a surface inversion and freezing",
         "A thick layer of ice building up due to flying through Cumulonimbus clouds"
       ],
@@ -11940,13 +11940,13 @@
       "correctAnswer": 3,
       "type": "multiple_choice",
       "options": [
-        "1013.25 hPa and 0\u00b0C",
-        "1000.00 hPa and +15\u00b0C",
-        "1023.25 hPa and +15\u00b0C",
-        "1013.25 hPa and +15\u00b0C"
+        "1013.25 hPa and 0°C",
+        "1000.00 hPa and +15°C",
+        "1023.25 hPa and +15°C",
+        "1013.25 hPa and +15°C"
       ],
       "question": "What are the Standard Sea Level pressure and temperature values as defined by the International Standard Atmosphere (ISA)?",
-      "explanation": "ISA conditions at Sea Level are 1013.25 hPa and +15\u00b0C, with a standard lapse rate of 1.98\u00b0C (approx 2\u00b0C) per 1000ft",
+      "explanation": "ISA conditions at Sea Level are 1013.25 hPa and +15°C, with a standard lapse rate of 1.98°C (approx 2°C) per 1000ft",
       "id": "pm-mc-0352-dup351"
     },
     {
@@ -12152,8 +12152,8 @@
       "id": "pm-tf-0027"
     },
     {
-      "explanation": "In the ISA, temperature is assumed to decrease at a rate of 1.98\u00b0C (approximately 2\u00b0C) per 1000ft up to the tropopause",
-      "question": "The standard environmental lapse rate in the International Standard Atmosphere (ISA) is 3\u00b0C per 1,000 feet",
+      "explanation": "In the ISA, temperature is assumed to decrease at a rate of 1.98°C (approximately 2°C) per 1000ft up to the tropopause",
+      "question": "The standard environmental lapse rate in the International Standard Atmosphere (ISA) is 3°C per 1,000 feet",
       "type": "true_false",
       "correctAnswer": false,
       "id": "pm-tf-0028"
@@ -12253,7 +12253,7 @@
       "type": "true_false",
       "correctAnswer": false,
       "explanation": "A 'VEER' is a clockwise change in direction (e.g., West to North). A counter-clockwise change (e.g., North to West) is called a 'BACK'",
-      "question": "If the wind direction changes from 270\u00b0 to 310\u00b0, the wind is said to have backed",
+      "question": "If the wind direction changes from 270° to 310°, the wind is said to have backed",
       "id": "pm-tf-0042"
     },
     {
@@ -12307,16 +12307,16 @@
     },
     {
       "correctAnswer": false,
-      "explanation": "A 'veering' wind is a change in direction in a clockwise sense (e.g., from 200\u00b0 to 240\u00b0). A change from 090\u00b0 to 045\u00b0 is 'backing'",
-      "question": "If the wind direction changes from 090\u00b0 to 045\u00b0, the wind is said to have veered",
+      "explanation": "A 'veering' wind is a change in direction in a clockwise sense (e.g., from 200° to 240°). A change from 090° to 045° is 'backing'",
+      "question": "If the wind direction changes from 090° to 045°, the wind is said to have veered",
       "type": "true_false",
       "id": "pm-tf-0050"
     },
     {
       "correctAnswer": true,
-      "explanation": "In the troposphere, the ISA lapse rate is 1.98\u00b0C (commonly rounded to 2\u00b0C) per 1,000 feet",
+      "explanation": "In the troposphere, the ISA lapse rate is 1.98°C (commonly rounded to 2°C) per 1,000 feet",
       "type": "true_false",
-      "question": "In the International Standard Atmosphere (ISA), the temperature lapse rate is assumed to be 2\u00b0C per 1,000ft up to the tropopause",
+      "question": "In the International Standard Atmosphere (ISA), the temperature lapse rate is assumed to be 2°C per 1,000ft up to the tropopause",
       "id": "pm-tf-0051"
     },
     {
@@ -12328,7 +12328,7 @@
     },
     {
       "type": "true_false",
-      "question": "If the air temperature is 15\u00b0C and the dew point is 10\u00b0C, the relative humidity is 100%",
+      "question": "If the air temperature is 15°C and the dew point is 10°C, the relative humidity is 100%",
       "explanation": "Dew point is the temperature to which air must be cooled to become saturated. If the air temperature is higher than the dew point, the air is not saturated",
       "correctAnswer": false,
       "id": "pm-tf-0053"
@@ -12342,7 +12342,7 @@
     },
     {
       "correctAnswer": false,
-      "explanation": "Surface friction slows the wind and causes it to cross the isobars at an angle (roughly 10\u00b0-20\u00b0 over sea and 30\u00b0 over land) towards the low pressure",
+      "explanation": "Surface friction slows the wind and causes it to cross the isobars at an angle (roughly 10°-20° over sea and 30° over land) towards the low pressure",
       "type": "true_false",
       "question": "The surface wind always blows parallel to the isobars regardless of the terrain",
       "id": "pm-tf-0055"
@@ -12421,7 +12421,7 @@
       "type": "true_false",
       "correctAnswer": true,
       "question": "In the International Standard Atmosphere, the temperature is assumed to remain constant above the tropopause up to 20km",
-      "explanation": "In the ISA, the temperature remains constant at -56.5\u00b0C from the tropopause (36,090ft) up to approximately 65,600ft",
+      "explanation": "In the ISA, the temperature remains constant at -56.5°C from the tropopause (36,090ft) up to approximately 65,600ft",
       "id": "pm-tf-0066"
     },
     {
@@ -12509,10 +12509,10 @@
       "id": "pm-tf-0078"
     },
     {
-      "explanation": "The ISA lapse rate is 1.98\u00b0C (universally treated as 2\u00b0C) per 1,000 feet up to the tropopause",
+      "explanation": "The ISA lapse rate is 1.98°C (universally treated as 2°C) per 1,000 feet up to the tropopause",
       "correctAnswer": false,
       "type": "true_false",
-      "question": "In the ISA, the temperature is assumed to decrease at a rate of 4.5\u00b0C per 1,000 feet",
+      "question": "In the ISA, the temperature is assumed to decrease at a rate of 4.5°C per 1,000 feet",
       "id": "pm-tf-0079"
     },
     {
@@ -12644,616 +12644,616 @@
     {
       "id": "pm-mc-0192-tf0",
       "type": "true_false",
-      "question": "Statement: What is the standard environmental lapse rate in the International Standard Atmosphere (ISA) up to 36,000 feet \u2014 2\u00b0C per 1,000 feet.",
+      "question": "Statement: What is the standard environmental lapse rate in the International Standard Atmosphere (ISA) up to 36,000 feet — 2°C per 1,000 feet.",
       "correctAnswer": true,
-      "explanation": "The standard lapse rate in the ISA troposphere is a decrease of 1.98\u00b0C (approx 2\u00b0C) per 1,000 feet"
+      "explanation": "The standard lapse rate in the ISA troposphere is a decrease of 1.98°C (approx 2°C) per 1,000 feet"
     },
     {
       "id": "pm-mc-0335-tff1",
       "type": "true_false",
-      "question": "Statement: What change in temperature and wind direction is usually observed after the passage of a 'Warm Front' \u2014 Temperature falls and wind backs.",
+      "question": "Statement: What change in temperature and wind direction is usually observed after the passage of a 'Warm Front' — Temperature falls and wind backs.",
       "correctAnswer": false,
       "explanation": "The correct answer is: Temperature rises and wind veers. The passage of a warm front is typically marked by a rise in temperature and a veering wind (turning clockwise)"
     },
     {
       "id": "pm-mc-0303-tf2",
       "type": "true_false",
-      "question": "Statement: If the Environmental Lapse Rate (ELR) is less than the Saturated Adiabatic Lapse Rate (SALR), the atmosphere is said to be \u2014 Stable.",
+      "question": "Statement: If the Environmental Lapse Rate (ELR) is less than the Saturated Adiabatic Lapse Rate (SALR), the atmosphere is said to be — Stable.",
       "correctAnswer": true,
       "explanation": "Stability is determined by the ELR; if the ELR is less than the SALR, the air is stable and will resist vertical motion"
     },
     {
       "id": "pm-im-0140-tff3",
       "type": "true_false",
-      "question": "Statement: A standard meteorological station plot circle. The number '12' is at the 10 o'clock position and the number '8' is at the 8 o'clock position. An arrow points to the '8'. In this station plot, what value does the number indicated by the arrow represent \u2014 Air Temperature.",
+      "question": "Statement: A standard meteorological station plot circle. The number '12' is at the 10 o'clock position and the number '8' is at the 8 o'clock position. An arrow points to the '8'. In this station plot, what value does the number indicated by the arrow represent — Air Temperature.",
       "correctAnswer": false,
       "explanation": "The correct answer is: Dew Point. Dew point is plotted on the bottom left of the station circle, while temperature is on the top left"
     },
     {
       "id": "pm-mc-0259-tf4",
       "type": "true_false",
-      "question": "Statement: Which precipitation type is most likely to cause the rapid accumulation of clear ice on an aircraft \u2014 Freezing rain.",
+      "question": "Statement: Which precipitation type is most likely to cause the rapid accumulation of clear ice on an aircraft — Freezing rain.",
       "correctAnswer": true,
       "explanation": "Rain falling from warmer air aloft into a sub-zero layer near the ground becomes supercooled and freezes instantly on impact"
     },
     {
       "id": "pm-mc-0007-tff5",
       "type": "true_false",
-      "question": "Statement: What is the definition of the 'Dew Point' \u2014 The temperature at which ice begins to melt.",
+      "question": "Statement: What is the definition of the 'Dew Point' — The temperature at which ice begins to melt.",
       "correctAnswer": false,
       "explanation": "The correct answer is: The temperature to which air must be cooled to become saturated. The dew point is the temperature at which air becomes saturated; if the air temperature falls to this point, condensation occurs"
     },
     {
       "id": "pm-mc-0136-tf6",
       "type": "true_false",
-      "question": "Statement: At what altitude does the International Standard Atmosphere (ISA) Tropopause officially begin \u2014 36,090 feet.",
+      "question": "Statement: At what altitude does the International Standard Atmosphere (ISA) Tropopause officially begin — 36,090 feet.",
       "correctAnswer": true,
       "explanation": "In the ISA, the Tropopause is defined as the level where the temperature stops decreasing with height, occurring at approximately 36,090 feet"
     },
     {
       "id": "pm-im-0167-tff7",
       "type": "true_false",
-      "question": "Statement: A diagram showing a warm air mass moving from a warm land area over a cold sea surface. Clouds/fog are forming at the surface where the air meets the water. An arrow shows horizontal movement. Which type of fog formation is being illustrated \u2014 Radiation fog.",
+      "question": "Statement: A diagram showing a warm air mass moving from a warm land area over a cold sea surface. Clouds/fog are forming at the surface where the air meets the water. An arrow shows horizontal movement. Which type of fog formation is being illustrated — Radiation fog.",
       "correctAnswer": false,
       "explanation": "The correct answer is: Advection fog. Advection fog forms when warm, moist air moves horizontally over a colder surface (land or sea), cooling the air to its dew point"
     },
     {
       "id": "pm-mc-0352-tf8",
       "type": "true_false",
-      "question": "Statement: What are the Standard Sea Level pressure and temperature values as defined by the International Standard Atmosphere (ISA) \u2014 1013.25 hPa and +15\u00b0C.",
+      "question": "Statement: What are the Standard Sea Level pressure and temperature values as defined by the International Standard Atmosphere (ISA) — 1013.25 hPa and +15°C.",
       "correctAnswer": true,
-      "explanation": "ISA conditions at Sea Level are 1013.25 hPa and +15\u00b0C, with a standard lapse rate of 1.98\u00b0C (approx 2\u00b0C) per 1000ft"
+      "explanation": "ISA conditions at Sea Level are 1013.25 hPa and +15°C, with a standard lapse rate of 1.98°C (approx 2°C) per 1000ft"
     },
     {
       "id": "pm-mc-0036-tff9",
       "type": "true_false",
-      "question": "Statement: What happens to the pressure and temperature typically after the passage of a cold front \u2014 A fall in pressure and a rise in temperature.",
+      "question": "Statement: What happens to the pressure and temperature typically after the passage of a cold front — A fall in pressure and a rise in temperature.",
       "correctAnswer": false,
       "explanation": "The correct answer is: A rise in pressure and a drop in temperature. A cold front's passage is typically marked by a sudden drop in temperature, a rise in pressure, and a shift (veering) in wind direction"
     },
     {
       "id": "pm-im-0129-tf10",
       "type": "true_false",
-      "question": "Statement: A symbol from a UK low-level SIGWX chart consisting of a repeated zig-zag pattern (similar to a series of peaked waves). What hazard does this symbol represent on a Significant Weather (SIGWX) chart \u2014 Mountain Waves.",
+      "question": "Statement: A symbol from a UK low-level SIGWX chart consisting of a repeated zig-zag pattern (similar to a series of peaked waves). What hazard does this symbol represent on a Significant Weather (SIGWX) chart — Mountain Waves.",
       "correctAnswer": true,
       "explanation": "A zig-zag line, often in red/brown, represents moderate or severe mountain waves on a Significant Weather Chart"
     },
     {
       "id": "pm-mc-0137-tff11",
       "type": "true_false",
-      "question": "Statement: What is the visibility range for the weather phenomenon 'Mist' (BR) to be reported in a METAR \u2014 Less than 1,000 metres.",
+      "question": "Statement: What is the visibility range for the weather phenomenon 'Mist' (BR) to be reported in a METAR — Less than 1,000 metres.",
       "correctAnswer": false,
       "explanation": "The correct answer is: 1,000 metres to 5,000 metres. Mist (BR) is reported when visibility is between 1,000 metres and 5,000 metres; Fog (FG) is used when visibility is less than 1,000 metres"
     },
     {
       "id": "pm-mc-0272-tf12",
       "type": "true_false",
-      "question": "Statement: What is the definition of an 'Air Mass' \u2014 A large body of air with uniform temperature and humidity.",
+      "question": "Statement: What is the definition of an 'Air Mass' — A large body of air with uniform temperature and humidity.",
       "correctAnswer": true,
       "explanation": "Air masses are large bodies of air with relatively uniform temperature and humidity, classified by their source region (e.g., Polar, Tropical) and surface type (Maritime, Continental)"
     },
     {
       "id": "pm-mc-0122-tff13",
       "type": "true_false",
-      "question": "Statement: What is the purpose of a 'VOLMET' broadcast \u2014 A pilot report of localized weather conditions.",
+      "question": "Statement: What is the purpose of a 'VOLMET' broadcast — A pilot report of localized weather conditions.",
       "correctAnswer": false,
       "explanation": "The correct answer is: An emergency advisory regarding volcanic ash. A VOLMET is a continuous VHF radio broadcast providing current METARs and occasional TAFs for major aerodromes to aircraft in flight"
     },
     {
       "id": "pm-mc-0199-tf14",
       "type": "true_false",
-      "question": "Statement: What is the 'Environmental Lapse Rate' (ELR) \u2014 The rate at which the air temperature decreases with height.",
+      "question": "Statement: What is the 'Environmental Lapse Rate' (ELR) — The rate at which the air temperature decreases with height.",
       "correctAnswer": true,
       "explanation": "Lapse rate is the rate at which air temperature decreases with an increase in altitude. If it increases, it is called an inversion"
     },
     {
       "id": "pm-mc-0321-tff15",
       "type": "true_false",
-      "question": "Statement: On a UK Low-Level Significant Weather Chart, what does the symbol 'XXX' indicate regarding cloud height \u2014 The base of the cloud is at sea level.",
+      "question": "Statement: On a UK Low-Level Significant Weather Chart, what does the symbol 'XXX' indicate regarding cloud height — The base of the cloud is at sea level.",
       "correctAnswer": false,
       "explanation": "The correct answer is: The top of the cloud is above the upper limit of the chart. On a Significant Weather Chart (SWC), 'XXX' is used to denote that the top of a cloud layer or a weather phenomenon extends above the upper limit of the chart"
     },
     {
       "id": "pm-im-0069-tf16",
       "type": "true_false",
-      "question": "Statement: A diagram of a coastline during the day. Arrows show air rising over the sun-warmed land and a surface wind blowing from the water towards the shore. Which local wind effect is depicted in this daytime diagram \u2014 A sea breeze.",
+      "question": "Statement: A diagram of a coastline during the day. Arrows show air rising over the sun-warmed land and a surface wind blowing from the water towards the shore. Which local wind effect is depicted in this daytime diagram — A sea breeze.",
       "correctAnswer": true,
       "explanation": "A sea breeze occurs during the day when the land heats up faster than the sea, causing air to rise over land and cool air to move in from the sea"
     },
     {
       "id": "pm-mc-0101-tff17",
       "type": "true_false",
-      "question": "Statement: Which of the following describes an 'Anabatic' wind \u2014 A wind blowing down a valley at night.",
+      "question": "Statement: Which of the following describes an 'Anabatic' wind — A wind blowing down a valley at night.",
       "correctAnswer": false,
       "explanation": "The correct answer is: An upslope wind caused by solar heating of the ground. An Anabatic wind is a localized wind that blows up a slope as the hillside is heated by the sun"
     },
     {
       "id": "pm-im-0027-tf18",
       "type": "true_false",
-      "question": "Statement: A line used on a Significant Weather Chart (SIGWX) consisting of a dash followed by two dots, colored purple. What does this symbol represent on a Significant Weather (SIGWX) chart \u2014 A squall line.",
+      "question": "Statement: A line used on a Significant Weather Chart (SIGWX) consisting of a dash followed by two dots, colored purple. What does this symbol represent on a Significant Weather (SIGWX) chart — A squall line.",
       "correctAnswer": true,
       "explanation": "The symbol for a squall line is a dashed double-dotted purple line, indicating a line of active thunderstorms"
     },
     {
       "id": "pm-mc-0195-tff19",
       "type": "true_false",
-      "question": "Statement: In a METAR or TAF, what cloud cover amount does the abbreviation 'BKN' represent \u2014 3 to 4 oktas.",
+      "question": "Statement: In a METAR or TAF, what cloud cover amount does the abbreviation 'BKN' represent — 3 to 4 oktas.",
       "correctAnswer": false,
       "explanation": "The correct answer is: 5 to 7 oktas. Isolated, scattered, and broken indicate 1-2, 3-4, and 5-7 oktas respectively; 'Overcast' is 8 oktas"
     },
     {
       "id": "pm-mc-0010-tf20",
       "type": "true_false",
-      "question": "Statement: What are the standard sea-level pressure and temperature values used in the ICAO Standard Atmosphere (ISA) \u2014 1013.25 hPa and +15\u00b0C.",
+      "question": "Statement: What are the standard sea-level pressure and temperature values used in the ICAO Standard Atmosphere (ISA) — 1013.25 hPa and +15°C.",
       "correctAnswer": true,
-      "explanation": "The ICAO Standard Atmosphere (ISA) assumes a sea-level pressure of 1013.25 hPa and a temperature of +15\u00b0C"
+      "explanation": "The ICAO Standard Atmosphere (ISA) assumes a sea-level pressure of 1013.25 hPa and a temperature of +15°C"
     },
     {
       "id": "pm-im-0150-tff21",
       "type": "true_false",
-      "question": "Statement: The standard SIGWX symbol for moderate turbulence (a 'broken' caret shape). What hazard to flight is indicated by this symbol on a UK SIGWX chart \u2014 Clear Air Turbulence only.",
+      "question": "Statement: The standard SIGWX symbol for moderate turbulence (a 'broken' caret shape). What hazard to flight is indicated by this symbol on a UK SIGWX chart — Clear Air Turbulence only.",
       "correctAnswer": false,
       "explanation": "The correct answer is: Moderate turbulence. This specific 'zig-zag' arrow symbol is used on Significant Weather charts to denote the presence of moderate or severe turbulence"
     },
     {
       "id": "pm-im-0051-tf22",
       "type": "true_false",
-      "question": "Statement: The international meteorological symbol consisting of two horizontal parallel lines. What weather phenomenon does this meteorological symbol represent \u2014 Mist.",
+      "question": "Statement: The international meteorological symbol consisting of two horizontal parallel lines. What weather phenomenon does this meteorological symbol represent — Mist.",
       "correctAnswer": true,
       "explanation": "The symbol showing two horizontal green lines (or black in B&W) represents mist. Three lines would represent fog"
     },
     {
       "id": "pm-im-0148-tff23",
       "type": "true_false",
-      "question": "Statement: A dedicated symbol for a squall line represented by a line with double-dot patterns or a specific SIGWX line indicating a line of thunderstorms. What significant weather feature is identified by this symbol on a SIGWX chart \u2014 A cold front.",
+      "question": "Statement: A dedicated symbol for a squall line represented by a line with double-dot patterns or a specific SIGWX line indicating a line of thunderstorms. What significant weather feature is identified by this symbol on a SIGWX chart — A cold front.",
       "correctAnswer": false,
       "explanation": "The correct answer is: A squall line. The symbol for a squall line on a weather chart consists of a line with two dots and a dash repeatedly, or sometimes a solid line with double 'pips'"
     },
     {
       "id": "pm-mc-0019-tf24",
       "type": "true_false",
-      "question": "Statement: What is the primary cause of 'Hoar Frost' formation on an aircraft \u2014 Melting snow re-freezing on the wings.",
+      "question": "Statement: What is the primary cause of 'Hoar Frost' formation on an aircraft — Melting snow re-freezing on the wings.",
       "correctAnswer": true,
       "explanation": "Hoar frost forms when water vapour turns directly into ice crystals on a surface that is below freezing"
     },
     {
       "id": "pm-mc-0201-tff25",
       "type": "true_false",
-      "question": "Statement: Which of the following describes the appearance and nature of 'Rime Ice' \u2014 Clear and transparent.",
+      "question": "Statement: Which of the following describes the appearance and nature of 'Rime Ice' — Clear and transparent.",
       "correctAnswer": false,
       "explanation": "The correct answer is: Found only in tropical regions. Rime ice is white, opaque, and brittle, formed by the instantaneous freezing of small, supercooled water droplets"
     },
     {
       "id": "pm-mc-0315-tf26",
       "type": "true_false",
-      "question": "Statement: In the Northern Hemisphere, how does the surface wind usually differ from the wind at 2,000ft AGL due to surface friction \u2014 The surface wind is usually lighter and more backed than the wind at 2,000ft.",
+      "question": "Statement: In the Northern Hemisphere, how does the surface wind usually differ from the wind at 2,000ft AGL due to surface friction — The surface wind is usually lighter and more backed than the wind at 2,000ft.",
       "correctAnswer": true,
       "explanation": "Surface air is slowed by friction, causing it to cross isobars toward lower pressure, while upper winds follow the isobars more closely"
     },
     {
       "id": "pm-mc-0283-tff27",
       "type": "true_false",
-      "question": "Statement: If an airfield has a QNH of 994 hPa, how does this compare to the International Standard Atmosphere (ISA) sea level pressure \u2014 1024 hPa.",
+      "question": "Statement: If an airfield has a QNH of 994 hPa, how does this compare to the International Standard Atmosphere (ISA) sea level pressure — 1024 hPa.",
       "correctAnswer": false,
       "explanation": "The correct answer is: 994 hPa. The ISA pressure at sea level is 1013.25 hPa; a current QNH of 994 hPa is 19 hPa lower than the standard pressure"
     },
     {
       "id": "pm-im-0093-tf28",
       "type": "true_false",
-      "question": "Statement: A diagram showing a body of water and land. An arrow labeled 'Warm Moist Air' moves from the water surface onto a land surface labeled 'Cold Ground', with fog appearing at the junction. Which type of fog formation is depicted in this coastal scenario \u2014 Advection Fog.",
+      "question": "Statement: A diagram showing a body of water and land. An arrow labeled 'Warm Moist Air' moves from the water surface onto a land surface labeled 'Cold Ground', with fog appearing at the junction. Which type of fog formation is depicted in this coastal scenario — Advection Fog.",
       "correctAnswer": true,
       "explanation": "Advection fog forms when warm, moist air moves over a relatively cold surface, common in coastal areas"
     },
     {
       "id": "pm-mc-0213-tff29",
       "type": "true_false",
-      "question": "Statement: In a METAR, the visibility is reported as '1400'. What does this value represent \u2014 14,000 feet.",
+      "question": "Statement: In a METAR, the visibility is reported as '1400'. What does this value represent — 14,000 feet.",
       "correctAnswer": false,
       "explanation": "The correct answer is: 1,400 metres. The visibility in a METAR is reported in metres. 1400 denotes 1.4 kilometres"
     },
     {
       "id": "pm-mc-0317-tf30",
       "type": "true_false",
-      "question": "Statement: What is the primary purpose of a TAF (Terminal Aerodrome Forecast) \u2014 It is a forecast for a specific aerodrome for a specified period of time.",
+      "question": "Statement: What is the primary purpose of a TAF (Terminal Aerodrome Forecast) — It is a forecast for a specific aerodrome for a specified period of time.",
       "correctAnswer": true,
       "explanation": "A TAF provides a forecast for a specific aerodrome, whereas a GAFOR or Significant Weather Chart provides information for a wider area or region"
     },
     {
       "id": "pm-mc-0004-tff31",
       "type": "true_false",
-      "question": "Statement: How does the surface wind usually differ from the wind at 2,000ft altitude in the Northern Hemisphere due to surface friction \u2014 Veer and increase in speed.",
+      "question": "Statement: How does the surface wind usually differ from the wind at 2,000ft altitude in the Northern Hemisphere due to surface friction — Veer and increase in speed.",
       "correctAnswer": false,
       "explanation": "The correct answer is: Back and decrease in speed. Surface friction slows the wind and causes it to back (turn anti-clockwise) in the Northern Hemisphere compared to the wind at 2,000ft"
     },
     {
       "id": "pm-mc-0299-tf32",
       "type": "true_false",
-      "question": "Statement: At what point does an 'Occluded Front' form \u2014 A cold front overtakes a warm front.",
+      "question": "Statement: At what point does an 'Occluded Front' form — A cold front overtakes a warm front.",
       "correctAnswer": true,
       "explanation": "An occlusion occurs when a cold front catches up to a warm front, lifting the warm air entirely off the ground"
     },
     {
       "id": "pm-mc-0031-tff33",
       "type": "true_false",
-      "question": "Statement: In which layer of the atmosphere does the vast majority of weather occur \u2014 Stratosphere.",
+      "question": "Statement: In which layer of the atmosphere does the vast majority of weather occur — Stratosphere.",
       "correctAnswer": false,
       "explanation": "The correct answer is: Troposphere. The troposphere contains roughly 75% of the atmosphere's mass and almost all of its water vapour and dust"
     },
     {
       "id": "pm-im-0084-tf34",
       "type": "true_false",
-      "question": "Statement: The international meteorology symbol for moderate icing, shaped like a curve (open at the top) with a single horizontal line crossing it. What specific weather hazard is represented by this symbol on a significant weather chart \u2014 Moderate icing.",
+      "question": "Statement: The international meteorology symbol for moderate icing, shaped like a curve (open at the top) with a single horizontal line crossing it. What specific weather hazard is represented by this symbol on a significant weather chart — Moderate icing.",
       "correctAnswer": true,
       "explanation": "The symbol for moderate icing looks like a pair of 'brackets' or a symbol similar to a capital 'U' with a horizontal line through the middle"
     },
     {
       "id": "pm-mc-0288-tff35",
       "type": "true_false",
-      "question": "Statement: When does a thunderstorm enter the 'Mature' stage \u2014 When the cloud reaches the 'Anvil' stage.",
+      "question": "Statement: When does a thunderstorm enter the 'Mature' stage — When the cloud reaches the 'Anvil' stage.",
       "correctAnswer": false,
       "explanation": "The correct answer is: When precipitation starts and a downdraft develops. The mature stage is reached when precipitation begins to fall, which initiates a downdraft alongside the existing updraft"
     },
     {
       "id": "pm-mc-0318-tf36",
       "type": "true_false",
-      "question": "Statement: What significant hazard is often associated with the presence of Altocumulus Lenticularis clouds \u2014 Mountain waves and the potential for severe turbulence.",
+      "question": "Statement: What significant hazard is often associated with the presence of Altocumulus Lenticularis clouds — Mountain waves and the potential for severe turbulence.",
       "correctAnswer": true,
       "explanation": "Lenticular clouds indicate that a mountain wave (standing wave) has formed, which is associated with severe turbulence and strong vertical currents"
     },
     {
       "id": "pm-mc-0033-tff37",
       "type": "true_false",
-      "question": "Statement: What is the standard environmental lapse rate (ELR) in the troposphere according to ISA \u2014 An increase of 2\u00b0C per 1,000ft.",
+      "question": "Statement: What is the standard environmental lapse rate (ELR) in the troposphere according to ISA — An increase of 2°C per 1,000ft.",
       "correctAnswer": false,
-      "explanation": "The correct answer is: A decrease of 1.98\u00b0C per 1,000ft. The standard lapse rate in the ICAO Standard Atmosphere is a decrease of 1.98\u00b0C (often rounded to 2\u00b0C) per 1,000ft increase in altitude"
+      "explanation": "The correct answer is: A decrease of 1.98°C per 1,000ft. The standard lapse rate in the ICAO Standard Atmosphere is a decrease of 1.98°C (often rounded to 2°C) per 1,000ft increase in altitude"
     },
     {
       "id": "pm-im-0164-tf38",
       "type": "true_false",
-      "question": "Statement: A vertical cross-section diagram of a weather system. A wedge of cold air is moving under cool air, pushing a wedge of warm air upwards so it no longer touches the surface. Which type of front is illustrated in this vertical cross-section diagram \u2014 Occluded Front.",
+      "question": "Statement: A vertical cross-section diagram of a weather system. A wedge of cold air is moving under cool air, pushing a wedge of warm air upwards so it no longer touches the surface. Which type of front is illustrated in this vertical cross-section diagram — Occluded Front.",
       "correctAnswer": true,
       "explanation": "An occlusion occurs when a cold front catches up with a warm front, lifting the warm air mass entirely off the ground"
     },
     {
       "id": "pm-mc-0074-tff39",
       "type": "true_false",
-      "question": "Statement: What is the term for the process where water vapour turns directly into ice without passing through the liquid stage \u2014 Condensation.",
+      "question": "Statement: What is the term for the process where water vapour turns directly into ice without passing through the liquid stage — Condensation.",
       "correctAnswer": false,
       "explanation": "The correct answer is: Sublimation (or Deposition). The transition from water vapour directly to ice crystals on a cold surface is known as sublimation or deposition"
     },
     {
       "id": "pm-mc-0078-tf40",
       "type": "true_false",
-      "question": "Statement: In a METAR, what visibility range is denoted by the term 'BR' (Mist) \u2014 Between 1,000 metres and 5,000 metres.",
+      "question": "Statement: In a METAR, what visibility range is denoted by the term 'BR' (Mist) — Between 1,000 metres and 5,000 metres.",
       "correctAnswer": true,
       "explanation": "Mist is reported when the visibility is at least 1,000 metres but no more than 5,000 metres"
     },
     {
       "id": "pm-mc-0173-tff41",
       "type": "true_false",
-      "question": "Statement: What is the approximate decrease in atmospheric pressure for a vertical climb of 1,000 feet near sea level \u2014 10 hPa.",
+      "question": "Statement: What is the approximate decrease in atmospheric pressure for a vertical climb of 1,000 feet near sea level — 10 hPa.",
       "correctAnswer": false,
-      "explanation": "The correct answer is: 33 hPa. The standard pressure lapse rate is approximately 1 hPa per 30 feet in the lower atmosphere. (1000ft / 30ft \u2248 33 hPa)"
+      "explanation": "The correct answer is: 33 hPa. The standard pressure lapse rate is approximately 1 hPa per 30 feet in the lower atmosphere. (1000ft / 30ft ≈ 33 hPa)"
     },
     {
       "id": "pm-mc-0066-tf42",
       "type": "true_false",
-      "question": "Statement: Which combination of conditions is most conducive to the formation of radiation fog \u2014 High pressure, clear skies, and light winds.",
+      "question": "Statement: Which combination of conditions is most conducive to the formation of radiation fog — High pressure, clear skies, and light winds.",
       "correctAnswer": true,
       "explanation": "Radiation fog is most likely to form in high-pressure systems where skies are clear and winds are light (approx 2-8 knots)"
     },
     {
       "id": "pm-mc-0155-tff43",
       "type": "true_false",
-      "question": "Statement: What do 'Isobars' represent on a surface pressure chart \u2014 Points of equal temperature.",
+      "question": "Statement: What do 'Isobars' represent on a surface pressure chart — Points of equal temperature.",
       "correctAnswer": false,
       "explanation": "The correct answer is: Points of equal atmospheric pressure. Isobars are lines on a weather map that connect points of equal atmospheric pressure, adjusted to sea level"
     },
     {
       "id": "pm-mc-0202-tf44",
       "type": "true_false",
-      "question": "Statement: What does the term 'PROB30' indicate in a Terminal Aerodrome Forecast \u2014 30% probability.",
+      "question": "Statement: What does the term 'PROB30' indicate in a Terminal Aerodrome Forecast — 30% probability.",
       "correctAnswer": true,
       "explanation": "In a TAF, a 'PROB30' indicates a 30% probability of the described weather phenomena occurring during the specified time period"
     },
     {
       "id": "pm-mc-0172-tff45",
       "type": "true_false",
-      "question": "Statement: Which code is used in a METAR/TAF to describe temporary fluctuations in weather lasting less than one hour \u2014 PROB40.",
+      "question": "Statement: Which code is used in a METAR/TAF to describe temporary fluctuations in weather lasting less than one hour — PROB40.",
       "correctAnswer": false,
       "explanation": "The correct answer is: TEMPO. In a METAR, 'BECMG' is used for permanent changes, whereas 'TEMPO' is used for temporary fluctuations lasting less than an hour"
     },
     {
       "id": "pm-mc-0068-tf46",
       "type": "true_false",
-      "question": "Statement: The prefix 'alto' in a cloud name (e.g., Altostratus) indicates that the cloud is \u2014 Medium level.",
+      "question": "Statement: The prefix 'alto' in a cloud name (e.g., Altostratus) indicates that the cloud is — Medium level.",
       "correctAnswer": true,
       "explanation": "The prefix 'alto' indicates medium-level clouds, typically found between 7,000ft and 23,000ft in temperate regions"
     },
     {
       "id": "pm-mc-0127-tff47",
       "type": "true_false",
-      "question": "Statement: In the lower layers of the atmosphere, what is the approximate pressure lapse rate \u2014 1 hPa per 100 feet.",
+      "question": "Statement: In the lower layers of the atmosphere, what is the approximate pressure lapse rate — 1 hPa per 100 feet.",
       "correctAnswer": false,
       "explanation": "The correct answer is: 1 hPa per 30 feet. Under ISA conditions, pressure decreases by approximately 1 millibar (hPa) for every 30 feet of ascent in the lower atmosphere"
     },
     {
       "id": "pm-im-0073-tf48",
       "type": "true_false",
-      "question": "Statement: A photograph of smooth, almond or lens-shaped clouds stacked vertically above a mountain peak, with a clear blue sky in the background. The lens-shaped clouds are often found near mountain ranges. What do they primarily indicate to a pilot \u2014 The presence of mountain waves and potential turbulence.",
+      "question": "Statement: A photograph of smooth, almond or lens-shaped clouds stacked vertically above a mountain peak, with a clear blue sky in the background. The lens-shaped clouds are often found near mountain ranges. What do they primarily indicate to a pilot — The presence of mountain waves and potential turbulence.",
       "correctAnswer": true,
       "explanation": "Lenticular clouds (Altocumulus lenticularis) form in the crests of mountain waves and indicate areas of potentially severe turbulence"
     },
     {
       "id": "pm-im-0154-tff49",
       "type": "true_false",
-      "question": "Statement: A diagram showing the sun shining on a dark field, with red arrows pointing upwards into a large, anvil-topped cloud. Which lifting mechanism is primary responsible for the cloud formation shown \u2014 Frontal lifting.",
+      "question": "Statement: A diagram showing the sun shining on a dark field, with red arrows pointing upwards into a large, anvil-topped cloud. Which lifting mechanism is primary responsible for the cloud formation shown — Frontal lifting.",
       "correctAnswer": false,
       "explanation": "The correct answer is: Surface heating (Convection). Air mass thunderstorms are caused by intense solar heating of the ground, which leads to localized convection and updrafts"
     },
     {
       "id": "pm-mc-0314-tf50",
       "type": "true_false",
-      "question": "Statement: Which of the following best describes the structure and movement of a 'Cold Front' \u2014 Cold air undercuts warm air, causing rapid rising and unstable weather.",
+      "question": "Statement: Which of the following best describes the structure and movement of a 'Cold Front' — Cold air undercuts warm air, causing rapid rising and unstable weather.",
       "correctAnswer": true,
       "explanation": "In a cold front, the dense cold air undercuts the warm air, forcing it to rise rapidly, often leading to convective cloud (Cumulonimbus) and heavy rain"
     },
     {
       "id": "pm-im-0065-tff51",
       "type": "true_false",
-      "question": "Statement: A cross-section diagram showing a moist air mass moving inland from a sea surface onto a colder land mass, with fog forming at the boundary. Which type of fog formation is illustrated \u2014 Radiation fog.",
+      "question": "Statement: A cross-section diagram showing a moist air mass moving inland from a sea surface onto a colder land mass, with fog forming at the boundary. Which type of fog formation is illustrated — Radiation fog.",
       "correctAnswer": false,
       "explanation": "The correct answer is: Advection fog. Advection fog occurs when relatively warm, moist air moves over a colder surface (land or sea) and is cooled to its dew point"
     },
     {
       "id": "pm-mc-0032-tf52",
       "type": "true_false",
-      "question": "Statement: What is the characteristic of 'stable' air \u2014 The air resists vertical displacement and returns to its original level.",
+      "question": "Statement: What is the characteristic of 'stable' air — The air resists vertical displacement and returns to its original level.",
       "correctAnswer": true,
       "explanation": "Stable air resists vertical motion; if a parcel of air is displaced upwards, it will return to its original level because it is cooler than the surrounding air"
     },
     {
       "id": "pm-mc-0222-tff53",
       "type": "true_false",
-      "question": "Statement: In a TAF, what does the code '1209/1218' represent \u2014 From 09:00 to 12:00 on the 18th day of the month.",
+      "question": "Statement: In a TAF, what does the code '1209/1218' represent — From 09:00 to 12:00 on the 18th day of the month.",
       "correctAnswer": false,
       "explanation": "The correct answer is: From 09:00 to 18:00 on the 12th day of the month. The TAF is valid from 09:00 on the 12th of the month until 18:00 on the same day"
     },
     {
       "id": "pm-mc-0305-tf54",
       "type": "true_false",
-      "question": "Statement: What is the name of the lens-shaped cloud that frequently forms over or downwind of a mountain range \u2014 Lenticular.",
+      "question": "Statement: What is the name of the lens-shaped cloud that frequently forms over or downwind of a mountain range — Lenticular.",
       "correctAnswer": true,
       "explanation": "Lenticular clouds (Altocumulus lenticularis) have a lens-like shape and indicate the presence of standing mountain waves"
     },
     {
       "id": "pm-im-0048-tff55",
       "type": "true_false",
-      "question": "Statement: A diagram showing a flat field at night with arrows pointing upwards showing heat leaving the ground. A thin layer of grey fog is forming just above the grass. Which type of fog is shown forming under clear, calm night conditions \u2014 Advection fog.",
+      "question": "Statement: A diagram showing a flat field at night with arrows pointing upwards showing heat leaving the ground. A thin layer of grey fog is forming just above the grass. Which type of fog is shown forming under clear, calm night conditions — Advection fog.",
       "correctAnswer": false,
       "explanation": "The correct answer is: Radiation fog. Radiation fog forms on clear, calm nights as the ground loses heat by radiation and cools the air above it to its dew point"
     },
     {
       "id": "pm-im-0187-tf56",
       "type": "true_false",
-      "question": "Statement: An excerpt from a SIGWX (Significant Weather) chart. A dashed line encloses an area containing a symbol that looks like a caret (^) with a horizontal bar through the peak. What aviation hazard is indicated inside the dashed area on this SIGWX chart \u2014 Severe turbulence.",
+      "question": "Statement: An excerpt from a SIGWX (Significant Weather) chart. A dashed line encloses an area containing a symbol that looks like a caret (^) with a horizontal bar through the peak. What aviation hazard is indicated inside the dashed area on this SIGWX chart — Severe turbulence.",
       "correctAnswer": true,
       "explanation": "The symbols for severe turbulence are two inverted 'V' shapes or a 'hat' symbol with a line through it. TTT indicates the area"
     },
     {
       "id": "pm-mc-0230-tff57",
       "type": "true_false",
-      "question": "Statement: What is the relationship between Relative Humidity (RH) and the Dew Point \u2014 Relative Humidity is always 50% at the dew point.",
+      "question": "Statement: What is the relationship between Relative Humidity (RH) and the Dew Point — Relative Humidity is always 50% at the dew point.",
       "correctAnswer": false,
       "explanation": "The correct answer is: Relative Humidity is 100% when the air temperature and dew point are equal. Dew point is the temperature to which air must be cooled at constant pressure to become saturated. RH is the percentage of water vapour compared to the maximum possible"
     },
     {
       "id": "pm-mc-0282-tf58",
       "type": "true_false",
-      "question": "Statement: How does 'Rime Ice' typically form on an aircraft \u2014 Water vapour freezing directly onto the airframe without a liquid phase.",
+      "question": "Statement: How does 'Rime Ice' typically form on an aircraft — Water vapour freezing directly onto the airframe without a liquid phase.",
       "correctAnswer": true,
       "explanation": "Rime ice forms when small supercooled water droplets freeze instantly on impact, trapping air and creating a white, opaque, brittle appearance"
     },
     {
       "id": "pm-mc-0249-tff59",
       "type": "true_false",
-      "question": "Statement: At an altitude of 2,000 feet AGL, in what direction does the wind generally blow in relation to the isobars \u2014 At right angles to the isobars.",
+      "question": "Statement: At an altitude of 2,000 feet AGL, in what direction does the wind generally blow in relation to the isobars — At right angles to the isobars.",
       "correctAnswer": false,
       "explanation": "The correct answer is: Parallel to the isobars. At 2,000 feet, the wind is largely unaffected by surface friction and blows parallel to the isobars"
     },
     {
       "id": "pm-mc-0356-tf60",
       "type": "true_false",
-      "question": "Statement: What is a 'Microburst' \u2014 A concentrated, intense downdraft that spreads out radially upon reaching the surface.",
+      "question": "Statement: What is a 'Microburst' — A concentrated, intense downdraft that spreads out radially upon reaching the surface.",
       "correctAnswer": true,
       "explanation": "Microbursts are intense, small-scale downdrafts that lead to dangerous low-level wind shear, often associated with convective clouds"
     },
     {
       "id": "pm-im-0092-tff61",
       "type": "true_false",
-      "question": "Statement: A chart symbol consisting of two stacked, inverted 'V' shapes or 'hat' shapes, used to denote turbulence. What does this symbol represent on a UK Significant Weather Chart \u2014 Severe turbulence.",
+      "question": "Statement: A chart symbol consisting of two stacked, inverted 'V' shapes or 'hat' shapes, used to denote turbulence. What does this symbol represent on a UK Significant Weather Chart — Severe turbulence.",
       "correctAnswer": false,
       "explanation": "The correct answer is: Moderate turbulence. The symbol of two interlocking zig-zag lines represents moderate turbulence, often found near mountains or fronts"
     },
     {
       "id": "pm-im-0137-tf62",
       "type": "true_false",
-      "question": "Statement: A vertical cross-section of a frontal system where a trailing cold air mass is wedging underneath a leading cool air mass, lifting a warm air sector in between. What specific type of occlusion is illustrated in this cross-section diagram \u2014 Cold Occlusion.",
+      "question": "Statement: A vertical cross-section of a frontal system where a trailing cold air mass is wedging underneath a leading cool air mass, lifting a warm air sector in between. What specific type of occlusion is illustrated in this cross-section diagram — Cold Occlusion.",
       "correctAnswer": true,
       "explanation": "In a cold occlusion, the air behind the cold front is colder than the air ahead of the warm front, forcing everything upwards"
     },
     {
       "id": "pm-im-0031-tff63",
       "type": "true_false",
-      "question": "Statement: A simplified cross-section diagram showing a warm air mass moving horizontally from a body of water onto a cold land surface, resulting in cloud formation at ground level. What type of fog is being formed \u2014 Radiation fog.",
+      "question": "Statement: A simplified cross-section diagram showing a warm air mass moving horizontally from a body of water onto a cold land surface, resulting in cloud formation at ground level. What type of fog is being formed — Radiation fog.",
       "correctAnswer": false,
       "explanation": "The correct answer is: Advection fog. Advection fog occurs when moist, warm air moves over a colder surface, cooling the air to its dew point"
     },
     {
       "id": "pm-mc-0119-tf64",
       "type": "true_false",
-      "question": "Statement: Why is 'Clear Ice' considered particularly hazardous to aircraft \u2014 It is transparent, heavy, and changes the aerodynamic shape of the wing.",
+      "question": "Statement: Why is 'Clear Ice' considered particularly hazardous to aircraft — It is transparent, heavy, and changes the aerodynamic shape of the wing.",
       "correctAnswer": true,
       "explanation": "Clear ice is dangerous because it is heavy, transparent, and alters the shape of the airfoil, significantly reducing lift"
     },
     {
       "id": "pm-im-0103-tff65",
       "type": "true_false",
-      "question": "Statement: A cross-section of a coastline during the day with arrows showing air rising over the land, moving out to sea at altitude, and cool air flowing from the sea to the land at the surface. Which local wind effect is being illustrated in this daytime coastal scenario \u2014 Land Breeze.",
+      "question": "Statement: A cross-section of a coastline during the day with arrows showing air rising over the land, moving out to sea at altitude, and cool air flowing from the sea to the land at the surface. Which local wind effect is being illustrated in this daytime coastal scenario — Land Breeze.",
       "correctAnswer": false,
       "explanation": "The correct answer is: Sea Breeze. A Sea Breeze occurs during the day when the land heats up faster than the sea, causing air to rise over land and cooler air to flow in from the sea"
     },
     {
       "id": "pm-mc-0060-tf66",
       "type": "true_false",
-      "question": "Statement: The Beaufort Scale is used to estimate which of the following \u2014 Wind speed.",
+      "question": "Statement: The Beaufort Scale is used to estimate which of the following — Wind speed.",
       "correctAnswer": true,
       "explanation": "The Beaufort scale is an empirical measure that relates wind speed to observed conditions at sea or on land"
     },
     {
       "id": "pm-mc-0146-tff67",
       "type": "true_false",
-      "question": "Statement: In the Northern Hemisphere, in which direction does air circulate around a Low Pressure (Depression) system \u2014 Clockwise.",
+      "question": "Statement: In the Northern Hemisphere, in which direction does air circulate around a Low Pressure (Depression) system — Clockwise.",
       "correctAnswer": false,
       "explanation": "The correct answer is: Anti-clockwise. Frontal systems associated with depressions in the Northern Hemisphere rotate in an anti-clockwise direction around the low-pressure centre"
     },
     {
       "id": "pm-mc-0344-tf68",
       "type": "true_false",
-      "question": "Statement: What is the 'Bergeron-Findeisen' process related to \u2014 The growth of ice crystals at the expense of water droplets in a cloud.",
+      "question": "Statement: What is the 'Bergeron-Findeisen' process related to — The growth of ice crystals at the expense of water droplets in a cloud.",
       "correctAnswer": true,
       "explanation": "The Bergeron-Findeisen process explains how ice crystals grow at the expense of water droplets in mixed-phase clouds, leading to precipitation"
     },
     {
       "id": "pm-im-0111-tff69",
       "type": "true_false",
-      "question": "Statement: A weather station plot. To the left of the central circle, there are three dots arranged in a small triangular pattern. Identify the present weather phenomenon indicated by the symbol to the left of the station circle \u2014 Drizzle.",
+      "question": "Statement: A weather station plot. To the left of the central circle, there are three dots arranged in a small triangular pattern. Identify the present weather phenomenon indicated by the symbol to the left of the station circle — Drizzle.",
       "correctAnswer": false,
       "explanation": "The correct answer is: Continuous moderate rain. The three dots arranged in a triangle represent moderate continuous rain in the standard international plot symbols"
     },
     {
       "id": "pm-mc-0340-tf70",
       "type": "true_false",
-      "question": "Statement: What causes the formation of 'Hoar Frost' on an aircraft \u2014 Water vapour turning directly into ice crystals on a surface below 0\u00b0C.",
+      "question": "Statement: What causes the formation of 'Hoar Frost' on an aircraft — Water vapour turning directly into ice crystals on a surface below 0°C.",
       "correctAnswer": true,
       "explanation": "Hoar frost forms when water vapour transitions directly into ice crystals (sublimation) on a surface that is below freezing"
     },
     {
       "id": "pm-im-0126-tff71",
       "type": "true_false",
-      "question": "Statement: A diagram showing an air mass moving horizontally, hitting a mountain slope, rising, and condensing into a cloud at the peak. Which process of cloud formation is illustrated \u2014 Convection.",
+      "question": "Statement: A diagram showing an air mass moving horizontally, hitting a mountain slope, rising, and condensing into a cloud at the peak. Which process of cloud formation is illustrated — Convection.",
       "correctAnswer": false,
       "explanation": "The correct answer is: Orographic lifting. When air is forced upwards by rising terrain, it undergoes adiabatic cooling, leading to cloud formation known as orographic lift"
     },
     {
       "id": "pm-im-0061-tf72",
       "type": "true_false",
-      "question": "Statement: A photograph of smooth, almond or lens-shaped clouds stacked vertically above a mountain peak against a blue sky. What does the presence of these clouds above a mountain range typically indicate to a pilot \u2014 Mountain waves and potential turbulence.",
+      "question": "Statement: A photograph of smooth, almond or lens-shaped clouds stacked vertically above a mountain peak against a blue sky. What does the presence of these clouds above a mountain range typically indicate to a pilot — Mountain waves and potential turbulence.",
       "correctAnswer": true,
       "explanation": "Lenticular clouds (Altocumulus lenticularis) are lens-shaped clouds that form in the crests of mountain waves and indicate the presence of severe turbulence"
     },
     {
       "id": "pm-im-0087-tff73",
       "type": "true_false",
-      "question": "Statement: A meteorological symbol consisting of a pair of bracketed curved lines with a vertical line in the middle, typically representing icing conditions. What specific hazard is indicated by this symbol on a Significant Weather Chart \u2014 Severe icing.",
+      "question": "Statement: A meteorological symbol consisting of a pair of bracketed curved lines with a vertical line in the middle, typically representing icing conditions. What specific hazard is indicated by this symbol on a Significant Weather Chart — Severe icing.",
       "correctAnswer": false,
       "explanation": "The correct answer is: Moderate icing. The symbol with 'mod' over 'ice' in a bracketed shape represents moderate icing, a significant hazard for aircraft without de-icing"
     },
     {
       "id": "pm-im-0155-tf74",
       "type": "true_false",
-      "question": "Statement: A synoptic chart extract showing a High pressure center (1032mb) with wind arrows illustrating the circulation around it in the Northern Hemisphere. What is the name and typical direction of the wind circulation around the pressure system \u2014 Anticyclonic and clockwise.",
+      "question": "Statement: A synoptic chart extract showing a High pressure center (1032mb) with wind arrows illustrating the circulation around it in the Northern Hemisphere. What is the name and typical direction of the wind circulation around the pressure system — Anticyclonic and clockwise.",
       "correctAnswer": true,
       "explanation": "An anticyclone (High) in the Northern Hemisphere features winds that circulate in a clockwise direction and slightly outwards at the surface"
     },
     {
       "id": "pm-mc-0262-tff75",
       "type": "true_false",
-      "question": "Statement: What is the primary cause of the 'Coriolis Force' that affects wind direction \u2014 The Earth's gravitational pull.",
+      "question": "Statement: What is the primary cause of the 'Coriolis Force' that affects wind direction — The Earth's gravitational pull.",
       "correctAnswer": false,
       "explanation": "The correct answer is: The rotation of the Earth. Coriolis force is caused by the Earth's rotation and deflects moving air to the right in the Northern Hemisphere"
     },
     {
       "id": "pm-mc-0294-tf76",
       "type": "true_false",
-      "question": "Statement: Which type of airframe icing is most dangerous due to its weight and difficulty to see \u2014 Clear Ice (Glaze).",
+      "question": "Statement: Which type of airframe icing is most dangerous due to its weight and difficulty to see — Clear Ice (Glaze).",
       "correctAnswer": true,
       "explanation": "Clear ice (or glaze ice) is heavy and transparent, forming when large supercooled droplets spread out before freezing"
     },
     {
       "id": "pm-im-0183-tff77",
       "type": "true_false",
-      "question": "Statement: A diagram of a high-pressure system (marked H) in the Northern Hemisphere. Four arrows show the direction of wind flow around and away from the center. What is the characteristic surface wind direction around the pressure system shown \u2014 Anticlockwise and slightly inwards pigeon-toed.",
+      "question": "Statement: A diagram of a high-pressure system (marked H) in the Northern Hemisphere. Four arrows show the direction of wind flow around and away from the center. What is the characteristic surface wind direction around the pressure system shown — Anticlockwise and slightly inwards pigeon-toed.",
       "correctAnswer": false,
       "explanation": "The correct answer is: Clockwise and slightly outwards. A large 'H' with arrows moving clockwise and slightly outwards represents an anticyclone in the Northern Hemisphere"
     },
     {
       "id": "pm-im-0119-tf78",
       "type": "true_false",
-      "question": "Statement: A meteorological symbol used on SIGWX charts: two sine-wave or 'S' shapes stacked vertically. What meteorological phenomenon does this symbol represent on a Significant Weather Chart \u2014 Mountain waves.",
+      "question": "Statement: A meteorological symbol used on SIGWX charts: two sine-wave or 'S' shapes stacked vertically. What meteorological phenomenon does this symbol represent on a Significant Weather Chart — Mountain waves.",
       "correctAnswer": true,
       "explanation": "Two 'S' shapes or a zigzag symbol on a SIGWX chart is used to identify areas of moderate or severe mountain waves"
     },
     {
       "id": "pm-mc-0169-tff79",
       "type": "true_false",
-      "question": "Statement: Which of the following conditions is most likely to result in stable atmospheric conditions \u2014 Warm air over a cold surface, causing convection.",
+      "question": "Statement: Which of the following conditions is most likely to result in stable atmospheric conditions — Warm air over a cold surface, causing convection.",
       "correctAnswer": false,
       "explanation": "The correct answer is: The environmental lapse rate being less than the saturated adiabatic lapse rate. Stability is determined by the environmental lapse rate compared to the dry adiabatic lapse rate. Stable air resists vertical movement"
     },
     {
       "id": "pm-mc-0328-tf80",
       "type": "true_false",
-      "question": "Statement: What are the specific requirements for the term 'CAVOK' to be used in a METAR \u2014 Visibility 10km or more, no cloud below 5,000ft (or MSA), and no significant weather.",
+      "question": "Statement: What are the specific requirements for the term 'CAVOK' to be used in a METAR — Visibility 10km or more, no cloud below 5,000ft (or MSA), and no significant weather.",
       "correctAnswer": true,
       "explanation": "In a METAR, 'CAVOK' replaces visibility, cloud, and weather strings when visibility is 10km or more, there is no cloud below 5,000ft (or MSA), and no significant weather"
     },
     {
       "id": "pm-im-0005-tff81",
       "type": "true_false",
-      "question": "Statement: A meteorological symbol showing a purple line with alternating triangles and semicircles on the same side of the line. Which type of weather front is depicted by this purple symbol \u2014 A gust front.",
+      "question": "Statement: A meteorological symbol showing a purple line with alternating triangles and semicircles on the same side of the line. Which type of weather front is depicted by this purple symbol — A gust front.",
       "correctAnswer": false,
       "explanation": "The correct answer is: An occluded front. An occlusion occurs when a cold front overtakes a warm front, represented by a purple line with alternating triangles and semicircles"
     },
     {
       "id": "pm-mc-0295-tf82",
       "type": "true_false",
-      "question": "Statement: What is the primary cause of 'Advection Fog' \u2014 Warm, moist air moving over a cold surface.",
+      "question": "Statement: What is the primary cause of 'Advection Fog' — Warm, moist air moving over a cold surface.",
       "correctAnswer": true,
       "explanation": "Advection fog forms when warm, moist air moves over a colder surface, cooling the air to its dew point"
     },
     {
       "id": "pm-mc-0211-tff83",
       "type": "true_false",
-      "question": "Statement: At what value of Relative Humidity is the air considered to be 'saturated' \u2014 50%.",
+      "question": "Statement: At what value of Relative Humidity is the air considered to be 'saturated' — 50%.",
       "correctAnswer": false,
       "explanation": "The correct answer is: 100%. Air is saturated when its Relative Humidity reaches 100%, meaning it can hold no more water vapour at its current temperature"
     },
     {
       "id": "pm-mc-0006-tf84",
       "type": "true_false",
-      "question": "Statement: How is advection fog typically formed \u2014 Warm, moist air moving over a cold surface.",
+      "question": "Statement: How is advection fog typically formed — Warm, moist air moving over a cold surface.",
       "correctAnswer": true,
       "explanation": "Advection fog forms when warm, moist air moves over a relatively cold surface, cooling the air to its dew point"
     },
     {
       "id": "pm-mc-0324-tff85",
       "type": "true_false",
-      "question": "Statement: Which weather characteristics are typically associated with a 'Tropical Maritime' air mass reaching the UK in winter \u2014 Cold, dry air bringing clear skies and frost.",
+      "question": "Statement: Which weather characteristics are typically associated with a 'Tropical Maritime' air mass reaching the UK in winter — Cold, dry air bringing clear skies and frost.",
       "correctAnswer": false,
       "explanation": "The correct answer is: Warm, moist air bringing low cloud (stratus) and drizzle. Tropical Maritime (Tm) air originates over the Atlantic near the Azores; as it moves north over cooler water, it becomes stable, often bringing stratus and drizzle"
     },
     {
       "id": "pm-mc-0061-tf86",
       "type": "true_false",
-      "question": "Statement: How is advection fog typically formed \u2014 Warm, moist air moving over a cold surface.",
+      "question": "Statement: How is advection fog typically formed — Warm, moist air moving over a cold surface.",
       "correctAnswer": true,
       "explanation": "Advection fog forms when moist, warm air moves horizontally over a colder surface, cooling the air to its dew point"
     },
     {
       "id": "pm-mc-0091-tff87",
       "type": "true_false",
-      "question": "Statement: In a TAF, what does the abbreviation 'BECMG' signify \u2014 A temporary fluctuation in weather lasting less than an hour.",
+      "question": "Statement: In a TAF, what does the abbreviation 'BECMG' signify — A temporary fluctuation in weather lasting less than an hour.",
       "correctAnswer": false,
       "explanation": "The correct answer is: A permanent change in weather conditions during the period. The term 'BECMG' (Becoming) indicates a permanent change in weather conditions expected to occur over the specified time period"
     }

@@ -323,7 +323,7 @@
         "The location of the nearest safe haven or port of refuge"
       ],
       "type": "multiple_choice",
-      "explanation": "The 'Estimated Position' (EP) is the best guess of a boat\u2019s position, calculated by applying the estimated effect of tidal stream and leeway to a Dead Reckoning (DR)",
+      "explanation": "The 'Estimated Position' (EP) is the best guess of a boat’s position, calculated by applying the estimated effect of tidal stream and leeway to a Dead Reckoning (DR)",
       "question": "In navigation, how is an 'Estimated Position' (EP) derived?",
       "id": "rds-mc-0025"
     },
@@ -1540,7 +1540,7 @@
       "correctAnswer": 2,
       "type": "multiple_choice",
       "options": [
-        "Securit\u00e9",
+        "Securité",
         "Mayday Relay",
         "Pan-Pan",
         "Mayday"
@@ -2323,7 +2323,7 @@
       "correctAnswer": 2,
       "options": [
         "Course steered and Speed Over Ground (SOG)",
-        "Ground track and Tidal Set \u26f5",
+        "Ground track and Tidal Set ⛵",
         "Course steered and distance through the water (Log)",
         "Estimated Position (EP) adjusted for Leeway"
       ],
@@ -2331,13 +2331,13 @@
     },
     {
       "type": "multiple_choice",
-      "question": "If your True course is 180\u00b0T and the Variation is 7\u00b0W, what is the Magnetic course?",
+      "question": "If your True course is 180°T and the Variation is 7°W, what is the Magnetic course?",
       "correctAnswer": 0,
       "options": [
-        "187\u00b0M",
-        "173\u00b0M",
-        "180\u00b0M",
-        "194\u00b0M"
+        "187°M",
+        "173°M",
+        "180°M",
+        "194°M"
       ],
       "explanation": "To find Magnetic from True, you ADD West Variation (Error West, Compass Best). 180 + 7 = 187",
       "id": "rds-mc-0180"
@@ -2486,13 +2486,13 @@
       "id": "rds-mc-0191"
     },
     {
-      "question": "If your Magnetic bearing to a lighthouse is 090\u00b0M and the Variation is 5\u00b0E, what is the True bearing?",
+      "question": "If your Magnetic bearing to a lighthouse is 090°M and the Variation is 5°E, what is the True bearing?",
       "type": "multiple_choice",
       "options": [
-        "095\u00b0T",
-        "085\u00b0T",
-        "090\u00b0T",
-        "100\u00b0T"
+        "095°T",
+        "085°T",
+        "090°T",
+        "100°T"
       ],
       "explanation": "Variation is East, so we subtract it from the Magnetic bearing to get the True bearing (Error East, Magnetic Least)",
       "correctAnswer": 1,
@@ -2749,12 +2749,12 @@
       "type": "multiple_choice",
       "correctAnswer": 1,
       "explanation": "Using the mnemonic 'Variation West, Magnetic Best', you add westerly variation to a True bearing to find the Magnetic bearing (045 + 7 = 052)",
-      "question": "If your True course is 045\u00b0T and the Variation is 7\u00b0W, what is your Magnetic course?",
+      "question": "If your True course is 045°T and the Variation is 7°W, what is your Magnetic course?",
       "options": [
-        "038\u00b0M",
-        "052\u00b0M",
-        "045\u00b0M",
-        "060\u00b0M"
+        "038°M",
+        "052°M",
+        "045°M",
+        "060°M"
       ],
       "id": "rds-mc-0212"
     },
@@ -5314,10 +5314,10 @@
       "options": [
         "Vessel at anchor",
         "Vessel constrained by draught",
-        "Vessel restricted in her ability to man\u0153uvre",
+        "Vessel restricted in her ability to manœuvre",
         "Vessel aground"
       ],
-      "explanation": "A black ball over a black diamond over a black ball indicates a vessel restricted in her ability to man\u0153uvre",
+      "explanation": "A black ball over a black diamond over a black ball indicates a vessel restricted in her ability to manœuvre",
       "question": "A diagram of a vessel's mast displaying three black day shapes in a vertical line: a ball at the top, a diamond in the middle, and a ball at the bottom. What is the status of a vessel displaying these three day shapes in a vertical line?",
       "correctAnswer": 2,
       "id": "rds-im-0108",
@@ -5396,7 +5396,7 @@
     {
       "question": "A night-time view showing two red all-round lights in a vertical line on a vessel's mast. No other lights are visible. What does this light configuration indicate at night?",
       "correctAnswer": 2,
-      "explanation": "Two red lights in a vertical line indicate a vessel 'Not Under Command' (NUC), unable to man\u0153uvre",
+      "explanation": "Two red lights in a vertical line indicate a vessel 'Not Under Command' (NUC), unable to manœuvre",
       "type": "multiple_choice",
       "options": [
         "Vessel at anchor",
@@ -5417,7 +5417,7 @@
       ],
       "type": "multiple_choice",
       "correctAnswer": 0,
-      "question": "A compass rose from a nautical chart showing a variation of 2\u00b0 15' W in 2015, with an annual change of 8' E. What does this information found in the centre of a chart's compass rose represent?",
+      "question": "A compass rose from a nautical chart showing a variation of 2° 15' W in 2015, with an annual change of 8' E. What does this information found in the centre of a chart's compass rose represent?",
       "id": "rds-im-0115",
       "__rewritten_from_image__": true
     },
@@ -5472,7 +5472,7 @@
         "A tow exceeding 200m in length",
         "A vessel engaged in diving operations",
         "A vessel at anchor",
-        "A vessel restricted in its ability to man\u0153uvre"
+        "A vessel restricted in its ability to manœuvre"
       ],
       "id": "rds-im-0119",
       "__rewritten_from_image__": true
@@ -6024,7 +6024,7 @@
       "__rewritten_from_image__": true
     },
     {
-      "question": "A green conical buoy in a blue sea with a small \u2018G\u2019 symbol on the side. It is daylight. Identify this buoy and the correct action when entering a harbour in the UK?",
+      "question": "A green conical buoy in a blue sea with a small ‘G’ symbol on the side. It is daylight. Identify this buoy and the correct action when entering a harbour in the UK?",
       "type": "multiple_choice",
       "options": [
         "Port hand mark - Leave to port when entering a harbour",
@@ -7297,7 +7297,7 @@
         "The location of the nearest safe haven or port of refuge"
       ],
       "type": "multiple_choice",
-      "explanation": "The 'Estimated Position' (EP) is the best guess of a boat\u2019s position, calculated by applying the estimated effect of tidal stream and leeway to a Dead Reckoning (DR)",
+      "explanation": "The 'Estimated Position' (EP) is the best guess of a boat’s position, calculated by applying the estimated effect of tidal stream and leeway to a Dead Reckoning (DR)",
       "question": "In navigation, how is an 'Estimated Position' (EP) derived?",
       "id": "rds-mc-0025-dup24"
     },
@@ -8514,7 +8514,7 @@
       "correctAnswer": 2,
       "type": "multiple_choice",
       "options": [
-        "Securit\u00e9",
+        "Securité",
         "Mayday Relay",
         "Pan-Pan",
         "Mayday"
@@ -9297,7 +9297,7 @@
       "correctAnswer": 2,
       "options": [
         "Course steered and Speed Over Ground (SOG)",
-        "Ground track and Tidal Set \u26f5",
+        "Ground track and Tidal Set ⛵",
         "Course steered and distance through the water (Log)",
         "Estimated Position (EP) adjusted for Leeway"
       ],
@@ -9305,13 +9305,13 @@
     },
     {
       "type": "multiple_choice",
-      "question": "If your True course is 180\u00b0T and the Variation is 7\u00b0W, what is the Magnetic course?",
+      "question": "If your True course is 180°T and the Variation is 7°W, what is the Magnetic course?",
       "correctAnswer": 0,
       "options": [
-        "187\u00b0M",
-        "173\u00b0M",
-        "180\u00b0M",
-        "194\u00b0M"
+        "187°M",
+        "173°M",
+        "180°M",
+        "194°M"
       ],
       "explanation": "To find Magnetic from True, you ADD West Variation (Error West, Compass Best). 180 + 7 = 187",
       "id": "rds-mc-0180-dup179"
@@ -9460,13 +9460,13 @@
       "id": "rds-mc-0191-dup190"
     },
     {
-      "question": "If your Magnetic bearing to a lighthouse is 090\u00b0M and the Variation is 5\u00b0E, what is the True bearing?",
+      "question": "If your Magnetic bearing to a lighthouse is 090°M and the Variation is 5°E, what is the True bearing?",
       "type": "multiple_choice",
       "options": [
-        "095\u00b0T",
-        "085\u00b0T",
-        "090\u00b0T",
-        "100\u00b0T"
+        "095°T",
+        "085°T",
+        "090°T",
+        "100°T"
       ],
       "explanation": "Variation is East, so we subtract it from the Magnetic bearing to get the True bearing (Error East, Magnetic Least)",
       "correctAnswer": 1,
@@ -9723,12 +9723,12 @@
       "type": "multiple_choice",
       "correctAnswer": 1,
       "explanation": "Using the mnemonic 'Variation West, Magnetic Best', you add westerly variation to a True bearing to find the Magnetic bearing (045 + 7 = 052)",
-      "question": "If your True course is 045\u00b0T and the Variation is 7\u00b0W, what is your Magnetic course?",
+      "question": "If your True course is 045°T and the Variation is 7°W, what is your Magnetic course?",
       "options": [
-        "038\u00b0M",
-        "052\u00b0M",
-        "045\u00b0M",
-        "060\u00b0M"
+        "038°M",
+        "052°M",
+        "045°M",
+        "060°M"
       ],
       "id": "rds-mc-0212-dup211"
     },
@@ -12288,10 +12288,10 @@
       "options": [
         "Vessel at anchor",
         "Vessel constrained by draught",
-        "Vessel restricted in her ability to man\u0153uvre",
+        "Vessel restricted in her ability to manœuvre",
         "Vessel aground"
       ],
-      "explanation": "A black ball over a black diamond over a black ball indicates a vessel restricted in her ability to man\u0153uvre",
+      "explanation": "A black ball over a black diamond over a black ball indicates a vessel restricted in her ability to manœuvre",
       "question": "A diagram of a vessel's mast displaying three black day shapes in a vertical line: a ball at the top, a diamond in the middle, and a ball at the bottom. What is the status of a vessel displaying these three day shapes in a vertical line?",
       "correctAnswer": 2,
       "id": "rds-im-0108-dup400",
@@ -12370,7 +12370,7 @@
     {
       "question": "A night-time view showing two red all-round lights in a vertical line on a vessel's mast. No other lights are visible. What does this light configuration indicate at night?",
       "correctAnswer": 2,
-      "explanation": "Two red lights in a vertical line indicate a vessel 'Not Under Command' (NUC), unable to man\u0153uvre",
+      "explanation": "Two red lights in a vertical line indicate a vessel 'Not Under Command' (NUC), unable to manœuvre",
       "type": "multiple_choice",
       "options": [
         "Vessel at anchor",
@@ -12391,7 +12391,7 @@
       ],
       "type": "multiple_choice",
       "correctAnswer": 0,
-      "question": "A compass rose from a nautical chart showing a variation of 2\u00b0 15' W in 2015, with an annual change of 8' E. What does this information found in the centre of a chart's compass rose represent?",
+      "question": "A compass rose from a nautical chart showing a variation of 2° 15' W in 2015, with an annual change of 8' E. What does this information found in the centre of a chart's compass rose represent?",
       "id": "rds-im-0115-dup407",
       "__rewritten_from_image__": true
     },
@@ -12446,7 +12446,7 @@
         "A tow exceeding 200m in length",
         "A vessel engaged in diving operations",
         "A vessel at anchor",
-        "A vessel restricted in its ability to man\u0153uvre"
+        "A vessel restricted in its ability to manœuvre"
       ],
       "id": "rds-im-0119-dup411",
       "__rewritten_from_image__": true
@@ -12998,7 +12998,7 @@
       "__rewritten_from_image__": true
     },
     {
-      "question": "A green conical buoy in a blue sea with a small \u2018G\u2019 symbol on the side. It is daylight. Identify this buoy and the correct action when entering a harbour in the UK?",
+      "question": "A green conical buoy in a blue sea with a small ‘G’ symbol on the side. It is daylight. Identify this buoy and the correct action when entering a harbour in the UK?",
       "type": "multiple_choice",
       "options": [
         "Port hand mark - Leave to port when entering a harbour",
@@ -14271,7 +14271,7 @@
         "The location of the nearest safe haven or port of refuge"
       ],
       "type": "multiple_choice",
-      "explanation": "The 'Estimated Position' (EP) is the best guess of a boat\u2019s position, calculated by applying the estimated effect of tidal stream and leeway to a Dead Reckoning (DR)",
+      "explanation": "The 'Estimated Position' (EP) is the best guess of a boat’s position, calculated by applying the estimated effect of tidal stream and leeway to a Dead Reckoning (DR)",
       "question": "In navigation, how is an 'Estimated Position' (EP) derived?",
       "id": "rds-mc-0025-dup24-dup543"
     },
@@ -15258,9 +15258,8 @@
     {
       "type": "hot_spot",
       "imageDescription": "A chart showing a Dead Reckoning (DR) position (vertical tally mark on path), an Estimated Position (EP) (triangle with time), and a Fix (circle or cross where two lines intersect with time)",
-      "imageAlt": "A nautical chart extract showing three different types of position symbols",
       "correctSpotId": "fix_symbol_3",
-      "explanation": "A 'Fix' is represented on a chart by the intersection of position lines, usually identified by a circle around the intersection or a cross with the time written \u06a9\u0646\u0627\u0631 it",
+      "explanation": "A 'Fix' is represented on a chart by the intersection of position lines, usually identified by a circle around the intersection or a cross with the time written it",
       "spots": [
         {
           "id": "dr_symbol_1",
