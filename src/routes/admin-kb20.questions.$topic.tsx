@@ -451,6 +451,11 @@ function QuestionsBrowser() {
   const previewMutation = useMutation({
     mutationFn: (vars: { text: string }) => previewFn({ data: { topic, csvText: vars.text } }),
     onSuccess: (data) => {
+      if (data.error) {
+        setImportMsg(`Preview failed: ${data.error}`);
+        setPreview(null);
+        return;
+      }
       setPreview(data);
       setImportMsg(null);
     },
@@ -794,7 +799,7 @@ function QuestionsBrowser() {
           )}
         </div>
 
-        {preview && (
+        {preview && !preview.error && (
           <div className="mt-3 rounded-lg border border-border bg-card p-4">
             <div className="flex flex-wrap items-center justify-between gap-2">
               <h2 className="text-sm font-semibold">Preview: {csvFilename}</h2>
