@@ -700,7 +700,9 @@ export const commitCsvImport = createServerFn({ method: "POST" })
       const newFile = mergeIntoFile(oldFile, rows);
       const mergedById = new Map(bankOf(newFile).filter((q) => q.id).map((q) => [String(q.id), q]));
       const rowIds = rows.map((r) => String(r.id));
-      const validation = validateImported(mergedById, rowIds, rowLines, newFile, data.topic);
+      const roadSignFiles = await loadRoadSignFiles(data.topic);
+      const validation = validateImported(mergedById, rowIds, rowLines, newFile, data.topic, roadSignFiles);
+
       if (validation.errors.length > 0) {
         const first = validation.errors.slice(0, 5).map((e) => `• ${e.id ? `[${e.id}] ` : ""}${e.message}`).join("\n");
         const more = validation.errors.length > 5 ? `\n…and ${validation.errors.length - 5} more.` : "";
