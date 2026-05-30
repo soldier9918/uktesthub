@@ -2,7 +2,7 @@ import { createServerFn } from "@tanstack/react-start";
 import { z } from "zod";
 import Papa from "papaparse";
 import { requireSupabaseAuth } from "@/integrations/supabase/auth-middleware";
-import { commitFile, getFile, listDir } from "@/lib/admin/github.server";
+import { commitFile, getFile, listDir, testConnection } from "@/lib/admin/github.server";
 
 // Use `any` for question records — the on-disk schema is too polymorphic to
 // type fully here, and TanStack's serializer rejects `unknown` index sigs.
@@ -678,6 +678,11 @@ export const previewCsvImport = createServerFn({ method: "POST" })
         oldBankSize: oldBank.length,
         newBankSize: newBank.length,
         validation,
+        // SHA of the file at preview time — passed back to commit to detect
+        // out-of-band changes between preview and commit.
+        existingSha: existing.sha,
+        filePath: filePathFor(data.topic),
+        topic: data.topic,
       };
     } catch (err) {
       console.error("previewCsvImport failed:", err);
@@ -692,6 +697,7 @@ export const commitCsvImport = createServerFn({ method: "POST" })
       topic: TopicSchema,
       csvText: z.string().min(1).max(20_000_000),
       filename: z.string().min(1).max(255),
+      expectedSha: z.string().min(1).max(120).optional(),
     }).parse(input),
   )
   .handler(async ({ data, context }) => {
@@ -702,8 +708,16 @@ export const commitCsvImport = createServerFn({ method: "POST" })
 
     const path = filePathFor(data.topic);
     try {
+      // Always re-fetch the latest version of the target file just before commit
+      // — even if the client passes expectedSha, we compare it against the
+      // freshest sha from GitHub to detect out-of-band changes.
       const existing = await getFile(path);
       if (!existing) throw new Error(`Topic file not found in repo: ${path}`);
+      if (data.expectedSha && data.expectedSha !== existing.sha) {
+        throw new Error(
+          "This topic JSON changed after preview. Please refresh and preview again.",
+        );
+      }
       const oldFile = JSON.parse(existing.content) as MockFile;
       const newFile = mergeIntoFile(oldFile, rows);
       const mergedById = new Map(bankOf(newFile).filter((q) => q.id).map((q) => [String(q.id), q]));
@@ -721,12 +735,18 @@ export const commitCsvImport = createServerFn({ method: "POST" })
       const addedIds = diff.added.map((q) => String(q.id ?? ""));
       const removedIds = diff.removed.map((q) => String(q.id ?? ""));
       const newContent = JSON.stringify(newFile, null, 2) + "\n";
+
+      // Standardized commit message format.
+      const commitMessage = `Update ${data.topic} mock questions from admin CSV import`;
       const { commitSha, commitUrl } = await commitFile({
         filePath: path,
         content: newContent,
-        message: `chore(${data.topic}): import ${rows.length} questions from ${data.filename}`,
+        message: commitMessage,
         sha: existing.sha,
       });
+
+      // Save BOTH snapshots (previous + new) for rollback. Status is only
+      // set to "committed" AFTER the GitHub commit succeeds.
       const { data: hist, error } = await supabase
         .from("question_import_history")
         .insert({
@@ -744,9 +764,23 @@ export const commitCsvImport = createServerFn({ method: "POST" })
         .select("id")
         .single();
       if (error) throw new Error(`History insert failed: ${error.message}`);
-      return { commitSha, commitUrl, historyId: hist.id, parseErrors: errors };
+      return {
+        commitSha,
+        commitUrl,
+        historyId: hist.id,
+        parseErrors: errors,
+        filePath: path,
+        topic: data.topic,
+        rowCount: rows.length,
+        changedCount: changedIds.length,
+        addedCount: addedIds.length,
+        removedCount: removedIds.length,
+        deploymentNote: "Changes committed to GitHub main. Deployment may take a few minutes.",
+      };
     } catch (err) {
       const message = err instanceof Error ? err.message : String(err);
+      // Log a failed attempt with NO snapshots and NO commit sha. Status is
+      // "failed", so it never counts as a successful import.
       await supabase.from("question_import_history").insert({
         topic: data.topic,
         filename: data.filename,
@@ -762,7 +796,13 @@ export const commitCsvImport = createServerFn({ method: "POST" })
 
 export const rollbackImport = createServerFn({ method: "POST" })
   .middleware([requireSupabaseAuth])
-  .inputValidator((input) => z.object({ historyId: z.string().uuid() }).parse(input))
+  .inputValidator((input) =>
+    z.object({
+      historyId: z.string().uuid(),
+      // Required when re-rolling-back an already rolled_back or failed entry.
+      force: z.boolean().optional(),
+    }).parse(input),
+  )
   .handler(async ({ data, context }) => {
     await assertAdmin(context.supabase, context.userId);
     const { supabase, userId } = context;
@@ -773,36 +813,85 @@ export const rollbackImport = createServerFn({ method: "POST" })
       .single();
     if (error || !row) throw new Error("Import history row not found");
     if (!row.previous_json) throw new Error("This import has no snapshot to roll back to");
-    if (row.status === "rolled_back") throw new Error("Already rolled back");
+    if ((row.status === "rolled_back" || row.status === "failed") && !data.force) {
+      throw new Error(
+        row.status === "rolled_back"
+          ? "This import was already rolled back. Confirm again to roll back a second time."
+          : "Previous rollback for this import failed. Confirm again to retry.",
+      );
+    }
+
     const path = filePathFor(row.topic);
-    const existing = await getFile(path);
-    const content = JSON.stringify(row.previous_json, null, 2) + "\n";
-    const { commitSha, commitUrl } = await commitFile({
-      filePath: path,
-      content,
-      message: `revert(${row.topic}): rollback to state before commit ${String(row.commit_sha ?? "").slice(0, 7)}`,
-      sha: existing?.sha,
-    });
-    await supabase
-      .from("question_import_history")
-      .update({
-        status: "rolled_back",
-        rolled_back_at: new Date().toISOString(),
-        rolled_back_to_commit_sha: commitSha,
-      })
-      .eq("id", row.id);
-    await supabase.from("question_import_history").insert({
-      topic: row.topic,
-      filename: `[rollback of ${String(row.commit_sha ?? "").slice(0, 7)}]`,
-      previous_json: null,
-      new_json: row.previous_json,
-      commit_sha: commitSha,
-      commit_url: commitUrl,
-      row_count: null,
-      status: "committed",
-      created_by: userId,
-    });
-    return { commitSha, commitUrl };
+    try {
+      const existing = await getFile(path);
+      const content = JSON.stringify(row.previous_json, null, 2) + "\n";
+      const { commitSha, commitUrl } = await commitFile({
+        filePath: path,
+        content,
+        message: `Rollback ${row.topic} mock questions import`,
+        sha: existing?.sha,
+      });
+
+      // Mark the original import as rolled_back.
+      await supabase
+        .from("question_import_history")
+        .update({
+          status: "rolled_back",
+          rolled_back_at: new Date().toISOString(),
+          rolled_back_to_commit_sha: commitSha,
+          error_log: null,
+        })
+        .eq("id", row.id);
+
+      // Audit row for the rollback commit itself.
+      await supabase.from("question_import_history").insert({
+        topic: row.topic,
+        filename: `[rollback of ${String(row.commit_sha ?? "").slice(0, 7)}]`,
+        previous_json: null,
+        new_json: row.previous_json,
+        commit_sha: commitSha,
+        commit_url: commitUrl,
+        row_count: null,
+        status: "committed",
+        created_by: userId,
+      });
+      return {
+        commitSha,
+        commitUrl,
+        filePath: path,
+        topic: row.topic,
+        rolledBackAt: new Date().toISOString(),
+        status: "rolled_back" as const,
+        deploymentNote: "Rollback committed to GitHub main. Deployment may take a few minutes.",
+      };
+    } catch (err) {
+      const message = err instanceof Error ? err.message : String(err);
+      // Mark the rollback as failed with the error message.
+      await supabase
+        .from("question_import_history")
+        .update({ status: "failed", error_log: `Rollback failed: ${message}` })
+        .eq("id", row.id);
+      throw err;
+    }
+  });
+
+/** Diagnostic: verify GitHub token, repo, branch, and Contents:write
+ *  permission. The token itself is never returned. */
+export const testGithubConnection = createServerFn({ method: "POST" })
+  .middleware([requireSupabaseAuth])
+  .handler(async ({ context }) => {
+    await assertAdmin(context.supabase, context.userId);
+    try {
+      return await testConnection();
+    } catch (e) {
+      return {
+        ok: false,
+        token: { present: !!process.env.GITHUB_TOKEN },
+        repo: { ok: false, full: "", error: e instanceof Error ? e.message : String(e) },
+        branch: { ok: false, name: "" },
+        contentsWrite: { ok: false },
+      };
+    }
   });
 
 export const listImportHistory = createServerFn({ method: "GET" })
