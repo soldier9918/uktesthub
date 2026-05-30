@@ -373,7 +373,7 @@ function QuestionsBrowser() {
 
   const stats = useMemo(() => {
     const withImg = effectiveQuestions.filter((q: FlatQuestion) => q.image).length;
-    const orphan = effectiveQuestions.filter((q: FlatQuestion) => q.usedInMocks.length === 0).length;
+    const orphan = effectiveQuestions.filter((q: FlatQuestion) => (q.usedInMocks ?? []).length === 0).length;
     return {
       total: effectiveQuestions.length,
       withImg,
