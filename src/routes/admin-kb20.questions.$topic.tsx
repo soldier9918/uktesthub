@@ -1,5 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
+import { useServerFn } from "@tanstack/react-start";
+import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { Input } from "@/components/ui/input";
@@ -10,6 +12,12 @@ import { QuestionEditDialog } from "@/components/QuestionEditDialog";
 import { applyOverrideToQuestionRecord, useOverrides, invalidateOverrides } from "@/lib/overrides";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/lib/auth-context";
+import {
+  previewCsvImport,
+  commitCsvImport,
+  rollbackImport,
+  listImportHistory,
+} from "@/lib/admin/csv-import.functions";
 
 type RawQuestion = Record<string, unknown> & {
   id?: string;
@@ -237,9 +245,17 @@ function QuestionsBrowser() {
   const scrollRestoreRef = useRef<number | null>(null);
   const [bump, setBump] = useState(0);
   const [importMsg, setImportMsg] = useState<string | null>(null);
-  const [importing, setImporting] = useState(false);
   const [cleaning, setCleaning] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
+  const [csvText, setCsvText] = useState<string>("");
+  const [csvFilename, setCsvFilename] = useState<string>("");
+  const [preview, setPreview] = useState<Awaited<ReturnType<typeof previewCsvImport>> | null>(null);
+  const [commitResult, setCommitResult] = useState<{ commitUrl: string; commitSha: string } | null>(null);
+  const previewFn = useServerFn(previewCsvImport);
+  const commitFn = useServerFn(commitCsvImport);
+  const rollbackFn = useServerFn(rollbackImport);
+  const listFn = useServerFn(listImportHistory);
+  const qc = useQueryClient();
   const overrides = useOverrides();
   void bump;
   const highlightId = initialSearch;
@@ -413,191 +429,71 @@ function QuestionsBrowser() {
     }
   };
 
-  // Minimal CSV parser (handles quoted fields with embedded quotes & commas)
-  const parseCsv = (text: string): string[][] => {
-    const rows: string[][] = [];
-    let row: string[] = [];
-    let field = "";
-    let inQ = false;
-    for (let i = 0; i < text.length; i++) {
-      const c = text[i];
-      if (inQ) {
-        if (c === '"') {
-          if (text[i + 1] === '"') { field += '"'; i++; }
-          else inQ = false;
-        } else field += c;
-      } else {
-        if (c === '"') inQ = true;
-        else if (c === ",") { row.push(field); field = ""; }
-        else if (c === "\n") { row.push(field); rows.push(row); row = []; field = ""; }
-        else if (c === "\r") { /* skip */ }
-        else field += c;
-      }
-    }
-    if (field.length > 0 || row.length > 0) { row.push(field); rows.push(row); }
-    return rows.filter((r) => r.length > 1 || (r[0] ?? "").length > 0);
-  };
-
-  const handleImportFile = async (e: React.ChangeEvent<HTMLInputElement>) => {
+  // CSV → GitHub: stage file, preview the diff, then commit to main.
+  const onCsvFile = async (e: React.ChangeEvent<HTMLInputElement>) => {
     setImportMsg(null);
+    setCommitResult(null);
+    setPreview(null);
     const file = e.target.files?.[0];
     if (!file) return;
-    setImporting(true);
-    try {
-      const text = await file.text();
-      type ImportRow = {
-        id: string;
-        question?: string;
-        options?: string[];
-        correctAnswer?: number | boolean | string;
-        correctAnswers?: number[];
-        explanation?: string;
-        image?: string;
-        imageAlt?: string;
-      };
-      const orUndef = (s: string | undefined | null): string | undefined => {
-        if (s == null) return undefined;
-        const t = String(s).trim();
-        return t.length > 0 ? t : undefined;
-      };
-      let parsed: ImportRow[] = [];
-      if (file.name.toLowerCase().endsWith(".json")) {
-        const json = JSON.parse(text);
-        const arr = Array.isArray(json) ? json : (json.questions ?? json.bank ?? []);
-        parsed = arr.map((r: Record<string, unknown>) => {
-          const row: ImportRow = { id: String(r.id) };
-          const q = orUndef(r.question as string | undefined);
-          if (q !== undefined) row.question = q;
-          if (Array.isArray(r.options) && (r.options as string[]).some((o) => orUndef(o) !== undefined)) {
-            row.options = r.options as string[];
-          }
-          if (r.correctAnswer != null && r.correctAnswer !== "") {
-            row.correctAnswer = r.correctAnswer as number | boolean | string;
-          }
-          if (Array.isArray(r.correctAnswers) && (r.correctAnswers as number[]).length > 0) {
-            row.correctAnswers = r.correctAnswers as number[];
-          }
-          const e = orUndef(r.explanation as string | undefined);
-          if (e !== undefined) row.explanation = e;
-          const im = orUndef(r.image as string | undefined);
-          if (im !== undefined) row.image = im;
-          const al = orUndef(r.imageAlt as string | undefined);
-          if (al !== undefined) row.imageAlt = al;
-          return row;
-        });
-      } else {
-        const rows = parseCsv(text);
-        if (rows.length < 2) throw new Error("CSV is empty");
-        const header = rows[0].map((h) => h.trim());
-        const idx = (name: string) => header.indexOf(name);
-        const iId = idx("id"), iQ = idx("question"),
-              iA = idx("optionA"), iB = idx("optionB"), iC = idx("optionC"), iD = idx("optionD"),
-              iCA = idx("correctAnswer"), iCAs = idx("correctAnswers"),
-              iE = idx("explanation"), iImg = idx("image"), iAlt = idx("imageAlt");
-        if (iId < 0) throw new Error("CSV missing 'id' column");
-        for (let r = 1; r < rows.length; r++) {
-          const row = rows[r];
-          if (!row[iId]) continue;
-          const cell = (j: number) => (j >= 0 ? (row[j] ?? "") : "");
-          const optsRaw = [cell(iA), cell(iB), cell(iC), cell(iD)];
-          const hasOpts = optsRaw.some((o) => orUndef(o) !== undefined);
-          const ca = cell(iCA).trim();
-          const cas = cell(iCAs).trim();
-          const out: ImportRow = { id: row[iId] };
-          const q = orUndef(cell(iQ));
-          if (q !== undefined) out.question = q;
-          if (hasOpts) out.options = optsRaw;
-          if (ca && ca !== "null") {
-            const n = Number(ca);
-            if (!Number.isNaN(n) && ca !== "") out.correctAnswer = n;
-            else if (ca === "true") out.correctAnswer = true;
-            else if (ca === "false") out.correctAnswer = false;
-            else out.correctAnswer = ca; // string answer (e.g. image-question label)
-          }
-          if (cas && cas !== "null" && cas !== "[]") {
-            try {
-              const arr = JSON.parse(cas);
-              if (Array.isArray(arr) && arr.length > 0) out.correctAnswers = arr;
-            } catch { /* ignore */ }
-          }
-          const e = orUndef(cell(iE));
-          if (e !== undefined) out.explanation = e;
-          const im = orUndef(cell(iImg));
-          if (im !== undefined) out.image = im;
-          const al = orUndef(cell(iAlt));
-          if (al !== undefined) out.imageAlt = al;
-          parsed.push(out);
-        }
-      }
-      if (parsed.length === 0) throw new Error("No rows found");
-
-      // Build a set of valid IDs in this topic to skip strangers
-      const validIds = new Set(effectiveQuestions.map((q) => q.id));
-      const usable = parsed.filter((r) => validIds.has(r.id));
-      const skipped = parsed.length - usable.length;
-
-      // Only include fields that the CSV/JSON actually provided so we never
-      // overwrite real content with empty strings on a partial re-upload.
-      type Json = import("@/integrations/supabase/types").Json;
-      type UpsertRow = {
-        topic: string;
-        question_id: string;
-        updated_by: string | null;
-        question?: string;
-        options?: Json;
-        correct_answer?: Json;
-        explanation?: string;
-        image?: string;
-        image_alt?: string;
-      };
-      let untouched = 0;
-      const upsertRows: UpsertRow[] = [];
-      for (const r of usable) {
-        const row: UpsertRow = {
-          topic,
-          question_id: r.id,
-          updated_by: user?.id ?? null,
-        };
-        let hasChange = false;
-        if (r.question !== undefined) { row.question = r.question; hasChange = true; }
-        if (r.options !== undefined) { row.options = r.options as unknown as Json; hasChange = true; }
-        if (r.correctAnswers !== undefined) {
-          row.correct_answer = r.correctAnswers as unknown as Json;
-          hasChange = true;
-        } else if (r.correctAnswer !== undefined) {
-          row.correct_answer = r.correctAnswer as unknown as Json;
-          hasChange = true;
-        }
-        if (r.explanation !== undefined) { row.explanation = r.explanation; hasChange = true; }
-        if (r.image !== undefined) { row.image = r.image; hasChange = true; }
-        if (r.imageAlt !== undefined) { row.image_alt = r.imageAlt; hasChange = true; }
-        if (!hasChange) { untouched++; continue; }
-        upsertRows.push(row);
-      }
-
-      let written = 0;
-      for (let i = 0; i < upsertRows.length; i += 100) {
-        const batch = upsertRows.slice(i, i + 100);
-        const { error } = await supabase
-          .from("question_overrides")
-          .upsert(batch, { onConflict: "topic,question_id" });
-        if (error) throw error;
-        written += batch.length;
-      }
-      invalidateOverrides();
-      setBump((n) => n + 1);
-      setImportMsg(
-        `Imported ${written} question${written === 1 ? "" : "s"}.` +
-          (untouched > 0 ? ` Left ${untouched} row${untouched === 1 ? "" : "s"} untouched (no editable values).` : "") +
-          (skipped > 0 ? ` Skipped ${skipped} unknown ID${skipped === 1 ? "" : "s"}.` : ""),
-      );
-    } catch (err) {
-      setImportMsg(`Import failed: ${err instanceof Error ? err.message : "Unknown error"}`);
-    } finally {
-      setImporting(false);
+    if (!file.name.toLowerCase().endsWith(".csv")) {
+      setImportMsg("Only .csv files are supported. Export the topic, edit, then re-upload as CSV.");
       if (fileInputRef.current) fileInputRef.current.value = "";
+      return;
     }
+    const text = await file.text();
+    setCsvFilename(file.name);
+    setCsvText(text);
+    if (fileInputRef.current) fileInputRef.current.value = "";
+    previewMutation.mutate({ text });
   };
+
+  const previewMutation = useMutation({
+    mutationFn: (vars: { text: string }) => previewFn({ data: { topic, csvText: vars.text } }),
+    onSuccess: (data) => {
+      setPreview(data);
+      setImportMsg(null);
+    },
+    onError: (err: Error) => {
+      setImportMsg(`Preview failed: ${err.message}`);
+      setPreview(null);
+    },
+  });
+
+  const commitMutation = useMutation({
+    mutationFn: () =>
+      commitFn({ data: { topic, csvText, filename: csvFilename || "upload.csv" } }),
+    onSuccess: (data) => {
+      setCommitResult({ commitUrl: data.commitUrl, commitSha: data.commitSha });
+      setPreview(null);
+      setCsvText("");
+      setCsvFilename("");
+      setImportMsg(null);
+      qc.invalidateQueries({ queryKey: ["import-history", topic] });
+    },
+    onError: (err: Error) => setImportMsg(`Commit failed: ${err.message}`),
+  });
+
+  const rollbackMutation = useMutation({
+    mutationFn: (historyId: string) => rollbackFn({ data: { historyId } }),
+    onSuccess: (data) => {
+      setCommitResult({ commitUrl: data.commitUrl, commitSha: data.commitSha });
+      qc.invalidateQueries({ queryKey: ["import-history", topic] });
+    },
+    onError: (err: Error) => setImportMsg(`Rollback failed: ${err.message}`),
+  });
+
+  const history = useQuery({
+    queryKey: ["import-history", topic],
+    queryFn: () => listFn({ data: { topic, limit: 20 } }),
+  });
+
+  const cancelPreview = () => {
+    setPreview(null);
+    setCsvText("");
+    setCsvFilename("");
+  };
+
 
   const cleanBadOverrides = async () => {
     const ok = typeof window === "undefined"
@@ -843,40 +739,197 @@ function QuestionsBrowser() {
           </span>
         </div>
 
-        <div className="mt-3 flex flex-wrap items-center gap-2 rounded-lg border border-dashed border-border bg-muted/20 p-3">
-          <span className="text-xs font-semibold uppercase text-muted-foreground">Bulk export / import</span>
-          <Button size="sm" variant="outline" onClick={() => exportData("csv")} disabled={filtered.length === 0}>
-            Export CSV ({filtered.length})
-          </Button>
-          <Button size="sm" variant="outline" onClick={() => exportData("json")} disabled={filtered.length === 0}>
-            Export JSON ({filtered.length})
-          </Button>
-          <input
-            ref={fileInputRef}
-            type="file"
-            accept=".csv,.json,application/json,text/csv"
-            className="hidden"
-            onChange={handleImportFile}
-          />
-          <Button size="sm" onClick={() => fileInputRef.current?.click()} disabled={importing}>
-            {importing ? "Importing…" : "Import CSV / JSON"}
-          </Button>
-          <Button
-            size="sm"
-            variant="outline"
-            onClick={cleanBadOverrides}
-            disabled={cleaning}
-            title="Delete or clear override rows where the question text or answer options are blank — fixes questions that show empty after a bad CSV upload."
-          >
-            {cleaning ? "Cleaning…" : "Clear bad overrides"}
-          </Button>
-          <span className="text-xs text-muted-foreground">
-            Edit the exported file and re-upload — matching IDs are saved as overrides.
-          </span>
+        <div className="mt-3 rounded-lg border border-dashed border-border bg-muted/20 p-3">
+          <div className="flex flex-wrap items-center gap-2">
+            <span className="text-xs font-semibold uppercase text-muted-foreground">
+              Bulk export / import (CSV → GitHub)
+            </span>
+            <Button size="sm" variant="outline" onClick={() => exportData("csv")} disabled={filtered.length === 0}>
+              Export CSV ({filtered.length})
+            </Button>
+            <Button size="sm" variant="outline" onClick={() => exportData("json")} disabled={filtered.length === 0}>
+              Export JSON ({filtered.length})
+            </Button>
+            <input
+              ref={fileInputRef}
+              type="file"
+              accept=".csv,text/csv"
+              className="hidden"
+              onChange={onCsvFile}
+            />
+            <Button
+              size="sm"
+              onClick={() => fileInputRef.current?.click()}
+              disabled={previewMutation.isPending || commitMutation.isPending}
+            >
+              {previewMutation.isPending ? "Reading…" : "Import CSV"}
+            </Button>
+            <Button
+              size="sm"
+              variant="outline"
+              onClick={cleanBadOverrides}
+              disabled={cleaning}
+              title="Delete legacy override rows with blank question text or empty options."
+            >
+              {cleaning ? "Cleaning…" : "Clear bad overrides"}
+            </Button>
+          </div>
+          <p className="mt-2 text-xs text-muted-foreground">
+            Export the topic, edit the CSV, then re-upload — you'll see a preview before any changes
+            are committed directly to <code>public/mocks/{topic}.json</code> on{" "}
+            <code>main</code>. Auto-deploy picks the commit up in ~1–2 minutes.
+          </p>
+          {commitResult && (
+            <div className="mt-2 rounded-md border border-emerald-500/40 bg-emerald-500/10 p-2 text-xs">
+              Committed:{" "}
+              <a href={commitResult.commitUrl} target="_blank" rel="noreferrer" className="font-mono underline">
+                {commitResult.commitSha.slice(0, 7)}
+              </a>
+            </div>
+          )}
           {importMsg && (
-            <span className="basis-full text-xs font-medium">{importMsg}</span>
+            <p className="mt-2 text-xs font-medium text-amber-700">{importMsg}</p>
           )}
         </div>
+
+        {preview && (
+          <div className="mt-3 rounded-lg border border-border bg-card p-4">
+            <div className="flex flex-wrap items-center justify-between gap-2">
+              <h2 className="text-sm font-semibold">Preview: {csvFilename}</h2>
+              <div className="flex gap-2">
+                <Button size="sm" variant="outline" onClick={cancelPreview}>Cancel</Button>
+                <Button
+                  size="sm"
+                  onClick={() => commitMutation.mutate()}
+                  disabled={commitMutation.isPending}
+                >
+                  {commitMutation.isPending ? "Committing…" : "Commit to GitHub"}
+                </Button>
+              </div>
+            </div>
+            <div className="mt-2 flex flex-wrap gap-2 text-xs">
+              <Badge variant="secondary">CSV rows: {preview.rowCount}</Badge>
+              <Badge variant="secondary">Existing: {preview.oldBankSize}</Badge>
+              <Badge variant="secondary">After: {preview.newBankSize}</Badge>
+              <Badge className="bg-emerald-500/20 text-emerald-700">Added: {preview.diff.addedCount}</Badge>
+              <Badge className="bg-amber-500/20 text-amber-700">Changed: {preview.diff.changedCount}</Badge>
+              <Badge className="bg-rose-500/20 text-rose-700">Removed: {preview.diff.removedCount}</Badge>
+            </div>
+            {preview.parseErrors.length > 0 && (
+              <ul className="mt-2 max-h-32 space-y-1 overflow-auto rounded bg-muted/40 p-2 text-xs text-amber-700">
+                {preview.parseErrors.map((e, i) => <li key={i}>{e}</li>)}
+              </ul>
+            )}
+            {preview.diff.changed.length > 0 && (
+              <details className="mt-3 text-xs">
+                <summary className="cursor-pointer font-semibold">
+                  Changed ({preview.diff.changedCount}) — showing first {preview.diff.changed.length}
+                </summary>
+                <div className="mt-2 space-y-2">
+                  {preview.diff.changed.map((c) => (
+                    <div key={c.id} className="rounded border border-border p-2">
+                      <div className="mb-1 font-mono text-muted-foreground">{c.id}</div>
+                      <div className="grid gap-2 sm:grid-cols-2">
+                        <div>
+                          <div className="text-xs font-semibold text-rose-700">Before</div>
+                          <pre className="overflow-auto rounded bg-muted/40 p-2">{JSON.stringify(c.before, null, 2)}</pre>
+                        </div>
+                        <div>
+                          <div className="text-xs font-semibold text-emerald-700">After</div>
+                          <pre className="overflow-auto rounded bg-muted/40 p-2">{JSON.stringify(c.after, null, 2)}</pre>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </details>
+            )}
+            {preview.diff.added.length > 0 && (
+              <details className="mt-3 text-xs">
+                <summary className="cursor-pointer font-semibold">Added ({preview.diff.addedCount})</summary>
+                <pre className="mt-2 max-h-80 overflow-auto rounded bg-muted/40 p-2">
+                  {JSON.stringify(preview.diff.added, null, 2)}
+                </pre>
+              </details>
+            )}
+          </div>
+        )}
+
+        <details className="mt-3 rounded-lg border border-border bg-card p-3 text-sm">
+          <summary className="cursor-pointer font-semibold">
+            Import history for {topic}
+            {history.data ? ` (${history.data.rows.length})` : ""}
+          </summary>
+          {history.isLoading && <p className="mt-2 text-xs text-muted-foreground">Loading…</p>}
+          {history.data && history.data.rows.length === 0 && (
+            <p className="mt-2 text-xs text-muted-foreground">No imports yet for this topic.</p>
+          )}
+          {history.data && history.data.rows.length > 0 && (
+            <div className="mt-2 overflow-x-auto">
+              <table className="w-full text-xs">
+                <thead className="text-left uppercase text-muted-foreground">
+                  <tr>
+                    <th className="py-1 pr-3">When</th>
+                    <th className="py-1 pr-3">File</th>
+                    <th className="py-1 pr-3">Rows</th>
+                    <th className="py-1 pr-3">Commit</th>
+                    <th className="py-1 pr-3">Status</th>
+                    <th className="py-1 pr-3"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {history.data.rows.map((r) => (
+                    <tr key={r.id} className="border-t border-border align-top">
+                      <td className="py-1 pr-3 text-muted-foreground">{new Date(r.created_at).toLocaleString()}</td>
+                      <td className="py-1 pr-3">{r.filename ?? "—"}</td>
+                      <td className="py-1 pr-3">{r.row_count ?? "—"}</td>
+                      <td className="py-1 pr-3">
+                        {r.commit_url ? (
+                          <a href={r.commit_url} target="_blank" rel="noreferrer" className="font-mono underline">
+                            {String(r.commit_sha ?? "").slice(0, 7)}
+                          </a>
+                        ) : (
+                          <span className="text-muted-foreground">—</span>
+                        )}
+                      </td>
+                      <td className="py-1 pr-3">
+                        <Badge
+                          variant="secondary"
+                          className={
+                            r.status === "committed"
+                              ? "bg-emerald-500/20 text-emerald-700"
+                              : r.status === "failed"
+                                ? "bg-rose-500/20 text-rose-700"
+                                : "bg-muted text-muted-foreground"
+                          }
+                        >
+                          {r.status}
+                        </Badge>
+                      </td>
+                      <td className="py-1 pr-3">
+                        {r.status === "committed" && (
+                          <Button
+                            size="sm"
+                            variant="outline"
+                            disabled={rollbackMutation.isPending}
+                            onClick={() => {
+                              if (confirm(`Roll back ${topic} to the state before this import?`)) {
+                                rollbackMutation.mutate(r.id);
+                              }
+                            }}
+                          >
+                            Rollback
+                          </Button>
+                        )}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          )}
+        </details>
+
 
         <ol className="mt-4 space-y-3">
           {visible.map((q: FlatQuestion, idx: number) => {
