@@ -1097,7 +1097,7 @@ function QuestionsBrowser() {
                   size="sm"
                   onClick={() => {
                     const ok = window.confirm(
-                      `You are about to commit changes directly to main for public/mocks/${topic}.json.\n\nProceed?`,
+                      `You are committing directly to GitHub main. This will update public/mocks/${topic}.json permanently after deployment.\n\nProceed?`,
                     );
                     if (ok) commitMutation.mutate();
                   }}
