@@ -839,6 +839,15 @@ function QuestionsBrowser() {
             >
               {previewMutation.isPending ? "Reading…" : "Import CSV"}
             </Button>
+            <Button
+              size="sm"
+              variant="outline"
+              onClick={runGithubTest}
+              disabled={ghTesting}
+              title="Check GitHub token, repo, branch, and Contents read/write permission."
+            >
+              {ghTesting ? "Testing…" : "Test GitHub connection"}
+            </Button>
             {/* "Clear bad overrides" removed — `question_overrides` is no longer the live source.
                 The live quiz reads only public/mocks/<topic>.json. Handler kept (deprecated) for one-off cleanup. */}
           </div>
@@ -847,12 +856,64 @@ function QuestionsBrowser() {
             are committed directly to <code>public/mocks/{topic}.json</code> on{" "}
             <code>main</code>. Auto-deploy picks the commit up in ~1–2 minutes.
           </p>
+          {ghTest && (
+            <div
+              className={`mt-2 rounded-md border p-2 text-xs ${
+                ghTest.ok
+                  ? "border-emerald-500/40 bg-emerald-500/10 text-emerald-800"
+                  : "border-rose-500/40 bg-rose-500/10 text-rose-800"
+              }`}
+            >
+              <div className="font-semibold">
+                GitHub connection: {ghTest.ok ? "OK" : "Problem detected"}
+              </div>
+              <ul className="mt-1 space-y-0.5">
+                <li>Token configured: {ghTest.token.present ? "✓" : "✗ missing"}</li>
+                <li>
+                  Repo {ghTest.repo.full || "(unknown)"}: {ghTest.repo.ok ? "✓ accessible" : `✗ ${ghTest.repo.error ?? "not accessible"}`}
+                </li>
+                <li>
+                  Branch {ghTest.branch.name || "(unknown)"}: {ghTest.branch.ok ? "✓ accessible" : `✗ ${ghTest.branch.error ?? "not accessible"}`}
+                </li>
+                <li>
+                  Contents read/write: {ghTest.contentsWrite.ok ? "✓ granted" : `✗ ${ghTest.contentsWrite.error ?? "not granted"}`}
+                </li>
+              </ul>
+            </div>
+          )}
           {commitResult && (
             <div className="mt-2 rounded-md border border-emerald-500/40 bg-emerald-500/10 p-2 text-xs">
-              Committed:{" "}
-              <a href={commitResult.commitUrl} target="_blank" rel="noreferrer" className="font-mono underline">
-                {commitResult.commitSha.slice(0, 7)}
-              </a>
+              <div className="font-semibold">
+                {commitResult.kind === "rollback" ? "Rollback committed" : "Commit succeeded"}
+              </div>
+              <ul className="mt-1 space-y-0.5">
+                <li>
+                  Commit SHA:{" "}
+                  <a href={commitResult.commitUrl} target="_blank" rel="noreferrer" className="font-mono underline">
+                    {commitResult.commitSha.slice(0, 7)}
+                  </a>{" "}
+                  <span className="text-muted-foreground">({commitResult.commitSha})</span>
+                </li>
+                <li>
+                  Commit URL:{" "}
+                  <a href={commitResult.commitUrl} target="_blank" rel="noreferrer" className="break-all underline">
+                    {commitResult.commitUrl}
+                  </a>
+                </li>
+                {commitResult.filePath && <li>File: <code>{commitResult.filePath}</code></li>}
+                {commitResult.topic && <li>Topic: <code>{commitResult.topic}</code></li>}
+                {typeof commitResult.rowCount === "number" && <li>CSV rows: {commitResult.rowCount}</li>}
+                {typeof commitResult.changedCount === "number" && (
+                  <li>
+                    Changed: {commitResult.changedCount}
+                    {typeof commitResult.addedCount === "number" ? ` · Added: ${commitResult.addedCount}` : ""}
+                    {typeof commitResult.removedCount === "number" ? ` · Removed: ${commitResult.removedCount}` : ""}
+                  </li>
+                )}
+                {commitResult.deploymentNote && (
+                  <li className="mt-1 italic text-muted-foreground">{commitResult.deploymentNote}</li>
+                )}
+              </ul>
             </div>
           )}
           {importMsg && (
