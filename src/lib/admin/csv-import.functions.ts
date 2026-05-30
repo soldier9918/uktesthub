@@ -420,7 +420,7 @@ export const previewCsvImport = createServerFn({ method: "POST" })
     try {
       const auth = await getAuthenticatedAdminClient();
       if (auth.error) return emptyPreview(auth.error);
-      const { rows, errors } = parseCsv(data.csvText);
+      const { rows, rowLines, errors } = parseCsv(data.csvText);
       const existing = await getFile(filePathFor(data.topic));
       if (!existing) return emptyPreview(`Topic file not found in repo: ${filePathFor(data.topic)}`, errors);
       const oldFile = JSON.parse(existing.content) as MockFile;
@@ -428,6 +428,7 @@ export const previewCsvImport = createServerFn({ method: "POST" })
       const newFile = mergeIntoFile(oldFile, rows);
       const newBank = bankOf(newFile);
       const diff = diffBanks(oldBank, newBank);
+      const validation = validateImported(rows, rowLines, newFile, data.topic);
       return {
         error: null as string | null,
         parseErrors: errors,
@@ -442,6 +443,7 @@ export const previewCsvImport = createServerFn({ method: "POST" })
         },
         oldBankSize: oldBank.length,
         newBankSize: newBank.length,
+        validation,
       };
     } catch (err) {
       console.error("previewCsvImport failed:", err);
