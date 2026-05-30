@@ -5,10 +5,14 @@
 import fs from "node:fs";
 import path from "node:path";
 
-const overridesPath = process.argv[2] || "/tmp/migrate/overrides.json";
+const overridesPath = process.argv[2] || "/tmp/migrate/overrides.jsonl";
 const mocksDir = path.resolve("public/mocks");
 
-const overrides = JSON.parse(fs.readFileSync(overridesPath, "utf8")) ?? [];
+const overrides = fs
+  .readFileSync(overridesPath, "utf8")
+  .split("\n")
+  .filter((l) => l.trim().length > 0)
+  .map((l) => JSON.parse(l));
 console.log(`Loaded ${overrides.length} overrides`);
 
 const byTopic = new Map();
