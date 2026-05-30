@@ -652,7 +652,9 @@ export const previewCsvImport = createServerFn({ method: "POST" })
       const diff = diffBanks(oldBank, newBank);
       const mergedById = new Map(newBank.filter((q) => q.id).map((q) => [String(q.id), q]));
       const rowIds = rows.map((r) => String(r.id));
-      const validation = validateImported(mergedById, rowIds, rowLines, newFile, data.topic);
+      const roadSignFiles = await loadRoadSignFiles(data.topic);
+      const validation = validateImported(mergedById, rowIds, rowLines, newFile, data.topic, roadSignFiles);
+
       return {
         error: null as string | null,
         parseErrors: errors,
