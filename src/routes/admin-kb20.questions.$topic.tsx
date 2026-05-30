@@ -934,6 +934,86 @@ function QuestionsBrowser() {
               </ul>
             </div>
           )}
+          {selfTest && (
+            <div
+              className={`mt-2 rounded-md border p-2 text-xs ${
+                selfTest.ok
+                  ? "border-emerald-500/40 bg-emerald-500/10 text-emerald-800"
+                  : "border-rose-500/40 bg-rose-500/10 text-rose-800"
+              }`}
+            >
+              <div className="font-semibold">
+                Self-test: {selfTest.ok ? "all checks passed" : "issues detected"}
+                <span className="ml-2 font-normal text-muted-foreground">
+                  {selfTest.bankSize} questions · {selfTest.filePath} · {new Date(selfTest.ranAt).toLocaleTimeString()}
+                </span>
+              </div>
+              <ul className="mt-1 space-y-0.5">
+                {selfTest.checks.map((c, i) => (
+                  <li key={i}>
+                    {c.ok ? "✓" : "✗"} {c.name}
+                    {c.detail && <span className="ml-1 text-muted-foreground">— {c.detail}</span>}
+                  </li>
+                ))}
+              </ul>
+              {selfTest.roundTrip.mismatchCount > 0 && (
+                <details className="mt-2 rounded border border-rose-500/40 bg-rose-500/5 p-2">
+                  <summary className="cursor-pointer font-semibold text-rose-700">
+                    Round-trip mismatches ({selfTest.roundTrip.mismatchCount})
+                  </summary>
+                  <table className="mt-2 w-full text-[11px]">
+                    <thead className="text-left uppercase text-muted-foreground">
+                      <tr>
+                        <th className="py-0.5 pr-2">Question ID</th>
+                        <th className="py-0.5 pr-2">Field</th>
+                        <th className="py-0.5 pr-2">Original (JSON)</th>
+                        <th className="py-0.5 pr-2">Parsed-back (CSV)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {selfTest.roundTrip.mismatches.map((m, i) => (
+                        <tr key={i} className="border-t border-border align-top">
+                          <td className="py-0.5 pr-2 font-mono">{m.id}</td>
+                          <td className="py-0.5 pr-2 font-mono">{m.field}</td>
+                          <td className="py-0.5 pr-2"><pre className="whitespace-pre-wrap break-all">{JSON.stringify(m.before)}</pre></td>
+                          <td className="py-0.5 pr-2"><pre className="whitespace-pre-wrap break-all">{JSON.stringify(m.after)}</pre></td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </details>
+              )}
+            </div>
+          )}
+          {liveCheck && (
+            <div
+              className={`mt-2 rounded-md border p-2 text-xs ${
+                liveCheck.ok
+                  ? "border-emerald-500/40 bg-emerald-500/10 text-emerald-800"
+                  : "border-amber-500/40 bg-amber-500/10 text-amber-800"
+              }`}
+            >
+              <div className="font-semibold">
+                Live JSON updated: {liveCheck.ok ? "yes" : "no — deployment/cache may still be propagating"}
+              </div>
+              <ul className="mt-1 space-y-0.5">
+                <li>File path: <code>{liveCheck.filePath}</code></li>
+                <li>Live path: <code>{liveCheck.livePath}</code></li>
+                {liveCheck.expectedSha && (
+                  <li>Expected latest commit (file SHA): <code className="font-mono">{liveCheck.expectedSha.slice(0, 12)}</code></li>
+                )}
+                <li>Last checked: {new Date(liveCheck.checkedAt).toLocaleString()}</li>
+                {liveCheck.error && <li className="text-rose-700">Error: {liveCheck.error}</li>}
+                {liveCheck.attempts.map((a, i) => (
+                  <li key={i}>
+                    {a.updated ? "✓" : "✗"} <a href={a.url} target="_blank" rel="noreferrer" className="break-all underline">{a.url}</a>
+                    {a.status != null && <span className="ml-1 text-muted-foreground">(HTTP {a.status})</span>}
+                    {a.error && <span className="ml-1 text-rose-700">— {a.error}</span>}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
           {commitResult && (
             <div className="mt-2 rounded-md border border-emerald-500/40 bg-emerald-500/10 p-2 text-xs">
               <div className="font-semibold">
