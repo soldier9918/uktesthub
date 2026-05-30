@@ -10,13 +10,35 @@ import { supabase } from "@/integrations/supabase/client";
 export function AdminGate({ children }: { children: ReactNode }) {
   const { loading, user, isAdmin } = useAuth();
   const nav = useNavigate();
+  const [stuck, setStuck] = useState(false);
 
   useEffect(() => {
     if (!loading && !user) nav({ to: "/admin-kb20/login" });
   }, [loading, user, nav]);
 
+  useEffect(() => {
+    if (!loading) {
+      setStuck(false);
+      return;
+    }
+    const t = setTimeout(() => setStuck(true), 5000);
+    return () => clearTimeout(t);
+  }, [loading]);
+
   if (loading) {
-    return <Centered>Loading…</Centered>;
+    return (
+      <Centered>
+        <p>Loading…</p>
+        {stuck && (
+          <div className="mt-4 space-y-2">
+            <p className="text-sm text-muted-foreground">
+              Taking longer than expected.
+            </p>
+            <Button onClick={() => window.location.reload()}>Reload</Button>
+          </div>
+        )}
+      </Centered>
+    );
   }
   if (!user) return <Centered>Redirecting…</Centered>;
   if (!isAdmin) {
