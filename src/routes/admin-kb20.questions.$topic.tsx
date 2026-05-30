@@ -882,8 +882,27 @@ function QuestionsBrowser() {
             >
               {ghTesting ? "Testing…" : "Test GitHub connection"}
             </Button>
+            <Button
+              size="sm"
+              variant="outline"
+              onClick={runSelfTest}
+              disabled={selfTesting}
+              title="Validate the topic JSON, GitHub access, export, round-trip re-import, schema, and rollback snapshot."
+            >
+              {selfTesting ? "Running…" : "Run import self-test"}
+            </Button>
+            <Button
+              size="sm"
+              variant="outline"
+              onClick={runVerifyLive}
+              disabled={liveChecking}
+              title="Fetch /mocks/<topic>.json from the live site and compare it with the latest committed JSON."
+            >
+              {liveChecking ? "Checking…" : "Verify live JSON"}
+            </Button>
             {/* "Clear bad overrides" removed — `question_overrides` is no longer the live source.
-                The live quiz reads only public/mocks/<topic>.json. Handler kept (deprecated) for one-off cleanup. */}
+                The live quiz reads only public/mocks/<topic>.json. A deprecated dev-only cleanup
+                action is collapsed below the import history table. */}
           </div>
           <p className="mt-2 text-xs text-muted-foreground">
             Export the topic, edit the CSV, then re-upload — you'll see a preview before any changes
