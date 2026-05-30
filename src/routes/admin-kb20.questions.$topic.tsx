@@ -18,6 +18,8 @@ import {
   rollbackImport,
   listImportHistory,
   testGithubConnection,
+  runImportSelfTest,
+  verifyLiveJson,
 } from "@/lib/admin/csv-import.functions";
 
 type RawQuestion = Record<string, unknown> & {
@@ -270,10 +272,16 @@ function QuestionsBrowser() {
   >(null);
   const [ghTest, setGhTest] = useState<Awaited<ReturnType<typeof testGithubConnection>> | null>(null);
   const [ghTesting, setGhTesting] = useState(false);
+  const [selfTest, setSelfTest] = useState<Awaited<ReturnType<typeof runImportSelfTest>> | null>(null);
+  const [selfTesting, setSelfTesting] = useState(false);
+  const [liveCheck, setLiveCheck] = useState<Awaited<ReturnType<typeof verifyLiveJson>> | null>(null);
+  const [liveChecking, setLiveChecking] = useState(false);
   const previewFn = useServerFn(previewCsvImport);
   const commitFn = useServerFn(commitCsvImport);
   const rollbackFn = useServerFn(rollbackImport);
   const ghTestFn = useServerFn(testGithubConnection);
+  const selfTestFn = useServerFn(runImportSelfTest);
+  const verifyLiveFn = useServerFn(verifyLiveJson);
   const listFn = useServerFn(listImportHistory);
   const router = useRouter();
   const qc = useQueryClient();
@@ -553,6 +561,32 @@ function QuestionsBrowser() {
       });
     } finally {
       setGhTesting(false);
+    }
+  };
+
+  const runSelfTest = async () => {
+    setSelfTesting(true);
+    setSelfTest(null);
+    try {
+      const result = await selfTestFn({ data: { topic } });
+      setSelfTest(result);
+    } catch (e) {
+      setImportMsg(`Self-test failed: ${e instanceof Error ? e.message : String(e)}`);
+    } finally {
+      setSelfTesting(false);
+    }
+  };
+
+  const runVerifyLive = async () => {
+    setLiveChecking(true);
+    setLiveCheck(null);
+    try {
+      const result = await verifyLiveFn({ data: { topic } });
+      setLiveCheck(result);
+    } catch (e) {
+      setImportMsg(`Live verify failed: ${e instanceof Error ? e.message : String(e)}`);
+    } finally {
+      setLiveChecking(false);
     }
   };
 
@@ -848,8 +882,27 @@ function QuestionsBrowser() {
             >
               {ghTesting ? "Testing…" : "Test GitHub connection"}
             </Button>
+            <Button
+              size="sm"
+              variant="outline"
+              onClick={runSelfTest}
+              disabled={selfTesting}
+              title="Validate the topic JSON, GitHub access, export, round-trip re-import, schema, and rollback snapshot."
+            >
+              {selfTesting ? "Running…" : "Run import self-test"}
+            </Button>
+            <Button
+              size="sm"
+              variant="outline"
+              onClick={runVerifyLive}
+              disabled={liveChecking}
+              title="Fetch /mocks/<topic>.json from the live site and compare it with the latest committed JSON."
+            >
+              {liveChecking ? "Checking…" : "Verify live JSON"}
+            </Button>
             {/* "Clear bad overrides" removed — `question_overrides` is no longer the live source.
-                The live quiz reads only public/mocks/<topic>.json. Handler kept (deprecated) for one-off cleanup. */}
+                The live quiz reads only public/mocks/<topic>.json. A deprecated dev-only cleanup
+                action is collapsed below the import history table. */}
           </div>
           <p className="mt-2 text-xs text-muted-foreground">
             Export the topic, edit the CSV, then re-upload — you'll see a preview before any changes
@@ -878,6 +931,86 @@ function QuestionsBrowser() {
                 <li>
                   Contents read/write: {ghTest.contentsWrite.ok ? "✓ granted" : `✗ ${ghTest.contentsWrite.error ?? "not granted"}`}
                 </li>
+              </ul>
+            </div>
+          )}
+          {selfTest && (
+            <div
+              className={`mt-2 rounded-md border p-2 text-xs ${
+                selfTest.ok
+                  ? "border-emerald-500/40 bg-emerald-500/10 text-emerald-800"
+                  : "border-rose-500/40 bg-rose-500/10 text-rose-800"
+              }`}
+            >
+              <div className="font-semibold">
+                Self-test: {selfTest.ok ? "all checks passed" : "issues detected"}
+                <span className="ml-2 font-normal text-muted-foreground">
+                  {selfTest.bankSize} questions · {selfTest.filePath} · {new Date(selfTest.ranAt).toLocaleTimeString()}
+                </span>
+              </div>
+              <ul className="mt-1 space-y-0.5">
+                {selfTest.checks.map((c, i) => (
+                  <li key={i}>
+                    {c.ok ? "✓" : "✗"} {c.name}
+                    {c.detail && <span className="ml-1 text-muted-foreground">— {c.detail}</span>}
+                  </li>
+                ))}
+              </ul>
+              {selfTest.roundTrip.mismatchCount > 0 && (
+                <details className="mt-2 rounded border border-rose-500/40 bg-rose-500/5 p-2">
+                  <summary className="cursor-pointer font-semibold text-rose-700">
+                    Round-trip mismatches ({selfTest.roundTrip.mismatchCount})
+                  </summary>
+                  <table className="mt-2 w-full text-[11px]">
+                    <thead className="text-left uppercase text-muted-foreground">
+                      <tr>
+                        <th className="py-0.5 pr-2">Question ID</th>
+                        <th className="py-0.5 pr-2">Field</th>
+                        <th className="py-0.5 pr-2">Original (JSON)</th>
+                        <th className="py-0.5 pr-2">Parsed-back (CSV)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {selfTest.roundTrip.mismatches.map((m, i) => (
+                        <tr key={i} className="border-t border-border align-top">
+                          <td className="py-0.5 pr-2 font-mono">{m.id}</td>
+                          <td className="py-0.5 pr-2 font-mono">{m.field}</td>
+                          <td className="py-0.5 pr-2"><pre className="whitespace-pre-wrap break-all">{JSON.stringify(m.before)}</pre></td>
+                          <td className="py-0.5 pr-2"><pre className="whitespace-pre-wrap break-all">{JSON.stringify(m.after)}</pre></td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </details>
+              )}
+            </div>
+          )}
+          {liveCheck && (
+            <div
+              className={`mt-2 rounded-md border p-2 text-xs ${
+                liveCheck.ok
+                  ? "border-emerald-500/40 bg-emerald-500/10 text-emerald-800"
+                  : "border-amber-500/40 bg-amber-500/10 text-amber-800"
+              }`}
+            >
+              <div className="font-semibold">
+                Live JSON updated: {liveCheck.ok ? "yes" : "no — deployment/cache may still be propagating"}
+              </div>
+              <ul className="mt-1 space-y-0.5">
+                <li>File path: <code>{liveCheck.filePath}</code></li>
+                <li>Live path: <code>{liveCheck.livePath}</code></li>
+                {liveCheck.expectedSha && (
+                  <li>Expected latest commit (file SHA): <code className="font-mono">{liveCheck.expectedSha.slice(0, 12)}</code></li>
+                )}
+                <li>Last checked: {new Date(liveCheck.checkedAt).toLocaleString()}</li>
+                {liveCheck.error && <li className="text-rose-700">Error: {liveCheck.error}</li>}
+                {liveCheck.attempts.map((a, i) => (
+                  <li key={i}>
+                    {a.updated ? "✓" : "✗"} <a href={a.url} target="_blank" rel="noreferrer" className="break-all underline">{a.url}</a>
+                    {a.status != null && <span className="ml-1 text-muted-foreground">(HTTP {a.status})</span>}
+                    {a.error && <span className="ml-1 text-rose-700">— {a.error}</span>}
+                  </li>
+                ))}
               </ul>
             </div>
           )}
@@ -913,7 +1046,18 @@ function QuestionsBrowser() {
                 {commitResult.deploymentNote && (
                   <li className="mt-1 italic text-muted-foreground">{commitResult.deploymentNote}</li>
                 )}
+                <li className="mt-1 italic text-muted-foreground">
+                  Changes committed to GitHub main. Deployment may take a few minutes. If the live quiz still shows old data, wait for deployment/cache refresh.
+                </li>
+                <li className="mt-1 text-muted-foreground">
+                  Reminder: open the live quiz or admin export and confirm the changed question appears.
+                </li>
               </ul>
+              <div className="mt-2 flex gap-2">
+                <Button size="sm" variant="outline" onClick={runVerifyLive} disabled={liveChecking}>
+                  {liveChecking ? "Checking…" : "Verify live JSON now"}
+                </Button>
+              </div>
             </div>
           )}
           {importMsg && (
@@ -953,7 +1097,7 @@ function QuestionsBrowser() {
                   size="sm"
                   onClick={() => {
                     const ok = window.confirm(
-                      `You are about to commit changes directly to main for public/mocks/${topic}.json.\n\nProceed?`,
+                      `You are committing directly to GitHub main. This will update public/mocks/${topic}.json permanently after deployment.\n\nProceed?`,
                     );
                     if (ok) commitMutation.mutate();
                   }}
@@ -1176,7 +1320,7 @@ function QuestionsBrowser() {
                             variant="outline"
                             disabled={rollbackMutation.isPending}
                             onClick={() => {
-                              const warn = `This will restore the previous JSON file for this topic and commit it to GitHub main.\n\nFile: public/mocks/${topic}.json\n\nProceed?`;
+                              const warn = `This will restore the previous JSON snapshot for this topic and commit it to GitHub main.\n\nFile: public/mocks/${topic}.json\n\nProceed?`;
                               if (!window.confirm(warn)) return;
                               const isRepeat = r.status === "rolled_back" || r.status === "failed";
                               if (isRepeat) {
@@ -1202,6 +1346,29 @@ function QuestionsBrowser() {
             </div>
           )}
         </details>
+
+        <details className="mt-3 rounded-lg border border-amber-500/40 bg-amber-500/5 p-3 text-xs">
+          <summary className="cursor-pointer font-semibold text-amber-800">
+            Deprecated · Emergency overrides cleanup (developer-only)
+          </summary>
+          <p className="mt-2 text-amber-800">
+            <strong>Deprecated.</strong> The live quiz no longer reads <code>question_overrides</code> —
+            it serves only <code>public/mocks/{topic}.json</code>. Old override rows are kept archived for
+            audit but do not affect runtime. Use this action only as an emergency one-off cleanup if a
+            developer has identified a specific data problem in the archived overrides.
+          </p>
+          <Button
+            size="sm"
+            variant="outline"
+            className="mt-2 border-amber-500/50 text-amber-800"
+            onClick={cleanBadOverrides}
+            disabled={cleaning}
+          >
+            {cleaning ? "Cleaning…" : "Run emergency override cleanup"}
+          </Button>
+        </details>
+
+
 
 
         <ol className="mt-4 space-y-3">

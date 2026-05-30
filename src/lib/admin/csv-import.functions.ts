@@ -947,3 +947,301 @@ export const listImportHistory = createServerFn({ method: "GET" })
       return { rows: [], error: err instanceof Error ? err.message : "Unknown error" };
     }
   });
+
+/* =====================================================================
+ * Self-test / round-trip / schema / live-verify
+ * ===================================================================== */
+
+/** Reproduce the exact CSV the topic page export button emits, on the
+ *  server, from a bank array. Used by the round-trip self-test. */
+function exportBankAsCsv(bank: AnyQ[]): string {
+  const esc = (v: unknown) => {
+    const s = v == null ? "" : typeof v === "string" ? v : JSON.stringify(v);
+    return `"${String(s).replace(/"/g, '""')}"`;
+  };
+  const headers = [
+    "id","type","question","optionA","optionB","optionC","optionD",
+    "correctAnswer","correctAnswers","explanation","image","imageAlt",
+  ];
+  const lines = [headers.join(",")];
+  for (const q of bank) {
+    const opts = Array.isArray(q.options) ? q.options : [];
+    lines.push([
+      esc(q.id), esc(q.type ?? ""), esc(q.question ?? ""),
+      esc(opts[0] ?? ""), esc(opts[1] ?? ""), esc(opts[2] ?? ""), esc(opts[3] ?? ""),
+      esc(q.correctAnswer ?? null), esc(q.correctAnswers ?? null),
+      esc(q.explanation ?? ""), esc(q.image ?? ""), esc(q.imageAlt ?? ""),
+    ].join(","));
+  }
+  return lines.join("\n");
+}
+
+/** Schema check for public/mocks/<topic>.json. Verifies that no required
+ *  field has gone missing in the on-disk file. Returns blocking errors
+ *  (structural) and warnings (per-question soft issues). */
+function schemaCheckFile(file: MockFile, topic: string): { ok: boolean; errors: string[]; warnings: string[] } {
+  const errors: string[] = [];
+  const warnings: string[] = [];
+  const isV2 = (file as V2File).version === 2;
+  if (isV2) {
+    const v2 = file as V2File;
+    if (!Array.isArray(v2.bank)) errors.push("V2 file is missing `bank` array.");
+    if (!Array.isArray(v2.mocks)) errors.push("V2 file is missing `mocks` array.");
+    if (v2.topic && v2.topic !== topic) errors.push(`Topic mismatch: file.topic="${v2.topic}" vs url="${topic}".`);
+    const ids = new Set<string>();
+    (v2.bank ?? []).forEach((q, i) => {
+      if (!q.id) errors.push(`bank[${i}] is missing id.`);
+      else if (ids.has(String(q.id))) errors.push(`Duplicate bank id "${q.id}".`);
+      else ids.add(String(q.id));
+      if (!q.type) warnings.push(`bank[${i}] (id=${q.id ?? "?"}) is missing type.`);
+      const text = (q.question ?? q.template ?? q.prompt ?? "").toString().trim();
+      if (!text) warnings.push(`bank[${i}] (id=${q.id ?? "?"}) has empty question text.`);
+    });
+    (v2.mocks ?? []).forEach((m) => {
+      if (typeof m.mockNumber !== "number") errors.push(`Mock has invalid mockNumber: ${JSON.stringify(m.mockNumber)}.`);
+      if (!Array.isArray(m.questionIds)) errors.push(`Mock ${m.mockNumber}: questionIds is not an array.`);
+      else m.questionIds.forEach((qid) => {
+        if (!ids.has(String(qid))) errors.push(`Mock ${m.mockNumber}: questionId "${qid}" not found in bank.`);
+      });
+    });
+  } else {
+    const v1 = file as V1File;
+    if (!Array.isArray(v1.tests)) errors.push("V1 file is missing `tests` array.");
+    if (v1.topic && v1.topic !== topic) errors.push(`Topic mismatch: file.topic="${v1.topic}" vs url="${topic}".`);
+    (v1.tests ?? []).forEach((t) => {
+      if (!Array.isArray(t.questions)) errors.push(`Mock ${t.mockNumber}: missing questions array.`);
+      (t.questions ?? []).forEach((q, i) => {
+        if (!q.id) warnings.push(`Mock ${t.mockNumber} q[${i}] is missing id.`);
+      });
+    });
+  }
+  return { ok: errors.length === 0, errors, warnings };
+}
+
+export const runImportSelfTest = createServerFn({ method: "POST" })
+  .middleware([requireSupabaseAuth])
+  .inputValidator((input) => z.object({ topic: TopicSchema }).parse(input))
+  .handler(async ({ data, context }) => {
+    await assertAdmin(context.supabase, context.userId);
+    const { supabase } = context;
+    const topic = data.topic;
+    const path = filePathFor(topic);
+    type Check = { name: string; ok: boolean; detail?: string };
+    const checks: Check[] = [];
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const roundTripMismatches: { id: string; field: string; before: any; after: any }[] = [];
+
+    // 1. GitHub connection
+    let gh: Awaited<ReturnType<typeof testConnection>> | null = null;
+    try {
+      gh = await testConnection();
+      checks.push({ name: "GitHub token present", ok: gh.token.present });
+      checks.push({ name: `Repo ${gh.repo.full} accessible`, ok: gh.repo.ok, detail: gh.repo.error });
+      checks.push({ name: `Branch ${gh.branch.name} accessible`, ok: gh.branch.ok, detail: gh.branch.error });
+      checks.push({ name: "Contents read/write permission", ok: gh.contentsWrite.ok, detail: gh.contentsWrite.error });
+    } catch (e) {
+      checks.push({ name: "GitHub connection", ok: false, detail: e instanceof Error ? e.message : String(e) });
+    }
+
+    // 2. File exists in GitHub
+    let oldFile: MockFile | null = null;
+    let existingSha: string | null = null;
+    try {
+      const existing = await getFile(path);
+      if (!existing) {
+        checks.push({ name: `File exists at ${path}`, ok: false, detail: "Not found in repo." });
+      } else {
+        existingSha = existing.sha;
+        checks.push({ name: `File exists at ${path}`, ok: true, detail: `sha ${existing.sha.slice(0, 7)}` });
+        try {
+          oldFile = JSON.parse(existing.content) as MockFile;
+          checks.push({ name: "Topic JSON parses successfully", ok: true });
+        } catch (e) {
+          checks.push({ name: "Topic JSON parses successfully", ok: false, detail: e instanceof Error ? e.message : String(e) });
+        }
+      }
+    } catch (e) {
+      checks.push({ name: `File exists at ${path}`, ok: false, detail: e instanceof Error ? e.message : String(e) });
+    }
+
+    // 3. Schema check
+    if (oldFile) {
+      const sc = schemaCheckFile(oldFile, topic);
+      checks.push({
+        name: "JSON matches quiz schema",
+        ok: sc.ok,
+        detail: sc.ok
+          ? sc.warnings.length ? `${sc.warnings.length} soft warning(s).` : "all required fields present"
+          : sc.errors.slice(0, 3).join(" | ") + (sc.errors.length > 3 ? ` (+${sc.errors.length - 3} more)` : ""),
+      });
+    }
+
+    // 4. Export works
+    let csvText = "";
+    let bank: AnyQ[] = [];
+    if (oldFile) {
+      try {
+        bank = bankOf(oldFile);
+        csvText = exportBankAsCsv(bank);
+        checks.push({ name: "Export CSV works", ok: csvText.length > 0, detail: `${bank.length} rows · ${csvText.length} chars` });
+      } catch (e) {
+        checks.push({ name: "Export CSV works", ok: false, detail: e instanceof Error ? e.message : String(e) });
+      }
+    }
+
+    // 5. Round-trip: parse + merge + validate + diff (expect 0 changes, 0 errors)
+    let unchangedImportOk = false;
+    if (oldFile && csvText) {
+      try {
+        const parsed = parseCsv(csvText);
+        const merged = mergeIntoFile(oldFile, parsed.rows);
+        const mergedById = new Map(bankOf(merged).filter((q) => q.id).map((q) => [String(q.id), q]));
+        const rowIds = parsed.rows.map((r) => String(r.id));
+        const roadSignFiles = await loadRoadSignFiles(topic);
+        const validation = validateImported(mergedById, rowIds, parsed.rowLines, merged, topic, roadSignFiles);
+        const diff = diffBanks(bank, bankOf(merged));
+        unchangedImportOk = validation.errors.length === 0 && diff.changed.length === 0 && diff.added.length === 0 && diff.removed.length === 0;
+        checks.push({
+          name: "Unchanged CSV re-import → 0 errors, 0 changes",
+          ok: unchangedImportOk,
+          detail: `errors=${validation.errors.length} changed=${diff.changed.length} added=${diff.added.length} removed=${diff.removed.length}`,
+        });
+        // Capture field-level mismatches for the "Round-trip" panel.
+        const beforeById = new Map(bank.filter((q) => q.id).map((q) => [String(q.id), q]));
+        for (const c of diff.changed) {
+          const before = beforeById.get(c.id) ?? {};
+          for (const f of c.changedFields) {
+            roundTripMismatches.push({ id: c.id, field: f, before: before[f], after: c.after?.[f] });
+          }
+        }
+      } catch (e) {
+        checks.push({ name: "Unchanged CSV re-import → 0 errors, 0 changes", ok: false, detail: e instanceof Error ? e.message : String(e) });
+      }
+    }
+
+    // 6. Rollback snapshot exists for the last successful commit
+    try {
+      const { data: hist } = await supabase
+        .from("question_import_history")
+        .select("id, commit_sha, previous_json, created_at")
+        .eq("topic", topic)
+        .eq("status", "committed")
+        .order("created_at", { ascending: false })
+        .limit(1)
+        .maybeSingle();
+      if (!hist) {
+        checks.push({ name: "Rollback snapshot exists for latest commit", ok: true, detail: "no commits yet — nothing to roll back" });
+      } else {
+        checks.push({
+          name: "Rollback snapshot exists for latest commit",
+          ok: !!hist.previous_json,
+          detail: hist.previous_json ? `commit ${String(hist.commit_sha ?? "").slice(0, 7)}` : "missing previous_json",
+        });
+      }
+    } catch (e) {
+      checks.push({ name: "Rollback snapshot exists for latest commit", ok: false, detail: e instanceof Error ? e.message : String(e) });
+    }
+
+    const okAll = checks.every((c) => c.ok);
+    return {
+      ok: okAll,
+      topic,
+      filePath: path,
+      existingSha,
+      bankSize: bank.length,
+      checks,
+      roundTrip: {
+        ok: unchangedImportOk,
+        mismatchCount: roundTripMismatches.length,
+        mismatches: roundTripMismatches.slice(0, 50),
+      },
+      ranAt: new Date().toISOString(),
+    };
+  });
+
+const DEFAULT_LIVE_BASE_URLS = [
+  "https://uktesthub.com",
+  "https://uk-test-mastery.lovable.app",
+];
+
+export const verifyLiveJson = createServerFn({ method: "POST" })
+  .middleware([requireSupabaseAuth])
+  .inputValidator((input) =>
+    z.object({
+      topic: TopicSchema,
+      baseUrl: z.string().url().max(300).optional(),
+    }).parse(input),
+  )
+  .handler(async ({ data, context }) => {
+    await assertAdmin(context.supabase, context.userId);
+    const path = filePathFor(data.topic);
+    const live = `/mocks/${data.topic}.json`;
+    const bases = data.baseUrl ? [data.baseUrl] : DEFAULT_LIVE_BASE_URLS;
+    const checkedAt = new Date().toISOString();
+
+    let expectedJson: unknown = null;
+    let expectedSha: string | null = null;
+    try {
+      const existing = await getFile(path);
+      if (!existing) {
+        return {
+          ok: false,
+          checkedAt,
+          filePath: path,
+          livePath: live,
+          expectedSha: null,
+          attempts: [],
+          error: `File not found in repo: ${path}`,
+        };
+      }
+      expectedSha = existing.sha;
+      expectedJson = JSON.parse(existing.content);
+    } catch (e) {
+      return {
+        ok: false,
+        checkedAt,
+        filePath: path,
+        livePath: live,
+        expectedSha: null,
+        attempts: [],
+        error: e instanceof Error ? e.message : String(e),
+      };
+    }
+
+    const expectedSerialized = JSON.stringify(expectedJson);
+    const attempts: { url: string; status: number | null; updated: boolean; error?: string }[] = [];
+    let anyMatch = false;
+
+    for (const base of bases) {
+      const url = `${base.replace(/\/$/, "")}${live}?_=${Date.now()}`;
+      try {
+        const res = await fetch(url, { headers: { "Cache-Control": "no-cache" } });
+        if (!res.ok) {
+          attempts.push({ url, status: res.status, updated: false, error: res.statusText });
+          continue;
+        }
+        const text = await res.text();
+        let parsed: unknown;
+        try { parsed = JSON.parse(text); } catch (e) {
+          attempts.push({ url, status: res.status, updated: false, error: e instanceof Error ? e.message : String(e) });
+          continue;
+        }
+        const match = JSON.stringify(parsed) === expectedSerialized;
+        if (match) anyMatch = true;
+        attempts.push({ url, status: res.status, updated: match });
+      } catch (e) {
+        attempts.push({ url, status: null, updated: false, error: e instanceof Error ? e.message : String(e) });
+      }
+    }
+
+    return {
+      ok: anyMatch,
+      checkedAt,
+      filePath: path,
+      livePath: live,
+      expectedSha,
+      attempts,
+      error: null as string | null,
+    };
+  });
+
