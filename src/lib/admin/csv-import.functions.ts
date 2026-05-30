@@ -678,6 +678,11 @@ export const previewCsvImport = createServerFn({ method: "POST" })
         oldBankSize: oldBank.length,
         newBankSize: newBank.length,
         validation,
+        // SHA of the file at preview time — passed back to commit to detect
+        // out-of-band changes between preview and commit.
+        existingSha: existing.sha,
+        filePath: filePathFor(data.topic),
+        topic: data.topic,
       };
     } catch (err) {
       console.error("previewCsvImport failed:", err);
