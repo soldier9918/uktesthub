@@ -1,25 +1,27 @@
-## Audit result — nothing to change
+## Problem
 
-### 1. Import is topic-scoped to the current URL
-- `admin-kb20.questions.$topic.tsx` reads `topic` from `Route.useLoaderData()` (sourced from `params.topic`, the URL segment).
-- Both mutations pass that exact `topic` to the server:
-  - `previewMutation` → `previewFn({ data: { topic, csvText } })` (line 455)
-  - `commitMutation` → `commitFn({ data: { topic, csvText, filename } })` (line 473)
-- Server-side `commitCsvImport` in `src/lib/admin/csv-import.functions.ts`:
-  - Validates with `TopicSchema = z.string().min(1).max(120).regex(/^[a-z0-9-]+$/)`.
-  - Computes the target path via `filePathFor(data.topic)` → `public/mocks/${data.topic}.json` (line 280).
-  - Calls `commitFile({ filePath: path, ... })` — the GitHub commit touches only that single file. No other topic JSON is read or written.
+In `public/mocks/road-signs.json`, mocks 8, 21, and 34 each have only 23 entries in their `questionIds` array (expected 24). No ids are missing from the bank and no duplicates — the arrays are just short by one.
 
-So on `/admin-kb20/questions/driving-theory` only `public/mocks/driving-theory.json` is updated; on `/road-signs` only `public/mocks/road-signs.json`.
+The bank contains 1,027 questions; 518 of them are currently used in zero mocks, so there's plenty of unused inventory to top up from.
 
-### 2. No database override is created or applied during import
-Grep of `commitCsvImport` and `previewCsvImport` — neither writes to or reads from `question_overrides`. The only DB writes are:
-- `question_import_history` insert on success (audit log + rollback snapshot).
-- `question_import_history` insert on failure (error log).
+## Fix
 
-### 3. Live source remains `public/mocks/<topic>.json` only
-- `QuizRunner` runs `applyOverrides(rawQuiz, overrides)`; after the recent change `applyOverrides` is a pass-through and `loadOverrides` returns an empty map.
-- The runtime never queries `question_overrides`.
+For each of the three short mocks, append one additional question id chosen from the unused pool, matching the existing mock's character:
 
-### Nothing to implement
-All three guarantees already hold in the code. No file edits required this turn. If you'd like an additional safety belt (e.g. logging the topic on every commit, or removing the deprecated `cleanBadOverrides` handler entirely), say the word and I'll do that as a separate pass.
+- **Mock 8** — predominantly `rs-im-*` (image sign) questions → pick an unused `rs-im-*` id
+- **Mock 21** — mix of `rs-im-*` and `rs-mc-*` → pick an unused id from the same families
+- **Mock 34** — predominantly `rs-im-*` → pick an unused `rs-im-*` id
+
+Selection rule (deterministic):
+1. Build the set of bank ids never referenced by any mock.
+2. Filter to ids whose prefix matches the dominant family of the target mock.
+3. Pick the first id in sorted order so the change is reproducible.
+4. Append to that mock's `questionIds` array.
+
+After the edit, re-run the check to confirm every mock has exactly 24 ids and no missing/duplicate references.
+
+## Files touched
+
+- `public/mocks/road-signs.json` — append one id to `mocks[7].questionIds`, `mocks[20].questionIds`, `mocks[33].questionIds`.
+
+No code changes; the build manifest will regenerate diagnostics automatically on next build.
