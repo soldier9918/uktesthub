@@ -1046,7 +1046,18 @@ function QuestionsBrowser() {
                 {commitResult.deploymentNote && (
                   <li className="mt-1 italic text-muted-foreground">{commitResult.deploymentNote}</li>
                 )}
+                <li className="mt-1 italic text-muted-foreground">
+                  Changes committed to GitHub main. Deployment may take a few minutes. If the live quiz still shows old data, wait for deployment/cache refresh.
+                </li>
+                <li className="mt-1 text-muted-foreground">
+                  Reminder: open the live quiz or admin export and confirm the changed question appears.
+                </li>
               </ul>
+              <div className="mt-2 flex gap-2">
+                <Button size="sm" variant="outline" onClick={runVerifyLive} disabled={liveChecking}>
+                  {liveChecking ? "Checking…" : "Verify live JSON now"}
+                </Button>
+              </div>
             </div>
           )}
           {importMsg && (
