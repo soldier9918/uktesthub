@@ -116,12 +116,15 @@ function RootShell({ children }: { children: React.ReactNode }) {
 }
 
 function RootComponent() {
+  const [queryClient] = useState(() => new QueryClient());
   return (
-    <AuthProvider>
-      <PageViewTracker />
-      <Outlet />
-      <StickyAdSlot />
-      <CookieConsent />
-    </AuthProvider>
+    <QueryClientProvider client={queryClient}>
+      <AuthProvider>
+        <PageViewTracker />
+        <Outlet />
+        <StickyAdSlot />
+        <CookieConsent />
+      </AuthProvider>
+    </QueryClientProvider>
   );
 }
