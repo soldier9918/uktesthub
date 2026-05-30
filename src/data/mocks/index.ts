@@ -285,7 +285,26 @@ export async function loadMockBySlug(slug: string): Promise<MockTest | undefined
 export async function loadTopicFileForAdmin(
   topic: string,
 ): Promise<MockFile | undefined> {
-  return loadTopicFile(topic);
+  const entry = buildTopicEntry(topic);
+  if (!entry) return undefined;
+
+  // Admin must show the same source of truth that CSV import writes to. Fetch
+  // the committed file from GitHub main first, then fall back to the deployed
+  // static asset if GitHub is temporarily unavailable.
+  const githubUrl = `https://raw.githubusercontent.com/soldier9918/uktesthub/main/public/mocks/${entry.file}?t=${Date.now()}`;
+  const fresh = await fetchMockFile(githubUrl);
+  if (fresh) {
+    fileCache.set(topic, Promise.resolve(fresh));
+    return fresh;
+  }
+
+  const deployedUrl = `${resolveMockUrl(`/mocks/${entry.file}`)}?t=${Date.now()}`;
+  const deployed = await fetchMockFile(deployedUrl);
+  if (deployed) {
+    fileCache.set(topic, Promise.resolve(deployed));
+    return deployed;
+  }
+  return undefined;
 }
 
 /**
