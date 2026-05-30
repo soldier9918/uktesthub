@@ -620,12 +620,18 @@ function bankOf(file: MockFile): AnyQ[] {
 
 const TopicSchema = z.string().min(1).max(120).regex(/^[a-z0-9-]+$/);
 
-/** For topic === "road-signs" load directory listing once for path validation. */
+/** For topic === "road-signs" load directory listings for both image dirs. */
 async function loadRoadSignFiles(topic: string): Promise<Set<string> | null> {
   if (topic !== "road-signs") return null;
   try {
-    const names = await listDir("public/road-signs");
-    return new Set((names ?? []).map((n) => n));
+    const [rsNames, mwNames] = await Promise.all([
+      listDir("public/road-signs"),
+      listDir("public/motorway-rules"),
+    ]);
+    const set = new Set<string>();
+    (rsNames ?? []).forEach((n) => set.add(n));
+    (mwNames ?? []).forEach((n) => set.add(n));
+    return set;
   } catch (e) {
     console.warn("loadRoadSignFiles failed:", e);
     return null;
