@@ -443,12 +443,14 @@ function validateImported(
     // ----- Road Signs topic-specific protection -----
     if (topic === "road-signs" && typeof q.image === "string" && q.image.trim()) {
       const img = q.image.trim();
-      if (!img.startsWith("/road-signs/")) {
-        push(errors, "image", `Road Signs image path must start with "/road-signs/" — got "${img}".`);
+      const isValidPrefix = img.startsWith("/road-signs/") || img.startsWith("/motorway-rules/");
+      if (!isValidPrefix) {
+        push(errors, "image", `Road Signs image path must start with "/road-signs/" or "/motorway-rules/" — got "${img}".`);
       } else if (roadSignFiles) {
-        const name = img.replace(/^\/road-signs\//, "").split("?")[0].split("#")[0];
+        const prefix = img.startsWith("/road-signs/") ? "/road-signs/" : "/motorway-rules/";
+        const name = img.replace(new RegExp(`^${prefix.replace("/", "\\/")}`), "").split("?")[0].split("#")[0];
         if (!roadSignFiles.has(name)) {
-          push(errors, "image", `Road Signs image file not found in repo: public/road-signs/${name}.`);
+          push(errors, "image", `Road Signs image file not found in repo: public${prefix}${name}.`);
         }
       }
       if (!q.imageAlt || typeof q.imageAlt !== "string" || !q.imageAlt.trim()) {
