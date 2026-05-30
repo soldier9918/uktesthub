@@ -479,7 +479,7 @@ function QuestionsBrowser() {
   };
 
   const previewMutation = useMutation({
-    mutationFn: (vars: { text: string }) => previewFn({ data: { topic, csvText: vars.text } }),
+    mutationFn: (vars: { text: string }) => previewFn({ data: { topic, csvText: vars.text, mode: importMode } }),
     onSuccess: (data) => {
       if (data.error) {
         setImportMsg(`Preview failed: ${data.error}`);
@@ -499,7 +499,7 @@ function QuestionsBrowser() {
     mutationFn: () => {
       const expectedSha = (preview as { existingSha?: string } | null)?.existingSha;
       return commitFn({
-        data: { topic, csvText, filename: csvFilename || "upload.csv", expectedSha },
+        data: { topic, csvText, filename: csvFilename || "upload.csv", expectedSha, mode: importMode },
       });
     },
     onSuccess: (data) => {
