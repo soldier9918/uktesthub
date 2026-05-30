@@ -85,7 +85,11 @@ function normaliseType(t: string | undefined): string {
   return x === "multiple-choice" ? "mcq" : x;
 }
 
-function describeQuestion(r: RawQuestion): string {
+function describeQuestion(r: RawQuestion, topic?: string): string {
+  const t = normaliseType(r.type);
+  if (topic === "road-signs" && t === "image-question" && typeof r.image === "string" && r.image) {
+    return "What does this road sign mean?";
+  }
   return (r.question || r.template || r.prompt || "").toString();
 }
 
@@ -155,7 +159,7 @@ function flatten(file: AnyFile): FlatQuestion[] {
     return v2.bank.map((q) => ({
       id: q.id,
       type: normaliseType(q.type),
-      question: describeQuestion(q),
+      question: describeQuestion(q, v2.topic),
       explanation: (q.explanation || "").toString(),
       image: q.image,
       imageAlt: q.imageAlt,
@@ -172,7 +176,7 @@ function flatten(file: AnyFile): FlatQuestion[] {
       out.push({
         id: q.id ?? `${t.mockNumber}-${i + 1}`,
         type: normaliseType(q.type),
-        question: describeQuestion(q),
+          question: describeQuestion(q, v1.topic),
         explanation: (q.explanation || "").toString(),
         image: q.image,
         imageAlt: q.imageAlt,
