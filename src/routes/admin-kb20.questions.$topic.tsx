@@ -486,7 +486,9 @@ function QuestionsBrowser() {
   const history = useQuery({
     queryKey: ["import-history", topic],
     queryFn: () => listFn({ data: { topic, limit: 20 } }),
+    retry: false,
   });
+
 
   const cancelPreview = () => {
     setPreview(null);
