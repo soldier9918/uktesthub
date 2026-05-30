@@ -158,8 +158,15 @@ function diffBanks(oldBank: AnyQ[], newRows: AnyQ[]) {
       continue;
     }
     const fields: string[] = [];
+    const TYPE_ALIASES: Record<string, string> = { mcq: "multiple_choice", multiple_choice: "multiple_choice" };
     for (const key of Object.keys(q)) {
-      if (!valuesEqual(prev[key], q[key])) fields.push(key);
+      let a = prev[key];
+      let b = q[key];
+      if (key === "type") {
+        a = TYPE_ALIASES[String(a ?? "").toLowerCase()] ?? a;
+        b = TYPE_ALIASES[String(b ?? "").toLowerCase()] ?? b;
+      }
+      if (!valuesEqual(a, b)) fields.push(key);
     }
     if (fields.length > 0) {
       changed.push({ id, before: prev, after: { ...prev, ...q }, changedFields: fields });
