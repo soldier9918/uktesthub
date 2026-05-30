@@ -830,24 +830,36 @@ function QuestionsBrowser() {
             {preview.diff.changed.length > 0 && (
               <details className="mt-3 text-xs">
                 <summary className="cursor-pointer font-semibold">
-                  Changed ({preview.diff.changedCount}) — showing first {preview.diff.changed.length}
+                  Changed ({preview.diff.changedCount})
                 </summary>
-                <div className="mt-2 space-y-2">
-                  {preview.diff.changed.map((c) => (
-                    <div key={c.id} className="rounded border border-border p-2">
-                      <div className="mb-1 font-mono text-muted-foreground">{c.id}</div>
-                      <div className="grid gap-2 sm:grid-cols-2">
-                        <div>
-                          <div className="text-xs font-semibold text-rose-700">Before</div>
-                          <pre className="overflow-auto rounded bg-muted/40 p-2">{JSON.stringify(c.before, null, 2)}</pre>
+                <div className="mt-2 max-h-[600px] space-y-2 overflow-auto">
+                  {preview.diff.changed.map((c: any) => {
+                    const fields: string[] = c.changedFields ?? Object.keys(c.after ?? {});
+                    return (
+                      <div key={c.id} className="rounded border border-border p-2">
+                        <div className="mb-1 flex flex-wrap items-center gap-2">
+                          <span className="font-mono text-muted-foreground">{c.id}</span>
+                          {fields.map((f) => (
+                            <Badge key={f} variant="secondary" className="text-[10px]">{f}</Badge>
+                          ))}
                         </div>
-                        <div>
-                          <div className="text-xs font-semibold text-emerald-700">After</div>
-                          <pre className="overflow-auto rounded bg-muted/40 p-2">{JSON.stringify(c.after, null, 2)}</pre>
+                        <div className="space-y-1">
+                          {fields.map((f) => (
+                            <div key={f} className="grid gap-2 sm:grid-cols-2">
+                              <div>
+                                <div className="text-[10px] font-semibold text-rose-700">Before · {f}</div>
+                                <pre className="overflow-auto rounded bg-muted/40 p-2 whitespace-pre-wrap">{JSON.stringify(c.before?.[f], null, 2)}</pre>
+                              </div>
+                              <div>
+                                <div className="text-[10px] font-semibold text-emerald-700">After · {f}</div>
+                                <pre className="overflow-auto rounded bg-muted/40 p-2 whitespace-pre-wrap">{JSON.stringify(c.after?.[f], null, 2)}</pre>
+                              </div>
+                            </div>
+                          ))}
                         </div>
                       </div>
-                    </div>
-                  ))}
+                    );
+                  })}
                 </div>
               </details>
             )}
