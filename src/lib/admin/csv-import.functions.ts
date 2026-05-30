@@ -750,24 +750,29 @@ async function loadRoadSignFiles(topic: string): Promise<Set<string> | null> {
 }
 
 
+const ImportModeSchema = z.enum(["patch", "replace"]).optional();
+
 export const previewCsvImport = createServerFn({ method: "POST" })
   .inputValidator((input) =>
     z.object({
       topic: TopicSchema,
       csvText: z.string().min(1).max(20_000_000),
+      mode: ImportModeSchema,
     }).parse(input),
   )
   .handler(async ({ data }) => {
     try {
       const auth = await getAuthenticatedAdminClient();
       if (auth.error) return emptyPreview(auth.error);
-      const { rows, rowLines, errors } = parseCsv(data.csvText);
+      const mode = data.mode ?? "patch";
+      const { rows, rowLines, clearByRow, errors } = parseCsv(data.csvText, mode);
       const existing = await getFile(filePathFor(data.topic));
       if (!existing) return emptyPreview(`Topic file not found in repo: ${filePathFor(data.topic)}`, errors);
       const oldFile = JSON.parse(existing.content) as MockFile;
       const oldBank = bankOf(oldFile);
-      const newFile = mergeIntoFile(oldFile, rows);
+      const newFile = mergeIntoFile(oldFile, rows, clearByRow);
       const newBank = bankOf(newFile);
+
       const diff = diffBanks(oldBank, newBank);
       const mergedById = new Map(newBank.filter((q) => q.id).map((q) => [String(q.id), q]));
       const rowIds = rows.map((r) => String(r.id));
