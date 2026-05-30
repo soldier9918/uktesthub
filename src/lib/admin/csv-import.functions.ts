@@ -228,7 +228,7 @@ export const previewCsvImport = createServerFn({ method: "POST" })
       const oldBank = bankOf(oldFile);
       const newFile = mergeIntoFile(oldFile, rows);
       const newBank = bankOf(newFile);
-      const diff = diffBanks(oldBank, rows);
+      const diff = diffBanks(oldBank, newBank);
       return {
         error: null as string | null,
         parseErrors: errors,
@@ -237,9 +237,9 @@ export const previewCsvImport = createServerFn({ method: "POST" })
           addedCount: diff.added.length,
           changedCount: diff.changed.length,
           removedCount: diff.removed.length,
-          added: diff.added.slice(0, 50),
-          changed: diff.changed.slice(0, 50),
-          removed: diff.removed.slice(0, 50),
+          added: diff.added,
+          changed: diff.changed,
+          removed: diff.removed,
         },
         oldBankSize: oldBank.length,
         newBankSize: newBank.length,
