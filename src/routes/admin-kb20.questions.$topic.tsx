@@ -272,7 +272,7 @@ function QuestionsBrowser() {
       return {
         ...q,
         raw,
-        question: describeQuestion(raw),
+        question: describeQuestion(raw, topic),
         explanation: (raw.explanation || "").toString(),
         image: raw.image,
         imageAlt: raw.imageAlt,
