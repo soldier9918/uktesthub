@@ -282,14 +282,14 @@ function QuestionsBrowser() {
     for (const q of base) {
       const fp = fingerprintQuestion(q.raw);
       const arr = groups.get(fp) ?? [];
-      for (const u of q.usedInMocks) {
+      for (const u of q.usedInMocks ?? []) {
         arr.push({ mockNumber: u.mockNumber, slot: u.slot, sourceQid: q.id });
       }
       groups.set(fp, arr);
     }
     return base.map((q) => {
       const fp = fingerprintQuestion(q.raw);
-      const merged = groups.get(fp) ?? q.usedInMocks;
+      const merged = groups.get(fp) ?? q.usedInMocks ?? [];
       const seen = new Set<string>();
       const dedup: MockUsage[] = [];
       for (const u of merged) {
@@ -331,7 +331,7 @@ function QuestionsBrowser() {
   const availableMocks = useMemo(() => {
     const s = new Set<number>();
     effectiveQuestions.forEach((q: FlatQuestion) =>
-      q.usedInMocks.forEach((u) => s.add(u.mockNumber)),
+      (q.usedInMocks ?? []).forEach((u) => s.add(u.mockNumber)),
     );
     return Array.from(s).sort((a, b) => a - b);
   }, [effectiveQuestions]);
@@ -343,9 +343,9 @@ function QuestionsBrowser() {
       if (type !== "all" && q.type !== type) return false;
       if (imageFilter === "with" && !q.image) return false;
       if (imageFilter === "without" && q.image) return false;
-      if (usageFilter === "used" && q.usedInMocks.length === 0) return false;
-      if (usageFilter === "unused" && q.usedInMocks.length > 0) return false;
-      if (mockNum !== null && !q.usedInMocks.some((u) => u.mockNumber === mockNum)) return false;
+      if (usageFilter === "used" && (q.usedInMocks ?? []).length === 0) return false;
+      if (usageFilter === "unused" && (q.usedInMocks ?? []).length > 0) return false;
+      if (mockNum !== null && !(q.usedInMocks ?? []).some((u) => u.mockNumber === mockNum)) return false;
       const isDisabled = !!overrides?.get(`${topic}::${q.id}`)?.disabled;
       if (statusFilter === "enabled" && isDisabled) return false;
       if (statusFilter === "disabled" && !isDisabled) return false;
@@ -361,7 +361,7 @@ function QuestionsBrowser() {
     });
     if (mockNum !== null) {
       const slotOf = (q: FlatQuestion) =>
-        q.usedInMocks.find((u) => u.mockNumber === mockNum)?.slot ?? 9999;
+        (q.usedInMocks ?? []).find((u) => u.mockNumber === mockNum)?.slot ?? 9999;
       list.sort((a, b) => slotOf(a) - slotOf(b));
     }
     return list;
@@ -373,7 +373,7 @@ function QuestionsBrowser() {
 
   const stats = useMemo(() => {
     const withImg = effectiveQuestions.filter((q: FlatQuestion) => q.image).length;
-    const orphan = effectiveQuestions.filter((q: FlatQuestion) => q.usedInMocks.length === 0).length;
+    const orphan = effectiveQuestions.filter((q: FlatQuestion) => (q.usedInMocks ?? []).length === 0).length;
     return {
       total: effectiveQuestions.length,
       withImg,
@@ -860,13 +860,21 @@ function QuestionsBrowser() {
         <details className="mt-3 rounded-lg border border-border bg-card p-3 text-sm">
           <summary className="cursor-pointer font-semibold">
             Import history for {topic}
-            {history.data ? ` (${history.data.rows.length})` : ""}
+            {history.data ? ` (${(history.data.rows ?? []).length})` : ""}
           </summary>
           {history.isLoading && <p className="mt-2 text-xs text-muted-foreground">Loading…</p>}
-          {history.data && history.data.rows.length === 0 && (
+          {history.error && (
+            <p className="mt-2 text-xs text-rose-700">
+              Failed to load history: {history.error instanceof Error ? history.error.message : "unknown error"}
+            </p>
+          )}
+          {history.data?.error && (
+            <p className="mt-2 text-xs text-rose-700">{history.data.error}</p>
+          )}
+          {history.data && (history.data.rows ?? []).length === 0 && !history.data.error && (
             <p className="mt-2 text-xs text-muted-foreground">No imports yet for this topic.</p>
           )}
-          {history.data && history.data.rows.length > 0 && (
+          {history.data && (history.data.rows ?? []).length > 0 && (
             <div className="mt-2 overflow-x-auto">
               <table className="w-full text-xs">
                 <thead className="text-left uppercase text-muted-foreground">
@@ -880,7 +888,7 @@ function QuestionsBrowser() {
                   </tr>
                 </thead>
                 <tbody>
-                  {history.data.rows.map((r) => (
+                  {(history.data.rows ?? []).map((r) => (
                     <tr key={r.id} className="border-t border-border align-top">
                       <td className="py-1 pr-3 text-muted-foreground">{new Date(r.created_at).toLocaleString()}</td>
                       <td className="py-1 pr-3">{r.filename ?? "—"}</td>
@@ -965,10 +973,10 @@ function QuestionsBrowser() {
                         no answers
                       </Badge>
                     )}
-                    {q.usedInMocks.length > 0 ? (
+                    {(q.usedInMocks ?? []).length > 0 ? (
                       <span className="flex flex-wrap items-center gap-1 text-[10px] text-muted-foreground">
-                        Live in ({q.usedInMocks.length}):
-                        {q.usedInMocks.map(({ mockNumber, slot, sourceQid }) => {
+                        Live in ({(q.usedInMocks ?? []).length}):
+                        {(q.usedInMocks ?? []).map(({ mockNumber, slot, sourceQid }) => {
                           const isDup = sourceQid && sourceQid !== q.id;
                           return (
                           <a
