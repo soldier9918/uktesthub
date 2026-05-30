@@ -797,18 +797,41 @@ function QuestionsBrowser() {
           )}
         </div>
 
-        {preview && !preview.error && (
+        {preview && !preview.error && (() => {
+          const v = (preview as { validation?: { errors: Array<{ rowIndex: number | null; id: string | null; field: string | null; message: string }>; warnings: Array<{ rowIndex: number | null; id: string | null; field: string | null; message: string }> } }).validation
+            ?? { errors: [], warnings: [] };
+          const blocked = v.errors.length > 0;
+          const downloadReport = () => {
+            const lines = ["severity,row,id,field,message"];
+            const esc = (s: unknown) => `"${String(s ?? "").replace(/"/g, '""')}"`;
+            for (const e of v.errors) lines.push(["error", e.rowIndex ?? "", e.id ?? "", e.field ?? "", e.message].map(esc).join(","));
+            for (const w of v.warnings) lines.push(["warning", w.rowIndex ?? "", w.id ?? "", w.field ?? "", w.message].map(esc).join(","));
+            const blob = new Blob([lines.join("\n")], { type: "text/csv" });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement("a");
+            a.href = url;
+            a.download = `${topic}-validation-${new Date().toISOString().replace(/[:.]/g, "-")}.csv`;
+            a.click();
+            URL.revokeObjectURL(url);
+          };
+          return (
           <div className="mt-3 rounded-lg border border-border bg-card p-4">
             <div className="flex flex-wrap items-center justify-between gap-2">
               <h2 className="text-sm font-semibold">Preview: {csvFilename}</h2>
               <div className="flex gap-2">
                 <Button size="sm" variant="outline" onClick={cancelPreview}>Cancel</Button>
+                {(v.errors.length > 0 || v.warnings.length > 0) && (
+                  <Button size="sm" variant="outline" onClick={downloadReport}>
+                    Download report
+                  </Button>
+                )}
                 <Button
                   size="sm"
                   onClick={() => commitMutation.mutate()}
-                  disabled={commitMutation.isPending}
+                  disabled={commitMutation.isPending || blocked}
+                  title={blocked ? "Fix validation errors before committing." : undefined}
                 >
-                  {commitMutation.isPending ? "Committing…" : "Commit to GitHub"}
+                  {commitMutation.isPending ? "Committing…" : blocked ? "Blocked by errors" : "Commit to GitHub"}
                 </Button>
               </div>
             </div>
@@ -819,7 +842,43 @@ function QuestionsBrowser() {
               <Badge className="bg-emerald-500/20 text-emerald-700">Added: {preview.diff.addedCount}</Badge>
               <Badge className="bg-amber-500/20 text-amber-700">Changed: {preview.diff.changedCount}</Badge>
               <Badge className="bg-rose-500/20 text-rose-700">Removed: {preview.diff.removedCount}</Badge>
+              <Badge className="bg-rose-500/20 text-rose-700">Errors: {v.errors.length}</Badge>
+              <Badge className="bg-amber-500/20 text-amber-700">Warnings: {v.warnings.length}</Badge>
             </div>
+            {v.errors.length > 0 && (
+              <details open className="mt-3 rounded border border-rose-500/40 bg-rose-500/5 p-2 text-xs">
+                <summary className="cursor-pointer font-semibold text-rose-700">
+                  Errors block commit ({v.errors.length})
+                </summary>
+                <ul className="mt-2 max-h-72 space-y-1 overflow-auto">
+                  {v.errors.map((e, i) => (
+                    <li key={i} className="text-rose-700">
+                      <span className="font-mono text-[10px] text-muted-foreground">
+                        {e.rowIndex ? `row ${e.rowIndex}` : "file"}{e.id ? ` · ${e.id}` : ""}{e.field ? ` · ${e.field}` : ""}
+                      </span>{" "}
+                      {e.message}
+                    </li>
+                  ))}
+                </ul>
+              </details>
+            )}
+            {v.warnings.length > 0 && (
+              <details className="mt-2 rounded border border-amber-500/40 bg-amber-500/5 p-2 text-xs">
+                <summary className="cursor-pointer font-semibold text-amber-700">
+                  Warnings — review but won't block ({v.warnings.length})
+                </summary>
+                <ul className="mt-2 max-h-72 space-y-1 overflow-auto">
+                  {v.warnings.map((w, i) => (
+                    <li key={i} className="text-amber-700">
+                      <span className="font-mono text-[10px] text-muted-foreground">
+                        {w.rowIndex ? `row ${w.rowIndex}` : "file"}{w.id ? ` · ${w.id}` : ""}{w.field ? ` · ${w.field}` : ""}
+                      </span>{" "}
+                      {w.message}
+                    </li>
+                  ))}
+                </ul>
+              </details>
+            )}
             {preview.parseErrors.length > 0 && (
               <ul className="mt-2 max-h-32 space-y-1 overflow-auto rounded bg-muted/40 p-2 text-xs text-amber-700">
                 {preview.parseErrors.map((e, i) => <li key={i}>{e}</li>)}
