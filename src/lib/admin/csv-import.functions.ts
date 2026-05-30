@@ -589,7 +589,9 @@ export const previewCsvImport = createServerFn({ method: "POST" })
       const newFile = mergeIntoFile(oldFile, rows);
       const newBank = bankOf(newFile);
       const diff = diffBanks(oldBank, newBank);
-      const validation = validateImported(rows, rowLines, newFile, data.topic);
+      const mergedById = new Map(newBank.filter((q) => q.id).map((q) => [String(q.id), q]));
+      const rowIds = rows.map((r) => String(r.id));
+      const validation = validateImported(mergedById, rowIds, rowLines, newFile, data.topic);
       return {
         error: null as string | null,
         parseErrors: errors,
