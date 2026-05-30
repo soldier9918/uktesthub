@@ -632,18 +632,75 @@ function diffBanks(oldBank: AnyQ[], newRows: AnyQ[]) {
   return { added, changed, removed };
 }
 
+/** Remove fields that are incompatible with the question's effective type.
+ * Runs after every per-row merge so type changes (e.g. mcq → true_false)
+ * leave clean JSON without stale MCQ fields. */
+function applyTypeCleanup(q: AnyQ): AnyQ {
+  const t = canonType(q.type);
+  const out: AnyQ = { ...q };
+  // Strip the per-letter helper fields no matter the type — they're CSV-only.
+  delete out.optionA; delete out.optionB; delete out.optionC; delete out.optionD;
+  delete out.A; delete out.B; delete out.C; delete out.D;
+
+  if (t === "true_false") {
+    delete out.options;
+    delete out.correctAnswers;
+    if (typeof out.correctAnswer === "string") {
+      const l = out.correctAnswer.toLowerCase();
+      if (l === "true") out.correctAnswer = true;
+      else if (l === "false") out.correctAnswer = false;
+    } else if (typeof out.correctAnswer === "number") {
+      out.correctAnswer = out.correctAnswer !== 0;
+    }
+  } else if (t === "multiple_choice" || t === "image_question") {
+    delete out.correctAnswers;
+  } else if (t === "multiple_response") {
+    delete out.correctAnswer;
+  } else if (t === "numeric_entry") {
+    delete out.options;
+    delete out.correctAnswers;
+  } else if (t === "hot_spot") {
+    delete out.options;
+    delete out.correctAnswer;
+    delete out.correctAnswers;
+  } else if (t === "fill_blanks" || t === "drag_drop_blanks" || t === "dropdown_blanks") {
+    delete out.options;
+    delete out.correctAnswer;
+    delete out.correctAnswers;
+  }
+  return out;
+}
+
+/** Apply a single patch row to an existing question. CSV-present keys are
+ * merged in; keys listed in `clears` are deleted from the result. Then
+ * type-specific cleanup strips fields incompatible with the final type. */
+function applyPatch(prev: AnyQ | undefined, patch: AnyQ, clears: Set<string>): AnyQ {
+  const base: AnyQ = { ...(prev ?? {}), ...patch };
+  for (const key of clears) {
+    if (key === "id") continue;
+    delete base[key];
+  }
+  return applyTypeCleanup(base);
+}
+
 /** Merge CSV rows onto the existing bank. CSV rows REPLACE matching ids;
  * unmatched existing questions are kept as-is. New ids are appended. */
-function mergeIntoFile(file: MockFile, rows: AnyQ[]): MockFile {
+function mergeIntoFile(file: MockFile, rows: AnyQ[], clearByRow?: Set<string>[]): MockFile {
   const isV2 = (file as V2File).version === 2 && Array.isArray((file as V2File).bank);
+  const clearsById = new Map<string, Set<string>>();
+  rows.forEach((r, i) => {
+    clearsById.set(String(r.id), clearByRow?.[i] ?? new Set());
+  });
   if (isV2) {
     const v2 = file as V2File;
     const byId = new Map(v2.bank.filter((q) => q.id).map((q) => [String(q.id), q]));
-    for (const r of rows) byId.set(String(r.id), { ...byId.get(String(r.id)), ...r });
+    for (const r of rows) {
+      const id = String(r.id);
+      byId.set(id, applyPatch(byId.get(id), r, clearsById.get(id) ?? new Set()));
+    }
     const newBank = Array.from(byId.values());
     return { ...v2, bank: newBank };
   }
-  // v1: apply to every test that contains a matching id; append new ids to first test
   const v1 = file as V1File;
   const byId = new Map<string, AnyQ>();
   for (const r of rows) byId.set(String(r.id), r);
@@ -652,13 +709,16 @@ function mergeIntoFile(file: MockFile, rows: AnyQ[]): MockFile {
     ...t,
     questions: t.questions.map((q) => {
       if (q.id && byId.has(String(q.id))) {
-        matched.add(String(q.id));
-        return { ...q, ...byId.get(String(q.id))! };
+        const id = String(q.id);
+        matched.add(id);
+        return applyPatch(q, byId.get(id)!, clearsById.get(id) ?? new Set());
       }
       return q;
     }),
   }));
-  const unmatched = rows.filter((r) => !matched.has(String(r.id)));
+  const unmatched = rows
+    .filter((r) => !matched.has(String(r.id)))
+    .map((r) => applyPatch(undefined, r, clearsById.get(String(r.id)) ?? new Set()));
   if (unmatched.length && tests[0]) tests[0].questions.push(...unmatched);
   return { ...v1, tests };
 }
