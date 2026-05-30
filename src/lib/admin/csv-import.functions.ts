@@ -697,6 +697,7 @@ export const commitCsvImport = createServerFn({ method: "POST" })
       topic: TopicSchema,
       csvText: z.string().min(1).max(20_000_000),
       filename: z.string().min(1).max(255),
+      expectedSha: z.string().min(1).max(120).optional(),
     }).parse(input),
   )
   .handler(async ({ data, context }) => {
@@ -707,8 +708,16 @@ export const commitCsvImport = createServerFn({ method: "POST" })
 
     const path = filePathFor(data.topic);
     try {
+      // Always re-fetch the latest version of the target file just before commit
+      // — even if the client passes expectedSha, we compare it against the
+      // freshest sha from GitHub to detect out-of-band changes.
       const existing = await getFile(path);
       if (!existing) throw new Error(`Topic file not found in repo: ${path}`);
+      if (data.expectedSha && data.expectedSha !== existing.sha) {
+        throw new Error(
+          "This topic JSON changed after preview. Please refresh and preview again.",
+        );
+      }
       const oldFile = JSON.parse(existing.content) as MockFile;
       const newFile = mergeIntoFile(oldFile, rows);
       const mergedById = new Map(bankOf(newFile).filter((q) => q.id).map((q) => [String(q.id), q]));
@@ -726,12 +735,18 @@ export const commitCsvImport = createServerFn({ method: "POST" })
       const addedIds = diff.added.map((q) => String(q.id ?? ""));
       const removedIds = diff.removed.map((q) => String(q.id ?? ""));
       const newContent = JSON.stringify(newFile, null, 2) + "\n";
+
+      // Standardized commit message format.
+      const commitMessage = `Update ${data.topic} mock questions from admin CSV import`;
       const { commitSha, commitUrl } = await commitFile({
         filePath: path,
         content: newContent,
-        message: `chore(${data.topic}): import ${rows.length} questions from ${data.filename}`,
+        message: commitMessage,
         sha: existing.sha,
       });
+
+      // Save BOTH snapshots (previous + new) for rollback. Status is only
+      // set to "committed" AFTER the GitHub commit succeeds.
       const { data: hist, error } = await supabase
         .from("question_import_history")
         .insert({
@@ -749,9 +764,23 @@ export const commitCsvImport = createServerFn({ method: "POST" })
         .select("id")
         .single();
       if (error) throw new Error(`History insert failed: ${error.message}`);
-      return { commitSha, commitUrl, historyId: hist.id, parseErrors: errors };
+      return {
+        commitSha,
+        commitUrl,
+        historyId: hist.id,
+        parseErrors: errors,
+        filePath: path,
+        topic: data.topic,
+        rowCount: rows.length,
+        changedCount: changedIds.length,
+        addedCount: addedIds.length,
+        removedCount: removedIds.length,
+        deploymentNote: "Changes committed to GitHub main. Deployment may take a few minutes.",
+      };
     } catch (err) {
       const message = err instanceof Error ? err.message : String(err);
+      // Log a failed attempt with NO snapshots and NO commit sha. Status is
+      // "failed", so it never counts as a successful import.
       await supabase.from("question_import_history").insert({
         topic: data.topic,
         filename: data.filename,
