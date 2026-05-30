@@ -331,7 +331,7 @@ function QuestionsBrowser() {
   const availableMocks = useMemo(() => {
     const s = new Set<number>();
     effectiveQuestions.forEach((q: FlatQuestion) =>
-      q.usedInMocks.forEach((u) => s.add(u.mockNumber)),
+      (q.usedInMocks ?? []).forEach((u) => s.add(u.mockNumber)),
     );
     return Array.from(s).sort((a, b) => a - b);
   }, [effectiveQuestions]);
