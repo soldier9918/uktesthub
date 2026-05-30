@@ -463,7 +463,7 @@ export const commitCsvImport = createServerFn({ method: "POST" })
   .handler(async ({ data, context }) => {
     await assertAdmin(context.supabase, context.userId);
     const { supabase, userId } = context;
-    const { rows, errors } = parseCsv(data.csvText);
+    const { rows, rowLines, errors } = parseCsv(data.csvText);
     if (rows.length === 0) throw new Error("No valid rows found in CSV");
 
     const path = filePathFor(data.topic);
@@ -472,6 +472,12 @@ export const commitCsvImport = createServerFn({ method: "POST" })
       if (!existing) throw new Error(`Topic file not found in repo: ${path}`);
       const oldFile = JSON.parse(existing.content) as MockFile;
       const newFile = mergeIntoFile(oldFile, rows);
+      const validation = validateImported(rows, rowLines, newFile, data.topic);
+      if (validation.errors.length > 0) {
+        const first = validation.errors.slice(0, 5).map((e) => `• ${e.id ? `[${e.id}] ` : ""}${e.message}`).join("\n");
+        const more = validation.errors.length > 5 ? `\n…and ${validation.errors.length - 5} more.` : "";
+        throw new Error(`Validation failed (${validation.errors.length} error${validation.errors.length === 1 ? "" : "s"}). Fix the CSV and retry:\n${first}${more}`);
+      }
       const diff = diffBanks(bankOf(oldFile), bankOf(newFile));
       const changedIds = diff.changed.map((c) => c.id);
       const addedIds = diff.added.map((q) => String(q.id ?? ""));
