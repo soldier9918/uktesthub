@@ -344,6 +344,60 @@ export type Database = {
         }
         Relationships: []
       }
+      question_import_history: {
+        Row: {
+          commit_sha: string | null
+          commit_url: string | null
+          created_at: string
+          created_by: string | null
+          error_log: string | null
+          filename: string | null
+          id: string
+          new_json: Json | null
+          previous_json: Json | null
+          rolled_back_at: string | null
+          rolled_back_to_commit_sha: string | null
+          row_count: number | null
+          status: string
+          topic: string
+          validation_log: Json | null
+        }
+        Insert: {
+          commit_sha?: string | null
+          commit_url?: string | null
+          created_at?: string
+          created_by?: string | null
+          error_log?: string | null
+          filename?: string | null
+          id?: string
+          new_json?: Json | null
+          previous_json?: Json | null
+          rolled_back_at?: string | null
+          rolled_back_to_commit_sha?: string | null
+          row_count?: number | null
+          status?: string
+          topic: string
+          validation_log?: Json | null
+        }
+        Update: {
+          commit_sha?: string | null
+          commit_url?: string | null
+          created_at?: string
+          created_by?: string | null
+          error_log?: string | null
+          filename?: string | null
+          id?: string
+          new_json?: Json | null
+          previous_json?: Json | null
+          rolled_back_at?: string | null
+          rolled_back_to_commit_sha?: string | null
+          row_count?: number | null
+          status?: string
+          topic?: string
+          validation_log?: Json | null
+        }
+        Relationships: []
+      }
       question_overrides: {
         Row: {
           correct_answer: Json | null
