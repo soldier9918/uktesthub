@@ -776,15 +776,8 @@ function QuestionsBrowser() {
             >
               {previewMutation.isPending ? "Reading…" : "Import CSV"}
             </Button>
-            <Button
-              size="sm"
-              variant="outline"
-              onClick={cleanBadOverrides}
-              disabled={cleaning}
-              title="Delete legacy override rows with blank question text or empty options."
-            >
-              {cleaning ? "Cleaning…" : "Clear bad overrides"}
-            </Button>
+            {/* "Clear bad overrides" removed — `question_overrides` is no longer the live source.
+                The live quiz reads only public/mocks/<topic>.json. Handler kept (deprecated) for one-off cleanup. */}
           </div>
           <p className="mt-2 text-xs text-muted-foreground">
             Export the topic, edit the CSV, then re-upload — you'll see a preview before any changes
