@@ -1028,7 +1028,8 @@ export const runImportSelfTest = createServerFn({ method: "POST" })
     const path = filePathFor(topic);
     type Check = { name: string; ok: boolean; detail?: string };
     const checks: Check[] = [];
-    const roundTripMismatches: { id: string; field: string; before: unknown; after: unknown }[] = [];
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const roundTripMismatches: { id: string; field: string; before: any; after: any }[] = [];
 
     // 1. GitHub connection
     let gh: Awaited<ReturnType<typeof testConnection>> | null = null;
