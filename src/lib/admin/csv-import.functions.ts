@@ -169,12 +169,11 @@ function parseCsv(csvText: string): {
       let anySet = false;
       for (const L of ["A", "B", "C", "D"] as const) {
         const v = pickOption(r, L);
-        if (v !== null) anySet = true;
         opts.push(v ?? "");
       }
-      // Trim trailing empties so a 4-option export round-trips identically.
+      // Trim trailing empties so questions with <4 real options round-trip cleanly.
       while (opts.length && opts[opts.length - 1] === "") opts.pop();
-      if (anySet) {
+      if (opts.length > 0) {
         q.options = opts;
         present.add("options");
       }
