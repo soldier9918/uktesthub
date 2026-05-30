@@ -278,21 +278,35 @@ export const rollbackImport = createServerFn({ method: "POST" })
   });
 
 export const listImportHistory = createServerFn({ method: "GET" })
-  .middleware([requireSupabaseAuth])
   .inputValidator((input) =>
     z.object({
       topic: TopicSchema.optional(),
       limit: z.number().min(1).max(200).default(50),
     }).parse(input ?? {}),
   )
-  .handler(async ({ data, context }) => {
+  .handler(async ({ data }) => {
     try {
-      const { data: isAdmin } = await context.supabase.rpc("has_role", {
-        _user_id: context.userId,
+      // Inline auth so unauthenticated callers get a structured response
+      // instead of the middleware throwing a raw 401 Response.
+      const { getRequestHeader } = await import("@tanstack/react-start/server");
+      const { createClient } = await import("@supabase/supabase-js");
+      const authHeader = getRequestHeader("authorization") ?? getRequestHeader("Authorization");
+      if (!authHeader) return { rows: [], error: "Not signed in" };
+
+      const supabase = createClient(
+        process.env.SUPABASE_URL!,
+        process.env.SUPABASE_PUBLISHABLE_KEY!,
+        { global: { headers: { Authorization: authHeader } }, auth: { persistSession: false } },
+      );
+      const { data: userData, error: userErr } = await supabase.auth.getUser();
+      if (userErr || !userData?.user) return { rows: [], error: "Not signed in" };
+
+      const { data: isAdmin } = await supabase.rpc("has_role", {
+        _user_id: userData.user.id,
         _role: "admin",
       });
       if (!isAdmin) return { rows: [], error: "Forbidden: admin role required" };
-      const { supabase } = context;
+
       let q = supabase
         .from("question_import_history")
         .select("id, topic, filename, commit_sha, commit_url, row_count, status, error_log, created_at, created_by, rolled_back_at")
