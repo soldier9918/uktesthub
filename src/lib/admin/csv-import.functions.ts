@@ -283,6 +283,10 @@ export const commitCsvImport = createServerFn({ method: "POST" })
       if (!existing) throw new Error(`Topic file not found in repo: ${path}`);
       const oldFile = JSON.parse(existing.content) as MockFile;
       const newFile = mergeIntoFile(oldFile, rows);
+      const diff = diffBanks(bankOf(oldFile), bankOf(newFile));
+      const changedIds = diff.changed.map((c) => c.id);
+      const addedIds = diff.added.map((q) => String(q.id ?? ""));
+      const removedIds = diff.removed.map((q) => String(q.id ?? ""));
       const newContent = JSON.stringify(newFile, null, 2) + "\n";
       const { commitSha, commitUrl } = await commitFile({
         filePath: path,
@@ -300,7 +304,7 @@ export const commitCsvImport = createServerFn({ method: "POST" })
           commit_sha: commitSha,
           commit_url: commitUrl,
           row_count: rows.length,
-          validation_log: { parseErrors: errors } as never,
+          validation_log: { parseErrors: errors, changedIds, addedIds, removedIds } as never,
           status: "committed",
           created_by: userId,
         })
@@ -400,13 +404,22 @@ export const listImportHistory = createServerFn({ method: "GET" })
 
       let q = supabase
         .from("question_import_history")
-        .select("id, topic, filename, commit_sha, commit_url, row_count, status, error_log, created_at, created_by, rolled_back_at")
+        .select("id, topic, filename, commit_sha, commit_url, row_count, status, error_log, created_at, created_by, rolled_back_at, validation_log")
         .order("created_at", { ascending: false })
         .limit(data.limit);
       if (data.topic) q = q.eq("topic", data.topic);
       const { data: rows, error } = await q;
       if (error) return { rows: [], error: error.message };
-      return { rows: rows ?? [], error: null as string | null };
+      const enriched = (rows ?? []).map((r) => {
+        const vl = (r.validation_log ?? {}) as { changedIds?: string[]; addedIds?: string[]; removedIds?: string[] };
+        return {
+          ...r,
+          changed_ids: Array.isArray(vl.changedIds) ? vl.changedIds : [],
+          added_ids: Array.isArray(vl.addedIds) ? vl.addedIds : [],
+          removed_ids: Array.isArray(vl.removedIds) ? vl.removedIds : [],
+        };
+      });
+      return { rows: enriched, error: null as string | null };
     } catch (err) {
       console.error("listImportHistory failed:", err);
       return { rows: [], error: err instanceof Error ? err.message : "Unknown error" };

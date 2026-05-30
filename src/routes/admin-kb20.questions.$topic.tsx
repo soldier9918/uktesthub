@@ -906,17 +906,35 @@ function QuestionsBrowser() {
                     <th className="py-1 pr-3">When</th>
                     <th className="py-1 pr-3">File</th>
                     <th className="py-1 pr-3">Rows</th>
+                    <th className="py-1 pr-3">Changed</th>
                     <th className="py-1 pr-3">Commit</th>
                     <th className="py-1 pr-3">Status</th>
                     <th className="py-1 pr-3"></th>
                   </tr>
                 </thead>
                 <tbody>
-                  {(history.data.rows ?? []).map((r) => (
+                  {(history.data.rows ?? []).map((r) => {
+                    const changedIds: string[] = Array.isArray((r as { changed_ids?: string[] }).changed_ids)
+                      ? (r as { changed_ids?: string[] }).changed_ids ?? []
+                      : [];
+                    return (
                     <tr key={r.id} className="border-t border-border align-top">
                       <td className="py-1 pr-3 text-muted-foreground">{new Date(r.created_at).toLocaleString()}</td>
                       <td className="py-1 pr-3">{r.filename ?? "—"}</td>
                       <td className="py-1 pr-3">{r.row_count ?? "—"}</td>
+                      <td className="py-1 pr-3">
+                        {changedIds.length === 0 ? (
+                          <span className="text-muted-foreground">—</span>
+                        ) : (
+                          <span title={changedIds.join(", ")} className="font-mono">
+                            {changedIds.length}
+                            <span className="ml-1 text-muted-foreground">
+                              ({changedIds.slice(0, 5).join(", ")}
+                              {changedIds.length > 5 ? `, +${changedIds.length - 5} more` : ""})
+                            </span>
+                          </span>
+                        )}
+                      </td>
                       <td className="py-1 pr-3">
                         {r.commit_url ? (
                           <a href={r.commit_url} target="_blank" rel="noreferrer" className="font-mono underline">
@@ -957,7 +975,8 @@ function QuestionsBrowser() {
                         )}
                       </td>
                     </tr>
-                  ))}
+                    );
+                  })}
                 </tbody>
               </table>
             </div>
