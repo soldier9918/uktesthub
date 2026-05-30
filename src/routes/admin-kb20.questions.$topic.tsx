@@ -1170,18 +1170,27 @@ function QuestionsBrowser() {
                         </Badge>
                       </td>
                       <td className="py-1 pr-3">
-                        {r.status === "committed" && (
+                        {(r.status === "committed" || r.status === "rolled_back" || r.status === "failed") && (
                           <Button
                             size="sm"
                             variant="outline"
                             disabled={rollbackMutation.isPending}
                             onClick={() => {
-                              if (confirm(`Roll back ${topic} to the state before this import?`)) {
-                                rollbackMutation.mutate(r.id);
+                              const warn = `This will restore the previous JSON file for this topic and commit it to GitHub main.\n\nFile: public/mocks/${topic}.json\n\nProceed?`;
+                              if (!window.confirm(warn)) return;
+                              const isRepeat = r.status === "rolled_back" || r.status === "failed";
+                              if (isRepeat) {
+                                const again = window.confirm(
+                                  r.status === "rolled_back"
+                                    ? "This import was already rolled back. Roll it back AGAIN?"
+                                    : "The previous rollback for this import failed. Retry rollback?",
+                                );
+                                if (!again) return;
                               }
+                              rollbackMutation.mutate({ historyId: r.id, force: isRepeat });
                             }}
                           >
-                            Rollback
+                            {r.status === "rolled_back" ? "Rollback again" : r.status === "failed" ? "Retry rollback" : "Rollback"}
                           </Button>
                         )}
                       </td>
