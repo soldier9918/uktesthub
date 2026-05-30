@@ -253,10 +253,27 @@ function QuestionsBrowser() {
   const [csvText, setCsvText] = useState<string>("");
   const [csvFilename, setCsvFilename] = useState<string>("");
   const [preview, setPreview] = useState<Awaited<ReturnType<typeof previewCsvImport>> | null>(null);
-  const [commitResult, setCommitResult] = useState<{ commitUrl: string; commitSha: string } | null>(null);
+  const [commitResult, setCommitResult] = useState<
+    | {
+        commitUrl: string;
+        commitSha: string;
+        filePath?: string;
+        topic?: string;
+        rowCount?: number;
+        changedCount?: number;
+        addedCount?: number;
+        removedCount?: number;
+        deploymentNote?: string;
+        kind?: "commit" | "rollback";
+      }
+    | null
+  >(null);
+  const [ghTest, setGhTest] = useState<Awaited<ReturnType<typeof testGithubConnection>> | null>(null);
+  const [ghTesting, setGhTesting] = useState(false);
   const previewFn = useServerFn(previewCsvImport);
   const commitFn = useServerFn(commitCsvImport);
   const rollbackFn = useServerFn(rollbackImport);
+  const ghTestFn = useServerFn(testGithubConnection);
   const listFn = useServerFn(listImportHistory);
   const router = useRouter();
   const qc = useQueryClient();
