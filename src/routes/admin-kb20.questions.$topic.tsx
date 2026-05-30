@@ -17,6 +17,7 @@ import {
   commitCsvImport,
   rollbackImport,
   listImportHistory,
+  testGithubConnection,
 } from "@/lib/admin/csv-import.functions";
 
 type RawQuestion = Record<string, unknown> & {
