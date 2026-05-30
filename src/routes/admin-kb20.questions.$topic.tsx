@@ -254,6 +254,7 @@ function QuestionsBrowser() {
   const fileInputRef = useRef<HTMLInputElement>(null);
   const [csvText, setCsvText] = useState<string>("");
   const [csvFilename, setCsvFilename] = useState<string>("");
+  const [importMode, setImportMode] = useState<"patch" | "replace">("patch");
   const [preview, setPreview] = useState<Awaited<ReturnType<typeof previewCsvImport>> | null>(null);
   const [commitResult, setCommitResult] = useState<
     | {
