@@ -635,7 +635,9 @@ export const commitCsvImport = createServerFn({ method: "POST" })
       if (!existing) throw new Error(`Topic file not found in repo: ${path}`);
       const oldFile = JSON.parse(existing.content) as MockFile;
       const newFile = mergeIntoFile(oldFile, rows);
-      const validation = validateImported(rows, rowLines, newFile, data.topic);
+      const mergedById = new Map(bankOf(newFile).filter((q) => q.id).map((q) => [String(q.id), q]));
+      const rowIds = rows.map((r) => String(r.id));
+      const validation = validateImported(mergedById, rowIds, rowLines, newFile, data.topic);
       if (validation.errors.length > 0) {
         const first = validation.errors.slice(0, 5).map((e) => `• ${e.id ? `[${e.id}] ` : ""}${e.message}`).join("\n");
         const more = validation.errors.length > 5 ? `\n…and ${validation.errors.length - 5} more.` : "";
