@@ -1,28 +1,86 @@
-## Problem
 
-`public/mocks/seru.json` only contains a 14-question bank, so every one of the 45 SERU mocks resolves to 14 questions instead of the standard 24 (the runtime drops missing IDs, so each mock silently shrinks).
+## Goal
 
-## Fix
+`public/mocks/*.json` becomes the only live source of quiz data. Admin CSV uploads commit directly to GitHub `main`, which auto-deploys. The database is used only for import history, rollback snapshots, and logs.
 
-1. **Grow the SERU bank** to ~260 questions covering authentic TfL SERU topics:
-   - London geography & landmarks (English comprehension style)
-   - Safety, equality & disability awareness (Equality Act 2010, assistance dogs, wheelchair users)
-   - Customer service & professional conduct
-   - PHV licensing rules (badge/disc display, insurance, MOT, hire & reward)
-   - Route planning, congestion charge, ULEZ, bus lanes
-   - Safeguarding (children & vulnerable adults)
-   - Map reading and signage comprehension
-   - Numeracy (fares, time, distance)
-   
-   Reuse the existing question types already in the file (`dropdown_blanks`, `multiple_choice`) plus `true_false` and `multiple_response` where appropriate. Keep IDs sequential: `s-mc-0001…`, `s-db-0001…`, `s-tf-0001…`, `s-mr-0001…`.
+## Step 1 — One-time migration of existing overrides
 
-2. **Rebuild the 45 mocks** with exactly 24 questions each via round-robin sampling from the expanded bank so each mock has a balanced mix of types and no mock repeats the same question twice.
+Before disabling the override system, merge every row in `question_overrides` into the matching `public/mocks/<topic>.json` so no admin edits are lost.
 
-3. **Verify** by re-reading the file and asserting `len(mock.questionIds) == 24` for all 45 mocks and that every referenced ID exists in the bank.
+1. Script (`scripts/migrate_overrides_to_json.mjs`) connects to Supabase, pages through all overrides, and for each topic:
+   - Loads the topic JSON file.
+   - Applies overrides field-by-field (mirroring `applyOverrideToQuestionRecord`) onto each matching question.
+   - Drops questions where `disabled = true`.
+   - Writes the file back.
+2. Run it once locally in this sandbox — the modified JSONs commit through the normal Lovable flow.
+
+## Step 2 — New database tables
+
+Single new table `question_import_history` (rollback snapshots live here):
+
+| column | purpose |
+|---|---|
+| `id` uuid pk | |
+| `topic` text | which topic file was changed |
+| `filename` text | uploaded CSV filename |
+| `previous_json` jsonb | snapshot of the file before this import (used for rollback) |
+| `new_json` jsonb | snapshot committed |
+| `commit_sha` text | GitHub commit sha |
+| `commit_url` text | direct link to the commit |
+| `row_count` int | number of questions in the new file |
+| `validation_log` jsonb | warnings / non-blocking findings |
+| `error_log` text | populated only if the commit failed |
+| `status` text | `committed`, `failed`, `rolled_back` |
+| `rolled_back_at` timestamptz nullable | |
+| `rolled_back_to_commit_sha` text nullable | |
+| `created_by` uuid | admin user |
+| `created_at` timestamptz | |
+
+Admin-only RLS (existing `has_role(auth.uid(), 'admin')` pattern). `question_overrides` table is kept for reference but no longer read at runtime.
+
+## Step 3 — Server functions (`src/lib/admin/csv-import.functions.ts`)
+
+All `createServerFn` + `requireSupabaseAuth`, gated by `has_role('admin')`. GitHub access uses the new `GITHUB_TOKEN` secret against `soldier9918/uktesthub @ main` via the GitHub Contents REST API (fetch-based, Worker-safe).
+
+- `previewCsvImport({ topic, csvText })` — parses CSV, runs `validateTopicBank`, returns `{ oldBank, newBank, findings, diff }` for the preview UI. No writes.
+- `commitCsvImport({ topic, csvText, filename })`:
+  1. Re-validate; block on hard errors.
+  2. Fetch current `public/mocks/<topic>.json` from GitHub (to get its sha).
+  3. Build the new JSON in the existing v2 shape (`{ topic, bank, tests }`), preserving the existing `tests` structure where possible.
+  4. PUT to `/repos/soldier9918/uktesthub/contents/public/mocks/<topic>.json` with the new content + base64.
+  5. Insert `question_import_history` row with snapshots + commit url.
+  6. Return `{ commitUrl, commitSha, historyId }`.
+- `rollbackImport({ historyId })` — loads `previous_json` from history, PUTs it back to GitHub as a new commit, marks the history row `rolled_back`, inserts a new history row for the revert commit.
+- `listImportHistory({ topic?, limit })` — paginated history view.
+
+## Step 4 — Remove runtime override system
+
+- `src/lib/overrides.ts`: gut `applyOverrides` so it becomes a no-op pass-through (keeps existing call-sites working without churn). `useOverrides` returns `null`. This makes JSON files the only source.
+- Keep the `applyOverrideToQuestionRecord` export only inside the migration script (copy it there) and delete from runtime.
+- The existing admin "Import / Export" page that writes to `question_overrides` is replaced by the new flow.
+
+## Step 5 — New admin UI
+
+Route: `/admin-kb20/csv-import` (linked from `/admin-kb20/categories`).
+
+Flow on one page:
+1. Pick topic → drop CSV file.
+2. Live preview table: side-by-side **Current question** vs **New question**, with added/removed/changed badges and any validation findings.
+3. "Commit to GitHub" button → calls `commitCsvImport`, shows commit URL + success toast.
+4. "Import history" panel below: table of past imports with commit links and a **Rollback** button per row.
+
+## Step 6 — Deploy
+
+GitHub commit on `main` triggers your existing Lovable GitHub auto-deploy. No extra wiring needed.
+
+## Out of scope (intentional)
+
+- I will not touch Road Signs' special-case logic in `overrides.ts` separately — once overrides are a no-op, road signs are already locked to static JSON, which is exactly the desired behaviour.
+- No migration of the `question_overrides` table schema beyond stopping reads.
 
 ## Technical notes
 
-- File: `public/mocks/seru.json` (v2 shape: `{ version, topic, bank, mocks }`)
-- Loader: `src/data/mocks/index.ts` — silently skips question IDs that aren't in the bank, which is why the shortage was invisible.
-- No code changes needed; data-only fix.
-- Written via a Python script run from `scripts/` (not committed) so the JSON is deterministic.
+- GitHub Contents API is fetch-based and runs fine in Cloudflare Worker SSR (no Node-only deps).
+- CSV parsing: use `papaparse` (already pure JS, Worker-safe). Need to `bun add papaparse @types/papaparse`.
+- All large JSON snapshots stored as `jsonb` — fine up to a few MB per row, well within Postgres limits for these files.
+- `GITHUB_TOKEN` is server-only; read inside `.handler()` via `process.env.GITHUB_TOKEN`.

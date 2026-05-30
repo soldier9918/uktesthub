@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { supabase } from "@/integrations/supabase/client";
 
 export type QuestionOverride = {
   topic: string;
@@ -14,45 +13,13 @@ export type QuestionOverride = {
   disabled?: boolean | null;
 };
 
-let cache: Map<string, QuestionOverride> | null = null;
-let inflight: Promise<Map<string, QuestionOverride>> | null = null;
-
-function key(topic: string, qid: string) {
-  return `${topic}::${qid}`;
-}
+const EMPTY_MAP = new Map<string, QuestionOverride>();
 
 export async function loadOverrides(): Promise<Map<string, QuestionOverride>> {
-  if (cache) return cache;
-  if (inflight) return inflight;
-  inflight = (async () => {
-    const map = new Map<string, QuestionOverride>();
-    const PAGE = 1000;
-    let from = 0;
-    // Paginate to bypass Supabase's default 1000-row cap.
-    while (true) {
-      const { data, error } = await supabase
-        .from("question_overrides")
-        .select("topic,question_id,question,options,correct_answer,explanation,image,image_alt,type,disabled")
-        .order("topic", { ascending: true })
-        .order("question_id", { ascending: true })
-        .range(from, from + PAGE - 1);
-      if (error || !data) break;
-      for (const row of data) {
-        map.set(key(row.topic, row.question_id), row as unknown as QuestionOverride);
-      }
-      if (data.length < PAGE) break;
-      from += PAGE;
-    }
-    cache = map;
-    inflight = null;
-    return map;
-  })();
-  return inflight;
+  return EMPTY_MAP;
 }
 
 export function invalidateOverrides() {
-  cache = null;
-  inflight = null;
   if (typeof window !== "undefined") {
     window.dispatchEvent(new Event("question-overrides-invalidated"));
   }
@@ -67,97 +34,26 @@ function hideRoadSignAnswerInPrompt<T extends Record<string, unknown>>(quizTopic
   return { ...question, question: "What does this road sign mean?" };
 }
 
+// Kept for backwards compatibility with any caller that still imports it.
 export function applyOverrideToQuestionRecord<T extends Record<string, unknown>>(
   question: T,
-  override: QuestionOverride | undefined,
+  _override: QuestionOverride | undefined,
 ): T {
-  if (!override) return question;
-  const next: Record<string, unknown> = { ...question };
-  const hasContentOverride =
-    override.question != null ||
-    Array.isArray(override.options) ||
-    override.correct_answer != null ||
-    override.explanation != null ||
-    override.type != null;
-  if (override.type != null) next.type = override.type;
-  if (override.question != null) {
-    if ("template" in next && !("question" in next)) next.template = override.question;
-    else if ("prompt" in next && !("question" in next)) next.prompt = override.question;
-    else next.question = override.question;
-  }
-  if (Array.isArray(override.options)) next.options = override.options;
-  if (override.correct_answer != null) {
-    const t = next.type;
-    if ((t === "multiple-response" || t === "multiple_response") && Array.isArray(override.correct_answer)) {
-      next.correctAnswers = override.correct_answer;
-      delete next.correctAnswer;
-    } else {
-      next.correctAnswer = override.correct_answer;
-      if (!Array.isArray(override.correct_answer)) delete next.correctAnswers;
-    }
-  }
-  if (override.explanation != null) next.explanation = override.explanation;
-  if (override.image != null) {
-    next.image = override.image;
-  } else if (hasContentOverride) {
-    delete next.image;
-    if (next.type === "image_question" || next.type === "image-question") next.type = "mcq";
-  }
-  if (override.image_alt != null) next.imageAlt = override.image_alt;
-  else if (hasContentOverride && override.image == null) delete next.imageAlt;
-  return next as T;
+  return question;
 }
 
-export function applyOverrides<T extends AnyQuiz>(quiz: T, map: Map<string, QuestionOverride>): T {
-  // Road Signs image questions have hand-reviewed static image/question pairings.
-  // Do not apply saved overrides here, because old admin overrides can swap the
-  // image, text, or answer independently and break those fixed pairings again.
-  if (quiz.topic === "road-signs") {
-    return {
-      ...quiz,
-      questions: quiz.questions.map((q) => hideRoadSignAnswerInPrompt(quiz.topic, q)),
-    } as T;
-  }
-
-  let mutated = false;
-  const nextQuestions: typeof quiz.questions = [];
-  for (const q of quiz.questions) {
-    const srcId = (q as { sourceId?: string }).sourceId;
-    const o =
-      (srcId ? map.get(key(quiz.topic, srcId)) : undefined) ??
-      map.get(key(quiz.topic, String(q.id)));
-    if (!o) {
-      nextQuestions.push(hideRoadSignAnswerInPrompt(quiz.topic, q));
-      continue;
-    }
-    if (o.disabled) {
-      mutated = true;
-      continue; // skip disabled question entirely from live quiz
-    }
-    mutated = true;
-    nextQuestions.push(hideRoadSignAnswerInPrompt(quiz.topic, applyOverrideToQuestionRecord(q, o)));
-  }
-  if (!mutated) return quiz;
-  return { ...quiz, questions: nextQuestions } as T;
+export function applyOverrides<T extends AnyQuiz>(quiz: T, _map: Map<string, QuestionOverride>): T {
+  return {
+    ...quiz,
+    questions: quiz.questions.map((q) => hideRoadSignAnswerInPrompt(quiz.topic, q)),
+  } as T;
 }
 
 export function useOverrides() {
-  const [map, setMap] = useState<Map<string, QuestionOverride> | null>(cache);
+  // Returns a stable empty map so existing callers keep working.
+  const [map] = useState<Map<string, QuestionOverride>>(EMPTY_MAP);
   useEffect(() => {
-    let mounted = true;
-    const refresh = () => loadOverrides().then((m) => {
-      if (mounted) setMap(new Map(m));
-    });
-    // Always force a fresh DB fetch on mount so other tabs / external edits
-    // can't leave the page showing a stale module-level cache.
-    cache = null;
-    inflight = null;
-    refresh();
-    window.addEventListener("question-overrides-invalidated", refresh);
-    return () => {
-      mounted = false;
-      window.removeEventListener("question-overrides-invalidated", refresh);
-    };
+    // No-op: overrides system is disabled.
   }, []);
   return map;
 }

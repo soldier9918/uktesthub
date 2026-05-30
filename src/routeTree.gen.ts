@@ -77,6 +77,7 @@ import { Route as AdminKb20ImportExportRouteImport } from './routes/admin-kb20.i
 import { Route as AdminKb20ImagesRouteImport } from './routes/admin-kb20.images'
 import { Route as AdminKb20GaAnalyticsRouteImport } from './routes/admin-kb20.ga-analytics'
 import { Route as AdminKb20DiagnosticsRouteImport } from './routes/admin-kb20.diagnostics'
+import { Route as AdminKb20CsvImportRouteImport } from './routes/admin-kb20.csv-import'
 import { Route as AdminKb20CategoryCheckRouteImport } from './routes/admin-kb20.category-check'
 import { Route as AdminKb20CategoriesRouteImport } from './routes/admin-kb20.categories'
 import { Route as AdminKb20BulkEditRouteImport } from './routes/admin-kb20.bulk-edit'
@@ -443,6 +444,11 @@ const AdminKb20DiagnosticsRoute = AdminKb20DiagnosticsRouteImport.update({
   path: '/admin-kb20/diagnostics',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AdminKb20CsvImportRoute = AdminKb20CsvImportRouteImport.update({
+  id: '/admin-kb20/csv-import',
+  path: '/admin-kb20/csv-import',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AdminKb20CategoryCheckRoute = AdminKb20CategoryCheckRouteImport.update({
   id: '/admin-kb20/category-check',
   path: '/admin-kb20/category-check',
@@ -576,6 +582,7 @@ export interface FileRoutesByFullPath {
   '/admin-kb20/bulk-edit': typeof AdminKb20BulkEditRoute
   '/admin-kb20/categories': typeof AdminKb20CategoriesRoute
   '/admin-kb20/category-check': typeof AdminKb20CategoryCheckRoute
+  '/admin-kb20/csv-import': typeof AdminKb20CsvImportRoute
   '/admin-kb20/diagnostics': typeof AdminKb20DiagnosticsRoute
   '/admin-kb20/ga-analytics': typeof AdminKb20GaAnalyticsRoute
   '/admin-kb20/images': typeof AdminKb20ImagesRoute
@@ -660,6 +667,7 @@ export interface FileRoutesByTo {
   '/admin-kb20/bulk-edit': typeof AdminKb20BulkEditRoute
   '/admin-kb20/categories': typeof AdminKb20CategoriesRoute
   '/admin-kb20/category-check': typeof AdminKb20CategoryCheckRoute
+  '/admin-kb20/csv-import': typeof AdminKb20CsvImportRoute
   '/admin-kb20/diagnostics': typeof AdminKb20DiagnosticsRoute
   '/admin-kb20/ga-analytics': typeof AdminKb20GaAnalyticsRoute
   '/admin-kb20/images': typeof AdminKb20ImagesRoute
@@ -744,6 +752,7 @@ export interface FileRoutesById {
   '/admin-kb20/bulk-edit': typeof AdminKb20BulkEditRoute
   '/admin-kb20/categories': typeof AdminKb20CategoriesRoute
   '/admin-kb20/category-check': typeof AdminKb20CategoryCheckRoute
+  '/admin-kb20/csv-import': typeof AdminKb20CsvImportRoute
   '/admin-kb20/diagnostics': typeof AdminKb20DiagnosticsRoute
   '/admin-kb20/ga-analytics': typeof AdminKb20GaAnalyticsRoute
   '/admin-kb20/images': typeof AdminKb20ImagesRoute
@@ -832,6 +841,7 @@ export interface FileRouteTypes {
     | '/admin-kb20/bulk-edit'
     | '/admin-kb20/categories'
     | '/admin-kb20/category-check'
+    | '/admin-kb20/csv-import'
     | '/admin-kb20/diagnostics'
     | '/admin-kb20/ga-analytics'
     | '/admin-kb20/images'
@@ -916,6 +926,7 @@ export interface FileRouteTypes {
     | '/admin-kb20/bulk-edit'
     | '/admin-kb20/categories'
     | '/admin-kb20/category-check'
+    | '/admin-kb20/csv-import'
     | '/admin-kb20/diagnostics'
     | '/admin-kb20/ga-analytics'
     | '/admin-kb20/images'
@@ -999,6 +1010,7 @@ export interface FileRouteTypes {
     | '/admin-kb20/bulk-edit'
     | '/admin-kb20/categories'
     | '/admin-kb20/category-check'
+    | '/admin-kb20/csv-import'
     | '/admin-kb20/diagnostics'
     | '/admin-kb20/ga-analytics'
     | '/admin-kb20/images'
@@ -1086,6 +1098,7 @@ export interface RootRouteChildren {
   AdminKb20BulkEditRoute: typeof AdminKb20BulkEditRoute
   AdminKb20CategoriesRoute: typeof AdminKb20CategoriesRoute
   AdminKb20CategoryCheckRoute: typeof AdminKb20CategoryCheckRoute
+  AdminKb20CsvImportRoute: typeof AdminKb20CsvImportRoute
   AdminKb20DiagnosticsRoute: typeof AdminKb20DiagnosticsRoute
   AdminKb20GaAnalyticsRoute: typeof AdminKb20GaAnalyticsRoute
   AdminKb20ImagesRoute: typeof AdminKb20ImagesRoute
@@ -1591,6 +1604,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AdminKb20DiagnosticsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/admin-kb20/csv-import': {
+      id: '/admin-kb20/csv-import'
+      path: '/admin-kb20/csv-import'
+      fullPath: '/admin-kb20/csv-import'
+      preLoaderRoute: typeof AdminKb20CsvImportRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/admin-kb20/category-check': {
       id: '/admin-kb20/category-check'
       path: '/admin-kb20/category-check'
@@ -1842,6 +1862,7 @@ const rootRouteChildren: RootRouteChildren = {
   AdminKb20BulkEditRoute: AdminKb20BulkEditRoute,
   AdminKb20CategoriesRoute: AdminKb20CategoriesRoute,
   AdminKb20CategoryCheckRoute: AdminKb20CategoryCheckRoute,
+  AdminKb20CsvImportRoute: AdminKb20CsvImportRoute,
   AdminKb20DiagnosticsRoute: AdminKb20DiagnosticsRoute,
   AdminKb20GaAnalyticsRoute: AdminKb20GaAnalyticsRoute,
   AdminKb20ImagesRoute: AdminKb20ImagesRoute,
@@ -1871,12 +1892,3 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { createStart } from '@tanstack/react-start'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-  }
-}
