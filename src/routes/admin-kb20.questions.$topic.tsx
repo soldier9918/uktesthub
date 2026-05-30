@@ -487,15 +487,30 @@ function QuestionsBrowser() {
   });
 
   const commitMutation = useMutation({
-    mutationFn: () =>
-      commitFn({ data: { topic, csvText, filename: csvFilename || "upload.csv" } }),
+    mutationFn: () => {
+      const expectedSha = (preview as { existingSha?: string } | null)?.existingSha;
+      return commitFn({
+        data: { topic, csvText, filename: csvFilename || "upload.csv", expectedSha },
+      });
+    },
     onSuccess: (data) => {
-      setCommitResult({ commitUrl: data.commitUrl, commitSha: data.commitSha });
+      setCommitResult({
+        commitUrl: data.commitUrl,
+        commitSha: data.commitSha,
+        filePath: data.filePath,
+        topic: data.topic,
+        rowCount: data.rowCount,
+        changedCount: data.changedCount,
+        addedCount: data.addedCount,
+        removedCount: data.removedCount,
+        deploymentNote: data.deploymentNote,
+        kind: "commit",
+      });
       setPreview(null);
       setCsvText("");
       setCsvFilename("");
       invalidateTopicFileCache(topic);
-      setImportMsg("Committed. Refreshing admin questions from GitHub main…");
+      setImportMsg(null);
       qc.invalidateQueries({ queryKey: ["import-history", topic] });
       router.invalidate();
     },
@@ -503,13 +518,43 @@ function QuestionsBrowser() {
   });
 
   const rollbackMutation = useMutation({
-    mutationFn: (historyId: string) => rollbackFn({ data: { historyId } }),
+    mutationFn: (vars: { historyId: string; force?: boolean }) =>
+      rollbackFn({ data: { historyId: vars.historyId, force: vars.force } }),
     onSuccess: (data) => {
-      setCommitResult({ commitUrl: data.commitUrl, commitSha: data.commitSha });
+      setCommitResult({
+        commitUrl: data.commitUrl,
+        commitSha: data.commitSha,
+        filePath: data.filePath,
+        topic: data.topic,
+        deploymentNote: data.deploymentNote,
+        kind: "rollback",
+      });
+      invalidateTopicFileCache(topic);
+      setImportMsg(null);
       qc.invalidateQueries({ queryKey: ["import-history", topic] });
+      router.invalidate();
     },
     onError: (err: Error) => setImportMsg(`Rollback failed: ${err.message}`),
   });
+
+  const runGithubTest = async () => {
+    setGhTesting(true);
+    setGhTest(null);
+    try {
+      const result = await ghTestFn({ data: undefined as never });
+      setGhTest(result);
+    } catch (e) {
+      setGhTest({
+        ok: false,
+        token: { present: false },
+        repo: { ok: false, full: "", error: e instanceof Error ? e.message : String(e) },
+        branch: { ok: false, name: "" },
+        contentsWrite: { ok: false },
+      });
+    } finally {
+      setGhTesting(false);
+    }
+  };
 
   const history = useQuery({
     queryKey: ["import-history", topic],
