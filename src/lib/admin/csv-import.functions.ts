@@ -2,7 +2,7 @@ import { createServerFn } from "@tanstack/react-start";
 import { z } from "zod";
 import Papa from "papaparse";
 import { requireSupabaseAuth } from "@/integrations/supabase/auth-middleware";
-import { commitFile, getFile, listDir } from "@/lib/admin/github.server";
+import { commitFile, getFile, listDir, testConnection } from "@/lib/admin/github.server";
 
 // Use `any` for question records — the on-disk schema is too polymorphic to
 // type fully here, and TanStack's serializer rejects `unknown` index sigs.
