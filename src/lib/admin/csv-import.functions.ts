@@ -443,12 +443,14 @@ function validateImported(
     // ----- Road Signs topic-specific protection -----
     if (topic === "road-signs" && typeof q.image === "string" && q.image.trim()) {
       const img = q.image.trim();
-      if (!img.startsWith("/road-signs/")) {
-        push(errors, "image", `Road Signs image path must start with "/road-signs/" — got "${img}".`);
+      const isValidPrefix = img.startsWith("/road-signs/") || img.startsWith("/motorway-rules/");
+      if (!isValidPrefix) {
+        push(errors, "image", `Road Signs image path must start with "/road-signs/" or "/motorway-rules/" — got "${img}".`);
       } else if (roadSignFiles) {
-        const name = img.replace(/^\/road-signs\//, "").split("?")[0].split("#")[0];
+        const prefix = img.startsWith("/road-signs/") ? "/road-signs/" : "/motorway-rules/";
+        const name = img.replace(new RegExp(`^${prefix.replace("/", "\\/")}`), "").split("?")[0].split("#")[0];
         if (!roadSignFiles.has(name)) {
-          push(errors, "image", `Road Signs image file not found in repo: public/road-signs/${name}.`);
+          push(errors, "image", `Road Signs image file not found in repo: public${prefix}${name}.`);
         }
       }
       if (!q.imageAlt || typeof q.imageAlt !== "string" || !q.imageAlt.trim()) {
@@ -618,12 +620,18 @@ function bankOf(file: MockFile): AnyQ[] {
 
 const TopicSchema = z.string().min(1).max(120).regex(/^[a-z0-9-]+$/);
 
-/** For topic === "road-signs" load directory listing once for path validation. */
+/** For topic === "road-signs" load directory listings for both image dirs. */
 async function loadRoadSignFiles(topic: string): Promise<Set<string> | null> {
   if (topic !== "road-signs") return null;
   try {
-    const names = await listDir("public/road-signs");
-    return new Set((names ?? []).map((n) => n));
+    const [rsNames, mwNames] = await Promise.all([
+      listDir("public/road-signs"),
+      listDir("public/motorway-rules"),
+    ]);
+    const set = new Set<string>();
+    (rsNames ?? []).forEach((n) => set.add(n));
+    (mwNames ?? []).forEach((n) => set.add(n));
+    return set;
   } catch (e) {
     console.warn("loadRoadSignFiles failed:", e);
     return null;
