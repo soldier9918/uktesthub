@@ -4,7 +4,10 @@ import Papa from "papaparse";
 import { requireSupabaseAuth } from "@/integrations/supabase/auth-middleware";
 import { commitFile, getFile } from "@/lib/admin/github.server";
 
-type AnyQ = Record<string, unknown> & { id?: string; type?: string };
+// Use `any` for question records — the on-disk schema is too polymorphic to
+// type fully here, and TanStack's serializer rejects `unknown` index sigs.
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+type AnyQ = Record<string, any> & { id?: string; type?: string };
 type V2File = {
   version: 2;
   topic: string;
@@ -21,7 +24,11 @@ function filePathFor(topic: string) {
   return `public/mocks/${topic}.json`;
 }
 
-async function assertAdmin(supabase: ReturnType<typeof requireSupabaseAuth> extends never ? never : any, userId: string) {
+async function assertAdmin(
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  supabase: any,
+  userId: string,
+) {
   const { data } = await supabase.rpc("has_role", { _user_id: userId, _role: "admin" });
   if (!data) throw new Error("Forbidden: admin role required");
 }
