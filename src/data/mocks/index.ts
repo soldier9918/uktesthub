@@ -185,6 +185,8 @@ export const QUESTIONS_PER_MOCK = 24;
 // ---------- Lazy loader for full mock files ----------
 
 // Per-topic in-memory cache. Stores the raw file (deduped fetch promise).
+// Runtime quiz pages use this cache; admin reads bypass it so CSV commits are
+// visible from GitHub main without waiting for the next static deploy/cache.
 const fileCache = new Map<string, Promise<MockFile | undefined>>();
 
 function isV2(file: MockFile): file is V2File {
@@ -208,25 +210,31 @@ function resolveMockUrl(path: string): string {
   return new URL(path, base).toString();
 }
 
+async function fetchMockFile(url: string, onFailure?: () => void): Promise<MockFile | undefined> {
+  try {
+    const res = await fetch(url);
+    if (!res.ok) return undefined;
+    return (await res.json()) as MockFile;
+  } catch {
+    onFailure?.();
+    return undefined;
+  }
+}
+
 async function loadTopicFile(topic: string): Promise<MockFile | undefined> {
   const entry = buildTopicEntry(topic);
   if (!entry) return undefined;
   const cached = fileCache.get(topic);
   if (cached) return cached;
   const url = resolveMockUrl(`/mocks/${entry.file}`);
-  const promise = (async () => {
-    try {
-      const res = await fetch(url);
-      if (!res.ok) return undefined;
-      return (await res.json()) as MockFile;
-    } catch {
-      // Drop failed fetches from the cache so retries are possible.
-      fileCache.delete(topic);
-      return undefined;
-    }
-  })();
+  const promise = fetchMockFile(url, () => fileCache.delete(topic));
   fileCache.set(topic, promise);
   return promise;
+}
+
+export function invalidateTopicFileCache(topic?: string) {
+  if (topic) fileCache.delete(topic);
+  else fileCache.clear();
 }
 
 function extractMockFromFile(
@@ -277,7 +285,26 @@ export async function loadMockBySlug(slug: string): Promise<MockTest | undefined
 export async function loadTopicFileForAdmin(
   topic: string,
 ): Promise<MockFile | undefined> {
-  return loadTopicFile(topic);
+  const entry = buildTopicEntry(topic);
+  if (!entry) return undefined;
+
+  // Admin must show the same source of truth that CSV import writes to. Fetch
+  // the committed file from GitHub main first, then fall back to the deployed
+  // static asset if GitHub is temporarily unavailable.
+  const githubUrl = `https://raw.githubusercontent.com/soldier9918/uktesthub/main/public/mocks/${entry.file}?t=${Date.now()}`;
+  const fresh = await fetchMockFile(githubUrl);
+  if (fresh) {
+    fileCache.set(topic, Promise.resolve(fresh));
+    return fresh;
+  }
+
+  const deployedUrl = `${resolveMockUrl(`/mocks/${entry.file}`)}?t=${Date.now()}`;
+  const deployed = await fetchMockFile(deployedUrl);
+  if (deployed) {
+    fileCache.set(topic, Promise.resolve(deployed));
+    return deployed;
+  }
+  return undefined;
 }
 
 /**

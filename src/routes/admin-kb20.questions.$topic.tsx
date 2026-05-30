@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import { createFileRoute, Link, notFound } from "@tanstack/react-router";
+import { createFileRoute, Link, notFound, useRouter } from "@tanstack/react-router";
 import { useServerFn } from "@tanstack/react-start";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -48,7 +48,7 @@ type V1 = {
 };
 type AnyFile = V1 | V2;
 
-import { loadTopicFileForAdmin } from "@/data/mocks";
+import { invalidateTopicFileCache, loadTopicFileForAdmin } from "@/data/mocks";
 
 type MockUsage = { mockNumber: number; slot: number; sourceQid?: string };
 
@@ -85,7 +85,11 @@ function normaliseType(t: string | undefined): string {
   return x === "multiple-choice" ? "mcq" : x;
 }
 
-function describeQuestion(r: RawQuestion): string {
+function describeQuestion(r: RawQuestion, topic?: string): string {
+  const t = normaliseType(r.type);
+  if (topic === "road-signs" && t === "image-question" && typeof r.image === "string" && r.image) {
+    return "What does this road sign mean?";
+  }
   return (r.question || r.template || r.prompt || "").toString();
 }
 
@@ -155,7 +159,7 @@ function flatten(file: AnyFile): FlatQuestion[] {
     return v2.bank.map((q) => ({
       id: q.id,
       type: normaliseType(q.type),
-      question: describeQuestion(q),
+      question: describeQuestion(q, v2.topic),
       explanation: (q.explanation || "").toString(),
       image: q.image,
       imageAlt: q.imageAlt,
@@ -172,7 +176,7 @@ function flatten(file: AnyFile): FlatQuestion[] {
       out.push({
         id: q.id ?? `${t.mockNumber}-${i + 1}`,
         type: normaliseType(q.type),
-        question: describeQuestion(q),
+          question: describeQuestion(q, v1.topic),
         explanation: (q.explanation || "").toString(),
         image: q.image,
         imageAlt: q.imageAlt,
@@ -255,6 +259,7 @@ function QuestionsBrowser() {
   const commitFn = useServerFn(commitCsvImport);
   const rollbackFn = useServerFn(rollbackImport);
   const listFn = useServerFn(listImportHistory);
+  const router = useRouter();
   const qc = useQueryClient();
   const overrides = useOverrides();
   void bump;
@@ -267,7 +272,7 @@ function QuestionsBrowser() {
       return {
         ...q,
         raw,
-        question: describeQuestion(raw),
+        question: describeQuestion(raw, topic),
         explanation: (raw.explanation || "").toString(),
         image: raw.image,
         imageAlt: raw.imageAlt,
@@ -473,8 +478,10 @@ function QuestionsBrowser() {
       setPreview(null);
       setCsvText("");
       setCsvFilename("");
-      setImportMsg(null);
+      invalidateTopicFileCache(topic);
+      setImportMsg("Committed. Refreshing admin questions from GitHub main…");
       qc.invalidateQueries({ queryKey: ["import-history", topic] });
+      router.invalidate();
     },
     onError: (err: Error) => setImportMsg(`Commit failed: ${err.message}`),
   });
