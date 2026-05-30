@@ -315,13 +315,31 @@ function normalizeCorrectAnswer(ca: unknown, options: unknown[]): unknown {
   return ca;
 }
 
+/** Extract significant keywords from a road-signs image filename for semantic
+ *  comparison against question text. e.g. "/road-signs/give_way_to_traffic.png"
+ *  → ["give","way","traffic"]. Skips very short and noise tokens. */
+const RS_STOPWORDS = new Set([
+  "the","a","an","of","to","on","in","and","or","for","with","at","by","is",
+  "are","be","road","sign","signs","png","jpg","jpeg","webp","svg",
+  "1","2","3","4","5","6","7","8","9","0",
+]);
+function roadSignKeywords(imagePath: string): string[] {
+  const base = imagePath.replace(/^.*\//, "").replace(/\.[a-z0-9]+$/i, "");
+  return base
+    .toLowerCase()
+    .split(/[_\-\s]+/)
+    .filter((w) => w.length >= 3 && !RS_STOPWORDS.has(w));
+}
+
 function validateImported(
   mergedById: Map<string, AnyQ>,
   rowIds: string[],
   rowLines: number[],
   newFile: MockFile,
   topic: string,
+  roadSignFiles: Set<string> | null,
 ): ValidationResult {
+
   const errors: Issue[] = [];
   const warnings: Issue[] = [];
   const seen = new Map<string, number>();
