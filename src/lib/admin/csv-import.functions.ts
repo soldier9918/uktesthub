@@ -33,6 +33,43 @@ async function assertAdmin(
   if (!data) throw new Error("Forbidden: admin role required");
 }
 
+async function getAuthenticatedAdminClient() {
+  const { getRequestHeader } = await import("@tanstack/react-start/server");
+  const { createClient } = await import("@supabase/supabase-js");
+  const authHeader = getRequestHeader("authorization") ?? getRequestHeader("Authorization");
+  if (!authHeader?.startsWith("Bearer ")) return { error: "Not signed in" } as const;
+
+  const supabaseUrl = process.env.SUPABASE_URL;
+  const supabaseKey = process.env.SUPABASE_PUBLISHABLE_KEY;
+  if (!supabaseUrl || !supabaseKey) return { error: "Backend environment is not configured" } as const;
+
+  const supabase = createClient(supabaseUrl, supabaseKey, {
+    global: { headers: { Authorization: authHeader } },
+    auth: { persistSession: false, autoRefreshToken: false },
+  });
+  const token = authHeader.replace("Bearer ", "");
+  const { data: userData, error: userErr } = await supabase.auth.getUser(token);
+  if (userErr || !userData?.user) return { error: "Not signed in" } as const;
+  const { data: isAdmin, error: roleErr } = await supabase.rpc("has_role", {
+    _user_id: userData.user.id,
+    _role: "admin",
+  });
+  if (roleErr) return { error: roleErr.message } as const;
+  if (!isAdmin) return { error: "Forbidden: admin role required" } as const;
+  return { supabase, userId: userData.user.id, error: null } as const;
+}
+
+function emptyPreview(error: string, parseErrors: string[] = []) {
+  return {
+    error,
+    parseErrors,
+    rowCount: 0,
+    diff: { addedCount: 0, changedCount: 0, removedCount: 0, added: [], changed: [], removed: [] },
+    oldBankSize: 0,
+    newBankSize: 0,
+  };
+}
+
 /** Parse a CSV string into question rows. Accepts the same column shape used
  * by the existing export/import: id, type, question, options (|-separated),
  * correctAnswer, correctAnswers (|-separated indices), explanation, image, imageAlt.
@@ -138,37 +175,43 @@ function bankOf(file: MockFile): AnyQ[] {
 const TopicSchema = z.string().min(1).max(120).regex(/^[a-z0-9-]+$/);
 
 export const previewCsvImport = createServerFn({ method: "POST" })
-  .middleware([requireSupabaseAuth])
   .inputValidator((input) =>
     z.object({
       topic: TopicSchema,
       csvText: z.string().min(1).max(20_000_000),
     }).parse(input),
   )
-  .handler(async ({ data, context }) => {
-    await assertAdmin(context.supabase, context.userId);
-    const { rows, errors } = parseCsv(data.csvText);
-    const existing = await getFile(filePathFor(data.topic));
-    if (!existing) throw new Error(`Topic file not found in repo: ${filePathFor(data.topic)}`);
-    const oldFile = JSON.parse(existing.content) as MockFile;
-    const oldBank = bankOf(oldFile);
-    const newFile = mergeIntoFile(oldFile, rows);
-    const newBank = bankOf(newFile);
-    const diff = diffBanks(oldBank, rows);
-    return {
-      parseErrors: errors,
-      rowCount: rows.length,
-      diff: {
-        addedCount: diff.added.length,
-        changedCount: diff.changed.length,
-        removedCount: diff.removed.length,
-        added: diff.added.slice(0, 50),
-        changed: diff.changed.slice(0, 50),
-        removed: diff.removed.slice(0, 50),
-      },
-      oldBankSize: oldBank.length,
-      newBankSize: newBank.length,
-    };
+  .handler(async ({ data }) => {
+    try {
+      const auth = await getAuthenticatedAdminClient();
+      if (auth.error) return emptyPreview(auth.error);
+      const { rows, errors } = parseCsv(data.csvText);
+      const existing = await getFile(filePathFor(data.topic));
+      if (!existing) return emptyPreview(`Topic file not found in repo: ${filePathFor(data.topic)}`, errors);
+      const oldFile = JSON.parse(existing.content) as MockFile;
+      const oldBank = bankOf(oldFile);
+      const newFile = mergeIntoFile(oldFile, rows);
+      const newBank = bankOf(newFile);
+      const diff = diffBanks(oldBank, rows);
+      return {
+        error: null as string | null,
+        parseErrors: errors,
+        rowCount: rows.length,
+        diff: {
+          addedCount: diff.added.length,
+          changedCount: diff.changed.length,
+          removedCount: diff.removed.length,
+          added: diff.added.slice(0, 50),
+          changed: diff.changed.slice(0, 50),
+          removed: diff.removed.slice(0, 50),
+        },
+        oldBankSize: oldBank.length,
+        newBankSize: newBank.length,
+      };
+    } catch (err) {
+      console.error("previewCsvImport failed:", err);
+      return emptyPreview(err instanceof Error ? err.message : "Preview failed");
+    }
   });
 
 export const commitCsvImport = createServerFn({ method: "POST" })
