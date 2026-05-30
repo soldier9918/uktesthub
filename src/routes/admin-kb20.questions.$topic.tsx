@@ -85,11 +85,9 @@ function normaliseType(t: string | undefined): string {
   return x === "multiple-choice" ? "mcq" : x;
 }
 
-function describeQuestion(r: RawQuestion, topic?: string): string {
-  const t = normaliseType(r.type);
-  if (topic === "road-signs" && t === "image-question" && typeof r.image === "string" && r.image) {
-    return "What does this road sign mean?";
-  }
+function describeQuestion(r: RawQuestion, _topic?: string): string {
+  // Always show the real stored question text so admin matches the CSV.
+  // The live quiz applies its own prompt override (see src/lib/overrides.ts).
   return (r.question || r.template || r.prompt || "").toString();
 }
 
