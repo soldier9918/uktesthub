@@ -245,9 +245,17 @@ function QuestionsBrowser() {
   const scrollRestoreRef = useRef<number | null>(null);
   const [bump, setBump] = useState(0);
   const [importMsg, setImportMsg] = useState<string | null>(null);
-  const [importing, setImporting] = useState(false);
   const [cleaning, setCleaning] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
+  const [csvText, setCsvText] = useState<string>("");
+  const [csvFilename, setCsvFilename] = useState<string>("");
+  const [preview, setPreview] = useState<Awaited<ReturnType<typeof previewCsvImport>> | null>(null);
+  const [commitResult, setCommitResult] = useState<{ commitUrl: string; commitSha: string } | null>(null);
+  const previewFn = useServerFn(previewCsvImport);
+  const commitFn = useServerFn(commitCsvImport);
+  const rollbackFn = useServerFn(rollbackImport);
+  const listFn = useServerFn(listImportHistory);
+  const qc = useQueryClient();
   const overrides = useOverrides();
   void bump;
   const highlightId = initialSearch;
