@@ -429,191 +429,71 @@ function QuestionsBrowser() {
     }
   };
 
-  // Minimal CSV parser (handles quoted fields with embedded quotes & commas)
-  const parseCsv = (text: string): string[][] => {
-    const rows: string[][] = [];
-    let row: string[] = [];
-    let field = "";
-    let inQ = false;
-    for (let i = 0; i < text.length; i++) {
-      const c = text[i];
-      if (inQ) {
-        if (c === '"') {
-          if (text[i + 1] === '"') { field += '"'; i++; }
-          else inQ = false;
-        } else field += c;
-      } else {
-        if (c === '"') inQ = true;
-        else if (c === ",") { row.push(field); field = ""; }
-        else if (c === "\n") { row.push(field); rows.push(row); row = []; field = ""; }
-        else if (c === "\r") { /* skip */ }
-        else field += c;
-      }
-    }
-    if (field.length > 0 || row.length > 0) { row.push(field); rows.push(row); }
-    return rows.filter((r) => r.length > 1 || (r[0] ?? "").length > 0);
-  };
-
-  const handleImportFile = async (e: React.ChangeEvent<HTMLInputElement>) => {
+  // CSV → GitHub: stage file, preview the diff, then commit to main.
+  const onCsvFile = async (e: React.ChangeEvent<HTMLInputElement>) => {
     setImportMsg(null);
+    setCommitResult(null);
+    setPreview(null);
     const file = e.target.files?.[0];
     if (!file) return;
-    setImporting(true);
-    try {
-      const text = await file.text();
-      type ImportRow = {
-        id: string;
-        question?: string;
-        options?: string[];
-        correctAnswer?: number | boolean | string;
-        correctAnswers?: number[];
-        explanation?: string;
-        image?: string;
-        imageAlt?: string;
-      };
-      const orUndef = (s: string | undefined | null): string | undefined => {
-        if (s == null) return undefined;
-        const t = String(s).trim();
-        return t.length > 0 ? t : undefined;
-      };
-      let parsed: ImportRow[] = [];
-      if (file.name.toLowerCase().endsWith(".json")) {
-        const json = JSON.parse(text);
-        const arr = Array.isArray(json) ? json : (json.questions ?? json.bank ?? []);
-        parsed = arr.map((r: Record<string, unknown>) => {
-          const row: ImportRow = { id: String(r.id) };
-          const q = orUndef(r.question as string | undefined);
-          if (q !== undefined) row.question = q;
-          if (Array.isArray(r.options) && (r.options as string[]).some((o) => orUndef(o) !== undefined)) {
-            row.options = r.options as string[];
-          }
-          if (r.correctAnswer != null && r.correctAnswer !== "") {
-            row.correctAnswer = r.correctAnswer as number | boolean | string;
-          }
-          if (Array.isArray(r.correctAnswers) && (r.correctAnswers as number[]).length > 0) {
-            row.correctAnswers = r.correctAnswers as number[];
-          }
-          const e = orUndef(r.explanation as string | undefined);
-          if (e !== undefined) row.explanation = e;
-          const im = orUndef(r.image as string | undefined);
-          if (im !== undefined) row.image = im;
-          const al = orUndef(r.imageAlt as string | undefined);
-          if (al !== undefined) row.imageAlt = al;
-          return row;
-        });
-      } else {
-        const rows = parseCsv(text);
-        if (rows.length < 2) throw new Error("CSV is empty");
-        const header = rows[0].map((h) => h.trim());
-        const idx = (name: string) => header.indexOf(name);
-        const iId = idx("id"), iQ = idx("question"),
-              iA = idx("optionA"), iB = idx("optionB"), iC = idx("optionC"), iD = idx("optionD"),
-              iCA = idx("correctAnswer"), iCAs = idx("correctAnswers"),
-              iE = idx("explanation"), iImg = idx("image"), iAlt = idx("imageAlt");
-        if (iId < 0) throw new Error("CSV missing 'id' column");
-        for (let r = 1; r < rows.length; r++) {
-          const row = rows[r];
-          if (!row[iId]) continue;
-          const cell = (j: number) => (j >= 0 ? (row[j] ?? "") : "");
-          const optsRaw = [cell(iA), cell(iB), cell(iC), cell(iD)];
-          const hasOpts = optsRaw.some((o) => orUndef(o) !== undefined);
-          const ca = cell(iCA).trim();
-          const cas = cell(iCAs).trim();
-          const out: ImportRow = { id: row[iId] };
-          const q = orUndef(cell(iQ));
-          if (q !== undefined) out.question = q;
-          if (hasOpts) out.options = optsRaw;
-          if (ca && ca !== "null") {
-            const n = Number(ca);
-            if (!Number.isNaN(n) && ca !== "") out.correctAnswer = n;
-            else if (ca === "true") out.correctAnswer = true;
-            else if (ca === "false") out.correctAnswer = false;
-            else out.correctAnswer = ca; // string answer (e.g. image-question label)
-          }
-          if (cas && cas !== "null" && cas !== "[]") {
-            try {
-              const arr = JSON.parse(cas);
-              if (Array.isArray(arr) && arr.length > 0) out.correctAnswers = arr;
-            } catch { /* ignore */ }
-          }
-          const e = orUndef(cell(iE));
-          if (e !== undefined) out.explanation = e;
-          const im = orUndef(cell(iImg));
-          if (im !== undefined) out.image = im;
-          const al = orUndef(cell(iAlt));
-          if (al !== undefined) out.imageAlt = al;
-          parsed.push(out);
-        }
-      }
-      if (parsed.length === 0) throw new Error("No rows found");
-
-      // Build a set of valid IDs in this topic to skip strangers
-      const validIds = new Set(effectiveQuestions.map((q) => q.id));
-      const usable = parsed.filter((r) => validIds.has(r.id));
-      const skipped = parsed.length - usable.length;
-
-      // Only include fields that the CSV/JSON actually provided so we never
-      // overwrite real content with empty strings on a partial re-upload.
-      type Json = import("@/integrations/supabase/types").Json;
-      type UpsertRow = {
-        topic: string;
-        question_id: string;
-        updated_by: string | null;
-        question?: string;
-        options?: Json;
-        correct_answer?: Json;
-        explanation?: string;
-        image?: string;
-        image_alt?: string;
-      };
-      let untouched = 0;
-      const upsertRows: UpsertRow[] = [];
-      for (const r of usable) {
-        const row: UpsertRow = {
-          topic,
-          question_id: r.id,
-          updated_by: user?.id ?? null,
-        };
-        let hasChange = false;
-        if (r.question !== undefined) { row.question = r.question; hasChange = true; }
-        if (r.options !== undefined) { row.options = r.options as unknown as Json; hasChange = true; }
-        if (r.correctAnswers !== undefined) {
-          row.correct_answer = r.correctAnswers as unknown as Json;
-          hasChange = true;
-        } else if (r.correctAnswer !== undefined) {
-          row.correct_answer = r.correctAnswer as unknown as Json;
-          hasChange = true;
-        }
-        if (r.explanation !== undefined) { row.explanation = r.explanation; hasChange = true; }
-        if (r.image !== undefined) { row.image = r.image; hasChange = true; }
-        if (r.imageAlt !== undefined) { row.image_alt = r.imageAlt; hasChange = true; }
-        if (!hasChange) { untouched++; continue; }
-        upsertRows.push(row);
-      }
-
-      let written = 0;
-      for (let i = 0; i < upsertRows.length; i += 100) {
-        const batch = upsertRows.slice(i, i + 100);
-        const { error } = await supabase
-          .from("question_overrides")
-          .upsert(batch, { onConflict: "topic,question_id" });
-        if (error) throw error;
-        written += batch.length;
-      }
-      invalidateOverrides();
-      setBump((n) => n + 1);
-      setImportMsg(
-        `Imported ${written} question${written === 1 ? "" : "s"}.` +
-          (untouched > 0 ? ` Left ${untouched} row${untouched === 1 ? "" : "s"} untouched (no editable values).` : "") +
-          (skipped > 0 ? ` Skipped ${skipped} unknown ID${skipped === 1 ? "" : "s"}.` : ""),
-      );
-    } catch (err) {
-      setImportMsg(`Import failed: ${err instanceof Error ? err.message : "Unknown error"}`);
-    } finally {
-      setImporting(false);
+    if (!file.name.toLowerCase().endsWith(".csv")) {
+      setImportMsg("Only .csv files are supported. Export the topic, edit, then re-upload as CSV.");
       if (fileInputRef.current) fileInputRef.current.value = "";
+      return;
     }
+    const text = await file.text();
+    setCsvFilename(file.name);
+    setCsvText(text);
+    if (fileInputRef.current) fileInputRef.current.value = "";
+    previewMutation.mutate({ text });
   };
+
+  const previewMutation = useMutation({
+    mutationFn: (vars: { text: string }) => previewFn({ data: { topic, csvText: vars.text } }),
+    onSuccess: (data) => {
+      setPreview(data);
+      setImportMsg(null);
+    },
+    onError: (err: Error) => {
+      setImportMsg(`Preview failed: ${err.message}`);
+      setPreview(null);
+    },
+  });
+
+  const commitMutation = useMutation({
+    mutationFn: () =>
+      commitFn({ data: { topic, csvText, filename: csvFilename || "upload.csv" } }),
+    onSuccess: (data) => {
+      setCommitResult({ commitUrl: data.commitUrl, commitSha: data.commitSha });
+      setPreview(null);
+      setCsvText("");
+      setCsvFilename("");
+      setImportMsg(null);
+      qc.invalidateQueries({ queryKey: ["import-history", topic] });
+    },
+    onError: (err: Error) => setImportMsg(`Commit failed: ${err.message}`),
+  });
+
+  const rollbackMutation = useMutation({
+    mutationFn: (historyId: string) => rollbackFn({ data: { historyId } }),
+    onSuccess: (data) => {
+      setCommitResult({ commitUrl: data.commitUrl, commitSha: data.commitSha });
+      qc.invalidateQueries({ queryKey: ["import-history", topic] });
+    },
+    onError: (err: Error) => setImportMsg(`Rollback failed: ${err.message}`),
+  });
+
+  const history = useQuery({
+    queryKey: ["import-history", topic],
+    queryFn: () => listFn({ data: { topic, limit: 20 } }),
+  });
+
+  const cancelPreview = () => {
+    setPreview(null);
+    setCsvText("");
+    setCsvFilename("");
+  };
+
 
   const cleanBadOverrides = async () => {
     const ok = typeof window === "undefined"
