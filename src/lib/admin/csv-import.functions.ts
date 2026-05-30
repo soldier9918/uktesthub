@@ -85,17 +85,17 @@ function parseCsv(csvText: string): { rows: AnyQ[]; errors: string[] } {
   for (const r of out.data) {
     const id = (r.id ?? "").trim();
     if (!id) continue;
-    const type = (r.type ?? "mcq").trim() || "mcq";
+    const typeRaw = (r.type ?? "").trim();
     const options = (r.options ?? "")
       .split("|")
       .map((s) => s.trim())
       .filter(Boolean);
     const q: AnyQ = {
       id,
-      type,
       question: (r.question ?? "").trim(),
       explanation: (r.explanation ?? "").trim(),
     };
+    if (typeRaw) q.type = typeRaw;
     if (options.length) q.options = options;
     if (r.correctAnswers) {
       q.correctAnswers = r.correctAnswers
