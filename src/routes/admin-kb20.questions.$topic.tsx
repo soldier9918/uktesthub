@@ -272,10 +272,16 @@ function QuestionsBrowser() {
   >(null);
   const [ghTest, setGhTest] = useState<Awaited<ReturnType<typeof testGithubConnection>> | null>(null);
   const [ghTesting, setGhTesting] = useState(false);
+  const [selfTest, setSelfTest] = useState<Awaited<ReturnType<typeof runImportSelfTest>> | null>(null);
+  const [selfTesting, setSelfTesting] = useState(false);
+  const [liveCheck, setLiveCheck] = useState<Awaited<ReturnType<typeof verifyLiveJson>> | null>(null);
+  const [liveChecking, setLiveChecking] = useState(false);
   const previewFn = useServerFn(previewCsvImport);
   const commitFn = useServerFn(commitCsvImport);
   const rollbackFn = useServerFn(rollbackImport);
   const ghTestFn = useServerFn(testGithubConnection);
+  const selfTestFn = useServerFn(runImportSelfTest);
+  const verifyLiveFn = useServerFn(verifyLiveJson);
   const listFn = useServerFn(listImportHistory);
   const router = useRouter();
   const qc = useQueryClient();
