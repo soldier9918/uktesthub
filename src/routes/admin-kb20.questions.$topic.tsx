@@ -860,13 +860,21 @@ function QuestionsBrowser() {
         <details className="mt-3 rounded-lg border border-border bg-card p-3 text-sm">
           <summary className="cursor-pointer font-semibold">
             Import history for {topic}
-            {history.data ? ` (${history.data.rows.length})` : ""}
+            {history.data ? ` (${(history.data.rows ?? []).length})` : ""}
           </summary>
           {history.isLoading && <p className="mt-2 text-xs text-muted-foreground">Loading…</p>}
-          {history.data && history.data.rows.length === 0 && (
+          {history.error && (
+            <p className="mt-2 text-xs text-rose-700">
+              Failed to load history: {history.error instanceof Error ? history.error.message : "unknown error"}
+            </p>
+          )}
+          {history.data?.error && (
+            <p className="mt-2 text-xs text-rose-700">{history.data.error}</p>
+          )}
+          {history.data && (history.data.rows ?? []).length === 0 && !history.data.error && (
             <p className="mt-2 text-xs text-muted-foreground">No imports yet for this topic.</p>
           )}
-          {history.data && history.data.rows.length > 0 && (
+          {history.data && (history.data.rows ?? []).length > 0 && (
             <div className="mt-2 overflow-x-auto">
               <table className="w-full text-xs">
                 <thead className="text-left uppercase text-muted-foreground">
@@ -880,7 +888,7 @@ function QuestionsBrowser() {
                   </tr>
                 </thead>
                 <tbody>
-                  {history.data.rows.map((r) => (
+                  {(history.data.rows ?? []).map((r) => (
                     <tr key={r.id} className="border-t border-border align-top">
                       <td className="py-1 pr-3 text-muted-foreground">{new Date(r.created_at).toLocaleString()}</td>
                       <td className="py-1 pr-3">{r.filename ?? "—"}</td>
