@@ -56,4 +56,17 @@ export async function commitFile(opts: {
   return { commitSha: data.commit.sha, commitUrl: data.commit.html_url };
 }
 
+/** Returns the names of files directly inside `dirPath` on the target branch.
+ *  Returns null if the directory does not exist. */
+export async function listDir(dirPath: string): Promise<string[] | null> {
+  const url = `${API}/repos/${OWNER}/${REPO}/contents/${encodeURI(dirPath)}?ref=${BRANCH}`;
+  const res = await fetch(url, { headers: authHeaders() });
+  if (res.status === 404) return null;
+  if (!res.ok) throw new Error(`GitHub listDir failed (${res.status}): ${await res.text()}`);
+  const data = (await res.json()) as Array<{ name: string; type: string }>;
+  if (!Array.isArray(data)) return null;
+  return data.filter((d) => d.type === "file").map((d) => d.name);
+}
+
 export const GITHUB_REPO = { owner: OWNER, repo: REPO, branch: BRANCH };
+

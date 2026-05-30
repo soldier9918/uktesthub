@@ -892,6 +892,12 @@ function QuestionsBrowser() {
                 <div className="mt-2 max-h-[600px] space-y-2 overflow-auto">
                   {preview.diff.changed.map((c: any) => {
                     const fields: string[] = c.changedFields ?? Object.keys(c.after ?? {});
+                    const isRoadSigns = topic === "road-signs";
+                    const oldImg: string | undefined = c.before?.image;
+                    const newImg: string | undefined = c.after?.image;
+                    const oldAlt: string | undefined = c.before?.imageAlt;
+                    const newAlt: string | undefined = c.after?.imageAlt;
+                    const showRsPreview = isRoadSigns && (oldImg || newImg);
                     return (
                       <div key={c.id} className="rounded border border-border p-2">
                         <div className="mb-1 flex flex-wrap items-center gap-2">
@@ -900,6 +906,30 @@ function QuestionsBrowser() {
                             <Badge key={f} variant="secondary" className="text-[10px]">{f}</Badge>
                           ))}
                         </div>
+                        {showRsPreview && (
+                          <div className="mb-2 grid gap-2 rounded border border-amber-500/30 bg-amber-500/5 p-2 sm:grid-cols-2">
+                            <div>
+                              <div className="text-[10px] font-semibold text-rose-700">Before · image</div>
+                              {oldImg ? (
+                                <>
+                                  <code className="block break-all text-[10px]">{oldImg}</code>
+                                  <img src={oldImg} alt={oldAlt ?? ""} className="mt-1 h-24 w-auto rounded border border-border bg-white object-contain p-1" onError={(e) => ((e.currentTarget.style.display = "none"))} />
+                                  <div className="mt-1 text-[10px] text-muted-foreground">alt: {oldAlt || <em>(empty)</em>}</div>
+                                </>
+                              ) : <em className="text-[10px] text-muted-foreground">(none)</em>}
+                            </div>
+                            <div>
+                              <div className="text-[10px] font-semibold text-emerald-700">After · image</div>
+                              {newImg ? (
+                                <>
+                                  <code className="block break-all text-[10px]">{newImg}</code>
+                                  <img src={newImg} alt={newAlt ?? ""} className="mt-1 h-24 w-auto rounded border border-border bg-white object-contain p-1" onError={(e) => ((e.currentTarget.style.display = "none"))} />
+                                  <div className="mt-1 text-[10px] text-muted-foreground">alt: {newAlt || <em>(empty)</em>}</div>
+                                </>
+                              ) : <em className="text-[10px] text-muted-foreground">(none)</em>}
+                            </div>
+                          </div>
+                        )}
                         <div className="space-y-1">
                           {fields.map((f) => (
                             <div key={f} className="grid gap-2 sm:grid-cols-2">
@@ -917,6 +947,7 @@ function QuestionsBrowser() {
                       </div>
                     );
                   })}
+
                 </div>
               </details>
             )}

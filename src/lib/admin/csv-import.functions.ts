@@ -2,7 +2,7 @@ import { createServerFn } from "@tanstack/react-start";
 import { z } from "zod";
 import Papa from "papaparse";
 import { requireSupabaseAuth } from "@/integrations/supabase/auth-middleware";
-import { commitFile, getFile } from "@/lib/admin/github.server";
+import { commitFile, getFile, listDir } from "@/lib/admin/github.server";
 
 // Use `any` for question records — the on-disk schema is too polymorphic to
 // type fully here, and TanStack's serializer rejects `unknown` index sigs.
@@ -315,13 +315,31 @@ function normalizeCorrectAnswer(ca: unknown, options: unknown[]): unknown {
   return ca;
 }
 
+/** Extract significant keywords from a road-signs image filename for semantic
+ *  comparison against question text. e.g. "/road-signs/give_way_to_traffic.png"
+ *  → ["give","way","traffic"]. Skips very short and noise tokens. */
+const RS_STOPWORDS = new Set([
+  "the","a","an","of","to","on","in","and","or","for","with","at","by","is",
+  "are","be","road","sign","signs","png","jpg","jpeg","webp","svg",
+  "1","2","3","4","5","6","7","8","9","0",
+]);
+function roadSignKeywords(imagePath: string): string[] {
+  const base = imagePath.replace(/^.*\//, "").replace(/\.[a-z0-9]+$/i, "");
+  return base
+    .toLowerCase()
+    .split(/[_\-\s]+/)
+    .filter((w) => w.length >= 3 && !RS_STOPWORDS.has(w));
+}
+
 function validateImported(
   mergedById: Map<string, AnyQ>,
   rowIds: string[],
   rowLines: number[],
   newFile: MockFile,
   topic: string,
+  roadSignFiles: Set<string> | null,
 ): ValidationResult {
+
   const errors: Issue[] = [];
   const warnings: Issue[] = [];
   const seen = new Map<string, number>();
@@ -421,7 +439,38 @@ function validateImported(
         push(warnings, "blanks", "Fill/dropdown/drag types need a `blanks` array — edit JSON directly.");
       }
     }
+
+    // ----- Road Signs topic-specific protection -----
+    if (topic === "road-signs" && typeof q.image === "string" && q.image.trim()) {
+      const img = q.image.trim();
+      if (!img.startsWith("/road-signs/")) {
+        push(errors, "image", `Road Signs image path must start with "/road-signs/" — got "${img}".`);
+      } else if (roadSignFiles) {
+        const name = img.replace(/^\/road-signs\//, "").split("?")[0].split("#")[0];
+        if (!roadSignFiles.has(name)) {
+          push(errors, "image", `Road Signs image file not found in repo: public/road-signs/${name}.`);
+        }
+      }
+      if (!q.imageAlt || typeof q.imageAlt !== "string" || !q.imageAlt.trim()) {
+        push(warnings, "imageAlt", "Road Signs image is missing imageAlt text.");
+      }
+      // Semantic mismatch: keywords from filename should appear in question/explanation/imageAlt.
+      const kws = roadSignKeywords(img);
+      if (kws.length > 0) {
+        const haystack = [
+          q.question, q.explanation, q.imageAlt,
+          Array.isArray(q.options) ? q.options.join(" ") : "",
+          typeof q.correctAnswer === "string" ? q.correctAnswer : "",
+        ].map((s) => String(s ?? "").toLowerCase()).join(" \n ");
+        const hit = kws.some((w) => haystack.includes(w));
+        if (!hit) {
+          push(warnings, "image",
+            `Possible mismatch: image "${img}" suggests [${kws.join(", ")}] but none of those words appear in the question text, explanation, options, or imageAlt. Review before commit.`);
+        }
+      }
+    }
   });
+
 
   // JSON validity (blocking)
   try {
@@ -569,6 +618,19 @@ function bankOf(file: MockFile): AnyQ[] {
 
 const TopicSchema = z.string().min(1).max(120).regex(/^[a-z0-9-]+$/);
 
+/** For topic === "road-signs" load directory listing once for path validation. */
+async function loadRoadSignFiles(topic: string): Promise<Set<string> | null> {
+  if (topic !== "road-signs") return null;
+  try {
+    const names = await listDir("public/road-signs");
+    return new Set((names ?? []).map((n) => n));
+  } catch (e) {
+    console.warn("loadRoadSignFiles failed:", e);
+    return null;
+  }
+}
+
+
 export const previewCsvImport = createServerFn({ method: "POST" })
   .inputValidator((input) =>
     z.object({
@@ -590,7 +652,9 @@ export const previewCsvImport = createServerFn({ method: "POST" })
       const diff = diffBanks(oldBank, newBank);
       const mergedById = new Map(newBank.filter((q) => q.id).map((q) => [String(q.id), q]));
       const rowIds = rows.map((r) => String(r.id));
-      const validation = validateImported(mergedById, rowIds, rowLines, newFile, data.topic);
+      const roadSignFiles = await loadRoadSignFiles(data.topic);
+      const validation = validateImported(mergedById, rowIds, rowLines, newFile, data.topic, roadSignFiles);
+
       return {
         error: null as string | null,
         parseErrors: errors,
@@ -636,7 +700,9 @@ export const commitCsvImport = createServerFn({ method: "POST" })
       const newFile = mergeIntoFile(oldFile, rows);
       const mergedById = new Map(bankOf(newFile).filter((q) => q.id).map((q) => [String(q.id), q]));
       const rowIds = rows.map((r) => String(r.id));
-      const validation = validateImported(mergedById, rowIds, rowLines, newFile, data.topic);
+      const roadSignFiles = await loadRoadSignFiles(data.topic);
+      const validation = validateImported(mergedById, rowIds, rowLines, newFile, data.topic, roadSignFiles);
+
       if (validation.errors.length > 0) {
         const first = validation.errors.slice(0, 5).map((e) => `• ${e.id ? `[${e.id}] ` : ""}${e.message}`).join("\n");
         const more = validation.errors.length > 5 ? `\n…and ${validation.errors.length - 5} more.` : "";
