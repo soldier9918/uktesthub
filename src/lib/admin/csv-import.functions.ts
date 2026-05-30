@@ -1213,7 +1213,7 @@ export const runImportSelfTest = createServerFn({ method: "POST" })
     if (oldFile && csvText) {
       try {
         const parsed = parseCsv(csvText);
-        const merged = mergeIntoFile(oldFile, parsed.rows);
+        const merged = mergeIntoFile(oldFile, parsed.rows, parsed.clearByRow);
         const mergedById = new Map(bankOf(merged).filter((q) => q.id).map((q) => [String(q.id), q]));
         const rowIds = parsed.rows.map((r) => String(r.id));
         const roadSignFiles = await loadRoadSignFiles(topic);
