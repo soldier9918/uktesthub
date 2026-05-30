@@ -1320,7 +1320,7 @@ function QuestionsBrowser() {
                             variant="outline"
                             disabled={rollbackMutation.isPending}
                             onClick={() => {
-                              const warn = `This will restore the previous JSON file for this topic and commit it to GitHub main.\n\nFile: public/mocks/${topic}.json\n\nProceed?`;
+                              const warn = `This will restore the previous JSON snapshot for this topic and commit it to GitHub main.\n\nFile: public/mocks/${topic}.json\n\nProceed?`;
                               if (!window.confirm(warn)) return;
                               const isRepeat = r.status === "rolled_back" || r.status === "failed";
                               if (isRepeat) {
