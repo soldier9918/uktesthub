@@ -361,7 +361,7 @@ function QuestionsBrowser() {
     });
     if (mockNum !== null) {
       const slotOf = (q: FlatQuestion) =>
-        q.usedInMocks.find((u) => u.mockNumber === mockNum)?.slot ?? 9999;
+        (q.usedInMocks ?? []).find((u) => u.mockNumber === mockNum)?.slot ?? 9999;
       list.sort((a, b) => slotOf(a) - slotOf(b));
     }
     return list;
