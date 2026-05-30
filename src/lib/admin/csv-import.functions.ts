@@ -116,17 +116,53 @@ function parseCsv(csvText: string): { rows: AnyQ[]; errors: string[] } {
   return { rows, errors };
 }
 
+function normalizeValue(v: unknown): unknown {
+  if (v == null) return null;
+  if (Array.isArray(v)) return v.map(normalizeValue);
+  if (typeof v === "string") {
+    const s = v.trim();
+    if (s === "") return null;
+    if (/^-?\d+(\.\d+)?$/.test(s)) {
+      const n = Number(s);
+      if (Number.isFinite(n)) return n;
+    }
+    const l = s.toLowerCase();
+    if (l === "true") return true;
+    if (l === "false") return false;
+    return s;
+  }
+  return v;
+}
+
+function valuesEqual(a: unknown, b: unknown): boolean {
+  const na = normalizeValue(a);
+  const nb = normalizeValue(b);
+  if (na === nb) return true;
+  if (Array.isArray(na) && Array.isArray(nb)) {
+    if (na.length !== nb.length) return false;
+    return na.every((x, i) => valuesEqual(x, nb[i]));
+  }
+  return false;
+}
+
 function diffBanks(oldBank: AnyQ[], newRows: AnyQ[]) {
   const oldById = new Map(oldBank.filter((q) => q.id).map((q) => [String(q.id), q]));
   const newById = new Map(newRows.filter((q) => q.id).map((q) => [String(q.id), q]));
   const added: AnyQ[] = [];
-  const changed: { id: string; before: AnyQ; after: AnyQ }[] = [];
+  const changed: { id: string; before: AnyQ; after: AnyQ; changedFields: string[] }[] = [];
   const removed: AnyQ[] = [];
   for (const [id, q] of newById) {
     const prev = oldById.get(id);
-    if (!prev) added.push(q);
-    else if (JSON.stringify(prev) !== JSON.stringify({ ...prev, ...q })) {
-      changed.push({ id, before: prev, after: { ...prev, ...q } });
+    if (!prev) {
+      added.push(q);
+      continue;
+    }
+    const fields: string[] = [];
+    for (const key of Object.keys(q)) {
+      if (!valuesEqual(prev[key], q[key])) fields.push(key);
+    }
+    if (fields.length > 0) {
+      changed.push({ id, before: prev, after: { ...prev, ...q }, changedFields: fields });
     }
   }
   for (const [id, q] of oldById) {
