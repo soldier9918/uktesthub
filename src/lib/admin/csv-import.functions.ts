@@ -814,12 +814,14 @@ export const commitCsvImport = createServerFn({ method: "POST" })
       csvText: z.string().min(1).max(20_000_000),
       filename: z.string().min(1).max(255),
       expectedSha: z.string().min(1).max(120).optional(),
+      mode: ImportModeSchema,
     }).parse(input),
   )
   .handler(async ({ data, context }) => {
     await assertAdmin(context.supabase, context.userId);
     const { supabase, userId } = context;
-    const { rows, rowLines, errors } = parseCsv(data.csvText);
+    const mode = data.mode ?? "patch";
+    const { rows, rowLines, clearByRow, errors } = parseCsv(data.csvText, mode);
     if (rows.length === 0) throw new Error("No valid rows found in CSV");
 
     const path = filePathFor(data.topic);
@@ -835,7 +837,8 @@ export const commitCsvImport = createServerFn({ method: "POST" })
         );
       }
       const oldFile = JSON.parse(existing.content) as MockFile;
-      const newFile = mergeIntoFile(oldFile, rows);
+      const newFile = mergeIntoFile(oldFile, rows, clearByRow);
+
       const mergedById = new Map(bankOf(newFile).filter((q) => q.id).map((q) => [String(q.id), q]));
       const rowIds = rows.map((r) => String(r.id));
       const roadSignFiles = await loadRoadSignFiles(data.topic);
