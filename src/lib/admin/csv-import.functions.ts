@@ -158,13 +158,18 @@ function diffBanks(oldBank: AnyQ[], newRows: AnyQ[]) {
       continue;
     }
     const fields: string[] = [];
-    const TYPE_ALIASES: Record<string, string> = { mcq: "multiple_choice", multiple_choice: "multiple_choice" };
+    const canonType = (v: unknown) => {
+      const s = String(v ?? "").toLowerCase().replace(/[-\s]+/g, "_");
+      if (s === "mcq") return "multiple_choice";
+      if (s === "tf" || s === "truefalse") return "true_false";
+      return s;
+    };
     for (const key of Object.keys(q)) {
       let a = prev[key];
       let b = q[key];
       if (key === "type") {
-        a = TYPE_ALIASES[String(a ?? "").toLowerCase()] ?? a;
-        b = TYPE_ALIASES[String(b ?? "").toLowerCase()] ?? b;
+        a = canonType(a);
+        b = canonType(b);
       }
       if (!valuesEqual(a, b)) fields.push(key);
     }
