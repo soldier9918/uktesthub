@@ -282,14 +282,14 @@ function QuestionsBrowser() {
     for (const q of base) {
       const fp = fingerprintQuestion(q.raw);
       const arr = groups.get(fp) ?? [];
-      for (const u of q.usedInMocks) {
+      for (const u of q.usedInMocks ?? []) {
         arr.push({ mockNumber: u.mockNumber, slot: u.slot, sourceQid: q.id });
       }
       groups.set(fp, arr);
     }
     return base.map((q) => {
       const fp = fingerprintQuestion(q.raw);
-      const merged = groups.get(fp) ?? q.usedInMocks;
+      const merged = groups.get(fp) ?? q.usedInMocks ?? [];
       const seen = new Set<string>();
       const dedup: MockUsage[] = [];
       for (const u of merged) {
