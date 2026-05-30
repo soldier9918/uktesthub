@@ -1,30 +1,25 @@
-## Confirmations from the code audit
+## Audit result — nothing to change
 
-1. **Live quiz source — `public/mocks/*.json` only.**
-   `QuizRunner` (`src/components/QuizRunner.tsx:119`) wraps the raw quiz with `applyOverrides`, but after the last change `applyOverrides` in `src/lib/overrides.ts:38` returns the quiz unchanged, and `loadOverrides` returns an empty map. No runtime read of `question_overrides` happens in the player path.
+### 1. Import is topic-scoped to the current URL
+- `admin-kb20.questions.$topic.tsx` reads `topic` from `Route.useLoaderData()` (sourced from `params.topic`, the URL segment).
+- Both mutations pass that exact `topic` to the server:
+  - `previewMutation` → `previewFn({ data: { topic, csvText } })` (line 455)
+  - `commitMutation` → `commitFn({ data: { topic, csvText, filename } })` (line 473)
+- Server-side `commitCsvImport` in `src/lib/admin/csv-import.functions.ts`:
+  - Validates with `TopicSchema = z.string().min(1).max(120).regex(/^[a-z0-9-]+$/)`.
+  - Computes the target path via `filePathFor(data.topic)` → `public/mocks/${data.topic}.json` (line 280).
+  - Calls `commitFile({ filePath: path, ... })` — the GitHub commit touches only that single file. No other topic JSON is read or written.
 
-2. **Topic admin page source of truth — `public/mocks/<topic>.json`.**
-   `admin-kb20.questions.$topic.tsx` loads questions via `loadTopicFileForAdmin` (in `src/data/mocks/index.ts`), which fetches `public/mocks/<topic>.json` from raw GitHub with a cache-buster (falling back to the deployed static asset). The CSV commit pipeline writes back to the same path.
+So on `/admin-kb20/questions/driving-theory` only `public/mocks/driving-theory.json` is updated; on `/road-signs` only `public/mocks/road-signs.json`.
 
-3. **`question_import_history` — history & rollback only.**
-   Only used inside `src/lib/admin/csv-import.functions.ts`: insert on commit, insert+update on rollback, select for the history list. No code path reads it to serve quiz content.
+### 2. No database override is created or applied during import
+Grep of `commitCsvImport` and `previewCsvImport` — neither writes to or reads from `question_overrides`. The only DB writes are:
+- `question_import_history` insert on success (audit log + rollback snapshot).
+- `question_import_history` insert on failure (error log).
 
-4. **Legacy `question_overrides` table is still wired into many admin routes**
-   (`bulk-edit`, `search`, `similar`, `validator`, `diagnostics`, `category-check`, `bulk-duplicate`, `import-export`, `images`, `ImagePicker`, `QuestionEditDialog`, plus the `toggleDisabled`/`Clear bad overrides` handlers in this topic page). The runtime no longer reads any of it, but admin pages still write to it. Those are out of scope for this turn — flag only.
+### 3. Live source remains `public/mocks/<topic>.json` only
+- `QuizRunner` runs `applyOverrides(rawQuiz, overrides)`; after the recent change `applyOverrides` is a pass-through and `loadOverrides` returns an empty map.
+- The runtime never queries `question_overrides`.
 
-## Change in this turn
-
-Hide the "Clear bad overrides" button on the topic page so it can't be triggered, and mark its handler as deprecated. I'll keep the handler code in place (commented as deprecated) so we have an easy revert if any of the other admin routes still need a one-off cleanup, but the button is removed from the UI.
-
-Files:
-- `src/routes/admin-kb20.questions.$topic.tsx`
-  - Remove the `<Button>...Clear bad overrides</Button>` block (lines ~779–787) from the toolbar.
-  - Add a short comment above `cleanBadOverrides` noting it is deprecated because `question_overrides` is no longer the live source.
-
-## Verification
-1. Visit `/admin-kb20/questions/road-signs` — "Clear bad overrides" button is gone; Export CSV / Export JSON / Import CSV remain.
-2. Run a CSV import → live quiz reflects the new wording (already confirmed previously).
-3. No new TypeScript errors; `cleaning` state and helper still compile (kept for now).
-
-## Out of scope (flag for follow-up)
-A full removal of `question_overrides` reads/writes across `bulk-edit`, `search`, `similar`, `validator`, `diagnostics`, `category-check`, `bulk-duplicate`, `import-export`, `images`, `ImagePicker`, and `QuestionEditDialog`, plus dropping the `toggleDisabled` upsert on this page, should be a separate dedicated pass — happy to do it next if you want a clean CSV-only admin.
+### Nothing to implement
+All three guarantees already hold in the code. No file edits required this turn. If you'd like an additional safety belt (e.g. logging the topic on every commit, or removing the deprecated `cleanBadOverrides` handler entirely), say the word and I'll do that as a separate pass.
