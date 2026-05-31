@@ -68,14 +68,14 @@ function BlankOptionsHealthPage() {
           try {
             const res = await fetch(`/mocks/${t.slug}.json`, { cache: "no-store" });
             if (!res.ok) {
-              return { ...t, ok: false, error: `HTTP ${res.status}`, findings: [] };
+              return { topic: t.slug, title: t.title, cat: t.cat, ok: false, error: `HTTP ${res.status}`, findings: [] };
             }
             const json = (await res.json()) as { bank?: unknown[] };
             const bank = Array.isArray(json.bank) ? json.bank : [];
             const findings = scanBankForBlankOptionIssues(bank);
-            return { ...t, ok: true, findings };
+            return { topic: t.slug, title: t.title, cat: t.cat, ok: true, findings };
           } catch (e) {
-            return { ...t, ok: false, error: (e as Error).message, findings: [] };
+            return { topic: t.slug, title: t.title, cat: t.cat, ok: false, error: (e as Error).message, findings: [] };
           }
         }),
       );
