@@ -962,6 +962,7 @@ export const commitCsvImport = createServerFn({ method: "POST" })
         addedCount: addedIds.length,
         removedCount: removedIds.length,
         deploymentNote: "Changes committed to GitHub main. Deployment may take a few minutes.",
+        postCommitWarning,
       };
     } catch (err) {
       const message = err instanceof Error ? err.message : String(err);
