@@ -1,6 +1,6 @@
 import { Outlet, Link, createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 
 import appCss from "../styles.css?url";
@@ -9,6 +9,31 @@ import { StickyAdSlot } from "@/components/AdSlot";
 import { AuthProvider } from "@/lib/auth-context";
 import { PageViewTracker } from "@/components/PageViewTracker";
 import { CookieConsent } from "@/components/CookieConsent";
+
+// Inline boot script: if the React app hasn't mounted within 5s (i.e. the
+// preview is stuck on a blank/loading screen), automatically reload. Caps
+// retries at 3 within 60s to avoid infinite reload loops on real failures.
+const BOOT_WATCHDOG_SCRIPT = `(function(){
+  try {
+    var KEY = '__lvbl_boot_retries__';
+    var now = Date.now();
+    var raw = sessionStorage.getItem(KEY);
+    var state = raw ? JSON.parse(raw) : { count: 0, first: now };
+    if (now - state.first > 60000) state = { count: 0, first: now };
+    window.__APP_MOUNTED__ = false;
+    window.__APP_BOOT_OK__ = function(){
+      window.__APP_MOUNTED__ = true;
+      sessionStorage.removeItem(KEY);
+    };
+    setTimeout(function(){
+      if (window.__APP_MOUNTED__) return;
+      if (state.count >= 3) return;
+      state.count++;
+      sessionStorage.setItem(KEY, JSON.stringify(state));
+      location.reload();
+    }, 5000);
+  } catch(e) {}
+})();`;
 
 const ADSENSE_CMP_BOOTSTRAP_SRC = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7445296424475191";
 const FUNDING_CHOICES_BOOTSTRAP_SRC = "https://fundingchoicesmessages.google.com/i/pub-7445296424475191?ers=1";
@@ -102,6 +127,10 @@ function RootShell({ children }: { children: React.ReactNode }) {
       <head suppressHydrationWarning>
         <script
           suppressHydrationWarning
+          dangerouslySetInnerHTML={{ __html: BOOT_WATCHDOG_SCRIPT }}
+        />
+        <script
+          suppressHydrationWarning
           data-google-cmp-bootstrap="1"
           dangerouslySetInnerHTML={{ __html: GOOGLE_CMP_BOOTSTRAP_SCRIPT }}
         />
@@ -117,6 +146,10 @@ function RootShell({ children }: { children: React.ReactNode }) {
 
 function RootComponent() {
   const [queryClient] = useState(() => new QueryClient());
+  useEffect(() => {
+    const w = window as unknown as { __APP_BOOT_OK__?: () => void };
+    w.__APP_BOOT_OK__?.();
+  }, []);
   return (
     <QueryClientProvider client={queryClient}>
       <AuthProvider>
