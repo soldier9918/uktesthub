@@ -162,6 +162,11 @@ function CsvImportPage() {
             {commitResult.commitSha.slice(0, 7)}
           </a>{" "}
           — auto-deploy will pick this up in ~1–2 minutes.
+          {commitResult.postCommitWarning && (
+            <div className="mt-2 rounded-lg border border-amber-500/40 bg-amber-500/10 p-2 text-xs text-amber-800">
+              ⚠ {commitResult.postCommitWarning}
+            </div>
+          )}
         </div>
       )}
 
