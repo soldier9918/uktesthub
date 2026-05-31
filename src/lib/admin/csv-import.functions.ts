@@ -488,6 +488,23 @@ function validateImported(
     if (usesTemplate) {
       if (!Array.isArray(q.blanks) || q.blanks.length === 0) {
         push(warnings, "blanks", "Fill/dropdown/drag types need a `blanks` array — edit JSON directly.");
+      } else if (t === "dropdown_blanks" || t === "drag_drop_blanks") {
+        // Block any malformed dropdown option (JSON-key/template leak).
+        for (let bi = 0; bi < (q.blanks as { options?: unknown[] }[]).length; bi++) {
+          const opts = Array.isArray((q.blanks as { options?: unknown[] }[])[bi].options)
+            ? ((q.blanks as { options?: unknown[] }[])[bi].options as unknown[])
+            : [];
+          for (let oi = 0; oi < opts.length; oi++) {
+            const issues = findOptionIssues(opts[oi]);
+            if (issues.length > 0) {
+              push(
+                errors,
+                "blanks",
+                `Blank ${bi} option ${oi} is malformed (${issues.map((x) => x.fragment).join(", ")}). Dropdown options must be clean words only — never JSON/template fragments.`,
+              );
+            }
+          }
+        }
       }
     }
 
