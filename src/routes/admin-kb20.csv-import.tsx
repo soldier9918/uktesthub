@@ -40,6 +40,7 @@ function CsvImportPage() {
   const [topic, setTopic] = useState(allTopics[0]?.slug ?? "");
   const [filename, setFilename] = useState<string>("");
   const [csvText, setCsvText] = useState<string>("");
+  const [mode, setMode] = useState<"patch" | "replace">("patch");
   const [preview, setPreview] = useState<PreviewResult | null>(null);
   const [commitResult, setCommitResult] = useState<{
     commitUrl: string;
@@ -55,7 +56,7 @@ function CsvImportPage() {
   const qc = useQueryClient();
 
   const previewMutation = useMutation({
-    mutationFn: () => previewFn({ data: { topic, csvText } }),
+    mutationFn: () => previewFn({ data: { topic, csvText, mode } }),
     onSuccess: (data) => {
       setPreview(data);
       setErrorMsg(null);
@@ -65,7 +66,7 @@ function CsvImportPage() {
   });
 
   const commitMutation = useMutation({
-    mutationFn: () => commitFn({ data: { topic, csvText, filename: filename || "upload.csv" } }),
+    mutationFn: () => commitFn({ data: { topic, csvText, filename: filename || "upload.csv", mode } }),
     onSuccess: (data) => {
       setCommitResult({
         commitUrl: data.commitUrl,
