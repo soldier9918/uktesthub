@@ -682,6 +682,36 @@ function applyTypeCleanup(q: AnyQ): AnyQ {
     delete out.correctAnswer;
     delete out.correctAnswers;
   } else if (t === "fill_blanks" || t === "drag_drop_blanks" || t === "dropdown_blanks") {
+    // Rebuild the nested blanks[] from the flat CSV columns whenever the row
+    // supplies clean optionA-D values. This guarantees that "Full replacement"
+    // mode actually replaces stale/broken nested data (e.g. a previously leaked
+    // `monotonous]}],explanation` option) instead of preserving it.
+    const flatOpts: unknown[] = Array.isArray(out.options) ? out.options : [];
+    const hasFlatOpts = flatOpts.length > 0;
+    const ca = out.correctAnswer;
+    if (hasFlatOpts) {
+      let correctIndex = 0;
+      if (typeof ca === "number" && Number.isFinite(ca)) {
+        correctIndex = Math.max(0, Math.min(flatOpts.length - 1, Math.trunc(ca)));
+      } else if (typeof ca === "string") {
+        const trimmed = ca.trim();
+        const asNum = Number(trimmed);
+        if (Number.isFinite(asNum) && /^-?\d+$/.test(trimmed)) {
+          correctIndex = Math.max(0, Math.min(flatOpts.length - 1, asNum));
+        } else {
+          const idx = flatOpts.findIndex(
+            (o) => typeof o === "string" && o.trim().toLowerCase() === trimmed.toLowerCase(),
+          );
+          if (idx >= 0) correctIndex = idx;
+        }
+      }
+      const cleanOpts = flatOpts.map((o) => (typeof o === "string" ? o : String(o ?? "")));
+      out.blanks = [{ correctIndex, options: cleanOpts }];
+    }
+    // Mirror question → template (frontend prefers `template` for blank types).
+    if (typeof out.question === "string" && out.question.trim() && !out.template) {
+      out.template = out.question;
+    }
     delete out.options;
     delete out.correctAnswer;
     delete out.correctAnswers;
@@ -882,6 +912,25 @@ export const commitCsvImport = createServerFn({ method: "POST" })
         sha: existing.sha,
       });
 
+      // Post-commit verification: re-read the just-committed file from GitHub
+      // and scan for any blank-options leak fragments. Reported back to the
+      // caller (admin) but does not block — the commit has already landed.
+      let postCommitWarning: string | null = null;
+      try {
+        const verify = await getFile(path);
+        if (verify) {
+          const hits: string[] = [];
+          for (const frag of ["}},explanation", "}},", "{{0)", "{{1)", "[object Object]"]) {
+            if (verify.content.includes(frag)) hits.push(frag);
+          }
+          if (hits.length > 0) {
+            postCommitWarning = `Post-commit scan still found malformed fragments in ${path}: ${hits.join(", ")}. Open Blank Options Health and run Repair & commit.`;
+          }
+        }
+      } catch (e) {
+        postCommitWarning = `Post-commit verification could not re-read ${path}: ${(e as Error).message}`;
+      }
+
       // Save BOTH snapshots (previous + new) for rollback. Status is only
       // set to "committed" AFTER the GitHub commit succeeds.
       const { data: hist, error } = await supabase
@@ -913,6 +962,7 @@ export const commitCsvImport = createServerFn({ method: "POST" })
         addedCount: addedIds.length,
         removedCount: removedIds.length,
         deploymentNote: "Changes committed to GitHub main. Deployment may take a few minutes.",
+        postCommitWarning,
       };
     } catch (err) {
       const message = err instanceof Error ? err.message : String(err);

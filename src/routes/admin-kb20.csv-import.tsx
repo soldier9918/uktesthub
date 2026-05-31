@@ -40,10 +40,13 @@ function CsvImportPage() {
   const [topic, setTopic] = useState(allTopics[0]?.slug ?? "");
   const [filename, setFilename] = useState<string>("");
   const [csvText, setCsvText] = useState<string>("");
+  const [mode, setMode] = useState<"patch" | "replace">("patch");
   const [preview, setPreview] = useState<PreviewResult | null>(null);
-  const [commitResult, setCommitResult] = useState<{ commitUrl: string; commitSha: string } | null>(
-    null,
-  );
+  const [commitResult, setCommitResult] = useState<{
+    commitUrl: string;
+    commitSha: string;
+    postCommitWarning?: string | null;
+  } | null>(null);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
   const previewFn = useServerFn(previewCsvImport);
@@ -53,7 +56,7 @@ function CsvImportPage() {
   const qc = useQueryClient();
 
   const previewMutation = useMutation({
-    mutationFn: () => previewFn({ data: { topic, csvText } }),
+    mutationFn: () => previewFn({ data: { topic, csvText, mode } }),
     onSuccess: (data) => {
       setPreview(data);
       setErrorMsg(null);
@@ -63,9 +66,13 @@ function CsvImportPage() {
   });
 
   const commitMutation = useMutation({
-    mutationFn: () => commitFn({ data: { topic, csvText, filename: filename || "upload.csv" } }),
+    mutationFn: () => commitFn({ data: { topic, csvText, filename: filename || "upload.csv", mode } }),
     onSuccess: (data) => {
-      setCommitResult({ commitUrl: data.commitUrl, commitSha: data.commitSha });
+      setCommitResult({
+        commitUrl: data.commitUrl,
+        commitSha: data.commitSha,
+        postCommitWarning: data.postCommitWarning ?? null,
+      });
       setErrorMsg(null);
       setPreview(null);
       setCsvText("");
@@ -125,6 +132,20 @@ function CsvImportPage() {
             ))}
           </select>
           <input type="file" accept=".csv,text/csv" onChange={onFile} className="text-sm" />
+          <label className="flex items-center gap-2 rounded-xl border border-border bg-background px-3 py-2 text-sm">
+            <span className="text-xs uppercase tracking-wide text-muted-foreground">Mode</span>
+            <select
+              value={mode}
+              onChange={(e) => {
+                setMode(e.target.value as "patch" | "replace");
+                setPreview(null);
+              }}
+              className="bg-transparent text-sm"
+            >
+              <option value="patch">Patch (blanks ignored)</option>
+              <option value="replace">Full replacement (blanks clear fields)</option>
+            </select>
+          </label>
           <Button
             onClick={() => previewMutation.mutate()}
             disabled={!csvText || previewMutation.isPending}
@@ -156,6 +177,11 @@ function CsvImportPage() {
             {commitResult.commitSha.slice(0, 7)}
           </a>{" "}
           — auto-deploy will pick this up in ~1–2 minutes.
+          {commitResult.postCommitWarning && (
+            <div className="mt-2 rounded-lg border border-amber-500/40 bg-amber-500/10 p-2 text-xs text-amber-800">
+              ⚠ {commitResult.postCommitWarning}
+            </div>
+          )}
         </div>
       )}
 
