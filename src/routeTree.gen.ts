@@ -81,6 +81,7 @@ import { Route as AdminKb20CsvImportRouteImport } from './routes/admin-kb20.csv-
 import { Route as AdminKb20CategoryCheckRouteImport } from './routes/admin-kb20.category-check'
 import { Route as AdminKb20CategoriesRouteImport } from './routes/admin-kb20.categories'
 import { Route as AdminKb20BulkEditRouteImport } from './routes/admin-kb20.bulk-edit'
+import { Route as AdminKb20BlankOptionsHealthRouteImport } from './routes/admin-kb20.blank-options-health'
 import { Route as AdminKb20AnalyticsRouteImport } from './routes/admin-kb20.analytics'
 import { Route as AdminKb20AdsRouteImport } from './routes/admin-kb20.ads'
 import { Route as EnglishLanguageTestsTestIndexRouteImport } from './routes/english-language-tests.$test.index'
@@ -464,6 +465,12 @@ const AdminKb20BulkEditRoute = AdminKb20BulkEditRouteImport.update({
   path: '/admin-kb20/bulk-edit',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AdminKb20BlankOptionsHealthRoute =
+  AdminKb20BlankOptionsHealthRouteImport.update({
+    id: '/admin-kb20/blank-options-health',
+    path: '/admin-kb20/blank-options-health',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const AdminKb20AnalyticsRoute = AdminKb20AnalyticsRouteImport.update({
   id: '/admin-kb20/analytics',
   path: '/admin-kb20/analytics',
@@ -579,6 +586,7 @@ export interface FileRoutesByFullPath {
   '/uk-road-signs-test': typeof UkRoadSignsTestRoute
   '/admin-kb20/ads': typeof AdminKb20AdsRoute
   '/admin-kb20/analytics': typeof AdminKb20AnalyticsRoute
+  '/admin-kb20/blank-options-health': typeof AdminKb20BlankOptionsHealthRoute
   '/admin-kb20/bulk-edit': typeof AdminKb20BulkEditRoute
   '/admin-kb20/categories': typeof AdminKb20CategoriesRoute
   '/admin-kb20/category-check': typeof AdminKb20CategoryCheckRoute
@@ -664,6 +672,7 @@ export interface FileRoutesByTo {
   '/uk-road-signs-test': typeof UkRoadSignsTestRoute
   '/admin-kb20/ads': typeof AdminKb20AdsRoute
   '/admin-kb20/analytics': typeof AdminKb20AnalyticsRoute
+  '/admin-kb20/blank-options-health': typeof AdminKb20BlankOptionsHealthRoute
   '/admin-kb20/bulk-edit': typeof AdminKb20BulkEditRoute
   '/admin-kb20/categories': typeof AdminKb20CategoriesRoute
   '/admin-kb20/category-check': typeof AdminKb20CategoryCheckRoute
@@ -749,6 +758,7 @@ export interface FileRoutesById {
   '/uk-road-signs-test': typeof UkRoadSignsTestRoute
   '/admin-kb20/ads': typeof AdminKb20AdsRoute
   '/admin-kb20/analytics': typeof AdminKb20AnalyticsRoute
+  '/admin-kb20/blank-options-health': typeof AdminKb20BlankOptionsHealthRoute
   '/admin-kb20/bulk-edit': typeof AdminKb20BulkEditRoute
   '/admin-kb20/categories': typeof AdminKb20CategoriesRoute
   '/admin-kb20/category-check': typeof AdminKb20CategoryCheckRoute
@@ -838,6 +848,7 @@ export interface FileRouteTypes {
     | '/uk-road-signs-test'
     | '/admin-kb20/ads'
     | '/admin-kb20/analytics'
+    | '/admin-kb20/blank-options-health'
     | '/admin-kb20/bulk-edit'
     | '/admin-kb20/categories'
     | '/admin-kb20/category-check'
@@ -923,6 +934,7 @@ export interface FileRouteTypes {
     | '/uk-road-signs-test'
     | '/admin-kb20/ads'
     | '/admin-kb20/analytics'
+    | '/admin-kb20/blank-options-health'
     | '/admin-kb20/bulk-edit'
     | '/admin-kb20/categories'
     | '/admin-kb20/category-check'
@@ -1007,6 +1019,7 @@ export interface FileRouteTypes {
     | '/uk-road-signs-test'
     | '/admin-kb20/ads'
     | '/admin-kb20/analytics'
+    | '/admin-kb20/blank-options-health'
     | '/admin-kb20/bulk-edit'
     | '/admin-kb20/categories'
     | '/admin-kb20/category-check'
@@ -1095,6 +1108,7 @@ export interface RootRouteChildren {
   UkRoadSignsTestRoute: typeof UkRoadSignsTestRoute
   AdminKb20AdsRoute: typeof AdminKb20AdsRoute
   AdminKb20AnalyticsRoute: typeof AdminKb20AnalyticsRoute
+  AdminKb20BlankOptionsHealthRoute: typeof AdminKb20BlankOptionsHealthRoute
   AdminKb20BulkEditRoute: typeof AdminKb20BulkEditRoute
   AdminKb20CategoriesRoute: typeof AdminKb20CategoriesRoute
   AdminKb20CategoryCheckRoute: typeof AdminKb20CategoryCheckRoute
@@ -1632,6 +1646,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AdminKb20BulkEditRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/admin-kb20/blank-options-health': {
+      id: '/admin-kb20/blank-options-health'
+      path: '/admin-kb20/blank-options-health'
+      fullPath: '/admin-kb20/blank-options-health'
+      preLoaderRoute: typeof AdminKb20BlankOptionsHealthRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/admin-kb20/analytics': {
       id: '/admin-kb20/analytics'
       path: '/admin-kb20/analytics'
@@ -1859,6 +1880,7 @@ const rootRouteChildren: RootRouteChildren = {
   UkRoadSignsTestRoute: UkRoadSignsTestRoute,
   AdminKb20AdsRoute: AdminKb20AdsRoute,
   AdminKb20AnalyticsRoute: AdminKb20AnalyticsRoute,
+  AdminKb20BlankOptionsHealthRoute: AdminKb20BlankOptionsHealthRoute,
   AdminKb20BulkEditRoute: AdminKb20BulkEditRoute,
   AdminKb20CategoriesRoute: AdminKb20CategoriesRoute,
   AdminKb20CategoryCheckRoute: AdminKb20CategoryCheckRoute,

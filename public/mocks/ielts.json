@@ -4162,7 +4162,7 @@
         {
           "options": [
             "distraction",
-            "disruption_",
+            "disruption",
             "disparity"
           ],
           "correctIndex": 2
@@ -4180,9 +4180,9 @@
         {
           "correctIndex": 1,
           "options": [
-            "pursue_",
-            "enhance_",
-            "validate_"
+            "pursue",
+            "enhance",
+            "validate"
           ]
         }
       ],
@@ -4196,8 +4196,8 @@
         {
           "options": [
             "mandatory",
-            "voluntary_",
-            "secondary_"
+            "voluntary",
+            "secondary"
           ],
           "correctIndex": 0
         }
@@ -4215,9 +4215,9 @@
       "blanks": [
         {
           "options": [
-            "predict_",
-            "project__",
-            "determine_"
+            "predict",
+            "project",
+            "determine"
           ],
           "correctIndex": 2
         }
@@ -4233,9 +4233,9 @@
       "blanks": [
         {
           "options": [
-            "scarcity_",
-            "surplus_",
-            "shortage__"
+            "scarcity",
+            "surplus",
+            "shortage"
           ],
           "correctIndex": 1
         }
@@ -4308,7 +4308,7 @@
         {
           "options": [
             "revival",
-            "depletion_",
+            "depletion",
             "expansion",
             "restoration"
           ],
@@ -4329,7 +4329,7 @@
         {
           "correctIndex": 1,
           "options": [
-            "unanimous_",
+            "unanimous",
             "unprecedented",
             "unpredictable",
             "unjustified"
@@ -4369,7 +4369,7 @@
           "correctIndex": 2,
           "options": [
             "shortage",
-            "surplus_",
+            "surplus",
             "disparity",
             "diversity"
           ]
@@ -4425,9 +4425,9 @@
           "correctIndex": 0,
           "options": [
             "collaborated",
-            "contended_",
-            "clashed_",
-            "coincided_"
+            "contended",
+            "clashed",
+            "coincided"
           ]
         }
       ],
@@ -4880,8 +4880,8 @@
           "options": [
             "surplus",
             "shortage_of",
-            "wealth_of_",
-            "lack_of_"
+            "wealth_of",
+            "lack_of"
           ],
           "correctIndex": 2
         }
@@ -4900,8 +4900,8 @@
           "options": [
             "vital_role_in",
             "minor_part_of",
-            "detriment_to_",
-            "obstacle_to_"
+            "detriment_to",
+            "obstacle_to"
           ]
         }
       ],
@@ -5298,7 +5298,7 @@
             "neglecting",
             "deteriorating",
             "distorting",
-            "fostering_"
+            "fostering"
           ]
         }
       ],
@@ -5316,10 +5316,10 @@
         {
           "correctIndex": 1,
           "options": [
-            "attained_",
-            "attributed_",
-            "allocated_",
-            "attached__]}],explanation",
+            "attained",
+            "attributed",
+            "allocated",
+            "attached",
             "prompt"
           ]
         }
@@ -5357,10 +5357,10 @@
         {
           "correctIndex": 0,
           "options": [
-            "curtail_",
-            "enhance_",
-            "facilitate_",
-            "promote_]}],explanation",
+            "curtail",
+            "enhance",
+            "facilitate",
+            "promote",
             "prompt"
           ]
         }
@@ -5376,10 +5376,10 @@
       "blanks": [
         {
           "options": [
-            "vague_",
-            "versatile_",
-            "vivid_",
-            "vacant_]}],explanation",
+            "vague",
+            "versatile",
+            "vivid",
+            "vacant",
             "prompt"
           ],
           "correctIndex": 1
@@ -6787,8 +6787,8 @@
           "options": [
             "impartiality",
             "disparity_in",
-            "consensus_on_",
-            "abundance_of_"
+            "consensus_on",
+            "abundance_of"
           ],
           "correctIndex": 1
         }
@@ -6802,9 +6802,9 @@
         {
           "options": [
             "undermined",
-            "disregarded_",
-            "overlooked_",
-            "scrutinised_"
+            "disregarded",
+            "overlooked",
+            "scrutinised"
           ],
           "correctIndex": 3
         }
@@ -6821,9 +6821,9 @@
           "correctIndex": 0,
           "options": [
             "mitigate",
-            "exasperate_",
-            "fabricate_",
-            "commemorate_"
+            "exasperate",
+            "fabricate",
+            "commemorate"
           ]
         }
       ],
@@ -7222,7 +7222,7 @@
     },
     {
       "prompt": "Complete the sentence about technology",
-      "template": "The new software proved to be highly {{0}}, allowing the design team to work across several different platforms simultaneously",
+      "template": "The new software proved to be highly {{0}}, allowing the design team to work across several different platforms simultaneously.",
       "type": "drag-drop-blanks",
       "blanks": [
         {
@@ -7230,14 +7230,14 @@
           "options": [
             "extravagant",
             "versatile",
-            "monotonous]}],explanation",
+            "monotonous",
             "prompt"
           ]
         }
       ],
-      "explanation": "'Versatile' means able to adapt to many different functions or activities.",
+      "explanation": "\"Versatile\" means able to adapt to many different functions or activities, which fits software that works across several platforms.",
       "id": "i-dd-0022",
-      "question": "The new software proved to be highly {{0}}, allowing the design team to work across several different platforms simultaneously"
+      "question": "The new software proved to be highly {{0}}, allowing the design team to work across several different platforms simultaneously."
     },
     {
       "explanation": "'Tuition' fees refer to the money paid to a university or college for instruction.",
@@ -7248,7 +7248,7 @@
           "options": [
             "tuition",
             "stipend",
-            "pension]}],explanation",
+            "pension",
             "prompt"
           ]
         }
@@ -7266,7 +7266,7 @@
           "options": [
             "consequences",
             "implications",
-            "definitions]}],explanation",
+            "definitions",
             "prompt"
           ]
         }
@@ -7373,7 +7373,7 @@
           "options": [
             "dispersed",
             "allocated_to",
-            "attributed_to_"
+            "attributed_to"
           ],
           "correctIndex": 2
         }
@@ -7395,7 +7395,7 @@
           "options": [
             "recreational",
             "vocational",
-            "theoretical_"
+            "theoretical"
           ],
           "correctIndex": 1
         }
@@ -7409,9 +7409,9 @@
         {
           "correctIndex": 0,
           "options": [
-            "subsidise_",
-            "supplement_",
-            "substitute_"
+            "subsidise",
+            "supplement",
+            "substitute"
           ]
         }
       ],
@@ -7427,11 +7427,10 @@
       "blanks": [
         {
           "options": [
-            "prosperous_",
-            "perilous_",
-            "monotonous__]}],explanation",
-            "prompt",
-            "template"
+            "prosperous",
+            "perilous",
+            "monotonous",
+            "prompt"
           ],
           "correctIndex": 1
         }
@@ -7449,11 +7448,10 @@
         {
           "correctIndex": 2,
           "options": [
-            "imitate_",
-            "interfere_",
-            "implement__]}],explanation",
-            "prompt",
-            "template"
+            "imitate",
+            "interfere",
+            "implement",
+            "prompt"
           ]
         }
       ],
@@ -7467,11 +7465,10 @@
         {
           "correctIndex": 0,
           "options": [
-            "versatile_",
-            "redundant_",
-            "obsolete__]}],explanation",
-            "prompt",
-            "template"
+            "versatile",
+            "redundant",
+            "obsolete",
+            "prompt"
           ]
         }
       ],
@@ -7489,11 +7486,10 @@
         {
           "correctIndex": 1,
           "options": [
-            "sceptical_",
-            "stringent_",
-            "negligent__]}],explanation",
-            "prompt",
-            "template"
+            "sceptical",
+            "stringent",
+            "negligent",
+            "prompt"
           ]
         }
       ],
@@ -8765,7 +8761,7 @@
           "options": [
             "vague",
             "versatile",
-            "vulnerable]}],explanation"
+            "vulnerable"
           ],
           "correctIndex": 1
         },
@@ -8774,7 +8770,7 @@
           "options": [
             "vague",
             "versatile",
-            "vulnerable]}],explanation"
+            "vulnerable"
           ]
         },
         {
@@ -8782,7 +8778,7 @@
           "options": [
             "vague",
             "versatile",
-            "vulnerable]}],explanation"
+            "vulnerable"
           ]
         },
         {
@@ -8790,7 +8786,7 @@
           "options": [
             "vague",
             "versatile",
-            "vulnerable]}],explanation"
+            "vulnerable"
           ]
         }
       ],
@@ -8807,7 +8803,7 @@
           "options": [
             "depleted",
             "distributed",
-            "disseminated]}],explanation"
+            "disseminated"
           ],
           "correctIndex": 2
         },
@@ -8816,7 +8812,7 @@
           "options": [
             "depleted",
             "distributed",
-            "disseminated]}],explanation"
+            "disseminated"
           ]
         },
         {
@@ -8824,7 +8820,7 @@
           "options": [
             "depleted",
             "distributed",
-            "disseminated]}],explanation"
+            "disseminated"
           ]
         },
         {
@@ -8832,7 +8828,7 @@
           "options": [
             "depleted",
             "distributed",
-            "disseminated]}],explanation"
+            "disseminated"
           ]
         }
       ],
@@ -8845,7 +8841,7 @@
           "options": [
             "profound",
             "proficient",
-            "prolonged]}],explanation"
+            "prolonged"
           ],
           "correctIndex": 0
         },
@@ -8854,7 +8850,7 @@
           "options": [
             "profound",
             "proficient",
-            "prolonged]}],explanation"
+            "prolonged"
           ]
         },
         {
@@ -8862,7 +8858,7 @@
           "options": [
             "profound",
             "proficient",
-            "prolonged]}],explanation"
+            "prolonged"
           ]
         }
       ],
@@ -9015,7 +9011,7 @@
             "compulsory",
             "revolving_around",
             "adequate_amount_of",
-            "excessive]}],explanation"
+            "excessive"
           ]
         }
       ],
