@@ -127,6 +127,10 @@ function RootShell({ children }: { children: React.ReactNode }) {
       <head suppressHydrationWarning>
         <script
           suppressHydrationWarning
+          dangerouslySetInnerHTML={{ __html: BOOT_WATCHDOG_SCRIPT }}
+        />
+        <script
+          suppressHydrationWarning
           data-google-cmp-bootstrap="1"
           dangerouslySetInnerHTML={{ __html: GOOGLE_CMP_BOOTSTRAP_SCRIPT }}
         />
@@ -142,6 +146,10 @@ function RootShell({ children }: { children: React.ReactNode }) {
 
 function RootComponent() {
   const [queryClient] = useState(() => new QueryClient());
+  useEffect(() => {
+    const w = window as unknown as { __APP_BOOT_OK__?: () => void };
+    w.__APP_BOOT_OK__?.();
+  }, []);
   return (
     <QueryClientProvider client={queryClient}>
       <AuthProvider>
