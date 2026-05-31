@@ -21,6 +21,8 @@ export const Route = createFileRoute("/admin-kb20/")({
             desc="Browse all topics and 45 mocks per topic. Disable or enable individual mocks." />
           <Tile to="/admin-kb20/validator" title="Question Bank Validator"
             desc="Find duplicates, missing explanations, broken correct answers, missing images. Click any finding to jump to the question." />
+          <Tile to="/admin-kb20/blank-options-health" title="Blank Options Health"
+            desc="Scan every dropdown / drag-drop blank question across all topics for malformed options (JSON-key or template leaks). Preview and commit repairs." />
           <Tile to="/admin-kb20/search" title="Search Questions"
             desc="Find every question containing a word or phrase. Filter by category and topic, click to reveal answers." />
           <Tile to="/admin-kb20/similar" title="Similar Questions"
