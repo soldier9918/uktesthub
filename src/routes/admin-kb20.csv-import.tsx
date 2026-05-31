@@ -132,6 +132,20 @@ function CsvImportPage() {
             ))}
           </select>
           <input type="file" accept=".csv,text/csv" onChange={onFile} className="text-sm" />
+          <label className="flex items-center gap-2 rounded-xl border border-border bg-background px-3 py-2 text-sm">
+            <span className="text-xs uppercase tracking-wide text-muted-foreground">Mode</span>
+            <select
+              value={mode}
+              onChange={(e) => {
+                setMode(e.target.value as "patch" | "replace");
+                setPreview(null);
+              }}
+              className="bg-transparent text-sm"
+            >
+              <option value="patch">Patch (blanks ignored)</option>
+              <option value="replace">Full replacement (blanks clear fields)</option>
+            </select>
+          </label>
           <Button
             onClick={() => previewMutation.mutate()}
             disabled={!csvText || previewMutation.isPending}
