@@ -3,6 +3,7 @@ import { z } from "zod";
 import Papa from "papaparse";
 import { requireSupabaseAuth } from "@/integrations/supabase/auth-middleware";
 import { commitFile, getFile, listDir, testConnection } from "@/lib/admin/github.server";
+import { findOptionIssues, type OptionIssue } from "@/lib/admin/blank-options";
 
 // Use `any` for question records — the on-disk schema is too polymorphic to
 // type fully here, and TanStack's serializer rejects `unknown` index sigs.
