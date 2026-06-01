@@ -150,20 +150,66 @@ function CsvImportPage() {
       <section className="mt-6 rounded-xl border border-border bg-card p-5">
         <h2 className="font-semibold">1. Pick topic + upload CSV</h2>
         <div className="mt-3 flex flex-wrap items-center gap-2">
-          <select
-            value={topic}
-            onChange={(e) => {
-              setTopic(e.target.value);
-              setPreview(null);
-            }}
-            className="rounded-xl border border-border bg-background px-3 py-2 text-sm"
-          >
-            {allTopics.map((t) => (
-              <option key={t.slug} value={t.slug}>
-                {t.cat} — {t.title} ({t.slug})
-              </option>
-            ))}
-          </select>
+          <Popover open={topicPickerOpen} onOpenChange={setTopicPickerOpen}>
+            <PopoverTrigger asChild>
+              <Button
+                variant="outline"
+                role="combobox"
+                aria-expanded={topicPickerOpen}
+                className="w-[420px] max-w-full justify-between rounded-xl"
+              >
+                <span className="truncate text-left">
+                  {selectedTopic
+                    ? `${selectedTopic.cat} — ${selectedTopic.title} (${selectedTopic.slug})`
+                    : "Select a topic…"}
+                </span>
+                <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
+              </Button>
+            </PopoverTrigger>
+            <PopoverContent className="w-[480px] p-0" align="start">
+              <Command
+                filter={(value, search) => {
+                  const q = search.toLowerCase().trim();
+                  if (!q) return 1;
+                  return value.toLowerCase().includes(q) ? 1 : 0;
+                }}
+              >
+                <CommandInput placeholder={`Search ${allTopics.length} topics…`} />
+                <CommandList className="max-h-80">
+                  <CommandEmpty>No topic found.</CommandEmpty>
+                  <CommandGroup>
+                    {allTopics.map((t) => (
+                      <CommandItem
+                        key={t.slug}
+                        value={`${t.title} ${t.slug} ${t.cats.join(" ")}`}
+                        onSelect={() => {
+                          setTopic(t.slug);
+                          setPreview(null);
+                          setTopicPickerOpen(false);
+                        }}
+                      >
+                        <Check
+                          className={cn(
+                            "mr-2 h-4 w-4",
+                            topic === t.slug ? "opacity-100" : "opacity-0",
+                          )}
+                        />
+                        <div className="flex min-w-0 flex-col">
+                          <span className="truncate">{t.title}</span>
+                          <span className="truncate text-xs text-muted-foreground">
+                            {t.cats.join(" · ")} — {t.slug}
+                          </span>
+                        </div>
+                      </CommandItem>
+                    ))}
+                  </CommandGroup>
+                </CommandList>
+              </Command>
+            </PopoverContent>
+          </Popover>
+          <span className="text-xs text-muted-foreground">
+            {allTopics.length} topics across {categories.length} categories
+          </span>
           <input type="file" accept=".csv,text/csv" onChange={onFile} className="text-sm" />
           <label className="flex items-center gap-2 rounded-xl border border-border bg-background px-3 py-2 text-sm">
             <span className="text-xs uppercase tracking-wide text-muted-foreground">Mode</span>
