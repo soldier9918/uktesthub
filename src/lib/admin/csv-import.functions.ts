@@ -1340,6 +1340,7 @@ export const previewCsvImport = createServerFn({ method: "POST" })
         oldMockCount: mockCountOf(oldFile),
         newMockCount: mockCountOf(newFile),
         unusedQuestionCount: unusedQuestionCount(newFile),
+        replaceTargets: targets,
         validation,
         existingSha: existing.sha,
         filePath: filePathFor(data.topic),
