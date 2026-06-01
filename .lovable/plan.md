@@ -1,23 +1,37 @@
-I found two likely causes of the preview appearing stuck:
+# Bulk CSV export for all topics
 
-1. The admin page can remain on `Loading…` if authentication/session resolution hangs.
-2. The dev server has previously failed when the mock-manifest predev script could not be found, so startup needs a safer fallback.
+Today CSVs can only be exported one topic at a time from `/admin-kb20/questions/$topic` (the "Export CSV" button). There's no way to grab them all at once.
 
-Plan:
+## What to add
 
-1. **Add an auth loading timeout**
-   - Update the auth provider so `loading` cannot stay `true` forever.
-   - If session lookup fails or takes too long, it will safely clear loading and let admin routes redirect/show the correct state instead of hanging.
-   - Keep admin security unchanged: no user still redirects to the admin login; non-admin users remain blocked.
+A new section on `/admin-kb20/import-export` (and a tile on `/admin-kb20`) called **Bulk CSV export** with three actions:
 
-2. **Make admin loading state self-recovering**
-   - Update `AdminGate` so if it is still loading after a short grace period it shows a retry/refresh option instead of an endless `Loading…` screen.
-   - If the auth provider recovers, the admin panel loads normally.
+1. **Download all topics as ZIP** — produces `uktesthub-csv-export-YYYYMMDD.zip` containing one `<category-slug>/<topic-slug>.csv` per topic, plus a top-level `MANIFEST.csv` listing `category, topic, slug, question_count, filename`.
+2. **Download a single category as ZIP** — same structure but filtered to one category, via a category dropdown.
+3. **Download one combined CSV** — every question from every topic in a single flat file with two extra leading columns: `category`, `topic`.
 
-3. **Harden preview startup**
-   - Replace direct `node scripts/build_mock_manifest.mjs` startup calls with a small safe script that checks the manifest builder exists before running it.
-   - This prevents the preview server from failing completely if that generated/support script is temporarily missing during workspace restore.
+All three reuse the exact same CSV column layout the per-topic Export CSV button already produces (so files round-trip cleanly through the existing CSV importer):
+`id, type, question, options, correctAnswer, correctAnswers, explanation, image, imageAlt`.
 
-4. **Verify**
-   - Restart/check the preview route `/admin-kb20` and confirm it no longer stays indefinitely on `Loading…`.
-   - Check logs for startup errors after the change.
+For `drop-down-blanks` / `drag-drop-blanks` / `fill-blanks`, the row is flattened from `blanks[0]` into `optionA-D` + `correctAnswer` the same way the importer expects, so re-import via Full replacement rebuilds the `blanks` array correctly (matches the fix already in `csv-import.functions.ts`).
+
+## How it works
+
+- Pure client-side: iterates `categories` from `src/data/categories.ts`, calls the existing `loadTopicFileForAdmin(slug)` for each topic, runs the same row-builder used by `exportData("csv")` in `admin-kb20.questions.$topic.tsx`.
+- Extract that row-builder into `src/lib/admin/csv-export.ts` so both the per-topic page and the new bulk page share one implementation (no drift between single and bulk exports).
+- ZIP via the `jszip` package (tiny, browser-safe). Add it with `bun add jszip`.
+- Progress UI: shows `Exporting 23 / 84 topics…` while it loops, with a per-topic error list at the end (e.g. "topic X: file not found") so missing mocks don't silently disappear.
+
+## Files
+
+- new `src/lib/admin/csv-export.ts` — shared `buildTopicCsv(topic, file)` and `flattenBlanksRow(q)` helpers.
+- edit `src/routes/admin-kb20.questions.$topic.tsx` — replace its inline CSV builder with the shared helper (no behavior change).
+- edit `src/routes/admin-kb20.import-export.tsx` — add the "Bulk CSV export" section with the three buttons + category select + progress.
+- edit `src/routes/admin-kb20.index.tsx` — add a tile linking to the bulk export.
+- `package.json` — add `jszip`.
+
+## Out of scope
+
+- No server function / GitHub commit — this is download-only.
+- No schema changes.
+- Per-topic Export CSV button stays exactly where it is.
