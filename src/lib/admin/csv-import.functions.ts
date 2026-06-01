@@ -881,6 +881,10 @@ function unusedQuestionCount(file: MockFile): number {
   return v2.bank.filter((q) => q.id && !used.has(String(q.id))).length;
 }
 
+const TopicSchema = z.string().min(1).max(120).regex(/^[a-z0-9-]+$/);
+
+
+
 
 /** For topic === "road-signs" load directory listings for both image dirs. */
 async function loadRoadSignFiles(topic: string): Promise<Set<string> | null> {
