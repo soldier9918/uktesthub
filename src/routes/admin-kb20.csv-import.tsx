@@ -2,9 +2,20 @@ import { useMemo, useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useServerFn } from "@tanstack/react-start";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
+import { Check, ChevronsUpDown } from "lucide-react";
 import { AdminGate } from "@/components/AdminGate";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
+import {
+  Command,
+  CommandEmpty,
+  CommandGroup,
+  CommandInput,
+  CommandItem,
+  CommandList,
+} from "@/components/ui/command";
+import { cn } from "@/lib/utils";
 import { categories } from "@/data/categories";
 import {
   previewCsvImport,
@@ -30,14 +41,28 @@ export const Route = createFileRoute("/admin-kb20/csv-import")({
 type PreviewResult = Awaited<ReturnType<typeof previewCsvImport>>;
 
 function CsvImportPage() {
-  const allTopics = useMemo(
-    () =>
-      categories
-        .flatMap((c) => c.topics.map((t) => ({ slug: t.slug, title: t.title, cat: c.title })))
-        .sort((a, b) => a.slug.localeCompare(b.slug)),
-    [],
-  );
+  // A topic slug can appear in multiple categories — dedupe by slug and
+  // collect all category names so search matches any of them.
+  const allTopics = useMemo(() => {
+    const bySlug = new Map<
+      string,
+      { slug: string; title: string; cat: string; cats: string[] }
+    >();
+    for (const c of categories) {
+      for (const t of c.topics) {
+        const existing = bySlug.get(t.slug);
+        if (existing) {
+          if (!existing.cats.includes(c.title)) existing.cats.push(c.title);
+        } else {
+          bySlug.set(t.slug, { slug: t.slug, title: t.title, cat: c.title, cats: [c.title] });
+        }
+      }
+    }
+    return Array.from(bySlug.values()).sort((a, b) => a.title.localeCompare(b.title));
+  }, []);
   const [topic, setTopic] = useState(allTopics[0]?.slug ?? "");
+  const [topicPickerOpen, setTopicPickerOpen] = useState(false);
+  const selectedTopic = allTopics.find((t) => t.slug === topic);
   const [filename, setFilename] = useState<string>("");
   const [csvText, setCsvText] = useState<string>("");
   const [mode, setMode] = useState<"patch" | "replace">("patch");
