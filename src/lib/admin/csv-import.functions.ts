@@ -1125,6 +1125,8 @@ export const previewCsvImport = createServerFn({ method: "POST" })
         existingSha: existing.sha,
         filePath: filePathFor(data.topic),
         topic: data.topic,
+        mode,
+        branch: GITHUB_REPO.branch,
       };
     } catch (err) {
       console.error("previewCsvImport failed:", err);
@@ -1290,6 +1292,8 @@ export const commitCsvImport = createServerFn({ method: "POST" })
         removedCount: removedIds.length,
         deploymentNote: "Changes committed to GitHub main. Deployment may take a few minutes.",
         postCommitWarning,
+        mode,
+        branch: GITHUB_REPO.branch,
       };
     } catch (err) {
       const message = err instanceof Error ? err.message : String(err);
