@@ -1061,14 +1061,11 @@ export const commitCsvImport = createServerFn({ method: "POST" })
     await assertAdmin(context.supabase, context.userId);
     const { supabase, userId } = context;
     const mode = data.mode ?? "patch";
-    const { rows, rowLines, clearByRow, errors } = parseCsv(data.csvText, mode);
+    const { rows, rowLines, clearByRow, mockMetaByRow, errors } = parseCsv(data.csvText, mode);
     if (rows.length === 0) throw new Error("No valid rows found in CSV");
 
     const path = filePathFor(data.topic);
     try {
-      // Always re-fetch the latest version of the target file just before commit
-      // — even if the client passes expectedSha, we compare it against the
-      // freshest sha from GitHub to detect out-of-band changes.
       const existing = await getFile(path);
       if (!existing) throw new Error(`Topic file not found in repo: ${path}`);
       if (data.expectedSha && data.expectedSha !== existing.sha) {
@@ -1077,12 +1074,18 @@ export const commitCsvImport = createServerFn({ method: "POST" })
         );
       }
       const oldFile = JSON.parse(existing.content) as MockFile;
-      const newFile = mergeIntoFile(oldFile, rows, clearByRow);
+      const newFile =
+        mode === "replace"
+          ? replaceIntoFile(oldFile, rows, clearByRow, mockMetaByRow)
+          : mergeIntoFile(oldFile, rows, clearByRow);
 
       const mergedById = new Map(bankOf(newFile).filter((q) => q.id).map((q) => [String(q.id), q]));
       const rowIds = rows.map((r) => String(r.id));
       const roadSignFiles = await loadRoadSignFiles(data.topic);
       const validation = validateImported(mergedById, rowIds, rowLines, newFile, data.topic, roadSignFiles);
+      if (mode === "replace") {
+        validation.errors.push(...validateReplaceMode(rows, rowLines, mockMetaByRow, data.topic));
+      }
 
       if (validation.errors.length > 0) {
         const first = validation.errors.slice(0, 5).map((e) => `• ${e.id ? `[${e.id}] ` : ""}${e.message}`).join("\n");
