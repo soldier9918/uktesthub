@@ -105,6 +105,7 @@ function parseCsv(csvText: string, mode: "patch" | "replace" = "patch"): {
   rowLines: number[];
   presentByRow: Set<string>[];
   clearByRow: Set<string>[];
+  mockMetaByRow: MockMeta[];
   errors: string[];
 } {
   const out = Papa.parse<Record<string, string>>(csvText, {
