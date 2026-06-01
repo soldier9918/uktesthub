@@ -163,7 +163,8 @@ function CsvImportPage() {
         </div>
         <p className="mt-2 text-xs text-muted-foreground">
           Expected columns:{" "}
-          <code>id, type, question, options (|-separated), correctAnswer, correctAnswers, explanation, image, imageAlt</code>
+          <code>id, type, question, optionA, optionB, optionC, optionD, correctAnswer, correctAnswers, explanation, image, imageAlt, mockNumber, questionNumber</code>
+          . In Full Replacement, when <code>mockNumber</code> is present each question id may appear in up to 2 mocks (same content on every repeat); duplicates within a single mock are blocked.
         </p>
       </section>
 
@@ -218,6 +219,21 @@ function CsvImportPage() {
             <Badge variant="secondary">Existing: {preview.oldBankSize}</Badge>
             <Badge variant="secondary">After: {preview.newBankSize}</Badge>
             <Badge variant="secondary">Mocks: {preview.oldMockCount} → {preview.newMockCount}</Badge>
+            {preview.replaceTargets && (
+              <>
+                <Badge variant="secondary">Unique questions: {preview.replaceTargets.uniqueQuestions}</Badge>
+                <Badge variant="secondary">Total slots: {preview.replaceTargets.totalSlots}</Badge>
+                <Badge
+                  className={
+                    preview.replaceTargets.maxUsesPerQuestion <= 2
+                      ? "bg-emerald-500/20 text-emerald-700"
+                      : "bg-rose-500/20 text-rose-700"
+                  }
+                >
+                  Max uses / question: {preview.replaceTargets.maxUsesPerQuestion}
+                </Badge>
+              </>
+            )}
             <Badge
               className={
                 preview.unusedQuestionCount === 0
