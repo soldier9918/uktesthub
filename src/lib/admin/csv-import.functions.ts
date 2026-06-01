@@ -1194,6 +1194,23 @@ export const commitCsvImport = createServerFn({ method: "POST" })
       const changedIds = diff.changed.map((c) => c.id);
       const addedIds = diff.added.map((q) => String(q.id ?? ""));
       const removedIds = diff.removed.map((q) => String(q.id ?? ""));
+      if (mode === "replace") {
+        const oldStubIds = bankOf(oldFile).map((q) => String(q.id ?? "")).filter((id) => id.includes("-stub-") || id.startsWith(`${data.topic}-stub-`));
+        const removedStubIds = oldStubIds.filter((id) => removedIds.includes(id));
+        console.log("commitCsvImport replace diff before GitHub commit:", {
+          topic: data.topic,
+          path,
+          branch: GITHUB_REPO.branch,
+          oldStubCount: oldStubIds.length,
+          removedStubCount: removedStubIds.length,
+          firstRemovedStubIds: removedStubIds.slice(0, 5),
+        });
+        if (oldStubIds.length > 0 && removedStubIds.length !== oldStubIds.length) {
+          throw new Error(
+            `Full replacement safety check failed: expected GitHub diff to remove ${oldStubIds.length} old stub IDs, but it removes ${removedStubIds.length}. Commit blocked.`,
+          );
+        }
+      }
       const newContent = JSON.stringify(newFile, null, 2) + "\n";
 
       // Standardized commit message format.
@@ -1219,6 +1236,23 @@ export const commitCsvImport = createServerFn({ method: "POST" })
           if (hits.length > 0) {
             postCommitWarning = `Post-commit scan still found malformed fragments in ${path}: ${hits.join(", ")}. Open Blank Options Health and run Repair & commit.`;
           }
+          if (mode === "replace") {
+            const verifiedFile = JSON.parse(verify.content) as MockFile;
+            const verified = assertReplacementJson(verifiedFile, data.topic);
+            console.log("commitCsvImport post-commit replace verification:", {
+              topic: data.topic,
+              path,
+              branch: GITHUB_REPO.branch,
+              bankSize: verified.bankSize,
+              mockCount: verified.mockCount,
+              unusedQuestionCount: verified.unusedQuestionCount,
+              firstBankIds: verified.firstBankIds,
+              errorCount: verified.errors.length,
+            });
+            if (verified.errors.length > 0) {
+              postCommitWarning = `Post-commit replacement verification failed for ${path}: ${verified.errors.slice(0, 3).map((e) => e.message).join(" | ")}`;
+            }
+          }
         }
       } catch (e) {
         postCommitWarning = `Post-commit verification could not re-read ${path}: ${(e as Error).message}`;
@@ -1236,7 +1270,7 @@ export const commitCsvImport = createServerFn({ method: "POST" })
           commit_sha: commitSha,
           commit_url: commitUrl,
           row_count: rows.length,
-          validation_log: { parseErrors: errors, changedIds, addedIds, removedIds } as never,
+          validation_log: { parseErrors: errors, changedIds, addedIds, removedIds, mode, branch: GITHUB_REPO.branch, path } as never,
           status: "committed",
           created_by: userId,
         })
