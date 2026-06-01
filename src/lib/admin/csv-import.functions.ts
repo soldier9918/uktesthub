@@ -907,6 +907,84 @@ async function loadRoadSignFiles(topic: string): Promise<Set<string> | null> {
 
 const ImportModeSchema = z.enum(["patch", "replace"]).optional();
 
+const PLACEHOLDER_PHRASE = "Full revision content for this topic is being prepared";
+
+/** Preflight checks unique to Full replacement mode. Blocking issues. */
+function validateReplaceMode(
+  rows: AnyQ[],
+  rowLines: number[],
+  mockMetaByRow: MockMeta[],
+  topic: string,
+  questionsPerMock = 24,
+): Issue[] {
+  const out: Issue[] = [];
+
+  rows.forEach((r, i) => {
+    const text = String(r.question ?? r.template ?? r.prompt ?? "");
+    if (text.includes(PLACEHOLDER_PHRASE)) {
+      out.push({
+        rowIndex: rowLines[i] ?? null,
+        id: String(r.id ?? "") || null,
+        field: "question",
+        message: `Placeholder text found in CSV: "${PLACEHOLDER_PHRASE}". Replace with real content before import.`,
+      });
+    }
+  });
+
+  const useExplicit = mockMetaByRow.some((m) => m.mockNumber != null);
+  const groups = new Map<number, string[]>();
+  if (useExplicit) {
+    rows.forEach((q, i) => {
+      const m = mockMetaByRow[i]?.mockNumber;
+      if (m == null) return;
+      const list = groups.get(m) ?? [];
+      list.push(String(q.id));
+      groups.set(m, list);
+    });
+  } else {
+    rows.forEach((q, i) => {
+      const n = Math.floor(i / questionsPerMock) + 1;
+      const list = groups.get(n) ?? [];
+      list.push(String(q.id));
+      groups.set(n, list);
+    });
+  }
+
+  for (const [mockNumber, ids] of groups) {
+    if (ids.length !== questionsPerMock) {
+      out.push({
+        rowIndex: null,
+        id: null,
+        field: "mocks",
+        message: `Mock ${mockNumber} has ${ids.length} questions (expected ${questionsPerMock}).`,
+      });
+    }
+    const seen = new Set<string>();
+    for (const id of ids) {
+      if (seen.has(id)) {
+        out.push({
+          rowIndex: null,
+          id,
+          field: "mocks",
+          message: `Duplicate question id "${id}" inside mock ${mockNumber}.`,
+        });
+      }
+      seen.add(id);
+    }
+  }
+
+  if (topic === "gmat-practice" && rows.length !== 1080) {
+    out.push({
+      rowIndex: null,
+      id: null,
+      field: null,
+      message: `GMAT full replacement expects exactly 1080 rows (45 mocks × 24 questions). Got ${rows.length}.`,
+    });
+  }
+
+  return out;
+}
+
 export const previewCsvImport = createServerFn({ method: "POST" })
   .inputValidator((input) =>
     z.object({
