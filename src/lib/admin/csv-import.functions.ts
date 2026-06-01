@@ -1147,6 +1147,7 @@ export const commitCsvImport = createServerFn({ method: "POST" })
     await assertAdmin(context.supabase, context.userId);
     const { supabase, userId } = context;
     const mode = data.mode ?? "patch";
+    console.log("commitCsvImport received mode:", mode, "topic:", data.topic, "branch:", GITHUB_REPO.branch);
     const { rows, rowLines, clearByRow, mockMetaByRow, errors } = parseCsv(data.csvText, mode);
     if (rows.length === 0) throw new Error("No valid rows found in CSV");
 
@@ -1162,7 +1163,7 @@ export const commitCsvImport = createServerFn({ method: "POST" })
       const oldFile = JSON.parse(existing.content) as MockFile;
       const newFile =
         mode === "replace"
-          ? replaceIntoFile(oldFile, rows, clearByRow, mockMetaByRow)
+          ? (console.log("commitCsvImport using replaceIntoFile branch for", data.topic), replaceIntoFile(oldFile, rows, clearByRow, mockMetaByRow))
           : mergeIntoFile(oldFile, rows, clearByRow);
 
       const mergedById = new Map(bankOf(newFile).filter((q) => q.id).map((q) => [String(q.id), q]));
@@ -1171,6 +1172,17 @@ export const commitCsvImport = createServerFn({ method: "POST" })
       const validation = validateImported(mergedById, rowIds, rowLines, newFile, data.topic, roadSignFiles);
       if (mode === "replace") {
         validation.errors.push(...validateReplaceMode(rows, rowLines, mockMetaByRow, data.topic));
+        const assertions = assertReplacementJson(newFile, data.topic);
+        validation.errors.push(...assertions.errors);
+        console.log("commitCsvImport replace output before GitHub commit:", {
+          topic: data.topic,
+          path,
+          branch: GITHUB_REPO.branch,
+          bankSize: assertions.bankSize,
+          mockCount: assertions.mockCount,
+          unusedQuestionCount: assertions.unusedQuestionCount,
+          firstBankIds: assertions.firstBankIds,
+        });
       }
 
       if (validation.errors.length > 0) {
