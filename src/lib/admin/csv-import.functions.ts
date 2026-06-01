@@ -811,10 +811,21 @@ function replaceIntoFile(
     applyPatch(undefined, r, clearByRow[i] ?? new Set()),
   );
 
+  const useExplicit = mockMetaByRow.some((m) => m.mockNumber != null);
 
+  // Bank = unique question records by id. In explicit mode the same id may
+  // appear in up to N rows (allocated to multiple mocks); first occurrence
+  // wins for the canonical bank entry. Validation enforces that repeats
+  // share identical content.
+  const bankById = new Map<string, AnyQ>();
+  for (const q of cleanedRows) {
+    const id = String(q.id ?? "");
+    if (!id) continue;
+    if (!bankById.has(id)) bankById.set(id, q);
+  }
+  const bank = useExplicit ? Array.from(bankById.values()) : cleanedRows;
 
   // Group rows into mocks.
-  const useExplicit = mockMetaByRow.some((m) => m.mockNumber != null);
   const groups = new Map<number, { id: string; questionNumber: number | null; idx: number }[]>();
   if (useExplicit) {
     cleanedRows.forEach((q, i) => {
@@ -851,15 +862,14 @@ function replaceIntoFile(
       title: `Mock ${n}`,
       questionIds: groups.get(n)!.map((e) => e.id),
     }));
-    return { ...v2, bank: cleanedRows, mocks };
+    return { ...v2, bank, mocks };
   }
   const v1 = file as V1File;
-  const byId = new Map(cleanedRows.map((q) => [String(q.id), q]));
   const tests = sortedMockNumbers.map((n) => ({
     mockNumber: n,
     title: `Mock ${n}`,
     slug: `mock-${n}`,
-    questions: groups.get(n)!.map((e) => byId.get(e.id)!).filter(Boolean),
+    questions: groups.get(n)!.map((e) => bankById.get(e.id)!).filter(Boolean),
   }));
   return { ...v1, tests };
 }
