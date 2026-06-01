@@ -71,7 +71,7 @@ function CsvImportPage() {
         topic,
         csvText,
         filename: filename || "upload.csv",
-        mode,
+        mode: preview?.mode ?? mode,
         expectedSha: (preview as { existingSha?: string } | null)?.existingSha,
       },
     }),
