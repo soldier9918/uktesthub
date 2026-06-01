@@ -83,6 +83,7 @@ function emptyPreview(error: string, parseErrors: string[] = []) {
     oldMockCount: 0,
     newMockCount: 0,
     unusedQuestionCount: 0,
+    replaceTargets: null as null | { mockCount: number; questionsPerMock: number; totalSlots: number; uniqueQuestions: number; maxUsesPerQuestion: number },
     validation: emptyValidation(),
     existingSha: undefined as string | undefined,
     filePath: "",
