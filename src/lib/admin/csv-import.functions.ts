@@ -416,6 +416,7 @@ function validateImported(
   newFile: MockFile,
   topic: string,
   roadSignFiles: Set<string> | null,
+  useExplicit: boolean = false,
 ): ValidationResult {
 
   const errors: Issue[] = [];
@@ -430,7 +431,9 @@ function validateImported(
 
     if (id) {
       if (seen.has(id)) {
-        push(errors, "id", `Duplicate id "${id}" (also on row ${seen.get(id)}).`);
+        if (!useExplicit) {
+          push(errors, "id", `Duplicate id "${id}" (also on row ${seen.get(id)}).`);
+        }
       } else {
         seen.set(id, line ?? 0);
       }
