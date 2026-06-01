@@ -1463,7 +1463,7 @@ export const commitCsvImport = createServerFn({ method: "POST" })
           }
           if (mode === "replace") {
             const verifiedFile = JSON.parse(verify.content) as MockFile;
-            const verified = assertReplacementJson(verifiedFile, data.topic);
+            const verified = assertReplacementJson(verifiedFile, data.topic, commitTargets);
             console.log("commitCsvImport post-commit replace verification:", {
               topic: data.topic,
               path,
