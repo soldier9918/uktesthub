@@ -856,8 +856,6 @@ function replaceIntoFile(
     slug: `mock-${n}`,
     questions: groups.get(n)!.map((e) => byId.get(e.id)!).filter(Boolean),
   }));
-  // Mark ids/cleanedRows as "used" to avoid TS unused-var noise if all paths use one.
-  void ids;
   return { ...v1, tests };
 }
 
