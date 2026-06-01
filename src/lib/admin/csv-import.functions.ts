@@ -805,8 +805,8 @@ function replaceIntoFile(
   const cleanedRows = rows.map((r, i) =>
     applyPatch(undefined, r, clearByRow[i] ?? new Set()),
   );
-  const ids = cleanedRows.map((q) => String(q.id));
-  void ids;
+
+
 
   // Group rows into mocks.
   const useExplicit = mockMetaByRow.some((m) => m.mockNumber != null);
