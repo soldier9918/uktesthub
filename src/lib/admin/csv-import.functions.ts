@@ -2,7 +2,7 @@ import { createServerFn } from "@tanstack/react-start";
 import { z } from "zod";
 import Papa from "papaparse";
 import { requireSupabaseAuth } from "@/integrations/supabase/auth-middleware";
-import { commitFile, getFile, listDir, testConnection } from "@/lib/admin/github.server";
+import { GITHUB_REPO, commitFile, getFile, listDir, testConnection } from "@/lib/admin/github.server";
 import { findOptionIssues, type OptionIssue } from "@/lib/admin/blank-options";
 
 // Use `any` for question records — the on-disk schema is too polymorphic to
@@ -972,6 +972,14 @@ function assertReplacementJson(file: MockFile, topic: string): {
 
   if (unused !== 0) {
     errors.push(replaceAssertionIssue("mocks", `Full replacement output has ${unused} unused bank question(s); expected 0.`));
+  }
+
+  if (topic === "gmat-practice") {
+    const expectedFirstIds = ["gmat-mock-01-q01", "gmat-mock-01-q02", "gmat-mock-01-q03"];
+    const wrong = expectedFirstIds.some((id, i) => firstBankIds[i] !== id);
+    if (wrong) {
+      errors.push(replaceAssertionIssue("id", `GMAT replacement output must start with ${expectedFirstIds.join(", ")}; got ${firstBankIds.join(", ") || "(no bank ids)"}.`, firstBankIds[0] ?? null));
+    }
   }
 
   return { errors, bankSize: bank.length, mockCount, unusedQuestionCount: unused, firstBankIds };
