@@ -791,10 +791,73 @@ function mergeIntoFile(file: MockFile, rows: AnyQ[], clearByRow?: Set<string>[])
   return { ...v1, tests };
 }
 
-function bankOf(file: MockFile): AnyQ[] {
+/** FULL REPLACEMENT: discard the existing bank/mocks entirely and rebuild from
+ * the CSV rows. The bank becomes exactly the imported rows (in CSV order,
+ * after type cleanup). Mocks are rebuilt using either explicit mockNumber/
+ * questionNumber columns or by grouping every 24 rows into one mock. */
+function replaceIntoFile(
+  file: MockFile,
+  rows: AnyQ[],
+  clearByRow: Set<string>[],
+  mockMetaByRow: MockMeta[],
+  questionsPerMock = 24,
+): MockFile {
+  const cleanedRows = rows.map((r, i) =>
+    applyPatch(undefined, r, clearByRow[i] ?? new Set()),
+  );
+  const ids = cleanedRows.map((q) => String(q.id));
+
+  // Group rows into mocks.
+  const useExplicit = mockMetaByRow.some((m) => m.mockNumber != null);
+  const groups = new Map<number, { id: string; questionNumber: number | null; idx: number }[]>();
+  if (useExplicit) {
+    cleanedRows.forEach((q, i) => {
+      const m = mockMetaByRow[i]?.mockNumber;
+      if (m == null) return;
+      const list = groups.get(m) ?? [];
+      list.push({ id: String(q.id), questionNumber: mockMetaByRow[i]?.questionNumber ?? null, idx: i });
+      groups.set(m, list);
+    });
+  } else {
+    cleanedRows.forEach((q, i) => {
+      const mockNumber = Math.floor(i / questionsPerMock) + 1;
+      const list = groups.get(mockNumber) ?? [];
+      list.push({ id: String(q.id), questionNumber: (i % questionsPerMock) + 1, idx: i });
+      groups.set(mockNumber, list);
+    });
+  }
+
+  // Sort each group by questionNumber (fallback: csv row order).
+  for (const list of groups.values()) {
+    list.sort((a, b) => {
+      const an = a.questionNumber ?? a.idx;
+      const bn = b.questionNumber ?? b.idx;
+      return an - bn;
+    });
+  }
+  const sortedMockNumbers = Array.from(groups.keys()).sort((a, b) => a - b);
+
   const isV2 = (file as V2File).version === 2 && Array.isArray((file as V2File).bank);
-  if (isV2) return (file as V2File).bank;
-  return (file as V1File).tests.flatMap((t) => t.questions);
+  if (isV2) {
+    const v2 = file as V2File;
+    const mocks = sortedMockNumbers.map((n) => ({
+      mockNumber: n,
+      title: `Mock ${n}`,
+      questionIds: groups.get(n)!.map((e) => e.id),
+    }));
+    return { ...v2, bank: cleanedRows, mocks };
+  }
+  const v1 = file as V1File;
+  const byId = new Map(cleanedRows.map((q) => [String(q.id), q]));
+  const tests = sortedMockNumbers.map((n) => ({
+    mockNumber: n,
+    title: `Mock ${n}`,
+    slug: `mock-${n}`,
+    questions: groups.get(n)!.map((e) => byId.get(e.id)!).filter(Boolean),
+  }));
+  // Mark ids/cleanedRows as "used" to avoid TS unused-var noise if all paths use one.
+  void ids;
+  return { ...v1, tests };
 }
 
 const TopicSchema = z.string().min(1).max(120).regex(/^[a-z0-9-]+$/);
