@@ -80,9 +80,14 @@ function emptyPreview(error: string, parseErrors: string[] = []) {
     diff: { addedCount: 0, changedCount: 0, removedCount: 0, added: [], changed: [], removed: [] },
     oldBankSize: 0,
     newBankSize: 0,
+    oldMockCount: 0,
+    newMockCount: 0,
+    unusedQuestionCount: 0,
     validation: emptyValidation(),
   };
 }
+
+type MockMeta = { mockNumber: number | null; questionNumber: number | null };
 
 /** Parse a CSV string into question patch rows.
  *
