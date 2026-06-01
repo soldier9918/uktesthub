@@ -218,6 +218,21 @@ function CsvImportPage() {
             <Badge variant="secondary">Existing: {preview.oldBankSize}</Badge>
             <Badge variant="secondary">After: {preview.newBankSize}</Badge>
             <Badge variant="secondary">Mocks: {preview.oldMockCount} → {preview.newMockCount}</Badge>
+            {preview.replaceTargets && (
+              <>
+                <Badge variant="secondary">Unique questions: {preview.replaceTargets.uniqueQuestions}</Badge>
+                <Badge variant="secondary">Total slots: {preview.replaceTargets.totalSlots}</Badge>
+                <Badge
+                  className={
+                    preview.replaceTargets.maxUsesPerQuestion <= 2
+                      ? "bg-emerald-500/20 text-emerald-700"
+                      : "bg-rose-500/20 text-rose-700"
+                  }
+                >
+                  Max uses / question: {preview.replaceTargets.maxUsesPerQuestion}
+                </Badge>
+              </>
+            )}
             <Badge
               className={
                 preview.unusedQuestionCount === 0
