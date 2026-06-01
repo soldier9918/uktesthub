@@ -499,7 +499,7 @@ function QuestionsBrowser() {
     mutationFn: () => {
       const expectedSha = (preview as { existingSha?: string } | null)?.existingSha;
       return commitFn({
-        data: { topic, csvText, filename: csvFilename || "upload.csv", expectedSha, mode: importMode },
+        data: { topic, csvText, filename: csvFilename || "upload.csv", expectedSha, mode: ((preview as { mode?: "patch" | "replace" } | null)?.mode ?? importMode) },
       });
     },
     onSuccess: (data) => {
@@ -1122,9 +1122,16 @@ function QuestionsBrowser() {
               </div>
             </div>
             <div className="mt-2 flex flex-wrap gap-2 text-xs">
+              <Badge variant="secondary">Mode: {(preview as { mode?: string }).mode ?? importMode}</Badge>
+              <Badge variant="secondary">Branch: {(preview as { branch?: string }).branch ?? "main"}</Badge>
+              <Badge variant="secondary">File: {(preview as { filePath?: string }).filePath ?? `public/mocks/${topic}.json`}</Badge>
               <Badge variant="secondary">CSV rows: {preview.rowCount}</Badge>
               <Badge variant="secondary">Existing: {preview.oldBankSize}</Badge>
               <Badge variant="secondary">After: {preview.newBankSize}</Badge>
+              <Badge variant="secondary">Mocks: {preview.oldMockCount} → {preview.newMockCount}</Badge>
+              <Badge className={preview.unusedQuestionCount === 0 ? "bg-emerald-500/20 text-emerald-700" : "bg-amber-500/20 text-amber-700"}>
+                Unused: {preview.unusedQuestionCount}
+              </Badge>
               <Badge className="bg-emerald-500/20 text-emerald-700">Added: {preview.diff.addedCount}</Badge>
               <Badge className="bg-amber-500/20 text-amber-700">Changed: {preview.diff.changedCount}</Badge>
               <Badge className="bg-rose-500/20 text-rose-700">Removed: {preview.diff.removedCount}</Badge>
