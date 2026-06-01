@@ -13,6 +13,10 @@ import { Home, ChevronRight, ArrowRight, Clock } from "lucide-react";
 import { IndependentDisclaimer } from "@/components/IndependentDisclaimer";
 import { breadcrumbSchema } from "@/lib/seo";
 import { LEGACY_SLUG_REDIRECTS } from "@/data/slug-redirects";
+import { useAuth } from "@/lib/auth-context";
+import { supabase } from "@/integrations/supabase/client";
+
+type MockStats = { best: number; attempts: number };
 
 export const Route = createFileRoute("/topic/$slug")({
   loader: ({ params }) => {
