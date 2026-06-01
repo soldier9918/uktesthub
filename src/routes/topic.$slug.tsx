@@ -260,6 +260,7 @@ function TopicPage() {
               slug={s.slug}
               mockNumber={s.mockNumber}
               available={s.available}
+              stats={statsByMock[s.slug] ?? null}
             />
           ))}
         </div>
