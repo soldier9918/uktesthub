@@ -1396,7 +1396,8 @@ export const commitCsvImport = createServerFn({ method: "POST" })
       const mergedById = new Map(bankOf(newFile).filter((q) => q.id).map((q) => [String(q.id), q]));
       const rowIds = rows.map((r) => String(r.id));
       const roadSignFiles = await loadRoadSignFiles(data.topic);
-      const validation = validateImported(mergedById, rowIds, rowLines, newFile, data.topic, roadSignFiles);
+      const useExplicitForValidation = mockMetaByRow.some((m) => m.mockNumber != null);
+      const validation = validateImported(mergedById, rowIds, rowLines, newFile, data.topic, roadSignFiles, useExplicitForValidation);
       const commitTargets = mode === "replace" ? deriveReplaceTargets(rows, mockMetaByRow) : null;
       if (mode === "replace") {
         validation.errors.push(...validateReplaceMode(rows, rowLines, mockMetaByRow, data.topic));
