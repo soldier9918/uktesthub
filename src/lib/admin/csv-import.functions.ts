@@ -1066,6 +1066,7 @@ export const previewCsvImport = createServerFn({ method: "POST" })
       const auth = await getAuthenticatedAdminClient();
       if (auth.error) return emptyPreview(auth.error);
       const mode = data.mode ?? "patch";
+      console.log("previewCsvImport received mode:", mode, "topic:", data.topic);
       const { rows, rowLines, clearByRow, mockMetaByRow, errors } = parseCsv(data.csvText, mode);
       const existing = await getFile(filePathFor(data.topic));
       if (!existing) return emptyPreview(`Topic file not found in repo: ${filePathFor(data.topic)}`, errors);
@@ -1073,7 +1074,7 @@ export const previewCsvImport = createServerFn({ method: "POST" })
       const oldBank = bankOf(oldFile);
       const newFile =
         mode === "replace"
-          ? replaceIntoFile(oldFile, rows, clearByRow, mockMetaByRow)
+          ? (console.log("previewCsvImport using replaceIntoFile branch for", data.topic), replaceIntoFile(oldFile, rows, clearByRow, mockMetaByRow))
           : mergeIntoFile(oldFile, rows, clearByRow);
       const newBank = bankOf(newFile);
 
@@ -1084,6 +1085,15 @@ export const previewCsvImport = createServerFn({ method: "POST" })
       const validation = validateImported(mergedById, rowIds, rowLines, newFile, data.topic, roadSignFiles);
       if (mode === "replace") {
         validation.errors.push(...validateReplaceMode(rows, rowLines, mockMetaByRow, data.topic));
+        const assertions = assertReplacementJson(newFile, data.topic);
+        validation.errors.push(...assertions.errors);
+        console.log("previewCsvImport replace output:", {
+          topic: data.topic,
+          bankSize: assertions.bankSize,
+          mockCount: assertions.mockCount,
+          unusedQuestionCount: assertions.unusedQuestionCount,
+          firstBankIds: assertions.firstBankIds,
+        });
       }
 
       return {
