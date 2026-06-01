@@ -1393,9 +1393,10 @@ export const commitCsvImport = createServerFn({ method: "POST" })
       const rowIds = rows.map((r) => String(r.id));
       const roadSignFiles = await loadRoadSignFiles(data.topic);
       const validation = validateImported(mergedById, rowIds, rowLines, newFile, data.topic, roadSignFiles);
+      const commitTargets = mode === "replace" ? deriveReplaceTargets(rows, mockMetaByRow) : null;
       if (mode === "replace") {
         validation.errors.push(...validateReplaceMode(rows, rowLines, mockMetaByRow, data.topic));
-        const assertions = assertReplacementJson(newFile, data.topic);
+        const assertions = assertReplacementJson(newFile, data.topic, commitTargets);
         validation.errors.push(...assertions.errors);
         console.log("commitCsvImport replace output before GitHub commit:", {
           topic: data.topic,
@@ -1405,6 +1406,7 @@ export const commitCsvImport = createServerFn({ method: "POST" })
           mockCount: assertions.mockCount,
           unusedQuestionCount: assertions.unusedQuestionCount,
           firstBankIds: assertions.firstBankIds,
+          targets: commitTargets,
         });
       }
 
