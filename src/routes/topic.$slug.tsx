@@ -13,6 +13,10 @@ import { Home, ChevronRight, ArrowRight, Clock } from "lucide-react";
 import { IndependentDisclaimer } from "@/components/IndependentDisclaimer";
 import { breadcrumbSchema } from "@/lib/seo";
 import { LEGACY_SLUG_REDIRECTS } from "@/data/slug-redirects";
+import { useAuth } from "@/lib/auth-context";
+import { supabase } from "@/integrations/supabase/client";
+
+type MockStats = { best: number; attempts: number };
 
 export const Route = createFileRoute("/topic/$slug")({
   loader: ({ params }) => {
@@ -64,23 +68,15 @@ function MockCard({
   slug,
   mockNumber,
   available,
+  stats,
 }: {
   slug: string;
   mockNumber: number;
   available: boolean;
+  stats: MockStats | null;
 }) {
-  const [bestScore, setBestScore] = useState<number | null>(null);
-
-  useEffect(() => {
-    if (!available) return;
-    try {
-      const raw = localStorage.getItem(`uk-test-hub:best:${slug}`);
-      const n = raw ? parseInt(raw, 10) : 0;
-      if (n > 0) setBestScore(n);
-    } catch {
-      // ignore
-    }
-  }, [slug, available]);
+  const bestScore = stats?.best ?? null;
+  const attempts = stats?.attempts ?? 0;
 
   const percent =
     bestScore != null ? Math.min(100, Math.round((bestScore / QUESTIONS_PER_MOCK) * 100)) : 0;
@@ -126,6 +122,11 @@ function MockCard({
               style={{ width: `${percent}%` }}
             />
           </div>
+          {attempts > 0 && (
+            <p className="mt-1.5 text-[11px] text-muted-foreground">
+              Attempted {attempts === 1 ? "once" : `${attempts} times`}
+            </p>
+          )}
         </div>
       )}
 
@@ -156,6 +157,36 @@ function TopicPage() {
   const { category, topic } = Route.useLoaderData();
   const slots = listMockSlots(topic.slug);
   const availableCount = slots.filter((s) => s.available).length;
+  const { user } = useAuth();
+  const [statsByMock, setStatsByMock] = useState<Record<string, MockStats>>({});
+
+  useEffect(() => {
+    if (!user) {
+      setStatsByMock({});
+      return;
+    }
+    let cancelled = false;
+    (async () => {
+      const { data, error } = await supabase
+        .from("quiz_attempts")
+        .select("mock_slug, score")
+        .eq("user_id", user.id)
+        .eq("topic_slug", topic.slug);
+      if (cancelled || error || !data) return;
+      const agg: Record<string, MockStats> = {};
+      for (const row of data as Array<{ mock_slug: string; score: number }>) {
+        const cur = agg[row.mock_slug] ?? { best: 0, attempts: 0 };
+        cur.attempts += 1;
+        if (row.score > cur.best) cur.best = row.score;
+        agg[row.mock_slug] = cur;
+      }
+      setStatsByMock(agg);
+    })();
+    return () => {
+      cancelled = true;
+    };
+  }, [user, topic.slug]);
+
 
   return (
     <div className="min-h-screen bg-[#f7f5f0]">
@@ -229,6 +260,7 @@ function TopicPage() {
               slug={s.slug}
               mockNumber={s.mockNumber}
               available={s.available}
+              stats={statsByMock[s.slug] ?? null}
             />
           ))}
         </div>
