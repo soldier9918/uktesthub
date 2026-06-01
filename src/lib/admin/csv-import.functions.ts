@@ -944,7 +944,62 @@ function replacementMockLengths(file: MockFile): Array<{ mockNumber: number | st
   }));
 }
 
-function assertReplacementJson(file: MockFile, topic: string): {
+/** Derive expected replace targets from the CSV itself when explicit
+ * mockNumber columns are present. Returns null if the CSV is not using
+ * explicit allocation. */
+type ReplaceTargets = {
+  mockCount: number;
+  questionsPerMock: number;
+  totalSlots: number;
+  uniqueQuestions: number;
+  maxUsesPerQuestion: number; // observed max
+};
+const MAX_USES_PER_QUESTION = 2;
+
+function deriveReplaceTargets(
+  rows: AnyQ[],
+  mockMetaByRow: MockMeta[],
+): ReplaceTargets | null {
+  const useExplicit = mockMetaByRow.some((m) => m.mockNumber != null);
+  if (!useExplicit) return null;
+
+  const sizes = new Map<number, number>();
+  for (let i = 0; i < rows.length; i++) {
+    const m = mockMetaByRow[i]?.mockNumber;
+    if (m == null) continue;
+    sizes.set(m, (sizes.get(m) ?? 0) + 1);
+  }
+  const mockNumbers = Array.from(sizes.keys()).sort((a, b) => a - b);
+  const mockCount = mockNumbers.length === 0 ? 0 : mockNumbers[mockNumbers.length - 1];
+  // Most common per-mock size (mode). Used as the expected uniform size.
+  const counts = new Map<number, number>();
+  for (const s of sizes.values()) counts.set(s, (counts.get(s) ?? 0) + 1);
+  let questionsPerMock = 0;
+  let best = -1;
+  for (const [size, freq] of counts) {
+    if (freq > best) { best = freq; questionsPerMock = size; }
+  }
+  const totalSlots = Array.from(sizes.values()).reduce((a, b) => a + b, 0);
+
+  const idUses = new Map<string, number>();
+  for (let i = 0; i < rows.length; i++) {
+    if (mockMetaByRow[i]?.mockNumber == null) continue;
+    const id = String(rows[i]?.id ?? "");
+    if (!id) continue;
+    idUses.set(id, (idUses.get(id) ?? 0) + 1);
+  }
+  const uniqueQuestions = idUses.size;
+  let maxUses = 0;
+  for (const n of idUses.values()) if (n > maxUses) maxUses = n;
+
+  return { mockCount, questionsPerMock, totalSlots, uniqueQuestions, maxUsesPerQuestion: maxUses };
+}
+
+function assertReplacementJson(
+  file: MockFile,
+  topic: string,
+  targets: ReplaceTargets | null,
+): {
   errors: Issue[];
   bankSize: number;
   mockCount: number;
@@ -957,8 +1012,13 @@ function assertReplacementJson(file: MockFile, topic: string): {
   const unused = unusedQuestionCount(file);
   const firstBankIds = bank.slice(0, 3).map((q) => String(q.id ?? ""));
 
-  if (bank.length !== FULL_REPLACEMENT_BANK_SIZE) {
-    errors.push(replaceAssertionIssue(null, `Full replacement output must contain exactly ${FULL_REPLACEMENT_BANK_SIZE} bank questions; got ${bank.length}.`));
+  // Targets: CSV-derived when explicit, otherwise fall back to legacy 45×24.
+  const expectedMockCount = targets?.mockCount ?? FULL_REPLACEMENT_MOCK_COUNT;
+  const expectedPerMock = targets?.questionsPerMock ?? FULL_REPLACEMENT_QUESTIONS_PER_MOCK;
+  const expectedBankSize = targets?.uniqueQuestions ?? FULL_REPLACEMENT_BANK_SIZE;
+
+  if (bank.length !== expectedBankSize) {
+    errors.push(replaceAssertionIssue(null, `Full replacement output must contain exactly ${expectedBankSize} bank questions; got ${bank.length}.`));
   }
 
   const stubIds = bank
@@ -975,13 +1035,13 @@ function assertReplacementJson(file: MockFile, topic: string): {
     errors.push(replaceAssertionIssue("question", `Full replacement output still contains placeholder text in: ${placeholderIds.slice(0, 10).join(", ")}${placeholderIds.length > 10 ? ` (+${placeholderIds.length - 10} more)` : ""}.`, placeholderIds[0] ?? null));
   }
 
-  if (mockCount !== FULL_REPLACEMENT_MOCK_COUNT) {
-    errors.push(replaceAssertionIssue("mocks", `Full replacement output must contain exactly ${FULL_REPLACEMENT_MOCK_COUNT} mocks; got ${mockCount}.`));
+  if (mockCount !== expectedMockCount) {
+    errors.push(replaceAssertionIssue("mocks", `Full replacement output must contain exactly ${expectedMockCount} mocks; got ${mockCount}.`));
   }
 
   for (const m of replacementMockLengths(file)) {
-    if (m.length !== FULL_REPLACEMENT_QUESTIONS_PER_MOCK) {
-      errors.push(replaceAssertionIssue("mocks", `Mock ${m.mockNumber} has ${m.length} question IDs (expected ${FULL_REPLACEMENT_QUESTIONS_PER_MOCK}).`));
+    if (m.length !== expectedPerMock) {
+      errors.push(replaceAssertionIssue("mocks", `Mock ${m.mockNumber} has ${m.length} question IDs (expected ${expectedPerMock}).`));
     }
   }
 
@@ -989,7 +1049,10 @@ function assertReplacementJson(file: MockFile, topic: string): {
     errors.push(replaceAssertionIssue("mocks", `Full replacement output has ${unused} unused bank question(s); expected 0.`));
   }
 
-  if (topic === "gmat-practice") {
+  // The legacy GMAT-specific first-IDs check only makes sense for the original
+  // sequential 24-row allocation. With manual mockNumber allocation the first
+  // bank ids can be anything, so skip it in explicit mode.
+  if (topic === "gmat-practice" && !targets) {
     const expectedFirstIds = ["gmat-mock-01-q01", "gmat-mock-01-q02", "gmat-mock-01-q03"];
     const wrong = expectedFirstIds.some((id, i) => firstBankIds[i] !== id);
     if (wrong) {
@@ -1005,7 +1068,7 @@ function validateReplaceMode(
   rows: AnyQ[],
   rowLines: number[],
   mockMetaByRow: MockMeta[],
-  topic: string,
+  _topic: string,
   questionsPerMock = 24,
 ): Issue[] {
   const out: Issue[] = [];
@@ -1023,53 +1086,192 @@ function validateReplaceMode(
   });
 
   const useExplicit = mockMetaByRow.some((m) => m.mockNumber != null);
-  const groups = new Map<number, string[]>();
-  if (useExplicit) {
-    rows.forEach((q, i) => {
-      const m = mockMetaByRow[i]?.mockNumber;
-      if (m == null) return;
-      const list = groups.get(m) ?? [];
-      list.push(String(q.id));
-      groups.set(m, list);
-    });
-  } else {
+
+  if (!useExplicit) {
+    // Legacy sequential mode: every N rows = 1 mock. Keep the old guard
+    // requiring exact 45×24 totals so partial imports don't slip through.
+    const groups = new Map<number, string[]>();
     rows.forEach((q, i) => {
       const n = Math.floor(i / questionsPerMock) + 1;
       const list = groups.get(n) ?? [];
       list.push(String(q.id));
       groups.set(n, list);
     });
+    for (const [mockNumber, ids] of groups) {
+      if (ids.length !== questionsPerMock) {
+        out.push({ rowIndex: null, id: null, field: "mocks", message: `Mock ${mockNumber} has ${ids.length} questions (expected ${questionsPerMock}).` });
+      }
+      const seen = new Set<string>();
+      for (const id of ids) {
+        if (seen.has(id)) {
+          out.push({ rowIndex: null, id, field: "mocks", message: `Duplicate question id "${id}" inside mock ${mockNumber}.` });
+        }
+        seen.add(id);
+      }
+    }
+    if (rows.length !== FULL_REPLACEMENT_BANK_SIZE) {
+      out.push({
+        rowIndex: null,
+        id: null,
+        field: null,
+        message: `Full replacement expects exactly ${FULL_REPLACEMENT_BANK_SIZE} rows (${FULL_REPLACEMENT_MOCK_COUNT} mocks × ${FULL_REPLACEMENT_QUESTIONS_PER_MOCK} questions). Got ${rows.length}.`,
+      });
+    }
+    return out;
   }
 
-  for (const [mockNumber, ids] of groups) {
-    if (ids.length !== questionsPerMock) {
+  // ---------- Explicit allocation (mockNumber column present) ----------
+
+  // Every row must declare a mockNumber.
+  rows.forEach((r, i) => {
+    if (mockMetaByRow[i]?.mockNumber == null) {
+      out.push({
+        rowIndex: rowLines[i] ?? null,
+        id: String(r.id ?? "") || null,
+        field: "mockNumber",
+        message: `Row is missing mockNumber. In explicit allocation mode every row must specify mockNumber.`,
+      });
+    }
+  });
+
+  // Group by mock, tracking (id, questionNumber, rowIndex).
+  type Slot = { id: string; qn: number | null; rowIndex: number | null };
+  const groups = new Map<number, Slot[]>();
+  rows.forEach((q, i) => {
+    const m = mockMetaByRow[i]?.mockNumber;
+    if (m == null) return;
+    const list = groups.get(m) ?? [];
+    list.push({ id: String(q.id ?? ""), qn: mockMetaByRow[i]?.questionNumber ?? null, rowIndex: rowLines[i] ?? null });
+    groups.set(m, list);
+  });
+
+  // Determine uniform per-mock size (mode of group sizes).
+  const sizeCounts = new Map<number, number>();
+  for (const list of groups.values()) sizeCounts.set(list.length, (sizeCounts.get(list.length) ?? 0) + 1);
+  let expectedPerMock = 0;
+  let best = -1;
+  for (const [size, freq] of sizeCounts) {
+    if (freq > best) { best = freq; expectedPerMock = size; }
+  }
+
+  // Rule 2: every mock must have the same size.
+  for (const [mockNumber, list] of groups) {
+    if (list.length !== expectedPerMock) {
       out.push({
         rowIndex: null,
         id: null,
         field: "mocks",
-        message: `Mock ${mockNumber} has ${ids.length} questions (expected ${questionsPerMock}).`,
+        message: `Mock ${mockNumber} has ${list.length} questions but other mocks have ${expectedPerMock}. All mocks must contain the same number of questions.`,
       });
     }
-    const seen = new Set<string>();
-    for (const id of ids) {
-      if (seen.has(id)) {
+  }
+
+  // Rule 1: no gaps in mockNumber 1..max.
+  const mockNumbers = Array.from(groups.keys()).sort((a, b) => a - b);
+  const maxMock = mockNumbers[mockNumbers.length - 1] ?? 0;
+  const present = new Set(mockNumbers);
+  const missing: number[] = [];
+  for (let n = 1; n <= maxMock; n++) if (!present.has(n)) missing.push(n);
+  if (missing.length > 0) {
+    out.push({
+      rowIndex: null,
+      id: null,
+      field: "mockNumber",
+      message: `Missing mock numbers (must be contiguous 1..${maxMock}): ${missing.slice(0, 20).join(", ")}${missing.length > 20 ? `, +${missing.length - 20} more` : ""}.`,
+    });
+  }
+
+  // Rules 3 + 4: per-mock unique questionNumber and unique id.
+  for (const [mockNumber, list] of groups) {
+    const seenQn = new Map<number, number>(); // qn -> count
+    const seenId = new Map<string, number>();
+    for (const slot of list) {
+      if (slot.qn != null) seenQn.set(slot.qn, (seenQn.get(slot.qn) ?? 0) + 1);
+      if (slot.id) seenId.set(slot.id, (seenId.get(slot.id) ?? 0) + 1);
+    }
+    for (const [qn, c] of seenQn) {
+      if (c > 1) {
+        out.push({
+          rowIndex: null,
+          id: null,
+          field: "questionNumber",
+          message: `Mock ${mockNumber} has duplicate questionNumber ${qn} (appears ${c} times).`,
+        });
+      }
+    }
+    for (const [id, c] of seenId) {
+      if (c > 1) {
         out.push({
           rowIndex: null,
           id,
           field: "mocks",
-          message: `Duplicate question id "${id}" inside mock ${mockNumber}.`,
+          message: `Duplicate question id "${id}" inside mock ${mockNumber} (appears ${c} times).`,
         });
       }
-      seen.add(id);
     }
   }
 
-  if (rows.length !== FULL_REPLACEMENT_BANK_SIZE) {
+  // Rule 5: each id used at most MAX_USES_PER_QUESTION times across all mocks.
+  const usesById = new Map<string, { mocks: number[] }>();
+  rows.forEach((q, i) => {
+    const m = mockMetaByRow[i]?.mockNumber;
+    if (m == null) return;
+    const id = String(q.id ?? "");
+    if (!id) return;
+    const entry = usesById.get(id) ?? { mocks: [] };
+    entry.mocks.push(m);
+    usesById.set(id, entry);
+  });
+  for (const [id, entry] of usesById) {
+    if (entry.mocks.length > MAX_USES_PER_QUESTION) {
+      out.push({
+        rowIndex: null,
+        id,
+        field: "mocks",
+        message: `Question id "${id}" appears ${entry.mocks.length} times across mocks (max ${MAX_USES_PER_QUESTION}). Mocks: ${entry.mocks.slice(0, 10).join(", ")}.`,
+      });
+    }
+  }
+
+  // Rule 6: repeated rows for the same id must have identical content.
+  const COMPARED_FIELDS = ["type", "question", "optionA", "optionB", "optionC", "optionD", "correctAnswer", "correctAnswers", "explanation", "image", "imageAlt"];
+  const firstRowById = new Map<string, { row: AnyQ; rowIndex: number | null }>();
+  rows.forEach((q, i) => {
+    const id = String(q.id ?? "");
+    if (!id) return;
+    const seen = firstRowById.get(id);
+    if (!seen) {
+      firstRowById.set(id, { row: q, rowIndex: rowLines[i] ?? null });
+      return;
+    }
+    const conflicting: string[] = [];
+    for (const f of COMPARED_FIELDS) {
+      const a = seen.row[f];
+      const b = q[f];
+      const aN = a == null ? "" : String(a);
+      const bN = b == null ? "" : String(b);
+      if (aN !== bN) conflicting.push(f);
+    }
+    if (conflicting.length > 0) {
+      out.push({
+        rowIndex: rowLines[i] ?? null,
+        id,
+        field: conflicting[0] ?? null,
+        message: `Repeated rows for id "${id}" disagree on field(s): ${conflicting.join(", ")}. Row ${rowLines[i] ?? "?"} vs row ${seen.rowIndex ?? "?"}. Repeated rows must be identical except for mockNumber/questionNumber.`,
+      });
+    }
+  });
+
+  // Rule 7: unique pool must be large enough to cover all slots given max-2 reuse.
+  const uniqueIds = usesById.size;
+  const totalSlots = Array.from(groups.values()).reduce((a, b) => a + b.length, 0);
+  const minRequired = Math.ceil(totalSlots / MAX_USES_PER_QUESTION);
+  if (uniqueIds < minRequired) {
     out.push({
       rowIndex: null,
       id: null,
       field: null,
-      message: `Full replacement expects exactly ${FULL_REPLACEMENT_BANK_SIZE} rows (${FULL_REPLACEMENT_MOCK_COUNT} mocks × ${FULL_REPLACEMENT_QUESTIONS_PER_MOCK} questions). Got ${rows.length}.`,
+      message: `CSV has ${uniqueIds} unique questions but needs at least ${minRequired} to fill ${totalSlots} slots with max ${MAX_USES_PER_QUESTION} uses per question.`,
     });
   }
 
