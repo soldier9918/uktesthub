@@ -860,7 +860,27 @@ function replaceIntoFile(
   return { ...v1, tests };
 }
 
-const TopicSchema = z.string().min(1).max(120).regex(/^[a-z0-9-]+$/);
+function bankOf(file: MockFile): AnyQ[] {
+  const isV2 = (file as V2File).version === 2 && Array.isArray((file as V2File).bank);
+  if (isV2) return (file as V2File).bank;
+  return (file as V1File).tests.flatMap((t) => t.questions);
+}
+
+function mockCountOf(file: MockFile): number {
+  const isV2 = (file as V2File).version === 2 && Array.isArray((file as V2File).bank);
+  if (isV2) return ((file as V2File).mocks ?? []).length;
+  return ((file as V1File).tests ?? []).length;
+}
+
+function unusedQuestionCount(file: MockFile): number {
+  const isV2 = (file as V2File).version === 2 && Array.isArray((file as V2File).bank);
+  if (!isV2) return 0;
+  const v2 = file as V2File;
+  const used = new Set<string>();
+  for (const m of v2.mocks ?? []) for (const id of m.questionIds ?? []) used.add(String(id));
+  return v2.bank.filter((q) => q.id && !used.has(String(q.id))).length;
+}
+
 
 /** For topic === "road-signs" load directory listings for both image dirs. */
 async function loadRoadSignFiles(topic: string): Promise<Set<string> | null> {
