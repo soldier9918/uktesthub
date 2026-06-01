@@ -162,6 +162,8 @@ function parseCsv(csvText: string, mode: "patch" | "replace" = "patch"): {
     const n = Number(s);
     return Number.isFinite(n) && Number.isInteger(n) ? n : null;
   };
+
+  const scalarFields: Array<{
     col: string;
     key: string;
     transform?: (raw: string) => unknown;
