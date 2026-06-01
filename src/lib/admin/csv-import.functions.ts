@@ -84,6 +84,11 @@ function emptyPreview(error: string, parseErrors: string[] = []) {
     newMockCount: 0,
     unusedQuestionCount: 0,
     validation: emptyValidation(),
+    existingSha: undefined as string | undefined,
+    filePath: "",
+    topic: "",
+    mode: undefined as "patch" | "replace" | undefined,
+    branch: GITHUB_REPO.branch,
   };
 }
 
