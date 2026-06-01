@@ -998,12 +998,15 @@ export const previewCsvImport = createServerFn({ method: "POST" })
       const auth = await getAuthenticatedAdminClient();
       if (auth.error) return emptyPreview(auth.error);
       const mode = data.mode ?? "patch";
-      const { rows, rowLines, clearByRow, errors } = parseCsv(data.csvText, mode);
+      const { rows, rowLines, clearByRow, mockMetaByRow, errors } = parseCsv(data.csvText, mode);
       const existing = await getFile(filePathFor(data.topic));
       if (!existing) return emptyPreview(`Topic file not found in repo: ${filePathFor(data.topic)}`, errors);
       const oldFile = JSON.parse(existing.content) as MockFile;
       const oldBank = bankOf(oldFile);
-      const newFile = mergeIntoFile(oldFile, rows, clearByRow);
+      const newFile =
+        mode === "replace"
+          ? replaceIntoFile(oldFile, rows, clearByRow, mockMetaByRow)
+          : mergeIntoFile(oldFile, rows, clearByRow);
       const newBank = bankOf(newFile);
 
       const diff = diffBanks(oldBank, newBank);
@@ -1011,6 +1014,9 @@ export const previewCsvImport = createServerFn({ method: "POST" })
       const rowIds = rows.map((r) => String(r.id));
       const roadSignFiles = await loadRoadSignFiles(data.topic);
       const validation = validateImported(mergedById, rowIds, rowLines, newFile, data.topic, roadSignFiles);
+      if (mode === "replace") {
+        validation.errors.push(...validateReplaceMode(rows, rowLines, mockMetaByRow, data.topic));
+      }
 
       return {
         error: null as string | null,
@@ -1026,9 +1032,10 @@ export const previewCsvImport = createServerFn({ method: "POST" })
         },
         oldBankSize: oldBank.length,
         newBankSize: newBank.length,
+        oldMockCount: mockCountOf(oldFile),
+        newMockCount: mockCountOf(newFile),
+        unusedQuestionCount: unusedQuestionCount(newFile),
         validation,
-        // SHA of the file at preview time — passed back to commit to detect
-        // out-of-band changes between preview and commit.
         existingSha: existing.sha,
         filePath: filePathFor(data.topic),
         topic: data.topic,
