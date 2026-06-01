@@ -80,9 +80,14 @@ function emptyPreview(error: string, parseErrors: string[] = []) {
     diff: { addedCount: 0, changedCount: 0, removedCount: 0, added: [], changed: [], removed: [] },
     oldBankSize: 0,
     newBankSize: 0,
+    oldMockCount: 0,
+    newMockCount: 0,
+    unusedQuestionCount: 0,
     validation: emptyValidation(),
   };
 }
+
+type MockMeta = { mockNumber: number | null; questionNumber: number | null };
 
 /** Parse a CSV string into question patch rows.
  *
@@ -100,6 +105,7 @@ function parseCsv(csvText: string, mode: "patch" | "replace" = "patch"): {
   rowLines: number[];
   presentByRow: Set<string>[];
   clearByRow: Set<string>[];
+  mockMetaByRow: MockMeta[];
   errors: string[];
 } {
   const out = Papa.parse<Record<string, string>>(csvText, {
@@ -148,6 +154,14 @@ function parseCsv(csvText: string, mode: "patch" | "replace" = "patch"): {
   const rowLines: number[] = [];
   const presentByRow: Set<string>[] = [];
   const clearByRow: Set<string>[] = [];
+  const mockMetaByRow: MockMeta[] = [];
+
+  const readIntCell = (v: string | undefined): number | null => {
+    const s = (v ?? "").trim();
+    if (!s) return null;
+    const n = Number(s);
+    return Number.isFinite(n) && Number.isInteger(n) ? n : null;
+  };
 
   const scalarFields: Array<{
     col: string;
@@ -285,9 +299,15 @@ function parseCsv(csvText: string, mode: "patch" | "replace" = "patch"): {
     rowLines.push(csvLine);
     presentByRow.push(present);
     clearByRow.push(clear);
+    // Mock assignment hints — optional CSV columns.
+    const mockNumber =
+      readIntCell(r.mockNumber) ?? readIntCell(r.mockTest) ?? readIntCell(r.mock_number) ?? readIntCell(r.mock);
+    const questionNumber =
+      readIntCell(r.questionNumber) ?? readIntCell(r.question_number) ?? readIntCell(r.qNumber);
+    mockMetaByRow.push({ mockNumber, questionNumber });
   });
 
-  return { rows, rowLines, presentByRow, clearByRow, errors };
+  return { rows, rowLines, presentByRow, clearByRow, mockMetaByRow, errors };
 }
 
 /* ----------------- Validation ----------------- */
@@ -771,13 +791,99 @@ function mergeIntoFile(file: MockFile, rows: AnyQ[], clearByRow?: Set<string>[])
   return { ...v1, tests };
 }
 
+/** FULL REPLACEMENT: discard the existing bank/mocks entirely and rebuild from
+ * the CSV rows. The bank becomes exactly the imported rows (in CSV order,
+ * after type cleanup). Mocks are rebuilt using either explicit mockNumber/
+ * questionNumber columns or by grouping every 24 rows into one mock. */
+function replaceIntoFile(
+  file: MockFile,
+  rows: AnyQ[],
+  clearByRow: Set<string>[],
+  mockMetaByRow: MockMeta[],
+  questionsPerMock = 24,
+): MockFile {
+  const cleanedRows = rows.map((r, i) =>
+    applyPatch(undefined, r, clearByRow[i] ?? new Set()),
+  );
+
+
+
+  // Group rows into mocks.
+  const useExplicit = mockMetaByRow.some((m) => m.mockNumber != null);
+  const groups = new Map<number, { id: string; questionNumber: number | null; idx: number }[]>();
+  if (useExplicit) {
+    cleanedRows.forEach((q, i) => {
+      const m = mockMetaByRow[i]?.mockNumber;
+      if (m == null) return;
+      const list = groups.get(m) ?? [];
+      list.push({ id: String(q.id), questionNumber: mockMetaByRow[i]?.questionNumber ?? null, idx: i });
+      groups.set(m, list);
+    });
+  } else {
+    cleanedRows.forEach((q, i) => {
+      const mockNumber = Math.floor(i / questionsPerMock) + 1;
+      const list = groups.get(mockNumber) ?? [];
+      list.push({ id: String(q.id), questionNumber: (i % questionsPerMock) + 1, idx: i });
+      groups.set(mockNumber, list);
+    });
+  }
+
+  // Sort each group by questionNumber (fallback: csv row order).
+  for (const list of groups.values()) {
+    list.sort((a, b) => {
+      const an = a.questionNumber ?? a.idx;
+      const bn = b.questionNumber ?? b.idx;
+      return an - bn;
+    });
+  }
+  const sortedMockNumbers = Array.from(groups.keys()).sort((a, b) => a - b);
+
+  const isV2 = (file as V2File).version === 2 && Array.isArray((file as V2File).bank);
+  if (isV2) {
+    const v2 = file as V2File;
+    const mocks = sortedMockNumbers.map((n) => ({
+      mockNumber: n,
+      title: `Mock ${n}`,
+      questionIds: groups.get(n)!.map((e) => e.id),
+    }));
+    return { ...v2, bank: cleanedRows, mocks };
+  }
+  const v1 = file as V1File;
+  const byId = new Map(cleanedRows.map((q) => [String(q.id), q]));
+  const tests = sortedMockNumbers.map((n) => ({
+    mockNumber: n,
+    title: `Mock ${n}`,
+    slug: `mock-${n}`,
+    questions: groups.get(n)!.map((e) => byId.get(e.id)!).filter(Boolean),
+  }));
+  return { ...v1, tests };
+}
+
 function bankOf(file: MockFile): AnyQ[] {
   const isV2 = (file as V2File).version === 2 && Array.isArray((file as V2File).bank);
   if (isV2) return (file as V2File).bank;
   return (file as V1File).tests.flatMap((t) => t.questions);
 }
 
+function mockCountOf(file: MockFile): number {
+  const isV2 = (file as V2File).version === 2 && Array.isArray((file as V2File).bank);
+  if (isV2) return ((file as V2File).mocks ?? []).length;
+  return ((file as V1File).tests ?? []).length;
+}
+
+function unusedQuestionCount(file: MockFile): number {
+  const isV2 = (file as V2File).version === 2 && Array.isArray((file as V2File).bank);
+  if (!isV2) return 0;
+  const v2 = file as V2File;
+  const used = new Set<string>();
+  for (const m of v2.mocks ?? []) for (const id of m.questionIds ?? []) used.add(String(id));
+  return v2.bank.filter((q) => q.id && !used.has(String(q.id))).length;
+}
+
 const TopicSchema = z.string().min(1).max(120).regex(/^[a-z0-9-]+$/);
+
+
+
 
 /** For topic === "road-signs" load directory listings for both image dirs. */
 async function loadRoadSignFiles(topic: string): Promise<Set<string> | null> {
@@ -800,6 +906,84 @@ async function loadRoadSignFiles(topic: string): Promise<Set<string> | null> {
 
 const ImportModeSchema = z.enum(["patch", "replace"]).optional();
 
+const PLACEHOLDER_PHRASE = "Full revision content for this topic is being prepared";
+
+/** Preflight checks unique to Full replacement mode. Blocking issues. */
+function validateReplaceMode(
+  rows: AnyQ[],
+  rowLines: number[],
+  mockMetaByRow: MockMeta[],
+  topic: string,
+  questionsPerMock = 24,
+): Issue[] {
+  const out: Issue[] = [];
+
+  rows.forEach((r, i) => {
+    const text = String(r.question ?? r.template ?? r.prompt ?? "");
+    if (text.includes(PLACEHOLDER_PHRASE)) {
+      out.push({
+        rowIndex: rowLines[i] ?? null,
+        id: String(r.id ?? "") || null,
+        field: "question",
+        message: `Placeholder text found in CSV: "${PLACEHOLDER_PHRASE}". Replace with real content before import.`,
+      });
+    }
+  });
+
+  const useExplicit = mockMetaByRow.some((m) => m.mockNumber != null);
+  const groups = new Map<number, string[]>();
+  if (useExplicit) {
+    rows.forEach((q, i) => {
+      const m = mockMetaByRow[i]?.mockNumber;
+      if (m == null) return;
+      const list = groups.get(m) ?? [];
+      list.push(String(q.id));
+      groups.set(m, list);
+    });
+  } else {
+    rows.forEach((q, i) => {
+      const n = Math.floor(i / questionsPerMock) + 1;
+      const list = groups.get(n) ?? [];
+      list.push(String(q.id));
+      groups.set(n, list);
+    });
+  }
+
+  for (const [mockNumber, ids] of groups) {
+    if (ids.length !== questionsPerMock) {
+      out.push({
+        rowIndex: null,
+        id: null,
+        field: "mocks",
+        message: `Mock ${mockNumber} has ${ids.length} questions (expected ${questionsPerMock}).`,
+      });
+    }
+    const seen = new Set<string>();
+    for (const id of ids) {
+      if (seen.has(id)) {
+        out.push({
+          rowIndex: null,
+          id,
+          field: "mocks",
+          message: `Duplicate question id "${id}" inside mock ${mockNumber}.`,
+        });
+      }
+      seen.add(id);
+    }
+  }
+
+  if (topic === "gmat-practice" && rows.length !== 1080) {
+    out.push({
+      rowIndex: null,
+      id: null,
+      field: null,
+      message: `GMAT full replacement expects exactly 1080 rows (45 mocks × 24 questions). Got ${rows.length}.`,
+    });
+  }
+
+  return out;
+}
+
 export const previewCsvImport = createServerFn({ method: "POST" })
   .inputValidator((input) =>
     z.object({
@@ -813,12 +997,15 @@ export const previewCsvImport = createServerFn({ method: "POST" })
       const auth = await getAuthenticatedAdminClient();
       if (auth.error) return emptyPreview(auth.error);
       const mode = data.mode ?? "patch";
-      const { rows, rowLines, clearByRow, errors } = parseCsv(data.csvText, mode);
+      const { rows, rowLines, clearByRow, mockMetaByRow, errors } = parseCsv(data.csvText, mode);
       const existing = await getFile(filePathFor(data.topic));
       if (!existing) return emptyPreview(`Topic file not found in repo: ${filePathFor(data.topic)}`, errors);
       const oldFile = JSON.parse(existing.content) as MockFile;
       const oldBank = bankOf(oldFile);
-      const newFile = mergeIntoFile(oldFile, rows, clearByRow);
+      const newFile =
+        mode === "replace"
+          ? replaceIntoFile(oldFile, rows, clearByRow, mockMetaByRow)
+          : mergeIntoFile(oldFile, rows, clearByRow);
       const newBank = bankOf(newFile);
 
       const diff = diffBanks(oldBank, newBank);
@@ -826,6 +1013,9 @@ export const previewCsvImport = createServerFn({ method: "POST" })
       const rowIds = rows.map((r) => String(r.id));
       const roadSignFiles = await loadRoadSignFiles(data.topic);
       const validation = validateImported(mergedById, rowIds, rowLines, newFile, data.topic, roadSignFiles);
+      if (mode === "replace") {
+        validation.errors.push(...validateReplaceMode(rows, rowLines, mockMetaByRow, data.topic));
+      }
 
       return {
         error: null as string | null,
@@ -841,9 +1031,10 @@ export const previewCsvImport = createServerFn({ method: "POST" })
         },
         oldBankSize: oldBank.length,
         newBankSize: newBank.length,
+        oldMockCount: mockCountOf(oldFile),
+        newMockCount: mockCountOf(newFile),
+        unusedQuestionCount: unusedQuestionCount(newFile),
         validation,
-        // SHA of the file at preview time — passed back to commit to detect
-        // out-of-band changes between preview and commit.
         existingSha: existing.sha,
         filePath: filePathFor(data.topic),
         topic: data.topic,
@@ -869,14 +1060,11 @@ export const commitCsvImport = createServerFn({ method: "POST" })
     await assertAdmin(context.supabase, context.userId);
     const { supabase, userId } = context;
     const mode = data.mode ?? "patch";
-    const { rows, rowLines, clearByRow, errors } = parseCsv(data.csvText, mode);
+    const { rows, rowLines, clearByRow, mockMetaByRow, errors } = parseCsv(data.csvText, mode);
     if (rows.length === 0) throw new Error("No valid rows found in CSV");
 
     const path = filePathFor(data.topic);
     try {
-      // Always re-fetch the latest version of the target file just before commit
-      // — even if the client passes expectedSha, we compare it against the
-      // freshest sha from GitHub to detect out-of-band changes.
       const existing = await getFile(path);
       if (!existing) throw new Error(`Topic file not found in repo: ${path}`);
       if (data.expectedSha && data.expectedSha !== existing.sha) {
@@ -885,12 +1073,18 @@ export const commitCsvImport = createServerFn({ method: "POST" })
         );
       }
       const oldFile = JSON.parse(existing.content) as MockFile;
-      const newFile = mergeIntoFile(oldFile, rows, clearByRow);
+      const newFile =
+        mode === "replace"
+          ? replaceIntoFile(oldFile, rows, clearByRow, mockMetaByRow)
+          : mergeIntoFile(oldFile, rows, clearByRow);
 
       const mergedById = new Map(bankOf(newFile).filter((q) => q.id).map((q) => [String(q.id), q]));
       const rowIds = rows.map((r) => String(r.id));
       const roadSignFiles = await loadRoadSignFiles(data.topic);
       const validation = validateImported(mergedById, rowIds, rowLines, newFile, data.topic, roadSignFiles);
+      if (mode === "replace") {
+        validation.errors.push(...validateReplaceMode(rows, rowLines, mockMetaByRow, data.topic));
+      }
 
       if (validation.errors.length > 0) {
         const first = validation.errors.slice(0, 5).map((e) => `• ${e.id ? `[${e.id}] ` : ""}${e.message}`).join("\n");

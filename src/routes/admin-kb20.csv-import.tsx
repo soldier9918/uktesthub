@@ -201,10 +201,36 @@ function CsvImportPage() {
             <Badge variant="secondary">CSV rows: {preview.rowCount}</Badge>
             <Badge variant="secondary">Existing: {preview.oldBankSize}</Badge>
             <Badge variant="secondary">After: {preview.newBankSize}</Badge>
+            <Badge variant="secondary">Mocks: {preview.oldMockCount} → {preview.newMockCount}</Badge>
+            <Badge
+              className={
+                preview.unusedQuestionCount === 0
+                  ? "bg-emerald-500/20 text-emerald-700"
+                  : "bg-amber-500/20 text-amber-700"
+              }
+            >
+              Unused: {preview.unusedQuestionCount}
+            </Badge>
             <Badge className="bg-emerald-500/20 text-emerald-700">Added: {preview.diff.addedCount}</Badge>
             <Badge className="bg-amber-500/20 text-amber-700">Changed: {preview.diff.changedCount}</Badge>
             <Badge className="bg-rose-500/20 text-rose-700">Removed: {preview.diff.removedCount}</Badge>
           </div>
+
+          {preview.validation && preview.validation.errors.length > 0 && (
+            <div className="mt-3 rounded-lg border border-destructive/40 bg-destructive/10 p-3 text-xs">
+              <div className="mb-1 font-semibold text-destructive">
+                {preview.validation.errors.length} blocking issue{preview.validation.errors.length === 1 ? "" : "s"} — fix before commit:
+              </div>
+              <ul className="max-h-40 space-y-0.5 overflow-auto">
+                {preview.validation.errors.slice(0, 40).map((e, i) => (
+                  <li key={i}>• {e.id ? `[${e.id}] ` : ""}{e.message}</li>
+                ))}
+                {preview.validation.errors.length > 40 && (
+                  <li>… and {preview.validation.errors.length - 40} more</li>
+                )}
+              </ul>
+            </div>
+          )}
 
           {preview.parseErrors.length > 0 && (
             <ul className="mt-3 max-h-32 space-y-1 overflow-auto rounded-lg bg-muted/40 p-3 text-xs">
