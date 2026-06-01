@@ -184,43 +184,25 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
   const { user } = useAuth();
   const [progressLoaded, setProgressLoaded] = useState(false);
 
-  // Restore in-progress quiz from DB for signed-in users.
-  // If the URL has a #qN deep-link, honour it instead of the saved index
-  // (used by admins to verify a specific question).
+  // Always start a quiz fresh at question 1. If the user previously left a
+  // quiz half way through, any saved progress is cleared on entry so they
+  // restart from the beginning rather than resuming.
   useEffect(() => {
-    if (!user || progressLoaded) return;
-    if (mode !== "practice") return;
-    const hasHashJump =
-      typeof window !== "undefined" &&
-      /^#q\d+$/i.test(window.location.hash);
+    if (!user) {
+      setProgressLoaded(true);
+      return;
+    }
     let cancelled = false;
     supabase
       .from("quiz_progress")
-      .select("current_index,answers")
+      .delete()
       .eq("mock_slug", quiz.slug)
-      .maybeSingle()
-      .then(({ data }) => {
-        if (cancelled) return;
-        if (data && Array.isArray((data as { answers?: unknown }).answers)) {
-          const restored = (data as { answers: Answer[] }).answers;
-          if (restored.length === quiz.questions.length) {
-            setAnswers(restored);
-            if (!hasHashJump) {
-              setCurrent(Math.min((data as { current_index: number }).current_index ?? 0, quiz.questions.length - 1));
-            }
-          }
-        }
-        setProgressLoaded(true);
+      .then(() => {
+        if (!cancelled) setProgressLoaded(true);
       });
     return () => { cancelled = true; };
-  }, [user, mode, quiz.slug, quiz.questions.length, progressLoaded]);
-
-  // Clear any prior saved progress when entering exam mode, so an exam always
-  // starts fresh (resume is intentionally practice-only).
-  useEffect(() => {
-    if (!user || mode !== "exam") return;
-    supabase.from("quiz_progress").delete().eq("mock_slug", quiz.slug).then(() => {});
   }, [user, mode, quiz.slug]);
+
 
   // Debounced live save while quiz is in progress (practice mode only)
   useEffect(() => {
