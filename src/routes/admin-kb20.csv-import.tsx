@@ -66,7 +66,15 @@ function CsvImportPage() {
   });
 
   const commitMutation = useMutation({
-    mutationFn: () => commitFn({ data: { topic, csvText, filename: filename || "upload.csv", mode } }),
+    mutationFn: () => commitFn({
+      data: {
+        topic,
+        csvText,
+        filename: filename || "upload.csv",
+        mode: ((preview as { mode?: "patch" | "replace" } | null)?.mode ?? mode),
+        expectedSha: (preview as { existingSha?: string } | null)?.existingSha,
+      },
+    }),
     onSuccess: (data) => {
       setCommitResult({
         commitUrl: data.commitUrl,
@@ -187,17 +195,25 @@ function CsvImportPage() {
 
       {preview && (
         <section className="mt-6 rounded-xl border border-border bg-card p-5">
+          {(() => {
+            const blocked = (preview.validation?.errors.length ?? 0) > 0;
+            return (
+          <>
           <div className="flex flex-wrap items-center justify-between gap-2">
             <h2 className="font-semibold">2. Preview</h2>
             <Button
               onClick={() => commitMutation.mutate()}
-              disabled={commitMutation.isPending}
+              disabled={commitMutation.isPending || blocked}
+              title={blocked ? "Fix validation errors before committing." : undefined}
             >
-              {commitMutation.isPending ? "Committing…" : "Commit to GitHub"}
+              {commitMutation.isPending ? "Committing…" : blocked ? "Blocked by errors" : "Commit to GitHub"}
             </Button>
           </div>
 
           <div className="mt-3 flex flex-wrap gap-2 text-sm">
+            <Badge variant="secondary">Mode: {preview.mode ?? mode}</Badge>
+            <Badge variant="secondary">Branch: {preview.branch ?? "main"}</Badge>
+            <Badge variant="secondary">File: {preview.filePath}</Badge>
             <Badge variant="secondary">CSV rows: {preview.rowCount}</Badge>
             <Badge variant="secondary">Existing: {preview.oldBankSize}</Badge>
             <Badge variant="secondary">After: {preview.newBankSize}</Badge>
@@ -279,6 +295,9 @@ function CsvImportPage() {
               </pre>
             </details>
           )}
+          </>
+            );
+          })()}
         </section>
       )}
 
