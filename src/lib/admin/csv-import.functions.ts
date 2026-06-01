@@ -299,9 +299,15 @@ function parseCsv(csvText: string, mode: "patch" | "replace" = "patch"): {
     rowLines.push(csvLine);
     presentByRow.push(present);
     clearByRow.push(clear);
+    // Mock assignment hints — optional CSV columns.
+    const mockNumber =
+      readIntCell(r.mockNumber) ?? readIntCell(r.mockTest) ?? readIntCell(r.mock_number) ?? readIntCell(r.mock);
+    const questionNumber =
+      readIntCell(r.questionNumber) ?? readIntCell(r.question_number) ?? readIntCell(r.qNumber);
+    mockMetaByRow.push({ mockNumber, questionNumber });
   });
 
-  return { rows, rowLines, presentByRow, clearByRow, errors };
+  return { rows, rowLines, presentByRow, clearByRow, mockMetaByRow, errors };
 }
 
 /* ----------------- Validation ----------------- */
