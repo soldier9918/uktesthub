@@ -163,7 +163,8 @@ function CsvImportPage() {
         </div>
         <p className="mt-2 text-xs text-muted-foreground">
           Expected columns:{" "}
-          <code>id, type, question, options (|-separated), correctAnswer, correctAnswers, explanation, image, imageAlt</code>
+          <code>id, type, question, optionA, optionB, optionC, optionD, correctAnswer, correctAnswers, explanation, image, imageAlt, mockNumber, questionNumber</code>
+          . In Full Replacement, when <code>mockNumber</code> is present each question id may appear in up to 2 mocks (same content on every repeat); duplicates within a single mock are blocked.
         </p>
       </section>
 
