@@ -907,6 +907,75 @@ async function loadRoadSignFiles(topic: string): Promise<Set<string> | null> {
 const ImportModeSchema = z.enum(["patch", "replace"]).optional();
 
 const PLACEHOLDER_PHRASE = "Full revision content for this topic is being prepared";
+const FULL_REPLACEMENT_MOCK_COUNT = 45;
+const FULL_REPLACEMENT_QUESTIONS_PER_MOCK = 24;
+const FULL_REPLACEMENT_BANK_SIZE = FULL_REPLACEMENT_MOCK_COUNT * FULL_REPLACEMENT_QUESTIONS_PER_MOCK;
+
+function replaceAssertionIssue(field: string | null, message: string, id: string | null = null): Issue {
+  return { rowIndex: null, id, field, message };
+}
+
+function replacementMockLengths(file: MockFile): Array<{ mockNumber: number | string; length: number }> {
+  const isV2 = (file as V2File).version === 2 && Array.isArray((file as V2File).bank);
+  if (isV2) {
+    return ((file as V2File).mocks ?? []).map((m) => ({
+      mockNumber: m.mockNumber,
+      length: Array.isArray(m.questionIds) ? m.questionIds.length : 0,
+    }));
+  }
+  return ((file as V1File).tests ?? []).map((t) => ({
+    mockNumber: t.mockNumber,
+    length: Array.isArray(t.questions) ? t.questions.length : 0,
+  }));
+}
+
+function assertReplacementJson(file: MockFile, topic: string): {
+  errors: Issue[];
+  bankSize: number;
+  mockCount: number;
+  unusedQuestionCount: number;
+  firstBankIds: string[];
+} {
+  const errors: Issue[] = [];
+  const bank = bankOf(file);
+  const mockCount = mockCountOf(file);
+  const unused = unusedQuestionCount(file);
+  const firstBankIds = bank.slice(0, 3).map((q) => String(q.id ?? ""));
+
+  if (bank.length !== FULL_REPLACEMENT_BANK_SIZE) {
+    errors.push(replaceAssertionIssue(null, `Full replacement output must contain exactly ${FULL_REPLACEMENT_BANK_SIZE} bank questions; got ${bank.length}.`));
+  }
+
+  const stubIds = bank
+    .map((q) => String(q.id ?? ""))
+    .filter((id) => id.includes("-stub-") || id.startsWith(`${topic}-stub-`));
+  if (stubIds.length > 0) {
+    errors.push(replaceAssertionIssue("id", `Full replacement output still contains old stub IDs: ${stubIds.slice(0, 10).join(", ")}${stubIds.length > 10 ? ` (+${stubIds.length - 10} more)` : ""}.`, stubIds[0]));
+  }
+
+  const placeholderIds = bank
+    .filter((q) => String(q.question ?? q.template ?? q.prompt ?? "").includes(PLACEHOLDER_PHRASE))
+    .map((q) => String(q.id ?? "(missing id)"));
+  if (placeholderIds.length > 0) {
+    errors.push(replaceAssertionIssue("question", `Full replacement output still contains placeholder text in: ${placeholderIds.slice(0, 10).join(", ")}${placeholderIds.length > 10 ? ` (+${placeholderIds.length - 10} more)` : ""}.`, placeholderIds[0] ?? null));
+  }
+
+  if (mockCount !== FULL_REPLACEMENT_MOCK_COUNT) {
+    errors.push(replaceAssertionIssue("mocks", `Full replacement output must contain exactly ${FULL_REPLACEMENT_MOCK_COUNT} mocks; got ${mockCount}.`));
+  }
+
+  for (const m of replacementMockLengths(file)) {
+    if (m.length !== FULL_REPLACEMENT_QUESTIONS_PER_MOCK) {
+      errors.push(replaceAssertionIssue("mocks", `Mock ${m.mockNumber} has ${m.length} question IDs (expected ${FULL_REPLACEMENT_QUESTIONS_PER_MOCK}).`));
+    }
+  }
+
+  if (unused !== 0) {
+    errors.push(replaceAssertionIssue("mocks", `Full replacement output has ${unused} unused bank question(s); expected 0.`));
+  }
+
+  return { errors, bankSize: bank.length, mockCount, unusedQuestionCount: unused, firstBankIds };
+}
 
 /** Preflight checks unique to Full replacement mode. Blocking issues. */
 function validateReplaceMode(
@@ -972,12 +1041,12 @@ function validateReplaceMode(
     }
   }
 
-  if (topic === "gmat-practice" && rows.length !== 1080) {
+  if (rows.length !== FULL_REPLACEMENT_BANK_SIZE) {
     out.push({
       rowIndex: null,
       id: null,
       field: null,
-      message: `GMAT full replacement expects exactly 1080 rows (45 mocks × 24 questions). Got ${rows.length}.`,
+      message: `Full replacement expects exactly ${FULL_REPLACEMENT_BANK_SIZE} rows (${FULL_REPLACEMENT_MOCK_COUNT} mocks × ${FULL_REPLACEMENT_QUESTIONS_PER_MOCK} questions). Got ${rows.length}.`,
     });
   }
 
