@@ -37,6 +37,8 @@ export const Route = createFileRoute("/admin-kb20/")({
             desc="Run find-and-replace across an entire topic, or strip non-Latin / control characters in one click." />
           <Tile to="/admin-kb20/csv-import" title="CSV Import → GitHub"
             desc="Upload a CSV, preview changes, and commit directly to GitHub main. The static JSON files are the source of truth. Includes rollback." />
+          <Tile to="/admin-kb20/csv-export" title="Bulk CSV Export"
+            desc="Download every topic's CSV in one ZIP, by category, or as a single combined file. Round-trips through CSV Import." />
           <Tile to="/admin-kb20/import-export" title="Import / Export (legacy)"
             desc="Export topic JSON or download a validation report. (Legacy override-based import — use CSV Import instead.)" />
           <Tile to="/admin-kb20/images" title="Image Asset Manager"
