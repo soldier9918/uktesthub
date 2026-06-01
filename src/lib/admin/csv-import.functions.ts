@@ -154,8 +154,14 @@ function parseCsv(csvText: string, mode: "patch" | "replace" = "patch"): {
   const rowLines: number[] = [];
   const presentByRow: Set<string>[] = [];
   const clearByRow: Set<string>[] = [];
+  const mockMetaByRow: MockMeta[] = [];
 
-  const scalarFields: Array<{
+  const readIntCell = (v: string | undefined): number | null => {
+    const s = (v ?? "").trim();
+    if (!s) return null;
+    const n = Number(s);
+    return Number.isFinite(n) && Number.isInteger(n) ? n : null;
+  };
     col: string;
     key: string;
     transform?: (raw: string) => unknown;
