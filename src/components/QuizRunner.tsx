@@ -182,6 +182,40 @@ const EXAM_CONFIGS: Record<string, ExamConfig> = {
     passLabel: "60%",
     timeLabel: "Timed SERU-style practice",
   },
+  "cscs-operative": {
+    topicSlug: "cscs-operative",
+    count: 50,
+    timeLimitSec: 45 * 60,
+    passMarkPct: 90,
+    passScore: 45,
+    title: "CSCS Operative Exam",
+    description:
+      "CITB HSE-style exam — 50 unique questions, 45 minutes. Pass mark 45/50.",
+    heading: "CSCS Operative Exam Mode",
+    intro: [
+      "Practise with a realistic CSCS Operative Health, Safety and Environment test format before your real test.",
+      "You will answer 50 multiple-choice questions and have 45 minutes to complete the exam. To pass, you need to score at least 45 out of 50.",
+      "This exam mode is designed to help you practise under timed conditions and build confidence across key construction safety topics, including site hazards, working safely, health and welfare, high-risk activities, and environmental awareness.",
+    ],
+    buttonLabel: "Start CSCS Operative Exam",
+  },
+  "cscs-gold": {
+    topicSlug: "cscs-gold",
+    count: 50,
+    timeLimitSec: 45 * 60,
+    passMarkPct: 90,
+    passScore: 45,
+    title: "CSCS Gold Card Exam",
+    description:
+      "CITB HSE-style exam — 50 unique questions, 45 minutes. Pass mark 45/50.",
+    heading: "CSCS Gold Card Exam Mode",
+    intro: [
+      "Practise with a realistic CSCS Gold Card Health, Safety and Environment test format before your real test.",
+      "You will answer 50 multiple-choice questions and have 45 minutes to complete the exam. To pass, you need to score at least 45 out of 50.",
+      "This exam mode is designed to help supervisors and skilled construction workers practise under timed conditions and build confidence across key construction safety topics, including site hazards, supervision, working safely, health and welfare, high-risk activities, and environmental awareness.",
+    ],
+    buttonLabel: "Start CSCS Gold Exam",
+  },
 };
 
 export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
