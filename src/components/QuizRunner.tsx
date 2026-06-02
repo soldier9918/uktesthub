@@ -1005,7 +1005,19 @@ function BlankResults({
   );
 }
 
-function ModeSelect({ quiz, onSelect }: { quiz: Quiz; onSelect: (m: Mode) => void }) {
+function ModeSelect({
+  quiz,
+  isDrivingTheory,
+  examLoading,
+  examError,
+  onSelect,
+}: {
+  quiz: Quiz;
+  isDrivingTheory: boolean;
+  examLoading: boolean;
+  examError: string | null;
+  onSelect: (m: Mode) => void;
+}) {
   return (
     <div className="mx-auto max-w-3xl">
       <div className="rounded-3xl border border-border bg-card p-6 shadow-soft md:p-10">
@@ -1032,11 +1044,14 @@ function ModeSelect({ quiz, onSelect }: { quiz: Quiz; onSelect: (m: Mode) => voi
         <div className="mt-8 grid gap-4 md:grid-cols-2">
           <button
             onClick={() => onSelect("practice")}
-            className="group cursor-pointer rounded-2xl border-2 border-[#15803d] bg-gradient-to-br from-[#22c55e] to-[#15803d] p-5 text-left text-white shadow-[0_6px_14px_-6px_rgba(34,197,94,0.7)] ring-1 ring-white/20 transition-all hover:-translate-y-0.5"
+            disabled={examLoading}
+            className="group cursor-pointer rounded-2xl border-2 border-[#15803d] bg-gradient-to-br from-[#22c55e] to-[#15803d] p-5 text-left text-white shadow-[0_6px_14px_-6px_rgba(34,197,94,0.7)] ring-1 ring-white/20 transition-all hover:-translate-y-0.5 disabled:cursor-not-allowed disabled:opacity-60"
           >
             <div className="font-display text-lg font-semibold">Practice mode</div>
             <p className="mt-1 text-sm opacity-90">
-              Instant feedback and explanations after every question. No timer.
+              {isDrivingTheory
+                ? `Work through this mock's ${quiz.questions.length} questions with instant feedback and explanations. No timer.`
+                : "Instant feedback and explanations after every question. No timer."}
             </p>
             <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold">
               Start practice <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -1044,18 +1059,37 @@ function ModeSelect({ quiz, onSelect }: { quiz: Quiz; onSelect: (m: Mode) => voi
           </button>
           <button
             onClick={() => onSelect("exam")}
-            className="group cursor-pointer rounded-2xl border-2 border-[#c81e2c] bg-gradient-to-br from-[#ff5a5f] to-[#c81e2c] p-5 text-left text-white shadow-[0_6px_14px_-6px_rgba(255,90,95,0.7)] ring-1 ring-white/20 transition-all hover:-translate-y-0.5"
+            disabled={examLoading}
+            className="group cursor-pointer rounded-2xl border-2 border-[#c81e2c] bg-gradient-to-br from-[#ff5a5f] to-[#c81e2c] p-5 text-left text-white shadow-[0_6px_14px_-6px_rgba(255,90,95,0.7)] ring-1 ring-white/20 transition-all hover:-translate-y-0.5 disabled:cursor-not-allowed disabled:opacity-60"
           >
-            <div className="font-display text-lg font-semibold">Exam mode</div>
+            <div className="font-display text-lg font-semibold">
+              {isDrivingTheory ? "Exam mode — real test" : "Exam mode"}
+            </div>
             <p className="mt-1 text-sm opacity-90">
-              Timed, real-test feel. Results shown at the end with full review.
+              {isDrivingTheory
+                ? "50 unique random questions · 57 minutes · Pass 43/50. Fresh set every time."
+                : "Timed, real-test feel. Results shown at the end with full review."}
             </p>
+            {isDrivingTheory && (
+              <div className="mt-3 flex flex-wrap gap-1.5 text-xs">
+                <span className="rounded-full bg-white/15 px-2 py-0.5">50 Qs</span>
+                <span className="rounded-full bg-white/15 px-2 py-0.5">57 min</span>
+                <span className="rounded-full bg-white/15 px-2 py-0.5">Pass 43/50</span>
+              </div>
+            )}
             <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold">
-              Start exam <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+              {examLoading ? "Loading exam…" : "Start exam"}
+              {!examLoading && (
+                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+              )}
             </span>
+            {examError && (
+              <p className="mt-2 rounded-lg bg-white/15 px-2 py-1 text-xs">{examError}</p>
+            )}
           </button>
         </div>
       </div>
+
 
       {quiz.slug.includes("-mock-") && <MockStartIntro quiz={quiz} />}
     </div>
