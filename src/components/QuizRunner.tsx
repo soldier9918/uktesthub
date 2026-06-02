@@ -28,7 +28,7 @@ import type {
   DragDropBlanksQuestion,
 } from "@/data/quizzes";
 import { getCategory, getTopicDisplayTitle } from "@/data/categories";
-import { TOTAL_MOCKS_PER_TOPIC } from "@/data/mocks";
+import { TOTAL_MOCKS_PER_TOPIC, buildRandomExamQuiz } from "@/data/mocks";
 import { getMockIntro } from "@/data/mock-intros";
 import { AdSlot } from "./AdSlot";
 import { RoadSign } from "./RoadSign";
@@ -115,20 +115,72 @@ function isCorrect(q: Question, a: Answer): boolean {
 
 export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
   const overrides = useOverrides();
-  const quiz = useMemo(
+  const baseQuiz = useMemo(
     () => (overrides ? applyOverrides(rawQuiz, overrides) : rawQuiz),
     [rawQuiz, overrides],
   );
+  // For Driving Theory, "Exam mode" swaps to a freshly randomised 50-question
+  // exam (57 min, pass 43/50). All other topics + Practice mode keep the
+  // original mock as-is.
+  const [examOverride, setExamOverride] = useState<Quiz | null>(null);
+  const quiz = examOverride ?? baseQuiz;
   const [mode, setMode] = useState<Mode | null>(null);
+  const [examLoading, setExamLoading] = useState(false);
+  const [examError, setExamError] = useState<string | null>(null);
   const [current, setCurrent] = useState(0);
   const [answers, setAnswers] = useState<Answer[]>(
-    Array(quiz.questions.length).fill(null),
+    Array(rawQuiz.questions.length).fill(null),
   );
   const [revealed, setRevealed] = useState<boolean[]>(
-    Array(quiz.questions.length).fill(false),
+    Array(rawQuiz.questions.length).fill(false),
   );
-  const [timeLeft, setTimeLeft] = useState(quiz.timeLimit);
+  const [timeLeft, setTimeLeft] = useState(rawQuiz.timeLimit);
   const [finished, setFinished] = useState(false);
+
+  // Re-initialise question state when the active quiz length / timeLimit
+  // changes (e.g. user enters or leaves a 50-question Driving Theory exam).
+  useEffect(() => {
+    setCurrent(0);
+    setAnswers(Array(quiz.questions.length).fill(null));
+    setRevealed(Array(quiz.questions.length).fill(false));
+    setTimeLeft(quiz.timeLimit);
+    setFinished(false);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [quiz.slug, quiz.questions.length, quiz.timeLimit]);
+
+  const isDrivingTheory = baseQuiz.topic === "driving-theory";
+
+  async function handleSelectMode(m: Mode) {
+    if (m === "exam" && isDrivingTheory) {
+      setExamLoading(true);
+      setExamError(null);
+      try {
+        const exam = await buildRandomExamQuiz("driving-theory", {
+          count: 50,
+          timeLimitSec: 57 * 60,
+          passMarkPct: 86,
+          title: "Driving Theory Exam",
+          description:
+            "Real-test format — 50 unique questions, 57 minutes. Pass mark 43/50.",
+        });
+        if (!exam) {
+          setExamError("Couldn't load the exam questions. Please try again.");
+          setExamLoading(false);
+          return;
+        }
+        setExamOverride(exam);
+      } catch {
+        setExamError("Couldn't load the exam questions. Please try again.");
+        setExamLoading(false);
+        return;
+      }
+      setExamLoading(false);
+    } else {
+      setExamOverride(null);
+    }
+    setMode(m);
+  }
+
 
   // Deep-link support: /quiz/<slug>#q5 jumps straight to question 5 in
   // practice mode. Used by the admin to verify a specific bank question.
@@ -258,7 +310,16 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
   }, [finished, score, quiz, user]);
 
 
-  if (!mode) return <ModeSelect quiz={quiz} onSelect={setMode} />;
+  if (!mode)
+    return (
+      <ModeSelect
+        quiz={baseQuiz}
+        isDrivingTheory={isDrivingTheory}
+        examLoading={examLoading}
+        examError={examError}
+        onSelect={handleSelectMode}
+      />
+    );
 
   if (finished) {
     return (
@@ -270,15 +331,14 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
         passed={passed}
         onRetry={() => {
           setMode(null);
-          setCurrent(0);
-          setAnswers(Array(quiz.questions.length).fill(null));
-          setRevealed(Array(quiz.questions.length).fill(false));
-          setTimeLeft(quiz.timeLimit);
-          setFinished(false);
+          setExamOverride(null);
+          // The reset useEffect re-initialises question state when the
+          // active quiz switches back to the base mock.
         }}
       />
     );
   }
+
 
   const q = quiz.questions[current];
   const selected = answers[current];
@@ -945,7 +1005,19 @@ function BlankResults({
   );
 }
 
-function ModeSelect({ quiz, onSelect }: { quiz: Quiz; onSelect: (m: Mode) => void }) {
+function ModeSelect({
+  quiz,
+  isDrivingTheory,
+  examLoading,
+  examError,
+  onSelect,
+}: {
+  quiz: Quiz;
+  isDrivingTheory: boolean;
+  examLoading: boolean;
+  examError: string | null;
+  onSelect: (m: Mode) => void;
+}) {
   return (
     <div className="mx-auto max-w-3xl">
       <div className="rounded-3xl border border-border bg-card p-6 shadow-soft md:p-10">
@@ -972,11 +1044,14 @@ function ModeSelect({ quiz, onSelect }: { quiz: Quiz; onSelect: (m: Mode) => voi
         <div className="mt-8 grid gap-4 md:grid-cols-2">
           <button
             onClick={() => onSelect("practice")}
-            className="group cursor-pointer rounded-2xl border-2 border-[#15803d] bg-gradient-to-br from-[#22c55e] to-[#15803d] p-5 text-left text-white shadow-[0_6px_14px_-6px_rgba(34,197,94,0.7)] ring-1 ring-white/20 transition-all hover:-translate-y-0.5"
+            disabled={examLoading}
+            className="group cursor-pointer rounded-2xl border-2 border-[#15803d] bg-gradient-to-br from-[#22c55e] to-[#15803d] p-5 text-left text-white shadow-[0_6px_14px_-6px_rgba(34,197,94,0.7)] ring-1 ring-white/20 transition-all hover:-translate-y-0.5 disabled:cursor-not-allowed disabled:opacity-60"
           >
             <div className="font-display text-lg font-semibold">Practice mode</div>
             <p className="mt-1 text-sm opacity-90">
-              Instant feedback and explanations after every question. No timer.
+              {isDrivingTheory
+                ? `Work through this mock's ${quiz.questions.length} questions with instant feedback and explanations. No timer.`
+                : "Instant feedback and explanations after every question. No timer."}
             </p>
             <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold">
               Start practice <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -984,18 +1059,37 @@ function ModeSelect({ quiz, onSelect }: { quiz: Quiz; onSelect: (m: Mode) => voi
           </button>
           <button
             onClick={() => onSelect("exam")}
-            className="group cursor-pointer rounded-2xl border-2 border-[#c81e2c] bg-gradient-to-br from-[#ff5a5f] to-[#c81e2c] p-5 text-left text-white shadow-[0_6px_14px_-6px_rgba(255,90,95,0.7)] ring-1 ring-white/20 transition-all hover:-translate-y-0.5"
+            disabled={examLoading}
+            className="group cursor-pointer rounded-2xl border-2 border-[#c81e2c] bg-gradient-to-br from-[#ff5a5f] to-[#c81e2c] p-5 text-left text-white shadow-[0_6px_14px_-6px_rgba(255,90,95,0.7)] ring-1 ring-white/20 transition-all hover:-translate-y-0.5 disabled:cursor-not-allowed disabled:opacity-60"
           >
-            <div className="font-display text-lg font-semibold">Exam mode</div>
+            <div className="font-display text-lg font-semibold">
+              {isDrivingTheory ? "Exam mode — real test" : "Exam mode"}
+            </div>
             <p className="mt-1 text-sm opacity-90">
-              Timed, real-test feel. Results shown at the end with full review.
+              {isDrivingTheory
+                ? "50 unique random questions · 57 minutes · Pass 43/50. Fresh set every time."
+                : "Timed, real-test feel. Results shown at the end with full review."}
             </p>
+            {isDrivingTheory && (
+              <div className="mt-3 flex flex-wrap gap-1.5 text-xs">
+                <span className="rounded-full bg-white/15 px-2 py-0.5">50 Qs</span>
+                <span className="rounded-full bg-white/15 px-2 py-0.5">57 min</span>
+                <span className="rounded-full bg-white/15 px-2 py-0.5">Pass 43/50</span>
+              </div>
+            )}
             <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold">
-              Start exam <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+              {examLoading ? "Loading exam…" : "Start exam"}
+              {!examLoading && (
+                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+              )}
             </span>
+            {examError && (
+              <p className="mt-2 rounded-lg bg-white/15 px-2 py-1 text-xs">{examError}</p>
+            )}
           </button>
         </div>
       </div>
+
 
       {quiz.slug.includes("-mock-") && <MockStartIntro quiz={quiz} />}
     </div>

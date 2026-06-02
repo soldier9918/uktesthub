@@ -519,3 +519,54 @@ export function mockToQuiz(category: string, mock: MockTest): Quiz {
     }),
   };
 }
+
+/**
+ * Build a fresh randomised exam Quiz by drawing `count` unique questions
+ * from a topic's v2 bank. Used for "real exam" mode (e.g. Driving Theory:
+ * 50 unique questions, 57 minutes, pass 43/50). Returns undefined if the
+ * topic file is missing, not v2, or the bank is smaller than `count`.
+ */
+export async function buildRandomExamQuiz(
+  topicSlug: string,
+  opts: {
+    count: number;
+    timeLimitSec: number;
+    passMarkPct: number;
+    title: string;
+    description: string;
+  },
+): Promise<Quiz | undefined> {
+  const file = await loadTopicFile(topicSlug);
+  if (!file || !isV2(file)) return undefined;
+  const bank = file.bank;
+  if (bank.length < opts.count) return undefined;
+
+  // Fisher–Yates shuffle on a shallow copy, take first N → guaranteed unique.
+  const pool = bank.slice();
+  for (let i = pool.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [pool[i], pool[j]] = [pool[j], pool[i]];
+  }
+  const picked = pool.slice(0, opts.count);
+
+  const category = findTopic(topicSlug)?.category.slug ?? topicSlug;
+  const slug = `${topicSlug}-exam`;
+
+  return {
+    slug,
+    category,
+    topic: topicSlug,
+    quizTitle: opts.title,
+    description: opts.description,
+    timeLimit: opts.timeLimitSec,
+    difficulty: "Medium",
+    passMark: opts.passMarkPct,
+    questions: picked.map((raw, idx) => {
+      const q = rawToQuestion(raw, idx);
+      const sourceId = (raw as { id?: string }).id ?? `${slug}-q${idx + 1}`;
+      (q as unknown as { sourceId: string }).sourceId = sourceId;
+      return q;
+    }),
+  };
+}
+
