@@ -368,9 +368,10 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
   }, [finished, score, quiz, user]);
 
 
-  if (examIntroShown) {
+  if (examIntroShown && examConfig) {
     return (
       <ExamIntroScreen
+        config={examConfig}
         onStart={handleStartExam}
         onBack={() => setExamIntroShown(false)}
         loading={examLoading}
@@ -383,7 +384,7 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
     return (
       <ModeSelect
         quiz={baseQuiz}
-        isDrivingTheory={isDrivingTheory}
+        examConfig={examConfig}
         examLoading={examLoading}
         examError={examError}
         onSelect={handleSelectMode}
