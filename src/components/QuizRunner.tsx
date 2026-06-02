@@ -317,6 +317,17 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
   }, [finished, score, quiz, user]);
 
 
+  if (examIntroShown) {
+    return (
+      <ExamIntroScreen
+        onStart={handleStartExam}
+        onBack={() => setExamIntroShown(false)}
+        loading={examLoading}
+        error={examError}
+      />
+    );
+  }
+
   if (!mode)
     return (
       <ModeSelect
@@ -339,6 +350,7 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
         onRetry={() => {
           setMode(null);
           setExamOverride(null);
+          setExamIntroShown(false);
           // The reset useEffect re-initialises question state when the
           // active quiz switches back to the base mock.
         }}
