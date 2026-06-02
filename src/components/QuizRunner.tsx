@@ -149,10 +149,11 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [quiz.slug, quiz.questions.length, quiz.timeLimit]);
 
-  const isDrivingTheory = baseQuiz.topic === "driving-theory";
+  const examConfig = EXAM_CONFIGS[baseQuiz.topic];
+  const hasRealExam = Boolean(examConfig);
 
   async function handleSelectMode(m: Mode) {
-    if (m === "exam" && isDrivingTheory) {
+    if (m === "exam" && examConfig) {
       setExamIntroShown(true);
       return;
     }
@@ -161,16 +162,16 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
   }
 
   async function handleStartExam() {
+    if (!examConfig) return;
     setExamLoading(true);
     setExamError(null);
     try {
-      const exam = await buildRandomExamQuiz("driving-theory", {
-        count: 50,
-        timeLimitSec: 57 * 60,
-        passMarkPct: 86,
-        title: "Driving Theory Exam",
-        description:
-          "Real-test format — 50 unique questions, 57 minutes. Pass mark 43/50.",
+      const exam = await buildRandomExamQuiz(examConfig.topicSlug, {
+        count: examConfig.count,
+        timeLimitSec: examConfig.timeLimitSec,
+        passMarkPct: examConfig.passMarkPct,
+        title: examConfig.title,
+        description: examConfig.description,
       });
       if (!exam) {
         setExamError("Couldn't load the exam questions. Please try again.");
