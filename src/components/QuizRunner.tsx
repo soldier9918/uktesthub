@@ -113,6 +113,56 @@ function isCorrect(q: Question, a: Answer): boolean {
   return false;
 }
 
+type ExamConfig = {
+  topicSlug: string;
+  count: number;
+  timeLimitSec: number;
+  passMarkPct: number;
+  passScore: number;
+  title: string;
+  description: string;
+  heading: string;
+  intro: string[];
+  buttonLabel: string;
+};
+
+const EXAM_CONFIGS: Record<string, ExamConfig> = {
+  "driving-theory": {
+    topicSlug: "driving-theory",
+    count: 50,
+    timeLimitSec: 57 * 60,
+    passMarkPct: 86,
+    passScore: 43,
+    title: "Driving Theory Exam",
+    description:
+      "Real-test format — 50 unique questions, 57 minutes. Pass mark 43/50.",
+    heading: "Driving Theory Exam Mode",
+    intro: [
+      "Get ready for a realistic UK Driving Theory Test practice exam. This exam mode is designed to feel like the real test, helping you practise under proper timed conditions before test day.",
+      "You will answer 50 multiple-choice questions and have 57 minutes to complete the exam. To pass, you need to score at least 43 out of 50.",
+      "This is a fresh exam every time, with questions randomly selected from our Driving Theory question bank, so you can keep practising and improving your score.",
+    ],
+    buttonLabel: "Start Driving Theory Exam",
+  },
+  "life-in-the-uk": {
+    topicSlug: "life-in-the-uk",
+    count: 24,
+    timeLimitSec: 45 * 60,
+    passMarkPct: 75,
+    passScore: 18,
+    title: "Life in the UK Exam",
+    description:
+      "Real-test format — 24 unique questions, 45 minutes. Pass mark 18/24 (75%).",
+    heading: "Life in the UK Exam Mode",
+    intro: [
+      "Practise with a realistic Life in the UK Test exam format before your official test day.",
+      "You will answer 24 questions and have 45 minutes to complete the test. To pass, you need to score 75% or higher, which means getting at least 18 out of 24 questions correct.",
+      "This exam mode is designed to help you practise under timed conditions, improve your confidence, and prepare for topics from the Life in the UK handbook, including British history, government, laws, values, traditions, and everyday life in the UK.",
+    ],
+    buttonLabel: "Start Life in the UK Exam",
+  },
+};
+
 export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
   const overrides = useOverrides();
   const baseQuiz = useMemo(
