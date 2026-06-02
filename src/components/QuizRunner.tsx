@@ -115,20 +115,72 @@ function isCorrect(q: Question, a: Answer): boolean {
 
 export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
   const overrides = useOverrides();
-  const quiz = useMemo(
+  const baseQuiz = useMemo(
     () => (overrides ? applyOverrides(rawQuiz, overrides) : rawQuiz),
     [rawQuiz, overrides],
   );
+  // For Driving Theory, "Exam mode" swaps to a freshly randomised 50-question
+  // exam (57 min, pass 43/50). All other topics + Practice mode keep the
+  // original mock as-is.
+  const [examOverride, setExamOverride] = useState<Quiz | null>(null);
+  const quiz = examOverride ?? baseQuiz;
   const [mode, setMode] = useState<Mode | null>(null);
+  const [examLoading, setExamLoading] = useState(false);
+  const [examError, setExamError] = useState<string | null>(null);
   const [current, setCurrent] = useState(0);
   const [answers, setAnswers] = useState<Answer[]>(
-    Array(quiz.questions.length).fill(null),
+    Array(rawQuiz.questions.length).fill(null),
   );
   const [revealed, setRevealed] = useState<boolean[]>(
-    Array(quiz.questions.length).fill(false),
+    Array(rawQuiz.questions.length).fill(false),
   );
-  const [timeLeft, setTimeLeft] = useState(quiz.timeLimit);
+  const [timeLeft, setTimeLeft] = useState(rawQuiz.timeLimit);
   const [finished, setFinished] = useState(false);
+
+  // Re-initialise question state when the active quiz length / timeLimit
+  // changes (e.g. user enters or leaves a 50-question Driving Theory exam).
+  useEffect(() => {
+    setCurrent(0);
+    setAnswers(Array(quiz.questions.length).fill(null));
+    setRevealed(Array(quiz.questions.length).fill(false));
+    setTimeLeft(quiz.timeLimit);
+    setFinished(false);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [quiz.slug, quiz.questions.length, quiz.timeLimit]);
+
+  const isDrivingTheory = baseQuiz.topic === "driving-theory";
+
+  async function handleSelectMode(m: Mode) {
+    if (m === "exam" && isDrivingTheory) {
+      setExamLoading(true);
+      setExamError(null);
+      try {
+        const exam = await buildRandomExamQuiz("driving-theory", {
+          count: 50,
+          timeLimitSec: 57 * 60,
+          passMarkPct: 86,
+          title: "Driving Theory Exam",
+          description:
+            "Real-test format — 50 unique questions, 57 minutes. Pass mark 43/50.",
+        });
+        if (!exam) {
+          setExamError("Couldn't load the exam questions. Please try again.");
+          setExamLoading(false);
+          return;
+        }
+        setExamOverride(exam);
+      } catch {
+        setExamError("Couldn't load the exam questions. Please try again.");
+        setExamLoading(false);
+        return;
+      }
+      setExamLoading(false);
+    } else {
+      setExamOverride(null);
+    }
+    setMode(m);
+  }
+
 
   // Deep-link support: /quiz/<slug>#q5 jumps straight to question 5 in
   // practice mode. Used by the admin to verify a specific bank question.
