@@ -1159,14 +1159,14 @@ function ModeSelect({
             </div>
             <p className="mt-1 text-sm opacity-90">
               {examConfig
-                ? `${examConfig.count} unique random questions · ${Math.round(examConfig.timeLimitSec / 60)} minutes · Pass ${examConfig.passScore}/${examConfig.count}. Fresh set every time.`
+                ? `${examConfig.count} unique random questions · ${Math.round(examConfig.timeLimitSec / 60)} minutes · Pass ${examConfig.passLabel ?? `${examConfig.passScore}/${examConfig.count}`}. Fresh set every time.`
                 : "Timed, real-test feel. Results shown at the end with full review."}
             </p>
             {examConfig && (
               <div className="mt-3 flex flex-wrap gap-1.5 text-xs">
                 <span className="rounded-full bg-white/15 px-2 py-0.5">{examConfig.count} Qs</span>
                 <span className="rounded-full bg-white/15 px-2 py-0.5">{Math.round(examConfig.timeLimitSec / 60)} min</span>
-                <span className="rounded-full bg-white/15 px-2 py-0.5">Pass {examConfig.passScore}/{examConfig.count}</span>
+                <span className="rounded-full bg-white/15 px-2 py-0.5">Pass {examConfig.passLabel ?? `${examConfig.passScore}/${examConfig.count}`}</span>
               </div>
             )}
             <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold">
