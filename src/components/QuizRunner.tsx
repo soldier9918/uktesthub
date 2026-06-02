@@ -127,6 +127,7 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
   const [mode, setMode] = useState<Mode | null>(null);
   const [examLoading, setExamLoading] = useState(false);
   const [examError, setExamError] = useState<string | null>(null);
+  const [examIntroShown, setExamIntroShown] = useState(false);
   const [current, setCurrent] = useState(0);
   const [answers, setAnswers] = useState<Answer[]>(
     Array(rawQuiz.questions.length).fill(null),
@@ -152,33 +153,39 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
 
   async function handleSelectMode(m: Mode) {
     if (m === "exam" && isDrivingTheory) {
-      setExamLoading(true);
-      setExamError(null);
-      try {
-        const exam = await buildRandomExamQuiz("driving-theory", {
-          count: 50,
-          timeLimitSec: 57 * 60,
-          passMarkPct: 86,
-          title: "Driving Theory Exam",
-          description:
-            "Real-test format — 50 unique questions, 57 minutes. Pass mark 43/50.",
-        });
-        if (!exam) {
-          setExamError("Couldn't load the exam questions. Please try again.");
-          setExamLoading(false);
-          return;
-        }
-        setExamOverride(exam);
-      } catch {
+      setExamIntroShown(true);
+      return;
+    }
+    setExamOverride(null);
+    setMode(m);
+  }
+
+  async function handleStartExam() {
+    setExamLoading(true);
+    setExamError(null);
+    try {
+      const exam = await buildRandomExamQuiz("driving-theory", {
+        count: 50,
+        timeLimitSec: 57 * 60,
+        passMarkPct: 86,
+        title: "Driving Theory Exam",
+        description:
+          "Real-test format — 50 unique questions, 57 minutes. Pass mark 43/50.",
+      });
+      if (!exam) {
         setExamError("Couldn't load the exam questions. Please try again.");
         setExamLoading(false);
         return;
       }
+      setExamOverride(exam);
+    } catch {
+      setExamError("Couldn't load the exam questions. Please try again.");
       setExamLoading(false);
-    } else {
-      setExamOverride(null);
+      return;
     }
-    setMode(m);
+    setExamLoading(false);
+    setExamIntroShown(false);
+    setMode("exam");
   }
 
 
