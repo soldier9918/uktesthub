@@ -124,6 +124,8 @@ type ExamConfig = {
   heading: string;
   intro: string[];
   buttonLabel: string;
+  passLabel?: string;
+  timeLabel?: string;
 };
 
 const EXAM_CONFIGS: Record<string, ExamConfig> = {
@@ -160,6 +162,25 @@ const EXAM_CONFIGS: Record<string, ExamConfig> = {
       "This exam mode is designed to help you practise under timed conditions, improve your confidence, and prepare for topics from the Life in the UK handbook, including British history, government, laws, values, traditions, and everyday life in the UK.",
     ],
     buttonLabel: "Start Life in the UK Exam",
+  },
+  seru: {
+    topicSlug: "seru",
+    count: 36,
+    timeLimitSec: 45 * 60,
+    passMarkPct: 60,
+    passScore: 22,
+    title: "SERU Exam",
+    description:
+      "TfL SERU-style assessment — 36 unique questions, 45 minutes. Pass mark 60%.",
+    heading: "SERU Exam Mode",
+    intro: [
+      "Practise with a realistic TfL SERU assessment-style test for London private hire drivers.",
+      "You will answer 36 questions under timed exam conditions. To pass, you need to score 60% or higher, which means getting at least 22 questions correct.",
+      "This exam mode helps you prepare for key topics from the TfL Private Hire Driver Handbook, including passenger safety, safeguarding, equality, disability awareness, driver responsibilities, licensing rules, and professional conduct.",
+    ],
+    buttonLabel: "Start SERU Exam",
+    passLabel: "60%",
+    timeLabel: "Timed SERU-style practice",
   },
 };
 
@@ -1138,14 +1159,14 @@ function ModeSelect({
             </div>
             <p className="mt-1 text-sm opacity-90">
               {examConfig
-                ? `${examConfig.count} unique random questions · ${Math.round(examConfig.timeLimitSec / 60)} minutes · Pass ${examConfig.passScore}/${examConfig.count}. Fresh set every time.`
+                ? `${examConfig.count} unique random questions · ${Math.round(examConfig.timeLimitSec / 60)} minutes · Pass ${examConfig.passLabel ?? `${examConfig.passScore}/${examConfig.count}`}. Fresh set every time.`
                 : "Timed, real-test feel. Results shown at the end with full review."}
             </p>
             {examConfig && (
               <div className="mt-3 flex flex-wrap gap-1.5 text-xs">
                 <span className="rounded-full bg-white/15 px-2 py-0.5">{examConfig.count} Qs</span>
                 <span className="rounded-full bg-white/15 px-2 py-0.5">{Math.round(examConfig.timeLimitSec / 60)} min</span>
-                <span className="rounded-full bg-white/15 px-2 py-0.5">Pass {examConfig.passScore}/{examConfig.count}</span>
+                <span className="rounded-full bg-white/15 px-2 py-0.5">Pass {examConfig.passLabel ?? `${examConfig.passScore}/${examConfig.count}`}</span>
               </div>
             )}
             <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold">
@@ -1274,13 +1295,13 @@ function ExamIntroScreen({
               <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-coral/10 text-xs font-bold text-coral">
                 {minutes}
               </span>
-              <span>{minutes} minutes</span>
+              <span>{config.timeLabel ?? `${minutes} minutes`}</span>
             </li>
             <li className="flex items-center gap-2">
               <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-coral/10 text-xs font-bold text-coral">
                 {config.passScore}
               </span>
-              <span>{config.passScore}/{config.count} pass mark</span>
+              <span>{config.passLabel ?? `${config.passScore}/${config.count} pass mark`}</span>
             </li>
           </ul>
         </div>
