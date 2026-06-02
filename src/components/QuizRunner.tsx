@@ -1293,15 +1293,15 @@ function ExamIntroScreen({
             </li>
             <li className="flex items-center gap-2">
               <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-coral/10 text-xs font-bold text-coral">
-                {minutes}
+                {config.timeLabel ? "∞" : minutes}
               </span>
-              <span>{minutes} minutes</span>
+              <span>{config.timeLabel ?? `${minutes} minutes`}</span>
             </li>
             <li className="flex items-center gap-2">
               <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-coral/10 text-xs font-bold text-coral">
-                {config.passScore}
+                {config.passLabel ? "%" : config.passScore}
               </span>
-              <span>{config.passScore}/{config.count} pass mark</span>
+              <span>{config.passLabel ?? `${config.passScore}/${config.count} pass mark`}</span>
             </li>
           </ul>
         </div>
