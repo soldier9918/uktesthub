@@ -310,7 +310,16 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
   }, [finished, score, quiz, user]);
 
 
-  if (!mode) return <ModeSelect quiz={quiz} onSelect={setMode} />;
+  if (!mode)
+    return (
+      <ModeSelect
+        quiz={baseQuiz}
+        isDrivingTheory={isDrivingTheory}
+        examLoading={examLoading}
+        examError={examError}
+        onSelect={handleSelectMode}
+      />
+    );
 
   if (finished) {
     return (
@@ -322,15 +331,14 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
         passed={passed}
         onRetry={() => {
           setMode(null);
-          setCurrent(0);
-          setAnswers(Array(quiz.questions.length).fill(null));
-          setRevealed(Array(quiz.questions.length).fill(false));
-          setTimeLeft(quiz.timeLimit);
-          setFinished(false);
+          setExamOverride(null);
+          // The reset useEffect re-initialises question state when the
+          // active quiz switches back to the base mock.
         }}
       />
     );
   }
+
 
   const q = quiz.questions[current];
   const selected = answers[current];
