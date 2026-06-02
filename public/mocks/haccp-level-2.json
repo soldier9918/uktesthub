@@ -826,8 +826,8 @@
     {
       "id": "haccp-level-2-q0291",
       "type": "drag-drop-blanks",
-      "question": "The maximum or minimum value to which a hazard must be controlled at a CCP is known as a {{0}}, such as ensuring cooked poultry reaches a core temperature of {{1.",
-      "explanation": "A Critical Limit is the safety boundary used at a CCP; for cooking poultry, the core temperature must reach 75 degrees C to be safe",
+      "question": "At a Critical Control Point, the maximum or minimum value that keeps a food safety hazard under control is called a {{0}}.",
+      "explanation": "A Critical Limit is the measurable boundary at a Critical Control Point; if it is not met, corrective action is needed to keep food safe.",
       "blanks": [
         {
           "correctIndex": 0,
@@ -839,7 +839,7 @@
           ]
         }
       ],
-      "template": "The maximum or minimum value to which a hazard must be controlled at a CCP is known as a {{0}}, such as ensuring cooked poultry reaches a core temperature of {{1."
+      "template": "At a Critical Control Point, the maximum or minimum value that keeps a food safety hazard under control is called a {{0}}."
     },
     {
       "id": "haccp-level-2-q0032",
@@ -1608,14 +1608,14 @@
       "id": "haccp-level-2-q0063",
       "type": "drag-drop-blanks",
       "question": "The legal maximum temperature for high-risk chilled food storage in England, Wales, and Northern Ireland is {{0}}.",
-      "explanation": "In the UK, it is a legal requirement for most high-risk chilled foods to be stored at 8 degrees C or below",
+      "explanation": "In England, Wales and Northern Ireland, most high-risk chilled foods must be kept at or below 8 degrees C to limit bacterial growth.",
       "blanks": [
         {
           "correctIndex": 2,
           "options": [
             "75 degrees C for 30 seconds",
-            "63 degrees C for 2 minutes",
-            "8 degrees C or below"
+            "63 degrees C for 2 minutes",
+            "At or below 8 degrees C"
           ]
         }
       ],
