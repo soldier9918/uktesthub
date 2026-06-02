@@ -124,6 +124,8 @@ type ExamConfig = {
   heading: string;
   intro: string[];
   buttonLabel: string;
+  passLabel?: string;
+  timeLabel?: string;
 };
 
 const EXAM_CONFIGS: Record<string, ExamConfig> = {
@@ -160,6 +162,25 @@ const EXAM_CONFIGS: Record<string, ExamConfig> = {
       "This exam mode is designed to help you practise under timed conditions, improve your confidence, and prepare for topics from the Life in the UK handbook, including British history, government, laws, values, traditions, and everyday life in the UK.",
     ],
     buttonLabel: "Start Life in the UK Exam",
+  },
+  seru: {
+    topicSlug: "seru",
+    count: 36,
+    timeLimitSec: 45 * 60,
+    passMarkPct: 60,
+    passScore: 22,
+    title: "SERU Exam",
+    description:
+      "TfL SERU-style assessment — 36 unique questions, 45 minutes. Pass mark 60%.",
+    heading: "SERU Exam Mode",
+    intro: [
+      "Practise with a realistic TfL SERU assessment-style test for London private hire drivers.",
+      "You will answer 36 questions under timed exam conditions. To pass, you need to score 60% or higher, which means getting at least 22 questions correct.",
+      "This exam mode helps you prepare for key topics from the TfL Private Hire Driver Handbook, including passenger safety, safeguarding, equality, disability awareness, driver responsibilities, licensing rules, and professional conduct.",
+    ],
+    buttonLabel: "Start SERU Exam",
+    passLabel: "60%",
+    timeLabel: "Timed SERU-style practice",
   },
 };
 
