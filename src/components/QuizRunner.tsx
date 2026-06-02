@@ -200,7 +200,6 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
   }, [quiz.slug, quiz.questions.length, quiz.timeLimit]);
 
   const examConfig = EXAM_CONFIGS[baseQuiz.topic];
-  const hasRealExam = Boolean(examConfig);
 
   async function handleSelectMode(m: Mode) {
     if (m === "exam" && examConfig) {
