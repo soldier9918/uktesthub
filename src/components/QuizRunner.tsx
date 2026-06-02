@@ -1078,17 +1078,18 @@ function BlankResults({
 
 function ModeSelect({
   quiz,
-  isDrivingTheory,
+  examConfig,
   examLoading,
   examError,
   onSelect,
 }: {
   quiz: Quiz;
-  isDrivingTheory: boolean;
+  examConfig: ExamConfig | undefined;
   examLoading: boolean;
   examError: string | null;
   onSelect: (m: Mode) => void;
 }) {
+  const hasRealExam = Boolean(examConfig);
   return (
     <div className="mx-auto max-w-3xl">
       <div className="rounded-3xl border border-border bg-card p-6 shadow-soft md:p-10">
@@ -1120,7 +1121,7 @@ function ModeSelect({
           >
             <div className="font-display text-lg font-semibold">Practice mode</div>
             <p className="mt-1 text-sm opacity-90">
-              {isDrivingTheory
+              {hasRealExam
                 ? `Work through this mock's ${quiz.questions.length} questions with instant feedback and explanations. No timer.`
                 : "Instant feedback and explanations after every question. No timer."}
             </p>
@@ -1134,18 +1135,18 @@ function ModeSelect({
             className="group cursor-pointer rounded-2xl border-2 border-[#c81e2c] bg-gradient-to-br from-[#ff5a5f] to-[#c81e2c] p-5 text-left text-white shadow-[0_6px_14px_-6px_rgba(255,90,95,0.7)] ring-1 ring-white/20 transition-all hover:-translate-y-0.5 disabled:cursor-not-allowed disabled:opacity-60"
           >
             <div className="font-display text-lg font-semibold">
-              {isDrivingTheory ? "Exam mode — real test" : "Exam mode"}
+              {examConfig ? "Exam mode — real test" : "Exam mode"}
             </div>
             <p className="mt-1 text-sm opacity-90">
-              {isDrivingTheory
-                ? "50 unique random questions · 57 minutes · Pass 43/50. Fresh set every time."
+              {examConfig
+                ? `${examConfig.count} unique random questions · ${Math.round(examConfig.timeLimitSec / 60)} minutes · Pass ${examConfig.passScore}/${examConfig.count}. Fresh set every time.`
                 : "Timed, real-test feel. Results shown at the end with full review."}
             </p>
-            {isDrivingTheory && (
+            {examConfig && (
               <div className="mt-3 flex flex-wrap gap-1.5 text-xs">
-                <span className="rounded-full bg-white/15 px-2 py-0.5">50 Qs</span>
-                <span className="rounded-full bg-white/15 px-2 py-0.5">57 min</span>
-                <span className="rounded-full bg-white/15 px-2 py-0.5">Pass 43/50</span>
+                <span className="rounded-full bg-white/15 px-2 py-0.5">{examConfig.count} Qs</span>
+                <span className="rounded-full bg-white/15 px-2 py-0.5">{Math.round(examConfig.timeLimitSec / 60)} min</span>
+                <span className="rounded-full bg-white/15 px-2 py-0.5">Pass {examConfig.passScore}/{examConfig.count}</span>
               </div>
             )}
             <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold">
