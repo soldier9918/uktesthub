@@ -1180,6 +1180,93 @@ function MockStartIntro({ quiz }: { quiz: Quiz }) {
   );
 }
 
+function ExamIntroScreen({
+  onStart,
+  onBack,
+  loading,
+  error,
+}: {
+  onStart: () => void;
+  onBack: () => void;
+  loading: boolean;
+  error: string | null;
+}) {
+  return (
+    <div className="mx-auto max-w-3xl">
+      <div className="rounded-3xl border border-border bg-card p-6 shadow-soft md:p-10">
+        <h1 className="font-display text-2xl font-bold md:text-3xl">
+          Driving Theory Exam Mode
+        </h1>
+
+        <div className="mt-5 space-y-4 text-sm leading-relaxed text-muted-foreground md:text-base">
+          <p>
+            Get ready for a realistic UK Driving Theory Test practice exam. This exam mode is designed to feel like the real test, helping you practise under proper timed conditions before test day.
+          </p>
+          <p>
+            You will answer 50 multiple-choice questions and have 57 minutes to complete the exam. To pass, you need to score at least 43 out of 50.
+          </p>
+          <p>
+            This is a fresh exam every time, with questions randomly selected from our Driving Theory question bank, so you can keep practising and improving your score.
+          </p>
+        </div>
+
+        <div className="mt-8 rounded-2xl border border-border bg-muted/30 p-5">
+          <h2 className="font-display text-base font-semibold text-foreground">
+            Exam details
+          </h2>
+          <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
+            <li className="flex items-center gap-2">
+              <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-coral/10 text-xs font-bold text-coral">
+                50
+              </span>
+              <span>50 questions</span>
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-coral/10 text-xs font-bold text-coral">
+                57
+              </span>
+              <span>57 minutes</span>
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-coral/10 text-xs font-bold text-coral">
+                43
+              </span>
+              <span>43/50 pass mark</span>
+            </li>
+          </ul>
+        </div>
+
+        <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+          <button
+            onClick={onBack}
+            disabled={loading}
+            className="inline-flex items-center justify-center gap-2 rounded-2xl border-2 border-border bg-card px-6 py-3 text-sm font-semibold text-foreground transition-all hover:bg-accent disabled:cursor-not-allowed disabled:opacity-60"
+          >
+            <ChevronLeft className="h-4 w-4" />
+            Back
+          </button>
+          <button
+            onClick={onStart}
+            disabled={loading}
+            className="group inline-flex flex-1 items-center justify-center gap-2 rounded-2xl border-2 border-[#c81e2c] bg-gradient-to-br from-[#ff5a5f] to-[#c81e2c] px-6 py-3 text-sm font-semibold text-white shadow-[0_6px_14px_-6px_rgba(255,90,95,0.7)] ring-1 ring-white/20 transition-all hover:-translate-y-0.5 disabled:cursor-not-allowed disabled:opacity-60"
+          >
+            {loading ? "Loading exam…" : "Start Driving Theory Exam"}
+            {!loading && (
+              <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+            )}
+          </button>
+        </div>
+
+        {error && (
+          <p className="mt-4 rounded-lg bg-destructive/10 px-4 py-3 text-sm text-destructive">
+            {error}
+          </p>
+        )}
+      </div>
+    </div>
+  );
+}
+
 
 function describeQuestion(q: Question): string {
   if (isFillBlanks(q) || isDragDrop(q)) {
