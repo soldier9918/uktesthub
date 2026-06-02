@@ -113,6 +113,56 @@ function isCorrect(q: Question, a: Answer): boolean {
   return false;
 }
 
+type ExamConfig = {
+  topicSlug: string;
+  count: number;
+  timeLimitSec: number;
+  passMarkPct: number;
+  passScore: number;
+  title: string;
+  description: string;
+  heading: string;
+  intro: string[];
+  buttonLabel: string;
+};
+
+const EXAM_CONFIGS: Record<string, ExamConfig> = {
+  "driving-theory": {
+    topicSlug: "driving-theory",
+    count: 50,
+    timeLimitSec: 57 * 60,
+    passMarkPct: 86,
+    passScore: 43,
+    title: "Driving Theory Exam",
+    description:
+      "Real-test format — 50 unique questions, 57 minutes. Pass mark 43/50.",
+    heading: "Driving Theory Exam Mode",
+    intro: [
+      "Get ready for a realistic UK Driving Theory Test practice exam. This exam mode is designed to feel like the real test, helping you practise under proper timed conditions before test day.",
+      "You will answer 50 multiple-choice questions and have 57 minutes to complete the exam. To pass, you need to score at least 43 out of 50.",
+      "This is a fresh exam every time, with questions randomly selected from our Driving Theory question bank, so you can keep practising and improving your score.",
+    ],
+    buttonLabel: "Start Driving Theory Exam",
+  },
+  "life-in-the-uk": {
+    topicSlug: "life-in-the-uk",
+    count: 24,
+    timeLimitSec: 45 * 60,
+    passMarkPct: 75,
+    passScore: 18,
+    title: "Life in the UK Exam",
+    description:
+      "Real-test format — 24 unique questions, 45 minutes. Pass mark 18/24 (75%).",
+    heading: "Life in the UK Exam Mode",
+    intro: [
+      "Practise with a realistic Life in the UK Test exam format before your official test day.",
+      "You will answer 24 questions and have 45 minutes to complete the test. To pass, you need to score 75% or higher, which means getting at least 18 out of 24 questions correct.",
+      "This exam mode is designed to help you practise under timed conditions, improve your confidence, and prepare for topics from the Life in the UK handbook, including British history, government, laws, values, traditions, and everyday life in the UK.",
+    ],
+    buttonLabel: "Start Life in the UK Exam",
+  },
+};
+
 export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
   const overrides = useOverrides();
   const baseQuiz = useMemo(
@@ -149,10 +199,10 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [quiz.slug, quiz.questions.length, quiz.timeLimit]);
 
-  const isDrivingTheory = baseQuiz.topic === "driving-theory";
+  const examConfig = EXAM_CONFIGS[baseQuiz.topic];
 
   async function handleSelectMode(m: Mode) {
-    if (m === "exam" && isDrivingTheory) {
+    if (m === "exam" && examConfig) {
       setExamIntroShown(true);
       return;
     }
@@ -161,16 +211,16 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
   }
 
   async function handleStartExam() {
+    if (!examConfig) return;
     setExamLoading(true);
     setExamError(null);
     try {
-      const exam = await buildRandomExamQuiz("driving-theory", {
-        count: 50,
-        timeLimitSec: 57 * 60,
-        passMarkPct: 86,
-        title: "Driving Theory Exam",
-        description:
-          "Real-test format — 50 unique questions, 57 minutes. Pass mark 43/50.",
+      const exam = await buildRandomExamQuiz(examConfig.topicSlug, {
+        count: examConfig.count,
+        timeLimitSec: examConfig.timeLimitSec,
+        passMarkPct: examConfig.passMarkPct,
+        title: examConfig.title,
+        description: examConfig.description,
       });
       if (!exam) {
         setExamError("Couldn't load the exam questions. Please try again.");
@@ -317,9 +367,10 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
   }, [finished, score, quiz, user]);
 
 
-  if (examIntroShown) {
+  if (examIntroShown && examConfig) {
     return (
       <ExamIntroScreen
+        config={examConfig}
         onStart={handleStartExam}
         onBack={() => setExamIntroShown(false)}
         loading={examLoading}
@@ -332,7 +383,7 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
     return (
       <ModeSelect
         quiz={baseQuiz}
-        isDrivingTheory={isDrivingTheory}
+        examConfig={examConfig}
         examLoading={examLoading}
         examError={examError}
         onSelect={handleSelectMode}
@@ -1026,17 +1077,18 @@ function BlankResults({
 
 function ModeSelect({
   quiz,
-  isDrivingTheory,
+  examConfig,
   examLoading,
   examError,
   onSelect,
 }: {
   quiz: Quiz;
-  isDrivingTheory: boolean;
+  examConfig: ExamConfig | undefined;
   examLoading: boolean;
   examError: string | null;
   onSelect: (m: Mode) => void;
 }) {
+  const hasRealExam = Boolean(examConfig);
   return (
     <div className="mx-auto max-w-3xl">
       <div className="rounded-3xl border border-border bg-card p-6 shadow-soft md:p-10">
@@ -1068,7 +1120,7 @@ function ModeSelect({
           >
             <div className="font-display text-lg font-semibold">Practice mode</div>
             <p className="mt-1 text-sm opacity-90">
-              {isDrivingTheory
+              {hasRealExam
                 ? `Work through this mock's ${quiz.questions.length} questions with instant feedback and explanations. No timer.`
                 : "Instant feedback and explanations after every question. No timer."}
             </p>
@@ -1082,18 +1134,18 @@ function ModeSelect({
             className="group cursor-pointer rounded-2xl border-2 border-[#c81e2c] bg-gradient-to-br from-[#ff5a5f] to-[#c81e2c] p-5 text-left text-white shadow-[0_6px_14px_-6px_rgba(255,90,95,0.7)] ring-1 ring-white/20 transition-all hover:-translate-y-0.5 disabled:cursor-not-allowed disabled:opacity-60"
           >
             <div className="font-display text-lg font-semibold">
-              {isDrivingTheory ? "Exam mode — real test" : "Exam mode"}
+              {examConfig ? "Exam mode — real test" : "Exam mode"}
             </div>
             <p className="mt-1 text-sm opacity-90">
-              {isDrivingTheory
-                ? "50 unique random questions · 57 minutes · Pass 43/50. Fresh set every time."
+              {examConfig
+                ? `${examConfig.count} unique random questions · ${Math.round(examConfig.timeLimitSec / 60)} minutes · Pass ${examConfig.passScore}/${examConfig.count}. Fresh set every time.`
                 : "Timed, real-test feel. Results shown at the end with full review."}
             </p>
-            {isDrivingTheory && (
+            {examConfig && (
               <div className="mt-3 flex flex-wrap gap-1.5 text-xs">
-                <span className="rounded-full bg-white/15 px-2 py-0.5">50 Qs</span>
-                <span className="rounded-full bg-white/15 px-2 py-0.5">57 min</span>
-                <span className="rounded-full bg-white/15 px-2 py-0.5">Pass 43/50</span>
+                <span className="rounded-full bg-white/15 px-2 py-0.5">{examConfig.count} Qs</span>
+                <span className="rounded-full bg-white/15 px-2 py-0.5">{Math.round(examConfig.timeLimitSec / 60)} min</span>
+                <span className="rounded-full bg-white/15 px-2 py-0.5">Pass {examConfig.passScore}/{examConfig.count}</span>
               </div>
             )}
             <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold">
@@ -1181,57 +1233,54 @@ function MockStartIntro({ quiz }: { quiz: Quiz }) {
 }
 
 function ExamIntroScreen({
+  config,
   onStart,
   onBack,
   loading,
   error,
 }: {
+  config: ExamConfig;
   onStart: () => void;
   onBack: () => void;
   loading: boolean;
   error: string | null;
 }) {
+  const minutes = Math.round(config.timeLimitSec / 60);
   return (
     <div className="mx-auto max-w-3xl">
       <div className="rounded-3xl border border-border bg-card p-6 shadow-soft md:p-10">
         <h1 className="font-display text-2xl font-bold md:text-3xl">
-          Driving Theory Exam Mode
+          {config.heading}
         </h1>
 
         <div className="mt-5 space-y-4 text-sm leading-relaxed text-muted-foreground md:text-base">
-          <p>
-            Get ready for a realistic UK Driving Theory Test practice exam. This exam mode is designed to feel like the real test, helping you practise under proper timed conditions before test day.
-          </p>
-          <p>
-            You will answer 50 multiple-choice questions and have 57 minutes to complete the exam. To pass, you need to score at least 43 out of 50.
-          </p>
-          <p>
-            This is a fresh exam every time, with questions randomly selected from our Driving Theory question bank, so you can keep practising and improving your score.
-          </p>
+          {config.intro.map((p, i) => (
+            <p key={i}>{p}</p>
+          ))}
         </div>
 
         <div className="mt-8 rounded-2xl border border-border bg-muted/30 p-5">
           <h2 className="font-display text-base font-semibold text-foreground">
-            Exam details
+            Exam Mode includes
           </h2>
           <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
             <li className="flex items-center gap-2">
               <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-coral/10 text-xs font-bold text-coral">
-                50
+                {config.count}
               </span>
-              <span>50 questions</span>
+              <span>{config.count} questions</span>
             </li>
             <li className="flex items-center gap-2">
               <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-coral/10 text-xs font-bold text-coral">
-                57
+                {minutes}
               </span>
-              <span>57 minutes</span>
+              <span>{minutes} minutes</span>
             </li>
             <li className="flex items-center gap-2">
               <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-coral/10 text-xs font-bold text-coral">
-                43
+                {config.passScore}
               </span>
-              <span>43/50 pass mark</span>
+              <span>{config.passScore}/{config.count} pass mark</span>
             </li>
           </ul>
         </div>
@@ -1250,7 +1299,7 @@ function ExamIntroScreen({
             disabled={loading}
             className="group inline-flex flex-1 items-center justify-center gap-2 rounded-2xl border-2 border-[#c81e2c] bg-gradient-to-br from-[#ff5a5f] to-[#c81e2c] px-6 py-3 text-sm font-semibold text-white shadow-[0_6px_14px_-6px_rgba(255,90,95,0.7)] ring-1 ring-white/20 transition-all hover:-translate-y-0.5 disabled:cursor-not-allowed disabled:opacity-60"
           >
-            {loading ? "Loading exam…" : "Start Driving Theory Exam"}
+            {loading ? "Loading exam…" : config.buttonLabel}
             {!loading && (
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             )}
