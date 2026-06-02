@@ -28,7 +28,7 @@ import type {
   DragDropBlanksQuestion,
 } from "@/data/quizzes";
 import { getCategory, getTopicDisplayTitle } from "@/data/categories";
-import { TOTAL_MOCKS_PER_TOPIC } from "@/data/mocks";
+import { TOTAL_MOCKS_PER_TOPIC, buildRandomExamQuiz } from "@/data/mocks";
 import { getMockIntro } from "@/data/mock-intros";
 import { AdSlot } from "./AdSlot";
 import { RoadSign } from "./RoadSign";
