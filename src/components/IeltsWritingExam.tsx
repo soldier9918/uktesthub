@@ -13,9 +13,16 @@ import {
   type WritingVariant,
 } from "@/data/english/ielts-writing-prompts";
 import {
+  Collapsible,
+  CollapsibleContent,
+  CollapsibleTrigger,
+} from "@/components/ui/collapsible";
+import { CheckCircle2, AlertTriangle, ListChecks, BookOpen, ChevronDown } from "lucide-react";
+import {
   markIeltsWriting,
   type IeltsMarkingResult,
-  type IeltsCriterionScores,
+  type IeltsTaskFeedback,
+  type IeltsCriterion,
 } from "@/lib/ielts-writing.functions";
 
 type Props = {
