@@ -3811,7 +3811,7 @@ export const blogPosts: BlogPost[] = [
     hero: h_LifeInTheUkMockTest2026Edition,
     body: () => (
       <>
-        <p>Mock tests are the single best predictor of your real Life in the UK Test result. Here's a 12-question 2026-edition mock to warm up. Time yourself — aim for under 4 minutes — then jump straight to the full 24-question mock.</p>
+        <p>Realistic, official-style mock tests are a useful way to track your readiness for the Life in the UK Test. Here's a 12-question 2026-edition mock to warm up. Time yourself — aim for under 4 minutes — then jump straight to the full 24-question mock.</p>
 
         <h2>Practice Questions &amp; Answers</h2>
         <ol>

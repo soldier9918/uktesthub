@@ -90,7 +90,7 @@ export const categorySeo: Record<string, CategorySeo> = {
       "Free Life in the UK Test practice for 2026. Official handbook coverage, British history, traditions and government with realistic 24-question mocks.",
     intro: [
       "The Life in the UK Test is a 45-minute, 24-question exam that you must pass to apply for British citizenship or Indefinite Leave to Remain. The questions are drawn from the official Home Office handbook, Life in the United Kingdom: A Guide for New Residents, and you need to score at least 75% — that's 18 out of 24 — to pass. It sounds gentle on paper, but the dates, names and constitutional details trip up thousands of candidates every year.",
-      "Our free Life in the UK practice tests follow the official format exactly, with the same four question styles, the same 45-minute clock and the same difficulty distribution as the real exam. Use them alongside the handbook to memorise dates, monarchs, traditions and the structure of UK government with real confidence rather than vague familiarity.",
+      "Our free Life in the UK practice tests are designed to reflect the format of the real exam, with four question styles, a 45-minute clock and a similar difficulty spread. Use them alongside the handbook to memorise dates, monarchs, traditions and the structure of UK government with real confidence rather than vague familiarity.",
     ],
     sections: [
       {
@@ -1147,7 +1147,7 @@ export const categorySeo: Record<string, CategorySeo> = {
       "Free practice for the Army BARB, Police PIRT (Initial Recruitment), Police SEARCH Assessment and Firefighter NFSAT. Realistic UK uniformed-service questions with explanations.",
     intro: [
       "The UK uniformed services run some of the toughest entry assessments in any sector. The British Army's BARB test, the Police PIRT and SEARCH assessments, and the Firefighter NFSAT all use bespoke formats designed to flush out candidates who can't handle pressure, poor pacing or unfamiliar question types. A good score doesn't just get you in — it widens the trade or rank options open to you.",
-      "Our free military and emergency-services mocks mirror each official format. UK English, current syllabuses, and content reviewed against the latest recruitment guidance from the Army's AFCO, College of Policing and National Fire Chiefs Council.",
+      "Our free military and emergency-services mocks are designed to reflect the format of each official test. UK English, current syllabuses, and content reviewed against the latest recruitment guidance from the Army's AFCO, College of Policing and National Fire Chiefs Council.",
     ],
     sections: [
       {

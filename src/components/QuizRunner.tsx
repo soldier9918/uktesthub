@@ -142,7 +142,7 @@ const EXAM_CONFIGS: Record<string, ExamConfig> = {
     passScore: 43,
     title: "Driving Theory Exam",
     description:
-      "Real-test format — 50 unique questions, 57 minutes. Pass mark 43/50.",
+      "Official-style practice — 50 unique questions, 57 minutes. Pass mark 43/50.",
     heading: "Driving Theory Exam Mode",
     intro: [
       "Get ready for a realistic UK Driving Theory Test practice exam. This exam mode is designed to feel like the real test, helping you practise under proper timed conditions before test day.",
@@ -159,7 +159,7 @@ const EXAM_CONFIGS: Record<string, ExamConfig> = {
     passScore: 18,
     title: "Life in the UK Exam",
     description:
-      "Real-test format — 24 unique questions, 45 minutes. Pass mark 18/24 (75%).",
+      "Official-style practice — 24 unique questions, 45 minutes. Pass mark 18/24 (75%).",
     heading: "Life in the UK Exam Mode",
     intro: [
       "Practise with a realistic Life in the UK Test exam format before your official test day.",
@@ -1324,12 +1324,12 @@ function ModeSelect({
             className="group cursor-pointer rounded-2xl border-2 border-[#c81e2c] bg-gradient-to-br from-[#ff5a5f] to-[#c81e2c] p-5 text-left text-white shadow-[0_6px_14px_-6px_rgba(255,90,95,0.7)] ring-1 ring-white/20 transition-all hover:-translate-y-0.5 disabled:cursor-not-allowed disabled:opacity-60"
           >
             <div className="font-display text-lg font-semibold">
-              {examConfig ? "Exam mode — real test" : "Exam mode"}
+              {examConfig ? "Exam mode — official-style practice" : "Exam mode"}
             </div>
             <p className="mt-1 text-sm opacity-90">
               {examConfig
                 ? `${examConfig.count} unique random questions · ${Math.round(examConfig.timeLimitSec / 60)} minutes · Pass ${examConfig.passLabel ?? `${examConfig.passScore}/${examConfig.count}`}. Fresh set every time.`
-                : "Timed, real-test feel. Results shown at the end with full review."}
+                : "Timed practice that helps simulate test-day conditions. Results shown at the end with full review."}
             </p>
             {examConfig && (
               <div className="mt-3 flex flex-wrap gap-1.5 text-xs">
