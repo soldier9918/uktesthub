@@ -72,6 +72,7 @@ import { Route as AdminKb20SecurityRouteImport } from './routes/admin-kb20.secur
 import { Route as AdminKb20SearchRouteImport } from './routes/admin-kb20.search'
 import { Route as AdminKb20ReportsRouteImport } from './routes/admin-kb20.reports'
 import { Route as AdminKb20MocksRouteImport } from './routes/admin-kb20.mocks'
+import { Route as AdminKb20MockIntrosImportRouteImport } from './routes/admin-kb20.mock-intros-import'
 import { Route as AdminKb20LoginRouteImport } from './routes/admin-kb20.login'
 import { Route as AdminKb20ImportExportRouteImport } from './routes/admin-kb20.import-export'
 import { Route as AdminKb20ImagesRouteImport } from './routes/admin-kb20.images'
@@ -421,6 +422,12 @@ const AdminKb20MocksRoute = AdminKb20MocksRouteImport.update({
   path: '/admin-kb20/mocks',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AdminKb20MockIntrosImportRoute =
+  AdminKb20MockIntrosImportRouteImport.update({
+    id: '/admin-kb20/mock-intros-import',
+    path: '/admin-kb20/mock-intros-import',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const AdminKb20LoginRoute = AdminKb20LoginRouteImport.update({
   id: '/admin-kb20/login',
   path: '/admin-kb20/login',
@@ -603,6 +610,7 @@ export interface FileRoutesByFullPath {
   '/admin-kb20/images': typeof AdminKb20ImagesRoute
   '/admin-kb20/import-export': typeof AdminKb20ImportExportRoute
   '/admin-kb20/login': typeof AdminKb20LoginRoute
+  '/admin-kb20/mock-intros-import': typeof AdminKb20MockIntrosImportRoute
   '/admin-kb20/mocks': typeof AdminKb20MocksRoute
   '/admin-kb20/reports': typeof AdminKb20ReportsRoute
   '/admin-kb20/search': typeof AdminKb20SearchRoute
@@ -690,6 +698,7 @@ export interface FileRoutesByTo {
   '/admin-kb20/images': typeof AdminKb20ImagesRoute
   '/admin-kb20/import-export': typeof AdminKb20ImportExportRoute
   '/admin-kb20/login': typeof AdminKb20LoginRoute
+  '/admin-kb20/mock-intros-import': typeof AdminKb20MockIntrosImportRoute
   '/admin-kb20/mocks': typeof AdminKb20MocksRoute
   '/admin-kb20/reports': typeof AdminKb20ReportsRoute
   '/admin-kb20/search': typeof AdminKb20SearchRoute
@@ -777,6 +786,7 @@ export interface FileRoutesById {
   '/admin-kb20/images': typeof AdminKb20ImagesRoute
   '/admin-kb20/import-export': typeof AdminKb20ImportExportRoute
   '/admin-kb20/login': typeof AdminKb20LoginRoute
+  '/admin-kb20/mock-intros-import': typeof AdminKb20MockIntrosImportRoute
   '/admin-kb20/mocks': typeof AdminKb20MocksRoute
   '/admin-kb20/reports': typeof AdminKb20ReportsRoute
   '/admin-kb20/search': typeof AdminKb20SearchRoute
@@ -868,6 +878,7 @@ export interface FileRouteTypes {
     | '/admin-kb20/images'
     | '/admin-kb20/import-export'
     | '/admin-kb20/login'
+    | '/admin-kb20/mock-intros-import'
     | '/admin-kb20/mocks'
     | '/admin-kb20/reports'
     | '/admin-kb20/search'
@@ -955,6 +966,7 @@ export interface FileRouteTypes {
     | '/admin-kb20/images'
     | '/admin-kb20/import-export'
     | '/admin-kb20/login'
+    | '/admin-kb20/mock-intros-import'
     | '/admin-kb20/mocks'
     | '/admin-kb20/reports'
     | '/admin-kb20/search'
@@ -1041,6 +1053,7 @@ export interface FileRouteTypes {
     | '/admin-kb20/images'
     | '/admin-kb20/import-export'
     | '/admin-kb20/login'
+    | '/admin-kb20/mock-intros-import'
     | '/admin-kb20/mocks'
     | '/admin-kb20/reports'
     | '/admin-kb20/search'
@@ -1131,6 +1144,7 @@ export interface RootRouteChildren {
   AdminKb20ImagesRoute: typeof AdminKb20ImagesRoute
   AdminKb20ImportExportRoute: typeof AdminKb20ImportExportRoute
   AdminKb20LoginRoute: typeof AdminKb20LoginRoute
+  AdminKb20MockIntrosImportRoute: typeof AdminKb20MockIntrosImportRoute
   AdminKb20MocksRoute: typeof AdminKb20MocksRoute
   AdminKb20ReportsRoute: typeof AdminKb20ReportsRoute
   AdminKb20SearchRoute: typeof AdminKb20SearchRoute
@@ -1596,6 +1610,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AdminKb20MocksRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/admin-kb20/mock-intros-import': {
+      id: '/admin-kb20/mock-intros-import'
+      path: '/admin-kb20/mock-intros-import'
+      fullPath: '/admin-kb20/mock-intros-import'
+      preLoaderRoute: typeof AdminKb20MockIntrosImportRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/admin-kb20/login': {
       id: '/admin-kb20/login'
       path: '/admin-kb20/login'
@@ -1911,6 +1932,7 @@ const rootRouteChildren: RootRouteChildren = {
   AdminKb20ImagesRoute: AdminKb20ImagesRoute,
   AdminKb20ImportExportRoute: AdminKb20ImportExportRoute,
   AdminKb20LoginRoute: AdminKb20LoginRoute,
+  AdminKb20MockIntrosImportRoute: AdminKb20MockIntrosImportRoute,
   AdminKb20MocksRoute: AdminKb20MocksRoute,
   AdminKb20ReportsRoute: AdminKb20ReportsRoute,
   AdminKb20SearchRoute: AdminKb20SearchRoute,
