@@ -345,7 +345,7 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [quiz.slug, quiz.questions.length, quiz.timeLimit]);
 
-  const examConfig = EXAM_CONFIGS[baseQuiz.topic];
+  const examConfig = getExamConfig(baseQuiz.topic);
 
   async function handleSelectMode(m: Mode) {
     if (m === "exam" && examConfig) {
@@ -361,13 +361,22 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
     setExamLoading(true);
     setExamError(null);
     try {
-      const exam = await buildRandomExamQuiz(examConfig.topicSlug, {
+      const opts = {
         count: examConfig.count,
         timeLimitSec: examConfig.timeLimitSec,
         passMarkPct: examConfig.passMarkPct,
         title: examConfig.title,
         description: examConfig.description,
-      });
+      };
+      const exam =
+        examConfig.kind === "english" && examConfig.english
+          ? await buildRandomEnglishExamQuiz(
+              examConfig.english.test,
+              examConfig.english.skill,
+              examConfig.english.level,
+              opts,
+            )
+          : await buildRandomExamQuiz(examConfig.topicSlug, opts);
       if (!exam) {
         setExamError("Couldn't load the exam questions. Please try again.");
         setExamLoading(false);
