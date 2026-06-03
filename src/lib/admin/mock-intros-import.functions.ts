@@ -6,12 +6,16 @@
  * auto-detected by the presence of a `topic_slug` column:
  *
  *   1. Single topic (topic chosen via UI dropdown):
- *      mock,difficulty,covers,common_mistakes
+ *      mock,difficulty,covers,common_mistakes[,topics_included,who_this_mock_is_for,
+ *      faq_question_1,faq_answer_1,faq_question_2,faq_answer_2,faq_question_3,faq_answer_3]
  *
  *   2. All topics in one CSV (topic dropdown ignored):
- *      topic_slug,mock,difficulty,covers,common_mistakes
+ *      topic_slug,mock,difficulty,covers,common_mistakes[,...same optional cols]
  *
- * `common_mistakes` is a pipe (`|`) separated list of bullet items.
+ * `common_mistakes` and `topics_included` are pipe (`|`) separated lists.
+ *
+ * Missing optional fields fall back to safe, mock-number-aware defaults
+ * generated server-side so two mocks never share an identical fallback.
  */
 
 import { createServerFn } from "@tanstack/react-start";
@@ -24,6 +28,7 @@ import {
   PER_MOCK_INTROS,
   RELATED_GUIDE_BY_TOPIC,
   type PerMockIntro,
+  type PerMockFaq,
   type Difficulty,
   type RelatedGuide,
 } from "@/data/per-mock-intros";
