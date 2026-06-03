@@ -327,7 +327,7 @@ export function IeltsWritingExam({ level, onExit }: Props) {
                 if (
                   typeof window !== "undefined" &&
                   !window.confirm(
-                    "Finish and submit both tasks for AI marking? You won't be able to edit after this.",
+                    "Finish and submit both tasks for marking and feedback? You won't be able to edit after this.",
                   )
                 )
                   return;
