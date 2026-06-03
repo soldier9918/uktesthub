@@ -599,6 +599,7 @@ export const previewMockIntrosImport = createServerFn({ method: "POST" })
           filePath: FILE_PATH,
           mode: "patch" as "patch" | "replace",
           affectedTopics: [] as string[],
+          duplicateWarnings: [] as DuplicateWarning[],
         };
       }
 
@@ -610,6 +611,7 @@ export const previewMockIntrosImport = createServerFn({ method: "POST" })
       const affectedTopics = new Set(parsed.rows.map((r) => r.topicSlug));
       const next = applyRows(current, parsed.rows, mode, affectedTopics);
       const diff = diffIntros(current, next, parsed.rows);
+      const duplicateWarnings = detectDuplicateContent(next, affectedTopics);
 
       return {
         error: null as string | null,
@@ -621,6 +623,7 @@ export const previewMockIntrosImport = createServerFn({ method: "POST" })
         filePath: FILE_PATH,
         mode,
         affectedTopics: Array.from(affectedTopics).sort(),
+        duplicateWarnings,
       };
     } catch (err) {
       console.error("previewMockIntrosImport failed:", err);
@@ -634,6 +637,7 @@ export const previewMockIntrosImport = createServerFn({ method: "POST" })
         filePath: FILE_PATH,
         mode: "patch" as "patch" | "replace",
         affectedTopics: [] as string[],
+        duplicateWarnings: [] as DuplicateWarning[],
       };
     }
   });
