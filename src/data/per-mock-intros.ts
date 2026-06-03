@@ -1214,6 +1214,1350 @@ export const PER_MOCK_INTROS: Record<string, Record<number, PerMockIntro>> = {
         },
       ],
     },
+    4: {
+      difficulty: "Beginner",
+      covers: "Hazard Perception Mock Test 4 focuses on spotting risks around parked vehicles, pedestrians near the kerb and situations where the road ahead may change quickly. It helps learners practise scanning pavements, side roads and vehicle gaps so they can identify developing hazards before they become obvious.",
+      commonMistakes: [
+        "Only watching the centre of the road",
+        "Missing pedestrians hidden by parked cars",
+        "Reacting after the hazard is already obvious",
+        "Ignoring side roads and driveways",
+      ],
+      topicsIncluded: [
+        "Parked vehicle hazards",
+        "Pedestrians near the kerb",
+        "Side road awareness",
+        "Early road scanning",
+        "Reacting to changing traffic gaps",
+      ],
+      whoFor: "This mock is useful for learners who want more beginner practice with everyday urban hazards, especially around parked cars, side roads and pedestrians.",
+      faqs: [
+        {
+          q: "What does Mock Test 4 focus on?",
+          a: "Mock Test 4 is centred on parked-car hazards and pedestrians near the kerb. It helps you practise looking into gaps between vehicles, side roads and pavements where a risk may start to develop.",
+        },
+        {
+          q: "Who should try Mock Test 4?",
+          a: "Learners who need more confidence with urban observation should use this mock, especially if they often miss hazards near parked vehicles or side streets.",
+        },
+        {
+          q: "What should I review after Mock Test 4?",
+          a: "Review whether you noticed pedestrians and vehicle movement around parked cars early enough. Pay attention to side roads, doorways and gaps between vehicles where hazards can appear suddenly.",
+        },
+      ],
+    },
+    5: {
+      difficulty: "Beginner",
+      covers: "Hazard Perception Mock Test 5 helps learners practise identifying hazards involving cyclists, motorcyclists, pedestrians and other vulnerable road users. It focuses on situations where another road user may change direction, slow down or move into your path, encouraging safer observation and earlier reactions.",
+      commonMistakes: [
+        "Not giving cyclists enough attention",
+        "Missing motorbikes filtering through traffic",
+        "Clicking before the risk develops",
+        "Forgetting that vulnerable road users may move suddenly",
+      ],
+      topicsIncluded: [
+        "Cyclists and motorcyclists",
+        "Vulnerable road users",
+        "Changing road positions",
+        "Safe following distance",
+        "Anticipating movement",
+      ],
+      whoFor: "This mock is best for learners who want to improve awareness of cyclists, motorbikes and pedestrians in common road situations.",
+      faqs: [
+        {
+          q: "What road users appear in Mock Test 5?",
+          a: "Mock Test 5 concentrates on cyclists, motorcyclists and pedestrians. The key skill is spotting when a vulnerable road user may change position, slow down or move into the driver’s path.",
+        },
+        {
+          q: "Who should use Mock Test 5?",
+          a: "This mock is useful if you want to improve your awareness of smaller or more exposed road users who may be harder to see in traffic.",
+        },
+        {
+          q: "How can I improve after Mock Test 5?",
+          a: "Focus on road users who are smaller or harder to see, such as cyclists and motorcyclists. Rewatch similar practice clips and look for signs that they may change lane, slow down or move into your path.",
+        },
+      ],
+    },
+    6: {
+      difficulty: "Beginner",
+      covers: "Hazard Perception Mock Test 6 focuses on junction awareness, turning vehicles, side-road movement and situations where another driver may enter your path. It helps learners build confidence with scanning left and right, noticing road positioning and responding to hazards near junctions.",
+      commonMistakes: [
+        "Looking only straight ahead at junctions",
+        "Missing vehicles emerging from side roads",
+        "Reacting too late to turning traffic",
+        "Not checking both sides of the road scene",
+      ],
+      topicsIncluded: [
+        "Junction approaches",
+        "Turning vehicles",
+        "Side-road hazards",
+        "Observation at give-way points",
+        "Traffic entering your path",
+      ],
+      whoFor: "This mock is suitable for learners building confidence with junction-based hazard perception and side-road observation.",
+      faqs: [
+        {
+          q: "What makes Mock Test 6 different?",
+          a: "Mock Test 6 focuses on junctions and side-road movement. It trains you to check left, right and ahead for vehicles that may turn, emerge or cross your path.",
+        },
+        {
+          q: "Who is Mock Test 6 suitable for?",
+          a: "Use this mock if junctions feel difficult or if you tend to notice emerging vehicles only once they are already close.",
+        },
+        {
+          q: "What should I look for in Mock Test 6?",
+          a: "Look for movement at junctions and side roads before it becomes obvious. Check vehicle position, indicators and gaps where another driver may emerge or turn across your path.",
+        },
+      ],
+    },
+    7: {
+      difficulty: "Beginner",
+      covers: "Hazard Perception Mock Test 7 gives practice with recognising slowing traffic, brake lights, queues and situations where the driver ahead may change speed. It helps learners understand how traffic flow can create a developing hazard and why early observation is important.",
+      commonMistakes: [
+        "Missing early brake-light clues",
+        "Following the vehicle ahead too closely",
+        "Waiting until the queue is obvious",
+        "Not linking traffic speed changes to risk",
+      ],
+      topicsIncluded: [
+        "Slowing traffic ahead",
+        "Brake light clues",
+        "Queue development",
+        "Following distance",
+        "Speed adjustment",
+      ],
+      whoFor: "This mock is for learners who want to practise noticing traffic-flow changes and adjusting early when vehicles ahead slow down.",
+      faqs: [
+        {
+          q: "What does Mock Test 7 teach?",
+          a: "Mock Test 7 is about reading traffic flow. Brake lights, shrinking gaps and forming queues are early clues that traffic ahead may become a developing hazard.",
+        },
+        {
+          q: "Who benefits from Mock Test 7?",
+          a: "This mock helps learners who need to improve following-distance awareness and earlier reactions to slowing traffic.",
+        },
+        {
+          q: "How should I review Mock Test 7?",
+          a: "Check whether you spotted brake lights, slowing traffic and queue formation early. These clues often appear before the main hazard is fully developed, so timing matters.",
+        },
+      ],
+    },
+    8: {
+      difficulty: "Beginner",
+      covers: "Hazard Perception Mock Test 8 focuses on pedestrian crossing areas, people near the road, school-style hazards and situations where someone may step into the road. It encourages learners to scan pavements and crossing points instead of watching only vehicles.",
+      commonMistakes: [
+        "Ignoring pedestrians waiting near crossings",
+        "Missing children or groups near the road",
+        "Reacting after someone steps out",
+        "Watching vehicles but not pavements",
+      ],
+      topicsIncluded: [
+        "Pedestrian crossing awareness",
+        "People near the road",
+        "School-area style hazards",
+        "Pavement scanning",
+        "Early slowing decisions",
+      ],
+      whoFor: "This mock is useful for learners who want more practice with pedestrian hazards and crossing-area observation.",
+      faqs: [
+        {
+          q: "What is the main focus of Mock Test 8?",
+          a: "Mock Test 8 focuses on pedestrian crossings and people close to the road. It helps you practise scanning pavements, crossing points and school-style areas for early warning signs.",
+        },
+        {
+          q: "Who should practise Mock Test 8?",
+          a: "Try this mock if you often watch traffic but forget to check pavements, crossings and groups of pedestrians near the kerb.",
+        },
+        {
+          q: "What should I improve after Mock Test 8?",
+          a: "Review how quickly you noticed people near crossings, pavements and school-style areas. Try to spot early clues such as waiting pedestrians, groups near the kerb or people looking ready to cross.",
+        },
+      ],
+    },
+    9: {
+      difficulty: "Beginner",
+      covers: "Hazard Perception Mock Test 9 introduces hazards linked to bends, limited visibility, changing road layouts and areas where you may not see a risk immediately. It helps learners practise reading the road ahead and preparing for hazards before they are fully visible.",
+      commonMistakes: [
+        "Driving mentally too fast into bends",
+        "Missing visibility clues",
+        "Waiting until the hazard appears fully",
+        "Not using road layout to predict risk",
+      ],
+      topicsIncluded: [
+        "Limited visibility",
+        "Bends and road layout",
+        "Hidden hazards",
+        "Speed control on approach",
+        "Reading the road ahead",
+      ],
+      whoFor: "This mock is for learners who want beginner practice with visibility, bends and road layout clues in hazard perception scenarios.",
+      faqs: [
+        {
+          q: "What does Mock Test 9 cover?",
+          a: "Mock Test 9 is based around bends, limited views and changing road layouts. The aim is to spot clues that a hazard may appear before it is directly visible.",
+        },
+        {
+          q: "Who is Mock Test 9 for?",
+          a: "This mock suits learners who want to improve anticipation on roads where bends, parked vehicles or road shape can hide hazards.",
+        },
+        {
+          q: "How should I approach Mock Test 9?",
+          a: "Use bends, parked vehicles, hedges, road width and visibility changes as warning signs. The aim is to predict what could appear before the hazard is fully visible.",
+        },
+      ],
+    },
+    10: {
+      difficulty: "Beginner",
+      covers: "Hazard Perception Mock Test 10 brings together beginner hazard perception skills, including pedestrians, parked vehicles, junctions, slowing traffic and vulnerable road users. It is a useful checkpoint before moving into more mixed and intermediate hazard practice.",
+      commonMistakes: [
+        "Clicking randomly instead of identifying the hazard",
+        "Missing hazards away from the centre of the screen",
+        "Reacting too late to common road risks",
+        "Not reviewing missed hazards afterwards",
+      ],
+      topicsIncluded: [
+        "Mixed beginner hazards",
+        "Pedestrian movement",
+        "Parked cars and side roads",
+        "Traffic speed changes",
+        "Basic response timing",
+      ],
+      whoFor: "This mock is a good checkpoint for learners who have completed the early hazard perception mocks and want to test basic observation skills.",
+      faqs: [
+        {
+          q: "Why use Mock Test 10 as a checkpoint?",
+          a: "Mock Test 10 brings together several beginner hazard types, including parked cars, pedestrians, junctions and slowing traffic. It helps you check whether your early observation skills are becoming consistent.",
+        },
+        {
+          q: "Who should take Mock Test 10?",
+          a: "This mock is best for learners who have tried the first few hazard perception mocks and want a simple progress check before harder practice.",
+        },
+        {
+          q: "What should I check after Mock Test 10?",
+          a: "Look for patterns in the hazards you missed. If most missed hazards involve pedestrians, parked cars or junctions, repeat the earlier beginner mocks before moving on.",
+        },
+      ],
+    },
+    11: {
+      difficulty: "Intermediate",
+      covers: "Hazard Perception Mock Test 11 moves into more mixed urban situations where several possible risks may appear at once. It focuses on pedestrians, traffic movement, parked vehicles and junction clues, helping learners decide which situation is becoming the developing hazard.",
+      commonMistakes: [
+        "Clicking on every possible risk",
+        "Missing the hazard that is actually developing",
+        "Ignoring parked vehicles near junctions",
+        "Not scanning between road and pavement",
+      ],
+      topicsIncluded: [
+        "Urban hazard scanning",
+        "Multiple possible risks",
+        "Pedestrians and traffic movement",
+        "Parked cars near junctions",
+        "Selecting the developing hazard",
+      ],
+      whoFor: "This mock is suitable for learners who know the basics and want to practise choosing the main developing hazard in busier road scenes.",
+      faqs: [
+        {
+          q: "What does Mock Test 11 add?",
+          a: "Mock Test 11 introduces busier urban scenes where more than one thing may look risky. It helps you decide which risk is actually developing and needs a response.",
+        },
+        {
+          q: "Who should try Mock Test 11?",
+          a: "This mock is for learners who understand the basics but need practice staying calm when several hazards compete for attention.",
+        },
+        {
+          q: "How can I score better on Mock Test 11?",
+          a: "Avoid clicking every minor risk. Focus on the moment when a possible risk starts to affect your speed, position or safety, as that is usually when it becomes a developing hazard.",
+        },
+      ],
+    },
+    12: {
+      difficulty: "Intermediate",
+      covers: "Hazard Perception Mock Test 12 focuses on road position, oncoming traffic, overtaking risks and situations where a vehicle may move into your path. It helps learners practise judging space, speed and the behaviour of other road users.",
+      commonMistakes: [
+        "Not noticing vehicles preparing to overtake",
+        "Misjudging oncoming traffic",
+        "Focusing only on your lane",
+        "Reacting after another vehicle has already moved",
+      ],
+      topicsIncluded: [
+        "Overtaking risk",
+        "Oncoming traffic",
+        "Road position clues",
+        "Space and speed judgement",
+        "Vehicle movement ahead",
+      ],
+      whoFor: "This mock is for learners who want intermediate practice with road position and hazards caused by changing vehicle movement.",
+      faqs: [
+        {
+          q: "What is tested in Mock Test 12?",
+          a: "Mock Test 12 focuses on overtaking risks, oncoming traffic and road position. It helps you notice when another vehicle may move out, reduce space or create conflict ahead.",
+        },
+        {
+          q: "Who is Mock Test 12 best for?",
+          a: "Learners who want to improve judgement around overtaking, passing distance and road position should practise this mock.",
+        },
+        {
+          q: "What should I watch in Mock Test 12?",
+          a: "Watch vehicle positioning, road width and oncoming traffic. A hazard may start when another vehicle begins to move out, overtake or reduce the safe space around you.",
+        },
+      ],
+    },
+    13: {
+      difficulty: "Intermediate",
+      covers: "Hazard Perception Mock Test 13 gives practice with cyclists, narrow roads, parked vehicles and junction areas where space can change quickly. It encourages learners to anticipate how vulnerable road users and vehicles may interact in tighter road layouts.",
+      commonMistakes: [
+        "Missing cyclists beside parked cars",
+        "Not allowing enough room in narrow streets",
+        "Clicking too late when space reduces",
+        "Ignoring junction clues around vulnerable users",
+      ],
+      topicsIncluded: [
+        "Cyclists near junctions",
+        "Narrow road hazards",
+        "Parked vehicle gaps",
+        "Shared road space",
+        "Anticipating vulnerable users",
+      ],
+      whoFor: "This mock is helpful for learners practising hazards involving cyclists, parked cars and limited road space.",
+      faqs: [
+        {
+          q: "What does Mock Test 13 focus on?",
+          a: "Mock Test 13 looks at cyclists and narrow-road situations where space can change quickly. It is useful for practising awareness when parked cars, junctions and vulnerable users appear together.",
+        },
+        {
+          q: "Who should use Mock Test 13?",
+          a: "Use this mock if you find it hard to spot cyclists beside parked vehicles or judge reduced road space in narrow streets.",
+        },
+        {
+          q: "What should I review after Mock Test 13?",
+          a: "Review how well you spotted cyclists near parked cars, junctions and narrow roads. Pay attention to limited space, changing road position and vulnerable users who may need extra room.",
+        },
+      ],
+    },
+    14: {
+      difficulty: "Intermediate",
+      covers: "Hazard Perception Mock Test 14 focuses on hazards affected by weather, road surface, spray, glare or reduced visibility. It helps learners think about how conditions can turn an ordinary road scene into a developing hazard requiring earlier slowing or extra care.",
+      commonMistakes: [
+        "Treating poor conditions like normal driving",
+        "Missing visibility clues",
+        "Not allowing extra stopping distance",
+        "Reacting only when the hazard becomes close",
+      ],
+      topicsIncluded: [
+        "Weather-related hazards",
+        "Reduced visibility",
+        "Road surface clues",
+        "Spray or glare awareness",
+        "Early speed reduction",
+      ],
+      whoFor: "This mock is suitable for learners who want to improve hazard awareness in poorer road or visibility conditions.",
+      faqs: [
+        {
+          q: "What makes Mock Test 14 useful?",
+          a: "Mock Test 14 focuses on weather, visibility and road-surface clues. It helps you recognise when a normal situation becomes more hazardous because conditions reduce time or space.",
+        },
+        {
+          q: "Who is Mock Test 14 aimed at?",
+          a: "This mock is useful for learners who need more practice adjusting their hazard timing in poor visibility, wet roads or difficult light.",
+        },
+        {
+          q: "How do I improve after Mock Test 14?",
+          a: "Focus on how road conditions change the timing of your response. In poor visibility, wet conditions or glare, hazards need to be spotted and acted on earlier.",
+        },
+      ],
+    },
+    15: {
+      difficulty: "Intermediate",
+      covers: "Hazard Perception Mock Test 15 focuses on roundabout approaches, lane changes, vehicles entering the road and traffic moving across your path. It helps learners practise reading vehicle position and anticipating when another driver may create a developing hazard.",
+      commonMistakes: [
+        "Watching only the vehicle directly ahead",
+        "Missing vehicles changing lane",
+        "Reacting late at roundabout entries",
+        "Not reading road position clues",
+      ],
+      topicsIncluded: [
+        "Roundabout approaches",
+        "Lane change hazards",
+        "Traffic entering your path",
+        "Vehicle position clues",
+        "Crossing traffic movement",
+      ],
+      whoFor: "This mock is for learners who want more confidence with hazards around roundabouts, lane changes and traffic joining from different directions.",
+      faqs: [
+        {
+          q: "What does Mock Test 15 practise?",
+          a: "Mock Test 15 practises roundabout approaches, lane changes and vehicles entering traffic. It helps you read road position and movement before another vehicle becomes a hazard.",
+        },
+        {
+          q: "Who should take Mock Test 15?",
+          a: "Learners who feel unsure at roundabouts or around lane-changing vehicles should use this mock to practise anticipation.",
+        },
+        {
+          q: "What matters most in Mock Test 15?",
+          a: "Look for vehicles entering, leaving or changing lane around roundabouts. Position, indicators and speed changes can all signal that a hazard is developing.",
+        },
+      ],
+    },
+    16: {
+      difficulty: "Intermediate",
+      covers: "Hazard Perception Mock Test 16 focuses on bus stops, stopped vehicles, pedestrians crossing between traffic and hazards that can be hidden until late. It helps learners practise scanning around larger vehicles and anticipating movement from people near the roadside.",
+      commonMistakes: [
+        "Not checking around buses or larger vehicles",
+        "Missing pedestrians between parked cars",
+        "Waiting until someone is fully in the road",
+        "Ignoring stopped traffic as a hazard clue",
+      ],
+      topicsIncluded: [
+        "Bus stop hazards",
+        "Pedestrians between vehicles",
+        "Hidden roadside risks",
+        "Stopped traffic clues",
+        "Scanning around large vehicles",
+      ],
+      whoFor: "This mock is useful for learners who want to practise hidden pedestrian hazards around buses, parked cars and stopped traffic.",
+      faqs: [
+        {
+          q: "What is Mock Test 16 about?",
+          a: "Mock Test 16 is about hidden pedestrian hazards around buses, parked vehicles and stopped traffic. It trains you to look around larger vehicles rather than only at the road ahead.",
+        },
+        {
+          q: "Who will benefit from Mock Test 16?",
+          a: "This mock helps learners who miss hazards partly hidden by buses, vans or parked cars near the kerb.",
+        },
+        {
+          q: "How should I review Mock Test 16?",
+          a: "Check whether you looked around buses, vans and stopped vehicles for hidden pedestrians. Larger vehicles can hide hazards until late, so scanning around them is important.",
+        },
+      ],
+    },
+    17: {
+      difficulty: "Intermediate",
+      covers: "Hazard Perception Mock Test 17 gives practice with country-road style hazards, including bends, slower-moving vehicles, limited visibility and changing road width. It encourages learners to anticipate risks earlier when the road ahead is less predictable.",
+      commonMistakes: [
+        "Approaching bends without anticipating hazards",
+        "Missing slower vehicles ahead",
+        "Not reacting to narrowing roads",
+        "Ignoring visibility and road-edge clues",
+      ],
+      topicsIncluded: [
+        "Country road hazards",
+        "Bends and blind spots",
+        "Slow-moving vehicles",
+        "Changing road width",
+        "Speed control with limited views",
+      ],
+      whoFor: "This mock is for learners who want intermediate hazard practice on roads where bends, narrow sections and limited visibility matter.",
+      faqs: [
+        {
+          q: "What does Mock Test 17 cover?",
+          a: "Mock Test 17 covers country-road style hazards, such as bends, narrowing roads and slow-moving vehicles. It helps you practise earlier anticipation where visibility may be limited.",
+        },
+        {
+          q: "Who is Mock Test 17 for?",
+          a: "Learners who want to improve hazard spotting on less predictable road layouts should use this mock.",
+        },
+        {
+          q: "What should I learn from Mock Test 17?",
+          a: "Use bends, road width and slow-moving vehicles as early warning signs. Country-road hazards often need earlier anticipation because you may have less time to react.",
+        },
+      ],
+    },
+    18: {
+      difficulty: "Intermediate",
+      covers: "Hazard Perception Mock Test 18 focuses on vehicles emerging from driveways, side entrances, side roads and parking areas. It helps learners practise spotting movement at the edge of the road scene and reacting when another road user may enter the carriageway.",
+      commonMistakes: [
+        "Only watching the centre of the screen",
+        "Missing vehicles at side entrances",
+        "Reacting after the vehicle has entered the road",
+        "Not scanning driveways and side roads",
+      ],
+      topicsIncluded: [
+        "Emerging vehicles",
+        "Driveway hazards",
+        "Side entrances",
+        "Edge-of-scene scanning",
+        "Anticipating vehicles entering the road",
+      ],
+      whoFor: "This mock is suitable for learners who want to sharpen observation of side entrances, driveways and emerging vehicles.",
+      faqs: [
+        {
+          q: "What skill does Mock Test 18 build?",
+          a: "Mock Test 18 builds edge-of-scene observation. Vehicles may emerge from driveways, side roads or car parks, so the first clue may be small movement away from the centre of the road.",
+        },
+        {
+          q: "Who should practise Mock Test 18?",
+          a: "This mock is useful for learners who tend to miss vehicles appearing from driveways, side entrances or parking areas.",
+        },
+        {
+          q: "How can I improve after Mock Test 18?",
+          a: "Scan the edges of the road scene, including driveways, side entrances and car parks. Hazards often begin with small movement before a vehicle fully enters the road.",
+        },
+      ],
+    },
+    19: {
+      difficulty: "Intermediate",
+      covers: "Hazard Perception Mock Test 19 covers hazards around traffic lights, crossings, changing priorities and road users who may move unexpectedly. It helps learners practise watching signals, road users and the surrounding scene together.",
+      commonMistakes: [
+        "Focusing only on traffic lights",
+        "Missing pedestrians near crossings",
+        "Not noticing vehicles preparing to turn",
+        "Reacting late when priorities change",
+      ],
+      topicsIncluded: [
+        "Traffic light areas",
+        "Crossing hazards",
+        "Changing priority",
+        "Pedestrian movement",
+        "Signal and road-user awareness",
+      ],
+      whoFor: "This mock is for learners who want to practise hazards around lights, crossings and changing road priorities.",
+      faqs: [
+        {
+          q: "What does Mock Test 19 test?",
+          a: "Mock Test 19 tests awareness around traffic lights and crossings. It helps you combine signals, pedestrian movement and vehicle behaviour instead of watching just one clue.",
+        },
+        {
+          q: "Who should use Mock Test 19?",
+          a: "This mock is useful if you want to improve hazard perception where priorities can change quickly near crossings and lights.",
+        },
+        {
+          q: "What should I focus on in Mock Test 19?",
+          a: "Do not watch traffic lights alone. Check pedestrians, vehicles turning, crossing areas and changing priorities so you spot the hazard before it becomes urgent.",
+        },
+      ],
+    },
+    20: {
+      difficulty: "Intermediate",
+      covers: "Hazard Perception Mock Test 20 focuses on faster-road awareness, including lane changes, merging traffic, braking vehicles and safe following distances. It helps learners practise identifying hazards earlier where traffic speed gives less time to react.",
+      commonMistakes: [
+        "Following too closely in faster traffic",
+        "Missing vehicles joining from slip roads",
+        "Reacting late to brake lights",
+        "Not scanning lanes beyond the vehicle ahead",
+      ],
+      topicsIncluded: [
+        "Faster-road hazards",
+        "Lane changes",
+        "Merging traffic",
+        "Following distance",
+        "Braking vehicles ahead",
+      ],
+      whoFor: "This mock is useful for learners who want to practise hazard awareness on faster roads and dual carriageway-style situations.",
+      faqs: [
+        {
+          q: "What is covered in Mock Test 20?",
+          a: "Mock Test 20 focuses on faster-road hazards such as merging vehicles, lane changes and sudden braking. It helps you spot risks earlier when speeds reduce reaction time.",
+        },
+        {
+          q: "Who is Mock Test 20 suitable for?",
+          a: "Learners who want more practice with dual carriageway-style observation and lane awareness should use this mock.",
+        },
+        {
+          q: "How should I review Mock Test 20?",
+          a: "Check whether you scanned ahead and across lanes, not just the vehicle directly in front. On faster roads, merging traffic and brake lights need earlier attention.",
+        },
+      ],
+    },
+    21: {
+      difficulty: "Intermediate",
+      covers: "Hazard Perception Mock Test 21 focuses on delivery vehicles, road obstructions, stopped traffic and situations where road users may move around a blockage. It helps learners anticipate hazards caused by vehicles stopping, opening doors or blocking the lane.",
+      commonMistakes: [
+        "Ignoring stopped vehicles as a hazard",
+        "Missing doors opening or pedestrians nearby",
+        "Not anticipating vehicles moving around obstructions",
+        "Reacting only when the lane is blocked",
+      ],
+      topicsIncluded: [
+        "Stopped or loading vehicles",
+        "Road obstruction",
+        "Door-opening hazards",
+        "Traffic moving around blockages",
+        "Lane narrowing",
+      ],
+      whoFor: "This mock is for learners practising hazards caused by stopped vehicles, obstructions and changing lane space.",
+      faqs: [
+        {
+          q: "What hazards appear in Mock Test 21?",
+          a: "Mock Test 21 focuses on stopped vehicles, loading activity and road obstructions. The risk may come from a door opening, a pedestrian stepping out or traffic moving around a blockage.",
+        },
+        {
+          q: "Who should practise Mock Test 21?",
+          a: "This mock is for learners who want to improve awareness around blocked lanes, delivery vehicles and roadside activity.",
+        },
+        {
+          q: "What should I learn from Mock Test 21?",
+          a: "Stopped vehicles can create several hazards at once, including opening doors, pedestrians stepping out and other vehicles moving around an obstruction. Review which clue you missed first.",
+        },
+      ],
+    },
+    22: {
+      difficulty: "Intermediate",
+      covers: "Hazard Perception Mock Test 22 focuses on everyday road decisions where hazards can develop around junctions, traffic signs, speed changes and observation points. It helps learners practise combining road knowledge with hazard awareness in normal driving situations.",
+      commonMistakes: [
+        "Misreading junction layouts",
+        "Forgetting observation checks",
+        "Confusing speed guidance with speed limits",
+        "Not considering road conditions",
+      ],
+      topicsIncluded: [
+        "Junction safety and observation",
+        "Speed choices in everyday situations",
+        "Traffic signs and road rules",
+        "Responsible driving behaviour",
+        "Scenario-based road judgement",
+      ],
+      whoFor: "This mock is suitable for learners who already know the basics and want more mixed-topic hazard practice linked to everyday road judgement.",
+      faqs: [
+        {
+          q: "What does Mock Test 22 focus on?",
+          a: "Mock Test 22 links hazard perception with everyday road judgement. It includes junction layouts, speed choices and observation points where a normal situation can become risky.",
+        },
+        {
+          q: "Who should use Mock Test 22?",
+          a: "This mock is suitable for learners who already know the basics and want to apply that knowledge to mixed everyday driving situations.",
+        },
+        {
+          q: "How can I review Mock Test 22?",
+          a: "Look at whether your missed hazards came from junctions, speed changes or observation points. This mock is about combining road judgement with timely hazard recognition.",
+        },
+      ],
+    },
+    23: {
+      difficulty: "Intermediate",
+      covers: "Hazard Perception Mock Test 23 gives practice with busy town-road hazards involving pedestrians, cyclists, vehicles stopping and traffic changing speed. It helps learners scan several areas of the scene and identify when one of them becomes a developing hazard.",
+      commonMistakes: [
+        "Focusing on one road user only",
+        "Missing cyclists near traffic",
+        "Reacting late to stopping vehicles",
+        "Not checking pavements and side roads",
+      ],
+      topicsIncluded: [
+        "Busy town-road hazards",
+        "Pedestrians and cyclists",
+        "Stopping vehicles",
+        "Changing traffic speed",
+        "Scanning several risk areas",
+      ],
+      whoFor: "This mock is for learners who want stronger observation in busier road scenes with pedestrians, cyclists and moving traffic.",
+      faqs: [
+        {
+          q: "What makes Mock Test 23 challenging?",
+          a: "Mock Test 23 uses busier town-road hazards where pedestrians, cyclists and changing traffic all compete for attention. It helps you practise scanning several areas at once.",
+        },
+        {
+          q: "Who is Mock Test 23 for?",
+          a: "This mock helps learners who can spot simple hazards but need stronger observation in busy urban traffic.",
+        },
+        {
+          q: "What should I improve after Mock Test 23?",
+          a: "Review whether you scanned multiple areas at once: the road ahead, pavements, side roads and nearby cyclists. Busy town scenes often contain several possible risks.",
+        },
+      ],
+    },
+    24: {
+      difficulty: "Intermediate",
+      covers: "Hazard Perception Mock Test 24 focuses on roadworks, temporary layouts, cones, narrowing lanes and workers or vehicles near the carriageway. It helps learners practise spotting hazards where the normal road layout has changed.",
+      commonMistakes: [
+        "Assuming the normal layout still applies",
+        "Missing cones or temporary signs",
+        "Not slowing for narrowing lanes",
+        "Ignoring workers or vehicles at the roadside",
+      ],
+      topicsIncluded: [
+        "Roadworks hazards",
+        "Temporary road layouts",
+        "Narrowing lanes",
+        "Workers or vehicles near the road",
+        "Changed priorities",
+      ],
+      whoFor: "This mock is suitable for learners practising hazard perception in roadwork-style scenes and temporary traffic layouts.",
+      faqs: [
+        {
+          q: "What is Mock Test 24 about?",
+          a: "Mock Test 24 focuses on roadworks and temporary layouts. Cones, narrowing lanes and workers near the road are clues that the usual road pattern has changed.",
+        },
+        {
+          q: "Who should practise Mock Test 24?",
+          a: "Learners who need more confidence with roadworks, cones and temporary traffic arrangements should use this mock.",
+        },
+        {
+          q: "How should I review Mock Test 24?",
+          a: "Check whether you noticed cones, temporary signs, narrowing lanes and workers early. Roadworks change the normal road layout, so your hazard timing should adjust with it.",
+        },
+      ],
+    },
+    25: {
+      difficulty: "Intermediate",
+      covers: "Hazard Perception Mock Test 25 focuses on residential streets, children, parked cars, driveways and low-speed hazards where a danger can appear suddenly. It helps learners practise careful observation in areas where people may step into the road unexpectedly.",
+      commonMistakes: [
+        "Relaxing too much in low-speed areas",
+        "Missing children near parked vehicles",
+        "Not scanning driveways",
+        "Reacting only after someone enters the road",
+      ],
+      topicsIncluded: [
+        "Residential street hazards",
+        "Children near the road",
+        "Driveways and parked cars",
+        "Low-speed observation",
+        "Sudden pedestrian movement",
+      ],
+      whoFor: "This mock is useful for learners who want to improve hazard awareness in residential streets and areas with pedestrians close to the road.",
+      faqs: [
+        {
+          q: "What does Mock Test 25 cover?",
+          a: "Mock Test 25 covers residential-street hazards, including children, driveways and parked cars. It reminds learners that slower roads can still produce sudden risks.",
+        },
+        {
+          q: "Who is Mock Test 25 best for?",
+          a: "This mock is useful if you want to improve caution in residential areas where pedestrians may appear from behind vehicles or driveways.",
+        },
+        {
+          q: "What should I focus on after Mock Test 25?",
+          a: "Pay attention to hidden pedestrian clues in residential streets, especially children, driveways and gaps between parked cars. Low-speed areas can still produce sudden hazards.",
+        },
+      ],
+    },
+    26: {
+      difficulty: "Intermediate",
+      covers: "Hazard Perception Mock Test 26 focuses on large vehicles, blind spots, limited views and situations where another road user may be hidden. It helps learners practise anticipating hazards when buses, lorries or vans reduce visibility.",
+      commonMistakes: [
+        "Following large vehicles too closely",
+        "Not checking around blind spots",
+        "Missing pedestrians hidden by buses or vans",
+        "Waiting until the hazard is fully visible",
+      ],
+      topicsIncluded: [
+        "Large vehicle hazards",
+        "Blind spots and hidden risks",
+        "Limited forward view",
+        "Pedestrians near large vehicles",
+        "Anticipation around bigger traffic",
+      ],
+      whoFor: "This mock is for learners practising observation around larger vehicles and hidden hazards.",
+      faqs: [
+        {
+          q: "What is the focus of Mock Test 26?",
+          a: "Mock Test 26 focuses on large vehicles and blocked views. Buses, vans or lorries can hide pedestrians, cyclists or traffic changes until late.",
+        },
+        {
+          q: "Who should take Mock Test 26?",
+          a: "This mock helps learners who need to practise leaving space and scanning around bigger vehicles for hidden hazards.",
+        },
+        {
+          q: "How can I improve after Mock Test 26?",
+          a: "Review whether you allowed for blind spots and blocked views. If a large vehicle hides part of the road scene, look for clues around it rather than waiting for the hazard to appear fully.",
+        },
+      ],
+    },
+    27: {
+      difficulty: "Intermediate",
+      covers: "Hazard Perception Mock Test 27 gives practice with right turns, waiting vehicles, crossing traffic and road users who may move across your path. It helps learners recognise when another vehicle’s position or signal may become a developing hazard.",
+      commonMistakes: [
+        "Ignoring vehicle position at junctions",
+        "Missing signals or turning clues",
+        "Reacting late to crossing traffic",
+        "Watching only your own lane",
+      ],
+      topicsIncluded: [
+        "Right-turn hazards",
+        "Waiting vehicles",
+        "Crossing traffic",
+        "Signal and position clues",
+        "Vehicles moving across your path",
+      ],
+      whoFor: "This mock is suitable for learners who want more practice with turning traffic and hazards that cross their path.",
+      faqs: [
+        {
+          q: "What does Mock Test 27 train?",
+          a: "Mock Test 27 trains awareness of right-turn hazards and crossing traffic. It helps you notice when a waiting vehicle’s signal, position or movement may affect your path.",
+        },
+        {
+          q: "Who is Mock Test 27 useful for?",
+          a: "Learners who miss turning vehicles or focus only on their own lane should use this mock.",
+        },
+        {
+          q: "What should I watch in Mock Test 27?",
+          a: "Look for waiting vehicles, signals, road position and crossing traffic. A right-turn hazard often develops when another road user begins to move across your path.",
+        },
+      ],
+    },
+    28: {
+      difficulty: "Intermediate",
+      covers: "Hazard Perception Mock Test 28 focuses on narrow roads, meeting oncoming vehicles, parked vehicle gaps and decisions where road space changes quickly. It helps learners practise spotting when another road user may need to slow, stop or move position.",
+      commonMistakes: [
+        "Not noticing the road narrowing",
+        "Misjudging oncoming traffic",
+        "Missing gaps between parked vehicles",
+        "Reacting late when road space reduces",
+      ],
+      topicsIncluded: [
+        "Narrow-road hazards",
+        "Meeting oncoming traffic",
+        "Parked vehicle gaps",
+        "Changing road space",
+        "Priority and safe positioning",
+      ],
+      whoFor: "This mock is for learners practising road-space judgement and hazard awareness on narrower streets.",
+      faqs: [
+        {
+          q: "What is practised in Mock Test 28?",
+          a: "Mock Test 28 practises narrow-road judgement, meeting traffic and changing space around parked vehicles. It helps you react when the available road space reduces.",
+        },
+        {
+          q: "Who should use Mock Test 28?",
+          a: "This mock is for learners who want more practice judging space, priority and safe positioning on narrower streets.",
+        },
+        {
+          q: "How should I review Mock Test 28?",
+          a: "Check whether you noticed road narrowing and oncoming vehicles early. In narrow roads, the hazard often develops when available space or priority changes.",
+        },
+      ],
+    },
+    29: {
+      difficulty: "Intermediate",
+      covers: "Hazard Perception Mock Test 29 focuses on rural-style hazards, animals near the road, sudden movement and areas where the scene can change quickly. It helps learners practise scanning verges, driveways, bends and road edges.",
+      commonMistakes: [
+        "Ignoring road edges and verges",
+        "Reacting late to sudden movement",
+        "Not reducing speed where visibility is limited",
+        "Missing clues away from the centre of the road",
+      ],
+      topicsIncluded: [
+        "Animal hazards",
+        "Rural road awareness",
+        "Sudden movement",
+        "Verges and road edges",
+        "Scanning beyond the lane",
+      ],
+      whoFor: "This mock is useful for learners who want more practice with rural hazards and sudden movement near the road.",
+      faqs: [
+        {
+          q: "What does Mock Test 29 focus on?",
+          a: "Mock Test 29 focuses on rural-style hazards, including animals, sudden movement and risks near verges or road edges. It builds anticipation outside the centre of the lane.",
+        },
+        {
+          q: "Who is Mock Test 29 for?",
+          a: "This mock is useful for learners practising roads where hazards may come from bends, entrances, verges or rural surroundings.",
+        },
+        {
+          q: "What should I learn from Mock Test 29?",
+          a: "Review whether you scanned verges, bends, road edges and rural entrances. In these scenes, sudden movement can become a developing hazard quickly.",
+        },
+      ],
+    },
+    30: {
+      difficulty: "Intermediate",
+      covers: "Hazard Perception Mock Test 30 is a mixed intermediate checkpoint covering pedestrians, cyclists, vehicles, junctions, visibility and traffic speed changes. It helps learners test whether they can spot developing hazards consistently across different road situations.",
+      commonMistakes: [
+        "Reacting inconsistently across different scenes",
+        "Missing hazards away from the vehicle ahead",
+        "Clicking too early without a developing hazard",
+        "Not reviewing repeated weak areas",
+      ],
+      topicsIncluded: [
+        "Mixed intermediate hazards",
+        "Traffic speed changes",
+        "Pedestrians and cyclists",
+        "Junction and visibility clues",
+        "Consistent response timing",
+      ],
+      whoFor: "This mock is a checkpoint for learners who want to test intermediate hazard perception skills before moving to exam-ready practice.",
+      faqs: [
+        {
+          q: "Why is Mock Test 30 a checkpoint?",
+          a: "Mock Test 30 combines several intermediate hazard types, including junctions, visibility, pedestrians and traffic-speed changes. It helps you check consistency before harder mocks.",
+        },
+        {
+          q: "Who should take Mock Test 30?",
+          a: "This mock is best for learners who have completed a range of intermediate practice and want to review their overall timing.",
+        },
+        {
+          q: "How should I use Mock Test 30?",
+          a: "Treat this as an intermediate checkpoint. Compare your mistakes across several hazard types and repeat the areas where your timing was late or uncertain.",
+        },
+      ],
+    },
+    31: {
+      difficulty: "Exam-ready",
+      covers: "Hazard Perception Mock Test 31 is aimed at learners moving towards exam-ready practice. It focuses on busier road scenes where pedestrians, cyclists, parked vehicles and moving traffic may all create possible risks, helping learners identify the true developing hazard.",
+      commonMistakes: [
+        "Clicking on every possible risk",
+        "Missing the main developing hazard",
+        "Reacting too late in busier scenes",
+        "Not scanning pavements and side roads",
+      ],
+      topicsIncluded: [
+        "Busy road scanning",
+        "Multiple road users",
+        "Developing hazard selection",
+        "Pedestrians and cyclists",
+        "Final-stage observation",
+      ],
+      whoFor: "This mock is designed for learners close to test day who want to practise spotting hazards in busier, mixed road scenes.",
+      faqs: [
+        {
+          q: "What does Mock Test 31 challenge?",
+          a: "Mock Test 31 challenges you with busier scenes where several things may look risky. The aim is to identify the true developing hazard, not every minor concern.",
+        },
+        {
+          q: "Who should practise Mock Test 31?",
+          a: "Learners moving into exam-ready practice should use this mock to sharpen observation in more crowded road environments.",
+        },
+        {
+          q: "How can I improve after Mock Test 31?",
+          a: "Review whether you selected the main developing hazard rather than reacting to every possible risk. In busy scenes, calm scanning is more useful than random clicking.",
+        },
+      ],
+    },
+    32: {
+      difficulty: "Exam-ready",
+      covers: "Hazard Perception Mock Test 32 focuses on complex junction situations, turning traffic, changing priorities and road users moving across your path. It helps learners practise accurate timing and judgement where several vehicles may be moving at once.",
+      commonMistakes: [
+        "Misreading which vehicle creates the hazard",
+        "Reacting after the turn has already started",
+        "Ignoring priority changes",
+        "Watching only one part of the junction",
+      ],
+      topicsIncluded: [
+        "Complex junction hazards",
+        "Turning vehicle movement",
+        "Changing priorities",
+        "Cross-traffic risk",
+        "Accurate response timing",
+      ],
+      whoFor: "This mock is for learners who want exam-ready practice with junctions, turning vehicles and changing traffic priorities.",
+      faqs: [
+        {
+          q: "What is covered in Mock Test 32?",
+          a: "Mock Test 32 covers complex junctions, turning vehicles and changing priorities. It helps you track several moving road users while choosing the developing hazard.",
+        },
+        {
+          q: "Who is Mock Test 32 suitable for?",
+          a: "This mock is suitable for learners close to test day who want stronger judgement at junctions and crossing-traffic situations.",
+        },
+        {
+          q: "What should I review after Mock Test 32?",
+          a: "Check whether you followed the movement of turning vehicles and crossing traffic. Complex junction hazards often develop from priority changes and vehicle positioning.",
+        },
+      ],
+    },
+    33: {
+      difficulty: "Exam-ready",
+      covers: "Hazard Perception Mock Test 33 gives exam-ready practice with faster roads, braking traffic, lane movement and merging vehicles. It helps learners spot hazards early when higher speeds mean there is less time to react.",
+      commonMistakes: [
+        "Following traffic too closely",
+        "Missing early brake-light clues",
+        "Not checking adjacent lanes",
+        "Reacting late to merging traffic",
+      ],
+      topicsIncluded: [
+        "Faster-road awareness",
+        "Braking traffic ahead",
+        "Lane movement",
+        "Merging vehicles",
+        "Early hazard recognition",
+      ],
+      whoFor: "This mock is suitable for learners who want to check their hazard perception timing on faster-road style situations.",
+      faqs: [
+        {
+          q: "What makes Mock Test 33 important?",
+          a: "Mock Test 33 focuses on faster-road hazards where late reactions matter more. Merging traffic, lane movement and braking vehicles need earlier scanning.",
+        },
+        {
+          q: "Who should use Mock Test 33?",
+          a: "Use this mock if you want final-stage practice with dual carriageway-style traffic, lane changes and higher-speed observation.",
+        },
+        {
+          q: "How should I approach Mock Test 33?",
+          a: "Look further ahead than usual and scan nearby lanes. On faster roads, brake lights, merging vehicles and lane changes can become hazards very quickly.",
+        },
+      ],
+    },
+    34: {
+      difficulty: "Exam-ready",
+      covers: "Hazard Perception Mock Test 34 focuses on exam-ready judgement in poor visibility, changing weather and road surface conditions. It helps learners recognise when conditions make a normal situation more hazardous and require earlier adjustment.",
+      commonMistakes: [
+        "Not adapting to poor visibility",
+        "Ignoring wet or slippery road clues",
+        "Reacting only when the hazard is close",
+        "Using normal-weather timing in harder conditions",
+      ],
+      topicsIncluded: [
+        "Poor visibility hazards",
+        "Weather-related risk",
+        "Road surface changes",
+        "Earlier speed adjustment",
+        "Condition-based judgement",
+      ],
+      whoFor: "This mock is for learners who want final-stage practice with weather, visibility and road-surface hazards.",
+      faqs: [
+        {
+          q: "What does Mock Test 34 practise?",
+          a: "Mock Test 34 practises hazard judgement in poor visibility, weather and road-surface changes. It helps you adjust timing when conditions reduce safety margins.",
+        },
+        {
+          q: "Who is Mock Test 34 best for?",
+          a: "This mock is for learners who want to test whether they can adapt their hazard response when conditions are more difficult.",
+        },
+        {
+          q: "What should I learn from Mock Test 34?",
+          a: "Review whether you adjusted your timing for weather, visibility and surface conditions. A hazard in poor conditions usually needs an earlier response than the same hazard in clear weather.",
+        },
+      ],
+    },
+    35: {
+      difficulty: "Exam-ready",
+      covers: "Hazard Perception Mock Test 35 focuses on vulnerable road users in mixed traffic, including cyclists, pedestrians, motorcyclists and people near parked vehicles. It helps learners practise spotting subtle movement and giving extra attention to road users who may be harder to see.",
+      commonMistakes: [
+        "Missing cyclists beside vehicles",
+        "Not noticing pedestrians preparing to cross",
+        "Overlooking motorcyclists in traffic",
+        "Reacting after the vulnerable user is already in your path",
+      ],
+      topicsIncluded: [
+        "Vulnerable road users",
+        "Cyclists in traffic",
+        "Pedestrians near parked vehicles",
+        "Motorcyclist awareness",
+        "Subtle movement clues",
+      ],
+      whoFor: "This mock is designed for learners who want exam-ready practice with vulnerable road users and subtle hazard clues.",
+      faqs: [
+        {
+          q: "What is the focus of Mock Test 35?",
+          a: "Mock Test 35 focuses on vulnerable road users in mixed traffic. Cyclists, pedestrians and motorcyclists may create subtle clues before the hazard fully develops.",
+        },
+        {
+          q: "Who should practise Mock Test 35?",
+          a: "This mock is for learners who want to improve final-stage awareness of cyclists, pedestrians and motorcyclists.",
+        },
+        {
+          q: "How can I improve after Mock Test 35?",
+          a: "Review how quickly you noticed cyclists, pedestrians and motorcyclists. These road users may be harder to see, so small changes in position or speed matter.",
+        },
+      ],
+    },
+    36: {
+      difficulty: "Exam-ready",
+      covers: "Hazard Perception Mock Test 36 gives exam-ready practice with obstructions, roadworks, lane restrictions and vehicles moving around blocked areas. It helps learners identify hazards created by changed road layouts and reduced space.",
+      commonMistakes: [
+        "Not slowing for lane restrictions",
+        "Missing temporary layout clues",
+        "Ignoring vehicles moving around obstructions",
+        "Assuming the road layout is normal",
+      ],
+      topicsIncluded: [
+        "Road obstruction hazards",
+        "Roadworks and temporary layouts",
+        "Lane restrictions",
+        "Vehicles moving around blockages",
+        "Reduced road space",
+      ],
+      whoFor: "This mock is for learners who want final-stage practice with roadworks, obstructions and changing road layouts.",
+      faqs: [
+        {
+          q: "What does Mock Test 36 cover?",
+          a: "Mock Test 36 covers obstructions, roadworks and lane restrictions. It helps you spot when changed road layouts reduce space or alter normal traffic flow.",
+        },
+        {
+          q: "Who should use Mock Test 36?",
+          a: "Learners close to test day can use this mock to practise reading temporary signs, lane narrowing and blocked-road situations.",
+        },
+        {
+          q: "What should I check after Mock Test 36?",
+          a: "Check whether you noticed temporary signs, cones, lane restrictions and vehicles moving around obstructions. Road layout changes are often early clues that a hazard is developing.",
+        },
+      ],
+    },
+    37: {
+      difficulty: "Exam-ready",
+      covers: "Hazard Perception Mock Test 37 focuses on hidden hazards, large vehicles, limited view and situations where a risk may appear from behind another road user. It helps learners practise predicting danger before it is fully visible.",
+      commonMistakes: [
+        "Following large vehicles too closely",
+        "Missing hazards hidden by traffic",
+        "Waiting until the risk is obvious",
+        "Not scanning road edges and pavements",
+      ],
+      topicsIncluded: [
+        "Hidden hazards",
+        "Large vehicles and blind spots",
+        "Limited forward view",
+        "Predicting unseen risks",
+        "Early defensive response",
+      ],
+      whoFor: "This mock is suitable for learners close to test day who want to improve prediction of hidden hazards and limited-view situations.",
+      faqs: [
+        {
+          q: "What skill does Mock Test 37 build?",
+          a: "Mock Test 37 builds prediction skills for hidden hazards. Large vehicles, parked cars and blocked views may hide the risk until late unless you scan around them.",
+        },
+        {
+          q: "Who is Mock Test 37 aimed at?",
+          a: "This mock is aimed at learners who want to improve final-stage anticipation when the full road scene is not visible.",
+        },
+        {
+          q: "How should I review Mock Test 37?",
+          a: "Review whether hidden hazards were missed because your view was blocked. Look around large vehicles, parked cars and road edges for early clues before the risk becomes visible.",
+        },
+      ],
+    },
+    38: {
+      difficulty: "Exam-ready",
+      covers: "Hazard Perception Mock Test 38 gives exam-ready practice with residential roads, parked cars, pedestrians and sudden movement from driveways or side streets. It helps learners stay alert in slower road scenes where hazards can still develop quickly.",
+      commonMistakes: [
+        "Relaxing because traffic is slower",
+        "Missing pedestrians between parked cars",
+        "Ignoring driveways and side streets",
+        "Reacting after the person or vehicle has moved out",
+      ],
+      topicsIncluded: [
+        "Residential road hazards",
+        "Parked cars and driveways",
+        "Sudden pedestrian movement",
+        "Side-street awareness",
+        "Low-speed risk recognition",
+      ],
+      whoFor: "This mock is for learners who want final-stage hazard practice in residential and lower-speed road environments.",
+      faqs: [
+        {
+          q: "What does Mock Test 38 test?",
+          a: "Mock Test 38 tests awareness in residential roads where hazards may appear suddenly from driveways, parked cars or side streets despite slower traffic.",
+        },
+        {
+          q: "Who should practise Mock Test 38?",
+          a: "This mock is useful for learners who want to stay alert in low-speed areas and avoid relaxing too much in residential streets.",
+        },
+        {
+          q: "What should I learn from Mock Test 38?",
+          a: "Do not treat slower streets as risk-free. Review whether you scanned parked cars, driveways and side streets for sudden pedestrian or vehicle movement.",
+        },
+      ],
+    },
+    39: {
+      difficulty: "Exam-ready",
+      covers: "Hazard Perception Mock Test 39 focuses on rural roads, bends, changing road width and unpredictable hazards such as slow vehicles, animals or hidden road users. It helps learners practise earlier anticipation when visibility and space are limited.",
+      commonMistakes: [
+        "Approaching bends without reducing risk",
+        "Missing slow-moving vehicles",
+        "Ignoring road-edge clues",
+        "Reacting too late to hazards beyond a bend",
+      ],
+      topicsIncluded: [
+        "Rural road hazards",
+        "Bends and limited visibility",
+        "Slow or unexpected road users",
+        "Changing road width",
+        "Early anticipation",
+      ],
+      whoFor: "This mock is for learners preparing for exam-style hazard perception on rural and less predictable road layouts.",
+      faqs: [
+        {
+          q: "What is Mock Test 39 about?",
+          a: "Mock Test 39 is about rural roads, bends and unpredictable hazards. It helps you use road shape, verges and changing width as early warning signs.",
+        },
+        {
+          q: "Who is Mock Test 39 for?",
+          a: "This mock is for learners who want final-stage practice on less predictable roads where hazards may appear late.",
+        },
+        {
+          q: "How can I improve after Mock Test 39?",
+          a: "Review how early you reacted before bends, narrowing roads and unpredictable rural hazards. The best clue may be the road layout before the hazard appears.",
+        },
+      ],
+    },
+    40: {
+      difficulty: "Exam-ready",
+      covers: "Hazard Perception Mock Test 40 is an advanced mixed practice test covering junctions, pedestrians, cyclists, faster traffic, visibility and road layout changes. It helps learners check whether they can identify developing hazards consistently across different scene types.",
+      commonMistakes: [
+        "Responding well in one scene but poorly in another",
+        "Clicking without identifying the hazard",
+        "Missing hazards outside the centre of the road",
+        "Not reviewing timing errors",
+      ],
+      topicsIncluded: [
+        "Advanced mixed hazards",
+        "Junction and pedestrian risks",
+        "Cyclists and traffic changes",
+        "Visibility and road layout",
+        "Consistent response timing",
+      ],
+      whoFor: "This mock is a strong final-stage checkpoint for learners who want to test consistency across a wide mix of hazard perception situations.",
+      faqs: [
+        {
+          q: "Why is Mock Test 40 useful?",
+          a: "Mock Test 40 is an advanced mixed checkpoint. It combines several hazard types so you can check whether your timing stays consistent across different scenes.",
+        },
+        {
+          q: "Who should take Mock Test 40?",
+          a: "This mock is ideal for learners close to test day who want to measure consistency rather than practise only one hazard type.",
+        },
+        {
+          q: "What should I check after Mock Test 40?",
+          a: "Use this mock as a consistency check. Review whether your late clicks were linked to one type of hazard or whether your scanning changed from scene to scene.",
+        },
+      ],
+    },
+    41: {
+      difficulty: "Exam-ready",
+      covers: "Hazard Perception Mock Test 41 focuses on traffic flow, following distance, sudden braking and situations where the vehicle ahead may create a developing hazard. It helps learners practise noticing early clues before traffic changes become urgent.",
+      commonMistakes: [
+        "Following too closely",
+        "Missing brake-light patterns",
+        "Reacting after traffic has already stopped",
+        "Not scanning beyond the nearest vehicle",
+      ],
+      topicsIncluded: [
+        "Traffic-flow hazards",
+        "Following distance",
+        "Sudden braking",
+        "Brake-light observation",
+        "Early speed adjustment",
+      ],
+      whoFor: "This mock is for learners close to test day who want more practice with braking traffic and safe following-distance awareness.",
+      faqs: [
+        {
+          q: "What does Mock Test 41 focus on?",
+          a: "Mock Test 41 focuses on traffic flow and sudden braking. It helps you spot brake-light patterns and shrinking gaps before traffic ahead becomes a serious hazard.",
+        },
+        {
+          q: "Who is Mock Test 41 best for?",
+          a: "This mock is best for learners who want to improve safe following-distance awareness and earlier reactions to slowing traffic.",
+        },
+        {
+          q: "How should I review Mock Test 41?",
+          a: "Look at whether you noticed traffic slowing before it became urgent. Brake-light patterns, reduced gaps and changes beyond the nearest vehicle are key clues.",
+        },
+      ],
+    },
+    42: {
+      difficulty: "Exam-ready",
+      covers: "Hazard Perception Mock Test 42 focuses on complex urban scenes where several hazards may compete for attention. It helps learners practise selecting the developing hazard from pedestrians, parked cars, cyclists, turning vehicles and changing traffic.",
+      commonMistakes: [
+        "Clicking on minor risks instead of the developing hazard",
+        "Missing movement at the edge of the scene",
+        "Reacting too late in busy areas",
+        "Not scanning between road, pavement and junctions",
+      ],
+      topicsIncluded: [
+        "Complex urban scenes",
+        "Competing possible hazards",
+        "Pedestrians and cyclists",
+        "Turning and parked vehicles",
+        "Developing hazard selection",
+      ],
+      whoFor: "This mock is designed for learners who want challenging practice with busy urban hazard perception scenarios.",
+      faqs: [
+        {
+          q: "What makes Mock Test 42 challenging?",
+          a: "Mock Test 42 uses complex urban scenes with several competing risks. It helps you practise selecting the hazard that is actually developing rather than clicking every possible danger.",
+        },
+        {
+          q: "Who should use Mock Test 42?",
+          a: "Learners close to test day can use this mock to strengthen observation in busy streets with pedestrians, cyclists, parked cars and turning vehicles.",
+        },
+        {
+          q: "What should I focus on after Mock Test 42?",
+          a: "Review whether you chose the true developing hazard or clicked on smaller risks. In complex urban scenes, prioritising the hazard that affects your driving is essential.",
+        },
+      ],
+    },
+    43: {
+      difficulty: "Exam-ready",
+      covers: "Hazard Perception Mock Test 43 focuses on changing priorities, crossing areas, road-user decisions and situations where another person’s action may create risk. It helps learners practise reading signals, movement and road context together.",
+      commonMistakes: [
+        "Focusing on signals but not road users",
+        "Missing pedestrians near crossings",
+        "Not noticing a vehicle preparing to turn",
+        "Reacting after the priority has already changed",
+      ],
+      topicsIncluded: [
+        "Changing priorities",
+        "Crossing-area hazards",
+        "Road-user decisions",
+        "Signals and movement clues",
+        "Context-based judgement",
+      ],
+      whoFor: "This mock is for learners who want exam-ready practice with priorities, crossings and road-user decision-making.",
+      faqs: [
+        {
+          q: "What does Mock Test 43 cover?",
+          a: "Mock Test 43 covers changing priorities, crossings and road-user decisions. It helps you connect signals, movement and context when a hazard begins to develop.",
+        },
+        {
+          q: "Who is Mock Test 43 suitable for?",
+          a: "This mock suits learners who want final-stage practice around crossings, turning vehicles and priority changes.",
+        },
+        {
+          q: "How can I improve after Mock Test 43?",
+          a: "Review whether you connected signals, road-user movement and crossing areas together. Hazards often develop when priority changes and someone starts to move.",
+        },
+      ],
+    },
+    44: {
+      difficulty: "Exam-ready",
+      covers: "Hazard Perception Mock Test 44 is a final revision-style mock covering hidden hazards, developing traffic risks, vulnerable road users and road layout changes. It helps learners sharpen observation and timing before moving to the final hazard perception mock.",
+      commonMistakes: [
+        "Waiting too long before responding",
+        "Missing hazards hidden by vehicles or bends",
+        "Not identifying the actual developing hazard",
+        "Rushing instead of scanning calmly",
+      ],
+      topicsIncluded: [
+        "Hidden hazard recognition",
+        "Developing traffic risks",
+        "Vulnerable road users",
+        "Road layout changes",
+        "Final-stage observation timing",
+      ],
+      whoFor: "This mock is suitable for learners doing final hazard perception revision and checking their timing across mixed hazard types.",
+      faqs: [
+        {
+          q: "Why use Mock Test 44 near the end?",
+          a: "Mock Test 44 is a final revision-style mock that combines hidden hazards, vulnerable road users and changing road layouts. It helps you sharpen timing before the last mock.",
+        },
+        {
+          q: "Who should take Mock Test 44?",
+          a: "Learners doing final hazard perception revision should use this mock to check late reactions and hidden-hazard awareness.",
+        },
+        {
+          q: "What should I review after Mock Test 44?",
+          a: "Focus on any hazards you spotted late because they were hidden or developing slowly. This is a final revision mock, so use missed clips to plan your last practice areas.",
+        },
+      ],
+    },
+    45: {
+      difficulty: "Exam-ready",
+      covers: "Hazard Perception Mock Test 45 is a final confidence check covering a wide range of developing hazards, including pedestrians, cyclists, junctions, parked vehicles, faster traffic and visibility changes. Use it to identify any last weak areas before continuing with timed practice.",
+      commonMistakes: [
+        "Rushing because it is the final mock",
+        "Clicking without confirming the developing hazard",
+        "Missing hazards away from the centre of the scene",
+        "Not using results to plan final revision",
+      ],
+      topicsIncluded: [
+        "Final-stage hazard perception revision",
+        "Mixed developing hazards",
+        "Pedestrians, cyclists and traffic",
+        "Junctions and parked vehicles",
+        "Last-check response timing",
+      ],
+      whoFor: "This mock is best for learners finishing the hazard perception mock set and wanting a final check of timing, observation and confidence.",
+      faqs: [
+        {
+          q: "What is Mock Test 45 for?",
+          a: "Mock Test 45 is a final confidence check across mixed hazard types, including pedestrians, cyclists, junctions, parked vehicles and faster traffic.",
+        },
+        {
+          q: "Who should complete Mock Test 45?",
+          a: "This mock is best for learners finishing the full hazard perception set and wanting one more check of observation, timing and confidence.",
+        },
+        {
+          q: "How should I use Mock Test 45?",
+          a: "Use this final mock as a confidence check. Review any late or missed hazards, then return to the specific mock topics where you lost the most timing or observation accuracy.",
+        },
+      ],
+    },
   },
 };
 
