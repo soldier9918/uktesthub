@@ -1365,6 +1365,19 @@ function MockStartIntro({ quiz }: { quiz: Quiz }) {
   const perMock = mockNumber ? getPerMockIntro(quiz.topic, mockNumber) : undefined;
   const relatedGuide = getRelatedGuide(quiz.topic);
 
+  if (import.meta.env.DEV) {
+    // eslint-disable-next-line no-console
+    console.debug("[MockStartIntro] lookup", {
+      quizSlug: quiz.slug,
+      resolvedTopicSlug: quiz.topic,
+      mockNumber,
+      perMockFound: Boolean(perMock),
+      availablePerMockKeys: Object.keys(
+        (await import("@/data/per-mock-intros")).PER_MOCK_INTROS ?? {},
+      ),
+    });
+  }
+
   const difficultyClasses: Record<string, string> = {
     Beginner: "bg-[#15803d]/10 text-[#15803d] border-[#15803d]/30",
     Intermediate: "bg-amber-500/10 text-amber-700 border-amber-500/30",
