@@ -216,6 +216,27 @@ const EXAM_CONFIGS: Record<string, ExamConfig> = {
     ],
     buttonLabel: "Start CSCS Gold Exam",
   },
+  ielts: {
+    topicSlug: "ielts",
+    count: 40,
+    timeLimitSec: 60 * 60,
+    passMarkPct: 60,
+    passScore: 24,
+    title: "IELTS Exam",
+    description:
+      "Realistic IELTS-style English practice — 40 questions, 60 minutes. Band score 0–9.",
+    heading: "IELTS Exam Mode",
+    intro: [
+      "Practise with a realistic IELTS-style English test designed to help you prepare for the real exam.",
+      "IELTS tests your English skills across Listening, Reading, Writing and Speaking. In the real IELTS test, candidates complete Listening, Reading and Writing on the same day, while Speaking may be taken on the same day or within 7 days before or after the test.",
+      "This exam mode helps you practise under timed conditions, improve your English exam technique, and build confidence before test day.",
+      "IELTS test format includes: Listening — 40 questions, around 30 minutes; Reading — 40 questions, 60 minutes; Writing — 2 tasks, 60 minutes; Speaking — 3 parts, 11–14 minutes.",
+      "IELTS does not have a fixed pass mark. Your result is given as a band score from 0 to 9, depending on your performance.",
+    ],
+    buttonLabel: "Start IELTS Exam Mode",
+    passLabel: "Band 0–9 (no fixed pass mark)",
+    timeLabel: "Timed IELTS-style practice",
+  },
 };
 
 export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
