@@ -127,9 +127,9 @@ export function IeltsWritingExam({ level, onExit }: Props) {
       const msg = e instanceof Error ? e.message : "AI_GATEWAY_ERROR";
       const friendly =
         msg === "RATE_LIMIT"
-          ? "AI marking is busy right now. Please try again in a moment."
+          ? "Marking is busy right now. Please try again in a moment."
           : msg === "PAYMENT_REQUIRED"
-            ? "AI marking credits have run out. Please contact the site owner."
+            ? "Marking credits have run out. Please contact the site owner."
             : "Couldn't mark your answers right now. Please try again.";
       setMarkError(friendly);
       submittedRef.current = false;
