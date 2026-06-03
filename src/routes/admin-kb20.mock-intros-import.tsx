@@ -173,13 +173,17 @@ function MockIntrosImportPage() {
       <section className="mt-6 rounded-xl border border-border bg-card p-5">
         <h2 className="font-semibold">CSV format</h2>
         <p className="mt-1 text-sm text-muted-foreground">
-          Required columns: <code>mock</code>, <code>difficulty</code>, <code>covers</code>,{" "}
-          <code>common_mistakes</code>. Add a <code>topic_slug</code> column to import across
-          multiple topics in one file (the dropdown below is ignored when the column is present).
+          Required: <code>mock</code>, <code>difficulty</code>, <code>covers</code>,{" "}
+          <code>common_mistakes</code>. Optional: <code>topics_included</code>,{" "}
+          <code>who_this_mock_is_for</code>, <code>faq_question_1..3</code>,{" "}
+          <code>faq_answer_1..3</code>. Add <code>topic_slug</code> for multi-topic CSVs.
           <br />
-          <code>difficulty</code> = <em>Beginner</em>, <em>Intermediate</em>, or{" "}
-          <em>Exam-ready</em>. <code>mock</code> = integer 1–45.{" "}
-          <code>common_mistakes</code> = pipe (<code>|</code>) separated bullets.
+          <code>difficulty</code> = <em>Beginner</em> / <em>Intermediate</em> /{" "}
+          <em>Exam-ready</em>. <code>mock</code> = 1–45.{" "}
+          <code>common_mistakes</code> and <code>topics_included</code> are pipe (<code>|</code>) separated.
+          <br />
+          Missing <code>topics_included</code> / <code>who_this_mock_is_for</code> use
+          unique per-mock fallbacks so no two mocks share the same text.
         </p>
         <details className="mt-3 text-sm">
           <summary className="cursor-pointer font-medium">Show sample CSVs</summary>
