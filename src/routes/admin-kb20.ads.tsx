@@ -59,7 +59,7 @@ function AdsManager() {
     if (!settings) return;
     setSettings({ ...settings, [key]: value });
     const { error } = await supabase
-      .from("admin_settings")
+      .from("public_settings")
       .upsert([{ key: key as string, value: value as never }]);
     if (error) {
       toast.error(error.message);

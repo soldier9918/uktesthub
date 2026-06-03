@@ -83,7 +83,7 @@ function SeoManager() {
       key,
       value: value as never,
     }));
-    const { error } = await supabase.from("admin_settings").upsert(updates);
+    const { error } = await supabase.from("public_settings").upsert(updates);
     if (error) {
       toast.error(error.message);
     } else {
