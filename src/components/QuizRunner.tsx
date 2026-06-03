@@ -128,6 +128,8 @@ type ExamConfig = {
   buttonLabel: string;
   passLabel?: string;
   timeLabel?: string;
+  kind?: "topic" | "english";
+  english?: { test: TestSlug; skill: SkillSlug; level: LevelSlug };
 };
 
 const EXAM_CONFIGS: Record<string, ExamConfig> = {
