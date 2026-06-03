@@ -137,6 +137,8 @@ export function IeltsWritingExam({ level, onExit }: Props) {
           ? "Marking is busy right now. Please try again in a moment."
           : msg === "PAYMENT_REQUIRED"
             ? "Marking credits have run out. Please contact the site owner."
+            : msg === "MARKING_TIMEOUT"
+              ? "The review took too long this time. Please try again — your answers are still saved."
             : "Couldn't mark your answers right now. Please try again.";
       setMarkError(friendly);
       submittedRef.current = false;

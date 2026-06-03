@@ -56,6 +56,9 @@ function avgBands(t: IeltsTaskFeedback): number {
   );
 }
 
+const MARKING_MODEL = "google/gemini-3.1-flash-lite-preview";
+const MARKING_TIMEOUT_MS = 24_000;
+
 export const markIeltsWriting = createServerFn({ method: "POST" })
   .inputValidator((data: unknown) => MarkInput.parse(data))
   .handler(async ({ data }): Promise<IeltsMarkingResult> => {
@@ -72,22 +75,22 @@ export const markIeltsWriting = createServerFn({ method: "POST" })
     const task2Type =
       "Task 2 — a discursive essay responding to the question prompt. At least 250 words. Task 2 is weighted twice as heavily as Task 1.";
 
-    const systemPrompt = `You are an experienced writing tutor providing PRACTICE feedback using IELTS-style writing criteria (Task Response / Task Achievement, Coherence and Cohesion, Lexical Resource, Grammatical Range and Accuracy). Score each criterion from 0 to 9 in 0.5 steps. Be honest and calibrated — do not inflate scores.
+    const systemPrompt = `You are an experienced writing tutor providing PRACTICE feedback using IELTS-style writing criteria (Task Response / Task Achievement, Coherence and Cohesion, Lexical Resource, Grammatical Range and Accuracy). Score each criterion from 0 to 9 in 0.5 steps. Be honest and calibrated — do not inflate scores. Keep the response concise so it can be returned quickly.
 
 For each task, return:
 - band score for each of the four criteria (0–9, 0.5 steps)
-- a short plain-English explanation for each criterion (1–2 sentences) referencing the candidate's actual writing
-- a short summary (2–3 sentences)
-- 3–5 common-mistake bullets specific to this candidate's answer
-- a model answer (about 170 words for Task 1, about 270 words for Task 2) that would score around Band 8
+- a short plain-English explanation for each criterion (one sentence) referencing the candidate's actual writing
+- a short summary (2 sentences)
+- 3 common-mistake bullets specific to this candidate's answer
+- a concise model answer (about 130 words for Task 1, about 190 words for Task 2) that would score around Band 8
 
 Also return, across both tasks combined:
-- whatWentWell: 3–5 concise strength bullets
-- whatToImprove: 3–5 concise improvement bullets
+- whatWentWell: 3 concise strength bullets
+- whatToImprove: 3 concise improvement bullets
 - nextSteps: exactly 3 practical actions before the next attempt
-- whyThisScore: plain-English paragraph explaining the estimated band and what stopped it reaching the next band
-- howToReachNextBand: one paragraph naming the next half-band and the specific changes needed to reach it
-- overallFeedback: 2–3 sentence overall summary
+- whyThisScore: short plain-English paragraph explaining the estimated band and what stopped it reaching the next band
+- howToReachNextBand: short paragraph naming the next half-band and the specific changes needed to reach it
+- overallFeedback: 2 sentence overall summary
 
 Do not use the phrases "AI examiner", "official score", "official IELTS band", "same as the real exam", or "guaranteed". This is practice feedback only.
 
@@ -131,7 +134,7 @@ ${task2Type}`;
     };
 
     const body = {
-      model: "google/gemini-2.5-flash",
+      model: MARKING_MODEL,
       messages: [
         { role: "system", content: systemPrompt },
         { role: "user", content: userPrompt },
@@ -175,14 +178,25 @@ ${task2Type}`;
       },
     };
 
-    const res = await fetch("https://ai.gateway.lovable.dev/v1/chat/completions", {
-      method: "POST",
-      headers: {
-        Authorization: `Bearer ${apiKey}`,
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(body),
-    });
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), MARKING_TIMEOUT_MS);
+    let res: Response;
+    try {
+      res = await fetch("https://ai.gateway.lovable.dev/v1/chat/completions", {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${apiKey}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(body),
+        signal: controller.signal,
+      });
+    } catch (e) {
+      console.error("IELTS marking request failed:", e);
+      throw new Error(e instanceof DOMException && e.name === "AbortError" ? "MARKING_TIMEOUT" : "AI_GATEWAY_ERROR");
+    } finally {
+      clearTimeout(timeout);
+    }
 
     if (!res.ok) {
       if (res.status === 429) {
