@@ -374,6 +374,12 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
 
   async function handleStartExam() {
     if (!examConfig) return;
+    // IELTS Writing uses a dedicated typed-answer flow with AI marking.
+    if (examConfig.english?.skill === "writing") {
+      setExamIntroShown(false);
+      setWritingActive(true);
+      return;
+    }
     setExamLoading(true);
     setExamError(null);
     try {
