@@ -232,3 +232,40 @@ export async function loadEnglishMock(
     questions,
   };
 }
+
+export async function buildRandomEnglishExamQuiz(
+  testSlug: TestSlug,
+  skillSlug: SkillSlug,
+  levelSlug: LevelSlug,
+  opts: {
+    count: number;
+    timeLimitSec: number;
+    passMarkPct: number;
+    title: string;
+    description: string;
+  },
+): Promise<Quiz | undefined> {
+  const file = await loadBankFile(testSlug, skillSlug, levelSlug);
+  if (!file) return undefined;
+  const bank = file.bank;
+  if (bank.length < opts.count) return undefined;
+  const pool = bank.slice();
+  for (let i = pool.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [pool[i], pool[j]] = [pool[j], pool[i]];
+  }
+  const picked = pool.slice(0, opts.count);
+  const topic = `${testSlug}-${skillSlug}-${levelSlug}`;
+  return {
+    slug: `english-${topic}-exam`,
+    category: "english",
+    topic,
+    quizTitle: opts.title,
+    description: opts.description,
+    timeLimit: opts.timeLimitSec,
+    difficulty: "Medium",
+    passMark: opts.passMarkPct,
+    questions: picked.map((raw, idx) => rawToQuestion(raw, idx)),
+  };
+}
+

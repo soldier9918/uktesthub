@@ -29,6 +29,8 @@ import type {
 } from "@/data/quizzes";
 import { getCategory, getTopicDisplayTitle } from "@/data/categories";
 import { TOTAL_MOCKS_PER_TOPIC, buildRandomExamQuiz } from "@/data/mocks";
+import { buildRandomEnglishExamQuiz } from "@/data/english/mocks";
+import type { LevelSlug, SkillSlug, TestSlug } from "@/data/english/categories";
 import { getMockIntro } from "@/data/mock-intros";
 import { AdSlot } from "./AdSlot";
 import { RoadSign } from "./RoadSign";
@@ -126,6 +128,8 @@ type ExamConfig = {
   buttonLabel: string;
   passLabel?: string;
   timeLabel?: string;
+  kind?: "topic" | "english";
+  english?: { test: TestSlug; skill: SkillSlug; level: LevelSlug };
 };
 
 const EXAM_CONFIGS: Record<string, ExamConfig> = {
@@ -239,6 +243,72 @@ const EXAM_CONFIGS: Record<string, ExamConfig> = {
   },
 };
 
+const IELTS_SKILL_LABEL: Record<string, string> = {
+  listening: "Listening",
+  reading: "Reading",
+  writing: "Writing",
+  speaking: "Speaking",
+};
+
+const IELTS_SKILL_FORMAT: Record<
+  string,
+  { count: number; timeLimitSec: number; timeLabel: string }
+> = {
+  listening: { count: 40, timeLimitSec: 30 * 60, timeLabel: "40 questions · ~30 minutes" },
+  reading: { count: 40, timeLimitSec: 60 * 60, timeLabel: "40 questions · 60 minutes" },
+  writing: { count: 40, timeLimitSec: 60 * 60, timeLabel: "Timed IELTS Writing-style practice" },
+  speaking: { count: 40, timeLimitSec: 14 * 60, timeLabel: "Timed IELTS Speaking-style practice" },
+};
+
+const IELTS_LEVELS = new Set(["a1", "a2", "b1", "b2", "c1", "c2"]);
+
+function buildIeltsEnglishConfig(
+  skill: string,
+  level: string,
+): ExamConfig | undefined {
+  const fmt = IELTS_SKILL_FORMAT[skill];
+  const skillLabel = IELTS_SKILL_LABEL[skill];
+  if (!fmt || !skillLabel || !IELTS_LEVELS.has(level)) return undefined;
+  const levelLabel = level.toUpperCase();
+  return {
+    topicSlug: `ielts-${skill}-${level}`,
+    count: fmt.count,
+    timeLimitSec: fmt.timeLimitSec,
+    passMarkPct: 60,
+    passScore: Math.ceil(fmt.count * 0.6),
+    title: `IELTS ${skillLabel} ${levelLabel} Exam`,
+    description: `Realistic IELTS-style ${skillLabel} practice — ${fmt.count} questions. Band score 0–9.`,
+    heading: `IELTS ${skillLabel} Exam Mode`,
+    intro: [
+      "Practise with a realistic IELTS-style English test designed to help you prepare for the real exam.",
+      "IELTS tests your English skills across Listening, Reading, Writing and Speaking. In the real IELTS test, candidates complete Listening, Reading and Writing on the same day, while Speaking may be taken on the same day or within 7 days before or after the test.",
+      "This exam mode helps you practise under timed conditions, improve your English exam technique, and build confidence before test day.",
+      "IELTS test format includes: Listening — 40 questions, around 30 minutes; Reading — 40 questions, 60 minutes; Writing — 2 tasks, 60 minutes; Speaking — 3 parts, 11–14 minutes.",
+      "IELTS does not have a fixed pass mark. Your result is given as a band score from 0 to 9, depending on your performance.",
+    ],
+    buttonLabel: "Start IELTS Exam Mode",
+    passLabel: "Band 0–9 (no fixed pass mark)",
+    timeLabel: fmt.timeLabel,
+    kind: "english",
+    english: {
+      test: "ielts" as TestSlug,
+      skill: skill as SkillSlug,
+      level: level as LevelSlug,
+    },
+  };
+}
+
+function getExamConfig(topic: string): ExamConfig | undefined {
+  const direct = EXAM_CONFIGS[topic];
+  if (direct) return direct;
+  const m = /^ielts-(listening|reading|writing|speaking)-(a1|a2|b1|b2|c1|c2)$/.exec(
+    topic,
+  );
+  if (m) return buildIeltsEnglishConfig(m[1], m[2]);
+  return undefined;
+}
+
+
 export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
   const overrides = useOverrides();
   const baseQuiz = useMemo(
@@ -275,7 +345,7 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [quiz.slug, quiz.questions.length, quiz.timeLimit]);
 
-  const examConfig = EXAM_CONFIGS[baseQuiz.topic];
+  const examConfig = getExamConfig(baseQuiz.topic);
 
   async function handleSelectMode(m: Mode) {
     if (m === "exam" && examConfig) {
@@ -291,13 +361,22 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
     setExamLoading(true);
     setExamError(null);
     try {
-      const exam = await buildRandomExamQuiz(examConfig.topicSlug, {
+      const opts = {
         count: examConfig.count,
         timeLimitSec: examConfig.timeLimitSec,
         passMarkPct: examConfig.passMarkPct,
         title: examConfig.title,
         description: examConfig.description,
-      });
+      };
+      const exam =
+        examConfig.kind === "english" && examConfig.english
+          ? await buildRandomEnglishExamQuiz(
+              examConfig.english.test,
+              examConfig.english.skill,
+              examConfig.english.level,
+              opts,
+            )
+          : await buildRandomExamQuiz(examConfig.topicSlug, opts);
       if (!exam) {
         setExamError("Couldn't load the exam questions. Please try again.");
         setExamLoading(false);
