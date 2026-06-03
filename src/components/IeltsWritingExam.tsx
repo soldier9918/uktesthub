@@ -127,9 +127,9 @@ export function IeltsWritingExam({ level, onExit }: Props) {
       const msg = e instanceof Error ? e.message : "AI_GATEWAY_ERROR";
       const friendly =
         msg === "RATE_LIMIT"
-          ? "AI marking is busy right now. Please try again in a moment."
+          ? "Marking is busy right now. Please try again in a moment."
           : msg === "PAYMENT_REQUIRED"
-            ? "AI marking credits have run out. Please contact the site owner."
+            ? "Marking credits have run out. Please contact the site owner."
             : "Couldn't mark your answers right now. Please try again.";
       setMarkError(friendly);
       submittedRef.current = false;
@@ -145,10 +145,18 @@ export function IeltsWritingExam({ level, onExit }: Props) {
     return (
       <div className="mx-auto max-w-2xl px-4 py-16 text-center">
         <Loader2 className="mx-auto h-10 w-10 animate-spin text-primary" />
-        <h2 className="mt-6 text-2xl font-semibold">Marking your IELTS Writing…</h2>
+        <h2 className="mt-6 text-2xl font-semibold">Reviewing your IELTS Writing…</h2>
         <p className="mt-2 text-muted-foreground">
-          This usually takes 20–40 seconds while an AI examiner reviews both tasks against the
-          official IELTS band descriptors.
+          Your Task 1 and Task 2 answers are being reviewed using IELTS-style writing criteria,
+          including task response, organisation, vocabulary and grammar.
+        </p>
+        <p className="mt-2 text-muted-foreground">
+          This usually takes 20–40 seconds. Your feedback will include an estimated practice band,
+          strengths, common mistakes and improvement tips.
+        </p>
+        <p className="mt-4 text-xs text-muted-foreground">
+          Important note: This is an independent practice estimate only. Official IELTS Writing
+          scores are awarded by trained IELTS examiners.
         </p>
       </div>
     );
@@ -319,7 +327,7 @@ export function IeltsWritingExam({ level, onExit }: Props) {
                 if (
                   typeof window !== "undefined" &&
                   !window.confirm(
-                    "Finish and submit both tasks for AI marking? You won't be able to edit after this.",
+                    "Finish and submit both tasks for marking and feedback? You won't be able to edit after this.",
                   )
                 )
                   return;
@@ -488,8 +496,8 @@ function ResultsScreen({
       <Alert className="mb-6">
         <AlertCircle className="h-4 w-4" />
         <AlertDescription>
-          This is a practice estimate only. Official IELTS Writing scores are awarded by trained
-          IELTS examiners using the official band descriptors.
+          Your estimated band score is for practice and self-review only. UK Test Hub is not
+          affiliated with IELTS, the British Council, IDP, Cambridge, or any official test provider.
         </AlertDescription>
       </Alert>
 
