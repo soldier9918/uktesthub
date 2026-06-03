@@ -256,7 +256,7 @@ const IELTS_SKILL_FORMAT: Record<
 > = {
   listening: { count: 40, timeLimitSec: 30 * 60, timeLabel: "40 questions · ~30 minutes" },
   reading: { count: 40, timeLimitSec: 60 * 60, timeLabel: "40 questions · 60 minutes" },
-  writing: { count: 40, timeLimitSec: 60 * 60, timeLabel: "Timed IELTS Writing-style practice" },
+  writing: { count: 2, timeLimitSec: 60 * 60, timeLabel: "2 writing tasks · 60 minutes" },
   speaking: { count: 40, timeLimitSec: 14 * 60, timeLabel: "Timed IELTS Speaking-style practice" },
 };
 
