@@ -108,11 +108,86 @@ function normaliseDifficulty(raw: string): Difficulty | null {
   return null;
 }
 
-function splitCommonMistakes(raw: string): string[] {
+function splitPipeList(raw: string): string[] {
   return raw
     .split("|")
     .map((s) => s.trim())
     .filter((s) => s.length > 0);
+}
+
+// -------- Fallback generators (used when optional CSV cols are missing) --------
+
+/**
+ * Hash a string to a small non-negative integer. Used so two mocks with
+ * different covers produce different fallback topic permutations.
+ */
+function smallHash(s: string): number {
+  let h = 0;
+  for (let i = 0; i < s.length; i++) {
+    h = (h * 31 + s.charCodeAt(i)) | 0;
+  }
+  return Math.abs(h);
+}
+
+const FALLBACK_TOPIC_POOL = [
+  "Road signs and signals",
+  "Hazard awareness in mixed conditions",
+  "Safe speed and stopping distances",
+  "Junction priority and observation",
+  "Vulnerable road user awareness",
+  "Lane discipline and road positioning",
+  "Reading road markings",
+  "Defensive driver decisions",
+  "Vehicle safety and routine checks",
+  "Reading the full scenario before answering",
+  "Adapting to weather and visibility",
+  "Mirrors, signals and manoeuvres",
+];
+
+function fallbackTopics(mockNumber: number, difficulty: Difficulty, covers: string): string[] {
+  const seed = smallHash(`${mockNumber}|${difficulty}|${covers}`);
+  const pool = [...FALLBACK_TOPIC_POOL];
+  // Deterministic rotation so each mock starts the list at a different index.
+  const start = seed % pool.length;
+  const rotated = pool.slice(start).concat(pool.slice(0, start));
+
+  const stagePrefix =
+    difficulty === "Beginner"
+      ? `Beginner-stage focus: foundations`
+      : difficulty === "Intermediate"
+        ? `Intermediate-stage focus: mixed scenarios`
+        : `Exam-ready focus: timed accuracy`;
+
+  return [`${stagePrefix} (Mock Test ${mockNumber})`, ...rotated.slice(0, 4)];
+}
+
+function fallbackWhoFor(mockNumber: number, difficulty: Difficulty): string {
+  // Slight per-mock variation via a small phrase pool keyed by the mock number.
+  const variants = [
+    "build confidence",
+    "check accuracy",
+    "spot weak topics",
+    "rehearse under quiz pressure",
+    "consolidate earlier revision",
+  ];
+  const phrase = variants[mockNumber % variants.length];
+  if (difficulty === "Beginner") {
+    return `Mock Test ${mockNumber} suits learners starting their theory revision who want to ${phrase} with basic rules, signs and safe driving decisions before moving on to harder mocks.`;
+  }
+  if (difficulty === "Intermediate") {
+    return `Mock Test ${mockNumber} suits learners who already know the basics and want to ${phrase} with mixed-topic, scenario-style practice.`;
+  }
+  return `Mock Test ${mockNumber} suits learners close to test day who want to ${phrase} across mixed Driving Theory topics under timed conditions.`;
+}
+
+function parseFaqsFromRow(r: Record<string, string>): PerMockFaq[] {
+  const faqs: PerMockFaq[] = [];
+  for (let i = 1; i <= 3; i++) {
+    const q = (r[`faq_question_${i}`] ?? "").trim();
+    const a = (r[`faq_answer_${i}`] ?? "").trim();
+    if (q && a) faqs.push({ q, a });
+  }
+  return faqs;
 }
 
 function parseIntrosCsv(
@@ -195,7 +270,7 @@ function parseIntrosCsv(
       return;
     }
 
-    const commonMistakes = splitCommonMistakes(r.common_mistakes ?? "");
+    const commonMistakes = splitPipeList(r.common_mistakes ?? "");
     if (commonMistakes.length === 0) {
       errors.push({ csvLine, message: 'Empty "common_mistakes" (provide a pipe-separated list).' });
       return;
@@ -204,6 +279,27 @@ function parseIntrosCsv(
       errors.push({ csvLine, message: `Too many "common_mistakes" items (${commonMistakes.length}, max 12).` });
       return;
     }
+
+    // Optional fields with fallbacks.
+    const topicsCsv = splitPipeList(r.topics_included ?? "");
+    if (topicsCsv.length > 12) {
+      errors.push({ csvLine, message: `Too many "topics_included" items (${topicsCsv.length}, max 12).` });
+      return;
+    }
+    const topicsIncluded =
+      topicsCsv.length > 0 ? topicsCsv : fallbackTopics(mockNum, difficulty, covers);
+
+    const whoForCsv = (r.who_this_mock_is_for ?? "").trim();
+    if (whoForCsv.length > 800) {
+      errors.push({
+        csvLine,
+        message: `"who_this_mock_is_for" is too long (${whoForCsv.length} chars, max 800).`,
+      });
+      return;
+    }
+    const whoFor = whoForCsv || fallbackWhoFor(mockNum, difficulty);
+
+    const faqs = parseFaqsFromRow(r);
 
     const dedupeKey = `${topicSlug}|${mockNum}`;
     if (seen.has(dedupeKey)) {
@@ -216,11 +312,78 @@ function parseIntrosCsv(
       csvLine,
       topicSlug,
       mock: mockNum,
-      intro: { difficulty, covers, commonMistakes },
+      intro: {
+        difficulty,
+        covers,
+        commonMistakes,
+        topicsIncluded,
+        whoFor,
+        ...(faqs.length > 0 ? { faqs } : {}),
+      },
     });
   });
 
   return { rows, errors, hasTopicColumn };
+}
+
+/**
+ * Detect identical content across mocks within the same topic.
+ * Returns a list of human-readable warnings — does NOT block the upload.
+ */
+export type DuplicateWarning = { message: string; topicSlug: string; field: string; mocks: number[] };
+
+function detectDuplicateContent(next: IntrosMap, affectedTopics: Set<string>): DuplicateWarning[] {
+  const warnings: DuplicateWarning[] = [];
+  const fields: Array<{
+    key: keyof PerMockIntro;
+    label: string;
+    extract: (i: PerMockIntro) => string;
+  }> = [
+    { key: "covers", label: "covers", extract: (i) => i.covers.trim().toLowerCase() },
+    {
+      key: "topicsIncluded",
+      label: "topics_included",
+      extract: (i) =>
+        (i.topicsIncluded ?? []).map((s) => s.trim().toLowerCase()).join("|"),
+    },
+    {
+      key: "whoFor",
+      label: "who_this_mock_is_for",
+      extract: (i) => (i.whoFor ?? "").trim().toLowerCase(),
+    },
+    {
+      key: "commonMistakes",
+      label: "common_mistakes",
+      extract: (i) => i.commonMistakes.map((s) => s.trim().toLowerCase()).join("|"),
+    },
+  ];
+
+  for (const topic of affectedTopics) {
+    const byMock = next[topic] ?? {};
+    for (const f of fields) {
+      const buckets = new Map<string, number[]>();
+      for (const [mockStr, intro] of Object.entries(byMock)) {
+        const sig = f.extract(intro);
+        if (!sig) continue;
+        const arr = buckets.get(sig) ?? [];
+        arr.push(Number(mockStr));
+        buckets.set(sig, arr);
+      }
+      for (const [, mocks] of buckets) {
+        if (mocks.length >= 2) {
+          warnings.push({
+            topicSlug: topic,
+            field: f.label,
+            mocks: mocks.sort((a, b) => a - b),
+            message: `${topic}: "${f.label}" is identical across mocks ${mocks
+              .sort((a, b) => a - b)
+              .join(", ")}. Pages may look template-like.`,
+          });
+        }
+      }
+    }
+  }
+  return warnings;
 }
 
 // -------- Merge + diff --------
