@@ -1,48 +1,43 @@
-# Driving Theory — real exam mode
+## Why you don't see it
 
-Only the **Exam mode** button (on every Driving Theory mock card 1–45) changes. The 45 numbered Mock Tests themselves and their Practice mode stay exactly as they are today.
+The IELTS Exam Mode config I added earlier is read by `QuizRunner` via `EXAM_CONFIGS[quiz.topic]`. That only fires when a quiz's `topic` field equals `"ielts"`, which is the `/topic/ielts` page.
 
-## What changes for the user
+The IELTS pages you're actually using live under `/english-language-tests/ielts/<skill>/<level>/...`. Their mock quizzes have `topic = "ielts-<skill>-<level>"` (e.g. `ielts-speaking-a1`), so the lookup misses and no Exam button appears. Also, the exam builder reads from `/mocks/<slug>.json`, but English banks live at `/english-mocks/<test>/<skill>/<level>.json` — a different loader entirely. So even with a matching key, the current builder couldn't load the questions.
 
-When the user clicks **Exam mode** on any Driving Theory mock:
+## Goal
 
-- 50 questions drawn at random from the full driving-theory bank (~1,302 questions).
-- All 50 are unique (no repeats within a session).
-- 57-minute countdown timer.
-- Pass mark = 43/50 (86%) — shown on screen and used for the pass/fail badge at the end.
-- A fresh random set is picked every time the user starts the exam.
+Show an "IELTS Exam Mode" entry on every IELTS skill+level mock test (Listening, Reading, Writing, Speaking × A1–C2 = 24 combinations), with the intro screen and button copy you supplied, launching a fresh randomised exam pulled from that level's bank (each bank has ~1,000+ questions).
 
-The "Start exam" card on the intro screen will show "50 questions · 57 min · Pass 43/50" so it's obvious.
+## Changes
 
-## What does NOT change
+### 1. New exam builder for English banks
+`src/data/mocks/index.ts` — add `buildRandomEnglishExamQuiz(test, skill, level, opts)`:
+- Calls `loadBankFile(test, skill, level)` (from `src/data/english/mocks.ts`).
+- Same Fisher–Yates shuffle, take first N.
+- Returns a `Quiz` with `topic = "<test>-<skill>-<level>"`, `slug = "<test>-<skill>-<level>-exam"`, `category = "english"`, supplied title/description/time/pass mark.
 
-- Mock Test 1..45 cards, titles, and order — untouched.
-- Practice mode on every mock still runs the fixed 24 questions for that mock with explanations.
-- All other topics (Hazard Perception, Motorcycle, LGV, HGV, PCV, ADR, Driver CPC, etc.) — completely untouched.
-- The CSV import / question bank / admin tools — untouched.
+### 2. Dynamic Exam Config resolution
+`src/components/QuizRunner.tsx`:
+- Replace `EXAM_CONFIGS[baseQuiz.topic]` with `getExamConfig(baseQuiz.topic)`.
+- `getExamConfig` first checks the static map; otherwise matches `^ielts-(listening|reading|writing|speaking)-(a1|a2|b1|b2|c1|c2)$` and returns a dynamically built `ExamConfig` with:
+  - `kind: "english"`, `english: { test, skill, level }`
+  - Per-skill count + time:
+    - Listening: 40Q / 30 min
+    - Reading: 40Q / 60 min
+    - Writing: 40Q / 60 min (MCQ practice in real Writing duration)
+    - Speaking: 40Q / 14 min (matches real Speaking)
+  - `passMarkPct: 60`, `passLabel: "Band 0–9 (no fixed pass mark)"`, `timeLabel: <skill-specific>`
+  - `heading: "IELTS <Skill> Exam Mode"`, `buttonLabel: "Start IELTS Exam Mode"`
+  - `intro`: the 5-paragraph copy you provided (kept identical across skills/levels; the format list lines up with the real test).
+- Extend the `ExamConfig` type with optional `kind` + `english` fields.
+- In `handleStartExam`, branch on `examConfig.kind`:
+  - `"english"` → call `buildRandomEnglishExamQuiz`.
+  - otherwise → existing `buildRandomExamQuiz`.
 
-## Technical plan
+### 3. No UI restructuring needed
+`ModeSelect` and `ExamIntroScreen` already render whatever `examConfig` they receive. Once `getExamConfig` returns a value for english topics, the Exam Mode card + intro screen + Start button will appear automatically on every IELTS mock test page.
 
-1. **`src/data/mocks/index.ts`** — add `buildRandomExamQuiz(topicSlug, { count, timeLimitSec, passMarkPct, title, description })`:
-   - Calls existing `loadTopicFile(topic)`, requires v2 (bank) shape.
-   - Fisher-Yates shuffles `bank`, takes the first `count` entries → guaranteed unique.
-   - Maps each through the existing `rawToQuestion` converter and attaches `sourceId` (same pattern as `mockToQuiz`).
-   - Returns a `Quiz` with `slug: "${topic}-exam"`, the requested `timeLimit` and `passMark`, and a synthetic title.
-   - Falls back to `undefined` if the topic isn't v2 or has fewer than `count` bank questions.
-
-2. **`src/components/QuizRunner.tsx`** — extend the exam launch flow:
-   - When the user clicks "Start exam" AND `quiz.topic === "driving-theory"`, call `buildRandomExamQuiz("driving-theory", { count: 50, timeLimitSec: 57 * 60, passMarkPct: 86, title: "Driving Theory Exam", description: "Real-test format — 50 questions, 57 minutes, pass 43/50." })`.
-   - Swap the active quiz to the returned exam quiz (new local state `activeQuiz`, defaulting to the prop `quiz`).
-   - Re-initialise `answers`, `revealed`, `timeLeft`, `current`, `finished` to match the new quiz length / timeLimit.
-   - All other topics keep the existing behaviour (exam mode = the mock's 24 questions, timed).
-   - The percent-based pass check (`percent >= quiz.passMark`) already lines up: 43/50 = 86%, exam quiz carries `passMark: 86`.
-
-3. **`ModeSelect` UI** — when `quiz.topic === "driving-theory"`, replace the Exam mode subtitle/chips with the real-exam stats ("50 questions · 57 min · Pass 43/50"). Practice card and Mock Test 1..45 lists are unchanged.
-
-4. **Result screen** — already shows `score / quiz.questions.length` and the pass/fail badge from `quiz.passMark`, so it will read "43 / 50" and "Pass" / "Fail" correctly with no extra work.
-
-## Out of scope (confirmed)
-
-- No changes to mocks 2..45 content, order, or shuffling.
-- No changes to any non-driving-theory topic.
-- No DB or admin changes.
+## Out of scope
+- ESOL, TOEFL, LanguageCert, Pearson, etc. (also under `/english-language-tests/`). Only IELTS, per your request.
+- Changing the existing `/topic/ielts` config — that stays as-is.
+- Real Writing/Speaking task formats (the bank is MCQ; we surface that as MCQ practice within real-test timings).
