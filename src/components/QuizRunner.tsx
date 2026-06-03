@@ -1372,6 +1372,23 @@ function MockStartIntro({ quiz }: { quiz: Quiz }) {
   };
 
   const aboutText = perMock?.covers ?? intro.description;
+  const topics = perMock?.topicsIncluded?.length ? perMock.topicsIncluded : intro.topics;
+  const whoForText = perMock?.whoFor ?? intro.whoFor;
+
+  // Merge mock-specific FAQs (first) with topic-level FAQs, deduped by question.
+  const mergedFaqs = (() => {
+    const list: { q: string; a: string }[] = [];
+    const seen = new Set<string>();
+    for (const f of perMock?.faqs ?? []) {
+      const k = f.q.trim().toLowerCase();
+      if (!seen.has(k)) { seen.add(k); list.push(f); }
+    }
+    for (const f of intro.faqs ?? []) {
+      const k = f.q.trim().toLowerCase();
+      if (!seen.has(k)) { seen.add(k); list.push(f); }
+    }
+    return list;
+  })();
 
   return (
     <section className="mt-8 rounded-3xl border border-border bg-card p-6 shadow-soft md:p-10">
@@ -1395,7 +1412,7 @@ function MockStartIntro({ quiz }: { quiz: Quiz }) {
       <div className="mt-6">
         <h3 className="font-display text-base font-semibold">Topics included</h3>
         <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-foreground md:text-base">
-          {intro.topics.map((t) => (
+          {topics.map((t) => (
             <li key={t}>{t}</li>
           ))}
         </ul>
@@ -1414,6 +1431,13 @@ function MockStartIntro({ quiz }: { quiz: Quiz }) {
         </div>
       )}
 
+      <div className="mt-6">
+        <h3 className="font-display text-base font-semibold">Who this mock is for</h3>
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground md:text-base">
+          {whoForText}
+        </p>
+      </div>
+
       {relatedGuide && (
         <p className="mt-6 text-sm leading-relaxed text-muted-foreground md:text-base">
           <span className="font-semibold text-foreground">
@@ -1428,13 +1452,6 @@ function MockStartIntro({ quiz }: { quiz: Quiz }) {
           — {relatedGuide.intro.replace(/^Read the [^—]+\s*/, "")}
         </p>
       )}
-
-      <div className="mt-6">
-        <h3 className="font-display text-base font-semibold">Who this mock is for</h3>
-        <p className="mt-2 text-sm leading-relaxed text-muted-foreground md:text-base">
-          {intro.whoFor}
-        </p>
-      </div>
 
       <h2 className="mt-10 font-display text-xl font-bold md:text-2xl">How to practise</h2>
       <div className="mt-4 grid gap-4 md:grid-cols-2">
@@ -1460,11 +1477,11 @@ function MockStartIntro({ quiz }: { quiz: Quiz }) {
         </div>
       </div>
 
-      {intro.faqs && intro.faqs.length > 0 && (
+      {mergedFaqs.length > 0 && (
         <div className="mt-10">
           <h3 className="font-display text-lg font-bold md:text-xl">Frequently asked questions</h3>
           <dl className="mt-3 space-y-4">
-            {intro.faqs.map((f) => (
+            {mergedFaqs.map((f) => (
               <div key={f.q} className="border-b border-border pb-4 last:border-b-0">
                 <dt className="text-sm font-semibold text-foreground md:text-base">{f.q}</dt>
                 <dd className="mt-1 text-sm leading-relaxed text-muted-foreground md:text-base">{f.a}</dd>

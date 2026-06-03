@@ -40,14 +40,13 @@ export const Route = createFileRoute("/admin-kb20/mock-intros-import")({
 
 type PreviewResult = Awaited<ReturnType<typeof previewMockIntrosImport>>;
 
-const SAMPLE_SINGLE = `mock,difficulty,covers,common_mistakes
-1,Beginner,"Driving Theory Mock Test 1 covers foundation topics such as road signs, safe driving behaviour, speed awareness, road markings and basic hazard recognition.","Rushing through simple road sign questions | Missing words such as must, should or never | Confusing warning signs with mandatory signs | Guessing before reading all answer options"
-2,Beginner,"Driving Theory Mock Test 2 focuses on everyday driving knowledge, including road positioning, safe following distances, junction awareness and basic rules of the road.","Choosing an answer too quickly at junction questions | Forgetting to consider vulnerable road users | Confusing stopping distance with thinking distance | Not reviewing incorrect answers after finishing"
+const SAMPLE_SINGLE = `mock,difficulty,covers,common_mistakes,topics_included,who_this_mock_is_for,faq_question_1,faq_answer_1
+1,Beginner,"Mock 1 covers foundation road signs and basic safe behaviour.","Rushing signs | Missing key words | Confusing sign shapes","Foundation road signs|Basic safe driving behaviour|Speed awareness|Reading road markings|First-look hazard recognition","Mock 1 suits learners starting their revision who want to build confidence with the basics.","What is Mock 1 best for?","Mock 1 is a beginner-level checkpoint focused on foundation signs and safe behaviour."
 `;
 
-const SAMPLE_MULTI = `topic_slug,mock,difficulty,covers,common_mistakes
-driving-theory,1,Beginner,"Driving Theory Mock Test 1 covers...","Rushing | Missing key words | Confusing signs | Guessing"
-life-in-the-uk,1,Beginner,"Life in the UK Mock 1 covers history, geography...","Mixing up monarchs | Confusing dates | Forgetting devolved nations | Skipping practice questions"
+const SAMPLE_MULTI = `topic_slug,mock,difficulty,covers,common_mistakes,topics_included,who_this_mock_is_for
+driving-theory,4,Beginner,"Mock 4 focuses on lane discipline and parking awareness.","Misreading lane discipline | Forgetting parking checks","Lane discipline and road positioning|Parking awareness and safety checks|Essential road signs|Safe vehicle control|Early-stage learner driver decisions","Mock 4 suits early-stage learners building confidence with lane discipline."
+life-in-the-uk,1,Beginner,"Life in the UK Mock 1 covers history and geography.","Mixing up monarchs | Confusing dates",,"For ILR/citizenship applicants starting their revision."
 `;
 
 function MockIntrosImportPage() {
@@ -174,13 +173,17 @@ function MockIntrosImportPage() {
       <section className="mt-6 rounded-xl border border-border bg-card p-5">
         <h2 className="font-semibold">CSV format</h2>
         <p className="mt-1 text-sm text-muted-foreground">
-          Required columns: <code>mock</code>, <code>difficulty</code>, <code>covers</code>,{" "}
-          <code>common_mistakes</code>. Add a <code>topic_slug</code> column to import across
-          multiple topics in one file (the dropdown below is ignored when the column is present).
+          Required: <code>mock</code>, <code>difficulty</code>, <code>covers</code>,{" "}
+          <code>common_mistakes</code>. Optional: <code>topics_included</code>,{" "}
+          <code>who_this_mock_is_for</code>, <code>faq_question_1..3</code>,{" "}
+          <code>faq_answer_1..3</code>. Add <code>topic_slug</code> for multi-topic CSVs.
           <br />
-          <code>difficulty</code> = <em>Beginner</em>, <em>Intermediate</em>, or{" "}
-          <em>Exam-ready</em>. <code>mock</code> = integer 1–45.{" "}
-          <code>common_mistakes</code> = pipe (<code>|</code>) separated bullets.
+          <code>difficulty</code> = <em>Beginner</em> / <em>Intermediate</em> /{" "}
+          <em>Exam-ready</em>. <code>mock</code> = 1–45.{" "}
+          <code>common_mistakes</code> and <code>topics_included</code> are pipe (<code>|</code>) separated.
+          <br />
+          Missing <code>topics_included</code> / <code>who_this_mock_is_for</code> use
+          unique per-mock fallbacks so no two mocks share the same text.
         </p>
         <details className="mt-3 text-sm">
           <summary className="cursor-pointer font-medium">Show sample CSVs</summary>
@@ -338,6 +341,19 @@ function MockIntrosImportPage() {
           {preview.affectedTopics.length > 0 && (
             <div className="mt-3 text-xs text-muted-foreground">
               Affected topics: {preview.affectedTopics.join(", ")}
+            </div>
+          )}
+          {preview.duplicateWarnings && preview.duplicateWarnings.length > 0 && (
+            <div className="mt-3 rounded-md border border-amber-500/40 bg-amber-500/10 p-3 text-xs text-amber-800">
+              <div className="font-semibold">
+                ⚠ Some mock intro content appears duplicated across multiple mock tests.
+                This may make pages look template-like. Please review before committing.
+              </div>
+              <ul className="mt-2 list-disc space-y-1 pl-5">
+                {preview.duplicateWarnings.slice(0, 30).map((w, i) => (
+                  <li key={i}>{w.message}</li>
+                ))}
+              </ul>
             </div>
           )}
           {preview.parseErrors.length > 0 && (
