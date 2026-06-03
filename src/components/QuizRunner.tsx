@@ -544,6 +544,19 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
   }, [finished, score, quiz, user]);
 
 
+  if (writingActive && examConfig?.english?.skill === "writing") {
+    return (
+      <IeltsWritingExam
+        level={examConfig.english.level}
+        onExit={() => {
+          setWritingActive(false);
+          setExamIntroShown(false);
+          setMode(null);
+        }}
+      />
+    );
+  }
+
   if (examIntroShown && examConfig) {
     return (
       <ExamIntroScreen
