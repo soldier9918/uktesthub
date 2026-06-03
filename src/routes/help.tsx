@@ -56,9 +56,9 @@ function HelpPage() {
           explanation after every question. No timer. Best for learning.
         </li>
         <li>
-          <strong>Exam mode</strong> — timed, real-test feel. Results and
-          full review shown at the end. Best when you're close to your
-          exam date.
+          <strong>Exam mode</strong> — official-style practice with timed
+          conditions to help build test-day confidence. Results and full
+          review shown at the end. Best when you're close to your exam date.
         </li>
       </ul>
 

@@ -86,9 +86,9 @@ function AboutPage() {
         reaches the site.
       </p>
       <p>
-        We deliberately match the format and difficulty of the real test so
-        your practice score is a meaningful predictor of your real-test
-        performance.
+        Our mocks are designed to reflect the format and difficulty of the
+        real test, so your practice scores are a useful way to track your
+        readiness and build test-day confidence.
       </p>
 
       <h2>Editorial standards</h2>
