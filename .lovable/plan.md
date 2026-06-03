@@ -1,40 +1,71 @@
-Add unique per-mock descriptive blocks to all 45 Driving Theory mock test start pages so each page has distinct content.
+## Goal
 
-## Background
-Currently every Driving Theory mock (/quiz/driving-theory-mock-1 through /quiz/driving-theory-mock-45) shows the same generic topic-level intro on its start screen. The user has supplied ready-to-use unique text for each mock covering difficulty, what it covers, and common mistakes.
+Add a new admin tool: **Per-Mock Intros CSV Import** at `/admin-kb20/mock-intros-import`. Upload a CSV of "What this mock covers" + "Common mistakes" content for any topic across any category, preview the diff, then commit the changes to `src/data/per-mock-intros.ts` on GitHub `main` (same flow as the existing CSV Import → GitHub feature).
 
-## Changes
+## CSV format
 
-### 1. New data file: `src/data/per-mock-intros.ts`
-Create a record keyed by topic slug (`driving-theory`) and mock number (1-45). Each entry stores:
-- `difficulty` — e.g. "Beginner", "Intermediate", "Exam-ready"
-- `covers` — the "What this mock covers" paragraph
-- `commonMistakes` — array of bullet strings
-- `relatedGuide` — text + URL for the "Related revision guide" link (same for all 45)
+Auto-detect single-topic vs. all-topics by column presence.
 
-Populate it with all 45 blocks from the user's message.
-
-### 2. Export lookup helper in `src/data/mock-intros.ts`
-Add:
+**Single topic** (no `topic_slug` column — topic chosen via dropdown in UI):
 ```
-export function getPerMockIntro(topicSlug: string, mockNumber: number): PerMockIntro | undefined
+mock,difficulty,covers,common_mistakes
+1,Beginner,"Driving Theory Mock Test 1 covers...","Rushing | Missing words | Confusing signs | Guessing"
+2,Beginner,"...","..."
 ```
-Returns the matching entry or undefined if none exists.
 
-### 3. Update `MockStartIntro` in `src/components/QuizRunner.tsx`
-- After loading the generic topic intro, also call `getPerMockIntro(quiz.topic, mockNumber)`.
-- If a per-mock intro exists, render it **above** the generic description as a compact card:
-  - Difficulty badge (coloured by level: green Beginner, amber Intermediate, red Exam-ready)
-  - "What this mock covers" paragraph
-  - "Common mistakes in this mock" as a short bulleted list
-  - "Related revision guide" link below the list
-- Keep the existing generic description, topics, whoFor, practice/exam boxes, and FAQs below the new block so the page still has full context.
+**All topics** (includes `topic_slug` column — topic dropdown ignored):
+```
+topic_slug,mock,difficulty,covers,common_mistakes
+driving-theory,1,Beginner,"...","..."
+life-in-the-uk,1,Beginner,"...","..."
+seru,1,Intermediate,"...","..."
+```
 
-### 4. No route or SEO changes
-The `/quiz/$slug` dynamic route already serves all 45 mocks. Titles and descriptions are already unique per mock number. This plan only adds body content.
+- `mock`: integer 1–45
+- `difficulty`: `Beginner | Intermediate | Exam-ready` (matches existing `Difficulty` type)
+- `covers`: free text paragraph
+- `common_mistakes`: pipe (`|`) separated list, 3–6 items recommended
+- `topic_slug` (optional): any slug from `src/data/categories.ts`; validates against the known list
 
-## Acceptance criteria
-- `/quiz/driving-theory-mock-1` through `/quiz/driving-theory-mock-45` each display their own unique difficulty, covers paragraph, and common-mistakes list.
-- The "Related revision guide" link appears on all 45 pages.
-- Non-driving-theory mocks are unaffected and still show only the generic topic intro.
-- The page layout remains clean and the new block is visually compact.
+## UI (mirrors `/admin-kb20/csv-import`)
+
+1. Topic picker (searchable, populated from `categories.ts`, all categories + subtopics) — disabled if CSV contains `topic_slug`
+2. File upload + textarea paste
+3. Mode toggle: **Patch** (merge with existing) or **Replace** (overwrite topic block)
+4. **Preview** button — shows per-row diff: added / changed / unchanged, with validation errors highlighted
+5. **Commit to GitHub** button — writes new `per-mock-intros.ts`, pushes to `main` with a descriptive commit message, returns commit URL
+6. Recent commits list with rollback (reuses existing `listImportHistory` / `rollbackImport` pattern)
+
+## Implementation
+
+**New file `src/lib/admin/mock-intros-import.functions.ts`** — three server fns following the pattern in `src/lib/admin/csv-import.functions.ts`:
+- `previewMockIntrosImport({ csvText, topicSlug, mode })` → parses CSV, validates rows, diffs against current `per-mock-intros.ts`, returns `{ rows, errors, summary }`
+- `commitMockIntrosImport({ csvText, topicSlug, mode })` → regenerates the full `per-mock-intros.ts` source, commits via GitHub API using `GITHUB_TOKEN` secret, logs to `question_import_history` with a new `kind='mock_intros'` marker
+- `rollbackMockIntrosImport({ historyId })` → reverts to previous file SHA
+
+Server fns will:
+- Import current intros via dynamic `await import("@/data/per-mock-intros.ts")` inside `.handler()`
+- Re-serialize the full TS file with a stable formatter (preserve `RELATED_GUIDE_BY_TOPIC`, `Difficulty` type, and existing topic blocks not in the CSV)
+- Reuse the existing GitHub commit helper used by `csv-import.functions.ts`
+
+**New file `src/routes/admin-kb20.mock-intros-import.tsx`** — page UI wrapped in `<AdminGate>`, copies the structure and styling of `admin-kb20.csv-import.tsx`.
+
+**Edit `src/routes/admin-kb20.index.tsx`** — add a new `<Tile>` under the **Content** section:
+```
+<Tile to="/admin-kb20/mock-intros-import" title="Mock Intros CSV Import"
+  desc="Upload CSV of per-mock difficulty, 'What this mock covers' and 'Common mistakes' for any topic. Commits to per-mock-intros.ts on GitHub." />
+```
+
+**Edit `src/data/per-mock-intros.ts`** — no schema changes; the data structure already supports `Record<string, Record<number, PerMockIntro>>` for all categories.
+
+## Out of scope (this plan)
+
+- Editing `RELATED_GUIDE_BY_TOPIC` via CSV (kept manual; small dataset)
+- A separate UI for editing single rows (admins can re-upload CSVs)
+- Bulk Mock Test Manager integration (separate page already exists at `/admin-kb20/mocks`)
+
+## Estimated changes
+
+- 2 new files (~600 LOC total, mostly mirroring existing CSV import patterns)
+- 1 small edit to admin index (1 new tile)
+- No DB migrations, no new dependencies
