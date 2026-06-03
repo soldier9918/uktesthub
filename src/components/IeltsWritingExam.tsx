@@ -309,20 +309,26 @@ export function IeltsWritingExam({ level, onExit }: Props) {
           >
             Save draft
           </Button>
-          <Button
-            onClick={() => {
-              if (
-                typeof window !== "undefined" &&
-                !window.confirm(
-                  "Finish and submit both tasks for AI marking? You won't be able to edit after this.",
+          {activeTab === 1 ? (
+            <Button onClick={() => setActiveTab(2)}>
+              Next: Task 2 →
+            </Button>
+          ) : (
+            <Button
+              onClick={() => {
+                if (
+                  typeof window !== "undefined" &&
+                  !window.confirm(
+                    "Finish and submit both tasks for AI marking? You won't be able to edit after this.",
+                  )
                 )
-              )
-                return;
-              void submit();
-            }}
-          >
-            Finish &amp; Mark
-          </Button>
+                  return;
+                void submit();
+              }}
+            >
+              Finish &amp; Mark
+            </Button>
+          )}
         </div>
       </div>
     </div>
