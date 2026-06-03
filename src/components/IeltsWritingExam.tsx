@@ -145,10 +145,18 @@ export function IeltsWritingExam({ level, onExit }: Props) {
     return (
       <div className="mx-auto max-w-2xl px-4 py-16 text-center">
         <Loader2 className="mx-auto h-10 w-10 animate-spin text-primary" />
-        <h2 className="mt-6 text-2xl font-semibold">Marking your IELTS Writing…</h2>
+        <h2 className="mt-6 text-2xl font-semibold">Reviewing your IELTS Writing…</h2>
         <p className="mt-2 text-muted-foreground">
-          This usually takes 20–40 seconds while an AI examiner reviews both tasks against the
-          official IELTS band descriptors.
+          Your Task 1 and Task 2 answers are being reviewed using IELTS-style writing criteria,
+          including task response, organisation, vocabulary and grammar.
+        </p>
+        <p className="mt-2 text-muted-foreground">
+          This usually takes 20–40 seconds. Your feedback will include an estimated practice band,
+          strengths, common mistakes and improvement tips.
+        </p>
+        <p className="mt-4 text-xs text-muted-foreground">
+          Important note: This is an independent practice estimate only. Official IELTS Writing
+          scores are awarded by trained IELTS examiners.
         </p>
       </div>
     );
