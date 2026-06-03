@@ -1371,55 +1371,26 @@ function MockStartIntro({ quiz }: { quiz: Quiz }) {
     "Exam-ready": "bg-[#c81e2c]/10 text-[#c81e2c] border-[#c81e2c]/30",
   };
 
+  const aboutText = perMock?.covers ?? intro.description;
+
   return (
     <section className="mt-8 rounded-3xl border border-border bg-card p-6 shadow-soft md:p-10">
-      {perMock && (
-        <div className="mb-8 rounded-2xl border border-border bg-background/60 p-5 md:p-6">
-          <div className="flex flex-wrap items-center gap-2">
-            <span
-              className={`inline-flex items-center rounded-full border px-3 py-1 text-xs font-semibold uppercase tracking-wider ${
-                difficultyClasses[perMock.difficulty] ?? ""
-              }`}
-            >
-              Difficulty: {perMock.difficulty}
-            </span>
-          </div>
-          <h3 className="mt-4 font-display text-base font-semibold">
-            What this mock covers
-          </h3>
-          <p className="mt-2 text-sm leading-relaxed text-foreground md:text-base">
-            {perMock.covers}
-          </p>
-          <h3 className="mt-5 font-display text-base font-semibold">
-            Common mistakes in this mock
-          </h3>
-          <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-foreground md:text-base">
-            {perMock.commonMistakes.map((m) => (
-              <li key={m}>{m}</li>
-            ))}
-          </ul>
-          {relatedGuide && (
-            <p className="mt-5 text-sm leading-relaxed text-muted-foreground md:text-base">
-              <span className="font-semibold text-foreground">
-                Related revision guide:
-              </span>{" "}
-              <a
-                href={relatedGuide.href}
-                className="text-coral underline-offset-2 hover:underline"
-              >
-                {relatedGuide.label}
-              </a>{" "}
-              — {relatedGuide.intro.replace(/^Read the [^—]+\s*/, "")}
-            </p>
-          )}
-        </div>
-      )}
+      <div className="flex flex-wrap items-center gap-3">
+        <h2 className="font-display text-xl font-bold md:text-2xl">About this mock</h2>
+        {perMock && (
+          <span
+            className={`inline-flex items-center rounded-full border px-3 py-1 text-xs font-semibold uppercase tracking-wider ${
+              difficultyClasses[perMock.difficulty] ?? ""
+            }`}
+          >
+            Difficulty: {perMock.difficulty}
+          </span>
+        )}
+      </div>
 
-      <h2 className="font-display text-xl font-bold md:text-2xl">About this mock</h2>
-      <p className="mt-3 text-sm leading-relaxed text-muted-foreground md:text-base">
-        {intro.description}
+      <p className="mt-4 text-sm leading-relaxed text-foreground md:text-base">
+        {aboutText}
       </p>
-
 
       <div className="mt-6">
         <h3 className="font-display text-base font-semibold">Topics included</h3>
@@ -1430,6 +1401,34 @@ function MockStartIntro({ quiz }: { quiz: Quiz }) {
         </ul>
       </div>
 
+      {perMock && perMock.commonMistakes.length > 0 && (
+        <div className="mt-6">
+          <h3 className="font-display text-base font-semibold">
+            Common mistakes in this mock
+          </h3>
+          <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-foreground md:text-base">
+            {perMock.commonMistakes.map((m) => (
+              <li key={m}>{m}</li>
+            ))}
+          </ul>
+        </div>
+      )}
+
+      {relatedGuide && (
+        <p className="mt-6 text-sm leading-relaxed text-muted-foreground md:text-base">
+          <span className="font-semibold text-foreground">
+            Related revision guide:
+          </span>{" "}
+          <a
+            href={relatedGuide.href}
+            className="text-coral underline-offset-2 hover:underline"
+          >
+            {relatedGuide.label}
+          </a>{" "}
+          — {relatedGuide.intro.replace(/^Read the [^—]+\s*/, "")}
+        </p>
+      )}
+
       <div className="mt-6">
         <h3 className="font-display text-base font-semibold">Who this mock is for</h3>
         <p className="mt-2 text-sm leading-relaxed text-muted-foreground md:text-base">
@@ -1437,7 +1436,8 @@ function MockStartIntro({ quiz }: { quiz: Quiz }) {
         </p>
       </div>
 
-      <div className="mt-6 grid gap-4 md:grid-cols-2">
+      <h2 className="mt-10 font-display text-xl font-bold md:text-2xl">How to practise</h2>
+      <div className="mt-4 grid gap-4 md:grid-cols-2">
         <div className="rounded-2xl border border-[#15803d]/30 bg-[#15803d]/5 p-4">
           <h3 className="font-display text-base font-semibold text-[#15803d]">
             How to use Practice mode
@@ -1454,14 +1454,14 @@ function MockStartIntro({ quiz }: { quiz: Quiz }) {
           </h3>
           <p className="mt-2 text-sm leading-relaxed text-foreground">
             Exam mode runs the full mock against the clock, hides explanations until the end, and
-            shows your overall score with a question-by-question review. Use it once you feel
-            confident — it's the closest thing to test-day pressure.
+            shows your overall score at the end with a question-by-question review. Use it once
+            you feel confident — it's exam-style practice that mirrors test-day pressure.
           </p>
         </div>
       </div>
 
       {intro.faqs && intro.faqs.length > 0 && (
-        <div className="mt-8">
+        <div className="mt-10">
           <h3 className="font-display text-lg font-bold md:text-xl">Frequently asked questions</h3>
           <dl className="mt-3 space-y-4">
             {intro.faqs.map((f) => (
