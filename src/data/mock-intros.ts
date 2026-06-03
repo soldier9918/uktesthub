@@ -41,7 +41,7 @@ const GENERIC_FAQS: MockIntroFaq[] = [
 export const MOCK_INTROS: Record<string, MockIntro> = {
   "driving-theory": {
     description:
-      "This Driving Theory mock test helps you practise the full breadth of the DVSA car theory syllabus — road signs, hazard awareness, safety margins, motorway rules, vulnerable road users, alertness, attitude and vehicle handling. The questions use a multiple-choice format similar to the real exam, with one correct answer per question and clear, plain-English explanations. Use it to find out which topics you have nailed and which still need work before you book your real exam at a DVSA test centre. Sit it in Practice mode for instant explanations after each question, or in Exam mode for a timed 24-question dry run that helps simulate test-day conditions. After finishing, review every explanation carefully — especially the questions you answered incorrectly — and come back to the topic-by-topic mini-quizzes if you want focused revision before retrying the full mock.",
+      "This Driving Theory mock test is exam-style practice covering the breadth of the car theory syllabus — road signs, hazard awareness, safety margins, motorway rules, vulnerable road users, alertness, attitude and vehicle handling. Questions use a multiple-choice format similar to the test format, with one correct answer per question and clear, plain-English explanations. Use it to find out which topics you've nailed and which still need work before you book your test. Sit it in Practice mode for instant explanations after each question, or in Exam mode for a timed dry run that helps you get used to working under pressure. Afterwards, review every explanation carefully — especially the questions you answered incorrectly — and come back to the topic-by-topic mini-quizzes if you want focused revision before retrying the full mock.",
     topics: [
       "Road signs, signals and markings",
       "Hazard awareness and safety margins",
@@ -50,15 +50,15 @@ export const MOCK_INTROS: Record<string, MockIntro> = {
       "Vehicle handling, loading and documents",
     ],
     whoFor:
-      "Anyone preparing for the DVSA car driving theory test, plus learners revising for their first attempt or retaking after a near miss.",
+      "Anyone preparing for the car driving theory test, plus learners revising for their first attempt or retaking after a near miss.",
     faqs: [
       {
-        q: "What is the pass mark for the real DVSA theory test?",
+        q: "What is the pass mark for the real theory test?",
         a: "You need 43 out of 50 multiple-choice questions, then pass the separate hazard perception clip section in the same sitting.",
       },
       {
-        q: "How close are these to real DVSA questions?",
-        a: "They are practice-style questions written to match the format, topics and difficulty of the official DVSA bank, but they are not the actual exam questions — those are confidential.",
+        q: "How close is this to the real theory test?",
+        a: "This is independent practice material designed to reflect common theory test topics and a similar multiple-choice format. The actual exam questions are confidential — we don't reproduce them.",
       },
       {
         q: "How long should I revise before booking my test?",
