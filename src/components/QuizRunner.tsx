@@ -31,6 +31,7 @@ import { getCategory, getTopicDisplayTitle } from "@/data/categories";
 import { TOTAL_MOCKS_PER_TOPIC, buildRandomExamQuiz } from "@/data/mocks";
 import { buildRandomEnglishExamQuiz } from "@/data/english/mocks";
 import type { LevelSlug, SkillSlug, TestSlug } from "@/data/english/categories";
+import { IeltsWritingExam } from "./IeltsWritingExam";
 import { getMockIntro } from "@/data/mock-intros";
 import { AdSlot } from "./AdSlot";
 import { RoadSign } from "./RoadSign";
@@ -256,7 +257,7 @@ const IELTS_SKILL_FORMAT: Record<
 > = {
   listening: { count: 40, timeLimitSec: 30 * 60, timeLabel: "40 questions · ~30 minutes" },
   reading: { count: 40, timeLimitSec: 60 * 60, timeLabel: "40 questions · 60 minutes" },
-  writing: { count: 40, timeLimitSec: 60 * 60, timeLabel: "Timed IELTS Writing-style practice" },
+  writing: { count: 2, timeLimitSec: 60 * 60, timeLabel: "2 writing tasks · 60 minutes" },
   speaking: { count: 40, timeLimitSec: 14 * 60, timeLabel: "Timed IELTS Speaking-style practice" },
 };
 
@@ -270,23 +271,37 @@ function buildIeltsEnglishConfig(
   const skillLabel = IELTS_SKILL_LABEL[skill];
   if (!fmt || !skillLabel || !IELTS_LEVELS.has(level)) return undefined;
   const levelLabel = level.toUpperCase();
+  const isWriting = skill === "writing";
+  const intro = isWriting
+    ? [
+        "Practise with a realistic IELTS Writing test format before your real exam.",
+        "You will complete 2 writing tasks in 60 minutes. We recommend spending around 20 minutes on Task 1 and 40 minutes on Task 2, just like the real IELTS test format.",
+        "For Task 1, you will write at least 150 words. For Task 2, you will write at least 250 words.",
+        "This mode helps you practise your timing, structure, grammar, vocabulary and written fluency for IELTS Academic or General Training.",
+        "Writing Exam Mode includes: 2 writing tasks, 60 minutes, word count tracker, and IELTS-style self-check guidance with an AI-estimated band score on finish.",
+      ]
+    : [
+        "Practise with a realistic IELTS-style English test designed to help you prepare for the real exam.",
+        "IELTS tests your English skills across Listening, Reading, Writing and Speaking. In the real IELTS test, candidates complete Listening, Reading and Writing on the same day, while Speaking may be taken on the same day or within 7 days before or after the test.",
+        "This exam mode helps you practise under timed conditions, improve your English exam technique, and build confidence before test day.",
+        "IELTS test format includes: Listening — 40 questions, around 30 minutes; Reading — 40 questions, 60 minutes; Writing — 2 tasks, 60 minutes; Speaking — 3 parts, 11–14 minutes.",
+        "IELTS does not have a fixed pass mark. Your result is given as a band score from 0 to 9, depending on your performance.",
+      ];
   return {
     topicSlug: `ielts-${skill}-${level}`,
     count: fmt.count,
     timeLimitSec: fmt.timeLimitSec,
     passMarkPct: 60,
     passScore: Math.ceil(fmt.count * 0.6),
-    title: `IELTS ${skillLabel} ${levelLabel} Exam`,
-    description: `Realistic IELTS-style ${skillLabel} practice — ${fmt.count} questions. Band score 0–9.`,
+    title: isWriting
+      ? `IELTS Writing ${levelLabel} Exam`
+      : `IELTS ${skillLabel} ${levelLabel} Exam`,
+    description: isWriting
+      ? `IELTS Writing practice — 2 tasks, 60 minutes. Estimated band score 0–9 with AI feedback.`
+      : `Realistic IELTS-style ${skillLabel} practice — ${fmt.count} questions. Band score 0–9.`,
     heading: `IELTS ${skillLabel} Exam Mode`,
-    intro: [
-      "Practise with a realistic IELTS-style English test designed to help you prepare for the real exam.",
-      "IELTS tests your English skills across Listening, Reading, Writing and Speaking. In the real IELTS test, candidates complete Listening, Reading and Writing on the same day, while Speaking may be taken on the same day or within 7 days before or after the test.",
-      "This exam mode helps you practise under timed conditions, improve your English exam technique, and build confidence before test day.",
-      "IELTS test format includes: Listening — 40 questions, around 30 minutes; Reading — 40 questions, 60 minutes; Writing — 2 tasks, 60 minutes; Speaking — 3 parts, 11–14 minutes.",
-      "IELTS does not have a fixed pass mark. Your result is given as a band score from 0 to 9, depending on your performance.",
-    ],
-    buttonLabel: "Start IELTS Exam Mode",
+    intro,
+    buttonLabel: isWriting ? "Start IELTS Writing Exam" : "Start IELTS Exam Mode",
     passLabel: "Band 0–9 (no fixed pass mark)",
     timeLabel: fmt.timeLabel,
     kind: "english",
@@ -324,6 +339,7 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
   const [examLoading, setExamLoading] = useState(false);
   const [examError, setExamError] = useState<string | null>(null);
   const [examIntroShown, setExamIntroShown] = useState(false);
+  const [writingActive, setWritingActive] = useState(false);
   const [current, setCurrent] = useState(0);
   const [answers, setAnswers] = useState<Answer[]>(
     Array(rawQuiz.questions.length).fill(null),
@@ -358,6 +374,12 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
 
   async function handleStartExam() {
     if (!examConfig) return;
+    // IELTS Writing uses a dedicated typed-answer flow with AI marking.
+    if (examConfig.english?.skill === "writing") {
+      setExamIntroShown(false);
+      setWritingActive(true);
+      return;
+    }
     setExamLoading(true);
     setExamError(null);
     try {
@@ -521,6 +543,19 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
     }
   }, [finished, score, quiz, user]);
 
+
+  if (writingActive && examConfig?.english?.skill === "writing") {
+    return (
+      <IeltsWritingExam
+        level={examConfig.english.level}
+        onExit={() => {
+          setWritingActive(false);
+          setExamIntroShown(false);
+          setMode(null);
+        }}
+      />
+    );
+  }
 
   if (examIntroShown && examConfig) {
     return (
