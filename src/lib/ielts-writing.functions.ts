@@ -12,21 +12,33 @@ const MarkInput = z.object({
   task2: TaskSchema,
 });
 
-export type IeltsCriterionScores = {
-  taskResponse: number;
-  coherenceCohesion: number;
-  lexicalResource: number;
-  grammaticalRange: number;
-  feedback: string;
+export type IeltsCriterion = {
+  band: number;
+  explanation: string;
+};
+
+export type IeltsTaskFeedback = {
+  taskResponse: IeltsCriterion;
+  coherenceCohesion: IeltsCriterion;
+  lexicalResource: IeltsCriterion;
+  grammaticalRange: IeltsCriterion;
+  summary: string;
+  commonMistakes: string[];
+  modelAnswer: string;
 };
 
 export type IeltsMarkingResult = {
-  task1: IeltsCriterionScores;
-  task2: IeltsCriterionScores;
+  task1: IeltsTaskFeedback;
+  task2: IeltsTaskFeedback;
   task1Band: number;
   task2Band: number;
   overallBand: number;
   overallFeedback: string;
+  whatWentWell: string[];
+  whatToImprove: string[];
+  nextSteps: string[];
+  whyThisScore: string;
+  howToReachNextBand: string;
 };
 
 function roundHalf(n: number): number {
@@ -34,9 +46,13 @@ function roundHalf(n: number): number {
   return Math.round(clamped * 2) / 2;
 }
 
-function avgCriteria(c: IeltsCriterionScores): number {
+function avgBands(t: IeltsTaskFeedback): number {
   return roundHalf(
-    (c.taskResponse + c.coherenceCohesion + c.lexicalResource + c.grammaticalRange) / 4,
+    (t.taskResponse.band +
+      t.coherenceCohesion.band +
+      t.lexicalResource.band +
+      t.grammaticalRange.band) /
+      4,
   );
 }
 
@@ -56,7 +72,24 @@ export const markIeltsWriting = createServerFn({ method: "POST" })
     const task2Type =
       "Task 2 — a discursive essay responding to the question prompt. At least 250 words. Task 2 is weighted twice as heavily as Task 1.";
 
-    const systemPrompt = `You are an experienced IELTS Writing examiner. Mark candidate responses strictly using the official IELTS Writing band descriptors (0–9, in half-band increments). Score each task on the four criteria: Task Response (Task Achievement for Task 1), Coherence and Cohesion, Lexical Resource, and Grammatical Range and Accuracy. Give each criterion a band from 0 to 9 in 0.5 steps. Be honest and calibrated — do not inflate scores. Provide concise examiner-style feedback (2–4 sentences) per task pointing out strengths and the main improvement areas.
+    const systemPrompt = `You are an experienced writing tutor providing PRACTICE feedback using IELTS-style writing criteria (Task Response / Task Achievement, Coherence and Cohesion, Lexical Resource, Grammatical Range and Accuracy). Score each criterion from 0 to 9 in 0.5 steps. Be honest and calibrated — do not inflate scores.
+
+For each task, return:
+- band score for each of the four criteria (0–9, 0.5 steps)
+- a short plain-English explanation for each criterion (1–2 sentences) referencing the candidate's actual writing
+- a short summary (2–3 sentences)
+- 3–5 common-mistake bullets specific to this candidate's answer
+- a model answer (about 170 words for Task 1, about 270 words for Task 2) that would score around Band 8
+
+Also return, across both tasks combined:
+- whatWentWell: 3–5 concise strength bullets
+- whatToImprove: 3–5 concise improvement bullets
+- nextSteps: exactly 3 practical actions before the next attempt
+- whyThisScore: plain-English paragraph explaining the estimated band and what stopped it reaching the next band
+- howToReachNextBand: one paragraph naming the next half-band and the specific changes needed to reach it
+- overallFeedback: 2–3 sentence overall summary
+
+Do not use the phrases "AI examiner", "official score", "official IELTS band", "same as the real exam", or "guaranteed". This is practice feedback only.
 
 Variant: IELTS ${variantLabel}.
 ${task1Type}
@@ -67,18 +100,32 @@ ${task2Type}`;
     const criterionSchema = {
       type: "object",
       properties: {
-        taskResponse: { type: "number", minimum: 0, maximum: 9 },
-        coherenceCohesion: { type: "number", minimum: 0, maximum: 9 },
-        lexicalResource: { type: "number", minimum: 0, maximum: 9 },
-        grammaticalRange: { type: "number", minimum: 0, maximum: 9 },
-        feedback: { type: "string" },
+        band: { type: "number", minimum: 0, maximum: 9 },
+        explanation: { type: "string" },
+      },
+      required: ["band", "explanation"],
+      additionalProperties: false,
+    };
+
+    const taskSchema = {
+      type: "object",
+      properties: {
+        taskResponse: criterionSchema,
+        coherenceCohesion: criterionSchema,
+        lexicalResource: criterionSchema,
+        grammaticalRange: criterionSchema,
+        summary: { type: "string" },
+        commonMistakes: { type: "array", items: { type: "string" }, minItems: 3, maxItems: 6 },
+        modelAnswer: { type: "string" },
       },
       required: [
         "taskResponse",
         "coherenceCohesion",
         "lexicalResource",
         "grammaticalRange",
-        "feedback",
+        "summary",
+        "commonMistakes",
+        "modelAnswer",
       ],
       additionalProperties: false,
     };
@@ -94,15 +141,29 @@ ${task2Type}`;
           type: "function",
           function: {
             name: "submit_ielts_marking",
-            description: "Return IELTS Writing band scores and feedback for both tasks.",
+            description: "Return IELTS-style practice band scores and feedback for both tasks.",
             parameters: {
               type: "object",
               properties: {
-                task1: criterionSchema,
-                task2: criterionSchema,
+                task1: taskSchema,
+                task2: taskSchema,
+                whatWentWell: { type: "array", items: { type: "string" }, minItems: 3, maxItems: 5 },
+                whatToImprove: { type: "array", items: { type: "string" }, minItems: 3, maxItems: 5 },
+                nextSteps: { type: "array", items: { type: "string" }, minItems: 3, maxItems: 3 },
+                whyThisScore: { type: "string" },
+                howToReachNextBand: { type: "string" },
                 overallFeedback: { type: "string" },
               },
-              required: ["task1", "task2", "overallFeedback"],
+              required: [
+                "task1",
+                "task2",
+                "whatWentWell",
+                "whatToImprove",
+                "nextSteps",
+                "whyThisScore",
+                "howToReachNextBand",
+                "overallFeedback",
+              ],
               additionalProperties: false,
             },
           },
@@ -152,7 +213,7 @@ ${task2Type}`;
 
     function extractJson(raw: string): string | null {
       const cleaned = raw.replace(/```json\s*/gi, "").replace(/```\s*/g, "").trim();
-      const start = cleaned.search(/[\{\[]/);
+      const start = cleaned.search(/[{[]/);
       if (start === -1) return null;
       const openChar = cleaned[start];
       const closeChar = openChar === "[" ? "]" : "}";
@@ -161,9 +222,24 @@ ${task2Type}`;
       return cleaned.substring(start, end + 1);
     }
 
+    type RawCriterion = { band: number; explanation: string };
+    type RawTask = {
+      taskResponse: RawCriterion;
+      coherenceCohesion: RawCriterion;
+      lexicalResource: RawCriterion;
+      grammaticalRange: RawCriterion;
+      summary: string;
+      commonMistakes: string[];
+      modelAnswer: string;
+    };
     let parsed: {
-      task1: IeltsCriterionScores;
-      task2: IeltsCriterionScores;
+      task1: RawTask;
+      task2: RawTask;
+      whatWentWell: string[];
+      whatToImprove: string[];
+      nextSteps: string[];
+      whyThisScore: string;
+      howToReachNextBand: string;
       overallFeedback: string;
     };
     try {
@@ -182,23 +258,29 @@ ${task2Type}`;
       throw new Error("AI_PARSE_ERROR");
     }
 
-    const task1: IeltsCriterionScores = {
-      taskResponse: roundHalf(parsed.task1.taskResponse),
-      coherenceCohesion: roundHalf(parsed.task1.coherenceCohesion),
-      lexicalResource: roundHalf(parsed.task1.lexicalResource),
-      grammaticalRange: roundHalf(parsed.task1.grammaticalRange),
-      feedback: String(parsed.task1.feedback ?? ""),
-    };
-    const task2: IeltsCriterionScores = {
-      taskResponse: roundHalf(parsed.task2.taskResponse),
-      coherenceCohesion: roundHalf(parsed.task2.coherenceCohesion),
-      lexicalResource: roundHalf(parsed.task2.lexicalResource),
-      grammaticalRange: roundHalf(parsed.task2.grammaticalRange),
-      feedback: String(parsed.task2.feedback ?? ""),
-    };
+    function normaliseCriterion(c: RawCriterion): IeltsCriterion {
+      return {
+        band: roundHalf(Number(c?.band ?? 0)),
+        explanation: String(c?.explanation ?? ""),
+      };
+    }
 
-    const task1Band = avgCriteria(task1);
-    const task2Band = avgCriteria(task2);
+    function normaliseTask(t: RawTask): IeltsTaskFeedback {
+      return {
+        taskResponse: normaliseCriterion(t.taskResponse),
+        coherenceCohesion: normaliseCriterion(t.coherenceCohesion),
+        lexicalResource: normaliseCriterion(t.lexicalResource),
+        grammaticalRange: normaliseCriterion(t.grammaticalRange),
+        summary: String(t.summary ?? ""),
+        commonMistakes: Array.isArray(t.commonMistakes) ? t.commonMistakes.map(String) : [],
+        modelAnswer: String(t.modelAnswer ?? ""),
+      };
+    }
+
+    const task1 = normaliseTask(parsed.task1);
+    const task2 = normaliseTask(parsed.task2);
+    const task1Band = avgBands(task1);
+    const task2Band = avgBands(task2);
     // IELTS weighting: Task 2 counts double.
     const overallBand = roundHalf((task1Band + 2 * task2Band) / 3);
 
@@ -209,5 +291,10 @@ ${task2Type}`;
       task2Band,
       overallBand,
       overallFeedback: String(parsed.overallFeedback ?? ""),
+      whatWentWell: Array.isArray(parsed.whatWentWell) ? parsed.whatWentWell.map(String) : [],
+      whatToImprove: Array.isArray(parsed.whatToImprove) ? parsed.whatToImprove.map(String) : [],
+      nextSteps: Array.isArray(parsed.nextSteps) ? parsed.nextSteps.map(String) : [],
+      whyThisScore: String(parsed.whyThisScore ?? ""),
+      howToReachNextBand: String(parsed.howToReachNextBand ?? ""),
     };
   });
