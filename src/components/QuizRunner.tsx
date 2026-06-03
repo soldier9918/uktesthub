@@ -33,7 +33,7 @@ import { buildRandomEnglishExamQuiz } from "@/data/english/mocks";
 import type { LevelSlug, SkillSlug, TestSlug } from "@/data/english/categories";
 import { IeltsWritingExam } from "./IeltsWritingExam";
 import { getMockIntro } from "@/data/mock-intros";
-import { getPerMockIntro, getRelatedGuide } from "@/data/per-mock-intros";
+import { getPerMockIntro, getRelatedGuide, PER_MOCK_INTROS } from "@/data/per-mock-intros";
 import { AdSlot } from "./AdSlot";
 import { RoadSign } from "./RoadSign";
 import { ReportQuestionButton } from "./ReportQuestionButton";
