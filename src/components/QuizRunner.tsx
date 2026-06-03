@@ -33,6 +33,7 @@ import { buildRandomEnglishExamQuiz } from "@/data/english/mocks";
 import type { LevelSlug, SkillSlug, TestSlug } from "@/data/english/categories";
 import { IeltsWritingExam } from "./IeltsWritingExam";
 import { getMockIntro } from "@/data/mock-intros";
+import { getPerMockIntro, getRelatedGuide } from "@/data/per-mock-intros";
 import { AdSlot } from "./AdSlot";
 import { RoadSign } from "./RoadSign";
 import { ReportQuestionButton } from "./ReportQuestionButton";
@@ -1359,12 +1360,66 @@ function ModeSelect({
 
 function MockStartIntro({ quiz }: { quiz: Quiz }) {
   const intro = getMockIntro(quiz.topic, quiz.quizTitle);
+  const mockMatch = /-mock-(\d+)$/.exec(quiz.slug);
+  const mockNumber = mockMatch ? parseInt(mockMatch[1], 10) : null;
+  const perMock = mockNumber ? getPerMockIntro(quiz.topic, mockNumber) : undefined;
+  const relatedGuide = getRelatedGuide(quiz.topic);
+
+  const difficultyClasses: Record<string, string> = {
+    Beginner: "bg-[#15803d]/10 text-[#15803d] border-[#15803d]/30",
+    Intermediate: "bg-amber-500/10 text-amber-700 border-amber-500/30",
+    "Exam-ready": "bg-[#c81e2c]/10 text-[#c81e2c] border-[#c81e2c]/30",
+  };
+
   return (
     <section className="mt-8 rounded-3xl border border-border bg-card p-6 shadow-soft md:p-10">
+      {perMock && (
+        <div className="mb-8 rounded-2xl border border-border bg-background/60 p-5 md:p-6">
+          <div className="flex flex-wrap items-center gap-2">
+            <span
+              className={`inline-flex items-center rounded-full border px-3 py-1 text-xs font-semibold uppercase tracking-wider ${
+                difficultyClasses[perMock.difficulty] ?? ""
+              }`}
+            >
+              Difficulty: {perMock.difficulty}
+            </span>
+          </div>
+          <h3 className="mt-4 font-display text-base font-semibold">
+            What this mock covers
+          </h3>
+          <p className="mt-2 text-sm leading-relaxed text-foreground md:text-base">
+            {perMock.covers}
+          </p>
+          <h3 className="mt-5 font-display text-base font-semibold">
+            Common mistakes in this mock
+          </h3>
+          <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-foreground md:text-base">
+            {perMock.commonMistakes.map((m) => (
+              <li key={m}>{m}</li>
+            ))}
+          </ul>
+          {relatedGuide && (
+            <p className="mt-5 text-sm leading-relaxed text-muted-foreground md:text-base">
+              <span className="font-semibold text-foreground">
+                Related revision guide:
+              </span>{" "}
+              <a
+                href={relatedGuide.href}
+                className="text-coral underline-offset-2 hover:underline"
+              >
+                {relatedGuide.label}
+              </a>{" "}
+              — {relatedGuide.intro.replace(/^Read the [^—]+\s*/, "")}
+            </p>
+          )}
+        </div>
+      )}
+
       <h2 className="font-display text-xl font-bold md:text-2xl">About this mock</h2>
       <p className="mt-3 text-sm leading-relaxed text-muted-foreground md:text-base">
         {intro.description}
       </p>
+
 
       <div className="mt-6">
         <h3 className="font-display text-base font-semibold">Topics included</h3>
