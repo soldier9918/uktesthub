@@ -1472,7 +1472,7 @@ function MockStartIntro({ quiz }: { quiz: Quiz }) {
           <p className="mt-2 text-sm leading-relaxed text-foreground">
             Exam mode runs the full mock against the clock, hides explanations until the end, and
             shows your overall score at the end with a question-by-question review. Use it once
-            you feel confident — it's exam-style practice that mirrors test-day pressure.
+            you feel confident — it's timed exam-style practice for test-day familiarity.
           </p>
         </div>
       </div>
