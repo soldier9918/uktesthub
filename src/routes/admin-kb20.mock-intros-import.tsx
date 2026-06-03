@@ -40,14 +40,13 @@ export const Route = createFileRoute("/admin-kb20/mock-intros-import")({
 
 type PreviewResult = Awaited<ReturnType<typeof previewMockIntrosImport>>;
 
-const SAMPLE_SINGLE = `mock,difficulty,covers,common_mistakes
-1,Beginner,"Driving Theory Mock Test 1 covers foundation topics such as road signs, safe driving behaviour, speed awareness, road markings and basic hazard recognition.","Rushing through simple road sign questions | Missing words such as must, should or never | Confusing warning signs with mandatory signs | Guessing before reading all answer options"
-2,Beginner,"Driving Theory Mock Test 2 focuses on everyday driving knowledge, including road positioning, safe following distances, junction awareness and basic rules of the road.","Choosing an answer too quickly at junction questions | Forgetting to consider vulnerable road users | Confusing stopping distance with thinking distance | Not reviewing incorrect answers after finishing"
+const SAMPLE_SINGLE = `mock,difficulty,covers,common_mistakes,topics_included,who_this_mock_is_for,faq_question_1,faq_answer_1
+1,Beginner,"Mock 1 covers foundation road signs and basic safe behaviour.","Rushing signs | Missing key words | Confusing sign shapes","Foundation road signs|Basic safe driving behaviour|Speed awareness|Reading road markings|First-look hazard recognition","Mock 1 suits learners starting their revision who want to build confidence with the basics.","What is Mock 1 best for?","Mock 1 is a beginner-level checkpoint focused on foundation signs and safe behaviour."
 `;
 
-const SAMPLE_MULTI = `topic_slug,mock,difficulty,covers,common_mistakes
-driving-theory,1,Beginner,"Driving Theory Mock Test 1 covers...","Rushing | Missing key words | Confusing signs | Guessing"
-life-in-the-uk,1,Beginner,"Life in the UK Mock 1 covers history, geography...","Mixing up monarchs | Confusing dates | Forgetting devolved nations | Skipping practice questions"
+const SAMPLE_MULTI = `topic_slug,mock,difficulty,covers,common_mistakes,topics_included,who_this_mock_is_for
+driving-theory,4,Beginner,"Mock 4 focuses on lane discipline and parking awareness.","Misreading lane discipline | Forgetting parking checks","Lane discipline and road positioning|Parking awareness and safety checks|Essential road signs|Safe vehicle control|Early-stage learner driver decisions","Mock 4 suits early-stage learners building confidence with lane discipline."
+life-in-the-uk,1,Beginner,"Life in the UK Mock 1 covers history and geography.","Mixing up monarchs | Confusing dates",,"For ILR/citizenship applicants starting their revision."
 `;
 
 function MockIntrosImportPage() {
