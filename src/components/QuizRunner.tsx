@@ -339,6 +339,7 @@ export function QuizRunner({ quiz: rawQuiz }: { quiz: Quiz }) {
   const [examLoading, setExamLoading] = useState(false);
   const [examError, setExamError] = useState<string | null>(null);
   const [examIntroShown, setExamIntroShown] = useState(false);
+  const [writingActive, setWritingActive] = useState(false);
   const [current, setCurrent] = useState(0);
   const [answers, setAnswers] = useState<Answer[]>(
     Array(rawQuiz.questions.length).fill(null),
