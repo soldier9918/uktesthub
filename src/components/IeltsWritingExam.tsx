@@ -419,16 +419,36 @@ function CriterionRow({ label, band }: { label: string; band: number }) {
   );
 }
 
+function CriterionDetail({ label, criterion }: { label: string; criterion: IeltsCriterion }) {
+  return (
+    <div className="border-b py-3 last:border-b-0">
+      <div className="flex items-center justify-between">
+        <span className="text-sm font-medium">{label}</span>
+        <span className="font-mono text-sm font-semibold">Band {criterion.band.toFixed(1)}</span>
+      </div>
+      {criterion.explanation && (
+        <p className="mt-1 text-sm leading-relaxed text-muted-foreground">{criterion.explanation}</p>
+      )}
+    </div>
+  );
+}
+
 function TaskScoreCard({
   title,
   words,
-  scores,
+  task,
   band,
+  task1Label,
+  modelAnswerTitle,
+  commonMistakesTitle,
 }: {
   title: string;
   words: number;
-  scores: IeltsCriterionScores;
+  task: IeltsTaskFeedback;
   band: number;
+  task1Label?: string;
+  modelAnswerTitle: string;
+  commonMistakesTitle: string;
 }) {
   return (
     <Card>
@@ -440,11 +460,97 @@ function TaskScoreCard({
       </CardHeader>
       <CardContent>
         <p className="mb-2 text-xs text-muted-foreground">{words} words written</p>
-        <CriterionRow label="Task Achievement / Response" band={scores.taskResponse} />
-        <CriterionRow label="Coherence & Cohesion" band={scores.coherenceCohesion} />
-        <CriterionRow label="Lexical Resource" band={scores.lexicalResource} />
-        <CriterionRow label="Grammatical Range & Accuracy" band={scores.grammaticalRange} />
-        <p className="mt-3 rounded-md bg-muted/40 p-3 text-sm leading-relaxed">{scores.feedback}</p>
+        <CriterionDetail
+          label={task1Label ?? "Task Response"}
+          criterion={task.taskResponse}
+        />
+        <CriterionDetail label="Coherence & Cohesion" criterion={task.coherenceCohesion} />
+        <CriterionDetail label="Lexical Resource" criterion={task.lexicalResource} />
+        <CriterionDetail
+          label="Grammatical Range & Accuracy"
+          criterion={task.grammaticalRange}
+        />
+        {task.summary && (
+          <p className="mt-3 rounded-md bg-muted/40 p-3 text-sm leading-relaxed">{task.summary}</p>
+        )}
+
+        {task.commonMistakes.length > 0 && (
+          <Collapsible className="mt-3">
+            <CollapsibleTrigger asChild>
+              <Button variant="outline" size="sm" className="w-full justify-between">
+                <span className="flex items-center gap-2">
+                  <AlertTriangle className="h-4 w-4" /> {commonMistakesTitle}
+                </span>
+                <ChevronDown className="h-4 w-4" />
+              </Button>
+            </CollapsibleTrigger>
+            <CollapsibleContent className="mt-2 rounded-md border bg-muted/30 p-3">
+              <ul className="list-disc space-y-1 pl-5 text-sm">
+                {task.commonMistakes.map((m, i) => (
+                  <li key={i}>{m}</li>
+                ))}
+              </ul>
+            </CollapsibleContent>
+          </Collapsible>
+        )}
+
+        {task.modelAnswer && (
+          <Collapsible className="mt-2">
+            <CollapsibleTrigger asChild>
+              <Button variant="outline" size="sm" className="w-full justify-between">
+                <span className="flex items-center gap-2">
+                  <BookOpen className="h-4 w-4" /> {modelAnswerTitle}
+                </span>
+                <ChevronDown className="h-4 w-4" />
+              </Button>
+            </CollapsibleTrigger>
+            <CollapsibleContent className="mt-2 rounded-md border bg-muted/30 p-3">
+              <p className="whitespace-pre-wrap font-serif text-sm leading-relaxed">
+                {task.modelAnswer}
+              </p>
+              <p className="mt-2 text-xs italic text-muted-foreground">
+                Sample answer for practice reference. Many strong answers are possible.
+              </p>
+            </CollapsibleContent>
+          </Collapsible>
+        )}
+      </CardContent>
+    </Card>
+  );
+}
+
+function BulletCard({
+  title,
+  items,
+  icon,
+  tone,
+}: {
+  title: string;
+  items: string[];
+  icon: React.ReactNode;
+  tone: "good" | "improve" | "next";
+}) {
+  if (items.length === 0) return null;
+  const toneClass =
+    tone === "good"
+      ? "border-emerald-500/30 bg-emerald-500/5"
+      : tone === "improve"
+        ? "border-amber-500/30 bg-amber-500/5"
+        : "border-primary/30 bg-primary/5";
+  return (
+    <Card className={toneClass}>
+      <CardHeader className="pb-2">
+        <CardTitle className="flex items-center gap-2 text-base">
+          {icon}
+          {title}
+        </CardTitle>
+      </CardHeader>
+      <CardContent>
+        <ul className="list-disc space-y-1.5 pl-5 text-sm leading-relaxed">
+          {items.map((it, i) => (
+            <li key={i}>{it}</li>
+          ))}
+        </ul>
       </CardContent>
     </Card>
   );
@@ -469,16 +575,14 @@ function ResultsScreen({
 }) {
   const t1Words = useMemo(() => countWords(task1Answer), [task1Answer]);
   const t2Words = useMemo(() => countWords(task2Answer), [task2Answer]);
+  const task1Label = variant === "academic" ? "Task Achievement" : "Task Achievement";
 
   return (
     <div className="mx-auto max-w-4xl px-4 py-8">
       <h1 className="text-3xl font-bold tracking-tight">Your Writing Practice is Complete</h1>
       <p className="mt-2 text-muted-foreground">
-        You have completed your IELTS Writing practice test. Review your answers carefully and
-        check your work for task response, structure, vocabulary, grammar, spelling and clarity.
-      </p>
-      <p className="mt-1 text-sm italic text-muted-foreground">
-        Estimated self-review only — IELTS Writing is officially marked by trained examiners.
+        You have completed your IELTS-style Writing practice test. Review your estimated practice
+        band and the feedback below to plan what to work on next.
       </p>
 
       <Card className="my-6 border-primary/40 bg-primary/5">
@@ -503,29 +607,82 @@ function ResultsScreen({
       <Alert className="mb-6">
         <AlertCircle className="h-4 w-4" />
         <AlertDescription>
-          Your estimated band score is for practice and self-review only. UK Test Hub is not
-          affiliated with IELTS, the British Council, IDP, Cambridge, or any official test provider.
+          Your estimated band score is for practice and self-review only. Official IELTS Writing
+          scores are awarded by trained IELTS examiners. UK Test Hub is not affiliated with IELTS,
+          the British Council, IDP, Cambridge, or any official test provider.
         </AlertDescription>
       </Alert>
+
+      <div className="mb-6 grid gap-4 md:grid-cols-3">
+        <BulletCard
+          title="What went well"
+          items={result.whatWentWell}
+          icon={<CheckCircle2 className="h-4 w-4 text-emerald-600" />}
+          tone="good"
+        />
+        <BulletCard
+          title="What to improve"
+          items={result.whatToImprove}
+          icon={<AlertTriangle className="h-4 w-4 text-amber-600" />}
+          tone="improve"
+        />
+        <BulletCard
+          title="Recommended next steps"
+          items={result.nextSteps}
+          icon={<ListChecks className="h-4 w-4 text-primary" />}
+          tone="next"
+        />
+      </div>
+
+      {(result.whyThisScore || result.howToReachNextBand) && (
+        <div className="mb-6 grid gap-4 md:grid-cols-2">
+          {result.whyThisScore && (
+            <Card>
+              <CardHeader className="pb-2">
+                <CardTitle className="text-base">Why this score?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm leading-relaxed">{result.whyThisScore}</p>
+              </CardContent>
+            </Card>
+          )}
+          {result.howToReachNextBand && (
+            <Card>
+              <CardHeader className="pb-2">
+                <CardTitle className="text-base">How to reach the next band</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm leading-relaxed">{result.howToReachNextBand}</p>
+              </CardContent>
+            </Card>
+          )}
+        </div>
+      )}
 
       <div className="grid gap-4 md:grid-cols-2">
         <TaskScoreCard
           title="Task 1"
           words={t1Words}
-          scores={result.task1}
+          task={result.task1}
           band={result.task1Band}
+          task1Label={task1Label}
+          modelAnswerTitle="View Task 1 model answer"
+          commonMistakesTitle="Task 1 common mistakes"
         />
         <TaskScoreCard
           title="Task 2"
           words={t2Words}
-          scores={result.task2}
+          task={result.task2}
           band={result.task2Band}
+          modelAnswerTitle="View Task 2 model answer"
+          commonMistakesTitle="Task 2 common mistakes"
         />
       </div>
 
       <div className="mt-8 space-y-6">
         <section>
           <h2 className="text-xl font-semibold">Task 1 — your answer</h2>
+          <p className="mt-1 text-xs text-muted-foreground">{t1Words} words</p>
           <p className="mt-1 whitespace-pre-wrap rounded-md bg-muted/40 p-3 text-sm">
             {questionSet.task1.prompt}
           </p>
@@ -537,6 +694,7 @@ function ResultsScreen({
         </section>
         <section>
           <h2 className="text-xl font-semibold">Task 2 — your answer</h2>
+          <p className="mt-1 text-xs text-muted-foreground">{t2Words} words</p>
           <p className="mt-1 whitespace-pre-wrap rounded-md bg-muted/40 p-3 text-sm">
             {questionSet.task2.prompt}
           </p>
@@ -557,3 +715,4 @@ function ResultsScreen({
     </div>
   );
 }
+
