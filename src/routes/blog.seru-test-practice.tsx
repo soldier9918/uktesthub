@@ -26,7 +26,7 @@ const faqs: FaqItem[] = [
   },
   {
     q: "How long does the SERU assessment take?",
-    a: "Most SERU appointments at TfL last around 25 to 40 minutes, depending on how detailed your answers are and whether the assessor needs to ask follow-up questions.",
+    a: "The Transport for London (TfL) SERU exam has a strict time limit of 45 minutes. However, you should expect to be at the testing centre for about 50 to 60 minutes in total, as the session includes a brief introduction and a few practice questions before the timer officially starts.",
   },
   {
     q: "What happens if I fail SERU?",

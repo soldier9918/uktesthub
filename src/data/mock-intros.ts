@@ -154,7 +154,7 @@ export const MOCK_INTROS: Record<string, MockIntro> = {
       },
       {
         q: "How long does the real SERU take?",
-        a: "Around 90 minutes at a TfL-approved test centre.",
+        a: "The Transport for London (TfL) SERU exam has a strict time limit of 45 minutes. However, you should expect to be at the testing centre for about 50 to 60 minutes in total, as the session includes a brief introduction and a few practice questions before the timer officially starts.",
       },
       {
         q: "What do I do if I fail SERU?",
