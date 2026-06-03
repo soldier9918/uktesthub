@@ -621,7 +621,7 @@ export const listMockIntrosImportHistory = createServerFn({ method: "GET" })
   .handler(async ({ data }) => {
     try {
       const auth = await getAuthenticatedAdminClient();
-      if (auth.error) return { rows: [], error: auth.error };
+      if (auth.error || !auth.supabase) return { rows: [], error: auth.error ?? "Not signed in" };
       const { supabase } = auth;
 
       const { data: rows, error } = await supabase
