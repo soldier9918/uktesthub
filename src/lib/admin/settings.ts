@@ -24,7 +24,7 @@ export async function loadAdminSettings(force = false): Promise<AdminSettings> {
   if (cache && !force) return cache;
   if (inflight && !force) return inflight;
   inflight = (async () => {
-    const { data } = await supabase.from("admin_settings").select("key,value");
+    const { data } = await supabase.from("public_settings").select("key,value");
     const out: AdminSettings = { ...DEFAULTS };
     for (const row of data ?? []) {
       const k = row.key as keyof AdminSettings;
