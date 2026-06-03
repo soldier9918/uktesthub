@@ -410,14 +410,6 @@ function VariantPicker({
   );
 }
 
-function CriterionRow({ label, band }: { label: string; band: number }) {
-  return (
-    <div className="flex items-center justify-between border-b py-2 text-sm last:border-b-0">
-      <span>{label}</span>
-      <span className="font-mono font-semibold">Band {band.toFixed(1)}</span>
-    </div>
-  );
-}
 
 function CriterionDetail({ label, criterion }: { label: string; criterion: IeltsCriterion }) {
   return (
