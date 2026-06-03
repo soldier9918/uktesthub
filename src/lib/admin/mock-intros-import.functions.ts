@@ -473,12 +473,30 @@ function serializePerMockIntrosFile(
           const mistakes = v.commonMistakes
             .map((m) => `        ${j(m)},`)
             .join("\n");
+          const optional: string[] = [];
+          if (v.topicsIncluded && v.topicsIncluded.length > 0) {
+            const lines = v.topicsIncluded.map((t) => `        ${j(t)},`).join("\n");
+            optional.push(`      topicsIncluded: [\n${lines}\n      ],`);
+          }
+          if (v.whoFor && v.whoFor.trim().length > 0) {
+            optional.push(`      whoFor: ${j(v.whoFor)},`);
+          }
+          if (v.faqs && v.faqs.length > 0) {
+            const faqLines = v.faqs
+              .map(
+                (f) =>
+                  `        {\n          q: ${j(f.q)},\n          a: ${j(f.a)},\n        },`,
+              )
+              .join("\n");
+            optional.push(`      faqs: [\n${faqLines}\n      ],`);
+          }
+          const optionalBlock = optional.length > 0 ? "\n" + optional.join("\n") : "";
           return `    ${n}: {
       difficulty: ${j(v.difficulty)},
       covers: ${j(v.covers)},
       commonMistakes: [
 ${mistakes}
-      ],
+      ],${optionalBlock}
     },`;
         })
         .join("\n");
@@ -512,10 +530,18 @@ ${inner}
 
 export type Difficulty = "Beginner" | "Intermediate" | "Exam-ready";
 
+export type PerMockFaq = { q: string; a: string };
+
 export type PerMockIntro = {
   difficulty: Difficulty;
   covers: string;
   commonMistakes: string[];
+  /** Optional per-mock topic bullets. Falls back to the topic-level intro list. */
+  topicsIncluded?: string[];
+  /** Optional per-mock "Who this mock is for" wording. */
+  whoFor?: string;
+  /** Optional per-mock FAQs (prepended ahead of topic-level FAQs at render time). */
+  faqs?: PerMockFaq[];
 };
 
 export type RelatedGuide = { label: string; href: string; intro: string };
