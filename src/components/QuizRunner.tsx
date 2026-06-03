@@ -33,7 +33,7 @@ import { buildRandomEnglishExamQuiz } from "@/data/english/mocks";
 import type { LevelSlug, SkillSlug, TestSlug } from "@/data/english/categories";
 import { IeltsWritingExam } from "./IeltsWritingExam";
 import { getMockIntro } from "@/data/mock-intros";
-import { getPerMockIntro, getRelatedGuide } from "@/data/per-mock-intros";
+import { getPerMockIntro, getRelatedGuide, PER_MOCK_INTROS } from "@/data/per-mock-intros";
 import { AdSlot } from "./AdSlot";
 import { RoadSign } from "./RoadSign";
 import { ReportQuestionButton } from "./ReportQuestionButton";
@@ -1365,6 +1365,17 @@ function MockStartIntro({ quiz }: { quiz: Quiz }) {
   const perMock = mockNumber ? getPerMockIntro(quiz.topic, mockNumber) : undefined;
   const relatedGuide = getRelatedGuide(quiz.topic);
 
+  if (import.meta.env.DEV) {
+    // eslint-disable-next-line no-console
+    console.debug("[MockStartIntro] lookup", {
+      quizSlug: quiz.slug,
+      resolvedTopicSlug: quiz.topic,
+      mockNumber,
+      perMockFound: Boolean(perMock),
+      availablePerMockKeys: Object.keys(PER_MOCK_INTROS),
+    });
+  }
+
   const difficultyClasses: Record<string, string> = {
     Beginner: "bg-[#15803d]/10 text-[#15803d] border-[#15803d]/30",
     Intermediate: "bg-amber-500/10 text-amber-700 border-amber-500/30",
@@ -1472,7 +1483,7 @@ function MockStartIntro({ quiz }: { quiz: Quiz }) {
           <p className="mt-2 text-sm leading-relaxed text-foreground">
             Exam mode runs the full mock against the clock, hides explanations until the end, and
             shows your overall score at the end with a question-by-question review. Use it once
-            you feel confident — it's exam-style practice that mirrors test-day pressure.
+            you feel confident — it's timed exam-style practice for test-day familiarity.
           </p>
         </div>
       </div>

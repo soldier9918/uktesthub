@@ -336,16 +336,24 @@ export function getMockIntro(topicSlug: string, topicTitle: string): MockIntro {
   const found = MOCK_INTROS[topicSlug];
   if (found) return found;
 
+  // Strip any trailing "Mock Test N" or trailing "Test" so we don't produce
+  // duplicated phrasing like "Hazard Perception Test Test 1" or
+  // "Hazard Perception Mock Test 1 mock test".
+  const cleanTitle = topicTitle
+    .replace(/\s+Mock\s+Test\s+\d+\s*$/i, "")
+    .replace(/\s+test\s*$/i, "")
+    .trim();
+
   return {
-    description: `This ${topicTitle} mock test gives you realistic, exam-style practice in a multiple-choice format similar to the real assessment. It draws from across the syllabus so you can spot which areas you're strong in and which still need more work before test day. Use Practice mode for instant feedback and explanations after every question, or Exam mode for a timed dry run that helps simulate test-day conditions. After finishing, review every explanation carefully — especially the questions you answered incorrectly — and come back to retake the mock until you're consistently scoring well above the pass mark. UK Test Hub is an independent practice platform and is not affiliated with any official exam body, government department, regulator or test provider. All questions are for practice and revision purposes only.`,
+    description: `This ${cleanTitle} mock gives you independent, exam-style practice in a multiple-choice format designed to reflect common test topics. It draws from across the syllabus so you can spot which areas you're strong in and which still need more work before test day. Use Practice mode for instant feedback and explanations after every question, or Exam mode for timed practice. After finishing, review every explanation carefully — especially the questions you answered incorrectly — and come back to retake the mock until you're consistently scoring well above the pass mark. UK Test Hub is an independent practice platform and is not affiliated with any official exam body, government department, regulator or test provider. All questions are for practice and revision purposes only.`,
     topics: [
       "Core syllabus topics in multiple-choice format",
-      "Realistic test-style wording and difficulty",
+      "Exam-style wording and difficulty",
       "Explanations after every question (Practice mode)",
-      "Timed sitting that mirrors test day (Exam mode)",
+      "Timed practice for test-day familiarity (Exam mode)",
       "Mixed difficulty so weak areas surface quickly",
     ],
-    whoFor: `Anyone preparing for the ${topicTitle} assessment and looking for free, realistic mock practice before booking the real exam.`,
+    whoFor: `Anyone preparing for the ${cleanTitle} assessment and looking for free, independent practice material before booking the real exam.`,
     faqs: GENERIC_FAQS,
   };
 }
