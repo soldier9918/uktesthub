@@ -138,6 +138,7 @@ ${task2Type}`;
     const json = (await res.json()) as {
       choices?: Array<{
         message?: {
+          content?: string | null;
           tool_calls?: Array<{
             function?: { name?: string; arguments?: string };
           }>;
@@ -147,9 +148,17 @@ ${task2Type}`;
 
     const call = json.choices?.[0]?.message?.tool_calls?.[0];
     const argsRaw = call?.function?.arguments;
-    if (!argsRaw) {
-      console.error("IELTS marking: no tool call in response", JSON.stringify(json));
-      throw new Error("AI_PARSE_ERROR");
+    const contentRaw = json.choices?.[0]?.message?.content ?? "";
+
+    function extractJson(raw: string): string | null {
+      const cleaned = raw.replace(/```json\s*/gi, "").replace(/```\s*/g, "").trim();
+      const start = cleaned.search(/[\{\[]/);
+      if (start === -1) return null;
+      const openChar = cleaned[start];
+      const closeChar = openChar === "[" ? "]" : "}";
+      const end = cleaned.lastIndexOf(closeChar);
+      if (end === -1 || end < start) return null;
+      return cleaned.substring(start, end + 1);
     }
 
     let parsed: {
@@ -158,8 +167,18 @@ ${task2Type}`;
       overallFeedback: string;
     };
     try {
-      parsed = JSON.parse(argsRaw);
-    } catch {
+      if (argsRaw) {
+        parsed = JSON.parse(argsRaw);
+      } else {
+        const extracted = extractJson(contentRaw);
+        if (!extracted) {
+          console.error("IELTS marking: no tool call or JSON content", JSON.stringify(json));
+          throw new Error("AI_PARSE_ERROR");
+        }
+        parsed = JSON.parse(extracted);
+      }
+    } catch (e) {
+      console.error("IELTS marking parse error:", e, "raw:", argsRaw ?? contentRaw);
       throw new Error("AI_PARSE_ERROR");
     }
 
