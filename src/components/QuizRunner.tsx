@@ -1372,9 +1372,7 @@ function MockStartIntro({ quiz }: { quiz: Quiz }) {
       resolvedTopicSlug: quiz.topic,
       mockNumber,
       perMockFound: Boolean(perMock),
-      availablePerMockKeys: Object.keys(
-        (await import("@/data/per-mock-intros")).PER_MOCK_INTROS ?? {},
-      ),
+      availablePerMockKeys: Object.keys(PER_MOCK_INTROS),
     });
   }
 
