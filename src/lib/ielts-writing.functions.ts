@@ -134,7 +134,7 @@ ${task2Type}`;
     };
 
     const body = {
-      model: "google/gemini-2.5-flash",
+      model: MARKING_MODEL,
       messages: [
         { role: "system", content: systemPrompt },
         { role: "user", content: userPrompt },
@@ -178,14 +178,25 @@ ${task2Type}`;
       },
     };
 
-    const res = await fetch("https://ai.gateway.lovable.dev/v1/chat/completions", {
-      method: "POST",
-      headers: {
-        Authorization: `Bearer ${apiKey}`,
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(body),
-    });
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), MARKING_TIMEOUT_MS);
+    let res: Response;
+    try {
+      res = await fetch("https://ai.gateway.lovable.dev/v1/chat/completions", {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${apiKey}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(body),
+        signal: controller.signal,
+      });
+    } catch (e) {
+      console.error("IELTS marking request failed:", e);
+      throw new Error(e instanceof DOMException && e.name === "AbortError" ? "MARKING_TIMEOUT" : "AI_GATEWAY_ERROR");
+    } finally {
+      clearTimeout(timeout);
+    }
 
     if (!res.ok) {
       if (res.status === 429) {
