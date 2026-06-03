@@ -41,7 +41,7 @@ const drivingTheory: Record<number, PerMockIntro> = {
     covers: "Driving Theory Mock Test 1 is a good starting point for learners beginning their UK driving theory revision. It covers foundation topics such as road signs, safe driving behaviour, speed awareness, road markings and basic hazard recognition. Use this test to check your general understanding before moving on to more challenging mocks.",
     commonMistakes: [
       "Rushing through simple road sign questions",
-      "Missing words such as âmustâ, âshouldâ or âneverâ",
+      "Missing words such as “must”, “should” or “never”",
       "Confusing warning signs with mandatory signs",
       "Guessing before reading all answer options",
     ],
@@ -209,7 +209,7 @@ const drivingTheory: Record<number, PerMockIntro> = {
     covers: "Driving Theory Mock Test 8 focuses on safe driving habits, road positioning, signs, vehicle control and basic hazard awareness. It is useful for learners who want to strengthen their understanding of routine driving rules before attempting more challenging practice tests.",
     commonMistakes: [
       "Not checking road position clues",
-      "Confusing âgive wayâ and âstopâ requirements",
+      "Confusing “give way” and “stop” requirements",
       "Forgetting how weather affects driving",
       "Picking the first reasonable answer instead of the best one",
     ],
@@ -355,7 +355,7 @@ const drivingTheory: Record<number, PerMockIntro> = {
       "Confusing thinking distance and braking distance",
       "Forgetting that poor weather increases stopping distance",
       "Choosing answers that are too aggressive",
-      "Not spotting âexceptâ or âmost likelyâ wording",
+      "Not spotting “except” or “most likely” wording",
     ],
     topicsIncluded: [
       "Thinking and braking distance components",
@@ -859,7 +859,7 @@ const drivingTheory: Record<number, PerMockIntro> = {
       "Misjudging junction priority",
       "Confusing road sign instructions",
       "Not allowing enough safety margin",
-      "Missing wording such as âfirstâ or âmost importantâ",
+      "Missing wording such as “first” or “most important”",
     ],
     topicsIncluded: [
       "Junction priority decisions",
