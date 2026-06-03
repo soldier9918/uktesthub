@@ -343,6 +343,19 @@ function MockIntrosImportPage() {
               Affected topics: {preview.affectedTopics.join(", ")}
             </div>
           )}
+          {preview.duplicateWarnings && preview.duplicateWarnings.length > 0 && (
+            <div className="mt-3 rounded-md border border-amber-500/40 bg-amber-500/10 p-3 text-xs text-amber-800">
+              <div className="font-semibold">
+                ⚠ Some mock intro content appears duplicated across multiple mock tests.
+                This may make pages look template-like. Please review before committing.
+              </div>
+              <ul className="mt-2 list-disc space-y-1 pl-5">
+                {preview.duplicateWarnings.slice(0, 30).map((w, i) => (
+                  <li key={i}>{w.message}</li>
+                ))}
+              </ul>
+            </div>
+          )}
           {preview.parseErrors.length > 0 && (
             <div className="mt-3 rounded-md border border-destructive/40 bg-destructive/10 p-3 text-xs text-destructive">
               <div className="font-semibold">Parse / validation issues ({preview.parseErrors.length})</div>
