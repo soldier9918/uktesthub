@@ -496,8 +496,8 @@ function ResultsScreen({
       <Alert className="mb-6">
         <AlertCircle className="h-4 w-4" />
         <AlertDescription>
-          This is a practice estimate only. Official IELTS Writing scores are awarded by trained
-          IELTS examiners using the official band descriptors.
+          Your estimated band score is for practice and self-review only. UK Test Hub is not
+          affiliated with IELTS, the British Council, IDP, Cambridge, or any official test provider.
         </AlertDescription>
       </Alert>
 
