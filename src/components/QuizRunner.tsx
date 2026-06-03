@@ -31,6 +31,7 @@ import { getCategory, getTopicDisplayTitle } from "@/data/categories";
 import { TOTAL_MOCKS_PER_TOPIC, buildRandomExamQuiz } from "@/data/mocks";
 import { buildRandomEnglishExamQuiz } from "@/data/english/mocks";
 import type { LevelSlug, SkillSlug, TestSlug } from "@/data/english/categories";
+import { IeltsWritingExam } from "./IeltsWritingExam";
 import { getMockIntro } from "@/data/mock-intros";
 import { AdSlot } from "./AdSlot";
 import { RoadSign } from "./RoadSign";
