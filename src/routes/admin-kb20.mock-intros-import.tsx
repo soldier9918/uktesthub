@@ -133,13 +133,42 @@ function MockIntrosImportPage() {
         commitSha: res.commitSha,
         rowCount: res.rowCount,
         affectedTopics: res.affectedTopics,
+        verificationRows: res.verificationRows ?? [],
       });
+      setVerifyResult(null);
+      setVerifyAttempts(0);
       setErrorMsg(null);
       setPreview(null);
       qc.invalidateQueries({ queryKey: ["mock-intros-history"] });
     },
     onError: (e: Error) => setErrorMsg(e.message),
   });
+
+  const verifyFn = useServerFn(verifyMockIntrosLive);
+  const verifyMutation = useMutation({
+    mutationFn: async (rows: Array<{ topicSlug: string; mock: number; snippet: string }>) =>
+      verifyFn({ data: { rows } }),
+    onSuccess: (res) => {
+      setVerifyResult(res);
+      setVerifyAttempts((n) => n + 1);
+    },
+    onError: (e: Error) => setErrorMsg(e.message),
+  });
+
+  // Auto-verify after commit: first attempt 25s after commit (give the
+  // GitHub-to-Lovable sync + build time to finish), then retry every 30s
+  // up to 4 attempts if any rows are still stale.
+  useEffect(() => {
+    if (!commitResult || commitResult.verificationRows.length === 0) return;
+    if (verifyAttempts >= 4) return;
+    if (verifyResult && verifyResult.stale === 0 && verifyResult.errors === 0) return;
+    const delay = verifyAttempts === 0 ? 25_000 : 30_000;
+    const t = setTimeout(() => {
+      verifyMutation.mutate(commitResult.verificationRows);
+    }, delay);
+    return () => clearTimeout(t);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [commitResult, verifyResult, verifyAttempts]);
 
   const rollbackMutation = useMutation({
     mutationFn: async (vars: { historyId: string; force?: boolean }) =>
