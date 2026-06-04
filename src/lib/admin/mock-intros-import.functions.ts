@@ -37,6 +37,10 @@ const FILE_PATH = "src/data/per-mock-intros.ts";
 const HISTORY_TOPIC = "_per_mock_intros_";
 const HISTORY_KIND = "mock_intros";
 
+const LIVE_ORIGIN = "https://www.uktesthub.com";
+const VERIFY_MAX_ROWS = 20;
+const VERIFY_TIMEOUT_MS = 12_000;
+
 const DIFFICULTIES = ["Beginner", "Intermediate", "Exam-ready"] as const;
 const ImportModeSchema = z.enum(["patch", "replace"]).optional();
 
