@@ -22,7 +22,7 @@ import { createServerFn } from "@tanstack/react-start";
 import { z } from "zod";
 import Papa from "papaparse";
 import { requireSupabaseAuth } from "@/integrations/supabase/auth-middleware";
-import { commitFile, getFile } from "@/lib/admin/github.server";
+import { commitFile, getFile, nudgeSync } from "@/lib/admin/github.server";
 import { categories } from "@/data/categories";
 import {
   PER_MOCK_INTROS,
@@ -684,6 +684,9 @@ export const commitMockIntrosImport = createServerFn({ method: "POST" })
         sha: existing.sha,
       });
 
+      // Force Lovable's GitHub sync to re-fire (see nudgeSync docs).
+      await nudgeSync(`mock-intros import: ${parsed.rows.length} rows, ${affectedTopics.size} topic(s)`);
+
       const { data: hist, error } = await supabase
         .from("question_import_history")
         .insert({
@@ -770,6 +773,10 @@ export const rollbackMockIntrosImport = createServerFn({ method: "POST" })
         message: `Rollback per-mock intros to commit ${String(row.commit_sha ?? "").slice(0, 7)}`,
         sha: existing?.sha,
       });
+
+      await nudgeSync(`mock-intros rollback of ${String(row.commit_sha ?? "").slice(0, 7)}`);
+
+
 
       await supabase
         .from("question_import_history")

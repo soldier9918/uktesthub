@@ -98,6 +98,43 @@ export async function commitFile(opts: {
   return { commitSha: data.commit.sha, commitUrl: data.commit.html_url };
 }
 
+/**
+ * Sync nudge: writes a tiny timestamp file (`.lovable/sync-trigger.txt`) on
+ * `main` to force Lovable's GitHub webhook to re-fire after a content commit.
+ *
+ * Why this exists: when commits are made via the GitHub Contents API (rather
+ * than via Lovable's UI), Lovable's GitHub → preview sync occasionally misses
+ * the push event — especially when several commits land in quick succession.
+ * A second, separate commit (~1s later) gives the webhook another chance to
+ * deliver and reliably triggers the preview/published build to pick up the
+ * real content change.
+ *
+ * Always called AFTER a successful content commit. Failures here are logged
+ * but never thrown — the real commit already succeeded.
+ */
+export async function nudgeSync(reason: string): Promise<{ ok: boolean; commitSha?: string; error?: string }> {
+  const triggerPath = ".lovable/sync-trigger.txt";
+  try {
+    // Small delay so GitHub registers two distinct push events, not one batched delivery.
+    await new Promise((r) => setTimeout(r, 1200));
+    const existing = await getFile(triggerPath);
+    const stamp = new Date().toISOString();
+    const safeReason = reason.replace(/[\r\n]+/g, " ").slice(0, 200);
+    const body = `Lovable sync trigger\nLast nudge: ${stamp}\nReason: ${safeReason}\n`;
+    const { commitSha } = await commitFile({
+      filePath: triggerPath,
+      content: body,
+      message: `chore: nudge Lovable sync (${safeReason})`,
+      sha: existing?.sha,
+    });
+    return { ok: true, commitSha };
+  } catch (e) {
+    const msg = e instanceof Error ? e.message : String(e);
+    console.warn(`[nudgeSync] failed: ${msg}`);
+    return { ok: false, error: msg };
+  }
+}
+
 /** Returns the names of files directly inside `dirPath` on the target branch.
  *  Returns null if the directory does not exist. */
 export async function listDir(dirPath: string): Promise<string[] | null> {

@@ -2,7 +2,7 @@ import { createServerFn } from "@tanstack/react-start";
 import { z } from "zod";
 import Papa from "papaparse";
 import { requireSupabaseAuth } from "@/integrations/supabase/auth-middleware";
-import { GITHUB_REPO, commitFile, getFile, listDir, testConnection } from "@/lib/admin/github.server";
+import { GITHUB_REPO, commitFile, getFile, listDir, nudgeSync, testConnection } from "@/lib/admin/github.server";
 import { findOptionIssues, type OptionIssue } from "@/lib/admin/blank-options";
 
 // Use `any` for question records — the on-disk schema is too polymorphic to
@@ -1452,6 +1452,9 @@ export const commitCsvImport = createServerFn({ method: "POST" })
         sha: existing.sha,
       });
 
+      // Force Lovable's GitHub sync to re-fire after the content commit.
+      await nudgeSync(`csv import: ${data.topic}`);
+
       // Post-commit verification: re-read the just-committed file from GitHub
       // and scan for any blank-options leak fragments. Reported back to the
       // caller (admin) but does not block — the commit has already landed.
@@ -1577,6 +1580,8 @@ export const rollbackImport = createServerFn({ method: "POST" })
         message: `Rollback ${row.topic} mock questions import`,
         sha: existing?.sha,
       });
+
+      await nudgeSync(`csv rollback: ${row.topic}`);
 
       // Mark the original import as rolled_back.
       await supabase
