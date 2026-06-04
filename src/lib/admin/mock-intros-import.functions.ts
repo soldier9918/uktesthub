@@ -684,6 +684,9 @@ export const commitMockIntrosImport = createServerFn({ method: "POST" })
         sha: existing.sha,
       });
 
+      // Force Lovable's GitHub sync to re-fire (see nudgeSync docs).
+      await nudgeSync(`mock-intros import: ${parsed.rows.length} rows, ${affectedTopics.size} topic(s)`);
+
       const { data: hist, error } = await supabase
         .from("question_import_history")
         .insert({
