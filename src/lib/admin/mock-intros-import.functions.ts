@@ -715,6 +715,12 @@ export const commitMockIntrosImport = createServerFn({ method: "POST" })
         .single();
       if (error) throw new Error(`History insert failed: ${error.message}`);
 
+      const verificationRows: VerifyRowInput[] = parsed.rows.map((r) => ({
+        topicSlug: r.topicSlug,
+        mock: r.mock,
+        snippet: snippetForCovers(r.intro.covers),
+      }));
+
       return {
         commitSha,
         commitUrl,
@@ -723,7 +729,8 @@ export const commitMockIntrosImport = createServerFn({ method: "POST" })
         rowCount: parsed.rows.length,
         affectedTopics: Array.from(affectedTopics).sort(),
         mode,
-        deploymentNote: "Changes committed to GitHub main. Deployment may take a few minutes.",
+        deploymentNote: "Changes committed to GitHub main. Deployment may take a few minutes — the live site is verified separately below.",
+        verificationRows,
       };
     } catch (err) {
       const message = err instanceof Error ? err.message : String(err);
