@@ -22,7 +22,7 @@ import { createServerFn } from "@tanstack/react-start";
 import { z } from "zod";
 import Papa from "papaparse";
 import { requireSupabaseAuth } from "@/integrations/supabase/auth-middleware";
-import { commitFile, getFile } from "@/lib/admin/github.server";
+import { commitFile, getFile, nudgeSync } from "@/lib/admin/github.server";
 import { categories } from "@/data/categories";
 import {
   PER_MOCK_INTROS,
