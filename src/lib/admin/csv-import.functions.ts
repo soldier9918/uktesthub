@@ -1581,6 +1581,8 @@ export const rollbackImport = createServerFn({ method: "POST" })
         sha: existing?.sha,
       });
 
+      await nudgeSync(`csv rollback: ${row.topic}`);
+
       // Mark the original import as rolled_back.
       await supabase
         .from("question_import_history")
