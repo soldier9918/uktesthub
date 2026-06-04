@@ -2,7 +2,7 @@ import { createServerFn } from "@tanstack/react-start";
 import { z } from "zod";
 import Papa from "papaparse";
 import { requireSupabaseAuth } from "@/integrations/supabase/auth-middleware";
-import { GITHUB_REPO, commitFile, getFile, listDir, testConnection } from "@/lib/admin/github.server";
+import { GITHUB_REPO, commitFile, getFile, listDir, nudgeSync, testConnection } from "@/lib/admin/github.server";
 import { findOptionIssues, type OptionIssue } from "@/lib/admin/blank-options";
 
 // Use `any` for question records — the on-disk schema is too polymorphic to
