@@ -774,6 +774,10 @@ export const rollbackMockIntrosImport = createServerFn({ method: "POST" })
         sha: existing?.sha,
       });
 
+      await nudgeSync(`mock-intros rollback of ${String(row.commit_sha ?? "").slice(0, 7)}`);
+
+
+
       await supabase
         .from("question_import_history")
         .update({
