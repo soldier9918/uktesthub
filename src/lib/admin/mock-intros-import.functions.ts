@@ -37,6 +37,10 @@ const FILE_PATH = "src/data/per-mock-intros.ts";
 const HISTORY_TOPIC = "_per_mock_intros_";
 const HISTORY_KIND = "mock_intros";
 
+const LIVE_ORIGIN = "https://www.uktesthub.com";
+const VERIFY_MAX_ROWS = 20;
+const VERIFY_TIMEOUT_MS = 12_000;
+
 const DIFFICULTIES = ["Beginner", "Intermediate", "Exam-ready"] as const;
 const ImportModeSchema = z.enum(["patch", "replace"]).optional();
 
@@ -711,6 +715,12 @@ export const commitMockIntrosImport = createServerFn({ method: "POST" })
         .single();
       if (error) throw new Error(`History insert failed: ${error.message}`);
 
+      const verificationRows: VerifyRowInput[] = parsed.rows.map((r) => ({
+        topicSlug: r.topicSlug,
+        mock: r.mock,
+        snippet: snippetForCovers(r.intro.covers),
+      }));
+
       return {
         commitSha,
         commitUrl,
@@ -719,7 +729,8 @@ export const commitMockIntrosImport = createServerFn({ method: "POST" })
         rowCount: parsed.rows.length,
         affectedTopics: Array.from(affectedTopics).sort(),
         mode,
-        deploymentNote: "Changes committed to GitHub main. Deployment may take a few minutes.",
+        deploymentNote: "Changes committed to GitHub main. Deployment may take a few minutes — the live site is verified separately below.",
+        verificationRows,
       };
     } catch (err) {
       const message = err instanceof Error ? err.message : String(err);
@@ -851,3 +862,138 @@ export const listMockIntrosImportHistory = createServerFn({ method: "GET" })
       return { rows: [], error: err instanceof Error ? err.message : "Failed to load history" };
     }
   });
+
+// -------- Live verification --------
+
+export type VerifyRowInput = {
+  topicSlug: string;
+  mock: number;
+  /** Short snippet of the `covers` text that MUST appear on the live page. */
+  snippet: string;
+};
+
+export type VerifyRowResult = {
+  topicSlug: string;
+  mock: number;
+  url: string;
+  status: "verified" | "stale" | "error";
+  httpStatus?: number;
+  message?: string;
+};
+
+function buildLiveMockUrl(topicSlug: string, mock: number): string {
+  // Cache-bust so we never read a stale CDN/browser cached HTML.
+  const cb = Date.now().toString(36);
+  return `${LIVE_ORIGIN}/quiz/${topicSlug}-mock-${mock}?_cb=${cb}`;
+}
+
+function snippetForCovers(covers: string): string {
+  // Use first ~80 chars after trimming, stripping smart quotes/whitespace
+  // so the substring match is stable across SSR HTML.
+  const clean = covers.replace(/\s+/g, " ").trim();
+  return clean.slice(0, 80);
+}
+
+async function checkOneLiveUrl(input: VerifyRowInput): Promise<VerifyRowResult> {
+  const url = buildLiveMockUrl(input.topicSlug, input.mock);
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), VERIFY_TIMEOUT_MS);
+  try {
+    const res = await fetch(url, {
+      signal: controller.signal,
+      headers: {
+        "Cache-Control": "no-cache",
+        "User-Agent": "uktesthub-admin-verifier",
+      },
+    });
+    const httpStatus = res.status;
+    if (!res.ok) {
+      return {
+        topicSlug: input.topicSlug,
+        mock: input.mock,
+        url,
+        status: "error",
+        httpStatus,
+        message: `HTTP ${httpStatus}`,
+      };
+    }
+    const body = await res.text();
+    const normalisedBody = body.replace(/\s+/g, " ");
+    const normalisedSnippet = input.snippet.replace(/\s+/g, " ").trim();
+    if (normalisedSnippet && normalisedBody.includes(normalisedSnippet)) {
+      return { topicSlug: input.topicSlug, mock: input.mock, url, status: "verified", httpStatus };
+    }
+    return {
+      topicSlug: input.topicSlug,
+      mock: input.mock,
+      url,
+      status: "stale",
+      httpStatus,
+      message: "Uploaded text not yet on live page",
+    };
+  } catch (e) {
+    return {
+      topicSlug: input.topicSlug,
+      mock: input.mock,
+      url,
+      status: "error",
+      message: e instanceof Error ? e.message : String(e),
+    };
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
+/** Sample down to VERIFY_MAX_ROWS so a 45-row import doesn't take 90s. */
+function sampleRowsForVerification(rows: VerifyRowInput[]): VerifyRowInput[] {
+  if (rows.length <= VERIFY_MAX_ROWS) return rows;
+  const step = rows.length / VERIFY_MAX_ROWS;
+  const out: VerifyRowInput[] = [];
+  for (let i = 0; i < VERIFY_MAX_ROWS; i++) {
+    out.push(rows[Math.floor(i * step)]);
+  }
+  return out;
+}
+
+const VerifyInput = z.object({
+  rows: z
+    .array(
+      z.object({
+        topicSlug: z.string().min(1).max(80),
+        mock: z.number().int().min(1).max(45),
+        snippet: z.string().min(1).max(500),
+      }),
+    )
+    .min(1)
+    .max(45),
+});
+
+export const verifyMockIntrosLive = createServerFn({ method: "POST" })
+  .middleware([requireSupabaseAuth])
+  .inputValidator((input) => VerifyInput.parse(input))
+  .handler(async ({ data, context }) => {
+    await assertAdmin(context.supabase, context.userId);
+    const sample = sampleRowsForVerification(data.rows);
+    // Run in small parallel batches so we don't hammer the origin.
+    const results: VerifyRowResult[] = [];
+    const batchSize = 4;
+    for (let i = 0; i < sample.length; i += batchSize) {
+      const batch = sample.slice(i, i + batchSize);
+      const settled = await Promise.all(batch.map(checkOneLiveUrl));
+      results.push(...settled);
+    }
+    const verified = results.filter((r) => r.status === "verified").length;
+    const stale = results.filter((r) => r.status === "stale").length;
+    const errors = results.filter((r) => r.status === "error").length;
+    return {
+      checkedAt: new Date().toISOString(),
+      totalRequested: data.rows.length,
+      totalChecked: results.length,
+      verified,
+      stale,
+      errors,
+      results,
+    };
+  });
+
+export { snippetForCovers };
