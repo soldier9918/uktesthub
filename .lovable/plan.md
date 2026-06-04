@@ -1,71 +1,41 @@
-## Goal
+I checked the exact live URL you gave. The server response from `https://www.uktesthub.com/quiz/ph-badge-rules-mock-1` currently contains the new uploaded intro text, including:
 
-Add a new admin tool: **Per-Mock Intros CSV Import** at `/admin-kb20/mock-intros-import`. Upload a CSV of "What this mock covers" + "Common mistakes" content for any topic across any category, preview the diff, then commit the changes to `src/data/per-mock-intros.ts` on GitHub `main` (same flow as the existing CSV Import → GitHub feature).
+- `Private Hire Badge Rules Mock 1 looks closely at driver badge during vehicle checks...`
+- unique `Topics included`
+- unique `Common mistakes`
+- unique `Who this mock is for`
 
-## CSV format
+So the current custom-domain server output is updated, but what you saw can still happen because the CSV flow only says the GitHub/Lovable commit succeeded. It does not verify that the published custom-domain page is now serving the expected text to visitors.
 
-Auto-detect single-topic vs. all-topics by column presence.
+Plan to prevent this confusion for every future intro CSV import:
 
-**Single topic** (no `topic_slug` column — topic chosen via dropdown in UI):
-```
-mock,difficulty,covers,common_mistakes
-1,Beginner,"Driving Theory Mock Test 1 covers...","Rushing | Missing words | Confusing signs | Guessing"
-2,Beginner,"...","..."
-```
+1. Add post-import live verification
+   - After a Mock Intros CSV commit succeeds, check the affected mock URLs on the published site.
+   - Verify that each page contains the uploaded `covers` text, not just that GitHub accepted the commit.
+   - Use cache-busted requests so the check does not reuse stale browser/CDN content.
 
-**All topics** (includes `topic_slug` column — topic dropdown ignored):
-```
-topic_slug,mock,difficulty,covers,common_mistakes
-driving-theory,1,Beginner,"...","..."
-life-in-the-uk,1,Beginner,"...","..."
-seru,1,Intermediate,"...","..."
-```
+2. Show clear status in the import UI
+   - Replace the current simple `Committed` message with separate statuses:
+     - `Committed to GitHub`
+     - `Synced to Lovable preview`
+     - `Published site verified`
+   - If the published page is not updated yet, show a warning instead of implying everything is live.
 
-- `mock`: integer 1–45
-- `difficulty`: `Beginner | Intermediate | Exam-ready` (matches existing `Difficulty` type)
-- `covers`: free text paragraph
-- `common_mistakes`: pipe (`|`) separated list, 3–6 items recommended
-- `topic_slug` (optional): any slug from `src/data/categories.ts`; validates against the known list
+3. Add a manual “Verify live pages” action
+   - Let you re-check a recent intro import from the admin page without re-uploading the CSV.
+   - Show which URLs passed/failed and the expected text snippet.
 
-## UI (mirrors `/admin-kb20/csv-import`)
+4. Improve the success message wording
+   - Make it explicit that committing an intro CSV updates the code source first.
+   - The import UI should not say or imply the real website is updated until the live URL has been checked.
 
-1. Topic picker (searchable, populated from `categories.ts`, all categories + subtopics) — disabled if CSV contains `topic_slug`
-2. File upload + textarea paste
-3. Mode toggle: **Patch** (merge with existing) or **Replace** (overwrite topic block)
-4. **Preview** button — shows per-row diff: added / changed / unchanged, with validation errors highlighted
-5. **Commit to GitHub** button — writes new `per-mock-intros.ts`, pushes to `main` with a descriptive commit message, returns commit URL
-6. Recent commits list with rollback (reuses existing `listImportHistory` / `rollbackImport` pattern)
+5. Keep the existing GitHub sync nudge
+   - Keep the source-file nudge because it helps Lovable notice GitHub commits.
+   - Add verification on top because the nudge alone cannot prove the published custom domain is serving the new content.
 
-## Implementation
+Technical details:
 
-**New file `src/lib/admin/mock-intros-import.functions.ts`** — three server fns following the pattern in `src/lib/admin/csv-import.functions.ts`:
-- `previewMockIntrosImport({ csvText, topicSlug, mode })` → parses CSV, validates rows, diffs against current `per-mock-intros.ts`, returns `{ rows, errors, summary }`
-- `commitMockIntrosImport({ csvText, topicSlug, mode })` → regenerates the full `per-mock-intros.ts` source, commits via GitHub API using `GITHUB_TOKEN` secret, logs to `question_import_history` with a new `kind='mock_intros'` marker
-- `rollbackMockIntrosImport({ historyId })` → reverts to previous file SHA
-
-Server fns will:
-- Import current intros via dynamic `await import("@/data/per-mock-intros.ts")` inside `.handler()`
-- Re-serialize the full TS file with a stable formatter (preserve `RELATED_GUIDE_BY_TOPIC`, `Difficulty` type, and existing topic blocks not in the CSV)
-- Reuse the existing GitHub commit helper used by `csv-import.functions.ts`
-
-**New file `src/routes/admin-kb20.mock-intros-import.tsx`** — page UI wrapped in `<AdminGate>`, copies the structure and styling of `admin-kb20.csv-import.tsx`.
-
-**Edit `src/routes/admin-kb20.index.tsx`** — add a new `<Tile>` under the **Content** section:
-```
-<Tile to="/admin-kb20/mock-intros-import" title="Mock Intros CSV Import"
-  desc="Upload CSV of per-mock difficulty, 'What this mock covers' and 'Common mistakes' for any topic. Commits to per-mock-intros.ts on GitHub." />
-```
-
-**Edit `src/data/per-mock-intros.ts`** — no schema changes; the data structure already supports `Record<string, Record<number, PerMockIntro>>` for all categories.
-
-## Out of scope (this plan)
-
-- Editing `RELATED_GUIDE_BY_TOPIC` via CSV (kept manual; small dataset)
-- A separate UI for editing single rows (admins can re-upload CSVs)
-- Bulk Mock Test Manager integration (separate page already exists at `/admin-kb20/mocks`)
-
-## Estimated changes
-
-- 2 new files (~600 LOC total, mostly mirroring existing CSV import patterns)
-- 1 small edit to admin index (1 new tile)
-- No DB migrations, no new dependencies
+- Update `src/lib/admin/mock-intros-import.functions.ts` to return verification metadata after commit.
+- Add a server-side verifier that builds URLs like `/quiz/{topicSlug}-mock-{mockNumber}` and checks the live/custom-domain HTML for the expected `covers` text.
+- Update `src/routes/admin-kb20.mock-intros-import.tsx` to display verification results and warnings.
+- Keep existing CSV imports compatible; verification failure should not roll back a successful GitHub commit.
