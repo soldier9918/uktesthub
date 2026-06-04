@@ -39,7 +39,8 @@ import sectionCrown from "@/assets/section-crown.png";
 import btnStartPractice from "@/assets/btn-start-practice.png";
 import btnBrowseAllTests from "@/assets/btn-browse-all-tests.png";
 import btnBrowseAllTestsSm from "@/assets/btn-browse-all-tests-sm.png";
-import btnBrowseAllCategories from "@/assets/btn-browse-all-categories.png";
+import btnBrowseAllCategoriesAsset from "@/assets/btn-browse-all-categories-v2.png.asset.json";
+const btnBrowseAllCategories = btnBrowseAllCategoriesAsset.url;
 
 export const Route = createFileRoute("/")({
   head: () => {
