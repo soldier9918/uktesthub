@@ -78,7 +78,12 @@ function MockIntrosImportPage() {
     commitSha: string;
     rowCount: number;
     affectedTopics: string[];
+    verificationRows: Array<{ topicSlug: string; mock: number; snippet: string }>;
   } | null>(null);
+  const [verifyResult, setVerifyResult] = useState<Awaited<
+    ReturnType<typeof verifyMockIntrosLive>
+  > | null>(null);
+  const [verifyAttempts, setVerifyAttempts] = useState(0);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
   const previewFn = useServerFn(previewMockIntrosImport);
