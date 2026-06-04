@@ -441,21 +441,130 @@ function MockIntrosImportPage() {
       )}
 
       {commitResult && (
-        <section className="mt-6 rounded-xl border border-emerald-500/30 bg-emerald-500/10 p-5">
-          <h2 className="font-semibold text-emerald-700">Committed ✓</h2>
-          <p className="mt-1 text-sm">
-            {commitResult.rowCount} row(s) across{" "}
-            {commitResult.affectedTopics.join(", ") || "no topics"} pushed to{" "}
-            <code className="rounded bg-background/60 px-1">main</code>.
-          </p>
-          <a
-            href={commitResult.commitUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="mt-2 inline-block text-sm font-medium text-emerald-700 underline"
+        <section className="mt-6 space-y-4">
+          <div className="rounded-xl border border-emerald-500/30 bg-emerald-500/10 p-5">
+            <h2 className="font-semibold text-emerald-700">Step 1 — Committed to GitHub ✓</h2>
+            <p className="mt-1 text-sm">
+              {commitResult.rowCount} row(s) across{" "}
+              {commitResult.affectedTopics.join(", ") || "no topics"} pushed to{" "}
+              <code className="rounded bg-background/60 px-1">main</code>. This updates the
+              source code only — the published site updates after Lovable syncs and rebuilds.
+            </p>
+            <a
+              href={commitResult.commitUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="mt-2 inline-block text-sm font-medium text-emerald-700 underline"
+            >
+              View commit {commitResult.commitSha.slice(0, 7)} on GitHub →
+            </a>
+          </div>
+
+          <div
+            className={cn(
+              "rounded-xl border p-5",
+              !verifyResult && "border-border bg-card",
+              verifyResult && verifyResult.stale === 0 && verifyResult.errors === 0
+                && "border-emerald-500/30 bg-emerald-500/10",
+              verifyResult && (verifyResult.stale > 0 || verifyResult.errors > 0)
+                && "border-amber-500/40 bg-amber-500/10",
+            )}
           >
-            View commit {commitResult.commitSha.slice(0, 7)} on GitHub →
-          </a>
+            <div className="flex flex-wrap items-center justify-between gap-3">
+              <h2 className="font-semibold">
+                Step 2 — Published site verification
+                {verifyResult && verifyResult.stale === 0 && verifyResult.errors === 0 && " ✓"}
+              </h2>
+              <Button
+                size="sm"
+                variant="outline"
+                disabled={verifyMutation.isPending}
+                onClick={() => verifyMutation.mutate(commitResult.verificationRows)}
+              >
+                {verifyMutation.isPending ? "Checking…" : "Verify live pages now"}
+              </Button>
+            </div>
+            {!verifyResult && (
+              <p className="mt-2 text-sm text-muted-foreground">
+                {verifyMutation.isPending
+                  ? "Fetching live mock pages and checking for the uploaded text…"
+                  : "Waiting ~25s for Lovable to sync and rebuild, then auto-checking up to 4 times."}
+              </p>
+            )}
+            {verifyResult && (
+              <>
+                <div className="mt-2 flex flex-wrap gap-2 text-xs">
+                  <Badge variant="secondary">
+                    Checked: {verifyResult.totalChecked}/{verifyResult.totalRequested}
+                  </Badge>
+                  <Badge variant="secondary">Verified: {verifyResult.verified}</Badge>
+                  <Badge variant="secondary">Stale: {verifyResult.stale}</Badge>
+                  <Badge variant="secondary">Errors: {verifyResult.errors}</Badge>
+                  <span className="text-muted-foreground">
+                    Attempt {verifyAttempts} · {new Date(verifyResult.checkedAt).toLocaleTimeString()}
+                  </span>
+                </div>
+                {verifyResult.stale > 0 && (
+                  <p className="mt-2 text-sm text-amber-800">
+                    Some pages do not yet show the uploaded text. The build is probably still
+                    in progress — auto-retry will run again, or click “Verify live pages now”.
+                  </p>
+                )}
+                {verifyResult.errors > 0 && (
+                  <p className="mt-2 text-sm text-destructive">
+                    Some pages could not be fetched. They may be returning HTTP errors or
+                    timing out. Check the URLs below.
+                  </p>
+                )}
+                {verifyResult.results.length > 0 && (
+                  <div className="mt-3 overflow-x-auto">
+                    <table className="min-w-full text-xs">
+                      <thead className="border-b border-border text-left">
+                        <tr>
+                          <th className="py-2 pr-4">Mock</th>
+                          <th className="py-2 pr-4">Status</th>
+                          <th className="py-2 pr-4">URL</th>
+                          <th className="py-2 pr-4">Detail</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {verifyResult.results.map((r) => (
+                          <tr key={`${r.topicSlug}-${r.mock}`} className="border-b border-border/40">
+                            <td className="py-1.5 pr-4 font-mono">{r.topicSlug} #{r.mock}</td>
+                            <td className="py-1.5 pr-4">
+                              <span
+                                className={cn(
+                                  "rounded px-1.5 py-0.5",
+                                  r.status === "verified" && "bg-emerald-500/15 text-emerald-700",
+                                  r.status === "stale" && "bg-amber-500/15 text-amber-700",
+                                  r.status === "error" && "bg-destructive/15 text-destructive",
+                                )}
+                              >
+                                {r.status}
+                              </span>
+                            </td>
+                            <td className="py-1.5 pr-4">
+                              <a
+                                href={r.url.split("?")[0]}
+                                target="_blank"
+                                rel="noreferrer"
+                                className="underline"
+                              >
+                                open
+                              </a>
+                            </td>
+                            <td className="py-1.5 pr-4 text-muted-foreground">
+                              {r.message ?? (r.httpStatus ? `HTTP ${r.httpStatus}` : "")}
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                )}
+              </>
+            )}
+          </div>
         </section>
       )}
 
