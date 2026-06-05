@@ -121,6 +121,14 @@ async function getAuthenticatedAdminClient() {
 function knownTopicSlugs(): Set<string> {
   const set = new Set<string>();
   for (const c of categories) for (const t of c.topics) set.add(t.slug);
+  // English Language Tests use flat per-level slugs derived from
+  // test → skill → level, e.g. "ielts-listening-a1". These are NOT
+  // listed in categories.ts but are valid topic_slug values for the
+  // per-mock intros importer (the English mock pages read intros under
+  // the same `${test}-${skill}-${level}` key — see src/data/english/mocks.ts).
+  for (const { test, skill, level } of allEnglishLevelTriples()) {
+    set.add(`${test}-${skill}-${level}`);
+  }
   return set;
 }
 
