@@ -25,8 +25,6 @@ import { requireSupabaseAuth } from "@/integrations/supabase/auth-middleware";
 import { commitFile, getFile, nudgeSync } from "@/lib/admin/github.server";
 import { categories } from "@/data/categories";
 import {
-  PER_MOCK_INTROS,
-  RELATED_GUIDE_BY_TOPIC,
   type PerMockIntro,
   type PerMockFaq,
   type Difficulty,
